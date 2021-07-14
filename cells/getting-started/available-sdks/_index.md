@@ -26,6 +26,25 @@ Complete source code of Aspose.Cells Cloud SDK for .Net is freely available on 
 
 {{% /alert %}}
 
+**Aspose Package Manager**
+
+```powershell
+
+Install-Package Aspose.Cells-Cloud 
+
+````
+
+**Aspose .Net CTL**
+
+
+```dotnet
+
+dotnet add package Aspose.Cells-Cloud 
+
+```
+
+
+
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
@@ -107,19 +126,19 @@ $ mvn eclipse:eclipse -DdownloadSources=true -DdownloadJavadocs=false
 
 **Aspose.Cells Cloud SDK for PHP** allows you to incorporate Aspose.Cells Cloud services in your PHP applications quickly and easily.
 
-Aspose.Cells Cloud SDK for PHP can be installed using Composer.
+{{% alert color="primary" %}} 
+
+Complete source code of Aspose.Cells Cloud SDK for PHP is freely available on [GitHub](https://github.com/aspose-cells-cloud/aspose-cells-cloud-php).
+
+{{% /alert %}}
+
+Aspose.Cells Cloud SDK for PHP can be installed using **Composer**.
 
 ```php
 
 require:{ "aspose/cells-sdk-php": "dev-master" }
 
 ```
-
-{{% alert color="primary" %}} 
-
-Complete source code of Aspose.Cells Cloud SDK for PHP is freely available on [GitHub](https://github.com/aspose-cells-cloud/aspose-cells-cloud-php).
-
-{{% /alert %}}
 
 {{< /tab >}}
 
@@ -133,11 +152,27 @@ Please visit the Aspose.Cells Cloud [GitHub Repository](https://github.com/aspos
 
 Please visit the Aspose.Cells Cloud [GitHub Repository](https://github.com/aspose-cells-cloud/aspose-cells-cloud-perl) to get started with using Aspose.Cells Cloud SDK for Perl
 
+Aspose.Cells Cloud SDK for Perl can be installed using **cpan**.
+
+```perl
+
+perl -MCPAN -e shell
+
+install AsposeCellsCloud::CellsApi
+
+```
+
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
 
 Please visit the Aspose.Cells Cloud [GitHub Repository](https://github.com/aspose-cells-cloud/aspose-cells-cloud-ruby) to get started with using Aspose.Cells Cloud SDK for Ruby
+
+```ruby
+
+gem install aspose_cells_cloud
+
+```
 
 {{< /tab >}}
 
@@ -145,11 +180,24 @@ Please visit the Aspose.Cells Cloud [GitHub Repository](https://github.com/aspos
 
 Please visit the Aspose.Cells Cloud [GitHub Repository](https://github.com/aspose-cells-cloud/aspose-cells-cloud-python) to get started with using Aspose.Cells Cloud SDK for Python
 
+```python
+
+pip3 install AsposeCellsCloud
+
+```
+
+
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
 
 Please visit the Aspose.Cells Cloud [GitHub Repository](https://github.com/aspose-cells-cloud/aspose-cells-cloud-node) to get started with using Aspose.Cells Cloud SDK for NodeJS
+
+```nodejs
+
+npm install asposecellscloud
+
+```
 
 {{< /tab >}}
 
@@ -157,11 +205,26 @@ Please visit the Aspose.Cells Cloud [GitHub Repository](https://github.com/aspos
 
 Please visit the Aspose.Cells Cloud [GitHub Repository](https://github.com/aspose-cells-cloud/aspose-cells-cloud-swift) to get started with using Aspose.Cells Cloud SDK for Swift
 
+
+```console
+target 'MyApp' do
+  pod 'AsposeCellsCloud', '~> 20.9'
+end
+```
+
 {{< /tab >}}
 
 {{< tab tabNum="10" >}}
 
 Please visit the Aspose.Cells Cloud [GitHub Repository](https://github.com/aspose-cells-cloud/aspose-cells-cloud-go) to get started with using Aspose.Cells Cloud SDK for Go
+
+If you want to download [Go Module](https://pkg.go.dev),please import aspose-cells-cloud in your code.
+
+```go
+ 
+ import "github.com/aspose-cells-cloud/aspose-cells-cloud-go/v20"`
+
+```
 
 {{< /tab >}}
 
