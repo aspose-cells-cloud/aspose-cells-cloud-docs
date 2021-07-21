@@ -1,5 +1,5 @@
 ---
-title: "Pivot Tables"
+title: "PivotTables"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /pivottables/

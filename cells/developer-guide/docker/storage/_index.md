@@ -2,7 +2,7 @@
 title: "Storage"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /dokcer/storage/
+url: /docker/storage/
 description: "How to set storage position about Aspose.Cells Cloud for Docker."
 weight: 30
 ---
@@ -47,6 +47,25 @@ weight: 30
 
 {{< /tabs >}}
 
+## Default Position ##
+
+
+- **windows**
+
+```powershell
+
+c:\app\storageResource.json
+
+```
+
+- **linux**
+
+```linux
+
+/app/storageResource.json
+
+
+```
 
 ## Custom Storage Configuration ##
 
@@ -54,7 +73,7 @@ Need to re-specify the storage profile for Aspose.Cells Cloud image file when th
 
 ``` powershell
 
-docker run  -d  -v c:/data:c:/data  -p 47900:5000  -e LicensePublicKey=LicensePublicKey	 -e LicensePrivateKey=LicensePrivateKey	 -e storagesCredentialsFilePath=c:/data/storageResource.json --name asposecellscloud aspose/cells-cloud:ltsc2019.21.6.0
+docker run  -d  -v c:/data:c:/data  -p 47900:5000  -e LicensePublicKey=yourLicensePublicKey	 -e LicensePrivateKey=yourLicensePrivateKey	 -e storagesCredentialsFilePath=c:/data/storageResource.json --name asposecellscloud aspose/cells-cloud:ltsc2019.21.6.0
 
 ```
 

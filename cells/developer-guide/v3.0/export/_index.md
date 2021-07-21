@@ -1,5 +1,5 @@
 ---
-title: "Export Excel Objects"
+title: "Export"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /export/
