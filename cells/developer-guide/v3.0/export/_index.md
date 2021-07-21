@@ -18,7 +18,7 @@ This REST API `export` excel file to different format file.
 
 The request is an HTTP request with multipart content (see [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). The first part of the multipart content contains the data file and the second contains save options.
 
-**Query Parameter**
+- **Query Parameter**
 
 |Parameter Name|Type|Description|
 | :- | :- | :- |
@@ -26,13 +26,13 @@ The request is an HTTP request with multipart content (see [RFC 2046](http://to
 |format|string| file format(csv/xls/html/mhtml/ods/pdf/xml/txt/tiff/xlsb/xlsm/xlsx/xltm/xltx/xps/png/jpg/gif/emf/bmp/md/Numbers/wmf/svg) |
 
 
-**Request Body Parameter**
+- **Request Body Parameter**
 
 |Parameter Name|Type|Description|
 | :- | :- | :- |
 |excel file|data file | The data file save into the first part of the multipart content.|
 
-**Response**
+- **Response**
 
 ```bash
 {

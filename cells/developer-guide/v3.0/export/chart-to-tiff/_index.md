@@ -1,5 +1,5 @@
 ---
-title: "Export Excel Charts"
+title: "Excel Charts"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /export/excel-chart-to-different-formats/
