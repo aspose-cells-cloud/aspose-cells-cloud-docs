@@ -51,10 +51,66 @@ The request is an HTTP request with multipart content (see [RFC 2046](http://to
     ]
 }
 ```
+
+- **Cloud SDK Family**
+
+Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+
+
+{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" >}}
+
+{{< tab tabNum="1" >}}
+
+{{< gist "aspose-cloud" "1e994f29ef29e752b6d02a2c5b63ea9b" "Example-Export.cs" >}}
+
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+
+{{< /tab >}}
+
+{{< tab tabNum="3" >}}
+{{< gist "aspose-cloud" "5c1a68c4cea73845b221ff0d3b9ec9df" "Examples-PHP-LiteCells-Export.php" >}}
+
+
+{{< /tab >}}
+
+{{< tab tabNum="4" >}}
+
+
+{{< /tab >}}
+
+{{< tab tabNum="5" >}}
+
+
+{{< /tab >}}
+
+{{< tab tabNum="6" >}}
+
+
+{{< /tab >}}
+
+{{< tab tabNum="7" >}}
+
+
+{{< /tab >}}
+
+{{< tab tabNum="8" >}}
+
+
+{{< /tab >}}
+
+{{< /tabs >}}
+
+
 The following articles explain each API in detail and contain cURL and SDK Examples of each API:
 
 
-- [Export Excel chart to different file format](/cells/export/excel-chart-to-different-formats/)
-- [Export Excel picture to different file format](/cells/export/excel-picture-to-different-formats/)
-- [Export Excel shape to different file format](/cells/export/excel-shape-to-different-formats/)
-- [Export Excel workbook to different file format](/cells/export/excel-to-different-formats/)
+1. [Export Excel chart to different file format](/cells/export/excel-chart-to-different-formats/)
+2. [Export Excel picture to different file format](/cells/export/excel-picture-to-different-formats/)
+3. [Export Excel shape to different file format](/cells/export/excel-shape-to-different-formats/)
+4. [Export Excel workbook to different file format](/cells/export/excel-to-different-formats/)
+
