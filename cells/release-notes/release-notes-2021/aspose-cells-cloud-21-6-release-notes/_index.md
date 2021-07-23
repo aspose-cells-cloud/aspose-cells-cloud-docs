@@ -16,7 +16,6 @@ This page contains release notes for Aspose.Cells Cloud 21.6
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
-| Key | Summary | Category
 | CELLSCLOUD-10455 | Improvement document properties | Improvement |
 | CELLSCLOUD-10456 | Update the return value of put/post/delete. | Improvement |
 | CELLSCLOUD-10457 | Improvement export API | Improvement |
