@@ -1,17 +1,18 @@
 ---
-title: "Unlock"
+title: "Update Metadata"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /unlock/
-keywords: "REST API, spreadsheets, excel, Unlock Excel file ."
-description: "Cells.Cloud API for Excel files Unlock."
+url: /metadata/update/
+keywords: "REST API, convert, spreadsheets, excel, update metadata from Excel file ."
+description: "Cells.Cloud API for Excel files delete metadata."
 weight: 100
 ---
 
-This REST API indicates  `unlock` Excel files.
+This REST API indicates update  `metadata`  from multiple Excel files.
+
 ```bash
 
-POST https://api.aspose.cloud/v3.0/cells/unlock
+POST https://api.aspose.cloud/v3.0/cells/metadata/update
 
 ```
 
@@ -19,7 +20,7 @@ POST https://api.aspose.cloud/v3.0/cells/unlock
 
 |Parameter Name|Type|Description|
 | :- | :- | :- |
-| password | string |  unlock password. |
+| type | string |  ALL/BuiltIn/Custom |
 
 
 - **Request Body Parameter**
@@ -27,6 +28,7 @@ POST https://api.aspose.cloud/v3.0/cells/unlock
 |Parameter Name|Type|Description|
 | :- | :- | :- |
 |excel file|data file | The data file save into the first part of the multipart content.|
+|cells document proprrties|array | update information.|
 
 - **Response**
 
@@ -47,7 +49,6 @@ POST https://api.aspose.cloud/v3.0/cells/unlock
     ]
 }
 ```
-
 - **Cloud SDK Family**
 
 Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
@@ -59,7 +60,7 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 {{< tab tabNum="1" >}}
 
-{{< gist "aspose-cloud" "1e994f29ef29e752b6d02a2c5b63ea9b" "Example-Unlock.cs" >}}
+{{< gist "aspose-cloud" "1e994f29ef29e752b6d02a2c5b63ea9b" "Example-Metadata-Update.cs" >}}
 
 {{< /tab >}}
 
@@ -69,8 +70,8 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
+{{< gist "aspose-cloud" "5c1a68c4cea73845b221ff0d3b9ec9df" "Examples-PHP-LiteCells-Metadata-Update.php" >}}
 
-{{< gist "aspose-cloud" "5c1a68c4cea73845b221ff0d3b9ec9df" "Examples-PHP-LiteCells-Unlock.php" >}}
 {{< /tab >}}
 
 {{< tab tabNum="4" >}}
@@ -99,6 +100,6 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{< /tab >}}
 {{< tab tabNum="9" >}}
 
-{{< gist "aspose-cloud" "5161752550311c9baf73ffa0a811ea0b" "LiteCellsUnlock.py" >}}
+{{< gist "aspose-cloud" "5161752550311c9baf73ffa0a811ea0b" "LiteCellsMetadata-Update.py" >}}
 {{< /tab >}}
 {{< /tabs >}}

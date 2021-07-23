@@ -10,6 +10,12 @@ weight: 100
 
 This REST API indicates `assembly` data in an Excel file.
 
+```bash
+
+POST https://api.aspose.cloud/v3.0/cells/assembly
+
+```
+
 - **Query Parameter**
 
 |Parameter Name|Type|Description|
@@ -51,7 +57,7 @@ Using an SDK is the best way to speed up the development. An SDK takes care of l
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 
 
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" >}}
+{{< tabs tabTotal="9" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" tabName9="Python" >}}
 
 {{< tab tabNum="1" >}}
 
@@ -93,6 +99,11 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{< tab tabNum="8" >}}
 
 
+{{< /tab >}}
+
+{{< tab tabNum="9" >}}
+
+{{< gist "aspose-cloud" "5161752550311c9baf73ffa0a811ea0b" "LiteCellsAssembly.py" >}}
 {{< /tab >}}
 
 {{< /tabs >}}
