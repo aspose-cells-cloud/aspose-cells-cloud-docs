@@ -66,7 +66,7 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 {{< tab tabNum="2" >}}
 
-
+{{< gist "aspose-cloud" "af3fea45644d431483f6df52cf3bfe26" "Example-Protect.java" >}}
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
