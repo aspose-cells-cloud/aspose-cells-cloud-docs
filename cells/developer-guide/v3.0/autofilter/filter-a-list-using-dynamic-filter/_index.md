@@ -1,8 +1,9 @@
 ---
-title: "Filter a List Using Dynamic Filter"
+title: "Add a dynamic date filter in an Excel worksheet"
 type: docs
-url: /filter-a-list-using-dynamic-filter/
-weight: 80
+url: /autofilter/add-dynamic-filter/
+aliases: [/filter-a-list-using-dynamic-filter/,/autofilter/add-a-dynamic-filter/]
+weight: 100
 ---
 
 ## **Introduction**

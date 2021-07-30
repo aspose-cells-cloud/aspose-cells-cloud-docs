@@ -1,8 +1,9 @@
 ---
-title: "Match all Blank Cells in the List"
+title: "Match all blank cells in an Excel worksheet"
 type: docs
-url: /match-all-blank-cells-in-the-list/
-weight: 110
+url: /autofilter/match-all-blank/
+aliases: [/match-all-blank-cells-in-the-list/]
+weight: 100
 ---
 
 ## **Introduction**

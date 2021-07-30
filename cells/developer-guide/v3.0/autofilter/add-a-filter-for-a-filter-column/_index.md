@@ -1,12 +1,12 @@
 ---
-title: "Add a filter"
+title: "Add a filter in an Excel worksheet"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /autofilter/add-filter/
 aliases: [/add-a-filter-for-a-filter-column/]
 keywords: "REST API, autofilter, spreadsheets, excel"
 description: "Cells.Cloud API for Excel operate: add autofilter on an Excel file."
-weight: 30
+weight: 100
 ---
 
 

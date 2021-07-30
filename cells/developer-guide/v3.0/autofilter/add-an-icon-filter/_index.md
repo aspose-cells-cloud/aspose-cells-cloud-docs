@@ -1,12 +1,12 @@
 ---
-title: "Add an icon filter"
+title: "Add an icon filter in an Excel worksheet"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /autofilter/add-icon-filter/
-aliases: [/add-an-icon-filter/]
+aliases: [/add-an-icon-filter/,/autofilter/add-an-icon-filter/]
 keywords: "REST API, autofilter, spreadsheets, excel"
 description: "Cells.Cloud API for Excel operate: add an icon filter on an Excel file."
-weight: 50
+weight: 100
 ---
 
 This REST API add an `IconFilter` on an Excel Worksheet.

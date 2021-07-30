@@ -1,8 +1,9 @@
 ---
-title: "Refresh an AutoFilter"
+title: "Refresh an Auto Filter in an Excel worksheet"
 type: docs
-url: /refresh-an-autofilter/
-weight: 130
+url: /autofilter/refresh/
+aliases: [/refresh-an-autofilter/]
+weight: 100
 ---
 
 ## **Introduction**

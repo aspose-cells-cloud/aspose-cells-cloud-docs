@@ -1,8 +1,9 @@
 ---
-title: "Filter a List with a Custom Criteria"
+title: "Add a custom criteria in an Excel worksheet"
 type: docs
-url: /filter-a-list-with-a-custom-criteria/
-weight: 70
+url: /autofilter/add-custom-filter/ 
+aliases: [/filter-a-list-with-a-custom-criteria/,/autofilter/add-a-custom-filter/ ]
+weight: 100
 ---
 
 ## **Introduction**

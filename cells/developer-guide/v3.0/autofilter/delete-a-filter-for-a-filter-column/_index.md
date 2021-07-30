@@ -1,12 +1,12 @@
 ---
-title: "Delete a filter"
+title: "Delete a filter in an Excel worksheet"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /delete-filter/
-aliases: [/delete-a-filter-for-a-filter-column/]
+aliases: [/delete-a-filter-for-a-filter-column/,/delete-auto-filter/]
 keywords: "REST API, autofilter, spreadsheets, excel"
 description: "Cells.Cloud API for Excel operate: add an date filter on an Excel file."
-weight: 40
+weight: 100
 ---
 
 This REST API add an `DateFilter` on an Excel Worksheet.

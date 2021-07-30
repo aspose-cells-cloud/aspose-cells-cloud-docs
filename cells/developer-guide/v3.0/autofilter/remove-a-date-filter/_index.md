@@ -1,8 +1,9 @@
 ---
-title: "Remove a Date Filter"
+title: "Delete a Date Filter"
 type: docs
-url: /remove-a-date-filter/
-weight: 20
+url: /autofilter/delete-date-filter/
+aliases: [/remove-a-date-filter/,/autofilter/delete-a-date-filter/]
+weight: 100
 ---
 
 ## **Introduction**

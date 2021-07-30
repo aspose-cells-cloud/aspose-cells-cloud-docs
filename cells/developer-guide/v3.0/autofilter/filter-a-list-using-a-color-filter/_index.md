@@ -1,7 +1,8 @@
 ---
-title: "Filter a list using a Color Filter"
+title: "Add a color filter in an Excel worksheet"
 type: docs
-url: /filter-a-list-using-a-color-filter/
+url: /autofilter/add-color-filter/
+aliases: [/filter-a-list-using-a-color-filter/,/autofilter/add-a-color-filter/]
 weight: 100
 ---
 

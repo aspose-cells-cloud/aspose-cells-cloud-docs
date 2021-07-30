@@ -1,12 +1,12 @@
 ---
-title: "Get AutoFilter"
+title: "Get an auto filter in an Excel worksheet"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /autofilter/get/
 aliases: [/get-autofilter-description/]
 keywords: "REST API, autofilter, spreadsheets, excel"
 description: "Cells.Cloud API for Excel operate: get autofilter on an Excel file."
-weight: 10
+weight: 100
 ---
 
 This REST API get an `AutoFilter` from an Excel Worksheet.

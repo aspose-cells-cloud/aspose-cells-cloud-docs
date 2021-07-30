@@ -1,12 +1,12 @@
 ---
-title: "Add date filter"
+title: "Add date filter in an Excel worksheet"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /autofilter/add-date-filter/
-aliases: [/add-date-filter-in-a-worksheet/]
+aliases: [/add-date-filter-in-a-worksheet/,/autofilter/add-a-date-filter/]
 keywords: "REST API, autofilter, spreadsheets, excel"
-description: "Cells.Cloud API for Excel operate: add an date filter on an Excel file."
-weight: 60
+description: "Cells.Cloud API for Excel operate: add a   date filter on an Excel file."
+weight: 100
 ---
 
 This REST API add an `DateFilter` on an Excel Worksheet.

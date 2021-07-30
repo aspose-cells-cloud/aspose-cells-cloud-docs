@@ -1,8 +1,9 @@
 ---
-title: "Match all non Blank Cells in the List"
+title: "Match all non blank cells in an Excel worksheet"
 type: docs
-url: /match-all-non-blank-cells-in-the-list/
-weight: 120
+url: /autofilter/match-all-non-blank/
+aliases: [/match-all-non-blank-cells-in-the-list/]
+weight: 100
 ---
 
 ## **Introduction**
