@@ -3,7 +3,7 @@ title: "API v3.0"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /developer-guide-v3.0/
-url: /developer-guide/v3.0/
+aliases: [/developer-guide/v3.0/]
 description: "This Developer Guide describes practical scenarios and tips to help you use specific Aspose.Cells for .NET features, achieve a certain Excel document appearance, or make a use case possible."
 weight: 20
 ---
