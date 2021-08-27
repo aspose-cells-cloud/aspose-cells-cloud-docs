@@ -5,40 +5,53 @@ url: /calculate-cells-formula/
 weight: 90
 ---
 
-## **Introduction**
-This example shows how to calculate cell's formula, using Aspose.Cells Cloud API in your applications. You can use our REST API with any language: .NET, Java, PHP, Ruby, Rails, Python, jQuery and many more.
-## **API Information**
+This REST API indicates calculate `cells formula` in an Excel file.
 
-|**API**|**Type**|**Description**|**Resource Link**|
-| :- | :- | :- | :- |
-|/cells/{name}/worksheets/{sheetName}/cells/{cellName}/calculate|POST|Calculates cell formula in worksheet|[PostCellCalculate](https://apireference.aspose.cloud/cells/#/Cells/PostCellCalculate)|
-### **cURL Example**
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+```bash
 
-{{< tab tabNum="1" >}}
-
-```java
-
-curl -X POST "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/cells/A1/calculate" -d '{"CalcStackSize": "1"}' -H "Content-Type: application/json" -H "Accept: application/json"
+POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}/calculate
 
 ```
 
-{{< /tab >}}
+- **Path Parameter**
 
-{{< tab tabNum="2" >}}
 
-```java
+|Parameter Name|Type|Description|
+| :- | :- | :- |
+| name | string |  The workbook name. |
+| sheetName | string |  The worksheet name. |
+| cellName | string |  Cell name. |
 
-{"Code":200,"Status":"OK"}
+- **Query Parameter**
+
+|Parameter Name|Type|Description|
+| :- | :- | :- |
+|folder|string|Original workbook folder.|
+|storageName|string|Storage name.|
+
+
+- **Response**
+
+
+```bash
+{
+    "Code": 200,
+    "Status": "OK"
+}
 
 ```
 
-{{< /tab >}}
 
-{{< /tabs >}}
-## **SDK Source**
-The Aspose.Cells Cloud SDKs can be downloaded from the following page: [Available SDKs](/cells/available-sdks/)
-### **SDK Examples**
+- **Api Reference**   
+
+ [PostCellCalculate](https://apireference.aspose.cloud/cells/#/Cells/PostCellCalculate)
+
+- **Cloud SDK Family**
+
+Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+
 {{< tabs tabTotal="6" tabID="4" tabName1="C#" tabName2="PHP" tabName3="Ruby" tabName4="Node.js" tabName5="Perl" tabName6="Go" >}}
 
 {{< tab tabNum="1" >}}

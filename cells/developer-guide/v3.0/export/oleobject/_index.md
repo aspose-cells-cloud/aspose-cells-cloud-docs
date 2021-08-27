@@ -1,10 +1,10 @@
 ---
-title: "Excel"
+title: "Export OLE Object"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /export/excel-to-different-formats/
-keywords: "REST API, convert, export，spreadsheets, excel"
-description: "Cells.Cloud API for Excel operate: export excel file to different format file."
+url: /export/excel-ole-object/
+keywords: "REST API, convert, export，spreadsheets, excel ole object"
+description: "Cells.Cloud API for Excel operate: export ole object."
 weight: 20
 ---
 
@@ -13,37 +13,35 @@ weight: 20
 
 |**API**|**Type**|**Description**|**Swagger Link**|
 | :- | :- | :- | :- |
-|/cells/export|PUT|Export excel objects from request content to some format|[PostExport](https://apireference.aspose.cloud/cells/#/Export/PostExport)|
+|/cells/export|POST|Export excel from request content to some format|[PostExport](https://apireference.aspose.cloud/cells/#/Export/PostExport)|
 
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Export/PostExport) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. 
 
 You can use **cURL** command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
 
+
+
 - **Request**
 
 ```bash
 
-curl -X PUT "https://api.aspose.cloud/v3.0/cells/export?objectType=workbook&format=tiff" -H "accept: multipart/form-data" -H "Content-Type: multipart/form-data" -H "x-aspose-client: Containerize.Swagger" -d {"File":{}}
+curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=oleobject" -H "accept: multipart/form-data" -H "Content-Type: multipart/form-data" -H "x-aspose-client: Containerize.Swagger" -d {"File":{}}
 ```
 
 - **Response**
 
 ```bash
 {
-    "Files":
-    [
-        { 
-            "Filename":"Book1_xlsx.tif",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        { 
-            "Filename":"myDocument_xlsx.tif",
-            "FileSize":348126,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
+    "Files": [{
+        "Filename": "OLESlide.ppt",
+        "FileSize": 390,
+        "FileContent": "-----Base64String--------"
+    }, {
+        "Filename": "OLEDoc.docx",
+        "FileSize": 382,
+        "FileContent": "-----Base64String--------"
+    }]
 }
 ```
 
@@ -58,7 +56,7 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 {{< tab tabNum="1" >}}
 
-{{< gist "aspose-cloud" "1e994f29ef29e752b6d02a2c5b63ea9b" "Example-Export-workbook-tiff.cs" >}}
+{{< gist "aspose-cloud" "1e994f29ef29e752b6d02a2c5b63ea9b" "Example-Export-shape-tiff.cs" >}}
 
 {{< /tab >}}
 
@@ -68,7 +66,7 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
-{{< gist "aspose-cloud" "5c1a68c4cea73845b221ff0d3b9ec9df" "Examples-PHP-LiteCells-Export-workbook-tiff.php" >}}
+{{< gist "aspose-cloud" "5c1a68c4cea73845b221ff0d3b9ec9df" "Examples-PHP-LiteCells-Export-shape-tiff.php" >}}
 
 {{< /tab >}}
 

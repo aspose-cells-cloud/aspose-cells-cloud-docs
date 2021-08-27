@@ -29,7 +29,7 @@ The important parameters are described in the following table:
 |datafile|data file |If the file source type of data file is the request body, The data file save into the second part of the multipart content.|
 
 
-**ImportDoubleArrayOption**
+**ImportStringArrayOption**
 
 | Parameter Name|Type|Description|
 | :- | :- | :- |

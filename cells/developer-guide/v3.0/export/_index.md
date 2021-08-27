@@ -27,7 +27,7 @@ The request is an HTTP request with multipart content (see [RFC 2046](http://to
 
 |Parameter Name|Type|Description|
 | :- | :- | :- |
-|objectType |string | object type (workbook/chart/shape/picture)) |
+|objectType |string | object type (workbook/worksheet/chart/shape/picture/listobject/oleobject)) |
 |format|string| file format(csv/xls/html/mhtml/ods/pdf/xml/txt/tiff/xlsb/xlsm/xlsx/xltm/xltx/xps/png/jpg/gif/emf/bmp/md/Numbers/wmf/svg) |
 
 
@@ -120,7 +120,9 @@ The following articles explain each API in detail and contain cURL and SDK Examp
 
 
 1. [Export Excel chart to different file format](/cells/export/excel-chart-to-different-formats/)
-2. [Export Excel picture to different file format](/cells/export/excel-picture-to-different-formats/)
-3. [Export Excel shape to different file format](/cells/export/excel-shape-to-different-formats/)
-4. [Export Excel workbook to different file format](/cells/export/excel-to-different-formats/)
-
+2. [Export Excel list-object to different file format](/cells/export/excel-listobject-to-different-formats/)
+3. [Export Excel ole-object to different file format](/cells/export/excel-ole-object/)
+4. [Export Excel picture to different file format](/cells/export/excel-picture-to-different-formats/)
+5. [Export Excel shape to different file format](/cells/export/excel-shape-to-different-formats/)
+6. [Export Excel workbook to different file format](/cells/export/excel-to-different-formats/)
+7. [Export Excel worksheet to different file format](/cells/export/excel-worksheet-to-different-formats//)

@@ -5,46 +5,65 @@ url: /get-oleobject-from-a-worksheet/
 weight: 10
 ---
 
-## **Introduction**
-This example shows how to get a specific OleObject from a worksheet, using Aspose.Cells Cloud API in your applications. You can use our REST API with any language: .NET, Java, PHP, Ruby, Rails, Python, jQuery and many more.
-## **API Information**
+This REST API `get` an `OLE-Object` from an Excel work sheet.
 
-|**API**|**Type**|**Description**|**Resource Link**|
-| :- | :- | :- | :- |
-|/cells/{name}/worksheets/{sheetName}/oleobjects/{objectNumber}|GET|Get OLE object info or get the OLE object in some format|[GetWorksheetOleObject](https://apireference.aspose.cloud/cells/#/OleObjects/GetWorksheetOleObject)|
-### **cURL Example**
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+- **REST API**
 
-{{< tab tabNum="1" >}}
+```bash
 
-```java
-
-curl -X GET "http://api.aspose.com/v3.0/cells/Embeded_OleObject_Sample_Book1.xlsx/worksheets/Sheet1/oleobjects/0" -H "Content-Type: application/json" -H "Accept: application/json"
+GET |https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects/{objectNumber}
 
 ```
 
-{{< /tab >}}
+- **Path Parameter**
 
-{{< tab tabNum="2" >}}
 
-```java
+|Parameter Name|Type|Description|
+| :- | :- | :- |
+| name | string |  The workbook name. |
+| sheetName | string |  The worksheet name. |
+| objectNumber | int |  The ole object index. |
 
+- **Query Parameter**
+
+|Parameter Name|Type|Description|
+| :- | :- | :- |
+|format|string| export format.|
+|folder|string|Original workbook folder.|
+|storageName|string|Storage name.|
+
+- **Response**
+
+
+```bash
 {
+    "Code": 200,
+    "Status": "OK",
+    "OLEObject":{
+    ......
+    } 
+}
 
-  "Code": 200,
+```
+or
 
-  "Status": "OK"
-
+```bash
+{
+    FILE
 }
 
 ```
 
-{{< /tab >}}
+- **Api Reference**   
 
-{{< /tabs >}}
-## **SDK Source**
-The Aspose.Cells Cloud SDKs can be downloaded from the following page: [Available SDKs](/cells/available-sdks/)
-### **SDK Examples**
+ [GetWorksheetOleObject](https://apireference.aspose.cloud/cells/#/OleObjects/GetWorksheetOleObject)
+
+- **Cloud SDK Family**
+
+Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+
 {{< tabs tabTotal="9" tabID="4" tabName1="C#" tabName2="PHP" tabName3="Ruby" tabName4="Python" tabName5="Node.js" tabName6="Android" tabName7="Objective C" tabName8="Perl" tabName9="Go" >}}
 
 {{< tab tabNum="1" >}}

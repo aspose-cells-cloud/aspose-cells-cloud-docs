@@ -5,96 +5,60 @@ url: /set-value-of-a-cell-in-a-worksheet/
 weight: 70
 ---
 
-## **Introduction**
-This example shows how to set value of a cell in a worksheet, using Aspose.Cells Cloud API in your applications. You can use our REST API with any language: .NET, Java, PHP, Ruby, Rails, Python, jQuery and many more.
-## **API Information**
+This REST API indicates set `cell value` in an Excel file.
 
-|**API**|**Type**|**Description**|**Resource Link**|
-| :- | :- | :- | :- |
-|/cells/{name}/worksheets/{sheetName}/cells/{cellName}|POST|Sets cell value by cell name in worksheet|[PostWorksheetCellSetValue](https://apireference.aspose.cloud/cells/#/Cells/PostWorksheetCellSetValue)|
-### **cURL Example**
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+```bash
 
-{{< tab tabNum="1" >}}
-
-```java
-
-curl -X POST "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/A3?value=1234&type=int" -H "Content-Type: application/json" -H "Accept: application/json"
+POST  http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}
 
 ```
 
-{{< /tab >}}
+- **Path Parameter**
 
-{{< tab tabNum="2" >}}
 
-```java
+|Parameter Name|Type|Description|
+| :- | :- | :- |
+| name | string |  The workbook name. |
+| sheetName | string |  The worksheet name. |
+| cellName | string |  Cell name. |
 
+- **Query Parameter**
+
+|Parameter Name|Type|Description|
+| :- | :- | :- |
+| value | string | |
+| type | string | |
+| formula | string | |
+|folder|string|Original workbook folder.|
+|storageName|string|Storage name.|
+
+
+
+- **Response**
+
+
+```bash
 {
-
-  "Cell": {
-
-    "Name": "A3",
-
-    "Row": 2,
-
-    "Column": 0,
-
-    "Value": "1234",
-
-    "Type": "IsNumeric",
-
-    "IsFormula": false,
-
-    "IsMerged": false,
-
-    "IsArrayHeader": false,
-
-    "IsInArray": false,
-
-    "IsErrorValue": false,
-
-    "IsInTable": false,
-
-    "IsStyleSet": false,
-
-    "HtmlString": "<Font Style=\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;\">1234</Font>",
-
-    "Style": {
-
-      "link": {
-
-        "Href": "/style",
-
-        "Rel": "self"
-
-      }
-
-    },
-
-    "link": {
-
-      "Href": "http://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/A3",
-
-      "Rel": "self"
-
+    "Code": 200,
+    "Status": "OK",
+    "Cell": {
     }
-
-  },
-
-  "Code": "200",
-
-  "Status": "OK"
-
 }
 
 ```
 
-{{< /tab >}}
 
-{{< /tabs >}}
-## **SDK Source**
-The Aspose.Cells Cloud SDKs can be downloaded from the following page: [Available SDKs](/cells/available-sdks/)
-### **SDK Examples**
+- **Api Reference**   
+
+ [PostWorksheetCellSetValue](https://apireference.aspose.cloud/cells/#/Cells/PostWorksheetCellSetValue)
+
+- **Cloud SDK Family**
+
+Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+
+
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}

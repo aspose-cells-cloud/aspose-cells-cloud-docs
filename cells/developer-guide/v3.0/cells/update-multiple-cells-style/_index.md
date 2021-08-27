@@ -5,46 +5,63 @@ url: /update-multiple-cells-style/
 weight: 20
 ---
 
-## **Introduction**
-This example shows how to update multiple cells style of a worksheet, using Aspose.Cells Cloud API in your applications. You can use our REST API with any language: .NET, Java, PHP, Ruby, Rails, Python, jQuery and many more.
-## **API Information**
+This REST API indicates set `cells style` to a cell in an Excel file.
 
-|**API**|**Type**|**Description**|**Resource Link**|
-| :- | :- | :- | :- |
-|/cells/{name}/worksheets/{sheetName}/cells/style|POST|Updates cell's range style in worksheet|[PostUpdateWorksheetRangeStyle](https://apireference.aspose.cloud/cells/#/Cells/PostUpdateWorksheetRangeStyle)|
-### **cURL Example**
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+```bash
 
-{{< tab tabNum="1" >}}
-
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/style?range=a1%3Aa10" -H "accept: application/json" -H "Content-Type: application/json" -d "{ \"Font\": { \"Color\": { \"A\":255, \"R\": 255, \"G\": 255, \"B\": 0 }, \"DoubleSize\": 10, \"IsBold\": true, \"IsItalic\": true, \"IsStrikeout\": true, \"IsSubscript\": true, \"IsSuperscript\": true, \"Name\": \"Arial\", \"Size\": 22 }, \"Name\": \"string\", \"CultureCustom\": \"string\", \"Custom\": \"string\", \"BackgroundColor\": { \"A\": 10, \"R\": 10, \"G\": 10, \"B\": 10 }, \"ForegroundColor\": { \"A\": 255, \"R\": 255, \"G\": 255, \"B\": 0 }
+POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/style
 
 ```
 
-{{< /tab >}}
+- **Path Parameter**
 
-{{< tab tabNum="2" >}}
 
-```java
+|Parameter Name|Type|Description|
+| :- | :- | :- |
+| name | string |  The workbook name. |
+| sheetName | string |  The worksheet name. |
 
- {
 
-  "Code": 200,
+- **Query Parameter**
 
-  "Status": "OK"
+|Parameter Name|Type|Description|
+| :- | :- | :- |
+| range | string |  range name. |
+|folder|string|Original workbook folder.|
+|storageName|string|Storage name.|
 
+
+- **Request Body Parameter**
+
+|Parameter Name|Type|Description|
+| :- | :- | :- |
+|Style |object | cell style |
+
+
+- **Response**
+
+
+```bash
+{
+    "Code": 200,
+    "Status": "OK"
 }
 
 ```
 
-{{< /tab >}}
 
-{{< /tabs >}}
-## **SDK Source**
-The Aspose.Cells Cloud SDKs can be downloaded from the following page: [Available SDKs](/cells/available-sdks/)
-### **SDK Examples**
+- **Api Reference**   
+
+ [PostUpdateWorksheetRangeStyle](https://apireference.aspose.cloud/cells/#/Cells/PostUpdateWorksheetRangeStyle)
+
+- **Cloud SDK Family**
+
+Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+
+
+
 {{< tabs tabTotal="3" tabID="4" tabName1="PHP" tabName2="Ruby" tabName3="Go" >}}
 
 {{< tab tabNum="1" >}}

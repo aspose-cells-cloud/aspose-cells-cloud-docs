@@ -1,5 +1,5 @@
 ---
-title: "Excel Shapes"
+title: "Export Shape"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /export/excel-shape-to-different-formats/
@@ -9,7 +9,7 @@ weight: 20
 ---
 
 
-You can export formats:  [PNG](https://docs.fileformat.com/Image/png/), [GIF]](https://docs.fileformat.com/image/gif/), [JPEG](https://docs.fileformat.com/image/jpeg/),  [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [WMF](https://docs.fileformat.com/image/Wmf/).
+You can export formats:  [PNG](https://docs.fileformat.com/Image/png/), [GIF](https://docs.fileformat.com/image/gif/), [JPEG](https://docs.fileformat.com/image/jpeg/),  [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [WMF](https://docs.fileformat.com/image/Wmf/).
 
 - **REST API**
 

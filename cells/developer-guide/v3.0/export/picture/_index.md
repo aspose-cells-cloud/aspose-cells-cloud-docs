@@ -1,5 +1,5 @@
 ---
-title: "Excel Pictures"
+title: "Export Picture"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /export/excel-picture-to-different-formats/
@@ -8,13 +8,13 @@ description: "Cells.Cloud API for Excel operate: export excel pictures to differ
 weight: 20
 ---
 
-You can export formats:  [PNG](https://docs.fileformat.com/Image/png/), [GIF]](https://docs.fileformat.com/image/gif/), [JPEG](https://docs.fileformat.com/image/jpeg/),  [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [WMF](https://docs.fileformat.com/image/Wmf/).
+You can export formats:  [PNG](https://docs.fileformat.com/Image/png/), [GIF](https://docs.fileformat.com/image/gif/), [JPEG](https://docs.fileformat.com/image/jpeg/),  [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [WMF](https://docs.fileformat.com/image/Wmf/).
 
 - **REST API**
 
 |**API**|**Type**|**Description**|**Swagger Link**|
 | :- | :- | :- | :- |
-|/cells/export|PUT|Export excel objects from request content to some format|[PostExport](https://apireference.aspose.cloud/cells/#/Export/PostExport)|
+|/cells/export|POST|Export excel objects from request content to some format|[PostExport](https://apireference.aspose.cloud/cells/#/Export/PostExport)|
 
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Export/PostExport) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. 
@@ -26,7 +26,7 @@ You can use **cURL** command-line tool to access Aspose.Cells web services easil
 
 ```bash
 
-curl -X PUT "https://api.aspose.cloud/v3.0/cells/export?objectType=picture&format=tiff" -H "accept: multipart/form-data" -H "Content-Type: multipart/form-data" -H "x-aspose-client: Containerize.Swagger" -d {"File":{}}
+curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=picture&format=tiff" -H "accept: multipart/form-data" -H "Content-Type: multipart/form-data" -H "x-aspose-client: Containerize.Swagger" -d {"File":{}}
 ```
 
 - **Response**

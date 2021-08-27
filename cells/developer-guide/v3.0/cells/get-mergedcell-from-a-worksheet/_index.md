@@ -5,66 +5,66 @@ url: /get-mergedcell-from-a-worksheet/
 weight: 60
 ---
 
-## **Introduction**
-This example shows how to get merged cells from a worksheet, using Aspose.Cells Cloud API in your applications. You can use our REST API with any language: .NET, Java, PHP, Ruby, Rails, Python, jQuery and many more.
-## **API Information**
 
-|**API**|**Type**|**Description**|**Resource Link**|
-| :- | :- | :- | :- |
-|/cells/{name}/worksheets/{sheetName}/mergedCells|GET|Get worksheet merged cells.|[GetWorkSheetMergedCells](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorkSheetMergedCells)|
-### **cURL Example**
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+This REST API indicates get `merged cell` in an Excel file.
 
-{{< tab tabNum="1" >}}
+```bash
 
-```java
-
-curl -X GET "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/mergedCells/0" -H "Content-Type: application/json" -H "Accept: application/json"
+GET  http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/mergedCells
 
 ```
 
-{{< /tab >}}
+- **Path Parameter**
 
-{{< tab tabNum="2" >}}
 
-```java
+|Parameter Name|Type|Description|
+| :- | :- | :- |
+| name | string |  The workbook name. |
+| sheetName | string |  The worksheet name. |
 
+
+- **Query Parameter**
+
+|Parameter Name|Type|Description|
+| :- | :- | :- |
+|folder|string|Original workbook folder.|
+|storageName|string|Storage name.|
+
+
+
+- **Response**
+
+
+```bash
 {
-
-  "MergedCell": {
-
-    "EndColumn": 7,
-
-    "EndRow": 1,
-
-    "StartColumn": 0,
-
-    "StartRow": 1,
-
-    "link": {
-
-      "Href": "http://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/cells/mergedcells/0",
-
-      "Rel": "self"
-
+    "Code": 200,
+    "Status": "OK",
+    "MergedCells" :{
+        "EndColumn": 7,
+        "EndRow": 1,
+        "StartColumn": 0,
+        "StartRow": 1,
+        "link": {
+          "Href": "http://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/cells/mergedcells/0",
+          "Rel": "self"
+        }
     }
-
-  },
-
-  "Code": "200",
-
-  "Status": "OK"
-
 }
 
 ```
 
-{{< /tab >}}
 
-{{< /tabs >}}
-## **SDK Source**
-The Aspose.Cells Cloud SDKs can be downloaded from the following page: [Available SDKs](/cells/available-sdks/)
-### **SDK Examples**
+- **Api Reference**   
+
+ [GetWorkSheetMergedCells](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorkSheetMergedCells)
+
+- **Cloud SDK Family**
+
+Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+
+
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}

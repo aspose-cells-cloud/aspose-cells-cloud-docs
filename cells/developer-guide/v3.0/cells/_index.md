@@ -9,7 +9,7 @@ description: "Cells.Cloud API for Excel operate: cells operate."
 weight: 100
 ---
 
-## Working with cells on an Excel file.
+Cells is the basic operates of Aspose.Cells for cell value and style of excel file. 
 
 - [Get Cell Style from a Worksheet](/cells/get-cell-style-from-a-worksheet/)
 - [Update Multiple Cells Style](/cells/update-multiple-cells-style/)
