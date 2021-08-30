@@ -11,43 +11,49 @@ weight: 100
 
 This REST API add an `DateFilter` on an Excel Worksheet.
 
-**Query Parameter**
+## RSET API
 
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-|range|string||
-|fieldIndex|integer||
-|dateTimeGroupingType|string|Day/Hour/Minute/Month/Second/Year |
-|year|integer| |
-|month|integer| |
-|day|integer| |
-|hour|integer| |
-|minute|integer| |
-|second|integer| |
-|matchBlanks|string|true/false|
-|refresh|string|true/false|
-|folder|string|Original workbook folder.|
-|storageName|string|Storage name.|
+```bash
 
+PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/dateFilter
 
-## REST API ##
+```
+The request parameters are:
 
-|**API**|**Type**|**Description**|**Resource Link**|
-| :- | :- | :- | :- |
-|/cells/{name}/worksheets/{sheetName}/autoFilter/dateFilter|PUT|Adds date filter in worksheet|[PutWorksheetDateFilter](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetDateFilter)|
+| Parameter Name | Type | Path/Query String/HTTPBody | Description|
+| :- | :- | :- |:- |
+| name | string | Path |   The workbook name. |
+| sheetName | string | Path |   The worksheet name. |
+|range|string|Query ||
+|fieldIndex|integer|Query ||
+|dateTimeGroupingType|string|Query |Day/Hour/Minute/Month/Second/Year |
+|year|integer| Query ||
+|month|integer| Query ||
+|day|integer|Query | |
+|hour|integer| Query ||
+|minute|integer| Query ||
+|second|integer| Query ||
+|matchBlanks|string|Query |true/false|
+|refresh|string|Query |true/false|
+|folder|string|Query |Original workbook folder.|
+|storageName|string|Query |Storage name.|
+
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetDateFilter) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use **cURL** command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
-
+You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
+```bash
 
-curl -X PUT "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/dateFilter?range=A1:B1&fieldIndex=0&dateTimeGroupingType=Year&year=1920&refresh=true" -H "Content-Type: application/json" -H "Accept: application/json"
+curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/dateFilter?range=A1:B1&fieldIndex=0&dateTimeGroupingType=Year&year=1920&refresh=true" \
+-X PUT \
+-H "Content-Type: application/json" \
+-H "Accept: application/json" \
+-H "Authorization: Bearer <jwt token>"
 
 ```
 
@@ -55,14 +61,10 @@ curl -X PUT "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/aut
 
 {{< tab tabNum="2" >}}
 
-```java
-
+```bash
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
 
 ```
@@ -70,6 +72,7 @@ curl -X PUT "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/aut
 {{< /tab >}}
 
 {{< /tabs >}}
+
 
 ## Cloud SDK Family
 

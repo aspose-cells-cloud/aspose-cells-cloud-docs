@@ -11,37 +11,44 @@ weight: 100
 
 This REST API add an `IconFilter` on an Excel Worksheet.
 
-**Query Parameter**
+## RSET API
 
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-|range|string||
-|fieldIndex|integer||
-|iconSetType|string|Arrows3/ArrowsGray3/Flags3/Signs3/Symbols3/Symbols32/TrafficLights31/TrafficLights32/Arrows4/ArrowsGray4/Rating4/RedToBlack4/TrafficLights4/Arrows5/ArrowsGray5/Quarters5/Rating5/Stars3/Boxes5/Triangles3/None/CustomSet/Smilies3/ColorSmilies3  |
-|iconId|integer| |
-|matchBlanks|string|true/false|
-|refresh|string|true/false|
-|folder|string|Original workbook folder.|
-|storageName|string|Storage name.|
+```bash
 
+PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/iconFilter
 
-## REST API ##
+```
 
-|**API**|**Type**|**Description**|**Resource Link**|
-| :- | :- | :- | :- |
-|/cells/{name}/worksheets/{sheetName}/autoFilter/iconFilter|PUT|Adds an icon filter in worksheet|[PutWorksheetIconFilter](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetIconFilter)|
+The request parameters are:
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description|
+| :- | :- | :- |:- |
+| name | string |  Path | The workbook name. |
+| sheetName | string | Path |  The worksheet name. |
+|range|string| Query | |
+|fieldIndex|integer| Query | |
+|iconSetType|string| Query |Arrows3/ArrowsGray3/Flags3/Signs3/Symbols3/Symbols32/TrafficLights31/TrafficLights32/Arrows4/ArrowsGray4/Rating4/RedToBlack4/TrafficLights4/Arrows5/ArrowsGray5/Quarters5/Rating5/Stars3/Boxes5/Triangles3/None/CustomSet/Smilies3/ColorSmilies3  |
+|iconId|integer| Query | |
+|matchBlanks|string| Query |true/false|
+|refresh|string| Query |true/false|
+|folder|string| Query |Original workbook folder.|
+|storageName| Query |string|Storage name.|
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetIconFilter) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use **cURL** command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
+```bash
 
-curl -X PUT "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/iconFilter?range=A1:B1&fieldIndex=0&iconSetType=ArrowsGray3&iconId=1" -H "Content-Type: application/json" -H "Accept: application/json"
+curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/iconFilter?range=A1:B1&fieldIndex=0&iconSetType=ArrowsGray3&iconId=1" \
+-X PUT \
+-H "Content-Type: application/json" \
+-H "Accept: application/json" \
+-H "Authorization: Bearer <jwt token>"
 
 ```
 
@@ -49,14 +56,10 @@ curl -X PUT "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/aut
 
 {{< tab tabNum="2" >}}
 
-```java
-
+```bash
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
 
 ```
@@ -64,6 +67,7 @@ curl -X PUT "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/aut
 {{< /tab >}}
 
 {{< /tabs >}}
+
 
 ## Cloud SDK Family
 

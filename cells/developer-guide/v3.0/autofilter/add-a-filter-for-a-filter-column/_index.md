@@ -12,36 +12,45 @@ weight: 100
 
 This REST API add an `AutoFilter` on an Excel Worksheet.
 
-**Query Parameter**
+## RSET API
 
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-|range|string||
-|fieldIndex|integer||
-|criteria|string| |
-|matchBlanks|string|true/false|
-|refresh|string|true/false|
-|folder|string|Original workbook folder.|
-|storageName|string|Storage name.|
+```bash
+
+PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/filter
+
+```
+
+The request parameters are:
 
 
-## REST API ##
+| Parameter Name | Type | Path/Query String/HTTPBody | Description|
+| :- | :- | :- |:- |
+| name | string | Path | The workbook name. |
+| sheetName | string | Path |The worksheet name. |
+|range|string| Query | |
+|fieldIndex|integer|Query |  |
+|criteria|string|Query |  |
+|matchBlanks|string|Query | true/false|
+|refresh|string|Query | true/false|
+|folder|string|Query | Original workbook folder.|
+|storageName|string|Query | Storage name.|
 
-|**API**|**Type**|**Description**|**Resource Link**|
-| :- | :- | :- | :- |
-|/cells/{name}/worksheets/{sheetName}/autoFilter/filter|PUT|Adds a filter for a filter column in worksheet|[PutWorksheetFilter](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetFilter)|
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetFilter) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use **cURL** command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
+```bash
 
-curl -X PUT "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/filter?range=A1:B1&fieldIndex=0&criteria=Year" -H "Content-Type: application/json" -H "Accept: application/json" 
+curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/filter?range=A1:B1&fieldIndex=0&criteria=Year" \
+-X PUT \
+-H "Content-Type: application/json" \
+-H "Accept: application/json" \
+-H "Authorization: Bearer <jwt token>"
 
 ```
 
@@ -49,20 +58,19 @@ curl -X PUT "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/aut
 
 {{< tab tabNum="2" >}}
 
-```java
-
+```bash
 {
   "Code": 200,
   "Status": "OK"
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK Family
+
+##  Cloud SDK Family
 
 Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

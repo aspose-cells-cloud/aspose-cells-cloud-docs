@@ -9,25 +9,30 @@ description: "Cells.Cloud API for Excel operate: get autofilter on an Excel file
 weight: 100
 ---
 
-This REST API get an `AutoFilter` from an Excel Worksheet.
 
-**Query Parameter**
-
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-|folder|string|Original workbook folder.|
-|storageName|string|Storage name.|
-
-
-## REST API ##
-
-|**API**|**Type**|**Description**|**Resource Link**|
-| :- | :- | :- | :- |
-|/cells/{name}/worksheets/{sheetName}/autoFilter|GET|Get auto filters description in worksheet|[GetWorksheetAutoFilter](https://apireference.aspose.cloud/cells/#/AutoFilter/GetWorksheetAutoFilter)|
-
+This REST API indicates get `auto filter` description in an Excel.
+ 
+## RSET API
+ 
+```bash
+ 
+GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter
+ 
+```
+The request parameters are: 
+ 
+| Parameter Name | Type | Path/Query String/HTTPBody | Description| 
+| :- | :- | :- |:- | 
+| name | string | path |   |
+| sheetName | string | path |   |
+| folder | string | query |   |
+| storageName | string | query | storage name. |
+ 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/AutoFilter/GetWorksheetAutoFilter) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+ 
+You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+ 
 
-You can use **cURL** command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
@@ -35,7 +40,11 @@ You can use **cURL** command-line tool to access Aspose.Cells web services easil
 
 ```java
 
- curl -X GET "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter"-H "Content-Type: application/json" -H "Accept: application/json"
+curl  "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter" \
+-X GET \
+-H "Content-Type: application/json" \
+-H "Accept: application/json" \
+-H "Authorization: Bearer <jwt token>"
 
 ```
 

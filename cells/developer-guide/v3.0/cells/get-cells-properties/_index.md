@@ -7,72 +7,24 @@ weight: 130
 
 This REST API indicates shows how to `get a specific cell` in an Excel file.
 
+## RSET API
+ 
 ```bash
-
-POST  http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellOrMethodName}
-
+ 
+GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellOrMethodName}
+ 
 ```
-
-- **Path Parameter**
-
-
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-| name | string |  The workbook name. |
-| sheetName | string |  The worksheet name. |
-| cellOrMethodName | string | value : firstcell, endcell, maxrow, maxdatarow, maxcolumn, maxdatacolumn, minrow, mindatarow, mincolumn, mindatacolumn and cellName. |
-
-- **Query Parameter**
-
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-|folder|string|Original workbook folder.|
-|storageName|string|Storage name.|
-
-
-- **Response**
-
-
-
-{{< tabs tabTotal="2" tabID="1" tabName1="Response1" tabName2="Response2" >}}
-
-{{< tab tabNum="1" >}}
-
-```bash
-{
-    "Code": 200,
-    "Status": "OK",
-    "Cell":{
-    }
-}
-
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-
-```bash
-{
-    "StatusCode": 200,
-    "Content": 'result_Content'
-}
-
-```
-
-{{< /tab >}}
-
-{{< /tabs >}}
-
-
-
-
-
-
-- **Api Reference**   
-
- [GetWorksheetCell](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetCell)
-
+The request parameters are: 
+ 
+| Parameter Name | Type | Path/Query String/HTTPBody | Description| 
+| :- | :- | :- |:- | 
+| name | string | path | Document name. |
+| sheetName | string | path | Worksheet name. |
+| cellOrMethodName | string | path | The cell's or method name. (Method name value : firstcell, endcell, maxrow, maxdatarow, maxcolumn, maxdatacolumn, minrow, mindatarow, mincolumn, mindatacolumn and cellName.) |
+| folder | string | query | Document's folder. |
+| storageName | string | query | storage name. |
+ 
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetCell) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 
 - **How to get specific cell**

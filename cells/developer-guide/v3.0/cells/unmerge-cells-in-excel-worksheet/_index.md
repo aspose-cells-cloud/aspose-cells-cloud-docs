@@ -7,51 +7,61 @@ weight: 120
 
 This REST API indicates `unmerge` cells in an Excel file.
 
+## RSET API
+ 
 ```bash
-
-POST  http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/unmerge
-
+ 
+POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/unmerge
+ 
 ```
-
-- **Path Parameter**
-
-
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-| name | string |  The workbook name. |
-| sheetName | string |  The worksheet name. |
-
-
-- **Query Parameter**
-
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-|startRow| int | |
-|startColumn| int | |
-|totalRows| int | |
-|totalColumns| int | |
-|folder|string|Original workbook folder.|
-|storageName|string|Storage name.|
-
-
-
-- **Response**
-
-
+The request parameters are: 
+ 
+| Parameter Name | Type | Path/Query String/HTTPBody | Description| 
+| :- | :- | :- |:- | 
+| name | string | path | The workbook name. |
+| sheetName | string | path | The worksheet name. |
+| startRow | integer | query | The start row. |
+| startColumn | integer | query | The start column. |
+| totalRows | integer | query | The total rows |
+| totalColumns | integer | query | The total columns. |
+| folder | string | query | The workbook folder. |
+| storageName | string | query | storage name. |
+ 
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostWorksheetUnmerge) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+ 
+You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+ 
+{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+ 
+{{< tab tabNum="1" >}}
+ 
+```bash
+ 
+curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/unmerge?startRow=10&startColumn=10&totalRows=10&totalColumns=10" \
+-X POST \
+-H "Content-Type: application/json" \
+-H "Accept: application/json" \
+-H "Authorization: Bearer <jwt token>"
+ 
+```
+ 
+{{< /tab >}}
+ 
+{{< tab tabNum="2" >}}
+ 
 ```bash
 {
-    "Code": 200,
-    "Status": "OK"
+"Code": 200,
+"Status": "OK"
 }
-
+ 
 ```
-
-
-- **Api Reference**   
-
- [PostWorksheetUnmerge](https://apireference.aspose.cloud/cells/#/Cells/PostWorksheetUnmerge)
-
-- **Cloud SDK Family**
+ 
+{{< /tab >}}
+ 
+{{< /tabs >}}
+ 
+## Cloud SDK Family
 
 Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

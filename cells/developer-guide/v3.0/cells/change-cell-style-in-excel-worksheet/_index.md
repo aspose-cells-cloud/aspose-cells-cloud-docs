@@ -7,52 +7,339 @@ weight: 30
 
 This REST API indicates update `cell style` in an Excel file.
 
+## RSET API
+ 
 ```bash
-
+ 
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}/style
-
+ 
 ```
-
-- **Path Parameter**
-
-
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-| name | string |  The workbook name. |
-| sheetName | string |  The worksheet name. |
-| cellName | string |  Cell name. |
-
-- **Query Parameter**
-
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-|folder|string|Original workbook folder.|
-|storageName|string|Storage name.|
-
-
-- **Request Body Parameter**
-
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-|Style |object |  cells style. |
-
-- **Response**
-
-
+The request parameters are: 
+ 
+| Parameter Name | Type | Path/Query String/HTTPBody | Description| 
+| :- | :- | :- |:- | 
+| name | string | path | Workbook name. |
+| sheetName | string | path | Worksheet name. |
+| cellName | string | path | The cell name. |
+| style |  | body | with update style settings. |
+| folder | string | query | The workbook folder. |
+| storageName | string | query | storage name. |
+ 
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostUpdateWorksheetCellStyle) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+ 
+You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+ 
+{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+ 
+{{< tab tabNum="1" >}}
+ 
+```bash
+ 
+curl -v "http://api.aspose.cloud/v3.0/cells/test_cells.xlsx/worksheets/Sheet3/cells/A1/style" \
+-d '{ "BackgroundThemeColor": { "ColorType": "Text2", "Tint": 1 } }' \
+-X POST \
+-H "Content-Type: application/json" \
+-H "Accept: application/json" \
+-H "Authorization: Bearer <jwt token>"
+ 
+```
+ 
+{{< /tab >}}
+ 
+{{< tab tabNum="2" >}}
+ 
 ```bash
 {
-    "Code": 200,
-    "Status": "OK"
+
+  "Style": {
+
+    "Font": {
+
+      "Color": {
+
+        "A": 255,
+
+        "R": 0,
+
+        "G": 0,
+
+        "B": 0
+
+      },
+
+      "DoubleSize": 11,
+
+      "IsBold": false,
+
+      "IsItalic": false,
+
+      "IsStrikeout": false,
+
+      "IsSubscript": false,
+
+      "IsSuperscript": false,
+
+      "Name": "Calibri",
+
+      "Size": 11,
+
+      "Underline": "None"
+
+    },
+
+    "Name": null,
+
+    "CultureCustom": null,
+
+    "Custom": "",
+
+    "BackgroundColor": {
+
+      "A": 0,
+
+      "R": 0,
+
+      "G": 0,
+
+      "B": 0
+
+    },
+
+    "ForegroundColor": {
+
+      "A": 0,
+
+      "R": 0,
+
+      "G": 0,
+
+      "B": 0
+
+    },
+
+    "IsFormulaHidden": false,
+
+    "IsDateTime": false,
+
+    "IsTextWrapped": false,
+
+    "IsGradient": false,
+
+    "IsLocked": true,
+
+    "IsPercent": false,
+
+    "ShrinkToFit": false,
+
+    "IndentLevel": 0,
+
+    "Number": 0,
+
+    "RotationAngle": 0,
+
+    "Pattern": "None",
+
+    "TextDirection": "Context",
+
+    "VerticalAlignment": "Bottom",
+
+    "HorizontalAlignment": "General",
+
+    "BorderCollection": [
+
+      {
+
+        "LineStyle": "None",
+
+        "Color": {
+
+          "A": 255,
+
+          "R": 0,
+
+          "G": 0,
+
+          "B": 0
+
+        },
+
+        "BorderType": "BottomBorder"
+
+      },
+
+      {
+
+        "LineStyle": "None",
+
+        "Color": {
+
+          "A": 255,
+
+          "R": 0,
+
+          "G": 0,
+
+          "B": 0
+
+        },
+
+        "BorderType": "DiagonalDown"
+
+      },
+
+      {
+
+        "LineStyle": "None",
+
+        "Color": {
+
+          "A": 255,
+
+          "R": 0,
+
+          "G": 0,
+
+          "B": 0
+
+        },
+
+        "BorderType": "DiagonalUp"
+
+      },
+
+      {
+
+        "LineStyle": "None",
+
+        "Color": {
+
+          "A": 255,
+
+          "R": 0,
+
+          "G": 0,
+
+          "B": 0
+
+        },
+
+        "BorderType": "Horizontal"
+
+      },
+
+      {
+
+        "LineStyle": "None",
+
+        "Color": {
+
+          "A": 255,
+
+          "R": 0,
+
+          "G": 0,
+
+          "B": 0
+
+        },
+
+        "BorderType": "LeftBorder"
+
+      },
+
+      {
+
+        "LineStyle": "None",
+
+        "Color": {
+
+          "A": 255,
+
+          "R": 0,
+
+          "G": 0,
+
+          "B": 0
+
+        },
+
+        "BorderType": "RightBorder"
+
+      },
+
+      {
+
+        "LineStyle": "None",
+
+        "Color": {
+
+          "A": 255,
+
+          "R": 0,
+
+          "G": 0,
+
+          "B": 0
+
+        },
+
+        "BorderType": "TopBorder"
+
+      },
+
+      {
+
+        "LineStyle": "None",
+
+        "Color": {
+
+          "A": 255,
+
+          "R": 0,
+
+          "G": 0,
+
+          "B": 0
+
+        },
+
+        "BorderType": "Vertical"
+
+      }
+
+    ],
+
+    "BackgroundThemeColor": null,
+
+    "ForegroundThemeColor": null,
+
+    "link": {
+
+      "Href": "http://api.aspose.cloud/v3.0/cells/test_cells.xlsx/worksheets/Sheet3/cells/A1/style",
+
+      "Rel": "self",
+
+      "Title": null,
+
+      "Type": null
+
+    }
+
+  },
+
+  "Code": 200,
+
+  "Status": "OK"
+
 }
-
+ 
 ```
-
-
-- **Api Reference**   
-
- [PostUpdateWorksheetCellStyle](https://apireference.aspose.cloud/cells/#/Cells/PostUpdateWorksheetCellStyle)
-
-- **Cloud SDK Family**
+ 
+{{< /tab >}}
+ 
+{{< /tabs >}}
+ 
+## Cloud SDK Family
 
 Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

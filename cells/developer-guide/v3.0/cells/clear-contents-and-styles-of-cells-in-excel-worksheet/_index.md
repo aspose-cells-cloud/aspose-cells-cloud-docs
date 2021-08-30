@@ -7,51 +7,62 @@ weight: 50
 
 This REST API indicates `clear` cells `content` in an Excel file.
 
+## RSET API
+ 
 ```bash
-
+ 
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clearcontents
-
+ 
 ```
-
-- **Path Parameter**
-
-
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-| name | string |  The workbook name. |
-| sheetName | string |  The worksheet name. |
-
-
-- **Query Parameter**
-
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-|folder|string|Original workbook folder.|
-|storageName|string|Storage name.|
-|range|string|Represents the range to which the specified cells applies.|
-|startRow| int | |
-|startColumn| int | |
-|endRow| int | |
-|endColumn| int | |
-
-
-- **Response**
-
-
+The request parameters are: 
+ 
+| Parameter Name | Type | Path/Query String/HTTPBody | Description| 
+| :- | :- | :- |:- | 
+| name | string | path | Workbook name. |
+| sheetName | string | path | Worksheet name. |
+| range | string | query | The range. |
+| startRow | integer | query | The start row. |
+| startColumn | integer | query | The start column. |
+| endRow | integer | query | The end row. |
+| endColumn | integer | query | The end column. |
+| folder | string | query | The workbook folder. |
+| storageName | string | query | storage name. |
+ 
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostClearContents) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+ 
+You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+ 
+{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+ 
+{{< tab tabNum="1" >}}
+ 
+```bash
+ 
+curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/clearcontents?range=A2:C11" \
+-X POST \
+-H "Content-Type: application/json" \
+-H "Accept: application/json" \
+-H "Authorization: Bearer <jwt token>"
+ 
+```
+ 
+{{< /tab >}}
+ 
+{{< tab tabNum="2" >}}
+ 
 ```bash
 {
-    "Code": 200,
-    "Status": "OK"
+"Code": 200,
+"Status": "OK"
 }
-
+ 
 ```
-
-
-- **Api Reference**   
-
- [PostClearContents](https://apireference.aspose.cloud/cells/#/Cells/PostClearContents)
-
-- **Cloud SDK Family**
+ 
+{{< /tab >}}
+ 
+{{< /tabs >}}
+ 
+## Cloud SDK Family
 
 Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
