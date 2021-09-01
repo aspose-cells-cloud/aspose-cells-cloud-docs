@@ -14,31 +14,49 @@ Excel object export is a complex process. Many factors contribute to the complex
 
 It works perfectly for workbook, chart, shape and picture exported from excel file. You can export formats: [XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [ODS](https://docs.fileformat.com/spreadsheet/ods/), [TXT](https://docs.fileformat.com/word-processing/txt/). The export-only formats: [PDF](https://docs.fileformat.com/pdf/), [OTS](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [DIF](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [NUMBERS](https://docs.fileformat.com/spreadsheet/numbers/), [FODS](https://docs.fileformat.com/spreadsheet/fods/).
 
+The request is an HTTP request with multipart content (see [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). The first part of the multipart content contains the data file and the second contains save options.
+
 This REST API `export` excel file to different format file.
+
+## RSET API
+
 ```bash
 
 POST https://api.aspose.cloud/v3.0/cells/export
 
 ```
 
-The request is an HTTP request with multipart content (see [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). The first part of the multipart content contains the data file and the second contains save options.
-
-- **Query Parameter**
-
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-|objectType |string | object type (workbook/worksheet/chart/shape/picture/listobject/oleobject)) |
-|format|string| file format(csv/xls/html/mhtml/ods/pdf/xml/txt/tiff/xlsb/xlsm/xlsx/xltm/xltx/xps/png/jpg/gif/emf/bmp/md/Numbers/wmf/svg) |
-
-
-- **Request Body Parameter**
-
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-|excel file|data file | The data file save into the first part of the multipart content.|
-
-- **Response**
-
+The request parameters are: 
+ 
+| Parameter Name | Type | Path/Query String/HTTPBody | Description| 
+| :- | :- | :- |:- | 
+| file | file | formData | File to upload |
+| objectType | string | query |  object type (workbook/worksheet/chart/shape/picture/listobject/oleobject) |
+| format | string | query | file format(csv/xls/html/mhtml/ods/pdf/xml/txt/tiff/xlsb/xlsm/xlsx/xltm/xltx/xps/png/jpg/gif/emf/bmp/md/Numbers/wmf/svg)  |
+ 
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PostExport) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+ 
+You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+ 
+{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+ 
+{{< tab tabNum="1" >}}
+ 
+```bash
+ 
+curl -v "http://api.aspose.cloud/v3.0/cells/export" \
+-X POST \
+-H "Content-Type: application/json" \
+-H "Accept: application/json" \
+-H "Authorization: Bearer <jwt token>" \
+-F 'xxxxx1=@xxxx1.xlsx' \
+-F 'xxxxx2=@xxxx2.xlsx' 
+```
+ 
+{{< /tab >}}
+ 
+{{< tab tabNum="2" >}}
+ 
 ```bash
 {
     "Files":
@@ -55,9 +73,15 @@ The request is an HTTP request with multipart content (see [RFC 2046](http://to
         }
     ]
 }
+ 
 ```
+ 
+{{< /tab >}}
+ 
+{{< /tabs >}}
+ 
+## Cloud SDK Family
 
-- **Cloud SDK Family**
 
 Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

@@ -3,53 +3,75 @@ title: "Clear"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /clear/
+aliases: [/clearobjects/]
 keywords: "REST API, convert, spreadsheets, excel, Clean object."
 description: "Cells.Cloud API for Excel files Clear Object."
 weight: 100
 ---
 
-This REST API indicates `clear` excel object on Excel files.
+This REST API indicates `clear` excel object in an Excel files.
+
+## RSET API
+
 ```bash
 
-POST https://api.aspose.cloud/v3.0/cells/clear
+POST https://api.aspose.cloud/v3.0/cells/clearobjects
 
 ```
-- **Query Parameter**
-
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-| objecttype | string |  Object type of cleaning object. Object type is include of chart, comment, picture and shape. |
-
-
-
-- **Request Body Parameter**
-
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-|excel file|data file | The data file save into the first part of the multipart content.|
-
-- **Response**
-
+he request parameters are: 
+ 
+| Parameter Name | Type | Path/Query String/HTTPBody | Description| 
+| :- | :- | :- |:- | 
+| file | file | formData | File to upload |
+| objecttype | string | query | chart/comment/picture/shape  |
+ 
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PostClearObjects) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+ 
+You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+ 
+{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+ 
+{{< tab tabNum="1" >}}
+ 
+```bash
+ 
+curl -v "http://api.aspose.cloud/v3.0/cells/clearobjects?objecttype=comment" \
+-X POST \
+-H "Content-Type: application/json" \
+-H "Accept: application/json" \
+-H "Authorization: Bearer <jwt token>" \
+-F 'xxxxx1=@xxxx1.xlsx' \
+-F 'xxxxx2=@xxxx2.xlsx' 
+```
+ 
+{{< /tab >}}
+ 
+{{< tab tabNum="2" >}}
+ 
 ```bash
 {
     "Files":
     [
         { 
-            "Filename":"xxxxx",
+            "Filename":"xxxx1",
             "FileSize":274022,
             "FileContent":"-----Base64String--------"
         },
         { 
-            "Filename":"xxxxx",
+            "Filename":"xxxx2",
             "FileSize":274022,
             "FileContent":"-----Base64String--------"
         }
     ]
 }
+ 
 ```
-
-
-- **Cloud SDK Family**
+ 
+{{< /tab >}}
+ 
+{{< /tabs >}}
+ 
+## Cloud SDK Family
 
 Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

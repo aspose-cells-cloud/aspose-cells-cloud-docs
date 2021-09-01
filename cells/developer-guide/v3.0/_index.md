@@ -8,7 +8,7 @@ description: "This Developer Guide describes practical scenarios and tips to hel
 weight: 20
 ---
 
-
+## Freature Maps
 
 {{< tabs tabTotal="8" tabID="1" tabName1="File" tabName2="Home" tabName3="Insert" tabName4="Page Layout" tabName5="Formulas" tabName6="Data" tabName7="Review" tabName8="View" >}}
 {{< tab tabNum="1" >}}
@@ -231,3 +231,19 @@ weight: 20
 </div>
 {{< /tab >}}
 
+{{< /tabs >}}
+
+## LiteApi
+
+
+LiteApi is a lightweight cloud Api based on existing Aspose.Cells Cloud service products.  And it doesn't need any storage.
+
+
+- Main features:
+
+   - [How to assembly data in an Excel file.](/cells/assembly/)
+   - [How to clear Excel object in an Excel file.](/cells/clear/)
+   - [How to export Excel object in an Excel file.](/cells/export/)    
+   - [How to import data in an Excel file.](/cells/import/) 
+   - [How to merge multiple Excel files into an Excel file.](/cells/merge/)    
+   - [How to split Excel files.](/cells/split/)    
