@@ -5,22 +5,42 @@ url: /delete-chart-title-in-a-worksheet/
 weight: 150
 ---
 
-## **Introduction**
-This example shows how to delete chart title of a chart using Aspose.Cells Cloud API in your applications. You can use our REST API with any language: .NET, Java, PHP, Ruby, Rails, Python, jQuery and many more.
-## **API Information**
+This REST API indicates hide title in chart
+ 
+## RSET API
+ 
+```bash
+ 
+DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title
+ 
+```
+The request parameters are: 
+ 
+| Parameter Name | Type | Path/Query String/HTTPBody | Description| 
+| :- | :- | :- |:- | 
+| name | string | path | Workbook name. |
+| sheetName | string | path | Worksheet name. |
+| chartIndex | integer | path | The chart index. |
+| folder | string | query | The workbook folder. |
+| storageName | string | query | storage name. |
+ 
+<br/>
 
-|**API**|**Type**|**Description**|**Resource Link**|
-| :- | :- | :- | :- |
-|/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title|DELETE|Delete chart title in worksheet|[DeleteWorksheetChartTitle](https://apireference.aspose.cloud/cells/#/Charts/DeleteWorksheetChartTitle)|
-### **cURL Example**
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/DeleteWorksheetChartTitle) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+ 
+You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```java
 
-curl -X DELETE "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/title" -H "Content-Type: application/json" -H "Accept: application/json"
-
+curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/title"
+-X DELETE 
+-H "Content-Type: application/json" \
+-H "Accept: application/json" \
+-H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
@@ -42,9 +62,14 @@ curl -X DELETE "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets
 {{< /tab >}}
 
 {{< /tabs >}}
-## **SDK Source**
-The Aspose.Cells Cloud SDKs can be downloaded from the following page: [Available SDKs](/cells/available-sdks/)
-### **SDK Examples**
+
+## Cloud SDK Family
+ 
+Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+ 
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+
+
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}

@@ -5,21 +5,44 @@ url: /update-chart-legend-in-a-worksheet/
 weight: 90
 ---
 
-## **Introduction**
-This example shows how to update a chart legend of a chart using Aspose.Cells Cloud API in your applications. You can use our REST API with any language: .NET, Java, PHP, Ruby, Rails, Python, jQuery and many more.
-## **API Information**
+This REST API indicates update chart legend
+ 
+## RSET API
+ 
+```bash
+ 
+POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend
+ 
+```
+The request parameters are: 
+ 
+| Parameter Name | Type | Path/Query String/HTTPBody | Description| 
+| :- | :- | :- |:- | 
+| name | string | path | Workbook name. |
+| sheetName | string | path | Worksheet name. |
+| chartIndex | integer | path | The chart index. |
+| legend |  | body |   |
+| folder | string | query | The workbook folder. |
+| storageName | string | query | storage name. |
 
-|**API**|**Type**|**Description**|**Resource Link**|
-| :- | :- | :- | :- |
-|/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend|POST|Updates chart legend in worksheet|[PostWorksheetChartLegend](https://apireference.aspose.cloud/cells/#/Charts/PostWorksheetChartLegend)|
-### **cURL Example**
+ 
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/PostWorksheetChartLegend) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+ 
+You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```java
 
-curl -X POST  "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/legend" -d '{"Font":{"Color":{"A":"1", "R":"255", "G":"0", "B":"0"}, "DoubleSize":10.0, "IsBold":true, "IsItalic":false, "IsStrikeout":false, "IsSubscript":false, "IsSuperscript":false, "Name":"Arial", "Size":15, "Underline":"None"}, "Shadow":true}' -H "Content-Type: application/json" -H "Accept: application/json"
+curl -v  "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/legend" 
+-d '{"Font":{"Color":{"A":"1", "R":"255", "G":"0", "B":"0"}, "DoubleSize":10.0, "IsBold":true, "IsItalic":false, "IsStrikeout":false, "IsSubscript":false, "IsSuperscript":false, "Name":"Arial", "Size":15, "Underline":"None"}, "Shadow":true}' 
+-X POST \
+-H "Content-Type: application/json" \
+-H "Accept: application/json" \
+-H "Authorization: Bearer <jwt token>"
+ 
 
 ```
 
@@ -30,172 +53,6 @@ curl -X POST  "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/
 ```java
 
 {
-
-  "Legend": {
-
-    "Position": "Right",
-
-    "LegendEntries": {
-
-      "link": {
-
-        "Href": "/legendEntries",
-
-        "Rel": "self"
-
-      }
-
-    },
-
-    "Area": {
-
-      "BackgroundColor": {
-
-        "A": "0",
-
-        "R": "0",
-
-        "G": "0",
-
-        "B": "0"
-
-      },
-
-      "FillFormat": {
-
-        "Type": "Automatic"
-
-      },
-
-      "ForegroundColor": {
-
-        "A": "0",
-
-        "R": "0",
-
-        "G": "0",
-
-        "B": "0"
-
-      },
-
-      "Formatting": "Automatic",
-
-      "InvertIfNegative": false,
-
-      "Transparency": 0.0
-
-    },
-
-    "AutoScaleFont": false,
-
-    "BackgroundMode": "Automatic",
-
-    "Border": {
-
-      "BeginArrowLength": "Medium",
-
-      "BeginArrowWidth": "Medium",
-
-      "BeginType": "None",
-
-      "CapType": "Flat",
-
-      "Color": {
-
-        "A": "0",
-
-        "R": "0",
-
-        "G": "0",
-
-        "B": "0"
-
-      },
-
-      "CompoundType": "Single",
-
-      "DashType": "Solid",
-
-      "EndArrowLength": "Medium",
-
-      "EndArrowWidth": "Medium",
-
-      "EndType": "None",
-
-      "IsAuto": false,
-
-      "IsAutomaticColor": false,
-
-      "IsVisible": false,
-
-      "JoinType": "Round",
-
-      "Style": "Solid",
-
-      "Transparency": 0.0,
-
-      "Weight": "HairLine",
-
-      "WeightPt": 0.0
-
-    },
-
-    "Font": {
-
-      "Color": {
-
-        "A": "0",
-
-        "R": "255",
-
-        "G": "0",
-
-        "B": "0"
-
-      },
-
-      "DoubleSize": 15.0,
-
-      "IsBold": false,
-
-      "IsItalic": false,
-
-      "IsStrikeout": false,
-
-      "IsSubscript": false,
-
-      "IsSuperscript": false,
-
-      "Name": "Arial",
-
-      "Size": 15,
-
-      "Underline": "None"
-
-    },
-
-    "IsAutomaticSize": false,
-
-    "Shadow": false,
-
-    "Width": 823,
-
-    "Height": 1043,
-
-    "X": 3125,
-
-    "Y": 1466,
-
-    "link": {
-
-      "Href": "http://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/legend",
-
-      "Rel": "self"
-
-    }
-
-  },
 
   "Code": "200",
 
@@ -208,9 +65,14 @@ curl -X POST  "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/
 {{< /tab >}}
 
 {{< /tabs >}}
-## **SDK Source**
-The Aspose.Cells Cloud SDKs can be downloaded from the following page: [Available SDKs](/cells/available-sdks/)
-### **SDK Examples**
+
+## Cloud SDK Family
+ 
+Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+ 
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+ 
+
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}
