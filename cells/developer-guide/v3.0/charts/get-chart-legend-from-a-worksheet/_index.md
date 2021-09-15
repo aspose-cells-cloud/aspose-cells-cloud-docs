@@ -1,7 +1,8 @@
 ---
 title: "Get Chart Legend from a Worksheet"
 type: docs
-url: /get-chart-legend-from-a-worksheet/
+url: /charts/legend/get/
+aliases: [/get-chart-legend-from-a-worksheet/]
 weight: 80
 ---
 

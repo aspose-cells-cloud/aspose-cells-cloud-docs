@@ -9,24 +9,26 @@ description: "Cells.Cloud API for Excel operate: hide columns from an Excel Work
 weight: 40
 ---
 
-This REST API hide `columns`  in an Excel Worksheet.
-
-
-**Query Parameter**
-
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-|startColumn|integer | |
-|totalColumns|integer | |
-|folder|string|Original workbook folder.|
-|storageName|string|Storage name.|
-
-## REST API 
-
-|**API**|**Type**|**Description**|**Resource Link**|
-| :- | :- | :- | :- |
-|` `/cells/{name}/worksheets/{sheetName}/cells/columns/hide|` `POST|` `Hide a column in a Excel Worksheet|` `[PostHideWorksheetColumns](https://apireference.aspose.cloud/cells/#/Cells/PostHideWorksheetColumns)|
-
+This REST API indicates hide worksheet columns.
+ 
+## RSET API
+ 
+```bash
+ 
+POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/hide
+ 
+```
+The request parameters are: 
+ 
+| Parameter Name | Type | Path/Query String/HTTPBody | Description| 
+| :- | :- | :- |:- | 
+| name | string | path | The workbook name. |
+| sheetName | string | path | The worksheet name. |
+| startColumn | integer | query | The begin column index to be operated. |
+| totalColumns | integer | query | Number of columns to be operated. |
+| folder | string | query | The document folder. |
+| storageName | string | query | storage name. |
+ 
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostHideWorksheetColumns) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

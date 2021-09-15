@@ -1,7 +1,8 @@
 ---
 title: "Convert Chart to Image"
 type: docs
-url: /convert-chart-to-image/
+url: /charts/to-image/
+aliases: [/convert-chart-to-image/]
 weight: 50
 ---
 

@@ -1,7 +1,8 @@
 ---
 title: "Set Chart Title in Excel Worksheet"
 type: docs
-url: /set-chart-title-in-excel-worksheet/
+url: /chart/title/add/
+aliases: [/set-chart-title-in-excel-worksheet/]
 weight: 130
 ---
 

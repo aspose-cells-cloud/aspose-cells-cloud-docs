@@ -1,7 +1,8 @@
 ---
 title: "Update Chart Legend in a Worksheet"
 type: docs
-url: /update-chart-legend-in-a-worksheet/
+url: /charts/legend/update/
+aliases: [/update-chart-legend-in-a-worksheet/]
 weight: 90
 ---
 

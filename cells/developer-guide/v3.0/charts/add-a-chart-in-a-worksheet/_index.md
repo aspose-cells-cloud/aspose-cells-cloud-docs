@@ -1,7 +1,8 @@
 ---
 title: "Add a Chart in a Worksheet"
 type: docs
-url: /add-a-chart-in-a-worksheet/
+url: /charts/add/
+aliases: [/add-a-chart-in-a-worksheet/]
 weight: 20
 ---
 

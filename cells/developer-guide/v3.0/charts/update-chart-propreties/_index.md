@@ -1,7 +1,8 @@
 ---
 title: "Update Chart Propreties"
 type: docs
-url: /update-chart-propreties/
+url: /charts/propreties/update/
+aliases: [/update-chart-propreties/]
 weight: 160
 ---
 

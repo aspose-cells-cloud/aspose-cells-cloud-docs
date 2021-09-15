@@ -1,7 +1,8 @@
 ---
 title: "Get Fill Format of a Chart Area from a Worksheet"
 type: docs
-url: /get-fill-format-of-a-chart-area-from-a-worksheet/
+url: /charts/chart-area/fill-format/get/
+aliases: [/get-fill-format-of-a-chart-area-from-a-worksheet/]
 weight: 70
 ---
 

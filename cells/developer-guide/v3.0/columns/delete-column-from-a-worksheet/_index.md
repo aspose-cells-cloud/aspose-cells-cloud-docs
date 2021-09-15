@@ -11,22 +11,24 @@ weight: 80
 
 This REST API copy `column`  in an Excel Worksheet.
 
-
-**Query Parameter**
-
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-|totalColumns|integer | |
-|updateReference|string|true/false |
-|folder|string|Original workbook folder.|
-|storageName|string|Storage name.|
-
-
-## REST API 
-
-|**API**|**Type**|**Description**|**Resource Link**|
-| :- | :- | :- | :- |
-|/cells/{name}/worksheets/{sheetName}/cells/columns/{columnIndex}|POST|Delete columns from a Excel Worksheet|[DeleteWorksheetColumns](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetColumns)|
+## RSET API
+ 
+```bash
+ 
+DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/{columnIndex}
+ 
+```
+The request parameters are: 
+ 
+| Parameter Name | Type | Path/Query String/HTTPBody | Description| 
+| :- | :- | :- |:- | 
+| name | string | path | The workbook name. |
+| sheetName | string | path | The worksheet name. |
+| columnIndex | integer | path | The column index. |
+| columns | integer | query | The columns. |
+| updateReference | boolean | query | The update reference. |
+| folder | string | query | The workbook folder. |
+| storageName | string | query | storage name. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetColumns) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

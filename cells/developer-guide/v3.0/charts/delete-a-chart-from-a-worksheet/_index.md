@@ -1,7 +1,8 @@
 ---
 title: "Delete a Chart from a Worksheet"
 type: docs
-url: /delete-a-chart-from-a-worksheet/
+url: /charts/delete/
+aliases: [/delete-a-chart-from-a-worksheet/]
 weight: 40
 ---
 

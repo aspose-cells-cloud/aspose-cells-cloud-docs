@@ -2,35 +2,37 @@
 title: "Add an Empty Column in an Excel Worksheet"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /add/
+url: /columns/add/
 aliases: [/add-an-empty-column-in-an-excel-worksheet/,/add-an-empty-column-in-a-worksheet/]
 keywords: "REST API, spreadsheets, excel, column, create"
 description: "Cells.Cloud API for Excel operate: Add an Empty Column in an Excel Worksheet."
 weight: 20
 ---
 
-This REST API add a `column` into an Excel Worksheet.
-
-**Query Parameter**
-
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-|columns |int | The number of columns.|
-|updateReference|string|true/false.Indicates if references in other worksheets will be updated|
-|folder|string|Original workbook folder.|
-|storageName|string|Storage name.|
-
-
-## REST API ##
-
-|**API**|**Type**|**Description**|**Resource Link**|
-| :- | :- | :- | :- |
-|/cells/{name}/worksheets/{sheetName}/cells/columns|PUT|Add a new column to a Excel Worksheet|[PutInsertWorksheetRows](https://apireference.aspose.cloud/cells/#/Cells/PutInsertWorksheetColumns)|
-
+This REST API indicates insert worksheet columns.
+ 
+## RSET API
+ 
+```bash
+ 
+PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/{columnIndex}?totalColumns=1
+ 
+```
+The request parameters are: 
+ 
+| Parameter Name | Type | Path/Query String/HTTPBody | Description| 
+| :- | :- | :- |:- | 
+| name | string | path | The workbook name. |
+| sheetName | string | path | The worksheet name. |
+| columnIndex | integer | path | The column index. |
+| columns | integer | query | The columns. |
+| updateReference | boolean | query | True |
+| folder | string | query | The workbook folder. |
+| storageName | string | query | storage name. |
+ 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PutInsertWorksheetColumns) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
-
-You can use **cURL** command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
-
+ 
+You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 

@@ -9,25 +9,26 @@ description: "Cells.Cloud API for Excel operate: group columns from an Excel Wor
 weight: 60
 ---
 
-This REST API group `columns`  in an Excel Worksheet.
-
-
-**Query Parameter**
-
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-|firstIndex|integer | |
-|lastIndex|integer | |
-|hide|string|true/false |
-|folder|string|Original workbook folder.|
-|storageName|string|Storage name.|
-
-
-## REST API 
-
-|**API**|**Type**|**Description**|**Resource Link**|
-| :- | :- | :- | :- |
-|/cells/{name}/worksheets/{sheetName}/cells/columns/group|POST|Group a set of Worksheet Columns|[PostGroupWorksheetColumns](https://apireference.aspose.cloud/cells/#/Cells/PostGroupWorksheetColumns)|
+This REST API indicates group worksheet columns.
+ 
+## RSET API
+ 
+```bash
+ 
+POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/group
+ 
+```
+The request parameters are: 
+ 
+| Parameter Name | Type | Path/Query String/HTTPBody | Description| 
+| :- | :- | :- |:- | 
+| name | string | path | The workbook name. |
+| sheetName | string | path | The worksheet name. |
+| firstIndex | integer | query | The first column index to be operated. |
+| lastIndex | integer | query | The last column index to be operated. |
+| hide | boolean | query | columns visible state |
+| folder | string | query | The document folder. |
+| storageName | string | query | storage name. |
 
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostGroupWorksheetColumns) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.

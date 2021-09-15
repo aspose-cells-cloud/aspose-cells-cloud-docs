@@ -11,41 +11,24 @@ weight: 30
 
 This REST API copy `columns`  in an Excel Worksheet.
 
-**Query Parameter**
-
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-|sourceColumnIndex|integer| Source column index.|
-|destinationColumnIndex|integer|Destination column index. |
-|columnNumber|integer|The copied column number. |
-|worksheet|string|The destination worksheet name. |
-|folder|string|Original workbook folder.|
-|storageName|string|Storage name.|
-
-
-**Request Body Parameter**
-
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-|AutoFitterOptions|Object |  Represents all auto fitter options.|
-
-
-**AutoFitterOptions**
-
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-|AutoFitMergedCellsType| string |  None/FirstLine/LastLine/EachLine |
-|AutoFitMergedCells| string |  true/false |
-|IgnoreHidden| string | true/false |
-|OnlyAuto| string |  true/false |
-
-
-## REST API 
-
-
-|**API**|**Type**|**Description**|**Resource Link**|
-| :- | :- | :- | :- |
-|` `/cells/{name}/worksheets/{sheetName}/cells/columns/copy|` `POST|` `Copy|` `[PostCopyWorksheetColumns](https://apireference.aspose.cloud/cells/#/Cells/PostCopyWorksheetColumns)|
+## RSET API
+ 
+```bash
+ 
+POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/copy
+ 
+```
+The request parameters are: 
+ 
+| Parameter Name | Type | Path/Query String/HTTPBody | Description| 
+| :- | :- | :- |:- | 
+| name | string | path | The workbook name. |
+| sheetName | string | path | The worksheet name. |
+| sourceColumnIndex | integer | query | Source column index |
+| destinationColumnIndex | integer | query | Destination column index |
+| columnNumber | integer | query | The copied column number |
+| worksheet | string | query |  |
+| folder | string | query | The document folder. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostCopyWorksheetColumns) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

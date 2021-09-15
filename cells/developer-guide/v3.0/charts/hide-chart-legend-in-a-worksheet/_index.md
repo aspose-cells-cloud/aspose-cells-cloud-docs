@@ -1,7 +1,8 @@
 ---
 title: "Hide Chart Legend in a Worksheet"
 type: docs
-url: /hide-chart-legend-in-a-worksheet/
+url: /charts/legend/hide/
+aliases: [/hide-chart-legend-in-a-worksheet/]
 weight: 110
 ---
 

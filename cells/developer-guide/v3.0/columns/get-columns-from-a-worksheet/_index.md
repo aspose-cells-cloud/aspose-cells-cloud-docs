@@ -9,24 +9,25 @@ description: "Cells.Cloud API for Excel operate: Get column from an Excel Workbo
 weight: 10
 ---
 
-This REST API get `columns`  in an Excel Worksheet.
-
-**Query Parameter**
-
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-|folder|string|Original workbook folder.|
-|storageName|string|Storage name.|
-
-## REST API 
-
-|**API**|**Type**|**Description**|**Resource Link**|
-| :- | :- | :- | :- |
-|/cells/{name}/worksheets/{sheetName}/cells/columns|GET|Read Columns Information from Excel Worksheet|[GetWorksheetColumns](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetColumns)|
-|/cells/{name}/worksheets/{sheetName}/cells/columns/{columnIndex}|GET|Read Column Information from Excel Worksheet|[GetWorksheetColumns](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetColumn)|
-
-
-
+This REST API indicates Read worksheet column data by column's index.
+ 
+## RSET API
+ 
+```bash
+ 
+GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/{columnIndex}
+ 
+```
+The request parameters are: 
+ 
+| Parameter Name | Type | Path/Query String/HTTPBody | Description| 
+| :- | :- | :- |:- | 
+| name | string | path | The workbook name. |
+| sheetName | string | path | The worksheet name. |
+| columnIndex | integer | path | The column index. |
+| folder | string | query | The workbook folder. |
+| storageName | string | query | storage name. |
+ 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetColumns) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 You can use **cURL** command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.

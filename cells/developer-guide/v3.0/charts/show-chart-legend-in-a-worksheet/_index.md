@@ -1,7 +1,8 @@
 ---
 title: "Show Chart Legend in a Worksheet"
 type: docs
-url: /show-chart-legend-in-a-worksheet/
+url: /charts/legend/show/
+aliases: [/show-chart-legend-in-a-worksheet/]
 weight: 100
 ---
 

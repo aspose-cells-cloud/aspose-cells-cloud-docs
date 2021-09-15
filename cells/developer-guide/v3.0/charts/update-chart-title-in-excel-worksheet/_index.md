@@ -1,7 +1,8 @@
 ---
 title: "Update Chart Title in Excel Worksheet"
 type: docs
-url: /update-chart-title-in-excel-worksheet/
+url: /charts/title/update/
+aliases: [/update-chart-title-in-excel-worksheet/]
 weight: 140
 ---
 

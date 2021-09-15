@@ -11,38 +11,27 @@ weight: 90
 
 This REST API auto fit `columns`  in an Excel Worksheet.
 
-**Query Parameter**
-
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-|startColumn|integer| |
-|endColumn|integer| |
-|folder|string|Original workbook folder.|
-|storageName|string|Storage name.|
-
-
-**Request Body Parameter**
-
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-|AutoFitterOptions|Object |  Represents all auto fitter options.|
-
-
-**AutoFitterOptions**
-
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-|AutoFitMergedCellsType| string |  None/FirstLine/LastLine/EachLine |
-|AutoFitMergedCells| string |  true/false |
-|IgnoreHidden| string | true/false |
-|OnlyAuto| string |  true/false |
-
-
-## REST API 
-
-|**API**|**Type**|**Description**|**Resource Link**|
-| :- | :- | :- | :- |
-|/cells/{name}/worksheets/{sheetName}/autofitcolumns|POST|Autofits columns in worksheet|[PostAutofitWorksheetColumns](https://apireference.aspose.cloud/cells/#/Worksheets/PostAutofitWorksheetColumns)|
+## RSET API
+ 
+```bash
+ 
+POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitcolumns
+ 
+```
+The request parameters are: 
+ 
+| Parameter Name | Type | Path/Query String/HTTPBody | Description| 
+| :- | :- | :- |:- | 
+| name | string | path |   |
+| sheetName | string | path |   |
+| firstColumn | integer | query |   |
+| lastColumn | integer | query |   |
+| autoFitterOptions |  | body |   |
+| firstRow | integer | query |   |
+| lastRow | integer | query |   |
+| folder | string | query |   |
+| storageName | string | query | storage name. |
+ 
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostAutofitWorksheetColumns) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

@@ -1,33 +1,34 @@
 ---
-title: "Unhide dolumns in an Excel Worksheet"
+title: "Unhide columns in an Excel Worksheet"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /unhide/
+url: /colomns/unhide/
 aliases: [/unhide-columns-in-an-excel-worksheet/,/unhide-columns-in-excel-worksheet/]
 keywords: "REST API, unhide columns, spreadsheets, excel"
 description: "Cells.Cloud API for Excel operate: unhide columns from an Excel Worksheet."
 weight: 50
 ---
 
-This REST API unhide `columns`  in an Excel Worksheet.
-
-
-**Query Parameter**
-
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-|startColumn|integer | |
-|totalColumns|integer | |
-|width|double| |
-|folder|string|Original workbook folder.|
-|storageName|string|Storage name.|
-
-## REST API 
-
-
-|**API**|**Type**|**Description**|**Resource Link**|
-| :- | :- | :- | :- |
-|` `/cells/{name}/worksheets/{sheetName}/cells/dolumns/unhide|` `POST|` `Unhide a dolumn in Excel Worksheet|` `[PostUnhideWorksheetColumns](https://apireference.aspose.cloud/cells/#/Cells/PostUnhideWorksheetColumns)|
+This REST API indicates unhide worksheet columns.
+ 
+## RSET API
+ 
+```bash
+ 
+POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/unhide
+ 
+```
+The request parameters are: 
+ 
+| Parameter Name | Type | Path/Query String/HTTPBody | Description| 
+| :- | :- | :- |:- | 
+| name | string | path | The workbook name. |
+| sheetName | string | path | The worksheet name. |
+| startcolumn | integer | query | The begin column index to be operated. |
+| totalColumns | integer | query | Number of columns to be operated. |
+| width | number | query | 50.0 |
+| folder | string | query | The document folder. |
+| storageName | string | query | storage name. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostUnhideWorksheetColumns) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

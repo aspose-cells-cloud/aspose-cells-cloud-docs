@@ -1,7 +1,8 @@
 ---
 title: "Get Chart Title From a Worksheet"
 type: docs
-url: /get-chart-title-from-a-worksheet/
+url: /charts/title/get/
+aliases: [/get-chart-title-from-a-worksheet/]
 weight: 120
 ---
 

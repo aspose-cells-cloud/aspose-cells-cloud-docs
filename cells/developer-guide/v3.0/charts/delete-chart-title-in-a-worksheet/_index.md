@@ -1,7 +1,8 @@
 ---
 title: "Delete Chart Title in a Worksheet"
 type: docs
-url: /delete-chart-title-in-a-worksheet/
+url: /charts/delete-chart-title/
+aliases: [/delete-chart-title-in-a-worksheet/]
 weight: 150
 ---
 

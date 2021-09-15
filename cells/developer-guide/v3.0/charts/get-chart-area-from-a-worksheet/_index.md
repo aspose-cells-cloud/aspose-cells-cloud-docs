@@ -1,7 +1,8 @@
 ---
 title: "Get Chart Area from a Worksheet"
 type: docs
-url: /get-chart-area-from-a-worksheet/
+url: /charts/area/get/
+aliases: [/get-chart-area-from-a-worksheet/]
 weight: 60
 ---
 
