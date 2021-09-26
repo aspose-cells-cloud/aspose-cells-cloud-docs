@@ -11,7 +11,7 @@ weight: 30
 
 ```powershell
 
-docker pull aspose/cells-cloud:ltsc2016.21.6
+docker pull aspose/cells-cloud:ltsc2016.21.9
 
 ```
 
@@ -19,7 +19,7 @@ docker pull aspose/cells-cloud:ltsc2016.21.6
 
 ```powershell
 
-docker pull aspose/cells-cloud:ltsc2019.21.6
+docker pull aspose/cells-cloud:ltsc2019.21.9
 
 ```
 
@@ -28,6 +28,6 @@ docker pull aspose/cells-cloud:ltsc2019.21.6
 
 ```sh
 
-docker pull aspose/cells-cloud:linux.21.6
+docker pull aspose/cells-cloud:linux.21.9
 
 ```
