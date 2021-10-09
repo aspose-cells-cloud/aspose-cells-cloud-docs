@@ -1,25 +1,46 @@
 ---
-title: "Get Conditional Formattings of Worksheet"
+title: "Get Conditional Formattings"
 type: docs
-url: /get-conditional-formattings-of-worksheet/
-weight: 10
+url: /conditional-formattings/get-all/
+aliases: [/get-conditional-formattings-of-worksheet/]
+keywords: "REST API, spreadsheets, excel, get condition formatting"
+description: "Cells.Cloud API for Excel operate:  get condition formatting."
+weight: 20
 ---
 
-## **Introduction**
-This example shows how to get conditional formatting of worksheet detail information, using Aspose.Cells Cloud API. You can use our REST API with any language: .NET, Java, PHP, Ruby, Rails, Python, jQuery and many more.
-## **API Information**
-
-|**API**|**Type**|**Description**|**Resource Link**|
-| :- | :- | :- | :- |
-|/cells/{name}/worksheets/{sheetName}/conditionalFormattings|GET|Get conditional formattings description|[GetWorksheetConditionalFormattings](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/GetWorksheetConditionalFormattings)|
-### **cURL Example**
+This REST API indicates Get conditional formattings 
+ 
+## RSET API
+ 
+```bash
+ 
+GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings
+ 
+```
+The request parameters are: 
+ 
+| Parameter Name | Type | Path/Query String/HTTPBody | Description| 
+| :- | :- | :- |:- | 
+| name | string | path |   |
+| sheetName | string | path |   |
+| folder | string | query |   |
+| storageName | string | query | storage name. |
+ 
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/GetWorksheetConditionalFormattings) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+ 
+You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+ 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```java
 
-curl -X GET "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditionalFormattings" -H "Content-Type: application/json" -H "Accept: application/json"
+curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditionalFormattings" \
+-X GET \
+-H "Content-Type: application/json" \
+-H "Accept: application/json" \
+-H "Authorization: Bearer <jwt token>"
 
 ```
 
