@@ -1,26 +1,47 @@
 ---
 title: "Remove a Particular Document Property"
 type: docs
-url: /remove-a-particular-document-property/
+url: /document-properties/delete/
+aliases: [/remove-a-particular-document-property/]
+keywords: "REST API, spreadsheets, excel,delete , document property, metadata"
+description: "Cells.Cloud API for Excel operate: document property delete operate."
 weight: 50
 ---
+This REST API indicates Delete document property.
+ 
+## RSET API
+ 
+```bash
+ 
+DELETE http://api.aspose.cloud/v3.0/cells/{name}/documentproperties/{propertyName}
+ 
+```
+The request parameters are: 
+ 
+| Parameter Name | Type | Path/Query String/HTTPBody | Description| 
+| :- | :- | :- |:- | 
+| name | string | path | The document name. |
+| propertyName | string | path | The property name. |
+| folder | string | query | The document folder. |
+| storageName | string | query | storage name. |
+ 
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Properties/DeleteDocumentProperty) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+ 
+You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+ 
 
-## **Introduction**
-This example shows how to remove a particular property from a Excel Workbook using Aspose.Cells Cloud API in your applications. You can use our REST API with any language: .NET, Java, PHP, Ruby, Rails, Python, jQuery and many more.
-
-## **API Information**
-
-|**API**|**Type**|**Description**|**Resource Link**|
-| :- | :- | :- | :- |
-|/cells/{name}/documentproperties/{propertyName}|DELETE|Remove a particular property|[DeleteDocumentProperty](https://apireference.aspose.cloud/cells/#/Properties/DeleteDocumentProperty)|
-### **cURL Example**
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```java
 
-curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties/author" -H "accept: application/json"
+curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties/author"  \
+-X DELETE \
+-H "Content-Type: application/json" \
+-H "Accept: application/json" \
+-H "Authorization: Bearer <jwt token>"
+
 
 ```
 
@@ -31,357 +52,7 @@ curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties
 ```java
 
 {
-
-  "DocumentProperties": {
-
-    "DocumentPropertyList": [
-
-      {
-
-        "Name": "Title",
-
-        "Value": "",
-
-        "BuiltIn": "True",
-
-        "link": {
-
-          "Href": "/Title",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "Name": "Subject",
-
-        "Value": "",
-
-        "BuiltIn": "True",
-
-        "link": {
-
-          "Href": "/Subject",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "Name": "Author",
-
-        "Value": "",
-
-        "BuiltIn": "True",
-
-        "link": {
-
-          "Href": "/Author",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "Name": "Keywords",
-
-        "Value": "",
-
-        "BuiltIn": "True",
-
-        "link": {
-
-          "Href": "/Keywords",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "Name": "Comments",
-
-        "Value": "",
-
-        "BuiltIn": "True",
-
-        "link": {
-
-          "Href": "/Comments",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "Name": "LastSavedBy",
-
-        "Value": "",
-
-        "BuiltIn": "True",
-
-        "link": {
-
-          "Href": "/LastSavedBy",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "Name": "Category",
-
-        "Value": "",
-
-        "BuiltIn": "True",
-
-        "link": {
-
-          "Href": "/Category",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "Name": "NameOfApplication",
-
-        "Value": "",
-
-        "BuiltIn": "True",
-
-        "link": {
-
-          "Href": "/NameOfApplication",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "Name": "Version",
-
-        "Value": "14.0300",
-
-        "BuiltIn": "True",
-
-        "link": {
-
-          "Href": "/Version",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "Name": "Security",
-
-        "Value": "0",
-
-        "BuiltIn": "True",
-
-        "link": {
-
-          "Href": "/Security",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "Name": "ScaleCrop",
-
-        "Value": "False",
-
-        "BuiltIn": "True",
-
-        "link": {
-
-          "Href": "/ScaleCrop",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "Name": "Template",
-
-        "Value": "",
-
-        "BuiltIn": "True",
-
-        "link": {
-
-          "Href": "/Template",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "Name": "Manager",
-
-        "Value": "",
-
-        "BuiltIn": "True",
-
-        "link": {
-
-          "Href": "/Manager",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "Name": "Company",
-
-        "Value": "",
-
-        "BuiltIn": "True",
-
-        "link": {
-
-          "Href": "/Company",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      },
-
-      {
-
-        "Name": "LinksUpToDate",
-
-        "Value": "False",
-
-        "BuiltIn": "True",
-
-        "link": {
-
-          "Href": "/LinksUpToDate",
-
-          "Rel": "self",
-
-          "Title": null,
-
-          "Type": null
-
-        }
-
-      }
-
-    ],
-
-    "link": {
-
-      "Href": "/test.xlsx/documentproperties",
-
-      "Rel": "self",
-
-      "Title": null,
-
-      "Type": null
-
-    }
-
-  },
-
+  
   "Code": 200,
 
   "Status": "OK"
@@ -393,9 +64,13 @@ curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties
 {{< /tab >}}
 
 {{< /tabs >}}
-## **SDK Source**
-The Aspose.Cells Cloud SDKs can be downloaded from the following page: [Available SDKs](/cells/available-sdks/)
-### **SDK Examples**
+
+## Cloud SDK Family
+ 
+Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+ 
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+
 {{< tabs tabTotal="11" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" tabName11="Swift" >}}
 
 {{< tab tabNum="1" >}}

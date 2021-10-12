@@ -1,26 +1,44 @@
 ---
 title: "Get All Document Properties"
 type: docs
-url: /get-all-document-properties/
+url: /document-properties/get-all/
+aliases: [/get-all-document-properties/]
+keywords: "REST API, spreadsheets, excel,get  document property, metadata"
+description: "Cells.Cloud API for Excel operate: document property  get operate."
 weight: 10
 ---
+This REST API indicates Read document properties.
+ 
+## RSET API
+ 
+```bash
+ 
+GET http://api.aspose.cloud/v3.0/cells/{name}/documentproperties
+ 
+```
+The request parameters are: 
+ 
+| Parameter Name | Type | Path/Query String/HTTPBody | Description| 
+| :- | :- | :- |:- | 
+| name | string | path | The document name. |
+| folder | string | query | The document folder. |
+| storageName | string | query | storage name. |
+ 
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Properties/GetDocumentProperties) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+ 
+You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
 
-## **Introduction**
-This example shows how to get all document properties of a workbook using Aspose.Cells Cloud API in your applications. You can use our REST API with any language: .NET, Java, PHP, Ruby, Rails, Python, jQuery and many more.
-
-## **API Information**
-
-|**API**|**Type**|**Description**|**Resource Link**|
-| :- | :- | :- | :- |
-|/cells/{name}/documentproperties|GET|Read document properties|[GetDocumentProperties](https://apireference.aspose.cloud/cells/#/Properties/GetDocumentProperties)|
-### **cURL Example**
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```java
 
-curl -X GET "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties" -H "accept: application/json"
+curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties" \
+-X GET \
+-H "Content-Type: application/json" \
+-H "Accept: application/json" \
+-H "Authorization: Bearer <jwt token>"
 
 ```
 
@@ -437,9 +455,13 @@ curl -X GET "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties" -
 {{< /tab >}}
 
 {{< /tabs >}}
-## **SDK Source**
-The Aspose.Cells Cloud SDKs can be downloaded from the following page: [Available SDKs](/cells/available-sdks/)
-### **SDK Examples**
+
+## Cloud SDK Family
+ 
+Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+ 
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Go" tabName10="Swift" >}}
 
 {{< tab tabNum="1" >}}
