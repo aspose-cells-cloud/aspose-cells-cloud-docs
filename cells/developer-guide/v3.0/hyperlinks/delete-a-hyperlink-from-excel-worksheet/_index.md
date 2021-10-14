@@ -1,20 +1,19 @@
 ---
-title: "Clear hyperlinks"
+title: "Delete a hyperlinks"
 type: docs
-url: /hyperlinks/clear/
-aliases: [/add-hyperlinks-to-excel-worksheet/]
+url: /hyperlinks/delete/
 keywords: "REST API, hyperlinks, spreadsheets, excel"
-description: "Cells.Cloud API for Excel operate: clear hyperlinks on an Excel file."
+description: "Cells.Cloud API for Excel operate: delete a hyperlink on an Excel file."
 weight: 40
 ---
 
-This REST API indicates Delete all hyperlinks in worksheet.
+This REST API indicates Delete worksheet hyperlink by index.
  
 ## RSET API
  
 ```bash
  
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks
+DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks/{hyperlinkIndex}
  
 ```
 The request parameters are: 
@@ -23,10 +22,11 @@ The request parameters are:
 | :- | :- | :- |:- | 
 | name | string | path | Document name. |
 | sheetName | string | path | Worksheet name. |
+| hyperlinkIndex | integer | path | The hyperlink's index. |
 | folder | string | query | The document folder. |
 | storageName | string | query | storage name. |
  
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Hypelinks/DeleteWorksheetHyperlinks) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Hypelinks/DeleteWorksheetHyperlink) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
  
 You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
  
@@ -36,7 +36,7 @@ You can use cURL command-line tool to access Aspose.Cells web services easily. T
 
 ```java
 
-curl -v "https://api.aspose.cloud/v3.0/cells/test1.xlsx/worksheets/Sheet1/hyperlinks" \
+curl -v "https://api.aspose.cloud/v3.0/cells/test1.xlsx/worksheets/Sheet1/hyperlinks/0" \
 -X DELETE \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \

@@ -9,9 +9,17 @@ description: "Cells.Cloud API for Excel operate: working with hyperlinks on an E
 weight: 100
 ---
 
+
+&nbsp;&nbsp;&nbsp;&nbsp;Hyperlinks in Excel allow users to create a shortcut way to reach any certain worksheet, file, folder or webpage. It helps us to reach to any specific folder or link quickly. We also use hyperlinks to provide the reference. The hyperlinks option is there in the Insert menu option under the Links section. We just have to provide the text on which we want to have a hyperlink and then select the file or website page which we want to link with that text.
+
+So, HYPERLINK creates a link to cells, sheets, and workbooks.
+
 ## Working with Hyperlinks on an Excel file.
 
-- [Get Hyperlink from Excel Worksheet](/cells/get-hyperlink-from-excel-worksheet/)
-- [Add Hyperlinks to Excel Worksheet](/cells/add-hyperlinks-to-excel-worksheet/)
-- [Update Hyperlinks in Excel Worksheet](/cells/update-hyperlinks-in-excel-worksheet/)
-- [Delete Hyperlinks from Excel Worksheet](/cells/delete-hyperlinks-from-excel-worksheet/)
+- [Get a hyperlink from Excel Worksheet](/cells/hyperlinks/get/)
+- [Get all hyperlinks from Excel Worksheet](/cells/hyperlinks/get-all/)
+- [Add hyperlinks to Excel Worksheet](/cells/hyperlinks/add/)
+- [Update hyperlinks in Excel Worksheet](/cells/hyperlinks/update/)
+- [Clear hyperlinks from Excel Worksheet](/cells//hyperlinks/clear/)
+- [Delete a hyperlink from Excel Worksheet](/cells//hyperlinks/delete/)
+

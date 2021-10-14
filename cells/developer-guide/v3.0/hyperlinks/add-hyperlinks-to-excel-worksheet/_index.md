@@ -1,26 +1,52 @@
 ---
-title: "Add Hyperlinks to Excel Worksheet"
+title: "Add a hyperlink"
 type: docs
-url: /add-hyperlinks-to-excel-worksheet/
+url: /hyperlinks/add/
+aliases: [/add-hyperlinks-to-excel-worksheet/]
+keywords: "REST API, hyperlinks, spreadsheets, excel"
+description: "Cells.Cloud API for Excel operate: add hyperlinks on an Excel file."
 weight: 20
 ---
 
-## **Introduction**
-This example shows how to add a hyperlink to a Microsoft Excel Workbook using Aspose.Cells Cloud API in your applications. You can use our REST API with any language: .NET, Java, PHP, Ruby, Rails, Python, jQuery and many more.
+This REST API indicates Add worksheet hyperlink.
+ 
+## RSET API
+ 
+```bash
+ 
+PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks
+ 
+```
+The request parameters are: 
+ 
+| Parameter Name | Type | Path/Query String/HTTPBody | Description| 
+| :- | :- | :- |:- | 
+| name | string | path | Document name. |
+| sheetName | string | path | Worksheet name. |
+| firstRow | integer | query |   |
+| firstColumn | integer | query |   |
+| totalRows | integer | query |   |
+| totalColumns | integer | query |   |
+| address | string | query |   |
+| folder | string | query | The document folder. |
+| storageName | string | query | storage name. |
+ 
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Hypelinks/PutWorksheetHyperlink) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+ 
+You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
 
-## **API Information**
-
-|**API**|**Type**|**Description**|**Resource Link**|
-| :- | :- | :- | :- |
-|/cells/{name}/worksheets/{sheetName}/hyperlinks|PUT|Add a hyperlink to a Excel Workbook|[PutWorkSheetHyperlink](https://apireference.aspose.cloud/cells/#/Hypelinks/PutWorkSheetHyperlink)|
-### **cURL Example**
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```java
 
-curl -X PUT "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/hyperlinks?firstRow=1&firstColumn=6&totalRows=1&totalColumns=1&address=https%3A%2F%2Fwww.msnbc.com%2F" -H "accept: application/json"
+curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/hyperlinks?firstRow=1&firstColumn=6&totalRows=1&totalColumns=1&address=https%3A%2F%2Fwww.msnbc.com%2F" \
+-X PUT \
+-H "Content-Type: application/json" \
+-H "Accept: application/json" \
+-H "Authorization: Bearer <jwt token>"
+
 
 ```
 
@@ -31,40 +57,6 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/hyp
 ```java
 
 {
-
-  "Hyperlink": {
-
-    "Address": "https://www.msnbc.com/",
-
-    "Area": {
-
-      "EndColumn": 6,
-
-      "EndRow": 1,
-
-      "StartColumn": 6,
-
-      "StartRow": 1
-
-    },
-
-    "ScreenTip": null,
-
-    "TextToDisplay": "https://www.msnbc.com/",
-
-    "link": {
-
-      "Href": "/test.xlsx/worksheets/Sheet1/hyperlinks/4",
-
-      "Rel": "self",
-
-      "Title": null,
-
-      "Type": null
-
-    }
-
-  },
 
   "Code": 200,
 
@@ -77,9 +69,12 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/hyp
 {{< /tab >}}
 
 {{< /tabs >}}
-## **SDK Source**
-The Aspose.Cells Cloud SDKs can be downloaded from the following page: [Available SDKs](/cells/available-sdks/)
-### **SDK Examples**
+## Cloud SDK Family
+ 
+Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+ 
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}
