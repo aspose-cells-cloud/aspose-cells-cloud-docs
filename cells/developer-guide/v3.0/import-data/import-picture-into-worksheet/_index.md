@@ -15,7 +15,7 @@ The request is an HTTP request with multipart content (see [RFC 2046](http://to
 The important parameters are described in the following table:
 
 
-- **ImportPictureOption**
+**ImportPictureOption**
 
 | Parameter Name|Type|Description|
 | :- | :- | :- |
