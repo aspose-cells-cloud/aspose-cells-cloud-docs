@@ -2,32 +2,18 @@
 title: "Import CSV Data into Excel Worksheet"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /import-csv-data-into-worksheet/
-aliases: [/import-csv-data-into-excel-worksheet/]
+url: /import-data/csv-data/
+aliases: [/import-csv-data-into-excel-worksheet/, /import-csv-data-into-worksheet/]
 description: "Cells.Cloud API for Excel operate: Import csv Data into Excel Worksheet."
 weight: 50
 ---
 
 
-This REST API import csv data into Excel work sheet.
+This REST API `import csv data` into Excel work sheet.
 
-The request is an HTTP request with multipart content (see [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). The first part of the multipart content contains the ImportBatchDataOption data and the second contains a data file.
+The request is an HTTP request with multipart content (see [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). The first part of the multipart content contains the ImportCSVDataOption data and the second contains a data file.
 
 The important parameters are described in the following table:
-
-**Query Parameter**
-
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-|folder|string|Original workbook folder.|
-|storageName|string|Storage name.|
-
-**Request Body Parameter**
-
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-|ImportCSVDataOption|Object | import csv data option.The first part of the multipart content.|
-|datafile|data file |If the file source type of data file is the request body, The data file save into the second part of the multipart content.|
 
 
 **ImportCSVDataOption**
@@ -50,43 +36,29 @@ The important parameters are described in the following table:
 | ParseMethod | string |  |
 | CustomStyle | string |  |
 
+**Example**
 
-## REST API
+```xml
 
-
-|**API**|**Type**|**Description**|**Resource Link**|
-| :- | :- | :- | :- |
-|/cells/{name}/importdata|POST|Imports data into workbook|[PostImportData](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData)|
-
-
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. 
-
-You can use **cURL** command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
-
-
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
-
-{{< tab tabNum="1" >}}
-
-```bash
-
-curl -X POST "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/importdata" -d '{"SeparatorString":",", "ConvertNumericData":true, "FirstRow":1, "FirstColumn":2, "SourceFile":"TestImportDataCSV.csv", "DestinationWorksheet":"Sheet1", "IsInsert":true, "ImportDataType":"CSVData", "Source":null}' -H "Content-Type: application/json" -H "Accept: application/json"
-
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-
-```java
-
-{"Code":200,"Status":"OK"}
+ <ImportCSVDataOption>
+     <DestinationWorksheet>Sheet1</DestinationWorksheet>
+     <IsInsert>true</IsInsert>
+     <ImportDataType>CSVData</ImportDataType>
+     <SeparatorString>;</SeparatorString>
+     <ConvertNumericData>true</ConvertNumericData>
+     <FirstRow>1</FirstRow>
+     <FirstColumn>2</FirstColumn>
+     <SourceFile>TestImportDataCSV.csv</SourceFile>
+     <CustomParsers>
+         <CustomParserConfig>
+             <ColumnIndex>0</ColumnIndex>
+             <ParseMethod>ToString</ParseMethod>
+             <CustomStyle>#</CustomStyle>
+         </CustomParserConfig>
+     </CustomParsers>
+ </ImportCSVDataOption>
 
 ```
-
-{{< /tab >}}
-
-{{< /tabs >}}
 
 ## Cloud SDK Family
 
