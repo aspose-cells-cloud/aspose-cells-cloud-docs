@@ -3,7 +3,7 @@ title: "Get Columns from an Excel Worksheet"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /columns/get/
-aliases: [/get-columns-from-an-excel-worksheet/,/get-columns-from-a-worksheet/]
+aliases: [/get-columns-from-an-excel-worksheet/,/get-columns-from-a-worksheet/,/get-column-from-a-worksheet/]
 keywords: "REST API, spreadsheets, excel, columns"
 description: "Cells.Cloud API for Excel operate: Get column from an Excel Workbooks."
 weight: 10
