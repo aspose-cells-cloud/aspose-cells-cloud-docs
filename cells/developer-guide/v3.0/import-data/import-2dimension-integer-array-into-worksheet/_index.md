@@ -1,41 +1,27 @@
 ---
-title: "Import Double Array into Excel Worksheet"
+title: "Import 2 Dimension Integer Array into Excel Worksheet"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /import-2dimension-string-array-into-worksheet/
-aliases: [/import-2dimension-string-array-into-excel-worksheet/]
-description: "Cells.Cloud API for Excel operate: Import 2 Dimension string array data into Excel Worksheet."
+url: /import-data/2dimension-integer-array/
+aliases: [/import-2dimension-integer-array-into-excel-worksheet/,/import-2dimension-integer-array-into-worksheet/]
+description: "Cells.Cloud API for Excel operate: Import 2 Dimension integer array data into Excel Worksheet."
 weight: 20
 ---
 
-This REST API import 2 dimension string array data into Excel work sheet.
+This REST API `import 2 dimension integer array data` into Excel work sheet.
 
-The request is an HTTP request with multipart content (see [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). The first part of the multipart content contains the ImportBatchDataOption data and the second contains a data file.
+The request is an HTTP request with multipart content (see [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). The first part of the multipart content contains the Import2DimensionIntegerArrayOption data and the second contains a data file.
 
 The important parameters are described in the following table:
 
-**Query Parameter**
 
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-|folder|string|Original workbook folder.|
-|storageName|string|Storage name.|
-
-**Request Body Parameter**
-
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-|Import2DimensionStringArrayOption|Object | import 2 dimension string array data option.The first part of the multipart content.|
-|datafile|data file |If the file source type of data file is the request body, The data file save into the second part of the multipart content.|
-
-
-**Import2DimensionStringArrayOption**
+**Import2DimensionIntegerArrayOption**
 
 | Parameter Name|Type|Description|
 | :- | :- | :- |
 | FirstRow | int |  |
 | FirstColumn | int |  |
-| Data | String[,] |  |
+| Data | Integer[,] |  |
 | DestinationWorksheet | string | destination work sheet name. |
 | IsInsert | string | true/false. |
 | ImportDataType | string | IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData.|
@@ -43,48 +29,21 @@ The important parameters are described in the following table:
 | DestinationWorksheet | string | destination work sheet name. |
 
 
-## REST API
+**Example**
 
-|**API**|**Type**|**Description**|**Resource Link**|
-| :- | :- | :- | :- |
-|/cells/{name}/importdata|POST|Imports data into workbook|[PostImportData](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData)|
-
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. 
-
-You can use **cURL** command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
-
-
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
-
-{{< tab tabNum="1" >}}
-
-```bash
-
-curl -X POST "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/importdata" -d '{"FirstRow":1,"FirstColumn":2,"IsVertical":true,"Data":null,"DestinationWorksheet":"Sheet1","IsInsert":true,"ImportDataType":"TwoDimensionStringArray","Source":{"FileSourceType":1,"FilePath":"Array_2strings_json.txt"}}' -H "Content-Type: application/json" -H "Accept: application/json"
-
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-
-```java
-
+```json
 {
-
-    Code = 200;
-
-    Status = OK;
-
+    "Data": [
+        [1, 2],
+        [3, 4]
+    ],
+    "DestinationWorksheet": "Sheet2",
+    "FirstRow": 4,
+    "FirstColumn": 1,
+    "importDataType": "TwoDimensionIntArray"
 }
 
 ```
-
-{{< /tab >}}
-
-{{< /tabs >}}
-
-
 ## Cloud SDK Family
 
 Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.

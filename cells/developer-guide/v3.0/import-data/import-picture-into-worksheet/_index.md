@@ -2,48 +2,20 @@
 title: "Import Picture into Excel Worksheet"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /import-picture-into-worksheet/
-aliases: [/import-picture-into-excel-worksheet/]
+url: /import-data/picture/
+aliases: [/import-picture-into-excel-worksheet/,/import-picture-into-worksheet/]
 description: "Cells.Cloud API for Excel operate: Import string array data into Excel Worksheet."
 weight: 40
 ---
 
-This REST API `import` picture into Excel work sheet.
+This REST API `import picture data` into Excel work sheet.
 
-The request is an HTTP request with multipart content (see [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). The first part of the multipart content contains the ImportBatchDataOption data and the second contains a data file.
+The request is an HTTP request with multipart content (see [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). The first part of the multipart content contains the ImportPictureOption data and the second contains a data file.
 
-- **REST API**
-
-```bash
-
-POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
-
-```
-
-- **Path Parameter**
+The important parameters are described in the following table:
 
 
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-| name | string |  The workbook name. |
-
-
-- **Query Parameter**
-
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-|folder|string|Original workbook folder.|
-|storageName|string|Storage name.|
-
-
-- **Request Body Parameter**
-
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-|ImportPictureOption|Object | import string array data option.The first part of the multipart content.|
-
-
-- **ImportPictureOption**
+**ImportPictureOption**
 
 | Parameter Name|Type|Description|
 | :- | :- | :- |
@@ -59,26 +31,10 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
 | Source | FileSource | Indicates data file position when the BatchData parameter is null. |
 | DestinationWorksheet | string | destination work sheet name. |
 
-
-- **Response**
-
-
-```bash
-{
-    "Code": 200,
-    "Status": "OK"      
-}
-```
+**Example**
 
 
-
-- **Api Reference**   
-
- [PostImportData](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData)
-
-
-
-- **Cloud SDK Family**
+## Cloud SDK Family
 
 Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
