@@ -19,7 +19,6 @@ Excel document formats are great for collaborative development, but they aren’
 
 You may require to convert an editable XLSX or XLS to an immutable PDF in order to protect the Excel file against undesirable modifications.
 
-
 ## REST API
 
 

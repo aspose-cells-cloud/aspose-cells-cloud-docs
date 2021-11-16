@@ -2,7 +2,8 @@
 title: "Import"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /import/
+url: /import/ 
+aliases: [/import-data-in-excel-worksheet-without-using-storage/]
 keywords: "REST API,  spreadsheets, excel, Import."
 description: "Cells.Cloud API for Excel files import."
 weight: 100
@@ -27,7 +28,7 @@ The request parameters are:
 
   
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PostImport) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LiteCells/PostImport) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
  
 You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
  

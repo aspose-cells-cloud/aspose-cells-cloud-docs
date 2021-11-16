@@ -3,7 +3,7 @@ title: "Import Data"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /import-data/
-aliases: [/import-data-into-excel-worksheet/, /import-data-into-worksheet/]
+aliases: [/import-data-into-excel-worksheet/, /import-data-into-worksheet/ , /import-data-in-excel-worksheet/]
 description: "Cells.Cloud API for Excel operate: Import Data into Excel Worksheet."
 weight: 100
 ---

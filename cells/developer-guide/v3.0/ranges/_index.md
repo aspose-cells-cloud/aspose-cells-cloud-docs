@@ -9,6 +9,8 @@ description: "Cells.Cloud API for Excel operate: working with range on an Excel 
 weight: 100
 ---
 
+Represents a cell, a row, a column, a selection of cells containing one or more contiguous blocks of cells, or a 3D range.
+
 ## Working with ranges on an Excel file.
 
 - [Get Named Ranges inside the Workbook](/cells/get-named-ranges-inside-the-workbook/)
@@ -19,4 +21,5 @@ weight: 100
 - [Copy Range in a Worksheet with Paste Options](/cells/copy-range-in-a-worksheet-with-paste-options/)
 - [Set the Style of the Range](/cells/set-the-style-of-the-range/)
 - [Unmerge Merged Cells of the Range](/cells/unmerge-merged-cells-of-the-range/)
-- [Move a named ranged with a Excel Worksheet](/cells/move-a-named-ranged-with-a-excel-worksheet/)
+- [Move a named ranged with an Excel Worksheet](/cells/move-a-named-ranged-with-a-excel-worksheet/)
+- [Set Range Value in Excel Worksheet](/cells/ranges/set-value/)

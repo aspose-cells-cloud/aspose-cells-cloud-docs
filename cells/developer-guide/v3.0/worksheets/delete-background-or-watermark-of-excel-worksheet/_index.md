@@ -1,50 +1,70 @@
 ---
-title: "Delete Background or Watermark of Excel Worksheet"
+title: "Delete Excel Worksheet Background"
 type: docs
-url: /delete-background-or-watermark-of-excel-worksheet/
+url: /worksheets/background/delete/
+aliases: [/delete-background-or-watermark-of-excel-worksheet/]
 weight: 210
 ---
 
-## **Introduction**
-This example shows how to delete a background image or watermark image anes of a worksheet using Aspose.Cells Cloud API in your applications. You can use our REST API with any language: .NET, Java, PHP, Ruby, Rails, Python, jQuery and many more.
-## **API Information**
-
-|**API**|**Type**|**Description**|**Resource Link**|
-| :- | :- | :- | :- |
-|/cells/{name}/worksheets/{sheetName}/background|DELETE|Delete background image in worksheet|[DeleteWorkSheetBackground](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorkSheetBackground)|
-### **cURL Example**
+This REST API indicates `delete worksheet background image`.
+ 
+## RSET API
+ 
+```bash
+ 
+DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/background
+ 
+```
+The request parameters are: 
+ 
+| Parameter Name | Type | Path/Query String/HTTPBody | Description| 
+| :- | :- | :- |:- | 
+| name | string | path |   |
+| sheetName | string | path |   |
+| folder | string | query |   |
+| storageName | string | query | storage name. |
+ 
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheetBackground) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+ 
+You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+ 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
-
+ 
 {{< tab tabNum="1" >}}
-
-```java
-
-curl -X DELETE "http://api.aspose.com/v3.0/cells/WorkSheetBackground_Sample_Test_Book.xls/worksheets/Sheet1/background" -H "Content-Type: application/json" -H "Accept: application/json"
-
+ 
+```bash
+ 
+curl -v "http://api.aspose.com/v3.0/cells/WorkSheetBackground_Sample_Test_Book.xls/worksheets/Sheet1/background" \
+-X DELETE \
+-H "Content-Type: application/json" \
+-H "Accept: application/json" \
+-H "Authorization: Bearer <jwt token>"
+ 
 ```
-
+ 
 {{< /tab >}}
-
+ 
 {{< tab tabNum="2" >}}
-
-```java
-
+ 
+```bash
 {
-
-  "Code": 200,
-
-  "Status": "OK"
-
+"Code": 200,
+"Status": "OK"
 }
-
+ 
 ```
-
+ 
 {{< /tab >}}
-
+ 
 {{< /tabs >}}
-## **SDK Source**
-The Aspose.Cells Cloud SDKs can be downloaded from the following page: [Available SDKs](/cells/available-sdks/)
-### **SDK Examples**
+ 
+## Cloud SDK Family
+ 
+Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+ 
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+ 
+
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}

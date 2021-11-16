@@ -25,7 +25,7 @@ The request parameters are:
 | format | string | query | xlsx |
 | mergeToOneSheet | boolean | query | False |
  
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PostMerge) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LiteCells/PostMerge) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
  
 You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
  

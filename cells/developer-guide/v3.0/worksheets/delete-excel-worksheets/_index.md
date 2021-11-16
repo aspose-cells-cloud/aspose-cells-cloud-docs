@@ -1,12 +1,12 @@
 ---
 title: "Delete Excel Worksheets"
 type: docs
-url: /worksheets/delete/
+url: /worksheets/delete-multiple/
 aliases: [/delete-excel-worksheets/]
 weight: 50
 ---
 
-This REST API indicates `delete worksheets` info.
+This REST API indicates `delete multiple worksheets`.
  
 ## RSET API
  

@@ -1,161 +1,72 @@
 ---
 title: "Update Excel Worksheet Properties"
 type: docs
-url: /update-excel-worksheet-properties/
+url: /worksheets/update-properties/
+aliases: [/update-excel-worksheet-properties/]
 weight: 170
 ---
 
-## **Introduction**
-This example shows how to update properties of a worksheet using Aspose.Cells Cloud API in your applications. You can use our REST API with any language: .NET, Java, PHP, Ruby, Rails, Python, jQuery and many more.
-## **API Information**
-
-|**API**|**Type**|**Description**|**Resource Link**|
-| :- | :- | :- | :- |
-|/cells/{name}/worksheets/{sheetName}|POST|Update worksheet properties|[PostUpdateWorksheetProperty](https://apireference.aspose.cloud/cells/#/Worksheets/PostUpdateWorksheetProperty)|
-### **cURL Example**
+This REST API indicates `update worksheet base properties`.
+ 
+## RSET API
+ 
+```bash
+ 
+POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
+ 
+```
+The request parameters are: 
+ 
+| Parameter Name | Type | Path/Query String/HTTPBody | Description| 
+| :- | :- | :- |:- | 
+| name | string | path |   |
+| sheetName | string | path |   |
+| sheet |  | body |   |
+| folder | string | query |   |
+| storageName | string | query | storage name. |
+ 
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostUpdateWorksheetProperty) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+ 
+You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+ 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
-
+ 
 {{< tab tabNum="1" >}}
-
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1" -H "accept: application/json" -H "Content-Type: application/json" -H "x-aspose-client: Containerize.Swagger" -d "{ \"Links\": [ { \"Href\": \"string\", \"Rel\": \"string\", \"Title\": \"string\", \"Type\": \"string\" } ], \"DisplayRightToLeft\": true, \"DisplayZeros\": true, \"FirstVisibleColumn\": 1, \"FirstVisibleRow\": 0, \"Name\": \"string\", \"Index\": 0, \"IsGridlinesVisible\": true, \"IsOutlineShown\": true, \"IsPageBreakPreview\": true, \"IsVisible\": true, \"IsProtected\": true, \"IsRowColumnHeadersVisible\": true, \"IsRulerVisible\": true, \"IsSelected\": true, \"TabColor\": { \"A\": 0, \"R\": 0, \"G\": 0, \"B\": 0 }, \"TransitionEntry\": true, \"TransitionEvaluation\": true, \"Type\": \"string\", \"ViewType\": \"string\", \"VisibilityType\": \"string\", \"Zoom\": 0, \"Cells\": { \"link\": { \"Href\": \"string\", \"Rel\": \"string\", \"Title\": \"string\", \"Type\": \"string\" } }, \"Charts\": { \"link\": { \"Href\": \"string\", \"Rel\": \"string\", \"Title\": \"string\", \"Type\": \"string\" } }, \"AutoShapes\": { \"link\": { \"Href\": \"string\", \"Rel\": \"string\", \"Title\": \"string\", \"Type\": \"string\" } }, \"OleObjects\": { \"link\": { \"Href\": \"string\", \"Rel\": \"string\", \"Title\": \"string\", \"Type\": \"string\" } }, \"Comments\": { \"link\": { \"Href\": \"string\", \"Rel\": \"string\", \"Title\": \"string\", \"Type\": \"string\" } }, \"Pictures\": { \"link\": { \"Href\": \"string\", \"Rel\": \"string\", \"Title\": \"string\", \"Type\": \"string\" } }, \"MergedCells\": { \"link\": { \"Href\": \"string\", \"Rel\": \"string\", \"Title\": \"string\", \"Type\": \"string\" } }, \"Validations\": { \"link\": { \"Href\": \"string\", \"Rel\": \"string\", \"Title\": \"string\", \"Type\": \"string\" } }, \"ConditionalFormattings\": { \"link\": { \"Href\": \"string\", \"Rel\": \"string\", \"Title\": \"string\", \"Type\": \"string\" } }, \"Hyperlinks\": { \"link\": { \"Href\": \"string\", \"Rel\": \"string\", \"Title\": \"string\", \"Type\": \"string\" } }}"
-
+ 
+```bash
+ 
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1" \
+-X POST \
+-d '{"DisplayZeros":"true","IsRulerVisible":"true"}'\
+-H "Content-Type: application/json" \
+-H "Accept: application/json" \
+-H "Authorization: Bearer <jwt token>"
+ 
 ```
-
+ 
 {{< /tab >}}
-
+ 
 {{< tab tabNum="2" >}}
-
-```java
-
+ 
+```bash
 {
-  "Status": "string",
-  "Worksheet": {
-    "Links": [
-      {
-        "Href": "string",
-        "Rel": "string",
-        "Title": "string",
-        "Type": "string"
-      }
-    ],
-    "DisplayRightToLeft": true,
-    "DisplayZeros": true,
-    "FirstVisibleColumn": 0,
-    "FirstVisibleRow": 0,
-    "Name": "string",
-    "Index": 0,
-    "IsGridlinesVisible": true,
-    "IsOutlineShown": true,
-    "IsPageBreakPreview": true,
-    "IsVisible": true,
-    "IsProtected": true,
-    "IsRowColumnHeadersVisible": true,
-    "IsRulerVisible": true,
-    "IsSelected": true,
-    "TabColor": {
-      "A": 0,
-      "R": 0,
-      "G": 0,
-      "B": 0
-    },
-    "TransitionEntry": true,
-    "TransitionEvaluation": true,
-    "Type": "string",
-    "ViewType": "string",
-    "VisibilityType": "string",
-    "Zoom": 0,
-    "Cells": {
-      "link": {
-        "Href": "string",
-        "Rel": "string",
-        "Title": "string",
-        "Type": "string"
-      }
-    },
-    "Charts": {
-      "link": {
-        "Href": "string",
-        "Rel": "string",
-        "Title": "string",
-        "Type": "string"
-      }
-    },
-    "AutoShapes": {
-      "link": {
-        "Href": "string",
-        "Rel": "string",
-        "Title": "string",
-        "Type": "string"
-      }
-    },
-    "OleObjects": {
-      "link": {
-        "Href": "string",
-        "Rel": "string",
-        "Title": "string",
-        "Type": "string"
-      }
-    },
-    "Comments": {
-      "link": {
-        "Href": "string",
-        "Rel": "string",
-        "Title": "string",
-        "Type": "string"
-      }
-    },
-    "Pictures": {
-      "link": {
-        "Href": "string",
-        "Rel": "string",
-        "Title": "string",
-        "Type": "string"
-      }
-    },
-    "MergedCells": {
-      "link": {
-        "Href": "string",
-        "Rel": "string",
-        "Title": "string",
-        "Type": "string"
-      }
-    },
-    "Validations": {
-      "link": {
-        "Href": "string",
-        "Rel": "string",
-        "Title": "string",
-        "Type": "string"
-      }
-    },
-    "ConditionalFormattings": {
-      "link": {
-        "Href": "string",
-        "Rel": "string",
-        "Title": "string",
-        "Type": "string"
-      }
-    },
-    "Hyperlinks": {
-      "link": {
-        "Href": "string",
-        "Rel": "string",
-        "Title": "string",
-        "Type": "string"
-      }
-    }
-  }
+"Code": 200,
+"Status": "OK"
 }
+ 
 ```
-
+ 
 {{< /tab >}}
-
+ 
 {{< /tabs >}}
-## **SDK Source**
-The Aspose.Cells Cloud SDKs can be downloaded from the following page: [Available SDKs](/cells/available-sdks/)
-### **SDK Examples**
+ 
+## Cloud SDK Family
+ 
+Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+ 
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+ 
+ 
 {{< tabs tabTotal="9" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Objective C" tabName8="Perl" tabName9="Go" >}}
 
 {{< tab tabNum="1" >}}

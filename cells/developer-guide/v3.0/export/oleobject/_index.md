@@ -13,10 +13,10 @@ weight: 20
 
 |**API**|**Type**|**Description**|**Swagger Link**|
 | :- | :- | :- | :- |
-|/cells/export|POST|Export excel from request content to some format|[PostExport](https://apireference.aspose.cloud/cells/#/Export/PostExport)|
+|/cells/export|POST|Export excel from request content to some format|[PostExport](https://apireference.aspose.cloud/cells/#/LiteCells/PostExport)|
 
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Export/PostExport) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. 
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LiteCells/PostExport) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. 
 
 You can use **cURL** command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
 

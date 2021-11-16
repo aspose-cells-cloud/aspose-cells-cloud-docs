@@ -25,7 +25,6 @@ The following APIs to convert an Excel file to other file formats is provided:
 
 The following articles explain each API in detail and contain cURL and SDK Examples of each API:
 
-
 - [Convert Excel file to different file format in cloud](/cells/convert/excel-to-different-formats/)
 - [Save Excel workbook as different file formats](/cells/saveas-other-formats/)
 - [Export Excel file to different file format in cloud](/cells/export-different-formats/)
