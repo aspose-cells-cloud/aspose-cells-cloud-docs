@@ -27,7 +27,7 @@ The important parameters are described in the following table:
 | IsInsert | string | true/false. |
 | ImportDataType | string | IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData.|
 | Source | FileSource | Indicates data file position when the BatchData parameter is null. |
-| DestinationWorksheet | string | destination work sheet name. |
+
 
 **Example**
 

@@ -1,5 +1,5 @@
 ---
-title: "Delete a hyperlinks"
+title: "Delete"
 type: docs
 url: /hyperlinks/delete/
 keywords: "REST API, hyperlinks, spreadsheets, excel"
@@ -7,7 +7,7 @@ description: "Cells.Cloud API for Excel operate: delete a hyperlink on an Excel 
 weight: 40
 ---
 
-This REST API indicates Delete worksheet hyperlink by index.
+This REST API indicates `delete worksheet hyperlink` by index.
  
 ## RSET API
  

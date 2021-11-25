@@ -10,16 +10,14 @@ weight: 100
 ---
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;Hyperlinks in Excel allow users to create a shortcut way to reach any certain worksheet, file, folder or webpage. It helps us to reach to any specific folder or link quickly. We also use hyperlinks to provide the reference. The hyperlinks option is there in the Insert menu option under the Links section. We just have to provide the text on which we want to have a hyperlink and then select the file or website page which we want to link with that text.
-
-So, HYPERLINK creates a link to cells, sheets, and workbooks.
+&nbsp;&nbsp;&nbsp;&nbsp;Hyperlinks in Excel allow users to create a shortcut way to reach any certain worksheet, file, folder or webpage. It helps us to reach to any specific folder or link quickly.
 
 ## Working with Hyperlinks on an Excel file.
 
-- [Get a hyperlink from Excel Worksheet](/cells/hyperlinks/get/)
-- [Get all hyperlinks from Excel Worksheet](/cells/hyperlinks/get-all/)
-- [Add hyperlinks to Excel Worksheet](/cells/hyperlinks/add/)
-- [Update hyperlinks in Excel Worksheet](/cells/hyperlinks/update/)
-- [Clear hyperlinks from Excel Worksheet](/cells//hyperlinks/clear/)
-- [Delete a hyperlink from Excel Worksheet](/cells//hyperlinks/delete/)
+- [How to get a hyperlink description from Excel Worksheet.](/cells/hyperlinks/get/)
+- [How to get all hyperlinks description from Excel Worksheet.](/cells/hyperlinks/get-all/)
+- [How to add hyperlinks to Excel Worksheet](/cells/hyperlinks/add/)
+- [How to update hyperlinks in Excel Worksheet](/cells/hyperlinks/update/)
+- [How to delete all hyperlinks from Excel Worksheet](/cells//hyperlinks/clear/)
+- [How to delete a hyperlink from Excel Worksheet](/cells//hyperlinks/delete/)
 

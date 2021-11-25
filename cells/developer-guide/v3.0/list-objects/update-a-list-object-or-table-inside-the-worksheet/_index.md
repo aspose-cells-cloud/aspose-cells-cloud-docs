@@ -1,89 +1,89 @@
 ---
-title: "Update a List Object or Table inside the Worksheet"
+title: "Update"
+second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /update-a-list-object-or-table-inside-the-worksheet/
+url: /list-objects/update/
+aliases: [/update-a-list-object-or-table-inside-the-worksheet/,/tables/update/]
 weight: 20
 ---
 
-## **Introduction**
-This example shows how to update a list object or table inside the worksheet, using Aspose.Cells Cloud API in your applications. You can use our REST API with any language: .NET, Java, PHP, Ruby, Rails, Python, jQuery and many more.
-## **API Information**
+This REST API indicates `update list object properties`.
 
-|**API**|**Type**|**Description**|**Resource Link**|
-| :- | :- | :- | :- |
-|/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}|POST|Updates list object in worksheet|[PostWorksheetListObject](https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObject)|
-### **cURL Example**
+- Gets and sets whether this table(ListObject) show total row.
+- Gets and sets whether this ListObject show header row.
+- Sets column stripe formatting.
+- Sets row stripe formatting.
+- Resize the range of the table(list object). 
+ 
+## RSET API
+ 
+```bash
+ 
+POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}
+ 
+```
+The request parameters are: 
+ 
+| Parameter Name | Type | Path/Query String/HTTPBody | Description| 
+| :- | :- | :- |:- | 
+| name | string | path | Document name. |
+| sheetName | string | path | The worksheet name. |
+| listObjectIndex | integer | path | list Object index |
+| listObject |  | body | listObject dto in request body. |
+| folder | string | query | Document's folder. |
+| storageName | string | query | storage name. |
+ 
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObject) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+ 
+You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+ 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
-
+ 
 {{< tab tabNum="1" >}}
-
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet7/listobjects/0" -H "accept: application/json" -H "Content-Type: application/json" -H "x-aspose-client: Containerize.Swagger" -d "{ \"link\": { \"Href\": \"string\", \"Rel\": \"string\", \"Title\": \"string\", \"Type\": \"string\" }, \"AutoFilter\": { \"link\": { \"Href\": \"string\", \"Rel\": \"string\", \"Title\": \"string\", \"Type\": \"string\" }, \"FilterColumns\": [ { \"FieldIndex\": 0, \"FilterType\": \"string\", \"MultipleFilters\": { \"MatchBlank\": true, \"MultipleFilterList\": [ {} ] }, \"ColorFilter\": { \"FilterByFillColor\": \"string\", \"Pattern\": \"string\", \"Color\": { \"Color\": { \"A\": 0, \"R\": 0, \"G\": 0, \"B\": 0 }, \"ColorIndex\": 0, \"IsShapeColor\": true, \"ThemeColor\": { \"ColorType\": \"string\", \"Tint\": 0 }, \"Type\": \"string\" }, \"ForegroundColorColor\": { \"Color\": { \"A\": 0, \"R\": 0, \"G\": 0, \"B\": 0 }, \"ColorIndex\": 0, \"IsShapeColor\": true, \"ThemeColor\": { \"ColorType\": \"string\", \"Tint\": 0 }, \"Type\": \"string\" }, \"BackgroundColor\": { \"Color\": { \"A\": 0, \"R\": 0, \"G\": 0, \"B\": 0 }, \"ColorIndex\": 0, \"IsShapeColor\": true, \"ThemeColor\": { \"ColorType\": \"string\", \"Tint\": 0 }, \"Type\": \"string\" } }, \"CustomFilters\": [ { \"FilterOperatorType\": \"string\" } ], \"DynamicFilter\": { \"DynamicFilterType\": \"string\" }, \"IconFilter\": { \"IconId\": 0, \"IconSetType\": \"string\" }, \"Top10Filter\": { \"Criteria\": \"string\", \"IsPercent\": true, \"IsTop\": true, \"Items\": 0 }, \"Visibledropdown\": \"string\" } ], \"Range\": \"string\", \"Sorter\": { \"CaseSensitive\": true, \"HasHeaders\": true, \"KeyList\": [ { \"Key\": 0, \"SortOrder\": \"string\", \"CustomList\": \"string\" } ], \"SortLeftToRight\": true } }, \"DisplayName\": \"string\", \"StartColumn\": 0, \"StartRow\": 0, \"EndColumn\": 0, \"EndRow\": 0, \"ListColumns\": [ { \"Name\": \"string\", \"TotalsCalculation\": \"string\" } ], \"ShowHeaderRow\": true, \"ShowTableStyleColumnStripes\": true, \"ShowTableStyleFirstColumn\": true, \"ShowTableStyleLastColumn\": true, \"ShowTableStyleRowStripes\": true, \"ShowTotals\": true, \"TableStyleName\": \"string\", \"TableStyleType\": \"string\"}"
-
+ 
+```bash
+ 
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet7/listobjects/0" \
+-X POST \
+-d "{ \"link\": { \"Href\": \"string\", \"Rel\": \"string\", \"Title\": \"string\", \"Type\": \"string\" }, \"AutoFilter\": { \"link\": { \"Href\": \"string\", \"Rel\": \"string\", \"Title\": \"string\", \"Type\": \"string\" }, \"FilterColumns\": [ { \"FieldIndex\": 0, \"FilterType\": \"string\", \"MultipleFilters\": { \"MatchBlank\": true, \"MultipleFilterList\": [ {} ] }, \"ColorFilter\": { \"FilterByFillColor\": \"string\", \"Pattern\": \"string\", \"Color\": { \"Color\": { \"A\": 0, \"R\": 0, \"G\": 0, \"B\": 0 }, \"ColorIndex\": 0, \"IsShapeColor\": true, \"ThemeColor\": { \"ColorType\": \"string\", \"Tint\": 0 }, \"Type\": \"string\" }, \"ForegroundColorColor\": { \"Color\": { \"A\": 0, \"R\": 0, \"G\": 0, \"B\": 0 }, \"ColorIndex\": 0, \"IsShapeColor\": true, \"ThemeColor\": { \"ColorType\": \"string\", \"Tint\": 0 }, \"Type\": \"string\" }, \"BackgroundColor\": { \"Color\": { \"A\": 0, \"R\": 0, \"G\": 0, \"B\": 0 }, \"ColorIndex\": 0, \"IsShapeColor\": true, \"ThemeColor\": { \"ColorType\": \"string\", \"Tint\": 0 }, \"Type\": \"string\" } }, \"CustomFilters\": [ { \"FilterOperatorType\": \"string\" } ], \"DynamicFilter\": { \"DynamicFilterType\": \"string\" }, \"IconFilter\": { \"IconId\": 0, \"IconSetType\": \"string\" }, \"Top10Filter\": { \"Criteria\": \"string\", \"IsPercent\": true, \"IsTop\": true, \"Items\": 0 }, \"Visibledropdown\": \"string\" } ], \"Range\": \"string\", \"Sorter\": { \"CaseSensitive\": true, \"HasHeaders\": true, \"KeyList\": [ { \"Key\": 0, \"SortOrder\": \"string\", \"CustomList\": \"string\" } ], \"SortLeftToRight\": true } }, \"DisplayName\": \"string\", \"StartColumn\": 0, \"StartRow\": 0, \"EndColumn\": 0, \"EndRow\": 0, \"ListColumns\": [ { \"Name\": \"string\", \"TotalsCalculation\": \"string\" } ], \"ShowHeaderRow\": true, \"ShowTableStyleColumnStripes\": true, \"ShowTableStyleFirstColumn\": true, \"ShowTableStyleLastColumn\": true, \"ShowTableStyleRowStripes\": true, \"ShowTotals\": true, \"TableStyleName\": \"string\", \"TableStyleType\": \"string\"}" \
+-H "Content-Type: application/json" \
+-H "Accept: application/json" \
+-H "Authorization: Bearer <jwt token>"
+ 
 ```
-
+ 
 {{< /tab >}}
-
+ 
 {{< tab tabNum="2" >}}
-
-```java
-
+ 
+```bash
 {
-
-   "Code": "OK",
-
-   "Status": "OK"
-
+"Code": 200,
+"Status": "OK"
 }
-
+ 
 ```
-
+ 
 {{< /tab >}}
-
+ 
 {{< /tabs >}}
-## **SDK Source**
-The Aspose.Cells Cloud SDKs can be downloaded from the following page: [Available SDKs](/cells/available-sdks/)
-### **SDK Examples**
+ 
+## Cloud SDK Family
+ 
+Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+ 
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+ 
+ 
+ 
+
 {{< tabs tabTotal="4" tabID="4" tabName1="C#" tabName2="VB.NET" tabName3="Java" tabName4="Go" >}}
 
 {{< tab tabNum="1" >}}
 
 ```java
 
-//Please upload sample.xlsx file in the cloud storage.
 
-//Sign ListObject API with your Client_Id and Client_Secret
-
-//The URL updates the first list object or table inside the Sheet1 of workbook
-
-string strURI = "http://api.aspose.com/v3.0/cells/sample.xlsx/worksheets/Sheet1/listobjects/0";
-
-strURI = Sign(strURI, client_id,client_secret);
-
-//XML body that updates the end row, end column and style of list object or table
-
-string xmlBody = @"
-
-<ListObject>
-
-   <EndRow>26</EndRow>
-
-   <EndColumn>12</EndColumn>
-
-   <TableStyleName>TableStyleMedium10</TableStyleName>
-
-   <TableStyleType>TableStyleMedium10</TableStyleType>
-
-</ListObject>";
-
-//Call Process Command with Signed URI
-
-Stream responseStream = ProcessCommand(strURI, "POST", xmlBody, "XML");
-
-//Convert response stream into string
-
-//Please download sample.xlsx file from the cloud storage.
 
 ```
 
@@ -93,27 +93,7 @@ Stream responseStream = ProcessCommand(strURI, "POST", xmlBody, "XML");
 
 ```java
 
-'Please upload sample.xlsx file in the cloud storage.
 
-'Sign ListObject API with your Client_Id and Client_Secret
-
-'The URL updates the first list object or table inside the Sheet1 of workbook
-
-Dim strURI As String = "http://api.aspose.com/v3.0/cells/sample.xlsx/worksheets/Sheet1/listobjects/0"
-
-strURI = Sign(strURI, client_id,client_secret)
-
-'XML body that updates the end row, end column and style of list object or table
-
-Dim xmlBody As String = "<ListObject><EndRow>26</EndRow><EndColumn>12</EndColumn><TableStyleName>TableStyleMedium10</TableStyleName><TableStyleType>TableStyleMedium10</TableStyleType></ListObject>"
-
-'Call Process Command with Signed URI
-
-Dim responseStream As Stream = ProcessCommand(strURI, "POST", xmlBody, "XML")
-
-'Convert response stream into string
-
-'Please download sample.xlsx file from the cloud storage.
 
 ```
 
@@ -123,27 +103,7 @@ Dim responseStream As Stream = ProcessCommand(strURI, "POST", xmlBody, "XML")
 
 ```java
 
-//Please upload sample.xlsx file in the cloud storage.
 
-//Sign ListObject API with your Client_Id and Client_Secret
-
-//The URL updates the first list object or table inside the Sheet1 of workbook
-
-String strURI = "http://api.aspose.com/v3.0/cells/sample.xlsx/worksheets/Sheet1/listobjects/0";
-
-strURI = Sign(strURI, client_id,client_secret);
-
-//XML body that updates the end row, end column and style of list object or table
-
-String xmlBody = "<ListObject><EndRow>26</EndRow><EndColumn>12</EndColumn><TableStyleName>TableStyleMedium10</TableStyleName><TableStyleType>TableStyleMedium10</TableStyleType></ListObject>";
-
-//Call Process Command with Signed URI
-
-InputStream responseStream = ProcessCommand(strURI, "POST", xmlBody, "XML");
-
-//Convert response stream into string
-
-//Please download sample.xlsx file from the cloud storage.
 
 ```
 

@@ -1,5 +1,5 @@
 ---
-title: "Add a hyperlink"
+title: "Add"
 type: docs
 url: /hyperlinks/add/
 aliases: [/add-hyperlinks-to-excel-worksheet/]
@@ -8,7 +8,7 @@ description: "Cells.Cloud API for Excel operate: add hyperlinks on an Excel file
 weight: 20
 ---
 
-This REST API indicates Add worksheet hyperlink.
+This REST API indicates `add worksheet hyperlink`.
  
 ## RSET API
  

@@ -1,5 +1,5 @@
 ---
-title: "Update hyperlink"
+title: "Update"
 type: docs
 url: /hyperlinks/update/
 aliases: [/update-hyperlinks-in-excel-worksheet/]
@@ -8,7 +8,7 @@ description: "Cells.Cloud API for Excel operate: update hyperlink on an Excel fi
 weight: 30
 ---
 
-This REST API indicates Update worksheet hyperlink by index.
+This REST API indicates `update worksheet hyperlink` by index.
  
 ## RSET API
  

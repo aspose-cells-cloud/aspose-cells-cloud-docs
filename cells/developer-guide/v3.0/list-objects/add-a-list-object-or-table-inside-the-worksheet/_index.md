@@ -1,327 +1,82 @@
 ---
-title: "Add a List Object or Table inside the Worksheet"
+title: "Add"
+second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /add-a-list-object-or-table-inside-the-worksheet/
+url: /list-objects/add/
+aliases: [/add-a-list-object-or-table-inside-the-worksheet/,/tables/add/]
 weight: 10
 ---
 
-## **Introduction**
-This example shows how to add a List Object or table inside the worksheet, using Aspose.Cells Cloud API in your applications. You can use our REST API with any language: .NET, Java, PHP, Ruby, Rails, Python, jQuery and many more.
-## **API Information**
-
-|**API**|**Type**|**Description**|**Resource Link**|
-| :- | :- | :- | :- |
-|/cells/{name}/worksheets/{sheetName}/listobjects|PUT|Adds a list object in worksheet|[PutWorksheetListObject](https://apireference.aspose.cloud/cells/#/ListObjects/PutWorksheetListObject)|
-### **cURL Example**
+This REST API indicates `add a list object(table)` into worksheet.
+ 
+## RSET API
+ 
+```bash
+ 
+PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects
+ 
+```
+The request parameters are: 
+ 
+| Parameter Name | Type | Path/Query String/HTTPBody | Description| 
+| :- | :- | :- |:- | 
+| name | string | path | Document name. |
+| sheetName | string | path | The worksheet name. |
+| startRow | integer | query | The start row of the list range. |
+| startColumn | integer | query | The start row of the list range. |
+| endRow | integer | query | The start row of the list range. |
+| endColumn | integer | query | The start row of the list range. |
+| hasHeaders | boolean | query | True |
+| listObject |  | body | List Object |
+| folder | string | query | Document's folder. |
+| storageName | string | query | storage name. |
+ 
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ListObjects/PutWorksheetListObject) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+ 
+You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+ 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
-
+ 
 {{< tab tabNum="1" >}}
-
-```java
-
-curl -X PUT "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listobjects?startRow=1&startColumn=1&endRow=10&endColumn=12&hasHeaders=true" -H "accept: application/json" -H "x-aspose-client: Containerize.Swagger"
-
+ 
+```bash
+ 
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listobjects?startRow=1&startColumn=1&endRow=10&endColumn=12&hasHeaders=true" \
+-X PUT \
+-H "Content-Type: application/json" \
+-H "Accept: application/json" \
+-H "Authorization: Bearer <jwt token>"
+ 
 ```
-
+ 
 {{< /tab >}}
-
+ 
 {{< tab tabNum="2" >}}
-
-```java
-
+ 
+```bash
 {
-
-  "Status": "string",
-
-  "ListObject": {
-
-    "link": {
-
-      "Href": "string",
-
-      "Rel": "string",
-
-      "Title": "string",
-
-      "Type": "string"
-
-    },
-
-    "AutoFilter": {
-
-      "link": {
-
-        "Href": "string",
-
-        "Rel": "string",
-
-        "Title": "string",
-
-        "Type": "string"
-
-      },
-
-      "FilterColumns": [
-
-        {
-
-          "FieldIndex": 0,
-
-          "FilterType": "string",
-
-          "MultipleFilters": {
-
-            "MatchBlank": true,
-
-            "MultipleFilterList": [
-
-              {}
-
-            ]
-
-          },
-
-          "ColorFilter": {
-
-            "FilterByFillColor": "string",
-
-            "Pattern": "string",
-
-            "Color": {
-
-              "Color": {
-
-                "A": 0,
-
-                "R": 0,
-
-                "G": 0,
-
-                "B": 0
-
-              },
-
-              "ColorIndex": 0,
-
-              "IsShapeColor": true,
-
-              "ThemeColor": {
-
-                "ColorType": "string",
-
-                "Tint": 0
-
-              },
-
-              "Type": "string"
-
-            },
-
-            "ForegroundColorColor": {
-
-              "Color": {
-
-                "A": 0,
-
-                "R": 0,
-
-                "G": 0,
-
-                "B": 0
-
-              },
-
-              "ColorIndex": 0,
-
-              "IsShapeColor": true,
-
-              "ThemeColor": {
-
-                "ColorType": "string",
-
-                "Tint": 0
-
-              },
-
-              "Type": "string"
-
-            },
-
-            "BackgroundColor": {
-
-              "Color": {
-
-                "A": 0,
-
-                "R": 0,
-
-                "G": 0,
-
-                "B": 0
-
-              },
-
-              "ColorIndex": 0,
-
-              "IsShapeColor": true,
-
-              "ThemeColor": {
-
-                "ColorType": "string",
-
-                "Tint": 0
-
-              },
-
-              "Type": "string"
-
-            }
-
-          },
-
-          "CustomFilters": [
-
-            {
-
-              "FilterOperatorType": "string"
-
-            }
-
-          ],
-
-          "DynamicFilter": {
-
-            "DynamicFilterType": "string"
-
-          },
-
-          "IconFilter": {
-
-            "IconId": 0,
-
-            "IconSetType": "string"
-
-          },
-
-          "Top10Filter": {
-
-            "Criteria": "string",
-
-            "IsPercent": true,
-
-            "IsTop": true,
-
-            "Items": 0
-
-          },
-
-          "Visibledropdown": "string"
-
-        }
-
-      ],
-
-      "Range": "string",
-
-      "Sorter": {
-
-        "CaseSensitive": true,
-
-        "HasHeaders": true,
-
-        "KeyList": [
-
-          {
-
-            "Key": 0,
-
-            "SortOrder": "string",
-
-            "CustomList": "string"
-
-          }
-
-        ],
-
-        "SortLeftToRight": true
-
-      }
-
-    },
-
-    "DisplayName": "string",
-
-    "StartColumn": 0,
-
-    "StartRow": 0,
-
-    "EndColumn": 0,
-
-    "EndRow": 0,
-
-    "ListColumns": [
-
-      {
-
-        "Name": "string",
-
-        "TotalsCalculation": "string"
-
-      }
-
-    ],
-
-    "ShowHeaderRow": true,
-
-    "ShowTableStyleColumnStripes": true,
-
-    "ShowTableStyleFirstColumn": true,
-
-    "ShowTableStyleLastColumn": true,
-
-    "ShowTableStyleRowStripes": true,
-
-    "ShowTotals": true,
-
-    "TableStyleName": "string",
-
-    "TableStyleType": "string"
-
-  }
-
+"Code": 200,
+"Status": "OK"
 }
-
+ 
 ```
-
+ 
 {{< /tab >}}
-
+ 
 {{< /tabs >}}
-## **SDK Source**
-The Aspose.Cells Cloud SDKs can be downloaded from the following page: [Available SDKs](/cells/available-sdks/)
-### **SDK Examples**
+ 
+## Cloud SDK Family
+ 
+Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+ 
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+
 {{< tabs tabTotal="4" tabID="4" tabName1="C#" tabName2="VB.NET" tabName3="Java" tabName4="Go" >}}
 
 {{< tab tabNum="1" >}}
 
 ```java
 
-//Please upload sample.xlsx file in the cloud storage.
-
-//Sign ListObject API with your client_id and client_secret
-
-//The URL adds a List Object or Table in a range F5:I9 with headers
-
-string strURI = "http://api.aspose.com/v3.0/cells/sample.xlsx/worksheets/Sheet1/listobjects?startRow=4&startColumn=5&endRow=8&endColumn=8&hasHeaders=True";
-
-strURI = Sign(strURI, client_id, client_secret);
-
-//Call Process Command with Signed URI
-
-Stream responseStream = ProcessCommand(strURI, "PUT");
-
-//Convert response stream into string
-
-//Please download sample.xlsx file from the cloud storage.
 
 ```
 
@@ -331,23 +86,6 @@ Stream responseStream = ProcessCommand(strURI, "PUT");
 
 ```java
 
-'Please upload sample.xlsx file in the cloud storage.
-
-'Sign ListObject API with your Client_Id and Client_Secret
-
-'The URL adds a List Object or Table in a range F5:I9 with headers
-
-Dim strURI As String = "http://api.aspose.com/v3.0/cells/sample.xlsx/worksheets/Sheet1/listobjects?startRow=4&startColumn=5&endRow=8&endColumn=8&hasHeaders=True"
-
-strURI = Sign(strURI, client_id,client_secret)
-
-'Call Process Command with Signed URI
-
-Dim responseStream As Stream = ProcessCommand(strURI, "PUT")
-
-'Convert response stream into string
-
-'Please download sample.xlsx file from the cloud storage.
 
 ```
 
@@ -357,23 +95,6 @@ Dim responseStream As Stream = ProcessCommand(strURI, "PUT")
 
 ```java
 
-//Please upload sample.xlsx file in the cloud storage.
-
-//Sign ListObject API with your Client_Id and Client_Secret
-
-//The URL adds a List Object or Table in a range F5:I9 with headers
-
-String strURI = "http://api.aspose.com/v3.0/cells/sample.xlsx/worksheets/Sheet1/listobjects?startRow=4&startColumn=5&endRow=8&endColumn=8&hasHeaders=True";
-
-strURI = Sign(strURI, client_id,client_secret);
-
-//Call Process Command with Signed URI
-
-InputStream responseStream = ProcessCommand(strURI, "PUT");
-
-//Convert response stream into string
-
-//Please download sample.xlsx file from the cloud storage.
 
 ```
 

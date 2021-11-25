@@ -1,5 +1,5 @@
 ---
-title: "Get all hyperlinks"
+title: "Get all"
 type: docs
 url: /hyperlinks/get-all/
 aliases: [/get-hyperlink-from-excel-worksheet/,/get-hyperlinks-from-excel-worksheet/]
@@ -8,7 +8,7 @@ description: "Cells.Cloud API for Excel operate: get hyperlinks on an Excel file
 weight: 10
 ---
 
-This REST API indicates Get worksheet hyperlinks.
+This REST API indicates `get all hyperlinks` in worksheet.
  
 ## RSET API
  

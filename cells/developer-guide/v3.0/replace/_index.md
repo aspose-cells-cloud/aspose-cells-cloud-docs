@@ -1,48 +1,49 @@
 ---
-title: "Watermark"
+title: "Replace"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /watermark/
-keywords: "REST API, convert, spreadsheets, excel, Text Watermark."
-description: "Cells.Cloud API for Excel file adding text watermark."
+url: /replace/
+keywords: "REST API, replace, spreadsheets, excel."
+description: "Cells.Cloud API for Excel files Replace."
 weight: 100
 ---
 
-This REST API indicates add  `watermark` on Excel files.
+This REST API indicates `replace` data in an Excel file.
 
 ## RSET API
- 
+
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/watermark
- 
+
+POST https://api.aspose.cloud/v3.0/cells/replace
+
 ```
+
 The request parameters are: 
  
 | Parameter Name | Type | Path/Query String/HTTPBody | Description| 
 | :- | :- | :- |:- | 
 | file | file | formData | File to upload |
 | text | string | query |   |
-| color | string | query |   |
+| newtext | string | query |   |
+| password | string | query |   |
+| sheetname | string | query |   |
  
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LiteCells/PostWatermark) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LiteCells/PostReplace) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
  
 You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
- 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
  
 {{< tab tabNum="1" >}}
  
 ```bash
  
-curl -v "http://api.aspose.cloud/v3.0/cells/watermark?text=aspose.cells.cloud&color=004433ff" \
+curl -v "http://api.aspose.cloud/v3.0/cells/replace?text=1&newtext=aspose.cells.cloud" \
 -X POST \
--H "Content-Type: application/json" \
+-H "Content-Type: multipart/form-data" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>" \
 -F 'xxxxx1=@xxxx1.xlsx' \
 -F 'xxxxx2=@xxxx2.xlsx' 
-
 ```
  
 {{< /tab >}}
@@ -50,32 +51,35 @@ curl -v "http://api.aspose.cloud/v3.0/cells/watermark?text=aspose.cells.cloud&co
 {{< tab tabNum="2" >}}
  
 ```bash
+
 {
     "Files":
     [
         { 
-            "Filename":"xxxxx",
+            "Filename":"xxxx1",
             "FileSize":274022,
             "FileContent":"-----Base64String--------"
         },
         { 
-            "Filename":"xxxxx",
+            "Filename":"xxxx2",
             "FileSize":274022,
             "FileContent":"-----Base64String--------"
         }
     ]
 }
- 
+
 ```
  
 {{< /tab >}}
  
 {{< /tabs >}}
  
+
+
 ## Cloud SDK Family
- 
+
 Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
- 
+
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 
 
@@ -83,17 +87,18 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 {{< tab tabNum="1" >}}
 
-{{< gist "aspose-cloud" "1e994f29ef29e752b6d02a2c5b63ea9b" "Example-Watermark.cs" >}}
+{{< gist "aspose-cloud" "1e994f29ef29e752b6d02a2c5b63ea9b" "" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
-{{< gist "aspose-cloud" "af3fea45644d431483f6df52cf3bfe26" "Example-WaterMark.java" >}}
+{{< gist "aspose-cloud" "af3fea45644d431483f6df52cf3bfe26" "" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
-{{< gist "aspose-cloud" "5c1a68c4cea73845b221ff0d3b9ec9df" "Examples-PHP-LiteCells-Watermark.php" >}}
+{{< gist "aspose-cloud" "5c1a68c4cea73845b221ff0d3b9ec9df" "" >}}
+
 
 {{< /tab >}}
 
@@ -121,8 +126,10 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 
 {{< /tab >}}
+
 {{< tab tabNum="9" >}}
 
-{{< gist "aspose-cloud" "5161752550311c9baf73ffa0a811ea0b" "LiteCellsWatermark.py" >}}
+{{< gist "aspose-cloud" "5161752550311c9baf73ffa0a811ea0b" "" >}}
 {{< /tab >}}
+
 {{< /tabs >}}

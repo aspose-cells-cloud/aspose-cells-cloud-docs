@@ -1,5 +1,5 @@
 ---
-title: "Clear hyperlinks"
+title: "Clear"
 type: docs
 url: /hyperlinks/clear/
 aliases: [/add-hyperlinks-to-excel-worksheet/]
@@ -8,7 +8,7 @@ description: "Cells.Cloud API for Excel operate: clear hyperlinks on an Excel fi
 weight: 40
 ---
 
-This REST API indicates Delete all hyperlinks in worksheet.
+This REST API indicates `delete all hyperlinks` in worksheet.
  
 ## RSET API
  

@@ -9,50 +9,186 @@ weight: 100
 ---
 
 This REST API indicates  `search` text on Excel files.
+`## RSET API
+ 
 ```bash
-
-POST https://api.aspose.cloud/v3.0/cells/search
-
+ 
+POST http://api.aspose.cloud/v3.0/cells/search
+ 
 ```
-- **Query Parameter**
-
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-| text | string |  search context. |
-| sheetname | string | point to worksheet.|
-
-- **Request Body Parameter**
-
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-|excel file|data file | The data file save into the first part of the multipart content.|
-
-- **Response**
-
+The request parameters are: 
+ 
+| Parameter Name | Type | Path/Query String/HTTPBody | Description| 
+| :- | :- | :- |:- | 
+| file | file | formData | File to upload |
+| text | string | query |   |
+| password | string | query |   |
+| sheetname | string | query |   |
+ 
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LiteCells/PostSearch) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+ 
+You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+ 
+{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+ 
+{{< tab tabNum="1" >}}
+ 
 ```bash
-{
-    "Files":
-    [
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
-}
+ 
+curl -v "http://api.aspose.cloud/v3.0/cells/search?text=1" \
+-X POST \
+-H "Content-Type: application/json" \
+-H "Accept: application/json" \
+-H "Authorization: Bearer <jwt token>"\
+-F 'xxxxx1=@xxxx1.xlsx' \
+-F 'xxxxx2=@xxxx2.xlsx'  
 ```
-
-- **Cloud SDK Family**
-
+ 
+{{< /tab >}}
+ 
+{{< tab tabNum="2" >}}
+ 
+```bash
+[{
+	"Text": "12/31/1899 10:10:00 AM",
+	"link": {
+		"Href": "Book1.xlsx/worksheets/Sheet5",
+		"Rel": "parent"
+	}
+}, {
+	"Text": "12/31/1899 11:10:00 AM",
+	"link": {
+		"Href": "Book1.xlsx/worksheets/Sheet5",
+		"Rel": "parent"
+	}
+}, {
+	"Text": "12/31/1899 12:10:00 PM",
+	"link": {
+		"Href": "Book1.xlsx/worksheets/Sheet5",
+		"Rel": "parent"
+	}
+}, {
+	"Text": "12/31/1899 1:10:00 PM",
+	"link": {
+		"Href": "Book1.xlsx/worksheets/Sheet5",
+		"Rel": "parent"
+	}
+}, {
+	"Text": "12/31/1899 2:10:00 PM",
+	"link": {
+		"Href": "Book1.xlsx/worksheets/Sheet5",
+		"Rel": "parent"
+	}
+}, {
+	"Text": "12/31/1899 3:10:00 PM",
+	"link": {
+		"Href": "Book1.xlsx/worksheets/Sheet5",
+		"Rel": "parent"
+	}
+}, {
+	"Text": "12/31/1899 4:10:00 PM",
+	"link": {
+		"Href": "Book1.xlsx/worksheets/Sheet5",
+		"Rel": "parent"
+	}
+}, {
+	"Text": "12/31/1899 5:10:00 PM",
+	"link": {
+		"Href": "Book1.xlsx/worksheets/Sheet5",
+		"Rel": "parent"
+	}
+}, {
+	"Text": "12/31/1899 6:10:00 PM",
+	"link": {
+		"Href": "Book1.xlsx/worksheets/Sheet5",
+		"Rel": "parent"
+	}
+}, {
+	"Text": "12/31/1899 7:10:00 PM",
+	"link": {
+		"Href": "Book1.xlsx/worksheets/Sheet5",
+		"Rel": "parent"
+	}
+}, {
+	"Text": "12/31/1899 8:10:00 PM",
+	"link": {
+		"Href": "Book1.xlsx/worksheets/Sheet5",
+		"Rel": "parent"
+	}
+}, {
+	"Text": "12/31/1899 9:10:00 PM",
+	"link": {
+		"Href": "Book1.xlsx/worksheets/Sheet5",
+		"Rel": "parent"
+	}
+}, {
+	"Text": "12/31/1899 10:10:00 PM",
+	"link": {
+		"Href": "Book1.xlsx/worksheets/Sheet5",
+		"Rel": "parent"
+	}
+}, {
+	"Text": "12/31/1899 11:10:00 PM",
+	"link": {
+		"Href": "Book1.xlsx/worksheets/Sheet5",
+		"Rel": "parent"
+	}
+}, {
+	"Text": "18",
+	"link": {
+		"Href": "Book1.xlsx/worksheets/Sheet7",
+		"Rel": "parent"
+	}
+}, {
+	"Text": "18",
+	"link": {
+		"Href": "Book1.xlsx/worksheets/Sheet7",
+		"Rel": "parent"
+	}
+}, {
+	"Text": "18",
+	"link": {
+		"Href": "Book1.xlsx/worksheets/Sheet7",
+		"Rel": "parent"
+	}
+}, {
+	"Text": "18",
+	"link": {
+		"Href": "Book1.xlsx/worksheets/Sheet7",
+		"Rel": "parent"
+	}
+}, {
+	"Text": "18",
+	"link": {
+		"Href": "Book1.xlsx/worksheets/Sheet7",
+		"Rel": "parent"
+	}
+}, {
+	"Text": "18",
+	"link": {
+		"Href": "Book1.xlsx/worksheets/Sheet7",
+		"Rel": "parent"
+	}
+}, {
+	"Text": "18",
+	"link": {
+		"Href": "Book1.xlsx/worksheets/Sheet7",
+		"Rel": "parent"
+	}
+}]
+ 
+```
+ 
+{{< /tab >}}
+ 
+{{< /tabs >}}
+ 
+## Cloud SDK Family
+ 
 Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
-
+ 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
-
+ 
 
 {{< tabs tabTotal="9" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" tabName9="Python" >}}
 

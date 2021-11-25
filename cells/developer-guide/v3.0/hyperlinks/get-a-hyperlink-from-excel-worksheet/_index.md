@@ -1,5 +1,5 @@
 ---
-title: "Get a hyperlink"
+title: "Get"
 type: docs
 url: /hyperlinks/get/
 keywords: "REST API, hyperlinks, spreadsheets, excel"
@@ -7,7 +7,7 @@ description: "Cells.Cloud API for Excel operate: get a hyperlink on an Excel fil
 weight: 10
 ---
 
-TThis REST API indicates Get worksheet hyperlink by index.
+TThis REST API indicates `get worksheet hyperlink` by index.
  
 ## RSET API
  
