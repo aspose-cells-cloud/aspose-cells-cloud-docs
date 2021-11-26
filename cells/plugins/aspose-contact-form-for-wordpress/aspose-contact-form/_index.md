@@ -1,6 +1,6 @@
 ---
 title: "Aspose Contact Form"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Aspose Contact Form Document"
 type: docs
 url: /aspose-contact-form/
 description: "Create and manage contact forms using markup or with our sample templates. Your customers can fill forms on WordPress page and you will get the data via email. Aspose Contact Form also provides web form to Excel feature. Users can fill data in WordPress forms, which is then added to an Excel sheet. You can view data from all customers within your WordPress page."
@@ -27,7 +27,6 @@ Once downloaded, please follow these steps to install the module to your WordPre
 1. Click **Install Now**.
 1. After installation, click **Settings** to see the configuration page.
 ### **Using**
-After you have installed the Aspose Contact Form plugin it is really simple to start using it on your website. Please follow these simple steps to get started.
 After you have installed the Aspose Contact Form plugin it is really simple to start using it on your website. Please follow these simple steps to get started.
 *Using Form Builder*
 1. Make sure you are logged-in to a WordPress site with Admin level account.
