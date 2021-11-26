@@ -1,13 +1,13 @@
 ---
-title: "Aspose.Cells Cloud for WordPress"
-second_title: "Aspose.Cells Cloud Document"
+title: "Aspose Contact Form for WordPress"
+second_title: "Aspose Contact Form Document"
 type: docs
-url: /aspose-cells-cloud-for-wordpress/
-description: "Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on."
+url: /aspose-contact-form-for-wordpress/
+description: "Create and manage contact forms using markup or with our sample templates. Your customers can fill forms on WordPress page and you will get the data via email. Aspose Contact Form also provides web form to Excel feature. Users can fill data in WordPress forms, which is then added to an Excel sheet. You can view data from all customers within your WordPress page."
 weight: 10
 ---
 
 This section has following topics:
 
-- [Aspose.Cells Forms](/cells/aspose-cells-forms/)
-- [Aspose.Cells Cloud for WordPress - FAQs](/cells/aspose-cells-cloud-for-wordpress-faqs/)
+- [Aspose Contact Form](/cells/aspose-contact-form/)
+- [Aspose Contact Form for WordPress - FAQs](/cells/aspose-contact-form-for-wordpress-faqs/)
