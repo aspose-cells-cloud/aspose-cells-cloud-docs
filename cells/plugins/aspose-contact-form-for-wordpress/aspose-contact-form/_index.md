@@ -39,4 +39,4 @@ After you have installed the Aspose Contact Form plugin it is really simple to s
 1. Navigate to the page  "From Using MS Excel" from the admin left menu.
 1. Select Microsoft Excel Spreadsheet using WordPress Media Upload and click on <strong> "Generate Shortcodes" </strong> button. It will give data entry and listing shortcodes.
 1. Add Data Entry short code on a new page for information collection.
-1. Start doing data entry on the page. By clicking on "Save" button, it will save the information to the spreadsheet. <a href="http://www.aspose.com/blogs/wp-content/uploads/2015/02/screenshot4.png"><img class="alignleft size-full wp-image-20143" title="Aspose Contact Form - Data Entry page" src="http://www.aspose.com/blogs/wp-content/uploads/2015/02/screenshot4.png" alt="" width="600" height="299" /></a>
+1. Start doing data entry on the page. By clicking on "Save" button, it will save the information to the spreadsheet.
