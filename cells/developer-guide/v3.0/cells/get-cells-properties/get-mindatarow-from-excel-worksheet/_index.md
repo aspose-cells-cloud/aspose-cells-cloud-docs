@@ -12,9 +12,9 @@ This REST API indicates shows get a `mindatarow` in an Excel file when the `cell
 - **cURL Example**
 
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
-{{< tab tabNum="1" >}}
+{{< tab tabNum="11" >}}
 
 ```java
 
@@ -24,7 +24,7 @@ curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/
 
 {{< /tab >}}
 
-{{< tab tabNum="2" >}}
+{{< tab tabNum="12" >}}
 
 ```java
 
