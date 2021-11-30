@@ -37,9 +37,9 @@ You can use **cURL** command-line tool to access Aspose.Cells web services easil
 
 
 
-{{< tabs tabTotal="3" tabID="1" tabName1="Convert Workbook API"  tabName2="Get Workbook format API" tabName3="Save  Workbook as format API" >}}
+{{< tabs tabTotal="3" tabID="11" tabName11="Convert Workbook API"  tabName12="Get Workbook format API" tabName13="Save  Workbook as format API" >}}
 
-{{< tab tabNum="1" >}}
+{{< tab tabNum="11" >}}
 
 ```bash
 
@@ -50,7 +50,7 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/convert?format=pdf" -H "accept:
 ```
 
 {{< /tab >}}
-{{< tab tabNum="2" >}}
+{{< tab tabNum="12" >}}
 
 ```bash
 
@@ -61,7 +61,7 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/book1.xlsx?format=pdf" -H "acce
 
 {{< /tab >}}
 
-{{< tab tabNum="3" >}}
+{{< tab tabNum="13" >}}
 
 ```java
 

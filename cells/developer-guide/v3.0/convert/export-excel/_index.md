@@ -38,9 +38,9 @@ The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/G
 You can use **cURL** command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
 
 
-{{< tabs tabTotal="1" tabID="1" tabName1="Request" >}}
+{{< tabs tabTotal="1" tabID="11" tabName11="Request" >}}
 
-{{< tab tabNum="1" >}}
+{{< tab tabNum="11" >}}
 
 ```bash
 
