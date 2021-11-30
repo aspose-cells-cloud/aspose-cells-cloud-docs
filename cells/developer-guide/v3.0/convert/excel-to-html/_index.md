@@ -36,9 +36,9 @@ These APIs define a publicly accessible programming interface and lets you carry
 You can use **cURL** command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
 
 
-{{< tabs tabTotal="3" tabID="1" tabName1="convert" tabName2="saveas" tabName3="export">}}
+{{< tabs tabTotal="3" tabID="11" tabName11="convert" tabName12="saveas" tabName13="export">}}
 
-{{< tab tabNum="1" >}}
+{{< tab tabNum="11" >}}
 
 ```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/convert?format=html" \
@@ -51,7 +51,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/convert?format=html" \
 ```
 
 {{< /tab >}}
-{{< tab tabNum="2" >}}
+{{< tab tabNum="12" >}}
 
 ```bash
 
@@ -65,7 +65,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/book1.xlsx/saveas?newfilename=book1
 ```
 
 {{< /tab >}}
-{{< tab tabNum="3" >}}
+{{< tab tabNum="13" >}}
 
 ```bash
 

@@ -44,8 +44,8 @@ curl -v -X GET "https://api.aspose.cloud/v3.0/cells/storage/file/sample.docx" \
 The following code demonstrates how to upload a file to Cloud Storage with cURL.
 
 {{< nosnippet >}}
-{{< tabs tabTotal="2" tabID="4" tabName1="Request" tabName2="Response" >}}
-{{< tab tabNum="1" >}}
+{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+{{< tab tabNum="11" >}}
 
 ```bash
 curl  -v -X PUT "https://api.aspose.cloud/v3.0/cells/storage/file/sample.xlsx" \
@@ -56,7 +56,7 @@ curl  -v -X PUT "https://api.aspose.cloud/v3.0/cells/storage/file/sample.xlsx" \
 <p style="margin-top:-32px;font-size:80%;font-style:italic">To get a JWT token use this <a href="/cells/getting-started/quickstart/">instruction</a></p>
 
 {{< /tab >}}
-{{< tab tabNum="2" >}}
+{{< tab tabNum="12" >}}
 
 ```json
 {
@@ -81,7 +81,7 @@ curl  -v -X PUT "https://api.aspose.cloud/v3.0/cells/storage/file/sample.xlsx" \
 The following code demonstrates how to copy a file to a new location in Cloud Storage with cURL.
 
 {{< nosnippet >}}
-{{< tabs tabTotal="1" tabID="8" tabName1="Request" >}}
+{{< tabs tabTotal="1" tabID="1" tabName1="Request" >}}
 {{< tab tabNum="1" >}}
 
 ```bash
@@ -104,8 +104,8 @@ curl -v -X PUT "https://api.aspose.cloud/v3.0/cells/storage/file/copy/sample.xls
 The following code demonstrates how to move a file to a new location in Cloud Storage with cURL.
 
 {{< nosnippet >}}
-{{< tabs tabTotal="1" tabID="11" tabName1="Request" >}}
-{{< tab tabNum="1" >}}
+{{< tabs tabTotal="1" tabID="11" tabName11="Request" >}}
+{{< tab tabNum="11" >}}
 
 ```bash
 curl -v -X PUT "https://api.aspose.cloud/v3.0/cells/storage/file/move/input.xlsx/%2F?destPath=MyFolder" \
@@ -128,8 +128,8 @@ curl -v -X PUT "https://api.aspose.cloud/v3.0/cells/storage/file/move/input.xlsx
 The following code demonstrates how to delete a file from Cloud Storage with cURL.
 
 {{< nosnippet >}}
-{{< tabs tabTotal="1" tabID="14" tabName1="Request" >}}
-{{< tab tabNum="1" >}}
+{{< tabs tabTotal="1" tabID="14" tabName14="Request" >}}
+{{< tab tabNum="14" >}}
 
 ```bash
 curl -v -X DELETE "https://api.aspose.cloud/v3.0/cells/storage/file/input.xlsx" \
