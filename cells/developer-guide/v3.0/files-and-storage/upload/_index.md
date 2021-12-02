@@ -3,13 +3,13 @@ title: "Upload File"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /file/upload/
- "REST API, upload, download, delelte, spreadsheets, excel"
+keywords: "REST API, upload, download, delelte, spreadsheets, excel"
 description: "Cells.Cloud API for Excel operate: upload, download and delete excel file to storage."
 weight: 100
 ---
 
 This REST API indicates `upload file`.
- 
+{{% covsssssss  %}} 
 ## RSET API
  
 ```bash
