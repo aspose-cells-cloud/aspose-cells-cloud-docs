@@ -9,7 +9,7 @@ weight: 100
 ---
 
 This REST API indicates `upload file`.
-{{% testerror %}}
+
 ## RSET API
  
 ```bash
