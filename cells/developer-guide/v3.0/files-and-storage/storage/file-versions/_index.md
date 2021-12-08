@@ -2,7 +2,7 @@
 title: "File Versions"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /storage/exist/
+url: /storage/file-versions/
 keywords: "REST API, upload, download, delelte, copy, spreadsheets, excel"
 description: "Cells.Cloud API for Excel operate: get file versions."
 weight: 100
