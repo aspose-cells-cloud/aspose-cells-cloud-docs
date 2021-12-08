@@ -1,33 +1,30 @@
 ---
-title: "Copy File"
+title: "Storage Exist"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /file/copy/
+url: /storage/exist/
 keywords: "REST API, upload, download, delelte, copy, spreadsheets, excel"
-description: "Cells.Cloud API for Excel operate: upload, download and delete excel file to storage."
+description: "Cells.Cloud API for Excel operate: check if storage exist."
 weight: 100
 ---
 
-This REST API indicates `copy file`.
+This REST API indicates check if `storage exists`.
  
 ## RSET API
  
 ```bash
  
-PUT http://api.aspose.cloud/v3.0/cells/storage/file/copy/{srcPath}
+GET http://api.aspose.cloud/v3.0/cells/storage/{storageName}/exist
  
 ```
 The request parameters are: 
  
 | Parameter Name | Type | Path/Query String/HTTPBody | Description| 
 | :- | :- | :- |:- | 
-| srcPath | string | path | Source file path e.g. '/folder/file.ext' |
-| destPath | string | query | Destination file path |
-| srcStorageName | string | query | Source storage name |
-| destStorageName | string | query | Destination storage name |
-| versionId | string | query | File version ID to copy |
+| storageName | string | path | Storage name |
+
  
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/CopyFile) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Storage/StorageExists) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
  
 You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
  
@@ -37,7 +34,7 @@ You can use cURL command-line tool to access Aspose.Cells web services easily. T
  
 ```bash
  
-curl -v "http://api.aspose.cloud/v3.0/cells/storage/file/copy/Book1.xlsx?destPath=Book2.xlsx" \
+curl -v "http://api.aspose.cloud/v3.0/cells/storage/cellsstorage/exist" \
 -X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
@@ -51,8 +48,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/storage/file/copy/Book1.xlsx?destPat
  
 ```bash
 {
-"Code": 200,
-"Status": "OK"
+  "Exists": true
 }
  
 ```
