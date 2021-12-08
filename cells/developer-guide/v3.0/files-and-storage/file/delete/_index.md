@@ -1,44 +1,42 @@
 ---
-title: "Move File"
+title: "Delete File"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /file/move/
-keywords: "REST API, upload, download, delelte, copy, move, spreadsheets, excel"
+url: /file/delete/
+keywords: "REST API, upload, download, delelte, spreadsheets, excel"
 description: "Cells.Cloud API for Excel operate: upload, download and delete excel file to storage."
 weight: 100
 ---
 
-This REST API indicates Move file
+This REST API indicates `delete file`.
  
 ## RSET API
  
 ```bash
  
-PUT http://api.aspose.cloud/v3.0/cells/storage/file/move/{srcPath}
+DELETE http://api.aspose.cloud/v3.0/cells/storage/file/{path}
  
 ```
 The request parameters are: 
  
 | Parameter Name | Type | Path/Query String/HTTPBody | Description| 
 | :- | :- | :- |:- | 
-| srcPath | string | path | Source file path e.g. '/src.ext' |
-| destPath | string | query | Destination file path e.g. '/dest.ext' |
-| srcStorageName | string | query | Source storage name |
-| destStorageName | string | query | Destination storage name |
-| versionId | string | query | File version ID to move |
+| path | string | path | File path e.g. '/folder/file.ext' |
+| storageName | string | query | Storage name |
+| versionId | string | query | File version ID to delete |
  
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/MoveFile) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/File/DeleteFile) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
  
 You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
  
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
  
-{{< tab tabNum="1" >}}
+{{< tab tabNum="11" >}}
  
 ```bash
  
-curl -v "http://api.aspose.cloud/v3.0/cells/storage/file/move/Book2.xlsx?destPath=MoveBook2.xlsx" \
--X PUT \
+curl -v "http://api.aspose.cloud/v3.0/cells/storage/file/book12.xlsx" \
+-X DELETE \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
@@ -47,7 +45,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/storage/file/move/Book2.xlsx?destPat
  
 {{< /tab >}}
  
-{{< tab tabNum="2" >}}
+{{< tab tabNum="12" >}}
  
 ```bash
 {
@@ -67,4 +65,4 @@ Using an SDK is the best way to speed up the development. An SDK takes care of l
  
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
  
- 
+
