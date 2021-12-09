@@ -87,23 +87,94 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 
 
-{{< tabs tabTotal="3" tabID="3" tabName1="C#" tabName2="Go" tabName3="Swift" >}}
+{{< tabs tabTotal="3" tabID="3" tabName1="C#" tabName2="Java" tabName3="Go" >}}
 
 {{< tab tabNum="1" >}}
 
-{{< gist "aspose-cloud" "00860c8ef58cebd673190e304b6ddbdf" >}}
+```csharp
+
+Aspose.Cells.Cloud.SDK.Api.LiteCellsApi liteCellsApi = new Aspose.Cells.Cloud.SDK.Api.LiteCellsApi("your client id", "your client secret");
+IDictionary<string, Stream> mapFiles = new Dictionary<string, Stream>();
+mapFiles.Add("assemblytest.xlsx", File.OpenRead(@".\TestData\assemblytest.xlsx"));
+mapFiles.Add("datasource.xlsx", File.OpenRead(@".\TestData\datasource.xlsx"));
+Aspose.Cells.Cloud.SDK.Model.FilesResult filesResult = liteCellsApi.PostExport(files, "Workbook", "pdf");
+Assert.IsNotNull(filesResult);
+
+//2.
+Aspose.Cells.Cloud.SDK.Api.CellsApi cellsApi = new CellsApi("your client id", "your client secret");
+var response = cellsApi.CellsWorkbookPutConvertWorkbook( File.OpenRead(@".\TestData\datasource.xlsx"), "pdf", null, null);
+Assert.IsInstanceOf<System.IO.Stream>(response, "response is System.IO.Stream");
+
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< gist "aspose-cloud" "3f950cf3a2682cfa62dbfa542257b744" >}}
+```java
+// For complete examples and data files, please go to https://github.com/aspose-cells-cloud/aspose-cells-cloud-java/
+try{
+    LiteCellsApi liteApi = new LiteCellsApi(System.getenv("CellsCloudTestClientId"),System.getenv("CellsCloudTestClientSecret"));
+    String AssemblyTestXlsx = "assemblytest.xlsx";
+    String DataSourceXlsx = "datasource.xlsx";
+    HashMap<String,File> fileMap = new HashMap<String,File>();
+    fileMap.put(AssemblyTestXlsx , new File("TestData\\" + AssemblyTestXlsx));
+    fileMap.put(DataSourceXlsx , new File("TestData\\" + DataSourceXlsx) );
+    FilesResult response = liteApi.postExport(fileMap, "workbook","pdf");
+} catch (ApiException e) {
+    e.printStackTrace();
+}		
 
+//2. solution
+try{
+    CellsApi api = new CellsApi(System.getenv("CellsCloudTestClientId"),System.getenv("CellsCloudTestClientSecret"));
+    File response = api.cellsWorkbookPutConvertWorkbook(
+        new File("TestData\\Book1.xlsx"), "pdf", null, null);
+} catch (ApiException e) {
+    e.printStackTrace();
+}	
+
+```
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-{{< gist "aspose-cloud" "701965adeefa90bfc9b8ddf2bf7eba20" >}}
+```go
+
+LiteCellsAPI := NewLiteCellsApiService(clientId, clientSecret)
+
+var fileMap map[string]string
+fileMap = make(map[string]string)
+fileMap["Book1.xlsx"] = "TestData\\Book1.xlsx"
+fileMap["Book2.xlsx"] = "TestData\\Book2.xlsx"
+postOpts := new(PostExportOpts)
+postOpts.Format = "pdf"
+postOpts.ObjectType = "workbook"
+_, httpResponse, err := LiteCellsAPI.PostExport(fileMap, postOpts)
+if err != nil {
+	t.Error(err)
+} else if httpResponse.StatusCode < 200 || httpResponse.StatusCode > 299 {
+	t.Fail()
+} else {
+	fmt.Printf("\tTestCellsPostExport \n")
+}
+
+CellsAPI := NewCellsApiService(clientId, clientSecret)
+args := new(CellsWorkbookPutConvertWorkbookOpts)
+args.Format = "pdf"
+file, err := os.Open("TestData\\Book1.xlsx")
+if err != nil {
+	return
+}
+localVarReturnValue, httpResponse, err := CellsAPI.CellsWorkbookPutConvertWorkbook(file, args)
+if err != nil {
+	t.Error(err)
+} else if httpResponse.StatusCode < 200 || httpResponse.StatusCode > 299 {
+	t.Fail()
+} else {
+	fmt.Printf("\t TestCellsPutConvertWorkbook - %d\n", httpResponse.StatusCode)
+}
+```
 
 {{< /tab >}}
 
