@@ -71,10 +71,6 @@ mapFiles.Add("datasource.xlsx", File.OpenRead(@".\TestData\datasource.xlsx"));
 Aspose.Cells.Cloud.SDK.Model.FilesResult filesResult = liteCellsApi.PostExport(files, "Workbook", "pdf");
 Assert.IsNotNull(filesResult);
 
-//2.
-Aspose.Cells.Cloud.SDK.Api.CellsApi cellsApi = new CellsApi("your client id", "your client secret");
-var response = cellsApi.CellsWorkbookPutConvertWorkbook( File.OpenRead(@".\TestData\datasource.xlsx"), "pdf", null, null);
-Assert.IsInstanceOf<System.IO.Stream>(response, "response is System.IO.Stream");
 
 ```
 
@@ -95,15 +91,6 @@ try{
 } catch (ApiException e) {
     e.printStackTrace();
 }		
-
-//2. solution
-try{
-    CellsApi api = new CellsApi(System.getenv("CellsCloudTestClientId"),System.getenv("CellsCloudTestClientSecret"));
-    File response = api.cellsWorkbookPutConvertWorkbook(
-        new File("TestData\\Book1.xlsx"), "pdf", null, null);
-} catch (ApiException e) {
-    e.printStackTrace();
-}	
 
 ```
 {{< /tab >}}
@@ -130,21 +117,7 @@ if err != nil {
 	fmt.Printf("\tTestCellsPostExport \n")
 }
 
-CellsAPI := NewCellsApiService(clientId, clientSecret)
-args := new(CellsWorkbookPutConvertWorkbookOpts)
-args.Format = "pdf"
-file, err := os.Open("TestData\\Book1.xlsx")
-if err != nil {
-	return
-}
-localVarReturnValue, httpResponse, err := CellsAPI.CellsWorkbookPutConvertWorkbook(file, args)
-if err != nil {
-	t.Error(err)
-} else if httpResponse.StatusCode < 200 || httpResponse.StatusCode > 299 {
-	t.Fail()
-} else {
-	fmt.Printf("\t TestCellsPutConvertWorkbook - %d\n", httpResponse.StatusCode)
-}
+
 ```
 
 {{< /tab >}}
