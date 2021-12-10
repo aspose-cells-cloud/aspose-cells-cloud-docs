@@ -5,7 +5,7 @@ type: docs
 url: /merge/
 keywords: "REST API, convert, spreadsheets, excel, Merge  Excel file ."
 description: "Cells.Cloud API for Excel files Merge."
-weight: 100
+weight: 32
 ---
 
 This REST API indicates  `merge` multiple Excel files into an Excel file.
