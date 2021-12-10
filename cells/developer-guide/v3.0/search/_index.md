@@ -5,7 +5,7 @@ type: docs
 url: /search/
 keywords: "REST API, spreadsheets, excel, Search Excel file ."
 description: "Cells.Cloud API for Excel files Search."
-weight: 100
+weight: 33
 ---
 
 This REST API indicates  `search` text on Excel files.

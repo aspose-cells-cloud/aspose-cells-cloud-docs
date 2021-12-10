@@ -6,7 +6,7 @@ url: /import/
 aliases: [/import-data-in-excel-worksheet-without-using-storage/]
 keywords: "REST API,  spreadsheets, excel, Import."
 description: "Cells.Cloud API for Excel files import."
-weight: 100
+weight: 35
 ---
 
 This REST API indicates `import data` in an Excel file.

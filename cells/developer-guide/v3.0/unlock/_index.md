@@ -5,7 +5,7 @@ type: docs
 url: /unlock/
 keywords: "REST API, spreadsheets, excel, Unlock Excel file ."
 description: "Cells.Cloud API for Excel files Unlock."
-weight: 100
+weight: 36
 ---
 
 This REST API indicates  `unlock` Excel files.

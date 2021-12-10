@@ -5,7 +5,7 @@ type: docs
 url: /replace/
 keywords: "REST API, replace, spreadsheets, excel."
 description: "Cells.Cloud API for Excel files Replace."
-weight: 100
+weight: 34
 ---
 
 This REST API indicates `replace` data in an Excel file.
