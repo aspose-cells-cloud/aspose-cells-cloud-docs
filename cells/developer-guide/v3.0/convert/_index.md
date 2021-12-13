@@ -6,7 +6,7 @@ url: /convert/
 aliases: [/convert-excel/]
 keywords: "REST API, convert, spreadsheets, excel"
 description: "Cells.Cloud API for Excel operate: convert(export/saveas) excel file to other format file."
-weight: 100
+weight: 30
 ---
 
 If you have originally created an Excel file in a certain format, like [XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), and [CSV](https://docs.fileformat.com/spreadsheet/csv/), you may sometimes find it useful to convert the excel file to another format so you can take advantage of special features provided by it. For example, you may want to convert an excel file to [PDF](https://docs.fileformat.com/pdf/) to protect your contents from any unauthorized modifications and make it easy to read and share simultaneously. 

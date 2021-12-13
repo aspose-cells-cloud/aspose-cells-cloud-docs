@@ -1,39 +1,62 @@
 ---
-title: "Get OleObject from a Worksheet"
+title: "Get"
 type: docs
-url: /get-oleobject-from-a-worksheet/
+url: /oleobjects/get/
+aliases: [/get-oleobject-from-a-worksheet/]
 weight: 10
 ---
 
 This REST API `get` an `OLE-Object` from an Excel work sheet.
 
-- **REST API**
-
+This REST API indicates `get OLE object` with format.
+ 
+## RSET API
+ 
+```bash
+ 
+GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects/{objectNumber}?format={format}
+ 
+```
+The request parameters are: 
+ 
+| Parameter Name | Type | Path/Query String/HTTPBody | Description| 
+| :- | :- | :- |:- | 
+| name | string | path | Document name. |
+| sheetName | string | path | Worksheet name. |
+| objectNumber | integer | path | The object number. |
+| format | string | query | The exported object format. |
+| folder | string | query | The document folder. |
+| storageName | string | query | storage name. |
+ 
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/OleObjects/GetWorksheetOleObject) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+ 
+You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+ 
+{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+ 
+{{< tab tabNum="1" >}}
+ 
+```bash
+ 
+curl -v "http://api.aspose.cloud/v3.0/cells/Embeded_OleObject_Sample_Book1.xlsx/worksheets/Sheet1/oleobjects/0?format=png" \
+-X GET \
+-H "Content-Type: application/json" \
+-H "Accept: application/json" \
+-H "Authorization: Bearer <jwt token>"
+ 
+```
+ 
+{{< /tab >}}
+ 
+{{< tab tabNum="2" >}}
+ 
 ```bash
 
-GET |https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects/{objectNumber}
-
+Image file
+ 
 ```
 
-- **Path Parameter**
-
-
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-| name | string |  The workbook name. |
-| sheetName | string |  The worksheet name. |
-| objectNumber | int |  The ole object index. |
-
-- **Query Parameter**
-
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-|format|string| export format.|
-|folder|string|Original workbook folder.|
-|storageName|string|Storage name.|
-
-- **Response**
-
+OR
 
 ```bash
 {
@@ -43,25 +66,15 @@ GET |https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobject
     ......
     } 
 }
-
-```
-or
-
-```bash
-{
-    FILE
-}
-
-```
-
-- **Api Reference**   
-
- [GetWorksheetOleObject](https://apireference.aspose.cloud/cells/#/OleObjects/GetWorksheetOleObject)
-
-- **Cloud SDK Family**
-
+``` 
+{{< /tab >}}
+ 
+{{< /tabs >}}
+ 
+## Cloud SDK Family
+ 
 Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
-
+ 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="9" tabID="4" tabName1="C#" tabName2="PHP" tabName3="Ruby" tabName4="Python" tabName5="Node.js" tabName6="Android" tabName7="Objective C" tabName8="Perl" tabName9="Go" >}}

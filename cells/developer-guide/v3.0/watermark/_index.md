@@ -5,7 +5,7 @@ type: docs
 url: /watermark/
 keywords: "REST API, convert, spreadsheets, excel, Text Watermark."
 description: "Cells.Cloud API for Excel file adding text watermark."
-weight: 100
+weight: 39
 ---
 
 This REST API indicates add  `watermark` on Excel files.

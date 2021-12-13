@@ -9,11 +9,11 @@ description: "Cells.Cloud API for Excel operate: working with ole-objects on an 
 weight: 100
 ---
 
-## Working with OleObjects
+**Working with OleObjects**
 
-- [Get OleObject from a Worksheet](/cells/get-oleobject-from-a-worksheet/)
-- [Add OleObject to Excel Worksheet](/cells/add-oleobject-to-excel-worksheet/)
-- [Update a specific OleObject from Excel Worksheet](/cells/update-a-specific-oleobject-from-excel-worksheet/)
-- [Convert OleObject to Image](/cells/convert-oleobject-to-image/)
-- [Delete all OleObjects from Excel Worksheet](/cells/delete-all-oleobjects-from-excel-worksheet/)
-- [Delete a specific OleObject from Excel Worksheet](/cells/delete-a-specific-oleobject-from-excel-worksheet/)
+- [Get OleObject from a Worksheet](/cells/oleobjects/get/)
+- [Add OleObject to Excel Worksheet](/cells/oleobjects/add/)
+- [Update a specific OleObject from Excel Worksheet](/cells/oleobjects/update/)
+- [Convert OleObject to Image](/cells/oleobjects/convert/)
+- [Delete all OleObjects from Excel Worksheet](/cells/oleobjects/clear/)
+- [Delete a specific OleObject from Excel Worksheet](/cells/oleobjects/delete/)

@@ -5,7 +5,7 @@ type: docs
 url: /protect/
 keywords: "REST API, convert, spreadsheets, excel, Protect Excel file ."
 description: "Cells.Cloud API for Excel files Split."
-weight: 100
+weight: 36
 ---
 
 This REST API indicates  `protect` Excel files.

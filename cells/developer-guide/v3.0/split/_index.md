@@ -5,7 +5,7 @@ type: docs
 url: /split/
 keywords: "REST API, convert, spreadsheets, excel, Split Excel file ."
 description: "Cells.Cloud API for Excel files Split."
-weight: 100
+weight: 32
 ---
 
 This REST Api indicates `split` Excel files.

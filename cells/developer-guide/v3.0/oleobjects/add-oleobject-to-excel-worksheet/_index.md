@@ -1,136 +1,77 @@
 ---
-title: "Add OleObject to Excel Worksheet"
+title: "Add"
 type: docs
-url: /add-oleobject-to-excel-worksheet/
+url: /oleobjects/add/
+aliases: [/add-oleobject-to-excel-worksheet/]
 weight: 20
 ---
-
-## **Introduction**
-This example shows how to add an OleObject to a worksheet, using Aspose.Cells Cloud API in your applications. You can use our REST API with any language: .NET, Java, PHP, Ruby, Rails, Python, jQuery and many more.
-## **API Information**
-
-|**API**|**Type**|**Description**|**Resource Link**|
-| :- | :- | :- | :- |
-|/cells/{name}/worksheets/{sheetName}/oleobjects|PUT|Add an OLE object in worksheet|[PutWorksheetOleObject](https://apireference.aspose.cloud/cells/#/OleObjects/PutWorksheetOleObject)|
-### **cURL Example**
+This REST API indicates `add OLE object`.
+ 
+## RSET API
+ 
+```bash
+ 
+PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects
+ 
+```
+The request parameters are: 
+ 
+| Parameter Name | Type | Path/Query String/HTTPBody | Description| 
+| :- | :- | :- |:- | 
+| name | string | path | The workbook name. |
+| sheetName | string | path | The worsheet name. |
+| oleObject |  | body | Ole Object |
+| upperLeftRow | integer | query | 0 |
+| upperLeftColumn | integer | query | 0 |
+| height | integer | query | 0 |
+| width | integer | query | 0 |
+| oleFile | string | query | OLE filename |
+| imageFile | string | query | Image filename |
+| folder | string | query | The workbook folder. |
+| storageName | string | query | storage name. |
+ 
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/OleObjects/PutWorksheetOleObject) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+ 
+You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+ 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
-
+ 
 {{< tab tabNum="1" >}}
-
-```java
-
-curl -X PUT "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/oleobjects" -d '{"ImageSourceFullName":"aspose-logo.png", "IsAutoSize":true, "SourceFullName":"Sample_Book2.xls", "UpperLeftRow":15, "Top":10, "UpperLeftColumn":5, "Left":10,"Width":400, "Height":400}' -H "Content-Type: application/json" -H "Accept: application/json"
-
+ 
+```bash
+ 
+curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/oleobjects" \
+-X PUT \
+-H "Content-Type: application/json" \
+-H "Accept: application/json" \
+-H "Authorization: Bearer <jwt token>" \
+-d '{"ImageSourceFullName":"aspose-logo.png", "IsAutoSize":true, "SourceFullName":"Sample_Book2.xls", "UpperLeftRow":15, "Top":10, "UpperLeftColumn":5, "Left":10,"Width":400, "Height":400}'
+ 
 ```
-
+ 
 {{< /tab >}}
-
+ 
 {{< tab tabNum="2" >}}
-
-```java
-
+ 
+```bash
 {
-
-  "OleObject": {
-
-    "DisplayAsIcon": false,
-
-    "FileFormatType": "Default",
-
-    "ImageSourceFullName": "aspose-logo.png",
-
-    "IsAutoSize": false,
-
-    "IsLink": false,
-
-    "ProgID": "Excel.Sheet.8",
-
-    "SourceFullName": "Sample_Book2.xls",
-
-    "Name": "OleObject 1",
-
-    "MsoDrawingType": "OleObject",
-
-    "AutoShapeType": "PictureFrame",
-
-    "Placement": "Move",
-
-    "UpperLeftRow": 15,
-
-    "Top": 10,
-
-    "UpperLeftColumn": 5,
-
-    "Left": 10,
-
-    "LowerRightRow": 39,
-
-    "Bottom": 2,
-
-    "LowerRightColumn": 11,
-
-    "Right": 26,
-
-    "Width": 400,
-
-    "Height": 400,
-
-    "X": 330,
-
-    "Y": 275,
-
-    "RotationAngle": 0.0,
-
-    "AlternativeText": "",
-
-    "TextHorizontalAlignment": "Left",
-
-    "TextHorizontalOverflow": "Overflow",
-
-    "TextOrientationType": "NoRotation",
-
-    "TextVerticalOverflow": "Overflow",
-
-    "IsGroup": false,
-
-    "IsHidden": false,
-
-    "IsLockAspectRatio": false,
-
-    "IsLocked": false,
-
-    "IsPrintable": false,
-
-    "IsTextWrapped": false,
-
-    "IsWordArt": false,
-
-    "ZOrderPosition": 0,
-
-    "link": {
-
-      "Href": "http://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/oleobjects/0",
-
-      "Rel": "self"
-
-    }
-
-  },
-
-  "Code": "200",
-
-  "Status": "OK"
-
+"Code": 200,
+"Status": "OK"
 }
-
+ 
 ```
-
+ 
 {{< /tab >}}
-
+ 
 {{< /tabs >}}
-## **SDK Source**
-The Aspose.Cells Cloud SDKs can be downloaded from the following page: [Available SDKs](/cells/available-sdks/)
-### **SDK Examples**
+ 
+## Cloud SDK Family
+ 
+Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+ 
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+ 
+
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}

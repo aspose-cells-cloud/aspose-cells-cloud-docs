@@ -5,7 +5,7 @@ type: docs
 url: /assembly/
 keywords: "REST API, convert, spreadsheets, excel, Assembly."
 description: "Cells.Cloud API for Excel files Assembly."
-weight: 100
+weight: 200
 ---
 
 This REST API indicates `assembly` data in an Excel file.
