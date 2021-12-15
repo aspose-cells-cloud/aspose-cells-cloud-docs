@@ -49,13 +49,13 @@ The Aspose.Cells Cloud SDKs can be downloaded from the following page: [Availab
 
 {{< tab tabNum="1" >}}
 
-{{< gist "aspose-cloud" "52437300ed7949d3375da7504b40c4dc" >}}
+{{< gist "aspose-cells-cloud-gists" "52437300ed7949d3375da7504b40c4dc" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< gist "aspose-cloud" "ca139ec2081abc8cfe870a4788b57e09" >}}
+{{< gist "aspose-cells-cloud-gists" "ca139ec2081abc8cfe870a4788b57e09" >}}
 
 {{< /tab >}}
 

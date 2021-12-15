@@ -179,7 +179,7 @@ public void Run_PivotTable_PivotFilter()
 
 {{< tab tabNum="2" >}}
 
-{{< gist "aspose-cloud" "2a2aa16c2d9fd7e46b1b19f5fea5842b" >}}
+{{< gist "aspose-cells-cloud-gists" "2a2aa16c2d9fd7e46b1b19f5fea5842b" >}}
 
 {{< /tab >}}
 

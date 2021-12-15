@@ -74,19 +74,19 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 {{< tab tabNum="1" >}}
 
-{{< gist "aspose-cloud" "0742361abdbe07508ef0054a3b8a0bb4" >}}
+{{< gist "aspose-cells-cloud-gists" "0742361abdbe07508ef0054a3b8a0bb4" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< gist "aspose-cloud" "2462937944298a09a75b64f4c34889b7" >}}
+{{< gist "aspose-cells-cloud-gists" "2462937944298a09a75b64f4c34889b7" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-{{< gist "aspose-cloud" "e82a5628425ae5f59cd211c579b30073" >}}
+{{< gist "aspose-cells-cloud-gists" "e82a5628425ae5f59cd211c579b30073" >}}
 
 {{< /tab >}}
 

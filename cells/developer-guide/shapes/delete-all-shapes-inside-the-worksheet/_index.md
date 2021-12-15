@@ -49,31 +49,31 @@ The Aspose.Cells Cloud SDKs can be downloaded from the following page: [Availab
 
 {{< tab tabNum="1" >}}
 
-{{< gist "aspose-cloud" "1e994f29ef29e752b6d02a2c5b63ea9b" "Example-DeleteWorksheetShapes.cs">}}
+{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example-DeleteWorksheetShapes.cs">}}
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< gist "aspose-cloud" "af3fea45644d431483f6df52cf3bfe26" "Example-DeleteWorksheetShapes.java">}}
+{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example-DeleteWorksheetShapes.java">}}
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-{{< gist "aspose-cloud" "7effbad588b0c24b5f8ed2d7c7759b72" "Example-DeleteWorksheetShapes.pl">}}
+{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example-DeleteWorksheetShapes.pl">}}
 
 {{< /tab >}}
 
 {{< tab tabNum="4" >}}
 
-{{< gist "aspose-cloud" "a92427978a88b27918aeec5929efff97" >}}
+{{< gist "aspose-cells-cloud-gists" "a92427978a88b27918aeec5929efff97" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cloud" "f342d1e6f85982e0429fcd9bed8b11a8" "Example-DeleteWorksheetShapes.swift">}}
+{{< gist "aspose-cells-cloud-gists" "f342d1e6f85982e0429fcd9bed8b11a8" "Example-DeleteWorksheetShapes.swift">}}
 
 {{< /tab >}}
 
