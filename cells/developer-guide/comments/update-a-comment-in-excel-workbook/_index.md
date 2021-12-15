@@ -1,5 +1,5 @@
 ---
-title: "Update a comment"
+title: "Update"
 type: docs
 url: /comments/update/
 aliases: [/update-a-comment-in-excel-workbook/]

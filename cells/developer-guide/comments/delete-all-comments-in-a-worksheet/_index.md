@@ -1,5 +1,5 @@
 ---
-title: "Clear comments"
+title: "Clear"
 type: docs
 url: /comments/clear/
 aliases: [/delete-all-comments-in-a-worksheet/]

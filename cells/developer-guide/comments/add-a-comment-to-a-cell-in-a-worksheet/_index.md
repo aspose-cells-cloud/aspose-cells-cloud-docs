@@ -1,5 +1,5 @@
 ---
-title: "Add a comment"
+title: "Add"
 type: docs
 url: /comments/add/
 aliases: [/add-a-comment-to-a-cell-in-a-worksheet/]

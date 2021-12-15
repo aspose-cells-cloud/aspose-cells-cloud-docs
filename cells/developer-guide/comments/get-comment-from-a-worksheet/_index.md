@@ -1,5 +1,5 @@
 ---
-title: "Get a comment"
+title: "Get"
 type: docs
 url: /comments/get/
 aliases: [/get-comment-from-a-worksheet/]

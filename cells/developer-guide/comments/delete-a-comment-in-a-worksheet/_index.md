@@ -1,5 +1,5 @@
 ---
-title: "Delete a comment"
+title: "Delete"
 type: docs
 url: /comments/delete/
 aliases: [/delete-a-comment-in-a-worksheet/]
