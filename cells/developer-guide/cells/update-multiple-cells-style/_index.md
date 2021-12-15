@@ -74,19 +74,19 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 {{< tab tabNum="1" >}}
 
-{{< gist "aspose-cloud" "5c1a68c4cea73845b221ff0d3b9ec9df" "Examples-PHP-Cells-PostUpdateWorksheetCellStyle-.php" >}}
+{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-Cells-PostUpdateWorksheetCellStyle-.php" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< gist "aspose-cloud" "3c5c9f9fff9898bb8251aa7ee9191641" "Examples-Ruby-Cells-post_update_worksheet_cell_style-.rb" >}}
+{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Examples-Ruby-Cells-post_update_worksheet_cell_style-.rb" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-{{< gist "aspose-cloud" "59dae0a6697e3c68ade244ed28b27d10" >}}
+{{< gist "aspose-cells-cloud-gists" "59dae0a6697e3c68ade244ed28b27d10" >}}
 
 {{< /tab >}}
 

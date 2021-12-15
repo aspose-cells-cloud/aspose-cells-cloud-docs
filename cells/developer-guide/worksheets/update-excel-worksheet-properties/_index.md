@@ -71,38 +71,38 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 {{< tab tabNum="1" >}}
 
-{{< gist "" "f21c488545888fe78bbd97e47790246b" "Examples-.NET-CellsWorksheetsPostUpdateWorksheetProperty.cs" >}}
+{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Examples-.NET-CellsWorksheetsPostUpdateWorksheetProperty.cs" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< gist "aspose-cloud" "af3fea45644d431483f6df52cf3bfe26" "Examples-Java-worksheet-UpdateWorksheetProperties-update-worksheet-properties.java" >}}
+{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Examples-Java-worksheet-UpdateWorksheetProperties-update-worksheet-properties.java" >}}
 
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-{{< gist "aspose-cloud" "5c1a68c4cea73845b221ff0d3b9ec9df" "Examples-PHP-Worksheet-PostUpdateWorksheetProperty-.php" >}}
+{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-Worksheet-PostUpdateWorksheetProperty-.php" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="4" >}}
 
-{{< gist "aspose-cloud" "3c5c9f9fff9898bb8251aa7ee9191641" "Examples-Ruby-Worksheet-update_worksheet_property-.rb" >}}
+{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Examples-Ruby-Worksheet-update_worksheet_property-.rb" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cloud" "04e9dd952c704f334a4eceb3925d479e" "Examples-Node.js-SDK-Worksheet-UpdateWorksheetProperties-1.js" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Examples-Node.js-SDK-Worksheet-UpdateWorksheetProperties-1.js" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
 
-{{< gist "aspose-cloud" "9d725d4678edaac53f95c5208e17783c" "Examples-Android-worksheet-UpdateWorksheetProperties-update-worksheet-properties.java" >}}
+{{< gist "aspose-cells-cloud-gists" "9d725d4678edaac53f95c5208e17783c" "Examples-Android-worksheet-UpdateWorksheetProperties-update-worksheet-properties.java" >}}
 
 {{< /tab >}}
 
@@ -112,13 +112,13 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 {{< tab tabNum="8" >}}
 
-{{< gist "aspose-cloud" "7effbad588b0c24b5f8ed2d7c7759b72" "Examples-Perl-Worksheet-UpdateWorksheetProperties-1.pl" >}}
+{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Examples-Perl-Worksheet-UpdateWorksheetProperties-1.pl" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="9" >}}
 
-{{< gist "aspose-cloud" "ce38cb4feb118132fada7801c7f5cd43" >}}
+{{< gist "aspose-cells-cloud-gists" "ce38cb4feb118132fada7801c7f5cd43" >}}
 
 {{< /tab >}}
 

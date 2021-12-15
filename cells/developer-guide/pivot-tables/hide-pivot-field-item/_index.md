@@ -140,7 +140,7 @@ public void Run_PivotTable_NeedReCalculate()
 
 {{< tab tabNum="2" >}}
 
-{{< gist "aspose-cloud" "a0bec26a8274b9f7cb514015843a214e" >}}
+{{< gist "aspose-cells-cloud-gists" "a0bec26a8274b9f7cb514015843a214e" >}}
 
 {{< /tab >}}
 

@@ -416,13 +416,13 @@ The Aspose.Cells Cloud SDKs can be downloaded from the following page: [Availab
 
 {{< tab tabNum="1" >}}
 
-{{< gist "aspose-cloud" "f21c488545888fe78bbd97e47790246b" "Examples-.NET-CellsRangesGetWorksheetCellsRangeValue.cs" >}}
+{{< gist "aspose-cells-cloud-gists" "f21c488545888fe78bbd97e47790246b" "Examples-.NET-CellsRangesGetWorksheetCellsRangeValue.cs" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< gist "aspose-cloud" "b417b3f20d7f1825c009e9140715af02" >}}
+{{< gist "aspose-cells-cloud-gists" "b417b3f20d7f1825c009e9140715af02" >}}
 
 {{< /tab >}}
 

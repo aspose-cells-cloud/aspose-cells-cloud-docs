@@ -355,7 +355,7 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 
 
-{{< gist "aspose-cloud" "e1b22ed45ca780faa3231c3a8c60ddd4" >}}
+{{< gist "aspose-cells-cloud-gists" "e1b22ed45ca780faa3231c3a8c60ddd4" >}}
 
 {{< /tab >}}
 

@@ -74,37 +74,37 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 {{< tab tabNum="1" >}}
 
-{{< gist "aspose-cloud" "1e994f29ef29e752b6d02a2c5b63ea9b" "Examples-DotNet-CSharp-Charts-UpdateChartProperties-1.cs" >}}
+{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Examples-DotNet-CSharp-Charts-UpdateChartProperties-1.cs" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< gist "aspose-cloud" "5c1a68c4cea73845b221ff0d3b9ec9df" "Examples-PHP-Charts-CellsChartsPostWorksheetChart-.php" >}}
+{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-Charts-CellsChartsPostWorksheetChart-.php" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-{{< gist "" "53fb9eb3d3d0d6e836078d4677a51ab5" "Examples-Ruby-Charts-cells_charts_post_worksheet_chart-.rb" >}}
+{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Examples-Ruby-Charts-cells_charts_post_worksheet_chart-.rb" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="4" >}}
 
-{{< gist "aspose-cloud" "04e9dd952c704f334a4eceb3925d479e" "Examples-Node.js-SDK-Charts-UpdateChartProperties-1.js" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Examples-Node.js-SDK-Charts-UpdateChartProperties-1.js" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cloud" "7effbad588b0c24b5f8ed2d7c7759b72" "Examples-Perl-Charts-UpdateChartProperties-1.pl" >}}
+{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Examples-Perl-Charts-UpdateChartProperties-1.pl" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
 
-{{< gist "aspose-cloud" "d554e51920e174943a60f4343a97e203" >}}
+{{< gist "aspose-cells-cloud-gists" "d554e51920e174943a60f4343a97e203" >}}
 
 {{< /tab >}}
 

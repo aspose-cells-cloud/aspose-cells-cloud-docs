@@ -294,13 +294,13 @@ The Aspose.Cells Cloud SDKs can be downloaded from the following page: [Availab
 
 
 
-{{< gist "aspose-cloud" "1e994f29ef29e752b6d02a2c5b63ea9b" "Examples-DotNet-CSharp-ConditionalFormatting-GetWorksheetConditionalFormatting-1.cs" >}}
+{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Examples-DotNet-CSharp-ConditionalFormatting-GetWorksheetConditionalFormatting-1.cs" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< gist "aspose-cloud" "af3fea45644d431483f6df52cf3bfe26" "Examples-Java-cells-get-conditional-formatting-worksheet.java" >}}
+{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Examples-Java-cells-get-conditional-formatting-worksheet.java" >}}
 
 
 
@@ -314,7 +314,7 @@ The Aspose.Cells Cloud SDKs can be downloaded from the following page: [Availab
 
 {{< tab tabNum="4" >}}
 
-{{< gist "aspose-cloud" "3c5c9f9fff9898bb8251aa7ee9191641" "Examples-Ruby-ConditionalFormatting-get_worksheet_conditional_formattings-.rb" >}}
+{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Examples-Ruby-ConditionalFormatting-get_worksheet_conditional_formattings-.rb" >}}
 
 {{< /tab >}}
 
@@ -322,7 +322,7 @@ The Aspose.Cells Cloud SDKs can be downloaded from the following page: [Availab
 
 
 
-{{< gist "aspose-cloud" "04e9dd952c704f334a4eceb3925d479e" "Examples-Node.js-SDK-ConditionalFormatting-GetWorksheetConditionalFormatting-1.js" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Examples-Node.js-SDK-ConditionalFormatting-GetWorksheetConditionalFormatting-1.js" >}}
 
 {{< /tab >}}
 
@@ -348,13 +348,13 @@ The Aspose.Cells Cloud SDKs can be downloaded from the following page: [Availab
 
 
 
-{{< gist "aspose-cloud" "7effbad588b0c24b5f8ed2d7c7759b72" "Examples-Perl-ConditionalFormatting-GetWorksheetConditionalFormatting-1.pl" >}}
+{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Examples-Perl-ConditionalFormatting-GetWorksheetConditionalFormatting-1.pl" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="10" >}}
 
-{{< gist "aspose-cloud" "b2a10009556f14d1f939a8433925c5f6" >}}
+{{< gist "aspose-cells-cloud-gists" "b2a10009556f14d1f939a8433925c5f6" >}}
 
 {{< /tab >}}
 

@@ -1,34 +1,53 @@
 ---
-title: "Get Horizontal Page Breaks inside Worksheet"
+title: "Get Horizontal Page Breaks"
 type: docs
-url: /get-horizontal-page-breaks-inside-worksheet/
+url: /page-breaks/get-horizontal-page-breaks/
+aliases: [/get-horizontal-page-breaks-inside-worksheet/]
 weight: 10
 ---
 
-## **Introduction**
-This example shows how to get Horizontal Page Breaks inside Worksheet using Aspose.Cells Cloud API. You can use our REST API with any language: .NET, Java, PHP, Ruby, Rails, Python, jQuery and many more.
-## **API Information**
-
-|**API**|**Type**|**Description**|**Resource Link**|
-| :- | :- | :- | :- |
-|/cells/{name}/worksheets/{sheetName}/horizontalpagebreaks|GET|Get horizontal page breaks descripton in worksheet|[GetHorizontalPageBreaks](https://apireference.aspose.cloud/cells/#/PageBreaks/GetHorizontalPageBreaks)|
-### **cURL Example**
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
-
-{{< tab tabNum="1" >}}
-
-```java
-
-curl -X GET "http://api.aspose.cloud/v3.0/cells/sampleExcelPageBreaks.xlsx/worksheets/Sheet1/horizontalpagebreaks" -H "Content-Type: application/json" -H "Accept: application/json"
-
+This REST API indicates getting horizontal page breaks. 
+ 
+ 
+## RSET API
+ 
+```bash
+ 
+GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/horizontalpagebreaks
+ 
 ```
-
+The request parameters are: 
+ 
+| Parameter Name | Type | Path/Query String/HTTPBody | Description| 
+| :- | :- | :- |:- | 
+| name | string | path |   |
+| sheetName | string | path |   |
+| folder | string | query |   |
+| storageName | string | query | storage name. |
+ 
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PageBreaks/GetHorizontalPageBreaks) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+ 
+You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+ 
+{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+ 
+{{< tab tabNum="1" >}}
+ 
+```bash
+ 
+curl -v "http://api.aspose.cloud/v3.0/cells/sampleExcelPageBreaks.xlsx/worksheets/Sheet1/horizontalpagebreaks" \
+-X GET \
+-H "Content-Type: application/json" \
+-H "Accept: application/json" \
+-H "Authorization: Bearer <jwt token>"
+ 
+```
+ 
 {{< /tab >}}
-
+ 
 {{< tab tabNum="2" >}}
-
-```java
-
+ 
+```bash
 {
 
   "HorizontalPageBreaks": {
@@ -66,32 +85,42 @@ curl -X GET "http://api.aspose.cloud/v3.0/cells/sampleExcelPageBreaks.xlsx/works
   "Status": "OK"
 
 }
-
+ 
 ```
-
+ 
 {{< /tab >}}
-
+ 
 {{< /tabs >}}
-## **SDK Source**
-The Aspose.Cells Cloud SDKs can be downloaded from the following page: [Available SDKs](/cells/available-sdks/)
-### **SDK Examples**
+ 
+## Cloud SDK Family
+ 
+Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+ 
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+ 
+## Cloud SDK Family
+ 
+Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+ 
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+
 {{< tabs tabTotal="3" tabID="4" tabName1="C#" tabName2="Go" tabName3="Swift" >}}
 
 {{< tab tabNum="1" >}}
 
-{{< gist "aspose-cloud" "036a802d3567e6f9f4600a2ffed6044e" >}}
+{{< gist "aspose-cells-cloud-gists" "036a802d3567e6f9f4600a2ffed6044e" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< gist "aspose-cloud" "0b12bf6e926b544dab3a9f6da53208aa" >}}
+{{< gist "aspose-cells-cloud-gists" "0b12bf6e926b544dab3a9f6da53208aa" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-{{< gist "aspose-cloud" "4cba8faa56ffe9e4e73f1b2686c3917b" >}}
+{{< gist "aspose-cells-cloud-gists" "4cba8faa56ffe9e4e73f1b2686c3917b" >}}
 
 {{< /tab >}}
 

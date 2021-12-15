@@ -53,43 +53,43 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 {{< tab tabNum="1" >}}
 
-{{< gist "aspose-cloud" "c26975dacdc050fccd6d003b487b39d9" >}}
+{{< gist "aspose-cells-cloud-gists" "c26975dacdc050fccd6d003b487b39d9" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< gist "aspose-cloud" "a555abf44e31590c6ae3260c1bcd3066" >}}
+{{< gist "aspose-cells-cloud-gists" "a555abf44e31590c6ae3260c1bcd3066" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-{{< gist "aspose-cloud" "3c7008ae0d54a40cd0c92a1273bfd7d5" >}}
+{{< gist "aspose-cells-cloud-gists" "3c7008ae0d54a40cd0c92a1273bfd7d5" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="4" >}}
 
-{{< gist "aspose-cloud" "bd5c03f09104b9d59941d6583117dce2" >}}
+{{< gist "aspose-cells-cloud-gists" "bd5c03f09104b9d59941d6583117dce2" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cloud" "64a33901d4f45c9edf31ab83e816981e" >}}
+{{< gist "aspose-cells-cloud-gists" "64a33901d4f45c9edf31ab83e816981e" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
 
-{{< gist "aspose-cloud" "daa94750c751cb595de0b8a357c051ed" >}}
+{{< gist "aspose-cells-cloud-gists" "daa94750c751cb595de0b8a357c051ed" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
 
-{{< gist "aspose-cloud" "a4bb7786b0d6bc98d8b51da49a687cf5" >}}
+{{< gist "aspose-cells-cloud-gists" "a4bb7786b0d6bc98d8b51da49a687cf5" >}}
 
 {{< /tab >}}
 

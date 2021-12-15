@@ -131,31 +131,31 @@ The Aspose.Cells Cloud SDKs can be downloaded from the following page: [Availab
 
 {{< tab tabNum="1" >}}
 
-{{< gist "aspose-cloud" "1e994f29ef29e752b6d02a2c5b63ea9b" "Example-PutWorksheetShape.cs">}}
+{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example-PutWorksheetShape.cs">}}
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< gist "aspose-cloud" "af3fea45644d431483f6df52cf3bfe26" "Example-PutWorksheetShape.java">}}
+{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example-PutWorksheetShape.java">}}
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-{{< gist "aspose-cloud" "7effbad588b0c24b5f8ed2d7c7759b72" "Example-PutWorksheetShape.pl">}}
+{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example-PutWorksheetShape.pl">}}
 
 {{< /tab >}}
 
 {{< tab tabNum="4" >}}
 
-{{< gist "aspose-cloud" "34f478cae8c02848db0e376bd592a087" >}}
+{{< gist "aspose-cells-cloud-gists" "34f478cae8c02848db0e376bd592a087" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cloud" "f342d1e6f85982e0429fcd9bed8b11a8" "Example-PutWorksheetShape.swift">}}
+{{< gist "aspose-cells-cloud-gists" "f342d1e6f85982e0429fcd9bed8b11a8" "Example-PutWorksheetShape.swift">}}
 
 {{< /tab >}}
 

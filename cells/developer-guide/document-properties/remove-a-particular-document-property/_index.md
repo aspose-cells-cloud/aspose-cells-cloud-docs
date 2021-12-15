@@ -75,13 +75,13 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 {{< tab tabNum="1" >}}
 
-{{< gist "aspose-cloud" "1e994f29ef29e752b6d02a2c5b63ea9b" "Examples-DotNET-CSharp-Document-Properties-RemoveParticularProperty-1.cs" >}}
+{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Examples-DotNET-CSharp-Document-Properties-RemoveParticularProperty-1.cs" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< gist "aspose-cloud" "af3fea45644d431483f6df52cf3bfe26" "Examples-Java-properties-RemoveParticularProperty-remove-particular-property.java" >}}
+{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Examples-Java-properties-RemoveParticularProperty-remove-particular-property.java" >}}
 
 {{< /tab >}}
 
@@ -91,25 +91,25 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 {{< tab tabNum="4" >}}
 
-{{< gist "aspose-cloud" "3c5c9f9fff9898bb8251aa7ee9191641" "Examples-Ruby-Document-delete_document_property-.rb" >}}
+{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Examples-Ruby-Document-delete_document_property-.rb" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cloud" "5161752550311c9baf73ffa0a811ea0b" "RemoveParticularDocumentProperty.py" >}}
+{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "RemoveParticularDocumentProperty.py" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
 
-{{< gist "aspose-cloud" "04e9dd952c704f334a4eceb3925d479e" "Examples-Node.js-SDK-Document-Properties-RemoveParticularProperty-1.js" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Examples-Node.js-SDK-Document-Properties-RemoveParticularProperty-1.js" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
 
-{{< gist "aspose-cloud" "9d725d4678edaac53f95c5208e17783c" "Examples-Android-properties-RemoveParticularProperty-remove-particular-property.java" >}}
+{{< gist "aspose-cells-cloud-gists" "9d725d4678edaac53f95c5208e17783c" "Examples-Android-properties-RemoveParticularProperty-remove-particular-property.java" >}}
 
 {{< /tab >}}
 
@@ -119,19 +119,19 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 {{< tab tabNum="9" >}}
 
-{{< gist "aspose-cloud" "7effbad588b0c24b5f8ed2d7c7759b72" "Examples-Perl-Document-Properties-RemoveParticularProperty-1.pl" >}}
+{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Examples-Perl-Document-Properties-RemoveParticularProperty-1.pl" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="10" >}}
 
-{{< gist "aspose-cloud" "998e9933fd0e00942039175ebc85a76f" >}}
+{{< gist "aspose-cells-cloud-gists" "998e9933fd0e00942039175ebc85a76f" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="11" >}}
 
-{{< gist "aspose-cloud" "1d4dd557dfa1834527376159043d428b" >}}
+{{< gist "aspose-cells-cloud-gists" "1d4dd557dfa1834527376159043d428b" >}}
 
 {{< /tab >}}
 
