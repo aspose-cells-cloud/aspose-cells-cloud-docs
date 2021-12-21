@@ -1,50 +1,73 @@
 ---
-title: "Delete a specific Picture from Excel Worksheet"
+title: "Delete Picture"
 type: docs
-url: /delete-a-specific-picture-from-excel-worksheet/
+url: /pictures/delete/
+aliases: [/delete-a-specific-picture-from-excel-worksheet/]
 weight: 60
 ---
 
-## **Introduction**
-This example shows how remove an image from a worksheet, using Aspose.Cells Cloud API in your applications. You can use our REST API with any language: .NET, Java, PHP, Ruby, Rails, Python, jQuery and many more.
-## **API Information**
-
-|**API**|**Type**|**Description**|**Resource Link**|
-| :- | :- | :- | :- |
-|/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}|DELETE|Delete an image from a Excel Woksheet|[DeleteWorksheetPicture](https://apireference.aspose.cloud/cells/#/Pictures/DeleteWorksheetPicture)|
-### **cURL Example**
+This REST API indicates `delete` a picture object in worksheet
+ 
+## RSET API
+ 
+```bash
+ 
+DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}
+ 
+```
+The request parameters are: 
+ 
+| Parameter Name | Type | Path/Query String/HTTPBody | Description| 
+| :- | :- | :- |:- | 
+| name | string | path | The workbook name. |
+| sheetName | string | path | The worsheet name. |
+| pictureIndex | integer | path | Picture index |
+| folder | string | query | The workbook folder. |
+| storageName | string | query | storage name. |
+ 
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Pictures/DeleteWorksheetPicture) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+ 
+You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+ 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
-
+ 
 {{< tab tabNum="1" >}}
-
-```java
-
-curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/pictures/1" -H "accept: application/json"
-
+ 
+```bash
+ 
+curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/pictures/1" \
+-X DELETE \
+-H "Content-Type: application/json" \
+-H "Accept: application/json" \
+-H "Authorization: Bearer <jwt token>"
+ 
 ```
-
+ 
 {{< /tab >}}
-
+ 
 {{< tab tabNum="2" >}}
-
-```java
-
+ 
+```bash
 {
-
-  "Code": 200,
-
-  "Status": "OK"
-
+"Code": 200,
+"Status": "OK"
 }
-
+ 
 ```
-
+ 
 {{< /tab >}}
-
+ 
 {{< /tabs >}}
-## **SDK Source**
-The Aspose.Cells Cloud SDKs can be downloaded from the following page: [Available SDKs](/cells/available-sdks/)
-### **SDK Examples**
+ 
+## Cloud SDK Family
+ 
+Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+ 
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+ 
+
+
+
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}
