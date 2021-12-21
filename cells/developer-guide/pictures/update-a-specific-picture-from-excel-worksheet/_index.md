@@ -1,156 +1,73 @@
 ---
-title: "Update a specific Picture from Excel Worksheet"
+title: "Update Picture"
 type: docs
-url: /update-a-specific-picture-from-excel-worksheet/
-weight: 30
+url: /pictures/update/
+aliases: [/update-a-specific-picture-from-excel-workshee/]
+weight: 70
 ---
 
-## **Introduction**
-This example shows how to update a image in a worksheet, using Aspose.Cells Cloud API in your applications. You can use our REST API with any language: .NET, Java, PHP, Ruby, Rails, Python, jQuery and many more.
-## **API Information**
-
-|**API**|**Type**|**Description**|**Resource Link**|
-| :- | :- | :- | :- |
-|/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}|POST|Update picture in an Excel Worksheet|[PostWorkSheetPicture](https://apireference.aspose.cloud/cells/#/Pictures/PostWorkSheetPicture)|
-### **cURL Example** 
+This REST API indicates `update` picture by pricture index for an Excel worksheet.
+ 
+## RSET API
+ 
+```bash
+ 
+POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}
+ 
+```
+The request parameters are: 
+ 
+| Parameter Name | Type | Path/Query String/HTTPBody | Description| 
+| :- | :- | :- |:- | 
+| name | string | path | Document name. |
+| sheetName | string | path | Worksheet name. |
+| pictureIndex | integer | path | The picture's index. |
+| picture |  | body | Picture object |
+| folder | string | query | The document folder. |
+| storageName | string | query | storage name. |
+ 
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Pictures/PostWorksheetPicture) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+ 
+You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+ 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
-
+ 
 {{< tab tabNum="1" >}}
-
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/pictures/1" -H "accept: application/json" -H "Content-Type: application/json" -d "{ \"UpperLeftRow\": 10, \"Top\": 0, \"UpperLeftColumn\": 1, \"Left\": 0, \"LowerRightRow\": 0, \"Bottom\": 0, \"LowerRightColumn\": 3, \"ImageFormat\": \"jpg\", \"SourceFullName\": \"download.jpg\"}"
-
+ 
+```bash
+ 
+curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/pictures/1" \
+-X POST \
+-d "{ \"UpperLeftRow\": 10, \"Top\": 0, \"UpperLeftColumn\": 1, \"Left\": 0, \"LowerRightRow\": 0, \"Bottom\": 0, \"LowerRightColumn\": 3, \"ImageFormat\": \"jpg\", \"SourceFullName\": \"download.jpg\"}" \
+-H "Content-Type: application/json" \
+-H "Accept: application/json" \
+-H "Authorization: Bearer <jwt token>"
+ 
 ```
-
+ 
 {{< /tab >}}
-
+ 
 {{< tab tabNum="2" >}}
-
-```java
-
+ 
+```bash
 {
-
-  "Picture": {
-
-    "BorderLineColor": {
-
-      "A": 255,
-
-      "R": 0,
-
-      "G": 0,
-
-      "B": 0
-
-    },
-
-    "BorderWeight": 0.75,
-
-    "OriginalHeight": 0,
-
-    "OriginalWidth": 0,
-
-    "ImageFormat": "Unknown",
-
-    "SourceFullName": "download.jpg",
-
-    "Name": "Picture 2",
-
-    "MsoDrawingType": null,
-
-    "AutoShapeType": null,
-
-    "Placement": "Move",
-
-    "UpperLeftRow": 10,
-
-    "Top": 0,
-
-    "UpperLeftColumn": 1,
-
-    "Left": 0,
-
-    "LowerRightRow": 15,
-
-    "Bottom": 19,
-
-    "LowerRightColumn": 3,
-
-    "Right": 51,
-
-    "Width": 179,
-
-    "Height": 119,
-
-    "X": 64,
-
-    "Y": 200,
-
-    "RotationAngle": 0,
-
-    "HtmlText": null,
-
-    "Text": null,
-
-    "AlternativeText": "",
-
-    "TextHorizontalAlignment": null,
-
-    "TextHorizontalOverflow": null,
-
-    "TextOrientationType": null,
-
-    "TextVerticalAlignment": null,
-
-    "TextVerticalOverflow": null,
-
-    "IsGroup": false,
-
-    "IsHidden": false,
-
-    "IsLockAspectRatio": true,
-
-    "IsLocked": true,
-
-    "IsPrintable": true,
-
-    "IsTextWrapped": null,
-
-    "IsWordArt": null,
-
-    "LinkedCell": null,
-
-    "ZOrderPosition": 1,
-
-    "link": {
-
-      "Href": "/test.xlsx/worksheets/Sheet2/pictures/1",
-
-      "Rel": "self",
-
-      "Title": null,
-
-      "Type": null
-
-    }
-
-  },
-
-  "Code": 200,
-
-  "Status": "OK"
-
+"Code": 200,
+"Status": "OK"
 }
-
+ 
 ```
-
+ 
 {{< /tab >}}
-
+ 
 {{< /tabs >}}
-## **SDK Source**
-The Aspose.Cells Cloud SDKs can be downloaded from the following page: [Available SDKs](/cells/available-sdks/)
-### **SDK Examples**
+ 
+## Cloud SDK Family
+ 
+Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+ 
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+ 
+
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}

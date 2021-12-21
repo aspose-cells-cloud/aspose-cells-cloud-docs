@@ -9,11 +9,10 @@ description: "Cells.Cloud API for Excel operate: working with pictures on an Exc
 weight: 100
 ---
 
-## Working with Pictures
 
-- [Get Picture from a Worksheet](/cells/get-picture-from-a-worksheet/)
-- [Add Pictures to Excel Worksheet](/cells/add-pictures-to-excel-worksheet/)
-- [Update a specific Picture from Excel Worksheet](/cells/update-a-specific-picture-from-excel-worksheet/)
-- [Convert Picture to Image](/cells/convert-picture-to-image/)
-- [Delete all Pictures from Excel Worksheet](/cells/delete-all-pictures-from-excel-worksheet/)
-- [Delete a specific Picture from Excel Worksheet](/cells/delete-a-specific-picture-from-excel-worksheet/)
+- [How to get a specific format picture from an Excel worksheet.](/cells/pictures/get/)
+- [How to get all pictures information from an Excel worksheet.](/cells/pictures/get-all/)
+- [How to add a picture for an Excel worksheet.](/cells/pictures/add/)
+- [How to update a specific picture from an Excel worksheet.](/cells/pictures/update/)
+- [How to delete all pictures from an Excel worksheet.](/cells/pictures/clear/)
+- [How to delete a picture from an Excel worksheet.](/cells/pictures/delete/)
