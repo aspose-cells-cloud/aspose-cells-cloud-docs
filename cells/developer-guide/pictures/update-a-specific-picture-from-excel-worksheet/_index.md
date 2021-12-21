@@ -3,7 +3,7 @@ title: "Update Picture"
 type: docs
 url: /pictures/update/
 aliases: [/update-a-specific-picture-from-excel-workshee/]
-weight: 30
+weight: 70
 ---
 
 This REST API indicates `update` picture by pricture index for an Excel worksheet.

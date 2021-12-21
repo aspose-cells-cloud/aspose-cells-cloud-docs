@@ -3,7 +3,7 @@ title: "Get Picture"
 type: docs
 url: /pictures/get/
 aliases: [/convert-picture-to-image/]
-weight: 40
+weight: 10
 ---
 
 This REST API indicates `get` picture by picture index from an Excel worksheet.
