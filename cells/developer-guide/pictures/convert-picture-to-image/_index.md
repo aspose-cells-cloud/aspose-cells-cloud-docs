@@ -6,7 +6,7 @@ aliases: [/convert-picture-to-image/]
 weight: 40
 ---
 
-This REST API indicates get worksheet picture by picture index.
+This REST API indicates `get` picture by picture index from an Excel worksheet.
  
 ## RSET API
  

@@ -6,7 +6,7 @@ aliases: [/get-picture-from-a-worksheet/]
 weight: 10
 ---
 
-This REST API indicates get worksheet pictures info.
+This REST API indicates `get` all pictures information from an Excel worksheet.
  
 ## RSET API
  

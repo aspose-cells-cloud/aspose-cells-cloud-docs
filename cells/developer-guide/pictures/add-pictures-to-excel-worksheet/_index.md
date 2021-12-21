@@ -6,7 +6,7 @@ aliases: [/add-pictures-to-excel-worksheet/]
 weight: 20
 ---
 
-This REST API indicates add a new worksheet picture.
+This REST API indicates `add` a new picture for an Excel worksheet.
  
 ## RSET API
  

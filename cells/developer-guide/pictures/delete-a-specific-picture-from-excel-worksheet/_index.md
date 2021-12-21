@@ -6,7 +6,7 @@ aliases: [/delete-a-specific-picture-from-excel-worksheet/]
 weight: 60
 ---
 
-This REST API indicates `delete` a picture object in worksheet
+This REST API indicates `delete` a picture from an Excel worksheet.
  
 ## RSET API
  

@@ -6,7 +6,7 @@ aliases: [/update-a-specific-picture-from-excel-workshee/]
 weight: 30
 ---
 
-This REST API indicates Update worksheet picture by index.
+This REST API indicates `update` picture by pricture index for an Excel worksheet.
  
 ## RSET API
  

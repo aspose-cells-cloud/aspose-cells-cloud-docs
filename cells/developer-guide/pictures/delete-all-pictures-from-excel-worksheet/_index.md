@@ -6,7 +6,7 @@ aliases: [/delete-all-pictures-from-excel-worksheet/]
 weight: 50
 ---
 
-This REST API indicates `delete` all pictures in worksheet.
+This REST API indicates `delete` `all` pictures in worksheet.
  
 ## RSET API
  
