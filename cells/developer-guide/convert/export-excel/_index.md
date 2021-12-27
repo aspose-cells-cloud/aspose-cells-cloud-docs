@@ -63,7 +63,7 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{< tab tabNum="1" >}}
 
 ```csharp
-
+// For complete examples and data files, please go to https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/
 Aspose.Cells.Cloud.SDK.Api.LiteCellsApi liteCellsApi = new Aspose.Cells.Cloud.SDK.Api.LiteCellsApi("your client id", "your client secret");
 IDictionary<string, Stream> mapFiles = new Dictionary<string, Stream>();
 mapFiles.Add("assemblytest.xlsx", File.OpenRead(@".\TestData\assemblytest.xlsx"));
@@ -98,7 +98,7 @@ try{
 {{< tab tabNum="3" >}}
 
 ```go
-
+// For complete examples and data files, please go to https://github.com/aspose-cells-cloud/aspose-cells-cloud-go/
 LiteCellsAPI := NewLiteCellsApiService(clientId, clientSecret)
 
 var fileMap map[string]string
