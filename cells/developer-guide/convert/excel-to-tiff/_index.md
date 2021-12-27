@@ -95,15 +95,7 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{< tab tabNum="1" >}}
 
 ```csharp
-
-Aspose.Cells.Cloud.SDK.Api.LiteCellsApi liteCellsApi = new Aspose.Cells.Cloud.SDK.Api.LiteCellsApi("your client id", "your client secret");
-IDictionary<string, Stream> mapFiles = new Dictionary<string, Stream>();
-mapFiles.Add("assemblytest.xlsx", File.OpenRead(@".\TestData\assemblytest.xlsx"));
-mapFiles.Add("datasource.xlsx", File.OpenRead(@".\TestData\datasource.xlsx"));
-Aspose.Cells.Cloud.SDK.Model.FilesResult filesResult = liteCellsApi.PostExport(files, "Workbook", "tiff");
-Assert.IsNotNull(filesResult);
-
-//2.
+// For complete examples and data files, please go to https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/
 Aspose.Cells.Cloud.SDK.Api.CellsApi cellsApi = new CellsApi("your client id", "your client secret");
 var response = cellsApi.CellsWorkbookPutConvertWorkbook( File.OpenRead(@".\TestData\datasource.xlsx"), "tiff", null, null);
 Assert.IsInstanceOf<System.IO.Stream>(response, "response is System.IO.Stream");
