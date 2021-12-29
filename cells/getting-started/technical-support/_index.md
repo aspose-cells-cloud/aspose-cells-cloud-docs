@@ -17,13 +17,3 @@ If you need help with Aspose.Cells Cloud, consider the following:
 - When expecting a reply in the forums, please allow for time zone differences.
 
 
-
-
-<input type="file" class="uploadfileinput" id="UploadFileInput-1981918578539790" name="UploadFileInput-1981918578539790" title="" accept=".xls,.xlsx,.xlsm,.xlsb,.ods,.csv,.tsv,.html,.mht,.mhtml,.json" multiple="true">
-
-<script>
-function test(){
-alert('test')
-}
-test()
-</script>
