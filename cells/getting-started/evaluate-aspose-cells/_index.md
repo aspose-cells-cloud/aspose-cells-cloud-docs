@@ -1,5 +1,5 @@
 ---
-title: "Evaluate Aspose.Cells"
+title: "Evaluate Aspose.Cells Cloud"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /evaluate-aspose-cells/
