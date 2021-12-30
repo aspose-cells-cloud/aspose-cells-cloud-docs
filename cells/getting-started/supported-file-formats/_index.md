@@ -33,4 +33,4 @@ weight: 40
 |[TIFF](https://docs.fileformat.com/image/tiff/)|Tagged Image File Format| |{{< emoticons/tick >}}|
 |[SVG](https://docs.fileformat.com/page-description-language/svg/)|Scalable Vector Format| |{{< emoticons/tick >}}|
 |FODS|This is an Open Document format stored as flat XML.|{{< emoticons/tick >}}| |
-
+|[Numbers](https://docs.fileformat.com/spreadsheet/numbers/)|Apple iWork Numbers Format| |{{< emoticons/tick >}}|
