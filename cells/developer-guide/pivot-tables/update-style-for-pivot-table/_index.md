@@ -5,7 +5,7 @@ linktitle: Format all
 type: docs
 url: /pivot-tables/format-all/
 aliases: [/update-style-for-pivot-table/]
-weight: 80
+weight: 100
 ---
 
 This REST API indicates `update` style for pivot table

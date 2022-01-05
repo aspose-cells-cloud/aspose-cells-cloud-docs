@@ -5,7 +5,7 @@ linktitle: Format
 type: docs
 url: /pivot-tables/format/
 aliases: [/update-cell-style-for-pivot-table/]
-weight: 70
+weight: 90
 ---
 
 This REST API indicates update cell `style` for pivot table.

@@ -5,7 +5,7 @@ linktitle: Delete
 type: docs
 url: /pivot-tables/delete/
 aliases: [/delete-worksheet-pivot-table-by-index/]
-weight: 60
+weight: 70
 ---
 
 This REST API indicates `delete` worksheet pivot table by index.

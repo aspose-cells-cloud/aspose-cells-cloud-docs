@@ -5,7 +5,7 @@ linktitle: Add filters
 type: docs
 url: /pivot-tables/add-filters/
 aliases: [/working-with-pivot-filters/]
-weight: 42
+weight: 50
 ---
 
 This REST API indicates `add` pivot `filter` for piovt table index

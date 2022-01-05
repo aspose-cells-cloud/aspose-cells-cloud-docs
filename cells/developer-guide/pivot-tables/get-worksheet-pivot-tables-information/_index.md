@@ -5,7 +5,7 @@ linktitle: Get all
 type: docs
 url: /pivot-tables/get-all/
 aliases: [/get-worksheet-pivot-tables-information/]
-weight: 10
+weight: 20
 ---
 
 This REST API indicates get worksheet `pivottables` info.

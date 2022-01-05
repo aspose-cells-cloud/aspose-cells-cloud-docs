@@ -5,7 +5,7 @@ linktitle: Get
 type: docs
 url: /pivot-tables/get/
 aliases: [/get-worksheet-pivot-table-information-by-index/]
-weight: 20
+weight: 10
 ---
 
 This REST API indicates get worksheet `pivottable` info by index.

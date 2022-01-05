@@ -1,11 +1,11 @@
 ---
-title: "Delete Worksheet Pivot Tables"
+title: "Delete all pivot tables on Excel worksheet"
 second_title: "Aspose.Cells Cloud Document"
 linktitle: Clear
 type: docs
 url: /pivot-tables/clear/
 aliases: [/delete-worksheet-pivot-tables/]
-weight: 50
+weight: 80
 ---
 This REST API indicates Delete worksheet pivot tables
  

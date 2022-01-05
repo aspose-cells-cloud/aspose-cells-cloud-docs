@@ -5,7 +5,7 @@ linktitle: Hide pivot field item
 type: docs
 url: /pivot-tables/hide-pivot-field-item/
 aliases: [/hide-pivot-field-item/]
-weight: 100
+weight: 110
 ---
 
 This REST API indicates hiding pivot field item.

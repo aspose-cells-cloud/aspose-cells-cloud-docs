@@ -5,7 +5,7 @@ linktitle: Move
 type: docs
 url: /pivot-tables/move/
 aliases: [/move-pivot-table/]
-weight: 110
+weight: 120
 ---
 
 This REST API indicates `move` pivot table.
