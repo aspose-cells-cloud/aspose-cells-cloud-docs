@@ -1,7 +1,7 @@
 ---
 title: "Delete Worksheet Pivot Table by Index"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: delete
+linktitle: Delete
 type: docs
 url: /pivot-tables/delete/
 aliases: [/delete-worksheet-pivot-table-by-index/]

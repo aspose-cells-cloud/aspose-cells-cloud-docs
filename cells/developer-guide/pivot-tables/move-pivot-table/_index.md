@@ -1,7 +1,7 @@
 ---
 title: "Move pivot pable"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: move
+linktitle: Move
 type: docs
 url: /pivot-tables/move/
 aliases: [/move-pivot-table/]

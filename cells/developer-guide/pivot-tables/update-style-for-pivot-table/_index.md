@@ -1,7 +1,7 @@
 ---
 title: "Update Style for Pivot Table"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: format-all
+linktitle: Format all
 type: docs
 url: /pivot-tables/format-all/
 aliases: [/update-style-for-pivot-table/]

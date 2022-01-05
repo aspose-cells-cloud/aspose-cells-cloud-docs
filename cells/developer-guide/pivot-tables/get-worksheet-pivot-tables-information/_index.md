@@ -1,7 +1,7 @@
 ---
 title: "Get Worksheet Pivot Tables Information"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: get-all
+linktitle: Get all
 type: docs
 url: /pivot-tables/get-all/
 aliases: [/get-worksheet-pivot-tables-information/]

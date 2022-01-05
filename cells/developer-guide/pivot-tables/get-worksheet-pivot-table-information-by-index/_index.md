@@ -1,7 +1,7 @@
 ---
 title: "Get Worksheet Pivot Table Information by Index"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: get
+linktitle: Get
 type: docs
 url: /pivot-tables/get/
 aliases: [/get-worksheet-pivot-table-information-by-index/]

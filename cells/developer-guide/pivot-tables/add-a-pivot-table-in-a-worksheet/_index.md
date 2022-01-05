@@ -1,7 +1,7 @@
 ---
 title: "Add pivot table in an Excel worksheet"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: add
+linktitle: Add
 type: docs
 url: /pivot-tables/add/
 aliases: [/add-a-pivot-table-in-a-worksheet/]

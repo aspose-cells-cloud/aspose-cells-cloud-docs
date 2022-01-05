@@ -1,11 +1,11 @@
 ---
 title: "Working with pivot filters"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: add filters
+linktitle: Add filters
 type: docs
 url: /pivot-tables/add-filters/
 aliases: [/working-with-pivot-filters/]
-weight: 90
+weight: 42
 ---
 
 This REST API indicates `add` pivot `filter` for piovt table index

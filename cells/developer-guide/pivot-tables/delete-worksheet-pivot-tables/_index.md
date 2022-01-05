@@ -1,7 +1,7 @@
 ---
 title: "Delete Worksheet Pivot Tables"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: clear
+linktitle: Clear
 type: docs
 url: /pivot-tables/clear/
 aliases: [/delete-worksheet-pivot-tables/]

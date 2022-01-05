@@ -1,7 +1,7 @@
 ---
 title: "Add pivot field into pivot table"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: add pivot field
+linktitle: Add pivot field
 type: docs
 url: /pivot-tables/add-pivot-field/
 aliases: [/add-a-pivot-table-in-a-worksheet/]

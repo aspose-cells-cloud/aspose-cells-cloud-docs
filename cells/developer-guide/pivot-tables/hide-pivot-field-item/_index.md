@@ -1,7 +1,7 @@
 ---
 title: "Hide pivot field item"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: hide pivot field item
+linktitle: Hide pivot field item
 type: docs
 url: /pivot-tables/hide-pivot-field-item/
 aliases: [/hide-pivot-field-item/]
