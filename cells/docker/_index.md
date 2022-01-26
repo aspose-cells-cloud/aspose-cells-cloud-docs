@@ -11,7 +11,7 @@ weight: 30
 
 ## Aspose.Cells Cloud Docker
 
-Aspose.Cells Cloud Image is available for Linux , Windows Server 2016 and Windows Server 2019. 
+Aspose.Cells Cloud Image is available for Linux ,Microsoft Windows 10 Pro, Microsoft Windows Server 2016, and Microsoft Windows Server 2019. 
 
 
 see:
