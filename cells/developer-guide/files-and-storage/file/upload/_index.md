@@ -77,6 +77,68 @@ Using an SDK is the best way to speed up the development. An SDK takes care of l
  
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
  
- 
+ {{< tabs tabTotal="9" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" tabName9="Python">}}
+
+{{< tab tabNum="1" >}}
+
+```csharp
+
+CellsApi cellsApi = new CellsApi(ClientId, ClientSecret);
+cellsApi.UploadFile("DotNetSDK/OutResult/Upload_Book1.xlsx", File.OpenRead(filePath), null);
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```java
+
+    public static void main(String[] args) {
+        try{
+            CellsApi  cellsApi = new CellsApi(System.getenv("ProductClientId"),System.getenv("ProductClientSecret"));
+            File file = new File("TestImportData.xlsx");
+            cellsApi.uploadFile("JavaSDK/OutResult/Book1.xlsx", file, null);
+        }
+        catch( Exception e) 
+        {
+            System.out.print(e.getMessage());
+        }
+    }
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="3" >}}
+
+{{< /tab >}}
+
+{{< tab tabNum="4" >}}
+
+
+{{< /tab >}}
+
+{{< tab tabNum="5" >}}
+
+
+{{< /tab >}}
+
+{{< tab tabNum="6" >}}
+
+
+{{< /tab >}}
+
+{{< tab tabNum="7" >}}
+
+
+{{< /tab >}}
+
+{{< tab tabNum="8" >}}
+
+
+{{< /tab >}}
+{{< tab tabNum="9" >}}
+
+{{< /tab >}}
+{{< /tabs >}}
  
 
