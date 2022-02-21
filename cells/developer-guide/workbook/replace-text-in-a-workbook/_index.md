@@ -6,7 +6,7 @@ aliases: [/replace-text-in-a-workbook/]
 weight: 50
 ---
 
-This REST API indicates Replace text.
+This REST API indicates `replace` text in an Excel file.
  
 ## RSET API
  

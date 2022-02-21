@@ -6,7 +6,7 @@ aliases: [/get-text-items-from-a-worksheet/]
 weight: 20
 ---
 
-This REST API indicates Get worksheet text items.
+This REST API indicates get `text items` from an Excel worksheet.
  
 ## RSET API
  

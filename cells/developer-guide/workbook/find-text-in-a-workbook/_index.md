@@ -6,7 +6,7 @@ aliases: [/find-text-in-a-workbook/]
 weight: 30
 ---
 
-This REST API indicates `search` text in Excel file.
+This REST API indicates `search` text in an Excel file.
  
 ## RSET API
  

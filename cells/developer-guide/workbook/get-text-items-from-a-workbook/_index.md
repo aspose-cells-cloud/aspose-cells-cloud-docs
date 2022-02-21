@@ -6,7 +6,7 @@ aliases: [/get-text-items-from-a-workbook/]
 weight: 10
 ---
 
-This REST API indicates Read workbook's text items.
+This REST API indicates read workbook's `text items`.
  
 ## RSET API
  
