@@ -4,7 +4,12 @@ second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /text/
 aliases: [/working-with-text/]
-keywords: "REST API, spreadsheets, excel, worksheets"
+keywords: 
+    - excel
+    - search text
+    - find text
+    - replace text
+
 description: "Cells.Cloud API for Excel operate: worksheets operate."
 weight: 100
 ---
