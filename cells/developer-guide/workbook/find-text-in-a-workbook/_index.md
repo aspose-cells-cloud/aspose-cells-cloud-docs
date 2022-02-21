@@ -1,7 +1,8 @@
 ---
 title: "Find Text in a Workbook"
 type: docs
-url: /find-text-in-a-workbook/
+url: /workbook/find-text/
+aliases: [/find-text-in-a-workbook/]
 weight: 30
 ---
 

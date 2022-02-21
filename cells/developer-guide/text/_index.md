@@ -11,9 +11,9 @@ weight: 100
 
 ## Working with text on an Excel file.
 
-- [Get Text Items from a Workbook](/cells/get-text-items-from-a-workbook/)
-- [Get Text Items from a Worksheet](/cells/get-text-items-from-a-worksheet/)
-- [Find Text in a Workbook](/cells/find-text-in-a-workbook/)
-- [Find Text in a Worksheet](/cells/find-text-in-a-worksheet/)
-- [Replace Text in a Workbook](/cells/replace-text-in-a-workbook/)
-- [Replace Text in a Worksheet](/cells/replace-text-in-a-worksheet/)
+- [Get Text Items from a Workbook](/cells/workbook/get-text-items/)
+- [Get Text Items from a Worksheet](/cells/worksheets/get-text-items/)
+- [Find Text in a Workbook](/cells/workbook/find-text/)
+- [Find Text in a Worksheet](/cells/worksheets/find-text/)
+- [Replace Text in a Workbook](/cells/workbook/replace-text/)
+- [Replace Text in a Worksheet](/cells/worksheets/replace-text/)

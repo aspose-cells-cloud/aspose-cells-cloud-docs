@@ -110,6 +110,15 @@ cellsApi.UploadFile("DotNetSDK/OutResult/Upload_Book1.xlsx", File.OpenRead(fileP
 
 {{< tab tabNum="3" >}}
 
+```php
+<?php
+require_once('vendor\autoload.php');
+use \Aspose\Cells\Cloud\Api\CellsApi;
+$cells = new CellsApi( getenv("ProductClientId"),getenv("ProductClientSecret") );
+$cells->uploadFile("PHPSDK/OutResult/UploadFile_Book1.xlsx","D:/projects/aspose/examples/testdata/source/Book1.xlsx",null );
+
+
+```
 {{< /tab >}}
 
 {{< tab tabNum="4" >}}
@@ -123,21 +132,83 @@ cellsApi.UploadFile("DotNetSDK/OutResult/Upload_Book1.xlsx", File.OpenRead(fileP
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
+```java
 
+    public static void main(String[] args) {
+        try{
+            CellsApi  cellsApi = new CellsApi(System.getenv("ProductClientId"),System.getenv("ProductClientSecret"));
+            File file = new File("TestImportData.xlsx");
+            cellsApi.uploadFile("JavaSDK/OutResult/Book1.xlsx", file, null);
+        }
+        catch( Exception e) 
+        {
+            System.out.print(e.getMessage());
+        }
+    }
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
+ ```perl
+use strict;
+use warnings;
+use utf8; 
+use File::Slurp;
+use AsposeCellsCloud::CellsApi;
 
+my $config = AsposeCellsCloud::Configuration->new( client_id => $ENV{'ProductClientId'}, client_secret => $ENV{'ProductClientSecret'});
+my $instance = AsposeCellsCloud::CellsApi->new(AsposeCellsCloud::ApiClient->new( $config));
+
+my $upload_file_data = read_file( 'C:/data/CellsTests/Book1.xlsx' , binmode => ':raw' );
+$instance->upload_file(path=>'PerlSDK/OutResult/UplaodFile_Book1.xlsx' ,file => $upload_file_data);
+
+ ```
 
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
 
+```go
+
+package main
+
+import (
+	"os"
+	"github.com/aspose-cells-cloud/aspose-cells-cloud-go/v22"
+)
+
+func main() {
+	instance := asposecellscloud.NewCellsApiService(os.Getenv("ProductClientId"), os.Getenv("ProductClientSecret"))
+
+	file, err := os.Open("D:/projects/aspose/examples/testdata/source/Book1.xlsx")	
+	if err != nil {
+	   println( err)
+	}
+
+
+	uploadFileOpts := new(asposecellscloud.UploadFileOpts)
+	uploadFileOpts.Path = "GoSDK/OutResult/UploadFile_Book1.xlsx"
+	_, _, err1  := instance.UploadFile(file, uploadFileOpts)
+	if err1 != nil {
+	   println( err1)
+	}
+
+}
+
+```
 
 {{< /tab >}}
 {{< tab tabNum="9" >}}
+```python
 
+import os
+from asposecellscloud.apis.cells_api import CellsApi
+
+cells_api = CellsApi(os.getenv('ProductClientId'),os.getenv('ProductClientSecret'))
+cells_api.upload_file("PythonSDK/OutResult/UploadFile_Book1.xlsx", "D:/projects/aspose/examples/testdata/source/Book1.xlsx")
+
+```
 {{< /tab >}}
 {{< /tabs >}}
  
