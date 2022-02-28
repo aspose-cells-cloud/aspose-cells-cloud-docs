@@ -1,5 +1,7 @@
 ---
 title: "Match all blank cells in an Excel worksheet"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "Match blank cell"
 type: docs
 url: /autofilter/match-all-blank/
 aliases: [/match-all-blank-cells-in-the-list/]

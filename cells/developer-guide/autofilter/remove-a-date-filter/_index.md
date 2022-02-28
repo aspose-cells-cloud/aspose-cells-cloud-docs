@@ -1,5 +1,7 @@
 ---
 title: "Delete a Date Filter"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "Delete date filter"
 type: docs
 url: /autofilter/delete-date-filter/
 aliases: [/remove-a-date-filter/,/autofilter/delete-a-date-filter/]

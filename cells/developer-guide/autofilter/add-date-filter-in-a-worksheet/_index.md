@@ -1,6 +1,7 @@
 ---
 title: "Add date filter in an Excel worksheet"
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "Add date filter"
 type: docs
 url: /autofilter/add-date-filter/
 aliases: [/add-date-filter-in-a-worksheet/,/autofilter/add-a-date-filter/]

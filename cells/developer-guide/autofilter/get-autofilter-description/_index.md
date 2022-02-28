@@ -1,6 +1,7 @@
 ---
 title: "Get an auto filter in an Excel worksheet"
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "Get auto filter"
 type: docs
 url: /autofilter/get/
 aliases: [/get-autofilter-description/]

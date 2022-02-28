@@ -1,5 +1,7 @@
 ---
 title: "Add a custom criteria in an Excel worksheet"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "Add custom filter"
 type: docs
 url: /autofilter/add-custom-filter/ 
 aliases: [/filter-a-list-with-a-custom-criteria/,/autofilter/add-a-custom-filter/ ]
