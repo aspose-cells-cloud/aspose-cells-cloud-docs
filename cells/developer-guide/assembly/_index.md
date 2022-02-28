@@ -8,7 +8,7 @@ description: "Aspoe.Cells Cloud generates reports in XLS, XLSX, XLSM, XLSB, and 
 weight: 200
 ---
 
-This REST API indicates `assembly` data in an Excel file.
+This REST API indicates to  `assembly` data in an Excel file.
 
 ## RSET API
 
