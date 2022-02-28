@@ -3,10 +3,12 @@ title: "Match all non blank cells in an Excel worksheet"
 type: docs
 url: /autofilter/match-all-non-blank/
 aliases: [/match-all-non-blank-cells-in-the-list/]
+keywords: "Match all not blank cells in the filter list on an Excel worksheet."
+description: "The Aspose.Cells Cloud API supports matching all not blank cells in the filter list on an Excel worksheet.SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 100
 ---
 
-This REST API indicates `match` all `not blank cell` in the list.
+This REST API indicates `match` all `not blank cell` in the list on an Excel worksheet.
             
  
 ## RSET API

@@ -4,13 +4,13 @@ second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /autofilter/get/
 aliases: [/get-autofilter-description/]
-keywords: "REST API, autofilter, spreadsheets, excel"
-description: "Cells.Cloud API for Excel operate: get autofilter on an Excel file."
+keywords: "Gets auto filter description from an Excel worksheet."
+description: "The Aspose.Cells Cloud API supports gets auto filter description from an Excel worksheet.SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 100
 ---
 
 
-This REST API indicates get `auto filter` description in an Excel.
+This REST API indicates get `auto filter` description in an Excel worksheet.
  
 ## RSET API
  

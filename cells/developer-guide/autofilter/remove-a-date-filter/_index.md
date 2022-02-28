@@ -4,9 +4,11 @@ type: docs
 url: /autofilter/delete-date-filter/
 aliases: [/remove-a-date-filter/,/autofilter/delete-a-date-filter/]
 weight: 100
+keywords: "Delete a date filter on an Excel worksheet."
+description: "The Aspose.Cells Cloud API supports deleting a date filter on an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 ---
 
-This REST API indicates Removes a date filter.
+This REST API indicates to delete a date filter on an Excel worksheet.
             
  
 ## RSET API

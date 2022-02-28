@@ -3,12 +3,14 @@ title: "Add a color filter in an Excel worksheet"
 type: docs
 url: /autofilter/add-color-filter/
 aliases: [/filter-a-list-using-a-color-filter/,/autofilter/add-a-color-filter/]
+keywords: "Adds a color filter on an Excel worksheet."
+description: "The Aspose.Cells Cloud API supports adding a color filter on an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 100
 ---
-This REST API add an `Color Filter` on an Excel Worksheet.
 
-This REST API indicates 
- 
+This REST API indicates to add a `color filter` on an Excel Worksheet.
+
+
 ## RSET API
  
 ```bash
