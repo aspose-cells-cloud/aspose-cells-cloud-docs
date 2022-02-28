@@ -7,7 +7,7 @@ url: /autofilter/add-date-filter/
 aliases: [/add-date-filter-in-a-worksheet/,/autofilter/add-a-date-filter/]
 keywords: "Adds a date filter on an Excel worksheet."
 description: "The Aspose.Cells Cloud API supports adding a date filter on an Excel worksheet.SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
-weight: 100
+weight: 65
 ---
 
 This REST API indicates to add a `date filter` on an Excel Worksheet.
