@@ -1,6 +1,7 @@
 ---
 title: "Add a filter in an Excel worksheet"
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "Add filter"
 type: docs
 url: /autofilter/add-filter/
 aliases: [/add-a-filter-for-a-filter-column/]
