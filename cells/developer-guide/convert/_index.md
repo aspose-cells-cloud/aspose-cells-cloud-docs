@@ -1,11 +1,12 @@
 ---
 title: "Convert Excel"
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "Conversion"
 type: docs
 url: /convert/
 aliases: [/convert-excel/]
-keywords: "REST API, convert, spreadsheets, excel"
-description: "Cells.Cloud API for Excel operate: convert(export/saveas) excel file to other format file."
+keywords: "Convert excel files to kinds of format files."
+description: "Aspose.Cells Cloud REST API support conversion excel files to kinds of format files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 30
 ---
 
@@ -19,9 +20,9 @@ The following APIs to convert an Excel file to other file formats is provided:
 
 |API|Description|
 | :- | :- |
-|[GET /cells/{name}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)|Exports Excel files to other formats from cloud storage.|
-|[PUT /cells/convert](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)|Converts Excel files to other formats from request content.|
-|[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)|Saves Excel files as other formats file to storage.|
+|[GET /cells/{name}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)|Gets Excel file to other formats from cloud storage.|
+|[PUT /cells/convert](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)|Converts Excel file to other formats from request content.|
+|[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)|Saves Excel file as other formats file to storage.|
 
 The following articles explain each API in detail and contain cURL and SDK Examples of each API:
 

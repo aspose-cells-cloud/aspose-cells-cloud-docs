@@ -1,23 +1,26 @@
 ---
 title: "Excel to PDF"
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "Excel to PDF"
 type: docs
 url: /convert/excel-to-pdf/
 aliases: [/convert-excel-file-to-pdf-in-cloud/]
-keywords: "REST API, convert, spreadsheets, excel, pdf"
-description: "Cells.Cloud API for Excel operate: convert excel file to html file."
+keywords: "Convert excel files to pdf files."
+description: "Aspose.Cells Cloud REST API support conversion excel files to pdf files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 80
 ---
 
-Aspose provides a high-fidelity API to programmatically convert Excel documents to PDF format and in the opposite directions with professional quality. The combined use of Adobe and Microsoft Office technologies has a lot to offer to the end-user.
+This REST API `saveas` excel file to PDF.
 
-These major document formats, including XLSX, XLS, XLSB, and ODS, are capable of encapsulating almost any type of data including text, tables, raster and vector graphics, video, audio, and also support a wide range of formatting features.
+[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) API lets you save MS Excel file as PDF file with additional settings and save the result to the storage.
 
-Despite similarities, Excel and PDF documents have considerable differences in operational capabilities.
+This REST API `convert` excel file to PDF.
 
-Excel document formats are great for collaborative development, but they aren’t always the best choice for distributing, as they can be easily modified without the author’s permission. PDF documents, in contrast, support multilevel security options and are difficult to extract information. Overall Adobe’s technology makes the forgery of PDF documents a complex task.
+[PUT /cells/convert](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) API lets you convert MS Excel file to PDF file with additional settings and save the result to the response.
 
-You may require to convert an editable XLSX or XLS to an immutable PDF in order to protect the Excel file against undesirable modifications.
+This REST API `export` excel file to PDF.
+
+[GET /cells/{name}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook  ) API lets you convert MS Excel file to PDF file with additional settings and save the result to the response.
 
 ## REST API
 

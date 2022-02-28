@@ -1,15 +1,16 @@
 ---
 title: "Convert Excel"
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "Convert"
 type: docs
 url: /convert/excel-to-different-formats/
 aliases: [/convert-excel-workbook-to-different-file-formats/]
-keywords: "REST API, convert, spreadsheets, excel"
-description: "Cells.Cloud API for Excel operate: convert excel file to different format file."
-weight: 20
+keywords: "Convert excel files to kinds of format files."
+description: "Aspose.Cells Cloud REST API support conversion excel files to kinds of format files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+weight: 10
 ---
 
-This REST API `convert` excel file to different format file.
+This REST API indicates to `convert` excel file to different format file.
 
 The request is an HTTP request with multipart content (see [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). The first part of the multipart content contains the data file and the second contains save options.
 

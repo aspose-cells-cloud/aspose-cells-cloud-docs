@@ -4,12 +4,12 @@ second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /saveas-other-formats/
 aliases: [/convert-excel-workbook-to-different-file-formats/]
-keywords: "REST api, SaveAs, excel, spreadsheets"
-description: "REST API to save XLS XLSX as PDF and many other formats like HTML, ODS, XPS, CSV etc. SDKs are available for .NET, Java, PHP, Ruby, Rails, Python, jQuery and many more languages."
+keywords: "Save excel files as kinds of format files."
+description: "Aspose.Cells Cloud REST API support saving excel files as kinds of format files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 30
 ---
 
-This REST API `saveas` excel file to different file.
+This REST API indicates to `save` excel file as different format file.
 
 **Query Parameter**
 
