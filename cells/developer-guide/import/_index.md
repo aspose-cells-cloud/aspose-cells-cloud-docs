@@ -9,7 +9,10 @@ description: "Aspose.Cells Cloud REST API support importing data into Excel file
 
 weight: 31
 ---
+
 Importing data into an Excel file is a complex process. Many factors contribute to the complexity and therefore, should be taken into account during the export process. The ability to imports kinds of formats and types of data into the file with a precise professional quality is a top feature of Aspose.Cells Cloud.
+
+## RSET APIs
 
 The following APIs to import data into an Excel file or multiple Excel files is provided:
 
@@ -18,15 +21,69 @@ The following APIs to import data into an Excel file or multiple Excel files is 
 |[POST /cells/impport](https://apireference.aspose.cloud/cells/#/LightCells/PostImport)| Import data into Excel files without using storage.|
 |[POST /cells/{name}/impportdata](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData)|Import data into the Excel file with using storage.|
 
-
-**The request parameters are:** 
+## Request Parameters
  
 | Parameter Name | Type | Path/Query String/HTTPBody | Description| 
 | :- | :- | :- |:- | 
 | file | file | formData | File to upload |
 | ImportOption | ImportOptions | HTTPBody |  IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/Picture |
 
+
 The important parameters are described in the following table:
+
+{{< tabs tabTotal="8" tabID="1" tabName1="Import2DimensionIntegerArrayOption" tabName2="Import2DimensionDoubleArrayOption" tabName3="Import2DimensionStringArrayOption" tabName4="Page Layout" tabName5="Formulas" tabName6="Data" tabName7="Review" tabName8="View" >}}
+{{< tab tabNum="1" >}}
+
+<table class="table table-dark">
+  <thead>
+    <tr><th scope="col">Parameter</th><th scope="col">Type</th> <th scope="col">Description</th></tr>
+  </thead>
+  <tbody>
+    <tr> <td>FirstRow</td><td>int</td> <td></td> </tr>
+    <tr> <td>FirstColumn</td><td>int</td><td></td></tr>
+    <tr><td>Data</td><td> Integer[,] </td> <td></td></tr>
+    <tr> <td>DestinationWorksheet</td><td> String </td><td> Destination work sheet name.</td></tr>
+    <tr><td>IsInsert</td><td>String</td><td>true/false.</td></tr>
+    <tr><td>ImportDataType</td><td> String </td><td>TwoDimensionIntArray</td></tr>
+    <tr> <td>Source</td><td> FileSource </td><td>Indicates data file position when the BatchData parameter is null.</td></tr>
+  </tbody>
+</table>
+{{< /tab >}}
+{{< tab tabNum="2" >}}
+
+<table class="table table-dark">
+  <thead>
+    <tr><th scope="col">Parameter</th><th scope="col">Type</th> <th scope="col">Description</th></tr>
+  </thead>
+  <tbody>
+    <tr> <td>FirstRow</td><td>int</td> <td></td> </tr>
+    <tr> <td>FirstColumn</td><td>int</td><td></td></tr>
+    <tr><td>Data</td><td> Double[,] </td> <td></td></tr>
+    <tr> <td>DestinationWorksheet</td><td> String </td><td> Destination work sheet name.</td></tr>
+    <tr><td>IsInsert</td><td>String</td><td>true/false.</td></tr>
+    <tr><td>ImportDataType</td><td> String </td><td>TwoDimensionDoubleArray</td></tr>
+    <tr> <td>Source</td><td> FileSource </td><td>Indicates data file position when the BatchData parameter is null.</td></tr>
+  </tbody>
+</table>
+{{< /tab >}}
+{{< tab tabNum="3" >}}
+
+<table class="table table-dark">
+  <thead>
+    <tr><th scope="col">Parameter</th><th scope="col">Type</th> <th scope="col">Description</th></tr>
+  </thead>
+  <tbody>
+    <tr> <td>FirstRow</td><td>int</td> <td></td> </tr>
+    <tr> <td>FirstColumn</td><td>int</td><td></td></tr>
+    <tr><td>Data</td><td> String[,] </td> <td></td></tr>
+    <tr> <td>DestinationWorksheet</td><td> String </td><td> Destination work sheet name.</td></tr>
+    <tr><td>IsInsert</td><td>String</td><td>true/false.</td></tr>
+    <tr><td>ImportDataType</td><td> String </td><td>TwoDimensionStringArray</td></tr>
+    <tr> <td>Source</td><td> FileSource </td><td>Indicates data file position when the BatchData parameter is null.</td></tr>
+  </tbody>
+</table>
+{{< /tab >}}
+{{< /tabs >}}
 
 - **Import2DimensionIntegerArrayOption**
 
