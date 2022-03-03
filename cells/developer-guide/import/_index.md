@@ -31,7 +31,7 @@ The following APIs to import data into an Excel file or multiple Excel files is 
 
 **The important parameters are described in the following table**:
 
-{{< tabs tabTotal="11" tabID="1" tabName1="ImportBatchDataOption"  tabName2="ImportCSVDataOption"   tabName3="ImportPictureOption" tabName4="Import2DimensionIntegerArrayOption" tabName5="Import2DimensionDoubleArrayOption" tabName6="Import2DimensionStringArrayOption" tabName7="ImportIntegerArrayOption" tabName8="ImportDoubleArrayOption" tabName9="ImportStringArrayOption" tabName10="CellValue" tabName11="FileSource" >}}
+{{< tabs tabTotal="11" tabID="1" tabName1="ImportBatchDataOption"  tabName2="ImportCSVDataOption"   tabName3="ImportPictureOption" tabName4="Import2DimensionIntArrayOption" tabName5="Import2DimensionDoubleArrayOption" tabName6="Import2DimensionStringArrayOption" tabName7="ImportIntegerArrayOption" tabName8="ImportDoubleArrayOption" tabName9="ImportStringArrayOption" tabName10="CellValue" tabName11="FileSource" >}}
 {{< tab tabNum="1" >}}
 
 <table class="table">
@@ -87,25 +87,6 @@ The following APIs to import data into an Excel file or multiple Excel files is 
     <tr><th scope="col">Parameter</th><th scope="col">Type</th> <th scope="col">Description</th></tr>
   </thead>
   <tbody>
-    <tr> <td>UpperLeftRow</td><td>int</td> <td></td> </tr>
-    <tr> <td>UpperLeftColumn</td><td>int</td><td></td></tr>
-    <tr> <td>LowerRightRow</td><td>int</td> <td></td> </tr>
-    <tr> <td>LowerRightColumn</td><td>int</td><td></td></tr>
-    <tr><td>Filename</td><td>String</td><td></td></tr>
-    <tr><td>Data</td><td> String </td> <td></td></tr>
-    <tr> <td>DestinationWorksheet</td><td> String </td><td> Destination work sheet name.</td></tr>
-    <tr><td>IsInsert</td><td>String</td><td>true/false.</td></tr>
-    <tr><td>ImportDataType</td><td> String </td><td>StringArray</td></tr>
-    <tr> <td>Source</td><td> FileSource </td><td>Indicates data file position when the BatchData parameter is null.</td></tr>
-  </tbody>
-</table>
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-<table class="table">
-  <thead>
-    <tr><th scope="col">Parameter</th><th scope="col">Type</th> <th scope="col">Description</th></tr>
-  </thead>
-  <tbody>
     <tr> <td>FirstRow</td><td>int</td> <td></td> </tr>
     <tr> <td>FirstColumn</td><td>int</td><td></td></tr>
     <tr><td>Data</td><td> Integer[,] </td> <td></td></tr>
@@ -116,7 +97,8 @@ The following APIs to import data into an Excel file or multiple Excel files is 
   </tbody>
 </table>
 {{< /tab >}}
-{{< tab tabNum="6" >}}
+{{< tab tabNum="5" >}}
+
 <table class="table">
   <thead>
     <tr><th scope="col">Parameter</th><th scope="col">Type</th> <th scope="col">Description</th></tr>
@@ -132,7 +114,8 @@ The following APIs to import data into an Excel file or multiple Excel files is 
   </tbody>
 </table>
 {{< /tab >}}
-{{< tab tabNum="7" >}}
+{{< tab tabNum="6" >}}
+
 <table class="table">
   <thead>
     <tr><th scope="col">Parameter</th><th scope="col">Type</th> <th scope="col">Description</th></tr>
@@ -148,7 +131,8 @@ The following APIs to import data into an Excel file or multiple Excel files is 
   </tbody>
 </table>
 {{< /tab >}}
-{{< tab tabNum="8" >}}
+{{< tab tabNum="7" >}}
+
 <table class="table">
   <thead>
     <tr><th scope="col">Parameter</th><th scope="col">Type</th> <th scope="col">Description</th></tr>
@@ -165,7 +149,8 @@ The following APIs to import data into an Excel file or multiple Excel files is 
   </tbody>
 </table>
 {{< /tab >}}
-{{< tab tabNum="9" >}}
+{{< tab tabNum="8" >}}
+
 <table class="table">
   <thead>
     <tr><th scope="col">Parameter</th><th scope="col">Type</th> <th scope="col">Description</th></tr>
@@ -181,6 +166,26 @@ The following APIs to import data into an Excel file or multiple Excel files is 
     <tr> <td>Source</td><td> FileSource </td><td>Indicates data file position when the BatchData parameter is null.</td></tr>
   </tbody>
 </table>
+{{< /tab >}}
+{{< tab tabNum="9" >}}
+<table class="table">
+  <thead>
+    <tr><th scope="col">Parameter</th><th scope="col">Type</th> <th scope="col">Description</th></tr>
+  </thead>
+  <tbody>
+    <tr> <td>UpperLeftRow</td><td>int</td> <td></td> </tr>
+    <tr> <td>UpperLeftColumn</td><td>int</td><td></td></tr>
+    <tr> <td>LowerRightRow</td><td>int</td> <td></td> </tr>
+    <tr> <td>LowerRightColumn</td><td>int</td><td></td></tr>
+    <tr><td>Filename</td><td>String</td><td></td></tr>
+    <tr><td>Data</td><td> String </td> <td></td></tr>
+    <tr> <td>DestinationWorksheet</td><td> String </td><td> Destination work sheet name.</td></tr>
+    <tr><td>IsInsert</td><td>String</td><td>true/false.</td></tr>
+    <tr><td>ImportDataType</td><td> String </td><td>StringArray</td></tr>
+    <tr> <td>Source</td><td> FileSource </td><td>Indicates data file position when the BatchData parameter is null.</td></tr>
+  </tbody>
+</table>
+
 {{< /tab >}}
 {{< tab tabNum="10" >}}
 <table class="table">
