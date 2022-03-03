@@ -27,7 +27,7 @@ The request parameters are:
 | storageName | string | query | storage name. |
 | importData |  | body |   |
 
-The import data options parameters are described in [the reference link](/cells/import/#import-data-option-parameter).
+**The import data options parameters** are described in [the reference link](/cells/import/#import-data-option-parameter).
 
  
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.

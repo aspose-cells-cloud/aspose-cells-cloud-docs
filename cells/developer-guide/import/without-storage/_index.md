@@ -28,7 +28,9 @@ POST https://api.aspose.cloud/v3.0/cells/import
 | file | file | formData | File to upload |
 | ImportOption | ImportOptions | HTTPBody |  IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/Picture |
 
-The import data options parameters are described in [the reference link](/cells/import/#import-data-option-parameter).
+**The import data options parameters** are described in [the reference link](/cells/import/#import-data-option-parameter).
+
+
 
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LiteCells/PostImport) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
