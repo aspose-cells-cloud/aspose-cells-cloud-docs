@@ -1,7 +1,7 @@
 ---
 title: "Import Data without using storage"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: "Import data with storage"
+linktitle: "Import data without storage"
 type: docs
 url: /import/without-storage/ 
 aliases: [/import-data-in-excel-worksheet-without-using-storage/]

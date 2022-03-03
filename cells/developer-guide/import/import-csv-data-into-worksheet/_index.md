@@ -1,7 +1,7 @@
 ---
 title: "Import CSV Data into Excel Worksheet"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: "Import batch data"
+linktitle: "Import csv data"
 type: docs
 url: /import/csv-data/
 aliases: [/import-csv-data-into-excel-worksheet/, /import-csv-data-into-worksheet/,/import-data/csv-data/]
