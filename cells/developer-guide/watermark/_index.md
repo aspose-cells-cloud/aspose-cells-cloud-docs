@@ -3,8 +3,8 @@ title: "Watermark"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /watermark/
-keywords: "REST API, convert, spreadsheets, excel, Text Watermark."
-description: "Cells.Cloud API for Excel file adding text watermark."
+keywords: "Add water marker for Excel files."
+description: "Aspose.Cells Cloud REST API support adding water marker for Excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 39
 ---
 

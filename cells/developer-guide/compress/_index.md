@@ -3,12 +3,12 @@ title: "Compress"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /compress/
-keywords: "REST API, Compress, spreadsheets, excel."
-description: "Cells.Cloud API for Excel files Compress."
-weight: 100
+keywords: "Compress excel files."
+description: "Aspose.Cells Cloud REST API support compressing excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+weight: 99
 ---
 
-This REST API indicates `compress` data in an Excel file.
+This REST API indicates to `compress` data in an Excel file.
 
 - Compress XLS, XLSX, XLSM, XLSB, ODS
 - Quick way to compress multiple Excel spreadsheet files

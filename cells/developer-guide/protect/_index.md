@@ -3,10 +3,13 @@ title: "Protect"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /protect/
-keywords: "REST API, convert, spreadsheets, excel, Protect Excel file ."
-description: "Cells.Cloud API for Excel files Split."
+keywords: "Protect excel files."
+description: "Aspose.Cells Cloud REST API support protecting excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 36
 ---
+
+
+
 
 This REST API indicates  `protect` Excel files.
 

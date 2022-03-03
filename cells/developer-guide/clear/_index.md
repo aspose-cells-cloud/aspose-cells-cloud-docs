@@ -4,12 +4,12 @@ second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /clear/
 aliases: [/clearobjects/]
-keywords: "REST API, convert, spreadsheets, excel, Clean object."
-description: "Cells.Cloud API for Excel files Clear Object."
-weight: 100
+keywords: "Clear internal objects of Excel files."
+description: "Aspose.Cells Cloud REST API support clearing internal objects of Excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+weight: 99
 ---
 
-This REST API indicates `clear` excel object in an Excel files.
+This REST API indicates to `clear` excel object in an Excel files.
 
 ## RSET API
 
