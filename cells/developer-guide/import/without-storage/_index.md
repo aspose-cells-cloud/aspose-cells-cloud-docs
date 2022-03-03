@@ -2,7 +2,7 @@
 title: "Import"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /import/ 
+url: /import/without-storage/ 
 aliases: [/import-data-in-excel-worksheet-without-using-storage/]
 keywords: "REST API,  spreadsheets, excel, Import."
 description: "Cells.Cloud API for Excel files import."

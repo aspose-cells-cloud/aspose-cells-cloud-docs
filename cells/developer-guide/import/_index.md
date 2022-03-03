@@ -7,9 +7,9 @@ aliases: [/import-data-in-excel-worksheet-without-using-storage/]
 keywords: "Import data into Excel files."
 description: "Aspose.Cells Cloud REST API support importing data into Excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 
-weight: 35
+weight: 31
 ---
-Excel data import is a complex process. Many factors contribute to the complexity and therefore, should be taken into account during the export process. The ability to imports kinds of formats and types of data into the file with a precise professional quality is a top feature of Aspose.Cells Cloud.
+Importing data into an Excel file is a complex process. Many factors contribute to the complexity and therefore, should be taken into account during the export process. The ability to imports kinds of formats and types of data into the file with a precise professional quality is a top feature of Aspose.Cells Cloud.
 
 The following APIs to import data into an Excel file or multiple Excel files is provided:
 

@@ -1,6 +1,7 @@
 ---
 title: "Import 2 Dimension Double Array into Excel Worksheet"
 second_title: "Aspose.Cells Cloud Document"
+linktitile: "Import 2 dimension double array"
 type: docs
 url: /import/2dimension-double-array/
 aliases: [/import-2dimension-double-array-into-excel-worksheet/,/import-2dimension-double-array-into-worksheet/, /import-data/2dimension-double-array/]
