@@ -8,7 +8,7 @@ description: "Aspose.Cells Cloud REST API support adding water marker for Excel 
 weight: 39
 ---
 
-This REST API indicates add  `watermark` on Excel files.
+This REST API indicates to add  `watermark` on Excel files.
 
 ## RSET API
  

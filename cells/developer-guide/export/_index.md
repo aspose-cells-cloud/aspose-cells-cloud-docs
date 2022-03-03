@@ -4,7 +4,7 @@ second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /export/
 keywords: "Export excel file and internal objects to kinds of format files."
-description: "Aspose.Cells Cloud REST API support exporting excel file and internal objects to kinds of format files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+description: "Aspose.Cells Cloud REST API support exporting Excel file and internal objects to kinds of format files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 31
 ---
 

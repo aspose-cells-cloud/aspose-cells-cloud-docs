@@ -3,12 +3,12 @@ title: "Merge"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /merge/
-keywords: "REST API, convert, spreadsheets, excel, Merge  Excel file ."
-description: "Cells.Cloud API for Excel files Merge."
+keywords: "Merge multi Excel files into Excel file."
+description: "Aspose.Cells Cloud REST API support merging multi Excel files into Excel file. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 32
 ---
 
-This REST API indicates  `merge` multiple Excel files into an Excel file.
+This REST API indicates to `merge` multiple Excel files into an Excel file.
 
 ## RSET API
  

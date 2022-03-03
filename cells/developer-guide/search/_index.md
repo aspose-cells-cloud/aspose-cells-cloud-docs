@@ -8,7 +8,7 @@ description: "Aspose.Cells Cloud REST API support searching old value by new val
 weight: 33
 ---
 
-This REST API indicates  `search` text on Excel files.
+This REST API indicates to `search` text on Excel files.
 `## RSET API
  
 ```bash

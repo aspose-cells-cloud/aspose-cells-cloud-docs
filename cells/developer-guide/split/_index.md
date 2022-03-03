@@ -8,7 +8,7 @@ description: "Aspose.Cells Cloud REST API support spliting Excel files. SDK supp
 weight: 32
 ---
 
-This REST Api indicates `split` Excel files.
+This REST Api indicates to `split` Excel files.
 
 ## RSET API
 

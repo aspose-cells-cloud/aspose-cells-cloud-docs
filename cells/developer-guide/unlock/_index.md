@@ -8,7 +8,7 @@ description: "Aspose.Cells Cloud REST API support unlocking excel files. SDK sup
 weight: 36
 ---
 
-This REST API indicates  `unlock` Excel files.
+This REST API indicates to `unlock` Excel files.
 ## RSET API
  
 ```bash
