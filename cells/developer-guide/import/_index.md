@@ -31,10 +31,77 @@ The following APIs to import data into an Excel file or multiple Excel files is 
 
 The important parameters are described in the following table:
 
-{{< tabs tabTotal="8" tabID="1" tabName1="Import2DimensionIntegerArrayOption" tabName2="Import2DimensionDoubleArrayOption" tabName3="Import2DimensionStringArrayOption" tabName4="Page Layout" tabName5="Formulas" tabName6="Data" tabName7="Review" tabName8="View" >}}
+{{< tabs tabTotal="9" tabID="1" tabName1="ImportBatchDataOption"  tabName2="ImportCSVDataOption"   tabName3="ImportPictureOption" tabName4="Import2DimensionIntegerArrayOption" tabName5="Import2DimensionDoubleArrayOption" tabName6="Import2DimensionStringArrayOption" tabName7="ImportIntegerArrayOption" tabName8="ImportDoubleArrayOption" tabName9="ImportStringArrayOption" tabName10="CellValue" tabName11="FileSource" >}}
 {{< tab tabNum="1" >}}
 
-<table class="table table-dark">
+<table class="table">
+  <thead>
+    <tr><th scope="col">Parameter</th><th scope="col">Type</th> <th scope="col">Description</th></tr>
+  </thead>
+  <tbody>
+    <tr> <td>BatchData</td><td>List<CellValue></td> <td>batch data</td> </tr>
+    <tr> <td>DestinationWorksheet</td><td> String </td><td> Destination work sheet name.</td></tr>
+    <tr><td>IsInsert</td><td>String</td><td>true/false.</td></tr>
+    <tr><td>ImportDataType</td><td> String </td><td>TwoDimensionStringBatchDataArray</td></tr>
+    <tr> <td>Source</td><td> FileSource </td><td>Indicates data file position when the BatchData parameter is null.</td></tr>
+  </tbody>
+</table>
+{{< /tab >}}
+{{< tab tabNum="2" >}}
+<table class="table">
+  <thead>
+    <tr><th scope="col">Parameter</th><th scope="col">Type</th> <th scope="col">Description</th></tr>
+  </thead>
+  <tbody>
+    <tr> <td>ConvertNumericData</td><td>String</td> <td>true/false.</td> </tr>
+    <tr> <td>FirstRow</td><td>int</td> <td></td> </tr>
+    <tr> <td>FirstColumn</td><td>int</td><td></td></tr>
+    <tr><td>SeparatorString</td><td> String </td> <td></td></tr>
+    <tr> <td>DestinationWorksheet</td><td> String </td><td> Destination work sheet name.</td></tr>
+    <tr><td>CustomParsers</td><td>List<CustomParserConfig></td><td></td></tr>
+    <tr><td>ImportDataType</td><td> String </td><td>CSVData</td></tr>
+    <tr> <td>Source</td><td> FileSource </td><td>Indicates data file position when the BatchData parameter is null.</td></tr>
+  </tbody>
+</table>
+{{< /tab >}}
+{{< tab tabNum="3" >}}
+<table class="table">
+  <thead>
+    <tr><th scope="col">Parameter</th><th scope="col">Type</th> <th scope="col">Description</th></tr>
+  </thead>
+  <tbody>
+    <tr> <td>FirstRow</td><td>int</td> <td></td> </tr>
+    <tr> <td>FirstColumn</td><td>int</td><td></td></tr>
+    <tr><td>IsVertical</td><td>String</td><td>true/false.</td></tr>
+    <tr><td>Data</td><td> String[] </td> <td></td></tr>
+    <tr> <td>DestinationWorksheet</td><td> String </td><td> Destination work sheet name.</td></tr>
+    <tr><td>IsInsert</td><td>String</td><td>true/false.</td></tr>
+    <tr><td>ImportDataType</td><td> String </td><td>Picture</td></tr>
+    <tr> <td>Source</td><td> FileSource </td><td>Indicates data file position when the BatchData parameter is null.</td></tr>
+  </tbody>
+</table>
+{{< /tab >}}
+{{< tab tabNum="4" >}}
+<table class="table">
+  <thead>
+    <tr><th scope="col">Parameter</th><th scope="col">Type</th> <th scope="col">Description</th></tr>
+  </thead>
+  <tbody>
+    <tr> <td>UpperLeftRow</td><td>int</td> <td></td> </tr>
+    <tr> <td>UpperLeftColumn</td><td>int</td><td></td></tr>
+    <tr> <td>LowerRightRow</td><td>int</td> <td></td> </tr>
+    <tr> <td>LowerRightColumn</td><td>int</td><td></td></tr>
+    <tr><td>Filename</td><td>String</td><td></td></tr>
+    <tr><td>Data</td><td> String </td> <td></td></tr>
+    <tr> <td>DestinationWorksheet</td><td> String </td><td> Destination work sheet name.</td></tr>
+    <tr><td>IsInsert</td><td>String</td><td>true/false.</td></tr>
+    <tr><td>ImportDataType</td><td> String </td><td>StringArray</td></tr>
+    <tr> <td>Source</td><td> FileSource </td><td>Indicates data file position when the BatchData parameter is null.</td></tr>
+  </tbody>
+</table>
+{{< /tab >}}
+{{< tab tabNum="5" >}}
+<table class="table">
   <thead>
     <tr><th scope="col">Parameter</th><th scope="col">Type</th> <th scope="col">Description</th></tr>
   </thead>
@@ -49,9 +116,8 @@ The important parameters are described in the following table:
   </tbody>
 </table>
 {{< /tab >}}
-{{< tab tabNum="2" >}}
-
-<table class="table table-dark">
+{{< tab tabNum="6" >}}
+<table class="table">
   <thead>
     <tr><th scope="col">Parameter</th><th scope="col">Type</th> <th scope="col">Description</th></tr>
   </thead>
@@ -66,9 +132,8 @@ The important parameters are described in the following table:
   </tbody>
 </table>
 {{< /tab >}}
-{{< tab tabNum="3" >}}
-
-<table class="table table-dark">
+{{< tab tabNum="7" >}}
+<table class="table">
   <thead>
     <tr><th scope="col">Parameter</th><th scope="col">Type</th> <th scope="col">Description</th></tr>
   </thead>
@@ -83,155 +148,68 @@ The important parameters are described in the following table:
   </tbody>
 </table>
 {{< /tab >}}
+{{< tab tabNum="8" >}}
+<table class="table">
+  <thead>
+    <tr><th scope="col">Parameter</th><th scope="col">Type</th> <th scope="col">Description</th></tr>
+  </thead>
+  <tbody>
+    <tr> <td>FirstRow</td><td>int</td> <td></td> </tr>
+    <tr> <td>FirstColumn</td><td>int</td><td></td></tr>
+    <tr><td>IsVertical</td><td>String</td><td>true/false.</td></tr>
+    <tr><td>Data</td><td> Integer[] </td> <td></td></tr>
+    <tr> <td>DestinationWorksheet</td><td> String </td><td> Destination work sheet name.</td></tr>
+    <tr><td>IsInsert</td><td>String</td><td>true/false.</td></tr>
+    <tr><td>ImportDataType</td><td> String </td><td>IntegerArray</td></tr>
+    <tr> <td>Source</td><td> FileSource </td><td>Indicates data file position when the BatchData parameter is null.</td></tr>
+  </tbody>
+</table>
+{{< /tab >}}
+{{< tab tabNum="9" >}}
+<table class="table">
+  <thead>
+    <tr><th scope="col">Parameter</th><th scope="col">Type</th> <th scope="col">Description</th></tr>
+  </thead>
+  <tbody>
+    <tr> <td>FirstRow</td><td>int</td> <td></td> </tr>
+    <tr> <td>FirstColumn</td><td>int</td><td></td></tr>
+    <tr><td>IsVertical</td><td>String</td><td>true/false.</td></tr>
+    <tr><td>Data</td><td> Double[] </td> <td></td></tr>
+    <tr> <td>DestinationWorksheet</td><td> String </td><td> Destination work sheet name.</td></tr>
+    <tr><td>IsInsert</td><td>String</td><td>true/false.</td></tr>
+    <tr><td>ImportDataType</td><td> String </td><td>DoubleArray</td></tr>
+    <tr> <td>Source</td><td> FileSource </td><td>Indicates data file position when the BatchData parameter is null.</td></tr>
+  </tbody>
+</table>
+{{< /tab >}}
+{{< tab tabNum="10" >}}
+<table class="table">
+  <thead>
+    <tr><th scope="col">Parameter</th><th scope="col">Type</th> <th scope="col">Description</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>rowIndex</td><td>int</td> <td></td> </tr>
+    <tr><td>columnIndex</td><td>int</td><td></td></tr>
+    <tr><td>type</td><td>String</td><td>data type</td></tr>
+    <tr><td>value</td><td>String </td> <td></td></tr>
+    <tr><td>style</td><td> Style(object) </td><td></td></tr>
+  </tbody>
+</table>
+{{< /tab >}}
+{{< tab tabNum="11" >}}
+<table class="table">
+  <thead>
+    <tr><th scope="col">Parameter</th><th scope="col">Type</th> <th scope="col">Description</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>FileSourceType</td><td>String</td> <td>InMemoryFiles/CloudFileSystem/RequestFiles</td> </tr>
+    <tr><td>FilePath</td><td>String</td><td> file position</td></tr>
+  </tbody>
+</table>
+{{< /tab >}}
 {{< /tabs >}}
 
-- **Import2DimensionIntegerArrayOption**
-
-| Parameter Name|Type|Description|
-| :- | :- | :- |
-| FirstRow | int |  |
-| FirstColumn | int |  |
-| Data | Integer[,] |  |
-| DestinationWorksheet | string | destination work sheet name. |
-| IsInsert | string | true/false. |
-| ImportDataType | string | IntArray|
-| Source | FileSource | Indicates data file position when the BatchData parameter is null. |
-
-
-- **Import2DimensionDoubleArrayOption**
-
-| Parameter Name|Type|Description|
-| :- | :- | :- |
-| FirstRow | int |  |
-| FirstColumn | int |  |
-| Data | Double[,] |  |
-| DestinationWorksheet | string | destination work sheet name. |
-| IsInsert | string | true/false. |
-| ImportDataType | string | DoubleArray|
-| Source | FileSource | Indicates data file position when the BatchData parameter is null. |
-
-  
-- **Import2DimensionStringArrayOption**
-
-| Parameter Name|Type|Description|
-| :- | :- | :- |
-| FirstRow | int |  |
-| FirstColumn | int |  |
-| Data | String[,] |  |
-| DestinationWorksheet | string | destination work sheet name. |
-| IsInsert | string | true/false. |
-| ImportDataType | string | StringArray|
-| Source | FileSource | Indicates data file position when the BatchData parameter is null. |
-
-
-- **ImportBatchDataOption**
-
-| Parameter Name|Type|Description|
-| :- | :- | :- |
-| BatchData | List<CellValue> | batch data | 
-| DestinationWorksheet | string | destination work sheet name. |
-| IsInsert | string | true/false. |
-| ImportDataType | string | BatchData|
-| Source | FileSource | Indicates data file position when the BatchData parameter is null. |
-
-
-
-- **CellValue**
-
-| Parameter Name|Type|Description|
-| :- | :- | :- |
-| rowIndex | int |  | 
-| columnIndex | int |  | 
-| type | string | data type |
-| value | string |  |
-| style | Style(object) |  |
-
-
-- **FileSource**
-
-| Parameter Name|Type|Description|
-| :- | :- | :- |
-| FileSourceType | string | InMemoryFiles/CloudFileSystem/RequestFiles | 
-| FilePath | string | file position |
-
-
-- **ImportCSVDataOption**
-
-| Parameter Name|Type|Description|
-| :- | :- | :- |
-| SeparatorString | string |  |
-| ConvertNumericData | string | true/false.|
-| FirstRow | int | |
-| FirstColumn | int | |
-| SourceFile | string | |
-| CustomParsers | List<CustomParserConfig> |  |
-
-
-- **CustomParserConfig**
-
-| Parameter Name|Type|Description|
-| :- | :- | :- |
-| ColumnIndex | int |  |
-| ParseMethod | string |  |
-| CustomStyle | string |  |
-
-- **ImportDoubleArrayOption**
-
-| Parameter Name|Type|Description|
-| :- | :- | :- |
-| FirstRow | int |  |
-| FirstColumn | int |  |
-| IsVertical | string | true/false. |
-| Data | Double[] |  |
-| DestinationWorksheet | string | destination work sheet name. |
-| IsInsert | string | true/false. |
-| ImportDataType | string | TwoDimensionDoubleArray|
-| Source | FileSource | Indicates data file position when the BatchData parameter is null. |
-
-
-- **ImportIntegerArrayOption**
-
-| Parameter Name|Type|Description|
-| :- | :- | :- |
-| FirstRow | int |  |
-| FirstColumn | int |  |
-| IsVertical | string | true/false. |
-| Data | Integer[] |  |
-| DestinationWorksheet | string | destination work sheet name. |
-| IsInsert | string | true/false. |
-| ImportDataType | string | TwoDimensionIntArray|
-| Source | FileSource | Indicates data file position when the BatchData parameter is null. |
-
-
-- **ImportPictureOption**
-
-| Parameter Name|Type|Description|
-| :- | :- | :- |
-| UpperLeftRow | int |  |
-| UpperLeftColumn | int |  |
-| LowerRightRow | int |  |
-| LowerRightColumn | int |  |
-| Filename | string | |
-| Data | String |  |
-| DestinationWorksheet | string | destination work sheet name. |
-| IsInsert | string | true/false. |
-| ImportDataType | string | Picture |
-| Source | FileSource | Indicates data file position when the BatchData parameter is null. |
-
-- **ImportStringArrayOption**
-
-| Parameter Name|Type|Description|
-| :- | :- | :- |
-| FirstRow | int |  |
-| FirstColumn | int |  |
-| IsVertical | string | true/false. |
-| Data | String[] |  |
-| DestinationWorksheet | string | destination work sheet name. |
-| IsInsert | string | true/false. |
-| ImportDataType | string | TwoDimensionStringArray|
-| Source | FileSource | Indicates data file position when the BatchData parameter is null. |
-| DestinationWorksheet | string | destination work sheet name. |
-
+The following articles explain each API how to call in detail and contain cURL and SDK Examples of each API:
 
 - [How to import data into Excel files without using storage.](/cells/import/without-using-storage)
 - [How to import data into Excel files with using storage.](/cells/import/with-using-storage)
