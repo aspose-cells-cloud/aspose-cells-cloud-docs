@@ -1,26 +1,39 @@
 ---
-title: "Import Batch Data into Excel Worksheet"
+title: "Import Double Array into Excel Worksheet"
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "Import double array"
 type: docs
-url: /import-data/batch-data/
-aliases: [/import-batch-data-into-excel-worksheet/,/import-batch-data-into-worksheet/]
-description: "Cells.Cloud API for Excel operate: Import Batch Data into Excel Worksheet."
-weight: 10
+url: /import/double-array/
+aliases: [/import-double-array-into-excel-worksheet/,/import-double-array-into-worksheet/,/import-data/double-array/]
+keywords: "Import double array data into Excel files."
+description: "Aspose.Cells Cloud REST API support importing double array data into Excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+weight: 20
 ---
 
+This REST API `import double array data` into Excel work sheet.
 
-This REST API `import batch data` into Excel work sheet.
+The request is an HTTP request with multipart content (see [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). The first part of the multipart content contains the ImportDoubleArrayOption data and the second contains a data file.
 
-The request is an HTTP request with multipart content (see [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). The first part of the multipart content contains the ImportBatchDataOption data and the second contains a data file.
+## RSET API
+
+```bash
+
+POST https://api.aspose.cloud/v3.0/cells/import
+POST https://api.aspose.cloud/v3.0/cells/{name}/import-data
+
+```
 
 The important parameters are described in the following table:
 
 
-**ImportBatchDataOption**
+**ImportDoubleArrayOption**
 
 | Parameter Name|Type|Description|
 | :- | :- | :- |
-| BatchData | List<CellValue> | batch data | 
+| FirstRow | int |  |
+| FirstColumn | int |  |
+| IsVertical | string | true/false. |
+| Data | Double[] |  |
 | DestinationWorksheet | string | destination work sheet name. |
 | IsInsert | string | true/false. |
 | ImportDataType | string | IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData.|
@@ -28,40 +41,35 @@ The important parameters are described in the following table:
 
 
 
-**CellValue**
-
-| Parameter Name|Type|Description|
-| :- | :- | :- |
-| rowIndex | int |  | 
-| columnIndex | int |  | 
-| type | string | data type |
-| value | string |  |
-| style | Style(object) |  |
-
-
-
-**FileSource**
-| Parameter Name|Type|Description|
-| :- | :- | :- |
-| FileSourceType | string | InMemoryFiles/CloudFileSystem/RequestFiles | 
-| FilePath | string | file position |
-
-
 **Example**
 
 ```xml
-<ImportIntArrayOption>
+
+<ImportDoubleArrayOption>
     <DestinationWorksheet>Sheet1</DestinationWorksheet>
     <IsInsert>false</IsInsert>
-    <ImportDataType>IntArray</ImportDataType>
+    <ImportDataType>DoubleArray</ImportDataType>
     <FirstRow>1</FirstRow>
     <FirstColumn>1</FirstColumn>
     <IsVertical>true</IsVertical>
     <Source>
         <FileSourceType>CloudFileSystem</FileSourceType>
-        <FilePath>Array_int_xml.txt</FilePath>
+        <FilePath>Array_double_xml.txt</FilePath>
     </Source>
-</ImportIntArrayOption>
+</ImportDoubleArrayOption>
+
+```
+
+```json
+{
+    "Data": [1.99, 1.9, 2.0],
+    "DestinationWorksheet": "Sheet1",
+    "FirstRow": 0,
+    "FirstColumn": 0,
+    "IsVertical": false,
+    "IsInsert": true,
+    "importDataType": "DoubleArray"
+}
 
 ```
 
@@ -70,7 +78,6 @@ The important parameters are described in the following table:
 Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
-
 
 {{< tabs tabTotal="3" tabID="4" tabName1="C#" tabName2="PHP" tabName3="Ruby" >}}
 
@@ -82,7 +89,7 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 {{< tab tabNum="2" >}}
 
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-Workbook-PostImportBatchData.php" >}}
+{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-Workbook-PostImportDataCloudFile-Double.php" >}}
 
 {{< /tab >}}
 
@@ -93,3 +100,7 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{< /tab >}}
 
 {{< /tabs >}}
+
+
+
+

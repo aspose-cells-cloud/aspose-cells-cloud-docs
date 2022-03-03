@@ -2,12 +2,12 @@
 title: "Get"
 type: docs
 url: /hyperlinks/get/
-keywords: "REST API, hyperlinks, spreadsheets, excel"
-description: "Cells.Cloud API for Excel operate: get a hyperlink on an Excel file."
+keywords: "Delete a hyperlink from an Excel worksheet."
+description: "Aspose.Cells Cloud REST API support deleting hyperlinks from an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 10
 ---
 
-TThis REST API indicates `get worksheet hyperlink` by index.
+This REST API indicates to `get worksheet hyperlink` by index on an Excel worksheet.
  
 ## RSET API
  

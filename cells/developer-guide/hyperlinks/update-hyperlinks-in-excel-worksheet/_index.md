@@ -3,12 +3,12 @@ title: "Update"
 type: docs
 url: /hyperlinks/update/
 aliases: [/update-hyperlinks-in-excel-worksheet/]
-keywords: "REST API, hyperlinks, spreadsheets, excel"
-description: "Cells.Cloud API for Excel operate: update hyperlink on an Excel file."
+keywords: "Update a hyperlink in an Excel worksheet."
+description: "Aspose.Cells Cloud REST API support updating a hyperlink in an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 30
 ---
 
-This REST API indicates `update worksheet hyperlink` by index.
+This REST API indicates to `update worksheet hyperlink` by index on an Excel worksheet.
  
 ## RSET API
  

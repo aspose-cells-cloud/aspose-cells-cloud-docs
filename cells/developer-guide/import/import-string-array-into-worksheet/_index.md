@@ -1,16 +1,27 @@
 ---
 title: "Import String Array into Excel Worksheet"
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "Import string array"
 type: docs
-url: /import-data/string-array/
-aliases: [/import-string-array-into-excel-worksheet/,/import-string-array-into-worksheet/]
-description: "Cells.Cloud API for Excel operate: Import string array data into Excel Worksheet."
+url: /import/string-array/
+aliases: [/import-string-array-into-excel-worksheet/,/import-string-array-into-worksheet/,/import-data/string-array/]
+keywords: "Import string array data into Excel files."
+description: "Aspose.Cells Cloud REST API support importing string array data into Excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 40
 ---
 
 This REST API `import string array data` into Excel work sheet.
 
 The request is an HTTP request with multipart content (see [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). The first part of the multipart content contains the ImportStringArrayOption data and the second contains a data file.
+
+## RSET API
+
+```bash
+
+POST https://api.aspose.cloud/v3.0/cells/import
+POST https://api.aspose.cloud/v3.0/cells/{name}/import-data
+
+```
 
 The important parameters are described in the following table:
 

@@ -3,8 +3,8 @@ title: "Export"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /export/
-keywords: "REST API, convert, spreadsheets, excel"
-description: "Cells.Cloud API for Excel export: export excel file or object in excel file to other format file."
+keywords: "Export excel file and internal objects to kinds of format files."
+description: "Aspose.Cells Cloud REST API support exporting excel file and internal objects to kinds of format files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 31
 ---
 

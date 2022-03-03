@@ -1,10 +1,11 @@
 ---
 title: "Export Workbook"
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "Workbook"
 type: docs
 url: /export/excel-to-different-formats/
-keywords: "REST API, convert, export，spreadsheets, excel"
-description: "Cells.Cloud API for Excel operate: export excel file to different format file."
+keywords: "Export Excel file to kinds of format files."
+description: "Aspose.Cells Cloud REST API support exporting Excel file to kinds of format files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 20
 ---
 

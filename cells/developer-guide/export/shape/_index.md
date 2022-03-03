@@ -1,10 +1,11 @@
 ---
 title: "Export Shape"
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "Shape"
 type: docs
 url: /export/excel-shape-to-different-formats/
-keywords: "REST API, convert, export，spreadsheets, excel,shape"
-description: "Cells.Cloud API for Excel operate: export excel file to different format file."
+keywords: "Export Excel shape to kinds of format files."
+description: "Aspose.Cells Cloud REST API support exporting Excel shape to kinds of format files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 20
 ---
 

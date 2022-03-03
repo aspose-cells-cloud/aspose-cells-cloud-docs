@@ -1,10 +1,11 @@
 ---
 title: "Export List Object"
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "List Object"
 type: docs
 url: /export/execl-listobject-to-different-formats/
-keywords: "REST API, convert, export，spreadsheets, excel worksheet"
-description: "Cells.Cloud API for Excel operate: export excel  list object to different format file."
+keywords: "Export Excel list object to kinds of format files."
+description: "Aspose.Cells Cloud REST API support exporting Excel list object to kinds of format files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 20
 ---
 
@@ -15,7 +16,7 @@ You can export formats:  [XLS](https://docs.fileformat.com/spreadsheet/xls/), [X
 
 |**API**|**Type**|**Description**|**Swagger Link**|
 | :- | :- | :- | :- |
-|/cells/export|POST|Export excel from request content to some format|[PostExport](https://apireference.aspose.cloud/cells/#/LiteCells/PostExport)|
+|/cells/export|POST|Export Excel from request content to some format|[PostExport](https://apireference.aspose.cloud/cells/#/LiteCells/PostExport)|
 
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LiteCells/PostExport) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. 

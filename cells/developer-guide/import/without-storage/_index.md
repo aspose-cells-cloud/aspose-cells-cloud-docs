@@ -4,20 +4,21 @@ second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /import/ 
 aliases: [/import-data-in-excel-worksheet-without-using-storage/]
-keywords: "Import data into Excel files."
-description: "Aspose.Cells Cloud REST API support importing data into Excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
-
+keywords: "REST API,  spreadsheets, excel, Import."
+description: "Cells.Cloud API for Excel files import."
 weight: 35
 ---
 Excel data import is a complex process. Many factors contribute to the complexity and therefore, should be taken into account during the export process. The ability to imports kinds of formats and types of data into the file with a precise professional quality is a top feature of Aspose.Cells Cloud.
 
-The following APIs to import data into an Excel file or multiple Excel files is provided:
+This REST API indicates `import data` in an Excel file.
 
-|API|Description|
-| :- | :- |
-|[POST /cells/impport](https://apireference.aspose.cloud/cells/#/LightCells/PostImport)| Import data into Excel files without using storage.|
-|[POST /cells/{name}/impportdata](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData)|Import data into the Excel file with using storage.|
+## RSET API
 
+```bash
+
+POST https://api.aspose.cloud/v3.0/cells/import
+
+```
 
 **The request parameters are:** 
  
@@ -176,13 +177,104 @@ The important parameters are described in the following table:
 | DestinationWorksheet | string | destination work sheet name. |
 
 
-- [How to import data into Excel files without using storage.](/cells/import/without-using-storage)
-- [How to import data into Excel files with using storage.](/cells/import/with-using-storage)
-- [How to import Batch Data into Excel Worksheet](/cells/import-batch-data-into-worksheet/)
-- [How to import Double Array into Excel Worksheet](/cells/import-double-array-into-worksheet/)
-- [How to import Integer Array into Excel Worksheet](/cells/import-integer-array-into-worksheet/)
-- [How to import String Array into Excel Worksheet](/cells/import-string-array-into-worksheet/)
-- [How to import CSV Data into Excel Worksheet](/cells/import-csv-data-into-worksheet/)
-- [How to import 2 Dimension Double Array into Excel Worksheet](/cells/import-2dimension-double-array-into-worksheet/)
-- [How to import 2 Dimension Integer Array into Excel Worksheet](/cells/import-2dimension-integer-array-into-worksheet/)
-- [How to iImport 2 Dimension String Array into Excel Worksheet](/cells/import-2dimension-string-array-into-worksheet/)
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LiteCells/PostImport) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+ 
+You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+ 
+{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+ 
+{{< tab tabNum="11" >}}
+ 
+```bash
+ 
+curl -v "http://api.aspose.cloud/v3.0/cells/import" \
+-X POST \
+-H "Content-Type: application/json" \
+-H "Accept: application/json" \
+-H "Authorization: Bearer <jwt token>" \
+-F 'xxxxx1=@xxxx1.xlsx' \
+-F 'xxxxx2=@xxxx2.xlsx' \
+-F 'ImportOption={\"Data\":[1,2,4],\"DestinationWorksheet\":\"Sheet1\",\"FirstRow\":1,\"FirstColumn\":2,\"IsVertical\":true,\"IsInsert\":true,\"importDataType\":\"IntArray\"}'
+```
+ 
+{{< /tab >}}
+ 
+{{< tab tabNum="12" >}}
+ 
+```bash
+{
+    "Files":
+    [
+        { 
+            "Filename":"xxxxx",
+            "FileSize":274022,
+            "FileContent":"-----Base64String--------"
+        },
+        { 
+            "Filename":"xxxxx",
+            "FileSize":274022,
+            "FileContent":"-----Base64String--------"
+        }
+    ]
+}
+ 
+```
+ 
+{{< /tab >}}
+ 
+{{< /tabs >}}
+ 
+## Cloud SDK Family
+ 
+Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+ 
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+
+
+{{< tabs tabTotal="9" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" tabName9="Python" >}}
+
+{{< tab tabNum="1" >}}
+
+
+
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+
+{{< /tab >}}
+
+{{< tab tabNum="3" >}}
+
+{{< /tab >}}
+
+{{< tab tabNum="4" >}}
+
+
+{{< /tab >}}
+
+{{< tab tabNum="5" >}}
+
+
+{{< /tab >}}
+
+{{< tab tabNum="6" >}}
+
+
+{{< /tab >}}
+
+{{< tab tabNum="7" >}}
+
+
+{{< /tab >}}
+
+{{< tab tabNum="8" >}}
+
+
+{{< /tab >}}
+
+{{< tab tabNum="9" >}}
+
+{{< /tab >}}
+
+{{< /tabs >}}

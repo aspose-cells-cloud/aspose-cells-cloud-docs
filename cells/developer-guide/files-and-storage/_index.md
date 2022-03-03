@@ -4,8 +4,8 @@ second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /files-and-storage/
 aliases: [/working-with-files-and-storage-using-aspose-cells-cloud/]
-keywords: "REST API, upload, download, delelte, spreadsheets, excel"
-description: "Cells.Cloud API for Excel operate: upload, download and delete excel file to storage."
+keywords: "Learn how to work with Aspose Cells Cloud file storage."
+description: "Learn how to work with Aspose Cells Cloud file storage. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 100
 ---
 

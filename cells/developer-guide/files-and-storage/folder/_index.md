@@ -3,8 +3,8 @@ title: "Folder"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /folder/
-keywords: "REST API, upload, download, delelte, spreadsheets, excel"
-description: "Cells.Cloud API for Excel operate: upload, download and delete excel file to storage."
+keywords: "Upload, download, delete, copy, and move folder."
+description: "Aspose.Cells Cloud REST API support uploading, downloading, deleting, copying, and moving folder. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 100
 ---
 

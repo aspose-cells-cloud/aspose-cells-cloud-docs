@@ -3,8 +3,8 @@ title: "File Versions"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /storage/file-versions/
-keywords: "REST API, upload, download, delelte, copy, spreadsheets, excel"
-description: "Cells.Cloud API for Excel operate: get file versions."
+keywords: "Learn how to get file version with Aspose Cells Cloud REST API."
+description: "Learn how to get file version with Aspose Cells Cloud REST API SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 100
 ---
 

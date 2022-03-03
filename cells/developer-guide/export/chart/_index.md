@@ -1,10 +1,11 @@
 ---
 title: "Export Chart"
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "Chart"
 type: docs
 url: /export/excel-chart-to-different-formats/
-keywords: "REST API, convert, export，spreadsheets, excel,chart"
-description: "Cells.Cloud API for Excel operate: export excel charts to different format file."
+keywords: "Export Excel chart to kinds of format files."
+description: "Aspose.Cells Cloud REST API support exporting Excel chart to kinds of format files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 20
 ---
 
@@ -15,7 +16,7 @@ You can export formats:  [PNG](https://docs.fileformat.com/Image/png/), [GIF](ht
 
 |**API**|**Type**|**Description**|**Swagger Link**|
 | :- | :- | :- | :- |
-|/cells/export|POST|Export excel objects from request content to some format|[PostExport](https://apireference.aspose.cloud/cells/#/LiteCells/PostExport)|
+|/cells/export|POST|Export Excel objects from request content to some format|[PostExport](https://apireference.aspose.cloud/cells/#/LiteCells/PostExport)|
 
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LiteCells/PostExport) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. 

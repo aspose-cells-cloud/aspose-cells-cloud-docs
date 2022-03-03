@@ -3,8 +3,8 @@ title: "Object Exist"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /storage/object-exists/
-keywords: "REST API, upload, download, delelte, copy, spreadsheets, excel"
-description: "Cells.Cloud API for Excel operate: check if storage exist."
+keywords: "Learn how to check object exist with Aspose Cells Cloud REST API."
+description: "Learn how to check object exist with Aspose Cells Cloud REST API SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 100
 ---
 

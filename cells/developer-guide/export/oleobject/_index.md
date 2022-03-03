@@ -1,10 +1,11 @@
 ---
 title: "Export OLE Object"
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "OLE Object"
 type: docs
 url: /export/excel-ole-object/
-keywords: "REST API, convert, export，spreadsheets, excel ole object"
-description: "Cells.Cloud API for Excel operate: export ole object."
+keywords: "Export Excel OLE object to kinds of format files."
+description: "Aspose.Cells Cloud REST API support exporting Excel OLE object to kinds of format files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 20
 ---
 

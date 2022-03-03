@@ -1,10 +1,11 @@
 ---
 title: "Export Picture"
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "Picture"
 type: docs
 url: /export/excel-picture-to-different-formats/
-keywords: "REST API, convert, export，spreadsheets, excel,picture"
-description: "Cells.Cloud API for Excel operate: export excel pictures to different format file."
+keywords: "Export Excel picture to kinds of format files."
+description: "Aspose.Cells Cloud REST API support exporting Excel picture to kinds of format files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 20
 ---
 

@@ -3,8 +3,8 @@ title: "Create Folder"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /folder/create/
-keywords: "REST API, create, download, delelte, spreadsheets, excel"
-description: "Cells.Cloud API for Excel operate: create, download and delete folder to storage."
+keywords: "Learn how to create folder with Aspose Cells Cloud REST API."
+description: "Learn how to create folder with Aspose Cells Cloud REST API SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 100
 ---
 
