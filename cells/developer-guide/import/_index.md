@@ -23,11 +23,24 @@ The following APIs to import data into an Excel file or multiple Excel files is 
 
 ## Request Parameters
  
+### Without using storage
+
 | Parameter Name | Type | Path/Query String/HTTPBody | Description| 
 | :- | :- | :- |:- | 
 | file | file | formData | File to upload |
 | ImportOption | ImportOptions | HTTPBody |  IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/Picture |
 
+### With using storage
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description| 
+| :- | :- | :- |:- | 
+| name | string | path |   |
+| folder | string | query |   |
+| storageName | string | query | storage name. |
+| importData |  | body |   |
+
+
+### Import data option parameter
 
 **The important parameters are described in the following table**:
 
