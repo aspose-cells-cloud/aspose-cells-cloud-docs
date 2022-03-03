@@ -31,7 +31,7 @@ The following APIs to import data into an Excel file or multiple Excel files is 
 
 The important parameters are described in the following table:
 
-{{< tabs tabTotal="9" tabID="1" tabName1="ImportBatchDataOption"  tabName2="ImportCSVDataOption"   tabName3="ImportPictureOption" tabName4="Import2DimensionIntegerArrayOption" tabName5="Import2DimensionDoubleArrayOption" tabName6="Import2DimensionStringArrayOption" tabName7="ImportIntegerArrayOption" tabName8="ImportDoubleArrayOption" tabName9="ImportStringArrayOption" tabName10="CellValue" tabName11="FileSource" >}}
+{{< tabs tabTotal="11" tabID="1" tabName1="ImportBatchDataOption"  tabName2="ImportCSVDataOption"   tabName3="ImportPictureOption" tabName4="Import2DimensionIntegerArrayOption" tabName5="Import2DimensionDoubleArrayOption" tabName6="Import2DimensionStringArrayOption" tabName7="ImportIntegerArrayOption" tabName8="ImportDoubleArrayOption" tabName9="ImportStringArrayOption" tabName10="CellValue" tabName11="FileSource" >}}
 {{< tab tabNum="1" >}}
 
 <table class="table">
@@ -208,6 +208,8 @@ The important parameters are described in the following table:
 </table>
 {{< /tab >}}
 {{< /tabs >}}
+
+## How to call RSET APIs
 
 The following articles explain each API how to call in detail and contain cURL and SDK Examples of each API:
 
