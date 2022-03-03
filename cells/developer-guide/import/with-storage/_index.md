@@ -1,11 +1,12 @@
 ---
-title: "Import Data"
+title: "Import Data with using storage"
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "Import data with storage"
 type: docs
 url: /import/with-storage/
 aliases: [/import-data-into-excel-worksheet/, /import-data-into-worksheet/ , /import-data-in-excel-worksheet/, /import-data/]
 description: "Cells.Cloud API for Excel operate: Import Data into Excel Worksheet."
-weight: 100
+weight: 10
 ---
 
 This REST API indicates `import data` into Excel file.
