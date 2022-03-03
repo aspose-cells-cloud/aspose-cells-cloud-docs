@@ -4,29 +4,40 @@ second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /developer-guide/
 aliases: [/developer-guide/v3.0/,/developer-guide-v3.0/]
+keywords: "How to use Aspose.Cells Cloud REST APIs. Office Excel 2013,  Office Excel 2016,  Office Excel 2019，office Excel 365."
 description: "This Developer Guide describes practical scenarios and tips to help you use specific Aspose.Cells for .NET features, achieve a certain Excel document appearance, or make a use case possible."
 weight: 20
 ---
 
-## Working with Aspose.Cells Cloud v3.0  REST APIs.
+## Working with Aspose.Cells Cloud REST APIs.
 
 {{< tabs tabTotal="8" tabID="1" tabName1="File" tabName2="Home" tabName3="Insert" tabName4="Page Layout" tabName5="Formulas" tabName6="Data" tabName7="Review" tabName8="View" >}}
 {{< tab tabNum="1" >}}
 <div class="row">
     <div class="col-md-6">
-        <p>Workbook new, convert</p>
+        <p>Workbook new, convert, saveas</p>
         <ul>
             <li><a href="/cells/create-an-empty-excel-workbook/">Creates an empty Excel workbook.</a></li>
             <li><a href="/cells/create-excel-workbook-from-a-template-file/">Creates Excel workbook from a template file.</a></li>
             <li><a href="/cells/create-excel-workbook-from-a-smartmarker-template/">Creates Excel workbook from a smart marker template.</a></li>
-            <li><a href="/cells/convert-excel-workbook-to-different-file-formats/">Converts Excel workbook to different file formats.</a></li>
+            <li><a href="/cells/convert/">Converts Excel workbook to different file formats.</a></li>
+            <li><a href="/cells/saveas-other-formats/">Save Excel workbook as different file formats.</a></li>
+        </ul>
+        <p>Search, Replace</p>
+        <ul>
+            <li><a href="/cells/search/">Search text form Excel files.</a></li>
+            <li><a href="/cells/replace/">Replace old value by new value on Excel files.</a></li>
+        </ul>
+        <p>Compress</p>
+        <ul>
+            <li><a href="/cells/compress/">Compress Excel files.</a></li>
         </ul>
     </div>
     <div class="col-md-6">
         <p>Workbook merge, split</p>
         <ul>
-            <li><a href="/cells/merge-excel-workbooks/">Merges Excel workbooks.</a></li>
-            <li><a href="/cells/split-excel-workbooks/">Splits Excel workbooks.</a></li>
+            <li><a href="/cells/merge/">Merges Excel workbooks.</a></li>
+            <li><a href="/cells/split/">Splits Excel workbooks.</a></li>
         </ul>
         <p>Watermarks</p>
         <ul>
@@ -181,13 +192,18 @@ weight: 20
     <div class="col-md-6">
         <p>Import Data</p>
         <ul>
-            <li><a href="/cells/import-batch-data-into-worksheet/">Imports batch data into an Excel worksheet.</a></li>
-            <li><a href="/cells/import-double-array-into-worksheet/">Imports double array into an Excel worksheet.</a></li>
-            <li><a href="/cells/import-integer-array-into-worksheet/">Imports integer array into an Excel worksheet.</a></li>
-            <li><a href="/cells/import-string-array-into-worksheet/">Imports string array into an Excel worksheet.</a></li>
+            <li><a href="/cells/import/">Imports data into Excel files.</a></li>
             <li><a href="/cells/import-csv-data-into-worksheet/">Imports CSV data into an Excel worksheet.</a></li>
-            <li><a href="/cells/import-data-in-excel-worksheet/">Imports data into an Excel worksheet.</a></li>
-            <li><a href="/cells/import-data-in-excel-worksheet-without-using-storage/">Imports data into an Excel worksheet without using Storage.</a></li>
+            <li><a href="/cells/import/picture/">Imports picture into an Excel worksheet.</a></li>
+            <li><a href="/cells/import/double-array/">Imports double array into an Excel worksheet.</a></li>
+            <li><a href="/cells/import/integer-array/">Imports integer array into an Excel worksheet.</a></li>
+            <li><a href="/cells/import/string-array//">Imports string array into an Excel worksheet.</a></li>
+            <li><a href="/cells/import/with-storage/">IImports data into an Excel worksheet with using Storage.</a></li>
+            <li><a href="/cells/import/without-storage/">Imports data into an Excel worksheet without using Storage.</a></li>
+        </ul>
+        <p>Assembly</p>
+        <ul>
+            <li><a href="/cells/assembly/">Assemble data in Excel files.</a></li>
         </ul>
     </div>
 </div>
