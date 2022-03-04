@@ -3,8 +3,8 @@ title: "Unlock"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /unlock/
-keywords: "Unlock excel files."
-description: "Aspose.Cells Cloud REST API support unlocking excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "Unlock Excel files."
+description: "Aspose.Cells Cloud REST API support unlocking Excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 36
 ---
 

@@ -1,6 +1,7 @@
 ---
-title: "Export"
+title: "Export excel file and internal objects to kinds of format"
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "Export"
 type: docs
 url: /export/
 keywords: "Export excel file and internal objects to kinds of format files."
