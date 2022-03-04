@@ -197,9 +197,9 @@ weight: 20
             <li><a href="/cells/import/picture/">Imports picture into an Excel worksheet.</a></li>
             <li><a href="/cells/import/double-array/">Imports double array into an Excel worksheet.</a></li>
             <li><a href="/cells/import/integer-array/">Imports integer array into an Excel worksheet.</a></li>
-            <li><a href="/cells/import/string-array//">Imports string array into an Excel worksheet.</a></li>
-            <li><a href="/cells/import/with-storage/">IImports data into an Excel worksheet with using Storage.</a></li>
-            <li><a href="/cells/import/without-storage/">Imports data into an Excel worksheet without using Storage.</a></li>
+            <li><a href="/cells/import/string-array/">Imports string array into an Excel worksheet.</a></li>
+            <li><a href="/cells/import/with-using-storage/">IImports data into an Excel worksheet with using Storage.</a></li>
+            <li><a href="/cells/import/without-using-storage/">Imports data into an Excel worksheet without using Storage.</a></li>
         </ul>
         <p>Assembly</p>
         <ul>
