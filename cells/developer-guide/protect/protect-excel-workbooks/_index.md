@@ -1,12 +1,13 @@
 ---
 title: "Protect an Excel Workbook"
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "Protect"
 type: docs
 url: /workbook/protect/
 aliases: [/protect-excel-workbooks/]
-keywords: "REST API, spreadsheets, excel, merge"
-description: "Cells.Cloud API for Excel operate: protect an Excel workbook."
-weight: 80
+keywords: "Protect Excel files."
+description: "Aspose.Cells Cloud REST API support protecting Excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+weight: 30
 ---
 
 This REST API protect an Excel `workbook`.

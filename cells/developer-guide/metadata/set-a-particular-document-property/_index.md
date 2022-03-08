@@ -10,7 +10,7 @@ description: "Aspose.Cells Cloud REST API support updating properties from excel
 weight: 30
 ---
 
-This REST API indicates Set/create document property.
+This REST API indicates to `set/create` document property.
  
 ## RSET API
  

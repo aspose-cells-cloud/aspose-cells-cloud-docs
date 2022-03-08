@@ -9,7 +9,7 @@ description: "Aspose.Cells Cloud REST API support getting properties from excel 
 weight: 23
 ---
 
-This REST API indicates get  `metadata`  from multiple Excel files.
+This REST API indicates to get  `metadata`  from multiple Excel files.
 
 ```bash
 

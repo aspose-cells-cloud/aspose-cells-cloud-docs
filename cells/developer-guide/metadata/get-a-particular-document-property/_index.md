@@ -10,7 +10,7 @@ description: "Aspose.Cells Cloud REST API support getting properties from excel 
 weight: 20
 ---
 
-This REST API indicates Read document property by name.
+This REST API indicates to read document property by name.
  
 ## RSET API
  

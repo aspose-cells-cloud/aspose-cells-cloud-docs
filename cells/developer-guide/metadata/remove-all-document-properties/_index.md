@@ -10,7 +10,7 @@ description: "Aspose.Cells Cloud REST API support deleting properties from excel
 weight: 58
 ---
 
-This REST API indicates Delete all custom document properties and clean built-in ones.
+This REST API indicates to `delete all` custom document properties and clean built-in ones.
  
 ## RSET API
  
