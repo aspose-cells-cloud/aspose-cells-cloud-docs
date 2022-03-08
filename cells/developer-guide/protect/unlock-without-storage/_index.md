@@ -1,6 +1,7 @@
 ---
 title: "Unlock"
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "Decrypt without using storage"
 type: docs
 url: /unlock/without-using-storage/
 aliases: [/unlock/without-storage/,/unlock/]

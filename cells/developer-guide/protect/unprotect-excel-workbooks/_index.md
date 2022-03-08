@@ -1,5 +1,7 @@
 ---
 title: "Unprotect an Excel workbook"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "Unprotect"
 type: docs
 url: /workbook/unprotect/
 aliases: [/unprotect-excel-workbooks/]

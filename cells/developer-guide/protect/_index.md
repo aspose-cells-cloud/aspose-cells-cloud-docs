@@ -1,10 +1,11 @@
 ---
-title: "Protect Excel files"
+title: "Protect workbook"
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "Protect"
 type: docs
 url: /protect/
-keywords: "Protect and unprotect Excel files."
-description: "Aspose.Cells Cloud REST API support protecting and unprotecting Excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "Protect and unprotect Excel workbook."
+description: "Aspose.Cells Cloud REST API support protecting and unprotecting Excel workbook. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 36
 ---
 

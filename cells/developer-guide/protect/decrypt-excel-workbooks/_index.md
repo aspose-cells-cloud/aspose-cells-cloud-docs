@@ -1,6 +1,7 @@
 ---
 title: "Decrypt an Excel workbook"
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "Decrypt"
 type: docs
 url: /workbook/decrypt/
 aliases: [/decrypt-excel-workbooks/]
