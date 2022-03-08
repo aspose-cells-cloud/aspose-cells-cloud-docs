@@ -1,11 +1,13 @@
 ---
 title: "Remove All Document Properties"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "Clear"
 type: docs
 url: /document-properties/clear/
 aliases: [/remove-all-document-properties/]
-keywords: "REST API, spreadsheets, excel,clear , document property, metadata"
-description: "Cells.Cloud API for Excel operate: document property clear operate."
-weight: 40
+keywords: "delete properties from excel files."
+description: "Aspose.Cells Cloud REST API support deleting properties from excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+weight: 58
 ---
 
 This REST API indicates Delete all custom document properties and clean built-in ones.

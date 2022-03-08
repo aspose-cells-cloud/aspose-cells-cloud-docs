@@ -1,14 +1,15 @@
 ---
-title: "Delete Metadata"
+title: "Delete metadata on Excel files."
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "Delete without using storage"
 type: docs
 url: /metadata/delete/
-keywords: "REST API, convert, spreadsheets, excel, delete metadata from Excel file ."
-description: "Cells.Cloud API for Excel files delete metadata."
-weight: 100
+keywords: "Deleting metadata from Excel files."
+description: "Aspose.Cells Cloud REST API support deleting metadata from excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+weight: 55
 ---
 
-This REST API indicates delete  `metadata`  from multiple Excel files.
+This REST API indicates to delete `metadata`  from multiple Excel files.
 
 
 ## RSET API

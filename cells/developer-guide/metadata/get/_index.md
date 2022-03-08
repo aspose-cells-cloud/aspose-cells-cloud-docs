@@ -1,11 +1,12 @@
 ---
-title: "Get Metadata"
+title: "Get metadata from Excel files"
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "Get without using storage"
 type: docs
 url: /metadata/get/
-keywords: "REST API, convert, spreadsheets, excel, get metadata from Excel file ."
-description: "Cells.Cloud API for Excel files get metadata."
-weight: 100
+keywords: "Get properties from Excel files."
+description: "Aspose.Cells Cloud REST API support getting properties from excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+weight: 23
 ---
 
 This REST API indicates get  `metadata`  from multiple Excel files.

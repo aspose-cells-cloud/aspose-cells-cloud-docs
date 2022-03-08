@@ -1,10 +1,12 @@
 ---
 title: "Set a Particular Document Property"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "Update"
 type: docs
 url: /document-properties/update/
 aliases: [/set-a-particular-document-property/]
-keywords: "REST API, spreadsheets, excel,update , document property, metadata"
-description: "Cells.Cloud API for Excel operate: document property update operate."
+keywords: "Update properties from excel files."
+description: "Aspose.Cells Cloud REST API support updating properties from excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 30
 ---
 

@@ -1,11 +1,13 @@
 ---
 title: "Get All Document Properties"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "Get all"
 type: docs
 url: /document-properties/get-all/
 aliases: [/get-all-document-properties/]
-keywords: "REST API, spreadsheets, excel,get  document property, metadata"
-description: "Cells.Cloud API for Excel operate: document property  get operate."
-weight: 10
+keywords: "Get properties from excel files."
+description: "Aspose.Cells Cloud REST API support getting properties from excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+weight: 25
 ---
 This REST API indicates Read document properties.
  
