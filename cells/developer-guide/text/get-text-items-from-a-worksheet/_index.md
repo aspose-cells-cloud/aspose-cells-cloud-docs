@@ -1,5 +1,7 @@
 ---
-title: "Get Text Items from a Worksheet"
+title: "Get text items from an Excel worksheet"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "Get in worksheet"
 type: docs
 url: /worksheets/get-text-items/
 aliases: [/get-text-items-from-a-worksheet/]

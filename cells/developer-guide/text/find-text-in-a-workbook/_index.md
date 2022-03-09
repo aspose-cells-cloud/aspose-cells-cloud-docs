@@ -1,5 +1,7 @@
 ---
-title: "Find Text in a Workbook"
+title: "Find text in an Excel workbook"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "Find in workbook"
 type: docs
 url: /workbook/find-text/
 aliases: [/find-text-in-a-workbook/]

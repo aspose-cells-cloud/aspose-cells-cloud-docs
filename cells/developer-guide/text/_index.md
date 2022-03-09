@@ -6,7 +6,7 @@ url: /text/
 aliases: [/working-with-text/]
 keywords: "Get, find, and replace text from Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) files."
 description: "Aspose.Cells Cloud REST API support getting, finding, and replacing text from Excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
-weight: 100
+weight: 34
 ---
 
 ## How to work with text on an Excel file.
