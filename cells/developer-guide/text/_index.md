@@ -9,6 +9,8 @@ description: "Aspose.Cells Cloud REST API support getting, finding, and replacin
 weight: 34
 ---
 
+Text operate  is a complex process for Excel fie. Many factors contribute to the complexity and therefore, should be taken into account during the export process. The ability to text operates kinds of formats and types of data into the file with a precise professional quality is a top feature of Aspose.Cells Cloud.
+
 ## How to work with text on an Excel file.
 
 - [How to get text items from an Excel workbook.](/cells/workbook/get-text-items/)
