@@ -11,7 +11,7 @@ description: "Aspose.Cells Cloud REST API support finding text from Excel worksh
 weight: 70
 ---
 
-This REST API indicates Replace text.
+This REST API indicates to `replace` text in an Excel worksheet.
  
 ## RSET API
  

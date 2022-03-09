@@ -10,7 +10,7 @@ keywords: "Replace text from Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Do
 description: "Aspose.Cells Cloud REST API support repleacing text from Excel workbook. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 ---
 
-This REST API indicates `replace` text in an Excel file.
+This REST API indicates to `replace` text in an Excel workbook.
  
 ## RSET API
  

@@ -10,7 +10,7 @@ keywords: "Find text from Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Docum
 description: "Aspose.Cells Cloud REST API support finding text from Excel workbook. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 ---
 
-This REST API indicates `search` text in an Excel file.
+This REST API indicates to `search` text in an Excel file.
  
 ## RSET API
  

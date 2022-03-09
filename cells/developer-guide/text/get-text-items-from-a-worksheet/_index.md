@@ -10,7 +10,7 @@ keywords: "Get text from Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Docume
 description: "Aspose.Cells Cloud REST API support getting text from Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 ---
 
-This REST API indicates read  worksheet's `text items` from an Excel file.
+This REST API indicates to `read`  worksheet's `text items` in Excel worksheet.
  
 ## RSET API
  

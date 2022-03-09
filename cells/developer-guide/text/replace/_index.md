@@ -9,7 +9,7 @@ description: "Aspose.Cells Cloud REST API support replacing old value by new val
 weight: 80
 ---
 
-This REST API indicates to `replace` data in an Excel file.
+This REST API indicates to `replace` data from Excel files.
 
 ## RSET API
 

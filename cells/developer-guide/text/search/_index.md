@@ -10,7 +10,7 @@ description: "Aspose.Cells Cloud REST API support finding text from Excel files.
 weight: 50
 ---
 
-This REST API indicates to `search` text on Excel files.
+This REST API indicates to `search` text from Excel files.
 `## RSET API
  
 ```bash
