@@ -21,4 +21,3 @@ Text operate  is a complex process for Excel fie. Many factors contribute to the
 - [How to replace text from an Excel workbook.](/cells/workbook/replace-text/)
 - [How to replace text from an Excel worksheet.](/cells/worksheets/replace-text/)
 - [How to replace text from Excel files without using file.](/cells/replace/)
-- 
