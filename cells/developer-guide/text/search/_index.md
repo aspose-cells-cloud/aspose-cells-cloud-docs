@@ -3,9 +3,10 @@ title: "Search"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /search/
-keywords: "Search text on Excel files."
-description: "Aspose.Cells Cloud REST API support searching old value by new value on Excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
-weight: 33
+aliases: [/search-without-using-storage/,/search-without-storage/]
+keywords: "Find text from Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) files."
+description: "Aspose.Cells Cloud REST API support finding text from Excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+weight: 50
 ---
 
 This REST API indicates to `search` text on Excel files.

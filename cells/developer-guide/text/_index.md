@@ -4,21 +4,19 @@ second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /text/
 aliases: [/working-with-text/]
-keywords: 
-    - excel
-    - search text
-    - find text
-    - replace text
-
-description: "Cells.Cloud API for Excel operate: worksheets operate."
+keywords: "Get, find, and replace text from Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) files."
+description: "Aspose.Cells Cloud REST API support getting, finding, and replacing text from Excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 100
 ---
 
-## Working with text on an Excel file.
+## How to work with text on an Excel file.
 
-- [Get Text Items from a Workbook](/cells/workbook/get-text-items/)
-- [Get Text Items from a Worksheet](/cells/worksheets/get-text-items/)
-- [Find Text in a Workbook](/cells/workbook/find-text/)
-- [Find Text in a Worksheet](/cells/worksheets/find-text/)
-- [Replace Text in a Workbook](/cells/workbook/replace-text/)
-- [Replace Text in a Worksheet](/cells/worksheets/replace-text/)
+- [How to get text items from an Excel workbook.](/cells/workbook/get-text-items/)
+- [How to get text items from an Excel worksheet.](/cells/worksheets/get-text-items/)
+- [How to find text from an Excel workbook.](/cells/workbook/find-text/)
+- [How to find text from an Excel worksheet.](/cells/worksheets/find-text/)
+- [How to find text from Excel files without using file.](/cells/search/)
+- [How to replace text from an Excel workbook.](/cells/workbook/replace-text/)
+- [How to replace text from an Excel worksheet.](/cells/worksheets/replace-text/)
+- [How to replace text from Excel files without using file.](/cells/replace/)
+- 
