@@ -1,9 +1,12 @@
 ---
 title: "Convert List Object or Table to Range"
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "convert"
 type: docs
 url: /list-objects/to-range/
 aliases: [/convert-list-object-or-table-to-range/,/tables/to-range/]
+keywords: "Convert a list object(table) to range in an Excel worksheet."
+description: "Aspose.Cells Cloud REST API support conversion a list object(table) to range in an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 30
 ---
 

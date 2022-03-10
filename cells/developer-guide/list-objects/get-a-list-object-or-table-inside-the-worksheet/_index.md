@@ -1,13 +1,16 @@
 ---
-title: "Get a List Object or Table inside the Worksheet"
+title: "Get a list object"
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "Get"
 type: docs
 url: /list-objects/get/
 aliases: [/get-a-list-object-or-table-inside-the-worksheet/,/tables/get/]
+keywords: "Get a list object(table) into an Excel worksheet."
+description: "Aspose.Cells Cloud REST API support getting a list object(table) into an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 9
 ---
 
-This REST API indicates get a list object info by index in worksheet or convert a `list object`   to different format file. 
+This REST API indicates to `get` a list object info by index in worksheet or convert a `list object`   to different format file. 
 
 ## RSET API
  

@@ -1,8 +1,12 @@
 ---
-title: "Get"
+title: "Get an OLE object in an Excel worksheet"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "Get"
 type: docs
 url: /oleobjects/get/
 aliases: [/get-oleobject-from-a-worksheet/]
+keywords: "Get an OLE object in an Excel worksheet."
+description: "Aspose.Cells Cloud REST API support getting an OLE object in an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 10
 ---
 

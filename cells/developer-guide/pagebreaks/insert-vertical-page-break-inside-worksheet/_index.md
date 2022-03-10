@@ -1,12 +1,16 @@
 ---
-title: "Add Vertical Page Break"
+title: "Add vertical page break"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "Add vertical page break"
 type: docs
 url: /page-breaks/add-vertical-page-break/
 aliases: [/insert-vertical-page-break-inside-worksheet/]
+keywords: "Add a page break in an Excel worksheet."
+description: "Aspose.Cells Cloud REST API support adding a page break in an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 40
 ---
 
-This REST API indicates 
+This REST API indicates to insert vertical page break.
  
 ## RSET API
  

@@ -1,8 +1,12 @@
 ---
-title: "Add"
+title: "Add an OLE object in an Excel worksheet"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "Add "
 type: docs
 url: /oleobjects/add/
 aliases: [/add-oleobject-to-excel-worksheet/]
+keywords: "Add an OLE object in an Excel worksheet."
+description: "Aspose.Cells Cloud REST API support adding an OLE object in an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 20
 ---
 This REST API indicates `add OLE object`.

@@ -1,9 +1,12 @@
 ---
-title: "Update"
+title: "Update a list object"
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "Update"
 type: docs
 url: /list-objects/update/
 aliases: [/update-a-list-object-or-table-inside-the-worksheet/,/tables/update/]
+keywords: "Update a list object(table) in an Excel worksheet."
+description: "Aspose.Cells Cloud REST API support updating a list object(table) in an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 20
 ---
 

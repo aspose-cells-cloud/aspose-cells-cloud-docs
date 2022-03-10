@@ -4,16 +4,16 @@ second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /oleobjects/
 aliases: [/working-with-oleobjects/]
-keywords: "REST API, oleobjects, spreadsheets, excel"
-description: "Cells.Cloud API for Excel operate: working with ole-objects on an Excel file."
+keywords: "Get, add, delete, and update an OLE object in an Excel worksheet."
+description: "Aspose.Cells Cloud REST API support getting, adding, deleting, and updating an OLE object in an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 100
 ---
 
-**Working with OleObjects**
+**How to working with OLE objects on an Excel worksheet**
 
-- [Get OleObject from a Worksheet](/cells/oleobjects/get/)
-- [Add OleObject to Excel Worksheet](/cells/oleobjects/add/)
-- [Update a specific OleObject from Excel Worksheet](/cells/oleobjects/update/)
-- [Convert OleObject to Image](/cells/oleobjects/convert/)
-- [Delete all OleObjects from Excel Worksheet](/cells/oleobjects/clear/)
-- [Delete a specific OleObject from Excel Worksheet](/cells/oleobjects/delete/)
+- [How to get OLE object from an Excel worksheet.](/cells/oleobjects/get/)
+- [How to add OLE object into ab Excel worksheet.](/cells/oleobjects/add/)
+- [How to update a specific OLE object in an Excel worksheet.](/cells/oleobjects/update/)
+- [How to convert an OLE object to image in an Excel worksheet.](/cells/oleobjects/convert/)
+- [How to delete all OLE objects in an Excel worksheet.](/cells/oleobjects/clear/)
+- [How to delete a specific OLE object in an  Excel worksheet.](/cells/oleobjects/delete/)

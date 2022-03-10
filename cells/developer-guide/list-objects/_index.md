@@ -1,11 +1,11 @@
 ---
-title: "ListObjects"
+title: "List objects"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /list-objects/
 aliases: [/working-with-list-objects/,/working-with-list-object-or-table/]
-keywords: "REST API, table, list-object, spreadsheets, excel"
-description: "Cells.Cloud API for Excel operate: working with list-objects on an Excel file."
+keywords: "Add, delete, update, and get a list object(table) into an Excel worksheet."
+description: "Aspose.Cells Cloud REST API support adding, deleting, updating and getting a list object(table) into an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 100
 ---
 
@@ -13,7 +13,7 @@ weight: 100
 
 &nbsp;&nbsp;&nbsp;&nbsp;How to add, sort and filter a table, and how to display a total row at the end of a table.
 
-## Working with table(list object)
+## How to working with table(list object)
   
 - [How to add a  table(list object) inside the worksheet.](/cells/add-a-list-object-or-table-inside-the-worksheet/)
 - [How to update a table(list object) inside the worksheet.](/cells/update-a-list-object-or-table-inside-the-worksheet/)

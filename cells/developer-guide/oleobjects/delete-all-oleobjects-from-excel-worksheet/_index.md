@@ -1,8 +1,12 @@
 ---
-title: "Clear"
+title: "Delete all OLE objects in an Excel worksheet"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "Clear"
 type: docs
 url: /oleobjects/clear/
 aliases: [/delete-all-oleobjects-from-excel-worksheet/]
+keywords: "Delete all OLE objects in an Excel worksheet."
+description: "Aspose.Cells Cloud REST API support deleting all OLE objects in an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 50
 ---
 
