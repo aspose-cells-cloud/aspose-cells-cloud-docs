@@ -9,7 +9,7 @@ keywords: "Sort a list object(table) in an Excel worksheet."
 description: "Aspose.Cells Cloud REST API support sorting a list object(table) in an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 40
 ---
-This REST API indicates `sort table's data`.
+This REST API indicates `sort table's data` in an Excel worksheet.
 
 ## RSET API
  

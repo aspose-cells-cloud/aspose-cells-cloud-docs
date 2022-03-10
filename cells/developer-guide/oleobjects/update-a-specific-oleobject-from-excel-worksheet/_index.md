@@ -10,7 +10,7 @@ description: "Aspose.Cells Cloud REST API support updating an OLE object in an E
 weight: 30
 ---
 
-This REST API indicates Update OLE object.
+This REST API indicates to `update` an `OLE object` in an Excel worksheet.
  
 ## RSET API
  

@@ -10,7 +10,7 @@ description: "Aspose.Cells Cloud REST API support conversion a list object(table
 weight: 30
 ---
 
-This REST API indicates `convert table or list object to range` in worksheet.
+This REST API indicates `convert table or list object to range` in an Excel worksheet.
  
 ## RSET API
  

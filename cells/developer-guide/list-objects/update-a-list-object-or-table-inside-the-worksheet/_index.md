@@ -10,13 +10,8 @@ description: "Aspose.Cells Cloud REST API support updating a list object(table) 
 weight: 20
 ---
 
-This REST API indicates `update list object properties`.
+This REST API indicates to `update` a `list object` properties.
 
-- Gets and sets whether this table(ListObject) show total row.
-- Gets and sets whether this ListObject show header row.
-- Sets column stripe formatting.
-- Sets row stripe formatting.
-- Resize the range of the table(list object). 
  
 ## RSET API
  

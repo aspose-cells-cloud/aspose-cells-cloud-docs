@@ -1,5 +1,5 @@
 ---
-title: "Add a list object"
+title: "Add a list object in an Excel worksheet"
 second_title: "Aspose.Cells Cloud Document"
 linktitle: "Add"
 type: docs
@@ -10,7 +10,7 @@ description: "Aspose.Cells Cloud REST API support adding a list object(table) in
 weight: 10
 ---
 
-This REST API indicates to `add a list object(table)` into worksheet.
+This REST API indicates to `add a list object(table)` in an Excel worksheet.
  
 ## RSET API
  

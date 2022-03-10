@@ -1,5 +1,5 @@
 ---
-title: "Get a list object"
+title: "Get a list object in an Excel worksheet"
 second_title: "Aspose.Cells Cloud Document"
 linktitle: "Get"
 type: docs
@@ -10,7 +10,7 @@ description: "Aspose.Cells Cloud REST API support getting a list object(table) i
 weight: 9
 ---
 
-This REST API indicates to `get` a list object info by index in worksheet or convert a `list object`   to different format file. 
+This REST API indicates to `get` a list object info by index or convert a `list object` to different format file in an Excel worksheet. 
 
 ## RSET API
  

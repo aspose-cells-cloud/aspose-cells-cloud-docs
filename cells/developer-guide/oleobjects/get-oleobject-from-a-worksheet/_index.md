@@ -10,9 +10,7 @@ description: "Aspose.Cells Cloud REST API support getting an OLE object in an Ex
 weight: 10
 ---
 
-This REST API `get` an `OLE-Object` from an Excel work sheet.
-
-This REST API indicates `get OLE object` with format.
+This REST API indicates to `get` an `OLE object` with format in an Excel worksheet.
  
 ## RSET API
  
