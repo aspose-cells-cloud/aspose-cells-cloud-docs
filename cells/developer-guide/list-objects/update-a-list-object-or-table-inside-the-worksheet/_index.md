@@ -1,5 +1,5 @@
 ---
-title: "Update a list object"
+title: "Update a list object in an Excel worksheet"
 second_title: "Aspose.Cells Cloud Document"
 linktitle: "Update"
 type: docs

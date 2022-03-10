@@ -1,5 +1,5 @@
 ---
-title: "Sort list object data"
+title: "Sort list object data in an Excel worksheet"
 second_title: "Aspose.Cells Cloud Document"
 linktitle: "Sort"
 type: docs

@@ -1,7 +1,7 @@
 ---
-title: "Convert List Object or Table to Range"
+title: "Convert list object to range in an Excel worksheet"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: "convert"
+linktitle: "Conversion"
 type: docs
 url: /list-objects/to-range/
 aliases: [/convert-list-object-or-table-to-range/,/tables/to-range/]
