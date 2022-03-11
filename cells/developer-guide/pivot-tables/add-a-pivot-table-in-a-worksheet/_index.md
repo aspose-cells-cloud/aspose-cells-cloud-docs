@@ -1,5 +1,5 @@
 ---
-title: "Add pivot table in an Excel worksheet"
+title: "Add a pivot table in an Excel worksheet"
 second_title: "Aspose.Cells Cloud Document"
 linktitle: Add
 type: docs

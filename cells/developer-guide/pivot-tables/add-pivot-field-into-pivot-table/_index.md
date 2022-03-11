@@ -1,5 +1,5 @@
 ---
-title: "Add pivot field into pivot table"
+title: "Add a pivot field into pivot table"
 second_title: "Aspose.Cells Cloud Document"
 linktitle: Add pivot field
 type: docs
