@@ -1,10 +1,12 @@
 ---
-title: "Move pivot pable"
+title: "Move a pivot table in an Excel file"
 second_title: "Aspose.Cells Cloud Document"
 linktitle: Move
 type: docs
 url: /pivot-tables/move/
 aliases: [/move-pivot-table/]
+keywords: "Move a pivot table in an Excel file."
+description: "Aspose.Cells Cloud REST API support moving a pivot table in an Excel file. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 120
 ---
 

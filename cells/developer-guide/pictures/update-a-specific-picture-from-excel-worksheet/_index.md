@@ -1,12 +1,16 @@
 ---
-title: "Update Picture"
+title: "Update picture in an Excel file"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "Update"
 type: docs
 url: /pictures/update/
 aliases: [/update-a-specific-picture-from-excel-workshee/]
+keywords: "Update a picture in an Excel file."
+description: "Aspose.Cells Cloud REST API support updating a picture in an Excel file. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 70
 ---
 
-This REST API indicates `update` picture by pricture index for an Excel worksheet.
+This REST API indicates to `update` picture by pricture index for an Excel worksheet.
  
 ## RSET API
  

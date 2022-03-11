@@ -5,6 +5,8 @@ linktitle: Format
 type: docs
 url: /pivot-tables/format/
 aliases: [/update-cell-style-for-pivot-table/]
+keywords: "Update cell style for a pivot table."
+description: "Aspose.Cells Cloud REST API support updating cell style for a pivot table. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 90
 ---
 

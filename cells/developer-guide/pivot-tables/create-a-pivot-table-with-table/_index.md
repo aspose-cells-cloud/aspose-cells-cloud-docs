@@ -5,12 +5,12 @@ linktitle: Convert
 type: docs
 url: /pivot-tables/convert-table-to-pivottable/
 aliases: [/create-a-pivottable-with-table/,/create-new-pivot-table-with-list-object-as-source-data/]
-keywords: "REST API, pivot table, spreadsheets, excel"
-description: "Cells.Cloud API for Excel operate: create pivot table with table."
+keywords: "Create a pivot table with list object. Convert list object to pivot table."
+description: "Aspose.Cells Cloud REST API support creating a pivot table with list object. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 60
 ---
 
-This REST API indicates create a `pivottable` with list object.
+This REST API indicates to create a `pivottable` with list object.
  
 ## RSET API
  

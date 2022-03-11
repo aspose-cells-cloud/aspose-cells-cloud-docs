@@ -4,8 +4,8 @@ second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /pivottables/
 aliases: [/working-with-pivot-tables/]
-keywords: "REST API, pivot table, spreadsheets, excel"
-description: "Cells.Cloud API for Excel operate: working with pivot table on an Excel file."
+keywords: "Working with pivot table on an Excel worksheet."
+description: "How to do Aspose.Cells Cloud REST APIs work with pivot table in an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 100
 ---
 

@@ -1,10 +1,12 @@
 ---
-title: "Hide pivot field item"
+title: "Hide pivot field item in a pivot table"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: Hide pivot field item
+linktitle: Hide
 type: docs
 url: /pivot-tables/hide-pivot-field-item/
 aliases: [/hide-pivot-field-item/]
+keywords: "Hide a pivot field in a pivot table."
+description: "Aspose.Cells Cloud REST API support hiding a pivot field in pivot table. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 110
 ---
 

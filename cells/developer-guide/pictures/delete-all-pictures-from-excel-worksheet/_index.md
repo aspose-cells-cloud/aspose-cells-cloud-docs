@@ -1,12 +1,16 @@
 ---
-title: "Delete all Pictures"
+title: "Delete all pictures  in an Excel worksheet"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "Clear"
 type: docs
 url: /pictures/clear/
 aliases: [/delete-all-pictures-from-excel-worksheet/]
+keywords: "Delete all pictures in an Excel worksheet."
+description: "Aspose.Cells Cloud REST API support deleting all pictures in an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 50
 ---
 
-This REST API indicates `delete` `all` pictures in worksheet.
+This REST API indicates to `delete` `all` pictures in worksheet.
  
 ## RSET API
  

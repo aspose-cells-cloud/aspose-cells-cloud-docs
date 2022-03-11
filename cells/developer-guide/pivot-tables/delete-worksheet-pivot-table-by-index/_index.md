@@ -1,10 +1,12 @@
 ---
-title: "Delete Worksheet Pivot Table by Index"
+title: "Delete a pivot table in an Excel worksheet"
 second_title: "Aspose.Cells Cloud Document"
 linktitle: Delete
 type: docs
 url: /pivot-tables/delete/
 aliases: [/delete-worksheet-pivot-table-by-index/]
+keywords: "Delete a pivot table in an Excel file."
+description: "Aspose.Cells Cloud REST API support deleting a pivot table in an Excel file. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 70
 ---
 

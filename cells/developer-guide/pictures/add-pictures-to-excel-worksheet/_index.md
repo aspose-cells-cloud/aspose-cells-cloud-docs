@@ -1,12 +1,16 @@
 ---
-title: "Add Picture"
+title: "Add Picture in an Excel file"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "Add"
 type: docs
 url: /pictures/add/
 aliases: [/add-pictures-to-excel-worksheet/]
+keywords: "Add a picture in an Excel file."
+description: "Aspose.Cells Cloud REST API support adding a picture in an Excel file. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 20
 ---
 
-This REST API indicates `add` a new picture for an Excel worksheet.
+This REST API indicates to `add` a new picture for an Excel worksheet.
  
 ## RSET API
  

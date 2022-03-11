@@ -1,10 +1,12 @@
 ---
-title: "Update Style for Pivot Table"
+title: "Update style for pivot table"
 second_title: "Aspose.Cells Cloud Document"
 linktitle: Format all
 type: docs
 url: /pivot-tables/format-all/
 aliases: [/update-style-for-pivot-table/]
+keywords: "Update all cell style for a pivot table."
+description: "Aspose.Cells Cloud REST API support updating all cell style for a pivot table. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 100
 ---
 

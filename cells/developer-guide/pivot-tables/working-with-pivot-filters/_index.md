@@ -1,10 +1,12 @@
 ---
 title: "Working with pivot filters"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: Add filters
+linktitle: Filters
 type: docs
 url: /pivot-tables/add-filters/
 aliases: [/working-with-pivot-filters/]
+keywords: "Add filter for a pivot table."
+description: "Aspose.Cells Cloud REST API support adding filter for a pivot table. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 50
 ---
 
