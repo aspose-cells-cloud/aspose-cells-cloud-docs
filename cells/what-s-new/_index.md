@@ -1,5 +1,7 @@
 ---
 title: What's new in Aspose.Cells Cloud
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "What's new"
 type: docs
 weight: 5
 url: /what-s-new-in-aspose-cells-cloud/
@@ -11,8 +13,8 @@ Welcome to what's new in Aspose.Cells Cloud docs. Use this page to quickly find 
 
 ## Aspose.Cells Cloud 22.3
 
-* [Add new API about building codegen specification.(https://api.aspose.cloud/v3.0/codegen/spec)]
-* [Support to add digital signature for Aspose.Cells Cloud.(/cells/workbook/digital-signature/)]
+* [Add new API about building codegen specification.](https://api.aspose.cloud/v3.0/codegen/spec)
+* [Support to add digital signature for Aspose.Cells Cloud.](/cells/workbook/digital-signature/)
 
 
 
