@@ -7,12 +7,12 @@ keywords: "What's new in aspose cells cloud. Office Excel 2013,  Office Excel 20
 description: "This page describes the most interesting new Aspose.Cells Cloud features introduced in recent releases."
 ---
 
-This page describes the most interesting new Aspose.Cells Cloud features introduced in recent releases.
+Welcome to what's new in Aspose.Cells Cloud docs. Use this page to quickly find the latest changes.
 
 ## Aspose.Cells Cloud 22.3
 
-* Add new API about building codegen specification.
-* Support to add digital signature for Aspose.Cells Cloud.
+* [Add new API about building codegen specification.(https://api.aspose.cloud/v3.0/codegen/spec)]
+* [Support to add digital signature for Aspose.Cells Cloud.(/cells/workbook/digital-signature/)]
 
 
 
