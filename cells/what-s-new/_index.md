@@ -13,7 +13,7 @@ Welcome to what's new in Aspose.Cells Cloud docs. Use this page to quickly find 
 
 ## Aspose.Cells Cloud 22.3
 
-* [Add new API about building codegen specification.](https://api.aspose.cloud/v3.0/codegen/spec)
+* [Add new API about building codegen specification.](https://api.aspose.cloud/v3.0/cells/codegen/spec)
 * [Support to add digital signature for Aspose.Cells Cloud.](/cells/workbook/digital-signature/)
 
 
