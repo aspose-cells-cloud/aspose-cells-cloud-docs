@@ -16,6 +16,7 @@ weight: 36
 
 - [How to encrypt Excel workbooks.](/cells/workbook/encrypt/)
 - [How to protect Excel workbooks.](/cells/workbook/protect/)
+- [How to add digital signature for Excel workbook.](/cells/workbook/digital-signature/)
 - [How to protect Excel files without using storage](/cells/protect/without-using-storage/)
 
 **How to unprotect Excel files.**
