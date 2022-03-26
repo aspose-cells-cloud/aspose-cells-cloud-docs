@@ -1,7 +1,7 @@
 ---
 title: "Get page count for an Excel worksheet"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: "Get page count"
+linktitle: "PageCount"
 type: docs
 url: /worksheets/page-count/
 weight: 10

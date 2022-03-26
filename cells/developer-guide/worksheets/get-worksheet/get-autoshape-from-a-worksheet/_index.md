@@ -1,7 +1,7 @@
 ---
 title: "Get an autoshape from an Excel worksheet"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: "Get auto shape"
+linktitle: "AutoShape"
 type: docs
 url: /shapes/get-autoshape/
 aliases: [/get-autoshape-from-a-worksheet/]
