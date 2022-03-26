@@ -1,5 +1,7 @@
 ---
-title: "Set Excel Worksheet Zoom"
+title: "Set zoom for an Excel worksheet"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "Zoom"
 type: docs
 url: /worksheets/zoom/
 aliases: [/set-zoom-in-excel-worksheet/]

@@ -1,5 +1,7 @@
 ---
-title: "Unhide Excel Worksheet"
+title: "Unhide an Excel worksheet"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "Unhide"
 type: docs
 url: /worksheets/unhide/
 aliases: [/unhide-excel-worksheets/]

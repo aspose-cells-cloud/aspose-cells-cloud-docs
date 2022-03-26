@@ -1,5 +1,7 @@
 ---
-title: "Rename Excel Worksheet"
+title: "Excel worksheet rename"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "Move"
 type: docs
 url: /worksheets/rename/
 aliases: [/rename-excel-worksheet/]

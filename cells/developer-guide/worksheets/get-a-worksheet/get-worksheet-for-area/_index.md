@@ -1,5 +1,7 @@
 ---
-title: "Export Worksheet Area"
+title: "Export an area form an Excel worksheet"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "Export area"
 type: docs
 url: /worksheets/area-to-different-formats/
 aliases: [/get-worksheet-for-area/]

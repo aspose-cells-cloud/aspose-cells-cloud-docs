@@ -1,5 +1,7 @@
 ---
-title: "Hide Excel worksheet"
+title: "Hide an Excel worksheet"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "Hide"
 type: docs
 url: /worksheets/hide/
 aliases: [/hide-excel-worksheets/]

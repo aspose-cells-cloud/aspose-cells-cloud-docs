@@ -1,5 +1,7 @@
 ---
-title: "Sort Worksheet Data"
+title: "Sort range data on an Excel worksheet"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "Sort"
 type: docs
 url: /worksheets/sort-data/
 aliases: [/sort-worksheet-data/]

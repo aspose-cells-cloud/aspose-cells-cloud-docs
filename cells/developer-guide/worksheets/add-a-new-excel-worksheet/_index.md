@@ -1,5 +1,7 @@
 ---
-title: "Add Excel Worksheet"
+title: "Add an Excel worksheet"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "Add"
 type: docs
 url: /worksheets/add/
 aliases: [/add-a-new-excel-worksheet/]

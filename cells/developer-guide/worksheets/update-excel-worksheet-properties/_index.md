@@ -1,5 +1,7 @@
 ---
-title: "Update Excel Worksheet Properties"
+title: "Update properties on an Excel worksheet"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "Update"
 type: docs
 url: /worksheets/update-properties/
 aliases: [/update-excel-worksheet-properties/]

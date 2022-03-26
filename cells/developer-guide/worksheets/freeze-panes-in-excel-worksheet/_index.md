@@ -1,5 +1,7 @@
 ---
-title: "Unfreeze Excel Worksheet Panes"
+title: "Freeze panes on an Excel Worksheet"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "Freeze"
 type: docs
 url: /worksheets/freeze-panes/
 aliases: [/freeze-panes-in-excel-worksheet/]

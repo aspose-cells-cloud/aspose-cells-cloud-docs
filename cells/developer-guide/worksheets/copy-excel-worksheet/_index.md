@@ -1,5 +1,7 @@
 ---
-title: "Copy Excel Worksheet"
+title: "Copies contents and formats from another worksheet."
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "Copy"
 type: docs
 url: /worksheets/copy/
 aliases: [/copy-excel-worksheet/]

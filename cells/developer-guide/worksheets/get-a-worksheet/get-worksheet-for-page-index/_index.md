@@ -1,5 +1,7 @@
 ---
-title: "Export Worksheet Page"
+title: "Export a page of an Excel worksheet"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "Export page"
 type: docs
 url: /worksheets/page-to-different-formats/
 aliases: [/get-worksheet-for-page-index/]

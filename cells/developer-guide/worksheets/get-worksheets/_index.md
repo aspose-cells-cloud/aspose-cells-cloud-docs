@@ -1,5 +1,7 @@
 ---
 title: "Get worksheets"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "Get all"
 type: docs
 url: /worksheets/get-all/
 aliases: [/get-worksheet-count/]
