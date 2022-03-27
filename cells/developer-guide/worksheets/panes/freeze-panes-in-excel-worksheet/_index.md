@@ -3,8 +3,8 @@ title: "Freeze panes on an Excel Worksheet"
 second_title: "Aspose.Cells Cloud Document"
 linktitle: "Freeze"
 type: docs
-url: /worksheets/freeze-panes/
-aliases: [/freeze-panes-in-excel-worksheet/]
+url: /worksheets/panes/freeze/
+aliases: [/freeze-panes-in-excel-worksheet/,/worksheets/freeze-panes/]
 keywords: "Freeze panes on an Excel Worksheet."
 description: "Aspose.Cells Cloud REST API support freezing panes on an Excel Worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 190

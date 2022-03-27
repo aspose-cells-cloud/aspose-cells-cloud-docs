@@ -3,8 +3,8 @@ title: "Unfreeze panes on an Excel worksheet"
 second_title: "Aspose.Cells Cloud Document"
 linktitle: "Unfreeze"
 type: docs
-url: /worksheets/unfreeze-panes/
-aliases: [/unfreeze-panes-in-excel-worksheet/]
+url: /worksheets/panes/unfreeze/
+aliases: [/unfreeze-panes-in-excel-worksheet/,/worksheets/unfreeze-panes/]
 keywords: "Unfreeze panes on an Excel worksheet."
 description: "Aspose.Cells Cloud REST API support unfreezing panes on an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 200

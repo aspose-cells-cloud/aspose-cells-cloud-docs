@@ -1,7 +1,7 @@
 ---
-title: "Add background on an Excel worksheet"
+title: "Set background on an Excel worksheet"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: "Add background"
+linktitle: "Set background"
 type: docs
 url: /worksheets/background/add/
 aliases: [/set-background-or-watermark-for-excel-worksheet/]
