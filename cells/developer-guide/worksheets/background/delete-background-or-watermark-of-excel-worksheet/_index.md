@@ -1,7 +1,7 @@
 ---
 title: "Delete background on an Excel worksheet"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: "Delete background"
+linktitle: "Delete"
 type: docs
 url: /worksheets/background/delete/
 aliases: [/delete-background-or-watermark-of-excel-worksheet/]
