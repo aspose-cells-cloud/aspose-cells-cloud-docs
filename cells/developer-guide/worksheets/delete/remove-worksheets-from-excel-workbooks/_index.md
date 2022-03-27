@@ -1,7 +1,7 @@
 ---
 title: "Delete Worksheet"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: "Delete a worksheet"
+linktitle: "One worksheet"
 type: docs
 url: /worksheets/delete-worksheet/
 aliases: [/remove-worksheets-from-excel-workbooks/]

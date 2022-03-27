@@ -1,7 +1,7 @@
 ---
 title: "Delete multiple Excel worksheets"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: "Delete worksheets"
+linktitle: "Multiple worksheets"
 type: docs
 url: /worksheets/delete-multiple/
 aliases: [/delete-excel-worksheets/]
