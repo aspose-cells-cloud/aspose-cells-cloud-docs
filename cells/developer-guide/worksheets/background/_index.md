@@ -1,7 +1,7 @@
 ---
 title: "How to work with background on an Excel worksheet"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: "Get"
+linktitle: "Background"
 type: docs
 url: /worksheets/background/
 keywords: "How to work with background on an Excel worksheet."
