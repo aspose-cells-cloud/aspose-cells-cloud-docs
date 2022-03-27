@@ -5,6 +5,8 @@ linktitle: "Add"
 type: docs
 url: /worksheets/add/
 aliases: [/add-a-new-excel-worksheet/]
+keywords: "Add an Excel worksheet."
+description: "Aspose.Cells Cloud REST API support adding an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 20
 ---
 This REST API indicates `add new worksheet`.

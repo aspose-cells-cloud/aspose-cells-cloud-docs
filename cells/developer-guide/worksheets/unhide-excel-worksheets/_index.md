@@ -5,6 +5,8 @@ linktitle: "Unhide"
 type: docs
 url: /worksheets/unhide/
 aliases: [/unhide-excel-worksheets/]
+keywords: "Unhide an Excel Worksheet on an Excel Workbook."
+description: "Aspose.Cells Cloud REST API support unhiding an Excel Worksheet on an Excel Workbook. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 60
 ---
 This REST API indicates `unhide worksheet`.

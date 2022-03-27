@@ -4,6 +4,8 @@ second_title: "Aspose.Cells Cloud Document"
 linktitle: "PageCount"
 type: docs
 url: /worksheets/page-count/
+keywords: "Get page count on an Excel worksheet."
+description: "Aspose.Cells Cloud REST API support getting page count on an Excel Worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 10
 ---
 

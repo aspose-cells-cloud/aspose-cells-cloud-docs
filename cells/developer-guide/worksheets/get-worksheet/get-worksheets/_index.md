@@ -5,6 +5,8 @@ linktitle: "All"
 type: docs
 url: /worksheets/get-all/
 aliases: [/get-worksheet-count/]
+keywords: "Get worksheets description from an Excel workbook."
+description: "Aspose.Cells Cloud REST API support getting worksheets description from an Excel workbook. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 10
 ---
 

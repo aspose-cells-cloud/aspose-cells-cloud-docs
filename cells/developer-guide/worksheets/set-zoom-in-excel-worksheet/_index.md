@@ -5,6 +5,8 @@ linktitle: "Zoom"
 type: docs
 url: /worksheets/zoom/
 aliases: [/set-zoom-in-excel-worksheet/]
+keywords: "Set zoom for an Excel worksheet."
+description: "Aspose.Cells Cloud REST API support setting zoom for an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 220
 ---
 
