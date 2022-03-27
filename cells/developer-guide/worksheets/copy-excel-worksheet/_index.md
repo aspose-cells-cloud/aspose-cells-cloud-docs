@@ -7,7 +7,7 @@ url: /worksheets/copy/
 aliases: [/copy-excel-worksheet/]
 keywords: "Copies contents and formats from another Excel worksheet."
 description: "Aspose.Cells Cloud REST API support copying contents and formats from another Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
-weight: 150
+weight: 20
 ---
 
 This REST API indicates `copy a worksheet` and save with new name in the same workbook 

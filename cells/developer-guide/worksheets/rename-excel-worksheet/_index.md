@@ -7,7 +7,7 @@ url: /worksheets/rename/
 aliases: [/rename-excel-worksheet/]
 keywords: "Rename an Excel worksheet name to new name on an Excel workbook."
 description: "Aspose.Cells Cloud REST API support renaming an Excel worksheet name to new name on an Excel workbook. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
-weight: 160
+weight: 20
 ---
 
 This REST API indicates `rename worksheet`

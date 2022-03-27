@@ -5,7 +5,7 @@ linktitle: "Update"
 type: docs
 url: /worksheets/update-properties/
 aliases: [/update-excel-worksheet-properties/]
-weight: 170
+weight: 20
 ---
 
 This REST API indicates `update worksheet base properties`.
