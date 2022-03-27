@@ -1,7 +1,7 @@
 ---
 title: "Excel worksheet rename"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: "Move"
+linktitle: "Rename"
 type: docs
 url: /worksheets/rename/
 aliases: [/rename-excel-worksheet/]
@@ -10,7 +10,7 @@ description: "Aspose.Cells Cloud REST API support renaming an Excel worksheet na
 weight: 20
 ---
 
-This REST API indicates `rename worksheet`
+This REST API indicates `worksheet rename`
  
 ## RSET API
  

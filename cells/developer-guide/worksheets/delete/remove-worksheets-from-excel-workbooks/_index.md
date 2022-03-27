@@ -3,7 +3,7 @@ title: "Delete Worksheet"
 second_title: "Aspose.Cells Cloud Document"
 linktitle: "Delete"
 type: docs
-url: /worksheets/delete/
+url: /worksheets/delete-worksheet/
 aliases: [/remove-worksheets-from-excel-workbooks/]
 keywords: "Delete an Excel worksheet on an Excel workbook."
 description: "Aspose.Cells Cloud REST API support deleting an Excel worksheet on an Excel workbook. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
