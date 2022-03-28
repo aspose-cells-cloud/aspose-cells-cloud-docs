@@ -1,11 +1,12 @@
 ---
-title: "Ranges"
+title: "Working with ranges on an Excel file"
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "Range"
 type: docs
 url: /ranges/
 aliases: [/working-with-ranges/]
-keywords: "REST API, task, spreadsheets, excel, ranges"
-description: "Cells.Cloud API for Excel operate: working with range on an Excel file."
+keywords: "Working with ranges on an Excel file"
+description: "How to work with ranges on an Excel file using Aspose.Cells Cloud REST API. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 100
 ---
 

@@ -1,7 +1,12 @@
 ---
 title: "Change Widths of Columns inside the Range"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "Column width"
 type: docs
-url: /change-widths-of-columns-inside-the-range/
+url: /ranges/column-width/
+aliases: [/change-widths-of-columns-inside-the-range/]
+keywords: "Set column width for range on an Excel worksheet"
+description: "Aspose.Cells Cloud REST API support setting column width for range on an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 40
 ---
 
