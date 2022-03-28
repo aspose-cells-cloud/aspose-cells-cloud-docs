@@ -1,8 +1,12 @@
 ---
-title: "Set Range Value in Excel Worksheet"
+title: "Set range value on an Excel worksheet"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "Set values"
 type: docs
-url: /ranges/set-value/
+url: /ranges/set-values/
 aliases: [/set-range-value-in-excel-worksheet/]
+keywords: "Set range value on an Excel worksheet"
+description: "Aspose.Cells Cloud REST API support setting range value on an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 220
 ---
 
@@ -41,7 +45,6 @@ You can use cURL command-line tool to access Aspose.Cells web services easily. T
  
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/value?Value=25&isConverted=false&setStyle=false" \
 -X POST \
--d "{ \"ColumnCount\":5, \"ColumnWidth\": 5, \"FirstColumn\": 5, \"FirstRow\": 10, \"Name\": \"string\", \"RefersTo\": \"string\", \"RowCount\": 5, \"RowHeight\": 5, \"Worksheet\": \"Sheet1\"}" \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
@@ -70,7 +73,7 @@ Using an SDK is the best way to speed up the development. An SDK takes care of l
  
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
  
- 
+  
 {{< tabs tabTotal="9" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Swift" tabName8="Perl" tabName9="Go" >}}
 
 {{< tab tabNum="1" >}}
