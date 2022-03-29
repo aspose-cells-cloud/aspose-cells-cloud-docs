@@ -3,7 +3,7 @@ title: "Set the Style of the Range"
 second_title: "Aspose.Cells Cloud Document"
 linktitle: "Set style"
 type: docs
-url: /ranges/set-style/
+url: /ranges/update/style/
 aliases: [/set-the-style-of-the-range/]
 keywords: "Set range style on an Excel worksheet"
 description: "Aspose.Cells Cloud REST API support setting range style on an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."

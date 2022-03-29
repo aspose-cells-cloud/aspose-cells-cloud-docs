@@ -3,7 +3,7 @@ title: "Set range value on an Excel worksheet"
 second_title: "Aspose.Cells Cloud Document"
 linktitle: "Set values"
 type: docs
-url: /ranges/set-values/
+url: /ranges/update/values/
 aliases: [/set-range-value-in-excel-worksheet/]
 keywords: "Set range value on an Excel worksheet"
 description: "Aspose.Cells Cloud REST API support setting range value on an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
