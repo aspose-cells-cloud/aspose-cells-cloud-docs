@@ -69,7 +69,6 @@ Using an SDK is the best way to speed up the development. An SDK takes care of l
  
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
  
- 
 
 {{< tabs tabTotal="4" tabID="4" tabName1="PHP" tabName2="Ruby" tabName3="Objective C" tabName4="Go" >}}
 
