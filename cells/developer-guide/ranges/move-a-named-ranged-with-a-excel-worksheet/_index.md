@@ -7,7 +7,7 @@ url: /ranges/move/
 aliases: [/move-a-named-ranged-with-a-excel-worksheet/]
 keywords: "Move a named ranged with an Excel worksheet"
 description: "Aspose.Cells Cloud REST API support moving a named ranged with an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
-weight: 90
+weight: 20
 ---
 
 This REST API indicates to move the current range to the dest range on an Excel worksheet. 

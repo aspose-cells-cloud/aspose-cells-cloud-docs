@@ -1,7 +1,7 @@
 ---
 title: "Get cells data based on named range"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: "Get values"
+linktitle: "Values"
 type: docs
 url: /ranges/get/values/
 aliases: [/get-cells-data-based-on-named-range/]

@@ -1,5 +1,7 @@
 ---
 title: "Get Named Ranges on an Excel workbook"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "Name"
 type: docs
 url: /ranges/get/name/
 aliases: [/get-named-ranges-inside-the-workbook/]

@@ -7,7 +7,7 @@ url: /ranges/update/row-height/
 aliases: [/change-heights-of-rows-inside-the-range/]
 keywords: "Set row height for range on an Excel worksheet"
 description: "Aspose.Cells Cloud REST API support setting row height for range on an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
-weight: 30
+weight: 76
 ---
 
 This REST API indicates to set row height of range on an Excel worksheet.
