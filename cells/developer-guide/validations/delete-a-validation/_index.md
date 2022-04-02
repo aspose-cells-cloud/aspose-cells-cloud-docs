@@ -1,22 +1,21 @@
 ---
-title: "Get a worksheet validation by index from an Excel worksheet"
+title: "Delete a worksheet validation on an Excel worksheet"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: "Get"
+linktitle: "Delete"
 type: docs
-url: /validations/get/
-aliases: [/get-validation-from-a-worksheet/]
-keywords: "Get a worksheet validation by index from an Excel worksheet."
-description: "Aspose.Cells Cloud REST API support getting a worksheet validation by index from an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+url: /validations/delete/
+keywords: "Delete a worksheet validation on an Excel worksheet."
+description: "Aspose.Cells Cloud REST API support deleting a worksheet validation on an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 10
 ---
 
-This REST API indicates to get a worksheet validation by index.
+This REST API indicates to delete a worksheet validation by index on an Excel .
  
 ## RSET API
  
 ```bash
  
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations/{validationIndex}
+DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations/{validationIndex}
  
 ```
 The request parameters are: 
@@ -29,7 +28,7 @@ The request parameters are:
 | folder | string | query | Document's folder. |
 | storageName | string | query | storage name. |
  
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/WorksheetValidations/GetWorksheetValidation) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/WorksheetValidations/DeleteWorksheetValidation) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
  
 You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
  
@@ -40,7 +39,7 @@ You can use cURL command-line tool to access Aspose.Cells web services easily. T
 ```bash
  
 curl -v "http://api.aspose.com/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations/0" \
--X GET \
+-X DELETE \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
@@ -53,65 +52,8 @@ curl -v "http://api.aspose.com/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/vali
  
 ```bash
 {
-
-  "Validation": {
-
-    "AlertStyle": "Stop",
-
-    "AreaList": [
-
-      {
-
-        "EndColumn": 0,
-
-        "EndRow": 0,
-
-        "StartColumn": 0,
-
-        "StartRow": 0
-
-      },
-
-      {
-
-        "EndColumn": 27,
-
-        "EndRow": 0,
-
-        "StartColumn": 26,
-
-        "StartRow": 0
-
-      }
-
-    ],
-
-    "IgnoreBlank": false,
-
-    "InCellDropDown": false,
-
-    "Operator": "None",
-
-    "ShowError": false,
-
-    "ShowInput": false,
-
-    "Type": "AnyValue",
-
-    "link": {
-
-      "Href": "http://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/Validations/0",
-
-      "Rel": "self"
-
-    }
-
-  },
-
-  "Code": "200",
-
-  "Status": "OK"
-
+"Code": 200,
+"Status": "OK"
 }
  
 ```
@@ -125,7 +67,8 @@ curl -v "http://api.aspose.com/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/vali
 Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
  
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
-
+ 
+ 
  
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
