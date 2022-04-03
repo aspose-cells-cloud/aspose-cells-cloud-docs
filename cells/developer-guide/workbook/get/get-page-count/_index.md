@@ -1,11 +1,16 @@
 ---
 title: "Get page count"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "Pages"
 type: docs
-url: /workbook/page-count/
+url: /workbook/get/page-count/
+aliases: [/workbook/page-count/]
+keywords: "Getting pages count on an Excel workbook."
+description: "Aspose.Cells Cloud REST API support getting pages count on an Excel workbook. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 10
 ---
 
-This REST API indicates `get page count` for workbook.
+This REST API indicates to `get page count` for workbook.
  
 ## RSET API
  
@@ -60,9 +65,6 @@ Using an SDK is the best way to speed up the development. An SDK takes care of l
  
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
  
- 
- 
-
  
 {{< tabs tabTotal="11" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" tabName11="Swift" >}}
 

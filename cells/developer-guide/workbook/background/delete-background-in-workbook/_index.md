@@ -1,15 +1,16 @@
 ---
 title: "Delete background on an Excel workbook"
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "Delete"
 type: docs
-url: /workbook/delete-background/
-aliases: [/delete-background-in-workbook/]
-keywords: "REST API, spreadsheets, excel, decrypt"
-description: "Cells.Cloud API for Excel operate: delete background on an Excel workbook."
+url: /workbook/background/delete/
+aliases: [/delete-background-in-workbook/,/workbook/delete-background/]
+keywords: "Delete background on an Excel workbook."
+description: "Aspose.Cells Cloud REST API support deleting background on an Excel workbook on an Excel file. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 170
 ---
 
-This REST API delete background on an Excel `workbook`.
+This REST API indicates to delete background on an Excel workbook.
 
 **Query Parameter**
 

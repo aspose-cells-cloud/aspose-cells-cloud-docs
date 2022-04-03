@@ -1,15 +1,16 @@
 ---
-title: "Split Excel Workbooks"
+title: "Split an Excel workbook to multi-files"
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "workbook"
 type: docs
 url: /workbook/split/
 aliases: [/split-excel-workbooks/]
-keywords: "split worksheets, xlsx, xls, csv, google sheet, separate workbook, REST API, Python code snippet, Perl code snippet, Swift code snippet, PHP code snippet"
-description: "Split all or specific worksheet of a workbook into PNG, TIFF or any other supported image format. Split XLSX worksheet using Aspose.Cells Cloud API for Ruby, Python, Perl, Java, .NET, android and many other platforms."
+keywords: "Split an Excel workbook to multi-files."
+description: "Aspose.Cells Cloud REST API support spliting an Excel workbook to multi-files.. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 130
 ---
 
-This REST API split Excel `workbook` to differnt format files.
+This REST API indicates to split an Excel `workbook` to multi-files with differnt format.
 
 **Query Parameter**
 

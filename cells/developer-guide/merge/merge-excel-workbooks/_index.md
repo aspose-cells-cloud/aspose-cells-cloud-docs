@@ -1,15 +1,16 @@
 ---
-title: "Merge Excel Workbooks"
+title: "Merge an Excel Workbooks into other Excel file"
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "Workbook"
 type: docs
 url: /workbook/merge/
 aliases: [/merge-excel-workbooks/]
-keywords: "REST API, spreadsheets, excel, merge"
-description: "Cells.Cloud API for Excel operate: merge Excel workbooks."
+keywords: "Merge an Excel Workbooks into other Excel file."
+description: "Aspose.Cells Cloud REST API support merging an Excel files into other Excel file. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 50
 ---
 
-This REST API merge more Excel `workbook`s.
+This REST API indicates to merge an Excel `workbook` into other Excel workbook.
 
 **Query Parameter**
 

@@ -1,15 +1,16 @@
 ---
-title: "Create an Excel workbook from a smart marker template"
+title: "How to create an Excel workbook with a smart marker template"
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "SmartMarker"
 type: docs
-url: /workbook/smartmarker/
-aliases: [/create-excel-workbook-from-a-smartmarker-template/]
-keywords: "REST API, spreadsheets, excel, create, smart marker"
-description: "Cells.Cloud API for Excel operate: create an workbook with smart marker."
+url: /workbook/create/smartmarker/
+aliases: [/create-excel-workbook-from-a-smartmarker-template/,/workbook/smartmarker/]
+keywords: "How to create an Excel workbook with a smart marker template."
+description: "Aspose.Cells Cloud REST API how to create an Excel workbook with a smart marker template. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 40
 ---
 
-This REST API create `workbook` with smart marker.
+This REST API indicates to create `workbook` with `smart marker`.
 
 **Query Parameter**
 
