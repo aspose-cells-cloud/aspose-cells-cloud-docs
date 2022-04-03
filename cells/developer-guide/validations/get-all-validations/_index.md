@@ -9,7 +9,7 @@ description: "Aspose.Cells Cloud REST API support getting all worksheet validati
 weight: 10
 ---
 
-This REST API indicates Get worksheet validations.
+This REST API indicates to get all worksheet validations on an Excel worksheet.
  
 ## RSET API
  

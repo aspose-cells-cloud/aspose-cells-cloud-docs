@@ -9,7 +9,7 @@ description: "Aspose.Cells Cloud REST API support deleting all worksheet validat
 weight: 10
 ---
 
-This REST API indicates Delete worksheet validation by index.
+This REST API indicates to delete all worksheet validations on an Excel worksheet.
  
 ## RSET API
  

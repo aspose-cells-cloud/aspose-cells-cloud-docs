@@ -10,7 +10,7 @@ description: "Aspose.Cells Cloud REST API support getting a worksheet validation
 weight: 10
 ---
 
-This REST API indicates to get a worksheet validation by index.
+This REST API indicates to get a worksheet validation by index on an Excel worksheet.
  
 ## RSET API
  
