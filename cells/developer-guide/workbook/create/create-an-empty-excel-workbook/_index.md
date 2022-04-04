@@ -1,6 +1,7 @@
 ---
 title: "Create an empty Excel workbook"
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "Empty Workbook"
 type: docs
 url: /workbook/create/empty-workbook/
 aliases: [/create-an-empty-excel-workbook/,/workbook/new/]

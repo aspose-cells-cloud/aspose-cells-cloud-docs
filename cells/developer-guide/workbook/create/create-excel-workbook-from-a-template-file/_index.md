@@ -1,6 +1,7 @@
 ---
 title: "How to create an Excel workbook with a template file"
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "Template"
 type: docs
 url: /workbook/create/template-file/
 aliases: [/create-excel-workbook-from-a-template-file/,/workbook/new-from-a-template-file/]

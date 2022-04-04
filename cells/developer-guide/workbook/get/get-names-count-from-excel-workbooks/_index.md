@@ -1,6 +1,7 @@
 ---
 title: "Get names from an Excel workbook"
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "Names"
 type: docs
 url: /workbook/get/names/
 aliases: [/get-names-count-from-excel-workbooks/,/workbook/names/]
