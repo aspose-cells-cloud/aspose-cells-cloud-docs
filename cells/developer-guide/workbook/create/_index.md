@@ -1,5 +1,5 @@
 ---
-title: "How to crate an Excel workbook"
+title: "How to create an Excel workbook"
 second_title: "Aspose.Cells Cloud Document"
 linktitle: "Create"
 type: docs

@@ -11,5 +11,5 @@ weight: 100
 
 ## Working with background on an Excel workbook.
 
-- [How to add background on an Execl workbook.](/cells/background/add/)
-- [How to delete background on an Execl workbook.](/cells/background/delete/)
+- [How to add background on an Execl workbook.](/cells/workbook/background/add/)
+- [How to delete background on an Execl workbook.](/cells/workbook/background/delete/)
