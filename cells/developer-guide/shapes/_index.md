@@ -12,9 +12,9 @@ weight: 100
 
 ## Working with shapes on an Excel file.
 
-- [How to get all shapes on an Excel worksheet.](/cells/get-all-shapes-inside-the-worksheet/)
-- [How to get a shape by Index inside on an Excel worksheet.](/cells/get-a-shape-by-index-inside-the-worksheet/)
-- [How to add a shape on an Excel worksheet.](/cells/add-a-shape-inside-the-worksheet/)
-- [How to delete all shapes on an Excel worksheet.](/cells/delete-all-shapes-inside-the-worksheet/)
-- [How to delete a shape by index on an Excel worksheet.](/cells/delete-a-shape-by-index-inside-the-worksheet/)
-- [How to convert shape to image on an Excel worksheet.](/cells/convert-autoshape-to-image/)
+- [How to get all shapes on an Excel worksheet.](/cells/shapes/get-all/)
+- [How to get a shape by Index inside on an Excel worksheet.](/cells/shapes/get/)
+- [How to add a shape on an Excel worksheet.](/cells/shapes/add/)
+- [How to delete all shapes on an Excel worksheet.](/cells/shapes/clear/)
+- [How to delete a shape by index on an Excel worksheet.](/cells/shapes/delete/)
+- [How to convert shape to image on an Excel worksheet.](/cells/shapes/convert/)
