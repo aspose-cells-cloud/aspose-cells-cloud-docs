@@ -5,7 +5,7 @@ linktitle: "column"
 type: docs
 url: /worksheets/autofit/column/
 aliases: [/autofit-single-column-of-worksheet/]
-keywords: ""Autofit a column on an Excel worksheet"
+keywords: "Autofit a column on an Excel worksheet"
 description: "Aspose.Cells Cloud REST API support autofitting a column on an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 10
 ---
