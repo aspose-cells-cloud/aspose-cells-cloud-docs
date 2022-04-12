@@ -17,4 +17,4 @@ weight: 100
 - [How to add a shape on an Excel worksheet.](/cells/shapes/add/)
 - [How to delete all shapes on an Excel worksheet.](/cells/shapes/clear/)
 - [How to delete a shape by index on an Excel worksheet.](/cells/shapes/delete/)
-- [How to convert shape to image on an Excel worksheet.](/cells/shapes/convert/)
+- [How to convert shape to image on an Excel worksheet.](/cells/shapes/conversion/)

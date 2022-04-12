@@ -1,7 +1,7 @@
 ---
 title: "Autofit multiple columns on an Excel worksheet"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: "Rows"
+linktitle: "Columns"
 type: docs
 url: /worksheets/autofit/columns/
 aliases: [/autofit-multiple-columns-of-worksheet/]

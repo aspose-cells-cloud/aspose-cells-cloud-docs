@@ -1,7 +1,7 @@
 ---
 title: "Autofit a column on an Excel worksheet"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: "column"
+linktitle: "Column"
 type: docs
 url: /worksheets/autofit/column/
 aliases: [/autofit-single-column-of-worksheet/]
