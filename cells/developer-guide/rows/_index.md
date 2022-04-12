@@ -11,13 +11,12 @@ weight: 100
 
 ## Working with rows on an Excel file.
 
-- [Get Row from a Worksheet](/cells/get-row-from-a-worksheet/)
-- [Add an Empty Row in a Worksheet](/cells/add-an-empty-row-in-a-worksheet/)
-- [Copy Rows in Excel Worksheet](/cells/copy-rows-in-excel-worksheet/)
-- [Hide Rows in Excel Worksheet](/cells/hide-rows-in-excel-worksheet/)
-- [Unhide Rows in Excel Worksheet](/cells/unhide-rows-in-excel-worksheet/)
-- [Group Rows in Excel Worksheet](/cells/group-rows-in-excel-worksheet/)
-- [Ungroup Rows in Excel Worksheet](/cells/ungroup-rows-in-excel-worksheet/)
-- [Delete Row from a Worksheet](/cells/delete-row-from-a-worksheet/)
-- [Auto Fit Rows in Excel Workbooks](/cells/auto-fit-rows-in-excel-workbooks/)
-- [AutoFit Rows and Columns of Worksheet](/cells/autofit-rows-and-columns-of-worksheet/)
+- [How to get a row info on an Excel worksheet.](/cells/rows/get/row/)
+- [How to add an empty row on an Excel worksheet.](/cells/rows/add/row/)
+- [How to copy rows on an Excel worksheet.](/cells/rows/copy/)
+- [How to hide rows in Excel Worksheet](/cells/rows/hide/)
+- [How to unhide rows in Excel Worksheet](/cells/rows/unhide/)
+- [How to group rows in Excel Worksheet](/cells/rows/group/)
+- [How to ungroup rows in Excel Worksheet](/cells/rows/ungroup/)
+- [How to delete row from a Worksheet](/cells/rows/delete/)
+
