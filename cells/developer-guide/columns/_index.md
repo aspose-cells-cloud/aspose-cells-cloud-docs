@@ -2,7 +2,7 @@
 title: "Columns"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /columns/columns/
+url: /columns/
 aliases: [/working-with-columns/]
 keywords: "REST API, columns, spreadsheets, excel"
 description: "Cells.Cloud API for Excel operate: unhide columns from an Excel Worksheet."
