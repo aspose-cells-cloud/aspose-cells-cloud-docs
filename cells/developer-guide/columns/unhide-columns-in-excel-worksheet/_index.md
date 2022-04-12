@@ -3,7 +3,7 @@ title: "Unhide columns on an Excel worksheet"
 second_title: "Aspose.Cells Cloud Document"
 linktitle: "Unhide"
 type: docs
-url: /colomns/unhide/
+url: /columns/unhide/
 aliases: [/unhide-columns-in-an-excel-worksheet/,/unhide-columns-in-excel-worksheet/]
 keywords: "Unhide column on an Excel worksheet"
 description: "Aspose.Cells Cloud REST API support unhiding column on an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
