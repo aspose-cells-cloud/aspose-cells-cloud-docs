@@ -11,13 +11,13 @@ weight: 100
 
 ## Working with Columns on an Excel file.
 
-- [Get Column from a Worksheet](/cells/get-columns-from-a-worksheet/)
-- [Add an Empty Column in a Worksheet](/cells/add-an-empty-column-in-a-worksheet/)
-- [Copy Columns in Excel Worksheet](/cells/copy-columns-in-excel-worksheet/)
-- [Hide Columns in Excel Worksheet](/cells/hide-columns-in-excel-worksheet/)
-- [Unhide Columns in Excel Worksheet](/cells/unhide-columns-in-excel-worksheet/)
-- [Group Columns in Excel Worksheet](/cells/group-columns-in-excel-worksheet/)
-- [Ungroup Columns in Excel Worksheet](/cells/ungroup-columns-in-excel-worksheet/)
-- [Delete Column from a Worksheet](/cells/delete-column-from-a-worksheet/)
+- [How to get column from an Excel worksheet.](/cells/columns/get/)
+- [How to add an Empty column on an Excel worksheet.](/cells/colomns/add/)
+- [How to copy columns on an Excel worksheet.](/cells/colomns/copy/)
+- [How to hide columns on an Excel worksheet.](/cells/colomns/hide/)
+- [How to unhide columns on an Excel worksheet.](/cells/colomns/unhide/)
+- [How to group columns on an Excel worksheet.](/cells/colomns/group/)
+- [How to ungroup columns on an Excel worksheet.](/cells/colomns/ungroup/)
+- [How to delete column on an Excel worksheet.](/cells/colomns/delete/)
 
 

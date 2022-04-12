@@ -1,11 +1,12 @@
 ---
-title: "Delete Column from an Excel Worksheet"
+title: "Delete a column on an Excel worksheet"
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "Delete"
 type: docs
 url: /columns/delete/
 aliases: [/delete-column-from-an-excel-worksheet/,/delete-column-from-a-worksheet/]
-keywords: "REST API, delete columns, spreadsheets, excel"
-description: "Cells.Cloud API for Excel operate: Delete Column from an Excel Worksheet."
+keywords: "Delete column on an Excel worksheet"
+description: "Aspose.Cells Cloud REST API support deleting column on an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 80
 ---
 
