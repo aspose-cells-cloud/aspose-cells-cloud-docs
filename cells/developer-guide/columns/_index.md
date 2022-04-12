@@ -19,5 +19,5 @@ weight: 100
 - [Group Columns in Excel Worksheet](/cells/group-columns-in-excel-worksheet/)
 - [Ungroup Columns in Excel Worksheet](/cells/ungroup-columns-in-excel-worksheet/)
 - [Delete Column from a Worksheet](/cells/delete-column-from-a-worksheet/)
-- [Auto Fit Columns in Excel Workbooks](/cells/auto-fit-columns-in-excel-workbooks/)
+
 

@@ -4,8 +4,8 @@ second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /rows/
 aliases: [/working-with-rows/]
-keywords: "REST API, task, spreadsheets, excel"
-description: "Cells.Cloud API for Excel operate: operate excel with rows."
+keywords: "Working with rows on an Excel file."
+description: "Aspose.Cells Cloud REST API support working with rows on an Excel file. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 100
 ---
 

@@ -1,80 +1,76 @@
 ---
-title: "Auto Fit Columns in an Excel Workbook"
+title: "Autofit columns on an Excel workbook"
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "Columns"
 type: docs
-url: /columns/autofit/
-aliases: [/auto-fit-columns-in-excel-workbooks,/autofit-columns-in-excel-workbooks/]
-keywords: "REST API, auto-fit columns, auto-fit height, auto-fit width, spreadsheets, excel"
-description: "Cells.Cloud API for Excel operate: Auto Fit Columns in an Excel Workbooks."
+url: /workbook/autofit/columns/
+aliases: [/auto-fit-columns-in-excel-workbooks,/autofit-columns-in-excel-workbooks/,/columns/autofit/]
+keywords: "Autofit columns on an Excel workbook"
+description: "Aspose.Cells Cloud REST API support autofitting columns on an Excel workbook. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 90
 ---
 
-This REST API auto fit `columns`  in an Excel Worksheet.
-
+This REST API indicates to autofit columns on an Excel workbook.
+ 
 ## RSET API
  
 ```bash
  
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitcolumns
+POST http://api.aspose.cloud/v3.0/cells/{name}/autofitcolumns
  
 ```
 The request parameters are: 
  
 | Parameter Name | Type | Path/Query String/HTTPBody | Description| 
 | :- | :- | :- |:- | 
-| name | string | path |   |
-| sheetName | string | path |   |
-| firstColumn | integer | query |   |
-| lastColumn | integer | query |   |
-| autoFitterOptions |  | body |   |
-| firstRow | integer | query |   |
-| lastRow | integer | query |   |
-| folder | string | query |   |
+| name | string | path | Document name. |
+| autoFitterOptions |  | body | Auto Fitter Options. |
+| startColumn | integer | query | Start column. |
+| endColumn | integer | query | End column. |
+| folder | string | query | Document's folder. |
 | storageName | string | query | storage name. |
  
-
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostAutofitWorksheetColumns) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
-
-You can use **cURL** command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
-
-
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
-
-{{< tab tabNum="11" >}}
-
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PostAutofitWorkbookColumns) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+ 
+You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+ 
+{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+ 
+{{< tab tabNum="1" >}}
+ 
 ```bash
-
-curl -X POST "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/autofitcolumns" -d '{"AutoFitMergedCells":true, "IgnoreHidden":true}' -H "Content-Type: application/json" -H "Accept: application/json"
-
+ 
+curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/autofitcolumns" \
+-X POST \
+-H "Content-Type: application/json" \
+-H "Accept: application/json" \
+-H "Authorization: Bearer <jwt token>" \
+-d '{"AutoFitMergedCells":true, "IgnoreHidden":true}'
+ 
 ```
-
+ 
 {{< /tab >}}
-
-{{< tab tabNum="12" >}}
-
-```java
-
+ 
+{{< tab tabNum="2" >}}
+ 
+```bash
 {
-
-  "Code": 200,
-
-  "Status": "OK"
-
+"Code": 200,
+"Status": "OK"
 }
-
+ 
 ```
-
+ 
 {{< /tab >}}
-
+ 
 {{< /tabs >}}
-
-
+ 
 ## Cloud SDK Family
-
+ 
 Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
-
+ 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
-
+ 
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 

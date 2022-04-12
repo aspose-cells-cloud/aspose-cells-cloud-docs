@@ -1,19 +1,500 @@
 ---
-title: "Get Row from a Worksheet"
+title: "Get rows info from an Excel worksheet"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "Rows"
 type: docs
-url: /get-row-from-a-worksheet/
+url: /rows/get/rows/
+aliases: [/get-row-from-a-worksheet/]
+keywords: "Get rows info on an Excel worksheet"
+description: "Aspose.Cells Cloud REST API support getting rows on an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 10
 ---
 
-## **Introduction**
-This example shows how to convert read row information from a Microsoft Excel Worksheet using Aspose.Cells Cloud API in your applications. You can use our REST API with any language: .NET, Java, PHP, Ruby, Rails, Python, jQuery and many more.
+This REST API indicates to get rows info on an Excel worksheet.
+ 
+## RSET API
+ 
+```bash
+ 
+GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
+ 
+```
+The request parameters are: 
+ 
+| Parameter Name | Type | Path/Query String/HTTPBody | Description| 
+| :- | :- | :- |:- | 
+| name | string | path | The workbook name. |
+| sheetName | string | path | The worksheet name. |
+| folder | string | query | The workdook folder. |
+| storageName | string | query | storage name. |
+ 
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetRows) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+ 
+You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+ 
+{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+ 
+{{< tab tabNum="1" >}}
+ 
+```bash
+ 
+curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows" \
+-X GET \
+-H "Content-Type: application/json" \
+-H "Accept: application/json" \
+-H "Authorization: Bearer <jwt token>"
+ 
+```
+ 
+{{< /tab >}}
+ 
+{{< tab tabNum="2" >}}
+ 
+```bash
+{
 
-## **API Information**
+  "Rows": {
 
-|**API**|**Type**|**Description**|**Resource Link**|
-| :- | :- | :- | :- |
-|/cells/{name}/worksheets/{sheetName}/cells/rows|GET|Read Row Information from Excel Worksheet|[GetWorksheetRows](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetRows)|
-### **cURL Example**
+    "MaxRow": 20,
+
+    "RowsCount": 17,
+
+    "RowsList": [
+
+      {
+
+        "link": {
+
+          "Href": "/0",
+
+          "Rel": "self",
+
+          "Title": null,
+
+          "Type": null
+
+        }
+
+      },
+
+      {
+
+        "link": {
+
+          "Href": "/1",
+
+          "Rel": "self",
+
+          "Title": null,
+
+          "Type": null
+
+        }
+
+      },
+
+      {
+
+        "link": {
+
+          "Href": "/2",
+
+          "Rel": "self",
+
+          "Title": null,
+
+          "Type": null
+
+        }
+
+      },
+
+      {
+
+        "link": {
+
+          "Href": "/3",
+
+          "Rel": "self",
+
+          "Title": null,
+
+          "Type": null
+
+        }
+
+      },
+
+      {
+
+        "link": {
+
+          "Href": "/4",
+
+          "Rel": "self",
+
+          "Title": null,
+
+          "Type": null
+
+        }
+
+      },
+
+      {
+
+        "link": {
+
+          "Href": "/5",
+
+          "Rel": "self",
+
+          "Title": null,
+
+          "Type": null
+
+        }
+
+      },
+
+      {
+
+        "link": {
+
+          "Href": "/6",
+
+          "Rel": "self",
+
+          "Title": null,
+
+          "Type": null
+
+        }
+
+      },
+
+      {
+
+        "link": {
+
+          "Href": "/7",
+
+          "Rel": "self",
+
+          "Title": null,
+
+          "Type": null
+
+        }
+
+      },
+
+      {
+
+        "link": {
+
+          "Href": "/8",
+
+          "Rel": "self",
+
+          "Title": null,
+
+          "Type": null
+
+        }
+
+      },
+
+      {
+
+        "link": {
+
+          "Href": "/9",
+
+          "Rel": "self",
+
+          "Title": null,
+
+          "Type": null
+
+        }
+
+      },
+
+      {
+
+        "link": {
+
+          "Href": "/10",
+
+          "Rel": "self",
+
+          "Title": null,
+
+          "Type": null
+
+        }
+
+      },
+
+      {
+
+        "link": {
+
+          "Href": "/11",
+
+          "Rel": "self",
+
+          "Title": null,
+
+          "Type": null
+
+        }
+
+      },
+
+      {
+
+        "link": {
+
+          "Href": "/12",
+
+          "Rel": "self",
+
+          "Title": null,
+
+          "Type": null
+
+        }
+
+      },
+
+      {
+
+        "link": {
+
+          "Href": "/13",
+
+          "Rel": "self",
+
+          "Title": null,
+
+          "Type": null
+
+        }
+
+      },
+
+      {
+
+        "link": {
+
+          "Href": "/14",
+
+          "Rel": "self",
+
+          "Title": null,
+
+          "Type": null
+
+        }
+
+      },
+
+      {
+
+        "link": {
+
+          "Href": "/15",
+
+          "Rel": "self",
+
+          "Title": null,
+
+          "Type": null
+
+        }
+
+      },
+
+      {
+
+        "link": {
+
+          "Href": "/16",
+
+          "Rel": "self",
+
+          "Title": null,
+
+          "Type": null
+
+        }
+
+      },
+
+      {
+
+        "link": {
+
+          "Href": "/17",
+
+          "Rel": "self",
+
+          "Title": null,
+
+          "Type": null
+
+        }
+
+      },
+
+      {
+
+        "link": {
+
+          "Href": "/18",
+
+          "Rel": "self",
+
+          "Title": null,
+
+          "Type": null
+
+        }
+
+      },
+
+      {
+
+        "link": {
+
+          "Href": "/19",
+
+          "Rel": "self",
+
+          "Title": null,
+
+          "Type": null
+
+        }
+
+      },
+
+      {
+
+        "link": {
+
+          "Href": "/20",
+
+          "Rel": "self",
+
+          "Title": null,
+
+          "Type": null
+
+        }
+
+      },
+
+      {
+
+        "link": {
+
+          "Href": "/21",
+
+          "Rel": "self",
+
+          "Title": null,
+
+          "Type": null
+
+        }
+
+      },
+
+      {
+
+        "link": {
+
+          "Href": "/22",
+
+          "Rel": "self",
+
+          "Title": null,
+
+          "Type": null
+
+        }
+
+      },
+
+      {
+
+        "link": {
+
+          "Href": "/23",
+
+          "Rel": "self",
+
+          "Title": null,
+
+          "Type": null
+
+        }
+
+      },
+
+      {
+
+        "link": {
+
+          "Href": "/24",
+
+          "Rel": "self",
+
+          "Title": null,
+
+          "Type": null
+
+        }
+
+      }
+
+    ],
+
+    "link": {
+
+      "Href": "/test.xlsx/worksheets/Sheet1/cells/rows",
+
+      "Rel": "self",
+
+      "Title": null,
+
+      "Type": null
+
+    }
+
+  },
+
+  "Code": 200,
+
+  "Status": "OK"
+
+}
+ 
+```
+ 
+{{< /tab >}}
+ 
+{{< /tabs >}}
+ 
+## Cloud SDK Family
+ 
+Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+ 
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+ 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}

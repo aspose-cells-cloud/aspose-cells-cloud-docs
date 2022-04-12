@@ -5,8 +5,8 @@ linktitle: "Worksheets"
 type: docs
 url: /worksheets/
 aliases: [/working-with-worksheets/]
-keywords: "REST API, spreadsheets, excel, worksheets"
-description: "Cells.Cloud API for Excel operate: worksheets operate."
+keywords: "Working with worksheet on an Excel workbook."
+description: "Aspose.Cells Cloud REST API support working with worksheet on an Excel workbook. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 100
 ---
 
@@ -34,3 +34,4 @@ A worksheet is a collection of cells where you keep and manipulate the data. Eac
 - [How to unfreeze Excel worksheet panes.](/cells/worksheets/unfreeze-panes/)
 - [How to delete Excel worksheet.](/cells/worksheets/delete/)
 - [How to delete Excel worksheet background.](/cells/worksheets/background/delete/)
+- [How to work with autofit an Excel workbook ](/cells/worksheets/autofit/)

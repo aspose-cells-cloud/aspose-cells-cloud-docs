@@ -1,19 +1,20 @@
 ---
-title: "Shapes"
+title: "Working with shape on an Excel worksheet"
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "Shapes"
 type: docs
 url: /shapes/
 aliases: [/working-with-shapes/,/working-with-images/]
-keywords: "REST API, task, spreadsheets, excel"
-description: "Cells.Cloud API for Excel operate: operate excel with shapes."
+keywords: "Working with shape on an Excel worksheet"
+description: "How to work with shape on an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 100
 ---
 
 ## Working with shapes on an Excel file.
 
-- [Get all Shapes inside the Worksheet](/cells/get-all-shapes-inside-the-worksheet/)
-- [Get a Shape by Index inside the Worksheet](/cells/get-a-shape-by-index-inside-the-worksheet/)
-- [Add a Shape inside the Worksheet](/cells/add-a-shape-inside-the-worksheet/)
-- [Delete all Shapes inside the Worksheet](/cells/delete-all-shapes-inside-the-worksheet/)
-- [Delete a Shape by Index inside the Worksheet](/cells/delete-a-shape-by-index-inside-the-worksheet/)
-- [Convert AutoShape to Image](/cells/convert-autoshape-to-image/)
+- [How to get all shapes on an Excel worksheet.](/cells/get-all-shapes-inside-the-worksheet/)
+- [How to get a shape by Index inside on an Excel worksheet.](/cells/get-a-shape-by-index-inside-the-worksheet/)
+- [How to add a shape on an Excel worksheet.](/cells/add-a-shape-inside-the-worksheet/)
+- [How to delete all shapes on an Excel worksheet.](/cells/delete-all-shapes-inside-the-worksheet/)
+- [How to delete a shape by index on an Excel worksheet.](/cells/delete-a-shape-by-index-inside-the-worksheet/)
+- [How to convert shape to image on an Excel worksheet.](/cells/convert-autoshape-to-image/)
