@@ -53,8 +53,26 @@ curl -v "http://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/ro
  
 ```bash
 {
-"Code": 200,
-"Status": "OK"
+  "Row": {
+    "GroupLevel": 0,
+    "Height": 13.5,
+    "Index": 10,
+    "IsBlank": false,
+    "IsHeightMatched": true,
+    "IsHidden": false,
+    "Style": {
+      "link": {
+        "Href": "/style",
+        "Rel": "self"
+      }
+    },
+    "link": {
+      "Href": "api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/cells/rows/10",
+      "Rel": "self"
+    }
+  },
+  "Code": 200,
+  "Status": "OK"
 }
  
 ```
