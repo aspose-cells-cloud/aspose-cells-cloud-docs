@@ -11,6 +11,10 @@ description: "This page describes the most interesting new Aspose.Cells Cloud fe
 
 Welcome to what's new in Aspose.Cells Cloud docs. Use this page to quickly find the latest changes.
 
+## Aspose.Cells Cloud 22.4
+
+* Fix few bugs.
+
 ## Aspose.Cells Cloud 22.3
 
 * [Add new API about building codegen specification.](https://api.aspose.cloud/v3.0/cells/codegen/spec)
