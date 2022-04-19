@@ -14,6 +14,7 @@ Welcome to what's new in Aspose.Cells Cloud docs. Use this page to quickly find 
 ## Aspose.Cells Cloud 22.4
 
 * Fix few bugs.
+* [Improvement for swagger UI.](https://apireference.aspose.cloud/cells/)
 
 ## Aspose.Cells Cloud 22.3
 
