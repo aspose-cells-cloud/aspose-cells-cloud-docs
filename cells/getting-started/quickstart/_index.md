@@ -9,7 +9,7 @@ weight: 20
 
 These instructions guide you through initializing Aspose.Cells Cloud API and installing the required spreadsheet-processing libraries.
 
-You can easily integrate spreadsheet conversion, generation and editing features into applications running on any modern OS. They assist to read, edit, merge, split spreadsheets as well as convert spreadsheets to various file formats. These programming libraries allow you to work with a complete set of Spreadsheet components, such as main text, formulas, headers, footers, tables, chart, comments, drawing objects, fonts, hyperlinks, pivot table, watermarks, and much more.
+You can easily integrate spreadsheet conversion, generation and editing features into applications running on any modern OS. They assist to read, edit, merge, split spreadsheets as well as convert spreadsheets to various file formats. These programming libraries allow you to work with a complete set of Spreadsheet components, such as data, styles, formulas, tables, chart, pivot table, headers, footers, comments, drawing objects, hyperlinks, watermarks, and much more.
 
 ## Create a Free Account
 
@@ -66,7 +66,7 @@ Congratulations! You have successfully obtained your security credentials to aut
 
 Please take a moment to familiarize yourself with a wide range of Aspose.Cells Cloud products for a better understanding of your possibilities. These software products are built around a high-performance [Cloud API](https://apireference.aspose.com/), available 24/7.
 
-For the effective use of Cloud API we provide a family of powerful [Cloud SDKs](https://products.aspose.cloud/cells/family) for almost all major operating systems (Windows, macOS, Linux, Android) and popular programming languages, including [Android](https://products.aspose.cloud/cells/android),[Java](https://products.aspose.cloud/cells/java), [C#](https://products.aspose.cloud/cells/net), [Python](https://products.aspose.cloud/cells/python), [Node.js](https://products.aspose.cloud/cells/nodejs), [PHP](https://products.aspose.cloud/cells/php), [Golang](https://products.aspose.cloud/cells/go), [Ruby](https://products.aspose.cloud/cells/ruby), [Swift](https://products.aspose.cloud/cells/swift) and [Perl](https://products.aspose.cloud/cells/perl).
+For the effective use of Cloud API we provide a family of powerful [Cloud SDKs](https://products.aspose.cloud/cells/family) for almost all major operating systems (Windows, macOS, Linux, Android) and popular programming languages, including [Android](https://products.aspose.cloud/cells/android), [C#](https://products.aspose.cloud/cells/net), [Python](https://products.aspose.cloud/cells/python), [Golang](https://products.aspose.cloud/cells/go),[Java](https://products.aspose.cloud/cells/java), [Node.js](https://products.aspose.cloud/cells/nodejs),[Perl](https://products.aspose.cloud/cells/perl), [PHP](https://products.aspose.cloud/cells/php), [Ruby](https://products.aspose.cloud/cells/ruby) and [Swift](https://products.aspose.cloud/cells/swift).
 
  All of the above SDKs are hosted on [GitHub](https://github.com/aspose-cells-cloud/). Each repository contains a wide range of code examples to illustrate its usage.
 
@@ -78,7 +78,7 @@ Please refer to the [Developer Guide](https://docs.aspose.cloud/cells/developer-
 
 ## Ask for Assistance, If Necessary
 
-Feel free to describe your problems and ask questions on our [Cloud Forums](http://forum.aspose.cloud/). Aspose technical support team is ready to help you. Have a note that Aspose does not provide technical support over the phone. Phone support is available only for sales and purchase questions.
+Feel free to describe your problems and ask questions on our [Cloud Forums](https://forum.aspose.cloud/c/cells/7). Aspose technical support team is ready to help you. Have a note that Aspose does not provide technical support over the phone. Phone support is available only for sales and purchase questions.
 
 
 
