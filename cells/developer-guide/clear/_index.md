@@ -23,7 +23,7 @@ he request parameters are:
 | Parameter Name | Type | Path/Query String/HTTPBody | Description| 
 | :- | :- | :- |:- | 
 | file | file | formData | File to upload |
-| objecttype | string | query | chart/comment/picture/shape  |
+| objecttype | string | query | duplicaterows/blankcolumns/blankrows/formula/content/style/chart/comment/picture/shape/listobject/hyperlink/oleobject/pivottable/validation/Background  |
  
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LiteCells/PostClearObjects) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
  

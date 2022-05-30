@@ -11,6 +11,11 @@ description: "This page describes the most interesting new Aspose.Cells Cloud fe
 
 Welcome to what's new in Aspose.Cells Cloud docs. Use this page to quickly find the latest changes.
 
+## Aspose.Cells Cloud 22.5
+
+* [Improvement for export API.](https://docs.aspose.cloud/cells/export/)
+* [Improvement for clear API.](https://docs.aspose.cloud/cells/clear/)
+
 ## Aspose.Cells Cloud 22.4
 
 * Fix few bugs.
