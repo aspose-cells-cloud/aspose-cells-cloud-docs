@@ -3,6 +3,7 @@ title: "Aspose.Cells for Cloud 18.2 Release Notes"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /aspose-cells-for-cloud-18-2-release-notes/
+aliases: [/aspose-cells-cloud-18-2-release-notes/]
 weight: 20
 description: "Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on."
 ---
