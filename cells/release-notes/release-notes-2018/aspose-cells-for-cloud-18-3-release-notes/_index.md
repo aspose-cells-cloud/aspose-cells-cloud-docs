@@ -1,5 +1,5 @@
 ---
-title: "Aspose.Cells for Cloud 18.3 Release Notes"
+title: "Aspose.Cells Cloud 18.3 Release Notes"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /aspose-cells-for-cloud-18-3-release-notes/
