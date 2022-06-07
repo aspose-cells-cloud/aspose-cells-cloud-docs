@@ -10,7 +10,7 @@ weight: 80
 
 {{% alert color="primary" %}} 
 
-This page contains release notes for [Aspose.Cells for Cloud 17.3.0](https://downloads.aspose.com/cells/cloud/new-releases/aspose.cells-for-cloud-17.3.0/).
+This page contains release notes for [Aspose.Cells Cloud 17.3](https://downloads.aspose.com/cells/cloud/new-releases/aspose.cells-for-cloud-17.3.0/).
 
 {{% /alert %}} 
 

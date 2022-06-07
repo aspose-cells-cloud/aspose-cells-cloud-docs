@@ -10,7 +10,7 @@ weight: 70
 
 {{% alert color="primary" %}} 
 
-The page contains release notes for Aspose.Cells for Cloud 17.5
+The page contains release notes for Aspose.Cells Cloud 17.5
 
 {{% /alert %}} 
 

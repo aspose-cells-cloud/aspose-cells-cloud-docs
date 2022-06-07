@@ -10,7 +10,7 @@ weight: 10
 
 {{% alert color="primary" %}} 
 
-This page contains release notes for [Aspose.Cells for Cloud 17.11](https://apireference.aspose.cloud/cells/)
+This page contains release notes for [Aspose.Cells Cloud 17.11](https://apireference.aspose.cloud/cells/)
 
 {{% /alert %}} 
 ## **Full List of Issues Covering all Changes in this Release**

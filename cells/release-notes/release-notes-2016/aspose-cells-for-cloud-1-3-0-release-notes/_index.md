@@ -8,7 +8,7 @@ description: "Aspose.Cells Cloud supports Excel to create, convert, merge, split
 weight: 40
 ---
 
-We are pleased to announce the release of Aspose.Cells for Cloud 1.3.0 with following improvements.
+We are pleased to announce the release of Aspose.Cells Cloud 1.3.0 with following improvements.
 
 |**Key** |**Summary** |**Category** |
 | :- | :- | :- |

@@ -10,7 +10,7 @@ description: "Aspose.Cells Cloud supports Excel to create, convert, merge, split
 
 {{% alert color="primary" %}} 
 
-This page contains release notes for [Aspose.Cells for Cloud 18.2](https://apireference.aspose.cloud/cells/)
+This page contains release notes for [Aspose.Cells Cloud 18.2](https://apireference.aspose.cloud/cells/)
 
 {{% /alert %}} 
 ## **Full List of Issues Covering all Changes in this Release**
