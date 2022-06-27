@@ -11,6 +11,11 @@ description: "This page describes the most interesting new Aspose.Cells Cloud fe
 
 Welcome to what's new in Aspose.Cells Cloud docs. Use this page to quickly find the latest changes.
 
+## Aspose.Cells Cloud 22.6
+
+* Improvement for Cells Cloud APIs.
+* Support to convert files in the zip package to kinds of the format.
+
 ## Aspose.Cells Cloud 22.5
 
 * [Improvement for export API.](https://docs.aspose.cloud/cells/export/)
@@ -25,6 +30,4 @@ Welcome to what's new in Aspose.Cells Cloud docs. Use this page to quickly find 
 
 * [Add new API about building codegen specification.](https://api.aspose.cloud/v3.0/cells/codegen/spec)
 * [Support to add digital signature for Aspose.Cells Cloud.](/cells/workbook/digital-signature/)
-
-
 
