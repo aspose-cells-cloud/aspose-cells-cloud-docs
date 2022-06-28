@@ -13,7 +13,7 @@ Welcome to what's new in Aspose.Cells Cloud docs. Use this page to quickly find 
 
 ## Aspose.Cells Cloud 22.6
 
-* Improvement for Cells Cloud APIs.
+* [Improvement for Cells Cloud APIs.](/cells/aspose-cells-cloud-22-6-release-notes/)
 * Support to convert files in the zip package to kinds of the format.
 
 ## Aspose.Cells Cloud 22.5
