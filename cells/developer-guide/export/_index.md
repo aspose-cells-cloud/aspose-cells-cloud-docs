@@ -1,10 +1,10 @@
 ---
-title: "Export excel file and internal objects to kinds of format"
+title: "Export workbook and internal objects to kinds of format"
 second_title: "Aspose.Cells Cloud Document"
 linktitle: "Export"
 type: docs
 url: /export/
-keywords: "Export excel file and internal objects to kinds of format files."
+keywords: "Export workbook and internal objects to kinds of format files."
 description: "Aspose.Cells Cloud REST API support exporting Excel file and internal objects to kinds of format files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 31
 ---
@@ -17,7 +17,7 @@ It works perfectly for workbook, chart, shape and picture exported from excel fi
 
 The request is an HTTP request with multipart content (see [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). The first part of the multipart content contains the data file and the second contains save options.
 
-This REST API `export` excel file to different format file.
+The REST API `export` workbook and internal objects to different format file.
 
 ## RSET API
 
@@ -33,7 +33,7 @@ The request parameters are:
 | :- | :- | :- |:- | 
 | file | file | formData | File to upload |
 | objectType | string | query |  object type (workbook/worksheet/chart/shape/picture/listobject/oleobject) |
-| format | string | query | file format(csv/xls/html/mhtml/ods/pdf/xml/txt/tiff/xlsb/xlsm/xlsx/xltm/xltx/xps/png/jpg/gif/emf/bmp/md/Numbers/wmf/svg)  |
+| format | string | query | [File Format](/cells/supported-file-formats/)  |
  
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LiteCells/PostExport) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
  
@@ -89,15 +89,15 @@ Using an SDK is the best way to speed up the development. An SDK takes care of l
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 
 
-{{< tabs tabTotal="9" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" tabName9="Python" >}}
+{{< tabs tabTotal="9" tabID="3" tabName10="C#" tabName11="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" tabName9="Python" >}}
 
-{{< tab tabNum="1" >}}
+{{< tab tabNum="10" >}}
 
 {{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example-Export.cs" >}}
 
 {{< /tab >}}
 
-{{< tab tabNum="2" >}}
+{{< tab tabNum="11" >}}
 {{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example-Export.java" >}}
 
 {{< /tab >}}
