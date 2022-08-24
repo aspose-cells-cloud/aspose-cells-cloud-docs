@@ -11,18 +11,18 @@ weight: 30
 
 Tags |	Architecture | Dockerfile 
 ---|:--:|:--:|---:
-ltsc2016.22.5.0 | x64   | No Dockerfile
+ltsc2016.22.8.0 | x64   | No Dockerfile
 
 
 ## Windows Server 2019 Images ##
 
 Tags |	Architecture | Dockerfile 
 ---|:--:|:--:|---:
-ltsc2019.22.5.0 | x64   | No Dockerfile
+ltsc2019.22.8.0 | x64   | No Dockerfile
 
 
 ## Linux Images ##
 
 Tags |	Architecture | Dockerfile 
 ---|:--:|:--:|---:
-linux.22.5.0 | x64   | No Dockerfile
+linux.22.8.0 | x64   | No Dockerfile

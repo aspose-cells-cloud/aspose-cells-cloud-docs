@@ -11,6 +11,10 @@ description: "This page describes the most interesting new Aspose.Cells Cloud fe
 
 Welcome to what's new in Aspose.Cells Cloud docs. Use this page to quickly find the latest changes.
 
+## Aspose.Cells Cloud 22.8
+
+* Support transposing Excel Rows to Columns.
+
 ## Aspose.Cells Cloud 22.7
 
 * Improvement Save API on cells cloud services( add four save option).
