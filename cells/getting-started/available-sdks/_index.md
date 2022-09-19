@@ -14,7 +14,7 @@ Using an SDK (API client) is the quickest way for a developer to speed up the de
 ### **SDK benefits**
 Our supported SDKs are 100% tested and out of the box running. These SDKs are open source and have an MIT license. You can use them, and even customize them for absolutely free of charge.
 ### **Supported SDKs**
-{{< tabs tabTotal="10" tabID="1" tabName1=".NET" tabName2="Java" tabName3="PHP" tabName4="Android" tabName5="Perl" tabName6="Ruby" tabName7="Python" tabName8="Node Js" tabName9="Swift" tabName10="Go" >}}
+{{< tabs tabTotal="11" tabID="1" tabName1=".NET" tabName2="Java" tabName3="PHP" tabName4="Android" tabName5="Perl" tabName6="Ruby" tabName7="Python" tabName8="Node Js" tabName9="Swift" tabName10="Go" tabName11="CPP" >}}
 
 {{< tab tabNum="1" >}}
 
@@ -228,6 +228,32 @@ If you want to download [Go Module](https://pkg.go.dev),please import aspose-cel
 
 {{< /tab >}}
 
+{{< tab tabNum="11" >}}
+
+Please visit the Aspose.Cells Cloud [GitHub Repository](https://github.com/aspose-cells-cloud/aspose-cells-cloud-cpp) to get started with using Aspose.Cells Cloud SDK for CPP
+
+If you want to use [Aspose.Cells Cloud SDK for CPP](https://github.com/aspose-cells-cloud/aspose-cells-cloud-cpp),please reference readme in [Aspose.Cells Cloud SDK for CPP](https://github.com/aspose-cells-cloud/aspose-cells-cloud-cpp).
+
+```cmd
+sudo apt-get install gcc cmake openssl-dev
+git clone https://github.com/aspose-cells-cloud/aspose-cells-cloud-cpp
+cd aspose-cells-cloud-cpp
+mkdir -p ./build
+
+cmake -DCMAKE_BUILD_TYPE=Release -S . -B ./build 
+cmake --build ./build --config Release --target aspose_cells_cloud_sdk
+```
+
+```cmd
+vcpkg install openssl:x64-windows
+git clone https://github.com/aspose-cells-cloud/aspose-cells-cloud-cpp
+cd aspose-cells-cloud-cpp
+mkdir .\build
+cmake -G "Visual Studio 17 2022" -Thost=x64 -Ax64 -S . -B ./build
+cmake --build ./build --config Release --target aspose_cells_cloud_sdk
+```
+
+{{< /tab >}}
 {{< /tabs >}}
 
 
