@@ -11,6 +11,12 @@ description: "This page describes the most interesting new Aspose.Cells Cloud fe
 
 Welcome to what's new in Aspose.Cells Cloud docs. Use this page to quickly find the latest changes.
 
+## Aspose.Cells Cloud 22.9
+
+* Support exporting page to other format file. 
+* Add new api for convert to pdf. 
+* Add new api for convert to png. 
+* Add new api for convert to docx. 
 ## Aspose.Cells Cloud 22.8
 
 * Support transposing Excel Rows to Columns.
