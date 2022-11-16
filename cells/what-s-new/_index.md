@@ -11,6 +11,13 @@ description: "This page describes the most interesting new Aspose.Cells Cloud fe
 
 Welcome to what's new in Aspose.Cells Cloud docs. Use this page to quickly find the latest changes.
 
+## Aspose.Cells Cloud 22.11
+
+* Add new api for convert to json. 
+* Add new api for convert to sql. 
+* Add new api for convert to cvs. 
+
+
 ## Aspose.Cells Cloud 22.10
 
 * Add new api for convert to pptx. 
