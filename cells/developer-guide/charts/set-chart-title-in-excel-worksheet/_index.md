@@ -3,7 +3,7 @@ title: "Set Chart Title in Excel Worksheet"
 type: docs
 url: /chart/title/add/
 aliases: [/set-chart-title-in-excel-worksheet/]
-weight: 130
+weight: 30
 ---
 
 This REST API indicates add chart title / set chart title visible

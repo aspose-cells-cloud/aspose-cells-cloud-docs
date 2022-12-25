@@ -3,7 +3,7 @@ title: "Update Chart Legend in a Worksheet"
 type: docs
 url: /charts/legend/update/
 aliases: [/update-chart-legend-in-a-worksheet/]
-weight: 90
+weight: 160
 ---
 
 This REST API indicates update chart legend

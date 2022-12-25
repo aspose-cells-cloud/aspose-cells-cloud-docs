@@ -3,7 +3,7 @@ title: "Update Chart Title in Excel Worksheet"
 type: docs
 url: /charts/title/update/
 aliases: [/update-chart-title-in-excel-worksheet/]
-weight: 140
+weight: 160
 ---
 
 This REST API indicates update chart title
