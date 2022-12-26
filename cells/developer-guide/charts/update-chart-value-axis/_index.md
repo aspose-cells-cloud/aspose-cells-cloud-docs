@@ -66,3 +66,62 @@ Using an SDK is the best way to speed up the development. An SDK takes care of l
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
  
  
+{{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
+
+{{< tab tabNum="1" >}}
+
+
+
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+
+
+{{< /tab >}}
+
+{{< tab tabNum="3" >}}
+
+
+
+{{< /tab >}}
+
+{{< tab tabNum="4" >}}
+
+{{< /tab >}}
+
+{{< tab tabNum="5" >}}
+
+
+
+{{< /tab >}}
+
+{{< tab tabNum="6" >}}
+
+{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example-Post-ChartValueAxis.js" >}}
+
+{{< /tab >}}
+
+{{< tab tabNum="7" >}}
+
+
+
+{{< /tab >}}
+
+{{< tab tabNum="8" >}}
+
+{{< /tab >}}
+
+{{< tab tabNum="9" >}}
+
+
+
+{{< /tab >}}
+
+{{< tab tabNum="10" >}}
+
+
+
+{{< /tab >}}
+
+{{< /tabs >}}
