@@ -3,7 +3,7 @@ title: "Export List Object"
 second_title: "Aspose.Cells Cloud Document"
 linktitle: "List Object"
 type: docs
-url: /export/execl-listobject-to-different-formats/
+url: /export/excel-listobject-to-different-formats/
 keywords: "Export Excel list object to kinds of format files."
 description: "Aspose.Cells Cloud REST API support exporting Excel list object to kinds of format files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 20
