@@ -25,4 +25,4 @@ ltsc2019.23.1.0 | x64   | No Dockerfile
 
 Tags |	Architecture | Dockerfile 
 ---|:--:|:--:|---:
-linux.23.1.0 | x64   | No Dockerfile
+linux.23.1.1 | x64   | No Dockerfile
