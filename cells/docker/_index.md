@@ -17,8 +17,8 @@ Aspose.Cells Cloud Image is available for Linux ,Microsoft Windows 10 Pro, Micro
 
 ##  API Reference - Aspose.Cells Cloud Docker 
 
-https://hostname:port/swagger
-https://hostname:port/swagger/ui/index.html
+- https://hostname:port/swagger
+- https://hostname:port/swagger/ui/index.html
 
 see:
 - [Download Information](/cells/docker/downloads/) 
