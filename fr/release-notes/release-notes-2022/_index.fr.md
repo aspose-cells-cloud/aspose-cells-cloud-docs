@@ -1,5 +1,5 @@
 ﻿---
-title: Notes de version - 202
+title: Notes de version - 2022
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/release-notes-2022/

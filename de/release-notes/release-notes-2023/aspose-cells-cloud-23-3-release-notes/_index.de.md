@@ -1,13 +1,13 @@
 ﻿---
-title: Aspose.Cells Cloud 23.03 Versionshinweise
+title: Aspose.Cells Cloud 23.3 Versionshinweise
 second_title: Aspose.Cells Cloud Documen
 type: docs
-url: /de/aspose-cells-cloud-23-03-release-notes/
+url: /de/aspose-cells-cloud-23-3-release-notes/
 description: Aspose.Cells Cloud unterstützt Excel zum Erstellen, Konvertieren, Zusammenführen, Aufteilen, Schützen, inneren Objektvorgang usw
 weight: 19
 ---
 {{% alert color="primary" %}} 
-Diese Seite enthält Versionshinweise für Aspose.Cells Cloud 23.03
+Diese Seite enthält Versionshinweise für Aspose.Cells Cloud 23.3
 '{{% /alert %}} '
 ## **Vollständige Liste der in dieser Version behandelten Probleme und Verbesserungen**
 

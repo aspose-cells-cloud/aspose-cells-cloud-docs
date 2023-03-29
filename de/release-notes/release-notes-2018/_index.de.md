@@ -1,5 +1,5 @@
 ﻿---
-title: Versionshinweise - 201
+title: Versionshinweise - 2018
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/release-notes-2018/

@@ -1,5 +1,5 @@
 ﻿---
-title: Примечания к выпуску — 201
+title: Примечания к выпуску — 2016
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/release-notes-2016/

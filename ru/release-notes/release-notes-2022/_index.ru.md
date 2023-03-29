@@ -1,5 +1,5 @@
 ﻿---
-title: Примечания к выпуску — 202
+title: Примечания к выпуску — 2022
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/release-notes-2022/
