@@ -1,25 +1,25 @@
 ﻿---
-title: Aspose.Cells Cloud 20.7 Release Note
+title: Aspose.Cells Cloud 20.7 ملاحظة الإصدار
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/aspose-cells-cloud-20-7-release-notes/
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 30
 ---
 {{% alert color="primary" %}} 
 
-This page contains release notes for Aspose.Cells Cloud 20.7
+تحتوي هذه الصفحة على ملاحظات إصدار Aspose.Cells Cloud 20.7
 
 {{% /alert %}} 
-## **Complete List of Changes Covered in this Release**
+## **قائمة كاملة بالتغييرات المشمولة في هذا الإصدار**
 
-|**Key**|**Summary**|**Category**|
+|**مفتاح**|**ملخص**|**فئة**|
 |:- |:- |:- |
-|CELLSCLOUD-10314|Fix the API of post workbook create|Bug|
-|CELLSCLOUD-10315|Fix the API of post cell characters|Bug|
-|CELLSCLOUD-10316|Fix the API of get range values|Bug|
-|CELLSCLOUD-10317|Fix the API of post cell style|Bug|
-## **SDK Changes**
-### **Aspose.Cells Cloud SDKs ( Java, Android, PHP, .NET, Perl )**
-#### **Improvement**
-- Enhancement for CellsApi constructor.
+|CELLSCLOUD-10314|إصلاح API الخاص بإنشاء مصنف النشر|حشرة|
+|CELLSCLOUD-10315|قم بإصلاح API لأحرف خلية البريد|حشرة|
+|CELLSCLOUD-10316|أصلح API للحصول على قيم النطاق|حشرة|
+|CELLSCLOUD-10317|إصلاح API نمط خلية النشر|حشرة|
+## **تغييرات SDK**
+### **Aspose.Cells Cloud SDKs (Java ، Android ، PHP ، .NET ، Perl)**
+#### **تحسين**
+- تحسين منشئ CellsApi.

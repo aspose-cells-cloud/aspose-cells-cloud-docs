@@ -1,40 +1,40 @@
 ﻿---
-title: Add Background in Workboo
+title: أضف الخلفية في Workboo
 second_title: Aspose.Cells Cloud Documen
-linktitle: Ad
+linktitle: إعلان
 type: docs
 url: /ar/workbook/background/add/
 aliases: [/add-background-in-workbook/,/workbook/add-background/]
 keywords: Add background on an Excel workbook
-description: Aspose.Cells Cloud REST API support adding background on an Excel workbook on an Excel file. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift
+description: Aspose.Cells Cloud REST API دعم إضافة خلفية على مصنف Excel في ملف Excel. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
 weight: 160
 ---
-This REST API indicates to add `background` on an Excel workbook.
+يشير هذا REST API إلى إضافة `background` على مصنف Excel.
 
 
-**Query Parameter**
+**معامِل الاستعلام**
 
-|Parameter Name|Type|Description|
+|اسم المعلمة|يكتب|وصف|
 |:- |:- |:- |
-|picPath|string|picture position.|
-|folder|string|Original workbook folder.|
-|storageName|string|Storage name.|
+|picPath|خيط|موقف الصورة.|
+|مجلد|خيط|مجلد المصنف الأصلي.|
+|اسم التخزين|خيط|اسم التخزين.|
 
-**Request Body Parameter**
+**طلب معلمة الجسم**
 
-|Parameter Name|Type|Description|
+|اسم المعلمة|يكتب|وصف|
 |:- |:- |:- |
-|datafile|data file |The data file saves into request body.|
+|ملف البيانات| ملف البيانات|يتم حفظ ملف البيانات في نص الطلب.|
 
 ## REST API
 
-|**API**|**Type**|**Description**|**Resource Link**|
+|**API**|**يكتب**|**وصف**|**رابط الموارد**|
 |:- |:- |:- |:- |
-|/cells/{name}/background|PUT|Add background in excel file|[PutWorkbookBackground](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookBackground)|
+|/ الخلايا / {name} / الخلفية|يضع|إضافة خلفية في ملف اكسل|[PutWorkbookBackground](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookBackground)|
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookBackground) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. 
+ ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookBackground) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
 
-You can use **cURL** command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+ يمكنك استخدام**cURL** أداة سطر الأوامر للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
@@ -67,11 +67,11 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/background?picPath=D
 {{< /tabs >}}
 
 
-## Cloud SDK Family
+## عائلة Cloud SDK
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. يعتني SDK بالتفاصيل منخفضة المستوى ويتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة من Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام حزم SDK متنوعة:
 
 {{< tabs tabTotal="9" tabID="4" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Android" tabName5="Perl" tabName6="Ruby" tabName7="PHP" tabName8="Node.js" tabName9="Swift" >}}
 

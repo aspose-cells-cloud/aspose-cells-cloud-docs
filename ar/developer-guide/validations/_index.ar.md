@@ -1,23 +1,23 @@
 ﻿---
-title: Validation
+title: تصديق
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/validations/
 keywords: Working with validations on an Excel file
-description: Aspose.Cells Cloud REST API support working with validations on an Excel file. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift
+description: Aspose.Cells Cloud REST API دعم العمل مع عمليات التحقق من الصحة على ملف Excel. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
 weight: 100
 ---
-Data validation is a feature in MS Excel used to control what a user can enter in a cell of an excel sheet. Like, restrict entries in a sheet, such as a date range or whole numbers only. We can even create dropdowns as well, which saves un-necessary space and shows the values in a single cell. Also, we can create a customized message which will appear user insert any incorrect value or an incorrect format.
+التحقق من صحة البيانات هو ميزة في MS Excel تستخدم للتحكم في ما يمكن للمستخدم إدخاله في خلية من ورقة Excel. مثل ، تقييد الإدخالات في ورقة ، مثل نطاق التاريخ أو الأرقام الصحيحة فقط. يمكننا أيضًا إنشاء قوائم منسدلة ، مما يوفر مساحة غير ضرورية ويظهر القيم في خلية واحدة. أيضًا ، يمكننا إنشاء رسالة مخصصة تظهر للمستخدم إدخال أي قيمة غير صحيحة أو تنسيق غير صحيح.
 
-As an example, A user can specify a meeting scheduled between 9:00 AM and 6:00 PM.
+كمثال ، يمكن للمستخدم تحديد اجتماع مجدول بين الساعة 9:00 صباحًا والساعة 6:00 مساءً.
 
-As we can use data validation in excel to make sure a value is a positive number, a date between 15 and 30, make sure a date occurs in the next 30 days, or make sure a text entry is less than 25 characters etc.
+حيث يمكننا استخدام التحقق من صحة البيانات في Excel للتأكد من أن القيمة هي رقم موجب ، أو تاريخ بين 15 و 30 ، أو التأكد من حدوث تاريخ في الأيام الثلاثين القادمة ، أو التأكد من أن إدخال النص أقل من 25 حرفًا وما إلى ذلك.
 
-## Working with validations on an Excel file.
+## العمل مع عمليات التحقق على ملف Excel.
 
-- [How to add a validation information from an Execl worksheet.](/cells/ar/validations/delete/)
-- [How to get validation information from an Execl worksheet.](/cells/ar/validations/get/)
-- [How to get all validations information from an Execl worksheet.](/cells/ar/validations/get-all/)
-- [How to delete a validation information from an Execl worksheet.](/cells/ar/validations/delete/)
-- [How to clear all validations information from an Execl worksheet.](/cells/ar/validations/clear/)
-- [How to update a validation information on an Execl worksheet.](/cells/ar/validations/update/)
+- [كيفية إضافة معلومات التحقق من صحة من ورقة عمل Execl.](/cells/ar/validations/delete/)
+- [كيفية الحصول على معلومات التحقق من صحة من ورقة عمل Execl.](/cells/ar/validations/get/)
+- [كيفية الحصول على جميع معلومات التحقق من صحة ورقة عمل Execl.](/cells/ar/validations/get-all/)
+- [كيفية حذف معلومات التحقق من صحة من ورقة عمل Execl.](/cells/ar/validations/delete/)
+- [كيفية مسح كافة معلومات التحقق من صحة ورقة عمل Execl.](/cells/ar/validations/clear/)
+- [كيفية تحديث معلومات التحقق من صحة ورقة عمل Execl.](/cells/ar/validations/update/)

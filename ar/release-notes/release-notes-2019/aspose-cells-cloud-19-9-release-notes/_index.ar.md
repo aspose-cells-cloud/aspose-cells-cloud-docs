@@ -3,15 +3,15 @@ title: Aspose.Cells Cloud 19.9 Release Note
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/aspose-cells-cloud-19-9-release-notes/
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 40
 ---
-## **Key Summary Category**
+## **فئة الملخص الرئيسية**
 
 
-- Integrate storage feature into Aspose.Cells Cloud.
-- Aspose.Cells Cloud SDK enhancement for constructor.
-- Aspose.Cells Cloud SDK enhancement for CellsApi class integrate multiple controllers the APIs.
-- Aspose.Cells Cloud SDK support to storage APIs.
-- Containerize Aspose.Cells Cloud.
-- Enhancements in Aspose.Cells.Cloud API reference.
+- دمج ميزة التخزين في Aspose.Cells Cloud.
+- Aspose.Cells تحسين Cloud SDK للمنشئ.
+- Aspose.Cells تحسين Cloud SDK لفئة CellsApi دمج وحدات تحكم متعددة في واجهات برمجة التطبيقات.
+- Aspose.Cells دعم Cloud SDK لواجهات برمجة تطبيقات التخزين.
+- حاوية Aspose.Cells السحابة.
+- التحسينات في مرجع Aspose.Cells.Cloud API.

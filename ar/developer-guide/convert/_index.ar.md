@@ -1,33 +1,33 @@
 ﻿---
-title: Convert Excel to kinds of forma
+title: حول Excel إلى أنواع الشكل
 second_title: Aspose.Cells Cloud Documen
-linktitle: Conversio
+linktitle: كونفيرسيو
 type: docs
 url: /ar/convert/
 aliases: [/convert-excel/]
 keywords: Convert excel files to kinds of format files
-description: Aspose.Cells Cloud REST API support conversion excel files to kinds of format files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift
+description: Aspose.Cells Cloud REST API يدعم تحويل ملفات Excel إلى أنواع من ملفات التنسيق. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
 weight: 30
 ---
-If you have originally created an Excel file in a certain format, like [XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), and [CSV](https://docs.fileformat.com/spreadsheet/csv/), you may sometimes find it useful to convert the excel file to another format so you can take advantage of special features provided by it. For example, you may want to convert an excel file to [PDF](https://docs.fileformat.com/pdf/) to protect your contents from any unauthorized modifications and make it easy to read and share simultaneously. 
+ إذا قمت في الأصل بإنشاء ملف Excel بتنسيق معين ، مثل[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/) ، و[CSV](https://docs.fileformat.com/spreadsheet/csv/)، قد تجد أحيانًا أنه من المفيد تحويل ملف Excel إلى تنسيق آخر حتى تتمكن من الاستفادة من الميزات الخاصة التي يوفرها. على سبيل المثال ، قد ترغب في تحويل ملف Excel إلى[PDF](https://docs.fileformat.com/pdf/) لحماية محتوياتك من أي تعديلات غير مصرح بها وتسهيل قراءتها ومشاركتها في وقت واحد.
 
-Document conversion is a complex process. Many factors contribute to the complexity and therefore, should be taken into account during the transformation process. The ability to convert Excel files from one format to another with a precise professional quality is a top feature of Aspose.Cells Cloud. 
+ تحويل الوثيقة عملية معقدة. تساهم العديد من العوامل في التعقيد ، وبالتالي ، يجب أخذها في الاعتبار أثناء عملية التحول. تعد القدرة على تحويل ملفات Excel من تنسيق إلى آخر بجودة احترافية دقيقة من أهم ميزات Aspose.Cells Cloud.
 
-It works perfectly for any document format conversions. You can both import and export documents: [XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [ODS](https://docs.fileformat.com/spreadsheet/ods/), [TXT](https://docs.fileformat.com/word-processing/txt/). The export-only formats: [PDF](https://docs.fileformat.com/pdf/), [OTS](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [DIF](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [NUMBERS](https://docs.fileformat.com/spreadsheet/numbers/), [FODS](https://docs.fileformat.com/spreadsheet/fods/).
+ إنه يعمل بشكل مثالي لأي تحويلات تنسيق المستند. يمكنك استيراد وتصدير المستندات:[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [ملف TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [المواد المستنفدة للأوزون](https://docs.fileformat.com/spreadsheet/ods/), [رسالة قصيرة](https://docs.fileformat.com/word-processing/txt/) . تنسيقات التصدير فقط:[PDF](https://docs.fileformat.com/pdf/), [OTS](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [DIF](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [أعداد](https://docs.fileformat.com/spreadsheet/numbers/), [فودس](https://docs.fileformat.com/spreadsheet/fods/).
 
-The following APIs to convert an Excel file to other file formats is provided:
+يتم توفير واجهات برمجة التطبيقات التالية لتحويل ملف Excel إلى تنسيقات ملفات أخرى:
 
-|API|Description|
+|API|وصف|
 |:- |:- |
-|[GET /cells/{name}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)|Gets Excel file to other formats from cloud storage.|
-|[PUT /cells/convert](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)|Converts Excel file to other formats from request content.|
-|[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)|Saves Excel file as other formats file to storage.|
+|[الحصول على / الخلايا / {name}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)|يحصل على ملف Excel إلى تنسيقات أخرى من التخزين السحابي.|
+|[وضع / خلايا / تحويل](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)|يحول Excel الملف إلى صيغ أخرى من محتوى الطلب.|
+|[POST / الخلايا / {name} / saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)|يحفظ Excel ملف كملف تنسيقات أخرى في التخزين.|
 
-The following articles explain each API in detail and contain cURL and SDK Examples of each API:
+تشرح المقالات التالية كل API بالتفصيل وتحتوي على cURL و SDK أمثلة لكل API:
 
-- [Convert Excel file to different file format in cloud](/cells/ar/convert/excel-to-different-formats/)
-- [Save Excel workbook as different file formats](/cells/ar/saveas-other-formats/)
-- [Export Excel file to different file format in cloud](/cells/ar/export-different-formats/)
-- [Convert Excel file to PDF](/cells/ar/convert/excel-to-pdf)
-- [Convert Excel file to Html](/cells/ar/convert/excel-to-html)
-- [Convert Excel file to TIFF](/cells/ar/convert/excel-to-tiff)
+- [تحويل ملف Excel إلى تنسيق ملف مختلف في السحابة](/cells/ar/convert/excel-to-different-formats/)
+- [احفظ Excel المصنف بتنسيقات ملفات مختلفة](/cells/ar/saveas-other-formats/)
+- [تصدير ملف Excel إلى تنسيق ملف مختلف في السحابة](/cells/ar/export-different-formats/)
+- [تحويل ملف Excel إلى PDF](/cells/ar/convert/excel-to-pdf)
+- [تحويل ملف Excel إلى Html](/cells/ar/convert/excel-to-html)
+- [تحويل ملف Excel إلى TIFF](/cells/ar/convert/excel-to-tiff)

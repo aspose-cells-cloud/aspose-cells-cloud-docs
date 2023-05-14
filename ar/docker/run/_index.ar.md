@@ -1,33 +1,33 @@
 ﻿---
-title: Ru
+title: رو
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/docker/run/
-description: How to run Aspose.Cells Cloud for Docker
+description: كيفية تشغيل Aspose.Cells Cloud for Docker
 weight: 30
 ---
-## Expose Port
+## كشف الميناء
 
-Port	| Description | Required
+المنفذ | الوصف | مطلوب
 ---|:--:|---:
-5000 | 	Folder with fonts, which will be used to render documents | true
+5000 | مجلد مع الخطوط ، والذي سيتم استخدامه لتقديم المستندات | حقيقي
 
 
-## Required volumes  ##
-Mount path in container	| Description | Required
+##  الأحجام المطلوبة ##
+مسار التركيب في الحاوية | الوصف | مطلوب
 ---|:--:|---:
-C:\fonts | 	Folder with fonts, which will be used to render documents | false
-C:\data |	File storage folder | false
+ج: \ الخطوط | مجلد مع الخطوط ، والذي سيتم استخدامه لتقديم المستندات | خطأ شنيع
+ج: \ بيانات | مجلد تخزين الملفات | خطأ شنيع
 
-## Run Parameters  ##
+##  تشغيل المعلمات ##
 
-Name |	Description | Required
+الاسم | الوصف | مطلوب
 ---|:--:|---:
-LicensePublicKey | Public key of the license   | true
-LicensePrivateKey	| Private key of the license  | true
-storagesCredentialsFilePath | Storage configure file path. Default file is ./storageResource.json  | true
+LicensePublicKey | المفتاح العام للترخيص | حقيقي
+مفتاح الترخيص الخاص | المفتاح الخاص للترخيص | حقيقي
+storagesCredentialsFilePath | تخزين تكوين مسار الملف. الملف الافتراضي هو ./storageResource.json | حقيقي
 
-## Run Command  ##
+##  الأمر Run ##
 
 {{< tabs tabTotal="2" tabID="1" tabName1="windows" tabName2="linux" >}}
 
@@ -55,5 +55,5 @@ docker run  -d  -p 47900:5000  -e LicensePublicKey=yourLicensePublicKey	 -e Lice
 {{< /tabs >}}
 
 
-**Reference Document** : 
-  - [Docker Run]( https://docs.docker.com/engine/reference/commandline/run/)
+**وثيقة مرجعية** : 
+  - [تشغيل عامل ميناء]( https://docs.docker.com/engine/reference/commandline/run/)

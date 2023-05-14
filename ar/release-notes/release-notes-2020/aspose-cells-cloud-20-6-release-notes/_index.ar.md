@@ -1,23 +1,23 @@
 ﻿---
-title: Aspose.Cells Cloud 20.6 Release Note
+title: Aspose.Cells Cloud 20.6 مذكرة الإصدار
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/aspose-cells-cloud-20-6-release-notes/
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 40
 ---
 {{% alert color="primary" %}} 
 
-This page contains release notes for Aspose.Cells Cloud 20.6
+تحتوي هذه الصفحة على ملاحظات إصدار Aspose.Cells Cloud 20.6
 
 {{% /alert %}} 
-## **Complete List of Changes Covered in this Release**
-### **New Feature**
-- Support text water marker
-- Convert images in get workbook API
-### **Improvement**
-- Upgrade Dynabic.Billing for Aspose.Cells Cloud
-- Enhancement for Cells object operating in Task API
+## **قائمة كاملة بالتغييرات المشمولة في هذا الإصدار**
+### **ميزة جديدة**
+- دعم نص علامة مائية
+- تحويل الصور في الحصول على مصنف API
+### **تحسين**
+- قم بترقية Dynabic.Billing لـ Aspose.Cells Cloud
+- تحسين تشغيل عنصر Cells في المهمة API
 
 
 

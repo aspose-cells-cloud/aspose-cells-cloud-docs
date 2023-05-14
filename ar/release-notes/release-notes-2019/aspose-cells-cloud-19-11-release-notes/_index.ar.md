@@ -1,12 +1,12 @@
 ﻿---
-title: Aspose.Cells Cloud 19.11 Release Note
+title: Aspose.Cells Cloud 19.11 - ملاحظة إصدار
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/aspose-cells-cloud-19-11-release-notes/
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 20
 ---
-- Fixed issue with Aspose.Cells Cloud for posting match no blanks in worksheet
-- Fixed issue with Aspose.Cells Cloud api for putting color filter in worksheet
-- Added new Aspose.Cells Cloud services health check
-- General enhancements for Aspose.Cells Cloud
+- تم إصلاح المشكلة مع Aspose.Cells Cloud لنشر تطابق لا توجد فراغات في ورقة العمل
+- تم إصلاح المشكلة مع Aspose.Cells Cloud api لوضع مرشح الألوان في ورقة العمل
+- تمت إضافة فحص صحة الخدمات السحابية Aspose.Cells الجديد
+- تحسينات عامة على Aspose.Cells Cloud

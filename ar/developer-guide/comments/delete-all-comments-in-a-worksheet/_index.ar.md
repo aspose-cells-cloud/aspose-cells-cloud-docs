@@ -1,13 +1,13 @@
 ﻿---
-title: Clea
+title: كليا
 type: docs
 url: /ar/comments/clear/
 aliases: [/delete-all-comments-in-a-worksheet/]
 keywords: REST API, spreadsheets, excel, clear comment
-description: "Cells.Cloud API for Excel operate: clear comments"
+description: "Cells.Cloud API لـ Excel تعمل: تعليقات واضحة"
 weight: 50
 ---
-This REST API indicates Delete all comments for worksheet.
+يشير هذا REST API إلى حذف كافة التعليقات الخاصة بورقة العمل.
  
 ## RSET API
  
@@ -16,18 +16,18 @@ This REST API indicates Delete all comments for worksheet.
 DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments
  
 ```
-The request parameters are: 
+ معلمات الطلب هي:
  
-|Parameter Name |Type |Path/Query String/HTTPBody |Description|
+| اسم المعلمة| يكتب| المسار / سلسلة الاستعلام / HTTPBody|وصف|
 |:- |:- |:- |:- |
-|name |string |path ||
-|sheetName |string |path ||
-|folder |string |query ||
-|storageName |string |query |storage name. |
+| اسم| خيط| طريق||
+| اسم الورقة| خيط| طريق||
+| مجلد| خيط| استفسار||
+| اسم التخزين| خيط| استفسار| اسم التخزين.|
  
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheetComments) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+ ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheetComments) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
  
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
@@ -60,11 +60,11 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/comment
 
 {{< /tabs >}}
 
-## Cloud SDK Family
+## عائلة Cloud SDK
  
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. يعتني SDK بالتفاصيل منخفضة المستوى ويتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة من Aspose.Cells Cloud SDKs.
  
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام حزم SDK متنوعة:
 
 {{< tabs tabTotal="1" tabID="4" tabName1="Go" >}}
 

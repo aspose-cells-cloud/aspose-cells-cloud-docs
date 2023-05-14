@@ -1,10 +1,10 @@
 ﻿---
-title: Get Cell Style from a Workshee
+title: احصل على نمط الخلية من Workshee
 type: docs
 url: /ar/get-cell-style-from-a-worksheet/
 weight: 10
 ---
-This REST API indicates get cell `style` in an Excel file.
+يشير هذا REST API إلى الحصول على الخلية `style` في ملف Excel.
 
 ## RSET API
  
@@ -13,19 +13,19 @@ This REST API indicates get cell `style` in an Excel file.
 GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}/style
  
 ```
-The request parameters are: 
+ معلمات الطلب هي:
  
-|Parameter Name |Type |Path/Query String/HTTPBody |Description|
+| اسم المعلمة| يكتب| المسار / سلسلة الاستعلام / HTTPBody|وصف|
 |:- |:- |:- |:- |
-|name |string |path |Document name. |
-|sheetName |string |path |Worksheet name. |
-|cellName |string |path |Cell's name. |
-|folder |string |query |Document's folder. |
-|storageName |string |query |storage name. |
+| اسم| خيط| طريق| اسم الملف.|
+| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
+| اسم الخلية| خيط| طريق| اسم الخلية.|
+| مجلد| خيط| استفسار| مجلد المستند.|
+| اسم التخزين| خيط| استفسار| اسم التخزين.|
  
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetCellStyle) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+ ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetCellStyle) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
  
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
  
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
  
@@ -336,11 +336,11 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/a
  
 {{< /tabs >}}
  
-## Cloud SDK Family
+## عائلة Cloud SDK
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. يعتني SDK بالتفاصيل منخفضة المستوى ويتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة من Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام حزم SDK متنوعة:
 
 
 

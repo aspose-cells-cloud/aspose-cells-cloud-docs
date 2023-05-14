@@ -1,13 +1,13 @@
 ﻿---
-title: Aspose.Cells Cloud 19.12 Release Note
+title: Aspose.Cells Cloud 19.12 ملاحظات الإصدار
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/aspose-cells-cloud-19-12-release-notes/
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 10
 ---
-## **New Features**
-- Update Aspose.Cells.DLL to 19.12 in Aspose.Cloud
-## **Bug Fixes**
-- SaveAs API Method Missing SaveOptions
-- The import data API misses some parameters in Aspose.Cells Cloud
+## **ميزات جديدة**
+- تحديث Aspose.Cells.DLL إلى 19.12 في Aspose.Cloud
+## **اصلاحات الشوائب**
+- أسلوب SaveAs API مفقود SaveOptions
+- تفقد بيانات الاستيراد API بعض المعلمات في Aspose.Cells Cloud

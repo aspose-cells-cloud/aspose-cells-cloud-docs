@@ -1,25 +1,25 @@
 ﻿---
-title: Working with ranges on an Excel fil
+title: العمل مع نطاقات على Excel فيل
 second_title: Aspose.Cells Cloud Documen
-linktitle: Rang
+linktitle: رن
 type: docs
 url: /ar/ranges/
 aliases: [/working-with-ranges/]
 keywords: Working with ranges on an Excel fil
-description: How to work with ranges on an Excel file using Aspose.Cells Cloud REST API. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift
+description: كيفية العمل مع النطاقات على ملف Excel باستخدام Aspose.Cells Cloud REST API. يدعم SDK أنواعًا من لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
 weight: 100
 ---
-Represents a cell, a row, a column, a selection of cells containing one or more contiguous blocks of cells, or a 3D range.
+يمثل خلية أو صفًا أو عمودًا أو مجموعة محددة من الخلايا تحتوي على واحد أو أكثر من كتل الخلايا المتجاورة أو نطاق ثلاثي الأبعاد.
 
-## Working with ranges on an Excel file.
+## العمل مع النطاقات في ملف Excel.
 
-- [Get Named Ranges inside the Workbook](/cells/ar/get-named-ranges-inside-the-workbook/)
-- [Get Cells Data Based on Named Range](/cells/ar/get-cells-data-based-on-named-range/)
-- [Change Heights of Rows inside the Range](/cells/ar/cells/change-heights-of-rows-inside-the-range/)
-- [Change Widths of Columns inside the Range](/cells/ar/change-widths-of-columns-inside-the-range/)
-- [Combines a Range of Cells into a Single Cell](/cells/ar/combines-a-range-of-cells-into-a-single-cell/)
-- [Copy Range in a Worksheet with Paste Options](/cells/ar/copy-range-in-a-worksheet-with-paste-options/)
-- [Set the Style of the Range](/cells/ar/set-the-style-of-the-range/)
-- [Unmerge Merged Cells of the Range](/cells/ar/unmerge-merged-cells-of-the-range/)
-- [Move a named ranged with an Excel Worksheet](/cells/ar/move-a-named-ranged-with-a-excel-worksheet/)
-- [Set Range Value in Excel Worksheet](/cells/ar/ranges/set-value/)
+- [احصل على نطاقات مُسمَّاة داخل المصنف](/cells/ar/get-named-ranges-inside-the-workbook/)
+- [احصل على Cells بيانات بناءً على النطاق المحدد](/cells/ar/get-cells-data-based-on-named-range/)
+- [قم بتغيير مرتفعات الصفوف داخل النطاق](/cells/ar/cells/change-heights-of-rows-inside-the-range/)
+- [تغيير عرض الأعمدة داخل النطاق](/cells/ar/change-widths-of-columns-inside-the-range/)
+- [يجمع نطاقًا من Cells في خلية مفردة](/cells/ar/combines-a-range-of-cells-into-a-single-cell/)
+- [نسخ النطاق في ورقة عمل مع خيارات اللصق](/cells/ar/copy-range-in-a-worksheet-with-paste-options/)
+- [اضبط نمط النطاق](/cells/ar/set-the-style-of-the-range/)
+- [فك دمج Cells من النطاق](/cells/ar/unmerge-merged-cells-of-the-range/)
+- [حرك مسمى تراوحت مع Excel ورقة عمل](/cells/ar/move-a-named-ranged-with-a-excel-worksheet/)
+- [قم بتعيين قيمة النطاق في ورقة عمل Excel](/cells/ar/ranges/set-value/)

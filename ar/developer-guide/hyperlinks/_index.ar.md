@@ -1,21 +1,21 @@
 ﻿---
-title: Hyperlink
+title: ارتباط تشعبي
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/hyperlinks/
 aliases: [/working-with-hyperlinks/,/working-with-hyperlink/]
 keywords: REST API, hyperlinks, spreadsheets, exce
-description: "Cells.Cloud API for Excel operate: working with hyperlinks on an Excel file"
+description: "Cells.Cloud API لـ Excel تعمل: العمل مع الارتباطات التشعبية في ملف Excel"
 weight: 100
 ---
-&nbsp;&nbsp;&nbsp;&nbsp;Hyperlinks in Excel allow users to create a shortcut way to reach any certain worksheet, file, folder or webpage. It helps us to reach to any specific folder or link quickly.
+& nbsp؛ & nbsp؛ & nbsp؛ & nbsp؛ تتيح الارتباطات التشعبية في Excel للمستخدمين إنشاء طريقة مختصرة للوصول إلى أي ورقة عمل أو ملف أو مجلد أو صفحة ويب معينة. يساعدنا في الوصول إلى أي مجلد أو رابط معين بسرعة.
 
-## Working with Hyperlinks on an Excel file.
+## العمل مع الارتباطات التشعبية في ملف Excel.
 
-- [How to get a hyperlink description from Excel Worksheet.](/cells/ar/hyperlinks/get/)
-- [How to get all hyperlinks description from Excel Worksheet.](/cells/ar/hyperlinks/get-all/)
-- [How to add hyperlinks to Excel Worksheet](/cells/ar/hyperlinks/add/)
-- [How to update hyperlinks in Excel Worksheet](/cells/ar/hyperlinks/update/)
-- [How to delete all hyperlinks from Excel Worksheet](/cells/ar//hyperlinks/clear/)
-- [How to delete a hyperlink from Excel Worksheet](/cells/ar//hyperlinks/delete/)
+- [كيفية الحصول على وصف ارتباط تشعبي من ورقة عمل Excel.](/cells/ar/hyperlinks/get/)
+- [كيفية الحصول على وصف جميع الارتباطات التشعبية من ورقة عمل Excel.](/cells/ar/hyperlinks/get-all/)
+- [كيفية إضافة ارتباطات تشعبية إلى ورقة عمل Excel](/cells/ar/hyperlinks/add/)
+- [كيفية تحديث الارتباطات التشعبية في ورقة عمل Excel](/cells/ar/hyperlinks/update/)
+- [كيفية حذف كافة الارتباطات التشعبية من ورقة عمل Excel](/cells/ar//hyperlinks/clear/)
+- [كيفية حذف ارتباط تشعبي من ورقة عمل Excel](/cells/ar//hyperlinks/delete/)
 

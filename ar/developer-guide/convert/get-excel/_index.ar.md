@@ -1,41 +1,41 @@
 ﻿---
-title: Gets Excel file to other format
+title: يحصل على Excel الملف الى تنسيق اخر
 second_title: Aspose.Cells Cloud Documen
 linktitle: Ge
 type: docs
 url: /ar/export-different-formats/
 aliases: [/export-excel-workbook-to-different-file-formats/]
 keywords: Get excel files to kinds of format files
-description: Aspose.Cells Cloud REST API support get excel files to kinds of format files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift
+description: Aspose.Cells Cloud REST API دعم الحصول على ملفات Excel لأنواع ملفات التنسيق. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
 weight: 10
 ---
-This REST API indicates to `get` excel file to different format file.
+يشير هذا REST API إلى `get` ملف Excel إلى ملف تنسيق مختلف.
 
 
-**Query Parameter**
+**معامِل الاستعلام**
 
-|Parameter Name|Type|Description|
+|اسم المعلمة|يكتب|وصف|
 |:- |:- |:- |
-|format|string|file format(csv/xls/html/mhtml/ods/pdf/xml/txt/tiff/xlsb/xlsm/xlsx/xltm/xltx/xps/png/jpg/gif/emf/bmp/md/Numbers/wmf/svg) |
-|password|string||
-|isAutoFit|string|true/false|
-|onlySaveTable|string|true/false|
-|outPath|string|new file position.|
-|folder|string|Original workbook folder.|
-|storageName|string|Storage name.|
+|شكل|خيط| تنسيق الملف (csv / xls / html / mhtml / ods / pdf / xml / txt / tiff / xlsb / xlsm / xlsx / xltm / xltx / xps / png / jpg / gif / emf / bmp / md / Numbers / wmf / svg )|
+|كلمة المرور|خيط||
+|isAutoFit|خيط|خطأ صحيح|
+|فقط|خيط|خطأ صحيح|
+|outPath|خيط|موقف ملف جديد.|
+|مجلد|خيط|مجلد المصنف الأصلي.|
+|اسم التخزين|خيط|اسم التخزين.|
 
 
 
 ## REST API
 
-|**API**|**Type**|**Description**|**Swagger Link**|
+|**API**|**يكتب**|**وصف**|**رابط التباهي**|
 |:- |:- |:- |:- |
-|/cells/{name}|GET|Exports workbook to other format.|[GetWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)|
+|/ خلايا / {name}|يحصل|يصدر المصنف إلى تنسيق آخر.|[GetWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)|
 
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. 
+ ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
 
-You can use **cURL** command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+ يمكنك استخدام**cURL** أداة سطر الأوامر للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
 
 
 {{< tabs tabTotal="1" tabID="11" tabName11="Request" >}}
@@ -51,11 +51,11 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/book1.xlsx?format=pdf" -H "acce
 
 {{< /tabs >}}
 
-## Cloud SDK Family
+## عائلة Cloud SDK
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. يعتني SDK بالتفاصيل منخفضة المستوى ويتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة من Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام حزم SDK متنوعة:
 
 
 {{< tabs tabTotal="3" tabID="3" tabName1="C#" tabName2="Java" tabName3="Go" >}}

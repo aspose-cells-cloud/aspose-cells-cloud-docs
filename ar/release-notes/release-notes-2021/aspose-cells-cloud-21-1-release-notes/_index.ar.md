@@ -1,22 +1,22 @@
 ﻿---
-title: Aspose.Cells Cloud 21.1 Release Note
+title: Aspose.Cells Cloud 21.1 - ملاحظات الإصدار
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/aspose-cells-cloud-21-1-release-notes/
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 80
 ---
 {{% alert color="primary" %}} 
 
-This page contains release notes for Aspose.Cells Cloud 21.1
+تحتوي هذه الصفحة على ملاحظات إصدار Aspose.Cells Cloud 21.1
 
 {{% /alert %}} 
-## **Complete list of issues and enhancements covered in this Release**
+## **قائمة كاملة بالمشكلات والتحسينات التي تم تناولها في هذا الإصدار**
 
-|**Key**|**Summary**|**Category**|
+|**مفتاح**|**ملخص**|**فئة**|
 |:- |:- |:- |
-|CELLSCLOUD-10343 |Optimize the PostCellCalculate method.|Improvement   |
-|CELLSCLOUD-10344 |Upgrade Billing Module to 21.1 version.|Improvement |
-|CELLSCLOUD-10345 |Upgrade Aspose.Cells.DLL to 21.1 version.|Improvement |
-|CELLSCLOUD-10346 |Support to convert worksheet on task API.|New Feature|
-|CELLSCLOUD-10348 |Support to add and delete cell or range in worksheet.|New Feature|
+|CELLSCLOUD-10343 |تحسين طريقة PostCellCalculate.| تحسين|
+|CELLSCLOUD-10344 |قم بترقية "وحدة الفوترة" إلى الإصدار 21.1.| تحسين|
+|CELLSCLOUD-10345 |قم بترقية Aspose.Cells.DLL إلى إصدار 21.1.| تحسين|
+|CELLSCLOUD-10346 |دعم لتحويل ورقة العمل على المهمة API.|ميزة جديدة|
+|CELLSCLOUD-10348 |دعم لإضافة وحذف الخلية أو النطاق في ورقة العمل.|ميزة جديدة|

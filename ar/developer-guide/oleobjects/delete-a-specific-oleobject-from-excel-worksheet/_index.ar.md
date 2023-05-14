@@ -1,15 +1,15 @@
 ﻿---
-title: Delete an OLE object in an Excel workshee
+title: حذف عنصر OLE في Excel كنية عمل
 second_title: Aspose.Cells Cloud Documen
-linktitle: Delet
+linktitle: حذف
 type: docs
 url: /ar/oleobjects/delete/
 aliases: [/delete-a-specific-oleobject-from-excel-worksheet/]
 keywords: Delete an OLE object in an Excel worksheet
-description: Aspose.Cells Cloud REST API support deleting an OLE object in an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift
+description: Aspose.Cells Cloud REST API يدعم حذف عنصر OLE في ورقة عمل Excel. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
 weight: 50
 ---
-This REST API indicates `delete` an OLE object in an Excel worksheet.
+يشير هذا REST API إلى `delete` كائن OLE في ورقة عمل Excel.
  
 ## RSET API
  
@@ -18,19 +18,19 @@ This REST API indicates `delete` an OLE object in an Excel worksheet.
 DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects/{oleObjectIndex}
  
 ```
-The request parameters are: 
+ معلمات الطلب هي:
  
-|Parameter Name |Type |Path/Query String/HTTPBody |Description|
+| اسم المعلمة| يكتب| المسار / سلسلة الاستعلام / HTTPBody|وصف|
 |:- |:- |:- |:- |
-|name |string |path |The workbook name. |
-|sheetName |string |path |The worsheet name. |
-|oleObjectIndex |integer |path |Ole object index |
-|folder |string |query |The workbook folder. |
-|storageName |string |query |storage name. |
+| اسم| خيط| طريق|اسم المصنف.|
+| اسم الورقة| خيط| طريق| اسم المستقيم.|
+| oleObjectIndex| عدد صحيح| طريق| فهرس كائن Ole|
+| مجلد| خيط| استفسار| مجلد المصنف.|
+| اسم التخزين| خيط| استفسار| اسم التخزين.|
  
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/OleObjects/DeleteWorksheetOleObject) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+ ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/OleObjects/DeleteWorksheetOleObject) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
  
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
  
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
  
@@ -62,11 +62,11 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Embeded_OleObject_Sample_Book1.xlsx/
  
 {{< /tabs >}}
  
-## Cloud SDK Family
+## عائلة Cloud SDK
  
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. يعتني SDK بالتفاصيل منخفضة المستوى ويتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة من Aspose.Cells Cloud SDKs.
  
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام حزم SDK متنوعة:
  
  
  

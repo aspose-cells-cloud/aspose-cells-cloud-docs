@@ -1,17 +1,17 @@
 ﻿---
-title: Aspose.Cells Cloud  23.1 Release Notes
+title: ملاحظات إصدار Aspose.Cells Cloud 23.1
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/aspose-cells-cloud-23-1-release-notes/
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 21
 ---
 {{% alert color="primary" %}} 
-This page contains release notes for Aspose.Cells Cloud 23.1
+تحتوي هذه الصفحة على ملاحظات إصدار Aspose.Cells Cloud 23.1
 '{{% /alert %}} '
-## **Complete list of issues and enhancements covered in this Release**
+## **قائمة كاملة بالمشكلات والتحسينات التي تم تناولها في هذا الإصدار**
 
-|**ID**|**Summary**|**Category**|
+|**بطاقة تعريف**|**ملخص**|**فئة**|
 |:- |:- |:- |
-|37366 |Optimize image data for DTO. |
-|37367 |Fix the buf for PostCellCharacters method. |
+|37366 | تحسين بيانات الصورة لـ DTO.|
+|37367 | إصلاح buf لطريقة PostCellCharacters.|

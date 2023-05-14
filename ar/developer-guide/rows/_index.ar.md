@@ -1,21 +1,21 @@
 ﻿---
-title: Row
+title: صف
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/rows/
 aliases: [/working-with-rows/]
 keywords: Working with rows on an Excel file
-description: Aspose.Cells Cloud REST API support working with rows on an Excel file. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift
+description: Aspose.Cells Cloud REST API دعم العمل مع الصفوف في ملف Excel. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
 weight: 100
 ---
-## Working with rows on an Excel file.
+## العمل مع الصفوف في ملف Excel.
 
-- [How to get a row info on an Excel worksheet.](/cells/ar/rows/get/row/)
-- [How to add an empty row on an Excel worksheet.](/cells/ar/rows/add/row/)
-- [How to copy rows on an Excel worksheet.](/cells/ar/rows/copy/)
-- [How to hide rows in Excel Worksheet](/cells/ar/rows/hide/)
-- [How to unhide rows in Excel Worksheet](/cells/ar/rows/unhide/)
-- [How to group rows in Excel Worksheet](/cells/ar/rows/group/)
-- [How to ungroup rows in Excel Worksheet](/cells/ar/rows/ungroup/)
-- [How to delete row from a Worksheet](/cells/ar/rows/delete/)
+- [كيفية الحصول على معلومات الصف في ورقة عمل Excel.](/cells/ar/rows/get/row/)
+- [كيفية إضافة صف فارغ في ورقة عمل Excel.](/cells/ar/rows/add/row/)
+- [كيفية نسخ الصفوف في ورقة عمل Excel.](/cells/ar/rows/copy/)
+- [كيفية إخفاء الصفوف في ورقة عمل Excel](/cells/ar/rows/hide/)
+- [كيفية إظهار الصفوف في ورقة عمل Excel](/cells/ar/rows/unhide/)
+- [كيفية تجميع الصفوف في ورقة عمل Excel](/cells/ar/rows/group/)
+- [كيفية فك تجميع الصفوف في ورقة عمل Excel](/cells/ar/rows/ungroup/)
+- [كيفية حذف صف من ورقة العمل](/cells/ar/rows/delete/)
 

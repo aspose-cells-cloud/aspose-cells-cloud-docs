@@ -1,13 +1,13 @@
 ﻿---
-title: Move Fil
+title: نقل فيل
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/file/move/
 keywords: Learn how to download file with Aspose Cells Cloud REST API
-description: Learn how to download file with Aspose Cells Cloud REST API SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift
+description: تعرف على كيفية تنزيل الملف باستخدام Aspose Cells Cloud REST API SDK الذي يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
 weight: 100
 ---
-This REST API indicates `move file`
+يشير هذا REST API إلى `move file`
  
 ## RSET API
  
@@ -16,19 +16,19 @@ This REST API indicates `move file`
 PUT http://api.aspose.cloud/v3.0/cells/storage/file/move/{srcPath}
  
 ```
-The request parameters are: 
+ معلمات الطلب هي:
  
-|Parameter Name |Type |Path/Query String/HTTPBody |Description|
+| اسم المعلمة| يكتب| المسار / سلسلة الاستعلام / HTTPBody|وصف|
 |:- |:- |:- |:- |
-|srcPath |string |path |Source file path e.g. '/src.ext' |
-|destPath |string |query |Destination file path e.g. '/dest.ext' |
-|srcStorageName |string |query |Source storage name |
-|destStorageName |string |query |Destination storage name |
-|versionId |string |query |File version ID to move |
+| srcPath| خيط| طريق| مسار الملف المصدر على سبيل المثال '/src.ext'|
+| ديسباث| خيط| استفسار| مسار ملف الوجهة على سبيل المثال "/dest.ext"|
+| srcStorageName| خيط| استفسار| اسم تخزين المصدر|
+| destStorageName| خيط| استفسار| اسم تخزين الوجهة|
+| الإصدار| خيط| استفسار| معرف إصدار الملف المراد نقله|
  
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/File/MoveFile) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+ ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/File/MoveFile) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
  
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
  
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
  
@@ -60,10 +60,10 @@ curl -v "http://api.aspose.cloud/v3.0/cells/storage/file/move/Book2.xlsx?destPat
  
 {{< /tabs >}}
  
-## Cloud SDK Family
+## عائلة Cloud SDK
  
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. يعتني SDK بالتفاصيل منخفضة المستوى ويتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة من Aspose.Cells Cloud SDKs.
  
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام حزم SDK متنوعة:
  
  

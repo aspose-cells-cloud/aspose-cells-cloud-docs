@@ -1,13 +1,13 @@
 ﻿---
-title: Spli
+title: سبلي
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/split/
 keywords: Working with splitting on an Excel file
-description: Aspose.Cells Cloud REST API support working with splitting on an Excel file. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift
+description: Aspose.Cells Cloud REST API دعم العمل مع التقسيم على ملف Excel. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
 weight: 32
 ---
-## Working with splitting on an Excel file.
+## العمل مع التقسيم على ملف Excel.
 
-- [How to split multi Excel files.](/cells/ar/split/multi-files/)
-- [How to split an Excel workbook to multi-files.](/cells/ar/workbook/split/)
+- [كيفية تقسيم ملفات متعددة Excel.](/cells/ar/split/multi-files/)
+- [كيفية تقسيم مصنف Excel إلى ملفات متعددة.](/cells/ar/workbook/split/)

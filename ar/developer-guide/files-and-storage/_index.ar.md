@@ -1,27 +1,27 @@
 ﻿---
-title: Files and Storag
+title: الملفات و Storag
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/files-and-storage/
 aliases: [/working-with-files-and-storage-using-aspose-cells-cloud/]
 keywords: Learn how to work with Aspose Cells Cloud file storage
-description: Learn how to work with Aspose Cells Cloud file storage. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift
+description: تعرف على كيفية العمل مع Aspose Cells سحابة تخزين الملفات. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
 weight: 100
 ---
-Aspose.Cells Cloud provides helper functions to work with files uploaded to Aspose.Cells Cloud Storage or any other Cloud Storage of your choice. If you need any help getting started with setting third party storage please refer to [Aspose Cloud UI Help Topics](https://docs.aspose.cloud/display/totalcloud/Aspose+Cloud+UI+Help+Topics).
+توفر Aspose.Cells Cloud وظائف مساعدة للعمل مع الملفات التي تم تحميلها إلى التخزين السحابي Aspose.Cells أو أي تخزين سحابي آخر من اختيارك. إذا كنت بحاجة إلى أي مساعدة للبدء في ضبط تخزين طرف ثالث ، فيرجى الرجوع إلى[Aspose موضوعات تعليمات Cloud UI](https://docs.aspose.cloud/display/totalcloud/Aspose+Cloud+UI+Help+Topics).
 
-**Aspose.Cells Cloud provides kinds of file/folder/storage operating APIs.**
-- [How to upload file.](/cells/ar/file/upload/)
-- [How to download file.](/cells/ar/file/download/)
-- [How to delete file.](/cells/ar/file/delete/)
-- [How to copy file.](/cells/ar/file/copy/)
-- [How to move file.](/cells/ar/file/move/)
-- [How to create folder.](/cells/ar/folder/create/)
-- [How to get files in folder.](/cells/ar/folder/get-files/)
-- [How to delete folder.](/cells/ar/folder/delete/)
-- [How to copy folder.](/cells/ar/folder/copy/)
-- [How to move folder.](/cells/ar/folder/move/)
-- [How to check if storage exists.](/cells/ar/storage/exist/)
-- [How to check if file or folder exists.](/cells/ar/storage/object-exists/)
-- [How to get disc usage.](/cells/ar/storage/disc-usage/)
-- [How to get file versions.](/cells/ar/storage/file-versions/)    
+**توفر Aspose.Cells Cloud أنواعًا من واجهات برمجة تطبيقات تشغيل الملفات / المجلدات / التخزين.**
+- [كيفية تحميل الملف.](/cells/ar/file/upload/)
+- [كيفية تحميل الملف.](/cells/ar/file/download/)
+- [كيفية حذف الملف.](/cells/ar/file/delete/)
+- [كيفية نسخ الملف.](/cells/ar/file/copy/)
+- [كيفية نقل الملف.](/cells/ar/file/move/)
+- [كيفية إنشاء مجلد.](/cells/ar/folder/create/)
+- [كيفية الحصول على الملفات في المجلد.](/cells/ar/folder/get-files/)
+- [كيفية حذف المجلد.](/cells/ar/folder/delete/)
+- [كيفية نسخ المجلد.](/cells/ar/folder/copy/)
+- [كيفية نقل المجلد.](/cells/ar/folder/move/)
+- [كيفية التحقق من وجود التخزين.](/cells/ar/storage/exist/)
+- [كيفية التحقق من وجود الملف أو المجلد.](/cells/ar/storage/object-exists/)
+- [كيفية الحصول على استخدام القرص.](/cells/ar/storage/disc-usage/)
+- [كيفية الحصول على إصدارات الملفات.](/cells/ar/storage/file-versions/)    

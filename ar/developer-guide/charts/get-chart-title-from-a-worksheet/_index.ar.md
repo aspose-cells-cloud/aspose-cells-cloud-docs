@@ -1,11 +1,11 @@
 ﻿---
-title: Get Chart Title From a Workshee
+title: الحصول على عنوان المخطط من صاحب العمل
 type: docs
 url: /ar/charts/title/get/
 aliases: [/get-chart-title-from-a-worksheet/]
 weight: 120
 ---
-This REST API indicates get chart title
+يشير هذا REST API إلى الحصول على عنوان الرسم البياني
  
 ## RSET API
  
@@ -14,21 +14,21 @@ This REST API indicates get chart title
 GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title
  
 ```
-The request parameters are: 
+ معلمات الطلب هي:
  
-|Parameter Name |Type |Path/Query String/HTTPBody |Description|
+| اسم المعلمة| يكتب| المسار / سلسلة الاستعلام / HTTPBody|وصف|
 |:- |:- |:- |:- |
-|name |string |path |Workbook name. |
-|sheetName |string |path |Worksheet name. |
-|chartIndex |integer |path |The chart index. |
-|folder |string |query |The workbook folder. |
-|storageName |string |query |storage name. |
+| اسم| خيط| طريق| اسم المصنف.|
+| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
+| فهرس| عدد صحيح| طريق| مؤشر الرسم البياني.|
+| مجلد| خيط| استفسار| مجلد المصنف.|
+| اسم التخزين| خيط| استفسار| اسم التخزين.|
  
 <br/>
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/GetWorksheetChartTitle) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+ ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Charts/GetWorksheetChartTitle) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
  
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
@@ -287,11 +287,11 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/charts
 {{< /tab >}}
 
 {{< /tabs >}}
-## Cloud SDK Family
+## عائلة Cloud SDK
  
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. يعتني SDK بالتفاصيل منخفضة المستوى ويتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة من Aspose.Cells Cloud SDKs.
  
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام حزم SDK متنوعة:
  
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}

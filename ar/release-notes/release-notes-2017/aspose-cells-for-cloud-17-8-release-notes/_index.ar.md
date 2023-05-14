@@ -1,19 +1,19 @@
 ﻿---
-title: Aspose.Cells Cloud 17.8 Release Note
+title: Aspose.Cells Cloud 17.8 مذكرة الإصدار
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/aspose-cells-cloud-17-8-release-notes/
 aliases: [/aspose-cells-for-cloud-17-8-release-notes/]
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 40
 ---
 {{% alert color="primary" %}} 
 
-The page contains release notes for [Aspose.Cells Cloud 17.8](https://downloads.aspose.com/cells/cloud/new-releases/aspose.cells-for-cloud-17.8/).
+ تحتوي الصفحة على ملاحظات الإصدار لـ[Aspose.Cells كلاود 17.8.0](https://downloads.aspose.com/cells/cloud/new-releases/aspose.cells-for-cloud-17.8/).
 
 {{% /alert %}} 
 
-|**Key**|**Summary**|**Category**|
+|**مفتاح**|**ملخص**|**فئة**|
 |:- |:- |:- |
-|CELLSCLOUD-10070|Support conditional formatting|New Feature|
+|CELLSCLOUD-10070|دعم التنسيق الشرطي|ميزة جديدة|
 

@@ -1,22 +1,22 @@
 ﻿---
-title: Aspose.Cells Cloud 17.9 Release Note
+title: Aspose.Cells Cloud 17.9 ملاحظات الإصدار
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/aspose-cells-cloud-17-9-release-notes/
 aliases: [ /aspose-cells-for-cloud-17-9-release-notes/]
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 30
 ---
 {{% alert color="primary" %}} 
 
-The page contains release notes for Aspose.Cells Cloud 17.9.
+تحتوي الصفحة على ملاحظات إصدار Aspose.Cells Cloud 17.9.
 
 {{% /alert %}} 
 
-|**Key**|**Summary**|**Category**|
+|**مفتاح**|**ملخص**|**فئة**|
 |:- |:- |:- |
-|CELLSCLOUD-10078|Extend Range class from Ranges APIs|New Feature|
-|CELLSCLOUD-10089|An enhancements is made for importing CSV data|Enhancement|
-## **Important Changes**
-Aspose.Cells [CellsSaveAs](https://apireference.aspose.cloud/cells/#!/CellsSaveAs/CellsSaveAs_PostDocumentSaveAs) API will be charged on Aspose.Metering plan as per API Usage. Please check our [APIs pricing model](https://purchase.aspose.cloud/pricing) for more details.
+|CELLSCLOUD-10078|توسيع فئة النطاق من Ranges APIs|ميزة جديدة|
+|CELLSCLOUD-10089|تم إجراء تحسينات لاستيراد بيانات CSV|التعزيز|
+## **تغييرات مهمة**
+Aspose.Cells [الخلايا](https://apireference.aspose.cloud/cells/#!/CellsSaveAs/CellsSaveAs_PostDocumentSaveAs) سيتم فرض رسوم API على خطة Aspose.Metering وفقًا للاستخدام API. يرجى التحقق من[نموذج تسعير واجهات برمجة التطبيقات](https://purchase.aspose.cloud/pricing) لمزيد من التفاصيل.
 

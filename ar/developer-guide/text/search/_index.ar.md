@@ -1,15 +1,15 @@
 ﻿---
-title: Find text from Excel file
+title: ابحث عن نص من ملف Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: Find without using storag
+linktitle: البحث دون استخدام ستوراج
 type: docs
 url: /ar/search/
 aliases: [/search-without-using-storage/,/search-without-storage/]
 keywords: Find text from Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) files
-description: Aspose.Cells Cloud REST API support finding text from Excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift
+description: Aspose.Cells Cloud REST API يدعم البحث عن نص من ملفات Excel. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
 weight: 50
 ---
-This REST API indicates to `search` text from Excel files.
+يشير هذا REST API إلى نص `search` من ملفات Excel.
 `## RSET API
  
 ```bash

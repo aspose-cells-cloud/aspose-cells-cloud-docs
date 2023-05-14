@@ -1,16 +1,16 @@
 ﻿---
-title: Aspose.Cells Cloud 22.8 Release Note
+title: Aspose.Cells كلاود 22.8 - مذكرة إصدار
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/aspose-cells-cloud-22-8-release-notes/
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 14
 ---
 {{% alert color="primary" %}} 
-This page contains release notes for Aspose.Cells Cloud 22.8
+تحتوي هذه الصفحة على ملاحظات إصدار Aspose.Cells Cloud 22.8
 {{% /alert %}} 
-## **Complete list of issues and enhancements covered in this Release**
-|**ID**|**Summary**|**Category**|
+## **قائمة كاملة بالمشكلات والتحسينات التي تم تناولها في هذا الإصدار**
+|**بطاقة تعريف**|**ملخص**|**فئة**|
 |:- |:- |:- |
-|33881 |Fix converting excel to pdf.|Improvement |
-|33882 |Support transposing Excel Rows to Columns|New Feature |
+|33881 |إصلاح تحويل ملفات Excel إلى pdf.| تحسين|
+|33882 |دعم نقل Excel من الصفوف إلى الأعمدة| ميزة جديدة|

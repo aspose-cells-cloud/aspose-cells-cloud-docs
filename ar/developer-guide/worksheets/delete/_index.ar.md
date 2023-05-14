@@ -1,16 +1,16 @@
 ﻿---
-title: How to work with deleting worksheets on an Excel workboo
+title: كيفية العمل مع حذف أوراق العمل في Excel workboo
 second_title: Aspose.Cells Cloud Documen
-linktitle: Delet
+linktitle: حذف
 type: docs
 url: /ar/worksheets/delete/
 keywords: How to work with deleting worksheet on an Excel workbook
-description: Aspose.Cells Cloud REST API support working with deleting worksheets on an Excel workbook. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift
+description: Aspose.Cells Cloud REST API يدعم العمل مع حذف أوراق العمل في مصنف Excel. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
 weight: 20
 ---
-## Working with deleting worksheets on an Excel workbook.
+## العمل مع حذف أوراق العمل في مصنف Excel.
 
-- [How to delete an Excel worksheet on an Excel workbook.](/cells/ar/worksheets/delete-worksheet/) 
-- [How to delete multiple Excel worksheets on an Excel workbook.](/cells/ar/worksheets/delete-multiple/) 
+- [كيفية حذف ورقة عمل Excel في مصنف Excel.](/cells/ar/worksheets/delete-worksheet/) 
+- [كيفية حذف أوراق عمل Excel متعددة في مصنف Excel.](/cells/ar/worksheets/delete-multiple/) 
 
 

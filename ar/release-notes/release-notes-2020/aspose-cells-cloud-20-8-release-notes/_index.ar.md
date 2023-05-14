@@ -1,33 +1,33 @@
 ﻿---
-title: Aspose.Cells Cloud 20.8 Release Note
+title: Aspose.Cells Cloud 20.8 ملاحظة إصدار
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/aspose-cells-cloud-20-8-release-notes/
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 20
 ---
 {{% alert color="primary" %}} 
 
-This page contains release notes for Aspose.Cells Cloud 20.8
+تحتوي هذه الصفحة على ملاحظات إصدار Aspose.Cells Cloud 20.8
 
 {{% /alert %}} 
-## **Complete List of Changes Covered in this Release**
+## **قائمة كاملة بالتغييرات المشمولة في هذا الإصدار**
 
-|**Key**|**Summary**|**Category**|
+|**مفتاح**|**ملخص**|**فئة**|
 |:- |:- |:- |
-|CELLSCLOUD-10320|Aspose.Cells Cloud API calls are not working with explicit storage name but only default storage|Bug|
-|CELLSCLOUD-10321|Get output file size while conversion without download|Enhancement|
-|CELLSCLOUD-10322|Enhancement for Aspose.Cells Cloud API Reference|Enhancement|
-## **SDK Changes**
-### **Aspose.Cells Cloud for .NET**
-#### **Improvement**
-- Enhancement for CellsShapesPutWorksheetShape API
+|CELLSCLOUD-10320|لا تعمل مكالمات Aspose.Cells Cloud API مع اسم التخزين الصريح ولكن فقط التخزين الافتراضي|حشرة|
+|CELLSCLOUD-10321|احصل على حجم ملف الإخراج أثناء التحويل دون تنزيل|التعزيز|
+|CELLSCLOUD-10322|تحسين مرجع Aspose.Cells Cloud API|التعزيز|
+## **تغييرات SDK**
+### **Aspose.Cells كلاود for .NET**
+#### **تحسين**
+- تعزيز الخلايا الأشكال وضع ورقة العمل شكل API
 ### **Aspose.Cells Cloud for Swift**
-#### **New Feature**
-- Support to add text water marker
-#### **Improvement**
-- Enhancement for workbook convert images in get workbook API.
-- Enhancement for CellsShapesPutWorksheetShape API.
-- Enhancement for CellsApi constructor.
-- Enhancement for Cells object operating in Task API.
+#### **ميزة جديدة**
+- دعم لإضافة نص علامة مائية
+#### **تحسين**
+- تحسين المصنف لتحويل الصور في Get Workbook API.
+- تعزيز الخلايا الأشكال وضع ورقة العمل شكل API.
+- تحسين منشئ CellsApi.
+- تحسين تشغيل عنصر Cells في المهمة API.
 

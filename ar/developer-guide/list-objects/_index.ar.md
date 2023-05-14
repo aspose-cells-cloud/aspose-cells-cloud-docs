@@ -5,16 +5,16 @@ type: docs
 url: /ar/list-objects/
 aliases: [/working-with-list-objects/,/working-with-list-object-or-table/]
 keywords: Add, delete, update, and get a list object(table) into an Excel worksheet
-description: Aspose.Cells Cloud REST API support adding, deleting, updating and getting a list object(table) into an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift
+description: Aspose.Cells Cloud REST API يدعم إضافة وحذف وتحديث والحصول على كائن قائمة (جدول) في ورقة عمل Excel. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
 weight: 100
 ---
-&nbsp;&nbsp;&nbsp;&nbsp;Tables in Excel are beneficial for giving a structure to data sets. It has handy features from arranging the data, providing the headers along with applied filters.Master Excel tables and analyze your data quickly and easily. 
+ على & nbsp؛ & nbsp؛ & nbsp؛ & nbsp؛ تعد الجداول الموجودة في Excel مفيدة لإعطاء بنية لمجموعات البيانات. يحتوي على ميزات مفيدة من ترتيب البيانات ، وتوفير الرؤوس جنبًا إلى جنب مع المرشحات المطبقة.جداول Master Excel وتحليل بياناتك بسرعة وسهولة.
 
-&nbsp;&nbsp;&nbsp;&nbsp;How to add, sort and filter a table, and how to display a total row at the end of a table.
+على & nbsp؛ & nbsp؛ & nbsp؛ & nbsp؛ كيفية إضافة جدول وفرزه وتصفيته وكيفية عرض صف إجمالي في نهاية الجدول.
 
-## How to working with table(list object)
+## كيفية العمل مع الجدول (كائن القائمة)
   
-- [How to add a  table(list object) inside the worksheet.](/cells/ar/add-a-list-object-or-table-inside-the-worksheet/)
-- [How to update a table(list object) inside the worksheet.](/cells/ar/update-a-list-object-or-table-inside-the-worksheet/)
-- [How to convert table(list object) to range.](/cells/ar/convert-list-object-or-table-to-range/)
-- [How to sort table data.](/cells/ar/sort-table-data/)
+- [كيفية إضافة جدول (كائن قائمة) داخل ورقة العمل.](/cells/ar/add-a-list-object-or-table-inside-the-worksheet/)
+- [كيفية تحديث جدول (كائن قائمة) داخل ورقة العمل.](/cells/ar/update-a-list-object-or-table-inside-the-worksheet/)
+- [كيفية تحويل الجدول (كائن القائمة) إلى النطاق.](/cells/ar/convert-list-object-or-table-to-range/)
+- [كيفية فرز بيانات الجدول.](/cells/ar/sort-table-data/)

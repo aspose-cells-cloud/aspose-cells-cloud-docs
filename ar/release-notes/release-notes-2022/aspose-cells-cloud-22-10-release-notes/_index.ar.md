@@ -1,19 +1,19 @@
 ﻿---
-title: Aspose.Cells Cloud  22.10 Release Notes
+title: Aspose.Cells Cloud 22.10 ملاحظات إصدار
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/aspose-cells-cloud-22-10-release-notes/
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 12
 ---
 {{% alert color="primary" %}} 
-This page contains release notes for Aspose.Cells Cloud 22.10
+تحتوي هذه الصفحة على ملاحظات إصدار Aspose.Cells Cloud 22.10
 '{{% /alert %}} '
-## **Complete list of issues and enhancements covered in this Release**
+## **قائمة كاملة بالمشكلات والتحسينات التي تم تناولها في هذا الإصدار**
 
-|**ID**|**Summary**|**Category**|
+|**بطاقة تعريف**|**ملخص**|**فئة**|
 |:- |:- |:- |
-|34956 |Improvement Convert APIs for supporting multi-files and body parameter. |
-|35208 |Add new API for converting workbook to markdown. |
-|35209 |Add new API for converting workbook to html. |
-|35210 |Add new API for converting workbook to pptx. |
+|34956 | تحسين تحويل واجهات برمجة التطبيقات لدعم ملفات متعددة ومعلمات الجسم.|
+|35208 | أضف API جديدًا لتحويل المصنف إلى تخفيض السعر.|
+|35209 | أضف API جديدًا لتحويل المصنف إلى html.|
+|35210 | أضف API جديدًا لتحويل المصنف إلى pptx.|

@@ -1,18 +1,18 @@
 ﻿---
-title: Picture
+title: صورة
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/pictures/
 aliases: [/working-with-pictures/]
 keywords: Working with picture on an Excel worksheet
-description: How to do Aspose.Cells Cloud REST APIs work with picture in an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift
+description: كيف تعمل Aspose.Cells Cloud REST APIs تعمل مع الصورة في ورقة عمل Excel. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
 weight: 100
 ---
-## Working with pictures on an Excel file.
+## العمل مع الصور على ملف Excel.
 
-- [How to get a specific format picture from an Excel worksheet.](/cells/ar/pictures/get/)
-- [How to get all pictures information from an Excel worksheet.](/cells/ar/pictures/get-all/)
-- [How to add a picture for an Excel worksheet.](/cells/ar/pictures/add/)
-- [How to update a specific picture from an Excel worksheet.](/cells/ar/pictures/update/)
-- [How to delete all pictures from an Excel worksheet.](/cells/ar/pictures/clear/)
-- [How to delete a picture from an Excel worksheet.](/cells/ar/pictures/delete/)
+- [كيفية الحصول على صورة بتنسيق معين من ورقة عمل Excel.](/cells/ar/pictures/get/)
+- [كيفية الحصول على كافة معلومات الصور من ورقة عمل Excel.](/cells/ar/pictures/get-all/)
+- [كيفية إضافة صورة لورقة عمل Excel.](/cells/ar/pictures/add/)
+- [كيفية تحديث صورة معينة من ورقة عمل Excel.](/cells/ar/pictures/update/)
+- [كيفية حذف كافة الصور من ورقة عمل Excel.](/cells/ar/pictures/clear/)
+- [كيفية حذف صورة من ورقة عمل Excel.](/cells/ar/pictures/delete/)

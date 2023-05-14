@@ -3,18 +3,18 @@ title: Overvie
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/overview/
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 10
 ---
-Aspose.Cells Cloud is a REST API that enables you to perform a wide range of document processing operations including creation, manipulation, conversion, and rendering of Excel documents in the cloud. You can convert your [XLS](https://docs.fileformat.com/spreadsheet/xls/) and [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/) files to various other formats like [PDF](https://docs.fileformat.com/view/pdf/), [HTML](https://docs.fileformat.com/web/html/), [ODS](https://docs.fileformat.com/spreadsheet/ods/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), etc.
+ Aspose.Cells Cloud هو REST API يمكّنك من تنفيذ نطاق واسع من عمليات معالجة المستندات بما في ذلك الإنشاء والمعالجة والتحويل وتقديم مستندات Excel في السحابة. يمكنك تحويل ملفات[XLS](https://docs.fileformat.com/spreadsheet/xls/) و[XLSX](https://docs.fileformat.com/spreadsheet/xlsx/) من الملفات إلى تنسيقات أخرى مختلفة مثل[PDF](https://docs.fileformat.com/view/pdf/), [HTML](https://docs.fileformat.com/web/html/), [المواد المستنفدة للأوزون](https://docs.fileformat.com/spreadsheet/ods/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [CSV](https://docs.fileformat.com/spreadsheet/csv/)، إلخ.
 
 ## **SDKs**
-Using an SDK (API client) is the quickest way for a developer to speed up the development. An SDK takes care of a lot of low-level details of making requests and handling responses and lets you focus on writing code specific to your particular project. Checkout our [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells SDKs along with working examples, to get you started in no time. Please check [Available SDKs](/cells/ar/available-sdks/) article to learn how to add an SDK to your project.
+يعد استخدام SDK (API client) هو أسرع طريقة للمطور لتسريع عملية التطوير. يعتني SDK بالكثير من التفاصيل منخفضة المستوى لتقديم الطلبات والتعامل مع الردود ويتيح لك التركيز على كتابة التعليمات البرمجية الخاصة بمشروعك المحدد. تحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة من Aspose.Cells SDKs جنبًا إلى جنب مع أمثلة العمل ، لتبدأ في أي وقت من الأوقات. يرجى المراجعة[مجموعات SDK المتوفرة](/cells/ar/available-sdks/) مقال لمعرفة كيفية إضافة SDK إلى مشروعك.
 
-## **API Explorer**
-[Aspose.Cells Cloud API Reference](https://apireference.aspose.cloud/cells/) is the easiest way to try out our APIs right away in your browser! It allows you to effortlessly interact and try out every single operation our APIs exposes.
+## **API إكسبلورر**
+[Aspose.Cells كلاود API المرجع](https://apireference.aspose.cloud/cells/) هي أسهل طريقة لتجربة واجهات برمجة التطبيقات الخاصة بنا على الفور في متصفحك! يسمح لك بالتفاعل بسهولة وتجربة كل عملية تعرضها واجهات برمجة التطبيقات الخاصة بنا.
 
-## **Security and Authentication**
-The Aspose.Cells for Cloud APIs are secured and requires authentication.
+## **الأمان والمصادقة**
+تم تأمين Aspose.Cells لـ Cloud APIs ويتطلب المصادقة.
 
-For more information about authenticating requests, please check the [Authenticating API Requests Page](/total/getting-started/rest-api-overview/authenticating-api-requests/)
+ لمزيد من المعلومات حول مصادقة الطلبات ، يرجى مراجعة[مصادقة API صفحة الطلبات](/total/getting-started/rest-api-overview/authenticating-api-requests/)

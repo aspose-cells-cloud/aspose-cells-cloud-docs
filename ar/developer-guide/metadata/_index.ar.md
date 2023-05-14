@@ -1,29 +1,29 @@
 ﻿---
-title: Metadata & Propertie
+title: الخصائص والبيانات الوصفية
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/metadata/
 aliases: [/document-properties/,/working-with-document-properties/]
 keywords: Get, delete, and update metadata from excel files
-description: Aspose.Cells Cloud REST API support getting, deleting, and updating metadata from excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift
+description: Aspose.Cells Cloud REST API يدعم الحصول على البيانات الوصفية وحذفها وتحديثها من ملفات Excel. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
 weight: 100
 ---
-**Types of document properties**
+**أنواع خصائص الوثيقة**
 
-&nbsp;&nbsp;&nbsp;&nbsp;Before starting to learn how to use Aspose.Cells Cloud Apis to view, change and remove document properties (metadata) in Excel, let's clear up what kinds of properties an Excel document can have.
+على & nbsp؛ & nbsp؛ & nbsp؛ & nbsp؛ قبل البدء في تعلم كيفية استخدام Aspose.Cells Cloud Apis لعرض وتغيير وإزالة خصائص المستند (البيانات الوصفية) في Excel ، دعنا نوضح أنواع الخصائص التي يمكن أن يحتوي عليها مستند Excel.
 
-- Standard properties are common to Excel. They contain basic information about the document such as title, subject, author, category, etc. You can assign your own text values for these properties to make it easier to find the Excel document.
+- الخصائص القياسية مشتركة مع Excel. وهي تحتوي على معلومات أساسية حول الوثيقة مثل العنوان والموضوع والمؤلف والفئة وما إلى ذلك. يمكنك تخصيص قيم نصية لهذه الخصائص لتسهيل العثور على وثيقة Excel.
 
-- Custom properties are user-defined properties. They allow you to add other properties to your Excel document.
+- الخصائص المخصصة هي خصائص معرّفة من قبل المستخدم. إنها تسمح لك بإضافة خصائص أخرى إلى وثيقة Excel الخاصة بك.
 
 
-**How to working with document properties on an Excel file.**
+**كيفية التعامل مع خصائص المستند في ملف Excel.**
 
-- [How to get a particular document property with using storage](/cells/ar/document-properties/get/)
-- [How to get document properties without using storage](/cells/ar/metadata/get/)
-- [How to get all document properties with using storage.](/cells/ar/document-properties/get-all/)
-- [How to update a particular document property with using storage](/cells/ar/document-properties/update/)
-- [How to update a particular document property without using storage](/cells/ar/metadata/update/)
-- [How to remove a particular document property with using storage](/cells/ar/document-properties/delete/)
-- [How to remove document properties without using storage](/cells/ar/metadata/delete/)
-- [How to remove all document properties with using storage](/cells/ar/document-properties/clear/)
+- [كيفية الحصول على خاصية وثيقة معينة باستخدام التخزين](/cells/ar/document-properties/get/)
+- [كيفية الحصول على خصائص المستند دون استخدام التخزين](/cells/ar/metadata/get/)
+- [كيفية الحصول على جميع خصائص المستند باستخدام التخزين.](/cells/ar/document-properties/get-all/)
+- [كيفية تحديث خاصية مستند معينة باستخدام التخزين](/cells/ar/document-properties/update/)
+- [كيفية تحديث خاصية مستند معينة دون استخدام التخزين](/cells/ar/metadata/update/)
+- [كيفية إزالة خاصية وثيقة معينة باستخدام التخزين](/cells/ar/document-properties/delete/)
+- [كيفية إزالة خصائص الوثيقة دون استخدام التخزين](/cells/ar/metadata/delete/)
+- [كيفية إزالة جميع خصائص الوثيقة باستخدام التخزين](/cells/ar/document-properties/clear/)

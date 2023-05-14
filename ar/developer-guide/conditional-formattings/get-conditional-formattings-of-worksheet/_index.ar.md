@@ -1,13 +1,13 @@
 ﻿---
-title: Get Conditional Formatting
+title: احصل على تنسيق شرطي
 type: docs
 url: /ar/conditional-formattings/get-all/
 aliases: [/get-conditional-formattings-of-worksheet/]
 keywords: REST API, spreadsheets, excel, get condition formattin
-description: "Cells.Cloud API for Excel operate:  get condition formatting"
+description: "Cells.Cloud API لـ Excel تعمل: احصل على تنسيق الشرط"
 weight: 20
 ---
-This REST API indicates Get conditional formattings 
+ يشير هذا REST API إلى الحصول على تنسيقات شرطية
  
 ## RSET API
  
@@ -16,18 +16,18 @@ This REST API indicates Get conditional formattings
 GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings
  
 ```
-The request parameters are: 
+ معلمات الطلب هي:
  
-|Parameter Name |Type |Path/Query String/HTTPBody |Description|
+| اسم المعلمة| يكتب| المسار / سلسلة الاستعلام / HTTPBody|وصف|
 |:- |:- |:- |:- |
-|name |string |path ||
-|sheetName |string |path ||
-|folder |string |query ||
-|storageName |string |query |storage name. |
+| اسم| خيط| طريق||
+| اسم الورقة| خيط| طريق||
+| مجلد| خيط| استفسار||
+| اسم التخزين| خيط| استفسار| اسم التخزين.|
  
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/GetWorksheetConditionalFormattings) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+ ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/GetWorksheetConditionalFormattings) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
  
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
  
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
@@ -284,9 +284,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditi
 {{< /tab >}}
 
 {{< /tabs >}}
-## **SDK Source**
-The Aspose.Cells Cloud SDKs can be downloaded from the following page: [Available SDKs](/cells/ar/available-sdks/)
-### **SDK Examples**
+## **مصدر SDK**
+يمكن تنزيل Aspose.Cells Cloud SDKs من الصفحة التالية:[مجموعات SDK المتوفرة](/cells/ar/available-sdks/)
+### **أمثلة SDK**
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}

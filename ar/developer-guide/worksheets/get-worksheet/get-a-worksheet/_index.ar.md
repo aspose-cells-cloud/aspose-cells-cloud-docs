@@ -1,17 +1,17 @@
 ﻿---
-title: Get worksheet from an Excel workshee
+title: احصل على ورقة عمل من ورقة عمل Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: Workshee
+linktitle: يعمل
 type: docs
 url: /ar/worksheets/get-worksheet/
 keywords: Get worksheet to different format from an Excel worksheet
-description: Aspose.Cells Cloud REST API support getting worksheet to different format from an Excel Worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift
+description: Aspose.Cells Cloud REST API يدعم إحضار ورقة العمل إلى تنسيق مختلف من ورقة عمل Excel. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
 weight: 10
 ---
-This REST API indicates `get worksheet description` or `export worksheet to kinds of format file`.
+يشير هذا REST API إلى `get worksheet description` أو `export worksheet to kinds of format file`.
  
 
-You can export formats: [XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [ODS](https://docs.fileformat.com/spreadsheet/ods/), [TXT](https://docs.fileformat.com/word-processing/txt/), [PDF](https://docs.fileformat.com/pdf/), [OTS](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [DIF](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/),[GIF](https://docs.fileformat.com/image/gif/), [BMP](https://docs.fileformat.com/image/bmp/), [WMF](https://docs.fileformat.com/image/wmf/),[TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [NUMBERS](https://docs.fileformat.com/spreadsheet/numbers/), [FODS](https://docs.fileformat.com/spreadsheet/fods/).
+ يمكنك تصدير التنسيقات:[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [ملف TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [المواد المستنفدة للأوزون](https://docs.fileformat.com/spreadsheet/ods/), [رسالة قصيرة](https://docs.fileformat.com/word-processing/txt/), [PDF](https://docs.fileformat.com/pdf/), [OTS](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [DIF](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/),[GIF](https://docs.fileformat.com/image/gif/), [BMP](https://docs.fileformat.com/image/bmp/), [WMF](https://docs.fileformat.com/image/wmf/),[TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [أعداد](https://docs.fileformat.com/spreadsheet/numbers/), [فودس](https://docs.fileformat.com/spreadsheet/fods/).
 
 
 ## RSET API
@@ -21,23 +21,23 @@ You can export formats: [XLS](https://docs.fileformat.com/spreadsheet/xls/), [XL
 GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
  
 ```
-The request parameters are: 
+ معلمات الطلب هي:
  
-|Parameter Name |Type |Path/Query String/HTTPBody |Description|
+| اسم المعلمة| يكتب| المسار / سلسلة الاستعلام / HTTPBody|وصف|
 |:- |:- |:- |:- |
-|name |string |path |The document name. |
-|sheetName |string |path |The worksheet name. |
-|format |string |query |The exported file format.|
-|verticalResolution |integer |query |Sets the vertical resolution for generated images, in dots per inch. |
-|horizontalResolution |integer |query |Sets the horizontal resolution for generated images, in dots per inch. |
-|area |string |query |Exported area. |
-|pageIndex |integer |query |Exported page index. |
-|folder |string |query |The document folder. |
-|storageName |string |query |storage name. |
+| اسم| خيط| طريق| اسم الوثيقة.|
+| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
+| شكل| خيط| استفسار|تنسيق الملف الذي تم تصديره.|
+| عمودي القرار| عدد صحيح| استفسار| يضبط الدقة الرأسية للصور التي تم إنشاؤها ، بالنقاط في البوصة.|
+| الدقة الأفقية| عدد صحيح| استفسار| يضبط الدقة الأفقية للصور التي تم إنشاؤها ، بالنقاط في البوصة.|
+| منطقة| خيط| استفسار| منطقة التصدير.|
+| pageIndex| عدد صحيح| استفسار| فهرس الصفحة المصدرة.|
+| مجلد| خيط| استفسار| مجلد المستند.|
+| اسم التخزين| خيط| استفسار| اسم التخزين.|
  
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheet) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+ ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheet) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
  
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
  
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
  
@@ -69,11 +69,11 @@ stream
  
 {{< /tabs >}}
  
-## Cloud SDK Family
+## عائلة Cloud SDK
  
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. يعتني SDK بالتفاصيل منخفضة المستوى ويتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة من Aspose.Cells Cloud SDKs.
  
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام حزم SDK متنوعة:
  
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 

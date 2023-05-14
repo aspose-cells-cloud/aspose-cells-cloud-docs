@@ -1,11 +1,11 @@
 ﻿---
-title: Supported Platform
+title: النظام الأساسي المدعوم
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/supported-platforms/
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 50
 ---
-Aspose.Cells Cloud’s platform independent document manipulation API is a true REST API that can be used with any language: .NET, Java, PHP, Ruby, Rails, Python, jQuery and many more. You can use it with any language or platform that supports REST. (Almost all platforms and languages support REST and provide native REST clients to work with REST APIs). You do not need to worry about language or platform limitations. You can use it with any platform – web, desktop, mobile, and cloud. The API integrates with other cloud services to give you the flexibility you need when processing documents. It is suitable for any type of business, document, or content.
+Aspose.Cells التلاعب المستقل بالنظام الأساسي لـ Clouds API هو REST API حقيقي يمكن استخدامه مع أي لغة: .NET ، Java ، PHP ، روبي ، ريلز ، Python ، jQuery وغيرها الكثير. يمكنك استخدامه مع أي لغة أو نظام أساسي يدعم REST. (تدعم جميع الأنظمة الأساسية واللغات تقريبًا REST وتوفر عملاء REST الأصليين للعمل مع واجهات برمجة تطبيقات REST). لا داعي للقلق بشأن قيود اللغة أو النظام الأساسي. يمكنك استخدامه مع أي نظام أساسي - الويب وسطح المكتب والجوال والسحابة. يتكامل API مع الخدمات السحابية الأخرى لمنحك المرونة التي تحتاجها عند معالجة المستندات. إنه مناسب لأي نوع من الأعمال أو المستندات أو المحتوى.
 
 

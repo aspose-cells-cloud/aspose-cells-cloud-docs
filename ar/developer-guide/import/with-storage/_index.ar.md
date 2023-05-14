@@ -1,14 +1,14 @@
 ﻿---
-title: Import Data with using storag
+title: استيراد البيانات باستخدام storag
 second_title: Aspose.Cells Cloud Documen
-linktitle: Import data with storag
+linktitle: استيراد البيانات مع storag
 type: docs
 url: /ar/import/with-using-storage/
 aliases: [/import-data-into-excel-worksheet/, /import-data-into-worksheet/ , /import-data-in-excel-worksheet/, /import-data/]
-description: "Cells.Cloud API for Excel operate: Import Data into Excel Worksheet"
+description: "Cells.Cloud API لـ Excel تعمل: استيراد البيانات إلى ورقة عمل Excel"
 weight: 10
 ---
-This REST API indicates `import data` into Excel file.
+يشير هذا REST API إلى `import data` في ملف Excel.
  
 ## RSET API
  
@@ -17,21 +17,21 @@ This REST API indicates `import data` into Excel file.
 POST http://api.aspose.cloud/v3.0/cells/{name}/importdata
  
 ```
-The request parameters are: 
+ معلمات الطلب هي:
  
-|Parameter Name |Type |Path/Query String/HTTPBody |Description|
+| اسم المعلمة| يكتب| المسار / سلسلة الاستعلام / HTTPBody|وصف|
 |:- |:- |:- |:- |
-|name |string |path ||
-|folder |string |query ||
-|storageName |string |query |storage name. |
-|importData ||body ||
+| اسم| خيط| طريق||
+| مجلد| خيط| استفسار||
+| اسم التخزين| خيط| استفسار| اسم التخزين.|
+| بيانات الاستيراد|| جسم||
 
-**The import data options parameters** are described in [the reference link](/cells/ar/import/#import-data-option-parameter).
+**معلمات خيارات بيانات الاستيراد**موصوفة في[الارتباط المرجعي](/cells/ar/import/#import-data-option-parameter).
 
  
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+ ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
  
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
  
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
  
@@ -65,5 +65,5 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/importdata" \
 {{< /tabs >}}
  
  
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام حزم SDK متنوعة:
 

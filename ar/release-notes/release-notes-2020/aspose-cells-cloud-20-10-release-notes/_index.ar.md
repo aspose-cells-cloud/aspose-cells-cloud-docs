@@ -1,21 +1,21 @@
 ﻿---
-title: Aspose.Cells Cloud 20.10 Release Note
+title: Aspose.Cells Cloud 20.10 ملاحظة إصدار
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/aspose-cells-cloud-20-10-release-notes/
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 8
 ---
 {{% alert color="primary" %}} 
 
-This page contains release notes for Aspose.Cells Cloud 20.10
+تحتوي هذه الصفحة على ملاحظات إصدار Aspose.Cells Cloud 20.10
 
 {{% /alert %}} 
-## **Complete List of Changes Covered in this Release**
+## **قائمة كاملة بالتغييرات المشمولة في هذا الإصدار**
 
-|**Key**|**Summary**|**Category**|
+|**مفتاح**|**ملخص**|**فئة**|
 |:- |:- |:- |
-|CELLSCLOUD-10332|Support to upload large file|Enhancement|
-|CELLSCLOUD-10334|Upgrade Aspose.Cells.DLL version to 20.10|Enhancement|
-|CELLSCLOUD-10335|Update sparkline group API|Enhancement|
+|CELLSCLOUD-10332|دعم لتحميل ملف كبير|التعزيز|
+|CELLSCLOUD-10334|قم بترقية إصدار Aspose.Cells.DLL إلى الإصدار 20.10|التعزيز|
+|CELLSCLOUD-10335|تحديث مجموعة شرارة API|التعزيز|
 

@@ -1,13 +1,13 @@
 ﻿---
-title: Evaluate Aspose.Cells Clou
+title: أوجد Aspose.Cells Clou
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/evaluate-aspose-cells/
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 60
 ---
-You can evaluate [Aspose.Cells REST APIs](http://apireference.aspose.cloud/cells/) by creating a [free trial account](https://dashboard.aspose.cloud). The free trial will give you a good idea of the service's capabilities and let you do some early development.
+ يمكنك تقييم[Aspose.Cells REST APIs](http://apireference.aspose.cloud/cells/) من خلال إنشاء ملف[حساب تجريبي مجاني](https://dashboard.aspose.cloud). ستمنحك النسخة التجريبية المجانية فكرة جيدة عن إمكانيات الخدمة وتتيح لك إجراء بعض التطوير المبكر.
 
-Please check [Trial Plan](https://purchase.aspose.cloud/trial) webpage for more details.
+يرجى المراجعة[خطة تجريبية](https://purchase.aspose.cloud/trial) لمزيد من التفاصيل.
 
 

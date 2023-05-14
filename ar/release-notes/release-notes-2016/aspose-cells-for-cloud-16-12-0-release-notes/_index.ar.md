@@ -1,17 +1,17 @@
 ﻿---
-title: Aspose.Cells Cloud 16.12.0 Release Note
+title: Aspose.Cells Cloud 16.12.0 ملاحظات الإصدار
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/aspose-cells-cloud-16-12-release-notes/
 aliases: [/aspose-cells-for-cloud-16-12-release-notes/]
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 10
 ---
-We are pleased to announce the release of Aspose.Cells Cloud 16.12 with following improvements.
+يسرنا أن نعلن عن إصدار Aspose.Cells Cloud 16.12 مع التحسينات التالية.
 
-|**Key** |**Summary** |**Category** |
+|**مفتاح** |**ملخص** |**فئة** |
 |:- |:- |:- |
-|CELLSCLOUD-10010 |Show/Hide the PivotItems of PivotField |New Feature |
-|CELLSCLOUD-10012 |Support to Resize Table in Aspose.Cells for Cloud API |New Feature |
-|CELLSCLOUD-10017 |Shape to image error while converting spreadsheet to PDF file format |Bug |
+|CELLSCLOUD-10010 | إظهار / إخفاء العناصر المحورية في PivotField| ميزة جديدة|
+|CELLSCLOUD-10012 |دعم لتغيير حجم الجدول في Aspose.Cells للسحابة API| ميزة جديدة|
+|CELLSCLOUD-10017 | خطأ في الشكل إلى صورة أثناء تحويل جدول البيانات إلى تنسيق ملف PDF| حشرة|
 

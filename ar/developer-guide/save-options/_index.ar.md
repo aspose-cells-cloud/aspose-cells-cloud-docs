@@ -1,15 +1,15 @@
 ﻿---
-title: Save Option
+title: حفظ الخيار
 second_title: Aspose.Cells Cloud Documen
-linktitle: Save option
+linktitle: خيار الحفظ
 type: docs
 url: /ar/save-options/
 keywords: Workbook save options
-description: Aspose.Cells Cloud REST API support get excel files to kinds of format files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift
+description: Aspose.Cells Cloud REST API دعم الحصول على ملفات Excel لأنواع ملفات التنسيق. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
 weight: 79
 ---
-# SaveOptions Properties
+# خصائص SaveOptions
 
-Name | Type | Description | Notes
+الاسم | اكتب | الوصف | ملحوظات
 ------------ | ------------- | ------------- | -------------
-**EnableHTTPCompression** | **bool?** |  | [optional]**SaveFormat** | **string** |  | [optional]**ClearData** | **bool?** | Make the workbook empty after saving the file. | [optional]**CachedFileFolder** | **string** | The cached file folder is used to store some large data. | [optional]**ValidateMergedAreas** | **bool?** | Indicates whether validate merged areas before saving the file. The default value is false.              | [optional]**RefreshChartCache** | **bool?** |  | [optional]**CreateDirectory** | **bool?** | If true and the directory does not exist, the directory will be automatically created before saving the file.              | [optional]**SortNames** | **bool?** |  | [optional]
+**تمكين HTTPCompression** | **منطقي؟** | | [خياري]**SaveFormat** | **خيط** | | [خياري]**امسح البيانات** | **منطقي؟** | اجعل المصنف فارغًا بعد حفظ الملف. | [خياري]**CachedFileFolder** | **خيط** | يتم استخدام مجلد الملف المخزن مؤقتًا لتخزين بعض البيانات الكبيرة. | [خياري]**ValidateMergedAreas** | **منطقي؟** | يشير إلى ما إذا كان يجب التحقق من صحة المناطق المدمجة قبل حفظ الملف. القيمة الافتراضية هي كاذبة. | [خياري]**RefreshChartCache** | **منطقي؟** | | [خياري]**إنشاء دليل** | **منطقي؟** | إذا كان صحيحًا وكان الدليل غير موجود ، فسيتم إنشاء الدليل تلقائيًا قبل حفظ الملف. | [خياري]**أسماء الفرز** | **منطقي؟** | | [خياري]

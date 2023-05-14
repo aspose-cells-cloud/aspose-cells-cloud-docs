@@ -1,20 +1,20 @@
 ﻿---
-title: Task
+title: مهمة
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/tasks/
 aliases: [/working-with-tasks/]
 keywords: REST API, task, spreadsheets, exce
-description: "Cells.Cloud API for Excel operate: operate excel with tasks"
+description: "Cells.Cloud API لـ Excel تعمل: تشغيل Excel مع المهام"
 weight: 100
 ---
-## Working with tasks.
+## العمل مع المهام.
 
 
-- [Support Request File in Task API](/cells/ar/support-request-file-in-task-api/)
-- [Working with CellsObjectOperate Task](/cells/ar/working-with-cellsobjectoperate-task/)
-- [Working with Convert Task](/cells/ar/working-with-convert-task/)
-- [Working with ImportData Task](/cells/ar/working-with-importdata-task/)
-- [Working with SaveResult Task](/cells/ar/working-with-saveresult-task/)
-- [Working with SmartMarker Task](/cells/ar/working-with-smartmarker-task/)
-- [Working with WorksheetOperates in Task API](/cells/ar/working-with-worksheetoperates-in-task-api/)
+- [ملف طلب الدعم في المهمة API](/cells/ar/support-request-file-in-task-api/)
+- [العمل مع مهمة CellsObjectOperate](/cells/ar/working-with-cellsobjectoperate-task/)
+- [العمل مع تحويل المهمة](/cells/ar/working-with-convert-task/)
+- [العمل مع مهمة ImportData](/cells/ar/working-with-importdata-task/)
+- [العمل مع مهمة SaveResult](/cells/ar/working-with-saveresult-task/)
+- [العمل مع مهمة SmartMarker](/cells/ar/working-with-smartmarker-task/)
+- [العمل مع ورقة العمل - يعمل في المهمة API](/cells/ar/working-with-worksheetoperates-in-task-api/)

@@ -1,20 +1,20 @@
 ﻿---
-title: Aspose.Cells Cloud 20.11 Release Note
+title: Aspose.Cells Cloud 20.11 - ملاحظة إصدار
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/aspose-cells-cloud-20-11-release-notes/
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 7
 ---
 {{% alert color="primary" %}} 
 
-This page contains release notes for Aspose.Cells Cloud 20.11
+تحتوي هذه الصفحة على ملاحظات إصدار Aspose.Cells Cloud 20.11
 
 {{% /alert %}} 
-## **Complete List of Changes Covered in this Release**
+## **قائمة كاملة بالتغييرات المشمولة في هذا الإصدار**
 
-|**Key**|**Summary**|**Category**|
+|**مفتاح**|**ملخص**|**فئة**|
 |:- |:- |:- |
-|CELLSCLOUD-10325|Launch of Aspose.Cells Cloud Docker Container for Self Hosting.|New Feature|
-|CELLSCLOUD-10337|Aspose.Cells Cloud SDK support Aspose.Cells Cloud for Docker.|New Feature|
-|CELLSCLOUD-10338|Upgrade submodules to 20.11 version.|Enhancement|
+|CELLSCLOUD-10325|إطلاق Aspose.Cells Cloud Docker Container للاستضافة الذاتية.|ميزة جديدة|
+|CELLSCLOUD-10337|Aspose.Cells Cloud SDK support Aspose.Cells Cloud for Docker.|ميزة جديدة|
+|CELLSCLOUD-10338|قم بترقية الوحدات الفرعية إلى إصدار 20.11.|التعزيز|

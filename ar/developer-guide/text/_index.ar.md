@@ -1,22 +1,22 @@
 ﻿---
-title: Tex
+title: تكس
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/text/
 aliases: [/working-with-text/]
 keywords: Get, find, and replace text from Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) files
-description: Aspose.Cells Cloud REST API support getting, finding, and replacing text from Excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift
+description: Aspose.Cells Cloud REST API يدعم الحصول على النص والبحث عنه واستبداله من ملفات Excel. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
 weight: 34
 ---
-Text operate  is a complex process for Excel fie. Many factors contribute to the complexity and therefore, should be taken into account during the export process. The ability to text operates kinds of formats and types of data into the file with a precise professional quality is a top feature of Aspose.Cells Cloud.
+يعتبر تشغيل النص عملية معقدة لـ Excel fie. تساهم العديد من العوامل في التعقيد ، وبالتالي ، يجب أخذها في الاعتبار أثناء عملية التصدير. تعد القدرة على تشغيل أنواع التنسيقات وأنواع البيانات في الملف بجودة احترافية دقيقة من أهم ميزات Aspose.Cells Cloud.
 
-## How to work with text on an Excel file.
+## كيفية العمل مع نص في ملف Excel.
 
-- [How to get text items from an Excel workbook.](/cells/ar/workbook/get-text-items/)
-- [How to get text items from an Excel worksheet.](/cells/ar/worksheets/get-text-items/)
-- [How to find text from an Excel workbook.](/cells/ar/workbook/find-text/)
-- [How to find text from an Excel worksheet.](/cells/ar/worksheets/find-text/)
-- [How to find text from Excel files without using file.](/cells/ar/search/)
-- [How to replace text from an Excel workbook.](/cells/ar/workbook/replace-text/)
-- [How to replace text from an Excel worksheet.](/cells/ar/worksheets/replace-text/)
-- [How to replace text from Excel files without using file.](/cells/ar/replace/)
+- [كيفية الحصول على عناصر نصية من مصنف Excel.](/cells/ar/workbook/get-text-items/)
+- [كيفية الحصول على عناصر نصية من ورقة عمل Excel.](/cells/ar/worksheets/get-text-items/)
+- [كيفية البحث عن نص من مصنف Excel.](/cells/ar/workbook/find-text/)
+- [كيفية البحث عن نص من ورقة عمل Excel.](/cells/ar/worksheets/find-text/)
+- [كيفية البحث عن نص من ملفات Excel دون استخدام الملف.](/cells/ar/search/)
+- [كيفية استبدال نص من مصنف Excel.](/cells/ar/workbook/replace-text/)
+- [كيفية استبدال نص من ورقة عمل Excel.](/cells/ar/worksheets/replace-text/)
+- [كيفية استبدال نص من ملفات Excel دون استخدام ملف.](/cells/ar/replace/)

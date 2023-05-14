@@ -1,36 +1,36 @@
 ﻿---
-title: Chart
+title: جدول
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/charts/
 aliases: [/working-with-charts/]
 keywords: REST API, spreadsheets, excel, chart
-description: "Cells.Cloud API for Excel operate: charts operate"
+description: "Cells.Cloud API لـ Excel تعمل: الرسوم البيانية تعمل"
 weight: 100
 ---
-## Working with Charts on an Excel file.
+## العمل مع المخططات على ملف Excel.
 
-- [Get Chart from a Worksheet](/cells/ar/get-chart-from-a-worksheet/)
-- [Add a Chart in a Worksheet](/cells/ar/add-a-chart-in-a-worksheet/)
-- [Delete all Charts from a Worksheet](/cells/ar/delete-all-charts-from-a-worksheet/)
-- [Delete a Chart from a Worksheet](/cells/ar/delete-a-chart-from-a-worksheet/)
-- [Convert Chart to Image](/cells/ar/convert-chart-to-image/)
-- [Get Chart Area from a Worksheet](/cells/ar/get-chart-area-from-a-worksheet/)
-- [Get Fill Format of a Chart Area from a Worksheet](/cells/ar/get-fill-format-of-a-chart-area-from-a-worksheet/)
-- [Get Chart Legend from a Worksheet](/cells/ar/get-chart-legend-from-a-worksheet/)
-- [Update Chart Legend in a Worksheet](/cells/ar/update-chart-legend-in-a-worksheet/)
-- [Show Chart Legend in a Worksheet](/cells/ar/show-chart-legend-in-a-worksheet/)
-- [Hide Chart Legend in a Worksheet](/cells/ar/hide-chart-legend-in-a-worksheet/)
-- [Get Chart Title From a Worksheet](/cells/ar/get-chart-title-from-a-worksheet/)
-- [Set Chart Title in Excel Worksheet](/cells/ar/set-chart-title-in-excel-worksheet/)
-- [Update Chart Title in Excel Worksheet](/cells/ar/update-chart-title-in-excel-worksheet/)
-- [Delete Chart Title in a Worksheet](/cells/ar/delete-chart-title-in-a-worksheet/)
-- [Update Chart Propreties](/cells/ar/charts/propreties/update/)
-- [Get Chart Category Axis](/cells/ar/charts/category-axis/get/)
-- [Get Chart Value Axis](/cells/ar/charts/value-axis/get/)
-- [Get Chart Second Category Axis](/cells/ar/charts/second-category-axis/get/)
-- [Get Chart Second Value Axis](/cells/ar/charts/second-value-axis/get/)
-- [Update Chart Category Axis](/cells/ar/charts/category-axis/update/)
-- [Update Chart Value Axis](/cells/ar/charts/value-axis/update/)
-- [Update Chart Second Category Axis](/cells/ar/charts/second-category-axis/update/)
-- [Update Chart Second Value Axis](/cells/ar/charts/second-value-axis/update/)
+- [احصل على مخطط من ورقة عمل](/cells/ar/get-chart-from-a-worksheet/)
+- [أضف مخططًا في ورقة عمل](/cells/ar/add-a-chart-in-a-worksheet/)
+- [احذف جميع المخططات من ورقة العمل](/cells/ar/delete-all-charts-from-a-worksheet/)
+- [احذف مخططًا من ورقة عمل](/cells/ar/delete-a-chart-from-a-worksheet/)
+- [تحويل الرسم البياني إلى صورة](/cells/ar/convert-chart-to-image/)
+- [احصل على ناحية المخطط من ورقة عمل](/cells/ar/get-chart-area-from-a-worksheet/)
+- [احصل على تنسيق ملء منطقة المخطط من ورقة عمل](/cells/ar/get-fill-format-of-a-chart-area-from-a-worksheet/)
+- [احصل على وسيلة إيضاح المخطط من ورقة عمل](/cells/ar/get-chart-legend-from-a-worksheet/)
+- [تحديث وسيلة إيضاح المخطط في ورقة عمل](/cells/ar/update-chart-legend-in-a-worksheet/)
+- [إظهار وسيلة إيضاح المخطط في ورقة عمل](/cells/ar/show-chart-legend-in-a-worksheet/)
+- [إخفاء وسيلة إيضاح المخطط في ورقة عمل](/cells/ar/hide-chart-legend-in-a-worksheet/)
+- [الحصول على عنوان المخطط من ورقة عمل](/cells/ar/get-chart-title-from-a-worksheet/)
+- [قم بتعيين عنوان المخطط في ورقة عمل Excel](/cells/ar/set-chart-title-in-excel-worksheet/)
+- [تحديث عنوان المخطط في Excel ورقة عمل](/cells/ar/update-chart-title-in-excel-worksheet/)
+- [حذف عنوان المخطط في ورقة عمل](/cells/ar/delete-chart-title-in-a-worksheet/)
+- [تحديث خصائص المخطط](/cells/ar/charts/propreties/update/)
+- [الحصول على محور فئة المخطط](/cells/ar/charts/category-axis/get/)
+- [الحصول على محور قيمة المخطط](/cells/ar/charts/value-axis/get/)
+- [الحصول على محور الفئة الثانية للرسم البياني](/cells/ar/charts/second-category-axis/get/)
+- [الحصول على محور القيمة الثانية للمخطط](/cells/ar/charts/second-value-axis/get/)
+- [تحديث محور فئة المخطط](/cells/ar/charts/category-axis/update/)
+- [تحديث محور قيمة المخطط](/cells/ar/charts/value-axis/update/)
+- [تحديث محور الفئة الثانية للمخطط](/cells/ar/charts/second-category-axis/update/)
+- [تحديث محور القيمة الثانية للمخطط](/cells/ar/charts/second-value-axis/update/)

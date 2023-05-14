@@ -1,43 +1,43 @@
 ﻿---
-title: Convert Exce
+title: تحويل Exce
 second_title: Aspose.Cells Cloud Documen
-linktitle: Conver
+linktitle: كونفر
 type: docs
 url: /ar/convert/excel-to-different-formats/
 aliases: [/convert-excel-workbook-to-different-file-formats/]
 keywords: Convert excel files to kinds of format files
-description: Aspose.Cells Cloud REST API support conversion excel files to kinds of format files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift
+description: Aspose.Cells Cloud REST API يدعم تحويل ملفات Excel إلى أنواع من ملفات التنسيق. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
 weight: 10
 ---
-This REST API indicates to `convert` excel file to different format file.
+يشير هذا REST API إلى `convert` ملف Excel إلى ملف تنسيق مختلف.
 
-The request is an HTTP request with multipart content (see [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). The first part of the multipart content contains the data file and the second contains save options.
+الطلب عبارة عن طلب HTTP بمحتوى متعدد الأجزاء (انظر[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)أو[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). يحتوي الجزء الأول من المحتوى متعدد الأجزاء على ملف البيانات والثاني يحتوي على خيارات الحفظ.
 
-**Query Parameter**
+**معامِل الاستعلام**
 
-|Parameter Name|Type|Description|
+|اسم المعلمة|يكتب|وصف|
 |:- |:- |:- |
-|format|string|file format(csv/xls/html/mhtml/ods/pdf/xml/txt/tiff/xlsb/xlsm/xlsx/xltm/xltx/xps/png/jpg/gif/emf/bmp/md/Numbers/wmf/svg) |
+|شكل|خيط| تنسيق الملف (csv / xls / html / mhtml / ods / pdf / xml / txt / tiff / xlsb / xlsm / xlsx / xltm / xltx / xps / png / jpg / gif / emf / bmp / md / Numbers / wmf / svg )|
 
 
-**Request Body Parameter**
+**طلب معلمة الجسم**
 
-|Parameter Name|Type|Description|
+|اسم المعلمة|يكتب|وصف|
 |:- |:- |:- |
-|datafile|data file |The data file save into the first part of the multipart content.|
-|SaveOptions|Object |Save option save into the second part of the multipart content.|
+|ملف البيانات| ملف البيانات|يتم حفظ ملف البيانات في الجزء الأول من المحتوى متعدد الأجزاء.|
+|SaveOptions| هدف|حفظ الخيار حفظ في الجزء الثاني من المحتوى متعدد الأجزاء.|
 
 
 ## REST API
 
-|**API**|**Type**|**Description**|**Swagger Link**|
+|**API**|**يكتب**|**وصف**|**رابط التباهي**|
 |:- |:- |:- |:- |
-|/cells/convert|PUT|Converts workbook from request content to some format|[PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)|
+|/ خلايا / تحويل|يضع|يحول المصنف من طلب المحتوى إلى تنسيق ما|[PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)|
 
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. 
+ ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
 
-You can use **cURL** command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+ يمكنك استخدام**cURL** أداة سطر الأوامر للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
 
 
 {{< tabs tabTotal="1" tabID="11" tabName11="Request" >}}
@@ -53,11 +53,11 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/convert?format=html" -H "accept
 
 {{< /tabs >}}
 
-## Cloud SDK Family
+## عائلة Cloud SDK
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. يعتني SDK بالتفاصيل منخفضة المستوى ويتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة من Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام حزم SDK متنوعة:
 
 
 

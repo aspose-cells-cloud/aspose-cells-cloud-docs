@@ -1,47 +1,47 @@
 ﻿---
-title: How to Run Docker Containe
+title: كيفية تشغيل Docker Containe
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/getting-started/how-to-run-docker-container/
 aliases: [/how-to-run-docker-container/]
-description: How to run Docker Aspose.Cells Cloud container. Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: كيفية تشغيل حاوية Docker Aspose.Cells Cloud. Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 100
 ---
-The **Docker** technology is designed to automate the deployment of the applications by using lightweight containers. Developers can use a **Docker Container** to wrap up an application with all of its libraries and dependencies and deploy everything as a single package.
+ ال**عامل ميناء** تم تصميم التكنولوجيا لأتمتة نشر التطبيقات باستخدام حاويات خفيفة الوزن. يمكن للمطورين استخدام ملف**حاوية عامل الميناء** لإنهاء تطبيق بكل مكتباته وتبعياته ونشر كل شيء كحزمة واحدة.
 
-Aspose.Cells Cloud team has published the Docker Container on [Docker Hub](https://hub.docker.com/r/aspose/cells-cloud) to facilitate the Docker users. The following sections will guide you that how to run a Docker commands or write configuration in a Yaml file for Docker compose tool.
+ نشر فريق السحابة Aspose.Cells حاوية Docker على[Docker Hub](https://hub.docker.com/r/aspose/cells-cloud) لتسهيل مستخدمي Docker. ستوجهك الأقسام التالية إلى كيفية تشغيل أوامر Docker أو كتابة التكوين في ملف Yaml لأداة إنشاء Docker.
 
-## Container configuration
+## تكوين الحاوية
 
-### Required volumes
+### الأحجام المطلوبة
 
-|Mount path in container|Description|
+|مسار التركيب في الحاوية|وصف|
 |:- |:- |
-|C:\fonts|Folder with fonts, which will be used to render documents|
-|C:\data|File storage folder|
+|ج: \ الخطوط|مجلد مع الخطوط ، والذي سيتم استخدامه لتقديم المستندات|
+|ج: \ البيانات|مجلد تخزين الملفات|
 
-### Parameters
+### حدود
 
-|Name|Description|
+|اسم|وصف|
 |:- |:- |
-|LicensePublicKey|Public key of the license|
-|LicensePrivateKey|Private key of the license|
+|LicensePublicKey|المفتاح العام للترخيص|
+|مفتاح الترخيص الخاص|المفتاح الخاص للترخيص|
 
 
-If "License" parameters are omitted, the app will work in trial mode.
+إذا تم حذف معلمات "الترخيص" ، فسيعمل التطبيق في الوضع التجريبي.
 
 
-### Run a Docker container using command line
+### قم بتشغيل حاوية Docker باستخدام سطر الأوامر
 
-You can simply run the following docker command after pulling the container from [Docker Hub](https://href.li/?https://hub.docker.com/r/aspose/cells-cloud).
+ يمكنك ببساطة تشغيل أمر docker التالي بعد سحب الحاوية من[Docker Hub](https://href.li/?https://hub.docker.com/r/aspose/cells-cloud).
 
 ```JAVA
 docker run   -e "LicensePublicKey=public_key" -e "LicensePrivateKey=private_key" -v c:/data:c:/data  -v C:/Windows/Fonts:C:/Windows/Fonts -p 80:5000   aspose/cells-cloud
 ```
 
-### Configurations for Docker-Compose Tool
+### تكوينات أداة Docker-Compose
 
-You can write the following configurations in your yaml file for Docker-Compose tool:
+يمكنك كتابة التكوينات التالية في ملف yaml الخاص بك لأداة Docker-Compose:
 
 ```JAVA
 AsposeCellsCloud:

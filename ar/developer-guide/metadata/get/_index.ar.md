@@ -1,14 +1,14 @@
 ﻿---
-title: Get metadata from Excel file
+title: احصل على البيانات الوصفية من ملف Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: Get without using storag
+linktitle: احصل عليه دون استخدام ستوراج
 type: docs
 url: /ar/metadata/get/
 keywords: Get properties from Excel files
-description: Aspose.Cells Cloud REST API support getting properties from excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift
+description: Aspose.Cells Cloud REST API يدعم الحصول على الخصائص من ملفات Excel. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
 weight: 23
 ---
-This REST API indicates to get  `metadata`  from multiple Excel files.
+يشير هذا REST API إلى الحصول على `metadata` من عدة ملفات Excel.
 
 ```bash
 
@@ -16,20 +16,20 @@ POST https://api.aspose.cloud/v3.0/cells/metadata/get
 
 ```
 
-- **Query Parameter**
+- **معامِل الاستعلام**
 
-|Parameter Name|Type|Description|
+|اسم المعلمة|يكتب|وصف|
 |:- |:- |:- |
-|type |string |ALL/BuiltIn/Custom |
+| يكتب| خيط| الكل / مدمج / مخصص|
 
 
-- **Request Body Parameter**
+- **طلب معلمة الجسم**
 
-|Parameter Name|Type|Description|
+|اسم المعلمة|يكتب|وصف|
 |:- |:- |:- |
-|excel file|data file |The data file save into the first part of the multipart content.|
+|ملف اكسل| ملف البيانات|يتم حفظ ملف البيانات في الجزء الأول من المحتوى متعدد الأجزاء.|
 
-- **Response**
+- **إجابة**
 
 ```bash
 {
@@ -47,11 +47,11 @@ POST https://api.aspose.cloud/v3.0/cells/metadata/get
     ]
 }
 ```
-- **Cloud SDK Family**
+- **عائلة Cloud SDK**
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. يعتني SDK بالتفاصيل منخفضة المستوى ويتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة من Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام حزم SDK متنوعة:
 
 
 {{< tabs tabTotal="9" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" tabName9="Python" >}}

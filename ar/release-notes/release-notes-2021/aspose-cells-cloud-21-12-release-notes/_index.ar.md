@@ -1,23 +1,23 @@
 ﻿---
-title: Aspose.Cells Cloud 21.12 Release Note
+title: Aspose.Cells Cloud 21.12 - ملاحظة إصدار
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/aspose-cells-cloud-21-12-release-notes/
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 10
 ---
 {{% alert color="primary" %}} 
-This page contains release notes for Aspose.Cells Cloud 21.12
+تحتوي هذه الصفحة على ملاحظات إصدار Aspose.Cells Cloud 21.12
 {{% /alert %}} 
-## **Complete list of issues and enhancements covered in this Release**
-|**ID**|**Summary**|**Category**|
+## **قائمة كاملة بالمشكلات والتحسينات التي تم تناولها في هذا الإصدار**
+|**بطاقة تعريف**|**ملخص**|**فئة**|
 |:- |:- |:- |
-|24783 |Improve convert Api.|Improvement |
-|24793 |Support to list column. |New Feature |
-|24794 |Support to set cell formula in batch data import. |Improvement |
-|24796 |Improve list objects controller APIs of Aspose.Cells Cloud.|Improvement |
-|24797 |Support to set multi-rows height and multi-columns wight.|New Feature |
-|24798 |Improvement for sort.|Improvement |
-|24799 |Support reverse column and row.|New Feature |
-|24803 |Support group and ungroup shapes.|New Feature |
-|25251 |Improvement for conversion workbook to an image.|Improvement |
+|24783 |تحسين تحويل Api.| تحسين|
+|24793 | دعم لقائمة العمود.| ميزة جديدة|
+|24794 | دعم لتعيين صيغة الخلية في استيراد البيانات الدفعية.| تحسين|
+|24796 |تحسين واجهات برمجة تطبيقات وحدة التحكم في كائنات القائمة لـ Aspose.Cells Cloud.| تحسين|
+|24797 |دعم لتعيين ارتفاع متعدد الصفوف ووزن متعدد الأعمدة.| ميزة جديدة|
+|24798 |تحسين للفرز.| تحسين|
+|24799 |دعم العمود والصف العكسي.| ميزة جديدة|
+|24803 |مجموعة الدعم وفك تجميع الأشكال.| ميزة جديدة|
+|25251 |تحسين تحويل المصنف إلى صورة.| تحسين|

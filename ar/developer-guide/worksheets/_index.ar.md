@@ -1,36 +1,36 @@
 ﻿---
-title: Working with Excel worksheet
+title: العمل مع ورقة عمل Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: Worksheet
+linktitle: ورقة عمل
 type: docs
 url: /ar/worksheets/
 aliases: [/working-with-worksheets/]
 keywords: Working with worksheet on an Excel workbook
-description: Aspose.Cells Cloud REST API support working with worksheet on an Excel workbook. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift
+description: Aspose.Cells Cloud REST API دعم العمل مع ورقة العمل في مصنف Excel. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
 weight: 100
 ---
-A worksheet is a collection of cells where you keep and manipulate the data. Each Excel workbook can contain multiple worksheets.
+ورقة العمل عبارة عن مجموعة من الخلايا حيث يمكنك الاحتفاظ بالبيانات ومعالجتها. يمكن أن يحتوي كل مصنف Excel على أوراق عمل متعددة.
 
-**Worksheet Operate**
+**ورقة العمل تعمل**
 
-- [How to get Excel worksheets.](/cells/ar/worksheets/get-all/)
-- [How to get Excel worksheet with different formats.](/cells/ar/worksheets/get/) 
-    - [How to get Excel worksheet area with different formats.](/cells/ar/worksheets/area-to-different-formats/)
-    - [How to get Excel worksheet page with different formats.](/cells/ar/get-worksheet-for-page-index/) 
-    - [How to convert Excel worksheet to image.](/cells/ar/worksheets/to-image/)
-- [How to add Excel worksheet.](/cells/ar/worksheets/add/)
-- [How to add Excel worksheet background.](/cells/ar/worksheets/background/add/) 
-- [How to sort Excel worksheet data.](/cells/ar/worksheets/sort-data/) 
-- [How to hide Excel worksheet.](/cells/ar/worksheets/hide/)
-- [How to unhide Excel worksheet.](/cells/ar/worksheets/unhide/)
-- [How to move Excel worksheet.](/cells/ar/worksheets/move/)
-- [How to calculate Excel formula.](/cells/ar/worksheets/calculate-formula/)
-- [How to copy Excel worksheet.](/cells/ar/worksheets/copy/)
-- [How to rename Excel worksheet.](/cells/ar/worksheets/rename/)
-- [How to update Excel worksheet properties.](/cells/ar/worksheets/update-properties/)
-- [How to set Excel worksheet zoom.](/cells/ar/worksheets/zoom/)
-- [How to freeze Excel worksheet panes.](/cells/ar/worksheets/freeze-panes/)
-- [How to unfreeze Excel worksheet panes.](/cells/ar/worksheets/unfreeze-panes/)
-- [How to delete Excel worksheet.](/cells/ar/worksheets/delete/)
-- [How to delete Excel worksheet background.](/cells/ar/worksheets/background/delete/)
-- [How to work with autofit an Excel workbook ](/cells/ar/worksheets/autofit/)
+- [كيفية الحصول على أوراق عمل Excel.](/cells/ar/worksheets/get-all/)
+- [كيفية الحصول على ورقة عمل Excel بتنسيقات مختلفة.](/cells/ar/worksheets/get/) 
+    - [كيفية الحصول على منطقة ورقة عمل Excel بتنسيقات مختلفة.](/cells/ar/worksheets/area-to-different-formats/)
+    - [كيفية الحصول على صفحة ورقة عمل Excel بتنسيقات مختلفة.](/cells/ar/get-worksheet-for-page-index/) 
+    - [كيفية تحويل Excel ورقة عمل إلى صورة.](/cells/ar/worksheets/to-image/)
+- [كيفية إضافة Excel ورقة عمل.](/cells/ar/worksheets/add/)
+- [كيفية إضافة Excel خلفية ورقة العمل.](/cells/ar/worksheets/background/add/) 
+- [كيفية فرز Excel بيانات ورقة العمل.](/cells/ar/worksheets/sort-data/) 
+- [كيفية إخفاء ورقة عمل Excel.](/cells/ar/worksheets/hide/)
+- [كيفية إظهار ورقة عمل Excel.](/cells/ar/worksheets/unhide/)
+- [كيفية نقل Excel ورقة العمل.](/cells/ar/worksheets/move/)
+- [كيفية حساب صيغة Excel.](/cells/ar/worksheets/calculate-formula/)
+- [كيفية نسخ ورقة عمل Excel.](/cells/ar/worksheets/copy/)
+- [كيفية إعادة تسمية ورقة عمل Excel.](/cells/ar/worksheets/rename/)
+- [كيفية تحديث خصائص ورقة العمل Excel.](/cells/ar/worksheets/update-properties/)
+- [كيفية تعيين Excel تكبير ورقة العمل.](/cells/ar/worksheets/zoom/)
+- [كيفية تجميد أجزاء ورقة العمل Excel.](/cells/ar/worksheets/freeze-panes/)
+- [كيفية إلغاء تجميد أجزاء ورقة العمل Excel.](/cells/ar/worksheets/unfreeze-panes/)
+- [كيفية حذف Excel ورقة العمل.](/cells/ar/worksheets/delete/)
+- [كيفية حذف خلفية ورقة العمل Excel.](/cells/ar/worksheets/background/delete/)
+- [ كيفية العمل باستخدام احتواء تلقائي لمصنف Excel](/cells/ar/worksheets/autofit/)

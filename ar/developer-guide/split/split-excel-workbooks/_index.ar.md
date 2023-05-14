@@ -1,40 +1,40 @@
 ﻿---
-title: Split an Excel workbook to multi-file
+title: تقسيم مصنف Excel إلى عدة ملفات
 second_title: Aspose.Cells Cloud Documen
-linktitle: workboo
+linktitle: عمل
 type: docs
 url: /ar/workbook/split/
 aliases: [/split-excel-workbooks/]
 keywords: Split an Excel workbook to multi-files
-description: Aspose.Cells Cloud REST API support spliting an Excel workbook to multi-files.. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift
+description: Aspose.Cells Cloud REST API يدعم تقسيم مصنف Excel إلى ملفات متعددة .. تدعم SDK أنواعًا من لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
 weight: 130
 ---
-This REST API indicates to split an Excel `workbook` to multi-files with differnt format.
+يشير هذا REST API إلى تقسيم Excel `workbook` إلى ملفات متعددة بتنسيق مختلف.
 
-**Query Parameter**
+**معامِل الاستعلام**
 
-|Parameter Name|Type|Description|
+|اسم المعلمة|يكتب|وصف|
 |:- |:- |:- |
-|format|string|Split format.|
-|from|integer|Start worksheet index.|
-|to|integer|End worksheet index.|
-|horizontalResolution|integer|Image horizontal resolution.|
-|verticalResolution|integer|Image vertical resolution.|
-|outFolder|string|output split file position.|
-|splitNameRule|string||
-|folder|string|Original workbook folder.|
-|storageName|string|Storage name.|
+|شكل|خيط|تنسيق الانقسام.|
+|من|عدد صحيح|ابدأ فهرس ورقة العمل.|
+|ل|عدد صحيح|فهرس ورقة العمل النهائية.|
+|الدقة الأفقية|عدد صحيح|دقة الصورة الأفقية.|
+|عمودي القرار|عدد صحيح|دقة الصورة الرأسية.|
+|المجلد|خيط|وضع ملف الانقسام الناتج.|
+|SplitNameRule|خيط||
+|مجلد|خيط|مجلد المصنف الأصلي.|
+|اسم التخزين|خيط|اسم التخزين.|
 
 
 ## REST API
 
-|**API**|**Type**|**Description**|**Swagger Link**|
+|**API**|**يكتب**|**وصف**|**رابط التباهي**|
 |:- |:- |:- |:- |
-|/cells/{name}/split|POST|Split an Excel Workbook|[PostWorkbookSplit](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookSplit)|
+|/ الخلايا / {name} / الانقسام|بريد|تقسيم مصنف Excel|[PostWorkbook](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookSplit)|
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookSplit) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+ ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookSplit) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
 
-You can use **cURL** command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+ يمكنك استخدام**cURL** أداة سطر الأوامر للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
@@ -92,11 +92,11 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/split?format=jpeg&fr
 
 {{< /tabs >}}
 
-## Cloud SDK Family
+## عائلة Cloud SDK
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. يعتني SDK بالتفاصيل منخفضة المستوى ويتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة من Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام حزم SDK متنوعة:
 
 {{< tabs tabTotal="11" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" tabName11="Swift" >}}
 

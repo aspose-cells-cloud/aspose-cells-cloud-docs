@@ -1,20 +1,20 @@
 ﻿---
-title: Aspose.Cells Cloud 21.2 Release Note
+title: Aspose.Cells Cloud 21.2 - ملاحظة إصدار
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/aspose-cells-cloud-21-2-release-notes/
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 78
 ---
 {{% alert color="primary" %}} 
 
-This page contains release notes for Aspose.Cells Cloud 21.2
+تحتوي هذه الصفحة على ملاحظات إصدار Aspose.Cells Cloud 21.2
 
 {{% /alert %}} 
-## **Complete list of issues and enhancements covered in this Release**
+## **قائمة كاملة بالمشكلات والتحسينات التي تم تناولها في هذا الإصدار**
 
-|**Key**|**Summary**|**Category**|
+|**مفتاح**|**ملخص**|**فئة**|
 |:- |:- |:- |
-|CELLSCLOUD-10357 |Upgrade Billing Module to 21.2 version.|Improvement   |
-|CELLSCLOUD-10358 |Upgrade Aspose.Cells.DLL to 21.2.4 version.|Improvement |
+|CELLSCLOUD-10357 |قم بترقية "وحدة الفوترة" إلى الإصدار 21.2.| تحسين|
+|CELLSCLOUD-10358 |قم بترقية Aspose.Cells.DLL إلى إصدار 21.2.4.| تحسين|
  

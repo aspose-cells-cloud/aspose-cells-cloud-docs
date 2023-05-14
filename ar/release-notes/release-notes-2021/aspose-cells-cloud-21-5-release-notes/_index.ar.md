@@ -1,21 +1,21 @@
 ﻿---
-title: Aspose.Cells Cloud 21.5 Release Note
+title: Aspose.Cells Cloud 21.5 ملاحظات الإصدار
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/aspose-cells-cloud-21-5-release-notes/
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 68
 ---
 {{% alert color="primary" %}} 
 
-This page contains release notes for Aspose.Cells Cloud 21.5
+تحتوي هذه الصفحة على ملاحظات إصدار Aspose.Cells Cloud 21.5
 
 {{% /alert %}} 
-## **Complete list of issues and enhancements covered in this Release**
+## **قائمة كاملة بالمشكلات والتحسينات التي تم تناولها في هذا الإصدار**
 
-|**Key**|**Summary**|**Category**|
+|**مفتاح**|**ملخص**|**فئة**|
 |:- |:- |:- |
-|CELLSCLOUD-10376 |Support autofit columns for workbook and worksheet.|New Feature |
-|CELLSCLOUD-10374 |Improve add and post row/column APIs for 3.0. |Improvement |
-|CELLSCLOUD-10365 |Lite Aspose.Cells Cloud v4.0. |New Feature |
+|CELLSCLOUD-10376 |دعم أعمدة الاحتواء التلقائي للمصنف وورقة العمل.| ميزة جديدة|
+|CELLSCLOUD-10374 | تحسين إضافة ونشر الصفوف / واجهات برمجة التطبيقات للعمود 3.0.| تحسين|
+|CELLSCLOUD-10365 | لايت Aspose.Cells كلاود v4.0.| ميزة جديدة|
 

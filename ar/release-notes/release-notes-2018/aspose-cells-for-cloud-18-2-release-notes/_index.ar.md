@@ -1,23 +1,23 @@
 ﻿---
-title: Aspose.Cells Cloud 18.2 Release Note
+title: Aspose.Cells Cloud 18.2 - ملاحظة الإصدار
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/aspose-cells-cloud-18-2-release-notes/
 aliases: [/aspose-cells-for-cloud-18-2-release-notes/]
 weight: 20
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 ---
 {{% alert color="primary" %}} 
 
-This page contains release notes for [Aspose.Cells Cloud 18.2](https://apireference.aspose.cloud/cells/)
+ تحتوي هذه الصفحة على ملاحظات الإصدار لـ[Aspose.Cells كلاود 18.2.2007](https://apireference.aspose.cloud/cells/)
 
 {{% /alert %}} 
-## **Full List of Issues Covering all Changes in this Release**
+## **قائمة كاملة بالمشكلات التي تغطي كافة التغييرات في هذا الإصدار**
 
-|**Key**|**Summary**|**Category**|
+|**مفتاح**|**ملخص**|**فئة**|
 |:- |:- |:- |
-|CELLSCLOUD-10125|Support to update chart operate in Task API|New Feature|
-|CELLSCLOUD-10129|Enhancement for adding list object API|Enhancement|
-|CELLSCLOUD-10114|Enhancement for saving the result in Task API|Enhancement|
-|CELLSCLOUD-10126|Conditional Formatting not applied while converting Excel file to PDF|Bug|
+|CELLSCLOUD-10125|يعمل دعم تحديث المخطط في المهمة API|ميزة جديدة|
+|CELLSCLOUD-10129|تحسين إضافة عنصر القائمة API|التعزيز|
+|CELLSCLOUD-10114|تحسين حفظ النتيجة في المهمة API|التعزيز|
+|CELLSCLOUD-10126|لم يتم تطبيق التنسيق الشرطي أثناء تحويل ملف Excel إلى PDF|حشرة|
 

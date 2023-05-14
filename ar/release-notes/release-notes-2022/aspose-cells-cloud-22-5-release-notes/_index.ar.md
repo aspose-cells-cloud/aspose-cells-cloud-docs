@@ -1,19 +1,19 @@
 ﻿---
-title: Aspose.Cells Cloud 22.5 Release Note
+title: Aspose.Cells Cloud 22.5 ملاحظات الإصدار
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/aspose-cells-cloud-22-5-release-notes/
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 17
 ---
 {{% alert color="primary" %}} 
-This page contains release notes for Aspose.Cells Cloud 22.5
+تحتوي هذه الصفحة على ملاحظات إصدار Aspose.Cells Cloud 22.5
 {{% /alert %}} 
-## **Complete list of issues and enhancements covered in this Release**
-|**ID**|**Summary**|**Category**|
+## **قائمة كاملة بالمشكلات والتحسينات التي تم تناولها في هذا الإصدار**
+|**بطاقة تعريف**|**ملخص**|**فئة**|
 |:- |:- |:- |
-|29813 |Improvement GetExtractBarcodes api.|Improvement |
-|30273 |Fix for exporting worksheet with pdf format.|Improvement |
-|30334 |Improvement for copy worksheet to new workbook.|Improvement |
-|30405 |Improvement: add stream format for conversion API.|Improvement |
-|31070 |Improvement for the clear object Api of cells cloud.|Improvement |
+|29813 |تحسين GetExtractBarcodes api.| تحسين|
+|30273 |إصلاح لتصدير ورقة العمل بتنسيق pdf.| تحسين|
+|30334 |تحسين لنسخ ورقة العمل إلى مصنف جديد.| تحسين|
+|30405 |تحسين: إضافة تنسيق تيار للتحويل API.| تحسين|
+|31070 |تحسين لواضح كائن Api لخلايا سحابة.| تحسين|

@@ -1,28 +1,28 @@
 ﻿---
-title: Aspose.Cells Cloud 21.6 Release Note
+title: Aspose.Cells Cloud 21.6 ملاحظات الإصدار
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/aspose-cells-cloud-21-6-release-notes/
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 66
 ---
 {{% alert color="primary" %}} 
 
-This page contains release notes for Aspose.Cells Cloud 21.6
+تحتوي هذه الصفحة على ملاحظات إصدار Aspose.Cells Cloud 21.6
 
 {{% /alert %}} 
-## **Complete list of issues and enhancements covered in this Release**
+## **قائمة كاملة بالمشكلات والتحسينات التي تم تناولها في هذا الإصدار**
 
-|**Key**|**Summary**|**Category**|
+|**مفتاح**|**ملخص**|**فئة**|
 |:- |:- |:- |
-|CELLSCLOUD-10455 |Improvement document properties |Improvement |
-|CELLSCLOUD-10456 |Update the return value of put/post/delete. |Improvement |
-|CELLSCLOUD-10457 |Improvement export API |Improvement |
-|CELLSCLOUD-10458 |Improve split API.  |Improvement |
-|CELLSCLOUD-10459 |Improve merge API. |Improvement |
-|CELLSCLOUD-10460 |Improve unlock API. |Improvement |
-|CELLSCLOUD-10461 |Improve protected API. |Improvement |
-|CELLSCLOUD-10462 |Improve watermark API |Improvement |
-|CELLSCLOUD-10468 |Fix convert workbook to txt.|Bug |
+|CELLSCLOUD-10455 | تحسين خصائص الوثيقة| تحسين|
+|CELLSCLOUD-10456 | قم بتحديث القيمة المرجعة لـ put / post / delete.| تحسين|
+|CELLSCLOUD-10457 | تصدير تحسين API| تحسين|
+|CELLSCLOUD-10458 | تحسين الانقسام API.| تحسين|
+|CELLSCLOUD-10459 | تحسين الدمج API.| تحسين|
+|CELLSCLOUD-10460 | تحسين فتح API.| تحسين|
+|CELLSCLOUD-10461 | تحسين المحمية API.| تحسين|
+|CELLSCLOUD-10462 | تحسين العلامة المائية API| تحسين|
+|CELLSCLOUD-10468 |إصلاح تحويل المصنف إلى txt.| حشرة|
 
 

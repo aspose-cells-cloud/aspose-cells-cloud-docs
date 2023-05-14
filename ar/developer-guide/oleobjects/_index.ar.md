@@ -1,18 +1,18 @@
 ﻿---
-title: OleObject
+title: كائن أوله
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/oleobjects/
 aliases: [/working-with-oleobjects/]
 keywords: Get, add, delete, and update an OLE object in an Excel worksheet
-description: Aspose.Cells Cloud REST API support getting, adding, deleting, and updating an OLE object in an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift
+description: Aspose.Cells Cloud REST API يدعم الحصول على عنصر OLE وإضافته وحذفه وتحديثه في ورقة عمل Excel. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
 weight: 100
 ---
-**How to working with OLE objects on an Excel worksheet**
+**كيفية العمل باستخدام كائنات OLE في ورقة عمل Excel**
 
-- [How to get OLE object from an Excel worksheet.](/cells/ar/oleobjects/get/)
-- [How to add OLE object into ab Excel worksheet.](/cells/ar/oleobjects/add/)
-- [How to update a specific OLE object in an Excel worksheet.](/cells/ar/oleobjects/update/)
-- [How to convert an OLE object to image in an Excel worksheet.](/cells/ar/oleobjects/convert/)
-- [How to delete all OLE objects in an Excel worksheet.](/cells/ar/oleobjects/clear/)
-- [How to delete a specific OLE object in an  Excel worksheet.](/cells/ar/oleobjects/delete/)
+- [كيفية الحصول على كائن OLE من ورقة عمل Excel.](/cells/ar/oleobjects/get/)
+- [كيفية إضافة عنصر OLE إلى ورقة عمل ab Excel.](/cells/ar/oleobjects/add/)
+- [كيفية تحديث كائن OLE محدد في ورقة عمل Excel.](/cells/ar/oleobjects/update/)
+- [كيفية تحويل كائن OLE إلى صورة في ورقة عمل Excel.](/cells/ar/oleobjects/convert/)
+- [كيفية حذف كافة كائنات OLE في ورقة عمل Excel.](/cells/ar/oleobjects/clear/)
+- [كيفية حذف كائن OLE محدد في ورقة عمل Excel.](/cells/ar/oleobjects/delete/)

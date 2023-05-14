@@ -1,17 +1,17 @@
 ﻿---
-title: Import Batch Data into Excel Workshee
+title: استيراد بيانات الدُفعات إلى Excel Workshee
 second_title: Aspose.Cells Cloud Documen
-linktitle: Import batch dat
+linktitle: استيراد دات دفعة
 type: docs
 url: /ar/import/batch-data/
 aliases: [/import-batch-data-into-excel-worksheet/,/import-batch-data-into-worksheet/,/import-data/batch-data/]
 keywords: Import batch data into Excel files
-description: Aspose.Cells Cloud REST API support importing batch data into Excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift
+description: Aspose.Cells Cloud REST API يدعم استيراد البيانات المجمعة إلى ملفات Excel. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
 weight: 19
 ---
-This REST API `import batch data` into Excel work sheet.
+هذا REST API `import batch data` إلى Excel ورقة العمل.
 
-The request is an HTTP request with multipart content (see [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). The first part of the multipart content contains the ImportBatchDataOption data and the second contains a data file.
+الطلب عبارة عن طلب HTTP بمحتوى متعدد الأجزاء (انظر[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)أو[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). يحتوي الجزء الأول من المحتوى متعدد الأجزاء على بيانات ImportBatchDataOption والثاني يحتوي على ملف بيانات.
 
 ## RSET API
 
@@ -22,41 +22,41 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/import-data
 
 ```
 
-The important parameters are described in the following table:
+يتم وصف المعلمات المهمة في الجدول التالي:
 
 
-**ImportBatchDataOption**
+**إيمبورباتشداتاوبشن**
 
-|Parameter Name|Type|Description|
+|اسم المعلمة|يكتب|وصف|
 |:- |:- |:- |
-|BatchData |List<CellValue> |batch data |
-|DestinationWorksheet |string |destination work sheet name. |
-|IsInsert |string |true/false. |
-|ImportDataType |string |IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData.|
-|Source |FileSource |Indicates data file position when the BatchData parameter is null. |
+| البيانات الدفعية|قائمة<CellValue> | بيانات الدُفعات|
+| ورقة عمل الوجهة| خيط| اسم ورقة العمل الوجهة.|
+| هو إدراج| خيط| خطأ صحيح.|
+| إيمبورداتاتايب| خيط|IntArray / DoubleArray / StringArray / TwoDimensionIntArray / TwoDimensionDoubleArray / TwoDimensionStringArray / BatchData / CSVData.|
+| مصدر| مصدر الملف| يشير إلى موضع ملف البيانات عندما تكون معلمة BatchData خالية.|
 
 
 
 **CellValue**
 
-|Parameter Name|Type|Description|
+|اسم المعلمة|يكتب|وصف|
 |:- |:- |:- |
-|rowIndex |int ||
-|columnIndex |int ||
-|type |string |data type |
-|value |string ||
-|style |Style(object) ||
+| RowIndex| int||
+| العمود فهرس| int||
+| يكتب| خيط| نوع البيانات|
+| قيمة| خيط||
+| أسلوب| النمط (كائن)||
 
 
 
-**FileSource**
-|Parameter Name|Type|Description|
+**مصدر الملف**
+|اسم المعلمة|يكتب|وصف|
 |:- |:- |:- |
-|FileSourceType |string |InMemoryFiles/CloudFileSystem/RequestFiles |
-|FilePath |string |file position |
+| نوع مصدر الملف| خيط| InMemoryFiles / CloudFileSystem / RequestFiles|
+| مسار الملف| خيط| موضع الملف|
 
 
-**Example**
+**مثال**
 
 ```xml
 <ImportIntArrayOption>
@@ -74,11 +74,11 @@ The important parameters are described in the following table:
 
 ```
 
-## Cloud SDK Family
+## عائلة Cloud SDK
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. يعتني SDK بالتفاصيل منخفضة المستوى ويتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة من Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام حزم SDK متنوعة:
 
 
 {{< tabs tabTotal="3" tabID="4" tabName1="C#" tabName2="PHP" tabName3="Ruby" >}}

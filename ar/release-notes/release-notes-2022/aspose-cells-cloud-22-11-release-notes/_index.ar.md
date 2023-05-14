@@ -1,18 +1,18 @@
 ﻿---
-title: Aspose.Cells Cloud  22.11 Release Notes
+title: Aspose.Cells Cloud 22.11 ملاحظات إصدار
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/aspose-cells-cloud-22-11-release-notes/
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 11
 ---
 {{% alert color="primary" %}} 
-This page contains release notes for Aspose.Cells Cloud 22.11
+تحتوي هذه الصفحة على ملاحظات إصدار Aspose.Cells Cloud 22.11
 '{{% /alert %}} '
-## **Complete list of issues and enhancements covered in this Release**
+## **قائمة كاملة بالمشكلات والتحسينات التي تم تناولها في هذا الإصدار**
 
-|**ID**|**Summary**|**Category**|
+|**بطاقة تعريف**|**ملخص**|**فئة**|
 |:- |:- |:- |
-|35791 |Add convert workbook to csv api for cells cloud. |
-|35792 |Add convert workbook to sql api for cells cloud. |
-|35793 |Add convert workbook to json api for cells cloud. |
+|35791 | أضف تحويل المصنف إلى csv api للخلايا السحابية.|
+|35792 | أضف تحويل المصنف إلى sql api للخلايا السحابية.|
+|35793 | أضف تحويل المصنف إلى json api للخلايا السحابية.|

@@ -1,18 +1,18 @@
 ﻿---
-title: PageBreak
+title: فاصل صفحة
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/working-with-pagebreaks/
 aliases: [/working-with-pagebreaks/]
 keywords: Get, add, delete, and update page break in an Excel worksheet
-description: Aspose.Cells Cloud REST API support getting, adding, deleting, and updating page break in an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift
+description: Aspose.Cells Cloud REST API يدعم الحصول على فاصل الصفحات وإضافته وحذفه وتحديثه في ورقة عمل Excel. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
 weight: 100
 ---
-## How to working with page breaks in an Excel worksheet.
+## كيفية العمل مع فواصل الصفحات في ورقة عمل Excel.
 
-- [How to add a vertical page break in an Excel worksheet.](/cells/ar/page-breaks/add-vertical-page-break/)
-- [How to add a horizontal page break in an Excel worksheet.](/cells/ar/page-breaks/add-horizontal-page-break/)
-- [How to delete a vertical page break in an Excel worksheet.](/cells/ar/page-breaks/delete-vertical-page-break/)
-- [How to delete a horizontal page break in an Excel worksheet.](/cells/ar/page-breaks/delete-vertical-page-break/)
-- [How to get vertical page breaks in an Excel worksheet.](/cells/ar/page-breaks/get-vertical-page-breaks/)
-- [How to get horizontal page breaks in an Excel worksheet.](/cells/ar/page-breaks/get-vertical-page-breaks/)
+- [كيفية إضافة فاصل صفحات عمودي في ورقة عمل Excel.](/cells/ar/page-breaks/add-vertical-page-break/)
+- [كيفية إضافة فاصل صفحات أفقي في ورقة عمل Excel.](/cells/ar/page-breaks/add-horizontal-page-break/)
+- [كيفية حذف فاصل صفحة عمودية في ورقة عمل Excel.](/cells/ar/page-breaks/delete-vertical-page-break/)
+- [كيفية حذف فاصل صفحات أفقي في ورقة عمل Excel.](/cells/ar/page-breaks/delete-vertical-page-break/)
+- [كيفية الحصول على فواصل الصفحات العمودية في ورقة عمل Excel.](/cells/ar/page-breaks/get-vertical-page-breaks/)
+- [كيفية الحصول على فواصل الصفحات الأفقية في ورقة عمل Excel.](/cells/ar/page-breaks/get-vertical-page-breaks/)

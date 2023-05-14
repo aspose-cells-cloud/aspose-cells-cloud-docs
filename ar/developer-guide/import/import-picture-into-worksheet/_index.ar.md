@@ -1,17 +1,17 @@
 ﻿---
-title: Import Picture into Excel Workshee
+title: استيراد صورة إلى Excel Workshee
 second_title: Aspose.Cells Cloud Documen
-linktitle: Import pictur
+linktitle: استيراد الصورة
 type: docs
 url: /ar/import/picture/
 aliases: [/import-picture-into-excel-worksheet/,/import-picture-into-worksheet/,/import-data/picture/]
 keywords: Import picture into Excel files
-description: Aspose.Cells Cloud REST API support importing picture into Excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift
+description: Aspose.Cells Cloud REST API يدعم استيراد الصورة إلى ملفات Excel. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
 weight: 19
 ---
-This REST API `import picture data` into Excel work sheet.
+هذا REST API `import picture data` إلى Excel ورقة العمل.
 
-The request is an HTTP request with multipart content (see [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). The first part of the multipart content contains the ImportPictureOption data and the second contains a data file.
+الطلب عبارة عن طلب HTTP بمحتوى متعدد الأجزاء (انظر[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)أو[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). يحتوي الجزء الأول من المحتوى متعدد الأجزاء على بيانات ImportPictureOption والثاني يحتوي على ملف بيانات.
 
 ## RSET API
 
@@ -23,33 +23,33 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/import-data
 ```
 
 
-The important parameters are described in the following table:
+يتم وصف المعلمات المهمة في الجدول التالي:
 
 
 **ImportPictureOption**
 
-|Parameter Name|Type|Description|
+|اسم المعلمة|يكتب|وصف|
 |:- |:- |:- |
-|UpperLeftRow |int ||
-|UpperLeftColumn |int ||
-|LowerRightRow |int ||
-|LowerRightColumn |int ||
-|Filename |string ||
-|Data |String ||
-|DestinationWorksheet |string |destination work sheet name. |
-|IsInsert |string |true/false. |
-|ImportDataType |string |IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/Picture.|
-|Source |FileSource |Indicates data file position when the BatchData parameter is null. |
+| UpperLeftRow| int||
+|UpperLeftColumn| int||
+| LowerRightRow| int||
+| LowerRightColumn| int||
+| اسم الملف| خيط||
+| بيانات| خيط||
+| ورقة عمل الوجهة| خيط| اسم ورقة العمل الوجهة.|
+| هو إدراج| خيط| خطأ صحيح.|
+| إيمبورداتاتايب| خيط|IntArray / DoubleArray / StringArray / TwoDimensionIntArray / TwoDimensionDoubleArray / TwoDimensionStringArray / BatchData / CSVData / Picture.|
+| مصدر| مصدر الملف| يشير إلى موضع ملف البيانات عندما تكون معلمة BatchData خالية.|
 
 
-**Example**
+**مثال**
 
 
-## Cloud SDK Family
+## عائلة Cloud SDK
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. يعتني SDK بالتفاصيل منخفضة المستوى ويتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة من Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام حزم SDK متنوعة:
 
 
 {{< tabs tabTotal="9" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" tabName9="Python" >}}

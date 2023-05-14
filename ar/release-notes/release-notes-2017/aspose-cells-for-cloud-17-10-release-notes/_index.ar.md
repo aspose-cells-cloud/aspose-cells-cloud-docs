@@ -1,21 +1,21 @@
 ﻿---
-title: Aspose.Cells Cloud 17.10 Release Note
+title: Aspose.Cells Cloud 17.10 ملاحظة إصدار
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/aspose-cells-cloud-17-10-release-notes/
 aliases: [/aspose-cells-for-cloud-17-10-release-notes/]
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 20
 ---
 {{% alert color="primary" %}} 
 
-The page contains release notes for Aspose.Cells Cloud 17.10.
+تحتوي الصفحة على ملاحظات إصدار Aspose.Cells Cloud 17.10.
 
 {{% /alert %}} 
 
-|**Key**|**Summary**|**Category**|
+|**مفتاح**|**ملخص**|**فئة**|
 |:- |:- |:- |
-|CELLSCLOUD-10096|With [Run Tasks API](https://apireference.aspose.cloud/cells/#!/CellsTask/CellsTask_PostRunTask), you can add and delete Workbook object.|New Feature|
-|CELLSCLOUD-10097|[Run Tasks API](https://apireference.aspose.cloud/cells/#!/CellsTask/CellsTask_PostRunTask) now supports Split Workbook task.|New Feature|
-|CELLSCLOUD-10098|Made enhancement in Ranges APIs.|Enhancement|
+|CELLSCLOUD-10096| مع[قم بتشغيل المهام API](https://apireference.aspose.cloud/cells/#!/CellsTask/CellsTask_PostRunTask)، يمكنك إضافة وحذف كائن المصنف.|ميزة جديدة|
+|CELLSCLOUD-10097|[قم بتشغيل المهام API](https://apireference.aspose.cloud/cells/#!/CellsTask/CellsTask_PostRunTask) يدعم الآن مهمة Split Workbook.|ميزة جديدة|
+|CELLSCLOUD-10098|تم إجراء تحسين في Ranges APIs.|التعزيز|
 

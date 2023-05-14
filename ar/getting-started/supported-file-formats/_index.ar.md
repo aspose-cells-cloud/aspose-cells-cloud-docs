@@ -1,44 +1,44 @@
 ﻿---
-title: Supported File Format
+title: تنسيق الملف المدعوم
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/supported-file-formats/
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 40
 ---
-|**Format**|**Description**|**Load**|**Save**|
+|**شكل**|**وصف**|**حمولة**|**يحفظ**|
 |:- |:- |:- |:- |
-|[XLS](https://docs.fileformat.com/spreadsheet/xls/)|Excel 95/5.0 - 2003 Workbook.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[XLSX](https://docs.fileformat.com/spreadsheet/xlsx/)|Office Open XML SpreadsheetML Workbook or template file, with or without macros.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[XLSB](https://docs.fileformat.com/spreadsheet/xlsb/)|Excel Binary Workbook.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[XLSM](https://docs.fileformat.com/spreadsheet/xlsm/)|Excel Macro-Enabled Workbook.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[XLT](https://docs.fileformat.com/spreadsheet/xlt/)|Excel 97 - Excel 2003 Template.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[XLTX](https://docs.fileformat.com/spreadsheet/xltx/)|Excel Template.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[XLTM](https://docs.fileformat.com/spreadsheet/xltm/)|Excel Macro-Enabled Template.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[XLAM](https://docs.fileformat.com/spreadsheet/xlam/)|An Excel Macro-Enabled Add-In file that's used to add new functions to Excel.||{{< emoticons/tick >}}|
-|[CSV](https://docs.fileformat.com/spreadsheet/csv/)|CSV (Comma Separated Value) file.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[TSV](https://docs.fileformat.com/spreadsheet/tsv/)|TSV (Tab-separated values) file.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|TabDelimited|Tab-delimited text file, same with TSV file.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[TXT](https://docs.fileformat.com/word-processing/txt/)|Delimited plain text file.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[HTML](https://docs.fileformat.com/web/html/)|HTML format.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[MHTML](https://docs.fileformat.com/web/mhtml/)|MHTML file.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[ODS](https://docs.fileformat.com/spreadsheet/ods/)|ODS (OpenDocument Spreadsheet).|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|SpreadsheetML|Excel 2003 XML file.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Numbers](https://docs.fileformat.com/spreadsheet/numbers/)|The document is created by Apple's "Numbers" application which forms part of Apple's iWork office suite, a set of applications which run on the Mac OS X and iOS operating systems.|{{< emoticons/tick >}}||
-|[JSON](https://docs.fileformat.com/web/json/)|JavaScript Object Notation|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[DIF](https://docs.fileformat.com/spreadsheet/dif/)|Data Interchange Format.||{{< emoticons/tick >}}|
-|[PDF](https://docs.fileformat.com/pdf/)|Adobe Portable Document Format.||{{< emoticons/tick >}}|
-|[XPS](https://docs.fileformat.com/page-description-language/xps/)|XML Paper Specification Format.||{{< emoticons/tick >}}|
-|[SVG](https://docs.fileformat.com/page-description-language/svg/)|Scalable Vector Graphics Format.||{{< emoticons/tick >}}|
-|[TIFF](https://docs.fileformat.com/image/tiff/)|Tagged Image File Format||{{< emoticons/tick >}}|
-|[PNG](https://docs.fileformat.com/image/png/)|Portable Network Graphics Format||{{< emoticons/tick >}}|
-|[BMP](https://docs.fileformat.com/image/bmp/)|Bitmap Image Format||{{< emoticons/tick >}}|
-|[EMF](https://docs.fileformat.com/image/emf/)|Enhanced metafile Format||{{< emoticons/tick >}}|
-|[JPEG](https://docs.fileformat.com/image/jpeg/)|JPEG is a type of image format that is saved using the method of lossy compression.||{{< emoticons/tick >}}|
-|[GIF](https://docs.fileformat.com/image/gif/)|Graphical Interchange Format||{{< emoticons/tick >}}|
-|[MARKDOWN](https://docs.fileformat.com/word-processing/md/)|Represents a markdown document.||{{< emoticons/tick >}}|
-|[SXC](https://docs.fileformat.com/spreadsheet/sxc/)|An XML based format used by OpenOffice and StarOffice|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[FODS](https://docs.fileformat.com/spreadsheet/fods/)|This is an Open Document format stored as flat XML.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[DOCX](https://docs.fileformat.com/word-processing/docx/)|A well-known format for Microsoft Word documents that is a combination of XML and binary files.||{{< emoticons/tick >}}|
-|[PPTX](https://docs.fileformat.com/presentation/pptx/)|The PPTX format is based on the Microsoft PowerPoint open XML presentation file format.||{{< emoticons/tick >}}|
+|[XLS](https://docs.fileformat.com/spreadsheet/xls/)|Excel 95 / 5.0 - 2003 مصنف.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[XLSX](https://docs.fileformat.com/spreadsheet/xlsx/)|Office افتح مصنف XML SpreadsheetML أو ملف القالب ، مع أو بدون أوامر مركبة.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[XLSB](https://docs.fileformat.com/spreadsheet/xlsb/)|Excel كتاب ثنائي.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[XLSM](https://docs.fileformat.com/spreadsheet/xlsm/)|Excel مصنف Macro-Enabled.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[XLT](https://docs.fileformat.com/spreadsheet/xlt/)|Excel 97-Excel 2003 نموذج.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[XLTX](https://docs.fileformat.com/spreadsheet/xltx/)|قالب Excel.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[XLTM](https://docs.fileformat.com/spreadsheet/xltm/)|Excel القالب ذو التمكين الكلي.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[XLAM](https://docs.fileformat.com/spreadsheet/xlam/)|ملف الوظيفة الإضافية Excel Macro-Enabled والذي يُستخدم لإضافة وظائف جديدة إلى Excel.||{{< emoticons/tick >}}|
+|[CSV](https://docs.fileformat.com/spreadsheet/csv/)|ملف CSV (قيم مفصولة بفواصل).|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[ملف TSV](https://docs.fileformat.com/spreadsheet/tsv/)|ملف TSV (قيم مفصولة بعلامات جدولة).|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|علامة التبويب محدد|ملف نصي محدد بعلامات جدولة ، كما هو الحال مع ملف TSV.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[رسالة قصيرة](https://docs.fileformat.com/word-processing/txt/)|ملف نص عادي محدد.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[HTML](https://docs.fileformat.com/web/html/)|تنسيق HTML.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[MHTML](https://docs.fileformat.com/web/mhtml/)|ملف MHTML.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[المواد المستنفدة للأوزون](https://docs.fileformat.com/spreadsheet/ods/)|ODS (جدول بيانات OpenDocument).|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|SpreadsheetML|Excel 2003 ملف XML.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[أعداد](https://docs.fileformat.com/spreadsheet/numbers/)|تم إنشاء المستند بواسطة تطبيق "Numbers" من Apple والذي يشكل جزءًا من مجموعة Apple iWork office ، وهي مجموعة من التطبيقات التي تعمل على أنظمة تشغيل Mac OS X و iOS.|{{< emoticons/tick >}}||
+|[جسون](https://docs.fileformat.com/web/json/)|جافا سكريبت تدوين كائن|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[DIF](https://docs.fileformat.com/spreadsheet/dif/)|تنسيق تبادل البيانات.||{{< emoticons/tick >}}|
+|[PDF](https://docs.fileformat.com/pdf/)|تنسيق Adobe Portable Document Format.||{{< emoticons/tick >}}|
+|[XPS](https://docs.fileformat.com/page-description-language/xps/)|تنسيق مواصفات ورق XML.||{{< emoticons/tick >}}|
+|[SVG](https://docs.fileformat.com/page-description-language/svg/)|تنسيق رسومات موجهة قابلة للتحجيم.||{{< emoticons/tick >}}|
+|[TIFF](https://docs.fileformat.com/image/tiff/)|الموسومة تنسيق ملف الصورة||{{< emoticons/tick >}}|
+|[PNG](https://docs.fileformat.com/image/png/)|تنسيق رسومات الشبكة المحمولة||{{< emoticons/tick >}}|
+|[BMP](https://docs.fileformat.com/image/bmp/)|تنسيق صورة نقطية||{{< emoticons/tick >}}|
+|[EMF](https://docs.fileformat.com/image/emf/)|تنسيق ملف تعريف محسن||{{< emoticons/tick >}}|
+|[JPEG](https://docs.fileformat.com/image/jpeg/)|JPEG هو نوع من تنسيق الصورة يتم حفظه باستخدام طريقة الضغط مع فقدان البيانات.||{{< emoticons/tick >}}|
+|[GIF](https://docs.fileformat.com/image/gif/)|تنسيق التبادل الرسومي||{{< emoticons/tick >}}|
+|[تخفيض السعر](https://docs.fileformat.com/word-processing/md/)|يمثل وثيقة تخفيض السعر.||{{< emoticons/tick >}}|
+|[SXC](https://docs.fileformat.com/spreadsheet/sxc/)|تنسيق قائم على XML يستخدمه OpenOffice و StarOffice|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[فودس](https://docs.fileformat.com/spreadsheet/fods/)|هذا تنسيق Open Document يتم تخزينه بتنسيق XML مسطح.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[ملف DOCX](https://docs.fileformat.com/word-processing/docx/)|هو تنسيق معروف لوثائق Microsoft Word التي تتكون من مجموعة من ملفات XML والملفات الثنائية.||{{< emoticons/tick >}}|
+|[PPTX](https://docs.fileformat.com/presentation/pptx/)|يعتمد تنسيق PPTX على تنسيق ملف العرض التقديمي XML المفتوح Microsoft PowerPoint.||{{< emoticons/tick >}}|
 

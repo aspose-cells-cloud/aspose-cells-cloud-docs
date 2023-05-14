@@ -1,20 +1,20 @@
 ﻿---
-title: Aspose.Cells Cloud 20.2 Release Note
+title: Aspose.Cells Cloud 20.2 - ملاحظات الإصدار
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/aspose-cells-cloud-20-2-release-notes/
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 70
 ---
 {{% alert color="primary" %}} 
 
-This page contains release notes for Aspose.Cells Cloud 20.2
+تحتوي هذه الصفحة على ملاحظات إصدار Aspose.Cells Cloud 20.2
 
 {{% /alert %}} 
-## **Complete list of issues and enhancements covered in this Release**
+## **قائمة كاملة بالمشكلات والتحسينات التي تم تناولها في هذا الإصدار**
 
-|**Key**|**Summary**|**Category**|
+|**مفتاح**|**ملخص**|**فئة**|
 |:- |:- |:- |
-|CELLSCLOUD-10278|Enhancement for Aspose.Cells.Cloud SDK for GO|Enhancement|
-|CELLSCLOUD-10283|Automatically refresh authorization Token in SDK|Enhancement|
+|CELLSCLOUD-10278|تحسين Aspose.Cells.Cloud SDK لـ GO|التعزيز|
+|CELLSCLOUD-10283|تحديث رمز التفويض تلقائيًا في SDK|التعزيز|
 

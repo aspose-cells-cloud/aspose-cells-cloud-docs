@@ -1,21 +1,21 @@
 ﻿---
-title: Aspose.Cells Cloud 22.6 Release Note
+title: Aspose.Cells سحابة 22.6 مذكرة إصدار
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/aspose-cells-cloud-22-6-release-notes/
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 16
 ---
 {{% alert color="primary" %}} 
-This page contains release notes for Aspose.Cells Cloud 22.6
+تحتوي هذه الصفحة على ملاحظات إصدار Aspose.Cells Cloud 22.6
 {{% /alert %}} 
-## **Complete list of issues and enhancements covered in this Release**
-|**ID**|**Summary**|**Category**|
+## **قائمة كاملة بالمشكلات والتحسينات التي تم تناولها في هذا الإصدار**
+|**بطاقة تعريف**|**ملخص**|**فئة**|
 |:- |:- |:- |
-|31276 |Improvement codegen/spec API.|Improvement |
-|31528 |Improvement save as API.|Improvement |
-|31529 |Fix many function name of controllers.|Improvement |
-|31812 |Improve PostClearObjects API.|Improvement |
-|31813 |Improve PostReverse API.|Improvement |
-|31930 |Improvement for conversion API.|Improvement |
-|31931 |Improvement for get workbook API.|Improvement |
+|31276 |تحسين كود / المواصفات API.| تحسين|
+|31528 |تحسين حفظ باسم API.| تحسين|
+|31529 |إصلاح اسم العديد من وظائف وحدات التحكم.| تحسين|
+|31812 |تحسين PostClearObjects API.| تحسين|
+|31813 |تحسين PostReverse API.| تحسين|
+|31930 |تحسين التحويل API.| تحسين|
+|31931 |تحسين الحصول على المصنف API.| تحسين|

@@ -1,15 +1,15 @@
 ﻿---
-title: Get an OLE object in an Excel workshee
+title: احصل على كائن OLE في Excel workhe
 second_title: Aspose.Cells Cloud Documen
 linktitle: Ge
 type: docs
 url: /ar/oleobjects/get/
 aliases: [/get-oleobject-from-a-worksheet/]
 keywords: Get an OLE object in an Excel worksheet
-description: Aspose.Cells Cloud REST API support getting an OLE object in an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift
+description: Aspose.Cells Cloud REST API يدعم الحصول على كائن OLE في ورقة عمل Excel. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
 weight: 10
 ---
-This REST API indicates to `get` an `OLE object` with format in an Excel worksheet.
+يشير هذا REST API إلى `get` و `OLE object` بتنسيق في ورقة عمل Excel.
  
 ## RSET API
  
@@ -18,20 +18,20 @@ This REST API indicates to `get` an `OLE object` with format in an Excel workshe
 GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects/{objectNumber}?format={format}
  
 ```
-The request parameters are: 
+ معلمات الطلب هي:
  
-|Parameter Name |Type |Path/Query String/HTTPBody |Description|
+| اسم المعلمة| يكتب| المسار / سلسلة الاستعلام / HTTPBody|وصف|
 |:- |:- |:- |:- |
-|name |string |path |Document name. |
-|sheetName |string |path |Worksheet name. |
-|objectNumber |integer |path |The object number. |
-|format |string |query |The exported object format. |
-|folder |string |query |The document folder. |
-|storageName |string |query |storage name. |
+| اسم| خيط| طريق| اسم الملف.|
+| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
+| رقم الكائن| عدد صحيح| طريق| رقم الكائن.|
+| شكل| خيط| استفسار| تنسيق الكائن الذي تم تصديره.|
+| مجلد| خيط| استفسار| مجلد المستند.|
+| اسم التخزين| خيط| استفسار| اسم التخزين.|
  
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/OleObjects/GetWorksheetOleObject) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+ ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/OleObjects/GetWorksheetOleObject) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
  
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
  
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
  
@@ -57,7 +57,7 @@ Image file
  
 ```
 
-OR
+أو
 
 ```bash
 {
@@ -72,11 +72,11 @@ OR
  
 {{< /tabs >}}
  
-## Cloud SDK Family
+## عائلة Cloud SDK
  
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. يعتني SDK بالتفاصيل منخفضة المستوى ويتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة من Aspose.Cells Cloud SDKs.
  
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام حزم SDK متنوعة:
 
 {{< tabs tabTotal="9" tabID="4" tabName1="C#" tabName2="PHP" tabName3="Ruby" tabName4="Python" tabName5="Node.js" tabName6="Android" tabName7="Objective C" tabName8="Perl" tabName9="Go" >}}
 

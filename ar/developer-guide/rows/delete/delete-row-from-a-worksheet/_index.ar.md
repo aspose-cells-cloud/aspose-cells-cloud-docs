@@ -1,15 +1,15 @@
 ﻿---
-title: Delete row on an Excel workshee
+title: حذف صف من Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: Ro
+linktitle: رو
 type: docs
 url: /ar/rows/delete/row/
 aliases: [/delete-row-from-a-worksheet/]
 keywords: Delete rows on an Excel workshee
-description: Aspose.Cells Cloud REST API support deleting rows on an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift
+description: Aspose.Cells Cloud REST API يدعم حذف الصفوف بورقة عمل Excel. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
 weight: 80
 ---
-This REST API indicates to delete a row on an Excel worksheet.
+يشير هذا REST API إلى حذف صف في ورقة عمل Excel.
  
 ## RSET API
  
@@ -18,19 +18,19 @@ This REST API indicates to delete a row on an Excel worksheet.
 DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/{rowIndex}
  
 ```
-The request parameters are: 
+ معلمات الطلب هي:
  
-|Parameter Name |Type |Path/Query String/HTTPBody |Description|
+| اسم المعلمة| يكتب| المسار / سلسلة الاستعلام / HTTPBody|وصف|
 |:- |:- |:- |:- |
-|name |string |path |The workbook name. |
-|sheetName |string |path |The worksheet bame. |
-|rowIndex |integer |path |The row index. |
-|folder |string |query |The document folder. |
-|storageName |string |query |storage name. |
+| اسم| خيط| طريق|اسم المصنف.|
+| اسم الورقة| خيط| طريق| ورقة العمل bame.|
+| RowIndex| عدد صحيح| طريق| فهرس الصف.|
+| مجلد| خيط| استفسار| مجلد المستند.|
+| اسم التخزين| خيط| استفسار| اسم التخزين.|
  
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetRow) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+ ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetRow) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
  
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
  
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
  
@@ -62,24 +62,24 @@ curl -v "http://api.aspose.cloud/v3.0/cells/" \
  
 {{< /tabs >}}
  
-## Cloud SDK Family
+## عائلة Cloud SDK
  
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. يعتني SDK بالتفاصيل منخفضة المستوى ويتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة من Aspose.Cells Cloud SDKs.
  
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام حزم SDK متنوعة:
  
  
  
 
-## **Introduction**
-This example shows how to delete a row from a Excel Worksheet using Aspose.Cells Cloud API in your applications. You can use our REST API with any language: .NET, Java, PHP, Ruby, Rails, Python, jQuery and many more.
+## **مقدمة**
+يوضح هذا المثال كيفية حذف صف من ورقة عمل Excel باستخدام Aspose.Cells Cloud API في تطبيقاتك. يمكنك استخدام REST API الخاص بنا بأي لغة: .NET ، Java ، PHP ، Ruby ، Rails ، Python ، jQuery وغيرها الكثير.
 
-## **API Information**
+## **API المعلومات**
 
-|**API**|**Type**|**Description**|**Resource Link**|
+|**API**|**يكتب**|**وصف**|**رابط الموارد**|
 |:- |:- |:- |:- |
-|/cells/{name}/worksheets/{sheetName}/cells/rows|POST|Delete rows from a Excel Worksheet|[DeleteWorksheetRows](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetRows)|
-### **cURL Example**
+|/ الخلايا / {name} / أوراق العمل / {sheetName} / الخلايا / الصفوف|بريد|احذف صفوف من ورقة عمل Excel|[DeleteWorksheetRows](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetRows)|
+### **cURL مثال**
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
@@ -109,9 +109,9 @@ curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/
 {{< /tab >}}
 
 {{< /tabs >}}
-## **SDK Source**
-The Aspose.Cells Cloud SDKs can be downloaded from the following page: [Available SDKs](/cells/ar/available-sdks/)
-### **SDK Examples**
+## **مصدر SDK**
+يمكن تنزيل Aspose.Cells Cloud SDKs من الصفحة التالية:[مجموعات SDK المتوفرة](/cells/ar/available-sdks/)
+### **أمثلة SDK**
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}

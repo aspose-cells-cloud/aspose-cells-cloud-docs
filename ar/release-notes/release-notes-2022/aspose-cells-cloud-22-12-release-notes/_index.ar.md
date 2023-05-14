@@ -1,16 +1,16 @@
 ﻿---
-title: Aspose.Cells Cloud  22.12 Release Notes
+title: Aspose.Cells Cloud 22.12 ملاحظات إصدار
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/aspose-cells-cloud-22-12-release-notes/
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 10
 ---
 {{% alert color="primary" %}} 
-This page contains release notes for Aspose.Cells Cloud 22.12
+تحتوي هذه الصفحة على ملاحظات إصدار Aspose.Cells Cloud 22.12
 '{{% /alert %}} '
-## **Complete list of issues and enhancements covered in this Release**
+## **قائمة كاملة بالمشكلات والتحسينات التي تم تناولها في هذا الإصدار**
 
-|**ID**|**Summary**|**Category**|
+|**بطاقة تعريف**|**ملخص**|**فئة**|
 |:- |:- |:- |
-|36197 |Support chart axis operation. |
+|36197 | دعم عملية محور الرسم البياني.|

@@ -1,14 +1,14 @@
 ﻿---
-title: Working with autofit on an Excel workboo
+title: العمل مع Autoofit على Excel workboo
 second_title: Aspose.Cells Cloud Documen
-linktitle: Autofi
+linktitle: أوتوفي
 type: docs
 url: /ar/workbook/autofit/
 keywords: Autofit rows and columns on an Excel workbook
-description: Aspose.Cells Cloud REST API support autofitting rows and columns on an Excel workbook. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift
+description: Aspose.Cells Cloud REST API يدعم الضبط التلقائي للصفوف والأعمدة في مصنف Excel. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
 weight: 100
 ---
-## Working with autofit on an Excel workbook
+## العمل مع احتواء تلقائي على مصنف Excel
 
-- [How to autofit columns on an Excel workbook](/cells/ar/workbook/autofit/columns/)
-- [How to autofit rows on an Excel workbook](/cells/ar/workbook/autofit/rows/)
+- [كيفية احتواء الأعمدة تلقائيًا في مصنف Excel](/cells/ar/workbook/autofit/columns/)
+- [كيفية الاحتواء التلقائي للصفوف في مصنف Excel](/cells/ar/workbook/autofit/rows/)

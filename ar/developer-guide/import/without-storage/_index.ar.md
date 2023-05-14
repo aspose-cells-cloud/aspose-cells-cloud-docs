@@ -1,17 +1,17 @@
 ﻿---
-title: Import Data without using storag
+title: استيراد البيانات دون استخدام storag
 second_title: Aspose.Cells Cloud Documen
-linktitle: Import data without storag
+linktitle: استيراد البيانات بدون تخزين
 type: docs
 url: /ar/import/without-using-storage/ 
 aliases: [/import-data-in-excel-worksheet-without-using-storage/]
 keywords: REST API,  spreadsheets, excel, Import
-description: Cells.Cloud API for Excel files import
+description: Cells.Cloud API لاستيراد ملفات Excel
 weight: 10
 ---
-Excel data import is a complex process. Many factors contribute to the complexity and therefore, should be taken into account during the export process. The ability to imports kinds of formats and types of data into the file with a precise professional quality is a top feature of Aspose.Cells Cloud.
+Excel استيراد البيانات هو عملية معقدة. تساهم العديد من العوامل في التعقيد ، وبالتالي ، يجب أخذها في الاعتبار أثناء عملية التصدير. تعد القدرة على استيراد أنواع التنسيقات وأنواع البيانات إلى الملف بجودة احترافية دقيقة من أهم ميزات Aspose.Cells Cloud.
 
-This REST API indicates `import data` in an Excel file.
+يشير هذا REST API إلى `import data` في ملف Excel.
 
 ## RSET API
 
@@ -21,21 +21,21 @@ POST https://api.aspose.cloud/v3.0/cells/import
 
 ```
 
-**The request parameters are:** 
+**معلمات الطلب هي:** 
  
-|Parameter Name |Type |Path/Query String/HTTPBody |Description|
+| اسم المعلمة| يكتب| المسار / سلسلة الاستعلام / HTTPBody|وصف|
 |:- |:- |:- |:- |
-|file |file |formData |File to upload |
-|ImportOption |ImportOptions |HTTPBody |IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/Picture |
+| ملف| ملف| بيانات النموذج| ملف للتحميل|
+| استيراد| خيارات الاستيراد| HTTPBody| IntArray / DoubleArray / StringArray / TwoDimensionIntArray / TwoDimensionDoubleArray / TwoDimensionStringArray / BatchData / CSVData / صورة|
 
-**The import data options parameters** are described in [the reference link](/cells/ar/import/#import-data-option-parameter).
-
-
+**معلمات خيارات بيانات الاستيراد**موصوفة في[الارتباط المرجعي](/cells/ar/import/#import-data-option-parameter).
 
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LiteCells/PostImport) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+
+ ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/LiteCells/PostImport) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
  
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
  
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
  
@@ -80,11 +80,11 @@ curl -v "http://api.aspose.cloud/v3.0/cells/import" \
  
 {{< /tabs >}}
  
-## Cloud SDK Family
+## عائلة Cloud SDK
  
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. يعتني SDK بالتفاصيل منخفضة المستوى ويتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة من Aspose.Cells Cloud SDKs.
  
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام حزم SDK متنوعة:
 
 
 {{< tabs tabTotal="9" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" tabName9="Python" >}}

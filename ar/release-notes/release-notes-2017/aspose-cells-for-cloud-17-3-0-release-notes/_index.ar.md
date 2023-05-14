@@ -1,25 +1,25 @@
 ﻿---
-title: Aspose.Cells Cloud 17.3 Release Note
+title: Aspose.Cells Cloud 17.3 ملاحظات الإصدار
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/aspose-cells-cloud-17-3-release-notes/
 aliases: [/aspose-cells-for-cloud-17-3-0-release-notes/]
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 80
 ---
 {{% alert color="primary" %}} 
 
-This page contains release notes for [Aspose.Cells Cloud 17.3](https://downloads.aspose.com/cells/cloud/new-releases/aspose.cells-for-cloud-17.3.0/).
+ تحتوي هذه الصفحة على ملاحظات الإصدار لـ[Aspose.Cells كلاود 17.3.2007](https://downloads.aspose.com/cells/cloud/new-releases/aspose.cells-for-cloud-17.3.0/).
 
 {{% /alert %}} 
 
-|**Key**|**Summary**|**Category**|
+|**مفتاح**|**ملخص**|**فئة**|
 |:- |:- |:- |
-|CELLSCLOUD-10028|Insert page breaks in Excel worksheet|New Feature|
-|CELLSCLOUD-10035|Support AutoFit row heights|New Feature|
-|CELLSCLOUD-10036|Support AutoFit columns' width|New Feature|
-## **Get Horizontal Page Breaks inside Worksheet**
-The following sample code illustrates how to get Horizontal Page Breaks inside Worksheet using Aspose.Cells for Cloud API.
+|CELLSCLOUD-10028|أدخل فواصل الصفحات في ورقة عمل Excel|ميزة جديدة|
+|CELLSCLOUD-10035|دعم ارتفاعات الصفوف AutoFit|ميزة جديدة|
+|CELLSCLOUD-10036|دعم عرض أعمدة AutoFit|ميزة جديدة|
+## **احصل على فواصل صفحات أفقية داخل ورقة العمل**
+يوضح نموذج الكود التالي كيفية الحصول على فواصل الصفحات الأفقية داخل ورقة العمل باستخدام Aspose.Cells لـ Cloud API.
 
 ```java
 
@@ -52,8 +52,8 @@ using (HttpWebResponse response = _helper.CallGet(url, data, contentType))
 }
 
 ```
-## **Get Vertical Page Breaks inside Worksheet**
-The following sample code illustrates how to get Vertical Page Breaks inside Worksheet using Aspose.Cells for Cloud API.
+## **احصل على فواصل الصفحات العمودية داخل ورقة العمل**
+يوضح نموذج التعليمات البرمجية التالي كيفية الحصول على فواصل الصفحات العمودية داخل ورقة العمل باستخدام Aspose.Cells لـ Cloud API.
 
 ```java
 
@@ -86,8 +86,8 @@ using (HttpWebResponse response = _helper.CallGet(url, data, contentType))
 }
 
 ```
-## **Insert Horizontal Page Break inside Worksheet**
-The following sample code illustrates how to insert Horizontal Page Break inside Worksheet using Aspose.Cells for Cloud API.
+## **أدخل فاصل صفحة أفقيًا داخل ورقة العمل**
+يوضح نموذج الكود التالي كيفية إدراج فاصل صفحات أفقي داخل ورقة العمل باستخدام Aspose.Cells لـ Cloud API.
 
 ```java
 
@@ -126,8 +126,8 @@ using (HttpWebResponse response = _helper.CallPut(url, data, contentType))
 }
 
 ```
-## **Insert Vertical Page Break inside Worksheet**
-The following sample code illustrates how to insert Vertical Page Break inside Worksheet using Aspose.Cells for Cloud API.
+## **قم بإدراج فاصل صفحة عمودي داخل ورقة العمل**
+يوضح نموذج التعليمات البرمجية التالي كيفية إدراج "فاصل الصفحة العمودية" داخل ورقة العمل باستخدام Aspose.Cells لـ Cloud API.
 
 ```java
 
@@ -166,8 +166,8 @@ using (HttpWebResponse response = _helper.CallPut(url, data, contentType))
 }
 
 ```
-## **Delete Horizontal Page Break inside Worksheet**
-The following sample code illustrates how to get delete Horizontal Page Break inside Worksheet using Aspose.Cells for Cloud API.
+## **احذف فاصل الصفحة الأفقي داخل ورقة العمل**
+يوضح نموذج الكود التالي كيفية الحصول على حذف Horizontal Page Break داخل ورقة العمل باستخدام Aspose.Cells لـ Cloud API.
 
 ```java
 
@@ -206,8 +206,8 @@ using (HttpWebResponse response = _helper.CallDelete(url, data, contentType))
 }
 
 ```
-## **Delete Vertical Page Break inside Worksheet**
-The following sample code illustrates how to get delete Vertical Page Break inside Worksheet using Aspose.Cells for Cloud API.
+## **حذف فاصل الصفحة العمودية داخل ورقة العمل**
+يوضح نموذج التعليمات البرمجية التالي كيفية الحصول على حذف "فاصل الصفحة العمودية" داخل ورقة العمل باستخدام Aspose.Cells لـ Cloud API.
 
 ```java
 
@@ -246,8 +246,8 @@ using (HttpWebResponse response = _helper.CallDelete(url, data, contentType))
 }
 
 ```
-## **AutoFit Single Column of Worksheet**
-The following sample code illustrates how to autofit single column of the worksheet. It autofits the **column C**.
+## **احتواء تلقائي عمود واحد من ورقة العمل**
+يوضح نموذج التعليمات البرمجية التالي كيفية الاحتواء التلقائي لعمود واحد من ورقة العمل. يتلاءم مع**العمود ج**.
 
 ```java
 
@@ -276,8 +276,8 @@ using (HttpWebResponse response = _helper.CallPost(url, string.Empty, contentTyp
 }
 
 ```
-## **AutoFit Multiple Columns of Worksheet**
-The following sample code illustrates how to autofit multiple columns of the worksheet. It autofits the **columns A, B, C, D, E and F**.
+## **احتواء تلقائي لأعمدة متعددة من ورقة العمل**
+يوضح نموذج التعليمات البرمجية التالي كيفية احتواء أعمدة متعددة في ورقة العمل تلقائيًا. يتلاءم مع**الأعمدة A و B و C و D و E و F**.
 
 ```java
 
@@ -306,8 +306,8 @@ using (HttpWebResponse response = _helper.CallPost(url, string.Empty, contentTyp
 }
 
 ```
-## **AutoFit Single Row of Worksheet**
-The following sample code illustrates how to autofit single row of the worksheet. It autofits the **2nd row**.
+## **احتواء تلقائي لصف واحد من ورقة العمل**
+يوضح نموذج التعليمات البرمجية التالي كيفية احتواء صف واحد من ورقة العمل تلقائيًا. يتلاءم مع**الصف الثاني**.
 
 ```java
 
@@ -336,8 +336,8 @@ using (HttpWebResponse response = _helper.CallPost(url, string.Empty, contentTyp
 }
 
 ```
-## **AutoFit Multiple Rows of Worksheet**
-The following sample code illustrates how to autofit multiple rows of the worksheet. It autofits the multiple rows starting from 2nd row to 8th row.
+## **احتواء تلقائي لصفوف متعددة من ورقة العمل**
+يوضح نموذج التعليمات البرمجية التالي كيفية احتواء صفوف متعددة من ورقة العمل تلقائيًا. يتناسب تلقائيًا مع الصفوف المتعددة بدءًا من الصف الثاني إلى الصف الثامن.
 
 ```java
 

@@ -1,12 +1,12 @@
 ﻿---
-title: Aspose Contact Form for WordPres
+title: Aspose نموذج الاتصال الخاص بـ WordPres
 second_title: Aspose Contact Form Documen
 type: docs
 url: /ar/aspose-contact-form-for-wordpress/
-description: Create and manage contact forms using markup or with our sample templates. Your customers can fill forms on WordPress page and you will get the data via email. Aspose Contact Form also provides web form to Excel feature. Users can fill data in WordPress forms, which is then added to an Excel sheet. You can view data from all customers within your WordPress page
+description: قم بإنشاء وإدارة نماذج الاتصال باستخدام الترميز أو باستخدام نماذج القوالب الخاصة بنا. يمكن لعملائك ملء النماذج على صفحة WordPress وستحصل على بيانات البريد الإلكتروني via. يوفر نموذج الاتصال Aspose أيضًا نموذج ويب لميزة Excel. يمكن للمستخدمين ملء البيانات في نماذج WordPress ، والتي تضاف بعد ذلك إلى ورقة Excel. يمكنك عرض البيانات من جميع العملاء داخل صفحة WordPress الخاصة بك
 weight: 10
 ---
-This section has following topics:
+يحتوي هذا القسم على المواضيع التالية:
 
-- [Aspose Contact Form](/cells/ar/aspose-contact-form/)
-- [Aspose Contact Form for WordPress - FAQs](/cells/ar/aspose-contact-form-for-wordpress-faqs/)
+- [Aspose نموذج الاتصال](/cells/ar/aspose-contact-form/)
+- [Aspose نموذج الاتصال الخاص بـ WordPress - أسئلة وأجوبة](/cells/ar/aspose-contact-form-for-wordpress-faqs/)

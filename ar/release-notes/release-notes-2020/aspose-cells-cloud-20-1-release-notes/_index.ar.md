@@ -1,21 +1,21 @@
 ﻿---
-title: Aspose.Cells Cloud 20.1 Release Note
+title: Aspose.Cells Cloud 20.1 - ملاحظات الإصدار
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/aspose-cells-cloud-20-1-release-notes/
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 80
 ---
 {{% alert color="primary" %}} 
 
-This page contains release notes for Aspose.Cells Cloud 20.1
+تحتوي هذه الصفحة على ملاحظات إصدار Aspose.Cells Cloud 20.1
 
 {{% /alert %}} 
-## **Complete list of issues and enhancements covered in this Release**
+## **قائمة كاملة بالمشكلات والتحسينات التي تم تناولها في هذا الإصدار**
 
-|**Key**|**Summary**|**Category**|
+|**مفتاح**|**ملخص**|**فئة**|
 |:- |:- |:- |
-|CELLSCLOUD-10271|Aspose.Cells Cloud SDK supports Go language|New Feature|
-|CELLSCLOUD-10275|Update test case about color filter and copyright year|Enhancement|
-|CELLSCLOUD-10258|Fix product icon in Aspose.Cells Cloud SDK|Bug|
+|CELLSCLOUD-10271|Aspose.Cells Cloud SDK يدعم لغة Go|ميزة جديدة|
+|CELLSCLOUD-10275|تحديث حالة الاختبار حول مرشح الألوان وسنة حقوق النشر|التعزيز|
+|CELLSCLOUD-10258|إصلاح رمز المنتج في Aspose.Cells Cloud SDK|حشرة|
 

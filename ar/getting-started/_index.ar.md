@@ -1,21 +1,21 @@
 ﻿---
-title: Getting Starte
+title: البدء
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/getting-started/
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 10
 ---
-This Getting Started provides this introduction to Aspose.Cells Cloud fundamentals. For users new to Aspose.Cells Cloud, this is the fastest way to learn the basic requirements and capabilities and get started.
+يوفر "بدء الاستخدام" هذا مقدمة إلى أساسيات السحابة Aspose.Cells. بالنسبة للمستخدمين الجدد في Aspose.Cells Cloud ، فهذه هي أسرع طريقة للتعرف على المتطلبات والقدرات الأساسية والبدء.
 
-To find out more about Aspose.Cells Cloud, select the appropriate section:
+لمعرفة المزيد حول Aspose.Cells Cloud ، حدد القسم المناسب:
 
-- [Overview](/cells/ar/overview/).
-- [Quickstart](/cells/ar/quickstart/).
-- [Available SDKs](/cells/ar/available-sdks/) – provides information about Aspose.Cells Cloud SDK.
-- [Supported Platforms](/cells/ar/supported-platforms/) – provides information about supported platforms.
-- [Supported File Formats](/cells/ar/supported-file-formats/) – provides information about supported formats.
-- [Evaluate Aspose.Cells Cloud](/cells/ar/evaluate-aspose-cells/).
-- [Pricing Plan](/cells/ar/pricing-plan/).
-- [Technical Support](/cells/ar/technical-support/).
-- [How to Run Docker Container](/cells/ar/how-to-run-docker-container/) –  provides information on how to utilize Aspose.Cells Cloud in a Docker container. 
+- [ملخص](/cells/ar/overview/).
+- [بداية سريعة](/cells/ar/quickstart/).
+- [مجموعات SDK المتوفرة](/cells/ar/available-sdks/) - يوفر معلومات حول Aspose.Cells Cloud SDK.
+- [المنصات المدعومة](/cells/ar/supported-platforms/) - يوفر معلومات حول الأنظمة الأساسية المدعومة.
+- [تنسيقات الملفات المدعومة](/cells/ar/supported-file-formats/) - يوفر معلومات حول التنسيقات المدعومة.
+- [قم بتقييم Aspose.Cells السحابة](/cells/ar/evaluate-aspose-cells/).
+- [خطة التسعير](/cells/ar/pricing-plan/).
+- [دعم فني](/cells/ar/technical-support/).
+- [كيفية تشغيل Docker Container](/cells/ar/how-to-run-docker-container/) - يوفر معلومات حول كيفية استخدام Aspose.Cells Cloud في حاوية Docker.

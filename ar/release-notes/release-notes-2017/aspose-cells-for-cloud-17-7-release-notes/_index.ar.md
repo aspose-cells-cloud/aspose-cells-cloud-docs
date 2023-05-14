@@ -1,25 +1,25 @@
 ﻿---
-title: Aspose.Cells Cloud 17.7 Release Note
+title: Aspose.Cells Cloud 17.7 ملاحظات الإصدار
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/aspose-cells-cloud-17-7-release-notes/
 aliases: [/aspose-cells-for-cloud-17-7-release-notes/]
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 50
 ---
 {{% alert color="primary" %}} 
 
-The page contains release notes for Aspose.Cells Cloud 17.7
+تحتوي الصفحة على ملاحظات إصدار Aspose.Cells Cloud 17.7
 
 {{% /alert %}} 
-## **Full List of Issues Covering all Changes in this Release**
+## **قائمة كاملة بالمشكلات التي تغطي كافة التغييرات في هذا الإصدار**
 
-|**Key**|**Summary**|**Category**|
+|**مفتاح**|**ملخص**|**فئة**|
 |:- |:- |:- |
-|CELLSCLOUD-10051|Extend Chart class of **Charts** API.|New Feature|
-|CELLSCLOUD-10060|Sort table's data using **ListObjects** API.|New Feature|
-|CELLSCLOUD-10061|**Characters** API supports rich text formatting in a single cell.|New Feature|
-|CELLSCLOUD-10062|Calculate cell's formula using **Calculate** API.|New Feature|
+|CELLSCLOUD-10051| تمديد فئة المخطط من**الرسوم البيانية** API.|ميزة جديدة|
+|CELLSCLOUD-10060| فرز بيانات الجدول باستخدام**ListObjects** API.|ميزة جديدة|
+|CELLSCLOUD-10061|**الشخصيات** API يدعم تنسيق النص المنسق في خانة واحدة.|ميزة جديدة|
+|CELLSCLOUD-10062| احسب صيغة الخلية باستخدام**احسب** API.|ميزة جديدة|
 
 
 

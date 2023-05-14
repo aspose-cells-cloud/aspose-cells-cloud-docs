@@ -1,16 +1,16 @@
 ﻿---
-title: Aspose.Cells Cloud 1.3.0 Release Note
+title: Aspose.Cells Cloud 1.3.0 ملاحظات الإصدار
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/aspose-cells-cloud-1-3-0-release-notes/
 aliases: [/aspose-cells-for-cloud-1-3-0-release-notes/]
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 40
 ---
-We are pleased to announce the release of Aspose.Cells Cloud 1.3.0 with following improvements.
+يسرنا أن نعلن عن إصدار Aspose.Cells Cloud 1.3.0 مع التحسينات التالية.
 
-|**Key** |**Summary** |**Category** |
+|**مفتاح** |**ملخص** |**فئة** |
 |:- |:- |:- |
-|SAASCELLS-124 |Support asynchronous processing |New Feature |
-|SAASCELLS-133 |The output layout of converting PDF from Excel file is not good |Bug |
+|SAASCELLS-124 | دعم المعالجة غير المتزامنة| ميزة جديدة|
+|SAASCELLS-133 | تخطيط الإخراج الخاص بتحويل PDF من ملف Excel ليس جيدًا| حشرة|
 

@@ -1,7 +1,7 @@
 ﻿---
-title: Aspose.Cells Cloud Documen
+title: Aspose.Cells مستندات السحابة
 type: docs
 url: /ar/
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 10
 ---

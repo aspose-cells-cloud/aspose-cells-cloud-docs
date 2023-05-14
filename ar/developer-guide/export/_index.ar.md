@@ -1,22 +1,22 @@
 ﻿---
-title: Export workbook and internal objects to kinds of forma
+title: تصدير المصنفات والعناصر الداخلية إلى أنواع الشكل
 second_title: Aspose.Cells Cloud Documen
-linktitle: Expor
+linktitle: إكسبور
 type: docs
 url: /ar/export/
 keywords: Export workbook and internal objects to kinds of format files
-description: Aspose.Cells Cloud REST API support exporting Excel file and internal objects to kinds of format files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift
+description: Aspose.Cells Cloud REST API يدعم تصدير ملف Excel وكائنات داخلية لأنواع ملفات النسق. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
 weight: 31
 ---
-If you have originally created an Excel file in a certain format, like [XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), and [CSV](https://docs.fileformat.com/spreadsheet/csv/), you may sometimes find it useful to convert the excel file to another format so you can take advantage of special features provided by it. For example, you may want to export an excel file to [PDF](https://docs.fileformat.com/pdf/) to protect your contents from any unauthorized modifications and make it easy to read and share simultaneously. 
+ إذا قمت في الأصل بإنشاء ملف Excel بتنسيق معين ، مثل[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/) ، و[CSV](https://docs.fileformat.com/spreadsheet/csv/) ، قد تجد أحيانًا أنه من المفيد تحويل ملف Excel إلى تنسيق آخر حتى تتمكن من الاستفادة من الميزات الخاصة التي يوفرها. على سبيل المثال ، قد ترغب في تصدير ملف Excel إلى[PDF](https://docs.fileformat.com/pdf/) لحماية محتوياتك من أي تعديلات غير مصرح بها وتسهيل قراءتها ومشاركتها في وقت واحد.
 
-Excel object export is a complex process. Many factors contribute to the complexity and therefore, should be taken into account during the export process. The ability to export Excel object to one format file with a precise professional quality is a top feature of Aspose.Cells Cloud. 
+ Excel تصدير العنصر هو عملية معقدة. تساهم العديد من العوامل في التعقيد ، وبالتالي ، يجب أخذها في الاعتبار أثناء عملية التصدير. تعد القدرة على تصدير عنصر Excel إلى ملف تنسيق واحد بجودة احترافية دقيقة من أهم ميزات Aspose.Cells Cloud.
 
-It works perfectly for workbook, chart, shape and picture exported from excel file. You can export formats: [XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [ODS](https://docs.fileformat.com/spreadsheet/ods/), [TXT](https://docs.fileformat.com/word-processing/txt/). The export-only formats: [PDF](https://docs.fileformat.com/pdf/), [OTS](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [DIF](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [NUMBERS](https://docs.fileformat.com/spreadsheet/numbers/), [FODS](https://docs.fileformat.com/spreadsheet/fods/).
+ إنه يعمل بشكل مثالي مع المصنف والرسم البياني والشكل والصورة التي تم تصديرها من ملف Excel. يمكنك تصدير التنسيقات:[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [ملف TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [المواد المستنفدة للأوزون](https://docs.fileformat.com/spreadsheet/ods/), [رسالة قصيرة](https://docs.fileformat.com/word-processing/txt/) . تنسيقات التصدير فقط:[PDF](https://docs.fileformat.com/pdf/), [OTS](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [DIF](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [أعداد](https://docs.fileformat.com/spreadsheet/numbers/), [فودس](https://docs.fileformat.com/spreadsheet/fods/).
 
-The request is an HTTP request with multipart content (see [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). The first part of the multipart content contains the data file and the second contains save options.
+الطلب عبارة عن طلب HTTP بمحتوى متعدد الأجزاء (انظر[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)أو[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). يحتوي الجزء الأول من المحتوى متعدد الأجزاء على ملف البيانات والثاني يحتوي على خيارات الحفظ.
 
-The REST API `export` workbook and internal objects to different format file.
+مصنف REST API `export` والكائنات الداخلية لملف تنسيق مختلف.
 
 ## RSET API
 
@@ -26,17 +26,17 @@ POST https://api.aspose.cloud/v3.0/cells/export
 
 ```
 
-The request parameters are: 
+ معلمات الطلب هي:
  
-|Parameter Name |Type |Path/Query String/HTTPBody |Description|
+| اسم المعلمة| يكتب| المسار / سلسلة الاستعلام / HTTPBody|وصف|
 |:- |:- |:- |:- |
-|file |file |formData |File to upload |
-|objectType |string |query |object type (workbook/worksheet/chart/shape/picture/listobject/oleobject) |
-|format |string |query |[File Format](/cells/ar/supported-file-formats/)  |
+| ملف| ملف| بيانات النموذج| ملف للتحميل|
+| نوع الكائن| خيط| استفسار|نوع الكائن (مصنف / ورقة عمل / مخطط / شكل / صورة / كائن قائمة / كائن أولي)|
+| شكل| خيط| استفسار|[تنسيق الملف](/cells/ar/supported-file-formats/)  |
  
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LiteCells/PostExport) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+ ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/LiteCells/PostExport) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
  
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
  
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
  
@@ -80,12 +80,12 @@ curl -v "http://api.aspose.cloud/v3.0/cells/export" \
  
 {{< /tabs >}}
  
-## Cloud SDK Family
+## عائلة Cloud SDK
 
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. يعتني SDK بالتفاصيل منخفضة المستوى ويتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة من Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام حزم SDK متنوعة:
 
 
 {{< tabs tabTotal="9" tabID="3" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" tabName9="Python" tabName10="C#" tabName11="Java" >}}
@@ -140,13 +140,13 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{< /tabs >}}
 
 
-The following articles explain each API in detail and contain cURL and SDK Examples of each API:
+تشرح المقالات التالية كل API بالتفصيل وتحتوي على cURL و SDK أمثلة لكل API:
 
 
-1. [Export Excel chart to different file format](/cells/ar/export/excel-chart-to-different-formats/)
-2. [Export Excel list-object to different file format](/cells/ar/export/excel-listobject-to-different-formats/)
-3. [Export Excel ole-object to different file format](/cells/ar/export/excel-ole-object/)
-4. [Export Excel picture to different file format](/cells/ar/export/excel-picture-to-different-formats/)
-5. [Export Excel shape to different file format](/cells/ar/export/excel-shape-to-different-formats/)
-6. [Export Excel workbook to different file format](/cells/ar/export/excel-to-different-formats/)
-7. [Export Excel worksheet to different file format](/cells/ar/export/excel-worksheet-to-different-formats//)
+1. [تصدير مخطط Excel إلى تنسيق ملف مختلف](/cells/ar/export/excel-chart-to-different-formats/)
+2. [تصدير Excel عنصر قائمة إلى تنسيق ملف مختلف](/cells/ar/export/excel-listobject-to-different-formats/)
+3. [تصدير Excel كائن أول إلى تنسيق ملف مختلف](/cells/ar/export/excel-ole-object/)
+4. [تصدير Excel صورة إلى تنسيق ملف مختلف](/cells/ar/export/excel-picture-to-different-formats/)
+5. [تصدير شكل Excel إلى تنسيق ملف مختلف](/cells/ar/export/excel-shape-to-different-formats/)
+6. [تصدير Excel مصنف إلى تنسيق ملف مختلف](/cells/ar/export/excel-to-different-formats/)
+7. [تصدير Excel ورقة العمل إلى تنسيق ملف مختلف](/cells/ar/export/excel-worksheet-to-different-formats//)

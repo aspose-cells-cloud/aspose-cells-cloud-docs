@@ -1,16 +1,16 @@
 ﻿---
-title: Aspose.Cells Cloud 22.7 Release Note
+title: Aspose.Cells Cloud 22.7 ملاحظات الإصدار
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/aspose-cells-cloud-22-7-release-notes/
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 15
 ---
 {{% alert color="primary" %}} 
-This page contains release notes for Aspose.Cells Cloud 22.7
+تحتوي هذه الصفحة على ملاحظات إصدار Aspose.Cells Cloud 22.7
 {{% /alert %}} 
-## **Complete list of issues and enhancements covered in this Release**
-|**ID**|**Summary**|**Category**|
+## **قائمة كاملة بالمشكلات والتحسينات التي تم تناولها في هذا الإصدار**
+|**بطاقة تعريف**|**ملخص**|**فئة**|
 |:- |:- |:- |
-|32254 |Improvement Save API on cells cloud services( add four save option).|Improvement |
-|32504 |Optimized LightCellsController on cells cloud.|Improvement |
+|32254 |تحسين حفظ API في الخدمات السحابية للخلايا (إضافة خيار حفظ أربعة).| تحسين|
+|32504 |LightCellsController الأمثل على سحابة الخلايا.| تحسين|

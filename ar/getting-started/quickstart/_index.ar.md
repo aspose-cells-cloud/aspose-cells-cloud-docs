@@ -1,83 +1,83 @@
 ﻿---
-title: Quickstar
+title: كويك ستار
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/quickstart/
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 20
 ---
-These instructions guide you through initializing Aspose.Cells Cloud API and installing the required spreadsheet-processing libraries.
+ترشدك هذه التعليمات خلال تهيئة Aspose.Cells Cloud API وتثبيت مكتبات معالجة جداول البيانات المطلوبة.
 
-You can easily integrate spreadsheet conversion, generation and editing features into applications running on any modern OS. They assist to read, edit, merge, split spreadsheets as well as convert spreadsheets to various file formats. These programming libraries allow you to work with a complete set of Spreadsheet components, such as data, styles, formulas, tables, chart, pivot table, headers, footers, comments, drawing objects, hyperlinks, watermarks, and much more.
+يمكنك بسهولة دمج ميزات تحويل جداول البيانات وتوليدها وتحريرها في التطبيقات التي تعمل على أي نظام تشغيل حديث. فهي تساعد في قراءة جداول البيانات وتحريرها ودمجها وتقسيمها وكذلك تحويل جداول البيانات إلى تنسيقات ملفات مختلفة. تتيح لك مكتبات البرمجة هذه العمل مع مجموعة كاملة من مكونات جدول البيانات ، مثل البيانات والأنماط والصيغ والجداول والمخطط والجدول المحوري والعناوين والتذييلات والتعليقات وكائنات الرسم والارتباطات التشعبية والعلامات المائية وغير ذلك الكثير.
 
-## Create a Free Account
+## إنشاء حساب مجاني
 
-Aspose Cloud relies on a clear and comfortable sales model, that you can fully evaluate and test a product before committing to buying it.
+Aspose تعتمد السحابة على نموذج مبيعات واضح ومريح ، بحيث يمكنك تقييم منتج واختباره بشكل كامل قبل الالتزام بشرائه.
 
-First, you need to create a free account to have access to Cloud infrastructure:
+أولاً ، تحتاج إلى إنشاء حساب مجاني للوصول إلى البنية التحتية السحابية:
 
-- Please go to [Aspose Dashboard](https://dashboard.aspose.cloud/#/) login page
-- For a faster login, click the **Sign In with GitHub** or **Sign In with Google** button
-- Provide the required information
+-  الرجاء الذهاب إلى[Aspose لوحة القيادة](https://dashboard.aspose.cloud/#/) صفحة تسجيل الدخول
+-  لتسجيل الدخول بشكل أسرع ، انقر فوق**تسجيل الدخول باستخدام جيثب** أو**تسجيل الدخول عن طريق Google** زر
+- قدم المعلومات المطلوبة
 
 {{% alert style="info" %}}
 
-Congratulations! You have successfully signed up with Aspose Cloud.
+تهانينا! لقد قمت بالتسجيل بنجاح في Aspose Cloud.
 
 {{% /alert %}}
 
-## View and Update Your Account Details
+## عرض وتحديث تفاصيل حسابك
 
-Next, you need to make individual adjustments to your account:
+بعد ذلك ، تحتاج إلى إجراء تعديلات فردية على حسابك:
 
-- Access your [Aspose Account Settings](https://id.containerize.com/admin/) by clicking  the icon in the upper-right corner of the page.
+-  الوصول الخاص بك[Aspose إعدادات الحساب](https://id.containerize.com/admin/) بالنقر فوق الرمز الموجود في الزاوية العلوية اليمنى من الصفحة.
 
 ![dashboard.png](dashboard.png)
 
-- Select the **Account Settings** item from the menu bar. Check your settings and click the **Save Changes** button to confirm.
+-  حدد ملف**إعدادت الحساب** عنصر من شريط القائمة. تحقق من الإعدادات الخاصة بك وانقر فوق**حفظ التغييرات** زر للتأكيد.
 
 ![settings.png](settings.png)
 
-## Get Your Security Credentials (Client Id & Secret)
+## احصل على بيانات اعتماد الأمان (معرف العميل والسرية)
 
-Aspose attaches great importance to security issues. We use the JWT token for the  authentication and end-to-end HTTPS encryption to secure all client-server interactions.
+Aspose يولي أهمية كبيرة لقضايا الأمن. نستخدم رمز JWT للمصادقة وتشفير HTTPS من طرف إلى طرف لتأمين جميع تفاعلات خادم العميل.
 
-An Application is a set of unique API credentials — **Client Id** and **Client Secret**. You can use them to authenticate when calling our Cloud API. In most cases, you require just a single Application. In some advanced scenarios, you may want to register and use several Applications with separate **Client Id & Secret** credentials.
+ التطبيق عبارة عن مجموعة من أوراق اعتماد API الفريدة -**معرف العميل** و**سر العميل** . يمكنك استخدامها للمصادقة عند الاتصال على Cloud API. في معظم الحالات ، تحتاج فقط إلى تطبيق واحد. في بعض السيناريوهات المتقدمة ، قد ترغب في التسجيل واستخدام العديد من التطبيقات على حدة**معرف العميل والسرية** أوراق اعتماد.
 
-To access information about your Applications, please perform the following steps:
+للوصول إلى معلومات حول تطبيقاتك ، يرجى اتباع الخطوات التالية:
 
-1. Log in to [Aspose Dashboard](https://dashboard.aspose.cloud/#/)
-2. On the left side of the page click the [Applications](https://dashboard.aspose.cloud/applications) tab.
+1.  تسجيل الدخول إلى[Aspose لوحة القيادة](https://dashboard.aspose.cloud/#/)
+ 2. على الجانب الأيسر من الصفحة ، انقر فوق[التطبيقات](https://dashboard.aspose.cloud/applications) فاتورة غير مدفوعة.
 
-![applications.png](applications.png)
+![Applications.png](applications.png)
 
-3. Scroll down to the bottom of the page, where you will find the default **"Fist App"** Application. Click the **"First App"** item to view and update your security credentials.
+ 3. قم بالتمرير لأسفل إلى أسفل الصفحة ، حيث ستجد الافتراضي**"تطبيق القبضة"** طلب. انقر على**"التطبيق الأول"**عنصر لعرض وتحديث بيانات اعتماد الأمان الخاصة بك.
 
 ![firstapp.png](firstapp.png)
 
 {{% alert style="info" %}}
 
-Congratulations! You have successfully obtained your security credentials to authenticate Aspose.Cells API calls.
+تهانينا! لقد حصلت بنجاح على بيانات اعتماد الأمان الخاصة بك لمصادقة مكالمات Aspose.Cells API.
 
 {{% /alert %}}
 
-## Choose and Install SDK
+## اختر وتثبيت SDK
 
-Please take a moment to familiarize yourself with a wide range of Aspose.Cells Cloud products for a better understanding of your possibilities. These software products are built around a high-performance [Cloud API](https://apireference.aspose.com/), available 24/7.
+ يرجى قضاء بعض الوقت في التعرف على مجموعة واسعة من منتجات السحابة Aspose.Cells لفهم أفضل لإمكانياتك. تم تصميم منتجات البرامج هذه حول أداء عالٍ[سحابة API](https://apireference.aspose.com/)، متاح على مدار الساعة طوال أيام الأسبوع.
 
-For the effective use of Cloud API we provide a family of powerful [Cloud SDKs](https://products.aspose.cloud/cells/family) for almost all major operating systems (Windows, macOS, Linux, Android) and popular programming languages, including [Android](https://products.aspose.cloud/cells/android), [C#](https://products.aspose.cloud/cells/net), [Python](https://products.aspose.cloud/cells/python), [Golang](https://products.aspose.cloud/cells/go),[Java](https://products.aspose.cloud/cells/java), [Node.js](https://products.aspose.cloud/cells/nodejs),[Perl](https://products.aspose.cloud/cells/perl), [PHP](https://products.aspose.cloud/cells/php), [Ruby](https://products.aspose.cloud/cells/ruby) and [Swift](https://products.aspose.cloud/cells/swift).
+ من أجل الاستخدام الفعال لـ Cloud API ، نقدم عائلة قوية[حزم SDK على السحابة](https://products.aspose.cloud/cells/family) لجميع أنظمة التشغيل الرئيسية تقريبًا (Windows ، macOS ، Linux ، Android) ولغات البرمجة الشائعة ، بما في ذلك[ذكري المظهر](https://products.aspose.cloud/cells/android), [C#](https://products.aspose.cloud/cells/net), [Python](https://products.aspose.cloud/cells/python), [جولانج](https://products.aspose.cloud/cells/go),[Java](https://products.aspose.cloud/cells/java), [Node.js](https://products.aspose.cloud/cells/nodejs),[Perl](https://products.aspose.cloud/cells/perl), [PHP](https://products.aspose.cloud/cells/php), [روبي](https://products.aspose.cloud/cells/ruby) و[سويفت](https://products.aspose.cloud/cells/swift).
 
- All of the above SDKs are hosted on [GitHub](https://github.com/aspose-cells-cloud/). Each repository contains a wide range of code examples to illustrate its usage.
+ جميع حزم SDK المذكورة أعلاه مستضافة على[جيثب](https://github.com/aspose-cells-cloud/). يحتوي كل مستودع على مجموعة واسعة من أمثلة التعليمات البرمجية لتوضيح استخدامه.
 
-## Check the Developer Documentation and Code Examples
+## تحقق من وثائق المطور وأمثلة التعليمات البرمجية
 
-Now your account is fully configured and the developer environment is installed. You can start writing code with the chosen SDK.
+الآن تم تكوين حسابك بالكامل وتم تثبيت بيئة المطور. يمكنك البدء في كتابة التعليمات البرمجية باستخدام SDK المختار.
 
-Please refer to the [Developer Guide](https://docs.aspose.cloud/cells/developer-guide/) to find information on how to use the Cloud API easily.
+ يرجى الرجوع إلى[دليل المطور](https://docs.aspose.cloud/cells/developer-guide/) للعثور على معلومات حول كيفية استخدام Cloud API بسهولة.
 
-## Ask for Assistance, If Necessary
+## اطلب المساعدة ، إذا لزم الأمر
 
-Feel free to describe your problems and ask questions on our [Cloud Forums](https://forum.aspose.cloud/c/cells/7). Aspose technical support team is ready to help you. Have a note that Aspose does not provide technical support over the phone. Phone support is available only for sales and purchase questions.
+ لا تتردد في وصف مشاكلك وطرح الأسئلة على موقعنا[المنتديات السحابية](https://forum.aspose.cloud/c/cells/7). فريق الدعم الفني Aspose جاهز لمساعدتك. لاحظ أن Aspose لا يوفر دعمًا فنيًا عبر الهاتف. يتوفر الدعم عبر الهاتف لأسئلة البيع والشراء فقط.
 
 
 

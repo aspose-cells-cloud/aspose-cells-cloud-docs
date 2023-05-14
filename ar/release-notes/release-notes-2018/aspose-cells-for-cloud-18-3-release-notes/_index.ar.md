@@ -1,23 +1,23 @@
 ﻿---
-title: Aspose.Cells Cloud 18.3 Release Note
+title: Aspose.Cells Cloud 18.3 مذكرة الإصدار
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/aspose-cells-cloud-18-3-release-notes/
 aliases: [/aspose-cells-for-cloud-18-3-release-notes/]
 weight: 10
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 ---
 {{% alert color="primary" %}} 
 
-This page contains release notes for [Aspose.Cells Cloud 18.3](https://apireference.aspose.cloud/cells/)
+ تحتوي هذه الصفحة على ملاحظات الإصدار لـ[Aspose.Cells السحابة 18.3.2007](https://apireference.aspose.cloud/cells/)
 
 {{% /alert %}} 
-## **Full List of Issues Covering all Changes in this Release**
+## **قائمة كاملة بالمشكلات التي تغطي كافة التغييرات في هذا الإصدار**
 
-|**Key**|**Summary**|**Category**|
+|**مفتاح**|**ملخص**|**فئة**|
 |:- |:- |:- |
-|CELLSCLOUD-10130|Added an API that return Cells Data based on Named Range|New Feature|
-|CELLSCLOUD-10139|Added an API to delete names|New Feature|
-|CELLSCLOUD-10133|Insert an image into an Excel document using Image URL that gets downloaded each time the user opens the document|Enhancement|
-|CELLSCLOUD-10131|Validation APIs are not enforcing the validations on Cells|Bug|
+|CELLSCLOUD-10130|تمت إضافة API الذي يقوم بإرجاع Cells بيانات بناءً على النطاق المحدد|ميزة جديدة|
+|CELLSCLOUD-10139|تمت إضافة API لحذف الأسماء|ميزة جديدة|
+|CELLSCLOUD-10133|أدخل صورة في مستند Excel باستخدام عنوان URL للصورة الذي يتم تنزيله في كل مرة يفتح فيها المستخدم المستند|التعزيز|
+|CELLSCLOUD-10131|لا تفرض واجهات برمجة التطبيقات للتحقق من الصحة عمليات التحقق على Cells|حشرة|
 

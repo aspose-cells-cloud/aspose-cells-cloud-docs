@@ -5,14 +5,14 @@ type: docs
 url: /ar/workbook/
 aliases: [/working-with-workbook/]
 keywords: Working with workbook on an Excel file
-description: Aspose.Cells Cloud REST API support working with workbook on an Excel file. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift
+description: Aspose.Cells Cloud REST API دعم العمل مع المصنف على ملف Excel. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
 weight: 100
 ---
-## Working with an Excel workbook.
+## العمل باستخدام مصنف Excel.
 
-- [How to set and clear password for an Excel workbook](/cells/ar/workbook/password/)
-- [How to add and delete background on an Excel workbook](/cells/ar/workbook/background/)
-- [How to calculate formuls on an Excel workbook](/cells/ar/workbook/calculate-all-formulas/)
-- [How to create an Excel workbook](/cells/ar/workbook/create/)
-- [How to work with getting an Excel workbook ](/cells/ar/workbook/get/)
-- [How to work with autofit an Excel workbook ](/cells/ar/workbook/autofit/)
+- [كيفية تعيين ومسح كلمة المرور لمصنف Excel](/cells/ar/workbook/password/)
+- [كيفية إضافة الخلفية وحذفها في مصنف Excel](/cells/ar/workbook/background/)
+- [كيفية حساب الصيغ في مصنف Excel](/cells/ar/workbook/calculate-all-formulas/)
+- [كيفية إنشاء مصنف Excel](/cells/ar/workbook/create/)
+- [ كيفية العمل مع الحصول على مصنف Excel](/cells/ar/workbook/get/)
+- [ كيفية العمل باستخدام احتواء تلقائي لمصنف Excel](/cells/ar/workbook/autofit/)

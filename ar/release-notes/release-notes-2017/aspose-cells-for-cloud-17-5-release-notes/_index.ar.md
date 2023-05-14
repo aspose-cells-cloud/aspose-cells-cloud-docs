@@ -1,27 +1,27 @@
 ﻿---
-title: Aspose.Cells Cloud 17.5 Release Note
+title: Aspose.Cells Cloud 17.5 ملاحظات الإصدار
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/aspose-cells-cloud-17-5-release-notes/
 aliases: [/aspose-cells-for-cloud-17-5-release-notes/]
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 70
 ---
 {{% alert color="primary" %}} 
 
-The page contains release notes for Aspose.Cells Cloud 17.5
+تحتوي الصفحة على ملاحظات إصدار Aspose.Cells Cloud 17.5
 
 {{% /alert %}} 
 
 
-## **Full List of Issues Covering all Changes in this Release**
+## **قائمة كاملة بالمشكلات التي تغطي كافة التغييرات في هذا الإصدار**
 
-|**Key**|**Summary**|**Category**|
+|**مفتاح**|**ملخص**|**فئة**|
 |:- |:- |:- |
-|CELLSCLOUD-10049|Clear comments in the worksheet.|New Feature|
-|CELLSCLOUD-10052|Support Microsoft Excel 2007 themes and colors.|New Feature|
-|CELLSCLOUD-10048|An enhancement is made for **Convert** feature.|Enhancement|
-|CELLSCLOUD-10037|**Task API** now also supports Request file.|Enhancement|
-|CELLSCLOUD-10050|New resource parameters are added in **Copy Worksheet API**.|Enhancement|
-|CELLSCLOUD-10040|**Import Data API** now supports both Cloud file and Request file.|Enhancement|
+|CELLSCLOUD-10049|مسح التعليقات في ورقة العمل.|ميزة جديدة|
+|CELLSCLOUD-10052|دعم Microsoft Excel 2007 السمات والألوان.|ميزة جديدة|
+|CELLSCLOUD-10048| تم إجراء تحسين لـ**يتحول** ميزة.|التعزيز|
+|CELLSCLOUD-10037|**المهمة API** يدعم الآن أيضًا ملف الطلب.|التعزيز|
+|CELLSCLOUD-10050| تمت إضافة معلمات الموارد الجديدة في**نسخ ورقة العمل API**.|التعزيز|
+|CELLSCLOUD-10040|**استيراد البيانات API** يدعم الآن كلاً من ملف Cloud وملف الطلب.|التعزيز|
 

@@ -1,22 +1,22 @@
 ﻿---
-title: Column
+title: عمود
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/columns/
 aliases: [/working-with-columns/]
 keywords: REST API, columns, spreadsheets, exce
-description: "Cells.Cloud API for Excel operate: unhide columns from an Excel Worksheet"
+description: "Cells.Cloud API لـ Excel تعمل: إظهار الأعمدة من ورقة عمل Excel"
 weight: 100
 ---
-## Working with Columns on an Excel file.
+## العمل مع الأعمدة في ملف Excel.
 
-- [How to get column from an Excel worksheet.](/cells/ar/columns/get/)
-- [How to add an empty column on an Excel worksheet.](/cells/ar/columns/add/)
-- [How to copy columns on an Excel worksheet.](/cells/ar/columns/copy/)
-- [How to hide columns on an Excel worksheet.](/cells/ar/columns/hide/)
-- [How to unhide columns on an Excel worksheet.](/cells/ar/columns/unhide/)
-- [How to group columns on an Excel worksheet.](/cells/ar/columns/group/)
-- [How to ungroup columns on an Excel worksheet.](/cells/ar/columns/ungroup/)
-- [How to delete column on an Excel worksheet.](/cells/ar/columns/delete/)
+- [كيفية الحصول على عمود من ورقة عمل Excel.](/cells/ar/columns/get/)
+- [كيفية إضافة عمود فارغ بورقة عمل Excel.](/cells/ar/columns/add/)
+- [كيفية نسخ الأعمدة في ورقة عمل Excel.](/cells/ar/columns/copy/)
+- [كيفية إخفاء الأعمدة في ورقة عمل Excel.](/cells/ar/columns/hide/)
+- [كيفية إظهار الأعمدة في ورقة عمل Excel.](/cells/ar/columns/unhide/)
+- [كيفية تجميع الأعمدة في ورقة عمل Excel.](/cells/ar/columns/group/)
+- [كيفية فك تجميع الأعمدة في ورقة عمل Excel.](/cells/ar/columns/ungroup/)
+- [كيفية حذف عمود بورقة عمل Excel.](/cells/ar/columns/delete/)
 
 

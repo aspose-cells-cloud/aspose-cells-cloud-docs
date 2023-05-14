@@ -1,19 +1,19 @@
 ﻿---
-title: Aspose.Cells Cloud 22.9 Release Note
+title: Aspose.Cells Cloud 22.9 - ملاحظات الإصدار
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/aspose-cells-cloud-22-9-release-notes/
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 13
 ---
 {{% alert color="primary" %}} 
-This page contains release notes for Aspose.Cells Cloud 22.9
+تحتوي هذه الصفحة على ملاحظات إصدار Aspose.Cells Cloud 22.9
 {{% /alert %}} 
-## **Complete list of issues and enhancements covered in this Release**
-|**ID**|**Summary**|**Category**|
+## **قائمة كاملة بالمشكلات والتحسينات التي تم تناولها في هذا الإصدار**
+|**بطاقة تعريف**|**ملخص**|**فئة**|
 |:- |:- |:- |
-|34255 |losting extern parameters when exporting sheet. |
-|34534 |Support exporting page to other format file. |
-|34671 |Add new api for convert to pdf. |
-|34672 |Add new api for convert to png. |
-|34673 |Add new api for convert to docx. |
+|34255 | فقدان المعلمات الخارجية عند تصدير الورقة.|
+|34534 | دعم تصدير الصفحة إلى ملف تنسيق آخر.|
+|34671 | إضافة واجهة برمجة تطبيقات جديدة للتحويل إلى pdf.|
+|34672 | أضف واجهة برمجة تطبيقات جديدة للتحويل إلى png.|
+|34673 | إضافة واجهة برمجة تطبيقات جديدة للتحويل إلى docx.|

@@ -1,21 +1,21 @@
 ﻿---
-title: Aspose.Cells Cloud 22.4 Release Note
+title: Aspose.Cells Cloud 22.4 - ملاحظات الإصدار
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/aspose-cells-cloud-22-4-release-notes/
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 18
 ---
 {{% alert color="primary" %}} 
-This page contains release notes for Aspose.Cells Cloud 22.4
+تحتوي هذه الصفحة على ملاحظات إصدار Aspose.Cells Cloud 22.4
 {{% /alert %}} 
-## **Complete list of issues and enhancements covered in this Release**
-|**ID**|**Summary**|**Category**|
+## **قائمة كاملة بالمشكلات والتحسينات التي تم تناولها في هذا الإصدار**
+|**بطاقة تعريف**|**ملخص**|**فئة**|
 |:- |:- |:- |
-|29223 |Fix few bugs of codegen specification api.|Bug |
-|29264 |Improvement for swagger UI.|Improvement |
-|29366 |Fix the bug of losing cells prefix for code spec API.|Bug |
-|29721 |Fix export chart converting Tif.|Bug |
-|29722 |Fix empty worksheet converting Sql.|Bug |
-|29723 |Fix reversing empty worksheet.|Bug |
-|29737 |Fix for exporting workbook with pdf format.|
+|29223 |إصلاح بعض الأخطاء في واجهة برمجة تطبيقات مواصفات codegen.| حشرة|
+|29264 |تحسين لواجهة مستخدم اختيال.| تحسين|
+|29366 |إصلاح خطأ فقدان بادئة الخلايا لمواصفات الكود API.| حشرة|
+|29721 |إصلاح مخطط تصدير تحويل Tif.| حشرة|
+|29722 |إصلاح تحويل ورقة العمل الفارغة Sql.| حشرة|
+|29723 |إصلاح عكس ورقة العمل الفارغة.| حشرة|
+|29737 |إصلاح لتصدير مصنف بتنسيق pdf.|

@@ -1,41 +1,41 @@
 ﻿---
-title: Aspose Contact For
+title: Aspose اتصل بـ
 second_title: Aspose Contact Form Documen
 type: docs
 url: /ar/aspose-contact-form/
-description: Create and manage contact forms using markup or with our sample templates. Your customers can fill forms on WordPress page and you will get the data via email. Aspose Contact Form also provides web form to Excel feature. Users can fill data in WordPress forms, which is then added to an Excel sheet. You can view data from all customers within your WordPress page
+description: قم بإنشاء وإدارة نماذج الاتصال باستخدام الترميز أو باستخدام نماذج القوالب الخاصة بنا. يمكن لعملائك ملء النماذج على صفحة WordPress وستحصل على بيانات البريد الإلكتروني via. يوفر نموذج الاتصال Aspose أيضًا نموذج ويب لميزة Excel. يمكن للمستخدمين ملء البيانات في نماذج WordPress ، والتي تضاف بعد ذلك إلى ورقة Excel. يمكنك عرض البيانات من جميع العملاء داخل صفحة WordPress الخاصة بك
 weight: 10
 ---
-## **Introduction**
-### **Aspose Contact Form**
-Create and manage contact forms using markup or with our sample templates. Your customers can fill forms on WordPress page and you will get the data via email. Aspose Contact Form also provides web form to Excel feature. Users can fill data in WordPress forms, which is then added to an Excel sheet. You can view data from all customers within your WordPress page. We are also working on the Download Excel file, which will be added in our next update. After this, you will also be able to view the Excel on your computer or mobile device. You don't need to be a developer to use the plugin, it is very easy to use. In case of any difficulty, our support is there to help you.
-## **System Requirements and Supported Platforms**
-### **System Requirements**
-In order to install and use Aspose Contact Form Plugin you need to have below listed items.
+## **مقدمة**
+### **Aspose نموذج الاتصال**
+قم بإنشاء وإدارة نماذج الاتصال باستخدام الترميز أو باستخدام نماذج القوالب الخاصة بنا. يمكن لعملائك ملء النماذج على صفحة WordPress وستحصل على بيانات البريد الإلكتروني via. يوفر نموذج الاتصال Aspose أيضًا نموذج ويب لميزة Excel. يمكن للمستخدمين ملء البيانات في نماذج WordPress ، والتي تضاف بعد ذلك إلى ورقة Excel. يمكنك عرض البيانات من جميع العملاء داخل صفحة WordPress الخاصة بك. نحن نعمل أيضًا على تنزيل ملف Excel ، والذي سيتم إضافته في التحديث القادم. بعد ذلك ، ستتمكن أيضًا من عرض Excel على جهاز الكمبيوتر أو الجهاز المحمول. لست بحاجة إلى أن تكون مطورًا لاستخدام المكون الإضافي ، فهو سهل الاستخدام للغاية. في حالة وجود أي صعوبة ، فإن دعمنا موجود لمساعدتك.
+## **متطلبات النظام والأنظمة الأساسية المدعومة**
+### **متطلبات النظام**
+من أجل تثبيت واستخدام Aspose المكوِّن الإضافي لنموذج الاتصال ، يجب أن يكون لديك العناصر المدرجة أدناه.
 
-- WordPress
-- PHP version >= 5.3
+- ووردبريس
+- إصدار PHP> = 5.3
 
-Please feel free to contact us if you find any issues in installing or using this plugin.
-### **Installing**
-Once downloaded, please follow these steps to install the module to your WordPress website:
+لا تتردد في الاتصال بنا إذا وجدت أي مشاكل في تثبيت أو استخدام هذا المكون الإضافي.
+### **التثبيت**
+بمجرد التنزيل ، يرجى اتباع هذه الخطوات لتثبيت الوحدة على موقع WordPress الخاص بك:
 
-1. Log into your site as either Admin or another Super user level account.
-1. Navigate to the **Plugin** menu and select **Add New**.
-1. Type \*Aspose Contact Form \*in the search box and click \*Search Plugin button. \*Or click the \*Upload \*menu and choose the ZIP folder you downloaded from the locations above.
-1. Click **Install Now**.
-1. After installation, click **Settings** to see the configuration page.
-### **Using**
-After you have installed the Aspose Contact Form plugin it is really simple to start using it on your website. Please follow these simple steps to get started.
-*Using Form Builder*
-1. Make sure you are logged-in to a WordPress site with Admin level account.
-1. Navigate to the page  "Aspose Form" from the admin left menu.
-1. Creating a new Form is very simple, we have created a Sample Form that you can use as is by pressing Save form button bellow in Add New tab
-1. You can edit this Form anytime by pressing Edit button
-1. Contact Us, Feedback and General Inquiry Sample Forms are also included for quickly creating different forms
+1. قم بتسجيل الدخول إلى موقعك إما كمسؤول أو بحساب آخر على مستوى المستخدم المتميز.
+1. انتقل إلى**توصيل في**القائمة وحدد**اضف جديد**.
+1. يكتب \*Aspose نموذج الاتصال \*في مربع البحث وانقر فوق \*زر البحث في البرنامج المساعد. \*أو انقر فوق \*رفع \*القائمة واختر مجلد ZIP الذي قمت بتنزيله من المواقع أعلاه.
+1. انقر**تثبيت الآن**.
+1. بعد التثبيت ، انقر فوق**إعدادات**لرؤية صفحة التكوين.
+### **استخدام**
+بعد تثبيت المكون الإضافي لنموذج الاتصال Aspose ، من السهل حقًا البدء في استخدامه على موقع الويب الخاص بك. يرجى اتباع هذه الخطوات البسيطة للبدء.
+*باستخدام منشئ النموذج*
+1. تأكد من تسجيل الدخول إلى موقع WordPress بحساب مستوى المسؤول.
+1. انتقل إلى صفحة "نموذج Aspose" من قائمة المسؤول اليسرى.
+1. يعد إنشاء نموذج جديد أمرًا بسيطًا للغاية ، فقد أنشأنا نموذجًا نموذجيًا يمكنك استخدامه كما هو بالضغط على زر حفظ النموذج أدناه في إضافة علامة تبويب جديدة
+1. يمكنك تعديل هذا النموذج في أي وقت بالضغط على زر تحرير
+1. اتصل بنا ، ونماذج الملاحظات والاستفسارات العامة مدرجة أيضًا لإنشاء نماذج مختلفة بسرعة
 
-*Using MS Excel File*
-1. Navigate to the page  "From Using MS Excel" from the admin left menu.
-1. Select Microsoft Excel Spreadsheet using WordPress Media Upload and click on <strong> "Generate Shortcodes" </strong> button. It will give data entry and listing shortcodes.
-1. Add Data Entry short code on a new page for information collection.
-1. Start doing data entry on the page. By clicking on "Save" button, it will save the information to the spreadsheet.
+*باستخدام ملف MS Excel*
+1. انتقل إلى صفحة "من استخدام MS Excel" من القائمة اليسرى للمسؤول.
+1.  حدد جدول بيانات Microsoft Excel باستخدام WordPress Media Upload وانقر فوق<strong> "إنشاء الرموز القصيرة"</strong> زر. سيعطي إدخال البيانات وقائمة الرموز المختصرة.
+1. إضافة رمز قصير لإدخال البيانات على صفحة جديدة لجمع المعلومات.
+1. ابدأ في إدخال البيانات على الصفحة. بالنقر فوق الزر "حفظ" ، سيتم حفظ المعلومات في جدول البيانات.

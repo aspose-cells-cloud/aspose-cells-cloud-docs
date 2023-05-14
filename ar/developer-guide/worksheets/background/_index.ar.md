@@ -1,16 +1,16 @@
 ﻿---
-title: How to work with background on an Excel workshee
+title: كيفية العمل مع الخلفية على Excel workhee
 second_title: Aspose.Cells Cloud Documen
-linktitle: Backgroun
+linktitle: باكجرون
 type: docs
 url: /ar/worksheets/background/
 keywords: How to work with background on an Excel worksheet
-description: Aspose.Cells Cloud REST API support working with background on an Excel Worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift
+description: Aspose.Cells Cloud REST API دعم العمل مع الخلفية على ورقة عمل Excel. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
 weight: 20
 ---
-## Working with background on an Excel worksheet.
+## العمل مع الخلفية في ورقة عمل Excel.
 
-- [How to set background on an Excel worksheet.](/cells/ar/worksheets/background/add/) 
-- [How to delete background on an Excel worksheet.](/cells/ar/worksheets/background/delete/) 
+- [كيفية تعيين الخلفية في ورقة عمل Excel.](/cells/ar/worksheets/background/add/) 
+- [كيفية حذف الخلفية في ورقة عمل Excel.](/cells/ar/worksheets/background/delete/) 
 
 

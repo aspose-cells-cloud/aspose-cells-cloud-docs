@@ -1,13 +1,13 @@
 ﻿---
-title: Pricing Pla
+title: التسعير جيش التحرير الشعبى الصينى
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/pricing-plan/
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 70
 ---
-Aspose builds incredible easy to use Software as a Service (SaaS) that developers can fully evaluate before committing to buying. To do this, we rely on a slightly different sales model.
+يبني Aspose برنامجًا كخدمة (SaaS) مذهل وسهل الاستخدام يمكن للمطورين تقييمه بالكامل قبل الالتزام بالشراء. للقيام بذلك ، نعتمد على نموذج مبيعات مختلف قليلاً.
 
-Please check [Pricing Plan and How to Purchase](https://purchase.aspose.cloud/buy) webpage that gives an overview of our single pricing plan and why there are no "upgrades" or "downgrades".
+يرجى المراجعة[خطة التسعير وكيفية الشراء](https://purchase.aspose.cloud/buy) صفحة ويب تقدم نظرة عامة على خطة التسعير الفردية الخاصة بنا وسبب عدم وجود "ترقيات" أو "تخفيضات".
 
 

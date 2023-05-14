@@ -1,19 +1,19 @@
 ﻿---
-title: Aspose.Cells Cloud 21.9 Release Note
+title: Aspose.Cells Cloud 21.9 ملاحظات الإصدار
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/aspose-cells-cloud-21-9-release-notes/
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 13
 ---
 {{% alert color="primary" %}} 
-This page contains release notes for Aspose.Cells Cloud 21.9
+تحتوي هذه الصفحة على ملاحظات إصدار Aspose.Cells Cloud 21.9
 {{% /alert %}} 
-## **Complete list of issues and enhancements covered in this Release**
-|**ID**|**Summary**|**Category**|
+## **قائمة كاملة بالمشكلات والتحسينات التي تم تناولها في هذا الإصدار**
+|**بطاقة تعريف**|**ملخص**|**فئة**|
 |:- |:- |:- |
-|22141 |Fix the bug about export ole object throw exception.|Bug |
-|22288 |Fix parsing import parameter error in import Api.|Bug |
-|22290 |Fix stream convert  to import option throw exception.|Bug |
-|22460 |Improve clear object Api.|Improvement |
-|22542 |Upgrade Aspose.Cells to 21.9 version.|Task |
+|22141 |إصلاح الخلل حول تصدير استثناء رمي كائن أولي.| حشرة|
+|22288 |إصلاح خطأ تحليل معلمة الاستيراد في استيراد Api.| حشرة|
+|22290 |إصلاح دفق التحويل لاستيراد خيار رمي الاستثناء.| حشرة|
+|22460 |تحسين واضح وجوه API.| تحسين|
+|22542 |قم بترقية Aspose.Cells إلى إصدار 21.9.| مهمة|

@@ -1,16 +1,16 @@
 ﻿---
-title: Aspose.Cells Cloud 19.10 Release Note
+title: Aspose.Cells Cloud 19.10 ملاحظة إصدار
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/aspose-cells-cloud-19-10-release-notes/
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 30
 ---
-We have added the following new features for Aspose.Cells Cloud 19.10
+لقد أضفنا الميزات الجديدة التالية لـ Aspose.Cells Cloud 19.10
 
-- Integrated storage features into Aspose.Cells Cloud.
-- Added new API to delete all validations in worksheet.
-- Fixed the issue with Deleted chart legend fails in worksheet.
-- Fixed the issue with chart legend fails in worksheet
-- Enhancement for API of set cell Html string.
-- Added short description to the API Reference.
+- ميزات التخزين المدمجة في Aspose.Cells Cloud.
+- تمت إضافة API جديد لحذف كافة عمليات التحقق من ورقة العمل.
+- تم إصلاح مشكلة فشل وسيلة إيضاح الرسم البياني المحذوف في ورقة العمل.
+- تم إصلاح مشكلة فشل وسيلة إيضاح الرسم البياني في ورقة العمل
+- تحسين API لمجموعة سلسلة Html للخلية.
+- تمت إضافة وصف قصير للمرجع API.

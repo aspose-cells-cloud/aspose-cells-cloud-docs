@@ -1,10 +1,10 @@
 ﻿---
-title: Get Cells Propertie
+title: احصل على Cells من الممتلكات
 type: docs
 url: /ar/get-cells-properties/
 weight: 130
 ---
-This REST API indicates shows how to `get a specific cell` in an Excel file.
+يشير هذا REST API إلى كيفية `get a specific cell` في ملف Excel.
 
 ## RSET API
  
@@ -13,29 +13,29 @@ This REST API indicates shows how to `get a specific cell` in an Excel file.
 GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellOrMethodName}
  
 ```
-The request parameters are: 
+ معلمات الطلب هي:
  
-|Parameter Name |Type |Path/Query String/HTTPBody |Description|
+| اسم المعلمة| يكتب| المسار / سلسلة الاستعلام / HTTPBody|وصف|
 |:- |:- |:- |:- |
-|name |string |path |Document name. |
-|sheetName |string |path |Worksheet name. |
-|cellOrMethodName |string |path |The cell's or method name. (Method name value : firstcell, endcell, maxrow, maxdatarow, maxcolumn, maxdatacolumn, minrow, mindatarow, mincolumn, mindatacolumn and cellName.) |
-|folder |string |query |Document's folder. |
-|storageName |string |query |storage name. |
+| اسم| خيط| طريق| اسم الملف.|
+| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
+| cellOrMethodName| خيط| طريق| اسم الخلية أو الطريقة. (قيمة اسم الطريقة: firstcell و endcell و maxrow و maxdatarow و maxcolumn و maxdatacolumn و minrow و mindatarow و mincolumn و mindatacolumn و cellName.)|
+| مجلد| خيط| استفسار| مجلد المستند.|
+| اسم التخزين| خيط| استفسار| اسم التخزين.|
  
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetCell) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+ ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetCell) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
 
 
-- **How to get specific cell**
+- **كيفية الحصول على خلية معينة**
 
-   - [Get Cell Data from a Worksheet](/cells/ar/get-cell-data-from-a-worksheet/)
-   - [Get First Cell from Excel Worksheet](/cells/ar/get-first-cell-from-excel-worksheet/)
-   - [Get Last Cell of Excel Worksheet](/cells/ar/get-last-cell-of-excel-worksheet/)
-   - [Get MaxRow from Excel Worksheet](/cells/ar/get-maxrow-from-excel-worksheet/)
-   - [Get MaxDataRow from Excel Worksheet](/cells/ar/get-maxdatarow-from-excel-worksheet/)
-   - [Get MaxColumn from Excel Worksheet](/cells/ar/get-maxcolumn-from-excel-worksheet/)
-   - [Get MaxDataColumn from Excel Worksheet](/cells/ar/get-maxdatacolumn-from-excel-worksheet/)
-   - [Get MinRow from Excel Worksheet](/cells/ar/get-minrow-from-excel-worksheet/)
-   - [Get MinDataRow from Excel Worksheet](/cells/ar/get-mindatarow-from-excel-worksheet/)
-   - [Get MinColumn from Excel Worksheet](/cells/ar/get-mincolumn-from-excel-worksheet/)
-   - [Get MinDataColumn from Excel Worksheet](/cells/ar/get-mindatacolumn-from-excel-worksheet/)
+   - [احصل على بيانات الخلية من ورقة عمل](/cells/ar/get-cell-data-from-a-worksheet/)
+   - [احصل على الخلية الأولى من ورقة عمل Excel](/cells/ar/get-first-cell-from-excel-worksheet/)
+   - [احصل على الخلية الأخيرة من ورقة عمل Excel](/cells/ar/get-last-cell-of-excel-worksheet/)
+   - [احصل على MaxRow من ورقة عمل Excel](/cells/ar/get-maxrow-from-excel-worksheet/)
+   - [احصل على MaxDataRow من ورقة عمل Excel](/cells/ar/get-maxdatarow-from-excel-worksheet/)
+   - [احصل على MaxColumn من ورقة عمل Excel](/cells/ar/get-maxcolumn-from-excel-worksheet/)
+   - [احصل على MaxDataColumn من ورقة عمل Excel](/cells/ar/get-maxdatacolumn-from-excel-worksheet/)
+   - [احصل على MinRow من ورقة عمل Excel](/cells/ar/get-minrow-from-excel-worksheet/)
+   - [احصل على MinDataRow من ورقة عمل Excel](/cells/ar/get-mindatarow-from-excel-worksheet/)
+   - [احصل على MinColumn من ورقة عمل Excel](/cells/ar/get-mincolumn-from-excel-worksheet/)
+   - [احصل على MinDataColumn من ورقة عمل Excel](/cells/ar/get-mindatacolumn-from-excel-worksheet/)

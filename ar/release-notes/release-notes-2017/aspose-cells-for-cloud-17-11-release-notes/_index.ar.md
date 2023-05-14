@@ -1,23 +1,23 @@
 ﻿---
-title: Aspose.Cells Cloud 17.11 Release Note
+title: Aspose.Cells Cloud 17.11 ملاحظات إصدار
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/aspose-cells-cloud-17-11-release-notes/
 aliases: [/aspose-cells-for-cloud-17-11-release-notes/]
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 10
 ---
 {{% alert color="primary" %}} 
 
-This page contains release notes for [Aspose.Cells Cloud 17.11](https://apireference.aspose.cloud/cells/)
+ تحتوي هذه الصفحة على ملاحظات الإصدار لـ[Aspose.Cells سحابة 17.11.2007](https://apireference.aspose.cloud/cells/)
 
 {{% /alert %}} 
-## **Full List of Issues Covering all Changes in this Release**
+## **قائمة كاملة بالمشكلات التي تغطي كافة التغييرات في هذا الإصدار**
 
-|**Key**|**Summary**|**Category**|
+|**مفتاح**|**ملخص**|**فئة**|
 |:- |:- |:- |
-|CELLSCLOUD-10111|Support to [Get Chart Title](https://apireference.aspose.cloud/cells/#!/CellsCharts/CellsCharts_GetWorksheetChartTitle)|New Feature|
-|CELLSCLOUD-10106 |Support worksheet operates in Task API |New Feature|
-|CELLSCLOUD-10107|` `Fixed evaluation information|Enhancement |
-|CELLSCLOUD-10105|Fixed the HTTP Status Code of [Getting Worksheet Chart Legend](https://apireference.aspose.cloud/cells/#!/CellsCharts/CellsCharts_GetWorksheetChartLegend) API|Enhancement|
+|CELLSCLOUD-10111| دعم ل[الحصول على عنوان المخطط](https://apireference.aspose.cloud/cells/#!/CellsCharts/CellsCharts_GetWorksheetChartTitle)|ميزة جديدة|
+|CELLSCLOUD-10106 | تعمل ورقة عمل الدعم في المهمة API|ميزة جديدة|
+|CELLSCLOUD-10107|معلومات التقييم الثابتة| التعزيز|
+|CELLSCLOUD-10105| تم إصلاح رمز حالة HTTP الخاص بـ[الحصول على وسيلة إيضاح مخطط ورقة العمل](https://apireference.aspose.cloud/cells/#!/CellsCharts/CellsCharts_GetWorksheetChartLegend) API|التعزيز|
 

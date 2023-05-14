@@ -1,13 +1,13 @@
 ﻿---
-title: Merg
+title: ميرغ
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/merge/
 keywords: Working with merger on an Excel file
-description: Aspose.Cells Cloud REST API support working with merger on an Excel file. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift
+description: Aspose.Cells Cloud REST API دعم العمل مع الدمج في ملف Excel. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
 weight: 32
 ---
-## Working with merger on an Excel file.
+## العمل مع الدمج على ملف Excel.
 
-- [How to merge multi Excel files into an Excel file.](/cells/ar/merge/multi-files/)
-- [How to merge an Excel Workbooks into other Excel file.](/cells/ar/workbook/merge/)
+- [كيفية دمج ملفات Excel متعددة في ملف Excel.](/cells/ar/merge/multi-files/)
+- [كيفية دمج Excel مصنفات في ملف Excel آخر.](/cells/ar/workbook/merge/)

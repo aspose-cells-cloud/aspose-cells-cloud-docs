@@ -1,22 +1,22 @@
 ﻿---
-title: Set the Style of the Rang
+title: اضبط نمط النطاق
 second_title: Aspose.Cells Cloud Documen
-linktitle: Set styl
+linktitle: ضبط الاسلوب
 type: docs
 url: /ar/ranges/update/style/
 aliases: [/set-the-style-of-the-range/]
 keywords: Set range style on an Excel workshee
-description: Aspose.Cells Cloud REST API support setting range style on an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift
+description: Aspose.Cells Cloud REST API يدعم إعداد نمط النطاق على ورقة عمل Excel. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
 weight: 70
 ---
-## **Introduction**
-This example allows you to set the style of the range, using Aspose.Cells Cloud API in your applications. You can use our REST API with any language: .NET, Java, PHP, Ruby, Rails, Python, jQuery and many more.
-## **API Information**
+## **مقدمة**
+يتيح لك هذا المثال ضبط نمط النطاق باستخدام Aspose.Cells Cloud API في تطبيقاتك. يمكنك استخدام REST API الخاص بنا بأي لغة: .NET ، Java ، PHP ، Ruby ، Rails ، Python ، jQuery وغيرها الكثير.
+## **API المعلومات**
 
-|**API**|**Type**|**Description**|**Resource Link**|
+|**API**|**يكتب**|**وصف**|**رابط الموارد**|
 |:- |:- |:- |:- |
-|/cells/{name}/worksheets/{sheetName}/ranges/style|POST|Set the cell style of a named range|[PostWorksheetCellsRangeStyle](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeStyle)|
-### **cURL Example**
+|/ الخلايا / {name} / أوراق العمل / {sheetName} / النطاقات / النمط|بريد|عيّن نمط الخلية لنطاق مسمى|[PostWorksheetCellsRangeStyle](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeStyle)|
+### **cURL مثال**
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
@@ -46,9 +46,9 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ra
 {{< /tab >}}
 
 {{< /tabs >}}
-## **SDK Source**
-The Aspose.Cells Cloud SDKs can be downloaded from the following page: [Available SDKs](/cells/ar/available-sdks/)
-### **SDK Examples**
+## **مصدر SDK**
+يمكن تنزيل Aspose.Cells Cloud SDKs من الصفحة التالية:[مجموعات SDK المتوفرة](/cells/ar/available-sdks/)
+### **أمثلة SDK**
 {{< tabs tabTotal="4" tabID="4" tabName1="PHP" tabName2="Ruby" tabName3="Objective C" tabName4="Go" >}}
 
 {{< tab tabNum="1" >}}

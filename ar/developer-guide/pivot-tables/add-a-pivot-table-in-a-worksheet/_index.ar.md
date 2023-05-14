@@ -1,15 +1,15 @@
 ﻿---
-title: Add a pivot table in an Excel workshee
+title: أضف جدول محوري في Excel Workhee
 second_title: Aspose.Cells Cloud Documen
-linktitle: Add
+linktitle: يضيف
 type: docs
 url: /ar/pivot-tables/add/
 aliases: [/add-a-pivot-table-in-a-worksheet/]
 keywords: Add a pivot table in an Excel worksheet
-description: Aspose.Cells Cloud REST API support adding a  pivot table in an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift
+description: Aspose.Cells Cloud REST API يدعم إضافة جدول محوري في ورقة عمل Excel. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
 weight: 30
 ---
-This REST API indicates to `add` a pivot table into worksheet.
+يشير هذا REST API إلى `add` جدول محوري في ورقة عمل.
  
 ## RSET API
  
@@ -18,23 +18,23 @@ This REST API indicates to `add` a pivot table into worksheet.
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables
  
 ```
-The request parameters are: 
+ معلمات الطلب هي:
  
-|Parameter Name |Type |Path/Query String/HTTPBody |Description|
+| اسم المعلمة| يكتب| المسار / سلسلة الاستعلام / HTTPBody|وصف|
 |:- |:- |:- |:- |
-|name |string |path |Document name. |
-|sheetName |string |path |The worksheet name. |
-|request ||body |CreatePivotTableRequest dto in request body. |
-|folder |string |query |Document's folder. |
-|storageName |string |query |storage name. |
-|sourceData |string |query |The data for the new PivotTable cache. |
-|destCellName |string |query |The cell in the upper-left corner of the PivotTable report's destination range. |
-|tableName |string |query |The name of the new PivotTable report. |
-|useSameSource |boolean |query |Indicates whether using same data source when another existing pivot table has used this data source. If the property is true, it will save memory. |
+| اسم| خيط| طريق| اسم الملف.|
+| اسم الورقة| خيط| طريق| اسم ورقة العمل.|
+| طلب|| جسم| CreatePivotTableRequest dto في نص الطلب.|
+| مجلد| خيط| استفسار| مجلد المستند.|
+| اسم التخزين| خيط| استفسار| اسم التخزين.|
+| مصدر معلومات| خيط| استفسار| بيانات ذاكرة التخزين المؤقت الجديدة لـ PivotTable.|
+| destCellName| خيط| استفسار| الخلية الموجودة في الزاوية العلوية اليسرى من النطاق الوجهة لتقرير PivotTable.|
+| اسم الطاولة| خيط| استفسار| اسم تقرير PivotTable الجديد.|
+| استخدم نفس المصدر| قيمة منطقية| استفسار| يشير إلى ما إذا كان يتم استخدام نفس مصدر البيانات عند استخدام جدول محوري آخر لمصدر البيانات هذا. إذا كانت الخاصية صحيحة ، فسيتم حفظ الذاكرة.|
  
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PivotTables/PutWorksheetPivotTable) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+ ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/PivotTables/PutWorksheetPivotTable) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
  
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
  
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
  
@@ -67,11 +67,11 @@ curl -v  "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet
  
 {{< /tabs >}}
  
-## Cloud SDK Family
+## عائلة Cloud SDK
  
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. يعتني SDK بالتفاصيل منخفضة المستوى ويتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة من Aspose.Cells Cloud SDKs.
  
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام حزم SDK متنوعة:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 

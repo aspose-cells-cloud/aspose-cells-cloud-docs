@@ -1,12 +1,12 @@
 ﻿---
-title: Storag
+title: ستوراغ
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/docker/storage/
-description: How to set storage position about Aspose.Cells Cloud for Docker
+description: كيفية تعيين موضع التخزين حول Aspose.Cells Cloud لـ Docker
 weight: 30
 ---
-## Default Storage Configuration  ##
+##  تكوين التخزين الافتراضي ##
 
 {{< tabs tabTotal="2" tabID="1" tabName1="windows" tabName2="linux" >}}
 
@@ -45,10 +45,10 @@ weight: 30
 
 {{< /tabs >}}
 
-## Default Position  ##
+##  الوظيفة الافتراضية ##
 
 
-- **windows**
+- **شبابيك**
 
 ```powershell
 
@@ -56,7 +56,7 @@ c:\app\storageResource.json
 
 ```
 
-- **linux**
+- **لينكس**
 
 ```linux
 
@@ -65,9 +65,9 @@ c:\app\storageResource.json
 
 ```
 
-## Custom Storage Configuration  ##
+##  تكوين التخزين المخصص ##
 
-Need to re-specify the storage profile for Aspose.Cells Cloud image file when the customer need specifies storage folder.
+تحتاج إلى إعادة تحديد ملف تعريف التخزين لملف صورة السحابة Aspose.Cells عندما يحتاج العميل إلى تحديد مجلد التخزين.
 
 ``` powershell
 
@@ -75,5 +75,5 @@ docker run  -d  -v c:/data:c:/data  -p 47900:5000  -e LicensePublicKey=yourLicen
 
 ```
 
-**Reference Document** : 
-  - [Docker Run]( https://docs.docker.com/engine/reference/commandline/run/)
+**وثيقة مرجعية** : 
+  - [تشغيل عامل ميناء]( https://docs.docker.com/engine/reference/commandline/run/)

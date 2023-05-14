@@ -1,20 +1,20 @@
 ﻿---
-title: Aspose.Cells Cloud  23.2 Release Notes
+title: Aspose.Cells Cloud 23.2 ملاحظات الإصدار
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/aspose-cells-cloud-23-2-release-notes/
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 20
 ---
 {{% alert color="primary" %}} 
-This page contains release notes for Aspose.Cells Cloud 23.2
+تحتوي هذه الصفحة على ملاحظات إصدار Aspose.Cells Cloud 23.2
 '{{% /alert %}} '
-## **Complete list of issues and enhancements covered in this Release**
+## **قائمة كاملة بالمشكلات والتحسينات التي تم تناولها في هذا الإصدار**
 
-|**ID**|**Summary**|**Category**|
+|**بطاقة تعريف**|**ملخص**|**فئة**|
 |:- |:- |:- |
-|37694 |Aspose.Cells Cloud Docker Container Swagger UI Path |
-|37819 |Fixed form data about api on swagger ui of Cells Cloud Docker. |
-|37820 |Removed authorization from  swagger ui of Cells Cloud Docker. |
-|37916 |Optimize loading file. |
-|37917 |Optimize replace API. |
+|37694 | Aspose.Cells Cloud Docker Container Swagger UI Path|
+|37819 | بيانات نموذج ثابتة حول api على واجهة مستخدم swagger لـ Cells Cloud Docker.|
+|37820 | تمت إزالة التفويض من واجهة المستخدم المميزة لـ Cells Cloud Docker.|
+|37916 | تحسين ملف التحميل.|
+|37917 | تحسين استبدال API.|

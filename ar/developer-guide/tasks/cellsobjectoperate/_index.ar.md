@@ -1,118 +1,118 @@
 ﻿---
-title: Working with CellsObjectOperate Tas
+title: العمل مع CellsObjectOperate Tas
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/tasks/cells-object-operate/
 aliases: [/working-with-cellsobjectoperate-task/]
-description: "Cells.Cloud API for Excel operate: cells object  operate task"
+description: "Cells.Cloud API لـ Excel تعمل: مهمة تشغيل كائن الخلايا"
 weight: 20
 ---
-This REST API operate cells object  `task`.
+يعمل هذا REST API على كائن الخلايا `task`.
 
 **OperateObject**
 
-|Parameter Name|Type|Description|
+|اسم المعلمة|يكتب|وصف|
 |:- |:- |:- |
-|OperateObjectType |string |Workbook/Worksheet/PageSetup/Cells/Chart/Shape/ListObject/PivotTable/WorkbookSettings/PageBreak |
-|OperateObjectPosition |Object ||
+| OperateObjectType| خيط| Workbook / Worksheet / PageSetup / Cells / Chart / Shape / ListObject / PivotTable / WorkbookSettings / PageBreak|
+| OperateObjectPosition| هدف||
 
 **OperateObjectPosition**
 
-|Parameter Name|Type|Description|
+|اسم المعلمة|يكتب|وصف|
 |:- |:- |:- |
-|Workbook |Object ||
-|SheetName |string ||
-|ChartIndex |integer ||
-|ShapeIndex |integer ||
-|CellName |string ||
-|ListObjectIndex |integer ||
+| دفتر العمل| هدف||
+| اسم الورقة| خيط||
+| فهرس الرسم البياني| عدد صحيح||
+| الشكل| عدد صحيح||
+| اسم الخلية| خيط||
+| ListObjectIndex| عدد صحيح||
 
 
-**ChartOperateParameter**
+**مخطط التشغيلالمعلمة**
 
-|Parameter Name|Type|Description|
+|اسم المعلمة|يكتب|وصف|
 |:- |:- |:- |
-|ChartIndex |integer ||
-|ChartType |string ||
-|UpperLeftRow |integer ||
-|UpperLeftColumn |integer ||
-|LowerRightRow |integer ||
-|LowerRightColumn |integer ||
-|Area |string ||
-|IsVertical |string |true/false |
-|CategoryData |string ||
-|IsAutoGetSerialName |string |true/false |
-|Area |Title ||
+| فهرس الرسم البياني| عدد صحيح||
+| نوع التخطيط| خيط||
+| UpperLeftRow| عدد صحيح||
+|UpperLeftColumn| عدد صحيح||
+| LowerRightRow| عدد صحيح||
+| LowerRightColumn| عدد صحيح||
+| منطقة| خيط||
+| عمودي| خيط| خطأ صحيح|
+| فئة البيانات| خيط||
+| IsAutoGetSerialName| خيط| خطأ صحيح|
+| منطقة| عنوان||
 
 **ListObjectOperateParameter** 
 
-|Parameter Name|Type|Description|
+|اسم المعلمة|يكتب|وصف|
 |:- |:- |:- |
-|ListObject |Object ||
+| ListObject| هدف||
 
 **PageBreakOperateParameter**
 
-|Parameter Name|Type|Description|
+|اسم المعلمة|يكتب|وصف|
 |:- |:- |:- |
-|PageBreakType |string ||
-|Index |Index ||
-|Row |integer ||
-|Column |integer ||
-|StartIndex |integer ||
-|EndIndex |integer ||
+| PageBreakType| خيط||
+| فِهرِس| فِهرِس||
+| صف| عدد صحيح||
+| عمود| عدد صحيح||
+| فهرس البداية| عدد صحيح||
+| EndIndex| عدد صحيح||
 
 
 **PageSetupOperateParameter**
 
-|Parameter Name|Type|Description|
+|اسم المعلمة|يكتب|وصف|
 |:- |:- |:- |
-|PageSetup |Object ||
+| اعداد الصفحة| هدف||
 
 
 **PivotTableOperateParameter**
 
-|Parameter Name|Type|Description|
+|اسم المعلمة|يكتب|وصف|
 |:- |:- |:- |
-|DestCellName |string ||
-|SourceData |string ||
-|TableName |string ||
-|UseSameSource |string |true/false |
-|PivotTableIndex |integer ||
-|PivotFieldRows |integer[]||
-|PivotFieldColumns |integer[]||
-|PivotFieldData |integer[]||
+| DestCellName| خيط||
+| مصدر معلومات| خيط||
+| اسم الطاولة| خيط||
+| استخدم نفس المصدر| خيط| خطأ صحيح|
+| PivotTableIndex| عدد صحيح||
+| PivotFieldRows|عدد صحيح[]||
+| PivotFieldColumns|عدد صحيح[]||
+|PivotFieldData|عدد صحيح[]||
 
 
 **ShapeOperateParameter**
 
 
-|Parameter Name|Type|Description|
+|اسم المعلمة|يكتب|وصف|
 |:- |:- |:- |
-|Shape |Object ||
+| شكل| هدف||
 
 
 **WorkbookSettingsOperateParameter**
 
 
-|Parameter Name|Type|Description|
+|اسم المعلمة|يكتب|وصف|
 |:- |:- |:- |
-|WorkbookSettings |Object ||
+| إعدادات المصنف| هدف||
 
-**WorksheetOperateParameter**
+**ورقة العملOperateParameter**
 
 
-|Parameter Name|Type|Description|
+|اسم المعلمة|يكتب|وصف|
 |:- |:- |:- |
-|Name |string ||
-|SheetType |string ||
-|NewName |string ||
-|MovingRequest |Object ||
+| اسم| خيط||
+| نوع الورقة| خيط||
+| اسم جديد| خيط||
+| طلب متحرك| هدف||
 
 ## REST API
 
-|**API**|**Type**|**Description**|**Resource Link**|
+|**API**|**يكتب**|**وصف**|**رابط الموارد**|
 |:- |:- |:- |:- |
-|/cells/task/runtask|POST|Run Task|[PostRunTask](https://apireference.aspose.cloud/cells/#/Task/PostRunTask)|
+|/ خلايا / مهمة / runtask|بريد|تشغيل المهمة|[PostRunTask](https://apireference.aspose.cloud/cells/#/Task/PostRunTask)|
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. 
+ ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
 

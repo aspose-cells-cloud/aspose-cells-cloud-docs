@@ -1,29 +1,29 @@
 ﻿---
-title: Aspose.Cells Cloud 17.2 Release Note
+title: Aspose.Cells Cloud 17.2 ملاحظات الإصدار
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/aspose-cells-cloud-17-2-release-notes/
 aliases: [/aspose-cells-for-cloud-17-02-0-release-notes/]
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 90
 ---
 {{% alert color="primary" %}} 
 
-This page contains release notes for [Aspose.Cells Cloud 17.2](https://downloads.aspose.com/cells/cloud/new-releases/aspose.cells-for-cloud-17.02.0/).
+ تحتوي هذه الصفحة على ملاحظات الإصدار لـ[Aspose.Cells كلاود 17.2.2007](https://downloads.aspose.com/cells/cloud/new-releases/aspose.cells-for-cloud-17.02.0/).
 
 {{% /alert %}} 
 
-|**Key**|**Summary**|**Category**|
+|**مفتاح**|**ملخص**|**فئة**|
 |:- |:- |:- |
-|CELLSCLOUD-10011|Support Pivot Table Filters|New Feature|
-|CELLSCLOUD-10019|Support Pivot Table operation in Task processing|New Feature|
-|CELLSCLOUD-10022|Add recalculate parameter for hiding pivot field item|New Feature|
-|CELLSCLOUD-10024|List object - Convert to range|New Feature|
-|CELLSCLOUD-10025|List object - Summarize with Pivot Table|New Feature|
-|CELLSCLOUD-10026|Move Pivot Table|New Feature|
-|CELLSCLOUD-10027|Move Pivot Table field|New Feature|
-## **Working with Pivot Filters**
-The following sample code illustrates how to work with pivot filters using Aspose.Cells for Cloud.
+|CELLSCLOUD-10011|دعم عوامل تصفية الجدول المحوري|ميزة جديدة|
+|CELLSCLOUD-10019|دعم عملية الجدول المحوري في معالجة المهام|ميزة جديدة|
+|CELLSCLOUD-10022|أضف معلمة إعادة الحساب لإخفاء عنصر الحقل المحوري|ميزة جديدة|
+|CELLSCLOUD-10024|كائن القائمة - تحويل إلى نطاق|ميزة جديدة|
+|CELLSCLOUD-10025|كائن القائمة - التلخيص باستخدام Pivot Table|ميزة جديدة|
+|CELLSCLOUD-10026|تحريك الجدول المحوري|ميزة جديدة|
+|CELLSCLOUD-10027|نقل حقل الجدول المحوري|ميزة جديدة|
+## **العمل مع عوامل التصفية المحورية**
+يوضح نموذج الكود التالي كيفية العمل مع المرشحات المحورية باستخدام Aspose.Cells لـ Cloud.
 
 ```java
 
@@ -164,8 +164,8 @@ public void Run_PivotTable_PivotFilter()
 }
 
 ```
-## **Working with Pivot Table using CellsObjectOperate Task**
-The following sample code illustrates how to work with Pivot Table using CellsObjectOperate Task object with Aspose.Cells for Cloud.
+## **العمل مع Pivot Table باستخدام مهمة CellsObjectOperate**
+يوضح نموذج التعليمات البرمجية التالي كيفية العمل مع Pivot Table باستخدام كائن مهمة CellsObjectOperate مع Aspose.Cells لـ Cloud.
 
 ```java
 
@@ -806,8 +806,8 @@ public void Run_PivotTable_TaskPivot()
 }
 
 ```
-## **Recalculate Pivot Table after Hiding Pivot Field Item**
-The following sample code illustrates how to recalculate Pivot Table after hiding Pivot Field Item using Aspose.Cells for Cloud.
+## **أعد حساب الجدول المحوري بعد إخفاء عنصر الحقل المحوري**
+يوضح نموذج التعليمات البرمجية التالي كيفية إعادة حساب Pivot Table بعد إخفاء عنصر حقل Pivot باستخدام Aspose.Cells لـ Cloud.
 
 ```java
 
@@ -899,8 +899,8 @@ public void Run_PivotTable_NeedReCalculate()
 
 ```
 
-## **Convert List Object or Table to Range**
-The following sample code illustrates how to convert List Object or Table to Range using Aspose.Cells for Cloud.
+## **تحويل كائن القائمة أو الجدول إلى نطاق**
+يوضح نموذج التعليمات البرمجية التالي كيفية تحويل كائن القائمة أو الجدول إلى نطاق باستخدام Aspose.Cells لـ Cloud.
 
 ```java
 
@@ -979,8 +979,8 @@ public void Run_ListObject_ConvertToRange()
     }
 
 ```
-## **Create new Pivot Table with List Object as Source Data**
-The following sample code illustrates how to create new Pivot Table with List Object as Source Data using Aspose.Cells for Cloud.
+## **قم بإنشاء Pivot Table جديد باستخدام List Object كبيانات مصدر**
+يوضح نموذج التعليمات البرمجية التالي كيفية إنشاء Pivot Table جديد مع List Object كبيانات مصدر باستخدام Aspose.Cells لـ Cloud.
 
 ```java
 
@@ -1093,11 +1093,11 @@ public void Run_ListObject_SummarizeWithPivotTable()
 }
 
 ```
-## **Usage Examples**
-Please check the list of help topics added in the Aspose.Cells Wiki docs: 
+## **أمثلة على الاستخدام**
+يرجى التحقق من قائمة مواضيع المساعدة المضافة في Aspose.Cells مستندات Wiki:
 
-1. [Working with Pivot Filters](/cells/ar/working-with-pivot-tables/)
-1. [Working with Pivot Table using CellsObjectOperate Task](/cells/ar/working-with-pivot-table-using-cellsobjectoperate-task/)
-1. [Recalculate Pivot Table after Hiding Pivot Field Item](/cells/ar/hide-pivot-field-item/)
-1. [Convert List Object or Table to Range](/cells/ar/convert-list-object-or-table-to-range/)
-1. [Create new Pivot Table with List Object as Source Data](/cells/ar/add-a-pivot-table-in-a-worksheet/)
+1. [العمل مع عوامل التصفية المحورية](/cells/ar/working-with-pivot-tables/)
+1. [العمل مع Pivot Table باستخدام مهمة CellsObjectOperate](/cells/ar/working-with-pivot-table-using-cellsobjectoperate-task/)
+1. [أعد حساب الجدول المحوري بعد إخفاء عنصر الحقل المحوري](/cells/ar/hide-pivot-field-item/)
+1. [تحويل كائن القائمة أو الجدول إلى نطاق](/cells/ar/convert-list-object-or-table-to-range/)
+1. [قم بإنشاء Pivot Table جديد باستخدام List Object كبيانات مصدر](/cells/ar/add-a-pivot-table-in-a-worksheet/)

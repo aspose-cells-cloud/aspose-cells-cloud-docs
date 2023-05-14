@@ -1,23 +1,23 @@
 ﻿---
-title: Aspose.Cells Cloud 17.6 Release Note
+title: Aspose.Cells Cloud 17.6 ملاحظات الإصدار
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/aspose-cells-cloud-17-6-release-notes/
 aliases: [/aspose-cells-for-cloud-17-6-release-notes/]
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 60
 ---
 {{% alert color="primary" %}} 
 
-The page contains release notes for Aspose.Cells Cloud 17.6
+تحتوي الصفحة على ملاحظات إصدار Aspose.Cells Cloud 17.6
 
 {{% /alert %}} 
-## **Full List of Issues Covering all Changes in this Release**
+## **قائمة كاملة بالمشكلات التي تغطي كافة التغييرات في هذا الإصدار**
 
-|**Key**|**Summary**|**Category**|
+|**مفتاح**|**ملخص**|**فئة**|
 |:- |:- |:- |
-|CELLSCLOUD-10053|Filter data by using an **AutoFilter** API.|New Feature|
-|CELLSCLOUD-10054|New resource parameters are added in **Calculate Formula** API.|Enhancement|
+|CELLSCLOUD-10053| تصفية البيانات باستخدام ملف**فلتر السيارات** API.|ميزة جديدة|
+|CELLSCLOUD-10054| تمت إضافة معلمات الموارد الجديدة في**احسب الصيغة** API.|التعزيز|
 
 
 

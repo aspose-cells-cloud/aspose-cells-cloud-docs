@@ -1,24 +1,24 @@
 ﻿---
-title: Aspose.Cells Cloud 20.3 Release Note
+title: Aspose.Cells Cloud 20.3 ملاحظات الإصدار
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/aspose-cells-cloud-20-3-release-notes/
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 60
 ---
 {{% alert color="primary" %}} 
 
-This page contains release notes for Aspose.Cells Cloud 20.3
+تحتوي هذه الصفحة على ملاحظات إصدار Aspose.Cells Cloud 20.3
 
 {{% /alert %}} 
-## **Complete list of new features and enhancements covered in this Release**
+## **قائمة كاملة بالميزات والتحسينات الجديدة المشمولة في هذا الإصدار**
 
-|**Key**|**Summary**|**Category**|
+|**مفتاح**|**ملخص**|**فئة**|
 |:- |:- |:- |
-|CELLSCLOUD-10280|Support to export area or page of sheet to JPEG|New Feature|
-|CELLSCLOUD-10288|Support to add background for workbook|New Feature|
-|CELLSCLOUD-10285|Update Aspose.Cells.DLL to 20.2.4 for Aspose.Cells Cloud|Improvement |
-|CELLSCLOUD-10286|Enhancement for splitting workbook|Improvement|
-|CELLSCLOUD-10287|Enhancement for create workbook|Improvement|
-|CELLSCLOUD-10290|Upgrade Dynabic Products for Aspose.Cells Cloud|Improvement|
+|CELLSCLOUD-10280|دعم لتصدير منطقة أو صفحة من الورقة إلى JPEG|ميزة جديدة|
+|CELLSCLOUD-10288|دعم لإضافة خلفية عن المصنف|ميزة جديدة|
+|CELLSCLOUD-10285|تحديث Aspose.Cells.DLL إلى 20.2.4 لـ Aspose.Cells Cloud|تحسين|
+|CELLSCLOUD-10286|تحسين لتقسيم المصنف|تحسين|
+|CELLSCLOUD-10287|تحسين لإنشاء مصنف|تحسين|
+|CELLSCLOUD-10290|قم بترقية منتجات Dynabic لـ Aspose.Cells Cloud|تحسين|
 

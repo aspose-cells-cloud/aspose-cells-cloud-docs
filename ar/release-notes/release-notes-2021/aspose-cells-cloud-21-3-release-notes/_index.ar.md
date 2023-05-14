@@ -1,21 +1,21 @@
 ﻿---
-title: Aspose.Cells Cloud 21.3 Release Note
+title: Aspose.Cells Cloud 21.3 - ملاحظات الإصدار
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/aspose-cells-cloud-21-3-release-notes/
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 70
 ---
 {{% alert color="primary" %}} 
 
-This page contains release notes for Aspose.Cells Cloud 21.3
+تحتوي هذه الصفحة على ملاحظات إصدار Aspose.Cells Cloud 21.3
 
 {{% /alert %}} 
-## **Complete list of issues and enhancements covered in this Release**
+## **قائمة كاملة بالمشكلات والتحسينات التي تم تناولها في هذا الإصدار**
 
-|**Key**|**Summary**|**Category**|
+|**مفتاح**|**ملخص**|**فئة**|
 |:- |:- |:- |
-|CELLSCLOUD-10359 |Improve the API of save as.|Improvement   |
-|CELLSCLOUD-10360 |Getting range returns same result every time|Bug |
-|CELLSCLOUD-10361 |Search text returns error link.|Bug  |
-|CELLSCLOUD-10362 |Upgrade Aspose.Cells.DLL to 21.3 version.|Improvement |
+|CELLSCLOUD-10359 |تحسين API حفظ باسم.| تحسين|
+|CELLSCLOUD-10360 |الحصول على النطاق يعيد نفس النتيجة في كل مرة| حشرة|
+|CELLSCLOUD-10361 |يُرجع نص البحث ارتباط الخطأ.| حشرة|
+|CELLSCLOUD-10362 |قم بترقية Aspose.Cells.DLL إلى إصدار 21.3.| تحسين|

@@ -1,17 +1,17 @@
 ﻿---
-title: How to update range content from an Excel workshee
+title: كيفية تحديث محتوى النطاق من Excel workhe
 second_title: Aspose.Cells Cloud Documen
-linktitle: Updat
+linktitle: تحديث
 type: docs
 url: /ar/ranges/update/
 keywords: How to update range content from an Excel worksheet
-description: Aspose.Cells Cloud REST API support updating range content from an Excel Worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift
+description: Aspose.Cells Cloud REST API يدعم تحديث محتوى النطاق من ورقة عمل Excel. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
 weight: 20
 ---
-## Working with updating range content on an Excel worksheet.
+## العمل مع تحديث محتوى النطاق في ورقة عمل Excel.
 
 
-- [How to set style of range on an Excel worksheet.](/cells/ar/ranges/update/style/) 
-- [How to set values of range on an Excel worksheet.](/cells/ar/ranges/update/values/) 
-- [How to set row heights of range on an Excel worksheet.](/cells/ar/ranges/update/row-height/) 
-- [How to set column widths of range on an Excel worksheet.](/cells/ar/ranges/update/column-width/) 
+- [كيفية تعيين نمط النطاق في ورقة عمل Excel.](/cells/ar/ranges/update/style/) 
+- [كيفية تعيين قيم النطاق في ورقة عمل Excel.](/cells/ar/ranges/update/values/) 
+- [كيفية تعيين ارتفاعات الصفوف في ورقة عمل Excel.](/cells/ar/ranges/update/row-height/) 
+- [كيفية تعيين نطاق عرض الأعمدة في ورقة عمل Excel.](/cells/ar/ranges/update/column-width/) 

@@ -1,21 +1,21 @@
 ﻿---
-title: Aspose.Cells Cloud 21.10 Release Note
+title: Aspose.Cells Cloud 21.10 مذكرة إصدار
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/aspose-cells-cloud-21-10-release-notes/
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 12
 ---
 {{% alert color="primary" %}} 
-This page contains release notes for Aspose.Cells Cloud 21.10
+تحتوي هذه الصفحة على ملاحظات إصدار Aspose.Cells Cloud 21.10
 {{% /alert %}} 
-## **Complete list of issues and enhancements covered in this Release**
-|**ID**|**Summary**|**Category**|
+## **قائمة كاملة بالمشكلات والتحسينات التي تم تناولها في هذا الإصدار**
+|**بطاقة تعريف**|**ملخص**|**فئة**|
 |:- |:- |:- |
-|23034 |Improvement for put workbook background Api of Aspose.Cells Cloud.|Improvement |
-|23035 |Improvement for put worksheet background Api of Aspose.Cells Cloud.|Improvement |
-|23380 |Improvement for Aspose.Cells Cloud load file function.|Improvement |
-|23624 |Improvement for smart marker Api for Aspose.Cells Cloud.|Improvement |
-|23680 |Support delete multiple worksheets in a single call.|New Feature |
-|23732 |Aspose.Cells Cloud supports batch convert excel files.|New Feature |
-|23957 |Fix save as mhtml excption after upgrade Aspose.Cells.DLL to 21.10 version.|Bug |
+|23034 |تحسين وضع خلفية المصنف Api لـ Aspose.Cells Cloud.| تحسين|
+|23035 |تحسين وضع خلفية ورقة العمل Api لـ Aspose.Cells Cloud.| تحسين|
+|23380 |تحسين Aspose.Cells وظيفة تحميل الملفات السحابية.| تحسين|
+|23624 |تحسين للعلامة الذكية Api لـ Aspose.Cells Cloud.| تحسين|
+|23680 |دعم حذف أوراق عمل متعددة في مكالمة واحدة.| ميزة جديدة|
+|23732 |Aspose.Cells سحابة تدعم تحويل ملفات اكسل دفعة.| ميزة جديدة|
+|23957 |إصلاح الحفظ كإعفاء mhtml بعد الترقية Aspose.Cells.DLL إلى إصدار 21.10.| حشرة|

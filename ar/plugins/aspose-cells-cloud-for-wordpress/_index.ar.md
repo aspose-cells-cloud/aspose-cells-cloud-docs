@@ -1,12 +1,12 @@
 ﻿---
-title: Aspose.Cells Cloud for WordPres
+title: Aspose.Cells سحابة لـ WordPres
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/aspose-cells-cloud-for-wordpress/
-description: Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on
+description: Aspose.Cells Cloud يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 10
 ---
-This section has following topics:
+يحتوي هذا القسم على المواضيع التالية:
 
-- [Aspose.Cells Forms](/cells/ar/aspose-cells-forms/)
-- [Aspose.Cells Cloud for WordPress - FAQs](/cells/ar/aspose-cells-cloud-for-wordpress-faqs/)
+- [Aspose.Cells النماذج](/cells/ar/aspose-cells-forms/)
+- [Aspose.Cells Cloud for WordPress - أسئلة وأجوبة](/cells/ar/aspose-cells-cloud-for-wordpress-faqs/)
