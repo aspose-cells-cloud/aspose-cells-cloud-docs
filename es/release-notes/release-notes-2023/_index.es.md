@@ -1,8 +1,0 @@
-﻿---
-title: Notas de la versión - 202
-second_title: Aspose.Cells Cloud Documen
-type: docs
-url: /es/release-notes-2023/
-description: Aspose.Cells La nube admite Excel para crear, convertir, fusionar, dividir, proteger, operación de objetos internos, etc.
-weight: 7
----
