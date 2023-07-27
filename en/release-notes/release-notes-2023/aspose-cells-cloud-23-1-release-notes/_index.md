@@ -15,4 +15,4 @@ This page contains release notes for Aspose.Cells Cloud 23.1
 |**ID**|**Summary**|**Category**|
 | :- | :- | :- |
 | 37366 | Optimize image data for DTO. | Improvement
-| 37367 | Fix the buf for PostCellCharacters method. | Bug
+| 37367 | Fix the bug for PostCellCharacters method. | Bug

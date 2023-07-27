@@ -11,6 +11,55 @@ description: "This page describes the most interesting new Aspose.Cells Cloud fe
 
 Welcome to what's new in Aspose.Cells Cloud docs. Use this page to quickly find the latest changes.
 
+## Aspose.Cells Cloud 23.7
+
+* Support to repair file. 
+* Optimize conversion functions.
+
+
+## Aspose.Cells Cloud 23.6
+
+* Support to batch lock multi-files. 
+* Support to batch unlock multi-files. 
+* Support to batch protect multi-files. 
+* Support to batch split multi-files. 
+* Fix put document property api. 
+
+
+## Aspose.Cells Cloud 23.5
+
+* Fix few methods are misspelled. 
+
+
+## Aspose.Cells Cloud 23.4
+
+* Support import and export XML data. 
+
+
+## Aspose.Cells Cloud 23.3
+
+* Optimize Hyperlink properties. 
+
+
+## Aspose.Cells Cloud 23.2
+
+* Optimize replace API. 
+* Optimize Swagger UI.
+
+
+
+
+## Aspose.Cells Cloud 23.1
+
+* Fix the bug for PostCellCharacters method. 
+
+
+
+## Aspose.Cells Cloud 22.12
+
+* Support chart axis operation. 
+
+
 ## Aspose.Cells Cloud 22.11
 
 * Add new api for convert to json. 
