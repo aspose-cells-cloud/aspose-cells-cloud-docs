@@ -64,7 +64,7 @@ using System.Collections.Generic;
 
 PutConvertWorkbookRequest request = new PutConvertWorkbookRequest();
 
-request.Format = "pdf"
+request.Format = "pdf";
 IDictionary<string, System.IO.Stream> mapFiles =new Dictionary<string, System.IO.Stream>(); 
 mapFiles.Add("Book1.xlsx", File.OpenRead(@"c:\testdata\Book1.xlsx"));
 mapFiles.Add("Book2.xlsx", File.OpenRead(@"c:\testdata\Book2.xlsx"));
@@ -84,7 +84,7 @@ using System.Collections.Generic;
 
 PutConvertWorkbookRequest request = new PutConvertWorkbookRequest();
 
-request.Format = "pdf"
+request.Format = "pdf";
 IDictionary<string, System.IO.Stream> mapFiles =new Dictionary<string, System.IO.Stream>(); 
 mapFiles.Add("Book1.xlsx", File.OpenRead(@"c:\testdata\Book1.xlsx"));
 mapFiles.Add("Book2.xlsx", File.OpenRead(@"c:\testdata\Book2.xlsx"));
