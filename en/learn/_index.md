@@ -2,7 +2,7 @@
 title: "Welcome To Learn Aspose.Cells Cloud"
 type: docs
 url: /learn-aspose-cells-cloud
-description: "Welcome To Learn Aspose.Cells Cloud."
+description: "Welcome to learn Aspose.Cells Cloud."
 weight: 10
 ---
 
