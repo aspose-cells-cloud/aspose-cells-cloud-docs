@@ -25,13 +25,13 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottable
 | nom| chaîne| chemin||
 | NomFeuille| chaîne| chemin||
 | indextablepivot| entier| chemin||
-| pivotFieldType| chaîne| mettre en doute||
-| fieldIndex| entier| mettre en doute||
-| index de l'élément| entier| mettre en doute||
-| estMasquer| booléen| mettre en doute||
-| besoin de recalculer| booléen| mettre en doute| FAUX|
-| dossier| chaîne| mettre en doute||
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| pivotFieldType| chaîne| requête||
+| fieldIndex| entier| requête||
+| index de l'élément| entier| requête||
+| estMasquer| booléen| requête||
+| besoin de recalculer| booléen| requête| FAUX|
+| dossier| chaîne| requête||
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/PivotTables/PostPivotTableFieldHideItem) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

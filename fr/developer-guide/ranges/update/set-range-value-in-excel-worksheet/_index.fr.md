@@ -25,12 +25,12 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/val
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| nom du classeur|
 | NomFeuille| chaîne| chemin| nom de la feuille de calcul|
-| valeur| chaîne| mettre en doute| Valeur d'entrée|
+| valeur| chaîne| requête| Valeur d'entrée|
 | gamme|| corps| plage dans la feuille de calcul|
-| est converti| booléen| mettre en doute| FAUX|
-| setStyle| booléen| mettre en doute| FAUX|
-| dossier| chaîne| mettre en doute| Dossier de classeur.|
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| est converti| booléen| requête| FAUX|
+| setStyle| booléen| requête| FAUX|
+| dossier| chaîne| requête| Dossier de classeur.|
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeValue) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

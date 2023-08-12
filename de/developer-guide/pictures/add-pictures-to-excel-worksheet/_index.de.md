@@ -1,15 +1,15 @@
 ﻿---
-title: Fügen Sie ein Bild in einer Excel-Datei hinzu
+title: Bild in einer Datei Excel hinzufügen
 second_title: Aspose.Cells Cloud Documen
 linktitle: Anzeige
 type: docs
 url: /de/pictures/add/
 aliases: [/add-pictures-to-excel-worksheet/]
 keywords: Add a picture in an Excel file
-description: Aspose.Cells Cloud REST API unterstützt das Hinzufügen eines Bildes in einer Excel-Datei. SDK unterstützt Arten von Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
+description: Aspose.Cells Cloud REST API unterstützt das Hinzufügen eines Bildes in einer Excel-Datei. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
 weight: 20
 ---
-Dieser REST API zeigt `add` ein neues Bild für ein Excel-Arbeitsblatt an.
+Dieser REST API zeigt `add` ein neues Bild für ein Excel Arbeitsblatt an.
  
 ## RSET API
  
@@ -22,20 +22,20 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
  
 | Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
 |:- |:- |:- |:- |
-| Name| Schnur| Weg|Der Name der Arbeitsmappe.|
-| Tabellenname| Schnur| Weg| Der Name des Arbeitsblatts.|
+| Name| Zeichenfolge| Weg|Der Name der Arbeitsmappe.|
+| Blattname| Zeichenfolge| Weg| Der Name des Arbeitsblatts.|
 | Bild|| Körper| Bildobjekt|
-| obereLinkeReihe| ganze Zahl| Anfrage|0 |
-| obereLinkeSpalte| ganze Zahl| Anfrage|0 |
-| untereRechteReihe| ganze Zahl| Anfrage|0 |
-| LowerRightColumn| ganze Zahl| Anfrage|0 |
-| BildPfad| Schnur| Anfrage| Der Bildpfad, falls nicht bereitgestellt, die Bilddaten werden im Anforderungshauptteil überprüft.|
-| Ordner| Schnur| Anfrage| Der Arbeitsmappenordner.|
-| Speichername| Schnur| Anfrage| Speichername.|
+| UpperLeftRow| ganze Zahl| Abfrage|0 |
+| UpperLeftColumn| ganze Zahl| Abfrage|0 |
+| untereRechteRow| ganze Zahl| Abfrage|0 |
+| LowerRightColumn| ganze Zahl| Abfrage|0 |
+| picturePath| Zeichenfolge| Abfrage| Der Bildpfad, falls nicht angegeben, werden die Bilddaten im Anforderungstext überprüft.|
+| Ordner| Zeichenfolge| Abfrage| Der Arbeitsmappenordner.|
+| Speichername| Zeichenfolge| Abfrage| Speichername.|
  
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Pictures/PutWorksheetAddPicture) definiert eine öffentlich zugängliche Programmierschnittstelle und lässt Sie REST-Interaktionen direkt von einem Webbrowser ausführen.
+ Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Pictures/PutWorksheetAddPicture) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht die Durchführung von REST-Interaktionen direkt über einen Webbrowser.
  
-Sie können das cURL-Befehlszeilentool verwenden, um einfach auf Aspose.Cells-Webdienste zuzugreifen. Das folgende Beispiel zeigt, wie Sie Cloud API mit cURL anrufen.
+Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie man mit cURL Anrufe zur Cloud API tätigt.
  
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
  
@@ -69,9 +69,9 @@ curl -v "http://api.aspose.com/v1.1/cells/Sample_Test_Book.xls/worksheets/Sheet6
  
 ## Cloud SDK-Familie
  
- Die Verwendung eines SDK ist der beste Weg, um die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und lässt Sie sich auf Ihre Projektaufgaben konzentrieren. Bitte überprüfen Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+ Die Verwendung eines SDK ist der beste Weg, die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte schauen Sie sich die an[GitHub-Repository](https://github.com/aspose-cells-cloud) Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie hier.
  
-Die folgenden Codebeispiele zeigen, wie Sie mit verschiedenen SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+Die folgenden Codebeispiele veranschaulichen, wie Aspose.Cells-Webdienste mithilfe verschiedener SDKs aufgerufen werden:
  
  
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Objective C" tabName8="Android" tabName9="Perl" tabName10="Go" >}}

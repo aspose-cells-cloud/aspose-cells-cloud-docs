@@ -10,5 +10,5 @@ weight: 20
 ---
 ## 在 Excel 工作表上删除行。
 
-- [如何在 Excel 工作表上添加一个空行。](/cells/zh/rows/add/row/) 
+- [如何在 Excel 工作表上添加空行。](/cells/zh/rows/add/row/) 
 - [如何在 Excel 工作表上添加多行。](/cells/zh/rows/add/rows/) ) 

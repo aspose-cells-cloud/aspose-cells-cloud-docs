@@ -22,7 +22,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/merg
 | startRow| numero intero| domanda| La fila di partenza.|
 | startColumn| numero intero| domanda| La colonna iniziale.|
 | totalRows| numero intero| domanda| Le righe totali|
-| totalColumns| numero intero| domanda| Le colonne totali.|
+|totalColumns| numero intero| domanda| Le colonne totali.|
 | cartella| corda| domanda| La cartella della cartella di lavoro.|
 | storageName| corda| domanda| nome di archiviazione.|
  

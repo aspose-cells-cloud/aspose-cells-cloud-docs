@@ -1,7 +1,7 @@
 ﻿---
 title: Ajouter une feuille de calcul Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: Publicité
+linktitle: Annonce
 type: docs
 url: /fr/worksheets/add/
 aliases: [/add-a-new-excel-worksheet/]
@@ -24,10 +24,10 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Nom du document.|
 | NomFeuille| chaîne| chemin| Le nouveau nom de la feuille.|
-| position| entier| mettre en doute| La nouvelle position de la feuille.|
-| type de feuille| chaîne| mettre en doute| Le nouveau type de feuille.|
-| dossier| chaîne| mettre en doute|Dossier de documents.|
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| position| entier| requête| La nouvelle position de la feuille.|
+| type de feuille| chaîne| requête| Le nouveau type de feuille.|
+| dossier| chaîne| requête| Dossier de documents.|
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PutAddNewWorksheet) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

@@ -1,7 +1,7 @@
 ﻿---
 title: Eliminar una columna en una hoja de trabajo Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: eliminar
+linktitle: Eliminar
 type: docs
 url: /es/columns/delete/
 aliases: [/delete-column-from-an-excel-worksheet/,/delete-column-from-a-worksheet/]
@@ -26,7 +26,7 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/co
 | hojaNombre| cadena| camino| El nombre de la hoja de cálculo.|
 | índicecolumna| entero| camino| El índice de la columna.|
 | columnas| entero| consulta| Las columnas.|
-| actualizarReferencia| booleano| consulta|La referencia de actualización.|
+| actualizarReferencia| booleano| consulta| La referencia de actualización.|
 | carpeta| cadena| consulta| La carpeta del libro de trabajo.|
 | NombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
 

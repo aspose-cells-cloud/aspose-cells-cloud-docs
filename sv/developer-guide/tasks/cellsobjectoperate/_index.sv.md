@@ -106,7 +106,7 @@ Detta REST API opererar cellobjekt `task`.
 | namn| sträng||
 | SheetType| sträng||
 | Nytt namn| sträng||
-| MovingRequest| Objekt||
+| Flyttförfrågan| Objekt||
 
 ## REST API
 

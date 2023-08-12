@@ -1,10 +1,10 @@
 ﻿---
-title: Führen Sie Cells in Excel Arbeitsblatt zusammen
+title: Cells im Arbeitsblatt Excel zusammenführen
 type: docs
 url: /de/merge-cells-in-excel-worksheet/
 weight: 110
 ---
-Dieser REST API gibt `merge`-Zellen in einer Excel-Datei an.
+Dieser REST API gibt `merge` Zellen in einer Excel-Datei an.
 
 ## RSET API
  
@@ -17,18 +17,18 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/merg
  
 | Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
 |:- |:- |:- |:- |
-| Name| Schnur| Weg|Der Name der Arbeitsmappe.|
-| Tabellenname| Schnur| Weg| Der Arbeitsblattname.|
-| startRow| ganze Zahl| Anfrage| Die Startreihe.|
-| startSpalte| ganze Zahl| Anfrage| Die Startspalte.|
-| totalRows| ganze Zahl| Anfrage| Die Gesamtzeilen|
-| totalColumns| ganze Zahl| Anfrage| Die Gesamtspalten.|
-| Ordner| Schnur| Anfrage| Der Arbeitsmappenordner.|
-| Speichername| Schnur| Anfrage| Speichername.|
+| Name| Zeichenfolge| Weg|Der Name der Arbeitsmappe.|
+| Blattname| Zeichenfolge| Weg| Der Arbeitsblattname.|
+| startRow| ganze Zahl| Abfrage| Die Startreihe.|
+| startColumn| ganze Zahl| Abfrage| Die Startspalte.|
+| totalRows| ganze Zahl| Abfrage| Die Gesamtzahl der Zeilen|
+|totalColumns| ganze Zahl| Abfrage| Die gesamten Spalten.|
+| Ordner| Zeichenfolge| Abfrage| Der Arbeitsmappenordner.|
+| Speichername| Zeichenfolge| Abfrage| Speichername.|
  
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Cells/PostWorksheetMerge) definiert eine öffentlich zugängliche Programmierschnittstelle und lässt Sie REST-Interaktionen direkt von einem Webbrowser ausführen.
+ Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Cells/PostWorksheetMerge) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht die Durchführung von REST-Interaktionen direkt über einen Webbrowser.
  
-Sie können das cURL-Befehlszeilentool verwenden, um einfach auf Aspose.Cells-Webdienste zuzugreifen. Das folgende Beispiel zeigt, wie Sie Cloud API mit cURL anrufen.
+Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie man mit cURL Anrufe zur Cloud API tätigt.
  
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
  
@@ -62,9 +62,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/m
  
 ## Cloud SDK-Familie
  
- Die Verwendung eines SDK ist der beste Weg, um die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und lässt Sie sich auf Ihre Projektaufgaben konzentrieren. Bitte überprüfen Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+ Die Verwendung eines SDK ist der beste Weg, die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte schauen Sie sich die an[GitHub-Repository](https://github.com/aspose-cells-cloud) Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie hier.
 
-Die folgenden Codebeispiele zeigen, wie Sie mit verschiedenen SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+Die folgenden Codebeispiele veranschaulichen, wie Aspose.Cells-Webdienste mithilfe verschiedener SDKs aufgerufen werden:
 
 
 

@@ -22,7 +22,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clea
 | allineare| corda| domanda| La gamma.|
 | startRow| numero intero| domanda| La fila di partenza.|
 | startColumn| numero intero| domanda| La colonna iniziale.|
-| endRow| numero intero| domanda|L'ultima fila.|
+| endRow| numero intero| domanda| L'ultima fila.|
 | endColumn| numero intero| domanda| La colonna finale.|
 | cartella| corda| domanda| La cartella della cartella di lavoro.|
 | storageName| corda| domanda| nome di archiviazione.|

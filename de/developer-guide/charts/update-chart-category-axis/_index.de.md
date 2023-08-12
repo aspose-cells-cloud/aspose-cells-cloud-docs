@@ -1,10 +1,10 @@
 ﻿---
-title:  Diagrammkategorie aktualisieren Axi
+title:  Diagrammkategorieachse aktualisieren
 type: docs
 url: /de/charts/category-axis/update/
 weight: 160
 ---
-Dieser REST API zeigt die Update-Chart-Kategorieachse an.
+Dieser REST API gibt die Diagrammkategorieachse aktualisieren an.
  
 ## RSET API
  
@@ -17,16 +17,16 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{ch
  
 | Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
 |:- |:- |:- |:- |
-| Name| Schnur| Weg||
-| Tabellenname| Schnur| Weg||
+| Name| Zeichenfolge| Weg||
+| Blattname| Zeichenfolge| Weg||
 | chartIndex| ganze Zahl| Weg||
 | Achse|| Körper||
-| Ordner| Schnur| Anfrage||
-| Speichername| Schnur| Anfrage||
+| Ordner| Zeichenfolge| Abfrage||
+| Speichername| Zeichenfolge| Abfrage||
  
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Charts/PostChartCategoryAxis) definiert eine öffentlich zugängliche Programmierschnittstelle und lässt Sie REST-Interaktionen direkt von einem Webbrowser ausführen.
+ Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Charts/PostChartCategoryAxis) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht die Durchführung von REST-Interaktionen direkt über einen Webbrowser.
  
-Sie können das cURL-Befehlszeilentool verwenden, um einfach auf Aspose.Cells-Webdienste zuzugreifen. Das folgende Beispiel zeigt, wie Sie Cloud API mit cURL anrufen.
+Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie man mit cURL Anrufe zur Cloud API tätigt.
  
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
  
@@ -60,9 +60,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/" \
  
 ## Cloud SDK-Familie
  
- Die Verwendung eines SDK ist der beste Weg, um die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und lässt Sie sich auf Ihre Projektaufgaben konzentrieren. Bitte überprüfen Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+ Die Verwendung eines SDK ist der beste Weg, die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte schauen Sie sich die an[GitHub-Repository](https://github.com/aspose-cells-cloud) Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie hier.
  
-Die folgenden Codebeispiele zeigen, wie Sie mit verschiedenen SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+Die folgenden Codebeispiele veranschaulichen, wie Aspose.Cells-Webdienste mithilfe verschiedener SDKs aufgerufen werden:
  
  
  

@@ -22,4 +22,4 @@ weight: 100
 - [Установите стиль диапазона](/cells/ru/set-the-style-of-the-range/)
 - [Unmerge Объединенный Cells диапазона](/cells/ru/unmerge-merged-cells-of-the-range/)
 - [Переместите именованный диапазон с помощью рабочего листа Excel](/cells/ru/move-a-named-ranged-with-a-excel-worksheet/)
-- [Установите значение диапазона на рабочем листе Excel](/cells/ru/ranges/set-value/)
+- [Установите значение диапазона в рабочем листе Excel](/cells/ru/ranges/set-value/)

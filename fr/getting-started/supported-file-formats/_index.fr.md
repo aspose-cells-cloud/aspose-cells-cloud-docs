@@ -14,7 +14,7 @@ weight: 40
 |[XLSM](https://docs.fileformat.com/spreadsheet/xlsm/)|Excel Classeur prenant en charge les macros.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[XLT](https://docs.fileformat.com/spreadsheet/xlt/)|Excel 97 - Excel 2003 Gabarit.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[XLTX](https://docs.fileformat.com/spreadsheet/xltx/)|Excel Modèle.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[XLTM](https://docs.fileformat.com/spreadsheet/xltm/)|Excel Modèle compatible avec les macros.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[XLMC](https://docs.fileformat.com/spreadsheet/xltm/)|Excel Modèle compatible avec les macros.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[XLAM](https://docs.fileformat.com/spreadsheet/xlam/)|Un fichier de macro complémentaire Excel qui est utilisé pour ajouter de nouvelles fonctions à Excel.||{{< emoticons/tick >}}|
 |[CSV](https://docs.fileformat.com/spreadsheet/csv/)|Fichier CSV (valeurs séparées par des virgules).|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[VST](https://docs.fileformat.com/spreadsheet/tsv/)|Fichier TSV (valeurs séparées par des tabulations).|{{< emoticons/tick >}}|{{< emoticons/tick >}}|

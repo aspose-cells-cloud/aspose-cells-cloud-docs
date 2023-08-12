@@ -19,7 +19,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/mergedCells
 |:- |:- |:- |:- |
 | اسم| خيط| طريق| اسم الملف.|
 | اسم الورقة| خيط| طريق| اسم مجموعة العمل.|
-| مجلد| خيط| استفسار|مجلد المستند.|
+| مجلد| خيط| استفسار| مجلد المستند.|
 | اسم التخزين| خيط| استفسار| اسم التخزين.|
  
  ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetMergedCells) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.

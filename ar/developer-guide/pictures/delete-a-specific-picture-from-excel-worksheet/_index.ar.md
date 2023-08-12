@@ -1,5 +1,5 @@
 ﻿---
-title: احذف صورة في ملف Excel
+title: حذف صورة في Excel فيل
 second_title: Aspose.Cells Cloud Documen
 linktitle: حذف
 type: docs

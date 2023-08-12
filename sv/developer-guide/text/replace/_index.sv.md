@@ -28,7 +28,7 @@ POST https://api.aspose.cloud/v3.0/cells/replace
 | Lösenord| sträng| fråga||
 | arknamn| sträng| fråga||
  
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/LiteCells/PostReplace) definierar ett allmänt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+ De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/LightCells/PostReplace) definierar ett allmänt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
  
 Du kan använda cURL kommandoradsverktyg för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man ringer till Cloud API med cURL.
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}

@@ -6,7 +6,7 @@ type: docs
 url: /ar/workbook/get/page-count/
 aliases: [/workbook/page-count/]
 keywords: Getting pages count on an Excel workbook
-description: Aspose.Cells Cloud REST API دعم الحصول على عدد الصفحات في مصنف Excel. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
+description: دعم Aspose.Cells Cloud REST API الحصول على عدد الصفحات في مصنف Excel. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
 weight: 10
 ---
 يشير هذا REST API إلى `get page count` للمصنف.

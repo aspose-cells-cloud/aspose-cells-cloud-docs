@@ -1,7 +1,7 @@
 ﻿---
 title: Excel çalışma sayfasından sütunları alın
 second_title: Aspose.Cells Cloud Documen
-linktitle: ge
+linktitle: Ge
 type: docs
 url: /tr/columns/get/
 aliases: [/get-columns-from-an-excel-worksheet/,/get-columns-from-a-worksheet/,/get-column-from-a-worksheet/]

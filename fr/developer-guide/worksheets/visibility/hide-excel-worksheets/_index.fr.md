@@ -24,9 +24,9 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/visible
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Nom du document.|
 | NomFeuille| chaîne| chemin| Nom de la feuille de calcul.|
-| est visible| booléen| mettre en doute| Nouvelle valeur de visibilité de la feuille de calcul.|
-| dossier| chaîne| mettre en doute| Le dossier de documents.|
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| est visible| booléen| requête| Nouvelle valeur de visibilité de la feuille de calcul.|
+| dossier| chaîne| requête| Le dossier de documents.|
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PutChangeVisibilityWorksheet) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

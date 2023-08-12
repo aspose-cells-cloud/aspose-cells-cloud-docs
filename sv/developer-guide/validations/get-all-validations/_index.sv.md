@@ -23,7 +23,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations
 |:- |:- |:- |:- |
 | namn| sträng| väg| Dokument namn.|
 | arknamn| sträng| väg| Arbetsbladsnamn.|
-| mapp| sträng| fråga|Dokumentmapp.|
+| mapp| sträng| fråga| Dokumentmapp.|
 | lagringsnamn| sträng| fråga| lagringsnamn.|
  
  De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/WorksheetValidations/GetWorksheetValidations) definierar ett allmänt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.

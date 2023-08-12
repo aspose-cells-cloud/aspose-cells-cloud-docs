@@ -4,7 +4,7 @@ type: docs
 url: /de/set-formula-for-a-cell-in-excel-worksheets/
 weight: 80
 ---
-Dieser REST API gibt an, dass `cell formula` in einer Excel-Datei festgelegt wurde.
+Dieser REST API gibt den Satz `cell formula` in einer Excel-Datei an.
  
 ## RSET API
  
@@ -17,18 +17,18 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cel
  
 | Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
 |:- |:- |:- |:- |
-| Name| Schnur| Weg| Der Dokumentname.|
-| Tabellenname| Schnur| Weg| Der Arbeitsblattname.|
-| Zellenname| Schnur| Weg| Der Zellenname.|
-| Wert| Schnur| Anfrage| Der Zellenwert.|
-| Typ| Schnur| Anfrage| Der Werttyp.|
-| Formel| Schnur| Anfrage| Formel für Zelle|
-| Ordner| Schnur| Anfrage| Der Dokumentenordner.|
-| Speichername| Schnur| Anfrage| Speichername.|
+| Name| Zeichenfolge| Weg| Der Dokumentname.|
+| Blattname| Zeichenfolge| Weg| Der Arbeitsblattname.|
+| Zellenname| Zeichenfolge| Weg| Der Zellenname.|
+| Wert| Zeichenfolge| Abfrage| Der Zellenwert.|
+| Typ| Zeichenfolge| Abfrage| Der Werttyp.|
+| Formel| Zeichenfolge| Abfrage| Formel für Zelle|
+| Ordner| Zeichenfolge| Abfrage| Der Dokumentenordner.|
+| Speichername| Zeichenfolge| Abfrage| Speichername.|
  
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Cells/PostWorksheetCellSetValue) definiert eine öffentlich zugängliche Programmierschnittstelle und lässt Sie REST-Interaktionen direkt von einem Webbrowser ausführen.
+ Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Cells/PostWorksheetCellSetValue) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht die Durchführung von REST-Interaktionen direkt über einen Webbrowser.
  
-Sie können das cURL-Befehlszeilentool verwenden, um einfach auf Aspose.Cells-Webdienste zuzugreifen. Das folgende Beispiel zeigt, wie Sie Cloud API mit cURL anrufen.
+Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie man mit cURL Anrufe zur Cloud API tätigt.
  
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
  
@@ -62,9 +62,9 @@ curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cell
  
 ## Cloud SDK-Familie
  
- Die Verwendung eines SDK ist der beste Weg, um die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und lässt Sie sich auf Ihre Projektaufgaben konzentrieren. Bitte überprüfen Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+ Die Verwendung eines SDK ist der beste Weg, die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte schauen Sie sich die an[GitHub-Repository](https://github.com/aspose-cells-cloud) Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie hier.
 
-Die folgenden Codebeispiele zeigen, wie Sie mit verschiedenen SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+Die folgenden Codebeispiele veranschaulichen, wie Aspose.Cells-Webdienste mithilfe verschiedener SDKs aufgerufen werden:
 
 
 

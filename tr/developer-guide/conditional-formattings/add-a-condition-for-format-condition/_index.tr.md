@@ -7,7 +7,7 @@ keywords: REST API, spreadsheets, excel, add conditiona
 description: "Cells.Cloud API için Excel çalıştır: koşullu ekle"
 weight: 40
 ---
-Bu REST API, Biçim koşulu için bir koşul ekle'yi belirtir.
+Bu REST API, Biçim koşulu için bir koşul ekle'yi gösterir.
  
 ## RSET API
  

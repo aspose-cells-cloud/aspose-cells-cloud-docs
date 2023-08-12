@@ -72,7 +72,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/" \
  
 
 ## **Введение**
-В этом примере показано, как удалить строку из рабочего листа Excel, используя Aspose.Cells Cloud API в ваших приложениях. Вы можете использовать наш REST API с любым языком: .NET, Java, PHP, Ruby, Rails, Python, jQuery и многими другими.
+В этом примере показано, как удалить строку из рабочего листа Excel с помощью Aspose.Cells Cloud API в ваших приложениях. Вы можете использовать наш REST API с любым языком: .NET, Java, PHP, Ruby, Rails, Python, jQuery и многими другими.
 
 ## **API Информация**
 

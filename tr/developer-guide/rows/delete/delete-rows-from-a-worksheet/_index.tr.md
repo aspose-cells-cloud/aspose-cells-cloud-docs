@@ -8,7 +8,7 @@ keywords: Delete rows on an Excel workshee
 description: Aspose.Cells Cloud REST API, Excel çalışma sayfasındaki satırları silmeyi destekler. SDK, geliştirme dili türlerini destekler. Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift'i içerir
 weight: 80
 ---
-Bu REST API, bir Excel çalışma sayfasındaki çoklu satırları silmeyi belirtir.
+Bu REST API, bir Excel çalışma sayfasındaki çoklu satırları silmeyi gösterir.
  
 ## RSET API
  

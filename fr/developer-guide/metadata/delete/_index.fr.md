@@ -23,7 +23,7 @@ POST http://api.aspose.cloud/v3.0/cells/metadata/delete
 | Le nom du paramètre| Taper| Chemin/chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | déposer| déposer| Données de formulaire| Fichier à uploader|
-| taper| chaîne| mettre en doute| tous|
+| taper| chaîne| requête| tous|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/DeleteMetadata) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  
@@ -93,7 +93,7 @@ Les exemples de code suivants montrent comment effectuer des appels vers les ser
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LiteCells-Metadata-Delete.php" >}}
+{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LightCells-Metadata-Delete.php" >}}
 
 {{< /tab >}}
 
@@ -123,6 +123,6 @@ Les exemples de code suivants montrent comment effectuer des appels vers les ser
 {{< /tab >}}
 {{< tab tabNum="9" >}}
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "LiteCellsMetadata-Delete.py" >}}
+{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "LightCellsMetadata-Delete.py" >}}
 {{< /tab >}}
 {{< /tabs >}}

@@ -27,7 +27,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/
 | sayfaAdı| sicim| Yol| Çalışma sayfası adı.|
 |menzil|sicim| Sorgu||
 |alan dizini|tamsayı| Sorgu||
-|simgeSetTürü|sicim| Sorgu| Oklar3/ArrowsGray3/Flags3/İşaretler3/Symbols3/Symbols32/TrafficLights31/TrafficLights32/Arrows4/ArrowsGray4/Rating4/RedToBlack4/TrafficLights4/Arrows5/ArrowsGray5/Quarters5/Rating5/Yıldızlar3/Kutular5/Üçgenler3/Yok/ Özel Küme/Smilies3/ColorSmilies3|
+|simgeSetTürü|sicim| Sorgu| Arrows3/ArrowsGray3/Flags3/İşaretler3/Symbols3/Symbols32/TrafficLights31/TrafficLights32/Arrows4/ArrowsGray4/Rating4/RedToBlack4/TrafficLights4/Arrows5/ArrowsGray5/Quarters5/Rating5/Stars3/Boxes5/Üçgenler3/Yok/ Özel Küme/Smilies3/ColorSmilies3|
 |simge kimliği|tamsayı| Sorgu||
 |Maç Boşlukları|sicim| Sorgu|doğru yanlış|
 |yenile|sicim| Sorgu|doğru yanlış|

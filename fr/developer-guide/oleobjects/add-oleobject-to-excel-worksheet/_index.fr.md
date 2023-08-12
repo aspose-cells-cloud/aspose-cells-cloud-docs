@@ -25,14 +25,14 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects
 | nom| chaîne| chemin|Le nom du classeur.|
 | NomFeuille| chaîne| chemin| Le nom de la feuille de calcul.|
 | oleObject|| corps| Objet ancien|
-| upperLeftRow| entier| mettre en doute|0 |
-| UpperLeftColumn| entier| mettre en doute|0 |
-| hauteur| entier| mettre en doute|0 |
-| largeur| entier| mettre en doute|0 |
-| oleFile| chaîne| mettre en doute| Nom de fichier OLE|
-| fichier d'image| chaîne| mettre en doute| Nom du fichier image|
-| dossier| chaîne| mettre en doute| Le dossier du classeur.|
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| upperLeftRow| entier| requête|0 |
+| UpperLeftColumn| entier| requête|0 |
+| hauteur| entier| requête|0 |
+| largeur| entier| requête|0 |
+| oleFile| chaîne| requête| Nom de fichier OLE|
+| fichier d'image| chaîne| requête| Nom du fichier image|
+| dossier| chaîne| requête| Le dossier du classeur.|
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/OleObjects/PutWorksheetOleObject) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

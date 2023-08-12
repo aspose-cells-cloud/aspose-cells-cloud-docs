@@ -1,14 +1,14 @@
 ﻿---
 title: Metadaten aus der Datei Excel abrufen
 second_title: Aspose.Cells Cloud Documen
-linktitle: Holen Sie sich ohne Verwendung von storag
+linktitle: Holen Sie sich, ohne Speicher zu verwenden
 type: docs
 url: /de/metadata/get/
 keywords: Get properties from Excel files
-description: Aspose.Cells Cloud REST API unterstützt das Abrufen von Eigenschaften aus Excel-Dateien. SDK unterstützt Arten von Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
+description: Aspose.Cells Cloud REST API unterstützt das Abrufen von Eigenschaften aus Excel-Dateien. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
 weight: 23
 ---
-Dieser REST API gibt an, dass `metadata` aus mehreren Excel-Dateien abgerufen werden soll.
+Dieser REST API gibt an, `metadata` aus mehreren Excel-Dateien abzurufen.
 
 ```bash
 
@@ -20,7 +20,7 @@ POST https://api.aspose.cloud/v3.0/cells/metadata/get
 
 |Parametername|Typ|Beschreibung|
 |:- |:- |:- |
-| Typ| Schnur| ALLE/Integriert/Benutzerdefiniert|
+| Typ| Zeichenfolge| ALLE/Eingebaut/Benutzerdefiniert|
 
 
 - **Body-Parameter anfordern**
@@ -49,9 +49,9 @@ POST https://api.aspose.cloud/v3.0/cells/metadata/get
 ```
 - **Cloud SDK-Familie**
 
- Die Verwendung eines SDK ist der beste Weg, um die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und lässt Sie sich auf Ihre Projektaufgaben konzentrieren. Bitte überprüfen Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+ Die Verwendung eines SDK ist der beste Weg, die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte schauen Sie sich die an[GitHub-Repository](https://github.com/aspose-cells-cloud) Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie hier.
 
-Die folgenden Codebeispiele zeigen, wie Sie mit verschiedenen SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+Die folgenden Codebeispiele veranschaulichen, wie Aspose.Cells-Webdienste mithilfe verschiedener SDKs aufgerufen werden:
 
 
 {{< tabs tabTotal="9" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" tabName9="Python" >}}
@@ -68,7 +68,7 @@ Die folgenden Codebeispiele zeigen, wie Sie mit verschiedenen SDKs Aufrufe an As
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LiteCells-Metadata-Get.php" >}}
+{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LightCells-Metadata-Get.php" >}}
 
 {{< /tab >}}
 
@@ -98,6 +98,6 @@ Die folgenden Codebeispiele zeigen, wie Sie mit verschiedenen SDKs Aufrufe an As
 {{< /tab >}}
 {{< tab tabNum="9" >}}
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "LiteCellsMetadata-Get.py" >}}
+{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "LightCellsMetadata-Get.py" >}}
 {{< /tab >}}
 {{< /tabs >}}

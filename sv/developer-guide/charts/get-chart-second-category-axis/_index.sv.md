@@ -1,5 +1,5 @@
 ﻿---
-title:  Hämta diagram andra kategori Axi
+title: Hämta diagram andra kategori Axi
 type: docs
 url: /sv/charts/second-category-axis/get/
 weight: 60

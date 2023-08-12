@@ -6,10 +6,10 @@ type: docs
 url: /zh/autofilter/match-all-blank/
 aliases: [/match-all-blank-cells-in-the-list/]
 keywords: Match all blank cells in the filter list on an Excel worksheet
-description: Aspose.Cells Cloud API 支持匹配Excel工作表筛选列表中的所有空白单元格。SDK支持多种开发语言。它们包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 swift
+description: Aspose.Cells云API支持匹配Excel工作表上过滤列表中的所有空白单元格。SDK支持多种开发语言。它们包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 swift
 weight: 100
 ---
-此 REST API 向 `match` 指示 Excel 工作表上筛选器列表中的所有 `blank cell`。
+此 REST API 向 `match` 指示 Excel 工作表上的筛选器列表中的所有 `blank cell`。
  
 ## RSET API
  
@@ -28,9 +28,9 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter
 |文件夹|细绳|询问||
 |存储名称|细绳|询问|存储名称。|
  
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/AutoFilter/PostWorksheetMatchBlanks)定义了一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+这[开放API规范](https://apireference.aspose.cloud/cells/#/AutoFilter/PostWorksheetMatchBlanks)定义了一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
  
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例显示如何使用 cURL 调用 Cloud API。
+您可以使用cURL命令行工具轻松访问Aspose.Cells Web服务。以下示例展示如何使用 cURL 呼叫云端 API。
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
@@ -66,11 +66,11 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFil
 
 {{< /tabs >}}
 
-## 云 SDK 系列
+## 云SDK系列
  
-使用 SDK 是加速开发的最佳方式。 SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 仓库](https://github.com/aspose-cells-cloud)有关 Aspose.Cells Cloud SDK 的完整列表。
+使用 SDK 是加快开发速度的最佳方式。 SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)有关 Aspose.Cells Cloud SDK 的完整列表。
  
-以下代码示例演示如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
  
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" >}}
 

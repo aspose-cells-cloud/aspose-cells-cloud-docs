@@ -1,7 +1,7 @@
 ﻿---
 title: Zil Tarzını Ayarlayın
 second_title: Aspose.Cells Cloud Documen
-linktitle: stili ayarla
+linktitle: stil ayarla
 type: docs
 url: /tr/ranges/update/style/
 aliases: [/set-the-style-of-the-range/]

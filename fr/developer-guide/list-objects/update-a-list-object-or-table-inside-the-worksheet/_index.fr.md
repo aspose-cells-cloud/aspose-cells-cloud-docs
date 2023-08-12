@@ -27,8 +27,8 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobject
 | NomFeuille| chaîne| chemin| Le nom de la feuille de calcul.|
 | listeObjetIndex| entier| chemin|liste Index des objets|
 | listeObjet|| corps| listObject dto dans le corps de la requête.|
-| dossier| chaîne| mettre en doute| Dossier du document.|
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| dossier| chaîne| requête| Dossier du document.|
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObject) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

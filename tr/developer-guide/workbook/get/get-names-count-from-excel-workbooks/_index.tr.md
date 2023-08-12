@@ -9,7 +9,7 @@ keywords: Getting names on an Excel workbook
 description: Aspose.Cells Cloud REST API, bir Excel çalışma kitabında ad almayı destekler. SDK, geliştirme dili türlerini destekler. Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift'i içerir
 weight: 120
 ---
-Bu REST API, bir Excel çalışma kitabından ad almayı belirtir.
+Bu REST API, bir Excel çalışma kitabından ad almayı gösterir.
  
 ## RSET API
  

@@ -21,8 +21,8 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{cha
 | nom| chaîne| chemin| Nom du classeur.|
 | NomFeuille| chaîne| chemin| Nom de la feuille de calcul.|
 | graphiqueIndex| entier| chemin| L'index du graphique.|
-| dossier| chaîne| mettre en doute| Dossier de classeur.|
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| dossier| chaîne| requête| Dossier de classeur.|
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/ChartArea/GetChartAreaFillFormat) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

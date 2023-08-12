@@ -19,7 +19,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/mergedCells
 |:- |:- |:- |:- |
 | isim| sicim| yol| Belge adı.|
 | sayfaAdı| sicim| yol| Çalışma sayfası adı.|
-| dosya| sicim| sorgu|Belge klasörü.|
+| dosya| sicim| sorgu| Belge klasörü.|
 | depolamaAdı| sicim| sorgu| depolama adı.|
  
  bu[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetMergedCells) herkesin erişebileceği bir programlama arabirimi tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.

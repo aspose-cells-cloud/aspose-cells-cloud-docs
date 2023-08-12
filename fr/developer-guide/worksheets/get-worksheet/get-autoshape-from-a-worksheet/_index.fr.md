@@ -25,9 +25,9 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoshapes/
 | nom| chaîne| chemin| Nom du document.|
 | NomFeuille| chaîne| chemin| Nom de la feuille de calcul.|
 | autoshapeNumber| entier| chemin| Le numéro de forme automatique.|
-| format| chaîne| mettre en doute| Format exporté.|
-| dossier| chaîne| mettre en doute| Le dossier de documents.|
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| format| chaîne| requête| Format exporté.|
+| dossier| chaîne| requête| Le dossier de documents.|
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Autoshapes/GetWorksheetAutoshape) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

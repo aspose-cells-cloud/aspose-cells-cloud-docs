@@ -1,7 +1,7 @@
 ﻿---
 title: Excel çalışma sayfasında dizine göre şekil alma
 second_title: Aspose.Cells Cloud Documen
-linktitle: ge
+linktitle: Ge
 type: docs
 url: /tr/shapes/get/
 aliases: [/get-a-shape-by-index-inside-the-worksheet/]

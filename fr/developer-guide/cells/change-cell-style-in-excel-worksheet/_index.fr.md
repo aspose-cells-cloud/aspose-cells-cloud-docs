@@ -21,8 +21,8 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cel
 | NomFeuille| chaîne| chemin| Nom de la feuille de calcul.|
 | nom_cellule| chaîne| chemin| Le nom de la cellule.|
 | style|| corps| avec les paramètres de style de mise à jour.|
-| dossier| chaîne| mettre en doute| Le dossier du classeur.|
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| dossier| chaîne| requête| Le dossier du classeur.|
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostUpdateWorksheetCellStyle) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

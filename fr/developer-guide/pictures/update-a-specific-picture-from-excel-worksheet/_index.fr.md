@@ -26,8 +26,8 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{
 | NomFeuille| chaîne| chemin| Nom de la feuille de calcul.|
 | index des images| entier| chemin| L'index de l'image.|
 | image|| corps| Objet photo|
-| dossier| chaîne| mettre en doute| Le dossier de documents.|
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| dossier| chaîne| requête| Le dossier de documents.|
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Pictures/PostWorksheetPicture) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

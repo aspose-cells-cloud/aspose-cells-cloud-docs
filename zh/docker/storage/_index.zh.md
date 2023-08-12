@@ -1,9 +1,9 @@
 ﻿---
-title: 存储
+title: 斯托拉格
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/docker/storage/
-description: 如何设置关于 Aspose.Cells Cloud for Docker 的存储位置
+description: Aspose.Cells Cloud for Docker如何设置存储位置
 weight: 30
 ---
 ## 默认存储配置 ##
@@ -56,7 +56,7 @@ c:\app\storageResource.json
 
 ```
 
-- **Linux**
+- **操作系统**
 
 ```linux
 
@@ -67,7 +67,7 @@ c:\app\storageResource.json
 
 ## 自定义存储配置 ##
 
-当客户需要指定存储文件夹时，需要重新指定Aspose.Cells 云图像文件的存储配置文件。
+当客户需要指定存储文件夹时，需要重新指定Aspose.Cells云镜像文件的存储配置文件。
 
 ``` powershell
 
@@ -76,4 +76,4 @@ docker run  -d  -v c:/data:c:/data  -p 47900:5000  -e LicensePublicKey=yourLicen
 ```
 
 **参考文件** : 
-  - [码头工人运行]( https://docs.docker.com/engine/reference/commandline/run/)
+  - [码头运行]( https://docs.docker.com/engine/reference/commandline/run/)

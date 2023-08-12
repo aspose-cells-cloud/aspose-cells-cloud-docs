@@ -1,13 +1,13 @@
 ﻿---
-title: Stapelkonvert
+title: Batch-Konverter
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/batch/convert
 keywords: Batch conversion of multiple excel files
-description: Aspose.Cells Cloud API unterstützt die Stapelkonvertierung mehrerer Excel-Dateien. SDK unterstützt Arten von Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
+description: Aspose.Cells Cloud API unterstützt die Stapelkonvertierung mehrerer Excel-Dateien. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
 weight: 100
 ---
- Dieser REST API zeigt `batch conversion` der geeigneten Dateien an
+ Dieser REST API weist auf `batch conversion` der berechtigten Dateien hin
  
 ## RSET API
  
@@ -26,13 +26,13 @@ POST http://api.aspose.cloud/v3.0/cells/batch/convert
  
 Name | Geben Sie | ein Beschreibung | Anmerkungen
 ------------ | ------------- | ------------- | -------------
- Quellordner | Zeichenfolge | | [optional]Übereinstimmungsbedingung | MatchConditionRequest | | [optional]Formatieren | Zeichenfolge | | [optional]OutFolder | Zeichenfolge | | [optional]Optionen speichern | Speicheroptionen | | [Optional]**MatchConditionRequest-Eigenschaften**
+ Quellordner | Zeichenfolge | | [optional]MatchCondition | MatchConditionRequest | | [optional]Formatieren | Zeichenfolge | | [optional]OutFolder | Zeichenfolge | | [optional]Speicheroptionen | SaveOptions | | [Optional]**MatchConditionRequest-Eigenschaften**
  
 Name | Geben Sie | ein Beschreibung | Anmerkungen
 ------------ | ------------- | ------------- | -------------
- RegexMuster | Zeichenfolge | | [optional]FullMatchConditions | Zeichenfolge[]| | [optional]Die[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/PostBatchConvert) definiert eine öffentlich zugängliche Programmierschnittstelle und lässt Sie REST-Interaktionen direkt von einem Webbrowser ausführen.
+ RegexPattern | Zeichenfolge | | [optional]FullMatchConditions | string[]| | [optional]Die[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/PostBatchConvert) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht die Durchführung von REST-Interaktionen direkt über einen Webbrowser.
  
-Sie können das cURL-Befehlszeilentool verwenden, um einfach auf Aspose.Cells-Webdienste zuzugreifen. Das folgende Beispiel zeigt, wie Sie Cloud API mit cURL anrufen.
+Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie man mit cURL Anrufe zur Cloud API tätigt.
  
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
  
@@ -45,7 +45,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/batch/convert" \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
--D "{\"SourceFolder\":\"CellsTests\",\"MatchCondition\":{\"RegexPattern\":\"(^Book)(.+)(xlsx$)\"},\"Format\":\"pdf\",\"SaveOptions\":{\"SaveFormat\":\"pdf\",\"CalculateFormula\":true,\"EnableHTTPCompression\":true,\"OnePagePerSheet\":true,\"CreateDirectory\":false,\"Compliance\":\"None\"}}" 
+-D "{\"SourceFolder\":\"CellsTests\",\"OutFolder\":\"Output\",\"MatchCondition\":{\"RegexPattern\":\"(^Book)(.+)(xlsx$)\"},\"Format\":\"pdf\",\"SaveOptions\":{\"SaveFormat\":\"pdf\",\"CalculateFormula\":true,\"EnableHTTPCompression\":true,\"OnePagePerSheet\":true,\"CreateDirectory\":false,\"Compliance\":\"None\"}}" 
 ```
  
 {{< /tab >}}
@@ -66,9 +66,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/batch/convert" \
  
 ## Cloud SDK-Familie
  
- Die Verwendung eines SDK ist der beste Weg, um die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und lässt Sie sich auf Ihre Projektaufgaben konzentrieren. Bitte überprüfen Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+ Die Verwendung eines SDK ist der beste Weg, die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte schauen Sie sich die an[GitHub-Repository](https://github.com/aspose-cells-cloud) Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie hier.
  
-Die folgenden Codebeispiele zeigen, wie Sie mit verschiedenen SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+Die folgenden Codebeispiele veranschaulichen, wie Aspose.Cells-Webdienste mithilfe verschiedener SDKs aufgerufen werden:
  
  
   

@@ -24,10 +24,10 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/autofitcolumns
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Nom du document.|
 | autoFitterOptions|| corps| Options d'installation automatique.|
-| startColumn| entier| mettre en doute| Colonne de départ.|
-| finColonne| entier| mettre en doute| Colonne de fin.|
-| dossier| chaîne| mettre en doute| Dossier du document.|
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| startColumn| entier| requête| Colonne de départ.|
+| finColonne| entier| requête| Colonne de fin.|
+| dossier| chaîne| requête| Dossier du document.|
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostAutofitWorkbookColumns) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

@@ -20,7 +20,7 @@ GET http://api.aspose.cloud/v3.0/cells/storage/disc
  
 | Le nom du paramètre| Taper| Chemin/chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
-| nom_stockage| chaîne| mettre en doute| Nom de stockage|
+| nom_stockage| chaîne| requête| Nom de stockage|
 
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Storage/GetDiscUsage) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.

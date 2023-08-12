@@ -6,17 +6,17 @@ url: /de/docker/run/
 description: So führen Sie Aspose.Cells Cloud für Docker aus
 weight: 30
 ---
-## Port freilegen
+## Port freigeben
 
 Hafen | Beschreibung | Erforderlich
 ---|:--:|---:
 5000 | Ordner mit Schriftarten, die zum Rendern von Dokumenten verwendet werden | WAHR
 
 
-##  Erforderliche Volumina ##
-Mount-Pfad im Container | Beschreibung | Erforderlich
+##  Erforderliche Mengen ##
+Mountpfad im Container | Beschreibung | Erforderlich
 ---|:--:|---:
-C:\Schriftarten | Ordner mit Schriftarten, die zum Rendern von Dokumenten verwendet werden | FALSCH
+C:\fonts | Ordner mit Schriftarten, die zum Rendern von Dokumenten verwendet werden | FALSCH
 C:\Daten | Dateispeicherordner | FALSCH
 
 ##  Laufparameter ##

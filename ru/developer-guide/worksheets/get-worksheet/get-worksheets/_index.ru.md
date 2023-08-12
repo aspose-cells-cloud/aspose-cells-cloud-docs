@@ -1,7 +1,7 @@
 ﻿---
 title: Получить рабочий лист
 second_title: Aspose.Cells Cloud Documen
-linktitle: Ал
+linktitle: Аль
 type: docs
 url: /ru/worksheets/get-all/
 aliases: [/get-worksheet-count/]
@@ -23,7 +23,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets
 | Имя параметра| Тип| Путь/строка запроса/HTTPBody|Описание|
 |:- |:- |:- |:- |
 | имя| нить| путь| Название документа.|
-| папка| нить| запрос|Папка с документами.|
+| папка| нить| запрос| Папка с документами.|
 | имя_хранилища| нить| запрос| имя хранилища.|
  
 [Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheets) определяет общедоступный программный интерфейс и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.

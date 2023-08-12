@@ -9,7 +9,7 @@ weight: 20
 keywords: Get text from Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) worksheet
 description: Aspose.Cells Cloud REST API يدعم الحصول على نص من ورقة عمل Excel. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
 ---
-يشير هذا REST API إلى `read` ورقة العمل `text items` في ورقة العمل Excel.
+يشير هذا REST API إلى `read` الخاص بورقة العمل `text items` في ورقة العمل Excel.
  
 ## RSET API
  

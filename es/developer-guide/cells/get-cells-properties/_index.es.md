@@ -19,7 +19,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cell
 |:- |:- |:- |:- |
 | nombre| cadena| camino| Nombre del documento.|
 | hojaNombre| cadena| camino| Nombre de la hoja de trabajo.|
-| cellOrMethodName| cadena| camino| El nombre de la celda o del método. (Valor del nombre del método: firstcell, endcell, maxrow, maxdatarow, maxcolumn, maxdatacolumn, minrow, mindatarow, mincolumn, mindatacolumn y cellName).|
+| cellOrMethodName| cadena| camino|El nombre de la celda o del método. (Valor del nombre del método: firstcell, endcell, maxrow, maxdatarow, maxcolumn, maxdatacolumn, minrow, mindatarow, mincolumn, mindatacolumn y cellName).|
 | carpeta| cadena| consulta| Carpeta del documento.|
 | NombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
  

@@ -6,7 +6,7 @@ type: docs
 url: /ar/ranges/update/values/
 aliases: [/set-range-value-in-excel-worksheet/]
 keywords: Set range value on an Excel workshee
-description: Aspose.Cells Cloud REST API يدعم إعداد قيمة النطاق في ورقة عمل Excel. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
+description: Aspose.Cells Cloud REST API دعم قيمة نطاق الإعداد في ورقة عمل Excel. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
 weight: 72
 ---
 يشير هذا REST API إلى وضع قيمة في النطاق ، وإذا كان ذلك مناسبًا ، فسيتم تحويل القيمة إلى نوع بيانات آخر وستتم إعادة تعيين تنسيق رقم الخلية.

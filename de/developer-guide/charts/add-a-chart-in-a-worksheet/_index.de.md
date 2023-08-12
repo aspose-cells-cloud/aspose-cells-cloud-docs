@@ -1,11 +1,11 @@
 ﻿---
-title: Fügen Sie ein Diagramm in einem Arbeitsblatt hinzu
+title: Fügen Sie ein Diagramm in ein Arbeitsblatt ein
 type: docs
 url: /de/charts/add/
 aliases: [/add-a-chart-in-a-worksheet/]
 weight: 20
 ---
-Dieser REST API zeigt an, dass ein neues Diagramm zum Arbeitsblatt hinzugefügt wird.
+Dieser REST API gibt an, ein neues Diagramm zum Arbeitsblatt hinzuzufügen.
  
 ## RSET API
  
@@ -18,28 +18,28 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts
  
 | Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
 |:- |:- |:- |:- |
-| Name| Schnur| Weg| Name der Arbeitsmappe.|
-| Tabellenname| Schnur| Weg| Der Arbeitsblattname.|
-| Diagramm Typ| Schnur| Anfrage| Diagrammtyp, siehe Eigenschaft Typ in Diagrammressource.|
-| obereLinkeReihe| ganze Zahl| Anfrage|0 |
-| obereLinkeSpalte| ganze Zahl| Anfrage|0 |
-| untereRechteReihe| ganze Zahl| Anfrage|0 |
-| LowerRightColumn| ganze Zahl| Anfrage|0 |
-| Bereich| Schnur| Anfrage| Gibt Werte an, aus denen die Datenreihe gezeichnet werden soll.|
-| istVertikal| boolesch| Anfrage| WAHR|
-|KategorieDaten| Schnur| Anfrage| Ruft den Bereich der Kategorieachsenwerte ab oder legt diesen fest. Es kann sich um eine Reihe von Zellen handeln (z. B. „d1:e10“).|
-| istAutoGetSerialName| boolesch| Anfrage| WAHR|
-| Titel| Schnur| Anfrage| Gibt den Namen des Diagrammtitels an.|
-| Ordner| Schnur| Anfrage| Der Arbeitsmappenordner.|
-| Speichername| Schnur| Anfrage| Speichername.|
-| Datenaufkleber| boolesch| Anfrage| WAHR|
-| dataLabelsPosition| Schnur| Anfrage| Über|
-| PivotTableSheet| Schnur| Anfrage||
-| PivotTableName| Schnur| Anfrage||
+| Name| Zeichenfolge| Weg| Name der Arbeitsmappe.|
+| Blattname| Zeichenfolge| Weg| Der Arbeitsblattname.|
+| Diagramm Typ| Zeichenfolge| Abfrage| Diagrammtyp, siehe Eigenschaft Typ in der Diagrammressource.|
+| UpperLeftRow| ganze Zahl| Abfrage|0 |
+| UpperLeftColumn| ganze Zahl| Abfrage|0 |
+| untereRechteRow| ganze Zahl| Abfrage|0 |
+| LowerRightColumn| ganze Zahl| Abfrage|0 |
+| Bereich| Zeichenfolge| Abfrage| Gibt Werte an, anhand derer die Datenreihe dargestellt werden soll.|
+| isVertical| Boolescher Wert| Abfrage| WAHR|
+| KategorieDaten| Zeichenfolge| Abfrage| Ruft den Bereich der Kategorieachsenwerte ab oder legt diesen fest. Es kann sich um einen Bereich von Zellen handeln (z. B. „d1:e10“).|
+| isAutoGetSerialName| Boolescher Wert| Abfrage| WAHR|
+| Titel| Zeichenfolge| Abfrage| Gibt den Namen des Diagrammtitels an.|
+| Ordner| Zeichenfolge| Abfrage| Der Arbeitsmappenordner.|
+| Speichername| Zeichenfolge| Abfrage| Speichername.|
+|Datenaufkleber| Boolescher Wert| Abfrage| WAHR|
+| dataLabelsPosition| Zeichenfolge| Abfrage| Über|
+| PivotTableSheet| Zeichenfolge| Abfrage||
+| PivotTableName| Zeichenfolge| Abfrage||
  
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Charts/PutWorksheetAddChart) definiert eine öffentlich zugängliche Programmierschnittstelle und lässt Sie REST-Interaktionen direkt von einem Webbrowser ausführen.
+ Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Charts/PutWorksheetAddChart) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht die Durchführung von REST-Interaktionen direkt über einen Webbrowser.
  
-Sie können das cURL-Befehlszeilentool verwenden, um einfach auf Aspose.Cells-Webdienste zuzugreifen. Das folgende Beispiel zeigt, wie Sie Cloud API mit cURL anrufen.
+Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie man mit cURL Anrufe zur Cloud API tätigt.
 
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
@@ -78,9 +78,9 @@ curl  -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cha
 
 ## Cloud SDK-Familie
  
- Die Verwendung eines SDK ist der beste Weg, um die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und lässt Sie sich auf Ihre Projektaufgaben konzentrieren. Bitte überprüfen Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+ Die Verwendung eines SDK ist der beste Weg, die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte schauen Sie sich die an[GitHub-Repository](https://github.com/aspose-cells-cloud) Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie hier.
  
-Die folgenden Codebeispiele zeigen, wie Sie mit verschiedenen SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+Die folgenden Codebeispiele veranschaulichen, wie Aspose.Cells-Webdienste mithilfe verschiedener SDKs aufgerufen werden:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Objective C" tabName8="Perl" tabName9="Android" tabName10="Go" >}}
 

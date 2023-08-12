@@ -34,7 +34,7 @@ POST https://api.aspose.cloud/v3.0/cells/export
 | тип объекта| нить| запрос|тип объекта (книга/рабочий лист/диаграмма/форма/изображение/списокобъект/олеобъект)|
 | формат| нить| запрос|[Формат файла](/cells/ru/supported-file-formats/)  |
  
-[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/LiteCells/PostExport) определяет общедоступный программный интерфейс и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) определяет общедоступный программный интерфейс и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
  
 Вы можете использовать инструмент командной строки cURL для простого доступа к веб-службам Aspose.Cells. В следующем примере показано, как звонить в Cloud API с номером cURL.
  
@@ -102,7 +102,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/export" \
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LiteCells-Export.php" >}}
+{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LightCells-Export.php" >}}
 
 
 {{< /tab >}}
@@ -134,7 +134,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/export" \
 
 {{< tab tabNum="9" >}}
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "LiteCellsExport.py" >}}
+{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "LightCellsExport.py" >}}
 {{< /tab >}}
 
 {{< /tabs >}}

@@ -9,7 +9,7 @@ weight: 60
 keywords: Replace text from Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) workbook
 description: Aspose.Cells Cloud REST API, Excel çalışma kitabından metin değiştirmeyi destekler. SDK, geliştirme dili türlerini destekler. Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift'i içerir
 ---
-Bu REST API, bir Excel çalışma kitabında `replace` metnini gösterir.
+Bu REST API, bir Excel çalışma kitabında `replace` metnini belirtir.
  
 ## RSET API
  

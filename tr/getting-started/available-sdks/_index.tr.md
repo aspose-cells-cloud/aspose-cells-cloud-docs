@@ -9,7 +9,7 @@ weight: 30
 ## **Aspose.Cells Bulut SDK'ları**
 Aspose.Cells Cloud, mevcut sistemlere kolay entegrasyon sağlayan modern bir REST odaklı API'dir.
 ### **Neden bir SDK kullanmalısınız?**
-Bir geliştiricinin geliştirmeyi hızlandırmasının en hızlı yolu bir SDK (API istemcisi) kullanmaktır. Bir SDK, istekte bulunma ve yanıtları işleme gibi pek çok alt düzey ayrıntıyla ilgilenir ve projenize özel kod yazmaya odaklanmanızı sağlar.
+Bir geliştiricinin geliştirmeyi hızlandırmasının en hızlı yolu bir SDK (API istemcisi) kullanmaktır. Bir SDK, istekte bulunma ve yanıtları işleme ile ilgili pek çok alt düzey ayrıntıyla ilgilenir ve projenize özel kod yazmaya odaklanmanızı sağlar.
 ### **SDK avantajları**
 Desteklenen SDK'larımız %100 test edilmiştir ve kullanıma hazırdır. Bu SDK'lar açık kaynaklıdır ve bir MIT lisansına sahiptir. Bunları kullanabilir ve hatta tamamen ücretsiz olarak özelleştirebilirsiniz.
 ### **Desteklenen SDK'lar**

@@ -4,7 +4,7 @@ type: docs
 url: /ru/get-cell-data-from-a-worksheet/
 weight: 10
 ---
-Этот REST API указывает, что шоу получает `cell` в файле Excel, когда параметр `cellOrMethodName` является именем ячейки.
+Этот REST API указывает, что показывает получение `cell` в файле Excel, когда параметр `cellOrMethodName` является именем ячейки.
 
 - **cURL Пример**
 

@@ -15,5 +15,5 @@ weight: 100
 **ملخص**
 
 -  تم استخدام Excel تعليقات ل[أضف ملاحظة أو اشرح صيغة في خلية](/cells/ar/comments/add/).
--  Excel يوفر للمستخدمين مرونة[التحرير](/cells/ar/comments/update/), [الحذف](/cells/ar/comments/delete/) ، و[عرض](/cells/ar/comments/get/) أو[إخفاء](/cells/ar/comments/update/) تعليقات على ورقة عمل Excel.
+- Excel يوفر للمستخدمين مرونة[التحرير](/cells/ar/comments/update/), [الحذف](/cells/ar/comments/delete/) ، و[عرض](/cells/ar/comments/get/) أو[إخفاء](/cells/ar/comments/update/) تعليقات على ورقة عمل Excel.
 -  يمكن للمستخدمين أيضًا[تغيير الحجم](/cells/ar/comments/update/) و[يتحرك](/cells/ar/comments/update/) مربع التعليق Excel.

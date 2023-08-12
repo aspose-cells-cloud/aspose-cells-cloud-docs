@@ -20,7 +20,7 @@ Una hoja de trabajo es una colección de celdas donde guarda y manipula los dato
     - [Cómo convertir la hoja de trabajo Excel a la imagen.](/cells/es/worksheets/to-image/)
 - [Cómo agregar la hoja de trabajo Excel.](/cells/es/worksheets/add/)
 - [Cómo agregar el fondo de la hoja de trabajo Excel.](/cells/es/worksheets/background/add/) 
-- [Cómo ordenar los datos de la hoja de trabajo Excel.](/cells/es/worksheets/sort-data/) 
+- [Cómo ordenar los datos de la hoja de cálculo Excel.](/cells/es/worksheets/sort-data/) 
 - [Cómo ocultar la hoja de trabajo Excel.](/cells/es/worksheets/hide/)
 - [Cómo mostrar la hoja de trabajo Excel.](/cells/es/worksheets/unhide/)
 - [Cómo mover la hoja de trabajo Excel.](/cells/es/worksheets/move/)

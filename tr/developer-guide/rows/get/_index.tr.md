@@ -1,7 +1,7 @@
 ﻿---
 title: Excel çalışma sayfasında satır alma ile çalışma
 second_title: Aspose.Cells Cloud Documen
-linktitle: ge
+linktitle: Ge
 type: docs
 url: /tr/rows/get/
 keywords: Working with getting row on an Excel worksheet. How to add rows on an Excel worksheet

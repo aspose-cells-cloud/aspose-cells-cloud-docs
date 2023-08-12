@@ -4,7 +4,7 @@ type: docs
 url: /tr/charts/second-value-axis/get/
 weight: 60
 ---
- Bu REST API, Grafiği Al İkinci Değer Eksenini belirtir.
+ Bu REST API, Grafiği Al İkinci Değer Eksenini gösterir.
  
 ## RSET API
  

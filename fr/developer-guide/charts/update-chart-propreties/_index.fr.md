@@ -22,8 +22,8 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{ch
 | NomFeuille| chaîne| chemin||
 | graphiqueIndex| entier| chemin||
 | graphique|| corps||
-| dossier| chaîne| mettre en doute||
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| dossier| chaîne| requête||
+| nom_stockage| chaîne| requête| nom de stockage.|
 
 <br/>
  

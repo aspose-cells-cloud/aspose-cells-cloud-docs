@@ -15,5 +15,5 @@ weight: 100
 **Riepilogo**
 
 -  Excel i commenti servono[aggiungere una nota o spiegare una formula in una cella](/cells/it/comments/add/).
--  Excel offre agli utenti la flessibilità di[la modifica](/cells/it/comments/update/), [eliminazione](/cells/it/comments/delete/) , E[mostrando](/cells/it/comments/get/) O[nascondersi](/cells/it/comments/update/) commenti su un foglio di lavoro Excel.
+- Excel offre agli utenti la flessibilità di[la modifica](/cells/it/comments/update/), [eliminazione](/cells/it/comments/delete/) , E[mostrando](/cells/it/comments/get/) O[nascondersi](/cells/it/comments/update/) commenti su un foglio di lavoro Excel.
 -  Gli utenti possono anche[ridimensiona](/cells/it/comments/update/) E[mossa](/cells/it/comments/update/) la casella dei commenti Excel.

@@ -1,7 +1,7 @@
 ﻿---
 title: 替换 Excel 文件中的文本
 second_title: Aspose.Cells Cloud Documen
-linktitle: 不使用存储替换
+linktitle: 不使用存储进行替换
 type: docs
 url: /zh/replace/
 keywords: Replace old value by new value on Excel files
@@ -26,11 +26,11 @@ POST https://api.aspose.cloud/v3.0/cells/replace
 |文本|细绳|询问||
 |新文本|细绳|询问||
 |密码|细绳|询问||
-|表名|细绳|询问||
+|工作表名称|细绳|询问||
  
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/LiteCells/PostReplace)定义了一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+这[开放API规范](https://apireference.aspose.cloud/cells/#/LightCells/PostReplace)定义了一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
  
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例显示如何使用 cURL 调用 Cloud API。
+您可以使用cURL命令行工具轻松访问Aspose.Cells Web服务。以下示例展示如何使用 cURL 呼叫云端 API。
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
  
 {{< tab tabNum="1" >}}
@@ -76,11 +76,11 @@ curl -v "http://api.aspose.cloud/v3.0/cells/replace?text=1&newtext=aspose.cells.
  
 
 
-## 云 SDK 系列
+## 云SDK系列
 
-使用 SDK 是加速开发的最佳方式。 SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 仓库](https://github.com/aspose-cells-cloud)有关 Aspose.Cells Cloud SDK 的完整列表。
+使用 SDK 是加快开发速度的最佳方式。 SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)有关 Aspose.Cells Cloud SDK 的完整列表。
 
-以下代码示例演示如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
 
 
 {{< tabs tabTotal="9" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" tabName9="Python" >}}

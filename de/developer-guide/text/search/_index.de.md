@@ -1,15 +1,15 @@
 ﻿---
-title: Suchen Sie Text aus der Datei Excel
+title: Suchen Sie nach Text aus der Datei Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: Suchen ohne Speicher zu verwenden
+linktitle: Suchen, ohne Speicher zu verwenden
 type: docs
 url: /de/search/
 aliases: [/search-without-using-storage/,/search-without-storage/]
 keywords: Find text from Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) files
-description: Aspose.Cells Cloud REST API unterstützt das Suchen von Text aus Excel-Dateien. SDK unterstützt Arten von Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
+description: Aspose.Cells Cloud REST API unterstützt die Suche nach Text aus Excel-Dateien. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
 weight: 50
 ---
-Dieser REST API gibt `search`-Text aus Excel-Dateien an.
+Dieser REST API weist auf `search`-Text aus Excel-Dateien hin.
 `## RSET API
  
 ```bash
@@ -26,7 +26,7 @@ The request parameters are:
 | password | string | query |   |
 | sheetname | string | query |   |
  
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LiteCells/PostSearch) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostSearch) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
  
 You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
  
@@ -205,7 +205,7 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LiteCells-Search.php" >}}
+{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LightCells-Search.php" >}}
 
 {{< /tab >}}
 
@@ -235,7 +235,7 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{< /tab >}}
 {{< tab tabNum="9" >}}
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "LiteCellsSearch.py" >}}
+{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "LightCellsSearch.py" >}}
 {{< /tab >}}
 
 {{< /tabs >}}

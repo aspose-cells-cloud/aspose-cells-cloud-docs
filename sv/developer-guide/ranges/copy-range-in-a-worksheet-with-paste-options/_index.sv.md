@@ -24,7 +24,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges
 |:- |:- |:- |:- |
 | namn| sträng| väg| arbetsbokens namn|
 | arknamn| sträng| väg| kalkylbladsnamn|
-| räckviddOperera|| kropp| copydata,copystyle,copyto,copyvalue|
+| räckviddOperera|| kropp|copydata,copystyle,copyto,copyvalue|
 | mapp| sträng| fråga| Arbetsboksmapp.|
 | lagringsnamn| sträng| fråga| lagringsnamn.|
  

@@ -34,7 +34,7 @@ POST https://api.aspose.cloud/v3.0/cells/export
 | objectType| sträng| fråga|objekttyp (arbetsbok/kalkylblad/diagram/form/bild/listobjekt/oleobjekt)|
 | formatera| sträng| fråga|[Filformat](/cells/sv/supported-file-formats/)  |
  
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/LiteCells/PostExport) definierar ett allmänt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+ De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) definierar ett allmänt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
  
 Du kan använda cURL kommandoradsverktyg för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man ringer till Cloud API med cURL.
  
@@ -102,7 +102,7 @@ Följande kodexempel visar hur man ringer till Aspose.Cells webbtjänster med ol
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LiteCells-Export.php" >}}
+{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LightCells-Export.php" >}}
 
 
 {{< /tab >}}
@@ -134,7 +134,7 @@ Följande kodexempel visar hur man ringer till Aspose.Cells webbtjänster med ol
 
 {{< tab tabNum="9" >}}
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "LiteCellsExport.py" >}}
+{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "LightCellsExport.py" >}}
 {{< /tab >}}
 
 {{< /tabs >}}

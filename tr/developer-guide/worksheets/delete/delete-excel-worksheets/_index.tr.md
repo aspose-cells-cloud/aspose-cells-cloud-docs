@@ -30,7 +30,7 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets
 
 **MatchConditionRequest Özellikleri**
  
-Ad | Tür | Açıklama | notlar
+İsim | Tür | Açıklama | notlar
 ------------ | ------------- | ------------- | -------------
  Normal İfade Modeli | dizi | | [isteğe bağlı]FullMatchKoşulları | dizi[]| | [isteğe bağlı][OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheets) herkesin erişebileceği bir programlama arabirimi tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
  

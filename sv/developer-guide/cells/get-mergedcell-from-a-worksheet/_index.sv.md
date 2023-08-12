@@ -19,7 +19,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/mergedCells
 |:- |:- |:- |:- |
 | namn| sträng| väg| Dokument namn.|
 | arknamn| sträng| väg| Arbetsplatsens namn.|
-| mapp| sträng| fråga|Dokumentmapp.|
+| mapp| sträng| fråga| Dokumentmapp.|
 | lagringsnamn| sträng| fråga| lagringsnamn.|
  
  De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetMergedCells) definierar ett allmänt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.

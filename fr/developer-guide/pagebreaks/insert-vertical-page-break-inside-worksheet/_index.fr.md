@@ -24,13 +24,13 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/verticalpag
 |:- |:- |:- |:- |
 | nom| chaîne| chemin||
 | NomFeuille| chaîne| chemin||
-| nom de cellule| chaîne| mettre en doute||
-| colonne| entier| mettre en doute||
-| ligne| entier| mettre en doute||
-| startRow| entier| mettre en doute||
-| endRow| entier| mettre en doute||
-| dossier| chaîne| mettre en doute||
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| nom de cellule| chaîne| requête||
+| colonne| entier| requête||
+| rangée| entier| requête||
+| startRow| entier| requête||
+| endRow| entier| requête||
+| dossier| chaîne| requête||
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/PageBreaks/PutVerticalPageBreak) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

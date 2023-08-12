@@ -1,7 +1,7 @@
 ﻿---
 title: Eliminar fondo en una hoja de trabajo Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: eliminar
+linktitle: Eliminar
 type: docs
 url: /es/worksheets/background/delete/
 aliases: [/delete-background-or-watermark-of-excel-worksheet/]

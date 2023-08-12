@@ -24,10 +24,10 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/sort
 |:- |:- |:- |:- |
 | nom| chaîne| chemin|Le nom du classeur.|
 | NomFeuille| chaîne| chemin| Le nom de la feuille de calcul.|
-| cellArea| chaîne| mettre en doute| La plage à trier.|
+| cellArea| chaîne| requête| La plage à trier.|
 | trieur de données|| corps| avec les paramètres de tri.|
-| dossier| chaîne| mettre en doute| Le dossier du classeur.|
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| dossier| chaîne| requête| Le dossier du classeur.|
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetRangeSort) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

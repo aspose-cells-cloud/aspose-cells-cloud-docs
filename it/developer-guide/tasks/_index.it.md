@@ -5,7 +5,7 @@ type: docs
 url: /it/tasks/
 aliases: [/working-with-tasks/]
 keywords: REST API, task, spreadsheets, exce
-description: "Cells.Cloud API per Excel operare: operare excel con attività"
+description: "Cells.Cloud API per Excel operare: operare excel con compiti"
 weight: 100
 ---
 ## Lavorare con le attività.

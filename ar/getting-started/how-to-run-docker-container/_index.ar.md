@@ -39,7 +39,7 @@ weight: 100
 docker run   -e "LicensePublicKey=public_key" -e "LicensePrivateKey=private_key" -v c:/data:c:/data  -v C:/Windows/Fonts:C:/Windows/Fonts -p 80:5000   aspose/cells-cloud
 ```
 
-### تكوينات أداة Docker-Compose
+### تكوينات لأداة Docker-Compose
 
 يمكنك كتابة التكوينات التالية في ملف yaml الخاص بك لأداة Docker-Compose:
 

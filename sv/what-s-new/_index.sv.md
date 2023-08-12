@@ -10,6 +10,55 @@ description: Den här sidan beskriver de mest intressanta nya Aspose.Cells Cloud
 ---
 Välkommen till det som är nytt i Aspose.Cells Cloud docs. Använd den här sidan för att snabbt hitta de senaste ändringarna.
 
+## Aspose.Cells Cloud 23.7
+
+ * Stöd för att reparera fil.
+* Optimera konverteringsfunktioner.
+
+
+## Aspose.Cells Cloud 23.6
+
+ * Stöd för att batchlåsa flera filer.
+ * Stöd för att batchlåsa upp flera filer.
+ * Stöd för att batchskydda flera filer.
+ * Stöd för batchdelade multifiler.
+ Fixa sätta dokumentegenskapsapi.
+
+
+## Aspose.Cells Cloud 23.5
+
+ * Fix några metoder är felstavade.
+
+
+## Aspose.Cells Cloud 23.4
+
+ * Stöd för import och export av XML-data.
+
+
+## Aspose.Cells Cloud 23.3
+
+ * Optimera hyperlänkegenskaper.
+
+
+## Aspose.Cells Cloud 23.2
+
+ * Optimera ersätt API.
+* Optimera Swagger UI.
+
+
+
+
+## Aspose.Cells Cloud 23.1
+
+ * Fixa buggen för metoden PostCellCharacters.
+
+
+
+## Aspose.Cells Cloud 22.12
+
+ * Stöd diagramaxeldrift.
+
+
 ## Aspose.Cells Cloud 22.11
 
  * Lägg till nytt api för konvertering till json.
@@ -32,7 +81,7 @@ Välkommen till det som är nytt i Aspose.Cells Cloud docs. Använd den här sid
 
 ## Aspose.Cells Cloud 22.8
 
-* Stöd för att överföra Excel rader till kolumner.
+Stöd för att överföra Excel rader till kolumner.
 
 ## Aspose.Cells Cloud 22.7
 
@@ -46,7 +95,7 @@ Välkommen till det som är nytt i Aspose.Cells Cloud docs. Använd den här sid
 
 ## Aspose.Cells Cloud 22.5
 
-[Förbättring för export API.](https://docs.aspose.cloud/cells/export/)
+* [Förbättring för export API.](https://docs.aspose.cloud/cells/export/)
 * [Förbättring för clear API.](https://docs.aspose.cloud/cells/clear/)
 
 ## Aspose.Cells Cloud 22.4

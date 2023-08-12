@@ -26,8 +26,8 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/mer
 | nom| chaîne| chemin| nom du classeur|
 | NomFeuille| chaîne| chemin| nom de la feuille de calcul|
 | gamme|| corps| plage dans la feuille de calcul|
-| dossier| chaîne| mettre en doute| Dossier de classeur.|
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| dossier| chaîne| requête| Dossier de classeur.|
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeMerge) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

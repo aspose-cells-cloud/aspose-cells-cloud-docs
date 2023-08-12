@@ -6,7 +6,7 @@ type: docs
 url: /ru/worksheets/unhide/
 aliases: [/unhide-excel-worksheets/]
 keywords: Unhide an Excel Worksheet on an Excel Workbook
-description: Aspose.Cells Cloud REST API поддерживает отображение рабочего листа Excel в рабочей книге Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и swift.
+description: Aspose.Cells Cloud REST API поддерживает отображение листа Excel в книге Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и swift.
 weight: 60
 ---
 Этот REST API указывает на `unhide worksheet`.

@@ -1,7 +1,7 @@
 ﻿---
 title: Belirli bir Belge Özelliği Alın
 second_title: Aspose.Cells Cloud Documen
-linktitle: ge
+linktitle: Ge
 type: docs
 url: /tr/document-properties/get/
 aliases: [/get-a-particular-document-property/]

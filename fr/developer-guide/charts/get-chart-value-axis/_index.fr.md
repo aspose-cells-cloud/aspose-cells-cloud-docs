@@ -20,8 +20,8 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{cha
 | nom| chaîne| chemin||
 | NomFeuille| chaîne| chemin||
 | graphiqueIndex| entier| chemin||
-| dossier| chaîne| mettre en doute||
-| nom_stockage| chaîne| mettre en doute||
+| dossier| chaîne| requête||
+| nom_stockage| chaîne| requête||
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Charts/GetChartValueAxis) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

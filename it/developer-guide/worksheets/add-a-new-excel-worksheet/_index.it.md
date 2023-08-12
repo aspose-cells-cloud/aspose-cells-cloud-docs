@@ -26,7 +26,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
 | foglioNome| corda| sentiero| Il nuovo nome del foglio.|
 | posizione| numero intero| domanda| La nuova posizione del foglio.|
 | sheettype| corda| domanda| Il nuovo tipo di foglio.|
-| cartella| corda| domanda|Cartella documenti.|
+| cartella| corda| domanda| Cartella documenti.|
 | storageName| corda| domanda| nome di archiviazione.|
  
  IL[Specifica OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PutAddNewWorksheet) definisce un'interfaccia di programmazione accessibile pubblicamente e consente di eseguire interazioni REST direttamente da un browser web.

@@ -24,12 +24,12 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/copy
 |:- |:- |:- |:- |
 | nom| chaîne| chemin||
 | NomFeuille| chaîne| chemin||
-| sourceSheet| chaîne| mettre en doute||
+| sourceSheet| chaîne| requête||
 | choix|| corps||
-| sourceWorkbook| chaîne| mettre en doute||
-| dossier d'origine| chaîne| mettre en doute||
-| dossier| chaîne| mettre en doute||
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| sourceWorkbook| chaîne| requête||
+| dossier d'origine| chaîne| requête||
+| dossier| chaîne| requête||
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostCopyWorksheet) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

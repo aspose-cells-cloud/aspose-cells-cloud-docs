@@ -1,5 +1,5 @@
 ﻿---
-title: Publicité
+title: Annonce
 type: docs
 url: /fr/hyperlinks/add/
 aliases: [/add-hyperlinks-to-excel-worksheet/]
@@ -22,13 +22,13 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Nom du document.|
 | NomFeuille| chaîne| chemin| Nom de la feuille de calcul.|
-| première rangée| entier| mettre en doute||
-| première colonne| entier| mettre en doute||
-| totalRows| entier| mettre en doute||
-| totalColonnes| entier| mettre en doute||
-| adresse| chaîne| mettre en doute||
-| dossier| chaîne| mettre en doute| Le dossier de documents.|
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| première rangée| entier| requête||
+| première colonne| entier| requête||
+| totalRows| entier| requête||
+|totalColonnes| entier| requête||
+| adresse| chaîne| requête||
+| dossier| chaîne| requête| Le dossier de documents.|
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Hypelinks/PutWorksheetHyperlink) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

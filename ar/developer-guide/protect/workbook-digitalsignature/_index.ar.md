@@ -9,7 +9,7 @@ keywords: Add digital signature for an Excel workbook
 description: Aspose.Cells Cloud REST API يدعم إضافة توقيع رقمي لمصنف Excel. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
 weight: 35
 ---
-يشير هذا REST API إلى إضافة `digital signature` لمصنف Excel.
+ يشير هذا REST API إلى إضافة `digital signature` لمصنف Excel.
  
 ## RSET API
  

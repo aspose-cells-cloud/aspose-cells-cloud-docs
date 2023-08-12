@@ -23,13 +23,13 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditional
 | nom| chaîne| chemin||
 | NomFeuille| chaîne| chemin||
 | indice| entier| chemin||
-| cellArea| chaîne| mettre en doute||
-| taper| chaîne| mettre en doute||
-| typeopérateur| chaîne| mettre en doute||
-| formule 1| chaîne| mettre en doute||
-| formule2| chaîne| mettre en doute||
-| dossier| chaîne| mettre en doute||
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| cellArea| chaîne| requête||
+| taper| chaîne| requête||
+| typeopérateur| chaîne| requête||
+| formule 1| chaîne| requête||
+| formule2| chaîne| requête||
+| dossier| chaîne| requête||
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/PutWorksheetFormatCondition) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

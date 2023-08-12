@@ -1,10 +1,10 @@
 ﻿---
-title: Speicher
+title: Storag
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/storage/
 keywords: disc-usage, file version, exist
-description: Aspose.Cells Cloud REST API unterstützt das Hochladen, Herunterladen, Löschen, Kopieren und Verschieben von Ordnern. SDK unterstützt Arten von Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
+description: Aspose.Cells Cloud REST API unterstützt das Hochladen, Herunterladen, Löschen, Kopieren und Verschieben von Ordnern. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
 weight: 100
 ---
 Aspose.Cells Cloud bietet Arten von Speicherbetriebs-APIs.

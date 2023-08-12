@@ -24,12 +24,12 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
 |:- |:- |:- |:- |
 | nom| chaîne| chemin|Le nom du classeur.|
 | NomFeuille| chaîne| chemin| Le nom de la feuille de calcul.|
-| sourceRowIndex| entier| mettre en doute| Index de ligne source|
-| destinationRowIndex| entier| mettre en doute|Index de la ligne de destination|
-| rowNumber| entier| mettre en doute| Le numéro de ligne copié|
-| feuille de travail| chaîne| mettre en doute| feuille de travail|
-| dossier| chaîne| mettre en doute| Le dossier de documents.|
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| sourceRowIndex| entier| requête| Index de ligne source|
+| destinationRowIndex| entier| requête| Index de la ligne de destination|
+| rowNumber| entier| requête| Le numéro de ligne copié|
+| feuille de travail| chaîne| requête| feuille de travail|
+| dossier| chaîne| requête| Le dossier de documents.|
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostCopyWorksheetRows) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

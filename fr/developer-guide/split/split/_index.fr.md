@@ -22,12 +22,12 @@ POST http://api.aspose.cloud/v3.0/cells/split
 | Le nom du paramètre| Taper| Chemin/chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | déposer| déposer| Données de formulaire| Fichier à uploader|
-| format| chaîne| mettre en doute||
-| mot de passe| chaîne| mettre en doute||
-| depuis| entier| mettre en doute||
-| pour| entier| mettre en doute||
+| format| chaîne| requête||
+| mot de passe| chaîne| requête||
+| depuis| entier| requête||
+| à| entier| requête||
  
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/LiteCells/PostSplit) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
+ Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostSplit) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  
 Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment passer des appels vers le Cloud API avec cURL.
  
@@ -93,7 +93,7 @@ Les exemples de code suivants montrent comment effectuer des appels vers les ser
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LiteCells-Split.php" >}}
+{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LightCells-Split.php" >}}
 
 {{< /tab >}}
 
@@ -123,6 +123,6 @@ Les exemples de code suivants montrent comment effectuer des appels vers les ser
 {{< /tab >}}
 {{< tab tabNum="9" >}}
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "LiteCellsSplit.py" >}}
+{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "LightCellsSplit.py" >}}
 {{< /tab >}}
 {{< /tabs >}}

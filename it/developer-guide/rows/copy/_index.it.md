@@ -25,7 +25,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
 | nome| corda| sentiero|Il nome della cartella di lavoro.|
 | foglioNome| corda| sentiero| Il nome del foglio di lavoro.|
 | sourceRowIndex| numero intero| domanda| Indice della riga di origine|
-| destinazioneRowIndex| numero intero| domanda|Indice della riga di destinazione|
+| destinazioneRowIndex| numero intero| domanda| Indice della riga di destinazione|
 | rigaNumero| numero intero| domanda| Il numero di riga copiato|
 | foglio di lavoro| corda| domanda| foglio di lavoro|
 | cartella| corda| domanda| La cartella dei documenti.|

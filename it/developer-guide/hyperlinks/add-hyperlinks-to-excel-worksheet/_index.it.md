@@ -25,7 +25,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks
 | prima riga| numero intero| domanda||
 | firstColumn| numero intero| domanda||
 | totalRows| numero intero| domanda||
-| totalColumns| numero intero| domanda||
+|totalColumns| numero intero| domanda||
 | indirizzo| corda| domanda||
 | cartella| corda| domanda| La cartella dei documenti.|
 | storageName| corda| domanda| nome di archiviazione.|

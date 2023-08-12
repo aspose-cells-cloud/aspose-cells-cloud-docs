@@ -24,8 +24,8 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/documentproperties/{propertyName}
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Le nom du document.|
 | nom de la propriété| chaîne| chemin| Le nom de la propriété.|
-| dossier| chaîne| mettre en doute| Le dossier de documents.|
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| dossier| chaîne| requête| Le dossier de documents.|
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Properties/GetDocumentProperty) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

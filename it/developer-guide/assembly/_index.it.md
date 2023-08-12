@@ -25,7 +25,7 @@ POST https://api.aspose.cloud/v3.0/cells/assembly
 | fonte di dati| corda| domanda||
 | formato| corda| domanda| Xlsx|
  
- IL[Specifica OpenAPI](https://apireference.aspose.cloud/cells/#/LiteCells/PostAssemble) definisce un'interfaccia di programmazione accessibile pubblicamente e consente di eseguire interazioni REST direttamente da un browser web.
+ IL[Specifica OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostAssemble) definisce un'interfaccia di programmazione accessibile pubblicamente e consente di eseguire interazioni REST direttamente da un browser web.
  
 È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi Web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate a Cloud API con cURL.
 
@@ -93,7 +93,7 @@ I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Asp
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LiteCells-Assemble.php" >}}
+{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LightCells-Assemble.php" >}}
 
 
 {{< /tab >}}
@@ -125,7 +125,7 @@ I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Asp
 
 {{< tab tabNum="9" >}}
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "LiteCellsAssembly.py" >}}
+{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "LightCellsAssembly.py" >}}
 {{< /tab >}}
 
 {{< /tabs >}}

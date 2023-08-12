@@ -26,9 +26,9 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables
 | NomFeuille| chaîne| chemin||
 | indextablepivot| entier| chemin||
 | filtre|| corps||
-| besoin de recalculer| booléen| mettre en doute| FAUX|
-| dossier| chaîne| mettre en doute||
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| besoin de recalculer| booléen| requête| FAUX|
+| dossier| chaîne| requête||
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/PivotTables/PutWorksheetPivotTableFilter) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

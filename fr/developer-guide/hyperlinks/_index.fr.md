@@ -12,7 +12,7 @@ weight: 100
 
 ## Travailler avec des hyperliens sur un fichier Excel.
 
-- [Comment obtenir une description de lien hypertexte à partir de la feuille de calcul Excel.](/cells/fr/hyperlinks/get/)
+- [Comment obtenir une description de lien hypertexte à partir de la feuille de travail Excel.](/cells/fr/hyperlinks/get/)
 - [Comment obtenir la description de toutes les hyperliens à partir de la feuille de travail Excel.](/cells/fr/hyperlinks/get-all/)
 - [Comment ajouter des hyperliens à la feuille de travail Excel](/cells/fr/hyperlinks/add/)
 - [Comment mettre à jour les hyperliens dans la feuille de calcul Excel](/cells/fr/hyperlinks/update/)

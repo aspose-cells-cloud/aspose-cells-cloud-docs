@@ -1,5 +1,5 @@
 ﻿---
-title:  احصل على محور الفئة الثانية في الرسم البياني
+title: احصل على محور الفئة الثانية في الرسم البياني
 type: docs
 url: /ar/charts/second-category-axis/get/
 weight: 60

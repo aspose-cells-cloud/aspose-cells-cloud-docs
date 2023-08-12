@@ -1,5 +1,5 @@
 ﻿---
-title: Figer les volets sur une feuille de calcul Excel
+title: Figer les volets sur une feuille de travail Excel
 second_title: Aspose.Cells Cloud Documen
 linktitle: Freeze
 type: docs
@@ -24,12 +24,12 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/freezepanes
 |:- |:- |:- |:- |
 | nom| chaîne| chemin||
 | NomFeuille| chaîne| chemin||
-| ligne| entier| mettre en doute||
-| colonne| entier| mettre en doute||
-| freezeedRows| entier| mettre en doute||
-| colonnesfigées| entier| mettre en doute||
-| dossier| chaîne| mettre en doute||
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| rangée| entier| requête||
+| colonne| entier| requête||
+| freezeedRows| entier| requête||
+| colonnesfigées| entier| requête||
+| dossier| chaîne| requête||
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PutWorksheetFreezePanes) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

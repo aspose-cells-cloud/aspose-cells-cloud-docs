@@ -15,5 +15,5 @@ weight: 100
 **Sammanfattning**
 
 -  Excel kommentarer är vana vid[lägg till en anteckning eller förklara en formel i en cell](/cells/sv/comments/add/).
--  Excel ger användarna flexibiliteten av[redigering](/cells/sv/comments/update/), [Tar bort](/cells/sv/comments/delete/) , och[som visar](/cells/sv/comments/get/) eller[gömmer sig](/cells/sv/comments/update/) kommentarer på ett Excel arbetsblad.
+- Excel ger användarna flexibiliteten av[redigering](/cells/sv/comments/update/), [Tar bort](/cells/sv/comments/delete/) , och[som visar](/cells/sv/comments/get/) eller[gömmer sig](/cells/sv/comments/update/) kommentarer på ett Excel arbetsblad.
 -  Användare kan också[ändra storlek](/cells/sv/comments/update/) och[flytta](/cells/sv/comments/update/) kommentarsrutan Excel.

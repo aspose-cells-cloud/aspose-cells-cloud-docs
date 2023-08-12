@@ -25,7 +25,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/colu
 | nome| corda| sentiero|Il nome della cartella di lavoro.|
 | foglioNome| corda| sentiero| Il nome del foglio di lavoro.|
 | startColumn| numero intero| domanda| L'indice della colonna iniziale da utilizzare.|
-| totalColumns| numero intero| domanda| Numero di colonne da azionare.|
+|totalColumns| numero intero| domanda| Numero di colonne da azionare.|
 | cartella| corda| domanda| La cartella dei documenti.|
 | storageName| corda| domanda| nome di archiviazione.|
  

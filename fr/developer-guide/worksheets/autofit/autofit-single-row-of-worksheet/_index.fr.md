@@ -24,12 +24,12 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitrow
 |:- |:- |:- |:- |
 | nom| chaîne| chemin||
 | NomFeuille| chaîne| chemin||
-| index de ligne| entier| mettre en doute||
-| première colonne| entier| mettre en doute||
-| dernièreColonne| entier| mettre en doute||
+| index de ligne| entier| requête||
+| première colonne| entier| requête||
+| dernièreColonne| entier| requête||
 | autoFitterOptions|| corps||
-| dossier| chaîne| mettre en doute||
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| dossier| chaîne| requête||
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostAutofitWorksheetRow) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

@@ -27,12 +27,12 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts
 | columnaderechainferior| entero| consulta|0 |
 | área| cadena| consulta| Especifica valores a partir de los cuales trazar la serie de datos.|
 | esVertical| booleano| consulta| Verdadero|
-|categoríaDatos| cadena| consulta| Obtiene o establece el rango de valores de Axis de categoría. Puede ser un rango de celdas (como "d1:e10").|
+| categoríaDatos| cadena| consulta| Obtiene o establece el rango de valores de Axis de categoría. Puede ser un rango de celdas (como "d1:e10").|
 | esAutoGetSerialName| booleano| consulta| Verdadero|
 | título| cadena| consulta| Especifica el nombre del título del gráfico.|
 | carpeta| cadena| consulta| La carpeta del libro de trabajo.|
 | NombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
-| etiquetas de datos| booleano| consulta| Verdadero|
+|etiquetas de datos| booleano| consulta| Verdadero|
 | dataLabelsPosición| cadena| consulta| Arriba|
 | pivotTableSheet| cadena| consulta||
 | pivotTableName| cadena| consulta||

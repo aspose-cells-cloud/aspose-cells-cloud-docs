@@ -13,6 +13,6 @@ weight: 100
 - [Cómo agregar un salto de página vertical en una hoja de trabajo Excel.](/cells/es/page-breaks/add-vertical-page-break/)
 - [Cómo agregar un salto de página horizontal en una hoja de trabajo Excel.](/cells/es/page-breaks/add-horizontal-page-break/)
 - [Cómo eliminar un salto de página vertical en una hoja de cálculo Excel.](/cells/es/page-breaks/delete-vertical-page-break/)
-- [Cómo eliminar un salto de página horizontal en una hoja de cálculo Excel.](/cells/es/page-breaks/delete-vertical-page-break/)
+- [Cómo eliminar un salto de página horizontal en una hoja de trabajo Excel.](/cells/es/page-breaks/delete-vertical-page-break/)
 - [Cómo obtener saltos de página verticales en una hoja de trabajo Excel.](/cells/es/page-breaks/get-vertical-page-breaks/)
 - [Cómo obtener saltos de página horizontales en una hoja de trabajo Excel.](/cells/es/page-breaks/get-vertical-page-breaks/)

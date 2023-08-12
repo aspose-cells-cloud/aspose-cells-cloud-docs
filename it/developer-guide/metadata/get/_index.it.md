@@ -68,7 +68,7 @@ I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Asp
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LiteCells-Metadata-Get.php" >}}
+{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LightCells-Metadata-Get.php" >}}
 
 {{< /tab >}}
 
@@ -98,6 +98,6 @@ I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Asp
 {{< /tab >}}
 {{< tab tabNum="9" >}}
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "LiteCellsMetadata-Get.py" >}}
+{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "LightCellsMetadata-Get.py" >}}
 {{< /tab >}}
 {{< /tabs >}}

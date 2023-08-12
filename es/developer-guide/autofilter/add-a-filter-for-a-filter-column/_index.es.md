@@ -91,7 +91,7 @@ Los siguientes ejemplos de código demuestran cómo realizar llamadas a los serv
 
 {{< tab tabNum="3" >}}
 
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LiteCells-Assemble.php" >}}
+{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LightCells-Assemble.php" >}}
 
 {{< /tab >}}
 

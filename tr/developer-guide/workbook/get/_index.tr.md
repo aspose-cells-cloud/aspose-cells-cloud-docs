@@ -1,7 +1,7 @@
 ﻿---
 title: Excel workboo ile çalışma
 second_title: Aspose.Cells Cloud Documen
-linktitle: ge
+linktitle: Ge
 type: docs
 url: /tr/workbook/get/
 keywords: Working with getting on an Excel workbook

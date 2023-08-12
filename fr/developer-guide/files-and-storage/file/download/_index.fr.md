@@ -21,8 +21,8 @@ GET http://api.aspose.cloud/v3.0/cells/storage/file/{path}
 | Le nom du paramètre| Taper| Chemin/chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | chemin| chaîne| chemin| Chemin du fichier, par exemple '/dossier/fichier.ext'|
-| nom_stockage| chaîne| mettre en doute| Nom de stockage|
-| ID de version| chaîne| mettre en doute| ID de la version du fichier à télécharger|
+| nom_stockage| chaîne| requête| Nom de stockage|
+| ID de version| chaîne| requête| ID de la version du fichier à télécharger|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/File/DownloadFile) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

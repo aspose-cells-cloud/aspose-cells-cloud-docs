@@ -5,7 +5,7 @@ type: docs
 url: /zh/developer-guide/
 aliases: [/developer-guide/v3.0/,/developer-guide-v3.0/]
 keywords: How to use Aspose.Cells Cloud REST APIs. Office Excel 2013,  Office Excel 2016,  Office Excel 2019，office Excel 365
-description: 本开发人员指南描述了实际场景和技巧，可帮助您使用特定的 Aspose.Cells for .NET 功能，实现特定的 Excel 文档外观，或使用例成为可能
+description: 本开发人员指南描述了实际场景和技巧，以帮助您使用特定的 Aspose.Cells for .NET 功能、实现特定的 Excel 文档外观或使用例成为可能
 weight: 20
 ---
 ## 使用 Aspose.Cells 云 REST API。
@@ -14,7 +14,7 @@ weight: 20
 {{< tab tabNum="1" >}}
 <div class="row">
     <div class="col-md-6">
-        <p>工作簿新建、转换、保存</p>
+        <p>工作簿新建、转换、另存为</p>
         <ul>
             <li><a href="/cells/zh/create-an-empty-excel-workbook/">创建一个空的 Excel 工作簿。</a></li>
             <li><a href="/cells/zh/create-excel-workbook-from-a-template-file/">从模板文件创建 Excel 工作簿。</a></li>
@@ -25,11 +25,11 @@ weight: 20
         <p>搜索、替换</p>
         <ul>
             <li><a href="/cells/zh/search/">搜索文本形式 Excel 文件。</a></li>
-            <li><a href="/cells/zh/replace/">在 Excel 文件上用新值替换旧值。</a></li>
+            <li><a href="/cells/zh/replace/">将 Excel 文件上的旧值替换为新值。</a></li>
         </ul>
         <p>压缩</p>
         <ul>
-            <li><a href="/cells/zh/compress/">压缩 Excel 个文件。</a></li>
+            <li><a href="/cells/zh/compress/">压缩 Excel 文件。</a></li>
         </ul>
     </div>
     <div class="col-md-6">
@@ -53,12 +53,12 @@ weight: 20
     <div class="col-md-6">
         <p>Cells 字体、样式、条件格式和值</p>
         <ul>
-            <li><a href="/cells/zh/get-cell-style-from-a-worksheet/">从 Excel 工作表中获取单元格样式。</a></li>
+            <li><a href="/cells/zh/get-cell-style-from-a-worksheet/">从 Excel 工作表获取单元格样式。</a></li>
             <li><a href="/cells/zh/update-multiple-cells-style/">更新 Excel 工作表上的多个单元格样式。</a></li>
             <li><a href="/cells/zh/change-cell-style-in-excel-worksheet/">更新 Excel 工作表上的单元格样式。</a></li>
             <li><a href="/cells/zh/apply-rich-text-formatting-to-a-cell/">将富文本格式设置为 Excel 工作表的单元格。</a></li>
             <li><a href="/cells/zh/clear-contents-and-styles-of-cells-in-excel-worksheet/">清除 Excel 工作表上单元格的内容和样式。</a></li>
-            <li><a href="/cells/zh/working-with-conditional-formatting/">在 Excel 工作表上添加、删除和更新条件格式。</a></li>
+            <li><a href="/cells/zh/working-with-conditional-formatting/">添加、删除和更新 Excel 工作表上的条件格式。</a></li>
             <li><a href="/cells/zh/set-value-of-a-cell-in-a-worksheet/">设置 Excel 工作表上单元格的值。</a></li>
         </ul>
     </div>
@@ -70,11 +70,11 @@ weight: 20
             <li><a href="/cells/zh/copy-rows-in-excel-worksheet/">复制 Excel 工作表上的行。</a></li>
             <li><a href="/cells/zh/hide-rows-in-excel-worksheet/">隐藏 Excel 工作表上的行。</a></li>
             <li><a href="/cells/zh/auto-fit-rows-in-excel-workbooks/">自动调整 Excel 工作簿上的行。</a></li>
-            <li><a href="/cells/zh/columns/add/">在 Excel 工作表上添加一个空列。</a></li>
+            <li><a href="/cells/zh/columns/add/">在 Excel 工作表上添加空列。</a></li>
             <li><a href="/cells/zh/columns/delete/">从 Excel 工作表中删除列。</a></li>
             <li><a href="/cells/zh/columns/copy/">复制 Excel 工作表上的列。</a></li>
             <li><a href="/cells/zh/columns/hide/">隐藏 Excel 工作表上的列。</a></li>
-            <li><a href="/cells/zh/columns/autofit/">Excel 工作簿上的自动调整列。</a></li>
+            <li><a href="/cells/zh/columns/autofit/">自动调整 Excel 工作簿上的列。</a></li>
         </ul>
     </div>
 </div>
@@ -97,7 +97,7 @@ weight: 20
             <li><a href="/cells/zh/add-a-list-object-or-table-inside-the-worksheet/">在 Excel 工作表上添加列表对象。</a></li>
             <li><a href="/cells/zh/update-a-list-object-or-table-inside-the-worksheet/">更新 Excel 工作表上的列表对象。</a></li>
             <li><a href="/cells/zh/convert-list-object-or-table-to-range/">将列表对象转换为范围。</a></li>
-            <li><a href="/cells/zh/sort-table-data/">对表格数据进行排序。</a></li>
+            <li><a href="/cells/zh/sort-table-data/">对表数据进行排序。</a></li>
         </ul>
         <p>对象</p>
         <ul>
@@ -113,18 +113,18 @@ weight: 20
         <ul>
             <li><a href="/cells/zh/add-a-shape-inside-the-worksheet/">在 Excel 工作表上添加形状。</a></li>
             <li><a href="/cells/zh/delete-all-shapes-inside-the-worksheet/">删除 Excel 工作表上的所有形状。</a></li>
-            <li><a href="/cells/zh/delete-a-shape-by-index-inside-the-worksheet/">在 Excel 工作表上按索引删除形状。</a></li>
+            <li><a href="/cells/zh/delete-a-shape-by-index-inside-the-worksheet/">按 Excel 工作表上的索引删除形状。</a></li>
         </ul>
         <p>数据透视表</p>
         <ul>
             <li><a href="/cells/zh/add-a-pivot-table-in-a-worksheet/">在 Excel 工作表上添加数据透视表。</a></li>
-            <li><a href="/cells/zh/delete-worksheet-pivot-tables/">在所有数据透视表上删除 Excel 工作表。</a></li>
-            <li><a href="/cells/zh/delete-worksheet-pivot-table-by-index/">在 Excel 工作表上按索引删除数据透视表。</a></li>
+            <li><a href="/cells/zh/delete-worksheet-pivot-tables/">删除所有数据透视表上的 Excel 工作表。</a></li>
+            <li><a href="/cells/zh/delete-worksheet-pivot-table-by-index/">按 Excel 工作表上的索引删除数据透视表。</a></li>
             <li><a href="/cells/zh/update-cell-style-for-pivot-table/">更新 Excel 工作表上数据透视表的单元格样式。</a></li>
-            <li><a href="/cells/zh/update-style-for-pivot-table/">更新 Excel 工作表上数据透视表的样式。</a></li>
-            <li><a href="/cells/zh/working-with-pivot-filters/">在 Excel 工作表上使用数据透视过滤器</a></li>
-            <li><a href="/cells/zh/hide-pivot-field-item/">隐藏 Excel 工作表上的数据透视字段项</a></li>
-            <li><a href="/cells/zh/move-pivot-table/">移动 Excel 工作表上的数据透视表。</a></li>
+            <li><a href="/cells/zh/update-style-for-pivot-table/">更新 Excel 工作表上的数据透视表样式。</a></li>
+            <li><a href="/cells/zh/working-with-pivot-filters/">在 Excel 工作表上使用枢轴过滤器</a></li>
+            <li><a href="/cells/zh/hide-pivot-field-item/">隐藏 Excel 工作表上的数据透视字段项目</a></li>
+            <li><a href="/cells/zh/move-pivot-table/">在 Excel 工作表上移动数据透视表。</a></li>
         </ul>
     </div>
 </div>
@@ -169,19 +169,19 @@ weight: 20
     <div class="col-md-6">
         <p>大纲</p>
         <ul>
-            <li><a href="/cells/zh/group-rows-in-excel-worksheet/">对 Excel 工作表中的行进行分组。</a></li>
-            <li><a href="/cells/zh/ungroup-rows-in-excel-worksheet/">取消分组 Excel 工作表上的行</a></li>
+            <li><a href="/cells/zh/group-rows-in-excel-worksheet/">对 Excel 工作表上的行进行分组。</a></li>
+            <li><a href="/cells/zh/ungroup-rows-in-excel-worksheet/">对 Excel 工作表上的行取消分组</a></li>
         </ul>
         <p>筛选</p>
         <ul>
-            <li><a href="/cells/zh/add-a-filter-for-a-filter-column/">为 Excel 工作表上的筛选列添加筛选器。</a></li>
+            <li><a href="/cells/zh/add-a-filter-for-a-filter-column/">为 Excel 工作表上的筛选器列添加筛选器。</a></li>
             <li><a href="/cells/zh/delete-a-filter-for-a-filter-column/">删除 Excel 工作表上筛选器列的筛选器。</a></li>
-            <li><a href="/cells/zh/remove-a-date-filter/">删除 Excel 工作表上的日期过滤器。</a></li>
-            <li><a href="/cells/zh/add-an-icon-filter/">在 Excel 工作表上添加图标过滤器。</a></li>
-            <li><a href="/cells/zh/add-date-filter-in-a-worksheet/">在 Excel 工作表上添加日期过滤器。</a></li>
-            <li><a href="/cells/zh/filter-data-by-using-an-autofilter/">在 Excel 工作表上使用自定义条件筛选列表。</a></li>
-            <li><a href="/cells/zh/filter-the-top-10-items-in-the-list/">筛选 Excel 工作表上列表中的前 10 项。</a></li>
-            <li><a href="/cells/zh/match-all-blank-cells-in-the-list/">匹配 Excel 工作表列表中的所有空白单元格。</a></li>
+            <li><a href="/cells/zh/remove-a-date-filter/">删除 Excel 工作表上的日期筛选器。</a></li>
+            <li><a href="/cells/zh/add-an-icon-filter/">在 Excel 工作表上添加图标筛选器。</a></li>
+            <li><a href="/cells/zh/add-date-filter-in-a-worksheet/">在 Excel 工作表上添加日期筛选器。</a></li>
+            <li><a href="/cells/zh/filter-data-by-using-an-autofilter/">使用 Excel 工作表上的自定义条件筛选列表。</a></li>
+            <li><a href="/cells/zh/filter-the-top-10-items-in-the-list/">筛选 Excel 工作表列表中的前 10 个项目。</a></li>
+            <li><a href="/cells/zh/match-all-blank-cells-in-the-list/">匹配 Excel 工作表上列表中的所有空白单元格。</a></li>
         </ul>
             <p>种类</p>
         <ul>
@@ -191,18 +191,18 @@ weight: 20
     <div class="col-md-6">
         <p>导入数据</p>
         <ul>
-            <li><a href="/cells/zh/import/">将数据导入 Excel 文件。</a></li>
-            <li><a href="/cells/zh/import-csv-data-into-worksheet/">将 CSV 数据导入 Excel 工作表。</a></li>
+            <li><a href="/cells/zh/import/">将数据导入到 Excel 文件中。</a></li>
+            <li><a href="/cells/zh/import-csv-data-into-worksheet/">将 CSV 数据导入到 Excel 工作表中。</a></li>
             <li><a href="/cells/zh/import/picture/">将图片导入 Excel 工作表。</a></li>
-            <li><a href="/cells/zh/import/double-array/">将双数组导入 Excel 工作表。</a></li>
+            <li><a href="/cells/zh/import/double-array/">将双精度数组导入到 Excel 工作表中。</a></li>
             <li><a href="/cells/zh/import/integer-array/">将整数数组导入 Excel 工作表。</a></li>
-            <li><a href="/cells/zh/import/string-array/">将字符串数组导入 Excel 工作表。</a></li>
-            <li><a href="/cells/zh/import/with-using-storage/">使用存储将数据导入 Excel 工作表。</a></li>
-            <li><a href="/cells/zh/import/without-using-storage/">在不使用存储的情况下将数据导入 Excel 工作表。</a></li>
+            <li><a href="/cells/zh/import/string-array/">将字符串数组导入到 Excel 工作表中。</a></li>
+            <li><a href="/cells/zh/import/with-using-storage/">使用存储将数据导入到 Excel 工作表中。</a></li>
+            <li><a href="/cells/zh/import/without-using-storage/">将数据导入到 Excel 工作表中，而不使用存储。</a></li>
         </ul>
         <p>集会</p>
         <ul>
-            <li><a href="/cells/zh/assembly/">在 Excel 文件中组装数据。</a></li>
+            <li><a href="/cells/zh/assembly/">将数据组装到 Excel 文件中。</a></li>
         </ul>
     </div>
 </div>
@@ -240,7 +240,7 @@ weight: 20
     <div class="col-md-6">
         <p>飞涨</p>
         <ul>
-            <li><a href="/cells/zh/set-zoom-in-excel-worksheet/">在 Excel 工作表上设置缩放。</a></li>
+            <li><a href="/cells/zh/set-zoom-in-excel-worksheet/">设置 Excel 工作表的缩放。</a></li>
         </ul>
     </div>
 </div>

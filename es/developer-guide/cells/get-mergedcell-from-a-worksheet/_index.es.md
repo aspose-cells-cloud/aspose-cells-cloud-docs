@@ -19,7 +19,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/mergedCells
 |:- |:- |:- |:- |
 | nombre| cadena| camino| Nombre del documento.|
 | hojaNombre| cadena| camino| El nombre de la hoja de trabajo.|
-| carpeta| cadena| consulta|Carpeta de documentos.|
+| carpeta| cadena| consulta| Carpeta de documentos.|
 | NombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
  
  El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetMergedCells) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.

@@ -9,7 +9,7 @@ keywords: Update a list object(table) in an Excel worksheet
 description: Aspose.Cells Cloud REST API, bir Excel çalışma sayfasında bir liste nesnesinin (tablosunun) güncellenmesini destekler. SDK, geliştirme dili türlerini destekler. Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift'i içerir
 weight: 20
 ---
-Bu REST API, `update` ve `list object` özelliklerini belirtir.
+Bu REST API, `update` ve `list object` özelliklerini gösterir.
 
  
 ## RSET API

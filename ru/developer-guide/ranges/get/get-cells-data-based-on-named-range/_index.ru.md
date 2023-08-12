@@ -9,7 +9,7 @@ keywords: Get cells data based on named range on an Excel worksheet
 description: Aspose.Cells Cloud REST API поддерживает получение данных ячеек на основе именованного диапазона на листе Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и swift.
 weight: 20
 ---
- Этот REST API указывает получить список ячеек в диапазоне по имени диапазона или индексам столбцов строк.
+ Этот REST API указывает Получить список ячеек в диапазоне по имени диапазона или индексам столбцов строк.
 
  
 ## РСЕТ API

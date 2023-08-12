@@ -1,9 +1,9 @@
 ﻿---
-title: Speicher
+title: Storag
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/docker/storage/
-description: So legen Sie die Speicherposition über Aspose.Cells Cloud for Docker fest
+description: So legen Sie die Speicherposition etwa Aspose.Cells Cloud für Docker fest
 weight: 30
 ---
 ##  Standardspeicherkonfiguration ##
@@ -67,7 +67,7 @@ c:\app\storageResource.json
 
 ##  Benutzerdefinierte Speicherkonfiguration ##
 
-Das Speicherprofil für die Cloud-Image-Datei Aspose.Cells muss neu angegeben werden, wenn der Kunde den Speicherordner angibt.
+Das Speicherprofil für die Cloud-Image-Datei Aspose.Cells muss neu angegeben werden, wenn der Kunde einen Speicherordner angibt.
 
 ``` powershell
 

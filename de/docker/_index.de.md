@@ -7,9 +7,9 @@ aliases: [/docker/]
 description: Aspose.Cells Wolke
 weight: 30
 ---
-## Aspose.Cells Cloud-Docker
+## Aspose.Cells Cloud Docker
 
- Aspose.Cells Cloud Image ist verfügbar für Linux, Microsoft Windows 10 Pro, Microsoft Windows Server 2016 und Microsoft Windows Server 2019.
+ Aspose.Cells Cloud Image ist für Linux, Microsoft Windows 10 Pro, Microsoft Windows Server 2016 und Microsoft Windows Server 2019 verfügbar.
 
 
 

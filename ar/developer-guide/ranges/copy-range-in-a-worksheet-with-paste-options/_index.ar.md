@@ -24,7 +24,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges
 |:- |:- |:- |:- |
 | اسم| خيط| طريق| اسم المصنف|
 | اسم الورقة| خيط| طريق| اسم ورقة العمل|
-| المدى|| جسم| Copydata ، copystyle ، copyto ، copyvalue|
+| المدى|| جسم|Copydata ، copystyle ، copyto ، copyvalue|
 | مجلد| خيط| استفسار| مجلد المصنف.|
 | اسم التخزين| خيط| استفسار| اسم التخزين.|
  

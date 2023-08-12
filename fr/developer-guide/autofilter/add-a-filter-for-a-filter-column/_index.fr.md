@@ -26,13 +26,13 @@ Les paramètres de la requête sont :
 |:- |:- |:- |:- |
 | nom| chaîne| Chemin|Le nom du classeur.|
 | NomFeuille| chaîne| Chemin| Le nom de la feuille de calcul.|
-|gamme|chaîne| Mettre en doute||
-|fieldIndex|entier| Mettre en doute||
-|critère|chaîne| Mettre en doute||
-|matchBlanks|chaîne| Mettre en doute|vrai faux|
-|rafraîchir|chaîne| Mettre en doute|vrai faux|
-|dossier|chaîne| Mettre en doute|Dossier de classeur d'origine.|
-|nom_stockage|chaîne| Mettre en doute|Nom de stockage.|
+|gamme|chaîne| Requête||
+|fieldIndex|entier| Requête||
+|critères|chaîne| Requête||
+|matchBlanks|chaîne| Requête|vrai faux|
+|rafraîchir|chaîne| Requête|vrai faux|
+|dossier|chaîne| Requête|Dossier de classeur d'origine.|
+|nom_stockage|chaîne| Requête|Nom de stockage.|
 
 
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetFilter) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
@@ -91,7 +91,7 @@ Les exemples de code suivants montrent comment effectuer des appels vers les ser
 
 {{< tab tabNum="3" >}}
 
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LiteCells-Assemble.php" >}}
+{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LightCells-Assemble.php" >}}
 
 {{< /tab >}}
 

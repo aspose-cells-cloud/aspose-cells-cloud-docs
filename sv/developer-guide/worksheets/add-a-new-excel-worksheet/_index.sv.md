@@ -26,7 +26,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
 | arknamn| sträng| väg| Det nya arknamnet.|
 | placera| heltal| fråga| Den nya arkpositionen.|
 | arktyp| sträng| fråga| Den nya arktypen.|
-| mapp| sträng| fråga|Dokumentmapp.|
+| mapp| sträng| fråga| Dokumentmapp.|
 | lagringsnamn| sträng| fråga| lagringsnamn.|
  
  De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Worksheets/PutAddNewWorksheet) definierar ett allmänt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.

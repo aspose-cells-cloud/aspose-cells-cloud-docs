@@ -1,0 +1,125 @@
+﻿---
+title: Loc
+second_title: Aspose.Cells Cloud Documen
+linktitle: Kryptera utan att använda lagring
+type: docs
+url: /sv/lock/without-using-storage/
+aliases: [/lock/without-storage/,/lock/]
+keywords: Lock Excel files
+description: Aspose.Cells Cloud REST API stöder låsning av Excel filer. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
+weight: 70
+---
+Denna REST API indikerar till `lock` Excel filer.
+## RSET API
+ 
+```bash
+ 
+POST http://api.aspose.cloud/v3.0/cells/lock
+ 
+```
+ Begärans parametrar är:
+ 
+| Parameternamn| Typ| Sökväg/Frågesträng/HTTPBody|Beskrivning|
+|:- |:- |:- |:- |
+| fil| fil| formData| Fil att ladda upp|
+| Lösenord| sträng| fråga||
+ 
+ De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/LightCells/PostLock) definierar ett allmänt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+ 
+Du kan använda cURL kommandoradsverktyg för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man ringer till Cloud API med cURL.
+ 
+{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+ 
+{{< tab tabNum="1" >}}
+ 
+```bash
+ 
+curl -v "http://api.aspose.cloud/v3.0/cells/lock?password=123456" \
+-X POST \
+-H "Content-Type: application/json" \
+-H "Accept: application/json" \
+-H "Authorization: Bearer <jwt token>" \
+-F 'xxxxx1=@xxxx1.xlsx' \
+-F 'xxxxx2=@xxxx2.xlsx' 
+ 
+```
+ 
+{{< /tab >}}
+ 
+{{< tab tabNum="2" >}}
+ 
+```bash
+{
+    "Files":
+    [
+        { 
+            "Filename":"xxxxx",
+            "FileSize":274022,
+            "FileContent":"-----Base64String--------"
+        },
+        { 
+            "Filename":"xxxxx",
+            "FileSize":274022,
+            "FileContent":"-----Base64String--------"
+        }
+    ]
+}
+ 
+```
+ 
+{{< /tab >}}
+ 
+{{< /tabs >}}
+ 
+## Cloud SDK-familj
+ 
+ Att använda en SDK är det bästa sättet att påskynda utvecklingen. En SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-förråd](https://github.com/aspose-cells-cloud) för en komplett lista med Aspose.Cells Cloud SDK.
+ 
+Följande kodexempel visar hur man ringer till Aspose.Cells webbtjänster med olika SDK:er:
+ 
+
+
+{{< tabs tabTotal="9" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" tabName9="Python" >}}
+
+{{< tab tabNum="1" >}}
+
+
+
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+{{< /tab >}}
+
+{{< tab tabNum="3" >}}
+
+{{< /tab >}}
+
+{{< tab tabNum="4" >}}
+
+
+{{< /tab >}}
+
+{{< tab tabNum="5" >}}
+
+
+{{< /tab >}}
+
+{{< tab tabNum="6" >}}
+
+
+{{< /tab >}}
+
+{{< tab tabNum="7" >}}
+
+
+{{< /tab >}}
+
+{{< tab tabNum="8" >}}
+
+
+{{< /tab >}}
+{{< tab tabNum="9" >}}
+
+{{< /tab >}}
+{{< /tabs >}}

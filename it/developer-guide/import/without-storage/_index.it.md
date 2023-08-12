@@ -33,7 +33,7 @@ POST https://api.aspose.cloud/v3.0/cells/import
 
 
 
- IL[Specifica OpenAPI](https://apireference.aspose.cloud/cells/#/LiteCells/PostImport) definisce un'interfaccia di programmazione accessibile pubblicamente e consente di eseguire interazioni REST direttamente da un browser web.
+ IL[Specifica OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostImport) definisce un'interfaccia di programmazione accessibile pubblicamente e consente di eseguire interazioni REST direttamente da un browser web.
  
 È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi Web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate a Cloud API con cURL.
  

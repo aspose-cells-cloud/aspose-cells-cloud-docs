@@ -15,5 +15,5 @@ weight: 100
 **Özet**
 
 -  Excel yorum kullanılır[hücrede bir not ekleyin veya bir formülü açıklayın](/cells/tr/comments/add/).
--  Excel, kullanıcılara esneklik sağlar[düzenleme](/cells/tr/comments/update/), [silme](/cells/tr/comments/delete/) , Ve[gösteren](/cells/tr/comments/get/) veya[saklanmak](/cells/tr/comments/update/) Excel çalışma sayfasındaki yorumlar.
+- Excel, kullanıcılara esneklik sağlar[düzenleme](/cells/tr/comments/update/), [silme](/cells/tr/comments/delete/) , Ve[gösteren](/cells/tr/comments/get/) veya[saklanmak](/cells/tr/comments/update/) Excel çalışma sayfasındaki yorumlar.
 -  Kullanıcılar ayrıca[yeniden boyutlandırmak](/cells/tr/comments/update/) Ve[taşınmak](/cells/tr/comments/update/) Excel yorum kutusu.

@@ -24,8 +24,8 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets
 |:- |:- |:- |:- |
 | nom| chaîne| chemin||
 | matchCondition|| corps||
-| dossier| chaîne| mettre en doute||
-| nom_stockage| chaîne| mettre en doute||
+| dossier| chaîne| requête||
+| nom_stockage| chaîne| requête||
  
 
 **Propriétés MatchConditionRequestMatchConditionRequest PropertiesMatchConditionRequest Properties**

@@ -8,7 +8,7 @@ keywords: Delete all worksheet validations from an Excel worksheet
 description: Aspose.Cells Cloud REST API, bir Excel çalışma sayfasından tüm çalışma sayfası doğrulamalarının silinmesini destekler. SDK, geliştirme dili türlerini destekler. Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift'i içerir
 weight: 10
 ---
-Bu REST API, bir Excel çalışma sayfasındaki tüm çalışma sayfası doğrulamalarının silineceğini gösterir.
+Bu REST API, bir Excel çalışma sayfasındaki tüm çalışma sayfası doğrulamalarının silineceğini belirtir.
  
 ## RSET API
  

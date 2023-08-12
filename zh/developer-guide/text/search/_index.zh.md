@@ -1,7 +1,7 @@
 ﻿---
 title: 从 Excel 文件中查找文本
 second_title: Aspose.Cells Cloud Documen
-linktitle: 不使用存储查找
+linktitle: 不使用storag查找
 type: docs
 url: /zh/search/
 aliases: [/search-without-using-storage/,/search-without-storage/]
@@ -9,7 +9,7 @@ keywords: Find text from Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Docume
 description: Aspose.Cells Cloud REST API 支持从 Excel 文件中查找文本。 SDK支持多种开发语言。它们包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 swift
 weight: 50
 ---
-此 REST API 指示来自 Excel 文件的 `search` 文本。
+此 REST API 指示 Excel 文件中的 `search` 文本。
 `## RSET API
  
 ```bash
@@ -26,7 +26,7 @@ The request parameters are:
 | password | string | query |   |
 | sheetname | string | query |   |
  
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LiteCells/PostSearch) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostSearch) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
  
 You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
  
@@ -205,7 +205,7 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LiteCells-Search.php" >}}
+{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LightCells-Search.php" >}}
 
 {{< /tab >}}
 
@@ -235,7 +235,7 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{< /tab >}}
 {{< tab tabNum="9" >}}
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "LiteCellsSearch.py" >}}
+{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "LightCellsSearch.py" >}}
 {{< /tab >}}
 
 {{< /tabs >}}

@@ -1,7 +1,7 @@
 ﻿---
 title: 如何使用模板文件创建 Excel 工作簿
 second_title: Aspose.Cells Cloud Documen
-linktitle: 模版
+linktitle: 模板
 type: docs
 url: /zh/workbook/create/template-file/
 aliases: [/create-excel-workbook-from-a-template-file/,/workbook/new-from-a-template-file/]
@@ -9,7 +9,7 @@ keywords: How to create an Excel workbook with a smart marker template
 description: Aspose.Cells Cloud REST API 如何从智能标记模板创建 Excel 工作簿。 SDK支持多种开发语言。它们包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 swift
 weight: 30
 ---
-此 REST API 指示从 `template file` 创建 `workbook`。
+这个REST API表示从`template file`创建`workbook`。
 
 **查询参数**
 
@@ -17,11 +17,11 @@ weight: 30
 |:- |:- |:- |
 |模板文件|细绳||
 |数据文件|细绳||
-|是WriteOver|细绳|真假|
+|被重写|细绳|真假|
 |文件夹|细绳|原始工作簿文件夹。|
 |存储名称|细绳|存储名称。|
 
-**请求正文参数**
+**请求体参数**
 
 |参数名称|类型|描述|
 |:- |:- |:- |
@@ -32,11 +32,11 @@ weight: 30
 
 |**API**|**类型**|**描述**|**招摇链接**|
 |:- |:- |:- |:- |
-|/细胞/{名称}|放|从模板文件创建一个新的 Excel 工作簿|[将工作簿创建](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookCreate)|
+|/细胞/{名称}|放|从模板文件创建新的 Excel 工作簿|[放置工作簿创建](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookCreate)|
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookCreate)定义了一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+这[开放API规范](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookCreate)定义了一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
 
-您可以使用**cURL**用于轻松访问 Aspose.Cells Web 服务的命令行工具。以下示例显示如何使用 cURL 调用 Cloud API。
+您可以使用**cURL**命令行工具轻松访问 Aspose.Cells Web 服务。以下示例展示如何使用 cURL 呼叫云端 API。
 
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
@@ -122,11 +122,11 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/newworkbook.xlsx?templateFile=C
 {{< /tabs >}}
 
 
-## 云 SDK 系列
+## 云SDK系列
 
-使用 SDK 是加速开发的最佳方式。 SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 仓库](https://github.com/aspose-cells-cloud)有关 Aspose.Cells Cloud SDK 的完整列表。
+使用 SDK 是加快开发速度的最佳方式。 SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)有关 Aspose.Cells Cloud SDK 的完整列表。
 
-以下代码示例演示如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
 
 
 {{< tabs tabTotal="11" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" tabName11="Swift" >}}

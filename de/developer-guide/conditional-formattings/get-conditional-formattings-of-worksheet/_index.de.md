@@ -1,13 +1,13 @@
 ﻿---
-title: Holen Sie sich die bedingte Formatierung
+title: Holen Sie sich bedingte Formatierung
 type: docs
 url: /de/conditional-formattings/get-all/
 aliases: [/get-conditional-formattings-of-worksheet/]
 keywords: REST API, spreadsheets, excel, get condition formattin
-description: "Cells.Cloud API für Excel betreiben: Bedingungsformatierung abrufen"
+description: "Cells.Cloud API für Excel Operate: Bedingungsformatierung abrufen"
 weight: 20
 ---
- Dieser REST API gibt an, dass bedingte Formatierungen abgerufen werden
+ Dieser REST API gibt „Bedingte Formatierungen abrufen“ an
  
 ## RSET API
  
@@ -20,14 +20,14 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditional
  
 | Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
 |:- |:- |:- |:- |
-| Name| Schnur| Weg||
-| Tabellenname| Schnur| Weg||
-| Ordner| Schnur| Anfrage||
-| Speichername| Schnur| Anfrage| Speichername.|
+| Name| Zeichenfolge| Weg||
+| Blattname| Zeichenfolge| Weg||
+| Ordner| Zeichenfolge| Abfrage||
+| Speichername| Zeichenfolge| Abfrage| Speichername.|
  
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/GetWorksheetConditionalFormattings) definiert eine öffentlich zugängliche Programmierschnittstelle und lässt Sie REST-Interaktionen direkt von einem Webbrowser ausführen.
+ Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/GetWorksheetConditionalFormattings) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht die Durchführung von REST-Interaktionen direkt über einen Webbrowser.
  
-Sie können das cURL-Befehlszeilentool verwenden, um einfach auf Aspose.Cells-Webdienste zuzugreifen. Das folgende Beispiel zeigt, wie Sie Cloud API mit cURL anrufen.
+Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie man mit cURL Anrufe zur Cloud API tätigt.
  
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 

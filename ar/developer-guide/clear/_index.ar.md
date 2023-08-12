@@ -22,9 +22,9 @@ POST https://api.aspose.cloud/v3.0/cells/clearobjects
 | اسم المعلمة| يكتب| المسار / سلسلة الاستعلام / HTTPBody|وصف|
 |:- |:- |:- |:- |
 | ملف| ملف| بيانات النموذج| ملف للتحميل|
-| نوع الكائن| خيط| استفسار| تكرار / أعمدة فارغة / صفوف فارغة / صيغة / محتوى / نمط / رسم بياني / تعليق / صورة / شكل / كائن قائمة / ارتباط تشعبي / oleobject / محوري / التحقق من الصحة / الخلفية|
+| نوع الكائن| خيط| استفسار|تكرار / أعمدة فارغة / صفوف فارغة / صيغة / محتوى / نمط / رسم بياني / تعليق / صورة / شكل / كائن قائمة / ارتباط تشعبي / oleobject / محوري / التحقق من الصحة / الخلفية|
  
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/LiteCells/PostClearObjects) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
+ ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostClearObjects) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
  
 يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
  
@@ -91,7 +91,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/clearobjects?objecttype=comment" \
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LiteCells-Clear.php" >}}
+{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LightCells-Clear.php" >}}
 
 {{< /tab >}}
 
@@ -121,7 +121,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/clearobjects?objecttype=comment" \
 {{< /tab >}}
 {{< tab tabNum="9" >}}
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "LiteCellsClear.py" >}}
+{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "LightCellsClear.py" >}}
 {{< /tab >}}
 
 {{< /tabs >}}

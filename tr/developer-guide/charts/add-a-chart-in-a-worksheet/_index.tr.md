@@ -27,12 +27,12 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts
 | altSağSütun| tamsayı| sorgu|0 |
 | alan| sicim| sorgu| Veri serisinin çizileceği değerleri belirtir.|
 | isDikey| mantıksal| sorgu| Doğru|
-|kategoriVeri| sicim| sorgu| Eksen değerleri kategorisinin aralığını alır veya ayarlar. Bir hücre aralığı olabilir ("d1:e10" gibi).|
+| kategoriVeri| sicim| sorgu| Eksen değerleri kategorisinin aralığını alır veya ayarlar. Bir hücre aralığı olabilir ("d1:e10" gibi).|
 | isAutoGetSeriAdı| mantıksal| sorgu| Doğru|
 | başlık| sicim| sorgu| Grafik başlık adını belirtir.|
 | dosya| sicim| sorgu| Çalışma kitabı klasörü.|
 | depolamaAdı| sicim| sorgu| depolama adı.|
-| veri etiketleri| mantıksal| sorgu| Doğru|
+|veri etiketleri| mantıksal| sorgu| Doğru|
 | veriEtiketleriPozisyonu| sicim| sorgu| Üstünde|
 | pivotTableSayfası| sicim| sorgu||
 | pivotTableAdı| sicim| sorgu||

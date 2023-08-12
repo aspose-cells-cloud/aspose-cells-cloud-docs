@@ -20,11 +20,11 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cel
 | nom| chaîne| chemin| Le nom du document.|
 | NomFeuille| chaîne| chemin| Le nom de la feuille de calcul.|
 | nom_cellule| chaîne| chemin| Le nom de la cellule.|
-| valeur| chaîne| mettre en doute| La valeur de la cellule.|
-| taper| chaîne| mettre en doute| Le type de valeur.|
-| formule| chaîne| mettre en doute| Formule pour cellule|
-| dossier| chaîne| mettre en doute| Le dossier de documents.|
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| valeur| chaîne| requête| La valeur de la cellule.|
+| taper| chaîne| requête| Le type de valeur.|
+| formule| chaîne| requête| Formule pour cellule|
+| dossier| chaîne| requête| Le dossier de documents.|
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostWorksheetCellSetValue) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

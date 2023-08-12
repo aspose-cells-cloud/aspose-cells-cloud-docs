@@ -25,8 +25,8 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/ro
 | nom| chaîne| chemin|Le nom du classeur.|
 | NomFeuille| chaîne| chemin| La feuille de travail est la même.|
 | index de ligne| entier| chemin| L'index de ligne.|
-| dossier| chaîne| mettre en doute| Le dossier de documents.|
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| dossier| chaîne| requête| Le dossier de documents.|
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetRow) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  
@@ -74,7 +74,7 @@ Les exemples de code suivants montrent comment effectuer des appels vers les ser
 ## **Introduction**
 Cet exemple montre comment supprimer une ligne d'une feuille de calcul Excel à l'aide de Aspose.Cells Cloud API dans vos applications. Vous pouvez utiliser notre REST API avec n'importe quelle langue : .NET, Java, PHP, Ruby, Rails, Python, jQuery et bien d'autres.
 
-## **API Renseignements**
+## **API Informations**
 
 |**API**|**Taper**|**Description**|**Lien vers la ressource**|
 |:- |:- |:- |:- |

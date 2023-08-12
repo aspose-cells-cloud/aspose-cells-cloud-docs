@@ -1,7 +1,7 @@
 ﻿---
 title: Excel çalışma sayfasında bir OLE nesnesi alın
 second_title: Aspose.Cells Cloud Documen
-linktitle: ge
+linktitle: Ge
 type: docs
 url: /tr/oleobjects/get/
 aliases: [/get-oleobject-from-a-worksheet/]

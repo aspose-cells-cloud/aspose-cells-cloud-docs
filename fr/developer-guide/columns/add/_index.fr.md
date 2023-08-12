@@ -1,7 +1,7 @@
 ﻿---
 title: Ajouter une colonne vide sur une feuille de calcul Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: Publicité
+linktitle: Annonce
 type: docs
 url: /fr/columns/add/
 aliases: [/add-an-empty-column-in-an-excel-worksheet/,/add-an-empty-column-in-a-worksheet/]
@@ -25,10 +25,10 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/colum
 | nom| chaîne| chemin|Le nom du classeur.|
 | NomFeuille| chaîne| chemin| Le nom de la feuille de calcul.|
 | index de colonne| entier| chemin| L'indice de colonne.|
-| Colonnes| entier| mettre en doute| Les colonnes.|
-| mettre à jour la référence| booléen| mettre en doute| Vrai|
-| dossier| chaîne| mettre en doute| Le dossier du classeur.|
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| Colonnes| entier| requête| Les colonnes.|
+| mettre à jour la référence| booléen| requête| Vrai|
+| dossier| chaîne| requête| Le dossier du classeur.|
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PutInsertWorksheetColumns) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

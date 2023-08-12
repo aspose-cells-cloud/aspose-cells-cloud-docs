@@ -1,5 +1,5 @@
 ﻿---
-title: Métadonnées et propriétés
+title: Métadonnées et propriété
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/metadata/

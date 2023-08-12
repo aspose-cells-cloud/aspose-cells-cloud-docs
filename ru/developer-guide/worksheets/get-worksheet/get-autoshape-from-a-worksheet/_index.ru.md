@@ -6,7 +6,7 @@ type: docs
 url: /ru/shapes/get-autoshape/
 aliases: [/get-autoshape-from-a-worksheet/]
 keywords: Get autoshape to different format from an Excel worksheet
-description: Aspose.Cells Cloud REST API поддерживает получение автофигуры в другом формате из рабочего листа Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и swift.
+description: Aspose.Cells Облачный REST API поддерживает получение автофигуры в другом формате из рабочего листа Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и swift.
 weight: 10
 ---
 Этот REST API указывает на `get autoshape info`.

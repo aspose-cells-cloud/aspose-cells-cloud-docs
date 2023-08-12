@@ -1,5 +1,5 @@
 ﻿---
-title: Mostrar leyenda de gráfico en una hoja de trabajo
+title: Mostrar la leyenda del gráfico en una hoja de trabajo
 type: docs
 url: /es/charts/legend/show/
 aliases: [/show-chart-legend-in-a-worksheet/]

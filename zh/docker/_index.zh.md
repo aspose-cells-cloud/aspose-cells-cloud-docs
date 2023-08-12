@@ -1,5 +1,5 @@
 ﻿---
-title: 码头
+title: 多克
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/docker-developer-guide/
@@ -7,16 +7,16 @@ aliases: [/docker/]
 description: Aspose.Cells 云
 weight: 30
 ---
-## Aspose.Cells 云Docker
+## Aspose.Cells 云码头
 
- Aspose.Cells Cloud Image 适用于 Linux、Microsoft Windows 10 Pro、Microsoft Windows Server 2016 和 Microsoft Windows Server 2019。
+Aspose.Cells 云映像适用于 Linux、Microsoft Windows 10 Pro、Microsoft Windows Server 2016 和 Microsoft Windows Server 2019。
 
 
 
-## API 参考 - Aspose.Cells Cloud Docker
+## API 参考 - Aspose.Cells 云 Docker
 
-- https://主机名:端口/招摇
-- https://主机名:port/swagger/ui/index.html
+- https://主机名:端口/swagger
+- https://主机名:端口/swagger/ui/index.html
 
 看：
 - [下载资料](/cells/zh/docker/downloads/) 

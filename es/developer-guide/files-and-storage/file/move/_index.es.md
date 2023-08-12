@@ -7,7 +7,7 @@ keywords: Learn how to download file with Aspose Cells Cloud REST API
 description: Aprenda a descargar el archivo con Aspose Cells Cloud REST API SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift
 weight: 100
 ---
-Este RESTO API indica `move file`
+Este REST API indica `move file`
  
 ## RESET API
  

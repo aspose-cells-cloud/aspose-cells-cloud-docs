@@ -9,7 +9,7 @@ keywords: Add digital signature for an Excel workbook
 description: Aspose.Cells Cloud REST API, Excel çalışma kitabı için dijital imza eklemeyi destekler. SDK, geliştirme dili türlerini destekler. Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift'i içerir
 weight: 35
 ---
-Bu REST API, Excel çalışma kitabı için `digital signature` eklemeyi gösterir.
+ Bu REST API, Excel çalışma kitabı için `digital signature` eklemeyi belirtir.
  
 ## RSET API
  

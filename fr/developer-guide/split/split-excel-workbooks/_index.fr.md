@@ -17,7 +17,7 @@ Ce REST API indique de diviser un Excel `workbook` en plusieurs fichiers avec un
 |:- |:- |:- |
 |format|chaîne|Format fractionné.|
 |depuis|entier|Démarrer l'index de la feuille de calcul.|
-|pour|entier|Fin de l'index de la feuille de calcul.|
+|à|entier|Fin de l'index de la feuille de calcul.|
 |Résolution horizontale|entier|Résolution horizontale de l'image.|
 |Résolution verticale|entier|Résolution verticale de l'image.|
 |dossier de sortie|chaîne|position du fichier divisé en sortie.|

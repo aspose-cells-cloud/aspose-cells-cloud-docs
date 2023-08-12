@@ -1,7 +1,7 @@
 ﻿---
 title: Eliminar una forma por índice en una hoja de trabajo Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: eliminar
+linktitle: Eliminar
 type: docs
 url: /es/shapes/delete/
 aliases: [/delete-a-shape-by-index-inside-the-worksheet/]

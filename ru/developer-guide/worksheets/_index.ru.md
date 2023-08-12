@@ -29,7 +29,7 @@ weight: 100
 - [Как переименовать рабочий лист Excel.](/cells/ru/worksheets/rename/)
 - [Как обновить свойства листа Excel.](/cells/ru/worksheets/update-properties/)
 - [Как установить масштаб рабочего листа Excel.](/cells/ru/worksheets/zoom/)
-- [Как заморозить Excel панели листа.](/cells/ru/worksheets/freeze-panes/)
+- [Как заморозить Excel панели рабочего листа.](/cells/ru/worksheets/freeze-panes/)
 - [Как разморозить Excel панели рабочего листа.](/cells/ru/worksheets/unfreeze-panes/)
 - [Как удалить рабочий лист Excel.](/cells/ru/worksheets/delete/)
 - [Как удалить фон рабочего листа Excel.](/cells/ru/worksheets/background/delete/)

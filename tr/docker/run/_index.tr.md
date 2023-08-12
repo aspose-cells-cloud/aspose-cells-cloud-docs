@@ -1,5 +1,5 @@
 ﻿---
-title: ru
+title: Ru
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/docker/run/
@@ -21,7 +21,7 @@ C:\veri | Dosya depolama klasörü | YANLIŞ
 
 ##  Çalıştırma Parametreleri ##
 
-Ad | Açıklama | Gerekli
+İsim | Açıklama | Gerekli
 ---|:--:|---:
 LisansKamuAnahtarı | Lisansın genel anahtarı | doğru
 LisansÖzel Anahtar | Lisansın özel anahtarı | doğru

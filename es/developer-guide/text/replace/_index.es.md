@@ -28,7 +28,7 @@ POST https://api.aspose.cloud/v3.0/cells/replace
 | contraseña| cadena| consulta||
 | nombre de la hoja| cadena| consulta||
  
- El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/LiteCells/PostReplace) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+ El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/LightCells/PostReplace) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
  
 Puede utilizar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}

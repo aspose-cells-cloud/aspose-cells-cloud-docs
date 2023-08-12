@@ -23,7 +23,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations
 |:- |:- |:- |:- |
 | اسم| خيط| طريق| اسم الملف.|
 | اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| مجلد| خيط| استفسار|مجلد المستند.|
+| مجلد| خيط| استفسار| مجلد المستند.|
 | اسم التخزين| خيط| استفسار| اسم التخزين.|
  
  ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/WorksheetValidations/GetWorksheetValidations) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.

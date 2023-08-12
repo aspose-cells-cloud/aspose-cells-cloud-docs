@@ -20,22 +20,22 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Nom du classeur.|
 | NomFeuille| chaîne| chemin| Le nom de la feuille de calcul.|
-| type de graphique| chaîne| mettre en doute| Type de graphique, veuillez vous référer au type de propriété dans la ressource graphique.|
-| upperLeftRow| entier| mettre en doute|0 |
-| UpperLeftColumn| entier| mettre en doute|0 |
-| ligne inférieure droite| entier| mettre en doute|0 |
-| basDroiteColonne| entier| mettre en doute|0 |
-| zone| chaîne| mettre en doute| Spécifie les valeurs à partir desquelles tracer la série de données.|
-| estVertical| booléen| mettre en doute| Vrai|
-|catégorieDonnées| chaîne| mettre en doute| Obtient ou définit la plage de valeurs d'axe de catégorie. Il peut s'agir d'une plage de cellules (par exemple, "d1:e10").|
-| isAutoGetSerialName| booléen| mettre en doute| Vrai|
-| titre| chaîne| mettre en doute| Spécifie le nom du titre du graphique.|
-| dossier| chaîne| mettre en doute| Le dossier du classeur.|
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
-| dataLabels| booléen| mettre en doute| Vrai|
-| dataLabelsPositiondataLabelsPosition| chaîne| mettre en doute| Au-dessus de|
-| tablepivotFeuille| chaîne| mettre en doute||
-| nomtablepivot| chaîne| mettre en doute||
+| type de graphique| chaîne| requête| Type de graphique, veuillez vous référer au type de propriété dans la ressource graphique.|
+| upperLeftRow| entier| requête|0 |
+| UpperLeftColumn| entier| requête|0 |
+| ligne inférieure droite| entier| requête|0 |
+| basDroiteColonne| entier| requête|0 |
+| zone| chaîne| requête| Spécifie les valeurs à partir desquelles tracer la série de données.|
+| estVertical| booléen| requête| Vrai|
+| catégorieDonnées| chaîne| requête| Obtient ou définit la plage de valeurs d'axe de catégorie. Il peut s'agir d'une plage de cellules (par exemple, "d1:e10").|
+| isAutoGetSerialName| booléen| requête| Vrai|
+| titre| chaîne| requête| Spécifie le nom du titre du graphique.|
+| dossier| chaîne| requête| Le dossier du classeur.|
+| nom_stockage| chaîne| requête| nom de stockage.|
+|dataLabels| booléen| requête| Vrai|
+| dataLabelsPositiondataLabelsPosition| chaîne| requête| Au-dessus de|
+| tablepivotFeuille| chaîne| requête||
+| nomtablepivot| chaîne| requête||
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Charts/PutWorksheetAddChart) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

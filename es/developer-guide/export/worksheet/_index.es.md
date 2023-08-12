@@ -14,10 +14,10 @@ weight: 20
 
 |**API**|**Tipo**|**Descripción**|**Enlace arrogante**|
 |:- |:- |:- |:- |
-|/celdas/exportar|CORREO|Exportar Excel desde el contenido de la solicitud a algún formato.|[Postexportación](https://apireference.aspose.cloud/cells/#/LiteCells/PostExport)|
+|/celdas/exportar|CORREO|Exportar Excel desde el contenido de la solicitud a algún formato.|[Postexportación](https://apireference.aspose.cloud/cells/#/LightCells/PostExport)|
 
 
- El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/LiteCells/PostExport) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+ El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
 
  Puedes usar**cURL** herramienta de línea de comandos para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo hacer llamadas a Cloud API con cURL.
 
@@ -103,7 +103,7 @@ Los siguientes ejemplos de código demuestran cómo realizar llamadas a los serv
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LiteCells-Export-shape-tiff.php" >}}
+{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LightCells-Export-shape-tiff.php" >}}
 
 {{< /tab >}}
 

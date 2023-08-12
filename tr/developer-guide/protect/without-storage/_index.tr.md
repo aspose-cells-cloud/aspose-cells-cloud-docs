@@ -9,7 +9,7 @@ keywords: Protect Excel files
 description: Aspose.Cells Cloud REST API, Excel dosyalarının korunmasını destekler. SDK, geliştirme dili türlerini destekler. Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift'i içerir
 weight: 40
 ---
-Bu REST API, `protect` Excel dosyalarını belirtir.
+Bu REST API, `protect` Excel dosyalarını gösterir.
 
 ## RSET API
  
@@ -25,7 +25,7 @@ POST http://api.aspose.cloud/v3.0/cells/protect
 | dosya| dosya| form verisi| Yüklenecek dosya|
 | şifre| sicim| sorgu||
  
- bu[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/LiteCells/PostProtect) herkesin erişebileceği bir programlama arabirimi tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+ bu[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/LightCells/PostProtect) herkesin erişebileceği bir programlama arabirimi tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
  
 Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Cloud API'e nasıl çağrı yapılacağını gösterir.
  
@@ -126,7 +126,7 @@ Aşağıdaki kod örnekleri, çeşitli SDK'lar kullanılarak Aspose.Cells web hi
 {{< /tab >}}
 {{< tab tabNum="9" >}}
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "LiteCellsProtect.py" >}}
+{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "LightCellsProtect.py" >}}
 {{< /tab >}}
 
 {{< /tabs >}}

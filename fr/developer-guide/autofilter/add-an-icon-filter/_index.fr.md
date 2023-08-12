@@ -25,14 +25,14 @@ Les paramètres de la requête sont :
 |:- |:- |:- |:- |
 | nom| chaîne| Chemin|Le nom du classeur.|
 | NomFeuille| chaîne| Chemin| Le nom de la feuille de calcul.|
-|gamme|chaîne| Mettre en doute||
-|fieldIndex|entier| Mettre en doute||
-|iconSetType|chaîne| Mettre en doute| Flèches3/FlèchesGris3/Drapeaux3/Signes3/Symboles3/Symboles32/Feux31/Feux32/Feux4/FeuxGris4/Évaluation4/RougeVersNoir4/Feux4/Feux5/FlèchesGris5/Quartiers5/Évaluation5/Étoiles3/Boîtes5/Triangles3/Aucun/Ensemble personnalisé/Smilies3/CouleurSourires|
-|ID d'icône|entier| Mettre en doute||
-|matchBlanks|chaîne| Mettre en doute|vrai faux|
-|rafraîchir|chaîne| Mettre en doute|vrai faux|
-|dossier|chaîne| Mettre en doute|Dossier de classeur d'origine.|
-|nom_stockage| Mettre en doute|chaîne|Nom de stockage.|
+|gamme|chaîne| Requête||
+|fieldIndex|entier| Requête||
+|iconSetType|chaîne| Requête| Flèches3/FlèchesGris3/Drapeaux3/Signes3/Symboles3/Symboles32/Feux31/Feux32/Feux4/FeuxGris4/Évaluation4/RougeVersNoir4/Feux4/Feux5/FlèchesGris5/Quartiers5/Évaluation5/Étoiles3/Boîtes5/Triangles3/Aucun/Ensemble personnalisé/Smilies 3/ColorSmilies3|
+|ID d'icône|entier| Requête||
+|matchBlanks|chaîne| Requête|vrai faux|
+|rafraîchir|chaîne| Requête|vrai faux|
+|dossier|chaîne| Requête|Dossier de classeur d'origine.|
+|nom_stockage| Requête|chaîne|Nom de stockage.|
 
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetIconFilter) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
 

@@ -3,25 +3,25 @@ title: Verfügbares SDK
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/available-sdks/
-description: Aspose.Cells Cloud unterstützt Excel zum Erstellen, Konvertieren, Zusammenführen, Aufteilen, Schützen, inneren Objektvorgang usw
+description: Aspose.Cells Cloud unterstützt Excel zum Erstellen, Konvertieren, Zusammenführen, Teilen, Schützen, für den Betrieb innerer Objekte usw
 weight: 30
 ---
 ## **Aspose.Cells Cloud-SDKs**
-Aspose.Cells Cloud ist eine moderne REST-orientierte API Cloud, die eine einfache Integration in bestehende Systeme ermöglicht.
+Aspose.Cells Cloud ist ein modernes REST-orientiertes API, das eine einfache Integration in bestehende Systeme ermöglicht.
 ### **Warum ein SDK verwenden?**
-Die Verwendung eines SDK (API-Client) ist der schnellste Weg für einen Entwickler, die Entwicklung zu beschleunigen. Ein SDK kümmert sich um viele Details auf niedriger Ebene, um Anfragen zu stellen und Antworten zu verarbeiten, und ermöglicht es Ihnen, sich auf das Schreiben von Code zu konzentrieren, der für Ihr spezielles Projekt spezifisch ist.
+Die Verwendung eines SDK (API-Client) ist für einen Entwickler die schnellste Möglichkeit, die Entwicklung zu beschleunigen. Ein SDK kümmert sich um viele Details auf niedriger Ebene bei der Erstellung von Anfragen und der Bearbeitung von Antworten und ermöglicht es Ihnen, sich auf das Schreiben von Code zu konzentrieren, der speziell auf Ihr bestimmtes Projekt zugeschnitten ist.
 ### **SDK-Vorteile**
-Unsere unterstützten SDKs sind zu 100 % getestet und sofort einsatzbereit. Diese SDKs sind Open Source und haben eine MIT-Lizenz. Sie können sie verwenden und sogar absolut kostenlos anpassen.
+Unsere unterstützten SDKs sind zu 100 % getestet und sofort einsatzbereit. Diese SDKs sind Open Source und verfügen über eine MIT-Lizenz. Sie können sie nutzen und sogar völlig kostenlos anpassen.
 ### **Unterstützte SDKs**
 {{< tabs tabTotal="11" tabID="1" tabName1=".NET" tabName2="Java" tabName3="PHP" tabName4="Android" tabName5="Perl" tabName6="Ruby" tabName7="Python" tabName8="Node Js" tabName9="Swift" tabName10="Go" tabName11="CPP" >}}
 
 {{< tab tabNum="1" >}}
 
-**Aspose.Cells Cloud-SDK for .NET**können Sie Aspose.Cells Cloud-Dienste schnell und einfach in Ihre .NET Anwendungen einbinden.
+**Aspose.Cells Cloud SDK for .NET**ermöglicht Ihnen die schnelle und einfache Integration von Aspose.Cells Cloud-Diensten in Ihre .NET Anwendungen.
 
 {{% alert color="primary" %}} 
 
- Der vollständige Quellcode von Aspose.Cells Cloud SDK für .Net ist frei verfügbar unter[GitHub](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet).
+ Der vollständige Quellcode von Aspose.Cells Cloud SDK für .Net ist auf der Website frei verfügbar[GitHub](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet).
 
 {{% /alert %}}
 

@@ -22,12 +22,12 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditio
 |:- |:- |:- |:- |
 | nom| chaîne| chemin||
 | NomFeuille| chaîne| chemin||
-| startRow| entier| mettre en doute||
-| startColumn| entier| mettre en doute||
-| totalRows| entier| mettre en doute||
-| totalColonnes| entier| mettre en doute||
-| dossier| chaîne| mettre en doute||
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| startRow| entier| requête||
+| startColumn| entier| requête||
+| totalRows| entier| requête||
+|totalColonnes| entier| requête||
+| dossier| chaîne| requête||
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/DeleteWorksheetConditionalFormattingArea) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

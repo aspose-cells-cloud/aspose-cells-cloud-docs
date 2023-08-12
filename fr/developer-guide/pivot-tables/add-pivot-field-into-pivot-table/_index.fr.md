@@ -25,11 +25,11 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables
 | nom| chaîne| chemin| Nom du document.|
 | NomFeuille| chaîne| chemin| Le nom de la feuille de calcul.|
 | indextablepivot| entier| chemin| Indice de tableau croisé dynamique|
-| pivotFieldType| chaîne| mettre en doute| Le type de zone des champs.|
+| pivotFieldType| chaîne| requête| Le type de zone des champs.|
 | demande|| corps| Dto qui contraint les index de champ|
-| besoin de recalculer| booléen| mettre en doute| FAUX|
-| dossier| chaîne| mettre en doute| Dossier du document.|
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| besoin de recalculer| booléen| requête| FAUX|
+| dossier| chaîne| requête| Dossier du document.|
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/PivotTables/PutPivotTableField) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

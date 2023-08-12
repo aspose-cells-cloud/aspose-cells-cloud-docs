@@ -18,7 +18,7 @@ Pour installer et utiliser le plug-in Aspose Cloud Excel To Form Builder, vous d
 
 N'hésitez pas à nous contacter si vous rencontrez des problèmes lors de l'installation ou de l'utilisation de ce plugin.
 ### **Installation**
-Une fois téléchargé, veuillez suivre ces étapes pour installer le module sur votre site WordPress :
+Une fois téléchargé, veuillez suivre ces étapes pour installer le module sur votre site WordPress :
 
 1. Connectez-vous à votre site en tant qu'administrateur ou en tant que compte de niveau super utilisateur.
 1. Naviguez vers le**Brancher**menu et sélectionnez**Ajouter nouveau**.

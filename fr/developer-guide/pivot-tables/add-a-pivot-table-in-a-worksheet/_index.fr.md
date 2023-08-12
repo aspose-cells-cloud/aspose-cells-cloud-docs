@@ -25,12 +25,12 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables
 | nom| chaîne| chemin| Nom du document.|
 | NomFeuille| chaîne| chemin| Le nom de la feuille de calcul.|
 | demande|| corps| CreatePivotTableRequest dto dans le corps de la requête.|
-| dossier| chaîne| mettre en doute| Dossier du document.|
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
-| données source| chaîne| mettre en doute| Les données du nouveau cache de tableau croisé dynamique.|
-| destCellName| chaîne| mettre en doute| La cellule dans le coin supérieur gauche de la plage de destination du rapport de tableau croisé dynamique.|
-| nom de la table| chaîne| mettre en doute| Nom du nouveau rapport de tableau croisé dynamique.|
-| utiliserMêmeSource| booléen| mettre en doute| Indique si la même source de données est utilisée lorsqu'un autre tableau croisé dynamique existant a utilisé cette source de données. Si la propriété est vraie, cela économisera de la mémoire.|
+| dossier| chaîne| requête| Dossier du document.|
+| nom_stockage| chaîne| requête| nom de stockage.|
+| données source| chaîne| requête| Les données du nouveau cache de tableau croisé dynamique.|
+| destCellName| chaîne| requête| La cellule dans le coin supérieur gauche de la plage de destination du rapport de tableau croisé dynamique.|
+| nom de la table| chaîne| requête| Nom du nouveau rapport de tableau croisé dynamique.|
+| utiliserMêmeSource| booléen| requête| Indique si la même source de données est utilisée lorsqu'un autre tableau croisé dynamique existant a utilisé cette source de données. Si la propriété est vraie, cela économisera de la mémoire.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/PivotTables/PutWorksheetPivotTable) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

@@ -21,8 +21,8 @@ GET http://api.aspose.cloud/v3.0/cells/storage/exist/{path}
 | Le nom du paramètre| Taper| Chemin/chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | chemin| chaîne| chemin| Chemin du fichier ou du dossier, par exemple '/file.ext' ou '/folder'|
-| nom_stockage| chaîne| mettre en doute| Nom de stockage|
-| ID de version| chaîne| mettre en doute| Identifiant de la version du fichier|
+| nom_stockage| chaîne| requête| Nom de stockage|
+| ID de version| chaîne| requête| Identifiant de la version du fichier|
 
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Storage/ObjectExists) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.

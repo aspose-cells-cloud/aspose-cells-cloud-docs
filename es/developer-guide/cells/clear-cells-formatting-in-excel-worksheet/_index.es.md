@@ -22,7 +22,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clea
 | rango| cadena| consulta| El rango.|
 | fila de inicio| entero| consulta| La fila de inicio.|
 | Columna de inicio| entero| consulta| La columna de inicio.|
-| FilaFinal| entero| consulta|La última fila.|
+| FilaFinal| entero| consulta| La última fila.|
 | columnafinal| entero| consulta| La columna final.|
 | carpeta| cadena| consulta| La carpeta del libro de trabajo.|
 | NombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|

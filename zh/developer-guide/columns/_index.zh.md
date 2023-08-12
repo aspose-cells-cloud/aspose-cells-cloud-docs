@@ -11,7 +11,7 @@ weight: 100
 ## 在 Excel 文件上使用列。
 
 - [如何从 Excel 工作表中获取列。](/cells/zh/columns/get/)
-- [如何在 Excel 工作表上添加一个空列。](/cells/zh/columns/add/)
+- [如何在 Excel 工作表上添加空列。](/cells/zh/columns/add/)
 - [如何复制 Excel 工作表上的列。](/cells/zh/columns/copy/)
 - [如何隐藏 Excel 工作表上的列。](/cells/zh/columns/hide/)
 - [如何取消隐藏 Excel 工作表上的列。](/cells/zh/columns/unhide/)

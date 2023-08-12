@@ -29,7 +29,7 @@ POST https://api.aspose.cloud/v3.0/cells/compress
 | ملف| ملف| بيانات النموذج| ملف للتحميل|
 | مستوى الضغط| عدد صحيح| استفسار||
  
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/LiteCells/PostCompress) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
+ ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostCompress) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
  
 يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}

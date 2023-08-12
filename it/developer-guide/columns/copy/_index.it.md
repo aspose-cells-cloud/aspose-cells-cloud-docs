@@ -25,7 +25,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/colu
 | nome| corda| sentiero|Il nome della cartella di lavoro.|
 | foglioNome| corda| sentiero| Il nome del foglio di lavoro.|
 | sourceColumnIndex| numero intero| domanda| Indice della colonna di origine|
-| destinazioneColumnIndex| numero intero| domanda| Indice della colonna di destinazione|
+|destinazioneColumnIndex| numero intero| domanda| Indice della colonna di destinazione|
 | colonnaNumero| numero intero| domanda| Il numero di colonna copiato|
 | foglio di lavoro| corda| domanda||
 | cartella| corda| domanda| La cartella dei documenti.|

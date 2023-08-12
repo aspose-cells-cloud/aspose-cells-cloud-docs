@@ -1,7 +1,7 @@
 ﻿---
 title: Ajuster automatiquement plusieurs lignes sur une feuille de calcul Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: Ligne
+linktitle: Rangée
 type: docs
 url: /fr/worksheets/autofit/rows/
 aliases: [/autofit-multiple-rows-of-worksheet/]
@@ -25,11 +25,11 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitrow
 | nom| chaîne| chemin| Nom du document.|
 | NomFeuille| chaîne| chemin| Le nom de la feuille de calcul.|
 | autoFitterOptions|| corps| Options d'installation automatique.|
-| startRow| entier| mettre en doute| Commencez la rangée.|
-| endRow| entier| mettre en doute| Ligne de fin.|
-| uniquementAuto| booléen| mettre en doute| FAUX|
-| dossier| chaîne| mettre en doute| Dossier du document.|
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| startRow| entier| requête| Commencez la ligne.|
+| endRow| entier| requête| Ligne de fin.|
+| uniquementAuto| booléen| requête| FAUX|
+| dossier| chaîne| requête| Dossier du document.|
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostAutofitWorksheetRows) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

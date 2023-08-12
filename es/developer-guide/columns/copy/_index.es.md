@@ -25,7 +25,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/colu
 | nombre| cadena| camino|El nombre del libro.|
 | hojaNombre| cadena| camino| El nombre de la hoja de cálculo.|
 | sourceColumnIndex| entero| consulta| Índice de la columna de origen|
-| destinoColumnIndex| entero| consulta| Índice de la columna de destino|
+|destinoColumnIndex| entero| consulta| Índice de la columna de destino|
 | número de columna| entero| consulta| El número de columna copiado|
 | hoja de cálculo| cadena| consulta||
 | carpeta| cadena| consulta| La carpeta de documentos.|

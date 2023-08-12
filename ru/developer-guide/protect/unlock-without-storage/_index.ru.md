@@ -24,7 +24,7 @@ POST http://api.aspose.cloud/v3.0/cells/unlock
 | файл| файл| formData| Файл для загрузки|
 | пароль| нить| запрос||
  
-[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/LiteCells/PostUnlock) определяет общедоступный программный интерфейс и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostUnlock) определяет общедоступный программный интерфейс и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
  
 Вы можете использовать инструмент командной строки cURL для простого доступа к веб-службам Aspose.Cells. В следующем примере показано, как звонить в Cloud API с номером cURL.
  
@@ -94,7 +94,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/unlock?password=123456" \
 
 {{< tab tabNum="3" >}}
 
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LiteCells-Unlock.php" >}}
+{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LightCells-Unlock.php" >}}
 {{< /tab >}}
 
 {{< tab tabNum="4" >}}
@@ -123,6 +123,6 @@ curl -v "http://api.aspose.cloud/v3.0/cells/unlock?password=123456" \
 {{< /tab >}}
 {{< tab tabNum="9" >}}
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "LiteCellsUnlock.py" >}}
+{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "LightCellsUnlock.py" >}}
 {{< /tab >}}
 {{< /tabs >}}

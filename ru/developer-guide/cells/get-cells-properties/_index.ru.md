@@ -19,7 +19,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cell
 |:- |:- |:- |:- |
 | имя| нить| путь| Название документа.|
 | имя листа| нить| путь| Имя рабочего листа.|
-| ячейкаOrMethodName| нить| путь| Имя ячейки или метода. (Значение имени метода: firstcell, endcell, maxrow, maxdatarow, maxcolumn, maxdatacolumn, minrow, mindatarow, mincolumn, mindatacolumn и cellName.)|
+| ячейкаOrMethodName| нить| путь|Имя ячейки или метода. (Значение имени метода: firstcell, endcell, maxrow, maxdatarow, maxcolumn, maxdatacolumn, minrow, mindatarow, mincolumn, mindatacolumn и cellName.)|
 | папка| нить| запрос| Папка документа.|
 | имя_хранилища| нить| запрос| имя хранилища.|
  

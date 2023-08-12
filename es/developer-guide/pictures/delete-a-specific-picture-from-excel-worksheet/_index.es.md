@@ -1,7 +1,7 @@
 ﻿---
 title: Eliminar una imagen en un archivo Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: eliminar
+linktitle: Eliminar
 type: docs
 url: /es/pictures/delete/
 aliases: [/delete-a-specific-picture-from-excel-worksheet/]

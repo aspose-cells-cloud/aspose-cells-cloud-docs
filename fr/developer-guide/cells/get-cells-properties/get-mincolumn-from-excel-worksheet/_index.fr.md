@@ -1,5 +1,5 @@
 ﻿---
-title: Obtenir MinColumn à partir de la feuille de calcul Excel
+title: Obtenir MinColumn à partir de la feuille de travail Excel
 type: docs
 url: /fr/get-mincolumn-from-excel-worksheet/
 weight: 100

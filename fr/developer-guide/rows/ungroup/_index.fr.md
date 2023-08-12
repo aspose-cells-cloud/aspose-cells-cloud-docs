@@ -24,11 +24,11 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
 |:- |:- |:- |:- |
 | nom| chaîne| chemin|Le nom du classeur.|
 | NomFeuille| chaîne| chemin| Le nom de la feuille de calcul.|
-| premierIndex| entier| mettre en doute| L'index de la première ligne à opérer.|
-| dernierIndex| entier| mettre en doute| Le dernier index de ligne à utiliser.|
-| est tout| booléen| mettre en doute| Est-ce que toute la rangée doit être exploitée|
-| dossier| chaîne| mettre en doute| Le dossier de documents.|
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| premierIndex| entier| requête| L'index de la première ligne à opérer.|
+| dernierIndex| entier| requête| Le dernier index de ligne à utiliser.|
+| est tout| booléen| requête| Est-ce que toute la rangée doit être exploitée|
+| dossier| chaîne| requête| Le dossier de documents.|
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostUngroupWorksheetRows) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

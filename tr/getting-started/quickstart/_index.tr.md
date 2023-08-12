@@ -77,7 +77,7 @@ Artık hesabınız tamamen yapılandırılmış ve geliştirici ortamı yüklenm
 
 ## Gerekirse Yardım İsteyin
 
- Sorunlarınızı anlatmaktan ve soru sormaktan çekinmeyin[Bulut Forumları](https://forum.aspose.cloud/c/cells/7). Aspose teknik destek ekibi size yardımcı olmaya hazır. Aspose'in telefonla teknik destek vermediğini not edin. Telefon desteği yalnızca satış ve satın alma soruları için mevcuttur.
+ Sorunlarınızı anlatmaktan ve soru sormaktan çekinmeyin[Bulut Forumları](https://forum.aspose.cloud/c/cells/7). Aspose teknik destek ekibi size yardımcı olmaya hazır. Aspose'in telefonla teknik destek vermediğini not edin. Telefon desteği yalnızca satış ve satın alma soruları için kullanılabilir.
 
 
 

@@ -10,7 +10,7 @@ weight: 100
 ---
 **Belge özelliği türleri**
 
-&nbsp;&nbsp;&nbsp;&nbsp;Excel'de belge özelliklerini (meta verileri) görüntülemek, değiştirmek ve kaldırmak için Aspose.Cells Cloud Apis'i nasıl kullanacağınızı öğrenmeye başlamadan önce, bir Excel belgesinin ne tür özelliklere sahip olabileceğini açıklayalım.
+&nbsp;&nbsp;&nbsp;&nbsp;Aspose.Cells Cloud Apis'in Excel'deki belge özelliklerini (meta verileri) görüntülemek, değiştirmek ve kaldırmak için nasıl kullanılacağını öğrenmeye başlamadan önce, bir Excel belgesinin ne tür özelliklere sahip olabileceğini açıklayalım.
 
 - Standart özellikler Excel için ortaktır. Belge hakkında başlık, konu, yazar, kategori vb. temel bilgileri içerirler. Excel belgesini bulmayı kolaylaştırmak için bu özelliklere kendi metin değerlerinizi atayabilirsiniz.
 

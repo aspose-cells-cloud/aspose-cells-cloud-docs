@@ -24,7 +24,7 @@ weight: 40
 |[HTML](https://docs.fileformat.com/web/mhtml/)|File HTML.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[ODS](https://docs.fileformat.com/spreadsheet/ods/)|ODS (Foglio di calcolo OpenDocument).|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |Foglio di calcoloML|Excel 2003 File XML.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Numeri](https://docs.fileformat.com/spreadsheet/numbers/)|Il documento è creato dall'applicazione "Numbers" di Apple che fa parte della suite iWork office di Apple, un insieme di applicazioni che girano sui sistemi operativi Mac OS X e iOS.|{{< emoticons/tick >}}||
+|[Numeri](https://docs.fileformat.com/spreadsheet/numbers/)|Il documento è stato creato dall'applicazione "Numbers" di Apple che fa parte della suite iWork office di Apple, un insieme di applicazioni che girano sui sistemi operativi Mac OS X e iOS.|{{< emoticons/tick >}}||
 |[JSON](https://docs.fileformat.com/web/json/)|Notazione oggetto JavaScript|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[DIF](https://docs.fileformat.com/spreadsheet/dif/)|Formato di scambio dati.||{{< emoticons/tick >}}|
 |[PDF](https://docs.fileformat.com/pdf/)|Formato documento portatile Adobe.||{{< emoticons/tick >}}|

@@ -1,15 +1,15 @@
 ﻿---
-title: Fügen Sie einen Filter in einem Excel-Arbeitsblatt hinzu
+title: Fügen Sie einen Filter in einem Arbeitsblatt Excel hinzu
 second_title: Aspose.Cells Cloud Documen
 linktitle: Filter hinzufügen
 type: docs
 url: /de/autofilter/add-filter/
 aliases: [/add-a-filter-for-a-filter-column/]
 keywords: Adds a filter for a filter column on an Excel worksheet
-description: Die Aspose.Cells-Cloud API unterstützt das Hinzufügen eines Filters für eine Filterspalte auf einem Excel-Arbeitsblatt. SDK unterstützt Arten von Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
+description: Die Aspose.Cells Cloud API unterstützt das Hinzufügen eines Filters für eine Filterspalte in einem Excel-Arbeitsblatt. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
 weight: 60
 ---
-Dieser REST API gibt an, `a filter` für eine Filterspalte in einem Excel-Arbeitsblatt hinzuzufügen.
+Dieser REST API gibt an, `a filter` für eine Filterspalte in einem Arbeitsblatt Excel hinzuzufügen.
 
 ## RSET API
 
@@ -24,20 +24,20 @@ Die Anforderungsparameter sind:
 
 | Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
 |:- |:- |:- |:- |
-| Name| Schnur| Weg|Der Name der Arbeitsmappe.|
-| Tabellenname| Schnur| Weg| Der Arbeitsblattname.|
-|Bereich|Schnur| Anfrage||
-|FeldIndex|ganze Zahl| Anfrage||
-|Kriterien|Schnur| Anfrage||
-|übereinstimmenBlanks|Schnur| Anfrage|wahr falsch|
-|Aktualisierung|Schnur| Anfrage|wahr falsch|
-|Ordner|Schnur| Anfrage|Ursprünglicher Arbeitsmappenordner.|
-|Speichername|Schnur| Anfrage|Speichername.|
+| Name| Zeichenfolge| Weg|Der Name der Arbeitsmappe.|
+| Blattname| Zeichenfolge| Weg| Der Arbeitsblattname.|
+|Reichweite|Zeichenfolge| Abfrage||
+|fieldIndex|ganze Zahl| Abfrage||
+|Kriterien|Zeichenfolge| Abfrage||
+|matchBlanks|Zeichenfolge| Abfrage|wahr falsch|
+|Aktualisierung|Zeichenfolge| Abfrage|wahr falsch|
+|Ordner|Zeichenfolge| Abfrage|Originaler Arbeitsmappenordner.|
+|Speichername|Zeichenfolge| Abfrage|Speichername.|
 
 
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetFilter) definiert eine öffentlich zugängliche Programmierschnittstelle und lässt Sie REST-Interaktionen direkt von einem Webbrowser ausführen.
+ Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetFilter) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht die Durchführung von REST-Interaktionen direkt über einen Webbrowser.
 
-Sie können das cURL-Befehlszeilentool verwenden, um einfach auf Aspose.Cells-Webdienste zuzugreifen. Das folgende Beispiel zeigt, wie Sie Cloud API mit cURL anrufen.
+Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie man mit cURL Anrufe zur Cloud API tätigt.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
@@ -71,9 +71,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFil
 
 ## Cloud SDK-Familie
 
- Die Verwendung eines SDK ist der beste Weg, um die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und lässt Sie sich auf Ihre Projektaufgaben konzentrieren. Bitte überprüfen Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+ Die Verwendung eines SDK ist der beste Weg, die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte schauen Sie sich die an[GitHub-Repository](https://github.com/aspose-cells-cloud) Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie hier.
 
-Die folgenden Codebeispiele zeigen, wie Sie mit verschiedenen SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+Die folgenden Codebeispiele veranschaulichen, wie Aspose.Cells-Webdienste mithilfe verschiedener SDKs aufgerufen werden:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" >}}
 
@@ -91,7 +91,7 @@ Die folgenden Codebeispiele zeigen, wie Sie mit verschiedenen SDKs Aufrufe an As
 
 {{< tab tabNum="3" >}}
 
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LiteCells-Assemble.php" >}}
+{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LightCells-Assemble.php" >}}
 
 {{< /tab >}}
 

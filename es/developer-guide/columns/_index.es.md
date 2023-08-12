@@ -16,7 +16,7 @@ weight: 100
 - [Cómo ocultar columnas en una hoja de trabajo Excel.](/cells/es/columns/hide/)
 - [Cómo mostrar columnas en una hoja de trabajo Excel.](/cells/es/columns/unhide/)
 - [Cómo agrupar columnas en una hoja de trabajo Excel.](/cells/es/columns/group/)
-- [Cómo desagrupar columnas en una hoja de cálculo Excel.](/cells/es/columns/ungroup/)
+- [Cómo desagrupar columnas en una hoja de trabajo Excel.](/cells/es/columns/ungroup/)
 - [Cómo eliminar una columna en una hoja de trabajo Excel.](/cells/es/columns/delete/)
 
 

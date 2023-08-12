@@ -5,7 +5,7 @@ url: /es/charts/delete/
 aliases: [/delete-a-chart-from-a-worksheet/]
 weight: 40
 ---
-Este REST API indica eliminar el gráfico de la hoja de cálculo por índice.
+Este REST API indica eliminar el gráfico de la hoja de trabajo por índice.
  
 ## RESET API
  

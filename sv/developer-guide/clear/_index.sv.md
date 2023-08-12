@@ -22,9 +22,9 @@ POST https://api.aspose.cloud/v3.0/cells/clearobjects
 | Parameternamn| Typ| Sökväg/Frågesträng/HTTPBody|Beskrivning|
 |:- |:- |:- |:- |
 | fil| fil| formData| Fil att ladda upp|
-| objekttyp| sträng| fråga| duplicaterows/blankcolumns/blankrows/formula/content/style/chart/comment/picture/shape/listobject/hyperlink/oleobject/pivottable/validation/Background|
+| objekttyp| sträng| fråga|duplicaterows/blankcolumns/blankrows/formula/content/style/chart/comment/picture/shape/listobject/hyperlink/oleobject/pivottable/validation/Background|
  
- De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/LiteCells/PostClearObjects) definierar ett allmänt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
+ De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/LightCells/PostClearObjects) definierar ett allmänt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
  
 Du kan använda cURL kommandoradsverktyg för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man ringer till Cloud API med cURL.
  
@@ -91,7 +91,7 @@ Följande kodexempel visar hur man ringer till Aspose.Cells webbtjänster med ol
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LiteCells-Clear.php" >}}
+{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LightCells-Clear.php" >}}
 
 {{< /tab >}}
 
@@ -121,7 +121,7 @@ Följande kodexempel visar hur man ringer till Aspose.Cells webbtjänster med ol
 {{< /tab >}}
 {{< tab tabNum="9" >}}
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "LiteCellsClear.py" >}}
+{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "LightCellsClear.py" >}}
 {{< /tab >}}
 
 {{< /tabs >}}

@@ -5,18 +5,18 @@ type: docs
 url: /zh/charts/
 aliases: [/working-with-charts/]
 keywords: REST API, spreadsheets, excel, chart
-description: Cells.Cloud API for Excel操作：图表操作
+description: Cells.云API为Excel操作：图表操作
 weight: 100
 ---
 ## 在 Excel 文件上使用图表。
 
-- [从工作表中获取图表](/cells/zh/get-chart-from-a-worksheet/)
+- [从工作表获取图表](/cells/zh/get-chart-from-a-worksheet/)
 - [在工作表中添加图表](/cells/zh/add-a-chart-in-a-worksheet/)
 - [从工作表中删除所有图表](/cells/zh/delete-all-charts-from-a-worksheet/)
 - [从工作表中删除图表](/cells/zh/delete-a-chart-from-a-worksheet/)
 - [将图表转换为图像](/cells/zh/convert-chart-to-image/)
-- [从工作表中获取图表区](/cells/zh/get-chart-area-from-a-worksheet/)
-- [从工作表中获取图表区域的填充格式](/cells/zh/get-fill-format-of-a-chart-area-from-a-worksheet/)
+- [从工作表获取图表区域](/cells/zh/get-chart-area-from-a-worksheet/)
+- [从工作表获取图表区域的填充格式](/cells/zh/get-fill-format-of-a-chart-area-from-a-worksheet/)
 - [从工作表中获取图表图例](/cells/zh/get-chart-legend-from-a-worksheet/)
 - [更新工作表中的图表图例](/cells/zh/update-chart-legend-in-a-worksheet/)
 - [在工作表中显示图表图例](/cells/zh/show-chart-legend-in-a-worksheet/)

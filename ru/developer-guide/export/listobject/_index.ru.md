@@ -14,12 +14,12 @@ weight: 20
 
 |**API**|**Тип**|**Описание**|**Свэггер Ссылка**|
 |:- |:- |:- |:- |
-|/ячейки/экспорт|ПОЧТА|Экспорт Excel из содержимого запроса в какой-либо формат|[Постэкспорт](https://apireference.aspose.cloud/cells/#/LiteCells/PostExport)|
+|/ячейки/экспорт|ПОЧТА|Экспорт Excel из содержимого запроса в какой-либо формат|[Постэкспорт](https://apireference.aspose.cloud/cells/#/LightCells/PostExport)|
 
 
-[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/LiteCells/PostExport) определяет общедоступный программный интерфейс и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) определяет общедоступный программный интерфейс и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
 
- Вы можете использовать**cURL** инструмент командной строки для простого доступа к веб-службам Aspose.Cells. В следующем примере показано, как звонить в Cloud API с номером cURL.
+ Вы можете использовать**cURL** инструмент командной строки для простого доступа к веб-службам Aspose.Cells. В следующем примере показано, как совершать звонки в Cloud API с номером cURL.
 
 
 
@@ -71,7 +71,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=listobject&f
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LiteCells-Export-shape-tiff.php" >}}
+{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LightCells-Export-shape-tiff.php" >}}
 
 {{< /tab >}}
 

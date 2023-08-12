@@ -1,10 +1,10 @@
 ﻿---
-title: Holen Sie sich die erste Zelle aus dem Arbeitsblatt Excel
+title: Holen Sie sich die erste Zelle von Excel Workshee
 type: docs
 url: /de/get-first-cell-from-excel-worksheet/
 weight: 20
 ---
-Dieser REST API zeigt an, dass Shows einen `firstcell` in einer Excel-Datei erhalten, wenn der `cellOrMethodName`-Parameter `firstcell` ist.
+Dieser REST API zeigt an, dass er einen `firstcell` in einer Excel-Datei erhält, wenn der Parameter `cellOrMethodName` `firstcell` ist.
 
 - **cURL Beispiel**
 
@@ -83,9 +83,9 @@ curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/
 
 - **Cloud SDK-Familie**
 
- Die Verwendung eines SDK ist der beste Weg, um die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und lässt Sie sich auf Ihre Projektaufgaben konzentrieren. Bitte überprüfen Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+ Die Verwendung eines SDK ist der beste Weg, die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte schauen Sie sich die an[GitHub-Repository](https://github.com/aspose-cells-cloud) Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie hier.
 
-Die folgenden Codebeispiele zeigen, wie Sie mit verschiedenen SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+Die folgenden Codebeispiele veranschaulichen, wie Aspose.Cells-Webdienste mithilfe verschiedener SDKs aufgerufen werden:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 

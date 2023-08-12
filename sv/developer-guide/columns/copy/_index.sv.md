@@ -25,7 +25,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/colu
 | namn| sträng| väg|Arbetsbokens namn.|
 | arknamn| sträng| väg| Kalkylbladets namn.|
 | sourceColumnIndex| heltal| fråga| Källkolumnindex|
-| destinationColumnIndex| heltal| fråga| Destinationskolumnindex|
+|destinationColumnIndex| heltal| fråga| Destinationskolumnindex|
 | kolumnnummer| heltal| fråga| Det kopierade kolumnnumret|
 | arbetsblad| sträng| fråga||
 | mapp| sträng| fråga| Dokumentmappen.|

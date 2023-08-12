@@ -1,15 +1,15 @@
 ﻿---
-title: Löschen Sie ein Bild in einem Excel-Ordner
+title: Löschen Sie ein Bild in einer Excel-Datei
 second_title: Aspose.Cells Cloud Documen
 linktitle: Löschen
 type: docs
 url: /de/pictures/delete/
 aliases: [/delete-a-specific-picture-from-excel-worksheet/]
 keywords: Delete a picture in an Excel file
-description: Aspose.Cells Cloud REST API unterstützt das Löschen eines Bildes in einer Excel-Datei. SDK unterstützt Arten von Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
+description: Aspose.Cells Cloud REST API unterstützt das Löschen eines Bildes in einer Excel-Datei. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
 weight: 50
 ---
-Dieser REST API zeigt `delete` ein Bild aus einem Excel-Arbeitsblatt an.
+Dieser REST API weist auf `delete` ein Bild aus einem Excel-Arbeitsblatt hin.
  
 ## RSET API
  
@@ -22,15 +22,15 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
  
 | Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
 |:- |:- |:- |:- |
-| Name| Schnur| Weg|Der Name der Arbeitsmappe.|
-| Tabellenname| Schnur| Weg| Der Name des Arbeitsblatts.|
-| Bildindex| ganze Zahl| Weg|Bildindex|
-| Ordner| Schnur| Anfrage| Der Arbeitsmappenordner.|
-| Speichername| Schnur| Anfrage| Speichername.|
+| Name| Zeichenfolge| Weg|Der Name der Arbeitsmappe.|
+| Blattname| Zeichenfolge| Weg| Der Name des Arbeitsblatts.|
+| pictureIndex| ganze Zahl| Weg|Bildindex|
+| Ordner| Zeichenfolge| Abfrage| Der Arbeitsmappenordner.|
+| Speichername| Zeichenfolge| Abfrage| Speichername.|
  
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Pictures/DeleteWorksheetPicture) definiert eine öffentlich zugängliche Programmierschnittstelle und lässt Sie REST-Interaktionen direkt von einem Webbrowser ausführen.
+ Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Pictures/DeleteWorksheetPicture) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht die Durchführung von REST-Interaktionen direkt über einen Webbrowser.
  
-Sie können das cURL-Befehlszeilentool verwenden, um einfach auf Aspose.Cells-Webdienste zuzugreifen. Das folgende Beispiel zeigt, wie Sie Cloud API mit cURL anrufen.
+Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie man mit cURL Anrufe zur Cloud API tätigt.
  
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
  
@@ -64,9 +64,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/picture
  
 ## Cloud SDK-Familie
  
- Die Verwendung eines SDK ist der beste Weg, um die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und lässt Sie sich auf Ihre Projektaufgaben konzentrieren. Bitte überprüfen Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+ Die Verwendung eines SDK ist der beste Weg, die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte schauen Sie sich die an[GitHub-Repository](https://github.com/aspose-cells-cloud) Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie hier.
  
-Die folgenden Codebeispiele zeigen, wie Sie mit verschiedenen SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+Die folgenden Codebeispiele veranschaulichen, wie Aspose.Cells-Webdienste mithilfe verschiedener SDKs aufgerufen werden:
  
 
 

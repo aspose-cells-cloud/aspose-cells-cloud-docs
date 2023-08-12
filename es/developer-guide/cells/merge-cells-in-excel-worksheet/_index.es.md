@@ -22,7 +22,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/merg
 | fila de inicio| entero| consulta| La fila de inicio.|
 | Columna de inicio| entero| consulta| La columna de inicio.|
 | filas totales| entero| consulta| Las filas totales|
-| columnastotales| entero| consulta| Las columnas totales.|
+|columnastotales| entero| consulta| Las columnas totales.|
 | carpeta| cadena| consulta| La carpeta del libro de trabajo.|
 | NombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
  

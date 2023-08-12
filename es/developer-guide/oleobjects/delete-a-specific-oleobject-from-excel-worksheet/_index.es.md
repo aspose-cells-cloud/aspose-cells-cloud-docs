@@ -1,7 +1,7 @@
 ﻿---
 title: Eliminar un objeto OLE en una hoja de trabajo Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: eliminar
+linktitle: Eliminar
 type: docs
 url: /es/oleobjects/delete/
 aliases: [/delete-a-specific-oleobject-from-excel-worksheet/]

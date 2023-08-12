@@ -1,7 +1,7 @@
 ﻿---
 title: Supprimer plusieurs lignes sur une feuille de calcul Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: Ligne
+linktitle: Rangée
 type: docs
 url: /fr/rows/delete/rows/
 keywords: Delete rows on an Excel workshee
@@ -23,11 +23,11 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/ro
 |:- |:- |:- |:- |
 | nom| chaîne| chemin|Le nom du classeur.|
 | NomFeuille| chaîne| chemin| La feuille de travail est la même.|
-| démarrer| entier| mettre en doute| L'index de début de ligne à utiliser.|
-| totalRows| entier| mettre en doute|1 |
-| mettre à jour la référence| booléen| mettre en doute| Vrai|
-| dossier| chaîne| mettre en doute| Le dossier de documents.|
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| démarrer| entier| requête| L'index de début de ligne à utiliser.|
+| totalRows| entier| requête|1 |
+| mettre à jour la référence| booléen| requête| Vrai|
+| dossier| chaîne| requête| Le dossier de documents.|
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetRows) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

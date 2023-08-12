@@ -7,7 +7,7 @@ keywords: Learn how to move folder with Aspose Cells Cloud REST API
 description: Aprenda a mover carpetas con Aspose Cells Cloud REST API SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift
 weight: 100
 ---
-Este RESTO API indica `move folder`
+Este REST API indica `move folder`
  
 ## RESET API
  

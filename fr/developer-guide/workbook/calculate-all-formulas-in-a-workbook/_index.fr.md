@@ -24,9 +24,9 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/calculateformula
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Nom du document.|
 | choix|| corps| Options de calcul.|
-| ignoreError| booléen| mettre en doute| ignorer l'erreur.|
-| dossier| chaîne| mettre en doute| Dossier du document.|
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| ignoreError| booléen| requête| ignorer l'erreur.|
+| dossier| chaîne| requête| Dossier du document.|
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookCalculateFormula) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

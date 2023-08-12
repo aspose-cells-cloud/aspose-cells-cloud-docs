@@ -21,10 +21,10 @@ PUT http://api.aspose.cloud/v3.0/cells/storage/file/move/{srcPath}
 | Le nom du paramètre| Taper| Chemin/chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | srcPath| chaîne| chemin| Chemin du fichier source, par exemple '/src.ext'|
-| cheminDest| chaîne| mettre en doute| Chemin du fichier de destination, par exemple '/dest.ext'|
-| srcStorageName| chaîne| mettre en doute| Nom du stockage source|
-| destStorageName| chaîne| mettre en doute| Nom du stockage de destination|
-| ID de version| chaîne| mettre en doute| ID de version du fichier à déplacer|
+| cheminDest| chaîne| requête| Chemin du fichier de destination, par exemple '/dest.ext'|
+| srcStorageName| chaîne| requête| Nom du stockage source|
+| destStorageName| chaîne| requête| Nom du stockage de destination|
+| ID de version| chaîne| requête| ID de version du fichier à déplacer|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/File/MoveFile) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

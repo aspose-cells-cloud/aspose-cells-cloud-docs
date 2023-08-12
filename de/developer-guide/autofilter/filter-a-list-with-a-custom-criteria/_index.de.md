@@ -1,15 +1,15 @@
 ﻿---
-title: Fügen Sie ein benutzerdefiniertes Kriterium in einem Excel-Arbeitsblatt hinzu
+title: Fügen Sie ein benutzerdefiniertes Kriterium in einem Arbeitsblatt Excel hinzu
 second_title: Aspose.Cells Cloud Documen
 linktitle: Benutzerdefinierten Filter hinzufügen
 type: docs
 url: /de/autofilter/add-custom-filter/ 
 aliases: [/filter-a-list-with-a-custom-criteria/,/autofilter/add-a-custom-filter/ ]
 keywords: Adds a custom filter on an Excel worksheet
-description: Die Aspose.Cells-Cloud API unterstützt das Hinzufügen eines benutzerdefinierten Filters zu einem Excel-Arbeitsblatt. SDK-Unterstützungsarten von Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
+description: Die Aspose.Cells Cloud API unterstützt das Hinzufügen eines benutzerdefinierten Filters zu einem Excel-Arbeitsblatt. Das SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
 weight: 65
 ---
-Dieser REST API gibt an, eine Liste mit `custom criteria` zu filtern.
+Dieser REST API gibt an, eine Liste mit einem `custom criteria` zu filtern.
             
 ## RSET API
  
@@ -22,23 +22,23 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/
  
 | Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
 |:- |:- |:- |:- |
-| Name| Schnur| Weg||
-| Tabellenname| Schnur| Weg||
-| Bereich| Schnur| Anfrage||
-| FeldIndex| ganze Zahl| Anfrage||
-| Betreibertyp1| Schnur| Anfrage||
-| Kriterien1| Schnur| Anfrage||
-| ist und| boolesch| Anfrage||
-| Betreibertyp2| Schnur| Anfrage||
-| Kriterien2| Schnur| Anfrage||
-| übereinstimmenBlanks| boolesch| Anfrage||
-| Aktualisierung| boolesch| Anfrage||
-| Ordner| Schnur| Anfrage||
-| Speichername| Schnur| Anfrage| Speichername.|
+| Name| Zeichenfolge| Weg||
+| Blattname| Zeichenfolge| Weg||
+| Reichweite| Zeichenfolge| Abfrage||
+| fieldIndex| ganze Zahl| Abfrage||
+| OperatorType1| Zeichenfolge| Abfrage||
+| Kriterien1| Zeichenfolge| Abfrage||
+| ist und| Boolescher Wert| Abfrage||
+| OperatorType2| Zeichenfolge| Abfrage||
+| Kriterien2| Zeichenfolge| Abfrage||
+| matchBlanks| Boolescher Wert| Abfrage||
+| Aktualisierung| Boolescher Wert| Abfrage||
+| Ordner| Zeichenfolge| Abfrage||
+| Speichername| Zeichenfolge| Abfrage| Speichername.|
  
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetCustomFilter) definiert eine öffentlich zugängliche Programmierschnittstelle und lässt Sie REST-Interaktionen direkt von einem Webbrowser ausführen.
+ Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetCustomFilter) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht die Durchführung von REST-Interaktionen direkt über einen Webbrowser.
  
-Sie können das cURL-Befehlszeilentool verwenden, um einfach auf Aspose.Cells-Webdienste zuzugreifen. Das folgende Beispiel zeigt, wie Sie Cloud API mit cURL anrufen.
+Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie man mit cURL Anrufe zur Cloud API tätigt.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
@@ -76,9 +76,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFil
 
 ## Cloud SDK-Familie
  
- Die Verwendung eines SDK ist der beste Weg, um die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und lässt Sie sich auf Ihre Projektaufgaben konzentrieren. Bitte überprüfen Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+ Die Verwendung eines SDK ist der beste Weg, die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte schauen Sie sich die an[GitHub-Repository](https://github.com/aspose-cells-cloud) Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie hier.
  
-Die folgenden Codebeispiele zeigen, wie Sie mit verschiedenen SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+Die folgenden Codebeispiele veranschaulichen, wie Aspose.Cells-Webdienste mithilfe verschiedener SDKs aufgerufen werden:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" >}}
 

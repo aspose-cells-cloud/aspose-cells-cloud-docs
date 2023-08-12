@@ -8,6 +8,6 @@ weight: 60
 ---
  Puoi valutare[Aspose.Cells API REST](http://apireference.aspose.cloud/cells/) creando un[conto di prova gratuito](https://dashboard.aspose.cloud). La prova gratuita ti darà una buona idea delle capacità del servizio e ti permetterà di fare un po' di sviluppo iniziale.
 
-si prega di controllare[Piano di prova](https://purchase.aspose.cloud/trial) pagina web per maggiori dettagli.
+ si prega di controllare[Piano di prova](https://purchase.aspose.cloud/trial) pagina web per maggiori dettagli.
 
 

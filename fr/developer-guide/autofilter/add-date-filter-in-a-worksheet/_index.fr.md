@@ -24,19 +24,19 @@ Les paramètres de la requête sont :
 |:- |:- |:- |:- |
 | nom| chaîne| Chemin|Le nom du classeur.|
 | NomFeuille| chaîne| Chemin| Le nom de la feuille de calcul.|
-|gamme|chaîne| Mettre en doute||
-|fieldIndex|entier| Mettre en doute||
-|dateTimeGroupingType|chaîne| Mettre en doute| Jour/Heure/Minute/Mois/Seconde/Année|
-|année|entier| Mettre en doute||
-|mois|entier| Mettre en doute||
-|jour|entier| Mettre en doute||
-|heure|entier| Mettre en doute||
-|minute|entier| Mettre en doute||
-|deuxième|entier| Mettre en doute||
-|matchBlanks|chaîne| Mettre en doute|vrai faux|
-|rafraîchir|chaîne| Mettre en doute|vrai faux|
-|dossier|chaîne| Mettre en doute|Dossier de classeur d'origine.|
-|nom_stockage|chaîne| Mettre en doute|Nom de stockage.|
+|gamme|chaîne| Requête||
+|fieldIndex|entier| Requête||
+|dateTimeGroupingType|chaîne| Requête| Jour/Heure/Minute/Mois/Seconde/Année|
+|année|entier| Requête||
+|mois|entier| Requête||
+|jour|entier| Requête||
+|heure|entier| Requête||
+|minute|entier| Requête||
+|deuxième|entier| Requête||
+|matchBlanks|chaîne| Requête|vrai faux|
+|rafraîchir|chaîne| Requête|vrai faux|
+|dossier|chaîne| Requête|Dossier de classeur d'origine.|
+|nom_stockage|chaîne| Requête|Nom de stockage.|
 
 
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetDateFilter) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.

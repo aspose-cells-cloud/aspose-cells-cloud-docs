@@ -1,7 +1,7 @@
 ﻿---
 title: Travailler avec l'ajout d'une ligne sur une feuille de calcul Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: Publicité
+linktitle: Annonce
 type: docs
 url: /fr/rows/add/
 keywords: Working with adding row on an Excel worksheet. How to add rows on an Excel worksheet

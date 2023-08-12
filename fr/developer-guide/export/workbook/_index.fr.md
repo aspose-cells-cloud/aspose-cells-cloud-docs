@@ -14,10 +14,10 @@ weight: 20
 
 |**API**|**Taper**|**Description**|**Lien fanfaron**|
 |:- |:- |:- |:- |
-|/cellules/exporter|POSTE|Exporter des objets Excel du contenu de la demande vers un certain format|[Post-exportation](https://apireference.aspose.cloud/cells/#/LiteCells/PostExport)|
+|/cellules/exporter|POSTE|Exporter des objets Excel du contenu de la demande vers un certain format|[Post-exportation](https://apireference.aspose.cloud/cells/#/LightCells/PostExport)|
 
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/LiteCells/PostExport) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
+ Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
 
  Vous pouvez utiliser**cURL** outil de ligne de commande pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment passer des appels vers le Cloud API avec cURL.
 
@@ -69,7 +69,7 @@ Les exemples de code suivants montrent comment effectuer des appels vers les ser
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LiteCells-Export-workbook-tiff.php" >}}
+{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LightCells-Export-workbook-tiff.php" >}}
 
 {{< /tab >}}
 

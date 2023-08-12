@@ -15,5 +15,5 @@ weight: 100
 **Resumen**
 
 -  Excel comentarios se utilizan para[agregar una nota o explicar una fórmula en una celda](/cells/es/comments/add/).
--  Excel proporciona a los usuarios la flexibilidad de[edición](/cells/es/comments/update/), [borrando](/cells/es/comments/delete/) , y[demostración](/cells/es/comments/get/) o[ocultación](/cells/es/comments/update/) comentarios en una hoja de trabajo Excel.
+- Excel proporciona a los usuarios la flexibilidad de[edición](/cells/es/comments/update/), [borrando](/cells/es/comments/delete/) , y[demostración](/cells/es/comments/get/) o[ocultación](/cells/es/comments/update/) comentarios en una hoja de trabajo Excel.
 -  Los usuarios también pueden[cambiar el tamaño](/cells/es/comments/update/) y[mover](/cells/es/comments/update/) el cuadro de comentarios Excel.

@@ -6,10 +6,10 @@ type: docs
 url: /de/columns/unhide/
 aliases: [/unhide-columns-in-an-excel-worksheet/,/unhide-columns-in-excel-worksheet/]
 keywords: Unhide column on an Excel workshee
-description: Aspose.Cells Cloud REST API unterstützt das Einblenden von Spalten auf einem Excel Arbeitsblatt. SDK unterstützt Arten von Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
+description: Aspose.Cells Cloud REST API unterstützt das Einblenden von Spalten in einem Excel-Arbeitsblatt. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
 weight: 50
 ---
-Dieser REST API gibt an, dass Arbeitsblattspalten eingeblendet werden.
+Dieser REST API zeigt an, dass Arbeitsblattspalten eingeblendet werden.
  
 ## RSET API
  
@@ -22,17 +22,17 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/colu
  
 | Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
 |:- |:- |:- |:- |
-| Name| Schnur| Weg|Der Name der Arbeitsmappe.|
-| Tabellenname| Schnur| Weg| Der Arbeitsblattname.|
-| Startspalte| ganze Zahl| Anfrage| Der Anfangsspaltenindex, der verarbeitet werden soll.|
-| totalColumns| ganze Zahl| Anfrage| Anzahl der zu betreibenden Säulen.|
-| Breite| Nummer| Anfrage|50.0 |
-| Ordner| Schnur| Anfrage| Der Dokumentenordner.|
-| Speichername| Schnur| Anfrage| Speichername.|
+| Name| Zeichenfolge| Weg|Der Name der Arbeitsmappe.|
+| Blattname| Zeichenfolge| Weg| Der Arbeitsblattname.|
+| Startspalte| ganze Zahl| Abfrage| Der Anfangsspaltenindex, der bearbeitet werden soll.|
+|totalColumns| ganze Zahl| Abfrage| Anzahl der zu bedienenden Säulen.|
+| Breite| Nummer| Abfrage|50.0 |
+| Ordner| Zeichenfolge| Abfrage| Der Dokumentenordner.|
+| Speichername| Zeichenfolge| Abfrage| Speichername.|
 
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Cells/PostUnhideWorksheetColumns) definiert eine öffentlich zugängliche Programmierschnittstelle und lässt Sie REST-Interaktionen direkt von einem Webbrowser ausführen.
+ Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Cells/PostUnhideWorksheetColumns) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht die Durchführung von REST-Interaktionen direkt über einen Webbrowser.
 
- Sie können verwenden**cURL** Befehlszeilentool für den einfachen Zugriff auf Aspose.Cells-Webdienste. Das folgende Beispiel zeigt, wie Sie Cloud API mit cURL anrufen.
+ Sie können verwenden**cURL** Befehlszeilentool für den einfachen Zugriff auf Aspose.Cells-Webdienste. Das folgende Beispiel zeigt, wie Sie die Cloud API mit cURL anrufen.
 
 
 
@@ -68,9 +68,9 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ce
 
 ## Cloud SDK-Familie
 
- Die Verwendung eines SDK ist der beste Weg, um die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und lässt Sie sich auf Ihre Projektaufgaben konzentrieren. Bitte überprüfen Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+ Die Verwendung eines SDK ist der beste Weg, die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte schauen Sie sich die an[GitHub-Repository](https://github.com/aspose-cells-cloud) Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie hier.
 
-Die folgenden Codebeispiele zeigen, wie Sie mit verschiedenen SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+Die folgenden Codebeispiele veranschaulichen, wie Aspose.Cells-Webdienste mithilfe verschiedener SDKs aufgerufen werden:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 

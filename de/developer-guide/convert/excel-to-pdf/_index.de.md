@@ -6,35 +6,35 @@ type: docs
 url: /de/convert/excel-to-pdf/
 aliases: [/convert-excel-file-to-pdf-in-cloud/]
 keywords: Convert excel files to pdf files
-description: Aspose.Cells Cloud REST API unterstützt die Konvertierung von Excel-Dateien in PDF-Dateien. SDK unterstützt Arten von Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
+description: Aspose.Cells Cloud REST API unterstützt die Konvertierung von Excel-Dateien in PDF-Dateien. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
 weight: 80
 ---
-Diese REST API `saveas` Excel-Datei an PDF.
+Diese REST API `saveas` Excel-Datei in PDF.
 
-[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) Mit API können Sie die MS Excel-Datei als PDF-Datei mit zusätzlichen Einstellungen speichern und das Ergebnis im Speicher speichern.
+[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) Mit API können Sie die Datei MS Excel als Datei PDF mit zusätzlichen Einstellungen speichern und das Ergebnis im Speicher speichern.
 
-Diese REST API `convert` Excel-Datei an PDF.
+Diese REST API `convert` Excel-Datei in PDF.
 
-[PUT /cells/convert](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)Mit API können Sie die MS Excel-Datei mit zusätzlichen Einstellungen in die PDF-Datei konvertieren und das Ergebnis in der Antwort speichern.
+[PUT /cells/convert](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)Mit API können Sie die MS-Datei Excel mit zusätzlichen Einstellungen in die Datei PDF konvertieren und das Ergebnis in der Antwort speichern.
 
-Diese REST API `export` Excel-Datei an PDF.
+Diese REST API `export` Excel-Datei in PDF.
 
-[GET /cells/{Name}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook  )Mit API können Sie die MS Excel-Datei mit zusätzlichen Einstellungen in die PDF-Datei konvertieren und das Ergebnis in der Antwort speichern.
+[GET /cells/{name}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook  )Mit API können Sie die MS-Datei Excel mit zusätzlichen Einstellungen in die Datei PDF konvertieren und das Ergebnis in der Antwort speichern.
 
 ## REST API
 
 
 |**API**|**Typ**|**Beschreibung**|**Swagger-Link**|
 |:- |:- |:- |:- |
-|/Zellen/konvert|SETZEN|Konvertiert eine Arbeitsmappe aus Anforderungsinhalten in ein bestimmtes Format|[PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)|
-|/Zellen/{Name}|ERHALTEN|Exportiert die Arbeitsmappe in ein anderes Format.|[GetWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)|
-|/cells/{Name}/saveAs|POST|Exportieren Sie die Arbeitsmappe in das Format|[PostDocumentSaveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)|
+|/cells/convert|SETZEN|Konvertiert die Arbeitsmappe vom Anforderungsinhalt in ein bestimmtes Format|[PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)|
+|/cells/{name}|ERHALTEN|Exportiert die Arbeitsmappe in ein anderes Format.|[GetWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)|
+|/cells/{name}/saveAs|POST|Arbeitsmappe in Format exportieren|[PostDocumentSaveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)|
 
 
 
- Diese[PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook), [GetWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook), [PostDocumentSaveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) APIs definieren eine öffentlich zugängliche Programmierschnittstelle und ermöglichen es Ihnen, REST-Interaktionen direkt von einem Webbrowser aus auszuführen.
+ Diese[PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook), [GetWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook), [PostDocumentSaveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) APIs definieren eine öffentlich zugängliche Programmierschnittstelle und ermöglichen die Durchführung von REST-Interaktionen direkt über einen Webbrowser.
 
- Sie können verwenden**cURL** Befehlszeilentool für den einfachen Zugriff auf Aspose.Cells-Webdienste. Das folgende Beispiel zeigt, wie Sie Cloud API mit cURL anrufen.
+ Sie können verwenden**cURL** Befehlszeilentool für den einfachen Zugriff auf Aspose.Cells-Webdienste. Das folgende Beispiel zeigt, wie Sie die Cloud API mit cURL anrufen.
 
 
 
@@ -83,9 +83,9 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/sampleBook.xlsx/SaveAs?newfile
 
 ## Cloud SDK-Familie
 
- Die Verwendung eines SDK ist der beste Weg, um die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und lässt Sie sich auf Ihre Projektaufgaben konzentrieren. Bitte überprüfen Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+ Die Verwendung eines SDK ist der beste Weg, die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte schauen Sie sich die an[GitHub-Repository](https://github.com/aspose-cells-cloud) Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie hier.
 
-Die folgenden Codebeispiele zeigen, wie Sie mit verschiedenen SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+Die folgenden Codebeispiele veranschaulichen, wie Aspose.Cells-Webdienste mithilfe verschiedener SDKs aufgerufen werden:
 
 
 {{< tabs tabTotal="3" tabID="3" tabName1="C#" tabName2="Java" tabName3="Go" >}}

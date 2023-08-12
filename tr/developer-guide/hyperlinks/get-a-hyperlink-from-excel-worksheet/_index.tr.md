@@ -1,5 +1,5 @@
 ﻿---
-title: ge
+title: Ge
 type: docs
 url: /tr/hyperlinks/get/
 keywords: Delete a hyperlink from an Excel worksheet

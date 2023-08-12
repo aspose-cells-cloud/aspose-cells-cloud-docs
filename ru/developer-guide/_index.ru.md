@@ -105,7 +105,7 @@ weight: 20
             <li><a href="/cells/ru/update-a-specific-oleobject-from-excel-worksheet/">Обновляет определенный Ole-объект на листе Excel.</a></li>
             <li><a href="/cells/ru/convert-oleobject-to-image/">Преобразует Ole-объект в изображение.</a></li>
             <li><a href="/cells/ru/delete-all-oleobjects-from-excel-worksheet/">Удаляет все Ole-объекты на рабочем листе Excel.</a></li>
-            <li><a href="/cells/ru/delete-a-specific-oleobject-from-excel-worksheet/">Удаляет определенный Ole-объект на листе Excel.</a></li>
+            <li><a href="/cells/ru/delete-a-specific-oleobject-from-excel-worksheet/">Удаляет определенный объект Ole на листе Excel.</a></li>
         </ul>
     </div>
     <div class="col-md-6">

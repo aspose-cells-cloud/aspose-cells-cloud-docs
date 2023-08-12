@@ -1,5 +1,5 @@
 ﻿---
-title:  Получить ось второй категории диаграммы
+title: Получить ось второй категории диаграммы
 type: docs
 url: /ru/charts/second-category-axis/get/
 weight: 60

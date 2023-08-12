@@ -1,5 +1,5 @@
 ﻿---
-title: Supprimer tous les graphiques d'une feuille de travail
+title: Supprimer tous les graphiques d'une feuille de calcul
 type: docs
 url: /fr/charts/clear/
 aliases: [/delete-all-charts-from-a-worksheet/]
@@ -20,8 +20,8 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Nom du classeur.|
 | NomFeuille| chaîne| chemin| Le nom de la feuille de calcul.|
-| dossier| chaîne| mettre en doute| Le dossier du classeur.|
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| dossier| chaîne| requête| Le dossier du classeur.|
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Charts/DeleteWorksheetClearCharts) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

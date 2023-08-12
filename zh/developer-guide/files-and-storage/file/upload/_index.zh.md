@@ -4,10 +4,10 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/file/upload/
 keywords: Learn how to upload file with Aspose Cells Cloud REST API
-description: 了解如何使用 Aspose 上传文件 Cells Cloud REST API SDK 支持多种开发语言。它们包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 swift
+description: 了解如何使用 Aspose Cells Cloud REST API SDK 支持多种开发语言上传文件。它们包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 swift
 weight: 100
 ---
-这个 REST API 表示 `upload file`。
+这个REST API表示`upload file`。
 
 ## RSET API
  
@@ -20,13 +20,13 @@ PUT http://api.aspose.cloud/v3.0/cells/storage/file/{path}
  
 |参数名称|类型|路径/查询字符串/HTTPBody|描述|
 |:- |:- |:- |:- |
-|小路|细绳|小路|上传路径，包括文件名和扩展名，例如 /file.ext 或 /Folder 1/file.ext 如果内容是多部分且路径不包含文件名，它会尝试从 Content-Disposition 标头的文件名参数中获取它们。|
+|小路|细绳|小路|上传的路径，包括文件名和扩展名，例如 /file.ext 或 /Folder 1/file.ext 如果内容是多部分的并且路径不包含文件名，它将尝试从 Content-Disposition 标头的文件名参数中获取它们。|
 |文件|文件|表单数据|要上传的文件|
 |存储名称|细绳|询问|存储名称|
  
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/File/UploadFile)定义了一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+这[开放API规范](https://apireference.aspose.cloud/cells/#/File/UploadFile)定义了一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
  
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例显示如何使用 cURL 调用 Cloud API。
+您可以使用cURL命令行工具轻松访问Aspose.Cells Web服务。以下示例展示如何使用 cURL 呼叫云端 API。
  
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
  
@@ -70,11 +70,11 @@ curl -v "http://api.aspose.cloud/v3.0/cells/storage/file/Book1.xlsx" \
  
 {{< /tabs >}}
  
-## 云 SDK 系列
+## 云SDK系列
  
-使用 SDK 是加速开发的最佳方式。 SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 仓库](https://github.com/aspose-cells-cloud)有关 Aspose.Cells Cloud SDK 的完整列表。
+使用 SDK 是加快开发速度的最佳方式。 SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)有关 Aspose.Cells Cloud SDK 的完整列表。
  
-以下代码示例演示如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
  
  {{< tabs tabTotal="9" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" tabName9="Python" >}}
 

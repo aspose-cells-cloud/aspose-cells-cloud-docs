@@ -25,7 +25,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/colu
 | isim| sicim| yol|Çalışma kitabı adı.|
 | sayfaAdı| sicim| yol| Çalışma sayfası adı.|
 | başlangıç sütunu| tamsayı| sorgu| Çalıştırılacak başlangıç sütun dizini.|
-| toplam Sütunlar| tamsayı| sorgu| Çalıştırılacak sütun sayısı.|
+|toplam Sütunlar| tamsayı| sorgu| Çalıştırılacak sütun sayısı.|
 | Genişlik| sayı| sorgu|50.0 |
 | dosya| sicim| sorgu| Belge klasörü.|
 | depolamaAdı| sicim| sorgu| depolama adı.|

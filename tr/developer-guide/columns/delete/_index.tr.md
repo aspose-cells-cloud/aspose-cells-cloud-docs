@@ -26,7 +26,7 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/co
 | sayfaAdı| sicim| yol| Çalışma sayfası adı.|
 | sütun dizini| tamsayı| yol| Sütun dizini.|
 | sütunlar| tamsayı| sorgu| Kolonlar.|
-| güncellemeReferansı| mantıksal| sorgu|Güncelleme referansı.|
+| güncellemeReferansı| mantıksal| sorgu| Güncelleme referansı.|
 | dosya| sicim| sorgu| Çalışma kitabı klasörü.|
 | depolamaAdı| sicim| sorgu| depolama adı.|
 

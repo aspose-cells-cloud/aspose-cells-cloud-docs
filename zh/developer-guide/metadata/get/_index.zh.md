@@ -1,14 +1,14 @@
 ﻿---
-title: 从 Excel 文件中获取元数据
+title: 从 Excel 文件获取元数据
 second_title: Aspose.Cells Cloud Documen
-linktitle: 不使用存储获取
+linktitle: 不使用storag获取
 type: docs
 url: /zh/metadata/get/
 keywords: Get properties from Excel files
-description: Aspose.Cells Cloud REST API 支持从 excel 文件获取属性。 SDK支持多种开发语言。它们包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 swift
+description: Aspose.Cells Cloud REST API 支持从 Excel 文件获取属性。 SDK支持多种开发语言。它们包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 swift
 weight: 23
 ---
-此 REST API 表示从多个 Excel 文件中获取 `metadata`。
+这个REST API表示从多个Excel文件中获取`metadata`。
 
 ```bash
 
@@ -23,11 +23,11 @@ POST https://api.aspose.cloud/v3.0/cells/metadata/get
 |类型|细绳|全部/内置/自定义|
 
 
-- **请求正文参数**
+- **请求体参数**
 
 |参数名称|类型|描述|
 |:- |:- |:- |
-|excel文件|数据文件|数据文件保存到多部分内容的第一部分。|
+|excel文件|数据文件|数据文件保存到多部分内容的第一部分中。|
 
 - **回复**
 
@@ -47,11 +47,11 @@ POST https://api.aspose.cloud/v3.0/cells/metadata/get
     ]
 }
 ```
-- **云 SDK 系列**
+- **云SDK系列**
 
-使用 SDK 是加速开发的最佳方式。 SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 仓库](https://github.com/aspose-cells-cloud)有关 Aspose.Cells Cloud SDK 的完整列表。
+使用 SDK 是加快开发速度的最佳方式。 SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)有关 Aspose.Cells Cloud SDK 的完整列表。
 
-以下代码示例演示如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
 
 
 {{< tabs tabTotal="9" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" tabName9="Python" >}}
@@ -68,7 +68,7 @@ POST https://api.aspose.cloud/v3.0/cells/metadata/get
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LiteCells-Metadata-Get.php" >}}
+{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LightCells-Metadata-Get.php" >}}
 
 {{< /tab >}}
 
@@ -98,6 +98,6 @@ POST https://api.aspose.cloud/v3.0/cells/metadata/get
 {{< /tab >}}
 {{< tab tabNum="9" >}}
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "LiteCellsMetadata-Get.py" >}}
+{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "LightCellsMetadata-Get.py" >}}
 {{< /tab >}}
 {{< /tabs >}}

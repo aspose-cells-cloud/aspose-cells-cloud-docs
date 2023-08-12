@@ -10,7 +10,7 @@ weight: 100
 ---
  Cells es el objeto operativo básico de Aspose.Cells para el archivo de Excel.
 
-## Mapa de características
+## Mapa de funciones
 
 
 {{< tabs tabTotal="3" tabID="1" tabName1="Data" tabName2="Style" tabName3="merge" >}}
@@ -32,7 +32,7 @@ weight: 100
         <ul>
             <li><a href="/cells/es/get-cell-style-from-a-worksheet/">Obtiene el estilo de celda de una hoja de cálculo Excel.</a></li>
             <li><a href="/cells/es/clear-cells-formatting-in-excel-worksheet/">Borre el formato Cells en la hoja de trabajo Excel.</a></li>
-            <li><a href="/cells/es/update-multiple-cells-style/">Actualiza el estilo de varias celdas en una hoja de cálculo Excel.</a></li>
+            <li><a href="/cells/es/update-multiple-cells-style/">Actualiza el estilo de varias celdas en una hoja de trabajo Excel.</a></li>
             <li><a href="/cells/es/change-cell-style-in-excel-worksheet/">Actualiza el estilo de celda en una hoja de cálculo Excel.</a></li>
             <li><a href="/cells/es/apply-rich-text-formatting-to-a-cell/">Establece el formato de texto enriquecido en una celda de la hoja de trabajo Excel.</a></li>
             <li><a href="/cells/es/clear-contents-and-styles-of-cells-in-excel-worksheet/">Borra el contenido y los estilos de las celdas en la hoja de trabajo Excel.</a></li>

@@ -26,7 +26,7 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/co
 | foglioNome| corda| sentiero| Il nome del foglio di lavoro.|
 | colonnaIndice| numero intero| sentiero| L'indice di colonna.|
 | colonne| numero intero| domanda| Le colonne.|
-| updateReference| booleano| domanda|Il riferimento dell'aggiornamento.|
+| updateReference| booleano| domanda| Il riferimento dell'aggiornamento.|
 | cartella| corda| domanda| La cartella della cartella di lavoro.|
 | storageName| corda| domanda| nome di archiviazione.|
 

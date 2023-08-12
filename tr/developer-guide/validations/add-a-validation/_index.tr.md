@@ -8,7 +8,7 @@ keywords: Delete a worksheet validation on an Excel worksheet
 description: Aspose.Cells Cloud REST API, bir Excel çalışma sayfasına bir çalışma sayfası doğrulaması eklemeyi destekler. SDK, geliştirme dili türlerini destekler. Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift'i içerir
 weight: 10
 ---
-Bu REST API, bir Excel çalışma sayfasına bir çalışma sayfası doğrulaması ekleneceğini gösterir.
+Bu REST API, bir Excel çalışma sayfasına bir çalışma sayfası doğrulaması ekleneceğini belirtir.
  
 ## RSET API
  

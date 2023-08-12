@@ -19,13 +19,13 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clea
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Nom du classeur.|
 | NomFeuille| chaîne| chemin| Nom de la feuille de calcul.|
-| gamme| chaîne| mettre en doute| La gamme.|
-| startRow| entier| mettre en doute| La ligne de départ.|
-| startColumn| entier| mettre en doute| La colonne de départ.|
-| endRow| entier| mettre en doute|La ligne de fin.|
-| finColonne| entier| mettre en doute| La colonne de fin.|
-| dossier| chaîne| mettre en doute| Le dossier du classeur.|
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| gamme| chaîne| requête| La gamme.|
+| startRow| entier| requête| La ligne de départ.|
+| startColumn| entier| requête| La colonne de départ.|
+| endRow| entier| requête| La ligne de fin.|
+| finColonne| entier| requête| La colonne de fin.|
+| dossier| chaîne| requête| Le dossier du classeur.|
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostClearContents) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

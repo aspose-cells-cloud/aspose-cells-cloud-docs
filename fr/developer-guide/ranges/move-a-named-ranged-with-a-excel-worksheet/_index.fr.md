@@ -25,11 +25,11 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/mov
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| nom du classeur|
 | NomFeuille| chaîne| chemin| nom de la feuille de calcul|
-| destRow| entier| mettre en doute| La ligne de début de la plage dest.|
-| colonnedest| entier| mettre en doute| La colonne de début de la plage dest.|
+| destRow| entier| requête| La ligne de début de la plage dest.|
+| colonnedest| entier| requête| La colonne de début de la plage dest.|
 | gamme|| corps| plage dans la feuille de calcul|
-| dossier| chaîne| mettre en doute| Dossier de classeur.|
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| dossier| chaîne| requête| Dossier de classeur.|
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeMoveTo) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

@@ -1,14 +1,14 @@
 ﻿---
-title: Text aus Datei Excel ersetzen
+title: Ersetzen Sie den Text aus der Datei Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: Ohne Speicher ersetzen
+linktitle: Ersetzen ohne Lagerung
 type: docs
 url: /de/replace/
 keywords: Replace old value by new value on Excel files
-description: Aspose.Cells Cloud REST API unterstützt das Ersetzen des alten Werts durch den neuen Wert in Excel-Dateien. SDK unterstützt Arten von Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
+description: Aspose.Cells Cloud REST API unterstützt das Ersetzen des alten Werts durch den neuen Wert in Excel-Dateien. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
 weight: 80
 ---
-Dieser REST API weist auf `replace`-Daten aus Excel-Dateien hin.
+Dieser REST API weist auf `replace` Daten aus Excel Dateien hin.
 
 ## RSET API
 
@@ -23,14 +23,14 @@ POST https://api.aspose.cloud/v3.0/cells/replace
 | Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
 |:- |:- |:- |:- |
 | Datei| Datei| Formulardaten| Datei zum Hochladen|
-| Text| Schnur| Anfrage||
-| neuer Text| Schnur| Anfrage||
-| Passwort| Schnur| Anfrage||
-| Blattname| Schnur| Anfrage||
+| Text| Zeichenfolge| Abfrage||
+| neuer Text| Zeichenfolge| Abfrage||
+| Passwort| Zeichenfolge| Abfrage||
+| Blattname| Zeichenfolge| Abfrage||
  
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/LiteCells/PostReplace) definiert eine öffentlich zugängliche Programmierschnittstelle und lässt Sie REST-Interaktionen direkt von einem Webbrowser ausführen.
+ Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/LightCells/PostReplace) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht die Durchführung von REST-Interaktionen direkt über einen Webbrowser.
  
-Sie können das cURL-Befehlszeilentool verwenden, um einfach auf Aspose.Cells-Webdienste zuzugreifen. Das folgende Beispiel zeigt, wie Sie Cloud API mit cURL anrufen.
+Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie man mit cURL Anrufe zur Cloud API tätigt.
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
  
 {{< tab tabNum="1" >}}
@@ -78,9 +78,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/replace?text=1&newtext=aspose.cells.
 
 ## Cloud SDK-Familie
 
- Die Verwendung eines SDK ist der beste Weg, um die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und lässt Sie sich auf Ihre Projektaufgaben konzentrieren. Bitte überprüfen Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+ Die Verwendung eines SDK ist der beste Weg, die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte schauen Sie sich die an[GitHub-Repository](https://github.com/aspose-cells-cloud) Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie hier.
 
-Die folgenden Codebeispiele zeigen, wie Sie mit verschiedenen SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+Die folgenden Codebeispiele veranschaulichen, wie Aspose.Cells-Webdienste mithilfe verschiedener SDKs aufgerufen werden:
 
 
 {{< tabs tabTotal="9" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" tabName9="Python" >}}

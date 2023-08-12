@@ -54,7 +54,7 @@ weight: 20
         <p>Cells fuente, estilos, formato condicional y valor</p>
         <ul>
             <li><a href="/cells/es/get-cell-style-from-a-worksheet/">Obtiene el estilo de celda de una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/update-multiple-cells-style/">Actualiza el estilo de varias celdas en una hoja de cálculo Excel.</a></li>
+            <li><a href="/cells/es/update-multiple-cells-style/">Actualiza el estilo de varias celdas en una hoja de trabajo Excel.</a></li>
             <li><a href="/cells/es/change-cell-style-in-excel-worksheet/">Actualiza el estilo de celda en una hoja de cálculo Excel.</a></li>
             <li><a href="/cells/es/apply-rich-text-formatting-to-a-cell/">Establece el formato de texto enriquecido en una celda de la hoja de trabajo Excel.</a></li>
             <li><a href="/cells/es/clear-contents-and-styles-of-cells-in-excel-worksheet/">Borra el contenido y los estilos de las celdas en la hoja de trabajo Excel.</a></li>
@@ -67,12 +67,12 @@ weight: 20
         <ul>
             <li><a href="/cells/es/add-an-empty-row-in-a-worksheet/">Agrega una fila vacía en una hoja de cálculo Excel.</a></li>
             <li><a href="/cells/es/delete-row-from-a-worksheet/">Elimina la fila de una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/copy-rows-in-excel-worksheet/">Copia filas en una hoja de trabajo Excel.</a></li>
+            <li><a href="/cells/es/copy-rows-in-excel-worksheet/">Copia filas en una hoja de cálculo Excel.</a></li>
             <li><a href="/cells/es/hide-rows-in-excel-worksheet/">Ocultar filas en una hoja de cálculo Excel.</a></li>
             <li><a href="/cells/es/auto-fit-rows-in-excel-workbooks/">Filas de ajuste automático en un libro de trabajo Excel.</a></li>
             <li><a href="/cells/es/columns/add/">Agrega una columna vacía en una hoja de cálculo Excel.</a></li>
             <li><a href="/cells/es/columns/delete/">Elimina la columna de una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/columns/copy/">Copia columnas en una hoja de cálculo Excel.</a></li>
+            <li><a href="/cells/es/columns/copy/">Copia columnas en una hoja de trabajo Excel.</a></li>
             <li><a href="/cells/es/columns/hide/">Ocultar columnas en una hoja de trabajo Excel.</a></li>
             <li><a href="/cells/es/columns/autofit/">Columnas de ajuste automático en un libro de trabajo Excel.</a></li>
         </ul>
@@ -86,7 +86,7 @@ weight: 20
         <ul>
             <li><a href="/cells/es/add-a-chart-in-a-worksheet/">Agrega un gráfico en una hoja de cálculo Excel.</a></li>
             <li><a href="/cells/es/delete-a-chart-from-a-worksheet/">Elimina un gráfico en una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/delete-all-charts-from-a-worksheet/">Elimina todos los gráficos en una hoja de trabajo Excel.</a></li>
+            <li><a href="/cells/es/delete-all-charts-from-a-worksheet/">Elimina todos los gráficos en una hoja de cálculo Excel.</a></li>
             <li><a href="/cells/es/convert-chart-to-image/">Convierte el gráfico en imagen.</a></li>
             <li><a href="/cells/es/hide-chart-legend-in-a-worksheet/">Oculta la leyenda del gráfico en una hoja de trabajo Excel.</a></li>
             <li><a href="/cells/es/update-chart-title-in-excel-worksheet/">Actualiza el título del gráfico en una hoja de trabajo Excel.</a></li>
@@ -112,7 +112,7 @@ weight: 20
         <p>Forma</p>
         <ul>
             <li><a href="/cells/es/add-a-shape-inside-the-worksheet/">Agrega una forma en una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/delete-all-shapes-inside-the-worksheet/">Elimina todas las formas en una hoja de trabajo Excel.</a></li>
+            <li><a href="/cells/es/delete-all-shapes-inside-the-worksheet/">Elimina todas las formas en una hoja de cálculo Excel.</a></li>
             <li><a href="/cells/es/delete-a-shape-by-index-inside-the-worksheet/">Elimina una forma por índice en una hoja de trabajo Excel.</a></li>
         </ul>
         <p>Tabla dinámica</p>
@@ -185,7 +185,7 @@ weight: 20
         </ul>
             <p>Clasificar</p>
         <ul>
-            <li><a href="/cells/es/sort-worksheet-data/">Ordena los datos de las celdas en una hoja de trabajo Excel.</a></li>
+            <li><a href="/cells/es/sort-worksheet-data/">Ordena los datos de las celdas en una hoja de cálculo Excel.</a></li>
         </ul>
     </div>
     <div class="col-md-6">

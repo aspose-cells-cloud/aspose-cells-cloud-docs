@@ -19,9 +19,9 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cell
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Nom du document.|
 | NomFeuille| chaîne| chemin| Nom de la feuille de calcul.|
-| cellOrMethodNamecellOrMethodName| chaîne| chemin| Le nom de la cellule ou de la méthode. (Valeur du nom de la méthode : firstcell, endcell, maxrow, maxdatarow, maxcolumn, maxdatacolumn, minrow, mindatarow, mincolumn, mindatacolumn et cellName.)|
-| dossier| chaîne| mettre en doute| Dossier du document.|
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| cellOrMethodNamecellOrMethodName| chaîne| chemin|Le nom de la cellule ou de la méthode. (Valeur du nom de la méthode : firstcell, endcell, maxrow, maxdatarow, maxcolumn, maxdatacolumn, minrow, mindatarow, mincolumn, mindatacolumn et cellName.)|
+| dossier| chaîne| requête| Dossier du document.|
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetCell) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
 

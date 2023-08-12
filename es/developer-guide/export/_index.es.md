@@ -8,7 +8,7 @@ keywords: Export workbook and internal objects to kinds of format files
 description: Aspose.Cells Cloud REST API admite la exportación de archivos Excel y objetos internos a tipos de archivos de formato. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift
 weight: 31
 ---
- Si ha creado originalmente un archivo Excel en un formato determinado, como[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/) , y[CSV](https://docs.fileformat.com/spreadsheet/csv/) , a veces puede resultarle útil convertir el archivo de Excel a otro formato para poder aprovechar las funciones especiales que ofrece. Por ejemplo, es posible que desee exportar un archivo de Excel a[PDF](https://docs.fileformat.com/pdf/) para proteger su contenido de modificaciones no autorizadas y facilitar su lectura y uso simultáneo.
+ Si originalmente creó un archivo Excel en un formato determinado, como[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/) , y[CSV](https://docs.fileformat.com/spreadsheet/csv/) , a veces puede resultarle útil convertir el archivo de Excel a otro formato para poder aprovechar las funciones especiales que ofrece. Por ejemplo, es posible que desee exportar un archivo de Excel a[PDF](https://docs.fileformat.com/pdf/) para proteger su contenido de modificaciones no autorizadas y facilitar su lectura y uso simultáneo.
 
  La exportación de objetos Excel es un proceso complejo. Muchos factores contribuyen a la complejidad y, por lo tanto, deben tenerse en cuenta durante el proceso de exportación. La capacidad de exportar el objeto Excel a un archivo de formato con una calidad profesional precisa es una característica principal de Aspose.Cells Cloud.
 
@@ -34,7 +34,7 @@ POST https://api.aspose.cloud/v3.0/cells/export
 | tipo de objeto| cadena| consulta|tipo de objeto (libro de trabajo/hoja de trabajo/gráfico/forma/imagen/objeto de lista/objeto ole)|
 | formato| cadena| consulta|[Formato de archivo](/cells/es/supported-file-formats/)  |
  
- El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/LiteCells/PostExport) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+ El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
  
 Puede utilizar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
  
@@ -102,7 +102,7 @@ Los siguientes ejemplos de código demuestran cómo realizar llamadas a los serv
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LiteCells-Export.php" >}}
+{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LightCells-Export.php" >}}
 
 
 {{< /tab >}}
@@ -134,7 +134,7 @@ Los siguientes ejemplos de código demuestran cómo realizar llamadas a los serv
 
 {{< tab tabNum="9" >}}
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "LiteCellsExport.py" >}}
+{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "LightCellsExport.py" >}}
 {{< /tab >}}
 
 {{< /tabs >}}

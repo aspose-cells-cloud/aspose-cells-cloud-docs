@@ -1,5 +1,5 @@
 ﻿---
-title: Establecer el valor de una celda en una hoja de trabajo
+title: Establecer el valor de una celda en una hoja de cálculo
 type: docs
 url: /es/set-value-of-a-cell-in-a-worksheet/
 weight: 70

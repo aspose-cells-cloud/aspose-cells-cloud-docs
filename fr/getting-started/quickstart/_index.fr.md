@@ -42,7 +42,7 @@ Ensuite, vous devez apporter des modifications individuelles à votre compte :
 
 Aspose attache une grande importance aux questions de sécurité. Nous utilisons le jeton JWT pour l'authentification et le chiffrement HTTPS de bout en bout afin de sécuriser toutes les interactions client-serveur.
 
- Une application est un ensemble d'informations d'identification API uniques —**Identité du client** et**Clé secrète du client** . Vous pouvez les utiliser pour vous authentifier lorsque vous appelez notre Cloud API. Dans la plupart des cas, vous n'avez besoin que d'une seule application. Dans certains scénarios avancés, vous souhaiterez peut-être enregistrer et utiliser plusieurs applications avec des**Identifiant client et secret** crédits.
+ Une application est un ensemble d'informations d'identification API uniques —**Identité du client** et**Clé secrète du client** . Vous pouvez les utiliser pour vous authentifier lorsque vous appelez notre Cloud API. Dans la plupart des cas, vous n'avez besoin que d'une seule application. Dans certains scénarios avancés, vous souhaiterez peut-être enregistrer et utiliser plusieurs applications avec des**Identifiant client et secret** informations d'identification.
 
 Pour accéder aux informations sur vos Applications, veuillez suivre les étapes suivantes :
 

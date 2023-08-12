@@ -9,7 +9,7 @@ keywords: Unmerge merged cells of the range on an Excel worksheet
 description: Aspose.Cells Cloud REST API, bir Excel çalışma sayfasındaki aralığın birleştirilmiş hücrelerini ayırmayı destekler. SDK, geliştirme dili türlerini destekler. Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift'i içerir
 weight: 20
 ---
-Bu REST API, bir Excel çalışma sayfasında bu aralığın birleştirilmiş hücrelerini ayırmayı belirtir.
+Bu REST API, bir Excel çalışma sayfasında bu aralığın birleştirilmiş hücrelerini ayırmayı gösterir.
             
  
 ## RSET API

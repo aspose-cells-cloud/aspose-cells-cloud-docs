@@ -1,5 +1,5 @@
 ﻿---
-title: eliminar
+title: Eliminar
 type: docs
 url: /es/hyperlinks/delete/
 keywords: Delete a hyperlink from an Excel worksheet

@@ -25,7 +25,7 @@ POST http://api.aspose.cloud/v3.0/cells/protect
 | ملف| ملف| بيانات النموذج| ملف للتحميل|
 | كلمة المرور| خيط| استفسار||
  
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/LiteCells/PostProtect) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
+ ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostProtect) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
  
 يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
  
@@ -126,7 +126,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/protect?password=123456" \
 {{< /tab >}}
 {{< tab tabNum="9" >}}
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "LiteCellsProtect.py" >}}
+{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "LightCellsProtect.py" >}}
 {{< /tab >}}
 
 {{< /tabs >}}

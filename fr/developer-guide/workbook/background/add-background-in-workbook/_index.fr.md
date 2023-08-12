@@ -1,7 +1,7 @@
 ﻿---
 title: Ajouter un arrière-plan dans Workboo
 second_title: Aspose.Cells Cloud Documen
-linktitle: Publicité
+linktitle: Annonce
 type: docs
 url: /fr/workbook/background/add/
 aliases: [/add-background-in-workbook/,/workbook/add-background/]

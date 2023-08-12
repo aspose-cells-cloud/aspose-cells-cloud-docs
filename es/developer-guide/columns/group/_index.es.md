@@ -9,7 +9,7 @@ keywords: Group column on an Excel workshee
 description: Aspose.Cells Cloud REST API columna de agrupación de soporte en una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift
 weight: 60
 ---
-Este REST API indica columnas de hojas de trabajo grupales.
+Este REST API indica columnas de hojas de cálculo grupales.
  
 ## RESET API
  

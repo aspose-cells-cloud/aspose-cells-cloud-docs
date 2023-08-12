@@ -25,7 +25,7 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditio
 | fila de inicio| entero| consulta||
 | Columna de inicio| entero| consulta||
 | filas totales| entero| consulta||
-| columnastotales| entero| consulta||
+|columnastotales| entero| consulta||
 | carpeta| cadena| consulta||
 | NombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
  

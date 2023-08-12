@@ -29,7 +29,7 @@ POST https://api.aspose.cloud/v3.0/cells/compress
 | archivo| archivo| formularioDatos| Subir Archivo|
 | CompressLevel| entero| consulta||
  
- El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/LiteCells/PostCompress) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+ El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/LightCells/PostCompress) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
  
 Puede utilizar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}

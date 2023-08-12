@@ -25,8 +25,8 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes/{sha
 | nom| chaîne| chemin| Nom du document.|
 | NomFeuille| chaîne| chemin| nom de la feuille de calcul.|
 | indice de forme| entier| chemin| index de forme dans les formes de feuille de calcul.|
-| dossier| chaîne| mettre en doute| Dossier du document.|
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| dossier| chaîne| requête| Dossier du document.|
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Shapes/GetWorksheetShape) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

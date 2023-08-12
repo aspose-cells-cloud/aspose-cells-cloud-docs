@@ -26,7 +26,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
 | sayfaAdı| sicim| yol| Yeni sayfa adı.|
 | konum| tamsayı| sorgu| Yeni sayfa konumu.|
 | sayfa tipi| sicim| sorgu| Yeni sayfa türü.|
-| dosya| sicim| sorgu|Belge klasörü.|
+| dosya| sicim| sorgu| Belge klasörü.|
 | depolamaAdı| sicim| sorgu| depolama adı.|
  
  bu[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Worksheets/PutAddNewWorksheet) herkesin erişebileceği bir programlama arabirimi tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.

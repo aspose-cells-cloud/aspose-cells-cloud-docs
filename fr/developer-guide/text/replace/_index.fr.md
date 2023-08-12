@@ -23,12 +23,12 @@ POST https://api.aspose.cloud/v3.0/cells/replace
 | Le nom du paramètre| Taper| Chemin/chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | déposer| déposer| Données de formulaire| Fichier à uploader|
-| texte| chaîne| mettre en doute||
-| nouveautexte| chaîne| mettre en doute||
-| mot de passe| chaîne| mettre en doute||
-| nom de la feuille| chaîne| mettre en doute||
+| texte| chaîne| requête||
+| nouveautexte| chaîne| requête||
+| mot de passe| chaîne| requête||
+| nom de la feuille| chaîne| requête||
  
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/LiteCells/PostReplace) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
+ Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostReplace) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  
 Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment passer des appels vers le Cloud API avec cURL.
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}

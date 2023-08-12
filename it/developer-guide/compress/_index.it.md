@@ -29,7 +29,7 @@ POST https://api.aspose.cloud/v3.0/cells/compress
 | file| file| formData| File da caricare|
 | CompressLevel| numero intero| domanda||
  
- IL[Specifica OpenAPI](https://apireference.aspose.cloud/cells/#/LiteCells/PostCompress) definisce un'interfaccia di programmazione accessibile pubblicamente e consente di eseguire interazioni REST direttamente da un browser web.
+ IL[Specifica OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostCompress) definisce un'interfaccia di programmazione accessibile pubblicamente e consente di eseguire interazioni REST direttamente da un browser web.
  
 È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi Web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate a Cloud API con cURL.
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}

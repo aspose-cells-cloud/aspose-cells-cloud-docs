@@ -7,7 +7,7 @@ keywords: REST API, spreadsheets, excel, delete cell area from condition formatt
 description: "Cells.Cloud API для Excel операция: удалить область ячейки из форматирования условия"
 weight: 60
 ---
-Этот REST API указывает удалить условное форматирование
+Этот REST API указывает на удаление условного форматирования.
  
 ## РСЕТ API
  

@@ -25,7 +25,7 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditio
 | startRow| numero intero| domanda||
 | startColumn| numero intero| domanda||
 | totalRows| numero intero| domanda||
-| totalColumns| numero intero| domanda||
+|totalColumns| numero intero| domanda||
 | cartella| corda| domanda||
 | storageName| corda| domanda| nome di archiviazione.|
  

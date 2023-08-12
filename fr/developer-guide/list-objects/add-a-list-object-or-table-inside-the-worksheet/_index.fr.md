@@ -1,7 +1,7 @@
 ﻿---
 title: Ajouter un objet de liste dans une feuille de calcul Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: Publicité
+linktitle: Annonce
 type: docs
 url: /fr/list-objects/add/
 aliases: [/add-a-list-object-or-table-inside-the-worksheet/,/tables/add/]
@@ -24,14 +24,14 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Nom du document.|
 | NomFeuille| chaîne| chemin| Le nom de la feuille de calcul.|
-| startRow| entier| mettre en doute| La ligne de début de la plage de liste.|
-| startColumn| entier| mettre en doute| La ligne de début de la plage de liste.|
-| endRow| entier| mettre en doute| La ligne de début de la plage de liste.|
-| finColonne| entier| mettre en doute| La ligne de début de la plage de liste.|
-| hasHeaders| booléen| mettre en doute| Vrai|
+| startRow| entier| requête| La ligne de début de la plage de liste.|
+| startColumn| entier| requête| La ligne de début de la plage de liste.|
+| endRow| entier| requête| La ligne de début de la plage de liste.|
+| finColonne| entier| requête| La ligne de début de la plage de liste.|
+| hasHeaders| booléen| requête| Vrai|
 | listeObjet|| corps| Objet de liste|
-| dossier| chaîne| mettre en doute| Dossier du document.|
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| dossier| chaîne| requête| Dossier du document.|
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/ListObjects/PutWorksheetListObject) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

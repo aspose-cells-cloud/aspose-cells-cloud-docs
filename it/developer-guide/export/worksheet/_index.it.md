@@ -14,10 +14,10 @@ weight: 20
 
 |**API**|**Tipo**|**Descrizione**|**Collegamento spavaldo**|
 |:- |:- |:- |:- |
-|/celle/esporta|INVIARE|Esporta Excel dal contenuto della richiesta in un formato|[PostExport](https://apireference.aspose.cloud/cells/#/LiteCells/PostExport)|
+|/celle/esporta|INVIARE|Esporta Excel dal contenuto della richiesta in un formato|[PostExport](https://apireference.aspose.cloud/cells/#/LightCells/PostExport)|
 
 
- IL[Specifica OpenAPI](https://apireference.aspose.cloud/cells/#/LiteCells/PostExport) definisce un'interfaccia di programmazione accessibile pubblicamente e consente di eseguire interazioni REST direttamente da un browser web.
+ IL[Specifica OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) definisce un'interfaccia di programmazione accessibile pubblicamente e consente di eseguire interazioni REST direttamente da un browser web.
 
  Puoi usare**cURL** strumento da riga di comando per accedere facilmente ai servizi Web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate a Cloud API con cURL.
 
@@ -103,7 +103,7 @@ I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Asp
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LiteCells-Export-shape-tiff.php" >}}
+{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LightCells-Export-shape-tiff.php" >}}
 
 {{< /tab >}}
 

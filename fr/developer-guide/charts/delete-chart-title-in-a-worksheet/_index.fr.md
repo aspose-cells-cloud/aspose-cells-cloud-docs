@@ -21,8 +21,8 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{
 | nom| chaîne| chemin| Nom du classeur.|
 | NomFeuille| chaîne| chemin| Nom de la feuille de calcul.|
 | graphiqueIndex| entier| chemin| L'index du graphique.|
-| dossier| chaîne| mettre en doute| Le dossier du classeur.|
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| dossier| chaîne| requête| Le dossier du classeur.|
+| nom_stockage| chaîne| requête| nom de stockage.|
  
 <br/>
 

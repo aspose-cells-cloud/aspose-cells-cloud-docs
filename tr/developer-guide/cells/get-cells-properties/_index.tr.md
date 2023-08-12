@@ -19,7 +19,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cell
 |:- |:- |:- |:- |
 | isim| sicim| yol| Belge adı.|
 | sayfaAdı| sicim| yol| Çalışma sayfası adı.|
-| hücreVeyaYöntemAdı| sicim| yol| Hücrenin veya yöntemin adı. (Metod adı değeri: firstcell, endcell, maxrow, maxdatarow, maxcolumn, maxdatacolumn, minrow, mindatarow, mincolumn, mindatacolumn ve cellName.)|
+| hücreVeyaYöntemAdı| sicim| yol|Hücrenin veya yöntemin adı. (Metod adı değeri: firstcell, endcell, maxrow, maxdatarow, maxcolumn, maxdatacolumn, minrow, mindatarow, mincolumn, mindatacolumn ve cellName.)|
 | dosya| sicim| sorgu| Belgenin klasörü.|
 | depolamaAdı| sicim| sorgu| depolama adı.|
  

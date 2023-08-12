@@ -1,5 +1,5 @@
 ﻿---
-title: Ligne
+title: Rangée
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/rows/

@@ -21,8 +21,8 @@ DELETE http://api.aspose.cloud/v3.0/cells/storage/file/{path}
 | Le nom du paramètre| Taper| Chemin/chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | chemin| chaîne| chemin| Chemin du fichier, par exemple '/dossier/fichier.ext'|
-| nom_stockage| chaîne| mettre en doute| Nom de stockage|
-| ID de version| chaîne| mettre en doute| ID de version du fichier à supprimer|
+| nom_stockage| chaîne| requête| Nom de stockage|
+| ID de version| chaîne| requête| ID de version du fichier à supprimer|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/File/DeleteFile) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

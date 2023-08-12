@@ -1,5 +1,5 @@
 ﻿---
-title: كيفية العمل مع حذف أوراق العمل في Excel workboo
+title: كيفية التعامل مع حذف أوراق العمل في Excel workboo
 second_title: Aspose.Cells Cloud Documen
 linktitle: حذف
 type: docs

@@ -53,7 +53,7 @@ Les paramètres importants sont décrits dans le tableau suivant :
 |Le nom du paramètre|Taper|Description|
 |:- |:- |:- |
 | FileSourceType| chaîne| InMemoryFiles/CloudFileSystem/RequestFiles|
-| Chemin du fichier| chaîne| emplacement du fichier|
+| Chemin du fichier| chaîne| emplacement du dossier|
 
 
 **Exemple**

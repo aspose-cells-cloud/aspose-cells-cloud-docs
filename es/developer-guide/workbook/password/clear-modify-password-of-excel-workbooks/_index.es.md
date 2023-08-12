@@ -1,7 +1,7 @@
 ﻿---
 title: Borrar Modificar contraseña del libro de trabajo Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: eliminar
+linktitle: Eliminar
 type: docs
 url: /es/workbook/password/clear/
 aliases: [/clear-modify-password-of-excel-workbooks/,/workbook/clear-modify-password/]

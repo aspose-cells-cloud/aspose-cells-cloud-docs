@@ -27,13 +27,13 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Le nom du document.|
 | NomFeuille| chaîne| chemin| Le nom de la feuille de calcul.|
-| format| chaîne| mettre en doute|Le format de fichier exporté.|
-| Résolution verticale| entier| mettre en doute| Définit la résolution verticale des images générées, en points par pouce.|
-| Résolution horizontale| entier| mettre en doute| Définit la résolution horizontale des images générées, en points par pouce.|
-| zone| chaîne| mettre en doute| Zone exportée.|
-| pageIndex| entier| mettre en doute| Index des pages exportées.|
-| dossier| chaîne| mettre en doute| Le dossier de documents.|
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| format| chaîne| requête|Le format de fichier exporté.|
+| Résolution verticale| entier| requête| Définit la résolution verticale des images générées, en points par pouce.|
+| Résolution horizontale| entier| requête| Définit la résolution horizontale des images générées, en points par pouce.|
+| zone| chaîne| requête| Zone exportée.|
+| pageIndex| entier| requête| Index des pages exportées.|
+| dossier| chaîne| requête| Le dossier de documents.|
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheet) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

@@ -22,7 +22,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/merg
 | başlangıç satırı| tamsayı| sorgu| Başlangıç satırı.|
 | başlangıç sütunu| tamsayı| sorgu| Başlangıç sütunu.|
 | toplamSatırlar| tamsayı| sorgu| toplam satırlar|
-| toplam Sütunlar| tamsayı| sorgu| Toplam sütunlar.|
+|toplam Sütunlar| tamsayı| sorgu| Toplam sütunlar.|
 | dosya| sicim| sorgu| Çalışma kitabı klasörü.|
 | depolamaAdı| sicim| sorgu| depolama adı.|
  

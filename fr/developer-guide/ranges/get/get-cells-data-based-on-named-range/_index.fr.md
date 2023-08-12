@@ -25,13 +25,13 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/valu
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| nom du classeur|
 | NomFeuille| chaîne| chemin| nom de la feuille de calcul|
-| plage de noms| chaîne| mettre en doute| nom de la plage, par exemple : 'A1:B2' ou 'range_name1'|
-| première rangée| entier| mettre en doute| la première ligne de la gamme|
-| première colonne| entier| mettre en doute| la première colonne de la plage|
-| rowCount| entier| mettre en doute| le nombre de lignes dans la plage|
-| nombre de colonnes| entier| mettre en doute| le nombre de colonnes dans la plage|
-| dossier| chaîne| mettre en doute| Dossier de classeur.|
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| plage de noms| chaîne| requête| nom de la plage, par exemple : 'A1:B2' ou 'range_name1'|
+| première rangée| entier| requête| la première ligne de la gamme|
+| première colonne| entier| requête| la première colonne de la plage|
+| rowCount| entier| requête| le nombre de lignes dans la plage|
+| nombre de colonnes| entier| requête| le nombre de colonnes dans la plage|
+| dossier| chaîne| requête| Dossier de classeur.|
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Ranges/GetWorksheetCellsRangeValue) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

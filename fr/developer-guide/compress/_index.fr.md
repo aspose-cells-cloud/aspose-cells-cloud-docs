@@ -27,9 +27,9 @@ POST https://api.aspose.cloud/v3.0/cells/compress
 | Le nom du paramètre| Taper| Chemin/chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | déposer| déposer| Données de formulaire| Fichier à uploader|
-| Niveau de compression| entier| mettre en doute||
+| Niveau de compression| entier| requête||
  
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/LiteCells/PostCompress) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
+ Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostCompress) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  
 Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment passer des appels vers le Cloud API avec cURL.
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}

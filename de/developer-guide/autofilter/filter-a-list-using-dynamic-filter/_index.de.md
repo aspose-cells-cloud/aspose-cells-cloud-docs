@@ -6,10 +6,10 @@ type: docs
 url: /de/autofilter/add-dynamic-filter/
 aliases: [/filter-a-list-using-dynamic-filter/,/autofilter/add-a-dynamic-filter/]
 keywords: Adds a dynamic filter on an Excel worksheet
-description: Die Aspose.Cells-Cloud API unterstützt das Hinzufügen eines dynamischen Filters auf einem Excel-Arbeitsblatt. SDK unterstützt Arten von Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
+description: Die Aspose.Cells Cloud API unterstützt das Hinzufügen eines dynamischen Filters zu einem Excel-Arbeitsblatt. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
 weight: 65
 ---
-Dieser REST API gibt an, dass ein `dynamic filter` auf einem Excel-Arbeitsblatt hinzugefügt werden soll.
+Dieser REST API gibt an, eine `dynamic filter` zu einem Excel-Arbeitsblatt hinzuzufügen.
  
 ## RSET API
  
@@ -22,19 +22,19 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/
  
 | Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
 |:- |:- |:- |:- |
-| Name| Schnur| Weg||
-| Tabellenname| Schnur| Weg||
-| Bereich| Schnur| Anfrage||
-| FeldIndex| ganze Zahl| Anfrage||
-| dynamischerFiltertyp| Schnur| Anfrage||
-| übereinstimmenBlanks| boolesch| Anfrage||
-| Aktualisierung| boolesch| Anfrage||
-| Ordner| Schnur| Anfrage||
-| Speichername| Schnur| Anfrage| Speichername.|
+| Name| Zeichenfolge| Weg||
+| Blattname| Zeichenfolge| Weg||
+| Reichweite| Zeichenfolge| Abfrage||
+| fieldIndex| ganze Zahl| Abfrage||
+| dynamischerFilterTyp| Zeichenfolge| Abfrage||
+| matchBlanks| Boolescher Wert| Abfrage||
+| Aktualisierung| Boolescher Wert| Abfrage||
+| Ordner| Zeichenfolge| Abfrage||
+| Speichername| Zeichenfolge| Abfrage| Speichername.|
  
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetDynamicFilter) definiert eine öffentlich zugängliche Programmierschnittstelle und lässt Sie REST-Interaktionen direkt von einem Webbrowser ausführen.
+ Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetDynamicFilter) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht die Durchführung von REST-Interaktionen direkt über einen Webbrowser.
  
-Sie können das cURL-Befehlszeilentool verwenden, um einfach auf Aspose.Cells-Webdienste zuzugreifen. Das folgende Beispiel zeigt, wie Sie Cloud API mit cURL anrufen.
+Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie man mit cURL Anrufe zur Cloud API tätigt.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
@@ -72,9 +72,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFil
 
 ## Cloud SDK-Familie
  
- Die Verwendung eines SDK ist der beste Weg, um die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und lässt Sie sich auf Ihre Projektaufgaben konzentrieren. Bitte überprüfen Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+ Die Verwendung eines SDK ist der beste Weg, die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte schauen Sie sich die an[GitHub-Repository](https://github.com/aspose-cells-cloud) Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie hier.
  
-Die folgenden Codebeispiele zeigen, wie Sie mit verschiedenen SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+Die folgenden Codebeispiele veranschaulichen, wie Aspose.Cells-Webdienste mithilfe verschiedener SDKs aufgerufen werden:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" >}}
 

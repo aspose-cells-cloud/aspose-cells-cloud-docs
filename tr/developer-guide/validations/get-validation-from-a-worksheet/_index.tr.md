@@ -1,7 +1,7 @@
 ﻿---
 title: Excel çalışma sayfasından dizine göre bir çalışma sayfası doğrulaması alın
 second_title: Aspose.Cells Cloud Documen
-linktitle: ge
+linktitle: Ge
 type: docs
 url: /tr/validations/get/
 aliases: [/get-validation-from-a-worksheet/]

@@ -13,7 +13,7 @@ weight: 20
 - [Как получить рабочий лист Excel в разных форматах.](/cells/ru/worksheets/get-worksheet/) 
     - [Как преобразовать рабочий лист Excel в изображение.](/cells/ru/worksheets/to-image/)
 - [Как получить область рабочего листа Excel с разными форматами.](/cells/ru/worksheets/area-to-different-formats/)
-- [Как получить страницу листа Excel с разными форматами.](/cells/ru/get-worksheet-for-page-index/) 
+- [Как получить страницу рабочего листа Excel с разными форматами.](/cells/ru/get-worksheet-for-page-index/) 
 - [Как получить количество страниц рабочего листа Excel.](/cells/ru/worksheets/page-count/) 
 - [Как получить описание рабочих листов Excel.](/cells/ru/worksheets/get-all/) 
 

@@ -24,7 +24,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges
 |:- |:- |:- |:- |
 | isim| sicim| yol| çalışma kitabı adı|
 | sayfaAdı| sicim| yol| çalışma sayfası adı|
-| menzilÇalıştır|| vücut| veri kopyalama,kopya stili,kopyalama,kopyalama değeri|
+| menzilÇalıştır|| vücut|veri kopyalama,kopya stili,kopyalama,kopyalama değeri|
 | dosya| sicim| sorgu| Çalışma kitabı klasörü.|
 | depolamaAdı| sicim| sorgu| depolama adı.|
  

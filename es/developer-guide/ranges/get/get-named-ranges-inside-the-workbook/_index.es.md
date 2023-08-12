@@ -23,7 +23,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/ranges
 | Nombre del parámetro| Tipo| Ruta/Cadena de consulta/Cuerpo HTTP|Descripción|
 |:- |:- |:- |:- |
 | nombre| cadena| camino| Nombre del documento.|
-| carpeta| cadena| consulta|Carpeta de documentos.|
+| carpeta| cadena| consulta| Carpeta de documentos.|
 | NombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
  
  El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/Worksheets/GetNamedRanges) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.

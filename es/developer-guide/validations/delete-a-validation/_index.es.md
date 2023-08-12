@@ -1,7 +1,7 @@
 ﻿---
 title: Eliminar una validación de hoja de trabajo en una hoja de trabajo Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: eliminar
+linktitle: Eliminar
 type: docs
 url: /es/validations/delete/
 keywords: Delete a worksheet validation on an Excel worksheet

@@ -1,7 +1,7 @@
 ﻿---
 title: Eliminar fondo en un libro de trabajo Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: eliminar
+linktitle: Eliminar
 type: docs
 url: /es/workbook/background/delete/
 aliases: [/delete-background-in-workbook/,/workbook/delete-background/]

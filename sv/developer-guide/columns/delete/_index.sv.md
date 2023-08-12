@@ -26,7 +26,7 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/co
 | arknamn| sträng| väg| Kalkylbladets namn.|
 | columnIndex| heltal| väg| Kolumnindex.|
 | kolumner| heltal| fråga| Kolumnerna.|
-| updateReference| booleskt| fråga|Uppdateringsreferensen.|
+| updateReference| booleskt| fråga| Uppdateringsreferensen.|
 | mapp| sträng| fråga| Arbetsboksmappen.|
 | lagringsnamn| sträng| fråga| lagringsnamn.|
 

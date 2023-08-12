@@ -28,7 +28,7 @@ POST https://api.aspose.cloud/v3.0/cells/replace
 | parola d'ordine| corda| domanda||
 | nomefoglio| corda| domanda||
  
- IL[Specifica OpenAPI](https://apireference.aspose.cloud/cells/#/LiteCells/PostReplace) definisce un'interfaccia di programmazione accessibile pubblicamente e consente di eseguire interazioni REST direttamente da un browser web.
+ IL[Specifica OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostReplace) definisce un'interfaccia di programmazione accessibile pubblicamente e consente di eseguire interazioni REST direttamente da un browser web.
  
 È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi Web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate a Cloud API con cURL.
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}

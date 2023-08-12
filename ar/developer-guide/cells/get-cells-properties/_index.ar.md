@@ -19,7 +19,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cell
 |:- |:- |:- |:- |
 | اسم| خيط| طريق| اسم الملف.|
 | اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| cellOrMethodName| خيط| طريق| اسم الخلية أو الطريقة. (قيمة اسم الطريقة: firstcell و endcell و maxrow و maxdatarow و maxcolumn و maxdatacolumn و minrow و mindatarow و mincolumn و mindatacolumn و cellName.)|
+| cellOrMethodName| خيط| طريق|اسم الخلية أو الطريقة. (قيمة اسم الطريقة: firstcell و endcell و maxrow و maxdatarow و maxcolumn و maxdatacolumn و minrow و mindatarow و mincolumn و mindatacolumn و cellName.)|
 | مجلد| خيط| استفسار| مجلد المستند.|
 | اسم التخزين| خيط| استفسار| اسم التخزين.|
  

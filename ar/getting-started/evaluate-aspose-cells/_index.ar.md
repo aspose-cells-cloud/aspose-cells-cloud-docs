@@ -8,6 +8,6 @@ weight: 60
 ---
  يمكنك تقييم[Aspose.Cells REST APIs](http://apireference.aspose.cloud/cells/) من خلال إنشاء ملف[حساب تجريبي مجاني](https://dashboard.aspose.cloud). ستمنحك النسخة التجريبية المجانية فكرة جيدة عن إمكانيات الخدمة وتتيح لك إجراء بعض التطوير المبكر.
 
-يرجى المراجعة[خطة تجريبية](https://purchase.aspose.cloud/trial) لمزيد من التفاصيل.
+ يرجى المراجعة[خطة تجريبية](https://purchase.aspose.cloud/trial) لمزيد من التفاصيل.
 
 

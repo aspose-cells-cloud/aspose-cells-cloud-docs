@@ -23,8 +23,8 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{c
 | nom| chaîne| chemin| Le nom du document.|
 | NomFeuille| chaîne| chemin| Le nom de la feuille de calcul.|
 | nom_cellule| chaîne| chemin| Le nom de la cellule|
-| dossier| chaîne| mettre en doute| Le dossier de documents.|
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| dossier| chaîne| requête| Le dossier de documents.|
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetComment) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

@@ -19,12 +19,12 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/unme
 |:- |:- |:- |:- |
 | nom| chaîne| chemin|Le nom du classeur.|
 | NomFeuille| chaîne| chemin| Le nom de la feuille de calcul.|
-| startRow| entier| mettre en doute| La ligne de départ.|
-| startColumn| entier| mettre en doute| La colonne de départ.|
-| totalRows| entier| mettre en doute| Le nombre total de lignes|
-| totalColonnes| entier| mettre en doute| Le total des colonnes.|
-| dossier| chaîne| mettre en doute| Le dossier du classeur.|
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| startRow| entier| requête| La ligne de départ.|
+| startColumn| entier| requête| La colonne de départ.|
+| totalRows| entier| requête| Le nombre total de lignes|
+|totalColonnes| entier| requête| Le total des colonnes.|
+| dossier| chaîne| requête| Le dossier du classeur.|
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostWorksheetUnmerge) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

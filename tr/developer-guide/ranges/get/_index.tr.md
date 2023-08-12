@@ -1,7 +1,7 @@
 ﻿---
 title: Excel çalışma sayfasından aralık içeriği nasıl alınır?
 second_title: Aspose.Cells Cloud Documen
-linktitle: ge
+linktitle: Ge
 type: docs
 url: /tr/ranges/get/
 keywords: How to get range content from an Excel worksheet

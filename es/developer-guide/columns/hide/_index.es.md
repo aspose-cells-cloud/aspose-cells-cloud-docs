@@ -25,7 +25,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/colu
 | nombre| cadena| camino|El nombre del libro.|
 | hojaNombre| cadena| camino| El nombre de la hoja de cálculo.|
 | Columna de inicio| entero| consulta| El índice de columna de inicio que se va a operar.|
-| columnastotales| entero| consulta| Número de columnas a operar.|
+|columnastotales| entero| consulta| Número de columnas a operar.|
 | carpeta| cadena| consulta| La carpeta de documentos.|
 | NombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
  

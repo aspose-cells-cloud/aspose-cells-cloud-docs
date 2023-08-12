@@ -22,7 +22,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/merg
 | startRow| heltal| fråga| Startraden.|
 | startkolumn| heltal| fråga| Startkolumnen.|
 | totalt rader| heltal| fråga| Det totala antalet rader|
-| totalt Kolumner| heltal| fråga| Det totala antalet kolumner.|
+|totalt Kolumner| heltal| fråga| Det totala antalet kolumner.|
 | mapp| sträng| fråga| Arbetsboksmappen.|
 | lagringsnamn| sträng| fråga| lagringsnamn.|
  

@@ -28,7 +28,7 @@ weight: 100
 - [تحديث خصائص المخطط](/cells/ar/charts/propreties/update/)
 - [الحصول على محور فئة المخطط](/cells/ar/charts/category-axis/get/)
 - [الحصول على محور قيمة المخطط](/cells/ar/charts/value-axis/get/)
-- [الحصول على محور الفئة الثانية للرسم البياني](/cells/ar/charts/second-category-axis/get/)
+- [الحصول على محور الفئة الثانية للمخطط](/cells/ar/charts/second-category-axis/get/)
 - [الحصول على محور القيمة الثانية للمخطط](/cells/ar/charts/second-value-axis/get/)
 - [تحديث محور فئة المخطط](/cells/ar/charts/category-axis/update/)
 - [تحديث محور قيمة المخطط](/cells/ar/charts/value-axis/update/)

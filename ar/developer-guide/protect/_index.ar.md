@@ -19,4 +19,4 @@ weight: 36
 
 - [كيفية فك تشفير Excel المصنفات.](/cells/ar/workbook/decrypt/)
 - [كيفية إلغاء حماية Excel المصنفات.](/cells/ar/workbook/unprotect/)
-- [كيفية فتح Excel الملفات دون استخدام التخزين](/cells/ar/unlock/without-using-storage/)
+- [كيفية فتح ملفات Excel دون استخدام التخزين](/cells/ar/unlock/without-using-storage/)

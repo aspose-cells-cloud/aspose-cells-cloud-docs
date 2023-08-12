@@ -5,11 +5,11 @@ linktitle: Option speichern
 type: docs
 url: /de/save-options/
 keywords: Workbook save options
-description: Aspose.Cells Cloud REST API Unterstützung, um Excel-Dateien in Formatdateien umzuwandeln. SDK unterstützt Arten von Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
+description: Aspose.Cells Cloud REST API unterstützt das Abrufen von Excel-Dateien in verschiedene Formatdateien. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
 weight: 79
 ---
 # SaveOptions-Eigenschaften
 
 Name | Geben Sie | ein Beschreibung | Anmerkungen
 ------------ | ------------- | ------------- | -------------
-**HTTP-Komprimierung aktivieren** | **blöd?** | | [Optional]**Format speichern** | **Schnur** | | [Optional]**Daten löschen** | **blöd?** | Machen Sie die Arbeitsmappe nach dem Speichern der Datei leer. | [Optional]**CachedFileFolder** | **Schnur** | Der zwischengespeicherte Dateiordner wird verwendet, um einige große Daten zu speichern. | [Optional]**ValidateMergedAreas** | **blöd?** | Gibt an, ob zusammengeführte Bereiche validiert werden sollen, bevor die Datei gespeichert wird. Der Standardwert ist falsch. | [Optional]**RefreshChartCache** | **blöd?** | | [Optional]**Verzeichnis erstellen** | **blöd?** | Wenn wahr und das Verzeichnis nicht existiert, wird das Verzeichnis automatisch erstellt, bevor die Datei gespeichert wird. | [Optional]**SortNames** | **blöd?** | | [Optional]
+**Aktivieren Sie HTTP-Komprimierung** | **bool?** | | [Optional]**SaveFormat** | **Zeichenfolge** | | [Optional]**Daten löschen** | **bool?** | Machen Sie die Arbeitsmappe leer, nachdem Sie die Datei gespeichert haben. | [Optional]**CachedFileFolder** | **Zeichenfolge** | Der zwischengespeicherte Dateiordner wird zum Speichern großer Datenmengen verwendet. | [Optional]**ValidateMergedAreas** | **bool?** | Gibt an, ob zusammengeführte Bereiche vor dem Speichern der Datei validiert werden. Der Standardwert ist false. | [Optional]**ChartCache aktualisieren** | **bool?** | | [Optional]**Verzeichnis erstellen** | **bool?** | Wenn „true“ und das Verzeichnis nicht existiert, wird das Verzeichnis automatisch erstellt, bevor die Datei gespeichert wird. | [Optional]**Sortiernamen** | **bool?** | | [Optional]

@@ -1,5 +1,5 @@
 ﻿---
-title:  Grafiği Al İkinci Kategori Eksen
+title: Grafiği Al İkinci Kategori Eksen
 type: docs
 url: /tr/charts/second-category-axis/get/
 weight: 60

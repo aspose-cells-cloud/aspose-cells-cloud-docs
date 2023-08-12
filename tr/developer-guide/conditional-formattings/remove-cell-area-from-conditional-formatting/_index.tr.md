@@ -25,7 +25,7 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditio
 | başlangıç satırı| tamsayı| sorgu||
 | başlangıç sütunu| tamsayı| sorgu||
 | toplamSatırlar| tamsayı| sorgu||
-| toplam Sütunlar| tamsayı| sorgu||
+|toplam Sütunlar| tamsayı| sorgu||
 | dosya| sicim| sorgu||
 | depolamaAdı| sicim| sorgu| depolama adı.|
  

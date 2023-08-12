@@ -19,7 +19,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cell
 |:- |:- |:- |:- |
 | namn| sträng| väg| Dokument namn.|
 | arknamn| sträng| väg| Arbetsbladsnamn.|
-| cellOrMethodName| sträng| väg| Cellens eller metodnamnet. (Metodnamnsvärde: firstcell, endcell, maxrow, maxdatarow, maxcolumn, maxdatacolumn, minrow, mindatarow, mincolumn, mindatacolumn och cellName.)|
+| cellOrMethodName| sträng| väg|Cellens eller metodnamnet. (Metodnamnsvärde: firstcell, endcell, maxrow, maxdatarow, maxcolumn, maxdatacolumn, minrow, mindatarow, mincolumn, mindatacolumn och cellName.)|
 | mapp| sträng| fråga| Dokumentets mapp.|
 | lagringsnamn| sträng| fråga| lagringsnamn.|
  

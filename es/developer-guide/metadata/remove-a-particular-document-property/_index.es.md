@@ -1,7 +1,7 @@
 ﻿---
 title: Eliminar una propiedad de documento particular
 second_title: Aspose.Cells Cloud Documen
-linktitle: eliminar
+linktitle: Eliminar
 type: docs
 url: /es/document-properties/delete/
 aliases: [/remove-a-particular-document-property/]

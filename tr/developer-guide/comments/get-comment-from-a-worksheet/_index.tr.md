@@ -1,5 +1,5 @@
 ﻿---
-title: ge
+title: Ge
 type: docs
 url: /tr/comments/get/
 aliases: [/get-comment-from-a-worksheet/]

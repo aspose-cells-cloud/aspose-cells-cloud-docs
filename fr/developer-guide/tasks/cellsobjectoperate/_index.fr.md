@@ -56,7 +56,7 @@ Ce REST API exploite l'objet de cellules `task`.
 |:- |:- |:- |
 | Type de saut de page| chaîne||
 | Indice| Indice||
-| Ligne| entier||
+| Rangée| entier||
 | Colonne| entier||
 | Index de départ| entier||
 | EndIndex| entier||

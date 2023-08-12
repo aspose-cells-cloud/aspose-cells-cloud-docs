@@ -24,8 +24,8 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks
 | NomFeuille| chaîne| chemin| Nom de la feuille de calcul.|
 | lien hypertexteIndex| entier| chemin| L'index du lien hypertexte.|
 | lien hypertexte|| corps| Objet lien hypertexte|
-| dossier| chaîne| mettre en doute| Le dossier de documents.|
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| dossier| chaîne| requête| Le dossier de documents.|
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Hypelinks/PostWorksheetHyperlink) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

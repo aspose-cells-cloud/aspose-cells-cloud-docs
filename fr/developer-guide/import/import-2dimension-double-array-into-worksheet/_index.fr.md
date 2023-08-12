@@ -1,5 +1,5 @@
 ﻿---
-title: Importer un tableau double à 2 dimensions dans la feuille de calcul Excel
+title: Importer un tableau double à 2 dimensions dans la feuille de travail Excel
 second_title: Aspose.Cells Cloud Documen
 linktitle: Importer un tableau double à 2 dimensions
 type: docs

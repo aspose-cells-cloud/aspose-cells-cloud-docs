@@ -25,7 +25,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks
 | primera fila| entero| consulta||
 | primera columna| entero| consulta||
 | filas totales| entero| consulta||
-| columnastotales| entero| consulta||
+|columnastotales| entero| consulta||
 | DIRECCIÓN| cadena| consulta||
 | carpeta| cadena| consulta| La carpeta de documentos.|
 | NombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|

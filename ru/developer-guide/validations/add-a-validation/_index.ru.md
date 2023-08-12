@@ -1,5 +1,5 @@
 ﻿---
-title: Добавить проверку рабочего листа на рабочий лист Excel
+title: Добавить проверку рабочего листа на рабочем листе Excel
 second_title: Aspose.Cells Cloud Documen
 linktitle: Объявление
 type: docs

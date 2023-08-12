@@ -1,7 +1,7 @@
 ﻿---
 title: Excel çalışma sayfasından farklı içerik nasıl elde edilir
 second_title: Aspose.Cells Cloud Documen
-linktitle: ge
+linktitle: Ge
 type: docs
 url: /tr/worksheets/get/
 keywords: How to get different content from an Excel worksheet

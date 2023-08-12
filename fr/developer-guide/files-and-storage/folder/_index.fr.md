@@ -7,7 +7,7 @@ keywords: Upload, download, delete, copy, and move folder
 description: Aspose.Cells Cloud REST API prend en charge le téléchargement, le téléchargement, la suppression, la copie et le déplacement de dossiers. SDK prend en charge les types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift
 weight: 100
 ---
-Aspose.Cells Cloud fournit des types d'API d'exploitation de dossier.
+Aspose.Cells Cloud fournit des types d'API d'exploitation de dossiers.
 
 - [Comment créer un dossier.](/cells/fr/folder/create/)
 - [Comment obtenir des fichiers.](/cells/fr/folder/get-files/)

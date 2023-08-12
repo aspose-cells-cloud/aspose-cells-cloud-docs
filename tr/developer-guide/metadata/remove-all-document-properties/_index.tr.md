@@ -9,7 +9,7 @@ keywords: delete properties from excel files
 description: Aspose.Cells Cloud REST API, excel dosyalarından özelliklerin silinmesini destekler. SDK, geliştirme dili türlerini destekler. Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift'i içerir
 weight: 58
 ---
-Bu REST API, `delete all` özel belge özelliklerini ve temiz yerleşik olanları belirtir.
+Bu REST API, `delete all` özel belge özelliklerini ve temiz yerleşik olanları gösterir.
  
 ## RSET API
  

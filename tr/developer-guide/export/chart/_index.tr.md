@@ -14,10 +14,10 @@ weight: 20
 
 |**API**|**Tip**|**Tanım**|**Havalı Bağlantı**|
 |:- |:- |:- |:- |
-|/hücreler/dışa aktarma|POSTALAMAK|Excel nesnelerini istek içeriğinden bir biçime aktarın|[İhracat Sonrası](https://apireference.aspose.cloud/cells/#/LiteCells/PostExport)|
+|/hücreler/dışa aktarma|POSTALAMAK|Excel nesnelerini istek içeriğinden bir biçime aktarın|[İhracat Sonrası](https://apireference.aspose.cloud/cells/#/LightCells/PostExport)|
 
 
- bu[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/LiteCells/PostExport) herkesin erişebileceği bir programlama arabirimi tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+ bu[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) herkesin erişebileceği bir programlama arabirimi tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
 
  Kullanabilirsiniz**cURL** Aspose.Cells web hizmetlerine kolayca erişmek için komut satırı aracı. Aşağıdaki örnek, cURL ile Cloud API'e nasıl çağrı yapılacağını gösterir.
 
@@ -89,7 +89,7 @@ Aşağıdaki kod örnekleri, çeşitli SDK'lar kullanılarak Aspose.Cells web hi
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LiteCells-Export-chart-tiff.php" >}}
+{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LightCells-Export-chart-tiff.php" >}}
 
 {{< /tab >}}
 

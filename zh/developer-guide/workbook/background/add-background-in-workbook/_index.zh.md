@@ -1,5 +1,5 @@
 ﻿---
-title: 在 Workboo 中添加背景
+title: 在Workboo中添加背景
 second_title: Aspose.Cells Cloud Documen
 linktitle: 广告
 type: docs
@@ -9,7 +9,7 @@ keywords: Add background on an Excel workbook
 description: Aspose.Cells Cloud REST API 支持在 Excel 文件的 Excel 工作簿上添加背景。 SDK支持多种开发语言。它们包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 swift
 weight: 160
 ---
-此 REST API 指示在 Excel 工作簿上添加 `background`。
+此 REST API 表示在 Excel 工作簿上添加 `background`。
 
 
 **查询参数**
@@ -20,7 +20,7 @@ weight: 160
 |文件夹|细绳|原始工作簿文件夹。|
 |存储名称|细绳|存储名称。|
 
-**请求正文参数**
+**请求体参数**
 
 |参数名称|类型|描述|
 |:- |:- |:- |
@@ -30,11 +30,11 @@ weight: 160
 
 |**API**|**类型**|**描述**|**资源链接**|
 |:- |:- |:- |:- |
-|/细胞/{名称}/背景|放|在excel文件中添加背景|[将工作簿背景](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookBackground)|
+|/细胞/{名称}/背景|放|在Excel文件中添加背景|[把工作簿背景](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookBackground)|
 
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookBackground)定义了一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+这[开放API规范](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookBackground)定义了一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
 
-您可以使用**cURL**用于轻松访问 Aspose.Cells Web 服务的命令行工具。以下示例显示如何使用 cURL 调用 Cloud API。
+您可以使用**cURL**命令行工具轻松访问 Aspose.Cells Web 服务。以下示例展示如何使用 cURL 呼叫云端 API。
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
@@ -67,11 +67,11 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/background?picPath=D
 {{< /tabs >}}
 
 
-## 云 SDK 系列
+## 云SDK系列
 
-使用 SDK 是加速开发的最佳方式。 SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 仓库](https://github.com/aspose-cells-cloud)有关 Aspose.Cells Cloud SDK 的完整列表。
+使用 SDK 是加快开发速度的最佳方式。 SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)有关 Aspose.Cells Cloud SDK 的完整列表。
 
-以下代码示例演示如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="9" tabID="4" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Android" tabName5="Perl" tabName6="Ruby" tabName7="PHP" tabName8="Node.js" tabName9="Swift" >}}
 

@@ -8,7 +8,7 @@ keywords: Add multi rows on an Excel workshee
 description: Aspose.Cells Cloud REST API, bir Excel çalışma sayfasına birden çok satır eklemeyi destekler. SDK, geliştirme dili türlerini destekler. Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift'i içerir
 weight: 20
 ---
-Bu REST API, bir Excel çalışma sayfasına birkaç yeni çalışma sayfası satırı eklemeyi belirtir.
+Bu REST API, bir Excel çalışma sayfasına birkaç yeni çalışma sayfası satırı eklemeyi gösterir.
  
 ## RSET API
  

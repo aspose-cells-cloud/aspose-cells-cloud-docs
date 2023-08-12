@@ -34,7 +34,7 @@ POST https://api.aspose.cloud/v3.0/cells/export
 | نوع الكائن| خيط| استفسار|نوع الكائن (مصنف / ورقة عمل / مخطط / شكل / صورة / كائن قائمة / كائن أولي)|
 | شكل| خيط| استفسار|[تنسيق الملف](/cells/ar/supported-file-formats/)  |
  
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/LiteCells/PostExport) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
+ ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
  
 يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
  
@@ -102,7 +102,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/export" \
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LiteCells-Export.php" >}}
+{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LightCells-Export.php" >}}
 
 
 {{< /tab >}}
@@ -134,7 +134,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/export" \
 
 {{< tab tabNum="9" >}}
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "LiteCellsExport.py" >}}
+{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "LightCellsExport.py" >}}
 {{< /tab >}}
 
 {{< /tabs >}}

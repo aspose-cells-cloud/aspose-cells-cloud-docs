@@ -15,5 +15,5 @@ weight: 100
 **Résumé**
 
 -  Excel commentaires sont utilisés pour[ajouter une note ou expliquer une formule dans une cellule](/cells/fr/comments/add/).
--  Excel offre aux utilisateurs la flexibilité de[édition](/cells/fr/comments/update/), [suppression](/cells/fr/comments/delete/) , et[montrant](/cells/fr/comments/get/) ou[cache](/cells/fr/comments/update/) commentaires sur une feuille de travail Excel.
--  Les utilisateurs peuvent également[redimensionner](/cells/fr/comments/update/) et[déplacer](/cells/fr/comments/update/) la boîte de commentaires Excel.
+- Excel offre aux utilisateurs la flexibilité de[montage](/cells/fr/comments/update/), [suppression](/cells/fr/comments/delete/) , et[montrant](/cells/fr/comments/get/) ou[cache](/cells/fr/comments/update/) commentaires sur une feuille de travail Excel.
+-  Les utilisateurs peuvent également[redimensionner](/cells/fr/comments/update/) et[se déplacer](/cells/fr/comments/update/) la boîte de commentaires Excel.

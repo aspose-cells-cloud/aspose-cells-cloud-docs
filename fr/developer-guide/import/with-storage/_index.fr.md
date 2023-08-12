@@ -22,8 +22,8 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/importdata
 | Le nom du paramètre| Taper| Chemin/chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin||
-| dossier| chaîne| mettre en doute||
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| dossier| chaîne| requête||
+| nom_stockage| chaîne| requête| nom de stockage.|
 | importer des données|| corps||
 
 **Les paramètres des options d'importation de données**sont décrits dans[le lien de référence](/cells/fr/import/#import-data-option-parameter).

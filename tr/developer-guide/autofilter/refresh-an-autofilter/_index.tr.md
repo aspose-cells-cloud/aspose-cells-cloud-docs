@@ -9,7 +9,7 @@ weight: 100
 keywords: Refresh auto filter on an Excel worksheet
 description: Aspose.Cells Bulut API, bir Excel çalışma sayfasında otomatik filtrenin yenilenmesini destekler. SDK, geliştirme dillerini destekler. Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift'i içerir
 ---
-Bu REST API, bir Excel çalışma sayfasında `refresh` otomatik filtresini belirtir.
+Bu REST API, bir Excel çalışma sayfasında `refresh` otomatik filtresini gösterir.
  
 ## RSET API
  

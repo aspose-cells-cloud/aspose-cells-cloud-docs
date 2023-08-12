@@ -1,15 +1,15 @@
 ﻿---
-title: Löschen Sie einen Filter in einem Excel-Arbeitsblatt
+title: Löschen Sie einen Filter in einem Arbeitsblatt Excel
 second_title: Aspose.Cells Cloud Documen
 linktitle: Filter löschen
 type: docs
 url: /de/delete-filter/
 aliases: [/delete-a-filter-for-a-filter-column/,/delete-auto-filter/]
 keywords: Deletes a filter on an Excel worksheet
-description: Die Aspose.Cells-Cloud API unterstützt das Löschen eines Filters auf einem Excel-Arbeitsblatt. SDK unterstützt Arten von Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
+description: Die Aspose.Cells Cloud API unterstützt das Löschen eines Filters in einem Excel-Arbeitsblatt. Das SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
 weight: 100
 ---
-Dieser REST API gibt an, dass ein `filter` auf einem Excel-Arbeitsblatt gelöscht werden soll.
+Dieser REST API gibt an, einen `filter` in einem Excel-Arbeitsblatt zu löschen.
 
 ## RSET API
 
@@ -22,25 +22,25 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilt
 Die Anforderungsparameter sind:
 | Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
 |:- |:- |:- |:- |
-| Name| Schnur| Weg|Der Name der Arbeitsmappe.|
-| Tabellenname| Schnur| Weg| Der Arbeitsblattname.|
-|Bereich|Schnur| Anfrage||
-|FeldIndex|ganze Zahl| Anfrage||
-|dateTimeGroupingType|Schnur| Anfrage| Tag/Stunde/Minute/Monat/Sekunde/Jahr|
-|Jahr|ganze Zahl| Anfrage||
-|Monat|ganze Zahl| Anfrage||
-|Tag|ganze Zahl| Anfrage||
-|Stunde|ganze Zahl| Anfrage||
-|Minute|ganze Zahl| Anfrage||
-|zweite|ganze Zahl| Anfrage||
-|übereinstimmenBlanks|Schnur| Anfrage|wahr falsch|
-|Aktualisierung|Schnur| Anfrage|wahr falsch|
-|Ordner|Schnur| Anfrage|Ursprünglicher Arbeitsmappenordner.|
-|Speichername|Schnur| Anfrage|Speichername.|
+| Name| Zeichenfolge| Weg|Der Name der Arbeitsmappe.|
+| Blattname| Zeichenfolge| Weg| Der Arbeitsblattname.|
+|Reichweite|Zeichenfolge| Abfrage||
+|fieldIndex|ganze Zahl| Abfrage||
+|dateTimeGroupingType|Zeichenfolge| Abfrage| Tag/Stunde/Minute/Monat/Sekunde/Jahr|
+|Jahr|ganze Zahl| Abfrage||
+|Monat|ganze Zahl| Abfrage||
+|Tag|ganze Zahl| Abfrage||
+|Stunde|ganze Zahl| Abfrage||
+|Minute|ganze Zahl| Abfrage||
+|zweite|ganze Zahl| Abfrage||
+|matchBlanks|Zeichenfolge| Abfrage|wahr falsch|
+|Aktualisierung|Zeichenfolge| Abfrage|wahr falsch|
+|Ordner|Zeichenfolge| Abfrage|Originaler Arbeitsmappenordner.|
+|Speichername|Zeichenfolge| Abfrage|Speichername.|
 
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/AutoFilter/DeleteWorksheetFilter) definiert eine öffentlich zugängliche Programmierschnittstelle und lässt Sie REST-Interaktionen direkt von einem Webbrowser ausführen.
+ Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/AutoFilter/DeleteWorksheetFilter) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht die Durchführung von REST-Interaktionen direkt über einen Webbrowser.
 
-Sie können das cURL-Befehlszeilentool verwenden, um einfach auf Aspose.Cells-Webdienste zuzugreifen. Das folgende Beispiel zeigt, wie Sie Cloud API mit cURL anrufen.
+Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie man mit cURL Anrufe zur Cloud API tätigt.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
@@ -75,9 +75,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFil
 
 ## Cloud SDK-Familie
 
- Die Verwendung eines SDK ist der beste Weg, um die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und lässt Sie sich auf Ihre Projektaufgaben konzentrieren. Bitte überprüfen Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+ Die Verwendung eines SDK ist der beste Weg, die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte schauen Sie sich die an[GitHub-Repository](https://github.com/aspose-cells-cloud) Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie hier.
 
-Die folgenden Codebeispiele zeigen, wie Sie mit verschiedenen SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+Die folgenden Codebeispiele veranschaulichen, wie Aspose.Cells-Webdienste mithilfe verschiedener SDKs aufgerufen werden:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" >}}
 

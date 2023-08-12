@@ -24,11 +24,11 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/colu
 |:- |:- |:- |:- |
 | nom| chaîne| chemin|Le nom du classeur.|
 | NomFeuille| chaîne| chemin| Le nom de la feuille de calcul.|
-| sourceColumnIndex| entier| mettre en doute| Index de la colonne source|
-| destinationColumnIndex| entier| mettre en doute| Index de la colonne de destination|
-| numéro de colonne| entier| mettre en doute| Le numéro de colonne copié|
-| feuille de travail| chaîne| mettre en doute||
-| dossier| chaîne| mettre en doute| Le dossier de documents.|
+| sourceColumnIndex| entier| requête| Index de la colonne source|
+|destinationColumnIndex| entier| requête| Index de la colonne de destination|
+| numéro de colonne| entier| requête| Le numéro de colonne copié|
+| feuille de travail| chaîne| requête||
+| dossier| chaîne| requête| Le dossier de documents.|
 
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostCopyWorksheetColumns) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
 

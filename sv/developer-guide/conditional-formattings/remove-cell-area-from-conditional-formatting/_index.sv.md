@@ -25,7 +25,7 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditio
 | startRow| heltal| fråga||
 | startkolumn| heltal| fråga||
 | totalt rader| heltal| fråga||
-| totalt Kolumner| heltal| fråga||
+|totalt Kolumner| heltal| fråga||
 | mapp| sträng| fråga||
 | lagringsnamn| sträng| fråga| lagringsnamn.|
  

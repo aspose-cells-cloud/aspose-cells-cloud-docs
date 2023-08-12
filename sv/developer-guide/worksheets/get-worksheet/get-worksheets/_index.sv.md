@@ -23,7 +23,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets
 | Parameternamn| Typ| Sökväg/Frågesträng/HTTPBody|Beskrivning|
 |:- |:- |:- |:- |
 | namn| sträng| väg| Dokument namn.|
-| mapp| sträng| fråga|Dokumentmapp.|
+| mapp| sträng| fråga| Dokumentmapp.|
 | lagringsnamn| sträng| fråga| lagringsnamn.|
  
  De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheets) definierar ett allmänt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.

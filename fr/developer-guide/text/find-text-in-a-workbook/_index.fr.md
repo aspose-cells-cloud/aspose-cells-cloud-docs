@@ -23,9 +23,9 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/findText
 | Le nom du paramètre| Taper| Chemin/chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Nom du document.|
-| texte| chaîne| mettre en doute| Exemple de texte.|
-| dossier| chaîne| mettre en doute| Dossier du document.|
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| texte| chaîne| requête| Exemple de texte.|
+| dossier| chaîne| requête| Dossier du document.|
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbooksTextSearch) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

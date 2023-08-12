@@ -1,7 +1,7 @@
 ﻿---
 title: Excel dosyasında bir resim alın
 second_title: Aspose.Cells Cloud Documen
-linktitle: ge
+linktitle: Ge
 type: docs
 url: /tr/pictures/get/
 aliases: [/convert-picture-to-image/]

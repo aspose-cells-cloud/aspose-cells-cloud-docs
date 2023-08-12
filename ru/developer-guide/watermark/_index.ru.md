@@ -24,7 +24,7 @@ POST http://api.aspose.cloud/v3.0/cells/watermark
 | текст| нить| запрос||
 | цвет| нить| запрос||
  
-[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/LiteCells/PostWatermark) определяет общедоступный программный интерфейс и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostWatermark) определяет общедоступный программный интерфейс и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
  
 Вы можете использовать инструмент командной строки cURL для простого доступа к веб-службам Aspose.Cells. В следующем примере показано, как звонить в Cloud API с номером cURL.
  
@@ -92,7 +92,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/watermark?text=aspose.cells.cloud&co
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LiteCells-Watermark.php" >}}
+{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LightCells-Watermark.php" >}}
 
 {{< /tab >}}
 
@@ -122,6 +122,6 @@ curl -v "http://api.aspose.cloud/v3.0/cells/watermark?text=aspose.cells.cloud&co
 {{< /tab >}}
 {{< tab tabNum="9" >}}
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "LiteCellsWatermark.py" >}}
+{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "LightCellsWatermark.py" >}}
 {{< /tab >}}
 {{< /tabs >}}

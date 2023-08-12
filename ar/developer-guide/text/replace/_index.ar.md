@@ -28,7 +28,7 @@ POST https://api.aspose.cloud/v3.0/cells/replace
 | كلمة المرور| خيط| استفسار||
 | اسم الورقة| خيط| استفسار||
  
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/LiteCells/PostReplace) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
+ ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostReplace) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
  
 يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}

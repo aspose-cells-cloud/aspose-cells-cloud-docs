@@ -1,7 +1,7 @@
 ﻿---
 title: Déplacer un tableau croisé dynamique dans un fichier Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: Déplacer
+linktitle: Se déplacer
 type: docs
 url: /fr/pivot-tables/move/
 aliases: [/move-pivot-table/]
@@ -25,11 +25,11 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottable
 | nom| chaîne| chemin||
 | NomFeuille| chaîne| chemin||
 | indextablepivot| entier| chemin||
-| fieldIndex| entier| mettre en doute||
-| depuis| chaîne| mettre en doute||
-| pour| chaîne| mettre en doute||
-| dossier| chaîne| mettre en doute||
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| fieldIndex| entier| requête||
+| depuis| chaîne| requête||
+| à| chaîne| requête||
+| dossier| chaîne| requête||
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/PivotTables/PostPivotTableFieldMoveTo) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

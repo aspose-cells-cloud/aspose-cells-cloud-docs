@@ -25,7 +25,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks
 | ilk sıra| tamsayı| sorgu||
 | ilk sütun| tamsayı| sorgu||
 | toplamSatırlar| tamsayı| sorgu||
-| toplam Sütunlar| tamsayı| sorgu||
+|toplam Sütunlar| tamsayı| sorgu||
 | adres| sicim| sorgu||
 | dosya| sicim| sorgu| Belge klasörü.|
 | depolamaAdı| sicim| sorgu| depolama adı.|

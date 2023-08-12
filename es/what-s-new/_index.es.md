@@ -10,6 +10,55 @@ description: Esta página describe las nuevas características más interesantes
 ---
 Bienvenido a las novedades de Aspose.Cells Cloud docs. Utilice esta página para encontrar rápidamente los últimos cambios.
 
+## Aspose.Cells Nube 23.7
+
+ * Soporte para reparar archivos.
+* Optimizar las funciones de conversión.
+
+
+## Aspose.Cells Nube 23.6
+
+ * Soporte para bloquear archivos múltiples por lotes.
+ * Soporte para desbloquear múltiples archivos por lotes.
+ * Soporte para proteger por lotes varios archivos.
+ * Soporte para dividir por lotes varios archivos.
+ Arreglar api de propiedad de documento de colocación.
+
+
+## Aspose.Cells Nube 23.5
+
+ * Arreglar algunos métodos están mal escritos.
+
+
+## Aspose.Cells Nube 23.4
+
+ * Soporte de importación y exportación de datos XML.
+
+
+## Aspose.Cells Nube 23.3
+
+ * Optimizar las propiedades de los hipervínculos.
+
+
+## Aspose.Cells Nube 23.2
+
+ * Optimizar reemplazar API.
+* Optimizar la interfaz de usuario de Swagger.
+
+
+
+
+## Aspose.Cells Nube 23.1
+
+ * Corrige el error del método PostCellCharacters.
+
+
+
+## Aspose.Cells Nube 22.12
+
+ * Operación del eje del gráfico de soporte.
+
+
 ## Aspose.Cells Nube 22.11
 
  * Agregue una nueva API para convertir a json.
@@ -32,7 +81,7 @@ Bienvenido a las novedades de Aspose.Cells Cloud docs. Utilice esta página para
 
 ## Aspose.Cells Nube 22.8
 
-* Admite la transposición de Excel Filas a Columnas.
+Admite la transposición de Excel Filas a Columnas.
 
 ## Aspose.Cells Nube 22.7
 
@@ -46,7 +95,7 @@ Bienvenido a las novedades de Aspose.Cells Cloud docs. Utilice esta página para
 
 ## Aspose.Cells Nube 22.5
 
-[Mejora para exportar API.](https://docs.aspose.cloud/cells/export/)
+* [Mejora para exportar API.](https://docs.aspose.cloud/cells/export/)
 * [Mejora para borrar API.](https://docs.aspose.cloud/cells/clear/)
 
 ## Aspose.Cells Nube 22.4

@@ -24,7 +24,7 @@ POST http://api.aspose.cloud/v3.0/cells/unlock
 | archivo| archivo| formularioDatos| Subir Archivo|
 | contraseña| cadena| consulta||
  
- El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/LiteCells/PostUnlock) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+ El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/LightCells/PostUnlock) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
  
 Puede utilizar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
  
@@ -94,7 +94,7 @@ Los siguientes ejemplos de código demuestran cómo realizar llamadas a los serv
 
 {{< tab tabNum="3" >}}
 
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LiteCells-Unlock.php" >}}
+{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LightCells-Unlock.php" >}}
 {{< /tab >}}
 
 {{< tab tabNum="4" >}}
@@ -123,6 +123,6 @@ Los siguientes ejemplos de código demuestran cómo realizar llamadas a los serv
 {{< /tab >}}
 {{< tab tabNum="9" >}}
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "LiteCellsUnlock.py" >}}
+{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "LightCellsUnlock.py" >}}
 {{< /tab >}}
 {{< /tabs >}}

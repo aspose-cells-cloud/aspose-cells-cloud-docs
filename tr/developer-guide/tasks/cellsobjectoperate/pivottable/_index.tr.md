@@ -21,7 +21,7 @@ Bu REST API, hücreler nesnesini kullanarak `pivot table` oluşturur, `task`'i �
 | UseSameSource| sicim| doğru yanlış|
 | Özet Tablo Dizini| tamsayı||
 | PivotAlanSatırları|tamsayı[]||
-| PivotAlanıSütunları|tamsayı[]||
+| Özet Alan Sütunları|tamsayı[]||
 |PivotAlanVerileri|tamsayı[]||
 
 

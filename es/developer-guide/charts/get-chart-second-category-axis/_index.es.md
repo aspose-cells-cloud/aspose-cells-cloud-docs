@@ -1,5 +1,5 @@
 ﻿---
-title:  Obtener Gráfico Segunda Categoría Axi
+title: Obtener Gráfico Segunda Categoría Axi
 type: docs
 url: /es/charts/second-category-axis/get/
 weight: 60

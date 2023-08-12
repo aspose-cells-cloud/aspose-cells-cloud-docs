@@ -9,7 +9,7 @@ keywords: Get rows info on an Excel workshee
 description: Aspose.Cells Cloud REST API, bir Excel çalışma sayfasında satır almayı destekler. SDK, geliştirme dili türlerini destekler. Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift'i içerir
 weight: 10
 ---
-Bu REST API, bir Excel çalışma sayfasında satır bilgisi almayı gösterir.
+Bu REST API, bir Excel çalışma sayfasında satır bilgisi almayı belirtir.
  
 ## RSET API
  

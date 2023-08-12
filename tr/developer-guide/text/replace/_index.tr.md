@@ -28,7 +28,7 @@ POST https://api.aspose.cloud/v3.0/cells/replace
 | şifre| sicim| sorgu||
 | sayfa adı| sicim| sorgu||
  
- bu[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/LiteCells/PostReplace) herkesin erişebileceği bir programlama arabirimi tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+ bu[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/LightCells/PostReplace) herkesin erişebileceği bir programlama arabirimi tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
  
 Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Cloud API'e nasıl çağrı yapılacağını gösterir.
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}

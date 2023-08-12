@@ -1,7 +1,7 @@
 ﻿---
 title: Cómo trabajar con la eliminación de hojas de trabajo en un libro de trabajo Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: eliminar
+linktitle: Eliminar
 type: docs
 url: /es/worksheets/delete/
 keywords: How to work with deleting worksheet on an Excel workbook

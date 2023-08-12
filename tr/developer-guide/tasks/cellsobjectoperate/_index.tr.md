@@ -79,7 +79,7 @@ Bu REST API, `task` numaralı hücre nesnesini çalıştırır.
 | UseSameSource| sicim| doğru yanlış|
 | Özet Tablo Dizini| tamsayı||
 | PivotAlanSatırları|tamsayı[]||
-| PivotAlanıSütunları|tamsayı[]||
+| Özet Alan Sütunları|tamsayı[]||
 |PivotAlanVerileri|tamsayı[]||
 
 

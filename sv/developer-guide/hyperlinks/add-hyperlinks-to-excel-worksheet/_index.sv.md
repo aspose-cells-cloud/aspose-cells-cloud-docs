@@ -25,7 +25,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks
 | första raden| heltal| fråga||
 | första kolumnen| heltal| fråga||
 | totalt rader| heltal| fråga||
-| totalt Kolumner| heltal| fråga||
+|totalt Kolumner| heltal| fråga||
 | adress| sträng| fråga||
 | mapp| sträng| fråga| Dokumentmappen.|
 | lagringsnamn| sträng| fråga| lagringsnamn.|

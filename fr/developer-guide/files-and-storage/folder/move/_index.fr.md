@@ -21,9 +21,9 @@ PUT http://api.aspose.cloud/v3.0/cells/storage/folder/move/{srcPath}
 | Le nom du paramètre| Taper| Chemin/chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | srcPath| chaîne| chemin| Chemin du dossier à déplacer, par exemple '/folder'|
-| cheminDest| chaîne| mettre en doute| Chemin du dossier de destination vers lequel déplacer, par exemple '/dst'|
-| srcStorageName| chaîne| mettre en doute| Nom du stockage source|
-| destStorageName| chaîne| mettre en doute| Nom du stockage de destination|
+| cheminDest| chaîne| requête| Chemin du dossier de destination vers lequel déplacer, par exemple '/dst'|
+| srcStorageName| chaîne| requête| Nom du stockage source|
+| destStorageName| chaîne| requête| Nom du stockage de destination|
 
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Folder/MoveFolder) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.

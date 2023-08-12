@@ -10,6 +10,55 @@ description: Bu sayfada, son sürümlerde tanıtılan en ilginç yeni Aspose.Cel
 ---
 Aspose.Cells Bulut belgelerindeki yeniliklere hoş geldiniz. En son değişiklikleri hızlı bir şekilde bulmak için bu sayfayı kullanın.
 
+## Aspose.Cells Bulut 23.7
+
+ * Dosyayı onarma desteği.
+* Dönüşüm işlevlerini optimize edin.
+
+
+## Aspose.Cells Bulut 23.6
+
+ * Çoklu dosyaları toplu olarak kilitleme desteği.
+ * Çoklu dosyaları toplu olarak açma desteği.
+ * Çoklu dosyaları toplu olarak koruma desteği.
+ * Çoklu dosyaları toplu olarak bölme desteği.
+ Belge özelliği api'sini düzeltin.
+
+
+## Aspose.Cells Bulut 23.5
+
+ * Birkaç yöntem yanlış yazılmış düzeltin.
+
+
+## Aspose.Cells Bulut 23.4
+
+ * XML verilerini içe ve dışa aktarmayı destekler.
+
+
+## Aspose.Cells Bulut 23.3
+
+ * Köprü özelliklerini optimize edin.
+
+
+## Aspose.Cells Bulut 23.2
+
+ * Optimize edin API'i değiştirin.
+* Swagger kullanıcı arayüzünü optimize edin.
+
+
+
+
+## Aspose.Cells Bulut 23.1
+
+ * PostCellCharacters yöntemi için hatayı düzeltin.
+
+
+
+## Aspose.Cells Bulut 22.12
+
+ * Grafik ekseni işlemini destekleyin.
+
+
 ## Aspose.Cells Bulut 22.11
 
  * Json'a dönüştürmek için yeni api ekleyin.
@@ -32,7 +81,7 @@ Aspose.Cells Bulut belgelerindeki yeniliklere hoş geldiniz. En son değişiklik
 
 ## Aspose.Cells Bulut 22.8
 
-* Excel Satırları Sütunlara aktarmayı destekler.
+Excel Satırları Sütunlara aktarmayı destekler.
 
 ## Aspose.Cells Bulut 22.7
 
@@ -46,7 +95,7 @@ Aspose.Cells Bulut belgelerindeki yeniliklere hoş geldiniz. En son değişiklik
 
 ## Aspose.Cells Bulut 22.5
 
-[Dışa aktarma için iyileştirme API.](https://docs.aspose.cloud/cells/export/)
+* [Dışa aktarma için iyileştirme API.](https://docs.aspose.cloud/cells/export/)
 * [Clear API için iyileştirme.](https://docs.aspose.cloud/cells/clear/)
 
 ## Aspose.Cells Bulut 22.4

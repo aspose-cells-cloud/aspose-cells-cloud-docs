@@ -24,13 +24,13 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/
 |:- |:- |:- |:- |
 | nom| chaîne| chemin||
 | NomFeuille| chaîne| chemin||
-| gamme| chaîne| mettre en doute||
-| fieldIndex| entier| mettre en doute||
-| dynamiqueFiltreType| chaîne| mettre en doute||
-| matchBlanks| booléen| mettre en doute||
-| rafraîchir| booléen| mettre en doute||
-| dossier| chaîne| mettre en doute||
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| gamme| chaîne| requête||
+| fieldIndex| entier| requête||
+| dynamiqueFiltreType| chaîne| requête||
+| matchBlanks| booléen| requête||
+| rafraîchir| booléen| requête||
+| dossier| chaîne| requête||
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetDynamicFilter) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

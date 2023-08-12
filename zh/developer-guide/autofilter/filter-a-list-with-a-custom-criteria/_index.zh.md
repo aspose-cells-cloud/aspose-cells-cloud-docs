@@ -6,10 +6,10 @@ type: docs
 url: /zh/autofilter/add-custom-filter/ 
 aliases: [/filter-a-list-with-a-custom-criteria/,/autofilter/add-a-custom-filter/ ]
 keywords: Adds a custom filter on an Excel worksheet
-description: Aspose.Cells Cloud API支持在Excel工作表上添加自定义过滤器。SDK支持多种开发语言。它们包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 swift
+description: Aspose.Cells云API支持在Excel工作表上添加自定义过滤器。SDK支持多种开发语言。它们包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 swift
 weight: 65
 ---
-此 REST API 指示使用 `custom criteria` 过滤列表。
+此 REST API 表示过滤具有 `custom criteria` 的列表。
             
 ## RSET API
  
@@ -26,19 +26,19 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/
 |工作表名称|细绳|小路||
 |范围|细绳|询问||
 |字段索引|整数|询问||
-| operatorType1|细绳|询问||
+|操作符类型1|细绳|询问||
 |标准1|细绳|询问||
 |是和|布尔值|询问||
-|运算符Type2|细绳|询问||
+|操作符类型2|细绳|询问||
 |标准2|细绳|询问||
 |匹配空白|布尔值|询问||
 |刷新|布尔值|询问||
 |文件夹|细绳|询问||
 |存储名称|细绳|询问|存储名称。|
  
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetCustomFilter)定义了一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+这[开放API规范](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetCustomFilter)定义了一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
  
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例显示如何使用 cURL 调用 Cloud API。
+您可以使用cURL命令行工具轻松访问Aspose.Cells Web服务。以下示例展示如何使用 cURL 呼叫云端 API。
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
@@ -74,11 +74,11 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFil
 
 {{< /tabs >}}
 
-## 云 SDK 系列
+## 云SDK系列
  
-使用 SDK 是加速开发的最佳方式。 SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 仓库](https://github.com/aspose-cells-cloud)有关 Aspose.Cells Cloud SDK 的完整列表。
+使用 SDK 是加快开发速度的最佳方式。 SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)有关 Aspose.Cells Cloud SDK 的完整列表。
  
-以下代码示例演示如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" >}}
 

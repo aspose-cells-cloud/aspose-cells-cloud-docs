@@ -19,7 +19,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/mergedCells
 |:- |:- |:- |:- |
 | nome| corda| sentiero| Nome del documento.|
 | foglioNome| corda| sentiero| Il nome del foglio di lavoro.|
-| cartella| corda| domanda|Cartella documenti.|
+| cartella| corda| domanda| Cartella documenti.|
 | storageName| corda| domanda| nome di archiviazione.|
  
  IL[Specifica OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetMergedCells) definisce un'interfaccia di programmazione accessibile pubblicamente e consente di eseguire interazioni REST direttamente da un browser web.

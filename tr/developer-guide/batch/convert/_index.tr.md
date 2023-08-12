@@ -24,11 +24,11 @@ POST http://api.aspose.cloud/v3.0/cells/batch/convert
 
 **BatchConvertRequest Özellikleri**
  
-Ad | Tür | Açıklama | notlar
+İsim | Tür | Açıklama | notlar
 ------------ | ------------- | ------------- | -------------
  KaynakKlasör | dizi | | [isteğe bağlı]Maç Koşulu | MatchConditionRequest | | [isteğe bağlı]Biçim | dizi | | [isteğe bağlı]Dış Klasör | dizi | | [isteğe bağlı]Seçenekleri Kaydet | Kaydetme Seçenekleri | | [isteğe bağlı]**MatchConditionRequest Özellikleri**
  
-Ad | Tür | Açıklama | notlar
+İsim | Tür | Açıklama | notlar
 ------------ | ------------- | ------------- | -------------
  Normal İfade Modeli | dizi | | [isteğe bağlı]FullMatchKoşulları | dizi[]| | [isteğe bağlı][OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/PostBatchConvert) herkesin erişebileceği bir programlama arabirimi tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
  
@@ -45,7 +45,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/batch/convert" \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
--D "{\"SourceFolder\":\"CellsTests\",\"MatchCondition\":{\"RegexPattern\":\"(^Book)(.+)(xlsx$)\"},\"Format\":\"pdf\",\"SaveOptions\":{\"SaveFormat\":\"pdf\",\"CalculateFormula\":true,\"EnableHTTPCompression\":true,\"OnePagePerSheet\":true,\"CreateDirectory\":false,\"Compliance\":\"None\"}}" 
+-D "{\"SourceFolder\":\"CellsTests\",\"OutFolder\":\"Output\",\"MatchCondition\":{\"RegexPattern\":\"(^Book)(.+)(xlsx$)\"},\"Format\":\"pdf\",\"SaveOptions\":{\"SaveFormat\":\"pdf\",\"CalculateFormula\":true,\"EnableHTTPCompression\":true,\"OnePagePerSheet\":true,\"CreateDirectory\":false,\"Compliance\":\"None\"}}" 
 ```
  
 {{< /tab >}}

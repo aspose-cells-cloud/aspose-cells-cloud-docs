@@ -25,16 +25,16 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilt
 |:- |:- |:- |:- |
 | nom| chaîne| chemin||
 | NomFeuille| chaîne| chemin||
-| fieldIndex| entier| mettre en doute||
-| dateTimeGroupingType| chaîne| mettre en doute||
-| année| entier| mettre en doute|0 |
-| mois| entier| mettre en doute|0 |
-| jour| entier| mettre en doute|0 |
-| heure| entier| mettre en doute|0 |
-| minute| entier| mettre en doute|0 |
-| deuxième| entier| mettre en doute|0 |
-| dossier| chaîne| mettre en doute||
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| fieldIndex| entier| requête||
+| dateTimeGroupingType| chaîne| requête||
+| année| entier| requête|0 |
+| mois| entier| requête|0 |
+| jour| entier| requête|0 |
+| heure| entier| requête|0 |
+| minute| entier| requête|0 |
+| deuxième| entier| requête|0 |
+| dossier| chaîne| requête||
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/AutoFilter/DeleteWorksheetDateFilter) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

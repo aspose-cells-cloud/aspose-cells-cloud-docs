@@ -1,10 +1,10 @@
 ﻿---
-title: Holen Sie sich MinColumn aus dem Arbeitsblatt Excel
+title: Holen Sie sich MinColumn von Excel Workshee
 type: docs
 url: /de/get-mincolumn-from-excel-worksheet/
 weight: 100
 ---
-Dieser REST API zeigt an, dass Shows einen `mincolumn` in einer Excel-Datei erhalten, wenn der `cellOrMethodName`-Parameter `mincolumn` ist.
+Dieser REST API zeigt an, dass er einen `mincolumn` in einer Excel-Datei erhält, wenn der Parameter `cellOrMethodName` `mincolumn` ist.
 
 - **cURL Beispiel**
 
@@ -35,9 +35,9 @@ curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/
 
 - **Cloud SDK-Familie**
 
- Die Verwendung eines SDK ist der beste Weg, um die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und lässt Sie sich auf Ihre Projektaufgaben konzentrieren. Bitte überprüfen Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+ Die Verwendung eines SDK ist der beste Weg, die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte schauen Sie sich die an[GitHub-Repository](https://github.com/aspose-cells-cloud) Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie hier.
 
-Die folgenden Codebeispiele zeigen, wie Sie mit verschiedenen SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+Die folgenden Codebeispiele veranschaulichen, wie Aspose.Cells-Webdienste mithilfe verschiedener SDKs aufgerufen werden:
 
 
 

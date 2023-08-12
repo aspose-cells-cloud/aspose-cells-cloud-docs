@@ -1,7 +1,7 @@
 ﻿---
 title: Ajustement automatique des lignes sur un classeur Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: Ligne
+linktitle: Rangée
 type: docs
 url: /fr/workbook/autofit/rows/
 aliases: [/auto-fit-rows-in-excel-workbooks/]
@@ -24,11 +24,11 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/autofitrows
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Nom du document.|
 | autoFitterOptions|| corps| Options d'installation automatique.|
-| startRow| entier| mettre en doute| Commencez la rangée.|
-| endRow| entier| mettre en doute| Ligne de fin.|
-| uniquementAuto| booléen| mettre en doute| FAUX|
-| dossier| chaîne| mettre en doute| Dossier du document.|
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| startRow| entier| requête| Commencez la ligne.|
+| endRow| entier| requête| Ligne de fin.|
+| uniquementAuto| booléen| requête| FAUX|
+| dossier| chaîne| requête| Dossier du document.|
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostAutofitWorkbookRows) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

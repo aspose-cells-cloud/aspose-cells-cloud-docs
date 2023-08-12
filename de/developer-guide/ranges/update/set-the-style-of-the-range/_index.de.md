@@ -1,19 +1,19 @@
 ﻿---
-title: Stellen Sie den Stil des Rangs ein
+title: Legen Sie den Stil des Rangs fest
 second_title: Aspose.Cells Cloud Documen
-linktitle: Stil einstellen
+linktitle: Stil festlegen
 type: docs
 url: /de/ranges/update/style/
 aliases: [/set-the-style-of-the-range/]
 keywords: Set range style on an Excel workshee
-description: Aspose.Cells Cloud REST API unterstützt das Festlegen des Bereichsstils auf einem Excel-Arbeitsblatt. SDK unterstützt Arten von Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
+description: Aspose.Cells Cloud REST API unterstützt den Einstellungsbereichsstil auf einem Excel-Arbeitsblatt. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
 weight: 70
 ---
 ## **Einführung**
 In diesem Beispiel können Sie den Stil des Bereichs festlegen, indem Sie Aspose.Cells Cloud API in Ihren Anwendungen verwenden. Sie können unser REST API mit jeder Sprache verwenden: .NET, Java, PHP, Ruby, Rails, Python, jQuery und viele mehr.
 ## **API Informationen**
 
-|**API**|**Typ**|**Beschreibung**|**Ressourcen-Link**|
+|**API**|**Typ**|**Beschreibung**|**Ressourcenlink**|
 |:- |:- |:- |:- |
 |/cells/{name}/worksheets/{sheetName}/ranges/style|POST|Legen Sie den Zellenstil eines benannten Bereichs fest|[PostWorksheetCellsRangeStyle](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeStyle)|
 ### **cURL Beispiel**

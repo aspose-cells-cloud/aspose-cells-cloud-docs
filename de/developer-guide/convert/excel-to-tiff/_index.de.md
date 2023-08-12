@@ -1,39 +1,39 @@
 ﻿---
-title: Excel an TIF
+title: Excel bis TIF
 second_title: Aspose.Cells Cloud Documen
 linketitle: Excel to Tif
 type: docs
 url: /de/convert/excel-to-tiff/
 aliases: [/convert-excel-file-to-tiff-in-cloud/]
 keywords: Convert excel files to tiff files
-description: Aspose.Cells Cloud REST API unterstützt die Konvertierung von Excel-Dateien in TIFF-Dateien. SDK unterstützt Arten von Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
+description: Aspose.Cells Cloud REST API unterstützt die Konvertierung von Excel-Dateien in TIFF-Dateien. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
 weight: 90
 ---
-Diese REST API `saveas` Excel-Datei an TIFF.
+Diese REST API `saveas` Excel-Datei in TIFF.
 
-[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) Mit API können Sie die MS Excel-Datei als TIFF-Datei mit zusätzlichen Einstellungen speichern und das Ergebnis im Speicher speichern.
+[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) Mit API können Sie die Datei MS Excel als Datei TIFF mit zusätzlichen Einstellungen speichern und das Ergebnis im Speicher speichern.
 
-Diese REST API `convert` Excel-Datei an TIFF.
+Diese REST API `convert` Excel-Datei in TIFF.
 
-[PUT /cells/convert](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)Mit API können Sie die MS Excel-Datei mit zusätzlichen Einstellungen in die TIFF-Datei konvertieren und das Ergebnis in der Antwort speichern.
+[PUT /cells/convert](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)Mit API können Sie die MS-Datei Excel mit zusätzlichen Einstellungen in die Datei TIFF konvertieren und das Ergebnis in der Antwort speichern.
 
-Diese REST API `export` Excel-Datei an TIFF.
+Diese REST API `export` Excel-Datei in TIFF.
 
-[GET /cells/{Name}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook  )Mit API können Sie die MS Excel-Datei mit zusätzlichen Einstellungen in die TIFF-Datei konvertieren und das Ergebnis in der Antwort speichern.
+[GET /cells/{name}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook  )Mit API können Sie die MS-Datei Excel mit zusätzlichen Einstellungen in die Datei TIFF konvertieren und das Ergebnis in der Antwort speichern.
 
 ## REST API
 
 |**API**|**Typ**|**Beschreibung**|**Swagger-Link**|
 |:- |:- |:- |:- |
-|/Zellen/konvert|SETZEN|Konvertiert eine Arbeitsmappe aus Anforderungsinhalten in ein bestimmtes Format|[PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)|
-|/Zellen/{Name}|ERHALTEN|Exportiert die Arbeitsmappe in ein anderes Format.|[GetWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)|
-|/cells/{Name}/saveAs|POST|Exportieren Sie die Arbeitsmappe in das Format|[PostDocumentSaveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)|
+|/cells/convert|SETZEN|Konvertiert die Arbeitsmappe vom Anforderungsinhalt in ein bestimmtes Format|[PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)|
+|/cells/{name}|ERHALTEN|Exportiert die Arbeitsmappe in ein anderes Format.|[GetWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)|
+|/cells/{name}/saveAs|POST|Arbeitsmappe in Format exportieren|[PostDocumentSaveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)|
 
 
 
-Diese APIs definieren eine öffentlich zugängliche Programmierschnittstelle und ermöglichen es Ihnen, REST-Interaktionen direkt von einem Webbrowser aus durchzuführen.
+Diese APIs definieren eine öffentlich zugängliche Programmierschnittstelle und ermöglichen die Durchführung von REST-Interaktionen direkt über einen Webbrowser.
 
- Sie können verwenden**cURL** Befehlszeilentool für den einfachen Zugriff auf Aspose.Cells-Webdienste. Das folgende Beispiel zeigt, wie Sie Cloud API mit cURL anrufen.
+ Sie können verwenden**cURL** Befehlszeilentool für den einfachen Zugriff auf Aspose.Cells-Webdienste. Das folgende Beispiel zeigt, wie Sie die Cloud API mit cURL anrufen.
 
 
 {{< tabs tabTotal="3" tabID="11" tabName11="convert" tabName12="saveas" tabName13="export" >}}
@@ -84,9 +84,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/book1.xlsx?format=html" \
 
 ## Cloud SDK-Familie
 
- Die Verwendung eines SDK ist der beste Weg, um die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und lässt Sie sich auf Ihre Projektaufgaben konzentrieren. Bitte überprüfen Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
+ Die Verwendung eines SDK ist der beste Weg, die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte schauen Sie sich die an[GitHub-Repository](https://github.com/aspose-cells-cloud) Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie hier.
 
-Die folgenden Codebeispiele zeigen, wie Sie mit verschiedenen SDKs Aufrufe an Aspose.Cells-Webdienste tätigen:
+Die folgenden Codebeispiele veranschaulichen, wie Aspose.Cells-Webdienste mithilfe verschiedener SDKs aufgerufen werden:
 
 
 
@@ -109,7 +109,7 @@ Assert.IsInstanceOf<System.IO.Stream>(response, "response is System.IO.Stream");
 ```java
 // For complete examples and data files, please go to https://github.com/aspose-cells-cloud/aspose-cells-cloud-java/
 try{
-    LiteCellsApi liteApi = new LiteCellsApi(System.getenv("CellsCloudTestClientId"),System.getenv("CellsCloudTestClientSecret"));
+    LightCellsApi liteApi = new LightCellsApi(System.getenv("CellsCloudTestClientId"),System.getenv("CellsCloudTestClientSecret"));
     String AssemblyTestXlsx = "assemblytest.xlsx";
     String DataSourceXlsx = "datasource.xlsx";
     HashMap<String,File> fileMap = new HashMap<String,File>();
@@ -136,7 +136,7 @@ try{
 
 ```go
 
-LiteCellsAPI := NewLiteCellsApiService(clientId, clientSecret)
+LightCellsAPI := NewLightCellsApiService(clientId, clientSecret)
 
 var fileMap map[string]string
 fileMap = make(map[string]string)
@@ -145,7 +145,7 @@ fileMap["Book2.xlsx"] = "TestData\\Book2.xlsx"
 postOpts := new(PostExportOpts)
 postOpts.Format = "tiff"
 postOpts.ObjectType = "workbook"
-_, httpResponse, err := LiteCellsAPI.PostExport(fileMap, postOpts)
+_, httpResponse, err := LightCellsAPI.PostExport(fileMap, postOpts)
 if err != nil {
 	t.Error(err)
 } else if httpResponse.StatusCode < 200 || httpResponse.StatusCode > 299 {

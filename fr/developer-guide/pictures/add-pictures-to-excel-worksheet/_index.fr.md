@@ -1,7 +1,7 @@
 ﻿---
 title: Ajouter une image dans un fichier Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: Publicité
+linktitle: Annonce
 type: docs
 url: /fr/pictures/add/
 aliases: [/add-pictures-to-excel-worksheet/]
@@ -25,13 +25,13 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
 | nom| chaîne| chemin|Le nom du classeur.|
 | NomFeuille| chaîne| chemin| Le nom de la feuille de calcul.|
 | image|| corps| Objet pictural|
-| upperLeftRow| entier| mettre en doute|0 |
-| UpperLeftColumn| entier| mettre en doute|0 |
-| ligne inférieure droite| entier| mettre en doute|0 |
-| basDroiteColonne| entier| mettre en doute|0 |
-| imageChemin| chaîne| mettre en doute| Le chemin de l'image, s'il n'est pas fourni, les données de l'image sont inspectées dans le corps de la requête.|
-| dossier| chaîne| mettre en doute| Le dossier du classeur.|
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| upperLeftRow| entier| requête|0 |
+| UpperLeftColumn| entier| requête|0 |
+| ligne inférieure droite| entier| requête|0 |
+| basDroiteColonne| entier| requête|0 |
+| imageChemin| chaîne| requête| Le chemin de l'image, s'il n'est pas fourni, les données de l'image sont inspectées dans le corps de la requête.|
+| dossier| chaîne| requête| Le dossier du classeur.|
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Pictures/PutWorksheetAddPicture) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

@@ -14,5 +14,5 @@ weight: 100
 - [如何在 Excel 工作簿上添加和删除背景](/cells/zh/workbook/background/)
 - [如何计算 Excel 工作簿上的公式](/cells/zh/workbook/calculate-all-formulas/)
 - [如何创建 Excel 工作簿](/cells/zh/workbook/create/)
-- [如何使用 Excel 工作簿](/cells/zh/workbook/get/)
+- [如何获取 Excel 工作簿](/cells/zh/workbook/get/)
 - [如何使用自动调整 Excel 工作簿](/cells/zh/workbook/autofit/)

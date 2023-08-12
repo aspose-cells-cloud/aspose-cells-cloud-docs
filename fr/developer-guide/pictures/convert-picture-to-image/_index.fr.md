@@ -25,9 +25,9 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{p
 | nom| chaîne| chemin| Nom du document.|
 | NomFeuille| chaîne| chemin| Nom de la feuille de calcul.|
 | index des images| entier| chemin| L'index des images.|
-| format| chaîne| mettre en doute| Le format de l'objet exporté.|
-| dossier| chaîne| mettre en doute| Le dossier de documents.|
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| format| chaîne| requête| Le format de l'objet exporté.|
+| dossier| chaîne| requête| Le dossier de documents.|
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Pictures/GetWorksheetPicture) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

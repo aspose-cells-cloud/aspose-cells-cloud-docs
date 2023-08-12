@@ -24,7 +24,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges
 |:- |:- |:- |:- |
 | nombre| cadena| camino| nombre del libro|
 | hojaNombre| cadena| camino| nombre de la hoja de trabajo|
-| rangoOperar|| cuerpo| copydata,copystyle,copyto,copyvalue|
+| rangoOperar|| cuerpo|copydata,copystyle,copyto,copyvalue|
 | carpeta| cadena| consulta| Carpeta del libro de trabajo.|
 | NombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
  

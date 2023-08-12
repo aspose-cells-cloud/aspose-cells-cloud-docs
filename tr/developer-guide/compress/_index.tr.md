@@ -7,7 +7,7 @@ keywords: Compress excel files
 description: Aspose.Cells Cloud REST API, excel dosyalarının sıkıştırılmasını destekler. SDK, geliştirme dili türlerini destekler. Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift'i içerir
 weight: 39
 ---
-Bu REST API, bir Excel dosyasında `compress` verisini belirtir.
+Bu REST API, bir Excel dosyasında `compress` verisini gösterir.
 
 - XLS, XLSX, XLSM, XLSB, ODS'yi sıkıştırın
 - Birden çok Excel elektronik tablo dosyasını sıkıştırmanın hızlı yolu
@@ -29,7 +29,7 @@ POST https://api.aspose.cloud/v3.0/cells/compress
 | dosya| dosya| form verisi| Yüklenecek dosya|
 | Sıkıştır Seviyesi| tamsayı| sorgu||
  
- bu[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/LiteCells/PostCompress) herkesin erişebileceği bir programlama arabirimi tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+ bu[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/LightCells/PostCompress) herkesin erişebileceği bir programlama arabirimi tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
  
 Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Cloud API'e nasıl çağrı yapılacağını gösterir.
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}

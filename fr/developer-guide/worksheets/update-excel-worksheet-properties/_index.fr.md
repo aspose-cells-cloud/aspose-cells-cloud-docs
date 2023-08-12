@@ -23,8 +23,8 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
 | nom| chaîne| chemin||
 | NomFeuille| chaîne| chemin||
 | feuille|| corps||
-| dossier| chaîne| mettre en doute||
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| dossier| chaîne| requête||
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostUpdateWorksheetProperty) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

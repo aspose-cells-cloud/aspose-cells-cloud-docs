@@ -1,7 +1,7 @@
 ﻿---
 title: 在 Excel 工作表上使用自动调整
 second_title: Aspose.Cells Cloud Documen
-linktitle: Autofi
+linktitle: 奥特菲
 type: docs
 url: /zh/worksheets/autofit/
 aliases: [/autofit-rows-and-columns-of-worksheet/]
@@ -11,7 +11,7 @@ weight: 20
 ---
 ## 在 Excel 工作表上使用自动调整
 
-- [如何自动调整 Excel 工作表上的列。](/cells/zh/worksheets/autofit/column/)
-- [如何自动调整 Excel 工作表上的列。](/cells/zh/worksheets/autofit/columns/)
-- [如何自动调整 Excel 工作表上的一行。](/cells/zh/worksheets/autofit/row/)
+- [如何在 Excel 工作表上自动调整列。](/cells/zh/worksheets/autofit/column/)
+- [如何在 Excel 工作表上自动调整列。](/cells/zh/worksheets/autofit/columns/)
+- [如何在 Excel 工作表上自动调整行。](/cells/zh/worksheets/autofit/row/)
 - [如何自动调整 Excel 工作表上的行。](/cells/zh/worksheets/autofit/rows/)

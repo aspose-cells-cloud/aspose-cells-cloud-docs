@@ -25,7 +25,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/colu
 | namn| sträng| väg|Arbetsbokens namn.|
 | arknamn| sträng| väg| Kalkylbladets namn.|
 | startkolumn| heltal| fråga| Startkolumnindex som ska användas.|
-| totalt Kolumner| heltal| fråga| Antal kolumner som ska användas.|
+|totalt Kolumner| heltal| fråga| Antal kolumner som ska användas.|
 | bredd| siffra| fråga|50.0 |
 | mapp| sträng| fråga| Dokumentmappen.|
 | lagringsnamn| sträng| fråga| lagringsnamn.|

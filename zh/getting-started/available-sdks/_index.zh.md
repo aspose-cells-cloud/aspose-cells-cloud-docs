@@ -3,15 +3,15 @@ title: 可用的SDK
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/available-sdks/
-description: Aspose.Cells Cloud 支持Excel 创建、转换、合并、拆分、保护、内部对象操作等
+description: Aspose.Cells 云支持Excel创建、转换、合并、拆分、保护、内部对象操作等
 weight: 30
 ---
-## **Aspose.Cells 云 SDK**
+## **Aspose.Cells 云SDK**
 Aspose.Cells 云是面向现代 REST 的 API，可以轻松集成到现有系统中。
 ### **为什么要使用 SDK？**
-使用SDK（API客户端）是开发者加速开发的最快方式。 SDK 会处理很多发出请求和处理响应的低级细节，让您专注于编写特定于您的特定项目的代码。
-### **SDK 优势**
-我们支持的 SDK 已经过 100% 测试，开箱即用。这些 SDK 是开源的，并拥有 MIT 许可证。您可以使用它们，甚至完全免费定制它们。
+使用SDK（API客户端）是开发者加快开发速度的最快方式。 SDK 负责处理发出请求和处理响应的许多低级细节，并让您专注于编写特定于您的特定项目的代码。
+### **SDK的好处**
+我们支持的 SDK 经过 100% 测试并且开箱即用。这些 SDK 是开源的，并拥有 MIT 许可证。您可以使用它们，甚至完全免费定制它们。
 ### **支持的 SDK**
 {{< tabs tabTotal="11" tabID="1" tabName1=".NET" tabName2="Java" tabName3="PHP" tabName4="Android" tabName5="Perl" tabName6="Ruby" tabName7="Python" tabName8="Node Js" tabName9="Swift" tabName10="Go" tabName11="CPP" >}}
 

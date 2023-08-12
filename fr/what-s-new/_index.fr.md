@@ -10,6 +10,55 @@ description: Cette page décrit les nouvelles fonctionnalités Cloud Aspose.Cell
 ---
 Bienvenue dans les nouveautés de la documentation Cloud Aspose.Cells. Utilisez cette page pour trouver rapidement les dernières modifications.
 
+## Aspose.Cells Nuage 23.7
+
+ * Support pour réparer le fichier.
+* Optimiser les fonctions de conversion.
+
+
+## Aspose.Cells Nuage 23.6
+
+ * Prise en charge du verrouillage par lots de plusieurs fichiers.
+ * Prise en charge du déverrouillage par lots de plusieurs fichiers.
+ * Prise en charge de la protection par lots de plusieurs fichiers.
+ * Prise en charge de plusieurs fichiers fractionnés par lots.
+ Correction de l'API de propriété du document mis.
+
+
+## Aspose.Cells Nuage 23,5
+
+ * Correction de quelques méthodes mal orthographiées.
+
+
+## Aspose.Cells Nuage 23.4
+
+ * Prend en charge l'importation et l'exportation de données XML.
+
+
+## Aspose.Cells Nuage 23.3
+
+ * Optimiser les propriétés du lien hypertexte.
+
+
+## Aspose.Cells Nuage 23.2
+
+ * Optimiser remplacer API.
+* Optimiser l'interface utilisateur Swagger.
+
+
+
+
+## Aspose.Cells Nuage 23.1
+
+ * Correction du bogue pour la méthode PostCellCharacters.
+
+
+
+## Aspose.Cells Nuage 22.12
+
+ * Soutenir le fonctionnement de l'axe du graphique.
+
+
 ## Aspose.Cells Nuage 22.11
 
  * Ajouter une nouvelle API pour convertir en JSON.
@@ -25,14 +74,14 @@ Bienvenue dans les nouveautés de la documentation Cloud Aspose.Cells. Utilisez
 
 ## Aspose.Cells Nuage 22.9
 
- Prend en charge l'exportation de la page vers un autre fichier de format.
+ * Prend en charge l'exportation de la page vers un autre fichier de format.
  * Ajouter une nouvelle API pour convertir en pdf.
  * Ajouter une nouvelle API pour convertir en png.
  * Ajouter une nouvelle API pour convertir en docx.
 
 ## Aspose.Cells Nuage 22.8
 
-* Prise en charge de la transposition des lignes Excel en colonnes.
+Prise en charge de la transposition des lignes Excel en colonnes.
 
 ## Aspose.Cells Nuage 22.7
 
@@ -56,6 +105,6 @@ Bienvenue dans les nouveautés de la documentation Cloud Aspose.Cells. Utilisez
 
 ## Aspose.Cells Nuage 22.3
 
-[Ajouter un nouveau API sur la construction de la spécification codegen.](https://api.aspose.cloud/v3.0/cells/codegen/spec)
+* [Ajouter un nouveau API sur la construction de la spécification codegen.](https://api.aspose.cloud/v3.0/cells/codegen/spec)
 * [Prise en charge de l'ajout d'une signature numérique pour Aspose.Cells Cloud.](/cells/workbook/digital-signature/)
 

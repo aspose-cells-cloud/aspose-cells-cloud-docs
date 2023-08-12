@@ -22,7 +22,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clea
 | räckvidd| sträng| fråga| Räckvidden.|
 | startRow| heltal| fråga| Startraden.|
 | startkolumn| heltal| fråga| Startkolumnen.|
-| endRow| heltal| fråga|Den sista raden.|
+| endRow| heltal| fråga| Den sista raden.|
 | slutkolumn| heltal| fråga| Slutkolumnen.|
 | mapp| sträng| fråga| Arbetsboksmappen.|
 | lagringsnamn| sträng| fråga| lagringsnamn.|

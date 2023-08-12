@@ -1,5 +1,5 @@
 ﻿---
-title: eliminar
+title: Eliminar
 type: docs
 url: /es/comments/delete/
 aliases: [/delete-a-comment-in-a-worksheet/]
@@ -7,7 +7,7 @@ keywords: REST API, spreadsheets, excel, delete a commen
 description: "Cells.Cloud API para Excel operar: eliminar un comentario"
 weight: 40
 ---
-Este REST API indica Eliminar el comentario de celda de la hoja de cálculo.
+Este REST API indica Eliminar el comentario de celda de la hoja de trabajo.
  
 ## RESET API
  

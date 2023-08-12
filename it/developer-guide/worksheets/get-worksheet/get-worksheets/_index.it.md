@@ -23,7 +23,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets
 | Nome parametro| Tipo| Percorso/Stringa di query/HTTPBody|Descrizione|
 |:- |:- |:- |:- |
 | nome| corda| sentiero| Nome del documento.|
-| cartella| corda| domanda|Cartella documenti.|
+| cartella| corda| domanda| Cartella documenti.|
 | storageName| corda| domanda| nome di archiviazione.|
  
  IL[Specifica OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheets) definisce un'interfaccia di programmazione accessibile pubblicamente e consente di eseguire interazioni REST direttamente da un browser web.

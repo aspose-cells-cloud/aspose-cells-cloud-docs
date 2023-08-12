@@ -1,7 +1,7 @@
 ﻿---
 title: Définir l'arrière-plan sur une feuille de calcul Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: Publicité
+linktitle: Annonce
 type: docs
 url: /fr/worksheets/background/add/
 aliases: [/set-background-or-watermark-for-excel-worksheet/]
@@ -25,8 +25,8 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/background
 | nom| chaîne| chemin||
 | NomFeuille| chaîne| chemin||
 | png|| corps||
-| dossier| chaîne| mettre en doute||
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| dossier| chaîne| requête||
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PutWorksheetBackground) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

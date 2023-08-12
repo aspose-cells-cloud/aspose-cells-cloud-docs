@@ -6,7 +6,7 @@ url: /fr/getting-started/
 description: Aspose.Cells Cloud prend en charge Excel pour créer, convertir, fusionner, diviser, protéger, opération d'objet interne, etc.
 weight: 10
 ---
-Cette mise en route fournit cette introduction aux fondamentaux du Cloud Aspose.Cells. Pour les nouveaux utilisateurs de Aspose.Cells Cloud, c'est le moyen le plus rapide d'apprendre les exigences et les fonctionnalités de base et de commencer.
+Cette mise en route fournit cette introduction aux fondamentaux du Cloud Aspose.Cells. Pour les nouveaux utilisateurs de Aspose.Cells Cloud, c'est le moyen le plus rapide d'apprendre les exigences et les capacités de base et de commencer.
 
 Pour en savoir plus sur Aspose.Cells Cloud, sélectionnez la rubrique appropriée :
 

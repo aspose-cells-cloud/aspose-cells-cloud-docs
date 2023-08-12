@@ -22,7 +22,7 @@ PUT http://api.aspose.cloud/v3.0/cells/storage/file/{path}
 |:- |:- |:- |:- |
 | chemin| chaîne| chemin| Chemin où télécharger, y compris le nom de fichier et l'extension, par exemple /file.ext ou /Folder 1/file.ext Si le contenu est en plusieurs parties et que le chemin ne contient pas le nom de fichier, il essaie de les obtenir à partir du paramètre de nom de fichier de l'en-tête Content-Disposition.|
 | déposer| Déposer| Données de formulaire| Fichier à uploader|
-| nom_stockage| chaîne| mettre en doute| Nom de stockage|
+| nom_stockage| chaîne| requête| Nom de stockage|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/File/UploadFile) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

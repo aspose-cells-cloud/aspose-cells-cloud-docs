@@ -21,9 +21,9 @@ PUT http://api.aspose.cloud/v3.0/cells/storage/folder/copy/{srcPath}
 | Le nom du paramètre| Taper| Chemin/chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | srcPath| chaîne| chemin| Chemin du dossier source, par exemple '/src'|
-| cheminDest| chaîne| mettre en doute| Chemin du dossier de destination, par exemple '/dst'|
-| srcStorageName| chaîne| mettre en doute| Nom du stockage source|
-| destStorageName| chaîne| mettre en doute| Nom du stockage de destination|
+| cheminDest| chaîne| requête| Chemin du dossier de destination, par exemple '/dst'|
+| srcStorageName| chaîne| requête| Nom du stockage source|
+| destStorageName| chaîne| requête| Nom du stockage de destination|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Folder/CopyFolder) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

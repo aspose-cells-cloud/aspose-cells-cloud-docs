@@ -27,12 +27,12 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts
 | LowerRightColumn| numero intero| domanda|0 |
 | la zona| corda| domanda| Specifica i valori da cui tracciare la serie di dati.|
 | èVerticale| booleano| domanda| VERO|
-|categoriaDati| corda| domanda| Ottiene o imposta l'intervallo dei valori della categoria Axis. Può essere un intervallo di celle (come "d1:e10").|
+| categoriaDati| corda| domanda| Ottiene o imposta l'intervallo dei valori della categoria Axis. Può essere un intervallo di celle (come "d1:e10").|
 | isAutoGetSerialName| booleano| domanda| VERO|
 | titolo| corda| domanda| Specifica il nome del titolo del grafico.|
 | cartella| corda| domanda| La cartella della cartella di lavoro.|
 | storageName| corda| domanda| nome di archiviazione.|
-| dataLabels| booleano| domanda| VERO|
+|dataLabels| booleano| domanda| VERO|
 | dataLabelsPosition| corda| domanda| Sopra|
 | pivotTableSheet| corda| domanda||
 | pivotTableName| corda| domanda||

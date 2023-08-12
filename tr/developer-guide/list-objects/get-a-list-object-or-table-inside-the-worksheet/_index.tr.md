@@ -1,7 +1,7 @@
 ﻿---
 title: Excel çalışma sayfasında bir liste nesnesi alın
 second_title: Aspose.Cells Cloud Documen
-linktitle: ge
+linktitle: Ge
 type: docs
 url: /tr/list-objects/get/
 aliases: [/get-a-list-object-or-table-inside-the-worksheet/,/tables/get/]

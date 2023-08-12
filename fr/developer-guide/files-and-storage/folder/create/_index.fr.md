@@ -21,7 +21,7 @@ PUT http://api.aspose.cloud/v3.0/cells/storage/folder/{path}
 | Le nom du paramètre| Taper| Chemin/chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | chemin| chaîne| chemin|Chemin du dossier à créer par exemple 'dossier_1/dossier_2/' |
-| nom_stockage| chaîne| mettre en doute| Nom de stockage|
+| nom_stockage| chaîne| requête| Nom de stockage|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Folder/CreateFolder) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

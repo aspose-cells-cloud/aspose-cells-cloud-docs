@@ -1,19 +1,19 @@
 ﻿---
-title: Arbeiten mit CellsObjectOperate-Tas
+title: Arbeiten mit CellsObjectOperate Tas
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/tasks/cells-object-operate/
 aliases: [/working-with-cellsobjectoperate-task/]
-description: "Cells.Cloud API für Excel Operate: Cells Object Operate Task"
+description: "Cells.Cloud API für Excel Operate: Zellenobjekt-Operate-Task"
 weight: 20
 ---
-Dieses REST API betreibt Zellenobjekt `task`.
+Dieses REST API betreibt das Zellenobjekt `task`.
 
 **OperateObject**
 
 |Parametername|Typ|Beschreibung|
 |:- |:- |:- |
-| OperateObjectType| Schnur| Workbook/Worksheet/PageSetup/Cells/Chart/Shape/ListObject/PivotTable/WorkbookSettings/PageBreak|
+| OperateObjectType| Zeichenfolge| Workbook/Worksheet/PageSetup/Cells/Chart/Shape/ListObject/PivotTable/WorkbookSettings/PageBreak|
 | OperateObjectPosition| Objekt||
 
 **OperateObjectPosition**
@@ -21,10 +21,10 @@ Dieses REST API betreibt Zellenobjekt `task`.
 |Parametername|Typ|Beschreibung|
 |:- |:- |:- |
 | Arbeitsmappe| Objekt||
-| Blattname| Schnur||
+| Blattname| Zeichenfolge||
 | ChartIndex| ganze Zahl||
 | ShapeIndex| ganze Zahl||
-| Zellenname| Schnur||
+| Zellenname| Zeichenfolge||
 | ListObjectIndex| ganze Zahl||
 
 
@@ -33,28 +33,28 @@ Dieses REST API betreibt Zellenobjekt `task`.
 |Parametername|Typ|Beschreibung|
 |:- |:- |:- |
 | ChartIndex| ganze Zahl||
-| Diagramm Typ| Schnur||
-| ObereLinkeReihe| ganze Zahl||
+| Diagramm Typ| Zeichenfolge||
+| UpperLeftRow| ganze Zahl||
 |UpperLeftColumn| ganze Zahl||
 | LowerRightRow| ganze Zahl||
 | LowerRightColumn| ganze Zahl||
-| Bereich| Schnur||
-| IstVertikal| Schnur| wahr falsch|
-| Kategoriedaten| Schnur||
-| IsAutoGetSerialName| Schnur| wahr falsch|
+| Bereich| Zeichenfolge||
+| IsVertical| Zeichenfolge| wahr falsch|
+| Kategoriedaten| Zeichenfolge||
+| IsAutoGetSerialName| Zeichenfolge| wahr falsch|
 | Bereich| Titel||
 
 **ListObjectOperateParameter** 
 
 |Parametername|Typ|Beschreibung|
 |:- |:- |:- |
-| Listenobjekt| Objekt||
+| ListObject| Objekt||
 
 **PageBreakOperateParameter**
 
 |Parametername|Typ|Beschreibung|
 |:- |:- |:- |
-| Seitenumbruchtyp| Schnur||
+| PageBreakType| Zeichenfolge||
 | Index| Index||
 | Reihe| ganze Zahl||
 | Spalte| ganze Zahl||
@@ -73,10 +73,10 @@ Dieses REST API betreibt Zellenobjekt `task`.
 
 |Parametername|Typ|Beschreibung|
 |:- |:- |:- |
-| Zielzellenname| Schnur||
-| Quelldaten| Schnur||
-| Tabellenname| Schnur||
-| Verwenden Sie die gleiche Quelle| Schnur| wahr falsch|
+| Zielzellenname| Zeichenfolge||
+| Quelldaten| Zeichenfolge||
+| Tabellenname| Zeichenfolge||
+| UseSameSource| Zeichenfolge| wahr falsch|
 | PivotTableIndex| ganze Zahl||
 | PivotFieldRows|ganze Zahl[]||
 | PivotFieldColumns|ganze Zahl[]||
@@ -103,16 +103,16 @@ Dieses REST API betreibt Zellenobjekt `task`.
 
 |Parametername|Typ|Beschreibung|
 |:- |:- |:- |
-| Name| Schnur||
-| Blatttyp| Schnur||
-| Neuer Name| Schnur||
+| Name| Zeichenfolge||
+| SheetType| Zeichenfolge||
+| Neuer Name| Zeichenfolge||
 | Umzugsanfrage| Objekt||
 
 ## REST API
 
-|**API**|**Typ**|**Beschreibung**|**Ressourcen-Link**|
+|**API**|**Typ**|**Beschreibung**|**Ressourcenlink**|
 |:- |:- |:- |:- |
 |/cells/task/runtask|POST|Aufgabe ausführen|[PostRunTask](https://apireference.aspose.cloud/cells/#/Task/PostRunTask)|
 
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData) definiert eine öffentlich zugängliche Programmierschnittstelle und lässt Sie REST-Interaktionen direkt von einem Webbrowser ausführen.
+ Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht die Durchführung von REST-Interaktionen direkt über einen Webbrowser.
 

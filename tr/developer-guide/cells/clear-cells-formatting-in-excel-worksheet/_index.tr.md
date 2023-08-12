@@ -22,7 +22,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clea
 | menzil| sicim| sorgu| Menzil.|
 | başlangıç satırı| tamsayı| sorgu| Başlangıç satırı.|
 | başlangıç sütunu| tamsayı| sorgu| Başlangıç sütunu.|
-| son satır| tamsayı| sorgu|Bitiş sırası.|
+| son satır| tamsayı| sorgu| Bitiş sırası.|
 | son sütun| tamsayı| sorgu| Bitiş sütunu.|
 | dosya| sicim| sorgu| Çalışma kitabı klasörü.|
 | depolamaAdı| sicim| sorgu| depolama adı.|

@@ -1,7 +1,7 @@
 ﻿---
 title: Ajouter une forme sur une feuille de calcul Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: Publicité
+linktitle: Annonce
 type: docs
 url: /fr/shapes/add/
 aliases: [/add-a-shape-inside-the-worksheet/]
@@ -25,15 +25,15 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes
 | nom| chaîne| chemin| Nom du document.|
 | NomFeuille| chaîne| chemin| nom de la feuille de calcul.|
 | formeDTO|| corps||
-| dessinType| chaîne| mettre en doute| type d'objet forme|
-| upperLeftRow| entier| mettre en doute| Index de ligne en haut à gauche.|
-| UpperLeftColumn| entier| mettre en doute| Index de la colonne en haut à gauche.|
-| haut| entier| mettre en doute| Représente le décalage vertical de Spinner par rapport à sa ligne de gauche, en unité de pixel.|
-| gauche| entier| mettre en doute| Représente le décalage horizontal de Spinner par rapport à sa colonne de gauche, en unité de pixel.|
-| largeur| entier| mettre en doute| Représente la hauteur de Spinner, en unité de pixel.|
-| hauteur| entier| mettre en doute| Représente la largeur de Spinner, en unité de pixel.|
-| dossier| chaîne| mettre en doute| Dossier du document.|
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| dessinType| chaîne| requête| type d'objet forme|
+| upperLeftRow| entier| requête| Index de ligne en haut à gauche.|
+| UpperLeftColumn| entier| requête| Index de la colonne en haut à gauche.|
+| haut| entier| requête| Représente le décalage vertical de Spinner par rapport à sa ligne de gauche, en unité de pixel.|
+| gauche| entier| requête| Représente le décalage horizontal de Spinner par rapport à sa colonne de gauche, en unité de pixel.|
+| largeur| entier| requête| Représente la hauteur de Spinner, en unité de pixel.|
+| hauteur| entier| requête| Représente la largeur de Spinner, en unité de pixel.|
+| dossier| chaîne| requête| Dossier du document.|
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Shapes/PutWorksheetShape) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

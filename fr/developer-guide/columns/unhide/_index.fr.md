@@ -24,11 +24,11 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/colu
 |:- |:- |:- |:- |
 | nom| chaîne| chemin|Le nom du classeur.|
 | NomFeuille| chaîne| chemin| Le nom de la feuille de calcul.|
-| colonne de départ| entier| mettre en doute| Index de colonne de début à utiliser.|
-| totalColonnes| entier| mettre en doute| Nombre de colonnes à opérer.|
-| largeur| nombre| mettre en doute|50.0 |
-| dossier| chaîne| mettre en doute| Le dossier de documents.|
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| colonne de départ| entier| requête| Index de colonne de début à utiliser.|
+|totalColonnes| entier| requête| Nombre de colonnes à opérer.|
+| largeur| nombre| requête|50.0 |
+| dossier| chaîne| requête| Le dossier de documents.|
+| nom_stockage| chaîne| requête| nom de stockage.|
 
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostUnhideWorksheetColumns) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
 

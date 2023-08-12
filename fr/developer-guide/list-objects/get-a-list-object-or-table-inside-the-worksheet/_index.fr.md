@@ -25,9 +25,9 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects
 | nom| chaîne| chemin| Nom du document.|
 | NomFeuille| chaîne| chemin| Le nom de la feuille de calcul.|
 | listobjectindex| entier| chemin| liste d'index d'objets.|
-| format| chaîne| mettre en doute| format d'exportation.|
-| dossier| chaîne| mettre en doute| Dossier du document.|
-| nom_stockage| chaîne| mettre en doute| nom de stockage.|
+| format| chaîne| requête| format d'exportation.|
+| dossier| chaîne| requête| Dossier du document.|
+| nom_stockage| chaîne| requête| nom de stockage.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/ListObjects/GetWorksheetListObject) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

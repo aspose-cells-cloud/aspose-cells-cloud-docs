@@ -9,7 +9,7 @@ keywords: Delete rows on an Excel workshee
 description: Aspose.Cells Cloud REST API 支持删除 Excel 工作表上的行。 SDK支持多种开发语言。它们包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 swift
 weight: 80
 ---
-此 REST API 指示删除 Excel 工作表上的一行。
+此 REST API 表示删除 Excel 工作表上的一行。
  
 ## RSET API
  
@@ -23,14 +23,14 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/ro
 |参数名称|类型|路径/查询字符串/HTTPBody|描述|
 |:- |:- |:- |:- |
 |姓名|细绳|小路|工作簿名称。|
-|工作表名称|细绳|小路|工作表好了。|
+|工作表名称|细绳|小路|工作表呀。|
 |行索引|整数|小路|行索引。|
 |文件夹|细绳|询问|文档文件夹。|
 |存储名称|细绳|询问|存储名称。|
  
-这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetRow)定义了一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+这[开放API规范](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetRow)定义了一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
  
-您可以使用 cURL 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例显示如何使用 cURL 调用 Cloud API。
+您可以使用cURL命令行工具轻松访问Aspose.Cells Web服务。以下示例展示如何使用 cURL 呼叫云端 API。
  
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
  
@@ -62,23 +62,23 @@ curl -v "http://api.aspose.cloud/v3.0/cells/" \
  
 {{< /tabs >}}
  
-## 云 SDK 系列
+## 云SDK系列
  
-使用 SDK 是加速开发的最佳方式。 SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 仓库](https://github.com/aspose-cells-cloud)有关 Aspose.Cells Cloud SDK 的完整列表。
+使用 SDK 是加快开发速度的最佳方式。 SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)有关 Aspose.Cells Cloud SDK 的完整列表。
  
-以下代码示例演示如何使用各种 SDK 调用 Aspose.Cells Web 服务：
+以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
  
  
  
 
 ## **介绍**
-此示例说明如何在您的应用程序中使用 Aspose.Cells Cloud API 从 Excel 工作表中删除一行。您可以将我们的 REST API 与任何语言一起使用：.NET、Java、PHP、Ruby、Rails、Python、jQuery 等等。
+此示例演示如何在应用程序中使用 Aspose.Cells Cloud API 从 Excel 工作表中删除行。您可以将我们的 REST API 与任何语言一起使用：.NET、Java、PHP、Ruby、Rails、Python、jQuery 等等。
 
-## **API 资料**
+## **API 信息**
 
 |**API**|**类型**|**描述**|**资源链接**|
 |:- |:- |:- |:- |
-|/cells/{name}/worksheets/{sheetName}/cells/rows|邮政|从 Excel 工作表中删除行|[删除工作表行](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetRows)|
+|/单元格/{名称}/工作表/{sheetName}/单元格/行|邮政|从 Excel 工作表中删除行|[删除工作表行](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetRows)|
 ### **cURL 示例**
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
@@ -110,8 +110,8 @@ curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/
 
 {{< /tabs >}}
 ## **SDK源码**
-可以从以下页面下载 Aspose.Cells Cloud SDK：[可用的 SDK](/cells/zh/available-sdks/)
-### **开发工具包范例**
+Aspose.Cells Cloud SDK可以从以下页面下载：[可用的 SDK](/cells/zh/available-sdks/)
+### **SDK示例**
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}

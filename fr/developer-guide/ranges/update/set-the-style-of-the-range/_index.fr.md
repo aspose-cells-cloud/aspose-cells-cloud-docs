@@ -11,7 +11,7 @@ weight: 70
 ---
 ## **Introduction**
 Cet exemple vous permet de définir le style de la plage, en utilisant Aspose.Cells Cloud API dans vos applications. Vous pouvez utiliser notre REST API avec n'importe quelle langue : .NET, Java, PHP, Ruby, Rails, Python, jQuery et bien d'autres.
-## **API Renseignements**
+## **API Informations**
 
 |**API**|**Taper**|**Description**|**Lien vers la ressource**|
 |:- |:- |:- |:- |

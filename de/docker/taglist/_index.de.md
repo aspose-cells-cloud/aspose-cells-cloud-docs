@@ -8,20 +8,25 @@ weight: 30
 ---
 ##  Windows Server 2016-Bilder ##
 
- Stichworte | Architektur | Dockerfile
+Schlagworte | Architektur | Docker-Datei | Anmerkung
 ---|:--:|:--:|---:
-ltsc2016.23.2.0 | x64 | Kein Dockerfile
+ltsc2016.23.5.0 | x64 | Keine Docker-Datei | Stoppen Sie das Upgrade. Die endgültige Version ist 23.5.0
 
 
-## Windows Server 2019-Bilder ##
+##  Windows Server 2019-Bilder ##
 
- Stichworte | Architektur | Dockerfile
+Schlagworte | Architektur | Docker-Datei | Anmerkung
 ---|:--:|:--:|---:
-ltsc2019.23.2.0 | x64 | Kein Dockerfile
+ltsc2019.23.7.0 | x64 | Keine Docker-Datei |
 
+##  Windows Server 2022 Bilder ##
+
+Schlagworte | Architektur | Docker-Datei | Anmerkung
+---|:--:|:--:|---:
+ ltsc2022.23.7.0 | x64 | Keine Docker-Datei |
 
 ##  Linux-Images ##
 
- Stichworte | Architektur | Dockerfile
+Schlagworte | Architektur | Docker-Datei | Anmerkung
 ---|:--:|:--:|---:
-linux.23.2.0 | x64 | Kein Dockerfile
+linux.23.7.0 | x64 | Keine Docker-Datei |

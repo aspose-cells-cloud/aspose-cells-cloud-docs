@@ -1,5 +1,5 @@
 ﻿---
-title:  Obtenir l'axe de la deuxième catégorie du graphique
+title: Obtenir l'axe de la deuxième catégorie du graphique
 type: docs
 url: /fr/charts/second-category-axis/get/
 weight: 60
@@ -20,8 +20,8 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{cha
 | nom| chaîne| chemin||
 | NomFeuille| chaîne| chemin||
 | graphiqueIndex| entier| chemin||
-| dossier| chaîne| mettre en doute||
-| nom_stockage| chaîne| mettre en doute||
+| dossier| chaîne| requête||
+| nom_stockage| chaîne| requête||
  
  Copie de l'axe de la deuxième catégorie du graphique cible[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Charts/GetChartSecondCategoryAxis) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
  
