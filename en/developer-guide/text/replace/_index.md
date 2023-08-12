@@ -29,7 +29,7 @@ The request parameters are:
 | password | string | query |   |
 | sheetname | string | query |   |
  
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LiteCells/PostReplace) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostReplace) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
  
 You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}

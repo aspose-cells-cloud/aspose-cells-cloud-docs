@@ -30,7 +30,7 @@ The request parameters are:
 | file | file | formData | File to upload |
 | CompressLevel | integer | query |   |
  
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LiteCells/PostCompress) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostCompress) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
  
 You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}

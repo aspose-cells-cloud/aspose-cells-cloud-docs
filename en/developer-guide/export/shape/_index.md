@@ -16,10 +16,10 @@ You can export formats:  [PNG](https://docs.fileformat.com/Image/png/), [GIF](ht
 
 |**API**|**Type**|**Description**|**Swagger Link**|
 | :- | :- | :- | :- |
-|/cells/export|PUT|Export excel objects from request content to some format|[PostExport](https://apireference.aspose.cloud/cells/#/LiteCells/PostExport)|
+|/cells/export|PUT|Export excel objects from request content to some format|[PostExport](https://apireference.aspose.cloud/cells/#/LightCells/PostExport)|
 
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LiteCells/PostExport) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. 
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. 
 
 You can use **cURL** command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
 
@@ -221,7 +221,7 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LiteCells-Export-shape-tiff.php" >}}
+{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LightCells-Export-shape-tiff.php" >}}
 
 {{< /tab >}}
 

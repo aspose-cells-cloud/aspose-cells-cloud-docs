@@ -65,11 +65,11 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/
-Aspose.Cells.Cloud.SDK.Api.LiteCellsApi liteCellsApi = new Aspose.Cells.Cloud.SDK.Api.LiteCellsApi("your client id", "your client secret");
+Aspose.Cells.Cloud.SDK.Api.LightCellsApi LightCellsApi = new Aspose.Cells.Cloud.SDK.Api.LightCellsApi("your client id", "your client secret");
 IDictionary<string, Stream> mapFiles = new Dictionary<string, Stream>();
 mapFiles.Add("assemblytest.xlsx", File.OpenRead(@".\TestData\assemblytest.xlsx"));
 mapFiles.Add("datasource.xlsx", File.OpenRead(@".\TestData\datasource.xlsx"));
-Aspose.Cells.Cloud.SDK.Model.FilesResult filesResult = liteCellsApi.PostExport(files, "Workbook", "pdf");
+Aspose.Cells.Cloud.SDK.Model.FilesResult filesResult = LightCellsApi.PostExport(files, "Workbook", "pdf");
 Assert.IsNotNull(filesResult);
 
 
@@ -82,7 +82,7 @@ Assert.IsNotNull(filesResult);
 ```java
 // For complete examples and data files, please go to https://github.com/aspose-cells-cloud/aspose-cells-cloud-java/
 try{
-    LiteCellsApi liteApi = new LiteCellsApi(System.getenv("CellsCloudTestClientId"),System.getenv("CellsCloudTestClientSecret"));
+    LightCellsApi liteApi = new LightCellsApi(System.getenv("CellsCloudTestClientId"),System.getenv("CellsCloudTestClientSecret"));
     String AssemblyTestXlsx = "assemblytest.xlsx";
     String DataSourceXlsx = "datasource.xlsx";
     HashMap<String,File> fileMap = new HashMap<String,File>();
@@ -100,7 +100,7 @@ try{
 
 ```go
 // For complete examples and data files, please go to https://github.com/aspose-cells-cloud/aspose-cells-cloud-go/
-LiteCellsAPI := NewLiteCellsApiService(clientId, clientSecret)
+LightCellsAPI := NewLightCellsApiService(clientId, clientSecret)
 
 var fileMap map[string]string
 fileMap = make(map[string]string)
@@ -109,7 +109,7 @@ fileMap["Book2.xlsx"] = "TestData\\Book2.xlsx"
 postOpts := new(PostExportOpts)
 postOpts.Format = "pdf"
 postOpts.ObjectType = "workbook"
-_, httpResponse, err := LiteCellsAPI.PostExport(fileMap, postOpts)
+_, httpResponse, err := LightCellsAPI.PostExport(fileMap, postOpts)
 if err != nil {
 	t.Error(err)
 } else if httpResponse.StatusCode < 200 || httpResponse.StatusCode > 299 {

@@ -27,7 +27,7 @@ The request parameters are:
 | password | string | query |   |
 | sheetname | string | query |   |
  
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LiteCells/PostSearch) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostSearch) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
  
 You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
  
@@ -206,7 +206,7 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LiteCells-Search.php" >}}
+{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-LightCells-Search.php" >}}
 
 {{< /tab >}}
 
@@ -236,7 +236,7 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{< /tab >}}
 {{< tab tabNum="9" >}}
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "LiteCellsSearch.py" >}}
+{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "LightCellsSearch.py" >}}
 {{< /tab >}}
 
 {{< /tabs >}}
