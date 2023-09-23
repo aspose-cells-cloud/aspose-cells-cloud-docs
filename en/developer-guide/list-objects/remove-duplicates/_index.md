@@ -1,19 +1,11 @@
 ---
-title: "Get a list object in an Excel worksheet"
-second_title: "Aspose.Cells Cloud Document"
-linktitle: "Get"
-type: docs
-url: /list-objects/get/
-aliases: [/get-a-list-object-or-table-inside-the-worksheet/,/tables/get/]
-keywords: "Get a list object(table) into an Excel worksheet."
-description: "Aspose.Cells Cloud REST API support getting a list object(table) into an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
-weight: 9
-
 title: List object remove duplicates 
 second_title: "Aspose.Cells Cloud Document"
-linktitle: "remove duplicates"
-description: Remove duplicates on list object. 
+linktitle: "Remove duplicates"
+type: docs
+keywords: "list object(table) remove duplicates ."
 url: /list-objects/remove-duplicates/
+description: Remove duplicates on list object. 
 weight: 20
 ---
 
