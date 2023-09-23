@@ -1,7 +1,11 @@
 ---
 title: List object remove duplicates 
-description: Remove duplicates on list object. 
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "Remove duplicates"
+type: docs
+keywords: "list object(table) remove duplicates ."
 url: /list-objects/remove-duplicates/
+description: Remove duplicates on list object. 
 weight: 20
 ---
 

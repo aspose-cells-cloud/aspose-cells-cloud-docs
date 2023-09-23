@@ -1,7 +1,11 @@
 ---
 title: Range Sort 
-description: Sets outline border around a range of cells. 
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "Range Sort"
+type: docs
+keywords: "Range Sort."
 url: /ranges/sort/
+description: Sets outline border around a range of cells. 
 weight: 20
 ---
 

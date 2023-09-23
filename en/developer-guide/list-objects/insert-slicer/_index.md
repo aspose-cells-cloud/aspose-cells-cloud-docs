@@ -1,7 +1,11 @@
 ---
 title: List object insert slicer 
-description: Insert slicer for list object. 
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "Insert slicer"
+type: docs
+keywords: "Insert slicer for list object."
 url: /list-objects/insert-slicer/
+description: Insert slicer for list object. 
 weight: 20
 ---
 
