@@ -23,7 +23,7 @@ Aspose.Cells Cloud API är ett utmärkt verktyg för utvecklare på alla nivåer
 ## Hur använder man Aspose.Cells Cloud API?
 
 - [Registrera ett Aspose Cloud-konto](https://id.containerize.com/signup) och[skaffa en API nyckel för autentisering](https://dashboard.aspose.cloud/applications)
--  Installera SDK:er på olika utvecklingsspråk baserat på utvecklarnas behov, eller utveckla SDK:er enligt[API referenser](https://reference.aspose.cloud/cells/) tillhandahålls av Aspose.Cells Cloud.
+- Installera SDK:er på olika utvecklingsspråk baserat på utvecklarnas behov, eller utveckla SDK:er enligt[API referenser](https://reference.aspose.cloud/cells/) tillhandahålls av Aspose.Cells Cloud.
 - Skapa en API-förfrågan och ring API.
 
 
