@@ -1,7 +1,11 @@
 ﻿---
 title:  Ordinamento intervallo
-description:  Imposta il bordo del contorno attorno a un intervallo di celle.
+second_title: Aspose.Cells Cloud Documen
+linktitle: Sor
+type: docs
+keywords: Range Sort
 url: /it/ranges/sort/
+description:  Imposta il bordo del contorno attorno a un intervallo di celle.
 weight: 20
 ---
 Questo REST API indica l'ordinamento dell'intervallo.

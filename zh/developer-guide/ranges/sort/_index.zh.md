@@ -1,7 +1,11 @@
 ﻿---
 title: 范围排序
-description: 设置一系列单元格周围的轮廓边框。
+second_title: Aspose.Cells Cloud Documen
+linktitle: 索尔
+type: docs
+keywords: Range Sort
 url: /zh/ranges/sort/
+description: 设置一系列单元格周围的轮廓边框。
 weight: 20
 ---
 这个REST API表示范围排序。

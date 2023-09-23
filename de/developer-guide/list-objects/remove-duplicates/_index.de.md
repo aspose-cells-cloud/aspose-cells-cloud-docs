@@ -1,7 +1,11 @@
 ﻿---
 title:  Listenobjekt entfernt Duplikate
-description:  Entfernen Sie Duplikate im Listenobjekt.
+second_title: Aspose.Cells Cloud Documen
+linktitle: Duplikat entfernen
+type: docs
+keywords: list object(table) remove duplicates 
 url: /de/list-objects/remove-duplicates/
+description:  Entfernen Sie Duplikate im Listenobjekt.
 weight: 20
 ---
  Dieser REST API gibt an, Duplikate für das Listenobjekt zu entfernen.

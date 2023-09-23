@@ -1,7 +1,11 @@
 ﻿---
 title:  Nesne ekleme dilimleyiciyi listele
-description:  Liste nesnesi için dilimleyiciyi ekleyin.
+second_title: Aspose.Cells Cloud Documen
+linktitle: Dilim ekle
+type: docs
+keywords: Insert slicer for list object
 url: /tr/list-objects/insert-slicer/
+description:  Liste nesnesi için dilimleyiciyi ekleyin.
 weight: 20
 ---
  Bu REST API, Excel çalışma sayfasındaki liste nesnesi için dilimleyici eklemeyi belirtir.

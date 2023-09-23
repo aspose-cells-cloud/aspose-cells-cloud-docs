@@ -1,7 +1,11 @@
 ﻿---
 title:  Listobjekt ta bort dubbletter
-description:  Ta bort dubbletter på listobjekt.
+second_title: Aspose.Cells Cloud Documen
+linktitle: Ta bort dubblett
+type: docs
+keywords: list object(table) remove duplicates 
 url: /sv/list-objects/remove-duplicates/
+description:  Ta bort dubbletter på listobjekt.
 weight: 20
 ---
  Denna REST API indikerar att ta bort dubbletter på listobjekt.

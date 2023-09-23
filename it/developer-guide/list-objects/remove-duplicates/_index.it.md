@@ -1,7 +1,11 @@
 ﻿---
 title:  L'oggetto elenco rimuove i duplicati
-description:  Rimuovi i duplicati sull'oggetto dell'elenco.
+second_title: Aspose.Cells Cloud Documen
+linktitle: Rimuovi duplicato
+type: docs
+keywords: list object(table) remove duplicates 
 url: /it/list-objects/remove-duplicates/
+description:  Rimuovi i duplicati sull'oggetto dell'elenco.
 weight: 20
 ---
  Questo REST API indica la rimozione dei duplicati sull'oggetto dell'elenco.

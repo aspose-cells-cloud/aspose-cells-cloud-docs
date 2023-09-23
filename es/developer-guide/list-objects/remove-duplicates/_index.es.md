@@ -1,7 +1,11 @@
 ﻿---
 title:  Objeto de lista eliminar duplicados
-description:  Eliminar duplicados en el objeto de la lista.
+second_title: Aspose.Cells Cloud Documen
+linktitle: Eliminar duplicado
+type: docs
+keywords: list object(table) remove duplicates 
 url: /es/list-objects/remove-duplicates/
+description:  Eliminar duplicados en el objeto de la lista.
 weight: 20
 ---
  Este REST API indica eliminar duplicados en el objeto de la lista.

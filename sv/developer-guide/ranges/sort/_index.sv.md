@@ -1,7 +1,11 @@
 ﻿---
 title:  Range Sortera
-description:  Anger konturkant runt ett cellintervall.
+second_title: Aspose.Cells Cloud Documen
+linktitle: Sor
+type: docs
+keywords: Range Sort
 url: /sv/ranges/sort/
+description:  Anger konturkant runt ett cellintervall.
 weight: 20
 ---
 Denna REST API indikerar intervallsortering.

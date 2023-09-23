@@ -1,51 +1,51 @@
 ﻿---
-title: How to protect file through Aspose.Cells Clou
+title: 如何通过Aspose.Cells Clou保护文件
 type: docs
 url: /zh/how-to-protect-file
-description: How to protect file through Aspose.Cells Cloud
+description: 如何通过Aspose.Cells云保护文件
 weight: 10
 ---
-## Introduction
+## 介绍
 
-The Aspose.Cells Cloud API is a potent cloud-based solution crafted for the creation, editing, and conversion of spreadsheet files. In this article, we will walk you through the process of using the Aspose.Cells Cloud API for file protection, including typical use cases and example code.
+Aspose.Cells Cloud API 是一个强大的基于云的解决方案，专为电子表格文件的创建、编辑和转换而设计。在本文中，我们将引导您完成使用 Aspose.Cells 云 API 进行文件保护的过程，包括典型用例和示例代码。
 
-## Overview
+## 概述
 
-The Aspose.Cells Cloud API provides multiples robust APIs for protecting Excel or spreadsheet files. By leveraging the Aspose.Cells Cloud API, you can effortlessly protect Excel or other spreadsheet files, catering to a diverse range of requirements.
-
-
-Numerous APIs are available for file protection, generally compatible with various online environments. Below is a detailed description of these APIs:
-
-- **[Secure MS Excel and OpenDocument Spreadsheet by applying password protection.](https://reference.aspose.cloud/cells/#/Workbook/PostEncryptWorkbook)** For guidance on how to call this API, please refer to the [development guide](https://docs.aspose.cloud/cells/workbook/encrypt/).
-- **[Protect MS Excel and OpenDocument Spreadsheet.](https://reference.aspose.cloud/cells/#/Workbook/PostProtectWorkbook)** For guidance on how to call this API, please refer to the [development guide](https://docs.aspose.cloud/cells/workbook/protect/).
-- **[Protect MS Excel and OpenDocument Spreadsheet without using cloud storage.](https://reference.aspose.cloud/cells/#/LightCells/PostProtect)** For guidance on how to call this API, please refer to the [development guide](https://docs.aspose.cloud/cells/protect/without-using-storage/).
-- **[MS Excel and OpenDocument Spreadsheet digital signature.](https://reference.aspose.cloud/cells/#/Workbook/PostDigitalSignature)** For guidance on how to call this API, please refer to the [development guide](https://docs.aspose.cloud/cells/workbook/digital-signature/).
-- **[Batch protect files](https://reference.aspose.cloud/cells/#/Batch/PostBatchProtect)** For guidance on how to call this API, please refer to the [development guide](https://docs.aspose.cloud/cells/batch/protect/).
+Aspose.Cells云API提供了多个强大的API来保护Excel或电子表格文件。通过利用 Aspose.Cells 云 API，您可以轻松保护 Excel 或其他电子表格文件，满足各种需求。
 
 
-# How to protect Excel file or another spreadsheet through Aspose.Cells Cloud
+有许多API可用于文件保护，通常兼容各种在线环境。下面是这些API的详细说明：
 
-The Aspose.Cells Cloud API provides[multiple SDKs](https://github.com/aspose-cells-cloud) for different programming languages. Choose the SDK that aligns with your preferred programming language and follow the accompanying documentation for installation and initialization. Alternatively, you can craft your own SDK according to the[API reference](https://reference.aspose.cloud/cells/)In this section, we'll use C# as an example to detail the process of file merged.
-
-
-## Registration and Obtaining API Key
-
-Before getting started, you need to[register an Aspose Cloud account](https://id.containerize.com/signup) and[obtain an API key for authentication](https://dashboard.aspose.cloud/applications)By logging into the official Aspose Cloud website, you can create a free account and obtain an API key for authentication purposes.
-
-For more in-depth operations, please refer to the following documents:[Quick Start with Cells Cloud](https://docs.aspose.cloud/cells/quickstart/)
+- **[通过应用密码保护来保护 MS Excel 和 OpenDocument 电子表格。](https://reference.aspose.cloud/cells/#/Workbook/PostEncryptWorkbook)** 。有关如何拨打此电话 API 的指南，请参阅[开发指南](https://docs.aspose.cloud/cells/workbook/encrypt/).
+- **[保护 MS Excel 和 OpenDocument 电子表格。](https://reference.aspose.cloud/cells/#/Workbook/PostProtectWorkbook)** 。有关如何拨打此电话 API 的指南，请参阅[开发指南](https://docs.aspose.cloud/cells/workbook/protect/).
+- **[在不使用云存储的情况下保护 MS Excel 和 OpenDocument 电子表格。](https://reference.aspose.cloud/cells/#/LightCells/PostProtect)** 。有关如何拨打此电话 API 的指南，请参阅[开发指南](https://docs.aspose.cloud/cells/protect/without-using-storage/).
+- **[MS Excel 和 OpenDocument 电子表格数字签名。](https://reference.aspose.cloud/cells/#/Workbook/PostDigitalSignature)** 。有关如何拨打此电话 API 的指南，请参阅[开发指南](https://docs.aspose.cloud/cells/workbook/digital-signature/).
+- **[批量保护文件](https://reference.aspose.cloud/cells/#/Batch/PostBatchProtect)** 。有关如何拨打此电话 API 的指南，请参阅[开发指南](https://docs.aspose.cloud/cells/batch/protect/).
 
 
-## Installing and Initializing the Aspose.Cells Cloud SDK
+# 如何通过 Aspose.Cells 云保护 Excel 文件或其他电子表格
 
-Install the Aspose.Cells-Cloud NuGet package in your .NET project, you can use the NuGet Package Manager Console or the NuGet Package Manager in Visual Studio.
-Here's how you can install the package using the Package Manager Console:
+Aspose.Cells云API提供[多个SDK](https://github.com/aspose-cells-cloud)对于不同的编程语言。选择与您首选编程语言相符的 SDK，并按照随附文档进行安装和初始化。或者，您可以根据以下内容制作自己的 SDK[API参考](https://reference.aspose.cloud/cells/)。本节我们以C#为例，详细介绍文件合并的过程。
+
+
+## 注册并获取API密钥
+
+在开始之前，您需要[注册Aspose云账号](https://id.containerize.com/signup)和[获取API密钥进行身份验证](https://dashboard.aspose.cloud/applications)。通过登录Aspose云官方网站，您可以创建一个免费帐户并获取API密钥用于身份验证。
+
+更深入的操作请参考以下文档：[Cells 云快速入门](https://docs.aspose.cloud/cells/quickstart/)
+
+
+## 安装并初始化Aspose.Cells Cloud SDK
+
+在您的.NET项目中安装Aspose.Cells-Cloud NuGet包，您可以使用NuGet包管理器控制台或Visual Studio中的NuGet包管理器。
+以下是使用包管理器控制台安装包的方法：
 
 ```Powershell
 
 Install-Package Aspose.Cells-Cloud
 
 ```
-Creates a new instance of the CellsApi class, initializing it with your client ID and client secret. Below are the details of the aforementioned code snippet:
+创建 CellsApi 类的新实例，并使用您的客户端 ID 和客户端密钥对其进行初始化。以下是上述代码片段的详细信息：
 
 ```CSharp
 
@@ -53,11 +53,11 @@ CellsApi cellsInstance = new CellsApi(clientID, clientSecret);
 
 ```
 
-Make sure to replace YOUR_API_KEY, YOUR_APP_SID, and YOUR_APP_KEY with your actual API key, application SID, and application key.
+确保更换您的_API_关键，你的_应用程序_SID 和您的_应用程序_KEY 为您的实际 API 密钥、应用程序 SID 和应用程序密钥。
 
-## Construct the API Request and Call the API.
+## 构建 API 请求并调用 API。
 
-This creates a new instance of the PostProtectRequest, initializing it with your desired files and protection Workbook request. It then calls the protect API with this protect request. The protect function supports extended query parameters, too. Below are the details of the aforementioned code snippet:
+这将创建 PostProtectRequest 的新实例，并使用您所需的文件和保护工作簿请求对其进行初始化。然后，它使用此保护请求调用保护 API。保护功能也支持扩展查询参数。以下是上述代码片段的详细信息：
 
 
 ```CSharp
@@ -85,20 +85,20 @@ cellsInstance.PostProtect(request);
 ```
 
 
-## Use Cases
+## 用例
 
-The**protect** Excel file or another spreadsheet feature of the Aspose.Cells Cloud API is useful in various practical use cases. Here are some common scenarios:
+这**保护**Excel 文件或 Aspose.Cells 云 API 的其他电子表格功能在各种实际用例中都很有用。以下是一些常见场景：
 
-- Add**multiple digital signature files** for local Excel files or another spreadsheet files.
-- Add**password protect** for local Excel files or another spreadsheet files.
-- Set**Aways Open Read-Only** for easy sharing.
-- **Merge multiple files into a html file** for display and embedding in web pages.
+- 添加**多个数字签名文件**对于本地 Excel 文件或其他电子表格文件。
+- 添加**密码保护**对于本地 Excel 文件或其他电子表格文件。
+- 放**始终以只读方式打开**方便分享。
+- **将多个文件合并为一个html文件**用于在网页中显示和嵌入。
 
-## Conclusion
+## 结论
 
-With Aspose.Cells Cloud API, you can easily perform protected Excel files or another spreadsheet files. By making simple API calls and setting appropriate protect options, you can efficiently fulfill various file merged requirements. Integrate Aspose.Cells Cloud API into your applications to enhance productivity and save development time.
+使用Aspose.Cells云API，您可以轻松执行受保护的Excel文件或其他电子表格文件。通过简单的API调用并设置适当的保护选项，您可以有效地满足各种文件合并要求。将 Aspose.Cells 云 API 集成到您的应用程序中，以提高生产力并节省开发时间。
 
-Please note that the above example code is for demonstration purposes only, and you would need to replace it with valid authentication credentials and file paths when using it in practice. Additionally, Aspose.Cells Cloud API offers many other features, such as spreadsheet creation, editing, manipulation, and data processing. Detailed API documentation and example code can be found on[developer guide of the official Aspose website](/developer-guide/).
+请注意，上述示例代码仅用于演示目的，实际使用时您需要将其替换为有效的身份验证凭据和文件路径。此外，Aspose.Cells 云 API 还提供许多其他功能，例如电子表格创建、编辑、操作和数据处理。详细的API文档和示例代码可以找到[Aspose 官网开发者指南](/developer-guide/).
 
-We hope this article helps you understand how to use Aspose.Cells Cloud API for file merge. Best of luck with your implementation!
+我们希望本文能帮助您了解如何使用 Aspose.Cells Cloud API 进行文件合并。祝您实施顺利！
 

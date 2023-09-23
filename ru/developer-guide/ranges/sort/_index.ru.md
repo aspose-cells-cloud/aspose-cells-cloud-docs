@@ -1,7 +1,11 @@
 ﻿---
 title:  Сортировка по диапазону
-description:  Устанавливает контурную границу вокруг диапазона ячеек.
+second_title: Aspose.Cells Cloud Documen
+linktitle: Сор
+type: docs
+keywords: Range Sort
 url: /ru/ranges/sort/
+description:  Устанавливает контурную границу вокруг диапазона ячеек.
 weight: 20
 ---
 Этот REST API указывает сортировку диапазона.

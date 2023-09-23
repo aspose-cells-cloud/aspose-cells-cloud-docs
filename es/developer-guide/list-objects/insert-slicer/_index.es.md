@@ -1,7 +1,11 @@
 ﻿---
 title:  Segmentación de inserción de objetos de lista
-description:  Insertar segmentación para el objeto de lista.
+second_title: Aspose.Cells Cloud Documen
+linktitle: Insertar rebanada
+type: docs
+keywords: Insert slicer for list object
 url: /es/list-objects/insert-slicer/
+description:  Insertar segmentación para el objeto de lista.
 weight: 20
 ---
  Este REST API indica insertar segmentación para el objeto de lista en una hoja de trabajo Excel.

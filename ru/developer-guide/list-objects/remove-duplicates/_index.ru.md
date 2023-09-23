@@ -1,7 +1,11 @@
 ﻿---
 title:  Объект списка удалить дубликаты
-description:  Удалите дубликаты в объекте списка.
+second_title: Aspose.Cells Cloud Documen
+linktitle: Удалить дубликат
+type: docs
+keywords: list object(table) remove duplicates 
 url: /ru/list-objects/remove-duplicates/
+description:  Удалите дубликаты в объекте списка.
 weight: 20
 ---
  Этот REST API указывает на удаление дубликатов в объекте списка.

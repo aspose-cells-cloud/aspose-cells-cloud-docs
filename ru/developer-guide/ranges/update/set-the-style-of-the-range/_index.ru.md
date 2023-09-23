@@ -1,21 +1,21 @@
 ﻿---
-title: Установите стиль ранга
+title: Установите стиль звонка
 second_title: Aspose.Cells Cloud Documen
 linktitle: Установить стиль
 type: docs
 url: /ru/ranges/update/style/
 aliases: [/set-the-style-of-the-range/]
 keywords: Set range style on an Excel workshee
-description: Aspose.Cells Cloud REST API поддерживает настройку стиля диапазона на листе Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и swift.
+description: Aspose.Cells Cloud REST API поддерживает настройку стиля диапазона на листе Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 70
 ---
 ## **Введение**
-Этот пример позволяет вам установить стиль диапазона, используя Aspose.Cells Облако API в ваших приложениях. Вы можете использовать наш REST API с любым языком: .NET, Java, PHP, Ruby, Rails, Python, jQuery и многими другими.
+Этот пример позволяет вам установить стиль диапазона, используя Aspose.Cells Cloud API в ваших приложениях. Вы можете использовать наш REST API с любым языком: .NET, Java, PHP, Ruby, Rails, Python, jQuery и многими другими.
 ## **API Информация**
 
 |**API**|**Тип**|**Описание**|**Ссылка на ресурс**|
 |:- |:- |:- |:- |
-|/cells/{имя}/рабочие листы/{имя листа}/диапазоны/стиль|ПОЧТА|Установить стиль ячейки именованного диапазона|[PostWorksheetCellsRangeStyle](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeStyle)|
+|/cells/{name}/worksheets/{sheetName}/ranges/style|ПОЧТА|Установить стиль ячейки именованного диапазона|[PostWorksheetCellsRangeStyle](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeStyle)|
 ### **cURL Пример**
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 

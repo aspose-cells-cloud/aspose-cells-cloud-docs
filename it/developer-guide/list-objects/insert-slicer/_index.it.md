@@ -1,7 +1,11 @@
 ﻿---
 title:  Elenco oggetti inserisci affettatrice
-description:  Inserisci filtro dei dati per l'oggetto elenco.
+second_title: Aspose.Cells Cloud Documen
+linktitle: Inserisci fetta
+type: docs
+keywords: Insert slicer for list object
 url: /it/list-objects/insert-slicer/
+description:  Inserisci filtro dei dati per l'oggetto elenco.
 weight: 20
 ---
  Questo REST API indica l'inserimento del filtro dei dati per l'oggetto elenco su un foglio di lavoro Excel.

@@ -1,7 +1,11 @@
 ﻿---
 title:  Tri par plage
-description:  Définit la bordure du contour autour d’une plage de cellules.
+second_title: Aspose.Cells Cloud Documen
+linktitle: Sor
+type: docs
+keywords: Range Sort
 url: /fr/ranges/sort/
+description:  Définit la bordure du contour autour d’une plage de cellules.
 weight: 20
 ---
 Ce REST API indique le tri par plage.

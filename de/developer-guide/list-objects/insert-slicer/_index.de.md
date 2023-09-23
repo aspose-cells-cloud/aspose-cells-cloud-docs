@@ -1,7 +1,11 @@
 ﻿---
 title:  Slicer zum Einfügen von Listenobjekten
-description:  Slicer für Listenobjekt einfügen.
+second_title: Aspose.Cells Cloud Documen
+linktitle: Scheibe einlegen
+type: docs
+keywords: Insert slicer for list object
 url: /de/list-objects/insert-slicer/
+description:  Slicer für Listenobjekt einfügen.
 weight: 20
 ---
  Dieser REST API gibt den Einfüge-Slicer für ein Listenobjekt in einem Excel-Arbeitsblatt an.

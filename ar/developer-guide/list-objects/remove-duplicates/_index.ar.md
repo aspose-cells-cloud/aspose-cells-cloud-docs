@@ -1,7 +1,11 @@
 ﻿---
 title:  كائن القائمة يزيل التكرارات
-description:  إزالة التكرارات في كائن القائمة.
+second_title: Aspose.Cells Cloud Documen
+linktitle: إزالة التكرارات
+type: docs
+keywords: list object(table) remove duplicates 
 url: /ar/list-objects/remove-duplicates/
+description:  إزالة التكرارات في كائن القائمة.
 weight: 20
 ---
  يشير REST API إلى إزالة التكرارات في كائن القائمة.

@@ -1,7 +1,11 @@
 ﻿---
 title:  Bereichssortierung
-description:  Legt einen Umrissrahmen um einen Bereich von Zellen fest.
+second_title: Aspose.Cells Cloud Documen
+linktitle: Herr
+type: docs
+keywords: Range Sort
 url: /de/ranges/sort/
+description:  Legt einen Umrissrahmen um einen Bereich von Zellen fest.
 weight: 20
 ---
 Dieser REST API gibt die Bereichssortierung an.

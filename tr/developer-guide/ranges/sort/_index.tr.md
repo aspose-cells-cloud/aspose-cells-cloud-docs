@@ -1,7 +1,11 @@
 ﻿---
 title:  Aralık Sıralaması
-description:  Bir hücre aralığının etrafındaki ana hat kenarlığını ayarlar.
+second_title: Aspose.Cells Cloud Documen
+linktitle: Sor
+type: docs
+keywords: Range Sort
 url: /tr/ranges/sort/
+description:  Bir hücre aralığının etrafındaki ana hat kenarlığını ayarlar.
 weight: 20
 ---
 Bu REST API, aralık sıralamasını gösterir.

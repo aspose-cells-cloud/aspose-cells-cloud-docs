@@ -1,7 +1,11 @@
 ﻿---
 title:  كائن قائمة إدراج القطاعة
-description:  إدراج مقسم شرائح لكائن القائمة.
+second_title: Aspose.Cells Cloud Documen
+linktitle: أدخل شريحة
+type: docs
+keywords: Insert slicer for list object
 url: /ar/list-objects/insert-slicer/
+description:  إدراج مقسم شرائح لكائن القائمة.
 weight: 20
 ---
  يشير REST API إلى أداة تقطيع الشرائح لكائن القائمة في ورقة عمل Excel.

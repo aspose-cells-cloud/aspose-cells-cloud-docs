@@ -1,7 +1,11 @@
 ﻿---
 title:  Objet de liste supprimer les doublons
-description:  Supprimez les doublons sur l’objet de liste.
+second_title: Aspose.Cells Cloud Documen
+linktitle: Supprimer le doublon
+type: docs
+keywords: list object(table) remove duplicates 
 url: /fr/list-objects/remove-duplicates/
+description:  Supprimez les doublons sur l’objet de liste.
 weight: 20
 ---
  Ce REST API indique la suppression des doublons sur l'objet de liste.

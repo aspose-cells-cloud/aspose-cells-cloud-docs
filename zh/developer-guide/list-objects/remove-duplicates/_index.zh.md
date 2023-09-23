@@ -1,7 +1,11 @@
 ﻿---
 title: 列表对象删除重复项
-description: 删除列表对象上的重复项。
+second_title: Aspose.Cells Cloud Documen
+linktitle: 删除重复项
+type: docs
+keywords: list object(table) remove duplicates 
 url: /zh/list-objects/remove-duplicates/
+description: 删除列表对象上的重复项。
 weight: 20
 ---
 此 REST API 表示删除列表对象上的重复项。

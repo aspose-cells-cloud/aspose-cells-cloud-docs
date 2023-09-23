@@ -1,7 +1,11 @@
 ﻿---
 title:  Liste nesnesi kopyaları kaldır
-description:  Liste nesnesindeki kopyaları kaldırın.
+second_title: Aspose.Cells Cloud Documen
+linktitle: Kopyayı kaldır
+type: docs
+keywords: list object(table) remove duplicates 
 url: /tr/list-objects/remove-duplicates/
+description:  Liste nesnesindeki kopyaları kaldırın.
 weight: 20
 ---
  Bu REST API, liste nesnesindeki kopyaların kaldırıldığını gösterir.

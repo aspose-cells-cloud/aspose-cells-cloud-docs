@@ -1,7 +1,11 @@
 ﻿---
 title:  Слайсер вставки объекта списка
-description:  Вставьте срез для объекта списка.
+second_title: Aspose.Cells Cloud Documen
+linktitle: Вставить фрагмент
+type: docs
+keywords: Insert slicer for list object
 url: /ru/list-objects/insert-slicer/
+description:  Вставьте срез для объекта списка.
 weight: 20
 ---
  Этот REST API указывает срез вставки для объекта списка на листе Excel.

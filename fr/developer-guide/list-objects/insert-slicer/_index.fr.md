@@ -1,7 +1,11 @@
 ﻿---
 title:  Trancheur d'insertion d'objet de liste
-description:  Insérez un slicer pour l'objet de liste.
+second_title: Aspose.Cells Cloud Documen
+linktitle: Insérer une tranche
+type: docs
+keywords: Insert slicer for list object
 url: /fr/list-objects/insert-slicer/
+description:  Insérez un slicer pour l'objet de liste.
 weight: 20
 ---
  Ce REST API indique un segment d'insertion pour un objet de liste sur une feuille de calcul Excel.

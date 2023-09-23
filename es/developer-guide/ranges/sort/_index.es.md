@@ -1,7 +1,11 @@
 ﻿---
 title:  Ordenar rango
-description:  Establece el borde del contorno alrededor de un rango de celdas.
+second_title: Aspose.Cells Cloud Documen
+linktitle: Sor
+type: docs
+keywords: Range Sort
 url: /es/ranges/sort/
+description:  Establece el borde del contorno alrededor de un rango de celdas.
 weight: 20
 ---
 Este REST API indica clasificación de rango.

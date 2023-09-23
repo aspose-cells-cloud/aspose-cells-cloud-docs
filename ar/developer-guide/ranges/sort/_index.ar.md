@@ -1,7 +1,11 @@
 ﻿---
 title:  فرز النطاق
-description:  يعين حدودًا تفصيلية حول نطاق من الخلايا.
+second_title: Aspose.Cells Cloud Documen
+linktitle: سور
+type: docs
+keywords: Range Sort
 url: /ar/ranges/sort/
+description:  يعين حدودًا تفصيلية حول نطاق من الخلايا.
 weight: 20
 ---
 يشير REST API إلى نوع النطاق.

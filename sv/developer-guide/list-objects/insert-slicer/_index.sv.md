@@ -1,7 +1,11 @@
 ﻿---
 title:  Listobjekt infogning slicer
-description:  Infoga slicer för listobjekt.
+second_title: Aspose.Cells Cloud Documen
+linktitle: Sätt i skiva
+type: docs
+keywords: Insert slicer for list object
 url: /sv/list-objects/insert-slicer/
+description:  Infoga slicer för listobjekt.
 weight: 20
 ---
  Denna REST API indikerar insert slicer för listobjekt på ett Excel kalkylblad.
