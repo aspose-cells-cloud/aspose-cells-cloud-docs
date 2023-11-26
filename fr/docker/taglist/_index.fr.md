@@ -17,16 +17,16 @@ ltsc2016.23.5.0 | x64 | Pas de Dockerfile | Arrêtez la mise à niveau. La versi
 
 Balises | Architecture | Dockerfile | Remarque
 ---|:--:|:--:|---:
-ltsc2019.23.7.0 | x64 | Pas de Dockerfile |
+ltsc2019.23.11.0 | x64 | Pas de Dockerfile |
 
 ##  Windows Images du serveur 2022 ##
 
 Balises | Architecture | Dockerfile | Remarque
 ---|:--:|:--:|---:
- ltsc2022.23.7.0 | x64 | Pas de Dockerfile |
+ ltsc2022.23.11.0 | x64 | Pas de Dockerfile |
 
 ##  Image Linux ##
 
 Balises | Architecture | Dockerfile | Remarque
 ---|:--:|:--:|---:
-linux.23.7.0 | x64 | Pas de Dockerfile |
+linux.23.11.0 | x64 | Pas de Dockerfile |

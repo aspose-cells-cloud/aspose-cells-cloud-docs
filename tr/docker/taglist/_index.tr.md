@@ -17,16 +17,16 @@ ltsc2016.23.5.0 | x64 | Docker dosyası yok | Yükseltmeyi durdurun. Son sürüm
 
 Etiketler | Mimarlık | Docker dosyası | açıklama
 ---|:--:|:--:|---:
-ltsc2019.23.7.0 | x64 | Docker dosyası yok |
+ltsc2019.23.11.0 | x64 | Docker dosyası yok |
 
 ##  Windows Sunucu 2022 Görselleri ##
 
 Etiketler | Mimarlık | Docker dosyası | açıklama
 ---|:--:|:--:|---:
- ltsc2022.23.7.0 | x64 | Docker dosyası yok |
+ ltsc2022.23.11.0 | x64 | Docker dosyası yok |
 
 ##  Linux Görselleri ##
 
 Etiketler | Mimarlık | Docker dosyası | açıklama
 ---|:--:|:--:|---:
-linux.23.7.0 | x64 | Docker dosyası yok |
+linux.23.11.0 | x64 | Docker dosyası yok |

@@ -17,16 +17,16 @@ ltsc2016.23.5.0 | x64 | Ingen Dockerfile | Stoppa uppgraderingen. Den slutliga v
 
 Taggar | Arkitektur | Dockerfile | Anmärkning
 ---|:--:|:--:|---:
-ltsc2019.23.7.0 | x64 | Ingen Dockerfile |
+ltsc2019.23.11.0 | x64 | Ingen Dockerfile |
 
 ##  Windows Server 2022-bilder ##
 
 Taggar | Arkitektur | Dockerfile | Anmärkning
 ---|:--:|:--:|---:
- ltsc2022.23.7.0 | x64 | Ingen Dockerfile |
+ ltsc2022.23.11.0 | x64 | Ingen Dockerfile |
 
 ##  Linux bilder ##
 
 Taggar | Arkitektur | Dockerfile | Anmärkning
 ---|:--:|:--:|---:
-linux.23.7.0 | x64 | Ingen Dockerfile |
+linux.23.11.0 | x64 | Ingen Dockerfile |

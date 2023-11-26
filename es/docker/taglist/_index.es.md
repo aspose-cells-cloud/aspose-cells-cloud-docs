@@ -17,16 +17,16 @@ ltsc2016.23.5.0 | x64 | Sin archivo acoplable | Detenga la actualización. La ve
 
 Etiquetas | Arquitectura | Dockerfile | Observación
 ---|:--:|:--:|---:
-ltsc2019.23.7.0 | x64 | Sin archivo acoplable |
+ltsc2019.23.11.0 | x64 | Sin archivo acoplable |
 
 ##  Windows Servidor 2022 Imágenes ##
 
 Etiquetas | Arquitectura | Dockerfile | Observación
 ---|:--:|:--:|---:
- ltsc2022.23.7.0 | x64 | Sin archivo acoplable |
+ ltsc2022.23.11.0 | x64 | Sin archivo acoplable |
 
 ##  Imágenes de Linux ##
 
 Etiquetas | Arquitectura | Dockerfile | Observación
 ---|:--:|:--:|---:
-linux.23.7.0 | x64 | Sin archivo acoplable |
+linux.23.11.0 | x64 | Sin archivo acoplable |

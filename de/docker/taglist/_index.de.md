@@ -17,16 +17,16 @@ ltsc2016.23.5.0 | x64 | Keine Docker-Datei | Stoppen Sie das Upgrade. Die endgü
 
 Schlagworte | Architektur | Docker-Datei | Anmerkung
 ---|:--:|:--:|---:
-ltsc2019.23.7.0 | x64 | Keine Docker-Datei |
+ltsc2019.23.11.0 | x64 | Keine Docker-Datei |
 
 ##  Windows Server 2022 Bilder ##
 
 Schlagworte | Architektur | Docker-Datei | Anmerkung
 ---|:--:|:--:|---:
- ltsc2022.23.7.0 | x64 | Keine Docker-Datei |
+ ltsc2022.23.11.0 | x64 | Keine Docker-Datei |
 
 ##  Linux-Images ##
 
 Schlagworte | Architektur | Docker-Datei | Anmerkung
 ---|:--:|:--:|---:
-linux.23.7.0 | x64 | Keine Docker-Datei |
+linux.23.11.0 | x64 | Keine Docker-Datei |
