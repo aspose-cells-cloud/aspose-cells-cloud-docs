@@ -2,7 +2,7 @@
 title: "GlobalizationSettings"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /globalizationsettings/
+url: /specification/model/globalizationsettings/
 description: "Represents the globalization settings. "
 weight: 50
 ---

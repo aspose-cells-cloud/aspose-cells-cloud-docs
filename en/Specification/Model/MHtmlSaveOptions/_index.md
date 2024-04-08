@@ -2,7 +2,7 @@
 title: "MHtmlSaveOptions"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /mhtmlsaveoptions/
+url: /specification/model/mhtmlsaveoptions/
 description: "Represents options of saving .mhtml file."
 weight: 50
 ---

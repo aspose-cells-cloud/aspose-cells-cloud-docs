@@ -2,7 +2,7 @@
 title: "PostWorksheetComment"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postworksheetcomment/
+url: /specification/operation/postworksheetcomment/
 description: "Update cell comment in the worksheet."
 weight: 50
 

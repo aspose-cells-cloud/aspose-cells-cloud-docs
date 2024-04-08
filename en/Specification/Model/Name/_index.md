@@ -2,7 +2,7 @@
 title: "Name"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /name/
+url: /specification/model/name/
 description: ""
 weight: 50
 ---

@@ -2,7 +2,7 @@
 title: "PutWorksheetCellsRange"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /putworksheetcellsrange/
+url: /specification/operation/putworksheetcellsrange/
 description: "Insert a range of cells and shift existing cells based on the specified shift option."
 weight: 50
 

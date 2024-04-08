@@ -2,7 +2,7 @@
 title: "PostPivotTableFieldHideItem"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postpivottablefieldhideitem/
+url: /specification/operation/postpivottablefieldhideitem/
 description: "Hide a pivot field item in the PivotTable."
 weight: 50
 

@@ -2,7 +2,7 @@
 title: "PostUngroupWorksheetColumns"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postungroupworksheetcolumns/
+url: /specification/operation/postungroupworksheetcolumns/
 description: "Ungroup worksheet columns."
 weight: 50
 

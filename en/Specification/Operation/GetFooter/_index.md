@@ -2,7 +2,7 @@
 title: "GetFooter"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getfooter/
+url: /specification/operation/getfooter/
 description: "Retrieve page footer description in the worksheet."
 weight: 50
 

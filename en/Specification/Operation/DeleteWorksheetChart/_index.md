@@ -2,7 +2,7 @@
 title: "DeleteWorksheetChart"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /deleteworksheetchart/
+url: /specification/operation/deleteworksheetchart/
 description: "Delete a chart by index in the worksheet."
 weight: 50
 

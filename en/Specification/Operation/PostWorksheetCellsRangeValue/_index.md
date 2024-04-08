@@ -2,7 +2,7 @@
 title: "PostWorksheetCellsRangeValue"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postworksheetcellsrangevalue/
+url: /specification/operation/postworksheetcellsrangevalue/
 description: "Assign a value to the range; if necessary, the value will be converted to another data type, and the cell's number format will be reset."
 weight: 50
 

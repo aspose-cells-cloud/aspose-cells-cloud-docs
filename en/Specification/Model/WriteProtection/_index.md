@@ -2,7 +2,7 @@
 title: "WriteProtection"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /writeprotection/
+url: /specification/model/writeprotection/
 description: "Specifies write protection settings for a workbook. "
 weight: 50
 ---

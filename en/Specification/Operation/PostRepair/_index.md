@@ -2,7 +2,7 @@
 title: "PostRepair"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postrepair/
+url: /specification/operation/postrepair/
 description: "Repair abnormal files and generate files in various formats."
 weight: 50
 

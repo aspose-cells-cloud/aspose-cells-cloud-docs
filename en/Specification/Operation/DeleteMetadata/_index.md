@@ -2,7 +2,7 @@
 title: "DeleteMetadata"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /deletemetadata/
+url: /specification/operation/deletemetadata/
 description: "Delete cells document properties in Excel file, and save them is various formats."
 weight: 50
 

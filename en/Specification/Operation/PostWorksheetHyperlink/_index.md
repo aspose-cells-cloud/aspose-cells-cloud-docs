@@ -2,7 +2,7 @@
 title: "PostWorksheetHyperlink"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postworksheethyperlink/
+url: /specification/operation/postworksheethyperlink/
 description: "Update hyperlink by index in the worksheet."
 weight: 50
 

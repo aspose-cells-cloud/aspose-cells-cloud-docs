@@ -2,7 +2,7 @@
 title: "LineShapeResponse"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /lineshaperesponse/
+url: /specification/model/lineshaperesponse/
 description: ""
 weight: 50
 ---

@@ -2,7 +2,7 @@
 title: "LegendEntriesResponse"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /legendentriesresponse/
+url: /specification/model/legendentriesresponse/
 description: ""
 weight: 50
 ---

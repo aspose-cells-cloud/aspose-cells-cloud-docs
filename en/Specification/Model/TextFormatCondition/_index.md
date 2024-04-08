@@ -2,7 +2,7 @@
 title: "TextFormatCondition"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /textformatcondition/
+url: /specification/model/textformatcondition/
 description: ""
 weight: 50
 ---

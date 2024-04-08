@@ -2,7 +2,7 @@
 title: "ChartShape"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /chartshape/
+url: /specification/model/chartshape/
 description: "Chart shape object"
 weight: 50
 ---

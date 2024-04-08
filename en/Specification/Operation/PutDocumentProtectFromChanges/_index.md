@@ -2,7 +2,7 @@
 title: "PutDocumentProtectFromChanges"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /putdocumentprotectfromchanges/
+url: /specification/operation/putdocumentprotectfromchanges/
 description: "Excel file write protection."
 weight: 50
 

@@ -2,7 +2,7 @@
 title: "DeleteWorksheetShape"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /deleteworksheetshape/
+url: /specification/operation/deleteworksheetshape/
 description: "Delete a shape in the worksheet."
 weight: 50
 

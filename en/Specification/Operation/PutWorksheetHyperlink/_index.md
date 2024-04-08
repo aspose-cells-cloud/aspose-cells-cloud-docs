@@ -2,7 +2,7 @@
 title: "PutWorksheetHyperlink"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /putworksheethyperlink/
+url: /specification/operation/putworksheethyperlink/
 description: "Add hyperlink in the worksheet."
 weight: 50
 

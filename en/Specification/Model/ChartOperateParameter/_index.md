@@ -2,7 +2,7 @@
 title: "ChartOperateParameter"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /chartoperateparameter/
+url: /specification/model/chartoperateparameter/
 description: ""
 weight: 50
 ---

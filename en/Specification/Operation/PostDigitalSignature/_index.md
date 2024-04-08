@@ -2,7 +2,7 @@
 title: "PostDigitalSignature"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postdigitalsignature/
+url: /specification/operation/postdigitalsignature/
 description: "Excel file digital signature."
 weight: 50
 

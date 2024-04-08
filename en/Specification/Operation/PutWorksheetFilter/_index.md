@@ -2,7 +2,7 @@
 title: "PutWorksheetFilter"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /putworksheetfilter/
+url: /specification/operation/putworksheetfilter/
 description: "Add a filter for a column in the worksheet."
 weight: 50
 

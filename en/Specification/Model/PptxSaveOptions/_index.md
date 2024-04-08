@@ -2,7 +2,7 @@
 title: "PptxSaveOptions"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /pptxsaveoptions/
+url: /specification/model/pptxsaveoptions/
 description: "Represents the options of saving pptx file."
 weight: 50
 ---

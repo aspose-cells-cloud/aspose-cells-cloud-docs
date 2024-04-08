@@ -2,7 +2,7 @@
 title: "PostReverse"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postreverse/
+url: /specification/operation/postreverse/
 description: "Reverse rows or columns in Excel files and create output files in various formats."
 weight: 50
 

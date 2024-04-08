@@ -2,7 +2,7 @@
 title: "SmartMarkerTaskParameter"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /smartmarkertaskparameter/
+url: /specification/model/smartmarkertaskparameter/
 description: ""
 weight: 50
 ---

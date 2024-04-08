@@ -2,7 +2,7 @@
 title: "PostWorksheetCellsRangeRowHeight"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postworksheetcellsrangerowheight/
+url: /specification/operation/postworksheetcellsrangerowheight/
 description: "Sets row height of range."
 weight: 50
 

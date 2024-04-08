@@ -2,7 +2,7 @@
 title: "DeleteWorksheetListObjects"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /deleteworksheetlistobjects/
+url: /specification/operation/deleteworksheetlistobjects/
 description: "Delete ListObjects in the worksheet."
 weight: 50
 

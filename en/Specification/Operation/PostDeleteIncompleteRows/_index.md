@@ -2,7 +2,7 @@
 title: "PostDeleteIncompleteRows"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postdeleteincompleterows/
+url: /specification/operation/postdeleteincompleterows/
 description: "Deleting incomplete rows of spreadsheet files is mainly used to eliminate incomplete rows in tables and ranges."
 weight: 50
 

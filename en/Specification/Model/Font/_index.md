@@ -2,7 +2,7 @@
 title: "Font"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /font/
+url: /specification/model/font/
 description: ""
 weight: 50
 ---

@@ -2,7 +2,7 @@
 title: "CellsObjectOperateTaskParameter"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /cellsobjectoperatetaskparameter/
+url: /specification/model/cellsobjectoperatetaskparameter/
 description: ""
 weight: 50
 ---

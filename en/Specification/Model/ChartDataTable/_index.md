@@ -2,7 +2,7 @@
 title: "ChartDataTable"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /chartdatatable/
+url: /specification/model/chartdatatable/
 description: ""
 weight: 50
 ---

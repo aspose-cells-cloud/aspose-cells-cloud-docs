@@ -2,7 +2,7 @@
 title: "PostWorksheetRangeSort"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postworksheetrangesort/
+url: /specification/operation/postworksheetrangesort/
 description: "Sort a range in the worksheet."
 weight: 50
 

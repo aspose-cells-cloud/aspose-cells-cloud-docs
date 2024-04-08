@@ -2,7 +2,7 @@
 title: "VerticalPageBreakResponse"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /verticalpagebreakresponse/
+url: /specification/model/verticalpagebreakresponse/
 description: ""
 weight: 50
 ---

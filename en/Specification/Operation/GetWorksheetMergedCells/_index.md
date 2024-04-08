@@ -2,7 +2,7 @@
 title: "GetWorksheetMergedCells"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getworksheetmergedcells/
+url: /specification/operation/getworksheetmergedcells/
 description: "Get worksheet merged cells."
 weight: 50
 

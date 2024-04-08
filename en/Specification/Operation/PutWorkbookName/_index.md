@@ -2,7 +2,7 @@
 title: "PutWorkbookName"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /putworkbookname/
+url: /specification/operation/putworkbookname/
 description: "Define a new name in the workbook."
 weight: 50
 

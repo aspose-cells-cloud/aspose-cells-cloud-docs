@@ -2,7 +2,7 @@
 title: "PostSetWorksheetColumnWidth"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postsetworksheetcolumnwidth/
+url: /specification/operation/postsetworksheetcolumnwidth/
 description: "Set worksheet column width."
 weight: 50
 

@@ -2,7 +2,7 @@
 title: "PdfSecurityOptions"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /pdfsecurityoptions/
+url: /specification/model/pdfsecurityoptions/
 description: ""
 weight: 50
 ---

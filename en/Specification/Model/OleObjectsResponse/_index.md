@@ -2,7 +2,7 @@
 title: "OleObjectsResponse"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /oleobjectsresponse/
+url: /specification/model/oleobjectsresponse/
 description: ""
 weight: 50
 ---

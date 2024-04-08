@@ -2,7 +2,7 @@
 title: "GetWorksheetPictureWithFormat"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getworksheetpicturewithformat/
+url: /specification/operation/getworksheetpicturewithformat/
 description: "Retrieve a picture by number in the worksheet."
 weight: 50
 

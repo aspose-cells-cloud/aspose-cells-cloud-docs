@@ -2,7 +2,7 @@
 title: "PostHideWorksheetRows"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /posthideworksheetrows/
+url: /specification/operation/posthideworksheetrows/
 description: "Hide rows in worksheet."
 weight: 50
 

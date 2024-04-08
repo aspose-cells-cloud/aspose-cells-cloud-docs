@@ -2,7 +2,7 @@
 title: "DownloadFile"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /downloadfile/
+url: /specification/operation/downloadfile/
 description: ""
 weight: 50
 

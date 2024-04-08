@@ -2,7 +2,7 @@
 title: "OperateObject"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /operateobject/
+url: /specification/model/operateobject/
 description: ""
 weight: 50
 ---

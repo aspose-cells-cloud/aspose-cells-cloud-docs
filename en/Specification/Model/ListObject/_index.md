@@ -2,7 +2,7 @@
 title: "ListObject"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /listobject/
+url: /specification/model/listobject/
 description: ""
 weight: 50
 ---

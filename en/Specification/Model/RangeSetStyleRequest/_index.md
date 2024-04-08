@@ -2,7 +2,7 @@
 title: "RangeSetStyleRequest"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /rangesetstylerequest/
+url: /specification/model/rangesetstylerequest/
 description: "Indicates range set style request."
 weight: 50
 ---

@@ -2,7 +2,7 @@
 title: "TaskData"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /taskdata/
+url: /specification/model/taskdata/
 description: ""
 weight: 50
 ---

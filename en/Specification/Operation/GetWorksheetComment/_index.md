@@ -2,7 +2,7 @@
 title: "GetWorksheetComment"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getworksheetcomment/
+url: /specification/operation/getworksheetcomment/
 description: "Retrieve the description of comment in the worksheet."
 weight: 50
 

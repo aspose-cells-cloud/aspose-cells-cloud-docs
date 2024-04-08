@@ -2,7 +2,7 @@
 title: "LineFormat"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /lineformat/
+url: /specification/model/lineformat/
 description: ""
 weight: 50
 ---

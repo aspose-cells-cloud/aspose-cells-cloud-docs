@@ -2,7 +2,7 @@
 title: "CriteriaMultipleFilter"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /criteriamultiplefilter/
+url: /specification/model/criteriamultiplefilter/
 description: ""
 weight: 50
 ---

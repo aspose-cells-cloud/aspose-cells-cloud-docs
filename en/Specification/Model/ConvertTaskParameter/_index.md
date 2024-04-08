@@ -2,7 +2,7 @@
 title: "ConvertTaskParameter"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /converttaskparameter/
+url: /specification/model/converttaskparameter/
 description: ""
 weight: 50
 ---

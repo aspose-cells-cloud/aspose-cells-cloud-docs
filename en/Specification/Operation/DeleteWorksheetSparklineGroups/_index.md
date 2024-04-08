@@ -2,7 +2,7 @@
 title: "DeleteWorksheetSparklineGroups"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /deleteworksheetsparklinegroups/
+url: /specification/operation/deleteworksheetsparklinegroups/
 description: "Delete sparkline groups in the worksheet."
 weight: 50
 

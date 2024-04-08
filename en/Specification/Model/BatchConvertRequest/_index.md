@@ -2,7 +2,7 @@
 title: "BatchConvertRequest"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /batchconvertrequest/
+url: /specification/model/batchconvertrequest/
 description: "Indicates batch convert file request"
 weight: 50
 ---

@@ -2,7 +2,7 @@
 title: "ChartGlobalizationSettings"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /chartglobalizationsettings/
+url: /specification/model/chartglobalizationsettings/
 description: "Represents the globalization settings for chart. "
 weight: 50
 ---

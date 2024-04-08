@@ -2,7 +2,7 @@
 title: "Protection"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /protection/
+url: /specification/model/protection/
 description: "Represents the various types of protection options available for a worksheet.            "
 weight: 50
 ---

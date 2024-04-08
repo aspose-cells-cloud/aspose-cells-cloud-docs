@@ -2,7 +2,7 @@
 title: "PostMoveWorksheet"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postmoveworksheet/
+url: /specification/operation/postmoveworksheet/
 description: "Move worksheet in the workbook."
 weight: 50
 

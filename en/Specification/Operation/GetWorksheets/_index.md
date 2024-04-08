@@ -2,7 +2,7 @@
 title: "GetWorksheets"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getworksheets/
+url: /specification/operation/getworksheets/
 description: "Retrieve the description of worksheets from a workbook."
 weight: 50
 

@@ -2,7 +2,7 @@
 title: "PostWorkbookGetSmartMarkerResult"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postworkbookgetsmartmarkerresult/
+url: /specification/operation/postworkbookgetsmartmarkerresult/
 description: "Smart marker processing."
 weight: 50
 

@@ -2,7 +2,7 @@
 title: "GetChartAreaBorder"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getchartareaborder/
+url: /specification/operation/getchartareaborder/
 description: "Retrieve chart area border description."
 weight: 50
 

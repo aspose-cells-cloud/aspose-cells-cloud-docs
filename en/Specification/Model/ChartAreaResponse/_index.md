@@ -2,7 +2,7 @@
 title: "ChartAreaResponse"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /chartarearesponse/
+url: /specification/model/chartarearesponse/
 description: ""
 weight: 50
 ---

@@ -2,7 +2,7 @@
 title: "PostWorksheetUngroupShape"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postworksheetungroupshape/
+url: /specification/operation/postworksheetungroupshape/
 description: "Ungroup shapes in the worksheet."
 weight: 50
 

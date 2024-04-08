@@ -2,7 +2,7 @@
 title: "PutWorksheetChartLegend"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /putworksheetchartlegend/
+url: /specification/operation/putworksheetchartlegend/
 description: "Show chart legend in the worksheet."
 weight: 50
 

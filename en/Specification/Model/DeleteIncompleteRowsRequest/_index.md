@@ -2,7 +2,7 @@
 title: "DeleteIncompleteRowsRequest"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /deleteincompleterowsrequest/
+url: /specification/model/deleteincompleterowsrequest/
 description: ""
 weight: 50
 ---

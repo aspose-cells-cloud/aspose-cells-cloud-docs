@@ -2,7 +2,7 @@
 title: "SpreadsheetML2003SaveOptions"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /spreadsheetml2003saveoptions/
+url: /specification/model/spreadsheetml2003saveoptions/
 description: "Represents the options of saving .xml file."
 weight: 50
 ---

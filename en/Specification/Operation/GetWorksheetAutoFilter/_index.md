@@ -2,7 +2,7 @@
 title: "GetWorksheetAutoFilter"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getworksheetautofilter/
+url: /specification/operation/getworksheetautofilter/
 description: "Retrieve the description of auto filters from a worksheet."
 weight: 50
 

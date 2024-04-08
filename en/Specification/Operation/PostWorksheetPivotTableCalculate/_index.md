@@ -2,7 +2,7 @@
 title: "PostWorksheetPivotTableCalculate"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postworksheetpivottablecalculate/
+url: /specification/operation/postworksheetpivottablecalculate/
 description: "Calculate pivottable's data to cells."
 weight: 50
 

@@ -2,7 +2,7 @@
 title: "PostChartValueAxis"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postchartvalueaxis/
+url: /specification/operation/postchartvalueaxis/
 description: "Update chart value axis in the chart."
 weight: 50
 

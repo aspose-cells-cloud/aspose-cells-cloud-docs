@@ -2,7 +2,7 @@
 title: "SaveOptions"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /saveoptions/
+url: /specification/model/saveoptions/
 description: "Represents all save options"
 weight: 50
 ---

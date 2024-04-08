@@ -2,7 +2,7 @@
 title: "GetWorksheetValidation"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getworksheetvalidation/
+url: /specification/operation/getworksheetvalidation/
 description: "Retrieve a validation by its index in the worksheet."
 weight: 50
 

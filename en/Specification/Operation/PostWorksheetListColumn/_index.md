@@ -2,7 +2,7 @@
 title: "PostWorksheetListColumn"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postworksheetlistcolumn/
+url: /specification/operation/postworksheetlistcolumn/
 description: "Update list column in list object."
 weight: 50
 

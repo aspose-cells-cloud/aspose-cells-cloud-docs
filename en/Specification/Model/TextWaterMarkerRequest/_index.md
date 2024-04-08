@@ -2,7 +2,7 @@
 title: "TextWaterMarkerRequest"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /textwatermarkerrequest/
+url: /specification/model/textwatermarkerrequest/
 description: "Indicates text water marker request."
 weight: 50
 ---

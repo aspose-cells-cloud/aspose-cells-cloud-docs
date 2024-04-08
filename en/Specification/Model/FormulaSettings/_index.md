@@ -2,7 +2,7 @@
 title: "FormulaSettings"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /formulasettings/
+url: /specification/model/formulasettings/
 description: "Settings of formulas and calculation. "
 weight: 50
 ---

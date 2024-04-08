@@ -2,7 +2,7 @@
 title: "PostMetadata"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postmetadata/
+url: /specification/operation/postmetadata/
 description: "Update document properties in Excel file, and save them is various formats."
 weight: 50
 

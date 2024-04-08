@@ -2,7 +2,7 @@
 title: "GetFilesList"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getfileslist/
+url: /specification/operation/getfileslist/
 description: ""
 weight: 50
 

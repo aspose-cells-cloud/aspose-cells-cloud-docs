@@ -2,7 +2,7 @@
 title: "PostCopyWorksheet"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postcopyworksheet/
+url: /specification/operation/postcopyworksheet/
 description: "Copy contents and formats from another worksheet."
 weight: 50
 

@@ -2,7 +2,7 @@
 title: "GetWorksheetChartLegend"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getworksheetchartlegend/
+url: /specification/operation/getworksheetchartlegend/
 description: "Retrieve chart legend description in the worksheet."
 weight: 50
 

@@ -2,7 +2,7 @@
 title: "DataCleansingRequest"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /datacleansingrequest/
+url: /specification/model/datacleansingrequest/
 description: "A data cleansing request for an Spreadsheet file."
 weight: 50
 ---

@@ -2,7 +2,7 @@
 title: "PostRunTask"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postruntask/
+url: /specification/operation/postruntask/
 description: "Run tasks."
 weight: 50
 

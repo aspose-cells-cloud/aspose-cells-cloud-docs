@@ -2,7 +2,7 @@
 title: "CreatePivotTableRequest"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /createpivottablerequest/
+url: /specification/model/createpivottablerequest/
 description: "Indicates create pivot table request"
 weight: 50
 ---

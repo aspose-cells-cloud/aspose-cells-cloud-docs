@@ -2,7 +2,7 @@
 title: "RangeCopyRequest"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /rangecopyrequest/
+url: /specification/model/rangecopyrequest/
 description: "Indicates range copy request"
 weight: 50
 ---

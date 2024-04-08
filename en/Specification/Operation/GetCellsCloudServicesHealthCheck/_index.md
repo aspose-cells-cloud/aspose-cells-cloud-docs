@@ -2,7 +2,7 @@
 title: "GetCellsCloudServicesHealthCheck"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getcellscloudserviceshealthcheck/
+url: /specification/operation/getcellscloudserviceshealthcheck/
 description: "Retrieve cell descriptions in a specified format."
 weight: 50
 

@@ -2,7 +2,7 @@
 title: "ColorFilterRequest"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /colorfilterrequest/
+url: /specification/model/colorfilterrequest/
 description: "Indicates color filter request"
 weight: 50
 ---

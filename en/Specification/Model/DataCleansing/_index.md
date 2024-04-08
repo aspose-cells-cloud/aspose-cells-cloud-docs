@@ -2,7 +2,7 @@
 title: "DataCleansing"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /datacleansing/
+url: /specification/model/datacleansing/
 description: "Data Cleansing"
 weight: 50
 ---

@@ -2,7 +2,7 @@
 title: "PostWorksheetListObjectSummarizeWithPivotTable"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postworksheetlistobjectsummarizewithpivottable/
+url: /specification/operation/postworksheetlistobjectsummarizewithpivottable/
 description: "Create a pivot table with a list object in the worksheet."
 weight: 50
 

@@ -2,7 +2,7 @@
 title: "PutWorkbookCreate"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /putworkbookcreate/
+url: /specification/operation/putworkbookcreate/
 description: "Create a new workbook using different methods."
 weight: 50
 

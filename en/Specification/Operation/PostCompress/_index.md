@@ -2,7 +2,7 @@
 title: "PostCompress"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postcompress/
+url: /specification/operation/postcompress/
 description: "Compress files and generate target files in various formats, supported file formats are include Xls, Xlsx, Xlsm, Xlsb, Ods and more."
 weight: 50
 

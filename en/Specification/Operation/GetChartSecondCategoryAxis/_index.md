@@ -2,7 +2,7 @@
 title: "GetChartSecondCategoryAxis"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getchartsecondcategoryaxis/
+url: /specification/operation/getchartsecondcategoryaxis/
 description: "Retrieve chart second category axis in the chart"
 weight: 50
 

@@ -2,7 +2,7 @@
 title: "PostWorksheetListObject"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postworksheetlistobject/
+url: /specification/operation/postworksheetlistobject/
 description: "Update list object by index in the worksheet."
 weight: 50
 

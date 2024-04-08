@@ -2,7 +2,7 @@
 title: "CustomFilter"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /customfilter/
+url: /specification/model/customfilter/
 description: ""
 weight: 50
 ---

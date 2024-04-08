@@ -2,7 +2,7 @@
 title: "PostWorksheetCellsRangeUnMerge"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postworksheetcellsrangeunmerge/
+url: /specification/operation/postworksheetcellsrangeunmerge/
 description: "Unmerge merged cells within this range."
 weight: 50
 

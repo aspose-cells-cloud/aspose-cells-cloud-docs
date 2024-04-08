@@ -2,7 +2,7 @@
 title: "GetChartAreaFillFormat"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getchartareafillformat/
+url: /specification/operation/getchartareafillformat/
 description: "Retrieve chart area fill format description in the worksheet."
 weight: 50
 

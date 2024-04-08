@@ -2,7 +2,7 @@
 title: "PostWorksheetPicture"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postworksheetpicture/
+url: /specification/operation/postworksheetpicture/
 description: "Update a picture by index in the worksheet."
 weight: 50
 

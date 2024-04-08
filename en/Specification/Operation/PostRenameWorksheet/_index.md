@@ -2,7 +2,7 @@
 title: "PostRenameWorksheet"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postrenameworksheet/
+url: /specification/operation/postrenameworksheet/
 description: "Rename worksheet in the workbook."
 weight: 50
 

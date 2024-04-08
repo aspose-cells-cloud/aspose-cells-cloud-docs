@@ -2,7 +2,7 @@
 title: "PostConvertWorkbookToMarkdown"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postconvertworkbooktomarkdown/
+url: /specification/operation/postconvertworkbooktomarkdown/
 description: "Convert Excel file to Markdown files."
 weight: 50
 

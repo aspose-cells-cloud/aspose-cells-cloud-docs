@@ -2,7 +2,7 @@
 title: "DeleteWorksheetFilter"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /deleteworksheetfilter/
+url: /specification/operation/deleteworksheetfilter/
 description: "Delete a filter for a column in the worksheet."
 weight: 50
 

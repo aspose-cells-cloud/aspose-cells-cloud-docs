@@ -2,7 +2,7 @@
 title: "DeletePivotTableField"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /deletepivottablefield/
+url: /specification/operation/deletepivottablefield/
 description: "Delete a pivot field in the PivotTable."
 weight: 50
 

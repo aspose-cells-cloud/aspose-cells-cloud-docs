@@ -2,7 +2,7 @@
 title: "DeleteFile"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /deletefile/
+url: /specification/operation/deletefile/
 description: ""
 weight: 50
 

@@ -2,7 +2,7 @@
 title: "GetWorksheetPivotTable"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getworksheetpivottable/
+url: /specification/operation/getworksheetpivottable/
 description: "Retrieve PivotTable information by index in the worksheet."
 weight: 50
 

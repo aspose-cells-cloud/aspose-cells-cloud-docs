@@ -2,7 +2,7 @@
 title: "DeleteWorksheetChartLegend"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /deleteworksheetchartlegend/
+url: /specification/operation/deleteworksheetchartlegend/
 description: "Hides chart legend in the worksheet."
 weight: 50
 

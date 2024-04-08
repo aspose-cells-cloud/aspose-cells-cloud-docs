@@ -2,7 +2,7 @@
 title: "PostDataDeduplication"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postdatadeduplication/
+url: /specification/operation/postdatadeduplication/
 description: "Data deduplication of spreadsheet files is mainly used to eliminate duplicate data in tables and ranges."
 weight: 50
 

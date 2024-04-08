@@ -2,7 +2,7 @@
 title: "GetWorksheetConditionalFormatting"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getworksheetconditionalformatting/
+url: /specification/operation/getworksheetconditionalformatting/
 description: "Retrieve conditional formatting descriptions in the worksheet."
 weight: 50
 

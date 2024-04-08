@@ -2,7 +2,7 @@
 title: "PostWorksheetListColumnsTotal"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postworksheetlistcolumnstotal/
+url: /specification/operation/postworksheetlistcolumnstotal/
 description: "Update total of list columns in the table."
 weight: 50
 

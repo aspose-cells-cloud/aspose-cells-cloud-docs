@@ -2,7 +2,7 @@
 title: "PatternFill"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /patternfill/
+url: /specification/model/patternfill/
 description: ""
 weight: 50
 ---

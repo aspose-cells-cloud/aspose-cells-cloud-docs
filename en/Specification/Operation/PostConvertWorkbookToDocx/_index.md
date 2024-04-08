@@ -2,7 +2,7 @@
 title: "PostConvertWorkbookToDocx"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postconvertworkbooktodocx/
+url: /specification/operation/postconvertworkbooktodocx/
 description: "Convert Excel file to Docx files."
 weight: 50
 

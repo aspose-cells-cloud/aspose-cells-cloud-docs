@@ -2,7 +2,7 @@
 title: "FloorResponse"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /floorresponse/
+url: /specification/model/floorresponse/
 description: ""
 weight: 50
 ---

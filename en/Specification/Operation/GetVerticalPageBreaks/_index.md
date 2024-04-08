@@ -2,7 +2,7 @@
 title: "GetVerticalPageBreaks"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getverticalpagebreaks/
+url: /specification/operation/getverticalpagebreaks/
 description: "Retrieve descriptions of vertical page breaks in the worksheet."
 weight: 50
 

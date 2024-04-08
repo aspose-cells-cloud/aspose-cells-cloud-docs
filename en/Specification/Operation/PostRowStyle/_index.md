@@ -2,7 +2,7 @@
 title: "PostRowStyle"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postrowstyle/
+url: /specification/operation/postrowstyle/
 description: "Apply formats to an entire row in the worksheet."
 weight: 50
 

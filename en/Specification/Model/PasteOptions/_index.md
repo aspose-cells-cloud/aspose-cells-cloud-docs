@@ -2,7 +2,7 @@
 title: "PasteOptions"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /pasteoptions/
+url: /specification/model/pasteoptions/
 description: "Represents the paste special options.            "
 weight: 50
 ---

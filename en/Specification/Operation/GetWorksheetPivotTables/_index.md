@@ -2,7 +2,7 @@
 title: "GetWorksheetPivotTables"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getworksheetpivottables/
+url: /specification/operation/getworksheetpivottables/
 description: "Retrieve descriptions of pivottables  in the worksheet."
 weight: 50
 

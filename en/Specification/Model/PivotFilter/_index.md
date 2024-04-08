@@ -2,7 +2,7 @@
 title: "PivotFilter"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /pivotfilter/
+url: /specification/model/pivotfilter/
 description: "Represents a PivotFilter in PivotFilter Collection."
 weight: 50
 ---

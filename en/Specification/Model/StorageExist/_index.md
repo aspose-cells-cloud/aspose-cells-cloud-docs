@@ -2,7 +2,7 @@
 title: "StorageExist"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /storageexist/
+url: /specification/model/storageexist/
 description: "Storage exists"
 weight: 50
 ---

@@ -2,7 +2,7 @@
 title: "PostWorksheetAutoFilterRefresh"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postworksheetautofilterrefresh/
+url: /specification/operation/postworksheetautofilterrefresh/
 description: "Refresh auto filters in the worksheet."
 weight: 50
 

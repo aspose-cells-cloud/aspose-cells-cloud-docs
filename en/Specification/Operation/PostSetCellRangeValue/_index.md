@@ -2,7 +2,7 @@
 title: "PostSetCellRangeValue"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postsetcellrangevalue/
+url: /specification/operation/postsetcellrangevalue/
 description: "Set the value of the range in the worksheet."
 weight: 50
 

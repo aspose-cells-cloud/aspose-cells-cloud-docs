@@ -2,7 +2,7 @@
 title: "DeleteDocumentProperties"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /deletedocumentproperties/
+url: /specification/operation/deletedocumentproperties/
 description: "Delete all custom document properties and reset built-in ones."
 weight: 50
 

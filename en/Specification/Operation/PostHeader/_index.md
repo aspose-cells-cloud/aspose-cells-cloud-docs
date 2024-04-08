@@ -2,7 +2,7 @@
 title: "PostHeader"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postheader/
+url: /specification/operation/postheader/
 description: "Update page header in the worksheet."
 weight: 50
 

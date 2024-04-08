@@ -2,7 +2,7 @@
 title: "MarkdownSaveOptions"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /markdownsaveoptions/
+url: /specification/model/markdownsaveoptions/
 description: "Represents options of saving .md file."
 weight: 50
 ---

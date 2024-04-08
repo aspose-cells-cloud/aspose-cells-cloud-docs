@@ -2,7 +2,7 @@
 title: "CellsColor"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /cellscolor/
+url: /specification/model/cellscolor/
 description: ""
 weight: 50
 ---

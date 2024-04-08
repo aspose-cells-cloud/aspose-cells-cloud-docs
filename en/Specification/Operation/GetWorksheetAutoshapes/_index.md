@@ -2,7 +2,7 @@
 title: "GetWorksheetAutoshapes"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getworksheetautoshapes/
+url: /specification/operation/getworksheetautoshapes/
 description: "Get autoshapes description in worksheet."
 weight: 50
 

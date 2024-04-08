@@ -2,7 +2,7 @@
 title: "DisplayUnitLabelResponse"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /displayunitlabelresponse/
+url: /specification/model/displayunitlabelresponse/
 description: ""
 weight: 50
 ---

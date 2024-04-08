@@ -2,7 +2,7 @@
 title: "GetChartCategoryAxis"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getchartcategoryaxis/
+url: /specification/operation/getchartcategoryaxis/
 description: "Retrieve descriptions of chart series axis in the chart."
 weight: 50
 

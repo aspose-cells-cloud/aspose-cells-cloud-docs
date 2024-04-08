@@ -2,7 +2,7 @@
 title: "SortKey"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /sortkey/
+url: /specification/model/sortkey/
 description: ""
 weight: 50
 ---

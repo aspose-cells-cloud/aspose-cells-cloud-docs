@@ -2,7 +2,7 @@
 title: "PostWorkbookSaveAs"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postworkbooksaveas/
+url: /specification/operation/postworkbooksaveas/
 description: "Save an Excel file in various formats."
 weight: 50
 

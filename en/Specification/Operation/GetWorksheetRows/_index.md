@@ -2,7 +2,7 @@
 title: "GetWorksheetRows"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getworksheetrows/
+url: /specification/operation/getworksheetrows/
 description: "Retrieve descriptions of rows in the worksheet."
 weight: 50
 

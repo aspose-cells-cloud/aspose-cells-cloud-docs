@@ -2,7 +2,7 @@
 title: "PostWorksheetCellsRangeMoveTo"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postworksheetcellsrangemoveto/
+url: /specification/operation/postworksheetcellsrangemoveto/
 description: "Move the current range to the destination range."
 weight: 50
 

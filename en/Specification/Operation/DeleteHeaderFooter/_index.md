@@ -2,7 +2,7 @@
 title: "DeleteHeaderFooter"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /deleteheaderfooter/
+url: /specification/operation/deleteheaderfooter/
 description: "Clear header and footer in the worksheet."
 weight: 50
 

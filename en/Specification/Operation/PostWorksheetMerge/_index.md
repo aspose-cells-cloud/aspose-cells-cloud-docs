@@ -2,7 +2,7 @@
 title: "PostWorksheetMerge"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postworksheetmerge/
+url: /specification/operation/postworksheetmerge/
 description: "Merge cells in the worksheet."
 weight: 50
 

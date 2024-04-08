@@ -2,7 +2,7 @@
 title: "PostConvertWorkbookToPDF"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postconvertworkbooktopdf/
+url: /specification/operation/postconvertworkbooktopdf/
 description: "Convert Excel file to PDF files."
 weight: 50
 

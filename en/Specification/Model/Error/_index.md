@@ -2,7 +2,7 @@
 title: "Error"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /error/
+url: /specification/model/error/
 description: "Error"
 weight: 50
 ---

@@ -2,7 +2,7 @@
 title: "PostWorksheetCellsRangeColumnWidth"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postworksheetcellsrangecolumnwidth/
+url: /specification/operation/postworksheetcellsrangecolumnwidth/
 description: "Set the column width of the specified range."
 weight: 50
 

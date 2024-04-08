@@ -2,7 +2,7 @@
 title: "GroupBoxResponse"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /groupboxresponse/
+url: /specification/model/groupboxresponse/
 description: ""
 weight: 50
 ---

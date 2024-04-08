@@ -2,7 +2,7 @@
 title: "PutWorksheetFormatConditionArea"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /putworksheetformatconditionarea/
+url: /specification/operation/putworksheetformatconditionarea/
 description: "Add a cell area for the format condition in the worksheet."
 weight: 50
 

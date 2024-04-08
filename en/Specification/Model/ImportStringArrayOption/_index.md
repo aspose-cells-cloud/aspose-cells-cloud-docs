@@ -2,7 +2,7 @@
 title: "ImportStringArrayOption"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /importstringarrayoption/
+url: /specification/model/importstringarrayoption/
 description: ""
 weight: 50
 ---

@@ -2,7 +2,7 @@
 title: "CalculateFormulaResponse"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /calculateformularesponse/
+url: /specification/model/calculateformularesponse/
 description: ""
 weight: 50
 ---

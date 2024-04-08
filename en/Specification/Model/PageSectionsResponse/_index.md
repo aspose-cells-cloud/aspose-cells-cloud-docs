@@ -2,7 +2,7 @@
 title: "PageSectionsResponse"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /pagesectionsresponse/
+url: /specification/model/pagesectionsresponse/
 description: ""
 weight: 50
 ---

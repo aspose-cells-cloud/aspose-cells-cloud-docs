@@ -2,7 +2,7 @@
 title: "ErrorBar"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /errorbar/
+url: /specification/model/errorbar/
 description: ""
 weight: 50
 ---

@@ -2,7 +2,7 @@
 title: "PostUpdateWorksheetProperty"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postupdateworksheetproperty/
+url: /specification/operation/postupdateworksheetproperty/
 description: "Update worksheet properties in the workbook."
 weight: 50
 

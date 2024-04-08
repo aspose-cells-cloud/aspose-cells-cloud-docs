@@ -2,7 +2,7 @@
 title: "PostClearObjects"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postclearobjects/
+url: /specification/operation/postclearobjects/
 description: "Clear internal elements in Excel files and generate output files in various formats."
 weight: 50
 

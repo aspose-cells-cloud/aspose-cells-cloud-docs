@@ -2,7 +2,7 @@
 title: "PostWorkbookExportXML"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postworkbookexportxml/
+url: /specification/operation/postworkbookexportxml/
 description: "Export XML data from an Excel file.When there are XML Maps in an Excel file, export XML data. When there is no XML map in the Excel file, convert the Excel file to an XML file."
 weight: 50
 

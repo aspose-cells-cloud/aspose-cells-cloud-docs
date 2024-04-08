@@ -2,7 +2,7 @@
 title: "HorizontalPageBreaks"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /horizontalpagebreaks/
+url: /specification/model/horizontalpagebreaks/
 description: ""
 weight: 50
 ---

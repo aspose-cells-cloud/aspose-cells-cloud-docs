@@ -2,7 +2,7 @@
 title: "RangeResponse"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /rangeresponse/
+url: /specification/model/rangeresponse/
 description: ""
 weight: 50
 ---

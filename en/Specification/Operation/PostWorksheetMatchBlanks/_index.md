@@ -2,7 +2,7 @@
 title: "PostWorksheetMatchBlanks"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postworksheetmatchblanks/
+url: /specification/operation/postworksheetmatchblanks/
 description: "Match all blank cells in the list."
 weight: 50
 

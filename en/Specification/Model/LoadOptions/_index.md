@@ -2,7 +2,7 @@
 title: "LoadOptions"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /loadoptions/
+url: /specification/model/loadoptions/
 description: ""
 weight: 50
 ---

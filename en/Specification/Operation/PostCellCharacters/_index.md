@@ -2,7 +2,7 @@
 title: "PostCellCharacters"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postcellcharacters/
+url: /specification/operation/postcellcharacters/
 description: "Set cell characters in the worksheet."
 weight: 50
 

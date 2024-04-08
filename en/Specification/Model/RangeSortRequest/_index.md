@@ -2,7 +2,7 @@
 title: "RangeSortRequest"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /rangesortrequest/
+url: /specification/model/rangesortrequest/
 description: "Indicates range sort request"
 weight: 50
 ---

@@ -2,7 +2,7 @@
 title: "PutProtectWorksheet"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /putprotectworksheet/
+url: /specification/operation/putprotectworksheet/
 description: "Protect worksheet."
 weight: 50
 

@@ -2,7 +2,7 @@
 title: "GetWorksheetPivotTableFilters"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getworksheetpivottablefilters/
+url: /specification/operation/getworksheetpivottablefilters/
 description: "Gets PivotTable filters in worksheet."
 weight: 50
 

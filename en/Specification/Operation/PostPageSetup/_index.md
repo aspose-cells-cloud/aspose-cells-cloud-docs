@@ -2,7 +2,7 @@
 title: "PostPageSetup"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postpagesetup/
+url: /specification/operation/postpagesetup/
 description: "Update page setup in the worksheet."
 weight: 50
 

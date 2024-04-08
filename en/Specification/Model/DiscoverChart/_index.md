@@ -2,7 +2,7 @@
 title: "DiscoverChart"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /discoverchart/
+url: /specification/model/discoverchart/
 description: ""
 weight: 50
 ---

@@ -2,7 +2,7 @@
 title: "TextureFill"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /texturefill/
+url: /specification/model/texturefill/
 description: ""
 weight: 50
 ---

@@ -2,7 +2,7 @@
 title: "PostWorksheetPivotTableMove"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postworksheetpivottablemove/
+url: /specification/operation/postworksheetpivottablemove/
 description: "Move PivotTable in the worksheet."
 weight: 50
 

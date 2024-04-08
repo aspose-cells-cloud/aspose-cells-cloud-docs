@@ -2,7 +2,7 @@
 title: "GoogleDriveStorageFile"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /googledrivestoragefile/
+url: /specification/model/googledrivestoragefile/
 description: ""
 weight: 50
 ---

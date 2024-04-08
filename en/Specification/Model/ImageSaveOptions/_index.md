@@ -2,7 +2,7 @@
 title: "ImageSaveOptions"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /imagesaveoptions/
+url: /specification/model/imagesaveoptions/
 description: "Represents options of saving image file."
 weight: 50
 ---

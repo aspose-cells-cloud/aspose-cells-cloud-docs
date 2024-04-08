@@ -2,7 +2,7 @@
 title: "DeleteUnprotectWorksheet"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /deleteunprotectworksheet/
+url: /specification/operation/deleteunprotectworksheet/
 description: "Unprotect worksheet."
 weight: 50
 

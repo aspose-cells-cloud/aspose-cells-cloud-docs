@@ -2,7 +2,7 @@
 title: "GetWorkbookSettings"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getworkbooksettings/
+url: /specification/operation/getworkbooksettings/
 description: "Retrieve descriptions of workbook settings."
 weight: 50
 

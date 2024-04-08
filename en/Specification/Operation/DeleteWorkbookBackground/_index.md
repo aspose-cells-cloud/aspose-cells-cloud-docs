@@ -2,7 +2,7 @@
 title: "DeleteWorkbookBackground"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /deleteworkbookbackground/
+url: /specification/operation/deleteworkbookbackground/
 description: "Delete background in the workbook."
 weight: 50
 

@@ -2,7 +2,7 @@
 title: "PostWorksheetCellSetValue"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postworksheetcellsetvalue/
+url: /specification/operation/postworksheetcellsetvalue/
 description: "Set cell value using cell name in the worksheet."
 weight: 50
 

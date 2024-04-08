@@ -2,7 +2,7 @@
 title: "FillFormatResponse"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /fillformatresponse/
+url: /specification/model/fillformatresponse/
 description: ""
 weight: 50
 ---

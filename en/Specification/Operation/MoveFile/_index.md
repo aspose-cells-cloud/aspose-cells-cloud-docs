@@ -2,7 +2,7 @@
 title: "MoveFile"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /movefile/
+url: /specification/operation/movefile/
 description: ""
 weight: 50
 

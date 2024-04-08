@@ -2,7 +2,7 @@
 title: "PostCopyCellIntoCell"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postcopycellintocell/
+url: /specification/operation/postcopycellintocell/
 description: "Copy data from a source cell to a destination cell in the worksheet."
 weight: 50
 

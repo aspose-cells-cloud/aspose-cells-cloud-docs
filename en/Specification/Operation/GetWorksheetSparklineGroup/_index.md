@@ -2,7 +2,7 @@
 title: "GetWorksheetSparklineGroup"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getworksheetsparklinegroup/
+url: /specification/operation/getworksheetsparklinegroup/
 description: "Retrieve description of a sparkline group in the worksheet."
 weight: 50
 

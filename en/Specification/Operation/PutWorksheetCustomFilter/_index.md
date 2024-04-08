@@ -2,7 +2,7 @@
 title: "PutWorksheetCustomFilter"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /putworksheetcustomfilter/
+url: /specification/operation/putworksheetcustomfilter/
 description: "Filter a list with custom criteria in the worksheet."
 weight: 50
 

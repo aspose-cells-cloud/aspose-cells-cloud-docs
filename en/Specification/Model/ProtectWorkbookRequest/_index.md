@@ -2,7 +2,7 @@
 title: "ProtectWorkbookRequest"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /protectworkbookrequest/
+url: /specification/model/protectworkbookrequest/
 description: "Indicates protect workbook request"
 weight: 50
 ---

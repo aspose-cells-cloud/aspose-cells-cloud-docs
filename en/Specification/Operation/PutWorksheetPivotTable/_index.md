@@ -2,7 +2,7 @@
 title: "PutWorksheetPivotTable"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /putworksheetpivottable/
+url: /specification/operation/putworksheetpivottable/
 description: "Add a PivotTable in the worksheet."
 weight: 50
 

@@ -2,7 +2,7 @@
 title: "Import2DimensionIntArrayOption"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /import2dimensionintarrayoption/
+url: /specification/model/import2dimensionintarrayoption/
 description: ""
 weight: 50
 ---

@@ -2,7 +2,7 @@
 title: "PostCopyWorksheetRows"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postcopyworksheetrows/
+url: /specification/operation/postcopyworksheetrows/
 description: "Copy data and formats from specific entire rows in the worksheet."
 weight: 50
 

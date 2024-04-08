@@ -2,7 +2,7 @@
 title: "PostConvertWorkbookToSQL"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postconvertworkbooktosql/
+url: /specification/operation/postconvertworkbooktosql/
 description: "Convert Excel file to SQL Script files."
 weight: 50
 

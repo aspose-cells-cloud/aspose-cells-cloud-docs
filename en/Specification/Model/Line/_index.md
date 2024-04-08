@@ -2,7 +2,7 @@
 title: "Line"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /line/
+url: /specification/model/line/
 description: "Encapsulates the object that represents the line format."
 weight: 50
 ---

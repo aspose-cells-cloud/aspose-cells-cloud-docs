@@ -2,7 +2,7 @@
 title: "DifSaveOptions"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /difsaveoptions/
+url: /specification/model/difsaveoptions/
 description: "Represents the options of saving dif file."
 weight: 50
 ---

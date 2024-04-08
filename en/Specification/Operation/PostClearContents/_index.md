@@ -2,7 +2,7 @@
 title: "PostClearContents"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postclearcontents/
+url: /specification/operation/postclearcontents/
 description: "Clear cell area contents in the worksheet."
 weight: 50
 

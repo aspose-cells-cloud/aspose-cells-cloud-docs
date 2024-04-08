@@ -2,7 +2,7 @@
 title: "PutWorksheetFormatCondition"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /putworksheetformatcondition/
+url: /specification/operation/putworksheetformatcondition/
 description: "Add a format condition in the worksheet."
 weight: 50
 

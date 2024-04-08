@@ -2,7 +2,7 @@
 title: "ValidationResponse"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /validationresponse/
+url: /specification/model/validationresponse/
 description: ""
 weight: 50
 ---

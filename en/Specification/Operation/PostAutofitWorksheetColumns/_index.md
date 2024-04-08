@@ -2,7 +2,7 @@
 title: "PostAutofitWorksheetColumns"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postautofitworksheetcolumns/
+url: /specification/operation/postautofitworksheetcolumns/
 description: "Autofit columns in the worksheet."
 weight: 50
 

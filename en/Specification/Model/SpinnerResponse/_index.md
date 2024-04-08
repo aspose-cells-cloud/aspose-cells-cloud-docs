@@ -2,7 +2,7 @@
 title: "SpinnerResponse"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /spinnerresponse/
+url: /specification/model/spinnerresponse/
 description: ""
 weight: 50
 ---

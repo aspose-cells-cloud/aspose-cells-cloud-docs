@@ -2,7 +2,7 @@
 title: "ColorScale"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /colorscale/
+url: /specification/model/colorscale/
 description: "Describe the ColorScale conditional formatting rule. This conditional formatting   rule creates a gradated color scale on the cells.            "
 weight: 50
 ---

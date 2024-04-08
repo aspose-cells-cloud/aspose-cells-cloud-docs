@@ -2,7 +2,7 @@
 title: "ResultSource"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /resultsource/
+url: /specification/model/resultsource/
 description: ""
 weight: 50
 ---

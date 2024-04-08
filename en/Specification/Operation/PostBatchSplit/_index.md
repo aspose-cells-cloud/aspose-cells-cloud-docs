@@ -2,7 +2,7 @@
 title: "PostBatchSplit"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postbatchsplit/
+url: /specification/operation/postbatchsplit/
 description: "Batch splitting files that meet specific matching conditions."
 weight: 50
 

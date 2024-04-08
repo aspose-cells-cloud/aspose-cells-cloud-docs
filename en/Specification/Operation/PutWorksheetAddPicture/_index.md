@@ -2,7 +2,7 @@
 title: "PutWorksheetAddPicture"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /putworksheetaddpicture/
+url: /specification/operation/putworksheetaddpicture/
 description: "Add a new picture in the worksheet."
 weight: 50
 

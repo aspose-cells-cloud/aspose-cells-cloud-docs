@@ -2,7 +2,7 @@
 title: "SeriesResponse"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /seriesresponse/
+url: /specification/model/seriesresponse/
 description: ""
 weight: 50
 ---

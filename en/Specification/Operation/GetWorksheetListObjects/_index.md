@@ -2,7 +2,7 @@
 title: "GetWorksheetListObjects"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getworksheetlistobjects/
+url: /specification/operation/getworksheetlistobjects/
 description: "Retrieve descriptions of ListObjects in the worksheet."
 weight: 50
 

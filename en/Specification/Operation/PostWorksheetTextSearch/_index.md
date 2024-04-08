@@ -2,7 +2,7 @@
 title: "PostWorksheetTextSearch"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postworksheettextsearch/
+url: /specification/operation/postworksheettextsearch/
 description: "Search for text in the worksheet."
 weight: 50
 

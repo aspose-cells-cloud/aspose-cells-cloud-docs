@@ -2,7 +2,7 @@
 title: "PostWorkbookSettings"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postworkbooksettings/
+url: /specification/operation/postworkbooksettings/
 description: "Update setting in the workbook."
 weight: 50
 

@@ -2,7 +2,7 @@
 title: "Top10Filter"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /top10filter/
+url: /specification/model/top10filter/
 description: ""
 weight: 50
 ---

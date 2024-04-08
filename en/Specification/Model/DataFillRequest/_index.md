@@ -2,7 +2,7 @@
 title: "DataFillRequest"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /datafillrequest/
+url: /specification/model/datafillrequest/
 description: ""
 weight: 50
 ---

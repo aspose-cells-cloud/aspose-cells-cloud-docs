@@ -2,7 +2,7 @@
 title: "RenderingWatermark"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /renderingwatermark/
+url: /specification/model/renderingwatermark/
 description: ""
 weight: 50
 ---

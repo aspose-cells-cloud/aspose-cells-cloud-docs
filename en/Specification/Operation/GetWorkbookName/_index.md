@@ -2,7 +2,7 @@
 title: "GetWorkbookName"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getworkbookname/
+url: /specification/operation/getworkbookname/
 description: "Retrieve description of a named range in the workbook."
 weight: 50
 

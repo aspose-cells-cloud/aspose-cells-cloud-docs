@@ -2,7 +2,7 @@
 title: "PutConvertWorkbook"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /putconvertworkbook/
+url: /specification/operation/putconvertworkbook/
 description: "Convert the workbook from the requested content into files in different formats."
 weight: 50
 

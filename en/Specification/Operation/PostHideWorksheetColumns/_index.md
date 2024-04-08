@@ -2,7 +2,7 @@
 title: "PostHideWorksheetColumns"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /posthideworksheetcolumns/
+url: /specification/operation/posthideworksheetcolumns/
 description: "Hide worksheet columns in the worksheet."
 weight: 50
 

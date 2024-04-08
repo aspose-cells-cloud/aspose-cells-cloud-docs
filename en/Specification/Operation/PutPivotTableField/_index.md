@@ -2,7 +2,7 @@
 title: "PutPivotTableField"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /putpivottablefield/
+url: /specification/operation/putpivottablefield/
 description: "Add a pivot field in the PivotTable."
 weight: 50
 

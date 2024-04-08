@@ -2,7 +2,7 @@
 title: "FilesUploadResult"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /filesuploadresult/
+url: /specification/model/filesuploadresult/
 description: "File upload result"
 weight: 50
 ---

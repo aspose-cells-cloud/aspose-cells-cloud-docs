@@ -2,7 +2,7 @@
 title: "PostWorksheetCellsRangesCopy"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postworksheetcellsrangescopy/
+url: /specification/operation/postworksheetcellsrangescopy/
 description: "Copy content from the source range to the destination range in the worksheet."
 weight: 50
 

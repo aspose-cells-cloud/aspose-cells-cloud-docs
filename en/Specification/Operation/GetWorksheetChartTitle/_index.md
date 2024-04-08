@@ -2,7 +2,7 @@
 title: "GetWorksheetChartTitle"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getworksheetcharttitle/
+url: /specification/operation/getworksheetcharttitle/
 description: "Retrieve chart title description in the worksheet."
 weight: 50
 

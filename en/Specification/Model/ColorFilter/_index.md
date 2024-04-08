@@ -2,7 +2,7 @@
 title: "ColorFilter"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /colorfilter/
+url: /specification/model/colorfilter/
 description: "Color filter."
 weight: 50
 ---

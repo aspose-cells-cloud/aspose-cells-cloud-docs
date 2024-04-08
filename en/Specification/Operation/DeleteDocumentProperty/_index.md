@@ -2,7 +2,7 @@
 title: "DeleteDocumentProperty"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /deletedocumentproperty/
+url: /specification/operation/deletedocumentproperty/
 description: "Delete an Excel property."
 weight: 50
 

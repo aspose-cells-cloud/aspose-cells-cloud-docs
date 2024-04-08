@@ -2,7 +2,7 @@
 title: "GetNamedRangeValue"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getnamedrangevalue/
+url: /specification/operation/getnamedrangevalue/
 description: "Retrieve values in range."
 weight: 50
 

@@ -2,7 +2,7 @@
 title: "GetCellsCloudServiceStatus"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getcellscloudservicestatus/
+url: /specification/operation/getcellscloudservicestatus/
 description: "Aspose.Cells Cloud service health status check."
 weight: 50
 

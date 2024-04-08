@@ -2,7 +2,7 @@
 title: "DeleteFolder"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /deletefolder/
+url: /specification/operation/deletefolder/
 description: ""
 weight: 50
 

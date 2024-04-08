@@ -2,7 +2,7 @@
 title: "PutWorksheetValidation"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /putworksheetvalidation/
+url: /specification/operation/putworksheetvalidation/
 description: "Add a validation at index in the worksheet."
 weight: 50
 

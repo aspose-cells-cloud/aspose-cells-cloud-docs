@@ -2,7 +2,7 @@
 title: "DeleteHorizontalPageBreak"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /deletehorizontalpagebreak/
+url: /specification/operation/deletehorizontalpagebreak/
 description: "Delete a horizontal page break in the worksheet."
 weight: 50
 

@@ -2,7 +2,7 @@
 title: "DropBars"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /dropbars/
+url: /specification/model/dropbars/
 description: ""
 weight: 50
 ---

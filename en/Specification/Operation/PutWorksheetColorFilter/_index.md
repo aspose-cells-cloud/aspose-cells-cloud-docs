@@ -2,7 +2,7 @@
 title: "PutWorksheetColorFilter"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /putworksheetcolorfilter/
+url: /specification/operation/putworksheetcolorfilter/
 description: "Add a color filter in the worksheet."
 weight: 50
 

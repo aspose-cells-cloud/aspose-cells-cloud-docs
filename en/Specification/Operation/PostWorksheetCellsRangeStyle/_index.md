@@ -2,7 +2,7 @@
 title: "PostWorksheetCellsRangeStyle"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postworksheetcellsrangestyle/
+url: /specification/operation/postworksheetcellsrangestyle/
 description: "Set the style for the specified range."
 weight: 50
 

@@ -2,7 +2,7 @@
 title: "SqlScriptSaveOptions"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /sqlscriptsaveoptions/
+url: /specification/model/sqlscriptsaveoptions/
 description: "Represents the options of saving .sql file."
 weight: 50
 ---

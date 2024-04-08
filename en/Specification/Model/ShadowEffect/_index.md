@@ -2,7 +2,7 @@
 title: "ShadowEffect"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /shadoweffect/
+url: /specification/model/shadoweffect/
 description: ""
 weight: 50
 ---

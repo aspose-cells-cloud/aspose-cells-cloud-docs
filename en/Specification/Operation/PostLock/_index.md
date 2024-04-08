@@ -2,7 +2,7 @@
 title: "PostLock"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postlock/
+url: /specification/operation/postlock/
 description: "Lock Excel files."
 weight: 50
 

@@ -2,7 +2,7 @@
 title: "GetPivotTableField"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getpivottablefield/
+url: /specification/operation/getpivottablefield/
 description: "Retrieve descriptions of pivot fields in the PivotTable."
 weight: 50
 

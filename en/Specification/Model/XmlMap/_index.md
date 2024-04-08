@@ -2,7 +2,7 @@
 title: "XmlMap"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /xmlmap/
+url: /specification/model/xmlmap/
 description: "Represents Xml map information. "
 weight: 50
 ---

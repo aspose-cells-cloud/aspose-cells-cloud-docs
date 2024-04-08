@@ -2,7 +2,7 @@
 title: "ColumnDataExceptionDescription"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /columndataexceptiondescription/
+url: /specification/model/columndataexceptiondescription/
 description: ""
 weight: 50
 ---

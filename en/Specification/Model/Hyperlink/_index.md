@@ -2,7 +2,7 @@
 title: "Hyperlink"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /hyperlink/
+url: /specification/model/hyperlink/
 description: ""
 weight: 50
 ---

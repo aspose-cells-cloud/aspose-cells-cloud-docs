@@ -2,7 +2,7 @@
 title: "GetWorksheetCalculateFormula"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getworksheetcalculateformula/
+url: /specification/operation/getworksheetcalculateformula/
 description: "Calculate formula in the worksheet."
 weight: 50
 

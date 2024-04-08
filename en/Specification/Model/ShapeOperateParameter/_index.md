@@ -2,7 +2,7 @@
 title: "ShapeOperateParameter"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /shapeoperateparameter/
+url: /specification/model/shapeoperateparameter/
 description: ""
 weight: 50
 ---

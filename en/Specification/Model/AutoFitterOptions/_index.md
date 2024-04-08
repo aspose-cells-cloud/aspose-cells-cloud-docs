@@ -2,7 +2,7 @@
 title: "AutoFitterOptions"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /autofitteroptions/
+url: /specification/model/autofitteroptions/
 description: ""
 weight: 50
 ---

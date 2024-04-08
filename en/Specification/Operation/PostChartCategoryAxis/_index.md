@@ -2,7 +2,7 @@
 title: "PostChartCategoryAxis"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postchartcategoryaxis/
+url: /specification/operation/postchartcategoryaxis/
 description: "Update chart category axis in the chart."
 weight: 50
 

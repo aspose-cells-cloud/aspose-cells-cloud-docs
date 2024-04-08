@@ -2,7 +2,7 @@
 title: "SparklineGroups"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /sparklinegroups/
+url: /specification/model/sparklinegroups/
 description: "Encapsulates a collection of Aspose.Cells.Charts.SparklineGroup objects.            "
 weight: 50
 ---

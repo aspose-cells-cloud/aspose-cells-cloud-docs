@@ -2,7 +2,7 @@
 title: "GetWorksheetCellsRangeValue"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getworksheetcellsrangevalue/
+url: /specification/operation/getworksheetcellsrangevalue/
 description: "Retrieve the values of cells within the specified range."
 weight: 50
 

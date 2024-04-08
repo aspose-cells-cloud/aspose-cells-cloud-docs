@@ -2,7 +2,7 @@
 title: "GetPageSetup"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getpagesetup/
+url: /specification/operation/getpagesetup/
 description: "Retrieve page setup description in the worksheet."
 weight: 50
 

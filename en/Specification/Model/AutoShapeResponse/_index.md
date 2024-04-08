@@ -2,7 +2,7 @@
 title: "AutoShapeResponse"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /autoshaperesponse/
+url: /specification/model/autoshaperesponse/
 description: ""
 weight: 50
 ---

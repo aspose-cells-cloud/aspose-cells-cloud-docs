@@ -2,7 +2,7 @@
 title: "SplitResultDocument"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /splitresultdocument/
+url: /specification/model/splitresultdocument/
 description: ""
 weight: 50
 ---

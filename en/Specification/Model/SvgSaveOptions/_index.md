@@ -2,7 +2,7 @@
 title: "SvgSaveOptions"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /svgsaveoptions/
+url: /specification/model/svgsaveoptions/
 description: "Represents the options of saving .svg file."
 weight: 50
 ---

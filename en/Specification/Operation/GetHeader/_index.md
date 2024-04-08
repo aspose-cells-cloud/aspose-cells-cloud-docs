@@ -2,7 +2,7 @@
 title: "GetHeader"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getheader/
+url: /specification/operation/getheader/
 description: "Retrieve page header description in the worksheet."
 weight: 50
 

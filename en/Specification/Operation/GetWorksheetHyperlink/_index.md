@@ -2,7 +2,7 @@
 title: "GetWorksheetHyperlink"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getworksheethyperlink/
+url: /specification/operation/getworksheethyperlink/
 description: "Retrieve hyperlink description by index in the worksheet."
 weight: 50
 

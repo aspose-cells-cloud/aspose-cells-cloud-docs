@@ -2,7 +2,7 @@
 title: "SplitWorkbookTaskParameter"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /splitworkbooktaskparameter/
+url: /specification/model/splitworkbooktaskparameter/
 description: ""
 weight: 50
 ---

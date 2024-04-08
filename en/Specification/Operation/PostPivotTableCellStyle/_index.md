@@ -2,7 +2,7 @@
 title: "PostPivotTableCellStyle"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postpivottablecellstyle/
+url: /specification/operation/postpivottablecellstyle/
 description: "Update cell style in the PivotTable."
 weight: 50
 

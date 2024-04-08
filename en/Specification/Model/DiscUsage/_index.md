@@ -2,7 +2,7 @@
 title: "DiscUsage"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /discusage/
+url: /specification/model/discusage/
 description: "Class for disc space information."
 weight: 50
 ---

@@ -2,7 +2,7 @@
 title: "PutDocumentProperty"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /putdocumentproperty/
+url: /specification/operation/putdocumentproperty/
 description: "Set or add an Excel property."
 weight: 50
 

@@ -2,7 +2,7 @@
 title: "PostSetCellHtmlString"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postsetcellhtmlstring/
+url: /specification/operation/postsetcellhtmlstring/
 description: "Set the HTML string containing data and specific formats in this cell."
 weight: 50
 

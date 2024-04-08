@@ -2,7 +2,7 @@
 title: "PostWorksheetSparklineGroup"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postworksheetsparklinegroup/
+url: /specification/operation/postworksheetsparklinegroup/
 description: "Update a sparkline group in the worksheet."
 weight: 50
 

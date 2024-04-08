@@ -2,7 +2,7 @@
 title: "WorkbookSettings"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /workbooksettings/
+url: /specification/model/workbooksettings/
 description: ""
 weight: 50
 ---

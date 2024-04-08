@@ -2,7 +2,7 @@
 title: "PostSplit"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postsplit/
+url: /specification/operation/postsplit/
 description: "Split Excel spreadsheet files based on worksheets and create output files in various formats."
 weight: 50
 

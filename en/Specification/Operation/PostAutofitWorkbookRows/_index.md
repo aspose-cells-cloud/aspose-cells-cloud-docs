@@ -2,7 +2,7 @@
 title: "PostAutofitWorkbookRows"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postautofitworkbookrows/
+url: /specification/operation/postautofitworkbookrows/
 description: "Autofit rows in the workbook."
 weight: 50
 

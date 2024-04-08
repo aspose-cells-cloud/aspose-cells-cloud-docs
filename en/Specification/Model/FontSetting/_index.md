@@ -2,7 +2,7 @@
 title: "FontSetting"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /fontsetting/
+url: /specification/model/fontsetting/
 description: ""
 weight: 50
 ---

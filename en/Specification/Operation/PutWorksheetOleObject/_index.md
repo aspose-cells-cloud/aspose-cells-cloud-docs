@@ -2,7 +2,7 @@
 title: "PutWorksheetOleObject"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /putworksheetoleobject/
+url: /specification/operation/putworksheetoleobject/
 description: "Add an OLE object in the worksheet."
 weight: 50
 

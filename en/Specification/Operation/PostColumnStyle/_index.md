@@ -2,7 +2,7 @@
 title: "PostColumnStyle"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postcolumnstyle/
+url: /specification/operation/postcolumnstyle/
 description: "Set column style in the worksheet."
 weight: 50
 

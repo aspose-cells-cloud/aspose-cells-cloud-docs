@@ -2,7 +2,7 @@
 title: "PostWatermark"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postwatermark/
+url: /specification/operation/postwatermark/
 description: "Add Text Watermark to Excel files and generate output files in various formats."
 weight: 50
 

@@ -2,7 +2,7 @@
 title: "PostWorksheetListObjectInsertSlicer"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postworksheetlistobjectinsertslicer/
+url: /specification/operation/postworksheetlistobjectinsertslicer/
 description: "Insert slicer for list object."
 weight: 50
 

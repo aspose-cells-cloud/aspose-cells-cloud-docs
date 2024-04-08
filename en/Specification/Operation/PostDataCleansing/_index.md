@@ -2,7 +2,7 @@
 title: "PostDataCleansing"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postdatacleansing/
+url: /specification/operation/postdatacleansing/
 description: "Data cleansing of spreadsheet files is a data management process used to identify, correct, and remove errors, incompleteness, duplicates, or inaccuracies in tables and ranges."
 weight: 50
 

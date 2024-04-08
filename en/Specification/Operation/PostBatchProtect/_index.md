@@ -2,7 +2,7 @@
 title: "PostBatchProtect"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postbatchprotect/
+url: /specification/operation/postbatchprotect/
 description: "Batch protecting files that meet specific matching conditions."
 weight: 50
 

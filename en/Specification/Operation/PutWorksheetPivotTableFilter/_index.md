@@ -2,7 +2,7 @@
 title: "PutWorksheetPivotTableFilter"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /putworksheetpivottablefilter/
+url: /specification/operation/putworksheetpivottablefilter/
 description: "Add a pivot filter to the PivotTable."
 weight: 50
 

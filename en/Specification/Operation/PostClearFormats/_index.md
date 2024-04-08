@@ -2,7 +2,7 @@
 title: "PostClearFormats"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postclearformats/
+url: /specification/operation/postclearformats/
 description: "Clear cell formats in the worksheet."
 weight: 50
 

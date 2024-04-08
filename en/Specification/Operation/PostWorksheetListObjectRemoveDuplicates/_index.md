@@ -2,7 +2,7 @@
 title: "PostWorksheetListObjectRemoveDuplicates"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postworksheetlistobjectremoveduplicates/
+url: /specification/operation/postworksheetlistobjectremoveduplicates/
 description: "Remove duplicates in list object."
 weight: 50
 

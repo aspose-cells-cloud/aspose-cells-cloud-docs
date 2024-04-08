@@ -2,7 +2,7 @@
 title: "PostWorksheetChart"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postworksheetchart/
+url: /specification/operation/postworksheetchart/
 description: "Update chart properties in the worksheet."
 weight: 50
 

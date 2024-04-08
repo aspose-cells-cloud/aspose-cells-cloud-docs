@@ -2,7 +2,7 @@
 title: "PivotFilterResponse"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /pivotfilterresponse/
+url: /specification/model/pivotfilterresponse/
 description: ""
 weight: 50
 ---

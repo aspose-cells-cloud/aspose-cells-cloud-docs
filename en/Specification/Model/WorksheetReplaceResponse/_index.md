@@ -2,7 +2,7 @@
 title: "WorksheetReplaceResponse"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /worksheetreplaceresponse/
+url: /specification/model/worksheetreplaceresponse/
 description: ""
 weight: 50
 ---

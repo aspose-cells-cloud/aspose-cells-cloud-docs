@@ -2,7 +2,7 @@
 title: "ImportPictureOption"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /importpictureoption/
+url: /specification/model/importpictureoption/
 description: ""
 weight: 50
 ---

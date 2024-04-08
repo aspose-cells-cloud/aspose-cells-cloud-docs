@@ -2,7 +2,7 @@
 title: "DeleteWorksheetDateFilter"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /deleteworksheetdatefilter/
+url: /specification/operation/deleteworksheetdatefilter/
 description: "Remove a date filter in the worksheet."
 weight: 50
 

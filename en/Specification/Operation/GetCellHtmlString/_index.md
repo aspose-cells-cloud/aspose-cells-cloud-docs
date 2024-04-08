@@ -2,7 +2,7 @@
 title: "GetCellHtmlString"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getcellhtmlstring/
+url: /specification/operation/getcellhtmlstring/
 description: "Retrieve the HTML string containing data and specific formats in this cell."
 weight: 50
 

@@ -2,7 +2,7 @@
 title: "PivotTablesResponse"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /pivottablesresponse/
+url: /specification/model/pivottablesresponse/
 description: ""
 weight: 50
 ---

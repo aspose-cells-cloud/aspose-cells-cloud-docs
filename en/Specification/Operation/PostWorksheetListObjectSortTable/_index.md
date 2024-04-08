@@ -2,7 +2,7 @@
 title: "PostWorksheetListObjectSortTable"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postworksheetlistobjectsorttable/
+url: /specification/operation/postworksheetlistobjectsorttable/
 description: "Sort list object in the worksheet."
 weight: 50
 

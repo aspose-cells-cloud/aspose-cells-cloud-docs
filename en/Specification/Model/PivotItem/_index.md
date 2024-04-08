@@ -2,7 +2,7 @@
 title: "PivotItem"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /pivotitem/
+url: /specification/model/pivotitem/
 description: ""
 weight: 50
 ---

@@ -2,7 +2,7 @@
 title: "FileVersions"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /fileversions/
+url: /specification/model/fileversions/
 description: "File versions FileVersion."
 weight: 50
 ---

@@ -2,7 +2,7 @@
 title: "GetWorksheetWithFormat"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getworksheetwithformat/
+url: /specification/operation/getworksheetwithformat/
 description: "Retrieve the worksheet in a specified format from the workbook."
 weight: 50
 

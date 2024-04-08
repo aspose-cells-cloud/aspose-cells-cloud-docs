@@ -2,7 +2,7 @@
 title: "GetWorksheetMergedCell"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getworksheetmergedcell/
+url: /specification/operation/getworksheetmergedcell/
 description: "Retrieve description of a merged cell by its index in the worksheet."
 weight: 50
 

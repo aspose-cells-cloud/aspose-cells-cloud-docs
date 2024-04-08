@@ -2,7 +2,7 @@
 title: "PostProtect"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postprotect/
+url: /specification/operation/postprotect/
 description: "Excel files encryption."
 weight: 50
 

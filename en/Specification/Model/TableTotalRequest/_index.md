@@ -2,7 +2,7 @@
 title: "TableTotalRequest"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /tabletotalrequest/
+url: /specification/model/tabletotalrequest/
 description: "Indicates table total request"
 weight: 50
 ---

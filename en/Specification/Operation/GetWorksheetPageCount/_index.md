@@ -2,7 +2,7 @@
 title: "GetWorksheetPageCount"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getworksheetpagecount/
+url: /specification/operation/getworksheetpagecount/
 description: "Get page count in the worksheet."
 weight: 50
 

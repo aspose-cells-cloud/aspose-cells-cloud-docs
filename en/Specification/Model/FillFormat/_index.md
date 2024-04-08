@@ -2,7 +2,7 @@
 title: "FillFormat"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /fillformat/
+url: /specification/model/fillformat/
 description: ""
 weight: 50
 ---

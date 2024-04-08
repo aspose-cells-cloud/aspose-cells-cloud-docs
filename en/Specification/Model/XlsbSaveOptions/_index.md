@@ -2,7 +2,7 @@
 title: "XlsbSaveOptions"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /xlsbsaveoptions/
+url: /specification/model/xlsbsaveoptions/
 description: "Represents the options of saving .xlsb file."
 weight: 50
 ---

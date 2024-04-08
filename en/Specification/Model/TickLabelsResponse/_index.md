@@ -2,7 +2,7 @@
 title: "TickLabelsResponse"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /ticklabelsresponse/
+url: /specification/model/ticklabelsresponse/
 description: ""
 weight: 50
 ---

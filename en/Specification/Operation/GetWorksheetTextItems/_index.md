@@ -2,7 +2,7 @@
 title: "GetWorksheetTextItems"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getworksheettextitems/
+url: /specification/operation/getworksheettextitems/
 description: "Retrieve text items in the worksheet."
 weight: 50
 

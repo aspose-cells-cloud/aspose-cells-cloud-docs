@@ -2,7 +2,7 @@
 title: "DataColumnFillValue"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /datacolumnfillvalue/
+url: /specification/model/datacolumnfillvalue/
 description: ""
 weight: 50
 ---

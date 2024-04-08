@@ -2,7 +2,7 @@
 title: "DateSourceType"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /datesourcetype/
+url: /specification/model/datesourcetype/
 description: ""
 weight: 50
 ---

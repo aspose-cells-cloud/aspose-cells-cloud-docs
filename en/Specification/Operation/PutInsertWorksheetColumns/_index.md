@@ -2,7 +2,7 @@
 title: "PutInsertWorksheetColumns"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /putinsertworksheetcolumns/
+url: /specification/operation/putinsertworksheetcolumns/
 description: "Insert worksheet columns in the worksheet."
 weight: 50
 

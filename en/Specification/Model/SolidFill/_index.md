@@ -2,7 +2,7 @@
 title: "SolidFill"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /solidfill/
+url: /specification/model/solidfill/
 description: ""
 weight: 50
 ---

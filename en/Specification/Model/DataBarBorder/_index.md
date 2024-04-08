@@ -2,7 +2,7 @@
 title: "DataBarBorder"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /databarborder/
+url: /specification/model/databarborder/
 description: ""
 weight: 50
 ---

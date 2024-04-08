@@ -2,7 +2,7 @@
 title: "TrendlineResponse"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /trendlineresponse/
+url: /specification/model/trendlineresponse/
 description: ""
 weight: 50
 ---

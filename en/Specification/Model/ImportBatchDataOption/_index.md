@@ -2,7 +2,7 @@
 title: "ImportBatchDataOption"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /importbatchdataoption/
+url: /specification/model/importbatchdataoption/
 description: ""
 weight: 50
 ---

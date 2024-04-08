@@ -2,7 +2,7 @@
 title: "MergedCells"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /mergedcells/
+url: /specification/model/mergedcells/
 description: ""
 weight: 50
 ---

@@ -2,7 +2,7 @@
 title: "PivotField"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /pivotfield/
+url: /specification/model/pivotfield/
 description: ""
 weight: 50
 ---

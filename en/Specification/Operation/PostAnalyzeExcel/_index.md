@@ -2,7 +2,7 @@
 title: "PostAnalyzeExcel"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postanalyzeexcel/
+url: /specification/operation/postanalyzeexcel/
 description: "Perform business analysis of data in Excel files."
 weight: 50
 

@@ -2,7 +2,7 @@
 title: "RectangleShapeResponse"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /rectangleshaperesponse/
+url: /specification/model/rectangleshaperesponse/
 description: ""
 weight: 50
 ---

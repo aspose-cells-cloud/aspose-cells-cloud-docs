@@ -2,7 +2,7 @@
 title: "ImportPosition"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /importposition/
+url: /specification/model/importposition/
 description: ""
 weight: 50
 ---

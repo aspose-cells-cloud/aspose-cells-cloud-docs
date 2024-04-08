@@ -2,7 +2,7 @@
 title: "PostConvertWorkbookToPNG"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postconvertworkbooktopng/
+url: /specification/operation/postconvertworkbooktopng/
 description: "Convert Excel file to PNG files."
 weight: 50
 

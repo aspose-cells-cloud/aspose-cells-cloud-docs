@@ -2,7 +2,7 @@
 title: "PostWorkbookTextReplace"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postworkbooktextreplace/
+url: /specification/operation/postworkbooktextreplace/
 description: "Replace text in the workbook."
 weight: 50
 

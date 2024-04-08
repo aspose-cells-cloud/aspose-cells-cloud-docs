@@ -2,7 +2,7 @@
 title: "DeleteDecryptWorkbook"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /deletedecryptworkbook/
+url: /specification/operation/deletedecryptworkbook/
 description: "Excel files decryption."
 weight: 50
 

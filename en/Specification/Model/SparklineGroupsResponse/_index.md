@@ -2,7 +2,7 @@
 title: "SparklineGroupsResponse"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /sparklinegroupsresponse/
+url: /specification/model/sparklinegroupsresponse/
 description: ""
 weight: 50
 ---

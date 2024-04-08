@@ -2,7 +2,7 @@
 title: "PostWorksheetChartLegend"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postworksheetchartlegend/
+url: /specification/operation/postworksheetchartlegend/
 description: "Update chart legend in the worksheet."
 weight: 50
 

@@ -2,7 +2,7 @@
 title: "ProtectSheetParameter"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /protectsheetparameter/
+url: /specification/model/protectsheetparameter/
 description: ""
 weight: 50
 ---

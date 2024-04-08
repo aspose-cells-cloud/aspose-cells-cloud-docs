@@ -2,7 +2,7 @@
 title: "PostWorksheetCellsRangeOutlineBorder"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postworksheetcellsrangeoutlineborder/
+url: /specification/operation/postworksheetcellsrangeoutlineborder/
 description: "Apply an outline border around a range of cells."
 weight: 50
 

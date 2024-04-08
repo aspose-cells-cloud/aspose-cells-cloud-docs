@@ -2,7 +2,7 @@
 title: "WorksheetMovingRequest"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /worksheetmovingrequest/
+url: /specification/model/worksheetmovingrequest/
 description: "Used by workbook moving requests."
 weight: 50
 ---

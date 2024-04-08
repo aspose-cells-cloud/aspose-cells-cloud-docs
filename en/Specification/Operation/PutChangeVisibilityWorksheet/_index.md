@@ -2,7 +2,7 @@
 title: "PutChangeVisibilityWorksheet"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /putchangevisibilityworksheet/
+url: /specification/operation/putchangevisibilityworksheet/
 description: "Change worksheet visibility in the workbook."
 weight: 50
 

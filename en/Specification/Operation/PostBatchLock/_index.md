@@ -2,7 +2,7 @@
 title: "PostBatchLock"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postbatchlock/
+url: /specification/operation/postbatchlock/
 description: "Batch locking files that meet specific matching conditions."
 weight: 50
 

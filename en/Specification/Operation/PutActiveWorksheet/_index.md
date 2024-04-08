@@ -2,7 +2,7 @@
 title: "PutActiveWorksheet"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /putactiveworksheet/
+url: /specification/operation/putactiveworksheet/
 description: "Set active worksheet index in the workbook."
 weight: 50
 

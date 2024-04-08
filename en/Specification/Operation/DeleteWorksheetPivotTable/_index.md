@@ -2,7 +2,7 @@
 title: "DeleteWorksheetPivotTable"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /deleteworksheetpivottable/
+url: /specification/operation/deleteworksheetpivottable/
 description: "Delete PivotTable by index in the worksheet."
 weight: 50
 

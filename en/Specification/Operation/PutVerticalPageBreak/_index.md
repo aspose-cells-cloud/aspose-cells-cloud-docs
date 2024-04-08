@@ -2,7 +2,7 @@
 title: "PutVerticalPageBreak"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /putverticalpagebreak/
+url: /specification/operation/putverticalpagebreak/
 description: "Add a vertical page break in the worksheet."
 weight: 50
 

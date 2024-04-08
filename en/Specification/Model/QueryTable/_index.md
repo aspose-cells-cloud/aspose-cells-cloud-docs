@@ -2,7 +2,7 @@
 title: "QueryTable"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /querytable/
+url: /specification/model/querytable/
 description: "Represents QueryTable information."
 weight: 50
 ---

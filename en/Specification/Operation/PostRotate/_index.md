@@ -2,7 +2,7 @@
 title: "PostRotate"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postrotate/
+url: /specification/operation/postrotate/
 description: "Rotate rows, columns, or other objects in Excel files and save them in various formats."
 weight: 50
 

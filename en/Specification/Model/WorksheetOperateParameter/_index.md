@@ -2,7 +2,7 @@
 title: "WorksheetOperateParameter"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /worksheetoperateparameter/
+url: /specification/model/worksheetoperateparameter/
 description: ""
 weight: 50
 ---

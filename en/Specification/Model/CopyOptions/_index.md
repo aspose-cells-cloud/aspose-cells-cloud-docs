@@ -2,7 +2,7 @@
 title: "CopyOptions"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /copyoptions/
+url: /specification/model/copyoptions/
 description: "Represents the copy options."
 weight: 50
 ---

@@ -2,7 +2,7 @@
 title: "PutWorksheetBackground"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /putworksheetbackground/
+url: /specification/operation/putworksheetbackground/
 description: "Set background image in the worksheet."
 weight: 50
 

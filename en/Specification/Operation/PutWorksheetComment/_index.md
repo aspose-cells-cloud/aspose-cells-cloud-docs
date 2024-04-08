@@ -2,7 +2,7 @@
 title: "PutWorksheetComment"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /putworksheetcomment/
+url: /specification/operation/putworksheetcomment/
 description: "Add cell comment in the worksheet."
 weight: 50
 

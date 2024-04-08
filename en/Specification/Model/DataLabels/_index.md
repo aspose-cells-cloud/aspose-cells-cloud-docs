@@ -2,7 +2,7 @@
 title: "DataLabels"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /datalabels/
+url: /specification/model/datalabels/
 description: ""
 weight: 50
 ---

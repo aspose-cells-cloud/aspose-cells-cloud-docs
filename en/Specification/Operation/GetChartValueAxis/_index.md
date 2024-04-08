@@ -2,7 +2,7 @@
 title: "GetChartValueAxis"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getchartvalueaxis/
+url: /specification/operation/getchartvalueaxis/
 description: "Retrieve chart value axis in the chart."
 weight: 50
 

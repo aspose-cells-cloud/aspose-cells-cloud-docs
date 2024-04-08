@@ -2,7 +2,7 @@
 title: "PivotTableOperateParameter"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /pivottableoperateparameter/
+url: /specification/model/pivottableoperateparameter/
 description: ""
 weight: 50
 ---

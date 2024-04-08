@@ -2,7 +2,7 @@
 title: "TextItems"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /textitems/
+url: /specification/model/textitems/
 description: ""
 weight: 50
 ---

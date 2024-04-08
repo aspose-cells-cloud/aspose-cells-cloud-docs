@@ -2,7 +2,7 @@
 title: "BatchProtectRequest"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /batchprotectrequest/
+url: /specification/model/batchprotectrequest/
 description: "Indicates batch protect file request"
 weight: 50
 ---

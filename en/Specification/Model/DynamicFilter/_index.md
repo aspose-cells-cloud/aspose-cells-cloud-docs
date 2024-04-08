@@ -2,7 +2,7 @@
 title: "DynamicFilter"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /dynamicfilter/
+url: /specification/model/dynamicfilter/
 description: ""
 weight: 50
 ---

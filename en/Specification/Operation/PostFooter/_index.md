@@ -2,7 +2,7 @@
 title: "PostFooter"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postfooter/
+url: /specification/operation/postfooter/
 description: "Update page footer in the worksheet."
 weight: 50
 

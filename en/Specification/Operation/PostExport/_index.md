@@ -2,7 +2,7 @@
 title: "PostExport"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postexport/
+url: /specification/operation/postexport/
 description: "Export Excel internal elements or the workbook itself to various format files."
 weight: 50
 

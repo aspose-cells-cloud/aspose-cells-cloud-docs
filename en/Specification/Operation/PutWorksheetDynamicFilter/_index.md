@@ -2,7 +2,7 @@
 title: "PutWorksheetDynamicFilter"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /putworksheetdynamicfilter/
+url: /specification/operation/putworksheetdynamicfilter/
 description: "Add a dynamic filter in the worksheet."
 weight: 50
 

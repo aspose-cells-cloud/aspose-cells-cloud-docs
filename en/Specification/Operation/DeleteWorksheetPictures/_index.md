@@ -2,7 +2,7 @@
 title: "DeleteWorksheetPictures"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /deleteworksheetpictures/
+url: /specification/operation/deleteworksheetpictures/
 description: "Delete all pictures in the worksheet."
 weight: 50
 

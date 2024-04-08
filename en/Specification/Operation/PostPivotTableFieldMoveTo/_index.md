@@ -2,7 +2,7 @@
 title: "PostPivotTableFieldMoveTo"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postpivottablefieldmoveto/
+url: /specification/operation/postpivottablefieldmoveto/
 description: "Move a pivot field in the PivotTable."
 weight: 50
 

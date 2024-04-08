@@ -2,7 +2,7 @@
 title: "PostSearch"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postsearch/
+url: /specification/operation/postsearch/
 description: "Search for specified text within Excel files."
 weight: 50
 

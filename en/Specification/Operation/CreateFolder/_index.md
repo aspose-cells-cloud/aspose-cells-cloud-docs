@@ -2,7 +2,7 @@
 title: "CreateFolder"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /createfolder/
+url: /specification/operation/createfolder/
 description: ""
 weight: 50
 

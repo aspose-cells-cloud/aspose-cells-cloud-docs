@@ -2,7 +2,7 @@
 title: "PostBatchConvert"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postbatchconvert/
+url: /specification/operation/postbatchconvert/
 description: "Batch converting files that meet specific matching conditions."
 weight: 50
 

@@ -2,7 +2,7 @@
 title: "DateTimeGroupItem"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /datetimegroupitem/
+url: /specification/model/datetimegroupitem/
 description: ""
 weight: 50
 ---

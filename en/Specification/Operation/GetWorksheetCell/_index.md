@@ -2,7 +2,7 @@
 title: "GetWorksheetCell"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getworksheetcell/
+url: /specification/operation/getworksheetcell/
 description: "Retrieve cell data using either cell reference or method name in the worksheet."
 weight: 50
 

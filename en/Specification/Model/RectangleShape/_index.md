@@ -2,7 +2,7 @@
 title: "RectangleShape"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /rectangleshape/
+url: /specification/model/rectangleshape/
 description: ""
 weight: 50
 ---

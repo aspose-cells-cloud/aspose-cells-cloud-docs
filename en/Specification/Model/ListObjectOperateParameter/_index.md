@@ -2,7 +2,7 @@
 title: "ListObjectOperateParameter"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /listobjectoperateparameter/
+url: /specification/model/listobjectoperateparameter/
 description: ""
 weight: 50
 ---

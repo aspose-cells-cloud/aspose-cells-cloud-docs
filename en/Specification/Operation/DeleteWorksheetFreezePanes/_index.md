@@ -2,7 +2,7 @@
 title: "DeleteWorksheetFreezePanes"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /deleteworksheetfreezepanes/
+url: /specification/operation/deleteworksheetfreezepanes/
 description: "Unfreeze panes in worksheet."
 weight: 50
 

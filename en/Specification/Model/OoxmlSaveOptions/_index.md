@@ -2,7 +2,7 @@
 title: "OoxmlSaveOptions"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /ooxmlsaveoptions/
+url: /specification/model/ooxmlsaveoptions/
 description: "Represents options of saving ooxml file."
 weight: 50
 ---

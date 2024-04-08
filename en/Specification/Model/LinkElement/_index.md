@@ -2,7 +2,7 @@
 title: "LinkElement"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /linkelement/
+url: /specification/model/linkelement/
 description: ""
 weight: 50
 ---

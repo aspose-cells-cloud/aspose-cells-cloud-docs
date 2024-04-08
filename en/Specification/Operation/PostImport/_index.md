@@ -2,7 +2,7 @@
 title: "PostImport"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postimport/
+url: /specification/operation/postimport/
 description: "Import data into an Excel file and generate output files in various formats."
 weight: 50
 

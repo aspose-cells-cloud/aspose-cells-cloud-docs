@@ -2,7 +2,7 @@
 title: "ImageOrPrintOptions"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /imageorprintoptions/
+url: /specification/model/imageorprintoptions/
 description: ""
 weight: 50
 ---

@@ -2,7 +2,7 @@
 title: "CustomParserConfig"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /customparserconfig/
+url: /specification/model/customparserconfig/
 description: ""
 weight: 50
 ---

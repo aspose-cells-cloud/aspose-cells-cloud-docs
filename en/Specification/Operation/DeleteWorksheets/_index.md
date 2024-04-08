@@ -2,7 +2,7 @@
 title: "DeleteWorksheets"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /deleteworksheets/
+url: /specification/operation/deleteworksheets/
 description: "Delete matched worksheets in the workbook."
 weight: 50
 

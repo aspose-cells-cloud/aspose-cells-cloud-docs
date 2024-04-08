@@ -2,7 +2,7 @@
 title: "BatchSplitRequest"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /batchsplitrequest/
+url: /specification/model/batchsplitrequest/
 description: ""
 weight: 50
 ---

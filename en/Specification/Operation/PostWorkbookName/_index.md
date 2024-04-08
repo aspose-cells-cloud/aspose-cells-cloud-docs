@@ -2,7 +2,7 @@
 title: "PostWorkbookName"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postworkbookname/
+url: /specification/operation/postworkbookname/
 description: "Update a named range in the workbook."
 weight: 50
 

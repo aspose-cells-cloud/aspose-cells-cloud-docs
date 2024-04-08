@@ -2,7 +2,7 @@
 title: "AutoFilter"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /autofilter/
+url: /specification/model/autofilter/
 description: ""
 weight: 50
 ---

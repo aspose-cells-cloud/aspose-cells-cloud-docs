@@ -2,7 +2,7 @@
 title: "GradientFillStop"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /gradientfillstop/
+url: /specification/model/gradientfillstop/
 description: ""
 weight: 50
 ---

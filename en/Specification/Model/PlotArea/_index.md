@@ -2,7 +2,7 @@
 title: "PlotArea"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /plotarea/
+url: /specification/model/plotarea/
 description: ""
 weight: 50
 ---

@@ -2,7 +2,7 @@
 title: "PostUpdateWorksheetZoom"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postupdateworksheetzoom/
+url: /specification/operation/postupdateworksheetzoom/
 description: "Update the scaling percentage in the worksheet. It should be between 10 and 400."
 weight: 50
 

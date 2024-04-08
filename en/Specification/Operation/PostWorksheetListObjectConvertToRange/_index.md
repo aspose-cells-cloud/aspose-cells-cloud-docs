@@ -2,7 +2,7 @@
 title: "PostWorksheetListObjectConvertToRange"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postworksheetlistobjectconverttorange/
+url: /specification/operation/postworksheetlistobjectconverttorange/
 description: "Convert list object to range in the worksheet."
 weight: 50
 

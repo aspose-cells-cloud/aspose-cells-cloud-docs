@@ -2,7 +2,7 @@
 title: "Worksheets"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /worksheets/
+url: /specification/model/worksheets/
 description: ""
 weight: 50
 ---

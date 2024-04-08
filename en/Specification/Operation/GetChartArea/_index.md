@@ -2,7 +2,7 @@
 title: "GetChartArea"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getchartarea/
+url: /specification/operation/getchartarea/
 description: "Retrieve chart area description in the worksheet."
 weight: 50
 

@@ -2,7 +2,7 @@
 title: "GetWorkbookDefaultStyle"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getworkbookdefaultstyle/
+url: /specification/operation/getworkbookdefaultstyle/
 description: "Retrieve the description of the default style for the workbook."
 weight: 50
 

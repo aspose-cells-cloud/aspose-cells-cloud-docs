@@ -2,7 +2,7 @@
 title: "PostWorksheetCellsRangeMerge"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postworksheetcellsrangemerge/
+url: /specification/operation/postworksheetcellsrangemerge/
 description: "Merge a range of cells into a single cell."
 weight: 50
 

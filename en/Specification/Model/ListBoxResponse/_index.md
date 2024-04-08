@@ -2,7 +2,7 @@
 title: "ListBoxResponse"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /listboxresponse/
+url: /specification/model/listboxresponse/
 description: ""
 weight: 50
 ---

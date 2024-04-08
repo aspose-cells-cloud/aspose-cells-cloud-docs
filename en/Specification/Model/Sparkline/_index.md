@@ -2,7 +2,7 @@
 title: "Sparkline"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /sparkline/
+url: /specification/model/sparkline/
 description: "A sparkline represents a tiny chart or graphic in a worksheet cell that provides a visual representation of data.            "
 weight: 50
 ---

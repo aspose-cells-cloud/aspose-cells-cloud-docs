@@ -2,7 +2,7 @@
 title: "DeleteWorksheetConditionalFormattingArea"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /deleteworksheetconditionalformattingarea/
+url: /specification/operation/deleteworksheetconditionalformattingarea/
 description: "Remove cell area from conditional formatting."
 weight: 50
 

@@ -2,7 +2,7 @@
 title: "PostWorkbooksMerge"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postworkbooksmerge/
+url: /specification/operation/postworkbooksmerge/
 description: "Merge a workbook into the existing workbook."
 weight: 50
 

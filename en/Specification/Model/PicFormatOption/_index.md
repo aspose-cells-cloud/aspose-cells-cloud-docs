@@ -2,7 +2,7 @@
 title: "PicFormatOption"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /picformatoption/
+url: /specification/model/picformatoption/
 description: ""
 weight: 50
 ---

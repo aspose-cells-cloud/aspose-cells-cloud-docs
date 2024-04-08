@@ -2,7 +2,7 @@
 title: "ConditionalFormattingResponse"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /conditionalformattingresponse/
+url: /specification/model/conditionalformattingresponse/
 description: ""
 weight: 50
 ---

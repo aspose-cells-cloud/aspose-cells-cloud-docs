@@ -2,7 +2,7 @@
 title: "TaskResultParameter"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /taskresultparameter/
+url: /specification/model/taskresultparameter/
 description: ""
 weight: 50
 ---

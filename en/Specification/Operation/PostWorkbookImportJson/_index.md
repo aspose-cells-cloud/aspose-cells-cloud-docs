@@ -2,7 +2,7 @@
 title: "PostWorkbookImportJson"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postworkbookimportjson/
+url: /specification/operation/postworkbookimportjson/
 description: "Import a JSON data file into the workbook. The JSON data file can either be a cloud file or data from an HTTP URI."
 weight: 50
 

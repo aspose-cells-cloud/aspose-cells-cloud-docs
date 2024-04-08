@@ -2,7 +2,7 @@
 title: "PutWorksheetChartTitle"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /putworksheetcharttitle/
+url: /specification/operation/putworksheetcharttitle/
 description: "Set chart title in the worksheet."
 weight: 50
 

@@ -2,7 +2,7 @@
 title: "DeleteVerticalPageBreaks"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /deleteverticalpagebreaks/
+url: /specification/operation/deleteverticalpagebreaks/
 description: "Delete vertical page breaks in the worksheet."
 weight: 50
 

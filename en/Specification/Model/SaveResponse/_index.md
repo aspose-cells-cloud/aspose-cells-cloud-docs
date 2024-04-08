@@ -2,7 +2,7 @@
 title: "SaveResponse"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /saveresponse/
+url: /specification/model/saveresponse/
 description: ""
 weight: 50
 ---

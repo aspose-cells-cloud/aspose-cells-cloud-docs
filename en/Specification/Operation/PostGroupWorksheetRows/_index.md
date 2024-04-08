@@ -2,7 +2,7 @@
 title: "PostGroupWorksheetRows"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postgroupworksheetrows/
+url: /specification/operation/postgroupworksheetrows/
 description: "Group rows in the worksheet."
 weight: 50
 

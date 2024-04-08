@@ -2,7 +2,7 @@
 title: "PostAssemble"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postassemble/
+url: /specification/operation/postassemble/
 description: "Assemble data files with template files to generate files in various formats."
 weight: 50
 

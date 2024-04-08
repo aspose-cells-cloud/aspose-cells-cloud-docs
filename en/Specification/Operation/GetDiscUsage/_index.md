@@ -2,7 +2,7 @@
 title: "GetDiscUsage"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getdiscusage/
+url: /specification/operation/getdiscusage/
 description: ""
 weight: 50
 

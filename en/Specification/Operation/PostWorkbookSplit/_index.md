@@ -2,7 +2,7 @@
 title: "PostWorkbookSplit"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postworkbooksplit/
+url: /specification/operation/postworkbooksplit/
 description: "Split the workbook with a specific format."
 weight: 50
 

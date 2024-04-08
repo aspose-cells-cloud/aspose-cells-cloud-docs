@@ -2,7 +2,7 @@
 title: "GetWorksheetRow"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getworksheetrow/
+url: /specification/operation/getworksheetrow/
 description: "Retrieve row data by the row's index in the worksheet."
 weight: 50
 

@@ -2,7 +2,7 @@
 title: "PostUnhideWorksheetColumns"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postunhideworksheetcolumns/
+url: /specification/operation/postunhideworksheetcolumns/
 description: "Unhide worksheet columns in the worksheet."
 weight: 50
 

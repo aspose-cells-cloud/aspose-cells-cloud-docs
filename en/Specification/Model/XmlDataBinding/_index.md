@@ -2,7 +2,7 @@
 title: "XmlDataBinding"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /xmldatabinding/
+url: /specification/model/xmldatabinding/
 description: "Represents Xml Data Binding information. "
 weight: 50
 ---

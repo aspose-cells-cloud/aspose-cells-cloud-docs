@@ -2,7 +2,7 @@
 title: "IconFilter"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /iconfilter/
+url: /specification/model/iconfilter/
 description: ""
 weight: 50
 ---

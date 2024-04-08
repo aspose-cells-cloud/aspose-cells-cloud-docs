@@ -2,7 +2,7 @@
 title: "FilesList"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /fileslist/
+url: /specification/model/fileslist/
 description: "Files list"
 weight: 50
 ---

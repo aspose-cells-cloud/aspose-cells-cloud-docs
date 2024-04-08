@@ -2,7 +2,7 @@
 title: "PostPivotTableUpdatePivotFields"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postpivottableupdatepivotfields/
+url: /specification/operation/postpivottableupdatepivotfields/
 description: "Update pivot fields in the PivotTable."
 weight: 50
 

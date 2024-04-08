@@ -2,7 +2,7 @@
 title: "CellArea"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /cellarea/
+url: /specification/model/cellarea/
 description: ""
 weight: 50
 ---

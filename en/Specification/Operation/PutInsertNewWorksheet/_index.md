@@ -2,7 +2,7 @@
 title: "PutInsertNewWorksheet"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /putinsertnewworksheet/
+url: /specification/operation/putinsertnewworksheet/
 description: "Insert a new worksheet in the workbook."
 weight: 50
 

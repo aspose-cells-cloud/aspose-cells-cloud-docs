@@ -2,7 +2,7 @@
 title: "PutWorksheetDateFilter"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /putworksheetdatefilter/
+url: /specification/operation/putworksheetdatefilter/
 description: "Apply a date filter in the worksheet."
 weight: 50
 

@@ -2,7 +2,7 @@
 title: "DeleteWorkbookNames"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /deleteworkbooknames/
+url: /specification/operation/deleteworkbooknames/
 description: "Delete all named ranges in the workbook."
 weight: 50
 

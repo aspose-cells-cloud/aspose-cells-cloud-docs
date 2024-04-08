@@ -2,7 +2,7 @@
 title: "GetDocumentProperty"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getdocumentproperty/
+url: /specification/operation/getdocumentproperty/
 description: "Get Excel property by name."
 weight: 50
 

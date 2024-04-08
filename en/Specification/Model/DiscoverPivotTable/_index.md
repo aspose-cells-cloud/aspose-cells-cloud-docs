@@ -2,7 +2,7 @@
 title: "DiscoverPivotTable"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /discoverpivottable/
+url: /specification/model/discoverpivottable/
 description: ""
 weight: 50
 ---

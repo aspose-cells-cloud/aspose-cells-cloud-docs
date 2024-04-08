@@ -2,7 +2,7 @@
 title: "GetFileVersions"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getfileversions/
+url: /specification/operation/getfileversions/
 description: ""
 weight: 50
 

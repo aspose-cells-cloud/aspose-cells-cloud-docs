@@ -2,7 +2,7 @@
 title: "PutInsertWorksheetRow"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /putinsertworksheetrow/
+url: /specification/operation/putinsertworksheetrow/
 description: "Insert a new row in the worksheet."
 weight: 50
 

@@ -2,7 +2,7 @@
 title: "PostUpdateWorksheetRow"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postupdateworksheetrow/
+url: /specification/operation/postupdateworksheetrow/
 description: "Update height of rows in the worksheet."
 weight: 50
 

@@ -2,7 +2,7 @@
 title: "PageSetupOperateParameter"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /pagesetupoperateparameter/
+url: /specification/model/pagesetupoperateparameter/
 description: ""
 weight: 50
 ---

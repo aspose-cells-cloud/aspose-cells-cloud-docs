@@ -2,7 +2,7 @@
 title: "PutWorksheetChart"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /putworksheetchart/
+url: /specification/operation/putworksheetchart/
 description: "Add a new chart in the worksheet."
 weight: 50
 

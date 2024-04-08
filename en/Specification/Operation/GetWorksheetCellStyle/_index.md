@@ -2,7 +2,7 @@
 title: "GetWorksheetCellStyle"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getworksheetcellstyle/
+url: /specification/operation/getworksheetcellstyle/
 description: "Retrieve cell style descriptions in the worksheet."
 weight: 50
 

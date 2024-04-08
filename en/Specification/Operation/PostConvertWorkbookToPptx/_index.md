@@ -2,7 +2,7 @@
 title: "PostConvertWorkbookToPptx"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postconvertworkbooktopptx/
+url: /specification/operation/postconvertworkbooktopptx/
 description: "Convert Excel file to Pptx files."
 weight: 50
 

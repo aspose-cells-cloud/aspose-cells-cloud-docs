@@ -2,7 +2,7 @@
 title: "GetNamedRanges"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getnamedranges/
+url: /specification/operation/getnamedranges/
 description: "Retrieve descriptions of ranges in the worksheets."
 weight: 50
 

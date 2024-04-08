@@ -2,7 +2,7 @@
 title: "DigitalSignature"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /digitalsignature/
+url: /specification/model/digitalsignature/
 description: "Signature in file.            "
 weight: 50
 ---

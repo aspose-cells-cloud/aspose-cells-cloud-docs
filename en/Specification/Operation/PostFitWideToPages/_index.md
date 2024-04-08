@@ -2,7 +2,7 @@
 title: "PostFitWideToPages"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postfitwidetopages/
+url: /specification/operation/postfitwidetopages/
 description: "Set the scale at which the page will fit wide when printed on the sheet."
 weight: 50
 

@@ -2,7 +2,7 @@
 title: "RadioButton"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /radiobutton/
+url: /specification/model/radiobutton/
 description: ""
 weight: 50
 ---

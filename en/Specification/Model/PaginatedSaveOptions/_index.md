@@ -2,7 +2,7 @@
 title: "PaginatedSaveOptions"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /paginatedsaveoptions/
+url: /specification/model/paginatedsaveoptions/
 description: "Represents the options for pagination."
 weight: 50
 ---

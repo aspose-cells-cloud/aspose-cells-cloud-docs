@@ -2,7 +2,7 @@
 title: "PostUpdateWorksheetOleObject"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postupdateworksheetoleobject/
+url: /specification/operation/postupdateworksheetoleobject/
 description: "Update an OLE object in worksheet."
 weight: 50
 

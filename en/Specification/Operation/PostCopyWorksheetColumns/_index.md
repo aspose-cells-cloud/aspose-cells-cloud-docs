@@ -2,7 +2,7 @@
 title: "PostCopyWorksheetColumns"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postcopyworksheetcolumns/
+url: /specification/operation/postcopyworksheetcolumns/
 description: "Copy data from source columns to destination columns in the worksheet."
 weight: 50
 

@@ -2,7 +2,7 @@
 title: "GetWorksheetAutoshapeWithFormat"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getworksheetautoshapewithformat/
+url: /specification/operation/getworksheetautoshapewithformat/
 description: "Get autoshape description in some format."
 weight: 50
 

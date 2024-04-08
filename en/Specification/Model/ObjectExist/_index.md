@@ -2,7 +2,7 @@
 title: "ObjectExist"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /objectexist/
+url: /specification/model/objectexist/
 description: "Object exists"
 weight: 50
 ---

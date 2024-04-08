@@ -2,7 +2,7 @@
 title: "DeleteWorksheetComments"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /deleteworksheetcomments/
+url: /specification/operation/deleteworksheetcomments/
 description: "Delete all comments in the worksheet."
 weight: 50
 

@@ -2,7 +2,7 @@
 title: "DeleteWorksheetRow"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /deleteworksheetrow/
+url: /specification/operation/deleteworksheetrow/
 description: "Delete a row in the worksheet."
 weight: 50
 

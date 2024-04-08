@@ -2,7 +2,7 @@
 title: "PostWorksheetShape"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postworksheetshape/
+url: /specification/operation/postworksheetshape/
 description: "Update a shape in the worksheet."
 weight: 50
 

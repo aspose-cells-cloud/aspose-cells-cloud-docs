@@ -2,7 +2,7 @@
 title: "DeleteDocumentUnProtectFromChanges"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /deletedocumentunprotectfromchanges/
+url: /specification/operation/deletedocumentunprotectfromchanges/
 description: "Excel file cancel write protection."
 weight: 50
 

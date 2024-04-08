@@ -2,7 +2,7 @@
 title: "GetWorksheetPictures"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getworksheetpictures/
+url: /specification/operation/getworksheetpictures/
 description: "Retrieve descriptions of pictures in the worksheet."
 weight: 50
 

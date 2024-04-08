@@ -2,7 +2,7 @@
 title: "PostWorksheetUnmerge"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postworksheetunmerge/
+url: /specification/operation/postworksheetunmerge/
 description: "Unmerge cells in the worksheet."
 weight: 50
 

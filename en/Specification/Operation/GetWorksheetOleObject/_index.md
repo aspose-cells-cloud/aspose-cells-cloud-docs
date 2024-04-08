@@ -2,7 +2,7 @@
 title: "GetWorksheetOleObject"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getworksheetoleobject/
+url: /specification/operation/getworksheetoleobject/
 description: "Retrieve the OLE object in a specified format in the worksheet."
 weight: 50
 

@@ -2,7 +2,7 @@
 title: "DeleteWorksheetHyperlinks"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /deleteworksheethyperlinks/
+url: /specification/operation/deleteworksheethyperlinks/
 description: "Delete all hyperlinks in the worksheet."
 weight: 50
 

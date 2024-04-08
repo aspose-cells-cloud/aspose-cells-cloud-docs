@@ -2,7 +2,7 @@
 title: "PdfSaveOptions"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /pdfsaveoptions/
+url: /specification/model/pdfsaveoptions/
 description: "Represents options of saving pdf file."
 weight: 50
 ---

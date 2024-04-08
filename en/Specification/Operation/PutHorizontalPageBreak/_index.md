@@ -2,7 +2,7 @@
 title: "PutHorizontalPageBreak"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /puthorizontalpagebreak/
+url: /specification/operation/puthorizontalpagebreak/
 description: "Add a horizontal page breaks in the worksheet."
 weight: 50
 

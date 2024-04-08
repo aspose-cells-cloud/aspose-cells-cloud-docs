@@ -2,7 +2,7 @@
 title: "DataSorter"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /datasorter/
+url: /specification/model/datasorter/
 description: "Summary description for DataSorter."
 weight: 50
 ---

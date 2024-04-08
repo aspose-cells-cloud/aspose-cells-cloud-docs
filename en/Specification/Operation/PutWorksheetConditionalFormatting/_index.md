@@ -2,7 +2,7 @@
 title: "PutWorksheetConditionalFormatting"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /putworksheetconditionalformatting/
+url: /specification/operation/putworksheetconditionalformatting/
 description: "Add conditional formatting in the worksheet."
 weight: 50
 

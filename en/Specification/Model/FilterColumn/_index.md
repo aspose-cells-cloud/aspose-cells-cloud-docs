@@ -2,7 +2,7 @@
 title: "FilterColumn"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /filtercolumn/
+url: /specification/model/filtercolumn/
 description: ""
 weight: 50
 ---

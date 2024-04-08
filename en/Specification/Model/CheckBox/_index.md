@@ -2,7 +2,7 @@
 title: "CheckBox"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /checkbox/
+url: /specification/model/checkbox/
 description: ""
 weight: 50
 ---

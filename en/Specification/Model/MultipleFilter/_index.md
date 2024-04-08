@@ -2,7 +2,7 @@
 title: "MultipleFilter"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /multiplefilter/
+url: /specification/model/multiplefilter/
 description: ""
 weight: 50
 ---

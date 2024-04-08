@@ -2,7 +2,7 @@
 title: "TilePicOption"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /tilepicoption/
+url: /specification/model/tilepicoption/
 description: ""
 weight: 50
 ---

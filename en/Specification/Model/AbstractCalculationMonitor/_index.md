@@ -2,7 +2,7 @@
 title: "AbstractCalculationMonitor"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /abstractcalculationmonitor/
+url: /specification/model/abstractcalculationmonitor/
 description: "Monitor for user to track the progress of formula calculation. "
 weight: 50
 ---

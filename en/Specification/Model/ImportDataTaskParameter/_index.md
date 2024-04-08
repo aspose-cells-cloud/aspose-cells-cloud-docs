@@ -2,7 +2,7 @@
 title: "ImportDataTaskParameter"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /importdatataskparameter/
+url: /specification/model/importdatataskparameter/
 description: ""
 weight: 50
 ---

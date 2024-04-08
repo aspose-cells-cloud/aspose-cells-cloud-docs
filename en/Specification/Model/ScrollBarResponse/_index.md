@@ -2,7 +2,7 @@
 title: "ScrollBarResponse"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /scrollbarresponse/
+url: /specification/model/scrollbarresponse/
 description: ""
 weight: 50
 ---

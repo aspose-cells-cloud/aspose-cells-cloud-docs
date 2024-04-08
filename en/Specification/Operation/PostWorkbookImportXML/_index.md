@@ -2,7 +2,7 @@
 title: "PostWorkbookImportXML"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postworkbookimportxml/
+url: /specification/operation/postworkbookimportxml/
 description: "Import an XML data file into an Excel file. The XML data file can either be a cloud file or data from an HTTP URI."
 weight: 50
 

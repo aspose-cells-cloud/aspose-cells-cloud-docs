@@ -2,7 +2,7 @@
 title: "DeleteWorksheetPivotTableFilter"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /deleteworksheetpivottablefilter/
+url: /specification/operation/deleteworksheetpivottablefilter/
 description: "Delete a pivot filter in the PivotTable."
 weight: 50
 

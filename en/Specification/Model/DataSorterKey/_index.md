@@ -2,7 +2,7 @@
 title: "DataSorterKey"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /datasorterkey/
+url: /specification/model/datasorterkey/
 description: "Represents the key of the data sorter. "
 weight: 50
 ---

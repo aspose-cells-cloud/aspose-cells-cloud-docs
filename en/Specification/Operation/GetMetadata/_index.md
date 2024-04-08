@@ -2,7 +2,7 @@
 title: "GetMetadata"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getmetadata/
+url: /specification/operation/getmetadata/
 description: "Get cells document properties."
 weight: 50
 

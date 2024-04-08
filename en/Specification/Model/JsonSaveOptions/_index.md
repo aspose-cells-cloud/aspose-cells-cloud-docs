@@ -2,7 +2,7 @@
 title: "JsonSaveOptions"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /jsonsaveoptions/
+url: /specification/model/jsonsaveoptions/
 description: "Represents options of saving .json file."
 weight: 50
 ---

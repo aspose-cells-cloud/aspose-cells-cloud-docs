@@ -2,7 +2,7 @@
 title: "PostConvertWorkbookToJson"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postconvertworkbooktojson/
+url: /specification/operation/postconvertworkbooktojson/
 description: "Convert Excel file to Json files."
 weight: 50
 

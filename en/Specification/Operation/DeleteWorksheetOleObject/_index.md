@@ -2,7 +2,7 @@
 title: "DeleteWorksheetOleObject"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /deleteworksheetoleobject/
+url: /specification/operation/deleteworksheetoleobject/
 description: "Delete an OLE object in the worksheet."
 weight: 50
 

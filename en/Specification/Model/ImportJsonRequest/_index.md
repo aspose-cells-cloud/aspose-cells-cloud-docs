@@ -2,7 +2,7 @@
 title: "ImportJsonRequest"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /importjsonrequest/
+url: /specification/model/importjsonrequest/
 description: "Indicates import xml data request"
 weight: 50
 ---

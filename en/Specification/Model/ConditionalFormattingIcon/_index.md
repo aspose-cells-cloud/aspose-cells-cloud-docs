@@ -2,7 +2,7 @@
 title: "ConditionalFormattingIcon"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /conditionalformattingicon/
+url: /specification/model/conditionalformattingicon/
 description: ""
 weight: 50
 ---

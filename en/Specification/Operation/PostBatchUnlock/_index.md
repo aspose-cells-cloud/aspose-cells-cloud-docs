@@ -2,7 +2,7 @@
 title: "PostBatchUnlock"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postbatchunlock/
+url: /specification/operation/postbatchunlock/
 description: "Batch unlocking files that meet specific matching conditions."
 weight: 50
 

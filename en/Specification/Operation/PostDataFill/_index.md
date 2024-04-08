@@ -2,7 +2,7 @@
 title: "PostDataFill"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postdatafill/
+url: /specification/operation/postdatafill/
 description: "Data filling for spreadsheet files is primarily used to fill empty data in tables and ranges."
 weight: 50
 

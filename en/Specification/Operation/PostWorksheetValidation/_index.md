@@ -2,7 +2,7 @@
 title: "PostWorksheetValidation"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postworksheetvalidation/
+url: /specification/operation/postworksheetvalidation/
 description: "Update a validation by index in the worksheet."
 weight: 50
 

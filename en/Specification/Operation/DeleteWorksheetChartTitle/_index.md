@@ -2,7 +2,7 @@
 title: "DeleteWorksheetChartTitle"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /deleteworksheetcharttitle/
+url: /specification/operation/deleteworksheetcharttitle/
 description: "Hide chart title in the worksheet."
 weight: 50
 

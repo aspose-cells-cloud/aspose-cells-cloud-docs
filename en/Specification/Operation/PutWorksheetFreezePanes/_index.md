@@ -2,7 +2,7 @@
 title: "PutWorksheetFreezePanes"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /putworksheetfreezepanes/
+url: /specification/operation/putworksheetfreezepanes/
 description: "Set freeze panes in the worksheet."
 weight: 50
 

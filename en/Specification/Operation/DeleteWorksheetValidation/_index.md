@@ -2,7 +2,7 @@
 title: "DeleteWorksheetValidation"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /deleteworksheetvalidation/
+url: /specification/operation/deleteworksheetvalidation/
 description: "Delete a validation by index in worksheet."
 weight: 50
 

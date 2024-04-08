@@ -2,7 +2,7 @@
 title: "SuggestedOutputType"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /suggestedoutputtype/
+url: /specification/model/suggestedoutputtype/
 description: ""
 weight: 50
 ---

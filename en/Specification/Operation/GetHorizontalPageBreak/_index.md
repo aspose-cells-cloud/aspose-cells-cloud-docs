@@ -2,7 +2,7 @@
 title: "GetHorizontalPageBreak"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /gethorizontalpagebreak/
+url: /specification/operation/gethorizontalpagebreak/
 description: "Retrieve a horizontal page break descripton in the worksheet."
 weight: 50
 

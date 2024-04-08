@@ -2,7 +2,7 @@
 title: "ArcShape"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /arcshape/
+url: /specification/model/arcshape/
 description: ""
 weight: 50
 ---

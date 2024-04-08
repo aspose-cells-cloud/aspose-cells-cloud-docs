@@ -2,7 +2,7 @@
 title: "MatchConditionRequest"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /matchconditionrequest/
+url: /specification/model/matchconditionrequest/
 description: "Indicates the match condition that needs to be processed for the file name."
 weight: 50
 ---

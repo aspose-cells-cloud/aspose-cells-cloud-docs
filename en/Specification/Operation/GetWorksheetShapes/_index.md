@@ -2,7 +2,7 @@
 title: "GetWorksheetShapes"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getworksheetshapes/
+url: /specification/operation/getworksheetshapes/
 description: "Retrieve descriptions of shapes in the worksheet."
 weight: 50
 

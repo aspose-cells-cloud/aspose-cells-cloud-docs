@@ -2,7 +2,7 @@
 title: "DeleteWorksheetCellsRange"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /deleteworksheetcellsrange/
+url: /specification/operation/deleteworksheetcellsrange/
 description: "Delete a range of cells and shift existing cells based on the specified shift option."
 weight: 50
 

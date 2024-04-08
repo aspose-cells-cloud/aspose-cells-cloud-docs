@@ -2,7 +2,7 @@
 title: "DeleteWorksheetConditionalFormattings"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /deleteworksheetconditionalformattings/
+url: /specification/operation/deleteworksheetconditionalformattings/
 description: "Clear all conditional formattings in the worksheet."
 weight: 50
 

@@ -2,7 +2,7 @@
 title: "PutWorksheetIconFilter"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /putworksheeticonfilter/
+url: /specification/operation/putworksheeticonfilter/
 description: "Add an icon filter in the worksheet."
 weight: 50
 

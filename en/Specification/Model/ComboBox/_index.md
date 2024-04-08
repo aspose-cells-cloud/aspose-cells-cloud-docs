@@ -2,7 +2,7 @@
 title: "ComboBox"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /combobox/
+url: /specification/model/combobox/
 description: ""
 weight: 50
 ---

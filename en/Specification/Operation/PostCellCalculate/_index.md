@@ -2,7 +2,7 @@
 title: "PostCellCalculate"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postcellcalculate/
+url: /specification/operation/postcellcalculate/
 description: "Calculate cell formula in the worksheet."
 weight: 50
 

@@ -2,7 +2,7 @@
 title: "PutWorkbookWaterMarker"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /putworkbookwatermarker/
+url: /specification/operation/putworkbookwatermarker/
 description: "Set water marker in the workbook."
 weight: 50
 

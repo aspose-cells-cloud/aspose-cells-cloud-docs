@@ -2,7 +2,7 @@
 title: "PasswordRequest"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /passwordrequest/
+url: /specification/model/passwordrequest/
 description: "Used for password data transfer."
 weight: 50
 ---

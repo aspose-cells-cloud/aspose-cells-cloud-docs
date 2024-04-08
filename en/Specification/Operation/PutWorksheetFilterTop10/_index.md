@@ -2,7 +2,7 @@
 title: "PutWorksheetFilterTop10"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /putworksheetfiltertop10/
+url: /specification/operation/putworksheetfiltertop10/
 description: "Filter the top 10 items in the list in the worksheet."
 weight: 50
 

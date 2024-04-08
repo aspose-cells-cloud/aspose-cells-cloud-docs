@@ -2,7 +2,7 @@
 title: "GetWorksheetColumns"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /getworksheetcolumns/
+url: /specification/operation/getworksheetcolumns/
 description: "Retrieve descriptions of worksheet columns."
 weight: 50
 

@@ -2,7 +2,7 @@
 title: "DeduplicationRegion"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /deduplicationregion/
+url: /specification/model/deduplicationregion/
 description: ""
 weight: 50
 ---

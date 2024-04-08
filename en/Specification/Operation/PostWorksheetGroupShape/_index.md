@@ -2,7 +2,7 @@
 title: "PostWorksheetGroupShape"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postworksheetgroupshape/
+url: /specification/operation/postworksheetgroupshape/
 description: "Group shapes in the worksheet."
 weight: 50
 

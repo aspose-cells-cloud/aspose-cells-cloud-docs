@@ -2,7 +2,7 @@
 title: "Top10"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /top10/
+url: /specification/model/top10/
 description: "Describe the Top10 conditional formatting rule. This conditional formatting    rule highlights cells whose values fall in the top N or bottom N bracket,    as specified."
 weight: 50
 ---

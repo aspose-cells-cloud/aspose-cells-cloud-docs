@@ -2,7 +2,7 @@
 title: "CommentShapeResponse"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /commentshaperesponse/
+url: /specification/model/commentshaperesponse/
 description: ""
 weight: 50
 ---

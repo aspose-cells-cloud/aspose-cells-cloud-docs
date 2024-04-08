@@ -2,7 +2,7 @@
 title: "PageBreakOperateParameter"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /pagebreakoperateparameter/
+url: /specification/model/pagebreakoperateparameter/
 description: ""
 weight: 50
 ---

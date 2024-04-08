@@ -2,7 +2,7 @@
 title: "StorageFile"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /storagefile/
+url: /specification/model/storagefile/
 description: "File or folder information"
 weight: 50
 ---

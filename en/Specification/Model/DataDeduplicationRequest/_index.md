@@ -2,7 +2,7 @@
 title: "DataDeduplicationRequest"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /datadeduplicationrequest/
+url: /specification/model/datadeduplicationrequest/
 description: ""
 weight: 50
 ---

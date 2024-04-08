@@ -2,7 +2,7 @@
 title: "PostUpdateWorksheetCellStyle"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /postupdateworksheetcellstyle/
+url: /specification/operation/postupdateworksheetcellstyle/
 description: "Set cell style using cell name in the worksheet."
 weight: 50
 
