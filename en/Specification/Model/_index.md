@@ -5,10 +5,7 @@ type: docs
 weight: 50
 ---
 
-- [ObjectExistsExtensions](ObjectExistsExtensions)  :   
-- [FileVersion](FileVersion)  :   
-- [StorageFile](StorageFile)  :  File or folder information 
-- [GoogleDriveStorageFile](GoogleDriveStorageFile)  :   
+ 
 - [AboveAverage](AboveAverage)  :  Describe the AboveAverage conditional formatting rule. This conditional formatting    rule highlights cells that are above or below the average for all values    in the range. 
 - [AbstractCalculationEngine](AbstractCalculationEngine)  :  Represents user's custom calculation engine to extend the default calculation engine of Aspose.Cells.  
 - [AbstractCalculationMonitor](AbstractCalculationMonitor)  :  Monitor for user to track the progress of formula calculation.  
