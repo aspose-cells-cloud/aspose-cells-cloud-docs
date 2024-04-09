@@ -328,31 +328,11 @@ weight: 50
 - [PostWorksheetValidation](Operation/PostWorksheetValidation)  :  Update a validation by index in the worksheet. 
 - [DeleteWorksheetValidation](Operation/DeleteWorksheetValidation)  :  Delete a validation by index in worksheet. 
 - [DeleteWorksheetValidations](Operation/DeleteWorksheetValidations)  :  Delete all validations in the worksheet. 
-- [DownloadFile](Operation/DownloadFile)  :   
-- [UploadFile](Operation/UploadFile)  :   
-- [CopyFile](Operation/CopyFile)  :   
-- [MoveFile](Operation/MoveFile)  :   
-- [DeleteFile](Operation/DeleteFile)  :   
-- [GetFilesList](Operation/GetFilesList)  :   
-- [CreateFolder](Operation/CreateFolder)  :   
-- [CopyFolder](Operation/CopyFolder)  :   
-- [MoveFolder](Operation/MoveFolder)  :   
-- [DeleteFolder](Operation/DeleteFolder)  :   
-- [StorageExists](Operation/StorageExists)  :   
-- [ObjectExists](Operation/ObjectExists)  :   
-- [GetDiscUsage](Operation/GetDiscUsage)  :   
-- [GetFileVersions](Operation/GetFileVersions)  :   
 
 # Aspose.Cells Cloud API Model
 
-- [DiscUsage](Model/DiscUsage)  :  Class for disc space information. 
-- [ObjectExist](Model/ObjectExist)  :  Object exists 
 - [ObjectExistsExtensions](Model/ObjectExistsExtensions)  :   
 - [FileVersion](Model/FileVersion)  :   
-- [StorageExist](Model/StorageExist)  :  Storage exists 
-- [FileVersions](Model/FileVersions)  :  File versions FileVersion. 
-- [FilesList](Model/FilesList)  :  Files list 
-- [FilesUploadResult](Model/FilesUploadResult)  :  File upload result 
 - [StorageFile](Model/StorageFile)  :  File or folder information 
 - [GoogleDriveStorageFile](Model/GoogleDriveStorageFile)  :   
 - [AboveAverage](Model/AboveAverage)  :  Describe the AboveAverage conditional formatting rule. This conditional formatting    rule highlights cells that are above or below the average for all values    in the range. 

@@ -5,14 +5,8 @@ type: docs
 weight: 50
 ---
 
-- [DiscUsage](DiscUsage)  :  Class for disc space information. 
-- [ObjectExist](ObjectExist)  :  Object exists 
 - [ObjectExistsExtensions](ObjectExistsExtensions)  :   
 - [FileVersion](FileVersion)  :   
-- [StorageExist](StorageExist)  :  Storage exists 
-- [FileVersions](FileVersions)  :  File versions FileVersion. 
-- [FilesList](FilesList)  :  Files list 
-- [FilesUploadResult](FilesUploadResult)  :  File upload result 
 - [StorageFile](StorageFile)  :  File or folder information 
 - [GoogleDriveStorageFile](GoogleDriveStorageFile)  :   
 - [AboveAverage](AboveAverage)  :  Describe the AboveAverage conditional formatting rule. This conditional formatting    rule highlights cells that are above or below the average for all values    in the range. 
