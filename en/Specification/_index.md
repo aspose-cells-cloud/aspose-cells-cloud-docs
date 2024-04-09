@@ -5,753 +5,756 @@ type: docs
 weight: 50
 ---
 
+# Aspose.Cells Cloud API Operation
 
-[PostAnalyzeExcel](Specification/Operation/PostAnalyzeExcel)  :  Perform business analysis of data in Excel files. 
-[GetWorksheetAutoFilter](Specification/Operation/GetWorksheetAutoFilter)  :  Retrieve the description of auto filters from a worksheet. 
-[PutWorksheetDateFilter](Specification/Operation/PutWorksheetDateFilter)  :  Apply a date filter in the worksheet. 
-[PutWorksheetFilter](Specification/Operation/PutWorksheetFilter)  :  Add a filter for a column in the worksheet. 
-[PutWorksheetIconFilter](Specification/Operation/PutWorksheetIconFilter)  :  Add an icon filter in the worksheet. 
-[PutWorksheetCustomFilter](Specification/Operation/PutWorksheetCustomFilter)  :  Filter a list with custom criteria in the worksheet. 
-[PutWorksheetDynamicFilter](Specification/Operation/PutWorksheetDynamicFilter)  :  Add a dynamic filter in the worksheet. 
-[PutWorksheetFilterTop10](Specification/Operation/PutWorksheetFilterTop10)  :  Filter the top 10 items in the list in the worksheet. 
-[PutWorksheetColorFilter](Specification/Operation/PutWorksheetColorFilter)  :  Add a color filter in the worksheet. 
-[PostWorksheetMatchBlanks](Specification/Operation/PostWorksheetMatchBlanks)  :  Match all blank cells in the list. 
-[PostWorksheetMatchNonBlanks](Specification/Operation/PostWorksheetMatchNonBlanks)  :  Match all not blank cells in the list. 
-[PostWorksheetAutoFilterRefresh](Specification/Operation/PostWorksheetAutoFilterRefresh)  :  Refresh auto filters in the worksheet. 
-[DeleteWorksheetDateFilter](Specification/Operation/DeleteWorksheetDateFilter)  :  Remove a date filter in the worksheet. 
-[DeleteWorksheetFilter](Specification/Operation/DeleteWorksheetFilter)  :  Delete a filter for a column in the worksheet. 
-[GetWorksheetAutoshapes](Specification/Operation/GetWorksheetAutoshapes)  :  Get autoshapes description in worksheet. 
-[GetWorksheetAutoshapeWithFormat](Specification/Operation/GetWorksheetAutoshapeWithFormat)  :  Get autoshape description in some format. 
-[PostBatchConvert](Specification/Operation/PostBatchConvert)  :  Batch converting files that meet specific matching conditions. 
-[PostBatchProtect](Specification/Operation/PostBatchProtect)  :  Batch protecting files that meet specific matching conditions. 
-[PostBatchLock](Specification/Operation/PostBatchLock)  :  Batch locking files that meet specific matching conditions. 
-[PostBatchUnlock](Specification/Operation/PostBatchUnlock)  :  Batch unlocking files that meet specific matching conditions. 
-[PostBatchSplit](Specification/Operation/PostBatchSplit)  :  Batch splitting files that meet specific matching conditions. 
-[PostClearContents](Specification/Operation/PostClearContents)  :  Clear cell area contents in the worksheet. 
-[PostClearFormats](Specification/Operation/PostClearFormats)  :  Clear cell formats in the worksheet. 
-[PostUpdateWorksheetRangeStyle](Specification/Operation/PostUpdateWorksheetRangeStyle)  :  Update cell range styles in the worksheet. 
-[PostWorksheetMerge](Specification/Operation/PostWorksheetMerge)  :  Merge cells in the worksheet. 
-[PostWorksheetUnmerge](Specification/Operation/PostWorksheetUnmerge)  :  Unmerge cells in the worksheet. 
-[GetWorksheetCells](Specification/Operation/GetWorksheetCells)  :  Retrieve cell descriptions in a specified format. 
-[GetWorksheetCell](Specification/Operation/GetWorksheetCell)  :  Retrieve cell data using either cell reference or method name in the worksheet. 
-[GetWorksheetCellStyle](Specification/Operation/GetWorksheetCellStyle)  :  Retrieve cell style descriptions in the worksheet. 
-[PostWorksheetCellSetValue](Specification/Operation/PostWorksheetCellSetValue)  :  Set cell value using cell name in the worksheet. 
-[PostUpdateWorksheetCellStyle](Specification/Operation/PostUpdateWorksheetCellStyle)  :  Set cell style using cell name in the worksheet. 
-[PostSetCellRangeValue](Specification/Operation/PostSetCellRangeValue)  :  Set the value of the range in the worksheet. 
-[PostCopyCellIntoCell](Specification/Operation/PostCopyCellIntoCell)  :  Copy data from a source cell to a destination cell in the worksheet. 
-[GetCellHtmlString](Specification/Operation/GetCellHtmlString)  :  Retrieve the HTML string containing data and specific formats in this cell. 
-[PostSetCellHtmlString](Specification/Operation/PostSetCellHtmlString)  :  Set the HTML string containing data and specific formats in this cell. 
-[PostCellCalculate](Specification/Operation/PostCellCalculate)  :  Calculate cell formula in the worksheet. 
-[PostCellCharacters](Specification/Operation/PostCellCharacters)  :  Set cell characters in the worksheet. 
-[GetWorksheetColumns](Specification/Operation/GetWorksheetColumns)  :  Retrieve descriptions of worksheet columns. 
-[PostSetWorksheetColumnWidth](Specification/Operation/PostSetWorksheetColumnWidth)  :  Set worksheet column width. 
-[GetWorksheetColumn](Specification/Operation/GetWorksheetColumn)  :  Retrieve worksheet column data by column index. 
-[PutInsertWorksheetColumns](Specification/Operation/PutInsertWorksheetColumns)  :  Insert worksheet columns in the worksheet. 
-[DeleteWorksheetColumns](Specification/Operation/DeleteWorksheetColumns)  :  Delete worksheet columns in the worksheet. 
-[PostHideWorksheetColumns](Specification/Operation/PostHideWorksheetColumns)  :  Hide worksheet columns in the worksheet. 
-[PostUnhideWorksheetColumns](Specification/Operation/PostUnhideWorksheetColumns)  :  Unhide worksheet columns in the worksheet. 
-[PostGroupWorksheetColumns](Specification/Operation/PostGroupWorksheetColumns)  :  Group worksheet columns in the worksheet. 
-[PostUngroupWorksheetColumns](Specification/Operation/PostUngroupWorksheetColumns)  :  Ungroup worksheet columns. 
-[PostCopyWorksheetColumns](Specification/Operation/PostCopyWorksheetColumns)  :  Copy data from source columns to destination columns in the worksheet. 
-[PostColumnStyle](Specification/Operation/PostColumnStyle)  :  Set column style in the worksheet. 
-[GetWorksheetRows](Specification/Operation/GetWorksheetRows)  :  Retrieve descriptions of rows in the worksheet. 
-[GetWorksheetRow](Specification/Operation/GetWorksheetRow)  :  Retrieve row data by the row's index in the worksheet. 
-[DeleteWorksheetRow](Specification/Operation/DeleteWorksheetRow)  :  Delete a row in the worksheet. 
-[DeleteWorksheetRows](Specification/Operation/DeleteWorksheetRows)  :  Delete several rows in the worksheet. 
-[PutInsertWorksheetRows](Specification/Operation/PutInsertWorksheetRows)  :  Insert several new rows in the worksheet. 
-[PutInsertWorksheetRow](Specification/Operation/PutInsertWorksheetRow)  :  Insert a new row in the worksheet. 
-[PostUpdateWorksheetRow](Specification/Operation/PostUpdateWorksheetRow)  :  Update height of rows in the worksheet. 
-[PostHideWorksheetRows](Specification/Operation/PostHideWorksheetRows)  :  Hide rows in worksheet. 
-[PostUnhideWorksheetRows](Specification/Operation/PostUnhideWorksheetRows)  :  Unhide rows in the worksheet. 
-[PostGroupWorksheetRows](Specification/Operation/PostGroupWorksheetRows)  :  Group rows in the worksheet. 
-[PostUngroupWorksheetRows](Specification/Operation/PostUngroupWorksheetRows)  :  Ungroup rows in the worksheet. 
-[PostCopyWorksheetRows](Specification/Operation/PostCopyWorksheetRows)  :  Copy data and formats from specific entire rows in the worksheet. 
-[PostRowStyle](Specification/Operation/PostRowStyle)  :  Apply formats to an entire row in the worksheet. 
-[GetCellsCloudServicesHealthCheck](Specification/Operation/GetCellsCloudServicesHealthCheck)  :  Retrieve cell descriptions in a specified format. 
-[GetCellsCloudServiceStatus](Specification/Operation/GetCellsCloudServiceStatus)  :  Aspose.Cells Cloud service health status check. 
-[GetChartArea](Specification/Operation/GetChartArea)  :  Retrieve chart area description in the worksheet. 
-[GetChartAreaFillFormat](Specification/Operation/GetChartAreaFillFormat)  :  Retrieve chart area fill format description in the worksheet. 
-[GetChartAreaBorder](Specification/Operation/GetChartAreaBorder)  :  Retrieve chart area border description. 
-[GetWorksheetCharts](Specification/Operation/GetWorksheetCharts)  :  Retrieve descriptions of charts in the worksheet. 
-[GetWorksheetChart](Specification/Operation/GetWorksheetChart)  :  Retrieve the chart in a specified format. 
-[PutWorksheetChart](Specification/Operation/PutWorksheetChart)  :  Add a new chart in the worksheet. 
-[DeleteWorksheetChart](Specification/Operation/DeleteWorksheetChart)  :  Delete a chart by index in the worksheet. 
-[PostWorksheetChart](Specification/Operation/PostWorksheetChart)  :  Update chart properties in the worksheet. 
-[GetWorksheetChartLegend](Specification/Operation/GetWorksheetChartLegend)  :  Retrieve chart legend description in the worksheet. 
-[PostWorksheetChartLegend](Specification/Operation/PostWorksheetChartLegend)  :  Update chart legend in the worksheet. 
-[PutWorksheetChartLegend](Specification/Operation/PutWorksheetChartLegend)  :  Show chart legend in the worksheet. 
-[DeleteWorksheetChartLegend](Specification/Operation/DeleteWorksheetChartLegend)  :  Hides chart legend in the worksheet. 
-[DeleteWorksheetCharts](Specification/Operation/DeleteWorksheetCharts)  :  Clear the charts in the worksheets. 
-[GetWorksheetChartTitle](Specification/Operation/GetWorksheetChartTitle)  :  Retrieve chart title description in the worksheet. 
-[PostWorksheetChartTitle](Specification/Operation/PostWorksheetChartTitle)  :  Update chart title in the worksheet. 
-[PutWorksheetChartTitle](Specification/Operation/PutWorksheetChartTitle)  :  Set chart title in the worksheet. 
-[DeleteWorksheetChartTitle](Specification/Operation/DeleteWorksheetChartTitle)  :  Hide chart title in the worksheet. 
-[GetChartSeriesAxis](Specification/Operation/GetChartSeriesAxis)  :  Retrieve descriptions of chart seriesaxis in the chart. 
-[GetChartCategoryAxis](Specification/Operation/GetChartCategoryAxis)  :  Retrieve descriptions of chart series axis in the chart. 
-[GetChartValueAxis](Specification/Operation/GetChartValueAxis)  :  Retrieve chart value axis in the chart. 
-[GetChartSecondCategoryAxis](Specification/Operation/GetChartSecondCategoryAxis)  :  Retrieve chart second category axis in the chart 
-[GetChartSecondValueAxis](Specification/Operation/GetChartSecondValueAxis)  :  Retrieve chart second value axis in the chart. 
-[PostChartSeriesAxis](Specification/Operation/PostChartSeriesAxis)  :  Update chart series axis in the chart. 
-[PostChartCategoryAxis](Specification/Operation/PostChartCategoryAxis)  :  Update chart category axis in the chart. 
-[PostChartValueAxis](Specification/Operation/PostChartValueAxis)  :  Update chart value axis in the chart. 
-[PostChartSecondCategoryAxis](Specification/Operation/PostChartSecondCategoryAxis)  :  Update chart sencond category axis in the chart. 
-[PostChartSecondValueAxis](Specification/Operation/PostChartSecondValueAxis)  :  Update chart sencond value axis in the chart. 
-[GetWorksheetConditionalFormattings](Specification/Operation/GetWorksheetConditionalFormattings)  :  Retrieve descriptions of conditional formattings in a worksheet. 
-[GetWorksheetConditionalFormatting](Specification/Operation/GetWorksheetConditionalFormatting)  :  Retrieve conditional formatting descriptions in the worksheet. 
-[PutWorksheetConditionalFormatting](Specification/Operation/PutWorksheetConditionalFormatting)  :  Add conditional formatting in the worksheet. 
-[PutWorksheetFormatCondition](Specification/Operation/PutWorksheetFormatCondition)  :  Add a format condition in the worksheet. 
-[PutWorksheetFormatConditionArea](Specification/Operation/PutWorksheetFormatConditionArea)  :  Add a cell area for the format condition in the worksheet. 
-[PutWorksheetFormatConditionCondition](Specification/Operation/PutWorksheetFormatConditionCondition)  :  Add a condition for the format condition in the worksheet. 
-[DeleteWorksheetConditionalFormattings](Specification/Operation/DeleteWorksheetConditionalFormattings)  :  Clear all conditional formattings in the worksheet. 
-[DeleteWorksheetConditionalFormatting](Specification/Operation/DeleteWorksheetConditionalFormatting)  :  Remove a conditional formatting. 
-[DeleteWorksheetConditionalFormattingArea](Specification/Operation/DeleteWorksheetConditionalFormattingArea)  :  Remove cell area from conditional formatting. 
-[GetWorkbook](Specification/Operation/GetWorkbook)  :  Retrieve workbooks in various formats. 
-[PutConvertWorkbook](Specification/Operation/PutConvertWorkbook)  :  Convert the workbook from the requested content into files in different formats. 
-[PostWorkbookSaveAs](Specification/Operation/PostWorkbookSaveAs)  :  Save an Excel file in various formats. 
-[PostConvertWorkbookToPDF](Specification/Operation/PostConvertWorkbookToPDF)  :  Convert Excel file to PDF files. 
-[PostConvertWorkbookToPNG](Specification/Operation/PostConvertWorkbookToPNG)  :  Convert Excel file to PNG files. 
-[PostConvertWorkbookToDocx](Specification/Operation/PostConvertWorkbookToDocx)  :  Convert Excel file to Docx files. 
-[PostConvertWorkbookToPptx](Specification/Operation/PostConvertWorkbookToPptx)  :  Convert Excel file to Pptx files. 
-[PostConvertWorkbookToHtml](Specification/Operation/PostConvertWorkbookToHtml)  :  Convert Excel file to HTML files. 
-[PostConvertWorkbookToMarkdown](Specification/Operation/PostConvertWorkbookToMarkdown)  :  Convert Excel file to Markdown files. 
-[PostConvertWorkbookToJson](Specification/Operation/PostConvertWorkbookToJson)  :  Convert Excel file to Json files. 
-[PostConvertWorkbookToSQL](Specification/Operation/PostConvertWorkbookToSQL)  :  Convert Excel file to SQL Script files. 
-[PostConvertWorkbookToCSV](Specification/Operation/PostConvertWorkbookToCSV)  :  Convert Excel file to Csv files. 
-[PostExport](Specification/Operation/PostExport)  :  Export Excel internal elements or the workbook itself to various format files. 
-[PostWorkbookExportXML](Specification/Operation/PostWorkbookExportXML)  :  Export XML data from an Excel file.When there are XML Maps in an Excel file, export XML data. When there is no XML map in the Excel file, convert the Excel file to an XML file. 
-[PostWorkbookImportJson](Specification/Operation/PostWorkbookImportJson)  :  Import a JSON data file into the workbook. The JSON data file can either be a cloud file or data from an HTTP URI. 
-[PostWorkbookImportXML](Specification/Operation/PostWorkbookImportXML)  :  Import an XML data file into an Excel file. The XML data file can either be a cloud file or data from an HTTP URI. 
-[PostImportData](Specification/Operation/PostImportData)  :  Import data into the Excel file. 
-[PostWorkbookDataCleansing](Specification/Operation/PostWorkbookDataCleansing)  :  Data cleaning of spreadsheet files is a data management process used to identify, correct, and remove errors, incompleteness, duplicates, or inaccuracies in tables and ranges. 
-[PostDataCleansing](Specification/Operation/PostDataCleansing)  :  Data cleansing of spreadsheet files is a data management process used to identify, correct, and remove errors, incompleteness, duplicates, or inaccuracies in tables and ranges. 
-[PostWorkbookDataDeduplication](Specification/Operation/PostWorkbookDataDeduplication)  :  Data deduplication of spreadsheet files is mainly used to eliminate duplicate data in tables and ranges. 
-[PostDataDeduplication](Specification/Operation/PostDataDeduplication)  :  Data deduplication of spreadsheet files is mainly used to eliminate duplicate data in tables and ranges. 
-[PostWorkbookDataFill](Specification/Operation/PostWorkbookDataFill)  :  Data filling for spreadsheet files is primarily used to fill empty data in tables and ranges. 
-[PostDataFill](Specification/Operation/PostDataFill)  :  Data filling for spreadsheet files is primarily used to fill empty data in tables and ranges. 
-[PostDeleteIncompleteRows](Specification/Operation/PostDeleteIncompleteRows)  :  Deleting incomplete rows of spreadsheet files is mainly used to eliminate incomplete rows in tables and ranges. 
-[GetWorksheetHyperlinks](Specification/Operation/GetWorksheetHyperlinks)  :  Retrieve descriptions of hyperlinks in the worksheet. 
-[GetWorksheetHyperlink](Specification/Operation/GetWorksheetHyperlink)  :  Retrieve hyperlink description by index in the worksheet. 
-[DeleteWorksheetHyperlink](Specification/Operation/DeleteWorksheetHyperlink)  :  Delete hyperlink by index in the worksheet. 
-[PostWorksheetHyperlink](Specification/Operation/PostWorksheetHyperlink)  :  Update hyperlink by index in the worksheet. 
-[PutWorksheetHyperlink](Specification/Operation/PutWorksheetHyperlink)  :  Add hyperlink in the worksheet. 
-[DeleteWorksheetHyperlinks](Specification/Operation/DeleteWorksheetHyperlinks)  :  Delete all hyperlinks in the worksheet. 
-[PostAssemble](Specification/Operation/PostAssemble)  :  Assemble data files with template files to generate files in various formats. 
-[PostCompress](Specification/Operation/PostCompress)  :  Compress files and generate target files in various formats, supported file formats are include Xls, Xlsx, Xlsm, Xlsb, Ods and more. 
-[PostMerge](Specification/Operation/PostMerge)  :  Merge cells in the worksheet. 
-[PostSplit](Specification/Operation/PostSplit)  :  Split Excel spreadsheet files based on worksheets and create output files in various formats. 
-[PostSearch](Specification/Operation/PostSearch)  :  Search for specified text within Excel files. 
-[PostReplace](Specification/Operation/PostReplace)  :  Replace specified text with new text in Excel files. 
-[PostImport](Specification/Operation/PostImport)  :  Import data into an Excel file and generate output files in various formats. 
-[PostWatermark](Specification/Operation/PostWatermark)  :  Add Text Watermark to Excel files and generate output files in various formats. 
-[PostClearObjects](Specification/Operation/PostClearObjects)  :  Clear internal elements in Excel files and generate output files in various formats. 
-[PostReverse](Specification/Operation/PostReverse)  :  Reverse rows or columns in Excel files and create output files in various formats. 
-[PostRepair](Specification/Operation/PostRepair)  :  Repair abnormal files and generate files in various formats. 
-[PostRotate](Specification/Operation/PostRotate)  :  Rotate rows, columns, or other objects in Excel files and save them in various formats. 
-[PostMetadata](Specification/Operation/PostMetadata)  :  Update document properties in Excel file, and save them is various formats. 
-[GetMetadata](Specification/Operation/GetMetadata)  :  Get cells document properties. 
-[DeleteMetadata](Specification/Operation/DeleteMetadata)  :  Delete cells document properties in Excel file, and save them is various formats. 
-[GetWorksheetListObjects](Specification/Operation/GetWorksheetListObjects)  :  Retrieve descriptions of ListObjects in the worksheet. 
-[GetWorksheetListObject](Specification/Operation/GetWorksheetListObject)  :  Retrieve list object description by index in the worksheet. 
-[PutWorksheetListObject](Specification/Operation/PutWorksheetListObject)  :  Add a ListObject in the worksheet. 
-[DeleteWorksheetListObjects](Specification/Operation/DeleteWorksheetListObjects)  :  Delete ListObjects in the worksheet. 
-[DeleteWorksheetListObject](Specification/Operation/DeleteWorksheetListObject)  :  Delete list object by index in the worksheet. 
-[PostWorksheetListObject](Specification/Operation/PostWorksheetListObject)  :  Update list object by index in the worksheet. 
-[PostWorksheetListObjectConvertToRange](Specification/Operation/PostWorksheetListObjectConvertToRange)  :  Convert list object to range in the worksheet. 
-[PostWorksheetListObjectSummarizeWithPivotTable](Specification/Operation/PostWorksheetListObjectSummarizeWithPivotTable)  :  Create a pivot table with a list object in the worksheet. 
-[PostWorksheetListObjectSortTable](Specification/Operation/PostWorksheetListObjectSortTable)  :  Sort list object in the worksheet. 
-[PostWorksheetListObjectRemoveDuplicates](Specification/Operation/PostWorksheetListObjectRemoveDuplicates)  :  Remove duplicates in list object. 
-[PostWorksheetListObjectInsertSlicer](Specification/Operation/PostWorksheetListObjectInsertSlicer)  :  Insert slicer for list object. 
-[PostWorksheetListColumn](Specification/Operation/PostWorksheetListColumn)  :  Update list column in list object. 
-[PostWorksheetListColumnsTotal](Specification/Operation/PostWorksheetListColumnsTotal)  :  Update total of list columns in the table. 
-[GetWorksheetOleObjects](Specification/Operation/GetWorksheetOleObjects)  :  Retrieve descriptions of OLE objects in the worksheet. 
-[GetWorksheetOleObject](Specification/Operation/GetWorksheetOleObject)  :  Retrieve the OLE object in a specified format in the worksheet. 
-[DeleteWorksheetOleObjects](Specification/Operation/DeleteWorksheetOleObjects)  :  Delete all OLE objects in the worksheet. 
-[DeleteWorksheetOleObject](Specification/Operation/DeleteWorksheetOleObject)  :  Delete an OLE object in the worksheet. 
-[PostUpdateWorksheetOleObject](Specification/Operation/PostUpdateWorksheetOleObject)  :  Update an OLE object in worksheet. 
-[PutWorksheetOleObject](Specification/Operation/PutWorksheetOleObject)  :  Add an OLE object in the worksheet. 
-[GetVerticalPageBreaks](Specification/Operation/GetVerticalPageBreaks)  :  Retrieve descriptions of vertical page breaks in the worksheet. 
-[GetHorizontalPageBreaks](Specification/Operation/GetHorizontalPageBreaks)  :  Retrieve descriptions of horizontal page breaks in the worksheet. 
-[GetVerticalPageBreak](Specification/Operation/GetVerticalPageBreak)  :  Retrieve a vertical page break description in the worksheet. 
-[GetHorizontalPageBreak](Specification/Operation/GetHorizontalPageBreak)  :  Retrieve a horizontal page break descripton in the worksheet. 
-[PutVerticalPageBreak](Specification/Operation/PutVerticalPageBreak)  :  Add a vertical page break in the worksheet. 
-[PutHorizontalPageBreak](Specification/Operation/PutHorizontalPageBreak)  :  Add a horizontal page breaks in the worksheet. 
-[DeleteVerticalPageBreaks](Specification/Operation/DeleteVerticalPageBreaks)  :  Delete vertical page breaks in the worksheet. 
-[DeleteHorizontalPageBreaks](Specification/Operation/DeleteHorizontalPageBreaks)  :  Delete horizontal page breaks in the worksheet. 
-[DeleteVerticalPageBreak](Specification/Operation/DeleteVerticalPageBreak)  :  Delete a vertical page break in the worksheet. 
-[DeleteHorizontalPageBreak](Specification/Operation/DeleteHorizontalPageBreak)  :  Delete a horizontal page break in the worksheet. 
-[GetPageSetup](Specification/Operation/GetPageSetup)  :  Retrieve page setup description in the worksheet. 
-[PostPageSetup](Specification/Operation/PostPageSetup)  :  Update page setup in the worksheet. 
-[DeleteHeaderFooter](Specification/Operation/DeleteHeaderFooter)  :  Clear header and footer in the worksheet. 
-[GetHeader](Specification/Operation/GetHeader)  :  Retrieve page header description in the worksheet. 
-[PostHeader](Specification/Operation/PostHeader)  :  Update page header in the worksheet. 
-[GetFooter](Specification/Operation/GetFooter)  :  Retrieve page footer description in the worksheet. 
-[PostFooter](Specification/Operation/PostFooter)  :  Update page footer in the worksheet. 
-[PostFitWideToPages](Specification/Operation/PostFitWideToPages)  :  Set the scale at which the page will fit wide when printed on the sheet. 
-[PostFitTallToPages](Specification/Operation/PostFitTallToPages)  :  Set the scale at which the page will fit tall when printed on the sheet. 
-[GetWorksheetPictures](Specification/Operation/GetWorksheetPictures)  :  Retrieve descriptions of pictures in the worksheet. 
-[GetWorksheetPictureWithFormat](Specification/Operation/GetWorksheetPictureWithFormat)  :  Retrieve a picture by number in the worksheet. 
-[PutWorksheetAddPicture](Specification/Operation/PutWorksheetAddPicture)  :  Add a new picture in the worksheet. 
-[PostWorksheetPicture](Specification/Operation/PostWorksheetPicture)  :  Update a picture by index in the worksheet. 
-[DeleteWorksheetPicture](Specification/Operation/DeleteWorksheetPicture)  :  Delete a picture object by index in the worksheet. 
-[DeleteWorksheetPictures](Specification/Operation/DeleteWorksheetPictures)  :  Delete all pictures in the worksheet. 
-[GetWorksheetPivotTables](Specification/Operation/GetWorksheetPivotTables)  :  Retrieve descriptions of pivottables  in the worksheet. 
-[GetWorksheetPivotTable](Specification/Operation/GetWorksheetPivotTable)  :  Retrieve PivotTable information by index in the worksheet. 
-[GetPivotTableField](Specification/Operation/GetPivotTableField)  :  Retrieve descriptions of pivot fields in the PivotTable. 
-[GetWorksheetPivotTableFilters](Specification/Operation/GetWorksheetPivotTableFilters)  :  Gets PivotTable filters in worksheet. 
-[GetWorksheetPivotTableFilter](Specification/Operation/GetWorksheetPivotTableFilter)  :  Retrieve PivotTable filters in the worksheet. 
-[PutWorksheetPivotTable](Specification/Operation/PutWorksheetPivotTable)  :  Add a PivotTable in the worksheet. 
-[PutPivotTableField](Specification/Operation/PutPivotTableField)  :  Add a pivot field in the PivotTable. 
-[PutWorksheetPivotTableFilter](Specification/Operation/PutWorksheetPivotTableFilter)  :  Add a pivot filter to the PivotTable. 
-[PostPivotTableFieldHideItem](Specification/Operation/PostPivotTableFieldHideItem)  :  Hide a pivot field item in the PivotTable. 
-[PostPivotTableFieldMoveTo](Specification/Operation/PostPivotTableFieldMoveTo)  :  Move a pivot field in the PivotTable. 
-[PostPivotTableCellStyle](Specification/Operation/PostPivotTableCellStyle)  :  Update cell style in the PivotTable. 
-[PostPivotTableStyle](Specification/Operation/PostPivotTableStyle)  :  Update style in the PivotTable. 
-[PostPivotTableUpdatePivotFields](Specification/Operation/PostPivotTableUpdatePivotFields)  :  Update pivot fields in the PivotTable. 
-[PostPivotTableUpdatePivotField](Specification/Operation/PostPivotTableUpdatePivotField)  :  Update pivot field in the PivotTable. 
-[PostWorksheetPivotTableCalculate](Specification/Operation/PostWorksheetPivotTableCalculate)  :  Calculate pivottable's data to cells. 
-[PostWorksheetPivotTableMove](Specification/Operation/PostWorksheetPivotTableMove)  :  Move PivotTable in the worksheet. 
-[DeleteWorksheetPivotTables](Specification/Operation/DeleteWorksheetPivotTables)  :  Delete PivotTables in the worksheet. 
-[DeleteWorksheetPivotTable](Specification/Operation/DeleteWorksheetPivotTable)  :  Delete PivotTable by index in the worksheet. 
-[DeletePivotTableField](Specification/Operation/DeletePivotTableField)  :  Delete a pivot field in the PivotTable. 
-[DeleteWorksheetPivotTableFilters](Specification/Operation/DeleteWorksheetPivotTableFilters)  :  Delete all pivot filters in the PivotTable. 
-[DeleteWorksheetPivotTableFilter](Specification/Operation/DeleteWorksheetPivotTableFilter)  :  Delete a pivot filter in the PivotTable. 
-[GetDocumentProperties](Specification/Operation/GetDocumentProperties)  :  Retrieve descriptions of Excel file properties. 
-[PutDocumentProperty](Specification/Operation/PutDocumentProperty)  :  Set or add an Excel property. 
-[GetDocumentProperty](Specification/Operation/GetDocumentProperty)  :  Get Excel property by name. 
-[DeleteDocumentProperty](Specification/Operation/DeleteDocumentProperty)  :  Delete an Excel property. 
-[DeleteDocumentProperties](Specification/Operation/DeleteDocumentProperties)  :  Delete all custom document properties and reset built-in ones. 
-[PostDigitalSignature](Specification/Operation/PostDigitalSignature)  :  Excel file digital signature. 
-[PostEncryptWorkbook](Specification/Operation/PostEncryptWorkbook)  :  Excel Encryption. 
-[DeleteDecryptWorkbook](Specification/Operation/DeleteDecryptWorkbook)  :  Excel files decryption. 
-[PostProtectWorkbook](Specification/Operation/PostProtectWorkbook)  :  Excel protection. 
-[DeleteUnProtectWorkbook](Specification/Operation/DeleteUnProtectWorkbook)  :  Excel unprotection. 
-[PutDocumentProtectFromChanges](Specification/Operation/PutDocumentProtectFromChanges)  :  Excel file write protection. 
-[DeleteDocumentUnProtectFromChanges](Specification/Operation/DeleteDocumentUnProtectFromChanges)  :  Excel file cancel write protection. 
-[PostUnlock](Specification/Operation/PostUnlock)  :  Unlock Excel files. 
-[PostLock](Specification/Operation/PostLock)  :  Lock Excel files. 
-[PostProtect](Specification/Operation/PostProtect)  :  Excel files encryption. 
-[PostWorksheetCellsRangesCopy](Specification/Operation/PostWorksheetCellsRangesCopy)  :  Copy content from the source range to the destination range in the worksheet. 
-[PostWorksheetCellsRangeMerge](Specification/Operation/PostWorksheetCellsRangeMerge)  :  Merge a range of cells into a single cell. 
-[PostWorksheetCellsRangeUnMerge](Specification/Operation/PostWorksheetCellsRangeUnMerge)  :  Unmerge merged cells within this range. 
-[PostWorksheetCellsRangeStyle](Specification/Operation/PostWorksheetCellsRangeStyle)  :  Set the style for the specified range. 
-[GetWorksheetCellsRangeValue](Specification/Operation/GetWorksheetCellsRangeValue)  :  Retrieve the values of cells within the specified range. 
-[PostWorksheetCellsRangeValue](Specification/Operation/PostWorksheetCellsRangeValue)  :  Assign a value to the range; if necessary, the value will be converted to another data type, and the cell's number format will be reset. 
-[PostWorksheetCellsRangeMoveTo](Specification/Operation/PostWorksheetCellsRangeMoveTo)  :  Move the current range to the destination range. 
-[PostWorksheetCellsRangeSort](Specification/Operation/PostWorksheetCellsRangeSort)  :  Perform data sorting around a range of cells. 
-[PostWorksheetCellsRangeOutlineBorder](Specification/Operation/PostWorksheetCellsRangeOutlineBorder)  :  Apply an outline border around a range of cells. 
-[PostWorksheetCellsRangeColumnWidth](Specification/Operation/PostWorksheetCellsRangeColumnWidth)  :  Set the column width of the specified range. 
-[PostWorksheetCellsRangeRowHeight](Specification/Operation/PostWorksheetCellsRangeRowHeight)  :  Sets row height of range. 
-[PutWorksheetCellsRange](Specification/Operation/PutWorksheetCellsRange)  :  Insert a range of cells and shift existing cells based on the specified shift option. 
-[DeleteWorksheetCellsRange](Specification/Operation/DeleteWorksheetCellsRange)  :  Delete a range of cells and shift existing cells based on the specified shift option. 
-[GetWorksheetShapes](Specification/Operation/GetWorksheetShapes)  :  Retrieve descriptions of shapes in the worksheet. 
-[GetWorksheetShape](Specification/Operation/GetWorksheetShape)  :  Retrieve description of shape in the worksheet. 
-[PutWorksheetShape](Specification/Operation/PutWorksheetShape)  :  Add a shape in the worksheet. 
-[DeleteWorksheetShapes](Specification/Operation/DeleteWorksheetShapes)  :  Delete all shapes in the worksheet. 
-[DeleteWorksheetShape](Specification/Operation/DeleteWorksheetShape)  :  Delete a shape in the worksheet. 
-[PostWorksheetShape](Specification/Operation/PostWorksheetShape)  :  Update a shape in the worksheet. 
-[PostWorksheetGroupShape](Specification/Operation/PostWorksheetGroupShape)  :  Group shapes in the worksheet. 
-[PostWorksheetUngroupShape](Specification/Operation/PostWorksheetUngroupShape)  :  Ungroup shapes in the worksheet. 
-[GetWorksheetSparklineGroups](Specification/Operation/GetWorksheetSparklineGroups)  :  Retrieve descriptions of sparkline groups in the worksheet. 
-[GetWorksheetSparklineGroup](Specification/Operation/GetWorksheetSparklineGroup)  :  Retrieve description of a sparkline group in the worksheet. 
-[DeleteWorksheetSparklineGroups](Specification/Operation/DeleteWorksheetSparklineGroups)  :  Delete sparkline groups in the worksheet. 
-[DeleteWorksheetSparklineGroup](Specification/Operation/DeleteWorksheetSparklineGroup)  :  Delete a sparkline group in the worksheet. 
-[PutWorksheetSparklineGroup](Specification/Operation/PutWorksheetSparklineGroup)  :  Add a sparkline group in the worksheet. 
-[PostWorksheetSparklineGroup](Specification/Operation/PostWorksheetSparklineGroup)  :  Update a sparkline group in the worksheet. 
-[PostRunTask](Specification/Operation/PostRunTask)  :  Run tasks. 
-[GetWorkbookDefaultStyle](Specification/Operation/GetWorkbookDefaultStyle)  :  Retrieve the description of the default style for the workbook. 
-[GetWorkbookTextItems](Specification/Operation/GetWorkbookTextItems)  :  Retrieve text items in the workbook. 
-[GetWorkbookNames](Specification/Operation/GetWorkbookNames)  :  Retrieve named ranges in the workbook. 
-[PutWorkbookName](Specification/Operation/PutWorkbookName)  :  Define a new name in the workbook. 
-[GetWorkbookName](Specification/Operation/GetWorkbookName)  :  Retrieve description of a named range in the workbook. 
-[PostWorkbookName](Specification/Operation/PostWorkbookName)  :  Update a named range in the workbook. 
-[GetWorkbookNameValue](Specification/Operation/GetWorkbookNameValue)  :  Retrieve the value of a named range in the workbook. 
-[DeleteWorkbookNames](Specification/Operation/DeleteWorkbookNames)  :  Delete all named ranges in the workbook. 
-[DeleteWorkbookName](Specification/Operation/DeleteWorkbookName)  :  Delete a named range in the workbook. 
-[PostWorkbooksMerge](Specification/Operation/PostWorkbooksMerge)  :  Merge a workbook into the existing workbook. 
-[PostWorkbooksTextSearch](Specification/Operation/PostWorkbooksTextSearch)  :  Search for text in the workbook. 
-[PostWorkbookTextReplace](Specification/Operation/PostWorkbookTextReplace)  :  Replace text in the workbook. 
-[PostWorkbookGetSmartMarkerResult](Specification/Operation/PostWorkbookGetSmartMarkerResult)  :  Smart marker processing. 
-[PutWorkbookCreate](Specification/Operation/PutWorkbookCreate)  :  Create a new workbook using different methods. 
-[PostWorkbookSplit](Specification/Operation/PostWorkbookSplit)  :  Split the workbook with a specific format. 
-[PostWorkbookCalculateFormula](Specification/Operation/PostWorkbookCalculateFormula)  :  Calculate all formulas in the workbook. 
-[PostAutofitWorkbookRows](Specification/Operation/PostAutofitWorkbookRows)  :  Autofit rows in the workbook. 
-[PostAutofitWorkbookColumns](Specification/Operation/PostAutofitWorkbookColumns)  :  Autofit columns in the workbook. 
-[GetWorkbookSettings](Specification/Operation/GetWorkbookSettings)  :  Retrieve descriptions of workbook settings. 
-[PostWorkbookSettings](Specification/Operation/PostWorkbookSettings)  :  Update setting in the workbook. 
-[PutWorkbookBackground](Specification/Operation/PutWorkbookBackground)  :  Set background in the workbook. 
-[DeleteWorkbookBackground](Specification/Operation/DeleteWorkbookBackground)  :  Delete background in the workbook. 
-[PutWorkbookWaterMarker](Specification/Operation/PutWorkbookWaterMarker)  :  Set water marker in the workbook. 
-[GetPageCount](Specification/Operation/GetPageCount)  :  Get page count in the workbook. 
-[GetWorksheets](Specification/Operation/GetWorksheets)  :  Retrieve the description of worksheets from a workbook. 
-[GetWorksheetWithFormat](Specification/Operation/GetWorksheetWithFormat)  :  Retrieve the worksheet in a specified format from the workbook. 
-[PutChangeVisibilityWorksheet](Specification/Operation/PutChangeVisibilityWorksheet)  :  Change worksheet visibility in the workbook. 
-[PutActiveWorksheet](Specification/Operation/PutActiveWorksheet)  :  Set active worksheet index in the workbook. 
-[PutInsertNewWorksheet](Specification/Operation/PutInsertNewWorksheet)  :  Insert a new worksheet in the workbook. 
-[PutAddNewWorksheet](Specification/Operation/PutAddNewWorksheet)  :  Add a new worksheet in the workbook. 
-[DeleteWorksheet](Specification/Operation/DeleteWorksheet)  :  Delete a worksheet in the workbook. 
-[DeleteWorksheets](Specification/Operation/DeleteWorksheets)  :  Delete matched worksheets in the workbook. 
-[PostMoveWorksheet](Specification/Operation/PostMoveWorksheet)  :  Move worksheet in the workbook. 
-[PutProtectWorksheet](Specification/Operation/PutProtectWorksheet)  :  Protect worksheet. 
-[DeleteUnprotectWorksheet](Specification/Operation/DeleteUnprotectWorksheet)  :  Unprotect worksheet. 
-[GetWorksheetTextItems](Specification/Operation/GetWorksheetTextItems)  :  Retrieve text items in the worksheet. 
-[GetWorksheetComments](Specification/Operation/GetWorksheetComments)  :  Retrieve the description of comments in the worksheet. 
-[GetWorksheetComment](Specification/Operation/GetWorksheetComment)  :  Retrieve the description of comment in the worksheet. 
-[PutWorksheetComment](Specification/Operation/PutWorksheetComment)  :  Add cell comment in the worksheet. 
-[PostWorksheetComment](Specification/Operation/PostWorksheetComment)  :  Update cell comment in the worksheet. 
-[DeleteWorksheetComment](Specification/Operation/DeleteWorksheetComment)  :  Delete cell comment in the worksheet. 
-[DeleteWorksheetComments](Specification/Operation/DeleteWorksheetComments)  :  Delete all comments in the worksheet. 
-[GetWorksheetMergedCells](Specification/Operation/GetWorksheetMergedCells)  :  Get worksheet merged cells. 
-[GetWorksheetMergedCell](Specification/Operation/GetWorksheetMergedCell)  :  Retrieve description of a merged cell by its index in the worksheet. 
-[GetWorksheetCalculateFormula](Specification/Operation/GetWorksheetCalculateFormula)  :  Calculate formula in the worksheet. 
-[PostWorksheetCalculateFormula](Specification/Operation/PostWorksheetCalculateFormula)  :  Calculate formula in the worksheet. 
-[PostWorksheetTextSearch](Specification/Operation/PostWorksheetTextSearch)  :  Search for text in the worksheet. 
-[PostWorksheetTextReplace](Specification/Operation/PostWorksheetTextReplace)  :  Replace old text with new text in the worksheet. 
-[PostWorksheetRangeSort](Specification/Operation/PostWorksheetRangeSort)  :  Sort a range in the worksheet. 
-[PostAutofitWorksheetRow](Specification/Operation/PostAutofitWorksheetRow)  :  Autofit a row in the worksheet. 
-[PostAutofitWorksheetRows](Specification/Operation/PostAutofitWorksheetRows)  :  Autofit rows in the worksheet. 
-[PostAutofitWorksheetColumns](Specification/Operation/PostAutofitWorksheetColumns)  :  Autofit columns in the worksheet. 
-[PutWorksheetBackground](Specification/Operation/PutWorksheetBackground)  :  Set background image in the worksheet. 
-[DeleteWorksheetBackground](Specification/Operation/DeleteWorksheetBackground)  :  Delete background image in the worksheet. 
-[PutWorksheetFreezePanes](Specification/Operation/PutWorksheetFreezePanes)  :  Set freeze panes in the worksheet. 
-[DeleteWorksheetFreezePanes](Specification/Operation/DeleteWorksheetFreezePanes)  :  Unfreeze panes in worksheet. 
-[PostCopyWorksheet](Specification/Operation/PostCopyWorksheet)  :  Copy contents and formats from another worksheet. 
-[PostRenameWorksheet](Specification/Operation/PostRenameWorksheet)  :  Rename worksheet in the workbook. 
-[PostUpdateWorksheetProperty](Specification/Operation/PostUpdateWorksheetProperty)  :  Update worksheet properties in the workbook. 
-[GetNamedRanges](Specification/Operation/GetNamedRanges)  :  Retrieve descriptions of ranges in the worksheets. 
-[GetNamedRangeValue](Specification/Operation/GetNamedRangeValue)  :  Retrieve values in range. 
-[PostUpdateWorksheetZoom](Specification/Operation/PostUpdateWorksheetZoom)  :  Update the scaling percentage in the worksheet. It should be between 10 and 400. 
-[GetWorksheetPageCount](Specification/Operation/GetWorksheetPageCount)  :  Get page count in the worksheet. 
-[GetWorksheetValidations](Specification/Operation/GetWorksheetValidations)  :  Retrieve descriptions of validations in the worksheet. 
-[GetWorksheetValidation](Specification/Operation/GetWorksheetValidation)  :  Retrieve a validation by its index in the worksheet. 
-[PutWorksheetValidation](Specification/Operation/PutWorksheetValidation)  :  Add a validation at index in the worksheet. 
-[PostWorksheetValidation](Specification/Operation/PostWorksheetValidation)  :  Update a validation by index in the worksheet. 
-[DeleteWorksheetValidation](Specification/Operation/DeleteWorksheetValidation)  :  Delete a validation by index in worksheet. 
-[DeleteWorksheetValidations](Specification/Operation/DeleteWorksheetValidations)  :  Delete all validations in the worksheet. 
-[DownloadFile](Specification/Operation/DownloadFile)  :   
-[UploadFile](Specification/Operation/UploadFile)  :   
-[CopyFile](Specification/Operation/CopyFile)  :   
-[MoveFile](Specification/Operation/MoveFile)  :   
-[DeleteFile](Specification/Operation/DeleteFile)  :   
-[GetFilesList](Specification/Operation/GetFilesList)  :   
-[CreateFolder](Specification/Operation/CreateFolder)  :   
-[CopyFolder](Specification/Operation/CopyFolder)  :   
-[MoveFolder](Specification/Operation/MoveFolder)  :   
-[DeleteFolder](Specification/Operation/DeleteFolder)  :   
-[StorageExists](Specification/Operation/StorageExists)  :   
-[ObjectExists](Specification/Operation/ObjectExists)  :   
-[GetDiscUsage](Specification/Operation/GetDiscUsage)  :   
-[GetFileVersions](Specification/Operation/GetFileVersions)  :   
+- [PostAnalyzeExcel](Operation/PostAnalyzeExcel)  :  Perform business analysis of data in Excel files. 
+- [GetWorksheetAutoFilter](Operation/GetWorksheetAutoFilter)  :  Retrieve the description of auto filters from a worksheet. 
+- [PutWorksheetDateFilter](Operation/PutWorksheetDateFilter)  :  Apply a date filter in the worksheet. 
+- [PutWorksheetFilter](Operation/PutWorksheetFilter)  :  Add a filter for a column in the worksheet. 
+- [PutWorksheetIconFilter](Operation/PutWorksheetIconFilter)  :  Add an icon filter in the worksheet. 
+- [PutWorksheetCustomFilter](Operation/PutWorksheetCustomFilter)  :  Filter a list with custom criteria in the worksheet. 
+- [PutWorksheetDynamicFilter](Operation/PutWorksheetDynamicFilter)  :  Add a dynamic filter in the worksheet. 
+- [PutWorksheetFilterTop10](Operation/PutWorksheetFilterTop10)  :  Filter the top 10 items in the list in the worksheet. 
+- [PutWorksheetColorFilter](Operation/PutWorksheetColorFilter)  :  Add a color filter in the worksheet. 
+- [PostWorksheetMatchBlanks](Operation/PostWorksheetMatchBlanks)  :  Match all blank cells in the list. 
+- [PostWorksheetMatchNonBlanks](Operation/PostWorksheetMatchNonBlanks)  :  Match all not blank cells in the list. 
+- [PostWorksheetAutoFilterRefresh](Operation/PostWorksheetAutoFilterRefresh)  :  Refresh auto filters in the worksheet. 
+- [DeleteWorksheetDateFilter](Operation/DeleteWorksheetDateFilter)  :  Remove a date filter in the worksheet. 
+- [DeleteWorksheetFilter](Operation/DeleteWorksheetFilter)  :  Delete a filter for a column in the worksheet. 
+- [GetWorksheetAutoshapes](Operation/GetWorksheetAutoshapes)  :  Get autoshapes description in worksheet. 
+- [GetWorksheetAutoshapeWithFormat](Operation/GetWorksheetAutoshapeWithFormat)  :  Get autoshape description in some format. 
+- [PostBatchConvert](Operation/PostBatchConvert)  :  Batch converting files that meet specific matching conditions. 
+- [PostBatchProtect](Operation/PostBatchProtect)  :  Batch protecting files that meet specific matching conditions. 
+- [PostBatchLock](Operation/PostBatchLock)  :  Batch locking files that meet specific matching conditions. 
+- [PostBatchUnlock](Operation/PostBatchUnlock)  :  Batch unlocking files that meet specific matching conditions. 
+- [PostBatchSplit](Operation/PostBatchSplit)  :  Batch splitting files that meet specific matching conditions. 
+- [PostClearContents](Operation/PostClearContents)  :  Clear cell area contents in the worksheet. 
+- [PostClearFormats](Operation/PostClearFormats)  :  Clear cell formats in the worksheet. 
+- [PostUpdateWorksheetRangeStyle](Operation/PostUpdateWorksheetRangeStyle)  :  Update cell range styles in the worksheet. 
+- [PostWorksheetMerge](Operation/PostWorksheetMerge)  :  Merge cells in the worksheet. 
+- [PostWorksheetUnmerge](Operation/PostWorksheetUnmerge)  :  Unmerge cells in the worksheet. 
+- [GetWorksheetCells](Operation/GetWorksheetCells)  :  Retrieve cell descriptions in a specified format. 
+- [GetWorksheetCell](Operation/GetWorksheetCell)  :  Retrieve cell data using either cell reference or method name in the worksheet. 
+- [GetWorksheetCellStyle](Operation/GetWorksheetCellStyle)  :  Retrieve cell style descriptions in the worksheet. 
+- [PostWorksheetCellSetValue](Operation/PostWorksheetCellSetValue)  :  Set cell value using cell name in the worksheet. 
+- [PostUpdateWorksheetCellStyle](Operation/PostUpdateWorksheetCellStyle)  :  Set cell style using cell name in the worksheet. 
+- [PostSetCellRangeValue](Operation/PostSetCellRangeValue)  :  Set the value of the range in the worksheet. 
+- [PostCopyCellIntoCell](Operation/PostCopyCellIntoCell)  :  Copy data from a source cell to a destination cell in the worksheet. 
+- [GetCellHtmlString](Operation/GetCellHtmlString)  :  Retrieve the HTML string containing data and specific formats in this cell. 
+- [PostSetCellHtmlString](Operation/PostSetCellHtmlString)  :  Set the HTML string containing data and specific formats in this cell. 
+- [PostCellCalculate](Operation/PostCellCalculate)  :  Calculate cell formula in the worksheet. 
+- [PostCellCharacters](Operation/PostCellCharacters)  :  Set cell characters in the worksheet. 
+- [GetWorksheetColumns](Operation/GetWorksheetColumns)  :  Retrieve descriptions of worksheet columns. 
+- [PostSetWorksheetColumnWidth](Operation/PostSetWorksheetColumnWidth)  :  Set worksheet column width. 
+- [GetWorksheetColumn](Operation/GetWorksheetColumn)  :  Retrieve worksheet column data by column index. 
+- [PutInsertWorksheetColumns](Operation/PutInsertWorksheetColumns)  :  Insert worksheet columns in the worksheet. 
+- [DeleteWorksheetColumns](Operation/DeleteWorksheetColumns)  :  Delete worksheet columns in the worksheet. 
+- [PostHideWorksheetColumns](Operation/PostHideWorksheetColumns)  :  Hide worksheet columns in the worksheet. 
+- [PostUnhideWorksheetColumns](Operation/PostUnhideWorksheetColumns)  :  Unhide worksheet columns in the worksheet. 
+- [PostGroupWorksheetColumns](Operation/PostGroupWorksheetColumns)  :  Group worksheet columns in the worksheet. 
+- [PostUngroupWorksheetColumns](Operation/PostUngroupWorksheetColumns)  :  Ungroup worksheet columns. 
+- [PostCopyWorksheetColumns](Operation/PostCopyWorksheetColumns)  :  Copy data from source columns to destination columns in the worksheet. 
+- [PostColumnStyle](Operation/PostColumnStyle)  :  Set column style in the worksheet. 
+- [GetWorksheetRows](Operation/GetWorksheetRows)  :  Retrieve descriptions of rows in the worksheet. 
+- [GetWorksheetRow](Operation/GetWorksheetRow)  :  Retrieve row data by the row's index in the worksheet. 
+- [DeleteWorksheetRow](Operation/DeleteWorksheetRow)  :  Delete a row in the worksheet. 
+- [DeleteWorksheetRows](Operation/DeleteWorksheetRows)  :  Delete several rows in the worksheet. 
+- [PutInsertWorksheetRows](Operation/PutInsertWorksheetRows)  :  Insert several new rows in the worksheet. 
+- [PutInsertWorksheetRow](Operation/PutInsertWorksheetRow)  :  Insert a new row in the worksheet. 
+- [PostUpdateWorksheetRow](Operation/PostUpdateWorksheetRow)  :  Update height of rows in the worksheet. 
+- [PostHideWorksheetRows](Operation/PostHideWorksheetRows)  :  Hide rows in worksheet. 
+- [PostUnhideWorksheetRows](Operation/PostUnhideWorksheetRows)  :  Unhide rows in the worksheet. 
+- [PostGroupWorksheetRows](Operation/PostGroupWorksheetRows)  :  Group rows in the worksheet. 
+- [PostUngroupWorksheetRows](Operation/PostUngroupWorksheetRows)  :  Ungroup rows in the worksheet. 
+- [PostCopyWorksheetRows](Operation/PostCopyWorksheetRows)  :  Copy data and formats from specific entire rows in the worksheet. 
+- [PostRowStyle](Operation/PostRowStyle)  :  Apply formats to an entire row in the worksheet. 
+- [GetCellsCloudServicesHealthCheck](Operation/GetCellsCloudServicesHealthCheck)  :  Retrieve cell descriptions in a specified format. 
+- [GetCellsCloudServiceStatus](Operation/GetCellsCloudServiceStatus)  :  Aspose.Cells Cloud service health status check. 
+- [GetChartArea](Operation/GetChartArea)  :  Retrieve chart area description in the worksheet. 
+- [GetChartAreaFillFormat](Operation/GetChartAreaFillFormat)  :  Retrieve chart area fill format description in the worksheet. 
+- [GetChartAreaBorder](Operation/GetChartAreaBorder)  :  Retrieve chart area border description. 
+- [GetWorksheetCharts](Operation/GetWorksheetCharts)  :  Retrieve descriptions of charts in the worksheet. 
+- [GetWorksheetChart](Operation/GetWorksheetChart)  :  Retrieve the chart in a specified format. 
+- [PutWorksheetChart](Operation/PutWorksheetChart)  :  Add a new chart in the worksheet. 
+- [DeleteWorksheetChart](Operation/DeleteWorksheetChart)  :  Delete a chart by index in the worksheet. 
+- [PostWorksheetChart](Operation/PostWorksheetChart)  :  Update chart properties in the worksheet. 
+- [GetWorksheetChartLegend](Operation/GetWorksheetChartLegend)  :  Retrieve chart legend description in the worksheet. 
+- [PostWorksheetChartLegend](Operation/PostWorksheetChartLegend)  :  Update chart legend in the worksheet. 
+- [PutWorksheetChartLegend](Operation/PutWorksheetChartLegend)  :  Show chart legend in the worksheet. 
+- [DeleteWorksheetChartLegend](Operation/DeleteWorksheetChartLegend)  :  Hides chart legend in the worksheet. 
+- [DeleteWorksheetCharts](Operation/DeleteWorksheetCharts)  :  Clear the charts in the worksheets. 
+- [GetWorksheetChartTitle](Operation/GetWorksheetChartTitle)  :  Retrieve chart title description in the worksheet. 
+- [PostWorksheetChartTitle](Operation/PostWorksheetChartTitle)  :  Update chart title in the worksheet. 
+- [PutWorksheetChartTitle](Operation/PutWorksheetChartTitle)  :  Set chart title in the worksheet. 
+- [DeleteWorksheetChartTitle](Operation/DeleteWorksheetChartTitle)  :  Hide chart title in the worksheet. 
+- [GetChartSeriesAxis](Operation/GetChartSeriesAxis)  :  Retrieve descriptions of chart seriesaxis in the chart. 
+- [GetChartCategoryAxis](Operation/GetChartCategoryAxis)  :  Retrieve descriptions of chart series axis in the chart. 
+- [GetChartValueAxis](Operation/GetChartValueAxis)  :  Retrieve chart value axis in the chart. 
+- [GetChartSecondCategoryAxis](Operation/GetChartSecondCategoryAxis)  :  Retrieve chart second category axis in the chart 
+- [GetChartSecondValueAxis](Operation/GetChartSecondValueAxis)  :  Retrieve chart second value axis in the chart. 
+- [PostChartSeriesAxis](Operation/PostChartSeriesAxis)  :  Update chart series axis in the chart. 
+- [PostChartCategoryAxis](Operation/PostChartCategoryAxis)  :  Update chart category axis in the chart. 
+- [PostChartValueAxis](Operation/PostChartValueAxis)  :  Update chart value axis in the chart. 
+- [PostChartSecondCategoryAxis](Operation/PostChartSecondCategoryAxis)  :  Update chart sencond category axis in the chart. 
+- [PostChartSecondValueAxis](Operation/PostChartSecondValueAxis)  :  Update chart sencond value axis in the chart. 
+- [GetWorksheetConditionalFormattings](Operation/GetWorksheetConditionalFormattings)  :  Retrieve descriptions of conditional formattings in a worksheet. 
+- [GetWorksheetConditionalFormatting](Operation/GetWorksheetConditionalFormatting)  :  Retrieve conditional formatting descriptions in the worksheet. 
+- [PutWorksheetConditionalFormatting](Operation/PutWorksheetConditionalFormatting)  :  Add conditional formatting in the worksheet. 
+- [PutWorksheetFormatCondition](Operation/PutWorksheetFormatCondition)  :  Add a format condition in the worksheet. 
+- [PutWorksheetFormatConditionArea](Operation/PutWorksheetFormatConditionArea)  :  Add a cell area for the format condition in the worksheet. 
+- [PutWorksheetFormatConditionCondition](Operation/PutWorksheetFormatConditionCondition)  :  Add a condition for the format condition in the worksheet. 
+- [DeleteWorksheetConditionalFormattings](Operation/DeleteWorksheetConditionalFormattings)  :  Clear all conditional formattings in the worksheet. 
+- [DeleteWorksheetConditionalFormatting](Operation/DeleteWorksheetConditionalFormatting)  :  Remove a conditional formatting. 
+- [DeleteWorksheetConditionalFormattingArea](Operation/DeleteWorksheetConditionalFormattingArea)  :  Remove cell area from conditional formatting. 
+- [GetWorkbook](Operation/GetWorkbook)  :  Retrieve workbooks in various formats. 
+- [PutConvertWorkbook](Operation/PutConvertWorkbook)  :  Convert the workbook from the requested content into files in different formats. 
+- [PostWorkbookSaveAs](Operation/PostWorkbookSaveAs)  :  Save an Excel file in various formats. 
+- [PostConvertWorkbookToPDF](Operation/PostConvertWorkbookToPDF)  :  Convert Excel file to PDF files. 
+- [PostConvertWorkbookToPNG](Operation/PostConvertWorkbookToPNG)  :  Convert Excel file to PNG files. 
+- [PostConvertWorkbookToDocx](Operation/PostConvertWorkbookToDocx)  :  Convert Excel file to Docx files. 
+- [PostConvertWorkbookToPptx](Operation/PostConvertWorkbookToPptx)  :  Convert Excel file to Pptx files. 
+- [PostConvertWorkbookToHtml](Operation/PostConvertWorkbookToHtml)  :  Convert Excel file to HTML files. 
+- [PostConvertWorkbookToMarkdown](Operation/PostConvertWorkbookToMarkdown)  :  Convert Excel file to Markdown files. 
+- [PostConvertWorkbookToJson](Operation/PostConvertWorkbookToJson)  :  Convert Excel file to Json files. 
+- [PostConvertWorkbookToSQL](Operation/PostConvertWorkbookToSQL)  :  Convert Excel file to SQL Script files. 
+- [PostConvertWorkbookToCSV](Operation/PostConvertWorkbookToCSV)  :  Convert Excel file to Csv files. 
+- [PostExport](Operation/PostExport)  :  Export Excel internal elements or the workbook itself to various format files. 
+- [PostWorkbookExportXML](Operation/PostWorkbookExportXML)  :  Export XML data from an Excel file.When there are XML Maps in an Excel file, export XML data. When there is no XML map in the Excel file, convert the Excel file to an XML file. 
+- [PostWorkbookImportJson](Operation/PostWorkbookImportJson)  :  Import a JSON data file into the workbook. The JSON data file can either be a cloud file or data from an HTTP URI. 
+- [PostWorkbookImportXML](Operation/PostWorkbookImportXML)  :  Import an XML data file into an Excel file. The XML data file can either be a cloud file or data from an HTTP URI. 
+- [PostImportData](Operation/PostImportData)  :  Import data into the Excel file. 
+- [PostWorkbookDataCleansing](Operation/PostWorkbookDataCleansing)  :  Data cleaning of spreadsheet files is a data management process used to identify, correct, and remove errors, incompleteness, duplicates, or inaccuracies in tables and ranges. 
+- [PostDataCleansing](Operation/PostDataCleansing)  :  Data cleansing of spreadsheet files is a data management process used to identify, correct, and remove errors, incompleteness, duplicates, or inaccuracies in tables and ranges. 
+- [PostWorkbookDataDeduplication](Operation/PostWorkbookDataDeduplication)  :  Data deduplication of spreadsheet files is mainly used to eliminate duplicate data in tables and ranges. 
+- [PostDataDeduplication](Operation/PostDataDeduplication)  :  Data deduplication of spreadsheet files is mainly used to eliminate duplicate data in tables and ranges. 
+- [PostWorkbookDataFill](Operation/PostWorkbookDataFill)  :  Data filling for spreadsheet files is primarily used to fill empty data in tables and ranges. 
+- [PostDataFill](Operation/PostDataFill)  :  Data filling for spreadsheet files is primarily used to fill empty data in tables and ranges. 
+- [PostDeleteIncompleteRows](Operation/PostDeleteIncompleteRows)  :  Deleting incomplete rows of spreadsheet files is mainly used to eliminate incomplete rows in tables and ranges. 
+- [GetWorksheetHyperlinks](Operation/GetWorksheetHyperlinks)  :  Retrieve descriptions of hyperlinks in the worksheet. 
+- [GetWorksheetHyperlink](Operation/GetWorksheetHyperlink)  :  Retrieve hyperlink description by index in the worksheet. 
+- [DeleteWorksheetHyperlink](Operation/DeleteWorksheetHyperlink)  :  Delete hyperlink by index in the worksheet. 
+- [PostWorksheetHyperlink](Operation/PostWorksheetHyperlink)  :  Update hyperlink by index in the worksheet. 
+- [PutWorksheetHyperlink](Operation/PutWorksheetHyperlink)  :  Add hyperlink in the worksheet. 
+- [DeleteWorksheetHyperlinks](Operation/DeleteWorksheetHyperlinks)  :  Delete all hyperlinks in the worksheet. 
+- [PostAssemble](Operation/PostAssemble)  :  Assemble data files with template files to generate files in various formats. 
+- [PostCompress](Operation/PostCompress)  :  Compress files and generate target files in various formats, supported file formats are include Xls, Xlsx, Xlsm, Xlsb, Ods and more. 
+- [PostMerge](Operation/PostMerge)  :  Merge cells in the worksheet. 
+- [PostSplit](Operation/PostSplit)  :  Split Excel spreadsheet files based on worksheets and create output files in various formats. 
+- [PostSearch](Operation/PostSearch)  :  Search for specified text within Excel files. 
+- [PostReplace](Operation/PostReplace)  :  Replace specified text with new text in Excel files. 
+- [PostImport](Operation/PostImport)  :  Import data into an Excel file and generate output files in various formats. 
+- [PostWatermark](Operation/PostWatermark)  :  Add Text Watermark to Excel files and generate output files in various formats. 
+- [PostClearObjects](Operation/PostClearObjects)  :  Clear internal elements in Excel files and generate output files in various formats. 
+- [PostReverse](Operation/PostReverse)  :  Reverse rows or columns in Excel files and create output files in various formats. 
+- [PostRepair](Operation/PostRepair)  :  Repair abnormal files and generate files in various formats. 
+- [PostRotate](Operation/PostRotate)  :  Rotate rows, columns, or other objects in Excel files and save them in various formats. 
+- [PostMetadata](Operation/PostMetadata)  :  Update document properties in Excel file, and save them is various formats. 
+- [GetMetadata](Operation/GetMetadata)  :  Get cells document properties. 
+- [DeleteMetadata](Operation/DeleteMetadata)  :  Delete cells document properties in Excel file, and save them is various formats. 
+- [GetWorksheetListObjects](Operation/GetWorksheetListObjects)  :  Retrieve descriptions of ListObjects in the worksheet. 
+- [GetWorksheetListObject](Operation/GetWorksheetListObject)  :  Retrieve list object description by index in the worksheet. 
+- [PutWorksheetListObject](Operation/PutWorksheetListObject)  :  Add a ListObject in the worksheet. 
+- [DeleteWorksheetListObjects](Operation/DeleteWorksheetListObjects)  :  Delete ListObjects in the worksheet. 
+- [DeleteWorksheetListObject](Operation/DeleteWorksheetListObject)  :  Delete list object by index in the worksheet. 
+- [PostWorksheetListObject](Operation/PostWorksheetListObject)  :  Update list object by index in the worksheet. 
+- [PostWorksheetListObjectConvertToRange](Operation/PostWorksheetListObjectConvertToRange)  :  Convert list object to range in the worksheet. 
+- [PostWorksheetListObjectSummarizeWithPivotTable](Operation/PostWorksheetListObjectSummarizeWithPivotTable)  :  Create a pivot table with a list object in the worksheet. 
+- [PostWorksheetListObjectSortTable](Operation/PostWorksheetListObjectSortTable)  :  Sort list object in the worksheet. 
+- [PostWorksheetListObjectRemoveDuplicates](Operation/PostWorksheetListObjectRemoveDuplicates)  :  Remove duplicates in list object. 
+- [PostWorksheetListObjectInsertSlicer](Operation/PostWorksheetListObjectInsertSlicer)  :  Insert slicer for list object. 
+- [PostWorksheetListColumn](Operation/PostWorksheetListColumn)  :  Update list column in list object. 
+- [PostWorksheetListColumnsTotal](Operation/PostWorksheetListColumnsTotal)  :  Update total of list columns in the table. 
+- [GetWorksheetOleObjects](Operation/GetWorksheetOleObjects)  :  Retrieve descriptions of OLE objects in the worksheet. 
+- [GetWorksheetOleObject](Operation/GetWorksheetOleObject)  :  Retrieve the OLE object in a specified format in the worksheet. 
+- [DeleteWorksheetOleObjects](Operation/DeleteWorksheetOleObjects)  :  Delete all OLE objects in the worksheet. 
+- [DeleteWorksheetOleObject](Operation/DeleteWorksheetOleObject)  :  Delete an OLE object in the worksheet. 
+- [PostUpdateWorksheetOleObject](Operation/PostUpdateWorksheetOleObject)  :  Update an OLE object in worksheet. 
+- [PutWorksheetOleObject](Operation/PutWorksheetOleObject)  :  Add an OLE object in the worksheet. 
+- [GetVerticalPageBreaks](Operation/GetVerticalPageBreaks)  :  Retrieve descriptions of vertical page breaks in the worksheet. 
+- [GetHorizontalPageBreaks](Operation/GetHorizontalPageBreaks)  :  Retrieve descriptions of horizontal page breaks in the worksheet. 
+- [GetVerticalPageBreak](Operation/GetVerticalPageBreak)  :  Retrieve a vertical page break description in the worksheet. 
+- [GetHorizontalPageBreak](Operation/GetHorizontalPageBreak)  :  Retrieve a horizontal page break descripton in the worksheet. 
+- [PutVerticalPageBreak](Operation/PutVerticalPageBreak)  :  Add a vertical page break in the worksheet. 
+- [PutHorizontalPageBreak](Operation/PutHorizontalPageBreak)  :  Add a horizontal page breaks in the worksheet. 
+- [DeleteVerticalPageBreaks](Operation/DeleteVerticalPageBreaks)  :  Delete vertical page breaks in the worksheet. 
+- [DeleteHorizontalPageBreaks](Operation/DeleteHorizontalPageBreaks)  :  Delete horizontal page breaks in the worksheet. 
+- [DeleteVerticalPageBreak](Operation/DeleteVerticalPageBreak)  :  Delete a vertical page break in the worksheet. 
+- [DeleteHorizontalPageBreak](Operation/DeleteHorizontalPageBreak)  :  Delete a horizontal page break in the worksheet. 
+- [GetPageSetup](Operation/GetPageSetup)  :  Retrieve page setup description in the worksheet. 
+- [PostPageSetup](Operation/PostPageSetup)  :  Update page setup in the worksheet. 
+- [DeleteHeaderFooter](Operation/DeleteHeaderFooter)  :  Clear header and footer in the worksheet. 
+- [GetHeader](Operation/GetHeader)  :  Retrieve page header description in the worksheet. 
+- [PostHeader](Operation/PostHeader)  :  Update page header in the worksheet. 
+- [GetFooter](Operation/GetFooter)  :  Retrieve page footer description in the worksheet. 
+- [PostFooter](Operation/PostFooter)  :  Update page footer in the worksheet. 
+- [PostFitWideToPages](Operation/PostFitWideToPages)  :  Set the scale at which the page will fit wide when printed on the sheet. 
+- [PostFitTallToPages](Operation/PostFitTallToPages)  :  Set the scale at which the page will fit tall when printed on the sheet. 
+- [GetWorksheetPictures](Operation/GetWorksheetPictures)  :  Retrieve descriptions of pictures in the worksheet. 
+- [GetWorksheetPictureWithFormat](Operation/GetWorksheetPictureWithFormat)  :  Retrieve a picture by number in the worksheet. 
+- [PutWorksheetAddPicture](Operation/PutWorksheetAddPicture)  :  Add a new picture in the worksheet. 
+- [PostWorksheetPicture](Operation/PostWorksheetPicture)  :  Update a picture by index in the worksheet. 
+- [DeleteWorksheetPicture](Operation/DeleteWorksheetPicture)  :  Delete a picture object by index in the worksheet. 
+- [DeleteWorksheetPictures](Operation/DeleteWorksheetPictures)  :  Delete all pictures in the worksheet. 
+- [GetWorksheetPivotTables](Operation/GetWorksheetPivotTables)  :  Retrieve descriptions of pivottables  in the worksheet. 
+- [GetWorksheetPivotTable](Operation/GetWorksheetPivotTable)  :  Retrieve PivotTable information by index in the worksheet. 
+- [GetPivotTableField](Operation/GetPivotTableField)  :  Retrieve descriptions of pivot fields in the PivotTable. 
+- [GetWorksheetPivotTableFilters](Operation/GetWorksheetPivotTableFilters)  :  Gets PivotTable filters in worksheet. 
+- [GetWorksheetPivotTableFilter](Operation/GetWorksheetPivotTableFilter)  :  Retrieve PivotTable filters in the worksheet. 
+- [PutWorksheetPivotTable](Operation/PutWorksheetPivotTable)  :  Add a PivotTable in the worksheet. 
+- [PutPivotTableField](Operation/PutPivotTableField)  :  Add a pivot field in the PivotTable. 
+- [PutWorksheetPivotTableFilter](Operation/PutWorksheetPivotTableFilter)  :  Add a pivot filter to the PivotTable. 
+- [PostPivotTableFieldHideItem](Operation/PostPivotTableFieldHideItem)  :  Hide a pivot field item in the PivotTable. 
+- [PostPivotTableFieldMoveTo](Operation/PostPivotTableFieldMoveTo)  :  Move a pivot field in the PivotTable. 
+- [PostPivotTableCellStyle](Operation/PostPivotTableCellStyle)  :  Update cell style in the PivotTable. 
+- [PostPivotTableStyle](Operation/PostPivotTableStyle)  :  Update style in the PivotTable. 
+- [PostPivotTableUpdatePivotFields](Operation/PostPivotTableUpdatePivotFields)  :  Update pivot fields in the PivotTable. 
+- [PostPivotTableUpdatePivotField](Operation/PostPivotTableUpdatePivotField)  :  Update pivot field in the PivotTable. 
+- [PostWorksheetPivotTableCalculate](Operation/PostWorksheetPivotTableCalculate)  :  Calculate pivottable's data to cells. 
+- [PostWorksheetPivotTableMove](Operation/PostWorksheetPivotTableMove)  :  Move PivotTable in the worksheet. 
+- [DeleteWorksheetPivotTables](Operation/DeleteWorksheetPivotTables)  :  Delete PivotTables in the worksheet. 
+- [DeleteWorksheetPivotTable](Operation/DeleteWorksheetPivotTable)  :  Delete PivotTable by index in the worksheet. 
+- [DeletePivotTableField](Operation/DeletePivotTableField)  :  Delete a pivot field in the PivotTable. 
+- [DeleteWorksheetPivotTableFilters](Operation/DeleteWorksheetPivotTableFilters)  :  Delete all pivot filters in the PivotTable. 
+- [DeleteWorksheetPivotTableFilter](Operation/DeleteWorksheetPivotTableFilter)  :  Delete a pivot filter in the PivotTable. 
+- [GetDocumentProperties](Operation/GetDocumentProperties)  :  Retrieve descriptions of Excel file properties. 
+- [PutDocumentProperty](Operation/PutDocumentProperty)  :  Set or add an Excel property. 
+- [GetDocumentProperty](Operation/GetDocumentProperty)  :  Get Excel property by name. 
+- [DeleteDocumentProperty](Operation/DeleteDocumentProperty)  :  Delete an Excel property. 
+- [DeleteDocumentProperties](Operation/DeleteDocumentProperties)  :  Delete all custom document properties and reset built-in ones. 
+- [PostDigitalSignature](Operation/PostDigitalSignature)  :  Excel file digital signature. 
+- [PostEncryptWorkbook](Operation/PostEncryptWorkbook)  :  Excel Encryption. 
+- [DeleteDecryptWorkbook](Operation/DeleteDecryptWorkbook)  :  Excel files decryption. 
+- [PostProtectWorkbook](Operation/PostProtectWorkbook)  :  Excel protection. 
+- [DeleteUnProtectWorkbook](Operation/DeleteUnProtectWorkbook)  :  Excel unprotection. 
+- [PutDocumentProtectFromChanges](Operation/PutDocumentProtectFromChanges)  :  Excel file write protection. 
+- [DeleteDocumentUnProtectFromChanges](Operation/DeleteDocumentUnProtectFromChanges)  :  Excel file cancel write protection. 
+- [PostUnlock](Operation/PostUnlock)  :  Unlock Excel files. 
+- [PostLock](Operation/PostLock)  :  Lock Excel files. 
+- [PostProtect](Operation/PostProtect)  :  Excel files encryption. 
+- [PostWorksheetCellsRangesCopy](Operation/PostWorksheetCellsRangesCopy)  :  Copy content from the source range to the destination range in the worksheet. 
+- [PostWorksheetCellsRangeMerge](Operation/PostWorksheetCellsRangeMerge)  :  Merge a range of cells into a single cell. 
+- [PostWorksheetCellsRangeUnMerge](Operation/PostWorksheetCellsRangeUnMerge)  :  Unmerge merged cells within this range. 
+- [PostWorksheetCellsRangeStyle](Operation/PostWorksheetCellsRangeStyle)  :  Set the style for the specified range. 
+- [GetWorksheetCellsRangeValue](Operation/GetWorksheetCellsRangeValue)  :  Retrieve the values of cells within the specified range. 
+- [PostWorksheetCellsRangeValue](Operation/PostWorksheetCellsRangeValue)  :  Assign a value to the range; if necessary, the value will be converted to another data type, and the cell's number format will be reset. 
+- [PostWorksheetCellsRangeMoveTo](Operation/PostWorksheetCellsRangeMoveTo)  :  Move the current range to the destination range. 
+- [PostWorksheetCellsRangeSort](Operation/PostWorksheetCellsRangeSort)  :  Perform data sorting around a range of cells. 
+- [PostWorksheetCellsRangeOutlineBorder](Operation/PostWorksheetCellsRangeOutlineBorder)  :  Apply an outline border around a range of cells. 
+- [PostWorksheetCellsRangeColumnWidth](Operation/PostWorksheetCellsRangeColumnWidth)  :  Set the column width of the specified range. 
+- [PostWorksheetCellsRangeRowHeight](Operation/PostWorksheetCellsRangeRowHeight)  :  Sets row height of range. 
+- [PutWorksheetCellsRange](Operation/PutWorksheetCellsRange)  :  Insert a range of cells and shift existing cells based on the specified shift option. 
+- [DeleteWorksheetCellsRange](Operation/DeleteWorksheetCellsRange)  :  Delete a range of cells and shift existing cells based on the specified shift option. 
+- [GetWorksheetShapes](Operation/GetWorksheetShapes)  :  Retrieve descriptions of shapes in the worksheet. 
+- [GetWorksheetShape](Operation/GetWorksheetShape)  :  Retrieve description of shape in the worksheet. 
+- [PutWorksheetShape](Operation/PutWorksheetShape)  :  Add a shape in the worksheet. 
+- [DeleteWorksheetShapes](Operation/DeleteWorksheetShapes)  :  Delete all shapes in the worksheet. 
+- [DeleteWorksheetShape](Operation/DeleteWorksheetShape)  :  Delete a shape in the worksheet. 
+- [PostWorksheetShape](Operation/PostWorksheetShape)  :  Update a shape in the worksheet. 
+- [PostWorksheetGroupShape](Operation/PostWorksheetGroupShape)  :  Group shapes in the worksheet. 
+- [PostWorksheetUngroupShape](Operation/PostWorksheetUngroupShape)  :  Ungroup shapes in the worksheet. 
+- [GetWorksheetSparklineGroups](Operation/GetWorksheetSparklineGroups)  :  Retrieve descriptions of sparkline groups in the worksheet. 
+- [GetWorksheetSparklineGroup](Operation/GetWorksheetSparklineGroup)  :  Retrieve description of a sparkline group in the worksheet. 
+- [DeleteWorksheetSparklineGroups](Operation/DeleteWorksheetSparklineGroups)  :  Delete sparkline groups in the worksheet. 
+- [DeleteWorksheetSparklineGroup](Operation/DeleteWorksheetSparklineGroup)  :  Delete a sparkline group in the worksheet. 
+- [PutWorksheetSparklineGroup](Operation/PutWorksheetSparklineGroup)  :  Add a sparkline group in the worksheet. 
+- [PostWorksheetSparklineGroup](Operation/PostWorksheetSparklineGroup)  :  Update a sparkline group in the worksheet. 
+- [PostRunTask](Operation/PostRunTask)  :  Run tasks. 
+- [GetWorkbookDefaultStyle](Operation/GetWorkbookDefaultStyle)  :  Retrieve the description of the default style for the workbook. 
+- [GetWorkbookTextItems](Operation/GetWorkbookTextItems)  :  Retrieve text items in the workbook. 
+- [GetWorkbookNames](Operation/GetWorkbookNames)  :  Retrieve named ranges in the workbook. 
+- [PutWorkbookName](Operation/PutWorkbookName)  :  Define a new name in the workbook. 
+- [GetWorkbookName](Operation/GetWorkbookName)  :  Retrieve description of a named range in the workbook. 
+- [PostWorkbookName](Operation/PostWorkbookName)  :  Update a named range in the workbook. 
+- [GetWorkbookNameValue](Operation/GetWorkbookNameValue)  :  Retrieve the value of a named range in the workbook. 
+- [DeleteWorkbookNames](Operation/DeleteWorkbookNames)  :  Delete all named ranges in the workbook. 
+- [DeleteWorkbookName](Operation/DeleteWorkbookName)  :  Delete a named range in the workbook. 
+- [PostWorkbooksMerge](Operation/PostWorkbooksMerge)  :  Merge a workbook into the existing workbook. 
+- [PostWorkbooksTextSearch](Operation/PostWorkbooksTextSearch)  :  Search for text in the workbook. 
+- [PostWorkbookTextReplace](Operation/PostWorkbookTextReplace)  :  Replace text in the workbook. 
+- [PostWorkbookGetSmartMarkerResult](Operation/PostWorkbookGetSmartMarkerResult)  :  Smart marker processing. 
+- [PutWorkbookCreate](Operation/PutWorkbookCreate)  :  Create a new workbook using different methods. 
+- [PostWorkbookSplit](Operation/PostWorkbookSplit)  :  Split the workbook with a specific format. 
+- [PostWorkbookCalculateFormula](Operation/PostWorkbookCalculateFormula)  :  Calculate all formulas in the workbook. 
+- [PostAutofitWorkbookRows](Operation/PostAutofitWorkbookRows)  :  Autofit rows in the workbook. 
+- [PostAutofitWorkbookColumns](Operation/PostAutofitWorkbookColumns)  :  Autofit columns in the workbook. 
+- [GetWorkbookSettings](Operation/GetWorkbookSettings)  :  Retrieve descriptions of workbook settings. 
+- [PostWorkbookSettings](Operation/PostWorkbookSettings)  :  Update setting in the workbook. 
+- [PutWorkbookBackground](Operation/PutWorkbookBackground)  :  Set background in the workbook. 
+- [DeleteWorkbookBackground](Operation/DeleteWorkbookBackground)  :  Delete background in the workbook. 
+- [PutWorkbookWaterMarker](Operation/PutWorkbookWaterMarker)  :  Set water marker in the workbook. 
+- [GetPageCount](Operation/GetPageCount)  :  Get page count in the workbook. 
+- [GetWorksheets](Operation/GetWorksheets)  :  Retrieve the description of worksheets from a workbook. 
+- [GetWorksheetWithFormat](Operation/GetWorksheetWithFormat)  :  Retrieve the worksheet in a specified format from the workbook. 
+- [PutChangeVisibilityWorksheet](Operation/PutChangeVisibilityWorksheet)  :  Change worksheet visibility in the workbook. 
+- [PutActiveWorksheet](Operation/PutActiveWorksheet)  :  Set active worksheet index in the workbook. 
+- [PutInsertNewWorksheet](Operation/PutInsertNewWorksheet)  :  Insert a new worksheet in the workbook. 
+- [PutAddNewWorksheet](Operation/PutAddNewWorksheet)  :  Add a new worksheet in the workbook. 
+- [DeleteWorksheet](Operation/DeleteWorksheet)  :  Delete a worksheet in the workbook. 
+- [DeleteWorksheets](Operation/DeleteWorksheets)  :  Delete matched worksheets in the workbook. 
+- [PostMoveWorksheet](Operation/PostMoveWorksheet)  :  Move worksheet in the workbook. 
+- [PutProtectWorksheet](Operation/PutProtectWorksheet)  :  Protect worksheet. 
+- [DeleteUnprotectWorksheet](Operation/DeleteUnprotectWorksheet)  :  Unprotect worksheet. 
+- [GetWorksheetTextItems](Operation/GetWorksheetTextItems)  :  Retrieve text items in the worksheet. 
+- [GetWorksheetComments](Operation/GetWorksheetComments)  :  Retrieve the description of comments in the worksheet. 
+- [GetWorksheetComment](Operation/GetWorksheetComment)  :  Retrieve the description of comment in the worksheet. 
+- [PutWorksheetComment](Operation/PutWorksheetComment)  :  Add cell comment in the worksheet. 
+- [PostWorksheetComment](Operation/PostWorksheetComment)  :  Update cell comment in the worksheet. 
+- [DeleteWorksheetComment](Operation/DeleteWorksheetComment)  :  Delete cell comment in the worksheet. 
+- [DeleteWorksheetComments](Operation/DeleteWorksheetComments)  :  Delete all comments in the worksheet. 
+- [GetWorksheetMergedCells](Operation/GetWorksheetMergedCells)  :  Get worksheet merged cells. 
+- [GetWorksheetMergedCell](Operation/GetWorksheetMergedCell)  :  Retrieve description of a merged cell by its index in the worksheet. 
+- [GetWorksheetCalculateFormula](Operation/GetWorksheetCalculateFormula)  :  Calculate formula in the worksheet. 
+- [PostWorksheetCalculateFormula](Operation/PostWorksheetCalculateFormula)  :  Calculate formula in the worksheet. 
+- [PostWorksheetTextSearch](Operation/PostWorksheetTextSearch)  :  Search for text in the worksheet. 
+- [PostWorksheetTextReplace](Operation/PostWorksheetTextReplace)  :  Replace old text with new text in the worksheet. 
+- [PostWorksheetRangeSort](Operation/PostWorksheetRangeSort)  :  Sort a range in the worksheet. 
+- [PostAutofitWorksheetRow](Operation/PostAutofitWorksheetRow)  :  Autofit a row in the worksheet. 
+- [PostAutofitWorksheetRows](Operation/PostAutofitWorksheetRows)  :  Autofit rows in the worksheet. 
+- [PostAutofitWorksheetColumns](Operation/PostAutofitWorksheetColumns)  :  Autofit columns in the worksheet. 
+- [PutWorksheetBackground](Operation/PutWorksheetBackground)  :  Set background image in the worksheet. 
+- [DeleteWorksheetBackground](Operation/DeleteWorksheetBackground)  :  Delete background image in the worksheet. 
+- [PutWorksheetFreezePanes](Operation/PutWorksheetFreezePanes)  :  Set freeze panes in the worksheet. 
+- [DeleteWorksheetFreezePanes](Operation/DeleteWorksheetFreezePanes)  :  Unfreeze panes in worksheet. 
+- [PostCopyWorksheet](Operation/PostCopyWorksheet)  :  Copy contents and formats from another worksheet. 
+- [PostRenameWorksheet](Operation/PostRenameWorksheet)  :  Rename worksheet in the workbook. 
+- [PostUpdateWorksheetProperty](Operation/PostUpdateWorksheetProperty)  :  Update worksheet properties in the workbook. 
+- [GetNamedRanges](Operation/GetNamedRanges)  :  Retrieve descriptions of ranges in the worksheets. 
+- [GetNamedRangeValue](Operation/GetNamedRangeValue)  :  Retrieve values in range. 
+- [PostUpdateWorksheetZoom](Operation/PostUpdateWorksheetZoom)  :  Update the scaling percentage in the worksheet. It should be between 10 and 400. 
+- [GetWorksheetPageCount](Operation/GetWorksheetPageCount)  :  Get page count in the worksheet. 
+- [GetWorksheetValidations](Operation/GetWorksheetValidations)  :  Retrieve descriptions of validations in the worksheet. 
+- [GetWorksheetValidation](Operation/GetWorksheetValidation)  :  Retrieve a validation by its index in the worksheet. 
+- [PutWorksheetValidation](Operation/PutWorksheetValidation)  :  Add a validation at index in the worksheet. 
+- [PostWorksheetValidation](Operation/PostWorksheetValidation)  :  Update a validation by index in the worksheet. 
+- [DeleteWorksheetValidation](Operation/DeleteWorksheetValidation)  :  Delete a validation by index in worksheet. 
+- [DeleteWorksheetValidations](Operation/DeleteWorksheetValidations)  :  Delete all validations in the worksheet. 
+- [DownloadFile](Operation/DownloadFile)  :   
+- [UploadFile](Operation/UploadFile)  :   
+- [CopyFile](Operation/CopyFile)  :   
+- [MoveFile](Operation/MoveFile)  :   
+- [DeleteFile](Operation/DeleteFile)  :   
+- [GetFilesList](Operation/GetFilesList)  :   
+- [CreateFolder](Operation/CreateFolder)  :   
+- [CopyFolder](Operation/CopyFolder)  :   
+- [MoveFolder](Operation/MoveFolder)  :   
+- [DeleteFolder](Operation/DeleteFolder)  :   
+- [StorageExists](Operation/StorageExists)  :   
+- [ObjectExists](Operation/ObjectExists)  :   
+- [GetDiscUsage](Operation/GetDiscUsage)  :   
+- [GetFileVersions](Operation/GetFileVersions)  :   
 
-[DiscUsage](Specification/Model/DiscUsage)  :  Class for disc space information. 
-[ObjectExist](Specification/Model/ObjectExist)  :  Object exists 
-[ObjectExistsExtensions](Specification/Model/ObjectExistsExtensions)  :   
-[FileVersion](Specification/Model/FileVersion)  :   
-[StorageExist](Specification/Model/StorageExist)  :  Storage exists 
-[FileVersions](Specification/Model/FileVersions)  :  File versions FileVersion. 
-[FilesList](Specification/Model/FilesList)  :  Files list 
-[FilesUploadResult](Specification/Model/FilesUploadResult)  :  File upload result 
-[StorageFile](Specification/Model/StorageFile)  :  File or folder information 
-[GoogleDriveStorageFile](Specification/Model/GoogleDriveStorageFile)  :   
-[AboveAverage](Specification/Model/AboveAverage)  :  Describe the AboveAverage conditional formatting rule. This conditional formatting    rule highlights cells that are above or below the average for all values    in the range. 
-[AbstractCalculationEngine](Specification/Model/AbstractCalculationEngine)  :  Represents user's custom calculation engine to extend the default calculation engine of Aspose.Cells.  
-[AbstractCalculationMonitor](Specification/Model/AbstractCalculationMonitor)  :  Monitor for user to track the progress of formula calculation.  
-[AutoFilter](Specification/Model/AutoFilter)  :   
-[AutoFitterOptions](Specification/Model/AutoFitterOptions)  :   
-[Border](Specification/Model/Border)  :   
-[CalculationOptions](Specification/Model/CalculationOptions)  :   
-[Cell](Specification/Model/Cell)  :   
-[CellArea](Specification/Model/CellArea)  :   
-[Cells](Specification/Model/Cells)  :   
-[CellsCloudFileInfo](Specification/Model/CellsCloudFileInfo)  :  Cells Cloud File information description. 
-[CellsColor](Specification/Model/CellsColor)  :   
-[CellsDocumentProperties](Specification/Model/CellsDocumentProperties)  :  Excel properties 
-[CellsDocumentProperty](Specification/Model/CellsDocumentProperty)  :  Cells document property. 
-[Color](Specification/Model/Color)  :  Color. 
-[ColorFilter](Specification/Model/ColorFilter)  :  Color filter. 
-[ColorScale](Specification/Model/ColorScale)  :  Describe the ColorScale conditional formatting rule. This conditional formatting   rule creates a gradated color scale on the cells.             
-[Column](Specification/Model/Column)  :   
-[Columns](Specification/Model/Columns)  :   
-[Comment](Specification/Model/Comment)  :   
-[Comments](Specification/Model/Comments)  :   
-[ConditionalFormatting](Specification/Model/ConditionalFormatting)  :   
-[ConditionalFormattingIcon](Specification/Model/ConditionalFormattingIcon)  :   
-[ConditionalFormattings](Specification/Model/ConditionalFormattings)  :   
-[ConditionalFormattingValue](Specification/Model/ConditionalFormattingValue)  :   
-[CopyOptions](Specification/Model/CopyOptions)  :  Represents the copy options. 
-[CriteriaMultipleFilter](Specification/Model/CriteriaMultipleFilter)  :   
-[CustomFilter](Specification/Model/CustomFilter)  :   
-[DataBar](Specification/Model/DataBar)  :  Describe the DataBar conditional formatting rule. This conditional formatting   rule displays a gradated data bar in the range of cells. 
-[DataBarBorder](Specification/Model/DataBarBorder)  :   
-[DataCleansing](Specification/Model/DataCleansing)  :  Data Cleansing 
-[DataColumnFillValue](Specification/Model/DataColumnFillValue)  :   
-[DataFill](Specification/Model/DataFill)  :   
-[DataFillValue](Specification/Model/DataFillValue)  :   
-[DataSorter](Specification/Model/DataSorter)  :  Summary description for DataSorter. 
-[DataSorterKey](Specification/Model/DataSorterKey)  :  Represents the key of the data sorter.  
-[DateTimeGroupItem](Specification/Model/DateTimeGroupItem)  :   
-[DeduplicationRegion](Specification/Model/DeduplicationRegion)  :   
-[DynamicFilter](Specification/Model/DynamicFilter)  :   
-[FileInfo](Specification/Model/FileInfo)  :  File Information 
-[FilesResult](Specification/Model/FilesResult)  :   
-[FilterColumn](Specification/Model/FilterColumn)  :   
-[Font](Specification/Model/Font)  :   
-[FontSetting](Specification/Model/FontSetting)  :   
-[FormatCondition](Specification/Model/FormatCondition)  :   
-[FormulaFormatCondition](Specification/Model/FormulaFormatCondition)  :   
-[FormulaSettings](Specification/Model/FormulaSettings)  :  Settings of formulas and calculation.  
-[GlobalizationSettings](Specification/Model/GlobalizationSettings)  :  Represents the globalization settings.  
-[HorizontalPageBreak](Specification/Model/HorizontalPageBreak)  :   
-[HorizontalPageBreaks](Specification/Model/HorizontalPageBreaks)  :   
-[Hyperlink](Specification/Model/Hyperlink)  :   
-[Hyperlinks](Specification/Model/Hyperlinks)  :   
-[IconFilter](Specification/Model/IconFilter)  :   
-[IconSet](Specification/Model/IconSet)  :  Describe the IconSet conditional formatting rule. This conditional formatting    rule applies icons to cells according to their values. 
-[Link](Specification/Model/Link)  :   
-[LinkElement](Specification/Model/LinkElement)  :   
-[LoadOptions](Specification/Model/LoadOptions)  :   
-[MergedCell](Specification/Model/MergedCell)  :   
-[MergedCells](Specification/Model/MergedCells)  :   
-[MultipleFilter](Specification/Model/MultipleFilter)  :   
-[MultipleFilters](Specification/Model/MultipleFilters)  :   
-[Name](Specification/Model/Name)  :   
-[Names](Specification/Model/Names)  :   
-[NegativeBarFormat](Specification/Model/NegativeBarFormat)  :  Represents the color settings of the data bars for negative values that are   defined by a data bar conditional formating rule.             
-[PageSection](Specification/Model/PageSection)  :   
-[PageSetup](Specification/Model/PageSetup)  :   
-[PasteOptions](Specification/Model/PasteOptions)  :  Represents the paste special options.             
-[PdfSecurityOptions](Specification/Model/PdfSecurityOptions)  :   
-[Protection](Specification/Model/Protection)  :  Represents the various types of protection options available for a worksheet.             
-[ProtectSheetParameter](Specification/Model/ProtectSheetParameter)  :   
-[QueryTable](Specification/Model/QueryTable)  :  Represents QueryTable information. 
-[Range](Specification/Model/Range)  :   
-[Ranges](Specification/Model/Ranges)  :   
-[Row](Specification/Model/Row)  :   
-[Rows](Specification/Model/Rows)  :   
-[SaveResult](Specification/Model/SaveResult)  :   
-[PaginatedSaveOptions](Specification/Model/PaginatedSaveOptions)  :  Represents the options for pagination. 
-[SingleValue](Specification/Model/SingleValue)  :   
-[SortKey](Specification/Model/SortKey)  :   
-[SplitResult](Specification/Model/SplitResult)  :   
-[SplitResultDocument](Specification/Model/SplitResultDocument)  :   
-[Style](Specification/Model/Style)  :   
-[StyleFormatCondition](Specification/Model/StyleFormatCondition)  :   
-[Styles](Specification/Model/Styles)  :   
-[TextFormatCondition](Specification/Model/TextFormatCondition)  :   
-[TextItem](Specification/Model/TextItem)  :   
-[TextItems](Specification/Model/TextItems)  :   
-[TextOptions](Specification/Model/TextOptions)  :   
-[ThemeColor](Specification/Model/ThemeColor)  :   
-[TimePeriodFormatCondition](Specification/Model/TimePeriodFormatCondition)  :   
-[Top10](Specification/Model/Top10)  :  Describe the Top10 conditional formatting rule. This conditional formatting    rule highlights cells whose values fall in the top N or bottom N bracket,    as specified. 
-[Top10Filter](Specification/Model/Top10Filter)  :   
-[Validation](Specification/Model/Validation)  :   
-[Validations](Specification/Model/Validations)  :   
-[VerticalPageBreak](Specification/Model/VerticalPageBreak)  :   
-[VerticalPageBreaks](Specification/Model/VerticalPageBreaks)  :   
-[Workbook](Specification/Model/Workbook)  :   
-[WorkbookSettings](Specification/Model/WorkbookSettings)  :   
-[Worksheet](Specification/Model/Worksheet)  :   
-[Worksheets](Specification/Model/Worksheets)  :   
-[WriteProtection](Specification/Model/WriteProtection)  :  Specifies write protection settings for a workbook.  
-[XmlDataBinding](Specification/Model/XmlDataBinding)  :  Represents Xml Data Binding information.  
-[XmlMap](Specification/Model/XmlMap)  :  Represents Xml map information.  
-[CellsObjectOperateTaskParameter](Specification/Model/CellsObjectOperateTaskParameter)  :   
-[ConvertTaskParameter](Specification/Model/ConvertTaskParameter)  :   
-[ConvertWorksheetTaskParameter](Specification/Model/ConvertWorksheetTaskParameter)  :   
-[FileSource](Specification/Model/FileSource)  :   
-[FileSourceType](Specification/Model/FileSourceType)  :   
-[ImportDataTaskParameter](Specification/Model/ImportDataTaskParameter)  :   
-[ResultDestination](Specification/Model/ResultDestination)  :   
-[ResultDestinationType](Specification/Model/ResultDestinationType)  :   
-[ResultSource](Specification/Model/ResultSource)  :   
-[SaveFilesToCloudResult](Specification/Model/SaveFilesToCloudResult)  :   
-[SaveResultTaskParameter](Specification/Model/SaveResultTaskParameter)  :   
-[SmartMarkerTaskParameter](Specification/Model/SmartMarkerTaskParameter)  :   
-[SplitWorkbookTaskParameter](Specification/Model/SplitWorkbookTaskParameter)  :   
-[TaskData](Specification/Model/TaskData)  :   
-[TaskDescription](Specification/Model/TaskDescription)  :   
-[TaskParameter](Specification/Model/TaskParameter)  :   
-[TaskResultParameter](Specification/Model/TaskResultParameter)  :   
-[TaskRunResult](Specification/Model/TaskRunResult)  :   
-[TaskType](Specification/Model/TaskType)  :   
-[ChartOperateParameter](Specification/Model/ChartOperateParameter)  :   
-[ListObjectOperateParameter](Specification/Model/ListObjectOperateParameter)  :   
-[OperateObject](Specification/Model/OperateObject)  :   
-[OperateObjectPosition](Specification/Model/OperateObjectPosition)  :   
-[OperateObjectType](Specification/Model/OperateObjectType)  :   
-[OperateParameter](Specification/Model/OperateParameter)  :   
-[OperateType](Specification/Model/OperateType)  :   
-[PageBreakOperateParameter](Specification/Model/PageBreakOperateParameter)  :   
-[PageSetupOperateParameter](Specification/Model/PageSetupOperateParameter)  :   
-[PivotTableOperateParameter](Specification/Model/PivotTableOperateParameter)  :   
-[ShapeOperateParameter](Specification/Model/ShapeOperateParameter)  :   
-[WorkbookOperateParameter](Specification/Model/WorkbookOperateParameter)  :   
-[WorkbookSettingsOperateParameter](Specification/Model/WorkbookSettingsOperateParameter)  :   
-[WorksheetOperateParameter](Specification/Model/WorksheetOperateParameter)  :   
-[ListColumn](Specification/Model/ListColumn)  :   
-[ListObject](Specification/Model/ListObject)  :   
-[ListObjects](Specification/Model/ListObjects)  :   
-[PivotGlobalizationSettings](Specification/Model/PivotGlobalizationSettings)  :  Represents the globalization settings for pivot tables.  
-[DifSaveOptions](Specification/Model/DifSaveOptions)  :  Represents the options of saving dif file. 
-[DocxSaveOptions](Specification/Model/DocxSaveOptions)  :  Represents options of saving .docx file. 
-[HtmlSaveOptions](Specification/Model/HtmlSaveOptions)  :  Represents options of saving .html file. 
-[ImageSaveOptions](Specification/Model/ImageSaveOptions)  :  Represents options of saving image file. 
-[JsonSaveOptions](Specification/Model/JsonSaveOptions)  :  Represents options of saving .json file. 
-[MarkdownSaveOptions](Specification/Model/MarkdownSaveOptions)  :  Represents options of saving .md file. 
-[MHtmlSaveOptions](Specification/Model/MHtmlSaveOptions)  :  Represents options of saving .mhtml file. 
-[OdsSaveOptions](Specification/Model/OdsSaveOptions)  :  Represents options of saving .ods file. 
-[OoxmlSaveOptions](Specification/Model/OoxmlSaveOptions)  :  Represents options of saving ooxml file. 
-[PdfSaveOptions](Specification/Model/PdfSaveOptions)  :  Represents options of saving pdf file. 
-[PptxSaveOptions](Specification/Model/PptxSaveOptions)  :  Represents the options of saving pptx file. 
-[SaveOptions](Specification/Model/SaveOptions)  :  Represents all save options 
-[SpreadsheetML2003SaveOptions](Specification/Model/SpreadsheetML2003SaveOptions)  :  Represents the options of saving .xml file. 
-[SqlScriptSaveOptions](Specification/Model/SqlScriptSaveOptions)  :  Represents the options of saving .sql file. 
-[SvgSaveOptions](Specification/Model/SvgSaveOptions)  :  Represents the options of saving .svg file. 
-[TxtSaveOptions](Specification/Model/TxtSaveOptions)  :  Represents the options of saving .txt file. 
-[XlsbSaveOptions](Specification/Model/XlsbSaveOptions)  :  Represents the options of saving .xlsb file. 
-[XlsSaveOptions](Specification/Model/XlsSaveOptions)  :  Represents the options of saving .xls file. 
-[XpsSaveOptions](Specification/Model/XpsSaveOptions)  :  Represents the options of saving .xps file. 
-[AnalyzeExcelResponse](Specification/Model/AnalyzeExcelResponse)  :   
-[ArcShapeResponse](Specification/Model/ArcShapeResponse)  :   
-[AutoFilterResponse](Specification/Model/AutoFilterResponse)  :   
-[AutoShapeResponse](Specification/Model/AutoShapeResponse)  :   
-[AutoShapesResponse](Specification/Model/AutoShapesResponse)  :   
-[AxisResponse](Specification/Model/AxisResponse)  :   
-[BorderResponse](Specification/Model/BorderResponse)  :   
-[ButtonResponse](Specification/Model/ButtonResponse)  :   
-[CalculateFormulaResponse](Specification/Model/CalculateFormulaResponse)  :   
-[CellResponse](Specification/Model/CellResponse)  :   
-[CellsCloudFileInfoResponse](Specification/Model/CellsCloudFileInfoResponse)  :   
-[CellsCloudResponse](Specification/Model/CellsCloudResponse)  :   
-[CellsDocumentPropertiesResponse](Specification/Model/CellsDocumentPropertiesResponse)  :   
-[CellsDocumentPropertyResponse](Specification/Model/CellsDocumentPropertyResponse)  :   
-[CellsDrawingResponse](Specification/Model/CellsDrawingResponse)  :   
-[CellsResponse](Specification/Model/CellsResponse)  :   
-[ChartAreaResponse](Specification/Model/ChartAreaResponse)  :   
-[ChartDataTableResponse](Specification/Model/ChartDataTableResponse)  :   
-[ChartPointResponse](Specification/Model/ChartPointResponse)  :   
-[ChartPointsResponse](Specification/Model/ChartPointsResponse)  :   
-[ChartResponse](Specification/Model/ChartResponse)  :   
-[ChartsResponse](Specification/Model/ChartsResponse)  :   
-[CheckBoxResponse](Specification/Model/CheckBoxResponse)  :   
-[ColumnResponse](Specification/Model/ColumnResponse)  :   
-[ColumnsResponse](Specification/Model/ColumnsResponse)  :   
-[ComboBoxResponse](Specification/Model/ComboBoxResponse)  :   
-[CommentResponse](Specification/Model/CommentResponse)  :   
-[CommentShapeResponse](Specification/Model/CommentShapeResponse)  :   
-[CommentsResponse](Specification/Model/CommentsResponse)  :   
-[ConditionalFormattingResponse](Specification/Model/ConditionalFormattingResponse)  :   
-[ConditionalFormattingsResponse](Specification/Model/ConditionalFormattingsResponse)  :   
-[DataLabelsResponse](Specification/Model/DataLabelsResponse)  :   
-[DisplayUnitLabelResponse](Specification/Model/DisplayUnitLabelResponse)  :   
-[DropBarsResponse](Specification/Model/DropBarsResponse)  :   
-[ErrorBarResponse](Specification/Model/ErrorBarResponse)  :   
-[FillFormatResponse](Specification/Model/FillFormatResponse)  :   
-[FindResponse](Specification/Model/FindResponse)  :   
-[FloorResponse](Specification/Model/FloorResponse)  :   
-[FormResponse](Specification/Model/FormResponse)  :   
-[FormsResponse](Specification/Model/FormsResponse)  :   
-[GroupBoxResponse](Specification/Model/GroupBoxResponse)  :   
-[HorizontalPageBreakResponse](Specification/Model/HorizontalPageBreakResponse)  :   
-[HorizontalPageBreaksResponse](Specification/Model/HorizontalPageBreaksResponse)  :   
-[HyperlinkResponse](Specification/Model/HyperlinkResponse)  :   
-[HyperlinksResponse](Specification/Model/HyperlinksResponse)  :   
-[LabelResponse](Specification/Model/LabelResponse)  :   
-[LegendEntriesResponse](Specification/Model/LegendEntriesResponse)  :   
-[LegendEntryResponse](Specification/Model/LegendEntryResponse)  :   
-[LegendResponse](Specification/Model/LegendResponse)  :   
-[LineResponse](Specification/Model/LineResponse)  :   
-[LineShapeResponse](Specification/Model/LineShapeResponse)  :   
-[ListBoxResponse](Specification/Model/ListBoxResponse)  :   
-[ListObjectResponse](Specification/Model/ListObjectResponse)  :   
-[ListObjectsResponse](Specification/Model/ListObjectsResponse)  :   
-[MergedCellResponse](Specification/Model/MergedCellResponse)  :   
-[MergedCellsResponse](Specification/Model/MergedCellsResponse)  :   
-[NameResponse](Specification/Model/NameResponse)  :   
-[NamesResponse](Specification/Model/NamesResponse)  :   
-[OleObjectResponse](Specification/Model/OleObjectResponse)  :   
-[OleObjectsResponse](Specification/Model/OleObjectsResponse)  :   
-[OvalResponse](Specification/Model/OvalResponse)  :   
-[PageSectionsResponse](Specification/Model/PageSectionsResponse)  :   
-[PageSetupResponse](Specification/Model/PageSetupResponse)  :   
-[PictureResponse](Specification/Model/PictureResponse)  :   
-[PicturesResponse](Specification/Model/PicturesResponse)  :   
-[PivotFieldResponse](Specification/Model/PivotFieldResponse)  :   
-[PivotFilterResponse](Specification/Model/PivotFilterResponse)  :   
-[PivotFiltersResponse](Specification/Model/PivotFiltersResponse)  :   
-[PivotTableResponse](Specification/Model/PivotTableResponse)  :   
-[PivotTablesResponse](Specification/Model/PivotTablesResponse)  :   
-[PlotAreaResponse](Specification/Model/PlotAreaResponse)  :   
-[RadioButtonResponse](Specification/Model/RadioButtonResponse)  :   
-[RangeResponse](Specification/Model/RangeResponse)  :   
-[RangesResponse](Specification/Model/RangesResponse)  :   
-[RangeValueResponse](Specification/Model/RangeValueResponse)  :   
-[RectangleShapeResponse](Specification/Model/RectangleShapeResponse)  :   
-[RowResponse](Specification/Model/RowResponse)  :   
-[RowsResponse](Specification/Model/RowsResponse)  :   
-[SaveFilesToCloudResultResponse](Specification/Model/SaveFilesToCloudResultResponse)  :   
-[SaveResponse](Specification/Model/SaveResponse)  :   
-[ScrollBarResponse](Specification/Model/ScrollBarResponse)  :   
-[SeriesesResponse](Specification/Model/SeriesesResponse)  :   
-[SeriesResponse](Specification/Model/SeriesResponse)  :   
-[ShapeResponse](Specification/Model/ShapeResponse)  :   
-[ShapesResponse](Specification/Model/ShapesResponse)  :   
-[SingleValueResponse](Specification/Model/SingleValueResponse)  :   
-[SparklineGroupResponse](Specification/Model/SparklineGroupResponse)  :   
-[SparklineGroupsResponse](Specification/Model/SparklineGroupsResponse)  :   
-[SpinnerResponse](Specification/Model/SpinnerResponse)  :   
-[SplitResultResponse](Specification/Model/SplitResultResponse)  :   
-[StyleResponse](Specification/Model/StyleResponse)  :   
-[TaskRunResultResponse](Specification/Model/TaskRunResultResponse)  :   
-[TextBoxResponse](Specification/Model/TextBoxResponse)  :   
-[TextItemResponse](Specification/Model/TextItemResponse)  :   
-[TextItemsResponse](Specification/Model/TextItemsResponse)  :   
-[TickLabelsResponse](Specification/Model/TickLabelsResponse)  :   
-[TitleResponse](Specification/Model/TitleResponse)  :   
-[TrendlineResponse](Specification/Model/TrendlineResponse)  :   
-[TrendlinesResponse](Specification/Model/TrendlinesResponse)  :   
-[ValidationResponse](Specification/Model/ValidationResponse)  :   
-[ValidationsResponse](Specification/Model/ValidationsResponse)  :   
-[VerticalPageBreakResponse](Specification/Model/VerticalPageBreakResponse)  :   
-[VerticalPageBreaksResponse](Specification/Model/VerticalPageBreaksResponse)  :   
-[WallsResponse](Specification/Model/WallsResponse)  :   
-[WorkbookReplaceResponse](Specification/Model/WorkbookReplaceResponse)  :   
-[WorkbookResponse](Specification/Model/WorkbookResponse)  :   
-[WorkbookSettingsResponse](Specification/Model/WorkbookSettingsResponse)  :   
-[WorkbooksResponse](Specification/Model/WorkbooksResponse)  :   
-[WorksheetReplaceResponse](Specification/Model/WorksheetReplaceResponse)  :   
-[WorksheetResponse](Specification/Model/WorksheetResponse)  :   
-[WorksheetsResponse](Specification/Model/WorksheetsResponse)  :   
-[AnalyzeExcelRequest](Specification/Model/AnalyzeExcelRequest)  :   
-[BatchConvertRequest](Specification/Model/BatchConvertRequest)  :  Indicates batch convert file request 
-[BatchLockRequest](Specification/Model/BatchLockRequest)  :  Indicates batch lock file request 
-[BatchProtectRequest](Specification/Model/BatchProtectRequest)  :  Indicates batch protect file request 
-[BatchSplitRequest](Specification/Model/BatchSplitRequest)  :   
-[ColorFilterRequest](Specification/Model/ColorFilterRequest)  :  Indicates color filter request 
-[ConvertParameter](Specification/Model/ConvertParameter)  :  Indicates convert parameter 
-[CreatePivotTableRequest](Specification/Model/CreatePivotTableRequest)  :  Indicates create pivot table request 
-[DataCleansingRequest](Specification/Model/DataCleansingRequest)  :  A data cleansing request for an Spreadsheet file. 
-[DataDeduplicationRequest](Specification/Model/DataDeduplicationRequest)  :   
-[DataFillRequest](Specification/Model/DataFillRequest)  :   
-[DeleteIncompleteRowsRequest](Specification/Model/DeleteIncompleteRowsRequest)  :   
-[ImportJsonRequest](Specification/Model/ImportJsonRequest)  :  Indicates import xml data request 
-[ImportXMLRequest](Specification/Model/ImportXMLRequest)  :  Indicates import xml data request 
-[MatchConditionRequest](Specification/Model/MatchConditionRequest)  :  Indicates the match condition that needs to be processed for the file name. 
-[PasswordRequest](Specification/Model/PasswordRequest)  :  Used for password data transfer. 
-[PivotTableFieldRequest](Specification/Model/PivotTableFieldRequest)  :  Indicates pivot table field request 
-[ProtectWorkbookRequest](Specification/Model/ProtectWorkbookRequest)  :  Indicates protect workbook request 
-[RangeCopyRequest](Specification/Model/RangeCopyRequest)  :  Indicates range copy request 
-[RangeSetOutlineBorderRequest](Specification/Model/RangeSetOutlineBorderRequest)  :  Indicates range set outline border request. 
-[RangeSetStyleRequest](Specification/Model/RangeSetStyleRequest)  :  Indicates range set style request. 
-[RangeSortRequest](Specification/Model/RangeSortRequest)  :  Indicates range sort request 
-[TableTotalRequest](Specification/Model/TableTotalRequest)  :  Indicates table total request 
-[TextWaterMarkerRequest](Specification/Model/TextWaterMarkerRequest)  :  Indicates text water marker request. 
-[WorkbookEncryptionRequest](Specification/Model/WorkbookEncryptionRequest)  :  Used by workbook encryption/decryption requests. 
-[WorkbookProtectionRequest](Specification/Model/WorkbookProtectionRequest)  :  Used by workbook protection requests. 
-[WorksheetMovingRequest](Specification/Model/WorksheetMovingRequest)  :  Used by workbook moving requests. 
-[ImageOrPrintOptions](Specification/Model/ImageOrPrintOptions)  :   
-[RenderingFont](Specification/Model/RenderingFont)  :   
-[RenderingWatermark](Specification/Model/RenderingWatermark)  :   
-[PivotField](Specification/Model/PivotField)  :   
-[PivotFilter](Specification/Model/PivotFilter)  :  Represents a PivotFilter in PivotFilter Collection. 
-[PivotItem](Specification/Model/PivotItem)  :   
-[PivotTable](Specification/Model/PivotTable)  :   
-[PivotTables](Specification/Model/PivotTables)  :   
-[CustomParserConfig](Specification/Model/CustomParserConfig)  :   
-[Import2DimensionDoubleArrayOption](Specification/Model/Import2DimensionDoubleArrayOption)  :   
-[Import2DimensionIntArrayOption](Specification/Model/Import2DimensionIntArrayOption)  :   
-[Import2DimensionStringArrayOption](Specification/Model/Import2DimensionStringArrayOption)  :   
-[CellValue](Specification/Model/CellValue)  :   
-[ImportBatchDataOption](Specification/Model/ImportBatchDataOption)  :   
-[ImportCSVDataOption](Specification/Model/ImportCSVDataOption)  :   
-[ImportDataType](Specification/Model/ImportDataType)  :   
-[ImportDoubleArrayOption](Specification/Model/ImportDoubleArrayOption)  :   
-[ImportIntArrayOption](Specification/Model/ImportIntArrayOption)  :   
-[ImportOption](Specification/Model/ImportOption)  :   
-[ImportPictureOption](Specification/Model/ImportPictureOption)  :   
-[ImportPosition](Specification/Model/ImportPosition)  :   
-[ImportStringArrayOption](Specification/Model/ImportStringArrayOption)  :   
-[ArcShape](Specification/Model/ArcShape)  :   
-[Area](Specification/Model/Area)  :   
-[AutoShape](Specification/Model/AutoShape)  :   
-[AutoShapes](Specification/Model/AutoShapes)  :   
-[Button](Specification/Model/Button)  :   
-[CellsDrawing](Specification/Model/CellsDrawing)  :   
-[CheckBox](Specification/Model/CheckBox)  :   
-[ComboBox](Specification/Model/ComboBox)  :   
-[CommentShape](Specification/Model/CommentShape)  :   
-[FillFormat](Specification/Model/FillFormat)  :   
-[Form](Specification/Model/Form)  :   
-[Forms](Specification/Model/Forms)  :   
-[GradientFill](Specification/Model/GradientFill)  :   
-[GradientFillStop](Specification/Model/GradientFillStop)  :   
-[GroupBox](Specification/Model/GroupBox)  :   
-[GroupShape](Specification/Model/GroupShape)  :   
-[Label](Specification/Model/Label)  :   
-[Line](Specification/Model/Line)  :  Encapsulates the object that represents the line format. 
-[LineFormat](Specification/Model/LineFormat)  :   
-[LineShape](Specification/Model/LineShape)  :   
-[ListBox](Specification/Model/ListBox)  :   
-[OleObject](Specification/Model/OleObject)  :   
-[OleObjects](Specification/Model/OleObjects)  :   
-[Oval](Specification/Model/Oval)  :   
-[PatternFill](Specification/Model/PatternFill)  :   
-[PicFormatOption](Specification/Model/PicFormatOption)  :   
-[Picture](Specification/Model/Picture)  :   
-[Pictures](Specification/Model/Pictures)  :   
-[RadioButton](Specification/Model/RadioButton)  :   
-[RectangleShape](Specification/Model/RectangleShape)  :   
-[ScrollBar](Specification/Model/ScrollBar)  :   
-[ShadowEffect](Specification/Model/ShadowEffect)  :   
-[Shape](Specification/Model/Shape)  :   
-[Shapes](Specification/Model/Shapes)  :   
-[SolidFill](Specification/Model/SolidFill)  :   
-[Spinner](Specification/Model/Spinner)  :   
-[TextBox](Specification/Model/TextBox)  :   
-[TextureFill](Specification/Model/TextureFill)  :   
-[TilePicOption](Specification/Model/TilePicOption)  :   
-[DigitalSignature](Specification/Model/DigitalSignature)  :  Signature in file.             
-[Axis](Specification/Model/Axis)  :   
-[Chart](Specification/Model/Chart)  :   
-[ChartArea](Specification/Model/ChartArea)  :   
-[ChartDataTable](Specification/Model/ChartDataTable)  :   
-[ChartFrame](Specification/Model/ChartFrame)  :   
-[ChartGlobalizationSettings](Specification/Model/ChartGlobalizationSettings)  :  Represents the globalization settings for chart.  
-[ChartPoint](Specification/Model/ChartPoint)  :   
-[ChartPoints](Specification/Model/ChartPoints)  :   
-[Charts](Specification/Model/Charts)  :   
-[ChartShape](Specification/Model/ChartShape)  :  Chart shape object 
-[DataLabels](Specification/Model/DataLabels)  :   
-[DisplayUnitLabel](Specification/Model/DisplayUnitLabel)  :   
-[DropBars](Specification/Model/DropBars)  :   
-[ErrorBar](Specification/Model/ErrorBar)  :   
-[Floor](Specification/Model/Floor)  :   
-[Legend](Specification/Model/Legend)  :   
-[LegendEntries](Specification/Model/LegendEntries)  :   
-[LegendEntry](Specification/Model/LegendEntry)  :   
-[Marker](Specification/Model/Marker)  :   
-[PlotArea](Specification/Model/PlotArea)  :   
-[Series](Specification/Model/Series)  :   
-[SeriesItems](Specification/Model/SeriesItems)  :   
-[Sparkline](Specification/Model/Sparkline)  :  A sparkline represents a tiny chart or graphic in a worksheet cell that provides a visual representation of data.             
-[SparklineGroup](Specification/Model/SparklineGroup)  :   
-[SparklineGroups](Specification/Model/SparklineGroups)  :  Encapsulates a collection of Aspose.Cells.Charts.SparklineGroup objects.             
-[TickLabels](Specification/Model/TickLabels)  :   
-[Title](Specification/Model/Title)  :   
-[Trendline](Specification/Model/Trendline)  :   
-[Trendlines](Specification/Model/Trendlines)  :   
-[Walls](Specification/Model/Walls)  :   
-[ColumnDataExceptionDescription](Specification/Model/ColumnDataExceptionDescription)  :   
-[TextCategoryType](Specification/Model/TextCategoryType)  :   
-[AnalyzedColumnDescription](Specification/Model/AnalyzedColumnDescription)  :  How to use the properties of each column: currently divided into timeline, product line, numerical statistics line             How to present the product, a unified plan            How to solve the problem of full digital?            Full text How to solve it?            Two columns: Text, Number is the easiest            Three columns: Text, Text, Number                    text, number, number --- date date ; Date Numeric ; Numeric Digital             What about four columns, five columns? 
-[AnalyzedResult](Specification/Model/AnalyzedResult)  :   
-[AnalyzedTableDescription](Specification/Model/AnalyzedTableDescription)  :   
-[DateSourceType](Specification/Model/DateSourceType)  :   
-[SuggestedOutputType](Specification/Model/SuggestedOutputType)  :   
-[AnalyzeSuggestion](Specification/Model/AnalyzeSuggestion)  :   
-[DiscoverChart](Specification/Model/DiscoverChart)  :   
-[DiscoverPivotTable](Specification/Model/DiscoverPivotTable)  :   
-[ExcelDataStatistics](Specification/Model/ExcelDataStatistics)  :   
-[WorksheetDataStatistics](Specification/Model/WorksheetDataStatistics)  :   
-[Error](Specification/Model/Error)  :  Error 
-[ErrorDetails](Specification/Model/ErrorDetails)  :  The error details 
+# Aspose.Cells Cloud API Model
+
+- [DiscUsage](Model/DiscUsage)  :  Class for disc space information. 
+- [ObjectExist](Model/ObjectExist)  :  Object exists 
+- [ObjectExistsExtensions](Model/ObjectExistsExtensions)  :   
+- [FileVersion](Model/FileVersion)  :   
+- [StorageExist](Model/StorageExist)  :  Storage exists 
+- [FileVersions](Model/FileVersions)  :  File versions FileVersion. 
+- [FilesList](Model/FilesList)  :  Files list 
+- [FilesUploadResult](Model/FilesUploadResult)  :  File upload result 
+- [StorageFile](Model/StorageFile)  :  File or folder information 
+- [GoogleDriveStorageFile](Model/GoogleDriveStorageFile)  :   
+- [AboveAverage](Model/AboveAverage)  :  Describe the AboveAverage conditional formatting rule. This conditional formatting    rule highlights cells that are above or below the average for all values    in the range. 
+- [AbstractCalculationEngine](Model/AbstractCalculationEngine)  :  Represents user's custom calculation engine to extend the default calculation engine of Aspose.Cells.  
+- [AbstractCalculationMonitor](Model/AbstractCalculationMonitor)  :  Monitor for user to track the progress of formula calculation.  
+- [AutoFilter](Model/AutoFilter)  :   
+- [AutoFitterOptions](Model/AutoFitterOptions)  :   
+- [Border](Model/Border)  :   
+- [CalculationOptions](Model/CalculationOptions)  :   
+- [Cell](Model/Cell)  :   
+- [CellArea](Model/CellArea)  :   
+- [Cells](Model/Cells)  :   
+- [CellsCloudFileInfo](Model/CellsCloudFileInfo)  :  Cells Cloud File information description. 
+- [CellsColor](Model/CellsColor)  :   
+- [CellsDocumentProperties](Model/CellsDocumentProperties)  :  Excel properties 
+- [CellsDocumentProperty](Model/CellsDocumentProperty)  :  Cells document property. 
+- [Color](Model/Color)  :  Color. 
+- [ColorFilter](Model/ColorFilter)  :  Color filter. 
+- [ColorScale](Model/ColorScale)  :  Describe the ColorScale conditional formatting rule. This conditional formatting   rule creates a gradated color scale on the cells.             
+- [Column](Model/Column)  :   
+- [Columns](Model/Columns)  :   
+- [Comment](Model/Comment)  :   
+- [Comments](Model/Comments)  :   
+- [ConditionalFormatting](Model/ConditionalFormatting)  :   
+- [ConditionalFormattingIcon](Model/ConditionalFormattingIcon)  :   
+- [ConditionalFormattings](Model/ConditionalFormattings)  :   
+- [ConditionalFormattingValue](Model/ConditionalFormattingValue)  :   
+- [CopyOptions](Model/CopyOptions)  :  Represents the copy options. 
+- [CriteriaMultipleFilter](Model/CriteriaMultipleFilter)  :   
+- [CustomFilter](Model/CustomFilter)  :   
+- [DataBar](Model/DataBar)  :  Describe the DataBar conditional formatting rule. This conditional formatting   rule displays a gradated data bar in the range of cells. 
+- [DataBarBorder](Model/DataBarBorder)  :   
+- [DataCleansing](Model/DataCleansing)  :  Data Cleansing 
+- [DataColumnFillValue](Model/DataColumnFillValue)  :   
+- [DataFill](Model/DataFill)  :   
+- [DataFillValue](Model/DataFillValue)  :   
+- [DataSorter](Model/DataSorter)  :  Summary description for DataSorter. 
+- [DataSorterKey](Model/DataSorterKey)  :  Represents the key of the data sorter.  
+- [DateTimeGroupItem](Model/DateTimeGroupItem)  :   
+- [DeduplicationRegion](Model/DeduplicationRegion)  :   
+- [DynamicFilter](Model/DynamicFilter)  :   
+- [FileInfo](Model/FileInfo)  :  File Information 
+- [FilesResult](Model/FilesResult)  :   
+- [FilterColumn](Model/FilterColumn)  :   
+- [Font](Model/Font)  :   
+- [FontSetting](Model/FontSetting)  :   
+- [FormatCondition](Model/FormatCondition)  :   
+- [FormulaFormatCondition](Model/FormulaFormatCondition)  :   
+- [FormulaSettings](Model/FormulaSettings)  :  Settings of formulas and calculation.  
+- [GlobalizationSettings](Model/GlobalizationSettings)  :  Represents the globalization settings.  
+- [HorizontalPageBreak](Model/HorizontalPageBreak)  :   
+- [HorizontalPageBreaks](Model/HorizontalPageBreaks)  :   
+- [Hyperlink](Model/Hyperlink)  :   
+- [Hyperlinks](Model/Hyperlinks)  :   
+- [IconFilter](Model/IconFilter)  :   
+- [IconSet](Model/IconSet)  :  Describe the IconSet conditional formatting rule. This conditional formatting    rule applies icons to cells according to their values. 
+- [Link](Model/Link)  :   
+- [LinkElement](Model/LinkElement)  :   
+- [LoadOptions](Model/LoadOptions)  :   
+- [MergedCell](Model/MergedCell)  :   
+- [MergedCells](Model/MergedCells)  :   
+- [MultipleFilter](Model/MultipleFilter)  :   
+- [MultipleFilters](Model/MultipleFilters)  :   
+- [Name](Model/Name)  :   
+- [Names](Model/Names)  :   
+- [NegativeBarFormat](Model/NegativeBarFormat)  :  Represents the color settings of the data bars for negative values that are   defined by a data bar conditional formating rule.             
+- [PageSection](Model/PageSection)  :   
+- [PageSetup](Model/PageSetup)  :   
+- [PasteOptions](Model/PasteOptions)  :  Represents the paste special options.             
+- [PdfSecurityOptions](Model/PdfSecurityOptions)  :   
+- [Protection](Model/Protection)  :  Represents the various types of protection options available for a worksheet.             
+- [ProtectSheetParameter](Model/ProtectSheetParameter)  :   
+- [QueryTable](Model/QueryTable)  :  Represents QueryTable information. 
+- [Range](Model/Range)  :   
+- [Ranges](Model/Ranges)  :   
+- [Row](Model/Row)  :   
+- [Rows](Model/Rows)  :   
+- [SaveResult](Model/SaveResult)  :   
+- [PaginatedSaveOptions](Model/PaginatedSaveOptions)  :  Represents the options for pagination. 
+- [SingleValue](Model/SingleValue)  :   
+- [SortKey](Model/SortKey)  :   
+- [SplitResult](Model/SplitResult)  :   
+- [SplitResultDocument](Model/SplitResultDocument)  :   
+- [Style](Model/Style)  :   
+- [StyleFormatCondition](Model/StyleFormatCondition)  :   
+- [Styles](Model/Styles)  :   
+- [TextFormatCondition](Model/TextFormatCondition)  :   
+- [TextItem](Model/TextItem)  :   
+- [TextItems](Model/TextItems)  :   
+- [TextOptions](Model/TextOptions)  :   
+- [ThemeColor](Model/ThemeColor)  :   
+- [TimePeriodFormatCondition](Model/TimePeriodFormatCondition)  :   
+- [Top10](Model/Top10)  :  Describe the Top10 conditional formatting rule. This conditional formatting    rule highlights cells whose values fall in the top N or bottom N bracket,    as specified. 
+- [Top10Filter](Model/Top10Filter)  :   
+- [Validation](Model/Validation)  :   
+- [Validations](Model/Validations)  :   
+- [VerticalPageBreak](Model/VerticalPageBreak)  :   
+- [VerticalPageBreaks](Model/VerticalPageBreaks)  :   
+- [Workbook](Model/Workbook)  :   
+- [WorkbookSettings](Model/WorkbookSettings)  :   
+- [Worksheet](Model/Worksheet)  :   
+- [Worksheets](Model/Worksheets)  :   
+- [WriteProtection](Model/WriteProtection)  :  Specifies write protection settings for a workbook.  
+- [XmlDataBinding](Model/XmlDataBinding)  :  Represents Xml Data Binding information.  
+- [XmlMap](Model/XmlMap)  :  Represents Xml map information.  
+- [CellsObjectOperateTaskParameter](Model/CellsObjectOperateTaskParameter)  :   
+- [ConvertTaskParameter](Model/ConvertTaskParameter)  :   
+- [ConvertWorksheetTaskParameter](Model/ConvertWorksheetTaskParameter)  :   
+- [FileSource](Model/FileSource)  :   
+- [FileSourceType](Model/FileSourceType)  :   
+- [ImportDataTaskParameter](Model/ImportDataTaskParameter)  :   
+- [ResultDestination](Model/ResultDestination)  :   
+- [ResultDestinationType](Model/ResultDestinationType)  :   
+- [ResultSource](Model/ResultSource)  :   
+- [SaveFilesToCloudResult](Model/SaveFilesToCloudResult)  :   
+- [SaveResultTaskParameter](Model/SaveResultTaskParameter)  :   
+- [SmartMarkerTaskParameter](Model/SmartMarkerTaskParameter)  :   
+- [SplitWorkbookTaskParameter](Model/SplitWorkbookTaskParameter)  :   
+- [TaskData](Model/TaskData)  :   
+- [TaskDescription](Model/TaskDescription)  :   
+- [TaskParameter](Model/TaskParameter)  :   
+- [TaskResultParameter](Model/TaskResultParameter)  :   
+- [TaskRunResult](Model/TaskRunResult)  :   
+- [TaskType](Model/TaskType)  :   
+- [ChartOperateParameter](Model/ChartOperateParameter)  :   
+- [ListObjectOperateParameter](Model/ListObjectOperateParameter)  :   
+- [OperateObject](Model/OperateObject)  :   
+- [OperateObjectPosition](Model/OperateObjectPosition)  :   
+- [OperateObjectType](Model/OperateObjectType)  :   
+- [OperateParameter](Model/OperateParameter)  :   
+- [OperateType](Model/OperateType)  :   
+- [PageBreakOperateParameter](Model/PageBreakOperateParameter)  :   
+- [PageSetupOperateParameter](Model/PageSetupOperateParameter)  :   
+- [PivotTableOperateParameter](Model/PivotTableOperateParameter)  :   
+- [ShapeOperateParameter](Model/ShapeOperateParameter)  :   
+- [WorkbookOperateParameter](Model/WorkbookOperateParameter)  :   
+- [WorkbookSettingsOperateParameter](Model/WorkbookSettingsOperateParameter)  :   
+- [WorksheetOperateParameter](Model/WorksheetOperateParameter)  :   
+- [ListColumn](Model/ListColumn)  :   
+- [ListObject](Model/ListObject)  :   
+- [ListObjects](Model/ListObjects)  :   
+- [PivotGlobalizationSettings](Model/PivotGlobalizationSettings)  :  Represents the globalization settings for pivot tables.  
+- [DifSaveOptions](Model/DifSaveOptions)  :  Represents the options of saving dif file. 
+- [DocxSaveOptions](Model/DocxSaveOptions)  :  Represents options of saving .docx file. 
+- [HtmlSaveOptions](Model/HtmlSaveOptions)  :  Represents options of saving .html file. 
+- [ImageSaveOptions](Model/ImageSaveOptions)  :  Represents options of saving image file. 
+- [JsonSaveOptions](Model/JsonSaveOptions)  :  Represents options of saving .json file. 
+- [MarkdownSaveOptions](Model/MarkdownSaveOptions)  :  Represents options of saving .md file. 
+- [MHtmlSaveOptions](Model/MHtmlSaveOptions)  :  Represents options of saving .mhtml file. 
+- [OdsSaveOptions](Model/OdsSaveOptions)  :  Represents options of saving .ods file. 
+- [OoxmlSaveOptions](Model/OoxmlSaveOptions)  :  Represents options of saving ooxml file. 
+- [PdfSaveOptions](Model/PdfSaveOptions)  :  Represents options of saving pdf file. 
+- [PptxSaveOptions](Model/PptxSaveOptions)  :  Represents the options of saving pptx file. 
+- [SaveOptions](Model/SaveOptions)  :  Represents all save options 
+- [SpreadsheetML2003SaveOptions](Model/SpreadsheetML2003SaveOptions)  :  Represents the options of saving .xml file. 
+- [SqlScriptSaveOptions](Model/SqlScriptSaveOptions)  :  Represents the options of saving .sql file. 
+- [SvgSaveOptions](Model/SvgSaveOptions)  :  Represents the options of saving .svg file. 
+- [TxtSaveOptions](Model/TxtSaveOptions)  :  Represents the options of saving .txt file. 
+- [XlsbSaveOptions](Model/XlsbSaveOptions)  :  Represents the options of saving .xlsb file. 
+- [XlsSaveOptions](Model/XlsSaveOptions)  :  Represents the options of saving .xls file. 
+- [XpsSaveOptions](Model/XpsSaveOptions)  :  Represents the options of saving .xps file. 
+- [AnalyzeExcelResponse](Model/AnalyzeExcelResponse)  :   
+- [ArcShapeResponse](Model/ArcShapeResponse)  :   
+- [AutoFilterResponse](Model/AutoFilterResponse)  :   
+- [AutoShapeResponse](Model/AutoShapeResponse)  :   
+- [AutoShapesResponse](Model/AutoShapesResponse)  :   
+- [AxisResponse](Model/AxisResponse)  :   
+- [BorderResponse](Model/BorderResponse)  :   
+- [ButtonResponse](Model/ButtonResponse)  :   
+- [CalculateFormulaResponse](Model/CalculateFormulaResponse)  :   
+- [CellResponse](Model/CellResponse)  :   
+- [CellsCloudFileInfoResponse](Model/CellsCloudFileInfoResponse)  :   
+- [CellsCloudResponse](Model/CellsCloudResponse)  :   
+- [CellsDocumentPropertiesResponse](Model/CellsDocumentPropertiesResponse)  :   
+- [CellsDocumentPropertyResponse](Model/CellsDocumentPropertyResponse)  :   
+- [CellsDrawingResponse](Model/CellsDrawingResponse)  :   
+- [CellsResponse](Model/CellsResponse)  :   
+- [ChartAreaResponse](Model/ChartAreaResponse)  :   
+- [ChartDataTableResponse](Model/ChartDataTableResponse)  :   
+- [ChartPointResponse](Model/ChartPointResponse)  :   
+- [ChartPointsResponse](Model/ChartPointsResponse)  :   
+- [ChartResponse](Model/ChartResponse)  :   
+- [ChartsResponse](Model/ChartsResponse)  :   
+- [CheckBoxResponse](Model/CheckBoxResponse)  :   
+- [ColumnResponse](Model/ColumnResponse)  :   
+- [ColumnsResponse](Model/ColumnsResponse)  :   
+- [ComboBoxResponse](Model/ComboBoxResponse)  :   
+- [CommentResponse](Model/CommentResponse)  :   
+- [CommentShapeResponse](Model/CommentShapeResponse)  :   
+- [CommentsResponse](Model/CommentsResponse)  :   
+- [ConditionalFormattingResponse](Model/ConditionalFormattingResponse)  :   
+- [ConditionalFormattingsResponse](Model/ConditionalFormattingsResponse)  :   
+- [DataLabelsResponse](Model/DataLabelsResponse)  :   
+- [DisplayUnitLabelResponse](Model/DisplayUnitLabelResponse)  :   
+- [DropBarsResponse](Model/DropBarsResponse)  :   
+- [ErrorBarResponse](Model/ErrorBarResponse)  :   
+- [FillFormatResponse](Model/FillFormatResponse)  :   
+- [FindResponse](Model/FindResponse)  :   
+- [FloorResponse](Model/FloorResponse)  :   
+- [FormResponse](Model/FormResponse)  :   
+- [FormsResponse](Model/FormsResponse)  :   
+- [GroupBoxResponse](Model/GroupBoxResponse)  :   
+- [HorizontalPageBreakResponse](Model/HorizontalPageBreakResponse)  :   
+- [HorizontalPageBreaksResponse](Model/HorizontalPageBreaksResponse)  :   
+- [HyperlinkResponse](Model/HyperlinkResponse)  :   
+- [HyperlinksResponse](Model/HyperlinksResponse)  :   
+- [LabelResponse](Model/LabelResponse)  :   
+- [LegendEntriesResponse](Model/LegendEntriesResponse)  :   
+- [LegendEntryResponse](Model/LegendEntryResponse)  :   
+- [LegendResponse](Model/LegendResponse)  :   
+- [LineResponse](Model/LineResponse)  :   
+- [LineShapeResponse](Model/LineShapeResponse)  :   
+- [ListBoxResponse](Model/ListBoxResponse)  :   
+- [ListObjectResponse](Model/ListObjectResponse)  :   
+- [ListObjectsResponse](Model/ListObjectsResponse)  :   
+- [MergedCellResponse](Model/MergedCellResponse)  :   
+- [MergedCellsResponse](Model/MergedCellsResponse)  :   
+- [NameResponse](Model/NameResponse)  :   
+- [NamesResponse](Model/NamesResponse)  :   
+- [OleObjectResponse](Model/OleObjectResponse)  :   
+- [OleObjectsResponse](Model/OleObjectsResponse)  :   
+- [OvalResponse](Model/OvalResponse)  :   
+- [PageSectionsResponse](Model/PageSectionsResponse)  :   
+- [PageSetupResponse](Model/PageSetupResponse)  :   
+- [PictureResponse](Model/PictureResponse)  :   
+- [PicturesResponse](Model/PicturesResponse)  :   
+- [PivotFieldResponse](Model/PivotFieldResponse)  :   
+- [PivotFilterResponse](Model/PivotFilterResponse)  :   
+- [PivotFiltersResponse](Model/PivotFiltersResponse)  :   
+- [PivotTableResponse](Model/PivotTableResponse)  :   
+- [PivotTablesResponse](Model/PivotTablesResponse)  :   
+- [PlotAreaResponse](Model/PlotAreaResponse)  :   
+- [RadioButtonResponse](Model/RadioButtonResponse)  :   
+- [RangeResponse](Model/RangeResponse)  :   
+- [RangesResponse](Model/RangesResponse)  :   
+- [RangeValueResponse](Model/RangeValueResponse)  :   
+- [RectangleShapeResponse](Model/RectangleShapeResponse)  :   
+- [RowResponse](Model/RowResponse)  :   
+- [RowsResponse](Model/RowsResponse)  :   
+- [SaveFilesToCloudResultResponse](Model/SaveFilesToCloudResultResponse)  :   
+- [SaveResponse](Model/SaveResponse)  :   
+- [ScrollBarResponse](Model/ScrollBarResponse)  :   
+- [SeriesesResponse](Model/SeriesesResponse)  :   
+- [SeriesResponse](Model/SeriesResponse)  :   
+- [ShapeResponse](Model/ShapeResponse)  :   
+- [ShapesResponse](Model/ShapesResponse)  :   
+- [SingleValueResponse](Model/SingleValueResponse)  :   
+- [SparklineGroupResponse](Model/SparklineGroupResponse)  :   
+- [SparklineGroupsResponse](Model/SparklineGroupsResponse)  :   
+- [SpinnerResponse](Model/SpinnerResponse)  :   
+- [SplitResultResponse](Model/SplitResultResponse)  :   
+- [StyleResponse](Model/StyleResponse)  :   
+- [TaskRunResultResponse](Model/TaskRunResultResponse)  :   
+- [TextBoxResponse](Model/TextBoxResponse)  :   
+- [TextItemResponse](Model/TextItemResponse)  :   
+- [TextItemsResponse](Model/TextItemsResponse)  :   
+- [TickLabelsResponse](Model/TickLabelsResponse)  :   
+- [TitleResponse](Model/TitleResponse)  :   
+- [TrendlineResponse](Model/TrendlineResponse)  :   
+- [TrendlinesResponse](Model/TrendlinesResponse)  :   
+- [ValidationResponse](Model/ValidationResponse)  :   
+- [ValidationsResponse](Model/ValidationsResponse)  :   
+- [VerticalPageBreakResponse](Model/VerticalPageBreakResponse)  :   
+- [VerticalPageBreaksResponse](Model/VerticalPageBreaksResponse)  :   
+- [WallsResponse](Model/WallsResponse)  :   
+- [WorkbookReplaceResponse](Model/WorkbookReplaceResponse)  :   
+- [WorkbookResponse](Model/WorkbookResponse)  :   
+- [WorkbookSettingsResponse](Model/WorkbookSettingsResponse)  :   
+- [WorkbooksResponse](Model/WorkbooksResponse)  :   
+- [WorksheetReplaceResponse](Model/WorksheetReplaceResponse)  :   
+- [WorksheetResponse](Model/WorksheetResponse)  :   
+- [WorksheetsResponse](Model/WorksheetsResponse)  :   
+- [AnalyzeExcelRequest](Model/AnalyzeExcelRequest)  :   
+- [BatchConvertRequest](Model/BatchConvertRequest)  :  Indicates batch convert file request 
+- [BatchLockRequest](Model/BatchLockRequest)  :  Indicates batch lock file request 
+- [BatchProtectRequest](Model/BatchProtectRequest)  :  Indicates batch protect file request 
+- [BatchSplitRequest](Model/BatchSplitRequest)  :   
+- [ColorFilterRequest](Model/ColorFilterRequest)  :  Indicates color filter request 
+- [ConvertParameter](Model/ConvertParameter)  :  Indicates convert parameter 
+- [CreatePivotTableRequest](Model/CreatePivotTableRequest)  :  Indicates create pivot table request 
+- [DataCleansingRequest](Model/DataCleansingRequest)  :  A data cleansing request for an Spreadsheet file. 
+- [DataDeduplicationRequest](Model/DataDeduplicationRequest)  :   
+- [DataFillRequest](Model/DataFillRequest)  :   
+- [DeleteIncompleteRowsRequest](Model/DeleteIncompleteRowsRequest)  :   
+- [ImportJsonRequest](Model/ImportJsonRequest)  :  Indicates import xml data request 
+- [ImportXMLRequest](Model/ImportXMLRequest)  :  Indicates import xml data request 
+- [MatchConditionRequest](Model/MatchConditionRequest)  :  Indicates the match condition that needs to be processed for the file name. 
+- [PasswordRequest](Model/PasswordRequest)  :  Used for password data transfer. 
+- [PivotTableFieldRequest](Model/PivotTableFieldRequest)  :  Indicates pivot table field request 
+- [ProtectWorkbookRequest](Model/ProtectWorkbookRequest)  :  Indicates protect workbook request 
+- [RangeCopyRequest](Model/RangeCopyRequest)  :  Indicates range copy request 
+- [RangeSetOutlineBorderRequest](Model/RangeSetOutlineBorderRequest)  :  Indicates range set outline border request. 
+- [RangeSetStyleRequest](Model/RangeSetStyleRequest)  :  Indicates range set style request. 
+- [RangeSortRequest](Model/RangeSortRequest)  :  Indicates range sort request 
+- [TableTotalRequest](Model/TableTotalRequest)  :  Indicates table total request 
+- [TextWaterMarkerRequest](Model/TextWaterMarkerRequest)  :  Indicates text water marker request. 
+- [WorkbookEncryptionRequest](Model/WorkbookEncryptionRequest)  :  Used by workbook encryption/decryption requests. 
+- [WorkbookProtectionRequest](Model/WorkbookProtectionRequest)  :  Used by workbook protection requests. 
+- [WorksheetMovingRequest](Model/WorksheetMovingRequest)  :  Used by workbook moving requests. 
+- [ImageOrPrintOptions](Model/ImageOrPrintOptions)  :   
+- [RenderingFont](Model/RenderingFont)  :   
+- [RenderingWatermark](Model/RenderingWatermark)  :   
+- [PivotField](Model/PivotField)  :   
+- [PivotFilter](Model/PivotFilter)  :  Represents a PivotFilter in PivotFilter Collection. 
+- [PivotItem](Model/PivotItem)  :   
+- [PivotTable](Model/PivotTable)  :   
+- [PivotTables](Model/PivotTables)  :   
+- [CustomParserConfig](Model/CustomParserConfig)  :   
+- [Import2DimensionDoubleArrayOption](Model/Import2DimensionDoubleArrayOption)  :   
+- [Import2DimensionIntArrayOption](Model/Import2DimensionIntArrayOption)  :   
+- [Import2DimensionStringArrayOption](Model/Import2DimensionStringArrayOption)  :   
+- [CellValue](Model/CellValue)  :   
+- [ImportBatchDataOption](Model/ImportBatchDataOption)  :   
+- [ImportCSVDataOption](Model/ImportCSVDataOption)  :   
+- [ImportDataType](Model/ImportDataType)  :   
+- [ImportDoubleArrayOption](Model/ImportDoubleArrayOption)  :   
+- [ImportIntArrayOption](Model/ImportIntArrayOption)  :   
+- [ImportOption](Model/ImportOption)  :   
+- [ImportPictureOption](Model/ImportPictureOption)  :   
+- [ImportPosition](Model/ImportPosition)  :   
+- [ImportStringArrayOption](Model/ImportStringArrayOption)  :   
+- [ArcShape](Model/ArcShape)  :   
+- [Area](Model/Area)  :   
+- [AutoShape](Model/AutoShape)  :   
+- [AutoShapes](Model/AutoShapes)  :   
+- [Button](Model/Button)  :   
+- [CellsDrawing](Model/CellsDrawing)  :   
+- [CheckBox](Model/CheckBox)  :   
+- [ComboBox](Model/ComboBox)  :   
+- [CommentShape](Model/CommentShape)  :   
+- [FillFormat](Model/FillFormat)  :   
+- [Form](Model/Form)  :   
+- [Forms](Model/Forms)  :   
+- [GradientFill](Model/GradientFill)  :   
+- [GradientFillStop](Model/GradientFillStop)  :   
+- [GroupBox](Model/GroupBox)  :   
+- [GroupShape](Model/GroupShape)  :   
+- [Label](Model/Label)  :   
+- [Line](Model/Line)  :  Encapsulates the object that represents the line format. 
+- [LineFormat](Model/LineFormat)  :   
+- [LineShape](Model/LineShape)  :   
+- [ListBox](Model/ListBox)  :   
+- [OleObject](Model/OleObject)  :   
+- [OleObjects](Model/OleObjects)  :   
+- [Oval](Model/Oval)  :   
+- [PatternFill](Model/PatternFill)  :   
+- [PicFormatOption](Model/PicFormatOption)  :   
+- [Picture](Model/Picture)  :   
+- [Pictures](Model/Pictures)  :   
+- [RadioButton](Model/RadioButton)  :   
+- [RectangleShape](Model/RectangleShape)  :   
+- [ScrollBar](Model/ScrollBar)  :   
+- [ShadowEffect](Model/ShadowEffect)  :   
+- [Shape](Model/Shape)  :   
+- [Shapes](Model/Shapes)  :   
+- [SolidFill](Model/SolidFill)  :   
+- [Spinner](Model/Spinner)  :   
+- [TextBox](Model/TextBox)  :   
+- [TextureFill](Model/TextureFill)  :   
+- [TilePicOption](Model/TilePicOption)  :   
+- [DigitalSignature](Model/DigitalSignature)  :  Signature in file.             
+- [Axis](Model/Axis)  :   
+- [Chart](Model/Chart)  :   
+- [ChartArea](Model/ChartArea)  :   
+- [ChartDataTable](Model/ChartDataTable)  :   
+- [ChartFrame](Model/ChartFrame)  :   
+- [ChartGlobalizationSettings](Model/ChartGlobalizationSettings)  :  Represents the globalization settings for chart.  
+- [ChartPoint](Model/ChartPoint)  :   
+- [ChartPoints](Model/ChartPoints)  :   
+- [Charts](Model/Charts)  :   
+- [ChartShape](Model/ChartShape)  :  Chart shape object 
+- [DataLabels](Model/DataLabels)  :   
+- [DisplayUnitLabel](Model/DisplayUnitLabel)  :   
+- [DropBars](Model/DropBars)  :   
+- [ErrorBar](Model/ErrorBar)  :   
+- [Floor](Model/Floor)  :   
+- [Legend](Model/Legend)  :   
+- [LegendEntries](Model/LegendEntries)  :   
+- [LegendEntry](Model/LegendEntry)  :   
+- [Marker](Model/Marker)  :   
+- [PlotArea](Model/PlotArea)  :   
+- [Series](Model/Series)  :   
+- [SeriesItems](Model/SeriesItems)  :   
+- [Sparkline](Model/Sparkline)  :  A sparkline represents a tiny chart or graphic in a worksheet cell that provides a visual representation of data.             
+- [SparklineGroup](Model/SparklineGroup)  :   
+- [SparklineGroups](Model/SparklineGroups)  :  Encapsulates a collection of Aspose.Cells.Charts.SparklineGroup objects.             
+- [TickLabels](Model/TickLabels)  :   
+- [Title](Model/Title)  :   
+- [Trendline](Model/Trendline)  :   
+- [Trendlines](Model/Trendlines)  :   
+- [Walls](Model/Walls)  :   
+- [ColumnDataExceptionDescription](Model/ColumnDataExceptionDescription)  :   
+- [TextCategoryType](Model/TextCategoryType)  :   
+- [AnalyzedColumnDescription](Model/AnalyzedColumnDescription)  :  How to use the properties of each column: currently divided into timeline, product line, numerical statistics line             How to present the product, a unified plan            How to solve the problem of full digital?            Full text How to solve it?            Two columns: Text, Number is the easiest            Three columns: Text, Text, Number                    text, number, number --- date date ; Date Numeric ; Numeric Digital             What about four columns, five columns? 
+- [AnalyzedResult](Model/AnalyzedResult)  :   
+- [AnalyzedTableDescription](Model/AnalyzedTableDescription)  :   
+- [DateSourceType](Model/DateSourceType)  :   
+- [SuggestedOutputType](Model/SuggestedOutputType)  :   
+- [AnalyzeSuggestion](Model/AnalyzeSuggestion)  :   
+- [DiscoverChart](Model/DiscoverChart)  :   
+- [DiscoverPivotTable](Model/DiscoverPivotTable)  :   
+- [ExcelDataStatistics](Model/ExcelDataStatistics)  :   
+- [WorksheetDataStatistics](Model/WorksheetDataStatistics)  :   
+- [Error](Model/Error)  :  Error 
+- [ErrorDetails](Model/ErrorDetails)  :  The error details 
