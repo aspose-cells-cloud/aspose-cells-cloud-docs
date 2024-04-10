@@ -3,7 +3,7 @@ title: "RangeSetOutlineBorderRequest"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/model/rangesetoutlineborderrequest/
-description: "Indicates range set outline border request."
+description: "Aspose.Cells Cloud model specification : RangeSetOutlineBorderRequest. Effortlessly handle Excel and other spreadsheet documents with features like opening, generating, editing, splitting, merging, comparing, and converting."
 weight: 50
 ---
 

@@ -3,7 +3,7 @@ title: "IconSet"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/model/iconset/
-description: "Describe the IconSet conditional formatting rule. This conditional formatting    rule applies icons to cells according to their values."
+description: "Aspose.Cells Cloud model specification : IconSet. Effortlessly handle Excel and other spreadsheet documents with features like opening, generating, editing, splitting, merging, comparing, and converting."
 weight: 50
 ---
 

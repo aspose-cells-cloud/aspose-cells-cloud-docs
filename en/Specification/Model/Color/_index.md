@@ -3,7 +3,7 @@ title: "Color"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/model/color/
-description: "Color."
+description: "Aspose.Cells Cloud model specification : Color. Effortlessly handle Excel and other spreadsheet documents with features like opening, generating, editing, splitting, merging, comparing, and converting."
 weight: 50
 ---
 

@@ -3,7 +3,7 @@ title: "BatchSplitRequest"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/model/batchsplitrequest/
-description: ""
+description: "Aspose.Cells Cloud model specification : BatchSplitRequest. Effortlessly handle Excel and other spreadsheet documents with features like opening, generating, editing, splitting, merging, comparing, and converting."
 weight: 50
 ---
 

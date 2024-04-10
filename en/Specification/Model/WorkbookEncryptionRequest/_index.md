@@ -3,7 +3,7 @@ title: "WorkbookEncryptionRequest"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/model/workbookencryptionrequest/
-description: "Used by workbook encryption/decryption requests."
+description: "Aspose.Cells Cloud model specification : WorkbookEncryptionRequest. Effortlessly handle Excel and other spreadsheet documents with features like opening, generating, editing, splitting, merging, comparing, and converting."
 weight: 50
 ---
 

@@ -3,7 +3,7 @@ title: "NegativeBarFormat"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/model/negativebarformat/
-description: "Represents the color settings of the data bars for negative values that are   defined by a data bar conditional formating rule.            "
+description: "Aspose.Cells Cloud model specification : NegativeBarFormat. Effortlessly handle Excel and other spreadsheet documents with features like opening, generating, editing, splitting, merging, comparing, and converting."
 weight: 50
 ---
 

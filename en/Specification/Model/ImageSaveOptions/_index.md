@@ -3,7 +3,7 @@ title: "ImageSaveOptions"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/model/imagesaveoptions/
-description: "Represents options of saving image file."
+description: "Aspose.Cells Cloud model specification : ImageSaveOptions. Effortlessly handle Excel and other spreadsheet documents with features like opening, generating, editing, splitting, merging, comparing, and converting."
 weight: 50
 ---
 

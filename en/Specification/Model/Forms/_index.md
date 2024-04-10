@@ -3,7 +3,7 @@ title: "Forms"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/model/forms/
-description: ""
+description: "Aspose.Cells Cloud model specification : Forms. Effortlessly handle Excel and other spreadsheet documents with features like opening, generating, editing, splitting, merging, comparing, and converting."
 weight: 50
 ---
 

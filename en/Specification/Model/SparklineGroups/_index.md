@@ -3,7 +3,7 @@ title: "SparklineGroups"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/model/sparklinegroups/
-description: "Encapsulates a collection of Aspose.Cells.Charts.SparklineGroup objects.            "
+description: "Aspose.Cells Cloud model specification : SparklineGroups. Effortlessly handle Excel and other spreadsheet documents with features like opening, generating, editing, splitting, merging, comparing, and converting."
 weight: 50
 ---
 

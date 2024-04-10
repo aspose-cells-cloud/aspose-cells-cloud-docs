@@ -3,7 +3,7 @@ title: "BatchLockRequest"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/model/batchlockrequest/
-description: "Indicates batch lock file request"
+description: "Aspose.Cells Cloud model specification : BatchLockRequest. Effortlessly handle Excel and other spreadsheet documents with features like opening, generating, editing, splitting, merging, comparing, and converting."
 weight: 50
 ---
 

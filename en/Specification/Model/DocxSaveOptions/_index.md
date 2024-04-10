@@ -3,7 +3,7 @@ title: "DocxSaveOptions"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/model/docxsaveoptions/
-description: "Represents options of saving .docx file."
+description: "Aspose.Cells Cloud model specification : DocxSaveOptions. Effortlessly handle Excel and other spreadsheet documents with features like opening, generating, editing, splitting, merging, comparing, and converting."
 weight: 50
 ---
 

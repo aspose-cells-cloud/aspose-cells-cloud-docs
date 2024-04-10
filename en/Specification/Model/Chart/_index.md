@@ -3,7 +3,7 @@ title: "Chart"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/model/chart/
-description: ""
+description: "Aspose.Cells Cloud model specification : Chart. Effortlessly handle Excel and other spreadsheet documents with features like opening, generating, editing, splitting, merging, comparing, and converting."
 weight: 50
 ---
 

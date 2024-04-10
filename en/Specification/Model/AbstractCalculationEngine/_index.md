@@ -3,7 +3,7 @@ title: "AbstractCalculationEngine"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/model/abstractcalculationengine/
-description: "Represents user's custom calculation engine to extend the default calculation engine of Aspose.Cells. "
+description: "Aspose.Cells Cloud model specification : AbstractCalculationEngine. Effortlessly handle Excel and other spreadsheet documents with features like opening, generating, editing, splitting, merging, comparing, and converting."
 weight: 50
 ---
 

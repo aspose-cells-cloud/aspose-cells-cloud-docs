@@ -3,7 +3,7 @@ title: "RangeSortRequest"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/model/rangesortrequest/
-description: "Indicates range sort request"
+description: "Aspose.Cells Cloud model specification : RangeSortRequest. Effortlessly handle Excel and other spreadsheet documents with features like opening, generating, editing, splitting, merging, comparing, and converting."
 weight: 50
 ---
 

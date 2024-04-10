@@ -3,7 +3,7 @@ title: "OdsSaveOptions"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/model/odssaveoptions/
-description: "Represents options of saving .ods file."
+description: "Aspose.Cells Cloud model specification : OdsSaveOptions. Effortlessly handle Excel and other spreadsheet documents with features like opening, generating, editing, splitting, merging, comparing, and converting."
 weight: 50
 ---
 

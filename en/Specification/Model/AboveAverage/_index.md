@@ -3,7 +3,7 @@ title: "AboveAverage"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/model/aboveaverage/
-description: "Describe the AboveAverage conditional formatting rule. This conditional formatting    rule highlights cells that are above or below the average for all values    in the range."
+description: "Aspose.Cells Cloud model specification : AboveAverage. Effortlessly handle Excel and other spreadsheet documents with features like opening, generating, editing, splitting, merging, comparing, and converting."
 weight: 50
 ---
 
