@@ -12,20 +12,20 @@ weight: 50
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangeSort" >}}
 {{< blocks/products/cells/docs-title titlemsg="Perform data sorting around a range of cells." >}}
 
-{{< blocks/products/cells/docs-Parameter parameter-title="REST API" columns="API,HttpMethod,Description,API reference" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges/sort,POST,Perform data sorting around a range of cells.,<a href='https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeSort'>PostWorksheetCellsRangeSort</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
-{{< blocks/products/cells/docs-Parameter parameter-title="Path Parameter" columns="Parameter Name,Type,Description" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parameter Name,Type,Description" >}}
      {{< blocks/products/cells/docs-Parameter-content columns="name,string,The file name." >}} 
      {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,The worksheet name." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
-{{< blocks/products/cells/docs-Parameter parameter-title="Query Parameter" columns="Parameter Name,Type,Description" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parameter Name,Type,Description" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="folder,string,Original workbook folder." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Storage name." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
-{{< blocks/products/cells/docs-Parameter parameter-title="Request Body Parameter" columns="Parameter Name,Type,Description" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Parameter Name,Type,Description" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="rangeSortRequest,class:rangesortrequest,RangeSortRequest Range Sort Request " >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
@@ -40,7 +40,7 @@ weight: 50
 
 ```bash
 
-curl -v "https://api.aspose.cloud/v3.0/cells/cells/Group.xlsx/worksheets/book1/ranges/sort?folder=TestData/In
+curl -v "https://api.aspose.cloud/v3.0/cells/cells/Group.xlsx/worksheets/book1/ranges/sort?folder=TestData/In"
     -X POST 
     -H "Authorization: Bearer \<jwt token> " \
     -H "accept:application/json"
@@ -53,7 +53,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/cells/Group.xlsx/worksheets/book1/r
 
 {{< /tabs >}}
 
-{{< blocks/products/cells/docs-title-h2 title-msg="Cloud SDK Family" >}}
+{{< blocks/products/cells/docs-title-h2 titlemsg="Cloud SDK Family" >}}
 
 {{< blocks/products/cells/docs-title titlemsg="Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the <a href='https://github.com/aspose-cells-cloud'>GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs. " >}}
 

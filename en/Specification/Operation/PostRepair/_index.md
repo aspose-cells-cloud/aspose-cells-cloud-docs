@@ -12,12 +12,12 @@ weight: 50
 {{< blocks/products/cells/docs-title titlemsg="PostRepair" >}}
 {{< blocks/products/cells/docs-title titlemsg="Repair abnormal files and generate files in various formats." >}}
 
-{{< blocks/products/cells/docs-Parameter parameter-title="REST API" columns="API,HttpMethod,Description,API reference" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="/cells/repair,POST,Repair abnormal files and generate files in various formats.,<a href='https://apireference.aspose.cloud/cells/#/LightCells/PostRepair'>PostRepair</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
-{{< blocks/products/cells/docs-Parameter parameter-title="Query Parameter" columns="Parameter Name,Type,Description" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parameter Name,Type,Description" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="outFormat,string,The output data file format.(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
@@ -31,7 +31,7 @@ weight: 50
 
 ```bash
 
-curl -v "https://api.aspose.cloud/v3.0/cells/cells/repair?outFormat=xlsx
+curl -v "https://api.aspose.cloud/v3.0/cells/cells/repair?outFormat=xlsx"
     -X POST 
     -H "Authorization: Bearer \<jwt token> " \
  -F '
@@ -42,7 +42,7 @@ file=@Book1.xlsx;filename=Book1.xlsx'
 
 {{< /tabs >}}
 
-{{< blocks/products/cells/docs-title-h2 title-msg="Cloud SDK Family" >}}
+{{< blocks/products/cells/docs-title-h2 titlemsg="Cloud SDK Family" >}}
 
 {{< blocks/products/cells/docs-title titlemsg="Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the <a href='https://github.com/aspose-cells-cloud'>GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs. " >}}
 

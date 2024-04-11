@@ -12,16 +12,16 @@ weight: 50
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetMatchNonBlanks" >}}
 {{< blocks/products/cells/docs-title titlemsg="Match all not blank cells in the list." >}}
 
-{{< blocks/products/cells/docs-Parameter parameter-title="REST API" columns="API,HttpMethod,Description,API reference" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/autoFilter/matchNonBlanks,POST,Match all not blank cells in the list.,<a href='https://apireference.aspose.cloud/cells/#/AutoFilter/PostWorksheetMatchNonBlanks'>PostWorksheetMatchNonBlanks</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
-{{< blocks/products/cells/docs-Parameter parameter-title="Path Parameter" columns="Parameter Name,Type,Description" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parameter Name,Type,Description" >}}
      {{< blocks/products/cells/docs-Parameter-content columns="name,string,The workbook name." >}} 
      {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,The worksheet name." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
-{{< blocks/products/cells/docs-Parameter parameter-title="Query Parameter" columns="Parameter Name,Type,Description" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parameter Name,Type,Description" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="fieldIndex,integer,The integer offset of the field on which you want to base the filter (from the left of the list; the leftmost field is field 0)." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="folder,string,The folder where the file is situated." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,The storage name where the file is situated." >}} 
@@ -37,7 +37,7 @@ weight: 50
 
 ```bash
 
-curl -v "https://api.aspose.cloud/v3.0/cells/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/matchNonBlanks?fieldIndex=0&folder=TestData/In
+curl -v "https://api.aspose.cloud/v3.0/cells/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/matchNonBlanks?fieldIndex=0&folder=TestData/In"
     -X POST 
     -H "Authorization: Bearer \<jwt token> " \
 
@@ -47,7 +47,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/cells/Book1.xlsx/worksheets/Sheet1/
 
 {{< /tabs >}}
 
-{{< blocks/products/cells/docs-title-h2 title-msg="Cloud SDK Family" >}}
+{{< blocks/products/cells/docs-title-h2 titlemsg="Cloud SDK Family" >}}
 
 {{< blocks/products/cells/docs-title titlemsg="Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the <a href='https://github.com/aspose-cells-cloud'>GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs. " >}}
 

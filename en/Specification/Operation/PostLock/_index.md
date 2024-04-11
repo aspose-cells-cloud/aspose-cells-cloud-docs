@@ -12,12 +12,12 @@ weight: 50
 {{< blocks/products/cells/docs-title titlemsg="PostLock" >}}
 {{< blocks/products/cells/docs-title titlemsg="Lock Excel files." >}}
 
-{{< blocks/products/cells/docs-Parameter parameter-title="REST API" columns="API,HttpMethod,Description,API reference" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="/cells/lock,POST,Lock Excel files.,<a href='https://apireference.aspose.cloud/cells/#/Protection/PostLock'>PostLock</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
-{{< blocks/products/cells/docs-Parameter parameter-title="Query Parameter" columns="Parameter Name,Type,Description" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parameter Name,Type,Description" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="password,string,The password needed to open an Excel file." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
@@ -42,7 +42,7 @@ file=@;filename='
 
 {{< /tabs >}}
 
-{{< blocks/products/cells/docs-title-h2 title-msg="Cloud SDK Family" >}}
+{{< blocks/products/cells/docs-title-h2 titlemsg="Cloud SDK Family" >}}
 
 {{< blocks/products/cells/docs-title titlemsg="Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the <a href='https://github.com/aspose-cells-cloud'>GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs. " >}}
 

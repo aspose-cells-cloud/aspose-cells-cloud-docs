@@ -12,16 +12,16 @@ weight: 50
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetOleObject" >}}
 {{< blocks/products/cells/docs-title titlemsg="Add an OLE object in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parameter-title="REST API" columns="API,HttpMethod,Description,API reference" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/oleobjects,PUT,Add an OLE object in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/OleObjects/PutWorksheetOleObject'>PutWorksheetOleObject</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
-{{< blocks/products/cells/docs-Parameter parameter-title="Path Parameter" columns="Parameter Name,Type,Description" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parameter Name,Type,Description" >}}
      {{< blocks/products/cells/docs-Parameter-content columns="name,string,The file name." >}} 
      {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,The worsheet name." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
-{{< blocks/products/cells/docs-Parameter parameter-title="Query Parameter" columns="Parameter Name,Type,Description" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parameter Name,Type,Description" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="upperLeftRow,integer,Upper left row index" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="upperLeftColumn,integer,Upper left column index" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="height,integer,Height of oleObject, in unit of pixel" >}} 
@@ -42,7 +42,7 @@ weight: 50
 
 ```bash
 
-curl -v "https://api.aspose.cloud/v3.0/cells/cells/Book1.xlsx/worksheets/Sheet6/oleobjects?upperLeftRow=1&upperLeftColumn=1&height=100&width=80&oleFile=OLEDoc.docx&imageFile=word.jpg&folder=TestData/In
+curl -v "https://api.aspose.cloud/v3.0/cells/cells/Book1.xlsx/worksheets/Sheet6/oleobjects?upperLeftRow=1&upperLeftColumn=1&height=100&width=80&oleFile=OLEDoc.docx&imageFile=word.jpg&folder=TestData/In"
     -X PUT 
     -H "Authorization: Bearer \<jwt token> " \
 
@@ -52,7 +52,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/cells/Book1.xlsx/worksheets/Sheet6/
 
 {{< /tabs >}}
 
-{{< blocks/products/cells/docs-title-h2 title-msg="Cloud SDK Family" >}}
+{{< blocks/products/cells/docs-title-h2 titlemsg="Cloud SDK Family" >}}
 
 {{< blocks/products/cells/docs-title titlemsg="Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the <a href='https://github.com/aspose-cells-cloud'>GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs. " >}}
 

@@ -12,12 +12,12 @@ weight: 50
 {{< blocks/products/cells/docs-title titlemsg="PostReplace" >}}
 {{< blocks/products/cells/docs-title titlemsg="Replace specified text with new text in Excel files." >}}
 
-{{< blocks/products/cells/docs-Parameter parameter-title="REST API" columns="API,HttpMethod,Description,API reference" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="/cells/replace,POST,Replace specified text with new text in Excel files.,<a href='https://apireference.aspose.cloud/cells/#/LightCells/PostReplace'>PostReplace</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
-{{< blocks/products/cells/docs-Parameter parameter-title="Query Parameter" columns="Parameter Name,Type,Description" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parameter Name,Type,Description" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="text,string,Find content" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="newtext,string,Replace content" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="password,string,The password needed to open an Excel file." >}} 
@@ -35,7 +35,7 @@ weight: 50
 
 ```bash
 
-curl -v "https://api.aspose.cloud/v3.0/cells/cells/replace?text=12&newtext=newtext
+curl -v "https://api.aspose.cloud/v3.0/cells/cells/replace?text=12&newtext=newtext"
     -X POST 
     -H "Authorization: Bearer \<jwt token> " \
  -F '
@@ -46,7 +46,7 @@ file=@assemblytest.xlsx;filename=assemblytest.xlsx'
 
 {{< /tabs >}}
 
-{{< blocks/products/cells/docs-title-h2 title-msg="Cloud SDK Family" >}}
+{{< blocks/products/cells/docs-title-h2 titlemsg="Cloud SDK Family" >}}
 
 {{< blocks/products/cells/docs-title titlemsg="Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the <a href='https://github.com/aspose-cells-cloud'>GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs. " >}}
 

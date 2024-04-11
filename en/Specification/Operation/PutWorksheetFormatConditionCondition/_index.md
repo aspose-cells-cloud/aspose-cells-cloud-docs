@@ -12,17 +12,17 @@ weight: 50
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetFormatConditionCondition" >}}
 {{< blocks/products/cells/docs-title titlemsg="Add a condition for the format condition in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parameter-title="REST API" columns="API,HttpMethod,Description,API reference" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}/condition,PUT,Add a condition for the format condition in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/ConditionalFormattings/PutWorksheetFormatConditionCondition'>PutWorksheetFormatConditionCondition</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
-{{< blocks/products/cells/docs-Parameter parameter-title="Path Parameter" columns="Parameter Name,Type,Description" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parameter Name,Type,Description" >}}
      {{< blocks/products/cells/docs-Parameter-content columns="name,string,The file name." >}} 
      {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,The worksheet name." >}} 
      {{< blocks/products/cells/docs-Parameter-content columns="index,integer,Gets the Conditional Formatting element at the specified index." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
-{{< blocks/products/cells/docs-Parameter parameter-title="Query Parameter" columns="Parameter Name,Type,Description" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parameter Name,Type,Description" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="type,string,Format condition type(CellValue/Expression/ColorScale/DataBar/IconSet/Top10/UniqueValues/DuplicateValues/ContainsText/NotContainsText/BeginsWith/EndsWith/ContainsBlanks/NotContainsBlanks/ContainsErrors/NotContainsErrors/TimePeriod/AboveAverage)." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="operatorType,string,Represents the operator type of conditional format and data validation(Between/Equal/GreaterThan/GreaterOrEqual/LessThan/None/NotBetween/NotEqual)." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="formula1,string,The value or expression associated with conditional formatting." >}} 
@@ -41,7 +41,7 @@ weight: 50
 
 ```bash
 
-curl -v "https://api.aspose.cloud/v3.0/cells/cells/Book1.xlsx/worksheets/Sheet1/conditionalFormattings/0/condition?type=CellValue&operatorType=Between&formula1=v1&formula2=v2&folder=TestData/In
+curl -v "https://api.aspose.cloud/v3.0/cells/cells/Book1.xlsx/worksheets/Sheet1/conditionalFormattings/0/condition?type=CellValue&operatorType=Between&formula1=v1&formula2=v2&folder=TestData/In"
     -X PUT 
     -H "Authorization: Bearer \<jwt token> " \
 
@@ -51,7 +51,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/cells/Book1.xlsx/worksheets/Sheet1/
 
 {{< /tabs >}}
 
-{{< blocks/products/cells/docs-title-h2 title-msg="Cloud SDK Family" >}}
+{{< blocks/products/cells/docs-title-h2 titlemsg="Cloud SDK Family" >}}
 
 {{< blocks/products/cells/docs-title titlemsg="Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the <a href='https://github.com/aspose-cells-cloud'>GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs. " >}}
 

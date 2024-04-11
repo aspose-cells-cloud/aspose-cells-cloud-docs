@@ -12,12 +12,12 @@ weight: 50
 {{< blocks/products/cells/docs-title titlemsg="PostAnalyzeExcel" >}}
 {{< blocks/products/cells/docs-title titlemsg="Perform business analysis of data in Excel files." >}}
 
-{{< blocks/products/cells/docs-Parameter parameter-title="REST API" columns="API,HttpMethod,Description,API reference" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="/cells/analyze,POST,Perform business analysis of data in Excel files.,<a href='https://apireference.aspose.cloud/cells/#/Analyse/PostAnalyzeExcel'>PostAnalyzeExcel</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
-{{< blocks/products/cells/docs-Parameter parameter-title="Request Body Parameter" columns="Parameter Name,Type,Description" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Parameter Name,Type,Description" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="analyzeExcelRequest,class:analyzeexcelrequest,Excel files and analysis output requirements" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
@@ -45,7 +45,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/cells/analyze
 
 {{< /tabs >}}
 
-{{< blocks/products/cells/docs-title-h2 title-msg="Cloud SDK Family" >}}
+{{< blocks/products/cells/docs-title-h2 titlemsg="Cloud SDK Family" >}}
 
 {{< blocks/products/cells/docs-title titlemsg="Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the <a href='https://github.com/aspose-cells-cloud'>GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs. " >}}
 

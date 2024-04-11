@@ -12,16 +12,16 @@ weight: 50
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetHyperlink" >}}
 {{< blocks/products/cells/docs-title titlemsg="Add hyperlink in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parameter-title="REST API" columns="API,HttpMethod,Description,API reference" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/hyperlinks,PUT,Add hyperlink in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/Hypelinks/PutWorksheetHyperlink'>PutWorksheetHyperlink</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
-{{< blocks/products/cells/docs-Parameter parameter-title="Path Parameter" columns="Parameter Name,Type,Description" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parameter Name,Type,Description" >}}
      {{< blocks/products/cells/docs-Parameter-content columns="name,string,The file name." >}} 
      {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,The worksheet name." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
-{{< blocks/products/cells/docs-Parameter parameter-title="Query Parameter" columns="Parameter Name,Type,Description" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parameter Name,Type,Description" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="firstRow,integer,First row of the hyperlink range." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="firstColumn,integer,First column of the hyperlink range." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="totalRows,integer,Number of rows in this hyperlink range." >}} 
@@ -41,7 +41,7 @@ weight: 50
 
 ```bash
 
-curl -v "https://api.aspose.cloud/v3.0/cells/cells/Book1.xlsx/worksheets/Sheet1/hyperlinks?firstRow=1&firstColumn=1&totalRows=2&totalColumns=3&address=https://products.aspose.cloud/cells/&folder=TestData/In
+curl -v "https://api.aspose.cloud/v3.0/cells/cells/Book1.xlsx/worksheets/Sheet1/hyperlinks?firstRow=1&firstColumn=1&totalRows=2&totalColumns=3&address=https://products.aspose.cloud/cells/&folder=TestData/In"
     -X PUT 
     -H "Authorization: Bearer \<jwt token> " \
 
@@ -51,7 +51,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/cells/Book1.xlsx/worksheets/Sheet1/
 
 {{< /tabs >}}
 
-{{< blocks/products/cells/docs-title-h2 title-msg="Cloud SDK Family" >}}
+{{< blocks/products/cells/docs-title-h2 titlemsg="Cloud SDK Family" >}}
 
 {{< blocks/products/cells/docs-title titlemsg="Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the <a href='https://github.com/aspose-cells-cloud'>GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs. " >}}
 

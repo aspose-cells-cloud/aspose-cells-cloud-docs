@@ -12,15 +12,15 @@ weight: 50
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookTextReplace" >}}
 {{< blocks/products/cells/docs-title titlemsg="Replace text in the workbook." >}}
 
-{{< blocks/products/cells/docs-Parameter parameter-title="REST API" columns="API,HttpMethod,Description,API reference" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/replaceText,POST,Replace text in the workbook.,<a href='https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookTextReplace'>PostWorkbookTextReplace</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
-{{< blocks/products/cells/docs-Parameter parameter-title="Path Parameter" columns="Parameter Name,Type,Description" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parameter Name,Type,Description" >}}
      {{< blocks/products/cells/docs-Parameter-content columns="name,string,The file name." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
-{{< blocks/products/cells/docs-Parameter parameter-title="Query Parameter" columns="Parameter Name,Type,Description" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parameter Name,Type,Description" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="oldValue,string,The old value." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="newValue,string,The new value." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="folder,string,The folder where the file is situated." >}} 
@@ -37,7 +37,7 @@ weight: 50
 
 ```bash
 
-curl -v "https://api.aspose.cloud/v3.0/cells/cells/Book1.xlsx/replaceText?oldValue=1234&newValue=5678&folder=TestData/In
+curl -v "https://api.aspose.cloud/v3.0/cells/cells/Book1.xlsx/replaceText?oldValue=1234&newValue=5678&folder=TestData/In"
     -X POST 
     -H "Authorization: Bearer \<jwt token> " \
 
@@ -47,7 +47,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/cells/Book1.xlsx/replaceText?oldVal
 
 {{< /tabs >}}
 
-{{< blocks/products/cells/docs-title-h2 title-msg="Cloud SDK Family" >}}
+{{< blocks/products/cells/docs-title-h2 titlemsg="Cloud SDK Family" >}}
 
 {{< blocks/products/cells/docs-title titlemsg="Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the <a href='https://github.com/aspose-cells-cloud'>GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs. " >}}
 

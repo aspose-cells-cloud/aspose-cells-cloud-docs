@@ -12,16 +12,16 @@ weight: 50
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetCellsRangeValue" >}}
 {{< blocks/products/cells/docs-title titlemsg="Retrieve the values of cells within the specified range." >}}
 
-{{< blocks/products/cells/docs-Parameter parameter-title="REST API" columns="API,HttpMethod,Description,API reference" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges/value,GET,Retrieve the values of cells within the specified range.,<a href='https://apireference.aspose.cloud/cells/#/Ranges/GetWorksheetCellsRangeValue'>GetWorksheetCellsRangeValue</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
-{{< blocks/products/cells/docs-Parameter parameter-title="Path Parameter" columns="Parameter Name,Type,Description" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parameter Name,Type,Description" >}}
      {{< blocks/products/cells/docs-Parameter-content columns="name,string,The file name." >}} 
      {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,The worksheet name." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
-{{< blocks/products/cells/docs-Parameter parameter-title="Query Parameter" columns="Parameter Name,Type,Description" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parameter Name,Type,Description" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="namerange,string,The range name." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="firstRow,integer,Gets the index of the first row of the range." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="firstColumn,integer,Gets the index of the first columnn of the range." >}} 
@@ -41,7 +41,7 @@ weight: 50
 
 ```bash
 
-curl -v "https://api.aspose.cloud/v3.0/cells/cells/Book1.xlsx/worksheets/Sheet1/ranges/value?namerange=Name_2&firstRow=0&firstColumn=0&rowCount=3&columnCount=2&folder=TestData/In
+curl -v "https://api.aspose.cloud/v3.0/cells/cells/Book1.xlsx/worksheets/Sheet1/ranges/value?namerange=Name_2&firstRow=0&firstColumn=0&rowCount=3&columnCount=2&folder=TestData/In"
     -X GET 
     -H "Authorization: Bearer \<jwt token> " \
 
@@ -51,7 +51,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/cells/Book1.xlsx/worksheets/Sheet1/
 
 {{< /tabs >}}
 
-{{< blocks/products/cells/docs-title-h2 title-msg="Cloud SDK Family" >}}
+{{< blocks/products/cells/docs-title-h2 titlemsg="Cloud SDK Family" >}}
 
 {{< blocks/products/cells/docs-title titlemsg="Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the <a href='https://github.com/aspose-cells-cloud'>GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs. " >}}
 

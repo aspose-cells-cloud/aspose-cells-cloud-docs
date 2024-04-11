@@ -12,15 +12,15 @@ weight: 50
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookSplit" >}}
 {{< blocks/products/cells/docs-title titlemsg="Split the workbook with a specific format." >}}
 
-{{< blocks/products/cells/docs-Parameter parameter-title="REST API" columns="API,HttpMethod,Description,API reference" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/split,POST,Split the workbook with a specific format.,<a href='https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookSplit'>PostWorkbookSplit</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
-{{< blocks/products/cells/docs-Parameter parameter-title="Path Parameter" columns="Parameter Name,Type,Description" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parameter Name,Type,Description" >}}
      {{< blocks/products/cells/docs-Parameter-content columns="name,string,The file name." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
-{{< blocks/products/cells/docs-Parameter parameter-title="Query Parameter" columns="Parameter Name,Type,Description" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parameter Name,Type,Description" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="format,string,Split format." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="outFolder,string," >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="from,integer,Start worksheet index." >}} 
@@ -43,7 +43,7 @@ weight: 50
 
 ```bash
 
-curl -v "https://api.aspose.cloud/v3.0/cells/cells/Book1.xlsx/split?format=png&outFolder=OutResult&from=1&to=5&horizontalResolution=96&verticalResolution=96&splitNameRule=sheetname&folder=TestData/In
+curl -v "https://api.aspose.cloud/v3.0/cells/cells/Book1.xlsx/split?format=png&outFolder=OutResult&from=1&to=5&horizontalResolution=96&verticalResolution=96&splitNameRule=sheetname&folder=TestData/In"
     -X POST 
     -H "Authorization: Bearer \<jwt token> " \
 
@@ -53,7 +53,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/cells/Book1.xlsx/split?format=png&o
 
 {{< /tabs >}}
 
-{{< blocks/products/cells/docs-title-h2 title-msg="Cloud SDK Family" >}}
+{{< blocks/products/cells/docs-title-h2 titlemsg="Cloud SDK Family" >}}
 
 {{< blocks/products/cells/docs-title titlemsg="Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the <a href='https://github.com/aspose-cells-cloud'>GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs. " >}}
 

@@ -12,15 +12,15 @@ weight: 50
 {{< blocks/products/cells/docs-title titlemsg="PostAutofitWorkbookRows" >}}
 {{< blocks/products/cells/docs-title titlemsg="Autofit rows in the workbook." >}}
 
-{{< blocks/products/cells/docs-Parameter parameter-title="REST API" columns="API,HttpMethod,Description,API reference" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/autofitrows,POST,Autofit rows in the workbook.,<a href='https://apireference.aspose.cloud/cells/#/Workbook/PostAutofitWorkbookRows'>PostAutofitWorkbookRows</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
-{{< blocks/products/cells/docs-Parameter parameter-title="Path Parameter" columns="Parameter Name,Type,Description" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parameter Name,Type,Description" >}}
      {{< blocks/products/cells/docs-Parameter-content columns="name,string,The file name." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
-{{< blocks/products/cells/docs-Parameter parameter-title="Query Parameter" columns="Parameter Name,Type,Description" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parameter Name,Type,Description" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="startRow,integer,Start row." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="endRow,integer,End row." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="onlyAuto,boolean,Only auto." >}} 
@@ -38,7 +38,7 @@ weight: 50
 
 ```bash
 
-curl -v "https://api.aspose.cloud/v3.0/cells/cells/Book1.xlsx/autofitrows?startRow=1&endRow=100&onlyAuto=true&folder=TestData/In
+curl -v "https://api.aspose.cloud/v3.0/cells/cells/Book1.xlsx/autofitrows?startRow=1&endRow=100&onlyAuto=true&folder=TestData/In"
     -X POST 
     -H "Authorization: Bearer \<jwt token> " \
 
@@ -48,7 +48,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/cells/Book1.xlsx/autofitrows?startR
 
 {{< /tabs >}}
 
-{{< blocks/products/cells/docs-title-h2 title-msg="Cloud SDK Family" >}}
+{{< blocks/products/cells/docs-title-h2 titlemsg="Cloud SDK Family" >}}
 
 {{< blocks/products/cells/docs-title titlemsg="Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the <a href='https://github.com/aspose-cells-cloud'>GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs. " >}}
 

@@ -12,17 +12,17 @@ weight: 50
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetAutoshapeWithFormat" >}}
 {{< blocks/products/cells/docs-title titlemsg="Get autoshape description in some format." >}}
 
-{{< blocks/products/cells/docs-Parameter parameter-title="REST API" columns="API,HttpMethod,Description,API reference" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/autoshapes/{autoshapeNumber},GET,Get autoshape description in some format.,<a href='https://apireference.aspose.cloud/cells/#/Autoshapes/GetWorksheetAutoshapeWithFormat'>GetWorksheetAutoshapeWithFormat</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
-{{< blocks/products/cells/docs-Parameter parameter-title="Path Parameter" columns="Parameter Name,Type,Description" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parameter Name,Type,Description" >}}
      {{< blocks/products/cells/docs-Parameter-content columns="name,string,The workbook name." >}} 
      {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Worksheet name." >}} 
      {{< blocks/products/cells/docs-Parameter-content columns="autoshapeNumber,integer,The autoshape number." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
-{{< blocks/products/cells/docs-Parameter parameter-title="Query Parameter" columns="Parameter Name,Type,Description" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parameter Name,Type,Description" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="format,string,Autoshape conversion format." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="folder,string,The document folder." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Storage name." >}} 
@@ -48,7 +48,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/cells//worksheets//autoshapes/
 
 {{< /tabs >}}
 
-{{< blocks/products/cells/docs-title-h2 title-msg="Cloud SDK Family" >}}
+{{< blocks/products/cells/docs-title-h2 titlemsg="Cloud SDK Family" >}}
 
 {{< blocks/products/cells/docs-title titlemsg="Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the <a href='https://github.com/aspose-cells-cloud'>GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs. " >}}
 

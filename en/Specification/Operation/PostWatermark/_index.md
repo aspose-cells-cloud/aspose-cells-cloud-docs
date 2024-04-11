@@ -12,12 +12,12 @@ weight: 50
 {{< blocks/products/cells/docs-title titlemsg="PostWatermark" >}}
 {{< blocks/products/cells/docs-title titlemsg="Add Text Watermark to Excel files and generate output files in various formats." >}}
 
-{{< blocks/products/cells/docs-Parameter parameter-title="REST API" columns="API,HttpMethod,Description,API reference" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="/cells/watermark,POST,Add Text Watermark to Excel files and generate output files in various formats.,<a href='https://apireference.aspose.cloud/cells/#/LightCells/PostWatermark'>PostWatermark</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
-{{< blocks/products/cells/docs-Parameter parameter-title="Query Parameter" columns="Parameter Name,Type,Description" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parameter Name,Type,Description" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="text,string,background text." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="color,string,e.g. #1032ff" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="outFormat,string,The output data file format.(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)" >}} 
@@ -36,7 +36,7 @@ weight: 50
 
 ```bash
 
-curl -v "https://api.aspose.cloud/v3.0/cells/cells/watermark?text=aspose.cells cloud sdk&color=#773322
+curl -v "https://api.aspose.cloud/v3.0/cells/cells/watermark?text=aspose.cells cloud sdk&color=#773322"
     -X POST 
     -H "Authorization: Bearer \<jwt token> " \
  -F '
@@ -47,7 +47,7 @@ file=@assemblytest.xlsx;filename=assemblytest.xlsx'
 
 {{< /tabs >}}
 
-{{< blocks/products/cells/docs-title-h2 title-msg="Cloud SDK Family" >}}
+{{< blocks/products/cells/docs-title-h2 titlemsg="Cloud SDK Family" >}}
 
 {{< blocks/products/cells/docs-title titlemsg="Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the <a href='https://github.com/aspose-cells-cloud'>GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs. " >}}
 

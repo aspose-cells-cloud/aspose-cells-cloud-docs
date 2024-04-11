@@ -12,15 +12,15 @@ weight: 50
 {{< blocks/products/cells/docs-title titlemsg="PutWorkbookCreate" >}}
 {{< blocks/products/cells/docs-title titlemsg="Create a new workbook using different methods." >}}
 
-{{< blocks/products/cells/docs-Parameter parameter-title="REST API" columns="API,HttpMethod,Description,API reference" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name},PUT,Create a new workbook using different methods.,<a href='https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookCreate'>PutWorkbookCreate</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
-{{< blocks/products/cells/docs-Parameter parameter-title="Path Parameter" columns="Parameter Name,Type,Description" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parameter Name,Type,Description" >}}
      {{< blocks/products/cells/docs-Parameter-content columns="name,string,The new document name." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
-{{< blocks/products/cells/docs-Parameter parameter-title="Query Parameter" columns="Parameter Name,Type,Description" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parameter Name,Type,Description" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="templateFile,string,The template file, if the data not provided default workbook is created." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="dataFile,string,Smart marker data file, if the data not provided the request content is checked for the data." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="isWriteOver,boolean,Specifies whether to write over targer file." >}} 
@@ -39,7 +39,7 @@ weight: 50
 
 ```bash
 
-curl -v "https://api.aspose.cloud/v3.0/cells/cells/PutWorkbookCreate.xlsx?templateFile=TestData/In/Book1.xlsx&dataFile=TestData/In/ReportData.xml&isWriteOver=true&folder=TestData/In&checkExcelRestriction=true
+curl -v "https://api.aspose.cloud/v3.0/cells/cells/PutWorkbookCreate.xlsx?templateFile=TestData/In/Book1.xlsx&dataFile=TestData/In/ReportData.xml&isWriteOver=true&folder=TestData/In&checkExcelRestriction=true"
     -X PUT 
     -H "Authorization: Bearer \<jwt token> " \
 
@@ -49,7 +49,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/cells/PutWorkbookCreate.xlsx?templa
 
 {{< /tabs >}}
 
-{{< blocks/products/cells/docs-title-h2 title-msg="Cloud SDK Family" >}}
+{{< blocks/products/cells/docs-title-h2 titlemsg="Cloud SDK Family" >}}
 
 {{< blocks/products/cells/docs-title titlemsg="Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the <a href='https://github.com/aspose-cells-cloud'>GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs. " >}}
 

@@ -12,12 +12,12 @@ weight: 50
 {{< blocks/products/cells/docs-title titlemsg="PostExport" >}}
 {{< blocks/products/cells/docs-title titlemsg="Export Excel internal elements or the workbook itself to various format files." >}}
 
-{{< blocks/products/cells/docs-Parameter parameter-title="REST API" columns="API,HttpMethod,Description,API reference" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="/cells/export,POST,Export Excel internal elements or the workbook itself to various format files.,<a href='https://apireference.aspose.cloud/cells/#/DataProcessing/PostExport'>PostExport</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
-{{< blocks/products/cells/docs-Parameter parameter-title="Query Parameter" columns="Parameter Name,Type,Description" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parameter Name,Type,Description" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="objectType,string,Exported object type:workbook/worksheet/chart/comment/picture/shape/listobject/oleobject." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="format,string,The conversion format(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="password,string,The password needed to open an Excel file." >}} 
@@ -35,7 +35,7 @@ weight: 50
 
 ```bash
 
-curl -v "https://api.aspose.cloud/v3.0/cells/cells/export?objectType=workbook&format=csv
+curl -v "https://api.aspose.cloud/v3.0/cells/cells/export?objectType=workbook&format=csv"
     -X POST 
     -H "Authorization: Bearer \<jwt token> " \
  -F '
@@ -46,7 +46,7 @@ file=@assemblytest.xlsx;filename=assemblytest.xlsx'
 
 {{< /tabs >}}
 
-{{< blocks/products/cells/docs-title-h2 title-msg="Cloud SDK Family" >}}
+{{< blocks/products/cells/docs-title-h2 titlemsg="Cloud SDK Family" >}}
 
 {{< blocks/products/cells/docs-title titlemsg="Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the <a href='https://github.com/aspose-cells-cloud'>GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs. " >}}
 

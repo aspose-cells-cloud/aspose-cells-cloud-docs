@@ -12,12 +12,12 @@ weight: 50
 {{< blocks/products/cells/docs-title titlemsg="PostClearObjects" >}}
 {{< blocks/products/cells/docs-title titlemsg="Clear internal elements in Excel files and generate output files in various formats." >}}
 
-{{< blocks/products/cells/docs-Parameter parameter-title="REST API" columns="API,HttpMethod,Description,API reference" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="/cells/clearobjects,POST,Clear internal elements in Excel files and generate output files in various formats.,<a href='https://apireference.aspose.cloud/cells/#/LightCells/PostClearObjects'>PostClearObjects</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
-{{< blocks/products/cells/docs-Parameter parameter-title="Query Parameter" columns="Parameter Name,Type,Description" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parameter Name,Type,Description" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="objecttype,string,chart/comment/picture/shape/listobject/hyperlink/oleobject/pivottable/validation/Background" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="sheetname,string,The worksheet name, specify the scope of the deletion." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="outFormat,string,The output data file format.(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)" >}} 
@@ -36,7 +36,7 @@ weight: 50
 
 ```bash
 
-curl -v "https://api.aspose.cloud/v3.0/cells/cells/clearobjects?objecttype=chart
+curl -v "https://api.aspose.cloud/v3.0/cells/cells/clearobjects?objecttype=chart"
     -X POST 
     -H "Authorization: Bearer \<jwt token> " \
  -F '
@@ -47,7 +47,7 @@ file=@Book1.xlsx;filename=Book1.xlsx'
 
 {{< /tabs >}}
 
-{{< blocks/products/cells/docs-title-h2 title-msg="Cloud SDK Family" >}}
+{{< blocks/products/cells/docs-title-h2 titlemsg="Cloud SDK Family" >}}
 
 {{< blocks/products/cells/docs-title titlemsg="Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the <a href='https://github.com/aspose-cells-cloud'>GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs. " >}}
 
