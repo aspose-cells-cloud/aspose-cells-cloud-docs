@@ -1,17 +1,17 @@
 ﻿---
-title: Eliminar hoja de cálculo múltiple Excel
+title: Eliminar varias hojas de trabajo Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: Hoja de cálculo múltiple
+linktitle: Hoja de trabajo múltiple
 type: docs
 url: /es/worksheets/delete-multiple/
 aliases: [/delete-excel-worksheets/]
 keywords: Delete multiple Excel worksheets on an Excel workbook
-description: Aspose.Cells Cloud REST API admite la eliminación de varias hojas de trabajo Excel en un libro de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift
+description: Aspose.Cells Cloud REST API admite la eliminación de varias hojas de trabajo Excel en un libro de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 20
 ---
 Este REST API indica `delete multiple worksheets`.
  
-## RESET API
+## RSET API
  
 ```bash
  
@@ -25,14 +25,14 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets
 | nombre| cadena| camino||
 | condición de coincidencia|| cuerpo||
 | carpeta| cadena| consulta||
-| NombreDeAlmacenamiento| cadena| consulta||
+| nombredealmacenamiento| cadena| consulta||
  
 
 **Propiedades de MatchConditionRequest**
  
-Nombre | Tipo | Descripción | notas
+Nombre | Tipo | Descripción | Notas
 ------------ | ------------- | ------------- | -------------
- RegexPatrón | cadena | | [opcional]Condiciones de coincidencia completa | cadena[]| | [opcional] El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheets) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+ Patrón de expresión regular | cadena | | [opcional]Condiciones de coincidencia completa | cadena[]| | [opcional]El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheets) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
  
 Puede utilizar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
  
@@ -66,11 +66,11 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets?folder=Temp" \
  
 {{< /tabs >}}
  
-## Familia SDK de la nube
+## Familia de SDK en la nube
  
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se ocupa de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor, echa un vistazo a la[repositorio GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de Cloud.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor revisa el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de nube.
  
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código demuestran cómo realizar llamadas a servicios web Aspose.Cells utilizando varios SDK:
  
  
  

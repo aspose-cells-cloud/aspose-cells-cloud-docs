@@ -1,20 +1,20 @@
 ﻿---
-title: Obtenga la hoja de trabajo de una hoja de trabajo Excel
+title: Obtener hoja de trabajo de una hoja de trabajo Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: hoja de trabajo
+linktitle: Hoja de trabajo
 type: docs
 url: /es/worksheets/get-worksheet/
 keywords: Get worksheet to different format from an Excel worksheet
-description: Aspose.Cells Cloud REST API admite obtener una hoja de trabajo en un formato diferente de una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift
+description: Aspose.Cells Cloud REST API admite la obtención de una hoja de trabajo en un formato diferente al de una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 10
 ---
 Este REST API indica `get worksheet description` o `export worksheet to kinds of format file`.
  
 
- Puede exportar formatos:[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [SAO](https://docs.fileformat.com/spreadsheet/ods/), [TXT](https://docs.fileformat.com/word-processing/txt/), [PDF](https://docs.fileformat.com/pdf/), [OET](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [DIF](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/),[GIF](https://docs.fileformat.com/image/gif/), [BMP](https://docs.fileformat.com/image/bmp/), [WMF](https://docs.fileformat.com/image/wmf/),[TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [NÚMEROS](https://docs.fileformat.com/spreadsheet/numbers/), [ALIMENTOS](https://docs.fileformat.com/spreadsheet/fods/).
+ Puedes exportar formatos:[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [SAO](https://docs.fileformat.com/spreadsheet/ods/), [TXT](https://docs.fileformat.com/word-processing/txt/), [PDF](https://docs.fileformat.com/pdf/), [OTS](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [DIF](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/),[GIF](https://docs.fileformat.com/image/gif/), [BMP](https://docs.fileformat.com/image/bmp/), [WMF](https://docs.fileformat.com/image/wmf/),[TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [NÚMEROS](https://docs.fileformat.com/spreadsheet/numbers/), [FODS](https://docs.fileformat.com/spreadsheet/fods/).
 
 
-## RESET API
+## RSET API
  
 ```bash
  
@@ -26,14 +26,14 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
 | Nombre del parámetro| Tipo| Ruta/Cadena de consulta/Cuerpo HTTP|Descripción|
 |:- |:- |:- |:- |
 | nombre| cadena| camino| El nombre del documento.|
-| hojaNombre| cadena| camino| El nombre de la hoja de cálculo.|
-| formato| cadena| consulta|El formato de archivo exportado.|
-| resolución vertical| entero| consulta| Establece la resolución vertical de las imágenes generadas, en puntos por pulgada.|
+| nombre de la hoja| cadena| camino| El nombre de la hoja de trabajo.|
+| formato| cadena| consulta|El formato del archivo exportado.|
+| verticalResolución| entero| consulta| Establece la resolución vertical de las imágenes generadas, en puntos por pulgada.|
 | resolucion horizontal| entero| consulta| Establece la resolución horizontal de las imágenes generadas, en puntos por pulgada.|
-| área| cadena| consulta| superficie exportada.|
-| índice de página| entero| consulta| Índice de páginas exportadas.|
+| área| cadena| consulta| Área exportada.|
+| índice de página| entero| consulta| Índice de página exportada.|
 | carpeta| cadena| consulta| La carpeta de documentos.|
-| NombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
+| nombredealmacenamiento| cadena| consulta| nombre del almacenamiento.|
  
  El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheet) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
  
@@ -69,11 +69,11 @@ stream
  
 {{< /tabs >}}
  
-## Familia SDK de la nube
+## Familia de SDK en la nube
  
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se ocupa de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor, echa un vistazo a la[repositorio GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de Cloud.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor revisa el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de nube.
  
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código demuestran cómo realizar llamadas a servicios web Aspose.Cells utilizando varios SDK:
  
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 

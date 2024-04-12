@@ -22,7 +22,7 @@ weight: 20
 |:- |:- |:- |
 |练习册|目的||
 |工作表名称|细绳||
-|图表指数|整数||
+|图表索引|整数||
 |形状索引|整数||
 |小区名称|细绳||
 |列表对象索引|整数||
@@ -32,7 +32,7 @@ weight: 20
 
 |参数名称|类型|描述|
 |:- |:- |:- |
-|图表指数|整数||
+|图表索引|整数||
 |图表类型|细绳||
 |左上行|整数||
 |左上栏|整数||
@@ -112,7 +112,7 @@ weight: 20
 
 |**API**|**类型**|**描述**|**资源链接**|
 |:- |:- |:- |:- |
-|/细胞/任务/运行任务|邮政|运行任务|[运行后任务](https://apireference.aspose.cloud/cells/#/Task/PostRunTask)|
+|/细胞/任务/runtask|邮政|运行任务|[运行后任务](https://apireference.aspose.cloud/cells/#/Task/PostRunTask)|
 
 这[开放API规范](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData)定义了一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
 

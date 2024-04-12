@@ -1,15 +1,15 @@
 ﻿---
 title: Guardar opción
 second_title: Aspose.Cells Cloud Documen
-linktitle: Guardar opción
+linktitle: Opción de guardar
 type: docs
 url: /es/save-options/
 keywords: Workbook save options
-description: Aspose.Cells Cloud REST API admite obtener archivos de Excel en tipos de archivos de formato. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift
+description: Aspose.Cells Cloud REST API admite la obtención de archivos de Excel en tipos de archivos de formato. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 79
 ---
 # Propiedades de opciones de guardado
 
-Nombre | Tipo | Descripción | notas
+Nombre | Tipo | Descripción | Notas
 ------------ | ------------- | ------------- | -------------
-**Habilitar compresión HTTP** | **bool?** | | [opcional]**Guardar formato** | **cadena** | | [opcional]**Borrar datos** | **bool?** | Vacíe el libro de trabajo después de guardar el archivo. | [opcional]**CachedFileFolder** | **cadena** | La carpeta de archivos en caché se utiliza para almacenar algunos datos de gran tamaño. | [opcional]**ValidateMergedAreas** | **bool?** | Indica si validar las áreas fusionadas antes de guardar el archivo. El valor predeterminado es falso. | [opcional]**RefreshChartCache** | **bool?** | | [opcional]**Crear directorio** | **bool?** | Si es verdadero y el directorio no existe, el directorio se creará automáticamente antes de guardar el archivo. | [opcional]**ordenar nombres** | **bool?** | | [opcional]
+**Habilitar compresión HTTP** | **booleano?** | | [opcional]**Guardar formato** | **cadena** | | [opcional]**Borrar datos** | **booleano?** | Deje el libro vacío después de guardar el archivo. | [opcional]**Carpeta de archivos en caché** | **cadena** | La carpeta de archivos en caché se utiliza para almacenar algunos datos de gran tamaño. | [opcional]**Validar áreas fusionadas** | **booleano?** | Indica si se validan las áreas fusionadas antes de guardar el archivo. El valor predeterminado es falso. | [opcional]**Actualizar caché de gráficos** | **booleano?** | | [opcional]**Crear directorio** | **booleano?** | Si es verdadero y el directorio no existe, el directorio se creará automáticamente antes de guardar el archivo. | [opcional]**Ordenar nombres** | **booleano?** | | [opcional]

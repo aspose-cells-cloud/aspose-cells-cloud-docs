@@ -6,12 +6,12 @@ type: docs
 url: /es/autofilter/add-date-filter/
 aliases: [/add-date-filter-in-a-worksheet/,/autofilter/add-a-date-filter/]
 keywords: Adds a date filter on an Excel worksheet
-description: El Aspose.Cells Cloud API admite agregar un filtro de fecha en una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift
+description: Aspose.Cells Cloud API admite la adición de un filtro de fecha en una hoja de trabajo Excel. El SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 65
 ---
 Este REST API indica agregar un `date filter` en una hoja de trabajo Excel.
 
-## RESET API
+## RSET API
 
 ```bash
 
@@ -22,21 +22,21 @@ Los parámetros de la solicitud son:
 
 | Nombre del parámetro| Tipo| Ruta/Cadena de consulta/Cuerpo HTTP|Descripción|
 |:- |:- |:- |:- |
-| nombre| cadena| Camino|El nombre del libro.|
-| hojaNombre| cadena| Camino| El nombre de la hoja de cálculo.|
+| nombre| cadena| Camino|El nombre del libro de trabajo.|
+| nombre de la hoja| cadena| Camino| El nombre de la hoja de trabajo.|
 |rango|cadena| Consulta||
 |índice de campo|entero| Consulta||
-|dateTimeGroupingType|cadena| Consulta| Día/Hora/Minuto/Mes/Segundo/Año|
+|FechaHoraTipo de agrupación|cadena| Consulta| Día/Hora/Minuto/Mes/Segundo/Año|
 |año|entero| Consulta||
 |mes|entero| Consulta||
 |día|entero| Consulta||
 |hora|entero| Consulta||
 |minuto|entero| Consulta||
 |segundo|entero| Consulta||
-|partidoBlanks|cadena| Consulta|verdadero Falso|
+|MatchBlancos|cadena| Consulta|verdadero Falso|
 |actualizar|cadena| Consulta|verdadero Falso|
-|carpeta|cadena| Consulta|Carpeta original del libro de trabajo.|
-|NombreDeAlmacenamiento|cadena| Consulta|Nombre de almacenamiento.|
+|carpeta|cadena| Consulta|Carpeta del libro de trabajo original.|
+|nombredealmacenamiento|cadena| Consulta|Nombre del almacenamiento.|
 
 
  El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetDateFilter) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
@@ -74,11 +74,11 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFil
 {{< /tabs >}}
 
 
-## Familia SDK de la nube
+## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se ocupa de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor, echa un vistazo a la[repositorio GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de Cloud.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor revisa el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de nube.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código demuestran cómo realizar llamadas a servicios web Aspose.Cells utilizando varios SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" >}}
 

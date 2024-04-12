@@ -5,7 +5,7 @@ type: docs
 url: /ar/rows/
 aliases: [/working-with-rows/]
 keywords: Working with rows on an Excel file
-description: Aspose.Cells Cloud REST API دعم العمل مع الصفوف في ملف Excel. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
+description: Aspose.Cells Cloud REST API يدعم العمل مع الصفوف في ملف Excel. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 100
 ---
 ## العمل مع الصفوف في ملف Excel.

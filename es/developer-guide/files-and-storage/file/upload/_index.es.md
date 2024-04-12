@@ -4,12 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/file/upload/
 keywords: Learn how to upload file with Aspose Cells Cloud REST API
-description: Aprenda a cargar un archivo con Aspose Cells Cloud REST API SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift
+description: Aprenda cómo cargar archivos con Aspose Cells Cloud REST API SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 100
 ---
 Este REST API indica `upload file`.
 
-## RESET API
+## RSET API
  
 ```bash
  
@@ -20,9 +20,9 @@ PUT http://api.aspose.cloud/v3.0/cells/storage/file/{path}
  
 | Nombre del parámetro| Tipo| Ruta/Cadena de consulta/Cuerpo HTTP|Descripción|
 |:- |:- |:- |:- |
-| camino| cadena| camino| Ruta donde cargar, incluido el nombre de archivo y la extensión, por ejemplo, /file.ext o /Folder 1/file.ext Si el contenido es de varias partes y la ruta no contiene el nombre del archivo, intenta obtenerlos del parámetro de nombre de archivo del encabezado Content-Disposition.|
+| camino| cadena| camino| Ruta donde cargar, incluido el nombre del archivo y la extensión, por ejemplo, /file.ext o /Folder 1/file.ext. Si el contenido es de varias partes y la ruta no contiene el nombre del archivo, intenta obtenerlos del parámetro de nombre de archivo del encabezado Content-Disposition.|
 | archivo| Archivo| formularioDatos| Subir Archivo|
-| NombreDeAlmacenamiento| cadena| consulta| Nombre de almacenamiento|
+| nombredealmacenamiento| cadena| consulta| Nombre de almacenamiento|
  
  El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/File/UploadFile) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
  
@@ -70,11 +70,11 @@ curl -v "http://api.aspose.cloud/v3.0/cells/storage/file/Book1.xlsx" \
  
 {{< /tabs >}}
  
-## Familia SDK de la nube
+## Familia de SDK en la nube
  
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se ocupa de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor, echa un vistazo a la[repositorio GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de Cloud.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor revisa el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de nube.
  
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código demuestran cómo realizar llamadas a servicios web Aspose.Cells utilizando varios SDK:
  
  {{< tabs tabTotal="9" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" tabName9="Python" >}}
 

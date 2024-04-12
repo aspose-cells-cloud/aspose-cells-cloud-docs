@@ -9,7 +9,7 @@ keywords: Delete a page break in an Excel worksheet
 description: Aspose.Cells Cloud REST API unterstützt das Löschen eines Seitenumbruchs in einem Excel Arbeitsblatt. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
 weight: 50
 ---
- Dieser REST API gibt an, einen Seitenumbruch `horizontal` zu löschen.
+Dieser REST API gibt an, einen Seitenumbruch `horizontal` zu löschen.
  
 ## RSET API
  

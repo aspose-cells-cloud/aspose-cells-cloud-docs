@@ -1,7 +1,7 @@
 ﻿---
 title: 在 Excel 工作表上使用自动调整
 second_title: Aspose.Cells Cloud Documen
-linktitle: 奥特菲
+linktitle: 奥托菲
 type: docs
 url: /zh/worksheets/autofit/
 aliases: [/autofit-rows-and-columns-of-worksheet/]

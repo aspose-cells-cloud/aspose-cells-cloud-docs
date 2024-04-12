@@ -1,17 +1,17 @@
 ﻿---
-title: Импорт данных CSV в рабочий лист Excel
+title: Импортируйте данные CSV в таблицу Excel.
 second_title: Aspose.Cells Cloud Documen
-linktitle: Импорт данных в формате CSV
+linktitle: Импортировать данные CSV
 type: docs
 url: /ru/import/csv-data/
 aliases: [/import-csv-data-into-excel-worksheet/, /import-csv-data-into-worksheet/,/import-data/csv-data/]
 keywords: Import csv data into Excel files
-description: Aspose.Cells Cloud REST API поддерживает импорт данных csv в файлы Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и swift.
+description: Aspose.Cells Cloud REST API поддерживает импорт данных CSV в файлы Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 19
 ---
 Этот REST API `import csv data` в рабочий лист Excel.
 
-Запрос представляет собой HTTP-запрос с составным содержимым (см.[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)или[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). Первая часть составного содержимого содержит данные ImportCSVDataOption, а вторая — файл данных.
+Запрос представляет собой HTTP-запрос с составным содержимым (см.[РФК 2046](http://tools.ietf.org/html/rfc2046#page-17)или[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). Первая часть составного содержимого содержит данные ImportCSVDataOption, а вторая — файл данных.
 
 ## РСЕТ API
 
@@ -25,25 +25,25 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/import-data
 Важные параметры описаны в следующей таблице:
 
 
-**ИмпортCSVDataOption**
+**Импорт CSVDataOption**
 
 |Имя параметра|Тип|Описание|
 |:- |:- |:- |
 | РазделительСтрока| нить||
-| Преобразовать числовые данные| нить|правда/ложь.|
-| Первая строка| инт||
-| Первая колонка| инт||
+| Конвертироватьчисловые данные| нить|правда/ложь.|
+| Первая строка| интервал||
+| Первая колонка| интервал||
 | Исходный файл| нить||
-| CustomParsers|Список<CustomParserConfig> ||
+| ПользовательскиеПарсеры|Список<CustomParserConfig> ||
 
 
 **CustomParserConfig**
 
 |Имя параметра|Тип|Описание|
 |:- |:- |:- |
-| Индекс столбца| инт||
-| ParseMethod| нить||
-| Пользовательский стиль| нить||
+| Индекс Столбца| интервал||
+| Метод разбора| нить||
+| CustomStyle| нить||
 
 **Пример**
 
@@ -71,9 +71,9 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/import-data
 
 ## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK позаботится о низкоуровневых деталях и позволит вам сосредоточиться на задачах вашего проекта. Пожалуйста, ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) полный список Aspose.Cells Cloud SDK.
+ Использование SDK — лучший способ ускорить разработку. SDK заботится о деталях низкого уровня и позволяет вам сосредоточиться на задачах проекта. Пожалуйста, ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для получения полного списка Aspose.Cells Cloud SDK.
 
-В следующих примерах кода показано, как выполнять вызовы веб-служб Aspose.Cells с помощью различных SDK.
+Следующие примеры кода демонстрируют, как выполнять вызовы веб-служб Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="1" tabID="1" tabName1="PHP" >}}
 

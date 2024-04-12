@@ -6,12 +6,12 @@ type: docs
 url: /es/workbook/calculate-all-formulas/
 aliases: [/calculate-all-formulas-in-a-workbook/]
 keywords: Calculate all formulas on an Excel workbook
-description: Aspose.Cells Cloud REST API admite el cálculo de todas las fórmulas en un libro de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift
+description: Aspose.Cells Cloud REST API admite el cálculo de todas las fórmulas en un libro de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 140
 ---
 Este REST API indica `calculate all formulas` en un libro de trabajo Excel.
  
-## RESET API
+## RSET API
  
 ```bash
  
@@ -26,7 +26,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/calculateformula
 | opciones|| cuerpo| Opciones de cálculo.|
 | ignorarError| booleano| consulta| ignorar el error.|
 | carpeta| cadena| consulta| Carpeta del documento.|
-| NombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
+| nombredealmacenamiento| cadena| consulta| nombre del almacenamiento.|
  
  El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookCalculateFormula) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
  
@@ -62,11 +62,11 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/calculateformula?ignoreE
  
 {{< /tabs >}}
  
-## Familia SDK de la nube
+## Familia de SDK en la nube
  
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se ocupa de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor, echa un vistazo a la[repositorio GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de Cloud.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor revisa el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de nube.
  
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código demuestran cómo realizar llamadas a servicios web Aspose.Cells utilizando varios SDK:
  
 {{< tabs tabTotal="7" tabID="4" tabName1="C#" tabName2="PHP" tabName3="Ruby" tabName4="Node.js" tabName5="Perl" tabName6="Go" tabName7="Swift" >}}
 

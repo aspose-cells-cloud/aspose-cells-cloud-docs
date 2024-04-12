@@ -27,7 +27,7 @@ Die Anforderungsparameter sind:
 | Blattname| Zeichenfolge| Weg| Der Arbeitsblattname.|
 |Reichweite|Zeichenfolge| Abfrage||
 |fieldIndex|ganze Zahl| Abfrage||
-|iconSetType|Zeichenfolge| Abfrage| Pfeile3/PfeileGrau3/Flaggen3/Zeichen3/Symbole3/Symbole32/Ampeln31/Ampeln32/Pfeile4/PfeileGrau4/Bewertung4/RotZuSchwarz4/Ampeln4/Pfeile5/PfeileGrau5/Viertel5/Bewertung5/Sterne3/Boxen5/Dreiecke3/Keine/Benutzerdefiniert/Smilies3/FarbSmilies 3|
+|iconSetType|Zeichenfolge| Abfrage| Pfeile3/PfeileGrau3/Flaggen3/Zeichen3/Symbole3/Symbole32/Ampeln31/Ampeln32/Pfeile4/PfeileGrau4/Bewertung4/RotZuSchwarz4/Ampeln4/Pfeile5/PfeileGrau5/Viertel5/Bewertung5/Sterne3/Boxen5/Dreiecke3/Keine/Benutzerdefiniert/Smilies3/Farbe Smileys3|
 |iconId|ganze Zahl| Abfrage||
 |matchBlanks|Zeichenfolge| Abfrage|wahr falsch|
 |Aktualisierung|Zeichenfolge| Abfrage|wahr falsch|

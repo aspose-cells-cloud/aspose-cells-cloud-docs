@@ -1,17 +1,17 @@
 ﻿---
-title: حذف Excel ورقة عمل متعددة
+title: حذف ورقة عمل متعددة Excel
 second_title: Aspose.Cells Cloud Documen
 linktitle: ورقة عمل متعددة
 type: docs
 url: /ar/worksheets/delete-multiple/
 aliases: [/delete-excel-worksheets/]
 keywords: Delete multiple Excel worksheets on an Excel workbook
-description: Aspose.Cells Cloud REST API يدعم حذف عدة أوراق عمل Excel في مصنف Excel. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
+description: Aspose.Cells Cloud REST API يدعم حذف أوراق عمل Excel المتعددة في مصنف Excel. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 20
 ---
-يشير هذا REST API إلى `delete multiple worksheets`.
+يشير REST API إلى `delete multiple worksheets`.
  
-## RSET API
+## رسيت API
  
 ```bash
  
@@ -20,10 +20,10 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets
 ```
  معلمات الطلب هي:
  
-| اسم المعلمة| يكتب| المسار / سلسلة الاستعلام / HTTPBody|وصف|
+| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/HTTPBody|وصف|
 |:- |:- |:- |:- |
 | اسم| خيط| طريق||
-| المباراة|| جسم||
+| matchCondition|| جسم||
 | مجلد| خيط| استفسار||
 | اسم التخزين| خيط| استفسار||
  
@@ -32,7 +32,7 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets
  
 الاسم | اكتب | الوصف | ملحوظات
 ------------ | ------------- | ------------- | -------------
- RegexPattern | سلسلة | | [اختياري] FullMatchConditions | سلسلة [] | | [اختياري][مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheets) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
+ النمط العادي | سلسلة | | [اختياري]شروط المباراة الكاملة | سلسلة[]| | [اختياري] ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheets) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك تنفيذ تفاعلات REST مباشرة من متصفح الويب.
  
 يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
  
@@ -68,9 +68,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets?folder=Temp" \
  
 ## عائلة Cloud SDK
  
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. يعتني SDK بالتفاصيل منخفضة المستوى ويتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة من Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
  
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام حزم SDK متنوعة:
+توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
  
  
  

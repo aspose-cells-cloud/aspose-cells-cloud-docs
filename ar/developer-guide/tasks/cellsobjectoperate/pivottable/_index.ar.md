@@ -5,17 +5,17 @@ type: docs
 url: /ar/tasks/cells-object-operate/pivottable/
 aliases: [/working-with-pivot-table-using-cellsobjectoperate-task/]
 keywords: REST API, pivot table, spreadsheets, exce
-description: "Cells.Cloud API لـ Excel تعمل: إنشاء جدول محوري باستخدام CellsObjectOperate"
+description: "Cells.Cloud API لـ Excel التشغيل: إنشاء جدول محوري باستخدام مهمة CellsObjectOperate"
 weight: 10
 ---
-هذا REST API يقوم بإنشاء `pivot table` باستخدام كائن الخلايا يعمل `task`.
+يقوم REST API بإنشاء `pivot table` باستخدام كائن الخلايا الذي يعمل `task`.
 
 **PivotTableOperateParameter**
 
 
 |اسم المعلمة|يكتب|وصف|
 |:- |:- |:- |
-| DestCellName| خيط||
+| اسم الخلية| خيط||
 | مصدر معلومات| خيط||
 | اسم الطاولة| خيط||
 | استخدم نفس المصدر| خيط| خطأ صحيح|
@@ -25,13 +25,13 @@ weight: 10
 |PivotFieldData|عدد صحيح[]||
 
 
-## REST API
+## بقية API
 
 |**API**|**يكتب**|**وصف**|**رابط الموارد**|
 |:- |:- |:- |:- |
-|/ خلايا / مهمة / runtask|بريد|تشغيل المهمة|[PostRunTask](https://apireference.aspose.cloud/cells/#/Task/PostRunTask)|
+|/الخلايا/المهمة/runtask|بريد|تشغيل المهمة|[PostRunTask](https://apireference.aspose.cloud/cells/#/Task/PostRunTask)|
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
+ ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك تنفيذ تفاعلات REST مباشرة من متصفح الويب.
 
  يمكنك استخدام**cURL** أداة سطر الأوامر للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
 
@@ -377,7 +377,7 @@ HttpResponseMessage with the operation result.
 
 ## عائلة Cloud SDK
 
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. يعتني SDK بالتفاصيل منخفضة المستوى ويتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة من Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام حزم SDK متنوعة:
+توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
 

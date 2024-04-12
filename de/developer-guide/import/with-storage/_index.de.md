@@ -26,7 +26,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/importdata
 | Speichername| Zeichenfolge| Abfrage| Speichername.|
 | Daten importieren|| Körper||
 
-**Die Parameter der Importdatenoptionen**sind beschrieben in[der Referenzlink](/cells/de/import/#import-data-option-parameter).
+**Die Parameter der Importdatenoptionen** sind beschrieben in[der Referenzlink](/cells/de/import/#import-data-option-parameter).
 
  
  Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht die Durchführung von REST-Interaktionen direkt über einen Webbrowser.

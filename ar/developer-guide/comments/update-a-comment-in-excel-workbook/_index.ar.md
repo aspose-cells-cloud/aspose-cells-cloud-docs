@@ -4,12 +4,12 @@ type: docs
 url: /ar/comments/update/
 aliases: [/update-a-comment-in-excel-workbook/]
 keywords: REST API, spreadsheets, excel, update commen
-description: "Cells.Cloud API لـ Excel تعمل: تعليق التحديث"
+description: "Cells.سحابة API لـ Excel تشغيل: تعليق التحديث"
 weight: 30
 ---
-يشير هذا REST API إلى تعليق تحديث خلية ورقة العمل.
+يشير REST API إلى تعليق خلية ورقة العمل.
  
-## RSET API
+## رسيت API
  
 ```bash
  
@@ -18,16 +18,16 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{
 ```
  معلمات الطلب هي:
  
-| اسم المعلمة| يكتب| المسار / سلسلة الاستعلام / HTTPBody|وصف|
+| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/HTTPBody|وصف|
 |:- |:- |:- |:- |
 | اسم| خيط| طريق| اسم الوثيقة.|
 | اسم الورقة| خيط| طريق| اسم ورقة العمل.|
 | اسم الخلية| خيط| طريق| اسم الخلية|
 | تعليق|| جسم| كائن التعليق|
-| مجلد| خيط| استفسار| مجلد المستند.|
+| مجلد| خيط| استفسار| مجلد المستندات.|
 | اسم التخزين| خيط| استفسار| اسم التخزين.|
  
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetComment) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
+ ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetComment) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك تنفيذ تفاعلات REST مباشرة من متصفح الويب.
  
 يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
 
@@ -68,9 +68,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/comment
 
 ## عائلة Cloud SDK
  
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. يعتني SDK بالتفاصيل منخفضة المستوى ويتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة من Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
  
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام حزم SDK متنوعة:
+توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
 
 {{< tabs tabTotal="1" tabID="4" tabName1="Go" >}}
 

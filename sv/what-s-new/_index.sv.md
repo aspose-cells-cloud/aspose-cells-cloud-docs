@@ -10,6 +10,61 @@ description: Den här sidan beskriver de mest intressanta nya Aspose.Cells Cloud
 ---
 Välkommen till det som är nytt i Aspose.Cells Cloud docs. Använd den här sidan för att snabbt hitta de senaste ändringarna.
 
+## Förbättringar i version 24.3
+
+- Stöd deduplicering av data.
+- Stöd datafyllning.
+- Stöd för att ta bort ofullständiga rader.
+- Stöd datarensning.
+
+## Förbättringar i version 24.2.1
+
+- Stöd deduplicering av data.
+
+## Förbättringar i version 24.1.1
+
+- Fixade stavfel för flera funktioner.
+- Lägg till metoden PostFitTallToPages för kontrollenheten för sidinställningar.
+- Lägg till metoden PostFitWideToPages för sidinstallationskontrollern.
+- Optimera spara alternativ om paginerade.
+
+## Förbättringar i version 23.12.0
+
+- Konverterings-API:er lägger till regionparameter.
+- Skydds-API:er lägger till regionparameter.
+- Samla data API lägger till regionparameter.
+- Sammanfoga filer API lägger till regionsparameter.
+- Dela filer API lägger till regionsparameter.
+- Importera data API lägger till regionsparameter.
+- Vattenstämpel API lägger till regionsparameter.
+- Rensa objekt API lägger till regionsparameter.
+- Omvänd data API lägger till regionsparameter.
+- Rotera data API lägger till regionsparameter.
+
+## Förbättringar i version 23.11
+
+- Optimera importera xml-data till Excel-filen.
+- Optimera importera json-data till filen Excel.
+- Ta bort föråldrade funktioner, klass och testfall.
+
+## Förbättringar i version 23.10
+
+- Åtgärda begäran om skydd av arbetsbok.
+- Fixa intervallkopia API.
+- Optimera arbetsboken skydda API.
+
+## Förbättringar i version 23.9
+
+- Stöd för datasortering på intervallkontroller.
+- Stöd för att ta bort dubbletter av data på listobjekt.
+- Stöd för att infoga slicer för listobjekt.
+- Optimera listobjekt och relaterade objekt.
+
+## Förbättringar i version 23.8
+
+- Stöd för lås API.
+- Optimize protect API.
+
 ## Aspose.Cells Cloud 23.7
 
  * Stöd för att reparera fil.
@@ -22,7 +77,7 @@ Välkommen till det som är nytt i Aspose.Cells Cloud docs. Använd den här sid
  * Stöd för att batchlåsa upp flera filer.
  * Stöd för att batchskydda flera filer.
  * Stöd för batchdelade multifiler.
- Fixa sätta dokumentegenskapsapi.
+ * Fixa sätta dokumentegenskapsapi.
 
 
 ## Aspose.Cells Cloud 23.5
@@ -61,7 +116,7 @@ Välkommen till det som är nytt i Aspose.Cells Cloud docs. Använd den här sid
 
 ## Aspose.Cells Cloud 22.11
 
- * Lägg till nytt api för konvertering till json.
+ Lägg till nytt api för konvertering till json.
  * Lägg till nytt api för konvertering till sql.
  * Lägg till nytt api för att konvertera till cvs.
 
@@ -81,7 +136,7 @@ Välkommen till det som är nytt i Aspose.Cells Cloud docs. Använd den här sid
 
 ## Aspose.Cells Cloud 22.8
 
-Stöd för att överföra Excel rader till kolumner.
+* Stöd för att överföra Excel rader till kolumner.
 
 ## Aspose.Cells Cloud 22.7
 
@@ -95,7 +150,7 @@ Stöd för att överföra Excel rader till kolumner.
 
 ## Aspose.Cells Cloud 22.5
 
-* [Förbättring för export API.](https://docs.aspose.cloud/cells/export/)
+[Förbättring för export API.](https://docs.aspose.cloud/cells/export/)
 * [Förbättring för clear API.](https://docs.aspose.cloud/cells/clear/)
 
 ## Aspose.Cells Cloud 22.4

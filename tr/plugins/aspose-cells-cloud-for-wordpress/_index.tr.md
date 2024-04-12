@@ -1,9 +1,9 @@
 ﻿---
-title: Aspose.Cells WordPres için Bulut
+title: Aspose.Cells WordPress için Bulut
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/aspose-cells-cloud-for-wordpress/
-description: Aspose.Cells Bulut, oluşturma, dönüştürme, birleştirme, bölme, korumalı, iç nesne işlemi vb. için Excel'i destekler
+description: Aspose.Cells Bulut, oluşturma, dönüştürme, birleştirme, bölme, koruma, iç nesne işlemleri vb. için Excel'i destekler
 weight: 10
 ---
 Bu bölümde aşağıdaki konular yer almaktadır:

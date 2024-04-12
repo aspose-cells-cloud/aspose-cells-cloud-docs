@@ -6,35 +6,35 @@ type: docs
 url: /it/workbook/background/add/
 aliases: [/add-background-in-workbook/,/workbook/add-background/]
 keywords: Add background on an Excel workbook
-description: Aspose.Cells Cloud REST API supporta l'aggiunta di sfondo su una cartella di lavoro Excel su un file Excel. L'SDK supporta i tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
+description: Aspose.Cells Cloud REST API supporta l'aggiunta di sfondo su una cartella di lavoro Excel su un file Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 160
 ---
-Questo REST API indica di aggiungere `background` a una cartella di lavoro Excel.
+Questo REST API indica di aggiungere `background` su una cartella di lavoro Excel.
 
 
-**Parametro di ricerca**
+**Parametro di query**
 
-|Nome parametro|Tipo|Descrizione|
+|Nome del parametro|Tipo|Descrizione|
 |:- |:- |:- |
 |picPath|corda|posizione dell'immagine.|
-|cartella|corda|Cartella di lavoro originale.|
-|storageName|corda|Nome di archiviazione.|
+|cartella|corda|Cartella della cartella di lavoro originale.|
+|storageName|corda|Nome dell'archivio.|
 
-**Parametro del corpo della richiesta**
+**Richiedi parametro corpo**
 
-|Nome parametro|Tipo|Descrizione|
+|Nome del parametro|Tipo|Descrizione|
 |:- |:- |:- |
 |file di dati| file di dati|Il file di dati viene salvato nel corpo della richiesta.|
 
-## RIPOSO API
+## RESTO API
 
-|**API**|**Tipo**|**Descrizione**|**Collegamento alla risorsa**|
+|**API**|**Tipo**|**Descrizione**|**Collegamento alle risorse**|
 |:- |:- |:- |:- |
-|/celle/{nome}/sfondo|METTERE|Aggiungi sfondo nel file excel|[Metti lo sfondo della cartella di lavoro](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookBackground)|
+|/cells/{nome}/sfondo|METTERE|Aggiungi lo sfondo nel file Excel|[PutWorkbookBackground](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookBackground)|
 
- IL[Specifica OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookBackground) definisce un'interfaccia di programmazione accessibile pubblicamente e consente di eseguire interazioni REST direttamente da un browser web.
+ IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookBackground) definisce un'interfaccia di programmazione accessibile pubblicamente e consente di eseguire interazioni REST direttamente da un browser web.
 
- Puoi usare**cURL** strumento da riga di comando per accedere facilmente ai servizi Web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate a Cloud API con cURL.
+ Puoi usare**cURL** strumento da riga di comando per accedere facilmente ai servizi web Aspose.Cells. Nell'esempio seguente viene illustrato come effettuare chiamate al Cloud API con cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
@@ -67,11 +67,11 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/background?picPath=D
 {{< /tabs >}}
 
 
-## Famiglia di SDK cloud
+## Famiglia di SDK Cloud
 
- L'utilizzo di un SDK è il modo migliore per velocizzare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del tuo progetto. Si prega di controllare il[Deposito GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+ Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si prende cura dei dettagli di basso livello e ti consente di concentrarti sulle attività del tuo progetto. Si prega di controllare il[Repositorio GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK Cloud Aspose.Cells.
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+I seguenti esempi di codice dimostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
 
 {{< tabs tabTotal="9" tabID="4" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Android" tabName5="Perl" tabName6="Ruby" tabName7="PHP" tabName8="Node.js" tabName9="Swift" >}}
 

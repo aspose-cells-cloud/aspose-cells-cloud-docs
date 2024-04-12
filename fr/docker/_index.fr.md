@@ -7,16 +7,16 @@ aliases: [/docker/]
 description: Aspose.Cells Nuage
 weight: 30
 ---
-## Aspose.Cells Nuage Docker
+## Aspose.Cells Docker Nuage
 
  Aspose.Cells Cloud Image est disponible pour Linux, Microsoft Windows 10 Pro, Microsoft Windows Server 2016 et Microsoft Windows Server 2019.
 
 
 
-## API Référence - Aspose.Cells Cloud Docker
+## Référence API - Aspose.Cells Cloud Docker
 
-- https://hostname:port/swagger
-- https://hostname:port/swagger/ui/index.html
+- https://nom d'hôte:port/swagger
+- https://nom d'hôte:port/swagger/ui/index.html
 
 voir:
 - [Télécharger l'information](/cells/fr/docker/downloads/) 

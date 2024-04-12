@@ -10,7 +10,7 @@ Le Aspose.Cells Cloud API est une puissante solution basée sur le cloud conçue
 
 ## Aperçu
 
- Le Aspose.Cells Cloud API fournit un ensemble robuste d'API pour convertir des fichiers de feuilles de calcul entre différents formats. Les formats pris en charge incluent**Excel** (XLS, XLSX),**CSV**, **HTML**, **PDF**, et plus. En tirant parti du Aspose.Cells Cloud API, vous pouvez facilement convertir des fichiers de feuilles de calcul vers d'autres formats largement utilisés, répondant à un large éventail d'exigences.
+ Le Aspose.Cells Cloud API fournit un ensemble robuste d'API pour convertir des feuilles de calcul entre différents formats. Les formats pris en charge incluent**Excel** (XLS, XLSX),**CSV**, **HTML**, **PDF**, et plus. En tirant parti du Aspose.Cells Cloud API, vous pouvez facilement convertir des fichiers de feuilles de calcul vers d'autres formats largement utilisés, répondant à un large éventail d'exigences.
 
 De nombreuses API sont disponibles pour la conversion de fichiers, généralement compatibles avec divers environnements en ligne. Vous trouverez ci-dessous une description détaillée de ces API :
 

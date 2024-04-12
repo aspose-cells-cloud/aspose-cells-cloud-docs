@@ -1,20 +1,20 @@
 ﻿---
-title: Utilizzo del foglio di lavoro Excel
+title: Lavorare con il foglio di lavoro Excel
 second_title: Aspose.Cells Cloud Documen
 linktitle: Foglio di lavoro
 type: docs
 url: /it/worksheets/
 aliases: [/working-with-worksheets/]
 keywords: Working with worksheet on an Excel workbook
-description: Aspose.Cells Cloud REST API supporta l'utilizzo del foglio di lavoro su una cartella di lavoro Excel. L'SDK supporta i tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
+description: Aspose.Cells Cloud REST API supporta l'utilizzo del foglio di lavoro su una cartella di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 100
 ---
-Un foglio di lavoro è una raccolta di celle in cui si conservano e si manipolano i dati. Ogni cartella di lavoro Excel può contenere più fogli di lavoro.
+Un foglio di lavoro è una raccolta di celle in cui conservi e manipoli i dati. Ciascuna cartella di lavoro Excel può contenere più fogli di lavoro.
 
 **Foglio di lavoro Operare**
 
-- [Come ottenere fogli di lavoro Excel.](/cells/it/worksheets/get-all/)
-- [Come ottenere un foglio di lavoro Excel con diversi formati.](/cells/it/worksheets/get/) 
+- [Come ottenere i fogli di lavoro Excel.](/cells/it/worksheets/get-all/)
+- [Come ottenere il foglio di lavoro Excel con diversi formati.](/cells/it/worksheets/get/) 
     - [Come ottenere l'area del foglio di lavoro Excel con diversi formati.](/cells/it/worksheets/area-to-different-formats/)
     - [Come ottenere la pagina del foglio di lavoro Excel con diversi formati.](/cells/it/get-worksheet-for-page-index/) 
     - [Come convertire il foglio di lavoro Excel in immagine.](/cells/it/worksheets/to-image/)

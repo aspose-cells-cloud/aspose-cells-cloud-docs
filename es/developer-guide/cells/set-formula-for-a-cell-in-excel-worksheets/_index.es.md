@@ -6,7 +6,7 @@ weight: 80
 ---
 Este REST API indica el conjunto `cell formula` en un archivo Excel.
  
-## RESET API
+## RSET API
  
 ```bash
  
@@ -18,13 +18,13 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cel
 | Nombre del parámetro| Tipo| Ruta/Cadena de consulta/Cuerpo HTTP|Descripción|
 |:- |:- |:- |:- |
 | nombre| cadena| camino| El nombre del documento.|
-| hojaNombre| cadena| camino| El nombre de la hoja de cálculo.|
+| nombre de la hoja| cadena| camino| El nombre de la hoja de trabajo.|
 | nombre de celda| cadena| camino| El nombre de la celda.|
 | valor| cadena| consulta| El valor de la celda.|
 | tipo| cadena| consulta| El tipo de valor.|
-| fórmula| cadena| consulta| fórmula para celda|
+| fórmula| cadena| consulta| Fórmula para celda|
 | carpeta| cadena| consulta| La carpeta de documentos.|
-| NombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
+| nombredealmacenamiento| cadena| consulta| nombre del almacenamiento.|
  
  El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/Cells/PostWorksheetCellSetValue) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
  
@@ -60,11 +60,11 @@ curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cell
  
 {{< /tabs >}}
  
-## Familia SDK de la nube
+## Familia de SDK en la nube
  
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se ocupa de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor, echa un vistazo a la[repositorio GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de Cloud.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor revisa el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de nube.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código demuestran cómo realizar llamadas a servicios web Aspose.Cells utilizando varios SDK:
 
 
 

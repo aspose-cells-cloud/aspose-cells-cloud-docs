@@ -1,10 +1,10 @@
 ﻿---
-title: احصل على MaxRow من Excel Workshee
+title: احصل على MaxRow من ورقة عمل Excel
 type: docs
 url: /ar/get-maxrow-from-excel-worksheet/
 weight: 40
 ---
-يشير هذا REST API إلى إظهار الحصول على `maxrow` في ملف Excel عندما تكون المعلمة `cellOrMethodName` هي `maxrow`.
+يشير REST API إلى الحصول على `maxrow` في ملف Excel عندما تكون المعلمة `cellOrMethodName` هي `maxrow`.
 
 - **cURL مثال**
 
@@ -35,9 +35,9 @@ curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/
 
 - **عائلة Cloud SDK**
 
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. يعتني SDK بالتفاصيل منخفضة المستوى ويتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة من Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام حزم SDK متنوعة:
+توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
 
 
 

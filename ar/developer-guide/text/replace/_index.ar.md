@@ -1,16 +1,16 @@
 ﻿---
 title: استبدال النص من ملف Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: استبدل بدون استخدام ستورج
+linktitle: استبدل دون استخدام التخزين
 type: docs
 url: /ar/replace/
 keywords: Replace old value by new value on Excel files
-description: Aspose.Cells Cloud REST API دعم استبدال القيمة القديمة بقيمة جديدة في ملفات Excel. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
+description: Aspose.Cells Cloud REST API يدعم استبدال القيمة القديمة بقيمة جديدة على ملفات Excel. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 80
 ---
-يشير هذا REST API إلى `replace` بيانات من ملفات Excel.
+يشير REST API إلى `replace` بيانات من Excel ملفًا.
 
-## RSET API
+## رسيت API
 
 ```bash
 
@@ -20,15 +20,15 @@ POST https://api.aspose.cloud/v3.0/cells/replace
 
  معلمات الطلب هي:
  
-| اسم المعلمة| يكتب| المسار / سلسلة الاستعلام / HTTPBody|وصف|
+| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/HTTPBody|وصف|
 |:- |:- |:- |:- |
 | ملف| ملف| بيانات النموذج| ملف للتحميل|
 | نص| خيط| استفسار||
-| نص جديد| خيط| استفسار||
+| newtext| خيط| استفسار||
 | كلمة المرور| خيط| استفسار||
 | اسم الورقة| خيط| استفسار||
  
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostReplace) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
+ ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostReplace) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك تنفيذ تفاعلات REST مباشرة من متصفح الويب.
  
 يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
@@ -78,9 +78,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/replace?text=1&newtext=aspose.cells.
 
 ## عائلة Cloud SDK
 
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. يعتني SDK بالتفاصيل منخفضة المستوى ويتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة من Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام حزم SDK متنوعة:
+توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
 
 
 {{< tabs tabTotal="9" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" tabName9="Python" >}}

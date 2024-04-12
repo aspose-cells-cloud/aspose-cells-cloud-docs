@@ -4,12 +4,12 @@ type: docs
 url: /ar/conditional-formattings/delete-cell-area/
 aliases: [/remove-cell-area-from-conditional-formatting/]
 keywords: REST API, spreadsheets, excel, delete cell area from condition formattin
-description: "Cells.Cloud API لـ Excel تعمل: حذف منطقة الخلية من تنسيق الشرط"
+description: "Cells.Cloud API لـ Excel التشغيل: حذف منطقة الخلية من تنسيق الشرط"
 weight: 70
 ---
-يشير هذا REST API إلى إزالة منطقة الخلية من التنسيق الشرطي.
+يشير REST API إلى إزالة منطقة الخلية من التنسيق الشرطي.
  
-## RSET API
+## رسيت API
  
 ```bash
  
@@ -18,18 +18,18 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditio
 ```
  معلمات الطلب هي:
  
-| اسم المعلمة| يكتب| المسار / سلسلة الاستعلام / HTTPBody|وصف|
+| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/HTTPBody|وصف|
 |:- |:- |:- |:- |
 | اسم| خيط| طريق||
 | اسم الورقة| خيط| طريق||
 | startRow| عدد صحيح| استفسار||
 | startColumn| عدد صحيح| استفسار||
-| إجمالي الصفوف| عدد صحيح| استفسار||
+| com.totalRows| عدد صحيح| استفسار||
 |إجمالي الأعمدة| عدد صحيح| استفسار||
 | مجلد| خيط| استفسار||
 | اسم التخزين| خيط| استفسار| اسم التخزين.|
  
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/DeleteWorksheetConditionalFormattingArea) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
+ ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/DeleteWorksheetConditionalFormattingArea) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك تنفيذ تفاعلات REST مباشرة من متصفح الويب.
  
 يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
  
@@ -68,9 +68,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditi
 
 ## عائلة Cloud SDK
  
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. يعتني SDK بالتفاصيل منخفضة المستوى ويتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة من Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
  
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام حزم SDK متنوعة:
+توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 

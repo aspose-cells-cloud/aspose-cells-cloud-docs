@@ -26,7 +26,7 @@ Die folgenden APIs zum Importieren von Daten in eine Excel-Datei oder mehrere Ex
 | Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
 |:- |:- |:- |:- |
 | Datei| Datei| Formulardaten| Datei zum Hochladen|
-| ImportOption| Importoptionen| HTTPBody| IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/Picture|
+| ImportOption| Importoptionen|HTTPBody| IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/Picture|
 
 ### Mit der Nutzung von Speicher
 

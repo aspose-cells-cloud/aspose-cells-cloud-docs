@@ -9,11 +9,11 @@ weight: 30
 ---
 ## Aspose.Cells Облачный докер
 
- Облачный образ Aspose.Cells доступен для Linux, Microsoft Windows 10 Pro, Microsoft Windows Server 2016 и Microsoft Windows Server 2019.
+ Aspose.Cells Облачный образ доступен для Linux, Microsoft Windows 10 Pro, Microsoft Windows Server 2016 и Microsoft Windows Server 2019.
 
 
 
-## API Ссылка — Aspose.Cells Облачный докер
+## API Артикул — Aspose.Cells Cloud Docker
 
 - https://имя хоста:порт/swagger
 - https://имя хоста:порт/swagger/ui/index.html
@@ -21,4 +21,4 @@ weight: 30
 видеть:
 - [Скачать информацию](/cells/ru/docker/downloads/) 
 - [Информация о запуске](/cells/ru/docker/run/) 
-- [Информация о хранении](/cells/ru/docker/storage/) 
+- [Информация о хранилище](/cells/ru/docker/storage/) 

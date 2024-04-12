@@ -29,7 +29,7 @@ De viktiga parametrarna beskrivs i följande tabell:
 | namn| sträng| Arbetsbokens namn|
 | importJsonRequest| klass| Importera json-förfrågan.|
 | Lösenord| sträng| Lösenordet för arbetsboken.|
-| mapp| sträng| Original arbetsboksmapp.|
+| mapp| sträng|Original arbetsboksmapp.|
 | lagringsnamn| sträng| Lagringsnamn.|
 | outPath| sträng| Utdatafilens sökväg.|
 | outStorageName| sträng| Lagringsnamn för utdatafil.|
@@ -56,7 +56,7 @@ De viktiga parametrarna beskrivs i följande tabell:
 
 ## Cloud SDK-familj
 
-Att använda en SDK är det bästa sättet att påskynda utvecklingen. En SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-förråd](https://github.com/aspose-cells-cloud) för en komplett lista med Aspose.Cells Cloud SDK.
+ Att använda en SDK är det bästa sättet att påskynda utvecklingen. En SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-förråd](https://github.com/aspose-cells-cloud) för en komplett lista med Aspose.Cells Cloud SDK.
 
 Följande kodexempel visar hur man ringer till Aspose.Cells webbtjänster med olika SDK:er:
 

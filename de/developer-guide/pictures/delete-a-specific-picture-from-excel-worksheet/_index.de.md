@@ -24,7 +24,7 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
 |:- |:- |:- |:- |
 | Name| Zeichenfolge| Weg|Der Name der Arbeitsmappe.|
 | Blattname| Zeichenfolge| Weg| Der Name des Arbeitsblatts.|
-| pictureIndex| ganze Zahl| Weg|Bildindex|
+| pictureIndex| ganze Zahl| Weg| Bildindex|
 | Ordner| Zeichenfolge| Abfrage| Der Arbeitsmappenordner.|
 | Speichername| Zeichenfolge| Abfrage| Speichername.|
  

@@ -1,16 +1,16 @@
 ﻿---
-title: Depo
+title: Depolama
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/storage/
 keywords: disc-usage, file version, exist
-description: Aspose.Cells Cloud REST API, yükleme, indirme, silme, kopyalama ve klasör taşımayı destekler. SDK, geliştirme dili türlerini destekler. Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift'i içerir
+description: Aspose.Cells Cloud REST API, klasörün yüklenmesini, indirilmesini, silinmesini, kopyalanmasını ve taşınmasını destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 100
 ---
-Aspose.Cells Bulut, API'leri çalıştıran depolama türleri sağlar.
+Aspose.Cells Bulut, çeşitli depolama işletim API'leri sağlar.
 
-- [Depolamanın var olup olmadığı nasıl kontrol edilir.](/cells/tr/storage/exist/)
-- [Dosya veya klasörün var olup olmadığı nasıl kontrol edilir.](/cells/tr/storage/object-exists/)
-- [Disk kullanımı nasıl alınır.](/cells/tr/storage/disc/)
-- [Dosya sürümleri nasıl alınır.](/cells/tr/storage/file-versions/)
+- [Depolamanın mevcut olup olmadığı nasıl kontrol edilir?](/cells/tr/storage/exist/)
+- [Dosya veya klasörün var olup olmadığı nasıl kontrol edilir?](/cells/tr/storage/object-exists/)
+- [Disk kullanımı nasıl elde edilir?](/cells/tr/storage/disc/)
+- [Dosya sürümleri nasıl alınır?](/cells/tr/storage/file-versions/)
 

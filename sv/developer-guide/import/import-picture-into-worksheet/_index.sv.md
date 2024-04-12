@@ -31,7 +31,7 @@ De viktiga parametrarna beskrivs i följande tabell:
 |Parameternamn|Typ|Beskrivning|
 |:- |:- |:- |
 | UpperLeftRow| int||
-|Övre vänstra kolumnen| int||
+| Övre vänstra kolumnen| int||
 | Nedre högerrad| int||
 | Nedre högerkolumn| int||
 | Filnamn| sträng||

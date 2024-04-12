@@ -7,7 +7,7 @@ aliases: [/how-to-run-docker-container/]
 description: Hur man kör Docker Aspose.Cells Molncontainer. Aspose.Cells Cloud stöder Excel för att skapa, konvertera, sammanfoga, dela, skydda, inre objektoperation och så vidare
 weight: 100
 ---
- De**Hamnarbetare** Tekniken är utformad för att automatisera distributionen av applikationerna genom att använda lätta behållare. Utvecklare kan använda en**Docker Container** att avsluta ett program med alla dess bibliotek och beroenden och distribuera allt som ett enda paket.
+ De**Hamnarbetare** Tekniken är utformad för att automatisera distributionen av applikationerna genom att använda lätta behållare. Utvecklare kan använda en**Docker container** att avsluta ett program med alla dess bibliotek och beroenden och distribuera allt som ett enda paket.
 
  Aspose.Cells Cloud-teamet har publicerat Docker Container på[Docker Hub](https://hub.docker.com/r/aspose/cells-cloud) för att underlätta Docker-användarna. Följande avsnitt kommer att guida dig hur du kör ett Docker-kommandon eller skriver konfiguration i en Yaml-fil för Docker-skrivverktyget.
 

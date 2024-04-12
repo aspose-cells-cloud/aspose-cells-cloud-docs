@@ -1,12 +1,12 @@
 ﻿---
-title: Добавьте цифровую подпись для рабочей книги Excel.
+title: Добавить цифровую подпись для рабочей книги Excel
 second_title: Aspose.Cells Cloud Documen
 linktitle: Цифровая подпись
 type: docs
 url: /ru/workbook/digital-signature/
 aliases: [/protect/digital-signature/]
 keywords: Add digital signature for an Excel workbook
-description: Aspose.Cells Cloud REST API поддерживает добавление цифровой подписи для книги Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и swift.
+description: Aspose.Cells Cloud REST API поддерживает добавление цифровой подписи для книги Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 35
 ---
  Этот REST API указывает на добавление `digital signature` для книги Excel.
@@ -22,15 +22,15 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/digitalsignature
  
 | Имя параметра| Тип| Путь/строка запроса/HTTPBody|Описание|
 |:- |:- |:- |:- |
-| имя| нить| путь| Название рабочей книги.|
+| имя| нить| путь| Имя рабочей книги.|
 | файл цифровой подписи| нить| запрос| Параметры файла цифровой подписи.|
 | пароль| нить| запрос||
 | папка| нить| запрос| Папка рабочей тетради.|
 | имя_хранилища| нить| запрос| имя хранилища.|
  
-[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostDigitalSignature) определяет общедоступный программный интерфейс и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostDigitalSignature) определяет общедоступный интерфейс программирования и позволяет выполнять взаимодействие с REST непосредственно из веб-браузера.
  
-Вы можете использовать инструмент командной строки cURL для простого доступа к веб-службам Aspose.Cells. В следующем примере показано, как звонить в Cloud API с номером cURL.
+Вы можете использовать инструмент командной строки cURL для легкого доступа к веб-службам Aspose.Cells. В следующем примере показано, как позвонить на Cloud API с помощью cURL.
  
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
  
@@ -64,9 +64,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/" \
  
 ## Семейство облачных SDK
  
- Использование SDK — лучший способ ускорить разработку. SDK позаботится о низкоуровневых деталях и позволит вам сосредоточиться на задачах вашего проекта. Пожалуйста, ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) полный список Aspose.Cells Cloud SDK.
+ Использование SDK — лучший способ ускорить разработку. SDK заботится о деталях низкого уровня и позволяет вам сосредоточиться на задачах проекта. Пожалуйста, ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для получения полного списка Aspose.Cells Cloud SDK.
  
-В следующих примерах кода показано, как выполнять вызовы веб-служб Aspose.Cells с помощью различных SDK.
+Следующие примеры кода демонстрируют, как выполнять вызовы веб-служб Aspose.Cells с использованием различных SDK:
  
 {{< tabs tabTotal="9" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" tabName9="Python" >}}
 

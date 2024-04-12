@@ -6,13 +6,13 @@ type: docs
 url: /es/list-objects/update/
 aliases: [/update-a-list-object-or-table-inside-the-worksheet/,/tables/update/]
 keywords: Update a list object(table) in an Excel worksheet
-description: Aspose.Cells Cloud REST API admite la actualización de un objeto de lista (tabla) en una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift
+description: Aspose.Cells Cloud REST API admite la actualización de un objeto de lista (tabla) en una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 20
 ---
 Este REST API indica a `update` a `list object` propiedades.
 
  
-## RESET API
+## RSET API
  
 ```bash
  
@@ -24,11 +24,11 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobject
 | Nombre del parámetro| Tipo| Ruta/Cadena de consulta/Cuerpo HTTP|Descripción|
 |:- |:- |:- |:- |
 | nombre| cadena| camino| Nombre del documento.|
-| hojaNombre| cadena| camino| El nombre de la hoja de cálculo.|
-| listObjectIndex| entero| camino|lista Índice de objetos|
-| listaObjeto|| cuerpo| listObject dto en el cuerpo de la solicitud.|
+| nombre de la hoja| cadena| camino| El nombre de la hoja de trabajo.|
+| lista de índice de objetos| entero| camino| lista índice de objetos|
+| lista de objetos|| cuerpo| listObject dto en el cuerpo de la solicitud.|
 | carpeta| cadena| consulta| Carpeta del documento.|
-| NombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
+| nombredealmacenamiento| cadena| consulta| nombre del almacenamiento.|
  
  El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObject) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
  
@@ -65,11 +65,11 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet7/listob
  
 {{< /tabs >}}
  
-## Familia SDK de la nube
+## Familia de SDK en la nube
  
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se ocupa de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor, echa un vistazo a la[repositorio GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de Cloud.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor revisa el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de nube.
  
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código demuestran cómo realizar llamadas a servicios web Aspose.Cells utilizando varios SDK:
  
  
  

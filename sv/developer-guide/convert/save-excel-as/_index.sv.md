@@ -26,7 +26,7 @@ Denna REST API indikerar till `save` excel-fil som annan filformat.
 
 |**API**|**Typ**|**Beskrivning**|**Resurslänk**|
 |:- |:- |:- |:- |
-|/celler/{namn}/saveAs|POSTA|Exportera arbetsbok till format|[PostDocumentSaveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)|
+|/cells/{name}/saveAs|POSTA|Exportera arbetsbok till format|[PostDocumentSaveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)|
 
  De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) definierar ett allmänt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
 

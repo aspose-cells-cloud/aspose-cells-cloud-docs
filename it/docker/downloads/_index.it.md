@@ -3,7 +3,7 @@ title: Scarica
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/docker/downloads/
-description: Scarica le immagini di Aspose.Cells Cloud Docker
+description: Scarica Aspose.Cells Immagini Cloud Docker
 weight: 30
 ---
 ##  Windows Server 2016 ##

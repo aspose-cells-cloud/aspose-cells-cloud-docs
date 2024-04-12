@@ -35,7 +35,7 @@ Detta REST API opererar cellobjekt `task`.
 | ChartIndex| heltal||
 | ChartType| sträng||
 | UpperLeftRow| heltal||
-|Övre vänstra kolumnen| heltal||
+| Övre vänstra kolumnen| heltal||
 | Nedre högerrad| heltal||
 | Nedre högerkolumn| heltal||
 | Område| sträng||
@@ -106,7 +106,7 @@ Detta REST API opererar cellobjekt `task`.
 | namn| sträng||
 | SheetType| sträng||
 | Nytt namn| sträng||
-| Flyttförfrågan| Objekt||
+| MovingRequest| Objekt||
 
 ## REST API
 

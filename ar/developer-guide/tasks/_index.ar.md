@@ -5,7 +5,7 @@ type: docs
 url: /ar/tasks/
 aliases: [/working-with-tasks/]
 keywords: REST API, task, spreadsheets, exce
-description: "Cells.Cloud API لـ Excel تعمل: تشغيل Excel مع المهام"
+description: "Cells.Cloud API لـ Excel تشغيل: تشغيل Excel مع المهام"
 weight: 100
 ---
 ## العمل مع المهام.
@@ -17,4 +17,4 @@ weight: 100
 - [العمل مع مهمة ImportData](/cells/ar/working-with-importdata-task/)
 - [العمل مع مهمة SaveResult](/cells/ar/working-with-saveresult-task/)
 - [العمل مع مهمة SmartMarker](/cells/ar/working-with-smartmarker-task/)
-- [العمل مع ورقة العمل - يعمل في المهمة API](/cells/ar/working-with-worksheetoperates-in-task-api/)
+- [العمل مع ورقة العمل تعمل في المهمة API](/cells/ar/working-with-worksheetoperates-in-task-api/)

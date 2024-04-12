@@ -1,15 +1,15 @@
 ﻿---
-title: Excel çalışma sayfasındaki bir filtreyi silme
+title: Excel çalışma sayfasındaki filtreyi silme
 second_title: Aspose.Cells Cloud Documen
 linktitle: Filtreyi sil
 type: docs
 url: /tr/delete-filter/
 aliases: [/delete-a-filter-for-a-filter-column/,/delete-auto-filter/]
 keywords: Deletes a filter on an Excel worksheet
-description: Aspose.Cells Bulut API, Excel çalışma sayfasındaki bir filtrenin silinmesini destekler. SDK, geliştirme dillerini destekler. Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift'i içerir
+description: Aspose.Cells Bulut API, Excel çalışma sayfasındaki bir filtrenin silinmesini destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 100
 ---
-Bu REST API, bir Excel Çalışma Sayfasında bir `filter`'in silineceğini belirtir.
+Bu REST API, Excel Çalışma Sayfasındaki `filter`'in silineceğini belirtir.
 
 ## RSET API
 
@@ -25,22 +25,22 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilt
 | isim| sicim| Yol|Çalışma kitabı adı.|
 | sayfaAdı| sicim| Yol| Çalışma sayfası adı.|
 |menzil|sicim| Sorgu||
-|alan dizini|tamsayı| Sorgu||
-|tarihSaatGruplamaTürü|sicim| Sorgu| Gün/Saat/Dakika/Ay/Saniye/Yıl|
+|alanIndex|tamsayı| Sorgu||
+|dateTimeGroupingType|sicim| Sorgu| Gün/Saat/Dakika/Ay/Saniye/Yıl|
 |yıl|tamsayı| Sorgu||
 |ay|tamsayı| Sorgu||
 |gün|tamsayı| Sorgu||
 |saat|tamsayı| Sorgu||
 |dakika|tamsayı| Sorgu||
 |ikinci|tamsayı| Sorgu||
-|Maç Boşlukları|sicim| Sorgu|doğru yanlış|
-|yenile|sicim| Sorgu|doğru yanlış|
+|maçBoşluklar|sicim| Sorgu|doğru yanlış|
+|yenileme|sicim| Sorgu|doğru yanlış|
 |dosya|sicim| Sorgu|Orijinal çalışma kitabı klasörü.|
 |depolamaAdı|sicim| Sorgu|Depolama adı.|
 
- bu[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/AutoFilter/DeleteWorksheetFilter) herkesin erişebileceği bir programlama arabirimi tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/AutoFilter/DeleteWorksheetFilter) herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
 
-Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Cloud API'e nasıl çağrı yapılacağını gösterir.
+Aspose.Cells web servislerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnekte, cURL ile Cloud API'e nasıl çağrı yapılacağı gösterilmektedir.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
@@ -75,9 +75,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFil
 
 ## Bulut SDK Ailesi
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, alt düzey ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen kontrol edin[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+ SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük düzeyli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanıza olanak tanır. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
 
-Aşağıdaki kod örnekleri, çeşitli SDK'lar kullanılarak Aspose.Cells web hizmetlerine nasıl çağrı yapılacağını gösterir:
+Aşağıdaki kod örnekleri, çeşitli SDK'ları kullanarak Aspose.Cells web hizmetlerine nasıl çağrı yapılacağını gösterir:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,17 +1,17 @@
 ﻿---
-title: قم بفك تجميع الأعمدة في Excel
+title: قم بفك تجميع الأعمدة في ورقة عمل Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: أونغرو
+linktitle: Ungro
 type: docs
 url: /ar/columns/ungroup/
 aliases: [/ungroup-columns-in-an-excel-worksheet/, /ungroup-columns-in-excel-worksheet/]
 keywords: Ungroup column on an Excel workshee
-description: Aspose.Cells Cloud REST API يدعم عمود فك التجميع في ورقة عمل Excel. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
+description: Aspose.Cells Cloud REST API يدعم عمود فك التجميع في ورقة عمل Excel. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 70
 ---
-يشير هذا REST API إلى فك تجميع أعمدة ورقة العمل.
+يشير REST API إلى فك تجميع أعمدة ورقة العمل.
  
-## RSET API
+## رسيت API
  
 ```bash
  
@@ -20,17 +20,17 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/colu
 ```
  معلمات الطلب هي:
  
-| اسم المعلمة| يكتب| المسار / سلسلة الاستعلام / HTTPBody|وصف|
+| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/HTTPBody|وصف|
 |:- |:- |:- |:- |
 | اسم| خيط| طريق|اسم المصنف.|
 | اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| الفهرس الأول| عدد صحيح| استفسار| سيتم تشغيل فهرس العمود الأول.|
+| firstIndex| عدد صحيح| استفسار| فهرس العمود الأول المراد تشغيله.|
 | lastIndex| عدد صحيح| استفسار| فهرس العمود الأخير المراد تشغيله.|
-| مجلد| خيط| استفسار| مجلد المستند.|
+| مجلد| خيط| استفسار| مجلد المستندات.|
 | اسم التخزين| خيط| استفسار| اسم التخزين.|
 
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostUngroupWorksheetColumns) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
+ ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostUngroupWorksheetColumns) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك تنفيذ تفاعلات REST مباشرة من متصفح الويب.
 
  يمكنك استخدام**cURL** أداة سطر الأوامر للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
 
@@ -66,9 +66,9 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ce
 
 ## عائلة Cloud SDK
 
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. يعتني SDK بالتفاصيل منخفضة المستوى ويتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة من Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام حزم SDK متنوعة:
+توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 

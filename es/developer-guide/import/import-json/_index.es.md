@@ -29,7 +29,7 @@ Los parámetros importantes se describen en la siguiente tabla:
 | nombre| cadena| El nombre del libro de trabajo|
 | importarJsonRequest| clase| Importar solicitud json.|
 | contraseña| cadena| La contraseña del libro de trabajo.|
-| carpeta| cadena| Carpeta del libro de trabajo original.|
+| carpeta| cadena|Carpeta del libro de trabajo original.|
 | nombredealmacenamiento| cadena| Nombre del almacenamiento.|
 | camino de salida| cadena| Ruta del archivo de salida.|
 | outStorageName| cadena| Nombre de almacenamiento para el archivo de salida.|
@@ -56,7 +56,7 @@ Los parámetros importantes se describen en la siguiente tabla:
 
 ## Familia de SDK en la nube
 
-Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor revisa el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de nube.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor revisa el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de nube.
 
 Los siguientes ejemplos de código demuestran cómo realizar llamadas a servicios web Aspose.Cells utilizando varios SDK:
 

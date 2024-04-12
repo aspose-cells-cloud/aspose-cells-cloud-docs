@@ -1,7 +1,11 @@
 ﻿---
 title: 列表对象插入切片器
-description: 为列表对象插入切片器。
+second_title: Aspose.Cells Cloud Documen
+linktitle: 插入切片
+type: docs
+keywords: Insert slicer for list object
 url: /zh/list-objects/insert-slicer/
+description: 为列表对象插入切片器。
 weight: 20
 ---
 此 REST API 表示在 Excel 工作表上插入列表对象的切片器。

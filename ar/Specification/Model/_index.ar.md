@@ -1,0 +1,413 @@
+﻿---
+title: نموذج
+second_title: Aspose.Cells Cloud Documen
+type: docs
+weight: 50
+---
+- [ObjectExistsExtensions](objectexistsextensions)  :   
+- [إصدار الملف](fileversion)  :   
+- [ملف التخزين](storagefile) : معلومات الملف أو المجلد
+- [GoogleDriveStorageFile](googledrivestoragefile)  :   
+- [فوق المتوسط](aboveaverage) وصف قاعدة التنسيق الشرطي فوق المتوسط. تقوم قاعدة التنسيق الشرطي هذه بتمييز الخلايا التي تكون أعلى أو أقل من المتوسط لجميع القيم الموجودة في النطاق.
+- [AbstractCalculationEngine](abstractcalculationengine) : يمثل محرك الحساب المخصص للمستخدم لتوسيع محرك الحساب الافتراضي Aspose.Cells.
+- [AbstractCalculationMonitor](abstractcalculationmonitor) : مراقب للمستخدم لتتبع التقدم المحرز في حساب الصيغة.
+- [فلتر السيارات](autofilter)  :   
+- [خيارات AutoFitter](autofitteroptions)  :   
+- [حدود](border)  :   
+- [خيارات الحساب](calculationoptions)  :   
+- [خلية](cell)  :   
+- [منطقة الخلية](cellarea)  :   
+- [Cells](cells)  :   
+- [CellsCloudFileInfo](cellscloudfileinfo) : Cells وصف معلومات الملف السحابي.
+- [لون الخلايا](cellscolor)  :   
+- [خصائص وثيقة الخلايا](cellsdocumentproperties) : Excel عقار
+- [CellsDocumentProperty](cellsdocumentproperty) : Cells خاصية الوثيقة .
+- [لون](color) : لون.
+- [مرشح الألوان](colorfilter) : مرشح الألوان.
+- [مقياس الألوان](colorscale) : وصف قاعدة التنسيق الشرطي ColorScale. تقوم قاعدة التنسيق الشرطي هذه بإنشاء تدرج ألوان متدرج على الخلايا.
+- [عمود](column)  :   
+- [أعمدة](columns)  :   
+- [تعليق](comment)  :   
+- [تعليقات](comments)  :   
+- [تنسيق مشروط](conditionalformatting)  :   
+- [أيقونة التنسيق الشرطي](conditionalformattingicon)  :   
+- [التنسيقات الشرطية](conditionalformattings)  :   
+- [قيمة التنسيق الشرطي](conditionalformattingvalue)  :   
+- [خيارات النسخ](copyoptions) : يمثل خيارات النسخ.
+- [معايير التصفية المتعددة](criteriamultiplefilter)  :   
+- [تصفية مخصص](customfilter)  :   
+- [شريط البيانات](databar) : وصف قاعدة التنسيق الشرطي لـ DataBar. تعرض قاعدة التنسيق الشرطي شريط بيانات متدرجًا في نطاق الخلايا.
+- [DataBarBorder](databarborder)  :   
+- [تنظيف البيانات](datacleansing) : تنظيف البيانات
+- [DataColumnFillValue](datacolumnfillvalue)  :   
+- [تعبئة البيانات](datafill)  :   
+- [قيمة تعبئة البيانات](datafillvalue)  :   
+- [فارز البيانات](datasorter) : وصف ملخص لـ DataSorter.
+- [DataSorterKey](datasorterkey) : يمثل مفتاح فارز البيانات.
+- [DateTimeGroupItem](datetimegroupitem)  :   
+- [منطقة إلغاء البيانات المكررة](deduplicationregion)  :   
+- [مرشح ديناميكي](dynamicfilter)  :   
+- [معلومات الملف](fileinfo) : معلومات الملف
+- [نتيجة الملفات](filesresult)  :   
+- [FilterColumn](filtercolumn)  :   
+- [الخط](font)  :   
+- [إعداد الخط](fontsetting)  :   
+- [FormatCondition](formatcondition)  :   
+- [FormulaFormatCondition](formulaformatcondition)  :   
+- [إعدادات الصيغة](formulasettings) : إعدادات الصيغ والحساب.
+- [إعدادات العولمة](globalizationsettings) : يمثل إعدادات العولمة.
+- [HorizontalPageBreak](horizontalpagebreak)  :   
+- [فواصل الصفحات الأفقية](horizontalpagebreaks)  :   
+- [الارتباط التشعبي](hyperlink)  :   
+- [الارتباطات التشعبية](hyperlinks)  :   
+- [مرشح الأيقونات](iconfilter)  :   
+- [IconSet](iconset) وصف قاعدة التنسيق الشرطي IconSet. تطبق قاعدة التنسيق الشرطي هذه الرموز على الخلايا وفقًا لقيمها.
+- [وصلة](link)  :   
+- [LinkElement](linkelement)  :   
+- [خيارات التحميل](loadoptions)  :   
+- [MergedCell](mergedcell)  :   
+- [الخلايا المدمجة](mergedcells)  :   
+- [مرشح متعدد](multiplefilter)  :   
+- [مرشحات متعددة](multiplefilters)  :   
+- [اسم](name)  :   
+- [الأسماء](names)  :   
+- [تنسيق شريط سلبي](negativebarformat) : يمثل إعدادات الألوان لأشرطة البيانات للقيم السالبة التي تم تحديدها بواسطة قاعدة التنسيق الشرطي لشريط البيانات.
+- [قسم الصفحة](pagesection)  :   
+- [اعداد الصفحة](pagesetup)  :   
+- [خيارات اللصق](pasteoptions) : يمثل خيارات اللصق الخاصة.
+- [خيارات PDF الأمنية](pdfsecurityoptions)  :   
+- [حماية](protection) : يمثل الأنواع المختلفة لخيارات الحماية المتاحة لورقة العمل.
+- [ProtectSheetParameter](protectsheetparameter)  :   
+- [جدول الاستعلام](querytable) : يمثل معلومات جدول الاستعلام.
+- [يتراوح](range)  :   
+- [نطاقات](ranges)  :   
+- [صف](row)  :   
+- [الصفوف](rows)  :   
+- [حفظ النتيجة](saveresult)  :   
+- [خيارات الحفظ المرقّمة](paginatedsaveoptions) : يمثل خيارات ترقيم الصفحات.
+- [قيمة واحدة](singlevalue)  :   
+- [مفتاح الفرز](sortkey)  :   
+- [SplitResult](splitresult)  :   
+- [SplitResultDocument](splitresultdocument)  :   
+- [أسلوب](style)  :   
+- [StyleFormatCondition](styleformatcondition)  :   
+- [الأنماط](styles)  :   
+- [TextFormatCondition](textformatcondition)  :   
+- [TextItem](textitem)  :   
+- [عناصر نصية](textitems)  :   
+- [خيارات النص](textoptions)  :   
+- [لون الموضوع](themecolor)  :   
+- [TimePeriodFormatCondition](timeperiodformatcondition)  :   
+- [أعلى 10](top10) وصف قاعدة التنسيق الشرطي Top10. تقوم قاعدة التنسيق الشرطي هذه بتمييز الخلايا التي تقع قيمها في قوس N العلوي أو N السفلي، كما هو محدد.
+- [مرشح Top10](top10filter)  :   
+- [تصديق](validation)  :   
+- [التحقق من الصحة](validations)  :   
+- [VerticalPageBreak](verticalpagebreak)  :   
+- [فواصل الصفحات العمودية](verticalpagebreaks)  :   
+- [دفتر العمل](workbook)  :   
+- [إعدادات المصنف](workbooksettings)  :   
+- [ورقة عمل](worksheet)  :   
+- [أوراق عمل](worksheets)  :   
+- [حماية الكتابة](writeprotection) : تحديد إعدادات الحماية ضد الكتابة لمصنف.
+- [XmlDataBinding](xmldatabinding) : يمثل معلومات ربط بيانات Xml.
+- [XmlMap](xmlmap) : يمثل معلومات خريطة XML.
+- [CellsObjectOperateTaskParameter](cellsobjectoperatetaskparameter)  :   
+- [ConvertTaskParameter](converttaskparameter)  :   
+- [ConvertWorksheetTaskParameter](convertworksheettaskparameter)  :   
+- [مصدر الملف](filesource)  :   
+- [نوع مصدر الملف](filesourcetype)  :   
+- [ImportDataTaskParameter](importdatataskparameter)  :   
+- [النتيجةالوجهة](resultdestination)  :   
+- [نوع الوجهة النتيجة](resultdestinationtype)  :   
+- [مصدر النتيجة](resultsource)  :   
+- [SaveFilesToCloudResult](savefilestocloudresult)  :   
+- [SaveResultTaskParameter](saveresulttaskparameter)  :   
+- [SmartMarkerTaskParameter](smartmarkertaskparameter)  :   
+- [SplitWorkbookTaskParameter](splitworkbooktaskparameter)  :   
+- [TaskData](taskdata)  :   
+- [وصف المهمة](taskdescription)  :   
+- [معلمة المهمة](taskparameter)  :   
+- [TaskResultParameter](taskresultparameter)  :   
+- [TaskRunResult](taskrunresult)  :   
+- [نوع المهمة](tasktype)  :   
+- [ChartOperateParameter](chartoperateparameter)  :   
+- [ListObjectOperateParameter](listobjectoperateparameter)  :   
+- [كائن تشغيل](operateobject)  :   
+- [OperateObjectPosition](operateobjectposition)  :   
+- [OperateObjectType](operateobjecttype)  :   
+- [معلمة التشغيل](operateparameter)  :   
+- [نوع التشغيل](operatetype)  :   
+- [PageBreakOperateParameter](pagebreakoperateparameter)  :   
+- [PageSetupOperateParameter](pagesetupoperateparameter)  :   
+- [PivotTableOperateParameter](pivottableoperateparameter)  :   
+- [ShapeOperateParameter](shapeoperateparameter)  :   
+- [WorkbookOperateParameter](workbookoperateparameter)  :   
+- [إعدادات المصنفOperateParameter](workbooksettingsoperateparameter)  :   
+- [ورقة عملOperateParameter](worksheetoperateparameter)  :   
+- [ListColumn](listcolumn)  :   
+- [ListObject](listobject)  :   
+- [كائنات القائمة](listobjects)  :   
+- [إعدادات العولمة المحورية](pivotglobalizationsettings) : يمثل إعدادات العولمة للجداول المحورية.
+- [DifSaveOptions](difsaveoptions) : يمثل خيارات حفظ ملف dif.
+- [DocxSaveOptions](docxsaveoptions) : يمثل خيارات حفظ ملف .docx.
+- [هتملسافيوبتيونس](htmlsaveoptions) : يمثل خيارات حفظ ملف .html.
+- [خيارات حفظ الصورة](imagesaveoptions) : يمثل خيارات حفظ ملف الصورة.
+- [JsonSaveOptions](jsonsaveoptions) يمثل خيارات حفظ ملف .json.
+- [خيارات تخفيض السعر](markdownsaveoptions) : يمثل خيارات حفظ ملف .md.
+- [MHtmlSaveOptions](mhtmlsaveoptions) : يمثل خيارات حفظ ملف .mhtml.
+- [OdsSaveOptions](odssaveoptions) : يمثل خيارات حفظ ملف .ods.
+- [خيارات OoxmlSave](ooxmlsaveoptions) : يمثل خيارات حفظ ملف ooxml.
+- [خيارات حفظ PDF](pdfsaveoptions) : يمثل خيارات حفظ ملف pdf.
+- [خيارات PptxSave](pptxsaveoptions) : يمثل خيارات حفظ ملف pptx.
+- [خيارات الحفظ](saveoptions) : يمثل جميع خيارات الحفظ
+- [جدول البياناتML2003SaveOptions](spreadsheetml2003saveoptions) : يمثل خيارات حفظ ملف .xml.
+- [خيارات سقلسكريبتيسيف](sqlscriptsaveoptions) : يمثل خيارات حفظ ملف .sql.
+- [خيارات SvgSave](svgsaveoptions) : يمثل خيارات حفظ ملف .svg.
+- [خيارات تكستسيف](txtsaveoptions) : يمثل خيارات حفظ ملف .txt.
+- [خيارات xlsbSave](xlsbsaveoptions) : يمثل خيارات حفظ ملف .xlsb.
+- [XlsSaveOptions](xlssaveoptions) : يمثل خيارات حفظ ملف .xls.
+- [خيارات XpsSave](xpssaveoptions) : يمثل خيارات حفظ ملف .xps.
+- [تحليلExcelResponse](analyzeexcelresponse)  :   
+- [ArcShapeResponse](arcshaperesponse)  :   
+- [استجابة التصفية التلقائية](autofilterresponse)  :   
+- [الاستجابة التلقائية](autoshaperesponse)  :   
+- [الاستجابة للأشكال التلقائية](autoshapesresponse)  :   
+- [استجابة المحور](axisresponse)  :   
+- [استجابة الحدود](borderresponse)  :   
+- [ButtonResponse](buttonresponse)  :   
+- [CalculateFormulaResponse](calculateformularesponse)  :   
+- [رد الخلية](cellresponse)  :   
+- [CellsCloudFileInfoResponse](cellscloudfileinforesponse)  :   
+- [CellsCloudResponse](cellscloudresponse)  :   
+- [CellsDocumentPropertiesResponse](cellsdocumentpropertiesresponse)  :   
+- [CellsDocumentPropertyResponse](cellsdocumentpropertyresponse)  :   
+- [استجابة رسم الخلايا](cellsdrawingresponse)  :   
+- [استجابة الخلايا](cellsresponse)  :   
+- [منطقة الرسم البيانيالاستجابة](chartarearesponse)  :   
+- [ChartDataTableResponse](chartdatatableresponse)  :   
+- [استجابة تشارتبوينت](chartpointresponse)  :   
+- [استجابة نقاط الرسم البياني](chartpointsresponse)  :   
+- [استجابة الرسم البياني](chartresponse)  :   
+- [استجابة الرسوم البيانية](chartsresponse)  :   
+- [CheckBoxResponse](checkboxresponse)  :   
+- [استجابة العمود](columnresponse)  :   
+- [استجابة الأعمدة](columnsresponse)  :   
+- [comboBoxResponse](comboboxresponse)  :   
+- [رد التعليق](commentresponse)  :   
+- [تعليق الشكلالاستجابة](commentshaperesponse)  :   
+- [رد التعليقات](commentsresponse)  :   
+- [استجابة التنسيق الشرطي](conditionalformattingresponse)  :   
+- [استجابة التنسيقات الشرطية](conditionalformattingsresponse)  :   
+- [DataLabelsResponse](datalabelsresponse)  :   
+- [DisplayUnitLabelResponse](displayunitlabelresponse)  :   
+- [DropBarsResponse](dropbarsresponse)  :   
+- [خطأ بارالاستجابة](errorbarresponse)  :   
+- [فيلفورماتريسبونس](fillformatresponse)  :   
+- [FindResponse](findresponse)  :   
+- [FloorResponse](floorresponse)  :   
+- [رد النموذج](formresponse)  :   
+- [استجابة النماذج](formsresponse)  :   
+- [استجابة GroupBox](groupboxresponse)  :   
+- [HorizontalPageBreakResponse](horizontalpagebreakresponse)  :   
+- [HorizontalPageBreaksResponse](horizontalpagebreaksresponse)  :   
+- [استجابة الارتباط التشعبي](hyperlinkresponse)  :   
+- [استجابة الارتباطات التشعبية](hyperlinksresponse)  :   
+- [استجابة التسمية](labelresponse)  :   
+- [LegendEntriesResponse](legendentriesresponse)  :   
+- [LegendEntryResponse](legendentryresponse)  :   
+- [رد الأسطورة](legendresponse)  :   
+- [استجابة الخط](lineresponse)  :   
+- [استجابة LineShape](lineshaperesponse)  :   
+- [ListBoxResponse](listboxresponse)  :   
+- [ListObjectResponse](listobjectresponse)  :   
+- [ListObjectsResponse](listobjectsresponse)  :   
+- [MergedCellResponse](mergedcellresponse)  :   
+- [استجابة الخلايا المدمجة](mergedcellsresponse)  :   
+- [رد الاسم](nameresponse)  :   
+- [رد الأسماء](namesresponse)  :   
+- [OleObjectResponse](oleobjectresponse)  :   
+- [OleObjectsResponse](oleobjectsresponse)  :   
+- [الاستجابة البيضاوية](ovalresponse)  :   
+- [استجابة أقسام الصفحة](pagesectionsresponse)  :   
+- [استجابة إعداد الصفحة](pagesetupresponse)  :   
+- [استجابة الصورة](pictureresponse)  :   
+- [رد الصور](picturesresponse)  :   
+- [الاستجابة المحورية](pivotfieldresponse)  :   
+- [استجابة مرشح المحور](pivotfilterresponse)  :   
+- [استجابة عوامل التصفية المحورية](pivotfiltersresponse)  :   
+- [PivotTableResponse](pivottableresponse)  :   
+- [استجابة الجداول المحورية](pivottablesresponse)  :   
+- [PlotAreaResponse](plotarearesponse)  :   
+- [استجابة زر الراديو](radiobuttonresponse)  :   
+- [استجابة المدى](rangeresponse)  :   
+- [استجابة النطاقات](rangesresponse)  :   
+- [RangeValueResponse](rangevalueresponse)  :   
+- [RectangleShapeResponse](rectangleshaperesponse)  :   
+- [استجابة الصف](rowresponse)  :   
+- [استجابة الصفوف](rowsresponse)  :   
+- [SaveFilesToCloudResultResponse](savefilestocloudresultresponse)  :   
+- [حفظ الاستجابة](saveresponse)  :   
+- [ScrollBarResponse](scrollbarresponse)  :   
+- [استجابة السلسلة](seriesesresponse)  :   
+- [استجابة السلسلة](seriesresponse)  :   
+- [استجابة الشكل](shaperesponse)  :   
+- [استجابة الأشكال](shapesresponse)  :   
+- [استجابة فردية القيمة](singlevalueresponse)  :   
+- [SparklineGroupResponse](sparklinegroupresponse)  :   
+- [SparklineGroupsResponse](sparklinegroupsresponse)  :   
+- [رد الدوار](spinnerresponse)  :   
+- [SplitResultResponse](splitresultresponse)  :   
+- [رد ستايل](styleresponse)  :   
+- [TaskRunResultResponse](taskrunresultresponse)  :   
+- [TextBoxResponse](textboxresponse)  :   
+- [TextItemResponse](textitemresponse)  :   
+- [TextItemsResponse](textitemsresponse)  :   
+- [استجابة القراد](ticklabelsresponse)  :   
+- [استجابة العنوان](titleresponse)  :   
+- [استجابة خط الاتجاه](trendlineresponse)  :   
+- [استجابة خطوط الاتجاه](trendlinesresponse)  :   
+- [رد التحقق من الصحة](validationresponse)  :   
+- [رد التحقق من الصحة](validationsresponse)  :   
+- [VerticalPageBreakResponse](verticalpagebreakresponse)  :   
+- [VerticalPageBreaksResponse](verticalpagebreaksresponse)  :   
+- [استجابة الجدران](wallsresponse)  :   
+- [WorkbookReplaceResponse](workbookreplaceresponse)  :   
+- [استجابة المصنف](workbookresponse)  :   
+- [استجابة إعدادات المصنف](workbooksettingsresponse)  :   
+- [استجابة المصنفات](workbooksresponse)  :   
+- [ورقة العملReplaceResponse](worksheetreplaceresponse)  :   
+- [استجابة ورقة العمل](worksheetresponse)  :   
+- [استجابة أوراق العمل](worksheetsresponse)  :   
+- [تحليل طلب Excel](analyzeexcelrequest)  :   
+- [BatchConvertRequest](batchconvertrequest) : يشير إلى طلب ملف تحويل الدفعة
+- [BatchLockRequest](batchlockrequest) : يشير إلى طلب ملف القفل الدفعي
+- [طلب حماية الدفعة](batchprotectrequest) : يشير إلى طلب ملف حماية الدفعة
+- [BatchSplitRequest](batchsplitrequest)  :   
+- [طلب تصفية الألوان](colorfilterrequest) : يشير إلى طلب مرشح الألوان
+- [تحويل المعلمة](convertparameter) : يشير إلى تحويل المعلمة
+- [إنشاءPivotTableRequest](createpivottablerequest) : يشير إلى إنشاء طلب جدول محوري
+- [طلب تنظيف البيانات](datacleansingrequest) : طلب تنظيف البيانات لملف جدول بيانات.
+- [طلب إزالة البيانات المكررة](datadeduplicationrequest)  :   
+- [طلب تعبئة البيانات](datafillrequest)  :   
+- [طلب حذف غير كامل](deleteincompleterowsrequest)  :   
+- [ImportJsonRequest](importjsonrequest) : يشير إلى طلب استيراد بيانات XML
+- [استيرادXMLRequest](importxmlrequest) : يشير إلى طلب استيراد بيانات XML
+- [طلب مطابقة الحالة](matchconditionrequest) : يشير إلى حالة المطابقة التي يجب معالجتها لاسم الملف.
+- [طلب كلمة المرور](passwordrequest) : يستخدم لنقل بيانات كلمة المرور.
+- [PivotTableFieldRequest](pivottablefieldrequest) : يشير إلى طلب حقل الجدول المحوري
+- [طلب حماية Workbook](protectworkbookrequest) : يشير إلى طلب حماية المصنف
+- [طلب نسخ النطاق](rangecopyrequest) : يشير إلى طلب نسخ النطاق
+- [RangeSetOutlineBorderRequest](rangesetoutlineborderrequest) يشير إلى طلب الحدود التفصيلية لمجموعة النطاق.
+- [RangeSetStyleRequest](rangesetstylerequest) : يشير إلى طلب نمط مجموعة النطاق.
+- [طلب ترتيب النطاق](rangesortrequest) : يشير إلى طلب فرز النطاق
+- [TableTotalRequest](tabletotalrequest) : يشير إلى إجمالي طلب الجدول
+- [طلب TextWaterMarker](textwatermarkerrequest) : يشير إلى طلب علامة مائية نصية.
+- [طلب تشفير المصنف](workbookencryptionrequest) : يُستخدم بواسطة طلبات تشفير/فك تشفير المصنف.
+- [طلب حماية المصنف](workbookprotectionrequest) : يُستخدم بواسطة طلبات حماية المصنف.
+- [طلب نقل ورقة العمل](worksheetmovingrequest) : يستخدم بواسطة طلبات نقل المصنف.
+- [خيارات الصورة أو الطباعة](imageorprintoptions)  :   
+- [RenderingFont](renderingfont)  :   
+- [تقديم العلامة المائية](renderingwatermark)  :   
+- [PivotField](pivotfield)  :   
+- [مرشح محوري](pivotfilter) : يمثل PivotFilter في مجموعة PivotFilter.
+- [PivotItem](pivotitem)  :   
+- [جدول محوري](pivottable)  :   
+- [الجداول المحورية](pivottables)  :   
+- [CustomParserConfig](customparserconfig)  :   
+- [Import2DimensionDoubleArrayOption](import2dimensiondoublearrayoption)  :   
+- [Import2DimensionIntArrayOption](import2dimensionintarrayoption)  :   
+- [Import2DimensionStringArrayOption](import2dimensionstringarrayoption)  :   
+- [قيمة الخلية](cellvalue)  :   
+- [ImportBatchDataOption](importbatchdataoption)  :   
+- [ImportCSVDataOption](importcsvdataoption)  :   
+- [ImportDataType](importdatatype)  :   
+- [استيرادDoubleArrayOption](importdoublearrayoption)  :   
+- [ImportIntArrayOption](importintarrayoption)  :   
+- [خيار الاستيراد](importoption)  :   
+- [ImportPictureOption](importpictureoption)  :   
+- [موضع الاستيراد](importposition)  :   
+- [ImportStringArrayOption](importstringarrayoption)  :   
+- [شكل قوس](arcshape)  :   
+- [منطقة](area)  :   
+- [شكل تلقائي](autoshape)  :   
+- [الأشكال التلقائية](autoshapes)  :   
+- [زر](button)  :   
+- [رسم الخلايا](cellsdrawing)  :   
+- [خانة الاختيار](checkbox)  :   
+- [صندوق التحرير](combobox)  :   
+- [شكل التعليق](commentshape)  :   
+- [تنسيق التعبئة](fillformat)  :   
+- [استمارة](form)  :   
+- [نماذج](forms)  :   
+- [ملء الانحدار](gradientfill)  :   
+- [GradientFillStop](gradientfillstop)  :   
+- [صندوق المجموعة](groupbox)  :   
+- [شكل المجموعة](groupshape)  :   
+- [ملصق](label)  :   
+- [خط](line) : يقوم بتغليف الكائن الذي يمثل تنسيق الخط.
+- [تنسيق الخط](lineformat)  :   
+- [شكل خط](lineshape)  :   
+- [ListBox](listbox)  :   
+- [كائن أوله](oleobject)  :   
+- [كائنات أولية](oleobjects)  :   
+- [بيضاوي](oval)  :   
+- [تعبئة الأنماط](patternfill)  :   
+- [PicFormatOption](picformatoption)  :   
+- [صورة](picture)  :   
+- [الصور](pictures)  :   
+- [زر الراديو](radiobutton)  :   
+- [شكل مستطيل](rectangleshape)  :   
+- [شريط التمرير](scrollbar)  :   
+- [تأثير الظل](shadoweffect)  :   
+- [شكل](shape)  :   
+- [الأشكال](shapes)  :   
+- [ملء الصلبة](solidfill)  :   
+- [سبينر](spinner)  :   
+- [مربع الكتابة](textbox)  :   
+- [TextureFill](texturefill)  :   
+- [TilePicOption](tilepicoption)  :   
+- [توقيع إلكتروني](digitalsignature) : التوقيع في الملف.
+- [محور](axis)  :   
+- [جدول](chart)  :   
+- [منطقة الرسم البياني](chartarea)  :   
+- [ChartDataTable](chartdatatable)  :   
+- [إطار الرسم البياني](chartframe)  :   
+- [إعدادات عولمة الرسم البياني](chartglobalizationsettings) : يمثل إعدادات العولمة للمخطط.
+- [تشارتبوينت](chartpoint)  :   
+- [نقاط الرسم البياني](chartpoints)  :   
+- [الرسوم البيانية](charts)  :   
+- [شكل الرسم البياني](chartshape) : كائن شكل الرسم البياني
+- [DataLabels](datalabels)  :   
+- [DisplayUnitLabel](displayunitlabel)  :   
+- [DropBars](dropbars)  :   
+- [شريط خطأ](errorbar)  :   
+- [أرضية](floor)  :   
+- [أسطورة](legend)  :   
+- [LegendEntries](legendentries)  :   
+- [LegendEntry](legendentry)  :   
+- [علامة](marker)  :   
+- [منطقة الأرض](plotarea)  :   
+- [مسلسل](series)  :   
+- [عناصر السلسلة](seriesitems)  :   
+- [خط التألق](sparkline) : يمثل خط المؤشر مخططًا أو رسمًا صغيرًا في خلية ورقة عمل يوفر تمثيلاً مرئيًا للبيانات.
+- [SparklineGroup](sparklinegroup)  :   
+- [SparklineGroups](sparklinegroups) : يغلف مجموعة من كائنات Aspose.Cells.Charts.SparklineGroup.
+- [علامات التجزئة](ticklabels)  :   
+- [عنوان](title)  :   
+- [خط الاتجاه](trendline)  :   
+- [خطوط الاتجاه](trendlines)  :   
+- [الجدران](walls)  :   
+- [ColumnDataExceptionDescription](columndataexceptiondescription)  :   
+- [فئة النص](textcategorytype)  :   
+- [وصف العمود التحليلي](analyzedcolumndescription) كيفية استخدام خصائص كل عمود: مقسم حاليا إلى خط زمني، خط إنتاج، خط إحصائيات رقمية كيفية تقديم المنتج، خطة موحدة كيفية حل مشكلة الرقمية الكاملة؟ النص الكامل كيفية حلها؟ عمودين: نص، الرقم هو الأسهل ثلاثة أعمدة: نص، نص، نص رقم، رقم، رقم --- تاريخ التاريخ؛ التاريخ رقمي ; رقمي رقمي ماذا عن أربعة أعمدة، خمسة أعمدة؟
+- [النتيجة التحليلية](analyzedresult)  :   
+- [تحليل الجدول الوصف](analyzedtabledescription)  :   
+- [نوع مصدر التاريخ](datesourcetype)  :   
+- [نوع الإخراج المقترح](suggestedoutputtype)  :   
+- [تحليل الاقتراح](analyzesuggestion)  :   
+- [DiscoverChart](discoverchart)  :   
+- [DiscoverPivotTable](discoverpivottable)  :   
+- [ExcelDataStatistics](exceldatastatistics)  :   
+- [إحصائيات ورقة العمل](worksheetdatastatistics)  :   
+- [خطأ](error) : خطأ
+- [تفاصيل الخطأ](errordetails) : تفاصيل الخطأ

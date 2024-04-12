@@ -11,7 +11,7 @@ Datenvalidierung ist eine Funktion in MS Excel, mit der gesteuert wird, was ein 
 
 Beispielsweise kann ein Benutzer eine Besprechung angeben, die zwischen 9:00 und 18:00 Uhr geplant ist.
 
-Da wir die Datenvalidierung in Excel verwenden können, um sicherzustellen, dass es sich bei einem Wert um eine positive Zahl handelt, um ein Datum zwischen 15 und 30, um sicherzustellen, dass ein Datum in den nächsten 30 Tagen liegt, oder um sicherzustellen, dass eine Texteingabe weniger als 25 Zeichen usw. hat.
+Da wir die Datenvalidierung in Excel verwenden können, um sicherzustellen, dass ein Wert eine positive Zahl ist, ein Datum zwischen 15 und 30, stellen Sie sicher, dass ein Datum in den nächsten 30 Tagen liegt, oder stellen Sie sicher, dass eine Texteingabe weniger als 25 Zeichen usw. hat.
 
 ## Arbeiten mit Validierungen an einer Excel-Datei.
 

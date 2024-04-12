@@ -1,14 +1,14 @@
 ﻿---
-title: Excel workboo ile çalışma
+title: Excel çalışma belleğine geçerek çalışma
 second_title: Aspose.Cells Cloud Documen
 linktitle: Ge
 type: docs
 url: /tr/workbook/get/
 keywords: Working with getting on an Excel workbook
-description: Aspose.Cells Cloud REST API, Excel çalışma kitabına alma ile çalışma desteği. SDK, geliştirme dili türlerini destekler. Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift'i içerir
+description: Aspose.Cells Cloud REST API, Excel çalışma kitabını almayla çalışmayı destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 100
 ---
-## Excel çalışma kitabını almakla çalışmak.
+## Excel çalışma kitabını alarak çalışıyorum.
 
-- [Excel çalışma kitabında sayfa sayısı nasıl alınır.](/cells/tr/workbook/get/page-count/)
-- [Excel çalışma kitabında adlar nasıl alınır?](/cells/tr/workbook/get/names/)
+- [Excel çalışma kitabındaki sayfa sayımı nasıl yapılır?](/cells/tr/workbook/get/page-count/)
+- [Excel çalışma kitabındaki adlar nasıl alınır?](/cells/tr/workbook/get/names/)

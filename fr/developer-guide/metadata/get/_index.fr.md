@@ -1,11 +1,11 @@
 ﻿---
-title: Obtenir les métadonnées du fichier Excel
+title: Récupérer les métadonnées du fichier Excel
 second_title: Aspose.Cells Cloud Documen
 linktitle: Obtenez sans utiliser de stockage
 type: docs
 url: /fr/metadata/get/
 keywords: Get properties from Excel files
-description: Aspose.Cells Cloud REST API prend en charge l'obtention de propriétés à partir de fichiers Excel. SDK prend en charge les types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift
+description: Aspose.Cells Cloud REST API prend en charge l'obtention de propriétés à partir de fichiers Excel. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 23
 ---
 Ce REST API indique d'obtenir `metadata` à partir de plusieurs fichiers Excel.
@@ -20,10 +20,10 @@ POST https://api.aspose.cloud/v3.0/cells/metadata/get
 
 |Le nom du paramètre|Taper|Description|
 |:- |:- |:- |
-| taper| chaîne| TOUT/Intégré/Personnalisé|
+| taper| chaîne| TOUS/Intégré/Personnalisé|
 
 
-- **Paramètre de corps de requête**
+- **Paramètre du corps de la demande**
 
 |Le nom du paramètre|Taper|Description|
 |:- |:- |:- |
@@ -47,9 +47,9 @@ POST https://api.aspose.cloud/v3.0/cells/metadata/get
     ]
 }
 ```
-- **Famille SDK Cloud**
+- **Famille de SDK Cloud**
 
- L'utilisation d'un SDK est le meilleur moyen d'accélérer le développement. Un SDK prend en charge les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Veuillez consulter le[Référentiel GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Cloud Aspose.Cells.
+ Utiliser un SDK est le meilleur moyen d’accélérer le développement. Un SDK prend en charge les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Veuillez consulter le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
 
 Les exemples de code suivants montrent comment effectuer des appels vers les services Web Aspose.Cells à l'aide de divers SDK :
 

@@ -6,12 +6,12 @@ type: docs
 url: /es/pivot-tables/convert-table-to-pivottable/
 aliases: [/create-a-pivottable-with-table/,/create-new-pivot-table-with-list-object-as-source-data/]
 keywords: Create a pivot table with list object. Convert list object to pivot table
-description: Aspose.Cells Cloud REST API admite la creación de una tabla dinámica con un objeto de lista. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift
+description: Aspose.Cells Cloud REST API admite la creación de una tabla dinámica con un objeto de lista. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 60
 ---
-Este REST API indica crear un `pivottable` con objeto de lista.
+Este REST API indica crear un `pivottable` con un objeto de lista.
  
-## RESET API
+## RSET API
  
 ```bash
  
@@ -23,12 +23,12 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobject
 | Nombre del parámetro| Tipo| Ruta/Cadena de consulta/Cuerpo HTTP|Descripción|
 |:- |:- |:- |:- |
 | nombre| cadena| camino||
-| hojaNombre| cadena| camino||
-| listObjectIndex| entero| camino||
-| destsheetName| cadena| consulta||
+| nombre de la hoja| cadena| camino||
+| lista de índice de objetos| entero| camino||
+| nombre de la hoja de destino| cadena| consulta||
 | pedido|| cuerpo||
 | carpeta| cadena| consulta||
-| NombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
+| nombredealmacenamiento| cadena| consulta| nombre del almacenamiento.|
  
  El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObjectSummarizeWithPivotTable) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
  
@@ -65,10 +65,10 @@ curl -v "https://api-qa.aspose.cloud/v3.0/cells/TestCase.xlsx/worksheets/Sheet2/
  
 {{< /tabs >}}
  
-## Familia SDK de la nube
+## Familia de SDK en la nube
  
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se ocupa de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor, echa un vistazo a la[repositorio GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de Cloud.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor revisa el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de nube.
  
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código demuestran cómo realizar llamadas a servicios web Aspose.Cells utilizando varios SDK:
  
  

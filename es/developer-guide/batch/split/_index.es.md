@@ -4,12 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/batch/split
 keywords: Batch split Excel file
-description: Aspose.Cells Cloud API admite archivos divididos por lotes. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift
+description: Aspose.Cells Cloud API admite archivos divididos por lotes. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 100
 ---
-Este REST API indica al `batch split` de expediente elegible.
+Este REST API indica el `batch split` del archivo elegible.
  
-## RESET API
+## RSET API
  
 ```bash
  
@@ -22,15 +22,15 @@ POST http://api.aspose.cloud/v3.0/cells/batch/split
 |:- |:- |:- |:- |
 | Solicitud de división por lotes|| cuerpo||
 
-**Propiedades de BatchSplitRequest**
+**Propiedades de solicitud de división por lotes**
  
-Nombre | Tipo | Descripción | notas
+Nombre | Tipo | Descripción | Notas
 ------------ | ------------- | ------------- | -------------
- Carpeta de origen | cadena | | [opcional]Almacenamiento de origen | cadena | | [opcional]Condición de coincidencia | Solicitud de condición de coincidencia | | [opcional]Formato | cadena | | [opcional]FromIndex | entero | | [opcional]ToIndex | entero | | [opcional]Carpeta de salida | cadena | | [opcional]GuardarOpciones | GuardarOpciones | | [opcional]**Propiedades de MatchConditionRequest**
+ Carpeta de origen | cadena | | [opcional]Almacenamiento de origen | cadena | | [opcional]Condición de coincidencia | Solicitud de condición de coincidencia | | [opcional]Formato | cadena | | [opcional]DesdeIndex | entero | | [opcional]ToIndex | entero | | [opcional]Carpeta exterior | cadena | | [opcional]Guardar Opciones | GuardarOpciones | | [opcional]**Propiedades de MatchConditionRequest**
  
-Nombre | Tipo | Descripción | notas
+Nombre | Tipo | Descripción | Notas
 ------------ | ------------- | ------------- | -------------
- RegexPatrón | cadena | | [opcional]Condiciones de coincidencia completa | cadena[]| | [opcional] El[Especificación de API abierta](https://reference.aspose.cloud/cells/#/Batch/PostBatchsplit) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+ Patrón de expresión regular | cadena | | [opcional]Condiciones de coincidencia completa | cadena[]| | [opcional]El[Especificación de API abierta](https://reference.aspose.cloud/cells/#/Batch/PostBatchsplit) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
  
 Puede utilizar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
  
@@ -64,11 +64,11 @@ curl -v "http://api.aspose.cloud/v3.0/cells/batch/split" \
  
 {{< /tabs >}}
  
-## Familia SDK de la nube
+## Familia de SDK en la nube
  
-Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se ocupa de los detalles de bajo nivel y le permite concentrarse en sus tareas divididas. Por favor, echa un vistazo a la[repositorio GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de Cloud.
+Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel y le permite concentrarse en sus tareas divididas. Por favor revisa el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de nube.
  
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código demuestran cómo realizar llamadas a servicios web Aspose.Cells utilizando varios SDK:
  
  
   

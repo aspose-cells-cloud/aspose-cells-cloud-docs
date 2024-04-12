@@ -1,12 +1,12 @@
 ﻿---
-title: Combinar Cells en Excel Hoja de trabajo
+title: Fusionar Cells en la hoja de trabajo Excel
 type: docs
 url: /es/merge-cells-in-excel-worksheet/
 weight: 110
 ---
 Este REST API indica `merge` celdas en un archivo Excel.
 
-## RESET API
+## RSET API
  
 ```bash
  
@@ -17,14 +17,14 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/merg
  
 | Nombre del parámetro| Tipo| Ruta/Cadena de consulta/Cuerpo HTTP|Descripción|
 |:- |:- |:- |:- |
-| nombre| cadena| camino|El nombre del libro.|
-| hojaNombre| cadena| camino| El nombre de la hoja de cálculo.|
-| fila de inicio| entero| consulta| La fila de inicio.|
-| Columna de inicio| entero| consulta| La columna de inicio.|
-| filas totales| entero| consulta| Las filas totales|
-|columnastotales| entero| consulta| Las columnas totales.|
+| nombre| cadena| camino|El nombre del libro de trabajo.|
+| nombre de la hoja| cadena| camino| El nombre de la hoja de trabajo.|
+| inicioFila| entero| consulta| La fila inicial.|
+| columna de inicio| entero| consulta| La columna de inicio.|
+| filas totales| entero| consulta| El total de filas|
+|totalColumnas| entero| consulta| Las columnas totales.|
 | carpeta| cadena| consulta| La carpeta del libro de trabajo.|
-| NombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
+| nombredealmacenamiento| cadena| consulta| nombre del almacenamiento.|
  
  El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/Cells/PostWorksheetMerge) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
  
@@ -60,11 +60,11 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/m
  
 {{< /tabs >}}
  
-## Familia SDK de la nube
+## Familia de SDK en la nube
  
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se ocupa de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor, echa un vistazo a la[repositorio GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de Cloud.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor revisa el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de nube.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código demuestran cómo realizar llamadas a servicios web Aspose.Cells utilizando varios SDK:
 
 
 

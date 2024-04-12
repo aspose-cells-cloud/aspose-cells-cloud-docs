@@ -9,7 +9,7 @@ weight: 20
 ---
  Este REST API indica Obtener formatos condicionales
  
-## RESET API
+## RSET API
  
 ```bash
  
@@ -21,9 +21,9 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditional
 | Nombre del parámetro| Tipo| Ruta/Cadena de consulta/Cuerpo HTTP|Descripción|
 |:- |:- |:- |:- |
 | nombre| cadena| camino||
-| hojaNombre| cadena| camino||
+| nombre de la hoja| cadena| camino||
 | carpeta| cadena| consulta||
-| NombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
+| nombredealmacenamiento| cadena| consulta| nombre del almacenamiento.|
  
  El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/GetWorksheetConditionalFormattings) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
  
@@ -284,8 +284,8 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditi
 {{< /tab >}}
 
 {{< /tabs >}}
-## **Fuente SDK**
-Los SDK de la nube Aspose.Cells se pueden descargar desde la siguiente página:[SDK disponibles](/cells/es/available-sdks/)
+## **Fuente del SDK**
+Los SDK de nube Aspose.Cells se pueden descargar desde la siguiente página:[SDK disponibles](/cells/es/available-sdks/)
 ### **Ejemplos de SDK**
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 

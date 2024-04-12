@@ -1,10 +1,10 @@
 ﻿---
-title: Ottieni MaxColumn da Excel Workshee
+title: Ottieni MaxColumn dal foglio di lavoro Excel
 type: docs
 url: /it/get-maxcolumn-from-excel-worksheet/
 weight: 60
 ---
-Questo REST API indica che gli spettacoli ottengono un `maxcolumn` in un file Excel quando il parametro `cellOrMethodName` è `maxcolumn`.
+Questo REST API indica che viene ottenuto `maxcolumn` in un file Excel quando il parametro `cellOrMethodName` è `maxcolumn`.
 
 - **cURL Esempio**
 
@@ -33,11 +33,11 @@ curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/
 
 {{< /tabs >}}
 
-- **Famiglia di SDK cloud**
+- **Famiglia di SDK Cloud**
 
- L'utilizzo di un SDK è il modo migliore per velocizzare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del tuo progetto. Si prega di controllare il[Deposito GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+ Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si prende cura dei dettagli di basso livello e ti consente di concentrarti sulle attività del tuo progetto. Si prega di controllare il[Repositorio GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK Cloud Aspose.Cells.
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+I seguenti esempi di codice dimostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
 
 
 

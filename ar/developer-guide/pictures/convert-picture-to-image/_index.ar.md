@@ -1,17 +1,17 @@
 ﻿---
-title: احصل على صورة في Excel فيل
+title: احصل على صورة في Excel فلس
 second_title: Aspose.Cells Cloud Documen
-linktitle: Ge
+linktitle: جي
 type: docs
 url: /ar/pictures/get/
 aliases: [/convert-picture-to-image/]
 keywords: Get a picture in an Excel file
-description: Aspose.Cells Cloud REST API دعم الحصول على صورة في ملف Excel. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
+description: Aspose.Cells Cloud REST API يدعم الحصول على صورة في ملف Excel. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 10
 ---
-يشير هذا REST API إلى `get` فهرس صورة من ورقة عمل Excel.
+يشير REST API إلى `get` فهرس صورة تلو الأخرى من ورقة عمل Excel.
  
-## RSET API
+## رسيت API
  
 ```bash
  
@@ -20,16 +20,16 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{p
 ```
  معلمات الطلب هي:
  
-| اسم المعلمة| يكتب| المسار / سلسلة الاستعلام / HTTPBody|وصف|
+| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/HTTPBody|وصف|
 |:- |:- |:- |:- |
 | اسم| خيط| طريق| اسم الملف.|
 | اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| فهرس الصورة| عدد صحيح| طريق| فهرس الصورة.|
-| شكل| خيط| استفسار| تنسيق الكائن الذي تم تصديره.|
-| مجلد| خيط| استفسار| مجلد المستند.|
+| imageIndex| عدد صحيح| طريق| فهرس الصورة.|
+| شكل| خيط| استفسار| تنسيق الكائن المصدر.|
+| مجلد| خيط| استفسار| مجلد المستندات.|
 | اسم التخزين| خيط| استفسار| اسم التخزين.|
  
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Pictures/GetWorksheetPicture) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
+ ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Pictures/GetWorksheetPicture) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك تنفيذ تفاعلات REST مباشرة من متصفح الويب.
  
 يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
  
@@ -63,9 +63,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/picture
  
 ## عائلة Cloud SDK
  
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. يعتني SDK بالتفاصيل منخفضة المستوى ويتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة من Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
  
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام حزم SDK متنوعة:
+توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
  
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}

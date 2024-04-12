@@ -1,18 +1,18 @@
 ﻿---
-title: Importa l'array intero nel foglio di lavoro Excel
-linktitle: Importa intero arra
+title: Importa l'array di numeri interi nel foglio di lavoro Excel
+linktitle: Importa numero intero
 type: docs
 url: /it/import/integer-array/
 aliases: [/import-integer-array-into-excel-worksheet/,/import-integer-array-into-worksheet/,/import-data/integer-array/]
 keywords: Import integer array data into Excel files
-description: Aspose.Cells Cloud REST API supporta l'importazione di dati di array interi in file Excel. L'SDK supporta i tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
+description: Aspose.Cells Cloud REST API supporta l'importazione di dati di array di numeri interi nei file Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 30
 ---
 Questo REST API `import int array data` nel foglio di lavoro Excel.
 
-La richiesta è una richiesta HTTP con contenuto in più parti (vedi[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)O[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). La prima parte del contenuto multipart contiene i dati ImportIntegerArrayOption e la seconda contiene un file di dati.
+La richiesta è una richiesta HTTP con contenuto in più parti (vedi[RFC2046](http://tools.ietf.org/html/rfc2046#page-17)O[RFC1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). La prima parte del contenuto in più parti contiene i dati ImportIntegerArrayOption e la seconda contiene un file di dati.
 
-## RSET API
+## RSETAPI
 
 ```bash
 
@@ -26,16 +26,16 @@ I parametri importanti sono descritti nella tabella seguente:
 
 **ImportIntegerArrayOption**
 
-|Nome parametro|Tipo|Descrizione|
+|Nome del parametro|Tipo|Descrizione|
 |:- |:- |:- |
 | Prima riga| int||
 | Prima colonna| int||
 | È verticale| corda| vero falso.|
 | Dati|Numero intero[]||
 | Foglio di lavoro di destinazione| corda| nome del foglio di lavoro di destinazione.|
-| IsInsert| corda| vero falso.|
-| Tipo di dati di importazione| corda|IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData.|
-| Fonte| FileSource| Indica la posizione del file di dati quando il parametro BatchData è nullo.|
+| IsInserisci| corda| vero falso.|
+| ImportDataType| corda|IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData.|
+| Fonte| FileSource| Indica la posizione del file di dati quando il parametro BatchData è null.|
 
 
 
@@ -54,11 +54,11 @@ I parametri importanti sono descritti nella tabella seguente:
 }
 
 ```
-## Famiglia di SDK cloud
+## Famiglia di SDK Cloud
 
- L'utilizzo di un SDK è il modo migliore per velocizzare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del tuo progetto. Si prega di controllare il[Deposito GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+ Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si prende cura dei dettagli di basso livello e ti consente di concentrarti sulle attività del tuo progetto. Si prega di controllare il[Repositorio GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK Cloud Aspose.Cells.
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+I seguenti esempi di codice dimostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
 
 
 {{< tabs tabTotal="3" tabID="4" tabName1="C#" tabName2="PHP" tabName3="Ruby" >}}

@@ -1,25 +1,25 @@
 ﻿---
-title: Экспорт формы
+title: Экспортная форма
 second_title: Aspose.Cells Cloud Documen
 linktitle: Шап
 type: docs
 url: /ru/export/excel-shape-to-different-formats/
 keywords: Export Excel shape to kinds of format files
-description: Aspose.Cells Cloud REST API поддерживает экспорт формы Excel в различные форматы файлов. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и swift.
+description: Aspose.Cells Cloud REST API поддерживает экспорт фигур Excel в различные форматы файлов. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 20
 ---
- Вы можете экспортировать форматы:[PNG](https://docs.fileformat.com/Image/png/), [гифка](https://docs.fileformat.com/image/gif/), [JPEG](https://docs.fileformat.com/image/jpeg/),  [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [WMF](https://docs.fileformat.com/image/Wmf/).
+ Вы можете экспортировать форматы:[PNG](https://docs.fileformat.com/Image/png/), [гифка](https://docs.fileformat.com/image/gif/), [JPEG](https://docs.fileformat.com/image/jpeg/),  [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [ВМФ](https://docs.fileformat.com/image/Wmf/).
 
 - **ОТДЫХ API**
 
-|**API**|**Тип**|**Описание**|**Свэггер Ссылка**|
+|**API**|**Тип**|**Описание**|**Сваггер Ссылка**|
 |:- |:- |:- |:- |
-|/ячейки/экспорт|ПОМЕЩАТЬ|Экспорт объектов Excel из содержимого запроса в какой-либо формат|[Постэкспорт](https://apireference.aspose.cloud/cells/#/LightCells/PostExport)|
+|/ячейки/экспорт|ПОМЕЩАТЬ|Экспортировать объекты Excel из содержимого запроса в какой-либо формат.|[Постэкспорт](https://apireference.aspose.cloud/cells/#/LightCells/PostExport)|
 
 
-[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) определяет общедоступный программный интерфейс и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) определяет общедоступный интерфейс программирования и позволяет выполнять взаимодействие с REST непосредственно из веб-браузера.
 
- Вы можете использовать**cURL** инструмент командной строки для простого доступа к веб-службам Aspose.Cells. В следующем примере показано, как совершать звонки в Cloud API с номером cURL.
+ Вы можете использовать**cURL** инструмент командной строки для легкого доступа к веб-службам Aspose.Cells. В следующем примере показано, как позвонить на Cloud API с помощью cURL.
 
 
 
@@ -200,9 +200,9 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/export?objectType=shape&format=
 
 - **Семейство облачных SDK**
 
- Использование SDK — лучший способ ускорить разработку. SDK позаботится о низкоуровневых деталях и позволит вам сосредоточиться на задачах вашего проекта. Пожалуйста, ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) полный список Aspose.Cells Cloud SDK.
+ Использование SDK — лучший способ ускорить разработку. SDK заботится о деталях низкого уровня и позволяет вам сосредоточиться на задачах проекта. Пожалуйста, ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для получения полного списка Aspose.Cells Cloud SDK.
 
-В следующих примерах кода показано, как выполнять вызовы веб-служб Aspose.Cells с помощью различных SDK.
+Следующие примеры кода демонстрируют, как выполнять вызовы веб-служб Aspose.Cells с использованием различных SDK:
 
 
 {{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" >}}

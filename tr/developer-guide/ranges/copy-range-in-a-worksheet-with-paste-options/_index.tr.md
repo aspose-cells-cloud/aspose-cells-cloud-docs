@@ -1,15 +1,15 @@
 ﻿---
-title: Yapıştırma Seçeneği Olan Bir Çalışma Sayfasındaki Aralığı Kopyala
+title: Yapıştırma Seçeneğiyle Çalışma Sayfasındaki Kopyalama Aralığı
 second_title: Aspose.Cells Cloud Documen
 linktitle: Polis
 type: docs
 url: /tr/ranges/copy/
 aliases: [/copy-range-in-a-worksheet-with-paste-options/]
 keywords: Copy a range in an Excel worksheet with paste options
-description: Aspose.Cells Cloud REST API, yapıştırma seçenekleriyle Excel çalışma sayfasındaki bir aralığı kopyalamayı destekler. SDK, geliştirme dili türlerini destekler. Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift'i içerir
+description: Aspose.Cells Cloud REST API, Excel çalışma sayfasındaki bir aralığın yapıştırma seçenekleriyle kopyalanmasını destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 20
 ---
-Bu REST API, bir Excel çalışma sayfasındaki çalışma sayfasındaki kopyalama aralığını gösterir.
+Bu REST API, çalışma sayfasındaki aralığın Excel çalışma sayfasına kopyalanacağını belirtir.
  
 ## RSET API
  
@@ -24,13 +24,13 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges
 |:- |:- |:- |:- |
 | isim| sicim| yol| çalışma kitabı adı|
 | sayfaAdı| sicim| yol| çalışma sayfası adı|
-| menzilÇalıştır|| vücut|veri kopyalama,kopya stili,kopyalama,kopyalama değeri|
+| aralıkİşlet|| vücut|veri kopyalama,kopyalama stili,kopyalama,kopyalama değeri|
 | dosya| sicim| sorgu| Çalışma kitabı klasörü.|
 | depolamaAdı| sicim| sorgu| depolama adı.|
  
- bu[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRanges) herkesin erişebileceği bir programlama arabirimi tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRanges) herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
  
-Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Cloud API'e nasıl çağrı yapılacağını gösterir.
+Aspose.Cells web servislerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnekte, cURL ile Cloud API'e nasıl çağrı yapılacağı gösterilmektedir.
  
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
  
@@ -65,9 +65,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/ranges
  
 ## Bulut SDK Ailesi
  
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, alt düzey ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen kontrol edin[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+ SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük düzeyli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanıza olanak tanır. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
  
-Aşağıdaki kod örnekleri, çeşitli SDK'lar kullanılarak Aspose.Cells web hizmetlerine nasıl çağrı yapılacağını gösterir:
+Aşağıdaki kod örnekleri, çeşitli SDK'ları kullanarak Aspose.Cells web hizmetlerine nasıl çağrı yapılacağını gösterir:
  
  
  

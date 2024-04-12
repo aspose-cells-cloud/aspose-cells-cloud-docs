@@ -1,15 +1,15 @@
 ﻿---
-title: Копирует содержимое и форматы с другого рабочего листа
+title: Копирует содержимое и форматы с другого листа.
 second_title: Aspose.Cells Cloud Documen
 linktitle: Полицейский
 type: docs
 url: /ru/worksheets/copy/
 aliases: [/copy-excel-worksheet/]
 keywords: Copies contents and formats from another Excel worksheet
-description: Aspose.Cells Cloud REST API поддерживает копирование содержимого и форматов с другого рабочего листа Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и swift.
+description: Aspose.Cells Cloud REST API поддерживает копирование содержимого и форматов из другого листа Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 20
 ---
- Этот REST API указывает `copy a worksheet` и сохраняет с новым именем в той же книге.
+ Этот REST API указывает на `copy a worksheet` и сохраните его с новым именем в той же книге.
  
 ## РСЕТ API
  
@@ -26,14 +26,14 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/copy
 | имя листа| нить| путь||
 | исходный лист| нить| запрос||
 | параметры|| тело||
-| исходная книга| нить| запрос||
+| источникРабочая книга| нить| запрос||
 | исходная папка| нить| запрос||
 | папка| нить| запрос||
 | имя_хранилища| нить| запрос| имя хранилища.|
  
-[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostCopyWorksheet) определяет общедоступный программный интерфейс и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostCopyWorksheet) определяет общедоступный интерфейс программирования и позволяет выполнять взаимодействие с REST непосредственно из веб-браузера.
  
-Вы можете использовать инструмент командной строки cURL для простого доступа к веб-службам Aspose.Cells. В следующем примере показано, как звонить в Cloud API с номером cURL.
+Вы можете использовать инструмент командной строки cURL для легкого доступа к веб-службам Aspose.Cells. В следующем примере показано, как позвонить на Cloud API с помощью cURL.
  
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
  
@@ -68,9 +68,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/NewSheet/copy
  
 ## Семейство облачных SDK
  
- Использование SDK — лучший способ ускорить разработку. SDK позаботится о низкоуровневых деталях и позволит вам сосредоточиться на задачах вашего проекта. Пожалуйста, ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) полный список Aspose.Cells Cloud SDK.
+ Использование SDK — лучший способ ускорить разработку. SDK заботится о деталях низкого уровня и позволяет вам сосредоточиться на задачах проекта. Пожалуйста, ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для получения полного списка Aspose.Cells Cloud SDK.
  
-В следующих примерах кода показано, как выполнять вызовы веб-служб Aspose.Cells с помощью различных SDK.
+Следующие примеры кода демонстрируют, как выполнять вызовы веб-служб Aspose.Cells с использованием различных SDK:
  
  
  

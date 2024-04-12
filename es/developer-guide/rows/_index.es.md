@@ -5,10 +5,10 @@ type: docs
 url: /es/rows/
 aliases: [/working-with-rows/]
 keywords: Working with rows on an Excel file
-description: Aspose.Cells Cloud REST API admite trabajar con filas en un archivo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift
+description: Aspose.Cells Cloud REST API admite trabajar con filas en un archivo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 100
 ---
-## Trabajando con filas en un archivo Excel.
+## Trabajar con filas en un archivo Excel.
 
 - [Cómo obtener información de una fila en una hoja de trabajo Excel.](/cells/es/rows/get/row/)
 - [Cómo agregar una fila vacía en una hoja de trabajo Excel.](/cells/es/rows/add/row/)

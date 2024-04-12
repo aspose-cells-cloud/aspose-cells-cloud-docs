@@ -13,8 +13,8 @@ weight: 100
 
 - [Archivo de solicitud de soporte en la tarea API](/cells/es/support-request-file-in-task-api/)
 - [Trabajar con la tarea CellsObjectOperate](/cells/es/working-with-cellsobjectoperate-task/)
-- [Trabajar con la tarea de conversión](/cells/es/working-with-convert-task/)
+- [Trabajar con la tarea Convertir](/cells/es/working-with-convert-task/)
 - [Trabajar con la tarea ImportData](/cells/es/working-with-importdata-task/)
-- [Trabajar con la tarea SaveResult](/cells/es/working-with-saveresult-task/)
+- [Trabajar con la tarea GuardarResultado](/cells/es/working-with-saveresult-task/)
 - [Trabajar con la tarea SmartMarker](/cells/es/working-with-smartmarker-task/)
-- [Trabajando con WorksheetOperates en la tarea API](/cells/es/working-with-worksheetoperates-in-task-api/)
+- [Trabajar con WorksheetOperates en la tarea API](/cells/es/working-with-worksheetoperates-in-task-api/)

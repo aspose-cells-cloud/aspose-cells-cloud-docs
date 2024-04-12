@@ -1,13 +1,13 @@
 ﻿---
-title: Существование объекта
+title: Объект существует
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/storage/object-exists/
 keywords: Learn how to check object exist with Aspose Cells Cloud REST API
-description: Узнайте, как проверить существование объекта с помощью Aspose Cells Cloud REST API SDK, поддерживающего различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и swift.
+description: Узнайте, как проверить существование объекта с помощью Aspose Cells Cloud REST API SDK, поддерживающего различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 100
 ---
-Этот REST API указывает проверить, если `file or folder exists`.
+Этот REST API указывает на проверку `file or folder exists`.
  
 ## РСЕТ API
  
@@ -20,14 +20,14 @@ GET http://api.aspose.cloud/v3.0/cells/storage/exist/{path}
  
 | Имя параметра| Тип| Путь/строка запроса/HTTPBody|Описание|
 |:- |:- |:- |:- |
-| путь| нить| путь| Путь к файлу или папке, например «/file.ext» или «/folder»|
+| путь| нить| путь| Путь к файлу или папке, например «/file.ext» или «/folder».|
 | имя_хранилища| нить| запрос| Имя хранилища|
 | идентификатор версии| нить| запрос| Идентификатор версии файла|
 
  
-[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Storage/ObjectExists) определяет общедоступный программный интерфейс и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Storage/ObjectExists) определяет общедоступный интерфейс программирования и позволяет выполнять взаимодействие с REST непосредственно из веб-браузера.
  
-Вы можете использовать инструмент командной строки cURL для простого доступа к веб-службам Aspose.Cells. В следующем примере показано, как звонить в Cloud API с номером cURL.
+Вы можете использовать инструмент командной строки cURL для легкого доступа к веб-службам Aspose.Cells. В следующем примере показано, как позвонить на Cloud API с помощью cURL.
  
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName21="Response" >}}
  
@@ -61,8 +61,8 @@ curl -v "http://api.aspose.cloud/v3.0/cells/storage/exist/Book1.xlsx" \
  
 ## Семейство облачных SDK
  
- Использование SDK — лучший способ ускорить разработку. SDK позаботится о низкоуровневых деталях и позволит вам сосредоточиться на задачах вашего проекта. Пожалуйста, ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) полный список Aspose.Cells Cloud SDK.
+ Использование SDK — лучший способ ускорить разработку. SDK заботится о деталях низкого уровня и позволяет вам сосредоточиться на задачах проекта. Пожалуйста, ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для получения полного списка Aspose.Cells Cloud SDK.
  
-В следующих примерах кода показано, как выполнять вызовы веб-служб Aspose.Cells с помощью различных SDK.
+Следующие примеры кода демонстрируют, как выполнять вызовы веб-служб Aspose.Cells с использованием различных SDK:
  
  

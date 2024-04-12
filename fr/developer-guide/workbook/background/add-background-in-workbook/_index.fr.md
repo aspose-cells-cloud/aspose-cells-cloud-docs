@@ -6,7 +6,7 @@ type: docs
 url: /fr/workbook/background/add/
 aliases: [/add-background-in-workbook/,/workbook/add-background/]
 keywords: Add background on an Excel workbook
-description: Aspose.Cells Cloud REST API prend en charge l'ajout d'arrière-plan sur un classeur Excel sur un fichier Excel. SDK prend en charge les types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift
+description: Aspose.Cells Cloud REST API prend en charge l'ajout d'un arrière-plan sur un classeur Excel sur un fichier Excel. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 160
 ---
 Ce REST API indique d'ajouter `background` sur un classeur Excel.
@@ -16,25 +16,25 @@ Ce REST API indique d'ajouter `background` sur un classeur Excel.
 
 |Le nom du paramètre|Taper|Description|
 |:- |:- |:- |
-|picPath|chaîne|positionnement de l'image.|
+|picChemin|chaîne|position de l'image.|
 |dossier|chaîne|Dossier de classeur d'origine.|
-|nom_stockage|chaîne|Nom de stockage.|
+|Nom de stockage|chaîne|Nom de stockage.|
 
-**Paramètre de corps de requête**
+**Paramètre du corps de la demande**
 
 |Le nom du paramètre|Taper|Description|
 |:- |:- |:- |
-|fichier de données| fichier de données|Le fichier de données est enregistré dans le corps de la requête.|
+|fichier de données| fichier de données|Le fichier de données est enregistré dans le corps de la demande.|
 
 ## REPOS API
 
 |**API**|**Taper**|**Description**|**Lien vers la ressource**|
 |:- |:- |:- |:- |
-|/cellules/{nom}/fond|METTRE|Ajouter un arrière-plan dans un fichier Excel|[PutWorkbookBackground](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookBackground)|
+|/cellules/{nom}/arrière-plan|METTRE|Ajouter un arrière-plan dans un fichier Excel|[PutWorkbookContexte](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookBackground)|
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookBackground) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
+ Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookBackground) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement depuis un navigateur Web.
 
- Vous pouvez utiliser**cURL** outil de ligne de commande pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment passer des appels vers le Cloud API avec cURL.
+ Vous pouvez utiliser**cURL** outil de ligne de commande pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment passer des appels vers Cloud API avec cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
@@ -67,9 +67,9 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/background?picPath=D
 {{< /tabs >}}
 
 
-## Famille SDK Cloud
+## Famille de SDK Cloud
 
- L'utilisation d'un SDK est le meilleur moyen d'accélérer le développement. Un SDK prend en charge les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Veuillez consulter le[Référentiel GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Cloud Aspose.Cells.
+ Utiliser un SDK est le meilleur moyen d’accélérer le développement. Un SDK prend en charge les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Veuillez consulter le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
 
 Les exemples de code suivants montrent comment effectuer des appels vers les services Web Aspose.Cells à l'aide de divers SDK :
 

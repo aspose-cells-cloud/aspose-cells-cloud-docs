@@ -1,14 +1,14 @@
 ﻿---
 title: Obtener metadatos del archivo Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: Obtener sin usar almacenamiento
+linktitle: Obtener sin usar storag
 type: docs
 url: /es/metadata/get/
 keywords: Get properties from Excel files
-description: Aspose.Cells Cloud REST API admite obtener propiedades de archivos de Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift
+description: Aspose.Cells Cloud REST API admite la obtención de propiedades de archivos de Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 23
 ---
-Este REST API indica obtener `metadata` de varios archivos Excel.
+Este REST API indica que se debe obtener `metadata` de varios archivos Excel.
 
 ```bash
 
@@ -23,7 +23,7 @@ POST https://api.aspose.cloud/v3.0/cells/metadata/get
 | tipo| cadena| TODO/Integrado/Personalizado|
 
 
-- **Parámetro del cuerpo de la solicitud**
+- **Solicitar parámetro del cuerpo**
 
 |Nombre del parámetro|Tipo|Descripción|
 |:- |:- |:- |
@@ -47,11 +47,11 @@ POST https://api.aspose.cloud/v3.0/cells/metadata/get
     ]
 }
 ```
-- **Familia SDK de la nube**
+- **Familia de SDK en la nube**
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se ocupa de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor, echa un vistazo a la[repositorio GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de Cloud.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor revisa el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de nube.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código demuestran cómo realizar llamadas a servicios web Aspose.Cells utilizando varios SDK:
 
 
 {{< tabs tabTotal="9" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" tabName9="Python" >}}

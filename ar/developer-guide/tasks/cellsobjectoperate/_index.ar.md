@@ -4,16 +4,16 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/tasks/cells-object-operate/
 aliases: [/working-with-cellsobjectoperate-task/]
-description: "Cells.Cloud API لـ Excel تعمل: مهمة تشغيل كائن الخلايا"
+description: "Cells.Cloud API لـ Excel تشغيل: مهمة تشغيل كائن الخلايا"
 weight: 20
 ---
-يعمل هذا REST API على كائن الخلايا `task`.
+يقوم REST API بتشغيل كائن الخلايا `task`.
 
-**OperateObject**
+**كائن تشغيل**
 
 |اسم المعلمة|يكتب|وصف|
 |:- |:- |:- |
-| OperateObjectType| خيط| Workbook / Worksheet / PageSetup / Cells / Chart / Shape / ListObject / PivotTable / WorkbookSettings / PageBreak|
+| OperateObjectType| خيط| مصنف/ورقة عمل/PageSetup/Cells/Chart/Shape/ListObject/PivotTable/WorkbookSettings/PageBreak|
 | OperateObjectPosition| هدف||
 
 **OperateObjectPosition**
@@ -22,25 +22,25 @@ weight: 20
 |:- |:- |:- |
 | دفتر العمل| هدف||
 | اسم الورقة| خيط||
-| فهرس الرسم البياني| عدد صحيح||
-| الشكل| عدد صحيح||
+| مؤشر الرسم البياني| عدد صحيح||
+| مؤشر الشكل| عدد صحيح||
 | اسم الخلية| خيط||
 | ListObjectIndex| عدد صحيح||
 
 
-**مخطط التشغيلالمعلمة**
+**ChartOperateParameter**
 
 |اسم المعلمة|يكتب|وصف|
 |:- |:- |:- |
-| فهرس الرسم البياني| عدد صحيح||
+| مؤشر الرسم البياني| عدد صحيح||
 | نوع التخطيط| خيط||
 | UpperLeftRow| عدد صحيح||
-|UpperLeftColumn| عدد صحيح||
-| LowerRightRow| عدد صحيح||
+| UpperLeftColumn| عدد صحيح||
+| الصف السفلي لليمين| عدد صحيح||
 | LowerRightColumn| عدد صحيح||
 | منطقة| خيط||
-| عمودي| خيط| خطأ صحيح|
-| فئة البيانات| خيط||
+| IsVertical| خيط| خطأ صحيح|
+| بيانات الفئة| خيط||
 | IsAutoGetSerialName| خيط| خطأ صحيح|
 | منطقة| عنوان||
 
@@ -54,12 +54,12 @@ weight: 20
 
 |اسم المعلمة|يكتب|وصف|
 |:- |:- |:- |
-| PageBreakType| خيط||
+| نوع فاصل الصفحة| خيط||
 | فِهرِس| فِهرِس||
 | صف| عدد صحيح||
 | عمود| عدد صحيح||
 | فهرس البداية| عدد صحيح||
-| EndIndex| عدد صحيح||
+| مؤشر النهاية| عدد صحيح||
 
 
 **PageSetupOperateParameter**
@@ -73,7 +73,7 @@ weight: 20
 
 |اسم المعلمة|يكتب|وصف|
 |:- |:- |:- |
-| DestCellName| خيط||
+| اسم الخلية| خيط||
 | مصدر معلومات| خيط||
 | اسم الطاولة| خيط||
 | استخدم نفس المصدر| خيط| خطأ صحيح|
@@ -91,14 +91,14 @@ weight: 20
 | شكل| هدف||
 
 
-**WorkbookSettingsOperateParameter**
+**إعدادات المصنفOperateParameter**
 
 
 |اسم المعلمة|يكتب|وصف|
 |:- |:- |:- |
 | إعدادات المصنف| هدف||
 
-**ورقة العملOperateParameter**
+**ورقة عملOperateParameter**
 
 
 |اسم المعلمة|يكتب|وصف|
@@ -108,11 +108,11 @@ weight: 20
 | اسم جديد| خيط||
 | طلب متحرك| هدف||
 
-## REST API
+## بقية API
 
 |**API**|**يكتب**|**وصف**|**رابط الموارد**|
 |:- |:- |:- |:- |
-|/ خلايا / مهمة / runtask|بريد|تشغيل المهمة|[PostRunTask](https://apireference.aspose.cloud/cells/#/Task/PostRunTask)|
+|/الخلايا/المهمة/runtask|بريد|تشغيل المهمة|[PostRunTask](https://apireference.aspose.cloud/cells/#/Task/PostRunTask)|
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
+ ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك تنفيذ تفاعلات REST مباشرة من متصفح الويب.
 

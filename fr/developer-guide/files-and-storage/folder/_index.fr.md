@@ -1,10 +1,10 @@
 ﻿---
-title: Plié
+title: Folder
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/folder/
 keywords: Upload, download, delete, copy, and move folder
-description: Aspose.Cells Cloud REST API prend en charge le téléchargement, le téléchargement, la suppression, la copie et le déplacement de dossiers. SDK prend en charge les types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift
+description: Aspose.Cells Cloud REST API prend en charge le téléchargement, la suppression, la copie et le déplacement de dossiers. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 100
 ---
 Aspose.Cells Cloud fournit des types d'API d'exploitation de dossiers.

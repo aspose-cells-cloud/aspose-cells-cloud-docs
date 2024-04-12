@@ -1,19 +1,19 @@
 ﻿---
-title: Importa 2 Dimension String Array in Excel Workshee
+title: Importa una matrice di stringhe a 2 dimensioni nel foglio di lavoro Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: Importa l'arra di stringhe a 2 dimensioni
+linktitle: Importa arra di stringhe a 2 dimensioni
 type: docs
 url: /it/import/2dimension-string-array/
 aliases: [/import-2dimension-string-array-into-excel-worksheet/,/import-2dimension-string-array-into-worksheet/,/import-data/-2dimension-string-array/,/import-data/2dimension-string-array/]
 keywords: Import 2 dimension string array data into Excel files
-description: Aspose.Cells Cloud REST API supporta l'importazione di dati di array di stringhe a 2 dimensioni in file Excel. L'SDK supporta i tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
+description: Aspose.Cells Cloud REST API supporta l'importazione di dati di array di stringhe a 2 dimensioni nei file Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 20
 ---
 Questo REST API `import 2 dimension string array data` nel foglio di lavoro Excel.
 
-La richiesta è una richiesta HTTP con contenuto in più parti (vedi[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)O[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). La prima parte del contenuto multiparte contiene i dati Import2DimensionStringArrayOption e la seconda contiene un file di dati.
+La richiesta è una richiesta HTTP con contenuto in più parti (vedi[RFC2046](http://tools.ietf.org/html/rfc2046#page-17)O[RFC1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). La prima parte del contenuto in più parti contiene i dati Import2DimensionStringArrayOption e la seconda contiene un file di dati.
 
-## RSET API
+## RSETAPI
 
 ```bash
 
@@ -26,15 +26,15 @@ I parametri importanti sono descritti nella tabella seguente:
 
 **Import2DimensionStringArrayOption**
 
-|Nome parametro|Tipo|Descrizione|
+|Nome del parametro|Tipo|Descrizione|
 |:- |:- |:- |
 | Prima riga| int||
 | Prima colonna| int||
 | Dati|Corda[,]||
 | Foglio di lavoro di destinazione| corda| nome del foglio di lavoro di destinazione.|
-| IsInsert| corda| vero falso.|
-| Tipo di dati di importazione| corda|IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData.|
-| Fonte| FileSource| Indica la posizione del file di dati quando il parametro BatchData è nullo.|
+| IsInserisci| corda| vero falso.|
+| ImportDataType| corda|IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData.|
+| Fonte| FileSource| Indica la posizione del file di dati quando il parametro BatchData è null.|
 
 
 
@@ -55,11 +55,11 @@ I parametri importanti sono descritti nella tabella seguente:
 
 ```
 
-## Famiglia di SDK cloud
+## Famiglia di SDK Cloud
 
- L'utilizzo di un SDK è il modo migliore per velocizzare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del tuo progetto. Si prega di controllare il[Deposito GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+ Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si prende cura dei dettagli di basso livello e ti consente di concentrarti sulle attività del tuo progetto. Si prega di controllare il[Repositorio GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK Cloud Aspose.Cells.
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+I seguenti esempi di codice dimostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
 
 {{< tabs tabTotal="3" tabID="4" tabName1="C#" tabName2="PHP" tabName3="Ruby" >}}
 

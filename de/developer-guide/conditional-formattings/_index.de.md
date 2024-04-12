@@ -8,7 +8,7 @@ keywords: REST API, spreadsheets, excel, conditional formattin
 description: "Cells.Cloud API für Excel Funktion: Funktion für bedingte Formatierung"
 weight: 100
 ---
-&nbsp;&nbsp;&nbsp;&nbsp;Mit der bedingten Formatierung in Excel können Sie Zellen abhängig vom Zellwert mit einer bestimmten Farbe hervorheben.
+&nbsp;&nbsp;&nbsp;&nbsp;Mit der bedingten Formatierung in Excel können Sie Zellen abhängig vom Zellenwert mit einer bestimmten Farbe hervorheben.
 
 &nbsp;&nbsp;&nbsp;&nbsp;Verwenden Sie bedingte Formatierung, um Daten visuell zu untersuchen und zu analysieren, kritische Probleme zu erkennen und Muster und Trends zu identifizieren.
 

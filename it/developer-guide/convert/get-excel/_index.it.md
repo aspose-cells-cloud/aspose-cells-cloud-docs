@@ -6,36 +6,36 @@ type: docs
 url: /it/export-different-formats/
 aliases: [/export-excel-workbook-to-different-file-formats/]
 keywords: Get excel files to kinds of format files
-description: Aspose.Cells Cloud REST API supporta l'acquisizione di file excel in tipi di file di formato. L'SDK supporta i tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
+description: Aspose.Cells Cloud REST API supporta l'acquisizione di file Excel in tipi di file di formato. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 10
 ---
-Questo REST API indica il file excel `get` in un file di formato diverso.
+Questo REST API indica il file Excel `get` in un file di formato diverso.
 
 
-**Parametro di ricerca**
+**Parametro di query**
 
-|Nome parametro|Tipo|Descrizione|
+|Nome del parametro|Tipo|Descrizione|
 |:- |:- |:- |
 |formato|corda| formato file (csv/xls/html/mhtml/ods/pdf/xml/txt/tiff/xlsb/xlsm/xlsx/xltm/xltx/xps/png/jpg/gif/emf/bmp/md/Numbers/wmf/svg )|
 |parola d'ordine|corda||
-|isAutoFit|corda|vero falso|
-|onlySaveTable|corda|vero falso|
+|èAdattamento automatico|corda|vero falso|
+|soloSalvatabella|corda|vero falso|
 |outPath|corda|nuova posizione del file.|
-|cartella|corda|Cartella di lavoro originale.|
-|storageName|corda|Nome di archiviazione.|
+|cartella|corda|Cartella della cartella di lavoro originale.|
+|storageName|corda|Nome dell'archivio.|
 
 
 
-## RIPOSO API
+## RESTO API
 
 |**API**|**Tipo**|**Descrizione**|**Collegamento spavaldo**|
 |:- |:- |:- |:- |
-|/celle/{nome}|OTTENERE|Esporta la cartella di lavoro in un altro formato.|[GetWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)|
+|/cellule/{nome}|OTTENERE|Esporta la cartella di lavoro in un altro formato.|[OttieniWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)|
 
 
- IL[Specifica OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook) definisce un'interfaccia di programmazione accessibile pubblicamente e consente di eseguire interazioni REST direttamente da un browser web.
+ IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook) definisce un'interfaccia di programmazione accessibile pubblicamente e consente di eseguire interazioni REST direttamente da un browser web.
 
- Puoi usare**cURL** strumento da riga di comando per accedere facilmente ai servizi Web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate a Cloud API con cURL.
+ Puoi usare**cURL** strumento da riga di comando per accedere facilmente ai servizi web Aspose.Cells. Nell'esempio seguente viene illustrato come effettuare chiamate al Cloud API con cURL.
 
 
 {{< tabs tabTotal="1" tabID="11" tabName11="Request" >}}
@@ -51,11 +51,11 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/book1.xlsx?format=pdf" -H "acce
 
 {{< /tabs >}}
 
-## Famiglia di SDK cloud
+## Famiglia di SDK Cloud
 
- L'utilizzo di un SDK è il modo migliore per velocizzare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del tuo progetto. Si prega di controllare il[Deposito GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+ Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si prende cura dei dettagli di basso livello e ti consente di concentrarti sulle attività del tuo progetto. Si prega di controllare il[Repositorio GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK Cloud Aspose.Cells.
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+I seguenti esempi di codice dimostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
 
 
 {{< tabs tabTotal="3" tabID="3" tabName1="C#" tabName2="Java" tabName3="Go" >}}

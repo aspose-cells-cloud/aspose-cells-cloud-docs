@@ -6,13 +6,13 @@ type: docs
 url: /it/shapes/
 aliases: [/working-with-shapes/,/working-with-images/]
 keywords: Working with shape on an Excel workshee
-description: Come lavorare con la forma su un foglio di lavoro Excel. L'SDK supporta i tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
+description: Come lavorare con la forma su un foglio di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 100
 ---
-## Lavorare con forme su un file Excel.
+## Lavorare con le forme su un file Excel.
 
 - [Come ottenere tutte le forme su un foglio di lavoro Excel.](/cells/it/shapes/get-all/)
-- [Come ottenere una forma per indice all'interno di un foglio di lavoro Excel.](/cells/it/shapes/get/)
+- [Come ottenere una forma tramite Indice all'interno di un foglio di lavoro Excel.](/cells/it/shapes/get/)
 - [Come aggiungere una forma su un foglio di lavoro Excel.](/cells/it/shapes/add/)
 - [Come eliminare tutte le forme su un foglio di lavoro Excel.](/cells/it/shapes/clear/)
 - [Come eliminare una forma per indice su un foglio di lavoro Excel.](/cells/it/shapes/delete/)

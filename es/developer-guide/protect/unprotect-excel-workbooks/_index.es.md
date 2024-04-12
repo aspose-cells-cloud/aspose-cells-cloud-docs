@@ -1,12 +1,12 @@
 ﻿---
-title: Desproteger un libro de trabajo Excel
+title: Desproteger un workbook Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: desproteger
+linktitle: Desproteger
 type: docs
 url: /es/workbook/unprotect/
 aliases: [/unprotect-excel-workbooks/]
 keywords: REST API, spreadsheets, excel, merg
-description: "Cells. Cloud API para Excel operar: proteger un libro de trabajo Excel"
+description: "Cells.Cloud API para Excel operar: proteger un libro de trabajo Excel"
 weight: 60
 ---
 Este REST API desprotege un Excel `workbook`.
@@ -15,16 +15,16 @@ Este REST API desprotege un Excel `workbook`.
 
 |Nombre del parámetro|Tipo|Descripción|
 |:- |:- |:- |
-|carpeta|cadena|Carpeta original del libro de trabajo.|
-|NombreDeAlmacenamiento|cadena|Nombre de almacenamiento.|
+|carpeta|cadena|Carpeta del libro de trabajo original.|
+|nombredealmacenamiento|cadena|Nombre del almacenamiento.|
 
-**Parámetro del cuerpo de la solicitud**
+**Solicitar parámetro del cuerpo**
 
 |Nombre del parámetro|Tipo|Descripción|
 |:- |:- |:- |
-|proteccion|WorkbookProtectionRequest||
+|proteccion|Solicitud de protección del libro de trabajo||
 
-**WorkbookProtectionRequest**
+**Solicitud de protección del libro de trabajo**
 
 |Nombre del parámetro|Tipo|Descripción|
 |:- |:- |:- |
@@ -34,13 +34,13 @@ Este REST API desprotege un Excel `workbook`.
 
 ## DESCANSO API
 
-|**API**|**Tipo**|**Descripción**|**Enlace arrogante**|
+|**API**|**Tipo**|**Descripción**|**Enlace de arrogancia**|
 |:- |:- |:- |:- |
-|/celdas/{nombre}/protección|BORRAR|Desproteger un documento|[EliminarDesprotegerDocumento](https://apireference.aspose.cloud/cells/#/Workbook/DeleteUnProtectDocument)|
+|/celdas/{nombre}/proteccion|BORRAR|Desproteger un documento|[Eliminar documento sin protección](https://apireference.aspose.cloud/cells/#/Workbook/DeleteUnProtectDocument)|
 
  El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/Workbook/DeleteUnProtectDocument) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
 
- Puedes usar**cURL** herramienta de línea de comandos para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo hacer llamadas a Cloud API con cURL.
+ Puedes usar**cURL** Herramienta de línea de comandos para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
@@ -72,11 +72,11 @@ curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/protection" -H "ac
 
 {{< /tabs >}}
 
-## Familia SDK de la nube
+## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se ocupa de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor, echa un vistazo a la[repositorio GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de Cloud.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor revisa el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de nube.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código demuestran cómo realizar llamadas a servicios web Aspose.Cells utilizando varios SDK:
 
 {{< tabs tabTotal="11" tabID="4" tabName1="C#" tabName2="PHP" tabName3="Ruby" tabName4="Java" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" tabName11="Swift" >}}
 

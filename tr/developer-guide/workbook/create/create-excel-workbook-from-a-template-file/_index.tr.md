@@ -1,15 +1,15 @@
 ﻿---
-title: Şablon dosyasıyla Excel çalışma kitabı nasıl oluşturulur?
+title: Şablon dosyasıyla Excel çalışma kitabı nasıl oluşturulur
 second_title: Aspose.Cells Cloud Documen
-linktitle: şablon
+linktitle: Şablon
 type: docs
 url: /tr/workbook/create/template-file/
 aliases: [/create-excel-workbook-from-a-template-file/,/workbook/new-from-a-template-file/]
 keywords: How to create an Excel workbook with a smart marker template
-description: Aspose.Cells Cloud REST API akıllı işaretçi şablonundan Excel çalışma kitabı nasıl oluşturulur. SDK, geliştirme dili türlerini destekler. Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift'i içerir
+description: Aspose.Cells Cloud REST API akıllı işaretleyici şablonundan Excel çalışma kitabının nasıl oluşturulacağı. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 30
 ---
-Bu REST API, bir `template file`'den `workbook` oluşturulmasını belirtir.
+Bu REST API, `template file`'den `workbook` oluşturulacağını belirtir.
 
 **Sorgu Parametresi**
 
@@ -21,7 +21,7 @@ Bu REST API, bir `template file`'den `workbook` oluşturulmasını belirtir.
 |dosya|sicim|Orijinal çalışma kitabı klasörü.|
 |depolamaAdı|sicim|Depolama adı.|
 
-**İstek Gövde Parametresi**
+**Gövde Parametresini Talep Et**
 
 |Parametre adı|Tip|Tanım|
 |:- |:- |:- |
@@ -30,13 +30,13 @@ Bu REST API, bir `template file`'den `workbook` oluşturulmasını belirtir.
 
 ## DİNLENME API
 
-|**API**|**Tip**|**Tanım**|**Havalı Bağlantı**|
+|**API**|**Tip**|**Tanım**|**Swagger Bağlantısı**|
 |:- |:- |:- |:- |
-|/hücreler/{isim}|KOYMAK|Bir şablon dosyasından yeni bir Excel Çalışma Kitabı oluşturun|[PutWorkbookOluştur](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookCreate)|
+|/hücreler/{isim}|KOYMAK|Şablon dosyasından yeni bir Excel Çalışma Kitabı oluşturun|[PutWorkbookCreate](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookCreate)|
 
- bu[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookCreate) herkesin erişebileceği bir programlama arabirimi tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookCreate) herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
 
- Kullanabilirsiniz**cURL** Aspose.Cells web hizmetlerine kolayca erişmek için komut satırı aracı. Aşağıdaki örnek, cURL ile Cloud API'e nasıl çağrı yapılacağını gösterir.
+ Kullanabilirsiniz**cURL** Aspose.Cells web hizmetlerine kolayca erişmek için komut satırı aracı. Aşağıdaki örnekte, cURL ile Cloud API'e nasıl çağrı yapılacağı gösterilmektedir.
 
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
@@ -124,9 +124,9 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/newworkbook.xlsx?templateFile=C
 
 ## Bulut SDK Ailesi
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, alt düzey ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen kontrol edin[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+ SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük düzeyli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanıza olanak tanır. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
 
-Aşağıdaki kod örnekleri, çeşitli SDK'lar kullanılarak Aspose.Cells web hizmetlerine nasıl çağrı yapılacağını gösterir:
+Aşağıdaki kod örnekleri, çeşitli SDK'ları kullanarak Aspose.Cells web hizmetlerine nasıl çağrı yapılacağını gösterir:
 
 
 {{< tabs tabTotal="11" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" tabName11="Swift" >}}

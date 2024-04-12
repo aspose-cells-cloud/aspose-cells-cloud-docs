@@ -1,14 +1,14 @@
 ﻿---
-title: العمل مع كلمة المرور على Excel workboo
+title: العمل بكلمة المرور على مجموعة العمل Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: باسور
+linktitle: كلمة المرور
 type: docs
 url: /ar/workbook/password/
 keywords: Working with password an Excel workbook
-description: Aspose.Cells Cloud REST API دعم العمل بكلمة مرور على مصنف Excel. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
+description: Aspose.Cells Cloud REST API يدعم العمل بكلمة المرور في مصنف Excel. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 100
 ---
-## العمل بكلمة مرور في مصنف Excel.
+## العمل بكلمة المرور على مصنف Excel.
 
-- [كيفية مسح كلمة المرور في مصنف Execl.](/cells/ar/workbook/password/clear/)
-- [كيفية تعيين كلمة المرور في مصنف Execl.](/cells/ar//workbook/password/modify/)
+- [كيفية مسح كلمة المرور على مصنف Execl.](/cells/ar/workbook/password/clear/)
+- [كيفية تعيين كلمة المرور على مصنف Execl.](/cells/ar//workbook/password/modify/)

@@ -88,5 +88,5 @@ cellsInstance.PostMerge(request);
 
 请注意，上述示例代码仅用于演示目的，实际使用时您需要将其替换为有效的身份验证凭据和文件路径。此外，Aspose.Cells 云 API 还提供许多其他功能，例如电子表格创建、编辑、操作和数据处理。详细的API文档和示例代码可以找到[Aspose 官网开发者指南](/developer-guide/).
 
-我们希望本文能帮助您了解如何使用 Aspose.Cells Cloud API 进行文件合并。祝您实施顺利！
+我们希望本文可以帮助您了解如何使用 Aspose.Cells Cloud API 进行文件合并。祝您实施顺利！
 

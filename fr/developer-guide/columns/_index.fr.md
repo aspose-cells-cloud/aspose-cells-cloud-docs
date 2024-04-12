@@ -14,7 +14,7 @@ weight: 100
 - [Comment ajouter une colonne vide sur une feuille de calcul Excel.](/cells/fr/columns/add/)
 - [Comment copier des colonnes sur une feuille de calcul Excel.](/cells/fr/columns/copy/)
 - [Comment masquer des colonnes sur une feuille de calcul Excel.](/cells/fr/columns/hide/)
-- [Comment afficher des colonnes sur une feuille de calcul Excel.](/cells/fr/columns/unhide/)
+- [Comment afficher les colonnes sur une feuille de calcul Excel.](/cells/fr/columns/unhide/)
 - [Comment regrouper des colonnes sur une feuille de calcul Excel.](/cells/fr/columns/group/)
 - [Comment dissocier des colonnes sur une feuille de calcul Excel.](/cells/fr/columns/ungroup/)
 - [Comment supprimer une colonne sur une feuille de calcul Excel.](/cells/fr/columns/delete/)

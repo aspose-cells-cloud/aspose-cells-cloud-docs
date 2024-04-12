@@ -27,7 +27,7 @@ Begärans parametrar är:
 | arknamn| sträng| Väg| Kalkylbladets namn.|
 |räckvidd|sträng| Fråga||
 |fieldIndex|heltal| Fråga||
-|iconSetType|sträng| Fråga| Arrows3/ArrowsGray3/Flags3/Signs3/Symbols3/Symbols32/TrafficLights31/TrafficLights32/Arrows4/ArrowsGray4/Rating4/RedToBlack4/TrafficLights4/Arrows5/Arrows/Arrows/ArrowsGray5R5/Bre/No /CustomSet/Smilies3/ColorSmilies3|
+|iconSetType|sträng| Fråga| Arrows3/ArrowsGray3/Flags3/Signs3/Symbols3/Symbols32/TrafficLights31/TrafficLights32/Arrows4/ArrowsGray4/Rating4/RedToBlack4/TrafficLights4/Arrows5/Arrows/Arrows/ArrowsGray5R5/Bre ustomSet/Smilies3/ColorSmilies3|
 |iconId|heltal| Fråga||
 |matchBlanks|sträng| Fråga|sant falskt|
 |uppdatera|sträng| Fråga|sant falskt|

@@ -3,7 +3,7 @@ title: Даун
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/docker/downloads/
-description: Скачать Aspose.Cells Образы Cloud Docker
+description: Загрузить изображения Cloud Docker Aspose.Cells
 weight: 30
 ---
 ##  Windows Сервер 2016 ##
@@ -23,7 +23,7 @@ docker pull aspose/cells-cloud:ltsc2019.21.9
 ```
 
 
-##  линукс ##
+##  Линукс ##
 
 ```sh
 

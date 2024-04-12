@@ -5,12 +5,12 @@ linktitle: Actualizar sin usar almacenamiento
 type: docs
 url: /es/metadata/update/
 keywords: Update metadata on excel files
-description: Aspose.Cells Cloud REST API admite la actualización de metadatos en archivos de Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift
+description: Aspose.Cells Cloud REST API admite la actualización de metadatos en archivos de Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 35
 ---
-Este REST API indica actualizar `metadata` desde varios archivos Excel.
+Este REST API indica que se debe actualizar `metadata` desde varios archivos Excel.
 
-## RESET API
+## RSET API
  
 ```bash
  
@@ -22,7 +22,7 @@ POST http://api.aspose.cloud/v3.0/cells/metadata/update
 | Nombre del parámetro| Tipo| Ruta/Cadena de consulta/Cuerpo HTTP|Descripción|
 |:- |:- |:- |:- |
 | archivo| archivo| formularioDatos| Subir Archivo|
-| Propiedades del documento|| cuerpo| Cells documento propiedad.|
+| Propiedades del documento|| cuerpo| Cells propiedad del documento.|
  
  El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/PostMetadata) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
  
@@ -72,12 +72,12 @@ curl -v "http://api.aspose.cloud/v3.0/cells/metadata/update" \
  
 {{< /tabs >}}
  
-## Familia SDK de la nube
+## Familia de SDK en la nube
  
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se ocupa de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor, echa un vistazo a la[repositorio GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de Cloud.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor revisa el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de nube.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código demuestran cómo realizar llamadas a servicios web Aspose.Cells utilizando varios SDK:
 
 
 {{< tabs tabTotal="9" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" tabName9="Python" >}}

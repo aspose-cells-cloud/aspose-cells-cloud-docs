@@ -4,6 +4,6 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/batch/
 keywords: Batch processing of multiple excel files
-description: Aspose.Cells Cloud API يدعم المعالجة المجمعة لملفات Excel المتعددة. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
+description: Aspose.Cells كلاود API يدعم المعالجة المجمعة لملفات اكسل المتعددة. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 29
 ---

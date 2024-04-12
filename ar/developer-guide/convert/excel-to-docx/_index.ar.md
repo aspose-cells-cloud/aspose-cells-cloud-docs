@@ -1,37 +1,37 @@
 ﻿---
-title: Excel الى Doc
+title: Excel للدكتور
 second_title: Aspose.Cells Cloud Documen
-linktitle: Excel الى Doc
+linktitle: Excel للدكتور
 type: docs
 url: /ar/convert/excel-to-docx/
 aliases: [/convert-excel-file-to-docx-in-cloud/]
 keywords: Convert excel files to docx files
-description: Aspose.Cells Cloud REST API يدعم تحويل ملفات Excel إلى ملفات docx. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
+description: Aspose.Cells Cloud REST API يدعم تحويل ملفات Excel إلى ملفات docx. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 90
 ---
-هذا REST API `saveas` ملف Excel إلى Docx.
+هذا ملف Excel REST API `saveas` إلى Docx.
 
-[POST / الخلايا / {name} / saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) يتيح لك API حفظ ملف MS Excel كملف Docx بإعدادات إضافية وحفظ النتيجة في وحدة التخزين.
+[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) يتيح لك API حفظ ملف MS Excel كملف Docx مع إعدادات إضافية وحفظ النتيجة في وحدة التخزين.
 
-هذا REST API `convert` ملف Excel إلى Docx.
+هذا ملف Excel REST API `convert` إلى Docx.
 
-[وضع / خلايا / تحويل](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) يتيح لك API تحويل ملف MS Excel إلى ملف Docx بإعدادات إضافية وحفظ النتيجة في الاستجابة.
+[وضع /الخلايا/تحويل](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) يتيح لك API تحويل ملف MS Excel إلى ملف Docx بإعدادات إضافية وحفظ النتيجة في الاستجابة.
 
-هذا REST API `export` ملف Excel إلى Docx.
+هذا ملف Excel REST API `export` إلى Docx.
 
-[الحصول على / الخلايا / {name}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook  ) يتيح لك API تحويل ملف MS Excel إلى ملف Docx بإعدادات إضافية وحفظ النتيجة في الاستجابة.
+[الحصول على /الخلايا/{الاسم}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook  ) يتيح لك API تحويل ملف MS Excel إلى ملف Docx بإعدادات إضافية وحفظ النتيجة في الاستجابة.
 
-## REST API
+## بقية API
 
-|**API**|**يكتب**|**وصف**|**رابط التباهي**|
+|**API**|**يكتب**|**وصف**|**رابط التبختر**|
 |:- |:- |:- |:- |
-|/ خلايا / تحويل|يضع|يحول المصنف من طلب المحتوى إلى تنسيق ما|[PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)|
-|/ خلايا / {name}|يحصل|يصدر المصنف إلى تنسيق آخر.|[GetWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)|
-|/ الخلايا / {name} / saveAs|بريد|تصدير المصنف إلى تنسيق|[PostDocumentSaveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)|
+|/الخلايا/تحويل|يضع|تحويل المصنف من محتوى الطلب إلى بعض التنسيق|[PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)|
+|/الخلايا/{الاسم}|يحصل|تصدير المصنف إلى تنسيق آخر.|[GetWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)|
+|/الخلايا/{name}/saveAs|بريد|تصدير المصنف إلى التنسيق|[PostDocumentSaveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)|
 
 
 
-تحدد واجهات برمجة التطبيقات هذه واجهة برمجة يمكن الوصول إليها بشكل عام وتتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
+تحدد واجهات برمجة التطبيقات هذه واجهة برمجة يمكن الوصول إليها بشكل عام وتتيح لك تنفيذ تفاعلات REST مباشرة من متصفح الويب.
 
  يمكنك استخدام**cURL** أداة سطر الأوامر للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
 
@@ -84,9 +84,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/book1.xlsx?format=html" \
 
 ## عائلة Cloud SDK
 
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. يعتني SDK بالتفاصيل منخفضة المستوى ويتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة من Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام حزم SDK متنوعة:
+توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
 
 
 

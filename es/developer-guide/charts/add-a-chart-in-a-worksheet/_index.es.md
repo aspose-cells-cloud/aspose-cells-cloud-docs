@@ -7,7 +7,7 @@ weight: 20
 ---
 Este REST API indica agregar un nuevo gráfico a la hoja de trabajo.
  
-## RESET API
+## RSET API
  
 ```bash
  
@@ -19,23 +19,23 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts
 | Nombre del parámetro| Tipo| Ruta/Cadena de consulta/Cuerpo HTTP|Descripción|
 |:- |:- |:- |:- |
 | nombre| cadena| camino| Nombre del libro de trabajo.|
-| hojaNombre| cadena| camino| El nombre de la hoja de cálculo.|
-| tipo de gráfico| cadena| consulta| Tipo de gráfico, consulte el tipo de propiedad en el recurso de gráfico.|
+| nombre de la hoja| cadena| camino| El nombre de la hoja de trabajo.|
+| tipo de gráfico| cadena| consulta| Tipo de gráfico, consulte la propiedad Escriba en recurso de gráfico.|
 | fila superior izquierda| entero| consulta|0 |
 | columna superior izquierda| entero| consulta|0 |
 | fila inferior derecha| entero| consulta|0 |
-| columnaderechainferior| entero| consulta|0 |
+| columna inferior derecha| entero| consulta|0 |
 | área| cadena| consulta| Especifica valores a partir de los cuales trazar la serie de datos.|
-| esVertical| booleano| consulta| Verdadero|
-| categoríaDatos| cadena| consulta| Obtiene o establece el rango de valores de Axis de categoría. Puede ser un rango de celdas (como "d1:e10").|
+| es vertical| booleano| consulta| Verdadero|
+| categoríaDatos| cadena| consulta| Obtiene o establece el rango de valores del eje de categoría. Puede ser un rango de celdas (como "d1:e10").|
 | esAutoGetSerialName| booleano| consulta| Verdadero|
 | título| cadena| consulta| Especifica el nombre del título del gráfico.|
 | carpeta| cadena| consulta| La carpeta del libro de trabajo.|
-| NombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
+| nombredealmacenamiento| cadena| consulta| nombre del almacenamiento.|
 |etiquetas de datos| booleano| consulta| Verdadero|
-| dataLabelsPosición| cadena| consulta| Arriba|
-| pivotTableSheet| cadena| consulta||
-| pivotTableName| cadena| consulta||
+| datosEtiquetasPosición| cadena| consulta| Arriba|
+| hoja de tabla dinámica| cadena| consulta||
+| nombre de tabla dinámica| cadena| consulta||
  
  El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/Charts/PutWorksheetAddChart) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
  
@@ -76,11 +76,11 @@ curl  -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cha
 
 {{< /tabs >}}
 
-## Familia SDK de la nube
+## Familia de SDK en la nube
  
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se ocupa de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor, echa un vistazo a la[repositorio GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de Cloud.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor revisa el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de nube.
  
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código demuestran cómo realizar llamadas a servicios web Aspose.Cells utilizando varios SDK:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Objective C" tabName8="Perl" tabName9="Android" tabName10="Go" >}}
 

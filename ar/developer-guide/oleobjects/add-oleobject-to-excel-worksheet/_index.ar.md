@@ -1,17 +1,17 @@
 ﻿---
-title: قم بإضافة عنصر OLE في Excel كائنات عمل
+title: إضافة كائن OLE في ورقة عمل Excel
 second_title: Aspose.Cells Cloud Documen
 linktitle: يضيف
 type: docs
 url: /ar/oleobjects/add/
 aliases: [/add-oleobject-to-excel-worksheet/]
 keywords: Add an OLE object in an Excel worksheet
-description: Aspose.Cells Cloud REST API يدعم إضافة عنصر OLE في ورقة عمل Excel. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
+description: Aspose.Cells Cloud REST API يدعم إضافة كائن OLE في ورقة عمل Excel. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 20
 ---
-يشير هذا REST API إلى `add OLE object` في ورقة عمل Excel.
+يشير REST API إلى `add OLE object` في ورقة عمل Excel.
  
-## RSET API
+## رسيت API
  
 ```bash
  
@@ -20,21 +20,21 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects
 ```
  معلمات الطلب هي:
  
-| اسم المعلمة| يكتب| المسار / سلسلة الاستعلام / HTTPBody|وصف|
+| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/HTTPBody|وصف|
 |:- |:- |:- |:- |
 | اسم| خيط| طريق|اسم المصنف.|
-| اسم الورقة| خيط| طريق| اسم المستقيم.|
+| اسم الورقة| خيط| طريق| اسم الورشة.|
 | كائن أوله|| جسم| كائن أوله|
-| topLeftRow| عدد صحيح| استفسار|0 |
-| topLeftColumn| عدد صحيح| استفسار|0 |
+| UpperLeftRow| عدد صحيح| استفسار|0 |
+| UpperLeftColumn| عدد صحيح| استفسار|0 |
 | ارتفاع| عدد صحيح| استفسار|0 |
 | عرض| عدد صحيح| استفسار|0 |
-| ملف| خيط| استفسار| اسم ملف OLE|
-| ملف الصورة| خيط| استفسار| اسم ملف الصورة|
+| oleFile| خيط| استفسار| اسم ملف OLE|
+| imageFile| خيط| استفسار| اسم ملف الصورة|
 | مجلد| خيط| استفسار| مجلد المصنف.|
 | اسم التخزين| خيط| استفسار| اسم التخزين.|
  
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/OleObjects/PutWorksheetOleObject) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
+ ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/OleObjects/PutWorksheetOleObject) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك تنفيذ تفاعلات REST مباشرة من متصفح الويب.
  
 يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
  
@@ -71,9 +71,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/oleobje
  
 ## عائلة Cloud SDK
  
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. يعتني SDK بالتفاصيل منخفضة المستوى ويتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة من Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
  
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام حزم SDK متنوعة:
+توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
  
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}

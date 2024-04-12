@@ -1,16 +1,16 @@
 ﻿---
-title: Importa i dati con l'utilizzo di storage
+title: Importa dati utilizzando storag
 second_title: Aspose.Cells Cloud Documen
 linktitle: Importa dati con storage
 type: docs
 url: /it/import/with-using-storage/
 aliases: [/import-data-into-excel-worksheet/, /import-data-into-worksheet/ , /import-data-in-excel-worksheet/, /import-data/]
-description: "Cells.Cloud API per Excel operare: importare i dati nel foglio di lavoro Excel"
+description: "Cells.Cloud API per Excel opera: Importa dati nel foglio di lavoro Excel"
 weight: 10
 ---
 Questo REST API indica `import data` nel file Excel.
  
-## RSET API
+## RSETAPI
  
 ```bash
  
@@ -19,19 +19,19 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/importdata
 ```
  I parametri della richiesta sono:
  
-| Nome parametro| Tipo| Percorso/Stringa di query/HTTPBody|Descrizione|
+| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
 |:- |:- |:- |:- |
 | nome| corda| sentiero||
 | cartella| corda| domanda||
-| storageName| corda| domanda| nome di archiviazione.|
-| importDati|| corpo||
+| storageName| corda| domanda| nome dell'archivio.|
+| importData|| corpo||
 
-**I parametri delle opzioni di importazione dei dati**sono descritti in[il link di riferimento](/cells/it/import/#import-data-option-parameter).
+**I parametri delle opzioni di importazione dei dati** sono descritti in[il collegamento di riferimento](/cells/it/import/#import-data-option-parameter).
 
  
- IL[Specifica OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData) definisce un'interfaccia di programmazione accessibile pubblicamente e consente di eseguire interazioni REST direttamente da un browser web.
+ IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData) definisce un'interfaccia di programmazione accessibile pubblicamente e consente di eseguire interazioni REST direttamente da un browser web.
  
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi Web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate a Cloud API con cURL.
+È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi Web Aspose.Cells. Nell'esempio seguente viene illustrato come effettuare chiamate al Cloud API con cURL.
  
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
  
@@ -65,5 +65,5 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/importdata" \
 {{< /tabs >}}
  
  
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+I seguenti esempi di codice dimostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
 

@@ -1,0 +1,413 @@
+﻿---
+title: Modell
+second_title: Aspose.Cells Cloud Documen
+type: docs
+weight: 50
+---
+- [ObjectExistsExtensions](objectexistsextensions)  :   
+- [FileVersion](fileversion)  :   
+- [StorageFile](storagefile) : Fil- eller mappinformation
+- [GoogleDriveStorageFile](googledrivestoragefile)  :   
+- [Över medel](aboveaverage) Beskriv AboveAverage-regeln för villkorlig formatering. Denna regel för villkorlig formatering markerar celler som ligger över eller under genomsnittet för alla värden i intervallet.
+- [AbstractCalculation Engine](abstractcalculationengine) : Representerar användarens anpassade beräkningsmotor för att utöka standardberäkningsmotorn Aspose.Cells.
+- [AbstractCalculationMonitor](abstractcalculationmonitor) : Övervaka för användaren för att spåra framstegen i formelberäkningen.
+- [AutoFilter](autofilter)  :   
+- [AutoFitterOptions](autofitteroptions)  :   
+- [Gräns](border)  :   
+- [Beräkningsalternativ](calculationoptions)  :   
+- [Cell](cell)  :   
+- [CellArea](cellarea)  :   
+- [Cells](cells)  :   
+- [CellsCloudFileInfo](cellscloudfileinfo) : Cells Moln Filinformationsbeskrivning.
+- [CellsColor](cellscolor)  :   
+- [CellsDocumentProperties](cellsdocumentproperties) : Excel fastigheter
+- [CellsDocumentProperty](cellsdocumentproperty) : Cells dokumentegendom.
+- [Färg](color) : Färg.
+- [Färgfilter](colorfilter) : Färgfilter.
+- [Färgskala](colorscale) : Beskriv ColorScales villkorliga formateringsregel. Denna villkorliga formateringsregel skapar en graderad färgskala på cellerna.
+- [Kolumn](column)  :   
+- [Kolumner](columns)  :   
+- [Kommentar](comment)  :   
+- [Kommentarer](comments)  :   
+- [Villkorlig formatering](conditionalformatting)  :   
+- [ConditionalFormattingIcon](conditionalformattingicon)  :   
+- [Villkorsformat](conditionalformattings)  :   
+- [ConditionalFormattingValue](conditionalformattingvalue)  :   
+- [Kopieringsalternativ](copyoptions) : Representerar kopieringsalternativen.
+- [CriteriaMultipleFilter](criteriamultiplefilter)  :   
+- [CustomFilter](customfilter)  :   
+- [DataBar](databar) : Beskriv DataBars villkorliga formateringsregel. Den här villkorliga formateringsregeln visar ett graderat datafält i cellintervallet.
+- [DataBarBorder](databarborder)  :   
+- [Datarensning](datacleansing) : Datarensning
+- [DataColumnFillValue](datacolumnfillvalue)  :   
+- [DataFill](datafill)  :   
+- [DataFillValue](datafillvalue)  :   
+- [DataSorter](datasorter) : Sammanfattande beskrivning för DataSorter.
+- [DataSorterKey](datasorterkey) : Representerar nyckeln för datasorteraren.
+- [DateTimeGroupItem](datetimegroupitem)  :   
+- [DeduplicationRegion](deduplicationregion)  :   
+- [DynamicFilter](dynamicfilter)  :   
+- [Filinformation](fileinfo) : Filinformation
+- [FilerResultat](filesresult)  :   
+- [Filterkolumn](filtercolumn)  :   
+- [Font](font)  :   
+- [FontSetting](fontsetting)  :   
+- [Formatvillkor](formatcondition)  :   
+- [FormelFormatCondition](formulaformatcondition)  :   
+- [Formelinställningar](formulasettings) : Inställningar av formler och beräkning.
+- [Globaliseringsinställningar](globalizationsettings) : Representerar globaliseringsinställningarna.
+- [HorizontalPageBreak](horizontalpagebreak)  :   
+- [HorizontalPageBreaks](horizontalpagebreaks)  :   
+- [Hyperlänk](hyperlink)  :   
+- [Hyperlänkar](hyperlinks)  :   
+- [IconFilter](iconfilter)  :   
+- [IconSet](iconset) Beskriv IconSets villkorliga formateringsregel. Denna regel för villkorlig formatering tillämpar ikoner på celler enligt deras värden.
+- [Länk](link)  :   
+- [LinkElement](linkelement)  :   
+- [LoadOptions](loadoptions)  :   
+- [MergedCell](mergedcell)  :   
+- [MergedCells](mergedcells)  :   
+- [MultipleFilter](multiplefilter)  :   
+- [Flera filter](multiplefilters)  :   
+- [namn](name)  :   
+- [Namn](names)  :   
+- [NegativeBarFormat](negativebarformat) : Representerar färginställningarna för datafälten för negativa värden som definieras av en villkorlig formateringsregel för datafält.
+- [Sidavsnitt](pagesection)  :   
+- [Utskriftsformat](pagesetup)  :   
+- [Klistra in Alternativ](pasteoptions) : Representerar specialalternativen för klistra in.
+- [Pdf Säkerhetsalternativ](pdfsecurityoptions)  :   
+- [Skydd](protection) : Representerar de olika typerna av skyddsalternativ som är tillgängliga för ett kalkylblad.
+- [ProtectSheetParameter](protectsheetparameter)  :   
+- [Frågetabell](querytable) : Representerar frågetabellinformation.
+- [Räckvidd](range)  :   
+- [Avstånd](ranges)  :   
+- [Rad](row)  :   
+- [Rader](rows)  :   
+- [Spara Resultat](saveresult)  :   
+- [Paginerade Sparalternativ](paginatedsaveoptions) : Representerar alternativen för paginering.
+- [SingleValue](singlevalue)  :   
+- [SortKey](sortkey)  :   
+- [SplitResult](splitresult)  :   
+- [SplitResultDocument](splitresultdocument)  :   
+- [Stil](style)  :   
+- [StyleFormatCondition](styleformatcondition)  :   
+- [Stilar](styles)  :   
+- [TextFormatCondition](textformatcondition)  :   
+- [TextItem](textitem)  :   
+- [TextItems](textitems)  :   
+- [Textalternativ](textoptions)  :   
+- [Temafärg](themecolor)  :   
+- [TimePeriodFormatCondition](timeperiodformatcondition)  :   
+- [Topp 10](top10) Beskriv Top10-regeln för villkorlig formatering. Denna regel för villkorlig formatering markerar celler vars värden hamnar i den övre N eller nedre N-parentesen, enligt vad som anges.
+- [Top10 Filter](top10filter)  :   
+- [Godkännande](validation)  :   
+- [Valideringar](validations)  :   
+- [VerticalPageBreak](verticalpagebreak)  :   
+- [VerticalPageBreaks](verticalpagebreaks)  :   
+- [Arbetsbok](workbook)  :   
+- [Arbetsbok Inställningar](workbooksettings)  :   
+- [Arbetsblad](worksheet)  :   
+- [Arbetsblad](worksheets)  :   
+- [Skrivskydd](writeprotection) : Anger skrivskyddsinställningar för en arbetsbok.
+- [XmlDataBinding](xmldatabinding) : Representerar Xml-databindningsinformation.
+- [XmlMap](xmlmap) : Representerar XML-kartainformation.
+- [CellsObjectOperateTaskParameter](cellsobjectoperatetaskparameter)  :   
+- [ConvertTaskParameter](converttaskparameter)  :   
+- [ConvertWorksheetTaskParameter](convertworksheettaskparameter)  :   
+- [FileSource](filesource)  :   
+- [FileSourceType](filesourcetype)  :   
+- [ImportDataTaskParameter](importdatataskparameter)  :   
+- [ResultatDestination](resultdestination)  :   
+- [ResultDestinationType](resultdestinationtype)  :   
+- [Resultatkälla](resultsource)  :   
+- [SaveFilesToCloudResult](savefilestocloudresult)  :   
+- [SaveResultTaskParameter](saveresulttaskparameter)  :   
+- [SmartMarkerTaskParameter](smartmarkertaskparameter)  :   
+- [SplitWorkbookTaskParameter](splitworkbooktaskparameter)  :   
+- [TaskData](taskdata)  :   
+- [Uppgifts beskrivning](taskdescription)  :   
+- [TaskParameter](taskparameter)  :   
+- [TaskResultParameter](taskresultparameter)  :   
+- [TaskRunResult](taskrunresult)  :   
+- [TaskType](tasktype)  :   
+- [ChartOperateParameter](chartoperateparameter)  :   
+- [ListObjectOperateParameter](listobjectoperateparameter)  :   
+- [OperateObject](operateobject)  :   
+- [OperateObjectPosition](operateobjectposition)  :   
+- [OperateObjectType](operateobjecttype)  :   
+- [OperateParameter](operateparameter)  :   
+- [OperateType](operatetype)  :   
+- [PageBreakOperateParameter](pagebreakoperateparameter)  :   
+- [PageSetupOperateParameter](pagesetupoperateparameter)  :   
+- [PivotTableOperateParameter](pivottableoperateparameter)  :   
+- [ShapeOperateParameter](shapeoperateparameter)  :   
+- [ArbetsbokOperateParameter](workbookoperateparameter)  :   
+- [WorkbookSettingsOperateParameter](workbooksettingsoperateparameter)  :   
+- [ArbetsbladOperateParameter](worksheetoperateparameter)  :   
+- [Listkolumn](listcolumn)  :   
+- [ListObject](listobject)  :   
+- [Listobjekt](listobjects)  :   
+- [PivotGlobalizationSettings](pivotglobalizationsettings) : Representerar globaliseringsinställningarna för pivottabeller.
+- [DifSaveOptions](difsaveoptions) : Representerar alternativen för att spara dif-fil.
+- [DocxSaveOptions](docxsaveoptions) : Representerar alternativ för att spara .docx-fil.
+- [HtmlSaveOptions](htmlsaveoptions) : Representerar alternativ för att spara .html-fil.
+- [ImageSaveOptions](imagesaveoptions) : Representerar alternativ för att spara bildfil.
+- [JsonSaveOptions](jsonsaveoptions) Representerar alternativ för att spara .json-fil.
+- [MarkdownSaveOptions](markdownsaveoptions) : Representerar alternativ för att spara .md-fil.
+- [MHtmlSaveOptions](mhtmlsaveoptions) : Representerar alternativ för att spara .mhtml-fil.
+- [OdsSaveOptions](odssaveoptions) : Representerar alternativ för att spara .ods-fil.
+- [OoxmlSaveOptions](ooxmlsaveoptions) : Representerar alternativ för att spara ooxml-fil.
+- [PdfSaveOptions](pdfsaveoptions) : Representerar alternativ för att spara pdf-fil.
+- [PptxSaveOptions](pptxsaveoptions) : Representerar alternativen för att spara pptx-fil.
+- [Spara Alternativ](saveoptions) : Representerar alla sparalternativ
+- [SpreadsheetML2003SaveOptions](spreadsheetml2003saveoptions) : Representerar alternativen för att spara .xml-fil.
+- [SqlScriptSaveOptions](sqlscriptsaveoptions) : Representerar alternativen för att spara .sql-filen.
+- [SvgSaveOptions](svgsaveoptions) : Representerar alternativen för att spara en .svg-fil.
+- [TextSaveOptions](txtsaveoptions) : Representerar alternativen för att spara .txt-fil.
+- [XlsbSaveOptions](xlsbsaveoptions) : Representerar alternativen för att spara .xlsb-filen.
+- [XlsSaveOptions](xlssaveoptions) : Representerar alternativen för att spara .xls-filen.
+- [XpsSaveOptions](xpssaveoptions) : Representerar alternativen för att spara .xps-filen.
+- [AnalyzeExcelResponse](analyzeexcelresponse)  :   
+- [ArcShapeResponse](arcshaperesponse)  :   
+- [AutoFilterResponse](autofilterresponse)  :   
+- [AutoShapeResponse](autoshaperesponse)  :   
+- [AutoShapesResponse](autoshapesresponse)  :   
+- [AxisResponse](axisresponse)  :   
+- [BorderResponse](borderresponse)  :   
+- [ButtonResponse](buttonresponse)  :   
+- [Beräkna FormelSvar](calculateformularesponse)  :   
+- [CellResponse](cellresponse)  :   
+- [CellsCloudFileInfoResponse](cellscloudfileinforesponse)  :   
+- [CellsCloudResponse](cellscloudresponse)  :   
+- [CellsDocumentPropertiesResponse](cellsdocumentpropertiesresponse)  :   
+- [CellsDocumentPropertyResponse](cellsdocumentpropertyresponse)  :   
+- [CellsDrawingResponse](cellsdrawingresponse)  :   
+- [CellsResponse](cellsresponse)  :   
+- [ChartAreaResponse](chartarearesponse)  :   
+- [ChartDataTableResponse](chartdatatableresponse)  :   
+- [ChartPointResponse](chartpointresponse)  :   
+- [ChartPointsResponse](chartpointsresponse)  :   
+- [ChartResponse](chartresponse)  :   
+- [ChartsResponse](chartsresponse)  :   
+- [CheckBoxResponse](checkboxresponse)  :   
+- [Kolumnsvar](columnresponse)  :   
+- [Kolumner Svar](columnsresponse)  :   
+- [ComboBoxResponse](comboboxresponse)  :   
+- [KommentarSvar](commentresponse)  :   
+- [CommentShapeResponse](commentshaperesponse)  :   
+- [Kommentarer Svar](commentsresponse)  :   
+- [ConditionalFormattingResponse](conditionalformattingresponse)  :   
+- [ConditionalFormattingsResponse](conditionalformattingsresponse)  :   
+- [DataLabelsResponse](datalabelsresponse)  :   
+- [DisplayUnitLabelResponse](displayunitlabelresponse)  :   
+- [DropBarsResponse](dropbarsresponse)  :   
+- [ErrorBarResponse](errorbarresponse)  :   
+- [FillFormatResponse](fillformatresponse)  :   
+- [FindResponse](findresponse)  :   
+- [FloorResponse](floorresponse)  :   
+- [FormResponse](formresponse)  :   
+- [FormsResponse](formsresponse)  :   
+- [GroupBoxResponse](groupboxresponse)  :   
+- [HorizontalPageBreakResponse](horizontalpagebreakresponse)  :   
+- [HorizontalPageBreaksResponse](horizontalpagebreaksresponse)  :   
+- [Hyperlänksvar](hyperlinkresponse)  :   
+- [HyperlinksResponse](hyperlinksresponse)  :   
+- [LabelResponse](labelresponse)  :   
+- [LegendEntriesResponse](legendentriesresponse)  :   
+- [LegendEntryResponse](legendentryresponse)  :   
+- [LegendResponse](legendresponse)  :   
+- [LineResponse](lineresponse)  :   
+- [LineShapeResponse](lineshaperesponse)  :   
+- [ListBoxResponse](listboxresponse)  :   
+- [ListObjectResponse](listobjectresponse)  :   
+- [ListObjectsResponse](listobjectsresponse)  :   
+- [MergedCellResponse](mergedcellresponse)  :   
+- [MergedCellsResponse](mergedcellsresponse)  :   
+- [NameResponse](nameresponse)  :   
+- [NamesResponse](namesresponse)  :   
+- [OleObjectResponse](oleobjectresponse)  :   
+- [OleObjectsResponse](oleobjectsresponse)  :   
+- [OvalResponse](ovalresponse)  :   
+- [PageSectionsResponse](pagesectionsresponse)  :   
+- [PageSetupResponse](pagesetupresponse)  :   
+- [PictureResponse](pictureresponse)  :   
+- [Bilder Svar](picturesresponse)  :   
+- [PivotFieldResponse](pivotfieldresponse)  :   
+- [PivotFilterResponse](pivotfilterresponse)  :   
+- [PivotFiltersResponse](pivotfiltersresponse)  :   
+- [PivotTableResponse](pivottableresponse)  :   
+- [Pivottabellssvar](pivottablesresponse)  :   
+- [PlotAreaResponse](plotarearesponse)  :   
+- [RadioButtonResponse](radiobuttonresponse)  :   
+- [RangeResponse](rangeresponse)  :   
+- [RangesResponse](rangesresponse)  :   
+- [RangeValueResponse](rangevalueresponse)  :   
+- [RectangleShapeResponse](rectangleshaperesponse)  :   
+- [RowResponse](rowresponse)  :   
+- [RowsResponse](rowsresponse)  :   
+- [SaveFilesToCloudResultResponse](savefilestocloudresultresponse)  :   
+- [SaveResponse](saveresponse)  :   
+- [ScrollBarResponse](scrollbarresponse)  :   
+- [SeriesResponse](seriesesresponse)  :   
+- [Seriesvar](seriesresponse)  :   
+- [ShapeResponse](shaperesponse)  :   
+- [ShapesResponse](shapesresponse)  :   
+- [SingleValueResponse](singlevalueresponse)  :   
+- [SparklineGroupResponse](sparklinegroupresponse)  :   
+- [SparklineGroupsResponse](sparklinegroupsresponse)  :   
+- [SpinnerResponse](spinnerresponse)  :   
+- [SplitResultResponse](splitresultresponse)  :   
+- [StyleResponse](styleresponse)  :   
+- [TaskRunResultResponse](taskrunresultresponse)  :   
+- [TextBoxResponse](textboxresponse)  :   
+- [TextItemResponse](textitemresponse)  :   
+- [TextItemsResponse](textitemsresponse)  :   
+- [TickLabelsResponse](ticklabelsresponse)  :   
+- [TitleResponse](titleresponse)  :   
+- [TrendlineResponse](trendlineresponse)  :   
+- [TrendlinesResponse](trendlinesresponse)  :   
+- [Valideringssvar](validationresponse)  :   
+- [Valideringar Svar](validationsresponse)  :   
+- [VerticalPageBreakResponse](verticalpagebreakresponse)  :   
+- [VerticalPageBreaksResponse](verticalpagebreaksresponse)  :   
+- [WallsResponse](wallsresponse)  :   
+- [WorkbookReplaceResponse](workbookreplaceresponse)  :   
+- [Arbetsbokssvar](workbookresponse)  :   
+- [WorkbookSettingsResponse](workbooksettingsresponse)  :   
+- [Arbetsböcker Svar](workbooksresponse)  :   
+- [ArbetsbladReplaceResponse](worksheetreplaceresponse)  :   
+- [Arbetsbladssvar](worksheetresponse)  :   
+- [Arbetsblad Svar](worksheetsresponse)  :   
+- [AnalyseraExcelRequest](analyzeexcelrequest)  :   
+- [BatchConvertRequest](batchconvertrequest) : Indikerar begäran om batchkonvertering av fil
+- [BatchLockRequest](batchlockrequest) : Indikerar begäran om batchlåsfil
+- [BatchProtectRequest](batchprotectrequest) : Indikerar begäran om batchskyddsfil
+- [BatchSplitRequest](batchsplitrequest)  :   
+- [ColorFilterRequest](colorfilterrequest) : Indikerar färgfilterbegäran
+- [Konvertera parameter](convertparameter) : Indikerar konverteringsparameter
+- [CreatePivotTableRequest](createpivottablerequest) : Indikerar att skapa pivottabellsbegäran
+- [DataCleansingRequest](datacleansingrequest) : En begäran om datarensning för en kalkylarksfil.
+- [DataDeduplicationRequest](datadeduplicationrequest)  :   
+- [DataFillRequest](datafillrequest)  :   
+- [DeleteIncompleteRowsRequest](deleteincompleterowsrequest)  :   
+- [ImportJsonRequest](importjsonrequest) : Indikerar begäran om import av xml-data
+- [ImportXMLRequest](importxmlrequest) : Indikerar begäran om import av xml-data
+- [MatchConditionRequest](matchconditionrequest) : Indikerar matchningsvillkoret som måste bearbetas för filnamnet.
+- [PasswordRequest](passwordrequest) : Används för överföring av lösenordsdata.
+- [PivotTableFieldRequest](pivottablefieldrequest) : Indikerar begäran om pivottabellfält
+- [ProtectWorkbookRequest](protectworkbookrequest) : Indikerar begäran om skydd av arbetsbok
+- [RangeCopyRequest](rangecopyrequest) : Indikerar begäran om intervallkopiering
+- [RangeSetOutlineBorderRequest](rangesetoutlineborderrequest) Indikerar begäran om gränsuppsättningskontur.
+- [RangeSetStyleRequest](rangesetstylerequest) : Indikerar intervalluppsättningsstilsbegäran.
+- [RangeSortRequest](rangesortrequest) : Indikerar begäran om intervallsortering
+- [TabellTotalRequest](tabletotalrequest) : Indikerar tabelltotal begäran
+- [TextWaterMarkerRequest](textwatermarkerrequest) : Indikerar begäran om textvattenmarkör.
+- [WorkbookEncryptionRequest](workbookencryptionrequest) : Används av förfrågningar om kryptering/dekryptering av arbetsbok.
+- [WorkbookProtectionRequest](workbookprotectionrequest) : Används av förfrågningar om arbetsbokskydd.
+- [ArbetsbladMovingRequest](worksheetmovingrequest) : Används av förfrågningar om flyttning av arbetsbok.
+- [ImageOrPrintOptions](imageorprintoptions)  :   
+- [RenderingFont](renderingfont)  :   
+- [Rendering Vattenstämpel](renderingwatermark)  :   
+- [Pivotfält](pivotfield)  :   
+- [PivotFilter](pivotfilter) : Representerar ett PivotFilter i PivotFilter Collection.
+- [PivotItem](pivotitem)  :   
+- [Pivottabell](pivottable)  :   
+- [Pivottabeller](pivottables)  :   
+- [CustomParserConfig](customparserconfig)  :   
+- [Import2DimensionDoubleArrayOption](import2dimensiondoublearrayoption)  :   
+- [Import2DimensionIntArrayOption](import2dimensionintarrayoption)  :   
+- [Import2DimensionStringArrayOption](import2dimensionstringarrayoption)  :   
+- [CellValue](cellvalue)  :   
+- [ImportBatchDataOption](importbatchdataoption)  :   
+- [ImportCSVDataOption](importcsvdataoption)  :   
+- [ImportDataType](importdatatype)  :   
+- [ImportDoubleArrayOption](importdoublearrayoption)  :   
+- [ImportIntArrayOption](importintarrayoption)  :   
+- [Importalternativ](importoption)  :   
+- [ImportPictureOption](importpictureoption)  :   
+- [Importposition](importposition)  :   
+- [ImportStringArrayOption](importstringarrayoption)  :   
+- [ArcShape](arcshape)  :   
+- [Område](area)  :   
+- [AutoShape](autoshape)  :   
+- [AutoShapes](autoshapes)  :   
+- [Knapp](button)  :   
+- [Celler Rita](cellsdrawing)  :   
+- [Kryssruta](checkbox)  :   
+- [Kombinationsrutan](combobox)  :   
+- [CommentShape](commentshape)  :   
+- [FillFormat](fillformat)  :   
+- [Form](form)  :   
+- [Blanketter](forms)  :   
+- [GradientFill](gradientfill)  :   
+- [GradientFillStop](gradientfillstop)  :   
+- [GroupBox](groupbox)  :   
+- [GroupShape](groupshape)  :   
+- [Märka](label)  :   
+- [Linje](line) : Kapslar in objektet som representerar linjeformatet.
+- [Linjeformat](lineformat)  :   
+- [LineShape](lineshape)  :   
+- [ListBox](listbox)  :   
+- [OleObject](oleobject)  :   
+- [OleObjects](oleobjects)  :   
+- [Oval](oval)  :   
+- [PatternFill](patternfill)  :   
+- [PicFormatOption](picformatoption)  :   
+- [Bild](picture)  :   
+- [Bilder](pictures)  :   
+- [Radio knapp](radiobutton)  :   
+- [RectangleShape](rectangleshape)  :   
+- [Rullningslist](scrollbar)  :   
+- [ShadowEffect](shadoweffect)  :   
+- [Form](shape)  :   
+- [Former](shapes)  :   
+- [SolidFill](solidfill)  :   
+- [Spinnare](spinner)  :   
+- [Textruta](textbox)  :   
+- [TextureFill](texturefill)  :   
+- [TilePicOption](tilepicoption)  :   
+- [Digital signatur](digitalsignature) : Signatur i fil.
+- [Axel](axis)  :   
+- [Diagram](chart)  :   
+- [ChartArea](chartarea)  :   
+- [ChartDataTable](chartdatatable)  :   
+- [ChartFrame](chartframe)  :   
+- [ChartGlobalizationSettings](chartglobalizationsettings) : Representerar globaliseringsinställningarna för diagram.
+- [ChartPoint](chartpoint)  :   
+- [ChartPoints](chartpoints)  :   
+- [Diagram](charts)  :   
+- [ChartShape](chartshape) : Objekt i diagramform
+- [Dataetiketter](datalabels)  :   
+- [DisplayUnitLabel](displayunitlabel)  :   
+- [DropBars](dropbars)  :   
+- [ErrorBar](errorbar)  :   
+- [Golv](floor)  :   
+- [Legend](legend)  :   
+- [LegendEntries](legendentries)  :   
+- [LegendEntry](legendentry)  :   
+- [Markör](marker)  :   
+- [PlotArea](plotarea)  :   
+- [Serier](series)  :   
+- [Serieobjekt](seriesitems)  :   
+- [Sparkline](sparkline) : En sparkline representerar ett litet diagram eller grafik i en kalkylbladscell som ger en visuell representation av data.
+- [SparklineGroup](sparklinegroup)  :   
+- [SparklineGroups](sparklinegroups) : Kapslar in en samling Aspose.Cells.Charts.SparklineGroup-objekt.
+- [TickLabels](ticklabels)  :   
+- [Titel](title)  :   
+- [Trendlinje](trendline)  :   
+- [Trendlinjer](trendlines)  :   
+- [Väggar](walls)  :   
+- [ColumnDataExceptionDescription](columndataexceptiondescription)  :   
+- [TextCategoryType](textcategorytype)  :   
+- [Analyserad kolumnbeskrivning](analyzedcolumndescription) Hur man använder egenskaperna för varje kolumn: för närvarande uppdelad i tidslinje, produktlinje, numerisk statistiklinje Hur man presenterar produkten, en enhetlig plan Hur löser man problemet med full digital? Fulltext Hur löser man det? Två kolumner: Text, Number är det enklaste Tre kolumner: Text, Text, Number text, number, number --- date date ; Datum Numerisk ; Numeric Digital Vad sägs om fyra kolumner, fem kolumner?
+- [Analyserat resultat](analyzedresult)  :   
+- [Analyserad tabellbeskrivning](analyzedtabledescription)  :   
+- [DateSourceType](datesourcetype)  :   
+- [SuggestedOutputType](suggestedoutputtype)  :   
+- [Analysera förslag](analyzesuggestion)  :   
+- [DiscoverChart](discoverchart)  :   
+- [DiscoverPivotTable](discoverpivottable)  :   
+- [ExcelDataStatistics](exceldatastatistics)  :   
+- [WorksheetDataStatistics](worksheetdatastatistics)  :   
+- [Fel](error) : Fel
+- [Detaljer om felet](errordetails) : Feldetaljerna

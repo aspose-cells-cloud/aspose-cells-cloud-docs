@@ -1,40 +1,40 @@
 ﻿---
-title: Excel al P.D
+title: Excel al PD
 second_title: Aspose.Cells Cloud Documen
-linktitle: Excel al P.D
+linktitle: Excel al PD
 type: docs
 url: /it/convert/excel-to-pdf/
 aliases: [/convert-excel-file-to-pdf-in-cloud/]
 keywords: Convert excel files to pdf files
-description: Aspose.Cells Cloud REST API supporta la conversione di file excel in file pdf. L'SDK supporta i tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
+description: Aspose.Cells Cloud REST API supporta la conversione di file Excel in file pdf. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 80
 ---
-Questo REST API `saveas` file excel a PDF.
+Questo file Excel REST API `saveas` su PDF.
 
 [POST /cells/{nome}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) API consente di salvare il file MS Excel come file PDF con impostazioni aggiuntive e salvare il risultato nella memoria.
 
-Questo REST API `convert` file excel a PDF.
+Questo file Excel REST API `convert` su PDF.
 
-[PUT /celle/converti](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)API consente di convertire il file MS Excel nel file PDF con impostazioni aggiuntive e di salvare il risultato nella risposta.
+[PUT /celle/convert](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)API ti consente di convertire il file MS Excel nel file PDF con impostazioni aggiuntive e salvare il risultato nella risposta.
 
-Questo REST API `export` file excel a PDF.
+Questo file Excel REST API `export` su PDF.
 
-[OTTIENI /celle/{nome}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook  )API consente di convertire il file MS Excel nel file PDF con impostazioni aggiuntive e di salvare il risultato nella risposta.
+[OTTIENI /cells/{nome}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook  )API ti consente di convertire il file MS Excel nel file PDF con impostazioni aggiuntive e salvare il risultato nella risposta.
 
-## RIPOSO API
+## RESTO API
 
 
 |**API**|**Tipo**|**Descrizione**|**Collegamento spavaldo**|
 |:- |:- |:- |:- |
 |/celle/converti|METTERE|Converte la cartella di lavoro dal contenuto della richiesta in un formato|[PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)|
-|/celle/{nome}|OTTENERE|Esporta la cartella di lavoro in un altro formato.|[GetWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)|
-|/cells/{nome}/saveAs|INVIARE|Esporta cartella di lavoro in formato|[PostDocumentoSalva con nome](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)|
+|/cellule/{nome}|OTTENERE|Esporta la cartella di lavoro in un altro formato.|[OttieniWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)|
+|/cells/{nome}/saveAs|INVIARE|Esporta la cartella di lavoro in formato|[PostDocumentSaveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)|
 
 
 
- Questi[PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook), [GetWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook), [PostDocumentoSalva con nome](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) Le API definiscono un'interfaccia di programmazione accessibile pubblicamente e ti consentono di eseguire interazioni REST direttamente da un browser web.
+ Questi[PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook), [OttieniWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook), [PostDocumentSaveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) Le API definiscono un'interfaccia di programmazione accessibile pubblicamente e consentono di eseguire interazioni REST direttamente da un browser web.
 
- Puoi usare**cURL** strumento da riga di comando per accedere facilmente ai servizi Web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate a Cloud API con cURL.
+ Puoi usare**cURL** strumento da riga di comando per accedere facilmente ai servizi web Aspose.Cells. Nell'esempio seguente viene illustrato come effettuare chiamate al Cloud API con cURL.
 
 
 
@@ -81,11 +81,11 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/sampleBook.xlsx/SaveAs?newfile
 
 
 
-## Famiglia di SDK cloud
+## Famiglia di SDK Cloud
 
- L'utilizzo di un SDK è il modo migliore per velocizzare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del tuo progetto. Si prega di controllare il[Deposito GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+ Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si prende cura dei dettagli di basso livello e ti consente di concentrarti sulle attività del tuo progetto. Si prega di controllare il[Repositorio GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK Cloud Aspose.Cells.
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+I seguenti esempi di codice dimostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
 
 
 {{< tabs tabTotal="3" tabID="3" tabName1="C#" tabName2="Java" tabName3="Go" >}}

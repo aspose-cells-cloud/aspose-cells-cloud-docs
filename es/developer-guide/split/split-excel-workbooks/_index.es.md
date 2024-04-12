@@ -1,40 +1,40 @@
 ﻿---
 title: Dividir un libro de trabajo Excel en varios archivos
 second_title: Aspose.Cells Cloud Documen
-linktitle: trabajo
+linktitle: libro de trabajo
 type: docs
 url: /es/workbook/split/
 aliases: [/split-excel-workbooks/]
 keywords: Split an Excel workbook to multi-files
-description: Aspose.Cells Cloud REST API admite dividir un libro de trabajo Excel en varios archivos. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift
+description: Aspose.Cells Cloud REST API admite la división de un libro de trabajo Excel en varios archivos. El SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 130
 ---
-Este REST API indica dividir un Excel `workbook` en varios archivos con un formato diferente.
+Este REST API indica dividir un Excel `workbook` en varios archivos con diferentes formatos.
 
 **Parámetro de consulta**
 
 |Nombre del parámetro|Tipo|Descripción|
 |:- |:- |:- |
 |formato|cadena|Formato dividido.|
-|de|entero|Inicie el índice de la hoja de trabajo.|
-|a|entero|Índice de la hoja de trabajo final.|
+|de|entero|Iniciar el índice de la hoja de trabajo.|
+|a|entero|Índice final de la hoja de trabajo.|
 |resolucion horizontal|entero|Resolución horizontal de la imagen.|
-|resolución vertical|entero|Resolución vertical de la imagen.|
+|verticalResolución|entero|Resolución vertical de la imagen.|
 |fuera de la carpeta|cadena|posición del archivo dividido de salida.|
-|dividirNombreRegla|cadena||
-|carpeta|cadena|Carpeta original del libro de trabajo.|
-|NombreDeAlmacenamiento|cadena|Nombre de almacenamiento.|
+|regla de nombre dividida|cadena||
+|carpeta|cadena|Carpeta del libro de trabajo original.|
+|nombredealmacenamiento|cadena|Nombre del almacenamiento.|
 
 
 ## DESCANSO API
 
-|**API**|**Tipo**|**Descripción**|**Enlace arrogante**|
+|**API**|**Tipo**|**Descripción**|**Enlace de arrogancia**|
 |:- |:- |:- |:- |
-|/celdas/{nombre}/dividir|CORREO|Dividir un libro de trabajo Excel|[PostWorkbookSplit](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookSplit)|
+|/celdas/{nombre}/split|CORREO|Dividir un libro de trabajo Excel|[Publicar libro de trabajo](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookSplit)|
 
  El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookSplit) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
 
- Puedes usar**cURL** herramienta de línea de comandos para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo hacer llamadas a Cloud API con cURL.
+ Puedes usar**cURL** Herramienta de línea de comandos para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
@@ -92,11 +92,11 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/split?format=jpeg&fr
 
 {{< /tabs >}}
 
-## Familia SDK de la nube
+## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se ocupa de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor, echa un vistazo a la[repositorio GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de Cloud.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor revisa el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de nube.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código demuestran cómo realizar llamadas a servicios web Aspose.Cells utilizando varios SDK:
 
 {{< tabs tabTotal="11" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" tabName11="Swift" >}}
 

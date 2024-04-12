@@ -1,12 +1,12 @@
 ﻿---
 title: Trova il testo dal file Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: Trova senza usare storage
+linktitle: Trova senza utilizzare storag
 type: docs
 url: /it/search/
 aliases: [/search-without-using-storage/,/search-without-storage/]
 keywords: Find text from Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) files
-description: Aspose.Cells Cloud REST API supporta la ricerca di testo dai file Excel. L'SDK supporta i tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
+description: Aspose.Cells Cloud REST API supporta la ricerca di testo dai file Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 50
 ---
 Questo REST API indica il testo `search` dai file Excel.

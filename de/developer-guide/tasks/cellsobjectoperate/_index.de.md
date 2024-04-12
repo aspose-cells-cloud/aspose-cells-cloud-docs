@@ -35,7 +35,7 @@ Dieses REST API betreibt das Zellenobjekt `task`.
 | ChartIndex| ganze Zahl||
 | Diagramm Typ| Zeichenfolge||
 | UpperLeftRow| ganze Zahl||
-|UpperLeftColumn| ganze Zahl||
+| UpperLeftColumn| ganze Zahl||
 | LowerRightRow| ganze Zahl||
 | LowerRightColumn| ganze Zahl||
 | Bereich| Zeichenfolge||

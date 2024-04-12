@@ -10,13 +10,13 @@ weight: 30
 
 Port | Descriptif | Requis
 ---|:--:|---:
-5000 | Dossier avec les polices, qui seront utilisées pour rendre les documents | vrai
+5000 | Dossier contenant les polices qui seront utilisées pour restituer les documents | vrai
 
 
 ##  Volumes requis ##
-Monter le chemin dans le conteneur | Descriptif | Requis
+Chemin de montage dans le conteneur | Descriptif | Requis
 ---|:--:|---:
-C:\polices | Dossier avec les polices, qui seront utilisées pour rendre les documents | FAUX
+C:\fonts | Dossier contenant les polices qui seront utilisées pour restituer les documents | FAUX
 C:\données | Dossier de stockage de fichiers | FAUX
 
 ##  Paramètres d'exécution ##
@@ -25,7 +25,7 @@ Nom | Descriptif | Requis
 ---|:--:|---:
 LicencePublicKey | Clé publique de la licence | vrai
 LicencePrivateKey | Clé privée de la licence | vrai
-storagesCredentialsFilePath | Chemin d'accès au fichier de configuration du stockage. Le fichier par défaut est ./storageResource.json | vrai
+stockagesCredentialsFilePath | Chemin de fichier de configuration du stockage. Le fichier par défaut est ./storageResource.json | vrai
 
 ##  Exécuter la commande ##
 

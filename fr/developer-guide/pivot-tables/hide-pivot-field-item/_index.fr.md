@@ -1,15 +1,15 @@
 ﻿---
-title: Masquer l'élément de champ de pivot dans un tableau croisé dynamique
+title: Masquer l'élément de champ pivot dans un tableau croisé dynamique
 second_title: Aspose.Cells Cloud Documen
 linktitle: Cacher
 type: docs
 url: /fr/pivot-tables/hide-pivot-field-item/
 aliases: [/hide-pivot-field-item/]
 keywords: Hide a pivot field in a pivot table
-description: Aspose.Cells Cloud REST API prend en charge le masquage d'un champ croisé dynamique dans le tableau croisé dynamique. SDK prend en charge les types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift
+description: Aspose.Cells Cloud REST API prend en charge le masquage d'un champ croisé dynamique dans le tableau croisé dynamique. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 110
 ---
-Ce REST API indique le masquage de l'élément de champ pivot.
+Ce REST API indique le masquage d’un élément de champ pivot.
  
 ## RSET API
  
@@ -20,20 +20,20 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottable
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/chaîne de requête/HTTPBody|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin||
-| NomFeuille| chaîne| chemin||
-| indextablepivot| entier| chemin||
+| Nom de la feuille| chaîne| chemin||
+| pivotTableIndex| entier| chemin||
 | pivotFieldType| chaîne| requête||
-| fieldIndex| entier| requête||
-| index de l'élément| entier| requête||
+| champIndex| entier| requête||
+| articleIndex| entier| requête||
 | estMasquer| booléen| requête||
-| besoin de recalculer| booléen| requête| FAUX|
+| besoinReCalculer| booléen| requête| FAUX|
 | dossier| chaîne| requête||
-| nom_stockage| chaîne| requête| nom de stockage.|
+| Nom de stockage| chaîne| requête| nom de stockage.|
  
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/PivotTables/PostPivotTableFieldHideItem) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
+ Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/PivotTables/PostPivotTableFieldHideItem) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement depuis un navigateur Web.
  
 Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment passer des appels vers le Cloud API avec cURL.
  
@@ -67,9 +67,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/pivott
  
 {{< /tabs >}}
  
-## Famille SDK Cloud
+## Famille de SDK Cloud
  
- L'utilisation d'un SDK est le meilleur moyen d'accélérer le développement. Un SDK prend en charge les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Veuillez consulter le[Référentiel GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Cloud Aspose.Cells.
+ Utiliser un SDK est le meilleur moyen d’accélérer le développement. Un SDK prend en charge les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Veuillez consulter le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
  
 Les exemples de code suivants montrent comment effectuer des appels vers les services Web Aspose.Cells à l'aide de divers SDK :
  

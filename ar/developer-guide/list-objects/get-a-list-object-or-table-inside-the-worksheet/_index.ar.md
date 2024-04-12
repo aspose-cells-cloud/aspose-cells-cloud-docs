@@ -1,17 +1,17 @@
 ﻿---
-title: الحصول على كائن قائمة في Excel workhe
+title: احصل على كائن قائمة في ورقة عمل Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: Ge
+linktitle: جي
 type: docs
 url: /ar/list-objects/get/
 aliases: [/get-a-list-object-or-table-inside-the-worksheet/,/tables/get/]
 keywords: Get a list object(table) into an Excel worksheet
-description: Aspose.Cells Cloud REST API يدعم الحصول على كائن قائمة (جدول) في ورقة عمل Excel. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
+description: Aspose.Cells Cloud REST API يدعم الحصول على كائن قائمة (جدول) في ورقة عمل Excel. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 9
 ---
-يشير هذا REST API إلى `get` إلى معلومات كائن القائمة حسب الفهرس أو تحويل `list object` إلى ملف تنسيق مختلف في ورقة عمل Excel.
+ يشير REST API إلى `get` معلومات كائن القائمة حسب الفهرس أو تحويل `list object` إلى ملف بتنسيق مختلف في ورقة عمل Excel.
 
-## RSET API
+## رسيت API
  
 ```bash
  
@@ -20,16 +20,16 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects
 ```
  معلمات الطلب هي:
  
-| اسم المعلمة| يكتب| المسار / سلسلة الاستعلام / HTTPBody|وصف|
+| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/HTTPBody|وصف|
 |:- |:- |:- |:- |
 | اسم| خيط| طريق| اسم الملف.|
 | اسم الورقة| خيط| طريق| اسم ورقة العمل.|
 | listobjectindex| عدد صحيح| طريق| فهرس كائن القائمة.|
 | شكل| خيط| استفسار| تنسيق التصدير.|
-| مجلد| خيط| استفسار| مجلد المستند.|
+| مجلد| خيط| استفسار| مجلد الوثيقة.|
 | اسم التخزين| خيط| استفسار| اسم التخزين.|
  
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/ListObjects/GetWorksheetListObject) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
+ ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/ListObjects/GetWorksheetListObject) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك تنفيذ تفاعلات REST مباشرة من متصفح الويب.
  
 يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
  
@@ -160,11 +160,11 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listobj
  
 ## عائلة Cloud SDK
  
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. يعتني SDK بالتفاصيل منخفضة المستوى ويتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة من Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
  
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام حزم SDK متنوعة:
+توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
  
-هذا REST API يحصل على كائن `listobject` excel لملف تنسيق مختلف.
+يحصل REST API على كائن Excel `listobject` لملف بتنسيق مختلف.
 
 
 {{< tabs tabTotal="9" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" tabName9="Python" >}}

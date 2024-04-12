@@ -5,16 +5,16 @@ type: docs
 url: /es/conditional-formattings/
 aliases: [/working-with-conditional-formatting/]
 keywords: REST API, spreadsheets, excel, conditional formattin
-description: "Cells. Nube API para Excel operación: operación de formato condicional"
+description: "Cells.Cloud API para Excel operar: operación de formato condicional"
 weight: 100
 ---
 &nbsp;&nbsp;&nbsp;&nbsp;El formato condicional en Excel le permite resaltar celdas con un color determinado, según el valor de la celda.
 
-&nbsp;&nbsp;&nbsp;&nbsp;Use el formato condicional para ayudarlo a explorar y analizar datos visualmente, detectar problemas críticos e identificar patrones y tendencias.
+&nbsp;&nbsp;&nbsp;&nbsp;Utilice el formato condicional para ayudarle a explorar y analizar datos visualmente, detectar problemas críticos e identificar patrones y tendencias.
 
-&nbsp;&nbsp;&nbsp;&nbsp;El formato condicional facilita resaltar celdas interesantes o rangos de celdas, enfatizar valores inusuales y visualizar datos mediante el uso de barras de datos, escalas de colores y conjuntos de iconos que corresponden a variaciones específicas en los datos.
+&nbsp;&nbsp;&nbsp;&nbsp;El formato condicional facilita resaltar celdas o rangos de celdas interesantes, enfatizar valores inusuales y visualizar datos mediante el uso de barras de datos, escalas de colores y conjuntos de íconos que corresponden a variaciones específicas en los datos.
 
-&nbsp;&nbsp;&nbsp;&nbsp;Un formato condicional cambia la apariencia de las celdas en función de las condiciones que especifique. Si las condiciones son verdaderas, se formatea el rango de celdas; si las condiciones son falsas, el rango de celdas no se formatea. Hay muchas condiciones integradas, y también puede crear las suyas propias (incluso mediante el uso de una fórmula que se evalúe como Verdadero o Falso).
+&nbsp;&nbsp;&nbsp;&nbsp;Un formato condicional cambia la apariencia de las celdas según las condiciones que usted especifique. Si las condiciones son verdaderas, se formatea el rango de celdas; si las condiciones son falsas, el rango de celdas no tiene formato. Hay muchas condiciones integradas y también puede crear las suyas propias (incluso mediante el uso de una fórmula que se evalúe como Verdadero o Falso).
 
 **Resumen**
 

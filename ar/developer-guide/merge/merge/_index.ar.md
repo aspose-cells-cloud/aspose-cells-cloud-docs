@@ -1,16 +1,16 @@
 ﻿---
-title: دمج ملفات Excel متعددة في ملف Excel
+title: دمج ملفات Excel المتعددة في ملف Excel
 second_title: Aspose.Cells Cloud Documen
 linktitle: متعدد الملفات
 type: docs
 url: /ar/merge/multi-files/
 keywords: Merge multi Excel files into Excel file
-description: Aspose.Cells Cloud REST API يدعم دمج ملفات Excel متعددة في ملف Excel. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
+description: Aspose.Cells Cloud REST API يدعم دمج ملفات Excel المتعددة في ملف Excel. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 32
 ---
-يشير هذا REST API إلى `merge` عدة ملفات Excel في ملف Excel.
+يشير REST API إلى `merge` عدة ملفات Excel في ملف Excel.
 
-## RSET API
+## رسيت API
  
 ```bash
  
@@ -19,13 +19,13 @@ POST http://api.aspose.cloud/v3.0/cells/merge
 ```
  معلمات الطلب هي:
  
-| اسم المعلمة| يكتب| المسار / سلسلة الاستعلام / HTTPBody|وصف|
+| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/HTTPBody|وصف|
 |:- |:- |:- |:- |
 | ملف| ملف| بيانات النموذج| ملف للتحميل|
 | شكل| خيط| استفسار| xlsx|
-| mergeToOneSheet| قيمة منطقية| استفسار| خطأ شنيع|
+| mergeToOneSheet| منطقية| استفسار| خطأ شنيع|
  
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostMerge) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
+ ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostMerge) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك تنفيذ تفاعلات REST مباشرة من متصفح الويب.
  
 يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
  
@@ -73,9 +73,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/merge?format=xlsx" \
  
 ## عائلة Cloud SDK
 
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. يعتني SDK بالتفاصيل منخفضة المستوى ويتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة من Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام حزم SDK متنوعة:
+توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
 
 
 {{< tabs tabTotal="9" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" tabName9="Python" >}}

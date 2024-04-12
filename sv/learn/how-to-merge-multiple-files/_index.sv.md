@@ -75,7 +75,7 @@ cellsInstance.PostMerge(request);
 
 ## Användningsfall
 
- Flera filer**sammanslagna** funktionen hos Aspose.Cells Cloud API är användbar i olika praktiska användningsfall. Här är några vanliga scenarier:
+ Flera filer**slås samman** funktionen hos Aspose.Cells Cloud API är användbar i olika praktiska användningsfall. Här är några vanliga scenarier:
 
 - **Slå samman flera Excel-filer till en Excel-fil** för dataanalys och lagring.
 - **Slå samman datafiler till en Excel-fil** för dataanalys.

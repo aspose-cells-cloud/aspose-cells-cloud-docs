@@ -6,12 +6,12 @@ type: docs
 url: /it/autofilter/add-dynamic-filter/
 aliases: [/filter-a-list-using-dynamic-filter/,/autofilter/add-a-dynamic-filter/]
 keywords: Adds a dynamic filter on an Excel worksheet
-description: Il Aspose.Cells Cloud API supporta l'aggiunta di un filtro dinamico su un foglio di lavoro Excel. L'SDK supporta i tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
+description: Il cloud Aspose.Cells API supporta l'aggiunta di un filtro dinamico su un foglio di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 65
 ---
 Questo REST API indica di aggiungere un `dynamic filter` su un foglio di lavoro Excel.
  
-## RSET API
+## RSETAPI
  
 ```bash
  
@@ -20,21 +20,21 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/
 ```
  I parametri della richiesta sono:
  
-| Nome parametro| Tipo| Percorso/Stringa di query/HTTPBody|Descrizione|
+| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
 |:- |:- |:- |:- |
 | nome| corda| sentiero||
-| foglioNome| corda| sentiero||
+| nomefoglio| corda| sentiero||
 | allineare| corda| domanda||
-| fieldIndex| numero intero| domanda||
-| TipoFiltrodinamico| corda| domanda||
+| campoIndice| numero intero| domanda||
+| tipoFiltrodinamico| corda| domanda||
 | matchBlanks| booleano| domanda||
 | ricaricare| booleano| domanda||
 | cartella| corda| domanda||
-| storageName| corda| domanda| nome di archiviazione.|
+| storageName| corda| domanda| nome dell'archivio.|
  
- IL[Specifica OpenAPI](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetDynamicFilter) definisce un'interfaccia di programmazione accessibile pubblicamente e consente di eseguire interazioni REST direttamente da un browser web.
+ IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetDynamicFilter) definisce un'interfaccia di programmazione accessibile pubblicamente e consente di eseguire interazioni REST direttamente da un browser web.
  
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi Web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate a Cloud API con cURL.
+È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi Web Aspose.Cells. Nell'esempio seguente viene illustrato come effettuare chiamate al Cloud API con cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
@@ -70,11 +70,11 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFil
 
 {{< /tabs >}}
 
-## Famiglia di SDK cloud
+## Famiglia di SDK Cloud
  
- L'utilizzo di un SDK è il modo migliore per velocizzare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del tuo progetto. Si prega di controllare il[Deposito GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+ Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si prende cura dei dettagli di basso livello e ti consente di concentrarti sulle attività del tuo progetto. Si prega di controllare il[Repositorio GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK Cloud Aspose.Cells.
  
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+I seguenti esempi di codice dimostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" >}}
 

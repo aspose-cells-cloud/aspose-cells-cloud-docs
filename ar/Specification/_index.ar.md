@@ -1,0 +1,739 @@
+﻿---
+title: المواصفات
+second_title: Aspose.Cells Cloud Documen
+type: docs
+weight: 50
+---
+# Aspose.Cells سحاب API تشغيل
+
+- [PostAnalyzeExcel](operation/postanalyzeexcel) : إجراء تحليل الأعمال للبيانات في ملفات Excel.
+- [GetWorksheetAutoFilter](operation/getworksheetautofilter) : استرداد وصف عوامل التصفية التلقائية من ورقة العمل.
+- [ضع ورقة العملDateFilter](operation/putworksheetdatefilter) : قم بتطبيق مرشح التاريخ في ورقة العمل.
+- [ضع عامل تصفية ورقة العمل](operation/putworksheetfilter) : إضافة عامل تصفية لعمود في ورقة العمل.
+- [ضع WorksheetIconFilter](operation/putworksheeticonfilter) : إضافة مرشح أيقونة في ورقة العمل.
+- [ضع ورقة عمل CustomFilter](operation/putworksheetcustomfilter) تصفية قائمة بمعايير مخصصة في ورقة العمل.
+- [ضع WorksheetDynamicFilter](operation/putworksheetdynamicfilter) : إضافة عامل تصفية ديناميكي في ورقة العمل.
+- [ضع WorksheetFilterTop10](operation/putworksheetfiltertop10) : قم بتصفية أعلى 10 عناصر في القائمة في ورقة العمل.
+- [وضع WorksheetColorFilter](operation/putworksheetcolorfilter) : أضف مرشح الألوان في ورقة العمل.
+- [PostWorksheetMatchBlanks](operation/postworksheetmatchblanks) : قم بمطابقة كافة الخلايا الفارغة في القائمة.
+- [PostWorksheetMatchNonBlanks](operation/postworksheetmatchnonblanks) : قم بمطابقة جميع الخلايا غير الفارغة في القائمة.
+- [PostWorksheetAutoFilterRefresh](operation/postworksheetautofilterrefresh) : قم بتحديث عوامل التصفية التلقائية في ورقة العمل.
+- [حذف ورقة العملDateFilter](operation/deleteworksheetdatefilter) : قم بإزالة عامل تصفية التاريخ في ورقة العمل.
+- [حذف عامل تصفية ورقة العمل](operation/deleteworksheetfilter) : حذف عامل تصفية لعمود في ورقة العمل.
+- [GetWorksheetAutoshapes](operation/getworksheetautoshapes) : احصل على وصف الأشكال التلقائية في ورقة العمل.
+- [GetWorksheetAutoshapeWithFormat](operation/getworksheetautoshapewithformat) : احصل على وصف الشكل التلقائي في بعض التنسيقات.
+- [PostBatchConvert](operation/postbatchconvert) : دفعة تحويل الملفات التي تستوفي شروط مطابقة محددة.
+- [PostBatchProtect](operation/postbatchprotect) : دفعة حماية الملفات التي تستوفي شروط مطابقة محددة.
+- [PostBatchLock](operation/postbatchlock) : قفل الملفات الدفعية التي تستوفي شروط مطابقة محددة.
+- [PostBatchUnlock](operation/postbatchunlock) : فتح الملفات دفعة واحدة التي تستوفي شروط مطابقة محددة.
+- [PostBatchSplit](operation/postbatchsplit) : تقسيم الملفات على دفعات والتي تستوفي شروط مطابقة محددة.
+- [محتويات PostClear](operation/postclearcontents) : مسح محتويات منطقة الخلية في ورقة العمل.
+- [تنسيقات بوست كلير](operation/postclearformats) : مسح تنسيقات الخلايا في ورقة العمل.
+- [PostUpdateWorksheetRangeStyle](operation/postupdateworksheetrangestyle) : تحديث أنماط نطاق الخلايا في ورقة العمل.
+- [دمج ورقة العمل](operation/postworksheetmerge) : دمج الخلايا في ورقة العمل.
+- [PostWorksheetUnmerge](operation/postworksheetunmerge) : إلغاء دمج الخلايا في ورقة العمل.
+- [GetWorksheetCells](operation/getworksheetcells) : استرداد أوصاف الخلايا بتنسيق محدد.
+- [GetWorksheetCell](operation/getworksheetcell) : استرداد بيانات الخلية باستخدام مرجع الخلية أو اسم الطريقة في ورقة العمل.
+- [GetWorksheetCellStyle](operation/getworksheetcellstyle) : استرداد أوصاف نمط الخلية في ورقة العمل.
+- [PostWorksheetCellSetValue](operation/postworksheetcellsetvalue) : قم بتعيين قيمة الخلية باستخدام اسم الخلية في ورقة العمل.
+- [PostUpdateWorksheetCellStyle](operation/postupdateworksheetcellstyle) : قم بتعيين نمط الخلية باستخدام اسم الخلية في ورقة العمل.
+- [PostSetCellRangeValue](operation/postsetcellrangevalue) : قم بتعيين قيمة النطاق في ورقة العمل.
+- [PostCopyCellIntoCell](operation/postcopycellintocell) : انسخ البيانات من الخلية المصدر إلى الخلية الوجهة في ورقة العمل.
+- [GetCellHtmlString](operation/getcellhtmlstring) : قم باسترجاع السلسلة HTML التي تحتوي على بيانات وتنسيقات محددة في هذه الخلية.
+- [PostSetCellHtmlString](operation/postsetcellhtmlstring) : قم بتعيين السلسلة HTML التي تحتوي على بيانات وتنسيقات محددة في هذه الخلية.
+- [PostCellCalculate](operation/postcellcalculate) : حساب صيغة الخلية في ورقة العمل.
+- [أحرف ما بعد الخلية](operation/postcellcharacters) : قم بتعيين أحرف الخلية في ورقة العمل.
+- [GetWorksheetColumns](operation/getworksheetcolumns) : استرداد أوصاف أعمدة ورقة العمل.
+- [PostSetWorksheetColumnWidth](operation/postsetworksheetcolumnwidth) : ضبط عرض عمود ورقة العمل.
+- [GetWorksheetColumn](operation/getworksheetcolumn) : استرداد بيانات عمود ورقة العمل عن طريق فهرس العمود.
+- [PutInsertWorksheetColumns](operation/putinsertworksheetcolumns) أدخل أعمدة ورقة العمل في ورقة العمل.
+- [حذف أعمدة ورقة العمل](operation/deleteworksheetcolumns) : حذف أعمدة ورقة العمل في ورقة العمل.
+- [PostHideWorksheetColumns](operation/posthideworksheetcolumns) : إخفاء أعمدة ورقة العمل في ورقة العمل.
+- [PostUnhideWorksheetColumns](operation/postunhideworksheetcolumns) : إظهار أعمدة ورقة العمل في ورقة العمل.
+- [أعمدة ورقة عمل PostGroup](operation/postgroupworksheetcolumns) : تجميع أعمدة ورقة العمل في ورقة العمل.
+- [PostUngroupWorksheetColumns](operation/postungroupworksheetcolumns) : فك تجميع أعمدة ورقة العمل.
+- [PostCopyWorksheetColumns](operation/postcopyworksheetcolumns) : انسخ البيانات من أعمدة المصدر إلى أعمدة الوجهة في ورقة العمل.
+- [PostColumnStyle](operation/postcolumnstyle) : قم بتعيين نمط العمود في ورقة العمل.
+- [GetWorksheetRows](operation/getworksheetrows) : استرداد أوصاف الصفوف في ورقة العمل.
+- [GetWorksheetRow](operation/getworksheetrow) : استرداد بيانات الصف من خلال فهرس الصف في ورقة العمل.
+- [حذف صف ورقة العمل](operation/deleteworksheetrow) : حذف صف في ورقة العمل.
+- [حذف صفوف ورقة العمل](operation/deleteworksheetrows) : حذف عدة صفوف في ورقة العمل.
+- [PutInsertWorksheetRows](operation/putinsertworksheetrows) : أدخل عدة صفوف جديدة في ورقة العمل.
+- [PutInsertWorksheetRow](operation/putinsertworksheetrow) : أدخل صفًا جديدًا في ورقة العمل.
+- [صف ورقة عمل ما بعد التحديث](operation/postupdateworksheetrow) : تحديث ارتفاع الصفوف في ورقة العمل.
+- [صفوف PostHideWorksheet](operation/posthideworksheetrows) : إخفاء الصفوف في ورقة العمل.
+- [نشر صفوف ورقة العمل](operation/postunhideworksheetrows) : إظهار الصفوف في ورقة العمل.
+- [صفوف ورقة عمل PostGroup](operation/postgroupworksheetrows) : تجميع الصفوف في ورقة العمل.
+- [صفوف ورقة عمل PostUngroup](operation/postungroupworksheetrows) : فك تجميع الصفوف في ورقة العمل.
+- [صفوف ورقة عمل PostCopy](operation/postcopyworksheetrows) : نسخ البيانات والتنسيقات من صفوف كاملة محددة في ورقة العمل.
+- [PostRowStyle](operation/postrowstyle) : تطبيق التنسيقات على صف كامل في ورقة العمل.
+- [GetCellsCloudServicesHealthCheck](operation/getcellscloudserviceshealthcheck) : استرداد أوصاف الخلايا بتنسيق محدد.
+- [GetCellsCloudServiceStatus](operation/getcellscloudservicestatus) : Aspose.Cells فحص الحالة الصحية للخدمة السحابية.
+- [GetChartArea](operation/getchartarea) : استرداد وصف منطقة المخطط في ورقة العمل.
+- [تنسيق GetChartAreaFill](operation/getchartareafillformat) : استرداد وصف تنسيق تعبئة منطقة المخطط في ورقة العمل.
+- [GetChartAreaBorder](operation/getchartareaborder) : استرداد وصف حدود منطقة المخطط.
+- [GetWorksheetCharts](operation/getworksheetcharts) : استرداد أوصاف المخططات في ورقة العمل.
+- [GetWorksheetChart](operation/getworksheetchart) استرداد الرسم البياني بتنسيق محدد.
+- [ضع ورقة عمل الرسم البياني](operation/putworksheetchart) : إضافة مخطط جديد في ورقة العمل.
+- [حذف مخطط ورقة العمل](operation/deleteworksheetchart) : حذف مخطط حسب الفهرس في ورقة العمل.
+- [مخطط ما بعد ورقة العمل](operation/postworksheetchart) : تحديث خصائص المخطط في ورقة العمل.
+- [GetWorksheetChartLegend](operation/getworksheetchartlegend) : استرداد وصف وسيلة إيضاح المخطط في ورقة العمل.
+- [PostWorksheetChartLegend](operation/postworksheetchartlegend) : تحديث وسيلة إيضاح المخطط في ورقة العمل.
+- [PutWorksheetChartLegend](operation/putworksheetchartlegend) : إظهار وسيلة إيضاح المخطط في ورقة العمل.
+- [حذف ورقة العملChartLegend](operation/deleteworksheetchartlegend) : إخفاء وسيلة إيضاح المخطط في ورقة العمل.
+- [حذف مخططات ورقة العمل](operation/deleteworksheetcharts) : مسح المخططات في أوراق العمل.
+- [GetWorksheetChartTitle](operation/getworksheetcharttitle) : استرداد وصف عنوان المخطط في ورقة العمل.
+- [PostWorksheetChartTitle](operation/postworksheetcharttitle) : تحديث عنوان المخطط في ورقة العمل.
+- [ضع ورقة العملChartTitle](operation/putworksheetcharttitle) : قم بتعيين عنوان المخطط في ورقة العمل.
+- [حذف ورقة العملChartTitle](operation/deleteworksheetcharttitle) : إخفاء عنوان المخطط في ورقة العمل.
+- [GetChartSeriesAxis](operation/getchartseriesaxis) استرجاع أوصاف محور سلسلة المخططات في المخطط.
+- [GetChartCategoryAxis](operation/getchartcategoryaxis) : استرداد أوصاف محور سلسلة المخططات في المخطط.
+- [GetChartValueAxis](operation/getchartvalueaxis) : استرداد محور قيمة المخطط في المخطط.
+- [GetChartSecondCategoryAxis](operation/getchartsecondcategoryaxis) : استرداد محور الفئة الثانية في المخطط في المخطط
+- [GetChartSecondValueAxis](operation/getchartsecondvalueaxis) : استرداد محور القيمة الثاني للمخطط في المخطط.
+- [PostChartSeriesAxis](operation/postchartseriesaxis) : تحديث محور سلسلة المخطط في المخطط.
+- [PostChartCategoryAxis](operation/postchartcategoryaxis) : تحديث محور فئة المخطط في المخطط.
+- [PostChartValueAxis](operation/postchartvalueaxis) : تحديث محور قيمة المخطط في المخطط.
+- [PostChartSecondCategoryAxis](operation/postchartsecondcategoryaxis) : تحديث محور الفئة الثانية للمخطط في المخطط.
+- [PostChartSecondValueAxis](operation/postchartsecondvalueaxis) : تحديث محور القيمة الثاني للمخطط في المخطط.
+- [GetWorksheetConditionalFormattings](operation/getworksheetconditionalformattings) : استرداد أوصاف التنسيقات الشرطية في ورقة العمل.
+- [GetWorksheetConditionalFormatting](operation/getworksheetconditionalformatting) استرداد أوصاف التنسيق الشرطي في ورقة العمل.
+- [وضع ورقة العملالتنسيق الشرطي](operation/putworksheetconditionalformatting) : إضافة التنسيق الشرطي في ورقة العمل.
+- [ضع ورقة العملFormatCondition](operation/putworksheetformatcondition) : إضافة شرط تنسيق في ورقة العمل.
+- [ضع ورقة العملFormatConditionArea](operation/putworksheetformatconditionarea) : إضافة منطقة خلية لشرط التنسيق في ورقة العمل.
+- [ضع ورقة العملFormatConditionCondition](operation/putworksheetformatconditioncondition) : إضافة شرط لشرط التنسيق في ورقة العمل.
+- [حذف التنسيقات الشرطية لورقة العمل](operation/deleteworksheetconditionalformattings) : مسح كافة التنسيقات الشرطية في ورقة العمل.
+- [حذف تنسيق ورقة العمل الشرطي](operation/deleteworksheetconditionalformatting) : إزالة التنسيق الشرطي.
+- [حذف منطقة التنسيق الشرطية في ورقة العمل](operation/deleteworksheetconditionalformattingarea) : إزالة منطقة الخلية من التنسيق الشرطي.
+- [احصل على Workbook](operation/getworkbook) : استرجاع المصنفات بتنسيقات مختلفة.
+- [PutConvertWorkbook](operation/putconvertworkbook) : تحويل المصنف من المحتوى المطلوب إلى ملفات بتنسيقات مختلفة.
+- [PostWorkbookSaveAs](operation/postworkbooksaveas) : احفظ ملف Excel بتنسيقات مختلفة.
+- [PostConvertWorkbookToPDF](operation/postconvertworkbooktopdf) : تحويل ملف Excel إلى PDF ملف.
+- [PostConvertWorkbookToPNG](operation/postconvertworkbooktopng) : تحويل ملف Excel إلى PNG ملف.
+- [PostConvertWorkbookToDocx](operation/postconvertworkbooktodocx) : تحويل ملف Excel إلى ملفات Docx.
+- [PostConvertWorkbookToPptx](operation/postconvertworkbooktopptx) : تحويل ملف Excel إلى ملفات Pptx.
+- [PostConvertWorkbookToHtml](operation/postconvertworkbooktohtml) : تحويل ملف Excel إلى HTML ملف.
+- [PostConvertWorkbookToMarkdown](operation/postconvertworkbooktomarkdown) : تحويل ملف Excel إلى ملفات Markdown.
+- [PostConvertWorkbookToJson](operation/postconvertworkbooktojson) : تحويل ملف Excel إلى ملفات Json.
+- [PostConvertWorkbookToSQL](operation/postconvertworkbooktosql) : تحويل ملف Excel إلى ملفات SQL Script.
+- [PostConvertWorkbookToCSV](operation/postconvertworkbooktocsv) : تحويل ملف Excel إلى ملفات Csv.
+- [ما بعد التصدير](operation/postexport) : تصدير Excel عنصرًا داخليًا أو المصنف نفسه إلى ملفات بتنسيقات مختلفة.
+- [PostWorkbookExportXML](operation/postworkbookexportxml) : تصدير بيانات XML من ملف Excel. عند وجود خرائط XML في ملف Excel، قم بتصدير بيانات XML. عندما لا يكون هناك مخطط XML في الملف Excel، قم بتحويل الملف Excel إلى ملف XML.
+- [PostWorkbookImportJson](operation/postworkbookimportjson) قم باستيراد ملف بيانات JSON إلى المصنف. يمكن أن يكون ملف بيانات JSON إما ملفًا سحابيًا أو بيانات من HTTP URI.
+- [PostWorkbookImportXML](operation/postworkbookimportxml) : استيراد ملف بيانات XML إلى ملف Excel. يمكن أن يكون ملف بيانات XML إما ملفًا سحابيًا أو بيانات من HTTP URI.
+- [PostImportData](operation/postimportdata) : استيراد البيانات إلى ملف Excel.
+- [تنظيف بيانات ما بعد العمل](operation/postworkbookdatacleansing) : تنظيف بيانات ملفات جداول البيانات هو عملية إدارة بيانات تستخدم لتحديد وتصحيح وإزالة الأخطاء أو عدم الاكتمال أو التكرارات أو عدم الدقة في الجداول والنطاقات.
+- [PostDataCleansing](operation/postdatacleansing) : تنظيف بيانات ملفات جداول البيانات هو عملية إدارة بيانات تستخدم لتحديد وتصحيح وإزالة الأخطاء أو عدم الاكتمال أو التكرارات أو عدم الدقة في الجداول والنطاقات.
+- [PostWorkbookDataDeduplication](operation/postworkbookdatadeduplication) : يتم استخدام إلغاء البيانات المكررة لملفات جداول البيانات بشكل أساسي لإزالة البيانات المكررة في الجداول والنطاقات.
+- [PostDataDeduplication](operation/postdatadeduplication) : يتم استخدام إلغاء البيانات المكررة لملفات جداول البيانات بشكل أساسي لإزالة البيانات المكررة في الجداول والنطاقات.
+- [PostWorkbookDataFill](operation/postworkbookdatafill) يتم استخدام تعبئة البيانات لملفات جداول البيانات بشكل أساسي لملء البيانات الفارغة في الجداول والنطاقات.
+- [PostDataFill](operation/postdatafill) يتم استخدام تعبئة البيانات لملفات جداول البيانات بشكل أساسي لملء البيانات الفارغة في الجداول والنطاقات.
+- [PostDeleteIncompleteRows](operation/postdeleteincompleterows) : يتم استخدام حذف الصفوف غير المكتملة من ملفات جداول البيانات بشكل أساسي لإزالة الصفوف غير المكتملة في الجداول والنطاقات.
+- [الحصول على الارتباطات التشعبية لورقة العمل](operation/getworksheethyperlinks) : استرداد أوصاف الارتباطات التشعبية في ورقة العمل.
+- [GetWorksheetHyperlink](operation/getworksheethyperlink) : استرداد وصف الارتباط التشعبي حسب الفهرس في ورقة العمل.
+- [حذف ورقة العمل الارتباط التشعبي](operation/deleteworksheethyperlink) : حذف الارتباط التشعبي حسب الفهرس في ورقة العمل.
+- [ما بعد ورقة العمل الارتباط التشعبي](operation/postworksheethyperlink) : تحديث الارتباط التشعبي حسب الفهرس في ورقة العمل.
+- [ضع ورقة عمل الارتباط التشعبي](operation/putworksheethyperlink) : إضافة ارتباط تشعبي في ورقة العمل.
+- [حذف الارتباطات التشعبية لورقة العمل](operation/deleteworksheethyperlinks) : حذف كافة الارتباطات التشعبية في ورقة العمل.
+- [PostAssemble](operation/postassemble) : تجميع ملفات البيانات مع ملفات القالب لإنشاء ملفات بتنسيقات مختلفة.
+- [بوستكومبريس](operation/postcompress) : ضغط الملفات وإنشاء الملفات المستهدفة بتنسيقات مختلفة، وتشمل تنسيقات الملفات المدعومة Xls وXlsx وXlsm وXlsb وOds والمزيد.
+- [ما بعد الدمج](operation/postmerge) : دمج الخلايا في ورقة العمل.
+- [PostSplit](operation/postsplit) : قم بتقسيم ملفات جداول البيانات Excel بناءً على أوراق العمل وإنشاء ملفات الإخراج بتنسيقات مختلفة.
+- [ما بعد البحث](operation/postsearch) : البحث عن نص محدد ضمن ملفات Excel.
+- [PostReplace](operation/postreplace) : استبدال النص المحدد بنص جديد في ملفات Excel.
+- [PostImport](operation/postimport) : استيراد البيانات إلى ملف Excel وإنشاء ملفات الإخراج بتنسيقات مختلفة.
+- [ما بعد العلامة المائية](operation/postwatermark) : أضف علامة مائية نصية إلى ملفات Excel وقم بإنشاء ملفات الإخراج بتنسيقات مختلفة.
+- [PostClearObjects](operation/postclearobjects) : مسح العناصر الداخلية في ملفات Excel وإنشاء ملفات الإخراج بتنسيقات مختلفة.
+- [PostReverse](operation/postreverse) : عكس الصفوف أو الأعمدة في ملفات Excel وإنشاء ملفات الإخراج بتنسيقات مختلفة.
+- [PostRepair](operation/postrepair) : إصلاح الملفات غير الطبيعية وإنشاء ملفات بتنسيقات مختلفة.
+- [PostRotate](operation/postrotate) : تدوير الصفوف أو الأعمدة أو الكائنات الأخرى في ملفات Excel وحفظها بتنسيقات مختلفة.
+- [PostMetadata](operation/postmetadata) تحديث خصائص الوثيقة في الملف Excel وحفظها بصيغ مختلفة.
+- [GetMetadata](operation/getmetadata) : الحصول على خصائص مستند الخلايا.
+- [حذف البيانات الوصفية](operation/deletemetadata) : حذف خصائص وثيقة الخلايا في ملف Excel، وحفظها بتنسيقات مختلفة.
+- [GetWorksheetListObjects](operation/getworksheetlistobjects) : استرداد أوصاف كائنات القائمة في ورقة العمل.
+- [GetWorksheetListObject](operation/getworksheetlistobject) : استرداد وصف كائن القائمة حسب الفهرس في ورقة العمل.
+- [PutWorksheetListObject](operation/putworksheetlistobject) : إضافة كائن قائمة في ورقة العمل.
+- [حذف كائنات قائمة ورقة العمل](operation/deleteworksheetlistobjects) : حذف كائنات القائمة في ورقة العمل.
+- [حذف كائن قائمة ورقة العمل](operation/deleteworksheetlistobject) : حذف كائن القائمة حسب الفهرس في ورقة العمل.
+- [PostWorksheetListObject](operation/postworksheetlistobject) : تحديث كائن القائمة حسب الفهرس في ورقة العمل.
+- [PostWorksheetListObjectConvertToRange](operation/postworksheetlistobjectconverttorange) : تحويل كائن القائمة إلى نطاق في ورقة العمل.
+- [PostWorksheetListObjectSummarizeWithPivotTable](operation/postworksheetlistobjectsummarizewithpivottable) : قم بإنشاء جدول محوري يحتوي على كائن قائمة في ورقة العمل.
+- [PostWorksheetListObjectSortTable](operation/postworksheetlistobjectsorttable) فرز كائن القائمة في ورقة العمل.
+- [PostWorksheetListObjectRemoveDuplicates](operation/postworksheetlistobjectremoveduplicates) : إزالة التكرارات في كائن القائمة.
+- [PostWorksheetListObjectInsertSlicer](operation/postworksheetlistobjectinsertslicer) : إدراج أداة تقطيع لكائن القائمة.
+- [PostWorksheetListColumn](operation/postworksheetlistcolumn) : تحديث عمود القائمة في كائن القائمة.
+- [PostWorksheetListColumnsTotal](operation/postworksheetlistcolumnstotal) : تحديث إجمالي أعمدة القائمة في الجدول.
+- [GetWorksheetOleObjects](operation/getworksheetoleobjects) : استرداد أوصاف كائنات OLE في ورقة العمل.
+- [GetWorksheetOleObject](operation/getworksheetoleobject) : استرداد كائن OLE بتنسيق محدد في ورقة العمل.
+- [حذف ورقة العملOleObjects](operation/deleteworksheetoleobjects) : حذف كافة كائنات OLE في ورقة العمل.
+- [حذف ورقة العملOleObject](operation/deleteworksheetoleobject) : حذف كائن OLE في ورقة العمل.
+- [PostUpdateWorksheetOleObject](operation/postupdateworksheetoleobject) : تحديث كائن OLE في ورقة العمل.
+- [PutWorksheetOleObject](operation/putworksheetoleobject) : إضافة كائن OLE في ورقة العمل.
+- [GetVerticalPageBreaks](operation/getverticalpagebreaks) : استرداد أوصاف فواصل الصفحات الرأسية في ورقة العمل.
+- [GetHorizontalPageBreaks](operation/gethorizontalpagebreaks) استرداد أوصاف فواصل الصفحات الأفقية في ورقة العمل.
+- [GetVerticalPageBreak](operation/getverticalpagebreak) : استرداد وصف فاصل الصفحات العمودي في ورقة العمل.
+- [GetHorizontalPageBreak](operation/gethorizontalpagebreak) : استرداد وصف فاصل الصفحات الأفقي في ورقة العمل.
+- [PutVerticalPageBreak](operation/putverticalpagebreak) : إضافة فاصل صفحات رأسي في ورقة العمل.
+- [وضعHorizontalPageBreak](operation/puthorizontalpagebreak) : إضافة فواصل صفحات أفقية في ورقة العمل.
+- [حذفVerticalPageBreaks](operation/deleteverticalpagebreaks) : حذف فواصل الصفحات العمودية في ورقة العمل.
+- [حذف فواصل الصفحات الأفقية](operation/deletehorizontalpagebreaks) : حذف فواصل الصفحات الأفقية في ورقة العمل.
+- [حذفVerticalPageBreak](operation/deleteverticalpagebreak) : حذف فاصل الصفحات العمودي في ورقة العمل.
+- [حذف HorizontalPageBreak](operation/deletehorizontalpagebreak) : حذف فاصل الصفحات الأفقي في ورقة العمل.
+- [GetPageSetup](operation/getpagesetup) : استرداد وصف إعداد الصفحة في ورقة العمل.
+- [PostPageSetup](operation/postpagesetup) : تحديث إعداد الصفحة في ورقة العمل.
+- [حذفHeaderFooter](operation/deleteheaderfooter) : مسح الرأس والتذييل في ورقة العمل.
+- [GetHeader](operation/getheader) : استرداد وصف رأس الصفحة في ورقة العمل.
+- [PostHeader](operation/postheader) تحديث رأس الصفحة في ورقة العمل.
+- [GetFooter](operation/getfooter) : استرداد وصف تذييل الصفحة في ورقة العمل.
+- [PostFooter](operation/postfooter) : تحديث تذييل الصفحة في ورقة العمل.
+- [PostFitWideToPages](operation/postfitwidetopages) : قم بتعيين المقياس الذي سيتم عنده احتواء الصفحة على نطاق واسع عند طباعتها على الورقة.
+- [PostFitTallToPages](operation/postfittalltopages) : قم بتعيين المقياس الذي سيتم عنده احتواء الصفحة عند طباعتها على الورقة.
+- [احصل على صور ورقة العمل](operation/getworksheetpictures) : استرداد أوصاف الصور في ورقة العمل.
+- [GetWorksheetPictureWithFormat](operation/getworksheetpicturewithformat) : استرجاع صورة حسب الرقم في ورقة العمل.
+- [ضع ورقة عمل أضف صورة](operation/putworksheetaddpicture) : إضافة صورة جديدة في ورقة العمل.
+- [صورة ما بعد ورقة العمل](operation/postworksheetpicture) : تحديث الصورة حسب الفهرس في ورقة العمل.
+- [حذف صورة ورقة العمل](operation/deleteworksheetpicture) : حذف كائن صورة حسب الفهرس في ورقة العمل.
+- [حذف صور ورقة العمل](operation/deleteworksheetpictures) : حذف كافة الصور في ورقة العمل.
+- [GetWorksheetPivotTables](operation/getworksheetpivottables) : استرداد أوصاف الجداول المحورية في ورقة العمل.
+- [GetWorksheetPivotTable](operation/getworksheetpivottable) استرداد معلومات PivotTable حسب الفهرس في ورقة العمل.
+- [GetPivotTableField](operation/getpivottablefield) : استرداد أوصاف الحقول المحورية في PivotTable.
+- [GetWorksheetPivotTableFilters](operation/getworksheetpivottablefilters) : الحصول على عوامل تصفية PivotTable في ورقة العمل.
+- [GetWorksheetPivotTableFilter](operation/getworksheetpivottablefilter) : استرداد عوامل تصفية PivotTable في ورقة العمل.
+- [ضع ورقة عملPivotTable](operation/putworksheetpivottable) : إضافة PivotTable في ورقة العمل.
+- [PutPivotTableField](operation/putpivottablefield) : إضافة حقل محوري في PivotTable.
+- [ضع ورقة عملPivotTableFilter](operation/putworksheetpivottablefilter) : إضافة عامل تصفية محوري إلى PivotTable.
+- [PostPivotTableFieldHideItem](operation/postpivottablefieldhideitem) : إخفاء عنصر حقل محوري في PivotTable.
+- [PostPivotTableFieldMoveTo](operation/postpivottablefieldmoveto) : نقل حقل محوري في PivotTable.
+- [PostPivotTableCellStyle](operation/postpivottablecellstyle) : تحديث نمط الخلية في PivotTable.
+- [PostPivotTableStyle](operation/postpivottablestyle) : تحديث النمط في PivotTable.
+- [PostPivotTableUpdatePivotFields](operation/postpivottableupdatepivotfields) : تحديث الحقول المحورية في PivotTable.
+- [PostPivotTableUpdatePivotField](operation/postpivottableupdatepivotfield) : تحديث الحقل المحوري في PivotTable.
+- [PostWorksheetPivotTableCalculate](operation/postworksheetpivottablecalculate) : حساب بيانات المحور إلى الخلايا.
+- [PostWorksheetPivotTableMove](operation/postworksheetpivottablemove) : نقل PivotTable في ورقة العمل.
+- [حذف WorksheetPivotTables](operation/deleteworksheetpivottables) : حذف PivotTables في ورقة العمل.
+- [حذف ورقة العملPivotTable](operation/deleteworksheetpivottable) : حذف PivotTable حسب الفهرس في ورقة العمل.
+- [حذفPivotTableField](operation/deletepivottablefield) : حذف حقل محوري في PivotTable.
+- [حذف WorksheetPivotTableFilters](operation/deleteworksheetpivottablefilters) : احذف كافة عوامل التصفية المحورية في PivotTable.
+- [حذف ورقة العملPivotTableFilter](operation/deleteworksheetpivottablefilter) : حذف عامل تصفية محوري في PivotTable.
+- [GetDocumentProperties](operation/getdocumentproperties) : استرداد أوصاف خصائص الملف Excel.
+- [PutDocumentProperty](operation/putdocumentproperty) : تعيين أو إضافة خاصية Excel.
+- [GetDocumentProperty](operation/getdocumentproperty) : احصل على عقار Excel بالاسم.
+- [حذفDocumentProperty](operation/deletedocumentproperty) : حذف خاصية Excel.
+- [حذف خصائص المستند](operation/deletedocumentproperties) : احذف جميع خصائص المستند المخصصة وأعد تعيين الخصائص المضمنة.
+- [التوقيع الرقمي](operation/postdigitalsignature) : Excel ملف التوقيع الرقمي.
+- [PostEncryptWorkbook](operation/postencryptworkbook) : Excel التشفير.
+- [حذفDecryptWorkbook](operation/deletedecryptworkbook) : Excel فك تشفير الملفات.
+- [PostProtectWorkbook](operation/postprotectworkbook) : Excel الحماية.
+- [حذفUnProtectWorkbook](operation/deleteunprotectworkbook) : Excel فك الحماية.
+- [وضع مستند يحمي من التغييرات](operation/putdocumentprotectfromchanges) : Excel ملف الحماية ضد الكتابة.
+- [حذفDocumentUnProtectFromChanges](operation/deletedocumentunprotectfromchanges) : Excel ملف إلغاء الحماية ضد الكتابة.
+- [PostUnlock](operation/postunlock) : فتح ملفات Excel.
+- [PostLock](operation/postlock) : قفل الملفات Excel.
+- [PostProtect](operation/postprotect) : Excel تشفير الملفات.
+- [PostWorksheetCellsRangesCopy](operation/postworksheetcellsrangescopy) : انسخ المحتوى من النطاق المصدر إلى النطاق الوجهة في ورقة العمل.
+- [PostWorksheetCellsRangeMerge](operation/postworksheetcellsrangemerge) : دمج مجموعة من الخلايا في خلية واحدة.
+- [PostWorksheetCellsRangeUnMerge](operation/postworksheetcellsrangeunmerge) : قم بإلغاء دمج الخلايا المدمجة ضمن هذا النطاق.
+- [PostWorksheetCellsRangeStyle](operation/postworksheetcellsrangestyle) : قم بتعيين النمط للنطاق المحدد.
+- [GetWorksheetCellsRangeValue](operation/getworksheetcellsrangevalue) استرداد قيم الخلايا ضمن النطاق المحدد.
+- [PostWorksheetCellsRangeValue](operation/postworksheetcellsrangevalue) : تعيين قيمة للنطاق؛ إذا لزم الأمر، سيتم تحويل القيمة إلى نوع بيانات آخر، وسيتم إعادة تعيين تنسيق أرقام الخلية.
+- [PostWorksheetCellsRangeMoveTo](operation/postworksheetcellsrangemoveto) :نقل النطاق الحالي إلى النطاق الوجهة.
+- [PostWorksheetCellsRangeSort](operation/postworksheetcellsrangesort) : إجراء فرز البيانات حول نطاق من الخلايا.
+- [PostWorksheetCellsRangeOutlineBorder](operation/postworksheetcellsrangeoutlineborder) : تطبيق حد مخطط تفصيلي حول نطاق من الخلايا.
+- [PostWorksheetCellsRangeColumnWidth](operation/postworksheetcellsrangecolumnwidth) : قم بتعيين عرض العمود للنطاق المحدد.
+- [PostWorksheetCellsRangeRowHeight](operation/postworksheetcellsrangerowheight) : يضبط ارتفاع الصف للنطاق.
+- [ضع ورقة العملCellsRange](operation/putworksheetcellsrange) : إدراج نطاق من الخلايا ونقل الخلايا الموجودة بناءً على خيار النقل المحدد.
+- [حذف ورقة العملCellsRange](operation/deleteworksheetcellsrange) : حذف نطاق من الخلايا ونقل الخلايا الموجودة بناءً على خيار النقل المحدد.
+- [الحصول على أشكال ورقة العمل](operation/getworksheetshapes) استرداد أوصاف الأشكال في ورقة العمل.
+- [احصل على شكل ورقة العمل](operation/getworksheetshape) : استرداد وصف الشكل في ورقة العمل.
+- [ضع شكل ورقة العمل](operation/putworksheetshape) : إضافة شكل في ورقة العمل.
+- [حذف أشكال ورقة العمل](operation/deleteworksheetshapes) : حذف كافة الأشكال في ورقة العمل.
+- [حذف شكل ورقة العمل](operation/deleteworksheetshape) : حذف شكل في ورقة العمل.
+- [شكل ورقة عمل ما بعد](operation/postworksheetshape) : تحديث شكل في ورقة العمل.
+- [PostWorksheetGroupShape](operation/postworksheetgroupshape) : تجميع الأشكال في ورقة العمل.
+- [PostWorksheetUngroupShape](operation/postworksheetungroupshape) : فك تجميع الأشكال في ورقة العمل.
+- [احصل على ورقة عملSparklineGroups](operation/getworksheetsparklinegroups) : استرداد أوصاف مجموعات الخطوط المميزة في ورقة العمل.
+- [احصل على ورقة عملSparklineGroup](operation/getworksheetsparklinegroup) : استرداد وصف مجموعة الخطوط المميزة في ورقة العمل.
+- [حذف ورقة عملSparklineGroups](operation/deleteworksheetsparklinegroups) : حذف مجموعات الخطوط المميزة في ورقة العمل.
+- [حذف ورقة عملSparklineGroup](operation/deleteworksheetsparklinegroup) : حذف مجموعة خطوط المؤشر في ورقة العمل.
+- [ضع ورقة عملSparklineGroup](operation/putworksheetsparklinegroup) : أضف مجموعة خطوط لامعة في ورقة العمل.
+- [PostWorksheetSparklineGroup](operation/postworksheetsparklinegroup) : قم بتحديث مجموعة الخطوط المميزة في ورقة العمل.
+- [PostRunTask](operation/postruntask) تشغيل المهام.
+- [احصل على WorkbookDefaultStyle](operation/getworkbookdefaultstyle) : استرداد وصف النمط الافتراضي للمصنف.
+- [GetWorkbookTextItems](operation/getworkbooktextitems) : استرداد العناصر النصية في المصنف.
+- [احصل على أسماء المصنفات](operation/getworkbooknames) : استرداد النطاقات المسماة في المصنف.
+- [ضع اسم العمل](operation/putworkbookname) : تحديد اسم جديد في المصنف.
+- [GetWorkbookName](operation/getworkbookname) : استرداد وصف نطاق مسمى في المصنف.
+- [اسم ما بعد العمل](operation/postworkbookname) : تحديث نطاق مسمى في المصنف.
+- [GetWorkbookNameValue](operation/getworkbooknamevalue) : استرداد قيمة النطاق المسمى في المصنف.
+- [حذف أسماء المصنفات](operation/deleteworkbooknames) : حذف كافة النطاقات المسماة في المصنف.
+- [حذف اسم المصنف](operation/deleteworkbookname) : حذف نطاق مسمى في المصنف.
+- [PostWorkbooksMerge](operation/postworkbooksmerge) : دمج مصنف في المصنف الموجود.
+- [PostWorkbooksTextSearch](operation/postworkbookstextsearch) : البحث عن نص في المصنف.
+- [PostWorkbookTextReplace](operation/postworkbooktextreplace) : استبدال النص في المصنف.
+- [PostWorkbookGetSmartMarkerResult](operation/postworkbookgetsmartmarkerresult) : معالجة العلامة الذكية.
+- [ضع WorkbookCreate](operation/putworkbookcreate) : قم بإنشاء مصنف جديد باستخدام طرق مختلفة.
+- [PostWorkbookSplit](operation/postworkbooksplit) قم بتقسيم المصنف بتنسيق معين.
+- [PostWorkbookCalculateFormula](operation/postworkbookcalculateformula) : حساب كافة الصيغ في المصنف.
+- [صفوف PostAutofitWorkbook](operation/postautofitworkbookrows) : الاحتواء التلقائي للصفوف في المصنف.
+- [PostAutofitWorkbookColumns](operation/postautofitworkbookcolumns) : أعمدة الاحتواء التلقائي في المصنف.
+- [إعدادات GetWorkbook](operation/getworkbooksettings) : استرداد أوصاف إعدادات المصنف.
+- [إعدادات ما بعد العمل](operation/postworkbooksettings) : تحديث الإعداد في المصنف.
+- [ضع WorkbookBackground](operation/putworkbookbackground) : تعيين الخلفية في المصنف.
+- [حذف WorkbookBackground](operation/deleteworkbookbackground) : حذف الخلفية في المصنف.
+- [ضع WorkbookWaterMarker](operation/putworkbookwatermarker) : قم بتعيين العلامة المائية في المصنف.
+- [GetPageCount](operation/getpagecount) : الحصول على عدد الصفحات في المصنف.
+- [احصل على أوراق العمل](operation/getworksheets) : استرداد وصف أوراق العمل من المصنف.
+- [GetWorksheetWithFormat](operation/getworksheetwithformat) : استرداد ورقة العمل بالتنسيق المحدد من المصنف.
+- [ورقة عمل PutChangeVisibility](operation/putchangevisibilityworksheet) : تغيير رؤية ورقة العمل في المصنف.
+- [PutActiveWorksheet](operation/putactiveworksheet) قم بتعيين فهرس ورقة العمل النشط في المصنف.
+- [وضع ورقة عمل جديدة](operation/putinsertnewworksheet) : قم بإدراج ورقة عمل جديدة في المصنف.
+- [ضع ورقة عمل جديدة](operation/putaddnewworksheet) : إضافة ورقة عمل جديدة في المصنف.
+- [حذف ورقة العمل](operation/deleteworksheet) : حذف ورقة عمل في المصنف.
+- [حذف أوراق العمل](operation/deleteworksheets) : حذف أوراق العمل المطابقة في المصنف.
+- [ورقة عمل ما بعد النقل](operation/postmoveworksheet) : نقل ورقة العمل في المصنف.
+- [ورقة عمل PutProtect](operation/putprotectworksheet) : حماية ورقة العمل.
+- [حذف UnprotectWorksheet](operation/deleteunprotectworksheet) : إلغاء حماية ورقة العمل.
+- [GetWorksheetTextItems](operation/getworksheettextitems) : استرداد العناصر النصية في ورقة العمل.
+- [الحصول على تعليقات ورقة العمل](operation/getworksheetcomments) : استرداد وصف التعليقات في ورقة العمل.
+- [الحصول على تعليق ورقة العمل](operation/getworksheetcomment) : استرجاع وصف التعليق في ورقة العمل.
+- [ضع تعليق ورقة العمل](operation/putworksheetcomment) : أضف تعليق الخلية في ورقة العمل.
+- [تعليق ما بعد ورقة العمل](operation/postworksheetcomment) : تحديث تعليق الخلية في ورقة العمل.
+- [حذف تعليق ورقة العمل](operation/deleteworksheetcomment) : حذف تعليق الخلية في ورقة العمل.
+- [حذف تعليقات ورقة العمل](operation/deleteworksheetcomments) حذف كافة التعليقات في ورقة العمل.
+- [GetWorksheetMergedCells](operation/getworksheetmergedcells) : الحصول على خلايا ورقة العمل المدمجة.
+- [GetWorksheetMergedCell](operation/getworksheetmergedcell) : استرداد وصف الخلية المدمجة حسب فهرسها في ورقة العمل.
+- [GetWorksheetCalculateFormula](operation/getworksheetcalculateformula) : حساب الصيغة في ورقة العمل.
+- [PostWorksheetCalculateFormula](operation/postworksheetcalculateformula) : حساب الصيغة في ورقة العمل.
+- [PostWorksheetTextSearch](operation/postworksheettextsearch) : البحث عن نص في ورقة العمل.
+- [PostWorksheetTextReplace](operation/postworksheettextreplace) : استبدال النص القديم بنص جديد في ورقة العمل.
+- [PostWorksheetRangeSort](operation/postworksheetrangesort) : فرز نطاق في ورقة العمل.
+- [صف PostAutofitWorksheet](operation/postautofitworksheetrow) : الاحتواء التلقائي لصف في ورقة العمل.
+- [صفوف ورقة عمل PostAutofit](operation/postautofitworksheetrows) : الصفوف التلقائية في ورقة العمل.
+- [PostAutofitWorksheetColumns](operation/postautofitworksheetcolumns) : أعمدة الاحتواء التلقائي في ورقة العمل.
+- [ضع خلفية ورقة العمل](operation/putworksheetbackground) : تعيين صورة الخلفية في ورقة العمل.
+- [حذف خلفية ورقة العمل](operation/deleteworksheetbackground) : حذف صورة الخلفية في ورقة العمل.
+- [ضع ورقة العمل، تجميد الأجزاء](operation/putworksheetfreezepanes) : قم بتعيين أجزاء التجميد في ورقة العمل.
+- [حذف ورقة العمل، تجميد الأجزاء](operation/deleteworksheetfreezepanes) : إلغاء تجميد الأجزاء في ورقة العمل.
+- [ورقة عمل ما بعد النسخ](operation/postcopyworksheet) : نسخ المحتويات والتنسيقات من ورقة عمل أخرى.
+- [ورقة عمل PostRename](operation/postrenameworksheet) : إعادة تسمية ورقة العمل في المصنف.
+- [PostUpdateWorksheetProperty](operation/postupdateworksheetproperty) : تحديث خصائص ورقة العمل في المصنف.
+- [GetNamedRanges](operation/getnamedranges) : استرداد أوصاف النطاقات في أوراق العمل.
+- [GetNamedRangeValue](operation/getnamedrangevalue) : استرداد القيم في النطاق.
+- [PostUpdateWorksheetZoom](operation/postupdateworksheetzoom) : قم بتحديث النسبة المئوية للقياس في ورقة العمل. يجب أن يكون بين 10 و 400.
+- [GetWorksheetPageCount](operation/getworksheetpagecount) : الحصول على عدد الصفحات في ورقة العمل.
+- [GetWorksheetValidations](operation/getworksheetvalidations) : استرداد أوصاف عمليات التحقق من الصحة في ورقة العمل.
+- [GetWorksheetValidation](operation/getworksheetvalidation) : استرداد التحقق من الصحة من خلال فهرسه في ورقة العمل.
+- [PutWorksheetValidation](operation/putworksheetvalidation) : أضف التحقق من الصحة في الفهرس في ورقة العمل.
+- [التحقق من صحة ما بعد ورقة العمل](operation/postworksheetvalidation) : قم بتحديث التحقق من الصحة بواسطة الفهرس في ورقة العمل.
+- [حذف ورقة العملالتحقق من الصحة](operation/deleteworksheetvalidation) حذف التحقق من الصحة عن طريق الفهرس في ورقة العمل.
+- [حذف ورقة العملValidations](operation/deleteworksheetvalidations) : حذف كافة عمليات التحقق من الصحة في ورقة العمل.
+
+# Aspose.Cells سحاب API موديل
+
+- [ObjectExistsExtensions](model/objectexistsextensions)  :   
+- [إصدار الملف](model/fileversion)  :   
+- [ملف التخزين](model/storagefile) : معلومات الملف أو المجلد
+- [GoogleDriveStorageFile](model/googledrivestoragefile)  :   
+- [فوق المتوسط](model/aboveaverage) وصف قاعدة التنسيق الشرطي فوق المتوسط. تقوم قاعدة التنسيق الشرطي هذه بتمييز الخلايا التي تكون أعلى أو أقل من المتوسط لجميع القيم الموجودة في النطاق.
+- [AbstractCalculationEngine](model/abstractcalculationengine) : يمثل محرك الحساب المخصص للمستخدم لتوسيع محرك الحساب الافتراضي Aspose.Cells.
+- [AbstractCalculationMonitor](model/abstractcalculationmonitor) : مراقب للمستخدم لتتبع التقدم المحرز في حساب الصيغة.
+- [فلتر السيارات](model/autofilter)  :   
+- [خيارات AutoFitter](model/autofitteroptions)  :   
+- [حدود](model/border)  :   
+- [خيارات الحساب](model/calculationoptions)  :   
+- [خلية](model/cell)  :   
+- [منطقة الخلية](model/cellarea)  :   
+- [Cells](model/cells)  :   
+- [CellsCloudFileInfo](model/cellscloudfileinfo) : Cells وصف معلومات الملف السحابي.
+- [لون الخلايا](model/cellscolor)  :   
+- [خصائص وثيقة الخلايا](model/cellsdocumentproperties) : Excel عقار
+- [CellsDocumentProperty](model/cellsdocumentproperty) : Cells خاصية الوثيقة .
+- [لون](model/color) : لون.
+- [مرشح الألوان](model/colorfilter) : مرشح الألوان.
+- [مقياس الألوان](model/colorscale) : وصف قاعدة التنسيق الشرطي ColorScale. تقوم قاعدة التنسيق الشرطي هذه بإنشاء تدرج ألوان متدرج على الخلايا.
+- [عمود](model/column)  :   
+- [أعمدة](model/columns)  :   
+- [تعليق](model/comment)  :   
+- [تعليقات](model/comments)  :   
+- [تنسيق مشروط](model/conditionalformatting)  :   
+- [أيقونة التنسيق الشرطي](model/conditionalformattingicon)  :   
+- [التنسيقات الشرطية](model/conditionalformattings)  :   
+- [قيمة التنسيق الشرطي](model/conditionalformattingvalue)  :   
+- [خيارات النسخ](model/copyoptions) : يمثل خيارات النسخ.
+- [معايير التصفية المتعددة](model/criteriamultiplefilter)  :   
+- [تصفية مخصص](model/customfilter)  :   
+- [شريط البيانات](model/databar) : وصف قاعدة التنسيق الشرطي لـ DataBar. تعرض قاعدة التنسيق الشرطي شريط بيانات متدرجًا في نطاق الخلايا.
+- [DataBarBorder](model/databarborder)  :   
+- [تنظيف البيانات](model/datacleansing) : تنظيف البيانات
+- [DataColumnFillValue](model/datacolumnfillvalue)  :   
+- [تعبئة البيانات](model/datafill)  :   
+- [قيمة تعبئة البيانات](model/datafillvalue)  :   
+- [فارز البيانات](model/datasorter) : وصف ملخص لـ DataSorter.
+- [DataSorterKey](model/datasorterkey) : يمثل مفتاح فارز البيانات.
+- [DateTimeGroupItem](model/datetimegroupitem)  :   
+- [منطقة إلغاء البيانات المكررة](model/deduplicationregion)  :   
+- [مرشح ديناميكي](model/dynamicfilter)  :   
+- [معلومات الملف](model/fileinfo) : معلومات الملف
+- [نتيجة الملفات](model/filesresult)  :   
+- [FilterColumn](model/filtercolumn)  :   
+- [الخط](model/font)  :   
+- [إعداد الخط](model/fontsetting)  :   
+- [FormatCondition](model/formatcondition)  :   
+- [FormulaFormatCondition](model/formulaformatcondition)  :   
+- [إعدادات الصيغة](model/formulasettings) : إعدادات الصيغ والحساب.
+- [إعدادات العولمة](model/globalizationsettings) : يمثل إعدادات العولمة.
+- [HorizontalPageBreak](model/horizontalpagebreak)  :   
+- [فواصل الصفحات الأفقية](model/horizontalpagebreaks)  :   
+- [الارتباط التشعبي](model/hyperlink)  :   
+- [الارتباطات التشعبية](model/hyperlinks)  :   
+- [مرشح الأيقونات](model/iconfilter)  :   
+- [IconSet](model/iconset) وصف قاعدة التنسيق الشرطي IconSet. تطبق قاعدة التنسيق الشرطي هذه الرموز على الخلايا وفقًا لقيمها.
+- [وصلة](model/link)  :   
+- [LinkElement](model/linkelement)  :   
+- [خيارات التحميل](model/loadoptions)  :   
+- [MergedCell](model/mergedcell)  :   
+- [الخلايا المدمجة](model/mergedcells)  :   
+- [مرشح متعدد](model/multiplefilter)  :   
+- [مرشحات متعددة](model/multiplefilters)  :   
+- [اسم](model/name)  :   
+- [الأسماء](model/names)  :   
+- [تنسيق شريط سلبي](model/negativebarformat) : يمثل إعدادات الألوان لأشرطة البيانات للقيم السالبة التي تم تحديدها بواسطة قاعدة التنسيق الشرطي لشريط البيانات.
+- [قسم الصفحة](model/pagesection)  :   
+- [اعداد الصفحة](model/pagesetup)  :   
+- [خيارات اللصق](model/pasteoptions) : يمثل خيارات اللصق الخاصة.
+- [خيارات PDF الأمنية](model/pdfsecurityoptions)  :   
+- [حماية](model/protection) : يمثل الأنواع المختلفة لخيارات الحماية المتاحة لورقة العمل.
+- [ProtectSheetParameter](model/protectsheetparameter)  :   
+- [جدول الاستعلام](model/querytable) : يمثل معلومات جدول الاستعلام.
+- [يتراوح](model/range)  :   
+- [نطاقات](model/ranges)  :   
+- [صف](model/row)  :   
+- [الصفوف](model/rows)  :   
+- [حفظ النتيجة](model/saveresult)  :   
+- [خيارات الحفظ المرقّمة](model/paginatedsaveoptions) : يمثل خيارات ترقيم الصفحات.
+- [قيمة واحدة](model/singlevalue)  :   
+- [مفتاح الفرز](model/sortkey)  :   
+- [SplitResult](model/splitresult)  :   
+- [SplitResultDocument](model/splitresultdocument)  :   
+- [أسلوب](model/style)  :   
+- [StyleFormatCondition](model/styleformatcondition)  :   
+- [الأنماط](model/styles)  :   
+- [TextFormatCondition](model/textformatcondition)  :   
+- [TextItem](model/textitem)  :   
+- [عناصر نصية](model/textitems)  :   
+- [خيارات النص](model/textoptions)  :   
+- [لون الموضوع](model/themecolor)  :   
+- [TimePeriodFormatCondition](model/timeperiodformatcondition)  :   
+- [أعلى 10](model/top10) وصف قاعدة التنسيق الشرطي Top10. تقوم قاعدة التنسيق الشرطي هذه بتمييز الخلايا التي تقع قيمها في قوس N العلوي أو N السفلي، كما هو محدد.
+- [مرشح Top10](model/top10filter)  :   
+- [تصديق](model/validation)  :   
+- [التحقق من الصحة](model/validations)  :   
+- [VerticalPageBreak](model/verticalpagebreak)  :   
+- [فواصل الصفحات العمودية](model/verticalpagebreaks)  :   
+- [دفتر العمل](model/workbook)  :   
+- [إعدادات المصنف](model/workbooksettings)  :   
+- [ورقة عمل](model/worksheet)  :   
+- [أوراق عمل](model/worksheets)  :   
+- [حماية الكتابة](model/writeprotection) : تحديد إعدادات الحماية ضد الكتابة لمصنف.
+- [XmlDataBinding](model/xmldatabinding) : يمثل معلومات ربط بيانات Xml.
+- [XmlMap](model/xmlmap) : يمثل معلومات خريطة XML.
+- [CellsObjectOperateTaskParameter](model/cellsobjectoperatetaskparameter)  :   
+- [ConvertTaskParameter](model/converttaskparameter)  :   
+- [ConvertWorksheetTaskParameter](model/convertworksheettaskparameter)  :   
+- [مصدر الملف](model/filesource)  :   
+- [نوع مصدر الملف](model/filesourcetype)  :   
+- [ImportDataTaskParameter](model/importdatataskparameter)  :   
+- [النتيجةالوجهة](model/resultdestination)  :   
+- [نوع الوجهة النتيجة](model/resultdestinationtype)  :   
+- [مصدر النتيجة](model/resultsource)  :   
+- [SaveFilesToCloudResult](model/savefilestocloudresult)  :   
+- [SaveResultTaskParameter](model/saveresulttaskparameter)  :   
+- [SmartMarkerTaskParameter](model/smartmarkertaskparameter)  :   
+- [SplitWorkbookTaskParameter](model/splitworkbooktaskparameter)  :   
+- [TaskData](model/taskdata)  :   
+- [وصف المهمة](model/taskdescription)  :   
+- [معلمة المهمة](model/taskparameter)  :   
+- [TaskResultParameter](model/taskresultparameter)  :   
+- [TaskRunResult](model/taskrunresult)  :   
+- [نوع المهمة](model/tasktype)  :   
+- [ChartOperateParameter](model/chartoperateparameter)  :   
+- [ListObjectOperateParameter](model/listobjectoperateparameter)  :   
+- [كائن تشغيل](model/operateobject)  :   
+- [OperateObjectPosition](model/operateobjectposition)  :   
+- [OperateObjectType](model/operateobjecttype)  :   
+- [معلمة التشغيل](model/operateparameter)  :   
+- [نوع التشغيل](model/operatetype)  :   
+- [PageBreakOperateParameter](model/pagebreakoperateparameter)  :   
+- [PageSetupOperateParameter](model/pagesetupoperateparameter)  :   
+- [PivotTableOperateParameter](model/pivottableoperateparameter)  :   
+- [ShapeOperateParameter](model/shapeoperateparameter)  :   
+- [WorkbookOperateParameter](model/workbookoperateparameter)  :   
+- [إعدادات المصنفOperateParameter](model/workbooksettingsoperateparameter)  :   
+- [ورقة عملOperateParameter](model/worksheetoperateparameter)  :   
+- [ListColumn](model/listcolumn)  :   
+- [ListObject](model/listobject)  :   
+- [كائنات القائمة](model/listobjects)  :   
+- [إعدادات العولمة المحورية](model/pivotglobalizationsettings) : يمثل إعدادات العولمة للجداول المحورية.
+- [DifSaveOptions](model/difsaveoptions) : يمثل خيارات حفظ ملف dif.
+- [DocxSaveOptions](model/docxsaveoptions) : يمثل خيارات حفظ ملف .docx.
+- [هتملسافيوبتيونس](model/htmlsaveoptions) : يمثل خيارات حفظ ملف .html.
+- [خيارات حفظ الصورة](model/imagesaveoptions) : يمثل خيارات حفظ ملف الصورة.
+- [JsonSaveOptions](model/jsonsaveoptions) يمثل خيارات حفظ ملف .json.
+- [خيارات تخفيض السعر](model/markdownsaveoptions) : يمثل خيارات حفظ ملف .md.
+- [MHtmlSaveOptions](model/mhtmlsaveoptions) : يمثل خيارات حفظ ملف .mhtml.
+- [OdsSaveOptions](model/odssaveoptions) : يمثل خيارات حفظ ملف .ods.
+- [خيارات OoxmlSave](model/ooxmlsaveoptions) : يمثل خيارات حفظ ملف ooxml.
+- [خيارات حفظ PDF](model/pdfsaveoptions) : يمثل خيارات حفظ ملف pdf.
+- [خيارات PptxSave](model/pptxsaveoptions) : يمثل خيارات حفظ ملف pptx.
+- [خيارات الحفظ](model/saveoptions) : يمثل جميع خيارات الحفظ
+- [جدول البياناتML2003SaveOptions](model/spreadsheetml2003saveoptions) : يمثل خيارات حفظ ملف .xml.
+- [خيارات سقلسكريبتيسيف](model/sqlscriptsaveoptions) : يمثل خيارات حفظ ملف .sql.
+- [خيارات SvgSave](model/svgsaveoptions) : يمثل خيارات حفظ ملف .svg.
+- [خيارات تكستسيف](model/txtsaveoptions) : يمثل خيارات حفظ ملف .txt.
+- [خيارات xlsbSave](model/xlsbsaveoptions) : يمثل خيارات حفظ ملف .xlsb.
+- [XlsSaveOptions](model/xlssaveoptions) : يمثل خيارات حفظ ملف .xls.
+- [خيارات XpsSave](model/xpssaveoptions) : يمثل خيارات حفظ ملف .xps.
+- [تحليلExcelResponse](model/analyzeexcelresponse)  :   
+- [ArcShapeResponse](model/arcshaperesponse)  :   
+- [استجابة التصفية التلقائية](model/autofilterresponse)  :   
+- [الاستجابة التلقائية](model/autoshaperesponse)  :   
+- [الاستجابة للأشكال التلقائية](model/autoshapesresponse)  :   
+- [استجابة المحور](model/axisresponse)  :   
+- [استجابة الحدود](model/borderresponse)  :   
+- [ButtonResponse](model/buttonresponse)  :   
+- [CalculateFormulaResponse](model/calculateformularesponse)  :   
+- [رد الخلية](model/cellresponse)  :   
+- [CellsCloudFileInfoResponse](model/cellscloudfileinforesponse)  :   
+- [CellsCloudResponse](model/cellscloudresponse)  :   
+- [CellsDocumentPropertiesResponse](model/cellsdocumentpropertiesresponse)  :   
+- [CellsDocumentPropertyResponse](model/cellsdocumentpropertyresponse)  :   
+- [استجابة رسم الخلايا](model/cellsdrawingresponse)  :   
+- [استجابة الخلايا](model/cellsresponse)  :   
+- [منطقة الرسم البيانيالاستجابة](model/chartarearesponse)  :   
+- [ChartDataTableResponse](model/chartdatatableresponse)  :   
+- [استجابة تشارتبوينت](model/chartpointresponse)  :   
+- [استجابة نقاط الرسم البياني](model/chartpointsresponse)  :   
+- [استجابة الرسم البياني](model/chartresponse)  :   
+- [استجابة الرسوم البيانية](model/chartsresponse)  :   
+- [CheckBoxResponse](model/checkboxresponse)  :   
+- [استجابة العمود](model/columnresponse)  :   
+- [استجابة الأعمدة](model/columnsresponse)  :   
+- [comboBoxResponse](model/comboboxresponse)  :   
+- [رد التعليق](model/commentresponse)  :   
+- [تعليق الشكلالاستجابة](model/commentshaperesponse)  :   
+- [رد التعليقات](model/commentsresponse)  :   
+- [استجابة التنسيق الشرطي](model/conditionalformattingresponse)  :   
+- [استجابة التنسيقات الشرطية](model/conditionalformattingsresponse)  :   
+- [DataLabelsResponse](model/datalabelsresponse)  :   
+- [DisplayUnitLabelResponse](model/displayunitlabelresponse)  :   
+- [DropBarsResponse](model/dropbarsresponse)  :   
+- [خطأ بارالاستجابة](model/errorbarresponse)  :   
+- [فيلفورماتريسبونس](model/fillformatresponse)  :   
+- [FindResponse](model/findresponse)  :   
+- [FloorResponse](model/floorresponse)  :   
+- [رد النموذج](model/formresponse)  :   
+- [استجابة النماذج](model/formsresponse)  :   
+- [استجابة GroupBox](model/groupboxresponse)  :   
+- [HorizontalPageBreakResponse](model/horizontalpagebreakresponse)  :   
+- [HorizontalPageBreaksResponse](model/horizontalpagebreaksresponse)  :   
+- [استجابة الارتباط التشعبي](model/hyperlinkresponse)  :   
+- [استجابة الارتباطات التشعبية](model/hyperlinksresponse)  :   
+- [استجابة التسمية](model/labelresponse)  :   
+- [LegendEntriesResponse](model/legendentriesresponse)  :   
+- [LegendEntryResponse](model/legendentryresponse)  :   
+- [رد الأسطورة](model/legendresponse)  :   
+- [استجابة الخط](model/lineresponse)  :   
+- [استجابة LineShape](model/lineshaperesponse)  :   
+- [ListBoxResponse](model/listboxresponse)  :   
+- [ListObjectResponse](model/listobjectresponse)  :   
+- [ListObjectsResponse](model/listobjectsresponse)  :   
+- [MergedCellResponse](model/mergedcellresponse)  :   
+- [استجابة الخلايا المدمجة](model/mergedcellsresponse)  :   
+- [رد الاسم](model/nameresponse)  :   
+- [رد الأسماء](model/namesresponse)  :   
+- [OleObjectResponse](model/oleobjectresponse)  :   
+- [OleObjectsResponse](model/oleobjectsresponse)  :   
+- [الاستجابة البيضاوية](model/ovalresponse)  :   
+- [استجابة أقسام الصفحة](model/pagesectionsresponse)  :   
+- [استجابة إعداد الصفحة](model/pagesetupresponse)  :   
+- [استجابة الصورة](model/pictureresponse)  :   
+- [رد الصور](model/picturesresponse)  :   
+- [الاستجابة المحورية](model/pivotfieldresponse)  :   
+- [استجابة مرشح المحور](model/pivotfilterresponse)  :   
+- [استجابة عوامل التصفية المحورية](model/pivotfiltersresponse)  :   
+- [PivotTableResponse](model/pivottableresponse)  :   
+- [استجابة الجداول المحورية](model/pivottablesresponse)  :   
+- [PlotAreaResponse](model/plotarearesponse)  :   
+- [استجابة زر الراديو](model/radiobuttonresponse)  :   
+- [استجابة المدى](model/rangeresponse)  :   
+- [استجابة النطاقات](model/rangesresponse)  :   
+- [RangeValueResponse](model/rangevalueresponse)  :   
+- [RectangleShapeResponse](model/rectangleshaperesponse)  :   
+- [استجابة الصف](model/rowresponse)  :   
+- [استجابة الصفوف](model/rowsresponse)  :   
+- [SaveFilesToCloudResultResponse](model/savefilestocloudresultresponse)  :   
+- [حفظ الاستجابة](model/saveresponse)  :   
+- [ScrollBarResponse](model/scrollbarresponse)  :   
+- [استجابة السلسلة](model/seriesesresponse)  :   
+- [استجابة السلسلة](model/seriesresponse)  :   
+- [استجابة الشكل](model/shaperesponse)  :   
+- [استجابة الأشكال](model/shapesresponse)  :   
+- [استجابة فردية القيمة](model/singlevalueresponse)  :   
+- [SparklineGroupResponse](model/sparklinegroupresponse)  :   
+- [SparklineGroupsResponse](model/sparklinegroupsresponse)  :   
+- [رد الدوار](model/spinnerresponse)  :   
+- [SplitResultResponse](model/splitresultresponse)  :   
+- [رد ستايل](model/styleresponse)  :   
+- [TaskRunResultResponse](model/taskrunresultresponse)  :   
+- [TextBoxResponse](model/textboxresponse)  :   
+- [TextItemResponse](model/textitemresponse)  :   
+- [TextItemsResponse](model/textitemsresponse)  :   
+- [استجابة القراد](model/ticklabelsresponse)  :   
+- [استجابة العنوان](model/titleresponse)  :   
+- [استجابة خط الاتجاه](model/trendlineresponse)  :   
+- [استجابة خطوط الاتجاه](model/trendlinesresponse)  :   
+- [رد التحقق من الصحة](model/validationresponse)  :   
+- [رد التحقق من الصحة](model/validationsresponse)  :   
+- [VerticalPageBreakResponse](model/verticalpagebreakresponse)  :   
+- [VerticalPageBreaksResponse](model/verticalpagebreaksresponse)  :   
+- [استجابة الجدران](model/wallsresponse)  :   
+- [WorkbookReplaceResponse](model/workbookreplaceresponse)  :   
+- [استجابة المصنف](model/workbookresponse)  :   
+- [استجابة إعدادات المصنف](model/workbooksettingsresponse)  :   
+- [استجابة المصنفات](model/workbooksresponse)  :   
+- [ورقة العملReplaceResponse](model/worksheetreplaceresponse)  :   
+- [استجابة ورقة العمل](model/worksheetresponse)  :   
+- [استجابة أوراق العمل](model/worksheetsresponse)  :   
+- [تحليل طلب Excel](model/analyzeexcelrequest)  :   
+- [BatchConvertRequest](model/batchconvertrequest) : يشير إلى طلب ملف تحويل الدفعة
+- [BatchLockRequest](model/batchlockrequest) : يشير إلى طلب ملف القفل الدفعي
+- [طلب حماية الدفعة](model/batchprotectrequest) : يشير إلى طلب ملف حماية الدفعة
+- [BatchSplitRequest](model/batchsplitrequest)  :   
+- [طلب تصفية الألوان](model/colorfilterrequest) : يشير إلى طلب مرشح الألوان
+- [تحويل المعلمة](model/convertparameter) : يشير إلى تحويل المعلمة
+- [إنشاءPivotTableRequest](model/createpivottablerequest) : يشير إلى إنشاء طلب جدول محوري
+- [طلب تنظيف البيانات](model/datacleansingrequest) : طلب تنظيف البيانات لملف جدول بيانات.
+- [طلب إزالة البيانات المكررة](model/datadeduplicationrequest)  :   
+- [طلب تعبئة البيانات](model/datafillrequest)  :   
+- [طلب حذف غير كامل](model/deleteincompleterowsrequest)  :   
+- [ImportJsonRequest](model/importjsonrequest) : يشير إلى طلب استيراد بيانات XML
+- [استيرادXMLRequest](model/importxmlrequest) : يشير إلى طلب استيراد بيانات XML
+- [طلب مطابقة الحالة](model/matchconditionrequest) : يشير إلى حالة المطابقة التي يجب معالجتها لاسم الملف.
+- [طلب كلمة المرور](model/passwordrequest) : يستخدم لنقل بيانات كلمة المرور.
+- [PivotTableFieldRequest](model/pivottablefieldrequest) : يشير إلى طلب حقل الجدول المحوري
+- [طلب حماية Workbook](model/protectworkbookrequest) : يشير إلى طلب حماية المصنف
+- [طلب نسخ النطاق](model/rangecopyrequest) : يشير إلى طلب نسخ النطاق
+- [RangeSetOutlineBorderRequest](model/rangesetoutlineborderrequest) يشير إلى طلب الحدود التفصيلية لمجموعة النطاق.
+- [RangeSetStyleRequest](model/rangesetstylerequest) : يشير إلى طلب نمط مجموعة النطاق.
+- [طلب ترتيب النطاق](model/rangesortrequest) : يشير إلى طلب فرز النطاق
+- [TableTotalRequest](model/tabletotalrequest) : يشير إلى إجمالي طلب الجدول
+- [طلب TextWaterMarker](model/textwatermarkerrequest) : يشير إلى طلب علامة مائية نصية.
+- [طلب تشفير المصنف](model/workbookencryptionrequest) : يُستخدم بواسطة طلبات تشفير/فك تشفير المصنف.
+- [طلب حماية المصنف](model/workbookprotectionrequest) : يُستخدم بواسطة طلبات حماية المصنف.
+- [طلب نقل ورقة العمل](model/worksheetmovingrequest) : يستخدم بواسطة طلبات نقل المصنف.
+- [خيارات الصورة أو الطباعة](model/imageorprintoptions)  :   
+- [RenderingFont](model/renderingfont)  :   
+- [تقديم العلامة المائية](model/renderingwatermark)  :   
+- [PivotField](model/pivotfield)  :   
+- [مرشح محوري](model/pivotfilter) : يمثل PivotFilter في مجموعة PivotFilter.
+- [PivotItem](model/pivotitem)  :   
+- [جدول محوري](model/pivottable)  :   
+- [الجداول المحورية](model/pivottables)  :   
+- [CustomParserConfig](model/customparserconfig)  :   
+- [Import2DimensionDoubleArrayOption](model/import2dimensiondoublearrayoption)  :   
+- [Import2DimensionIntArrayOption](model/import2dimensionintarrayoption)  :   
+- [Import2DimensionStringArrayOption](model/import2dimensionstringarrayoption)  :   
+- [قيمة الخلية](model/cellvalue)  :   
+- [ImportBatchDataOption](model/importbatchdataoption)  :   
+- [ImportCSVDataOption](model/importcsvdataoption)  :   
+- [ImportDataType](model/importdatatype)  :   
+- [استيرادDoubleArrayOption](model/importdoublearrayoption)  :   
+- [ImportIntArrayOption](model/importintarrayoption)  :   
+- [خيار الاستيراد](model/importoption)  :   
+- [ImportPictureOption](model/importpictureoption)  :   
+- [موضع الاستيراد](model/importposition)  :   
+- [ImportStringArrayOption](model/importstringarrayoption)  :   
+- [شكل قوس](model/arcshape)  :   
+- [منطقة](model/area)  :   
+- [شكل تلقائي](model/autoshape)  :   
+- [الأشكال التلقائية](model/autoshapes)  :   
+- [زر](model/button)  :   
+- [رسم الخلايا](model/cellsdrawing)  :   
+- [خانة الاختيار](model/checkbox)  :   
+- [صندوق التحرير](model/combobox)  :   
+- [شكل التعليق](model/commentshape)  :   
+- [تنسيق التعبئة](model/fillformat)  :   
+- [استمارة](model/form)  :   
+- [نماذج](model/forms)  :   
+- [ملء الانحدار](model/gradientfill)  :   
+- [GradientFillStop](model/gradientfillstop)  :   
+- [صندوق المجموعة](model/groupbox)  :   
+- [شكل المجموعة](model/groupshape)  :   
+- [ملصق](model/label)  :   
+- [خط](model/line) : يقوم بتغليف الكائن الذي يمثل تنسيق الخط.
+- [تنسيق الخط](model/lineformat)  :   
+- [شكل خط](model/lineshape)  :   
+- [ListBox](model/listbox)  :   
+- [كائن أوله](model/oleobject)  :   
+- [كائنات أولية](model/oleobjects)  :   
+- [بيضاوي](model/oval)  :   
+- [تعبئة الأنماط](model/patternfill)  :   
+- [PicFormatOption](model/picformatoption)  :   
+- [صورة](model/picture)  :   
+- [الصور](model/pictures)  :   
+- [زر الراديو](model/radiobutton)  :   
+- [شكل مستطيل](model/rectangleshape)  :   
+- [شريط التمرير](model/scrollbar)  :   
+- [تأثير الظل](model/shadoweffect)  :   
+- [شكل](model/shape)  :   
+- [الأشكال](model/shapes)  :   
+- [ملء الصلبة](model/solidfill)  :   
+- [سبينر](model/spinner)  :   
+- [مربع الكتابة](model/textbox)  :   
+- [TextureFill](model/texturefill)  :   
+- [TilePicOption](model/tilepicoption)  :   
+- [توقيع إلكتروني](model/digitalsignature) : التوقيع في الملف.
+- [محور](model/axis)  :   
+- [جدول](model/chart)  :   
+- [منطقة الرسم البياني](model/chartarea)  :   
+- [ChartDataTable](model/chartdatatable)  :   
+- [إطار الرسم البياني](model/chartframe)  :   
+- [إعدادات عولمة الرسم البياني](model/chartglobalizationsettings) : يمثل إعدادات العولمة للمخطط.
+- [تشارتبوينت](model/chartpoint)  :   
+- [نقاط الرسم البياني](model/chartpoints)  :   
+- [الرسوم البيانية](model/charts)  :   
+- [شكل الرسم البياني](model/chartshape) : كائن شكل الرسم البياني
+- [DataLabels](model/datalabels)  :   
+- [DisplayUnitLabel](model/displayunitlabel)  :   
+- [DropBars](model/dropbars)  :   
+- [شريط خطأ](model/errorbar)  :   
+- [أرضية](model/floor)  :   
+- [أسطورة](model/legend)  :   
+- [LegendEntries](model/legendentries)  :   
+- [LegendEntry](model/legendentry)  :   
+- [علامة](model/marker)  :   
+- [منطقة الأرض](model/plotarea)  :   
+- [مسلسل](model/series)  :   
+- [عناصر السلسلة](model/seriesitems)  :   
+- [خط التألق](model/sparkline) : يمثل خط المؤشر مخططًا أو رسمًا صغيرًا في خلية ورقة عمل يوفر تمثيلاً مرئيًا للبيانات.
+- [SparklineGroup](model/sparklinegroup)  :   
+- [SparklineGroups](model/sparklinegroups) : يغلف مجموعة من كائنات Aspose.Cells.Charts.SparklineGroup.
+- [علامات التجزئة](model/ticklabels)  :   
+- [عنوان](model/title)  :   
+- [خط الاتجاه](model/trendline)  :   
+- [خطوط الاتجاه](model/trendlines)  :   
+- [الجدران](model/walls)  :   
+- [ColumnDataExceptionDescription](model/columndataexceptiondescription)  :   
+- [فئة النص](model/textcategorytype)  :   
+- [وصف العمود التحليلي](model/analyzedcolumndescription) كيفية استخدام خصائص كل عمود: مقسم حاليا إلى خط زمني، خط إنتاج، خط إحصائيات رقمية كيفية تقديم المنتج، خطة موحدة كيفية حل مشكلة الرقمية الكاملة؟ النص الكامل كيفية حلها؟ عمودين: نص، الرقم هو الأسهل ثلاثة أعمدة: نص، نص، نص رقم، رقم، رقم --- تاريخ التاريخ؛ التاريخ رقمي ; رقمي رقمي ماذا عن أربعة أعمدة، خمسة أعمدة؟
+- [النتيجة التحليلية](model/analyzedresult)  :   
+- [تحليل الجدول الوصف](model/analyzedtabledescription)  :   
+- [نوع مصدر التاريخ](model/datesourcetype)  :   
+- [نوع الإخراج المقترح](model/suggestedoutputtype)  :   
+- [تحليل الاقتراح](model/analyzesuggestion)  :   
+- [DiscoverChart](model/discoverchart)  :   
+- [DiscoverPivotTable](model/discoverpivottable)  :   
+- [ExcelDataStatistics](model/exceldatastatistics)  :   
+- [إحصائيات ورقة العمل](model/worksheetdatastatistics)  :   
+- [خطأ](model/error) : خطأ
+- [تفاصيل الخطأ](model/errordetails) : تفاصيل الخطأ

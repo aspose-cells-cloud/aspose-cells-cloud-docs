@@ -1,0 +1,739 @@
+﻿---
+title: Specifikation
+second_title: Aspose.Cells Cloud Documen
+type: docs
+weight: 50
+---
+# Aspose.Cells Moln API Drift
+
+- [PostAnalyzeExcel](operation/postanalyzeexcel) : Utför affärsanalys av data i Excel-filer.
+- [GetWorksheetAutoFilter](operation/getworksheetautofilter) : Hämta beskrivningen av autofilter från ett kalkylblad.
+- [PutWorksheetDateFilter](operation/putworksheetdatefilter) : Använd ett datumfilter i kalkylbladet.
+- [PutWorksheetFilter](operation/putworksheetfilter) : Lägg till ett filter för en kolumn i kalkylbladet.
+- [PutWorksheetIconFilter](operation/putworksheeticonfilter) : Lägg till ett ikonfilter i kalkylbladet.
+- [PutWorksheetCustomFilter](operation/putworksheetcustomfilter) Filtrera en lista med anpassade kriterier i kalkylbladet.
+- [PutWorksheetDynamicFilter](operation/putworksheetdynamicfilter) : Lägg till ett dynamiskt filter i kalkylbladet.
+- [PutWorksheetFilterTop10](operation/putworksheetfiltertop10) : Filtrera de 10 bästa objekten i listan i kalkylbladet.
+- [PutWorksheetColorFilter](operation/putworksheetcolorfilter) : Lägg till ett färgfilter i kalkylbladet.
+- [PostWorksheetMatchBlanks](operation/postworksheetmatchblanks) : Matcha alla tomma celler i listan.
+- [PostWorksheetMatchNonBlanks](operation/postworksheetmatchnonblanks) : Matcha alla ej tomma celler i listan.
+- [PostWorksheetAutoFilterRefresh](operation/postworksheetautofilterrefresh) : Uppdatera automatiska filter i kalkylbladet.
+- [Ta bortWorksheetDateFilter](operation/deleteworksheetdatefilter) : Ta bort ett datumfilter i kalkylbladet.
+- [Ta bortWorksheetFilter](operation/deleteworksheetfilter) : Ta bort ett filter för en kolumn i kalkylbladet.
+- [GetWorksheetAutoshapes](operation/getworksheetautoshapes) : Hämta beskrivning av autoformer i kalkylbladet.
+- [GetWorksheetAutoshapeWithFormat](operation/getworksheetautoshapewithformat) : Få autoshape-beskrivning i något format.
+- [PostBatchConvert](operation/postbatchconvert) : Batchkonverterande filer som uppfyller specifika matchningsvillkor.
+- [PostBatchProtect](operation/postbatchprotect) : Batchskyddande filer som uppfyller specifika matchningsvillkor.
+- [PostBatchLock](operation/postbatchlock) : Batchlåsfiler som uppfyller specifika matchningsvillkor.
+- [PostBatchUnlock](operation/postbatchunlock) : Batchupplåsningsfiler som uppfyller specifika matchningsvillkor.
+- [PostBatchSplit](operation/postbatchsplit) : Batchdelningsfiler som uppfyller specifika matchningsvillkor.
+- [PostClearContents](operation/postclearcontents) : Rensa cellområdets innehåll i kalkylbladet.
+- [PostClearFormats](operation/postclearformats) : Rensa cellformat i kalkylbladet.
+- [PostUpdateWorksheetRangeStyle](operation/postupdateworksheetrangestyle) : Uppdatera cellintervallsstilar i kalkylbladet.
+- [PostWorksheetMerge](operation/postworksheetmerge) : Slå ihop celler i kalkylbladet.
+- [PostWorksheetUnmerge](operation/postworksheetunmerge) : Ta bort sammanslagningen av celler i kalkylbladet.
+- [GetWorksheetCells](operation/getworksheetcells) : Hämta cellbeskrivningar i ett specificerat format.
+- [GetWorksheetCell](operation/getworksheetcell) : Hämta celldata med antingen cellreferens eller metodnamn i kalkylbladet.
+- [GetWorksheetCellStyle](operation/getworksheetcellstyle) : Hämta cellstilsbeskrivningar i kalkylbladet.
+- [PostWorksheetCellSetValue](operation/postworksheetcellsetvalue) : Ställ in cellvärde med cellnamnet i kalkylbladet.
+- [PostUpdateWorksheetCellStyle](operation/postupdateworksheetcellstyle) : Ställ in cellstil med cellnamn i kalkylbladet.
+- [PostSetCellRangeValue](operation/postsetcellrangevalue) : Ställ in värdet för intervallet i kalkylbladet.
+- [PostCopyCellIntoCell](operation/postcopycellintocell) : Kopiera data från en källcell till en målcell i kalkylbladet.
+- [GetCellHtmlString](operation/getcellhtmlstring) : Hämta HTML-strängen som innehåller data och specifika format i den här cellen.
+- [PostSetCellHtmlString](operation/postsetcellhtmlstring) : Ställ in strängen HTML som innehåller data och specifika format i den här cellen.
+- [PostCellCalculate](operation/postcellcalculate) : Beräkna cellformel i kalkylbladet.
+- [PostCell Characters](operation/postcellcharacters) : Ställ in celltecken i kalkylbladet.
+- [GetWorksheetColumns](operation/getworksheetcolumns) : Hämta beskrivningar av kalkylbladskolumner.
+- [PostSetWorksheetColumnWidth](operation/postsetworksheetcolumnwidth) : Ställ in kalkylbladets kolumnbredd.
+- [GetWorksheetColumn](operation/getworksheetcolumn) : Hämta kalkylbladskolumndata efter kolumnindex.
+- [PutInsertWorksheetColumns](operation/putinsertworksheetcolumns) Infoga kalkylbladskolumner i kalkylbladet.
+- [Ta bort arbetsbladskolumner](operation/deleteworksheetcolumns) : Ta bort kalkylbladskolumner i kalkylbladet.
+- [PostHide WorksheetColumns](operation/posthideworksheetcolumns) : Dölj kalkylbladskolumner i kalkylbladet.
+- [PostUnhide WorksheetColumns](operation/postunhideworksheetcolumns) : Visa kalkylbladskolumner i kalkylbladet.
+- [PostGroupWorksheetColumns](operation/postgroupworksheetcolumns) : Gruppera kalkylbladskolumner i kalkylbladet.
+- [PostUngroupWorksheetColumns](operation/postungroupworksheetcolumns) : Dela upp kalkylbladskolumner.
+- [PostCopyWorksheetColumns](operation/postcopyworksheetcolumns) : Kopiera data från källkolumner till målkolumner i kalkylbladet.
+- [PostColumn Style](operation/postcolumnstyle) : Ställ in kolumnstil i kalkylbladet.
+- [GetWorksheetRows](operation/getworksheetrows) : Hämta beskrivningar av rader i kalkylbladet.
+- [GetWorksheetRow](operation/getworksheetrow) : Hämta raddata efter radens index i kalkylbladet.
+- [Ta bortWorksheetRow](operation/deleteworksheetrow) : Ta bort en rad i kalkylbladet.
+- [Ta bortWorksheetRows](operation/deleteworksheetrows) : Ta bort flera rader i kalkylbladet.
+- [PutInsertWorksheetRows](operation/putinsertworksheetrows) : Infoga flera nya rader i kalkylbladet.
+- [PutInsertWorksheetRow](operation/putinsertworksheetrow) : Infoga en ny rad i kalkylbladet.
+- [PostUpdateWorksheetRow](operation/postupdateworksheetrow) : Uppdatera höjden på raderna i kalkylbladet.
+- [PostHideWorksheetRows](operation/posthideworksheetrows) : Göm rader i kalkylbladet.
+- [PostUnhideWorksheetRows](operation/postunhideworksheetrows) : Visa rader i kalkylbladet.
+- [PostGroupWorksheetRows](operation/postgroupworksheetrows) : Gruppera rader i kalkylbladet.
+- [PostUngroupWorksheetRows](operation/postungroupworksheetrows) : Dela upp rader i kalkylbladet.
+- [PostCopyWorksheetRows](operation/postcopyworksheetrows) : Kopiera data och format från specifika hela rader i kalkylbladet.
+- [PostRowStyle](operation/postrowstyle) : Tillämpa format på en hel rad i kalkylbladet.
+- [GetCellsCloudServicesHealthCheck](operation/getcellscloudserviceshealthcheck) : Hämta cellbeskrivningar i ett specificerat format.
+- [GetCellsCloudServiceStatus](operation/getcellscloudservicestatus) : Aspose.Cells Hälsostatus för molntjänsten.
+- [GetChartArea](operation/getchartarea) : Hämta diagramområdesbeskrivning i kalkylbladet.
+- [GetChartAreaFillFormat](operation/getchartareafillformat) : Hämta diagramområdets fyllningsformatbeskrivning i kalkylbladet.
+- [GetChartAreaBorder](operation/getchartareaborder) : Hämta beskrivning av kartområdets kantlinje.
+- [GetWorksheetCharts](operation/getworksheetcharts) : Hämta beskrivningar av diagram i kalkylbladet.
+- [GetWorksheetChart](operation/getworksheetchart) Hämta diagrammet i ett angivet format.
+- [PutWorksheetChart](operation/putworksheetchart) : Lägg till ett nytt diagram i kalkylbladet.
+- [Ta bortWorksheetChart](operation/deleteworksheetchart) : Ta bort ett diagram efter index i kalkylbladet.
+- [PostWorksheetChart](operation/postworksheetchart) : Uppdatera diagramegenskaper i kalkylbladet.
+- [GetWorksheetChartLegend](operation/getworksheetchartlegend) : Hämta diagramförklaringsbeskrivning i kalkylbladet.
+- [PostWorksheetChartLegend](operation/postworksheetchartlegend) : Uppdatera diagramförklaring i kalkylbladet.
+- [PutWorksheetChartLegend](operation/putworksheetchartlegend) : Visa diagramförklaring i kalkylbladet.
+- [Ta bortWorksheetChartLegend](operation/deleteworksheetchartlegend) : Döljer diagramförklaring i kalkylbladet.
+- [Ta bortWorksheetCharts](operation/deleteworksheetcharts) : Rensa diagrammen i kalkylbladen.
+- [GetWorksheetChartTitle](operation/getworksheetcharttitle) : Hämta diagramtitelbeskrivning i kalkylbladet.
+- [PostWorksheetChartTitle](operation/postworksheetcharttitle) : Uppdatera diagramtiteln i kalkylbladet.
+- [PutWorksheetChartTitle](operation/putworksheetcharttitle) : Ange diagramtitel i kalkylbladet.
+- [Ta bortWorksheetChartTitle](operation/deleteworksheetcharttitle) : Dölj diagramtiteln i kalkylbladet.
+- [GetChartSeriesAxis](operation/getchartseriesaxis) Hämta beskrivningar av diagramserieaxeln i diagrammet.
+- [GetChartCategoryAxis](operation/getchartcategoryaxis) : Hämta beskrivningar av diagramserieaxeln i diagrammet.
+- [GetChartValueAxis](operation/getchartvalueaxis) : Hämta diagramvärdesaxeln i diagrammet.
+- [GetChartSecondCategoryAxis](operation/getchartsecondcategoryaxis) : Hämta diagrammets andra kategoriaxel i diagrammet
+- [GetChartSecondValueAxis](operation/getchartsecondvalueaxis) : Hämta diagrammets andra värdeaxel i diagrammet.
+- [PostChartSeriesAxis](operation/postchartseriesaxis) : Uppdatera diagramserieaxeln i diagrammet.
+- [PostChartCategoryAxis](operation/postchartcategoryaxis) : Uppdatera diagramkategoriaxel i diagrammet.
+- [PostChartValueAxis](operation/postchartvalueaxis) : Uppdatera diagramvärdesaxeln i diagrammet.
+- [PostChartSecondCategoryAxis](operation/postchartsecondcategoryaxis) : Uppdatera diagrammets andra kategoriaxel i diagrammet.
+- [PostChartSecondValueAxis](operation/postchartsecondvalueaxis) : Uppdatera diagrams sekondvärdesaxel i diagrammet.
+- [Get WorksheetConditional Formattings](operation/getworksheetconditionalformattings) : Hämta beskrivningar av villkorlig formatering i ett kalkylblad.
+- [Get WorksheetConditional Formatting](operation/getworksheetconditionalformatting) Hämta beskrivningar av villkorlig formatering i kalkylbladet.
+- [PutWorksheetConditionalFormatting](operation/putworksheetconditionalformatting) : Lägg till villkorlig formatering i kalkylbladet.
+- [PutWorksheetFormatCondition](operation/putworksheetformatcondition) : Lägg till ett formatvillkor i kalkylbladet.
+- [PutWorksheetFormatConditionArea](operation/putworksheetformatconditionarea) : Lägg till ett cellområde för formatvillkoret i kalkylbladet.
+- [PutWorksheetFormatConditionCondition](operation/putworksheetformatconditioncondition) : Lägg till ett villkor för formatvillkoret i kalkylbladet.
+- [Ta bortWorksheetConditional Formattings](operation/deleteworksheetconditionalformattings) : Rensa alla villkorliga formateringar i kalkylbladet.
+- [Ta bortWorksheetConditionalFormatting](operation/deleteworksheetconditionalformatting) : Ta bort en villkorlig formatering.
+- [Ta bortWorksheetConditionalFormattingArea](operation/deleteworksheetconditionalformattingarea) : Ta bort cellområdet från villkorlig formatering.
+- [GetWorkbook](operation/getworkbook) : Hämta arbetsböcker i olika format.
+- [PutConvertWorkbook](operation/putconvertworkbook) : Konvertera arbetsboken från det begärda innehållet till filer i olika format.
+- [PostWorkbookSaveAs](operation/postworkbooksaveas) : Spara en Excel-fil i olika format.
+- [PostConvertWorkbookToPDF](operation/postconvertworkbooktopdf) : Konvertera Excel-filen till PDF-filer.
+- [PostConvertWorkbookToPNG](operation/postconvertworkbooktopng) : Konvertera Excel-filen till PNG-filer.
+- [PostConvertWorkbookToDocx](operation/postconvertworkbooktodocx) : Konvertera Excel-filen till Docx-filer.
+- [PostConvertWorkbookToPptx](operation/postconvertworkbooktopptx) : Konvertera Excel-filen till Pptx-filer.
+- [PostConvertWorkbookToHtml](operation/postconvertworkbooktohtml) : Konvertera Excel-filen till HTML-filer.
+- [PostConvertWorkbookToMarkdown](operation/postconvertworkbooktomarkdown) : Konvertera Excel-filen till Markdown-filer.
+- [PostConvertWorkbookToJson](operation/postconvertworkbooktojson) : Konvertera Excel-filen till Json-filer.
+- [PostConvertWorkbookToSQL](operation/postconvertworkbooktosql) : Konvertera Excel-filen till SQL-skriptfiler.
+- [PostConvertWorkbookToCSV](operation/postconvertworkbooktocsv) : Konvertera Excel-filen till Csv-filer.
+- [PostExport](operation/postexport) : Exportera Excel interna element eller själva arbetsboken till olika formatfiler.
+- [PostWorkbookExportXML](operation/postworkbookexportxml) : Exportera XML-data från en Excel-fil. När det finns XML-kartor i en Excel-fil, exportera XML-data. När det inte finns någon XML-karta i filen Excel, konvertera filen Excel till en XML-fil.
+- [PostWorkbookImportJson](operation/postworkbookimportjson) Importera en JSON-datafil till arbetsboken. JSON-datafilen kan antingen vara en molnfil eller data från en HTTP-URI.
+- [PostWorkbookImportXML](operation/postworkbookimportxml) : Importera en XML-datafil till en Excel-fil. XML-datafilen kan antingen vara en molnfil eller data från en HTTP-URI.
+- [PostImportData](operation/postimportdata) : Importera data till filen Excel.
+- [PostWorkbookDataCleansing](operation/postworkbookdatacleansing) : Datarensning av kalkylarksfiler är en datahanteringsprocess som används för att identifiera, korrigera och ta bort fel, ofullständigheter, dubbletter eller felaktigheter i tabeller och intervall.
+- [PostDataCleansing](operation/postdatacleansing) : Datarensning av kalkylarksfiler är en datahanteringsprocess som används för att identifiera, korrigera och ta bort fel, ofullständigheter, dubbletter eller felaktigheter i tabeller och intervall.
+- [PostWorkbookDataDeduplication](operation/postworkbookdatadeduplication) : Datadeduplicering av kalkylbladsfiler används huvudsakligen för att eliminera dubbletter av data i tabeller och intervall.
+- [PostDataDeduplication](operation/postdatadeduplication) : Datadeduplicering av kalkylbladsfiler används huvudsakligen för att eliminera dubbletter av data i tabeller och intervall.
+- [PostWorkbookDataFill](operation/postworkbookdatafill) Datafyllning för kalkylbladsfiler används främst för att fylla tomma data i tabeller och intervall.
+- [PostDataFill](operation/postdatafill) Datafyllning för kalkylbladsfiler används främst för att fylla tomma data i tabeller och intervall.
+- [PostDeleteIncompleteRows](operation/postdeleteincompleterows) : Att ta bort ofullständiga rader med kalkylarksfiler används främst för att eliminera ofullständiga rader i tabeller och intervall.
+- [GetWorksheetHyperlinks](operation/getworksheethyperlinks) : Hämta beskrivningar av hyperlänkar i kalkylbladet.
+- [GetWorksheetHyperlink](operation/getworksheethyperlink) : Hämta hyperlänksbeskrivning efter index i kalkylbladet.
+- [Ta bortWorksheetHyperlänk](operation/deleteworksheethyperlink) : Ta bort hyperlänk efter index i kalkylbladet.
+- [PostWorksheetHyperlänk](operation/postworksheethyperlink) : Uppdatera hyperlänk efter index i kalkylbladet.
+- [PutWorksheetHyperlink](operation/putworksheethyperlink) : Lägg till hyperlänk i kalkylbladet.
+- [Ta bortWorksheetHyperlinks](operation/deleteworksheethyperlinks) : Ta bort alla hyperlänkar i kalkylbladet.
+- [PostAssemble](operation/postassemble) : Sätt ihop datafiler med mallfiler för att generera filer i olika format.
+- [PostCompress](operation/postcompress) : Komprimera filer och generera målfiler i olika format, filformat som stöds inkluderar Xls, Xlsx, Xlsm, Xlsb, Ods och mer.
+- [PostMerge](operation/postmerge) : Slå ihop celler i kalkylbladet.
+- [PostSplit](operation/postsplit) : Dela Excel kalkylbladsfiler baserat på kalkylblad och skapa utdatafiler i olika format.
+- [PostSearch](operation/postsearch) : Sök efter specificerad text i Excel-filer.
+- [PostReplace](operation/postreplace) : Ersätt specificerad text med ny text i Excel-filer.
+- [PostImport](operation/postimport) : Importera data till en Excel-fil och generera utdatafiler i olika format.
+- [Postvattenstämpel](operation/postwatermark) : Lägg till Text Watermark till Excel-filer och generera utdatafiler i olika format.
+- [PostClearObjects](operation/postclearobjects) : Rensa interna element i Excel-filer och generera utdatafiler i olika format.
+- [PostReverse](operation/postreverse) : Vänd om rader eller kolumner i Excel-filer och skapa utdatafiler i olika format.
+- [PostRepair](operation/postrepair) : Reparera onormala filer och generera filer i olika format.
+- [PostRotera](operation/postrotate) : Rotera rader, kolumner eller andra objekt i Excel-filer och spara dem i olika format.
+- [PostMetadata](operation/postmetadata) Uppdatera dokumentegenskaper i filen Excel och spara dem i olika format.
+- [GetMetadata](operation/getmetadata) : Hämta cellers dokumentegenskaper.
+- [Ta bort metadata](operation/deletemetadata) : Ta bort cellers dokumentegenskaper i filen Excel och spara dem i olika format.
+- [GetWorksheetListObjects](operation/getworksheetlistobjects) : Hämta beskrivningar av ListObjects i kalkylbladet.
+- [GetWorksheetListObject](operation/getworksheetlistobject) : Hämta listobjektbeskrivning efter index i kalkylbladet.
+- [PutWorksheetListObject](operation/putworksheetlistobject) : Lägg till ett ListObject i kalkylbladet.
+- [Ta bortWorksheetListObjects](operation/deleteworksheetlistobjects) : Ta bort ListObjects i kalkylbladet.
+- [Ta bortWorksheetListObject](operation/deleteworksheetlistobject) : Ta bort listobjekt efter index i kalkylbladet.
+- [PostWorksheetListObject](operation/postworksheetlistobject) : Uppdatera listobjekt efter index i kalkylbladet.
+- [PostWorksheetListObjectConvertToRange](operation/postworksheetlistobjectconverttorange) : Konvertera listobjekt till intervall i kalkylbladet.
+- [PostWorksheetListObjectSummarizeWithPivotTable](operation/postworksheetlistobjectsummarizewithpivottable) : Skapa en pivottabell med ett listobjekt i kalkylbladet.
+- [PostWorksheetListObjectSortTable](operation/postworksheetlistobjectsorttable) Sortera listobjekt i kalkylbladet.
+- [PostWorksheetListObjectRemoveDuplicates](operation/postworksheetlistobjectremoveduplicates) : Ta bort dubbletter i listobjekt.
+- [PostWorksheetListObjectInsertSlicer](operation/postworksheetlistobjectinsertslicer) : Infoga slicer för listobjekt.
+- [PostWorksheetListColumn](operation/postworksheetlistcolumn) : Uppdatera listkolumn i listobjekt.
+- [PostWorksheetListColumnsTotal](operation/postworksheetlistcolumnstotal) : Uppdatera summan av listkolumner i tabellen.
+- [GetWorksheetOleObjects](operation/getworksheetoleobjects) : Hämta beskrivningar av OLE-objekt i kalkylbladet.
+- [GetWorksheetOleObject](operation/getworksheetoleobject) : Hämta OLE-objektet i ett angivet format i kalkylbladet.
+- [Ta bortWorksheetOleObjects](operation/deleteworksheetoleobjects) : Ta bort alla OLE-objekt i kalkylbladet.
+- [Ta bortWorksheetOleObject](operation/deleteworksheetoleobject) : Ta bort ett OLE-objekt i kalkylbladet.
+- [PostUpdateWorksheetOleObject](operation/postupdateworksheetoleobject) : Uppdatera ett OLE-objekt i kalkylbladet.
+- [PutWorksheetOleObject](operation/putworksheetoleobject) : Lägg till ett OLE-objekt i kalkylbladet.
+- [GetVerticalPageBreaks](operation/getverticalpagebreaks) : Hämta beskrivningar av vertikala sidbrytningar i kalkylbladet.
+- [GetHorizontalPageBreaks](operation/gethorizontalpagebreaks) Hämta beskrivningar av horisontella sidbrytningar i kalkylbladet.
+- [GetVerticalPageBreak](operation/getverticalpagebreak) : Hämta en vertikal sidbrytningsbeskrivning i kalkylbladet.
+- [GetHorizontalPageBreak](operation/gethorizontalpagebreak) : Hämta en horisontell sidbrytningsbeskrivning i kalkylbladet.
+- [PutVerticalPageBreak](operation/putverticalpagebreak) : Lägg till en vertikal sidbrytning i kalkylbladet.
+- [PutHorizontalPageBreak](operation/puthorizontalpagebreak) : Lägg till horisontella sidbrytningar i kalkylbladet.
+- [Ta bortVerticalPageBreaks](operation/deleteverticalpagebreaks) : Ta bort vertikala sidbrytningar i kalkylbladet.
+- [Ta bort HorizontalPageBreaks](operation/deletehorizontalpagebreaks) : Ta bort horisontella sidbrytningar i kalkylbladet.
+- [Ta bort VerticalPageBreak](operation/deleteverticalpagebreak) : Ta bort en vertikal sidbrytning i kalkylbladet.
+- [Ta bort HorizontalPageBreak](operation/deletehorizontalpagebreak) : Ta bort en horisontell sidbrytning i kalkylbladet.
+- [GetPageSetup](operation/getpagesetup) : Hämta sidkonfigurationsbeskrivning i kalkylbladet.
+- [PostPageSetup](operation/postpagesetup) : Uppdatera sidinställningarna i kalkylbladet.
+- [Ta bort HeaderFooter](operation/deleteheaderfooter) : Rensa sidhuvud och sidfot i kalkylbladet.
+- [GetHeader](operation/getheader) : Hämta sidhuvudbeskrivning i kalkylbladet.
+- [PostHeader](operation/postheader) Uppdatera sidhuvudet i kalkylbladet.
+- [GetFooter](operation/getfooter) : Hämta sidfotsbeskrivning i kalkylbladet.
+- [PostFooter](operation/postfooter) : Uppdatera sidfoten i kalkylbladet.
+- [PostFitWideToPages](operation/postfitwidetopages) : Ställ in den skala med vilken sidan ska passa bred när den skrivs ut på arket.
+- [PostFitTallToPages](operation/postfittalltopages) : Ställ in den skala med vilken sidan ska passa högt när den skrivs ut på arket.
+- [Get WorksheetPictures](operation/getworksheetpictures) : Hämta beskrivningar av bilder i arbetsbladet.
+- [GetWorksheetPictureWithFormat](operation/getworksheetpicturewithformat) : Hämta en bild efter nummer i kalkylbladet.
+- [PutWorksheetAddPicture](operation/putworksheetaddpicture) : Lägg till en ny bild i kalkylbladet.
+- [PostWorksheetPicture](operation/postworksheetpicture) : Uppdatera en bild efter index i kalkylbladet.
+- [Ta bortWorksheetPicture](operation/deleteworksheetpicture) : Radera ett bildobjekt efter index i kalkylbladet.
+- [Ta bortWorksheetPictures](operation/deleteworksheetpictures) : Radera alla bilder i kalkylbladet.
+- [Get WorksheetPivotTables](operation/getworksheetpivottables) : Hämta beskrivningar av pivottabeller i kalkylbladet.
+- [GetWorksheetPivotTable](operation/getworksheetpivottable) Hämta pivottabellinformation efter index i kalkylbladet.
+- [GetPivotTableField](operation/getpivottablefield) : Hämta beskrivningar av pivotfält i pivottabellen.
+- [Get WorksheetPivotTableFilters](operation/getworksheetpivottablefilters) : Hämtar pivottabellfilter i kalkylbladet.
+- [GetWorksheetPivotTableFilter](operation/getworksheetpivottablefilter) : Hämta pivottabellfilter i kalkylbladet.
+- [PutWorksheetPivotTable](operation/putworksheetpivottable) : Lägg till en pivottabell i kalkylbladet.
+- [PutPivotTableField](operation/putpivottablefield) : Lägg till ett pivotfält i pivottabellen.
+- [PutWorksheetPivotTableFilter](operation/putworksheetpivottablefilter) : Lägg till ett pivotfilter i pivottabellen.
+- [PostPivotTableFieldHideItem](operation/postpivottablefieldhideitem) : Göm ett pivotfältsobjekt i pivottabellen.
+- [PostPivotTableFieldMoveTo](operation/postpivottablefieldmoveto) : Flytta ett pivotfält i pivottabellen.
+- [PostPivotTableCellStyle](operation/postpivottablecellstyle) : Uppdatera cellstil i pivottabellen.
+- [PostPivotTableStyle](operation/postpivottablestyle) : Uppdatera stil i pivottabellen.
+- [PostPivotTableUpdatePivotFields](operation/postpivottableupdatepivotfields) : Uppdatera pivotfält i pivottabellen.
+- [PostPivotTableUpdatePivotField](operation/postpivottableupdatepivotfield) : Uppdatera pivotfältet i pivottabellen.
+- [PostWorksheetPivottabell Beräkna](operation/postworksheetpivottablecalculate) : Beräkna pivotables data till celler.
+- [PostWorksheetPivotTableMove](operation/postworksheetpivottablemove) : Flytta pivottabell i kalkylbladet.
+- [Ta bort arbetsbladspivottabeller](operation/deleteworksheetpivottables) : Ta bort pivottabeller i kalkylbladet.
+- [Ta bort arbetsbladspivottabell](operation/deleteworksheetpivottable) : Ta bort pivottabell efter index i kalkylbladet.
+- [Ta bort pivottabellfält](operation/deletepivottablefield) : Ta bort ett pivotfält i pivottabellen.
+- [Ta bort WorksheetPivotTableFilters](operation/deleteworksheetpivottablefilters) : Ta bort alla pivotfilter i pivottabellen.
+- [Ta bort WorksheetPivotTableFilter](operation/deleteworksheetpivottablefilter) : Ta bort ett pivotfilter i pivottabellen.
+- [GetDocumentProperties](operation/getdocumentproperties) : Hämta beskrivningar av Excel filegenskaper.
+- [PutDocumentProperty](operation/putdocumentproperty) : Ange eller lägg till en Excel-egenskap.
+- [GetDocumentProperty](operation/getdocumentproperty) : Få Excel egendom med namn.
+- [DeleteDocumentProperty](operation/deletedocumentproperty) : Ta bort en Excel-egendom.
+- [DeleteDocumentProperties](operation/deletedocumentproperties) : Ta bort alla anpassade dokumentegenskaper och återställ inbyggda.
+- [PostDigital Signatur](operation/postdigitalsignature) : Excel fil digital signatur.
+- [PostEncrypt Workbook](operation/postencryptworkbook) : Excel Kryptering.
+- [Ta bortDecrypt Workbook](operation/deletedecryptworkbook) : Excel filer dekryptering.
+- [PostProtect Workbook](operation/postprotectworkbook) : Excel skydd.
+- [Ta bortUnProtectWorkbook](operation/deleteunprotectworkbook) : Excel oskydd.
+- [PutDocumentProtectFromChanges](operation/putdocumentprotectfromchanges) : Excel filskrivskydd.
+- [Ta bortDocumentUnProtectFromChanges](operation/deletedocumentunprotectfromchanges) : Excel fil avbryt skrivskydd.
+- [PostUnlock](operation/postunlock) : Lås upp Excel-filer.
+- [PostLock](operation/postlock) : Lås Excel filer.
+- [PostProtect](operation/postprotect) : Excel filer kryptering.
+- [PostWorksheetCellsRangesCopy](operation/postworksheetcellsrangescopy) : Kopiera innehåll från källområdet till målområdet i kalkylbladet.
+- [PostWorksheetCellsRangeMerge](operation/postworksheetcellsrangemerge) : Slå ihop ett cellområde till en enda cell.
+- [PostWorksheetCellsRangeUnMerge](operation/postworksheetcellsrangeunmerge) : Ta bort sammanslagna celler inom detta intervall.
+- [PostWorksheetCellsRangeStyle](operation/postworksheetcellsrangestyle) : Ställ in stilen för det angivna intervallet.
+- [GetWorksheetCellsRangeValue](operation/getworksheetcellsrangevalue) Hämta värden för celler inom det angivna intervallet.
+- [PostWorksheetCellsRangeValue](operation/postworksheetcellsrangevalue) : Tilldela ett värde till intervallet; vid behov konverteras värdet till en annan datatyp och cellens talformat återställs.
+- [PostWorksheetCellsRangeMoveTo](operation/postworksheetcellsrangemoveto) : Flytta det aktuella området till destinationsområdet.
+- [PostWorksheetCellsRangeSort](operation/postworksheetcellsrangesort) : Utför datasortering runt ett cellintervall.
+- [PostWorksheetCellsRangeOutlineBorder](operation/postworksheetcellsrangeoutlineborder) : Använd en konturram runt ett cellintervall.
+- [PostWorksheetCellsRangeColumnWidth](operation/postworksheetcellsrangecolumnwidth) : Ställ in kolumnbredden för det angivna intervallet.
+- [PostWorksheetCellsRangeRowHeight](operation/postworksheetcellsrangerowheight) : Ställer in radhöjd för intervall.
+- [PutWorksheetCellsRange](operation/putworksheetcellsrange) : Infoga ett cellintervall och flytta befintliga celler baserat på det angivna skiftalternativet.
+- [Ta bortWorksheetCellsRange](operation/deleteworksheetcellsrange) : Ta bort ett cellintervall och flytta befintliga celler baserat på det angivna skiftalternativet.
+- [GetWorksheetShapes](operation/getworksheetshapes) Hämta beskrivningar av former i kalkylbladet.
+- [GetWorksheetShape](operation/getworksheetshape) : Hämta beskrivning av form i arbetsbladet.
+- [PutWorksheetShape](operation/putworksheetshape) : Lägg till en form i kalkylbladet.
+- [Ta bortWorksheetShapes](operation/deleteworksheetshapes) : Ta bort alla former i kalkylbladet.
+- [Ta bortWorksheetShape](operation/deleteworksheetshape) : Ta bort en form i kalkylbladet.
+- [PostWorksheetShape](operation/postworksheetshape) : Uppdatera en form i kalkylbladet.
+- [PostWorksheetGroupShape](operation/postworksheetgroupshape) : Gruppera former i kalkylbladet.
+- [PostWorksheetUngroupShape](operation/postworksheetungroupshape) : Dela upp former i kalkylbladet.
+- [GetWorksheetSparklineGroups](operation/getworksheetsparklinegroups) : Hämta beskrivningar av sparkline-grupper i arbetsbladet.
+- [GetWorksheetSparklineGroup](operation/getworksheetsparklinegroup) : Hämta beskrivning av en sparkline-grupp i arbetsbladet.
+- [Ta bortWorksheetSparklineGroups](operation/deleteworksheetsparklinegroups) : Ta bort sparkline-grupper i kalkylbladet.
+- [Ta bortWorksheetSparklineGroup](operation/deleteworksheetsparklinegroup) : Ta bort en sparkline-grupp i kalkylbladet.
+- [PutWorksheetSparklineGroup](operation/putworksheetsparklinegroup) : Lägg till en sparkline-grupp i kalkylbladet.
+- [PostWorksheetSparklineGroup](operation/postworksheetsparklinegroup) : Uppdatera en sparkline-grupp i arbetsbladet.
+- [PostRunTask](operation/postruntask) Kör uppgifter.
+- [GetWorkbookDefaultStyle](operation/getworkbookdefaultstyle) : Hämta beskrivningen av standardstilen för arbetsboken.
+- [GetWorkbookTextItems](operation/getworkbooktextitems) : Hämta textobjekt i arbetsboken.
+- [Get WorkbookNames](operation/getworkbooknames) : Hämta namngivna intervall i arbetsboken.
+- [PutWorkbookName](operation/putworkbookname) : Definiera ett nytt namn i arbetsboken.
+- [GetWorkbookName](operation/getworkbookname) : Hämta beskrivning av ett namngivet område i arbetsboken.
+- [PostWorkbookName](operation/postworkbookname) : Uppdatera ett namngivet intervall i arbetsboken.
+- [GetWorkbookNameValue](operation/getworkbooknamevalue) : Hämta värdet för ett namngivet intervall i arbetsboken.
+- [Ta bort arbetsboksnamn](operation/deleteworkbooknames) : Ta bort alla namngivna intervall i arbetsboken.
+- [Ta bortWorkbookName](operation/deleteworkbookname) : Ta bort ett namngivet område i arbetsboken.
+- [PostWorkbooksMerge](operation/postworkbooksmerge) : Slå samman en arbetsbok i den befintliga arbetsboken.
+- [PostWorkbooksTextSearch](operation/postworkbookstextsearch) : Sök efter text i arbetsboken.
+- [PostWorkbookTextReplace](operation/postworkbooktextreplace) : Ersätt text i arbetsboken.
+- [PostWorkbookGetSmartMarkerResult](operation/postworkbookgetsmartmarkerresult) : Smart markörbearbetning.
+- [PutWorkbookCreate](operation/putworkbookcreate) : Skapa en ny arbetsbok med olika metoder.
+- [PostWorkbookSplit](operation/postworkbooksplit) Dela upp arbetsboken med ett specifikt format.
+- [PostWorkbookCalculateFormula](operation/postworkbookcalculateformula) : Beräkna alla formler i arbetsboken.
+- [PostAutofitWorkbookRows](operation/postautofitworkbookrows) : Autopassa rader i arbetsboken.
+- [PostAutofitWorkbookColumns](operation/postautofitworkbookcolumns) : Autopassa kolumner i arbetsboken.
+- [GetWorkbookSettings](operation/getworkbooksettings) : Hämta beskrivningar av arbetsboksinställningar.
+- [PostWorkbookSettings](operation/postworkbooksettings) : Uppdatera inställning i arbetsboken.
+- [PutWorkbookBackground](operation/putworkbookbackground) : Ange bakgrund i arbetsboken.
+- [Ta bort arbetsbokbakgrund](operation/deleteworkbookbackground) : Ta bort bakgrund i arbetsboken.
+- [PutWorkbookWaterMarker](operation/putworkbookwatermarker) : Ställ in vattenmarkör i arbetsboken.
+- [GetPageCount](operation/getpagecount) : Få sidräkning i arbetsboken.
+- [GetWorksheets](operation/getworksheets) : Hämta beskrivningen av kalkylblad från en arbetsbok.
+- [GetWorksheetWithFormat](operation/getworksheetwithformat) : Hämta kalkylbladet i ett angivet format från arbetsboken.
+- [PutChangeVisibilityWorksheet](operation/putchangevisibilityworksheet) : Ändra arbetsbladets synlighet i arbetsboken.
+- [PutActiveWorksheet](operation/putactiveworksheet) Ställ in aktivt kalkylbladsindex i arbetsboken.
+- [PutInsertNewWorksheet](operation/putinsertnewworksheet) : Infoga ett nytt kalkylblad i arbetsboken.
+- [Lägg AddNewWorksheet](operation/putaddnewworksheet) : Lägg till ett nytt kalkylblad i arbetsboken.
+- [Ta bort arbetsblad](operation/deleteworksheet) : Ta bort ett kalkylblad i arbetsboken.
+- [Ta bort arbetsblad](operation/deleteworksheets) : Ta bort matchade kalkylblad i arbetsboken.
+- [PostMoveWorksheet](operation/postmoveworksheet) : Flytta kalkylblad i arbetsboken.
+- [PutProtectWorksheet](operation/putprotectworksheet) : Skydda kalkylblad.
+- [Ta bortUnprotectWorksheet](operation/deleteunprotectworksheet) : Avskydda arbetsbladet.
+- [GetWorksheetTextItems](operation/getworksheettextitems) : Hämta textobjekt i kalkylbladet.
+- [Get WorksheetComments](operation/getworksheetcomments) : Hämta beskrivningen av kommentarer i arbetsbladet.
+- [Get WorksheetComment](operation/getworksheetcomment) : Hämta beskrivningen av kommentaren i arbetsbladet.
+- [PutWorksheetComment](operation/putworksheetcomment) : Lägg till cellkommentar i kalkylbladet.
+- [PostWorksheetComment](operation/postworksheetcomment) : Uppdatera cellkommentar i kalkylbladet.
+- [Ta bortWorksheetComment](operation/deleteworksheetcomment) : Ta bort cellkommentar i kalkylbladet.
+- [Ta bortWorksheetComments](operation/deleteworksheetcomments) Ta bort alla kommentarer i kalkylbladet.
+- [GetWorksheetMergedCells](operation/getworksheetmergedcells) : Få kalkylbladssammanslagna celler.
+- [GetWorksheetMergedCell](operation/getworksheetmergedcell) : Hämta beskrivning av en sammanfogad cell genom dess index i kalkylbladet.
+- [GetWorksheetCalculateFormula](operation/getworksheetcalculateformula) : Beräkna formeln i kalkylbladet.
+- [PostWorksheetCalculateFormula](operation/postworksheetcalculateformula) : Beräkna formeln i kalkylbladet.
+- [PostWorksheetTextSearch](operation/postworksheettextsearch) : Sök efter text i kalkylbladet.
+- [PostWorksheetTextReplace](operation/postworksheettextreplace) : Ersätt gammal text med ny text i kalkylbladet.
+- [PostWorksheetRangeSort](operation/postworksheetrangesort) : Sortera ett intervall i kalkylbladet.
+- [PostAutofitWorksheetRow](operation/postautofitworksheetrow) : Anpassa en rad automatiskt i kalkylbladet.
+- [PostAutofitWorksheetRows](operation/postautofitworksheetrows) : Autopassa rader i kalkylbladet.
+- [PostAutofitWorksheetColumns](operation/postautofitworksheetcolumns) : Autopassa kolumner i kalkylbladet.
+- [PutWorksheetBakgrund](operation/putworksheetbackground) : Ställ in bakgrundsbild i kalkylbladet.
+- [Ta bort arbetsbladsbakgrund](operation/deleteworksheetbackground) : Ta bort bakgrundsbild i kalkylbladet.
+- [PutWorksheetFreezePanes](operation/putworksheetfreezepanes) : Ställ in frysrutor i kalkylbladet.
+- [Ta bortWorksheetFreezePanes](operation/deleteworksheetfreezepanes) : Frigör rutor i kalkylbladet.
+- [PostCopyWorksheet](operation/postcopyworksheet) : Kopiera innehåll och format från ett annat kalkylblad.
+- [PostRenameWorksheet](operation/postrenameworksheet) : Byt namn på kalkylblad i arbetsboken.
+- [PostUpdateWorksheetProperty](operation/postupdateworksheetproperty) : Uppdatera kalkylbladsegenskaper i arbetsboken.
+- [GetNamedRanges](operation/getnamedranges) : Hämta beskrivningar av intervall i kalkylbladen.
+- [GetNamedRangeValue](operation/getnamedrangevalue) : Hämta värden inom intervallet.
+- [PostUpdateWorksheetZoom](operation/postupdateworksheetzoom) : Uppdatera skalningsprocenten i kalkylbladet. Det bör vara mellan 10 och 400.
+- [GetWorksheetPageCount](operation/getworksheetpagecount) : Få sidräkning i arbetsbladet.
+- [GetWorksheetValidations](operation/getworksheetvalidations) : Hämta beskrivningar av valideringar i arbetsbladet.
+- [GetWorksheetValidation](operation/getworksheetvalidation) : Hämta en validering genom dess index i kalkylbladet.
+- [PutWorksheetValidation](operation/putworksheetvalidation) : Lägg till en validering vid index i kalkylbladet.
+- [PostWorksheetValidation](operation/postworksheetvalidation) : Uppdatera en validering efter index i kalkylbladet.
+- [Ta bortWorksheetValidation](operation/deleteworksheetvalidation) Ta bort en validering efter index i kalkylbladet.
+- [Ta bortWorksheetValidations](operation/deleteworksheetvalidations) : Ta bort alla valideringar i kalkylbladet.
+
+# Aspose.Cells Moln API Modell
+
+- [ObjectExistsExtensions](model/objectexistsextensions)  :   
+- [FileVersion](model/fileversion)  :   
+- [StorageFile](model/storagefile) : Fil- eller mappinformation
+- [GoogleDriveStorageFile](model/googledrivestoragefile)  :   
+- [Över medel](model/aboveaverage) Beskriv AboveAverage-regeln för villkorlig formatering. Denna regel för villkorlig formatering markerar celler som ligger över eller under genomsnittet för alla värden i intervallet.
+- [AbstractCalculation Engine](model/abstractcalculationengine) : Representerar användarens anpassade beräkningsmotor för att utöka standardberäkningsmotorn Aspose.Cells.
+- [AbstractCalculationMonitor](model/abstractcalculationmonitor) : Övervaka för användaren för att spåra framstegen i formelberäkningen.
+- [AutoFilter](model/autofilter)  :   
+- [AutoFitterOptions](model/autofitteroptions)  :   
+- [Gräns](model/border)  :   
+- [Beräkningsalternativ](model/calculationoptions)  :   
+- [Cell](model/cell)  :   
+- [CellArea](model/cellarea)  :   
+- [Cells](model/cells)  :   
+- [CellsCloudFileInfo](model/cellscloudfileinfo) : Cells Moln Filinformationsbeskrivning.
+- [CellsColor](model/cellscolor)  :   
+- [CellsDocumentProperties](model/cellsdocumentproperties) : Excel fastigheter
+- [CellsDocumentProperty](model/cellsdocumentproperty) : Cells dokumentegendom.
+- [Färg](model/color) : Färg.
+- [Färgfilter](model/colorfilter) : Färgfilter.
+- [Färgskala](model/colorscale) : Beskriv ColorScales villkorliga formateringsregel. Denna villkorliga formateringsregel skapar en graderad färgskala på cellerna.
+- [Kolumn](model/column)  :   
+- [Kolumner](model/columns)  :   
+- [Kommentar](model/comment)  :   
+- [Kommentarer](model/comments)  :   
+- [Villkorlig formatering](model/conditionalformatting)  :   
+- [ConditionalFormattingIcon](model/conditionalformattingicon)  :   
+- [Villkorsformat](model/conditionalformattings)  :   
+- [ConditionalFormattingValue](model/conditionalformattingvalue)  :   
+- [Kopieringsalternativ](model/copyoptions) : Representerar kopieringsalternativen.
+- [CriteriaMultipleFilter](model/criteriamultiplefilter)  :   
+- [CustomFilter](model/customfilter)  :   
+- [DataBar](model/databar) : Beskriv DataBars villkorliga formateringsregel. Den här villkorliga formateringsregeln visar ett graderat datafält i cellintervallet.
+- [DataBarBorder](model/databarborder)  :   
+- [Datarensning](model/datacleansing) : Datarensning
+- [DataColumnFillValue](model/datacolumnfillvalue)  :   
+- [DataFill](model/datafill)  :   
+- [DataFillValue](model/datafillvalue)  :   
+- [DataSorter](model/datasorter) : Sammanfattande beskrivning för DataSorter.
+- [DataSorterKey](model/datasorterkey) : Representerar nyckeln för datasorteraren.
+- [DateTimeGroupItem](model/datetimegroupitem)  :   
+- [DeduplicationRegion](model/deduplicationregion)  :   
+- [DynamicFilter](model/dynamicfilter)  :   
+- [Filinformation](model/fileinfo) : Filinformation
+- [FilerResultat](model/filesresult)  :   
+- [Filterkolumn](model/filtercolumn)  :   
+- [Font](model/font)  :   
+- [FontSetting](model/fontsetting)  :   
+- [Formatvillkor](model/formatcondition)  :   
+- [FormelFormatCondition](model/formulaformatcondition)  :   
+- [Formelinställningar](model/formulasettings) : Inställningar av formler och beräkning.
+- [Globaliseringsinställningar](model/globalizationsettings) : Representerar globaliseringsinställningarna.
+- [HorizontalPageBreak](model/horizontalpagebreak)  :   
+- [HorizontalPageBreaks](model/horizontalpagebreaks)  :   
+- [Hyperlänk](model/hyperlink)  :   
+- [Hyperlänkar](model/hyperlinks)  :   
+- [IconFilter](model/iconfilter)  :   
+- [IconSet](model/iconset) Beskriv IconSets villkorliga formateringsregel. Denna regel för villkorlig formatering tillämpar ikoner på celler enligt deras värden.
+- [Länk](model/link)  :   
+- [LinkElement](model/linkelement)  :   
+- [LoadOptions](model/loadoptions)  :   
+- [MergedCell](model/mergedcell)  :   
+- [MergedCells](model/mergedcells)  :   
+- [MultipleFilter](model/multiplefilter)  :   
+- [Flera filter](model/multiplefilters)  :   
+- [namn](model/name)  :   
+- [Namn](model/names)  :   
+- [NegativeBarFormat](model/negativebarformat) : Representerar färginställningarna för datafälten för negativa värden som definieras av en villkorlig formateringsregel för datafält.
+- [Sidavsnitt](model/pagesection)  :   
+- [Utskriftsformat](model/pagesetup)  :   
+- [Klistra in Alternativ](model/pasteoptions) : Representerar specialalternativen för klistra in.
+- [Pdf Säkerhetsalternativ](model/pdfsecurityoptions)  :   
+- [Skydd](model/protection) : Representerar de olika typerna av skyddsalternativ som är tillgängliga för ett kalkylblad.
+- [ProtectSheetParameter](model/protectsheetparameter)  :   
+- [Frågetabell](model/querytable) : Representerar frågetabellinformation.
+- [Räckvidd](model/range)  :   
+- [Avstånd](model/ranges)  :   
+- [Rad](model/row)  :   
+- [Rader](model/rows)  :   
+- [Spara Resultat](model/saveresult)  :   
+- [Paginerade Sparalternativ](model/paginatedsaveoptions) : Representerar alternativen för paginering.
+- [SingleValue](model/singlevalue)  :   
+- [SortKey](model/sortkey)  :   
+- [SplitResult](model/splitresult)  :   
+- [SplitResultDocument](model/splitresultdocument)  :   
+- [Stil](model/style)  :   
+- [StyleFormatCondition](model/styleformatcondition)  :   
+- [Stilar](model/styles)  :   
+- [TextFormatCondition](model/textformatcondition)  :   
+- [TextItem](model/textitem)  :   
+- [TextItems](model/textitems)  :   
+- [Textalternativ](model/textoptions)  :   
+- [Temafärg](model/themecolor)  :   
+- [TimePeriodFormatCondition](model/timeperiodformatcondition)  :   
+- [Topp 10](model/top10) Beskriv Top10-regeln för villkorlig formatering. Denna regel för villkorlig formatering markerar celler vars värden hamnar i den övre N eller nedre N-parentesen, enligt vad som anges.
+- [Top10 Filter](model/top10filter)  :   
+- [Godkännande](model/validation)  :   
+- [Valideringar](model/validations)  :   
+- [VerticalPageBreak](model/verticalpagebreak)  :   
+- [VerticalPageBreaks](model/verticalpagebreaks)  :   
+- [Arbetsbok](model/workbook)  :   
+- [Arbetsbok Inställningar](model/workbooksettings)  :   
+- [Arbetsblad](model/worksheet)  :   
+- [Arbetsblad](model/worksheets)  :   
+- [Skrivskydd](model/writeprotection) : Anger skrivskyddsinställningar för en arbetsbok.
+- [XmlDataBinding](model/xmldatabinding) : Representerar Xml-databindningsinformation.
+- [XmlMap](model/xmlmap) : Representerar XML-kartainformation.
+- [CellsObjectOperateTaskParameter](model/cellsobjectoperatetaskparameter)  :   
+- [ConvertTaskParameter](model/converttaskparameter)  :   
+- [ConvertWorksheetTaskParameter](model/convertworksheettaskparameter)  :   
+- [FileSource](model/filesource)  :   
+- [FileSourceType](model/filesourcetype)  :   
+- [ImportDataTaskParameter](model/importdatataskparameter)  :   
+- [ResultatDestination](model/resultdestination)  :   
+- [ResultDestinationType](model/resultdestinationtype)  :   
+- [Resultatkälla](model/resultsource)  :   
+- [SaveFilesToCloudResult](model/savefilestocloudresult)  :   
+- [SaveResultTaskParameter](model/saveresulttaskparameter)  :   
+- [SmartMarkerTaskParameter](model/smartmarkertaskparameter)  :   
+- [SplitWorkbookTaskParameter](model/splitworkbooktaskparameter)  :   
+- [TaskData](model/taskdata)  :   
+- [Uppgifts beskrivning](model/taskdescription)  :   
+- [TaskParameter](model/taskparameter)  :   
+- [TaskResultParameter](model/taskresultparameter)  :   
+- [TaskRunResult](model/taskrunresult)  :   
+- [TaskType](model/tasktype)  :   
+- [ChartOperateParameter](model/chartoperateparameter)  :   
+- [ListObjectOperateParameter](model/listobjectoperateparameter)  :   
+- [OperateObject](model/operateobject)  :   
+- [OperateObjectPosition](model/operateobjectposition)  :   
+- [OperateObjectType](model/operateobjecttype)  :   
+- [OperateParameter](model/operateparameter)  :   
+- [OperateType](model/operatetype)  :   
+- [PageBreakOperateParameter](model/pagebreakoperateparameter)  :   
+- [PageSetupOperateParameter](model/pagesetupoperateparameter)  :   
+- [PivotTableOperateParameter](model/pivottableoperateparameter)  :   
+- [ShapeOperateParameter](model/shapeoperateparameter)  :   
+- [ArbetsbokOperateParameter](model/workbookoperateparameter)  :   
+- [WorkbookSettingsOperateParameter](model/workbooksettingsoperateparameter)  :   
+- [ArbetsbladOperateParameter](model/worksheetoperateparameter)  :   
+- [Listkolumn](model/listcolumn)  :   
+- [ListObject](model/listobject)  :   
+- [Listobjekt](model/listobjects)  :   
+- [PivotGlobalizationSettings](model/pivotglobalizationsettings) : Representerar globaliseringsinställningarna för pivottabeller.
+- [DifSaveOptions](model/difsaveoptions) : Representerar alternativen för att spara dif-fil.
+- [DocxSaveOptions](model/docxsaveoptions) : Representerar alternativ för att spara .docx-fil.
+- [HtmlSaveOptions](model/htmlsaveoptions) : Representerar alternativ för att spara .html-fil.
+- [ImageSaveOptions](model/imagesaveoptions) : Representerar alternativ för att spara bildfil.
+- [JsonSaveOptions](model/jsonsaveoptions) Representerar alternativ för att spara .json-fil.
+- [MarkdownSaveOptions](model/markdownsaveoptions) : Representerar alternativ för att spara .md-fil.
+- [MHtmlSaveOptions](model/mhtmlsaveoptions) : Representerar alternativ för att spara .mhtml-fil.
+- [OdsSaveOptions](model/odssaveoptions) : Representerar alternativ för att spara .ods-fil.
+- [OoxmlSaveOptions](model/ooxmlsaveoptions) : Representerar alternativ för att spara ooxml-fil.
+- [PdfSaveOptions](model/pdfsaveoptions) : Representerar alternativ för att spara pdf-fil.
+- [PptxSaveOptions](model/pptxsaveoptions) : Representerar alternativen för att spara pptx-fil.
+- [Spara Alternativ](model/saveoptions) : Representerar alla sparalternativ
+- [SpreadsheetML2003SaveOptions](model/spreadsheetml2003saveoptions) : Representerar alternativen för att spara .xml-fil.
+- [SqlScriptSaveOptions](model/sqlscriptsaveoptions) : Representerar alternativen för att spara .sql-filen.
+- [SvgSaveOptions](model/svgsaveoptions) : Representerar alternativen för att spara en .svg-fil.
+- [TextSaveOptions](model/txtsaveoptions) : Representerar alternativen för att spara .txt-fil.
+- [XlsbSaveOptions](model/xlsbsaveoptions) : Representerar alternativen för att spara .xlsb-filen.
+- [XlsSaveOptions](model/xlssaveoptions) : Representerar alternativen för att spara .xls-filen.
+- [XpsSaveOptions](model/xpssaveoptions) : Representerar alternativen för att spara .xps-filen.
+- [AnalyzeExcelResponse](model/analyzeexcelresponse)  :   
+- [ArcShapeResponse](model/arcshaperesponse)  :   
+- [AutoFilterResponse](model/autofilterresponse)  :   
+- [AutoShapeResponse](model/autoshaperesponse)  :   
+- [AutoShapesResponse](model/autoshapesresponse)  :   
+- [AxisResponse](model/axisresponse)  :   
+- [BorderResponse](model/borderresponse)  :   
+- [ButtonResponse](model/buttonresponse)  :   
+- [Beräkna FormelSvar](model/calculateformularesponse)  :   
+- [CellResponse](model/cellresponse)  :   
+- [CellsCloudFileInfoResponse](model/cellscloudfileinforesponse)  :   
+- [CellsCloudResponse](model/cellscloudresponse)  :   
+- [CellsDocumentPropertiesResponse](model/cellsdocumentpropertiesresponse)  :   
+- [CellsDocumentPropertyResponse](model/cellsdocumentpropertyresponse)  :   
+- [CellsDrawingResponse](model/cellsdrawingresponse)  :   
+- [CellsResponse](model/cellsresponse)  :   
+- [ChartAreaResponse](model/chartarearesponse)  :   
+- [ChartDataTableResponse](model/chartdatatableresponse)  :   
+- [ChartPointResponse](model/chartpointresponse)  :   
+- [ChartPointsResponse](model/chartpointsresponse)  :   
+- [ChartResponse](model/chartresponse)  :   
+- [ChartsResponse](model/chartsresponse)  :   
+- [CheckBoxResponse](model/checkboxresponse)  :   
+- [Kolumnsvar](model/columnresponse)  :   
+- [Kolumner Svar](model/columnsresponse)  :   
+- [ComboBoxResponse](model/comboboxresponse)  :   
+- [KommentarSvar](model/commentresponse)  :   
+- [CommentShapeResponse](model/commentshaperesponse)  :   
+- [Kommentarer Svar](model/commentsresponse)  :   
+- [ConditionalFormattingResponse](model/conditionalformattingresponse)  :   
+- [ConditionalFormattingsResponse](model/conditionalformattingsresponse)  :   
+- [DataLabelsResponse](model/datalabelsresponse)  :   
+- [DisplayUnitLabelResponse](model/displayunitlabelresponse)  :   
+- [DropBarsResponse](model/dropbarsresponse)  :   
+- [ErrorBarResponse](model/errorbarresponse)  :   
+- [FillFormatResponse](model/fillformatresponse)  :   
+- [FindResponse](model/findresponse)  :   
+- [FloorResponse](model/floorresponse)  :   
+- [FormResponse](model/formresponse)  :   
+- [FormsResponse](model/formsresponse)  :   
+- [GroupBoxResponse](model/groupboxresponse)  :   
+- [HorizontalPageBreakResponse](model/horizontalpagebreakresponse)  :   
+- [HorizontalPageBreaksResponse](model/horizontalpagebreaksresponse)  :   
+- [Hyperlänksvar](model/hyperlinkresponse)  :   
+- [HyperlinksResponse](model/hyperlinksresponse)  :   
+- [LabelResponse](model/labelresponse)  :   
+- [LegendEntriesResponse](model/legendentriesresponse)  :   
+- [LegendEntryResponse](model/legendentryresponse)  :   
+- [LegendResponse](model/legendresponse)  :   
+- [LineResponse](model/lineresponse)  :   
+- [LineShapeResponse](model/lineshaperesponse)  :   
+- [ListBoxResponse](model/listboxresponse)  :   
+- [ListObjectResponse](model/listobjectresponse)  :   
+- [ListObjectsResponse](model/listobjectsresponse)  :   
+- [MergedCellResponse](model/mergedcellresponse)  :   
+- [MergedCellsResponse](model/mergedcellsresponse)  :   
+- [NameResponse](model/nameresponse)  :   
+- [NamesResponse](model/namesresponse)  :   
+- [OleObjectResponse](model/oleobjectresponse)  :   
+- [OleObjectsResponse](model/oleobjectsresponse)  :   
+- [OvalResponse](model/ovalresponse)  :   
+- [PageSectionsResponse](model/pagesectionsresponse)  :   
+- [PageSetupResponse](model/pagesetupresponse)  :   
+- [PictureResponse](model/pictureresponse)  :   
+- [Bilder Svar](model/picturesresponse)  :   
+- [PivotFieldResponse](model/pivotfieldresponse)  :   
+- [PivotFilterResponse](model/pivotfilterresponse)  :   
+- [PivotFiltersResponse](model/pivotfiltersresponse)  :   
+- [PivotTableResponse](model/pivottableresponse)  :   
+- [Pivottabellssvar](model/pivottablesresponse)  :   
+- [PlotAreaResponse](model/plotarearesponse)  :   
+- [RadioButtonResponse](model/radiobuttonresponse)  :   
+- [RangeResponse](model/rangeresponse)  :   
+- [RangesResponse](model/rangesresponse)  :   
+- [RangeValueResponse](model/rangevalueresponse)  :   
+- [RectangleShapeResponse](model/rectangleshaperesponse)  :   
+- [RowResponse](model/rowresponse)  :   
+- [RowsResponse](model/rowsresponse)  :   
+- [SaveFilesToCloudResultResponse](model/savefilestocloudresultresponse)  :   
+- [SaveResponse](model/saveresponse)  :   
+- [ScrollBarResponse](model/scrollbarresponse)  :   
+- [SeriesResponse](model/seriesesresponse)  :   
+- [Seriesvar](model/seriesresponse)  :   
+- [ShapeResponse](model/shaperesponse)  :   
+- [ShapesResponse](model/shapesresponse)  :   
+- [SingleValueResponse](model/singlevalueresponse)  :   
+- [SparklineGroupResponse](model/sparklinegroupresponse)  :   
+- [SparklineGroupsResponse](model/sparklinegroupsresponse)  :   
+- [SpinnerResponse](model/spinnerresponse)  :   
+- [SplitResultResponse](model/splitresultresponse)  :   
+- [StyleResponse](model/styleresponse)  :   
+- [TaskRunResultResponse](model/taskrunresultresponse)  :   
+- [TextBoxResponse](model/textboxresponse)  :   
+- [TextItemResponse](model/textitemresponse)  :   
+- [TextItemsResponse](model/textitemsresponse)  :   
+- [TickLabelsResponse](model/ticklabelsresponse)  :   
+- [TitleResponse](model/titleresponse)  :   
+- [TrendlineResponse](model/trendlineresponse)  :   
+- [TrendlinesResponse](model/trendlinesresponse)  :   
+- [Valideringssvar](model/validationresponse)  :   
+- [Valideringar Svar](model/validationsresponse)  :   
+- [VerticalPageBreakResponse](model/verticalpagebreakresponse)  :   
+- [VerticalPageBreaksResponse](model/verticalpagebreaksresponse)  :   
+- [WallsResponse](model/wallsresponse)  :   
+- [WorkbookReplaceResponse](model/workbookreplaceresponse)  :   
+- [Arbetsbokssvar](model/workbookresponse)  :   
+- [WorkbookSettingsResponse](model/workbooksettingsresponse)  :   
+- [Arbetsböcker Svar](model/workbooksresponse)  :   
+- [ArbetsbladReplaceResponse](model/worksheetreplaceresponse)  :   
+- [Arbetsbladssvar](model/worksheetresponse)  :   
+- [Arbetsblad Svar](model/worksheetsresponse)  :   
+- [AnalyseraExcelRequest](model/analyzeexcelrequest)  :   
+- [BatchConvertRequest](model/batchconvertrequest) : Indikerar begäran om batchkonvertering av fil
+- [BatchLockRequest](model/batchlockrequest) : Indikerar begäran om batchlåsfil
+- [BatchProtectRequest](model/batchprotectrequest) : Indikerar begäran om batchskyddsfil
+- [BatchSplitRequest](model/batchsplitrequest)  :   
+- [ColorFilterRequest](model/colorfilterrequest) : Indikerar färgfilterbegäran
+- [Konvertera parameter](model/convertparameter) : Indikerar konverteringsparameter
+- [CreatePivotTableRequest](model/createpivottablerequest) : Indikerar att skapa pivottabellsbegäran
+- [DataCleansingRequest](model/datacleansingrequest) : En begäran om datarensning för en kalkylarksfil.
+- [DataDeduplicationRequest](model/datadeduplicationrequest)  :   
+- [DataFillRequest](model/datafillrequest)  :   
+- [DeleteIncompleteRowsRequest](model/deleteincompleterowsrequest)  :   
+- [ImportJsonRequest](model/importjsonrequest) : Indikerar begäran om import av xml-data
+- [ImportXMLRequest](model/importxmlrequest) : Indikerar begäran om import av xml-data
+- [MatchConditionRequest](model/matchconditionrequest) : Indikerar matchningsvillkoret som måste bearbetas för filnamnet.
+- [PasswordRequest](model/passwordrequest) : Används för överföring av lösenordsdata.
+- [PivotTableFieldRequest](model/pivottablefieldrequest) : Indikerar begäran om pivottabellfält
+- [ProtectWorkbookRequest](model/protectworkbookrequest) : Indikerar begäran om skydd av arbetsbok
+- [RangeCopyRequest](model/rangecopyrequest) : Indikerar begäran om intervallkopiering
+- [RangeSetOutlineBorderRequest](model/rangesetoutlineborderrequest) Indikerar begäran om gränsuppsättningskontur.
+- [RangeSetStyleRequest](model/rangesetstylerequest) : Indikerar intervalluppsättningsstilsbegäran.
+- [RangeSortRequest](model/rangesortrequest) : Indikerar begäran om intervallsortering
+- [TabellTotalRequest](model/tabletotalrequest) : Indikerar tabelltotal begäran
+- [TextWaterMarkerRequest](model/textwatermarkerrequest) : Indikerar begäran om textvattenmarkör.
+- [WorkbookEncryptionRequest](model/workbookencryptionrequest) : Används av förfrågningar om kryptering/dekryptering av arbetsbok.
+- [WorkbookProtectionRequest](model/workbookprotectionrequest) : Används av förfrågningar om arbetsbokskydd.
+- [ArbetsbladMovingRequest](model/worksheetmovingrequest) : Används av förfrågningar om flyttning av arbetsbok.
+- [ImageOrPrintOptions](model/imageorprintoptions)  :   
+- [RenderingFont](model/renderingfont)  :   
+- [Rendering Vattenstämpel](model/renderingwatermark)  :   
+- [Pivotfält](model/pivotfield)  :   
+- [PivotFilter](model/pivotfilter) : Representerar ett PivotFilter i PivotFilter Collection.
+- [PivotItem](model/pivotitem)  :   
+- [Pivottabell](model/pivottable)  :   
+- [Pivottabeller](model/pivottables)  :   
+- [CustomParserConfig](model/customparserconfig)  :   
+- [Import2DimensionDoubleArrayOption](model/import2dimensiondoublearrayoption)  :   
+- [Import2DimensionIntArrayOption](model/import2dimensionintarrayoption)  :   
+- [Import2DimensionStringArrayOption](model/import2dimensionstringarrayoption)  :   
+- [CellValue](model/cellvalue)  :   
+- [ImportBatchDataOption](model/importbatchdataoption)  :   
+- [ImportCSVDataOption](model/importcsvdataoption)  :   
+- [ImportDataType](model/importdatatype)  :   
+- [ImportDoubleArrayOption](model/importdoublearrayoption)  :   
+- [ImportIntArrayOption](model/importintarrayoption)  :   
+- [Importalternativ](model/importoption)  :   
+- [ImportPictureOption](model/importpictureoption)  :   
+- [Importposition](model/importposition)  :   
+- [ImportStringArrayOption](model/importstringarrayoption)  :   
+- [ArcShape](model/arcshape)  :   
+- [Område](model/area)  :   
+- [AutoShape](model/autoshape)  :   
+- [AutoShapes](model/autoshapes)  :   
+- [Knapp](model/button)  :   
+- [Celler Rita](model/cellsdrawing)  :   
+- [Kryssruta](model/checkbox)  :   
+- [Kombinationsrutan](model/combobox)  :   
+- [CommentShape](model/commentshape)  :   
+- [FillFormat](model/fillformat)  :   
+- [Form](model/form)  :   
+- [Blanketter](model/forms)  :   
+- [GradientFill](model/gradientfill)  :   
+- [GradientFillStop](model/gradientfillstop)  :   
+- [GroupBox](model/groupbox)  :   
+- [GroupShape](model/groupshape)  :   
+- [Märka](model/label)  :   
+- [Linje](model/line) : Kapslar in objektet som representerar linjeformatet.
+- [Linjeformat](model/lineformat)  :   
+- [LineShape](model/lineshape)  :   
+- [ListBox](model/listbox)  :   
+- [OleObject](model/oleobject)  :   
+- [OleObjects](model/oleobjects)  :   
+- [Oval](model/oval)  :   
+- [PatternFill](model/patternfill)  :   
+- [PicFormatOption](model/picformatoption)  :   
+- [Bild](model/picture)  :   
+- [Bilder](model/pictures)  :   
+- [Radio knapp](model/radiobutton)  :   
+- [RectangleShape](model/rectangleshape)  :   
+- [Rullningslist](model/scrollbar)  :   
+- [ShadowEffect](model/shadoweffect)  :   
+- [Form](model/shape)  :   
+- [Former](model/shapes)  :   
+- [SolidFill](model/solidfill)  :   
+- [Spinnare](model/spinner)  :   
+- [Textruta](model/textbox)  :   
+- [TextureFill](model/texturefill)  :   
+- [TilePicOption](model/tilepicoption)  :   
+- [Digital signatur](model/digitalsignature) : Signatur i fil.
+- [Axel](model/axis)  :   
+- [Diagram](model/chart)  :   
+- [ChartArea](model/chartarea)  :   
+- [ChartDataTable](model/chartdatatable)  :   
+- [ChartFrame](model/chartframe)  :   
+- [ChartGlobalizationSettings](model/chartglobalizationsettings) : Representerar globaliseringsinställningarna för diagram.
+- [ChartPoint](model/chartpoint)  :   
+- [ChartPoints](model/chartpoints)  :   
+- [Diagram](model/charts)  :   
+- [ChartShape](model/chartshape) : Objekt i diagramform
+- [Dataetiketter](model/datalabels)  :   
+- [DisplayUnitLabel](model/displayunitlabel)  :   
+- [DropBars](model/dropbars)  :   
+- [ErrorBar](model/errorbar)  :   
+- [Golv](model/floor)  :   
+- [Legend](model/legend)  :   
+- [LegendEntries](model/legendentries)  :   
+- [LegendEntry](model/legendentry)  :   
+- [Markör](model/marker)  :   
+- [PlotArea](model/plotarea)  :   
+- [Serier](model/series)  :   
+- [Serieobjekt](model/seriesitems)  :   
+- [Sparkline](model/sparkline) : En sparkline representerar ett litet diagram eller grafik i en kalkylbladscell som ger en visuell representation av data.
+- [SparklineGroup](model/sparklinegroup)  :   
+- [SparklineGroups](model/sparklinegroups) : Kapslar in en samling Aspose.Cells.Charts.SparklineGroup-objekt.
+- [TickLabels](model/ticklabels)  :   
+- [Titel](model/title)  :   
+- [Trendlinje](model/trendline)  :   
+- [Trendlinjer](model/trendlines)  :   
+- [Väggar](model/walls)  :   
+- [ColumnDataExceptionDescription](model/columndataexceptiondescription)  :   
+- [TextCategoryType](model/textcategorytype)  :   
+- [Analyserad kolumnbeskrivning](model/analyzedcolumndescription) Hur man använder egenskaperna för varje kolumn: för närvarande uppdelad i tidslinje, produktlinje, numerisk statistiklinje Hur man presenterar produkten, en enhetlig plan Hur löser man problemet med full digital? Fulltext Hur löser man det? Två kolumner: Text, Number är det enklaste Tre kolumner: Text, Text, Number text, number, number --- date date ; Datum Numerisk ; Numeric Digital Vad sägs om fyra kolumner, fem kolumner?
+- [Analyserat resultat](model/analyzedresult)  :   
+- [Analyserad tabellbeskrivning](model/analyzedtabledescription)  :   
+- [DateSourceType](model/datesourcetype)  :   
+- [SuggestedOutputType](model/suggestedoutputtype)  :   
+- [Analysera förslag](model/analyzesuggestion)  :   
+- [DiscoverChart](model/discoverchart)  :   
+- [DiscoverPivotTable](model/discoverpivottable)  :   
+- [ExcelDataStatistics](model/exceldatastatistics)  :   
+- [WorksheetDataStatistics](model/worksheetdatastatistics)  :   
+- [Fel](model/error) : Fel
+- [Detaljer om felet](model/errordetails) : Feldetaljerna

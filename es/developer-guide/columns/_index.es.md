@@ -5,12 +5,12 @@ type: docs
 url: /es/columns/
 aliases: [/working-with-columns/]
 keywords: REST API, columns, spreadsheets, exce
-description: "Cells. Cloud API para Excel operar: mostrar columnas de una hoja de trabajo Excel"
+description: "Cells.Cloud API para Excel opera: mostrar columnas de una hoja de trabajo Excel"
 weight: 100
 ---
-## Trabajando con Columnas en un archivo Excel.
+## Trabajar con columnas en un archivo Excel.
 
-- [Cómo obtener una columna de una hoja de trabajo Excel.](/cells/es/columns/get/)
+- [Cómo obtener la columna de una hoja de trabajo Excel.](/cells/es/columns/get/)
 - [Cómo agregar una columna vacía en una hoja de trabajo Excel.](/cells/es/columns/add/)
 - [Cómo copiar columnas en una hoja de trabajo Excel.](/cells/es/columns/copy/)
 - [Cómo ocultar columnas en una hoja de trabajo Excel.](/cells/es/columns/hide/)

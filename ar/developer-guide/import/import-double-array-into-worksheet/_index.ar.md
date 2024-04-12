@@ -1,19 +1,19 @@
 ﻿---
-title: استيراد صفيف مزدوج إلى Excel Workshee
+title: استيراد صفيف مزدوج إلى ورقة عمل Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: استيراد المصفوفة المزدوجة
+linktitle: استيراد آرا مزدوج
 type: docs
 url: /ar/import/double-array/
 aliases: [/import-double-array-into-excel-worksheet/,/import-double-array-into-worksheet/,/import-data/double-array/]
 keywords: Import double array data into Excel files
-description: Aspose.Cells Cloud REST API يدعم استيراد بيانات صفيف مزدوج في ملفات Excel. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
+description: Aspose.Cells Cloud REST API يدعم استيراد بيانات المصفوفة المزدوجة إلى ملفات Excel. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 20
 ---
 هذا REST API `import double array data` إلى Excel ورقة العمل.
 
-الطلب عبارة عن طلب HTTP بمحتوى متعدد الأجزاء (انظر[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)أو[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). يحتوي الجزء الأول من المحتوى متعدد الأجزاء على بيانات ImportDoubleArrayOption والثاني يحتوي على ملف بيانات.
+الطلب هو طلب HTTP بمحتوى متعدد الأجزاء (انظر[آر إف سي 2046](http://tools.ietf.org/html/rfc2046#page-17)أو[آر إف سي 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). يحتوي الجزء الأول من المحتوى متعدد الأجزاء على بيانات ImportDoubleArrayOption والثاني يحتوي على ملف بيانات.
 
-## RSET API
+## رسيت API
 
 ```bash
 
@@ -22,21 +22,21 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/import-data
 
 ```
 
-يتم وصف المعلمات المهمة في الجدول التالي:
+يتم وصف المعلمات الهامة في الجدول التالي:
 
 
-**ImportDoubleArrayOption**
+**استيرادDoubleArrayOption**
 
 |اسم المعلمة|يكتب|وصف|
 |:- |:- |:- |
-| السطر الاول| int||
-| العمود الأول| int||
-| عمودي| خيط| خطأ صحيح.|
+| السطر الاول| كثافة العمليات||
+| العمود الأول| كثافة العمليات||
+| IsVertical| خيط| خطأ صحيح.|
 | بيانات|مزدوج[]||
 | ورقة عمل الوجهة| خيط| اسم ورقة العمل الوجهة.|
-| هو إدراج| خيط| خطأ صحيح.|
-| إيمبورداتاتايب| خيط|IntArray / DoubleArray / StringArray / TwoDimensionIntArray / TwoDimensionDoubleArray / TwoDimensionStringArray / BatchData / CSVData.|
-| مصدر| مصدر الملف| يشير إلى موضع ملف البيانات عندما تكون معلمة BatchData خالية.|
+| IsInsert| خيط| خطأ صحيح.|
+| ImportDataType| خيط|IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData.|
+| مصدر| مصدر الملف| يشير إلى موضع ملف البيانات عندما تكون المعلمة BatchData فارغة.|
 
 
 
@@ -74,9 +74,9 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/import-data
 
 ## عائلة Cloud SDK
 
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. يعتني SDK بالتفاصيل منخفضة المستوى ويتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة من Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام حزم SDK متنوعة:
+توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
 
 {{< tabs tabTotal="3" tabID="4" tabName1="C#" tabName2="PHP" tabName3="Ruby" >}}
 

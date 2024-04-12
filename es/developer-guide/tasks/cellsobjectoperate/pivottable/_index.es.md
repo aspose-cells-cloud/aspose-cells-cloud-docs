@@ -1,5 +1,5 @@
 ﻿---
-title: Trabajar con tablas dinámicas usando CellsObjectOperate tas
+title: Trabajar con tabla dinámica usando CellsObjectOperate tas
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/tasks/cells-object-operate/pivottable/
@@ -10,30 +10,30 @@ weight: 10
 ---
 Este REST API crea `pivot table` usando el objeto de celdas opera `task`.
 
-**PivotTableOperateParameterPivotTableOperateParameter**
+**Parámetro de operación de tabla dinámica**
 
 
 |Nombre del parámetro|Tipo|Descripción|
 |:- |:- |:- |
-| DestCellName| cadena||
+| NombreCeldaDestino| cadena||
 | Datos fuente| cadena||
 | Nombre de la tabla| cadena||
 | Usar la misma fuente| cadena| verdadero Falso|
-| ÍndiceDeTablaDinámica| entero||
-| PivotFieldRows|entero[]||
-| PivotFieldColumns|entero[]||
-|PivotFieldDataPivotFieldData|entero[]||
+| Índice de tabla dinámica| entero||
+| Filas de campo dinámico|entero[]||
+| Columnas de campo dinámico|entero[]||
+|Datos de campo dinámico|entero[]||
 
 
 ## DESCANSO API
 
 |**API**|**Tipo**|**Descripción**|**Enlace de recursos**|
 |:- |:- |:- |:- |
-|/celdas/tarea/ejecutar tarea|CORREO|Ejecutar tarea|[PostRunTask](https://apireference.aspose.cloud/cells/#/Task/PostRunTask)|
+|/celdas/tarea/ejecutartarea|CORREO|Ejecutar tarea|[Tarea posterior a la ejecución](https://apireference.aspose.cloud/cells/#/Task/PostRunTask)|
 
  El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
 
- Puedes usar**cURL** herramienta de línea de comandos para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo hacer llamadas a Cloud API con cURL.
+ Puedes usar**cURL** Herramienta de línea de comandos para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
 
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
@@ -375,9 +375,9 @@ HttpResponseMessage with the operation result.
 
 {{< /tabs >}}
 
-## Familia SDK de la nube
+## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se ocupa de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor, echa un vistazo a la[repositorio GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de Cloud.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor revisa el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de nube.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código demuestran cómo realizar llamadas a servicios web Aspose.Cells utilizando varios SDK:
 

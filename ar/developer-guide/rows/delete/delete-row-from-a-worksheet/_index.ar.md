@@ -1,17 +1,17 @@
 ﻿---
-title: حذف صف من Excel
+title: حذف الصف في ورقة عمل Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: رو
+linktitle: ريال عماني
 type: docs
 url: /ar/rows/delete/row/
 aliases: [/delete-row-from-a-worksheet/]
 keywords: Delete rows on an Excel workshee
-description: Aspose.Cells Cloud REST API يدعم حذف الصفوف بورقة عمل Excel. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
+description: Aspose.Cells Cloud REST API يدعم حذف الصفوف في ورقة عمل Excel. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 80
 ---
-يشير هذا REST API إلى حذف صف في ورقة عمل Excel.
+يشير REST API إلى حذف صف في ورقة عمل Excel.
  
-## RSET API
+## رسيت API
  
 ```bash
  
@@ -20,15 +20,15 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/ro
 ```
  معلمات الطلب هي:
  
-| اسم المعلمة| يكتب| المسار / سلسلة الاستعلام / HTTPBody|وصف|
+| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/HTTPBody|وصف|
 |:- |:- |:- |:- |
 | اسم| خيط| طريق|اسم المصنف.|
-| اسم الورقة| خيط| طريق| ورقة العمل bame.|
-| RowIndex| عدد صحيح| طريق| فهرس الصف.|
-| مجلد| خيط| استفسار| مجلد المستند.|
+| اسم الورقة| خيط| طريق| ورقة العمل بيم.|
+| RowIndex| عدد صحيح| طريق| مؤشر الصف.|
+| مجلد| خيط| استفسار| مجلد المستندات.|
 | اسم التخزين| خيط| استفسار| اسم التخزين.|
  
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetRow) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
+ ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetRow) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك تنفيذ تفاعلات REST مباشرة من متصفح الويب.
  
 يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
  
@@ -64,21 +64,21 @@ curl -v "http://api.aspose.cloud/v3.0/cells/" \
  
 ## عائلة Cloud SDK
  
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. يعتني SDK بالتفاصيل منخفضة المستوى ويتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة من Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
  
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام حزم SDK متنوعة:
+توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
  
  
  
 
 ## **مقدمة**
-يوضح هذا المثال كيفية حذف صف من ورقة عمل Excel باستخدام Aspose.Cells Cloud API في تطبيقاتك. يمكنك استخدام REST API الخاص بنا بأي لغة: .NET ، Java ، PHP ، Ruby ، Rails ، Python ، jQuery وغيرها الكثير.
+يوضح هذا المثال كيفية حذف صف من ورقة عمل Excel باستخدام Aspose.Cells Cloud API في تطبيقاتك. يمكنك استخدام REST API بأي لغة: .NET، Java، PHP، Ruby، Rails، Python، jQuery وغيرها الكثير.
 
-## **API المعلومات**
+## **API معلومات**
 
 |**API**|**يكتب**|**وصف**|**رابط الموارد**|
 |:- |:- |:- |:- |
-|/ الخلايا / {name} / أوراق العمل / {sheetName} / الخلايا / الصفوف|بريد|احذف صفوف من ورقة عمل Excel|[DeleteWorksheetRows](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetRows)|
+|/cells/{name}/worksheets/{sheetName}/cells/rows|بريد|حذف صفوف من ورقة عمل Excel|[حذف صفوف ورقة العمل](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetRows)|
 ### **cURL مثال**
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
@@ -110,7 +110,7 @@ curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/
 
 {{< /tabs >}}
 ## **مصدر SDK**
-يمكن تنزيل Aspose.Cells Cloud SDKs من الصفحة التالية:[مجموعات SDK المتوفرة](/cells/ar/available-sdks/)
+يمكن تنزيل حزم SDK السحابية Aspose.Cells من الصفحة التالية:[حزم SDK المتاحة](/cells/ar/available-sdks/)
 ### **أمثلة SDK**
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 

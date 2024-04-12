@@ -9,7 +9,7 @@ keywords: Merge a range of cells into a single cell
 description: Aspose.Cells Cloud REST API unterstützt das Zusammenführen eines Zellbereichs zu einer einzelnen Zelle in einem Excel-Arbeitsblatt. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
 weight: 20
 ---
- Dieser REST API gibt an, einen Zellbereich in einem Excel-Arbeitsblatt zu einer einzelnen Zelle zusammenzuführen.
+ Dieser REST API gibt an, einen Zellbereich in einem Excel-Arbeitsblatt zu einer einzigen Zelle zusammenzuführen.
             
  
 ## RSET API

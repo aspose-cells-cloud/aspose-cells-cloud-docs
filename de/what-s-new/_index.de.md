@@ -10,6 +10,61 @@ description: Auf dieser Seite werden die interessantesten neuen Aspose.Cells Clo
 ---
 Willkommen zu den Neuerungen in den Aspose.Cells Cloud-Dokumenten. Auf dieser Seite finden Sie schnell die neuesten Änderungen.
 
+## Verbesserungen in Version 24.3
+
+- Unterstützen Sie die Datendeduplizierung.
+- Unterstützen Sie das Ausfüllen von Daten.
+- Unterstützung zum Löschen unvollständiger Zeilen.
+- Unterstützen Sie die Datenbereinigung.
+
+## Verbesserungen in Version 24.2.1
+
+- Unterstützen Sie die Datendeduplizierung.
+
+## Verbesserungen in Version 24.1.1
+
+- Rechtschreibfehler für mehrere Funktionen behoben.
+- Fügen Sie die PostFitTallToPages-Methode für den Seiteneinrichtungs-Controller hinzu.
+- Fügen Sie die PostFitWideToPages-Methode für den Seiteneinrichtungs-Controller hinzu.
+- Optimieren Sie die Speicheroptionen für paginierte Dateien.
+
+## Verbesserungen in Version 23.12.0
+
+- Konvertierungs-APIs fügen Regionsparameter hinzu.
+- Schutz-APIs fügen Regionsparameter hinzu.
+- Assemble-Daten API fügt Regionsparameter hinzu.
+- Dateien zusammenführen API fügt Regionsparameter hinzu.
+- Geteilte Dateien API fügt Regionsparameter hinzu.
+- Importdaten API fügt Regionsparameter hinzu.
+- Wasserzeichen API fügt Regionsparameter hinzu.
+- Durch Löschen des Objekts API wird ein Regionsparameter hinzugefügt.
+- Reverse Data API fügt Regionsparameter hinzu.
+- Daten drehen API fügt Regionsparameter hinzu.
+
+## Verbesserungen in Version 23.11
+
+- Optimieren Sie den Import von XML-Daten in die Datei Excel.
+- Optimieren Sie den Import von JSON-Daten in die Datei Excel.
+- Entfernen Sie veraltete Funktionen, Klassen und Testfälle.
+
+## Verbesserungen in Version 23.10
+
+- Die Anforderung zum Schutz der Arbeitsmappe wurde behoben.
+- Bereichskopie API korrigieren.
+- Optimieren Sie den Arbeitsmappenschutz API.
+
+## Verbesserungen in Version 23.9
+
+- Unterstützung der Datensortierung auf dem Range Controller.
+- Unterstützung zum Entfernen doppelter Daten aus Listenobjekten.
+- Unterstützung für das Einfügen eines Slicers für Listenobjekte.
+- Optimieren Sie Listenobjekte und zugehörige Objekte.
+
+## Verbesserungen in Version 23.8
+
+- Unterstützung für das Schloss API.
+- Optimieren Sie den Schutz API.
+
 ## Aspose.Cells Wolke 23.7
 
  * Unterstützung für die Reparatur von Dateien.
@@ -22,7 +77,7 @@ Willkommen zu den Neuerungen in den Aspose.Cells Cloud-Dokumenten. Auf dieser Se
  * Unterstützung für die Batch-Entsperrung mehrerer Dateien.
  * Unterstützung für den Stapelschutz mehrerer Dateien.
  * Unterstützung für die Stapelaufteilung mehrerer Dateien.
- Korrektur der API zum Einfügen von Dokumenteigenschaften.
+ * Korrektur der API zum Einfügen von Dokumenteigenschaften.
 
 
 ## Aspose.Cells Wolke 23.5
@@ -61,7 +116,7 @@ Willkommen zu den Neuerungen in den Aspose.Cells Cloud-Dokumenten. Auf dieser Se
 
 ## Aspose.Cells Wolke 22.11
 
- * Neue API für die Konvertierung in JSON hinzufügen.
+ Neue API für die Konvertierung in JSON hinzufügen.
  * Neue API für die Konvertierung in SQL hinzufügen.
  * Neue API für die Konvertierung in CVS hinzufügen.
 
@@ -81,7 +136,7 @@ Willkommen zu den Neuerungen in den Aspose.Cells Cloud-Dokumenten. Auf dieser Se
 
 ## Aspose.Cells Wolke 22.8
 
-Unterstützt das Transponieren von Excel Zeilen in Spalten.
+* Unterstützt das Transponieren von Excel Zeilen in Spalten.
 
 ## Aspose.Cells Wolke 22.7
 
@@ -95,7 +150,7 @@ Unterstützt das Transponieren von Excel Zeilen in Spalten.
 
 ## Aspose.Cells Wolke 22.5
 
-* [Verbesserung für Export API.](https://docs.aspose.cloud/cells/export/)
+[Verbesserung für Export API.](https://docs.aspose.cloud/cells/export/)
 * [Verbesserung für Clear API.](https://docs.aspose.cloud/cells/clear/)
 
 ## Aspose.Cells Wolke 22.4

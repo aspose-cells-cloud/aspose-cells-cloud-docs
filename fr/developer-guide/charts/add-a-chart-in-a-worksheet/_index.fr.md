@@ -5,7 +5,7 @@ url: /fr/charts/add/
 aliases: [/add-a-chart-in-a-worksheet/]
 weight: 20
 ---
-Ce REST API indique d'ajouter un nouveau graphique à la feuille de calcul.
+Ce REST API indique l'ajout d'un nouveau graphique à la feuille de calcul.
  
 ## RSET API
  
@@ -16,28 +16,28 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/chaîne de requête/HTTPBody|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Nom du classeur.|
-| NomFeuille| chaîne| chemin| Le nom de la feuille de calcul.|
-| type de graphique| chaîne| requête| Type de graphique, veuillez vous référer au type de propriété dans la ressource graphique.|
-| upperLeftRow| entier| requête|0 |
-| UpperLeftColumn| entier| requête|0 |
-| ligne inférieure droite| entier| requête|0 |
-| basDroiteColonne| entier| requête|0 |
+| Nom de la feuille| chaîne| chemin| Le nom de la feuille de calcul.|
+| type de graphique| chaîne| requête| Type de graphique, veuillez vous référer à la propriété Type dans la ressource graphique.|
+| rangée supérieuregauche| entier| requête|0 |
+| colonne supérieuregauche| entier| requête|0 |
+| Ligne inférieureDroite| entier| requête|0 |
+| Colonne inférieure droite| entier| requête|0 |
 | zone| chaîne| requête| Spécifie les valeurs à partir desquelles tracer la série de données.|
 | estVertical| booléen| requête| Vrai|
-| catégorieDonnées| chaîne| requête| Obtient ou définit la plage de valeurs d'axe de catégorie. Il peut s'agir d'une plage de cellules (par exemple, "d1:e10").|
+| catégorieDonnées| chaîne| requête| Obtient ou définit la plage des valeurs de l'axe de catégorie. Il peut s'agir d'une plage de cellules (telle que « d1:e10 »).|
 | isAutoGetSerialName| booléen| requête| Vrai|
 | titre| chaîne| requête| Spécifie le nom du titre du graphique.|
 | dossier| chaîne| requête| Le dossier du classeur.|
-| nom_stockage| chaîne| requête| nom de stockage.|
-|dataLabels| booléen| requête| Vrai|
-| dataLabelsPositiondataLabelsPosition| chaîne| requête| Au-dessus de|
-| tablepivotFeuille| chaîne| requête||
-| nomtablepivot| chaîne| requête||
+| Nom de stockage| chaîne| requête| nom de stockage.|
+|étiquettes de données| booléen| requête| Vrai|
+| dataLabelsPosition| chaîne| requête| Au-dessus de|
+| feuille de tableau croisé dynamique| chaîne| requête||
+| NomTableauPivot| chaîne| requête||
  
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Charts/PutWorksheetAddChart) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
+ Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Charts/PutWorksheetAddChart) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement depuis un navigateur Web.
  
 Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment passer des appels vers le Cloud API avec cURL.
 
@@ -76,9 +76,9 @@ curl  -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cha
 
 {{< /tabs >}}
 
-## Famille SDK Cloud
+## Famille de SDK Cloud
  
- L'utilisation d'un SDK est le meilleur moyen d'accélérer le développement. Un SDK prend en charge les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Veuillez consulter le[Référentiel GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Cloud Aspose.Cells.
+ Utiliser un SDK est le meilleur moyen d’accélérer le développement. Un SDK prend en charge les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Veuillez consulter le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
  
 Les exemples de code suivants montrent comment effectuer des appels vers les services Web Aspose.Cells à l'aide de divers SDK :
 

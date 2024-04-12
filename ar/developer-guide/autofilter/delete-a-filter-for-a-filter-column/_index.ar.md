@@ -1,17 +1,17 @@
 ﻿---
-title: احذف عامل تصفية في Excel
+title: حذف عامل تصفية في ورقة عمل Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: احذف الملف
+linktitle: حذف الفلتر
 type: docs
 url: /ar/delete-filter/
 aliases: [/delete-a-filter-for-a-filter-column/,/delete-auto-filter/]
 keywords: Deletes a filter on an Excel worksheet
-description: يدعم Aspose.Cells Cloud API حذف مرشح في ورقة عمل Excel. يدعم SDK أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
+description: يدعم السحابة Aspose.Cells API حذف عامل التصفية في ورقة عمل Excel. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 100
 ---
-يشير هذا REST API إلى حذف `filter` في ورقة عمل Excel.
+يشير REST API إلى حذف `filter` في ورقة عمل Excel.
 
-## RSET API
+## رسيت API
 
 ```bash
 
@@ -20,12 +20,12 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilt
 ```
 
 معلمات الطلب هي:
-| اسم المعلمة| يكتب| المسار / سلسلة الاستعلام / HTTPBody|وصف|
+| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/HTTPBody|وصف|
 |:- |:- |:- |:- |
 | اسم| خيط| طريق|اسم المصنف.|
 | اسم الورقة| خيط| طريق| اسم ورقة العمل.|
 |يتراوح|خيط| استفسار||
-|الفهرس الميداني|عدد صحيح| استفسار||
+|fieldIndex|عدد صحيح| استفسار||
 |dateTimeGroupingType|خيط| استفسار| يوم / ساعة / دقيقة / شهر / ثانية / سنة|
 |سنة|عدد صحيح| استفسار||
 |شهر|عدد صحيح| استفسار||
@@ -33,12 +33,12 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilt
 |ساعة|عدد صحيح| استفسار||
 |دقيقة|عدد صحيح| استفسار||
 |ثانية|عدد صحيح| استفسار||
-|ماتش بلانكس|خيط| استفسار|خطأ صحيح|
+|matchBlanks|خيط| استفسار|خطأ صحيح|
 |ينعش|خيط| استفسار|خطأ صحيح|
 |مجلد|خيط| استفسار|مجلد المصنف الأصلي.|
 |اسم التخزين|خيط| استفسار|اسم التخزين.|
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/AutoFilter/DeleteWorksheetFilter) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
+ ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/AutoFilter/DeleteWorksheetFilter) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك تنفيذ تفاعلات REST مباشرة من متصفح الويب.
 
 يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
 
@@ -75,9 +75,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFil
 
 ## عائلة Cloud SDK
 
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. يعتني SDK بالتفاصيل منخفضة المستوى ويتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة من Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام حزم SDK متنوعة:
+توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" >}}
 

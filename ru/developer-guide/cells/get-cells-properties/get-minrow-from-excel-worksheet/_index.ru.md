@@ -1,10 +1,10 @@
 ﻿---
-title: Получить MinRow из рабочей таблицы Excel
+title: Получите MinRow из рабочей таблицы Excel.
 type: docs
 url: /ru/get-minrow-from-excel-worksheet/
 weight: 80
 ---
-Этот REST API указывает, что шоу получает `minrow` в файле Excel, когда параметр `cellOrMethodName` равен `minrow`.
+Этот REST API указывает, что показывает получение `minrow` в файле Excel, когда параметр `cellOrMethodName` равен `minrow`.
 
 - **cURL Пример**
 
@@ -35,9 +35,9 @@ curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/
 
 - **Семейство облачных SDK**
 
- Использование SDK — лучший способ ускорить разработку. SDK позаботится о низкоуровневых деталях и позволит вам сосредоточиться на задачах вашего проекта. Пожалуйста, ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) полный список Aspose.Cells Cloud SDK.
+ Использование SDK — лучший способ ускорить разработку. SDK заботится о деталях низкого уровня и позволяет вам сосредоточиться на задачах проекта. Пожалуйста, ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для получения полного списка Aspose.Cells Cloud SDK.
 
-В следующих примерах кода показано, как выполнять вызовы веб-служб Aspose.Cells с помощью различных SDK.
+Следующие примеры кода демонстрируют, как выполнять вызовы веб-служб Aspose.Cells с использованием различных SDK:
 
 
 

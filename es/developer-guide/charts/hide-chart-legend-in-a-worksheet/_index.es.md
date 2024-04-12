@@ -1,13 +1,13 @@
 ﻿---
-title: Ocultar leyenda de gráfico en una hoja de cálculo
+title: Ocultar leyenda del gráfico en una hoja de trabajo
 type: docs
 url: /es/charts/legend/hide/
 aliases: [/hide-chart-legend-in-a-worksheet/]
 weight: 110
 ---
-Este REST API indica ocultar la leyenda en el gráfico
+Este REST API indica ocultar leyenda en el gráfico
  
-## RESET API
+## RSET API
  
 ```bash
  
@@ -19,10 +19,10 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{
 | Nombre del parámetro| Tipo| Ruta/Cadena de consulta/Cuerpo HTTP|Descripción|
 |:- |:- |:- |:- |
 | nombre| cadena| camino| Nombre del libro de trabajo.|
-| hojaNombre| cadena| camino| Nombre de la hoja de trabajo.|
-| índice del gráfico| entero| camino| El índice del gráfico.|
+| nombre de la hoja| cadena| camino| Nombre de la hoja de trabajo.|
+| gráficoíndice| entero| camino| El índice del gráfico.|
 | carpeta| cadena| consulta| La carpeta del libro de trabajo.|
-| NombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
+| nombredealmacenamiento| cadena| consulta| nombre del almacenamiento.|
 
 
 <br/>
@@ -66,11 +66,11 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5
 {{< /tab >}}
 
 {{< /tabs >}}
-## Familia SDK de la nube
+## Familia de SDK en la nube
  
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se ocupa de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor, echa un vistazo a la[repositorio GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de Cloud.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor revisa el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de nube.
  
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código demuestran cómo realizar llamadas a servicios web Aspose.Cells utilizando varios SDK:
  
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 

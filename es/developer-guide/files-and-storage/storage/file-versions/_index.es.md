@@ -4,12 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/storage/file-versions/
 keywords: Learn how to get file version with Aspose Cells Cloud REST API
-description: Obtenga información sobre cómo obtener la versión del archivo con Aspose Cells Cloud REST API SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift
+description: Aprenda cómo obtener la versión del archivo con Aspose Cells Cloud REST API SDK compatible con tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 100
 ---
 Este REST API indica obtener `file versions`.
  
-## RESET API
+## RSET API
  
 ```bash
  
@@ -20,8 +20,8 @@ GET http://api.aspose.cloud/v3.0/cells/storage/version/{path}
  
 | Nombre del parámetro| Tipo| Ruta/Cadena de consulta/Cuerpo HTTP|Descripción|
 |:- |:- |:- |:- |
-| camino| cadena| camino| Ruta del archivo, por ejemplo, '/archivo.ext'|
-| NombreDeAlmacenamiento| cadena| consulta| Nombre de almacenamiento|
+| camino| cadena| camino| Ruta del archivo, por ejemplo, '/file.ext'|
+| nombredealmacenamiento| cadena| consulta| Nombre de almacenamiento|
 
  
  El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/Storage/GetFileVersions) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
@@ -66,10 +66,10 @@ curl -v "http://api.aspose.cloud/v3.0/cells/storage/cellsstorage/exist" \
  
 {{< /tabs >}}
  
-## Familia SDK de la nube
+## Familia de SDK en la nube
  
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se ocupa de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor, echa un vistazo a la[repositorio GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de Cloud.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor revisa el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de nube.
  
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código demuestran cómo realizar llamadas a servicios web Aspose.Cells utilizando varios SDK:
  
  

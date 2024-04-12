@@ -1,10 +1,10 @@
 ﻿---
-title:  Grafik Değer Eksenini Alın
+title:  Grafik Değeri Axi'yi Alın
 type: docs
 url: /tr/charts/value-axis/get/
 weight: 60
 ---
-Bu REST API, Grafik Değer Eksenini Al'ı gösterir.
+Bu REST API, Grafik Değeri Eksenini Al'ı gösterir
  
 ## RSET API
  
@@ -19,13 +19,13 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{cha
 |:- |:- |:- |:- |
 | isim| sicim| yol||
 | sayfaAdı| sicim| yol||
-| chartIndex| tamsayı| yol||
+| grafikIndex| tamsayı| yol||
 | dosya| sicim| sorgu||
 | depolamaAdı| sicim| sorgu||
  
- bu[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Charts/GetChartValueAxis) herkesin erişebileceği bir programlama arabirimi tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Charts/GetChartValueAxis) herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
  
-Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Cloud API'e nasıl çağrı yapılacağını gösterir.
+Aspose.Cells web servislerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnekte, cURL ile Cloud API'e nasıl çağrı yapılacağı gösterilmektedir.
  
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
  
@@ -59,9 +59,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/" \
  
 ## Bulut SDK Ailesi
  
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, alt düzey ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen kontrol edin[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+ SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük düzeyli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanıza olanak tanır. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
  
-Aşağıdaki kod örnekleri, çeşitli SDK'lar kullanılarak Aspose.Cells web hizmetlerine nasıl çağrı yapılacağını gösterir:
+Aşağıdaki kod örnekleri, çeşitli SDK'ları kullanarak Aspose.Cells web hizmetlerine nasıl çağrı yapılacağını gösterir:
  
  
  

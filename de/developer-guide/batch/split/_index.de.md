@@ -26,7 +26,7 @@ POST http://api.aspose.cloud/v3.0/cells/batch/split
  
 Name | Geben Sie | ein Beschreibung | Anmerkungen
 ------------ | ------------- | ------------- | -------------
- Quellordner | Zeichenfolge | | [optional]SourceStorage | Zeichenfolge | | [optional]MatchCondition | MatchConditionRequest | | [optional]Formatieren | Zeichenfolge | | [optional]FromIndex | Ganzzahl | | [optional]ToIndex | Ganzzahl | | [optional]OutFolder | Zeichenfolge | | [optional]Speicheroptionen | SaveOptions | | [Optional]**MatchConditionRequest-Eigenschaften**
+ Quellordner | Zeichenfolge | | [optional]SourceStorage | Zeichenfolge | | [optional]MatchCondition | MatchConditionRequest | | [optional]Format | Zeichenfolge | | [optional]FromIndex | Ganzzahl | | [optional]ToIndex | Ganzzahl | | [optional]OutFolder | Zeichenfolge | | [optional]Speicheroptionen | SaveOptions | | [Optional]**MatchConditionRequest-Eigenschaften**
  
 Name | Geben Sie | ein Beschreibung | Anmerkungen
 ------------ | ------------- | ------------- | -------------

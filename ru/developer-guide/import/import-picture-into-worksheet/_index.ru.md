@@ -1,17 +1,17 @@
 ﻿---
-title: Импорт изображения в рабочий лист Excel
+title: Импортируйте изображение в рабочий лист Excel.
 second_title: Aspose.Cells Cloud Documen
-linktitle: Импорт изображения
+linktitle: Импортировать изображение
 type: docs
 url: /ru/import/picture/
 aliases: [/import-picture-into-excel-worksheet/,/import-picture-into-worksheet/,/import-data/picture/]
 keywords: Import picture into Excel files
-description: Aspose.Cells Cloud REST API поддерживает импорт изображений в файлы Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и swift.
+description: Aspose.Cells Cloud REST API поддерживает импорт изображений в файлы Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 19
 ---
 Этот REST API `import picture data` в рабочий лист Excel.
 
-Запрос представляет собой HTTP-запрос с составным содержимым (см.[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)или[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). Первая часть составного содержимого содержит данные ImportPictureOption, а вторая — файл данных.
+Запрос представляет собой HTTP-запрос с составным содержимым (см.[РФК 2046](http://tools.ietf.org/html/rfc2046#page-17)или[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). Первая часть составного содержимого содержит данные ImportPictureOption, а вторая — файл данных.
 
 ## РСЕТ API
 
@@ -26,20 +26,20 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/import-data
 Важные параметры описаны в следующей таблице:
 
 
-**Импортизображениеопция**
+**Импорткартуревариант**
 
 |Имя параметра|Тип|Описание|
 |:- |:- |:- |
-| верхний левый ряд| инт||
-|Верхняя левая колонка| инт||
-| нижняя правая строка| инт||
-| Нижняя правая колонка| инт||
+| Верхний левый ряд| интервал||
+| Верхний левый столбец| интервал||
+| Нижний правый ряд| интервал||
+| Нижний правый столбец| интервал||
 | Имя файла| нить||
 | Данные| Нить||
 | Рабочий лист назначения| нить| имя рабочего листа назначения.|
 | IsInsert| нить| правда/ложь.|
-| ИмпортДататип| нить|IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/Picture.|
-| Источник| Источник файла| Указывает позицию файла данных, когда параметр BatchData имеет значение null.|
+| Импортдататипе| нить|IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/Picture.|
+| Источник| источник файла| Указывает позицию файла данных, когда параметр BatchData имеет значение null.|
 
 
 **Пример**
@@ -47,9 +47,9 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/import-data
 
 ## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK позаботится о низкоуровневых деталях и позволит вам сосредоточиться на задачах вашего проекта. Пожалуйста, ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) полный список Aspose.Cells Cloud SDK.
+ Использование SDK — лучший способ ускорить разработку. SDK заботится о деталях низкого уровня и позволяет вам сосредоточиться на задачах проекта. Пожалуйста, ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для получения полного списка Aspose.Cells Cloud SDK.
 
-В следующих примерах кода показано, как выполнять вызовы веб-служб Aspose.Cells с помощью различных SDK.
+Следующие примеры кода демонстрируют, как выполнять вызовы веб-служб Aspose.Cells с использованием различных SDK:
 
 
 {{< tabs tabTotal="9" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" tabName9="Python" >}}

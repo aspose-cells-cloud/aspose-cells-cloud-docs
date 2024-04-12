@@ -6,10 +6,10 @@ type: docs
 url: /es/saveas-other-formats/
 aliases: [/convert-excel-workbook-to-different-file-formats/]
 keywords: Save excel files as kinds of format files
-description: Aspose.Cells Cloud REST API admite guardar archivos de Excel como tipos de archivos de formato. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift
+description: Aspose.Cells Cloud REST API admite guardar archivos de Excel como tipos de archivos de formato. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 30
 ---
-Este REST API indica que el archivo de Excel `save` es un archivo de formato diferente.
+Este REST API indica que el archivo Excel `save` es un archivo de formato diferente.
 
 **Parámetro de consulta**
 
@@ -17,20 +17,20 @@ Este REST API indica que el archivo de Excel `save` es un archivo de formato dif
 |:- |:- |:- |
 |nuevo nombre de archivo|cadena| nuevo nombre de archivo|
 |esAutoFitRows|cadena| verdadero Falso|
-|isAutoFitColumns|cadena| verdadero Falso|
-|carpeta|cadena|Carpeta original del libro de trabajo.|
-|NombreDeAlmacenamiento|cadena|Nombre de almacenamiento.|
+|esColumnasAutoFit|cadena| verdadero Falso|
+|carpeta|cadena|Carpeta del libro de trabajo original.|
+|nombredealmacenamiento|cadena|Nombre del almacenamiento.|
 
 
 ## DESCANSO API
 
 |**API**|**Tipo**|**Descripción**|**Enlace de recursos**|
 |:- |:- |:- |:- |
-|/celdas/{nombre}/guardar como|CORREO|Exportar libro de trabajo a Formato|[PublicarDocumentoGuardarComo](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)|
+|/celdas/{nombre}/saveAs|CORREO|Exportar libro de trabajo a formato|[Publicar documento guardar como](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)|
 
  El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
 
- Puedes usar**cURL** herramienta de línea de comandos para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo hacer llamadas a Cloud API con cURL.
+ Puedes usar**cURL** Herramienta de línea de comandos para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
@@ -74,11 +74,11 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/sampleBook.xlsx/SaveAs?newfile
 
 {{< /tabs >}}
 
-## Familia SDK de la nube
+## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se ocupa de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor, echa un vistazo a la[repositorio GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de Cloud.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor revisa el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de nube.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código demuestran cómo realizar llamadas a servicios web Aspose.Cells utilizando varios SDK:
 
 
 

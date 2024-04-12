@@ -1,5 +1,5 @@
 ﻿---
-title: Importar datos sin usar almacenamiento
+title: Importar datos sin usar storag
 second_title: Aspose.Cells Cloud Documen
 linktitle: Importar datos sin almacenamiento
 type: docs
@@ -9,11 +9,11 @@ keywords: REST API,  spreadsheets, excel, Import
 description: Cells.Cloud API para importar archivos Excel
 weight: 10
 ---
-Excel la importación de datos es un proceso complejo. Muchos factores contribuyen a la complejidad y, por lo tanto, deben tenerse en cuenta durante el proceso de exportación. La capacidad de importar tipos de formatos y tipos de datos en el archivo con una calidad profesional precisa es una característica principal de Aspose.Cells Cloud.
+Excel la importación de datos es un proceso complejo. Muchos factores contribuyen a la complejidad y, por lo tanto, deben tenerse en cuenta durante el proceso de exportación. La capacidad de importar tipos de formatos y tipos de datos al archivo con una calidad profesional precisa es una característica principal de Aspose.Cells Cloud.
 
 Este REST API indica `import data` en un archivo Excel.
 
-## RESET API
+## RSET API
 
 ```bash
 
@@ -26,9 +26,9 @@ POST https://api.aspose.cloud/v3.0/cells/import
 | Nombre del parámetro| Tipo| Ruta/Cadena de consulta/Cuerpo HTTP|Descripción|
 |:- |:- |:- |:- |
 | archivo| archivo| formularioDatos| Subir Archivo|
-| ImportOption| Opciones de importación| Cuerpo HTTP| IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/Picture|
+| ImportarOpción| Opciones de importación|HTTPCuerpo| IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/Picture|
 
-**Los parámetros de las opciones de importación de datos**se describen en[el enlace de referencia](/cells/es/import/#import-data-option-parameter).
+**Los parámetros de opciones de importación de datos.** se describen en[el enlace de referencia](/cells/es/import/#import-data-option-parameter).
 
 
 
@@ -80,11 +80,11 @@ curl -v "http://api.aspose.cloud/v3.0/cells/import" \
  
 {{< /tabs >}}
  
-## Familia SDK de la nube
+## Familia de SDK en la nube
  
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se ocupa de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor, echa un vistazo a la[repositorio GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de Cloud.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor revisa el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de nube.
  
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código demuestran cómo realizar llamadas a servicios web Aspose.Cells utilizando varios SDK:
 
 
 {{< tabs tabTotal="9" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" tabName9="Python" >}}

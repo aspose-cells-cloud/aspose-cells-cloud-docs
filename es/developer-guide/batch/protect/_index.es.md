@@ -4,12 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/batch/protect
 keywords: Batch protection of multiple Excel files
-description: Aspose.Cells Cloud API admite la protección por lotes de varios archivos de Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift
+description: Aspose.Cells Cloud API admite la protección por lotes de múltiples archivos de Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 100
 ---
-Este REST API indica al `batch protection` de archivos elegibles.
+Este REST API indica el `batch protection` de archivos elegibles.
  
-## RESET API
+## RSET API
  
 ```bash
  
@@ -22,15 +22,15 @@ POST http://api.aspose.cloud/v3.0/cells/batch/protect
 |:- |:- |:- |:- |
 | solicitud de protección por lotes|| cuerpo||
 
-**Propiedades de BatchProtectRequest**
+**Propiedades de solicitud de protección por lotes**
  
-Nombre | Tipo | Descripción | notas
+Nombre | Tipo | Descripción | Notas
 ------------ | ------------- | ------------- | -------------
-Carpeta de origen | cadena | | [opcional]Condición de coincidencia | Solicitud de condición de coincidencia | | [opcional] Tipo de protección | cadena | | [opcional] Contraseña | cadena | | [opcional]Carpeta de salida | cadena | | [opcional]**Propiedades de MatchConditionRequest**
+Carpeta de origen | cadena | | [opcional]Condición de coincidencia | Solicitud de condición de coincidencia | | [opcional]Tipo de protección | cadena | | [opcional]Contraseña | cadena | | [opcional]Carpeta exterior | cadena | | [opcional]**Propiedades de MatchConditionRequest**
  
-Nombre | Tipo | Descripción | notas
+Nombre | Tipo | Descripción | Notas
 ------------ | ------------- | ------------- | -------------
- RegexPatrón | cadena | | [opcional]Condiciones de coincidencia completa | cadena[]| | [opcional] El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/PostProtectConvert) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+ Patrón de expresión regular | cadena | | [opcional]Condiciones de coincidencia completa | cadena[]| | [opcional]El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/PostProtectConvert) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
  
 Puede utilizar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
  
@@ -64,11 +64,11 @@ curl -v "http://api.aspose.cloud/v3.0/cells/batch/protect" \
  
 {{< /tabs >}}
  
-## Familia SDK de la nube
+## Familia de SDK en la nube
  
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se ocupa de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor, echa un vistazo a la[repositorio GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de Cloud.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor revisa el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de nube.
  
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código demuestran cómo realizar llamadas a servicios web Aspose.Cells utilizando varios SDK:
  
  
   

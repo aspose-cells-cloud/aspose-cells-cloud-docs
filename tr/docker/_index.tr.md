@@ -9,16 +9,16 @@ weight: 30
 ---
 ## Aspose.Cells Bulut Docker
 
- Aspose.Cells Cloud Image, Linux ,Microsoft Windows 10 Pro, Microsoft Windows Server 2016 ve Microsoft Windows Server 2019 için mevcuttur.
+ Aspose.Cells Cloud Image, Linux ,Microsoft Windows 10 Pro, Microsoft Windows Server 2016 ve Microsoft Windows Server 2019 için kullanılabilir.
 
 
 
-## API Referans - Aspose.Cells Cloud Docker
+## API Referans - Aspose.Cells Bulut Docker
 
-- https://hostname:port/swagger
-- https://hostname:port/swagger/ui/index.html
+- https://anasistem adı:bağlantı noktası/swagger
+- https://anasistem adı:port/swagger/ui/index.html
 
 Görmek:
 - [Bilgileri indir](/cells/tr/docker/downloads/) 
-- [Çalıştırma Bilgileri](/cells/tr/docker/run/) 
+- [Bilgileri Çalıştır](/cells/tr/docker/run/) 
 - [Depolama Bilgileri](/cells/tr/docker/storage/) 

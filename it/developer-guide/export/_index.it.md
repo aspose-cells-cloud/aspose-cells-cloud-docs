@@ -1,24 +1,24 @@
 ﻿---
-title: Esporta la cartella di lavoro e gli oggetti interni in tipi di forma
+title: Esporta la cartella di lavoro e gli oggetti interni in tipi di formato
 second_title: Aspose.Cells Cloud Documen
 linktitle: Esporta
 type: docs
 url: /it/export/
 keywords: Export workbook and internal objects to kinds of format files
-description: Aspose.Cells Cloud REST API supporta l'esportazione di file Excel e oggetti interni in tipi di file di formato. L'SDK supporta i tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
+description: Aspose.Cells Cloud REST API supporta l'esportazione di file Excel e oggetti interni in tipi di file di formato. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 31
 ---
- Se hai originariamente creato un file Excel in un certo formato, come[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/) , E[CSV](https://docs.fileformat.com/spreadsheet/csv/) , a volte potresti trovare utile convertire il file excel in un altro formato in modo da poter sfruttare le funzionalità speciali fornite da esso. Ad esempio, potresti voler esportare un file excel in[PDF](https://docs.fileformat.com/pdf/) per proteggere i tuoi contenuti da eventuali modifiche non autorizzate e facilitarne la lettura e la condivisione simultanea.
+ Se hai originariamente creato un file Excel in un determinato formato, ad esempio[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/) , E[CSV](https://docs.fileformat.com/spreadsheet/csv/) , a volte potresti trovare utile convertire il file Excel in un altro formato in modo da poter sfruttare le funzionalità speciali fornite da esso. Ad esempio, potresti voler esportare un file Excel in[PDF](https://docs.fileformat.com/pdf/) per proteggere i tuoi contenuti da eventuali modifiche non autorizzate e facilitarne la lettura e la condivisione contemporaneamente.
 
- Excel l'esportazione di oggetti è un processo complesso. Molti fattori contribuiscono alla complessità e, pertanto, dovrebbero essere presi in considerazione durante il processo di esportazione. La possibilità di esportare l'oggetto Excel in un file di formato con una precisa qualità professionale è una delle caratteristiche principali di Aspose.Cells Cloud.
+ Excel l'esportazione degli oggetti è un processo complesso. Molti fattori contribuiscono alla complessità e pertanto dovrebbero essere presi in considerazione durante il processo di esportazione. La possibilità di esportare l'oggetto Excel in un file di formato con una precisa qualità professionale è una caratteristica principale di Aspose.Cells Cloud.
 
- Funziona perfettamente per cartelle di lavoro, grafici, forme e immagini esportate da file excel. Puoi esportare formati:[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [ODS](https://docs.fileformat.com/spreadsheet/ods/), [TXT](https://docs.fileformat.com/word-processing/txt/) . I formati di sola esportazione:[PDF](https://docs.fileformat.com/pdf/), [OTS](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [DIF](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [NUMERI](https://docs.fileformat.com/spreadsheet/numbers/), [FODS](https://docs.fileformat.com/spreadsheet/fods/).
+ Funziona perfettamente con cartelle di lavoro, grafici, forme e immagini esportate da file Excel. Puoi esportare formati:[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [ODS](https://docs.fileformat.com/spreadsheet/ods/), [TXT](https://docs.fileformat.com/word-processing/txt/) . I formati di sola esportazione:[PDF](https://docs.fileformat.com/pdf/), [OTS](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [DIF](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [NUMERI](https://docs.fileformat.com/spreadsheet/numbers/), [FODS](https://docs.fileformat.com/spreadsheet/fods/).
 
-La richiesta è una richiesta HTTP con contenuto in più parti (vedi[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)O[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). La prima parte del contenuto multiparte contiene il file di dati e la seconda contiene le opzioni di salvataggio.
+La richiesta è una richiesta HTTP con contenuto in più parti (vedi[RFC2046](http://tools.ietf.org/html/rfc2046#page-17)O[RFC1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). La prima parte del contenuto in più parti contiene il file di dati e la seconda contiene le opzioni di salvataggio.
 
 La cartella di lavoro REST API `export` e gli oggetti interni in file di formato diverso.
 
-## RSET API
+## RSETAPI
 
 ```bash
 
@@ -28,15 +28,15 @@ POST https://api.aspose.cloud/v3.0/cells/export
 
  I parametri della richiesta sono:
  
-| Nome parametro| Tipo| Percorso/Stringa di query/HTTPBody|Descrizione|
+| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
 |:- |:- |:- |:- |
 | file| file| formData| File da caricare|
-| tipo di oggetto| corda| domanda|tipo di oggetto (cartella di lavoro/foglio di lavoro/grafico/forma/immagine/listobject/oleobject)|
+| tipo di oggetto| corda| domanda|tipo di oggetto (cartella di lavoro/foglio di lavoro/grafico/forma/immagine/elencooggetto/oleoggetto)|
 | formato| corda| domanda|[Formato del file](/cells/it/supported-file-formats/)  |
  
- IL[Specifica OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) definisce un'interfaccia di programmazione accessibile pubblicamente e consente di eseguire interazioni REST direttamente da un browser web.
+ IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) definisce un'interfaccia di programmazione accessibile pubblicamente e consente di eseguire interazioni REST direttamente da un browser web.
  
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi Web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate a Cloud API con cURL.
+È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi Web Aspose.Cells. Nell'esempio seguente viene illustrato come effettuare chiamate al Cloud API con cURL.
  
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
  
@@ -80,12 +80,12 @@ curl -v "http://api.aspose.cloud/v3.0/cells/export" \
  
 {{< /tabs >}}
  
-## Famiglia di SDK cloud
+## Famiglia di SDK Cloud
 
 
- L'utilizzo di un SDK è il modo migliore per velocizzare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del tuo progetto. Si prega di controllare il[Deposito GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+ Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si prende cura dei dettagli di basso livello e ti consente di concentrarti sulle attività del tuo progetto. Si prega di controllare il[Repositorio GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK Cloud Aspose.Cells.
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+I seguenti esempi di codice dimostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
 
 
 {{< tabs tabTotal="9" tabID="3" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" tabName9="Python" tabName10="C#" tabName11="Java" >}}
@@ -144,8 +144,8 @@ I seguenti articoli spiegano ogni API in dettaglio e contengono cURL ed esempi S
 
 
 1. [Esporta il grafico Excel in un formato di file diverso](/cells/it/export/excel-chart-to-different-formats/)
-2. [Esporta l'oggetto elenco Excel in un formato di file diverso](/cells/it/export/excel-listobject-to-different-formats/)
-3. [Esporta Excel ole-object in un formato di file diverso](/cells/it/export/excel-ole-object/)
+2. [Esporta l'oggetto elenco Excel in un formato file diverso](/cells/it/export/excel-listobject-to-different-formats/)
+3. [Esporta Excel oggetto oleo in un formato file diverso](/cells/it/export/excel-ole-object/)
 4. [Esporta l'immagine Excel in un formato di file diverso](/cells/it/export/excel-picture-to-different-formats/)
 5. [Esporta la forma Excel in un formato di file diverso](/cells/it/export/excel-shape-to-different-formats/)
 6. [Esporta la cartella di lavoro Excel in un formato di file diverso](/cells/it/export/excel-to-different-formats/)

@@ -9,7 +9,7 @@ weight: 20
 ---
 Questo REST API indica Aggiungi commento cella del foglio di lavoro.
  
-## RSET API
+## RSETAPI
  
 ```bash
  
@@ -18,18 +18,18 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{c
 ```
  I parametri della richiesta sono:
  
-| Nome parametro| Tipo| Percorso/Stringa di query/HTTPBody|Descrizione|
+| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
 |:- |:- |:- |:- |
 | nome| corda| sentiero| Il nome del documento.|
-| foglioNome| corda| sentiero| Il nome del foglio di lavoro.|
-| cellName| corda| sentiero| Il nome della cella|
+| nomefoglio| corda| sentiero| Il nome del foglio di lavoro.|
+| nomecella| corda| sentiero| Il nome della cella|
 | commento|| corpo| Oggetto commento|
-| cartella| corda| domanda| La cartella dei documenti.|
-| storageName| corda| domanda| nome di archiviazione.|
+| cartella| corda| domanda| La cartella documenti.|
+| storageName| corda| domanda| nome dell'archivio.|
  
- IL[Specifica OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PutWorksheetComment) definisce un'interfaccia di programmazione accessibile pubblicamente e consente di eseguire interazioni REST direttamente da un browser web.
+ IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PutWorksheetComment) definisce un'interfaccia di programmazione accessibile pubblicamente e consente di eseguire interazioni REST direttamente da un browser web.
  
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi Web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate a Cloud API con cURL.
+È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi Web Aspose.Cells. Nell'esempio seguente viene illustrato come effettuare chiamate al Cloud API con cURL.
  
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
@@ -104,11 +104,11 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/comment
 
 {{< /tabs >}}
 
-## Famiglia di SDK cloud
+## Famiglia di SDK Cloud
  
- L'utilizzo di un SDK è il modo migliore per velocizzare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del tuo progetto. Si prega di controllare il[Deposito GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+ Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si prende cura dei dettagli di basso livello e ti consente di concentrarti sulle attività del tuo progetto. Si prega di controllare il[Repositorio GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK Cloud Aspose.Cells.
  
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+I seguenti esempi di codice dimostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
 
 {{< tabs tabTotal="1" tabID="4" tabName1="Go" >}}
 

@@ -24,7 +24,7 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
 |:- |:- |:- |:- |
 | namn| sträng| väg|Arbetsbokens namn.|
 | arknamn| sträng| väg| Worsheet-namnet.|
-| bildindex| heltal| väg|Bildindex|
+| bildindex| heltal| väg| Bildindex|
 | mapp| sträng| fråga| Arbetsboksmappen.|
 | lagringsnamn| sträng| fråga| lagringsnamn.|
  

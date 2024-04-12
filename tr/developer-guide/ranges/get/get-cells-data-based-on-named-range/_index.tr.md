@@ -1,15 +1,15 @@
 ﻿---
-title: Adlandırılmış rang'a dayalı olarak hücre verilerini al
+title: Adlandırılmış çalmaya dayalı olarak hücre verilerini alın
 second_title: Aspose.Cells Cloud Documen
 linktitle: Değer
 type: docs
 url: /tr/ranges/get/values/
 aliases: [/get-cells-data-based-on-named-range/]
 keywords: Get cells data based on named range on an Excel worksheet
-description: Aspose.Cells Cloud REST API, bir Excel çalışma sayfasındaki adlandırılmış aralığa dayalı olarak hücre verilerinin alınmasını destekler. SDK, geliştirme dili türlerini destekler. Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift'i içerir
+description: Aspose.Cells Cloud REST API, Excel çalışma sayfasındaki adlandırılmış aralığa göre hücre verilerinin alınmasını destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 20
 ---
- Bu REST API, Aralık adına veya satır sütun dizinlerine göre bir aralıktaki Hücre listesini Al'ı gösterir.
+ Bu REST API, aralık adına veya satır sütun dizinlerine göre bir aralıktaki hücre listesini al anlamına gelir
 
  
 ## RSET API
@@ -25,17 +25,17 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/valu
 |:- |:- |:- |:- |
 | isim| sicim| yol| çalışma kitabı adı|
 | sayfaAdı| sicim| yol| çalışma sayfası adı|
-| ad aralığı| sicim| sorgu| aralık adı, örneğin: "A1:B2" veya "aralık_adı1"|
+| isim aralığı| sicim| sorgu| aralık adı, örneğin: 'A1:B2' veya 'aralık_adı1'|
 | ilk sıra| tamsayı| sorgu| aralığın ilk satırı|
 | ilk sütun| tamsayı| sorgu| aralığın ilk sütunu|
 | satır Sayısı| tamsayı| sorgu| aralıktaki satır sayısı|
-| sütun Sayısı| tamsayı| sorgu| aralıktaki sütun sayısı|
+| sütunSayısı| tamsayı| sorgu| aralıktaki sütun sayısı|
 | dosya| sicim| sorgu| Çalışma kitabı klasörü.|
 | depolamaAdı| sicim| sorgu| depolama adı.|
  
- bu[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Ranges/GetWorksheetCellsRangeValue) herkesin erişebileceği bir programlama arabirimi tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Ranges/GetWorksheetCellsRangeValue) herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
  
-Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Cloud API'e nasıl çağrı yapılacağını gösterir.
+Aspose.Cells web servislerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnekte, cURL ile Cloud API'e nasıl çağrı yapılacağı gösterilmektedir.
  
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
  
@@ -440,8 +440,8 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/
  
 ## Bulut SDK Ailesi
  
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, alt düzey ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen kontrol edin[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+ SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük düzeyli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanıza olanak tanır. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
  
-Aşağıdaki kod örnekleri, çeşitli SDK'lar kullanılarak Aspose.Cells web hizmetlerine nasıl çağrı yapılacağını gösterir:
+Aşağıdaki kod örnekleri, çeşitli SDK'ları kullanarak Aspose.Cells web hizmetlerine nasıl çağrı yapılacağını gösterir:
  
  

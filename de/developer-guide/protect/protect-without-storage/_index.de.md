@@ -1,0 +1,124 @@
+﻿---
+title: Workboo schützen
+second_title: Aspose.Cells Cloud Documen
+linktitle: Schützen ohne Lagerung
+type: docs
+url: /de/protect/without-using-storage/
+keywords: Protect Excel files
+description: Aspose.Cells Cloud REST API unterstützt den Schutz von Excel Dateien. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
+weight: 70
+---
+Dieser REST API weist auf `protect` Excel Dateien hin.
+## RSET API
+ 
+```bash
+ 
+POST http://api.aspose.cloud/v3.0/cells/protect
+ 
+```
+ Die Anforderungsparameter sind:
+ 
+| Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
+|:- |:- |:- |:- |
+| Datei| Datei| Formulardaten| Datei zum Hochladen|
+| ProtectWorkbookRequest| Klasse| Formulardaten| Arbeitsmappenanforderung schützen|
+ 
+ Der[OpenAPI-Spezifikation](https://reference.aspose.cloud/cells/#/LightCells/PostProtect) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht die Durchführung von REST-Interaktionen direkt über einen Webbrowser.
+ 
+Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie man mit cURL Anrufe zur Cloud API tätigt.
+ 
+{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+ 
+{{< tab tabNum="1" >}}
+ 
+```bash
+ 
+curl -v "http://api.aspose.cloud/v3.0/cells/protect" \
+-X POST \
+-H "Content-Type: application/json" \
+-H "Accept: application/json" \
+-H "Authorization: Bearer <jwt token>" \
+-F 'xxxxx1=@xxxx1.xlsx' \
+-F 'xxxxx2=@xxxx2.xlsx' \
+-F 'protectWorkbookRequest={AwaysOpenReadOnly:true,EncryptWithPassword:"123456"} 
+```
+ 
+{{< /tab >}}
+ 
+{{< tab tabNum="2" >}}
+ 
+```bash
+{
+    "Files":
+    [
+        { 
+            "Filename":"xxxxx",
+            "FileSize":274022,
+            "FileContent":"-----Base64String--------"
+        },
+        { 
+            "Filename":"xxxxx",
+            "FileSize":274022,
+            "FileContent":"-----Base64String--------"
+        }
+    ]
+}
+ 
+```
+ 
+{{< /tab >}}
+ 
+{{< /tabs >}}
+ 
+## Cloud SDK-Familie
+ 
+ Die Verwendung eines SDK ist der beste Weg, die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte schauen Sie sich die an[GitHub-Repository](https://github.com/aspose-cells-cloud) Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie hier.
+ 
+Die folgenden Codebeispiele veranschaulichen, wie Aspose.Cells-Webdienste mithilfe verschiedener SDKs aufgerufen werden:
+ 
+
+
+{{< tabs tabTotal="9" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" tabName9="Python" >}}
+
+{{< tab tabNum="1" >}}
+
+
+
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+{{< /tab >}}
+
+{{< tab tabNum="3" >}}
+
+{{< /tab >}}
+
+{{< tab tabNum="4" >}}
+
+
+{{< /tab >}}
+
+{{< tab tabNum="5" >}}
+
+
+{{< /tab >}}
+
+{{< tab tabNum="6" >}}
+
+
+{{< /tab >}}
+
+{{< tab tabNum="7" >}}
+
+
+{{< /tab >}}
+
+{{< tab tabNum="8" >}}
+
+
+{{< /tab >}}
+{{< tab tabNum="9" >}}
+
+{{< /tab >}}
+{{< /tabs >}}

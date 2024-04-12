@@ -1,12 +1,12 @@
 ﻿---
-title: Obtener Gráfico Segunda Categoría Axi
+title: Obtener gráfico Segunda categoría Axi
 type: docs
 url: /es/charts/second-category-axis/get/
 weight: 60
 ---
- Este REST API indica Obtener eje de segunda categoría del gráfico.
+ Este REST API indica Obtener el eje de segunda categoría del gráfico.
  
-## RESET API
+## RSET API
  
 ```bash
  
@@ -18,12 +18,12 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{cha
 | Nombre del parámetro| Tipo| Ruta/Cadena de consulta/Cuerpo HTTP|Descripción|
 |:- |:- |:- |:- |
 | nombre| cadena| camino||
-| hojaNombre| cadena| camino||
-| índice del gráfico| entero| camino||
+| nombre de la hoja| cadena| camino||
+| gráficoíndice| entero| camino||
 | carpeta| cadena| consulta||
-| NombreDeAlmacenamiento| cadena| consulta||
+| nombredealmacenamiento| cadena| consulta||
  
- Tget-chart-segunda-categoría-eje copyhe[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/Charts/GetChartSecondCategoryAxis) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
+ Copia del eje de segunda categoría del gráfico Tget[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/Charts/GetChartSecondCategoryAxis) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
  
 Puede utilizar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
  
@@ -57,11 +57,11 @@ curl -v "http://api.aspose.cloud/v3.0/cells/" \
  
 {{< /tabs >}}
  
-## Familia SDK de la nube
+## Familia de SDK en la nube
  
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se ocupa de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor, echa un vistazo a la[repositorio GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de Cloud.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor revisa el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de nube.
  
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código demuestran cómo realizar llamadas a servicios web Aspose.Cells utilizando varios SDK:
  
  
  

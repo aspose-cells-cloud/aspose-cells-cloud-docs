@@ -1,15 +1,15 @@
 ﻿---
 title: Excel çalışma sayfasına şekil ekleme
 second_title: Aspose.Cells Cloud Documen
-linktitle: reklam
+linktitle: Reklam
 type: docs
 url: /tr/shapes/add/
 aliases: [/add-a-shape-inside-the-worksheet/]
 keywords: Add shape on an Excel workshee
-description: Aspose.Cells Cloud REST API, Excel çalışma sayfasına şekil eklemeyi destekler. SDK, geliştirme dili türlerini destekler. Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift'i içerir
+description: Aspose.Cells Cloud REST API, Excel çalışma sayfasına şekil eklemeyi destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 30
 ---
-Bu REST API, Excel çalışma sayfasına bir şekil eklemeyi belirtir.
+Bu REST API, Excel çalışma sayfasına bir şekil eklenmesi gerektiğini belirtir.
  
 ## RSET API
  
@@ -25,19 +25,19 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes
 | isim| sicim| yol| belge adı.|
 | sayfaAdı| sicim| yol| çalışma sayfası adı.|
 | şekilDTO|| vücut||
-| çizim türü| sicim| sorgu| şekil nesnesi türü|
-| üstSolSatır| tamsayı| sorgu| Sol üst sıra dizini.|
+| Çizim Türü| sicim| sorgu| şekil nesne türü|
+| üstSolSatır| tamsayı| sorgu| Sol üst satır dizini.|
 | üstSol Sütun| tamsayı| sorgu| Sol üst sütun dizini.|
-| tepe| tamsayı| sorgu| Döndürücü öğesinin sol satırından dikey uzaklığını piksel birimi cinsinden temsil eder.|
-| sol| tamsayı| sorgu| Döndürücü öğesinin sol sütunundan yatay uzaklığını piksel birimi cinsinden temsil eder.|
-| Genişlik| tamsayı| sorgu| Döndürücünün yüksekliğini piksel birimi cinsinden temsil eder.|
-| yükseklik| tamsayı| sorgu| Döndürücünün genişliğini piksel birimi cinsinden temsil eder.|
+| tepe| tamsayı| sorgu| Spinner'ın sol satırından dikey uzaklığını piksel birimi cinsinden temsil eder.|
+| sol| tamsayı| sorgu| Spinner'ın sol sütunundan yatay uzaklığını piksel biriminde temsil eder.|
+| Genişlik| tamsayı| sorgu| Spinner'ın yüksekliğini piksel birimi cinsinden temsil eder.|
+| yükseklik| tamsayı| sorgu| Spinner'ın genişliğini piksel birimi cinsinden temsil eder.|
 | dosya| sicim| sorgu| Belgenin klasörü.|
 | depolamaAdı| sicim| sorgu| depolama adı.|
  
- bu[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Shapes/PutWorksheetShape) herkesin erişebileceği bir programlama arabirimi tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Shapes/PutWorksheetShape) herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
  
-Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Cloud API'e nasıl çağrı yapılacağını gösterir.
+Aspose.Cells web servislerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnekte, cURL ile Cloud API'e nasıl çağrı yapılacağı gösterilmektedir.
  
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
  
@@ -71,9 +71,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/shapes
  
 ## Bulut SDK Ailesi
  
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, alt düzey ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen kontrol edin[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+ SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük düzeyli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanıza olanak tanır. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
  
-Aşağıdaki kod örnekleri, çeşitli SDK'lar kullanılarak Aspose.Cells web hizmetlerine nasıl çağrı yapılacağını gösterir:
+Aşağıdaki kod örnekleri, çeşitli SDK'ları kullanarak Aspose.Cells web hizmetlerine nasıl çağrı yapılacağını gösterir:
  
  
 {{< tabs tabTotal="5" tabID="4" tabName1="C#" tabName2="Java" tabName3="Perl" tabName4="Go" tabName5="Swift" >}}

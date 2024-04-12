@@ -4,19 +4,19 @@ type: docs
 url: /tr/tasks/smartmarker/
 aliases: [/working-with-smartmarker-task/]
 keywords: REST API, task, save result, spreadsheets, exce
-description: "Cells.Cloud API, Excel için çalıştır: akıllı işaretleyiciye görev desteği"
+description: "Cells.Cloud API, Excel'i çalıştırmak için: akıllı işaretleyiciye görevler desteği"
 weight: 60
 ---
 ## DİNLENME API
 
 |**API**|**Tip**|**Tanım**|**Kaynak Bağlantısı**|
 |:- |:- |:- |:- |
-|/hücreler/görev/görev çalıştırma|POSTALAMAK|Görevi Çalıştır|[Çalıştırma Görevi Sonrası](https://apireference.aspose.cloud/cells/#/Task/PostRunTask)|
+|/hücreler/görev/çalıştırma görevi|POSTALAMAK|Görevi Çalıştır|[Çalıştırma SonrasıGörev](https://apireference.aspose.cloud/cells/#/Task/PostRunTask)|
 
 
- bu[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Task/PostRunTask) herkesin erişebileceği bir programlama arabirimi tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Task/PostRunTask) herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
 
- Kullanabilirsiniz**cURL** Aspose.Cells web hizmetlerine kolayca erişmek için komut satırı aracı. Aşağıdaki örnek, cURL ile Cloud API'e nasıl çağrı yapılacağını gösterir.
+ Kullanabilirsiniz**cURL** Aspose.Cells web hizmetlerine kolayca erişmek için komut satırı aracı. Aşağıdaki örnekte, cURL ile Cloud API'e nasıl çağrı yapılacağı gösterilmektedir.
 
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
@@ -43,9 +43,9 @@ HttpResponseMessage with the operation result.
 
 {{< /tabs >}}
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, alt düzey ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen kontrol edin[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+ SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük düzeyli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanıza olanak tanır. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
 
-Aşağıdaki kod örnekleri, çeşitli SDK'lar kullanılarak Aspose.Cells web hizmetlerine nasıl çağrı yapılacağını gösterir:
+Aşağıdaki kod örnekleri, çeşitli SDK'ları kullanarak Aspose.Cells web hizmetlerine nasıl çağrı yapılacağını gösterir:
 
 {{< tabs tabTotal="1" tabID="4" tabName1="C#" >}}
 

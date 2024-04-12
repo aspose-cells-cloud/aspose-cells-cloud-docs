@@ -1,17 +1,17 @@
 ﻿---
 title: Agregar firma digital para el libro de trabajo Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: Firma digital
+linktitle: firma digital
 type: docs
 url: /es/workbook/digital-signature/
 aliases: [/protect/digital-signature/]
 keywords: Add digital signature for an Excel workbook
-description: Aspose.Cells Cloud REST API admite agregar firma digital para un libro de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift
+description: Aspose.Cells Cloud REST API admite la adición de firma digital para un libro de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 35
 ---
  Este REST API indica agregar un `digital signature` para un libro de trabajo Excel.
  
-## RESET API
+## RSET API
  
 ```bash
  
@@ -26,7 +26,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/digitalsignature
 | archivo de firma digital| cadena| consulta| Parámetros del archivo de firma digital.|
 | contraseña| cadena| consulta||
 | carpeta| cadena| consulta| Carpeta del libro de trabajo.|
-| NombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
+| nombredealmacenamiento| cadena| consulta| nombre del almacenamiento.|
  
  El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/Workbook/PostDigitalSignature) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
  
@@ -62,11 +62,11 @@ curl -v "http://api.aspose.cloud/v3.0/cells/" \
  
 {{< /tabs >}}
  
-## Familia SDK de la nube
+## Familia de SDK en la nube
  
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se ocupa de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor, echa un vistazo a la[repositorio GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de Cloud.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor revisa el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de nube.
  
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código demuestran cómo realizar llamadas a servicios web Aspose.Cells utilizando varios SDK:
  
 {{< tabs tabTotal="9" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" tabName9="Python" >}}
 

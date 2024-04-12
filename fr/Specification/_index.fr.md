@@ -1,0 +1,739 @@
+﻿---
+title: Spécification
+second_title: Aspose.Cells Cloud Documen
+type: docs
+weight: 50
+---
+# Aspose.Cells Nuage API Fonctionnement
+
+- [PostAnalyseExcel](operation/postanalyzeexcel) : Effectuer une analyse commerciale des données dans les fichiers Excel.
+- [GetWorksheetAutoFilter](operation/getworksheetautofilter) : Récupérer la description des filtres automatiques à partir d'une feuille de calcul.
+- [PutWorksheetDateFilter](operation/putworksheetdatefilter) : Appliquez un filtre de date dans la feuille de calcul.
+- [PutWorksheetFilter](operation/putworksheetfilter) : Ajoutez un filtre pour une colonne dans la feuille de calcul.
+- [PutWorksheetIconFilter](operation/putworksheeticonfilter) : Ajoutez un filtre d'icônes dans la feuille de calcul.
+- [PutWorksheetCustomFilter](operation/putworksheetcustomfilter) Filtrez une liste avec des critères personnalisés dans la feuille de calcul.
+- [PutWorksheetDynamicFilter](operation/putworksheetdynamicfilter) : Ajoutez un filtre dynamique dans la feuille de calcul.
+- [PutWorksheetFilterTop10](operation/putworksheetfiltertop10) : Filtrez les 10 premiers éléments de la liste dans la feuille de calcul.
+- [PutWorksheetColorFilter](operation/putworksheetcolorfilter) : Ajoutez un filtre de couleur dans la feuille de calcul.
+- [PostWorksheetMatchBlanks](operation/postworksheetmatchblanks) : fait correspondre toutes les cellules vides de la liste.
+- [PostWorksheetMatchNonBlanks](operation/postworksheetmatchnonblanks) : fait correspondre toutes les cellules non vides de la liste.
+- [PostWorksheetAutoFilterRefresh](operation/postworksheetautofilterrefresh) : actualisez les filtres automatiques dans la feuille de calcul.
+- [Supprimer la feuille de travailDateFilter](operation/deleteworksheetdatefilter) : Supprimez un filtre de date dans la feuille de calcul.
+- [SupprimerWorksheetFilter](operation/deleteworksheetfilter) : Supprimez un filtre pour une colonne de la feuille de calcul.
+- [GetWorksheetAutoshapes](operation/getworksheetautoshapes) : Obtenez la description des formes automatiques dans la feuille de calcul.
+- [GetWorksheetAutoshapeWithFormat](operation/getworksheetautoshapewithformat) : Obtenez la description de la forme automatique dans un certain format.
+- [PostBatchConvert](operation/postbatchconvert) : conversion par lots de fichiers qui répondent à des conditions de correspondance spécifiques.
+- [PostBatchProtect](operation/postbatchprotect) : Protection par lots des fichiers qui répondent à des conditions de correspondance spécifiques.
+- [PostBatchLock](operation/postbatchlock) : Verrouillage par lots de fichiers qui répondent à des conditions de correspondance spécifiques.
+- [PostBatchUnlock](operation/postbatchunlock) : Déverrouillage par lots de fichiers qui répondent à des conditions de correspondance spécifiques.
+- [PostBatchSplit](operation/postbatchsplit) : fractionnement par lots de fichiers qui répondent à des conditions de correspondance spécifiques.
+- [PostClearContents](operation/postclearcontents) : Effacer le contenu de la zone de cellule dans la feuille de calcul.
+- [PostEffacerFormats](operation/postclearformats) : Effacer les formats de cellules dans la feuille de calcul.
+- [PostUpdateWorksheetRangeStyle](operation/postupdateworksheetrangestyle) : Mettez à jour les styles de plage de cellules dans la feuille de calcul.
+- [PostWorksheetMerge](operation/postworksheetmerge) : Fusionner les cellules dans la feuille de calcul.
+- [PostWorksheetUnmerge](operation/postworksheetunmerge) : Annulez la fusion des cellules dans la feuille de calcul.
+- [GetWorksheetCells](operation/getworksheetcells) : Récupère les descriptions de cellules dans un format spécifié.
+- [GetWorksheetCell](operation/getworksheetcell) : récupérez les données de cellule en utilisant la référence de cellule ou le nom de la méthode dans la feuille de calcul.
+- [GetWorksheetCellStyle](operation/getworksheetcellstyle) : Récupérez les descriptions de style de cellule dans la feuille de calcul.
+- [PostWorksheetCellSetValue](operation/postworksheetcellsetvalue) : Définissez la valeur de la cellule en utilisant le nom de la cellule dans la feuille de calcul.
+- [PostUpdateWorksheetCellStyle](operation/postupdateworksheetcellstyle) : définissez le style de cellule en utilisant le nom de la cellule dans la feuille de calcul.
+- [PostSetCellRangeValue](operation/postsetcellrangevalue) : Définissez la valeur de la plage dans la feuille de calcul.
+- [PostCopyCellIntoCell](operation/postcopycellintocell) : Copiez les données d'une cellule source vers une cellule de destination dans la feuille de calcul.
+- [GetCellHtmlString](operation/getcellhtmlstring) : Récupérez la chaîne HTML contenant les données et formats spécifiques dans cette cellule.
+- [PostSetCellHtmlString](operation/postsetcellhtmlstring) : Définissez la chaîne HTML contenant des données et des formats spécifiques dans cette cellule.
+- [PostCellCalculer](operation/postcellcalculate) : Calculez la formule de cellule dans la feuille de calcul.
+- [PostCellCharactères](operation/postcellcharacters) : Définissez les caractères des cellules dans la feuille de calcul.
+- [GetWorksheetColumns](operation/getworksheetcolumns) : Récupérer les descriptions des colonnes de la feuille de calcul.
+- [PostSetWorksheetColumnWidth](operation/postsetworksheetcolumnwidth) : Définissez la largeur des colonnes de la feuille de calcul.
+- [ObtenirWorksheetColumn](operation/getworksheetcolumn) : Récupérez les données des colonnes de la feuille de calcul par index de colonne.
+- [PutInsertWorksheetColumns](operation/putinsertworksheetcolumns) Insérer des colonnes de feuille de calcul dans la feuille de calcul.
+- [Supprimer les colonnes de la feuille de travail](operation/deleteworksheetcolumns) : Supprimez les colonnes de la feuille de calcul dans la feuille de calcul.
+- [PostMasquer les colonnes de la feuille de travail](operation/posthideworksheetcolumns) : masquer les colonnes de la feuille de calcul dans la feuille de calcul.
+- [PostUnhideWorksheetColumns](operation/postunhideworksheetcolumns) : Afficher les colonnes de la feuille de calcul dans la feuille de calcul.
+- [PostGroupWorksheetColumns](operation/postgroupworksheetcolumns) : Regroupez les colonnes de la feuille de calcul dans la feuille de calcul.
+- [PostUngroupWorksheetColumns](operation/postungroupworksheetcolumns) : Dissocier les colonnes de la feuille de calcul.
+- [PostCopyWorksheetColumns](operation/postcopyworksheetcolumns) : copiez les données des colonnes source vers les colonnes de destination dans la feuille de calcul.
+- [Style de colonne de publication](operation/postcolumnstyle) : Définissez le style de colonne dans la feuille de calcul.
+- [GetWorksheetRows](operation/getworksheetrows) : Récupère les descriptions des lignes de la feuille de calcul.
+- [ObtenirWorksheetRow](operation/getworksheetrow) : Récupérez les données de ligne par l'index de la ligne dans la feuille de calcul.
+- [SupprimerWorksheetRow](operation/deleteworksheetrow) : Supprime une ligne dans la feuille de calcul.
+- [Supprimer les lignes de la feuille de calcul](operation/deleteworksheetrows) : Supprimez plusieurs lignes dans la feuille de calcul.
+- [PutInsertWorksheetRows](operation/putinsertworksheetrows) : Insérez plusieurs nouvelles lignes dans la feuille de calcul.
+- [PutInsertWorksheetRow](operation/putinsertworksheetrow) : Insérez une nouvelle ligne dans la feuille de calcul.
+- [PostUpdateWorksheetRow](operation/postupdateworksheetrow) : Mettre à jour la hauteur des lignes dans la feuille de calcul.
+- [PostHideWorksheetRows](operation/posthideworksheetrows) : Masquer les lignes dans la feuille de calcul.
+- [PostUnhideWorksheetRows](operation/postunhideworksheetrows) : Afficher les lignes dans la feuille de calcul.
+- [PostGroupWorksheetRows](operation/postgroupworksheetrows) : Regroupez les lignes dans la feuille de calcul.
+- [PostUngroupWorksheetRows](operation/postungroupworksheetrows) : Dissocier les lignes de la feuille de calcul.
+- [PostCopyWorksheetRows](operation/postcopyworksheetrows) : copiez les données et les formats de lignes entières spécifiques de la feuille de calcul.
+- [PostRowStyle](operation/postrowstyle) : Appliquer des formats à une ligne entière de la feuille de calcul.
+- [GetCellsCloudServicesHealthCheck](operation/getcellscloudserviceshealthcheck) : Récupère les descriptions de cellules dans un format spécifié.
+- [GetCellsCloudServiceStatus](operation/getcellscloudservicestatus) : Aspose.Cells Vérification de l’état de santé du service Cloud.
+- [ObtenirChartArea](operation/getchartarea) : Récupérez la description de la zone du graphique dans la feuille de calcul.
+- [GetChartAreaFillFormat](operation/getchartareafillformat) : Récupérez la description du format de remplissage de la zone du graphique dans la feuille de calcul.
+- [ObtenirChartAreaBorder](operation/getchartareaborder) : Récupère la description de la bordure de la zone graphique.
+- [GetWorksheetCharts](operation/getworksheetcharts) : Récupérez les descriptions des graphiques dans la feuille de calcul.
+- [GetWorksheetChart](operation/getworksheetchart) Récupère le graphique dans un format spécifié.
+- [PutWorksheetChart](operation/putworksheetchart) : Ajoutez un nouveau graphique dans la feuille de calcul.
+- [Supprimer la feuille de calcul](operation/deleteworksheetchart) : Supprimer un graphique par index dans la feuille de calcul.
+- [PostWorksheetChart](operation/postworksheetchart) : mettre à jour les propriétés du graphique dans la feuille de calcul.
+- [GetWorksheetChartLegend](operation/getworksheetchartlegend) : Récupérez la description de la légende du graphique dans la feuille de calcul.
+- [PostWorksheetGraphiqueLégende](operation/postworksheetchartlegend) : Mettre à jour la légende du graphique dans la feuille de calcul.
+- [PutWorksheetChartLégende](operation/putworksheetchartlegend) : Afficher la légende du graphique dans la feuille de calcul.
+- [Supprimer la feuille de calculGraphiqueLégende](operation/deleteworksheetchartlegend) : masque la légende du graphique dans la feuille de calcul.
+- [Supprimer une feuille de calcul](operation/deleteworksheetcharts) : Effacez les graphiques dans les feuilles de calcul.
+- [GetWorksheetChartTitle](operation/getworksheetcharttitle) : Récupérez la description du titre du graphique dans la feuille de calcul.
+- [PostWorksheetChartTitle](operation/postworksheetcharttitle) : Mettre à jour le titre du graphique dans la feuille de calcul.
+- [PutWorksheetChartTitle](operation/putworksheetcharttitle) : Définissez le titre du graphique dans la feuille de calcul.
+- [SupprimerWorksheetChartTitle](operation/deleteworksheetcharttitle) : Masquer le titre du graphique dans la feuille de calcul.
+- [GetChartSeriesAxis](operation/getchartseriesaxis) Récupère les descriptions des axes des séries de graphiques dans le graphique.
+- [GetChartCategoryAxis](operation/getchartcategoryaxis) : Récupère les descriptions des axes des séries de graphiques dans le graphique.
+- [ObtenirChartValueAxis](operation/getchartvalueaxis) : Récupère l’axe des valeurs du graphique dans le graphique.
+- [GetChartSecondCategoryAxis](operation/getchartsecondcategoryaxis) : Récupérer l'axe de la deuxième catégorie du graphique
+- [GetChartSecondValueAxis](operation/getchartsecondvalueaxis) : Récupère le deuxième axe des valeurs du graphique.
+- [PostChartSeriesAxis](operation/postchartseriesaxis) : Mettre à jour l'axe des séries de graphiques dans le graphique.
+- [PostChartCategoryAxis](operation/postchartcategoryaxis) : Mettre à jour l'axe des catégories de graphique dans le graphique.
+- [PostChartValueAxis](operation/postchartvalueaxis) : Mettre à jour l'axe des valeurs du graphique dans le graphique.
+- [PostChartSecondCategoryAxis](operation/postchartsecondcategoryaxis) : Mettre à jour le deuxième axe de catégorie du graphique.
+- [PostChartSecondValueAxis](operation/postchartsecondvalueaxis) : Mettre à jour le deuxième axe des valeurs du graphique.
+- [GetWorksheetConditionalFormattings](operation/getworksheetconditionalformattings) : Récupérez les descriptions des mises en forme conditionnelles dans une feuille de calcul.
+- [GetWorksheetConditionalFormatting](operation/getworksheetconditionalformatting) Récupérez les descriptions de mise en forme conditionnelle dans la feuille de calcul.
+- [PutWorksheetConditionalFormatage](operation/putworksheetconditionalformatting) : Ajoutez une mise en forme conditionnelle dans la feuille de calcul.
+- [PutWorksheetFormatCondition](operation/putworksheetformatcondition) : Ajoutez une condition de format dans la feuille de calcul.
+- [PutWorksheetFormatConditionArea](operation/putworksheetformatconditionarea) : ajoutez une zone de cellule pour la condition de format dans la feuille de calcul.
+- [PutWorksheetFormatConditionCondition](operation/putworksheetformatconditioncondition) : ajoutez une condition pour la condition de format dans la feuille de calcul.
+- [Supprimer la feuille de travailConditionalFormatings](operation/deleteworksheetconditionalformattings) : Effacez toutes les mises en forme conditionnelles dans la feuille de calcul.
+- [Supprimer la feuille de travailConditionalFormatting](operation/deleteworksheetconditionalformatting) : Supprime une mise en forme conditionnelle.
+- [Supprimer la feuille de travailConditionalFormattingArea](operation/deleteworksheetconditionalformattingarea) : Supprime la zone de cellule de la mise en forme conditionnelle.
+- [ObtenirWorkbook](operation/getworkbook) : Récupérez des classeurs dans différents formats.
+- [PutConvertWorkbook](operation/putconvertworkbook) : Convertissez le classeur du contenu demandé en fichiers dans différents formats.
+- [PostWorkbookEnregistrer sous](operation/postworkbooksaveas) : Enregistrez un fichier Excel dans différents formats.
+- [PostConvertWorkbookToPDF](operation/postconvertworkbooktopdf) : Convertir le fichier Excel en fichiers PDF.
+- [PostConvertWorkbookToPNG](operation/postconvertworkbooktopng) : Convertir le fichier Excel en fichiers PNG.
+- [PostConvertWorkbookToDocx](operation/postconvertworkbooktodocx) : Convertissez le fichier Excel en fichiers Docx.
+- [PostConvertWorkbookToPptx](operation/postconvertworkbooktopptx) : Convertissez le fichier Excel en fichiers Pptx.
+- [PostConvertWorkbookToHtml](operation/postconvertworkbooktohtml) : Convertir le fichier Excel en fichiers HTML.
+- [PostConvertWorkbookToMarkdown](operation/postconvertworkbooktomarkdown) : Convertissez le fichier Excel en fichiers Markdown.
+- [PostConvertWorkbookToJson](operation/postconvertworkbooktojson) : Convertissez le fichier Excel en fichiers Json.
+- [PostConvertWorkbookToSQL](operation/postconvertworkbooktosql) : Convertissez le fichier Excel en fichiers SQL Script.
+- [PostConvertWorkbookToCSV](operation/postconvertworkbooktocsv) : Convertissez le fichier Excel en fichiers Csv.
+- [PostExportation](operation/postexport) : Exportez les éléments internes Excel ou le classeur lui-même vers des fichiers de différents formats.
+- [PostWorkbookExportXML](operation/postworkbookexportxml) : Exportez les données XML à partir d'un fichier Excel. Lorsqu'il existe des cartes XML dans un fichier Excel, exportez les données XML. Lorsqu'il n'y a pas de mappage XML dans le fichier Excel, convertissez le fichier Excel en fichier XML.
+- [PostWorkbookImportJson](operation/postworkbookimportjson) Importez un fichier de données JSON dans le classeur. Le fichier de données JSON peut être soit un fichier cloud, soit des données provenant d'un URI HTTP.
+- [PostWorkbookImportXML](operation/postworkbookimportxml) : Importez un fichier de données XML dans un fichier Excel. Le fichier de données XML peut être un fichier cloud ou des données provenant d'un URI HTTP.
+- [PostImportData](operation/postimportdata) : Importez les données dans le fichier Excel.
+- [PostWorkbookDataCleansing](operation/postworkbookdatacleansing) : Le nettoyage des données des feuilles de calcul est un processus de gestion des données utilisé pour identifier, corriger et supprimer les erreurs, les éléments incomplets, les doublons ou les inexactitudes dans les tableaux et les plages.
+- [Post-nettoyage des données](operation/postdatacleansing) : Le nettoyage des données des feuilles de calcul est un processus de gestion des données utilisé pour identifier, corriger et supprimer les erreurs, les éléments incomplets, les doublons ou les inexactitudes dans les tableaux et les plages.
+- [PostWorkbookDataDeduplication](operation/postworkbookdatadeduplication) : La déduplication des données des fichiers de feuilles de calcul est principalement utilisée pour éliminer les données en double dans les tableaux et les plages.
+- [PostDataDéduplication](operation/postdatadeduplication) : La déduplication des données des fichiers de feuilles de calcul est principalement utilisée pour éliminer les données en double dans les tableaux et les plages.
+- [PostWorkbookDataFill](operation/postworkbookdatafill) Le remplissage des données pour les fichiers de feuilles de calcul est principalement utilisé pour remplir des données vides dans des tableaux et des plages.
+- [PostDataFill](operation/postdatafill) Le remplissage des données pour les fichiers de feuilles de calcul est principalement utilisé pour remplir des données vides dans des tableaux et des plages.
+- [PostDeleteIncompleteRows](operation/postdeleteincompleterows) : La suppression des lignes incomplètes des fichiers de feuille de calcul est principalement utilisée pour éliminer les lignes incomplètes des tableaux et des plages.
+- [GetWorksheetHyperliens](operation/getworksheethyperlinks) : Récupérer les descriptions des hyperliens dans la feuille de calcul.
+- [GetWorksheetHyperlien](operation/getworksheethyperlink) : Récupérez la description du lien hypertexte par index dans la feuille de calcul.
+- [Supprimer la feuille de travailHyperlien](operation/deleteworksheethyperlink) : Supprimer le lien hypertexte par index dans la feuille de calcul.
+- [PostWorksheetHyperlien](operation/postworksheethyperlink) : Mettre à jour le lien hypertexte par index dans la feuille de calcul.
+- [PutWorksheetHyperlien](operation/putworksheethyperlink) : Ajouter un lien hypertexte dans la feuille de calcul.
+- [Supprimer la feuille de travailHyperliens](operation/deleteworksheethyperlinks) : supprimez tous les hyperliens dans la feuille de calcul.
+- [Post-assemblage](operation/postassemble) : Assemblez des fichiers de données avec des fichiers modèles pour générer des fichiers dans différents formats.
+- [PostCompresser](operation/postcompress) : Compressez les fichiers et générez des fichiers cibles dans différents formats, les formats de fichiers pris en charge incluent Xls, Xlsx, Xlsm, Xlsb, Ods et plus encore.
+- [Postfusion](operation/postmerge) : Fusionner les cellules dans la feuille de calcul.
+- [Post-split](operation/postsplit) : Divisez les fichiers de feuille de calcul Excel en fonction de feuilles de calcul et créez des fichiers de sortie dans différents formats.
+- [PostRecherche](operation/postsearch) : Recherchez le texte spécifié dans les fichiers Excel.
+- [PostRemplacer](operation/postreplace) : Remplacez le texte spécifié par le nouveau texte dans les fichiers Excel.
+- [PostImportation](operation/postimport) : Importez des données dans un fichier Excel et générez des fichiers de sortie dans différents formats.
+- [PostFiligrane](operation/postwatermark) : Ajoutez un filigrane de texte aux fichiers Excel et générez des fichiers de sortie dans différents formats.
+- [PostClearObjects](operation/postclearobjects) : Effacer les éléments internes des fichiers Excel et générer des fichiers de sortie dans différents formats.
+- [PostReverse](operation/postreverse) : Inversez les lignes ou les colonnes des fichiers Excel et créez des fichiers de sortie dans différents formats.
+- [Après réparation](operation/postrepair) : Réparez les fichiers anormaux et générez des fichiers dans différents formats.
+- [PostRotation](operation/postrotate) : faites pivoter les lignes, les colonnes ou d'autres objets dans les fichiers Excel et enregistrez-les dans différents formats.
+- [PostMétadonnées](operation/postmetadata) Mettez à jour les propriétés du document dans le fichier Excel et enregistrez-les sous différents formats.
+- [Obtenir les métadonnées](operation/getmetadata) : Obtenez les propriétés du document des cellules.
+- [Supprimer les métadonnées](operation/deletemetadata) : Supprimez les propriétés du document des cellules dans le fichier Excel et enregistrez-les dans différents formats.
+- [GetWorksheetListObjects](operation/getworksheetlistobjects) : Récupérez les descriptions des ListObjects dans la feuille de calcul.
+- [GetWorksheetListObject](operation/getworksheetlistobject) : Récupérez la description de l'objet de liste par index dans la feuille de calcul.
+- [PutWorksheetListObject](operation/putworksheetlistobject) : Ajoutez un ListObject dans la feuille de calcul.
+- [SupprimerWorksheetListObjects](operation/deleteworksheetlistobjects) : Supprimez les ListObjects dans la feuille de calcul.
+- [SupprimerWorksheetListObject](operation/deleteworksheetlistobject) : Supprimer l'objet de liste par index dans la feuille de calcul.
+- [PostWorksheetListObject](operation/postworksheetlistobject) : Mettre à jour l'objet de la liste par index dans la feuille de calcul.
+- [PostWorksheetListObjectConvertToRange](operation/postworksheetlistobjectconverttorange) : Convertir l'objet de liste en plage dans la feuille de calcul.
+- [PostWorksheetListObjectSummarizeWithPivotTable](operation/postworksheetlistobjectsummarizewithpivottable) : Créez un tableau croisé dynamique avec un objet de liste dans la feuille de calcul.
+- [PostWorksheetListObjectSortTable](operation/postworksheetlistobjectsorttable) Trier l'objet de la liste dans la feuille de calcul.
+- [PostWorksheetListObjectRemoveDuplicates](operation/postworksheetlistobjectremoveduplicates) : Supprimez les doublons dans l'objet de liste.
+- [PostWorksheetListObjectInsertSlicer](operation/postworksheetlistobjectinsertslicer) : Insérer un slicer pour l'objet de liste.
+- [PostWorksheetListColumn](operation/postworksheetlistcolumn) : Mettre à jour la colonne de liste dans l'objet de liste.
+- [PostWorksheetListColumnsTotal](operation/postworksheetlistcolumnstotal) : Mettre à jour le total des colonnes de la liste dans le tableau.
+- [GetWorksheetOleObjects](operation/getworksheetoleobjects) : Récupère les descriptions des objets OLE dans la feuille de calcul.
+- [GetWorksheetOleObject](operation/getworksheetoleobject) : récupère l'objet OLE dans un format spécifié dans la feuille de calcul.
+- [Supprimer la feuille de travailOleObjects](operation/deleteworksheetoleobjects) : Supprimez tous les objets OLE de la feuille de calcul.
+- [Supprimer la feuille de travailOleObject](operation/deleteworksheetoleobject) : supprime un objet OLE dans la feuille de calcul.
+- [PostUpdateWorksheetOleObject](operation/postupdateworksheetoleobject) : Mettre à jour un objet OLE dans la feuille de calcul.
+- [PutWorksheetOleObject](operation/putworksheetoleobject) : Ajoutez un objet OLE dans la feuille de calcul.
+- [ObtenirVerticalPageBreaks](operation/getverticalpagebreaks) : Récupérez les descriptions des sauts de page verticaux dans la feuille de calcul.
+- [Obtenir des sauts de page horizontaux](operation/gethorizontalpagebreaks) Récupérez les descriptions des sauts de page horizontaux dans la feuille de calcul.
+- [ObtenirVerticalPageBreak](operation/getverticalpagebreak) : Récupère une description de saut de page vertical dans la feuille de calcul.
+- [ObtenirHorizontalPageBreak](operation/gethorizontalpagebreak) : Récupère une description de saut de page horizontal dans la feuille de calcul.
+- [PutVerticalPageBreak](operation/putverticalpagebreak) : Ajoutez un saut de page vertical dans la feuille de calcul.
+- [PutHorizontalPageBreak](operation/puthorizontalpagebreak) : Ajoutez des sauts de page horizontaux dans la feuille de calcul.
+- [Supprimer les sauts de page verticaux](operation/deleteverticalpagebreaks) : Supprimez les sauts de page verticaux dans la feuille de calcul.
+- [Supprimer les sauts de page horizontaux](operation/deletehorizontalpagebreaks) : Supprimez les sauts de page horizontaux dans la feuille de calcul.
+- [Supprimer le saut de page vertical](operation/deleteverticalpagebreak) : supprime un saut de page vertical dans la feuille de calcul.
+- [Supprimer le saut de page horizontal](operation/deletehorizontalpagebreak) : supprime un saut de page horizontal dans la feuille de calcul.
+- [ObtenirPageSetup](operation/getpagesetup) : Récupérez la description de la mise en page dans la feuille de calcul.
+- [Configuration de la page](operation/postpagesetup) : Mettre à jour la mise en page dans la feuille de calcul.
+- [Supprimer l'en-tête du pied de page](operation/deleteheaderfooter) : Effacer l'en-tête et le pied de page de la feuille de calcul.
+- [ObtenirEn-Tête](operation/getheader) : Récupère la description de l’en-tête de page dans la feuille de calcul.
+- [En-tête de message](operation/postheader) Mettre à jour l'en-tête de la page dans la feuille de calcul.
+- [Obtenir le pied de page](operation/getfooter) : Récupère la description du pied de page dans la feuille de calcul.
+- [Pied de page](operation/postfooter) : Mettre à jour le pied de page dans la feuille de calcul.
+- [PostFitWideToPages](operation/postfitwidetopages) : Définissez l'échelle à laquelle la page s'adaptera en largeur une fois imprimée sur la feuille.
+- [PostFitTallToPages](operation/postfittalltopages) : Définissez l'échelle à laquelle la page s'ajustera en hauteur une fois imprimée sur la feuille.
+- [Obtenir des images de feuille de travail](operation/getworksheetpictures) : Récupérez les descriptions des images dans la feuille de calcul.
+- [GetWorksheetPictureWithFormat](operation/getworksheetpicturewithformat) : Récupérer une image par numéro dans la feuille de calcul.
+- [PutWorksheetAddPicture](operation/putworksheetaddpicture) : Ajoutez une nouvelle image dans la feuille de calcul.
+- [PostWorksheetImage](operation/postworksheetpicture) : Mettre à jour une image par index dans la feuille de calcul.
+- [Supprimer la feuille de travailImage](operation/deleteworksheetpicture) : Supprimez un objet image par index dans la feuille de calcul.
+- [Supprimer la feuille de travailPhotos](operation/deleteworksheetpictures) : Supprimez toutes les images de la feuille de calcul.
+- [GetWorksheetPivotTables](operation/getworksheetpivottables) : Récupérez les descriptions des tableaux croisés dynamiques dans la feuille de calcul.
+- [GetWorksheetPivotTable](operation/getworksheetpivottable) Récupérez les informations du tableau croisé dynamique par index dans la feuille de calcul.
+- [GetPivotTableField](operation/getpivottablefield) : Récupérez les descriptions des champs pivots dans le tableau croisé dynamique.
+- [GetWorksheetPivotTableFilters](operation/getworksheetpivottablefilters) : Obtient les filtres de tableau croisé dynamique dans la feuille de calcul.
+- [GetWorksheetPivotTableFilter](operation/getworksheetpivottablefilter) : Récupérez les filtres du tableau croisé dynamique dans la feuille de calcul.
+- [PutWorksheetPivotTable](operation/putworksheetpivottable) : Ajoutez un tableau croisé dynamique dans la feuille de calcul.
+- [PutPivotTableField](operation/putpivottablefield) : Ajoutez un champ pivot dans le tableau croisé dynamique.
+- [PutWorksheetPivotTableFilter](operation/putworksheetpivottablefilter) : Ajoutez un filtre pivot au tableau croisé dynamique.
+- [PostPivotTableFieldHideItem](operation/postpivottablefieldhideitem) : masquer un élément de champ pivot dans le tableau croisé dynamique.
+- [PostPivotTableFieldMoveTo](operation/postpivottablefieldmoveto) : Déplacer un champ pivot dans le tableau croisé dynamique.
+- [PostPivotTableCellStyle](operation/postpivottablecellstyle) : Mettez à jour le style de cellule dans le tableau croisé dynamique.
+- [PostPivotTableStyle](operation/postpivottablestyle) : Mettre à jour le style dans le tableau croisé dynamique.
+- [PostPivotTableUpdatePivotFields](operation/postpivottableupdatepivotfields) : Mettez à jour les champs croisés dans le tableau croisé dynamique.
+- [PostPivotTableUpdatePivotField](operation/postpivottableupdatepivotfield) : Mettre à jour le champ pivot dans le tableau croisé dynamique.
+- [PostWorksheetPivotTableCalculate](operation/postworksheetpivottablecalculate) : Calcule les données du tableau croisé dynamique en cellules.
+- [PostWorksheetPivotTableMove](operation/postworksheetpivottablemove) : Déplacer le tableau croisé dynamique dans la feuille de calcul.
+- [Supprimer la feuille de travail, les tableaux croisés dynamiques](operation/deleteworksheetpivottables) : Supprimez les tableaux croisés dynamiques de la feuille de calcul.
+- [Supprimer la feuille de travailPivotTable](operation/deleteworksheetpivottable) : Supprimez le tableau croisé dynamique par index dans la feuille de calcul.
+- [SupprimerPivotTableField](operation/deletepivottablefield) : Supprimez un champ pivot dans le tableau croisé dynamique.
+- [Supprimer la feuille de travailPivotTableFilters](operation/deleteworksheetpivottablefilters) : Supprimez tous les filtres pivots du tableau croisé dynamique.
+- [Supprimer la feuille de travailPivotTableFilter](operation/deleteworksheetpivottablefilter) : Supprimez un filtre pivot dans le tableau croisé dynamique.
+- [GetDocumentProperties](operation/getdocumentproperties) : Récupérer les descriptions des propriétés du fichier Excel.
+- [PutDocumentProperty](operation/putdocumentproperty) : Définissez ou ajoutez une propriété Excel.
+- [ObtenirDocumentProperty](operation/getdocumentproperty) : Obtenez la propriété Excel par son nom.
+- [Supprimer la propriété du document](operation/deletedocumentproperty) : Supprimer une propriété Excel.
+- [Supprimer les propriétés du document](operation/deletedocumentproperties) : supprimez toutes les propriétés du document personnalisé et réinitialisez celles intégrées.
+- [PostDigitalSignature](operation/postdigitalsignature) : Excel fichier signature numérique.
+- [PostEncryptWorkbook](operation/postencryptworkbook) : Excel Cryptage.
+- [SupprimerDecryptWorkbook](operation/deletedecryptworkbook) : Excel décryptage des fichiers.
+- [PostProtectWorkbook](operation/postprotectworkbook) : Excel protection.
+- [SupprimerUnProtectWorkbook](operation/deleteunprotectworkbook) : Excel déprotection.
+- [PutDocumentProtectFromChanges](operation/putdocumentprotectfromchanges) : Excel protection en écriture des fichiers.
+- [Supprimer le document UnProtectFromChanges](operation/deletedocumentunprotectfromchanges) : Excel fichier annule la protection en écriture.
+- [PostDéverrouillage](operation/postunlock) : Déverrouillez les fichiers Excel.
+- [Post-verrouillage](operation/postlock) : Verrouillez les fichiers Excel.
+- [PostProtect](operation/postprotect) : Excel cryptage des fichiers.
+- [PostWorksheetCellsRangesCopie](operation/postworksheetcellsrangescopy) : copiez le contenu de la plage source vers la plage de destination dans la feuille de calcul.
+- [PostWorksheetCellsRangeMerge](operation/postworksheetcellsrangemerge) : Fusionner une plage de cellules en une seule cellule.
+- [PostWorksheetCellsRangeUnMerge](operation/postworksheetcellsrangeunmerge) : Annulez la fusion des cellules fusionnées dans cette plage.
+- [PostWorksheetCellsRangeStyle](operation/postworksheetcellsrangestyle) : définit le style pour la plage spécifiée.
+- [GetWorksheetCellsRangeValue](operation/getworksheetcellsrangevalue) récupère les valeurs des cellules dans la plage spécifiée.
+- [PostWorksheetCellsRangeValue](operation/postworksheetcellsrangevalue) : Attribuez une valeur à la plage ; si nécessaire, la valeur sera convertie en un autre type de données et le format numérique de la cellule sera réinitialisé.
+- [PostWorksheetCellsRangeMoveTo](operation/postworksheetcellsrangemoveto) : déplace la plage actuelle vers la plage de destination.
+- [PostWorksheetCellsRangeSort](operation/postworksheetcellsrangesort) : effectuez un tri des données autour d'une plage de cellules.
+- [PostWorksheetCellsRangeOutlineBorder](operation/postworksheetcellsrangeoutlineborder) : Appliquez une bordure de contour autour d’une plage de cellules.
+- [PostWorksheetCellsRangeColumnWidth](operation/postworksheetcellsrangecolumnwidth) : définit la largeur de colonne de la plage spécifiée.
+- [PostWorksheetCellsRangeRowHeight](operation/postworksheetcellsrangerowheight) : Définit la hauteur de ligne de la plage.
+- [PutWorksheetCellsRange](operation/putworksheetcellsrange) : Insérez une plage de cellules et décalez les cellules existantes en fonction de l'option de décalage spécifiée.
+- [SupprimerWorksheetCellsRange](operation/deleteworksheetcellsrange) : supprime une plage de cellules et décale les cellules existantes en fonction de l'option de décalage spécifiée.
+- [ObtenirWorksheetShapes](operation/getworksheetshapes) Récupérez les descriptions des formes dans la feuille de calcul.
+- [Obtenir la forme de la feuille de travail](operation/getworksheetshape) : Récupère la description de la forme dans la feuille de calcul.
+- [PutWorksheetShape](operation/putworksheetshape) : Ajoutez une forme dans la feuille de calcul.
+- [Supprimer les formes de feuille de calcul](operation/deleteworksheetshapes) : Supprimez toutes les formes de la feuille de calcul.
+- [Supprimer la forme de la feuille de calcul](operation/deleteworksheetshape) : supprime une forme dans la feuille de calcul.
+- [PostWorksheetShape](operation/postworksheetshape) : met à jour une forme dans la feuille de calcul.
+- [PostWorksheetGroupShape](operation/postworksheetgroupshape) : Regroupez les formes dans la feuille de calcul.
+- [PostWorksheetUngroupShape](operation/postworksheetungroupshape) : Dissocier les formes dans la feuille de calcul.
+- [GetWorksheetSparklineGroups](operation/getworksheetsparklinegroups) : Récupérez les descriptions des groupes sparkline dans la feuille de calcul.
+- [GetWorksheetSparklineGroup](operation/getworksheetsparklinegroup) : Récupérez la description d’un groupe sparkline dans la feuille de calcul.
+- [Supprimer la feuille de travailSparklineGroups](operation/deleteworksheetsparklinegroups) : Supprimez les groupes sparkline dans la feuille de calcul.
+- [Supprimer la feuille de travail SparklineGroup](operation/deleteworksheetsparklinegroup) : Supprimez un groupe de sparklines dans la feuille de calcul.
+- [PutWorksheetSparklineGroup](operation/putworksheetsparklinegroup) : Ajoutez un groupe sparkline dans la feuille de calcul.
+- [PostWorksheetSparklineGroup](operation/postworksheetsparklinegroup) : Mettez à jour un groupe sparkline dans la feuille de calcul.
+- [PostExécutionTâche](operation/postruntask) Exécuter des tâches.
+- [GetWorkbookDefaultStyle](operation/getworkbookdefaultstyle) : Récupère la description du style par défaut du classeur.
+- [GetWorkbookTextItems](operation/getworkbooktextitems) : Récupère les éléments de texte dans le classeur.
+- [GetWorkbookNames](operation/getworkbooknames) : Récupère les plages nommées dans le classeur.
+- [PutWorkbookName](operation/putworkbookname) : Définissez un nouveau nom dans le classeur.
+- [ObtenirWorkbookName](operation/getworkbookname) : Récupère la description d’une plage nommée dans le classeur.
+- [PostWorkbookName](operation/postworkbookname) : Mettez à jour une plage nommée dans le classeur.
+- [GetWorkbookNameValue](operation/getworkbooknamevalue) : récupère la valeur d'une plage nommée dans le classeur.
+- [Supprimer les noms de classeurs](operation/deleteworkbooknames) : Supprimez toutes les plages nommées dans le classeur.
+- [Supprimer le nom du classeur](operation/deleteworkbookname) : supprime une plage nommée dans le classeur.
+- [PostWorkbooksFusion](operation/postworkbooksmerge) : fusionner un classeur dans le classeur existant.
+- [PostWorkbooksTextSearch](operation/postworkbookstextsearch) : Rechercher du texte dans le classeur.
+- [PostWorkbookTextReplace](operation/postworkbooktextreplace) : Remplace le texte dans le classeur.
+- [PostWorkbookGetSmartMarkerResult](operation/postworkbookgetsmartmarkerresult) : Traitement intelligent des marqueurs.
+- [PutWorkbookCréer](operation/putworkbookcreate) : Créez un nouveau classeur en utilisant différentes méthodes.
+- [PostWorkbookSplit](operation/postworkbooksplit) divisez le classeur avec un format spécifique.
+- [PostWorkbookCalculateFormule](operation/postworkbookcalculateformula) : Calculez toutes les formules du classeur.
+- [PostAutofitWorkbookRows](operation/postautofitworkbookrows) : Ajustement automatique des lignes dans le classeur.
+- [PostAutofitWorkbookColumns](operation/postautofitworkbookcolumns) : Ajustement automatique des colonnes dans le classeur.
+- [GetWorkbookSettings](operation/getworkbooksettings) : récupère les descriptions des paramètres du classeur.
+- [Paramètres post-classeur](operation/postworkbooksettings) : Mettre à jour le paramètre dans le classeur.
+- [PutWorkbookContexte](operation/putworkbookbackground) : Définir l’arrière-plan dans le classeur.
+- [Supprimer l'arrière-plan du classeur](operation/deleteworkbookbackground) : Supprimer l’arrière-plan du classeur.
+- [PutWorkbookWaterMarker](operation/putworkbookwatermarker) : Placez le marqueur d'eau dans le classeur.
+- [ObtenirPageCount](operation/getpagecount) : Obtenez le nombre de pages dans le classeur.
+- [Obtenir des feuilles de travail](operation/getworksheets) : Récupérer la description des feuilles de calcul d'un classeur.
+- [GetWorksheetWithFormat](operation/getworksheetwithformat) : récupère la feuille de calcul dans un format spécifié à partir du classeur.
+- [Feuille de calcul PutChangeVisibility](operation/putchangevisibilityworksheet) : modifier la visibilité de la feuille de calcul dans le classeur.
+- [PutActiveWorksheet](operation/putactiveworksheet) Définissez l’index de la feuille de calcul active dans le classeur.
+- [PutInsertNewWorksheet](operation/putinsertnewworksheet) : Insérez une nouvelle feuille de calcul dans le classeur.
+- [PutAddNewWorksheet](operation/putaddnewworksheet) : Ajouter une nouvelle feuille de calcul dans le classeur.
+- [Supprimer la feuille de travail](operation/deleteworksheet) : Supprimer une feuille de calcul dans le classeur.
+- [Supprimer les feuilles de travail](operation/deleteworksheets) : Supprimez les feuilles de calcul correspondantes dans le classeur.
+- [PostMoveWorksheet](operation/postmoveworksheet) : Déplacer la feuille de calcul dans le classeur.
+- [Feuille de travail PutProtect](operation/putprotectworksheet) : Protéger la feuille de calcul.
+- [SupprimerUnprotectWorksheet](operation/deleteunprotectworksheet) : Déprotéger la feuille de calcul.
+- [GetWorksheetTextItems](operation/getworksheettextitems) : Récupère les éléments de texte dans la feuille de calcul.
+- [GetWorksheetComments](operation/getworksheetcomments) : Récupérer la description des commentaires dans la feuille de calcul.
+- [GetWorksheetComment](operation/getworksheetcomment) : Récupère la description du commentaire dans la feuille de calcul.
+- [PutWorksheetComment](operation/putworksheetcomment) : Ajoutez un commentaire de cellule dans la feuille de calcul.
+- [PostWorksheetComment](operation/postworksheetcomment) : Mettre à jour le commentaire de la cellule dans la feuille de calcul.
+- [Supprimer la feuille de travailComment](operation/deleteworksheetcomment) : Supprimer le commentaire de cellule dans la feuille de calcul.
+- [Supprimer les commentaires de la feuille de travail](operation/deleteworksheetcomments) Supprimez tous les commentaires de la feuille de calcul.
+- [GetWorksheetMergedCells](operation/getworksheetmergedcells) : Obtient les cellules fusionnées de la feuille de calcul.
+- [GetWorksheetMergedCell](operation/getworksheetmergedcell) : Récupère la description d’une cellule fusionnée par son index dans la feuille de calcul.
+- [GetWorksheetCalculateFormula](operation/getworksheetcalculateformula) : Calculez la formule dans la feuille de calcul.
+- [PostWorksheetCalculateFormula](operation/postworksheetcalculateformula) : Calculez la formule dans la feuille de calcul.
+- [PostWorksheetTextSearch](operation/postworksheettextsearch) : Rechercher du texte dans la feuille de calcul.
+- [PostWorksheetTextReplace](operation/postworksheettextreplace) : Remplacez l'ancien texte par le nouveau texte dans la feuille de calcul.
+- [PostWorksheetRangeSort](operation/postworksheetrangesort) : trier une plage dans la feuille de calcul.
+- [PostAutofitWorksheetRow](operation/postautofitworksheetrow) : Ajuster automatiquement une ligne dans la feuille de calcul.
+- [PostAutofitWorksheetRows](operation/postautofitworksheetrows) : Ajustement automatique des lignes dans la feuille de calcul.
+- [PostAutofitWorksheetColumns](operation/postautofitworksheetcolumns) : Ajustement automatique des colonnes dans la feuille de calcul.
+- [PutWorksheetArrière-plan](operation/putworksheetbackground) : Définissez l’image d’arrière-plan dans la feuille de calcul.
+- [Supprimer la feuille de travail](operation/deleteworksheetbackground) : Supprimez l’image d’arrière-plan dans la feuille de calcul.
+- [PutWorksheetFreezePanes](operation/putworksheetfreezepanes) : Définissez les volets figés dans la feuille de calcul.
+- [Supprimer la feuille de travailFreezePanes](operation/deleteworksheetfreezepanes) : Dégelez les volets de la feuille de calcul.
+- [PostCopieFeuille de travail](operation/postcopyworksheet) : Copiez le contenu et les formats d'une autre feuille de calcul.
+- [PostRenameWorksheet](operation/postrenameworksheet) : Renommer la feuille de calcul dans le classeur.
+- [PostUpdateWorksheetProperty](operation/postupdateworksheetproperty) : mettre à jour les propriétés de la feuille de calcul dans le classeur.
+- [ObtenirNamedRanges](operation/getnamedranges) : Récupérer les descriptions des plages dans les feuilles de calcul.
+- [ObtenirNamedRangeValue](operation/getnamedrangevalue) : Récupère les valeurs dans la plage.
+- [PostMise à jourFeuille de travailZoom](operation/postupdateworksheetzoom) : Mettez à jour le pourcentage de mise à l’échelle dans la feuille de calcul. Il devrait être compris entre 10 et 400.
+- [GetWorksheetPageCount](operation/getworksheetpagecount) : Obtenez le nombre de pages dans la feuille de calcul.
+- [GetWorksheetValidations](operation/getworksheetvalidations) : Récupérer les descriptions des validations dans la feuille de calcul.
+- [GetWorksheetValidation](operation/getworksheetvalidation) : Récupérer une validation par son index dans la feuille de calcul.
+- [PutWorksheetValidation](operation/putworksheetvalidation) : Ajoutez une validation à l'index dans la feuille de calcul.
+- [PostWorksheetValidation](operation/postworksheetvalidation) : Mettre à jour une validation par index dans la feuille de calcul.
+- [Supprimer la feuille de travailValidation](operation/deleteworksheetvalidation) Supprime une validation par index dans la feuille de calcul.
+- [Supprimer la feuille de travailValidations](operation/deleteworksheetvalidations) : Supprimez toutes les validations dans la feuille de calcul.
+
+# Aspose.Cells Nuage API Modèle
+
+- [ObjetExistsExtensions](model/objectexistsextensions)  :   
+- [Version du fichier](model/fileversion)  :   
+- [Fichier de stockage](model/storagefile) : Informations sur le fichier ou le dossier
+- [Fichier de stockage GoogleDrive](model/googledrivestoragefile)  :   
+- [Au dessus de la moyenne](model/aboveaverage) Décrivez la règle de formatage conditionnel AboveAverage. Cette règle de mise en forme conditionnelle met en évidence les cellules supérieures ou inférieures à la moyenne pour toutes les valeurs de la plage.
+- [RésuméCalculMoteur](model/abstractcalculationengine) : Représente le moteur de calcul personnalisé de l'utilisateur pour étendre le moteur de calcul par défaut de Aspose.Cells.
+- [RésuméCalculMoniteur](model/abstractcalculationmonitor) : Moniteur permettant à l'utilisateur de suivre la progression du calcul de la formule.
+- [Filtre automatique](model/autofilter)  :   
+- [Options d'ajustement automatique](model/autofitteroptions)  :   
+- [Frontière](model/border)  :   
+- [Options de calcul](model/calculationoptions)  :   
+- [Cellule](model/cell)  :   
+- [ZoneCellule](model/cellarea)  :   
+- [Cells](model/cells)  :   
+- [CellulesCloudFileInfo](model/cellscloudfileinfo) : Cells Description des informations sur le fichier Cloud.
+- [CouleurCellules](model/cellscolor)  :   
+- [CellulesDocumentPropriétés](model/cellsdocumentproperties) : Excel biens
+- [CellulesDocumentPropriété](model/cellsdocumentproperty) : Cells propriété du document.
+- [Couleur](model/color) : Couleur.
+- [FiltreCouleur](model/colorfilter) : Filtre de couleur.
+- [Échelle de couleurs](model/colorscale) : Décrivez la règle de mise en forme conditionnelle ColorScale. Cette règle de mise en forme conditionnelle crée une échelle de couleurs graduée sur les cellules.
+- [Colonne](model/column)  :   
+- [Colonnes](model/columns)  :   
+- [Commentaire](model/comment)  :   
+- [commentaires](model/comments)  :   
+- [Mise en forme conditionnelle](model/conditionalformatting)  :   
+- [Icône de mise en forme conditionnelle](model/conditionalformattingicon)  :   
+- [Formatages conditionnels](model/conditionalformattings)  :   
+- [Valeur de formatage conditionnel](model/conditionalformattingvalue)  :   
+- [Options de copie](model/copyoptions) : Représente les options de copie.
+- [CritèresMultipleFilter](model/criteriamultiplefilter)  :   
+- [Filtre personnalisé](model/customfilter)  :   
+- [Barre de données](model/databar) : Décrivez la règle de formatage conditionnel DataBar. Cette règle de mise en forme conditionnelle affiche une barre de données graduée dans la plage de cellules.
+- [BordureBarredeDonnées](model/databarborder)  :   
+- [Nettoyage des données](model/datacleansing) : Nettoyage des données
+- [Valeur de remplissage de colonne de données](model/datacolumnfillvalue)  :   
+- [Remplissage de données](model/datafill)  :   
+- [Valeur de remplissage de données](model/datafillvalue)  :   
+- [Trieur de données](model/datasorter) : Description récapitulative de DataSorter.
+- [Clé de tri de données](model/datasorterkey) : Représente la clé du trieur de données.
+- [DateTimeGroupItem](model/datetimegroupitem)  :   
+- [Région de déduplication](model/deduplicationregion)  :   
+- [FiltreDynamique](model/dynamicfilter)  :   
+- [Informations sur le fichier](model/fileinfo) : Informations sur le fichier
+- [FichiersRésultat](model/filesresult)  :   
+- [FiltrerColonne](model/filtercolumn)  :   
+- [Police de caractère](model/font)  :   
+- [Paramètres de police](model/fontsetting)  :   
+- [FormatCondition](model/formatcondition)  :   
+- [FormuleFormatCondition](model/formulaformatcondition)  :   
+- [Paramètres de formule](model/formulasettings) : Paramètres des formules et du calcul.
+- [Paramètres de mondialisation](model/globalizationsettings) : Représente les paramètres de globalisation.
+- [Saut de page horizontal](model/horizontalpagebreak)  :   
+- [Sauts de page horizontaux](model/horizontalpagebreaks)  :   
+- [Lien hypertexte](model/hyperlink)  :   
+- [Liens hypertextes](model/hyperlinks)  :   
+- [IcôneFiltre](model/iconfilter)  :   
+- [Jeu d'icônes](model/iconset) Décrivez la règle de mise en forme conditionnelle IconSet. Cette règle de mise en forme conditionnelle applique les icônes aux cellules en fonction de leurs valeurs.
+- [Lien](model/link)  :   
+- [LienÉlément](model/linkelement)  :   
+- [Options de chargement](model/loadoptions)  :   
+- [Cellule fusionnée](model/mergedcell)  :   
+- [Cellules fusionnées](model/mergedcells)  :   
+- [Filtre multiple](model/multiplefilter)  :   
+- [Filtres multiples](model/multiplefilters)  :   
+- [Nom](model/name)  :   
+- [Des noms](model/names)  :   
+- [Format de barre négative](model/negativebarformat) : représente les paramètres de couleur des barres de données pour les valeurs négatives définies par une règle de mise en forme conditionnelle de barre de données.
+- [Section de page](model/pagesection)  :   
+- [Mise en page](model/pagesetup)  :   
+- [Options de collage](model/pasteoptions) : Représente les options spéciales de collage.
+- [Options de sécurité Pdf](model/pdfsecurityoptions)  :   
+- [protection](model/protection) : Représente les différents types d’options de protection disponibles pour une feuille de calcul.
+- [Paramètre de feuille de protection](model/protectsheetparameter)  :   
+- [Table de requête](model/querytable) : Représente les informations de QueryTable.
+- [Gamme](model/range)  :   
+- [Gammes](model/ranges)  :   
+- [Rangée](model/row)  :   
+- [Lignes](model/rows)  :   
+- [Enregistrer le résultat](model/saveresult)  :   
+- [Options de sauvegarde paginées](model/paginatedsaveoptions) : Représente les options de pagination.
+- [Valeur unique](model/singlevalue)  :   
+- [Clé de tri](model/sortkey)  :   
+- [Résultat fractionné](model/splitresult)  :   
+- [SplitResultDocument](model/splitresultdocument)  :   
+- [Style](model/style)  :   
+- [StyleFormatCondition](model/styleformatcondition)  :   
+- [modes](model/styles)  :   
+- [ConditionFormatTexte](model/textformatcondition)  :   
+- [Élément de texte](model/textitem)  :   
+- [Éléments de texte](model/textitems)  :   
+- [Options de texte](model/textoptions)  :   
+- [ThèmeCouleur](model/themecolor)  :   
+- [TimePeriodFormatCondition](model/timeperiodformatcondition)  :   
+- [Top 10](model/top10) Décrivez la règle de mise en forme conditionnelle Top10. Cette règle de mise en forme conditionnelle met en évidence les cellules dont les valeurs se situent dans la parenthèse N supérieure ou N inférieure, comme spécifié.
+- [Top10Filtre](model/top10filter)  :   
+- [Validation](model/validation)  :   
+- [Validations](model/validations)  :   
+- [Saut de page vertical](model/verticalpagebreak)  :   
+- [Sauts de page verticaux](model/verticalpagebreaks)  :   
+- [Cahier d'exercices](model/workbook)  :   
+- [Paramètres du classeur](model/workbooksettings)  :   
+- [Feuille de travail](model/worksheet)  :   
+- [Des feuilles de calcul](model/worksheets)  :   
+- [Protection en écriture](model/writeprotection) : Spécifie les paramètres de protection en écriture pour un classeur.
+- [Liaison de données XML](model/xmldatabinding) : représente les informations de liaison de données XML.
+- [Carte XML](model/xmlmap) : Représente les informations de la carte XML.
+- [CellsObjectOperateTaskParameter](model/cellsobjectoperatetaskparameter)  :   
+- [ConvertTaskParameter](model/converttaskparameter)  :   
+- [ConvertWorksheetTaskParameter](model/convertworksheettaskparameter)  :   
+- [FichierSource](model/filesource)  :   
+- [TypeFichierSource](model/filesourcetype)  :   
+- [Paramètre de tâche d'importation de données](model/importdatataskparameter)  :   
+- [RésultatDestination](model/resultdestination)  :   
+- [Type de destination du résultat](model/resultdestinationtype)  :   
+- [Source des résultats](model/resultsource)  :   
+- [Enregistrer les fichiers dans le résultat Cloud](model/savefilestocloudresult)  :   
+- [SaveResultTaskParamètre](model/saveresulttaskparameter)  :   
+- [Paramètres de tâche SmartMarker](model/smartmarkertaskparameter)  :   
+- [Paramètre de tâche SplitWorkbook](model/splitworkbooktaskparameter)  :   
+- [Données de tâche](model/taskdata)  :   
+- [Description de la tâche](model/taskdescription)  :   
+- [Paramètre de tâche](model/taskparameter)  :   
+- [Paramètre de résultat de tâche](model/taskresultparameter)  :   
+- [Résultat d'exécution de la tâche](model/taskrunresult)  :   
+- [Type de tâche](model/tasktype)  :   
+- [ChartOperateParamètre](model/chartoperateparameter)  :   
+- [ListObjectOperateParameter](model/listobjectoperateparameter)  :   
+- [ExploiterObjet](model/operateobject)  :   
+- [OperateObjectPosition](model/operateobjectposition)  :   
+- [OperateObjectType](model/operateobjecttype)  :   
+- [Paramètre de fonctionnement](model/operateparameter)  :   
+- [Type d'opération](model/operatetype)  :   
+- [PageBreakOperateParameter](model/pagebreakoperateparameter)  :   
+- [PageSetupOperateParameter](model/pagesetupoperateparameter)  :   
+- [PivotTableOperateParameter](model/pivottableoperateparameter)  :   
+- [ShapeOperateParameter](model/shapeoperateparameter)  :   
+- [WorkbookOperateParameter](model/workbookoperateparameter)  :   
+- [WorkbookSettingsOperateParameter](model/workbooksettingsoperateparameter)  :   
+- [Feuille de calculOperateParameter](model/worksheetoperateparameter)  :   
+- [ListeColonne](model/listcolumn)  :   
+- [ObjetListe](model/listobject)  :   
+- [ListeObjets](model/listobjects)  :   
+- [PivotGlobalizationSettings](model/pivotglobalizationsettings) : Représente les paramètres de globalisation pour les tableaux croisés dynamiques.
+- [DifSaveOptions](model/difsaveoptions) : Représente les options d’enregistrement du fichier dif.
+- [DocxSaveOptions](model/docxsaveoptions) : Représente les options d’enregistrement du fichier .docx.
+- [HtmlSaveOptions](model/htmlsaveoptions) : Représente les options d’enregistrement du fichier .html.
+- [Options d'enregistrement d'image](model/imagesaveoptions) : Représente les options d’enregistrement du fichier image.
+- [JsonSaveOptions](model/jsonsaveoptions) Représente les options d'enregistrement du fichier .json.
+- [MarkdownSaveOptions](model/markdownsaveoptions) : Représente les options d’enregistrement du fichier .md.
+- [MHtmlSaveOptions](model/mhtmlsaveoptions) : Représente les options d’enregistrement du fichier .mhtml.
+- [CotesEnregistrerOptions](model/odssaveoptions) : Représente les options d’enregistrement du fichier .ods.
+- [OoxmlSaveOptions](model/ooxmlsaveoptions) : Représente les options d'enregistrement du fichier ooxml.
+- [Options d'enregistrement PDF](model/pdfsaveoptions) : Représente les options d’enregistrement du fichier pdf.
+- [PptxSaveOptions](model/pptxsaveoptions) : Représente les options d'enregistrement du fichier pptx.
+- [Options d'enregistrement](model/saveoptions) : Représente toutes les options de sauvegarde
+- [Feuille de calculML2003Options d'enregistrement](model/spreadsheetml2003saveoptions) : Représente les options d’enregistrement du fichier .xml.
+- [SQLScriptSaveOptions](model/sqlscriptsaveoptions) : Représente les options d’enregistrement du fichier .sql.
+- [SvgEnregistrerOptions](model/svgsaveoptions) : Représente les options d’enregistrement du fichier .svg.
+- [OptionsEnregistrementTexte](model/txtsaveoptions) : Représente les options d'enregistrement du fichier .txt.
+- [XlsbSaveOptions](model/xlsbsaveoptions) : Représente les options d’enregistrement du fichier .xlsb.
+- [XlsSaveOptions](model/xlssaveoptions) : Représente les options d’enregistrement du fichier .xls.
+- [XpsSaveOptions](model/xpssaveoptions) : Représente les options d’enregistrement du fichier .xps.
+- [AnalyseExcelResponse](model/analyzeexcelresponse)  :   
+- [ArcShapeRéponse](model/arcshaperesponse)  :   
+- [Réponse au filtre automatique](model/autofilterresponse)  :   
+- [Réponse de forme automatique](model/autoshaperesponse)  :   
+- [FormesAutoRéponse](model/autoshapesresponse)  :   
+- [Réponse de l'Axe](model/axisresponse)  :   
+- [Réponse à la frontière](model/borderresponse)  :   
+- [BoutonRéponse](model/buttonresponse)  :   
+- [CalculerFormuleRéponse](model/calculateformularesponse)  :   
+- [Réponse cellulaire](model/cellresponse)  :   
+- [CellsCloudFileInfoRéponse](model/cellscloudfileinforesponse)  :   
+- [CellulesCloudRéponse](model/cellscloudresponse)  :   
+- [CellulesDocumentPropriétésRéponse](model/cellsdocumentpropertiesresponse)  :   
+- [CellulesDocumentPropriétéRéponse](model/cellsdocumentpropertyresponse)  :   
+- [CellulesDessinRéponse](model/cellsdrawingresponse)  :   
+- [CellulesRéponse](model/cellsresponse)  :   
+- [ChartAreaRéponse](model/chartarearesponse)  :   
+- [ChartDataTableRéponse](model/chartdatatableresponse)  :   
+- [ChartPointRéponse](model/chartpointresponse)  :   
+- [ChartPointsRéponse](model/chartpointsresponse)  :   
+- [GraphiqueRéponse](model/chartresponse)  :   
+- [GraphiquesRéponse](model/chartsresponse)  :   
+- [CheckBoxRéponse](model/checkboxresponse)  :   
+- [ColonneRéponse](model/columnresponse)  :   
+- [ColonnesRéponse](model/columnsresponse)  :   
+- [Réponse ComboBox](model/comboboxresponse)  :   
+- [CommentaireRéponse](model/commentresponse)  :   
+- [CommentaireFormeRéponse](model/commentshaperesponse)  :   
+- [CommentairesRéponse](model/commentsresponse)  :   
+- [Réponse de mise en forme conditionnelle](model/conditionalformattingresponse)  :   
+- [RéponseConditionnelleFormatage](model/conditionalformattingsresponse)  :   
+- [Réponse DataLabels](model/datalabelsresponse)  :   
+- [DisplayUnitLabelResponse](model/displayunitlabelresponse)  :   
+- [DropBarsRéponse](model/dropbarsresponse)  :   
+- [Réponse de la barre d'erreur](model/errorbarresponse)  :   
+- [FillFormatRéponse](model/fillformatresponse)  :   
+- [RechercherRéponse](model/findresponse)  :   
+- [Réponse au sol](model/floorresponse)  :   
+- [FormulaireRéponse](model/formresponse)  :   
+- [FormulairesRéponse](model/formsresponse)  :   
+- [GroupBoxRéponse](model/groupboxresponse)  :   
+- [Réponse de saut de page horizontale](model/horizontalpagebreakresponse)  :   
+- [Réponse aux sauts de page horizontaux](model/horizontalpagebreaksresponse)  :   
+- [HyperlienRéponse](model/hyperlinkresponse)  :   
+- [HyperliensRéponse](model/hyperlinksresponse)  :   
+- [ÉtiquetteRéponse](model/labelresponse)  :   
+- [LégendeEntriesResponse](model/legendentriesresponse)  :   
+- [LégendeEntréeRéponse](model/legendentryresponse)  :   
+- [LégendeRéponse](model/legendresponse)  :   
+- [Réponse en ligne](model/lineresponse)  :   
+- [RéponseFormeLigne](model/lineshaperesponse)  :   
+- [ListBoxRéponse](model/listboxresponse)  :   
+- [ListeObjetRéponse](model/listobjectresponse)  :   
+- [ListeObjetsRéponse](model/listobjectsresponse)  :   
+- [Réponse de cellule fusionnée](model/mergedcellresponse)  :   
+- [RéponseCellulesMergées](model/mergedcellsresponse)  :   
+- [NomRéponse](model/nameresponse)  :   
+- [NomsRéponse](model/namesresponse)  :   
+- [Réponse OleObject](model/oleobjectresponse)  :   
+- [Réponse OleObjects](model/oleobjectsresponse)  :   
+- [Réponse Ovale](model/ovalresponse)  :   
+- [PageSectionsRéponse](model/pagesectionsresponse)  :   
+- [PageSetupRéponse](model/pagesetupresponse)  :   
+- [ImageRéponse](model/pictureresponse)  :   
+- [ImagesRéponse](model/picturesresponse)  :   
+- [PivotFieldRéponse](model/pivotfieldresponse)  :   
+- [PivotFilterRéponse](model/pivotfilterresponse)  :   
+- [PivotFiltersRéponse](model/pivotfiltersresponse)  :   
+- [Réponse de tableau croisé dynamique](model/pivottableresponse)  :   
+- [Tableaux croisés dynamiquesRéponse](model/pivottablesresponse)  :   
+- [RéponsePlotArea](model/plotarearesponse)  :   
+- [RadioButtonRéponse](model/radiobuttonresponse)  :   
+- [PlageRéponse](model/rangeresponse)  :   
+- [PlagesRéponse](model/rangesresponse)  :   
+- [RangeValueRéponse](model/rangevalueresponse)  :   
+- [RéponseRectangleForme](model/rectangleshaperesponse)  :   
+- [LigneRéponse](model/rowresponse)  :   
+- [LignesRéponse](model/rowsresponse)  :   
+- [SaveFilesToCloudResponse](model/savefilestocloudresultresponse)  :   
+- [EnregistrerRéponse](model/saveresponse)  :   
+- [Réponse de la barre de défilement](model/scrollbarresponse)  :   
+- [SériesRéponse](model/seriesesresponse)  :   
+- [SérieRéponse](model/seriesresponse)  :   
+- [FormeRéponse](model/shaperesponse)  :   
+- [FormesRéponse](model/shapesresponse)  :   
+- [Réponse à valeur unique](model/singlevalueresponse)  :   
+- [Réponse SparklineGroup](model/sparklinegroupresponse)  :   
+- [SparklineGroupsRéponse](model/sparklinegroupsresponse)  :   
+- [SpinnerRéponse](model/spinnerresponse)  :   
+- [RéponseRésultatSplit](model/splitresultresponse)  :   
+- [StyleRéponse](model/styleresponse)  :   
+- [TaskRunResultResponse](model/taskrunresultresponse)  :   
+- [TextBoxRéponse](model/textboxresponse)  :   
+- [TextItemRéponse](model/textitemresponse)  :   
+- [TextItemsRéponse](model/textitemsresponse)  :   
+- [TickLabelsRéponse](model/ticklabelsresponse)  :   
+- [TitreRéponse](model/titleresponse)  :   
+- [Réponse de ligne de tendance](model/trendlineresponse)  :   
+- [Lignes de tendanceRéponse](model/trendlinesresponse)  :   
+- [Réponse de validation](model/validationresponse)  :   
+- [ValidationsRéponse](model/validationsresponse)  :   
+- [Réponse de saut de page verticale](model/verticalpagebreakresponse)  :   
+- [Réponse aux sauts de page verticaux](model/verticalpagebreaksresponse)  :   
+- [MursRéponse](model/wallsresponse)  :   
+- [WorkbookReplaceResponse](model/workbookreplaceresponse)  :   
+- [Réponse du classeur](model/workbookresponse)  :   
+- [ClasseurParamètresRéponse](model/workbooksettingsresponse)  :   
+- [ClasseursRéponse](model/workbooksresponse)  :   
+- [Feuille de travailRemplaceRéponse](model/worksheetreplaceresponse)  :   
+- [Feuille de travailRéponse](model/worksheetresponse)  :   
+- [Feuilles de travailRéponse](model/worksheetsresponse)  :   
+- [AnalyseExcelRequest](model/analyzeexcelrequest)  :   
+- [BatchConvertRequest](model/batchconvertrequest) : Indique une demande de fichier de conversion par lots
+- [Demande de verrouillage par lots](model/batchlockrequest) : Indique une demande de fichier de verrouillage par lots
+- [BatchProtectRequest](model/batchprotectrequest) : Indique une demande de fichier de protection par lots
+- [BatchSplitRequest](model/batchsplitrequest)  :   
+- [Demande de filtre couleur](model/colorfilterrequest) : Indique une demande de filtre de couleur
+- [ConvertParamètre](model/convertparameter) : Indique le paramètre de conversion
+- [CreatePivotTableRequest](model/createpivottablerequest) : Indique une demande de création de tableau croisé dynamique
+- [Demande de nettoyage de données](model/datacleansingrequest) : une demande de nettoyage des données pour un fichier de feuille de calcul.
+- [DataDeduplicationRequest](model/datadeduplicationrequest)  :   
+- [Requête de remplissage de données](model/datafillrequest)  :   
+- [SupprimerIncompleteRowsRequest](model/deleteincompleterowsrequest)  :   
+- [ImportJsonRequest](model/importjsonrequest) : Indique une demande d'importation de données XML
+- [ImportXMLRequest](model/importxmlrequest) : Indique une demande d'importation de données XML
+- [MatchConditionRequest](model/matchconditionrequest) : Indique la condition de correspondance qui doit être traitée pour le nom de fichier.
+- [Demande de mot de passe](model/passwordrequest) : Utilisé pour le transfert de données par mot de passe.
+- [PivotTableFieldRequest](model/pivottablefieldrequest) : Indique la demande de champ de tableau croisé dynamique
+- [ProtectWorkbookRequest](model/protectworkbookrequest) : Indique une demande de protection du classeur
+- [RangeCopyRequest](model/rangecopyrequest) : Indique une demande de copie de plage
+- [RangeSetOutlineBorderRequest](model/rangesetoutlineborderrequest) Indique une demande de bordure de contour de plage définie.
+- [RangeSetStyleRequest](model/rangesetstylerequest) : Indique une demande de style d’ensemble de plage.
+- [RangeSortRequest](model/rangesortrequest) : Indique une demande de tri par plage
+- [TableTotalDemande](model/tabletotalrequest) : Indique la demande totale du tableau
+- [TextWaterMarkerRequest](model/textwatermarkerrequest) : Indique une demande de texte de marqueur d'eau.
+- [WorkbookEncryptionRequest](model/workbookencryptionrequest) : Utilisé par les requêtes de chiffrement/déchiffrement de classeur.
+- [Demande de protection du classeur](model/workbookprotectionrequest) : Utilisé par les demandes de protection des classeurs.
+- [Feuille de travailMovingRequest](model/worksheetmovingrequest) : Utilisé par les demandes de déplacement de classeur.
+- [OptionsImageOuImpression](model/imageorprintoptions)  :   
+- [Police de rendu](model/renderingfont)  :   
+- [RenduFiligrane](model/renderingwatermark)  :   
+- [Champ Pivot](model/pivotfield)  :   
+- [Filtre Pivot](model/pivotfilter) : Représente un PivotFilter dans la collection PivotFilter.
+- [Élément pivot](model/pivotitem)  :   
+- [Tableau croisé dynamique](model/pivottable)  :   
+- [Tableaux croisés dynamiques](model/pivottables)  :   
+- [CustomParserConfig](model/customparserconfig)  :   
+- [OptionImport2DimensionDoubleArray](model/import2dimensiondoublearrayoption)  :   
+- [OptionImport2DimensionIntArray](model/import2dimensionintarrayoption)  :   
+- [Import2DimensionStringArrayOption](model/import2dimensionstringarrayoption)  :   
+- [ValeurCellule](model/cellvalue)  :   
+- [OptionImportBatchData](model/importbatchdataoption)  :   
+- [OptionImporterCSVData](model/importcsvdataoption)  :   
+- [ImportDataType](model/importdatatype)  :   
+- [OptionImportDoubleArray](model/importdoublearrayoption)  :   
+- [OptionImportIntArray](model/importintarrayoption)  :   
+- [Option d'importation](model/importoption)  :   
+- [OptionImportImage](model/importpictureoption)  :   
+- [Position d'importation](model/importposition)  :   
+- [OptionImportStringArray](model/importstringarrayoption)  :   
+- [Forme d'arc](model/arcshape)  :   
+- [Zone](model/area)  :   
+- [Forme automatique](model/autoshape)  :   
+- [Formes automatiques](model/autoshapes)  :   
+- [Bouton](model/button)  :   
+- [CellulesDessin](model/cellsdrawing)  :   
+- [Case à cocher](model/checkbox)  :   
+- [Boîte combo](model/combobox)  :   
+- [Forme du commentaire](model/commentshape)  :   
+- [RemplirFormat](model/fillformat)  :   
+- [Formulaire](model/form)  :   
+- [Formes](model/forms)  :   
+- [Remplissage en dégradé](model/gradientfill)  :   
+- [DégradéRemplirArrêter](model/gradientfillstop)  :   
+- [Zone de groupe](model/groupbox)  :   
+- [Forme de groupe](model/groupshape)  :   
+- [Étiquette](model/label)  :   
+- [Doubler](model/line) : Encapsule l'objet qui représente le format de ligne.
+- [Format de ligne](model/lineformat)  :   
+- [Forme de ligne](model/lineshape)  :   
+- [Zone de liste](model/listbox)  :   
+- [OleObject](model/oleobject)  :   
+- [OleObjects](model/oleobjects)  :   
+- [ovale](model/oval)  :   
+- [Remplissage de motif](model/patternfill)  :   
+- [OptionFormatImage](model/picformatoption)  :   
+- [Image](model/picture)  :   
+- [Des photos](model/pictures)  :   
+- [Bouton radio](model/radiobutton)  :   
+- [FormeRectangle](model/rectangleshape)  :   
+- [Barre de défilement](model/scrollbar)  :   
+- [Effet d'ombre](model/shadoweffect)  :   
+- [Forme](model/shape)  :   
+- [Formes](model/shapes)  :   
+- [Remplissage solide](model/solidfill)  :   
+- [Fileur](model/spinner)  :   
+- [Zone de texte](model/textbox)  :   
+- [Remplissage de texture](model/texturefill)  :   
+- [OptionTuilePic](model/tilepicoption)  :   
+- [Signature numérique](model/digitalsignature) : Signature au dossier.
+- [Axe](model/axis)  :   
+- [Graphique](model/chart)  :   
+- [ZoneGraphique](model/chartarea)  :   
+- [GraphiqueDonnéesTable](model/chartdatatable)  :   
+- [Cadre graphique](model/chartframe)  :   
+- [ChartGlobalizationSettings](model/chartglobalizationsettings) : représente les paramètres de globalisation du graphique.
+- [ChartPoint](model/chartpoint)  :   
+- [Points de graphique](model/chartpoints)  :   
+- [Graphiques](model/charts)  :   
+- [Forme du graphique](model/chartshape) : Objet de forme de graphique
+- [Étiquettes de données](model/datalabels)  :   
+- [DisplayUnitLabel](model/displayunitlabel)  :   
+- [Barres de dépôt](model/dropbars)  :   
+- [Barre d'erreur](model/errorbar)  :   
+- [Sol](model/floor)  :   
+- [Légende](model/legend)  :   
+- [Entrées de légende](model/legendentries)  :   
+- [LégendeEntrée](model/legendentry)  :   
+- [Marqueur](model/marker)  :   
+- [Zone de tracé](model/plotarea)  :   
+- [Série](model/series)  :   
+- [Articles de série](model/seriesitems)  :   
+- [Ligne scintillante](model/sparkline) : Une sparkline représente un petit tableau ou graphique dans une cellule de feuille de calcul qui fournit une représentation visuelle des données.
+- [Groupe Sparkline](model/sparklinegroup)  :   
+- [Groupes Sparkline](model/sparklinegroups) : Encapsule une collection d’objets Aspose.Cells.Charts.SparklineGroup.
+- [Étiquettes de tiques](model/ticklabels)  :   
+- [Titre](model/title)  :   
+- [Ligne de tendance](model/trendline)  :   
+- [Lignes de tendance](model/trendlines)  :   
+- [Des murs](model/walls)  :   
+- [ColumnDataExceptionDescription](model/columndataexceptiondescription)  :   
+- [Type de catégorie de texte](model/textcategorytype)  :   
+- [Description de la colonne analysée](model/analyzedcolumndescription) Comment utiliser les propriétés de chaque colonne : actuellement divisée en chronologie, ligne de produit, ligne de statistiques numériques Comment présenter le produit, un plan unifié Comment résoudre le problème du full numérique ? Texte intégral Comment le résoudre ? Deux colonnes : Texte, Numéro est le plus simple Trois colonnes : Texte, Texte, Numéro texte, numéro, numéro --- date date ; Date Numérique ; Numérique Numérique Qu'en est-il de quatre colonnes, cinq colonnes ?
+- [RésultatAnalysé](model/analyzedresult)  :   
+- [AnalysedTableDescription](model/analyzedtabledescription)  :   
+- [TypeSourceDate](model/datesourcetype)  :   
+- [Type de sortie suggéré](model/suggestedoutputtype)  :   
+- [AnalyserSuggestion](model/analyzesuggestion)  :   
+- [Découvrir le graphique](model/discoverchart)  :   
+- [DécouvrirPivotTable](model/discoverpivottable)  :   
+- [ExcelDataStatistiques](model/exceldatastatistics)  :   
+- [Feuille de calculDonnéesStatistiques](model/worksheetdatastatistics)  :   
+- [Erreur](model/error) : Erreur
+- [Détails de l'erreur](model/errordetails) : Les détails de l'erreur

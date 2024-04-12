@@ -1,15 +1,15 @@
 ﻿---
-title: Unloc دفعة
+title: دفعة إفتح
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/batch/unlock
 keywords: Batch unlock of multiple Excel files
-description: Aspose.Cells Cloud API يدعم فتح مجموعة من ملفات Excel المتعددة. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
+description: Aspose.Cells كلاود API يدعم فتح دفعة من ملفات Excel المتعددة. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 100
 ---
-يشير هذا REST API إلى `batch unlock` من الملفات المؤهلة.
+يشير REST API إلى `batch unlock` من الملفات المؤهلة.
  
-## RSET API
+## رسيت API
  
 ```bash
  
@@ -18,19 +18,19 @@ POST http://api.aspose.cloud/v3.0/cells/batch/unlock
 ```
  معلمات الطلب هي:
  
-| اسم المعلمة| يكتب| المسار / سلسلة الاستعلام / HTTPBody|وصف|
+| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/HTTPBody|وصف|
 |:- |:- |:- |:- |
-| طلب BatchLock|| جسم||
+| BatchLockRequest|| جسم||
 
-**طلب خصائص BatchLock**
+**خصائص BatchLockRequest**
  
 الاسم | اكتب | الوصف | ملحوظات
 ------------ | ------------- | ------------- | -------------
- SourceFolder | سلسلة | | [اختياري] MatchCondition | MatchConditionRequest | | [اختياري] كلمة المرور | سلسلة | | [اختياري] مجلد خارجي | سلسلة | | [خياري]**خصائص MatchConditionRequest**
+ مجلد المصدر | سلسلة | | [اختياري] حالة المطابقة | طلب مطابقة الشرط | | [اختياري] كلمة المرور | سلسلة | | [اختياري]المجلد الخارجي | سلسلة | | [خياري]**خصائص MatchConditionRequest**
  
 الاسم | اكتب | الوصف | ملحوظات
 ------------ | ------------- | ------------- | -------------
- RegexPattern | سلسلة | | [اختياري] FullMatchConditions | سلسلة [] | | [اختياري][مواصفات OpenAPI](https://reference.aspose.cloud/cells/#/Batch/PostBatchUnlock) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
+ النمط العادي | سلسلة | | [اختياري]شروط المباراة الكاملة | سلسلة[]| | [اختياري] ال[مواصفات OpenAPI](https://reference.aspose.cloud/cells/#/Batch/PostBatchUnlock) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك تنفيذ تفاعلات REST مباشرة من متصفح الويب.
  
 يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
  
@@ -66,9 +66,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/batch/unlock" \
  
 ## عائلة Cloud SDK
  
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. يعتني SDK بالتفاصيل منخفضة المستوى ويتيح لك التركيز على مهام إلغاء القفل. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة من Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام إلغاء القفل. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
  
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام حزم SDK متنوعة:
+توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
  
  
   

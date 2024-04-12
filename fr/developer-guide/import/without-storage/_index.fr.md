@@ -9,7 +9,7 @@ keywords: REST API,  spreadsheets, excel, Import
 description: Cells.Cloud API pour l'importation de fichiers Excel
 weight: 10
 ---
-Excel L'importation de données est un processus complexe. De nombreux facteurs contribuent à la complexité et doivent donc être pris en compte lors du processus d'exportation. La possibilité d'importer des types de formats et des types de données dans le fichier avec une qualité professionnelle précise est une caractéristique majeure de Aspose.Cells Cloud.
+L’importation de données Excel est un processus complexe. De nombreux facteurs contribuent à cette complexité et doivent donc être pris en compte lors du processus d’exportation. La possibilité d'importer des types de formats et des types de données dans le fichier avec une qualité professionnelle précise est l'une des principales fonctionnalités de Aspose.Cells Cloud.
 
 Ce REST API indique `import data` dans un fichier Excel.
 
@@ -23,17 +23,17 @@ POST https://api.aspose.cloud/v3.0/cells/import
 
 **Les paramètres de la requête sont :** 
  
-| Le nom du paramètre| Taper| Chemin/chaîne de requête/HTTPBody|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
-| déposer| déposer| Données de formulaire| Fichier à uploader|
-| Option d'importation| Options d'importation| Corps HTTP| IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/Image|
+| déposer| déposer| Données de formulaire| Fichier à télécharger|
+| Option d'importation| Options d'importation|Corps HTTP| IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/Picture|
 
-**Les paramètres des options d'importation de données**sont décrits dans[le lien de référence](/cells/fr/import/#import-data-option-parameter).
-
-
+**Les paramètres des options d'importation de données** sont décrits dans[le lien de référence](/cells/fr/import/#import-data-option-parameter).
 
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostImport) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
+
+
+ Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostImport) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement depuis un navigateur Web.
  
 Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment passer des appels vers le Cloud API avec cURL.
  
@@ -80,9 +80,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/import" \
  
 {{< /tabs >}}
  
-## Famille SDK Cloud
+## Famille de SDK Cloud
  
- L'utilisation d'un SDK est le meilleur moyen d'accélérer le développement. Un SDK prend en charge les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Veuillez consulter le[Référentiel GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Cloud Aspose.Cells.
+ Utiliser un SDK est le meilleur moyen d’accélérer le développement. Un SDK prend en charge les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Veuillez consulter le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
  
 Les exemples de code suivants montrent comment effectuer des appels vers les services Web Aspose.Cells à l'aide de divers SDK :
 

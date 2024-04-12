@@ -5,7 +5,7 @@ type: docs
 url: /it/oleobjects/
 aliases: [/working-with-oleobjects/]
 keywords: Get, add, delete, and update an OLE object in an Excel worksheet
-description: Aspose.Cells Cloud REST API supporta il recupero, l'aggiunta, l'eliminazione e l'aggiornamento di un oggetto OLE in un foglio di lavoro Excel. L'SDK supporta i tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
+description: Aspose.Cells Cloud REST API supporta il recupero, l'aggiunta, l'eliminazione e l'aggiornamento di un oggetto OLE in un foglio di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 100
 ---
 **Come lavorare con oggetti OLE su un foglio di lavoro Excel**

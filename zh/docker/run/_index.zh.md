@@ -1,5 +1,5 @@
 ﻿---
-title: 汝
+title: 茹
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/docker/run/
@@ -24,7 +24,7 @@ C：\数据|文件存放文件夹|错误的
 名称 |描述 |必需的
 ---|:--:|---:
 许可证公钥 |许可证的公钥 |真的
-许可证私钥 |许可证私钥 |真的
+许可证私钥|许可证私钥 |真的
 存储凭证文件路径 |存储配置文件路径。默认文件是 ./storageResource.json |真的
 
 ## 运行命令 ##

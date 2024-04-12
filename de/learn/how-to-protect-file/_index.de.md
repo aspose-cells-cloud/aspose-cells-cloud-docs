@@ -11,7 +11,7 @@ Die Aspose.Cells Cloud API ist eine leistungsstarke cloudbasierte Lösung für d
 
 ## Überblick
 
-Die Aspose.Cells Cloud API bietet mehrere robuste APIs zum Schutz von Excel oder Tabellenkalkulationsdateien. Durch die Nutzung der Aspose.Cells Cloud API können Sie mühelos Excel oder andere Tabellenkalkulationsdateien schützen und so unterschiedlichen Anforderungen gerecht werden.
+Die Aspose.Cells Cloud API bietet mehrere robuste APIs zum Schutz von Excel oder Tabellenkalkulationsdateien. Durch die Nutzung der Aspose.Cells Cloud API können Sie Excel oder andere Tabellenkalkulationsdateien mühelos schützen und so unterschiedlichen Anforderungen gerecht werden.
 
 
 Für den Dateischutz stehen zahlreiche APIs zur Verfügung, die im Allgemeinen mit verschiedenen Online-Umgebungen kompatibel sind. Nachfolgend finden Sie eine detaillierte Beschreibung dieser APIs:

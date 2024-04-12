@@ -1,12 +1,12 @@
 ﻿---
 title: Cómo crear un libro de trabajo Excel con un archivo de plantilla
 second_title: Aspose.Cells Cloud Documen
-linktitle: plantilla
+linktitle: Plantilla
 type: docs
 url: /es/workbook/create/template-file/
 aliases: [/create-excel-workbook-from-a-template-file/,/workbook/new-from-a-template-file/]
 keywords: How to create an Excel workbook with a smart marker template
-description: Aspose.Cells Cloud REST API cómo crear un libro de trabajo Excel a partir de una plantilla de marcador inteligente. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift
+description: Aspose.Cells Cloud REST API cómo crear un libro de trabajo Excel a partir de una plantilla de marcador inteligente. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 30
 ---
 Este REST API indica crear `workbook` a partir de un `template file`.
@@ -15,13 +15,13 @@ Este REST API indica crear `workbook` a partir de un `template file`.
 
 |Nombre del parámetro|Tipo|Descripción|
 |:- |:- |:- |
-|archivo de plantilla|cadena||
+|plantillaArchivo|cadena||
 |archivo de datos|cadena||
-|esEscribirOver|cadena| verdadero Falso|
-|carpeta|cadena|Carpeta original del libro de trabajo.|
-|NombreDeAlmacenamiento|cadena|Nombre de almacenamiento.|
+|esWriteOver|cadena| verdadero Falso|
+|carpeta|cadena|Carpeta del libro de trabajo original.|
+|nombredealmacenamiento|cadena|Nombre del almacenamiento.|
 
-**Parámetro del cuerpo de la solicitud**
+**Solicitar parámetro del cuerpo**
 
 |Nombre del parámetro|Tipo|Descripción|
 |:- |:- |:- |
@@ -30,13 +30,13 @@ Este REST API indica crear `workbook` a partir de un `template file`.
 
 ## DESCANSO API
 
-|**API**|**Tipo**|**Descripción**|**Enlace arrogante**|
+|**API**|**Tipo**|**Descripción**|**Enlace de arrogancia**|
 |:- |:- |:- |:- |
-|/celdas/{nombre}|PONER|Cree un nuevo libro de trabajo Excel a partir de un archivo de plantilla|[PutWorkbookCreate](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookCreate)|
+|/celdas/{nombre}|PONER|Cree un nuevo libro de trabajo Excel a partir de un archivo de plantilla|[PonerLibroCrear](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookCreate)|
 
  El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookCreate) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
 
- Puedes usar**cURL** herramienta de línea de comandos para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo hacer llamadas a Cloud API con cURL.
+ Puedes usar**cURL** Herramienta de línea de comandos para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
 
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
@@ -122,11 +122,11 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/newworkbook.xlsx?templateFile=C
 {{< /tabs >}}
 
 
-## Familia SDK de la nube
+## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se ocupa de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor, echa un vistazo a la[repositorio GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de Cloud.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor revisa el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de nube.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código demuestran cómo realizar llamadas a servicios web Aspose.Cells utilizando varios SDK:
 
 
 {{< tabs tabTotal="11" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" tabName11="Swift" >}}

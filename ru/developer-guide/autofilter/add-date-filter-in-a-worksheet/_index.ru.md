@@ -1,12 +1,12 @@
 ﻿---
-title: Добавить фильтр даты в рабочую таблицу Excel
+title: Добавьте фильтр даты в лист Excel.
 second_title: Aspose.Cells Cloud Documen
 linktitle: Добавить фильтр даты
 type: docs
 url: /ru/autofilter/add-date-filter/
 aliases: [/add-date-filter-in-a-worksheet/,/autofilter/add-a-date-filter/]
 keywords: Adds a date filter on an Excel worksheet
-description: Облако Aspose.Cells API поддерживает добавление фильтра даты на рабочий лист Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и swift.
+description: Облако Aspose.Cells API поддерживает добавление фильтра даты на лист Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 65
 ---
 Этот REST API указывает на добавление `date filter` на рабочий лист Excel.
@@ -25,23 +25,23 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/
 | имя| нить| Путь|Имя рабочей книги.|
 | имя листа| нить| Путь| Имя рабочего листа.|
 |диапазон|нить| Запрос||
-|индекс поля|целое число| Запрос||
-|dateTimeGroupingType|нить| Запрос| День/час/минута/месяц/секунда/год|
+|полеИндекс|целое число| Запрос||
+|тип даты и времени группировки|нить| Запрос| День/час/минута/месяц/секунда/год|
 |год|целое число| Запрос||
 |месяц|целое число| Запрос||
 |день|целое число| Запрос||
 |час|целое число| Запрос||
 |минута|целое число| Запрос||
 |второй|целое число| Запрос||
-|matchBlanks|нить| Запрос|правда/ложь|
+|спичкаЗаготовки|нить| Запрос|правда/ложь|
 |обновить|нить| Запрос|правда/ложь|
 |папка|нить| Запрос|Оригинальная папка с рабочей тетрадью.|
 |имя_хранилища|нить| Запрос|Имя хранилища.|
 
 
-[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetDateFilter) определяет общедоступный программный интерфейс и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetDateFilter) определяет общедоступный интерфейс программирования и позволяет выполнять взаимодействие с REST непосредственно из веб-браузера.
 
-Вы можете использовать инструмент командной строки cURL для простого доступа к веб-службам Aspose.Cells. В следующем примере показано, как звонить в Cloud API с номером cURL.
+Вы можете использовать инструмент командной строки cURL для легкого доступа к веб-службам Aspose.Cells. В следующем примере показано, как позвонить на Cloud API с помощью cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
@@ -76,9 +76,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFil
 
 ## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK позаботится о низкоуровневых деталях и позволит вам сосредоточиться на задачах вашего проекта. Пожалуйста, ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) полный список Aspose.Cells Cloud SDK.
+ Использование SDK — лучший способ ускорить разработку. SDK заботится о деталях низкого уровня и позволяет вам сосредоточиться на задачах проекта. Пожалуйста, ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для получения полного списка Aspose.Cells Cloud SDK.
 
-В следующих примерах кода показано, как выполнять вызовы веб-служб Aspose.Cells с помощью различных SDK.
+Следующие примеры кода демонстрируют, как выполнять вызовы веб-служб Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" >}}
 

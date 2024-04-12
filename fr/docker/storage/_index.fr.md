@@ -56,7 +56,7 @@ c:\app\storageResource.json
 
 ```
 
-- **linux**
+- **Linux**
 
 ```linux
 
@@ -67,7 +67,7 @@ c:\app\storageResource.json
 
 ##  Configuration de stockage personnalisée ##
 
-Besoin de respécifier le profil de stockage pour le fichier image Cloud Aspose.Cells lorsque le client a besoin de spécifier le dossier de stockage.
+Il est nécessaire de re-spécifier le profil de stockage pour le fichier image Cloud Aspose.Cells lorsque le client a besoin de spécifier le dossier de stockage.
 
 ``` powershell
 

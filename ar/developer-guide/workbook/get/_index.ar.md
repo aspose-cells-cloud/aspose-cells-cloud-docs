@@ -1,14 +1,14 @@
 ﻿---
-title: العمل مع الحصول على Excel workboo
+title: العمل مع الحصول على مجموعة العمل Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: Ge
+linktitle: جي
 type: docs
 url: /ar/workbook/get/
 keywords: Working with getting on an Excel workbook
-description: Aspose.Cells Cloud REST API دعم العمل مع الحصول على مصنف Excel. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
+description: Aspose.Cells Cloud REST API دعم العمل مع الحصول على مصنف Excel. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 100
 ---
-## العمل مع الحصول على Excel مصنف.
+## العمل مع الحصول على مصنف Excel.
 
-- [كيفية الحصول على عدد الصفحات في مصنف Excel.](/cells/ar/workbook/get/page-count/)
-- [كيفية الحصول على أسماء في مصنف Excel.](/cells/ar/workbook/get/names/)
+- [كيفية الحصول على عدد الصفحات في مصنف Excel](/cells/ar/workbook/get/page-count/)
+- [كيفية الحصول على الأسماء في مصنف Excel.](/cells/ar/workbook/get/names/)

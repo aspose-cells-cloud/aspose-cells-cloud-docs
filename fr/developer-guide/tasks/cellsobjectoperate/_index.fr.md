@@ -4,12 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/tasks/cells-object-operate/
 aliases: [/working-with-cellsobjectoperate-task/]
-description: "Cells.Cloud API pour Excel opération : cellule objet opération tâche"
+description: "Cells.Cloud API pour Excel fonctionner : tâche d'exploitation de l'objet cellules"
 weight: 20
 ---
-Ce REST API exploite l'objet de cellules `task`.
+Ce REST API exploite l'objet cellules `task`.
 
-**OperateObject**
+**ExploiterObjet**
 
 |Le nom du paramètre|Taper|Description|
 |:- |:- |:- |
@@ -20,27 +20,27 @@ Ce REST API exploite l'objet de cellules `task`.
 
 |Le nom du paramètre|Taper|Description|
 |:- |:- |:- |
-| Cahier| Objet||
-| NomFeuille| chaîne||
-| Index du graphique| entier||
+| Cahier d'exercices| Objet||
+| Nom de la feuille| chaîne||
+| GraphiqueIndex| entier||
 | Indice de forme| entier||
-| NomCellule| chaîne||
-| ListObjectIndex| entier||
+| Nom de cellule| chaîne||
+| ListeObjetIndex| entier||
 
 
-**ChartOperateParameterChartOperateParameterChartOperateParameter**
+**ChartOperateParamètre**
 
 |Le nom du paramètre|Taper|Description|
 |:- |:- |:- |
-| Index du graphique| entier||
+| GraphiqueIndex| entier||
 | Type de graphique| chaîne||
-| UpperLeftRow| entier||
-|Colonne supérieure gauche| entier||
-| ligne inférieure droite| entier||
+| Ligne supérieure gauche| entier||
+| Colonne supérieure gauche| entier||
+| Ligne inférieure droite| entier||
 | Colonne inférieure droite| entier||
 | Zone| chaîne||
 | EstVertical| chaîne| vrai faux|
-| Données de catégorie| chaîne||
+| CatégorieDonnées| chaîne||
 | IsAutoGetSerialName| chaîne| vrai faux|
 | Zone| Titre||
 
@@ -48,9 +48,9 @@ Ce REST API exploite l'objet de cellules `task`.
 
 |Le nom du paramètre|Taper|Description|
 |:- |:- |:- |
-| ListObject| Objet||
+| ObjetListe| Objet||
 
-**PageBreakOperateParameterPageBreakOperateParameter**
+**PageBreakOperateParameter**
 
 |Le nom du paramètre|Taper|Description|
 |:- |:- |:- |
@@ -58,18 +58,18 @@ Ce REST API exploite l'objet de cellules `task`.
 | Indice| Indice||
 | Rangée| entier||
 | Colonne| entier||
-| Index de départ| entier||
-| EndIndex| entier||
+| IndexDébut| entier||
+| FinIndex| entier||
 
 
-**PageSetupOperateParameterPageSetupOperateParameter**
+**PageSetupOperateParameter**
 
 |Le nom du paramètre|Taper|Description|
 |:- |:- |:- |
 | Mise en page| Objet||
 
 
-**PivotTableOperateParameterPivotTableOperateParameterPivotTableOperateParameter**
+**PivotTableOperateParameter**
 
 |Le nom du paramètre|Taper|Description|
 |:- |:- |:- |
@@ -91,14 +91,14 @@ Ce REST API exploite l'objet de cellules `task`.
 | Forme| Objet||
 
 
-**WorkbookSettingsOperateParameterWorkbookSettingsOperateParameter**
+**WorkbookSettingsOperateParameter**
 
 
 |Le nom du paramètre|Taper|Description|
 |:- |:- |:- |
 | Paramètres du classeur| Objet||
 
-**Feuille de travailOperateParameter**
+**Feuille de calculOperateParameter**
 
 
 |Le nom du paramètre|Taper|Description|
@@ -106,13 +106,13 @@ Ce REST API exploite l'objet de cellules `task`.
 | Nom| chaîne||
 | Type de feuille| chaîne||
 | Nouveau nom| chaîne||
-| demande de déménagement| Objet||
+| Demande de déplacement| Objet||
 
 ## REPOS API
 
 |**API**|**Taper**|**Description**|**Lien vers la ressource**|
 |:- |:- |:- |:- |
-|/cellules/tâche/runtask|POSTE|Exécuter la tâche|[Post-exécution de la tâche](https://apireference.aspose.cloud/cells/#/Task/PostRunTask)|
+|/cellules/tâche/tâche d'exécution|POSTE|Exécuter la tâche|[PostExécutionTâche](https://apireference.aspose.cloud/cells/#/Task/PostRunTask)|
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
+ Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement depuis un navigateur Web.
 

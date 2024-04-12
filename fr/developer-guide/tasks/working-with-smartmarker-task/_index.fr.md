@@ -1,22 +1,22 @@
 ﻿---
-title: Travailler avec SmartMarkerTas
+title: Travailler avec les tâches SmartMarker
 type: docs
 url: /fr/tasks/smartmarker/
 aliases: [/working-with-smartmarker-task/]
 keywords: REST API, task, save result, spreadsheets, exce
-description: "Cells.Cloud API pour Excel fonctionne : prise en charge des tâches pour le marqueur intelligent"
+description: "Cells.Cloud API pour Excel fonctionne : prise en charge des tâches par le marqueur intelligent"
 weight: 60
 ---
 ## REPOS API
 
 |**API**|**Taper**|**Description**|**Lien vers la ressource**|
 |:- |:- |:- |:- |
-|/cellules/tâche/runtask|POSTE|Exécuter la tâche|[Post-exécution de la tâche](https://apireference.aspose.cloud/cells/#/Task/PostRunTask)|
+|/cellules/tâche/tâche d'exécution|POSTE|Exécuter la tâche|[PostExécutionTâche](https://apireference.aspose.cloud/cells/#/Task/PostRunTask)|
 
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Task/PostRunTask) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
+ Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Task/PostRunTask) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement depuis un navigateur Web.
 
- Vous pouvez utiliser**cURL** outil de ligne de commande pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment passer des appels vers le Cloud API avec cURL.
+ Vous pouvez utiliser**cURL** outil de ligne de commande pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment passer des appels vers Cloud API avec cURL.
 
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
@@ -43,7 +43,7 @@ HttpResponseMessage with the operation result.
 
 {{< /tabs >}}
 
- L'utilisation d'un SDK est le meilleur moyen d'accélérer le développement. Un SDK prend en charge les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Veuillez consulter le[Référentiel GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Cloud Aspose.Cells.
+ Utiliser un SDK est le meilleur moyen d’accélérer le développement. Un SDK prend en charge les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Veuillez consulter le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
 
 Les exemples de code suivants montrent comment effectuer des appels vers les services Web Aspose.Cells à l'aide de divers SDK :
 

@@ -4,17 +4,17 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/repair/
 keywords: Repair Excel, ODS, WPS, and so on files
-description: Aspose.Cells Cloud REST API يدعم إصلاح ملفات Excel. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
+description: Aspose.Cells Cloud REST API دعم إصلاح ملفات الاكسل. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 39
 ---
-يشير هذا REST API إلى `repair` Excel الملفات.
+يشير REST API إلى `repair` Excel ملفًا.
 
-- إصلاح XLS و XLSX و XLSM و XLSB و ODS وما إلى ذلك.
+- إصلاح XLS، XLSX، XLSM، XLSB، ODS، وما إلى ذلك.
 - دعم ملفات متعددة.
 
-Aspose.Cells Cloud Excel Repair يستعيد البيانات من ملفات Excel الفاسدة عبر الإنترنت دون تثبيت. يمكن أن تكون الملفات Excel التالفة مشكلة لأنك لن تتمكن من فتحها. يمكنك تجربة تطبيق إصلاح Aspose.Cells Cloud Excel لاستعادة البيانات من ملفات Excel التالفة.
+Aspose.Cells كلاود Excel إصلاح يستعيد البيانات من ملفات Excel الفاسدة عبر الإنترنت دون تثبيت. يمكن أن تكون ملفات Excel التالفة مشكلة لأنك لن تتمكن من فتحها. يمكنك تجربة تطبيق الإصلاح Aspose.Cells Cloud Excel لاستعادة البيانات من ملفات Excel التالفة.
 
-## RSET API
+## رسيت API
 
 ```bash
 
@@ -24,12 +24,12 @@ POST https://api.aspose.cloud/v3.0/cells/repair
 
  معلمات الطلب هي:
  
-| اسم المعلمة| يكتب| المسار / سلسلة الاستعلام / HTTPBody|وصف|
+| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/HTTPBody|وصف|
 |:- |:- |:- |:- |
 | ملف| ملف| بيانات النموذج| ملف للتحميل|
-| شكل| خيط| استفسار| تنسيق الإخراج ، القيمة الافتراضية خالية ، تنسيق الإخراج يساوي تنسيق ملف الإدخال.|
+| شكل| خيط| استفسار| تنسيق الإخراج، القيمة الافتراضية فارغة، تنسيق الإخراج يساوي تنسيق ملف الإدخال.|
  
- ال[مواصفات OpenAPI](https://reference.aspose.cloud/cells/#/LightCells/PostRepair) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
+ ال[مواصفات OpenAPI](https://reference.aspose.cloud/cells/#/LightCells/PostRepair) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك تنفيذ تفاعلات REST مباشرة من متصفح الويب.
  
 يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
@@ -79,9 +79,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/repair" \
 
 ## عائلة Cloud SDK
 
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. يعتني SDK بالتفاصيل منخفضة المستوى ويتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة من Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام حزم SDK متنوعة:
+توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
 
 
 {{< tabs tabTotal="9" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" tabName9="Python" >}}

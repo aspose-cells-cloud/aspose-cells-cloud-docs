@@ -1,12 +1,12 @@
 ﻿---
-title: Удалить конкретное свойство документа
+title: Удаление определенного свойства документа
 second_title: Aspose.Cells Cloud Documen
 linktitle: Удалить
 type: docs
 url: /ru/document-properties/delete/
 aliases: [/remove-a-particular-document-property/]
 keywords: Delete, and update properties from excel files
-description: Aspose.Cells Cloud REST API поддерживает удаление свойств из файлов Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и swift.
+description: Aspose.Cells Cloud REST API поддерживает удаление свойств из файлов Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 50
 ---
 Этот REST API указывает на свойство документа `delete`.
@@ -24,12 +24,12 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/documentproperties/{propertyNam
 |:- |:- |:- |:- |
 | имя| нить| путь| Название документа.|
 | Имя свойства| нить| путь| Имя свойства.|
-| папка| нить| запрос| Папка с документами.|
+| папка| нить| запрос| Папка документов.|
 | имя_хранилища| нить| запрос| имя хранилища.|
  
-[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Properties/DeleteDocumentProperty) определяет общедоступный программный интерфейс и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Properties/DeleteDocumentProperty) определяет общедоступный интерфейс программирования и позволяет выполнять взаимодействие с REST непосредственно из веб-браузера.
  
-Вы можете использовать инструмент командной строки cURL для простого доступа к веб-службам Aspose.Cells. В следующем примере показано, как звонить в Cloud API с номером cURL.
+Вы можете использовать инструмент командной строки cURL для легкого доступа к веб-службам Aspose.Cells. В следующем примере показано, как позвонить на Cloud API с помощью cURL.
  
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
@@ -69,9 +69,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties/author
 
 ## Семейство облачных SDK
  
- Использование SDK — лучший способ ускорить разработку. SDK позаботится о низкоуровневых деталях и позволит вам сосредоточиться на задачах вашего проекта. Пожалуйста, ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) полный список Aspose.Cells Cloud SDK.
+ Использование SDK — лучший способ ускорить разработку. SDK заботится о деталях низкого уровня и позволяет вам сосредоточиться на задачах проекта. Пожалуйста, ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для получения полного списка Aspose.Cells Cloud SDK.
  
-В следующих примерах кода показано, как выполнять вызовы веб-служб Aspose.Cells с помощью различных SDK.
+Следующие примеры кода демонстрируют, как выполнять вызовы веб-служб Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="11" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" tabName11="Swift" >}}
 

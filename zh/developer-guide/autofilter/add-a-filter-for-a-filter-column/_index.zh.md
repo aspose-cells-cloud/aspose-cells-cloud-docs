@@ -6,7 +6,7 @@ type: docs
 url: /zh/autofilter/add-filter/
 aliases: [/add-a-filter-for-a-filter-column/]
 keywords: Adds a filter for a filter column on an Excel worksheet
-description: Aspose.Cells云API支持为Excel工作表上的过滤列添加过滤器。 SDK支持多种开发语言。它们包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 swift
+description: Aspose.Cells云API支持为Excel工作表上的筛选列添加筛选器。 SDK支持多种开发语言。它们包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 swift
 weight: 60
 ---
 此 REST API 指示为 Excel 工作表上的筛选器列添加 `a filter`。

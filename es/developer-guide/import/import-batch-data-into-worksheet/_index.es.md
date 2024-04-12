@@ -1,19 +1,19 @@
 ﻿---
-title: Importar datos por lotes en la hoja de trabajo Excel
+title: Importar datos por lotes a la hoja de trabajo Excel
 second_title: Aspose.Cells Cloud Documen
 linktitle: Importar datos por lotes
 type: docs
 url: /es/import/batch-data/
 aliases: [/import-batch-data-into-excel-worksheet/,/import-batch-data-into-worksheet/,/import-data/batch-data/]
 keywords: Import batch data into Excel files
-description: Aspose.Cells Cloud REST API admite la importación de datos por lotes en archivos Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift
+description: Aspose.Cells Cloud REST API admite la importación de datos por lotes en archivos Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 19
 ---
-Este REST API `import batch data` en Excel hoja de trabajo.
+Este REST API `import batch data` en la hoja de trabajo Excel.
 
-La solicitud es una solicitud HTTP con contenido de varias partes (ver[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)o[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). La primera parte del contenido de varias partes contiene los datos de ImportBatchDataOption y la segunda contiene un archivo de datos.
+La solicitud es una solicitud HTTP con contenido de varias partes (consulte[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)o[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). La primera parte del contenido de varias partes contiene los datos de ImportBatchDataOption y la segunda contiene un archivo de datos.
 
-## RESET API
+## RSET API
 
 ```bash
 
@@ -25,34 +25,34 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/import-data
 Los parámetros importantes se describen en la siguiente tabla:
 
 
-**Importar opción de datos por lotes**
+**Opción ImportBatchData**
 
 |Nombre del parámetro|Tipo|Descripción|
 |:- |:- |:- |
-| BatchData|Lista<CellValue> | datos por lotes|
-| DestinationWorksheet| cadena| nombre de la hoja de trabajo de destino.|
+| Datos por lotes|Lista<CellValue> | datos por lotes|
+| Hoja de cálculo de destino| cadena| nombre de la hoja de trabajo de destino.|
 | EsInsertar| cadena| verdadero Falso.|
-| Tipo de datos de importación| cadena|IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData.|
-| Fuente| Origen del archivo| Indica la posición del archivo de datos cuando el parámetro BatchData es nulo.|
+| Importar tipo de datos| cadena|IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData.|
+| Fuente| Fuente de archivo| Indica la posición del archivo de datos cuando el parámetro BatchData es nulo.|
 
 
 
-**valor de celda**
+**Valor de celda**
 
 |Nombre del parámetro|Tipo|Descripción|
 |:- |:- |:- |
 | índice de fila| En t||
-| índicecolumna| En t||
+| columnaÍndice| En t||
 | tipo| cadena| tipo de datos|
 | valor| cadena||
 | estilo| Estilo (objeto)||
 
 
 
-**Origen del archivo**
+**Fuente de archivo**
 |Nombre del parámetro|Tipo|Descripción|
 |:- |:- |:- |
-| FileSourceType| cadena| InMemoryFiles/CloudFileSystem/RequestFiles|
+| Tipo de fuente de archivo| cadena| InMemoryFiles/CloudFileSystem/RequestFiles|
 | Ruta de archivo| cadena| posición del archivo|
 
 
@@ -74,11 +74,11 @@ Los parámetros importantes se describen en la siguiente tabla:
 
 ```
 
-## Familia SDK de la nube
+## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se ocupa de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor, echa un vistazo a la[repositorio GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de Cloud.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor revisa el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de nube.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código demuestran cómo realizar llamadas a servicios web Aspose.Cells utilizando varios SDK:
 
 
 {{< tabs tabTotal="3" tabID="4" tabName1="C#" tabName2="PHP" tabName3="Ruby" >}}

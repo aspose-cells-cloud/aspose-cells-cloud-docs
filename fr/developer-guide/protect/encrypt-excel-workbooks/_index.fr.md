@@ -1,12 +1,12 @@
 ﻿---
-title: Crypter un workboo Excel
+title: Chiffrer un classeur Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: Crypter
+linktitle: Chiffrer
 type: docs
 url: /fr/workbook/encrypt/
 aliases: [/encrypt-excel-workbooks/]
 keywords: Encrypt Excel workbook
-description: Aspose.Cells Cloud REST API prend en charge le chiffrement du classeur Excel. SDK prend en charge les types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift
+description: Aspose.Cells Cloud REST API prend en charge le chiffrement du classeur Excel. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 20
 ---
 Ce REST API chiffre un Excel `workbook`.
@@ -16,19 +16,19 @@ Ce REST API chiffre un Excel `workbook`.
 |Le nom du paramètre|Taper|Description|
 |:- |:- |:- |
 |dossier|chaîne|Dossier de classeur d'origine.|
-|nom_stockage|chaîne|Nom de stockage.|
+|Nom de stockage|chaîne|Nom de stockage.|
 
-**Paramètre de corps de requête**
+**Paramètre du corps de la demande**
 
 |Le nom du paramètre|Taper|Description|
 |:- |:- |:- |
-|chiffrement|WorkbookEncryptionRequestWorkbookEncryptionRequest||
+|chiffrement|WorkbookEncryptionRequest||
 
-**WorkbookEncryptionRequestWorkbookEncryptionRequest**
+**WorkbookEncryptionRequest**
 |Le nom du paramètre|Taper|Description|
 |:- |:- |:- |
 |Type de chiffrement|chaîne|XOR/Compatible/EnhancedCryptographicProviderV1/StrongCryptographicProvider|
-|Longueur de la clé|entier||
+|Longueur de clé|entier||
 |Mot de passe|chaîne||
 
 
@@ -36,11 +36,11 @@ Ce REST API chiffre un Excel `workbook`.
 
 |**API**|**Taper**|**Description**|**Lien fanfaron**|
 |:- |:- |:- |:- |
-|/cellules/{nom}/chiffrement|POSTE|Crypter le document Excel|[PostEncryptDocumentPostEncryptDocument](https://apireference.aspose.cloud/cells/#/Workbook/PostEncryptDocument)|
+|/cells/{nom}/chiffrement|POSTE|Chiffrer le document Excel|[PostEncryptDocument](https://apireference.aspose.cloud/cells/#/Workbook/PostEncryptDocument)|
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostEncryptDocument) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
+ Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostEncryptDocument) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement depuis un navigateur Web.
 
- Vous pouvez utiliser**cURL** outil de ligne de commande pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment passer des appels vers le Cloud API avec cURL.
+ Vous pouvez utiliser**cURL** outil de ligne de commande pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment passer des appels vers Cloud API avec cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
@@ -72,9 +72,9 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/encryption" -H "acce
 
 {{< /tabs >}}
 
-## Famille SDK Cloud
+## Famille de SDK Cloud
 
- L'utilisation d'un SDK est le meilleur moyen d'accélérer le développement. Un SDK prend en charge les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Veuillez consulter le[Référentiel GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Cloud Aspose.Cells.
+ Utiliser un SDK est le meilleur moyen d’accélérer le développement. Un SDK prend en charge les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Veuillez consulter le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
 
 Les exemples de code suivants montrent comment effectuer des appels vers les services Web Aspose.Cells à l'aide de divers SDK :
 

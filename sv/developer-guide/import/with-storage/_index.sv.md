@@ -26,7 +26,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/importdata
 | lagringsnamn| sträng| fråga| lagringsnamn.|
 | importera data|| kropp||
 
-**Parametrarna för import av dataalternativ**beskrivs i[referenslänken](/cells/sv/import/#import-data-option-parameter).
+**Parametrarna för import av dataalternativ** beskrivs i[referenslänken](/cells/sv/import/#import-data-option-parameter).
 
  
  De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData) definierar ett allmänt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.

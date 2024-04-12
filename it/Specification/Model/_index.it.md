@@ -1,0 +1,413 @@
+﻿---
+title: Modello
+second_title: Aspose.Cells Cloud Documen
+type: docs
+weight: 50
+---
+- [ObjectExistsExtensions](objectexistsextensions)  :   
+- [VersioneFile](fileversion)  :   
+- [StorageFile](storagefile) : informazioni sul file o sulla cartella
+- [GoogleDriveStorageFile](googledrivestoragefile)  :   
+- [Sopra la media](aboveaverage) descrive la regola di formattazione condizionale AboveAverage. Questa regola di formattazione condizionale evidenzia le celle che sono al di sopra o al di sotto della media per tutti i valori nell'intervallo.
+- [Motore di calcolo astratto](abstractcalculationengine) : rappresenta il motore di calcolo personalizzato dell'utente per estendere il motore di calcolo predefinito di Aspose.Cells.
+- [AbstractCalculationMonitor](abstractcalculationmonitor) : monitora l'utente per monitorare l'avanzamento del calcolo della formula.
+- [Filtro automatico](autofilter)  :   
+- [Opzioni di montaggio automatico](autofitteroptions)  :   
+- [Confine](border)  :   
+- [Opzioni di calcolo](calculationoptions)  :   
+- [Cellula](cell)  :   
+- [CellArea](cellarea)  :   
+- [Cells](cells)  :   
+- [CellsCloudFileInfo](cellscloudfileinfo) : Cells Descrizione delle informazioni del file Cloud.
+- [CelleColore](cellscolor)  :   
+- [CellsDocumentProperties](cellsdocumentproperties) : Excel immobili
+- [CellsDocumentProperty](cellsdocumentproperty) : Cells proprietà documento.
+- [Colore](color) : Colore.
+- [ColoreFiltro](colorfilter) : filtro colorato.
+- [ColorScale](colorscale) : Descrive la regola di formattazione condizionale ColorScale. Questa regola di formattazione condizionale crea una scala di colori graduale sulle celle.
+- [Colonna](column)  :   
+- [Colonne](columns)  :   
+- [Commento](comment)  :   
+- [Commenti](comments)  :   
+- [Formattazione condizionale](conditionalformatting)  :   
+- [ConditionalFormattingIcon](conditionalformattingicon)  :   
+- [Formattazioni condizionali](conditionalformattings)  :   
+- [ValoreFormattazioneCondizionale](conditionalformattingvalue)  :   
+- [Opzioni di copia](copyoptions) : Rappresenta le opzioni di copia.
+- [CriteriaFiltroMultiplo](criteriamultiplefilter)  :   
+- [Filtro personalizzato](customfilter)  :   
+- [DataBar](databar) : Descrive la regola di formattazione condizionale di DataBar. Questa regola di formattazione condizionale visualizza una barra dati graduata nell'intervallo di celle.
+- [DataBarBorder](databarborder)  :   
+- [Pulizia dei dati](datacleansing) : Pulizia dei dati
+- [ValoreColumnFillDati](datacolumnfillvalue)  :   
+- [DataFill](datafill)  :   
+- [Valore di riempimento dati](datafillvalue)  :   
+- [DataSorter](datasorter) : Descrizione riepilogativa di DataSorter.
+- [DataSorterKey](datasorterkey) : Rappresenta la chiave del selezionatore di dati.
+- [DateTimeGroupItem](datetimegroupitem)  :   
+- [Regione di deduplicazione](deduplicationregion)  :   
+- [Filtro dinamico](dynamicfilter)  :   
+- [FileInfo](fileinfo) : Informazioni sul file
+- [FileRisultato](filesresult)  :   
+- [Colonna filtro](filtercolumn)  :   
+- [Font](font)  :   
+- [Impostazione carattere](fontsetting)  :   
+- [FormatoCondizione](formatcondition)  :   
+- [FormulaFormatCondizione](formulaformatcondition)  :   
+- [Impostazioni formula](formulasettings) : Impostazioni di formule e calcoli.
+- [Impostazioni di globalizzazione](globalizationsettings) : Rappresenta le impostazioni di globalizzazione.
+- [Interruzione di pagina orizzontale](horizontalpagebreak)  :   
+- [Interruzioni di pagina orizzontali](horizontalpagebreaks)  :   
+- [Collegamento ipertestuale](hyperlink)  :   
+- [Collegamenti ipertestuali](hyperlinks)  :   
+- [IconFiltro](iconfilter)  :   
+- [Set di icone](iconset) descrive la regola di formattazione condizionale di IconSet. Questa regola di formattazione condizionale applica le icone alle celle in base ai loro valori.
+- [Collegamento](link)  :   
+- [Elemento di collegamento](linkelement)  :   
+- [Carica opzioni](loadoptions)  :   
+- [Cella unita](mergedcell)  :   
+- [Celle unite](mergedcells)  :   
+- [Filtro multiplo](multiplefilter)  :   
+- [Filtri multipli](multiplefilters)  :   
+- [Nome](name)  :   
+- [Nomi](names)  :   
+- [NegativeBarFormat](negativebarformat) : rappresenta le impostazioni del colore delle barre dei dati per i valori negativi definiti da una regola di formattazione condizionale della barra dei dati.
+- [Sezione pagina](pagesection)  :   
+- [Impostazione della pagina](pagesetup)  :   
+- [Opzioni Incolla](pasteoptions) : Rappresenta le opzioni speciali di incolla.
+- [PdfSecurityOptions](pdfsecurityoptions)  :   
+- [Protezione](protection) : rappresenta i vari tipi di opzioni di protezione disponibili per un foglio di lavoro.
+- [ParametroProteggiFoglio](protectsheetparameter)  :   
+- [Tabella delle query](querytable) : Rappresenta le informazioni di QueryTable.
+- [Allineare](range)  :   
+- [Gamme](ranges)  :   
+- [Riga](row)  :   
+- [Righe](rows)  :   
+- [Salva risultato](saveresult)  :   
+- [PaginatedSaveOptions](paginatedsaveoptions) : Rappresenta le opzioni per l'impaginazione.
+- [Valore singolo](singlevalue)  :   
+- [Chiave di ordinamento](sortkey)  :   
+- [Risultato diviso](splitresult)  :   
+- [SplitResultDocument](splitresultdocument)  :   
+- [Stile](style)  :   
+- [StyleFormatCondition](styleformatcondition)  :   
+- [Stili](styles)  :   
+- [TextFormatCondizione](textformatcondition)  :   
+- [Elemento di testo](textitem)  :   
+- [Elementi di testo](textitems)  :   
+- [Opzioni di testo](textoptions)  :   
+- [TemaColore](themecolor)  :   
+- [TimePeriodFormatCondition](timeperiodformatcondition)  :   
+- [Top10](top10) descrive la regola di formattazione condizionale Top10. Questa regola di formattazione condizionale evidenzia le celle i cui valori rientrano nella parentesi N superiore o N inferiore, come specificato.
+- [Top10Filtro](top10filter)  :   
+- [Validazione](validation)  :   
+- [Convalide](validations)  :   
+- [Interruzione di pagina verticale](verticalpagebreak)  :   
+- [VerticalPageBreaks](verticalpagebreaks)  :   
+- [Cartella di lavoro](workbook)  :   
+- [Impostazioni cartella di lavoro](workbooksettings)  :   
+- [Foglio di lavoro](worksheet)  :   
+- [Fogli di lavoro](worksheets)  :   
+- [WriteProtection](writeprotection) : specifica le impostazioni di protezione da scrittura per una cartella di lavoro.
+- [XmlDataBinding](xmldatabinding) : Rappresenta le informazioni di associazione dati Xml.
+- [XmlMap](xmlmap) : rappresenta le informazioni sulla mappa Xml.
+- [Parametro CellsObjectOperateTask](cellsobjectoperatetaskparameter)  :   
+- [ConvertTaskParameter](converttaskparameter)  :   
+- [ConvertWorksheetTaskParameter](convertworksheettaskparameter)  :   
+- [FileSource](filesource)  :   
+- [FileSourceType](filesourcetype)  :   
+- [ImportDataTaskParametro](importdatataskparameter)  :   
+- [Destinazionerisultato](resultdestination)  :   
+- [Tipo di destinazione risultato](resultdestinationtype)  :   
+- [RisultatoSorgente](resultsource)  :   
+- [Risultato SaveFilesToCloud](savefilestocloudresult)  :   
+- [SaveResultTaskParameter](saveresulttaskparameter)  :   
+- [Parametro SmartMarkerTask](smartmarkertaskparameter)  :   
+- [SplitWorkbookTaskParametro](splitworkbooktaskparameter)  :   
+- [TaskData](taskdata)  :   
+- [Descrizione del compito](taskdescription)  :   
+- [TaskParametro](taskparameter)  :   
+- [TaskResultParametro](taskresultparameter)  :   
+- [TaskRunResult](taskrunresult)  :   
+- [Tipo di attività](tasktype)  :   
+- [ChartOperateParametro](chartoperateparameter)  :   
+- [ParametroListObjectOperate](listobjectoperateparameter)  :   
+- [OperaOggetto](operateobject)  :   
+- [OperarePosizioneOggetto](operateobjectposition)  :   
+- [OperareObjectType](operateobjecttype)  :   
+- [OperateParameter](operateparameter)  :   
+- [OperateType](operatetype)  :   
+- [Parametro PageBreakOperate](pagebreakoperateparameter)  :   
+- [PageSetupOperateParametro](pagesetupoperateparameter)  :   
+- [ParametroOperateTabellaPivot](pivottableoperateparameter)  :   
+- [ShapeOperateParametro](shapeoperateparameter)  :   
+- [WorkbookOperateParameter](workbookoperateparameter)  :   
+- [WorkbookSettingsOperateParameter](workbooksettingsoperateparameter)  :   
+- [Foglio di lavoroOperateParametro](worksheetoperateparameter)  :   
+- [ElencoColonna](listcolumn)  :   
+- [ElencoOggetto](listobject)  :   
+- [Elencooggetti](listobjects)  :   
+- [PivotGlobalizationSettings](pivotglobalizationsettings) : rappresenta le impostazioni di globalizzazione per le tabelle pivot.
+- [DifSaveOptions](difsaveoptions) : Rappresenta le opzioni per salvare il file dif.
+- [DocxSaveOptions](docxsaveoptions) : Rappresenta le opzioni di salvataggio del file .docx.
+- [HtmlSaveOptions](htmlsaveoptions) : Rappresenta le opzioni di salvataggio del file .html.
+- [OpzioniSalvaimmagine](imagesaveoptions) : Rappresenta le opzioni di salvataggio del file immagine.
+- [JsonSaveOptions](jsonsaveoptions) Rappresenta le opzioni di salvataggio del file .json.
+- [MarkdownSaveOptions](markdownsaveoptions) : Rappresenta le opzioni di salvataggio del file .md.
+- [MHTMLSaveOptions](mhtmlsaveoptions) : Rappresenta le opzioni di salvataggio del file .mhtml.
+- [OdsSaveOptions](odssaveoptions) : Rappresenta le opzioni di salvataggio del file .ods.
+- [OoxmlSaveOptions](ooxmlsaveoptions) : Rappresenta le opzioni di salvataggio del file ooxml.
+- [PdfSaveOptions](pdfsaveoptions) : Rappresenta le opzioni di salvataggio del file pdf.
+- [PptxSaveOptions](pptxsaveoptions) : Rappresenta le opzioni di salvataggio del file pptx.
+- [SalvaOpzioni](saveoptions) : rappresenta tutte le opzioni di salvataggio
+- [Foglio di calcoloML2003SalvaOpzioni](spreadsheetml2003saveoptions) : Rappresenta le opzioni di salvataggio del file .xml.
+- [SqlScriptSaveOptions](sqlscriptsaveoptions) : Rappresenta le opzioni di salvataggio del file .sql.
+- [SvgSaveOptions](svgsaveoptions) : Rappresenta le opzioni di salvataggio del file .svg.
+- [TxtSaveOptions](txtsaveoptions) : Rappresenta le opzioni per salvare il file .txt.
+- [XlsbSaveOptions](xlsbsaveoptions) : Rappresenta le opzioni di salvataggio del file .xlsb.
+- [XlsSaveOptions](xlssaveoptions) : Rappresenta le opzioni di salvataggio del file .xls.
+- [XpsSaveOptions](xpssaveoptions) : Rappresenta le opzioni di salvataggio del file .xps.
+- [AnalizzarispostaExcel](analyzeexcelresponse)  :   
+- [ArcShapeResponse](arcshaperesponse)  :   
+- [Risposta filtro automatico](autofilterresponse)  :   
+- [Risposta forma automatica](autoshaperesponse)  :   
+- [Risposta automatica delle forme](autoshapesresponse)  :   
+- [Risposta dell'asse](axisresponse)  :   
+- [Risposta al confine](borderresponse)  :   
+- [Risposta al pulsante](buttonresponse)  :   
+- [Calcola risposta formula](calculateformularesponse)  :   
+- [Risposta cellulare](cellresponse)  :   
+- [CellsCloudFileInfoResponse](cellscloudfileinforesponse)  :   
+- [CellsCloudResponse](cellscloudresponse)  :   
+- [CellsDocumentPropertiesResponse](cellsdocumentpropertiesresponse)  :   
+- [CellsDocumentPropertyResponse](cellsdocumentpropertyresponse)  :   
+- [CellsDrawingResponse](cellsdrawingresponse)  :   
+- [Risposta delle cellule](cellsresponse)  :   
+- [ChartAreaResponse](chartarearesponse)  :   
+- [ChartDataTableResponse](chartdatatableresponse)  :   
+- [ChartPointResponse](chartpointresponse)  :   
+- [ChartPointsResponse](chartpointsresponse)  :   
+- [Risposta del grafico](chartresponse)  :   
+- [GraficiRisposta](chartsresponse)  :   
+- [CheckBoxResponse](checkboxresponse)  :   
+- [ColonnaRisposta](columnresponse)  :   
+- [ColonneRisposta](columnsresponse)  :   
+- [ComboBoxResponse](comboboxresponse)  :   
+- [Risposta al commento](commentresponse)  :   
+- [CommentShapeResponse](commentshaperesponse)  :   
+- [CommentiRisposta](commentsresponse)  :   
+- [ConditionalFormattingResponse](conditionalformattingresponse)  :   
+- [ConditionalFormattingsResponse](conditionalformattingsresponse)  :   
+- [DataLabelsResponse](datalabelsresponse)  :   
+- [DisplayUnitLabelResponse](displayunitlabelresponse)  :   
+- [DropBarsResponse](dropbarsresponse)  :   
+- [ErrorBarResponse](errorbarresponse)  :   
+- [FillFormatResponse](fillformatresponse)  :   
+- [TrovaRisposta](findresponse)  :   
+- [FloorResponse](floorresponse)  :   
+- [FormResponse](formresponse)  :   
+- [FormsResponse](formsresponse)  :   
+- [GroupBoxResponse](groupboxresponse)  :   
+- [OrizzontalePageBreakResponse](horizontalpagebreakresponse)  :   
+- [OrizzontalePageBreaksResponse](horizontalpagebreaksresponse)  :   
+- [Risposta al collegamento ipertestuale](hyperlinkresponse)  :   
+- [Collegamenti ipertestuali Risposta](hyperlinksresponse)  :   
+- [EtichettaRisposta](labelresponse)  :   
+- [LegendEntriesResponse](legendentriesresponse)  :   
+- [LegendEntryResponse](legendentryresponse)  :   
+- [LegendResponse](legendresponse)  :   
+- [Risposta in linea](lineresponse)  :   
+- [LineShapeResponse](lineshaperesponse)  :   
+- [ListBoxResponse](listboxresponse)  :   
+- [ListObjectResponse](listobjectresponse)  :   
+- [ListObjectsResponse](listobjectsresponse)  :   
+- [MergedCellResponse](mergedcellresponse)  :   
+- [MergedCellsResponse](mergedcellsresponse)  :   
+- [NomeRisposta](nameresponse)  :   
+- [NomiRisposta](namesresponse)  :   
+- [OleObjectResponse](oleobjectresponse)  :   
+- [OleObjectsResponse](oleobjectsresponse)  :   
+- [Risposta ovale](ovalresponse)  :   
+- [PageSectionsResponse](pagesectionsresponse)  :   
+- [PageSetupResponse](pagesetupresponse)  :   
+- [Risposta immagine](pictureresponse)  :   
+- [ImmaginiRisposta](picturesresponse)  :   
+- [Risposta campo pivot](pivotfieldresponse)  :   
+- [Risposta filtro pivot](pivotfilterresponse)  :   
+- [PivotFiltersResponse](pivotfiltersresponse)  :   
+- [Risposta tabella pivot](pivottableresponse)  :   
+- [Risposta tabelle pivot](pivottablesresponse)  :   
+- [PlotAreaResponse](plotarearesponse)  :   
+- [Risposta del pulsante radio](radiobuttonresponse)  :   
+- [Risposta d'intervallo](rangeresponse)  :   
+- [IntervalliRisposta](rangesresponse)  :   
+- [RangeValueResponse](rangevalueresponse)  :   
+- [RectangleShapeResponse](rectangleshaperesponse)  :   
+- [RowResponse](rowresponse)  :   
+- [RowsResponse](rowsresponse)  :   
+- [SaveFilesToCloudResultResponse](savefilestocloudresultresponse)  :   
+- [Salva risposta](saveresponse)  :   
+- [ScrollBarResponse](scrollbarresponse)  :   
+- [SerieRisposta](seriesesresponse)  :   
+- [SerieRisposta](seriesresponse)  :   
+- [ShapeResponse](shaperesponse)  :   
+- [ShapesResponse](shapesresponse)  :   
+- [Risposta a valore singolo](singlevalueresponse)  :   
+- [SparklineGroupResponse](sparklinegroupresponse)  :   
+- [SparklineGroupsResponse](sparklinegroupsresponse)  :   
+- [SpinnerResponse](spinnerresponse)  :   
+- [Risposta risultato diviso](splitresultresponse)  :   
+- [StileRisposta](styleresponse)  :   
+- [TaskRunResultResponse](taskrunresultresponse)  :   
+- [TextBoxResponse](textboxresponse)  :   
+- [TextItemResponse](textitemresponse)  :   
+- [TextItemsResponse](textitemsresponse)  :   
+- [TickLabelsResponse](ticklabelsresponse)  :   
+- [TitoloRisposta](titleresponse)  :   
+- [TrendlineResponse](trendlineresponse)  :   
+- [TrendlinesResponse](trendlinesresponse)  :   
+- [Risposta di convalida](validationresponse)  :   
+- [ValidazioniRisposta](validationsresponse)  :   
+- [VerticalPageBreakResponse](verticalpagebreakresponse)  :   
+- [VerticalPageBreaksResponse](verticalpagebreaksresponse)  :   
+- [WallsResponse](wallsresponse)  :   
+- [WorkbookReplaceResponse](workbookreplaceresponse)  :   
+- [Risposta alla cartella di lavoro](workbookresponse)  :   
+- [WorkbookSettingsResponse](workbooksettingsresponse)  :   
+- [WorkbooksResponse](workbooksresponse)  :   
+- [Foglio di lavoroSostituisciRisposta](worksheetreplaceresponse)  :   
+- [Foglio di lavoro Risposta](worksheetresponse)  :   
+- [Fogli di lavoroRisposta](worksheetsresponse)  :   
+- [Analizza richiesta Excel](analyzeexcelrequest)  :   
+- [BatchConvertRequest](batchconvertrequest) : Indica la richiesta di file di conversione batch
+- [Richiesta di blocco batch](batchlockrequest) : indica la richiesta di file di blocco batch
+- [BatchProtectRequest](batchprotectrequest) : indica la richiesta di file di protezione batch
+- [BatchSplitRequest](batchsplitrequest)  :   
+- [Richiesta filtro colore](colorfilterrequest) : Indica la richiesta del filtro colore
+- [ConvertParametro](convertparameter) : Indica il parametro di conversione
+- [Crea richiesta tabella pivot](createpivottablerequest) : indica la richiesta di creazione di una tabella pivot
+- [Richiesta di pulizia dei dati](datacleansingrequest) : una richiesta di pulizia dei dati per un file di foglio di calcolo.
+- [Richiesta di deduplicazione dei dati](datadeduplicationrequest)  :   
+- [DataFillRequest](datafillrequest)  :   
+- [Elimina richiesta righe incomplete](deleteincompleterowsrequest)  :   
+- [ImportJsonRequest](importjsonrequest) : indica la richiesta di importazione di dati xml
+- [Richiesta ImportXML](importxmlrequest) : indica la richiesta di importazione di dati xml
+- [MatchConditionRequest](matchconditionrequest) : indica la condizione di corrispondenza che deve essere elaborata per il nome file.
+- [Richiesta password](passwordrequest) : Utilizzato per il trasferimento dei dati tramite password.
+- [Richiesta campo tabella pivot](pivottablefieldrequest) : indica la richiesta del campo della tabella pivot
+- [ProtectWorkbookRequest](protectworkbookrequest) : indica la richiesta di protezione della cartella di lavoro
+- [RangeCopyRequest](rangecopyrequest) : Indica la richiesta di copia dell'intervallo
+- [RangeSetOutlineBorderRequest](rangesetoutlineborderrequest) Indica la richiesta del bordo del contorno del set di intervalli.
+- [RangeSetStyleRequest](rangesetstylerequest) : Indica la richiesta di stile del set di intervalli.
+- [RangeSortRequest](rangesortrequest) : Indica la richiesta di ordinamento dell'intervallo
+- [TabellaTotaleRichiesta](tabletotalrequest) : Indica la richiesta totale della tabella
+- [TextWaterMarkerRequest](textwatermarkerrequest) : Indica la richiesta di contrassegno di acqua di testo.
+- [Richiesta di crittografia della cartella di lavoro](workbookencryptionrequest) : utilizzato dalle richieste di crittografia/decrittografia della cartella di lavoro.
+- [Richiesta di protezione della cartella di lavoro](workbookprotectionrequest) : utilizzato dalle richieste di protezione della cartella di lavoro.
+- [Foglio di lavoroRichiesta di spostamento](worksheetmovingrequest) : utilizzato dalle richieste di spostamento della cartella di lavoro.
+- [OpzioniImmagineOrStampa](imageorprintoptions)  :   
+- [RenderingFont](renderingfont)  :   
+- [RenderingFiligrana](renderingwatermark)  :   
+- [Campo pivot](pivotfield)  :   
+- [Filtro pivot](pivotfilter) : rappresenta un PivotFilter nella raccolta PivotFilter.
+- [Elemento pivot](pivotitem)  :   
+- [Tabella pivot](pivottable)  :   
+- [Tabelle pivot](pivottables)  :   
+- [CustomParserConfig](customparserconfig)  :   
+- [Import2DimensionDoubleArrayOpzione](import2dimensiondoublearrayoption)  :   
+- [Import2DimensionIntArrayOpzione](import2dimensionintarrayoption)  :   
+- [Import2DimensionStringArrayOption](import2dimensionstringarrayoption)  :   
+- [ValoreCella](cellvalue)  :   
+- [ImportBatchDataOpzione](importbatchdataoption)  :   
+- [ImportCSVDataOpzione](importcsvdataoption)  :   
+- [ImportDataType](importdatatype)  :   
+- [ImportDoubleArrayOption](importdoublearrayoption)  :   
+- [ImportIntArrayOption](importintarrayoption)  :   
+- [ImportOpzione](importoption)  :   
+- [ImportPictureOption](importpictureoption)  :   
+- [Importa posizione](importposition)  :   
+- [ImportStringArrayOption](importstringarrayoption)  :   
+- [Forma dell'Arco](arcshape)  :   
+- [La zona](area)  :   
+- [Forma automatica](autoshape)  :   
+- [Forme automatiche](autoshapes)  :   
+- [Pulsante](button)  :   
+- [Disegno delle cellule](cellsdrawing)  :   
+- [Casella di controllo](checkbox)  :   
+- [Casella combinata](combobox)  :   
+- [CommentShape](commentshape)  :   
+- [FillFormat](fillformat)  :   
+- [Modulo](form)  :   
+- [Forme](forms)  :   
+- [Riempimento gradiente](gradientfill)  :   
+- [Interrompi riempimento gradiente](gradientfillstop)  :   
+- [GroupBox](groupbox)  :   
+- [Forma gruppo](groupshape)  :   
+- [Etichetta](label)  :   
+- [Linea](line) : incapsula l'oggetto che rappresenta il formato della linea.
+- [Formato linea](lineformat)  :   
+- [Forma della linea](lineshape)  :   
+- [ListBox](listbox)  :   
+- [OleObject](oleobject)  :   
+- [OleObjects](oleobjects)  :   
+- [Ovale](oval)  :   
+- [PatternFill](patternfill)  :   
+- [PicFormatOpzione](picformatoption)  :   
+- [Immagine](picture)  :   
+- [Immagini](pictures)  :   
+- [Pulsante radio](radiobutton)  :   
+- [Forma rettangolare](rectangleshape)  :   
+- [Barra di scorrimento](scrollbar)  :   
+- [Effetto ombra](shadoweffect)  :   
+- [Forma](shape)  :   
+- [Forme](shapes)  :   
+- [SolidFill](solidfill)  :   
+- [Filatore](spinner)  :   
+- [Casella di testo](textbox)  :   
+- [TextureFill](texturefill)  :   
+- [TilePicOption](tilepicoption)  :   
+- [Firma digitale](digitalsignature) : Firma nel file.
+- [Asse](axis)  :   
+- [Grafico](chart)  :   
+- [ChartArea](chartarea)  :   
+- [GraficoDataTable](chartdatatable)  :   
+- [ChartFrame](chartframe)  :   
+- [GraficoGlobalizzazioneImpostazioni](chartglobalizationsettings) : Rappresenta le impostazioni di globalizzazione per il grafico.
+- [ChartPoint](chartpoint)  :   
+- [ChartPoints](chartpoints)  :   
+- [Grafici](charts)  :   
+- [ChartShape](chartshape) : oggetto a forma di grafico
+- [Etichette dati](datalabels)  :   
+- [EtichettaUnitàDisplay](displayunitlabel)  :   
+- [DropBar](dropbars)  :   
+- [ErrorBar](errorbar)  :   
+- [Pavimento](floor)  :   
+- [Leggenda](legend)  :   
+- [LegendEntries](legendentries)  :   
+- [LegendEntry](legendentry)  :   
+- [Marcatore](marker)  :   
+- [Area del grafico](plotarea)  :   
+- [Serie](series)  :   
+- [Articoli di serie](seriesitems)  :   
+- [Linea scintillante](sparkline) : uno sparkline rappresenta un piccolo grafico o elemento grafico in una cella del foglio di lavoro che fornisce una rappresentazione visiva dei dati.
+- [SparklineGroup](sparklinegroup)  :   
+- [SparklineGroups](sparklinegroups) : incapsula una raccolta di oggetti Aspose.Cells.Charts.SparklineGroup.
+- [Etichette di spunta](ticklabels)  :   
+- [Titolo](title)  :   
+- [Linea di tendenza](trendline)  :   
+- [Linee di tendenza](trendlines)  :   
+- [Muri](walls)  :   
+- [DescrizioneColonnaDataException](columndataexceptiondescription)  :   
+- [Tipo di categoria testo](textcategorytype)  :   
+- [Descrizione colonna analizzata](analyzedcolumndescription) Come utilizzare le proprietà di ciascuna colonna: attualmente suddivisa in timeline, linea di prodotto, linea di statistiche numeriche Come presentare il prodotto, un piano unificato Come risolvere il problema del full digital? Testo completo Come risolverlo? Due colonne: Testo, Numero è la più semplice Tre colonne: Testo, Testo, Numero testo, numero, numero --- data data ; Data Numerica; Numerico Digitale Che dire di quattro colonne, cinque colonne?
+- [Risultato analizzato](analyzedresult)  :   
+- [Descrizione tabella analizzata](analyzedtabledescription)  :   
+- [DateSourceType](datesourcetype)  :   
+- [Tipo di output suggerito](suggestedoutputtype)  :   
+- [AnalizzaSuggerimento](analyzesuggestion)  :   
+- [ScopriChart](discoverchart)  :   
+- [Scopri tabella pivot](discoverpivottable)  :   
+- [ExcelDataStatistics](exceldatastatistics)  :   
+- [Foglio di lavoroDatiStatistiche](worksheetdatastatistics)  :   
+- [Errore](error) : Errore
+- [Dettagli circa l'errore](errordetails) : i dettagli dell'errore

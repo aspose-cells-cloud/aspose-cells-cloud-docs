@@ -1,18 +1,18 @@
 ﻿---
-title: أضف الخلفية في Workboo
+title: إضافة الخلفية في Workboo
 second_title: Aspose.Cells Cloud Documen
 linktitle: إعلان
 type: docs
 url: /ar/workbook/background/add/
 aliases: [/add-background-in-workbook/,/workbook/add-background/]
 keywords: Add background on an Excel workbook
-description: Aspose.Cells Cloud REST API دعم إضافة خلفية على مصنف Excel في ملف Excel. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
+description: Aspose.Cells Cloud REST API يدعم إضافة الخلفية في مصنف Excel في ملف Excel. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 160
 ---
-يشير هذا REST API إلى إضافة `background` على مصنف Excel.
+يشير REST API إلى إضافة `background` في مصنف Excel.
 
 
-**معامِل الاستعلام**
+**معلمة الاستعلام**
 
 |اسم المعلمة|يكتب|وصف|
 |:- |:- |:- |
@@ -26,13 +26,13 @@ weight: 160
 |:- |:- |:- |
 |ملف البيانات| ملف البيانات|يتم حفظ ملف البيانات في نص الطلب.|
 
-## REST API
+## بقية API
 
 |**API**|**يكتب**|**وصف**|**رابط الموارد**|
 |:- |:- |:- |:- |
-|/ الخلايا / {name} / الخلفية|يضع|إضافة خلفية في ملف اكسل|[PutWorkbookBackground](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookBackground)|
+|/الخلايا/{الاسم}/الخلفية|يضع|إضافة الخلفية في ملف إكسل|[ضع WorkbookBackground](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookBackground)|
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookBackground) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
+ ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookBackground) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك تنفيذ تفاعلات REST مباشرة من متصفح الويب.
 
  يمكنك استخدام**cURL** أداة سطر الأوامر للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
 
@@ -69,9 +69,9 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/background?picPath=D
 
 ## عائلة Cloud SDK
 
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. يعتني SDK بالتفاصيل منخفضة المستوى ويتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة من Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام حزم SDK متنوعة:
+توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
 
 {{< tabs tabTotal="9" tabID="4" tabName1="C#" tabName2="Java" tabName3="Python" tabName4="Android" tabName5="Perl" tabName6="Ruby" tabName7="PHP" tabName8="Node.js" tabName9="Swift" >}}
 

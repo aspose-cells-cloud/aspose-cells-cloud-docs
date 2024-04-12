@@ -1,17 +1,17 @@
 ﻿---
-title: قم بإنشاء Excel فارغًا لوحدة عمل
+title: قم بإنشاء مجموعة عمل Excel فارغة
 second_title: Aspose.Cells Cloud Documen
-linktitle: فارغ Workboo
+linktitle: ورشة عمل فارغة
 type: docs
 url: /ar/workbook/create/empty-workbook/
 aliases: [/create-an-empty-excel-workbook/,/workbook/new/]
 keywords: How to create an Excel workbook
-description: Aspose.Cells Cloud REST API كيفية إنشاء مصنف Excel فارغ. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
+description: Aspose.Cells Cloud REST API كيفية إنشاء مصنف Excel فارغ. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 20
 ---
-يشير هذا REST API إلى إنشاء `empty workbook`.
+يشير REST API إلى إنشاء `empty workbook`.
 
-**معامِل الاستعلام**
+**معلمة الاستعلام**
 
 |اسم المعلمة|يكتب|وصف|
 |:- |:- |:- |
@@ -28,14 +28,14 @@ weight: 20
 |بيانات|ملف||
 
 
-## REST API
+## بقية API
 
 |**API**|**يكتب**|**وصف**|**رابط الموارد**|
 |:- |:- |:- |:- |
-|/ خلايا / {name}|يضع|قم بإنشاء دفتر عمل فارغ|[وضع](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookCreate)|
+|/الخلايا/{الاسم}|يضع|إنشاء مصنف فارغ|[ضع WorkbookCreate](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookCreate)|
 
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookCreate) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
+ ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookCreate) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك تنفيذ تفاعلات REST مباشرة من متصفح الويب.
 
  يمكنك استخدام**cURL** أداة سطر الأوامر للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
 
@@ -125,9 +125,9 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/newworkbook.xlsx?isWriteOver=fa
 
 ## عائلة Cloud SDK
 
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. يعتني SDK بالتفاصيل منخفضة المستوى ويتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة من Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام حزم SDK متنوعة:
+توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
 
 
 {{< tabs tabTotal="5" tabID="4" tabName1="C#" tabName2="Java" tabName3="Perl" tabName4="Go" tabName5="Swift" >}}

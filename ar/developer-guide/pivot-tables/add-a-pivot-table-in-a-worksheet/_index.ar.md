@@ -1,17 +1,17 @@
 ﻿---
-title: أضف جدول محوري في Excel Workhee
+title: إضافة جدول محوري في ورقة عمل Excel
 second_title: Aspose.Cells Cloud Documen
 linktitle: يضيف
 type: docs
 url: /ar/pivot-tables/add/
 aliases: [/add-a-pivot-table-in-a-worksheet/]
 keywords: Add a pivot table in an Excel worksheet
-description: Aspose.Cells Cloud REST API يدعم إضافة جدول محوري في ورقة عمل Excel. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
+description: Aspose.Cells Cloud REST API يدعم إضافة جدول محوري في ورقة عمل Excel. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 30
 ---
-يشير هذا REST API إلى `add` جدول محوري في ورقة عمل.
+يشير REST API إلى `add` إلى جدول محوري في ورقة العمل.
  
-## RSET API
+## رسيت API
  
 ```bash
  
@@ -20,19 +20,19 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables
 ```
  معلمات الطلب هي:
  
-| اسم المعلمة| يكتب| المسار / سلسلة الاستعلام / HTTPBody|وصف|
+| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/HTTPBody|وصف|
 |:- |:- |:- |:- |
 | اسم| خيط| طريق| اسم الملف.|
 | اسم الورقة| خيط| طريق| اسم ورقة العمل.|
 | طلب|| جسم| CreatePivotTableRequest dto في نص الطلب.|
-| مجلد| خيط| استفسار| مجلد المستند.|
+| مجلد| خيط| استفسار| مجلد الوثيقة.|
 | اسم التخزين| خيط| استفسار| اسم التخزين.|
-| مصدر معلومات| خيط| استفسار| بيانات ذاكرة التخزين المؤقت الجديدة لـ PivotTable.|
-| destCellName| خيط| استفسار| الخلية الموجودة في الزاوية العلوية اليسرى من النطاق الوجهة لتقرير PivotTable.|
+| مصدر معلومات| خيط| استفسار| بيانات ذاكرة التخزين المؤقت PivotTable الجديدة.|
+| destCellName| خيط| استفسار| الخلية الموجودة في الزاوية العلوية اليمنى من النطاق الوجهة لتقرير PivotTable.|
 | اسم الطاولة| خيط| استفسار| اسم تقرير PivotTable الجديد.|
-| استخدم نفس المصدر| قيمة منطقية| استفسار| يشير إلى ما إذا كان يتم استخدام نفس مصدر البيانات عند استخدام جدول محوري آخر لمصدر البيانات هذا. إذا كانت الخاصية صحيحة ، فسيتم حفظ الذاكرة.|
+| useSameSource| منطقية| استفسار| يشير إلى ما إذا كان سيتم استخدام نفس مصدر البيانات عندما يستخدم جدول محوري موجود آخر مصدر البيانات هذا. إذا كانت الخاصية صحيحة، فسيتم حفظ الذاكرة.|
  
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/PivotTables/PutWorksheetPivotTable) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
+ ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/PivotTables/PutWorksheetPivotTable) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك تنفيذ تفاعلات REST مباشرة من متصفح الويب.
  
 يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
  
@@ -69,9 +69,9 @@ curl -v  "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet
  
 ## عائلة Cloud SDK
  
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. يعتني SDK بالتفاصيل منخفضة المستوى ويتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة من Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
  
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام حزم SDK متنوعة:
+توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 

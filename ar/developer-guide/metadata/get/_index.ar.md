@@ -1,14 +1,14 @@
 ﻿---
 title: احصل على البيانات الوصفية من ملف Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: احصل عليه دون استخدام ستوراج
+linktitle: احصل عليه دون استخدام storag
 type: docs
 url: /ar/metadata/get/
 keywords: Get properties from Excel files
-description: Aspose.Cells Cloud REST API يدعم الحصول على الخصائص من ملفات Excel. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
+description: Aspose.Cells Cloud REST API يدعم الحصول على الخصائص من ملفات الاكسل. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 23
 ---
-يشير هذا REST API إلى الحصول على `metadata` من عدة ملفات Excel.
+يشير REST API إلى الحصول على `metadata` من ملفات Excel المتعددة.
 
 ```bash
 
@@ -16,11 +16,11 @@ POST https://api.aspose.cloud/v3.0/cells/metadata/get
 
 ```
 
-- **معامِل الاستعلام**
+- **معلمة الاستعلام**
 
 |اسم المعلمة|يكتب|وصف|
 |:- |:- |:- |
-| يكتب| خيط| الكل / مدمج / مخصص|
+| يكتب| خيط| الكل/مدمج/مخصص|
 
 
 - **طلب معلمة الجسم**
@@ -49,9 +49,9 @@ POST https://api.aspose.cloud/v3.0/cells/metadata/get
 ```
 - **عائلة Cloud SDK**
 
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. يعتني SDK بالتفاصيل منخفضة المستوى ويتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة من Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام حزم SDK متنوعة:
+توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
 
 
 {{< tabs tabTotal="9" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" tabName9="Python" >}}

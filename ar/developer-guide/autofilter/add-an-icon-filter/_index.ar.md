@@ -1,17 +1,17 @@
 ﻿---
-title: إضافة عامل تصفية رمز في Excel عمل
+title: إضافة عامل تصفية أيقونة في ورقة عمل Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: إضافة رمز فيلتي
+linktitle: إضافة فلتر أيقونة
 type: docs
 url: /ar/autofilter/add-icon-filter/
 aliases: [/add-an-icon-filter/,/autofilter/add-an-icon-filter/]
 keywords: Adds an icon filter on an Excel worksheet
-description: يدعم Aspose.Cells Cloud API إضافة عامل تصفية رمز في ورقة عمل Excel. يدعم SDK أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
+description: يدعم Aspose.Cells Cloud API إضافة مرشح أيقونات في ورقة عمل Excel. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 65
 ---
-يشير هذا REST API إلى إضافة `icon filter` على ورقة عمل Excel.
+يشير REST API إلى إضافة `icon filter` إلى ورقة عمل Excel.
 
-## RSET API
+## رسيت API
 
 ```bash
 
@@ -21,20 +21,20 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/
 
 معلمات الطلب هي:
 
-| اسم المعلمة| يكتب| المسار / سلسلة الاستعلام / HTTPBody|وصف|
+| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/HTTPBody|وصف|
 |:- |:- |:- |:- |
 | اسم| خيط| طريق|اسم المصنف.|
 | اسم الورقة| خيط| طريق| اسم ورقة العمل.|
 |يتراوح|خيط| استفسار||
-|الفهرس الميداني|عدد صحيح| استفسار||
-|iconSetType|خيط| استفسار| أسهم 3 / سهام رمادي 3 / أعلام 3 / إشارات 3 / رموز 3 / رموز 32 / إشارات مرور 31 / إشارات مرور 32 / سهام 4 / سهام رمادي 4 / تصنيف 4 / RedToBlack4 / TrafficLights4 / أسهم 5 / سهام رمادي 5 / أرباع 5 / Rating5 / Stars3 / Boxes5 / Triangles3 / None / 3 ColorSet|
-|iconId|عدد صحيح| استفسار||
-|ماتش بلانكس|خيط| استفسار|خطأ صحيح|
+|fieldIndex|عدد صحيح| استفسار||
+|IconSetType|خيط| استفسار| أسهم3/سهامرمادي3/أعلام3/علامات3/رموز3/رموز32/أضواء المرور31/أضواء المرور32/أسهم4/أسهمرمادي4/تقييم4/أحمرإلىأسود4/إشارات المرور4/أسهم5/أسهمرمادي5/أرباع5/تقييم5/نجوم3/صناديق5/مثلثات3/لا شيء/ CustomSet/الابتسامات3/الابتسامات الملونة3|
+|معرف_الرمز|عدد صحيح| استفسار||
+|matchBlanks|خيط| استفسار|خطأ صحيح|
 |ينعش|خيط| استفسار|خطأ صحيح|
 |مجلد|خيط| استفسار|مجلد المصنف الأصلي.|
 |اسم التخزين| استفسار|خيط|اسم التخزين.|
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetIconFilter) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
+ ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetIconFilter) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك تنفيذ تفاعلات REST مباشرة من متصفح الويب.
 
 يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
 
@@ -71,9 +71,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFil
 
 ## عائلة Cloud SDK
 
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. يعتني SDK بالتفاصيل منخفضة المستوى ويتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة من Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام حزم SDK متنوعة:
+توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" >}}
 

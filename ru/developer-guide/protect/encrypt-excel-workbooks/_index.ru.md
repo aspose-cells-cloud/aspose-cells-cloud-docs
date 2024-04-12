@@ -1,15 +1,15 @@
 ﻿---
-title: Зашифровать рабочую книгу Excel
+title: Зашифруйте рабочую книгу Excel
 second_title: Aspose.Cells Cloud Documen
 linktitle: Шифровать
 type: docs
 url: /ru/workbook/encrypt/
 aliases: [/encrypt-excel-workbooks/]
 keywords: Encrypt Excel workbook
-description: Aspose.Cells Cloud REST API поддерживает шифрование книги Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и swift.
+description: Aspose.Cells Cloud REST API поддерживает шифрование книги Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 20
 ---
-Этот REST API шифрует Excel `workbook`.
+Этот REST API зашифровывает Excel `workbook`.
 
 **Параметр запроса**
 
@@ -22,25 +22,25 @@ weight: 20
 
 |Имя параметра|Тип|Описание|
 |:- |:- |:- |
-|шифрование|WorkbookEncryptionRequest||
+|шифрование|Запрос на шифрование книги||
 
-**WorkbookEncryptionRequest**
+**Запрос на шифрование книги**
 |Имя параметра|Тип|Описание|
 |:- |:- |:- |
-|Тип шифрования|нить|XOR/Compatible/EnhancedCryptographicProviderV1/StrongCryptographicProvider|
-|длина ключа|целое число||
+|Тип шифрования|нить|XOR/Совместимый/EnhancedCryptographicProviderV1/StrongCryptographicProvider|
+|Длина ключа|целое число||
 |Пароль|нить||
 
 
 ## ОТДЫХ API
 
-|**API**|**Тип**|**Описание**|**Свэггер Ссылка**|
+|**API**|**Тип**|**Описание**|**Сваггер Ссылка**|
 |:- |:- |:- |:- |
-|/cells/{имя}/шифрование|ПОЧТА|Зашифровать документ Excel|[PostEncryptDocument](https://apireference.aspose.cloud/cells/#/Workbook/PostEncryptDocument)|
+|/cells/{имя}/шифрование|ПОЧТА|Зашифровать документ Excel|[Постшифроватьдокумент](https://apireference.aspose.cloud/cells/#/Workbook/PostEncryptDocument)|
 
-[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostEncryptDocument) определяет общедоступный программный интерфейс и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostEncryptDocument) определяет общедоступный интерфейс программирования и позволяет выполнять взаимодействие с REST непосредственно из веб-браузера.
 
- Вы можете использовать**cURL** инструмент командной строки для простого доступа к веб-службам Aspose.Cells. В следующем примере показано, как совершать звонки в Cloud API с номером cURL.
+ Вы можете использовать**cURL** инструмент командной строки для легкого доступа к веб-службам Aspose.Cells. В следующем примере показано, как позвонить на Cloud API с помощью cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
@@ -74,9 +74,9 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/encryption" -H "acce
 
 ## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK позаботится о низкоуровневых деталях и позволит вам сосредоточиться на задачах вашего проекта. Пожалуйста, ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) полный список Aspose.Cells Cloud SDK.
+ Использование SDK — лучший способ ускорить разработку. SDK заботится о деталях низкого уровня и позволяет вам сосредоточиться на задачах проекта. Пожалуйста, ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для получения полного списка Aspose.Cells Cloud SDK.
 
-В следующих примерах кода показано, как выполнять вызовы веб-служб Aspose.Cells с помощью различных SDK.
+Следующие примеры кода демонстрируют, как выполнять вызовы веб-служб Aspose.Cells с использованием различных SDK:
 
 
 {{< tabs tabTotal="11" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" tabName11="Swift" >}}

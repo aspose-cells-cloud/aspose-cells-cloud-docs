@@ -1,15 +1,15 @@
 ﻿---
-title: احصل على تنسيق شرطي
+title: الحصول على التنسيق الشرطي
 type: docs
 url: /ar/conditional-formattings/get-all/
 aliases: [/get-conditional-formattings-of-worksheet/]
 keywords: REST API, spreadsheets, excel, get condition formattin
-description: "Cells.Cloud API لـ Excel تعمل: احصل على تنسيق الشرط"
+description: "Cells.Cloud API لـ Excel التشغيل: الحصول على تنسيق الحالة"
 weight: 20
 ---
- يشير هذا REST API إلى الحصول على تنسيقات شرطية
+ يشير REST API إلى الحصول على التنسيقات الشرطية
  
-## RSET API
+## رسيت API
  
 ```bash
  
@@ -18,14 +18,14 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditional
 ```
  معلمات الطلب هي:
  
-| اسم المعلمة| يكتب| المسار / سلسلة الاستعلام / HTTPBody|وصف|
+| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/HTTPBody|وصف|
 |:- |:- |:- |:- |
 | اسم| خيط| طريق||
 | اسم الورقة| خيط| طريق||
 | مجلد| خيط| استفسار||
 | اسم التخزين| خيط| استفسار| اسم التخزين.|
  
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/GetWorksheetConditionalFormattings) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
+ ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/GetWorksheetConditionalFormattings) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك تنفيذ تفاعلات REST مباشرة من متصفح الويب.
  
 يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
  
@@ -285,7 +285,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditi
 
 {{< /tabs >}}
 ## **مصدر SDK**
-يمكن تنزيل Aspose.Cells Cloud SDKs من الصفحة التالية:[مجموعات SDK المتوفرة](/cells/ar/available-sdks/)
+يمكن تنزيل حزم SDK السحابية Aspose.Cells من الصفحة التالية:[حزم SDK المتاحة](/cells/ar/available-sdks/)
 ### **أمثلة SDK**
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 

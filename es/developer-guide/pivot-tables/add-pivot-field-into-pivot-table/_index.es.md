@@ -1,17 +1,17 @@
 ﻿---
-title: Agregue un campo dinámico en la tabla dinámica
+title: Agregar un campo dinámico a la tabla dinámica
 second_title: Aspose.Cells Cloud Documen
-linktitle: Agregar campo pivote
+linktitle: Agregar campo dinámico
 type: docs
 url: /es/pivot-tables/add-pivot-field/
 aliases: [/add-a-pivot-table-in-a-worksheet/]
 keywords: Add a pivot field in a pivot table
-description: Aspose.Cells Cloud REST API admite agregar un campo dinámico en una tabla dinámica. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift
+description: Aspose.Cells Cloud REST API admite la adición de un campo dinámico en una tabla dinámica. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 40
 ---
-Este REST API indica el campo pivote `add` en la tabla dinámica
+Este REST API indica que `add` gire el campo hacia la tabla dinámica
  
-## RESET API
+## RSET API
  
 ```bash
  
@@ -23,13 +23,13 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables
 | Nombre del parámetro| Tipo| Ruta/Cadena de consulta/Cuerpo HTTP|Descripción|
 |:- |:- |:- |:- |
 | nombre| cadena| camino| Nombre del documento.|
-| hojaNombre| cadena| camino| El nombre de la hoja de cálculo.|
-| ÍndiceDeTablaPivotante| entero| camino| Índice de tabla dinámica|
-| pivotFieldType| cadena| consulta| El tipo de área de campos.|
-| pedido|| cuerpo| Dto que restringe los índices de campo.|
-| necesitarecalcular| booleano| consulta| FALSO|
+| nombre de la hoja| cadena| camino| El nombre de la hoja de trabajo.|
+| índice de tabla dinámica| entero| camino| Índice de tabla dinámica|
+| tipo de campo pivote| cadena| consulta| El tipo de área de campos.|
+| pedido|| cuerpo| Dto que limita los índices de campo.|
+| necesitaReCalcular| booleano| consulta| FALSO|
 | carpeta| cadena| consulta| Carpeta del documento.|
-| NombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
+| nombredealmacenamiento| cadena| consulta| nombre del almacenamiento.|
  
  El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/PivotTables/PutPivotTableField) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
  
@@ -66,11 +66,11 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/workshe
  
 {{< /tabs >}}
  
-## Familia SDK de la nube
+## Familia de SDK en la nube
  
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se ocupa de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor, echa un vistazo a la[repositorio GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de Cloud.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor revisa el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de nube.
  
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código demuestran cómo realizar llamadas a servicios web Aspose.Cells utilizando varios SDK:
  
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="Ruby" tabName4="Python" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" >}}
 

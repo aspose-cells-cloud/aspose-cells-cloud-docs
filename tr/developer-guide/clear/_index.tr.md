@@ -1,14 +1,14 @@
 ﻿---
-title: temiz
+title: Clea
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/clear/
 aliases: [/clearobjects/]
 keywords: Clear internal objects of Excel files
-description: Aspose.Cells Cloud REST API, Excel dosyalarının dahili nesnelerini temizlemeyi destekler. SDK, geliştirme dili türlerini destekler. Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift'i içerir
+description: Aspose.Cells Cloud REST API, Excel dosyalarının dahili nesnelerinin temizlenmesini destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 39
 ---
-Bu REST API, bir Excel dosyasında `clear` excel nesnesini belirtir.
+Bu REST API, Excel dosyasındaki `clear` excel nesnesini gösterir.
 
 ## RSET API
 
@@ -17,16 +17,16 @@ Bu REST API, bir Excel dosyasında `clear` excel nesnesini belirtir.
 POST https://api.aspose.cloud/v3.0/cells/clearobjects
 
 ```
- o istek parametreleri şunlardır:
+ istek parametreleri şunlardır:
  
 | Parametre adı| Tip| Yol/Sorgu Dizesi/HTTPBody|Tanım|
 |:- |:- |:- |:- |
 | dosya| dosya| form verisi| Yüklenecek dosya|
-| Nesne türü| sicim| sorgu|yinelenen satırlar/boş sütunlar/boşluklar/formül/içerik/stil/grafik/yorum/resim/şekil/liste nesnesi/köprü/olenesne/pivottable/doğrulama/Arka Plan|
+| Nesne türü| sicim| sorgu|kopya satırlar/boş sütunlar/boş satırlar/formül/içerik/stil/grafik/yorum/resim/şekil/liste nesnesi/köprü/olenesnesi/döndürülebilir tablo/doğrulama/Arka plan|
  
- bu[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/LightCells/PostClearObjects) herkesin erişebileceği bir programlama arabirimi tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/LightCells/PostClearObjects) herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
  
-Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Cloud API'e nasıl çağrı yapılacağını gösterir.
+Aspose.Cells web servislerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnekte, cURL ile Cloud API'e nasıl çağrı yapılacağı gösterilmektedir.
  
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
  
@@ -72,9 +72,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/clearobjects?objecttype=comment" \
  
 ## Bulut SDK Ailesi
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, alt düzey ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen kontrol edin[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+ SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük düzeyli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanıza olanak tanır. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
 
-Aşağıdaki kod örnekleri, çeşitli SDK'lar kullanılarak Aspose.Cells web hizmetlerine nasıl çağrı yapılacağını gösterir:
+Aşağıdaki kod örnekleri, çeşitli SDK'ları kullanarak Aspose.Cells web hizmetlerine nasıl çağrı yapılacağını gösterir:
 
 
 {{< tabs tabTotal="9" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" tabName9="Python" >}}

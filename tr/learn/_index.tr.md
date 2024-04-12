@@ -13,7 +13,7 @@ Bu site, uygulamalar oluşturmak için Aspose.Cells Bulut API'leri geliştirme f
 
  Aspose.Cells Bulut API, geliştiricilere elektronik tabloyla ilgili çeşitli görevleri yürütmek için kapsamlı bir araç seti sunan bulut tabanlı bir hizmettir.
 
-Bu API, Aspose'in bulut tabanlı belge işleme araçları paketinin bir parçasıdır ve kullanıcıların Microsoft Excel belgelerini (XLS, XLSX, CSV ve daha fazlası dahil) API bulutu aracılığıyla programlı olarak işlemesine olanak tanır.
+Bu API, Aspose'in bulut tabanlı belge işleme araçları paketinin bir parçasıdır ve kullanıcıların Microsoft Excel belgelerini (XLS, XLSX, CSV ve daha fazlası dahil) API bulutu aracılığıyla programlı bir şekilde işlemesine olanak tanır.
 
 ## Aspose.Cells Bulut API'lerini kimler kullanmalı?
 

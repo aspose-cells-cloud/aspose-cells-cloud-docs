@@ -1,12 +1,12 @@
 ﻿---
-title: داونلوا
+title: تحميل
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/docker/downloads/
 description: تنزيل Aspose.Cells صور Cloud Docker
 weight: 30
 ---
-##  Windows خادم 2016 ##
+##  Windows سيرفر 2016 ##
 
 ```powershell
 

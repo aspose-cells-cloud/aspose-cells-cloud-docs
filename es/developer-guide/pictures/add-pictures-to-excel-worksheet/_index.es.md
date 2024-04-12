@@ -6,12 +6,12 @@ type: docs
 url: /es/pictures/add/
 aliases: [/add-pictures-to-excel-worksheet/]
 keywords: Add a picture in an Excel file
-description: Aspose.Cells Cloud REST API admite agregar una imagen en un archivo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift
+description: Aspose.Cells Cloud REST API admite agregar una imagen en un archivo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 20
 ---
-Este REST API le indica a `add` una nueva imagen para una hoja de trabajo Excel.
+Este REST API indica al `add` una nueva imagen para una hoja de trabajo Excel.
  
-## RESET API
+## RSET API
  
 ```bash
  
@@ -22,16 +22,16 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
  
 | Nombre del parámetro| Tipo| Ruta/Cadena de consulta/Cuerpo HTTP|Descripción|
 |:- |:- |:- |:- |
-| nombre| cadena| camino|El nombre del libro.|
-| hojaNombre| cadena| camino| El nombre de la hoja de trabajo.|
+| nombre| cadena| camino|El nombre del libro de trabajo.|
+| nombre de la hoja| cadena| camino| El nombre de la hoja de trabajo.|
 | imagen|| cuerpo| Objeto de imagen|
 | fila superior izquierda| entero| consulta|0 |
 | columna superior izquierda| entero| consulta|0 |
 | fila inferior derecha| entero| consulta|0 |
-| columnaderechainferior| entero| consulta|0 |
-| ruta de imagen| cadena| consulta| La ruta de la imagen, si no se proporcionan los datos de la imagen, se inspecciona en el cuerpo de la solicitud.|
+| columna inferior derecha| entero| consulta|0 |
+| imagenRuta| cadena| consulta| La ruta de la imagen, si no se proporciona, los datos de la imagen se inspeccionan en el cuerpo de la solicitud.|
 | carpeta| cadena| consulta| La carpeta del libro de trabajo.|
-| NombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
+| nombredealmacenamiento| cadena| consulta| nombre del almacenamiento.|
  
  El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/Pictures/PutWorksheetAddPicture) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
  
@@ -67,11 +67,11 @@ curl -v "http://api.aspose.com/v1.1/cells/Sample_Test_Book.xls/worksheets/Sheet6
  
 {{< /tabs >}}
  
-## Familia SDK de la nube
+## Familia de SDK en la nube
  
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se ocupa de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor, echa un vistazo a la[repositorio GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de Cloud.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor revisa el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de nube.
  
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código demuestran cómo realizar llamadas a servicios web Aspose.Cells utilizando varios SDK:
  
  
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Objective C" tabName8="Android" tabName9="Perl" tabName10="Go" >}}

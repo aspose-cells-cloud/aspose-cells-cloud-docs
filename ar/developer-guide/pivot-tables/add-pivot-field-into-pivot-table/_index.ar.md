@@ -1,17 +1,17 @@
 ﻿---
-title: أضف حقلًا محوريًا إلى الجدول المحوري
+title: أضف حقلاً محوريًا إلى الجدول المحوري
 second_title: Aspose.Cells Cloud Documen
-linktitle: أضف حقل محوري
+linktitle: إضافة حقل محوري
 type: docs
 url: /ar/pivot-tables/add-pivot-field/
 aliases: [/add-a-pivot-table-in-a-worksheet/]
 keywords: Add a pivot field in a pivot table
-description: Aspose.Cells Cloud REST API يدعم إضافة حقل محوري في جدول محوري. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
+description: Aspose.Cells Cloud REST API يدعم إضافة حقل محوري في جدول محوري. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 40
 ---
-يشير هذا REST API إلى `add` الحقل المحوري في جدول محوري
+يشير REST API إلى الحقل المحوري `add` في الجدول المحوري
  
-## RSET API
+## رسيت API
  
 ```bash
  
@@ -20,18 +20,18 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables
 ```
  معلمات الطلب هي:
  
-| اسم المعلمة| يكتب| المسار / سلسلة الاستعلام / HTTPBody|وصف|
+| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/HTTPBody|وصف|
 |:- |:- |:- |:- |
 | اسم| خيط| طريق| اسم الملف.|
 | اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| pivotTable فهرس| عدد صحيح| طريق| فهرس الجدول المحوري|
-| pivotFieldType| خيط| استفسار| نوع منطقة الحقول.|
-| طلب|| جسم| Dto الذي يحصر فهارس المجال|
-| تحتاج إلى إعادة الحساب| قيمة منطقية| استفسار| خطأ شنيع|
-| مجلد| خيط| استفسار| مجلد المستند.|
+| PivotTableIndex| عدد صحيح| طريق| مؤشر الجدول المحوري|
+| PivotFieldType| خيط| استفسار| نوع منطقة الحقول.|
+| طلب|| جسم| Dto الذي يحتوي على فهارس الحقول|
+| needReCalculate| منطقية| استفسار| خطأ شنيع|
+| مجلد| خيط| استفسار| مجلد الوثيقة.|
 | اسم التخزين| خيط| استفسار| اسم التخزين.|
  
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/PivotTables/PutPivotTableField) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
+ ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/PivotTables/PutPivotTableField) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك تنفيذ تفاعلات REST مباشرة من متصفح الويب.
  
 يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
  
@@ -68,9 +68,9 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/workshe
  
 ## عائلة Cloud SDK
  
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. يعتني SDK بالتفاصيل منخفضة المستوى ويتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة من Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
  
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام حزم SDK متنوعة:
+توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
  
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="Ruby" tabName4="Python" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" >}}
 

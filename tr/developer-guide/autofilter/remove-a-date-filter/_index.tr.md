@@ -1,5 +1,5 @@
 ﻿---
-title: Bir Tarih Filtresini Silme
+title: Tarih Filtresini Sil
 second_title: Aspose.Cells Cloud Documen
 linktitle: Tarih filtresini sil
 type: docs
@@ -7,9 +7,9 @@ url: /tr/autofilter/delete-date-filter/
 aliases: [/remove-a-date-filter/,/autofilter/delete-a-date-filter/]
 weight: 100
 keywords: Delete a date filter on an Excel worksheet
-description: Aspose.Cells Bulut API, bir Excel çalışma sayfasında bir tarih filtresinin silinmesini destekler. SDK, geliştirme dili türlerini destekler. Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift'i içerir
+description: Aspose.Cells Bulut API, Excel çalışma sayfasındaki tarih filtresinin silinmesini destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 ---
-Bu REST API, bir Excel çalışma sayfasındaki bir tarih filtresinin silineceğini belirtir.
+Bu REST API, Excel çalışma sayfasındaki bir tarih filtresinin silinmesini belirtir.
             
  
 ## RSET API
@@ -25,8 +25,8 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilt
 |:- |:- |:- |:- |
 | isim| sicim| yol||
 | sayfaAdı| sicim| yol||
-| alan dizini| tamsayı| sorgu||
-| tarihSaatGruplamaTürü| sicim| sorgu||
+| alanIndex| tamsayı| sorgu||
+| dateTimeGroupingType| sicim| sorgu||
 | yıl| tamsayı| sorgu|0 |
 | ay| tamsayı| sorgu|0 |
 | gün| tamsayı| sorgu|0 |
@@ -36,9 +36,9 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilt
 | dosya| sicim| sorgu||
 | depolamaAdı| sicim| sorgu| depolama adı.|
  
- bu[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/AutoFilter/DeleteWorksheetDateFilter) herkesin erişebileceği bir programlama arabirimi tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/AutoFilter/DeleteWorksheetDateFilter) herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
  
-Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Cloud API'e nasıl çağrı yapılacağını gösterir.
+Aspose.Cells web servislerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnekte, cURL ile Cloud API'e nasıl çağrı yapılacağı gösterilmektedir.
  
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
@@ -78,9 +78,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFil
 
 ## Bulut SDK Ailesi
  
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, alt düzey ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen kontrol edin[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+ SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük düzeyli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanıza olanak tanır. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
  
-Aşağıdaki kod örnekleri, çeşitli SDK'lar kullanılarak Aspose.Cells web hizmetlerine nasıl çağrı yapılacağını gösterir:
+Aşağıdaki kod örnekleri, çeşitli SDK'ları kullanarak Aspose.Cells web hizmetlerine nasıl çağrı yapılacağını gösterir:
  
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" >}}

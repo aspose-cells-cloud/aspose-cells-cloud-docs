@@ -1,17 +1,17 @@
 ﻿---
-title: Trabajando con filtro pivote
+title: Trabajar con filtro pivote
 second_title: Aspose.Cells Cloud Documen
-linktitle: filtros
+linktitle: Filtros
 type: docs
 url: /es/pivot-tables/add-filters/
 aliases: [/working-with-pivot-filters/]
 keywords: Add filter for a pivot table
-description: Aspose.Cells Cloud REST API admite agregar filtro para una tabla dinámica. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift
+description: Aspose.Cells Cloud REST API admite la adición de filtro para una tabla dinámica. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 50
 ---
-Este REST API indica `add` pivote `filter` para índice de tabla piovt
+Este REST API indica `add` pivote `filter` para el índice de la tabla piovt
  
-## RESET API
+## RSET API
  
 ```bash
  
@@ -23,12 +23,12 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables
 | Nombre del parámetro| Tipo| Ruta/Cadena de consulta/Cuerpo HTTP|Descripción|
 |:- |:- |:- |:- |
 | nombre| cadena| camino||
-| hojaNombre| cadena| camino||
-| ÍndiceDeTablaPivotante| entero| camino||
+| nombre de la hoja| cadena| camino||
+| índice de tabla dinámica| entero| camino||
 | filtrar|| cuerpo||
-| necesitarecalcular| booleano| consulta| FALSO|
+| necesitaReCalcular| booleano| consulta| FALSO|
 | carpeta| cadena| consulta||
-| NombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
+| nombredealmacenamiento| cadena| consulta| nombre del almacenamiento.|
  
  El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/PivotTables/PutWorksheetPivotTableFilter) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
  
@@ -65,11 +65,11 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/pivott
  
 {{< /tabs >}}
  
-## Familia SDK de la nube
+## Familia de SDK en la nube
  
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se ocupa de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor, echa un vistazo a la[repositorio GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de Cloud.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor revisa el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de nube.
  
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código demuestran cómo realizar llamadas a servicios web Aspose.Cells utilizando varios SDK:
  
  
  

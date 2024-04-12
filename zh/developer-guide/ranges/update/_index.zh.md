@@ -14,4 +14,4 @@ weight: 20
 - [如何在 Excel 工作表上设置范围样式。](/cells/zh/ranges/update/style/) 
 - [如何在 Excel 工作表上设置范围值。](/cells/zh/ranges/update/values/) 
 - [如何在 Excel 工作表上设置行高范围。](/cells/zh/ranges/update/row-height/) 
-- [如何在 Excel 工作表上设置范围的列宽。](/cells/zh/ranges/update/column-width/) 
+- [如何在 Excel 工作表上设置范围的列宽度。](/cells/zh/ranges/update/column-width/) 

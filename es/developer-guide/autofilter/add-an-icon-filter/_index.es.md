@@ -1,17 +1,17 @@
 ﻿---
-title: Agregue un filtro de icono en una hoja de trabajo Excel
+title: Agregar un filtro de ícono en una hoja de trabajo Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: Añadir filtro de iconos
+linktitle: Agregar filtro de icono
 type: docs
 url: /es/autofilter/add-icon-filter/
 aliases: [/add-an-icon-filter/,/autofilter/add-an-icon-filter/]
 keywords: Adds an icon filter on an Excel worksheet
-description: El Aspose.Cells Cloud API admite agregar un filtro de icono en una hoja de trabajo Excel. El SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift
+description: Aspose.Cells Cloud API admite la adición de un filtro de ícono en una hoja de trabajo Excel. El SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 65
 ---
 Este REST API indica agregar un `icon filter` en una hoja de trabajo Excel.
 
-## RESET API
+## RSET API
 
 ```bash
 
@@ -23,16 +23,16 @@ Los parámetros de la solicitud son:
 
 | Nombre del parámetro| Tipo| Ruta/Cadena de consulta/Cuerpo HTTP|Descripción|
 |:- |:- |:- |:- |
-| nombre| cadena| Camino|El nombre del libro.|
-| hojaNombre| cadena| Camino| El nombre de la hoja de cálculo.|
+| nombre| cadena| Camino|El nombre del libro de trabajo.|
+| nombre de la hoja| cadena| Camino| El nombre de la hoja de trabajo.|
 |rango|cadena| Consulta||
 |índice de campo|entero| Consulta||
-|iconSetType|cadena| Consulta| Arrows3/ArrowsGray3/Flags3/Signs3/Symbols3/Symbols32/TrafficLights31/TrafficLights32/Arrows4/ArrowsGray4/Rating4/RedToBlack4/TrafficLights4/Arrows5/ArrowsGray5/Quarters5/Rating5/Stars3/Boxes5/Triangles3/Ninguno/CustomSet/Smilies 3/ColorEmoticonos3|
-|iconoId|entero| Consulta||
-|partidoBlanks|cadena| Consulta|verdadero Falso|
+|iconoEstablecerTipo|cadena| Consulta| Flechas3/FlechasGris3/Banderas3/Señales3/Símbolos3/Símbolos32/Semáforos31/Semáforos32/Flechas4/FlechasGris4/Clasificación4/RedToBlack4/Semáforos4/Flechas5/FlechasGris5/Cuartos5/Clasificación5/Estrellas3/Cajas5/Triángulos3/Ninguno/Conjunto personalizado/Caritas3/Color Emoticonos3|
+|ID de icono|entero| Consulta||
+|MatchBlancos|cadena| Consulta|verdadero Falso|
 |actualizar|cadena| Consulta|verdadero Falso|
-|carpeta|cadena| Consulta|Carpeta original del libro de trabajo.|
-|NombreDeAlmacenamiento| Consulta|cadena|Nombre de almacenamiento.|
+|carpeta|cadena| Consulta|Carpeta del libro de trabajo original.|
+|nombredealmacenamiento| Consulta|cadena|Nombre del almacenamiento.|
 
  El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetIconFilter) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
 
@@ -69,11 +69,11 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFil
 {{< /tabs >}}
 
 
-## Familia SDK de la nube
+## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se ocupa de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor, echa un vistazo a la[repositorio GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de Cloud.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor revisa el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de nube.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código demuestran cómo realizar llamadas a servicios web Aspose.Cells utilizando varios SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" >}}
 

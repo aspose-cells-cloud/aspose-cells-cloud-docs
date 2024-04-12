@@ -9,7 +9,7 @@ keywords: Get a list object(table) into an Excel worksheet
 description: Aspose.Cells Cloud REST API unterstützt das Abrufen eines Listenobjekts (Tabelle) in ein Excel Arbeitsblatt. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
 weight: 9
 ---
-Dieser REST API gibt an, `get` Objektinformationen nach Index aufzulisten oder eine `list object`-Datei in ein anderes Format in einem Excel-Arbeitsblatt zu konvertieren.
+ Dieser REST API gibt an, `get` Objektinformationen nach Index aufzulisten oder eine `list object`-Datei in ein anderes Format in einem Excel-Arbeitsblatt zu konvertieren.
 
 ## RSET API
  

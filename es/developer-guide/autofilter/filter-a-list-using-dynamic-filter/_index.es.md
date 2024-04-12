@@ -1,17 +1,17 @@
 ﻿---
 title: Agregue un filtro de fecha dinámico en una hoja de trabajo Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: Añadir filtro dinámico
+linktitle: Agregar filtro dinámico
 type: docs
 url: /es/autofilter/add-dynamic-filter/
 aliases: [/filter-a-list-using-dynamic-filter/,/autofilter/add-a-dynamic-filter/]
 keywords: Adds a dynamic filter on an Excel worksheet
-description: El Aspose.Cells Cloud API admite agregar un filtro dinámico en una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift
+description: Aspose.Cells Cloud API admite agregar un filtro dinámico en una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 65
 ---
 Este REST API indica agregar un `dynamic filter` en una hoja de trabajo Excel.
  
-## RESET API
+## RSET API
  
 ```bash
  
@@ -23,14 +23,14 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/
 | Nombre del parámetro| Tipo| Ruta/Cadena de consulta/Cuerpo HTTP|Descripción|
 |:- |:- |:- |:- |
 | nombre| cadena| camino||
-| hojaNombre| cadena| camino||
+| nombre de la hoja| cadena| camino||
 | rango| cadena| consulta||
 | índice de campo| entero| consulta||
-| tipo de filtro dinámico| cadena| consulta||
-| partidoBlanks| booleano| consulta||
+| Tipo de filtro dinámico| cadena| consulta||
+| MatchBlancos| booleano| consulta||
 | actualizar| booleano| consulta||
 | carpeta| cadena| consulta||
-| NombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
+| nombredealmacenamiento| cadena| consulta| nombre del almacenamiento.|
  
  El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetDynamicFilter) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
  
@@ -70,11 +70,11 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFil
 
 {{< /tabs >}}
 
-## Familia SDK de la nube
+## Familia de SDK en la nube
  
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se ocupa de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor, echa un vistazo a la[repositorio GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de Cloud.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor revisa el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de nube.
  
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código demuestran cómo realizar llamadas a servicios web Aspose.Cells utilizando varios SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" >}}
 

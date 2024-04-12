@@ -1,9 +1,9 @@
 ﻿---
-title: ستوراغ
+title: تخزين
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/docker/storage/
-description: كيفية تعيين موضع التخزين حول Aspose.Cells Cloud لـ Docker
+description: كيفية ضبط موضع التخزين حول Aspose.Cells Cloud for Docker
 weight: 30
 ---
 ##  تكوين التخزين الافتراضي ##
@@ -45,7 +45,7 @@ weight: 30
 
 {{< /tabs >}}
 
-##  الوظيفة الافتراضية ##
+##  الموضع الافتراضي ##
 
 
 - **شبابيك**
@@ -67,7 +67,7 @@ c:\app\storageResource.json
 
 ##  تكوين التخزين المخصص ##
 
-تحتاج إلى إعادة تحديد ملف تعريف التخزين لملف صورة السحابة Aspose.Cells عندما يحتاج العميل إلى تحديد مجلد التخزين.
+تحتاج إلى إعادة تحديد ملف تعريف التخزين لملف الصورة السحابية Aspose.Cells عندما يحتاج العميل إلى تحديد مجلد التخزين.
 
 ``` powershell
 
@@ -76,4 +76,4 @@ docker run  -d  -v c:/data:c:/data  -p 47900:5000  -e LicensePublicKey=yourLicen
 ```
 
 **وثيقة مرجعية** : 
-  - [تشغيل عامل ميناء]( https://docs.docker.com/engine/reference/commandline/run/)
+  - [تشغيل عامل الميناء]( https://docs.docker.com/engine/reference/commandline/run/)

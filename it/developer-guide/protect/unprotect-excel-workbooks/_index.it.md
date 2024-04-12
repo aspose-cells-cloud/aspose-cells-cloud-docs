@@ -1,46 +1,46 @@
 ﻿---
-title: Rimuovere la protezione da un workboo Excel
+title: Sproteggi un workboo Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: Sprotetto
+linktitle: Non protetto
 type: docs
 url: /it/workbook/unprotect/
 aliases: [/unprotect-excel-workbooks/]
 keywords: REST API, spreadsheets, excel, merg
-description: "Cells.Cloud API per Excel operare: proteggere una cartella di lavoro Excel"
+description: "Cells.Cloud API per Excel funziona: protegge una cartella di lavoro Excel"
 weight: 60
 ---
 Questo REST API non protegge un Excel `workbook`.
 
-**Parametro di ricerca**
+**Parametro di query**
 
-|Nome parametro|Tipo|Descrizione|
+|Nome del parametro|Tipo|Descrizione|
 |:- |:- |:- |
-|cartella|corda|Cartella di lavoro originale.|
-|storageName|corda|Nome di archiviazione.|
+|cartella|corda|Cartella della cartella di lavoro originale.|
+|storageName|corda|Nome dell'archivio.|
 
-**Parametro del corpo della richiesta**
+**Richiedi parametro corpo**
 
-|Nome parametro|Tipo|Descrizione|
+|Nome del parametro|Tipo|Descrizione|
 |:- |:- |:- |
-|protezione|WorkbookProtectionRequest||
+|protezione|Richiesta di protezione della cartella di lavoro||
 
-**WorkbookProtectionRequest**
+**Richiesta di protezione della cartella di lavoro**
 
-|Nome parametro|Tipo|Descrizione|
+|Nome del parametro|Tipo|Descrizione|
 |:- |:- |:- |
-|Tipo di protezione|corda|TUTTI/CONTENUTI/NESSUNO/OGGETTI/SCENARI/STRUTTURA/FINESTRA|
+|Tipo di protezione|corda|TUTTO/CONTENUTO/NESSUNO/OGGETTI/SCENARI/STRUTTURA/FINESTRE|
 |Parola d'ordine|corda||
 
 
-## RIPOSO API
+## RESTO API
 
 |**API**|**Tipo**|**Descrizione**|**Collegamento spavaldo**|
 |:- |:- |:- |:- |
-|/celle/{nome}/protezione|ELIMINARE|Rimuovere la protezione di un documento|[DeleteUnProtectDocument](https://apireference.aspose.cloud/cells/#/Workbook/DeleteUnProtectDocument)|
+|/cells/{nome}/protezione|ELIMINARE|Rimuovere la protezione di un documento|[EliminaUnProtectDocument](https://apireference.aspose.cloud/cells/#/Workbook/DeleteUnProtectDocument)|
 
- IL[Specifica OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/DeleteUnProtectDocument) definisce un'interfaccia di programmazione accessibile pubblicamente e consente di eseguire interazioni REST direttamente da un browser web.
+ IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/DeleteUnProtectDocument) definisce un'interfaccia di programmazione accessibile pubblicamente e consente di eseguire interazioni REST direttamente da un browser web.
 
- Puoi usare**cURL** strumento da riga di comando per accedere facilmente ai servizi Web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate a Cloud API con cURL.
+ Puoi usare**cURL** strumento da riga di comando per accedere facilmente ai servizi web Aspose.Cells. Nell'esempio seguente viene illustrato come effettuare chiamate al Cloud API con cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
@@ -72,11 +72,11 @@ curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/protection" -H "ac
 
 {{< /tabs >}}
 
-## Famiglia di SDK cloud
+## Famiglia di SDK Cloud
 
- L'utilizzo di un SDK è il modo migliore per velocizzare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del tuo progetto. Si prega di controllare il[Deposito GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+ Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si prende cura dei dettagli di basso livello e ti consente di concentrarti sulle attività del tuo progetto. Si prega di controllare il[Repositorio GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK Cloud Aspose.Cells.
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+I seguenti esempi di codice dimostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
 
 {{< tabs tabTotal="11" tabID="4" tabName1="C#" tabName2="PHP" tabName3="Ruby" tabName4="Java" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" tabName11="Swift" >}}
 

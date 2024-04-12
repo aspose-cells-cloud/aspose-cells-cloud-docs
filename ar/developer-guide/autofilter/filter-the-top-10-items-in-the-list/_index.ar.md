@@ -1,17 +1,17 @@
 ﻿---
-title: أضف أفضل 10 عناصر في Excel workhe
+title: أضف أعلى 10 عناصر في ورقة عمل Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: أضف أفضل 10 فلات
+linktitle: أضف أفضل 10 مرشحات
 type: docs
 url: /ar/autofilter/add-top-10-filter/ 
 aliases: [/filter-the-top-10-items-in-the-list/, /autofilter/add-a-top-10-filter/ ]
 keywords: Adds a top10 filter on an Excel worksheet
-description: يدعم Aspose.Cells Cloud API إضافة عامل تصفية top10 في ورقة عمل Excel. يدعم SDK أنواعًا من لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
+description: يدعم السحابة Aspose.Cells API إضافة مرشح أعلى 10 في ورقة عمل Excel. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 65
 ---
-يشير هذا REST API إلى تصفية عنصر `top 10` في القائمة
+يشير REST API إلى تصفية عنصر `top 10` في القائمة
  
-## RSET API
+## رسيت API
  
 ```bash
  
@@ -20,21 +20,21 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/
 ```
  معلمات الطلب هي:
  
-| اسم المعلمة| يكتب| المسار / سلسلة الاستعلام / HTTPBody|وصف|
+| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/HTTPBody|وصف|
 |:- |:- |:- |:- |
 | اسم| خيط| طريق||
 | اسم الورقة| خيط| طريق||
 | يتراوح| خيط| استفسار||
-| الفهرس الميداني| عدد صحيح| استفسار||
-| أتوقف| قيمة منطقية| استفسار||
-| هو النسبة المئوية| قيمة منطقية| استفسار||
+| fieldIndex| عدد صحيح| استفسار||
+| أتوقف| منطقية| استفسار||
+| isPercent| منطقية| استفسار||
 | عدد الأصناف| عدد صحيح| استفسار||
-| ماتش بلانكس| قيمة منطقية| استفسار||
-| ينعش| قيمة منطقية| استفسار||
+| matchBlanks| منطقية| استفسار||
+| ينعش| منطقية| استفسار||
 | مجلد| خيط| استفسار||
 | اسم التخزين| خيط| استفسار| اسم التخزين.|
  
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetFilterTop10) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
+ ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetFilterTop10) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك تنفيذ تفاعلات REST مباشرة من متصفح الويب.
  
 يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
 
@@ -74,9 +74,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFil
 
 ## عائلة Cloud SDK
  
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. يعتني SDK بالتفاصيل منخفضة المستوى ويتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة من Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
  
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام حزم SDK متنوعة:
+توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
  
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" >}}
 

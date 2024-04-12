@@ -1,16 +1,16 @@
 ﻿---
-title: Combine archivos múltiples Excel en un archivo Excel
+title: Fusionar varios archivos Excel en un archivo Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: Multi-archivo
+linktitle: Archivo múltiple
 type: docs
 url: /es/merge/multi-files/
 keywords: Merge multi Excel files into Excel file
-description: Aspose.Cells Cloud REST API admite la fusión de varios archivos Excel en un archivo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift
+description: Aspose.Cells Cloud REST API admite la combinación de varios archivos Excel en un archivo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 32
 ---
-Este REST API indica `merge` múltiples archivos Excel en un archivo Excel.
+Este REST API indica `merge` varios archivos Excel en un archivo Excel.
 
-## RESET API
+## RSET API
  
 ```bash
  
@@ -23,7 +23,7 @@ POST http://api.aspose.cloud/v3.0/cells/merge
 |:- |:- |:- |:- |
 | archivo| archivo| formularioDatos| Subir Archivo|
 | formato| cadena| consulta| xlsx|
-| fusionar en una hoja| booleano| consulta| FALSO|
+| fusionarAUnaHoja| booleano| consulta| FALSO|
  
  El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/LightCells/PostMerge) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
  
@@ -71,11 +71,11 @@ curl -v "http://api.aspose.cloud/v3.0/cells/merge?format=xlsx" \
  
 {{< /tabs >}}
  
-## Familia SDK de la nube
+## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se ocupa de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor, echa un vistazo a la[repositorio GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de Cloud.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor revisa el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de nube.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código demuestran cómo realizar llamadas a servicios web Aspose.Cells utilizando varios SDK:
 
 
 {{< tabs tabTotal="9" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" tabName9="Python" >}}

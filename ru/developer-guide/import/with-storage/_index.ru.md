@@ -1,14 +1,14 @@
 ﻿---
-title: Импорт данных с использованием хранилища
+title: Импортировать данные с помощью хранилища
 second_title: Aspose.Cells Cloud Documen
-linktitle: Импорт данных с помощью хранилища
+linktitle: Импортировать данные с помощью хранилища
 type: docs
 url: /ru/import/with-using-storage/
 aliases: [/import-data-into-excel-worksheet/, /import-data-into-worksheet/ , /import-data-in-excel-worksheet/, /import-data/]
-description: "Cells.Cloud API для работы Excel: Импорт данных в рабочий лист Excel"
+description: "Cells.Облако API для Excel. Операция: импорт данных в рабочий лист Excel."
 weight: 10
 ---
-Этот REST API указывает `import data` в файле Excel.
+Этот REST API указывает `import data` в файл Excel.
  
 ## РСЕТ API
  
@@ -24,14 +24,14 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/importdata
 | имя| нить| путь||
 | папка| нить| запрос||
 | имя_хранилища| нить| запрос| имя хранилища.|
-| импорт данных|| тело||
+| импортдата|| тело||
 
-**Параметры параметров импорта данных**описаны в[справочная ссылка](/cells/ru/import/#import-data-option-parameter).
+**Параметры опций импорта данных** описаны в[ссылочная ссылка](/cells/ru/import/#import-data-option-parameter).
 
  
-[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData) определяет общедоступный программный интерфейс и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData) определяет общедоступный интерфейс программирования и позволяет выполнять взаимодействие с REST непосредственно из веб-браузера.
  
-Вы можете использовать инструмент командной строки cURL для простого доступа к веб-службам Aspose.Cells. В следующем примере показано, как звонить в Cloud API с номером cURL.
+Вы можете использовать инструмент командной строки cURL для легкого доступа к веб-службам Aspose.Cells. В следующем примере показано, как позвонить на Cloud API с помощью cURL.
  
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
  
@@ -65,5 +65,5 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/importdata" \
 {{< /tabs >}}
  
  
-В следующих примерах кода показано, как выполнять вызовы веб-служб Aspose.Cells с помощью различных SDK.
+Следующие примеры кода демонстрируют, как выполнять вызовы веб-служб Aspose.Cells с использованием различных SDK:
 

@@ -76,4 +76,4 @@ docker run  -d  -v c:/data:c:/data  -p 47900:5000  -e LicensePublicKey=yourLicen
 ```
 
 **Documento di riferimento** : 
-  - [Docker Run]( https://docs.docker.com/engine/reference/commandline/run/)
+  - [Esegui Docker]( https://docs.docker.com/engine/reference/commandline/run/)

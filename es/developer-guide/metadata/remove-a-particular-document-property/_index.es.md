@@ -1,17 +1,17 @@
 ﻿---
 title: Eliminar una propiedad de documento particular
 second_title: Aspose.Cells Cloud Documen
-linktitle: Eliminar
+linktitle: eliminar
 type: docs
 url: /es/document-properties/delete/
 aliases: [/remove-a-particular-document-property/]
 keywords: Delete, and update properties from excel files
-description: Aspose.Cells Cloud REST API admite la eliminación de propiedades de archivos de Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift
+description: Aspose.Cells Cloud REST API admite la eliminación de propiedades de archivos de Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 50
 ---
 Este REST API indica la propiedad del documento `delete`.
  
-## RESET API
+## RSET API
  
 ```bash
  
@@ -25,7 +25,7 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/documentproperties/{propertyNam
 | nombre| cadena| camino| El nombre del documento.|
 | nombre de la propiedad| cadena| camino| El nombre de la propiedad.|
 | carpeta| cadena| consulta| La carpeta de documentos.|
-| NombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
+| nombredealmacenamiento| cadena| consulta| nombre del almacenamiento.|
  
  El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/Properties/DeleteDocumentProperty) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
  
@@ -67,11 +67,11 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties/author
 
 {{< /tabs >}}
 
-## Familia SDK de la nube
+## Familia de SDK en la nube
  
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se ocupa de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor, echa un vistazo a la[repositorio GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de Cloud.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor revisa el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de nube.
  
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código demuestran cómo realizar llamadas a servicios web Aspose.Cells utilizando varios SDK:
 
 {{< tabs tabTotal="11" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" tabName11="Swift" >}}
 

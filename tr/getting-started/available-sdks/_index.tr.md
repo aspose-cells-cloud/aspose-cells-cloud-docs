@@ -1,27 +1,27 @@
 ﻿---
-title: Kullanılabilir SDK
+title: Mevcut SDK
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/available-sdks/
-description: Aspose.Cells Bulut, oluşturma, dönüştürme, birleştirme, bölme, korumalı, iç nesne işlemi vb. için Excel'i destekler
+description: Aspose.Cells Bulut, oluşturma, dönüştürme, birleştirme, bölme, koruma, iç nesne işlemleri vb. için Excel'i destekler
 weight: 30
 ---
 ## **Aspose.Cells Bulut SDK'ları**
-Aspose.Cells Cloud, mevcut sistemlere kolay entegrasyon sağlayan modern bir REST odaklı API'dir.
+Aspose.Cells Cloud, mevcut sistemlere kolay entegrasyon sağlayan, modern REST odaklı bir API'dir.
 ### **Neden bir SDK kullanmalısınız?**
-Bir geliştiricinin geliştirmeyi hızlandırmasının en hızlı yolu bir SDK (API istemcisi) kullanmaktır. Bir SDK, istekte bulunma ve yanıtları işleme ile ilgili pek çok alt düzey ayrıntıyla ilgilenir ve projenize özel kod yazmaya odaklanmanızı sağlar.
-### **SDK avantajları**
-Desteklenen SDK'larımız %100 test edilmiştir ve kullanıma hazırdır. Bu SDK'lar açık kaynaklıdır ve bir MIT lisansına sahiptir. Bunları kullanabilir ve hatta tamamen ücretsiz olarak özelleştirebilirsiniz.
+Bir SDK (API istemcisi) kullanmak, geliştiricinin geliştirmeyi hızlandırmasının en hızlı yoludur. Bir SDK, istek yapma ve yanıtları işleme konusundaki birçok alt düzey ayrıntıyla ilgilenir ve projenize özel kod yazmaya odaklanmanıza olanak tanır.
+### **SDK'nın avantajları**
+Desteklenen SDK'larımız %100 test edilmiştir ve kullanıma hazırdır. Bu SDK'lar açık kaynaktır ve MIT lisansına sahiptir. Bunları tamamen ücretsiz olarak kullanabilir ve hatta özelleştirebilirsiniz.
 ### **Desteklenen SDK'lar**
 {{< tabs tabTotal="11" tabID="1" tabName1=".NET" tabName2="Java" tabName3="PHP" tabName4="Android" tabName5="Perl" tabName6="Ruby" tabName7="Python" tabName8="Node Js" tabName9="Swift" tabName10="Go" tabName11="CPP" >}}
 
 {{< tab tabNum="1" >}}
 
-**Aspose.Cells Bulut SDK'sı for .NET**Aspose.Cells Bulut hizmetlerini .NET uygulamalarınıza hızlı ve kolay bir şekilde dahil etmenizi sağlar.
+**Aspose.Cells Bulut SDK'sı for .NET**Aspose.Cells Bulut hizmetlerini .NET uygulamalarınıza hızlı ve kolay bir şekilde dahil etmenize olanak tanır.
 
 {{% alert color="primary" %}} 
 
- Aspose.Cells Cloud SDK for .Net'in eksiksiz kaynak kodu şu adreste ücretsiz olarak mevcuttur:[GitHub](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet).
+ Aspose.Cells Cloud SDK for .Net'in tam kaynak kodu şu adreste ücretsiz olarak mevcuttur:[GitHub](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet).
 
 {{% /alert %}}
 

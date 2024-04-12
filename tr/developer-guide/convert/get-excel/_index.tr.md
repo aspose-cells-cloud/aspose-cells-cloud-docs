@@ -1,25 +1,25 @@
 ﻿---
-title: Excel dosyasını başka bir biçime alır
+title: Excel dosyasını diğer formata dönüştürür
 second_title: Aspose.Cells Cloud Documen
 linktitle: Ge
 type: docs
 url: /tr/export-different-formats/
 aliases: [/export-excel-workbook-to-different-file-formats/]
 keywords: Get excel files to kinds of format files
-description: Aspose.Cells Cloud REST API excel dosyalarını format dosyalarına dönüştürme desteği. SDK, geliştirme dili türlerini destekler. Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift'i içerir
+description: Aspose.Cells Cloud REST API desteği, excel dosyalarını çeşitli format dosyalarına dönüştürür. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 10
 ---
-Bu REST API, `get` excel dosyasının farklı biçim dosyasına işaret eder.
+Bu REST API, `get` excel dosyasının farklı formattaki dosyaya olduğunu gösterir.
 
 
 **Sorgu Parametresi**
 
 |Parametre adı|Tip|Tanım|
 |:- |:- |:- |
-|biçim|sicim| dosya formatı(csv/xls/html/mhtml/ods/pdf/xml/txt/tiff/xlsb/xlsm/xlsx/xltm/xltx/xps/png/jpg/gif/emf/bmp/md/Numbers/wmf/svg) )|
+|biçim|sicim| dosya formatı (csv/xls/html/mhtml/ods/pdf/xml/txt/tiff/xlsb/xlsm/xlsx/xltm/xltx/xps/png/jpg/gif/emf/bmp/md/Numbers/wmf/svg )|
 |şifre|sicim||
-|isAutoFit|sicim|doğru yanlış|
-|sadeceTabloyu Kaydet|sicim|doğru yanlış|
+|Otomatik Sığdır|sicim|doğru yanlış|
+|yalnızcaTabloyu Kaydet|sicim|doğru yanlış|
 |çıkış yolu|sicim|yeni dosya konumu.|
 |dosya|sicim|Orijinal çalışma kitabı klasörü.|
 |depolamaAdı|sicim|Depolama adı.|
@@ -28,14 +28,14 @@ Bu REST API, `get` excel dosyasının farklı biçim dosyasına işaret eder.
 
 ## DİNLENME API
 
-|**API**|**Tip**|**Tanım**|**Havalı Bağlantı**|
+|**API**|**Tip**|**Tanım**|**Swagger Bağlantısı**|
 |:- |:- |:- |:- |
-|/hücreler/{isim}|ELDE ETMEK|Çalışma kitabını başka bir biçime dışa aktarır.|[GetWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)|
+|/hücreler/{isim}|ELDE ETMEK|Çalışma kitabını diğer formata aktarır.|[WorkBook'u Alın](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)|
 
 
- bu[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook) herkesin erişebileceği bir programlama arabirimi tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook) herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
 
- Kullanabilirsiniz**cURL** Aspose.Cells web hizmetlerine kolayca erişmek için komut satırı aracı. Aşağıdaki örnek, cURL ile Cloud API'e nasıl çağrı yapılacağını gösterir.
+ Kullanabilirsiniz**cURL** Aspose.Cells web hizmetlerine kolayca erişmek için komut satırı aracı. Aşağıdaki örnekte, cURL ile Cloud API'e nasıl çağrı yapılacağı gösterilmektedir.
 
 
 {{< tabs tabTotal="1" tabID="11" tabName11="Request" >}}
@@ -53,9 +53,9 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/book1.xlsx?format=pdf" -H "acce
 
 ## Bulut SDK Ailesi
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, alt düzey ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen kontrol edin[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+ SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük düzeyli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanıza olanak tanır. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
 
-Aşağıdaki kod örnekleri, çeşitli SDK'lar kullanılarak Aspose.Cells web hizmetlerine nasıl çağrı yapılacağını gösterir:
+Aşağıdaki kod örnekleri, çeşitli SDK'ları kullanarak Aspose.Cells web hizmetlerine nasıl çağrı yapılacağını gösterir:
 
 
 {{< tabs tabTotal="3" tabID="3" tabName1="C#" tabName2="Java" tabName3="Go" >}}

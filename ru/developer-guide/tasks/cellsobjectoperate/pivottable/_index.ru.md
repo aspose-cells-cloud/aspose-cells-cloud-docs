@@ -1,16 +1,16 @@
 ﻿---
-title: Работа со сводной таблицей с помощью тасов CellsObjectOperate
+title: Работа со сводной таблицей с помощью команды CellsObjectOperate
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/tasks/cells-object-operate/pivottable/
 aliases: [/working-with-pivot-table-using-cellsobjectoperate-task/]
 keywords: REST API, pivot table, spreadsheets, exce
-description: "Cells.Cloud API для Excel операция: создание сводной таблицы с помощью задачи CellsObjectOperate"
+description: "Cells.Облако API для Excel работает: создайте сводную таблицу с помощью задачи CellsObjectOperate."
 weight: 10
 ---
-Этот REST API создает `pivot table`, используя объект ячеек, работает `task`.
+Этот REST API создает `pivot table` с использованием объекта ячеек, работающего `task`.
 
-**PivotTableOperateParameter**
+**Сводная таблицаOperateParameter**
 
 
 |Имя параметра|Тип|Описание|
@@ -18,22 +18,22 @@ weight: 10
 | DestCellName| нить||
 | Источник данных| нить||
 | ИмяТаблицы| нить||
-| UseSameSource| нить| правда/ложь|
-| индекс сводной таблицы| целое число||
-| PivotFieldRows|целое []||
-| PivotFieldColumns|целое []||
-|PivotFieldData|целое []||
+| Использовать тот же источник| нить| правда/ложь|
+| Индекс сводной таблицы| целое число||
+| PivotFieldRows|целое число[]||
+| PivotFieldСтолбцы|целое число[]||
+|PivotFieldData|целое число[]||
 
 
 ## ОТДЫХ API
 
 |**API**|**Тип**|**Описание**|**Ссылка на ресурс**|
 |:- |:- |:- |:- |
-|/ячейки/задача/runtask|ПОЧТА|Выполнить задачу|[PostRunTask](https://apireference.aspose.cloud/cells/#/Task/PostRunTask)|
+|/cells/task/runtask|ПОЧТА|Запустить задачу|[Пострантаск](https://apireference.aspose.cloud/cells/#/Task/PostRunTask)|
 
-[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData) определяет общедоступный программный интерфейс и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData) определяет общедоступный интерфейс программирования и позволяет выполнять взаимодействие с REST непосредственно из веб-браузера.
 
- Вы можете использовать**cURL** инструмент командной строки для простого доступа к веб-службам Aspose.Cells. В следующем примере показано, как совершать звонки в Cloud API с номером cURL.
+ Вы можете использовать**cURL** инструмент командной строки для легкого доступа к веб-службам Aspose.Cells. В следующем примере показано, как позвонить на Cloud API с помощью cURL.
 
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
@@ -377,7 +377,7 @@ HttpResponseMessage with the operation result.
 
 ## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK позаботится о низкоуровневых деталях и позволит вам сосредоточиться на задачах вашего проекта. Пожалуйста, ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) полный список Aspose.Cells Cloud SDK.
+ Использование SDK — лучший способ ускорить разработку. SDK заботится о деталях низкого уровня и позволяет вам сосредоточиться на задачах проекта. Пожалуйста, ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для получения полного списка Aspose.Cells Cloud SDK.
 
-В следующих примерах кода показано, как выполнять вызовы веб-служб Aspose.Cells с помощью различных SDK.
+Следующие примеры кода демонстрируют, как выполнять вызовы веб-служб Aspose.Cells с использованием различных SDK:
 

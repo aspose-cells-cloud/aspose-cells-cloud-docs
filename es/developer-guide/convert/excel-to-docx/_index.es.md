@@ -1,39 +1,39 @@
 ﻿---
-title: Excel al médico
+title: Excel al doctor
 second_title: Aspose.Cells Cloud Documen
-linktitle: Excel al médico
+linktitle: Excel al doctor
 type: docs
 url: /es/convert/excel-to-docx/
 aliases: [/convert-excel-file-to-docx-in-cloud/]
 keywords: Convert excel files to docx files
-description: Aspose.Cells Cloud REST API admite la conversión de archivos de Excel a archivos docx. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift
+description: Aspose.Cells Cloud REST API admite la conversión de archivos Excel a archivos docx. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 90
 ---
-Este archivo de Excel REST API `saveas` a Docx.
+Este archivo de Excel REST API `saveas` en Docx.
 
 [POST /celdas/{nombre}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) API le permite guardar el archivo MS Excel como archivo Docx con configuraciones adicionales y guardar el resultado en el almacenamiento.
 
-Este archivo de Excel REST API `convert` a Docx.
+Este archivo de Excel REST API `convert` en Docx.
 
-[PUT /celdas/convertir](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) API le permite convertir el archivo MS Excel en un archivo Docx con configuraciones adicionales y guardar el resultado en la respuesta.
+[PUT /celdas/convertir](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) API le permite convertir un archivo MS Excel a un archivo Docx con configuraciones adicionales y guardar el resultado en la respuesta.
 
-Este archivo de Excel REST API `export` a Docx.
+Este archivo de Excel REST API `export` en Docx.
 
-[OBTENER /celdas/{nombre}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook  ) API le permite convertir el archivo MS Excel en un archivo Docx con configuraciones adicionales y guardar el resultado en la respuesta.
+[OBTENER /celdas/{nombre}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook  ) API le permite convertir un archivo MS Excel a un archivo Docx con configuraciones adicionales y guardar el resultado en la respuesta.
 
 ## DESCANSO API
 
-|**API**|**Tipo**|**Descripción**|**Enlace arrogante**|
+|**API**|**Tipo**|**Descripción**|**Enlace de arrogancia**|
 |:- |:- |:- |:- |
 |/celdas/convertir|PONER|Convierte el libro de trabajo del contenido de la solicitud a algún formato|[PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)|
-|/celdas/{nombre}|CONSEGUIR|Exporta el libro de trabajo a otro formato.|[ObtenerLibroDeTrabajo](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)|
-|/celdas/{nombre}/guardar como|CORREO|Exportar libro de trabajo a Formato|[PublicarDocumentoGuardarComo](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)|
+|/celdas/{nombre}|CONSEGUIR|Exporta el libro de trabajo a otro formato.|[Obtener libro de trabajo](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)|
+|/celdas/{nombre}/saveAs|CORREO|Exportar libro de trabajo a formato|[Publicar documento guardar como](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)|
 
 
 
 Estas API definen una interfaz de programación de acceso público y le permiten realizar interacciones REST directamente desde un navegador web.
 
- Puedes usar**cURL** herramienta de línea de comandos para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo hacer llamadas a Cloud API con cURL.
+ Puedes usar**cURL** Herramienta de línea de comandos para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
 
 
 {{< tabs tabTotal="3" tabID="11" tabName11="convert" tabName12="saveas" tabName13="export" >}}
@@ -82,11 +82,11 @@ curl -v "https://api.aspose.cloud/v3.0/cells/book1.xlsx?format=html" \
 {{< /tab >}}
 {{< /tabs >}}
 
-## Familia SDK de la nube
+## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se ocupa de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor, echa un vistazo a la[repositorio GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de Cloud.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor revisa el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de nube.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código demuestran cómo realizar llamadas a servicios web Aspose.Cells utilizando varios SDK:
 
 
 

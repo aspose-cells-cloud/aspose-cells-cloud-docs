@@ -3,31 +3,31 @@ title: Ru
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/docker/run/
-description: Aspose.Cells Cloud for Docker nasıl çalıştırılır
+description: Docker için Aspose.Cells Cloud nasıl çalıştırılır
 weight: 30
 ---
-## Bağlantı Noktasını Açığa Çıkar
+## Bağlantı Noktasını Göster
 
 Liman | Açıklama | Gerekli
 ---|:--:|---:
-5000 | Belgeleri işlemek için kullanılacak yazı tiplerini içeren klasör | doğru
+5000 | Belgeleri oluşturmak için kullanılacak yazı tiplerini içeren klasör | doğru
 
 
 ##  Gerekli hacimler ##
-Yolu kapsayıcıya monte edin | Açıklama | Gerekli
+Konteynere montaj yolu | Açıklama | Gerekli
 ---|:--:|---:
-C:\yazı tipleri | Belgeleri işlemek için kullanılacak yazı tiplerini içeren klasör | YANLIŞ
+C:\fontlar | Belgeleri oluşturmak için kullanılacak yazı tiplerini içeren klasör | YANLIŞ
 C:\veri | Dosya depolama klasörü | YANLIŞ
 
-##  Çalıştırma Parametreleri ##
+##  Parametreleri Çalıştır ##
 
 İsim | Açıklama | Gerekli
 ---|:--:|---:
-LisansKamuAnahtarı | Lisansın genel anahtarı | doğru
-LisansÖzel Anahtar | Lisansın özel anahtarı | doğru
-depolarKimlik BilgileriFilePath | Depolama, dosya yolunu yapılandırır. Varsayılan dosya ./storageResource.json | doğru
+LisansGenelAnahtar | Lisansın genel anahtarı | doğru
+LisansÖzelAnahtar | Lisansın özel anahtarı | doğru
+depolarKimlik BilgileriDosyaYolu | Depolama yapılandırma dosyası yolu. Varsayılan dosya: ./storageResource.json | doğru
 
-##  Çalıştır Komutu ##
+##  Komutu Çalıştır ##
 
 {{< tabs tabTotal="2" tabID="1" tabName1="windows" tabName2="linux" >}}
 
@@ -56,4 +56,4 @@ docker run  -d  -p 47900:5000  -e LicensePublicKey=yourLicensePublicKey	 -e Lice
 
 
 **Referans Belgesi** : 
-  - [Docker Çalıştır]( https://docs.docker.com/engine/reference/commandline/run/)
+  - [Docker Çalıştırması]( https://docs.docker.com/engine/reference/commandline/run/)

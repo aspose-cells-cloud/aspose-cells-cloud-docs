@@ -31,7 +31,7 @@ Die wichtigen Parameter sind in der folgenden Tabelle beschrieben:
 |Parametername|Typ|Beschreibung|
 |:- |:- |:- |
 | UpperLeftRow| int||
-|UpperLeftColumn| int||
+| UpperLeftColumn| int||
 | LowerRightRow| int||
 | LowerRightColumn| int||
 | Dateiname| Zeichenfolge||

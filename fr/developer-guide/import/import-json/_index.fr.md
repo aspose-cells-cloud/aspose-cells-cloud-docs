@@ -29,7 +29,7 @@ Les paramètres importants sont décrits dans le tableau suivant :
 | nom| chaîne| Le nom du classeur|
 | importJsonRequest| classe| Importez la requête json.|
 | mot de passe| chaîne| Le mot de passe du classeur.|
-| dossier| chaîne| Dossier de classeur d'origine.|
+| dossier| chaîne|Dossier de classeur d'origine.|
 | Nom de stockage| chaîne| Nom de stockage.|
 | chemin de sortie| chaîne| Chemin du fichier de sortie.|
 | nomdestockageout| chaîne| Nom de stockage du fichier de sortie.|
@@ -56,7 +56,7 @@ Les paramètres importants sont décrits dans le tableau suivant :
 
 ## Famille de SDK Cloud
 
-Utiliser un SDK est le meilleur moyen d’accélérer le développement. Un SDK prend en charge les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Veuillez consulter le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
+ Utiliser un SDK est le meilleur moyen d’accélérer le développement. Un SDK prend en charge les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Veuillez consulter le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
 
 Les exemples de code suivants montrent comment effectuer des appels vers les services Web Aspose.Cells à l'aide de divers SDK :
 

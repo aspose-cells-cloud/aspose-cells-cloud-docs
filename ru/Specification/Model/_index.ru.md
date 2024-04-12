@@ -1,0 +1,413 @@
+﻿---
+title: Модель
+second_title: Aspose.Cells Cloud Documen
+type: docs
+weight: 50
+---
+- [ObjectExistsExtensions](objectexistsextensions)  :   
+- [ФайлВерсия](fileversion)  :   
+- [Файл хранения](storagefile) : информация о файле или папке.
+- [GoogleDriveStorageFile](googledrivestoragefile)  :   
+- [Выше среднего](aboveaverage) Опишите правило условного форматирования «Выше среднего». Это правило условного форматирования выделяет ячейки, значения которых выше или ниже среднего для всех значений в диапазоне.
+- [АннотацияРасчетДвигатель](abstractcalculationengine) : представляет пользовательский механизм вычислений, расширяющий механизм вычислений по умолчанию Aspose.Cells.
+- [АннотацияРасчетМонитор](abstractcalculationmonitor) : Мониторинг, позволяющий пользователю отслеживать ход расчета формулы.
+- [Автофильтр](autofilter)  :   
+- [Параметры автоподборщика](autofitteroptions)  :   
+- [Граница](border)  :   
+- [Параметры расчета](calculationoptions)  :   
+- [Клетка](cell)  :   
+- [CellArea](cellarea)  :   
+- [Cells](cells)  :   
+- [КлеткиОблакоФайлИнформация](cellscloudfileinfo) : Cells Описание информации об облачном файле.
+- [КлеткиЦвет](cellscolor)  :   
+- [Свойства документа](cellsdocumentproperties) : Excel объекты
+- [ЯчейкиДокументСвойство](cellsdocumentproperty) : Cells собственность документа.
+- [Цвет](color) : Цвет.
+- [Цветовой фильтр](colorfilter) : Цветовой фильтр.
+- [Цветовая шкала](colorscale) : описать правило условного форматирования ColorScale. Это правило условного форматирования создает в ячейках градуированную цветовую шкалу.
+- [Столбец](column)  :   
+- [Столбцы](columns)  :   
+- [Комментарий](comment)  :   
+- [Комментарии](comments)  :   
+- [Условное форматирование](conditionalformatting)  :   
+- [Значок условного форматирования](conditionalformattingicon)  :   
+- [Условное форматирование](conditionalformattings)  :   
+- [Значение условного форматирования](conditionalformattingvalue)  :   
+- [КопироватьПараметры](copyoptions) : представляет параметры копирования.
+- [КритерииНесколькоФильтр](criteriamultiplefilter)  :   
+- [ПользовательскийФильтр](customfilter)  :   
+- [Панель данных](databar) : Опишите правило условного форматирования DataBar. Это правило условного форматирования отображает градуированную панель данных в диапазоне ячеек.
+- [DataBarГраница](databarborder)  :   
+- [Очистка данных](datacleansing) : Очистка данных
+- [DataColumnFillValue](datacolumnfillvalue)  :   
+- [Заполнение данных](datafill)  :   
+- [DataFillValue](datafillvalue)  :   
+- [Сортировщик данных](datasorter) : Краткое описание DataSorter.
+- [Ключ сортировщика данных](datasorterkey) : представляет ключ сортировщика данных.
+- [DateTimeGroupItem](datetimegroupitem)  :   
+- [Регион дедупликации](deduplicationregion)  :   
+- [ДинамическийФильтр](dynamicfilter)  :   
+- [Информация о файле](fileinfo) : Информация о файле
+- [ФайлыРезультат](filesresult)  :   
+- [ФильтрСтолбец](filtercolumn)  :   
+- [Шрифт](font)  :   
+- [Настройка шрифта](fontsetting)  :   
+- [ФорматУсловие](formatcondition)  :   
+- [ФормулаФорматУсловие](formulaformatcondition)  :   
+- [ФормулаНастройки](formulasettings) : Настройки формул и расчетов.
+- [Настройки глобализации](globalizationsettings) : представляет настройки глобализации.
+- [Горизонтальный разрыв страницы](horizontalpagebreak)  :   
+- [Горизонтальные разрывы страниц](horizontalpagebreaks)  :   
+- [Гиперссылка](hyperlink)  :   
+- [Гиперссылки](hyperlinks)  :   
+- [ЗначокФильтр](iconfilter)  :   
+- [Набор иконок](iconset) Опишите правило условного форматирования IconSet. Это правило условного форматирования применяет значки к ячейкам в соответствии с их значениями.
+- [Связь](link)  :   
+- [СсылкаЭлемент](linkelement)  :   
+- [Параметры загрузки](loadoptions)  :   
+- [MergedCell](mergedcell)  :   
+- [Объединенные ячейки](mergedcells)  :   
+- [МножественныйФильтр](multiplefilter)  :   
+- [Несколько фильтров](multiplefilters)  :   
+- [Имя](name)  :   
+- [Имена](names)  :   
+- [НегативБарФормат](negativebarformat) : представляет настройки цвета гистограмм для отрицательных значений, определенных правилом условного форматирования гистограмм.
+- [Раздел страницы](pagesection)  :   
+- [Настройка страницы](pagesetup)  :   
+- [Параметры вставки](pasteoptions) : представляет специальные параметры вставки.
+- [PDFSecurityOptions](pdfsecurityoptions)  :   
+- [Защита](protection) : представляет различные типы параметров защиты, доступные для листа.
+- [Протектлистпараметр](protectsheetparameter)  :   
+- [Таблица запросов](querytable) : представляет информацию QueryTable.
+- [Диапазон](range)  :   
+- [Диапазоны](ranges)  :   
+- [Ряд](row)  :   
+- [Строки](rows)  :   
+- [Сохранить результат](saveresult)  :   
+- [Параметры постраничного сохранения](paginatedsaveoptions) : представляет параметры нумерации страниц.
+- [Однозначение](singlevalue)  :   
+- [СортКей](sortkey)  :   
+- [СплитРезультат](splitresult)  :   
+- [СплитРезультатДокумент](splitresultdocument)  :   
+- [Стиль](style)  :   
+- [СтильФорматУсловие](styleformatcondition)  :   
+- [Стили](styles)  :   
+- [ТекстФорматУсловие](textformatcondition)  :   
+- [Текститем](textitem)  :   
+- [Текстовые элементы](textitems)  :   
+- [Текстовые параметры](textoptions)  :   
+- [ТемаЦвет](themecolor)  :   
+- [ВремяПериодФорматУсловие](timeperiodformatcondition)  :   
+- [Топ 10](top10) Опишите правило условного форматирования Top10. Это правило условного форматирования выделяет ячейки, значения которых попадают в верхнюю N или нижнюю N скобку, как указано.
+- [Топ10Фильтр](top10filter)  :   
+- [Проверка](validation)  :   
+- [Валидации](validations)  :   
+- [Вертикальный разрыв страницы](verticalpagebreak)  :   
+- [Вертикальные разрывы страниц](verticalpagebreaks)  :   
+- [Рабочая тетрадь](workbook)  :   
+- [Настройки книги](workbooksettings)  :   
+- [Рабочий лист](worksheet)  :   
+- [Рабочие листы](worksheets)  :   
+- [Защита от записи](writeprotection) : указывает параметры защиты от записи для книги.
+- [XmlDataBinding](xmldatabinding) : представляет информацию о привязке данных XML.
+- [XmlMap](xmlmap) : представляет информацию карты в формате XML.
+- [ЯчейкиОбъектОператеТаскПараметр](cellsobjectoperatetaskparameter)  :   
+- [Конвертироватьтаскпараметр](converttaskparameter)  :   
+- [Конвертироватьрабочий листтаскпараметр](convertworksheettaskparameter)  :   
+- [источник файла](filesource)  :   
+- [ТипФайлИсточника](filesourcetype)  :   
+- [Импортдататаскпараметр](importdatataskparameter)  :   
+- [Назначение результата](resultdestination)  :   
+- [ResultDestinationType](resultdestinationtype)  :   
+- [Источник результата](resultsource)  :   
+- [СохранитьFilesToCloudResult](savefilestocloudresult)  :   
+- [СохранитьResultTaskParameter](saveresulttaskparameter)  :   
+- [СмартМаркерТаскПараметр](smartmarkertaskparameter)  :   
+- [Параметр SplitWorkbookTaskParameter](splitworkbooktaskparameter)  :   
+- [Таскдата](taskdata)  :   
+- [Описание задания](taskdescription)  :   
+- [Параметр задачи](taskparameter)  :   
+- [Параметр Таскрезультат](taskresultparameter)  :   
+- [Таскрунрезультат](taskrunresult)  :   
+- [Тип задачи](tasktype)  :   
+- [ДиаграммаДействоватьПараметр](chartoperateparameter)  :   
+- [ListObjectOperateParameter](listobjectoperateparameter)  :   
+- [ОператеОбъект](operateobject)  :   
+- [ОператеОбъектПозиция](operateobjectposition)  :   
+- [ОператеОбъектТип](operateobjecttype)  :   
+- [Оператепараметр](operateparameter)  :   
+- [Оператетип](operatetype)  :   
+- [PageBreakOperateParameter](pagebreakoperateparameter)  :   
+- [PageSetupOperateParameter](pagesetupoperateparameter)  :   
+- [Сводная таблицаOperateParameter](pivottableoperateparameter)  :   
+- [ФормаОператеПараметр](shapeoperateparameter)  :   
+- [Рабочая книгаOperateParameter](workbookoperateparameter)  :   
+- [Настройки рабочей книгиOperateParameter](workbooksettingsoperateparameter)  :   
+- [Рабочий листOperateParameter](worksheetoperateparameter)  :   
+- [СписокКолонка](listcolumn)  :   
+- [СписокОбъект](listobject)  :   
+- [Список объектов](listobjects)  :   
+- [Настройки сводной глобализации](pivotglobalizationsettings) : представляет параметры глобализации для сводных таблиц.
+- [Параметры ДифСаве](difsaveoptions) : представляет параметры сохранения файла различий.
+- [Параметры сохранения документа](docxsaveoptions) : представляет параметры сохранения файла .docx.
+- [HtmlSaveOptions](htmlsaveoptions) : представляет параметры сохранения файла .html.
+- [Параметры сохранения изображения](imagesaveoptions) : представляет параметры сохранения файла изображения.
+- [JsonSaveOptions](jsonsaveoptions) представляет параметры сохранения файла .json.
+- [МаркдаунСохранитьПараметры](markdownsaveoptions) : представляет параметры сохранения файла .md.
+- [Мхтмлавеварианты](mhtmlsaveoptions) : представляет параметры сохранения файла .mhtml.
+- [Параметры сохранения](odssaveoptions) : представляет параметры сохранения файла .ods.
+- [Ооксмлсавеварианты](ooxmlsaveoptions) : представляет параметры сохранения файла ooxml.
+- [PDFSaveOptions](pdfsaveoptions) : Представляет параметры сохранения файла PDF.
+- [PptxSaveOptions](pptxsaveoptions) : представляет параметры сохранения файла pptx.
+- [СохранитьПараметры](saveoptions) : представляет все параметры сохранения.
+- [ТаблицаML2003СохранитьПараметры](spreadsheetml2003saveoptions) : представляет параметры сохранения файла .xml.
+- [SqlScriptSaveOptions](sqlscriptsaveoptions) : представляет параметры сохранения файла .sql.
+- [SvgSaveOptions](svgsaveoptions) : представляет параметры сохранения файла .svg.
+- [TxtSaveOptions](txtsaveoptions) : представляет параметры сохранения файла .txt.
+- [Кслсбсавеварианты](xlsbsaveoptions) : представляет параметры сохранения файла .xlsb.
+- [Клссавеварианты](xlssaveoptions) : представляет параметры сохранения файла .xls.
+- [XpsSaveOptions](xpssaveoptions) : представляет параметры сохранения файла .xps.
+- [АнализироватьExcelResponse](analyzeexcelresponse)  :   
+- [ArcShapeResponse](arcshaperesponse)  :   
+- [Автофильтрответ](autofilterresponse)  :   
+- [АвтоShapeResponse](autoshaperesponse)  :   
+- [АвтофигурыОтвет](autoshapesresponse)  :   
+- [AxisResponse](axisresponse)  :   
+- [BorderResponse](borderresponse)  :   
+- [КнопкаОтвет](buttonresponse)  :   
+- [ВычислитьФормулаОтвет](calculateformularesponse)  :   
+- [CellResponse](cellresponse)  :   
+- [ЯчейкиОблакоФайлИнформацияОтвет](cellscloudfileinforesponse)  :   
+- [ЯчейкиОблакоОтвет](cellscloudresponse)  :   
+- [ЯчейкиДокументСвойстваОтвет](cellsdocumentpropertiesresponse)  :   
+- [ЯчейкиДокументСвойствоОтвет](cellsdocumentpropertyresponse)  :   
+- [КлеткиРисованиеОтвет](cellsdrawingresponse)  :   
+- [КлеткиОтвет](cellsresponse)  :   
+- [ОтветОбласти Диаграммы](chartarearesponse)  :   
+- [ChartDataTableResponse](chartdatatableresponse)  :   
+- [Чартпоинтответ](chartpointresponse)  :   
+- [ChartPointsОтвет](chartpointsresponse)  :   
+- [Ответ диаграммы](chartresponse)  :   
+- [ГрафикиОтвет](chartsresponse)  :   
+- [Чекбоксответ](checkboxresponse)  :   
+- [СтолбецОтвет](columnresponse)  :   
+- [СтолбцыОтвет](columnsresponse)  :   
+- [ComboBoxОтвет](comboboxresponse)  :   
+- [КомментарийОтвет](commentresponse)  :   
+- [КомментарийShapeResponse](commentshaperesponse)  :   
+- [КомментарииОтвет](commentsresponse)  :   
+- [Условный ответ форматирования](conditionalformattingresponse)  :   
+- [Ответ условного форматирования](conditionalformattingsresponse)  :   
+- [DataLabelsResponse](datalabelsresponse)  :   
+- [DisplayUnitLabelResponse](displayunitlabelresponse)  :   
+- [DropBarsResponse](dropbarsresponse)  :   
+- [Эррорбарответ](errorbarresponse)  :   
+- [ЗаполнитьФорматОтвет](fillformatresponse)  :   
+- [НайтиОтвет](findresponse)  :   
+- [ПолОтклик](floorresponse)  :   
+- [ФормОтвет](formresponse)  :   
+- [ФормыОтвет](formsresponse)  :   
+- [ГрупповойБоксОтвет](groupboxresponse)  :   
+- [Горизонтальный PageBreakResponse](horizontalpagebreakresponse)  :   
+- [Горизонтальный PageBreaksResponse](horizontalpagebreaksresponse)  :   
+- [ГиперссылкаОтвет](hyperlinkresponse)  :   
+- [ГиперссылкиОтвет](hyperlinksresponse)  :   
+- [МеткаОтвет](labelresponse)  :   
+- [LegendEntriesResponse](legendentriesresponse)  :   
+- [ЛегендаEntryResponse](legendentryresponse)  :   
+- [ЛегендаОтвет](legendresponse)  :   
+- [Линейный ответ](lineresponse)  :   
+- [LineShapeResponse](lineshaperesponse)  :   
+- [ListBoxResponse](listboxresponse)  :   
+- [СписокОбъектОтвет](listobjectresponse)  :   
+- [СписокОбъектовОтвет](listobjectsresponse)  :   
+- [MergedCellResponse](mergedcellresponse)  :   
+- [MergedCellsResponse](mergedcellsresponse)  :   
+- [ИмяОтвет](nameresponse)  :   
+- [ИменаОтвет](namesresponse)  :   
+- [ОлеОбъектОтклик](oleobjectresponse)  :   
+- [ОлеОбъектсОтвет](oleobjectsresponse)  :   
+- [ОвалОтвет](ovalresponse)  :   
+- [Разделы страницыОтвет](pagesectionsresponse)  :   
+- [PageSetupResponse](pagesetupresponse)  :   
+- [PictureResponse](pictureresponse)  :   
+- [КартинкиОтвет](picturesresponse)  :   
+- [PivotFieldResponse](pivotfieldresponse)  :   
+- [PivotFilterResponse](pivotfilterresponse)  :   
+- [PivotFiltersResponse](pivotfiltersresponse)  :   
+- [Ответ сводной таблицы](pivottableresponse)  :   
+- [Сводные таблицыОтвет](pivottablesresponse)  :   
+- [ГрафикОбластиОтвета](plotarearesponse)  :   
+- [РадиокнопкаОтвет](radiobuttonresponse)  :   
+- [ДиапазонОтвет](rangeresponse)  :   
+- [ДиапазоныОтвет](rangesresponse)  :   
+- [ДиапазонЗначениеОтвет](rangevalueresponse)  :   
+- [RectangleShapeResponse](rectangleshaperesponse)  :   
+- [Роуответ](rowresponse)  :   
+- [СтрокиОтвет](rowsresponse)  :   
+- [SaveFilesToCloudResultResponse](savefilestocloudresultresponse)  :   
+- [СохранитьОтвет](saveresponse)  :   
+- [ScrollBarОтвет](scrollbarresponse)  :   
+- [СерииОтвет](seriesesresponse)  :   
+- [СерияОтвет](seriesresponse)  :   
+- [ШейпОтклик](shaperesponse)  :   
+- [ФормыОтвет](shapesresponse)  :   
+- [SingleValueResponse](singlevalueresponse)  :   
+- [СпарклайнГрупповойОтвет](sparklinegroupresponse)  :   
+- [СпарклайнГруппыОтвет](sparklinegroupsresponse)  :   
+- [SpinnerResponse](spinnerresponse)  :   
+- [Сплитрезультатответ](splitresultresponse)  :   
+- [СтильОтвет](styleresponse)  :   
+- [Таскрунрезультатответ](taskrunresultresponse)  :   
+- [Текстбоксответ](textboxresponse)  :   
+- [Текститемответ](textitemresponse)  :   
+- [Текститемсответ](textitemsresponse)  :   
+- [TickLabelsResponse](ticklabelsresponse)  :   
+- [ЗаголовокОтвет](titleresponse)  :   
+- [TrendlineResponse](trendlineresponse)  :   
+- [Линии трендаОтвет](trendlinesresponse)  :   
+- [Ответ валидации](validationresponse)  :   
+- [Ответ валидации](validationsresponse)  :   
+- [Вертикальный PageBreakResponse](verticalpagebreakresponse)  :   
+- [Вертикальный PageBreaksResponse](verticalpagebreaksresponse)  :   
+- [СтеныОтвет](wallsresponse)  :   
+- [Рабочая книгаReplaceResponse](workbookreplaceresponse)  :   
+- [Ответ рабочей книги](workbookresponse)  :   
+- [Параметры рабочей книгиОтвет](workbooksettingsresponse)  :   
+- [Рабочие тетрадиОтвет](workbooksresponse)  :   
+- [Рабочий листReplaceResponse](worksheetreplaceresponse)  :   
+- [Рабочий листОтвет](worksheetresponse)  :   
+- [Рабочие листыОтвет](worksheetsresponse)  :   
+- [Анализ ExcelRequest](analyzeexcelrequest)  :   
+- [Пакетное преобразование запроса](batchconvertrequest) : указывает на запрос файла пакетного преобразования.
+- [Пакетный запрос блокировки](batchlockrequest) : Указывает на запрос файла пакетной блокировки.
+- [Пакетный запрос защиты](batchprotectrequest) : указывает на запрос файла пакетной защиты.
+- [Пакетный запрос разделения](batchsplitrequest)  :   
+- [ЦветФильтрЗапрос](colorfilterrequest) : Указывает на запрос цветового фильтра.
+- [КонвертироватьПараметр](convertparameter) : указывает параметр преобразования
+- [Создать запрос сводной таблицы](createpivottablerequest) : указывает на запрос создания сводной таблицы.
+- [Запрос очистки данных](datacleansingrequest) : запрос на очистку данных для файла электронной таблицы.
+- [Запрос дедупликации данных](datadeduplicationrequest)  :   
+- [запрос заполнения данных](datafillrequest)  :   
+- [Удалитьинкомплертровсрекуест](deleteincompleterowsrequest)  :   
+- [ИмпортJsonRequest](importjsonrequest) : указывает запрос на импорт данных XML.
+- [ИмпортXMLЗапрос](importxmlrequest) : указывает запрос на импорт данных XML.
+- [Запрос условия совпадения](matchconditionrequest) : указывает условие соответствия, которое необходимо обработать для имени файла.
+- [Запрос пароля](passwordrequest) : используется для передачи данных пароля.
+- [Поле запроса сводной таблицы](pivottablefieldrequest) : Указывает запрос поля сводной таблицы.
+- [Защитить рабочую книгуЗапрос](protectworkbookrequest) : указывает на запрос защиты книги.
+- [ДиапазонКопироватьЗапрос](rangecopyrequest) : Указывает запрос на копирование диапазона.
+- [RangeSetOutlineBorderRequest](rangesetoutlineborderrequest) Указывает на запрос границы набора диапазона.
+- [RangeSetStyleRequest](rangesetstylerequest) : Указывает на запрос стиля набора диапазона.
+- [RangeSortRequest](rangesortrequest) : указывает запрос на сортировку диапазона.
+- [ТаблицаTotalRequest](tabletotalrequest) : Указывает общий запрос таблицы.
+- [ТекстВодаМаркерЗапрос](textwatermarkerrequest) : Указывает на текстовый запрос водного маркера.
+- [Запрос на шифрование книги](workbookencryptionrequest) : используется запросами на шифрование/дешифрование книги.
+- [Запрос на защиту книги](workbookprotectionrequest) : используется запросами защиты книги.
+- [Рабочий листЗапрос на перемещение](worksheetmovingrequest) : используется запросами на перемещение книги.
+- [Параметры изображения или печати](imageorprintoptions)  :   
+- [РендерингШрифт](renderingfont)  :   
+- [РендерингВодяной Знак](renderingwatermark)  :   
+- [Сводное поле](pivotfield)  :   
+- [PivotFilter](pivotfilter) : представляет PivotFilter в коллекции PivotFilter.
+- [PivotItem](pivotitem)  :   
+- [Сводная таблица](pivottable)  :   
+- [Сводные таблицы](pivottables)  :   
+- [CustomParserConfig](customparserconfig)  :   
+- [Import2DimensionDoubleArrayOption](import2dimensiondoublearrayoption)  :   
+- [Import2DimensionIntArrayOption](import2dimensionintarrayoption)  :   
+- [Import2DimensionStringArrayOption](import2dimensionstringarrayoption)  :   
+- [CellValue](cellvalue)  :   
+- [Импортбатчдатавариант](importbatchdataoption)  :   
+- [Импорт CSVDataOption](importcsvdataoption)  :   
+- [Импортдататипе](importdatatype)  :   
+- [Импортдабларрайвариант](importdoublearrayoption)  :   
+- [Импортинтаррайопцион](importintarrayoption)  :   
+- [ИмпортОпция](importoption)  :   
+- [Импорткартуревариант](importpictureoption)  :   
+- [ИмпортПозиция](importposition)  :   
+- [Импортстрингаррайопцион](importstringarrayoption)  :   
+- [ArcShape](arcshape)  :   
+- [Область](area)  :   
+- [Автофигура](autoshape)  :   
+- [Автофигуры](autoshapes)  :   
+- [Кнопка](button)  :   
+- [КлеткиРисование](cellsdrawing)  :   
+- [Флажок](checkbox)  :   
+- [Поле со списком](combobox)  :   
+- [КомментарийФорма](commentshape)  :   
+- [Формат заполнения](fillformat)  :   
+- [Форма](form)  :   
+- [Формы](forms)  :   
+- [Градиентная заливка](gradientfill)  :   
+- [ГрадиентЗаполнитьСтоп](gradientfillstop)  :   
+- [Групповой ящик](groupbox)  :   
+- [Групповая форма](groupshape)  :   
+- [Этикетка](label)  :   
+- [Линия](line) : инкапсулирует объект, представляющий формат строки.
+- [Формат линии](lineformat)  :   
+- [ЛинияФорма](lineshape)  :   
+- [СписокСписок](listbox)  :   
+- [ОлеОбъект](oleobject)  :   
+- [ОлеОбъекты](oleobjects)  :   
+- [Овал](oval)  :   
+- [УзорЗаливка](patternfill)  :   
+- [ПикФорматОпция](picformatoption)  :   
+- [Картина](picture)  :   
+- [Картинки](pictures)  :   
+- [Переключатель](radiobutton)  :   
+- [ПрямоугольникФорма](rectangleshape)  :   
+- [Полоса прокрутки](scrollbar)  :   
+- [ShadowEffect](shadoweffect)  :   
+- [Форма](shape)  :   
+- [Формы](shapes)  :   
+- [СолидФилл](solidfill)  :   
+- [Спиннер](spinner)  :   
+- [Текстовое окно](textbox)  :   
+- [ТекстураЗаливка](texturefill)  :   
+- [ТайлеПикОпция](tilepicoption)  :   
+- [Цифровая подпись](digitalsignature) : Подпись в файле.
+- [Ось](axis)  :   
+- [Диаграмма](chart)  :   
+- [Область диаграммы](chartarea)  :   
+- [Таблица данных диаграммы](chartdatatable)  :   
+- [ДиаграммаКадр](chartframe)  :   
+- [Настройки глобализации диаграммы](chartglobalizationsettings) : представляет настройки глобализации для диаграммы.
+- [Чартпойнт](chartpoint)  :   
+- [Чарт-очки](chartpoints)  :   
+- [Графики](charts)  :   
+- [Форма Диаграммы](chartshape) : Объект формы диаграммы
+- [Метки данных](datalabels)  :   
+- [Метка DisplayUnitLabel](displayunitlabel)  :   
+- [Дропбары](dropbars)  :   
+- [ErrorBar](errorbar)  :   
+- [Пол](floor)  :   
+- [Легенда](legend)  :   
+- [ЛегендаЗаписи](legendentries)  :   
+- [ЛегендаВступление](legendentry)  :   
+- [Маркер](marker)  :   
+- [Площадь участка](plotarea)  :   
+- [Ряд](series)  :   
+- [СерияПредметы](seriesitems)  :   
+- [Спарклайн](sparkline) : спарклайн представляет собой небольшую диаграмму или рисунок в ячейке листа, который обеспечивает визуальное представление данных.
+- [Группа Спарклайн](sparklinegroup)  :   
+- [Группы спарклайнов](sparklinegroups) : инкапсулирует коллекцию объектов Aspose.Cells.Charts.SparklineGroup.
+- [TickLabels](ticklabels)  :   
+- [Заголовок](title)  :   
+- [Линия тренда](trendline)  :   
+- [Линии тренда](trendlines)  :   
+- [Стены](walls)  :   
+- [ColumnDataExceptionDescription](columndataexceptiondescription)  :   
+- [ТекстКатегориТип](textcategorytype)  :   
+- [Описание анализируемого столбца](analyzedcolumndescription) Как использовать свойства каждого столбца: в настоящее время разделены на временную шкалу, линию продуктов, строку числовой статистики. Как представить продукт, единый план. Как решить проблему полной цифровой обработки? Полный текст Как решить? Два столбца: текст, номер — самый простой. Три столбца: текст, текст, номер. Текст, число, число --- дата, дата; Дата Числовая; Числовой Цифровой А как насчет четырех столбцов, пяти столбцов?
+- [АнализируемыйРезультат](analyzedresult)  :   
+- [Анализируемая таблицаОписание](analyzedtabledescription)  :   
+- [Тип источника даты](datesourcetype)  :   
+- [Предложенный тип вывода](suggestedoutputtype)  :   
+- [АнализироватьПредложение](analyzesuggestion)  :   
+- [Откройте для себя диаграмму](discoverchart)  :   
+- [Откройте для себя сводную таблицу](discoverpivottable)  :   
+- [ExcelDataStatistics](exceldatastatistics)  :   
+- [Рабочий листДанныеСтатистика](worksheetdatastatistics)  :   
+- [Ошибка](error) : Ошибка
+- [Подробности об ошибке](errordetails) : Подробности ошибки

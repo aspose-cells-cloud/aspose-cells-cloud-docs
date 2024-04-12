@@ -1,15 +1,15 @@
 ﻿---
-title: دفعة Spli
+title: دفعة سبلي
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/batch/split
 keywords: Batch split Excel file
-description: Aspose.Cells Cloud API يدعم ملف الانقسام الدفعي. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
+description: Aspose.Cells كلاود API يدعم ملف تقسيم الدُفعات. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 100
 ---
-يشير هذا REST API إلى `batch split` من الملف المؤهل.
+يشير REST API إلى `batch split` من الملف المؤهل.
  
-## RSET API
+## رسيت API
  
 ```bash
  
@@ -18,7 +18,7 @@ POST http://api.aspose.cloud/v3.0/cells/batch/split
 ```
  معلمات الطلب هي:
  
-| اسم المعلمة| يكتب| المسار / سلسلة الاستعلام / HTTPBody|وصف|
+| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/HTTPBody|وصف|
 |:- |:- |:- |:- |
 | BatchSplitRequest|| جسم||
 
@@ -26,11 +26,11 @@ POST http://api.aspose.cloud/v3.0/cells/batch/split
  
 الاسم | اكتب | الوصف | ملحوظات
 ------------ | ------------- | ------------- | -------------
- SourceFolder | سلسلة | | [اختياري] SourceStorage | سلسلة | | [اختياري] MatchCondition | MatchConditionRequest | | [اختياري] تنسيق | سلسلة | | [اختياري] FromIndex | عدد صحيح | | [اختياري] ToIndex | عدد صحيح | | [اختياري] مجلد خارجي | سلسلة | | [اختياري] SaveOptions | SaveOptions | | [خياري]**خصائص MatchConditionRequest**
+ مجلد المصدر | سلسلة | | [اختياري] تخزين المصدر | سلسلة | | [اختياري] حالة المطابقة | طلب مطابقة الشرط | | [اختياري] التنسيق | سلسلة | | [اختياري] من الفهرس | عدد صحيح | | [اختياري] للفهرسة | عدد صحيح | | [اختياري]المجلد الخارجي | سلسلة | | [اختياري] خيارات الحفظ | خيارات الحفظ | | [خياري]**خصائص MatchConditionRequest**
  
 الاسم | اكتب | الوصف | ملحوظات
 ------------ | ------------- | ------------- | -------------
- RegexPattern | سلسلة | | [اختياري] FullMatchConditions | سلسلة [] | | [اختياري][مواصفات OpenAPI](https://reference.aspose.cloud/cells/#/Batch/PostBatchsplit) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
+ النمط العادي | سلسلة | | [اختياري]شروط المباراة الكاملة | سلسلة[]| | [اختياري] ال[مواصفات OpenAPI](https://reference.aspose.cloud/cells/#/Batch/PostBatchsplit) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك تنفيذ تفاعلات REST مباشرة من متصفح الويب.
  
 يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
  
@@ -66,9 +66,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/batch/split" \
  
 ## عائلة Cloud SDK
  
-يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. يعتني SDK بالتفاصيل منخفضة المستوى ويتيح لك التركيز على المهام المنقسمة. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة من Aspose.Cells Cloud SDKs.
+يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على المهام المقسمة. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
  
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام حزم SDK متنوعة:
+توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
  
  
   

@@ -1,0 +1,18 @@
+﻿---
+title: SaveResultGörevParametresi
+second_title: Aspose.Cells Cloud Documen
+type: docs
+url: /tr/specification/model/saveresulttaskparameter/
+description: "Aspose.Cells Bulut modeli spesifikasyonu: SaveResultTaskParameter. Açma, oluşturma, düzenleme, bölme, birleştirme, karşılaştırma ve dönüştürme gibi özelliklerle Excel ve diğer elektronik tablo belgelerini zahmetsizce yönetin"
+weight: 50
+---
+## **saveResultTaskParameter**
+
+ 
+
+| Mülkiyet adı| Emlak Tipi| Geçersiz kılınabilir| Sadece oku| Varsayılan değer| Tanım|
+|:- |:- |:- |:- |:- |:- |
+| SonuçKaynağı| Sicim| Doğru| YANLIŞ|||
+| SonuçHedef| Sınıf:SonuçHedef| Doğru| YANLIŞ|||
+
+**Ebeveyn adı** (GörevParametresi)[görevparametresi]

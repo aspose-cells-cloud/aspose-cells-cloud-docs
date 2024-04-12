@@ -1,16 +1,16 @@
 ﻿---
-title: Agregue una validación de hoja de trabajo en una hoja de trabajo Excel
+title: Agregar una validación de hoja de trabajo en una hoja de trabajo Excel
 second_title: Aspose.Cells Cloud Documen
 linktitle: Anuncio
 type: docs
 url: /es/validations/add/
 keywords: Delete a worksheet validation on an Excel worksheet
-description: Aspose.Cells Cloud REST API admite agregar una validación de hoja de trabajo en una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift
+description: Aspose.Cells Cloud REST API admite agregar una validación de hoja de trabajo en una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 10
 ---
 Este REST API indica agregar una validación de hoja de trabajo en una hoja de trabajo Excel.
  
-## RESET API
+## RSET API
  
 ```bash
  
@@ -22,11 +22,11 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations
 | Nombre del parámetro| Tipo| Ruta/Cadena de consulta/Cuerpo HTTP|Descripción|
 |:- |:- |:- |:- |
 | nombre| cadena| camino| Nombre del documento.|
-| hojaNombre| cadena| camino| Nombre de la hoja de trabajo.|
-| rango| cadena| consulta| Área de celdas especificadas|
+| nombre de la hoja| cadena| camino| Nombre de la hoja de trabajo.|
+| rango| cadena| consulta| Área de celdas especificada|
 | validación|| cuerpo| validación|
 | carpeta| cadena| consulta| Carpeta del documento.|
-| NombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
+| nombredealmacenamiento| cadena| consulta| nombre del almacenamiento.|
  
  El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/WorksheetValidations/PutWorksheetValidation) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
  
@@ -62,11 +62,11 @@ curl -v "http://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/va
  
 {{< /tabs >}}
  
-## Familia SDK de la nube
+## Familia de SDK en la nube
  
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se ocupa de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor, echa un vistazo a la[repositorio GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de Cloud.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor revisa el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de nube.
  
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código demuestran cómo realizar llamadas a servicios web Aspose.Cells utilizando varios SDK:
  
  
  

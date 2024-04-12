@@ -1,11 +1,11 @@
 ﻿---
-title: Come creare un workboo Excel
+title: Come creare una cartella di lavoro Excel
 second_title: Aspose.Cells Cloud Documen
 linktitle: Crea
 type: docs
 url: /it/workbook/create/
 keywords: How to create an Excel workbook
-description: Aspose.Cells Cloud REST API come creare una cartella di lavoro Excel. L'SDK supporta i tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
+description: Aspose.Cells Cloud REST API come creare una cartella di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 100
 ---
 ## Come creare una cartella di lavoro Excel.

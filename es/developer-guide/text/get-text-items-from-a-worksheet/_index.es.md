@@ -1,17 +1,17 @@
 ﻿---
-title: Obtenga elementos de texto de una hoja de trabajo Excel
+title: Obtener elementos de texto de una hoja de trabajo Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: Ponte a trabajar
+linktitle: entrar en la hoja de trabajo
 type: docs
 url: /es/worksheets/get-text-items/
 aliases: [/get-text-items-from-a-worksheet/]
 weight: 20
 keywords: Get text from Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) worksheet
-description: Aspose.Cells Cloud REST API admite la obtención de texto de la hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift
+description: Aspose.Cells Cloud REST API admite la obtención de texto de la hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 ---
-Este REST API indica `read` de la hoja de trabajo `text items` en la hoja de trabajo Excel.
+Este REST API indica la hoja de trabajo `read` `text items` en la hoja de trabajo Excel.
  
-## RESET API
+## RSET API
  
 ```bash
  
@@ -23,9 +23,9 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/textItems
 | Nombre del parámetro| Tipo| Ruta/Cadena de consulta/Cuerpo HTTP|Descripción|
 |:- |:- |:- |:- |
 | nombre| cadena| camino| Nombre del libro de trabajo.|
-| hojaNombre| cadena| camino| El nombre de la hoja de cálculo.|
+| nombre de la hoja| cadena| camino| El nombre de la hoja de trabajo.|
 | carpeta| cadena| consulta| La carpeta del libro de trabajo.|
-| NombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
+| nombredealmacenamiento| cadena| consulta| nombre del almacenamiento.|
  
  El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetTextItems) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
  
@@ -74,11 +74,11 @@ curl -X GET "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/sheet1/tex
 {{< /tab >}}
 
 {{< /tabs >}}
-## Familia SDK de la nube
+## Familia de SDK en la nube
  
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se ocupa de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor, echa un vistazo a la[repositorio GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de Cloud.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor revisa el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de nube.
  
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código demuestran cómo realizar llamadas a servicios web Aspose.Cells utilizando varios SDK:
  
  
 

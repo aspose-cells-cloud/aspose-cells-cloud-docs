@@ -19,7 +19,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cell
 |:- |:- |:- |:- |
 |姓名|细绳|小路|文档名称。|
 |工作表名称|细绳|小路|工作表名称。|
-|单元格或方法名称|细绳|小路|单元格或方法的名称。 （方法名称值：firstcell、endcell、maxrow、maxdatarow、maxcolumn、maxdatacolumn、minrow、mindatarow、mincolumn、mindatacolumn 和 cellName。）|
+|单元格或方法名|细绳|小路|单元格或方法的名称。 （方法名称值：firstcell、endcell、maxrow、maxdatarow、maxcolumn、maxdatacolumn、minrow、mindatarow、mincolumn、mindatacolumn 和 cellName。）|
 |文件夹|细绳|询问|文档的文件夹。|
 |存储名称|细绳|询问|存储名称。|
  

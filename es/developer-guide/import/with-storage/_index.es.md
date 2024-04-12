@@ -1,16 +1,16 @@
 ﻿---
-title: Importar datos con el uso de almacenamiento
+title: Importar datos usando storag
 second_title: Aspose.Cells Cloud Documen
 linktitle: Importar datos con almacenamiento
 type: docs
 url: /es/import/with-using-storage/
 aliases: [/import-data-into-excel-worksheet/, /import-data-into-worksheet/ , /import-data-in-excel-worksheet/, /import-data/]
-description: "Cells.Cloud API para Excel operar: Importar datos en la hoja de trabajo Excel"
+description: "Cells.Cloud API para Excel operar: Importar datos a la hoja de trabajo Excel"
 weight: 10
 ---
 Este REST API indica `import data` en el archivo Excel.
  
-## RESET API
+## RSET API
  
 ```bash
  
@@ -23,10 +23,10 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/importdata
 |:- |:- |:- |:- |
 | nombre| cadena| camino||
 | carpeta| cadena| consulta||
-| NombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
+| nombredealmacenamiento| cadena| consulta| nombre del almacenamiento.|
 | datos de importacion|| cuerpo||
 
-**Los parámetros de las opciones de importación de datos**se describen en[el enlace de referencia](/cells/es/import/#import-data-option-parameter).
+**Los parámetros de opciones de importación de datos.** se describen en[el enlace de referencia](/cells/es/import/#import-data-option-parameter).
 
  
  El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
@@ -65,5 +65,5 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/importdata" \
 {{< /tabs >}}
  
  
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código demuestran cómo realizar llamadas a servicios web Aspose.Cells utilizando varios SDK:
 

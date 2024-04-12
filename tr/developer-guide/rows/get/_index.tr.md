@@ -1,14 +1,14 @@
 ﻿---
-title: Excel çalışma sayfasında satır alma ile çalışma
+title: Excel çalışma sayfasında satır almayla çalışma
 second_title: Aspose.Cells Cloud Documen
 linktitle: Ge
 type: docs
 url: /tr/rows/get/
 keywords: Working with getting row on an Excel worksheet. How to add rows on an Excel worksheet
-description: Aspose.Cells Cloud REST API, bir Excel çalışma sayfasında satır almayı destekler. SDK, geliştirme dili türlerini destekler. Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift'i içerir
+description: Aspose.Cells Cloud REST API, Excel çalışma sayfasında satır almayı destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 20
 ---
-## Excel çalışma sayfasında satır silme ile çalışma.
+## Excel çalışma sayfasındaki satırın silinmesiyle çalışma.
 
-- [Excel çalışma sayfasında bir satır nasıl alınır.](/cells/tr/rows/get/row/) 
-- [Excel çalışma sayfasında çoklu satırlar nasıl elde edilir.](/cells/tr/rows/get/rows/) ) 
+- [Excel çalışma sayfasında satır nasıl alınır?](/cells/tr/rows/get/row/) 
+- [Excel çalışma sayfasında çoklu satırlar nasıl elde edilir?](/cells/tr/rows/get/rows/) ) 

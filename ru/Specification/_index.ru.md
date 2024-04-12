@@ -1,0 +1,739 @@
+﻿---
+title: Спецификация
+second_title: Aspose.Cells Cloud Documen
+type: docs
+weight: 50
+---
+# Aspose.Cells Облако API Эксплуатация
+
+- [Пост-анализExcel](operation/postanalyzeexcel) : выполнить бизнес-анализ данных в файлах Excel.
+- [GetWorksheetAutoFilter](operation/getworksheetautofilter) : получить описание автофильтров из листа.
+- [PutWorksheetDateFilter](operation/putworksheetdatefilter) : применить фильтр даты на листе.
+- [PutWorksheetFilter](operation/putworksheetfilter) : добавить фильтр для столбца на листе.
+- [ПоместитьРабочий ЛистЗначокФильтр](operation/putworksheeticonfilter) : добавить фильтр значков на лист.
+- [PutWorksheetCustomFilter](operation/putworksheetcustomfilter) фильтрация списка по пользовательским критериям на листе.
+- [PutWorksheetDynamicFilter](operation/putworksheetdynamicfilter) : добавить динамический фильтр на лист.
+- [Поместитьрабочий листФильтрТоп10](operation/putworksheetfiltertop10) : отфильтровать первые 10 элементов в списке на листе.
+- [Поместитьрабочий листЦветФильтр](operation/putworksheetcolorfilter) : добавление цветового фильтра на лист.
+- [СообщениеРабочий ЛистМатчПробелы](operation/postworksheetmatchblanks) : Сопоставить все пустые ячейки в списке.
+- [PostWorksheetMatchNonBlanks](operation/postworksheetmatchnonblanks) : Сопоставить все непустые ячейки в списке.
+- [PostWorksheetAutoFilterRefresh](operation/postworksheetautofilterrefresh) : обновить автоматические фильтры на листе.
+- [Удалитьворклистдатефилтер](operation/deleteworksheetdatefilter) : удалить фильтр даты на листе.
+- [Удалитьворклистфильтр](operation/deleteworksheetfilter) : удалить фильтр для столбца на листе.
+- [GetWorksheetАвтофигуры](operation/getworksheetautoshapes) : получить описание автофигур на листе.
+- [GetWorksheetAutoshapeWithFormat](operation/getworksheetautoshapewithformat) : Получить описание автофигуры в определенном формате.
+- [PostBatchConvert](operation/postbatchconvert) : Пакетное преобразование файлов, соответствующих определенным условиям соответствия.
+- [PostBatchProtect](operation/postbatchprotect) : Пакетная защита файлов, соответствующих определенным условиям соответствия.
+- [PostBatchLock](operation/postbatchlock) : Пакетная блокировка файлов, соответствующих определенным условиям соответствия.
+- [Постпакетная разблокировка](operation/postbatchunlock) : Пакетная разблокировка файлов, соответствующих определенным условиям соответствия.
+- [PostBatchSplit](operation/postbatchsplit) : Пакетное разделение файлов, соответствующих определенным условиям соответствия.
+- [СообщениеОчиститьСодержание](operation/postclearcontents) : Очистить содержимое области ячеек на листе.
+- [СообщениеОчиститьФорматы](operation/postclearformats) : Очистка форматов ячеек на листе.
+- [PostUpdateWorksheetRangeStyle](operation/postupdateworksheetrangestyle) : обновить стили диапазона ячеек на листе.
+- [PostWorksheetMerge](operation/postworksheetmerge) : объединить ячейки на листе.
+- [PostWorksheetUnmerge](operation/postworksheetunmerge) : отменить объединение ячеек на листе.
+- [GetWorksheetCells](operation/getworksheetcells) : Получить описания ячеек в указанном формате.
+- [GetWorksheetCell](operation/getworksheetcell) : получить данные ячейки, используя ссылку на ячейку или имя метода на листе.
+- [GetWorksheetCellStyle](operation/getworksheetcellstyle) : получить описания стилей ячеек на листе.
+- [PostWorksheetCellSetValue](operation/postworksheetcellsetvalue) : установите значение ячейки, используя имя ячейки на листе.
+- [PostUpdateWorksheetCellStyle](operation/postupdateworksheetcellstyle) : установите стиль ячейки, используя имя ячейки на листе.
+- [PostSetCellRangeValue](operation/postsetcellrangevalue) : установите значение диапазона на листе.
+- [PostCopyCellIntoCell](operation/postcopycellintocell) : копирование данных из исходной ячейки в целевую ячейку на листе.
+- [GetCellHtmlString](operation/getcellhtmlstring) : получить строку HTML, содержащую данные и определенные форматы в этой ячейке.
+- [PostSetCellHtmlString](operation/postsetcellhtmlstring) : установите в этой ячейке строку HTML, содержащую данные и определенные форматы.
+- [СообщениеЯчейкаВычислить](operation/postcellcalculate) : вычислить формулу ячейки на листе.
+- [СообщениеЯчейкаПерсонажи](operation/postcellcharacters) : установка символов ячеек на листе.
+- [GetWorksheetColumns](operation/getworksheetcolumns) : Получить описания столбцов листа.
+- [PostSetWorksheetColumnWidth](operation/postsetworksheetcolumnwidth) : установка ширины столбца листа.
+- [GetWorksheetColumn](operation/getworksheetcolumn) : Получить данные столбца листа по индексу столбца.
+- [PutInsertWorksheetColumns](operation/putinsertworksheetcolumns) вставить столбцы рабочего листа в рабочий лист.
+- [Удалить рабочий листстолбцы](operation/deleteworksheetcolumns) : удалить столбцы рабочего листа.
+- [СообщениеСкрыть рабочий листСтолбцы](operation/posthideworksheetcolumns) : скрыть столбцы листа на листе.
+- [PostUnhideWorksheetColumns](operation/postunhideworksheetcolumns) : Отобразить столбцы листа на листе.
+- [СообщениеГруппаРабочий ЛистСтолбцы](operation/postgroupworksheetcolumns) : Группировать столбцы рабочего листа на листе.
+- [PostUngroupWorksheetColumns](operation/postungroupworksheetcolumns) : разгруппировать столбцы листа.
+- [PostCopyWorksheetСтолбцы](operation/postcopyworksheetcolumns) : копирование данных из исходных столбцов в целевые столбцы на листе.
+- [PostColumnStyle](operation/postcolumnstyle) : установить стиль столбца на листе.
+- [GetWorksheetRows](operation/getworksheetrows) : Получить описания строк на листе.
+- [GetWorksheetRow](operation/getworksheetrow) : получить данные строки по индексу строки на листе.
+- [Удалитьрабочую строку](operation/deleteworksheetrow) : удалить строку на листе.
+- [Удалитьрабочие строки](operation/deleteworksheetrows) : удалить несколько строк на листе.
+- [PutInsertWorksheetRows](operation/putinsertworksheetrows) : вставьте несколько новых строк на лист.
+- [PutInsertWorksheetRow](operation/putinsertworksheetrow) : вставить новую строку на лист.
+- [PostUpdateWorksheetRow](operation/postupdateworksheetrow) : обновить высоту строк на листе.
+- [СообщениеСкрыть листРоки](operation/posthideworksheetrows) : скрыть строки на листе.
+- [PostUnhideWorksheetRows](operation/postunhideworksheetrows) : показать строки на листе.
+- [СообщениеГруппаРабочий ЛистСтроки](operation/postgroupworksheetrows) : группировать строки на листе.
+- [PostUngroupWorksheetRows](operation/postungroupworksheetrows) : разгруппировать строки на листе.
+- [PostCopyWorksheetRows](operation/postcopyworksheetrows) : копирование данных и форматов из определенных целых строк на листе.
+- [PostRowStyle](operation/postrowstyle) : применить форматы ко всей строке на листе.
+- [GetCellsCloudServicesHealthCheck](operation/getcellscloudserviceshealthcheck) : Получить описания ячеек в указанном формате.
+- [GetCellsCloudServiceStatus](operation/getcellscloudservicestatus) : Aspose.Cells Проверка состояния облачной службы.
+- [GetChartArea](operation/getchartarea) : Получить описание области диаграммы на листе.
+- [GetChartAreaFillFormat](operation/getchartareafillformat) : Получить описание формата заполнения области диаграммы на листе.
+- [ПолучитьДиаграммуОбластьГраницы](operation/getchartareaborder) : Получить описание границы области диаграммы.
+- [Получить рабочий листДиаграммы](operation/getworksheetcharts) : получить описания диаграмм на листе.
+- [Получить рабочий листДиаграмма](operation/getworksheetchart) получить диаграмму в указанном формате.
+- [ПоместитьРабочий ЛистДиаграмма](operation/putworksheetchart) : добавить новую диаграмму на лист.
+- [Удалить рабочий листДиаграмма](operation/deleteworksheetchart) : удалить диаграмму по индексу на листе.
+- [СообщениеРабочий ЛистДиаграмма](operation/postworksheetchart) : обновить свойства диаграммы на листе.
+- [GetWorksheetChartLegend](operation/getworksheetchartlegend) : Получить описание легенды диаграммы на листе.
+- [СообщениеРабочий ЛистДиаграммаЛегенда](operation/postworksheetchartlegend) : обновить легенду диаграммы на листе.
+- [ПоместитьРабочий ЛистДиаграммаЛегенда](operation/putworksheetchartlegend) : показать легенду диаграммы на листе.
+- [Удалитьрабочий листДиаграммаЛегенда](operation/deleteworksheetchartlegend) : скрывает легенду диаграммы на листе.
+- [Удалить рабочий листДиаграммы](operation/deleteworksheetcharts) : очистка диаграмм на листах.
+- [GetWorksheetChartTitle](operation/getworksheetcharttitle) : Получить описание заголовка диаграммы на листе.
+- [СообщениеРабочий ЛистДиаграммаНазвание](operation/postworksheetcharttitle) : обновить заголовок диаграммы на листе.
+- [Поместитьрабочий листДиаграммаНазвание](operation/putworksheetcharttitle) : установить заголовок диаграммы на листе.
+- [Удалитьрабочий листChartTitle](operation/deleteworksheetcharttitle) : скрыть заголовок диаграммы на листе.
+- [GetChartSeriesAxis](operation/getchartseriesaxis) Получить описания осей серии диаграммы на диаграмме.
+- [GetChartCategoryAxis](operation/getchartcategoryaxis) : Получить описания осей серии диаграммы на диаграмме.
+- [GetChartValueAxis](operation/getchartvalueaxis) : получить ось значений диаграммы.
+- [GetChartSecondCategoryAxis](operation/getchartsecondcategoryaxis) : Получить ось второй категории диаграммы на диаграмме.
+- [GetChartSecondValueAxis](operation/getchartsecondvalueaxis) : Получить вторую ось значений диаграммы.
+- [СообщениеДиаграммаСерияОсь](operation/postchartseriesaxis) : обновить ось серии диаграммы на диаграмме.
+- [СообщениеДиаграммаКатегорияОсь](operation/postchartcategoryaxis) : обновить ось категорий диаграммы на диаграмме.
+- [СообщениеДиаграммаЗначениеОсь](operation/postchartvalueaxis) : обновить ось значений диаграммы.
+- [СообщениеДиаграммаВтораяКатегорияОсь](operation/postchartsecondcategoryaxis) : обновить вторую ось категории диаграммы.
+- [PostChartSecondValueAxis](operation/postchartsecondvalueaxis) : обновить вторую ось значений диаграммы.
+- [GetWorksheetConditionalFormattings](operation/getworksheetconditionalformattings) : Получить описания условного форматирования на листе.
+- [GetWorksheetConditionalFormatting](operation/getworksheetconditionalformatting) Получить описания условного форматирования на листе.
+- [PutWorksheetУсловное форматирование](operation/putworksheetconditionalformatting) : добавить условное форматирование на лист.
+- [PutWorksheetFormatCondition](operation/putworksheetformatcondition) : добавить условие форматирования на лист.
+- [PutWorksheetFormatConditionArea](operation/putworksheetformatconditionarea) : добавьте область ячейки для условия форматирования на листе.
+- [PutWorksheetFormatConditionCondition](operation/putworksheetformatconditioncondition) : добавьте условие для условия формата на листе.
+- [Удалитьрабочий листусловное форматирование](operation/deleteworksheetconditionalformattings) : очистить все условное форматирование на листе.
+- [Удалитьрабочий лист с условным форматированием](operation/deleteworksheetconditionalformatting) : удалить условное форматирование.
+- [Удалитьрабочий листКондиционалФорматтингАреа](operation/deleteworksheetconditionalformattingarea) : удалить область ячейки из условного форматирования.
+- [Получить рабочую книгу](operation/getworkbook) : Извлечение книг в различных форматах.
+- [PutConvertWorkbook](operation/putconvertworkbook) : преобразовать книгу из запрошенного содержимого в файлы разных форматов.
+- [ПосткнигаСохранить как](operation/postworkbooksaveas) : сохраните файл Excel в различных форматах.
+- [Постконвертироватьрабочую книгу в PDF](operation/postconvertworkbooktopdf) : Преобразовать файл Excel в файлы PDF.
+- [PostConvertWorkbookToPNG](operation/postconvertworkbooktopng) : Преобразовать файл Excel в файлы PNG.
+- [PostConvertWorkbookToDocx](operation/postconvertworkbooktodocx) : конвертировать файл Excel в файлы Docx.
+- [Постконвертироватьворкбуктоппткс](operation/postconvertworkbooktopptx) : конвертировать файл Excel в файлы Pptx.
+- [Постконверторкбуктохтмл](operation/postconvertworkbooktohtml) : Преобразовать файл Excel в файлы HTML.
+- [PostConvertWorkbookToMarkdown](operation/postconvertworkbooktomarkdown) : конвертировать файл Excel в файлы Markdown.
+- [Постконвертироватьрабочую книгуToJson](operation/postconvertworkbooktojson) : конвертировать файл Excel в файлы Json.
+- [ПостконвертироватьворкбуктоSQL](operation/postconvertworkbooktosql) : Преобразовать файл Excel в файлы сценариев SQL.
+- [Постконвертироватьрабочую книгу в CSV](operation/postconvertworkbooktocsv) : Преобразовать файл Excel в файлы Csv.
+- [Постэкспорт](operation/postexport) : Экспортировать внутренние элементы Excel или саму книгу в файлы различных форматов.
+- [ПосткнигаЭкспортXML](operation/postworkbookexportxml) : экспортировать данные XML из файла Excel. Если в файле Excel есть карты XML, экспортируйте данные XML. Если в файле Excel нет карты XML, преобразуйте файл Excel в файл XML.
+- [PostWorkbookИмпортJson](operation/postworkbookimportjson) импортировать файл данных JSON в книгу. Файл данных JSON может быть либо облачным файлом, либо данными из URI HTTP.
+- [Пострабочая книгаИмпортXML](operation/postworkbookimportxml) : импортировать файл данных XML в файл Excel. Файл данных XML может быть либо облачным файлом, либо данными из URI HTTP.
+- [Постимпортданные](operation/postimportdata) : импортировать данные в файл Excel.
+- [Очистка данных после рабочей книги](operation/postworkbookdatacleansing) : Очистка данных файлов электронных таблиц — это процесс управления данными, используемый для выявления, исправления и удаления ошибок, неполноты, дубликатов или неточностей в таблицах и диапазонах.
+- [PostDataОчистка](operation/postdatacleansing) : Очистка данных файлов электронных таблиц — это процесс управления данными, используемый для выявления, исправления и удаления ошибок, неполноты, дубликатов или неточностей в таблицах и диапазонах.
+- [Дедупликация данных PostWorkbook](operation/postworkbookdatadeduplication) : Дедупликация данных в файлах электронных таблиц в основном используется для устранения дублирующихся данных в таблицах и диапазонах.
+- [PostDataДедупликация](operation/postdatadeduplication) : Дедупликация данных в файлах электронных таблиц в основном используется для устранения дублирующихся данных в таблицах и диапазонах.
+- [PostWorkbookDataFill](operation/postworkbookdatafill) Заполнение данных для файлов электронных таблиц в основном используется для заполнения пустых данных в таблицах и диапазонах.
+- [Постдатафилл](operation/postdatafill) Заполнение данных для файлов электронных таблиц в основном используется для заполнения пустых данных в таблицах и диапазонах.
+- [PostDeleteIncompleteRows](operation/postdeleteincompleterows) : Удаление неполных строк файлов электронных таблиц в основном используется для удаления неполных строк в таблицах и диапазонах.
+- [GetWorksheetHyperlinks](operation/getworksheethyperlinks) : получить описания гиперссылок на листе.
+- [GetWorksheetГиперссылка](operation/getworksheethyperlink) : Получить описание гиперссылки по индексу на листе.
+- [Удалить рабочий листгиперссылка](operation/deleteworksheethyperlink) : удалить гиперссылку по индексу на листе.
+- [PostWorksheetГиперссылка](operation/postworksheethyperlink) : обновить гиперссылку по индексу на листе.
+- [PutWorksheetГиперссылка](operation/putworksheethyperlink) : добавить гиперссылку на лист.
+- [Удалить рабочий листгиперссылки](operation/deleteworksheethyperlinks) : удалить все гиперссылки на листе.
+- [ПостАссемблировать](operation/postassemble) : Объедините файлы данных с файлами шаблонов для создания файлов в различных форматах.
+- [Посткомпресс](operation/postcompress) : Сжимайте файлы и генерируйте целевые файлы в различных форматах. Поддерживаемые форматы файлов включают Xls, Xlsx, Xlsm, Xlsb, Ods и другие.
+- [PostMerge](operation/postmerge) : объединить ячейки на листе.
+- [ПостСплит](operation/postsplit) : Разделение файлов электронных таблиц Excel на основе рабочих листов и создание выходных файлов в различных форматах.
+- [ПостПоиск](operation/postsearch) : Поиск указанного текста в файлах Excel.
+- [ПостЗаменить](operation/postreplace) : Заменить указанный текст новым текстом в файлах Excel.
+- [Постимпорт](operation/postimport) : Импортируйте данные в файл Excel и создавайте выходные файлы в различных форматах.
+- [СообщениеВодяной знак](operation/postwatermark) : Добавьте текстовый водяной знак в файлы Excel и создайте выходные файлы в различных форматах.
+- [Постклиробъектс](operation/postclearobjects) : Очистить внутренние элементы в файлах Excel и сгенерировать выходные файлы в различных форматах.
+- [ПостРеверс](operation/postreverse) : перевернуть строки или столбцы в файлах Excel и создать выходные файлы в различных форматах.
+- [Послеремонт](operation/postrepair) : восстанавливайте ненормальные файлы и создавайте файлы в различных форматах.
+- [PostRotate](operation/postrotate) : вращайте строки, столбцы или другие объекты в файлах Excel и сохраняйте их в различных форматах.
+- [Метаданные сообщения](operation/postmetadata) Обновите свойства документа в файле Excel и сохраните их в различных форматах.
+- [Получить метаданные](operation/getmetadata) : Получить свойства документа ячеек.
+- [Удалить метаданные](operation/deletemetadata) : Удалить свойства документа ячеек в файле Excel и сохранить их в различных форматах.
+- [GetWorksheetListObjects](operation/getworksheetlistobjects) : Получить описания ListObjects на листе.
+- [GetWorksheetListObject](operation/getworksheetlistobject) : Получить описание объекта списка по индексу на листе.
+- [PutWorksheetListObject](operation/putworksheetlistobject) : добавьте ListObject на лист.
+- [Удалитьворкшитлистобъектс](operation/deleteworksheetlistobjects) : удалить объекты ListObject на листе.
+- [Удалитьрабочий листлистобъект](operation/deleteworksheetlistobject) : Удалить объект списка по индексу на листе.
+- [PostWorksheetListObject](operation/postworksheetlistobject) : обновить объект списка по индексу на листе.
+- [PostWorksheetListObjectConvertToRange](operation/postworksheetlistobjectconverttorange) : преобразовать объект списка в диапазон на листе.
+- [PostWorksheetListObjectSummarizeWithPivotTable](operation/postworksheetlistobjectsummarizewithpivottable) : Создайте сводную таблицу с объектом списка на листе.
+- [PostWorksheetListObjectSortTable](operation/postworksheetlistobjectsorttable) Сортировка объекта списка на листе.
+- [Пострабочий листлистлистобжектремоведупликатес](operation/postworksheetlistobjectremoveduplicates) : удалить дубликаты в объекте списка.
+- [PostWorksheetListObjectInsertSlicer](operation/postworksheetlistobjectinsertslicer) : Вставить срез для объекта списка.
+- [PostWorksheetListColumn](operation/postworksheetlistcolumn) : Обновить столбец списка в объекте списка.
+- [PostWorksheetListColumnsTotal](operation/postworksheetlistcolumnstotal) : обновить общее количество столбцов списка в таблице.
+- [GetWorksheetOleObjects](operation/getworksheetoleobjects) : получить описания объектов OLE на листе.
+- [GetWorksheetOleObject](operation/getworksheetoleobject) : получить объект OLE в указанном формате на листе.
+- [Удалить рабочий листOleObjects](operation/deleteworksheetoleobjects) : удалить все объекты OLE на листе.
+- [Удалитьрабочий листОлеОбъект](operation/deleteworksheetoleobject) : удалить объект OLE на листе.
+- [PostUpdateWorksheetOleObject](operation/postupdateworksheetoleobject) : обновить объект OLE на листе.
+- [Поместитьрабочий листОлеОбъект](operation/putworksheetoleobject) : добавить объект OLE на лист.
+- [GetVerticalPageBreaks](operation/getverticalpagebreaks) : получить описания вертикальных разрывов страниц на листе.
+- [GetHorizontalPageBreaks](operation/gethorizontalpagebreaks) получить описания горизонтальных разрывов страниц на листе.
+- [GetVerticalPageBreak](operation/getverticalpagebreak) : получить описание вертикального разрыва страницы на листе.
+- [GetHorizontalPageBreak](operation/gethorizontalpagebreak) : получить описание горизонтального разрыва страницы на листе.
+- [ПоместитьВертикальныйРазрыв Страницы](operation/putverticalpagebreak) : добавить вертикальный разрыв страницы на листе.
+- [Поместить по горизонталиРазрыв страницы](operation/puthorizontalpagebreak) : добавить горизонтальные разрывы страниц на листе.
+- [Удалить вертикальные разрывы страницы](operation/deleteverticalpagebreaks) : удалить вертикальные разрывы страниц на листе.
+- [Удалить горизонтальные разрывы страниц](operation/deletehorizontalpagebreaks) : удалить горизонтальные разрывы страниц на листе.
+- [Удалитьвертикальный разрыв страницы](operation/deleteverticalpagebreak) : удалить вертикальный разрыв страницы на листе.
+- [Удалить по горизонталиPageBreak](operation/deletehorizontalpagebreak) : удалить горизонтальный разрыв страницы на листе.
+- [GetPageSetup](operation/getpagesetup) : Получить описание настройки страницы на листе.
+- [Настройка пост-страницы](operation/postpagesetup) : обновить настройки страницы на листе.
+- [УдалитьHeaderFooter](operation/deleteheaderfooter) : очистить верхний и нижний колонтитулы на листе.
+- [GetHeader](operation/getheader) : Получить описание заголовка страницы на листе.
+- [Заголовок сообщения](operation/postheader) обновить заголовок страницы на листе.
+- [GetFooter](operation/getfooter) : Получить описание нижнего колонтитула страницы на листе.
+- [Нижний колонтитул поста](operation/postfooter) : обновить нижний колонтитул страницы на листе.
+- [PostFitWideToPages](operation/postfitwidetopages) : установка масштаба, при котором страница будет соответствовать ширине при печати на листе.
+- [PostFitTallToPages](operation/postfittalltopages) : установка масштаба, при котором страница будет соответствовать высоте при печати на листе.
+- [Получить рабочий лист картинки](operation/getworksheetpictures) : Получить описания изображений на листе.
+- [GetWorksheetPictureWithFormat](operation/getworksheetpicturewithformat) : Получить изображение по номеру на листе.
+- [Поместитьрабочий листДобавить изображение](operation/putworksheetaddpicture) : добавить новое изображение на лист.
+- [СообщениеРабочий ЛистКартинка](operation/postworksheetpicture) : обновить изображение по индексу на листе.
+- [Удалить рабочий листPicture](operation/deleteworksheetpicture) : удалить объект изображения по индексу на листе.
+- [Удалить рабочий листPictures](operation/deleteworksheetpictures) : удалить все изображения на листе.
+- [Получить рабочий лист сводных таблиц](operation/getworksheetpivottables) : Получить описания сводных таблиц на листе.
+- [Получить рабочий лист сводной таблицы](operation/getworksheetpivottable) получить информацию сводной таблицы по индексу на листе.
+- [ПолучитьPivotTableField](operation/getpivottablefield) : получение описаний сводных полей в сводной таблице.
+- [GetWorksheetPivotTableFilters](operation/getworksheetpivottablefilters) : получает фильтры сводной таблицы на листе.
+- [GetWorksheetPivotTableFilter](operation/getworksheetpivottablefilter) : получить фильтры сводной таблицы на листе.
+- [Поместить рабочий листСводная таблица](operation/putworksheetpivottable) : добавьте сводную таблицу на лист.
+- [ПоместитьPivotTableField](operation/putpivottablefield) : добавьте сводное поле в сводную таблицу.
+- [PutWorksheetPivotTableFilter](operation/putworksheetpivottablefilter) : добавьте сводный фильтр в сводную таблицу.
+- [PostPivotTableFieldHideItem](operation/postpivottablefieldhideitem) : скрыть элемент сводного поля в сводной таблице.
+- [PostPivotTableFieldMoveTo](operation/postpivottablefieldmoveto) : перемещение сводного поля в сводной таблице.
+- [PostPivotTableCellStyle](operation/postpivottablecellstyle) : обновить стиль ячеек в сводной таблице.
+- [Стиль PostPivotTable](operation/postpivottablestyle) : обновить стиль в сводной таблице.
+- [PostPivotTableUpdatePivotFields](operation/postpivottableupdatepivotfields) : обновить поля сводной таблицы в сводной таблице.
+- [PostPivotTableUpdatePivotField](operation/postpivottableupdatepivotfield) : обновить сводное поле в сводной таблице.
+- [PostWorksheetPivotTableCalculate](operation/postworksheetpivottablecalculate) : Рассчитать данные сводной таблицы по ячейкам.
+- [PostWorksheetPivotTableMove](operation/postworksheetpivottablemove) : перемещение сводной таблицы на листе.
+- [Удалить рабочий листСводные таблицы](operation/deleteworksheetpivottables) : удалить сводные таблицы на листе.
+- [Удалить рабочий листСводная таблица](operation/deleteworksheetpivottable) : удалить сводную таблицу по индексу на листе.
+- [УдалитьPivotTableField](operation/deletepivottablefield) : удалить сводное поле в сводной таблице.
+- [Удалитьрабочий листСводная таблицаФильтры](operation/deleteworksheetpivottablefilters) : удалить все сводные фильтры в сводной таблице.
+- [Удалитьрабочий листPivotTableFilter](operation/deleteworksheetpivottablefilter) : удалить сводный фильтр в сводной таблице.
+- [Получить свойства документа](operation/getdocumentproperties) : Получить описания свойств файла Excel.
+- [ПоместитьДокументСвойство](operation/putdocumentproperty) : Установите или добавьте свойство Excel.
+- [Получить свойство документа](operation/getdocumentproperty) : Получить свойство Excel по имени.
+- [Удалитьсвойство документа](operation/deletedocumentproperty) : удалить свойство Excel.
+- [Удалитьсвойства документа](operation/deletedocumentproperties) : удалить все пользовательские свойства документа и сбросить встроенные.
+- [СообщениеЦифровойПодпись](operation/postdigitalsignature) : Excel цифровая подпись файла.
+- [PostEncryptWorkbook](operation/postencryptworkbook) : Excel Шифрование.
+- [Удалить расшифровку рабочей книги](operation/deletedecryptworkbook) : Excel расшифровка файлов.
+- [PostProtectWorkbook](operation/postprotectworkbook) : Excel защита.
+- [УдалитьUnProtectWorkbook](operation/deleteunprotectworkbook) : Excel снятие защиты.
+- [PutDocumentProtectFromChanges](operation/putdocumentprotectfromchanges) : Excel защита файла от записи.
+- [Удалитьдокументунпротектфромчанжес](operation/deletedocumentunprotectfromchanges) : Excel файл отменяет защиту от записи.
+- [Постразблокировка](operation/postunlock) : Разблокировать Excel файлов.
+- [Постлок](operation/postlock) : Заблокировать файлы Excel.
+- [ПостЗащита](operation/postprotect) : Excel шифрование файлов.
+- [PostWorksheetCellsRangesCopy](operation/postworksheetcellsrangescopy) : копирование содержимого из исходного диапазона в целевой диапазон на листе.
+- [PostWorksheetCellsRangeMerge](operation/postworksheetcellsrangemerge) : объединить диапазон ячеек в одну ячейку.
+- [PostWorksheetCellsRangeUnMerge](operation/postworksheetcellsrangeunmerge) : отменить объединение ячеек в этом диапазоне.
+- [PostWorksheetCellsRangeStyle](operation/postworksheetcellsrangestyle) : установить стиль для указанного диапазона.
+- [GetWorksheetCellsRangeValue](operation/getworksheetcellsrangevalue) получить значения ячеек в указанном диапазоне.
+- [PostWorksheetCellsRangeValue](operation/postworksheetcellsrangevalue) : присвоение значения диапазону; при необходимости значение будет преобразовано в другой тип данных, а числовой формат ячейки будет сброшен.
+- [PostWorksheetCellsRangeMoveTo](operation/postworksheetcellsrangemoveto) : перемещение текущего диапазона в диапазон назначения.
+- [PostWorksheetCellsRangeSort](operation/postworksheetcellsrangesort) : выполнить сортировку данных по диапазону ячеек.
+- [PostWorksheetCellsRangeOutlineBorder](operation/postworksheetcellsrangeoutlineborder) : применить контурную рамку вокруг диапазона ячеек.
+- [PostWorksheetCellsRangeColumnWidth](operation/postworksheetcellsrangecolumnwidth) : установите ширину столбца указанного диапазона.
+- [PostWorksheetCellsRangeRowHeight](operation/postworksheetcellsrangerowheight) : Устанавливает высоту строки диапазона.
+- [Поместитьрабочий листячейкидиапазон](operation/putworksheetcellsrange) : вставить диапазон ячеек и сдвинуть существующие ячейки в соответствии с указанным параметром сдвига.
+- [Удалитьрабочий листклеллсдиапазон](operation/deleteworksheetcellsrange) : удалить диапазон ячеек и сдвинуть существующие ячейки в соответствии с указанным параметром сдвига.
+- [GetWorksheetShapes](operation/getworksheetshapes) Получить описания фигур на листе.
+- [GetWorksheetShape](operation/getworksheetshape) : Получить описание фигуры на листе.
+- [Поместитьрабочий листShape](operation/putworksheetshape) : добавить фигуру на лист.
+- [Удалить рабочий листфигуры](operation/deleteworksheetshapes) : удалить все фигуры на листе.
+- [Удалитьрабочую фигуру](operation/deleteworksheetshape) : удалить фигуру на листе.
+- [Форма ПостРабочего Листа](operation/postworksheetshape) : обновить фигуру на листе.
+- [СообщениеРабочий ЛистГруппаФорма](operation/postworksheetgroupshape) : группировка фигур на листе.
+- [PostWorksheetUngroupShape](operation/postworksheetungroupshape) : разгруппировать фигуры на листе.
+- [GetWorksheetSparklineGroups](operation/getworksheetsparklinegroups) : получение описаний групп спарклайнов на листе.
+- [GetWorksheetSparklineGroup](operation/getworksheetsparklinegroup) : Получить описание группы спарклайнов на листе.
+- [Удалить рабочий листSparklineGroups](operation/deleteworksheetsparklinegroups) : удалить группы спарклайнов на листе.
+- [Удалить рабочий листSparklineGroup](operation/deleteworksheetsparklinegroup) : удалить группу спарклайнов на листе.
+- [Поместитьрабочий листSparklineGroup](operation/putworksheetsparklinegroup) : добавьте группу спарклайнов на лист.
+- [СообщениеРабочий ЛистСпарклайнГруппа](operation/postworksheetsparklinegroup) : обновить группу спарклайнов на листе.
+- [Пострантаск](operation/postruntask) Запуск задач.
+- [GetWorkbookDefaultStyle](operation/getworkbookdefaultstyle) : получить описание стиля по умолчанию для книги.
+- [GetWorkbookTextItems](operation/getworkbooktextitems) : получить текстовые элементы в книге.
+- [Получить имена рабочих книг](operation/getworkbooknames) : получить именованные диапазоны в книге.
+- [PutWorkbookName](operation/putworkbookname) : определение нового имени в книге.
+- [GetWorkbookName](operation/getworkbookname) : Получить описание именованного диапазона в книге.
+- [Имя PostWorkbookName](operation/postworkbookname) : обновить именованный диапазон в книге.
+- [GetWorkbookNameValue](operation/getworkbooknamevalue) : получить значение именованного диапазона в книге.
+- [Удалить имена рабочих книг](operation/deleteworkbooknames) : удалить все именованные диапазоны в книге.
+- [Удалитьимя рабочей книги](operation/deleteworkbookname) : удалить именованный диапазон в книге.
+- [PostWorkbooksMerge](operation/postworkbooksmerge) : объединить книгу с существующей книгой.
+- [СообщениеРабочие книгиПоиск текста](operation/postworkbookstextsearch) : поиск текста в книге.
+- [PostWorkbookTextReplace](operation/postworkbooktextreplace) : заменить текст в книге.
+- [PostWorkbookGetSmartMarkerResult](operation/postworkbookgetsmartmarkerresult) : интеллектуальная обработка маркеров.
+- [Поместитьрабочую книгуСоздать](operation/putworkbookcreate) : Создайте новую книгу, используя разные методы.
+- [ПостРабочая КнигаСплит](operation/postworkbooksplit) разделить книгу на определенный формат.
+- [PostWorkbookРассчитатьФормула](operation/postworkbookcalculateformula) : вычислить все формулы в книге.
+- [СообщениеAutofitWorkbookRows](operation/postautofitworkbookrows) : автоподбор строк в книге.
+- [СообщениеAutofitWorkbookСтолбцы](operation/postautofitworkbookcolumns) : автоподбор столбцов в книге.
+- [Получить настройки рабочей книги](operation/getworkbooksettings) : получение описаний настроек книги.
+- [Настройки посткниги](operation/postworkbooksettings) : обновить настройку в книге.
+- [ПоместитьРабочую КнигуФон](operation/putworkbookbackground) : установка фона в книге.
+- [УдалитьWorkbookBackground](operation/deleteworkbookbackground) : удалить фон в книге.
+- [ПоместитьРабочую КнигуВодыМаркер](operation/putworkbookwatermarker) : установить водяной маркер в книге.
+- [GetPageCount](operation/getpagecount) : получить количество страниц в книге.
+- [Получить рабочие листы](operation/getworksheets) : получить описание листов из книги.
+- [GetWorksheetWithFormat](operation/getworksheetwithformat) : получить лист в указанном формате из книги.
+- [PutChangeVisibilityWorksheet](operation/putchangevisibilityworksheet) : изменить видимость листа в книге.
+- [Поместить активный лист](operation/putactiveworksheet) установить активный индекс листа в книге.
+- [ПоместитьВставитьНовыйРабочий Лист](operation/putinsertnewworksheet) : вставить новый лист в книгу.
+- [ПоместитьДобавитьНовыйРабочий Лист](operation/putaddnewworksheet) : добавить новый лист в книгу.
+- [Удалить рабочий лист](operation/deleteworksheet) : удалить лист в книге.
+- [Удалить рабочие листы](operation/deleteworksheets) : удалить совпадающие листы в книге.
+- [PostMoveWorksheet](operation/postmoveworksheet) : Переместить лист в книге.
+- [Рабочий лист PutProtect](operation/putprotectworksheet) : Защитить рабочий лист.
+- [УдалитьUnprotectWorksheet](operation/deleteunprotectworksheet) : снять защиту с листа.
+- [GetWorksheetTextItems](operation/getworksheettextitems) : получить текстовые элементы на листе.
+- [GetWorksheetКомментарии](operation/getworksheetcomments) : Получить описание комментариев на листе.
+- [GetWorksheetComment](operation/getworksheetcomment) : Получить описание комментария на листе.
+- [Поместитьрабочий листКомментарий](operation/putworksheetcomment) : добавить комментарий к ячейке на листе.
+- [PostWorksheetКомментарий](operation/postworksheetcomment) : обновить комментарий к ячейке на листе.
+- [Удалитьрабочий листкомментарий](operation/deleteworksheetcomment) : удалить комментарий к ячейке на листе.
+- [Удалитькомментарии листа](operation/deleteworksheetcomments) удалить все комментарии на листе.
+- [GetWorksheetMergedCells](operation/getworksheetmergedcells) : получить объединенные ячейки рабочего листа.
+- [GetWorksheetMergedCell](operation/getworksheetmergedcell) : Получить описание объединенной ячейки по ее индексу на листе.
+- [GetWorksheetCalculateFormula](operation/getworksheetcalculateformula) : вычислить формулу на листе.
+- [СообщениеРабочий ЛистРассчитатьФормула](operation/postworksheetcalculateformula) : вычислить формулу на листе.
+- [PostWorksheetTextSearch](operation/postworksheettextsearch) : поиск текста на листе.
+- [PostWorksheetTextReplace](operation/postworksheettextreplace) : заменить старый текст новым текстом на листе.
+- [PostWorksheetRangeSort](operation/postworksheetrangesort) : сортировка диапазона на листе.
+- [СообщениеAutofitWorksheetRow](operation/postautofitworksheetrow) : автоподбор строки на листе.
+- [СообщениеAutofitWorksheetRows](operation/postautofitworksheetrows) : автоподбор строк на листе.
+- [СообщениеAutofitWorksheetСтолбцы](operation/postautofitworksheetcolumns) : автоподбор столбцов на листе.
+- [ПоместитьРабочий ЛистФон](operation/putworksheetbackground) : установить фоновое изображение на листе.
+- [Удалить рабочий листBackground](operation/deleteworksheetbackground) : удалить фоновое изображение на листе.
+- [Поместить рабочий листЗаморозить панели](operation/putworksheetfreezepanes) : установить области закрепления на листе.
+- [Удалить рабочий листFreezePanes](operation/deleteworksheetfreezepanes) : Разморозить панели на листе.
+- [PostCopyWorksheet](operation/postcopyworksheet) : копирование содержимого и форматов с другого листа.
+- [Постпереименовать рабочий лист](operation/postrenameworksheet) : переименовать лист в книге.
+- [Свойство PostUpdateWorksheetProperty](operation/postupdateworksheetproperty) : обновить свойства листа в книге.
+- [GetNamedRanges](operation/getnamedranges) : Получить описания диапазонов на листах.
+- [GetNamedRangeValue](operation/getnamedrangevalue) : Получить значения в диапазоне.
+- [PostUpdateWorksheetZoom](operation/postupdateworksheetzoom) : обновить процент масштабирования на листе. Должно быть от 10 до 400.
+- [GetWorksheetPageCount](operation/getworksheetpagecount) : получить количество страниц на листе.
+- [GetWorksheetValidations](operation/getworksheetvalidations) : Получить описания проверок на листе.
+- [GetWorksheetValidation](operation/getworksheetvalidation) : получить подтверждение по его индексу на листе.
+- [PutWorksheetValidation](operation/putworksheetvalidation) : добавить проверку по индексу на листе.
+- [Пострабочий листПроверка](operation/postworksheetvalidation) : обновить проверку по индексу на листе.
+- [Удалить рабочий лист валидация](operation/deleteworksheetvalidation) удалить проверку по индексу на листе.
+- [Удалить рабочий лист валидации](operation/deleteworksheetvalidations) : удалить все проверки на листе.
+
+# Aspose.Cells Облако API Модель
+
+- [ObjectExistsExtensions](model/objectexistsextensions)  :   
+- [ФайлВерсия](model/fileversion)  :   
+- [Файл хранения](model/storagefile) : информация о файле или папке.
+- [GoogleDriveStorageFile](model/googledrivestoragefile)  :   
+- [Выше среднего](model/aboveaverage) Опишите правило условного форматирования «Выше среднего». Это правило условного форматирования выделяет ячейки, значения которых выше или ниже среднего для всех значений в диапазоне.
+- [АннотацияРасчетДвигатель](model/abstractcalculationengine) : представляет пользовательский механизм вычислений, расширяющий механизм вычислений по умолчанию Aspose.Cells.
+- [АннотацияРасчетМонитор](model/abstractcalculationmonitor) : Мониторинг, позволяющий пользователю отслеживать ход расчета формулы.
+- [Автофильтр](model/autofilter)  :   
+- [Параметры автоподборщика](model/autofitteroptions)  :   
+- [Граница](model/border)  :   
+- [Параметры расчета](model/calculationoptions)  :   
+- [Клетка](model/cell)  :   
+- [CellArea](model/cellarea)  :   
+- [Cells](model/cells)  :   
+- [КлеткиОблакоФайлИнформация](model/cellscloudfileinfo) : Cells Описание информации об облачном файле.
+- [КлеткиЦвет](model/cellscolor)  :   
+- [Свойства документа](model/cellsdocumentproperties) : Excel объекты
+- [ЯчейкиДокументСвойство](model/cellsdocumentproperty) : Cells собственность документа.
+- [Цвет](model/color) : Цвет.
+- [Цветовой фильтр](model/colorfilter) : Цветовой фильтр.
+- [Цветовая шкала](model/colorscale) : описать правило условного форматирования ColorScale. Это правило условного форматирования создает в ячейках градуированную цветовую шкалу.
+- [Столбец](model/column)  :   
+- [Столбцы](model/columns)  :   
+- [Комментарий](model/comment)  :   
+- [Комментарии](model/comments)  :   
+- [Условное форматирование](model/conditionalformatting)  :   
+- [Значок условного форматирования](model/conditionalformattingicon)  :   
+- [Условное форматирование](model/conditionalformattings)  :   
+- [Значение условного форматирования](model/conditionalformattingvalue)  :   
+- [КопироватьПараметры](model/copyoptions) : представляет параметры копирования.
+- [КритерииНесколькоФильтр](model/criteriamultiplefilter)  :   
+- [ПользовательскийФильтр](model/customfilter)  :   
+- [Панель данных](model/databar) : Опишите правило условного форматирования DataBar. Это правило условного форматирования отображает градуированную панель данных в диапазоне ячеек.
+- [DataBarГраница](model/databarborder)  :   
+- [Очистка данных](model/datacleansing) : Очистка данных
+- [DataColumnFillValue](model/datacolumnfillvalue)  :   
+- [Заполнение данных](model/datafill)  :   
+- [DataFillValue](model/datafillvalue)  :   
+- [Сортировщик данных](model/datasorter) : Краткое описание DataSorter.
+- [Ключ сортировщика данных](model/datasorterkey) : представляет ключ сортировщика данных.
+- [DateTimeGroupItem](model/datetimegroupitem)  :   
+- [Регион дедупликации](model/deduplicationregion)  :   
+- [ДинамическийФильтр](model/dynamicfilter)  :   
+- [Информация о файле](model/fileinfo) : Информация о файле
+- [ФайлыРезультат](model/filesresult)  :   
+- [ФильтрСтолбец](model/filtercolumn)  :   
+- [Шрифт](model/font)  :   
+- [Настройка шрифта](model/fontsetting)  :   
+- [ФорматУсловие](model/formatcondition)  :   
+- [ФормулаФорматУсловие](model/formulaformatcondition)  :   
+- [ФормулаНастройки](model/formulasettings) : Настройки формул и расчетов.
+- [Настройки глобализации](model/globalizationsettings) : представляет настройки глобализации.
+- [Горизонтальный разрыв страницы](model/horizontalpagebreak)  :   
+- [Горизонтальные разрывы страниц](model/horizontalpagebreaks)  :   
+- [Гиперссылка](model/hyperlink)  :   
+- [Гиперссылки](model/hyperlinks)  :   
+- [ЗначокФильтр](model/iconfilter)  :   
+- [Набор иконок](model/iconset) Опишите правило условного форматирования IconSet. Это правило условного форматирования применяет значки к ячейкам в соответствии с их значениями.
+- [Связь](model/link)  :   
+- [СсылкаЭлемент](model/linkelement)  :   
+- [Параметры загрузки](model/loadoptions)  :   
+- [MergedCell](model/mergedcell)  :   
+- [Объединенные ячейки](model/mergedcells)  :   
+- [МножественныйФильтр](model/multiplefilter)  :   
+- [Несколько фильтров](model/multiplefilters)  :   
+- [Имя](model/name)  :   
+- [Имена](model/names)  :   
+- [НегативБарФормат](model/negativebarformat) : представляет настройки цвета гистограмм для отрицательных значений, определенных правилом условного форматирования гистограмм.
+- [Раздел страницы](model/pagesection)  :   
+- [Настройка страницы](model/pagesetup)  :   
+- [Параметры вставки](model/pasteoptions) : представляет специальные параметры вставки.
+- [PDFSecurityOptions](model/pdfsecurityoptions)  :   
+- [Защита](model/protection) : представляет различные типы параметров защиты, доступные для листа.
+- [Протектлистпараметр](model/protectsheetparameter)  :   
+- [Таблица запросов](model/querytable) : представляет информацию QueryTable.
+- [Диапазон](model/range)  :   
+- [Диапазоны](model/ranges)  :   
+- [Ряд](model/row)  :   
+- [Строки](model/rows)  :   
+- [Сохранить результат](model/saveresult)  :   
+- [Параметры постраничного сохранения](model/paginatedsaveoptions) : представляет параметры нумерации страниц.
+- [Однозначение](model/singlevalue)  :   
+- [СортКей](model/sortkey)  :   
+- [СплитРезультат](model/splitresult)  :   
+- [СплитРезультатДокумент](model/splitresultdocument)  :   
+- [Стиль](model/style)  :   
+- [СтильФорматУсловие](model/styleformatcondition)  :   
+- [Стили](model/styles)  :   
+- [ТекстФорматУсловие](model/textformatcondition)  :   
+- [Текститем](model/textitem)  :   
+- [Текстовые элементы](model/textitems)  :   
+- [Текстовые параметры](model/textoptions)  :   
+- [ТемаЦвет](model/themecolor)  :   
+- [ВремяПериодФорматУсловие](model/timeperiodformatcondition)  :   
+- [Топ 10](model/top10) Опишите правило условного форматирования Top10. Это правило условного форматирования выделяет ячейки, значения которых попадают в верхнюю N или нижнюю N скобку, как указано.
+- [Топ10Фильтр](model/top10filter)  :   
+- [Проверка](model/validation)  :   
+- [Валидации](model/validations)  :   
+- [Вертикальный разрыв страницы](model/verticalpagebreak)  :   
+- [Вертикальные разрывы страниц](model/verticalpagebreaks)  :   
+- [Рабочая тетрадь](model/workbook)  :   
+- [Настройки книги](model/workbooksettings)  :   
+- [Рабочий лист](model/worksheet)  :   
+- [Рабочие листы](model/worksheets)  :   
+- [Защита от записи](model/writeprotection) : указывает параметры защиты от записи для книги.
+- [XmlDataBinding](model/xmldatabinding) : представляет информацию о привязке данных XML.
+- [XmlMap](model/xmlmap) : представляет информацию карты в формате XML.
+- [ЯчейкиОбъектОператеТаскПараметр](model/cellsobjectoperatetaskparameter)  :   
+- [Конвертироватьтаскпараметр](model/converttaskparameter)  :   
+- [Конвертироватьрабочий листтаскпараметр](model/convertworksheettaskparameter)  :   
+- [источник файла](model/filesource)  :   
+- [ТипФайлИсточника](model/filesourcetype)  :   
+- [Импортдататаскпараметр](model/importdatataskparameter)  :   
+- [Назначение результата](model/resultdestination)  :   
+- [ResultDestinationType](model/resultdestinationtype)  :   
+- [Источник результата](model/resultsource)  :   
+- [СохранитьFilesToCloudResult](model/savefilestocloudresult)  :   
+- [СохранитьResultTaskParameter](model/saveresulttaskparameter)  :   
+- [СмартМаркерТаскПараметр](model/smartmarkertaskparameter)  :   
+- [Параметр SplitWorkbookTaskParameter](model/splitworkbooktaskparameter)  :   
+- [Таскдата](model/taskdata)  :   
+- [Описание задания](model/taskdescription)  :   
+- [Параметр задачи](model/taskparameter)  :   
+- [Параметр Таскрезультат](model/taskresultparameter)  :   
+- [Таскрунрезультат](model/taskrunresult)  :   
+- [Тип задачи](model/tasktype)  :   
+- [ДиаграммаДействоватьПараметр](model/chartoperateparameter)  :   
+- [ListObjectOperateParameter](model/listobjectoperateparameter)  :   
+- [ОператеОбъект](model/operateobject)  :   
+- [ОператеОбъектПозиция](model/operateobjectposition)  :   
+- [ОператеОбъектТип](model/operateobjecttype)  :   
+- [Оператепараметр](model/operateparameter)  :   
+- [Оператетип](model/operatetype)  :   
+- [PageBreakOperateParameter](model/pagebreakoperateparameter)  :   
+- [PageSetupOperateParameter](model/pagesetupoperateparameter)  :   
+- [Сводная таблицаOperateParameter](model/pivottableoperateparameter)  :   
+- [ФормаОператеПараметр](model/shapeoperateparameter)  :   
+- [Рабочая книгаOperateParameter](model/workbookoperateparameter)  :   
+- [Настройки рабочей книгиOperateParameter](model/workbooksettingsoperateparameter)  :   
+- [Рабочий листOperateParameter](model/worksheetoperateparameter)  :   
+- [СписокКолонка](model/listcolumn)  :   
+- [СписокОбъект](model/listobject)  :   
+- [Список объектов](model/listobjects)  :   
+- [Настройки сводной глобализации](model/pivotglobalizationsettings) : представляет параметры глобализации для сводных таблиц.
+- [Параметры ДифСаве](model/difsaveoptions) : представляет параметры сохранения файла различий.
+- [Параметры сохранения документа](model/docxsaveoptions) : представляет параметры сохранения файла .docx.
+- [HtmlSaveOptions](model/htmlsaveoptions) : представляет параметры сохранения файла .html.
+- [Параметры сохранения изображения](model/imagesaveoptions) : представляет параметры сохранения файла изображения.
+- [JsonSaveOptions](model/jsonsaveoptions) представляет параметры сохранения файла .json.
+- [МаркдаунСохранитьПараметры](model/markdownsaveoptions) : представляет параметры сохранения файла .md.
+- [Мхтмлавеварианты](model/mhtmlsaveoptions) : представляет параметры сохранения файла .mhtml.
+- [Параметры сохранения](model/odssaveoptions) : представляет параметры сохранения файла .ods.
+- [Ооксмлсавеварианты](model/ooxmlsaveoptions) : представляет параметры сохранения файла ooxml.
+- [PDFSaveOptions](model/pdfsaveoptions) : Представляет параметры сохранения файла PDF.
+- [PptxSaveOptions](model/pptxsaveoptions) : представляет параметры сохранения файла pptx.
+- [СохранитьПараметры](model/saveoptions) : представляет все параметры сохранения.
+- [ТаблицаML2003СохранитьПараметры](model/spreadsheetml2003saveoptions) : представляет параметры сохранения файла .xml.
+- [SqlScriptSaveOptions](model/sqlscriptsaveoptions) : представляет параметры сохранения файла .sql.
+- [SvgSaveOptions](model/svgsaveoptions) : представляет параметры сохранения файла .svg.
+- [TxtSaveOptions](model/txtsaveoptions) : представляет параметры сохранения файла .txt.
+- [Кслсбсавеварианты](model/xlsbsaveoptions) : представляет параметры сохранения файла .xlsb.
+- [Клссавеварианты](model/xlssaveoptions) : представляет параметры сохранения файла .xls.
+- [XpsSaveOptions](model/xpssaveoptions) : представляет параметры сохранения файла .xps.
+- [АнализироватьExcelResponse](model/analyzeexcelresponse)  :   
+- [ArcShapeResponse](model/arcshaperesponse)  :   
+- [Автофильтрответ](model/autofilterresponse)  :   
+- [АвтоShapeResponse](model/autoshaperesponse)  :   
+- [АвтофигурыОтвет](model/autoshapesresponse)  :   
+- [AxisResponse](model/axisresponse)  :   
+- [BorderResponse](model/borderresponse)  :   
+- [КнопкаОтвет](model/buttonresponse)  :   
+- [ВычислитьФормулаОтвет](model/calculateformularesponse)  :   
+- [CellResponse](model/cellresponse)  :   
+- [ЯчейкиОблакоФайлИнформацияОтвет](model/cellscloudfileinforesponse)  :   
+- [ЯчейкиОблакоОтвет](model/cellscloudresponse)  :   
+- [ЯчейкиДокументСвойстваОтвет](model/cellsdocumentpropertiesresponse)  :   
+- [ЯчейкиДокументСвойствоОтвет](model/cellsdocumentpropertyresponse)  :   
+- [КлеткиРисованиеОтвет](model/cellsdrawingresponse)  :   
+- [КлеткиОтвет](model/cellsresponse)  :   
+- [ОтветОбласти Диаграммы](model/chartarearesponse)  :   
+- [ChartDataTableResponse](model/chartdatatableresponse)  :   
+- [Чартпоинтответ](model/chartpointresponse)  :   
+- [ChartPointsОтвет](model/chartpointsresponse)  :   
+- [Ответ диаграммы](model/chartresponse)  :   
+- [ГрафикиОтвет](model/chartsresponse)  :   
+- [Чекбоксответ](model/checkboxresponse)  :   
+- [СтолбецОтвет](model/columnresponse)  :   
+- [СтолбцыОтвет](model/columnsresponse)  :   
+- [ComboBoxОтвет](model/comboboxresponse)  :   
+- [КомментарийОтвет](model/commentresponse)  :   
+- [КомментарийShapeResponse](model/commentshaperesponse)  :   
+- [КомментарииОтвет](model/commentsresponse)  :   
+- [Условный ответ форматирования](model/conditionalformattingresponse)  :   
+- [Ответ условного форматирования](model/conditionalformattingsresponse)  :   
+- [DataLabelsResponse](model/datalabelsresponse)  :   
+- [DisplayUnitLabelResponse](model/displayunitlabelresponse)  :   
+- [DropBarsResponse](model/dropbarsresponse)  :   
+- [Эррорбарответ](model/errorbarresponse)  :   
+- [ЗаполнитьФорматОтвет](model/fillformatresponse)  :   
+- [НайтиОтвет](model/findresponse)  :   
+- [ПолОтклик](model/floorresponse)  :   
+- [ФормОтвет](model/formresponse)  :   
+- [ФормыОтвет](model/formsresponse)  :   
+- [ГрупповойБоксОтвет](model/groupboxresponse)  :   
+- [Горизонтальный PageBreakResponse](model/horizontalpagebreakresponse)  :   
+- [Горизонтальный PageBreaksResponse](model/horizontalpagebreaksresponse)  :   
+- [ГиперссылкаОтвет](model/hyperlinkresponse)  :   
+- [ГиперссылкиОтвет](model/hyperlinksresponse)  :   
+- [МеткаОтвет](model/labelresponse)  :   
+- [LegendEntriesResponse](model/legendentriesresponse)  :   
+- [ЛегендаEntryResponse](model/legendentryresponse)  :   
+- [ЛегендаОтвет](model/legendresponse)  :   
+- [Линейный ответ](model/lineresponse)  :   
+- [LineShapeResponse](model/lineshaperesponse)  :   
+- [ListBoxResponse](model/listboxresponse)  :   
+- [СписокОбъектОтвет](model/listobjectresponse)  :   
+- [СписокОбъектовОтвет](model/listobjectsresponse)  :   
+- [MergedCellResponse](model/mergedcellresponse)  :   
+- [MergedCellsResponse](model/mergedcellsresponse)  :   
+- [ИмяОтвет](model/nameresponse)  :   
+- [ИменаОтвет](model/namesresponse)  :   
+- [ОлеОбъектОтклик](model/oleobjectresponse)  :   
+- [ОлеОбъектсОтвет](model/oleobjectsresponse)  :   
+- [ОвалОтвет](model/ovalresponse)  :   
+- [Разделы страницыОтвет](model/pagesectionsresponse)  :   
+- [PageSetupResponse](model/pagesetupresponse)  :   
+- [PictureResponse](model/pictureresponse)  :   
+- [КартинкиОтвет](model/picturesresponse)  :   
+- [PivotFieldResponse](model/pivotfieldresponse)  :   
+- [PivotFilterResponse](model/pivotfilterresponse)  :   
+- [PivotFiltersResponse](model/pivotfiltersresponse)  :   
+- [Ответ сводной таблицы](model/pivottableresponse)  :   
+- [Сводные таблицыОтвет](model/pivottablesresponse)  :   
+- [ГрафикОбластиОтвета](model/plotarearesponse)  :   
+- [РадиокнопкаОтвет](model/radiobuttonresponse)  :   
+- [ДиапазонОтвет](model/rangeresponse)  :   
+- [ДиапазоныОтвет](model/rangesresponse)  :   
+- [ДиапазонЗначениеОтвет](model/rangevalueresponse)  :   
+- [RectangleShapeResponse](model/rectangleshaperesponse)  :   
+- [Роуответ](model/rowresponse)  :   
+- [СтрокиОтвет](model/rowsresponse)  :   
+- [SaveFilesToCloudResultResponse](model/savefilestocloudresultresponse)  :   
+- [СохранитьОтвет](model/saveresponse)  :   
+- [ScrollBarОтвет](model/scrollbarresponse)  :   
+- [СерииОтвет](model/seriesesresponse)  :   
+- [СерияОтвет](model/seriesresponse)  :   
+- [ШейпОтклик](model/shaperesponse)  :   
+- [ФормыОтвет](model/shapesresponse)  :   
+- [SingleValueResponse](model/singlevalueresponse)  :   
+- [СпарклайнГрупповойОтвет](model/sparklinegroupresponse)  :   
+- [СпарклайнГруппыОтвет](model/sparklinegroupsresponse)  :   
+- [SpinnerResponse](model/spinnerresponse)  :   
+- [Сплитрезультатответ](model/splitresultresponse)  :   
+- [СтильОтвет](model/styleresponse)  :   
+- [Таскрунрезультатответ](model/taskrunresultresponse)  :   
+- [Текстбоксответ](model/textboxresponse)  :   
+- [Текститемответ](model/textitemresponse)  :   
+- [Текститемсответ](model/textitemsresponse)  :   
+- [TickLabelsResponse](model/ticklabelsresponse)  :   
+- [ЗаголовокОтвет](model/titleresponse)  :   
+- [TrendlineResponse](model/trendlineresponse)  :   
+- [Линии трендаОтвет](model/trendlinesresponse)  :   
+- [Ответ валидации](model/validationresponse)  :   
+- [Ответ валидации](model/validationsresponse)  :   
+- [Вертикальный PageBreakResponse](model/verticalpagebreakresponse)  :   
+- [Вертикальный PageBreaksResponse](model/verticalpagebreaksresponse)  :   
+- [СтеныОтвет](model/wallsresponse)  :   
+- [Рабочая книгаReplaceResponse](model/workbookreplaceresponse)  :   
+- [Ответ рабочей книги](model/workbookresponse)  :   
+- [Параметры рабочей книгиОтвет](model/workbooksettingsresponse)  :   
+- [Рабочие тетрадиОтвет](model/workbooksresponse)  :   
+- [Рабочий листReplaceResponse](model/worksheetreplaceresponse)  :   
+- [Рабочий листОтвет](model/worksheetresponse)  :   
+- [Рабочие листыОтвет](model/worksheetsresponse)  :   
+- [Анализ ExcelRequest](model/analyzeexcelrequest)  :   
+- [Пакетное преобразование запроса](model/batchconvertrequest) : указывает на запрос файла пакетного преобразования.
+- [Пакетный запрос блокировки](model/batchlockrequest) : Указывает на запрос файла пакетной блокировки.
+- [Пакетный запрос защиты](model/batchprotectrequest) : указывает на запрос файла пакетной защиты.
+- [Пакетный запрос разделения](model/batchsplitrequest)  :   
+- [ЦветФильтрЗапрос](model/colorfilterrequest) : Указывает на запрос цветового фильтра.
+- [КонвертироватьПараметр](model/convertparameter) : указывает параметр преобразования
+- [Создать запрос сводной таблицы](model/createpivottablerequest) : указывает на запрос создания сводной таблицы.
+- [Запрос очистки данных](model/datacleansingrequest) : запрос на очистку данных для файла электронной таблицы.
+- [Запрос дедупликации данных](model/datadeduplicationrequest)  :   
+- [запрос заполнения данных](model/datafillrequest)  :   
+- [Удалитьинкомплертровсрекуест](model/deleteincompleterowsrequest)  :   
+- [ИмпортJsonRequest](model/importjsonrequest) : указывает запрос на импорт данных XML.
+- [ИмпортXMLЗапрос](model/importxmlrequest) : указывает запрос на импорт данных XML.
+- [Запрос условия совпадения](model/matchconditionrequest) : указывает условие соответствия, которое необходимо обработать для имени файла.
+- [Запрос пароля](model/passwordrequest) : используется для передачи данных пароля.
+- [Поле запроса сводной таблицы](model/pivottablefieldrequest) : Указывает запрос поля сводной таблицы.
+- [Защитить рабочую книгуЗапрос](model/protectworkbookrequest) : указывает на запрос защиты книги.
+- [ДиапазонКопироватьЗапрос](model/rangecopyrequest) : Указывает запрос на копирование диапазона.
+- [RangeSetOutlineBorderRequest](model/rangesetoutlineborderrequest) Указывает на запрос границы набора диапазона.
+- [RangeSetStyleRequest](model/rangesetstylerequest) : Указывает на запрос стиля набора диапазона.
+- [RangeSortRequest](model/rangesortrequest) : указывает запрос на сортировку диапазона.
+- [ТаблицаTotalRequest](model/tabletotalrequest) : Указывает общий запрос таблицы.
+- [ТекстВодаМаркерЗапрос](model/textwatermarkerrequest) : Указывает на текстовый запрос водного маркера.
+- [Запрос на шифрование книги](model/workbookencryptionrequest) : используется запросами на шифрование/дешифрование книги.
+- [Запрос на защиту книги](model/workbookprotectionrequest) : используется запросами защиты книги.
+- [Рабочий листЗапрос на перемещение](model/worksheetmovingrequest) : используется запросами на перемещение книги.
+- [Параметры изображения или печати](model/imageorprintoptions)  :   
+- [РендерингШрифт](model/renderingfont)  :   
+- [РендерингВодяной Знак](model/renderingwatermark)  :   
+- [Сводное поле](model/pivotfield)  :   
+- [PivotFilter](model/pivotfilter) : представляет PivotFilter в коллекции PivotFilter.
+- [PivotItem](model/pivotitem)  :   
+- [Сводная таблица](model/pivottable)  :   
+- [Сводные таблицы](model/pivottables)  :   
+- [CustomParserConfig](model/customparserconfig)  :   
+- [Import2DimensionDoubleArrayOption](model/import2dimensiondoublearrayoption)  :   
+- [Import2DimensionIntArrayOption](model/import2dimensionintarrayoption)  :   
+- [Import2DimensionStringArrayOption](model/import2dimensionstringarrayoption)  :   
+- [CellValue](model/cellvalue)  :   
+- [Импортбатчдатавариант](model/importbatchdataoption)  :   
+- [Импорт CSVDataOption](model/importcsvdataoption)  :   
+- [Импортдататипе](model/importdatatype)  :   
+- [Импортдабларрайвариант](model/importdoublearrayoption)  :   
+- [Импортинтаррайопцион](model/importintarrayoption)  :   
+- [ИмпортОпция](model/importoption)  :   
+- [Импорткартуревариант](model/importpictureoption)  :   
+- [ИмпортПозиция](model/importposition)  :   
+- [Импортстрингаррайопцион](model/importstringarrayoption)  :   
+- [ArcShape](model/arcshape)  :   
+- [Область](model/area)  :   
+- [Автофигура](model/autoshape)  :   
+- [Автофигуры](model/autoshapes)  :   
+- [Кнопка](model/button)  :   
+- [КлеткиРисование](model/cellsdrawing)  :   
+- [Флажок](model/checkbox)  :   
+- [Поле со списком](model/combobox)  :   
+- [КомментарийФорма](model/commentshape)  :   
+- [Формат заполнения](model/fillformat)  :   
+- [Форма](model/form)  :   
+- [Формы](model/forms)  :   
+- [Градиентная заливка](model/gradientfill)  :   
+- [ГрадиентЗаполнитьСтоп](model/gradientfillstop)  :   
+- [Групповой ящик](model/groupbox)  :   
+- [Групповая форма](model/groupshape)  :   
+- [Этикетка](model/label)  :   
+- [Линия](model/line) : инкапсулирует объект, представляющий формат строки.
+- [Формат линии](model/lineformat)  :   
+- [ЛинияФорма](model/lineshape)  :   
+- [СписокСписок](model/listbox)  :   
+- [ОлеОбъект](model/oleobject)  :   
+- [ОлеОбъекты](model/oleobjects)  :   
+- [Овал](model/oval)  :   
+- [УзорЗаливка](model/patternfill)  :   
+- [ПикФорматОпция](model/picformatoption)  :   
+- [Картина](model/picture)  :   
+- [Картинки](model/pictures)  :   
+- [Переключатель](model/radiobutton)  :   
+- [ПрямоугольникФорма](model/rectangleshape)  :   
+- [Полоса прокрутки](model/scrollbar)  :   
+- [ShadowEffect](model/shadoweffect)  :   
+- [Форма](model/shape)  :   
+- [Формы](model/shapes)  :   
+- [СолидФилл](model/solidfill)  :   
+- [Спиннер](model/spinner)  :   
+- [Текстовое окно](model/textbox)  :   
+- [ТекстураЗаливка](model/texturefill)  :   
+- [ТайлеПикОпция](model/tilepicoption)  :   
+- [Цифровая подпись](model/digitalsignature) : Подпись в файле.
+- [Ось](model/axis)  :   
+- [Диаграмма](model/chart)  :   
+- [Область диаграммы](model/chartarea)  :   
+- [Таблица данных диаграммы](model/chartdatatable)  :   
+- [ДиаграммаКадр](model/chartframe)  :   
+- [Настройки глобализации диаграммы](model/chartglobalizationsettings) : представляет настройки глобализации для диаграммы.
+- [Чартпойнт](model/chartpoint)  :   
+- [Чарт-очки](model/chartpoints)  :   
+- [Графики](model/charts)  :   
+- [Форма Диаграммы](model/chartshape) : Объект формы диаграммы
+- [Метки данных](model/datalabels)  :   
+- [Метка DisplayUnitLabel](model/displayunitlabel)  :   
+- [Дропбары](model/dropbars)  :   
+- [ErrorBar](model/errorbar)  :   
+- [Пол](model/floor)  :   
+- [Легенда](model/legend)  :   
+- [ЛегендаЗаписи](model/legendentries)  :   
+- [ЛегендаВступление](model/legendentry)  :   
+- [Маркер](model/marker)  :   
+- [Площадь участка](model/plotarea)  :   
+- [Ряд](model/series)  :   
+- [СерияПредметы](model/seriesitems)  :   
+- [Спарклайн](model/sparkline) : спарклайн представляет собой небольшую диаграмму или рисунок в ячейке листа, который обеспечивает визуальное представление данных.
+- [Группа Спарклайн](model/sparklinegroup)  :   
+- [Группы спарклайнов](model/sparklinegroups) : инкапсулирует коллекцию объектов Aspose.Cells.Charts.SparklineGroup.
+- [TickLabels](model/ticklabels)  :   
+- [Заголовок](model/title)  :   
+- [Линия тренда](model/trendline)  :   
+- [Линии тренда](model/trendlines)  :   
+- [Стены](model/walls)  :   
+- [ColumnDataExceptionDescription](model/columndataexceptiondescription)  :   
+- [ТекстКатегориТип](model/textcategorytype)  :   
+- [Описание анализируемого столбца](model/analyzedcolumndescription) Как использовать свойства каждого столбца: в настоящее время разделены на временную шкалу, линию продуктов, строку числовой статистики. Как представить продукт, единый план. Как решить проблему полной цифровой обработки? Полный текст Как решить? Два столбца: текст, номер — самый простой. Три столбца: текст, текст, номер. Текст, число, число --- дата, дата; Дата Числовая; Числовой Цифровой А как насчет четырех столбцов, пяти столбцов?
+- [АнализируемыйРезультат](model/analyzedresult)  :   
+- [Анализируемая таблицаОписание](model/analyzedtabledescription)  :   
+- [Тип источника даты](model/datesourcetype)  :   
+- [Предложенный тип вывода](model/suggestedoutputtype)  :   
+- [АнализироватьПредложение](model/analyzesuggestion)  :   
+- [Откройте для себя диаграмму](model/discoverchart)  :   
+- [Откройте для себя сводную таблицу](model/discoverpivottable)  :   
+- [ExcelDataStatistics](model/exceldatastatistics)  :   
+- [Рабочий листДанныеСтатистика](model/worksheetdatastatistics)  :   
+- [Ошибка](model/error) : Ошибка
+- [Подробности об ошибке](model/errordetails) : Подробности ошибки

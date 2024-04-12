@@ -1,10 +1,10 @@
 ﻿---
-title: Obtenir la mise en forme conditionnelle
+title: Obtenir une mise en forme conditionnelle
 type: docs
 url: /fr/conditional-formattings/get-all/
 aliases: [/get-conditional-formattings-of-worksheet/]
 keywords: REST API, spreadsheets, excel, get condition formattin
-description: "Cells.Cloud API pour Excel fonctionne : obtenir la mise en forme de la condition"
+description: "Cells.Cloud API pour Excel fonctionne : obtenir le formatage des conditions"
 weight: 20
 ---
  Ce REST API indique Obtenir les mises en forme conditionnelles
@@ -18,14 +18,14 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditional
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/chaîne de requête/HTTPBody|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin||
-| NomFeuille| chaîne| chemin||
+| Nom de la feuille| chaîne| chemin||
 | dossier| chaîne| requête||
-| nom_stockage| chaîne| requête| nom de stockage.|
+| Nom de stockage| chaîne| requête| nom de stockage.|
  
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/GetWorksheetConditionalFormattings) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
+ Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/GetWorksheetConditionalFormattings) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement depuis un navigateur Web.
  
 Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment passer des appels vers le Cloud API avec cURL.
  
@@ -285,7 +285,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditi
 
 {{< /tabs >}}
 ## **Source du SDK**
-Les SDK Cloud Aspose.Cells peuvent être téléchargés à partir de la page suivante :[SDK disponibles](/cells/fr/available-sdks/)
+Les SDK Cloud Aspose.Cells peuvent être téléchargés à partir de la page suivante :[SDK disponibles](/cells/fr/available-sdks/)
 ### **Exemples de SDK**
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 

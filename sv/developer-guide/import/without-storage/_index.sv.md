@@ -26,9 +26,9 @@ POST https://api.aspose.cloud/v3.0/cells/import
 | Parameternamn| Typ| Sökväg/Frågesträng/HTTPBody|Beskrivning|
 |:- |:- |:- |:- |
 | fil| fil| formData| Fil att ladda upp|
-| Importalternativ| Importalternativ| HTTPBody| IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/Picture|
+| Importalternativ| Importalternativ|HTTPBody| IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/Picture|
 
-**Parametrarna för import av dataalternativ**beskrivs i[referenslänken](/cells/sv/import/#import-data-option-parameter).
+**Parametrarna för import av dataalternativ** beskrivs i[referenslänken](/cells/sv/import/#import-data-option-parameter).
 
 
 

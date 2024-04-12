@@ -1,5 +1,5 @@
 ﻿---
-title: 超链接
+title: 超级链接
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/hyperlinks/

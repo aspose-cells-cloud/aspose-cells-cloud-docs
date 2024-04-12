@@ -1,15 +1,15 @@
 ﻿---
-title: Excel çalışma kutusunda satırları otomatik sığdırma
+title: Excel çalışma kutusundaki satırları otomatik sığdır
 second_title: Aspose.Cells Cloud Documen
 linktitle: Sıra
 type: docs
 url: /tr/workbook/autofit/rows/
 aliases: [/auto-fit-rows-in-excel-workbooks/]
 keywords: Autofit rows on an Excel workboo
-description: Aspose.Cells Cloud REST API, bir Excel çalışma kitabında satırları otomatik sığdırmayı destekler. SDK, geliştirme dili türlerini destekler. Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift'i içerir
+description: Aspose.Cells Cloud REST API, Excel çalışma kitabındaki satırların otomatik olarak sığdırılmasını destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 90
 ---
-Bu REST API, bir Excel çalışma kitabındaki satırların otomatik sığdırılacağını belirtir.
+Bu REST API, Excel çalışma kitabındaki satırların otomatik olarak sığdırılacağını gösterir.
  
 ## RSET API
  
@@ -23,16 +23,16 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/autofitrows
 | Parametre adı| Tip| Yol/Sorgu Dizesi/HTTPBody|Tanım|
 |:- |:- |:- |:- |
 | isim| sicim| yol| Belge adı.|
-| otomatikFitterSeçenekleri|| vücut| Otomatik Tesisatçı Seçenekleri.|
-| başlangıç satırı| tamsayı| sorgu| Satırı başlat.|
-| son satır| tamsayı| sorgu| Son sıra.|
-| sadeceOtomatik| mantıksal| sorgu| YANLIŞ|
+| autoFitterOptions|| vücut| Otomatik Tesisatçı Seçenekleri.|
+| startRow| tamsayı| sorgu| Satırı başlat.|
+| endRow| tamsayı| sorgu| Satır sonu.|
+| yalnızcaOtomatik| boolean| sorgu| YANLIŞ|
 | dosya| sicim| sorgu| Belgenin klasörü.|
 | depolamaAdı| sicim| sorgu| depolama adı.|
  
- bu[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Workbook/PostAutofitWorkbookRows) herkesin erişebileceği bir programlama arabirimi tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Workbook/PostAutofitWorkbookRows) herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
  
-Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Cloud API'e nasıl çağrı yapılacağını gösterir.
+Aspose.Cells web servislerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnekte, cURL ile Cloud API'e nasıl çağrı yapılacağı gösterilmektedir.
  
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
  
@@ -67,9 +67,9 @@ curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/autofitrows" \
  
 ## Bulut SDK Ailesi
  
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, alt düzey ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen kontrol edin[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+ SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük düzeyli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanıza olanak tanır. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
  
-Aşağıdaki kod örnekleri, çeşitli SDK'lar kullanılarak Aspose.Cells web hizmetlerine nasıl çağrı yapılacağını gösterir:
+Aşağıdaki kod örnekleri, çeşitli SDK'ları kullanarak Aspose.Cells web hizmetlerine nasıl çağrı yapılacağını gösterir:
  
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}

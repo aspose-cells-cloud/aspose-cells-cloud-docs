@@ -1,15 +1,15 @@
 ﻿---
 title: Excel çalışma sayfasına liste nesnesi ekleme
 second_title: Aspose.Cells Cloud Documen
-linktitle: reklam
+linktitle: Reklam
 type: docs
 url: /tr/list-objects/add/
 aliases: [/add-a-list-object-or-table-inside-the-worksheet/,/tables/add/]
 keywords: Add a list object(table) into an Excel worksheet
-description: Aspose.Cells Cloud REST API, bir Excel çalışma sayfasına bir liste nesnesi (tablo) eklemeyi destekler. SDK, geliştirme dili türlerini destekler. Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift'i içerir
+description: Aspose.Cells Cloud REST API, Excel çalışma sayfasına liste nesnesi (tablo) eklenmesini destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 10
 ---
-Bu REST API, bir Excel çalışma sayfasında `add a list object(table)`'i gösterir.
+Bu REST API, Excel çalışma sayfasında `add a list object(table)`'i gösterir.
  
 ## RSET API
  
@@ -24,18 +24,18 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects
 |:- |:- |:- |:- |
 | isim| sicim| yol| Belge adı.|
 | sayfaAdı| sicim| yol| Çalışma sayfası adı.|
-| başlangıç satırı| tamsayı| sorgu| Liste aralığının başlangıç satırı.|
-| başlangıç sütunu| tamsayı| sorgu| Liste aralığının başlangıç satırı.|
-| son satır| tamsayı| sorgu| Liste aralığının başlangıç satırı.|
-| son sütun| tamsayı| sorgu| Liste aralığının başlangıç satırı.|
-| hasHeaders| mantıksal| sorgu| Doğru|
-| listeObject|| vücut| Nesne Listeleme|
+| startRow| tamsayı| sorgu| Liste aralığının başlangıç satırı.|
+| startColumn| tamsayı| sorgu| Liste aralığının başlangıç satırı.|
+| endRow| tamsayı| sorgu| Liste aralığının başlangıç satırı.|
+| endColumn| tamsayı| sorgu| Liste aralığının başlangıç satırı.|
+| hasHeaders| boolean| sorgu| Doğru|
+| listeObject|| vücut| Nesneyi Listele|
 | dosya| sicim| sorgu| Belgenin klasörü.|
 | depolamaAdı| sicim| sorgu| depolama adı.|
  
- bu[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/ListObjects/PutWorksheetListObject) herkesin erişebileceği bir programlama arabirimi tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/ListObjects/PutWorksheetListObject) herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
  
-Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Cloud API'e nasıl çağrı yapılacağını gösterir.
+Aspose.Cells web servislerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnekte, cURL ile Cloud API'e nasıl çağrı yapılacağı gösterilmektedir.
  
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
  
@@ -69,9 +69,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listob
  
 ## Bulut SDK Ailesi
  
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, alt düzey ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen kontrol edin[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+ SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük düzeyli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanıza olanak tanır. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
  
-Aşağıdaki kod örnekleri, çeşitli SDK'lar kullanılarak Aspose.Cells web hizmetlerine nasıl çağrı yapılacağını gösterir:
+Aşağıdaki kod örnekleri, çeşitli SDK'ları kullanarak Aspose.Cells web hizmetlerine nasıl çağrı yapılacağını gösterir:
 
 {{< tabs tabTotal="4" tabID="4" tabName1="C#" tabName2="VB.NET" tabName3="Java" tabName4="Go" >}}
 

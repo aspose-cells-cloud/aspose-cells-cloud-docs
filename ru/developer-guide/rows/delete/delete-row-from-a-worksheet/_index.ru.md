@@ -1,12 +1,12 @@
 ﻿---
-title: Удалить строку на рабочем листе Excel
+title: Удалить строку на листе Excel
 second_title: Aspose.Cells Cloud Documen
 linktitle: Ро
 type: docs
 url: /ru/rows/delete/row/
 aliases: [/delete-row-from-a-worksheet/]
 keywords: Delete rows on an Excel workshee
-description: Aspose.Cells Cloud REST API поддерживает удаление строк на листе Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и swift.
+description: Aspose.Cells Cloud REST API поддерживает удаление строк на листе Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 80
 ---
 Этот REST API указывает на удаление строки на листе Excel.
@@ -23,14 +23,14 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/ro
 | Имя параметра| Тип| Путь/строка запроса/HTTPBody|Описание|
 |:- |:- |:- |:- |
 | имя| нить| путь|Имя рабочей книги.|
-| имя листа| нить| путь| Рабочий лист сгнил.|
+| имя листа| нить| путь| Рабочий лист плохой.|
 | индекс строки| целое число| путь| Индекс строки.|
-| папка| нить| запрос| Папка с документами.|
+| папка| нить| запрос| Папка документов.|
 | имя_хранилища| нить| запрос| имя хранилища.|
  
-[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetRow) определяет общедоступный программный интерфейс и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetRow) определяет общедоступный интерфейс программирования и позволяет выполнять взаимодействие с REST непосредственно из веб-браузера.
  
-Вы можете использовать инструмент командной строки cURL для простого доступа к веб-службам Aspose.Cells. В следующем примере показано, как звонить в Cloud API с номером cURL.
+Вы можете использовать инструмент командной строки cURL для легкого доступа к веб-службам Aspose.Cells. В следующем примере показано, как позвонить на Cloud API с помощью cURL.
  
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
  
@@ -64,21 +64,21 @@ curl -v "http://api.aspose.cloud/v3.0/cells/" \
  
 ## Семейство облачных SDK
  
- Использование SDK — лучший способ ускорить разработку. SDK позаботится о низкоуровневых деталях и позволит вам сосредоточиться на задачах вашего проекта. Пожалуйста, ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) полный список Aspose.Cells Cloud SDK.
+ Использование SDK — лучший способ ускорить разработку. SDK заботится о деталях низкого уровня и позволяет вам сосредоточиться на задачах проекта. Пожалуйста, ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для получения полного списка Aspose.Cells Cloud SDK.
  
-В следующих примерах кода показано, как выполнять вызовы веб-служб Aspose.Cells с помощью различных SDK.
+Следующие примеры кода демонстрируют, как выполнять вызовы веб-служб Aspose.Cells с использованием различных SDK:
  
  
  
 
 ## **Введение**
-В этом примере показано, как удалить строку из рабочего листа Excel с помощью Aspose.Cells Cloud API в ваших приложениях. Вы можете использовать наш REST API с любым языком: .NET, Java, PHP, Ruby, Rails, Python, jQuery и многими другими.
+В этом примере показано, как удалить строку из листа Excel с помощью облака Aspose.Cells API в ваших приложениях. Вы можете использовать наш REST API с любым языком: .NET, Java, PHP, Ruby, Rails, Python, jQuery и многими другими.
 
 ## **API Информация**
 
 |**API**|**Тип**|**Описание**|**Ссылка на ресурс**|
 |:- |:- |:- |:- |
-|/cells/{name}/worksheets/{sheetName}/cells/rows|ПОЧТА|Удалить строки из рабочего листа Excel|[УдалитьВорклистРовс](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetRows)|
+|/cells/{name}/worksheets/{sheetName}/cells/rows|ПОЧТА|Удалить строки из листа Excel|[Удалитьрабочие строки](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetRows)|
 ### **cURL Пример**
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 

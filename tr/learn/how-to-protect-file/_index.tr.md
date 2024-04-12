@@ -7,11 +7,11 @@ weight: 10
 ---
 ## giriiş
 
-Aspose.Cells Cloud API, elektronik tablo dosyalarının oluşturulması, düzenlenmesi ve dönüştürülmesi için hazırlanmış güçlü bir bulut tabanlı çözümdür. Bu makalede, tipik kullanım durumları ve örnek kod da dahil olmak üzere, dosya koruması için Aspose.Cells Bulut API'i kullanma sürecinde size yol göstereceğiz.
+Aspose.Cells Cloud API, elektronik tablo dosyalarının oluşturulması, düzenlenmesi ve dönüştürülmesi için hazırlanmış güçlü bir bulut tabanlı çözümdür. Bu makalede, tipik kullanım durumları ve örnek kod da dahil olmak üzere dosya koruması için Aspose.Cells Bulut API'i kullanma sürecinde size yol göstereceğiz.
 
 ## Genel Bakış
 
-Aspose.Cells Bulut API, Excel veya elektronik tablo dosyalarını korumak için birden fazla güçlü API sağlar. Aspose.Cells Bulut API'i kullanarak, Excel veya diğer elektronik tablo dosyalarını zahmetsizce koruyarak çok çeşitli gereksinimleri karşılayabilirsiniz.
+Aspose.Cells Bulut API, Excel veya elektronik tablo dosyalarını korumak için birden fazla güçlü API sağlar. Aspose.Cells Bulut API'den yararlanarak, Excel veya diğer elektronik tablo dosyalarını zahmetsizce koruyarak çok çeşitli gereksinimleri karşılayabilirsiniz.
 
 
 Dosya koruması için genellikle çeşitli çevrimiçi ortamlarla uyumlu çok sayıda API mevcuttur. Aşağıda bu API'lerin ayrıntılı bir açıklaması bulunmaktadır:

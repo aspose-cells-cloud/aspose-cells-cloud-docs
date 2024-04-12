@@ -1,17 +1,17 @@
 ﻿---
-title: قم بفك تشفير Excel workboo
+title: فك تشفير مجموعة العمل Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: فك
+linktitle: فك التشفير
 type: docs
 url: /ar/workbook/decrypt/
 aliases: [/decrypt-excel-workbooks/]
 keywords: REST API, spreadsheets, excel, decryp
-description: "Cells.Cloud API لـ Excel تعمل: فك تشفير مصنف Excel"
+description: "Cells.Cloud API لـ Excel تشغيل: فك تشفير مصنف Excel"
 weight: 50
 ---
-هذا REST API يفك تشفير Excel `workbook`.
+يقوم REST API بفك تشفير Excel `workbook`.
 
-**معامِل الاستعلام**
+**معلمة الاستعلام**
 
 |اسم المعلمة|يكتب|وصف|
 |:- |:- |:- |
@@ -22,25 +22,25 @@ weight: 50
 
 |اسم المعلمة|يكتب|وصف|
 |:- |:- |:- |
-|التشفير|المصنفطلب التشفير||
+|التشفير|طلب تشفير المصنف||
 
-**المصنفطلب التشفير**
+**طلب تشفير المصنف**
 |اسم المعلمة|يكتب|وصف|
 |:- |:- |:- |
-|نوع التشفير|خيط|XOR / Compatible / EnhancedCryptographicProviderV1 / StrongCryptographicProvider|
+|نوع التشفير|خيط|XOR/متوافق/EnhancedCryptographicProviderV1/StrongCryptographicProvider|
 |طول المفتاح|عدد صحيح||
 |كلمة المرور|خيط||
 
 
-## REST API
+## بقية API
 
 
-|**API**|**يكتب**|**وصف**|**رابط التباهي**|
+|**API**|**يكتب**|**وصف**|**رابط التبختر**|
 |:- |:- |:- |:- |
-|/ الخلايا / {name} / التشفير|DELTE|فك تشفير وثيقة|[DeleteDecryptDocument](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDecryptDocument)|
+|/الخلايا/{اسم}/تشفير|حذف|فك تشفير وثيقة|[حذفDecryptDocument](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDecryptDocument)|
 
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDecryptDocument) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
+ ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDecryptDocument) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك تنفيذ تفاعلات REST مباشرة من متصفح الويب.
 
  يمكنك استخدام**cURL** أداة سطر الأوامر للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
 
@@ -77,9 +77,9 @@ curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/encryption" -H "ac
 
 ## عائلة Cloud SDK
 
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. يعتني SDK بالتفاصيل منخفضة المستوى ويتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة من Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام حزم SDK متنوعة:
+توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
 
 
 {{< tabs tabTotal="11" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" tabName11="Swift" >}}

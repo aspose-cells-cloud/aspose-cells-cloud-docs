@@ -1,5 +1,5 @@
 ﻿---
-title: Trabajando con SmartMarker Tas
+title: Trabajar con SmartMarker Tas
 type: docs
 url: /es/tasks/smartmarker/
 aliases: [/working-with-smartmarker-task/]
@@ -11,12 +11,12 @@ weight: 60
 
 |**API**|**Tipo**|**Descripción**|**Enlace de recursos**|
 |:- |:- |:- |:- |
-|/celdas/tarea/ejecutar tarea|CORREO|Ejecutar tarea|[PostRunTask](https://apireference.aspose.cloud/cells/#/Task/PostRunTask)|
+|/celdas/tarea/ejecutartarea|CORREO|Ejecutar tarea|[Tarea posterior a la ejecución](https://apireference.aspose.cloud/cells/#/Task/PostRunTask)|
 
 
  El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/Task/PostRunTask) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
 
- Puedes usar**cURL** herramienta de línea de comandos para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo hacer llamadas a Cloud API con cURL.
+ Puedes usar**cURL** Herramienta de línea de comandos para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
 
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
@@ -43,9 +43,9 @@ HttpResponseMessage with the operation result.
 
 {{< /tabs >}}
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se ocupa de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor, echa un vistazo a la[repositorio GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de Cloud.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor revisa el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de nube.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código demuestran cómo realizar llamadas a servicios web Aspose.Cells utilizando varios SDK:
 
 {{< tabs tabTotal="1" tabID="4" tabName1="C#" >}}
 

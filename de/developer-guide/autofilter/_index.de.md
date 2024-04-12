@@ -12,7 +12,7 @@ Der automatische Filter ist die schnellste Möglichkeit, nur die Elemente aus de
 
 
 
-**Verschiedene Arten von Filtern** 
+**Verschiedene Filtertypen** 
 
 Aspose.Cells Cloud bietet mehrere APIs zum Anwenden verschiedener Filtertypen wie Farbfilter, Datumsfilter, Zahlenfilter, Textfilter, leere Filter und keine leeren Filter.
 
@@ -45,7 +45,7 @@ um Daten basierend auf der Füllfarbeneigenschaft der Zellen zu filtern.</p>
     <td class="col-md-2"> <li>Nummer</li> </td>
   <td class="col-md-10">
   <p>
-<a href="/cells/de/autofilter/add-filter/">Die benutzerdefinierten Filter API</a> kann mit Aspose.Cells wie die Auswahl von Zellen angewendet werden, deren Nummern innerhalb eines bestimmten Bereichs liegen.
+<a href="/cells/de/autofilter/add-filter/">Die benutzerdefinierten Filter API</a> kann mit Aspose.Cells wie das Auswählen von Zellen angewendet werden, deren Nummern innerhalb eines bestimmten Bereichs liegen.
 </p>
   </td>
   </tr>

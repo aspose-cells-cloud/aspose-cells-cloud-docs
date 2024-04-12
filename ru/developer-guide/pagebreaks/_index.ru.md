@@ -5,7 +5,7 @@ type: docs
 url: /ru/working-with-pagebreaks/
 aliases: [/working-with-pagebreaks/]
 keywords: Get, add, delete, and update page break in an Excel worksheet
-description: Aspose.Cells Cloud REST API поддерживает получение, добавление, удаление и обновление разрывов страниц на листе Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и swift.
+description: Aspose.Cells Cloud REST API поддерживает получение, добавление, удаление и обновление разрыва страницы на листе Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 100
 ---
 ## Как работать с разрывами страниц на листе Excel.

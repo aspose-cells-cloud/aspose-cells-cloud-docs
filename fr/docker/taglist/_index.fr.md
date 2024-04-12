@@ -3,30 +3,30 @@ title: TagLis
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/docker/tag-list/
-description: Plates-formes prises en charge
+description: Plateformes prises en charge
 weight: 30
 ---
-##  Windows Images du serveur 2016 ##
+##  Windows Serveur 2016 Images ##
 
-Balises | Architecture | Dockerfile | Remarque
+Balises | Architecture | Fichier Docker | Remarque
 ---|:--:|:--:|---:
-ltsc2016.23.5.0 | x64 | Pas de Dockerfile | Arrêtez la mise à niveau. La version finale est 23.5.0
+ltsc2016.23.5.0 | x64 | Pas de fichier Docker | Arrêtez la mise à niveau. La version finale est la 23.5.0
 
 
-##  Windows Images du serveur 2019 ##
+##  Windows Serveur 2019 Images ##
 
-Balises | Architecture | Dockerfile | Remarque
+Balises | Architecture | Fichier Docker | Remarque
 ---|:--:|:--:|---:
-ltsc2019.23.11.0 | x64 | Pas de Dockerfile |
+ltsc2019.23.11.0 | x64 | Pas de fichier Docker |
 
-##  Windows Images du serveur 2022 ##
+##  Windows Serveur 2022 Images ##
 
-Balises | Architecture | Dockerfile | Remarque
+Balises | Architecture | Fichier Docker | Remarque
 ---|:--:|:--:|---:
- ltsc2022.23.11.0 | x64 | Pas de Dockerfile |
+ ltsc2022.23.11.0 | x64 | Pas de fichier Docker |
 
-##  Image Linux ##
+##  Images Linux ##
 
-Balises | Architecture | Dockerfile | Remarque
+Balises | Architecture | Fichier Docker | Remarque
 ---|:--:|:--:|---:
-linux.23.11.0 | x64 | Pas de Dockerfile |
+linux.23.11.0 | x64 | Pas de fichier Docker |

@@ -4,12 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/folder/create/
 keywords: Learn how to create folder with Aspose Cells Cloud REST API
-description: Aprenda a crear una carpeta con Aspose Cells Cloud REST API SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift
+description: Aprenda a crear una carpeta con Aspose Cells Cloud REST API SDK que admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 100
 ---
 Este REST API indica `create folder`.
 
-## RESET API
+## RSET API
  
 ```bash
  
@@ -21,7 +21,7 @@ PUT http://api.aspose.cloud/v3.0/cells/storage/folder/{path}
 | Nombre del parámetro| Tipo| Ruta/Cadena de consulta/Cuerpo HTTP|Descripción|
 |:- |:- |:- |:- |
 | camino| cadena| camino|Ruta de la carpeta para crear, por ejemplo, 'carpeta_1/carpeta_2/' |
-| NombreDeAlmacenamiento| cadena| consulta| Nombre de almacenamiento|
+| nombredealmacenamiento| cadena| consulta| Nombre de almacenamiento|
  
  El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/Folder/CreateFolder) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
  
@@ -68,11 +68,11 @@ curl -v "http://api.aspose.cloud/v3.0/cells/storage/folder/newfolder" \
  
 {{< /tabs >}}
  
-## Familia SDK de la nube
+## Familia de SDK en la nube
  
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se ocupa de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor, echa un vistazo a la[repositorio GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de Cloud.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor revisa el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de nube.
  
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código demuestran cómo realizar llamadas a servicios web Aspose.Cells utilizando varios SDK:
  
  
  

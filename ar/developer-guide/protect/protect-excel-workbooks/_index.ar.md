@@ -1,17 +1,17 @@
 ﻿---
-title: حماية Excel Workboo
+title: حماية Workboo Excel
 second_title: Aspose.Cells Cloud Documen
 linktitle: بروتيك
 type: docs
 url: /ar/workbook/protect/
 aliases: [/protect-excel-workbooks/]
 keywords: Protect Excel files
-description: Aspose.Cells Cloud REST API يدعم حماية ملفات Excel. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
+description: Aspose.Cells Cloud REST API يدعم حماية Excel ملف. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 30
 ---
 هذا REST API يحمي Excel `workbook`.
 
-**معامِل الاستعلام**
+**معلمة الاستعلام**
 
 |اسم المعلمة|يكتب|وصف|
 |:- |:- |:- |
@@ -22,24 +22,24 @@ weight: 30
 
 |اسم المعلمة|يكتب|وصف|
 |:- |:- |:- |
-|حماية|WorkbookProtectionRequest||
+|حماية|طلب حماية المصنف||
 
-**WorkbookProtectionRequest**
+**طلب حماية المصنف**
 
 |اسم المعلمة|يكتب|وصف|
 |:- |:- |:- |
-|نوع الحماية|خيط|كل / المحتويات / لا شيء / الكائنات / السيناريوهات / الهيكل / النوافذ|
+|نوع الحماية|خيط|الكل/المحتويات/لا شيء/الأشياء/السيناريوهات/الهيكل/النوافذ|
 |كلمة المرور|خيط||
 
 
 
-## REST API
+## بقية API
 
-|**API**|**يكتب**|**وصف**|**رابط التباهي**|
+|**API**|**يكتب**|**وصف**|**رابط التبختر**|
 |:- |:- |:- |:- |
-|/ الخلايا / {name} / الحماية|بريد|حماية مستند|[PostProtectDocument](https://apireference.aspose.cloud/cells/#/Workbook/PostProtectDocument)|
+|/الخلايا/{الاسم}/الحماية|بريد|حماية مستند|[PostProtectDocument](https://apireference.aspose.cloud/cells/#/Workbook/PostProtectDocument)|
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostProtectDocument) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
+ ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostProtectDocument) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك تنفيذ تفاعلات REST مباشرة من متصفح الويب.
 
  يمكنك استخدام**cURL** أداة سطر الأوامر للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
 
@@ -75,9 +75,9 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/protection" -H "acce
 
 ## عائلة Cloud SDK
 
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. يعتني SDK بالتفاصيل منخفضة المستوى ويتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة من Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام حزم SDK متنوعة:
+توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
 
 {{< tabs tabTotal="11" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" tabName11="Swift" >}}
 

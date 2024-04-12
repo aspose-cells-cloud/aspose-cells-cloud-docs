@@ -1,12 +1,12 @@
 ﻿---
-title:  Actualizar categoría de gráfico Axi
+title:  Actualizar la categoría del gráfico Axi
 type: docs
 url: /es/charts/category-axis/update/
 weight: 160
 ---
-Este REST API indica Actualizar eje de categoría de gráfico.
+Este REST API indica el eje de categoría del gráfico de actualización.
  
-## RESET API
+## RSET API
  
 ```bash
  
@@ -18,11 +18,11 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{ch
 | Nombre del parámetro| Tipo| Ruta/Cadena de consulta/Cuerpo HTTP|Descripción|
 |:- |:- |:- |:- |
 | nombre| cadena| camino||
-| hojaNombre| cadena| camino||
-| índice del gráfico| entero| camino||
+| nombre de la hoja| cadena| camino||
+| gráficoíndice| entero| camino||
 | eje|| cuerpo||
 | carpeta| cadena| consulta||
-| NombreDeAlmacenamiento| cadena| consulta||
+| nombredealmacenamiento| cadena| consulta||
  
  El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/Charts/PostChartCategoryAxis) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
  
@@ -58,11 +58,11 @@ curl -v "http://api.aspose.cloud/v3.0/cells/" \
  
 {{< /tabs >}}
  
-## Familia SDK de la nube
+## Familia de SDK en la nube
  
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se ocupa de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor, echa un vistazo a la[repositorio GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de Cloud.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor revisa el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de nube.
  
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código demuestran cómo realizar llamadas a servicios web Aspose.Cells utilizando varios SDK:
  
  
  

@@ -1,23 +1,23 @@
 ﻿---
-title: تحويل Exce
+title: تحويل إكس
 second_title: Aspose.Cells Cloud Documen
-linktitle: كونفر
+linktitle: تحويل
 type: docs
 url: /ar/convert/excel-to-different-formats/
 aliases: [/convert-excel-workbook-to-different-file-formats/]
 keywords: Convert excel files to kinds of format files
-description: Aspose.Cells Cloud REST API يدعم تحويل ملفات Excel إلى أنواع من ملفات التنسيق. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
+description: Aspose.Cells Cloud REST API يدعم تحويل ملفات Excel إلى أنواع ملفات التنسيق. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 10
 ---
-يشير هذا REST API إلى `convert` ملف Excel إلى ملف تنسيق مختلف.
+يشير REST API إلى ملف Excel `convert` إلى ملف بتنسيق مختلف.
 
-الطلب عبارة عن طلب HTTP بمحتوى متعدد الأجزاء (انظر[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)أو[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). يحتوي الجزء الأول من المحتوى متعدد الأجزاء على ملف البيانات والثاني يحتوي على خيارات الحفظ.
+الطلب هو طلب HTTP بمحتوى متعدد الأجزاء (انظر[آر إف سي 2046](http://tools.ietf.org/html/rfc2046#page-17)أو[آر إف سي 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). يحتوي الجزء الأول من المحتوى متعدد الأجزاء على ملف البيانات ويحتوي الجزء الثاني على خيارات الحفظ.
 
-**معامِل الاستعلام**
+**معلمة الاستعلام**
 
 |اسم المعلمة|يكتب|وصف|
 |:- |:- |:- |
-|شكل|خيط| تنسيق الملف (csv / xls / html / mhtml / ods / pdf / xml / txt / tiff / xlsb / xlsm / xlsx / xltm / xltx / xps / png / jpg / gif / emf / bmp / md / Numbers / wmf / svg )|
+|شكل|خيط| تنسيق الملف (csv/xls/html/mhtml/ods/pdf/xml/txt/tiff/xlsb/xlsm/xlsx/xltm/xltx/xps/png/jpg/gif/emf/bmp/md/Numbers/wmf/svg )|
 
 
 **طلب معلمة الجسم**
@@ -25,17 +25,17 @@ weight: 10
 |اسم المعلمة|يكتب|وصف|
 |:- |:- |:- |
 |ملف البيانات| ملف البيانات|يتم حفظ ملف البيانات في الجزء الأول من المحتوى متعدد الأجزاء.|
-|SaveOptions| هدف|حفظ الخيار حفظ في الجزء الثاني من المحتوى متعدد الأجزاء.|
+|خيارات الحفظ| هدف|حفظ خيار الحفظ في الجزء الثاني من المحتوى متعدد الأجزاء.|
 
 
-## REST API
+## بقية API
 
-|**API**|**يكتب**|**وصف**|**رابط التباهي**|
+|**API**|**يكتب**|**وصف**|**رابط التبختر**|
 |:- |:- |:- |:- |
-|/ خلايا / تحويل|يضع|يحول المصنف من طلب المحتوى إلى تنسيق ما|[PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)|
+|/الخلايا/تحويل|يضع|تحويل المصنف من محتوى الطلب إلى بعض التنسيق|[PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)|
 
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
+ ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك تنفيذ تفاعلات REST مباشرة من متصفح الويب.
 
  يمكنك استخدام**cURL** أداة سطر الأوامر للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
 
@@ -55,9 +55,9 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/convert?format=html" -H "accept
 
 ## عائلة Cloud SDK
 
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. يعتني SDK بالتفاصيل منخفضة المستوى ويتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة من Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام حزم SDK متنوعة:
+توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
 
 
 

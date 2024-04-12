@@ -4,7 +4,7 @@ type: docs
 url: /it/get-cell-data-from-a-worksheet/
 weight: 10
 ---
-Questo REST API indica che gli spettacoli ottengono un `cell` in un file Excel quando il parametro `cellOrMethodName` è il nome della cella.
+Questo REST API indica che viene ottenuto `cell` in un file Excel quando il parametro `cellOrMethodName` è il nome della cella.
 
 - **cURL Esempio**
 
@@ -88,11 +88,11 @@ curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/
 
 {{< /tabs >}}
 
-- **Famiglia di SDK cloud**
+- **Famiglia di SDK Cloud**
 
- L'utilizzo di un SDK è il modo migliore per velocizzare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del tuo progetto. Si prega di controllare il[Deposito GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+ Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si prende cura dei dettagli di basso livello e ti consente di concentrarti sulle attività del tuo progetto. Si prega di controllare il[Repositorio GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK Cloud Aspose.Cells.
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+I seguenti esempi di codice dimostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
 
 {{< tabs tabTotal="9" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Objective C" tabName8="Android" tabName9="Go" >}}
 

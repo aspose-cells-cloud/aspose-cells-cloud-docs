@@ -1,12 +1,12 @@
 ﻿---
-title: Déchiffrer un workboo Excel
+title: Décrypter un classeur Excel
 second_title: Aspose.Cells Cloud Documen
 linktitle: Décrypter
 type: docs
 url: /fr/workbook/decrypt/
 aliases: [/decrypt-excel-workbooks/]
 keywords: REST API, spreadsheets, excel, decryp
-description: "Cells.Cloud API pour Excel fonctionne : déchiffre un classeur Excel"
+description: "Cells.Cloud API pour Excel opérer : décrypter un classeur Excel"
 weight: 50
 ---
 Ce REST API décrypte un Excel `workbook`.
@@ -16,19 +16,19 @@ Ce REST API décrypte un Excel `workbook`.
 |Le nom du paramètre|Taper|Description|
 |:- |:- |:- |
 |dossier|chaîne|Dossier de classeur d'origine.|
-|nom_stockage|chaîne|Nom de stockage.|
+|Nom de stockage|chaîne|Nom de stockage.|
 
-**Paramètre de corps de requête**
+**Paramètre du corps de la demande**
 
 |Le nom du paramètre|Taper|Description|
 |:- |:- |:- |
-|chiffrement|WorkbookEncryptionRequestWorkbookEncryptionRequest||
+|chiffrement|WorkbookEncryptionRequest||
 
-**WorkbookEncryptionRequestWorkbookEncryptionRequest**
+**WorkbookEncryptionRequest**
 |Le nom du paramètre|Taper|Description|
 |:- |:- |:- |
 |Type de chiffrement|chaîne|XOR/Compatible/EnhancedCryptographicProviderV1/StrongCryptographicProvider|
-|Longueur de la clé|entier||
+|Longueur de clé|entier||
 |Mot de passe|chaîne||
 
 
@@ -37,12 +37,12 @@ Ce REST API décrypte un Excel `workbook`.
 
 |**API**|**Taper**|**Description**|**Lien fanfaron**|
 |:- |:- |:- |:- |
-|/cellules/{nom}/chiffrement|SUPPRIMER|Décrypter un document|[SupprimerDéchiffrerDocument](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDecryptDocument)|
+|/cells/{nom}/chiffrement|DELTE|Décrypter un document|[SupprimerDécrypterDocument](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDecryptDocument)|
 
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDecryptDocument) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
+ Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDecryptDocument) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement depuis un navigateur Web.
 
- Vous pouvez utiliser**cURL** outil de ligne de commande pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment passer des appels vers le Cloud API avec cURL.
+ Vous pouvez utiliser**cURL** outil de ligne de commande pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment passer des appels vers Cloud API avec cURL.
 
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
@@ -75,9 +75,9 @@ curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/encryption" -H "ac
 
 {{< /tabs >}}
 
-## Famille SDK Cloud
+## Famille de SDK Cloud
 
- L'utilisation d'un SDK est le meilleur moyen d'accélérer le développement. Un SDK prend en charge les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Veuillez consulter le[Référentiel GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Cloud Aspose.Cells.
+ Utiliser un SDK est le meilleur moyen d’accélérer le développement. Un SDK prend en charge les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Veuillez consulter le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
 
 Les exemples de code suivants montrent comment effectuer des appels vers les services Web Aspose.Cells à l'aide de divers SDK :
 

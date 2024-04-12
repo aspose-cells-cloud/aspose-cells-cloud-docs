@@ -1,12 +1,12 @@
 ﻿---
-title: Добавление сводной таблицы в рабочий лист Excel
+title: Добавьте сводную таблицу в лист Excel.
 second_title: Aspose.Cells Cloud Documen
 linktitle: Добавлять
 type: docs
 url: /ru/pivot-tables/add/
 aliases: [/add-a-pivot-table-in-a-worksheet/]
 keywords: Add a pivot table in an Excel worksheet
-description: Aspose.Cells Cloud REST API поддерживает добавление сводной таблицы на рабочий лист Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и swift.
+description: Aspose.Cells Cloud REST API поддерживает добавление сводной таблицы на лист Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 30
 ---
 Этот REST API указывает на `add` сводную таблицу на листе.
@@ -28,13 +28,13 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables
 | папка| нить| запрос| Папка документа.|
 | имя_хранилища| нить| запрос| имя хранилища.|
 | источник данных| нить| запрос| Данные для нового кэша сводной таблицы.|
-| destCellName| нить| запрос| Ячейка в верхнем левом углу диапазона назначения отчета сводной таблицы.|
+| destCellName| нить| запрос| Ячейка в левом верхнем углу диапазона назначения отчета сводной таблицы.|
 | имя_таблицы| нить| запрос| Имя нового отчета сводной таблицы.|
-| использоватьSameSource| логический| запрос| Указывает, используется ли тот же источник данных, когда другая существующая сводная таблица использовала этот источник данных. Если свойство истинно, оно сэкономит память.|
+| использовать тот же источник| логическое значение| запрос| Указывает, используется ли тот же источник данных, когда этот источник данных использовался другой существующей сводной таблицей. Если свойство истинно, это сэкономит память.|
  
-[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/PivotTables/PutWorksheetPivotTable) определяет общедоступный программный интерфейс и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/PivotTables/PutWorksheetPivotTable) определяет общедоступный интерфейс программирования и позволяет выполнять взаимодействие с REST непосредственно из веб-браузера.
  
-Вы можете использовать инструмент командной строки cURL для простого доступа к веб-службам Aspose.Cells. В следующем примере показано, как звонить в Cloud API с номером cURL.
+Вы можете использовать инструмент командной строки cURL для легкого доступа к веб-службам Aspose.Cells. В следующем примере показано, как позвонить на Cloud API с помощью cURL.
  
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
  
@@ -69,9 +69,9 @@ curl -v  "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet
  
 ## Семейство облачных SDK
  
- Использование SDK — лучший способ ускорить разработку. SDK позаботится о низкоуровневых деталях и позволит вам сосредоточиться на задачах вашего проекта. Пожалуйста, ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) полный список Aspose.Cells Cloud SDK.
+ Использование SDK — лучший способ ускорить разработку. SDK заботится о деталях низкого уровня и позволяет вам сосредоточиться на задачах проекта. Пожалуйста, ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для получения полного списка Aspose.Cells Cloud SDK.
  
-В следующих примерах кода показано, как выполнять вызовы веб-служб Aspose.Cells с помощью различных SDK.
+Следующие примеры кода демонстрируют, как выполнять вызовы веб-служб Aspose.Cells с использованием различных SDK:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 

@@ -5,7 +5,7 @@ type: docs
 url: /it/working-with-pagebreaks/
 aliases: [/working-with-pagebreaks/]
 keywords: Get, add, delete, and update page break in an Excel worksheet
-description: Aspose.Cells Cloud REST API supporta l'acquisizione, l'aggiunta, l'eliminazione e l'aggiornamento dell'interruzione di pagina in un foglio di lavoro Excel. L'SDK supporta i tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
+description: Aspose.Cells Cloud REST API supporta il recupero, l'aggiunta, l'eliminazione e l'aggiornamento dell'interruzione di pagina in un foglio di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 100
 ---
 ## Come lavorare con le interruzioni di pagina in un foglio di lavoro Excel.

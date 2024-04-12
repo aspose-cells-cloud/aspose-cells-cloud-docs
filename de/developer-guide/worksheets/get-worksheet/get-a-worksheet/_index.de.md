@@ -1,5 +1,5 @@
 ﻿---
-title: Holen Sie sich das Arbeitsblatt von einem Excel-Arbeitsblatt
+title: Holen Sie sich ein Arbeitsblatt von einem Excel-Arbeitsblatt
 second_title: Aspose.Cells Cloud Documen
 linktitle: Arbeitsblatt
 type: docs

@@ -1,15 +1,15 @@
 ﻿---
-title: Excel dosyasından metin bul
+title: Excel dosyasındaki metni bulun
 second_title: Aspose.Cells Cloud Documen
-linktitle: Storag kullanmadan bul
+linktitle: Depolamayı kullanmadan bul
 type: docs
 url: /tr/search/
 aliases: [/search-without-using-storage/,/search-without-storage/]
 keywords: Find text from Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) files
-description: Aspose.Cells Cloud REST API, Excel dosyalarından metin bulmayı destekler. SDK, geliştirme dili türlerini destekler. Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift'i içerir
+description: Aspose.Cells Cloud REST API, Excel dosyalarından metin bulmayı destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 50
 ---
-Bu REST API, Excel dosyalarından `search` metnine işaret eder.
+Bu REST API, Excel dosyasındaki `search` metnini belirtir.
 `## RSET API
  
 ```bash

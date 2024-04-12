@@ -1,16 +1,16 @@
 ﻿---
-title: Excel çalışma kutusunda çalışma sayfalarını silme ile nasıl çalışılır
+title: Excel çalışma kutusundaki çalışma sayfalarını silmeyle nasıl çalışılır?
 second_title: Aspose.Cells Cloud Documen
 linktitle: Sil
 type: docs
 url: /tr/worksheets/delete/
 keywords: How to work with deleting worksheet on an Excel workbook
-description: Aspose.Cells Cloud REST API, Excel çalışma kitabında çalışma sayfalarının silinmesi ile çalışmayı destekler. SDK, geliştirme dili türlerini destekler. Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift'i içerir
+description: Aspose.Cells Cloud REST API, Excel çalışma kitabındaki çalışma sayfalarının silinmesiyle çalışmayı destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 20
 ---
-## Excel çalışma kitabında silme çalışma sayfaları ile çalışma.
+## Excel çalışma kitabındaki çalışma sayfalarını silmeyle çalışma.
 
-- [Excel çalışma kitabından Excel çalışma sayfası nasıl silinir?](/cells/tr/worksheets/delete-worksheet/) 
-- [Excel çalışma kitabında birden çok Excel çalışma sayfası nasıl silinir?](/cells/tr/worksheets/delete-multiple/) 
+- [Excel çalışma kitabındaki Excel çalışma sayfası nasıl silinir?](/cells/tr/worksheets/delete-worksheet/) 
+- [Excel çalışma kitabındaki birden fazla Excel çalışma sayfası nasıl silinir?](/cells/tr/worksheets/delete-multiple/) 
 
 

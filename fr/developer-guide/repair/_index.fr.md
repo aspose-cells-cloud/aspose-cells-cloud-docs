@@ -1,16 +1,16 @@
 ﻿---
-title: Réparation
+title: Réparer
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/repair/
 keywords: Repair Excel, ODS, WPS, and so on files
-description: Aspose.Cells Cloud REST API prend en charge la réparation des fichiers Excel. SDK prend en charge les types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift
+description: Aspose.Cells Cloud REST API prend en charge la réparation des fichiers Excel. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 39
 ---
-Ce REST API indique aux fichiers `repair` Excel.
+Ce REST API indique les fichiers `repair` Excel.
 
 - Réparez XLS, XLSX, XLSM, XLSB, ODS, etc.
-- Prend en charge plusieurs fichiers.
+- Prise en charge de plusieurs fichiers.
 
 Aspose.Cells Cloud Excel Repair récupère les données des fichiers Excel corrompus en ligne sans installation. Les fichiers Excel corrompus peuvent poser problème car vous ne pourrez pas les ouvrir. Vous pouvez essayer l'application de réparation Aspose.Cells Cloud Excel pour récupérer les données des fichiers Excel corrompus.
 
@@ -24,12 +24,12 @@ POST https://api.aspose.cloud/v3.0/cells/repair
 
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/chaîne de requête/HTTPBody|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
-| déposer| déposer| Données de formulaire| Fichier à uploader|
-| format| chaîne| requête| Format de sortie, la valeur par défaut est nulle, le format de sortie est égal au format de fichier d'entrée.|
+| déposer| déposer| Données de formulaire| Fichier à télécharger|
+| format| chaîne| requête| Format de sortie, la valeur par défaut est nulle, le format de sortie est égal au format du fichier d'entrée.|
  
- Le[Spécification OpenAPI](https://reference.aspose.cloud/cells/#/LightCells/PostRepair) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
+ Le[Spécification OpenAPI](https://reference.aspose.cloud/cells/#/LightCells/PostRepair) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement depuis un navigateur Web.
  
 Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment passer des appels vers le Cloud API avec cURL.
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
@@ -77,9 +77,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/repair" \
  
 
 
-## Famille SDK Cloud
+## Famille de SDK Cloud
 
- L'utilisation d'un SDK est le meilleur moyen d'accélérer le développement. Un SDK prend en charge les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Veuillez consulter le[Référentiel GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Cloud Aspose.Cells.
+ Utiliser un SDK est le meilleur moyen d’accélérer le développement. Un SDK prend en charge les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Veuillez consulter le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
 
 Les exemples de code suivants montrent comment effectuer des appels vers les services Web Aspose.Cells à l'aide de divers SDK :
 

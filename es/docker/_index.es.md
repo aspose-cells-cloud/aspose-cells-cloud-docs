@@ -13,12 +13,12 @@ weight: 30
 
 
 
-## API Referencia - Aspose.Cells Docker en la nube
+## API Referencia - Aspose.Cells Nube Docker
 
 - https://nombre de host:puerto/swagger
 - https://nombre de host:puerto/swagger/ui/index.html
 
 ver:
 - [Descargar información](/cells/es/docker/downloads/) 
-- [Ejecutar información](/cells/es/docker/run/) 
+- [Información de ejecución](/cells/es/docker/run/) 
 - [Información de almacenamiento](/cells/es/docker/storage/) 

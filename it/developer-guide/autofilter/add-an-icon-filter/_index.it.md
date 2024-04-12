@@ -6,12 +6,12 @@ type: docs
 url: /it/autofilter/add-icon-filter/
 aliases: [/add-an-icon-filter/,/autofilter/add-an-icon-filter/]
 keywords: Adds an icon filter on an Excel worksheet
-description: Il Aspose.Cells Cloud API supporta l'aggiunta di un filtro icona su un foglio di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
+description: Il cloud Aspose.Cells API supporta l'aggiunta di un filtro icona su un foglio di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 65
 ---
 Questo REST API indica di aggiungere un `icon filter` su un foglio di lavoro Excel.
 
-## RSET API
+## RSETAPI
 
 ```bash
 
@@ -21,22 +21,22 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/
 
 I parametri della richiesta sono:
 
-| Nome parametro| Tipo| Percorso/Stringa di query/HTTPBody|Descrizione|
+| Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
 |:- |:- |:- |:- |
 | nome| corda| Sentiero|Il nome della cartella di lavoro.|
-| foglioNome| corda| Sentiero| Il nome del foglio di lavoro.|
+| nomefoglio| corda| Sentiero| Il nome del foglio di lavoro.|
 |allineare|corda| Domanda||
-|fieldIndex|numero intero| Domanda||
-|iconSetType|corda| Domanda| Frecce3/FrecceGrigio3/Bandiere3/Segnali3/Simboli3/Simboli32/Semaforo31/Semaforo32/Frecce4/FrecceGrigio4/Valutazione4/RossoAlNero4/Semaforo4/Frecce5/FrecceGrigio5/Quartieri5/Valutazione5/Stelle3/Riquadri5/Triangoli3/Nessuno/CustomSet/Smilies3 /ColoreSmilies3|
-|ID icona|numero intero| Domanda||
+|campoIndice|numero intero| Domanda||
+|iconSetType|corda| Domanda| Frecce3/FrecceGrigio3/Frecce3/Segni3/Simboli3/Simboli32/Semafori31/Semafori32/Frecce4/FrecceGrigio4/Votazione4/RossoConNero4/Semafori4/Frecce5/FrecceGrigio5/Quartieri5/Voto5/Stelle3/Caselle5/Triangoli3/Nessuno/ImpostaPersonalizzato/Smilies3/ColorSmilies 3|
+|iconId|numero intero| Domanda||
 |matchBlanks|corda| Domanda|vero falso|
 |ricaricare|corda| Domanda|vero falso|
-|cartella|corda| Domanda|Cartella di lavoro originale.|
-|storageName| Domanda|corda|Nome di archiviazione.|
+|cartella|corda| Domanda|Cartella della cartella di lavoro originale.|
+|storageName| Domanda|corda|Nome dell'archivio.|
 
- IL[Specifica OpenAPI](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetIconFilter) definisce un'interfaccia di programmazione accessibile pubblicamente e consente di eseguire interazioni REST direttamente da un browser web.
+ IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetIconFilter) definisce un'interfaccia di programmazione accessibile pubblicamente e consente di eseguire interazioni REST direttamente da un browser web.
 
-È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi Web Aspose.Cells. L'esempio seguente mostra come effettuare chiamate a Cloud API con cURL.
+È possibile utilizzare lo strumento da riga di comando cURL per accedere facilmente ai servizi Web Aspose.Cells. Nell'esempio seguente viene illustrato come effettuare chiamate al Cloud API con cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
@@ -69,11 +69,11 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFil
 {{< /tabs >}}
 
 
-## Famiglia di SDK cloud
+## Famiglia di SDK Cloud
 
- L'utilizzo di un SDK è il modo migliore per velocizzare lo sviluppo. Un SDK si occupa dei dettagli di basso livello e ti consente di concentrarti sulle attività del tuo progetto. Si prega di controllare il[Deposito GitHub](https://github.com/aspose-cells-cloud) per un elenco completo di Aspose.Cells Cloud SDK.
+ Utilizzare un SDK è il modo migliore per accelerare lo sviluppo. Un SDK si prende cura dei dettagli di basso livello e ti consente di concentrarti sulle attività del tuo progetto. Si prega di controllare il[Repositorio GitHub](https://github.com/aspose-cells-cloud) per un elenco completo degli SDK Cloud Aspose.Cells.
 
-I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
+I seguenti esempi di codice dimostrano come effettuare chiamate ai servizi Web Aspose.Cells utilizzando vari SDK:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" >}}
 

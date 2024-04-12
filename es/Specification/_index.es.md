@@ -1,0 +1,739 @@
+﻿---
+title: Especificaciones
+second_title: Aspose.Cells Cloud Documen
+type: docs
+weight: 50
+---
+# Aspose.Cells Nube API Operación
+
+- [PublicarAnalizarExcel](operation/postanalyzeexcel) : Realizar análisis comerciales de datos en archivos Excel.
+- [Obtener hoja de cálculo Autofiltro](operation/getworksheetautofilter) : recupera la descripción de los filtros automáticos de una hoja de trabajo.
+- [Poner hoja de cálculo filtro de fecha](operation/putworksheetdatefilter) : aplique un filtro de fecha en la hoja de trabajo.
+- [Poner filtro de hoja de trabajo](operation/putworksheetfilter) : agregue un filtro para una columna en la hoja de trabajo.
+- [PonerHoja De TrabajoIconoFiltro](operation/putworksheeticonfilter) : agregue un filtro de ícono en la hoja de trabajo.
+- [Poner hoja de trabajoFiltro personalizado](operation/putworksheetcustomfilter) filtra una lista con criterios personalizados en la hoja de trabajo.
+- [PutWorksheetDynamicFilter](operation/putworksheetdynamicfilter) : agregue un filtro dinámico en la hoja de trabajo.
+- [Poner filtro de hoja de trabajoTop10](operation/putworksheetfiltertop10) : filtra los 10 elementos principales de la lista de la hoja de trabajo.
+- [PutWorksheetColorFilter](operation/putworksheetcolorfilter) : agregue un filtro de color en la hoja de trabajo.
+- [Publicar hoja de cálculo Coincidir espacios en blanco](operation/postworksheetmatchblanks) : Coincide con todas las celdas en blanco de la lista.
+- [PostWorksheetMatchNonBlanks](operation/postworksheetmatchnonblanks) : Haga coincidir todas las celdas que no estén en blanco en la lista.
+- [PostWorksheetAutoFilterRefresh](operation/postworksheetautofilterrefresh) : Actualiza los filtros automáticos en la hoja de trabajo.
+- [Eliminar hoja de cálculo filtro de fecha](operation/deleteworksheetdatefilter) : elimina un filtro de fecha en la hoja de trabajo.
+- [Eliminar filtro de hoja de trabajo](operation/deleteworksheetfilter) : elimina un filtro para una columna de la hoja de trabajo.
+- [Obtener hoja de trabajo Autoformas](operation/getworksheetautoshapes) : Obtenga la descripción de las autoformas en la hoja de trabajo.
+- [Obtener hoja de trabajo Autoforma con formato](operation/getworksheetautoshapewithformat) : obtiene la descripción de la autoforma en algún formato.
+- [Convertir postbatch](operation/postbatchconvert) : Conversión por lotes de archivos que cumplen condiciones de coincidencia específicas.
+- [Protección posterior al lote](operation/postbatchprotect) : Protege por lotes los archivos que cumplen condiciones de coincidencia específicas.
+- [Bloqueo de lotes posteriores](operation/postbatchlock) : archivos de bloqueo por lotes que cumplen condiciones de coincidencia específicas.
+- [Desbloquear publicación por lotes](operation/postbatchunlock) : Desbloqueo por lotes de archivos que cumplen condiciones de coincidencia específicas.
+- [Publicar división por lotes](operation/postbatchsplit) : División por lotes de archivos que cumplen condiciones de coincidencia específicas.
+- [PublicarBorrarContenidos](operation/postclearcontents) : borre el contenido del área de celda en la hoja de trabajo.
+- [PostClearFormats](operation/postclearformats) : borre los formatos de celda en la hoja de trabajo.
+- [PostUpdateWorksheetRangoEstilo](operation/postupdateworksheetrangestyle) : actualice los estilos de rango de celdas en la hoja de trabajo.
+- [Fusión posterior a la hoja de trabajo](operation/postworksheetmerge) : fusiona celdas en la hoja de trabajo.
+- [PostWorksheetUnmerge](operation/postworksheetunmerge) : Separar celdas en la hoja de trabajo.
+- [Obtener celdas de hoja de trabajo](operation/getworksheetcells) : recupera descripciones de celdas en un formato específico.
+- [Obtener celda de hoja de cálculo](operation/getworksheetcell) : recupere datos de celda utilizando la referencia de celda o el nombre del método en la hoja de trabajo.
+- [Obtener estilo de celda de hoja de trabajo](operation/getworksheetcellstyle) : recupera descripciones de estilos de celda en la hoja de trabajo.
+- [PostWorksheetCellSetValue](operation/postworksheetcellsetvalue) : establezca el valor de la celda usando el nombre de la celda en la hoja de trabajo.
+- [PostUpdateWorksheetCellStyle](operation/postupdateworksheetcellstyle) : establece el estilo de celda usando el nombre de la celda en la hoja de trabajo.
+- [PostSetCellRangeValue](operation/postsetcellrangevalue) : establece el valor del rango en la hoja de trabajo.
+- [Publicar copiar celda en celda](operation/postcopycellintocell) : copia datos de una celda de origen a una celda de destino en la hoja de trabajo.
+- [ObtenerCellHtmlString](operation/getcellhtmlstring) : recupere la cadena HTML que contiene datos y formatos específicos en esta celda.
+- [PostSetCellHtmlString](operation/postsetcellhtmlstring) : establezca la cadena HTML que contiene datos y formatos específicos en esta celda.
+- [PostCellCalcular](operation/postcellcalculate) : Calcula la fórmula de la celda en la hoja de trabajo.
+- [PostCellCaracteres](operation/postcellcharacters) : establece caracteres de celda en la hoja de trabajo.
+- [Obtener columnas de hoja de cálculo](operation/getworksheetcolumns) : recupera descripciones de las columnas de la hoja de trabajo.
+- [PublicarEstablecerHoja de trabajoAncho de columna](operation/postsetworksheetcolumnwidth) : establece el ancho de columna de la hoja de trabajo.
+- [Obtener columna de hoja de trabajo](operation/getworksheetcolumn) : recupera datos de columnas de la hoja de trabajo por índice de columna.
+- [PutInsertWorksheetColumnas](operation/putinsertworksheetcolumns) inserta columnas de la hoja de trabajo en la hoja de trabajo.
+- [Eliminar columnas de hoja de trabajo](operation/deleteworksheetcolumns) : elimine las columnas de la hoja de trabajo en la hoja de trabajo.
+- [PublicarOcultarColumnas de hoja de trabajo](operation/posthideworksheetcolumns) : Ocultar columnas de la hoja de trabajo en la hoja de trabajo.
+- [PublicarMostrar columnas de hoja de trabajo](operation/postunhideworksheetcolumns) : muestra las columnas de la hoja de trabajo en la hoja de trabajo.
+- [Publicar grupoHoja de trabajoColumnas](operation/postgroupworksheetcolumns) : Agrupe las columnas de la hoja de trabajo en la hoja de trabajo.
+- [Publicar Desagrupar Hoja de trabajo Columnas](operation/postungroupworksheetcolumns) : Desagrupar columnas de la hoja de trabajo.
+- [Publicar copia de hojas de trabajo y columnas](operation/postcopyworksheetcolumns) : copie datos de las columnas de origen a las columnas de destino en la hoja de trabajo.
+- [Estilo de columna de publicación](operation/postcolumnstyle) : establece el estilo de columna en la hoja de trabajo.
+- [Obtener filas de hoja de trabajo](operation/getworksheetrows) : recupera descripciones de filas en la hoja de trabajo.
+- [Obtener fila de hoja de trabajo](operation/getworksheetrow) : recupera datos de fila por índice de fila en la hoja de trabajo.
+- [Eliminar fila de hoja de trabajo](operation/deleteworksheetrow) : elimina una fila de la hoja de trabajo.
+- [Eliminar filas de hoja de trabajo](operation/deleteworksheetrows) : elimine varias filas de la hoja de trabajo.
+- [PonerInsertarFilas de hoja de trabajo](operation/putinsertworksheetrows) : Inserte varias filas nuevas en la hoja de trabajo.
+- [PonerInsertarFila de hoja de trabajo](operation/putinsertworksheetrow) : Inserta una nueva fila en la hoja de trabajo.
+- [Fila de hoja de cálculo de publicación de actualización](operation/postupdateworksheetrow) : Actualiza la altura de las filas en la hoja de trabajo.
+- [PublicarOcultarFilas de hoja de trabajo](operation/posthideworksheetrows) : Ocultar filas en la hoja de trabajo.
+- [PublicarMostrar filas de hoja de trabajo](operation/postunhideworksheetrows) : muestra filas en la hoja de trabajo.
+- [Filas de hoja de trabajo de grupo posterior](operation/postgroupworksheetrows) : Agrupa filas en la hoja de trabajo.
+- [Publicar Desagrupar Hoja de Trabajo Filas](operation/postungroupworksheetrows) : Desagrupa filas en la hoja de trabajo.
+- [Filas de hoja de cálculo de publicación de copia](operation/postcopyworksheetrows) : Copie datos y formatos de filas completas específicas en la hoja de trabajo.
+- [Estilo de fila posterior](operation/postrowstyle) : aplica formatos a una fila completa de la hoja de trabajo.
+- [GetCellsCloudServicesHealthCheck](operation/getcellscloudserviceshealthcheck) : recupera descripciones de celdas en un formato específico.
+- [ObtenerCellsCloudServiceStatus](operation/getcellscloudservicestatus) : Aspose.Cells Comprobación del estado del servicio en la nube.
+- [Obtener área del gráfico](operation/getchartarea) : recupera la descripción del área del gráfico en la hoja de trabajo.
+- [Obtener formato de relleno de área de gráfico](operation/getchartareafillformat) : recupera la descripción del formato de relleno del área del gráfico en la hoja de trabajo.
+- [Obtener el borde del área del gráfico](operation/getchartareaborder) : recupera la descripción del borde del área del gráfico.
+- [Obtener gráficos de hoja de trabajo](operation/getworksheetcharts) : recupera descripciones de gráficos en la hoja de trabajo.
+- [Obtener gráfico de hoja de trabajo](operation/getworksheetchart) recupera el gráfico en un formato específico.
+- [PonerHoja De CálculoGráfico](operation/putworksheetchart) : agregue un nuevo gráfico en la hoja de trabajo.
+- [Eliminar hoja de cálculo](operation/deleteworksheetchart) : elimina un gráfico por índice en la hoja de trabajo.
+- [Publicar hoja de cálculo](operation/postworksheetchart) : Actualiza las propiedades del gráfico en la hoja de trabajo.
+- [Obtener leyenda del gráfico de hoja de cálculo](operation/getworksheetchartlegend) : recupera la descripción de la leyenda del gráfico en la hoja de trabajo.
+- [Publicar hoja de cálculo Leyenda del gráfico](operation/postworksheetchartlegend) : actualiza la leyenda del gráfico en la hoja de trabajo.
+- [Poner hoja de cálculo gráfico leyenda](operation/putworksheetchartlegend) : muestra la leyenda del gráfico en la hoja de trabajo.
+- [Eliminar hoja de cálculo Leyenda del gráfico](operation/deleteworksheetchartlegend) : Oculta la leyenda del gráfico en la hoja de trabajo.
+- [Eliminar gráficos de hoja de cálculo](operation/deleteworksheetcharts) : borre los gráficos en las hojas de trabajo.
+- [Obtener título del gráfico de hoja de trabajo](operation/getworksheetcharttitle) : recupera la descripción del título del gráfico en la hoja de trabajo.
+- [Publicar hoja de cálculo Título del gráfico](operation/postworksheetcharttitle) : actualiza el título del gráfico en la hoja de trabajo.
+- [PonerHoja De CálculoTítulo Del Gráfico](operation/putworksheetcharttitle) : establece el título del gráfico en la hoja de trabajo.
+- [Eliminar título del gráfico de hoja de cálculo](operation/deleteworksheetcharttitle) : Oculta el título del gráfico en la hoja de trabajo.
+- [ObtenerChartSeriesAxis](operation/getchartseriesaxis) recupera descripciones del eje de serie del gráfico en el gráfico.
+- [ObtenerChartCategoryAxis](operation/getchartcategoryaxis) : recupera descripciones del eje de la serie del gráfico en el gráfico.
+- [ObtenerChartValueAxis](operation/getchartvalueaxis) : recupera el eje de valores del gráfico en el gráfico.
+- [GetChartSecondCategoryAxis](operation/getchartsecondcategoryaxis) : Recupera el segundo eje de categoría del gráfico en el gráfico.
+- [GetChartSecondValueAxis](operation/getchartsecondvalueaxis) : recupera el segundo eje de valores del gráfico.
+- [PublicarGráficoSerieEje](operation/postchartseriesaxis) : actualiza el eje de la serie del gráfico en el gráfico.
+- [PostChartCategoríaEje](operation/postchartcategoryaxis) : Actualiza el eje de categoría del gráfico en el gráfico.
+- [PostChartValueAxis](operation/postchartvalueaxis) : actualiza el eje de valores del gráfico en el gráfico.
+- [PublicarGráficoSegundaCategoríaEje](operation/postchartsecondcategoryaxis) : actualiza el segundo eje de categoría del gráfico.
+- [PostChartSegundoValorEje](operation/postchartsecondvalueaxis) : actualiza el segundo eje de valores del gráfico.
+- [Obtener formatos condicionales de hoja de trabajo](operation/getworksheetconditionalformattings) : recupera descripciones de formatos condicionales en una hoja de trabajo.
+- [Obtener formato condicional de hoja de trabajo](operation/getworksheetconditionalformatting) recupera descripciones de formato condicional en la hoja de trabajo.
+- [PutWorksheetConditionalFormatting](operation/putworksheetconditionalformatting) : agregue formato condicional en la hoja de trabajo.
+- [Poner hoja de trabajoFormatoCondición](operation/putworksheetformatcondition) : agregue una condición de formato en la hoja de trabajo.
+- [PutWorksheetFormatConditionArea](operation/putworksheetformatconditionarea) : agregue un área de celda para la condición de formato en la hoja de trabajo.
+- [PutWorksheetFormatConditionCondición](operation/putworksheetformatconditioncondition) : agregue una condición para la condición de formato en la hoja de trabajo.
+- [Eliminar formatos condicionales de hoja de trabajo](operation/deleteworksheetconditionalformattings) : borre todos los formatos condicionales de la hoja de trabajo.
+- [Eliminar hoja de trabajo con formato condicional](operation/deleteworksheetconditionalformatting) : Elimina un formato condicional.
+- [Eliminar hoja de trabajoConditionalFormattingArea](operation/deleteworksheetconditionalformattingarea) : Elimina el área de celda del formato condicional.
+- [Obtener libro de trabajo](operation/getworkbook) : recupere libros de trabajo en varios formatos.
+- [PonerConvertirLibro de Trabajo](operation/putconvertworkbook) : convierta el libro de trabajo del contenido solicitado en archivos en diferentes formatos.
+- [Publicar libro de trabajo guardar como](operation/postworkbooksaveas) : guarde un archivo Excel en varios formatos.
+- [Publicar convertir libro de trabajo a PDF](operation/postconvertworkbooktopdf) : Convierta el archivo Excel a archivos PDF.
+- [PublicarConvertir libro de trabajo a PNG](operation/postconvertworkbooktopng) : Convierta el archivo Excel a archivos PNG.
+- [Publicar convertir libro de trabajo a Docx](operation/postconvertworkbooktodocx) : Convierta el archivo Excel a archivos Docx.
+- [PostConvertir libro de trabajo a Pptx](operation/postconvertworkbooktopptx) : Convierta el archivo Excel a archivos Pptx.
+- [Publicar convertir libro de trabajo a HTML](operation/postconvertworkbooktohtml) : Convierta el archivo Excel a archivos HTML.
+- [PostConvertWorkbookToMarkdown](operation/postconvertworkbooktomarkdown) : Convierta el archivo Excel a archivos Markdown.
+- [PostConvertWorkbookToJson](operation/postconvertworkbooktojson) : Convierta el archivo Excel a archivos Json.
+- [PostConvertWorkbookToSQL](operation/postconvertworkbooktosql) : Convierta el archivo Excel a archivos de script SQL.
+- [Publicar convertir libro de trabajo a CSV](operation/postconvertworkbooktocsv) : Convierta el archivo Excel a archivos Csv.
+- [PostExportación](operation/postexport) : Exporte Excel elementos internos o el propio libro a archivos de varios formatos.
+- [PostWorkbookExportXML](operation/postworkbookexportxml) : Exporte datos XML desde un archivo Excel. Cuando haya mapas XML en un archivo Excel, exporte datos XML. Cuando no haya ningún mapa XML en el archivo Excel, convierta el archivo Excel en un archivo XML.
+- [PostWorkbookImportarJson](operation/postworkbookimportjson) importe un archivo de datos JSON al libro de trabajo. El archivo de datos JSON puede ser un archivo en la nube o datos de un URI HTTP.
+- [PostWorkbookImportarXML](operation/postworkbookimportxml) : importe un archivo de datos XML a un archivo Excel. El archivo de datos XML puede ser un archivo en la nube o datos de un URI HTTP.
+- [Publicar datos de importación](operation/postimportdata) : Importe datos al archivo Excel.
+- [Limpieza posterior de datos del libro de trabajo](operation/postworkbookdatacleansing) : La limpieza de datos de archivos de hojas de cálculo es un proceso de gestión de datos que se utiliza para identificar, corregir y eliminar errores, datos incompletos, duplicados o imprecisiones en tablas y rangos.
+- [Limpieza posterior de datos](operation/postdatacleansing) : La limpieza de datos de archivos de hojas de cálculo es un proceso de gestión de datos que se utiliza para identificar, corregir y eliminar errores, datos incompletos, duplicados o imprecisiones en tablas y rangos.
+- [PostWorkbookDataDeduplicación](operation/postworkbookdatadeduplication) : La deduplicación de datos de archivos de hojas de cálculo se utiliza principalmente para eliminar datos duplicados en tablas y rangos.
+- [PostDataDeduplicación](operation/postdatadeduplication) : La deduplicación de datos de archivos de hojas de cálculo se utiliza principalmente para eliminar datos duplicados en tablas y rangos.
+- [Publicar libro de trabajoRelleno de datos](operation/postworkbookdatafill) El llenado de datos para archivos de hojas de cálculo se utiliza principalmente para llenar datos vacíos en tablas y rangos.
+- [PublicarRelleno de datos](operation/postdatafill) El llenado de datos para archivos de hojas de cálculo se utiliza principalmente para llenar datos vacíos en tablas y rangos.
+- [Publicar eliminar filas incompletas](operation/postdeleteincompleterows) : La eliminación de filas incompletas de archivos de hojas de cálculo se utiliza principalmente para eliminar filas incompletas en tablas y rangos.
+- [Obtener hoja de trabajo Hipervínculos](operation/getworksheethyperlinks) : recupera descripciones de hipervínculos en la hoja de trabajo.
+- [Obtener hoja de cálculo hipervínculo](operation/getworksheethyperlink) : recupera la descripción del hipervínculo por índice en la hoja de trabajo.
+- [Eliminar hoja de trabajo hipervínculo](operation/deleteworksheethyperlink) : Eliminar hipervínculo por índice en la hoja de trabajo.
+- [Publicar hoja de trabajo Hipervínculo](operation/postworksheethyperlink) : actualiza el hipervínculo por índice en la hoja de trabajo.
+- [Poner hoja de cálculo hipervínculo](operation/putworksheethyperlink) : Agregue un hipervínculo en la hoja de trabajo.
+- [Eliminar hoja de cálculo hipervínculos](operation/deleteworksheethyperlinks) : elimine todos los hipervínculos de la hoja de trabajo.
+- [Publicar montaje](operation/postassemble) : Reúna archivos de datos con archivos de plantilla para generar archivos en varios formatos.
+- [Postcomprimir](operation/postcompress) : Comprima archivos y genere archivos de destino en varios formatos; los formatos de archivos admitidos incluyen Xls, Xlsx, Xlsm, Xlsb, Ods y más.
+- [Postfusión](operation/postmerge) : fusiona celdas en la hoja de trabajo.
+- [Publicar división](operation/postsplit) : divida archivos de hojas de cálculo Excel según hojas de trabajo y cree archivos de salida en varios formatos.
+- [Publicar búsqueda](operation/postsearch) : busca texto especificado dentro de Excel archivos.
+- [PublicarReemplazar](operation/postreplace) : Reemplace el texto especificado con texto nuevo en archivos Excel.
+- [Publicar importación](operation/postimport) : Importe datos a un archivo Excel y genere archivos de salida en varios formatos.
+- [Publicar marca de agua](operation/postwatermark) : Agregue marca de agua de texto a archivos Excel y genere archivos de salida en varios formatos.
+- [Publicarborrarobjetos](operation/postclearobjects) : Borre elementos internos en archivos Excel y genere archivos de salida en varios formatos.
+- [PostReverse](operation/postreverse) : Invierta filas o columnas en archivos Excel y cree archivos de salida en varios formatos.
+- [PostReparación](operation/postrepair) : Repare archivos anormales y genere archivos en varios formatos.
+- [PostRotar](operation/postrotate) : gire filas, columnas u otros objetos en archivos Excel y guárdelos en varios formatos.
+- [Publicar metadatos](operation/postmetadata) actualice las propiedades del documento en el archivo Excel y guárdelas en varios formatos.
+- [Obtener metadatos](operation/getmetadata) : Obtiene las propiedades del documento de las celdas.
+- [Eliminar metadatos](operation/deletemetadata) : Elimine las propiedades del documento de celdas en el archivo Excel y guárdelas en varios formatos.
+- [Obtener objetos de lista de hojas de trabajo](operation/getworksheetlistobjects) : recupera descripciones de ListObjects en la hoja de trabajo.
+- [Obtener objeto de lista de hojas de trabajo](operation/getworksheetlistobject) : recupera la descripción del objeto de la lista por índice en la hoja de trabajo.
+- [PutWorksheetListObjeto](operation/putworksheetlistobject) : Agregue un ListObject en la hoja de trabajo.
+- [Eliminar objetos de lista de hojas de trabajo](operation/deleteworksheetlistobjects) : Elimina ListObjects en la hoja de trabajo.
+- [Eliminar objeto de lista de hojas de trabajo](operation/deleteworksheetlistobject) : Eliminar objeto de lista por índice en la hoja de trabajo.
+- [PostWorksheetListObjeto](operation/postworksheetlistobject) : Actualiza el objeto de la lista por índice en la hoja de trabajo.
+- [PostWorksheetListObjectConvertToRange](operation/postworksheetlistobjectconverttorange) : convierte el objeto de lista en un rango en la hoja de trabajo.
+- [PostWorksheetListObjectSummarizeWithPivotTable](operation/postworksheetlistobjectsummarizewithpivottable) : cree una tabla dinámica con un objeto de lista en la hoja de trabajo.
+- [PostWorksheetListObjectOrdenarTabla](operation/postworksheetlistobjectsorttable) Ordena el objeto de la lista en la hoja de trabajo.
+- [PostWorksheetListObjectRemoveDuplicates](operation/postworksheetlistobjectremoveduplicates) : Elimina duplicados en el objeto de lista.
+- [PostWorksheetListObjectInsertSlicer](operation/postworksheetlistobjectinsertslicer) : Insertar segmentación para el objeto de lista.
+- [Publicar hoja de cálculoColumna de lista](operation/postworksheetlistcolumn) : Actualizar la columna de la lista en el objeto de la lista.
+- [Publicar hoja de cálculoListaColumnasTotal](operation/postworksheetlistcolumnstotal) : actualiza el total de columnas de la lista en la tabla.
+- [Obtener hoja de trabajo OleObjects](operation/getworksheetoleobjects) : recupera descripciones de objetos OLE en la hoja de trabajo.
+- [Obtener hoja de trabajo OleObjeto](operation/getworksheetoleobject) : recupera el objeto OLE en un formato especificado en la hoja de trabajo.
+- [Eliminar hoja de trabajoOleObjects](operation/deleteworksheetoleobjects) : elimina todos los objetos OLE de la hoja de trabajo.
+- [Eliminar hoja de trabajoOleObject](operation/deleteworksheetoleobject) : elimina un objeto OLE en la hoja de trabajo.
+- [PostUpdateWorksheetOleObjeto](operation/postupdateworksheetoleobject) : actualiza un objeto OLE en la hoja de trabajo.
+- [PutWorksheetOleObjeto](operation/putworksheetoleobject) : agregue un objeto OLE en la hoja de trabajo.
+- [Obtener saltos de página vertical](operation/getverticalpagebreaks) : recupera descripciones de saltos de página verticales en la hoja de trabajo.
+- [Obtener saltos de página horizontales](operation/gethorizontalpagebreaks) recupera descripciones de saltos de página horizontales en la hoja de trabajo.
+- [Obtener salto de página vertical](operation/getverticalpagebreak) : recupera una descripción de salto de página vertical en la hoja de trabajo.
+- [GetHorizontalPageBreak](operation/gethorizontalpagebreak) : recupera una descripción de salto de página horizontal en la hoja de trabajo.
+- [PutVerticalPageBreak](operation/putverticalpagebreak) : agregue un salto de página vertical en la hoja de trabajo.
+- [PutHorizontalPageBreak](operation/puthorizontalpagebreak) : agregue saltos de página horizontales en la hoja de trabajo.
+- [Eliminar saltos de página vertical](operation/deleteverticalpagebreaks) : elimina los saltos de página verticales en la hoja de trabajo.
+- [Eliminar saltos de página horizontales](operation/deletehorizontalpagebreaks) : elimina los saltos de página horizontales en la hoja de trabajo.
+- [Eliminar salto de página vertical](operation/deleteverticalpagebreak) : elimina un salto de página vertical en la hoja de trabajo.
+- [Eliminar salto de página horizontal](operation/deletehorizontalpagebreak) : elimina un salto de página horizontal en la hoja de trabajo.
+- [Obtener configuración de página](operation/getpagesetup) : recupera la descripción de configuración de la página en la hoja de trabajo.
+- [Configuración de publicación de página](operation/postpagesetup) : Actualiza la configuración de la página en la hoja de trabajo.
+- [Eliminar encabezado y pie de página](operation/deleteheaderfooter) : borre el encabezado y pie de página de la hoja de trabajo.
+- [Obtener encabezado](operation/getheader) : recupera la descripción del encabezado de la página en la hoja de trabajo.
+- [Encabezado de publicación](operation/postheader) Actualiza el encabezado de la página en la hoja de trabajo.
+- [Obtener pie de página](operation/getfooter) : recupera la descripción del pie de página en la hoja de trabajo.
+- [Pie de página](operation/postfooter) : actualiza el pie de página en la hoja de trabajo.
+- [PublicarFitWideToPages](operation/postfitwidetopages) : establezca la escala en la que la página se ajustará a lo ancho cuando se imprima en la hoja.
+- [PostFitTallToPages](operation/postfittalltopages) : establezca la escala en la que la página se ajustará a lo alto cuando se imprima en la hoja.
+- [Obtener imágenes de la hoja de trabajo](operation/getworksheetpictures) : recupera descripciones de imágenes en la hoja de trabajo.
+- [Obtener imagen de hoja de trabajo con formato](operation/getworksheetpicturewithformat) : recupera una imagen por número en la hoja de trabajo.
+- [Poner Hoja de Trabajo Agregar Imagen](operation/putworksheetaddpicture) : agregue una nueva imagen en la hoja de trabajo.
+- [Publicar hoja de trabajoImagen](operation/postworksheetpicture) : actualiza una imagen por índice en la hoja de trabajo.
+- [Eliminar hoja de trabajoImagen](operation/deleteworksheetpicture) : elimina un objeto de imagen por índice en la hoja de trabajo.
+- [Eliminar imágenes de hoja de trabajo](operation/deleteworksheetpictures) : elimina todas las imágenes de la hoja de trabajo.
+- [Obtener tablas dinámicas de hoja de trabajo](operation/getworksheetpivottables) : recupera descripciones de tablas dinámicas en la hoja de trabajo.
+- [Obtener hoja de trabajo tabla dinámica](operation/getworksheetpivottable) recupera información de la tabla dinámica por índice en la hoja de trabajo.
+- [Obtener campo de tabla dinámica](operation/getpivottablefield) : recupera descripciones de campos dinámicos en la tabla dinámica.
+- [Obtener filtros de tabla dinámica de hoja de trabajo](operation/getworksheetpivottablefilters) : Obtiene filtros de tabla dinámica en la hoja de trabajo.
+- [Obtener hoja de trabajoPivotTableFilter](operation/getworksheetpivottablefilter) : recupera filtros de tabla dinámica en la hoja de trabajo.
+- [Poner hoja de trabajo tabla dinámica](operation/putworksheetpivottable) : agregue una tabla dinámica en la hoja de trabajo.
+- [Poner campo de tabla dinámica](operation/putpivottablefield) : agregue un campo dinámico en la tabla dinámica.
+- [Poner hoja de trabajoPivotTableFilter](operation/putworksheetpivottablefilter) : agregue un filtro dinámico a la tabla dinámica.
+- [Publicar campo de tabla dinámica Ocultar elemento](operation/postpivottablefieldhideitem) : oculta un elemento de campo dinámico en la tabla dinámica.
+- [Publicar campo de tabla dinámica Mover a](operation/postpivottablefieldmoveto) : mueve un campo dinámico en la tabla dinámica.
+- [PostPivotTableCellStyle](operation/postpivottablecellstyle) : actualiza el estilo de celda en la tabla dinámica.
+- [Estilo de tabla dinámica posterior](operation/postpivottablestyle) : Actualiza el estilo en la tabla dinámica.
+- [PostPivotTableUpdatePivotFields](operation/postpivottableupdatepivotfields) : actualiza los campos dinámicos en la tabla dinámica.
+- [Publicar tabla dinámica actualizar campo dinámico](operation/postpivottableupdatepivotfield) : Actualiza el campo dinámico en la tabla dinámica.
+- [Publicar hoja de cálculoTabla dinámicaCalcular](operation/postworksheetpivottablecalculate) : Calcula los datos de la tabla dinámica en celdas.
+- [Publicar hoja de trabajoTabla dinámicaMover](operation/postworksheetpivottablemove) : mueve la tabla dinámica en la hoja de trabajo.
+- [Eliminar tablas dinámicas de hoja de trabajo](operation/deleteworksheetpivottables) : Eliminar tablas dinámicas en la hoja de trabajo.
+- [Eliminar hoja de trabajo tabla dinámica](operation/deleteworksheetpivottable) : Eliminar tabla dinámica por índice en la hoja de trabajo.
+- [Eliminar campo de tabla dinámica](operation/deletepivottablefield) : elimina un campo dinámico en la tabla dinámica.
+- [Eliminar filtros de tabla dinámica de hoja de trabajo](operation/deleteworksheetpivottablefilters) : elimina todos los filtros dinámicos en la tabla dinámica.
+- [Eliminar hoja de trabajoFiltro de tabla dinámica](operation/deleteworksheetpivottablefilter) : elimina un filtro dinámico en la tabla dinámica.
+- [Obtener propiedades del documento](operation/getdocumentproperties) : recupera descripciones de las propiedades del archivo Excel.
+- [Poner propiedad del documento](operation/putdocumentproperty) : establezca o agregue una propiedad Excel.
+- [Obtener propiedad del documento](operation/getdocumentproperty) : Obtenga Excel propiedad por nombre.
+- [Eliminar propiedad del documento](operation/deletedocumentproperty) : Eliminar una propiedad Excel.
+- [Eliminar propiedades del documento](operation/deletedocumentproperties) : elimine todas las propiedades personalizadas del documento y restablezca las integradas.
+- [Firma PostDigital](operation/postdigitalsignature) : Excel firma digital del archivo.
+- [Publicar libro de trabajo Encrypt](operation/postencryptworkbook) : Excel Cifrado.
+- [EliminarDecryptWorkbook](operation/deletedecryptworkbook) : Excel descifrado de archivos.
+- [Libro de trabajo PostProtect](operation/postprotectworkbook) : Excel protección.
+- [Eliminar libro de trabajo sin protección](operation/deleteunprotectworkbook) : Excel desprotección.
+- [PonerDocumentoProtectFromChanges](operation/putdocumentprotectfromchanges) : Excel protección contra escritura de archivos.
+- [EliminarDocumentoUnProtectFromChanges](operation/deletedocumentunprotectfromchanges) : Excel archivo cancela la protección contra escritura.
+- [Publicar desbloqueo](operation/postunlock) : Desbloquear archivos Excel.
+- [Bloqueo posterior](operation/postlock) : Bloquear archivos Excel.
+- [Postproteger](operation/postprotect) : Excel cifrado de archivos.
+- [Publicar hoja de cálculoCeldasRangosCopiar](operation/postworksheetcellsrangescopy) : Copie el contenido del rango de origen al rango de destino en la hoja de trabajo.
+- [PostWorksheetCellsRangeFusionar](operation/postworksheetcellsrangemerge) : fusiona un rango de celdas en una sola celda.
+- [PostWorksheetCellsRangeUnMerge](operation/postworksheetcellsrangeunmerge) : separa las celdas fusionadas dentro de este rango.
+- [PostWorksheetCellsRangoEstilo](operation/postworksheetcellsrangestyle) : establece el estilo para el rango especificado.
+- [Obtener hoja de trabajoCellsRangeValue](operation/getworksheetcellsrangevalue) recupera los valores de las celdas dentro del rango especificado.
+- [PostWorksheetCellsRangeValue](operation/postworksheetcellsrangevalue) : Asigna un valor al rango; si es necesario, el valor se convertirá a otro tipo de datos y se restablecerá el formato del número de la celda.
+- [Publicar hoja de trabajo Rango de celdas Mover a](operation/postworksheetcellsrangemoveto) : Mueve el rango actual al rango de destino.
+- [Publicar hoja de cálculoCeldasRangoOrdenar](operation/postworksheetcellsrangesort) : realice la clasificación de datos en un rango de celdas.
+- [Publicar hoja de trabajo Celdas Rango Contorno Borde](operation/postworksheetcellsrangeoutlineborder) : aplica un borde de contorno alrededor de un rango de celdas.
+- [Publicarhoja de trabajoCeldasRangoColumnaAncho](operation/postworksheetcellsrangecolumnwidth) : establece el ancho de columna del rango especificado.
+- [Publicar hoja de trabajo Celdas Rango Fila Altura](operation/postworksheetcellsrangerowheight) : establece la altura de fila del rango.
+- [Poner hoja de cálculo rango de celdas](operation/putworksheetcellsrange) : inserte un rango de celdas y cambie las celdas existentes según la opción de cambio especificada.
+- [Eliminar rango de celdas de hoja de trabajo](operation/deleteworksheetcellsrange) : elimine un rango de celdas y cambie las celdas existentes según la opción de cambio especificada.
+- [Obtener formas de hoja de cálculo](operation/getworksheetshapes) recupera descripciones de formas en la hoja de trabajo.
+- [Obtener forma de hoja de trabajo](operation/getworksheetshape) : recupera la descripción de la forma en la hoja de trabajo.
+- [Poner Forma De Hoja De Trabajo](operation/putworksheetshape) : Agrega una forma en la hoja de trabajo.
+- [Eliminar formas de hoja de trabajo](operation/deleteworksheetshapes) : elimina todas las formas de la hoja de trabajo.
+- [Eliminar forma de hoja de trabajo](operation/deleteworksheetshape) : elimina una forma en la hoja de trabajo.
+- [Forma posterior a la hoja de trabajo](operation/postworksheetshape) : actualiza una forma en la hoja de trabajo.
+- [PostWorksheetGroupForma](operation/postworksheetgroupshape) : Agrupa formas en la hoja de trabajo.
+- [Publicar hoja de cálculo Desagrupar forma](operation/postworksheetungroupshape) : Desagrupa formas en la hoja de trabajo.
+- [Obtener hoja de trabajo SparklineGroups](operation/getworksheetsparklinegroups) : recupere descripciones de grupos de minigráficos en la hoja de trabajo.
+- [GetWorksheetSparklineGroup](operation/getworksheetsparklinegroup) : recupera la descripción de un grupo de minigráficos en la hoja de trabajo.
+- [Eliminar hoja de trabajoSparklineGroups](operation/deleteworksheetsparklinegroups) : elimine grupos de minigráficos en la hoja de trabajo.
+- [Eliminar hoja de trabajoSparklineGroup](operation/deleteworksheetsparklinegroup) : elimine un grupo de minigráficos en la hoja de trabajo.
+- [Poner hoja de trabajoGrupo Sparkline](operation/putworksheetsparklinegroup) : agregue un grupo de minigráficos en la hoja de trabajo.
+- [Publicar hoja de trabajoGrupo Sparkline](operation/postworksheetsparklinegroup) : actualice un grupo de minigráficos en la hoja de trabajo.
+- [Tarea posterior a la ejecución](operation/postruntask) ejecutar tareas.
+- [ObtenerWorkbookDefaultStyle](operation/getworkbookdefaultstyle) : recupera la descripción del estilo predeterminado del libro.
+- [Obtener elementos de texto del libro de trabajo](operation/getworkbooktextitems) : recupera elementos de texto en el libro de trabajo.
+- [Obtener nombres de libros de trabajo](operation/getworkbooknames) : recupera rangos con nombre en el libro de trabajo.
+- [Poner nombre del libro de trabajo](operation/putworkbookname) : Defina un nuevo nombre en el libro de trabajo.
+- [Obtener nombre del libro de trabajo](operation/getworkbookname) : recupera la descripción de un rango con nombre en el libro de trabajo.
+- [Nombre del libro de trabajo posterior](operation/postworkbookname) : actualiza un rango con nombre en el libro de trabajo.
+- [Obtener el valor del nombre del libro de trabajo](operation/getworkbooknamevalue) : recupera el valor de un rango con nombre en el libro de trabajo.
+- [Eliminar nombres de libros de trabajo](operation/deleteworkbooknames) : elimina todos los rangos con nombre en el libro de trabajo.
+- [Eliminar nombre del libro de trabajo](operation/deleteworkbookname) : elimina un rango con nombre en el libro de trabajo.
+- [PostWorkbooksFusionar](operation/postworkbooksmerge) : fusiona un libro de trabajo con el libro de trabajo existente.
+- [Publicar libros de trabajo Búsqueda de texto](operation/postworkbookstextsearch) : busca texto en el libro de trabajo.
+- [Publicar texto del libro de trabajo Reemplazar](operation/postworkbooktextreplace) : Reemplazar texto en el libro.
+- [PostWorkbookGetSmartMarkerResult](operation/postworkbookgetsmartmarkerresult) : Procesamiento de marcadores inteligentes.
+- [PonerLibroCrear](operation/putworkbookcreate) : cree un nuevo libro de trabajo utilizando diferentes métodos.
+- [Publicar libro de trabajo](operation/postworkbooksplit) divide el libro con un formato específico.
+- [Publicar libro de trabajo Calcular fórmula](operation/postworkbookcalculateformula) : Calcula todas las fórmulas del libro de trabajo.
+- [PostAutofitWorkbookFilas](operation/postautofitworkbookrows) : Autoajustar filas en el libro de trabajo.
+- [Publicar columnas de libro de trabajo de ajuste automático](operation/postautofitworkbookcolumns) : Autoajustar columnas en el libro de trabajo.
+- [Obtener configuración del libro de trabajo](operation/getworkbooksettings) : recupera descripciones de la configuración del libro.
+- [Configuración posterior al libro de trabajo](operation/postworkbooksettings) : Actualiza la configuración en el libro de trabajo.
+- [PonerLibro De TrabajoFondo](operation/putworkbookbackground) : establece el fondo en el libro de trabajo.
+- [Eliminar fondo del libro de trabajo](operation/deleteworkbookbackground) : elimina el fondo del libro.
+- [PonerLibroAguaMarcador](operation/putworkbookwatermarker) : establece un marcador de agua en el libro de trabajo.
+- [Obtener recuento de páginas](operation/getpagecount) : obtiene el recuento de páginas del libro de trabajo.
+- [Obtener hojas de trabajo](operation/getworksheets) : recupera la descripción de las hojas de trabajo de un libro de trabajo.
+- [Obtener hoja de trabajo con formato](operation/getworksheetwithformat) : recupere la hoja de trabajo en un formato específico del libro de trabajo.
+- [PonerCambiarVisibilidadHoja de trabajo](operation/putchangevisibilityworksheet) : cambia la visibilidad de la hoja de trabajo en el libro de trabajo.
+- [Poner hoja de trabajo activa](operation/putactiveworksheet) establece el índice de la hoja de trabajo activa en el libro de trabajo.
+- [PonerInsertarNuevaHoja de Trabajo](operation/putinsertnewworksheet) : inserte una nueva hoja de trabajo en el libro de trabajo.
+- [PonerAgregarNuevaHoja de Trabajo](operation/putaddnewworksheet) : agregue una nueva hoja de trabajo en el libro de trabajo.
+- [Eliminar hoja de trabajo](operation/deleteworksheet) : elimina una hoja de trabajo en el libro de trabajo.
+- [Eliminar hojas de trabajo](operation/deleteworksheets) : elimine las hojas de trabajo coincidentes en el libro de trabajo.
+- [Hoja de trabajo posterior a la mudanza](operation/postmoveworksheet) : Mueve la hoja de trabajo en el libro de trabajo.
+- [Hoja de trabajo PutProtect](operation/putprotectworksheet) : Proteger la hoja de trabajo.
+- [Eliminar hoja de trabajo sin protección](operation/deleteunprotectworksheet) : Desproteger la hoja de trabajo.
+- [Obtener elementos de texto de hoja de trabajo](operation/getworksheettextitems) : recupera elementos de texto en la hoja de trabajo.
+- [Obtener hoja de trabajoComentarios](operation/getworksheetcomments) : recupera la descripción de los comentarios en la hoja de trabajo.
+- [Obtener hoja de trabajoComentar](operation/getworksheetcomment) : recupera la descripción del comentario en la hoja de trabajo.
+- [PonerHoja de trabajoComentario](operation/putworksheetcomment) : agregue un comentario de celda en la hoja de trabajo.
+- [Publicar hoja de trabajoComentario](operation/postworksheetcomment) : actualiza el comentario de la celda en la hoja de trabajo.
+- [Eliminar hoja de trabajo comentario](operation/deleteworksheetcomment) : Eliminar comentario de celda en la hoja de trabajo.
+- [Eliminar hoja de trabajo Comentarios](operation/deleteworksheetcomments) elimina todos los comentarios de la hoja de trabajo.
+- [Obtener hoja de cálculo de celdas fusionadas](operation/getworksheetmergedcells) : Obtenga celdas combinadas de la hoja de trabajo.
+- [Obtener hoja de trabajo celda fusionada](operation/getworksheetmergedcell) : recupera la descripción de una celda combinada por su índice en la hoja de trabajo.
+- [Obtener hoja de trabajo Calcular fórmula](operation/getworksheetcalculateformula) : Calcula la fórmula en la hoja de trabajo.
+- [Publicar hoja de trabajo Calcular fórmula](operation/postworksheetcalculateformula) : Calcula la fórmula en la hoja de trabajo.
+- [Publicar hoja de cálculoBúsqueda de texto](operation/postworksheettextsearch) : busca texto en la hoja de trabajo.
+- [Publicar texto de hoja de cálculo Reemplazar](operation/postworksheettextreplace) : Reemplace el texto antiguo con texto nuevo en la hoja de trabajo.
+- [Ordenar rango de hoja de trabajo posterior](operation/postworksheetrangesort) : Ordena un rango en la hoja de trabajo.
+- [Fila de hoja de trabajo de ajuste automático posterior](operation/postautofitworksheetrow) : ajusta automáticamente una fila en la hoja de trabajo.
+- [Publicar filas de hoja de trabajo de ajuste automático](operation/postautofitworksheetrows) : Autoajustar filas en la hoja de trabajo.
+- [Publicar columnas de hoja de trabajo de ajuste automático](operation/postautofitworksheetcolumns) : Autoajustar columnas en la hoja de trabajo.
+- [PonerHoja De CálculoFondo](operation/putworksheetbackground) : establece la imagen de fondo en la hoja de trabajo.
+- [Eliminar hoja de trabajo fondo](operation/deleteworksheetbackground) : Elimina la imagen de fondo en la hoja de trabajo.
+- [Poner hoja de cálculo congelar paneles](operation/putworksheetfreezepanes) : establece paneles congelados en la hoja de trabajo.
+- [Eliminar hoja de trabajoFreezePanes](operation/deleteworksheetfreezepanes) : Descongelar paneles en la hoja de trabajo.
+- [Hoja de trabajo posterior a la copia](operation/postcopyworksheet) : Copie contenidos y formatos de otra hoja de trabajo.
+- [Publicar cambiar nombre de hoja de trabajo](operation/postrenameworksheet) : cambie el nombre de la hoja de trabajo en el libro de trabajo.
+- [Propiedad de la hoja de cálculo de actualización posterior](operation/postupdateworksheetproperty) : actualice las propiedades de la hoja de trabajo en el libro de trabajo.
+- [Obtener rangos con nombres](operation/getnamedranges) : recupera descripciones de rangos en las hojas de trabajo.
+- [Obtener valor de rango con nombre](operation/getnamedrangevalue) : recupera valores dentro del rango.
+- [Publicar actualizaciónHoja de trabajoZoom](operation/postupdateworksheetzoom) : actualice el porcentaje de escala en la hoja de trabajo. Debería estar entre 10 y 400.
+- [Obtener recuento de páginas de hoja de trabajo](operation/getworksheetpagecount) : obtiene el recuento de páginas en la hoja de trabajo.
+- [ObtenerValidaciones de hoja de trabajo](operation/getworksheetvalidations) : recupera descripciones de validaciones en la hoja de trabajo.
+- [ObtenerValidación de la hoja de trabajo](operation/getworksheetvalidation) : Recupera una validación por su índice en la hoja de trabajo.
+- [PonerValidación de hoja de trabajo](operation/putworksheetvalidation) : agregue una validación en el índice de la hoja de trabajo.
+- [Validación posterior a la hoja de trabajo](operation/postworksheetvalidation) : Actualiza una validación por índice en la hoja de trabajo.
+- [EliminarValidación de hoja de trabajo](operation/deleteworksheetvalidation) Eliminar una validación por índice en la hoja de trabajo.
+- [EliminarValidaciones de hoja de trabajo](operation/deleteworksheetvalidations) : Elimina todas las validaciones en la hoja de trabajo.
+
+# Aspose.Cells Nube API Modelo
+
+- [El objeto existeExtensiones](model/objectexistsextensions)  :   
+- [Versión del archivo](model/fileversion)  :   
+- [Archivo de almacenamiento](model/storagefile) : información de archivo o carpeta
+- [Archivo de almacenamiento de GoogleDrive](model/googledrivestoragefile)  :   
+- [Por encima del promedio](model/aboveaverage) Describe la regla de formato condicional AboveAverage. Esta regla de formato condicional resalta las celdas que están por encima o por debajo del promedio para todos los valores del rango.
+- [ResumenCálculoMotor](model/abstractcalculationengine) : Representa el motor de cálculo personalizado del usuario para ampliar el motor de cálculo predeterminado de Aspose.Cells.
+- [ResumenCálculoMonitor](model/abstractcalculationmonitor) : Monitor para que el usuario realice un seguimiento del progreso del cálculo de la fórmula.
+- [Autofiltro](model/autofilter)  :   
+- [Opciones de AutoFitter](model/autofitteroptions)  :   
+- [Borde](model/border)  :   
+- [Opciones de cálculo](model/calculationoptions)  :   
+- [Celúla](model/cell)  :   
+- [Área de celda](model/cellarea)  :   
+- [Cells](model/cells)  :   
+- [CeldasNubeArchivoInfo](model/cellscloudfileinfo) : Cells Descripción de la información del archivo en la nube.
+- [CeldasColor](model/cellscolor)  :   
+- [CeldasDocumentoPropiedades](model/cellsdocumentproperties) : Excel propiedades
+- [CélulasDocumentoPropiedad](model/cellsdocumentproperty) : Cells propiedad del documento.
+- [Color](model/color) : Color.
+- [Filtro de color](model/colorfilter) : Filtro de color.
+- [Escala de colores](model/colorscale) : Describe la regla de formato condicional ColorScale. Esta regla de formato condicional crea una escala de colores degradados en las celdas.
+- [Columna](model/column)  :   
+- [columnas](model/columns)  :   
+- [Comentario](model/comment)  :   
+- [Comentarios](model/comments)  :   
+- [Formato condicional](model/conditionalformatting)  :   
+- [Icono de formato condicional](model/conditionalformattingicon)  :   
+- [Formatos condicionales](model/conditionalformattings)  :   
+- [Valor de formato condicional](model/conditionalformattingvalue)  :   
+- [Opciones de copia](model/copyoptions) : Representa las opciones de copia.
+- [CriteriosFiltro Múltiple](model/criteriamultiplefilter)  :   
+- [Filtro personalizado](model/customfilter)  :   
+- [Barra de datos](model/databar) : Describe la regla de formato condicional de DataBar. Esta regla de formato condicional muestra una barra de datos graduada en el rango de celdas.
+- [Borde de barra de datos](model/databarborder)  :   
+- [Limpieza de datos](model/datacleansing) : Limpieza de datos
+- [Valor de relleno de columna de datos](model/datacolumnfillvalue)  :   
+- [Relleno de datos](model/datafill)  :   
+- [Valor de relleno de datos](model/datafillvalue)  :   
+- [Clasificador de datos](model/datasorter) : Descripción resumida de DataSorter.
+- [Clave clasificadora de datos](model/datasorterkey) : Representa la clave del clasificador de datos.
+- [FechaHoraGrupoItem](model/datetimegroupitem)  :   
+- [Región de deduplicación](model/deduplicationregion)  :   
+- [Filtro dinámico](model/dynamicfilter)  :   
+- [Información del archivo](model/fileinfo) : Informacion del archivo
+- [ArchivosResultado](model/filesresult)  :   
+- [Columna de filtro](model/filtercolumn)  :   
+- [Fuente](model/font)  :   
+- [Configuración de fuente](model/fontsetting)  :   
+- [Condición de formato](model/formatcondition)  :   
+- [FórmulaFormatoCondición](model/formulaformatcondition)  :   
+- [Configuración de fórmula](model/formulasettings) : Configuración de fórmulas y cálculo.
+- [GlobalizaciónConfiguración](model/globalizationsettings) : Representa la configuración de globalización.
+- [Salto de página horizontal](model/horizontalpagebreak)  :   
+- [Saltos de página horizontales](model/horizontalpagebreaks)  :   
+- [Hipervínculo](model/hyperlink)  :   
+- [Hipervínculos](model/hyperlinks)  :   
+- [Filtro de iconos](model/iconfilter)  :   
+- [Conjunto de iconos](model/iconset) Describe la regla de formato condicional de IconSet. Esta regla de formato condicional aplica iconos a las celdas según sus valores.
+- [Enlace](model/link)  :   
+- [Elemento de enlace](model/linkelement)  :   
+- [Opciones de carga](model/loadoptions)  :   
+- [Celda fusionada](model/mergedcell)  :   
+- [Celdas fusionadas](model/mergedcells)  :   
+- [Filtro múltiple](model/multiplefilter)  :   
+- [Múltiples filtros](model/multiplefilters)  :   
+- [Nombre](model/name)  :   
+- [Nombres](model/names)  :   
+- [Formato de barra negativa](model/negativebarformat) : representa la configuración de color de las barras de datos para valores negativos definidos por una regla de formato condicional de la barra de datos.
+- [Sección de página](model/pagesection)  :   
+- [Configuración de página](model/pagesetup)  :   
+- [Opciones de pegado](model/pasteoptions) : Representa las opciones especiales de pegado.
+- [PdfSeguridadOpciones](model/pdfsecurityoptions)  :   
+- [Proteccion](model/protection) : Representa los distintos tipos de opciones de protección disponibles para una hoja de trabajo.
+- [Parámetro de hoja protegida](model/protectsheetparameter)  :   
+- [Tabla de consultas](model/querytable) : Representa información de QueryTable.
+- [Rango](model/range)  :   
+- [Rangos](model/ranges)  :   
+- [Fila](model/row)  :   
+- [Filas](model/rows)  :   
+- [GuardarResultado](model/saveresult)  :   
+- [Opciones de guardado paginadas](model/paginatedsaveoptions) : Representa las opciones de paginación.
+- [Valor único](model/singlevalue)  :   
+- [Clave de clasificación](model/sortkey)  :   
+- [Resultado dividido](model/splitresult)  :   
+- [Documento de resultado dividido](model/splitresultdocument)  :   
+- [Estilo](model/style)  :   
+- [EstiloFormatoCondición](model/styleformatcondition)  :   
+- [Estilos](model/styles)  :   
+- [Condición de formato de texto](model/textformatcondition)  :   
+- [Artículo de texto](model/textitem)  :   
+- [Artículos de texto](model/textitems)  :   
+- [Opciones de texto](model/textoptions)  :   
+- [Color del tema](model/themecolor)  :   
+- [Condición de formato de período de tiempo](model/timeperiodformatcondition)  :   
+- [Top10](model/top10) Describe la regla de formato condicional Top10. Esta regla de formato condicional resalta las celdas cuyos valores se encuentran en el corchete N superior o N inferior, según lo especificado.
+- [Top10Filtro](model/top10filter)  :   
+- [Validación](model/validation)  :   
+- [Validaciones](model/validations)  :   
+- [Salto de página vertical](model/verticalpagebreak)  :   
+- [Saltos de página verticales](model/verticalpagebreaks)  :   
+- [Libro de trabajo](model/workbook)  :   
+- [Configuración del libro de trabajo](model/workbooksettings)  :   
+- [Hoja de cálculo](model/worksheet)  :   
+- [Hojas de trabajo](model/worksheets)  :   
+- [Protección de escritura](model/writeprotection) : Especifica la configuración de protección contra escritura para un libro.
+- [Enlace de datos XML](model/xmldatabinding) : Representa información de enlace de datos XML.
+- [Mapa XML](model/xmlmap) : Representa información del mapa XML.
+- [CellsObjectOperateTaskParameter](model/cellsobjectoperatetaskparameter)  :   
+- [Convertir parámetro de tarea](model/converttaskparameter)  :   
+- [Convertir parámetro de tarea de hoja de trabajo](model/convertworksheettaskparameter)  :   
+- [Fuente de archivo](model/filesource)  :   
+- [Tipo de fuente de archivo](model/filesourcetype)  :   
+- [Importar parámetro de tarea de datos](model/importdatataskparameter)  :   
+- [ResultadoDestino](model/resultdestination)  :   
+- [ResultadoTipoDeDestino](model/resultdestinationtype)  :   
+- [Fuente de resultados](model/resultsource)  :   
+- [Guardar archivos en la nubeResultado](model/savefilestocloudresult)  :   
+- [GuardarResultadoTareaParámetro](model/saveresulttaskparameter)  :   
+- [Parámetro de tarea de marcador inteligente](model/smartmarkertaskparameter)  :   
+- [Parámetro de tarea de libro de trabajo dividido](model/splitworkbooktaskparameter)  :   
+- [Datos de tarea](model/taskdata)  :   
+- [Descripción de la tarea](model/taskdescription)  :   
+- [Parámetro de tarea](model/taskparameter)  :   
+- [ParámetroResultadoTarea](model/taskresultparameter)  :   
+- [Resultado de ejecución de tarea](model/taskrunresult)  :   
+- [Tipo de tarea](model/tasktype)  :   
+- [Parámetro de operación del gráfico](model/chartoperateparameter)  :   
+- [ListObjectOperateParameter](model/listobjectoperateparameter)  :   
+- [OperarObjeto](model/operateobject)  :   
+- [OperarObjetoPosición](model/operateobjectposition)  :   
+- [Operar tipo de objeto](model/operateobjecttype)  :   
+- [OperarParámetro](model/operateparameter)  :   
+- [Tipo de operación](model/operatetype)  :   
+- [Parámetro de operación de salto de página](model/pagebreakoperateparameter)  :   
+- [PageSetupOperateParámetro](model/pagesetupoperateparameter)  :   
+- [Parámetro de operación de tabla dinámica](model/pivottableoperateparameter)  :   
+- [FormaOperarParámetro](model/shapeoperateparameter)  :   
+- [Libro de trabajoOperarParámetro](model/workbookoperateparameter)  :   
+- [Libro de trabajoConfiguraciónOperarParámetro](model/workbooksettingsoperateparameter)  :   
+- [Hoja de trabajoOperarParámetro](model/worksheetoperateparameter)  :   
+- [ListaColumna](model/listcolumn)  :   
+- [Lista de objetos](model/listobject)  :   
+- [Lista de objetos](model/listobjects)  :   
+- [Configuración de globalización de Pivot](model/pivotglobalizationsettings) : Representa la configuración de globalización para tablas dinámicas.
+- [OpcionesDifGuardar](model/difsaveoptions) : Representa las opciones para guardar el archivo dif.
+- [Opciones de DocxSave](model/docxsaveoptions) : Representa opciones para guardar el archivo .docx.
+- [HtmlSaveOptions](model/htmlsaveoptions) : Representa opciones para guardar el archivo .html.
+- [OpcionesGuardarImagen](model/imagesaveoptions) : Representa opciones para guardar archivos de imagen.
+- [JsonSaveOptions](model/jsonsaveoptions) Representa opciones para guardar el archivo .json.
+- [Opciones de ahorro de rebajas](model/markdownsaveoptions) : Representa opciones para guardar el archivo .md.
+- [MHtmlGuardarOpciones](model/mhtmlsaveoptions) : Representa opciones para guardar el archivo .mhtml.
+- [OdsSaveOptions](model/odssaveoptions) : Representa opciones para guardar el archivo .ods.
+- [OoxmlSaveOptions](model/ooxmlsaveoptions) : Representa opciones para guardar el archivo ooxml.
+- [Opciones de guardar PDF](model/pdfsaveoptions) : Representa opciones para guardar un archivo pdf.
+- [PptxGuardarOpciones](model/pptxsaveoptions) : Representa las opciones para guardar el archivo pptx.
+- [Guardar Opciones](model/saveoptions) : Representa todas las opciones de guardar
+- [Hoja de cálculoML2003GuardarOpciones](model/spreadsheetml2003saveoptions) : Representa las opciones para guardar el archivo .xml.
+- [Opciones de guardado de SqlScript](model/sqlscriptsaveoptions) : Representa las opciones para guardar el archivo .sql.
+- [OpcionesGuardarSvg](model/svgsaveoptions) : Representa las opciones para guardar el archivo .svg.
+- [OpcionesGuardarTxt](model/txtsaveoptions) : Representa las opciones para guardar el archivo .txt.
+- [XlsbGuardarOpciones](model/xlsbsaveoptions) : Representa las opciones para guardar el archivo .xlsb.
+- [XlsGuardarOpciones](model/xlssaveoptions) : Representa las opciones para guardar el archivo .xls.
+- [XpsGuardarOpciones](model/xpssaveoptions) : Representa las opciones para guardar el archivo .xps.
+- [AnalizarExcelRespuesta](model/analyzeexcelresponse)  :   
+- [Respuesta de forma de arco](model/arcshaperesponse)  :   
+- [Respuesta de filtro automático](model/autofilterresponse)  :   
+- [Respuesta de autoforma](model/autoshaperesponse)  :   
+- [Respuesta de autoformas](model/autoshapesresponse)  :   
+- [Respuesta del eje](model/axisresponse)  :   
+- [Respuesta fronteriza](model/borderresponse)  :   
+- [BotónRespuesta](model/buttonresponse)  :   
+- [CalcularFórmulaRespuesta](model/calculateformularesponse)  :   
+- [Respuesta celular](model/cellresponse)  :   
+- [CellsCloudFileInfoResponse](model/cellscloudfileinforesponse)  :   
+- [CélulasNubeRespuesta](model/cellscloudresponse)  :   
+- [CeldasDocumentoPropiedadesRespuesta](model/cellsdocumentpropertiesresponse)  :   
+- [CeldasDocumentoPropiedadRespuesta](model/cellsdocumentpropertyresponse)  :   
+- [CélulasDibujoRespuesta](model/cellsdrawingresponse)  :   
+- [Respuesta de las células](model/cellsresponse)  :   
+- [Respuesta del área del gráfico](model/chartarearesponse)  :   
+- [Respuesta de la tabla de datos del gráfico](model/chartdatatableresponse)  :   
+- [Respuesta de punto de gráfico](model/chartpointresponse)  :   
+- [Respuesta de puntos del gráfico](model/chartpointsresponse)  :   
+- [Respuesta del gráfico](model/chartresponse)  :   
+- [Respuesta de gráficos](model/chartsresponse)  :   
+- [Respuesta de casilla de verificación](model/checkboxresponse)  :   
+- [Respuesta de columna](model/columnresponse)  :   
+- [ColumnasRespuesta](model/columnsresponse)  :   
+- [Respuesta de cuadro combinado](model/comboboxresponse)  :   
+- [ComentarioRespuesta](model/commentresponse)  :   
+- [ComentarioFormaRespuesta](model/commentshaperesponse)  :   
+- [ComentariosRespuesta](model/commentsresponse)  :   
+- [Respuesta de formato condicional](model/conditionalformattingresponse)  :   
+- [Respuesta de formato condicional](model/conditionalformattingsresponse)  :   
+- [Respuesta de etiquetas de datos](model/datalabelsresponse)  :   
+- [DisplayUnitLabelRespuesta](model/displayunitlabelresponse)  :   
+- [Respuesta de DropBars](model/dropbarsresponse)  :   
+- [Respuesta de barra de error](model/errorbarresponse)  :   
+- [RellenarFormatoRespuesta](model/fillformatresponse)  :   
+- [Buscar respuesta](model/findresponse)  :   
+- [Respuesta del piso](model/floorresponse)  :   
+- [FormularioRespuesta](model/formresponse)  :   
+- [FormulariosRespuesta](model/formsresponse)  :   
+- [Respuesta de cuadro de grupo](model/groupboxresponse)  :   
+- [Respuesta de salto de página horizontal](model/horizontalpagebreakresponse)  :   
+- [Respuesta de saltos de página horizontal](model/horizontalpagebreaksresponse)  :   
+- [Respuesta de hipervínculo](model/hyperlinkresponse)  :   
+- [HipervínculosRespuesta](model/hyperlinksresponse)  :   
+- [EtiquetaRespuesta](model/labelresponse)  :   
+- [LeyendaEntradasRespuesta](model/legendentriesresponse)  :   
+- [Respuesta de entrada de leyenda](model/legendentryresponse)  :   
+- [LeyendaRespuesta](model/legendresponse)  :   
+- [LíneaRespuesta](model/lineresponse)  :   
+- [LíneaFormaRespuesta](model/lineshaperesponse)  :   
+- [Respuesta de cuadro de lista](model/listboxresponse)  :   
+- [ListaObjetoRespuesta](model/listobjectresponse)  :   
+- [ListaObjetosRespuesta](model/listobjectsresponse)  :   
+- [Respuesta de celda fusionada](model/mergedcellresponse)  :   
+- [Respuesta de celdas fusionadas](model/mergedcellsresponse)  :   
+- [NombreRespuesta](model/nameresponse)  :   
+- [NombresRespuesta](model/namesresponse)  :   
+- [OleObjectRespuesta](model/oleobjectresponse)  :   
+- [Respuesta de OleObjects](model/oleobjectsresponse)  :   
+- [Respuesta Ovalada](model/ovalresponse)  :   
+- [PáginaSeccionesRespuesta](model/pagesectionsresponse)  :   
+- [Respuesta de configuración de página](model/pagesetupresponse)  :   
+- [ImagenRespuesta](model/pictureresponse)  :   
+- [ImágenesRespuesta](model/picturesresponse)  :   
+- [Respuesta de campo dinámico](model/pivotfieldresponse)  :   
+- [Respuesta de filtro dinámico](model/pivotfilterresponse)  :   
+- [Respuesta de filtros dinámicos](model/pivotfiltersresponse)  :   
+- [Respuesta de tabla dinámica](model/pivottableresponse)  :   
+- [Tablas dinámicasRespuesta](model/pivottablesresponse)  :   
+- [PlotAreaResponse](model/plotarearesponse)  :   
+- [RadioBotónRespuesta](model/radiobuttonresponse)  :   
+- [RangoRespuesta](model/rangeresponse)  :   
+- [RangosRespuesta](model/rangesresponse)  :   
+- [RangoValorRespuesta](model/rangevalueresponse)  :   
+- [RectánguloFormaRespuesta](model/rectangleshaperesponse)  :   
+- [FilaRespuesta](model/rowresponse)  :   
+- [FilasRespuesta](model/rowsresponse)  :   
+- [Guardar archivos en la nubeResultadoRespuesta](model/savefilestocloudresultresponse)  :   
+- [GuardarRespuesta](model/saveresponse)  :   
+- [Respuesta de la barra de desplazamiento](model/scrollbarresponse)  :   
+- [SerieRespuesta](model/seriesesresponse)  :   
+- [SerieRespuesta](model/seriesresponse)  :   
+- [FormaRespuesta](model/shaperesponse)  :   
+- [FormasRespuesta](model/shapesresponse)  :   
+- [Respuesta de valor único](model/singlevalueresponse)  :   
+- [SparklineGroupRespuesta](model/sparklinegroupresponse)  :   
+- [SparklineGroupsRespuesta](model/sparklinegroupsresponse)  :   
+- [Respuesta giratoria](model/spinnerresponse)  :   
+- [Respuesta de resultado dividida](model/splitresultresponse)  :   
+- [EstiloRespuesta](model/styleresponse)  :   
+- [TareaRunResultRespuesta](model/taskrunresultresponse)  :   
+- [Respuesta de cuadro de texto](model/textboxresponse)  :   
+- [Respuesta de elemento de texto](model/textitemresponse)  :   
+- [Respuesta de elementos de texto](model/textitemsresponse)  :   
+- [TickLabelsRespuesta](model/ticklabelsresponse)  :   
+- [TítuloRespuesta](model/titleresponse)  :   
+- [Respuesta de línea de tendencia](model/trendlineresponse)  :   
+- [Líneas de tendenciaRespuesta](model/trendlinesresponse)  :   
+- [Respuesta de validación](model/validationresponse)  :   
+- [ValidacionesRespuesta](model/validationsresponse)  :   
+- [Respuesta de salto de página vertical](model/verticalpagebreakresponse)  :   
+- [Respuesta de saltos de página vertical](model/verticalpagebreaksresponse)  :   
+- [ParedesRespuesta](model/wallsresponse)  :   
+- [Libro de trabajoReemplazarRespuesta](model/workbookreplaceresponse)  :   
+- [Respuesta al libro de trabajo](model/workbookresponse)  :   
+- [Libro de trabajoConfiguraciónRespuesta](model/workbooksettingsresponse)  :   
+- [Libros de trabajoRespuesta](model/workbooksresponse)  :   
+- [Hoja de trabajoReemplazarRespuesta](model/worksheetreplaceresponse)  :   
+- [Hoja de trabajoRespuesta](model/worksheetresponse)  :   
+- [Hojas de trabajoRespuesta](model/worksheetsresponse)  :   
+- [AnalizarExcelSolicitud](model/analyzeexcelrequest)  :   
+- [Solicitud de conversión por lotes](model/batchconvertrequest) : Indica solicitud de conversión de archivos por lotes
+- [Solicitud de bloqueo por lotes](model/batchlockrequest) : Indica solicitud de archivo de bloqueo por lotes
+- [Solicitud de protección por lotes](model/batchprotectrequest) : Indica solicitud de archivo de protección por lotes
+- [Solicitud de división por lotes](model/batchsplitrequest)  :   
+- [Solicitud de filtro de color](model/colorfilterrequest) : Indica solicitud de filtro de color
+- [Convertir parámetro](model/convertparameter) : Indica convertir parámetro
+- [Crear solicitud de tabla dinámica](model/createpivottablerequest) : Indica crear solicitud de tabla dinámica
+- [Solicitud de limpieza de datos](model/datacleansingrequest) : una solicitud de limpieza de datos para un archivo de hoja de cálculo.
+- [Solicitud de deduplicación de datos](model/datadeduplicationrequest)  :   
+- [Solicitud de llenado de datos](model/datafillrequest)  :   
+- [Eliminar solicitud de filas incompletas](model/deleteincompleterowsrequest)  :   
+- [Importar solicitud Json](model/importjsonrequest) : Indica solicitud de importación de datos xml
+- [Importar solicitud XML](model/importxmlrequest) : Indica solicitud de importación de datos xml
+- [Solicitud de condición de coincidencia](model/matchconditionrequest) : Indica la condición de coincidencia que debe procesarse para el nombre del archivo.
+- [Solicitud de Contraseña](model/passwordrequest) : Se utiliza para la transferencia de datos de contraseña.
+- [Solicitud de campo de tabla dinámica](model/pivottablefieldrequest) : Indica solicitud de campo de tabla dinámica
+- [Solicitud de protección de libro de trabajo](model/protectworkbookrequest) : Indica solicitud de protección del libro de trabajo
+- [Solicitud de copia de rango](model/rangecopyrequest) : Indica solicitud de copia de rango
+- [RangeSetOutlineBorderRequest](model/rangesetoutlineborderrequest) Indica la solicitud de borde de contorno de conjunto de rango.
+- [Solicitud de estilo de conjunto de rango](model/rangesetstylerequest) : Indica la solicitud de estilo de configuración de rango.
+- [Solicitud de clasificación de rango](model/rangesortrequest) : Indica solicitud de clasificación de rango
+- [Solicitud total de tabla](model/tabletotalrequest) : Indica la solicitud total de la tabla
+- [Solicitud de marcador de agua de texto](model/textwatermarkerrequest) : Indica la solicitud de marcador de agua de texto.
+- [Solicitud de cifrado de libro de trabajo](model/workbookencryptionrequest) : Utilizado por solicitudes de cifrado/descifrado de libros.
+- [Solicitud de protección del libro de trabajo](model/workbookprotectionrequest) : Utilizado por solicitudes de protección de libros.
+- [Hoja de trabajoSolicitud de mudanza](model/worksheetmovingrequest) : Utilizado por solicitudes de movimiento de libros.
+- [Opciones de imagen o impresión](model/imageorprintoptions)  :   
+- [Fuente de renderizado](model/renderingfont)  :   
+- [RepresentaciónMarca de agua](model/renderingwatermark)  :   
+- [Campo dinámico](model/pivotfield)  :   
+- [Filtro pivote](model/pivotfilter) : Representa un PivotFilter en la colección PivotFilter.
+- [Elemento pivotante](model/pivotitem)  :   
+- [Tabla dinámica](model/pivottable)  :   
+- [Tablas dinamicas](model/pivottables)  :   
+- [Configuración de analizador personalizado](model/customparserconfig)  :   
+- [Import2DimensionDoubleArrayOption](model/import2dimensiondoublearrayoption)  :   
+- [Import2DimensionIntArrayOption](model/import2dimensionintarrayoption)  :   
+- [Import2DimensionStringArrayOption](model/import2dimensionstringarrayoption)  :   
+- [Valor de celda](model/cellvalue)  :   
+- [Opción ImportBatchData](model/importbatchdataoption)  :   
+- [Importar opción CSVData](model/importcsvdataoption)  :   
+- [Importar tipo de datos](model/importdatatype)  :   
+- [ImportarOpciónDoubleArray](model/importdoublearrayoption)  :   
+- [ImportarIntArrayOption](model/importintarrayoption)  :   
+- [ImportarOpción](model/importoption)  :   
+- [Importar opción de imagen](model/importpictureoption)  :   
+- [Posición de importación](model/importposition)  :   
+- [ImportStringArrayOption](model/importstringarrayoption)  :   
+- [Forma de arco](model/arcshape)  :   
+- [Área](model/area)  :   
+- [Autoforma](model/autoshape)  :   
+- [Autoformas](model/autoshapes)  :   
+- [Botón](model/button)  :   
+- [CélulasDibujo](model/cellsdrawing)  :   
+- [Caja](model/checkbox)  :   
+- [Caja combo](model/combobox)  :   
+- [ComentarioForma](model/commentshape)  :   
+- [Formato de relleno](model/fillformat)  :   
+- [Forma](model/form)  :   
+- [Formularios](model/forms)  :   
+- [Relleno degradado](model/gradientfill)  :   
+- [Parada de relleno de degradado](model/gradientfillstop)  :   
+- [Cuadro de grupo](model/groupbox)  :   
+- [Forma de grupo](model/groupshape)  :   
+- [Etiqueta](model/label)  :   
+- [Línea](model/line) : Encapsula el objeto que representa el formato de línea.
+- [formato de línea](model/lineformat)  :   
+- [Forma de línea](model/lineshape)  :   
+- [Cuadro de lista](model/listbox)  :   
+- [Objeto OLE](model/oleobject)  :   
+- [OleObjetos](model/oleobjects)  :   
+- [Oval](model/oval)  :   
+- [Relleno de patrón](model/patternfill)  :   
+- [Opción de formato de imagen](model/picformatoption)  :   
+- [Imagen](model/picture)  :   
+- [Fotos](model/pictures)  :   
+- [Boton de radio](model/radiobutton)  :   
+- [Forma rectangular](model/rectangleshape)  :   
+- [Barra de desplazamiento](model/scrollbar)  :   
+- [Efecto Sombra](model/shadoweffect)  :   
+- [Forma](model/shape)  :   
+- [formas](model/shapes)  :   
+- [Relleno sólido](model/solidfill)  :   
+- [Hilandero](model/spinner)  :   
+- [Caja de texto](model/textbox)  :   
+- [Relleno de textura](model/texturefill)  :   
+- [Opción de imagen de mosaico](model/tilepicoption)  :   
+- [Firma digital](model/digitalsignature) : Firma en el expediente.
+- [Eje](model/axis)  :   
+- [Cuadro](model/chart)  :   
+- [Área del gráfico](model/chartarea)  :   
+- [Tabla de datos del gráfico](model/chartdatatable)  :   
+- [Marco de gráfico](model/chartframe)  :   
+- [GráficoGlobalizaciónConfiguración](model/chartglobalizationsettings) : Representa la configuración de globalización del gráfico.
+- [Punto de gráfico](model/chartpoint)  :   
+- [Puntos de gráfico](model/chartpoints)  :   
+- [Gráficos](model/charts)  :   
+- [Forma del gráfico](model/chartshape) : Objeto de forma de gráfico
+- [Etiquetas de datos](model/datalabels)  :   
+- [Etiqueta de unidad de visualización](model/displayunitlabel)  :   
+- [Barras desplegables](model/dropbars)  :   
+- [Barra de error](model/errorbar)  :   
+- [Piso](model/floor)  :   
+- [Leyenda](model/legend)  :   
+- [Entradas de leyenda](model/legendentries)  :   
+- [Entrada de leyenda](model/legendentry)  :   
+- [Marcador](model/marker)  :   
+- [Área de parcela](model/plotarea)  :   
+- [Serie](model/series)  :   
+- [Artículos de serie](model/seriesitems)  :   
+- [minigráfico](model/sparkline) : un minigráfico representa un pequeño cuadro o gráfico en una celda de una hoja de trabajo que proporciona una representación visual de los datos.
+- [Grupo Minigráfico](model/sparklinegroup)  :   
+- [Grupos minigráficos](model/sparklinegroups) : Encapsula una colección de objetos Aspose.Cells.Charts.SparklineGroup.
+- [Etiquetas de marca](model/ticklabels)  :   
+- [Título](model/title)  :   
+- [Línea de tendencia](model/trendline)  :   
+- [Líneas de tendencia](model/trendlines)  :   
+- [Paredes](model/walls)  :   
+- [ColumnDataExceptionDescripción](model/columndataexceptiondescription)  :   
+- [Tipo de categoría de texto](model/textcategorytype)  :   
+- [Descripción de la columna analizada](model/analyzedcolumndescription) Cómo utilizar las propiedades de cada columna: actualmente divididas en línea de tiempo, línea de producto, línea de estadísticas numéricas Cómo presentar el producto, un plan unificado ¿Cómo resolver el problema de la digitalización completa? Texto completo ¿Cómo solucionarlo? Dos columnas: Texto, Número es la más fácil Tres columnas: Texto, Texto, Número texto, número, número --- fecha fecha; Fecha numérica; Numérico Digital ¿Qué pasa con cuatro columnas, cinco columnas?
+- [Resultado analizado](model/analyzedresult)  :   
+- [AnalizadoTablaDescripción](model/analyzedtabledescription)  :   
+- [Tipo de fuente de fecha](model/datesourcetype)  :   
+- [Tipo de salida sugerida](model/suggestedoutputtype)  :   
+- [AnalizarSugerencia](model/analyzesuggestion)  :   
+- [DescubrirGráfico](model/discoverchart)  :   
+- [DescubrirTabla dinámica](model/discoverpivottable)  :   
+- [Estadísticas de datos de Excel](model/exceldatastatistics)  :   
+- [Hoja de cálculoDatosEstadísticas](model/worksheetdatastatistics)  :   
+- [Error](model/error) : Error
+- [Error de detalles](model/errordetails) : Los detalles del error

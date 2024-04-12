@@ -1,15 +1,15 @@
 ﻿---
-title: Excel çalışma kitabının şifresini çözme
+title: Excel çalışma kutusunun şifresini çözün
 second_title: Aspose.Cells Cloud Documen
-linktitle: şifresini çöz
+linktitle: Şifreyi çöz
 type: docs
 url: /tr/workbook/decrypt/
 aliases: [/decrypt-excel-workbooks/]
 keywords: REST API, spreadsheets, excel, decryp
-description: "Cells.Cloud API for Excel çalıştır: Excel çalışma kitabının şifresini çöz"
+description: "Cells.Cloud API, Excel için çalışır: Excel çalışma kitabının şifresini çözer"
 weight: 50
 ---
-Bu REST API, bir Excel `workbook`'in şifresini çözer.
+Bu REST API, Excel `workbook`'in şifresini çözer.
 
 **Sorgu Parametresi**
 
@@ -18,16 +18,16 @@ Bu REST API, bir Excel `workbook`'in şifresini çözer.
 |dosya|sicim|Orijinal çalışma kitabı klasörü.|
 |depolamaAdı|sicim|Depolama adı.|
 
-**İstek Gövde Parametresi**
+**Gövde Parametresini Talep Et**
 
 |Parametre adı|Tip|Tanım|
 |:- |:- |:- |
-|şifreleme|Çalışma KitabıŞifreleme İsteği||
+|şifreleme|Çalışma Kitabı Şifreleme İsteği||
 
-**Çalışma KitabıŞifreleme İsteği**
+**Çalışma Kitabı Şifreleme İsteği**
 |Parametre adı|Tip|Tanım|
 |:- |:- |:- |
-|Şifreleme tipi|sicim|XOR/Uyumlu/EnhancedCryptographicProviderV1/StrongCryptographicProvider|
+|Şifreleme tipi|sicim|XOR/Compatible/EnhancedCryptographicProviderV1/StrongCryptographicProvider|
 |Anahtar Uzunluğu|tamsayı||
 |Şifre|sicim||
 
@@ -35,14 +35,14 @@ Bu REST API, bir Excel `workbook`'in şifresini çözer.
 ## DİNLENME API
 
 
-|**API**|**Tip**|**Tanım**|**Havalı Bağlantı**|
+|**API**|**Tip**|**Tanım**|**Swagger Bağlantısı**|
 |:- |:- |:- |:- |
-|/hücreler/{isim}/şifreleme|SİL|Bir belgenin şifresini çözme|[Şifre Çözme Belgesini Sil](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDecryptDocument)|
+|/hücreler/{isim}/şifreleme|SİL|Bir belgenin şifresini çözme|[Şifre Çöz Belgesini Sil](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDecryptDocument)|
 
 
- bu[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDecryptDocument) herkesin erişebileceği bir programlama arabirimi tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDecryptDocument) herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
 
- Kullanabilirsiniz**cURL** Aspose.Cells web hizmetlerine kolayca erişmek için komut satırı aracı. Aşağıdaki örnek, cURL ile Cloud API'e nasıl çağrı yapılacağını gösterir.
+ Kullanabilirsiniz**cURL** Aspose.Cells web hizmetlerine kolayca erişmek için komut satırı aracı. Aşağıdaki örnekte, cURL ile Cloud API'e nasıl çağrı yapılacağı gösterilmektedir.
 
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
@@ -77,9 +77,9 @@ curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/encryption" -H "ac
 
 ## Bulut SDK Ailesi
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, alt düzey ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen kontrol edin[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+ SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük düzeyli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanıza olanak tanır. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
 
-Aşağıdaki kod örnekleri, çeşitli SDK'lar kullanılarak Aspose.Cells web hizmetlerine nasıl çağrı yapılacağını gösterir:
+Aşağıdaki kod örnekleri, çeşitli SDK'ları kullanarak Aspose.Cells web hizmetlerine nasıl çağrı yapılacağını gösterir:
 
 
 {{< tabs tabTotal="11" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" tabName11="Swift" >}}

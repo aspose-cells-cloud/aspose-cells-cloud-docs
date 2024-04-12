@@ -1,5 +1,5 @@
 ﻿---
-title: Ta bort flera kalkylblad Excel
+title: Ta bort flera Excel kalkylblad
 second_title: Aspose.Cells Cloud Documen
 linktitle: Flera arbetsblad
 type: docs

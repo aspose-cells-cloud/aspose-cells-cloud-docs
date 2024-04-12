@@ -1,5 +1,5 @@
 ﻿---
-title: Almacenamiento
+title: almacenamiento
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/docker/storage/
@@ -56,7 +56,7 @@ c:\app\storageResource.json
 
 ```
 
-- **linux**
+- **Linux**
 
 ```linux
 
@@ -65,9 +65,9 @@ c:\app\storageResource.json
 
 ```
 
-##  Configuración de almacenamiento personalizado ##
+##  Configuración de almacenamiento personalizada ##
 
-Es necesario volver a especificar el perfil de almacenamiento para el archivo de imagen en la nube Aspose.Cells cuando el cliente necesite especificar la carpeta de almacenamiento.
+Es necesario volver a especificar el perfil de almacenamiento para el archivo de imagen de nube Aspose.Cells cuando el cliente necesite especificar la carpeta de almacenamiento.
 
 ``` powershell
 
@@ -76,4 +76,4 @@ docker run  -d  -v c:/data:c:/data  -p 47900:5000  -e LicensePublicKey=yourLicen
 ```
 
 **Documento de referencia** : 
-  - [Ejecutar ventana acoplable]( https://docs.docker.com/engine/reference/commandline/run/)
+  - [Ejecución de ventana acoplable]( https://docs.docker.com/engine/reference/commandline/run/)

@@ -6,34 +6,34 @@ type: docs
 url: /ru/convert/excel-to-csv/
 aliases: [/convert-excel-file-to-csv-in-cloud/]
 keywords: Convert excel files to csv files
-description: Aspose.Cells Cloud REST API поддерживает преобразование файлов Excel в файлы csv. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и swift.
+description: Aspose.Cells Cloud REST API поддерживает преобразование файлов Excel в файлы CSV. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 90
 ---
-Этот REST API `saveas` файл excel в CSV.
+Этот файл Excel REST API `saveas` преобразуется в CSV.
 
-[POST /cells/{имя}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) API позволяет сохранить файл MS Excel в формате CSV с дополнительными настройками и сохранить результат в хранилище.
+[POST/cells/{имя}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) API позволяет сохранить файл MS Excel в формате CSV с дополнительными настройками и сохранить результат в хранилище.
 
-Этот REST API `convert` файл excel в CSV.
+Этот файл Excel REST API `convert` преобразуется в CSV.
 
-[ПОСТАВИТЬ/ячейки/конвертировать](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) API позволяет преобразовать файл MS Excel в файл CSV с дополнительными настройками и сохранить результат в ответ.
+[PUT/ячейки/конвертировать](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) API позволяет конвертировать файл MS Excel в файл CSV с дополнительными настройками и сохранять результат в ответ.
 
-Этот REST API `export` файл excel в CSV.
+Этот файл Excel REST API `export` преобразуется в CSV.
 
-[ПОЛУЧИТЬ /ячейки/{имя}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook  ) API позволяет преобразовать файл MS Excel в файл CSV с дополнительными настройками и сохранить результат в ответ.
+[ПОЛУЧИТЬ /cells/{имя}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook  ) API позволяет конвертировать файл MS Excel в файл CSV с дополнительными настройками и сохранять результат в ответ.
 
 ## ОТДЫХ API
 
-|**API**|**Тип**|**Описание**|**Свэггер Ссылка**|
+|**API**|**Тип**|**Описание**|**Сваггер Ссылка**|
 |:- |:- |:- |:- |
-|/ячейки/конвертировать|ПОМЕЩАТЬ|Преобразует книгу из содержимого запроса в некоторый формат|[путконвертворккнига](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)|
-|/ячейки/{имя}|ПОЛУЧАТЬ|Экспорт книги в другой формат.|[GetWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)|
-|/cells/{имя}/saveAs|ПОЧТА|Экспорт книги в формат|[PostDocumentСохранить как](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)|
+|/ячейки/конвертировать|ПОМЕЩАТЬ|Преобразует книгу из содержимого запроса в некоторый формат.|[ПоложитьКонвертироватьWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)|
+|/cells/{имя}|ПОЛУЧАТЬ|Экспортирует книгу в другой формат.|[GetWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)|
+|/cells/{имя}/saveAs|ПОЧТА|Экспортировать книгу в формат|[ОпубликоватьДокументСохранить как](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)|
 
 
 
-Эти API определяют общедоступный программный интерфейс и позволяют выполнять REST-взаимодействия непосредственно из веб-браузера.
+Эти API определяют общедоступный программный интерфейс и позволяют выполнять взаимодействие с REST непосредственно из веб-браузера.
 
- Вы можете использовать**cURL** инструмент командной строки для простого доступа к веб-службам Aspose.Cells. В следующем примере показано, как совершать звонки в Cloud API с номером cURL.
+ Вы можете использовать**cURL** инструмент командной строки для легкого доступа к веб-службам Aspose.Cells. В следующем примере показано, как позвонить на Cloud API с помощью cURL.
 
 
 {{< tabs tabTotal="3" tabID="11" tabName11="convert" tabName12="saveas" tabName13="export" >}}
@@ -84,9 +84,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/book1.xlsx?format=html" \
 
 ## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK позаботится о низкоуровневых деталях и позволит вам сосредоточиться на задачах вашего проекта. Пожалуйста, ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) полный список Aspose.Cells Cloud SDK.
+ Использование SDK — лучший способ ускорить разработку. SDK заботится о деталях низкого уровня и позволяет вам сосредоточиться на задачах проекта. Пожалуйста, ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для получения полного списка Aspose.Cells Cloud SDK.
 
-В следующих примерах кода показано, как выполнять вызовы веб-служб Aspose.Cells с помощью различных SDK.
+Следующие примеры кода демонстрируют, как выполнять вызовы веб-служб Aspose.Cells с использованием различных SDK:
 
 
 

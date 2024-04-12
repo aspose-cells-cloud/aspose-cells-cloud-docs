@@ -3,7 +3,7 @@ title: Склад
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/docker/storage/
-description: Как установить место хранения около Aspose.Cells Облако для Docker
+description: Как установить место хранения Aspose.Cells Cloud для Docker
 weight: 30
 ---
 ##  Конфигурация хранилища по умолчанию ##
@@ -56,7 +56,7 @@ c:\app\storageResource.json
 
 ```
 
-- **линукс**
+- **Linux**
 
 ```linux
 
@@ -67,7 +67,7 @@ c:\app\storageResource.json
 
 ##  Пользовательская конфигурация хранилища ##
 
-Необходимо повторно указать профиль хранилища для файла облачного образа Aspose.Cells, когда клиенту необходимо указать папку для хранения.
+Необходимо повторно указать профиль хранения для файла образа облака Aspose.Cells, если клиент указывает папку хранения.
 
 ``` powershell
 
@@ -76,4 +76,4 @@ docker run  -d  -v c:/data:c:/data  -p 47900:5000  -e LicensePublicKey=yourLicen
 ```
 
 **Справочный документ** : 
-  - [Докер Бег]( https://docs.docker.com/engine/reference/commandline/run/)
+  - [Докер Запуск]( https://docs.docker.com/engine/reference/commandline/run/)

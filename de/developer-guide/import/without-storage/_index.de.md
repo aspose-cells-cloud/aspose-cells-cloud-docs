@@ -26,9 +26,9 @@ POST https://api.aspose.cloud/v3.0/cells/import
 | Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
 |:- |:- |:- |:- |
 | Datei| Datei| Formulardaten| Datei zum Hochladen|
-| ImportOption| Importoptionen| HTTPBody| IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/Picture|
+| ImportOption| Importoptionen|HTTPBody| IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/Picture|
 
-**Die Parameter der Importdatenoptionen**sind beschrieben in[der Referenzlink](/cells/de/import/#import-data-option-parameter).
+**Die Parameter der Importdatenoptionen** sind beschrieben in[der Referenzlink](/cells/de/import/#import-data-option-parameter).
 
 
 

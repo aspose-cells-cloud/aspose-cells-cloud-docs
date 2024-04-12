@@ -12,7 +12,7 @@ weight: 30
 
 |**API**|**类型**|**描述**|**资源链接**|
 |:- |:- |:- |:- |
-|/细胞/任务/运行任务|邮政|运行任务|[运行后任务](https://apireference.aspose.cloud/cells/#/Task/PostRunTask)|
+|/细胞/任务/runtask|邮政|运行任务|[运行后任务](https://apireference.aspose.cloud/cells/#/Task/PostRunTask)|
 
 
 这[开放API规范](https://apireference.aspose.cloud/cells/#/Task/PostRunTask)定义了一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。

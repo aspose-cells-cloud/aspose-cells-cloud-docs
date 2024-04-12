@@ -1,5 +1,5 @@
 ﻿---
-title: TagLis
+title: EtiquetaLis
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/docker/tag-list/
@@ -8,25 +8,25 @@ weight: 30
 ---
 ##  Windows Servidor 2016 Imágenes ##
 
-Etiquetas | Arquitectura | Dockerfile | Observación
+Etiquetas | Arquitectura | Archivo Docker | Observación
 ---|:--:|:--:|---:
-ltsc2016.23.5.0 | x64 | Sin archivo acoplable | Detenga la actualización. La versión final es la 23.5.0
+ltsc2016.23.5.0 | x64 | Sin archivo Docker | Detenga la actualización. La versión final es 23.5.0
 
 
 ##  Windows Servidor 2019 Imágenes ##
 
-Etiquetas | Arquitectura | Dockerfile | Observación
+Etiquetas | Arquitectura | Archivo Docker | Observación
 ---|:--:|:--:|---:
-ltsc2019.23.11.0 | x64 | Sin archivo acoplable |
+ltsc2019.23.11.0 | x64 | Sin archivo Docker |
 
 ##  Windows Servidor 2022 Imágenes ##
 
-Etiquetas | Arquitectura | Dockerfile | Observación
+Etiquetas | Arquitectura | Archivo Docker | Observación
 ---|:--:|:--:|---:
- ltsc2022.23.11.0 | x64 | Sin archivo acoplable |
+ ltsc2022.23.11.0 | x64 | Sin archivo Docker |
 
 ##  Imágenes de Linux ##
 
-Etiquetas | Arquitectura | Dockerfile | Observación
+Etiquetas | Arquitectura | Archivo Docker | Observación
 ---|:--:|:--:|---:
-linux.23.11.0 | x64 | Sin archivo acoplable |
+Linux.23.11.0 | x64 | Sin archivo Docker |

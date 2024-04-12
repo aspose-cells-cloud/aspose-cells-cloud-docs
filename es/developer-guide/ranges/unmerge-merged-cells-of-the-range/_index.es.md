@@ -1,18 +1,18 @@
 ﻿---
-title: Descombinar celdas combinadas del rango
+title: Separar las celdas fusionadas del rango
 second_title: Aspose.Cells Cloud Documen
-linktitle: Deshacer
+linktitle: Desintegración
 type: docs
 url: /es/ranges/unmerge/
 aliases: [/unmerge-merged-cells-of-the-range/]
 keywords: Unmerge merged cells of the range on an Excel worksheet
-description: Aspose.Cells Cloud REST API admite la separación de celdas combinadas del rango en una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift
+description: Aspose.Cells Cloud REST API admite la separación de celdas fusionadas del rango en una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 20
 ---
-Este REST API indica que se deshacen las celdas combinadas de este rango en una hoja de trabajo Excel.
+Este REST API indica separar las celdas fusionadas de este rango en una hoja de trabajo Excel.
             
  
-## RESET API
+## RSET API
  
 ```bash
  
@@ -23,11 +23,11 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/unm
  
 | Nombre del parámetro| Tipo| Ruta/Cadena de consulta/Cuerpo HTTP|Descripción|
 |:- |:- |:- |:- |
-| nombre| cadena| camino| nombre del libro|
-| hojaNombre| cadena| camino| nombre de la hoja de trabajo|
+| nombre| cadena| camino| nombre del libro de trabajo|
+| nombre de la hoja| cadena| camino| nombre de la hoja de trabajo|
 | rango|| cuerpo| rango en la hoja de trabajo|
 | carpeta| cadena| consulta| Carpeta del libro de trabajo.|
-| NombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
+| nombredealmacenamiento| cadena| consulta| nombre del almacenamiento.|
  
  El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeUnmerge) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
  
@@ -63,11 +63,11 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/
  
 {{< /tabs >}}
  
-## Familia SDK de la nube
+## Familia de SDK en la nube
  
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se ocupa de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor, echa un vistazo a la[repositorio GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de Cloud.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor revisa el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de nube.
  
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código demuestran cómo realizar llamadas a servicios web Aspose.Cells utilizando varios SDK:
  
 
 {{< tabs tabTotal="4" tabID="4" tabName1="PHP" tabName2="Ruby" tabName3="Objective C" tabName4="Go" >}}

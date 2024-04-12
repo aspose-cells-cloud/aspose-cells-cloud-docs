@@ -1,17 +1,17 @@
 ﻿---
-title: نسخ الأعمدة على Excel كتيب
+title: انسخ الأعمدة في ورقة العمل Excel
 second_title: Aspose.Cells Cloud Documen
 linktitle: شرطي
 type: docs
 url: /ar/columns/copy/
 aliases: [/copy-columns-in-excel-worksheet/,/copy-columns-in-an-excel-worksheet/]
 keywords: Copy column on an Excel workshee
-description: Aspose.Cells Cloud REST API يدعم نسخ العمود في ورقة عمل Excel. SDK يدعم أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
+description: Aspose.Cells Cloud REST API يدعم نسخ العمود في ورقة عمل Excel. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 30
 ---
 نسخة REST API هذه `columns` في ورقة عمل Excel.
 
-## RSET API
+## رسيت API
  
 ```bash
  
@@ -20,17 +20,17 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/colu
 ```
  معلمات الطلب هي:
  
-| اسم المعلمة| يكتب| المسار / سلسلة الاستعلام / HTTPBody|وصف|
+| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/HTTPBody|وصف|
 |:- |:- |:- |:- |
 | اسم| خيط| طريق|اسم المصنف.|
 | اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| المصدر| عدد صحيح| استفسار| فهرس عمود المصدر|
-|الوجهة| عدد صحيح| استفسار| فهرس عمود الوجهة|
-| العمود| عدد صحيح| استفسار| رقم العمود المنسوخ|
+| sourceColumnIndex| عدد صحيح| استفسار| فهرس العمود المصدر|
+|DestinationColumnIndex| عدد صحيح| استفسار| فهرس عمود الوجهة|
+| رقم العمود| عدد صحيح| استفسار| رقم العمود المنسوخ|
 | ورقة عمل| خيط| استفسار||
-| مجلد| خيط| استفسار| مجلد المستند.|
+| مجلد| خيط| استفسار| مجلد المستندات.|
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostCopyWorksheetColumns) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
+ ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostCopyWorksheetColumns) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك تنفيذ تفاعلات REST مباشرة من متصفح الويب.
 
  يمكنك استخدام**cURL** أداة سطر الأوامر للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
 
@@ -66,9 +66,9 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ce
 
 ## عائلة Cloud SDK
 
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. يعتني SDK بالتفاصيل منخفضة المستوى ويتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة من Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام حزم SDK متنوعة:
+توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
 
 
 

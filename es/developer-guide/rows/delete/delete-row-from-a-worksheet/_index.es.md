@@ -1,17 +1,17 @@
 ﻿---
 title: Eliminar fila en una hoja de trabajo Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: Ro
+linktitle: ro
 type: docs
 url: /es/rows/delete/row/
 aliases: [/delete-row-from-a-worksheet/]
 keywords: Delete rows on an Excel workshee
-description: Aspose.Cells Cloud REST API admite la eliminación de filas en una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift
+description: Aspose.Cells Cloud REST API admite la eliminación de filas en una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 80
 ---
 Este REST API indica eliminar una fila en una hoja de trabajo Excel.
  
-## RESET API
+## RSET API
  
 ```bash
  
@@ -22,11 +22,11 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/ro
  
 | Nombre del parámetro| Tipo| Ruta/Cadena de consulta/Cuerpo HTTP|Descripción|
 |:- |:- |:- |:- |
-| nombre| cadena| camino|El nombre del libro.|
-| hojaNombre| cadena| camino| La hoja de trabajo bame.|
+| nombre| cadena| camino|El nombre del libro de trabajo.|
+| nombre de la hoja| cadena| camino| La hoja de trabajo es mala.|
 | índice de fila| entero| camino| El índice de fila.|
 | carpeta| cadena| consulta| La carpeta de documentos.|
-| NombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
+| nombredealmacenamiento| cadena| consulta| nombre del almacenamiento.|
  
  El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetRow) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
  
@@ -62,23 +62,23 @@ curl -v "http://api.aspose.cloud/v3.0/cells/" \
  
 {{< /tabs >}}
  
-## Familia SDK de la nube
+## Familia de SDK en la nube
  
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se ocupa de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor, echa un vistazo a la[repositorio GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de Cloud.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor revisa el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de nube.
  
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código demuestran cómo realizar llamadas a servicios web Aspose.Cells utilizando varios SDK:
  
  
  
 
 ## **Introducción**
-Este ejemplo muestra cómo eliminar una fila de una hoja de trabajo Excel usando Aspose.Cells Cloud API en sus aplicaciones. Puede usar nuestro REST API con cualquier idioma: .NET, Java, PHP, Ruby, Rails, Python, jQuery y muchos más.
+Este ejemplo muestra cómo eliminar una fila de una hoja de trabajo Excel usando Aspose.Cells Cloud API en sus aplicaciones. Puedes usar nuestro REST API con cualquier idioma: .NET, Java, PHP, Ruby, Rails, Python, jQuery y muchos más.
 
 ## **API Información**
 
 |**API**|**Tipo**|**Descripción**|**Enlace de recursos**|
 |:- |:- |:- |:- |
-|/celdas/{nombre}/hojas de trabajo/{nombrehoja}/celdas/filas|CORREO|Eliminar filas de una hoja de trabajo Excel|[DeleteWorksheetRows](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetRows)|
+|/celdas/{nombre}/hojas de trabajo/{nombre de la hoja}/celdas/filas|CORREO|Eliminar filas de una hoja de trabajo Excel|[Eliminar filas de hoja de trabajo](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetRows)|
 ### **cURL Ejemplo**
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
@@ -109,8 +109,8 @@ curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/
 {{< /tab >}}
 
 {{< /tabs >}}
-## **Fuente SDK**
-Los SDK de la nube Aspose.Cells se pueden descargar desde la siguiente página:[SDK disponibles](/cells/es/available-sdks/)
+## **Fuente del SDK**
+Los SDK de nube Aspose.Cells se pueden descargar desde la siguiente página:[SDK disponibles](/cells/es/available-sdks/)
 ### **Ejemplos de SDK**
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 

@@ -25,7 +25,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobject
 |:- |:- |:- |:- |
 | namn| sträng| väg| Dokument namn.|
 | arknamn| sträng| väg| Kalkylbladets namn.|
-| listObjectIndex| heltal| väg|lista Objektindex|
+| listObjectIndex| heltal| väg| lista Objektindex|
 | listObjekt|| kropp| listObject dto i förfrågningskroppen.|
 | mapp| sträng| fråga| Dokumentets mapp.|
 | lagringsnamn| sträng| fråga| lagringsnamn.|

@@ -29,7 +29,7 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/importjson
 | isim| sicim| Çalışma kitabı adı|
 | importJsonRequest| sınıf| Json isteğini içe aktarın.|
 | şifre| sicim| Çalışma kitabının şifresi.|
-| dosya| sicim| Orijinal çalışma kitabı klasörü.|
+| dosya| sicim|Orijinal çalışma kitabı klasörü.|
 | depolamaAdı| sicim| Depolama adı.|
 | çıkış yolu| sicim| Çıkış dosyası yolu.|
 | outStorageName| sicim| Çıkış dosyası için depolama adı.|
@@ -56,7 +56,7 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/importjson
 
 ## Bulut SDK Ailesi
 
-SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük düzeyli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanıza olanak tanır. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+ SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük düzeyli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanıza olanak tanır. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
 
 Aşağıdaki kod örnekleri, çeşitli SDK'ları kullanarak Aspose.Cells web hizmetlerine nasıl çağrı yapılacağını gösterir:
 

@@ -1,20 +1,20 @@
 ﻿---
-title: دعم ملف الطلب في مهمة AP
+title: ملف طلب الدعم في مهمة AP
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/tasks/support-request-file/
 aliases: [/support-request-file-in-task-api/]
 keywords: REST API, task, request, spreadsheets, exce
-description: "Cells.Cloud API لـ Excel تعمل: ملف طلب دعم المهام"
+description: "Cells.Cloud API لـ Excel تشغيل: ملف طلب دعم المهام"
 weight: 10
 ---
-## REST API
+## بقية API
 
 |**API**|**يكتب**|**وصف**|**رابط الموارد**|
 |:- |:- |:- |:- |
-|/ خلايا / مهمة / runtask|بريد|تشغيل المهمة|[PostRunTask](https://apireference.aspose.cloud/cells/#/Task/PostRunTask)|
+|/الخلايا/المهمة/runtask|بريد|تشغيل المهمة|[PostRunTask](https://apireference.aspose.cloud/cells/#/Task/PostRunTask)|
 
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Task/PostRunTask) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
+ ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Task/PostRunTask) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك تنفيذ تفاعلات REST مباشرة من متصفح الويب.
 
  يمكنك استخدام**cURL** أداة سطر الأوامر للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
 
@@ -45,9 +45,9 @@ HttpResponseMessage with the operation result.
 
 ## عائلة Cloud SDK
 
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. يعتني SDK بالتفاصيل منخفضة المستوى ويتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة من Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
 
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام حزم SDK متنوعة:
+توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
 
 {{< tabs tabTotal="1" tabID="4" tabName1="PHP" >}}
 

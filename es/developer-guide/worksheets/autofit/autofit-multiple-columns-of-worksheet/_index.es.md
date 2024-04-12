@@ -1,17 +1,17 @@
 ﻿---
-title: Ajuste automático de varias columnas en una hoja de trabajo Excel
+title: Ajustar automáticamente varias columnas en una hoja de trabajo Excel
 second_title: Aspose.Cells Cloud Documen
 linktitle: Columna
 type: docs
 url: /es/worksheets/autofit/columns/
 aliases: [/autofit-multiple-columns-of-worksheet/]
 keywords: Autofit columns on an Excel workboo
-description: Aspose.Cells Cloud REST API admite columnas de ajuste automático en un libro de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift
+description: Aspose.Cells Cloud REST API admite el ajuste automático de columnas en un libro de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 20
 ---
- Este REST API indica autoajustar `multiple columns` en una hoja de trabajo Excel.
+ Este REST API indica el ajuste automático de `multiple columns` en una hoja de trabajo Excel.
  
-## RESET API
+## RSET API
  
 ```bash
  
@@ -23,14 +23,14 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitcol
 | Nombre del parámetro| Tipo| Ruta/Cadena de consulta/Cuerpo HTTP|Descripción|
 |:- |:- |:- |:- |
 | nombre| cadena| camino||
-| hojaNombre| cadena| camino||
+| nombre de la hoja| cadena| camino||
 | primera columna| entero| consulta||
 | última columna| entero| consulta||
-| AutoFitterOptions|| cuerpo||
+| opciones de autoFitter|| cuerpo||
 | primera fila| entero| consulta||
 | última fila| entero| consulta||
 | carpeta| cadena| consulta||
-| NombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
+| nombredealmacenamiento| cadena| consulta| nombre del almacenamiento.|
  
  El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/Worksheets/PostAutofitWorksheetColumns) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
  
@@ -66,11 +66,11 @@ curl -v "http://api.aspose.cloud/v3.0/cells/sampleAutoFit.xlsx/worksheets/Sheet1
  
 {{< /tabs >}}
  
-## Familia SDK de la nube
+## Familia de SDK en la nube
  
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se ocupa de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor, echa un vistazo a la[repositorio GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de Cloud.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor revisa el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de nube.
  
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código demuestran cómo realizar llamadas a servicios web Aspose.Cells utilizando varios SDK:
  
 
 {{< tabs tabTotal="2" tabID="4" tabName1="C#" tabName2="Go" >}}

@@ -1,13 +1,13 @@
 ﻿---
-title: Toplu Konum
+title: Toplu Loc
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/batch/lock
 keywords: Batch lock of multiple Excel files
-description: Aspose.Cells Bulut API, birden çok excel dosyasının toplu olarak kilitlenmesini destekler. SDK, geliştirme dili türlerini destekler. Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift'i içerir
+description: Aspose.Cells Bulut API, birden fazla excel dosyasının toplu kilidini destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 100
 ---
-Bu REST API, `batch lock`'e uygun dosyaları belirtir.
+Bu REST API, uygun dosyaların `batch lock`'ini gösterir.
  
 ## RSET API
  
@@ -24,15 +24,15 @@ POST http://api.aspose.cloud/v3.0/cells/batch/lock
 
 **BatchLockRequest Özellikleri**
  
-İsim | Tür | Açıklama | notlar
+İsim | Tür | Açıklama | Notlar
 ------------ | ------------- | ------------- | -------------
- KaynakKlasör | dizi | | [isteğe bağlı]Maç Koşulu | MatchConditionRequest | | [isteğe bağlı]Şifre | dizi | | [isteğe bağlı]Dış Klasör | dizi | | [isteğe bağlı]**MatchConditionRequest Özellikleri**
+ KaynakKlasörü | dize | | [isteğe bağlı]Eşleşme Durumu | Eşleşme DurumuTalebi | | [isteğe bağlı]Şifre | dize | | [isteğe bağlı]ÇıkışKlasörü | dize | | [isteğe bağlı]**MatchConditionRequest Özellikleri**
  
-İsim | Tür | Açıklama | notlar
+İsim | Tür | Açıklama | Notlar
 ------------ | ------------- | ------------- | -------------
- Normal İfade Modeli | dizi | | [isteğe bağlı]FullMatchKoşulları | dizi[]| | [isteğe bağlı][OpenAPI Spesifikasyonu](https://reference.aspose.cloud/cells/#/Batch/PostBatchLock) herkesin erişebileceği bir programlama arabirimi tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+ Normal Regex Deseni | dize | | [isteğe bağlı]Tam Eşleşme Koşulları | dize[]| | [isteğe bağlı][OpenAPI Spesifikasyonu](https://reference.aspose.cloud/cells/#/Batch/PostBatchLock) herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
  
-Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Cloud API'e nasıl çağrı yapılacağını gösterir.
+Aspose.Cells web servislerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnekte, cURL ile Cloud API'e nasıl çağrı yapılacağı gösterilmektedir.
  
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
  
@@ -66,9 +66,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/batch/lock" \
  
 ## Bulut SDK Ailesi
  
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, alt düzeydeki ayrıntılarla ilgilenir ve kilitleme görevlerinize odaklanmanızı sağlar. Lütfen kontrol edin[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+ SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük düzeyli ayrıntılarla ilgilenir ve kilitleme görevlerinize odaklanmanıza olanak tanır. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
  
-Aşağıdaki kod örnekleri, çeşitli SDK'lar kullanılarak Aspose.Cells web hizmetlerine nasıl çağrı yapılacağını gösterir:
+Aşağıdaki kod örnekleri, çeşitli SDK'ları kullanarak Aspose.Cells web hizmetlerine nasıl çağrı yapılacağını gösterir:
  
  
   

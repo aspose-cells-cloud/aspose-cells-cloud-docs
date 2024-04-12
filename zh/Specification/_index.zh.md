@@ -1,0 +1,739 @@
+﻿---
+title: 规格
+second_title: Aspose.Cells Cloud Documen
+type: docs
+weight: 50
+---
+# Aspose.Cells 云 API 运营
+
+- [后分析Excel](operation/postanalyzeexcel) ：对Excel文件中的数据进行业务分析。
+- [获取工作表自动过滤器](operation/getworksheetautofilter)：从工作表中检索自动过滤器的描述。
+- [放置工作表日期过滤器](operation/putworksheetdatefilter)：在工作表中应用日期过滤器。
+- [放置工作表过滤器](operation/putworksheetfilter)：为工作表中的列添加过滤器。
+- [把工作表图标过滤器](operation/putworksheeticonfilter)：在工作表中添加图标过滤器。
+- [PutWorksheet自定义过滤器](operation/putworksheetcustomfilter)：在工作表中使用自定义条件过滤列表。
+- [PutWorksheet动态过滤器](operation/putworksheetdynamicfilter)：在工作表中添加动态过滤器。
+- [PutWorksheetFilterTop10](operation/putworksheetfiltertop10) ：过滤工作表列表中的前 10 项。
+- [PutWorksheet颜色过滤器](operation/putworksheetcolorfilter)：在工作表中添加滤色器。
+- [工作表后匹配空白](operation/postworksheetmatchblanks)：匹配列表中的所有空白单元格。
+- [后工作表匹配非空白](operation/postworksheetmatchnonblanks)：匹配列表中所有非空白单元格。
+- [工作表后自动筛选刷新](operation/postworksheetautofilterrefresh)：刷新工作表中的自动过滤器。
+- [删除工作表日期过滤器](operation/deleteworksheetdatefilter)：删除工作表中的日期过滤器。
+- [删除工作表过滤器](operation/deleteworksheetfilter)：删除工作表中某列的过滤器。
+- [获取工作表自动形状](operation/getworksheetautoshapes)：获取工作表中的自动形状描述。
+- [获取带有格式的工作表自动形状](operation/getworksheetautoshapewithformat)：获取某种格式的自动形状描述。
+- [批量转换后](operation/postbatchconvert)：批量转换满足特定匹配条件的文件。
+- [后批量保护](operation/postbatchprotect)：批量保护符合特定匹配条件的文件。
+- [后批量锁定](operation/postbatchlock)：批量锁定符合特定匹配条件的文件。
+- [批量解锁后](operation/postbatchunlock)：批量解锁满足特定匹配条件的文件。
+- [后批分割](operation/postbatchsplit)：批量分割满足特定匹配条件的文件。
+- [帖子清除内容](operation/postclearcontents)：清除工作表中单元格区域内容。
+- [后清除格式](operation/postclearformats)：清除工作表中的单元格格式。
+- [更新后工作表范围样式](operation/postupdateworksheetrangestyle)：更新工作表中的单元格区域样式。
+- [工作表合并后](operation/postworksheetmerge)：合并工作表中的单元格。
+- [后工作表取消合并](operation/postworksheetunmerge)：取消合并工作表中的单元格。
+- [获取工作表单元格](operation/getworksheetcells)：以指定格式检索单元格描述。
+- [获取工作表单元格](operation/getworksheetcell) ：使用工作表中的单元格引用或方法名称检索单元格数据。
+- [获取工作表单元格样式](operation/getworksheetcellstyle)：检索工作表中的单元格样式描述。
+- [后工作表单元格设置值](operation/postworksheetcellsetvalue)：使用工作表中的单元格名称设置单元格值。
+- [更新后工作表单元格样式](operation/postupdateworksheetcellstyle)：使用工作表中的单元格名称设置单元格样式。
+- [后设置单元格范围值](operation/postsetcellrangevalue)：设置工作表中的范围值。
+- [将单元格复制到单元格后](operation/postcopycellintocell)：将数据从工作表中的源单元格复制到目标单元格。
+- [获取CellHtmlString](operation/getcellhtmlstring) ：检索包含该单元格中的数据和特定格式的HTML字符串。
+- [PostSetCellHtmlString](operation/postsetcellhtmlstring) ：在此单元格中设置包含数据和特定格式的HTML字符串。
+- [后单元格计算](operation/postcellcalculate)：计算工作表中的单元格公式。
+- [邮政单元字符](operation/postcellcharacters)：设置工作表中的单元格字符。
+- [获取工作表列](operation/getworksheetcolumns)：检索工作表列的描述。
+- [PostSetWorksheetColumnWidth](operation/postsetworksheetcolumnwidth) ：设置工作表列宽。
+- [获取工作表列](operation/getworksheetcolumn) ：按列索引检索工作表列数据。
+- [放置插入工作表列](operation/putinsertworksheetcolumns)：在工作表中插入工作表列。
+- [删除工作表列](operation/deleteworksheetcolumns)：删除工作表中的工作表列。
+- [发布隐藏工作表列](operation/posthideworksheetcolumns)：隐藏工作表中的工作表列。
+- [发布取消隐藏工作表列](operation/postunhideworksheetcolumns)：取消隐藏工作表中的工作表列。
+- [发布组工作表列](operation/postgroupworksheetcolumns)：对工作表中的工作表列进行分组。
+- [发布取消分组工作表列](operation/postungroupworksheetcolumns)：取消工作表列的分组。
+- [后复制工作表列](operation/postcopyworksheetcolumns)：将数据从工作表中的源列复制到目标列。
+- [帖子栏样式](operation/postcolumnstyle)：设置工作表中的列样式。
+- [获取工作表行](operation/getworksheetrows)：检索工作表中行的描述。
+- [获取工作表行](operation/getworksheetrow) ：通过工作表中行的索引检索行数据。
+- [删除工作表行](operation/deleteworksheetrow) ：删除工作表中的一行。
+- [删除工作表行](operation/deleteworksheetrows) ：删除工作表中的多行。
+- [放置插入工作表行](operation/putinsertworksheetrows)：在工作表中插入几个新行。
+- [放置插入工作表行](operation/putinsertworksheetrow) ：在工作表中插入新行。
+- [更新后工作表行](operation/postupdateworksheetrow)：更新工作表中的行高。
+- [发布隐藏工作表行](operation/posthideworksheetrows)：隐藏工作表中的行。
+- [发布取消隐藏工作表行](operation/postunhideworksheetrows)：取消隐藏工作表中的行。
+- [后组工作表行](operation/postgroupworksheetrows)：对工作表中的行进行分组。
+- [发布取消分组工作表行](operation/postungroupworksheetrows)：取消工作表中行的分组。
+- [后复制工作表行](operation/postcopyworksheetrows)：复制工作表中特定整行的数据和格式。
+- [后行样式](operation/postrowstyle)：将格式应用于工作表中的整行。
+- [GetCellsCloudServicesHealthCheck](operation/getcellscloudserviceshealthcheck)：以指定格式检索单元格描述。
+- [获取CellsCloudServiceStatus](operation/getcellscloudservicestatus) ：Aspose.Cells 云服务健康状态检查。
+- [获取图表区域](operation/getchartarea)：检索工作表中的图表区域描述。
+- [获取图表区域填充格式](operation/getchartareafillformat)：检索工作表中的图表区域填充格式描述。
+- [获取图表区域边框](operation/getchartareaborder)：检索图表区域边框描述。
+- [获取工作表图表](operation/getworksheetcharts)：检索工作表中图表的描述。
+- [获取工作表图表](operation/getworksheetchart)：检索指定格式的图表。
+- [把工作表图表](operation/putworksheetchart)：在工作表中添加新图表。
+- [删除工作表图表](operation/deleteworksheetchart) ：按索引删除工作表中的图表。
+- [发布工作表图表](operation/postworksheetchart)：更新工作表中的图表属性。
+- [获取工作表图表图例](operation/getworksheetchartlegend)：检索工作表中的图表图例描述。
+- [发布工作表图表图例](operation/postworksheetchartlegend)：更新工作表中的图表图例。
+- [把工作表图表图例](operation/putworksheetchartlegend)：在工作表中显示图表图例。
+- [删除工作表图表图例](operation/deleteworksheetchartlegend)：隐藏工作表中的图表图例。
+- [删除工作表图表](operation/deleteworksheetcharts)：清除工作表中的图表。
+- [获取工作表图表标题](operation/getworksheetcharttitle)：检索工作表中的图表标题描述。
+- [发布工作表图表标题](operation/postworksheetcharttitle)：更新工作表中的图表标题。
+- [把工作表图表标题](operation/putworksheetcharttitle)：在工作表中设置图表标题。
+- [删除工作表图表标题](operation/deleteworksheetcharttitle)：隐藏工作表中的图表标题。
+- [获取图表系列轴](operation/getchartseriesaxis)：检索图表中图表系列轴的描述。
+- [获取图表类别轴](operation/getchartcategoryaxis)：检索图表中图表系列轴的描述。
+- [获取图表值轴](operation/getchartvalueaxis)：检索图表中的图表值轴。
+- [获取图表第二类轴](operation/getchartsecondcategoryaxis)：检索图表中的图表第二类轴
+- [获取ChartSecondValueAxis](operation/getchartsecondvalueaxis) ：检索图表中的第二个值轴。
+- [柱状图系列轴](operation/postchartseriesaxis)：更新图表中的图表系列轴。
+- [帖子图表类别轴](operation/postchartcategoryaxis)：更新图表中的图表类别轴。
+- [柱状图值轴](operation/postchartvalueaxis)：更新图表中的图表数值轴。
+- [帖子图表第二类轴](operation/postchartsecondcategoryaxis)：更新图表中的图表第二类别轴。
+- [柱状图第二值轴](operation/postchartsecondvalueaxis)：更新图表中的图表第二个值轴。
+- [获取工作表条件格式](operation/getworksheetconditionalformattings)：检索工作表中条件格式的描述。
+- [获取工作表条件格式](operation/getworksheetconditionalformatting)：检索工作表中的条件格式描述。
+- [PutWorksheet条件格式](operation/putworksheetconditionalformatting)：在工作表中添加条件格式。
+- [放置工作表格式条件](operation/putworksheetformatcondition)：在工作表中添加格式条件。
+- [PutWorksheetFormatConditionArea](operation/putworksheetformatconditionarea) ：在工作表中添加格式条件的单元格区域。
+- [PutWorksheetFormatCondition条件](operation/putworksheetformatconditioncondition)：为工作表中的格式条件添加条件。
+- [删除工作表条件格式](operation/deleteworksheetconditionalformattings)：清除工作表中的所有条件格式。
+- [删除工作表条件格式](operation/deleteworksheetconditionalformatting) ：删除条件格式。
+- [删除工作表条件格式设置区域](operation/deleteworksheetconditionalformattingarea)：从条件格式中删除单元格区域。
+- [获取工作簿](operation/getworkbook)：检索各种格式的工作簿。
+- [PutConvert工作簿](operation/putconvertworkbook)：将工作簿从请求的内容转换为不同格式的文件。
+- [发布工作簿另存为](operation/postworkbooksaveas)：以各种格式保存Excel文件。
+- [将工作簿转换为 PDF 后](operation/postconvertworkbooktopdf)：将Excel文件转换为PDF文件。
+- [PostConvertWorkbookToPNG](operation/postconvertworkbooktopng)：将Excel文件转换为PNG文件。
+- [PostConvertWorkbookToDocx](operation/postconvertworkbooktodocx) ：将Excel文件转换为Docx文件。
+- [PostConvertWorkbookToPptx](operation/postconvertworkbooktopptx) ：将 Excel 文件转换为 Pptx 文件。
+- [PostConvertWorkbookToHtml](operation/postconvertworkbooktohtml)：将Excel文件转换为HTML文件。
+- [PostConvertWorkbookToMarkdown](operation/postconvertworkbooktomarkdown) ：将Excel文件转换为Markdown文件。
+- [PostConvertWorkbookToJson](operation/postconvertworkbooktojson) ：将Excel文件转换为Json文件。
+- [PostConvertWorkbookToSQL](operation/postconvertworkbooktosql) ：将Excel文件转换为SQL脚本文件。
+- [将工作簿转换为 CSV 后](operation/postconvertworkbooktocsv)：将 Excel 文件转换为 Csv 文件。
+- [导出后](operation/postexport) ：将Excel内部元素或工作簿本身导出为各种格式文件。
+- [PostWorkbookExportXML](operation/postworkbookexportxml) ：从 Excel 文件导出 XML 数据。当 Excel 文件中有 XML Maps 时，导出 XML 数据。当 Excel 文件中没有 XML 映射时，将 Excel 文件转换为 XML 文件。
+- [PostWorkbookImportJson](operation/postworkbookimportjson)：将JSON数据文件导入到工作簿中。 JSON 数据文件可以是云文件或来自 HTTP URI 的数据。
+- [后工作簿导入XML](operation/postworkbookimportxml) ：将XML数据文件导入到Excel文件中。 XML 数据文件可以是云文件或来自 HTTP URI 的数据。
+- [导入后数据](operation/postimportdata)：导入数据到Excel文件中。
+- [工作簿后数据清理](operation/postworkbookdatacleansing)：电子表格文件的数据清理是一种数据管理过程，用于识别、纠正和删除表格和范围中的错误、不完整、重复或不准确。
+- [数据清理后](operation/postdatacleansing)：电子表格文件的数据清理是一种数据管理过程，用于识别、纠正和删除表格和范围中的错误、不完整、重复或不准确。
+- [工作簿后重复数据删除](operation/postworkbookdatadeduplication)：电子表格文件的重复数据删除主要用于消除表和范围中的重复数据。
+- [重复数据删除后](operation/postdatadeduplication)：电子表格文件的重复数据删除主要用于消除表和范围中的重复数据。
+- [工作簿数据填充后](operation/postworkbookdatafill)：电子表格文件的数据填充主要用于填充表和范围中的空数据。
+- [数据填充后](operation/postdatafill)：电子表格文件的数据填充主要用于填充表和范围中的空数据。
+- [删除不完整行后](operation/postdeleteincompleterows)：删除电子表格文件中的不完整行主要用于消除表和范围中的不完整行。
+- [获取工作表超链接](operation/getworksheethyperlinks)：检索工作表中超链接的描述。
+- [获取工作表超链接](operation/getworksheethyperlink) ：通过工作表中的索引检索超链接描述。
+- [删除工作表超链接](operation/deleteworksheethyperlink) ：删除工作表中索引的超链接。
+- [发布工作表超链接](operation/postworksheethyperlink)：通过工作表中的索引更新超链接。
+- [放置工作表超链接](operation/putworksheethyperlink)：在工作表中添加超链接。
+- [删除工作表超链接](operation/deleteworksheethyperlinks)：删除工作表中的所有超链接。
+- [后组装](operation/postassemble)：将数据文件与模板文件组装起来，生成各种格式的文件。
+- [后压缩](operation/postcompress)：压缩文件并生成各种格式的目标文件，支持的文件格式包括Xls、Xlsx、Xlsm、Xlsb、Ods等。
+- [合并后](operation/postmerge)：合并工作表中的单元格。
+- [后分割](operation/postsplit)：根据工作表拆分Excel电子表格文件，并创建各种格式的输出文件。
+- [后搜索](operation/postsearch)：在Excel文件中搜索指定文本。
+- [替换后](operation/postreplace)：用Excel文件中的新文本替换指定文本。
+- [导入后](operation/postimport)：将数据导入Excel文件并生成各种格式的输出文件。
+- [帖子水印](operation/postwatermark)：为Excel文件添加文本水印并生成各种格式的输出文件。
+- [后清除对象](operation/postclearobjects)：清除Excel文件中的内部元素，并生成各种格式的输出文件。
+- [后反转](operation/postreverse)：反转 Excel 文件中的行或列并创建各种格式的输出文件。
+- [修复后](operation/postrepair)：修复异常文件，生成各种格式的文件。
+- [后旋转](operation/postrotate)：旋转Excel文件中的行、列或其他对象并以各种格式保存。
+- [后元数据](operation/postmetadata)：更新Excel文件中的文档属性，并保存为各种格式。
+- [获取元数据](operation/getmetadata)：获取单元格文档属性。
+- [删除元数据](operation/deletemetadata)：删除Excel文件中的单元格文档属性，并保存为各种格式。
+- [获取工作表列表对象](operation/getworksheetlistobjects)：检索工作表中ListObjects的描述。
+- [获取工作表列表对象](operation/getworksheetlistobject) ：通过工作表中的索引检索列表对象描述。
+- [放置工作表列表对象](operation/putworksheetlistobject)：在工作表中添加一个ListObject。
+- [删除工作表列表对象](operation/deleteworksheetlistobjects)：删除工作表中的ListObject。
+- [删除工作表列表对象](operation/deleteworksheetlistobject) ：按工作表中的索引删除列表对象。
+- [后工作表列表对象](operation/postworksheetlistobject)：通过工作表中的索引更新列表对象。
+- [PostWorksheetListObjectConvertToRange](operation/postworksheetlistobjectconverttorange) ：将列表对象转换为工作表中的范围。
+- [PostWorksheetListObjectSummarizeWithPivotTable](operation/postworksheetlistobjectsummarizewithpivottable) ：使用工作表中的列表对象创建数据透视表。
+- [PostWorksheetListObjectSortTable 工作表列表对象排序表](operation/postworksheetlistobjectsorttable)：对工作表中的列表对象进行排序。
+- [PostWorksheetListObject删除重复项](operation/postworksheetlistobjectremoveduplicates)：删除列表对象中的重复项。
+- [PostWorksheetListObjectInsertSlicer](operation/postworksheetlistobjectinsertslicer) ：为列表对象插入切片器。
+- [发布工作表列表列](operation/postworksheetlistcolumn)：更新列表对象中的列表列。
+- [发布工作表列表列总计](operation/postworksheetlistcolumnstotal)：更新表中列表列的总数。
+- [获取工作表Ole对象](operation/getworksheetoleobjects)：检索工作表中OLE对象的描述。
+- [获取工作表Ole对象](operation/getworksheetoleobject) ：检索工作表中指定格式的OLE对象。
+- [删除WorksheetOle对象](operation/deleteworksheetoleobjects)：删除工作表中的所有OLE对象。
+- [删除WorksheetOle对象](operation/deleteworksheetoleobject) ：删除工作表中的OLE对象。
+- [PostUpdateWorksheetOle对象](operation/postupdateworksheetoleobject)：更新工作表中的OLE对象。
+- [PutWorksheetOle对象](operation/putworksheetoleobject)：在工作表中添加一个OLE对象。
+- [获取垂直分页符](operation/getverticalpagebreaks)：检索工作表中垂直分页符的描述。
+- [获取水平分页符](operation/gethorizontalpagebreaks)：检索工作表中水平分页符的描述。
+- [获取垂直分页符](operation/getverticalpagebreak) ：检索工作表中的垂直分页符描述。
+- [获取水平分页符](operation/gethorizontalpagebreak) ：检索工作表中的水平分页符描述。
+- [放置垂直分页符](operation/putverticalpagebreak)：在工作表中添加垂直分页符。
+- [放置水平分页符](operation/puthorizontalpagebreak)：在工作表中添加水平分页符。
+- [删除垂直分页符](operation/deleteverticalpagebreaks)：删除工作表中的垂直分页符。
+- [删除水平分页符](operation/deletehorizontalpagebreaks)：删除工作表中的水平分页符。
+- [删除垂直分页符](operation/deleteverticalpagebreak) ：删除工作表中的垂直分页符。
+- [删除水平分页符](operation/deletehorizontalpagebreak) ：删除工作表中的水平分页符。
+- [获取页面设置](operation/getpagesetup)：检索工作表中的页面设置描述。
+- [后页设置](operation/postpagesetup)：更新工作表中的页面设置。
+- [删除页眉页脚](operation/deleteheaderfooter)：清除工作表中的页眉和页脚。
+- [获取标题](operation/getheader)：检索工作表中的页眉描述。
+- [帖子标题](operation/postheader)：更新工作表中的页眉。
+- [获取页脚](operation/getfooter)：检索工作表中的页脚描述。
+- [后页脚](operation/postfooter)：更新工作表中的页脚。
+- [帖子适合宽页](operation/postfitwidetopages)：设置在纸张上打印时页面宽度的比例。
+- [帖子适合高到页面](operation/postfittalltopages)：设置在纸张上打印时页面高度的比例。
+- [获取工作表图片](operation/getworksheetpictures)：检索工作表中图片的描述。
+- [获取带格式的工作表图片](operation/getworksheetpicturewithformat)：按工作表中的编号检索图片。
+- [放置工作表添加图片](operation/putworksheetaddpicture)：在工作表中添加新图片。
+- [发布工作表图片](operation/postworksheetpicture)：通过工作表中的索引更新图片。
+- [删除工作表图片](operation/deleteworksheetpicture) ：按工作表中索引删除图片对象。
+- [删除工作表图片](operation/deleteworksheetpictures)：删除工作表中的所有图片。
+- [获取工作表数据透视表](operation/getworksheetpivottables)：检索工作表中数据透视表的描述。
+- [获取工作表数据透视表](operation/getworksheetpivottable)：通过工作表中的索引检索数据透视表信息。
+- [获取数据透视表字段](operation/getpivottablefield)：检索数据透视表中数据透视字段的描述。
+- [获取工作表数据透视表筛选器](operation/getworksheetpivottablefilters)：获取工作表中的数据透视表筛选器。
+- [获取工作表数据透视表筛选器](operation/getworksheetpivottablefilter) ：检索工作表中的数据透视表过滤器。
+- [放置工作表数据透视表](operation/putworksheetpivottable)：在工作表中添加数据透视表。
+- [放置数据透视表字段](operation/putpivottablefield)：在数据透视表中添加数据透视字段。
+- [PutWorksheet数据透视表过滤器](operation/putworksheetpivottablefilter)：向数据透视表添加数据透视过滤器。
+- [发布数据透视表字段隐藏项目](operation/postpivottablefieldhideitem)：隐藏数据透视表中的数据透视字段项。
+- [发布数据透视表字段移至](operation/postpivottablefieldmoveto)：移动数据透视表中的数据透视字段。
+- [后数据透视表单元格样式](operation/postpivottablecellstyle)：更新数据透视表中的单元格样式。
+- [后数据透视表样式](operation/postpivottablestyle)：更新数据透视表中的样式。
+- [发布数据透视表更新数据透视字段](operation/postpivottableupdatepivotfields)：更新数据透视表中的数据透视字段。
+- [发布数据透视表更新数据透视字段](operation/postpivottableupdatepivotfield) ：更新数据透视表中的数据透视字段。
+- [后工作表数据透视表计算](operation/postworksheetpivottablecalculate)：将数据透视表的数据计算到单元格中。
+- [后工作表数据透视表移动](operation/postworksheetpivottablemove)：在工作表中移动数据透视表。
+- [删除工作表数据透视表](operation/deleteworksheetpivottables)：删除工作表中的数据透视表。
+- [删除工作表数据透视表](operation/deleteworksheetpivottable) ：按工作表中的索引删除数据透视表。
+- [删除数据透视表字段](operation/deletepivottablefield)：删除数据透视表中的数据透视字段。
+- [删除工作表数据透视表筛选器](operation/deleteworksheetpivottablefilters)：删除数据透视表中的所有数据透视过滤器。
+- [删除工作表数据透视表过滤器](operation/deleteworksheetpivottablefilter) ：删除数据透视表中的数据透视过滤器。
+- [获取文档属性](operation/getdocumentproperties)：检索Excel文件属性的描述。
+- [PutDocument属性](operation/putdocumentproperty)：设置或添加Excel属性。
+- [获取文档属性](operation/getdocumentproperty)：按名称获取Excel属性。
+- [删除文档属性](operation/deletedocumentproperty)：删除Excel属性。
+- [删除文档属性](operation/deletedocumentproperties)：删除所有自定义文档属性并重置内置属性。
+- [后数字签名](operation/postdigitalsignature)：Excel文件数字签名。
+- [后加密工作簿](operation/postencryptworkbook)：Excel 加密。
+- [删除解密工作簿](operation/deletedecryptworkbook)：Excel文件解密。
+- [后期保护工作簿](operation/postprotectworkbook)：Excel保护。
+- [删除取消保护工作簿](operation/deleteunprotectworkbook)：Excel解除保护。
+- [PutDocumentProtectFromChanges](operation/putdocumentprotectfromchanges) ：Excel文件写保护。
+- [删除文档取消保护更改](operation/deletedocumentunprotectfromchanges)：Excel文件取消写保护。
+- [解锁后](operation/postunlock)：解锁Excel文件。
+- [后锁](operation/postlock)：锁定Excel文件。
+- [后期保护](operation/postprotect)：Excel文件加密。
+- [发布工作表单元格范围复制](operation/postworksheetcellsrangescopy)：将工作表中源区域的内容复制到目标区域。
+- [工作表单元格范围合并后](operation/postworksheetcellsrangemerge)：将一系列单元格合并为一个单元格。
+- [后工作表单元格范围取消合并](operation/postworksheetcellsrangeunmerge)：取消合并此范围内的合并单元格。
+- [后工作表单元格范围样式](operation/postworksheetcellsrangestyle) ：设置指定范围的样式。
+- [获取工作表单元格范围值](operation/getworksheetcellsrangevalue)：检索指定范围内单元格的值。
+- [后工作表单元格范围值](operation/postworksheetcellsrangevalue)：给范围赋值；如有必要，该值将转换为另一种数据类型，并且单元格的数字格式将被重置。
+- [后工作表单元格范围移动到](operation/postworksheetcellsrangemoveto)：将当前范围移动到目标范围。
+- [后工作表单元格范围排序](operation/postworksheetcellsrangesort)：围绕一系列单元格执行数据排序。
+- [后工作表单元格范围大纲边框](operation/postworksheetcellsrangeoutlineborder)：在一系列单元格周围应用轮廓边框。
+- [PostWorksheetCellsRangeColumnWidth](operation/postworksheetcellsrangecolumnwidth) ：设置指定范围的列宽。
+- [后工作表单元格范围行高度](operation/postworksheetcellsrangerowheight)：设置范围的行高。
+- [将工作表单元格范围](operation/putworksheetcellsrange)：插入一系列单元格并根据指定的移位选项移位现有单元格。
+- [删除工作表单元格范围](operation/deleteworksheetcellsrange)：删除一定范围的单元格，并根据指定的移动选项移动现有单元格。
+- [获取工作表形状](operation/getworksheetshapes)：检索工作表中形状的描述。
+- [获取工作表形状](operation/getworksheetshape) ：检索工作表中形状的描述。
+- [放置工作表形状](operation/putworksheetshape)：在工作表中添加形状。
+- [删除工作表形状](operation/deleteworksheetshapes)：删除工作表中的所有形状。
+- [删除工作表形状](operation/deleteworksheetshape) ：删除工作表中的形状。
+- [后工作表形状](operation/postworksheetshape)：更新工作表中的形状。
+- [后工作表组形状](operation/postworksheetgroupshape)：对工作表中的形状进行分组。
+- [后工作表取消组合形状](operation/postworksheetungroupshape)：取消工作表中形状的分组。
+- [获取工作表迷你图组](operation/getworksheetsparklinegroups)：检索工作表中迷你图组的描述。
+- [获取工作表迷你图组](operation/getworksheetsparklinegroup) ：检索工作表中迷你图组的描述。
+- [删除工作表迷你图组](operation/deleteworksheetsparklinegroups)：删除工作表中的迷你图组。
+- [删除工作表迷你图组](operation/deleteworksheetsparklinegroup) ：删除工作表中的迷你图组。
+- [PutWorksheetSparklineGroup](operation/putworksheetsparklinegroup) ：在工作表中添加迷你图组。
+- [后期工作表迷你图组](operation/postworksheetsparklinegroup)：更新工作表中的迷你图组。
+- [运行后任务](operation/postruntask)：运行任务。
+- [获取工作簿默认样式](operation/getworkbookdefaultstyle)：获取工作簿默认样式的描述。
+- [获取工作簿文本项](operation/getworkbooktextitems)：检索工作簿中的文本项。
+- [获取工作簿名称](operation/getworkbooknames)：检索工作簿中的命名范围。
+- [放置工作簿名称](operation/putworkbookname)：在工作簿中定义一个新名称。
+- [获取工作簿名称](operation/getworkbookname) ：检索工作簿中命名范围的描述。
+- [帖子工作簿名称](operation/postworkbookname)：更新工作簿中的命名范围。
+- [获取工作簿名称值](operation/getworkbooknamevalue)：检索工作簿中指定范围的值。
+- [删除工作簿名称](operation/deleteworkbooknames)：删除工作簿中的所有命名范围。
+- [删除工作簿名称](operation/deleteworkbookname) ：删除工作簿中的命名范围。
+- [工作簿合并后](operation/postworkbooksmerge) ：将工作簿合并到现有工作簿中。
+- [发布工作簿文本搜索](operation/postworkbookstextsearch)：在工作簿中搜索文本。
+- [后工作簿文本替换](operation/postworkbooktextreplace)：替换工作簿中的文本。
+- [PostWorkbookGetSmartMarkerResult](operation/postworkbookgetsmartmarkerresult) ：智能标记处理。
+- [放置工作簿创建](operation/putworkbookcreate) ：使用不同的方法创建新的工作簿。
+- [后工作簿分割](operation/postworkbooksplit)：以特定格式分割工作簿。
+- [后工作簿计算公式](operation/postworkbookcalculateformula)：计算工作簿中的所有公式。
+- [后自动调整工作簿行](operation/postautofitworkbookrows)：自动调整工作簿中的行。
+- [发布自动调整工作簿列](operation/postautofitworkbookcolumns)：工作簿中的自动调整列。
+- [获取工作簿设置](operation/getworkbooksettings)：检索工作簿设置的描述。
+- [工作簿后设置](operation/postworkbooksettings)：更新工作簿中的设置。
+- [把工作簿背景](operation/putworkbookbackground) ：设置工作簿背景。
+- [删除工作簿背景](operation/deleteworkbookbackground) ：删除工作簿中的背景。
+- [Put工作簿水标记](operation/putworkbookwatermarker)：在工作簿中设置水标记。
+- [获取页数](operation/getpagecount)：获取工作簿的页数。
+- [获取工作表](operation/getworksheets)：从工作簿中检索工作表的描述。
+- [获取带格式的工作表](operation/getworksheetwithformat)：从工作簿中检索指定格式的工作表。
+- [PutChangeVisibility工作表](operation/putchangevisibilityworksheet)：更改工作簿中工作表的可见性。
+- [放置活动工作表](operation/putactiveworksheet)：设置工作簿中活动工作表索引。
+- [放置插入新工作表](operation/putinsertnewworksheet)：在工作簿中插入新的工作表。
+- [放置添加新工作表](operation/putaddnewworksheet)：在工作簿中添加新的工作表。
+- [删除工作表](operation/deleteworksheet) ：删除工作簿中的工作表。
+- [删除工作表](operation/deleteworksheets)：删除工作簿中匹配的工作表。
+- [移动后工作表](operation/postmoveworksheet)：移动工作簿中的工作表。
+- [放置保护工作表](operation/putprotectworksheet)：保护工作表。
+- [删除取消保护工作表](operation/deleteunprotectworksheet)：取消工作表保护。
+- [获取工作表文本项](operation/getworksheettextitems)：检索工作表中的文本项。
+- [获取工作表评论](operation/getworksheetcomments)：获取工作表中注释的描述。
+- [获取工作表评论](operation/getworksheetcomment) ：获取工作表中注释的描述。
+- [放置工作表注释](operation/putworksheetcomment)：在工作表中添加单元格注释。
+- [工作表后评论](operation/postworksheetcomment)：更新工作表中的单元格注释。
+- [删除工作表注释](operation/deleteworksheetcomment) ：删除工作表中的单元格注释。
+- [删除工作表注释](operation/deleteworksheetcomments)：删除工作表中的所有注释。
+- [获取工作表合并单元格](operation/getworksheetmergedcells)：获取工作表合并单元格。
+- [获取工作表合并单元格](operation/getworksheetmergedcell) ：通过工作表中的索引检索合并单元格的描述。
+- [获取工作表计算公式](operation/getworksheetcalculateformula)：计算工作表中的公式。
+- [后工作表计算公式](operation/postworksheetcalculateformula)：计算工作表中的公式。
+- [发布工作表文本搜索](operation/postworksheettextsearch)：在工作表中搜索文本。
+- [后工作表文本替换](operation/postworksheettextreplace)：在工作表中用新文本替换旧文本。
+- [工作表后范围排序](operation/postworksheetrangesort)：对工作表中的范围进行排序。
+- [后自动调整工作表行](operation/postautofitworksheetrow) ：在工作表中自动调整一行。
+- [后自动调整工作表行](operation/postautofitworksheetrows)：自动调整工作表中的行。
+- [发布自动调整工作表列](operation/postautofitworksheetcolumns)：工作表中的自动调整列。
+- [把工作表背景](operation/putworksheetbackground)：设置工作表背景图片。
+- [删除工作表背景](operation/deleteworksheetbackground)：删除工作表中的背景图片。
+- [将工作表冻结窗格](operation/putworksheetfreezepanes)：在工作表中设置冻结窗格。
+- [删除工作表冻结窗格](operation/deleteworksheetfreezepanes)：解冻工作表中的窗格。
+- [后复制工作表](operation/postcopyworksheet)：复制另一个工作表的内容和格式。
+- [后重命名工作表](operation/postrenameworksheet)：重命名工作簿中的工作表。
+- [更新后工作表属性](operation/postupdateworksheetproperty)：更新工作簿中的工作表属性。
+- [获取命名范围](operation/getnamedranges)：检索工作表中范围的描述。
+- [获取命名范围值](operation/getnamedrangevalue)：检索范围内的值。
+- [更新后工作表缩放](operation/postupdateworksheetzoom)：更新工作表中的缩放百分比。它应该在 10 到 400 之间。
+- [获取工作表页数](operation/getworksheetpagecount)：获取工作表中的页数。
+- [获取工作表验证](operation/getworksheetvalidations)：检索工作表中验证的描述。
+- [获取工作表验证](operation/getworksheetvalidation) ：通过工作表中的索引检索验证。
+- [PutWorksheet验证](operation/putworksheetvalidation)：在工作表中的索引处添加验证。
+- [工作表后验证](operation/postworksheetvalidation)：通过工作表中的索引更新验证。
+- [删除工作表验证](operation/deleteworksheetvalidation)：删除工作表中按索引进行的验证。
+- [删除工作表验证](operation/deleteworksheetvalidations)：删除工作表中的所有验证。
+
+# Aspose.Cells 云 API 型号
+
+- [对象存在扩展](model/objectexistsextensions)  :   
+- [文件版本](model/fileversion)  :   
+- [存储文件](model/storagefile)：文件或文件夹信息
+- [GoogleDrive存储文件](model/googledrivestoragefile)  :   
+- [高于平均水平](model/aboveaverage)：描述AboveAverage条件格式规则。此条件格式规则突出显示高于或低于范围内所有值平均值的单元格。
+- [抽象计算引擎](model/abstractcalculationengine)：代表用户自定义计算引擎，扩展默认计算引擎Aspose.Cells。
+- [抽象计算监视器](model/abstractcalculationmonitor)：监控，供用户跟踪公式计算的进度。
+- [自动筛选](model/autofilter)  :   
+- [自动调整选项](model/autofitteroptions)  :   
+- [边界](model/border)  :   
+- [计算选项](model/calculationoptions)  :   
+- [细胞](model/cell)  :   
+- [细胞区域](model/cellarea)  :   
+- [Cells](model/cells)  :   
+- [Cells云文件信息](model/cellscloudfileinfo)：Cells 云文件信息说明。
+- [细胞颜色](model/cellscolor)  :   
+- [单元格文档属性](model/cellsdocumentproperties) Excel 属性
+- [单元格文档属性](model/cellsdocumentproperty)：Cells文档属性。
+- [颜色](model/color)： 颜色。
+- [彩色滤光片](model/colorfilter)：彩色滤光片。
+- [色阶](model/colorscale)：描述ColorScale条件格式规则。此条件格式规则在单元格上创建渐变色标。
+- [柱子](model/column)  :   
+- [列](model/columns)  :   
+- [评论](model/comment)  :   
+- [评论](model/comments)  :   
+- [条件格式](model/conditionalformatting)  :   
+- [条件格式图标](model/conditionalformattingicon)  :   
+- [条件格式](model/conditionalformattings)  :   
+- [条件格式值](model/conditionalformattingvalue)  :   
+- [复制选项](model/copyoptions)：代表复制选项。
+- [标准多重过滤器](model/criteriamultiplefilter)  :   
+- [自定义过滤器](model/customfilter)  :   
+- [数据栏](model/databar)：描述DataBar条件格式规则。此条件格式规则在单元格区域中显示分级数据栏。
+- [数据栏边框](model/databarborder)  :   
+- [数据清理](model/datacleansing)： 数据清理
+- [数据列填充值](model/datacolumnfillvalue)  :   
+- [数据填充](model/datafill)  :   
+- [数据填充值](model/datafillvalue)  :   
+- [数据分类器](model/datasorter)：DataSorter 的摘要描述。
+- [数据分类器键](model/datasorterkey)：代表数据排序器的键。
+- [日期时间组项目](model/datetimegroupitem)  :   
+- [重复数据删除区域](model/deduplicationregion)  :   
+- [动态过滤器](model/dynamicfilter)  :   
+- [文件信息](model/fileinfo)：文件信息
+- [文件结果](model/filesresult)  :   
+- [过滤列](model/filtercolumn)  :   
+- [字体](model/font)  :   
+- [字体设置](model/fontsetting)  :   
+- [格式条件](model/formatcondition)  :   
+- [公式格式条件](model/formulaformatcondition)  :   
+- [公式设置](model/formulasettings)：公式和计算的设置。
+- [全球化设置](model/globalizationsettings)：代表全球化设置。
+- [水平分页符](model/horizontalpagebreak)  :   
+- [水平分页符](model/horizontalpagebreaks)  :   
+- [超级链接](model/hyperlink)  :   
+- [超链接](model/hyperlinks)  :   
+- [图标过滤器](model/iconfilter)  :   
+- [图标集](model/iconset)：描述IconSet条件格式规则。此条件格式规则根据单元格的值将图标应用于单元格。
+- [关联](model/link)  :   
+- [链接元素](model/linkelement)  :   
+- [加载选项](model/loadoptions)  :   
+- [合并单元格](model/mergedcell)  :   
+- [合并单元格](model/mergedcells)  :   
+- [多重过滤器](model/multiplefilter)  :   
+- [多重过滤器](model/multiplefilters)  :   
+- [姓名](model/name)  :   
+- [名称](model/names)  :   
+- [负条格式](model/negativebarformat)：表示由数据栏条件格式规则定义的负值数据栏的颜色设置。
+- [页面部分](model/pagesection)  :   
+- [页面设置](model/pagesetup)  :   
+- [粘贴选项](model/pasteoptions)：代表粘贴特殊选项。
+- [Pdf安全选项](model/pdfsecurityoptions)  :   
+- [保护](model/protection)：代表工作表可用的各种类型的保护选项。
+- [保护表参数](model/protectsheetparameter)  :   
+- [查询表](model/querytable)：代表查询表信息。
+- [范围](model/range)  :   
+- [范围](model/ranges)  :   
+- [排](model/row)  :   
+- [行数](model/rows)  :   
+- [保存结果](model/saveresult)  :   
+- [分页保存选项](model/paginatedsaveoptions)：代表分页选项。
+- [单值](model/singlevalue)  :   
+- [排序键](model/sortkey)  :   
+- [分割结果](model/splitresult)  :   
+- [拆分结果文档](model/splitresultdocument)  :   
+- [风格](model/style)  :   
+- [样式格式条件](model/styleformatcondition)  :   
+- [风格](model/styles)  :   
+- [文本格式条件](model/textformatcondition)  :   
+- [文本项](model/textitem)  :   
+- [文本项](model/textitems)  :   
+- [文本选项](model/textoptions)  :   
+- [主题颜色](model/themecolor)  :   
+- [时间周期格式条件](model/timeperiodformatcondition)  :   
+- [前10名](model/top10)：描述Top10条件格式规则。此条件格式规则突出显示值位于指定的前 N 或后 N 括号内的单元格。
+- [Top10过滤器](model/top10filter)  :   
+- [验证](model/validation)  :   
+- [验证](model/validations)  :   
+- [垂直分页符](model/verticalpagebreak)  :   
+- [垂直分页符](model/verticalpagebreaks)  :   
+- [练习册](model/workbook)  :   
+- [工作簿设置](model/workbooksettings)  :   
+- [工作表](model/worksheet)  :   
+- [工作表](model/worksheets)  :   
+- [写保护](model/writeprotection)：指定工作簿的写保护设置。
+- [Xml数据绑定](model/xmldatabinding)：代表Xml数据绑定信息。
+- [XmlMap](model/xmlmap) ：代表Xml映射信息。
+- [单元格对象操作任务参数](model/cellsobjectoperatetaskparameter)  :   
+- [转换任务参数](model/converttaskparameter)  :   
+- [转换工作表任务参数](model/convertworksheettaskparameter)  :   
+- [文件源](model/filesource)  :   
+- [文件源类型](model/filesourcetype)  :   
+- [导入数据任务参数](model/importdatataskparameter)  :   
+- [结果目的地](model/resultdestination)  :   
+- [结果目的地类型](model/resultdestinationtype)  :   
+- [结果来源](model/resultsource)  :   
+- [保存文件到云结果](model/savefilestocloudresult)  :   
+- [保存结果任务参数](model/saveresulttaskparameter)  :   
+- [SmartMarker任务参数](model/smartmarkertaskparameter)  :   
+- [分割工作簿任务参数](model/splitworkbooktaskparameter)  :   
+- [任务数据](model/taskdata)  :   
+- [任务描述](model/taskdescription)  :   
+- [任务参数](model/taskparameter)  :   
+- [任务结果参数](model/taskresultparameter)  :   
+- [任务运行结果](model/taskrunresult)  :   
+- [任务类型](model/tasktype)  :   
+- [图表操作参数](model/chartoperateparameter)  :   
+- [列表对象操作参数](model/listobjectoperateparameter)  :   
+- [操作对象](model/operateobject)  :   
+- [操作对象位置](model/operateobjectposition)  :   
+- [操作对象类型](model/operateobjecttype)  :   
+- [操作参数](model/operateparameter)  :   
+- [操作类型](model/operatetype)  :   
+- [分页操作参数](model/pagebreakoperateparameter)  :   
+- [页面设置操作参数](model/pagesetupoperateparameter)  :   
+- [数据透视表操作参数](model/pivottableoperateparameter)  :   
+- [形状操作参数](model/shapeoperateparameter)  :   
+- [工作簿操作参数](model/workbookoperateparameter)  :   
+- [工作簿设置操作参数](model/workbooksettingsoperateparameter)  :   
+- [工作表操作参数](model/worksheetoperateparameter)  :   
+- [列表栏](model/listcolumn)  :   
+- [列表对象](model/listobject)  :   
+- [列表对象](model/listobjects)  :   
+- [Pivot全球化设置](model/pivotglobalizationsettings)：代表数据透视表的全球化设置。
+- [差异保存选项](model/difsaveoptions) ：代表保存dif文件的选项。
+- [Docx保存选项](model/docxsaveoptions) ：代表保存.docx文件的选项。
+- [Html保存选项](model/htmlsaveoptions) ：代表保存.html 文件的选项。
+- [图像保存选项](model/imagesaveoptions) ：表示保存图像文件的选项。
+- [Json保存选项](model/jsonsaveoptions)：代表保存.json文件的选项。
+- [Markdown保存选项](model/markdownsaveoptions) ：代表保存.md 文件的选项。
+- [MHtml保存选项](model/mhtmlsaveoptions) ：代表保存.mhtml 文件的选项。
+- [赔率保存选项](model/odssaveoptions) ：代表保存.ods 文件的选项。
+- [Ooxml保存选项](model/ooxmlsaveoptions) ：代表保存ooxml文件的选项。
+- [Pdf保存选项](model/pdfsaveoptions) ：代表保存pdf文件的选项。
+- [Pptx保存选项](model/pptxsaveoptions) ：代表保存pptx文件的选项。
+- [保存选项](model/saveoptions) ：代表所有保存选项
+- [SpreadsheetML2003保存选项](model/spreadsheetml2003saveoptions)：代表保存.xml 文件的选项。
+- [SqlScript保存选项](model/sqlscriptsaveoptions) ：代表保存.sql文件的选项。
+- [Svg保存选项](model/svgsaveoptions) ：代表保存.svg 文件的选项。
+- [文本保存选项](model/txtsaveoptions) ：代表保存.txt 文件的选项。
+- [Xlsb保存选项](model/xlsbsaveoptions) ：代表保存.xlsb文件的选项。
+- [Xls保存选项](model/xlssaveoptions) ：代表保存.xls 文件的选项。
+- [Xps保存选项](model/xpssaveoptions) ：代表保存.xps 文件的选项。
+- [分析Excel响应](model/analyzeexcelresponse)  :   
+- [弧形响应](model/arcshaperesponse)  :   
+- [自动过滤响应](model/autofilterresponse)  :   
+- [自选图形响应](model/autoshaperesponse)  :   
+- [自选图形响应](model/autoshapesresponse)  :   
+- [轴响应](model/axisresponse)  :   
+- [边境反应局](model/borderresponse)  :   
+- [按钮响应](model/buttonresponse)  :   
+- [计算公式响应](model/calculateformularesponse)  :   
+- [细胞反应](model/cellresponse)  :   
+- [CellsCloudFileInfoResponse](model/cellscloudfileinforesponse)  :   
+- [Cells云响应](model/cellscloudresponse)  :   
+- [细胞文档属性响应](model/cellsdocumentpropertiesresponse)  :   
+- [细胞文档属性响应](model/cellsdocumentpropertyresponse)  :   
+- [细胞绘图响应](model/cellsdrawingresponse)  :   
+- [细胞反应](model/cellsresponse)  :   
+- [图表区域响应](model/chartarearesponse)  :   
+- [图表数据表响应](model/chartdatatableresponse)  :   
+- [图表点响应](model/chartpointresponse)  :   
+- [图表点响应](model/chartpointsresponse)  :   
+- [图表响应](model/chartresponse)  :   
+- [图表响应](model/chartsresponse)  :   
+- [复选框响应](model/checkboxresponse)  :   
+- [列响应](model/columnresponse)  :   
+- [专栏响应](model/columnsresponse)  :   
+- [组合框响应](model/comboboxresponse)  :   
+- [评论回复](model/commentresponse)  :   
+- [评论形状响应](model/commentshaperesponse)  :   
+- [评论回复](model/commentsresponse)  :   
+- [条件格式化响应](model/conditionalformattingresponse)  :   
+- [条件格式响应](model/conditionalformattingsresponse)  :   
+- [数据标签响应](model/datalabelsresponse)  :   
+- [显示单元标签响应](model/displayunitlabelresponse)  :   
+- [DropBars响应](model/dropbarsresponse)  :   
+- [错误栏响应](model/errorbarresponse)  :   
+- [填写格式响应](model/fillformatresponse)  :   
+- [查找响应](model/findresponse)  :   
+- [楼层响应](model/floorresponse)  :   
+- [表单响应](model/formresponse)  :   
+- [表格回复](model/formsresponse)  :   
+- [组框响应](model/groupboxresponse)  :   
+- [水平分页响应](model/horizontalpagebreakresponse)  :   
+- [水平分页响应](model/horizontalpagebreaksresponse)  :   
+- [超链接响应](model/hyperlinkresponse)  :   
+- [超链接响应](model/hyperlinksresponse)  :   
+- [标签响应](model/labelresponse)  :   
+- [图例条目响应](model/legendentriesresponse)  :   
+- [图例条目响应](model/legendentryresponse)  :   
+- [图例响应](model/legendresponse)  :   
+- [线路响应](model/lineresponse)  :   
+- [线形响应](model/lineshaperesponse)  :   
+- [列表框响应](model/listboxresponse)  :   
+- [列表对象响应](model/listobjectresponse)  :   
+- [列出对象响应](model/listobjectsresponse)  :   
+- [合并单元响应](model/mergedcellresponse)  :   
+- [合并单元格响应](model/mergedcellsresponse)  :   
+- [名称响应](model/nameresponse)  :   
+- [名称响应](model/namesresponse)  :   
+- [Ole对象响应](model/oleobjectresponse)  :   
+- [OleObject响应](model/oleobjectsresponse)  :   
+- [椭圆响应](model/ovalresponse)  :   
+- [页面部分响应](model/pagesectionsresponse)  :   
+- [页面设置响应](model/pagesetupresponse)  :   
+- [图片响应](model/pictureresponse)  :   
+- [图片回复](model/picturesresponse)  :   
+- [数据透视字段响应](model/pivotfieldresponse)  :   
+- [数据透视过滤器响应](model/pivotfilterresponse)  :   
+- [数据透视过滤器响应](model/pivotfiltersresponse)  :   
+- [数据透视表响应](model/pivottableresponse)  :   
+- [数据透视表响应](model/pivottablesresponse)  :   
+- [绘图区域响应](model/plotarearesponse)  :   
+- [单选按钮响应](model/radiobuttonresponse)  :   
+- [范围响应](model/rangeresponse)  :   
+- [范围响应](model/rangesresponse)  :   
+- [范围值响应](model/rangevalueresponse)  :   
+- [矩形形状响应](model/rectangleshaperesponse)  :   
+- [行响应](model/rowresponse)  :   
+- [行响应](model/rowsresponse)  :   
+- [保存文件到云结果响应](model/savefilestocloudresultresponse)  :   
+- [保存响应](model/saveresponse)  :   
+- [滚动条响应](model/scrollbarresponse)  :   
+- [系列回应](model/seriesesresponse)  :   
+- [系列响应](model/seriesresponse)  :   
+- [形状响应](model/shaperesponse)  :   
+- [形状响应](model/shapesresponse)  :   
+- [单值响应](model/singlevalueresponse)  :   
+- [SparklineGroup响应](model/sparklinegroupresponse)  :   
+- [迷你图组响应](model/sparklinegroupsresponse)  :   
+- [旋转响应](model/spinnerresponse)  :   
+- [分割结果响应](model/splitresultresponse)  :   
+- [风格回应](model/styleresponse)  :   
+- [任务运行结果响应](model/taskrunresultresponse)  :   
+- [文本框响应](model/textboxresponse)  :   
+- [文本项响应](model/textitemresponse)  :   
+- [文本项目响应](model/textitemsresponse)  :   
+- [勾选标签响应](model/ticklabelsresponse)  :   
+- [标题响应](model/titleresponse)  :   
+- [趋势线响应](model/trendlineresponse)  :   
+- [趋势线响应](model/trendlinesresponse)  :   
+- [验证响应](model/validationresponse)  :   
+- [验证响应](model/validationsresponse)  :   
+- [垂直分页响应](model/verticalpagebreakresponse)  :   
+- [垂直分页响应](model/verticalpagebreaksresponse)  :   
+- [墙响应](model/wallsresponse)  :   
+- [工作簿替换响应](model/workbookreplaceresponse)  :   
+- [工作簿响应](model/workbookresponse)  :   
+- [工作簿设置响应](model/workbooksettingsresponse)  :   
+- [作业簿回应](model/workbooksresponse)  :   
+- [工作表替换响应](model/worksheetreplaceresponse)  :   
+- [工作表响应](model/worksheetresponse)  :   
+- [工作表响应](model/worksheetsresponse)  :   
+- [分析Excel请求](model/analyzeexcelrequest)  :   
+- [批量转换请求](model/batchconvertrequest)：表示批量转换文件请求
+- [批量锁定请求](model/batchlockrequest)：表示批量锁定文件请求
+- [批量保护请求](model/batchprotectrequest)：表示批量保护文件请求
+- [批量分割请求](model/batchsplitrequest)  :   
+- [色彩滤镜请求](model/colorfilterrequest)：表示滤色片要求
+- [转换参数](model/convertparameter)：表示转换参数
+- [创建数据透视表请求](model/createpivottablerequest)：表示创建数据透视表请求
+- [数据清理请求](model/datacleansingrequest)：电子表格文件的数据清理请求。
+- [重复数据删除请求](model/datadeduplicationrequest)  :   
+- [数据填写请求](model/datafillrequest)  :   
+- [删除不完整行请求](model/deleteincompleterowsrequest)  :   
+- [导入Json请求](model/importjsonrequest)：表示导入xml数据请求
+- [导入XML请求](model/importxmlrequest)：表示导入xml数据请求
+- [匹配条件请求](model/matchconditionrequest)：表示文件名需要处理的匹配条件。
+- [密码请求](model/passwordrequest)：用于密码数据传输。
+- [数据透视表字段请求](model/pivottablefieldrequest)：表示数据透视表字段请求
+- [保护工作簿请求](model/protectworkbookrequest)：表示保护工作簿请求
+- [范围复制请求](model/rangecopyrequest)：表示范围复制请求
+- [范围设置轮廓边框请求](model/rangesetoutlineborderrequest)：表示范围设置轮廓边框请求。
+- [范围集样式请求](model/rangesetstylerequest)：表示范围设置样式请求。
+- [范围排序请求](model/rangesortrequest)：表示范围排序请求
+- [表总请求数](model/tabletotalrequest)：表示表总请求数
+- [文本水标记请求](model/textwatermarkerrequest)：表示文本水标记请求。
+- [工作簿加密请求](model/workbookencryptionrequest) ：由工作簿加密/解密请求使用。
+- [工作簿保护请求](model/workbookprotectionrequest) ：由工作簿保护请求使用。
+- [工作表移动请求](model/worksheetmovingrequest)：由工作簿移动请求使用。
+- [图像或打印选项](model/imageorprintoptions)  :   
+- [渲染字体](model/renderingfont)  :   
+- [渲染水印](model/renderingwatermark)  :   
+- [数据透视字段](model/pivotfield)  :   
+- [枢轴过滤器](model/pivotfilter)：代表PivotFilter集合中的一个PivotFilter。
+- [数据透视项](model/pivotitem)  :   
+- [数据透视表](model/pivottable)  :   
+- [数据透视表](model/pivottables)  :   
+- [自定义解析器配置](model/customparserconfig)  :   
+- [导入 2DimensionDoubleArray 选项](model/import2dimensiondoublearrayoption)  :   
+- [导入 2DimensionIntArray 选项](model/import2dimensionintarrayoption)  :   
+- [导入2DimensionStringArray选项](model/import2dimensionstringarrayoption)  :   
+- [细胞价值](model/cellvalue)  :   
+- [导入批量数据选项](model/importbatchdataoption)  :   
+- [导入CSV数据选项](model/importcsvdataoption)  :   
+- [导入数据类型](model/importdatatype)  :   
+- [导入双数组选项](model/importdoublearrayoption)  :   
+- [导入整数数组选项](model/importintarrayoption)  :   
+- [导入选项](model/importoption)  :   
+- [导入图片选项](model/importpictureoption)  :   
+- [导入位置](model/importposition)  :   
+- [导入字符串数组选项](model/importstringarrayoption)  :   
+- [弧形](model/arcshape)  :   
+- [区域](model/area)  :   
+- [自选图形](model/autoshape)  :   
+- [自选图形](model/autoshapes)  :   
+- [按钮](model/button)  :   
+- [细胞绘图](model/cellsdrawing)  :   
+- [复选框](model/checkbox)  :   
+- [组合框](model/combobox)  :   
+- [评论形状](model/commentshape)  :   
+- [填充格式](model/fillformat)  :   
+- [形式](model/form)  :   
+- [形式](model/forms)  :   
+- [渐变填充](model/gradientfill)  :   
+- [渐变填充停止](model/gradientfillstop)  :   
+- [分组框](model/groupbox)  :   
+- [团体形态](model/groupshape)  :   
+- [标签](model/label)  :   
+- [线](model/line)：封装表示线路格式的对象。
+- [行格式](model/lineformat)  :   
+- [线形](model/lineshape)  :   
+- [列表框](model/listbox)  :   
+- [对象](model/oleobject)  :   
+- [Ole对象](model/oleobjects)  :   
+- [椭圆形](model/oval)  :   
+- [图案填充](model/patternfill)  :   
+- [图片格式选项](model/picformatoption)  :   
+- [图片](model/picture)  :   
+- [图片](model/pictures)  :   
+- [单选按钮](model/radiobutton)  :   
+- [矩形形状](model/rectangleshape)  :   
+- [滚动条](model/scrollbar)  :   
+- [阴影效果](model/shadoweffect)  :   
+- [形状](model/shape)  :   
+- [形状](model/shapes)  :   
+- [实心填充](model/solidfill)  :   
+- [旋转器](model/spinner)  :   
+- [文本框](model/textbox)  :   
+- [纹理填充](model/texturefill)  :   
+- [平铺图片选项](model/tilepicoption)  :   
+- [电子签名](model/digitalsignature) 文件中的签名。
+- [轴](model/axis)  :   
+- [图表](model/chart)  :   
+- [图表区](model/chartarea)  :   
+- [图表数据表](model/chartdatatable)  :   
+- [图表框架](model/chartframe)  :   
+- [图表全球化设置](model/chartglobalizationsettings)：代表图表的全球化设置。
+- [图表点](model/chartpoint)  :   
+- [图表点](model/chartpoints)  :   
+- [图表](model/charts)  :   
+- [图表形状](model/chartshape) ：图表形状对象
+- [数据标签](model/datalabels)  :   
+- [显示单元标签](model/displayunitlabel)  :   
+- [下拉栏](model/dropbars)  :   
+- [错误栏](model/errorbar)  :   
+- [地面](model/floor)  :   
+- [传奇](model/legend)  :   
+- [图例条目](model/legendentries)  :   
+- [传奇入口](model/legendentry)  :   
+- [标记](model/marker)  :   
+- [绘图区](model/plotarea)  :   
+- [系列](model/series)  :   
+- [系列项目](model/seriesitems)  :   
+- [迷你图](model/sparkline)：迷你图表示工作表单元格中的微小图表或图形，提供数据的可视化表示。
+- [迷你图集团](model/sparklinegroup)  :   
+- [迷你图组](model/sparklinegroups)：封装Aspose.Cells.Charts.SparklineGroup对象的集合。
+- [刻度标签](model/ticklabels)  :   
+- [标题](model/title)  :   
+- [趋势线](model/trendline)  :   
+- [趋势线](model/trendlines)  :   
+- [墙壁](model/walls)  :   
+- [列数据异常描述](model/columndataexceptiondescription)  :   
+- [文本类别类型](model/textcategorytype)  :   
+- [分析列描述](model/analyzedcolumndescription)：如何利用各栏目的属性：目前分为时间线、产品线、数值统计线 如何呈现产品、统一计划 如何解决全数字化的问题？全文 如何解决？两列：Text、Number最简单 三列：Text、Text、Number text、number、number --- date date ；日期 数字 ;数字 数字 四列、五列呢？
+- [分析结果](model/analyzedresult)  :   
+- [分析表描述](model/analyzedtabledescription)  :   
+- [日期源类型](model/datesourcetype)  :   
+- [建议的输出类型](model/suggestedoutputtype)  :   
+- [分析建议](model/analyzesuggestion)  :   
+- [发现图表](model/discoverchart)  :   
+- [发现数据透视表](model/discoverpivottable)  :   
+- [Excel数据统计](model/exceldatastatistics)  :   
+- [工作表数据统计](model/worksheetdatastatistics)  :   
+- [错误](model/error)： 错误
+- [错误详情](model/errordetails) 错误详细信息

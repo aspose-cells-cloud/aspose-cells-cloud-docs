@@ -23,7 +23,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts
 | Diagramm Typ| Zeichenfolge| Abfrage| Diagrammtyp, siehe Eigenschaft Typ in der Diagrammressource.|
 | UpperLeftRow| ganze Zahl| Abfrage|0 |
 | UpperLeftColumn| ganze Zahl| Abfrage|0 |
-| untereRechteRow| ganze Zahl| Abfrage|0 |
+| LowerRightRow| ganze Zahl| Abfrage|0 |
 | LowerRightColumn| ganze Zahl| Abfrage|0 |
 | Bereich| Zeichenfolge| Abfrage| Gibt Werte an, anhand derer die Datenreihe dargestellt werden soll.|
 | isVertical| Boolescher Wert| Abfrage| WAHR|

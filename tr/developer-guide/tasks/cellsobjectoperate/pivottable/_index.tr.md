@@ -1,39 +1,39 @@
 ﻿---
-title: CellsObjectOperate tas kullanarak pivot tabloyla çalışma
+title: CellsObjectOperate tas'ı kullanarak pivot tabloyla çalışma
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/tasks/cells-object-operate/pivottable/
 aliases: [/working-with-pivot-table-using-cellsobjectoperate-task/]
 keywords: REST API, pivot table, spreadsheets, exce
-description: "Cells.Cloud API, Excel için çalıştır: CellsObjectOperate görevini kullanarak pivot tablo oluştur"
+description: "Cells.Cloud API, Excel için çalışır: CellsObjectOperate görevini kullanarak pivot tablo oluşturun"
 weight: 10
 ---
-Bu REST API, hücreler nesnesini kullanarak `pivot table` oluşturur, `task`'i çalıştırır.
+Bu REST API, hücre nesnesini kullanarak `task`'i çalıştırarak `task`'i oluşturur.
 
-**PivotTableİşletParametresi**
+**PivotTableOperateParametresi**
 
 
 |Parametre adı|Tip|Tanım|
 |:- |:- |:- |
-| Hedef HücreAdı| sicim||
-| KaynakVeri| sicim||
+| DestHücreAdı| sicim||
+| KaynakVerileri| sicim||
 | Tablo ismi| sicim||
-| UseSameSource| sicim| doğru yanlış|
-| Özet Tablo Dizini| tamsayı||
-| PivotAlanSatırları|tamsayı[]||
-| Özet Alan Sütunları|tamsayı[]||
-|PivotAlanVerileri|tamsayı[]||
+| Aynı Kaynağı Kullan| sicim| doğru yanlış|
+| PivotTableIndex| tamsayı||
+| PivotFieldSatırlar|tamsayı[]||
+| PivotFieldSütunlar|tamsayı[]||
+|PivotFieldData|tamsayı[]||
 
 
 ## DİNLENME API
 
 |**API**|**Tip**|**Tanım**|**Kaynak Bağlantısı**|
 |:- |:- |:- |:- |
-|/hücreler/görev/görev çalıştırma|POSTALAMAK|Görevi Çalıştır|[Çalıştırma Görevi Sonrası](https://apireference.aspose.cloud/cells/#/Task/PostRunTask)|
+|/hücreler/görev/çalıştırma görevi|POSTALAMAK|Görevi Çalıştır|[Çalıştırma SonrasıGörev](https://apireference.aspose.cloud/cells/#/Task/PostRunTask)|
 
- bu[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData) herkesin erişebileceği bir programlama arabirimi tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData) herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
 
- Kullanabilirsiniz**cURL** Aspose.Cells web hizmetlerine kolayca erişmek için komut satırı aracı. Aşağıdaki örnek, cURL ile Cloud API'e nasıl çağrı yapılacağını gösterir.
+ Kullanabilirsiniz**cURL** Aspose.Cells web hizmetlerine kolayca erişmek için komut satırı aracı. Aşağıdaki örnekte, cURL ile Cloud API'e nasıl çağrı yapılacağı gösterilmektedir.
 
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
@@ -377,7 +377,7 @@ HttpResponseMessage with the operation result.
 
 ## Bulut SDK Ailesi
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, alt düzey ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen kontrol edin[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+ SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük düzeyli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanıza olanak tanır. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
 
-Aşağıdaki kod örnekleri, çeşitli SDK'lar kullanılarak Aspose.Cells web hizmetlerine nasıl çağrı yapılacağını gösterir:
+Aşağıdaki kod örnekleri, çeşitli SDK'ları kullanarak Aspose.Cells web hizmetlerine nasıl çağrı yapılacağını gösterir:
 

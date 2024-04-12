@@ -1,17 +1,17 @@
 ﻿---
-title: Excel çalışma sayfasından aralık içeriği nasıl güncellenir?
+title: Excel çalışma sayfasından aralık içeriği nasıl güncelleştirilir?
 second_title: Aspose.Cells Cloud Documen
-linktitle: güncelleme
+linktitle: Güncelleme
 type: docs
 url: /tr/ranges/update/
 keywords: How to update range content from an Excel worksheet
-description: Aspose.Cells Cloud REST API, aralık içeriğini bir Excel Çalışma Sayfasından güncellemeyi destekler. SDK, geliştirme dili türlerini destekler. Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift'i içerir
+description: Aspose.Cells Cloud REST API, Excel Çalışma Sayfasından aralık içeriğinin güncellenmesini destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 20
 ---
-## Excel çalışma sayfasında güncelleme aralığı içeriğiyle çalışma.
+## Excel çalışma sayfasında aralık içeriğinin güncelleştirilmesiyle çalışma.
 
 
 - [Excel çalışma sayfasında aralık stili nasıl ayarlanır?](/cells/tr/ranges/update/style/) 
-- [Excel çalışma sayfasında aralık değerleri nasıl ayarlanır.](/cells/tr/ranges/update/values/) 
+- [Excel çalışma sayfasında aralık değerleri nasıl ayarlanır?](/cells/tr/ranges/update/values/) 
 - [Excel çalışma sayfasında aralığın satır yükseklikleri nasıl ayarlanır?](/cells/tr/ranges/update/row-height/) 
-- [Excel çalışma sayfasında aralığın sütun genişlikleri nasıl ayarlanır?](/cells/tr/ranges/update/column-width/) 
+- [Excel çalışma sayfasında aralık sütun genişlikleri nasıl ayarlanır?](/cells/tr/ranges/update/column-width/) 

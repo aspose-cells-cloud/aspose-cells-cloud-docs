@@ -19,7 +19,7 @@ Representerar en cell, en rad, en kolumn, ett urval av celler som innehåller et
 - [Ändra bredden på kolumner inom området](/cells/sv/change-widths-of-columns-inside-the-range/)
 - [Kombinerar ett intervall på Cells till en enda cell](/cells/sv/combines-a-range-of-cells-into-a-single-cell/)
 - [Kopiera intervall i ett kalkylblad med inklistringsalternativ](/cells/sv/copy-range-in-a-worksheet-with-paste-options/)
-- [Ställ in stilen för intervallet](/cells/sv/set-the-style-of-the-range/)
+- [Ställ in Style of the Range](/cells/sv/set-the-style-of-the-range/)
 - [Unmerge Merged Cells av Range](/cells/sv/unmerge-merged-cells-of-the-range/)
 - [Flytta en namngiven ranged med ett Excel kalkylblad](/cells/sv/move-a-named-ranged-with-a-excel-worksheet/)
 - [Ställ in intervallvärde i arbetsbladet Excel](/cells/sv/ranges/set-value/)

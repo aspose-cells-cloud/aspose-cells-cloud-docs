@@ -5,7 +5,7 @@ url: /tr/charts/add/
 aliases: [/add-a-chart-in-a-worksheet/]
 weight: 20
 ---
-Bu REST API, çalışma sayfasına yeni bir grafik eklediğini gösterir.
+Bu REST API, çalışma sayfasına yeni bir grafik eklendiğini gösterir.
  
 ## RSET API
  
@@ -20,26 +20,26 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts
 |:- |:- |:- |:- |
 | isim| sicim| yol| Çalışma kitabı adı.|
 | sayfaAdı| sicim| yol| Çalışma sayfası adı.|
-| grafik tipi| sicim| sorgu| Grafik tipi, lütfen grafik kaynağındaki Tip özelliğine bakın.|
+| grafik tipi| sicim| sorgu| Grafik türü, lütfen grafik kaynağındaki Tür özelliğine bakın.|
 | üstSolSatır| tamsayı| sorgu|0 |
 | üstSol Sütun| tamsayı| sorgu|0 |
 | altSağSatır| tamsayı| sorgu|0 |
-| altSağSütun| tamsayı| sorgu|0 |
-| alan| sicim| sorgu| Veri serisinin çizileceği değerleri belirtir.|
-| isDikey| mantıksal| sorgu| Doğru|
-| kategoriVeri| sicim| sorgu| Eksen değerleri kategorisinin aralığını alır veya ayarlar. Bir hücre aralığı olabilir ("d1:e10" gibi).|
-| isAutoGetSeriAdı| mantıksal| sorgu| Doğru|
-| başlık| sicim| sorgu| Grafik başlık adını belirtir.|
+| altSağ Sütun| tamsayı| sorgu|0 |
+| alan| sicim| sorgu| Veri serisinin grafiğinin çizileceği değerleri belirtir.|
+| Dikey| boolean| sorgu| Doğru|
+| kategoriVeri| sicim| sorgu| Kategori Eksen değerlerinin aralığını alır veya ayarlar. Bir dizi hücre olabilir ("d1:e10" gibi).|
+| isAutoGetSerialName| boolean| sorgu| Doğru|
+| başlık| sicim| sorgu| Grafik başlığı adını belirtir.|
 | dosya| sicim| sorgu| Çalışma kitabı klasörü.|
 | depolamaAdı| sicim| sorgu| depolama adı.|
-|veri etiketleri| mantıksal| sorgu| Doğru|
-| veriEtiketleriPozisyonu| sicim| sorgu| Üstünde|
-| pivotTableSayfası| sicim| sorgu||
+|veri etiketleri| boolean| sorgu| Doğru|
+| veriEtiketlerKonum| sicim| sorgu| Üstünde|
+| pivotTableSheet| sicim| sorgu||
 | pivotTableAdı| sicim| sorgu||
  
- bu[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Charts/PutWorksheetAddChart) herkesin erişebileceği bir programlama arabirimi tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Charts/PutWorksheetAddChart) herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
  
-Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Cloud API'e nasıl çağrı yapılacağını gösterir.
+Aspose.Cells web servislerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnekte, cURL ile Cloud API'e nasıl çağrı yapılacağı gösterilmektedir.
 
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
@@ -78,9 +78,9 @@ curl  -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cha
 
 ## Bulut SDK Ailesi
  
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, alt düzey ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen kontrol edin[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+ SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük düzeyli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanıza olanak tanır. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
  
-Aşağıdaki kod örnekleri, çeşitli SDK'lar kullanılarak Aspose.Cells web hizmetlerine nasıl çağrı yapılacağını gösterir:
+Aşağıdaki kod örnekleri, çeşitli SDK'ları kullanarak Aspose.Cells web hizmetlerine nasıl çağrı yapılacağını gösterir:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Objective C" tabName8="Perl" tabName9="Android" tabName10="Go" >}}
 

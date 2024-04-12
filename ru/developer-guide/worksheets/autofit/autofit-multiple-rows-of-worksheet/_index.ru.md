@@ -1,12 +1,12 @@
 ﻿---
-title: Автоподбор нескольких строк на рабочем листе Excel
+title: Автоподбор нескольких строк на листе Excel
 second_title: Aspose.Cells Cloud Documen
 linktitle: Ряд
 type: docs
 url: /ru/worksheets/autofit/rows/
 aliases: [/autofit-multiple-rows-of-worksheet/]
 keywords: Autofit rows on an Excel workshee
-description: Aspose.Cells Cloud REST API поддерживает автоподбор строк на листе Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и swift.
+description: Aspose.Cells Cloud REST API поддерживает автоматическую подгонку строк на листе Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 40
 ---
 Этот REST API указывает на автоподбор строк на листе Excel.
@@ -24,16 +24,16 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitrow
 |:- |:- |:- |:- |
 | имя| нить| путь| Название документа.|
 | имя листа| нить| путь| Имя рабочего листа.|
-| autoFitterOptions|| тело| Параметры автоустановщика.|
-| startRow| целое число| запрос| Стартовый ряд.|
-| endRow| целое число| запрос| Конечный ряд.|
-| толькоАвто| логический| запрос| ЛОЖЬ|
+| Параметры автоподборщика|| тело| Параметры автоустановщика.|
+| startRow| целое число| запрос| Начать ряд.|
+| эндРов| целое число| запрос| Конечный ряд.|
+| толькоавто| логическое значение| запрос| ЛОЖЬ|
 | папка| нить| запрос| Папка документа.|
 | имя_хранилища| нить| запрос| имя хранилища.|
  
-[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostAutofitWorksheetRows) определяет общедоступный программный интерфейс и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Worksheets/PostAutofitWorksheetRows) определяет общедоступный интерфейс программирования и позволяет выполнять взаимодействие с REST непосредственно из веб-браузера.
  
-Вы можете использовать инструмент командной строки cURL для простого доступа к веб-службам Aspose.Cells. В следующем примере показано, как звонить в Cloud API с номером cURL.
+Вы можете использовать инструмент командной строки cURL для легкого доступа к веб-службам Aspose.Cells. В следующем примере показано, как позвонить на Cloud API с помощью cURL.
  
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
  
@@ -68,9 +68,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/sampleAutoFit.xlsx/worksheets/Sheet1
  
 ## Семейство облачных SDK
  
- Использование SDK — лучший способ ускорить разработку. SDK позаботится о низкоуровневых деталях и позволит вам сосредоточиться на задачах вашего проекта. Пожалуйста, ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) полный список Aspose.Cells Cloud SDK.
+ Использование SDK — лучший способ ускорить разработку. SDK заботится о деталях низкого уровня и позволяет вам сосредоточиться на задачах проекта. Пожалуйста, ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для получения полного списка Aspose.Cells Cloud SDK.
  
-В следующих примерах кода показано, как выполнять вызовы веб-служб Aspose.Cells с помощью различных SDK.
+Следующие примеры кода демонстрируют, как выполнять вызовы веб-служб Aspose.Cells с использованием различных SDK:
  
  
  

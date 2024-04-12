@@ -1,15 +1,15 @@
 ﻿---
-title: Effacer la modification du mot de passe du classeur Excel
+title: Effacer Modifier le mot de passe du classeur Excel
 second_title: Aspose.Cells Cloud Documen
 linktitle: Supprimer
 type: docs
 url: /fr/workbook/password/clear/
 aliases: [/clear-modify-password-of-excel-workbooks/,/workbook/clear-modify-password/]
 keywords: Delete password on an Excel workbook
-description: Aspose.Cells Cloud REST API prend en charge la suppression du mot de passe sur un classeur Excel. SDK prend en charge les types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift
+description: Aspose.Cells Cloud REST API prend en charge la suppression du mot de passe sur un classeur Excel. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 110
 ---
-Ce REST API indique de déprotéger le document des modifications.
+Ce REST API indique de déprotéger le document contre les modifications.
  
 ## RSET API
  
@@ -20,13 +20,13 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/writeProtection
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/chaîne de requête/HTTPBody|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Le nom du document.|
 | dossier| chaîne| requête| Dossier du document.|
-| nom_stockage| chaîne| requête| nom de stockage.|
+| Nom de stockage| chaîne| requête| nom de stockage.|
  
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDocumentUnprotectFromChanges) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
+ Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDocumentUnprotectFromChanges) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement depuis un navigateur Web.
  
 Vous pouvez utiliser l'outil de ligne de commande cURL pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment passer des appels vers le Cloud API avec cURL.
  
@@ -60,9 +60,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xlsx/writeProtecti
  
 {{< /tabs >}}
  
-## Famille SDK Cloud
+## Famille de SDK Cloud
  
- L'utilisation d'un SDK est le meilleur moyen d'accélérer le développement. Un SDK prend en charge les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Veuillez consulter le[Référentiel GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Cloud Aspose.Cells.
+ Utiliser un SDK est le meilleur moyen d’accélérer le développement. Un SDK prend en charge les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Veuillez consulter le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
  
 Les exemples de code suivants montrent comment effectuer des appels vers les services Web Aspose.Cells à l'aide de divers SDK :
  

@@ -1,17 +1,17 @@
 ﻿---
-title: أضف معيارًا مخصصًا في Excel Workhee
+title: إضافة معايير مخصصة في ورقة عمل Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: أضف ملفًا مخصصًا
+linktitle: إضافة فلتر مخصص
 type: docs
 url: /ar/autofilter/add-custom-filter/ 
 aliases: [/filter-a-list-with-a-custom-criteria/,/autofilter/add-a-custom-filter/ ]
 keywords: Adds a custom filter on an Excel worksheet
-description: يدعم Aspose.Cells Cloud API إضافة عامل تصفية مخصص على ورقة عمل Excel. يدعم SDK أنواع لغات التطوير. وهي تشمل Android و C# و Go و Java و NodeJS و Perl و PHP و Python و Ruby و swift
+description: يدعم Aspose.Cells Cloud API إضافة مرشح مخصص في ورقة عمل Excel. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 65
 ---
-يشير هذا REST API إلى تصفية قائمة باستخدام `custom criteria`.
+يشير REST API إلى تصفية قائمة برقم `custom criteria`.
             
-## RSET API
+## رسيت API
  
 ```bash
  
@@ -20,23 +20,23 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/
 ```
  معلمات الطلب هي:
  
-| اسم المعلمة| يكتب| المسار / سلسلة الاستعلام / HTTPBody|وصف|
+| اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/HTTPBody|وصف|
 |:- |:- |:- |:- |
 | اسم| خيط| طريق||
 | اسم الورقة| خيط| طريق||
 | يتراوح| خيط| استفسار||
-| الفهرس الميداني| عدد صحيح| استفسار||
-| نوع المشغل 1| خيط| استفسار||
-| معايير 1| خيط| استفسار||
-| هو و| قيمة منطقية| استفسار||
-| نوع المشغل 2| خيط| استفسار||
-| معايير 2| خيط| استفسار||
-| ماتش بلانكس| قيمة منطقية| استفسار||
-| ينعش| قيمة منطقية| استفسار||
+| fieldIndex| عدد صحيح| استفسار||
+| نوع المشغل1| خيط| استفسار||
+| المعايير1| خيط| استفسار||
+| isAnd| منطقية| استفسار||
+| نوع المشغل2| خيط| استفسار||
+| المعايير2| خيط| استفسار||
+| matchBlanks| منطقية| استفسار||
+| ينعش| منطقية| استفسار||
 | مجلد| خيط| استفسار||
 | اسم التخزين| خيط| استفسار| اسم التخزين.|
  
- ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetCustomFilter) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك إجراء تفاعلات REST مباشرة من مستعرض ويب.
+ ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetCustomFilter) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك تنفيذ تفاعلات REST مباشرة من متصفح الويب.
  
 يمكنك استخدام أداة سطر الأوامر cURL للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
 
@@ -76,9 +76,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFil
 
 ## عائلة Cloud SDK
  
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. يعتني SDK بالتفاصيل منخفضة المستوى ويتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة من Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
  
-توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام حزم SDK متنوعة:
+توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" >}}
 

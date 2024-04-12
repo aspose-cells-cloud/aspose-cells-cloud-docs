@@ -1,26 +1,26 @@
 ﻿---
-title: Получает файл Excel в другой формат
+title: Получает файл Excel в другой формат.
 second_title: Aspose.Cells Cloud Documen
-linktitle: Ge
+linktitle: Ге
 type: docs
 url: /ru/export-different-formats/
 aliases: [/export-excel-workbook-to-different-file-formats/]
 keywords: Get excel files to kinds of format files
-description: Aspose.Cells Cloud REST API поддерживает преобразование файлов Excel в различные форматы файлов. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и swift.
+description: Aspose.Cells Cloud REST API поддерживает преобразование файлов Excel в различные форматы файлов. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 10
 ---
-Этот REST API указывает на файл excel `get` в файл другого формата.
+Этот REST API указывает на файл Excel `get` в файл другого формата.
 
 
 **Параметр запроса**
 
 |Имя параметра|Тип|Описание|
 |:- |:- |:- |
-|формат|нить| формат файла (csv/xls/html/mhtml/ods/pdf/xml/txt/tiff/xlsb/xlsm/xlsx/xltm/xltx/xps/png/jpg/gif/emf/bmp/md/числа/wmf/svg )|
+|формат|нить| формат файла (csv/xls/html/mhtml/ods/pdf/xml/txt/tiff/xlsb/xlsm/xlsx/xltm/xltx/xps/png/jpg/gif/emf/bmp/md/Numbers/wmf/svg )|
 |пароль|нить||
 |isAutoFit|нить|правда/ложь|
-|толькоСохранитьТаблицу|нить|правда/ложь|
-|выходной путь|нить|новая позиция в файле.|
+|толькоSaveTable|нить|правда/ложь|
+|outPath|нить|новая позиция файла.|
 |папка|нить|Оригинальная папка с рабочей тетрадью.|
 |имя_хранилища|нить|Имя хранилища.|
 
@@ -28,14 +28,14 @@ weight: 10
 
 ## ОТДЫХ API
 
-|**API**|**Тип**|**Описание**|**Свэггер Ссылка**|
+|**API**|**Тип**|**Описание**|**Сваггер Ссылка**|
 |:- |:- |:- |:- |
-|/ячейки/{имя}|ПОЛУЧАТЬ|Экспорт книги в другой формат.|[GetWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)|
+|/cells/{имя}|ПОЛУЧАТЬ|Экспортирует книгу в другой формат.|[GetWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)|
 
 
-[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook) определяет общедоступный программный интерфейс и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
+[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook) определяет общедоступный интерфейс программирования и позволяет выполнять взаимодействие с REST непосредственно из веб-браузера.
 
- Вы можете использовать**cURL** инструмент командной строки для простого доступа к веб-службам Aspose.Cells. В следующем примере показано, как совершать звонки в Cloud API с номером cURL.
+ Вы можете использовать**cURL** инструмент командной строки для легкого доступа к веб-службам Aspose.Cells. В следующем примере показано, как позвонить на Cloud API с помощью cURL.
 
 
 {{< tabs tabTotal="1" tabID="11" tabName11="Request" >}}
@@ -53,9 +53,9 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/book1.xlsx?format=pdf" -H "acce
 
 ## Семейство облачных SDK
 
- Использование SDK — лучший способ ускорить разработку. SDK позаботится о низкоуровневых деталях и позволит вам сосредоточиться на задачах вашего проекта. Пожалуйста, ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) полный список Aspose.Cells Cloud SDK.
+ Использование SDK — лучший способ ускорить разработку. SDK заботится о деталях низкого уровня и позволяет вам сосредоточиться на задачах проекта. Пожалуйста, ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для получения полного списка Aspose.Cells Cloud SDK.
 
-В следующих примерах кода показано, как выполнять вызовы веб-служб Aspose.Cells с помощью различных SDK.
+Следующие примеры кода демонстрируют, как выполнять вызовы веб-служб Aspose.Cells с использованием различных SDK:
 
 
 {{< tabs tabTotal="3" tabID="3" tabName1="C#" tabName2="Java" tabName3="Go" >}}

@@ -6,26 +6,26 @@ url: /es/docker/run/
 description: Cómo ejecutar Aspose.Cells Cloud para Docker
 weight: 30
 ---
-## Puerto expuesto
+## Exponer puerto
 
 Puerto | Descripción | Requerido
 ---|:--:|---:
-5000 | Carpeta con fuentes, que se utilizará para renderizar documentos | verdadero
+5000 | Carpeta con fuentes, que se utilizará para representar documentos | verdadero
 
 
 ##  Volúmenes requeridos ##
-Ruta de montaje en contenedor | Descripción | Requerido
+Montar ruta en contenedor | Descripción | Requerido
 ---|:--:|---:
-C:\fuentes | Carpeta con fuentes, que se utilizará para renderizar documentos | FALSO
+C:\fuentes | Carpeta con fuentes, que se utilizará para representar documentos | FALSO
 C:\datos | Carpeta de almacenamiento de archivos | FALSO
 
 ##  Ejecutar parámetros ##
 
 Nombre | Descripción | Requerido
 ---|:--:|---:
-LicensePublicKey | Clave pública de la licencia | verdadero
-LicenciaPrivateKey | Clave privada de la licencia | verdadero
-almacenamientosCredentialsFilePath | Ruta del archivo de configuración de almacenamiento. El archivo predeterminado es ./storageResource.json | verdadero
+LicenciaPublicKey | Clave pública de la licencia | verdadero
+LicenciaClavePrivada | Clave privada de la licencia | verdadero
+almacenamientosCredencialesFilePath | Ruta del archivo de configuración del almacenamiento. El archivo predeterminado es ./storageResource.json | verdadero
 
 ##  Ejecutar comando ##
 
@@ -56,4 +56,4 @@ docker run  -d  -p 47900:5000  -e LicensePublicKey=yourLicensePublicKey	 -e Lice
 
 
 **Documento de referencia** : 
-  - [Ejecutar ventana acoplable]( https://docs.docker.com/engine/reference/commandline/run/)
+  - [Ejecución de ventana acoplable]( https://docs.docker.com/engine/reference/commandline/run/)

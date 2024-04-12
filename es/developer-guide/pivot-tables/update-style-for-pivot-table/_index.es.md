@@ -6,12 +6,12 @@ type: docs
 url: /es/pivot-tables/format-all/
 aliases: [/update-style-for-pivot-table/]
 keywords: Update all cell style for a pivot table
-description: Aspose.Cells Cloud REST API admite la actualización de todos los estilos de celda para una tabla dinámica. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift
+description: Aspose.Cells Cloud REST API admite la actualización de todos los estilos de celda para una tabla dinámica. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 100
 ---
-Este REST API indica el estilo `update` para la mesa pivotante
+Este REST API indica el estilo `update` para la tabla dinámica
  
-## RESET API
+## RSET API
  
 ```bash
  
@@ -23,12 +23,12 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottable
 | Nombre del parámetro| Tipo| Ruta/Cadena de consulta/Cuerpo HTTP|Descripción|
 |:- |:- |:- |:- |
 | nombre| cadena| camino| Nombre del documento.|
-| hojaNombre| cadena| camino| El nombre de la hoja de cálculo.|
-| ÍndiceDeTablaPivotante| entero| camino| Índice de tabla dinámica|
+| nombre de la hoja| cadena| camino| El nombre de la hoja de trabajo.|
+| índice de tabla dinámica| entero| camino| Índice de tabla dinámica|
 | estilo|| cuerpo| Estilo dto en el cuerpo de la solicitud.|
-| necesitarecalcular| booleano| consulta| FALSO|
+| necesitaReCalcular| booleano| consulta| FALSO|
 | carpeta| cadena| consulta| Carpeta del documento.|
-| NombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
+| nombredealmacenamiento| cadena| consulta| nombre del almacenamiento.|
  
  El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/PivotTables/PostPivotTableStyle) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
  
@@ -65,11 +65,11 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/workshe
  
 {{< /tabs >}}
  
-## Familia SDK de la nube
+## Familia de SDK en la nube
  
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se ocupa de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor, echa un vistazo a la[repositorio GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de Cloud.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor revisa el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de nube.
  
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código demuestran cómo realizar llamadas a servicios web Aspose.Cells utilizando varios SDK:
  
  
  

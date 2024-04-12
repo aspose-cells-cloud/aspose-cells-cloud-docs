@@ -17,7 +17,7 @@ Questo API fa parte della suite di strumenti di manipolazione dei documenti basa
 
 ## Chi dovrebbe utilizzare le API Cloud Aspose.Cells?
 
-Il Cloud Aspose.Cells API è uno strumento eccellente per gli sviluppatori di tutti i livelli, dai principianti a quelli a livello aziendale. È uno strumento di sviluppo office basato su cloud progettato per facilitare la conversione, la generazione e la modifica di fogli di calcolo. Questo strumento è relativamente semplice da comprendere per i principianti. Lo API supporta una varietà di funzioni come la modifica, l'unione e la divisione dei fogli di calcolo e la conversione dei fogli di calcolo in vari formati di file. Inoltre, consente la manipolazione di dati di fogli di calcolo, stili, formule, tabelle, grafici, tabelle pivot, intestazioni, piè di pagina, commenti, oggetti di disegno, collegamenti ipertestuali e filigrane.
+Il Cloud Aspose.Cells API è uno strumento eccellente per gli sviluppatori di tutti i livelli, dai principianti a quelli a livello aziendale. È uno strumento di sviluppo office basato su cloud progettato per facilitare la conversione, la generazione e la modifica di fogli di calcolo. Questo strumento è relativamente semplice da comprendere per i principianti. Lo API supporta una varietà di funzioni come la modifica, l'unione e la divisione di fogli di calcolo e la conversione di fogli di calcolo in vari formati di file. Inoltre, consente la manipolazione di dati di fogli di calcolo, stili, formule, tabelle, grafici, tabelle pivot, intestazioni, piè di pagina, commenti, oggetti di disegno, collegamenti ipertestuali e filigrane.
 
 
 ## Come utilizzare le API Cloud Aspose.Cells?

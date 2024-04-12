@@ -1,9 +1,9 @@
 ﻿---
-title: Depo
+title: Depolama
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/docker/storage/
-description: Aspose.Cells Cloud for Docker hakkında depolama konumu nasıl ayarlanır?
+description: Docker için Aspose.Cells Cloud hakkında depolama konumu nasıl ayarlanır?
 weight: 30
 ---
 ##  Varsayılan Depolama Yapılandırması ##
@@ -56,7 +56,7 @@ c:\app\storageResource.json
 
 ```
 
-- **linux**
+- **Linux**
 
 ```linux
 
@@ -67,7 +67,7 @@ c:\app\storageResource.json
 
 ##  Özel Depolama Yapılandırması ##
 
-Müşteri, depolama klasörünü belirttiğinde, Aspose.Cells Bulut görüntü dosyası için depolama profilini yeniden belirtmeniz gerekir.
+Müşterinin depolama klasörünü belirtmesi gerektiğinde Aspose.Cells Bulut görüntü dosyası için depolama profilinin yeniden belirtilmesi gerekiyor.
 
 ``` powershell
 
@@ -76,4 +76,4 @@ docker run  -d  -v c:/data:c:/data  -p 47900:5000  -e LicensePublicKey=yourLicen
 ```
 
 **Referans Belgesi** : 
-  - [Docker Çalıştır]( https://docs.docker.com/engine/reference/commandline/run/)
+  - [Docker Çalıştırması]( https://docs.docker.com/engine/reference/commandline/run/)

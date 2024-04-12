@@ -8,8 +8,8 @@ weight: 40
 ---
 ## Aspose Formulaire de contact
 ### Puis-je utiliser le plugin Aspose Contact Form sans avoir de compte sur aspose.cloud ?
- Oui, maintenant le plugin Aspose Contact Form est GRATUIT et donc pas besoin d'avoir un compte sur[aspose.cloud](https://www.aspose.cloud/)
-### Puis-je utiliser d'autres fichiers pour ajouter des formulaires sur mon site ?
+ Oui, le plugin Contact Form Aspose est désormais GRATUIT et donc pas besoin d'avoir un compte sur[aspose.cloud](https://www.aspose.cloud/)
+### Puis-je utiliser d’autres fichiers pour ajouter des formulaires sur mon site Web ?
 Non, ce plugin ne prend en charge que les fichiers MS Excel.
-### Qu'est-ce que le SID d'application ? Que dois-je savoir à ce sujet ?
+### Qu’est-ce que le SID de l’application ? Que dois-je savoir à ce sujet ?
 App SID est un identifiant unique associé à votre site Web WordPress. Notre personnel d'assistance peut en avoir besoin pour diagnostiquer les problèmes sur votre site Web, le cas échéant. Vous pouvez le trouver sur la page des paramètres du plugin.

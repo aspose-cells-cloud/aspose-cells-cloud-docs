@@ -1,17 +1,17 @@
 ﻿---
 title: Toplu Verileri Excel Çalışma Sayfasına Aktarın
 second_title: Aspose.Cells Cloud Documen
-linktitle: Toplu veriyi içe aktar
+linktitle: Toplu verileri içe aktar
 type: docs
 url: /tr/import/batch-data/
 aliases: [/import-batch-data-into-excel-worksheet/,/import-batch-data-into-worksheet/,/import-data/batch-data/]
 keywords: Import batch data into Excel files
-description: Aspose.Cells Cloud REST API, toplu verilerin Excel dosyalarına aktarılmasını destekler. SDK, geliştirme dili türlerini destekler. Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift'i içerir
+description: Aspose.Cells Cloud REST API, toplu verilerin Excel dosyalarına aktarılmasını destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 19
 ---
-Bu REST API `import batch data`, Excel çalışma sayfasına.
+Bu REST API `import batch data`'i Excel çalışma sayfasına dönüştürün.
 
-İstek, çok parçalı içeriğe sahip bir HTTP isteğidir (bkz.[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)veya[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). Çok parçalı içeriğin ilk bölümü ImportBatchDataOption verilerini içerir ve ikincisi bir veri dosyası içerir.
+İstek, çok parçalı içeriğe sahip bir HTTP isteğidir (bkz.[RFC2046](http://tools.ietf.org/html/rfc2046#page-17)veya[RFC1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). Çok parçalı içeriğin ilk kısmı ImportBatchDataOption verilerini, ikincisi ise bir veri dosyasını içerir.
 
 ## RSET API
 
@@ -25,15 +25,15 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/import-data
 Önemli parametreler aşağıdaki tabloda açıklanmıştır:
 
 
-**ImportBatchDataOption**
+**Toplu Verileri İçe Aktarma Seçeneği**
 
 |Parametre adı|Tip|Tanım|
 |:- |:- |:- |
 | Toplu Veri|Liste<CellValue> | toplu veri|
 | HedefÇalışma Sayfası| sicim| hedef çalışma sayfası adı.|
-| Eklemek| sicim| doğru yanlış.|
-| ImportDataType| sicim|IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData.|
-| Kaynak| Dosya Kaynağı| BatchData parametresi boş olduğunda veri dosyası konumunu gösterir.|
+| Ekle| sicim| doğru yanlış.|
+| Veri Türü İçe Aktarma| sicim|IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData.|
+| Kaynak| Dosya Kaynağı| BatchData parametresi null olduğunda veri dosyası konumunu gösterir.|
 
 
 
@@ -41,8 +41,8 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/import-data
 
 |Parametre adı|Tip|Tanım|
 |:- |:- |:- |
-| satır dizini| int||
-| sütun dizini| int||
+| satırIndex| int||
+| sütunIndex| int||
 | tip| sicim| veri tipi|
 | değer| sicim||
 | stil| Stil(nesne)||
@@ -52,7 +52,7 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/import-data
 **Dosya Kaynağı**
 |Parametre adı|Tip|Tanım|
 |:- |:- |:- |
-| Dosya Kaynağı Türü| sicim| InMemoryFiles/CloudFileSystem/RequestFiles|
+| DosyaKaynak Türü| sicim| InMemoryFiles/CloudFileSystem/RequestFiles|
 | Dosya yolu| sicim| dosya konumu|
 
 
@@ -76,9 +76,9 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/import-data
 
 ## Bulut SDK Ailesi
 
- Bir SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, alt düzey ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanızı sağlar. Lütfen kontrol edin[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+ SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük düzeyli ayrıntılarla ilgilenir ve proje görevlerinize odaklanmanıza olanak tanır. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
 
-Aşağıdaki kod örnekleri, çeşitli SDK'lar kullanılarak Aspose.Cells web hizmetlerine nasıl çağrı yapılacağını gösterir:
+Aşağıdaki kod örnekleri, çeşitli SDK'ları kullanarak Aspose.Cells web hizmetlerine nasıl çağrı yapılacağını gösterir:
 
 
 {{< tabs tabTotal="3" tabID="4" tabName1="C#" tabName2="PHP" tabName3="Ruby" >}}

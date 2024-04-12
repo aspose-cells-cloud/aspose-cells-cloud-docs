@@ -1,17 +1,17 @@
 ﻿---
 title: Eliminar metadatos en archivos Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: Eliminar sin usar el almacenamiento
+linktitle: Eliminar sin usar storag
 type: docs
 url: /es/metadata/delete/
 keywords: Deleting metadata from Excel files
-description: Aspose.Cells Cloud REST API admite la eliminación de metadatos de archivos de Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift
+description: Aspose.Cells Cloud REST API admite la eliminación de metadatos de archivos de Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 55
 ---
-Este REST API indica eliminar `metadata` de varios archivos Excel.
+Este REST API indica que se debe eliminar `metadata` de varios archivos Excel.
 
 
-## RESET API
+## RSET API
  
 ```bash
  
@@ -71,12 +71,12 @@ curl -v "http://api.aspose.cloud/v3.0/cells/metadata/delete" \
  
 {{< /tabs >}}
  
-## Familia SDK de la nube
+## Familia de SDK en la nube
 
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se ocupa de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor, echa un vistazo a la[repositorio GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de Cloud.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor revisa el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de nube.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código demuestran cómo realizar llamadas a servicios web Aspose.Cells utilizando varios SDK:
 
 
 {{< tabs tabTotal="9" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" tabName9="Python" >}}

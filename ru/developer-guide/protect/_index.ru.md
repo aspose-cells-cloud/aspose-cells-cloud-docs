@@ -1,11 +1,11 @@
 ﻿---
-title: Защитить книгу
+title: Защитить рабочую папку
 second_title: Aspose.Cells Cloud Documen
 linktitle: Протек
 type: docs
 url: /ru/protect/
 keywords: Protect and unprotect Excel workbook
-description: Aspose.Cells Cloud REST API поддержка защиты и снятия защиты Excel книги. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и swift.
+description: Aspose.Cells Cloud REST API поддерживает защиту и снятие защиты Excel книги. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 36
 ---
 **Как защитить файлы Excel.**
@@ -17,6 +17,6 @@ weight: 36
 
 **Как снять защиту с файлов Excel.**
 
-- [Как расшифровать книги Excel.](/cells/ru/workbook/decrypt/)
+- [Как расшифровать рабочие тетради Excel.](/cells/ru/workbook/decrypt/)
 - [Как снять защиту с книг Excel.](/cells/ru/workbook/unprotect/)
 - [Как разблокировать файлы Excel без использования хранилища](/cells/ru/unlock/without-using-storage/)

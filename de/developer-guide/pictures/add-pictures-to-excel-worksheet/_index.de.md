@@ -27,7 +27,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
 | Bild|| Körper| Bildobjekt|
 | UpperLeftRow| ganze Zahl| Abfrage|0 |
 | UpperLeftColumn| ganze Zahl| Abfrage|0 |
-| untereRechteRow| ganze Zahl| Abfrage|0 |
+| LowerRightRow| ganze Zahl| Abfrage|0 |
 | LowerRightColumn| ganze Zahl| Abfrage|0 |
 | picturePath| Zeichenfolge| Abfrage| Der Bildpfad, falls nicht angegeben, werden die Bilddaten im Anforderungstext überprüft.|
 | Ordner| Zeichenfolge| Abfrage| Der Arbeitsmappenordner.|

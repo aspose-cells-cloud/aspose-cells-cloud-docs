@@ -6,31 +6,31 @@ type: docs
 url: /fr/saveas-other-formats/
 aliases: [/convert-excel-workbook-to-different-file-formats/]
 keywords: Save excel files as kinds of format files
-description: Aspose.Cells Cloud REST API prend en charge l'enregistrement des fichiers Excel en tant que types de fichiers de format. SDK prend en charge les types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift
+description: Aspose.Cells Cloud REST API prend en charge l'enregistrement des fichiers Excel sous forme de types de fichiers de format. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 30
 ---
-Ce REST API indique au fichier Excel `save` un fichier de format différent.
+Ce REST API indique le fichier Excel `save` comme fichier de format différent.
 
 **Paramètre de requête**
 
 |Le nom du paramètre|Taper|Description|
 |:- |:- |:- |
-|nouveaunomfichier|chaîne| nouveau nom de fichier|
+|nouveau nom de fichier|chaîne| nouveau nom de fichier|
 |isAutoFitRows|chaîne| vrai faux|
 |isAutoFitColumns|chaîne| vrai faux|
 |dossier|chaîne|Dossier de classeur d'origine.|
-|nom_stockage|chaîne|Nom de stockage.|
+|Nom de stockage|chaîne|Nom de stockage.|
 
 
 ## REPOS API
 
 |**API**|**Taper**|**Description**|**Lien vers la ressource**|
 |:- |:- |:- |:- |
-|/cellules/{nom}/saveAs|POSTE|Exporter le classeur au format|[PostDocumentEnregistrer sous](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)|
+|/cells/{nom}/saveAs|POSTE|Exporter le classeur au format|[PostDocumentEnregistrer sous](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)|
 
- Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) définit une interface de programmation accessible au public et permet d'effectuer des interactions REST directement depuis un navigateur Web.
+ Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement depuis un navigateur Web.
 
- Vous pouvez utiliser**cURL** outil de ligne de commande pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment passer des appels vers le Cloud API avec cURL.
+ Vous pouvez utiliser**cURL** outil de ligne de commande pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment passer des appels vers Cloud API avec cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
@@ -74,9 +74,9 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/sampleBook.xlsx/SaveAs?newfile
 
 {{< /tabs >}}
 
-## Famille SDK Cloud
+## Famille de SDK Cloud
 
- L'utilisation d'un SDK est le meilleur moyen d'accélérer le développement. Un SDK prend en charge les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Veuillez consulter le[Référentiel GitHub](https://github.com/aspose-cells-cloud) pour obtenir la liste complète des SDK Cloud Aspose.Cells.
+ Utiliser un SDK est le meilleur moyen d’accélérer le développement. Un SDK prend en charge les détails de bas niveau et vous permet de vous concentrer sur les tâches de votre projet. Veuillez consulter le[Dépôt GitHub](https://github.com/aspose-cells-cloud) pour une liste complète des SDK Cloud Aspose.Cells.
 
 Les exemples de code suivants montrent comment effectuer des appels vers les services Web Aspose.Cells à l'aide de divers SDK :
 

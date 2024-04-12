@@ -1,89 +1,89 @@
 ﻿---
-title: CellsObjectOperate Tas ile Çalışma
+title: CellsObjectOperate Tas ile Çalışmak
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/tasks/cells-object-operate/
 aliases: [/working-with-cellsobjectoperate-task/]
-description: "Cells.Cloud API için Excel çalıştır: hücreler nesnesi çalıştırma görevi"
+description: "Cells.Cloud API, Excel için çalışır: hücreler nesnesi çalıştırma görevi"
 weight: 20
 ---
-Bu REST API, `task` numaralı hücre nesnesini çalıştırır.
+Bu REST API, hücre nesnesi `task`'i çalıştırır.
 
-**Nesneyi Çalıştır**
+**OperateObject**
 
 |Parametre adı|Tip|Tanım|
 |:- |:- |:- |
-| OperateObjectType| sicim| Çalışma Kitabı/Çalışma Sayfası/PageSetup/Cells/Chart/Shape/ListObject/PivotTable/WorkbookSettings/PageBreak|
-| Nesne Konumunu Çalıştır| Nesne||
+| OperateObjectType| sicim| Çalışma Kitabı/Çalışma Sayfası/PageSetup/Cells/Grafik/Şekil/ListObject/PivotTable/WorkbookSettings/PageBreak|
+| OperateObjectPosition| Nesne||
 
-**Nesne Konumunu Çalıştır**
+**OperateObjectPosition**
 
 |Parametre adı|Tip|Tanım|
 |:- |:- |:- |
 | Çalışma kitabı| Nesne||
 | SayfaAdı| sicim||
-| ChartIndex| tamsayı||
-| şekil indeksi| tamsayı||
+| GrafikIndex| tamsayı||
+| ŞekilIndex| tamsayı||
 | HücreAdı| sicim||
 | ListObjectIndex| tamsayı||
 
 
-**GrafikİşletParametresi**
+**ChartOperateParameter**
 
 |Parametre adı|Tip|Tanım|
 |:- |:- |:- |
-| ChartIndex| tamsayı||
+| GrafikIndex| tamsayı||
 | Grafik tipi| sicim||
 | ÜstSolSatır| tamsayı||
-|Sol Üst Sütun| tamsayı||
+| ÜstSol Sütun| tamsayı||
 | AltSağSatır| tamsayı||
-| AltSağSütun| tamsayı||
+| Alt Sağ Sütun| tamsayı||
 | Alan| sicim||
-| Dikey mi| sicim| doğru yanlış|
-| KategoriVerileri| sicim||
-| IsAutoGetSeriAdı| sicim| doğru yanlış|
+| Dikey| sicim| doğru yanlış|
+| KategoriVeri| sicim||
+| IsAutoGetSerialName| sicim| doğru yanlış|
 | Alan| Başlık||
 
 **ListObjectOperateParameter** 
 
 |Parametre adı|Tip|Tanım|
 |:- |:- |:- |
-| Nesne Listesi| Nesne||
+| ListeObject| Nesne||
 
-**SayfaBreakİşletParametresi**
+**PageBreakOperateParametre**
 
 |Parametre adı|Tip|Tanım|
 |:- |:- |:- |
-| SayfaBreakTürü| sicim||
-| dizin| dizin||
+| Sayfa Sonu Türü| sicim||
+| Dizin| Dizin||
 | Sıra| tamsayı||
 | Kolon| tamsayı||
 | Dizini başlat| tamsayı||
 | EndIndex| tamsayı||
 
 
-**SayfaKurulumİşletParametresi**
+**PageSetupOperateParameter**
 
 |Parametre adı|Tip|Tanım|
 |:- |:- |:- |
 | Sayfa ayarı| Nesne||
 
 
-**PivotTableİşletParametresi**
+**PivotTableOperateParametresi**
 
 |Parametre adı|Tip|Tanım|
 |:- |:- |:- |
-| Hedef HücreAdı| sicim||
-| KaynakVeri| sicim||
+| DestHücreAdı| sicim||
+| KaynakVerileri| sicim||
 | Tablo ismi| sicim||
-| UseSameSource| sicim| doğru yanlış|
-| Özet Tablo Dizini| tamsayı||
-| PivotAlanSatırları|tamsayı[]||
-| Özet Alan Sütunları|tamsayı[]||
-|PivotAlanVerileri|tamsayı[]||
+| Aynı Kaynağı Kullan| sicim| doğru yanlış|
+| PivotTableIndex| tamsayı||
+| PivotFieldSatırlar|tamsayı[]||
+| PivotFieldSütunlar|tamsayı[]||
+|PivotFieldData|tamsayı[]||
 
 
-**ShapeOperateParameter**
+**ShapeOperateParametre**
 
 
 |Parametre adı|Tip|Tanım|
@@ -91,14 +91,14 @@ Bu REST API, `task` numaralı hücre nesnesini çalıştırır.
 | Şekil| Nesne||
 
 
-**WorkbookSettingsOperateParameter**
+**Çalışma KitabıAyarlarıOperateParametresi**
 
 
 |Parametre adı|Tip|Tanım|
 |:- |:- |:- |
-| Çalışma Kitabı Ayarları| Nesne||
+| Çalışma KitabıAyarları| Nesne||
 
-**Çalışma SayfasıİşletParametresi**
+**Çalışma SayfasıOperateParametre**
 
 
 |Parametre adı|Tip|Tanım|
@@ -106,13 +106,13 @@ Bu REST API, `task` numaralı hücre nesnesini çalıştırır.
 | İsim| sicim||
 | Sayfa Türü| sicim||
 | Yeni isim| sicim||
-| Taşınma Talebi| Nesne||
+| Taşıma Talebi| Nesne||
 
 ## DİNLENME API
 
 |**API**|**Tip**|**Tanım**|**Kaynak Bağlantısı**|
 |:- |:- |:- |:- |
-|/hücreler/görev/görev çalıştırma|POSTALAMAK|Görevi Çalıştır|[Çalıştırma Görevi Sonrası](https://apireference.aspose.cloud/cells/#/Task/PostRunTask)|
+|/hücreler/görev/çalıştırma görevi|POSTALAMAK|Görevi Çalıştır|[Çalıştırma SonrasıGörev](https://apireference.aspose.cloud/cells/#/Task/PostRunTask)|
 
- bu[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData) herkesin erişebileceği bir programlama arabirimi tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData) herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
 

@@ -4,89 +4,89 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/tasks/cells-object-operate/
 aliases: [/working-with-cellsobjectoperate-task/]
-description: "Cells.Cloud API per Excel operare: celle oggetto operare attività"
+description: "Cells.Cloud API per Excel operare: attività di operazione oggetto celle"
 weight: 20
 ---
-Questo REST API gestisce l'oggetto celle `task`.
+Questo REST API gestisce le celle oggetto `task`.
 
 **OperaOggetto**
 
-|Nome parametro|Tipo|Descrizione|
+|Nome del parametro|Tipo|Descrizione|
 |:- |:- |:- |
-| OperateObjectType| corda| Cartella di lavoro/Foglio di lavoro/Impostapagina/Cells/Grafico/Forma/Oggetto elenco/Tabella pivot/Impostazioni cartella di lavoro/Interruzione di pagina|
-| OperateObjectPosition| Oggetto||
+| OperareObjectType| corda| Cartella di lavoro/Foglio di lavoro/PageSetup/Cells/Grafico/Forma/OggettoElenco/TabellaPivot/WorkbookSettings/PageBreak|
+| OperarePosizioneOggetto| Oggetto||
 
-**OperateObjectPosition**
+**OperarePosizioneOggetto**
 
-|Nome parametro|Tipo|Descrizione|
+|Nome del parametro|Tipo|Descrizione|
 |:- |:- |:- |
 | Cartella di lavoro| Oggetto||
-| FoglioNome| corda||
-| GraficoIndice| numero intero||
-| Indice di forma| numero intero||
+| NomeFoglio| corda||
+| ChartIndex| numero intero||
+| ShapeIndex| numero intero||
 | NomeCella| corda||
-| ListObjectIndex| numero intero||
+| ElencoOggettoIndice| numero intero||
 
 
-**ChartOperateParameter**
+**ChartOperateParametro**
 
-|Nome parametro|Tipo|Descrizione|
+|Nome del parametro|Tipo|Descrizione|
 |:- |:- |:- |
-| GraficoIndice| numero intero||
-| Tipo di grafico| corda||
-| UpperLeftRow| numero intero||
-|Colonna superiore sinistra| numero intero||
-| LowerRightRow| numero intero||
-| Colonna in basso a destra| numero intero||
+| ChartIndex| numero intero||
+| ChartType| corda||
+| Riga superiore sinistra| numero intero||
+| Colonna superiore sinistra| numero intero||
+| Riga InferioreDestra| numero intero||
+| Colonna inferiore destra| numero intero||
 | La zona| corda||
 | È verticale| corda| vero falso|
 | CategoriaDati| corda||
 | IsAutoGetSerialName| corda| vero falso|
 | La zona| Titolo||
 
-**ListObjectOperateParameter** 
+**ParametroListObjectOperate** 
 
-|Nome parametro|Tipo|Descrizione|
+|Nome del parametro|Tipo|Descrizione|
 |:- |:- |:- |
 | ElencoOggetto| Oggetto||
 
-**PageBreakOperateParameter**
+**Parametro PageBreakOperate**
 
-|Nome parametro|Tipo|Descrizione|
+|Nome del parametro|Tipo|Descrizione|
 |:- |:- |:- |
-| Tipo di interruzione di pagina| corda||
+| PageBreakType| corda||
 | Indice| Indice||
 | Riga| numero intero||
 | Colonna| numero intero||
 | InizioIndice| numero intero||
-| FineIndice| numero intero||
+| EndIndex| numero intero||
 
 
-**PageSetupOperateParameter**
+**PageSetupOperateParametro**
 
-|Nome parametro|Tipo|Descrizione|
+|Nome del parametro|Tipo|Descrizione|
 |:- |:- |:- |
 | Impostazione della pagina| Oggetto||
 
 
-**PivotTableOperateParameter**
+**ParametroOperateTabellaPivot**
 
-|Nome parametro|Tipo|Descrizione|
+|Nome del parametro|Tipo|Descrizione|
 |:- |:- |:- |
-| DestCellName| corda||
-| SourceData| corda||
+| NomeCellaDest| corda||
+| Dati di origine| corda||
 | NomeTabella| corda||
 | UsaSameSource| corda| vero falso|
 | Indice tabella pivot| numero intero||
-| PivotFieldRows|numero intero[]||
-| Colonne campo pivot|numero intero[]||
-|Dati del campo pivot|numero intero[]||
+| Righe del campo pivot|numero intero[]||
+| Colonne del campo pivot|numero intero[]||
+|Dati campo pivot|numero intero[]||
 
 
-**Parametro ShapeOperate**
+**ShapeOperateParametro**
 
 
-|Nome parametro|Tipo|Descrizione|
+|Nome del parametro|Tipo|Descrizione|
 |:- |:- |:- |
 | Forma| Oggetto||
 
@@ -94,25 +94,25 @@ Questo REST API gestisce l'oggetto celle `task`.
 **WorkbookSettingsOperateParameter**
 
 
-|Nome parametro|Tipo|Descrizione|
+|Nome del parametro|Tipo|Descrizione|
 |:- |:- |:- |
-| Impostazioni della cartella di lavoro| Oggetto||
+| Impostazioni cartella di lavoro| Oggetto||
 
-**Foglio di lavoroOperateParameter**
+**Foglio di lavoroOperateParametro**
 
 
-|Nome parametro|Tipo|Descrizione|
+|Nome del parametro|Tipo|Descrizione|
 |:- |:- |:- |
 | Nome| corda||
-| Tipo di foglio| corda||
+| Tipo Foglio| corda||
 | Nuovo nome| corda||
 | MovingRequest| Oggetto||
 
-## RIPOSO API
+## RESTO API
 
-|**API**|**Tipo**|**Descrizione**|**Collegamento alla risorsa**|
+|**API**|**Tipo**|**Descrizione**|**Collegamento alle risorse**|
 |:- |:- |:- |:- |
-|/celle/attività/runtask|INVIARE|Esegui attività|[PostRunTask](https://apireference.aspose.cloud/cells/#/Task/PostRunTask)|
+|/cells/attività/runtask|INVIARE|Esegui attività|[Attività PostEsegui](https://apireference.aspose.cloud/cells/#/Task/PostRunTask)|
 
- IL[Specifica OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData) definisce un'interfaccia di programmazione accessibile pubblicamente e consente di eseguire interazioni REST direttamente da un browser web.
+ IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData) definisce un'interfaccia di programmazione accessibile pubblicamente e consente di eseguire interazioni REST direttamente da un browser web.
 

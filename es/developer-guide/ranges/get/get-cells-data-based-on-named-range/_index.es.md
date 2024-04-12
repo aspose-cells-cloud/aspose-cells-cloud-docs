@@ -6,13 +6,13 @@ type: docs
 url: /es/ranges/get/values/
 aliases: [/get-cells-data-based-on-named-range/]
 keywords: Get cells data based on named range on an Excel worksheet
-description: Aspose.Cells Cloud REST API admite la obtención de datos de celdas según el rango con nombre en una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift
+description: Aspose.Cells Cloud REST API admite la obtención de datos de celdas según el rango con nombre en una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 20
 ---
- Este REST API indica obtener una lista de celdas en un rango por nombre de rango o índices de columna de fila
+ Este REST API indica Obtener la lista de celdas en un rango por nombre de rango o índices de columna de fila
 
  
-## RESET API
+## RSET API
  
 ```bash
  
@@ -23,15 +23,15 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/valu
  
 | Nombre del parámetro| Tipo| Ruta/Cadena de consulta/Cuerpo HTTP|Descripción|
 |:- |:- |:- |:- |
-| nombre| cadena| camino| nombre del libro|
-| hojaNombre| cadena| camino| nombre de la hoja de trabajo|
+| nombre| cadena| camino| nombre del libro de trabajo|
+| nombre de la hoja| cadena| camino| nombre de la hoja de trabajo|
 | rango de nombres| cadena| consulta| nombre del rango, por ejemplo: 'A1:B2' o 'range_name1'|
 | primera fila| entero| consulta| la primera fila del rango|
 | primera columna| entero| consulta| la primera columna del rango|
-| número de filas| entero| consulta| el conteo de filas en el rango|
-| columnCount| entero| consulta| el recuento de columnas en el rango|
+| número de filas| entero| consulta| el recuento de filas en el rango|
+| columnaContar| entero| consulta| el recuento de columnas en el rango|
 | carpeta| cadena| consulta| Carpeta del libro de trabajo.|
-| NombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
+| nombredealmacenamiento| cadena| consulta| nombre del almacenamiento.|
  
  El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/Ranges/GetWorksheetCellsRangeValue) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
  
@@ -438,10 +438,10 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/
  
 {{< /tabs >}}
  
-## Familia SDK de la nube
+## Familia de SDK en la nube
  
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se ocupa de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor, echa un vistazo a la[repositorio GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de Cloud.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor revisa el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de nube.
  
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código demuestran cómo realizar llamadas a servicios web Aspose.Cells utilizando varios SDK:
  
  

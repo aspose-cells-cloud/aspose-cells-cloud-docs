@@ -25,7 +25,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobject
 |:- |:- |:- |:- |
 | Name| Zeichenfolge| Weg| Dokumentname.|
 | Blattname| Zeichenfolge| Weg| Der Arbeitsblattname.|
-| listObjectIndex| ganze Zahl| Weg|Objektindex auflisten|
+| listObjectIndex| ganze Zahl| Weg| Objektindex auflisten|
 | listObject|| Körper| listObject dto im Anfragetext.|
 | Ordner| Zeichenfolge| Abfrage| Ordner des Dokuments.|
 | Speichername| Zeichenfolge| Abfrage| Speichername.|

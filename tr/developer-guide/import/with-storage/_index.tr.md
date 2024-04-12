@@ -1,14 +1,14 @@
 ﻿---
-title: Storag kullanarak Verileri İçe Aktar
+title: Depolamayı kullanarak Verileri İçe Aktarın
 second_title: Aspose.Cells Cloud Documen
-linktitle: Storag ile verileri içe aktarın
+linktitle: Depolamayla verileri içe aktarın
 type: docs
 url: /tr/import/with-using-storage/
 aliases: [/import-data-into-excel-worksheet/, /import-data-into-worksheet/ , /import-data-in-excel-worksheet/, /import-data/]
-description: "Cells.Cloud API, Excel için çalıştır: Verileri Excel Çalışma Sayfasına Aktar"
+description: "Cells.Cloud API, Excel için şunu çalıştırın: Verileri Excel Çalışma Sayfasına Aktarın"
 weight: 10
 ---
-Bu REST API, `import data`'i Excel dosyasına gösterir.
+Bu REST API, `import data`'i Excel dosyasına belirtir.
  
 ## RSET API
  
@@ -24,14 +24,14 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/importdata
 | isim| sicim| yol||
 | dosya| sicim| sorgu||
 | depolamaAdı| sicim| sorgu| depolama adı.|
-| importData|| vücut||
+| Verileri içe aktar|| vücut||
 
-**Verileri içe aktarma seçenekleri parametreleri**tarif edilir[referans bağlantısı](/cells/tr/import/#import-data-option-parameter).
+**Verileri içe aktarma seçenekleri parametreleri** içinde anlatılmıştır[referans bağlantısı](/cells/tr/import/#import-data-option-parameter).
 
  
- bu[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData) herkesin erişebileceği bir programlama arabirimi tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
+[OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData) herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
  
-Aspose.Cells web hizmetlerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnek, cURL ile Cloud API'e nasıl çağrı yapılacağını gösterir.
+Aspose.Cells web servislerine kolayca erişmek için cURL komut satırı aracını kullanabilirsiniz. Aşağıdaki örnekte, cURL ile Cloud API'e nasıl çağrı yapılacağı gösterilmektedir.
  
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
  
@@ -65,5 +65,5 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/importdata" \
 {{< /tabs >}}
  
  
-Aşağıdaki kod örnekleri, çeşitli SDK'lar kullanılarak Aspose.Cells web hizmetlerine nasıl çağrı yapılacağını gösterir:
+Aşağıdaki kod örnekleri, çeşitli SDK'ları kullanarak Aspose.Cells web hizmetlerine nasıl çağrı yapılacağını gösterir:
 

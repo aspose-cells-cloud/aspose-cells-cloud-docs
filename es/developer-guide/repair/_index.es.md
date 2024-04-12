@@ -1,20 +1,20 @@
 ﻿---
-title: Reparación
+title: repai
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/repair/
 keywords: Repair Excel, ODS, WPS, and so on files
-description: Aspose.Cells Cloud REST API admite la reparación de archivos de Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift
+description: Aspose.Cells Cloud REST API admite la reparación de archivos de Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 39
 ---
 Este REST API indica `repair` Excel archivos.
 
 - Repare XLS, XLSX, XLSM, XLSB, ODS, etc.
-- Soporta múltiples archivos.
+- Admite múltiples archivos.
 
-Aspose.Cells Cloud Excel Repair recupera datos de archivos corruptos Excel en línea sin instalación. Los archivos Excel dañados pueden ser un problema porque no podrá abrirlos. Puede probar la aplicación de reparación Aspose.Cells Cloud Excel para recuperar datos de archivos Excel dañados.
+Aspose.Cells Cloud Excel Repair recupera datos de archivos Excel corruptos en línea sin instalación. Los archivos Excel corruptos pueden ser un problema porque no podrás abrirlos. Puede probar la aplicación de reparación Aspose.Cells Cloud Excel para recuperar datos de archivos Excel corruptos.
 
-## RESET API
+## RSET API
 
 ```bash
 
@@ -77,11 +77,11 @@ curl -v "http://api.aspose.cloud/v3.0/cells/repair" \
  
 
 
-## Familia SDK de la nube
+## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se ocupa de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor, echa un vistazo a la[repositorio GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de Cloud.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel y le permite concentrarse en las tareas de su proyecto. Por favor revisa el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de nube.
 
-Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
+Los siguientes ejemplos de código demuestran cómo realizar llamadas a servicios web Aspose.Cells utilizando varios SDK:
 
 
 {{< tabs tabTotal="9" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" tabName9="Python" >}}

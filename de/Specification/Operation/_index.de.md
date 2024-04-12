@@ -1,0 +1,327 @@
+﻿---
+title: Betrieb
+second_title: Aspose.Cells Cloud Documen
+type: docs
+weight: 50
+---
+- [PostAnalyzeExcel](postanalyzeexcel) : Führen Sie eine Geschäftsanalyse der Daten in Excel-Dateien durch.
+- [GetWorksheetAutoFilter](getworksheetautofilter) : Rufen Sie die Beschreibung von Autofiltern aus einem Arbeitsblatt ab.
+- [PutWorksheetDateFilter](putworksheetdatefilter) : Wenden Sie einen Datumsfilter im Arbeitsblatt an.
+- [PutWorksheetFilter](putworksheetfilter) : Fügen Sie einen Filter für eine Spalte im Arbeitsblatt hinzu.
+- [PutWorksheetIconFilter](putworksheeticonfilter) : Fügen Sie dem Arbeitsblatt einen Symbolfilter hinzu.
+- [PutWorksheetCustomFilter](putworksheetcustomfilter) Filtern Sie eine Liste mit benutzerdefinierten Kriterien im Arbeitsblatt.
+- [PutWorksheetDynamicFilter](putworksheetdynamicfilter) : Fügen Sie dem Arbeitsblatt einen dynamischen Filter hinzu.
+- [PutWorksheetFilterTop10](putworksheetfiltertop10) : Filtern Sie die Top 10 Elemente in der Liste im Arbeitsblatt.
+- [PutWorksheetColorFilter](putworksheetcolorfilter) : Fügen Sie dem Arbeitsblatt einen Farbfilter hinzu.
+- [PostWorksheetMatchBlanks](postworksheetmatchblanks) : Übereinstimmung mit allen leeren Zellen in der Liste.
+- [PostWorksheetMatchNonBlanks](postworksheetmatchnonblanks) : Übereinstimmung mit allen nicht leeren Zellen in der Liste.
+- [PostWorksheetAutoFilterRefresh](postworksheetautofilterrefresh) : Automatische Filter im Arbeitsblatt aktualisieren.
+- [DeleteWorksheetDateFilter](deleteworksheetdatefilter) : Entfernen Sie einen Datumsfilter im Arbeitsblatt.
+- [WorksheetFilter löschen](deleteworksheetfilter) : Einen Filter für eine Spalte im Arbeitsblatt löschen.
+- [GetWorksheetAutoshapes](getworksheetautoshapes) : Beschreibung der Autoformen im Arbeitsblatt abrufen.
+- [GetWorksheetAutoshapeWithFormat](getworksheetautoshapewithformat) : Autoshape-Beschreibung in einem bestimmten Format abrufen.
+- [PostBatchConvert](postbatchconvert) : Stapelkonvertierung von Dateien, die bestimmte Übereinstimmungsbedingungen erfüllen.
+- [PostBatchProtect](postbatchprotect) : Batch-Schutz von Dateien, die bestimmte Übereinstimmungsbedingungen erfüllen.
+- [PostBatchLock](postbatchlock) : Stapelsperrdateien, die bestimmte Übereinstimmungsbedingungen erfüllen.
+- [PostBatchUnlock](postbatchunlock) : Batch-Entsperrung von Dateien, die bestimmte Übereinstimmungsbedingungen erfüllen.
+- [PostBatchSplit](postbatchsplit) : Batch-Aufteilung von Dateien, die bestimmte Übereinstimmungsbedingungen erfüllen.
+- [PostClearContents](postclearcontents) : Zellbereichsinhalte im Arbeitsblatt löschen.
+- [PostClearFormats](postclearformats) : Zellenformate im Arbeitsblatt löschen.
+- [PostUpdateWorksheetRangeStyle](postupdateworksheetrangestyle) : Zellbereichsstile im Arbeitsblatt aktualisieren.
+- [PostWorksheetMerge](postworksheetmerge) : Zellen im Arbeitsblatt zusammenführen.
+- [PostWorksheetUnmerge](postworksheetunmerge) : Zellen im Arbeitsblatt aufheben.
+- [GetWorksheetCells](getworksheetcells) : Zellbeschreibungen in einem angegebenen Format abrufen.
+- [GetWorksheetCell](getworksheetcell) : Zelldaten mithilfe der Zellreferenz oder des Methodennamens im Arbeitsblatt abrufen.
+- [GetWorksheetCellStyle](getworksheetcellstyle) : Zellenstilbeschreibungen im Arbeitsblatt abrufen.
+- [PostWorksheetCellSetValue](postworksheetcellsetvalue) : Zellenwert mithilfe des Zellennamens im Arbeitsblatt festlegen.
+- [PostUpdateWorksheetCellStyle](postupdateworksheetcellstyle) : Legen Sie den Zellenstil mithilfe des Zellennamens im Arbeitsblatt fest.
+- [PostSetCellRangeValue](postsetcellrangevalue) : Legen Sie den Wert des Bereichs im Arbeitsblatt fest.
+- [PostCopyCellIntoCell](postcopycellintocell) : Daten aus einer Quellzelle in eine Zielzelle im Arbeitsblatt kopieren.
+- [GetCellHtmlString](getcellhtmlstring) : Rufen Sie die Zeichenfolge HTML ab, die Daten und bestimmte Formate in dieser Zelle enthält.
+- [PostSetCellHtmlString](postsetcellhtmlstring) : Legen Sie die Zeichenfolge HTML fest, die Daten und bestimmte Formate in dieser Zelle enthält.
+- [PostCellCalculate](postcellcalculate) : Zellformel im Arbeitsblatt berechnen.
+- [PostCellCharacters](postcellcharacters) : Zellenzeichen im Arbeitsblatt festlegen.
+- [GetWorksheetColumns](getworksheetcolumns) : Beschreibungen von Arbeitsblattspalten abrufen.
+- [PostSetWorksheetColumnWidth](postsetworksheetcolumnwidth) : Spaltenbreite des Arbeitsblatts festlegen.
+- [GetWorksheetColumn](getworksheetcolumn) : Arbeitsblattspaltendaten nach Spaltenindex abrufen.
+- [PutInsertWorksheetColumns](putinsertworksheetcolumns) Arbeitsblattspalten in das Arbeitsblatt einfügen.
+- [Arbeitsblattspalten löschen](deleteworksheetcolumns) : Arbeitsblattspalten im Arbeitsblatt löschen.
+- [PostHideWorksheetColumns](posthideworksheetcolumns) : Arbeitsblattspalten im Arbeitsblatt ausblenden.
+- [PostUnhideWorksheetColumns](postunhideworksheetcolumns) : Arbeitsblattspalten im Arbeitsblatt einblenden.
+- [PostGroupWorksheetColumns](postgroupworksheetcolumns) : Arbeitsblattspalten im Arbeitsblatt gruppieren.
+- [PostUngroupWorksheetColumns](postungroupworksheetcolumns) : Gruppierung von Arbeitsblattspalten aufheben.
+- [PostCopyWorksheetColumns](postcopyworksheetcolumns) : Daten aus Quellspalten in Zielspalten im Arbeitsblatt kopieren.
+- [PostColumnStyle](postcolumnstyle) : Spaltenstil im Arbeitsblatt festlegen.
+- [GetWorksheetRows](getworksheetrows) : Beschreibungen von Zeilen im Arbeitsblatt abrufen.
+- [GetWorksheetRow](getworksheetrow) : Zeilendaten anhand des Zeilenindex im Arbeitsblatt abrufen.
+- [Arbeitsblattzeile löschen](deleteworksheetrow) : Eine Zeile im Arbeitsblatt löschen.
+- [Arbeitsblattzeilen löschen](deleteworksheetrows) : Mehrere Zeilen im Arbeitsblatt löschen.
+- [PutInsertWorksheetRows](putinsertworksheetrows) : Mehrere neue Zeilen in das Arbeitsblatt einfügen.
+- [PutInsertWorksheetRow](putinsertworksheetrow) : Fügen Sie eine neue Zeile in das Arbeitsblatt ein.
+- [PostUpdateWorksheetRow](postupdateworksheetrow) : Höhe der Zeilen im Arbeitsblatt aktualisieren.
+- [PostHideWorksheetRows](posthideworksheetrows) : Zeilen im Arbeitsblatt ausblenden.
+- [PostUnhideWorksheetRows](postunhideworksheetrows) : Zeilen im Arbeitsblatt einblenden.
+- [PostGroupWorksheetRows](postgroupworksheetrows) : Zeilen im Arbeitsblatt gruppieren.
+- [PostUngroupWorksheetRows](postungroupworksheetrows) : Gruppierung der Zeilen im Arbeitsblatt aufheben.
+- [PostCopyWorksheetRows](postcopyworksheetrows) : Kopieren Sie Daten und Formate aus bestimmten ganzen Zeilen im Arbeitsblatt.
+- [PostRowStyle](postrowstyle) : Formate auf eine ganze Zeile im Arbeitsblatt anwenden.
+- [GetCellsCloudServicesHealthCheck](getcellscloudserviceshealthcheck) : Zellbeschreibungen in einem angegebenen Format abrufen.
+- [GetCellsCloudServiceStatus](getcellscloudservicestatus) : Aspose.Cells Integritätsprüfung des Cloud-Dienstes.
+- [GetChartArea](getchartarea) : Diagrammbereichsbeschreibung im Arbeitsblatt abrufen.
+- [GetChartAreaFillFormat](getchartareafillformat) : Rufen Sie die Beschreibung des Diagrammbereichsfüllformats im Arbeitsblatt ab.
+- [GetChartAreaBorder](getchartareaborder) : Beschreibung des Diagrammbereichsrandes abrufen.
+- [GetWorksheetCharts](getworksheetcharts) : Beschreibungen der Diagramme im Arbeitsblatt abrufen.
+- [GetWorksheetChart](getworksheetchart) Rufen Sie das Diagramm in einem angegebenen Format ab.
+- [PutWorksheetChart](putworksheetchart) : Fügen Sie dem Arbeitsblatt ein neues Diagramm hinzu.
+- [Arbeitsblattdiagramm löschen](deleteworksheetchart) : Löschen Sie ein Diagramm nach Index im Arbeitsblatt.
+- [PostWorksheetChart](postworksheetchart) : Diagrammeigenschaften im Arbeitsblatt aktualisieren.
+- [GetWorksheetChartLegend](getworksheetchartlegend) : Rufen Sie die Beschreibung der Diagrammlegende im Arbeitsblatt ab.
+- [PostWorksheetChartLegend](postworksheetchartlegend) : Diagrammlegende im Arbeitsblatt aktualisieren.
+- [PutWorksheetChartLegend](putworksheetchartlegend) : Diagrammlegende im Arbeitsblatt anzeigen.
+- [WorksheetChartLegend löschen](deleteworksheetchartlegend) : Versteckt die Diagrammlegende im Arbeitsblatt.
+- [WorksheetCharts löschen](deleteworksheetcharts) : Löschen Sie die Diagramme in den Arbeitsblättern.
+- [GetWorksheetChartTitle](getworksheetcharttitle) : Diagrammtitelbeschreibung im Arbeitsblatt abrufen.
+- [PostWorksheetChartTitle](postworksheetcharttitle) : Diagrammtitel im Arbeitsblatt aktualisieren.
+- [PutWorksheetChartTitle](putworksheetcharttitle) : Diagrammtitel im Arbeitsblatt festlegen.
+- [WorksheetChartTitle löschen](deleteworksheetcharttitle) : Diagrammtitel im Arbeitsblatt ausblenden.
+- [GetChartSeriesAxis](getchartseriesaxis) Rufen Sie Beschreibungen der Diagrammserienachsen im Diagramm ab.
+- [GetChartCategoryAxis](getchartcategoryaxis) : Beschreibungen der Diagrammreihenachse im Diagramm abrufen.
+- [GetChartValueAxis](getchartvalueaxis) : Diagrammwertachse im Diagramm abrufen.
+- [GetChartSecondCategoryAxis](getchartsecondcategoryaxis) : Zweite Kategorieachse des Diagramms abrufen
+- [GetChartSecondValueAxis](getchartsecondvalueaxis) : Zweite Wertachse des Diagramms abrufen.
+- [PostChartSeriesAxis](postchartseriesaxis) : Diagrammreihenachse im Diagramm aktualisieren.
+- [PostChartCategoryAxis](postchartcategoryaxis) : Diagrammkategorieachse im Diagramm aktualisieren.
+- [PostChartValueAxis](postchartvalueaxis) : Diagrammwertachse im Diagramm aktualisieren.
+- [PostChartSecondCategoryAxis](postchartsecondcategoryaxis) : Zweite Kategorieachse des Diagramms aktualisieren.
+- [PostChartSecondValueAxis](postchartsecondvalueaxis) : Zweite Werteachse des Diagramms aktualisieren.
+- [GetWorksheetConditionalFormattings](getworksheetconditionalformattings) : Beschreibungen bedingter Formatierungen in einem Arbeitsblatt abrufen.
+- [GetWorksheetConditionalFormatting](getworksheetconditionalformatting) Rufen Sie Beschreibungen der bedingten Formatierung im Arbeitsblatt ab.
+- [PutWorksheetConditionalFormatting](putworksheetconditionalformatting) : Bedingte Formatierung im Arbeitsblatt hinzufügen.
+- [PutWorksheetFormatCondition](putworksheetformatcondition) : Fügen Sie dem Arbeitsblatt eine Formatbedingung hinzu.
+- [PutWorksheetFormatConditionArea](putworksheetformatconditionarea) : Fügen Sie einen Zellbereich für die Formatbedingung im Arbeitsblatt hinzu.
+- [PutWorksheetFormatConditionCondition](putworksheetformatconditioncondition) : Fügen Sie eine Bedingung für die Formatbedingung im Arbeitsblatt hinzu.
+- [DeleteWorksheetConditionalFormattings](deleteworksheetconditionalformattings) : Alle bedingten Formatierungen im Arbeitsblatt löschen.
+- [DeleteWorksheetConditionalFormatting](deleteworksheetconditionalformatting) : Bedingte Formatierung entfernen.
+- [DeleteWorksheetConditionalFormattingArea](deleteworksheetconditionalformattingarea) : Zellbereich aus der bedingten Formatierung entfernen.
+- [GetWorkbook](getworkbook) : Arbeitsmappen in verschiedenen Formaten abrufen.
+- [PutConvertWorkbook](putconvertworkbook) : Konvertieren Sie die Arbeitsmappe aus dem angeforderten Inhalt in Dateien in verschiedenen Formaten.
+- [PostWorkbookSaveAs](postworkbooksaveas) : Speichern Sie eine Excel-Datei in verschiedenen Formaten.
+- [PostConvertWorkbookToPDF](postconvertworkbooktopdf) : Konvertieren Sie die Datei Excel in die Datei PDF.
+- [PostConvertWorkbookToPNG](postconvertworkbooktopng) : Konvertieren Sie die Datei Excel in die Datei PNG.
+- [PostConvertWorkbookToDocx](postconvertworkbooktodocx) : Konvertieren Sie die Datei Excel in Docx-Dateien.
+- [PostConvertWorkbookToPptx](postconvertworkbooktopptx) : Konvertieren Sie die Datei Excel in Pptx-Dateien.
+- [PostConvertWorkbookToHtml](postconvertworkbooktohtml) : Konvertieren Sie die Datei Excel in die Datei HTML.
+- [PostConvertWorkbookToMarkdown](postconvertworkbooktomarkdown) : Konvertieren Sie die Datei Excel in Markdown-Dateien.
+- [PostConvertWorkbookToJson](postconvertworkbooktojson) : Konvertieren Sie die Datei Excel in Json-Dateien.
+- [PostConvertWorkbookToSQL](postconvertworkbooktosql) : Konvertieren Sie die Datei Excel in SQL-Skriptdateien.
+- [PostConvertWorkbookToCSV](postconvertworkbooktocsv) : Konvertieren Sie die Datei Excel in CSV-Dateien.
+- [PostExport](postexport) : Exportieren Sie Excel interne Elemente oder die Arbeitsmappe selbst in verschiedene Formatdateien.
+- [PostWorkbookExportXML](postworkbookexportxml) : XML-Daten aus einer Excel-Datei exportieren. Wenn eine Excel-Datei XML-Maps enthält, exportieren Sie XML-Daten. Wenn in der Datei Excel keine XML-Zuordnung vorhanden ist, konvertieren Sie die Datei Excel in eine XML-Datei.
+- [PostWorkbookImportJson](postworkbookimportjson) Importieren Sie eine JSON-Datendatei in die Arbeitsmappe. Die JSON-Datendatei kann entweder eine Cloud-Datei oder Daten aus einem HTTP-URI sein.
+- [PostWorkbookImportXML](postworkbookimportxml) : Importieren Sie eine XML-Datendatei in eine Excel-Datei. Die XML-Datendatei kann entweder eine Cloud-Datei oder Daten aus einem HTTP-URI sein.
+- [PostImportData](postimportdata) : Daten in die Datei Excel importieren.
+- [PostWorkbookDataCleansing](postworkbookdatacleansing) : Die Datenbereinigung von Tabellenkalkulationsdateien ist ein Datenverwaltungsprozess, mit dem Fehler, Unvollständigkeiten, Duplikate oder Ungenauigkeiten in Tabellen und Bereichen identifiziert, korrigiert und entfernt werden.
+- [PostDataCleansing](postdatacleansing) : Die Datenbereinigung von Tabellenkalkulationsdateien ist ein Datenverwaltungsprozess, der dazu dient, Fehler, Unvollständigkeiten, Duplikate oder Ungenauigkeiten in Tabellen und Bereichen zu identifizieren, zu korrigieren und zu entfernen.
+- [PostWorkbookDataDeduplication](postworkbookdatadeduplication) : Die Datendeduplizierung von Tabellenkalkulationsdateien wird hauptsächlich verwendet, um doppelte Daten in Tabellen und Bereichen zu entfernen.
+- [PostDataDeduplication](postdatadeduplication) : Die Datendeduplizierung von Tabellenkalkulationsdateien wird hauptsächlich verwendet, um doppelte Daten in Tabellen und Bereichen zu entfernen.
+- [PostWorkbookDataFill](postworkbookdatafill) Die Datenfüllung für Tabellenkalkulationsdateien wird hauptsächlich zum Füllen leerer Daten in Tabellen und Bereichen verwendet.
+- [PostDataFill](postdatafill) Die Datenfüllung für Tabellenkalkulationsdateien wird hauptsächlich zum Füllen leerer Daten in Tabellen und Bereichen verwendet.
+- [PostDeleteIncompleteRows](postdeleteincompleterows) : Das Löschen unvollständiger Zeilen von Tabellenkalkulationsdateien wird hauptsächlich zum Entfernen unvollständiger Zeilen in Tabellen und Bereichen verwendet.
+- [GetWorksheetHyperlinks](getworksheethyperlinks) : Beschreibungen von Hyperlinks im Arbeitsblatt abrufen.
+- [GetWorksheetHyperlink](getworksheethyperlink) : Hyperlinkbeschreibung nach Index im Arbeitsblatt abrufen.
+- [Arbeitsblatt-Hyperlink löschen](deleteworksheethyperlink) : Hyperlink nach Index im Arbeitsblatt löschen.
+- [PostWorksheetHyperlink](postworksheethyperlink) : Hyperlink nach Index im Arbeitsblatt aktualisieren.
+- [PutWorksheetHyperlink](putworksheethyperlink) : Hyperlink im Arbeitsblatt hinzufügen.
+- [Arbeitsblatt-Hyperlinks löschen](deleteworksheethyperlinks) : Alle Hyperlinks im Arbeitsblatt löschen.
+- [PostAssemble](postassemble) : Stellen Sie Datendateien mit Vorlagendateien zusammen, um Dateien in verschiedenen Formaten zu generieren.
+- [PostCompress](postcompress) : Komprimieren Sie Dateien und generieren Sie Zieldateien in verschiedenen Formaten. Zu den unterstützten Dateiformaten gehören Xls, Xlsx, Xlsm, Xlsb, Ods und mehr.
+- [PostMerge](postmerge) : Zellen im Arbeitsblatt zusammenführen.
+- [PostSplit](postsplit) : Teilen Sie Excel Tabellenkalkulationsdateien basierend auf Arbeitsblättern auf und erstellen Sie Ausgabedateien in verschiedenen Formaten.
+- [PostSearch](postsearch) : Suche nach angegebenem Text in Excel-Dateien.
+- [PostReplace](postreplace) : Ersetzen Sie den angegebenen Text durch neuen Text in Excel-Dateien.
+- [PostImport](postimport) : Daten in eine Excel-Datei importieren und Ausgabedateien in verschiedenen Formaten generieren.
+- [PostWatermark](postwatermark) : Textwasserzeichen zu Excel-Dateien hinzufügen und Ausgabedateien in verschiedenen Formaten generieren.
+- [PostClearObjects](postclearobjects) : Interne Elemente in Excel-Dateien löschen und Ausgabedateien in verschiedenen Formaten generieren.
+- [PostReverse](postreverse) : Zeilen oder Spalten in Excel-Dateien umkehren und Ausgabedateien in verschiedenen Formaten erstellen.
+- [Nach der Reparatur](postrepair) : Reparieren Sie abnormale Dateien und generieren Sie Dateien in verschiedenen Formaten.
+- [PostRotate](postrotate) : Zeilen, Spalten oder andere Objekte in Excel-Dateien drehen und in verschiedenen Formaten speichern.
+- [PostMetadaten](postmetadata) Dokumenteigenschaften in der Datei Excel aktualisieren und in verschiedenen Formaten speichern.
+- [GetMetadata](getmetadata) : Zelldokumenteigenschaften abrufen.
+- [Metadaten löschen](deletemetadata) : Zellendokumenteigenschaften in der Datei Excel löschen und in verschiedenen Formaten speichern.
+- [GetWorksheetListObjects](getworksheetlistobjects) : Beschreibungen von ListObjects im Arbeitsblatt abrufen.
+- [GetWorksheetListObject](getworksheetlistobject) : Listenobjektbeschreibung nach Index im Arbeitsblatt abrufen.
+- [PutWorksheetListObject](putworksheetlistobject) : Fügen Sie dem Arbeitsblatt ein ListObject hinzu.
+- [WorksheetListObjects löschen](deleteworksheetlistobjects) : ListObjects im Arbeitsblatt löschen.
+- [DeleteWorksheetListObject](deleteworksheetlistobject) : Listenobjekt nach Index im Arbeitsblatt löschen.
+- [PostWorksheetListObject](postworksheetlistobject) : Listenobjekt nach Index im Arbeitsblatt aktualisieren.
+- [PostWorksheetListObjectConvertToRange](postworksheetlistobjectconverttorange) : Listenobjekt in Bereich im Arbeitsblatt konvertieren.
+- [PostWorksheetListObjectSummarizeWithPivotTable](postworksheetlistobjectsummarizewithpivottable) : Erstellen Sie eine Pivot-Tabelle mit einem Listenobjekt im Arbeitsblatt.
+- [PostWorksheetListObjectSortTable](postworksheetlistobjectsorttable) Listenobjekt im Arbeitsblatt sortieren.
+- [PostWorksheetListObjectRemoveDuplicates](postworksheetlistobjectremoveduplicates) : Duplikate im Listenobjekt entfernen.
+- [PostWorksheetListObjectInsertSlicer](postworksheetlistobjectinsertslicer) : Slicer für Listenobjekt einfügen.
+- [PostWorksheetListColumn](postworksheetlistcolumn) : Listenspalte im Listenobjekt aktualisieren.
+- [PostWorksheetListColumnsTotal](postworksheetlistcolumnstotal) : Gesamtzahl der Listenspalten in der Tabelle aktualisieren.
+- [GetWorksheetOleObjects](getworksheetoleobjects) : Beschreibungen von OLE-Objekten im Arbeitsblatt abrufen.
+- [GetWorksheetOleObject](getworksheetoleobject) : Rufen Sie das OLE-Objekt in einem angegebenen Format im Arbeitsblatt ab.
+- [WorksheetOleObjects löschen](deleteworksheetoleobjects) : Alle OLE-Objekte im Arbeitsblatt löschen.
+- [DeleteWorksheetOleObject](deleteworksheetoleobject) : Ein OLE-Objekt im Arbeitsblatt löschen.
+- [PostUpdateWorksheetOleObject](postupdateworksheetoleobject) : Ein OLE-Objekt im Arbeitsblatt aktualisieren.
+- [PutWorksheetOleObject](putworksheetoleobject) : Fügen Sie dem Arbeitsblatt ein OLE-Objekt hinzu.
+- [GetVerticalPageBreaks](getverticalpagebreaks) : Beschreibungen der vertikalen Seitenumbrüche im Arbeitsblatt abrufen.
+- [GetHorizontalPageBreaks](gethorizontalpagebreaks) Beschreibungen der horizontalen Seitenumbrüche im Arbeitsblatt abrufen.
+- [GetVerticalPageBreak](getverticalpagebreak) : Rufen Sie eine Beschreibung des vertikalen Seitenumbruchs im Arbeitsblatt ab.
+- [GetHorizontalPageBreak](gethorizontalpagebreak) : Rufen Sie eine horizontale Seitenumbruchbeschreibung im Arbeitsblatt ab.
+- [PutVerticalPageBreak](putverticalpagebreak) : Fügen Sie einen vertikalen Seitenumbruch im Arbeitsblatt hinzu.
+- [PutHorizontalPageBreak](puthorizontalpagebreak) : Fügen Sie dem Arbeitsblatt einen horizontalen Seitenumbruch hinzu.
+- [DeleteVerticalPageBreaks](deleteverticalpagebreaks) : Vertikale Seitenumbrüche im Arbeitsblatt löschen.
+- [Horizontale Seitenumbrüche löschen](deletehorizontalpagebreaks) : Horizontale Seitenumbrüche im Arbeitsblatt löschen.
+- [DeleteVerticalPageBreak](deleteverticalpagebreak) : Löschen Sie einen vertikalen Seitenumbruch im Arbeitsblatt.
+- [Horizontalen Seitenumbruch löschen](deletehorizontalpagebreak) : Löschen Sie einen horizontalen Seitenumbruch im Arbeitsblatt.
+- [GetPageSetup](getpagesetup) : Rufen Sie die Beschreibung der Seiteneinrichtung im Arbeitsblatt ab.
+- [PostPageSetup](postpagesetup) : Seiteneinrichtung im Arbeitsblatt aktualisieren.
+- [HeaderFooter löschen](deleteheaderfooter) : Kopf- und Fußzeile im Arbeitsblatt löschen.
+- [GetHeader](getheader) : Seitenkopfbeschreibung im Arbeitsblatt abrufen.
+- [PostHeader](postheader) Seitenkopf im Arbeitsblatt aktualisieren.
+- [GetFooter](getfooter) : Rufen Sie die Beschreibung der Seitenfußzeile im Arbeitsblatt ab.
+- [PostFooter](postfooter) : Seitenfußzeile im Arbeitsblatt aktualisieren.
+- [PostFitWideToPages](postfitwidetopages) : Stellen Sie den Maßstab ein, in dem die Seite beim Drucken auf das Blatt breit passt.
+- [PostFitTallToPages](postfittalltopages) : Stellen Sie den Maßstab ein, in dem die Seite hochformatig auf das Blatt gedruckt wird.
+- [GetWorksheetPictures](getworksheetpictures) : Beschreibungen der Bilder im Arbeitsblatt abrufen.
+- [GetWorksheetPictureWithFormat](getworksheetpicturewithformat) : Rufen Sie ein Bild nach Nummer im Arbeitsblatt ab.
+- [PutWorksheetAddPicture](putworksheetaddpicture) : Fügen Sie ein neues Bild zum Arbeitsblatt hinzu.
+- [PostWorksheetPicture](postworksheetpicture) : Aktualisieren Sie ein Bild nach Index im Arbeitsblatt.
+- [Arbeitsblattbild löschen](deleteworksheetpicture) : Ein Bildobjekt nach Index im Arbeitsblatt löschen.
+- [Arbeitsblattbilder löschen](deleteworksheetpictures) : Alle Bilder im Arbeitsblatt löschen.
+- [GetWorksheetPivotTables](getworksheetpivottables) : Beschreibungen von Pivottables im Arbeitsblatt abrufen.
+- [GetWorksheetPivotTable](getworksheetpivottable) PivotTable-Informationen nach Index im Arbeitsblatt abrufen.
+- [GetPivotTableField](getpivottablefield) : Beschreibungen von Pivot-Feldern in der PivotTable abrufen.
+- [GetWorksheetPivotTableFilters](getworksheetpivottablefilters) : Ruft PivotTable-Filter im Arbeitsblatt ab.
+- [GetWorksheetPivotTableFilter](getworksheetpivottablefilter) : PivotTable-Filter im Arbeitsblatt abrufen.
+- [PutWorksheetPivotTable](putworksheetpivottable) : Fügen Sie dem Arbeitsblatt eine PivotTable hinzu.
+- [PutPivotTableField](putpivottablefield) : Fügen Sie der PivotTable ein Pivot-Feld hinzu.
+- [PutWorksheetPivotTableFilter](putworksheetpivottablefilter) : Fügen Sie der PivotTable einen Pivot-Filter hinzu.
+- [PostPivotTableFieldHideItem](postpivottablefieldhideitem) : Ein Pivot-Feldelement in der PivotTable ausblenden.
+- [PostPivotTableFieldMoveTo](postpivottablefieldmoveto) : Verschieben Sie ein Pivot-Feld in der PivotTable.
+- [PostPivotTableCellStyle](postpivottablecellstyle) : Zellenstil in der PivotTable aktualisieren.
+- [PostPivotTableStyle](postpivottablestyle) : Stil in der PivotTable aktualisieren.
+- [PostPivotTableUpdatePivotFields](postpivottableupdatepivotfields) : Pivot-Felder in der PivotTable aktualisieren.
+- [PostPivotTableUpdatePivotField](postpivottableupdatepivotfield) : Pivot-Feld in der PivotTable aktualisieren.
+- [PostWorksheetPivotTableCalculate](postworksheetpivottablecalculate) : Pivottable-Daten in Zellen berechnen.
+- [PostWorksheetPivotTableMove](postworksheetpivottablemove) : PivotTable im Arbeitsblatt verschieben.
+- [Arbeitsblatt-Pivot-Tabellen löschen](deleteworksheetpivottables) : PivotTables im Arbeitsblatt löschen.
+- [WorksheetPivotTable löschen](deleteworksheetpivottable) : PivotTable nach Index im Arbeitsblatt löschen.
+- [PivotTableField löschen](deletepivottablefield) : Ein Pivot-Feld in der PivotTable löschen.
+- [WorksheetPivotTableFilters löschen](deleteworksheetpivottablefilters) : Alle Pivot-Filter in der PivotTable löschen.
+- [WorksheetPivotTableFilter löschen](deleteworksheetpivottablefilter) : Einen Pivot-Filter in der PivotTable löschen.
+- [GetDocumentProperties](getdocumentproperties) : Beschreibungen der Dateieigenschaften Excel abrufen.
+- [PutDocumentProperty](putdocumentproperty) : Legen Sie eine Eigenschaft Excel fest oder fügen Sie sie hinzu.
+- [GetDocumentProperty](getdocumentproperty) : Excel-Eigenschaft nach Namen abrufen.
+- [DeleteDocumentProperty](deletedocumentproperty) : Eine Excel-Eigenschaft löschen.
+- [DeleteDocumentProperties](deletedocumentproperties) : Alle benutzerdefinierten Dokumenteigenschaften löschen und integrierte zurücksetzen.
+- [PostDigitalSignature](postdigitalsignature) : Excel Datei mit digitaler Signatur.
+- [PostEncryptWorkbook](postencryptworkbook) : Excel Verschlüsselung.
+- [DeleteDecryptWorkbook](deletedecryptworkbook) : Excel Dateien entschlüsseln.
+- [PostProtectWorkbook](postprotectworkbook) : Excel Schutz.
+- [DeleteUnProtectWorkbook](deleteunprotectworkbook) : Excel ungeschützt.
+- [PutDocumentProtectFromChanges](putdocumentprotectfromchanges) : Excel Dateischreibschutz.
+- [DeleteDocumentUnProtectFromChanges](deletedocumentunprotectfromchanges) : Excel Dateischreibschutz aufheben.
+- [PostUnlock](postunlock) : Excel-Dateien entsperren.
+- [PostLock](postlock) : Excel-Dateien sperren.
+- [PostProtect](postprotect) : Excel Dateiverschlüsselung.
+- [PostWorksheetCellsRangesCopy](postworksheetcellsrangescopy) : Inhalte aus dem Quellbereich in den Zielbereich im Arbeitsblatt kopieren.
+- [PostWorksheetCellsRangeMerge](postworksheetcellsrangemerge) : Einen Zellbereich zu einer einzigen Zelle zusammenführen.
+- [PostWorksheetCellsRangeUnMerge](postworksheetcellsrangeunmerge) : Zusammengeführte Zellen innerhalb dieses Bereichs aufheben.
+- [PostWorksheetCellsRangeStyle](postworksheetcellsrangestyle) : Legen Sie den Stil für den angegebenen Bereich fest.
+- [GetWorksheetCellsRangeValue](getworksheetcellsrangevalue) Rufen Sie die Werte von Zellen innerhalb des angegebenen Bereichs ab.
+- [PostWorksheetCellsRangeValue](postworksheetcellsrangevalue) : Dem Bereich einen Wert zuweisen; Bei Bedarf wird der Wert in einen anderen Datentyp konvertiert und das Zahlenformat der Zelle zurückgesetzt.
+- [PostWorksheetCellsRangeMoveTo](postworksheetcellsrangemoveto) : Den aktuellen Bereich in den Zielbereich verschieben.
+- [PostWorksheetCellsRangeSort](postworksheetcellsrangesort) : Führen Sie eine Datensortierung um einen Bereich von Zellen durch.
+- [PostWorksheetCellsRangeOutlineBorder](postworksheetcellsrangeoutlineborder) : Einen Umrissrahmen um einen Bereich von Zellen anwenden.
+- [PostWorksheetCellsRangeColumnWidth](postworksheetcellsrangecolumnwidth) : Legen Sie die Spaltenbreite des angegebenen Bereichs fest.
+- [PostWorksheetCellsRangeRowHeight](postworksheetcellsrangerowheight) : Legt die Zeilenhöhe des Bereichs fest.
+- [PutWorksheetCellsRange](putworksheetcellsrange) : Fügt einen Zellbereich ein und verschiebt vorhandene Zellen basierend auf der angegebenen Verschiebungsoption.
+- [DeleteWorksheetCellsRange](deleteworksheetcellsrange) : Löschen Sie einen Zellbereich und verschieben Sie vorhandene Zellen basierend auf der angegebenen Verschiebungsoption.
+- [GetWorksheetShapes](getworksheetshapes) Beschreibungen von Formen im Arbeitsblatt abrufen.
+- [GetWorksheetShape](getworksheetshape) : Beschreibung der Form im Arbeitsblatt abrufen.
+- [PutWorksheetShape](putworksheetshape) : Fügen Sie dem Arbeitsblatt eine Form hinzu.
+- [Arbeitsblattformen löschen](deleteworksheetshapes) : Alle Formen im Arbeitsblatt löschen.
+- [DeleteWorksheetShape](deleteworksheetshape) : Eine Form im Arbeitsblatt löschen.
+- [PostWorksheetShape](postworksheetshape) : Eine Form im Arbeitsblatt aktualisieren.
+- [PostWorksheetGroupShape](postworksheetgroupshape) : Formen im Arbeitsblatt gruppieren.
+- [PostWorksheetUngroupShape](postworksheetungroupshape) : Gruppierung von Formen im Arbeitsblatt aufheben.
+- [GetWorksheetSparklineGroups](getworksheetsparklinegroups) : Beschreibungen von Sparkline-Gruppen im Arbeitsblatt abrufen.
+- [GetWorksheetSparklineGroup](getworksheetsparklinegroup) : Beschreibung einer Sparkline-Gruppe im Arbeitsblatt abrufen.
+- [WorksheetSparklineGroups löschen](deleteworksheetsparklinegroups) : Sparkline-Gruppen im Arbeitsblatt löschen.
+- [WorksheetSparklineGroup löschen](deleteworksheetsparklinegroup) : Löschen Sie eine Sparkline-Gruppe im Arbeitsblatt.
+- [PutWorksheetSparklineGroup](putworksheetsparklinegroup) : Fügen Sie dem Arbeitsblatt eine Sparkline-Gruppe hinzu.
+- [PostWorksheetSparklineGroup](postworksheetsparklinegroup) : Eine Sparkline-Gruppe im Arbeitsblatt aktualisieren.
+- [PostRunTask](postruntask) Aufgaben ausführen.
+- [GetWorkbookDefaultStyle](getworkbookdefaultstyle) : Rufen Sie die Beschreibung des Standardstils für die Arbeitsmappe ab.
+- [GetWorkbookTextItems](getworkbooktextitems) : Textelemente in der Arbeitsmappe abrufen.
+- [GetWorkbookNames](getworkbooknames) : Benannte Bereiche in der Arbeitsmappe abrufen.
+- [PutWorkbookName](putworkbookname) : Definieren Sie einen neuen Namen in der Arbeitsmappe.
+- [GetWorkbookName](getworkbookname) : Beschreibung eines benannten Bereichs in der Arbeitsmappe abrufen.
+- [PostWorkbookName](postworkbookname) : Einen benannten Bereich in der Arbeitsmappe aktualisieren.
+- [GetWorkbookNameValue](getworkbooknamevalue) : Rufen Sie den Wert eines benannten Bereichs in der Arbeitsmappe ab.
+- [Arbeitsmappennamen löschen](deleteworkbooknames) : Alle benannten Bereiche in der Arbeitsmappe löschen.
+- [Arbeitsmappennamen löschen](deleteworkbookname) : Einen benannten Bereich in der Arbeitsmappe löschen.
+- [PostWorkbooksMerge](postworkbooksmerge) : Eine Arbeitsmappe mit der vorhandenen Arbeitsmappe zusammenführen.
+- [PostWorkbooksTextSearch](postworkbookstextsearch) : Nach Text in der Arbeitsmappe suchen.
+- [PostWorkbookTextReplace](postworkbooktextreplace) : Text in der Arbeitsmappe ersetzen.
+- [PostWorkbookGetSmartMarkerResult](postworkbookgetsmartmarkerresult) : Intelligente Markierungsverarbeitung.
+- [PutWorkbookCreate](putworkbookcreate) : Erstellen Sie eine neue Arbeitsmappe mit verschiedenen Methoden.
+- [PostWorkbookSplit](postworkbooksplit) Teilen Sie die Arbeitsmappe mit einem bestimmten Format.
+- [PostWorkbookCalculateFormula](postworkbookcalculateformula) : Alle Formeln in der Arbeitsmappe berechnen.
+- [PostAutofitWorkbookRows](postautofitworkbookrows) : Zeilen in der Arbeitsmappe automatisch anpassen.
+- [PostAutofitWorkbookColumns](postautofitworkbookcolumns) : Spalten in der Arbeitsmappe automatisch anpassen.
+- [GetWorkbookSettings](getworkbooksettings) : Beschreibungen der Arbeitsmappeneinstellungen abrufen.
+- [PostWorkbookSettings](postworkbooksettings) : Einstellung in der Arbeitsmappe aktualisieren.
+- [PutWorkbookBackground](putworkbookbackground) : Hintergrund in der Arbeitsmappe festlegen.
+- [WorkbookBackground löschen](deleteworkbookbackground) : Hintergrund in der Arbeitsmappe löschen.
+- [PutWorkbookWaterMarker](putworkbookwatermarker) : Wasserzeichen in der Arbeitsmappe setzen.
+- [GetPageCount](getpagecount) : Seitenanzahl in der Arbeitsmappe abrufen.
+- [GetWorksheets](getworksheets) : Rufen Sie die Beschreibung von Arbeitsblättern aus einer Arbeitsmappe ab.
+- [GetWorksheetWithFormat](getworksheetwithformat) : Rufen Sie das Arbeitsblatt in einem angegebenen Format aus der Arbeitsmappe ab.
+- [PutChangeVisibilityWorksheet](putchangevisibilityworksheet) : Sichtbarkeit des Arbeitsblatts in der Arbeitsmappe ändern.
+- [PutActiveWorksheet](putactiveworksheet) Aktiven Arbeitsblattindex in der Arbeitsmappe festlegen.
+- [PutInsertNewWorksheet](putinsertnewworksheet) : Ein neues Arbeitsblatt in die Arbeitsmappe einfügen.
+- [PutAddNewWorksheet](putaddnewworksheet) : Ein neues Arbeitsblatt zur Arbeitsmappe hinzufügen.
+- [Arbeitsblatt löschen](deleteworksheet) : Ein Arbeitsblatt in der Arbeitsmappe löschen.
+- [Arbeitsblätter löschen](deleteworksheets) : Übereinstimmende Arbeitsblätter in der Arbeitsmappe löschen.
+- [PostMoveWorksheet](postmoveworksheet) : Arbeitsblatt in der Arbeitsmappe verschieben.
+- [PutProtectWorksheet](putprotectworksheet) : Arbeitsblatt schützen.
+- [DeleteUnprotectWorksheet](deleteunprotectworksheet) : Arbeitsblattschutz aufheben.
+- [GetWorksheetTextItems](getworksheettextitems) : Textelemente im Arbeitsblatt abrufen.
+- [GetWorksheetComments](getworksheetcomments) : Rufen Sie die Beschreibung der Kommentare im Arbeitsblatt ab.
+- [GetWorksheetComment](getworksheetcomment) : Rufen Sie die Beschreibung des Kommentars im Arbeitsblatt ab.
+- [PutWorksheetComment](putworksheetcomment) : Zellkommentar im Arbeitsblatt hinzufügen.
+- [PostWorksheetComment](postworksheetcomment) : Zellenkommentar im Arbeitsblatt aktualisieren.
+- [Arbeitsblattkommentar löschen](deleteworksheetcomment) : Zellkommentar im Arbeitsblatt löschen.
+- [Arbeitsblattkommentare löschen](deleteworksheetcomments) Alle Kommentare im Arbeitsblatt löschen.
+- [GetWorksheetMergedCells](getworksheetmergedcells) : Zusammengeführte Zellen im Arbeitsblatt abrufen.
+- [GetWorksheetMergedCell](getworksheetmergedcell) : Rufen Sie die Beschreibung einer zusammengeführten Zelle anhand ihres Index im Arbeitsblatt ab.
+- [GetWorksheetCalculateFormula](getworksheetcalculateformula) : Formel im Arbeitsblatt berechnen.
+- [PostWorksheetCalculateFormula](postworksheetcalculateformula) : Formel im Arbeitsblatt berechnen.
+- [PostWorksheetTextSearch](postworksheettextsearch) : Nach Text im Arbeitsblatt suchen.
+- [PostWorksheetTextReplace](postworksheettextreplace) : Ersetzen Sie alten Text durch neuen Text im Arbeitsblatt.
+- [PostWorksheetRangeSort](postworksheetrangesort) : Sortieren Sie einen Bereich im Arbeitsblatt.
+- [PostAutofitWorksheetRow](postautofitworksheetrow) : Eine Zeile im Arbeitsblatt automatisch anpassen.
+- [PostAutofitWorksheetRows](postautofitworksheetrows) : Zeilen im Arbeitsblatt automatisch anpassen.
+- [PostAutofitWorksheetColumns](postautofitworksheetcolumns) : Spalten im Arbeitsblatt automatisch anpassen.
+- [PutWorksheetBackground](putworksheetbackground) : Hintergrundbild im Arbeitsblatt festlegen.
+- [Arbeitsblatthintergrund löschen](deleteworksheetbackground) : Hintergrundbild im Arbeitsblatt löschen.
+- [PutWorksheetFreezePanes](putworksheetfreezepanes) : Fixierte Bereiche im Arbeitsblatt festlegen.
+- [DeleteWorksheetFreezePanes](deleteworksheetfreezepanes) : Fenster im Arbeitsblatt freigeben.
+- [PostCopyWorksheet](postcopyworksheet) : Inhalte und Formate aus einem anderen Arbeitsblatt kopieren.
+- [PostRenameWorksheet](postrenameworksheet) : Arbeitsblatt in der Arbeitsmappe umbenennen.
+- [PostUpdateWorksheetProperty](postupdateworksheetproperty) : Arbeitsblatteigenschaften in der Arbeitsmappe aktualisieren.
+- [GetNamedRanges](getnamedranges) : Beschreibungen von Bereichen in den Arbeitsblättern abrufen.
+- [GetNamedRangeValue](getnamedrangevalue) : Werte im Bereich abrufen.
+- [PostUpdateWorksheetZoom](postupdateworksheetzoom) : Aktualisieren Sie den Skalierungsprozentsatz im Arbeitsblatt. Er sollte zwischen 10 und 400 liegen.
+- [GetWorksheetPageCount](getworksheetpagecount) : Seitenzahl im Arbeitsblatt abrufen.
+- [GetWorksheetValidations](getworksheetvalidations) : Beschreibungen der Validierungen im Arbeitsblatt abrufen.
+- [GetWorksheetValidation](getworksheetvalidation) : Rufen Sie eine Validierung anhand ihres Index im Arbeitsblatt ab.
+- [PutWorksheetValidation](putworksheetvalidation) : Fügen Sie eine Validierung am Index im Arbeitsblatt hinzu.
+- [PostWorksheetValidation](postworksheetvalidation) : Aktualisieren Sie eine Validierung nach Index im Arbeitsblatt.
+- [DeleteWorksheetValidation](deleteworksheetvalidation) Löschen Sie eine Validierung nach Index im Arbeitsblatt.
+- [WorksheetValidations löschen](deleteworksheetvalidations) : Alle Validierungen im Arbeitsblatt löschen.

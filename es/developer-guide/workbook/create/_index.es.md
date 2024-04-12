@@ -5,7 +5,7 @@ linktitle: crear
 type: docs
 url: /es/workbook/create/
 keywords: How to create an Excel workbook
-description: Aspose.Cells Cloud REST API cómo crear un libro de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift
+description: Aspose.Cells Cloud REST API cómo crear un libro de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 100
 ---
 ## Cómo crear un libro de trabajo Excel.

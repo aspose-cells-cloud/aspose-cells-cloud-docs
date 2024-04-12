@@ -4,7 +4,7 @@ type: docs
 url: /de/conditional-formattings/clear/
 aliases: [/clear-all-condition-formattings/]
 keywords: REST API, spreadsheets, excel, clear all condition formatting
-description: "Cells.Cloud API für Excel ausführen: Alle Bedingungsformatierungen löschen"
+description: "Cells.Cloud API für Excel Funktion: Alle Bedingungsformatierungen löschen"
 weight: 80
 ---
 Dieser REST API zeigt an, dass alle Bedingungsformatierungen gelöscht werden sollen
