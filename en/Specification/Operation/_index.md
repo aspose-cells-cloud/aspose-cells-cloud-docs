@@ -5,324 +5,324 @@ type: docs
 weight: 50
 ---
 
-- [PostAnalyzeExcel](PostAnalyzeExcel)  :  Perform business analysis of data in Excel files. 
-- [GetWorksheetAutoFilter](GetWorksheetAutoFilter)  :  Retrieve the description of auto filters from a worksheet. 
-- [PutWorksheetDateFilter](PutWorksheetDateFilter)  :  Apply a date filter in the worksheet. 
-- [PutWorksheetFilter](PutWorksheetFilter)  :  Add a filter for a column in the worksheet. 
-- [PutWorksheetIconFilter](PutWorksheetIconFilter)  :  Add an icon filter in the worksheet. 
-- [PutWorksheetCustomFilter](PutWorksheetCustomFilter)  :  Filter a list with custom criteria in the worksheet. 
-- [PutWorksheetDynamicFilter](PutWorksheetDynamicFilter)  :  Add a dynamic filter in the worksheet. 
-- [PutWorksheetFilterTop10](PutWorksheetFilterTop10)  :  Filter the top 10 items in the list in the worksheet. 
-- [PutWorksheetColorFilter](PutWorksheetColorFilter)  :  Add a color filter in the worksheet. 
-- [PostWorksheetMatchBlanks](PostWorksheetMatchBlanks)  :  Match all blank cells in the list. 
-- [PostWorksheetMatchNonBlanks](PostWorksheetMatchNonBlanks)  :  Match all not blank cells in the list. 
-- [PostWorksheetAutoFilterRefresh](PostWorksheetAutoFilterRefresh)  :  Refresh auto filters in the worksheet. 
-- [DeleteWorksheetDateFilter](DeleteWorksheetDateFilter)  :  Remove a date filter in the worksheet. 
-- [DeleteWorksheetFilter](DeleteWorksheetFilter)  :  Delete a filter for a column in the worksheet. 
-- [GetWorksheetAutoshapes](GetWorksheetAutoshapes)  :  Get autoshapes description in worksheet. 
-- [GetWorksheetAutoshapeWithFormat](GetWorksheetAutoshapeWithFormat)  :  Get autoshape description in some format. 
-- [PostBatchConvert](PostBatchConvert)  :  Batch converting files that meet specific matching conditions. 
-- [PostBatchProtect](PostBatchProtect)  :  Batch protecting files that meet specific matching conditions. 
-- [PostBatchLock](PostBatchLock)  :  Batch locking files that meet specific matching conditions. 
-- [PostBatchUnlock](PostBatchUnlock)  :  Batch unlocking files that meet specific matching conditions. 
-- [PostBatchSplit](PostBatchSplit)  :  Batch splitting files that meet specific matching conditions. 
-- [PostClearContents](PostClearContents)  :  Clear cell area contents in the worksheet. 
-- [PostClearFormats](PostClearFormats)  :  Clear cell formats in the worksheet. 
-- [PostUpdateWorksheetRangeStyle](PostUpdateWorksheetRangeStyle)  :  Update cell range styles in the worksheet. 
-- [PostWorksheetMerge](PostWorksheetMerge)  :  Merge cells in the worksheet. 
-- [PostWorksheetUnmerge](PostWorksheetUnmerge)  :  Unmerge cells in the worksheet. 
-- [GetWorksheetCells](GetWorksheetCells)  :  Retrieve cell descriptions in a specified format. 
-- [GetWorksheetCell](GetWorksheetCell)  :  Retrieve cell data using either cell reference or method name in the worksheet. 
-- [GetWorksheetCellStyle](GetWorksheetCellStyle)  :  Retrieve cell style descriptions in the worksheet. 
-- [PostWorksheetCellSetValue](PostWorksheetCellSetValue)  :  Set cell value using cell name in the worksheet. 
-- [PostUpdateWorksheetCellStyle](PostUpdateWorksheetCellStyle)  :  Set cell style using cell name in the worksheet. 
-- [PostSetCellRangeValue](PostSetCellRangeValue)  :  Set the value of the range in the worksheet. 
-- [PostCopyCellIntoCell](PostCopyCellIntoCell)  :  Copy data from a source cell to a destination cell in the worksheet. 
-- [GetCellHtmlString](GetCellHtmlString)  :  Retrieve the HTML string containing data and specific formats in this cell. 
-- [PostSetCellHtmlString](PostSetCellHtmlString)  :  Set the HTML string containing data and specific formats in this cell. 
-- [PostCellCalculate](PostCellCalculate)  :  Calculate cell formula in the worksheet. 
-- [PostCellCharacters](PostCellCharacters)  :  Set cell characters in the worksheet. 
-- [GetWorksheetColumns](GetWorksheetColumns)  :  Retrieve descriptions of worksheet columns. 
-- [PostSetWorksheetColumnWidth](PostSetWorksheetColumnWidth)  :  Set worksheet column width. 
-- [GetWorksheetColumn](GetWorksheetColumn)  :  Retrieve worksheet column data by column index. 
-- [PutInsertWorksheetColumns](PutInsertWorksheetColumns)  :  Insert worksheet columns in the worksheet. 
-- [DeleteWorksheetColumns](DeleteWorksheetColumns)  :  Delete worksheet columns in the worksheet. 
-- [PostHideWorksheetColumns](PostHideWorksheetColumns)  :  Hide worksheet columns in the worksheet. 
-- [PostUnhideWorksheetColumns](PostUnhideWorksheetColumns)  :  Unhide worksheet columns in the worksheet. 
-- [PostGroupWorksheetColumns](PostGroupWorksheetColumns)  :  Group worksheet columns in the worksheet. 
-- [PostUngroupWorksheetColumns](PostUngroupWorksheetColumns)  :  Ungroup worksheet columns. 
-- [PostCopyWorksheetColumns](PostCopyWorksheetColumns)  :  Copy data from source columns to destination columns in the worksheet. 
-- [PostColumnStyle](PostColumnStyle)  :  Set column style in the worksheet. 
-- [GetWorksheetRows](GetWorksheetRows)  :  Retrieve descriptions of rows in the worksheet. 
-- [GetWorksheetRow](GetWorksheetRow)  :  Retrieve row data by the row's index in the worksheet. 
-- [DeleteWorksheetRow](DeleteWorksheetRow)  :  Delete a row in the worksheet. 
-- [DeleteWorksheetRows](DeleteWorksheetRows)  :  Delete several rows in the worksheet. 
-- [PutInsertWorksheetRows](PutInsertWorksheetRows)  :  Insert several new rows in the worksheet. 
-- [PutInsertWorksheetRow](PutInsertWorksheetRow)  :  Insert a new row in the worksheet. 
-- [PostUpdateWorksheetRow](PostUpdateWorksheetRow)  :  Update height of rows in the worksheet. 
-- [PostHideWorksheetRows](PostHideWorksheetRows)  :  Hide rows in worksheet. 
-- [PostUnhideWorksheetRows](PostUnhideWorksheetRows)  :  Unhide rows in the worksheet. 
-- [PostGroupWorksheetRows](PostGroupWorksheetRows)  :  Group rows in the worksheet. 
-- [PostUngroupWorksheetRows](PostUngroupWorksheetRows)  :  Ungroup rows in the worksheet. 
-- [PostCopyWorksheetRows](PostCopyWorksheetRows)  :  Copy data and formats from specific entire rows in the worksheet. 
-- [PostRowStyle](PostRowStyle)  :  Apply formats to an entire row in the worksheet. 
-- [GetCellsCloudServicesHealthCheck](GetCellsCloudServicesHealthCheck)  :  Retrieve cell descriptions in a specified format. 
-- [GetCellsCloudServiceStatus](GetCellsCloudServiceStatus)  :  Aspose.Cells Cloud service health status check. 
-- [GetChartArea](GetChartArea)  :  Retrieve chart area description in the worksheet. 
-- [GetChartAreaFillFormat](GetChartAreaFillFormat)  :  Retrieve chart area fill format description in the worksheet. 
-- [GetChartAreaBorder](GetChartAreaBorder)  :  Retrieve chart area border description. 
-- [GetWorksheetCharts](GetWorksheetCharts)  :  Retrieve descriptions of charts in the worksheet. 
-- [GetWorksheetChart](GetWorksheetChart)  :  Retrieve the chart in a specified format. 
-- [PutWorksheetChart](PutWorksheetChart)  :  Add a new chart in the worksheet. 
-- [DeleteWorksheetChart](DeleteWorksheetChart)  :  Delete a chart by index in the worksheet. 
-- [PostWorksheetChart](PostWorksheetChart)  :  Update chart properties in the worksheet. 
-- [GetWorksheetChartLegend](GetWorksheetChartLegend)  :  Retrieve chart legend description in the worksheet. 
-- [PostWorksheetChartLegend](PostWorksheetChartLegend)  :  Update chart legend in the worksheet. 
-- [PutWorksheetChartLegend](PutWorksheetChartLegend)  :  Show chart legend in the worksheet. 
-- [DeleteWorksheetChartLegend](DeleteWorksheetChartLegend)  :  Hides chart legend in the worksheet. 
-- [DeleteWorksheetCharts](DeleteWorksheetCharts)  :  Clear the charts in the worksheets. 
-- [GetWorksheetChartTitle](GetWorksheetChartTitle)  :  Retrieve chart title description in the worksheet. 
-- [PostWorksheetChartTitle](PostWorksheetChartTitle)  :  Update chart title in the worksheet. 
-- [PutWorksheetChartTitle](PutWorksheetChartTitle)  :  Set chart title in the worksheet. 
-- [DeleteWorksheetChartTitle](DeleteWorksheetChartTitle)  :  Hide chart title in the worksheet. 
-- [GetChartSeriesAxis](GetChartSeriesAxis)  :  Retrieve descriptions of chart seriesaxis in the chart. 
-- [GetChartCategoryAxis](GetChartCategoryAxis)  :  Retrieve descriptions of chart series axis in the chart. 
-- [GetChartValueAxis](GetChartValueAxis)  :  Retrieve chart value axis in the chart. 
-- [GetChartSecondCategoryAxis](GetChartSecondCategoryAxis)  :  Retrieve chart second category axis in the chart 
-- [GetChartSecondValueAxis](GetChartSecondValueAxis)  :  Retrieve chart second value axis in the chart. 
-- [PostChartSeriesAxis](PostChartSeriesAxis)  :  Update chart series axis in the chart. 
-- [PostChartCategoryAxis](PostChartCategoryAxis)  :  Update chart category axis in the chart. 
-- [PostChartValueAxis](PostChartValueAxis)  :  Update chart value axis in the chart. 
-- [PostChartSecondCategoryAxis](PostChartSecondCategoryAxis)  :  Update chart sencond category axis in the chart. 
-- [PostChartSecondValueAxis](PostChartSecondValueAxis)  :  Update chart sencond value axis in the chart. 
-- [GetWorksheetConditionalFormattings](GetWorksheetConditionalFormattings)  :  Retrieve descriptions of conditional formattings in a worksheet. 
-- [GetWorksheetConditionalFormatting](GetWorksheetConditionalFormatting)  :  Retrieve conditional formatting descriptions in the worksheet. 
-- [PutWorksheetConditionalFormatting](PutWorksheetConditionalFormatting)  :  Add conditional formatting in the worksheet. 
-- [PutWorksheetFormatCondition](PutWorksheetFormatCondition)  :  Add a format condition in the worksheet. 
-- [PutWorksheetFormatConditionArea](PutWorksheetFormatConditionArea)  :  Add a cell area for the format condition in the worksheet. 
-- [PutWorksheetFormatConditionCondition](PutWorksheetFormatConditionCondition)  :  Add a condition for the format condition in the worksheet. 
-- [DeleteWorksheetConditionalFormattings](DeleteWorksheetConditionalFormattings)  :  Clear all conditional formattings in the worksheet. 
-- [DeleteWorksheetConditionalFormatting](DeleteWorksheetConditionalFormatting)  :  Remove a conditional formatting. 
-- [DeleteWorksheetConditionalFormattingArea](DeleteWorksheetConditionalFormattingArea)  :  Remove cell area from conditional formatting. 
-- [GetWorkbook](GetWorkbook)  :  Retrieve workbooks in various formats. 
-- [PutConvertWorkbook](PutConvertWorkbook)  :  Convert the workbook from the requested content into files in different formats. 
-- [PostWorkbookSaveAs](PostWorkbookSaveAs)  :  Save an Excel file in various formats. 
-- [PostConvertWorkbookToPDF](PostConvertWorkbookToPDF)  :  Convert Excel file to PDF files. 
-- [PostConvertWorkbookToPNG](PostConvertWorkbookToPNG)  :  Convert Excel file to PNG files. 
-- [PostConvertWorkbookToDocx](PostConvertWorkbookToDocx)  :  Convert Excel file to Docx files. 
-- [PostConvertWorkbookToPptx](PostConvertWorkbookToPptx)  :  Convert Excel file to Pptx files. 
-- [PostConvertWorkbookToHtml](PostConvertWorkbookToHtml)  :  Convert Excel file to HTML files. 
-- [PostConvertWorkbookToMarkdown](PostConvertWorkbookToMarkdown)  :  Convert Excel file to Markdown files. 
-- [PostConvertWorkbookToJson](PostConvertWorkbookToJson)  :  Convert Excel file to Json files. 
-- [PostConvertWorkbookToSQL](PostConvertWorkbookToSQL)  :  Convert Excel file to SQL Script files. 
-- [PostConvertWorkbookToCSV](PostConvertWorkbookToCSV)  :  Convert Excel file to Csv files. 
-- [PostExport](PostExport)  :  Export Excel internal elements or the workbook itself to various format files. 
-- [PostWorkbookExportXML](PostWorkbookExportXML)  :  Export XML data from an Excel file.When there are XML Maps in an Excel file, export XML data. When there is no XML map in the Excel file, convert the Excel file to an XML file. 
-- [PostWorkbookImportJson](PostWorkbookImportJson)  :  Import a JSON data file into the workbook. The JSON data file can either be a cloud file or data from an HTTP URI. 
-- [PostWorkbookImportXML](PostWorkbookImportXML)  :  Import an XML data file into an Excel file. The XML data file can either be a cloud file or data from an HTTP URI. 
-- [PostImportData](PostImportData)  :  Import data into the Excel file. 
-- [PostWorkbookDataCleansing](PostWorkbookDataCleansing)  :  Data cleaning of spreadsheet files is a data management process used to identify, correct, and remove errors, incompleteness, duplicates, or inaccuracies in tables and ranges. 
-- [PostDataCleansing](PostDataCleansing)  :  Data cleansing of spreadsheet files is a data management process used to identify, correct, and remove errors, incompleteness, duplicates, or inaccuracies in tables and ranges. 
-- [PostWorkbookDataDeduplication](PostWorkbookDataDeduplication)  :  Data deduplication of spreadsheet files is mainly used to eliminate duplicate data in tables and ranges. 
-- [PostDataDeduplication](PostDataDeduplication)  :  Data deduplication of spreadsheet files is mainly used to eliminate duplicate data in tables and ranges. 
-- [PostWorkbookDataFill](PostWorkbookDataFill)  :  Data filling for spreadsheet files is primarily used to fill empty data in tables and ranges. 
-- [PostDataFill](PostDataFill)  :  Data filling for spreadsheet files is primarily used to fill empty data in tables and ranges. 
-- [PostDeleteIncompleteRows](PostDeleteIncompleteRows)  :  Deleting incomplete rows of spreadsheet files is mainly used to eliminate incomplete rows in tables and ranges. 
-- [GetWorksheetHyperlinks](GetWorksheetHyperlinks)  :  Retrieve descriptions of hyperlinks in the worksheet. 
-- [GetWorksheetHyperlink](GetWorksheetHyperlink)  :  Retrieve hyperlink description by index in the worksheet. 
-- [DeleteWorksheetHyperlink](DeleteWorksheetHyperlink)  :  Delete hyperlink by index in the worksheet. 
-- [PostWorksheetHyperlink](PostWorksheetHyperlink)  :  Update hyperlink by index in the worksheet. 
-- [PutWorksheetHyperlink](PutWorksheetHyperlink)  :  Add hyperlink in the worksheet. 
-- [DeleteWorksheetHyperlinks](DeleteWorksheetHyperlinks)  :  Delete all hyperlinks in the worksheet. 
-- [PostAssemble](PostAssemble)  :  Assemble data files with template files to generate files in various formats. 
-- [PostCompress](PostCompress)  :  Compress files and generate target files in various formats, supported file formats are include Xls, Xlsx, Xlsm, Xlsb, Ods and more. 
-- [PostMerge](PostMerge)  :  Merge cells in the worksheet. 
-- [PostSplit](PostSplit)  :  Split Excel spreadsheet files based on worksheets and create output files in various formats. 
-- [PostSearch](PostSearch)  :  Search for specified text within Excel files. 
-- [PostReplace](PostReplace)  :  Replace specified text with new text in Excel files. 
-- [PostImport](PostImport)  :  Import data into an Excel file and generate output files in various formats. 
-- [PostWatermark](PostWatermark)  :  Add Text Watermark to Excel files and generate output files in various formats. 
-- [PostClearObjects](PostClearObjects)  :  Clear internal elements in Excel files and generate output files in various formats. 
-- [PostReverse](PostReverse)  :  Reverse rows or columns in Excel files and create output files in various formats. 
-- [PostRepair](PostRepair)  :  Repair abnormal files and generate files in various formats. 
-- [PostRotate](PostRotate)  :  Rotate rows, columns, or other objects in Excel files and save them in various formats. 
-- [PostMetadata](PostMetadata)  :  Update document properties in Excel file, and save them is various formats. 
-- [GetMetadata](GetMetadata)  :  Get cells document properties. 
-- [DeleteMetadata](DeleteMetadata)  :  Delete cells document properties in Excel file, and save them is various formats. 
-- [GetWorksheetListObjects](GetWorksheetListObjects)  :  Retrieve descriptions of ListObjects in the worksheet. 
-- [GetWorksheetListObject](GetWorksheetListObject)  :  Retrieve list object description by index in the worksheet. 
-- [PutWorksheetListObject](PutWorksheetListObject)  :  Add a ListObject in the worksheet. 
-- [DeleteWorksheetListObjects](DeleteWorksheetListObjects)  :  Delete ListObjects in the worksheet. 
-- [DeleteWorksheetListObject](DeleteWorksheetListObject)  :  Delete list object by index in the worksheet. 
-- [PostWorksheetListObject](PostWorksheetListObject)  :  Update list object by index in the worksheet. 
-- [PostWorksheetListObjectConvertToRange](PostWorksheetListObjectConvertToRange)  :  Convert list object to range in the worksheet. 
-- [PostWorksheetListObjectSummarizeWithPivotTable](PostWorksheetListObjectSummarizeWithPivotTable)  :  Create a pivot table with a list object in the worksheet. 
-- [PostWorksheetListObjectSortTable](PostWorksheetListObjectSortTable)  :  Sort list object in the worksheet. 
-- [PostWorksheetListObjectRemoveDuplicates](PostWorksheetListObjectRemoveDuplicates)  :  Remove duplicates in list object. 
-- [PostWorksheetListObjectInsertSlicer](PostWorksheetListObjectInsertSlicer)  :  Insert slicer for list object. 
-- [PostWorksheetListColumn](PostWorksheetListColumn)  :  Update list column in list object. 
-- [PostWorksheetListColumnsTotal](PostWorksheetListColumnsTotal)  :  Update total of list columns in the table. 
-- [GetWorksheetOleObjects](GetWorksheetOleObjects)  :  Retrieve descriptions of OLE objects in the worksheet. 
-- [GetWorksheetOleObject](GetWorksheetOleObject)  :  Retrieve the OLE object in a specified format in the worksheet. 
-- [DeleteWorksheetOleObjects](DeleteWorksheetOleObjects)  :  Delete all OLE objects in the worksheet. 
-- [DeleteWorksheetOleObject](DeleteWorksheetOleObject)  :  Delete an OLE object in the worksheet. 
-- [PostUpdateWorksheetOleObject](PostUpdateWorksheetOleObject)  :  Update an OLE object in worksheet. 
-- [PutWorksheetOleObject](PutWorksheetOleObject)  :  Add an OLE object in the worksheet. 
-- [GetVerticalPageBreaks](GetVerticalPageBreaks)  :  Retrieve descriptions of vertical page breaks in the worksheet. 
-- [GetHorizontalPageBreaks](GetHorizontalPageBreaks)  :  Retrieve descriptions of horizontal page breaks in the worksheet. 
-- [GetVerticalPageBreak](GetVerticalPageBreak)  :  Retrieve a vertical page break description in the worksheet. 
-- [GetHorizontalPageBreak](GetHorizontalPageBreak)  :  Retrieve a horizontal page break descripton in the worksheet. 
-- [PutVerticalPageBreak](PutVerticalPageBreak)  :  Add a vertical page break in the worksheet. 
-- [PutHorizontalPageBreak](PutHorizontalPageBreak)  :  Add a horizontal page breaks in the worksheet. 
-- [DeleteVerticalPageBreaks](DeleteVerticalPageBreaks)  :  Delete vertical page breaks in the worksheet. 
-- [DeleteHorizontalPageBreaks](DeleteHorizontalPageBreaks)  :  Delete horizontal page breaks in the worksheet. 
-- [DeleteVerticalPageBreak](DeleteVerticalPageBreak)  :  Delete a vertical page break in the worksheet. 
-- [DeleteHorizontalPageBreak](DeleteHorizontalPageBreak)  :  Delete a horizontal page break in the worksheet. 
-- [GetPageSetup](GetPageSetup)  :  Retrieve page setup description in the worksheet. 
-- [PostPageSetup](PostPageSetup)  :  Update page setup in the worksheet. 
-- [DeleteHeaderFooter](DeleteHeaderFooter)  :  Clear header and footer in the worksheet. 
-- [GetHeader](GetHeader)  :  Retrieve page header description in the worksheet. 
-- [PostHeader](PostHeader)  :  Update page header in the worksheet. 
-- [GetFooter](GetFooter)  :  Retrieve page footer description in the worksheet. 
-- [PostFooter](PostFooter)  :  Update page footer in the worksheet. 
-- [PostFitWideToPages](PostFitWideToPages)  :  Set the scale at which the page will fit wide when printed on the sheet. 
-- [PostFitTallToPages](PostFitTallToPages)  :  Set the scale at which the page will fit tall when printed on the sheet. 
-- [GetWorksheetPictures](GetWorksheetPictures)  :  Retrieve descriptions of pictures in the worksheet. 
-- [GetWorksheetPictureWithFormat](GetWorksheetPictureWithFormat)  :  Retrieve a picture by number in the worksheet. 
-- [PutWorksheetAddPicture](PutWorksheetAddPicture)  :  Add a new picture in the worksheet. 
-- [PostWorksheetPicture](PostWorksheetPicture)  :  Update a picture by index in the worksheet. 
-- [DeleteWorksheetPicture](DeleteWorksheetPicture)  :  Delete a picture object by index in the worksheet. 
-- [DeleteWorksheetPictures](DeleteWorksheetPictures)  :  Delete all pictures in the worksheet. 
-- [GetWorksheetPivotTables](GetWorksheetPivotTables)  :  Retrieve descriptions of pivottables  in the worksheet. 
-- [GetWorksheetPivotTable](GetWorksheetPivotTable)  :  Retrieve PivotTable information by index in the worksheet. 
-- [GetPivotTableField](GetPivotTableField)  :  Retrieve descriptions of pivot fields in the PivotTable. 
-- [GetWorksheetPivotTableFilters](GetWorksheetPivotTableFilters)  :  Gets PivotTable filters in worksheet. 
-- [GetWorksheetPivotTableFilter](GetWorksheetPivotTableFilter)  :  Retrieve PivotTable filters in the worksheet. 
-- [PutWorksheetPivotTable](PutWorksheetPivotTable)  :  Add a PivotTable in the worksheet. 
-- [PutPivotTableField](PutPivotTableField)  :  Add a pivot field in the PivotTable. 
-- [PutWorksheetPivotTableFilter](PutWorksheetPivotTableFilter)  :  Add a pivot filter to the PivotTable. 
-- [PostPivotTableFieldHideItem](PostPivotTableFieldHideItem)  :  Hide a pivot field item in the PivotTable. 
-- [PostPivotTableFieldMoveTo](PostPivotTableFieldMoveTo)  :  Move a pivot field in the PivotTable. 
-- [PostPivotTableCellStyle](PostPivotTableCellStyle)  :  Update cell style in the PivotTable. 
-- [PostPivotTableStyle](PostPivotTableStyle)  :  Update style in the PivotTable. 
-- [PostPivotTableUpdatePivotFields](PostPivotTableUpdatePivotFields)  :  Update pivot fields in the PivotTable. 
-- [PostPivotTableUpdatePivotField](PostPivotTableUpdatePivotField)  :  Update pivot field in the PivotTable. 
-- [PostWorksheetPivotTableCalculate](PostWorksheetPivotTableCalculate)  :  Calculate pivottable's data to cells. 
-- [PostWorksheetPivotTableMove](PostWorksheetPivotTableMove)  :  Move PivotTable in the worksheet. 
-- [DeleteWorksheetPivotTables](DeleteWorksheetPivotTables)  :  Delete PivotTables in the worksheet. 
-- [DeleteWorksheetPivotTable](DeleteWorksheetPivotTable)  :  Delete PivotTable by index in the worksheet. 
-- [DeletePivotTableField](DeletePivotTableField)  :  Delete a pivot field in the PivotTable. 
-- [DeleteWorksheetPivotTableFilters](DeleteWorksheetPivotTableFilters)  :  Delete all pivot filters in the PivotTable. 
-- [DeleteWorksheetPivotTableFilter](DeleteWorksheetPivotTableFilter)  :  Delete a pivot filter in the PivotTable. 
-- [GetDocumentProperties](GetDocumentProperties)  :  Retrieve descriptions of Excel file properties. 
-- [PutDocumentProperty](PutDocumentProperty)  :  Set or add an Excel property. 
-- [GetDocumentProperty](GetDocumentProperty)  :  Get Excel property by name. 
-- [DeleteDocumentProperty](DeleteDocumentProperty)  :  Delete an Excel property. 
-- [DeleteDocumentProperties](DeleteDocumentProperties)  :  Delete all custom document properties and reset built-in ones. 
-- [PostDigitalSignature](PostDigitalSignature)  :  Excel file digital signature. 
-- [PostEncryptWorkbook](PostEncryptWorkbook)  :  Excel Encryption. 
-- [DeleteDecryptWorkbook](DeleteDecryptWorkbook)  :  Excel files decryption. 
-- [PostProtectWorkbook](PostProtectWorkbook)  :  Excel protection. 
-- [DeleteUnProtectWorkbook](DeleteUnProtectWorkbook)  :  Excel unprotection. 
-- [PutDocumentProtectFromChanges](PutDocumentProtectFromChanges)  :  Excel file write protection. 
-- [DeleteDocumentUnProtectFromChanges](DeleteDocumentUnProtectFromChanges)  :  Excel file cancel write protection. 
-- [PostUnlock](PostUnlock)  :  Unlock Excel files. 
-- [PostLock](PostLock)  :  Lock Excel files. 
-- [PostProtect](PostProtect)  :  Excel files encryption. 
-- [PostWorksheetCellsRangesCopy](PostWorksheetCellsRangesCopy)  :  Copy content from the source range to the destination range in the worksheet. 
-- [PostWorksheetCellsRangeMerge](PostWorksheetCellsRangeMerge)  :  Merge a range of cells into a single cell. 
-- [PostWorksheetCellsRangeUnMerge](PostWorksheetCellsRangeUnMerge)  :  Unmerge merged cells within this range. 
-- [PostWorksheetCellsRangeStyle](PostWorksheetCellsRangeStyle)  :  Set the style for the specified range. 
-- [GetWorksheetCellsRangeValue](GetWorksheetCellsRangeValue)  :  Retrieve the values of cells within the specified range. 
-- [PostWorksheetCellsRangeValue](PostWorksheetCellsRangeValue)  :  Assign a value to the range; if necessary, the value will be converted to another data type, and the cell's number format will be reset. 
-- [PostWorksheetCellsRangeMoveTo](PostWorksheetCellsRangeMoveTo)  :  Move the current range to the destination range. 
-- [PostWorksheetCellsRangeSort](PostWorksheetCellsRangeSort)  :  Perform data sorting around a range of cells. 
-- [PostWorksheetCellsRangeOutlineBorder](PostWorksheetCellsRangeOutlineBorder)  :  Apply an outline border around a range of cells. 
-- [PostWorksheetCellsRangeColumnWidth](PostWorksheetCellsRangeColumnWidth)  :  Set the column width of the specified range. 
-- [PostWorksheetCellsRangeRowHeight](PostWorksheetCellsRangeRowHeight)  :  Sets row height of range. 
-- [PutWorksheetCellsRange](PutWorksheetCellsRange)  :  Insert a range of cells and shift existing cells based on the specified shift option. 
-- [DeleteWorksheetCellsRange](DeleteWorksheetCellsRange)  :  Delete a range of cells and shift existing cells based on the specified shift option. 
-- [GetWorksheetShapes](GetWorksheetShapes)  :  Retrieve descriptions of shapes in the worksheet. 
-- [GetWorksheetShape](GetWorksheetShape)  :  Retrieve description of shape in the worksheet. 
-- [PutWorksheetShape](PutWorksheetShape)  :  Add a shape in the worksheet. 
-- [DeleteWorksheetShapes](DeleteWorksheetShapes)  :  Delete all shapes in the worksheet. 
-- [DeleteWorksheetShape](DeleteWorksheetShape)  :  Delete a shape in the worksheet. 
-- [PostWorksheetShape](PostWorksheetShape)  :  Update a shape in the worksheet. 
-- [PostWorksheetGroupShape](PostWorksheetGroupShape)  :  Group shapes in the worksheet. 
-- [PostWorksheetUngroupShape](PostWorksheetUngroupShape)  :  Ungroup shapes in the worksheet. 
-- [GetWorksheetSparklineGroups](GetWorksheetSparklineGroups)  :  Retrieve descriptions of sparkline groups in the worksheet. 
-- [GetWorksheetSparklineGroup](GetWorksheetSparklineGroup)  :  Retrieve description of a sparkline group in the worksheet. 
-- [DeleteWorksheetSparklineGroups](DeleteWorksheetSparklineGroups)  :  Delete sparkline groups in the worksheet. 
-- [DeleteWorksheetSparklineGroup](DeleteWorksheetSparklineGroup)  :  Delete a sparkline group in the worksheet. 
-- [PutWorksheetSparklineGroup](PutWorksheetSparklineGroup)  :  Add a sparkline group in the worksheet. 
-- [PostWorksheetSparklineGroup](PostWorksheetSparklineGroup)  :  Update a sparkline group in the worksheet. 
-- [PostRunTask](PostRunTask)  :  Run tasks. 
-- [GetWorkbookDefaultStyle](GetWorkbookDefaultStyle)  :  Retrieve the description of the default style for the workbook. 
-- [GetWorkbookTextItems](GetWorkbookTextItems)  :  Retrieve text items in the workbook. 
-- [GetWorkbookNames](GetWorkbookNames)  :  Retrieve named ranges in the workbook. 
-- [PutWorkbookName](PutWorkbookName)  :  Define a new name in the workbook. 
-- [GetWorkbookName](GetWorkbookName)  :  Retrieve description of a named range in the workbook. 
-- [PostWorkbookName](PostWorkbookName)  :  Update a named range in the workbook. 
-- [GetWorkbookNameValue](GetWorkbookNameValue)  :  Retrieve the value of a named range in the workbook. 
-- [DeleteWorkbookNames](DeleteWorkbookNames)  :  Delete all named ranges in the workbook. 
-- [DeleteWorkbookName](DeleteWorkbookName)  :  Delete a named range in the workbook. 
-- [PostWorkbooksMerge](PostWorkbooksMerge)  :  Merge a workbook into the existing workbook. 
-- [PostWorkbooksTextSearch](PostWorkbooksTextSearch)  :  Search for text in the workbook. 
-- [PostWorkbookTextReplace](PostWorkbookTextReplace)  :  Replace text in the workbook. 
-- [PostWorkbookGetSmartMarkerResult](PostWorkbookGetSmartMarkerResult)  :  Smart marker processing. 
-- [PutWorkbookCreate](PutWorkbookCreate)  :  Create a new workbook using different methods. 
-- [PostWorkbookSplit](PostWorkbookSplit)  :  Split the workbook with a specific format. 
-- [PostWorkbookCalculateFormula](PostWorkbookCalculateFormula)  :  Calculate all formulas in the workbook. 
-- [PostAutofitWorkbookRows](PostAutofitWorkbookRows)  :  Autofit rows in the workbook. 
-- [PostAutofitWorkbookColumns](PostAutofitWorkbookColumns)  :  Autofit columns in the workbook. 
-- [GetWorkbookSettings](GetWorkbookSettings)  :  Retrieve descriptions of workbook settings. 
-- [PostWorkbookSettings](PostWorkbookSettings)  :  Update setting in the workbook. 
-- [PutWorkbookBackground](PutWorkbookBackground)  :  Set background in the workbook. 
-- [DeleteWorkbookBackground](DeleteWorkbookBackground)  :  Delete background in the workbook. 
-- [PutWorkbookWaterMarker](PutWorkbookWaterMarker)  :  Set water marker in the workbook. 
-- [GetPageCount](GetPageCount)  :  Get page count in the workbook. 
-- [GetWorksheets](GetWorksheets)  :  Retrieve the description of worksheets from a workbook. 
-- [GetWorksheetWithFormat](GetWorksheetWithFormat)  :  Retrieve the worksheet in a specified format from the workbook. 
-- [PutChangeVisibilityWorksheet](PutChangeVisibilityWorksheet)  :  Change worksheet visibility in the workbook. 
-- [PutActiveWorksheet](PutActiveWorksheet)  :  Set active worksheet index in the workbook. 
-- [PutInsertNewWorksheet](PutInsertNewWorksheet)  :  Insert a new worksheet in the workbook. 
-- [PutAddNewWorksheet](PutAddNewWorksheet)  :  Add a new worksheet in the workbook. 
-- [DeleteWorksheet](DeleteWorksheet)  :  Delete a worksheet in the workbook. 
-- [DeleteWorksheets](DeleteWorksheets)  :  Delete matched worksheets in the workbook. 
-- [PostMoveWorksheet](PostMoveWorksheet)  :  Move worksheet in the workbook. 
-- [PutProtectWorksheet](PutProtectWorksheet)  :  Protect worksheet. 
-- [DeleteUnprotectWorksheet](DeleteUnprotectWorksheet)  :  Unprotect worksheet. 
-- [GetWorksheetTextItems](GetWorksheetTextItems)  :  Retrieve text items in the worksheet. 
-- [GetWorksheetComments](GetWorksheetComments)  :  Retrieve the description of comments in the worksheet. 
-- [GetWorksheetComment](GetWorksheetComment)  :  Retrieve the description of comment in the worksheet. 
-- [PutWorksheetComment](PutWorksheetComment)  :  Add cell comment in the worksheet. 
-- [PostWorksheetComment](PostWorksheetComment)  :  Update cell comment in the worksheet. 
-- [DeleteWorksheetComment](DeleteWorksheetComment)  :  Delete cell comment in the worksheet. 
-- [DeleteWorksheetComments](DeleteWorksheetComments)  :  Delete all comments in the worksheet. 
-- [GetWorksheetMergedCells](GetWorksheetMergedCells)  :  Get worksheet merged cells. 
-- [GetWorksheetMergedCell](GetWorksheetMergedCell)  :  Retrieve description of a merged cell by its index in the worksheet. 
-- [GetWorksheetCalculateFormula](GetWorksheetCalculateFormula)  :  Calculate formula in the worksheet. 
-- [PostWorksheetCalculateFormula](PostWorksheetCalculateFormula)  :  Calculate formula in the worksheet. 
-- [PostWorksheetTextSearch](PostWorksheetTextSearch)  :  Search for text in the worksheet. 
-- [PostWorksheetTextReplace](PostWorksheetTextReplace)  :  Replace old text with new text in the worksheet. 
-- [PostWorksheetRangeSort](PostWorksheetRangeSort)  :  Sort a range in the worksheet. 
-- [PostAutofitWorksheetRow](PostAutofitWorksheetRow)  :  Autofit a row in the worksheet. 
-- [PostAutofitWorksheetRows](PostAutofitWorksheetRows)  :  Autofit rows in the worksheet. 
-- [PostAutofitWorksheetColumns](PostAutofitWorksheetColumns)  :  Autofit columns in the worksheet. 
-- [PutWorksheetBackground](PutWorksheetBackground)  :  Set background image in the worksheet. 
-- [DeleteWorksheetBackground](DeleteWorksheetBackground)  :  Delete background image in the worksheet. 
-- [PutWorksheetFreezePanes](PutWorksheetFreezePanes)  :  Set freeze panes in the worksheet. 
-- [DeleteWorksheetFreezePanes](DeleteWorksheetFreezePanes)  :  Unfreeze panes in worksheet. 
-- [PostCopyWorksheet](PostCopyWorksheet)  :  Copy contents and formats from another worksheet. 
-- [PostRenameWorksheet](PostRenameWorksheet)  :  Rename worksheet in the workbook. 
-- [PostUpdateWorksheetProperty](PostUpdateWorksheetProperty)  :  Update worksheet properties in the workbook. 
-- [GetNamedRanges](GetNamedRanges)  :  Retrieve descriptions of ranges in the worksheets. 
-- [GetNamedRangeValue](GetNamedRangeValue)  :  Retrieve values in range. 
-- [PostUpdateWorksheetZoom](PostUpdateWorksheetZoom)  :  Update the scaling percentage in the worksheet. It should be between 10 and 400. 
-- [GetWorksheetPageCount](GetWorksheetPageCount)  :  Get page count in the worksheet. 
-- [GetWorksheetValidations](GetWorksheetValidations)  :  Retrieve descriptions of validations in the worksheet. 
-- [GetWorksheetValidation](GetWorksheetValidation)  :  Retrieve a validation by its index in the worksheet. 
-- [PutWorksheetValidation](PutWorksheetValidation)  :  Add a validation at index in the worksheet. 
-- [PostWorksheetValidation](PostWorksheetValidation)  :  Update a validation by index in the worksheet. 
-- [DeleteWorksheetValidation](DeleteWorksheetValidation)  :  Delete a validation by index in worksheet. 
-- [DeleteWorksheetValidations](DeleteWorksheetValidations)  :  Delete all validations in the worksheet. 
+- [PostAnalyzeExcel](postanalyzeexcel)  :  Perform business analysis of data in Excel files. 
+- [GetWorksheetAutoFilter](getworksheetautofilter)  :  Retrieve the description of auto filters from a worksheet. 
+- [PutWorksheetDateFilter](putworksheetdatefilter)  :  Apply a date filter in the worksheet. 
+- [PutWorksheetFilter](putworksheetfilter)  :  Add a filter for a column in the worksheet. 
+- [PutWorksheetIconFilter](putworksheeticonfilter)  :  Add an icon filter in the worksheet. 
+- [PutWorksheetCustomFilter](putworksheetcustomfilter)  :  Filter a list with custom criteria in the worksheet. 
+- [PutWorksheetDynamicFilter](putworksheetdynamicfilter)  :  Add a dynamic filter in the worksheet. 
+- [PutWorksheetFilterTop10](putworksheetfiltertop10)  :  Filter the top 10 items in the list in the worksheet. 
+- [PutWorksheetColorFilter](putworksheetcolorfilter)  :  Add a color filter in the worksheet. 
+- [PostWorksheetMatchBlanks](postworksheetmatchblanks)  :  Match all blank cells in the list. 
+- [PostWorksheetMatchNonBlanks](postworksheetmatchnonblanks)  :  Match all not blank cells in the list. 
+- [PostWorksheetAutoFilterRefresh](postworksheetautofilterrefresh)  :  Refresh auto filters in the worksheet. 
+- [DeleteWorksheetDateFilter](deleteworksheetdatefilter)  :  Remove a date filter in the worksheet. 
+- [DeleteWorksheetFilter](deleteworksheetfilter)  :  Delete a filter for a column in the worksheet. 
+- [GetWorksheetAutoshapes](getworksheetautoshapes)  :  Get autoshapes description in worksheet. 
+- [GetWorksheetAutoshapeWithFormat](getworksheetautoshapewithformat)  :  Get autoshape description in some format. 
+- [PostBatchConvert](postbatchconvert)  :  Batch converting files that meet specific matching conditions. 
+- [PostBatchProtect](postbatchprotect)  :  Batch protecting files that meet specific matching conditions. 
+- [PostBatchLock](postbatchlock)  :  Batch locking files that meet specific matching conditions. 
+- [PostBatchUnlock](postbatchunlock)  :  Batch unlocking files that meet specific matching conditions. 
+- [PostBatchSplit](postbatchsplit)  :  Batch splitting files that meet specific matching conditions. 
+- [PostClearContents](postclearcontents)  :  Clear cell area contents in the worksheet. 
+- [PostClearFormats](postclearformats)  :  Clear cell formats in the worksheet. 
+- [PostUpdateWorksheetRangeStyle](postupdateworksheetrangestyle)  :  Update cell range styles in the worksheet. 
+- [PostWorksheetMerge](postworksheetmerge)  :  Merge cells in the worksheet. 
+- [PostWorksheetUnmerge](postworksheetunmerge)  :  Unmerge cells in the worksheet. 
+- [GetWorksheetCells](getworksheetcells)  :  Retrieve cell descriptions in a specified format. 
+- [GetWorksheetCell](getworksheetcell)  :  Retrieve cell data using either cell reference or method name in the worksheet. 
+- [GetWorksheetCellStyle](getworksheetcellstyle)  :  Retrieve cell style descriptions in the worksheet. 
+- [PostWorksheetCellSetValue](postworksheetcellsetvalue)  :  Set cell value using cell name in the worksheet. 
+- [PostUpdateWorksheetCellStyle](postupdateworksheetcellstyle)  :  Set cell style using cell name in the worksheet. 
+- [PostSetCellRangeValue](postsetcellrangevalue)  :  Set the value of the range in the worksheet. 
+- [PostCopyCellIntoCell](postcopycellintocell)  :  Copy data from a source cell to a destination cell in the worksheet. 
+- [GetCellHtmlString](getcellhtmlstring)  :  Retrieve the HTML string containing data and specific formats in this cell. 
+- [PostSetCellHtmlString](postsetcellhtmlstring)  :  Set the HTML string containing data and specific formats in this cell. 
+- [PostCellCalculate](postcellcalculate)  :  Calculate cell formula in the worksheet. 
+- [PostCellCharacters](postcellcharacters)  :  Set cell characters in the worksheet. 
+- [GetWorksheetColumns](getworksheetcolumns)  :  Retrieve descriptions of worksheet columns. 
+- [PostSetWorksheetColumnWidth](postsetworksheetcolumnwidth)  :  Set worksheet column width. 
+- [GetWorksheetColumn](getworksheetcolumn)  :  Retrieve worksheet column data by column index. 
+- [PutInsertWorksheetColumns](putinsertworksheetcolumns)  :  Insert worksheet columns in the worksheet. 
+- [DeleteWorksheetColumns](deleteworksheetcolumns)  :  Delete worksheet columns in the worksheet. 
+- [PostHideWorksheetColumns](posthideworksheetcolumns)  :  Hide worksheet columns in the worksheet. 
+- [PostUnhideWorksheetColumns](postunhideworksheetcolumns)  :  Unhide worksheet columns in the worksheet. 
+- [PostGroupWorksheetColumns](postgroupworksheetcolumns)  :  Group worksheet columns in the worksheet. 
+- [PostUngroupWorksheetColumns](postungroupworksheetcolumns)  :  Ungroup worksheet columns. 
+- [PostCopyWorksheetColumns](postcopyworksheetcolumns)  :  Copy data from source columns to destination columns in the worksheet. 
+- [PostColumnStyle](postcolumnstyle)  :  Set column style in the worksheet. 
+- [GetWorksheetRows](getworksheetrows)  :  Retrieve descriptions of rows in the worksheet. 
+- [GetWorksheetRow](getworksheetrow)  :  Retrieve row data by the row's index in the worksheet. 
+- [DeleteWorksheetRow](deleteworksheetrow)  :  Delete a row in the worksheet. 
+- [DeleteWorksheetRows](deleteworksheetrows)  :  Delete several rows in the worksheet. 
+- [PutInsertWorksheetRows](putinsertworksheetrows)  :  Insert several new rows in the worksheet. 
+- [PutInsertWorksheetRow](putinsertworksheetrow)  :  Insert a new row in the worksheet. 
+- [PostUpdateWorksheetRow](postupdateworksheetrow)  :  Update height of rows in the worksheet. 
+- [PostHideWorksheetRows](posthideworksheetrows)  :  Hide rows in worksheet. 
+- [PostUnhideWorksheetRows](postunhideworksheetrows)  :  Unhide rows in the worksheet. 
+- [PostGroupWorksheetRows](postgroupworksheetrows)  :  Group rows in the worksheet. 
+- [PostUngroupWorksheetRows](postungroupworksheetrows)  :  Ungroup rows in the worksheet. 
+- [PostCopyWorksheetRows](postcopyworksheetrows)  :  Copy data and formats from specific entire rows in the worksheet. 
+- [PostRowStyle](postrowstyle)  :  Apply formats to an entire row in the worksheet. 
+- [GetCellsCloudServicesHealthCheck](getcellscloudserviceshealthcheck)  :  Retrieve cell descriptions in a specified format. 
+- [GetCellsCloudServiceStatus](getcellscloudservicestatus)  :  Aspose.Cells Cloud service health status check. 
+- [GetChartArea](getchartarea)  :  Retrieve chart area description in the worksheet. 
+- [GetChartAreaFillFormat](getchartareafillformat)  :  Retrieve chart area fill format description in the worksheet. 
+- [GetChartAreaBorder](getchartareaborder)  :  Retrieve chart area border description. 
+- [GetWorksheetCharts](getworksheetcharts)  :  Retrieve descriptions of charts in the worksheet. 
+- [GetWorksheetChart](getworksheetchart)  :  Retrieve the chart in a specified format. 
+- [PutWorksheetChart](putworksheetchart)  :  Add a new chart in the worksheet. 
+- [DeleteWorksheetChart](deleteworksheetchart)  :  Delete a chart by index in the worksheet. 
+- [PostWorksheetChart](postworksheetchart)  :  Update chart properties in the worksheet. 
+- [GetWorksheetChartLegend](getworksheetchartlegend)  :  Retrieve chart legend description in the worksheet. 
+- [PostWorksheetChartLegend](postworksheetchartlegend)  :  Update chart legend in the worksheet. 
+- [PutWorksheetChartLegend](putworksheetchartlegend)  :  Show chart legend in the worksheet. 
+- [DeleteWorksheetChartLegend](deleteworksheetchartlegend)  :  Hides chart legend in the worksheet. 
+- [DeleteWorksheetCharts](deleteworksheetcharts)  :  Clear the charts in the worksheets. 
+- [GetWorksheetChartTitle](getworksheetcharttitle)  :  Retrieve chart title description in the worksheet. 
+- [PostWorksheetChartTitle](postworksheetcharttitle)  :  Update chart title in the worksheet. 
+- [PutWorksheetChartTitle](putworksheetcharttitle)  :  Set chart title in the worksheet. 
+- [DeleteWorksheetChartTitle](deleteworksheetcharttitle)  :  Hide chart title in the worksheet. 
+- [GetChartSeriesAxis](getchartseriesaxis)  :  Retrieve descriptions of chart seriesaxis in the chart. 
+- [GetChartCategoryAxis](getchartcategoryaxis)  :  Retrieve descriptions of chart series axis in the chart. 
+- [GetChartValueAxis](getchartvalueaxis)  :  Retrieve chart value axis in the chart. 
+- [GetChartSecondCategoryAxis](getchartsecondcategoryaxis)  :  Retrieve chart second category axis in the chart 
+- [GetChartSecondValueAxis](getchartsecondvalueaxis)  :  Retrieve chart second value axis in the chart. 
+- [PostChartSeriesAxis](postchartseriesaxis)  :  Update chart series axis in the chart. 
+- [PostChartCategoryAxis](postchartcategoryaxis)  :  Update chart category axis in the chart. 
+- [PostChartValueAxis](postchartvalueaxis)  :  Update chart value axis in the chart. 
+- [PostChartSecondCategoryAxis](postchartsecondcategoryaxis)  :  Update chart sencond category axis in the chart. 
+- [PostChartSecondValueAxis](postchartsecondvalueaxis)  :  Update chart sencond value axis in the chart. 
+- [GetWorksheetConditionalFormattings](getworksheetconditionalformattings)  :  Retrieve descriptions of conditional formattings in a worksheet. 
+- [GetWorksheetConditionalFormatting](getworksheetconditionalformatting)  :  Retrieve conditional formatting descriptions in the worksheet. 
+- [PutWorksheetConditionalFormatting](putworksheetconditionalformatting)  :  Add conditional formatting in the worksheet. 
+- [PutWorksheetFormatCondition](putworksheetformatcondition)  :  Add a format condition in the worksheet. 
+- [PutWorksheetFormatConditionArea](putworksheetformatconditionarea)  :  Add a cell area for the format condition in the worksheet. 
+- [PutWorksheetFormatConditionCondition](putworksheetformatconditioncondition)  :  Add a condition for the format condition in the worksheet. 
+- [DeleteWorksheetConditionalFormattings](deleteworksheetconditionalformattings)  :  Clear all conditional formattings in the worksheet. 
+- [DeleteWorksheetConditionalFormatting](deleteworksheetconditionalformatting)  :  Remove a conditional formatting. 
+- [DeleteWorksheetConditionalFormattingArea](deleteworksheetconditionalformattingarea)  :  Remove cell area from conditional formatting. 
+- [GetWorkbook](getworkbook)  :  Retrieve workbooks in various formats. 
+- [PutConvertWorkbook](putconvertworkbook)  :  Convert the workbook from the requested content into files in different formats. 
+- [PostWorkbookSaveAs](postworkbooksaveas)  :  Save an Excel file in various formats. 
+- [PostConvertWorkbookToPDF](postconvertworkbooktopdf)  :  Convert Excel file to PDF files. 
+- [PostConvertWorkbookToPNG](postconvertworkbooktopng)  :  Convert Excel file to PNG files. 
+- [PostConvertWorkbookToDocx](postconvertworkbooktodocx)  :  Convert Excel file to Docx files. 
+- [PostConvertWorkbookToPptx](postconvertworkbooktopptx)  :  Convert Excel file to Pptx files. 
+- [PostConvertWorkbookToHtml](postconvertworkbooktohtml)  :  Convert Excel file to HTML files. 
+- [PostConvertWorkbookToMarkdown](postconvertworkbooktomarkdown)  :  Convert Excel file to Markdown files. 
+- [PostConvertWorkbookToJson](postconvertworkbooktojson)  :  Convert Excel file to Json files. 
+- [PostConvertWorkbookToSQL](postconvertworkbooktosql)  :  Convert Excel file to SQL Script files. 
+- [PostConvertWorkbookToCSV](postconvertworkbooktocsv)  :  Convert Excel file to Csv files. 
+- [PostExport](postexport)  :  Export Excel internal elements or the workbook itself to various format files. 
+- [PostWorkbookExportXML](postworkbookexportxml)  :  Export XML data from an Excel file.When there are XML Maps in an Excel file, export XML data. When there is no XML map in the Excel file, convert the Excel file to an XML file. 
+- [PostWorkbookImportJson](postworkbookimportjson)  :  Import a JSON data file into the workbook. The JSON data file can either be a cloud file or data from an HTTP URI. 
+- [PostWorkbookImportXML](postworkbookimportxml)  :  Import an XML data file into an Excel file. The XML data file can either be a cloud file or data from an HTTP URI. 
+- [PostImportData](postimportdata)  :  Import data into the Excel file. 
+- [PostWorkbookDataCleansing](postworkbookdatacleansing)  :  Data cleaning of spreadsheet files is a data management process used to identify, correct, and remove errors, incompleteness, duplicates, or inaccuracies in tables and ranges. 
+- [PostDataCleansing](postdatacleansing)  :  Data cleansing of spreadsheet files is a data management process used to identify, correct, and remove errors, incompleteness, duplicates, or inaccuracies in tables and ranges. 
+- [PostWorkbookDataDeduplication](postworkbookdatadeduplication)  :  Data deduplication of spreadsheet files is mainly used to eliminate duplicate data in tables and ranges. 
+- [PostDataDeduplication](postdatadeduplication)  :  Data deduplication of spreadsheet files is mainly used to eliminate duplicate data in tables and ranges. 
+- [PostWorkbookDataFill](postworkbookdatafill)  :  Data filling for spreadsheet files is primarily used to fill empty data in tables and ranges. 
+- [PostDataFill](postdatafill)  :  Data filling for spreadsheet files is primarily used to fill empty data in tables and ranges. 
+- [PostDeleteIncompleteRows](postdeleteincompleterows)  :  Deleting incomplete rows of spreadsheet files is mainly used to eliminate incomplete rows in tables and ranges. 
+- [GetWorksheetHyperlinks](getworksheethyperlinks)  :  Retrieve descriptions of hyperlinks in the worksheet. 
+- [GetWorksheetHyperlink](getworksheethyperlink)  :  Retrieve hyperlink description by index in the worksheet. 
+- [DeleteWorksheetHyperlink](deleteworksheethyperlink)  :  Delete hyperlink by index in the worksheet. 
+- [PostWorksheetHyperlink](postworksheethyperlink)  :  Update hyperlink by index in the worksheet. 
+- [PutWorksheetHyperlink](putworksheethyperlink)  :  Add hyperlink in the worksheet. 
+- [DeleteWorksheetHyperlinks](deleteworksheethyperlinks)  :  Delete all hyperlinks in the worksheet. 
+- [PostAssemble](postassemble)  :  Assemble data files with template files to generate files in various formats. 
+- [PostCompress](postcompress)  :  Compress files and generate target files in various formats, supported file formats are include Xls, Xlsx, Xlsm, Xlsb, Ods and more. 
+- [PostMerge](postmerge)  :  Merge cells in the worksheet. 
+- [PostSplit](postsplit)  :  Split Excel spreadsheet files based on worksheets and create output files in various formats. 
+- [PostSearch](postsearch)  :  Search for specified text within Excel files. 
+- [PostReplace](postreplace)  :  Replace specified text with new text in Excel files. 
+- [PostImport](postimport)  :  Import data into an Excel file and generate output files in various formats. 
+- [PostWatermark](postwatermark)  :  Add Text Watermark to Excel files and generate output files in various formats. 
+- [PostClearObjects](postclearobjects)  :  Clear internal elements in Excel files and generate output files in various formats. 
+- [PostReverse](postreverse)  :  Reverse rows or columns in Excel files and create output files in various formats. 
+- [PostRepair](postrepair)  :  Repair abnormal files and generate files in various formats. 
+- [PostRotate](postrotate)  :  Rotate rows, columns, or other objects in Excel files and save them in various formats. 
+- [PostMetadata](postmetadata)  :  Update document properties in Excel file, and save them is various formats. 
+- [GetMetadata](getmetadata)  :  Get cells document properties. 
+- [DeleteMetadata](deletemetadata)  :  Delete cells document properties in Excel file, and save them is various formats. 
+- [GetWorksheetListObjects](getworksheetlistobjects)  :  Retrieve descriptions of ListObjects in the worksheet. 
+- [GetWorksheetListObject](getworksheetlistobject)  :  Retrieve list object description by index in the worksheet. 
+- [PutWorksheetListObject](putworksheetlistobject)  :  Add a ListObject in the worksheet. 
+- [DeleteWorksheetListObjects](deleteworksheetlistobjects)  :  Delete ListObjects in the worksheet. 
+- [DeleteWorksheetListObject](deleteworksheetlistobject)  :  Delete list object by index in the worksheet. 
+- [PostWorksheetListObject](postworksheetlistobject)  :  Update list object by index in the worksheet. 
+- [PostWorksheetListObjectConvertToRange](postworksheetlistobjectconverttorange)  :  Convert list object to range in the worksheet. 
+- [PostWorksheetListObjectSummarizeWithPivotTable](postworksheetlistobjectsummarizewithpivottable)  :  Create a pivot table with a list object in the worksheet. 
+- [PostWorksheetListObjectSortTable](postworksheetlistobjectsorttable)  :  Sort list object in the worksheet. 
+- [PostWorksheetListObjectRemoveDuplicates](postworksheetlistobjectremoveduplicates)  :  Remove duplicates in list object. 
+- [PostWorksheetListObjectInsertSlicer](postworksheetlistobjectinsertslicer)  :  Insert slicer for list object. 
+- [PostWorksheetListColumn](postworksheetlistcolumn)  :  Update list column in list object. 
+- [PostWorksheetListColumnsTotal](postworksheetlistcolumnstotal)  :  Update total of list columns in the table. 
+- [GetWorksheetOleObjects](getworksheetoleobjects)  :  Retrieve descriptions of OLE objects in the worksheet. 
+- [GetWorksheetOleObject](getworksheetoleobject)  :  Retrieve the OLE object in a specified format in the worksheet. 
+- [DeleteWorksheetOleObjects](deleteworksheetoleobjects)  :  Delete all OLE objects in the worksheet. 
+- [DeleteWorksheetOleObject](deleteworksheetoleobject)  :  Delete an OLE object in the worksheet. 
+- [PostUpdateWorksheetOleObject](postupdateworksheetoleobject)  :  Update an OLE object in worksheet. 
+- [PutWorksheetOleObject](putworksheetoleobject)  :  Add an OLE object in the worksheet. 
+- [GetVerticalPageBreaks](getverticalpagebreaks)  :  Retrieve descriptions of vertical page breaks in the worksheet. 
+- [GetHorizontalPageBreaks](gethorizontalpagebreaks)  :  Retrieve descriptions of horizontal page breaks in the worksheet. 
+- [GetVerticalPageBreak](getverticalpagebreak)  :  Retrieve a vertical page break description in the worksheet. 
+- [GetHorizontalPageBreak](gethorizontalpagebreak)  :  Retrieve a horizontal page break descripton in the worksheet. 
+- [PutVerticalPageBreak](putverticalpagebreak)  :  Add a vertical page break in the worksheet. 
+- [PutHorizontalPageBreak](puthorizontalpagebreak)  :  Add a horizontal page breaks in the worksheet. 
+- [DeleteVerticalPageBreaks](deleteverticalpagebreaks)  :  Delete vertical page breaks in the worksheet. 
+- [DeleteHorizontalPageBreaks](deletehorizontalpagebreaks)  :  Delete horizontal page breaks in the worksheet. 
+- [DeleteVerticalPageBreak](deleteverticalpagebreak)  :  Delete a vertical page break in the worksheet. 
+- [DeleteHorizontalPageBreak](deletehorizontalpagebreak)  :  Delete a horizontal page break in the worksheet. 
+- [GetPageSetup](getpagesetup)  :  Retrieve page setup description in the worksheet. 
+- [PostPageSetup](postpagesetup)  :  Update page setup in the worksheet. 
+- [DeleteHeaderFooter](deleteheaderfooter)  :  Clear header and footer in the worksheet. 
+- [GetHeader](getheader)  :  Retrieve page header description in the worksheet. 
+- [PostHeader](postheader)  :  Update page header in the worksheet. 
+- [GetFooter](getfooter)  :  Retrieve page footer description in the worksheet. 
+- [PostFooter](postfooter)  :  Update page footer in the worksheet. 
+- [PostFitWideToPages](postfitwidetopages)  :  Set the scale at which the page will fit wide when printed on the sheet. 
+- [PostFitTallToPages](postfittalltopages)  :  Set the scale at which the page will fit tall when printed on the sheet. 
+- [GetWorksheetPictures](getworksheetpictures)  :  Retrieve descriptions of pictures in the worksheet. 
+- [GetWorksheetPictureWithFormat](getworksheetpicturewithformat)  :  Retrieve a picture by number in the worksheet. 
+- [PutWorksheetAddPicture](putworksheetaddpicture)  :  Add a new picture in the worksheet. 
+- [PostWorksheetPicture](postworksheetpicture)  :  Update a picture by index in the worksheet. 
+- [DeleteWorksheetPicture](deleteworksheetpicture)  :  Delete a picture object by index in the worksheet. 
+- [DeleteWorksheetPictures](deleteworksheetpictures)  :  Delete all pictures in the worksheet. 
+- [GetWorksheetPivotTables](getworksheetpivottables)  :  Retrieve descriptions of pivottables  in the worksheet. 
+- [GetWorksheetPivotTable](getworksheetpivottable)  :  Retrieve PivotTable information by index in the worksheet. 
+- [GetPivotTableField](getpivottablefield)  :  Retrieve descriptions of pivot fields in the PivotTable. 
+- [GetWorksheetPivotTableFilters](getworksheetpivottablefilters)  :  Gets PivotTable filters in worksheet. 
+- [GetWorksheetPivotTableFilter](getworksheetpivottablefilter)  :  Retrieve PivotTable filters in the worksheet. 
+- [PutWorksheetPivotTable](putworksheetpivottable)  :  Add a PivotTable in the worksheet. 
+- [PutPivotTableField](putpivottablefield)  :  Add a pivot field in the PivotTable. 
+- [PutWorksheetPivotTableFilter](putworksheetpivottablefilter)  :  Add a pivot filter to the PivotTable. 
+- [PostPivotTableFieldHideItem](postpivottablefieldhideitem)  :  Hide a pivot field item in the PivotTable. 
+- [PostPivotTableFieldMoveTo](postpivottablefieldmoveto)  :  Move a pivot field in the PivotTable. 
+- [PostPivotTableCellStyle](postpivottablecellstyle)  :  Update cell style in the PivotTable. 
+- [PostPivotTableStyle](postpivottablestyle)  :  Update style in the PivotTable. 
+- [PostPivotTableUpdatePivotFields](postpivottableupdatepivotfields)  :  Update pivot fields in the PivotTable. 
+- [PostPivotTableUpdatePivotField](postpivottableupdatepivotfield)  :  Update pivot field in the PivotTable. 
+- [PostWorksheetPivotTableCalculate](postworksheetpivottablecalculate)  :  Calculate pivottable's data to cells. 
+- [PostWorksheetPivotTableMove](postworksheetpivottablemove)  :  Move PivotTable in the worksheet. 
+- [DeleteWorksheetPivotTables](deleteworksheetpivottables)  :  Delete PivotTables in the worksheet. 
+- [DeleteWorksheetPivotTable](deleteworksheetpivottable)  :  Delete PivotTable by index in the worksheet. 
+- [DeletePivotTableField](deletepivottablefield)  :  Delete a pivot field in the PivotTable. 
+- [DeleteWorksheetPivotTableFilters](deleteworksheetpivottablefilters)  :  Delete all pivot filters in the PivotTable. 
+- [DeleteWorksheetPivotTableFilter](deleteworksheetpivottablefilter)  :  Delete a pivot filter in the PivotTable. 
+- [GetDocumentProperties](getdocumentproperties)  :  Retrieve descriptions of Excel file properties. 
+- [PutDocumentProperty](putdocumentproperty)  :  Set or add an Excel property. 
+- [GetDocumentProperty](getdocumentproperty)  :  Get Excel property by name. 
+- [DeleteDocumentProperty](deletedocumentproperty)  :  Delete an Excel property. 
+- [DeleteDocumentProperties](deletedocumentproperties)  :  Delete all custom document properties and reset built-in ones. 
+- [PostDigitalSignature](postdigitalsignature)  :  Excel file digital signature. 
+- [PostEncryptWorkbook](postencryptworkbook)  :  Excel Encryption. 
+- [DeleteDecryptWorkbook](deletedecryptworkbook)  :  Excel files decryption. 
+- [PostProtectWorkbook](postprotectworkbook)  :  Excel protection. 
+- [DeleteUnProtectWorkbook](deleteunprotectworkbook)  :  Excel unprotection. 
+- [PutDocumentProtectFromChanges](putdocumentprotectfromchanges)  :  Excel file write protection. 
+- [DeleteDocumentUnProtectFromChanges](deletedocumentunprotectfromchanges)  :  Excel file cancel write protection. 
+- [PostUnlock](postunlock)  :  Unlock Excel files. 
+- [PostLock](postlock)  :  Lock Excel files. 
+- [PostProtect](postprotect)  :  Excel files encryption. 
+- [PostWorksheetCellsRangesCopy](postworksheetcellsrangescopy)  :  Copy content from the source range to the destination range in the worksheet. 
+- [PostWorksheetCellsRangeMerge](postworksheetcellsrangemerge)  :  Merge a range of cells into a single cell. 
+- [PostWorksheetCellsRangeUnMerge](postworksheetcellsrangeunmerge)  :  Unmerge merged cells within this range. 
+- [PostWorksheetCellsRangeStyle](postworksheetcellsrangestyle)  :  Set the style for the specified range. 
+- [GetWorksheetCellsRangeValue](getworksheetcellsrangevalue)  :  Retrieve the values of cells within the specified range. 
+- [PostWorksheetCellsRangeValue](postworksheetcellsrangevalue)  :  Assign a value to the range; if necessary, the value will be converted to another data type, and the cell's number format will be reset. 
+- [PostWorksheetCellsRangeMoveTo](postworksheetcellsrangemoveto)  :  Move the current range to the destination range. 
+- [PostWorksheetCellsRangeSort](postworksheetcellsrangesort)  :  Perform data sorting around a range of cells. 
+- [PostWorksheetCellsRangeOutlineBorder](postworksheetcellsrangeoutlineborder)  :  Apply an outline border around a range of cells. 
+- [PostWorksheetCellsRangeColumnWidth](postworksheetcellsrangecolumnwidth)  :  Set the column width of the specified range. 
+- [PostWorksheetCellsRangeRowHeight](postworksheetcellsrangerowheight)  :  Sets row height of range. 
+- [PutWorksheetCellsRange](putworksheetcellsrange)  :  Insert a range of cells and shift existing cells based on the specified shift option. 
+- [DeleteWorksheetCellsRange](deleteworksheetcellsrange)  :  Delete a range of cells and shift existing cells based on the specified shift option. 
+- [GetWorksheetShapes](getworksheetshapes)  :  Retrieve descriptions of shapes in the worksheet. 
+- [GetWorksheetShape](getworksheetshape)  :  Retrieve description of shape in the worksheet. 
+- [PutWorksheetShape](putworksheetshape)  :  Add a shape in the worksheet. 
+- [DeleteWorksheetShapes](deleteworksheetshapes)  :  Delete all shapes in the worksheet. 
+- [DeleteWorksheetShape](deleteworksheetshape)  :  Delete a shape in the worksheet. 
+- [PostWorksheetShape](postworksheetshape)  :  Update a shape in the worksheet. 
+- [PostWorksheetGroupShape](postworksheetgroupshape)  :  Group shapes in the worksheet. 
+- [PostWorksheetUngroupShape](postworksheetungroupshape)  :  Ungroup shapes in the worksheet. 
+- [GetWorksheetSparklineGroups](getworksheetsparklinegroups)  :  Retrieve descriptions of sparkline groups in the worksheet. 
+- [GetWorksheetSparklineGroup](getworksheetsparklinegroup)  :  Retrieve description of a sparkline group in the worksheet. 
+- [DeleteWorksheetSparklineGroups](deleteworksheetsparklinegroups)  :  Delete sparkline groups in the worksheet. 
+- [DeleteWorksheetSparklineGroup](deleteworksheetsparklinegroup)  :  Delete a sparkline group in the worksheet. 
+- [PutWorksheetSparklineGroup](putworksheetsparklinegroup)  :  Add a sparkline group in the worksheet. 
+- [PostWorksheetSparklineGroup](postworksheetsparklinegroup)  :  Update a sparkline group in the worksheet. 
+- [PostRunTask](postruntask)  :  Run tasks. 
+- [GetWorkbookDefaultStyle](getworkbookdefaultstyle)  :  Retrieve the description of the default style for the workbook. 
+- [GetWorkbookTextItems](getworkbooktextitems)  :  Retrieve text items in the workbook. 
+- [GetWorkbookNames](getworkbooknames)  :  Retrieve named ranges in the workbook. 
+- [PutWorkbookName](putworkbookname)  :  Define a new name in the workbook. 
+- [GetWorkbookName](getworkbookname)  :  Retrieve description of a named range in the workbook. 
+- [PostWorkbookName](postworkbookname)  :  Update a named range in the workbook. 
+- [GetWorkbookNameValue](getworkbooknamevalue)  :  Retrieve the value of a named range in the workbook. 
+- [DeleteWorkbookNames](deleteworkbooknames)  :  Delete all named ranges in the workbook. 
+- [DeleteWorkbookName](deleteworkbookname)  :  Delete a named range in the workbook. 
+- [PostWorkbooksMerge](postworkbooksmerge)  :  Merge a workbook into the existing workbook. 
+- [PostWorkbooksTextSearch](postworkbookstextsearch)  :  Search for text in the workbook. 
+- [PostWorkbookTextReplace](postworkbooktextreplace)  :  Replace text in the workbook. 
+- [PostWorkbookGetSmartMarkerResult](postworkbookgetsmartmarkerresult)  :  Smart marker processing. 
+- [PutWorkbookCreate](putworkbookcreate)  :  Create a new workbook using different methods. 
+- [PostWorkbookSplit](postworkbooksplit)  :  Split the workbook with a specific format. 
+- [PostWorkbookCalculateFormula](postworkbookcalculateformula)  :  Calculate all formulas in the workbook. 
+- [PostAutofitWorkbookRows](postautofitworkbookrows)  :  Autofit rows in the workbook. 
+- [PostAutofitWorkbookColumns](postautofitworkbookcolumns)  :  Autofit columns in the workbook. 
+- [GetWorkbookSettings](getworkbooksettings)  :  Retrieve descriptions of workbook settings. 
+- [PostWorkbookSettings](postworkbooksettings)  :  Update setting in the workbook. 
+- [PutWorkbookBackground](putworkbookbackground)  :  Set background in the workbook. 
+- [DeleteWorkbookBackground](deleteworkbookbackground)  :  Delete background in the workbook. 
+- [PutWorkbookWaterMarker](putworkbookwatermarker)  :  Set water marker in the workbook. 
+- [GetPageCount](getpagecount)  :  Get page count in the workbook. 
+- [GetWorksheets](getworksheets)  :  Retrieve the description of worksheets from a workbook. 
+- [GetWorksheetWithFormat](getworksheetwithformat)  :  Retrieve the worksheet in a specified format from the workbook. 
+- [PutChangeVisibilityWorksheet](putchangevisibilityworksheet)  :  Change worksheet visibility in the workbook. 
+- [PutActiveWorksheet](putactiveworksheet)  :  Set active worksheet index in the workbook. 
+- [PutInsertNewWorksheet](putinsertnewworksheet)  :  Insert a new worksheet in the workbook. 
+- [PutAddNewWorksheet](putaddnewworksheet)  :  Add a new worksheet in the workbook. 
+- [DeleteWorksheet](deleteworksheet)  :  Delete a worksheet in the workbook. 
+- [DeleteWorksheets](deleteworksheets)  :  Delete matched worksheets in the workbook. 
+- [PostMoveWorksheet](postmoveworksheet)  :  Move worksheet in the workbook. 
+- [PutProtectWorksheet](putprotectworksheet)  :  Protect worksheet. 
+- [DeleteUnprotectWorksheet](deleteunprotectworksheet)  :  Unprotect worksheet. 
+- [GetWorksheetTextItems](getworksheettextitems)  :  Retrieve text items in the worksheet. 
+- [GetWorksheetComments](getworksheetcomments)  :  Retrieve the description of comments in the worksheet. 
+- [GetWorksheetComment](getworksheetcomment)  :  Retrieve the description of comment in the worksheet. 
+- [PutWorksheetComment](putworksheetcomment)  :  Add cell comment in the worksheet. 
+- [PostWorksheetComment](postworksheetcomment)  :  Update cell comment in the worksheet. 
+- [DeleteWorksheetComment](deleteworksheetcomment)  :  Delete cell comment in the worksheet. 
+- [DeleteWorksheetComments](deleteworksheetcomments)  :  Delete all comments in the worksheet. 
+- [GetWorksheetMergedCells](getworksheetmergedcells)  :  Get worksheet merged cells. 
+- [GetWorksheetMergedCell](getworksheetmergedcell)  :  Retrieve description of a merged cell by its index in the worksheet. 
+- [GetWorksheetCalculateFormula](getworksheetcalculateformula)  :  Calculate formula in the worksheet. 
+- [PostWorksheetCalculateFormula](postworksheetcalculateformula)  :  Calculate formula in the worksheet. 
+- [PostWorksheetTextSearch](postworksheettextsearch)  :  Search for text in the worksheet. 
+- [PostWorksheetTextReplace](postworksheettextreplace)  :  Replace old text with new text in the worksheet. 
+- [PostWorksheetRangeSort](postworksheetrangesort)  :  Sort a range in the worksheet. 
+- [PostAutofitWorksheetRow](postautofitworksheetrow)  :  Autofit a row in the worksheet. 
+- [PostAutofitWorksheetRows](postautofitworksheetrows)  :  Autofit rows in the worksheet. 
+- [PostAutofitWorksheetColumns](postautofitworksheetcolumns)  :  Autofit columns in the worksheet. 
+- [PutWorksheetBackground](putworksheetbackground)  :  Set background image in the worksheet. 
+- [DeleteWorksheetBackground](deleteworksheetbackground)  :  Delete background image in the worksheet. 
+- [PutWorksheetFreezePanes](putworksheetfreezepanes)  :  Set freeze panes in the worksheet. 
+- [DeleteWorksheetFreezePanes](deleteworksheetfreezepanes)  :  Unfreeze panes in worksheet. 
+- [PostCopyWorksheet](postcopyworksheet)  :  Copy contents and formats from another worksheet. 
+- [PostRenameWorksheet](postrenameworksheet)  :  Rename worksheet in the workbook. 
+- [PostUpdateWorksheetProperty](postupdateworksheetproperty)  :  Update worksheet properties in the workbook. 
+- [GetNamedRanges](getnamedranges)  :  Retrieve descriptions of ranges in the worksheets. 
+- [GetNamedRangeValue](getnamedrangevalue)  :  Retrieve values in range. 
+- [PostUpdateWorksheetZoom](postupdateworksheetzoom)  :  Update the scaling percentage in the worksheet. It should be between 10 and 400. 
+- [GetWorksheetPageCount](getworksheetpagecount)  :  Get page count in the worksheet. 
+- [GetWorksheetValidations](getworksheetvalidations)  :  Retrieve descriptions of validations in the worksheet. 
+- [GetWorksheetValidation](getworksheetvalidation)  :  Retrieve a validation by its index in the worksheet. 
+- [PutWorksheetValidation](putworksheetvalidation)  :  Add a validation at index in the worksheet. 
+- [PostWorksheetValidation](postworksheetvalidation)  :  Update a validation by index in the worksheet. 
+- [DeleteWorksheetValidation](deleteworksheetvalidation)  :  Delete a validation by index in worksheet. 
+- [DeleteWorksheetValidations](deleteworksheetvalidations)  :  Delete all validations in the worksheet. 
