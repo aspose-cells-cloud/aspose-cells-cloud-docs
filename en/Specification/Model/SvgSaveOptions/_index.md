@@ -23,5 +23,5 @@ Represents the options of saving .svg file.
 | SortNames | Boolean | True |  False |  |  |  
 | ValidateMergedAreas | Boolean | True |  False |  |  |  
 
-**Parent Name** : (SaveOptions)[saveoptions]
+**Parent Name** : [SaveOptions](saveoptions)
 

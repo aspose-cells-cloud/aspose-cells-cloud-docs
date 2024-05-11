@@ -9,7 +9,7 @@ weight: 50
 
 ## **autoFitterOptions**
 
- 
+Represents all auto fitter options. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |

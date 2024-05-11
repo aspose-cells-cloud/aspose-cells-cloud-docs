@@ -9,7 +9,7 @@ weight: 50
 
 ## **shadowEffect**
 
- 
+           This class specifies the shadow effect of the chart element or shape.            
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |

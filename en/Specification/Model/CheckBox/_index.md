@@ -9,7 +9,7 @@ weight: 50
 
 ## **checkBox**
 
- 
+Represents a check box object in a worksheet. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
@@ -54,5 +54,5 @@ weight: 50
 | Hyperlink | String | True |  False |  |  |  
 | link | Class:Link | True |  False |  |  |  
 
-**Parent Name** : (Shape)[shape]
+**Parent Name** : [Shape](shape)
 

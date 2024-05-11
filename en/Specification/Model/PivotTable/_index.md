@@ -9,7 +9,7 @@ weight: 50
 
 ## **pivotTable**
 
- 
+Summary description for PivotTable. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
@@ -83,5 +83,5 @@ weight: 50
 | Tag | String | True |  False |  |  |  
 | link | Class:Link | True |  False |  |  |  
 
-**Parent Name** : (LinkElement)[linkelement]
+**Parent Name** : [LinkElement](linkelement)
 

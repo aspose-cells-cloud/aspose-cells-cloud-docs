@@ -9,7 +9,7 @@ weight: 50
 
 ## **cellArea**
 
- 
+           Represent an area of cells.            
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |

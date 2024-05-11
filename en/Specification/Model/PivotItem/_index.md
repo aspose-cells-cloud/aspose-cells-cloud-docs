@@ -9,7 +9,7 @@ weight: 50
 
 ## **pivotItem**
 
- 
+           Represents a item in a PivotField report.            
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |

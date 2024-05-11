@@ -9,7 +9,7 @@ weight: 50
 
 ## **chartDataTable**
 
- 
+Represents a chart data table. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
@@ -23,5 +23,5 @@ weight: 50
 | ShowLegendKey | Boolean | True |  False |  | True if the data label legend key is visible. |  
 | link | Class:Link | True |  False |  |  |  
 
-**Parent Name** : (LinkElement)[linkelement]
+**Parent Name** : [LinkElement](linkelement)
 

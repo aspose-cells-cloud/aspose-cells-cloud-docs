@@ -9,12 +9,12 @@ weight: 50
 
 ## **worksheets**
 
- 
+Encapsulates a collection of  objects. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
 | WorksheetList | Container | True |  False |  |  |  
 | link | Class:Link | True |  False |  |  |  
 
-**Parent Name** : (LinkElement)[linkelement]
+**Parent Name** : [LinkElement](linkelement)
 

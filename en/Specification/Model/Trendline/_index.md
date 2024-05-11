@@ -9,7 +9,7 @@ weight: 50
 
 ## **trendline**
 
- 
+Represents a trendline in a chart. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
@@ -46,5 +46,5 @@ weight: 50
 | Weight | String | True |  False |  |  |  
 | WeightPt | Floating | True |  False |  |  |  
 
-**Parent Name** : (Line)[line]
+**Parent Name** : [Line](line)
 

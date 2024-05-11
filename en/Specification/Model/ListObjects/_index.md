@@ -9,12 +9,12 @@ weight: 50
 
 ## **listObjects**
 
- 
+Represents a collection of  objects in the worksheet. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
 | ListObjectList | Container | True |  False |  |  |  
 | link | Class:Link | True |  False |  |  |  
 
-**Parent Name** : (LinkElement)[linkelement]
+**Parent Name** : [LinkElement](linkelement)
 

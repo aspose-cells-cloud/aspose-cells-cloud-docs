@@ -15,5 +15,5 @@ weight: 50
 | :- | :- | :- |:- |  :- | :- |
 | Criteria | String | True |  False |  |  |  
 
-**Parent Name** : (MultipleFilter)[multiplefilter]
+**Parent Name** : [MultipleFilter](multiplefilter)
 

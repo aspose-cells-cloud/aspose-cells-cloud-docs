@@ -9,12 +9,12 @@ weight: 50
 
 ## **oleObjects**
 
- 
+Represents embedded OLE objects. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
 | OleObjectList | Container | True |  False |  |  |  
 | link | Class:Link | True |  False |  |  |  
 
-**Parent Name** : (LinkElement)[linkelement]
+**Parent Name** : [LinkElement](linkelement)
 

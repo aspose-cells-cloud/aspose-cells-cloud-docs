@@ -9,7 +9,7 @@ weight: 50
 
 ## **legendEntry**
 
- 
+Represents a legend entry in a chart legend. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
@@ -19,5 +19,5 @@ weight: 50
 | IsDeleted | String | True |  False |  | Gets and sets whether the legend entry is deleted. |  
 | link | Class:Link | True |  False |  |  |  
 
-**Parent Name** : (LinkElement)[linkelement]
+**Parent Name** : [LinkElement](linkelement)
 

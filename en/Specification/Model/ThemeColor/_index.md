@@ -9,7 +9,7 @@ weight: 50
 
 ## **themeColor**
 
- 
+           Represents a theme color.            
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |

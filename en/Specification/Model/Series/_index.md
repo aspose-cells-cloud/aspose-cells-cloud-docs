@@ -9,7 +9,7 @@ weight: 50
 
 ## **series**
 
- 
+Encapsulates the object that represents a single data series in a chart. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
@@ -63,5 +63,5 @@ weight: 50
 | YErrorBar | Class:LinkElement | True |  False |  | Represents Y direction error bar of the series. |  
 | link | Class:Link | True |  False |  |  |  
 
-**Parent Name** : (LinkElement)[linkelement]
+**Parent Name** : [LinkElement](linkelement)
 

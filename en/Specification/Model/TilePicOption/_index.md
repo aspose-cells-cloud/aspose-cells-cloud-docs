@@ -9,7 +9,7 @@ weight: 50
 
 ## **tilePicOption**
 
- 
+           Represents tile picture as texture.            
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |

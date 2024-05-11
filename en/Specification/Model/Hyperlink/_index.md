@@ -9,7 +9,7 @@ weight: 50
 
 ## **hyperlink**
 
- 
+Encapsulates the object that represents a hyperlink. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
@@ -20,5 +20,5 @@ weight: 50
 | LinkType | String | True |  False |  | Gets the link type. |  
 | link | Class:Link | True |  False |  |  |  
 
-**Parent Name** : (LinkElement)[linkelement]
+**Parent Name** : [LinkElement](linkelement)
 

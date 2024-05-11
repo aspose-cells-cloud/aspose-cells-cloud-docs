@@ -9,7 +9,7 @@ weight: 50
 
 ## **rows**
 
- 
+Collects the  objects that represent the individual rows in a worksheet. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
@@ -18,5 +18,5 @@ weight: 50
 | RowsList | Container | True |  False |  |  |  
 | link | Class:Link | True |  False |  |  |  
 
-**Parent Name** : (LinkElement)[linkelement]
+**Parent Name** : [LinkElement](linkelement)
 

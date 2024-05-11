@@ -9,7 +9,7 @@ weight: 50
 
 ## **workbookReplaceResponse**
 
- 
+Represents the WorkbookReplace Response. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
@@ -18,5 +18,5 @@ weight: 50
 | Code | Integer | True |  False |  |  |  
 | Status | String | True |  False |  |  |  
 
-**Parent Name** : (CellsCloudResponse)[cellscloudresponse]
+**Parent Name** : [CellsCloudResponse](cellscloudresponse)
 

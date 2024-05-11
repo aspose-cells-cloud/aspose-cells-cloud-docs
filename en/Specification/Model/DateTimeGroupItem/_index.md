@@ -9,7 +9,7 @@ weight: 50
 
 ## **dateTimeGroupItem**
 
- 
+Represents the datetime's group setting. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
@@ -21,5 +21,5 @@ weight: 50
 | Second | Integer | True |  False |  | Gets and sets the second of the grouped date time. |  
 | Year | Integer | True |  False |  | Gets and sets the year of the grouped date time. |  
 
-**Parent Name** : (MultipleFilter)[multiplefilter]
+**Parent Name** : [MultipleFilter](multiplefilter)
 

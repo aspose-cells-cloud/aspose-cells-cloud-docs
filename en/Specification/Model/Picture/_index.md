@@ -9,7 +9,7 @@ weight: 50
 
 ## **picture**
 
- 
+Encapsulates the object that represents a single picture in a spreadsheet. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
@@ -57,5 +57,5 @@ weight: 50
 | Hyperlink | String | True |  False |  |  |  
 | link | Class:Link | True |  False |  |  |  
 
-**Parent Name** : (Shape)[shape]
+**Parent Name** : [Shape](shape)
 

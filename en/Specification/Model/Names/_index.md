@@ -9,7 +9,7 @@ weight: 50
 
 ## **names**
 
- 
+Represents a collection of all the  objects in the spreadsheet. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
@@ -17,5 +17,5 @@ weight: 50
 | NameList | Container | True |  False |  |  |  
 | link | Class:Link | True |  False |  |  |  
 
-**Parent Name** : (LinkElement)[linkelement]
+**Parent Name** : [LinkElement](linkelement)
 

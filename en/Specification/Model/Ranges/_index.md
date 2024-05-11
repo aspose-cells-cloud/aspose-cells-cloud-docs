@@ -9,7 +9,7 @@ weight: 50
 
 ## **ranges**
 
- 
+           Encapsulates a collection of  objects.            
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |

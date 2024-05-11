@@ -9,7 +9,7 @@ weight: 50
 
 ## **font**
 
- 
+           Encapsulates the font object used in a spreadsheet.            
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |

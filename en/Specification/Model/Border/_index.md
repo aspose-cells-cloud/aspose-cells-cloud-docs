@@ -9,7 +9,7 @@ weight: 50
 
 ## **border**
 
- 
+           Encapsulates the object that represents the cell border.            
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |

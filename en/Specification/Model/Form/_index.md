@@ -69,5 +69,5 @@ weight: 50
 | Hyperlink | String | True |  False |  |  |  
 | link | Class:Link | True |  False |  |  |  
 
-**Parent Name** : (Shape)[shape]
+**Parent Name** : [Shape](shape)
 

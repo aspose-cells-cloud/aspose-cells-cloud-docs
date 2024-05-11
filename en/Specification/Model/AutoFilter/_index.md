@@ -9,7 +9,7 @@ weight: 50
 
 ## **autoFilter**
 
- 
+Represents autofiltering for the specified worksheet. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
@@ -19,5 +19,5 @@ weight: 50
 | ShowFilterButton | Boolean | True |  False |  | Indicates whether the AutoFilter button for this column is visible. |  
 | link | Class:Link | True |  False |  |  |  
 
-**Parent Name** : (LinkElement)[linkelement]
+**Parent Name** : [LinkElement](linkelement)
 

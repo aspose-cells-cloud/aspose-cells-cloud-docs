@@ -9,7 +9,7 @@ weight: 50
 
 ## **picFormatOption**
 
- 
+           Represents picture format option            
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |

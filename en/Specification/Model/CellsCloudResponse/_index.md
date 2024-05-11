@@ -9,7 +9,7 @@ weight: 50
 
 ## **cellsCloudResponse**
 
- 
+           Represents the CellsCloud Response.            
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |

@@ -9,7 +9,7 @@ weight: 50
 
 ## **column**
 
- 
+Represents a single column in a worksheet. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
@@ -20,5 +20,5 @@ weight: 50
 | Style | Class:LinkElement | True |  False |  | Gets the style of this column. |  
 | link | Class:Link | True |  False |  |  |  
 
-**Parent Name** : (LinkElement)[linkelement]
+**Parent Name** : [LinkElement](linkelement)
 

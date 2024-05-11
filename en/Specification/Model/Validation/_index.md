@@ -9,7 +9,7 @@ weight: 50
 
 ## **validation**
 
- 
+Represents data validation.settings. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
@@ -31,5 +31,5 @@ weight: 50
 | Value2 | String | True |  False |  | Represents the second value associated with the data validation. |  
 | link | Class:Link | True |  False |  |  |  
 
-**Parent Name** : (LinkElement)[linkelement]
+**Parent Name** : [LinkElement](linkelement)
 

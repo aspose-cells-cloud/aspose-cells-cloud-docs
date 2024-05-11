@@ -9,7 +9,7 @@ weight: 50
 
 ## **axis**
 
- 
+Encapsulates the object that represents an axis of chart. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
@@ -49,5 +49,5 @@ weight: 50
 | Title | Class:Title | True |  False |  | Gets the axis' title. |  
 | link | Class:Link | True |  False |  |  |  
 
-**Parent Name** : (LinkElement)[linkelement]
+**Parent Name** : [LinkElement](linkelement)
 

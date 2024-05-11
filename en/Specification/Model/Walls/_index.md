@@ -9,7 +9,7 @@ weight: 50
 
 ## **walls**
 
- 
+Encapsulates the object that represents the walls of a 3-D chart. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
@@ -26,5 +26,5 @@ weight: 50
 | InvertIfNegative | Boolean | True |  False |  |  |  
 | Transparency | Floating | True |  False |  |  |  
 
-**Parent Name** : (Floor)[floor]
+**Parent Name** : [Floor](floor)
 

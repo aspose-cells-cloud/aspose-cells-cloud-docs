@@ -9,7 +9,7 @@ weight: 50
 
 ## **top10Filter**
 
- 
+           Represents the top 10 filter.            
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |

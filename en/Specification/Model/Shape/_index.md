@@ -9,7 +9,7 @@ weight: 50
 
 ## **shape**
 
- 
+Represents the msodrawing object. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
@@ -51,7 +51,7 @@ weight: 50
 | Hyperlink | String | True |  False |  | Gets the hyperlink of the shape. |  
 | link | Class:Link | True |  False |  |  |  
 
-**Parent Name** : (LinkElement)[linkelement]
+**Parent Name** : [LinkElement](linkelement)
 
 **Children Name** : 
 	-  [ArcShape](arcshape) 

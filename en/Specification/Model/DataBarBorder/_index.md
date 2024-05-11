@@ -9,7 +9,7 @@ weight: 50
 
 ## **dataBarBorder**
 
- 
+           Represents the border of the data bars specified by a conditional formatting rule.            
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |

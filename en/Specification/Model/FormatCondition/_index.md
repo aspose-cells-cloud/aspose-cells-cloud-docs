@@ -9,7 +9,7 @@ weight: 50
 
 ## **formatCondition**
 
- 
+Represents conditional formatting condition. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
@@ -29,7 +29,7 @@ weight: 50
 | Top10 | Class:Top10 | True |  False |  | Get the conditional formatting's "Top10" instance.                        The default instance's rule highlights cells whose                        values fall in the top 10 bracket.                        Valid only for type is Top10. |  
 | link | Class:Link | True |  False |  |  |  
 
-**Parent Name** : (LinkElement)[linkelement]
+**Parent Name** : [LinkElement](linkelement)
 
 **Children Name** : 
 	-  [StyleFormatCondition](styleformatcondition) 

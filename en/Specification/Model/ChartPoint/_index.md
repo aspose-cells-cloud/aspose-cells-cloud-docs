@@ -9,7 +9,7 @@ weight: 50
 
 ## **chartPoint**
 
- 
+Represents a single point in a series in a chart. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
@@ -23,5 +23,5 @@ weight: 50
 | YValue | String | True |  False |  | Gets or sets the Y value of the chart point. |  
 | link | Class:Link | True |  False |  |  |  
 
-**Parent Name** : (LinkElement)[linkelement]
+**Parent Name** : [LinkElement](linkelement)
 

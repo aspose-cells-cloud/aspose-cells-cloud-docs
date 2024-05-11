@@ -9,7 +9,7 @@ weight: 50
 
 ## **conditionalFormattings**
 
- 
+Encapsulates a collection of  objects. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
@@ -17,5 +17,5 @@ weight: 50
 | ConditionalFormattingList | Container | True |  False |  |  |  
 | link | Class:Link | True |  False |  |  |  
 
-**Parent Name** : (LinkElement)[linkelement]
+**Parent Name** : [LinkElement](linkelement)
 

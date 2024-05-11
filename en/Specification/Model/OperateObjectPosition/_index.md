@@ -13,6 +13,7 @@ weight: 50
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
+| DataSource | Class:DataSource | True |  False |  |  |  
 | Workbook | Class:FileSource | True |  False |  |  |  
 | SheetName | String | True |  False |  |  |  
 | ChartIndex | Integer | True |  False |  |  |  

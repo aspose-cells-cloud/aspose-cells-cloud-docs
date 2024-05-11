@@ -9,7 +9,7 @@ weight: 50
 
 ## **customFilter**
 
- 
+           Represents the custom filter.            
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |

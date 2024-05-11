@@ -9,7 +9,7 @@ weight: 50
 
 ## **displayUnitLabel**
 
- 
+Represents the display unit label. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
@@ -33,5 +33,5 @@ weight: 50
 | X | Integer | True |  False |  |  |  
 | Y | Integer | True |  False |  |  |  
 
-**Parent Name** : (ChartFrame)[chartframe]
+**Parent Name** : [ChartFrame](chartframe)
 

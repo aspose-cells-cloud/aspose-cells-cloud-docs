@@ -9,7 +9,7 @@ weight: 50
 
 ## **range**
 
- 
+           Encapsulates the object that represents a range of cells within a spreadsheet.            
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |

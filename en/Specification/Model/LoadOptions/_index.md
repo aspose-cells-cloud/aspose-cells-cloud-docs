@@ -9,7 +9,7 @@ weight: 50
 
 ## **loadOptions**
 
- 
+Represents the options of loading the file. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |

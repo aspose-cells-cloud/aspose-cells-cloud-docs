@@ -16,6 +16,7 @@ weight: 50
 | DestinationWorksheet | String | True |  False |  | Destination worksheet name.   |  
 | IsInsert | Boolean | True |  False |  |  |  
 | ImportDataType | String | True |  False |  |  |  
+| DataSource | Class:DataSource | True |  False |  |  |  
 | Source | Class:FileSource | True |  False |  |  |  
 
 **Children Name** : 

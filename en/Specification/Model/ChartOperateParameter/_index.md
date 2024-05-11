@@ -26,5 +26,5 @@ weight: 50
 | Title | String | True |  False |  |  |  
 | OperateType | String | True |  False |  |  |  
 
-**Parent Name** : (OperateParameter)[operateparameter]
+**Parent Name** : [OperateParameter](operateparameter)
 

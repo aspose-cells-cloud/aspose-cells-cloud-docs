@@ -12,111 +12,114 @@ weight: 50
 - [AboveAverage](aboveaverage)  :  Describe the AboveAverage conditional formatting rule. This conditional formatting    rule highlights cells that are above or below the average for all values    in the range. 
 - [AbstractCalculationEngine](abstractcalculationengine)  :  Represents user's custom calculation engine to extend the default calculation engine of Aspose.Cells.  
 - [AbstractCalculationMonitor](abstractcalculationmonitor)  :  Monitor for user to track the progress of formula calculation.  
-- [AutoFilter](autofilter)  :   
-- [AutoFitterOptions](autofitteroptions)  :   
-- [Border](border)  :   
-- [CalculationOptions](calculationoptions)  :   
-- [Cell](cell)  :   
-- [CellArea](cellarea)  :   
-- [Cells](cells)  :   
+- [AutoFilter](autofilter)  :  Represents autofiltering for the specified worksheet. 
+- [AutoFitterOptions](autofitteroptions)  :  Represents all auto fitter options. 
+- [Border](border)  :             Encapsulates the object that represents the cell border.            
+- [CalculationOptions](calculationoptions)  :             Represents options for calculation.            
+- [Cell](cell)  :  Encapsulates the object that represents a single Workbook cell. 
+- [CellArea](cellarea)  :             Represent an area of cells.            
+- [Cells](cells)  :  Encapsulates a collection of cell relevant objects, such as Aspose.Cells.Cell, Aspose.Cells.Row, ...etc. 
 - [CellsCloudFileInfo](cellscloudfileinfo)  :  Cells Cloud File information description. 
-- [CellsColor](cellscolor)  :   
+- [CellsColor](cellscolor)  :             Represents all types of color.            
 - [CellsDocumentProperties](cellsdocumentproperties)  :  Excel properties 
 - [CellsDocumentProperty](cellsdocumentproperty)  :  Cells document property. 
 - [Color](color)  :  Color. 
 - [ColorFilter](colorfilter)  :  Color filter. 
 - [ColorScale](colorscale)  :  Describe the ColorScale conditional formatting rule. This conditional formatting   rule creates a gradated color scale on the cells.             
-- [Column](column)  :   
-- [Columns](columns)  :   
-- [Comment](comment)  :   
-- [Comments](comments)  :   
+- [Column](column)  :  Represents a single column in a worksheet. 
+- [Columns](columns)  :  Columns 
+- [Comment](comment)  :  Encapsulates the object that represents a cell comment. 
+- [Comments](comments)  :  Encapsulates a collection of  objects. 
 - [ConditionalFormatting](conditionalformatting)  :   
-- [ConditionalFormattingIcon](conditionalformattingicon)  :   
-- [ConditionalFormattings](conditionalformattings)  :   
-- [ConditionalFormattingValue](conditionalformattingvalue)  :   
+- [ConditionalFormattingIcon](conditionalformattingicon)  :             Represents  the custom  icon of conditional formatting rule.            
+- [ConditionalFormattings](conditionalformattings)  :  Encapsulates a collection of  objects. 
+- [ConditionalFormattingValue](conditionalformattingvalue)  :             Describes the values of the interpolation points in a gradient scale, dataBar or iconSet.            
 - [CopyOptions](copyoptions)  :  Represents the copy options. 
 - [CriteriaMultipleFilter](criteriamultiplefilter)  :   
-- [CustomFilter](customfilter)  :   
+- [CustomFilter](customfilter)  :             Represents the custom filter.            
 - [DataBar](databar)  :  Describe the DataBar conditional formatting rule. This conditional formatting   rule displays a gradated data bar in the range of cells. 
-- [DataBarBorder](databarborder)  :   
+- [DataBarBorder](databarborder)  :             Represents the border of the data bars specified by a conditional formatting rule.            
 - [DataCleansing](datacleansing)  :  Data Cleansing 
 - [DataColumnFillValue](datacolumnfillvalue)  :   
 - [DataFill](datafill)  :   
 - [DataFillValue](datafillvalue)  :   
+- [DataItem](dataitem)  :   
+- [DataItemType](dataitemtype)  :   
 - [DataSorter](datasorter)  :  Summary description for DataSorter. 
 - [DataSorterKey](datasorterkey)  :  Represents the key of the data sorter.  
-- [DateTimeGroupItem](datetimegroupitem)  :   
+- [DataSource](datasource)  :   
+- [DataSourceType](datasourcetype)  :   
+- [DateTimeGroupItem](datetimegroupitem)  :  Represents the datetime's group setting. 
 - [DeduplicationRegion](deduplicationregion)  :   
-- [DynamicFilter](dynamicfilter)  :   
+- [DynamicFilter](dynamicfilter)  :             Represents the dynamic filter.            
 - [FileInfo](fileinfo)  :  File Information 
+- [FileSource](filesource)  :   
+- [FileSourceType](filesourcetype)  :   
 - [FilesResult](filesresult)  :   
-- [FilterColumn](filtercolumn)  :   
-- [Font](font)  :   
-- [FontSetting](fontsetting)  :   
-- [FormatCondition](formatcondition)  :   
+- [FilterColumn](filtercolumn)  :             Represents a filter for a single column. The Filter object is a member of the Filters collection            
+- [Font](font)  :             Encapsulates the font object used in a spreadsheet.            
+- [FontSetting](fontsetting)  :             Represents a range of characters within the cell text.            
+- [FormatCondition](formatcondition)  :  Represents conditional formatting condition. 
 - [FormulaFormatCondition](formulaformatcondition)  :   
 - [FormulaSettings](formulasettings)  :  Settings of formulas and calculation.  
 - [GlobalizationSettings](globalizationsettings)  :  Represents the globalization settings.  
-- [HorizontalPageBreak](horizontalpagebreak)  :   
-- [HorizontalPageBreaks](horizontalpagebreaks)  :   
-- [Hyperlink](hyperlink)  :   
-- [Hyperlinks](hyperlinks)  :   
-- [IconFilter](iconfilter)  :   
+- [HorizontalPageBreak](horizontalpagebreak)  :             Encapsulates the object that represents a horizontal page break.            
+- [HorizontalPageBreaks](horizontalpagebreaks)  :  Encapsulates a collection of  objects. 
+- [Hyperlink](hyperlink)  :  Encapsulates the object that represents a hyperlink. 
+- [Hyperlinks](hyperlinks)  :  Encapsulates a collection of  objects. 
+- [IconFilter](iconfilter)  :             Represents icon filter.            
 - [IconSet](iconset)  :  Describe the IconSet conditional formatting rule. This conditional formatting    rule applies icons to cells according to their values. 
 - [Link](link)  :   
 - [LinkElement](linkelement)  :   
-- [LoadOptions](loadoptions)  :   
+- [LoadOptions](loadoptions)  :  Represents the options of loading the file. 
 - [MergedCell](mergedcell)  :   
 - [MergedCells](mergedcells)  :   
 - [MultipleFilter](multiplefilter)  :   
-- [MultipleFilters](multiplefilters)  :   
-- [Name](name)  :   
-- [Names](names)  :   
+- [MultipleFilters](multiplefilters)  :             Represents the multiple filter collection.            
+- [Name](name)  :  Represents a defined name for a range of cells. 
+- [Names](names)  :  Represents a collection of all the  objects in the spreadsheet. 
 - [NegativeBarFormat](negativebarformat)  :  Represents the color settings of the data bars for negative values that are   defined by a data bar conditional formating rule.             
 - [PageSection](pagesection)  :   
-- [PageSetup](pagesetup)  :   
+- [PageSetup](pagesetup)  :  excel print page setting 
 - [PasteOptions](pasteoptions)  :  Represents the paste special options.             
-- [PdfSecurityOptions](pdfsecurityoptions)  :   
+- [PdfSecurityOptions](pdfsecurityoptions)  :  Options for encrypting and access permissions for a PDF document.            PDF/A does not allow security setting. 
 - [Protection](protection)  :  Represents the various types of protection options available for a worksheet.             
 - [ProtectSheetParameter](protectsheetparameter)  :   
-- [QueryTable](querytable)  :  Represents QueryTable information. 
-- [Range](range)  :   
-- [Ranges](ranges)  :   
-- [Row](row)  :   
-- [Rows](rows)  :   
+- [Range](range)  :             Encapsulates the object that represents a range of cells within a spreadsheet.            
+- [Ranges](ranges)  :             Encapsulates a collection of  objects.            
+- [Row](row)  :  Represents a single row in a worksheet. 
+- [Rows](rows)  :  Collects the  objects that represent the individual rows in a worksheet. 
 - [SaveResult](saveresult)  :   
 - [PaginatedSaveOptions](paginatedsaveoptions)  :  Represents the options for pagination. 
 - [SingleValue](singlevalue)  :   
 - [SortKey](sortkey)  :   
 - [SplitResult](splitresult)  :   
 - [SplitResultDocument](splitresultdocument)  :   
-- [Style](style)  :   
+- [Style](style)  :             Represents display style of excel document,such as font,color,alignment,border,etc.            The Style object contains all style attributes (font, number format, alignment, and so on) as properties.            
 - [StyleFormatCondition](styleformatcondition)  :   
 - [Styles](styles)  :   
 - [TextFormatCondition](textformatcondition)  :   
 - [TextItem](textitem)  :   
 - [TextItems](textitems)  :   
-- [TextOptions](textoptions)  :   
-- [ThemeColor](themecolor)  :   
+- [TextOptions](textoptions)  :  Represents the text options. 
+- [ThemeColor](themecolor)  :             Represents a theme color.            
 - [TimePeriodFormatCondition](timeperiodformatcondition)  :   
 - [Top10](top10)  :  Describe the Top10 conditional formatting rule. This conditional formatting    rule highlights cells whose values fall in the top N or bottom N bracket,    as specified. 
-- [Top10Filter](top10filter)  :   
-- [Validation](validation)  :   
-- [Validations](validations)  :   
-- [VerticalPageBreak](verticalpagebreak)  :   
-- [VerticalPageBreaks](verticalpagebreaks)  :   
-- [Workbook](workbook)  :   
-- [WorkbookSettings](workbooksettings)  :   
-- [Worksheet](worksheet)  :   
-- [Worksheets](worksheets)  :   
+- [Top10Filter](top10filter)  :             Represents the top 10 filter.            
+- [Validation](validation)  :  Represents data validation.settings. 
+- [Validations](validations)  :  Represents data validation collection. 
+- [VerticalPageBreak](verticalpagebreak)  :             Encapsulates the object that represents a vertical page break.            
+- [VerticalPageBreaks](verticalpagebreaks)  :  Encapsulates a collection of  objects. 
+- [Workbook](workbook)  :             Represents a root object to create an Excel spreadsheet.            
+- [WorkbookSettings](workbooksettings)  :             Represents all settings of the workbook.            
+- [Worksheet](worksheet)  :             Encapsulates the object that represents a single worksheet.            
+- [Worksheets](worksheets)  :  Encapsulates a collection of  objects. 
 - [WriteProtection](writeprotection)  :  Specifies write protection settings for a workbook.  
 - [XmlDataBinding](xmldatabinding)  :  Represents Xml Data Binding information.  
 - [XmlMap](xmlmap)  :  Represents Xml map information.  
 - [CellsObjectOperateTaskParameter](cellsobjectoperatetaskparameter)  :   
 - [ConvertTaskParameter](converttaskparameter)  :   
 - [ConvertWorksheetTaskParameter](convertworksheettaskparameter)  :   
-- [FileSource](filesource)  :   
-- [FileSourceType](filesourcetype)  :   
 - [ImportDataTaskParameter](importdatataskparameter)  :   
 - [ResultDestination](resultdestination)  :   
 - [ResultDestinationType](resultdestinationtype)  :   
@@ -145,9 +148,9 @@ weight: 50
 - [WorkbookOperateParameter](workbookoperateparameter)  :   
 - [WorkbookSettingsOperateParameter](workbooksettingsoperateparameter)  :   
 - [WorksheetOperateParameter](worksheetoperateparameter)  :   
-- [ListColumn](listcolumn)  :   
-- [ListObject](listobject)  :   
-- [ListObjects](listobjects)  :   
+- [ListColumn](listcolumn)  :             Represents a column in a Table.            
+- [ListObject](listobject)  :  Represents a list object on a worksheet.            The ListObject object is a member of the ListObjects collection.             The ListObjects collection contains all the list objects on a worksheet. 
+- [ListObjects](listobjects)  :  Represents a collection of  objects in the worksheet. 
 - [PivotGlobalizationSettings](pivotglobalizationsettings)  :  Represents the globalization settings for pivot tables.  
 - [DifSaveOptions](difsaveoptions)  :  Represents the options of saving dif file. 
 - [DocxSaveOptions](docxsaveoptions)  :  Represents options of saving .docx file. 
@@ -168,117 +171,117 @@ weight: 50
 - [XlsbSaveOptions](xlsbsaveoptions)  :  Represents the options of saving .xlsb file. 
 - [XlsSaveOptions](xlssaveoptions)  :  Represents the options of saving .xls file. 
 - [XpsSaveOptions](xpssaveoptions)  :  Represents the options of saving .xps file. 
-- [AnalyzeExcelResponse](analyzeexcelresponse)  :   
-- [ArcShapeResponse](arcshaperesponse)  :   
-- [AutoFilterResponse](autofilterresponse)  :   
-- [AutoShapeResponse](autoshaperesponse)  :   
-- [AutoShapesResponse](autoshapesresponse)  :   
-- [AxisResponse](axisresponse)  :   
-- [BorderResponse](borderresponse)  :   
-- [ButtonResponse](buttonresponse)  :   
-- [CalculateFormulaResponse](calculateformularesponse)  :   
-- [CellResponse](cellresponse)  :   
-- [CellsCloudFileInfoResponse](cellscloudfileinforesponse)  :   
-- [CellsCloudResponse](cellscloudresponse)  :   
-- [CellsDocumentPropertiesResponse](cellsdocumentpropertiesresponse)  :   
-- [CellsDocumentPropertyResponse](cellsdocumentpropertyresponse)  :   
-- [CellsDrawingResponse](cellsdrawingresponse)  :   
-- [CellsResponse](cellsresponse)  :   
-- [ChartAreaResponse](chartarearesponse)  :   
-- [ChartDataTableResponse](chartdatatableresponse)  :   
-- [ChartPointResponse](chartpointresponse)  :   
-- [ChartPointsResponse](chartpointsresponse)  :   
-- [ChartResponse](chartresponse)  :   
-- [ChartsResponse](chartsresponse)  :   
-- [CheckBoxResponse](checkboxresponse)  :   
-- [ColumnResponse](columnresponse)  :   
-- [ColumnsResponse](columnsresponse)  :   
-- [ComboBoxResponse](comboboxresponse)  :   
-- [CommentResponse](commentresponse)  :   
-- [CommentShapeResponse](commentshaperesponse)  :   
-- [CommentsResponse](commentsresponse)  :   
-- [ConditionalFormattingResponse](conditionalformattingresponse)  :   
-- [ConditionalFormattingsResponse](conditionalformattingsresponse)  :   
-- [DataLabelsResponse](datalabelsresponse)  :   
-- [DisplayUnitLabelResponse](displayunitlabelresponse)  :   
-- [DropBarsResponse](dropbarsresponse)  :   
-- [ErrorBarResponse](errorbarresponse)  :   
-- [FillFormatResponse](fillformatresponse)  :   
-- [FindResponse](findresponse)  :   
-- [FloorResponse](floorresponse)  :   
-- [FormResponse](formresponse)  :   
-- [FormsResponse](formsresponse)  :   
-- [GroupBoxResponse](groupboxresponse)  :   
-- [HorizontalPageBreakResponse](horizontalpagebreakresponse)  :   
-- [HorizontalPageBreaksResponse](horizontalpagebreaksresponse)  :   
-- [HyperlinkResponse](hyperlinkresponse)  :   
-- [HyperlinksResponse](hyperlinksresponse)  :   
-- [LabelResponse](labelresponse)  :   
-- [LegendEntriesResponse](legendentriesresponse)  :   
-- [LegendEntryResponse](legendentryresponse)  :   
-- [LegendResponse](legendresponse)  :   
-- [LineResponse](lineresponse)  :   
-- [LineShapeResponse](lineshaperesponse)  :   
-- [ListBoxResponse](listboxresponse)  :   
-- [ListObjectResponse](listobjectresponse)  :   
-- [ListObjectsResponse](listobjectsresponse)  :   
-- [MergedCellResponse](mergedcellresponse)  :   
-- [MergedCellsResponse](mergedcellsresponse)  :   
-- [NameResponse](nameresponse)  :   
-- [NamesResponse](namesresponse)  :   
-- [OleObjectResponse](oleobjectresponse)  :   
-- [OleObjectsResponse](oleobjectsresponse)  :   
-- [OvalResponse](ovalresponse)  :   
-- [PageSectionsResponse](pagesectionsresponse)  :   
-- [PageSetupResponse](pagesetupresponse)  :   
-- [PictureResponse](pictureresponse)  :   
-- [PicturesResponse](picturesresponse)  :   
-- [PivotFieldResponse](pivotfieldresponse)  :   
-- [PivotFilterResponse](pivotfilterresponse)  :   
-- [PivotFiltersResponse](pivotfiltersresponse)  :   
-- [PivotTableResponse](pivottableresponse)  :   
-- [PivotTablesResponse](pivottablesresponse)  :   
-- [PlotAreaResponse](plotarearesponse)  :   
-- [RadioButtonResponse](radiobuttonresponse)  :   
-- [RangeResponse](rangeresponse)  :   
-- [RangesResponse](rangesresponse)  :   
-- [RangeValueResponse](rangevalueresponse)  :   
-- [RectangleShapeResponse](rectangleshaperesponse)  :   
-- [RowResponse](rowresponse)  :   
-- [RowsResponse](rowsresponse)  :   
-- [SaveFilesToCloudResultResponse](savefilestocloudresultresponse)  :   
-- [SaveResponse](saveresponse)  :   
-- [ScrollBarResponse](scrollbarresponse)  :   
-- [SeriesesResponse](seriesesresponse)  :   
-- [SeriesResponse](seriesresponse)  :   
-- [ShapeResponse](shaperesponse)  :   
-- [ShapesResponse](shapesresponse)  :   
-- [SingleValueResponse](singlevalueresponse)  :   
-- [SparklineGroupResponse](sparklinegroupresponse)  :   
-- [SparklineGroupsResponse](sparklinegroupsresponse)  :   
-- [SpinnerResponse](spinnerresponse)  :   
-- [SplitResultResponse](splitresultresponse)  :   
-- [StyleResponse](styleresponse)  :   
-- [TaskRunResultResponse](taskrunresultresponse)  :   
-- [TextBoxResponse](textboxresponse)  :   
-- [TextItemResponse](textitemresponse)  :   
-- [TextItemsResponse](textitemsresponse)  :   
-- [TickLabelsResponse](ticklabelsresponse)  :   
-- [TitleResponse](titleresponse)  :   
-- [TrendlineResponse](trendlineresponse)  :   
-- [TrendlinesResponse](trendlinesresponse)  :   
-- [ValidationResponse](validationresponse)  :   
-- [ValidationsResponse](validationsresponse)  :   
-- [VerticalPageBreakResponse](verticalpagebreakresponse)  :   
-- [VerticalPageBreaksResponse](verticalpagebreaksresponse)  :   
-- [WallsResponse](wallsresponse)  :   
-- [WorkbookReplaceResponse](workbookreplaceresponse)  :   
-- [WorkbookResponse](workbookresponse)  :   
-- [WorkbookSettingsResponse](workbooksettingsresponse)  :   
-- [WorkbooksResponse](workbooksresponse)  :   
-- [WorksheetReplaceResponse](worksheetreplaceresponse)  :   
-- [WorksheetResponse](worksheetresponse)  :   
-- [WorksheetsResponse](worksheetsresponse)  :   
+- [AnalyzeExcelResponse](analyzeexcelresponse)  :  Represents 
+- [ArcShapeResponse](arcshaperesponse)  :  Represents the ArcShape Response. 
+- [AutoFilterResponse](autofilterresponse)  :  Represents the AutoFilter Response. 
+- [AutoShapeResponse](autoshaperesponse)  :  Represents the AutoShape Response. 
+- [AutoShapesResponse](autoshapesresponse)  :  Represents the AutoShapes Response. 
+- [AxisResponse](axisresponse)  :  Represents the Axis Response. 
+- [BorderResponse](borderresponse)  :  Represents the Border Response. 
+- [ButtonResponse](buttonresponse)  :  Represents the Button Response. 
+- [CalculateFormulaResponse](calculateformularesponse)  :  Represents the CalculateFormula Response. 
+- [CellResponse](cellresponse)  :  Represents the Cell Response. 
+- [CellsCloudFileInfoResponse](cellscloudfileinforesponse)  :  Represents the CellsCloudFileInfo Response. 
+- [CellsCloudResponse](cellscloudresponse)  :             Represents the CellsCloud Response.            
+- [CellsDocumentPropertiesResponse](cellsdocumentpropertiesresponse)  :  Represents the CellsDocumentProperties Response. 
+- [CellsDocumentPropertyResponse](cellsdocumentpropertyresponse)  :  Represents the CellsDocumentProperty Response. 
+- [CellsDrawingResponse](cellsdrawingresponse)  :  Represents the CellsDrawing Response. 
+- [CellsResponse](cellsresponse)  :  Represents the Cells Response. 
+- [ChartAreaResponse](chartarearesponse)  :  Represents the ChartArea Response. 
+- [ChartDataTableResponse](chartdatatableresponse)  :  Represents the ChartDataTable Response. 
+- [ChartPointResponse](chartpointresponse)  :  Represents the ChartPoint Response. 
+- [ChartPointsResponse](chartpointsresponse)  :  Represents the ChartPoints Response. 
+- [ChartResponse](chartresponse)  :  Represents the Chart Response. 
+- [ChartsResponse](chartsresponse)  :  Represents the Charts Response. 
+- [CheckBoxResponse](checkboxresponse)  :  Represents the CheckBox Response. 
+- [ColumnResponse](columnresponse)  :  Represents the Column Response. 
+- [ColumnsResponse](columnsresponse)  :  Represents the Columns Response. 
+- [ComboBoxResponse](comboboxresponse)  :  Represents the ComboBox Response. 
+- [CommentResponse](commentresponse)  :  Represents the Comment Response. 
+- [CommentShapeResponse](commentshaperesponse)  :  Represents the CommentShape Response. 
+- [CommentsResponse](commentsresponse)  :  Represents the Comments Response. 
+- [ConditionalFormattingResponse](conditionalformattingresponse)  :  Represents the ConditionalFormatting Response. 
+- [ConditionalFormattingsResponse](conditionalformattingsresponse)  :  Represents the ConditionalFormattings Response. 
+- [DataLabelsResponse](datalabelsresponse)  :  Represents the DataLabels Response. 
+- [DisplayUnitLabelResponse](displayunitlabelresponse)  :  Represents the DisplayUnitLabel Response. 
+- [DropBarsResponse](dropbarsresponse)  :  Represents the DropBars Response. 
+- [ErrorBarResponse](errorbarresponse)  :  Represents the ErrorBar Response. 
+- [FillFormatResponse](fillformatresponse)  :  Represents the FillFormat Response. 
+- [FindResponse](findresponse)  :  Represents the Find Response. 
+- [FloorResponse](floorresponse)  :  Represents the Floor Response. 
+- [FormResponse](formresponse)  :  Represents the Form Response. 
+- [FormsResponse](formsresponse)  :  Represents the Forms Response. 
+- [GroupBoxResponse](groupboxresponse)  :  Represents the GroupBox Response. 
+- [HorizontalPageBreakResponse](horizontalpagebreakresponse)  :  Represents the HorizontalPageBreak Response. 
+- [HorizontalPageBreaksResponse](horizontalpagebreaksresponse)  :  Represents the HorizontalPageBreaks Response. 
+- [HyperlinkResponse](hyperlinkresponse)  :  Represents the Hyperlink Response. 
+- [HyperlinksResponse](hyperlinksresponse)  :  Represents the Hyperlinks Response. 
+- [LabelResponse](labelresponse)  :  Represents the Label Response. 
+- [LegendEntriesResponse](legendentriesresponse)  :  Represents the LegendEntries Response. 
+- [LegendEntryResponse](legendentryresponse)  :  Represents the LegendEntry Response. 
+- [LegendResponse](legendresponse)  :  Represents the Legend Response. 
+- [LineResponse](lineresponse)  :  Represents the Line Response. 
+- [LineShapeResponse](lineshaperesponse)  :  Represents the LineShape Response. 
+- [ListBoxResponse](listboxresponse)  :  Represents the ListBox Response. 
+- [ListObjectResponse](listobjectresponse)  :  Represents the ListObject Response. 
+- [ListObjectsResponse](listobjectsresponse)  :  Represents the ListObjects Response. 
+- [MergedCellResponse](mergedcellresponse)  :  Represents the MergedCell Response. 
+- [MergedCellsResponse](mergedcellsresponse)  :  Represents the MergedCells Response. 
+- [NameResponse](nameresponse)  :  Represents the Name Response. 
+- [NamesResponse](namesresponse)  :  Represents the Names Response. 
+- [OleObjectResponse](oleobjectresponse)  :  Represents the OleObject Response. 
+- [OleObjectsResponse](oleobjectsresponse)  :  Represents the OleObjects Response. 
+- [OvalResponse](ovalresponse)  :  Represents the Oval Response. 
+- [PageSectionsResponse](pagesectionsresponse)  :  Represents the PageSections Response. 
+- [PageSetupResponse](pagesetupresponse)  :  Represents the PageSetup Response. 
+- [PictureResponse](pictureresponse)  :  Represents the Picture Response. 
+- [PicturesResponse](picturesresponse)  :  Represents the Pictures Response. 
+- [PivotFieldResponse](pivotfieldresponse)  :  Represents the PivotField Response. 
+- [PivotFilterResponse](pivotfilterresponse)  :  Represents the PivotFilter Response. 
+- [PivotFiltersResponse](pivotfiltersresponse)  :  Represents the PivotFilters Response. 
+- [PivotTableResponse](pivottableresponse)  :  Represents the PivotTable Response. 
+- [PivotTablesResponse](pivottablesresponse)  :  Represents the PivotTables Response. 
+- [PlotAreaResponse](plotarearesponse)  :  Represents the PlotArea Response. 
+- [RadioButtonResponse](radiobuttonresponse)  :  Represents the RadioButton Response. 
+- [RangeResponse](rangeresponse)  :  Represents the Range Response. 
+- [RangesResponse](rangesresponse)  :  Represents the Ranges Response. 
+- [RangeValueResponse](rangevalueresponse)  :  Represents the RangeValue Response. 
+- [RectangleShapeResponse](rectangleshaperesponse)  :  Represents the RectangleShape Response. 
+- [RowResponse](rowresponse)  :  Represents the Row Response. 
+- [RowsResponse](rowsresponse)  :  Represents the Rows Response. 
+- [SaveFilesToCloudResultResponse](savefilestocloudresultresponse)  :  Represents the SaveFilesToCloudResult Response. 
+- [SaveResponse](saveresponse)  :  Represents the Save Response. 
+- [ScrollBarResponse](scrollbarresponse)  :  Represents the ScrollBar Response. 
+- [SeriesesResponse](seriesesresponse)  :  Represents the Serieses Response. 
+- [SeriesResponse](seriesresponse)  :  Represents the Series Response. 
+- [ShapeResponse](shaperesponse)  :  Represents the Shape Response. 
+- [ShapesResponse](shapesresponse)  :  Represents the Shapes Response. 
+- [SingleValueResponse](singlevalueresponse)  :  Represents the SingleValue Response. 
+- [SparklineGroupResponse](sparklinegroupresponse)  :  Represents the SparklineGroup Response. 
+- [SparklineGroupsResponse](sparklinegroupsresponse)  :  Represents the SparklineGroups Response. 
+- [SpinnerResponse](spinnerresponse)  :  Represents the Spinner Response. 
+- [SplitResultResponse](splitresultresponse)  :  Represents the SplitResult Response. 
+- [StyleResponse](styleresponse)  :  Represents the Style Response. 
+- [TaskRunResultResponse](taskrunresultresponse)  :  Represents the TaskRunResult Response. 
+- [TextBoxResponse](textboxresponse)  :  Represents the TextBox Response. 
+- [TextItemResponse](textitemresponse)  :  Represents the TextItem Response. 
+- [TextItemsResponse](textitemsresponse)  :  Represents the TextItems Response. 
+- [TickLabelsResponse](ticklabelsresponse)  :  Represents the TickLabels Response. 
+- [TitleResponse](titleresponse)  :  Represents the Title Response. 
+- [TrendlineResponse](trendlineresponse)  :  Represents the Trendline Response. 
+- [TrendlinesResponse](trendlinesresponse)  :  Represents the Trendlines Response. 
+- [ValidationResponse](validationresponse)  :  Represents the Validation Response. 
+- [ValidationsResponse](validationsresponse)  :  Represents the Validations Response. 
+- [VerticalPageBreakResponse](verticalpagebreakresponse)  :  Represents the VerticalPageBreak Response. 
+- [VerticalPageBreaksResponse](verticalpagebreaksresponse)  :  Represents the VerticalPageBreaks Response. 
+- [WallsResponse](wallsresponse)  :  Represents the Walls Response. 
+- [WorkbookReplaceResponse](workbookreplaceresponse)  :  Represents the WorkbookReplace Response. 
+- [WorkbookResponse](workbookresponse)  :  Represents the Workbook Response. 
+- [WorkbookSettingsResponse](workbooksettingsresponse)  :  Represents the WorkbookSettings Response. 
+- [WorkbooksResponse](workbooksresponse)  :  Represents the Workbooks Response. 
+- [WorksheetReplaceResponse](worksheetreplaceresponse)  :  Represents the WorksheetReplace Response. 
+- [WorksheetResponse](worksheetresponse)  :  Represents the Worksheet Response. 
+- [WorksheetsResponse](worksheetsresponse)  :  Represents the Worksheets Response. 
 - [AnalyzeExcelRequest](analyzeexcelrequest)  :   
 - [BatchConvertRequest](batchconvertrequest)  :  Indicates batch convert file request 
 - [BatchLockRequest](batchlockrequest)  :  Indicates batch lock file request 
@@ -290,6 +293,7 @@ weight: 50
 - [DataCleansingRequest](datacleansingrequest)  :  A data cleansing request for an Spreadsheet file. 
 - [DataDeduplicationRequest](datadeduplicationrequest)  :   
 - [DataFillRequest](datafillrequest)  :   
+- [DataTransformationRequest](datatransformationrequest)  :   
 - [DeleteIncompleteRowsRequest](deleteincompleterowsrequest)  :   
 - [ImportJsonRequest](importjsonrequest)  :  Indicates import xml data request 
 - [ImportXMLRequest](importxmlrequest)  :  Indicates import xml data request 
@@ -306,19 +310,27 @@ weight: 50
 - [WorkbookEncryptionRequest](workbookencryptionrequest)  :  Used by workbook encryption/decryption requests. 
 - [WorkbookProtectionRequest](workbookprotectionrequest)  :  Used by workbook protection requests. 
 - [WorksheetMovingRequest](worksheetmovingrequest)  :  Used by workbook moving requests. 
-- [ImageOrPrintOptions](imageorprintoptions)  :   
-- [RenderingFont](renderingfont)  :   
-- [RenderingWatermark](renderingwatermark)  :   
-- [PivotField](pivotfield)  :   
+- [ImageOrPrintOptions](imageorprintoptions)  :  Allows to specify options when rendering worksheet to images, printing worksheet or rendering chart to image. 
+- [RenderingFont](renderingfont)  :  Font for rendering. 
+- [RenderingWatermark](renderingwatermark)  :  Watermark for rendering. 
+- [LoadData](loaddata)  :  Loading data information. 
+- [LoadTo](loadto)  :   
+- [PivotColumn](pivotcolumn)  :   
+- [QueryDataSource](querydatasource)  :   
+- [QueryDataSourceDataType](querydatasourcedatatype)  :   
+- [QueryTable](querytable)  :  Represents QueryTable information. 
+- [Transformation](transformation)  :   
+- [UnpivotColumn](unpivotcolumn)  :   
+- [PivotField](pivotfield)  :             Represents a field in a PivotTable report.            
 - [PivotFilter](pivotfilter)  :  Represents a PivotFilter in PivotFilter Collection. 
-- [PivotItem](pivotitem)  :   
-- [PivotTable](pivottable)  :   
-- [PivotTables](pivottables)  :   
+- [PivotItem](pivotitem)  :             Represents a item in a PivotField report.            
+- [PivotTable](pivottable)  :  Summary description for PivotTable. 
+- [PivotTables](pivottables)  :  Represents the collection of all the PivotTable objects on the specified worksheet. 
+- [CellValue](cellvalue)  :  Represents the cell value and corresponding type. 
 - [CustomParserConfig](customparserconfig)  :   
 - [Import2DimensionDoubleArrayOption](import2dimensiondoublearrayoption)  :   
 - [Import2DimensionIntArrayOption](import2dimensionintarrayoption)  :   
 - [Import2DimensionStringArrayOption](import2dimensionstringarrayoption)  :   
-- [CellValue](cellvalue)  :   
 - [ImportBatchDataOption](importbatchdataoption)  :   
 - [ImportCSVDataOption](importcsvdataoption)  :   
 - [ImportDataType](importdatatype)  :   
@@ -328,76 +340,76 @@ weight: 50
 - [ImportPictureOption](importpictureoption)  :   
 - [ImportPosition](importposition)  :   
 - [ImportStringArrayOption](importstringarrayoption)  :   
-- [ArcShape](arcshape)  :   
-- [Area](area)  :   
-- [AutoShape](autoshape)  :   
+- [ArcShape](arcshape)  :  Represents the arc shape. 
+- [Area](area)  :             Encapsulates the object that represents an area format.            
+- [AutoShape](autoshape)  :  Represents an AutoShape. 
 - [AutoShapes](autoshapes)  :   
-- [Button](button)  :   
-- [CellsDrawing](cellsdrawing)  :   
-- [CheckBox](checkbox)  :   
-- [ComboBox](combobox)  :   
-- [CommentShape](commentshape)  :   
-- [FillFormat](fillformat)  :   
+- [Button](button)  :  Represents the Forms control: Button 
+- [CellsDrawing](cellsdrawing)  :  Represents the auto shape and drawing object. 
+- [CheckBox](checkbox)  :  Represents a check box object in a worksheet. 
+- [ComboBox](combobox)  :  Represents the control form ComboBox. 
+- [CommentShape](commentshape)  :  Represents the shape of the comment. 
+- [FillFormat](fillformat)  :             Encapsulates the object that represents fill formatting for a shape.            
 - [Form](form)  :   
 - [Forms](forms)  :   
-- [GradientFill](gradientfill)  :   
+- [GradientFill](gradientfill)  :             Represents the gradient fill.            
 - [GradientFillStop](gradientfillstop)  :   
-- [GroupBox](groupbox)  :   
-- [GroupShape](groupshape)  :   
-- [Label](label)  :   
+- [GroupBox](groupbox)  :  Encapsulates the object that represents a groupbox in a spreadsheet. 
+- [GroupShape](groupshape)  :  Represents the group shape which contains the individual shapes. 
+- [Label](label)  :  Encapsulates the object that represents a label in a spreadsheet. 
 - [Line](line)  :  Encapsulates the object that represents the line format. 
-- [LineFormat](lineformat)  :   
-- [LineShape](lineshape)  :   
-- [ListBox](listbox)  :   
-- [OleObject](oleobject)  :   
-- [OleObjects](oleobjects)  :   
-- [Oval](oval)  :   
-- [PatternFill](patternfill)  :   
-- [PicFormatOption](picformatoption)  :   
-- [Picture](picture)  :   
-- [Pictures](pictures)  :   
-- [RadioButton](radiobutton)  :   
-- [RectangleShape](rectangleshape)  :   
-- [ScrollBar](scrollbar)  :   
-- [ShadowEffect](shadoweffect)  :   
-- [Shape](shape)  :   
-- [Shapes](shapes)  :   
-- [SolidFill](solidfill)  :   
-- [Spinner](spinner)  :   
-- [TextBox](textbox)  :   
-- [TextureFill](texturefill)  :   
-- [TilePicOption](tilepicoption)  :   
+- [LineFormat](lineformat)  :  Represents all setting of the line. 
+- [LineShape](lineshape)  :  Represents the line shape. 
+- [ListBox](listbox)  :  Represents a list box object. 
+- [OleObject](oleobject)  :  Represents an OleObject in a worksheet. 
+- [OleObjects](oleobjects)  :  Represents embedded OLE objects. 
+- [Oval](oval)  :  Represents the oval shape. 
+- [PatternFill](patternfill)  :             Encapsulates the object that represents pattern fill format            
+- [PicFormatOption](picformatoption)  :             Represents picture format option            
+- [Picture](picture)  :  Encapsulates the object that represents a single picture in a spreadsheet. 
+- [Pictures](pictures)  :  Encapsulates a collection of  objects. 
+- [RadioButton](radiobutton)  :  Represents a radio button. 
+- [RectangleShape](rectangleshape)  :  Represents the rectangle shape. 
+- [ScrollBar](scrollbar)  :  Represents a scroll bar object. 
+- [ShadowEffect](shadoweffect)  :             This class specifies the shadow effect of the chart element or shape.            
+- [Shape](shape)  :  Represents the msodrawing object. 
+- [Shapes](shapes)  :  Represents all the shape in a worksheet/chart. 
+- [SolidFill](solidfill)  :             Encapsulates the object that represents solid fill format            
+- [Spinner](spinner)  :  Represents the Forms control: Spinner. 
+- [TextBox](textbox)  :  Encapsulates the object that represents a textbox in a spreadsheet. 
+- [TextureFill](texturefill)  :             Encapsulates the object that represents texture fill format            
+- [TilePicOption](tilepicoption)  :             Represents tile picture as texture.            
 - [DigitalSignature](digitalsignature)  :  Signature in file.             
-- [Axis](axis)  :   
-- [Chart](chart)  :   
-- [ChartArea](chartarea)  :   
-- [ChartDataTable](chartdatatable)  :   
-- [ChartFrame](chartframe)  :   
+- [Axis](axis)  :  Encapsulates the object that represents an axis of chart. 
+- [Chart](chart)  :  Encapsulates the object that represents a single Excel chart. 
+- [ChartArea](chartarea)  :  Encapsulates the object that represents the chart area in the worksheet. 
+- [ChartDataTable](chartdatatable)  :  Represents a chart data table. 
+- [ChartFrame](chartframe)  :             Encapsulates the object that represents the frame object in a chart.            
 - [ChartGlobalizationSettings](chartglobalizationsettings)  :  Represents the globalization settings for chart.  
-- [ChartPoint](chartpoint)  :   
-- [ChartPoints](chartpoints)  :   
-- [Charts](charts)  :   
+- [ChartPoint](chartpoint)  :  Represents a single point in a series in a chart. 
+- [ChartPoints](chartpoints)  :  Represents a collection that contains all the points in one series. 
+- [Charts](charts)  :  Encapsulates a collection of  objects. 
 - [ChartShape](chartshape)  :  Chart shape object 
-- [DataLabels](datalabels)  :   
-- [DisplayUnitLabel](displayunitlabel)  :   
-- [DropBars](dropbars)  :   
-- [ErrorBar](errorbar)  :   
-- [Floor](floor)  :   
-- [Legend](legend)  :   
+- [DataLabels](datalabels)  :  Encapsulates a collection of all the DataLabel objects for the specified Series. 
+- [DisplayUnitLabel](displayunitlabel)  :  Represents the display unit label. 
+- [DropBars](dropbars)  :  Represents the up/down bars in a chart. 
+- [ErrorBar](errorbar)  :  Represents error bar of data series. 
+- [Floor](floor)  :  Encapsulates the object that represents the floor of a 3-D chart. 
+- [Legend](legend)  :  Encapsulates the object that represents the chart legend. 
 - [LegendEntries](legendentries)  :   
-- [LegendEntry](legendentry)  :   
-- [Marker](marker)  :   
-- [PlotArea](plotarea)  :   
-- [Series](series)  :   
+- [LegendEntry](legendentry)  :  Represents a legend entry in a chart legend. 
+- [Marker](marker)  :  Represents the marker in a line chart, scatter chart, or radar chart. 
+- [PlotArea](plotarea)  :  Encapsulates the object that represents the plot area in a chart. 
+- [Series](series)  :  Encapsulates the object that represents a single data series in a chart. 
 - [SeriesItems](seriesitems)  :   
 - [Sparkline](sparkline)  :  A sparkline represents a tiny chart or graphic in a worksheet cell that provides a visual representation of data.             
-- [SparklineGroup](sparklinegroup)  :   
+- [SparklineGroup](sparklinegroup)  :             is organized into sparkline group. A SparklineGroup contains a variable number of sparkline items.             A sparkline group specifies the type, display settings and axis settings for the sparklines.            
 - [SparklineGroups](sparklinegroups)  :  Encapsulates a collection of Aspose.Cells.Charts.SparklineGroup objects.             
-- [TickLabels](ticklabels)  :   
-- [Title](title)  :   
-- [Trendline](trendline)  :   
-- [Trendlines](trendlines)  :   
-- [Walls](walls)  :   
+- [TickLabels](ticklabels)  :  Represents the tick-mark labels associated with tick marks on a chart axis. 
+- [Title](title)  :  Encapsulates the object that represents the title of chart or axis. 
+- [Trendline](trendline)  :  Represents a trendline in a chart. 
+- [Trendlines](trendlines)  :  Represents a collection of all the  objects for the specified data series. 
+- [Walls](walls)  :  Encapsulates the object that represents the walls of a 3-D chart. 
 - [ColumnDataExceptionDescription](columndataexceptiondescription)  :   
 - [TextCategoryType](textcategorytype)  :   
 - [AnalyzedColumnDescription](analyzedcolumndescription)  :  How to use the properties of each column: currently divided into timeline, product line, numerical statistics line             How to present the product, a unified plan            How to solve the problem of full digital?            Full text How to solve it?            Two columns: Text, Number is the easiest            Three columns: Text, Text, Number                    text, number, number --- date date ; Date Numeric ; Numeric Digital             What about four columns, five columns? 

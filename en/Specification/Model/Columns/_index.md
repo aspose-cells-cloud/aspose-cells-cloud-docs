@@ -9,7 +9,7 @@ weight: 50
 
 ## **columns**
 
- 
+Columns 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
@@ -18,5 +18,5 @@ weight: 50
 | ColumnsList | Container | True |  False |  | Columns list. |  
 | link | Class:Link | True |  False |  |  |  
 
-**Parent Name** : (LinkElement)[linkelement]
+**Parent Name** : [LinkElement](linkelement)
 

@@ -9,7 +9,7 @@ weight: 50
 
 ## **hyperlinks**
 
- 
+Encapsulates a collection of  objects. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
@@ -17,5 +17,5 @@ weight: 50
 | HyperlinkList | Container | True |  False |  |  |  
 | link | Class:Link | True |  False |  |  |  
 
-**Parent Name** : (LinkElement)[linkelement]
+**Parent Name** : [LinkElement](linkelement)
 

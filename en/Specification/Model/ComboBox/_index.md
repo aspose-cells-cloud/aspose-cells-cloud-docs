@@ -9,7 +9,7 @@ weight: 50
 
 ## **comboBox**
 
- 
+Represents the control form ComboBox. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
@@ -57,5 +57,5 @@ weight: 50
 | Hyperlink | String | True |  False |  |  |  
 | link | Class:Link | True |  False |  |  |  
 
-**Parent Name** : (Shape)[shape]
+**Parent Name** : [Shape](shape)
 

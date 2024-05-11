@@ -9,7 +9,7 @@ weight: 50
 
 ## **cell**
 
- 
+Encapsulates the object that represents a single Workbook cell. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
@@ -31,5 +31,5 @@ weight: 50
 | Worksheet | String | True |  False |  | Gets the parent worksheet. |  
 | link | Class:Link | True |  False |  |  |  
 
-**Parent Name** : (LinkElement)[linkelement]
+**Parent Name** : [LinkElement](linkelement)
 

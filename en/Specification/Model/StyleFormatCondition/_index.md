@@ -29,5 +29,5 @@ weight: 50
 | Top10 | Class:Top10 | True |  False |  |  |  
 | link | Class:Link | True |  False |  |  |  
 
-**Parent Name** : (FormatCondition)[formatcondition]
+**Parent Name** : [FormatCondition](formatcondition)
 

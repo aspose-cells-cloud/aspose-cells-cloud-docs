@@ -15,10 +15,12 @@ weight: 50
 | :- | :- | :- |:- |  :- | :- |
 | Workbook | Class:FileSource | True |  False |  |  |  
 | DestinationFilePosition | Class:FileSource | True |  False |  |  |  
+| DataSource | Class:DataSource | True |  False |  |  |  
+| TargetDataSource | Class:DataSource | True |  False |  |  |  
 | DestinationFileFormat | String | True |  False |  |  |  
 | SplitNameRule | String | True |  False |  | SheetName /NewGuid |  
 | VerticalResolution | Integer | True |  False |  | When destination file format is image , vertical resolution can not be null. |  
 | HorizontalResolution | Integer | True |  False |  | When destination file format is image , horizontal resolution can not be null. |  
 
-**Parent Name** : (TaskParameter)[taskparameter]
+**Parent Name** : [TaskParameter](taskparameter)
 

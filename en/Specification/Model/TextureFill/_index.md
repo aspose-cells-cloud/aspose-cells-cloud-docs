@@ -9,7 +9,7 @@ weight: 50
 
 ## **textureFill**
 
- 
+           Encapsulates the object that represents texture fill format            
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |

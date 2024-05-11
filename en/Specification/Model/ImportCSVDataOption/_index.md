@@ -22,7 +22,8 @@ weight: 50
 | DestinationWorksheet | String | True |  False |  |  |  
 | IsInsert | Boolean | True |  False |  |  |  
 | ImportDataType | String | True |  False |  |  |  
+| DataSource | Class:DataSource | True |  False |  |  |  
 | Source | Class:FileSource | True |  False |  |  |  
 
-**Parent Name** : (ImportOption)[importoption]
+**Parent Name** : [ImportOption](importoption)
 

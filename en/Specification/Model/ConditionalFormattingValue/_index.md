@@ -9,7 +9,7 @@ weight: 50
 
 ## **conditionalFormattingValue**
 
- 
+           Describes the values of the interpolation points in a gradient scale, dataBar or iconSet.            
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |

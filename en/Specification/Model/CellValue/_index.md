@@ -9,7 +9,7 @@ weight: 50
 
 ## **cellValue**
 
- 
+Represents the cell value and corresponding type. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |

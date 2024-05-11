@@ -9,7 +9,7 @@ weight: 50
 
 ## **chartArea**
 
- 
+Encapsulates the object that represents the chart area in the worksheet. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
@@ -27,5 +27,5 @@ weight: 50
 | X | Integer | True |  False |  |  |  
 | Y | Integer | True |  False |  |  |  
 
-**Parent Name** : (ChartFrame)[chartframe]
+**Parent Name** : [ChartFrame](chartframe)
 

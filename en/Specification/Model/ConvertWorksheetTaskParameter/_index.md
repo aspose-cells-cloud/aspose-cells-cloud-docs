@@ -13,8 +13,10 @@ weight: 50
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
+| DataSource | Class:DataSource | True |  False |  |  |  
 | Workbook | Class:FileSource | True |  False |  |  |  
 | Sheet | String | True |  False |  |  |  
+| TargetDataSource | Class:DataSource | True |  False |  |  |  
 | Target | Class:FileSource | True |  False |  |  |  
 | Format | String | True |  False |  |  |  
 | Area | String | True |  False |  |  |  
@@ -22,5 +24,5 @@ weight: 50
 | VerticalResolution | Integer | True |  False |  |  |  
 | HorizontalResolution | Integer | True |  False |  |  |  
 
-**Parent Name** : (TaskParameter)[taskparameter]
+**Parent Name** : [TaskParameter](taskparameter)
 

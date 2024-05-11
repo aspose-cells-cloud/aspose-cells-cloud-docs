@@ -9,7 +9,7 @@ weight: 50
 
 ## **filterColumn**
 
- 
+           Represents a filter for a single column. The Filter object is a member of the Filters collection            
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |

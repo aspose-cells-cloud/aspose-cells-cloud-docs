@@ -14,5 +14,5 @@ weight: 50
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
 
-**Parent Name** : (Enum)[enum]
+**Parent Name** : [Enum](enum)
 

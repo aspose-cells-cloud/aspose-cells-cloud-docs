@@ -9,7 +9,7 @@ weight: 50
 
 ## **name**
 
- 
+Represents a defined name for a range of cells. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
@@ -22,5 +22,5 @@ weight: 50
 | Text | String | True |  False |  | Gets the name text of the object. |  
 | link | Class:Link | True |  False |  |  |  
 
-**Parent Name** : (LinkElement)[linkelement]
+**Parent Name** : [LinkElement](linkelement)
 

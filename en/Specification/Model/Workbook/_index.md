@@ -9,7 +9,7 @@ weight: 50
 
 ## **workbook**
 
- 
+           Represents a root object to create an Excel spreadsheet.            
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |

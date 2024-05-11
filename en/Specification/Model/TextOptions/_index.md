@@ -9,7 +9,7 @@ weight: 50
 
 ## **textOptions**
 
- 
+Represents the text options. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
@@ -30,5 +30,5 @@ weight: 50
 | Size | Integer | True |  False |  |  |  
 | Underline | String | True |  False |  |  |  
 
-**Parent Name** : (Font)[font]
+**Parent Name** : [Font](font)
 

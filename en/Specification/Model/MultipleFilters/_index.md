@@ -9,7 +9,7 @@ weight: 50
 
 ## **multipleFilters**
 
- 
+           Represents the multiple filter collection.            
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |

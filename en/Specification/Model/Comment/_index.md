@@ -9,7 +9,7 @@ weight: 50
 
 ## **comment**
 
- 
+Encapsulates the object that represents a cell comment. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
@@ -26,5 +26,5 @@ weight: 50
 | TextVerticalAlignment | String | True |  False |  | Gets and sets the text vertical alignment type of the comment. |  
 | link | Class:Link | True |  False |  |  |  
 
-**Parent Name** : (LinkElement)[linkelement]
+**Parent Name** : [LinkElement](linkelement)
 

@@ -9,7 +9,7 @@ weight: 50
 
 ## **fontSetting**
 
- 
+           Represents a range of characters within the cell text.            
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |

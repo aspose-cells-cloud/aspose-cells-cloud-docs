@@ -9,7 +9,7 @@ weight: 50
 
 ## **worksheet**
 
- 
+           Encapsulates the object that represents a single worksheet.            
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |

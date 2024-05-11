@@ -9,7 +9,7 @@ weight: 50
 
 ## **floor**
 
- 
+Encapsulates the object that represents the floor of a 3-D chart. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
@@ -21,7 +21,7 @@ weight: 50
 | InvertIfNegative | Boolean | True |  False |  |  |  
 | Transparency | Floating | True |  False |  |  |  
 
-**Parent Name** : (Area)[area]
+**Parent Name** : [Area](area)
 
 **Children Name** : 
 	-  [Walls](walls) 

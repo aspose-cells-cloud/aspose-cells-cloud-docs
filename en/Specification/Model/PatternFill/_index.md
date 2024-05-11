@@ -9,7 +9,7 @@ weight: 50
 
 ## **patternFill**
 
- 
+           Encapsulates the object that represents pattern fill format            
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |

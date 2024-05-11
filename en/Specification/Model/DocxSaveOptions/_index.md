@@ -40,5 +40,5 @@ Represents options of saving .docx file.
 | SortNames | Boolean | True |  False |  |  |  
 | ValidateMergedAreas | Boolean | True |  False |  |  |  
 
-**Parent Name** : (PaginatedSaveOptions)[paginatedsaveoptions]
+**Parent Name** : [PaginatedSaveOptions](paginatedsaveoptions)
 

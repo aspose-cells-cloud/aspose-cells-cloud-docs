@@ -9,7 +9,7 @@ weight: 50
 
 ## **verticalPageBreak**
 
- 
+           Encapsulates the object that represents a vertical page break.            
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |

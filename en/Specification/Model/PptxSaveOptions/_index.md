@@ -13,9 +13,9 @@ Represents the options of saving pptx file.
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-| IgnoreHiddenRows | Boolean | True |  False |  |  |  
-| AdjustFontSizeForRowType | String | True |  False |  |  |  
-| ExportViewType | String | True |  False |  |  |  
+| IgnoreHiddenRows | Boolean | True |  False |  | Ignore hidden rows |  
+| AdjustFontSizeForRowType | String | True |  False |  | Adjust font size for row type |  
+| ExportViewType | String | True |  False |  | Gets and sets the display type when exporting to PowerPoint. The default exporting type is working as printing. |  
 | DefaultFont | String | True |  False |  |  |  
 | CheckWorkbookDefaultFont | Boolean | True |  False |  |  |  
 | CheckFontCompatibility | Boolean | True |  False |  |  |  
@@ -43,5 +43,5 @@ Represents the options of saving pptx file.
 | SortNames | Boolean | True |  False |  |  |  
 | ValidateMergedAreas | Boolean | True |  False |  |  |  
 
-**Parent Name** : (PaginatedSaveOptions)[paginatedsaveoptions]
+**Parent Name** : [PaginatedSaveOptions](paginatedsaveoptions)
 

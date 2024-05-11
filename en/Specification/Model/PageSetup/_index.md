@@ -9,7 +9,7 @@ weight: 50
 
 ## **pageSetup**
 
- 
+excel print page setting 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
@@ -49,5 +49,5 @@ weight: 50
 | Footer | Container | True |  False |  | Represents the page footor. |  
 | link | Class:Link | True |  False |  |  |  
 
-**Parent Name** : (LinkElement)[linkelement]
+**Parent Name** : [LinkElement](linkelement)
 

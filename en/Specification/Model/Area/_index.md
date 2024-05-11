@@ -9,7 +9,7 @@ weight: 50
 
 ## **area**
 
- 
+           Encapsulates the object that represents an area format.            
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |

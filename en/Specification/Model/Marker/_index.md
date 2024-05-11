@@ -9,7 +9,7 @@ weight: 50
 
 ## **marker**
 
- 
+Represents the marker in a line chart, scatter chart, or radar chart. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |

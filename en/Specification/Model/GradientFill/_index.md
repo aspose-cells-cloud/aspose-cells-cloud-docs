@@ -9,7 +9,7 @@ weight: 50
 
 ## **gradientFill**
 
- 
+           Represents the gradient fill.            
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |

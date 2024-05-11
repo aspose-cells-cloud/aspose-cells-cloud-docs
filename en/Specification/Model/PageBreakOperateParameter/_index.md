@@ -21,5 +21,5 @@ weight: 50
 | EndIndex | Integer | True |  False |  |  |  
 | OperateType | String | True |  False |  |  |  
 
-**Parent Name** : (OperateParameter)[operateparameter]
+**Parent Name** : [OperateParameter](operateparameter)
 

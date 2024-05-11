@@ -9,7 +9,7 @@ weight: 50
 
 ## **calculationOptions**
 
- 
+           Represents options for calculation.            
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |

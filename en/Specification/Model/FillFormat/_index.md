@@ -9,7 +9,7 @@ weight: 50
 
 ## **fillFormat**
 
- 
+           Encapsulates the object that represents fill formatting for a shape.            
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |

@@ -9,7 +9,7 @@ weight: 50
 
 ## **conditionalFormattingIcon**
 
- 
+           Represents  the custom  icon of conditional formatting rule.            
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |

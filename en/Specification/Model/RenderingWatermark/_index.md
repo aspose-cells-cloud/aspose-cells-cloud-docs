@@ -9,7 +9,7 @@ weight: 50
 
 ## **renderingWatermark**
 
- 
+Watermark for rendering. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |

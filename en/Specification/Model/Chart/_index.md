@@ -9,7 +9,7 @@ weight: 50
 
 ## **chart**
 
- 
+Encapsulates the object that represents a single Excel chart. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
@@ -58,5 +58,5 @@ weight: 50
 | WallsAndGridlines2D | Boolean | True |  False |  | True if gridlines are drawn two-dimensionally on a 3-D chart. |  
 | link | Class:Link | True |  False |  |  |  
 
-**Parent Name** : (LinkElement)[linkelement]
+**Parent Name** : [LinkElement](linkelement)
 

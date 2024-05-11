@@ -9,7 +9,7 @@ weight: 50
 
 ## **legend**
 
- 
+Encapsulates the object that represents the chart legend. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
@@ -29,5 +29,5 @@ weight: 50
 | X | Integer | True |  False |  |  |  
 | Y | Integer | True |  False |  |  |  
 
-**Parent Name** : (ChartFrame)[chartframe]
+**Parent Name** : [ChartFrame](chartframe)
 

@@ -9,7 +9,7 @@ weight: 50
 
 ## **listColumn**
 
- 
+           Represents a column in a Table.            
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |

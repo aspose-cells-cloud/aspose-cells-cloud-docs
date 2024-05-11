@@ -16,5 +16,5 @@ weight: 50
 | Shape | Class:Shape | True |  False |  |  |  
 | OperateType | String | True |  False |  |  |  
 
-**Parent Name** : (OperateParameter)[operateparameter]
+**Parent Name** : [OperateParameter](operateparameter)
 

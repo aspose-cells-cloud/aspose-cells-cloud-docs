@@ -9,7 +9,7 @@ weight: 50
 
 ## **iconFilter**
 
- 
+           Represents icon filter.            
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |

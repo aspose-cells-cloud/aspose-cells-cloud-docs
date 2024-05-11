@@ -9,7 +9,7 @@ weight: 50
 
 ## **renderingFont**
 
- 
+Font for rendering. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |

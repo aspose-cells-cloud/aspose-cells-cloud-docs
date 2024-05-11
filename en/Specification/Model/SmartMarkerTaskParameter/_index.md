@@ -16,6 +16,9 @@ weight: 50
 | SourceWorkbook | Class:FileSource | True |  False |  |  |  
 | DestinationWorkbook | Class:FileSource | True |  False |  |  |  
 | xmlFile | Class:FileSource | True |  False |  |  |  
+| DataSource | Class:DataSource | True |  False |  |  |  
+| TargetDataSource | Class:DataSource | True |  False |  |  |  
+| XMLFileDataSource | Class:DataSource | True |  False |  |  |  
 
-**Parent Name** : (TaskParameter)[taskparameter]
+**Parent Name** : [TaskParameter](taskparameter)
 

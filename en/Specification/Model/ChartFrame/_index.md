@@ -9,7 +9,7 @@ weight: 50
 
 ## **chartFrame**
 
- 
+           Encapsulates the object that represents the frame object in a chart.            
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |

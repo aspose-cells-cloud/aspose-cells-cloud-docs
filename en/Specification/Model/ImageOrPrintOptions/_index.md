@@ -9,7 +9,7 @@ weight: 50
 
 ## **imageOrPrintOptions**
 
- 
+Allows to specify options when rendering worksheet to images, printing worksheet or rendering chart to image. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |

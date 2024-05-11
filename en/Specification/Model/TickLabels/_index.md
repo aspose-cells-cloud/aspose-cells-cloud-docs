@@ -9,7 +9,7 @@ weight: 50
 
 ## **tickLabels**
 
- 
+Represents the tick-mark labels associated with tick marks on a chart axis. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
@@ -26,5 +26,5 @@ weight: 50
 | DirectionType | String | True |  False |  | Gets and sets the direction of text. |  
 | link | Class:Link | True |  False |  |  |  
 
-**Parent Name** : (LinkElement)[linkelement]
+**Parent Name** : [LinkElement](linkelement)
 

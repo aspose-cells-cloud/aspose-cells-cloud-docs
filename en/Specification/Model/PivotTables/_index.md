@@ -9,12 +9,12 @@ weight: 50
 
 ## **pivotTables**
 
- 
+Represents the collection of all the PivotTable objects on the specified worksheet. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
 | PivotTableList | Container | True |  False |  |  |  
 | link | Class:Link | True |  False |  |  |  
 
-**Parent Name** : (LinkElement)[linkelement]
+**Parent Name** : [LinkElement](linkelement)
 

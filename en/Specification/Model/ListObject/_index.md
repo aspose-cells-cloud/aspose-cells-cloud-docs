@@ -9,7 +9,7 @@ weight: 50
 
 ## **listObject**
 
- 
+Represents a list object on a worksheet.            The ListObject object is a member of the ListObjects collection.             The ListObjects collection contains all the list objects on a worksheet. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
@@ -36,5 +36,5 @@ weight: 50
 | AlternativeDescription | String | True |  False |  | Gets and sets the alternative description. |  
 | link | Class:Link | True |  False |  |  |  
 
-**Parent Name** : (LinkElement)[linkelement]
+**Parent Name** : [LinkElement](linkelement)
 

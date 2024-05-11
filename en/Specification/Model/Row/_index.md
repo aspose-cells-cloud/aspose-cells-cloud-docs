@@ -9,7 +9,7 @@ weight: 50
 
 ## **row**
 
- 
+Represents a single row in a worksheet. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
@@ -22,5 +22,5 @@ weight: 50
 | Style | Class:LinkElement | True |  False |  | Represents the style of this row. |  
 | link | Class:Link | True |  False |  |  |  
 
-**Parent Name** : (LinkElement)[linkelement]
+**Parent Name** : [LinkElement](linkelement)
 

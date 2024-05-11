@@ -9,7 +9,7 @@ weight: 50
 
 ## **errorBar**
 
- 
+Represents error bar of data series. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
@@ -40,5 +40,5 @@ weight: 50
 | Weight | String | True |  False |  |  |  
 | WeightPt | Floating | True |  False |  |  |  
 
-**Parent Name** : (Line)[line]
+**Parent Name** : [Line](line)
 

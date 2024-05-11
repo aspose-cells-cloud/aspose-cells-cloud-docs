@@ -16,5 +16,5 @@ weight: 50
 | WorkbookSettings | Class:WorkbookSettings | True |  False |  |  |  
 | OperateType | String | True |  False |  |  |  
 
-**Parent Name** : (OperateParameter)[operateparameter]
+**Parent Name** : [OperateParameter](operateparameter)
 

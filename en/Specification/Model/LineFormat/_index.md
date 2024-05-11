@@ -9,7 +9,7 @@ weight: 50
 
 ## **lineFormat**
 
- 
+Represents all setting of the line. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
@@ -31,5 +31,5 @@ weight: 50
 | GradientFill | Class:GradientFill | True |  False |  |  |  
 | ImageData | String | True |  False |  |  |  
 
-**Parent Name** : (FillFormat)[fillformat]
+**Parent Name** : [FillFormat](fillformat)
 

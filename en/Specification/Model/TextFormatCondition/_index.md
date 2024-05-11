@@ -18,5 +18,5 @@ weight: 50
 | Formula2 | String | True |  False |  |  |  
 | Operator | String | True |  False |  |  |  
 
-**Parent Name** : (FormulaFormatCondition)[formulaformatcondition]
+**Parent Name** : [FormulaFormatCondition](formulaformatcondition)
 

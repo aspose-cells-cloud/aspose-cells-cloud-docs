@@ -9,7 +9,7 @@ weight: 50
 
 ## **dataLabels**
 
- 
+Encapsulates a collection of all the DataLabel objects for the specified Series. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
@@ -46,5 +46,5 @@ weight: 50
 | X | Integer | True |  False |  |  |  
 | Y | Integer | True |  False |  |  |  
 
-**Parent Name** : (ChartFrame)[chartframe]
+**Parent Name** : [ChartFrame](chartframe)
 

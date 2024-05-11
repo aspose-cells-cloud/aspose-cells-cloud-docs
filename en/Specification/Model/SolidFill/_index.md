@@ -9,7 +9,7 @@ weight: 50
 
 ## **solidFill**
 
- 
+           Encapsulates the object that represents solid fill format            
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |

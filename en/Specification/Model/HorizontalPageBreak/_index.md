@@ -9,7 +9,7 @@ weight: 50
 
 ## **horizontalPageBreak**
 
- 
+           Encapsulates the object that represents a horizontal page break.            
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |

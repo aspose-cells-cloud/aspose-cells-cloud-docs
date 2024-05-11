@@ -13,10 +13,11 @@ weight: 50
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
+| DataSource | Class:DataSource | True |  False |  |  |  
 | Workbook | Class:FileSource | True |  False |  |  |  
 | DestinationFile | String | True |  False |  |  |  
 | Region | String | True |  False |  |  |  
 | SaveOptions | Class:SaveOptions | True |  False |  |  |  
 
-**Parent Name** : (TaskParameter)[taskparameter]
+**Parent Name** : [TaskParameter](taskparameter)
 

@@ -40,5 +40,5 @@ Represents the options of saving .xps file.
 | SortNames | Boolean | True |  False |  |  |  
 | ValidateMergedAreas | Boolean | True |  False |  |  |  
 
-**Parent Name** : (PaginatedSaveOptions)[paginatedsaveoptions]
+**Parent Name** : [PaginatedSaveOptions](paginatedsaveoptions)
 

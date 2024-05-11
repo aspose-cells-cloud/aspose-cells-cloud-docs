@@ -9,7 +9,7 @@ weight: 50
 
 ## **workbookSettings**
 
- 
+           Represents all settings of the workbook.            
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |

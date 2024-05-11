@@ -9,7 +9,7 @@ weight: 50
 
 ## **cellsColor**
 
- 
+           Represents all types of color.            
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |

@@ -13,9 +13,11 @@ weight: 50
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
+| DataSource | Class:DataSource | True |  False |  |  |  
 | Workbook | Class:FileSource | True |  False |  |  |  
 | ImportOption | Class:ImportOption | True |  False |  |  |  
+| TargetDataSource | Class:DataSource | True |  False |  |  |  
 | DestinationWorkbook | Class:FileSource | True |  False |  |  |  
 
-**Parent Name** : (TaskParameter)[taskparameter]
+**Parent Name** : [TaskParameter](taskparameter)
 
