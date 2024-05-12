@@ -9,20 +9,20 @@ weight: 50
 
 ## **convertWorksheetTaskParameter**
 
- 
+Represents convert worksheet task parameter. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-| DataSource | Class:DataSource | True |  False |  |  |  
-| Workbook | Class:FileSource | True |  False |  |  |  
-| Sheet | String | True |  False |  |  |  
-| TargetDataSource | Class:DataSource | True |  False |  |  |  
-| Target | Class:FileSource | True |  False |  |  |  
-| Format | String | True |  False |  |  |  
-| Area | String | True |  False |  |  |  
-| PageIndex | Integer | True |  False |  |  |  
-| VerticalResolution | Integer | True |  False |  |  |  
-| HorizontalResolution | Integer | True |  False |  |  |  
+| DataSource | Class:DataSource | True |  False |  | Represents data source of task object. |  
+| Workbook | Class:FileSource | True |  False |  | Represents data source of task object. |  
+| Sheet | String | True |  False |  | Represents worksheet. |  
+| TargetDataSource | Class:DataSource | True |  False |  | Represents destination data source. |  
+| Target | Class:FileSource | True |  False |  | Represents destination data source. |  
+| Format | String | True |  False |  | Represents destination data format. |  
+| Area | String | True |  False |  | Represents converted data area. |  
+| PageIndex | Integer | True |  False |  | Represents converted page index. |  
+| VerticalResolution | Integer | True |  False |  | Represents vertical resolution. |  
+| HorizontalResolution | Integer | True |  False |  | Represents horizontal resolution. |  
 
 **Parent Name** : [TaskParameter](taskparameter)
 

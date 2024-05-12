@@ -9,11 +9,11 @@ weight: 50
 
 ## **listObjectOperateParameter**
 
- 
+Represents list object operate parameter. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-| ListObject | Class:ListObject | True |  False |  |  |  
+| ListObject | Class:ListObject | True |  False |  | Represents list object of operate object. |  
 | OperateType | String | True |  False |  |  |  
 
 **Parent Name** : [OperateParameter](operateparameter)

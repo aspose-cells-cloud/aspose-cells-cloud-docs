@@ -9,11 +9,11 @@ weight: 50
 
 ## **operateParameter**
 
- 
+Represents operate parameter. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-| OperateType | String | True |  False |  |  |  
+| OperateType | String | True |  False |  | Represents task operate type. |  
 
 **Children Name** : 
 	-  [ChartOperateParameter](chartoperateparameter) 

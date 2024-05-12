@@ -9,15 +9,15 @@ weight: 50
 
 ## **convertTaskParameter**
 
- 
+Represents convert task parameter. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-| DataSource | Class:DataSource | True |  False |  |  |  
-| Workbook | Class:FileSource | True |  False |  |  |  
-| DestinationFile | String | True |  False |  |  |  
-| Region | String | True |  False |  |  |  
-| SaveOptions | Class:SaveOptions | True |  False |  |  |  
+| DataSource | Class:DataSource | True |  False |  | Represents data source of task object. |  
+| Workbook | Class:FileSource | True |  False |  | Represents data source of task object. |  
+| DestinationFile | String | True |  False |  | Represents destination file. |  
+| Region | String | True |  False |  | Represents Excel data region. |  
+| SaveOptions | Class:SaveOptions | True |  False |  | Represents save options. |  
 
 **Parent Name** : [TaskParameter](taskparameter)
 

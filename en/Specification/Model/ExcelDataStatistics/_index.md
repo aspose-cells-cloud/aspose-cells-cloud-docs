@@ -9,10 +9,9 @@ weight: 50
 
 ## **excelDataStatistics**
 
- 
+Represents Excel data statistics. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-| WorksheetDataStatistics | Container | True |  False |  |  |  
-| NamesCount | Integer | True |  False |  |  |  
+| WorksheetDataStatistics | Container | True |  False |  | Represents worksheet data statistics list. |  
 

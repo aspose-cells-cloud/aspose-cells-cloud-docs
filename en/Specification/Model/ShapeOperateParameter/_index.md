@@ -9,11 +9,11 @@ weight: 50
 
 ## **shapeOperateParameter**
 
- 
+Represents shape operate parameter. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-| Shape | Class:Shape | True |  False |  |  |  
+| Shape | Class:Shape | True |  False |  | Represents shape object. |  
 | OperateType | String | True |  False |  |  |  
 
 **Parent Name** : [OperateParameter](operateparameter)

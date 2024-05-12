@@ -9,14 +9,14 @@ weight: 50
 
 ## **worksheetOperateParameter**
 
- 
+Represents worksheet operate parameter. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-| Name | String | True |  False |  |  |  
-| SheetType | String | True |  False |  |  |  
+| Name | String | True |  False |  | Represents worksheet name. |  
+| SheetType | String | True |  False |  | Represents worksheet type. |  
 | NewName | String | True |  False |  | rename worksheet name |  
-| MovingRequest | Class:WorksheetMovingRequest | True |  False |  |  |  
+| MovingRequest | Class:WorksheetMovingRequest | True |  False |  | Represents move position. |  
 | OperateType | String | True |  False |  |  |  
 
 **Parent Name** : [OperateParameter](operateparameter)

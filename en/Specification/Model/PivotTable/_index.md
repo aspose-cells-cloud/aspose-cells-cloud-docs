@@ -47,7 +47,7 @@ Summary description for PivotTable.
 | ManualUpdate | Boolean | True |  False |  |  |  
 | MergeLabels | Boolean | True |  False |  |  |  
 | MissingItemsLimit | String | True |  False |  |  |  
-| Name | String | True |  False |  |  |  
+| Name | String | True |  False |  | Represents pivot table name. |  
 | NullString | String | True |  False |  |  |  
 | PageFieldOrder | String | True |  False |  |  |  
 | PageFields | Container | True |  False |  |  |  

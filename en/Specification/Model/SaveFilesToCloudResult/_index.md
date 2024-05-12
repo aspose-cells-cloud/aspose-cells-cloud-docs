@@ -9,7 +9,7 @@ weight: 50
 
 ## **saveFilesToCloudResult**
 
- 
+Represents save file to cloud result. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |

@@ -9,13 +9,13 @@ weight: 50
 
 ## **analyzedResult**
 
- 
+Represents results of analyzed data. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-| Filename | String | True |  False |  |  |  
-| Description | String | True |  False |  |  |  
-| BasicStatistics | Class:ExcelDataStatistics | True |  False |  |  |  
-| Results | Container | True |  False |  |  |  
+| Filename | String | True |  False |  | Represents the file name of data file. |  
+| Description | String | True |  False |  | Represents summary about results of analyzed data. |  
+| BasicStatistics | Class:ExcelDataStatistics | True |  False |  | Represents Excel data statistics. |  
+| Results | Container | True |  False |  | Represents analyzed table description. |  
 | SuggestedFile | String | True |  False |  | base64String Excel file |  
 

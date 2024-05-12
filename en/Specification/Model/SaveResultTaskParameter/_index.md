@@ -9,12 +9,12 @@ weight: 50
 
 ## **saveResultTaskParameter**
 
- 
+Represents save result task parameter. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-| ResultSource | String | True |  False |  |  |  
-| ResultDestination | Class:ResultDestination | True |  False |  |  |  
+| ResultSource | String | True |  False |  | Represents result data source. |  
+| ResultDestination | Class:ResultDestination | True |  False |  | Represents result destination data. |  
 
 **Parent Name** : [TaskParameter](taskparameter)
 

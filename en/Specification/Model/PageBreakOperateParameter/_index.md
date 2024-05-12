@@ -9,16 +9,16 @@ weight: 50
 
 ## **pageBreakOperateParameter**
 
- 
+Represents page break operate parameter. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-| PageBreakType | String | True |  False |  |  |  
-| Index | Integer | True |  False |  |  |  
-| Row | Integer | True |  False |  |  |  
-| Column | Integer | True |  False |  |  |  
-| StartIndex | Integer | True |  False |  |  |  
-| EndIndex | Integer | True |  False |  |  |  
+| PageBreakType | String | True |  False |  | Represents page break type. |  
+| Index | Integer | True |  False |  | Represents page break index. |  
+| Row | Integer | True |  False |  | Represents row index of page break. |  
+| Column | Integer | True |  False |  | Represents column index of page break. |  
+| StartIndex | Integer | True |  False |  | Represents start row index of page break. |  
+| EndIndex | Integer | True |  False |  | Represents end row index of page break. |  
 | OperateType | String | True |  False |  |  |  
 
 **Parent Name** : [OperateParameter](operateparameter)

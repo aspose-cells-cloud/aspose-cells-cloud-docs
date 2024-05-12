@@ -9,15 +9,15 @@ weight: 50
 
 ## **operateObjectPosition**
 
- 
+Represents operate object position. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-| DataSource | Class:DataSource | True |  False |  |  |  
-| Workbook | Class:FileSource | True |  False |  |  |  
-| SheetName | String | True |  False |  |  |  
-| ChartIndex | Integer | True |  False |  |  |  
-| ShapeIndex | Integer | True |  False |  |  |  
-| CellName | String | True |  False |  |  |  
-| ListObjectIndex | Integer | True |  False |  |  |  
+| DataSource | Class:DataSource | True |  False |  | Represents data source of operate object. |  
+| Workbook | Class:FileSource | True |  False |  | Represents data source of operate object. |  
+| SheetName | String | True |  False |  | Represents worksheet name of operate object. |  
+| ChartIndex | Integer | True |  False |  | Represents chart index of operate object. |  
+| ShapeIndex | Integer | True |  False |  | Represents shape index of operate object. |  
+| CellName | String | True |  False |  | Represents cell name of operate object. |  
+| ListObjectIndex | Integer | True |  False |  | Represents list object index of operate object. |  
 

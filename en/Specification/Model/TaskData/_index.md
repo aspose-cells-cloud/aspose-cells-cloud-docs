@@ -9,9 +9,9 @@ weight: 50
 
 ## **taskData**
 
- 
+Represents task data. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-| Tasks | Container | True |  False |  |  |  
+| Tasks | Container | True |  False |  | Represents task description list. |  
 

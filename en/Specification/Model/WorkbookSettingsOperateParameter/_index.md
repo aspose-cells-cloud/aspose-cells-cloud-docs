@@ -9,11 +9,11 @@ weight: 50
 
 ## **workbookSettingsOperateParameter**
 
- 
+Represents workbook setting operate parameter. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-| WorkbookSettings | Class:WorkbookSettings | True |  False |  |  |  
+| WorkbookSettings | Class:WorkbookSettings | True |  False |  | Represents workbook setting. |  
 | OperateType | String | True |  False |  |  |  
 
 **Parent Name** : [OperateParameter](operateparameter)

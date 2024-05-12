@@ -9,18 +9,18 @@ weight: 50
 
 ## **pivotTableOperateParameter**
 
- 
+Represents pivot table operate parameter. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-| SourceData | String | True |  False |  |  |  
-| DestCellName | String | True |  False |  |  |  
-| TableName | String | True |  False |  |  |  
-| UseSameSource | Boolean | True |  False |  |  |  
-| PivotTableIndex | Integer | True |  False |  |  |  
-| PivotFieldRows | Array<Integer> | True |  False |  |  |  
-| PivotFieldColumns | Array<Integer> | True |  False |  |  |  
-| PivotFieldData | Array<Integer> | True |  False |  |  |  
+| SourceData | String | True |  False |  | Represents source data of pivot table. |  
+| DestCellName | String | True |  False |  | Represents start cell name of the pivot table. |  
+| TableName | String | True |  False |  | Represents table name of pivot table. |  
+| UseSameSource | Boolean | True |  False |  | Represents whether the same source is used. |  
+| PivotTableIndex | Integer | True |  False |  | Represents pivot table index. |  
+| PivotFieldRows | Array<Integer> | True |  False |  | Represents pivot row fields. |  
+| PivotFieldColumns | Array<Integer> | True |  False |  | Represents pivot column fields. |  
+| PivotFieldData | Array<Integer> | True |  False |  | Represents pivot data field. |  
 | OperateType | String | True |  False |  |  |  
 
 **Parent Name** : [OperateParameter](operateparameter)

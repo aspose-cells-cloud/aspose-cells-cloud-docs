@@ -9,7 +9,7 @@ weight: 50
 
 ## **resultDestinationType**
 
- 
+Represents result destination type. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |

@@ -9,11 +9,11 @@ weight: 50
 
 ## **resultDestination**
 
- 
+Represents result destination. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-| DestinationType | String | True |  False |  |  |  
-| InputFile | String | True |  False |  |  |  
-| OutputFile | String | True |  False |  |  |  
+| DestinationType | String | True |  False |  | Represents destination data type. |  
+| InputFile | String | True |  False |  | Represents input file. |  
+| OutputFile | String | True |  False |  | Represents output file. |  
 

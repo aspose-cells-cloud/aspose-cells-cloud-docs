@@ -30,7 +30,7 @@ Encapsulates the object that represents a single Excel chart.
 | Is3D | Boolean | True |  False |  | Indicates whether the chart is a 3d chart. |  
 | IsRectangularCornered | Boolean | True |  False |  | Gets or sets a value indicating whether the chart area is rectangular cornered.                        Default is true. |  
 | Legend | Class:LinkElement | True |  False |  | Gets the chart legend. |  
-| Name | String | True |  False |  |  |  
+| Name | String | True |  False |  | Represents chart name. |  
 | NSeries | Class:LinkElement | True |  False |  | Gets a  collection representing the data series in the chart. |  
 | PageSetup | Class:LinkElement | True |  False |  | Represents the page setup description in this chart. |  
 | Perspective | Integer | True |  False |  | Returns or sets the perspective for the 3-D chart view. Must be between 0 and 100.                        This property is ignored if the RightAngleAxes property is True. |  
@@ -51,8 +51,8 @@ Encapsulates the object that represents a single Excel chart.
 | SideWall | Class:LinkElement | True |  False |  | Returns a  object that represents the side wall of a 3-D chart. |  
 | SizeWithWindow | Boolean | True |  False |  | True if Microsoft Excel resizes the chart to match the size of the chart sheet window. |  
 | Style | Integer | True |  False |  | Gets and sets the builtin style. |  
-| Title | Class:LinkElement | True |  False |  |  |  
-| Type | String | True |  False |  |  |  
+| Title | Class:LinkElement | True |  False |  | Represents chart title. |  
+| Type | String | True |  False |  | Represents chart type. |  
 | ValueAxis | Class:LinkElement | True |  False |  | Gets the chart's Y axis. |  
 | Walls | Class:LinkElement | True |  False |  | Returns a  object that represents the walls of a 3-D chart. |  
 | WallsAndGridlines2D | Boolean | True |  False |  | True if gridlines are drawn two-dimensionally on a 3-D chart. |  

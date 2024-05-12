@@ -9,15 +9,15 @@ weight: 50
 
 ## **splitWorkbookTaskParameter**
 
- 
+Represents split workbook task parameter. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-| Workbook | Class:FileSource | True |  False |  |  |  
-| DestinationFilePosition | Class:FileSource | True |  False |  |  |  
-| DataSource | Class:DataSource | True |  False |  |  |  
-| TargetDataSource | Class:DataSource | True |  False |  |  |  
-| DestinationFileFormat | String | True |  False |  |  |  
+| Workbook | Class:FileSource | True |  False |  | Represents data source of task object. |  
+| DestinationFilePosition | Class:FileSource | True |  False |  | Represents data source of task object. |  
+| DataSource | Class:DataSource | True |  False |  | Represents destination data source. |  
+| TargetDataSource | Class:DataSource | True |  False |  | Represents destination data source. |  
+| DestinationFileFormat | String | True |  False |  | Represents destination data file format. |  
 | SplitNameRule | String | True |  False |  | SheetName /NewGuid |  
 | VerticalResolution | Integer | True |  False |  | When destination file format is image , vertical resolution can not be null. |  
 | HorizontalResolution | Integer | True |  False |  | When destination file format is image , horizontal resolution can not be null. |  

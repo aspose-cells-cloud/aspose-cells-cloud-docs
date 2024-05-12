@@ -9,7 +9,7 @@ weight: 50
 
 ## **workbookOperateParameter**
 
- 
+Represents workbook operate parameter. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |

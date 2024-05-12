@@ -9,11 +9,11 @@ weight: 50
 
 ## **pageSetupOperateParameter**
 
- 
+Represents page setup operate parameter. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-| PageSetup | Class:PageSetup | True |  False |  |  |  
+| PageSetup | Class:PageSetup | True |  False |  | Represents worksheet page setup. |  
 | OperateType | String | True |  False |  |  |  
 
 **Parent Name** : [OperateParameter](operateparameter)

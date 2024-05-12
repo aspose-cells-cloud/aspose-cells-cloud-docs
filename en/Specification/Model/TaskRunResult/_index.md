@@ -9,12 +9,12 @@ weight: 50
 
 ## **taskRunResult**
 
- 
+Represents task run result. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-| Description | String | True |  False |  |  |  
-| OutFileList | Container | True |  False |  |  |  
+| Description | String | True |  False |  | Represents task run result description. |  
+| OutFileList | Container | True |  False |  | Represents out data file list. |  
 
 **Children Name** : 
 	-  [SaveFilesToCloudResult](savefilestocloudresult) 

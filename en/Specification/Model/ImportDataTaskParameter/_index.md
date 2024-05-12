@@ -9,15 +9,15 @@ weight: 50
 
 ## **importDataTaskParameter**
 
- 
+Represents import data task parameter. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-| DataSource | Class:DataSource | True |  False |  |  |  
-| Workbook | Class:FileSource | True |  False |  |  |  
-| ImportOption | Class:ImportOption | True |  False |  |  |  
-| TargetDataSource | Class:DataSource | True |  False |  |  |  
-| DestinationWorkbook | Class:FileSource | True |  False |  |  |  
+| DataSource | Class:DataSource | True |  False |  | Represents data source of task object. |  
+| Workbook | Class:FileSource | True |  False |  | Represents data source of task object. |  
+| ImportOption | Class:ImportOption | True |  False |  | Represents import option. |  
+| TargetDataSource | Class:DataSource | True |  False |  | Represents destination data source. |  
+| DestinationWorkbook | Class:FileSource | True |  False |  | Represents destination data source. |  
 
 **Parent Name** : [TaskParameter](taskparameter)
 

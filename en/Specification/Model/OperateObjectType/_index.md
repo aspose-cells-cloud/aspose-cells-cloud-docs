@@ -9,7 +9,7 @@ weight: 50
 
 ## **operateObjectType**
 
- 
+Represents operate object type. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |

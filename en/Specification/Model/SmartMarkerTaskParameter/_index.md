@@ -9,16 +9,16 @@ weight: 50
 
 ## **smartMarkerTaskParameter**
 
- 
+Represents smart marker task parameter. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-| SourceWorkbook | Class:FileSource | True |  False |  |  |  
-| DestinationWorkbook | Class:FileSource | True |  False |  |  |  
-| xmlFile | Class:FileSource | True |  False |  |  |  
-| DataSource | Class:DataSource | True |  False |  |  |  
-| TargetDataSource | Class:DataSource | True |  False |  |  |  
-| XMLFileDataSource | Class:DataSource | True |  False |  |  |  
+| SourceWorkbook | Class:FileSource | True |  False |  | Represents data source of task object. |  
+| DestinationWorkbook | Class:FileSource | True |  False |  | Represents data source of task object. |  
+| xmlFile | Class:FileSource | True |  False |  | Represents xml file. |  
+| DataSource | Class:DataSource | True |  False |  | Represents destination data source. |  
+| TargetDataSource | Class:DataSource | True |  False |  | Represents destination data source. |  
+| XMLFileDataSource | Class:DataSource | True |  False |  | Represents xml file. |  
 
 **Parent Name** : [TaskParameter](taskparameter)
 

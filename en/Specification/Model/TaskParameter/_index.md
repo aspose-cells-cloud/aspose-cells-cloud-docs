@@ -9,7 +9,7 @@ weight: 50
 
 ## **taskParameter**
 
- 
+Represents task parameter. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |

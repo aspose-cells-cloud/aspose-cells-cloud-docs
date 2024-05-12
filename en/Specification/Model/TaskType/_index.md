@@ -9,7 +9,7 @@ weight: 50
 
 ## **taskType**
 
- 
+Represents task type. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |

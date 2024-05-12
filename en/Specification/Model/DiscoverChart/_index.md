@@ -9,14 +9,14 @@ weight: 50
 
 ## **discoverChart**
 
- 
+Represents a chart, which is a chart created based on data analysis of a table. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-| Name | String | True |  False |  |  |  
-| SheetName | String | True |  False |  |  |  
-| Title | String | True |  False |  |  |  
-| Type | String | True |  False |  |  |  
-| DataRange | String | True |  False |  |  |  
-| Thumbnail | String | True |  False |  | Base64String |  
+| Name | String | True |  False |  | Represents chart name. |  
+| SheetName | String | True |  False |  | Represents worksheet name which is where the chart is located. |  
+| Title | String | True |  False |  | Represents chart title. |  
+| Type | String | True |  False |  | Represents chart type. |  
+| DataRange | String | True |  False |  | Represents chart data range. |  
+| Thumbnail | String | True |  False |  | Represents chart thumbnail. Base64String |  
 

@@ -9,10 +9,10 @@ weight: 50
 
 ## **taskDescription**
 
- 
+Represents task description. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-| TaskType | String | True |  False |  |  |  
-| TaskParameter | Class:TaskParameter | True |  False |  |  |  
+| TaskType | String | True |  False |  | Represents task type. |  
+| TaskParameter | Class:TaskParameter | True |  False |  | Represents task parameter. |  
 

@@ -117,37 +117,37 @@ weight: 50
 - [WriteProtection](writeprotection)  :  Specifies write protection settings for a workbook.  
 - [XmlDataBinding](xmldatabinding)  :  Represents Xml Data Binding information.  
 - [XmlMap](xmlmap)  :  Represents Xml map information.  
-- [CellsObjectOperateTaskParameter](cellsobjectoperatetaskparameter)  :   
-- [ConvertTaskParameter](converttaskparameter)  :   
-- [ConvertWorksheetTaskParameter](convertworksheettaskparameter)  :   
-- [ImportDataTaskParameter](importdatataskparameter)  :   
-- [ResultDestination](resultdestination)  :   
-- [ResultDestinationType](resultdestinationtype)  :   
-- [ResultSource](resultsource)  :   
-- [SaveFilesToCloudResult](savefilestocloudresult)  :   
-- [SaveResultTaskParameter](saveresulttaskparameter)  :   
-- [SmartMarkerTaskParameter](smartmarkertaskparameter)  :   
-- [SplitWorkbookTaskParameter](splitworkbooktaskparameter)  :   
-- [TaskData](taskdata)  :   
-- [TaskDescription](taskdescription)  :   
-- [TaskParameter](taskparameter)  :   
-- [TaskResultParameter](taskresultparameter)  :   
-- [TaskRunResult](taskrunresult)  :   
-- [TaskType](tasktype)  :   
-- [ChartOperateParameter](chartoperateparameter)  :   
-- [ListObjectOperateParameter](listobjectoperateparameter)  :   
-- [OperateObject](operateobject)  :   
-- [OperateObjectPosition](operateobjectposition)  :   
-- [OperateObjectType](operateobjecttype)  :   
-- [OperateParameter](operateparameter)  :   
-- [OperateType](operatetype)  :   
-- [PageBreakOperateParameter](pagebreakoperateparameter)  :   
-- [PageSetupOperateParameter](pagesetupoperateparameter)  :   
-- [PivotTableOperateParameter](pivottableoperateparameter)  :   
-- [ShapeOperateParameter](shapeoperateparameter)  :   
-- [WorkbookOperateParameter](workbookoperateparameter)  :   
-- [WorkbookSettingsOperateParameter](workbooksettingsoperateparameter)  :   
-- [WorksheetOperateParameter](worksheetoperateparameter)  :   
+- [CellsObjectOperateTaskParameter](cellsobjectoperatetaskparameter)  :  Represents cells object operate task parameter. 
+- [ConvertTaskParameter](converttaskparameter)  :  Represents convert task parameter. 
+- [ConvertWorksheetTaskParameter](convertworksheettaskparameter)  :  Represents convert worksheet task parameter. 
+- [ImportDataTaskParameter](importdatataskparameter)  :  Represents import data task parameter. 
+- [ResultDestination](resultdestination)  :  Represents result destination. 
+- [ResultDestinationType](resultdestinationtype)  :  Represents result destination type. 
+- [ResultSource](resultsource)  :  Represents result source type. 
+- [SaveFilesToCloudResult](savefilestocloudresult)  :  Represents save file to cloud result. 
+- [SaveResultTaskParameter](saveresulttaskparameter)  :  Represents save result task parameter. 
+- [SmartMarkerTaskParameter](smartmarkertaskparameter)  :  Represents smart marker task parameter. 
+- [SplitWorkbookTaskParameter](splitworkbooktaskparameter)  :  Represents split workbook task parameter. 
+- [TaskData](taskdata)  :  Represents task data. 
+- [TaskDescription](taskdescription)  :  Represents task description. 
+- [TaskParameter](taskparameter)  :  Represents task parameter. 
+- [TaskResultParameter](taskresultparameter)  :  Represents task result parameter. 
+- [TaskRunResult](taskrunresult)  :  Represents task run result. 
+- [TaskType](tasktype)  :  Represents task type. 
+- [ChartOperateParameter](chartoperateparameter)  :  Represents chart operate parameter. 
+- [ListObjectOperateParameter](listobjectoperateparameter)  :  Represents list object operate parameter. 
+- [OperateObject](operateobject)  :  Represents operate object. 
+- [OperateObjectPosition](operateobjectposition)  :  Represents operate object position. 
+- [OperateObjectType](operateobjecttype)  :  Represents operate object type. 
+- [OperateParameter](operateparameter)  :  Represents operate parameter. 
+- [OperateType](operatetype)  :  Represents operate type. 
+- [PageBreakOperateParameter](pagebreakoperateparameter)  :  Represents page break operate parameter. 
+- [PageSetupOperateParameter](pagesetupoperateparameter)  :  Represents page setup operate parameter. 
+- [PivotTableOperateParameter](pivottableoperateparameter)  :  Represents pivot table operate parameter. 
+- [ShapeOperateParameter](shapeoperateparameter)  :  Represents shape operate parameter. 
+- [WorkbookOperateParameter](workbookoperateparameter)  :  Represents workbook operate parameter. 
+- [WorkbookSettingsOperateParameter](workbooksettingsoperateparameter)  :  Represents workbook setting operate parameter. 
+- [WorksheetOperateParameter](worksheetoperateparameter)  :  Represents worksheet operate parameter. 
 - [ListColumn](listcolumn)  :             Represents a column in a Table.            
 - [ListObject](listobject)  :  Represents a list object on a worksheet.            The ListObject object is a member of the ListObjects collection.             The ListObjects collection contains all the list objects on a worksheet. 
 - [ListObjects](listobjects)  :  Represents a collection of  objects in the worksheet. 
@@ -171,7 +171,6 @@ weight: 50
 - [XlsbSaveOptions](xlsbsaveoptions)  :  Represents the options of saving .xlsb file. 
 - [XlsSaveOptions](xlssaveoptions)  :  Represents the options of saving .xls file. 
 - [XpsSaveOptions](xpssaveoptions)  :  Represents the options of saving .xps file. 
-- [AnalyzeExcelResponse](analyzeexcelresponse)  :  Represents 
 - [ArcShapeResponse](arcshaperesponse)  :  Represents the ArcShape Response. 
 - [AutoFilterResponse](autofilterresponse)  :  Represents the AutoFilter Response. 
 - [AutoShapeResponse](autoshaperesponse)  :  Represents the AutoShape Response. 
@@ -412,15 +411,12 @@ weight: 50
 - [Walls](walls)  :  Encapsulates the object that represents the walls of a 3-D chart. 
 - [ColumnDataExceptionDescription](columndataexceptiondescription)  :   
 - [TextCategoryType](textcategorytype)  :   
-- [AnalyzedColumnDescription](analyzedcolumndescription)  :  How to use the properties of each column: currently divided into timeline, product line, numerical statistics line             How to present the product, a unified plan            How to solve the problem of full digital?            Full text How to solve it?            Two columns: Text, Number is the easiest            Three columns: Text, Text, Number                    text, number, number --- date date ; Date Numeric ; Numeric Digital             What about four columns, five columns? 
-- [AnalyzedResult](analyzedresult)  :   
-- [AnalyzedTableDescription](analyzedtabledescription)  :   
-- [DateSourceType](datesourcetype)  :   
-- [SuggestedOutputType](suggestedoutputtype)  :   
-- [AnalyzeSuggestion](analyzesuggestion)  :   
-- [DiscoverChart](discoverchart)  :   
-- [DiscoverPivotTable](discoverpivottable)  :   
-- [ExcelDataStatistics](exceldatastatistics)  :   
-- [WorksheetDataStatistics](worksheetdatastatistics)  :   
+- [AnalyzedColumnDescription](analyzedcolumndescription)  :  Represents description of analyzed column. 
+- [AnalyzedResult](analyzedresult)  :  Represents results of analyzed data. 
+- [AnalyzedTableDescription](analyzedtabledescription)  :  Represents analyzed table description. 
+- [DiscoverChart](discoverchart)  :  Represents a chart, which is a chart created based on data analysis of a table. 
+- [DiscoverPivotTable](discoverpivottable)  :  Represents a pivot table, which is a pivot table created based on data analysis of a table. 
+- [ExcelDataStatistics](exceldatastatistics)  :  Represents Excel data statistics. 
+- [WorksheetDataStatistics](worksheetdatastatistics)  :  Represents worksheet data statistics. 
 - [Error](error)  :  Error 
 - [ErrorDetails](errordetails)  :  The error details 

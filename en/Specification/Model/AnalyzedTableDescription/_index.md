@@ -9,24 +9,24 @@ weight: 50
 
 ## **analyzedTableDescription**
 
- 
+Represents analyzed table description. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-| Name | String | True |  False |  |  |  
-| SheetName | String | True |  False |  |  |  
-| Columns | Container | True |  False |  |  |  
-| DateColumns | Container | True |  False |  |  |  
-| NumberColumns | Container | True |  False |  |  |  
-| TextColumns | Container | True |  False |  |  |  
-| ExceptionColumns | Container | True |  False |  |  |  
-| HasTableHeaderRow | Boolean | True |  False |  |  |  
-| HasTableTotalRow | Boolean | True |  False |  |  |  
-| StartDataColumnIndex | Integer | True |  False |  |  |  
-| EndDataColumnIndex | Integer | True |  False |  |  |  
-| StartDataRowIndex | Integer | True |  False |  |  |  
-| EndDataRowIndex | Integer | True |  False |  |  |  
-| Thumbnail | String | True |  False |  | Base64String |  
-| DiscoverCharts | Container | True |  False |  |  |  
-| DiscoverPivotTables | Container | True |  False |  |  |  
+| Name | String | True |  False |  | Represents table name. |  
+| SheetName | String | True |  False |  | Represents worksheet name which is where the table is located. |  
+| Columns | Container | True |  False |  | Represents analyzed description about table columns. |  
+| DateColumns | Container | True |  False |  | Represents date columns list. |  
+| NumberColumns | Container | True |  False |  | Represents number columns list. |  
+| TextColumns | Container | True |  False |  | Represents string columns list. |  
+| ExceptionColumns | Container | True |  False |  | Represents exception columns list. |  
+| HasTableHeaderRow | Boolean | True |  False |  | Represents there is a table header in the table. |  
+| HasTableTotalRow | Boolean | True |  False |  | Represents there is a total row in the table. |  
+| StartDataColumnIndex | Integer | True |  False |  | Represents the column index as the start data column. |  
+| EndDataColumnIndex | Integer | True |  False |  | Represents the column index as the end data column. |  
+| StartDataRowIndex | Integer | True |  False |  | Represents the row index as the start data row. |  
+| EndDataRowIndex | Integer | True |  False |  | Represents the row index as the end data row. |  
+| Thumbnail | String | True |  False |  | Represents table thumbnail. Base64String |  
+| DiscoverCharts | Container | True |  False |  | Represents a collection of charts, which is a collection of charts created based on data analysis of a table. |  
+| DiscoverPivotTables | Container | True |  False |  | Represents a collection of pivot tables, which is a collection of pivot tables created based on data analysis of a table. |  
 

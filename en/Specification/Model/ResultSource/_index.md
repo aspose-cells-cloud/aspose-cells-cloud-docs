@@ -9,7 +9,7 @@ weight: 50
 
 ## **resultSource**
 
- 
+Represents result source type. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |

@@ -9,10 +9,10 @@ weight: 50
 
 ## **operateObject**
 
- 
+Represents operate object. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-| OperateObjectType | String | True |  False |  |  |  
-| Position | Class:OperateObjectPosition | True |  False |  |  |  
+| OperateObjectType | String | True |  False |  | Represents operate object type. |  
+| Position | Class:OperateObjectPosition | True |  False |  | Represents position of operate object. |  
 

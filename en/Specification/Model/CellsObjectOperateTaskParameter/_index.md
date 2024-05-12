@@ -9,14 +9,14 @@ weight: 50
 
 ## **cellsObjectOperateTaskParameter**
 
- 
+Represents cells object operate task parameter. 
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-| OperateObject | Class:OperateObject | True |  False |  |  |  
-| OperateParameter | Class:OperateParameter | True |  False |  |  |  
-| DestinatioDataSource | Class:DataSource | True |  False |  |  |  
-| DestinationWorkbook | Class:FileSource | True |  False |  |  |  
+| OperateObject | Class:OperateObject | True |  False |  | Represents object operate. |  
+| OperateParameter | Class:OperateParameter | True |  False |  | Represents operate parameter. |  
+| DestinationDataSource | Class:DataSource | True |  False |  | Represents destination data source. |  
+| DestinationWorkbook | Class:FileSource | True |  False |  | Represents destination data source. |  
 
 **Parent Name** : [TaskParameter](taskparameter)
 
