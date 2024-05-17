@@ -3,17 +3,18 @@ title: "GetWorksheetRows"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/getworksheetrows/
-description: "Retrieve descriptions of rows in the worksheet."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, GetWorksheetRows
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetRows" >}}
-{{< blocks/products/cells/docs-title titlemsg="Retrieve descriptions of rows in the worksheet." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells/rows/,GET,Retrieve descriptions of rows in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetRows'>GetWorksheetRows</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells/rows/,GET,,<a href='https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetRows'>GetWorksheetRows</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

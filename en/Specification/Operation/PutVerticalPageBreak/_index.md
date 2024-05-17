@@ -3,17 +3,18 @@ title: "PutVerticalPageBreak"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/putverticalpagebreak/
-description: "Add a vertical page break in the worksheet."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PutVerticalPageBreak
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="PutVerticalPageBreak" >}}
-{{< blocks/products/cells/docs-title titlemsg="Add a vertical page break in the worksheet." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/verticalpagebreaks,PUT,Add a vertical page break in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/PageBreaks/PutVerticalPageBreak'>PutVerticalPageBreak</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/verticalpagebreaks,PUT,,<a href='https://apireference.aspose.cloud/cells/#/PageBreaks/PutVerticalPageBreak'>PutVerticalPageBreak</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

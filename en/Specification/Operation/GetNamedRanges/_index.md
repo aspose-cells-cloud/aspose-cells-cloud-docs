@@ -3,17 +3,18 @@ title: "GetNamedRanges"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/getnamedranges/
-description: "Retrieve descriptions of ranges in the worksheets."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, GetNamedRanges
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="GetNamedRanges" >}}
-{{< blocks/products/cells/docs-title titlemsg="Retrieve descriptions of ranges in the worksheets." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/ranges,GET,Retrieve descriptions of ranges in the worksheets.,<a href='https://apireference.aspose.cloud/cells/#/Worksheets/GetNamedRanges'>GetNamedRanges</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/ranges,GET,,<a href='https://apireference.aspose.cloud/cells/#/Worksheets/GetNamedRanges'>GetNamedRanges</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

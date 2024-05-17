@@ -4,6 +4,7 @@ second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/model/name/
 description: "Aspose.Cells Cloud model specification : Name. Effortlessly handle Excel and other spreadsheet documents with features like opening, generating, editing, splitting, merging, comparing, and converting."
+kwords: Excel, Office, Spreadsheet, Cloud REST API, Name
 weight: 50
 ---
 
@@ -22,5 +23,5 @@ Represents a defined name for a range of cells.
 | Text | String | True |  False |  | Gets the name text of the object. |  
 | link | Class:Link | True |  False |  |  |  
 
-**Parent Name** : [LinkElement](linkelement)
+**Parent Name** : [LinkElement](/specification/model/linkelement)
 

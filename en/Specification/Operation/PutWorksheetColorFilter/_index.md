@@ -3,17 +3,18 @@ title: "PutWorksheetColorFilter"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/putworksheetcolorfilter/
-description: "Add a color filter in the worksheet."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PutWorksheetColorFilter
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetColorFilter" >}}
-{{< blocks/products/cells/docs-title titlemsg="Add a color filter in the worksheet." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/autoFilter/colorFilter,PUT,Add a color filter in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetColorFilter'>PutWorksheetColorFilter</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/autoFilter/colorFilter,PUT,,<a href='https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetColorFilter'>PutWorksheetColorFilter</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

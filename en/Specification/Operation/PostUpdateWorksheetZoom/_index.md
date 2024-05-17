@@ -3,17 +3,18 @@ title: "PostUpdateWorksheetZoom"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postupdateworksheetzoom/
-description: "Update the scaling percentage in the worksheet. It should be between 10 and 400."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostUpdateWorksheetZoom
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostUpdateWorksheetZoom" >}}
-{{< blocks/products/cells/docs-title titlemsg="Update the scaling percentage in the worksheet. It should be between 10 and 400." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/zoom,POST,Update the scaling percentage in the worksheet. It should be between 10 and 400.,<a href='https://apireference.aspose.cloud/cells/#/Worksheets/PostUpdateWorksheetZoom'>PostUpdateWorksheetZoom</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/zoom,POST,,<a href='https://apireference.aspose.cloud/cells/#/Worksheets/PostUpdateWorksheetZoom'>PostUpdateWorksheetZoom</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

@@ -4,6 +4,7 @@ second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/model/imagesaveoptions/
 description: "Aspose.Cells Cloud model specification : ImageSaveOptions. Effortlessly handle Excel and other spreadsheet documents with features like opening, generating, editing, splitting, merging, comparing, and converting."
+kwords: Excel, Office, Spreadsheet, Cloud REST API, ImageSaveOptions
 weight: 50
 ---
 
@@ -34,5 +35,5 @@ Represents options of saving image file.
 | SortNames | Boolean | True |  False |  |  |  
 | ValidateMergedAreas | Boolean | True |  False |  |  |  
 
-**Parent Name** : [SaveOptions](saveoptions)
+**Parent Name** : [SaveOptions](/specification/model/saveoptions)
 

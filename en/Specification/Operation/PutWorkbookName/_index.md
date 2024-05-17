@@ -3,17 +3,18 @@ title: "PutWorkbookName"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/putworkbookname/
-description: "Define a new name in the workbook."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PutWorkbookName
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="PutWorkbookName" >}}
-{{< blocks/products/cells/docs-title titlemsg="Define a new name in the workbook." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/names,PUT,Define a new name in the workbook.,<a href='https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookName'>PutWorkbookName</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/names,PUT,,<a href='https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookName'>PutWorkbookName</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

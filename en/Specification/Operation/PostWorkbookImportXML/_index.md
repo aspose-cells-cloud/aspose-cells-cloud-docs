@@ -3,17 +3,18 @@ title: "PostWorkbookImportXML"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postworkbookimportxml/
-description: "Import an XML data file into an Excel file. The XML data file can either be a cloud file or data from an HTTP URI."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostWorkbookImportXML
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookImportXML" >}}
-{{< blocks/products/cells/docs-title titlemsg="Import an XML data file into an Excel file. The XML data file can either be a cloud file or data from an HTTP URI." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/importxml,POST,Import an XML data file into an Excel file. The XML data file can either be a cloud file or data from an HTTP URI.,<a href='https://apireference.aspose.cloud/cells/#/DataProcessing/PostWorkbookImportXML'>PostWorkbookImportXML</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/importxml,POST,,<a href='https://apireference.aspose.cloud/cells/#/DataProcessing/PostWorkbookImportXML'>PostWorkbookImportXML</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

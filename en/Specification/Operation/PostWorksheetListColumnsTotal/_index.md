@@ -3,17 +3,18 @@ title: "PostWorksheetListColumnsTotal"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postworksheetlistcolumnstotal/
-description: "Update total of list columns in the table."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostWorksheetListColumnsTotal
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetListColumnsTotal" >}}
-{{< blocks/products/cells/docs-title titlemsg="Update total of list columns in the table." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/listcolumns/total,POST,Update total of list columns in the table.,<a href='https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListColumnsTotal'>PostWorksheetListColumnsTotal</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/listcolumns/total,POST,,<a href='https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListColumnsTotal'>PostWorksheetListColumnsTotal</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

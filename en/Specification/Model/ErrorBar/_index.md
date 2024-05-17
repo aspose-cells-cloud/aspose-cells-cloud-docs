@@ -4,6 +4,7 @@ second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/model/errorbar/
 description: "Aspose.Cells Cloud model specification : ErrorBar. Effortlessly handle Excel and other spreadsheet documents with features like opening, generating, editing, splitting, merging, comparing, and converting."
+kwords: Excel, Office, Spreadsheet, Cloud REST API, ErrorBar
 weight: 50
 ---
 
@@ -40,5 +41,5 @@ Represents error bar of data series.
 | Weight | String | True |  False |  |  |  
 | WeightPt | Floating | True |  False |  |  |  
 
-**Parent Name** : [Line](line)
+**Parent Name** : [Line](/specification/model/line)
 

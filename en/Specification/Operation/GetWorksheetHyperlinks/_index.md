@@ -3,17 +3,18 @@ title: "GetWorksheetHyperlinks"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/getworksheethyperlinks/
-description: "Retrieve descriptions of hyperlinks in the worksheet."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, GetWorksheetHyperlinks
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetHyperlinks" >}}
-{{< blocks/products/cells/docs-title titlemsg="Retrieve descriptions of hyperlinks in the worksheet." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/hyperlinks,GET,Retrieve descriptions of hyperlinks in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/Hypelinks/GetWorksheetHyperlinks'>GetWorksheetHyperlinks</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/hyperlinks,GET,,<a href='https://apireference.aspose.cloud/cells/#/Hypelinks/GetWorksheetHyperlinks'>GetWorksheetHyperlinks</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

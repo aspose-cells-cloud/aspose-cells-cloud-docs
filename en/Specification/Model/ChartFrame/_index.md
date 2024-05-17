@@ -4,6 +4,7 @@ second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/model/chartframe/
 description: "Aspose.Cells Cloud model specification : ChartFrame. Effortlessly handle Excel and other spreadsheet documents with features like opening, generating, editing, splitting, merging, comparing, and converting."
+kwords: Excel, Office, Spreadsheet, Cloud REST API, ChartFrame
 weight: 50
 ---
 
@@ -21,7 +22,6 @@ weight: 50
 | IsAutomaticSize | Boolean | True |  False |  | Indicates whether the chart frame is automatic sized.  |  
 | IsInnerMode | Boolean | True |  False |  | Indicates whether the size of the plot area size includes the tick marks, and the axis labels.            False specifies that the size shall determine the size of the plot area, the tick marks, and the axis labels.  |  
 | Shadow | Boolean | True |  False |  | True if the frame has a shadow.  |  
-| ShapeProperties | Container | True |  False |  | Gets the  object.  |  
 | Width | Integer | True |  False |  | Gets or sets the width of frame in units of 1/4000 of the chart area.  |  
 | Height | Integer | True |  False |  | Gets or sets the height of frame in units of 1/4000 of the chart area.  |  
 | X | Integer | True |  False |  | Gets or sets the x coordinate of the upper left corner in units of 1/4000 of the chart area.  |  

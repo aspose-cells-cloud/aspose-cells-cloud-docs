@@ -3,17 +3,18 @@ title: "PostUngroupWorksheetRows"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postungroupworksheetrows/
-description: "Ungroup rows in the worksheet."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostUngroupWorksheetRows
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostUngroupWorksheetRows" >}}
-{{< blocks/products/cells/docs-title titlemsg="Ungroup rows in the worksheet." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells/rows/ungroup,POST,Ungroup rows in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/Cells/PostUngroupWorksheetRows'>PostUngroupWorksheetRows</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells/rows/ungroup,POST,,<a href='https://apireference.aspose.cloud/cells/#/Cells/PostUngroupWorksheetRows'>PostUngroupWorksheetRows</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

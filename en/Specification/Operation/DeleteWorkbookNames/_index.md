@@ -3,17 +3,18 @@ title: "DeleteWorkbookNames"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/deleteworkbooknames/
-description: "Delete all named ranges in the workbook."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, DeleteWorkbookNames
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorkbookNames" >}}
-{{< blocks/products/cells/docs-title titlemsg="Delete all named ranges in the workbook." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/names,DELETE,Delete all named ranges in the workbook.,<a href='https://apireference.aspose.cloud/cells/#/Workbook/DeleteWorkbookNames'>DeleteWorkbookNames</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/names,DELETE,,<a href='https://apireference.aspose.cloud/cells/#/Workbook/DeleteWorkbookNames'>DeleteWorkbookNames</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

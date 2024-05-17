@@ -3,17 +3,18 @@ title: "GetDocumentProperty"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/getdocumentproperty/
-description: "Get Excel property by name."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, GetDocumentProperty
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="GetDocumentProperty" >}}
-{{< blocks/products/cells/docs-title titlemsg="Get Excel property by name." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/documentproperties/{propertyName},GET,Get Excel property by name.,<a href='https://apireference.aspose.cloud/cells/#/Properties/GetDocumentProperty'>GetDocumentProperty</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/documentproperties/{propertyName},GET,,<a href='https://apireference.aspose.cloud/cells/#/Properties/GetDocumentProperty'>GetDocumentProperty</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

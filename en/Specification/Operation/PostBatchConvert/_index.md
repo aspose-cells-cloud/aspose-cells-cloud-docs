@@ -3,17 +3,18 @@ title: "PostBatchConvert"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postbatchconvert/
-description: "Batch converting files that meet specific matching conditions."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostBatchConvert
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostBatchConvert" >}}
-{{< blocks/products/cells/docs-title titlemsg="Batch converting files that meet specific matching conditions." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/batch/convert,POST,Batch converting files that meet specific matching conditions.,<a href='https://apireference.aspose.cloud/cells/#/Batch/PostBatchConvert'>PostBatchConvert</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/batch/convert,POST,,<a href='https://apireference.aspose.cloud/cells/#/Batch/PostBatchConvert'>PostBatchConvert</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

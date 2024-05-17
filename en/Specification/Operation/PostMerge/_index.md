@@ -3,17 +3,18 @@ title: "PostMerge"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postmerge/
-description: "Merge cells in the worksheet."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostMerge
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostMerge" >}}
-{{< blocks/products/cells/docs-title titlemsg="Merge cells in the worksheet." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/merge,POST,Merge cells in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/LightCells/PostMerge'>PostMerge</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/merge,POST,,<a href='https://apireference.aspose.cloud/cells/#/LightCells/PostMerge'>PostMerge</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

@@ -3,17 +3,18 @@ title: "PostHideWorksheetRows"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/posthideworksheetrows/
-description: "Hide rows in worksheet."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostHideWorksheetRows
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostHideWorksheetRows" >}}
-{{< blocks/products/cells/docs-title titlemsg="Hide rows in worksheet." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells/rows/hide,POST,Hide rows in worksheet.,<a href='https://apireference.aspose.cloud/cells/#/Cells/PostHideWorksheetRows'>PostHideWorksheetRows</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells/rows/hide,POST,,<a href='https://apireference.aspose.cloud/cells/#/Cells/PostHideWorksheetRows'>PostHideWorksheetRows</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

@@ -3,17 +3,18 @@ title: "GetWorksheetPageCount"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/getworksheetpagecount/
-description: "Get page count in the worksheet."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, GetWorksheetPageCount
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetPageCount" >}}
-{{< blocks/products/cells/docs-title titlemsg="Get page count in the worksheet." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pagecount,GET,Get page count in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetPageCount'>GetWorksheetPageCount</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pagecount,GET,,<a href='https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetPageCount'>GetWorksheetPageCount</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

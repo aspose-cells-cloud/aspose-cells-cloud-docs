@@ -3,17 +3,18 @@ title: "PutWorksheetCellsRange"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/putworksheetcellsrange/
-description: "Insert a range of cells and shift existing cells based on the specified shift option."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PutWorksheetCellsRange
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetCellsRange" >}}
-{{< blocks/products/cells/docs-title titlemsg="Insert a range of cells and shift existing cells based on the specified shift option." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges,PUT,Insert a range of cells and shift existing cells based on the specified shift option.,<a href='https://apireference.aspose.cloud/cells/#/Ranges/PutWorksheetCellsRange'>PutWorksheetCellsRange</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges,PUT,,<a href='https://apireference.aspose.cloud/cells/#/Ranges/PutWorksheetCellsRange'>PutWorksheetCellsRange</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

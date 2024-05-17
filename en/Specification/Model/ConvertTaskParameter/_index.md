@@ -4,6 +4,7 @@ second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/model/converttaskparameter/
 description: "Aspose.Cells Cloud model specification : ConvertTaskParameter. Effortlessly handle Excel and other spreadsheet documents with features like opening, generating, editing, splitting, merging, comparing, and converting."
+kwords: Excel, Office, Spreadsheet, Cloud REST API, ConvertTaskParameter
 weight: 50
 ---
 
@@ -19,5 +20,5 @@ Represents convert task parameter.
 | Region | String | True |  False |  | Represents Excel data region. |  
 | SaveOptions | Class:SaveOptions | True |  False |  | Represents save options. |  
 
-**Parent Name** : [TaskParameter](taskparameter)
+**Parent Name** : [TaskParameter](/specification/model/taskparameter)
 

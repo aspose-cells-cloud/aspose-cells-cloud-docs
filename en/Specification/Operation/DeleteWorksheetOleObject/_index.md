@@ -3,17 +3,18 @@ title: "DeleteWorksheetOleObject"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/deleteworksheetoleobject/
-description: "Delete an OLE object in the worksheet."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, DeleteWorksheetOleObject
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetOleObject" >}}
-{{< blocks/products/cells/docs-title titlemsg="Delete an OLE object in the worksheet." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/oleobjects/{oleObjectIndex},DELETE,Delete an OLE object in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/OleObjects/DeleteWorksheetOleObject'>DeleteWorksheetOleObject</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/oleobjects/{oleObjectIndex},DELETE,,<a href='https://apireference.aspose.cloud/cells/#/OleObjects/DeleteWorksheetOleObject'>DeleteWorksheetOleObject</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

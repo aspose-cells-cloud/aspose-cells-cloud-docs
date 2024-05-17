@@ -3,17 +3,18 @@ title: "PostChartSecondValueAxis"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postchartsecondvalueaxis/
-description: "Update chart sencond value axis in the chart."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostChartSecondValueAxis
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostChartSecondValueAxis" >}}
-{{< blocks/products/cells/docs-title titlemsg="Update chart sencond value axis in the chart." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/secondvalueaxis,POST,Update chart sencond value axis in the chart.,<a href='https://apireference.aspose.cloud/cells/#/Charts/PostChartSecondValueAxis'>PostChartSecondValueAxis</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/secondvalueaxis,POST,,<a href='https://apireference.aspose.cloud/cells/#/Charts/PostChartSecondValueAxis'>PostChartSecondValueAxis</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

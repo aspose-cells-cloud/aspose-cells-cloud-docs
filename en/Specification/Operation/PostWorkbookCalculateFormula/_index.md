@@ -3,17 +3,18 @@ title: "PostWorkbookCalculateFormula"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postworkbookcalculateformula/
-description: "Calculate all formulas in the workbook."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostWorkbookCalculateFormula
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookCalculateFormula" >}}
-{{< blocks/products/cells/docs-title titlemsg="Calculate all formulas in the workbook." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/calculateformula,POST,Calculate all formulas in the workbook.,<a href='https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookCalculateFormula'>PostWorkbookCalculateFormula</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/calculateformula,POST,,<a href='https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookCalculateFormula'>PostWorkbookCalculateFormula</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

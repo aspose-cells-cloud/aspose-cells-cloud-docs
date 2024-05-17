@@ -2,6 +2,7 @@
 title: "Models"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
+kwords: Excel, Office, Spreadsheet, Cloud REST API, Data Model
 weight: 50
 ---
 
@@ -39,20 +40,20 @@ weight: 50
 - [CustomFilter](customfilter)  :             Represents the custom filter.            
 - [DataBar](databar)  :  Describe the DataBar conditional formatting rule. This conditional formatting   rule displays a gradated data bar in the range of cells. 
 - [DataBarBorder](databarborder)  :             Represents the border of the data bars specified by a conditional formatting rule.            
-- [DataCleansing](datacleansing)  :  Data Cleansing 
-- [DataColumnFillValue](datacolumnfillvalue)  :   
-- [DataFill](datafill)  :   
-- [DataFillValue](datafillvalue)  :   
-- [DataItem](dataitem)  :   
-- [DataItemType](dataitemtype)  :   
+- [DataCleansing](datacleansing)  :  Represents data cleansing. 
+- [DataColumnFillValue](datacolumnfillvalue)  :  Represents that the data column is populated with the specified value. 
+- [DataFill](datafill)  :  Represents data filling. 
+- [DataFillValue](datafillvalue)  :  Represents that the data is populated with the specified value. 
+- [DataItem](dataitem)  :  Represents data item. 
+- [DataItemType](dataitemtype)  :  Represents data item type. 
 - [DataSorter](datasorter)  :  Summary description for DataSorter. 
 - [DataSorterKey](datasorterkey)  :  Represents the key of the data sorter.  
-- [DataSource](datasource)  :   
-- [DataSourceType](datasourcetype)  :   
+- [DataSource](datasource)  :  Represents data source. 
+- [DataSourceType](datasourcetype)  :  Represents data source type. 
 - [DateTimeGroupItem](datetimegroupitem)  :  Represents the datetime's group setting. 
-- [DeduplicationRegion](deduplicationregion)  :   
+- [DeduplicationRegion](deduplicationregion)  :  Represents data deduplication region. 
 - [DynamicFilter](dynamicfilter)  :             Represents the dynamic filter.            
-- [FileInfo](fileinfo)  :  File Information 
+- [FileInfo](fileinfo)  :  Represents file information. 
 - [FileSource](filesource)  :   
 - [FileSourceType](filesourcetype)  :   
 - [FilesResult](filesresult)  :   
@@ -89,21 +90,20 @@ weight: 50
 - [Ranges](ranges)  :             Encapsulates a collection of  objects.            
 - [Row](row)  :  Represents a single row in a worksheet. 
 - [Rows](rows)  :  Collects the  objects that represent the individual rows in a worksheet. 
-- [SaveResult](saveresult)  :   
+- [SaveResult](saveresult)  :  Represents save result. 
 - [PaginatedSaveOptions](paginatedsaveoptions)  :  Represents the options for pagination. 
-- [SingleValue](singlevalue)  :   
-- [SortKey](sortkey)  :   
-- [SplitResult](splitresult)  :   
-- [SplitResultDocument](splitresultdocument)  :   
+- [SingleValue](singlevalue)  :  Represents single value. 
+- [SortKey](sortkey)  :  Represents sort key. 
+- [SplitResult](splitresult)  :  Represents the result of the file split. 
 - [Style](style)  :             Represents display style of excel document,such as font,color,alignment,border,etc.            The Style object contains all style attributes (font, number format, alignment, and so on) as properties.            
-- [StyleFormatCondition](styleformatcondition)  :   
-- [Styles](styles)  :   
-- [TextFormatCondition](textformatcondition)  :   
-- [TextItem](textitem)  :   
-- [TextItems](textitems)  :   
+- [StyleFormatCondition](styleformatcondition)  :  Represents style format condition. 
+- [Styles](styles)  :  Represents data style collection. 
+- [TextFormatCondition](textformatcondition)  :  Represents text format condition. 
+- [TextItem](textitem)  :  Represents text item. 
+- [TextItems](textitems)  :  Represents text item collection. 
 - [TextOptions](textoptions)  :  Represents the text options. 
 - [ThemeColor](themecolor)  :             Represents a theme color.            
-- [TimePeriodFormatCondition](timeperiodformatcondition)  :   
+- [TimePeriodFormatCondition](timeperiodformatcondition)  :  Represents time period format condition. 
 - [Top10](top10)  :  Describe the Top10 conditional formatting rule. This conditional formatting    rule highlights cells whose values fall in the top N or bottom N bracket,    as specified. 
 - [Top10Filter](top10filter)  :             Represents the top 10 filter.            
 - [Validation](validation)  :  Represents data validation.settings. 
@@ -312,8 +312,10 @@ weight: 50
 - [ImageOrPrintOptions](imageorprintoptions)  :  Allows to specify options when rendering worksheet to images, printing worksheet or rendering chart to image. 
 - [RenderingFont](renderingfont)  :  Font for rendering. 
 - [RenderingWatermark](renderingwatermark)  :  Watermark for rendering. 
+- [JoinType](jointype)  :   
 - [LoadData](loaddata)  :  Loading data information. 
 - [LoadTo](loadto)  :   
+- [MergeQueries](mergequeries)  :  Represents merge quesies. 
 - [PivotColumn](pivotcolumn)  :   
 - [QueryDataSource](querydatasource)  :   
 - [QueryDataSourceDataType](querydatasourcedatatype)  :   
@@ -397,7 +399,7 @@ weight: 50
 - [Legend](legend)  :  Encapsulates the object that represents the chart legend. 
 - [LegendEntries](legendentries)  :   
 - [LegendEntry](legendentry)  :  Represents a legend entry in a chart legend. 
-- [Marker](marker)  :  Represents the marker in a line chart, scatter chart, or radar chart. 
+- [Marker](marker)  :             Represents the marker in a line chart, scatter chart, or radar chart.            
 - [PlotArea](plotarea)  :  Encapsulates the object that represents the plot area in a chart. 
 - [Series](series)  :  Encapsulates the object that represents a single data series in a chart. 
 - [SeriesItems](seriesitems)  :   

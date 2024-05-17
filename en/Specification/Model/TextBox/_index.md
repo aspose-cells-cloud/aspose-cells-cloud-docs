@@ -4,6 +4,7 @@ second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/model/textbox/
 description: "Aspose.Cells Cloud model specification : TextBox. Effortlessly handle Excel and other spreadsheet documents with features like opening, generating, editing, splitting, merging, comparing, and converting."
+kwords: Excel, Office, Spreadsheet, Cloud REST API, TextBox
 weight: 50
 ---
 
@@ -51,5 +52,5 @@ Encapsulates the object that represents a textbox in a spreadsheet.
 | Hyperlink | String | True |  False |  |  |  
 | link | Class:Link | True |  False |  |  |  
 
-**Parent Name** : [Shape](shape)
+**Parent Name** : [Shape](/specification/model/shape)
 

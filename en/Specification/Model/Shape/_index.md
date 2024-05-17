@@ -4,6 +4,7 @@ second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/model/shape/
 description: "Aspose.Cells Cloud model specification : Shape. Effortlessly handle Excel and other spreadsheet documents with features like opening, generating, editing, splitting, merging, comparing, and converting."
+kwords: Excel, Office, Spreadsheet, Cloud REST API, Shape
 weight: 50
 ---
 
@@ -51,7 +52,7 @@ Represents the msodrawing object.
 | Hyperlink | String | True |  False |  | Gets the hyperlink of the shape. |  
 | link | Class:Link | True |  False |  |  |  
 
-**Parent Name** : [LinkElement](linkelement)
+**Parent Name** : [LinkElement](/specification/model/linkelement)
 
 **Children Name** : 
 	-  [ArcShape](arcshape) 

@@ -3,17 +3,18 @@ title: "PostChartCategoryAxis"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postchartcategoryaxis/
-description: "Update chart category axis in the chart."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostChartCategoryAxis
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostChartCategoryAxis" >}}
-{{< blocks/products/cells/docs-title titlemsg="Update chart category axis in the chart." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/categoryaxis,POST,Update chart category axis in the chart.,<a href='https://apireference.aspose.cloud/cells/#/Charts/PostChartCategoryAxis'>PostChartCategoryAxis</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/categoryaxis,POST,,<a href='https://apireference.aspose.cloud/cells/#/Charts/PostChartCategoryAxis'>PostChartCategoryAxis</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

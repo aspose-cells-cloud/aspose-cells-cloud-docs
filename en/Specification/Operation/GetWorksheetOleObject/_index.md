@@ -3,17 +3,18 @@ title: "GetWorksheetOleObject"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/getworksheetoleobject/
-description: "Retrieve the OLE object in a specified format in the worksheet."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, GetWorksheetOleObject
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetOleObject" >}}
-{{< blocks/products/cells/docs-title titlemsg="Retrieve the OLE object in a specified format in the worksheet." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/oleobjects/{objectNumber},GET,Retrieve the OLE object in a specified format in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/OleObjects/GetWorksheetOleObject'>GetWorksheetOleObject</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/oleobjects/{objectNumber},GET,,<a href='https://apireference.aspose.cloud/cells/#/OleObjects/GetWorksheetOleObject'>GetWorksheetOleObject</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

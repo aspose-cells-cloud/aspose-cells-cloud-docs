@@ -3,17 +3,18 @@ title: "PostWorksheetCellsRangeMerge"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postworksheetcellsrangemerge/
-description: "Merge a range of cells into a single cell."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostWorksheetCellsRangeMerge
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangeMerge" >}}
-{{< blocks/products/cells/docs-title titlemsg="Merge a range of cells into a single cell." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges/merge,POST,Merge a range of cells into a single cell.,<a href='https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeMerge'>PostWorksheetCellsRangeMerge</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges/merge,POST,,<a href='https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeMerge'>PostWorksheetCellsRangeMerge</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

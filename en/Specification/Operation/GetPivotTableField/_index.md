@@ -3,17 +3,18 @@ title: "GetPivotTableField"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/getpivottablefield/
-description: "Retrieve descriptions of pivot fields in the PivotTable."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, GetPivotTableField
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="GetPivotTableField" >}}
-{{< blocks/products/cells/docs-title titlemsg="Retrieve descriptions of pivot fields in the PivotTable." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotField,GET,Retrieve descriptions of pivot fields in the PivotTable.,<a href='https://apireference.aspose.cloud/cells/#/PivotTables/GetPivotTableField'>GetPivotTableField</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotField,GET,,<a href='https://apireference.aspose.cloud/cells/#/PivotTables/GetPivotTableField'>GetPivotTableField</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

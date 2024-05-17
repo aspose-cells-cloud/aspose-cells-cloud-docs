@@ -3,17 +3,18 @@ title: "GetPageSetup"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/getpagesetup/
-description: "Retrieve page setup description in the worksheet."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, GetPageSetup
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="GetPageSetup" >}}
-{{< blocks/products/cells/docs-title titlemsg="Retrieve page setup description in the worksheet." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pagesetup,GET,Retrieve page setup description in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/PageSetup/GetPageSetup'>GetPageSetup</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pagesetup,GET,,<a href='https://apireference.aspose.cloud/cells/#/PageSetup/GetPageSetup'>GetPageSetup</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

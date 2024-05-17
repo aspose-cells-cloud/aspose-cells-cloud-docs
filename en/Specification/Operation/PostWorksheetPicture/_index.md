@@ -3,17 +3,18 @@ title: "PostWorksheetPicture"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postworksheetpicture/
-description: "Update a picture by index in the worksheet."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostWorksheetPicture
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetPicture" >}}
-{{< blocks/products/cells/docs-title titlemsg="Update a picture by index in the worksheet." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex},POST,Update a picture by index in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/Pictures/PostWorksheetPicture'>PostWorksheetPicture</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex},POST,,<a href='https://apireference.aspose.cloud/cells/#/Pictures/PostWorksheetPicture'>PostWorksheetPicture</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

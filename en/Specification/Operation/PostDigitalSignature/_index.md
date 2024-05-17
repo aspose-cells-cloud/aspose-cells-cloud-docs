@@ -3,17 +3,18 @@ title: "PostDigitalSignature"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postdigitalsignature/
-description: "Excel file digital signature."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostDigitalSignature
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostDigitalSignature" >}}
-{{< blocks/products/cells/docs-title titlemsg="Excel file digital signature." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/digitalsignature,POST,Excel file digital signature.,<a href='https://apireference.aspose.cloud/cells/#/Protection/PostDigitalSignature'>PostDigitalSignature</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/digitalsignature,POST,,<a href='https://apireference.aspose.cloud/cells/#/Protection/PostDigitalSignature'>PostDigitalSignature</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

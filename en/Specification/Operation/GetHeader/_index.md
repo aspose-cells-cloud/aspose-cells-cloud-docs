@@ -3,17 +3,18 @@ title: "GetHeader"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/getheader/
-description: "Retrieve page header description in the worksheet."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, GetHeader
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="GetHeader" >}}
-{{< blocks/products/cells/docs-title titlemsg="Retrieve page header description in the worksheet." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pagesetup/header,GET,Retrieve page header description in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/PageSetup/GetHeader'>GetHeader</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pagesetup/header,GET,,<a href='https://apireference.aspose.cloud/cells/#/PageSetup/GetHeader'>GetHeader</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

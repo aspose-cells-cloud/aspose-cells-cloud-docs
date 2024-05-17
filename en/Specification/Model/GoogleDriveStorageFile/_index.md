@@ -4,6 +4,7 @@ second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/model/googledrivestoragefile/
 description: "Aspose.Cells Cloud model specification : GoogleDriveStorageFile. Effortlessly handle Excel and other spreadsheet documents with features like opening, generating, editing, splitting, merging, comparing, and converting."
+kwords: Excel, Office, Spreadsheet, Cloud REST API, GoogleDriveStorageFile
 weight: 50
 ---
 
@@ -20,5 +21,5 @@ weight: 50
 | Size | Long | True |  False |  |  |  
 | Path | String | True |  False |  |  |  
 
-**Parent Name** : [StorageFile](storagefile)
+**Parent Name** : [StorageFile](/specification/model/storagefile)
 

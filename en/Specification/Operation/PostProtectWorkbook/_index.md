@@ -3,17 +3,18 @@ title: "PostProtectWorkbook"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postprotectworkbook/
-description: "Excel protection."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostProtectWorkbook
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostProtectWorkbook" >}}
-{{< blocks/products/cells/docs-title titlemsg="Excel protection." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/protection,POST,Excel protection.,<a href='https://apireference.aspose.cloud/cells/#/Protection/PostProtectWorkbook'>PostProtectWorkbook</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/protection,POST,,<a href='https://apireference.aspose.cloud/cells/#/Protection/PostProtectWorkbook'>PostProtectWorkbook</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

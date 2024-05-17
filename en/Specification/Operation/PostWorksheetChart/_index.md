@@ -3,17 +3,18 @@ title: "PostWorksheetChart"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postworksheetchart/
-description: "Update chart properties in the worksheet."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostWorksheetChart
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetChart" >}}
-{{< blocks/products/cells/docs-title titlemsg="Update chart properties in the worksheet." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/charts/{chartIndex},POST,Update chart properties in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/Charts/PostWorksheetChart'>PostWorksheetChart</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/charts/{chartIndex},POST,,<a href='https://apireference.aspose.cloud/cells/#/Charts/PostWorksheetChart'>PostWorksheetChart</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

@@ -3,17 +3,18 @@ title: "PostWorksheetListObjectSummarizeWithPivotTable"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postworksheetlistobjectsummarizewithpivottable/
-description: "Create a pivot table with a list object in the worksheet."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostWorksheetListObjectSummarizeWithPivotTable
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetListObjectSummarizeWithPivotTable" >}}
-{{< blocks/products/cells/docs-title titlemsg="Create a pivot table with a list object in the worksheet." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/SummarizeWithPivotTable,POST,Create a pivot table with a list object in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObjectSummarizeWithPivotTable'>PostWorksheetListObjectSummarizeWithPivotTable</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/SummarizeWithPivotTable,POST,,<a href='https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObjectSummarizeWithPivotTable'>PostWorksheetListObjectSummarizeWithPivotTable</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

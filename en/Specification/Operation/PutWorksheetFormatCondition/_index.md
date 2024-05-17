@@ -3,17 +3,18 @@ title: "PutWorksheetFormatCondition"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/putworksheetformatcondition/
-description: "Add a format condition in the worksheet."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PutWorksheetFormatCondition
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetFormatCondition" >}}
-{{< blocks/products/cells/docs-title titlemsg="Add a format condition in the worksheet." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index},PUT,Add a format condition in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/ConditionalFormattings/PutWorksheetFormatCondition'>PutWorksheetFormatCondition</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index},PUT,,<a href='https://apireference.aspose.cloud/cells/#/ConditionalFormattings/PutWorksheetFormatCondition'>PutWorksheetFormatCondition</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

@@ -3,17 +3,18 @@ title: "PutWorksheetPivotTable"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/putworksheetpivottable/
-description: "Add a PivotTable in the worksheet."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PutWorksheetPivotTable
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetPivotTable" >}}
-{{< blocks/products/cells/docs-title titlemsg="Add a PivotTable in the worksheet." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pivottables,PUT,Add a PivotTable in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/PivotTables/PutWorksheetPivotTable'>PutWorksheetPivotTable</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pivottables,PUT,,<a href='https://apireference.aspose.cloud/cells/#/PivotTables/PutWorksheetPivotTable'>PutWorksheetPivotTable</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

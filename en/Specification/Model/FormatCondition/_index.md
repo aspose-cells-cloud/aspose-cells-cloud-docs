@@ -4,6 +4,7 @@ second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/model/formatcondition/
 description: "Aspose.Cells Cloud model specification : FormatCondition. Effortlessly handle Excel and other spreadsheet documents with features like opening, generating, editing, splitting, merging, comparing, and converting."
+kwords: Excel, Office, Spreadsheet, Cloud REST API, FormatCondition
 weight: 50
 ---
 
@@ -29,7 +30,7 @@ Represents conditional formatting condition.
 | Top10 | Class:Top10 | True |  False |  | Get the conditional formatting's "Top10" instance.                        The default instance's rule highlights cells whose                        values fall in the top 10 bracket.                        Valid only for type is Top10. |  
 | link | Class:Link | True |  False |  |  |  
 
-**Parent Name** : [LinkElement](linkelement)
+**Parent Name** : [LinkElement](/specification/model/linkelement)
 
 **Children Name** : 
 	-  [StyleFormatCondition](styleformatcondition) 

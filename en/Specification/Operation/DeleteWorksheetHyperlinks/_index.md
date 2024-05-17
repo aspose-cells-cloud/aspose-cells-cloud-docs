@@ -3,17 +3,18 @@ title: "DeleteWorksheetHyperlinks"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/deleteworksheethyperlinks/
-description: "Delete all hyperlinks in the worksheet."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, DeleteWorksheetHyperlinks
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetHyperlinks" >}}
-{{< blocks/products/cells/docs-title titlemsg="Delete all hyperlinks in the worksheet." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/hyperlinks,DELETE,Delete all hyperlinks in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/Hypelinks/DeleteWorksheetHyperlinks'>DeleteWorksheetHyperlinks</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/hyperlinks,DELETE,,<a href='https://apireference.aspose.cloud/cells/#/Hypelinks/DeleteWorksheetHyperlinks'>DeleteWorksheetHyperlinks</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

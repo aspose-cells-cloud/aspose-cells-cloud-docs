@@ -4,6 +4,7 @@ second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/model/loaddata/
 description: "Aspose.Cells Cloud model specification : LoadData. Effortlessly handle Excel and other spreadsheet documents with features like opening, generating, editing, splitting, merging, comparing, and converting."
+kwords: Excel, Office, Spreadsheet, Cloud REST API, LoadData
 weight: 50
 ---
 
@@ -17,4 +18,5 @@ Loading data information.
 | DataSource | Class:DataSource | True |  False |  | Indicates the source of the mount data. |  
 | FileInfo | Class:FileInfo | True |  False |  | When data souce is request files, FileInfo store the contents of the file. |  
 | DataItem | Class:DataItem | True |  False |  | The specific data object type and name. |  
+| MergeQueries | Class:MergeQueries | True |  False |  |  |  
 

@@ -3,17 +3,18 @@ title: "PostWorkbookImportJson"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postworkbookimportjson/
-description: "Import a JSON data file into the workbook. The JSON data file can either be a cloud file or data from an HTTP URI."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostWorkbookImportJson
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookImportJson" >}}
-{{< blocks/products/cells/docs-title titlemsg="Import a JSON data file into the workbook. The JSON data file can either be a cloud file or data from an HTTP URI." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/importjson,POST,Import a JSON data file into the workbook. The JSON data file can either be a cloud file or data from an HTTP URI.,<a href='https://apireference.aspose.cloud/cells/#/DataProcessing/PostWorkbookImportJson'>PostWorkbookImportJson</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/importjson,POST,,<a href='https://apireference.aspose.cloud/cells/#/DataProcessing/PostWorkbookImportJson'>PostWorkbookImportJson</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

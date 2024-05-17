@@ -3,17 +3,18 @@ title: "PostSetCellHtmlString"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postsetcellhtmlstring/
-description: "Set the HTML string containing data and specific formats in this cell."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostSetCellHtmlString
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostSetCellHtmlString" >}}
-{{< blocks/products/cells/docs-title titlemsg="Set the HTML string containing data and specific formats in this cell." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells/{cellName}/htmlstring,POST,Set the HTML string containing data and specific formats in this cell.,<a href='https://apireference.aspose.cloud/cells/#/Cells/PostSetCellHtmlString'>PostSetCellHtmlString</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells/{cellName}/htmlstring,POST,,<a href='https://apireference.aspose.cloud/cells/#/Cells/PostSetCellHtmlString'>PostSetCellHtmlString</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

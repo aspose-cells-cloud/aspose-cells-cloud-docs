@@ -3,17 +3,18 @@ title: "PutWorksheetPivotTableFilter"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/putworksheetpivottablefilter/
-description: "Add a pivot filter to the PivotTable."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PutWorksheetPivotTableFilter
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetPivotTableFilter" >}}
-{{< blocks/products/cells/docs-title titlemsg="Add a pivot filter to the PivotTable." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotFilters,PUT,Add a pivot filter to the PivotTable.,<a href='https://apireference.aspose.cloud/cells/#/PivotTables/PutWorksheetPivotTableFilter'>PutWorksheetPivotTableFilter</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotFilters,PUT,,<a href='https://apireference.aspose.cloud/cells/#/PivotTables/PutWorksheetPivotTableFilter'>PutWorksheetPivotTableFilter</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

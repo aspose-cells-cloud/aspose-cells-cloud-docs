@@ -3,17 +3,18 @@ title: "PostUpdateWorksheetOleObject"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postupdateworksheetoleobject/
-description: "Update an OLE object in worksheet."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostUpdateWorksheetOleObject
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostUpdateWorksheetOleObject" >}}
-{{< blocks/products/cells/docs-title titlemsg="Update an OLE object in worksheet." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/oleobjects/{oleObjectIndex},POST,Update an OLE object in worksheet.,<a href='https://apireference.aspose.cloud/cells/#/OleObjects/PostUpdateWorksheetOleObject'>PostUpdateWorksheetOleObject</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/oleobjects/{oleObjectIndex},POST,,<a href='https://apireference.aspose.cloud/cells/#/OleObjects/PostUpdateWorksheetOleObject'>PostUpdateWorksheetOleObject</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

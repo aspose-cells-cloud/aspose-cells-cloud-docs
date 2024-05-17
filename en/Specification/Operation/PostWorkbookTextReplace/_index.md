@@ -3,17 +3,18 @@ title: "PostWorkbookTextReplace"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postworkbooktextreplace/
-description: "Replace text in the workbook."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostWorkbookTextReplace
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookTextReplace" >}}
-{{< blocks/products/cells/docs-title titlemsg="Replace text in the workbook." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/replaceText,POST,Replace text in the workbook.,<a href='https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookTextReplace'>PostWorkbookTextReplace</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/replaceText,POST,,<a href='https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookTextReplace'>PostWorkbookTextReplace</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

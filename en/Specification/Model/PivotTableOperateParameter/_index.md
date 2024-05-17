@@ -4,6 +4,7 @@ second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/model/pivottableoperateparameter/
 description: "Aspose.Cells Cloud model specification : PivotTableOperateParameter. Effortlessly handle Excel and other spreadsheet documents with features like opening, generating, editing, splitting, merging, comparing, and converting."
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PivotTableOperateParameter
 weight: 50
 ---
 
@@ -23,5 +24,5 @@ Represents pivot table operate parameter.
 | PivotFieldData | Array<Integer> | True |  False |  | Represents pivot data field. |  
 | OperateType | String | True |  False |  |  |  
 
-**Parent Name** : [OperateParameter](operateparameter)
+**Parent Name** : [OperateParameter](/specification/model/operateparameter)
 

@@ -3,17 +3,18 @@ title: "GetChartAreaFillFormat"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/getchartareafillformat/
-description: "Retrieve chart area fill format description in the worksheet."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, GetChartAreaFillFormat
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="GetChartAreaFillFormat" >}}
-{{< blocks/products/cells/docs-title titlemsg="Retrieve chart area fill format description in the worksheet." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/chartArea/fillFormat,GET,Retrieve chart area fill format description in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/ChartArea/GetChartAreaFillFormat'>GetChartAreaFillFormat</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/chartArea/fillFormat,GET,,<a href='https://apireference.aspose.cloud/cells/#/ChartArea/GetChartAreaFillFormat'>GetChartAreaFillFormat</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

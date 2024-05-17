@@ -3,17 +3,18 @@ title: "PostWorkbookSaveAs"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postworkbooksaveas/
-description: "Save an Excel file in various formats."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostWorkbookSaveAs
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookSaveAs" >}}
-{{< blocks/products/cells/docs-title titlemsg="Save an Excel file in various formats." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/SaveAs,POST,Save an Excel file in various formats.,<a href='https://apireference.aspose.cloud/cells/#/Conversion/PostWorkbookSaveAs'>PostWorkbookSaveAs</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/SaveAs,POST,,<a href='https://apireference.aspose.cloud/cells/#/Conversion/PostWorkbookSaveAs'>PostWorkbookSaveAs</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

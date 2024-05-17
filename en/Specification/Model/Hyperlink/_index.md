@@ -4,6 +4,7 @@ second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/model/hyperlink/
 description: "Aspose.Cells Cloud model specification : Hyperlink. Effortlessly handle Excel and other spreadsheet documents with features like opening, generating, editing, splitting, merging, comparing, and converting."
+kwords: Excel, Office, Spreadsheet, Cloud REST API, Hyperlink
 weight: 50
 ---
 
@@ -20,5 +21,5 @@ Encapsulates the object that represents a hyperlink.
 | LinkType | String | True |  False |  | Gets the link type. |  
 | link | Class:Link | True |  False |  |  |  
 
-**Parent Name** : [LinkElement](linkelement)
+**Parent Name** : [LinkElement](/specification/model/linkelement)
 

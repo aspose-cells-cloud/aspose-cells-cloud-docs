@@ -3,17 +3,18 @@ title: "PostFitTallToPages"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postfittalltopages/
-description: "Set the scale at which the page will fit tall when printed on the sheet."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostFitTallToPages
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostFitTallToPages" >}}
-{{< blocks/products/cells/docs-title titlemsg="Set the scale at which the page will fit tall when printed on the sheet." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pagesetup/fittalltopages,POST,Set the scale at which the page will fit tall when printed on the sheet.,<a href='https://apireference.aspose.cloud/cells/#/PageSetup/PostFitTallToPages'>PostFitTallToPages</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pagesetup/fittalltopages,POST,,<a href='https://apireference.aspose.cloud/cells/#/PageSetup/PostFitTallToPages'>PostFitTallToPages</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

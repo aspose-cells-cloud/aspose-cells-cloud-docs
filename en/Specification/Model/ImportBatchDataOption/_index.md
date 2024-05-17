@@ -4,6 +4,7 @@ second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/model/importbatchdataoption/
 description: "Aspose.Cells Cloud model specification : ImportBatchDataOption. Effortlessly handle Excel and other spreadsheet documents with features like opening, generating, editing, splitting, merging, comparing, and converting."
+kwords: Excel, Office, Spreadsheet, Cloud REST API, ImportBatchDataOption
 weight: 50
 ---
 
@@ -20,5 +21,5 @@ weight: 50
 | DataSource | Class:DataSource | True |  False |  |  |  
 | Source | Class:FileSource | True |  False |  |  |  
 
-**Parent Name** : [ImportOption](importoption)
+**Parent Name** : [ImportOption](/specification/model/importoption)
 

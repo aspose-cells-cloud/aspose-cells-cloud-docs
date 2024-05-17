@@ -3,17 +3,18 @@ title: "GetCellsCloudServicesHealthCheck"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/getcellscloudserviceshealthcheck/
-description: "Retrieve cell descriptions in a specified format."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, GetCellsCloudServicesHealthCheck
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="GetCellsCloudServicesHealthCheck" >}}
-{{< blocks/products/cells/docs-title titlemsg="Retrieve cell descriptions in a specified format." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells,GET,Retrieve cell descriptions in a specified format.,<a href='https://apireference.aspose.cloud/cells/#/CellsStatus/GetCellsCloudServicesHealthCheck'>GetCellsCloudServicesHealthCheck</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells,GET,,<a href='https://apireference.aspose.cloud/cells/#/CellsStatus/GetCellsCloudServicesHealthCheck'>GetCellsCloudServicesHealthCheck</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

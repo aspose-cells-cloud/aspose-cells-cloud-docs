@@ -3,17 +3,18 @@ title: "PostWatermark"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postwatermark/
-description: "Add Text Watermark to Excel files and generate output files in various formats."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostWatermark
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostWatermark" >}}
-{{< blocks/products/cells/docs-title titlemsg="Add Text Watermark to Excel files and generate output files in various formats." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/watermark,POST,Add Text Watermark to Excel files and generate output files in various formats.,<a href='https://apireference.aspose.cloud/cells/#/LightCells/PostWatermark'>PostWatermark</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/watermark,POST,,<a href='https://apireference.aspose.cloud/cells/#/LightCells/PostWatermark'>PostWatermark</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

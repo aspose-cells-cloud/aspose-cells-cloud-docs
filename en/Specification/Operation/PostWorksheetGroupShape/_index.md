@@ -3,17 +3,18 @@ title: "PostWorksheetGroupShape"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postworksheetgroupshape/
-description: "Group shapes in the worksheet."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostWorksheetGroupShape
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetGroupShape" >}}
-{{< blocks/products/cells/docs-title titlemsg="Group shapes in the worksheet." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/shapes/group,POST,Group shapes in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/Shapes/PostWorksheetGroupShape'>PostWorksheetGroupShape</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/shapes/group,POST,,<a href='https://apireference.aspose.cloud/cells/#/Shapes/PostWorksheetGroupShape'>PostWorksheetGroupShape</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

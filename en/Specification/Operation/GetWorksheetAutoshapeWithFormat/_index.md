@@ -3,17 +3,18 @@ title: "GetWorksheetAutoshapeWithFormat"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/getworksheetautoshapewithformat/
-description: "Get autoshape description in some format."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, GetWorksheetAutoshapeWithFormat
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetAutoshapeWithFormat" >}}
-{{< blocks/products/cells/docs-title titlemsg="Get autoshape description in some format." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/autoshapes/{autoshapeNumber},GET,Get autoshape description in some format.,<a href='https://apireference.aspose.cloud/cells/#/Autoshapes/GetWorksheetAutoshapeWithFormat'>GetWorksheetAutoshapeWithFormat</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/autoshapes/{autoshapeNumber},GET,,<a href='https://apireference.aspose.cloud/cells/#/Autoshapes/GetWorksheetAutoshapeWithFormat'>GetWorksheetAutoshapeWithFormat</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

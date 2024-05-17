@@ -4,6 +4,7 @@ second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/model/textoptions/
 description: "Aspose.Cells Cloud model specification : TextOptions. Effortlessly handle Excel and other spreadsheet documents with features like opening, generating, editing, splitting, merging, comparing, and converting."
+kwords: Excel, Office, Spreadsheet, Cloud REST API, TextOptions
 weight: 50
 ---
 
@@ -13,12 +14,12 @@ Represents the text options.
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description | 
 | :- | :- | :- |:- |  :- | :- |
-| Fill | Class:FillFormat | True |  False |  |  |  
-| Kerning | Floating | True |  False |  |  |  
-| Outline | Class:LineFormat | True |  False |  |  |  
-| Shadow | Class:ShadowEffect | True |  False |  |  |  
-| Spacing | Floating | True |  False |  |  |  
-| UnderlineColor | Class:CellsColor | True |  False |  |  |  
+| Fill | Class:FillFormat | True |  False |  | Represents fill format. |  
+| Kerning | Floating | True |  False |  | Represents kerning. |  
+| Outline | Class:LineFormat | True |  False |  | Represents outline format. |  
+| Shadow | Class:ShadowEffect | True |  False |  | Represents shadow effect. |  
+| Spacing | Floating | True |  False |  | Represents spacing. |  
+| UnderlineColor | Class:CellsColor | True |  False |  | Represents under line color. |  
 | Color | Class:Color | True |  False |  |  |  
 | DoubleSize | Floating | True |  False |  |  |  
 | IsBold | Boolean | True |  False |  |  |  
@@ -30,5 +31,5 @@ Represents the text options.
 | Size | Integer | True |  False |  |  |  
 | Underline | String | True |  False |  |  |  
 
-**Parent Name** : [Font](font)
+**Parent Name** : [Font](/specification/model/font)
 

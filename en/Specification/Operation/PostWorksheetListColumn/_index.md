@@ -3,17 +3,18 @@ title: "PostWorksheetListColumn"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postworksheetlistcolumn/
-description: "Update list column in list object."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostWorksheetListColumn
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetListColumn" >}}
-{{< blocks/products/cells/docs-title titlemsg="Update list column in list object." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/listcolumns/{columnIndex},POST,Update list column in list object.,<a href='https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListColumn'>PostWorksheetListColumn</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/listcolumns/{columnIndex},POST,,<a href='https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListColumn'>PostWorksheetListColumn</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

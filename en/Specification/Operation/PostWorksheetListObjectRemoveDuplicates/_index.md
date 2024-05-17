@@ -3,17 +3,18 @@ title: "PostWorksheetListObjectRemoveDuplicates"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postworksheetlistobjectremoveduplicates/
-description: "Remove duplicates in list object."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostWorksheetListObjectRemoveDuplicates
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetListObjectRemoveDuplicates" >}}
-{{< blocks/products/cells/docs-title titlemsg="Remove duplicates in list object." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/RemoveDuplicates,POST,Remove duplicates in list object.,<a href='https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObjectRemoveDuplicates'>PostWorksheetListObjectRemoveDuplicates</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/RemoveDuplicates,POST,,<a href='https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObjectRemoveDuplicates'>PostWorksheetListObjectRemoveDuplicates</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

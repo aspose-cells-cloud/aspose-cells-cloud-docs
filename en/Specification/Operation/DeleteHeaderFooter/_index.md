@@ -3,17 +3,18 @@ title: "DeleteHeaderFooter"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/deleteheaderfooter/
-description: "Clear header and footer in the worksheet."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, DeleteHeaderFooter
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="DeleteHeaderFooter" >}}
-{{< blocks/products/cells/docs-title titlemsg="Clear header and footer in the worksheet." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pagesetup/clearheaderfooter,DELETE,Clear header and footer in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/PageSetup/DeleteHeaderFooter'>DeleteHeaderFooter</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pagesetup/clearheaderfooter,DELETE,,<a href='https://apireference.aspose.cloud/cells/#/PageSetup/DeleteHeaderFooter'>DeleteHeaderFooter</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

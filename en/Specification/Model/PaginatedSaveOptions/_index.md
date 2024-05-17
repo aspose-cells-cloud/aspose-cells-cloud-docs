@@ -4,6 +4,7 @@ second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/model/paginatedsaveoptions/
 description: "Aspose.Cells Cloud model specification : PaginatedSaveOptions. Effortlessly handle Excel and other spreadsheet documents with features like opening, generating, editing, splitting, merging, comparing, and converting."
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PaginatedSaveOptions
 weight: 50
 ---
 
@@ -40,7 +41,7 @@ Represents the options for pagination.
 | SortNames | Boolean | True |  False |  |  |  
 | ValidateMergedAreas | Boolean | True |  False |  |  |  
 
-**Parent Name** : [SaveOptions](saveoptions)
+**Parent Name** : [SaveOptions](/specification/model/saveoptions)
 
 **Children Name** : 
 	-  [DocxSaveOptions](docxsaveoptions) 

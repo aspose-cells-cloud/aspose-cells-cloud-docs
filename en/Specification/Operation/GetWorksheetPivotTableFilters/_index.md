@@ -3,17 +3,18 @@ title: "GetWorksheetPivotTableFilters"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/getworksheetpivottablefilters/
-description: "Gets PivotTable filters in worksheet."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, GetWorksheetPivotTableFilters
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetPivotTableFilters" >}}
-{{< blocks/products/cells/docs-title titlemsg="Gets PivotTable filters in worksheet." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotFilters,GET,Gets PivotTable filters in worksheet.,<a href='https://apireference.aspose.cloud/cells/#/PivotTables/GetWorksheetPivotTableFilters'>GetWorksheetPivotTableFilters</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotFilters,GET,,<a href='https://apireference.aspose.cloud/cells/#/PivotTables/GetWorksheetPivotTableFilters'>GetWorksheetPivotTableFilters</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

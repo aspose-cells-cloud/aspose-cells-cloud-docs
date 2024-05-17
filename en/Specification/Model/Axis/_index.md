@@ -4,6 +4,7 @@ second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/model/axis/
 description: "Aspose.Cells Cloud model specification : Axis. Effortlessly handle Excel and other spreadsheet documents with features like opening, generating, editing, splitting, merging, comparing, and converting."
+kwords: Excel, Office, Spreadsheet, Cloud REST API, Axis
 weight: 50
 ---
 
@@ -21,7 +22,7 @@ Encapsulates the object that represents an axis of chart.
 | CrossAt | Floating | True |  False |  | Represents the point on the value axis where the category axis crosses it. |  
 | CrossType | String | True |  False |  | Represents the  on the specified axis where the other axis crosses. |  
 | DisplayUnit | String | True |  False |  | Represents the unit label for the specified axis. |  
-| DisplayUnitLabel | Class:LinkElement | True |  False |  | Represents a unit label on an axis in the specified chart.                         Unit labels are useful for charting large values— for example, in the millions or billions. |  
+| DisplayUnitLabel | Class:DisplayUnitLabel | True |  False |  | Represents a unit label on an axis in the specified chart.                         Unit labels are useful for charting large values— for example, in the millions or billions. |  
 | HasMultiLevelLabels | Boolean | True |  False |  | Indicates whether the labels shall be shown as multi level. |  
 | IsAutomaticMajorUnit | Boolean | True |  False |  | Indicates whether the major unit of the axis is automatically assigned. |  
 | IsAutomaticMaxValue | Boolean | True |  False |  | Indicates whether the max value is automatically assigned. |  
@@ -49,5 +50,5 @@ Encapsulates the object that represents an axis of chart.
 | Title | Class:Title | True |  False |  | Gets the axis' title. |  
 | link | Class:Link | True |  False |  |  |  
 
-**Parent Name** : [LinkElement](linkelement)
+**Parent Name** : [LinkElement](/specification/model/linkelement)
 

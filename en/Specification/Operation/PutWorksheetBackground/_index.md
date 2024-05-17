@@ -3,17 +3,18 @@ title: "PutWorksheetBackground"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/putworksheetbackground/
-description: "Set background image in the worksheet."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PutWorksheetBackground
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetBackground" >}}
-{{< blocks/products/cells/docs-title titlemsg="Set background image in the worksheet." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/background,PUT,Set background image in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/Worksheets/PutWorksheetBackground'>PutWorksheetBackground</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/background,PUT,,<a href='https://apireference.aspose.cloud/cells/#/Worksheets/PutWorksheetBackground'>PutWorksheetBackground</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

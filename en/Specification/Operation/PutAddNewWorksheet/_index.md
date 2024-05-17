@@ -3,17 +3,18 @@ title: "PutAddNewWorksheet"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/putaddnewworksheet/
-description: "Add a new worksheet in the workbook."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PutAddNewWorksheet
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="PutAddNewWorksheet" >}}
-{{< blocks/products/cells/docs-title titlemsg="Add a new worksheet in the workbook." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName},PUT,Add a new worksheet in the workbook.,<a href='https://apireference.aspose.cloud/cells/#/Worksheets/PutAddNewWorksheet'>PutAddNewWorksheet</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName},PUT,,<a href='https://apireference.aspose.cloud/cells/#/Worksheets/PutAddNewWorksheet'>PutAddNewWorksheet</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

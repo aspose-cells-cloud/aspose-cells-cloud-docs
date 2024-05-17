@@ -4,6 +4,7 @@ second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/model/chartdatatable/
 description: "Aspose.Cells Cloud model specification : ChartDataTable. Effortlessly handle Excel and other spreadsheet documents with features like opening, generating, editing, splitting, merging, comparing, and converting."
+kwords: Excel, Office, Spreadsheet, Cloud REST API, ChartDataTable
 weight: 50
 ---
 
@@ -23,5 +24,5 @@ Represents a chart data table.
 | ShowLegendKey | Boolean | True |  False |  | True if the data label legend key is visible. |  
 | link | Class:Link | True |  False |  |  |  
 
-**Parent Name** : [LinkElement](linkelement)
+**Parent Name** : [LinkElement](/specification/model/linkelement)
 

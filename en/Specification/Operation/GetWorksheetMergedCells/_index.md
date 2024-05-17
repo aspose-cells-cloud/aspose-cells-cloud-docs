@@ -3,17 +3,18 @@ title: "GetWorksheetMergedCells"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/getworksheetmergedcells/
-description: "Get worksheet merged cells."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, GetWorksheetMergedCells
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetMergedCells" >}}
-{{< blocks/products/cells/docs-title titlemsg="Get worksheet merged cells." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/mergedCells,GET,Get worksheet merged cells.,<a href='https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetMergedCells'>GetWorksheetMergedCells</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/mergedCells,GET,,<a href='https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetMergedCells'>GetWorksheetMergedCells</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

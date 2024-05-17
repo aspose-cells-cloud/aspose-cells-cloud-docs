@@ -3,17 +3,18 @@ title: "DeleteWorksheetChart"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/deleteworksheetchart/
-description: "Delete a chart by index in the worksheet."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, DeleteWorksheetChart
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetChart" >}}
-{{< blocks/products/cells/docs-title titlemsg="Delete a chart by index in the worksheet." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/charts/{chartIndex},DELETE,Delete a chart by index in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/Charts/DeleteWorksheetChart'>DeleteWorksheetChart</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/charts/{chartIndex},DELETE,,<a href='https://apireference.aspose.cloud/cells/#/Charts/DeleteWorksheetChart'>DeleteWorksheetChart</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

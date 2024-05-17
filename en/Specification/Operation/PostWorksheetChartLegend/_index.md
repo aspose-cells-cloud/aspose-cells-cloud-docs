@@ -3,17 +3,18 @@ title: "PostWorksheetChartLegend"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postworksheetchartlegend/
-description: "Update chart legend in the worksheet."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostWorksheetChartLegend
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetChartLegend" >}}
-{{< blocks/products/cells/docs-title titlemsg="Update chart legend in the worksheet." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend,POST,Update chart legend in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/Charts/PostWorksheetChartLegend'>PostWorksheetChartLegend</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend,POST,,<a href='https://apireference.aspose.cloud/cells/#/Charts/PostWorksheetChartLegend'>PostWorksheetChartLegend</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

@@ -4,6 +4,7 @@ second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/model/autofilter/
 description: "Aspose.Cells Cloud model specification : AutoFilter. Effortlessly handle Excel and other spreadsheet documents with features like opening, generating, editing, splitting, merging, comparing, and converting."
+kwords: Excel, Office, Spreadsheet, Cloud REST API, AutoFilter
 weight: 50
 ---
 
@@ -19,5 +20,5 @@ Represents autofiltering for the specified worksheet.
 | ShowFilterButton | Boolean | True |  False |  | Indicates whether the AutoFilter button for this column is visible. |  
 | link | Class:Link | True |  False |  |  |  
 
-**Parent Name** : [LinkElement](linkelement)
+**Parent Name** : [LinkElement](/specification/model/linkelement)
 

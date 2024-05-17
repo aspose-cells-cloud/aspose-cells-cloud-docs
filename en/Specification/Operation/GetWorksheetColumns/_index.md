@@ -3,17 +3,18 @@ title: "GetWorksheetColumns"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/getworksheetcolumns/
-description: "Retrieve descriptions of worksheet columns."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, GetWorksheetColumns
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetColumns" >}}
-{{< blocks/products/cells/docs-title titlemsg="Retrieve descriptions of worksheet columns." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells/columns/,GET,Retrieve descriptions of worksheet columns.,<a href='https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetColumns'>GetWorksheetColumns</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells/columns/,GET,,<a href='https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetColumns'>GetWorksheetColumns</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

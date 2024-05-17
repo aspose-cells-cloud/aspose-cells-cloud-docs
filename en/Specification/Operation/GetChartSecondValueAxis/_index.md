@@ -3,17 +3,18 @@ title: "GetChartSecondValueAxis"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/getchartsecondvalueaxis/
-description: "Retrieve chart second value axis in the chart."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, GetChartSecondValueAxis
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="GetChartSecondValueAxis" >}}
-{{< blocks/products/cells/docs-title titlemsg="Retrieve chart second value axis in the chart." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/secondvalueaxis,GET,Retrieve chart second value axis in the chart.,<a href='https://apireference.aspose.cloud/cells/#/Charts/GetChartSecondValueAxis'>GetChartSecondValueAxis</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/secondvalueaxis,GET,,<a href='https://apireference.aspose.cloud/cells/#/Charts/GetChartSecondValueAxis'>GetChartSecondValueAxis</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

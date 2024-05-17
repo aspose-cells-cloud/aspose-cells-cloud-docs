@@ -2,6 +2,7 @@
 title: "Operations"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
+kwords: Excel, Office, Spreadsheet, Cloud REST API , Operation Description
 weight: 50
 ---
 
@@ -128,6 +129,7 @@ weight: 50
 - [PostWorkbookDataFill](postworkbookdatafill)  :  Data filling for spreadsheet files is primarily used to fill empty data in tables and ranges. 
 - [PostDataFill](postdatafill)  :  Data filling for spreadsheet files is primarily used to fill empty data in tables and ranges. 
 - [PostDeleteIncompleteRows](postdeleteincompleterows)  :  Deleting incomplete rows of spreadsheet files is mainly used to eliminate incomplete rows in tables and ranges. 
+- [PostDataTransformation](postdatatransformation)  :  Transform spreadsheet data is mainly used to pivot columns, unpivot columns. 
 - [GetWorksheetHyperlinks](getworksheethyperlinks)  :  Retrieve descriptions of hyperlinks in the worksheet. 
 - [GetWorksheetHyperlink](getworksheethyperlink)  :  Retrieve hyperlink description by index in the worksheet. 
 - [DeleteWorksheetHyperlink](deleteworksheethyperlink)  :  Delete hyperlink by index in the worksheet. 

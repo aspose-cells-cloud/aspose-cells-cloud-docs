@@ -3,17 +3,18 @@ title: "GetDocumentProperties"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/getdocumentproperties/
-description: "Retrieve descriptions of Excel file properties."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, GetDocumentProperties
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="GetDocumentProperties" >}}
-{{< blocks/products/cells/docs-title titlemsg="Retrieve descriptions of Excel file properties." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/documentproperties,GET,Retrieve descriptions of Excel file properties.,<a href='https://apireference.aspose.cloud/cells/#/Properties/GetDocumentProperties'>GetDocumentProperties</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/documentproperties,GET,,<a href='https://apireference.aspose.cloud/cells/#/Properties/GetDocumentProperties'>GetDocumentProperties</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

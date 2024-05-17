@@ -3,17 +3,18 @@ title: "PostLock"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postlock/
-description: "Lock Excel files."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostLock
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostLock" >}}
-{{< blocks/products/cells/docs-title titlemsg="Lock Excel files." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/lock,POST,Lock Excel files.,<a href='https://apireference.aspose.cloud/cells/#/Protection/PostLock'>PostLock</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/lock,POST,,<a href='https://apireference.aspose.cloud/cells/#/Protection/PostLock'>PostLock</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

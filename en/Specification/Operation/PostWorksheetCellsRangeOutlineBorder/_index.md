@@ -3,17 +3,18 @@ title: "PostWorksheetCellsRangeOutlineBorder"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postworksheetcellsrangeoutlineborder/
-description: "Apply an outline border around a range of cells."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostWorksheetCellsRangeOutlineBorder
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangeOutlineBorder" >}}
-{{< blocks/products/cells/docs-title titlemsg="Apply an outline border around a range of cells." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges/outlineBorder,POST,Apply an outline border around a range of cells.,<a href='https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeOutlineBorder'>PostWorksheetCellsRangeOutlineBorder</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges/outlineBorder,POST,,<a href='https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeOutlineBorder'>PostWorksheetCellsRangeOutlineBorder</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

@@ -3,17 +3,18 @@ title: "PostWorkbookExportXML"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postworkbookexportxml/
-description: "Export XML data from an Excel file.When there are XML Maps in an Excel file, export XML data. When there is no XML map in the Excel file, convert the Excel file to an XML file."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostWorkbookExportXML
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookExportXML" >}}
-{{< blocks/products/cells/docs-title titlemsg="Export XML data from an Excel file.When there are XML Maps in an Excel file, export XML data. When there is no XML map in the Excel file, convert the Excel file to an XML file." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/exportxml,POST,Export XML data from an Excel file.When there are XML Maps in an Excel file, export XML data. When there is no XML map in the Excel file, convert the Excel file to an XML file.,<a href='https://apireference.aspose.cloud/cells/#/DataProcessing/PostWorkbookExportXML'>PostWorkbookExportXML</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/exportxml,POST,,<a href='https://apireference.aspose.cloud/cells/#/DataProcessing/PostWorkbookExportXML'>PostWorkbookExportXML</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

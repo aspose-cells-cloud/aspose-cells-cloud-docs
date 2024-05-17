@@ -3,17 +3,18 @@ title: "PostUnlock"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postunlock/
-description: "Unlock Excel files."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostUnlock
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostUnlock" >}}
-{{< blocks/products/cells/docs-title titlemsg="Unlock Excel files." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/unlock,POST,Unlock Excel files.,<a href='https://apireference.aspose.cloud/cells/#/Protection/PostUnlock'>PostUnlock</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/unlock,POST,,<a href='https://apireference.aspose.cloud/cells/#/Protection/PostUnlock'>PostUnlock</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

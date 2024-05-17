@@ -3,17 +3,18 @@ title: "PutInsertWorksheetRows"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/putinsertworksheetrows/
-description: "Insert several new rows in the worksheet."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PutInsertWorksheetRows
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="PutInsertWorksheetRows" >}}
-{{< blocks/products/cells/docs-title titlemsg="Insert several new rows in the worksheet." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells/rows/,PUT,Insert several new rows in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/Cells/PutInsertWorksheetRows'>PutInsertWorksheetRows</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells/rows/,PUT,,<a href='https://apireference.aspose.cloud/cells/#/Cells/PutInsertWorksheetRows'>PutInsertWorksheetRows</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

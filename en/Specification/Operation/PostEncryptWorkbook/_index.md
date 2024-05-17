@@ -3,17 +3,18 @@ title: "PostEncryptWorkbook"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postencryptworkbook/
-description: "Excel Encryption."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostEncryptWorkbook
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostEncryptWorkbook" >}}
-{{< blocks/products/cells/docs-title titlemsg="Excel Encryption." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/encryption,POST,Excel Encryption.,<a href='https://apireference.aspose.cloud/cells/#/Protection/PostEncryptWorkbook'>PostEncryptWorkbook</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/encryption,POST,,<a href='https://apireference.aspose.cloud/cells/#/Protection/PostEncryptWorkbook'>PostEncryptWorkbook</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

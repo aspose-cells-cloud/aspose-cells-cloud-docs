@@ -3,17 +3,18 @@ title: "PostWorksheetCellsRangeStyle"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postworksheetcellsrangestyle/
-description: "Set the style for the specified range."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostWorksheetCellsRangeStyle
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangeStyle" >}}
-{{< blocks/products/cells/docs-title titlemsg="Set the style for the specified range." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges/style,POST,Set the style for the specified range.,<a href='https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeStyle'>PostWorksheetCellsRangeStyle</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges/style,POST,,<a href='https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeStyle'>PostWorksheetCellsRangeStyle</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

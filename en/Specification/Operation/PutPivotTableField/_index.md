@@ -3,17 +3,18 @@ title: "PutPivotTableField"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/putpivottablefield/
-description: "Add a pivot field in the PivotTable."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PutPivotTableField
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="PutPivotTableField" >}}
-{{< blocks/products/cells/docs-title titlemsg="Add a pivot field in the PivotTable." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotField,PUT,Add a pivot field in the PivotTable.,<a href='https://apireference.aspose.cloud/cells/#/PivotTables/PutPivotTableField'>PutPivotTableField</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotField,PUT,,<a href='https://apireference.aspose.cloud/cells/#/PivotTables/PutPivotTableField'>PutPivotTableField</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

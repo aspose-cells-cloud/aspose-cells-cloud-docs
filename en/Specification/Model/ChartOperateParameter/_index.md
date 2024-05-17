@@ -4,6 +4,7 @@ second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/model/chartoperateparameter/
 description: "Aspose.Cells Cloud model specification : ChartOperateParameter. Effortlessly handle Excel and other spreadsheet documents with features like opening, generating, editing, splitting, merging, comparing, and converting."
+kwords: Excel, Office, Spreadsheet, Cloud REST API, ChartOperateParameter
 weight: 50
 ---
 
@@ -26,5 +27,5 @@ Represents chart operate parameter.
 | Title | String | True |  False |  | Represents chart title. |  
 | OperateType | String | True |  False |  |  |  
 
-**Parent Name** : [OperateParameter](operateparameter)
+**Parent Name** : [OperateParameter](/specification/model/operateparameter)
 

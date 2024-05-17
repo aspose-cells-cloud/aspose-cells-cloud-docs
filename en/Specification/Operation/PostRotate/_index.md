@@ -3,17 +3,18 @@ title: "PostRotate"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postrotate/
-description: "Rotate rows, columns, or other objects in Excel files and save them in various formats."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostRotate
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostRotate" >}}
-{{< blocks/products/cells/docs-title titlemsg="Rotate rows, columns, or other objects in Excel files and save them in various formats." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/rotate,POST,Rotate rows, columns, or other objects in Excel files and save them in various formats.,<a href='https://apireference.aspose.cloud/cells/#/LightCells/PostRotate'>PostRotate</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/rotate,POST,,<a href='https://apireference.aspose.cloud/cells/#/LightCells/PostRotate'>PostRotate</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

@@ -3,17 +3,18 @@ title: "PostWorksheetUngroupShape"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postworksheetungroupshape/
-description: "Ungroup shapes in the worksheet."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostWorksheetUngroupShape
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetUngroupShape" >}}
-{{< blocks/products/cells/docs-title titlemsg="Ungroup shapes in the worksheet." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/shapes/{shapeindex}/ungroup,POST,Ungroup shapes in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/Shapes/PostWorksheetUngroupShape'>PostWorksheetUngroupShape</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/shapes/{shapeindex}/ungroup,POST,,<a href='https://apireference.aspose.cloud/cells/#/Shapes/PostWorksheetUngroupShape'>PostWorksheetUngroupShape</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

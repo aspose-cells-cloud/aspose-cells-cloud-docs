@@ -3,17 +3,18 @@ title: "GetWorkbookNames"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/getworkbooknames/
-description: "Retrieve named ranges in the workbook."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, GetWorkbookNames
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="GetWorkbookNames" >}}
-{{< blocks/products/cells/docs-title titlemsg="Retrieve named ranges in the workbook." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/names,GET,Retrieve named ranges in the workbook.,<a href='https://apireference.aspose.cloud/cells/#/Workbook/GetWorkbookNames'>GetWorkbookNames</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/names,GET,,<a href='https://apireference.aspose.cloud/cells/#/Workbook/GetWorkbookNames'>GetWorkbookNames</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

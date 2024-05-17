@@ -3,17 +3,18 @@ title: "GetWorksheetWithFormat"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/getworksheetwithformat/
-description: "Retrieve the worksheet in a specified format from the workbook."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, GetWorksheetWithFormat
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetWithFormat" >}}
-{{< blocks/products/cells/docs-title titlemsg="Retrieve the worksheet in a specified format from the workbook." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName},GET,Retrieve the worksheet in a specified format from the workbook.,<a href='https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetWithFormat'>GetWorksheetWithFormat</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName},GET,,<a href='https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetWithFormat'>GetWorksheetWithFormat</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

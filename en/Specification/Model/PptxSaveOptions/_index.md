@@ -4,6 +4,7 @@ second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/model/pptxsaveoptions/
 description: "Aspose.Cells Cloud model specification : PptxSaveOptions. Effortlessly handle Excel and other spreadsheet documents with features like opening, generating, editing, splitting, merging, comparing, and converting."
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PptxSaveOptions
 weight: 50
 ---
 
@@ -43,5 +44,5 @@ Represents the options of saving pptx file.
 | SortNames | Boolean | True |  False |  |  |  
 | ValidateMergedAreas | Boolean | True |  False |  |  |  
 
-**Parent Name** : [PaginatedSaveOptions](paginatedsaveoptions)
+**Parent Name** : [PaginatedSaveOptions](/specification/model/paginatedsaveoptions)
 

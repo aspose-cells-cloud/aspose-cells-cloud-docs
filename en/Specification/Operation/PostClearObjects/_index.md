@@ -3,17 +3,18 @@ title: "PostClearObjects"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postclearobjects/
-description: "Clear internal elements in Excel files and generate output files in various formats."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostClearObjects
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostClearObjects" >}}
-{{< blocks/products/cells/docs-title titlemsg="Clear internal elements in Excel files and generate output files in various formats." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/clearobjects,POST,Clear internal elements in Excel files and generate output files in various formats.,<a href='https://apireference.aspose.cloud/cells/#/LightCells/PostClearObjects'>PostClearObjects</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/clearobjects,POST,,<a href='https://apireference.aspose.cloud/cells/#/LightCells/PostClearObjects'>PostClearObjects</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

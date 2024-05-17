@@ -3,17 +3,18 @@ title: "PostExport"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postexport/
-description: "Export Excel internal elements or the workbook itself to various format files."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostExport
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostExport" >}}
-{{< blocks/products/cells/docs-title titlemsg="Export Excel internal elements or the workbook itself to various format files." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/export,POST,Export Excel internal elements or the workbook itself to various format files.,<a href='https://apireference.aspose.cloud/cells/#/DataProcessing/PostExport'>PostExport</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/export,POST,,<a href='https://apireference.aspose.cloud/cells/#/DataProcessing/PostExport'>PostExport</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

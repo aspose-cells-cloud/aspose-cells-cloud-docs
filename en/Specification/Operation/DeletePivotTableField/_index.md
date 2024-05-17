@@ -3,17 +3,18 @@ title: "DeletePivotTableField"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/deletepivottablefield/
-description: "Delete a pivot field in the PivotTable."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, DeletePivotTableField
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="DeletePivotTableField" >}}
-{{< blocks/products/cells/docs-title titlemsg="Delete a pivot field in the PivotTable." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotField,DELETE,Delete a pivot field in the PivotTable.,<a href='https://apireference.aspose.cloud/cells/#/PivotTables/DeletePivotTableField'>DeletePivotTableField</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotField,DELETE,,<a href='https://apireference.aspose.cloud/cells/#/PivotTables/DeletePivotTableField'>DeletePivotTableField</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

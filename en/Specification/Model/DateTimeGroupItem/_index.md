@@ -4,6 +4,7 @@ second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/model/datetimegroupitem/
 description: "Aspose.Cells Cloud model specification : DateTimeGroupItem. Effortlessly handle Excel and other spreadsheet documents with features like opening, generating, editing, splitting, merging, comparing, and converting."
+kwords: Excel, Office, Spreadsheet, Cloud REST API, DateTimeGroupItem
 weight: 50
 ---
 
@@ -21,5 +22,5 @@ Represents the datetime's group setting.
 | Second | Integer | True |  False |  | Gets and sets the second of the grouped date time. |  
 | Year | Integer | True |  False |  | Gets and sets the year of the grouped date time. |  
 
-**Parent Name** : [MultipleFilter](multiplefilter)
+**Parent Name** : [MultipleFilter](/specification/model/multiplefilter)
 

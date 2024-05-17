@@ -3,17 +3,18 @@ title: "GetWorksheetComments"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/getworksheetcomments/
-description: "Retrieve the description of comments in the worksheet."
+description: ""
+kwords: Excel, Office, Spreadsheet, Cloud REST API, GetWorksheetComments
 weight: 50
 
 ---
 
 
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetComments" >}}
-{{< blocks/products/cells/docs-title titlemsg="Retrieve the description of comments in the worksheet." >}}
+{{< blocks/products/cells/docs-title titlemsg="" >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/comments,GET,Retrieve the description of comments in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetComments'>GetWorksheetComments</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/comments,GET,,<a href='https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetComments'>GetWorksheetComments</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
