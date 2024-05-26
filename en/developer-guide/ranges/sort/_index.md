@@ -7,6 +7,7 @@ keywords: "Range Sort."
 url: /ranges/sort/
 description: Sets outline border around a range of cells. 
 weight: 20
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Range Sort
 ---
 
 This REST API indicates range sort. 

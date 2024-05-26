@@ -6,6 +6,7 @@ url: /getting-started/how-to-run-docker-container/
 aliases: [/how-to-run-docker-container/]
 description: "How to run Docker Aspose.Cells Cloud container. Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on."
 weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, How to Run Docker Container
 ---
 
 The **Docker** technology is designed to automate the deployment of the applications by using lightweight containers. Developers can use a **Docker Container** to wrap up an application with all of its libraries and dependencies and deploy everything as a single package.

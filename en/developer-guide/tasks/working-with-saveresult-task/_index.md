@@ -7,6 +7,7 @@ aliases: [/working-with-saveresult-task/]
 keywords: "REST API, task, save result, spreadsheets, excel"
 description: "Cells.Cloud API for Excel operate: tasks support to save the result into response content or cloud storage."
 weight: 50
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Working with SaveResult Task
 ---
 
 ## REST API

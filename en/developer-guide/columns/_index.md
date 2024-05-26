@@ -7,6 +7,7 @@ aliases: [/working-with-columns/]
 keywords: "REST API, columns, spreadsheets, excel"
 description: "Cells.Cloud API for Excel operate: unhide columns from an Excel Worksheet."
 weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Columns
 ---
 
 ## Working with Columns on an Excel file.

@@ -8,6 +8,7 @@ aliases: [/get-columns-from-an-excel-worksheet/,/get-columns-from-a-worksheet/,/
 keywords: "Get columns on an Excel worksheet"
 description: "Aspose.Cells Cloud REST API support getting columns on an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 10
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Get columns from an Excel worksheet
 ---
 
 This REST API indicates Read worksheet column data by column's index.

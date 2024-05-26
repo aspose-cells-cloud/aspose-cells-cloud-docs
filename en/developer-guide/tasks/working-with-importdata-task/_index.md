@@ -7,6 +7,7 @@ aliases: [/working-with-importdata-task/]
 keywords: "REST API, task, convert, spreadsheets, excel"
 description: "Cells.Cloud API for Excel operate: tasks support import data into excel file."
 weight: 40
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Working with ImportData Task
 ---
 
 ## REST API

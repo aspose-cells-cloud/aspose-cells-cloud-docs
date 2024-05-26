@@ -7,6 +7,7 @@ url: /import/with-using-storage/
 aliases: [/import-data-into-excel-worksheet/, /import-data-into-worksheet/ , /import-data-in-excel-worksheet/, /import-data/]
 description: "Cells.Cloud API for Excel operate: Import Data into Excel Worksheet."
 weight: 10
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Import Data with using storage
 ---
 
 This REST API indicates `import data` into Excel file.

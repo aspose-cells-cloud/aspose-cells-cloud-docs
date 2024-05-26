@@ -7,6 +7,7 @@ url: /merge/multi-files/
 keywords: "Merge multi Excel files into Excel file."
 description: "Aspose.Cells Cloud REST API support merging multi Excel files into Excel file. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 32
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Merge multi Excel files into an Excel file.
 ---
 
 This REST API indicates to `merge` multiple Excel files into an Excel file.

@@ -7,6 +7,7 @@ aliases: [/working-with-convert-task/]
 keywords: "REST API, task, convert, spreadsheets, excel"
 description: "Cells.Cloud API for Excel operate: tasks support convert excel file."
 weight: 30
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Working with Convert Task
 ---
 
 ## REST API

@@ -3,6 +3,7 @@ title: " Update Chart Value Axis"
 type: docs
 url: /charts/value-axis/update/
 weight: 160
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon,  Update Chart Value Axis
 ---
 
 This REST API indicates Update Chart Value Axis. 

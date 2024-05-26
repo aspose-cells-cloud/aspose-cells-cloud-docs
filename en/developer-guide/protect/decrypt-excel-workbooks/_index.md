@@ -8,6 +8,7 @@ aliases: [/decrypt-excel-workbooks/]
 keywords: "REST API, spreadsheets, excel, decrypt"
 description: "Cells.Cloud API for Excel operate: decrypt an Excel workbook."
 weight: 50
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Decrypt an Excel workbook
 ---
 
 This REST API decrypt an Excel `workbook`.

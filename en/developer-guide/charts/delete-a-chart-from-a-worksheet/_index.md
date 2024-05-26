@@ -4,6 +4,7 @@ type: docs
 url: /charts/delete/
 aliases: [/delete-a-chart-from-a-worksheet/]
 weight: 40
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Delete a Chart from a Worksheet
 ---
 
 This REST API indicates delete worksheet chart by index.

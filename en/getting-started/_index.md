@@ -5,6 +5,7 @@ type: docs
 url: /getting-started/
 description: "Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on."
 weight: 10
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Getting Started
 ---
 
 This Getting Started provides this introduction to Aspose.Cells Cloud fundamentals. For users new to Aspose.Cells Cloud, this is the fastest way to learn the basic requirements and capabilities and get started.

@@ -6,6 +6,7 @@ aliases: [/add-a-comment-to-a-cell-in-a-worksheet/]
 keywords: "REST API, spreadsheets, excel, add comment"
 description: "Cells.Cloud API for Excel operate: add comment."
 weight: 20
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Add
 ---
 This REST API indicates Add worksheet's cell comment.
  

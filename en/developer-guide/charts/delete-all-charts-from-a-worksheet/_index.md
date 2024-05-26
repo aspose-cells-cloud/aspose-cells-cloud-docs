@@ -4,6 +4,7 @@ type: docs
 url: /charts/clear/
 aliases: [/delete-all-charts-from-a-worksheet/]
 weight: 30
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Delete all Charts from a Worksheet
 ---
 
 This REST API indicates clear the charts.

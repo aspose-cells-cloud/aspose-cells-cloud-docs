@@ -7,6 +7,7 @@ aliases: [/working-with-comments/]
 keywords: "REST API, spreadsheets, excel, comments"
 description: "Cells.Cloud API for Excel operate: comments operate."
 weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Comments
 ---
 
 

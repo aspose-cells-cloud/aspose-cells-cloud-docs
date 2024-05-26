@@ -4,6 +4,7 @@ type: docs
 url: /charts/add/
 aliases: [/add-a-chart-in-a-worksheet/]
 weight: 20
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Add a Chart in a Worksheet
 ---
 
 This REST API indicates add a new chart to worksheet.

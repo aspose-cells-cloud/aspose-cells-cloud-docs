@@ -6,6 +6,7 @@ url: /repair/
 keywords: "Repair Excel, ODS, WPS, and so on files."
 description: "Aspose.Cells Cloud REST API support repair excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 39
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Repair
 ---
 
 This REST API indicates to `repair` Excel files.

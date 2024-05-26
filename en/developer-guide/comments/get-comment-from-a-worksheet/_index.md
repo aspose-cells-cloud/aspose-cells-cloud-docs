@@ -6,6 +6,7 @@ aliases: [/get-comment-from-a-worksheet/]
 keywords: "REST API, spreadsheets, excel, get comment"
 description: "Cells.Cloud API for Excel operate: get comment."
 weight: 10
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Get
 ---
 
 This REST API indicates Get worksheet comment by cell name.

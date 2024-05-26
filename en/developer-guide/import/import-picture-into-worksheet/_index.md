@@ -8,6 +8,7 @@ aliases: [/import-picture-into-excel-worksheet/,/import-picture-into-worksheet/,
 keywords: "Import picture into Excel files."
 description: "Aspose.Cells Cloud REST API support importing picture into Excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 19
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Import Picture into Excel Worksheet
 ---
 
 This REST API `import picture data` into Excel work sheet.

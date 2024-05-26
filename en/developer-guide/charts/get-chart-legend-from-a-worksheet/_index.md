@@ -4,6 +4,7 @@ type: docs
 url: /charts/legend/get/
 aliases: [/get-chart-legend-from-a-worksheet/]
 weight: 80
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Get Chart Legend from a Worksheet
 ---
 
 This REST API indicates get chart legend

@@ -3,6 +3,7 @@ title: " Update Chart Second Category Axis"
 type: docs
 url: /charts/second-category-axis/update/
 weight: 160
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon,  Update Chart Second Category Axis
 ---
 This REST API indicates Update Chart Second Category Axis. 
  

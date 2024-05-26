@@ -4,6 +4,7 @@ type: docs
 url: /charts/legend/hide/
 aliases: [/hide-chart-legend-in-a-worksheet/]
 weight: 110
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Hide Chart Legend in a Worksheet
 ---
 
 This REST API indicates hide legend in chart

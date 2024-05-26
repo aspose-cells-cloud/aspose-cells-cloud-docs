@@ -4,6 +4,7 @@ type: docs
 url: /how-to-repair-excel-file
 description: "How to repair Excel or other spreadsheet file through Aspose.Cells Cloud."
 weight: 10
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, How to repair Excel or other spreadsheet file through Aspose.Cells Cloud
 ---
 
 ## Introduction

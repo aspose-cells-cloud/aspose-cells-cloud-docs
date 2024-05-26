@@ -3,6 +3,7 @@ title: "Get MinRow from Excel Worksheet"
 type: docs
 url: /get-minrow-from-excel-worksheet/
 weight: 80
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Get MinRow from Excel Worksheet
 ---
 
 

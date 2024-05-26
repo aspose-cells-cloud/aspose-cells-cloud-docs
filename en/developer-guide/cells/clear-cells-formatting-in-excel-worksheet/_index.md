@@ -3,6 +3,7 @@ title: "Clear Cells Formatting in Excel Worksheet"
 type: docs
 url: /clear-cells-formatting-in-excel-worksheet/
 weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Clear Cells Formatting in Excel Worksheet
 ---
 
 This REST API indicates `clear` cells `style` in an Excel file.

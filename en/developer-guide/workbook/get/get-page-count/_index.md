@@ -8,6 +8,7 @@ aliases: [/workbook/page-count/]
 keywords: "Getting pages count on an Excel workbook."
 description: "Aspose.Cells Cloud REST API support getting pages count on an Excel workbook. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 10
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Get page count
 ---
 
 This REST API indicates to `get page count` for workbook.

@@ -7,6 +7,7 @@ aliases: [/working-with-pictures/]
 keywords: "Working with picture on an Excel worksheet."
 description: "How to do Aspose.Cells Cloud REST APIs work with picture in an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Pictures
 ---
 
 ## Working with pictures on an Excel file.

@@ -3,6 +3,7 @@ title: " Update Chart Category Axis"
 type: docs
 url: /charts/category-axis/update/
 weight: 160
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon,  Update Chart Category Axis
 ---
 This REST API indicates Update Chart Category Axis.
  

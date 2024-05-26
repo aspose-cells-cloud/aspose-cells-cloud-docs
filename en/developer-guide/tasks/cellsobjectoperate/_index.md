@@ -6,6 +6,7 @@ url: /tasks/cells-object-operate/
 aliases: [/working-with-cellsobjectoperate-task/]
 description: "Cells.Cloud API for Excel operate: cells object  operate task."
 weight: 20
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Working with CellsObjectOperate Task
 ---
 
 This REST API operate cells object  `task`.

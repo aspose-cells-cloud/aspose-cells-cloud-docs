@@ -8,6 +8,7 @@ aliases: [/add-pictures-to-excel-worksheet/]
 keywords: "Add a picture in an Excel file."
 description: "Aspose.Cells Cloud REST API support adding a picture in an Excel file. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 20
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Add Picture in an Excel file
 ---
 
 This REST API indicates to `add` a new picture for an Excel worksheet.

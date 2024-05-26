@@ -8,6 +8,7 @@ aliases: [/update-cell-style-for-pivot-table/]
 keywords: "Update cell style for a pivot table."
 description: "Aspose.Cells Cloud REST API support updating cell style for a pivot table. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 90
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Update cell style for pivot table
 ---
 
 This REST API indicates update cell `style` for pivot table.

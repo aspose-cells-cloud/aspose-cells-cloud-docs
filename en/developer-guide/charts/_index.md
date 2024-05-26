@@ -7,6 +7,7 @@ aliases: [/working-with-charts/]
 keywords: "REST API, spreadsheets, excel, charts"
 description: "Cells.Cloud API for Excel operate: charts operate."
 weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Charts
 ---
 
 ## Working with Charts on an Excel file.

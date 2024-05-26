@@ -3,6 +3,7 @@ title: "Get MergedCell from a Worksheet"
 type: docs
 url: /get-mergedcell-from-a-worksheet/
 weight: 60
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Get MergedCell from a Worksheet
 ---
 
 

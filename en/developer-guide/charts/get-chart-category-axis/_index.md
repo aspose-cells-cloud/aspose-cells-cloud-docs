@@ -3,6 +3,7 @@ title: " Get Chart Category Axis"
 type: docs
 url: /charts/category-axis/get/
 weight: 60
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon,  Get Chart Category Axis
 ---
 
 This REST API indicates Get Chart Category Axis

@@ -8,6 +8,7 @@ aliases: [/filter-a-list-with-a-custom-criteria/,/autofilter/add-a-custom-filter
 keywords: "Adds a custom filter on an Excel worksheet."
 description: "The Aspose.Cells Cloud API supports adding a custom filter on an Excel worksheet.SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 65
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Add a custom criteria in an Excel worksheet
 ---
 
 This REST API indicates to filter a list with a `custom criteria`.

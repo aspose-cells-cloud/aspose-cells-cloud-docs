@@ -3,6 +3,7 @@ title: "Get MinColumn from Excel Worksheet"
 type: docs
 url: /get-mincolumn-from-excel-worksheet/
 weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Get MinColumn from Excel Worksheet
 ---
 
 

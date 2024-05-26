@@ -8,6 +8,7 @@ aliases: [/set-background-or-watermark-for-excel-worksheet/]
 keywords: "Delete an Excel worksheet on an Excel workbook."
 description: "Aspose.Cells Cloud REST API support deleting an Excel worksheet on an Excel workbook. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 180
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Set background on an Excel worksheet
 ---
 
 This REST API indicates `add worksheet background image`.

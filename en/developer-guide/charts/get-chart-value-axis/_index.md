@@ -3,6 +3,7 @@ title: " Get Chart Value Axis"
 type: docs
 url: /charts/value-axis/get/
 weight: 60
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon,  Get Chart Value Axis
 ---
 This REST API indicates Get Chart Value Axis
  

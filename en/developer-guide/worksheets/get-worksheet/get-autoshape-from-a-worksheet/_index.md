@@ -8,6 +8,7 @@ aliases: [/get-autoshape-from-a-worksheet/]
 keywords: "Get autoshape to different format from an Excel worksheet."
 description: "Aspose.Cells Cloud REST API support getting autoshape to different format from an Excel Worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 10
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Get an autoshape from an Excel worksheet
 ---
 
 This REST API indicates `get autoshape info`.

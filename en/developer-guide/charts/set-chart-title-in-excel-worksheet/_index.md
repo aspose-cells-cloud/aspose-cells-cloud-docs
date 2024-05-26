@@ -4,6 +4,7 @@ type: docs
 url: /chart/title/add/
 aliases: [/set-chart-title-in-excel-worksheet/]
 weight: 30
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Set Chart Title in Excel Worksheet
 ---
 
 This REST API indicates add chart title / set chart title visible
