@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/putworksheetcharttitle/
 description: Çalışma sayfasında grafik başlığını ayarlayın
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PutWorksheetChartTitle
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetChartTitle" >}}

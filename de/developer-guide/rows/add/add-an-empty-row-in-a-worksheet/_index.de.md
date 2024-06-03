@@ -1,15 +1,16 @@
 ﻿---
-title: Fügen Sie eine leere Zeile auf einem Arbeitsblatt Excel hinzu
+title: Fügen Sie eine leere Zeile in ein Arbeitsblatt vom Typ Excel ein.
 second_title: Aspose.Cells Cloud Documen
 linktitle: Ro
 type: docs
 url: /de/rows/add/row/
 aliases: [/add-an-empty-row-in-a-worksheet/]
 keywords: Add an empty row on an Excel workshee
-description: Aspose.Cells Cloud REST API unterstützt das Hinzufügen einer leeren Zeile in einem Excel-Arbeitsblatt. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
+description: Aspose.Cells Cloud REST API unterstützt das Hinzufügen einer leeren Zeile in einem Excel Arbeitsblatt. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
 weight: 20
+kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdwon, Eine leere Zeile in ein Excel-Arbeitsblatt einfügen
 ---
-Dieser REST API gibt an, eine neue Arbeitsblattzeile zu einem Excel-Arbeitsblatt hinzuzufügen.
+Dieser REST API gibt an, dass eine neue Arbeitsblattzeile zu einem Excel-Arbeitsblatt hinzugefügt werden soll.
  
 ## RSET API
  
@@ -22,15 +23,15 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/
  
 | Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
 |:- |:- |:- |:- |
-| Name| Zeichenfolge| Weg|Der Name der Arbeitsmappe.|
-| Blattname| Zeichenfolge| Weg| Der Arbeitsblattname.|
-| rowIndex| ganze Zahl| Weg| Der neue Zeilenindex.|
-| Ordner| Zeichenfolge| Abfrage| Der Dokumentenordner.|
-| Speichername| Zeichenfolge| Abfrage| Speichername.|
+| Name| Schnur| Weg| Der Name der Arbeitsmappe.|
+| Blattname| Schnur| Weg| Der Arbeitsblattname.|
+| Zeilenindex| ganze Zahl| Weg| Der neue Zeilenindex.|
+| Ordner| Schnur| Abfrage| Der Dokumentordner.|
+| Speichername| Schnur| Abfrage| Speichername.|
  
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Cells/PutInsertWorksheetRow) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht die Durchführung von REST-Interaktionen direkt über einen Webbrowser.
+ Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Cells/PutInsertWorksheetRow) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen, REST-Interaktionen direkt von einem Webbrowser aus durchzuführen.
  
-Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie man mit cURL Anrufe zur Cloud API tätigt.
+Mit dem Befehlszeilentool cURL können Sie ganz einfach auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie Sie mit cURL Anrufe an Cloud API tätigen.
  
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
  
@@ -64,9 +65,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
  
 ## Cloud SDK-Familie
  
- Die Verwendung eines SDK ist der beste Weg, die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte schauen Sie sich die an[GitHub-Repository](https://github.com/aspose-cells-cloud) Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie hier.
+ Die Verwendung eines SDK ist der beste Weg, um die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte lesen Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
  
-Die folgenden Codebeispiele veranschaulichen, wie Aspose.Cells-Webdienste mithilfe verschiedener SDKs aufgerufen werden:
+Die folgenden Codebeispiele zeigen, wie Sie mit verschiedenen SDKs Aufrufe an die Webdienste Aspose.Cells tätigen:
  
  
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}

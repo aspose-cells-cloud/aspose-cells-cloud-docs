@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/putpivottablefield/
 description: إضافة حقل محوري في PivotTable
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PutPivotTableField
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutPivotTableField" >}}

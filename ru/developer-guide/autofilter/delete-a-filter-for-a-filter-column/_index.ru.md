@@ -8,6 +8,7 @@ aliases: [/delete-a-filter-for-a-filter-column/,/delete-auto-filter/]
 keywords: Deletes a filter on an Excel worksheet
 description: Облако Aspose.Cells API поддерживает удаление фильтра на листе Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 100
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Удаление фильтра на листе Excel
 ---
 Этот REST API указывает на удаление `filter` на листе Excel.
 
@@ -22,10 +23,10 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilt
 Параметры запроса:
 | Имя параметра| Тип| Путь/строка запроса/HTTPBody|Описание|
 |:- |:- |:- |:- |
-| имя| нить| Путь|Имя рабочей книги.|
+| имя| нить| Путь| Имя рабочей книги.|
 | имя листа| нить| Путь| Имя рабочего листа.|
 |диапазон|нить| Запрос||
-|полеИндекс|целое число| Запрос||
+|полеиндекс|целое число| Запрос||
 |тип даты и времени группировки|нить| Запрос| День/час/минута/месяц/секунда/год|
 |год|целое число| Запрос||
 |месяц|целое число| Запрос||

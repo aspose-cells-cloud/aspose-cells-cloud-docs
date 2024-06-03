@@ -1,29 +1,30 @@
 ﻿---
-title: 邮报标题
+title: 波斯特赫德
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/postheader/
 description: 更新工作表中的页眉
+kwords: Excel, Office, 电子表格, Cloud REST API, PostHeader
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostHeader" >}}
 {{< blocks/products/cells/docs-title titlemsg="Update page header in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pagesetup/header,POST,更新工作表中的页眉。,<a href=\'https://apireference.aspose.cloud/cells/#/PageSetup/PostHeader\' >帖子标题</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pagesetup/header,POST,更新工作表中的页眉。,<a href=\'https://apireference.aspose.cloud/cells/#/PageSetup/PostHeader\'>PostHeader</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="参数名称、类型、描述" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="名称，字符串，文件名。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,字符串,工作表名称。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="name，string，文件名。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName，string，工作表名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="section,integer,0：左节。 1：中心部分 2：右侧部分" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="脚本，字符串，标头格式脚本。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="isFirstPage,boolean,是否为第一页(true/false)。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="section,integer,0：左节。1：中间节 2：右节" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="脚本，字符串，标题格式脚本。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="isFirstPage，boolean，是否为第一页（true/false）。" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="文件夹，字符串，文件所在的文件夹。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,文件所在的存储名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName，string，文件所在的存储名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/PageSetupController/PostHeader\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

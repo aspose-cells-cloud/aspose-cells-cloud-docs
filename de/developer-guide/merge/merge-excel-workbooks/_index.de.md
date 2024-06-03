@@ -1,32 +1,33 @@
 ﻿---
-title: Führen Sie eine Excel-Arbeitsmappe mit einer anderen Excel-Datei zusammen
+title: Zusammenführen einer Excel-Arbeitsmappe mit einer anderen Excel-Datei
 second_title: Aspose.Cells Cloud Documen
-linktitle: Workboo
+linktitle: Arbeitsbuch
 type: docs
 url: /de/workbook/merge/
 aliases: [/merge-excel-workbooks/]
 keywords: Merge an Excel Workbooks into other Excel file
-description: Aspose.Cells Cloud REST API unterstützt das Zusammenführen einer Excel-Datei mit einer anderen Excel-Datei. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
+description: Aspose.Cells Cloud REST API unterstützt das Zusammenführen von Excel-Dateien in andere Excel-Dateien. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift.
 weight: 50
+kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdwon, Zusammenführen einer Excel Arbeitsmappe in eine andere Excel Datei
 ---
-Dieser REST API gibt an, eine Excel `workbook` in eine andere Excel-Arbeitsmappe zusammenzuführen.
+Dieser REST API gibt an, dass ein Excel `workbook` in eine andere Excel-Arbeitsmappe integriert werden soll.
 
 **Abfrageparameter**
 
 |Parametername|Typ|Beschreibung|
 |:- |:- |:- |
-|Ordner|Zeichenfolge|Originaler Arbeitsmappenordner.|
-|Speichername|Zeichenfolge|Speichername.|
+|Ordner|Schnur|Original-Arbeitsmappenordner.|
+|Speichername|Schnur|Speichername.|
 
 ## REST API
 
 |**API**|**Typ**|**Beschreibung**|**Swagger-Link**|
 |:- |:- |:- |:- |
-|/cells/{name}/merge|POST|Excel Arbeitsmappen zusammenführen|[PostWorkbooksMerge](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbooksMerge)|
+|/Zellen/{Name}/zusammenführen|POST|Excel Arbeitsmappen zusammenführen|[PostWorkbooksMerge](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbooksMerge)|
 
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbooksMerge) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht die Durchführung von REST-Interaktionen direkt über einen Webbrowser.
+ Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbooksMerge) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen, REST-Interaktionen direkt von einem Webbrowser aus durchzuführen.
 
- Sie können verwenden**cURL** Befehlszeilentool für den einfachen Zugriff auf Aspose.Cells-Webdienste. Das folgende Beispiel zeigt, wie Sie die Cloud API mit cURL anrufen.
+ Sie können**cURL**Befehlszeilentool für den einfachen Zugriff auf Aspose.Cells-Webdienste. Das folgende Beispiel zeigt, wie Sie mit cURL Anrufe an Cloud API tätigen.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
@@ -282,9 +283,9 @@ Response headers
 
 ## Cloud SDK-Familie
 
- Die Verwendung eines SDK ist der beste Weg, die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte schauen Sie sich die an[GitHub-Repository](https://github.com/aspose-cells-cloud) Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie hier.
+ Die Verwendung eines SDK ist der beste Weg, um die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte lesen Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
 
-Die folgenden Codebeispiele veranschaulichen, wie Aspose.Cells-Webdienste mithilfe verschiedener SDKs aufgerufen werden:
+Die folgenden Codebeispiele zeigen, wie Sie mit verschiedenen SDKs Aufrufe an die Webdienste Aspose.Cells tätigen:
 
 {{< tabs tabTotal="11" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" tabName11="Swift" >}}
 

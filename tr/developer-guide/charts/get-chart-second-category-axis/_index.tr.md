@@ -1,10 +1,11 @@
 ﻿---
-title: Grafiği Al İkinci Kategori Eksen
+title:  Grafiği Al İkinci Kategori Eksen
 type: docs
 url: /tr/charts/second-category-axis/get/
 weight: 60
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Grafiği Al İkinci Kategori Ekseni
 ---
- Bu REST API, Grafiği Al İkinci Kategori Eksenini belirtir.
+ Bu REST API, Grafiği Al İkinci Kategori Eksenini gösterir.
  
 ## RSET API
  

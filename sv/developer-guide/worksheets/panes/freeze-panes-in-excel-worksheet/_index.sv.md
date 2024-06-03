@@ -8,6 +8,7 @@ aliases: [/freeze-panes-in-excel-worksheet/,/worksheets/freeze-panes/]
 keywords: Freeze panes on an Excel Worksheet
 description: Aspose.Cells Cloud REST API stöder frysning av rutor på ett Excel kalkylblad. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 190
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Frys rutor på ett Excel kalkylblad
 ---
 Detta REST API indikerar `set freeze panes` på Excel arbetsblad.
  

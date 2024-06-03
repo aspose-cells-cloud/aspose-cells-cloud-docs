@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/model/conditionalformattingvalue/
 description: "Aspose.Cells Спецификация облачной модели: ConditionalFormattingValue. Легко обрабатывайте Excel и другие документы электронных таблиц с помощью таких функций, как открытие, создание, редактирование, разделение, слияние, сравнение и преобразование."
+kwords: Excel, Office, электронная таблица, Cloud REST API, ConditionalFormattingValue
 weight: 50
 ---
 ## **условное значение форматирования**
 
- 
+ Описывает значения точек интерполяции в градиентной шкале, dataBar или iconSet.
 
 | Имя свойства| Тип недвижимости| Обнуляемый| Только чтение| Значение по умолчанию| Описание|
 |:- |:- |:- |:- |:- |:- |

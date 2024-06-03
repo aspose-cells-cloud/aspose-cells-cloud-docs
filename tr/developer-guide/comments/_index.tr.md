@@ -7,6 +7,7 @@ aliases: [/working-with-comments/]
 keywords: REST API, spreadsheets, excel, comment
 description: "Cells.Cloud API, Excel için çalışır: yorumlar çalışır"
 weight: 100
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Yorumlar
 ---
 &nbsp;&nbsp;&nbsp;&nbsp;Kullanıcılar Excel çalışma kitabı oluştururken çeşitli nedenlerle Excel yorumlarını kullanabilir. Özelliğin kullanımlarından biri, özellikle diğer kişiler Excel dosyasını kullanacaksa, hücredeki bir formülü açıklamaktır. Ayrıca Excel yorumları, diğer kullanıcılar için hatırlatıcılar veya notlar eklemek ve diğer Excel çalışma kitaplarıyla çapraz referans vermek için de kullanılabilir.
 
@@ -15,5 +16,5 @@ weight: 100
 **Özet**
 
 -  Excel yorum kullanılır[hücreye not ekleme veya formülü açıklama](/cells/tr/comments/add/).
-- Excel kullanıcılara esneklik sağlar[düzenleme](/cells/tr/comments/update/), [siliniyor](/cells/tr/comments/delete/) , Ve[gösteriliyor](/cells/tr/comments/get/) veya[saklanmak](/cells/tr/comments/update/) Excel çalışma sayfasına ilişkin yorumlar.
+-  Excel kullanıcılara esneklik sağlar[düzenleme](/cells/tr/comments/update/), [siliniyor](/cells/tr/comments/delete/) , Ve[gösteriliyor](/cells/tr/comments/get/) veya[saklanmak](/cells/tr/comments/update/) Excel çalışma sayfasına ilişkin yorumlar.
 -  Kullanıcılar ayrıca[yeniden boyutlandır](/cells/tr/comments/update/) Ve[taşınmak](/cells/tr/comments/update/) Excel yorum kutusunu kullanın.

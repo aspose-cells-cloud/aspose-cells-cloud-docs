@@ -6,6 +6,7 @@ aliases: [/remove-conditional-formatting/]
 keywords: REST API, spreadsheets, excel, delete cell area from condition formattin
 description: "Cells.Cloud API, Excel için çalışır: hücre alanını koşul biçimlendirmesinden silme"
 weight: 60
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Koşullu Biçimlendirmeyi Sil
 ---
 Bu REST API, Koşullu biçimlendirmeyi kaldır anlamına gelir
  

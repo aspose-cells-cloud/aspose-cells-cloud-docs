@@ -8,6 +8,7 @@ aliases: [/create-a-pivottable-with-table/,/create-new-pivot-table-with-list-obj
 keywords: Create a pivot table with list object. Convert list object to pivot table
 description: Aspose.Cells Cloud REST API stöder att skapa en pivottabell med listobjekt. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 60
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Konvertera tabell till pivottabell
 ---
 Denna REST API indikerar att skapa ett `pivottable` med listobjekt.
  

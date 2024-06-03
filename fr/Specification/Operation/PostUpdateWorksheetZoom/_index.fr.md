@@ -3,7 +3,8 @@ title: PostUpdateWorksheetZoo
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postupdateworksheetzoom/
-description: Mettez à jour le pourcentage de mise à l'échelle dans la feuille de calcul. Il devrait être entre 10 et 400
+description: Mettez à jour le pourcentage de mise à l’échelle dans la feuille de calcul. Il devrait être entre 10 et 400
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostUpdateWorksheetZoom
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostUpdateWorksheetZoom" >}}

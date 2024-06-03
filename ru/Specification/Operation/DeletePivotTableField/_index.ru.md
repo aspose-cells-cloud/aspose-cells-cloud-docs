@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/deletepivottablefield/
 description: Удаление сводного поля в сводной таблице
+kwords: Excel, Office, электронная таблица, Cloud REST API, DeletePivotTableField
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeletePivotTableField" >}}

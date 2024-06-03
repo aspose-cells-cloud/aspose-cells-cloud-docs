@@ -3,6 +3,7 @@ title:  Obtener gráfico segundo valor Axi
 type: docs
 url: /es/charts/second-value-axis/get/
 weight: 60
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Obtener gráfico del segundo eje de valores
 ---
  Este REST API indica Obtener el segundo eje de valor del gráfico.
  

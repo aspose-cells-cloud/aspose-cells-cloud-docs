@@ -4,6 +4,7 @@ type: docs
 url: /es/charts/to-image/
 aliases: [/convert-chart-to-image/]
 weight: 50
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Convertir gráfico en imagen
 ---
 Este REST API indica cómo convertir un gráfico en imagen.
  

@@ -8,6 +8,7 @@ aliases: [/filter-a-list-with-a-custom-criteria/,/autofilter/add-a-custom-filter
 keywords: Adds a custom filter on an Excel worksheet
 description: Aspose.Cells Bulut API, Excel çalışma sayfasına özel filtre eklenmesini destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 65
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel çalışma sayfasına özel ölçüt ekleme
 ---
 Bu REST API, bir listenin `custom criteria` ile filtrelenmesini belirtir.
             
@@ -28,11 +29,11 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/
 | alanIndex| tamsayı| sorgu||
 | operatörTürü1| sicim| sorgu||
 | kriterler1| sicim| sorgu||
-| ve| boolean| sorgu||
+| ve|boolean| sorgu||
 | operatörTürü2| sicim| sorgu||
 | kriterler2| sicim| sorgu||
-| maçBoşluklar| boolean| sorgu||
-| yenileme| boolean| sorgu||
+| maçBoşluklar|boolean| sorgu||
+| yenileme|boolean| sorgu||
 | dosya| sicim| sorgu||
 | depolamaAdı| sicim| sorgu| depolama adı.|
  

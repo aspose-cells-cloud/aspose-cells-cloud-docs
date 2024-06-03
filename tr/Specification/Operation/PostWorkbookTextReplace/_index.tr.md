@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/postworkbooktextreplace/
 description: Çalışma kitabındaki metni değiştirme
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PostWorkbookTextReplace
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookTextReplace" >}}

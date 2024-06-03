@@ -7,6 +7,7 @@ aliases: [/working-with-oleobjects/]
 keywords: Get, add, delete, and update an OLE object in an Excel worksheet
 description: Aspose.Cells Cloud REST API prend en charge l'obtention, l'ajout, la suppression et la mise à jour d'un objet OLE dans une feuille de calcul Excel. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 100
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, OleObjects
 ---
 **Comment travailler avec des objets OLE sur une feuille de calcul Excel**
 

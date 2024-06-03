@@ -6,6 +6,7 @@ url: /ru/folder/delete/
 keywords: Learn how to delete folder with Aspose Cells Cloud REST API
 description: Узнайте, как удалить папку с помощью Aspose Cells Cloud REST API SDK, поддерживающего различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 100
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, удалить папку
 ---
 Этот REST API указывает на `delete folder`.
  
@@ -22,7 +23,7 @@ DELETE http://api.aspose.cloud/v3.0/cells/storage/folder/{path}
 |:- |:- |:- |:- |
 | путь| нить| путь| Путь к папке, например «/folder»|
 | имя_хранилища| нить| запрос| Имя хранилища|
-| рекурсивный| логическое значение| запрос| ЛОЖЬ|
+| рекурсивный|логическое значение| запрос| ЛОЖЬ|
 
  
 [Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Folder/DeleteFolder) определяет общедоступный интерфейс программирования и позволяет выполнять взаимодействие с REST непосредственно из веб-браузера.

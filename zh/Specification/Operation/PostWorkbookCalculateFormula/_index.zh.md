@@ -1,29 +1,30 @@
 ﻿---
-title: 后工作簿计算公式
+title: Post工作簿计算公式
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/postworkbookcalculateformula/
 description: 计算工作簿中的所有公式
+kwords: Excel，Office，电子表格，云 REST API，PostWorkbookCalculateFormula
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookCalculateFormula" >}}
 {{< blocks/products/cells/docs-title titlemsg="Calculate all formulas in the workbook." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/calculateformula,POST,计算工作簿中的所有公式。,<a href=\'https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookCalculateFormula\'>PostWorkbookCalculateFormula</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="参数名称、类型、描述" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="名称，字符串，文件名。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="name，string，文件名。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="ignoreError，布尔值，忽略错误。" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="文件夹，字符串，文件所在的文件夹。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,文件所在的存储名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName，string，文件所在的存储名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="options,class:calculationoptions,CalculationOptions 计算选项。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="选项，类：计算选项，计算选项计算选项。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

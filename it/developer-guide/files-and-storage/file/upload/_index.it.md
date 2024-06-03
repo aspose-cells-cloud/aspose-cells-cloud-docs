@@ -6,6 +6,7 @@ url: /it/file/upload/
 keywords: Learn how to upload file with Aspose Cells Cloud REST API
 description: Scopri come caricare il file con Aspose Cells Cloud REST API SDK che supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 100
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Carica file
 ---
 Questo REST API indica `upload file`.
 

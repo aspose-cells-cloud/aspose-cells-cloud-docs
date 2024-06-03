@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/deleteworksheetcomments/
 description: Удалить все комментарии на листе
+kwords: Excel, Office, Электронная таблица, Cloud REST API, Удалить рабочий листКомментарии
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetComments" >}}

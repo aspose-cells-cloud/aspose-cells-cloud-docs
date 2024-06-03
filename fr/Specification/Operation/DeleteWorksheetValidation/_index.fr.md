@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/deleteworksheetvalidation/
 description: Supprimer une validation par index dans une feuille de calcul
+kwords: Excel, Office, feuille de calcul, Cloud REST API, DeleteWorksheetValidation
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetValidation" >}}

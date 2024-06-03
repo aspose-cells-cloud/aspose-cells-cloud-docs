@@ -8,6 +8,7 @@ aliases: [/convert-list-object-or-table-to-range/,/tables/to-range/]
 keywords: Convert a list object(table) to range in an Excel worksheet
 description: Aspose.Cells Cloud REST API stöder konvertering av ett listobjekt(tabell) till intervall i ett Excel-kalkylblad. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 30
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Konvertera listobjekt till intervall i ett Excel kalkylblad
 ---
 Denna REST API indikerar `convert table or list object to range` i ett Excel kalkylblad.
  

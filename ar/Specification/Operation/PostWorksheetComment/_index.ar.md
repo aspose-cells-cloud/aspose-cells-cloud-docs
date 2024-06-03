@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postworksheetcomment/
 description: تحديث تعليق الخلية في ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostWorksheetComment
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetComment" >}}

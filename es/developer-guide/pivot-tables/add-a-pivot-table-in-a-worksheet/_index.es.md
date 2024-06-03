@@ -8,6 +8,7 @@ aliases: [/add-a-pivot-table-in-a-worksheet/]
 keywords: Add a pivot table in an Excel worksheet
 description: Aspose.Cells Cloud REST API admite la adición de una tabla dinámica en una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 30
+kwords: Excel, Office Cloud, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Agregar una tabla dinámica en una hoja de trabajo Excel
 ---
 Este REST API indica al `add` una tabla dinámica en la hoja de trabajo.
  
@@ -28,9 +29,9 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables
 | carpeta| cadena| consulta| Carpeta del documento.|
 | nombredealmacenamiento| cadena| consulta| nombre del almacenamiento.|
 | datos fuente| cadena| consulta| Los datos de la nueva caché de tabla dinámica.|
-| destCellName| cadena| consulta| La celda en la esquina superior izquierda del rango de destino del informe de tabla dinámica.|
+| destCellName| cadena| consulta|La celda en la esquina superior izquierda del rango de destino del informe de tabla dinámica.|
 | nombre de la tabla| cadena| consulta| El nombre del nuevo informe de tabla dinámica.|
-| utilizar la misma fuente| booleano| consulta| Indica si se utiliza la misma fuente de datos cuando otra tabla dinámica existente ha utilizado esta fuente de datos. Si la propiedad es verdadera, ahorrará memoria.|
+| utilizar la misma fuente|booleano| consulta| Indica si se utiliza la misma fuente de datos cuando otra tabla dinámica existente ha utilizado esta fuente de datos. Si la propiedad es verdadera, ahorrará memoria.|
  
  El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/PivotTables/PutWorksheetPivotTable) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
  

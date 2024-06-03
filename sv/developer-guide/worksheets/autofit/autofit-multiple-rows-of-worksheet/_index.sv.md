@@ -8,6 +8,7 @@ aliases: [/autofit-multiple-rows-of-worksheet/]
 keywords: Autofit rows on an Excel workshee
 description: Aspose.Cells Cloud REST API stöder automatisk anpassning av rader på ett Excel kalkylblad. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 40
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Anpassa flera rader automatiskt på ett Excel kalkylblad
 ---
 Denna REST API indikerar att rader ska anpassas automatiskt på ett Excel kalkylblad.
  
@@ -27,7 +28,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitrow
 | autoFitterOptions|| kropp| Alternativ för automatisk montering.|
 | startRow| heltal| fråga| Starta raden.|
 | endRow| heltal| fråga| Slutraden.|
-| endastAuto| booleskt| fråga| Falsk|
+| endastAuto|booleskt| fråga| Falsk|
 | mapp| sträng| fråga| Dokumentets mapp.|
 | lagringsnamn| sträng| fråga| lagringsnamn.|
  

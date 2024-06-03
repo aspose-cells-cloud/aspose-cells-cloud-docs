@@ -3,6 +3,7 @@ title: Cells Çalışma Sayfasındaki Cells Biçimlendirmesini Temizle
 type: docs
 url: /tr/clear-cells-formatting-in-excel-worksheet/
 weight: 100
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Clear Cells Excel Çalışma Sayfasında Biçimlendirme
 ---
 Bu REST API, bir Excel dosyasındaki `clear` hücresini `style` gösterir.
 

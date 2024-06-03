@@ -1,19 +1,21 @@
 ﻿---
-title: CommentShapeRespons
+title: KommentarFormAntworten
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/model/commentshaperesponse/
-description: "Aspose.Cells Cloud-Modellspezifikation: CommentShapeResponse. Bearbeiten Sie mühelos Excel und andere Tabellenkalkulationsdokumente mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+description: "Aspose.Cells Cloud-Modellspezifikation: CommentShapeResponse. Müheloses Bearbeiten von Excel und anderen Tabellenkalkulationsdokumenten mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, CommentShapeResponse
 weight: 50
 ---
-## **commentShapeResponse**
+## **KommentarFormAntwort**
 
- 
+ Stellt die CommentShape-Antwort dar.
 
-| Name des Anwesens| Art der Immobilie| Nullbar| Schreibgeschützt| Standardwert| Beschreibung|
+| Name des Anwesens| Art der Immobilie| Nullwerte zulassen| Schreibgeschützt| Standardwert| Beschreibung|
 |:- |:- |:- |:- |:- |:- |
-| Kommentar| Klasse:CommentShape| WAHR| FALSCH|||
+| Kommentar| Klasse:Kommentarform| WAHR| FALSCH|||
 | Code| Ganze Zahl| WAHR| FALSCH|||
 | Status| Zeichenfolge| WAHR| FALSCH|||
 
-**Elternname** : (CellsCloudResponse)[cellscloudresponse]
+**Elternname** : [ZellenCloudResponse](/specification/model/cellscloudresponse)
+

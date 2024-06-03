@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/model/chartframe/
 description: "Aspose.Cells Especificación del modelo de nube: ChartFrame. Maneje sin esfuerzo Excel y otros documentos de hoja de cálculo con funciones como abrir, generar, editar, dividir, fusionar, comparar y convertir."
+kwords: Excel, Office, hoja de cálculo, nube REST API, ChartFrame
 weight: 50
 ---
 ## **gráficoMarco**
 
- 
+ Encapsula el objeto que representa el objeto de marco en un gráfico.
 
 | Nombre de la propiedad| tipo de propiedad| Anulable| Solo lectura| Valor por defecto| Descripción|
 |:- |:- |:- |:- |:- |:- |
@@ -18,12 +19,11 @@ weight: 50
 | Borde| Clase: Línea| Verdadero| FALSO|| Obtiene la frontera.|
 | Fuente| Clase:Fuente| Verdadero| FALSO|| Obtiene un objeto del objeto ChartFrame especificado.|
 | EsTamañoAutomático| Booleano| Verdadero| FALSO|| Indica si el tamaño del marco del gráfico se ajusta automáticamente.|
-| Es modo interno| Booleano| Verdadero| FALSO|| Indica si el tamaño del área de trazado incluye las marcas de graduación y las etiquetas de los ejes. Falso especifica que el tamaño determinará el tamaño del área de trazado, las marcas de graduación y las etiquetas de los ejes.|
+| Es modo interno| Booleano| Verdadero| FALSO||Indica si el tamaño del área de trazado incluye las marcas de graduación y las etiquetas de los ejes. Falso especifica que el tamaño determinará el tamaño del área de trazado, las marcas de graduación y las etiquetas de los ejes.|
 | Sombra| Booleano| Verdadero| FALSO|| Verdadero si el marco tiene una sombra.|
-| Propiedades de forma| Envase| Verdadero| FALSO|| Obtiene el objeto.|
 | Ancho| Entero| Verdadero| FALSO|| Obtiene o establece el ancho del marco en unidades de 1/4000 del área del gráfico.|
 | Altura| Entero| Verdadero| FALSO|| Obtiene o establece la altura del marco en unidades de 1/4000 del área del gráfico.|
-| X| Entero| Verdadero| FALSO||Obtiene o establece la coordenada x de la esquina superior izquierda en unidades de 1/4000 del área del gráfico.|
+| X| Entero| Verdadero| FALSO|| Obtiene o establece la coordenada x de la esquina superior izquierda en unidades de 1/4000 del área del gráfico.|
 | Y| Entero| Verdadero| FALSO|| Obtiene o establece la coordenada y de la esquina superior izquierda en unidades de 1/4000 del área del gráfico.|
 
 **Nombre de los niños** : 

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/getworksheetrow/
 description: Récupérer les données de ligne par l'index de la ligne dans la feuille de calcul
+kwords: Excel, Office, feuille de calcul, Cloud REST API, GetWorksheetRow
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetRow" >}}

@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/model/names/
 description: "Aspose.Cells مواصفات النموذج السحابي: الأسماء. تعامل بسهولة مع Excel ومستندات جداول البيانات الأخرى التي تحتوي على ميزات مثل الفتح والتوليد والتحرير والتقسيم والدمج والمقارنة والتحويل"
+kwords: Excel, Office, جدول البيانات, Cloud REST API, الأسماء
 weight: 50
 ---
 ## **أسماء**
 
- 
+ يمثل مجموعة من كافة الكائنات في جدول البيانات.
 
 | اسم الخاصية| نوع الملكية| لاغية| يقرأ فقط| القيمة الافتراضية| وصف|
 |:- |:- |:- |:- |:- |:- |
@@ -16,4 +17,5 @@ weight: 50
 | لائحة الأسماء| حاوية| حقيقي| خطأ شنيع|||
 | وصلة| الفئة: الرابط| حقيقي| خطأ شنيع|||
 
-**اسم الوالدين** : (LinkElement)[linkElement]
+**اسم الوالدين** : [LinkElement](/specification/model/linkelement)
+

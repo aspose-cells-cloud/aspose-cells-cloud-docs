@@ -8,6 +8,7 @@ aliases: [/unfreeze-panes-in-excel-worksheet/,/worksheets/unfreeze-panes/]
 keywords: Unfreeze panes on an Excel worksheet
 description: Aspose.Cells Cloud REST API admite la descongelación de paneles en una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 200
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Descongelar paneles en una hoja de trabajo Excel
 ---
 Este REST API indica `unfreeze panes` en la hoja de trabajo Excel.
  

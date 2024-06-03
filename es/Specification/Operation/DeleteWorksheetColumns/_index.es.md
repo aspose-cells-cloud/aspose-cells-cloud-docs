@@ -1,9 +1,10 @@
 ﻿---
-title: Eliminar columna de hoja de cálculo
+title: Eliminar columna de hoja de trabajo
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/deleteworksheetcolumns/
 description: Eliminar columnas de la hoja de trabajo en la hoja de trabajo
+kwords: Excel, Office, Hoja de cálculo, Cloud REST API, Eliminar columnas de hoja de cálculo
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetColumns" >}}

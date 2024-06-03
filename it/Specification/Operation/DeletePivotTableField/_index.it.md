@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/deletepivottablefield/
 description: Elimina un campo pivot nella tabella pivot
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, Elimina campo tabella pivot
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeletePivotTableField" >}}

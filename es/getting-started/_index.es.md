@@ -5,6 +5,7 @@ type: docs
 url: /es/getting-started/
 description: Aspose.Cells La nube admite Excel para crear, convertir, fusionar, dividir, proteger, operar objetos internos, etc.
 weight: 10
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Primeros pasos
 ---
 Este Getting Started proporciona esta introducción a los fundamentos de la nube Aspose.Cells. Para los usuarios nuevos en Aspose.Cells Cloud, esta es la forma más rápida de conocer los requisitos y capacidades básicos y comenzar.
 
@@ -12,7 +13,7 @@ Para obtener más información sobre Aspose.Cells Cloud, seleccione la sección 
 
 - [Descripción general](/cells/es/overview/).
 - [Inicio rápido](/cells/es/quickstart/).
-- [SDK disponibles](/cells/es/available-sdks/) – proporciona información sobre Aspose.Cells Cloud SDK.
+- [SDK disponibles](/cells/es/available-sdks/)– proporciona información sobre Aspose.Cells Cloud SDK.
 - [Plataformas compatibles](/cells/es/supported-platforms/) – proporciona información sobre las plataformas compatibles.
 - [Formatos de archivo admitidos](/cells/es/supported-file-formats/) – proporciona información sobre los formatos compatibles.
 - [Evaluar Aspose.Cells Nube](/cells/es/evaluate-aspose-cells/).

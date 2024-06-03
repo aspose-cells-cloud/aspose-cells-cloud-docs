@@ -8,6 +8,7 @@ aliases: [/copy-range-in-a-worksheet-with-paste-options/]
 keywords: Copy a range in an Excel worksheet with paste options
 description: Aspose.Cells Cloud REST API prend en charge la copie d'une plage dans une feuille de calcul Excel avec des options de collage. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 20
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, copier la plage dans une feuille de calcul avec options de collage
 ---
 Ce REST API indique de copier la plage de la feuille de calcul sur une feuille de calcul Excel.
  
@@ -20,11 +21,11 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| nom du classeur|
 | Nom de la feuille| chaîne| chemin| nom de la feuille de calcul|
-| gammeExploiter|| corps|copydata, copystyle, copyto, copyvalue|
+| gammeExploiter|| corps| copydata, copystyle, copyto, copyvalue|
 | dossier| chaîne| requête| Dossier du classeur.|
 | Nom de stockage| chaîne| requête| nom de stockage.|
  

@@ -4,17 +4,18 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/model/oleobject/
 description: "Aspose.Cells Specifica del modello cloud: OleObject. Gestisci facilmente Excel e altri fogli di calcolo con funzionalità come apertura, generazione, modifica, divisione, unione, confronto e conversione"
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, OleObject
 weight: 50
 ---
 ## **oleObject**
 
- 
+ Rappresenta un OleObject in un foglio di lavoro.
 
 | Nome della proprietà| Tipo di proprietà| Nullabile| Sola lettura| Valore di default| Descrizione|
 |:- |:- |:- |:- |:- |:- |
-| DisplayAsIcon| Booleano| VERO| Falso||Vero se l'oggetto specificato viene visualizzato come icona e l'immagine non verrà modificata automaticamente.|
+| DisplayAsIcon| Booleano| VERO| Falso|| Vero se l'oggetto specificato viene visualizzato come icona e l'immagine non verrà modificata automaticamente.|
 | FileFormatType| Corda| VERO| Falso|| Ottiene e imposta il tipo di file dei dati dell'oggetto ole incorporato|
-| ImageSourceFullName| Corda| VERO| Falso|| Ottiene o imposta il percorso e il nome del file di origine per l'immagine collegata.|
+|ImageSourceFullName| Corda| VERO| Falso|| Ottiene o imposta il percorso e il nome del file di origine per l'immagine collegata.|
 | IsAutoSize| Booleano| VERO| Falso|| Vero indica che la dimensione dell'oggetto ole verrà modificata automaticamente come dimensione dell'istantanea del contenuto incorporato quando l'oggetto ole viene attivato.|
 | IsLink| Booleano| VERO| Falso|| Restituisce vero se OleObject si collega al file.|
 | ProgID| Corda| VERO| Falso|| Ottiene o imposta il ProgID dell'oggetto OLE.|
@@ -36,7 +37,7 @@ weight: 50
 | X| Numero intero| VERO| Falso|||
 | Y| Numero intero| VERO| Falso|||
 | Angolo di rotazione| Galleggiante| VERO| Falso|||
-| HtmlText| Corda| VERO| Falso|||
+|HtmlText| Corda| VERO| Falso|||
 | Testo| Corda| VERO| Falso|||
 | Testo alternativo| Corda| VERO| Falso|||
 | TestoAllineamento orizzontale| Corda| VERO| Falso|||
@@ -57,4 +58,5 @@ weight: 50
 | Collegamento ipertestuale| Corda| VERO| Falso|||
 | collegamento| Classe: collegamento| VERO| Falso|||
 
-**Nome del genitore** : (Forma)[forma]
+**Nome del genitore** : [Forma](/specification/model/shape)
+

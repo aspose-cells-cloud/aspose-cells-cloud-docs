@@ -3,6 +3,7 @@ title:  Ottieni l'asse della categoria del grafico
 type: docs
 url: /it/charts/category-axis/get/
 weight: 60
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Ottieni asse categoria grafico
 ---
 Questo REST API indica Ottieni asse categoria grafico
  

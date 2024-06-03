@@ -6,6 +6,7 @@ url: /tr/storage/
 keywords: disc-usage, file version, exist
 description: Aspose.Cells Cloud REST API, klasörün yüklenmesini, indirilmesini, silinmesini, kopyalanmasını ve taşınmasını destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 100
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Depolama
 ---
 Aspose.Cells Bulut, çeşitli depolama işletim API'leri sağlar.
 

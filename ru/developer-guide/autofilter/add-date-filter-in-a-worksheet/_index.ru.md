@@ -8,6 +8,7 @@ aliases: [/add-date-filter-in-a-worksheet/,/autofilter/add-a-date-filter/]
 keywords: Adds a date filter on an Excel worksheet
 description: Облако Aspose.Cells API поддерживает добавление фильтра даты на лист Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 65
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Добавить фильтр даты в лист Excel
 ---
 Этот REST API указывает на добавление `date filter` на рабочий лист Excel.
 
@@ -22,10 +23,10 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/
 
 | Имя параметра| Тип| Путь/строка запроса/HTTPBody|Описание|
 |:- |:- |:- |:- |
-| имя| нить| Путь|Имя рабочей книги.|
+| имя| нить| Путь| Имя рабочей книги.|
 | имя листа| нить| Путь| Имя рабочего листа.|
 |диапазон|нить| Запрос||
-|полеИндекс|целое число| Запрос||
+|полеиндекс|целое число| Запрос||
 |тип даты и времени группировки|нить| Запрос| День/час/минута/месяц/секунда/год|
 |год|целое число| Запрос||
 |месяц|целое число| Запрос||

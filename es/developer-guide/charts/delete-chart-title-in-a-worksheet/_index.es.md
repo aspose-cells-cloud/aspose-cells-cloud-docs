@@ -4,6 +4,7 @@ type: docs
 url: /es/charts/delete-chart-title/
 aliases: [/delete-chart-title-in-a-worksheet/]
 weight: 150
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Eliminar título de gráfico en una hoja de trabajo
 ---
 Este REST API indica ocultar título en el gráfico
  

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/model/workbookencryptionrequest/
 description: "Aspose.Cells Molnmodellspecifikation : WorkbookEncryptionRequest. Hantera enkelt Excel och andra kalkylarksdokument med funktioner som att öppna, generera, redigera, dela, slå samman, jämföra och konvertera"
+kwords: Excel, Office, Kalkylblad, Cloud REST API, WorkbookEncryptionRequest
 weight: 50
 ---
 ## **arbetsbokEncryptionRequest**
@@ -14,5 +15,5 @@ weight: 50
 |:- |:- |:- |:- |:- |:- |
 | EncryptionType| Sträng| Sann| Falsk|| Arbetsbokens krypteringstyp.|
 | KeyLength| Heltal| Sann| Falsk|| Längd på krypteringsnyckeln.|
-| Lösenord| Sträng| Sann| Falsk||Lösenord för kryptering.|
+| Lösenord| Sträng| Sann| Falsk|| Lösenord för kryptering.|
 

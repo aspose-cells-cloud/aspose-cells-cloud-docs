@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/getworksheetwithformat/
 description: Çalışma sayfasını çalışma kitabından belirtilen biçimde alın
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, GetWorksheetWithFormat
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetWithFormat" >}}
@@ -19,7 +20,7 @@ weight: 50
      {{< blocks/products/cells/docs-Parameter-content columns="sayfaAdı,dize,Çalışma sayfasının adı." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametre Adı,Tip,Açıklama" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="format,dize,Dışa aktarma formatı(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/076173 481/MD [İşaretleme]/Numaralar)." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="format,dize,Dışa aktarma formatı(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/07617 3481/MD [İşaretleme]/Numaralar)." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="dikeyÇözünürlük,tamsayı,Görüntü dikey çözünürlüğü." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="yatayÇözünürlük,tamsayı,Görüntü yatay çözünürlüğü." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="alan,dize,Yazdırılacak aralığı temsil eder." >}} 

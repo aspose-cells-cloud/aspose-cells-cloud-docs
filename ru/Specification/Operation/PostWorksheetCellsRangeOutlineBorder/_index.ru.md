@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postworksheetcellsrangeoutlineborder/
 description: Применение контурной границы вокруг диапазона ячеек
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostWorksheetCellsRangeOutlineBorder
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangeOutlineBorder" >}}

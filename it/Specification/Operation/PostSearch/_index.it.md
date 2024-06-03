@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/postsearch/
 description: Cerca il testo specificato all'interno dei file Excel
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PostSearch
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostSearch" >}}

@@ -8,6 +8,7 @@ aliases: [/move-pivot-table/]
 keywords: Move a pivot table in an Excel file
 description: Aspose.Cells Cloud REST API supporta lo spostamento di una tabella pivot in un file Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 120
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Sposta una tabella pivot in un file Excel
 ---
 Questo REST API indica la tabella pivot `move`.
  

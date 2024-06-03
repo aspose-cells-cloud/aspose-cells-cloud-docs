@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/getcellscloudserviceshealthcheck/
 description: Récupérer les descriptions de cellules dans un format spécifié
+kwords: Excel, Office, feuille de calcul, Cloud REST API, GetCellsCloudServicesHealthCheck
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetCellsCloudServicesHealthCheck" >}}

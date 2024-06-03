@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/model/pptxsaveoptions/
 description: "Aspose.Cells Especificación del modelo de nube: PptxSaveOptions. Maneje sin esfuerzo Excel y otros documentos de hoja de cálculo con funciones como abrir, generar, editar, dividir, fusionar, comparar y convertir."
+kwords: Excel, Office, Hoja de cálculo, Nube REST API, PptxSaveOptions
 weight: 50
 ---
 ## **pptxGuardarOpciones**
@@ -12,9 +13,9 @@ weight: 50
 
 | Nombre de la propiedad| tipo de propiedad| Anulable| Solo lectura| Valor por defecto| Descripción|
 |:- |:- |:- |:- |:- |:- |
-| Ignorar filas ocultas| Booleano| Verdadero| FALSO|||
-| Ajustar tamaño de fuente para tipo de fila| Cadena| Verdadero| FALSO|||
-| Exportar tipo de vista| Cadena| Verdadero| FALSO|||
+| Ignorar filas ocultas| Booleano| Verdadero| FALSO|| Ignorar filas ocultas|
+| Ajustar tamaño de fuente para tipo de fila| Cadena| Verdadero| FALSO|| Ajustar el tamaño de fuente para el tipo de fila|
+| Exportar tipo de vista| Cadena| Verdadero| FALSO|| Obtiene y establece el tipo de visualización al exportar a PowerPoint. El tipo de exportación predeterminado funciona como impresión.|
 | Fuente predeterminada| Cadena| Verdadero| FALSO|||
 | CheckWorkbookDefaultFont| Booleano| Verdadero| FALSO|||
 | Comprobar compatibilidad de fuentes| Booleano| Verdadero| FALSO|||
@@ -31,7 +32,7 @@ weight: 50
 | Idioma de edición predeterminado| Cadena| Verdadero| FALSO|||
 | EmfRenderConfiguración| Cadena| Verdadero| FALSO|||
 | Fusionar áreas| Booleano| Verdadero| FALSO|||
-|Ordenar nombres externos| Booleano| Verdadero| FALSO|||
+| Ordenar nombres externos| Booleano| Verdadero| FALSO|||
 | ActualizarSmartArt| Booleano| Verdadero| FALSO|||
 | Guardar formato| Cadena| Verdadero| FALSO|||
 | Carpeta de archivos en caché| Cadena| Verdadero| FALSO|||
@@ -39,7 +40,8 @@ weight: 50
 | Crear directorio| Booleano| Verdadero| FALSO|||
 | Habilitar compresión HTTP| Booleano| Verdadero| FALSO|||
 | Actualizar caché de gráficos| Booleano| Verdadero| FALSO|||
-|Ordenar nombres| Booleano| Verdadero| FALSO|||
+| Ordenar nombres| Booleano| Verdadero| FALSO|||
 | Validar áreas fusionadas| Booleano| Verdadero| FALSO|||
 
-**Nombre del padre** : (Opciones de guardado paginadas)[opciones de guardado paginadas]
+**Nombre del padre** : [Opciones de guardado paginadas](/specification/model/paginatedsaveoptions)
+

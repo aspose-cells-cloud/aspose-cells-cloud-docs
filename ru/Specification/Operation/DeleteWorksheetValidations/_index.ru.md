@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/deleteworksheetvalidations/
 description: Удалить все проверки на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, DeleteWorksheetValidations
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetValidations" >}}

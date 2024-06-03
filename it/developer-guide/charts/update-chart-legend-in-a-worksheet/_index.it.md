@@ -4,6 +4,7 @@ type: docs
 url: /it/charts/legend/update/
 aliases: [/update-chart-legend-in-a-worksheet/]
 weight: 160
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Aggiorna legenda del grafico in un foglio di lavoro
 ---
 Questo REST API indica la legenda del grafico di aggiornamento
  

@@ -3,21 +3,22 @@ title: PostConvertWorkbookToSQ
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postconvertworkbooktosql/
-description: Konvertieren Sie die Datei Excel in SQL-Skriptdateien
+description: Konvertieren Sie die Datei Excel in SQL Script-Dateien
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostConvertWorkbookToSQL
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostConvertWorkbookToSQL" >}}
 {{< blocks/products/cells/docs-title titlemsg="Convert Excel file to SQL Script files." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/convert/sql,POST,Konvertieren Sie die Datei Excel in SQL-Skriptdateien.,<a href=\'https://apireference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToSQL\'>PostConvertWorkbookToSQL</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/convert/sql,POST,Datei Excel in SQL-Skriptdateien konvertieren.,<a href=\'https://apireference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToSQL\'>PostConvertWorkbookToSQL</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="Passwort, Zeichenfolge, Das zum Öffnen einer Excel-Datei erforderliche Passwort." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction,boolean,Gibt an, ob die Einschränkung der Excel-Datei überprüft wird, wenn der Benutzer zellenbezogene Objekte ändert." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="region,string,Die regionalen Einstellungen für die Arbeitsmappe." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Kennwort, Zeichenfolge, Das zum Öffnen einer Excel-Datei erforderliche Kennwort." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction, boolean, ob die Einschränkung der Excel-Datei überprüft wird, wenn der Benutzer zellenbezogene Objekte ändert." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Region, Zeichenfolge, Die regionalen Einstellungen für die Arbeitsmappe." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/ConversionController/PostConvertWorkbookToSQL\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

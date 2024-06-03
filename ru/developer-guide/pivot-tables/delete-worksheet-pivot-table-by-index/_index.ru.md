@@ -8,6 +8,7 @@ aliases: [/delete-worksheet-pivot-table-by-index/]
 keywords: Delete a pivot table in an Excel file
 description: Aspose.Cells Cloud REST API поддерживает удаление сводной таблицы в файле Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 70
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Удаление сводной таблицы на листе Excel.
 ---
 Этот REST API указывает сводную таблицу рабочего листа `delete` по индексу.
  

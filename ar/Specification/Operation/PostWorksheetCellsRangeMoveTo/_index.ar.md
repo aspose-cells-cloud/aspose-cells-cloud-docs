@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postworksheetcellsrangemoveto/
 description: انقل النطاق الحالي إلى النطاق الوجهة
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostWorksheetCellsRangeMoveTo
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangeMoveTo" >}}

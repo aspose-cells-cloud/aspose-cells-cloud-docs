@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/getchartareafillformat/
 description: استرداد وصف تنسيق تعبئة منطقة المخطط في ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، GetChartAreaFillFormat
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetChartAreaFillFormat" >}}

@@ -6,12 +6,13 @@ type: docs
 url: /zh/oleobjects/update/
 aliases: [/update-a-specific-oleobject-from-excel-worksheet/]
 keywords: Update an OLE object in an Excel worksheet
-description: Aspose.Cells Cloud REST API 支持更新 Excel 工作表中的 OLE 对象。 SDK支持多种开发语言。它们包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 swift
+description: Aspose.Cells Cloud REST API 支持更新 Excel 工作表中的 OLE 对象。SDK 支持多种开发语言。其中包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 swift
 weight: 30
+kwords: Excel，Office 云，REST API，电子表格，PDF，CSV，Json，Markdwon，在 Excel 工作表中更新 OLE 对象
 ---
-此 REST API 向 `update` 指示 Excel 工作表中的 `OLE object`。
+此 REST API 表示 Excel 工作表中的 `update` 和 `OLE object`。
  
-## RSET API
+## 重置 API
  
 ```bash
  
@@ -24,14 +25,14 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects
 |:- |:- |:- |:- |
 |姓名|细绳|小路|工作簿名称。|
 |工作表名称|细绳|小路|工作表名称。|
-|对象索引|整数|小路|Ole对象索引|
-|奥莱||身体|奥莱对象|
+|对象索引|整数|小路|Ole 对象索引|
+|奥莱||身体|Ole 对象|
 |文件夹|细绳|询问|工作簿文件夹。|
 |存储名称|细绳|询问|存储名称。|
  
-这[开放API规范](https://apireference.aspose.cloud/cells/#/OleObjects/PostUpdateWorksheetOleObject)定义了一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/OleObjects/PostUpdateWorksheetOleObject)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
  
-您可以使用cURL命令行工具轻松访问Aspose.Cells Web服务。以下示例展示如何使用 cURL 呼叫云端 API。
+您可以使用 cURL 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例显示如何使用 cURL 调用云 API。
  
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
  
@@ -64,9 +65,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/" \
  
 {{< /tabs >}}
  
-## 云SDK系列
+## Cloud SDK 系列
  
-使用 SDK 是加快开发速度的最佳方式。 SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)有关 Aspose.Cells Cloud SDK 的完整列表。
+使用 SDK 是加快开发速度的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)获得 Aspose.Cells Cloud SDKs 的完整列表。
  
 以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
  

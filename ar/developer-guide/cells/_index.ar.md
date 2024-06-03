@@ -7,6 +7,7 @@ aliases: [/working-with-worksheets/]
 keywords: REST API, spreadsheets, excel, cell
 description: "Cells.سحابة API لـ Excel تعمل: الخلايا تعمل"
 weight: 100
+kwords: Excel، Office كلاود، ريست API، جدول بيانات، PDF، CSV، Json، ماركدوون، Cells
 ---
  Cells هو كائن التشغيل الأساسي لـ Aspose.Cells لملف Excel.
 

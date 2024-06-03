@@ -7,6 +7,7 @@ aliases: [/working-with-autofilter/]
 keywords: Get, add， delete, and so on for auto filter on an Excel worksheet
 description: Las API de la nube Aspose.Cells admiten obtener, agregar, eliminar, etc. para el filtrado automático en una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 100
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Autofiltro
 ---
 El filtro automático es la forma más rápida de seleccionar solo aquellos elementos de la hoja de trabajo que desea mostrar en una lista. La función de filtro automático permite a los usuarios filtrar elementos en una lista según un criterio establecido. Filtrar según texto, números o fechas.
 
@@ -29,7 +30,7 @@ para filtrar datos según la propiedad del color de relleno de las celdas.</p>
     <td class="col-md-2"> <li>Fecha</li> </td>
   <td class="col-md-10">
   <p>
- Se pueden implementar diferentes tipos de filtros de fecha, como filtrar todas las filas que tienen fechas en enero de 2018.<a href="/cells/es/autofilter/add-date-filter/">el API de agregar filtro de color de fecha</a> puede implementar esta funcionalidad.
+Se pueden implementar diferentes tipos de filtros de fecha, como filtrar todas las filas que tienen fechas en enero de 2018.<a href="/cells/es/autofilter/add-date-filter/">el API de agregar filtro de color de fecha</a> puede implementar esta funcionalidad.
 </p>
   </td>
   </tr>
@@ -53,7 +54,7 @@ para filtrar datos según la propiedad del color de relleno de las celdas.</p>
     <td class="col-md-2"> <li>Texto</li> </td>
   <td class="col-md-10">
   <p>
- Si una columna contiene texto y se deben seleccionar celdas que contengan un texto particular,<a href="/cells/es/autofilter/add-filter/"> El filtro de adición API</a>puede ser usado.
+ Si una columna contiene texto y se deben seleccionar celdas que contengan un texto particular,<a href="/cells/es/autofilter/add-filter/"> El filtro de adición API</a> puede ser usado.
 </p>
   </td>
   </tr>
@@ -79,7 +80,7 @@ para filtrar datos según la propiedad del color de relleno de las celdas.</p>
     <td class="col-md-2"> <li>Filtro personalizado</li> </td>
   <td class="col-md-10">
   <p>
- Aspose.Cells La nube proporciona<a href="/cells/es/autofilter/add-dynamic-filter/"> filtros personalizados API</a> como filas de filtro que contienen una cadena específica y filas de filtro que comienzan o terminan con una cadena específica.
+ Aspose.Cells La nube proporciona<a href="/cells/es/autofilter/add-dynamic-filter/">filtros personalizados API</a> como filas de filtro que contienen una cadena específica y filas de filtro que comienzan o terminan con una cadena específica.
 </p>
   </td>
   </tr>

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/putworksheetdatefilter/
 description: Aplicar un filtro de fecha en la hoja de trabajo.
+kwords: Excel, Office, hoja de cálculo, nube REST API, PutWorksheetDateFilter
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetDateFilter" >}}
@@ -21,7 +22,7 @@ weight: 50
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Nombre del parámetro, tipo, descripción" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="rango,cadena,Representa el rango al que se aplica el Autofiltro especificado." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="fieldIndex,integer,El desplazamiento entero del campo en el que desea basar el filtro (desde la izquierda de la lista; el campo más a la izquierda es el campo 0)." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="dateTimeGroupingType,string,Especifica cómo agrupar valores de fecha y hora (día, hora, minuto, mes, segundo, año)." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="dateTimeGroupingType,string,Especifica cómo agrupar valores de fecha y hora (Día, Hora, Minuto, Mes, Segundo, Año)." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="año, número entero, el año." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="mes, número entero, el mes." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="día, número entero, el día." >}} 

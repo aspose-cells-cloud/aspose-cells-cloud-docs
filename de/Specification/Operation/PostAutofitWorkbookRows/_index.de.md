@@ -4,25 +4,26 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postautofitworkbookrows/
 description: Zeilen in der Arbeitsmappe automatisch anpassen
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostAutofitWorkbookRows
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostAutofitWorkbookRows" >}}
 {{< blocks/products/cells/docs-title titlemsg="Autofit rows in the workbook." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/autofitrows,POST,Autofit rows in the workbook.,<a href=\'https://apireference.aspose.cloud/cells/#/Workbook/PostAutofitWorkbookRows\'>PostAutofitWorkbookRows</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/autofitrows,POST,Zeilen in der Arbeitsmappe automatisch anpassen.,<a href=\'https://apireference.aspose.cloud/cells/#/Workbook/PostAutofitWorkbookRows\'>PostAutofitWorkbookRows</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="startRow,integer,Startzeile." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="endRow,integer,Ende der Zeile." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="onlyAuto,boolean,Nur automatisch." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="startRow,Integer,Startzeile." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="endRow,integer,Zeilenende." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="onlyAuto, boolean, Nur automatisch." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/WorkbookController/PostAutofitWorkbookRows\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/model/linkelement/
 description: "Aspose.Cells Спецификация облачной модели: LinkElement. Легко обрабатывайте Excel и другие документы электронных таблиц с помощью таких функций, как открытие, создание, редактирование, разделение, слияние, сравнение и преобразование."
+kwords: Excel, Office, электронная таблица, Cloud REST API, LinkElement
 weight: 50
 ---
 ## **ссылкаЭлемент**
@@ -35,7 +36,6 @@ weight: 50
 	-  [Настройка страницы](pagesetup) 
 	-  [Ряд](row) 
 	-  [Строки](rows) 
-	-  [СплитРезультатДокумент](splitresultdocument) 
 	-  [Стили](styles) 
 	-  [Текститем](textitem) 
 	-  [Текстовые элементы](textitems) 

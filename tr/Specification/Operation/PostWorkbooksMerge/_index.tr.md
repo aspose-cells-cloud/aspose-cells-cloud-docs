@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/postworkbooksmerge/
 description: Çalışma kitabını mevcut çalışma kitabıyla birleştirme
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PostWorkbooksMerge
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbooksMerge" >}}

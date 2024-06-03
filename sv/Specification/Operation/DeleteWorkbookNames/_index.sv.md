@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/deleteworkbooknames/
 description: Ta bort alla namngivna intervall i arbetsboken
+kwords: Excel, Office, Kalkylblad, Cloud REST API, DeleteWorkbookNames
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorkbookNames" >}}

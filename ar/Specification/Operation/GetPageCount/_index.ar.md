@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/getpagecount/
 description: الحصول على عدد الصفحات في المصنف
+kwords: Excel، Office، جدول البيانات، Cloud REST API، GetPageCount
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetPageCount" >}}

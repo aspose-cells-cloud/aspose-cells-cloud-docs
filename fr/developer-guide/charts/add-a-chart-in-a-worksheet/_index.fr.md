@@ -4,6 +4,7 @@ type: docs
 url: /fr/charts/add/
 aliases: [/add-a-chart-in-a-worksheet/]
 weight: 20
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdwon, Ajouter un graphique dans une feuille de calcul
 ---
 Ce REST API indique l'ajout d'un nouveau graphique à la feuille de calcul.
  
@@ -16,7 +17,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Nom du classeur.|
 | Nom de la feuille| chaîne| chemin| Le nom de la feuille de calcul.|
@@ -26,13 +27,13 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts
 | Ligne inférieureDroite| entier| requête|0 |
 | Colonne inférieure droite| entier| requête|0 |
 | zone| chaîne| requête| Spécifie les valeurs à partir desquelles tracer la série de données.|
-| estVertical| booléen| requête| Vrai|
+| estVertical|booléen| requête| Vrai|
 | catégorieDonnées| chaîne| requête| Obtient ou définit la plage des valeurs de l'axe de catégorie. Il peut s'agir d'une plage de cellules (telle que « d1:e10 »).|
-| isAutoGetSerialName| booléen| requête| Vrai|
+|isAutoGetSerialName|booléen| requête| Vrai|
 | titre| chaîne| requête| Spécifie le nom du titre du graphique.|
 | dossier| chaîne| requête| Le dossier du classeur.|
 | Nom de stockage| chaîne| requête| nom de stockage.|
-|étiquettes de données| booléen| requête| Vrai|
+| étiquettes de données|booléen| requête| Vrai|
 | dataLabelsPosition| chaîne| requête| Au-dessus de|
 | feuille de tableau croisé dynamique| chaîne| requête||
 | NomTableauPivot| chaîne| requête||

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/postworksheetcellsrangescopy/
 description: Kopiera innehåll från källområdet till målområdet i kalkylbladet
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostWorksheetCellsRangesCopy
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangesCopy" >}}

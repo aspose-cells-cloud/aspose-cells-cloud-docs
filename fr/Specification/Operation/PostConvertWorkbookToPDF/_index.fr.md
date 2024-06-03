@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postconvertworkbooktopdf/
 description: Convertir le fichier Excel en fichiers PDF
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostConvertWorkbookToPDF
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostConvertWorkbookToPDF" >}}

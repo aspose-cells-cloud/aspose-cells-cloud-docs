@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/postworkbookdatadeduplication/
 description: Datadeduplicering av kalkylbladsfiler används främst för att eliminera dubbletter av data i tabeller och intervall
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostWorkbookDataDeduplication
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookDataDeduplication" >}}

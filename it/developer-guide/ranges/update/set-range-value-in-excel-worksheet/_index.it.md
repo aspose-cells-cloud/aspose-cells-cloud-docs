@@ -8,6 +8,7 @@ aliases: [/set-range-value-in-excel-worksheet/]
 keywords: Set range value on an Excel workshee
 description: Aspose.Cells Cloud REST API supporta l'impostazione del valore dell'intervallo su un foglio di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 72
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Imposta il valore dell'intervallo su un foglio di lavoro Excel
 ---
 Questo REST API indica inserisce un valore nell'intervallo, se appropriato il valore verrà convertito in un altro tipo di dati e il formato del numero della cella verrà ripristinato.
             
@@ -27,8 +28,8 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/val
 | nomefoglio| corda| sentiero| nome del foglio di lavoro|
 | valore| corda| domanda| Valore immesso|
 | allineare|| corpo| intervallo nel foglio di lavoro|
-| èConvertito| booleano| domanda| Falso|
-| setStyle| booleano| domanda| Falso|
+| èConvertito|booleano| domanda| Falso|
+| setStyle|booleano| domanda| Falso|
 | cartella| corda| domanda| Cartella della cartella di lavoro.|
 | storageName| corda| domanda| nome dell'archivio.|
  

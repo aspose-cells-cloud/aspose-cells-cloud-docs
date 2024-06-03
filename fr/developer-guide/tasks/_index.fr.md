@@ -7,6 +7,7 @@ aliases: [/working-with-tasks/]
 keywords: REST API, task, spreadsheets, exce
 description: "Cells.Cloud API pour Excel exploiter : exploiter Excel avec des tâches"
 weight: 100
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdwon, Tâches
 ---
 ## Travailler avec des tâches.
 
@@ -17,4 +18,4 @@ weight: 100
 - [Travailler avec la tâche ImportData](/cells/fr/working-with-importdata-task/)
 - [Travailler avec la tâche SaveResult](/cells/fr/working-with-saveresult-task/)
 - [Travailler avec la tâche SmartMarker](/cells/fr/working-with-smartmarker-task/)
-- [Travailler avec WorksheetOperates dans la tâche API](/cells/fr/working-with-worksheetoperates-in-task-api/)
+- [Utilisation de WorksheetOperates dans la tâche API](/cells/fr/working-with-worksheetoperates-in-task-api/)

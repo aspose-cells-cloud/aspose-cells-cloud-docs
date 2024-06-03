@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/model/cellscolor/
 description: "Aspose.Cells Bulut modeli spesifikasyonu: CellsColor. Açma, oluşturma, düzenleme, bölme, birleştirme, karşılaştırma ve dönüştürme gibi özelliklerle Excel ve diğer elektronik tablo belgelerini zahmetsizce yönetin"
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, CellsColor
 weight: 50
 ---
 ## **hücrelerRenk**
 
- 
+ Her türlü rengi temsil eder.
 
 | Mülkiyet adı| Emlak Tipi| Geçersiz kılınabilir| Sadece oku| Varsayılan değer| Tanım|
 |:- |:- |:- |:- |:- |:- |

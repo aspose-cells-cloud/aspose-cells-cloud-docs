@@ -4,13 +4,14 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/postsplit/
 description: Excel elektronik tablo dosyasını çalışma sayfalarına göre bölün ve çeşitli formatlarda çıktı dosyaları oluşturun
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PostSplit
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostSplit" >}}
 {{< blocks/products/cells/docs-title titlemsg="Split Excel spreadsheet files based on worksheets and create output files in various formats." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Açıklama,API referans" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/split,POST,Split Excel çalışma sayfalarına dayalı elektronik tablo dosyaları ve çeşitli formatlarda çıktı dosyaları oluşturun.,<a href=\'https://apireference.aspose.cloud/cells/#/LightCells/PostSplit\'>PostSplit</a href=\'https://apireference.aspose.cloud/cells/#/LightCells/PostSplit</ a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/split,POST,Split Excel çalışma sayfalarını temel alan elektronik tablo dosyaları ve çeşitli formatlarda çıktı dosyaları oluşturun.,<a href=\'https://apireference.aspose.cloud/cells/#/LightCells/PostSplit\'>PostSplit</ a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/postpivottableupdatepivotfields/
 description: Aggiorna i campi pivot nella tabella pivot
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PostPivotTableUpdatePivotFields
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostPivotTableUpdatePivotFields" >}}

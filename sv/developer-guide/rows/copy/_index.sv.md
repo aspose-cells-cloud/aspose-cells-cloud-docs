@@ -8,6 +8,7 @@ aliases: [/copy-rows-in-excel-worksheet/]
 keywords: Copy rows on an Excel workshee
 description: Aspose.Cells Cloud REST API stöder kopiering av rader på ett Excel-kalkylblad. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 30
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Kopiera rader på ett Excel kalkylblad
 ---
 Denna REST API indikerar kopiering av kalkylbladsrader.
  
@@ -22,7 +23,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
  
 | Parameternamn| Typ| Sökväg/Frågesträng/HTTPBody|Beskrivning|
 |:- |:- |:- |:- |
-| namn| sträng| väg|Arbetsbokens namn.|
+| namn| sträng| väg| Arbetsbokens namn.|
 | arknamn| sträng| väg| Kalkylbladets namn.|
 | sourceRowIndex| heltal| fråga| Källradsindex|
 | destinationRowIndex| heltal| fråga| Destinationsradindex|

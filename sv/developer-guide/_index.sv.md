@@ -7,6 +7,7 @@ aliases: [/developer-guide/v3.0/,/developer-guide-v3.0/]
 keywords: How to use Aspose.Cells Cloud REST APIs. Office Excel 2013,  Office Excel 2016,  Office Excel 2019，office Excel 365
 description: Den här utvecklarguiden beskriver praktiska scenarier och tips som hjälper dig att använda specifika Aspose.Cells for .NET funktioner, uppnå ett visst Excel dokumentutseende eller göra ett användningsfall möjligt
 weight: 20
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Developer Guide
 ---
 ## Arbetar med Aspose.Cells Cloud REST API:er.
 
@@ -120,7 +121,7 @@ weight: 20
             <li><a href="/cells/sv/add-a-pivot-table-in-a-worksheet/">Lägger till en pivottabell på ett Excel kalkylblad.</a></li>
             <li><a href="/cells/sv/delete-worksheet-pivot-tables/">Tar bort på alla pivottabeller ett Excel kalkylblad.</a></li>
             <li><a href="/cells/sv/delete-worksheet-pivot-table-by-index/">Tar bort en pivottabell efter index på ett Excel-kalkylblad.</a></li>
-            <li><a href="/cells/sv/update-cell-style-for-pivot-table/">Uppdaterar cellstilen för pivottabellen på ett Excel-kalkylblad.</a></li>
+            <li><a href="/cells/sv/update-cell-style-for-pivot-table/">Uppdaterar cellstil för pivottabellen på ett Excel-kalkylblad.</a></li>
             <li><a href="/cells/sv/update-style-for-pivot-table/">Uppdaterar stilen för pivottabellen på ett Excel-kalkylblad.</a></li>
             <li><a href="/cells/sv/working-with-pivot-filters/">Arbeta med pivotfilter på ett Excel kalkylblad</a></li>
             <li><a href="/cells/sv/hide-pivot-field-item/">Döljer pivotfältsobjekt på ett Excel-kalkylblad</a></li>

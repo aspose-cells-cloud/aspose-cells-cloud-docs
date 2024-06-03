@@ -3,17 +3,19 @@ title: SplitResultRespons
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/model/splitresultresponse/
-description: "Aspose.Cells Cloud-Modellspezifikation: SplitResultResponse. Bearbeiten Sie mühelos Excel und andere Tabellenkalkulationsdokumente mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+description: "Aspose.Cells Cloud-Modellspezifikation: SplitResultResponse. Müheloses Bearbeiten von Excel und anderen Tabellenkalkulationsdokumenten mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, SplitResultResponse
 weight: 50
 ---
-## **splitResultResponse**
+## **geteilteErgebnisantwort**
 
- 
+ Stellt die SplitResult-Antwort dar.
 
-| Name des Anwesens| Art der Immobilie| Nullbar| Schreibgeschützt| Standardwert| Beschreibung|
+| Name des Anwesens| Art der Immobilie| Nullwerte zulassen| Schreibgeschützt| Standardwert| Beschreibung|
 |:- |:- |:- |:- |:- |:- |
-| Ergebnis| Klasse:SplitResult| WAHR| FALSCH|| Ruft das Aufteilungsergebnis ab oder legt es fest.|
+| Ergebnis| Klasse:SplitResult| WAHR| FALSCH||Ruft das Teilungsergebnis ab oder legt es fest.|
 | Code| Ganze Zahl| WAHR| FALSCH|||
 | Status| Zeichenfolge| WAHR| FALSCH|||
 
-**Elternname** : (CellsCloudResponse)[cellscloudresponse]
+**Elternname** : [ZellenCloudResponse](/specification/model/cellscloudresponse)
+

@@ -8,6 +8,7 @@ aliases: [/get-all-document-properties/]
 keywords: Get properties from excel files
 description: Aspose.Cells Cloud REST API поддерживает получение свойств из файлов Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 25
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Получить все свойства документа
 ---
 Этот REST API указывает на чтение свойств документа.
  

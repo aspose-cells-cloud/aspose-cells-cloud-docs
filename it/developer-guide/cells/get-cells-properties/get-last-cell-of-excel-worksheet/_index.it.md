@@ -3,6 +3,7 @@ title: Ottieni l'ultima cella del foglio di lavoro Excel
 type: docs
 url: /it/get-last-cell-of-excel-worksheet/
 weight: 30
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Ottieni l'ultima cella del foglio di lavoro Excel
 ---
 Questo REST API indica che viene ottenuto `endcell` in un file Excel quando il parametro `cellOrMethodName` è `endcell`.
 

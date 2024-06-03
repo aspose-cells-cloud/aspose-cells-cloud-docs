@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/putpivottablefield/
 description: Добавьте сводное поле в сводную таблицу
+kwords: Excel, Office, электронная таблица, Cloud REST API, PutPivotTableField
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutPivotTableField" >}}

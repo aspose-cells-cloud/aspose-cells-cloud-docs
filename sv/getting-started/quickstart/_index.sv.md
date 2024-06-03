@@ -5,6 +5,7 @@ type: docs
 url: /sv/quickstart/
 description: Aspose.Cells Cloud stöder Excel för att skapa, konvertera, sammanfoga, dela, skydda, inre objektoperation och så vidare
 weight: 20
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Quickstart
 ---
 Dessa instruktioner guidar dig genom att initiera Aspose.Cells Cloud API och installera de nödvändiga kalkylbladsbearbetningsbiblioteken.
 
@@ -51,7 +52,7 @@ För att få tillgång till information om dina applikationer, vänligen utför 
 
 ![applications.png](applications.png)
 
- 3. Scrolla ner till botten av sidan, där du hittar standarden**"Fist App"** Ansökan. Klicka på**"Första appen"**objekt för att visa och uppdatera dina säkerhetsuppgifter.
+ 3. Scrolla ner till botten av sidan, där du hittar standarden**"Fist App"** Ansökan. Klicka på**"Första appen"** objekt för att visa och uppdatera dina säkerhetsuppgifter.
 
 ![firstapp.png](firstapp.png)
 
@@ -73,11 +74,11 @@ Grattis! Du har fått dina säkerhetsuppgifter för att autentisera Aspose.Cells
 
 Nu är ditt konto fullt konfigurerat och utvecklarmiljön är installerad. Du kan börja skriva kod med den valda SDK:n.
 
- Vänligen se[Utvecklarguide](https://docs.aspose.cloud/cells/developer-guide/) för att enkelt hitta information om hur du använder Cloud API.
+Vänligen se[Utvecklarguide](https://docs.aspose.cloud/cells/developer-guide/) för att enkelt hitta information om hur du använder Cloud API.
 
 ## Be om hjälp, om det behövs
 
- Beskriv gärna dina problem och ställ frågor på vår[Molnforum](https://forum.aspose.cloud/c/cells/7). Aspose teknisk support är redo att hjälpa dig. Notera att Aspose inte tillhandahåller teknisk support via telefon. Telefonsupport är endast tillgänglig för frågor om försäljning och köp.
+ Beskriv gärna dina problem och ställ frågor på vår[Molnforum](https://forum.aspose.cloud/c/cells/7). Aspose teknisk supportteam är redo att hjälpa dig. Notera att Aspose inte tillhandahåller teknisk support via telefon. Telefonsupport är endast tillgänglig för frågor om försäljning och köp.
 
 
 

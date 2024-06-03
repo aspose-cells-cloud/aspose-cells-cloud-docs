@@ -7,6 +7,7 @@ url: /es/workbook/password/
 keywords: Working with password an Excel workbook
 description: Aspose.Cells Cloud REST API admite trabajar con contraseña en un libro de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 100
+kwords: Excel, Office Cloud, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Trabajar con contraseña en un libro de trabajo Excel
 ---
 ## Trabajar con contraseña en un libro de trabajo Excel.
 

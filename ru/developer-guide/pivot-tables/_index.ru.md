@@ -7,6 +7,7 @@ aliases: [/working-with-pivot-tables/]
 keywords: Working with pivot table on an Excel worksheet
 description: Как сделать Aspose.Cells Cloud REST API работать со сводной таблицей на листе Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 100
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, сводные таблицы
 ---
 ## Работа со сводными таблицами в файле Excel.
 

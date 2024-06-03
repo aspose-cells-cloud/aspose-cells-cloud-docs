@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postunhideworksheetcolumns/
 description: إظهار أعمدة ورقة العمل في ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostUnhideWorksheetColumns
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostUnhideWorksheetColumns" >}}

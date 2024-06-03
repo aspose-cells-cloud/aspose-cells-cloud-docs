@@ -6,6 +6,7 @@ url: /es/batch/split
 keywords: Batch split Excel file
 description: Aspose.Cells Cloud API admite archivos divididos por lotes. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 100
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, División por lotes
 ---
 Este REST API indica el `batch split` del archivo elegible.
  
@@ -20,7 +21,7 @@ POST http://api.aspose.cloud/v3.0/cells/batch/split
  
 | Nombre del parámetro| Tipo| Ruta/Cadena de consulta/Cuerpo HTTP|Descripción|
 |:- |:- |:- |:- |
-| Solicitud de división por lotes|| cuerpo||
+|Solicitud de división por lotes|| cuerpo||
 
 **Propiedades de solicitud de división por lotes**
  
@@ -66,7 +67,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/batch/split" \
  
 ## Familia de SDK en la nube
  
-Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel y le permite concentrarse en sus tareas divididas. Por favor revisa el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de nube.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles de bajo nivel y le permite concentrarse en sus tareas divididas. Por favor revisa el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK de nube.
  
 Los siguientes ejemplos de código demuestran cómo realizar llamadas a servicios web Aspose.Cells utilizando varios SDK:
  

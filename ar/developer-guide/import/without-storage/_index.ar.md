@@ -8,6 +8,7 @@ aliases: [/import-data-in-excel-worksheet-without-using-storage/]
 keywords: REST API,  spreadsheets, excel, Import
 description: Cells.Cloud API لاستيراد الملفات Excel
 weight: 10
+kwords: Excel، Office Cloud، REST API، Spreadsheet، PDF، CSV، Json، Markdwon، استيراد البيانات دون استخدام التخزين
 ---
 يعد استيراد البيانات Excel عملية معقدة. تساهم العديد من العوامل في التعقيد، وبالتالي يجب أخذها في الاعتبار أثناء عملية التصدير. تعد القدرة على استيراد أنواع التنسيقات وأنواع البيانات إلى الملف بجودة احترافية دقيقة من أهم ميزات Aspose.Cells Cloud.
 
@@ -26,7 +27,7 @@ POST https://api.aspose.cloud/v3.0/cells/import
 | اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/HTTPBody|وصف|
 |:- |:- |:- |:- |
 | ملف| ملف| بيانات النموذج| ملف للتحميل|
-| خيار الاستيراد| خيارات الاستيراد|HTTPBody| IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/صورة|
+| خيار الاستيراد| خيارات الاستيراد| HTTPBody| IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/صورة|
 
 **معلمات خيارات استيراد البيانات** موصوفة في[الرابط المرجعي](/cells/ar/import/#import-data-option-parameter).
 
@@ -82,7 +83,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/import" \
  
 ## عائلة Cloud SDK
  
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
  
 توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
 

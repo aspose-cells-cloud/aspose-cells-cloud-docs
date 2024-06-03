@@ -8,6 +8,7 @@ aliases: [/import-string-array-into-excel-worksheet/,/import-string-array-into-w
 keywords: Import string array data into Excel files
 description: Aspose.Cells Cloud REST API stöder import av strängarraydata till Excel-filer. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 40
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Importera strängarray till Excel kalkylblad
 ---
 Detta REST API `import string array data` till Excel arbetsblad.
 

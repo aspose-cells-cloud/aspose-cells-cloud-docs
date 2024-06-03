@@ -7,6 +7,7 @@ url: /es/validations/update/
 keywords: Delete a worksheet validation on an Excel worksheet
 description: Aspose.Cells Cloud REST API admite la eliminación de una validación de hoja de trabajo en una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 10
+kwords: Excel, Office Cloud, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Actualizar una validación de hoja de cálculo en una hoja de cálculo Excel
 ---
 Este REST API indica actualizar la validación de la hoja de trabajo por índice en una hoja de trabajo Excel.
  

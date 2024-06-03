@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/model/textformatcondition/
 description: "Aspose.Cells Especificación del modelo de nube: TextFormatCondition. Maneje sin esfuerzo Excel y otros documentos de hoja de cálculo con funciones como abrir, generar, editar, dividir, fusionar, comparar y convertir."
+kwords: Excel, Office, hoja de cálculo, nube REST API, TextFormatCondition
 weight: 50
 ---
 ## **condición de formato de texto**
 
- 
+ Representa la condición del formato de texto.
 
 | Nombre de la propiedad| tipo de propiedad| Anulable| Solo lectura| Valor por defecto| Descripción|
 |:- |:- |:- |:- |:- |:- |
@@ -17,4 +18,5 @@ weight: 50
 | Fórmula 2| Cadena| Verdadero| FALSO|||
 | Operador| Cadena| Verdadero| FALSO|||
 
-**Nombre del padre** (Condición de formato de fórmula) [condición de formato de fórmula]
+**Nombre del padre** : [FórmulaFormatoCondición](/specification/model/formulaformatcondition)
+

@@ -3,6 +3,7 @@ title: Excel Çalışma Sayfasının Son Hücresini Al
 type: docs
 url: /tr/get-last-cell-of-excel-worksheet/
 weight: 30
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel Çalışma Sayfasının Son Hücresini Al
 ---
 Bu REST API, `cellOrMethodName` parametresi `endcell` olduğunda Excel dosyasında gösterilerin `endcell` aldığını gösterir.
 

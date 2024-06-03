@@ -1,33 +1,34 @@
 ﻿---
-title: PutWorksheetColorFilter
+title: ArbeitsblattFarbfilter
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/putworksheetcolorfilter/
 description: Fügen Sie im Arbeitsblatt einen Farbfilter hinzu
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PutWorksheetColorFilter
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetColorFilter" >}}
 {{< blocks/products/cells/docs-title titlemsg="Add a color filter in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/autoFilter/colorFilter,PUT,Fügen Sie einen Farbfilter im Arbeitsblatt hinzu.,<a href=\'https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetColorFilter \'>PutWorksheetColorFilter</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/autoFilter/colorFilter,PUT,Fügen Sie dem Arbeitsblatt einen Farbfilter hinzu.,<a href=\'https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetColorFilter\'>PutWorksheetColorFilter</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Name der Arbeitsmappe." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Name der Arbeitsmappe." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="range,string,Stellt den Bereich dar, für den der angegebene AutoFilter gilt." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="fieldIndex,integer,Der ganzzahlige Offset des Feldes, auf dem Sie den Filter basieren möchten (von links in der Liste; das Feld ganz links ist Feld 0)." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="matchBlanks, boolean, Übereinstimmung mit allen leeren Zellen in der Liste." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="Refresh, boolean, Automatische Filter aktualisieren, um die Zeilen auszublenden oder einzublenden." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Bereich, Zeichenfolge, stellt den Bereich dar, auf den der angegebene AutoFilter angewendet wird." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="fieldIndex,integer,Der ganzzahlige Offset des Felds, auf dem der Filter basieren soll (von links in der Liste; das äußerste linke Feld ist Feld 0)." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="matchBlanks, boolean, Alle leeren Zellen in der Liste übereinstimmend." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Aktualisieren, Boolesch, Automatische Filter aktualisieren, um die Zeilen auszublenden oder sichtbar zu machen." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="colorFilter,class:colorfilterrequest,Farbfilteranforderung." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Farbfilter, Klasse: Farbfilteranforderung, Farbfilteranforderung." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

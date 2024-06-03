@@ -1,31 +1,32 @@
 ﻿---
-title: PutWorksheetHyperlin
+title: 放置工作表Hyperlin
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/putworksheethyperlink/
 description: 在工作表中添加超链接
+kwords: Excel, Office, 电子表格, Cloud REST API, PutWorksheetHyperlink
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetHyperlink" >}}
 {{< blocks/products/cells/docs-title titlemsg="Add hyperlink in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/hyperlinks,PUT,在工作表中添加超链接。,<a href=\'https://apireference.aspose.cloud/cells/#/Hypelinks/PutWorksheetHyperlink\'>PutWorksheetHyperlink< /a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/hyperlinks,PUT,在工作表中添加超链接。,<a href=\'https://apireference.aspose.cloud/cells/#/Hypelinks/PutWorksheetHyperlink\'>PutWorksheetHyperlink</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="参数名称、类型、描述" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="名称，字符串，文件名。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,字符串,工作表名称。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="name，string，文件名。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName，string，工作表名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="firstRow，整数，超链接范围的第一行。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="firstColumn,整数,超链接范围的第一列。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="TotalRows,整数,此超链接范围内的行数。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="TotalColumns,整数,此超链接范围的列数。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="地址，字符串，超链接的地址。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="firstRow，integer，超链接范围的第一行。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="firstColumn，integer，超链接范围的第一列。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="totalRows，integer，此超链接范围内的行数。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="totalColumns，integer，此超链接范围的列数。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="address，string，超链接的地址。" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="文件夹，字符串，文件所在的文件夹。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,文件所在的存储名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName，string，文件所在的存储名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/HypelinksController/PutWorksheetHyperlink\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

@@ -1,26 +1,27 @@
 ﻿---
-title: PutActiveWorkshee
+title: AktivesArbeitsblatt einfügen
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/putactiveworksheet/
 description: Aktiven Arbeitsblattindex in der Arbeitsmappe festlegen
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PutActiveWorksheet
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutActiveWorksheet" >}}
 {{< blocks/products/cells/docs-title titlemsg="Set active worksheet index in the workbook." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/active,PUT,Aktiven Arbeitsblattindex in der Arbeitsmappe festlegen.,<a href=\'https://apireference.aspose.cloud/cells/#/Worksheets/PutActiveWorksheet\'> PutActiveWorksheet</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/active,PUT,Legt den Index des aktiven Arbeitsblatts in der Arbeitsmappe fest.,<a href=\'https://apireference.aspose.cloud/cells/#/Worksheets/PutActiveWorksheet\'>PutActiveWorksheet</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/WorksheetsController/PutActiveWorksheet\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

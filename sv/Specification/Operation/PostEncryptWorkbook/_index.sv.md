@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/postencryptworkbook/
 description: Excel Kryptering
+kwords: Excel, Office, Kalkylblad, Cloud REST API, PostEncryptWorkbook
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostEncryptWorkbook" >}}

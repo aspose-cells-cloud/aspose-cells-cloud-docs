@@ -1,20 +1,21 @@
 ﻿---
-title: ListColum
+title: Listenspalte
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/model/listcolumn/
-description: "Aspose.Cells Cloud-Modellspezifikation: ListColumn. Bearbeiten Sie mühelos Excel und andere Tabellenkalkulationsdokumente mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+description: "Aspose.Cells Cloud-Modellspezifikation: ListColumn. Müheloses Bearbeiten von Excel und anderen Tabellenkalkulationsdokumenten mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, ListColumn
 weight: 50
 ---
-## **listColumn**
+## **Listenspalte**
 
- 
+ Stellt eine Spalte in einer Tabelle dar.
 
-| Name des Anwesens| Art der Immobilie| Nullbar| Schreibgeschützt| Standardwert| Beschreibung|
+| Name des Anwesens| Art der Immobilie| Nullwerte zulassen| Schreibgeschützt| Standardwert| Beschreibung|
 |:- |:- |:- |:- |:- |:- |
 | Name| Zeichenfolge| WAHR| FALSCH|| Ruft den Namen der Spalte ab und legt ihn fest.|
-| Reichweite| Klasse:Bereich| WAHR| FALSCH|| Ruft den Bereich dieser Listenspalte ab.|
-| Summenberechnung| Zeichenfolge| WAHR| FALSCH|| Ruft den Berechnungstyp in der Summenzeile der Listenspalte ab und legt diesen fest.|
-|Formel| Zeichenfolge| WAHR| FALSCH|| Ruft die Formel der Listenspalte ab und legt sie fest.|
-| TotalsRowLabel| Zeichenfolge| WAHR| FALSCH|| Ruft die Anzeigebeschriftungen der gesamten Zeile ab und legt diese fest.|
+| Reichweite| Klasse:Reichweite| WAHR| FALSCH|| Ruft den Bereich dieser Listenspalte ab.|
+| SummenBerechnung| Zeichenfolge| WAHR| FALSCH|| Ruft den Berechnungstyp in der Zeile „Summen“ der Listenspalte ab und legt ihn fest.|
+| Formel| Zeichenfolge| WAHR| FALSCH|| Ruft die Formel der Listenspalte ab und legt sie fest.|
+| SummenZeilenBeschriftung| Zeichenfolge| WAHR| FALSCH|| Ruft die Anzeigebeschriftungen der Gesamtzeile ab und legt sie fest.|
 

@@ -3,19 +3,20 @@ title: PostDeleteIncompleteRow
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postdeleteincompleterows/
-description: Das Löschen unvollständiger Zeilen von Tabellenkalkulationsdateien wird hauptsächlich zum Entfernen unvollständiger Zeilen in Tabellen und Bereichen verwendet
+description: Das Löschen unvollständiger Zeilen in Tabellenkalkulationsdateien wird hauptsächlich verwendet, um unvollständige Zeilen in Tabellen und Bereichen zu entfernen
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostDeleteIncompleteRows
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostDeleteIncompleteRows" >}}
 {{< blocks/products/cells/docs-title titlemsg="Deleting incomplete rows of spreadsheet files is mainly used to eliminate incomplete rows in tables and ranges." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/deleteincompleterows,POST,Das Löschen unvollständiger Zeilen von Tabellenkalkulationsdateien wird hauptsächlich zum Entfernen unvollständiger Zeilen in Tabellen und Bereichen verwendet.,<a href=\'https://apireference.aspose.cloud/cells/#/DataProcessing/PostDeleteIncompleteRows\'> PostDeleteIncompleteRows</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/deleteincompleterows,POST,Das Löschen unvollständiger Zeilen von Tabellenkalkulationsdateien wird hauptsächlich verwendet, um unvollständige Zeilen in Tabellen und Bereichen zu entfernen.,<a href=\'https://apireference.aspose.cloud/cells/#/DataProcessing/PostDeleteIncompleteRows\'>PostDeleteIncompleteRows</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="deleteIncompleteRowsRequest, Klasse: deleteincompleterowsrequest," >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="deleteIncompleteRowsRequest,Klasse:deleteincompleterowsrequest," >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

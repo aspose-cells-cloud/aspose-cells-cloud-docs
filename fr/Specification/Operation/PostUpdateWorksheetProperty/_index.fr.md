@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postupdateworksheetproperty/
 description: Mettre à jour les propriétés de la feuille de calcul dans le classeur
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostUpdateWorksheetProperty
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostUpdateWorksheetProperty" >}}
@@ -23,7 +24,7 @@ weight: 50
     {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Le nom de stockage où se trouve le fichier." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Nom du paramètre, type, description" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="feuille, classe: feuille de calcul, description de la feuille de calcul." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="feuille,classe:feuille de calcul,La description de la feuille de calcul." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

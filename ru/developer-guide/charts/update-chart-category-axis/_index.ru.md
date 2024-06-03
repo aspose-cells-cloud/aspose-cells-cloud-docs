@@ -3,6 +3,7 @@ title:  Обновить ось категории диаграммы
 type: docs
 url: /ru/charts/category-axis/update/
 weight: 160
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Обновление оси категорий диаграммы
 ---
 Этот REST API указывает ось категории обновления диаграммы.
  

@@ -8,6 +8,7 @@ aliases: [/working-with-shapes/,/working-with-images/]
 keywords: Working with shape on an Excel workshee
 description: Hur man arbetar med form på ett Excel kalkylblad. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Arbeta med form på ett Excel kalkylblad
 ---
 ## Arbeta med former på en Excel-fil.
 

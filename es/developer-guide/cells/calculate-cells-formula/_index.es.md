@@ -3,6 +3,7 @@ title: Calcular fórmula Cells
 type: docs
 url: /es/calculate-cells-formula/
 weight: 90
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Calcular fórmula Cells
 ---
 Este REST API indica calcular `cells formula` en un archivo Excel.
 

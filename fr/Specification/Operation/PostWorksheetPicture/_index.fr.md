@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postworksheetpicture/
 description: Mettre à jour une image par index dans la feuille de calcul
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostWorksheetPicture
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetPicture" >}}

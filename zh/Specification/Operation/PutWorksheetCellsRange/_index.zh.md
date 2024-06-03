@@ -1,28 +1,29 @@
 ﻿---
-title: PutWorksheetCellsRang
+title: 把工作表单元格范围
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/putworksheetcellsrange/
-description: 插入一系列单元格并根据指定的移动选项移动现有单元格
+description: 插入单元格区域并根据指定的移位选项移动现有单元格
+kwords: Excel，Office，电子表格，云 REST API，PutWorksheetCellsRange
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetCellsRange" >}}
 {{< blocks/products/cells/docs-title titlemsg="Insert a range of cells and shift existing cells based on the specified shift option." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges,PUT,插入一系列单元格并根据指定的移位选项移位现有单元格。,<a href=\'https://apireference.aspose.cloud/cells /#/Ranges/PutWorksheetCellsRange\'>PutWorksheetCellsRange</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges,PUT,插入单元格范围并根据指定的移位选项移动现有单元格。,<a href=\'https://apireference.aspose.cloud/cells/#/Ranges/PutWorksheetCellsRange\'>PutWorksheetCellsRange</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="参数名称、类型、描述" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="名称，字符串，文件名。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,字符串,工作表名称。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="name，string，文件名。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName，string，工作表名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="范围，字符串，范围对象。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="shift,string,表示删除一系列单元格时的移位选项（下/左/无/右/上）。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="range,string,范围对象。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="shift，string，表示删除某个单元格区域时的移位选项（向下/向左/无/向右/向上）。" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="文件夹，字符串，原始工作簿文件夹。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="存储名称，字符串，存储名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName，string，存储名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/RangesController/PutWorksheetCellsRange\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

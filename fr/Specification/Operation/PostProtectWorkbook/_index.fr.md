@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postprotectworkbook/
 description: Excel protection
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostProtectWorkbook
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostProtectWorkbook" >}}

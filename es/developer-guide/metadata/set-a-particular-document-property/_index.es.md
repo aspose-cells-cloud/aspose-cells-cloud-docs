@@ -8,6 +8,7 @@ aliases: [/set-a-particular-document-property/]
 keywords: Update properties from excel files
 description: Aspose.Cells Cloud REST API admite la actualización de propiedades desde archivos de Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 30
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Establecer una propiedad de documento particular
 ---
 Este REST API indica la propiedad del documento `set/create`.
  

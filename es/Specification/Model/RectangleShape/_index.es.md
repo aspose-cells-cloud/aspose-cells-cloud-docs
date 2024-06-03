@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/model/rectangleshape/
 description: "Aspose.Cells Especificación del modelo de nube: FormaRectángulo. Maneje sin esfuerzo Excel y otros documentos de hoja de cálculo con funciones como abrir, generar, editar, dividir, fusionar, comparar y convertir."
+kwords: Excel, Office, hoja de cálculo, nube REST API, forma de rectángulo
 weight: 50
 ---
 ## **forma rectangular**
 
- 
+ Representa la forma del rectángulo.
 
 | Nombre de la propiedad| tipo de propiedad| Anulable| Solo lectura| Valor por defecto| Descripción|
 |:- |:- |:- |:- |:- |:- |
@@ -29,7 +30,7 @@ weight: 50
 | X| Entero| Verdadero| FALSO|||
 | Y| Entero| Verdadero| FALSO|||
 | Ángulo de rotación| Flotante| Verdadero| FALSO|||
-| Texto HTML| Cadena| Verdadero| FALSO|||
+|Texto HTML| Cadena| Verdadero| FALSO|||
 | Texto| Cadena| Verdadero| FALSO|||
 | Texto alternativo| Cadena| Verdadero| FALSO|||
 | TextoAlineaciónHorizontal| Cadena| Verdadero| FALSO|||
@@ -50,4 +51,5 @@ weight: 50
 | Hipervínculo| Cadena| Verdadero| FALSO|||
 | enlace| Clase: enlace| Verdadero| FALSO|||
 
-**Nombre del padre** : (Forma)[forma]
+**Nombre del padre** : [Forma](/specification/model/shape)
+

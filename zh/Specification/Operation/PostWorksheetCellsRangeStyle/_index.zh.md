@@ -1,29 +1,30 @@
 ﻿---
-title: 后工作表单元格范围样式
+title: 发布工作表单元格范围样式
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/postworksheetcellsrangestyle/
 description: 设置指定范围的样式
+kwords: Excel，Office，电子表格，云 REST API，PostWorksheetCellsRangeStyle
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangeStyle" >}}
 {{< blocks/products/cells/docs-title titlemsg="Set the style for the specified range." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges/style,POST,设置指定范围的样式。,<a href=\'https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeStyle \'>PostWorksheetCellsRangeStyle</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges/style,POST,设置指定范围的样式。,<a href=\'https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeStyle\'>PostWorksheetCellsRangeStyle</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="参数名称、类型、描述" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="名称，字符串，文件名。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,字符串,工作表名称。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="name，string，文件名。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName，string，工作表名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="文件夹，字符串，原始工作簿文件夹。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="存储名称，字符串，存储名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName，string，存储名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns=" rangeOperate,class:rangesetstylerequest,RangeSetStyleRequest 范围设置样式请求" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="rangeOperate,class:rangesetstylerequest,RangeSetStyleRequest 范围设置样式请求" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

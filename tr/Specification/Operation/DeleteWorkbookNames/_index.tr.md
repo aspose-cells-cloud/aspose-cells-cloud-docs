@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/deleteworkbooknames/
 description: Çalışma kitabındaki tüm adlandırılmış aralıkları silin
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, deleteWorkbookNames
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorkbookNames" >}}

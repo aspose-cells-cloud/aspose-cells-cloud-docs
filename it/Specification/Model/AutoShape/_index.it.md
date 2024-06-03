@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/model/autoshape/
 description: "Aspose.Cells Specifica del modello cloud: AutoShape. Gestisci facilmente Excel e altri fogli di calcolo con funzionalità come apertura, generazione, modifica, divisione, unione, confronto e conversione"
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, Forma automatica
 weight: 50
 ---
 ## **forma automatica**
 
- 
+ Rappresenta una forma automatica.
 
 | Nome della proprietà| Tipo di proprietà| Nullabile| Sola lettura| Valore di default| Descrizione|
 |:- |:- |:- |:- |:- |:- |
@@ -29,7 +30,7 @@ weight: 50
 | X| Numero intero| VERO| Falso|||
 | Y| Numero intero| VERO| Falso|||
 | Angolo di rotazione| Galleggiante| VERO| Falso|||
-| HtmlText| Corda| VERO| Falso|||
+|HtmlText| Corda| VERO| Falso|||
 | Testo| Corda| VERO| Falso|||
 | Testo alternativo| Corda| VERO| Falso|||
 | TestoAllineamento orizzontale| Corda| VERO| Falso|||
@@ -50,4 +51,5 @@ weight: 50
 | Collegamento ipertestuale| Corda| VERO| Falso|||
 | collegamento| Classe: collegamento| VERO| Falso|||
 
-**Nome del genitore** : (Forma)[forma]
+**Nome del genitore** : [Forma](/specification/model/shape)
+

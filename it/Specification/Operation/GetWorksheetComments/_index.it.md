@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/getworksheetcomments/
 description: Recuperare la descrizione dei commenti nel foglio di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, Ottieni foglio di lavoroCommenti
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetComments" >}}

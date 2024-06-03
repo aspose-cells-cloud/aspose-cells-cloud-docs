@@ -7,6 +7,7 @@ weight: 5
 url: /fr/what-s-new-in-aspose-cells-cloud/
 keywords: What's new in aspose cells cloud. Office Excel 2013,  Office Excel 2016,  Office Excel 2019，office Excel 365
 description: Cette page décrit les nouvelles fonctionnalités Cloud Aspose.Cells les plus intéressantes introduites dans les versions récentes.
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdwon, Quoi de neuf dans Aspose.Cells Cloud
 ---
 Bienvenue dans les nouveautés de la documentation Cloud Aspose.Cells. Utilisez cette page pour trouver rapidement les dernières modifications.
 
@@ -77,7 +78,7 @@ Bienvenue dans les nouveautés de la documentation Cloud Aspose.Cells. Utilisez 
  * Prise en charge du déverrouillage par lots de plusieurs fichiers.
  * Prise en charge de la protection par lots de plusieurs fichiers.
  * Prise en charge du fractionnement par lots de plusieurs fichiers.
- * Correction de l'API de propriété du document put.
+ * Correction de l'API de propriété du document Put.
 
 
 ## Aspose.Cells Nuage 23.5
@@ -116,7 +117,7 @@ Bienvenue dans les nouveautés de la documentation Cloud Aspose.Cells. Utilisez 
 
 ## Aspose.Cells Nuage 22.11
 
- Ajoutez une nouvelle API pour la conversion en json.
+ * Ajoutez une nouvelle API pour la conversion en json.
  * Ajoutez une nouvelle API pour la conversion en SQL.
  * Ajoutez une nouvelle API pour la conversion en CV.
 
@@ -145,12 +146,12 @@ Bienvenue dans les nouveautés de la documentation Cloud Aspose.Cells. Utilisez 
 
 ## Aspose.Cells Nuage 22.6
 
-* [Amélioration des API Cloud Cells.](/cells/aspose-cells-cloud-22-6-release-notes/)
+[Amélioration des API Cloud Cells.](/cells/aspose-cells-cloud-22-6-release-notes/)
 * Prise en charge de la conversion des fichiers du package zip en types de format.
 
 ## Aspose.Cells Nuage 22.5
 
-[Amélioration pour l'export API.](https://docs.aspose.cloud/cells/export/)
+* [Amélioration pour l'export API.](https://docs.aspose.cloud/cells/export/)
 * [Amélioration pour clear API.](https://docs.aspose.cloud/cells/clear/)
 
 ## Aspose.Cells Nuage 22.4

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postmoveworksheet/
 description: Переместить лист в книге
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostMoveWorksheet
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostMoveWorksheet" >}}

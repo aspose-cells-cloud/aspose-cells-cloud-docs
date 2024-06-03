@@ -7,6 +7,7 @@ url: /ar/worksheets/get/
 keywords: How to get different content from an Excel worksheet
 description: Aspose.Cells Cloud REST API يدعم الحصول على محتوى مختلف من ورقة عمل Excel. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 20
+kwords: Excel، Office Cloud، REST API، Spreadsheet، PDF، CSV، Json، Markdwon، كيفية الحصول على محتوى مختلف من ورقة عمل Excel
 ---
 ## العمل مع الحصول على ورقة عمل Excel.
 

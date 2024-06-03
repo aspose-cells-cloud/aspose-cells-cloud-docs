@@ -3,27 +3,28 @@ title: PostGroupWorksheetRow
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postgroupworksheetrows/
-description: Gruppieren Sie Zeilen im Arbeitsblatt
+description: Gruppieren von Zeilen im Arbeitsblatt
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostGroupWorksheetRows
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostGroupWorksheetRows" >}}
 {{< blocks/products/cells/docs-title titlemsg="Group rows in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells/rows/group,POST,Gruppenzeilen im Arbeitsblatt.,<a href=\'https://apireference.aspose.cloud/cells/#/Cells/PostGroupWorksheetRows \'>PostGroupWorksheetRows</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells/rows/group,POST,Zeilen im Arbeitsblatt gruppieren.,<a href=\'https://apireference.aspose.cloud/cells/#/Cells/PostGroupWorksheetRows\'>PostGroupWorksheetRows</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="firstIndex,integer,Der erste Zeilenindex, der bearbeitet werden soll." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="lastIndex,integer,Der letzte zu bearbeitende Zeilenindex." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="hide,boolean,rows sichtbarer Zustand" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="firstIndex,Integer,Der erste zu bearbeitende Zeilenindex." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="lastIndex,Integer,Der letzte zu bearbeitende Zeilenindex." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="ausblenden, Boolescher Wert, sichtbarer Status der Zeilen" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/CellsController/PostGroupWorksheetRows\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

@@ -1,45 +1,46 @@
 ﻿---
-title: Was ist neu in Aspose.Cells Cloud?
+title: Was ist neu in Aspose.Cells Cloud
 second_title: Aspose.Cells Cloud Documen
-linktitle: Was ist ne
+linktitle: Was ist neu
 type: docs
 weight: 5
 url: /de/what-s-new-in-aspose-cells-cloud/
 keywords: What's new in aspose cells cloud. Office Excel 2013,  Office Excel 2016,  Office Excel 2019，office Excel 365
 description: Auf dieser Seite werden die interessantesten neuen Aspose.Cells Cloud-Funktionen beschrieben, die in den letzten Versionen eingeführt wurden
+kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdwon, Was ist neu in Aspose.Cells Cloud
 ---
-Willkommen zu den Neuerungen in den Aspose.Cells Cloud-Dokumenten. Auf dieser Seite finden Sie schnell die neuesten Änderungen.
+Willkommen bei den Neuerungen in Aspose.Cells Cloud Docs. Auf dieser Seite finden Sie schnell die neuesten Änderungen.
 
 ## Verbesserungen in Version 24.3
 
-- Unterstützen Sie die Datendeduplizierung.
-- Unterstützen Sie das Ausfüllen von Daten.
-- Unterstützung zum Löschen unvollständiger Zeilen.
-- Unterstützen Sie die Datenbereinigung.
+- Unterstützt Datendeduplizierung.
+- Unterstützt das Ausfüllen von Daten.
+- Unterstützt das Löschen unvollständiger Zeilen.
+- Unterstützt die Datenbereinigung.
 
 ## Verbesserungen in Version 24.2.1
 
-- Unterstützen Sie die Datendeduplizierung.
+- Unterstützt Datendeduplizierung.
 
 ## Verbesserungen in Version 24.1.1
 
 - Rechtschreibfehler für mehrere Funktionen behoben.
-- Fügen Sie die PostFitTallToPages-Methode für den Seiteneinrichtungs-Controller hinzu.
-- Fügen Sie die PostFitWideToPages-Methode für den Seiteneinrichtungs-Controller hinzu.
-- Optimieren Sie die Speicheroptionen für paginierte Dateien.
+- Fügen Sie die Methode PostFitTallToPages für den Seiteneinrichtungs-Controller hinzu.
+- Fügen Sie die Methode PostFitWideToPages für den Seiteneinrichtungs-Controller hinzu.
+- Optimieren Sie die Speicheroptionen für die Paginierung.
 
 ## Verbesserungen in Version 23.12.0
 
 - Konvertierungs-APIs fügen Regionsparameter hinzu.
 - Schutz-APIs fügen Regionsparameter hinzu.
-- Assemble-Daten API fügt Regionsparameter hinzu.
+- Daten zusammenstellen API fügt Regionsparameter hinzu.
 - Dateien zusammenführen API fügt Regionsparameter hinzu.
-- Geteilte Dateien API fügt Regionsparameter hinzu.
-- Importdaten API fügt Regionsparameter hinzu.
+- Aufgeteilte Dateien API fügt Regionsparameter hinzu.
+- Importdaten API fügen Regionsparameter hinzu.
 - Wasserzeichen API fügt Regionsparameter hinzu.
-- Durch Löschen des Objekts API wird ein Regionsparameter hinzugefügt.
-- Reverse Data API fügt Regionsparameter hinzu.
-- Daten drehen API fügt Regionsparameter hinzu.
+- Klares Objekt API fügt Regionsparameter hinzu.
+- Umgekehrte Daten API fügen Regionsparameter hinzu.
+- Durch Drehen der Daten API wird der Regionsparameter hinzugefügt.
 
 ## Verbesserungen in Version 23.11
 
@@ -49,117 +50,117 @@ Willkommen zu den Neuerungen in den Aspose.Cells Cloud-Dokumenten. Auf dieser Se
 
 ## Verbesserungen in Version 23.10
 
-- Die Anforderung zum Schutz der Arbeitsmappe wurde behoben.
+- Anforderung zum Schützen der Arbeitsmappe beheben.
 - Bereichskopie API korrigieren.
-- Optimieren Sie den Arbeitsmappenschutz API.
+- Arbeitsmappenschutz optimieren API.
 
 ## Verbesserungen in Version 23.9
 
-- Unterstützung der Datensortierung auf dem Range Controller.
-- Unterstützung zum Entfernen doppelter Daten aus Listenobjekten.
-- Unterstützung für das Einfügen eines Slicers für Listenobjekte.
-- Optimieren Sie Listenobjekte und zugehörige Objekte.
+- Unterstützung der Datensortierung auf dem Bereichscontroller.
+- Unterstützt das Entfernen doppelter Daten aus Listenobjekten.
+- Unterstützt das Einfügen eines Slicers für Listenobjekte.
+- Listenobjekt und zugehörige Objekte optimieren.
 
 ## Verbesserungen in Version 23.8
 
-- Unterstützung für das Schloss API.
+- Unterstützung für Schloss API.
 - Optimieren Sie den Schutz API.
 
-## Aspose.Cells Wolke 23.7
+## Aspose.Cells Cloud 23.7
 
- * Unterstützung für die Reparatur von Dateien.
+ * Unterstützt die Dateireparatur.
 * Konvertierungsfunktionen optimieren.
 
 
-## Aspose.Cells Wolke 23.6
+## Aspose.Cells Cloud 23.6
 
- * Unterstützung für die Stapelsperre mehrerer Dateien.
- * Unterstützung für die Batch-Entsperrung mehrerer Dateien.
- * Unterstützung für den Stapelschutz mehrerer Dateien.
- * Unterstützung für die Stapelaufteilung mehrerer Dateien.
- * Korrektur der API zum Einfügen von Dokumenteigenschaften.
-
-
-## Aspose.Cells Wolke 23.5
-
- * Korrigieren Sie, dass einige Methoden falsch geschrieben sind.
+ * Unterstützt die Stapelsperre mehrerer Dateien.
+ * Unterstützt die Stapelentsperrung mehrerer Dateien.
+ * Unterstützt den Stapelschutz mehrerer Dateien.
+ * Unterstützt die Stapelaufteilung mehrerer Dateien.
+ * API für Dokumenteigenschaften reparieren.
 
 
-## Aspose.Cells Wolke 23.4
+## Aspose.Cells Cloud 23.5
+
+ * Korrektur einiger falsch geschriebener Methoden.
+
+
+## Aspose.Cells Cloud 23.4
 
  * Unterstützt den Import und Export von XML-Daten.
 
 
-## Aspose.Cells Wolke 23.3
+## Aspose.Cells Cloud 23.3
 
- * Optimieren Sie die Hyperlink-Eigenschaften.
-
-
-## Aspose.Cells Wolke 23.2
-
- * Optimieren Sie das Ersetzen von API.
-* Optimieren Sie die Swagger-Benutzeroberfläche.
+ * Hyperlink-Eigenschaften optimieren.
 
 
+## Aspose.Cells Cloud 23.2
 
-
-## Aspose.Cells Wolke 23.1
-
- * Behebung des Fehlers für die PostCellCharacters-Methode.
+ * Optimieren Sie den Ersatz API.
+* Swagger-Benutzeroberfläche optimieren.
 
 
 
-## Aspose.Cells Wolke 22.12
 
- * Unterstützt den Betrieb der Diagrammachse.
+## Aspose.Cells Cloud 23.1
+
+ * Beheben Sie den Fehler für die PostCellCharacters-Methode.
 
 
-## Aspose.Cells Wolke 22.11
 
- Neue API für die Konvertierung in JSON hinzufügen.
- * Neue API für die Konvertierung in SQL hinzufügen.
- * Neue API für die Konvertierung in CVS hinzufügen.
+## Aspose.Cells Cloud 22.12
+
+ * Unterstützt die Diagrammachsenoperation.
+
+
+## Aspose.Cells Cloud 22.11
+
+ * Neue API zur Konvertierung in JSON hinzufügen.
+ * Neue API zur Konvertierung in SQL hinzufügen.
+ * Neue API zur Konvertierung in CVS hinzufügen.
 
 
 ## Aspose.Cells Wolke 22.10
 
- * Neue API für die Konvertierung in pptx hinzufügen.
- * Neue API für die Konvertierung in Markdown hinzufügen.
- * Neue API für die Konvertierung in HTML hinzufügen.
+ * Neue API zur Konvertierung in pptx hinzufügen.
+ * Neue API zur Konvertierung in Markdown hinzufügen.
+ * Neue API zur Konvertierung in HTML hinzufügen.
 
-## Aspose.Cells Wolke 22.9
+## Aspose.Cells Cloud 22.9
 
- * Unterstützt das Exportieren von Seiten in andere Dateiformate.
- * Neue API für die Konvertierung in PDF hinzufügen.
- * Neue API für die Konvertierung in PNG hinzufügen.
- * Neue API für die Konvertierung in docx hinzufügen.
+ * Unterstützt den Seitenexport in Dateien mit anderen Formaten.
+ * Neue API zur Konvertierung in PDF hinzufügen.
+ * Neue API zur Konvertierung in PNG hinzufügen.
+ * Neue API zur Konvertierung in docx hinzufügen.
 
-## Aspose.Cells Wolke 22.8
+## Aspose.Cells Cloud 22.8
 
-* Unterstützt das Transponieren von Excel Zeilen in Spalten.
+* Unterstützt die Transponierung von Excel Zeilen in Spalten.
 
-## Aspose.Cells Wolke 22.7
+## Aspose.Cells Cloud 22.7
 
-* Verbesserung: Speichern Sie API für mobile Cloud-Dienste (fügen Sie vier Speicheroptionen hinzu).
-* Optimierter LightCellsController für die Zellenwolke.
+* Verbesserung des Speicherns von API bei Zellen-Cloud-Diensten (vier Speicheroptionen hinzufügen).
+* Optimierter LightCellsController auf Zellen-Cloud.
 
-## Aspose.Cells Wolke 22.6
+## Aspose.Cells Cloud 22.6
 
-* [Verbesserung für Cells Cloud-APIs.](/cells/aspose-cells-cloud-22-6-release-notes/)
-* Unterstützung für die Konvertierung von Dateien im ZIP-Paket in verschiedene Formate.
+[Verbesserung für Cells Cloud-APIs.](/cells/aspose-cells-cloud-22-6-release-notes/)
+* Unterstützt die Konvertierung von Dateien im ZIP-Paket in verschiedene Formate.
 
-## Aspose.Cells Wolke 22.5
+## Aspose.Cells Cloud 22.5
 
-[Verbesserung für Export API.](https://docs.aspose.cloud/cells/export/)
+* [Verbesserung für Export API.](https://docs.aspose.cloud/cells/export/)
 * [Verbesserung für Clear API.](https://docs.aspose.cloud/cells/clear/)
 
-## Aspose.Cells Wolke 22.4
+## Aspose.Cells Cloud 22.4
 
 * Einige Fehler beheben.
 * [Verbesserung der Swagger-Benutzeroberfläche.](https://apireference.aspose.cloud/cells/)
 
-## Aspose.Cells Wolke 22.3
+## Aspose.Cells Cloud 22.3
 
-* [Neue API zur Erstellung der Codegen-Spezifikation hinzufügen.](https://api.aspose.cloud/v3.0/cells/codegen/spec)
-* [Unterstützung für das Hinzufügen einer digitalen Signatur für Aspose.Cells Cloud.](/cells/workbook/digital-signature/)
+* [Neue API zum Erstellen der Codegen-Spezifikation hinzufügen.](https://api.aspose.cloud/v3.0/cells/codegen/spec)
+* [Unterstützung zum Hinzufügen einer digitalen Signatur für Aspose.Cells Cloud.](/cells/workbook/digital-signature/)
 

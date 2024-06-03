@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/getworksheetlistobject/
 description: Recupera la descrizione dell'oggetto dell'elenco in base all'indice nel foglio di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, GetWorksheetListObject
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetListObject" >}}

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/getfooter/
 description: Hämta sidfotsbeskrivning i kalkylbladet
+kwords: Excel, Office, Kalkylblad, Cloud REST API, GetFooter
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetFooter" >}}

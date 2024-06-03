@@ -8,6 +8,7 @@ aliases: [/add-oleobject-to-excel-worksheet/]
 keywords: Add an OLE object in an Excel worksheet
 description: Aspose.Cells Cloud REST API, Excel çalışma sayfasına OLE nesnesi eklemeyi destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 20
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel çalışma sayfasına bir OLE nesnesi ekleme
 ---
 Bu REST API, Excel çalışma sayfasında `add OLE object`'i gösterir.
  
@@ -22,7 +23,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects
  
 | Parametre adı| Tip| Yol/Sorgu Dizesi/HTTPBody|Tanım|
 |:- |:- |:- |:- |
-| isim| sicim| yol|Çalışma kitabı adı.|
+| isim| sicim| yol| Çalışma kitabı adı.|
 | sayfaAdı| sicim| yol| Kötü sayfa adı.|
 | Ole nesnesi|| vücut| Ole nesnesi|
 | üstSolSatır| tamsayı| sorgu|0 |

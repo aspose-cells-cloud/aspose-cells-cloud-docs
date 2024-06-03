@@ -6,6 +6,7 @@ aliases: [/get-conditional-formattings-of-worksheet/]
 keywords: REST API, spreadsheets, excel, get condition formattin
 description: "Cells.Cloud API لـ Excel التشغيل: الحصول على تنسيق الحالة"
 weight: 20
+kwords: Excel، Office Cloud، REST API، جدول البيانات، PDF، CSV، Json، Markdwon، الحصول على التنسيقات الشرطية
 ---
  يشير REST API إلى الحصول على التنسيقات الشرطية
  

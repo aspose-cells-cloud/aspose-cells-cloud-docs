@@ -7,6 +7,7 @@ url: /sv/protect/without-using-storage/
 keywords: Protect Excel files
 description: Aspose.Cells Cloud REST API stöder att skydda Excel-filer. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 70
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Protect Workbook
 ---
 Denna REST API indikerar till `protect` Excel filer.
 ## RSET API

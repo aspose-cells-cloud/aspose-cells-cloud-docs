@@ -6,6 +6,7 @@ type: docs
 url: /es/worksheets/update-properties/
 aliases: [/update-excel-worksheet-properties/]
 weight: 20
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Actualizar propiedades en una hoja de trabajo Excel
 ---
 Este REST API indica `update worksheet base properties`.
  

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postchartcategoryaxis/
 description: Mettre à jour l'axe des catégories du graphique dans le graphique
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostChartCategoryAxis
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostChartCategoryAxis" >}}

@@ -4,6 +4,7 @@ type: docs
 url: /sv/how-to-repair-excel-file
 description: Så här reparerar du Excel eller annan kalkylarksfil via Aspose.Cells Cloud
 weight: 10
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Hur man reparerar Excel eller annan kalkylarksfil via Aspose.Cells Cloud
 ---
 ## Introduktion
 Aspose.Cells Cloud API är en potent molnbaserad lösning skapad för att skapa, redigera och konvertera kalkylarksfiler. I den här artikeln går vi igenom processen med att använda Aspose.Cells Cloud API för filreparation, inklusive typiska användningsfall och exempelkod.
@@ -19,7 +20,7 @@ API är tillgänglig för filreparation, vanligtvis kompatibel med olika onlinem
 
 # Så här reparerar du Excel eller ett annat kalkylblad via Aspose.Cells Cloud
 
- Aspose.Cells Cloud API tillhandahåller[flera SDK:er](https://github.com/aspose-cells-cloud)för olika programmeringsspråk. Välj den SDK som passar ditt föredragna programmeringsspråk och följ den medföljande dokumentationen för installation och initiering. Alternativt kan du skapa din egen SDK enligt[API referens](https://reference.aspose.cloud/cells/). I det här avsnittet kommer vi att använda C# som ett exempel för att detaljera processen för filreparation.
+ Aspose.Cells Cloud API tillhandahåller[flera SDK:er](https://github.com/aspose-cells-cloud) för olika programmeringsspråk. Välj den SDK som passar ditt föredragna programmeringsspråk och följ den medföljande dokumentationen för installation och initiering. Alternativt kan du skapa din egen SDK enligt[API referens](https://reference.aspose.cloud/cells/). I det här avsnittet kommer vi att använda C# som ett exempel för att detaljera processen för filreparation.
 
 
 ## Registrering och erhållande av API Nyckel

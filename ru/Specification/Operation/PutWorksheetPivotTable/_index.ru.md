@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/putworksheetpivottable/
 description: Добавьте сводную таблицу на лист
+kwords: Excel, Office, электронная таблица, Cloud REST API, PutWorksheetPivotTable
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetPivotTable" >}}

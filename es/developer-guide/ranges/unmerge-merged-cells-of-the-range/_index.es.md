@@ -8,6 +8,7 @@ aliases: [/unmerge-merged-cells-of-the-range/]
 keywords: Unmerge merged cells of the range on an Excel worksheet
 description: Aspose.Cells Cloud REST API admite la separación de celdas fusionadas del rango en una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 20
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Separar celdas fusionadas del rango
 ---
 Este REST API indica separar las celdas fusionadas de este rango en una hoja de trabajo Excel.
             

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postworksheetchartlegend/
 description: Mettre à jour la légende du graphique dans la feuille de calcul
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostWorksheetChartLegend
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetChartLegend" >}}

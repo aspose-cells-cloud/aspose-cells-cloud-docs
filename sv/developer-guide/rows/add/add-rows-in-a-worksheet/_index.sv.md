@@ -7,6 +7,7 @@ url: /sv/rows/add/rows/
 keywords: Add multi rows on an Excel workshee
 description: Aspose.Cells Cloud REST API stöder att lägga till flera rader på ett Excel-kalkylblad. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 20
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Lägg till flera rader på ett Excel kalkylblad
 ---
 Denna REST API indikerar att flera nya kalkylbladsrader ska läggas till på ett Excel kalkylblad.
  
@@ -21,11 +22,11 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
  
 | Parameternamn| Typ| Sökväg/Frågesträng/HTTPBody|Beskrivning|
 |:- |:- |:- |:- |
-| namn| sträng| väg|Arbetsbokens namn.|
+| namn| sträng| väg| Arbetsbokens namn.|
 | arknamn| sträng| väg| Kalkylbladets namn.|
 | startrad| heltal| fråga| Startradens index som ska användas.|
 | totalt rader| heltal| fråga|1 |
-| updateReference| booleskt| fråga| Sann|
+| updateReference|booleskt| fråga| Sann|
 | mapp| sträng| fråga| Dokumentmappen.|
 | lagringsnamn| sträng| fråga| lagringsnamn.|
  

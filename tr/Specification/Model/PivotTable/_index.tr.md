@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/model/pivottable/
 description: "Aspose.Cells Bulut modeli spesifikasyonu: PivotTable. Açma, oluşturma, düzenleme, bölme, birleştirme, karşılaştırma ve dönüştürme gibi özelliklerle Excel ve diğer elektronik tablo belgelerini zahmetsizce yönetin"
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PivotTable
 weight: 50
 ---
 ## **Pivot tablo**
 
- 
+ Özet Tablo için özet açıklama.
 
 | Mülkiyet adı| Emlak Tipi| Geçersiz kılınabilir| Sadece oku| Varsayılan değer| Tanım|
 |:- |:- |:- |:- |:- |:- |
@@ -31,7 +32,7 @@ weight: 50
 | Veri Değeri Düzenlemeyi Etkinleştir| Boolean| Doğru| YANLIŞ|||
 | Detaylandırmayı Etkinleştir| Boolean| Doğru| YANLIŞ|||
 | FieldDialog'u Etkinleştir| Boolean| Doğru| YANLIŞ|||
-|Alan Listesini Etkinleştir| Boolean| Doğru| YANLIŞ|||
+| Alan Listesini Etkinleştir| Boolean| Doğru| YANLIŞ|||
 | Etkinleştirme Sihirbazı| Boolean| Doğru| YANLIŞ|||
 | HataDizesi| Sicim| Doğru| YANLIŞ|||
 | FieldListSıralaArtan| Boolean| Doğru| YANLIŞ|||
@@ -44,9 +45,9 @@ weight: 50
 | Seçildi| Boolean| Doğru| YANLIŞ|||
 | ÖğeBaskıBaşlıkları| Boolean| Doğru| YANLIŞ|||
 | Elle güncelleme| Boolean| Doğru| YANLIŞ|||
-| Etiketleri Birleştir| Boolean| Doğru| YANLIŞ|||
+|Etiketleri Birleştir| Boolean| Doğru| YANLIŞ|||
 | Eksik Öğe Sınırı| Sicim| Doğru| YANLIŞ|||
-| İsim| Sicim| Doğru| YANLIŞ|||
+| İsim| Sicim| Doğru| YANLIŞ||Pivot tablo adını temsil eder.|
 | NullString| Sicim| Doğru| YANLIŞ|||
 | Sayfa Alanı Sırası| Sicim| Doğru| YANLIŞ|||
 | Sayfa Alanları| Konteyner| Doğru| YANLIŞ|||
@@ -75,11 +76,12 @@ weight: 50
 | ShowPivotStyleRowHeader| Boolean| Doğru| YANLIŞ|||
 | ShowPivotStyleRowStripes| Boolean| Doğru| YANLIŞ|||
 | ShowRowHeaderCaption| Boolean| Doğru| YANLIŞ|||
-| Değerleri GösterSatır| Boolean| Doğru| YANLIŞ|||
+| Değerleri Göster Satırı| Boolean| Doğru| YANLIŞ|||
 | Ara ToplamGizliSayfa Öğeleri| Boolean| Doğru| YANLIŞ|||
 | Tablo Aralığı1| Sınıf:CellArea| Doğru| YANLIŞ|||
-|Tablo Aralığı2| Sınıf:CellArea| Doğru| YANLIŞ|||
+| Tablo Aralığı2| Sınıf:CellArea| Doğru| YANLIŞ|||
 | Etiket| Sicim| Doğru| YANLIŞ|||
 | bağlantı| Sınıf:Bağlantı| Doğru| YANLIŞ|||
 
-**Ebeveyn adı** : (LinkElement)[bağlantıelement]
+**Ebeveyn adı** : [Bağlantı Öğesi](/specification/model/linkelement)
+

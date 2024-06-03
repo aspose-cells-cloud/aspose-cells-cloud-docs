@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/postworksheetlistobjectsummarizewithpivottable/
 description: Çalışma sayfasında liste nesnesi içeren bir pivot tablo oluşturma
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PostWorksheetListObjectSummarizeWithPivotTable
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetListObjectSummarizeWithPivotTable" >}}

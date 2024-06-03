@@ -7,6 +7,7 @@ url: /sv/replace/
 keywords: Replace old value by new value on Excel files
 description: Aspose.Cells Cloud REST API stöder att ersätta gammalt värde med nytt värde på Excel-filer. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 80
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Ersätt text från Excel filer
 ---
 Denna REST API indikerar till `replace` data från Excel filer.
 

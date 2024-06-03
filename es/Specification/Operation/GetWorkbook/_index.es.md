@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/getworkbook/
 description: Recuperar libros de trabajo en varios formatos.
+kwords: Excel, Office, Hoja de cálculo, Nube REST API, GetWorkbook
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorkbook" >}}
@@ -18,14 +19,14 @@ weight: 50
      {{< blocks/products/cells/docs-Parameter-content columns="nombre, cadena, el nombre del archivo." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Nombre del parámetro, tipo, descripción" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="formato, cadena, el formato de conversión (CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/07617 3481/ MD[Markdown]/Números)." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="formato, cadena, el formato de conversión (CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/0761 73481/ MD[Markdown]/Números)." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="contraseña,cadena,La contraseña necesaria para abrir un archivo Excel." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="isAutoFit,boolean,Especifica si se configuran las filas del libro de trabajo para que se ajusten automáticamente." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="onlySaveTable, booleano, especifica si solo se guardan los datos de la tabla. Utilice solo pdf para sobresalir." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="carpeta, cadena, la carpeta donde se encuentra el archivo." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="outPath,string,Ruta para guardar el resultado. Si es un solo archivo, `outPath` debe abarcar tanto el nombre del archivo como la extensión. En el caso de varios archivos, `outPath` solo debe incluir la carpeta." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="nombre de almacenamiento, cadena, el nombre del almacenamiento donde se encuentra el archivo." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="outStorageName, cadena, el nombre del almacenamiento donde se encuentra el archivo de salida." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="outStorageName,cadena,El nombre del almacenamiento donde se encuentra el archivo de salida." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction,boolean,Si verifica la restricción del archivo Excel cuando el usuario modifica los objetos relacionados con las celdas." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="región, cadena, la configuración regional del libro de trabajo." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="pageWideFitOnPerSheet,boolean,El ancho de la página se ajusta a la hoja de trabajo." >}} 

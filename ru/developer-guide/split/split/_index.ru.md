@@ -7,6 +7,7 @@ url: /ru/split/multi-files/
 keywords: Split multi Excel files
 description: Aspose.Cells Cloud REST API поддерживает разделение нескольких файлов Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 32
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Split
 ---
 Этот REST API указывает на `split` несколько файлов Excel.
 

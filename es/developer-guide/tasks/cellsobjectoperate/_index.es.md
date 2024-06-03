@@ -6,6 +6,7 @@ url: /es/tasks/cells-object-operate/
 aliases: [/working-with-cellsobjectoperate-task/]
 description: "Cells.Cloud API para Excel operar: tarea de operación de objeto de celdas"
 weight: 20
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Trabajar con la tarea CellsObjectOperate
 ---
 Este REST API opera las celdas del objeto `task`.
 
@@ -33,13 +34,13 @@ Este REST API opera las celdas del objeto `task`.
 |Nombre del parámetro|Tipo|Descripción|
 |:- |:- |:- |
 | Índice de gráficos| entero||
-| Tipo de gráfico| cadena||
+|Tipo de gráfico| cadena||
 | Fila superior izquierda| entero||
 | Columna superior izquierda| entero||
 | Fila inferior derecha| entero||
 | Columna inferior derecha| entero||
 | Área| cadena||
-| Es vertical| cadena| verdadero Falso|
+| es vertical| cadena| verdadero Falso|
 | CategoríaDatos| cadena||
 | IsAutoGetSerialName| cadena| verdadero Falso|
 | Área| Título||
@@ -80,7 +81,7 @@ Este REST API opera las celdas del objeto `task`.
 | Índice de tabla dinámica| entero||
 | Filas de campo dinámico|entero[]||
 | Columnas de campo dinámico|entero[]||
-|Datos de campo dinámico|entero[]||
+| Datos de campo dinámico|entero[]||
 
 
 **FormaOperarParámetro**

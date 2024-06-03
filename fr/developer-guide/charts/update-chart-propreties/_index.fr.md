@@ -4,6 +4,7 @@ type: docs
 url: /fr/charts/propreties/update/
 aliases: [/update-chart-propreties/]
 weight: 160
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, mise à jour des propriétés du graphique
 ---
 Ce REST API indique les propriétés du graphique de mise à jour
  
@@ -16,7 +17,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{ch
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin||
 | Nom de la feuille| chaîne| chemin||

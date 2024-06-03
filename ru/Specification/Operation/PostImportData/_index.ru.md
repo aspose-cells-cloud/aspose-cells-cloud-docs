@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postimportdata/
 description: Импортируйте данные в файл Excel.
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostImportData
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostImportData" >}}
@@ -23,7 +24,7 @@ weight: 50
     {{< blocks/products/cells/docs-Parameter-content columns="регион,строка,Региональные настройки книги." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Имя параметра, тип, описание" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns=" importOption, класс: importoption, вариант импорта. К ним относятся ImportCSVDataOption, ImportBatchDataOption, ImportPictureOption, ImportStringArrayOption, Import2DimensionStringArrayOption и т. д." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="importOption, класс: importoption, вариант импорта. К ним относятся ImportCSVDataOption, ImportBatchDataOption, ImportPictureOption, ImportStringArrayOption, Import2DimensionStringArrayOption и т. д." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

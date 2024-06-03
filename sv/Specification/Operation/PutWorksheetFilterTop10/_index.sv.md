@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/putworksheetfiltertop10/
 description: Filtrera de 10 bästa objekten i listan i kalkylbladet
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PutWorksheetFilterTop10
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetFilterTop10" >}}

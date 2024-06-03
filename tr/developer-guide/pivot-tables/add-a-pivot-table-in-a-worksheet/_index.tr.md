@@ -8,6 +8,7 @@ aliases: [/add-a-pivot-table-in-a-worksheet/]
 keywords: Add a pivot table in an Excel worksheet
 description: Aspose.Cells Cloud REST API, Excel çalışma sayfasına pivot tablo eklemeyi destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 30
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel çalışma sayfasına pivot tablo ekleme
 ---
 Bu REST API, `add`'e çalışma sayfasındaki bir pivot tabloyu gösterir.
  
@@ -28,9 +29,9 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables
 | dosya| sicim| sorgu| Belgenin klasörü.|
 | depolamaAdı| sicim| sorgu| depolama adı.|
 | kaynakVeri| sicim| sorgu| Yeni PivotTable önbelleğine ilişkin veriler.|
-| destCellName| sicim| sorgu| PivotTable raporunun hedef aralığının sol üst köşesindeki hücre.|
+| destCellName| sicim| sorgu|PivotTable raporunun hedef aralığının sol üst köşesindeki hücre.|
 | Tablo ismi| sicim| sorgu| Yeni PivotTable raporunun adı.|
-| Aynı Kaynağı Kullan| boolean| sorgu| Mevcut başka bir pivot tablo bu veri kaynağını kullandığında aynı veri kaynağının kullanılıp kullanılmayacağını belirtir. Eğer özellik true ise hafızadan tasarruf sağlayacaktır.|
+| Aynı Kaynağı Kullan|boolean| sorgu| Mevcut başka bir pivot tablo bu veri kaynağını kullandığında aynı veri kaynağının kullanılıp kullanılmayacağını belirtir. Eğer özellik true ise hafızadan tasarruf sağlayacaktır.|
  
 [OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/PivotTables/PutWorksheetPivotTable) herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
  

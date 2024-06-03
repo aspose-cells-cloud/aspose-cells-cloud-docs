@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/putworksheetdatefilter/
 description: Använd ett datumfilter i kalkylbladet
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PutWorksheetDateFilter
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetDateFilter" >}}

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/putworksheetpivottable/
 description: Aggiungi una tabella pivot nel foglio di lavoro
+kwords: Excel, Office, foglio di calcolo, Cloud REST API, PutWorksheetPivotTable
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetPivotTable" >}}

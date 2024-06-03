@@ -8,6 +8,7 @@ aliases: [/filter-a-list-with-a-custom-criteria/,/autofilter/add-a-custom-filter
 keywords: Adds a custom filter on an Excel worksheet
 description: يدعم Aspose.Cells Cloud API إضافة مرشح مخصص في ورقة عمل Excel. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 65
+kwords: Excel، Office السحابة، REST API، جدول البيانات، PDF، CSV، Json، Markdwon، إضافة معايير مخصصة في ورقة عمل Excel
 ---
 يشير REST API إلى تصفية قائمة برقم `custom criteria`.
             
@@ -28,11 +29,11 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/
 | fieldIndex| عدد صحيح| استفسار||
 | نوع المشغل1| خيط| استفسار||
 | المعايير1| خيط| استفسار||
-| isAnd| منطقية| استفسار||
+| isAnd|منطقية| استفسار||
 | نوع المشغل2| خيط| استفسار||
 | المعايير2| خيط| استفسار||
-| matchBlanks| منطقية| استفسار||
-| ينعش| منطقية| استفسار||
+| matchBlanks|منطقية| استفسار||
+| ينعش|منطقية| استفسار||
 | مجلد| خيط| استفسار||
 | اسم التخزين| خيط| استفسار| اسم التخزين.|
  
@@ -76,7 +77,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFil
 
 ## عائلة Cloud SDK
  
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
  
 توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
 

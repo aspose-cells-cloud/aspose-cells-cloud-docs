@@ -1,26 +1,27 @@
 ﻿---
-title: DeleteHeaderFoote
+title: Kopfzeile/Fußzeile löschen
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/deleteheaderfooter/
 description: Kopf- und Fußzeile im Arbeitsblatt löschen
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, DeleteHeaderFooter
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteHeaderFooter" >}}
 {{< blocks/products/cells/docs-title titlemsg="Clear header and footer in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pagesetup/clearheaderfooter,DELETE,Kopf- und Fußzeile im Arbeitsblatt löschen.,<a href=\'https://apireference.aspose.cloud/cells/#/PageSetup/DeleteHeaderFooter \'>DeleteHeaderFooter</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pagesetup/clearheaderfooter,DELETE,Kopf- und Fußzeile im Arbeitsblatt löschen.,<a href=\'https://apireference.aspose.cloud/cells/#/PageSetup/DeleteHeaderFooter\'>DeleteHeaderFooter</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/PageSetupController/DeleteHeaderFooter\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

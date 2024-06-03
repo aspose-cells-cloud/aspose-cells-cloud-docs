@@ -8,6 +8,7 @@ aliases: [/add-a-pivot-table-in-a-worksheet/]
 keywords: Add a pivot table in an Excel worksheet
 description: Aspose.Cells Cloud REST API prend en charge l'ajout d'un tableau croisé dynamique dans une feuille de calcul Excel. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 30
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdwon, Ajouter un tableau croisé dynamique dans une feuille de calcul Excel
 ---
 Ce REST API indique à `add` un tableau croisé dynamique dans une feuille de calcul.
  
@@ -20,7 +21,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Nom du document.|
 | Nom de la feuille| chaîne| chemin| Le nom de la feuille de calcul.|
@@ -28,9 +29,9 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables
 | dossier| chaîne| requête| Dossier du document.|
 | Nom de stockage| chaîne| requête| nom de stockage.|
 | données source| chaîne| requête| Les données du nouveau cache de tableau croisé dynamique.|
-| destCellName| chaîne| requête| Cellule située dans le coin supérieur gauche de la plage de destination du rapport de tableau croisé dynamique.|
+| destCellName| chaîne| requête|Cellule située dans le coin supérieur gauche de la plage de destination du rapport de tableau croisé dynamique.|
 | nom de la table| chaîne| requête| Le nom du nouveau rapport de tableau croisé dynamique.|
-| utiliserMêmeSource| booléen| requête| Indique si vous utilisez la même source de données lorsqu'un autre tableau croisé dynamique existant a utilisé cette source de données. Si la propriété est vraie, cela économisera de la mémoire.|
+| utiliserMêmeSource|booléen| requête| Indique si vous utilisez la même source de données lorsqu'un autre tableau croisé dynamique existant a utilisé cette source de données. Si la propriété est vraie, cela économisera de la mémoire.|
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/PivotTables/PutWorksheetPivotTable) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement depuis un navigateur Web.
  

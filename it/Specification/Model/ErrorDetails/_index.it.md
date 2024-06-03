@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/model/errordetails/
 description: "Aspose.Cells Specifica del modello cloud: ErrorDetails. Gestisci facilmente Excel e altri fogli di calcolo con funzionalità come apertura, generazione, modifica, divisione, unione, confronto e conversione"
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, Dettagli errore
 weight: 50
 ---
 ## **dettagli circa l'errore**

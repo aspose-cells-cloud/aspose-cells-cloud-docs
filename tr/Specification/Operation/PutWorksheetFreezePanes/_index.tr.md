@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/putworksheetfreezepanes/
 description: Çalışma sayfasındaki bölmeleri dondurmayı ayarlama
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PutWorksheetFreezePanes
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetFreezePanes" >}}

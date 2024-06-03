@@ -3,6 +3,7 @@ title: Ändra cellstil i Excel Worksheet
 type: docs
 url: /sv/change-cell-style-in-excel-worksheet/
 weight: 30
+kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdwon, Ändra cellformat i Excel Kalkylblad
 ---
 Denna REST API indikerar uppdatering `cell style` i en Excel fil.
 

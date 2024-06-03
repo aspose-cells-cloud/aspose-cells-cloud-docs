@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postprotect/
 description: Excel تشفير الملفات
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostProtect
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostProtect" >}}

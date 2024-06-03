@@ -3,6 +3,7 @@ title: Aggiorna Multiplo Cells Styl
 type: docs
 url: /it/update-multiple-cells-style/
 weight: 20
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Aggiorna più stili Cells
 ---
 Questo REST API indica impostato `cells style` su una cella in un file Excel.
 

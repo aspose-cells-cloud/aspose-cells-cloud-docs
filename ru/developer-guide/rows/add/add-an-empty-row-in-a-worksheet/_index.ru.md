@@ -8,6 +8,7 @@ aliases: [/add-an-empty-row-in-a-worksheet/]
 keywords: Add an empty row on an Excel workshee
 description: Aspose.Cells Cloud REST API поддерживает добавление пустой строки на лист Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 20
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Добавить пустую строку на лист Excel.
 ---
 Этот REST API указывает на добавление новой строки листа на лист Excel.
  
@@ -22,7 +23,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/
  
 | Имя параметра| Тип| Путь/строка запроса/HTTPBody|Описание|
 |:- |:- |:- |:- |
-| имя| нить| путь|Имя рабочей книги.|
+| имя| нить| путь| Имя рабочей книги.|
 | имя листа| нить| путь| Имя рабочего листа.|
 | индекс строки| целое число| путь| Новый индекс строки.|
 | папка| нить| запрос| Папка документов.|

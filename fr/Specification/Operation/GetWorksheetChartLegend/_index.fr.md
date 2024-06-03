@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/getworksheetchartlegend/
 description: Récupérer la description de la légende du graphique dans la feuille de calcul
+kwords: Excel, Office, feuille de calcul, Cloud REST API, GetWorksheetChartLegend
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetChartLegend" >}}

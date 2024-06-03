@@ -1,24 +1,25 @@
 ﻿---
-title: 后保护
+title: PostProtec
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/postprotect/
 description: Excel 文件加密
+kwords: Excel, Office, 电子表格, Cloud REST API, PostProtect
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostProtect" >}}
 {{< blocks/products/cells/docs-title titlemsg="Excel files encryption." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="/cells/protect,POST,Excel 文件加密。,<a href=\'https://apireference.aspose.cloud/cells/#/Protection/PostProtect\'>PostProtect</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="密码,字符串,打开Excel文件所需的密码。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="password，string，打开Excel文件所需的密码。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="保护工作簿请求，类：保护工作簿请求，" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="protectWorkbookRequest，类：protectworkbookRequest，" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

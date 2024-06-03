@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/getworksheetwithformat/
 description: Recuperar la hoja de trabajo en un formato específico del libro de trabajo
+kwords: Excel, Office, hoja de cálculo, nube REST API, GetWorksheetWithFormat
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetWithFormat" >}}
@@ -19,7 +20,7 @@ weight: 50
      {{< blocks/products/cells/docs-Parameter-content columns="nombre de la hoja, cadena, el nombre de la hoja de trabajo." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Nombre del parámetro, tipo, descripción" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="formato, cadena, formato de exportación (CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/07617 3481/MD [Rebajas]/Números)." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="formato, cadena, formato de exportación (CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/07 6173481/MD [Rebajas]/Números)." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="resolución vertical, número entero, resolución vertical de la imagen." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="resolución horizontal, número entero, resolución horizontal de la imagen." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="área, cadena, Representa el rango a imprimir." >}} 

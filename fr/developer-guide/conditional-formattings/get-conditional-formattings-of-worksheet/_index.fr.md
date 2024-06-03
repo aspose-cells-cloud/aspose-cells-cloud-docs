@@ -6,6 +6,7 @@ aliases: [/get-conditional-formattings-of-worksheet/]
 keywords: REST API, spreadsheets, excel, get condition formattin
 description: "Cells.Cloud API pour Excel fonctionne : obtenir le formatage des conditions"
 weight: 20
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, obtenir les formats conditionnels
 ---
  Ce REST API indique Obtenir les mises en forme conditionnelles
  
@@ -18,7 +19,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditional
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin||
 | Nom de la feuille| chaîne| chemin||

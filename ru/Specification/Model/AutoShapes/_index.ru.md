@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/model/autoshapes/
 description: "Aspose.Cells Спецификация облачной модели: AutoShapes. Легко обрабатывайте Excel и другие документы электронных таблиц с помощью таких функций, как открытие, создание, редактирование, разделение, слияние, сравнение и преобразование."
+kwords: Excel, Office, электронная таблица, Cloud REST API, автофигуры
 weight: 50
 ---
 ## **автофигуры**
@@ -15,4 +16,5 @@ weight: 50
 | Автошейпелист| Контейнер| Истинный| ЛОЖЬ|||
 | связь| Класс:Ссылка| Истинный| ЛОЖЬ|||
 
-**Имя родителя** : (LinkElement)[linkelement]
+**Имя родителя** : [СсылкаЭлемент](/specification/model/linkelement)
+

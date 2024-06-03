@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/getworksheetlistobject/
 description: Récupérer la description de l'objet de liste par index dans la feuille de calcul
+kwords: Excel, Office, feuille de calcul, Cloud REST API, GetWorksheetListObject
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetListObject" >}}
@@ -20,7 +21,7 @@ weight: 50
      {{< blocks/products/cells/docs-Parameter-content columns="listobjectindex, entier, index d\'objet de liste." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Nom du paramètre, type, description" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="format, chaîne," >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="format,chaîne," >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="dossier, chaîne, le dossier où se trouve le fichier." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Le nom de stockage où se trouve le fichier." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}

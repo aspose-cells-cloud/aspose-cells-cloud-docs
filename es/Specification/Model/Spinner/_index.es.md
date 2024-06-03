@@ -4,16 +4,17 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/model/spinner/
 description: "Aspose.Cells Especificación del modelo de nube: Spinner. Maneje sin esfuerzo Excel y otros documentos de hoja de cálculo con funciones como abrir, generar, editar, dividir, fusionar, comparar y convertir."
+kwords: Excel, Office, Hoja de cálculo, Nube REST API, Spinner
 weight: 50
 ---
 ## **hilandero**
 
- 
+ Representa el control Formularios: Spinner.
 
 | Nombre de la propiedad| tipo de propiedad| Anulable| Solo lectura| Valor por defecto| Descripción|
 |:- |:- |:- |:- |:- |:- |
 | Valor actual| Entero| Verdadero| FALSO|| Obtiene o establece el valor actual.|
-| Cambio incrementado| Entero| Verdadero| FALSO|| Obtiene o establece la cantidad en la que la barra de desplazamiento o el control giratorio aumentan una línea de desplazamiento.|
+| Cambio incrementado| Entero| Verdadero| FALSO|| Obtiene o establece la cantidad en la que la barra de desplazamiento o el control giratorio se incrementan en una línea de desplazamiento.|
 | máx.| Entero| Verdadero| FALSO|| Obtiene o establece el valor máximo de una barra de desplazamiento o rango giratorio.|
 | mín.| Entero| Verdadero| FALSO|| Obtiene o establece el valor mínimo de una barra de desplazamiento o un rango giratorio.|
 | Sombra| Booleano| Verdadero| FALSO|| Indica si la forma tiene sombreado 3D.|
@@ -34,7 +35,7 @@ weight: 50
 | X| Entero| Verdadero| FALSO|||
 | Y| Entero| Verdadero| FALSO|||
 | Ángulo de rotación| Flotante| Verdadero| FALSO|||
-| Texto HTML| Cadena| Verdadero| FALSO|||
+|Texto HTML| Cadena| Verdadero| FALSO|||
 | Texto| Cadena| Verdadero| FALSO|||
 | Texto alternativo| Cadena| Verdadero| FALSO|||
 | TextoAlineaciónHorizontal| Cadena| Verdadero| FALSO|||
@@ -55,4 +56,5 @@ weight: 50
 | Hipervínculo| Cadena| Verdadero| FALSO|||
 | enlace| Clase: enlace| Verdadero| FALSO|||
 
-**Nombre del padre** : (Forma)[forma]
+**Nombre del padre** : [Forma](/specification/model/shape)
+

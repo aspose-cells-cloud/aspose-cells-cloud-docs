@@ -6,6 +6,7 @@ aliases: [/add-a-cell-area-for-format-condition/]
 keywords: REST API, spreadsheets, excel, add cellarea for formatconditio
 description: "Cells.Cloud API pour Excel fonctionner : ajouter un commentaire"
 weight: 30
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, ajouter CellArea
 ---
 Ce REST API indique l'ajout d'une zone de cellule pour la condition de format
             
@@ -19,7 +20,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditional
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin||
 | Nom de la feuille| chaîne| chemin||

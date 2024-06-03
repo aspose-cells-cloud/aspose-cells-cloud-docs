@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/model/cellsdocumentproperties/
 description: "Aspose.Cells Specifica del modello cloud: CellsDocumentProperties. Gestisci facilmente Excel e altri fogli di calcolo con funzionalità come apertura, generazione, modifica, divisione, unione, confronto e conversione"
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, CellsDocumentProperties
 weight: 50
 ---
 ## **celleDocumentProperties**

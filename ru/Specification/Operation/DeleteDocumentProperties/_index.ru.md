@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/deletedocumentproperties/
 description: Удалите все пользовательские свойства документа и сбросьте встроенные.
+kwords: Excel, Office, Электронная таблица, Cloud REST API, УдалитьДокументСвойства
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteDocumentProperties" >}}

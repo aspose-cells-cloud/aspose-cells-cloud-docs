@@ -8,6 +8,7 @@ aliases: [/convert-excel-file-to-pdf-in-cloud/]
 keywords: Convert excel files to pdf files
 description: Aspose.Cells Cloud REST API, excel dosyalarının pdf dosyalarına dönüştürülmesini destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 80
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel ila PDF
 ---
 Bu REST API `saveas` excel dosyasını PDF'e ekleyin.
 
@@ -15,11 +16,11 @@ Bu REST API `saveas` excel dosyasını PDF'e ekleyin.
 
 Bu REST API `convert` excel dosyasını PDF'e ekleyin.
 
-[PUT /hücreler/dönüştür](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)API, MS Excel dosyasını ek ayarlarla PDF dosyasına dönüştürmenizi ve sonucu yanıta kaydetmenizi sağlar.
+[PUT /hücreler/dönüştür](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) API, MS Excel dosyasını ek ayarlarla PDF dosyasına dönüştürmenizi ve sonucu yanıta kaydetmenizi sağlar.
 
 Bu REST API `export` excel dosyasını PDF'e ekleyin.
 
-[GET /hücreler/{isim}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook  )API, MS Excel dosyasını ek ayarlarla PDF dosyasına dönüştürmenizi ve sonucu yanıta kaydetmenizi sağlar.
+[GET /hücreler/{isim}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook  ) API, MS Excel dosyasını ek ayarlarla PDF dosyasına dönüştürmenizi ve sonucu yanıta kaydetmenizi sağlar.
 
 ## DİNLENME API
 
@@ -34,7 +35,7 @@ Bu REST API `export` excel dosyasını PDF'e ekleyin.
 
  Bunlar[PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook), [WorkBook'u Alın](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook), [Belge SonrasıFarklı Kaydet](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) API'ler herkesin erişebileceği bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
 
- Kullanabilirsiniz**cURL** Aspose.Cells web hizmetlerine kolayca erişmek için komut satırı aracı. Aşağıdaki örnekte, cURL ile Cloud API'e nasıl çağrı yapılacağı gösterilmektedir.
+ Kullanabilirsiniz**cURL**Aspose.Cells web hizmetlerine kolayca erişmek için komut satırı aracı. Aşağıdaki örnekte, cURL ile Cloud API'e nasıl çağrı yapılacağı gösterilmektedir.
 
 
 

@@ -1,9 +1,10 @@
 ﻿---
-title: PostWorksheetListObjectOrdenarTabla
+title: PostWorksheetListObjectOrdenarTabl
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/postworksheetlistobjectsorttable/
 description: Ordenar objetos de lista en la hoja de trabajo
+kwords: Excel, Office, hoja de cálculo, nube REST API, PostWorksheetListObjectSortTable
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetListObjectSortTable" >}}

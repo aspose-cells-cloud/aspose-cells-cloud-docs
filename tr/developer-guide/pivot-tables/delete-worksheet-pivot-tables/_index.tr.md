@@ -8,6 +8,7 @@ aliases: [/delete-worksheet-pivot-tables/]
 keywords: Delete all pivot tables in an Excel worksheet
 description: Aspose.Cells Cloud REST API, Excel çalışma sayfasındaki tüm pivot tabloların silinmesini destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 80
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel çalışma sayfasındaki tüm pivot tabloları sil
 ---
 Bu REST API, Çalışma sayfası pivot tablolarının silindiğini gösterir
  

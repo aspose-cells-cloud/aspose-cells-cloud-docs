@@ -8,6 +8,7 @@ aliases: [/set-the-style-of-the-range/]
 keywords: Set range style on an Excel workshee
 description: Aspose.Cells Cloud REST API stöder inställningsområdesstil på ett Excel-kalkylblad. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 70
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Ställ in stilen på intervallet
 ---
 ## **Introduktion**
 I det här exemplet kan du ställa in stilen på intervallet med hjälp av Aspose.Cells Cloud API i dina applikationer. Du kan använda vår REST API med vilket språk som helst: .NET, Java, PHP, Ruby, Rails, Python, jQuery och många fler.

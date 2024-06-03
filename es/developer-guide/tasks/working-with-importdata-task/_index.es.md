@@ -7,6 +7,7 @@ aliases: [/working-with-importdata-task/]
 keywords: REST API, task, convert, spreadsheets, exce
 description: "Cells.Cloud API para Excel operar: las tareas admiten la importación de datos a un archivo de Excel"
 weight: 40
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Trabajar con la tarea ImportData
 ---
 ## DESCANSO API
 
@@ -17,7 +18,7 @@ weight: 40
 
  El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/Task/PostRunTask) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
 
- Puedes usar**cURL** Herramienta de línea de comandos para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
+ Puedes usar**cURL**Herramienta de línea de comandos para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 

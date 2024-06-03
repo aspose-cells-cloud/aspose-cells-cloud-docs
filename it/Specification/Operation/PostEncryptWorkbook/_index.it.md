@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/postencryptworkbook/
 description: Excel Crittografia
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PostEncryptWorkbook
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostEncryptWorkbook" >}}

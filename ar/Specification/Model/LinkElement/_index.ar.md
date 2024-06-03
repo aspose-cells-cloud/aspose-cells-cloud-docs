@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/model/linkelement/
 description: "Aspose.Cells مواصفات النموذج السحابي: LinkElement. تعامل بسهولة مع Excel ومستندات جداول البيانات الأخرى التي تحتوي على ميزات مثل الفتح والتوليد والتحرير والتقسيم والدمج والمقارنة والتحويل"
+kwords: Excel، Office، جدول البيانات، Cloud REST API، LinkElement
 weight: 50
 ---
 ## **linkElement**
@@ -35,7 +36,6 @@ weight: 50
 	-  [اعداد الصفحة](pagesetup) 
 	-  [صف](row) 
 	-  [الصفوف](rows) 
-	-  [SplitResultDocument](splitresultdocument) 
 	-  [الأنماط](styles) 
 	-  [TextItem](textitem) 
 	-  [عناصر نصية](textitems) 

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postworksheetlistcolumnstotal/
 description: تحديث إجمالي أعمدة القائمة في الجدول
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostWorksheetListColumnsTotal
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetListColumnsTotal" >}}

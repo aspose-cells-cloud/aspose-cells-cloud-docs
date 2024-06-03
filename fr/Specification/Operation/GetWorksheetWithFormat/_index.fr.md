@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/getworksheetwithformat/
 description: Récupérer la feuille de calcul dans un format spécifié à partir du classeur
+kwords: Excel, Office, feuille de calcul, Cloud REST API, GetWorksheetWithFormat
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetWithFormat" >}}
@@ -19,7 +20,7 @@ weight: 50
      {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Le nom de la feuille de calcul." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Nom du paramètre, type, description" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="format, chaîne, format d\'exportation (CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/076173 481/MD [Markdown]/Nombres)." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="format, chaîne, format d\'exportation (CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/07617 3481/MD [Markdown]/Nombres)." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="résolution verticale, entier, résolution verticale de l\'image." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="résolution horizontale, entier, résolution horizontale de l’image." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Area,String,Représente la plage à imprimer." >}} 

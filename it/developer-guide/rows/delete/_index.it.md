@@ -7,6 +7,7 @@ url: /it/rows/delete/
 keywords: Working with deleting row on an Excel worksheet. How to add rows on an Excel worksheet
 description: Aspose.Cells Cloud REST API supporta l'eliminazione di righe su un foglio di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 20
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Utilizzo dell'eliminazione di righe su un foglio di lavoro Excel
 ---
 ## Lavorare con l'eliminazione della riga su un foglio di lavoro Excel.
 

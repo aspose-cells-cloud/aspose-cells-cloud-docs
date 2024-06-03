@@ -7,8 +7,9 @@ url: /fr/export/
 keywords: Export workbook and internal objects to kinds of format files
 description: Aspose.Cells Cloud REST API prend en charge l'exportation de fichiers Excel et d'objets internes vers des types de fichiers de format. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 31
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdwon, Exporter un classeur et des objets internes vers des types de format
 ---
- Si vous avez initialement créé un fichier Excel dans un certain format, comme[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/) , et[CSV](https://docs.fileformat.com/spreadsheet/csv/) , vous trouverez parfois utile de convertir le fichier Excel dans un autre format afin de pouvoir profiter des fonctionnalités spéciales qu'il offre. Par exemple, vous souhaiterez peut-être exporter un fichier Excel vers[PDF](https://docs.fileformat.com/pdf/) pour protéger votre contenu de toute modification non autorisée et le rendre facile à lire et à partager simultanément.
+ Si vous avez initialement créé un fichier Excel dans un certain format, comme[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/) , et[CSV](https://docs.fileformat.com/spreadsheet/csv/) vous trouverez parfois utile de convertir le fichier Excel dans un autre format afin de pouvoir profiter des fonctionnalités spéciales qu'il offre. Par exemple, vous souhaiterez peut-être exporter un fichier Excel vers[PDF](https://docs.fileformat.com/pdf/) pour protéger votre contenu de toute modification non autorisée et le rendre facile à lire et à partager simultanément.
 
  L'exportation d'objets Excel est un processus complexe. De nombreux facteurs contribuent à cette complexité et doivent donc être pris en compte lors du processus d’exportation. La possibilité d'exporter l'objet Excel vers un fichier au format unique avec une qualité professionnelle précise est l'une des principales fonctionnalités de Aspose.Cells Cloud.
 
@@ -28,10 +29,10 @@ POST https://api.aspose.cloud/v3.0/cells/export
 
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | déposer| déposer| Données de formulaire| Fichier à télécharger|
-| type d'objet| chaîne| requête|type d'objet (classeur/feuille de calcul/graphique/forme/image/listobject/oleobject)|
+| type d'objet| chaîne| requête| type d'objet (classeur/feuille de calcul/graphique/forme/image/listobject/oleobject)|
 | format| chaîne| requête|[Format de fichier](/cells/fr/supported-file-formats/)  |
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement depuis un navigateur Web.

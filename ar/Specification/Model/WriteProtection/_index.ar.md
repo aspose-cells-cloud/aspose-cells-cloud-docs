@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/model/writeprotection/
 description: "Aspose.Cells مواصفات النموذج السحابي: حماية الكتابة. تعامل بسهولة مع Excel ومستندات جداول البيانات الأخرى التي تحتوي على ميزات مثل الفتح والتوليد والتحرير والتقسيم والدمج والمقارنة والتحويل"
+kwords: Excel، Office، جدول البيانات، Cloud REST API، حماية الكتابة
 weight: 50
 ---
 ## **حماية الكتابة**

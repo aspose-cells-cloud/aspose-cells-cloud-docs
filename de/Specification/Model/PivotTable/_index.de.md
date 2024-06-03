@@ -3,83 +3,85 @@ title: PivotTabelle
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/model/pivottable/
-description: "Aspose.Cells Cloud-Modellspezifikation: PivotTable. Bearbeiten Sie mühelos Excel und andere Tabellenkalkulationsdokumente mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+description: "Aspose.Cells Cloud-Modellspezifikation: PivotTable. Müheloses Bearbeiten von Excel und anderen Tabellenkalkulationsdokumenten mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PivotTable
 weight: 50
 ---
-## **PivotTable**
+## **Pivot-Tabelle**
 
- 
+ Zusammenfassende Beschreibung für PivotTable.
 
-| Name des Anwesens| Art der Immobilie| Nullbar| Schreibgeschützt| Standardwert| Beschreibung|
+| Name des Anwesens| Art der Immobilie| Nullwerte zulassen| Schreibgeschützt| Standardwert| Beschreibung|
 |:- |:- |:- |:- |:- |:- |
 | AltTextDescription| Zeichenfolge| WAHR| FALSCH|||
 | AltTextTitle| Zeichenfolge| WAHR| FALSCH|||
 | AutoFormatType| Zeichenfolge| WAHR| FALSCH|||
 | Basisfelder| Container| WAHR| FALSCH|||
-| ColumnFields| Container| WAHR| FALSCH|||
-| ColumnGrand| Boolescher Wert| WAHR| FALSCH|||
-| ColumnHeaderCaption| Zeichenfolge| WAHR| FALSCH|||
-| ColumnRange| Klasse:CellArea| WAHR| FALSCH|||
-| CustomListSort| Boolescher Wert| WAHR| FALSCH|||
-| DataBodyRange| Klasse:CellArea| WAHR| FALSCH|||
+| Spaltenfelder| Container| WAHR| FALSCH|||
+| SäuleGroß| Boolescher Wert| WAHR| FALSCH|||
+| SpaltenüberschriftBeschriftung| Zeichenfolge| WAHR| FALSCH|||
+| Spaltenbereich| Klasse:Zellenbereich| WAHR| FALSCH|||
+| BenutzerdefinierteListensortierung| Boolescher Wert| WAHR| FALSCH|||
+| Datenbereich| Klasse:Zellenbereich| WAHR| FALSCH|||
 | Datenfeld| Klasse:PivotField| WAHR| FALSCH|||
 | Datenfelder| Container| WAHR| FALSCH|||
-| Datenquelle|Array<String> | WAHR| FALSCH|||
-| DisplayErrorString| Boolescher Wert| WAHR| FALSCH|||
-| DisplayImmediateItems| Boolescher Wert| WAHR| FALSCH|||
+| Datenquelle|Anordnung<String> | WAHR| FALSCH|||
+| Anzeigefehlerzeichenfolge| Boolescher Wert| WAHR| FALSCH|||
+| SofortigeElemente anzeigen| Boolescher Wert| WAHR| FALSCH|||
 | DisplayNullString| Boolescher Wert| WAHR| FALSCH|||
-| Aktivieren Sie die Datenwertbearbeitung| Boolescher Wert| WAHR| FALSCH|||
-| EnableDrilldown| Boolescher Wert| WAHR| FALSCH|||
-| EnableFieldDialog| Boolescher Wert| WAHR| FALSCH|||
-|EnableFieldList| Boolescher Wert| WAHR| FALSCH|||
+| EnableDataValueEditing| Boolescher Wert| WAHR| FALSCH|||
+| Drilldown aktivieren| Boolescher Wert| WAHR| FALSCH|||
+| Felddialog aktivieren| Boolescher Wert| WAHR| FALSCH|||
+| Feldliste aktivieren| Boolescher Wert| WAHR| FALSCH|||
 | EnableWizard| Boolescher Wert| WAHR| FALSCH|||
 | Fehlerzeichenfolge| Zeichenfolge| WAHR| FALSCH|||
-| FieldListSortAscending| Boolescher Wert| WAHR| FALSCH|||
-| GrandTotalName| Zeichenfolge| WAHR| FALSCH|||
-| HasBlankRows| Boolescher Wert| WAHR| FALSCH|||
+| FeldListeSortierenAufsteigend| Boolescher Wert| WAHR| FALSCH|||
+| Gesamtsummenname| Zeichenfolge| WAHR| FALSCH|||
+| Hat leere Zeilen| Boolescher Wert| WAHR| FALSCH|||
 | Einzug| Ganze Zahl| WAHR| FALSCH|||
 | IsAutoFormat| Boolescher Wert| WAHR| FALSCH|||
-| IsGridDropZones| Boolescher Wert| WAHR| FALSCH|||
-| IsMultipleFieldFilters| Boolescher Wert| WAHR| FALSCH|||
+| IstGridDropZones| Boolescher Wert| WAHR| FALSCH|||
+| IstMehrereFeldfilter| Boolescher Wert| WAHR| FALSCH|||
 | Ist ausgewählt| Boolescher Wert| WAHR| FALSCH|||
-| ItemPrintTitles| Boolescher Wert| WAHR| FALSCH|||
+| ArtikelDruckenTitel| Boolescher Wert| WAHR| FALSCH|||
 | Manuelles Update| Boolescher Wert| WAHR| FALSCH|||
-| MergeLabels| Boolescher Wert| WAHR| FALSCH|||
-| MissingItemsLimit| Zeichenfolge| WAHR| FALSCH|||
-| Name| Zeichenfolge| WAHR| FALSCH|||
+|Etiketten zusammenführen| Boolescher Wert| WAHR| FALSCH|||
+| FehlendesArtikelLimit| Zeichenfolge| WAHR| FALSCH|||
+| Name| Zeichenfolge| WAHR| FALSCH||Stellt den Namen der Pivot-Tabelle dar.|
 | NullString| Zeichenfolge| WAHR| FALSCH|||
-| PageFieldOrder| Zeichenfolge| WAHR| FALSCH|||
+| Seitenfeldreihenfolge| Zeichenfolge| WAHR| FALSCH|||
 | Seitenfelder| Container| WAHR| FALSCH|||
-| PageFieldWrapCount| Ganze Zahl| WAHR| FALSCH|||
+| Seitenfeldumbruchanzahl| Ganze Zahl| WAHR| FALSCH|||
 | PivotFilter| Container| WAHR| FALSCH|||
 | PivotTableStyleName| Zeichenfolge| WAHR| FALSCH|||
 | PivotTableStyleType| Zeichenfolge| WAHR| FALSCH|||
 | Formatierung beibehalten| Boolescher Wert| WAHR| FALSCH|||
-| PrintDrill| Boolescher Wert| WAHR| FALSCH|||
-| Drucktitel| Boolescher Wert| WAHR| FALSCH|||
-| RefreshDataFlag| Boolescher Wert| WAHR| FALSCH|||
-| RefreshDataOnOpeningFile| Boolescher Wert| WAHR| FALSCH|||
-| RowFields| Container| WAHR| FALSCH|||
-| RowGrand| Boolescher Wert| WAHR| FALSCH|||
-| RowHeaderCaption| Zeichenfolge| WAHR| FALSCH|||
-| RowRange| Klasse:CellArea| WAHR| FALSCH|||
+| Druckbohrer| Boolescher Wert| WAHR| FALSCH|||
+| DruckeTitel| Boolescher Wert| WAHR| FALSCH|||
+| Aktualisieren Sie die Datenflagge| Boolescher Wert| WAHR| FALSCH|||
+| Daten beim Öffnen der Datei aktualisieren| Boolescher Wert| WAHR| FALSCH|||
+| Zeilenfelder| Container| WAHR| FALSCH|||
+| reiheGrand| Boolescher Wert| WAHR| FALSCH|||
+| Zeilenkopfzeilenbeschriftung| Zeichenfolge| WAHR| FALSCH|||
+| Zeilenbereich| Klasse:Zellenbereich| WAHR| FALSCH|||
 | Daten speichern| Boolescher Wert| WAHR| FALSCH|||
 | Datentipps anzeigen| Boolescher Wert| WAHR| FALSCH|||
-| ShowDrill| Boolescher Wert| WAHR| FALSCH|||
-| ShowEmptyCol| Boolescher Wert| WAHR| FALSCH|||
-| ShowEmptyRow| Boolescher Wert| WAHR| FALSCH|||
-| ShowMemberPropertyTips| Boolescher Wert| WAHR| FALSCH|||
-| ShowPivotStyleColumnHeader| Boolescher Wert| WAHR| FALSCH|||
-| ShowPivotStyleColumnStripes| Boolescher Wert| WAHR| FALSCH|||
-| ShowPivotStyleLastColumn| Boolescher Wert| WAHR| FALSCH|||
-| ShowPivotStyleRowHeader| Boolescher Wert| WAHR| FALSCH|||
-| ShowPivotStyleRowStripes| Boolescher Wert| WAHR| FALSCH|||
-| ShowRowHeaderCaption| Boolescher Wert| WAHR| FALSCH|||
+| Bohrer anzeigen| Boolescher Wert| WAHR| FALSCH|||
+| Leere Spalte anzeigen| Boolescher Wert| WAHR| FALSCH|||
+| Leere Zeile anzeigen| Boolescher Wert| WAHR| FALSCH|||
+| Tipps für Mitgliedseigenschaften anzeigen| Boolescher Wert| WAHR| FALSCH|||
+| PivotStyleColumnHeader anzeigen| Boolescher Wert| WAHR| FALSCH|||
+| PivotStyleColumnStripes anzeigen| Boolescher Wert| WAHR| FALSCH|||
+| PivotStyleLetzteSpalte anzeigen| Boolescher Wert| WAHR| FALSCH|||
+| PivotStyleRowHeader anzeigen| Boolescher Wert| WAHR| FALSCH|||
+| PivotStyleRowStripes anzeigen| Boolescher Wert| WAHR| FALSCH|||
+| Zeilenkopfzeilenbeschriftung anzeigen| Boolescher Wert| WAHR| FALSCH|||
 | Wertezeile anzeigen| Boolescher Wert| WAHR| FALSCH|||
-| ZwischensummeHiddenPageItems| Boolescher Wert| WAHR| FALSCH|||
-| TableRange1| Klasse:CellArea| WAHR| FALSCH|||
-|TableRange2| Klasse:CellArea| WAHR| FALSCH|||
+| ZwischensummeVersteckteSeitenelemente| Boolescher Wert| WAHR| FALSCH|||
+| Tabellenbereich1| Klasse:Zellenbereich| WAHR| FALSCH|||
+| Tabellenbereich2| Klasse:Zellenbereich| WAHR| FALSCH|||
 | Etikett| Zeichenfolge| WAHR| FALSCH|||
 | Verknüpfung| Klasse:Link| WAHR| FALSCH|||
 
-**Elternname** : (LinkElement)[Linkelement]
+**Elternname** : [LinkElement](/specification/model/linkelement)
+

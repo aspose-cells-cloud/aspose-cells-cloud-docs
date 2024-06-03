@@ -8,6 +8,7 @@ aliases: [/add-an-empty-row-in-a-worksheet/]
 keywords: Add an empty row on an Excel workshee
 description: Aspose.Cells Cloud REST API stöder att lägga till en tom rad på ett Excel kalkylblad. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 20
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Lägg till en tom rad på ett Excel kalkylblad
 ---
 Denna REST API indikerar att en ny kalkylbladsrad ska läggas till på ett Excel kalkylblad.
  
@@ -22,7 +23,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/
  
 | Parameternamn| Typ| Sökväg/Frågesträng/HTTPBody|Beskrivning|
 |:- |:- |:- |:- |
-| namn| sträng| väg|Arbetsbokens namn.|
+| namn| sträng| väg| Arbetsbokens namn.|
 | arknamn| sträng| väg| Kalkylbladets namn.|
 | rowIndex| heltal| väg| Det nya radindexet.|
 | mapp| sträng| fråga| Dokumentmappen.|

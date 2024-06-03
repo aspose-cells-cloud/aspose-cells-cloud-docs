@@ -7,6 +7,7 @@ aliases: [/working-with-list-objects/,/working-with-list-object-or-table/]
 keywords: Add, delete, update, and get a list object(table) into an Excel worksheet
 description: Aspose.Cells Cloud REST API admite agregar, eliminar, actualizar y obtener un objeto de lista (tabla) en una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 100
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, ListObjects
 ---
  &nbsp;&nbsp;&nbsp;&nbsp;Las tablas en Excel son beneficiosas para dar una estructura a los conjuntos de datos. Tiene funciones útiles que van desde organizar los datos hasta proporcionar encabezados y filtros aplicados. Domine las tablas Excel y analice sus datos de forma rápida y sencilla.
 

@@ -1,8 +1,9 @@
 ﻿---
-title: Получить ось второй категории диаграммы
+title:  Получить ось второй категории диаграммы
 type: docs
 url: /ru/charts/second-category-axis/get/
 weight: 60
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Получить диаграмму по оси второй категории
 ---
  Этот REST API указывает на ось второй категории «Получить диаграмму».
  

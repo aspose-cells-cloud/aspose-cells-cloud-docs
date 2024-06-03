@@ -8,6 +8,7 @@ aliases: [/add-a-filter-for-a-filter-column/]
 keywords: Adds a filter for a filter column on an Excel worksheet
 description: Облако Aspose.Cells API поддерживает добавление фильтра для столбца фильтра на листе Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 60
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Добавить фильтр в лист Excel
 ---
 Этот REST API указывает на добавление `a filter` для столбца фильтра на листе Excel.
 
@@ -24,10 +25,10 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/
 
 | Имя параметра| Тип| Путь/строка запроса/HTTPBody|Описание|
 |:- |:- |:- |:- |
-| имя| нить| Путь|Имя рабочей книги.|
+| имя| нить| Путь| Имя рабочей книги.|
 | имя листа| нить| Путь| Имя рабочего листа.|
 |диапазон|нить| Запрос||
-|полеИндекс|целое число| Запрос||
+|полеиндекс|целое число| Запрос||
 |критерии|нить| Запрос||
 |спичкаЗаготовки|нить| Запрос|правда/ложь|
 |обновить|нить| Запрос|правда/ложь|

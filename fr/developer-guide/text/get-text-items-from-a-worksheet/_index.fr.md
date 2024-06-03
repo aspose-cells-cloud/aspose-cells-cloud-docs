@@ -8,6 +8,7 @@ aliases: [/get-text-items-from-a-worksheet/]
 weight: 20
 keywords: Get text from Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) worksheet
 description: Aspose.Cells Cloud REST API prend en charge l'obtention du texte de la feuille de calcul Excel. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, obtenir des éléments de texte à partir d'une feuille de calcul Excel
 ---
 Ce REST API indique le `text items` de la feuille de calcul `read` dans la feuille de calcul Excel.
  
@@ -20,7 +21,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/textItems
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Nom du classeur.|
 | Nom de la feuille| chaîne| chemin| Le nom de la feuille de calcul.|

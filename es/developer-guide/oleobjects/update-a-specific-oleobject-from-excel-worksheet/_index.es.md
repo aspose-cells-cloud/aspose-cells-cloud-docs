@@ -8,6 +8,7 @@ aliases: [/update-a-specific-oleobject-from-excel-worksheet/]
 keywords: Update an OLE object in an Excel worksheet
 description: Aspose.Cells Cloud REST API admite la actualización de un objeto OLE en una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 30
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Actualizar un objeto OLE en una hoja de trabajo Excel
 ---
 Este REST API indica `update` y `OLE object` en una hoja de trabajo Excel.
  
@@ -22,7 +23,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects
  
 | Nombre del parámetro| Tipo| Ruta/Cadena de consulta/Cuerpo HTTP|Descripción|
 |:- |:- |:- |:- |
-| nombre| cadena| camino|El nombre del libro de trabajo.|
+| nombre| cadena| camino| El nombre del libro de trabajo.|
 | nombre de la hoja| cadena| camino| El nombre de la hoja de trabajo.|
 | oleObjectIndex| entero| camino| Índice de objetos antiguos|
 | viejo|| cuerpo| Objeto OLE|

@@ -1,9 +1,10 @@
 ﻿---
-title: Obtener celda de hoja de cálculo
+title: Obtener celda de hoja de trabajo
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/getworksheetcells/
 description: Recuperar descripciones de celdas en un formato específico
+kwords: Excel, Office, hoja de cálculo, nube REST API, GetWorksheetCells
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetCells" >}}

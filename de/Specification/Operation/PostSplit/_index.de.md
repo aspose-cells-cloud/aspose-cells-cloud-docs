@@ -4,23 +4,24 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postsplit/
 description: Teilen Sie Excel Tabellenkalkulationsdateien basierend auf Arbeitsblättern auf und erstellen Sie Ausgabedateien in verschiedenen Formaten
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostSplit
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostSplit" >}}
 {{< blocks/products/cells/docs-title titlemsg="Split Excel spreadsheet files based on worksheets and create output files in various formats." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/split,POST,Split Excel Tabellenkalkulationsdateien basierend auf Arbeitsblättern und erstellt Ausgabedateien in verschiedenen Formaten.,<a href=\'https://apireference.aspose.cloud/cells/#/LightCells/PostSplit\'>PostSplit</ a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/split,POST,Teilen Sie Excel Tabellenkalkulationsdateien basierend auf Arbeitsblättern und erstellen Sie Ausgabedateien in verschiedenen Formaten.,<a href=\'https://apireference.aspose.cloud/cells/#/LightCells/PostSplit\'>PostSplit</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="outFormat,string,Das Ausgabedatenformat 1 /BMP/MD[Markdown]/Numbers)" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="Passwort, Zeichenfolge, Das zum Öffnen einer Excel-Datei erforderliche Passwort." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="from,integer,sheet index" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="zu, Ganzzahl, Blattindex" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction,boolean,Gibt an, ob die Einschränkung der Excel-Datei überprüft wird, wenn der Benutzer zellenbezogene Objekte ändert." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="region,string,Die regionalen Einstellungen für die Arbeitsmappe." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="outFormat, Zeichenfolge, Das Ausgabedatendateiformat. (CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Kennwort, Zeichenfolge, Das zum Öffnen einer Excel-Datei erforderliche Kennwort." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="von, Ganzzahl, Blattindex" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="bis, Ganzzahl, Blattindex" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction, boolean, ob die Einschränkung der Excel-Datei überprüft wird, wenn der Benutzer zellenbezogene Objekte ändert." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Region, Zeichenfolge, Die regionalen Einstellungen für die Arbeitsmappe." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/LightCellsController/PostSplit\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

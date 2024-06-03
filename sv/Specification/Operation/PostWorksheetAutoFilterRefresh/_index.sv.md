@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/postworksheetautofilterrefresh/
 description: Uppdatera automatiska filter i kalkylbladet
+kwords: Excel, Office, Kalkylblad, Cloud REST API, PostWorksheetAutoFilterRefresh
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetAutoFilterRefresh" >}}

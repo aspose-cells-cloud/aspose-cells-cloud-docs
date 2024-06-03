@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postworksheetlistobjectinsertslicer/
 description: Вставить срез для объекта списка
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostWorksheetListObjectInsertSlicer
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetListObjectInsertSlicer" >}}
@@ -20,7 +21,7 @@ weight: 50
      {{< blocks/products/cells/docs-Parameter-content columns="listObjectIndex,integer,Индекс объекта списка." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Имя параметра, тип, описание" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns=" columnsIndex,integer,индекс ListColumn в ListObject.ListColumns" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="columnsIndex,integer,индекс ListColumn в ListObject.ListColumns" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns=" destCellName,string,ячейка в верхнем левом углу диапазона среза." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="папка,строка,Папка, в которой находится файл." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="StorageName,string,Имя хранилища, в котором находится файл." >}} 

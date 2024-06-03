@@ -5,27 +5,28 @@ type: docs
 url: /de/docker/run/
 description: So führen Sie Aspose.Cells Cloud für Docker aus
 weight: 30
+kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdwon, Ausführen
 ---
 ## Port freigeben
 
-Hafen | Beschreibung | Erforderlich
+Port | Beschreibung | Erforderlich
 ---|:--:|---:
-5000 | Ordner mit Schriftarten, die zum Rendern von Dokumenten verwendet werden | WAHR
+5000 | Ordner mit Schriftarten, die zum Rendern von Dokumenten verwendet werden | true
 
 
 ##  Erforderliche Mengen ##
-Mountpfad im Container | Beschreibung | Erforderlich
+Einhängepfad im Container | Beschreibung | Erforderlich
 ---|:--:|---:
-C:\fonts | Ordner mit Schriftarten, die zum Rendern von Dokumenten verwendet werden | FALSCH
-C:\Daten | Dateispeicherordner | FALSCH
+C:\fonts | Ordner mit Schriftarten, die zum Rendern von Dokumenten verwendet werden | false
+C:\data | Dateispeicherordner | false
 
-##  Laufparameter ##
+##  Ausführungsparameter ##
 
 Name | Beschreibung | Erforderlich
 ---|:--:|---:
-LicensePublicKey | Öffentlicher Schlüssel der Lizenz | WAHR
-LicensePrivateKey | Privater Schlüssel der Lizenz | WAHR
-storagesCredentialsFilePath | Speicherkonfigurationsdateipfad. Die Standarddatei ist ./storageResource.json | WAHR
+LicensePublicKey | Öffentlicher Schlüssel der Lizenz | true
+LicensePrivateKey | Privater Schlüssel der Lizenz | true
+storagesCredentialsFilePath | Speicherkonfigurationsdateipfad. Standarddatei ist ./storageResource.json | true
 
 ##  Führen Sie den Befehl aus ##
 
@@ -56,4 +57,4 @@ docker run  -d  -p 47900:5000  -e LicensePublicKey=yourLicensePublicKey	 -e Lice
 
 
 **Referenzdokument** : 
-  - [Docker-Run]( https://docs.docker.com/engine/reference/commandline/run/)
+  - [Docker-Ausführung]( https://docs.docker.com/engine/reference/commandline/run/)

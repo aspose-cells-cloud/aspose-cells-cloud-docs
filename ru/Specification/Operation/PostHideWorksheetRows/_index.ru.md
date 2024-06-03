@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/posthideworksheetrows/
 description: Скрыть строки на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostHideWorksheetRows
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostHideWorksheetRows" >}}

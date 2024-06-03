@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/putworksheetpivottablefilter/
 description: Agregar un filtro dinámico a la tabla dinámica
+kwords: Excel, Office, Hoja de cálculo, Cloud REST API, PutWorksheetPivotTableFilter
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetPivotTableFilter" >}}

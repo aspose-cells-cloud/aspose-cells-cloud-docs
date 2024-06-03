@@ -8,6 +8,7 @@ aliases: [/add-a-shape-inside-the-worksheet/]
 keywords: Add shape on an Excel workshee
 description: Aspose.Cells Cloud REST API admite agregar forma en una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 30
+kwords: Excel, Office Cloud, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Agregar una forma en una hoja de trabajo Excel
 ---
 Este REST API indica agregar una forma en una hoja de trabajo Excel.
  

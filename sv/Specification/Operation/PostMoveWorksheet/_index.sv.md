@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/postmoveworksheet/
 description: Flytta kalkylblad i arbetsboken
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostMoveWorksheet
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostMoveWorksheet" >}}

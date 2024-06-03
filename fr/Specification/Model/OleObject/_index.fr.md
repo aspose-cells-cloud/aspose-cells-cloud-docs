@@ -4,17 +4,18 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/model/oleobject/
 description: "Aspose.Cells Spécification du modèle cloud : OleObject. Gérez sans effort Excel et d'autres feuilles de calcul avec des fonctionnalités telles que l'ouverture, la génération, l'édition, le fractionnement, la fusion, la comparaison et la conversion."
+kwords: Excel, Office, feuille de calcul, Cloud REST API, OleObject
 weight: 50
 ---
 ## **oleObject**
 
- 
+ Représente un OleObject dans une feuille de calcul.
 
 | Nom de la propriété| Type de propriété| Nullable| Lecture seulement| Valeur par défaut| Description|
 |:- |:- |:- |:- |:- |:- |
-| Afficher comme icône| Booléen| Vrai| FAUX||Vrai si l'objet spécifié est affiché sous forme d'icône et que l'image ne sera pas modifiée automatiquement.|
+| Afficher comme icône| Booléen| Vrai| FAUX|| Vrai si l'objet spécifié est affiché sous forme d'icône et que l'image ne sera pas modifiée automatiquement.|
 | Type de format de fichier| Chaîne| Vrai| FAUX|| Obtient et définit le type de fichier des données d'objet ole intégrées|
-| ImageSourceFullName| Chaîne| Vrai| FAUX|| Obtient ou définit le chemin et le nom du fichier source de l'image liée.|
+|ImageSourceFullName| Chaîne| Vrai| FAUX|| Obtient ou définit le chemin et le nom du fichier source de l'image liée.|
 | EstTailleAuto| Booléen| Vrai| FAUX|| True indique que la taille de l'objet ole sera automatiquement modifiée en tant que taille de l'instantané du contenu incorporé lorsque l'objet ole est activé.|
 | EstLien| Booléen| Vrai| FAUX|| Renvoie vrai si l'OleObject est lié au fichier.|
 | ID de programme| Chaîne| Vrai| FAUX|| Obtient ou définit le ProgID de l'objet OLE.|
@@ -36,7 +37,7 @@ weight: 50
 | X| Entier| Vrai| FAUX|||
 | Oui| Entier| Vrai| FAUX|||
 | Angle de rotation| Flottant| Vrai| FAUX|||
-| Texte HTML| Chaîne| Vrai| FAUX|||
+|Texte HTML| Chaîne| Vrai| FAUX|||
 | Texte| Chaîne| Vrai| FAUX|||
 | Texte alternatif| Chaîne| Vrai| FAUX|||
 | TexteHorizontalAlignement| Chaîne| Vrai| FAUX|||
@@ -57,4 +58,5 @@ weight: 50
 | Lien hypertexte| Chaîne| Vrai| FAUX|||
 | lien| Classe : Lien| Vrai| FAUX|||
 
-**Nom du parent** : (Forme)[forme]
+**Nom du parent** : [Forme](/specification/model/shape)
+

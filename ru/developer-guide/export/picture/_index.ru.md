@@ -7,6 +7,7 @@ url: /ru/export/excel-picture-to-different-formats/
 keywords: Export Excel picture to kinds of format files
 description: Aspose.Cells Cloud REST API поддерживает экспорт изображений Excel в различные форматы файлов. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 20
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Экспорт изображения
 ---
  Вы можете экспортировать форматы:[PNG](https://docs.fileformat.com/Image/png/), [гифка](https://docs.fileformat.com/image/gif/), [JPEG](https://docs.fileformat.com/image/jpeg/),  [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [ВМФ](https://docs.fileformat.com/image/Wmf/).
 
@@ -19,7 +20,7 @@ weight: 20
 
 [Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) определяет общедоступный интерфейс программирования и позволяет выполнять взаимодействие с REST непосредственно из веб-браузера.
 
- Вы можете использовать**cURL** инструмент командной строки для легкого доступа к веб-службам Aspose.Cells. В следующем примере показано, как позвонить на Cloud API с помощью cURL.
+ Вы можете использовать**cURL**инструмент командной строки для легкого доступа к веб-службам Aspose.Cells. В следующем примере показано, как позвонить на Cloud API с помощью cURL.
 
 - **Запрос** 
 

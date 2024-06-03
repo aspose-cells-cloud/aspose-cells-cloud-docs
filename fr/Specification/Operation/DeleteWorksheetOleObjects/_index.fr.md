@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/deleteworksheetoleobjects/
 description: Supprimer tous les objets OLE de la feuille de calcul
+kwords: Excel, Office, feuille de calcul, Cloud REST API, DeleteWorksheetOleObjects
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetOleObjects" >}}

@@ -1,16 +1,17 @@
 ﻿---
-title: 后置数据文件
+title: 后数据文件
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/postdatafill/
-description: 电子表格文件的数据填充主要用于填充表和范围中的空数据
+description: 电子表格文件的数据填充主要用于填充表格和范围内的空数据
+kwords: Excel，Office，电子表格，云 REST API，PostDataFill
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostDataFill" >}}
 {{< blocks/products/cells/docs-title titlemsg="Data filling for spreadsheet files is primarily used to fill empty data in tables and ranges." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/datafill,POST,电子表格文件的数据填充主要用于填充表和范围中的空数据。,<a href=\'https://apireference.aspose.cloud/cells/#/DataProcessing/PostDataFill\'>PostDataFill </a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/datafill,POST,电子表格文件的数据填充主要用于填充表格和范围内的空数据。,<a href=\'https://apireference.aspose.cloud/cells/#/DataProcessing/PostDataFill\'>PostDataFill</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

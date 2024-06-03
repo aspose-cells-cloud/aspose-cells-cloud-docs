@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/putworksheetvalidation/
 description: Çalışma sayfasında dizine bir doğrulama ekleme
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PutWorksheetValidation
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetValidation" >}}

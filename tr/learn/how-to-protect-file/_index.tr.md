@@ -4,6 +4,7 @@ type: docs
 url: /tr/how-to-protect-file
 description: Dosya Aspose.Cells Bulut aracılığıyla nasıl korunur?
 weight: 10
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Aspose.Cells Cloud aracılığıyla dosya nasıl korunur?
 ---
 ## giriiş
 
@@ -25,7 +26,7 @@ Dosya koruması için genellikle çeşitli çevrimiçi ortamlarla uyumlu çok sa
 
 # Excel dosyasını veya başka bir e-tabloyu Aspose.Cells Bulut aracılığıyla nasıl koruyabilirim?
 
- Aspose.Cells Bulut API şunları sağlar:[birden fazla SDK](https://github.com/aspose-cells-cloud)farklı programlama dilleri için. Tercih ettiğiniz programlama diliyle uyumlu SDK'yı seçin ve kurulum ve başlatma için birlikte gelen belgeleri izleyin. Alternatif olarak, kendi SDK'nızı aşağıdakilere göre oluşturabilirsiniz:[API referans](https://reference.aspose.cloud/cells/). Bu bölümde dosya birleştirme işlemini detaylandırmak için örnek olarak C#'i kullanacağız.
+ Aspose.Cells Bulut API şunları sağlar:[birden fazla SDK](https://github.com/aspose-cells-cloud) farklı programlama dilleri için. Tercih ettiğiniz programlama diliyle uyumlu SDK'yı seçin ve kurulum ve başlatma için birlikte gelen belgeleri izleyin. Alternatif olarak, kendi SDK'nızı aşağıdakilere göre oluşturabilirsiniz:[API referans](https://reference.aspose.cloud/cells/). Bu bölümde dosya birleştirme işlemini detaylandırmak için örnek olarak C#'i kullanacağız.
 
 
 ## Kayıt ve API Anahtarının Alınması
@@ -89,8 +90,8 @@ cellsInstance.PostProtect(request);
 
 **korumak** Excel dosyası veya Aspose.Cells Cloud API'in başka bir elektronik tablo özelliği, çeşitli pratik kullanım durumlarında faydalıdır. İşte bazı yaygın senaryolar:
 
--  Eklemek**çoklu dijital imza dosyaları**yerel Excel dosyaları veya başka bir elektronik tablo dosyası için.
--  Eklemek**şifre koruması**yerel Excel dosyaları veya başka bir elektronik tablo dosyası için.
+-  Eklemek**çoklu dijital imza dosyaları** yerel Excel dosyaları veya başka bir elektronik tablo dosyası için.
+-  Eklemek**şifre koruması** yerel Excel dosyaları veya başka bir elektronik tablo dosyası için.
 -  Ayarlamak**Her Zaman Açık Salt Okunur** Kolay paylaşım için.
 - **Birden fazla dosyayı bir html dosyasında birleştirme** Web sayfalarında görüntülemek ve gömmek için.
 

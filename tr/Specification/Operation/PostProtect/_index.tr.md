@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/postprotect/
 description: Excel dosya şifreleme
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PostProtect
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostProtect" >}}

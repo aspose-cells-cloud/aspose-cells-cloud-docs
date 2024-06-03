@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postworkbooksaveas/
 description: Сохраните файл Excel в различных форматах.
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostWorkbookSaveAs
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookSaveAs" >}}
@@ -18,7 +19,7 @@ weight: 50
      {{< blocks/products/cells/docs-Parameter-content columns="имя, строка, имя книги." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Имя параметра, тип, описание" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="newfilename,string,newfilename для сохранения результата. `newfilename` должно включать в себя как имя, так и расширение файла." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="newfilename,string,newfilename, чтобы сохранить результат. `newfilename` должно включать в себя как имя файла, так и его расширение." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="isAutoFitRows,boolean,Указывает, есть ли автоподбор строк в книге." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="isAutoFitColumns,boolean,Указывает, есть ли автоподбор столбцов в книге." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="папка,строка,Папка, в которой находится файл." >}} 

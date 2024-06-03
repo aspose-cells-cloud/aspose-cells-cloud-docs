@@ -7,6 +7,7 @@ url: /ru/workbook/get/
 keywords: Working with getting on an Excel workbook
 description: Aspose.Cells Cloud REST API поддерживает работу с книгой Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 100
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Работа с книгой Excel
 ---
 ## Работаем над получением рабочей тетради Excel.
 

@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/model/picture/
 description: "Aspose.Cells Specifiche del modello Cloud: Immagine. Gestisci facilmente Excel e altri fogli di calcolo con funzionalità come apertura, generazione, modifica, divisione, unione, confronto e conversione"
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, Immagine
 weight: 50
 ---
 ## **immagine**
 
- 
+ Incapsula l'oggetto che rappresenta una singola immagine in un foglio di calcolo.
 
 | Nome della proprietà| Tipo di proprietà| Nullabile| Sola lettura| Valore di default| Descrizione|
 |:- |:- |:- |:- |:- |:- |
@@ -35,7 +36,7 @@ weight: 50
 | X| Numero intero| VERO| Falso|||
 | Y| Numero intero| VERO| Falso|||
 | Angolo di rotazione| Galleggiante| VERO| Falso|||
-| HtmlText| Corda| VERO| Falso|||
+|HtmlText| Corda| VERO| Falso|||
 | Testo| Corda| VERO| Falso|||
 | Testo alternativo| Corda| VERO| Falso|||
 | TestoAllineamento orizzontale| Corda| VERO| Falso|||
@@ -56,4 +57,5 @@ weight: 50
 | Collegamento ipertestuale| Corda| VERO| Falso|||
 | collegamento| Classe: collegamento| VERO| Falso|||
 
-**Nome del genitore** : (Forma)[forma]
+**Nome del genitore** : [Forma](/specification/model/shape)
+

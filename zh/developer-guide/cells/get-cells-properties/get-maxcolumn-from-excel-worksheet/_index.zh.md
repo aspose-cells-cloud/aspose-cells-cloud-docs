@@ -1,10 +1,11 @@
 ﻿---
-title: 从 Excel 工作表获取 MaxColumn
+title: 从 Excel 工作表中获取 MaxColumn
 type: docs
 url: /zh/get-maxcolumn-from-excel-worksheet/
 weight: 60
+kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdwon、从 Excel 工作表中获取 MaxColumn
 ---
-此 REST API 表示当 `cellOrMethodName` 参数为 `maxcolumn` 时，显示在 Excel 文件中获取 `maxcolumn`。
+此 REST API 表示当 `cellOrMethodName` 参数为 `maxcolumn` 时，在 Excel 文件中获取 `maxcolumn`。
 
 - **cURL 示例**
 
@@ -33,9 +34,9 @@ curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/
 
 {{< /tabs >}}
 
-- **云SDK系列**
+- **Cloud SDK 系列**
 
-使用 SDK 是加快开发速度的最佳方式。 SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)有关 Aspose.Cells Cloud SDK 的完整列表。
+使用 SDK 是加快开发速度的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)获得 Aspose.Cells Cloud SDKs 的完整列表。
 
 以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
 

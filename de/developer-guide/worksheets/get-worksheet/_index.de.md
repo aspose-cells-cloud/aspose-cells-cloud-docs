@@ -1,5 +1,5 @@
 ﻿---
-title: So erhalten Sie unterschiedliche Inhalte aus einem Excel-Arbeitsblatt
+title: So erhalten Sie unterschiedliche Inhalte aus einem Arbeitsblatt Excel
 second_title: Aspose.Cells Cloud Documen
 linktitle: Ge
 type: docs
@@ -7,14 +7,15 @@ url: /de/worksheets/get/
 keywords: How to get different content from an Excel worksheet
 description: Aspose.Cells Cloud REST API unterstützt das Abrufen unterschiedlicher Inhalte aus einem Excel Arbeitsblatt. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
 weight: 20
+kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdwon, So erhalten Sie unterschiedliche Inhalte aus einem Excel-Arbeitsblatt
 ---
-## Ich arbeite daran, ein Arbeitsblatt Excel zu erhalten.
+## Arbeiten mit dem Erhalt eines Arbeitsblatts Excel.
 
-- [So erhalten Sie ein Arbeitsblatt Excel mit verschiedenen Formaten.](/cells/de/worksheets/get-worksheet/) 
+- [So erhalten Sie ein Excel-Arbeitsblatt mit verschiedenen Formaten.](/cells/de/worksheets/get-worksheet/) 
     - [So konvertieren Sie das Arbeitsblatt Excel in ein Bild.](/cells/de/worksheets/to-image/)
 - [So erhalten Sie einen Arbeitsblattbereich Excel mit verschiedenen Formaten.](/cells/de/worksheets/area-to-different-formats/)
 - [So erhalten Sie eine Excel-Arbeitsblattseite mit verschiedenen Formaten.](/cells/de/get-worksheet-for-page-index/) 
-- [So ermitteln Sie die Seitenzahl eines Arbeitsblatts Excel.](/cells/de/worksheets/page-count/) 
-- [So erhalten Sie die Beschreibung der Arbeitsblätter Excel.](/cells/de/worksheets/get-all/) 
+- [So ermitteln Sie die Seitenzahl eines Excel-Arbeitsblatts.](/cells/de/worksheets/page-count/) 
+- [So erhalten Sie die Beschreibung des Arbeitsblatts Excel.](/cells/de/worksheets/get-all/) 
 
 

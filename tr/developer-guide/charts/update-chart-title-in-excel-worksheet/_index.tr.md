@@ -4,6 +4,7 @@ type: docs
 url: /tr/charts/title/update/
 aliases: [/update-chart-title-in-excel-worksheet/]
 weight: 160
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel Çalışma Sayfasındaki Grafik Başlığını Güncelle
 ---
 Bu REST API, güncelleme tablosu başlığını gösterir
  

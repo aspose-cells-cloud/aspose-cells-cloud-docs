@@ -4,6 +4,7 @@ type: docs
 url: /sv/how-to-protect-file
 description: Hur man skyddar filen genom Aspose.Cells Cloud
 weight: 10
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Hur man skyddar fil genom Aspose.Cells Cloud
 ---
 ## Introduktion
 
@@ -25,7 +26,7 @@ Många API:er är tillgängliga för filskydd, vanligtvis kompatibla med olika o
 
 # Hur man skyddar Excel-filen eller ett annat kalkylblad genom Aspose.Cells Cloud
 
- Aspose.Cells Cloud API tillhandahåller[flera SDK:er](https://github.com/aspose-cells-cloud)för olika programmeringsspråk. Välj den SDK som passar ditt föredragna programmeringsspråk och följ den medföljande dokumentationen för installation och initiering. Alternativt kan du skapa din egen SDK enligt[API referens](https://reference.aspose.cloud/cells/). I det här avsnittet kommer vi att använda C# som ett exempel för att detaljera processen för att sammanfoga filen.
+ Aspose.Cells Cloud API tillhandahåller[flera SDK:er](https://github.com/aspose-cells-cloud) för olika programmeringsspråk. Välj den SDK som passar ditt föredragna programmeringsspråk och följ den medföljande dokumentationen för installation och initiering. Alternativt kan du skapa din egen SDK enligt[API referens](https://reference.aspose.cloud/cells/). I det här avsnittet kommer vi att använda C# som ett exempel för att detaljera processen för att sammanfoga filen.
 
 
 ## Registrering och erhållande av API Nyckel
@@ -89,8 +90,8 @@ cellsInstance.PostProtect(request);
 
  De**skydda** Excel-filen eller en annan kalkylbladsfunktion i Aspose.Cells Cloud API är användbar i olika praktiska användningsfall. Här är några vanliga scenarier:
 
--  Lägg till**flera digitala signaturfiler**för lokala Excel-filer eller andra kalkylbladsfiler.
--  Lägg till**lösenordsskydda**för lokala Excel-filer eller andra kalkylbladsfiler.
+-  Lägg till**flera digitala signaturfiler** för lokala Excel-filer eller andra kalkylbladsfiler.
+-  Lägg till**lösenordsskydda** för lokala Excel-filer eller andra kalkylbladsfiler.
 -  Uppsättning**Aways Open-skrivskyddad** för enkel delning.
 - **Slå ihop flera filer till en html-fil** för visning och inbäddning i webbsidor.
 

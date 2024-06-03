@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/getworkbookdefaultstyle/
 description: Hämta beskrivningen av standardstilen för arbetsboken
+kwords: Excel, Office, Kalkylblad, Cloud REST API, GetWorkbookDefaultStyle
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorkbookDefaultStyle" >}}

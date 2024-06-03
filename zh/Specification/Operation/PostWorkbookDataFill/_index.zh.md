@@ -3,29 +3,30 @@ title: 后工作簿数据文件
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/postworkbookdatafill/
-description: 电子表格文件的数据填充主要用于填充表和范围中的空数据
+description: 电子表格文件的数据填充主要用于填充表格和范围内的空数据
+kwords: Excel，Office，电子表格，云 REST API，PostWorkbookDataFill
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookDataFill" >}}
 {{< blocks/products/cells/docs-title titlemsg="Data filling for spreadsheet files is primarily used to fill empty data in tables and ranges." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/datafill,POST,电子表格文件的数据填充主要用于填充表和范围中的空数据。,<a href=\'https://apireference.aspose.cloud/cells/#/DataProcessing/ PostWorkbookDataFill\'>PostWorkbookDataFill</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/datafill,POST,电子表格文件的数据填充主要用于填充表格和范围内的空数据。,<a href=\'https://apireference.aspose.cloud/cells/#/DataProcessing/PostWorkbookDataFill\'>PostWorkbookDataFill</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="参数名称、类型、描述" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="名称、字符串、" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="名称，字符串，" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="文件夹、字符串、" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="存储名称,字符串," >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="密码,字符串," >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="区域、字符串、" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="检查Excel限制，布尔值，" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="文件夹，字符串，" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="存储名称，字符串，" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="密码，字符串，" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="区域，字符串，" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction，布尔值，" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="数据填充，类：数据填充，" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="dataFill，类：datafill，" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

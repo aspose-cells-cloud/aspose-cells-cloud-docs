@@ -6,6 +6,7 @@ aliases: [/working-with-smartmarker-task/]
 keywords: REST API, task, save result, spreadsheets, exce
 description: "Cells.Cloud API, Excel'i çalıştırmak için: akıllı işaretleyiciye görevler desteği"
 weight: 60
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, SmartMarker Göreviyle Çalışma
 ---
 ## DİNLENME API
 
@@ -16,7 +17,7 @@ weight: 60
 
 [OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Task/PostRunTask) herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
 
- Kullanabilirsiniz**cURL** Aspose.Cells web hizmetlerine kolayca erişmek için komut satırı aracı. Aşağıdaki örnekte, cURL ile Cloud API'e nasıl çağrı yapılacağı gösterilmektedir.
+ Kullanabilirsiniz**cURL**Aspose.Cells web hizmetlerine kolayca erişmek için komut satırı aracı. Aşağıdaki örnekte, cURL ile Cloud API'e nasıl çağrı yapılacağı gösterilmektedir.
 
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}

@@ -8,6 +8,7 @@ aliases: [/delete-row-from-a-worksheet/]
 keywords: Delete rows on an Excel workshee
 description: Aspose.Cells Cloud REST API admite la eliminación de filas en una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 80
+kwords: Excel, Office Cloud, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Eliminar fila en una hoja de trabajo Excel
 ---
 Este REST API indica eliminar una fila en una hoja de trabajo Excel.
  
@@ -22,7 +23,7 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/ro
  
 | Nombre del parámetro| Tipo| Ruta/Cadena de consulta/Cuerpo HTTP|Descripción|
 |:- |:- |:- |:- |
-| nombre| cadena| camino|El nombre del libro de trabajo.|
+| nombre| cadena| camino| El nombre del libro de trabajo.|
 | nombre de la hoja| cadena| camino| La hoja de trabajo es mala.|
 | índice de fila| entero| camino| El índice de fila.|
 | carpeta| cadena| consulta| La carpeta de documentos.|

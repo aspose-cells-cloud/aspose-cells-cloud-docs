@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/getworksheetshapes/
 description: Recuperar descripciones de formas en la hoja de trabajo.
+kwords: Excel, Office, hoja de cálculo, nube REST API, GetWorksheetShapes
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetShapes" >}}

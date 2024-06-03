@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/getworksheetoleobject/
 description: OLE nesnesini çalışma sayfasında belirtilen biçimde alın
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, GetWorksheetOleObject
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetOleObject" >}}

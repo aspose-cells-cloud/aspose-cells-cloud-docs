@@ -8,6 +8,7 @@ aliases: [/sort-worksheet-data/]
 keywords: Sort range data on an Excel worksheet
 description: Aspose.Cells Cloud REST API prend en charge le tri des données de plage sur une feuille de calcul Excel. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 20
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, trier les données de plage sur une feuille de calcul Excel
 ---
 Ce REST API indique `sort worksheet range data`.
  
@@ -20,9 +21,9 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/sort
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
-| nom| chaîne| chemin|Le nom du classeur.|
+| nom| chaîne| chemin| Le nom du classeur.|
 | Nom de la feuille| chaîne| chemin| Le nom de la feuille de calcul.|
 | zone de cellule| chaîne| requête| La plage à trier.|
 | trieur de données|| corps| avec paramètres de tri.|

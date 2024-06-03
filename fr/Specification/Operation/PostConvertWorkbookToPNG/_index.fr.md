@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postconvertworkbooktopng/
 description: Convertir le fichier Excel en fichiers PNG
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostConvertWorkbookToPNG
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostConvertWorkbookToPNG" >}}

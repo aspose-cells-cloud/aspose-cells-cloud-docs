@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/getworkbooknames/
 description: Получение именованных диапазонов в книге
+kwords: Excel, Office, электронная таблица, Cloud REST API, GetWorkbookNames
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorkbookNames" >}}

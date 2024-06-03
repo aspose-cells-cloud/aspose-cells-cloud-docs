@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/getworksheetchart/
 description: Hämta diagrammet i ett angivet format
+kwords: Excel, Office, Spreadsheet, Cloud REST API, GetWorksheetChart
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetChart" >}}

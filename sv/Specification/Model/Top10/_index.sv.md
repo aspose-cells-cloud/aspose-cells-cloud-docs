@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/model/top10/
 description: "Aspose.Cells Molnmodellspecifikation: Top10. Hantera enkelt Excel och andra kalkylarksdokument med funktioner som att öppna, generera, redigera, dela, slå samman, jämföra och konvertera"
+kwords: Excel, Office, Kalkylblad, Cloud REST API, Top10
 weight: 50
 ---
 ## **topp 10**
 
-Beskriv Top10-regeln för villkorlig formatering. Denna regel för villkorlig formatering markerar celler vars värden hamnar i den övre N eller nedre N-parentesen, enligt vad som anges.
+ Beskriv Top10-regeln för villkorlig formatering. Denna regel för villkorlig formatering markerar celler vars värden hamnar i den övre N eller nedre N-parentesen, enligt vad som anges.
 
 | Egendomsnamn| Egenskapstyp| Nullbar| Endast läs| Standardvärde| Beskrivning|
 |:- |:- |:- |:- |:- |:- |

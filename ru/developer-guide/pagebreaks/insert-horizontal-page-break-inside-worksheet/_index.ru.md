@@ -8,6 +8,7 @@ aliases: [/insert-horizontal-page-break-inside-worksheet/]
 keywords: Add a page break in an Excel worksheet
 description: Aspose.Cells Cloud REST API поддерживает добавление разрыва страницы на листе Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 30
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Добавить горизонтальный разрыв страницы
 ---
 Этот REST API указывает на вставку разрыва страницы `vertical`.
  

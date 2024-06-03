@@ -1,27 +1,28 @@
 ﻿---
-title: 后工作表单元格范围行高度
+title: 发布工作表单元格范围行高
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/postworksheetcellsrangerowheight/
 description: 设置范围的行高
+kwords: Excel，Office，电子表格，云 REST API，PostWorksheetCellsRangeRowHeight
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangeRowHeight" >}}
 {{< blocks/products/cells/docs-title titlemsg="Sets row height of range." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges/rowHeight,POST,设置范围的行高。,<a href=\'https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeRowHeight\'> PostWorksheetCellsRangeRowHeight</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges/rowHeight,POST,设置范围的行高。,<a href=\'https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeRowHeight\'>PostWorksheetCellsRangeRowHeight</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="参数名称、类型、描述" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="名称，字符串，文件名。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,字符串,工作表名称。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="name，string，文件名。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName，string，工作表名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="value,floating,设置此范围的列高。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="值，浮动，设置此范围的列高。" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="文件夹，字符串，原始工作簿文件夹。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="存储名称，字符串，存储名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName，string，存储名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="参数名称、类型、描述" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="range,class:range,范围对象。" >}} 

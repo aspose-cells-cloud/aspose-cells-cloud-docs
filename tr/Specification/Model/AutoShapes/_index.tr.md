@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/model/autoshapes/
 description: "Aspose.Cells Bulut modeli spesifikasyonu: Otomatik Şekiller. Açma, oluşturma, düzenleme, bölme, birleştirme, karşılaştırma ve dönüştürme gibi özelliklerle Excel ve diğer elektronik tablo belgelerini zahmetsizce yönetin"
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, Otomatik Şekiller
 weight: 50
 ---
 ## **Otomatik Şekiller**
@@ -15,4 +16,5 @@ weight: 50
 | Otomatik Şekil Listesi| Konteyner| Doğru| YANLIŞ|||
 | bağlantı| Sınıf:Bağlantı| Doğru| YANLIŞ|||
 
-**Ebeveyn adı** : (LinkElement)[bağlantıelement]
+**Ebeveyn adı** : [Bağlantı Öğesi](/specification/model/linkelement)
+

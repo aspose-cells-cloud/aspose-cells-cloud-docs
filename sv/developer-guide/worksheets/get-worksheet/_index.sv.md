@@ -7,6 +7,7 @@ url: /sv/worksheets/get/
 keywords: How to get different content from an Excel worksheet
 description: Aspose.Cells Cloud REST API stöd för att få annat innehåll från ett Excel kalkylblad. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 20
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Hur man får annat innehåll från ett Excel kalkylblad
 ---
 ## Arbetar med att skaffa ett Excel kalkylblad.
 

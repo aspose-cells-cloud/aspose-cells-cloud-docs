@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/putworksheetlistobject/
 description: Agregue un ListObject en la hoja de trabajo
+kwords: Excel, Office, Hoja de cálculo, Nube REST API, PutWorksheetListObject
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetListObject" >}}
@@ -19,7 +20,7 @@ weight: 50
      {{< blocks/products/cells/docs-Parameter-content columns="nombre de la hoja, cadena, el nombre de la hoja de trabajo." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Nombre del parámetro, tipo, descripción" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="startRow, integer, la fila inicial del rango de la lista." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="startRow,integer,La fila inicial del rango de la lista." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="startColumn,integer,La columna inicial del rango de la lista." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="endRow,integer,La fila inicial del rango de la lista." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="endColumn,integer,La columna inicial del rango de la lista." >}} 

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/model/importoption/
 description: "Aspose.Cells Bulut modeli spesifikasyonu: ImportOption. Açma, oluşturma, düzenleme, bölme, birleştirme, karşılaştırma ve dönüştürme gibi özelliklerle Excel ve diğer elektronik tablo belgelerini zahmetsizce yönetin"
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, ImportOption
 weight: 50
 ---
 ## **içe aktarma seçeneği**
@@ -15,6 +16,7 @@ weight: 50
 | HedefÇalışma Sayfası| Sicim| Doğru| YANLIŞ|| Hedef çalışma sayfası adı.|
 | Ekle| Boolean| Doğru| YANLIŞ|||
 | Veri Türü İçe Aktarma| Sicim| Doğru| YANLIŞ|||
+| Veri kaynağı| Sınıf:DataSource| Doğru| YANLIŞ|||
 | Kaynak| Sınıf:FileSource| Doğru| YANLIŞ|||
 
 **Çocuk Adı** : 

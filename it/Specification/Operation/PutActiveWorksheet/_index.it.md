@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/putactiveworksheet/
 description: Imposta l'indice del foglio di lavoro attivo nella cartella di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PutActiveWorksheet
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutActiveWorksheet" >}}

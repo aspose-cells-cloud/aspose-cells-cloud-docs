@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/deletedocumentproperty/
 description: Elimina una proprietà Excel
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, EliminaDocumentProperty
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteDocumentProperty" >}}

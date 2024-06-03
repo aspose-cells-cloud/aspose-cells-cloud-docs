@@ -8,6 +8,7 @@ aliases: [/add-date-filter-in-a-worksheet/,/autofilter/add-a-date-filter/]
 keywords: Adds a date filter on an Excel worksheet
 description: Il cloud Aspose.Cells API supporta l'aggiunta di un filtro data su un foglio di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 65
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Aggiungi filtro data in un foglio di lavoro Excel
 ---
 Questo REST API indica di aggiungere un `date filter` su un foglio di lavoro Excel.
 
@@ -22,7 +23,7 @@ I parametri della richiesta sono:
 
 | Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
 |:- |:- |:- |:- |
-| nome| corda| Sentiero|Il nome della cartella di lavoro.|
+| nome| corda| Sentiero| Il nome della cartella di lavoro.|
 | nomefoglio| corda| Sentiero| Il nome del foglio di lavoro.|
 |allineare|corda| Domanda||
 |campoIndice|numero intero| Domanda||

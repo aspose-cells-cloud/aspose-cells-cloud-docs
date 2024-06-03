@@ -1,31 +1,32 @@
 ﻿---
-title: PutWorksheetFormatConditionConditio
+title: SetzenArbeitsblattFormatBedingungBedingung
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/putworksheetformatconditioncondition/
 description: Fügen Sie eine Bedingung für die Formatbedingung im Arbeitsblatt hinzu
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PutWorksheetFormatConditionCondition
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetFormatConditionCondition" >}}
 {{< blocks/products/cells/docs-title titlemsg="Add a condition for the format condition in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}/condition,PUT,Fügen Sie eine Bedingung für die Formatbedingung im Arbeitsblatt hinzu.,<a href=\'https://apireference.aspose.cloud/ Zellen/#/ConditionalFormattings/PutWorksheetFormatConditionCondition\'>PutWorksheetFormatConditionCondition</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}/condition,PUT,Fügen Sie eine Bedingung für die Formatbedingung im Arbeitsblatt hinzu.,<a href=\'https://apireference.aspose.cloud/cells/#/ConditionalFormattings/PutWorksheetFormatConditionCondition\'>PutWorksheetFormatConditionCondition</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="index,integer,Ruft das bedingte Formatierungselement am angegebenen Index ab." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Index, Ganzzahl, Ruft das Element der bedingten Formatierung am angegebenen Index ab." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="Typ, Zeichenfolge, Formatbedingungstyp (CellValue/Expression/ColorScale/DataBar/IconSet/Top10/UniqueValues/DuplicateValues/ContainsText/NotContainsText/BeginsWith/EndsWith/ContainsBlanks/NotContainsBlanks/ContainsErrors/NotContainsErrors/TimePeriod/AboveAverage)." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="OperatorType,String,Stellt den Operatortyp des bedingten Formats und der Datenvalidierung dar (Between/Equal/GreaterThan/GreaterOrEqual/LessThan/None/NotBetween/NotEqual)." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="Formel1,Zeichenfolge,Der Wert oder Ausdruck, der der bedingten Formatierung zugeordnet ist." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="Formel2,Zeichenfolge,Der Wert oder Ausdruck, der der bedingten Formatierung zugeordnet ist." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Typ, Zeichenfolge, Formatbedingungstyp (Zellenwert/Ausdruck/Farbskala/Datenleiste/Symbolsatz/Top10/EindeutigeWerte/DoppelteWerte/Enthält Text/Enthält keinen Text/Beginnt mit/Endet mit/Enthält Leerzeichen/Enthält keine Leerzeichen/Enthält Fehler/Enthält keine Fehler/Zeitraum/Über dem Durchschnitt)." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Operatortyp, Zeichenfolge, stellt den Operatortyp des bedingten Formats und der Datenüberprüfung dar (Zwischen/Gleich/Größer als/Größer oder gleich/Kleiner als/Keine/NichtZwischen/Nicht gleich)." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Formel1, Zeichenfolge, Der mit der bedingten Formatierung verknüpfte Wert oder Ausdruck." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Formel2, Zeichenfolge, Der mit der bedingten Formatierung verknüpfte Wert oder Ausdruck." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/ConditionalFormattingsController/PutWorksheetFormatConditionCondition\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/deleteworkbooknames/
 description: Elimina tutti gli intervalli denominati nella cartella di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, EliminaWorkbookNames
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorkbookNames" >}}

@@ -4,6 +4,7 @@ type: docs
 url: /ru/charts/legend/get/
 aliases: [/get-chart-legend-from-a-worksheet/]
 weight: 80
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, получение легенды диаграммы из рабочего листа
 ---
 Этот REST API указывает на получение легенды диаграммы.
  

@@ -1,9 +1,10 @@
 ﻿---
-title: СообщениеРабочий ЛистДиаграммаLegen
+title: СообщениеРабочий ЛистДиаграммаЛеген
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postworksheetchartlegend/
 description: Обновить легенду диаграммы на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostWorksheetChartLegend
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetChartLegend" >}}

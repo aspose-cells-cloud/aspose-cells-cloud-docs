@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/postcopyworksheet/
 description: İçerikleri ve biçimleri başka bir çalışma sayfasından kopyalama
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PostCopyWorksheet
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostCopyWorksheet" >}}

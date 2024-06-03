@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/postfitwidetopages/
 description: Imposta la scala in base alla quale la pagina si adatterà in larghezza quando stampata sul foglio
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PostFitWideToPages
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostFitWideToPages" >}}

@@ -1,29 +1,30 @@
 ﻿---
-title: 后工作表单元格范围取消合并
+title: 取消合并工作表单元格区域
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/postworksheetcellsrangeunmerge/
 description: 取消合并此范围内的合并单元格
+kwords: Excel，Office，电子表格，云 REST API，PostWorksheetCellsRangeUnMerge
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangeUnMerge" >}}
 {{< blocks/products/cells/docs-title titlemsg="Unmerge merged cells within this range." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges/unmerge,POST,取消合并此范围内的单元格。,<a href=\'https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeUnMerge\' >PostWorksheetCellsRangeUnMerge</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges/unmerge,POST,取消合并此范围内的单元格。,<a href=\'https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeUnMerge\'>PostWorksheetCellsRangeUnMerge</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="参数名称、类型、描述" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="名称，字符串，文件名。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,字符串,工作表名称。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="name，string，文件名。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName，string，工作表名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="文件夹，字符串，原始工作簿文件夹。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="存储名称，字符串，存储名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName，string，存储名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="range,class:range,Range范围描述。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="范围，类别：范围，范围范围描述。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

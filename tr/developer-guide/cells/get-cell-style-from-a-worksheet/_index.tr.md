@@ -3,6 +3,7 @@ title: Çalışma Sayfasından Hücre Stili Alma
 type: docs
 url: /tr/get-cell-style-from-a-worksheet/
 weight: 10
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Çalışma Sayfasından Hücre Stili Alma
 ---
 Bu REST API, Excel dosyasındaki `style` hücresini almayı gösterir.
 

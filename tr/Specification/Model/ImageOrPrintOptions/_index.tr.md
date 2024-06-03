@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/model/imageorprintoptions/
 description: "Aspose.Cells Bulut modeli spesifikasyonu: ImageOrPrintOptions. Açma, oluşturma, düzenleme, bölme, birleştirme, karşılaştırma ve dönüştürme gibi özelliklerle Excel ve diğer elektronik tablo belgelerini zahmetsizce yönetin"
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, ImageOrPrintOptions
 weight: 50
 ---
 ## **imageOrPrintOptions**
 
- 
+ Çalışma sayfasını görüntülere dönüştürürken, çalışma sayfasını yazdırırken veya grafiği görüntüye dönüştürürken seçenekleri belirtmenize olanak tanır.
 
 | Mülkiyet adı| Emlak Tipi| Geçersiz kılınabilir| Sadece oku| Varsayılan değer| Tanım|
 |:- |:- |:- |:- |:- |:- |
@@ -33,7 +34,7 @@ weight: 50
 | TiffRenkDerinliği| Sicim| Doğru| YANLIŞ|| Renk derinliği|
 | TiffSıkıştırma| Sicim| Doğru| YANLIŞ|| TiffSıkıştırma|
 | Yazdırma Sayfası| Sicim| Doğru| YANLIŞ|| YazdırmaSayfa Türü|
-|Kalite| Tamsayı| Doğru| YANLIŞ|||
+| Kalite| Tamsayı| Doğru| YANLIŞ|||
 | Resim türü| Sicim| Doğru| YANLIŞ|| Resim türü|
 | Sayfa Başına Bir Sayfa| Boolean| Doğru| YANLIŞ|||
 | TiffİkilileştirmeYöntemi| Sicim| Doğru| YANLIŞ|| Görüntü İkilileştirme Yöntemi|

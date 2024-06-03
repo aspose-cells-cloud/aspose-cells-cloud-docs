@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postworksheetcellsrangeoutlineborder/
 description: قم بتطبيق حد مخطط تفصيلي حول نطاق من الخلايا
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostWorksheetCellsRangeOutlineBorder
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangeOutlineBorder" >}}

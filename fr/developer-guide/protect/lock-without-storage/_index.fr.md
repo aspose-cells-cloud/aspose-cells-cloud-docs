@@ -8,6 +8,7 @@ aliases: [/lock/without-storage/,/lock/]
 keywords: Lock Excel files
 description: Aspose.Cells Cloud REST API prend en charge le verrouillage des fichiers Excel. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 70
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, Lock
 ---
 Ce REST API indique les fichiers `lock` Excel.
 ## RSET API
@@ -19,7 +20,7 @@ POST http://api.aspose.cloud/v3.0/cells/lock
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | déposer| déposer| Données de formulaire| Fichier à télécharger|
 | mot de passe| chaîne| requête||

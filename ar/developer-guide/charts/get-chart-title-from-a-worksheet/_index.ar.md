@@ -4,6 +4,7 @@ type: docs
 url: /ar/charts/title/get/
 aliases: [/get-chart-title-from-a-worksheet/]
 weight: 120
+kwords: Excel، Office Cloud، REST API، جدول البيانات، PDF، CSV، Json، Markdwon، احصل على عنوان المخطط من ورقة عمل
 ---
 يشير REST API إلى الحصول على عنوان المخطط
  
@@ -289,7 +290,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/charts
 {{< /tabs >}}
 ## عائلة Cloud SDK
  
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
  
 توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
  

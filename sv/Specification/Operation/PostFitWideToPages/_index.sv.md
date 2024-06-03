@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/postfitwidetopages/
 description: Ställ in den skala som sidan ska passa bred när den skrivs ut på arket
+kwords: Excel, Office, Kalkylblad, Cloud REST API, PostFitWideToPages
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostFitWideToPages" >}}

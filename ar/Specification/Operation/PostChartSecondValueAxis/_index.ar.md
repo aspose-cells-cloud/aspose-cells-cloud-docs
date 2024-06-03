@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postchartsecondvalueaxis/
 description: قم بتحديث محور القيمة الثاني للمخطط في المخطط
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostChartSecondValueAxis
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostChartSecondValueAxis" >}}

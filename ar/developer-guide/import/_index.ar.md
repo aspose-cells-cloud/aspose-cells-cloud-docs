@@ -7,6 +7,7 @@ aliases: [/import-data-in-excel-worksheet-without-using-storage/]
 keywords: Import data into Excel files
 description: Aspose.Cells Cloud REST API يدعم استيراد البيانات إلى ملفات Excel. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 31
+kwords: Excel، Office كلاود، ريست API، جدول بيانات، PDF، CSV، Json، Markdwon، Import
 ---
 يعد استيراد البيانات إلى ملف Excel عملية معقدة. تساهم العديد من العوامل في التعقيد، وبالتالي يجب أخذها في الاعتبار أثناء عملية التصدير. تعد القدرة على استيراد أنواع التنسيقات وأنواع البيانات إلى الملف بجودة احترافية دقيقة من أهم ميزات Aspose.Cells Cloud.
 
@@ -26,7 +27,7 @@ weight: 31
 | اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/HTTPBody|وصف|
 |:- |:- |:- |:- |
 | ملف| ملف| بيانات النموذج| ملف للتحميل|
-| خيار الاستيراد| خيارات الاستيراد|HTTPBody| IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/صورة|
+| خيار الاستيراد| خيارات الاستيراد| HTTPBody| IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/صورة|
 
 ### مع استخدام التخزين
 

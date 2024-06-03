@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/getchartsecondcategoryaxis/
 description: Récupérer l'axe de la deuxième catégorie du graphique dans le caractère
+kwords: Excel, Office, feuille de calcul, Cloud REST API, GetChartSecondCategoryAxis
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetChartSecondCategoryAxis" >}}

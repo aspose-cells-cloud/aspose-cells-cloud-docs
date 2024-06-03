@@ -7,6 +7,7 @@ aliases: [/working-with-hyperlinks/,/working-with-hyperlink/]
 keywords: REST API, hyperlinks, spreadsheets, exce
 description: "Cells.Cloud API pour Excel fonctionne : travailler avec des hyperliens sur un fichier Excel"
 weight: 100
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, hyperliens
 ---
 &nbsp;&nbsp;&nbsp;&nbsp;Les hyperliens dans Excel permettent aux utilisateurs de créer un raccourci pour accéder à une feuille de calcul, un fichier, un dossier ou une page Web spécifique. Cela nous aide à accéder rapidement à n’importe quel dossier ou lien spécifique.
 

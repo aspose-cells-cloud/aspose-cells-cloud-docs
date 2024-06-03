@@ -3,22 +3,23 @@ title: PivotFilter
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/model/pivotfilter/
-description: "Aspose.Cells Cloud-Modellspezifikation: PivotFilter. Bearbeiten Sie mühelos Excel und andere Tabellenkalkulationsdokumente mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+description: "Aspose.Cells Cloud-Modellspezifikation: PivotFilter. Müheloses Bearbeiten von Excel und anderen Tabellenkalkulationsdokumenten mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PivotFilter
 weight: 50
 ---
-## **PivotFilter**
+## **pivotFilter**
 
  Stellt einen PivotFilter in der PivotFilter-Sammlung dar.
 
-| Name des Anwesens| Art der Immobilie| Nullbar| Schreibgeschützt| Standardwert| Beschreibung|
+| Name des Anwesens| Art der Immobilie| Nullwerte zulassen| Schreibgeschützt| Standardwert| Beschreibung|
 |:- |:- |:- |:- |:- |:- |
-| Automatischer Filter| Klasse:AutoFilter| WAHR| FALSCH|| Ruft den Autofilter des Pivot-Filters ab.|
-| Bewertungsauftrag| Ganze Zahl| WAHR| FALSCH|| Ruft die Auswertungsreihenfolge des Pivotfilters ab.|
-| FieldIndex| Ganze Zahl| WAHR| FALSCH|| Ruft den Feldindex des Pivot-Filters ab.|
+| Automatischer Filter| Klasse:AutoFilter| WAHR| FALSCH|| Ruft den Autofilter des Pivotfilters ab.|
+| Auswertungsauftrag| Ganze Zahl| WAHR| FALSCH|| Ruft die Auswertungsreihenfolge des Pivotfilters ab.|
+| FeldIndex| Ganze Zahl| WAHR| FALSCH|| Ruft den Feldindex des Pivotfilters ab.|
 | Filter Typ| Zeichenfolge| WAHR| FALSCH|| Ruft den Autofiltertyp des Pivotfilters ab.|
-| MeasureFldIndex| Ganze Zahl| WAHR| FALSCH|| Ruft den Kennzahlfeldindex des Pivotfilters ab.|
-| MemberPropertyFieldIndex| Ganze Zahl| WAHR| FALSCH|| Ruft den Elementeigenschaftenfeldindex des Pivotfilters ab.|
-| Name| Zeichenfolge| WAHR| FALSCH|| Ruft den Namen des Pivot-Filters ab.|
-| Wert1| Zeichenfolge| WAHR| FALSCH|| Ruft den Zeichenfolgenwert1 des Label-Pivot-Filters ab.|
-| Wert2| Zeichenfolge| WAHR| FALSCH|| Ruft den Zeichenfolgenwert2 des Label-Pivot-Filters ab.|
+| Maßfeldindex| Ganze Zahl| WAHR| FALSCH|| Ruft den Maßfeldindex des Pivotfilters ab.|
+| Mitgliedseigenschaftsfeldindex| Ganze Zahl| WAHR| FALSCH|| Ruft den Mitgliedseigenschaftsfeldindex des Pivotfilters ab.|
+| Name| Zeichenfolge| WAHR| FALSCH|| Ruft den Namen des Pivotfilters ab.|
+| Wert1| Zeichenfolge| WAHR| FALSCH|| Ruft den Zeichenfolgenwert1 des Label-Pivotfilters ab.|
+| Wert2| Zeichenfolge| WAHR| FALSCH|| Ruft den Zeichenfolgenwert2 des Label-Pivotfilters ab.|
 

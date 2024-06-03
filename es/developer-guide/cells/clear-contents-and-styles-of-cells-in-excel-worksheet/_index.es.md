@@ -3,6 +3,7 @@ title: Borrar contenidos y estilos de Cells en la hoja de trabajo Excel
 type: docs
 url: /es/clear-contents-and-styles-of-cells-in-excel-worksheet/
 weight: 50
+kwords: Excel, Office Cloud, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Borrar contenidos y estilos de Cells en Excel Hoja de trabajo
 ---
 Este REST API indica `clear` celdas `content` en un archivo Excel.
 

@@ -8,6 +8,7 @@ aliases: [/move-pivot-table/]
 keywords: Move a pivot table in an Excel file
 description: Aspose.Cells Cloud REST API prend en charge le déplacement d'un tableau croisé dynamique dans un fichier Excel. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 120
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Déplacer un tableau croisé dynamique dans un fichier Excel
 ---
 Ce REST API indique le tableau croisé dynamique `move`.
  
@@ -20,7 +21,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottable
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin||
 | Nom de la feuille| chaîne| chemin||

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/getcellhtmlstring/
 description: Получите строку HTML, содержащую данные и определенные форматы в этой ячейке.
+kwords: Excel, Office, электронная таблица, Cloud REST API, GetCellHtmlString
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetCellHtmlString" >}}

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/postgroupworksheetcolumns/
 description: Gruppera kalkylbladskolumner i kalkylbladet
+kwords: Excel, Office, Kalkylblad, Cloud REST API, PostGroupWorksheetColumns
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostGroupWorksheetColumns" >}}

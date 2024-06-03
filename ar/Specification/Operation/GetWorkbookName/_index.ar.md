@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/getworkbookname/
 description: استرداد وصف نطاق مسمى في المصنف
+kwords: Excel، Office، جدول البيانات، Cloud REST API، GetWorkbookName
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorkbookName" >}}

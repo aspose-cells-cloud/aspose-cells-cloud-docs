@@ -8,6 +8,7 @@ aliases: [/set-range-value-in-excel-worksheet/]
 keywords: Set range value on an Excel workshee
 description: Aspose.Cells Cloud REST API, Excel çalışma sayfasında aralık değerinin ayarlanmasını destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 72
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel çalışma sayfasında aralık değerini ayarlayın
 ---
 Bu REST API, aralığa bir değer koyar, uygunsa değer başka bir veri tipine dönüştürülecek ve hücrenin sayı formatı sıfırlanacaktır.
             
@@ -27,8 +28,8 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/val
 | sayfaAdı| sicim| yol| çalışma sayfası adı|
 | değer| sicim| sorgu| Girdi değeri|
 | menzil|| vücut| çalışma sayfasındaki aralık|
-| Dönüştürülür| boolean| sorgu| YANLIŞ|
-| setStyle| boolean| sorgu| YANLIŞ|
+| Dönüştürülür|boolean| sorgu| YANLIŞ|
+| setStyle|boolean| sorgu| YANLIŞ|
 | dosya| sicim| sorgu| Çalışma kitabı klasörü.|
 | depolamaAdı| sicim| sorgu| depolama adı.|
  

@@ -4,15 +4,16 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/model/commentshape/
 description: "Aspose.Cells Spécification du modèle cloud : CommentShape. Gérez sans effort Excel et d'autres feuilles de calcul avec des fonctionnalités telles que l'ouverture, la génération, l'édition, le fractionnement, la fusion, la comparaison et la conversion."
+kwords: Excel, Office, feuille de calcul, Cloud REST API, CommentShape
 weight: 50
 ---
 ## **commentaireForme**
 
- 
+ Représente la forme du commentaire.
 
 | Nom de la propriété| Type de propriété| Nullable| Lecture seulement| Valeur par défaut| Description|
 |:- |:- |:- |:- |:- |:- |
-| Commentaire| Classe : LinkElement| Vrai| FAUX||Obtient l'objet commentaire.|
+| Commentaire| Classe : LinkElement| Vrai| FAUX|| Obtient l'objet commentaire.|
 | Nom| Chaîne| Vrai| FAUX|||
 | MsoDrawingType| Chaîne| Vrai| FAUX|||
 | Type de forme automatique| Chaîne| Vrai| FAUX|||
@@ -30,7 +31,7 @@ weight: 50
 | X| Entier| Vrai| FAUX|||
 | Oui| Entier| Vrai| FAUX|||
 | Angle de rotation| Flottant| Vrai| FAUX|||
-| Texte HTML| Chaîne| Vrai| FAUX|||
+|Texte HTML| Chaîne| Vrai| FAUX|||
 | Texte| Chaîne| Vrai| FAUX|||
 | Texte alternatif| Chaîne| Vrai| FAUX|||
 | TexteHorizontalAlignement| Chaîne| Vrai| FAUX|||
@@ -51,4 +52,5 @@ weight: 50
 | Lien hypertexte| Chaîne| Vrai| FAUX|||
 | lien| Classe : Lien| Vrai| FAUX|||
 
-**Nom du parent** : (Forme)[forme]
+**Nom du parent** : [Forme](/specification/model/shape)
+

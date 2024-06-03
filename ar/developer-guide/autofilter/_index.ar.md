@@ -7,6 +7,7 @@ aliases: [/working-with-autofilter/]
 keywords: Get, add， delete, and so on for auto filter on an Excel worksheet
 description: تدعم واجهات برمجة التطبيقات السحابية Aspose.Cells الحصول على وإضافة وحذف وما إلى ذلك للتصفية التلقائية في ورقة عمل Excel. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 100
+kwords: Excel، Office كلاود، ريست API، جدول البيانات، PDF، CSV، Json، Markdwon، AutoFilter
 ---
 يعد التصفية التلقائية أسرع طريقة لتحديد العناصر التي تريد عرضها في القائمة فقط من ورقة العمل. تتيح ميزة التصفية التلقائية للمستخدمين تصفية العناصر الموجودة في القائمة وفقًا لمعايير محددة. التصفية بناءً على النص أو الأرقام أو التواريخ.
 
@@ -29,7 +30,7 @@ weight: 100
     <td class="col-md-2"> <li>تاريخ</li> </td>
   <td class="col-md-10">
   <p>
- يمكن تنفيذ أنواع مختلفة من مرشحات التاريخ مثل تصفية جميع الصفوف التي لها تواريخ في يناير 2018.<a href="/cells/ar/autofilter/add-date-filter/">API من مرشح لون تاريخ الإضافة</a> يمكن تنفيذ هذه الوظيفة.
+يمكن تنفيذ أنواع مختلفة من مرشحات التاريخ مثل تصفية جميع الصفوف التي لها تواريخ في يناير 2018.<a href="/cells/ar/autofilter/add-date-filter/">API من مرشح لون تاريخ الإضافة</a> يمكن تنفيذ هذه الوظيفة.
 </p>
   </td>
   </tr>
@@ -53,7 +54,7 @@ weight: 100
     <td class="col-md-2"> <li>نص</li> </td>
   <td class="col-md-10">
   <p>
- إذا كان العمود يحتوي على نص وتم تحديد خلايا تحتوي على نص معين،<a href="/cells/ar/autofilter/add-filter/"> فلتر الاضافة API</a>ممكن استخدامه.
+ إذا كان العمود يحتوي على نص وتم تحديد خلايا تحتوي على نص معين،<a href="/cells/ar/autofilter/add-filter/"> فلتر الاضافة API</a> ممكن استخدامه.
 </p>
   </td>
   </tr>
@@ -79,7 +80,7 @@ weight: 100
     <td class="col-md-2"> <li>تصفية مخصص</li> </td>
   <td class="col-md-10">
   <p>
- Aspose.Cells توفر السحابة<a href="/cells/ar/autofilter/add-dynamic-filter/"> مرشحات مخصصة API</a> مثل صفوف التصفية التي تحتوي على بعض السلاسل المحددة وصفوف التصفية التي تبدأ أو تنتهي بسلسلة معينة.
+ Aspose.Cells توفر السحابة<a href="/cells/ar/autofilter/add-dynamic-filter/">مرشحات مخصصة API</a> مثل صفوف التصفية التي تحتوي على بعض السلاسل المحددة وصفوف التصفية التي تبدأ أو تنتهي بسلسلة معينة.
 </p>
   </td>
   </tr>

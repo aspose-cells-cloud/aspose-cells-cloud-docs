@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postworksheetcellsrangeunmerge/
 description: Отменить объединение ячеек в этом диапазоне
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostWorksheetCellsRangeUnMerge
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangeUnMerge" >}}

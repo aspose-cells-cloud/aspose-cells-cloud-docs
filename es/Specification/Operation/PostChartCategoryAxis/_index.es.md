@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/postchartcategoryaxis/
 description: Actualizar el eje de categoría del gráfico en el gráfico
+kwords: Excel, Office, hoja de cálculo, nube REST API, PostChartCategoryAxis
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostChartCategoryAxis" >}}

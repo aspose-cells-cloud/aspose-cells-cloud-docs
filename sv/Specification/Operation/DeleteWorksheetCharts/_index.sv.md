@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/deleteworksheetcharts/
 description: Rensa diagrammen i kalkylbladen
+kwords: Excel, Office, Kalkylblad, Cloud REST API, DeleteWorksheetCharts
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetCharts" >}}

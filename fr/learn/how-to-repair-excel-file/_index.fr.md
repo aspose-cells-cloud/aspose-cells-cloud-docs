@@ -4,6 +4,7 @@ type: docs
 url: /fr/how-to-repair-excel-file
 description: Comment réparer Excel ou un autre fichier de feuille de calcul via Aspose.Cells Cloud
 weight: 10
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdwon, Comment réparer Excel ou autre fichier de feuille de calcul via Aspose.Cells Cloud
 ---
 ## Introduction
 Le Aspose.Cells Cloud API est une puissante solution basée sur le cloud conçue pour la création, l'édition et la conversion de fichiers de feuilles de calcul. Dans cet article, nous vous guiderons tout au long du processus d'utilisation du Aspose.Cells Cloud API pour le fichier réparé, y compris des cas d'utilisation typiques et des exemples de code.
@@ -19,7 +20,7 @@ Le API est disponible pour la réparation de fichiers, généralement compatible
 
 # Comment réparer Excel ou une autre feuille de calcul via Aspose.Cells Cloud
 
- Le Aspose.Cells Cloud API fournit[plusieurs SDK](https://github.com/aspose-cells-cloud)pour différents langages de programmation. Choisissez le SDK qui correspond à votre langage de programmation préféré et suivez la documentation qui l'accompagne pour l'installation et l'initialisation. Alternativement, vous pouvez créer votre propre SDK selon les[Référence API](https://reference.aspose.cloud/cells/). Dans cette section, nous utiliserons C# comme exemple pour détailler le processus de réparation de fichiers.
+ Le Aspose.Cells Cloud API fournit[plusieurs SDK](https://github.com/aspose-cells-cloud) pour différents langages de programmation. Choisissez le SDK qui correspond à votre langage de programmation préféré et suivez la documentation qui l'accompagne pour l'installation et l'initialisation. Alternativement, vous pouvez créer votre propre SDK selon les[Référence API](https://reference.aspose.cloud/cells/). Dans cette section, nous utiliserons C# comme exemple pour détailler le processus de réparation de fichiers.
 
 
 ## Inscription et obtention de la clé API

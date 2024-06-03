@@ -1,15 +1,16 @@
 ﻿---
-title: Mehrere Arbeitsblätter Excel löschen
+title: Mehrere Excel-Arbeitsblätter löschen
 second_title: Aspose.Cells Cloud Documen
 linktitle: Mehrere Arbeitsblätter
 type: docs
 url: /de/worksheets/delete-multiple/
 aliases: [/delete-excel-worksheets/]
 keywords: Delete multiple Excel worksheets on an Excel workbook
-description: Aspose.Cells Cloud REST API unterstützt das Löschen mehrerer Excel-Arbeitsblätter in einer Excel-Arbeitsmappe. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
+description: Aspose.Cells Cloud REST API unterstützt das Löschen mehrerer Excel Arbeitsblätter in einer Excel Arbeitsmappe. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
 weight: 20
+kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdwon, Mehrere Excel Arbeitsblätter löschen
 ---
-Dieser REST API gibt `delete multiple worksheets` an.
+Dieser REST API zeigt `delete multiple worksheets` an.
  
 ## RSET API
  
@@ -22,19 +23,19 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets
  
 | Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
 |:- |:- |:- |:- |
-| Name| Zeichenfolge| Weg||
-| matchCondition|| Körper||
-| Ordner| Zeichenfolge| Abfrage||
-| Speichername| Zeichenfolge| Abfrage||
+| Name| Schnur| Weg||
+| Übereinstimmungsbedingung|| Körper||
+| Ordner| Schnur| Abfrage||
+| Speichername| Schnur| Abfrage||
  
 
 **MatchConditionRequest-Eigenschaften**
  
-Name | Geben Sie | ein Beschreibung | Anmerkungen
+Name | Typ | Beschreibung | Hinweise
 ------------ | ------------- | ------------- | -------------
- RegexPattern | Zeichenfolge | | [optional]FullMatchConditions | string[]| | [optional]Die[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheets) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht die Durchführung von REST-Interaktionen direkt über einen Webbrowser.
+ RegexPattern | string | | [optional]FullMatchConditions | string[]| | [optional]Die[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheets) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen, REST-Interaktionen direkt von einem Webbrowser aus durchzuführen.
  
-Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie man mit cURL Anrufe zur Cloud API tätigt.
+Mit dem Befehlszeilentool cURL können Sie ganz einfach auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie Sie mit cURL Anrufe an Cloud API tätigen.
  
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
  
@@ -68,9 +69,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets?folder=Temp" \
  
 ## Cloud SDK-Familie
  
- Die Verwendung eines SDK ist der beste Weg, die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte schauen Sie sich die an[GitHub-Repository](https://github.com/aspose-cells-cloud) Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie hier.
+ Die Verwendung eines SDK ist der beste Weg, um die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte lesen Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
  
-Die folgenden Codebeispiele veranschaulichen, wie Aspose.Cells-Webdienste mithilfe verschiedener SDKs aufgerufen werden:
+Die folgenden Codebeispiele zeigen, wie Sie mit verschiedenen SDKs Aufrufe an die Webdienste Aspose.Cells tätigen:
  
  
  

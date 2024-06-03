@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/putworksheetvalidation/
 description: Aggiungi una convalida all'indice nel foglio di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PutWorksheetValidation
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetValidation" >}}

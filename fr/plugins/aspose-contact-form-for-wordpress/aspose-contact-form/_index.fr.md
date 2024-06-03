@@ -5,6 +5,7 @@ type: docs
 url: /fr/aspose-contact-form/
 description: Créez et gérez des formulaires de contact à l'aide de balises ou de nos exemples de modèles. Vos clients peuvent remplir des formulaires sur la page WordPress et vous recevrez les données par e-mail via. Le formulaire de contact Aspose fournit également un formulaire Web à la fonctionnalité Excel. Les utilisateurs peuvent remplir des données dans des formulaires WordPress, qui sont ensuite ajoutées à une feuille Excel. Vous pouvez afficher les données de tous les clients dans votre page WordPress
 weight: 10
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdwon, Aspose Formulaire de contact
 ---
 ## **Introduction**
 ### **Aspose Formulaire de contact**

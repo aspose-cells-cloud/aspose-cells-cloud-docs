@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/putinsertnewworksheet/
 description: Insérer une nouvelle feuille de calcul dans le classeur
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PutInsertNewWorksheet
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutInsertNewWorksheet" >}}

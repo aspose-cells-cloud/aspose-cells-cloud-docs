@@ -7,6 +7,7 @@ aliases: [/working-with-pivot-tables/]
 keywords: Working with pivot table on an Excel worksheet
 description: Aspose.Cells nasıl yapılır Cloud REST API'leri, Excel çalışma sayfasındaki pivot tabloyla çalışır. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 100
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, PivotTable'lar
 ---
 ## Excel dosyasındaki pivot tablolarla çalışma.
 

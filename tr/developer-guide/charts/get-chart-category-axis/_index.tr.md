@@ -3,6 +3,7 @@ title:  Grafik Kategorisini Al Axi
 type: docs
 url: /tr/charts/category-axis/get/
 weight: 60
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Grafik Kategori Ekseni Al
 ---
 Bu REST API, Grafik Kategori Eksenini Al'ı gösterir
  

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/putworksheetfiltertop10/
 description: Filtrer les 10 premiers éléments de la liste dans la feuille de calcul
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PutWorksheetFilterTop10
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetFilterTop10" >}}
@@ -23,7 +24,7 @@ weight: 50
     {{< blocks/products/cells/docs-Parameter-content columns="fieldIndex,integer,Le décalage entier du champ sur lequel vous souhaitez baser le filtre (à partir de la gauche de la liste ; le champ le plus à gauche est le champ 0)." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="isTop,boolean,Indique si le filtre est effectué par le haut ou par le bas" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="isPercent,boolean,Indique si les éléments sont en pourcentage ou en nombre" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="itemCount,entier,Le nombre d\'éléments" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="itemCount,entier,Le nombre d\'articles" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="matchBlanks,boolean,Faire correspondre toutes les cellules vides de la liste." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="actualiser, booléen, actualiser les filtres automatiques pour masquer ou afficher les lignes." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="dossier, chaîne, le dossier où se trouve le fichier." >}} 

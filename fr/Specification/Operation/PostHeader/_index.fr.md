@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postheader/
 description: Mettre à jour l'en-tête de la page dans la feuille de calcul
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostHeader
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostHeader" >}}

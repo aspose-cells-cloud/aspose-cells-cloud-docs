@@ -3,24 +3,25 @@ title: PostWorkbookNam
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postworkbookname/
-description: Aktualisieren Sie einen benannten Bereich in der Arbeitsmappe
+description: Aktualisieren eines benannten Bereichs in der Arbeitsmappe
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostWorkbookName
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookName" >}}
 {{< blocks/products/cells/docs-title titlemsg="Update a named range in the workbook." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/names/{nameName},POST,Aktualisieren Sie einen benannten Bereich in der Arbeitsmappe.,<a href=\'https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookName\'>PostWorkbookName< /a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/names/{nameName},POST,Einen benannten Bereich in der Arbeitsmappe aktualisieren.,<a href=\'https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookName\'>PostWorkbookName</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="nameName,string,der Aspose.Cells.Name-Elementname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="nameName, string, der Name des Aspose.Cells.Name-Elements." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Parametername, Typ, Beschreibung" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="neuerName,Klasse:Name,Nameneuer Name." >}} 

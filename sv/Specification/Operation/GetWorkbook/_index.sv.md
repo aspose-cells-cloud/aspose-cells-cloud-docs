@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/getworkbook/
 description: Hämta arbetsböcker i olika format
+kwords: Excel, Office, Kalkylblad, Cloud REST API, GetWorkbook
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorkbook" >}}
@@ -18,7 +19,7 @@ weight: 50
      {{< blocks/products/cells/docs-Parameter-content columns="namn, sträng, filnamnet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parameternamn, typ, beskrivning" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="format,sträng,Konverteringsformatet(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG3407G/1PG3407G/3417G/34176/341761/34161/34161/34176/34161/34176/341761 481/ MD[Markdown]/Nummer)." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="format, sträng, Konverteringsformatet (CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/1PG343481/JIF34076/16143481/16143481/16143481/16143481/16143481/34161/34161/34176/34176/34161/34161/34161/34176 73481/ MD[Markdown]/Nummer)." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="password,string,Lösenordet som behövs för att öppna en Excel-fil." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="isAutoFit,boolean,Anger om inställda arbetsboksrader ska vara autopassade." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="onlySaveTable,boolean,Anger om endast spara tabelldata. Använd endast pdf för att excel." >}} 

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postfitwidetopages/
 description: Установите масштаб, при котором страница будет соответствовать ширине при печати на листе.
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostFitWideToPages
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostFitWideToPages" >}}

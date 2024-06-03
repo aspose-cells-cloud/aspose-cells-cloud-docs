@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/deleteworksheetpivottables/
 description: Eliminar tablas dinámicas en la hoja de trabajo
+kwords: Excel, Office, hoja de cálculo, nube REST API, eliminar tablas dinámicas de hoja de trabajo
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetPivotTables" >}}

@@ -3,25 +3,26 @@ title: GetHorizontalPageBrea
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/gethorizontalpagebreak/
-description: Rufen Sie eine Beschreibung des horizontalen Seitenumbruchs im Arbeitsblatt ab
+description: Abrufen einer horizontalen Seitenumbruchbeschreibung im Arbeitsblatt
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, GetHorizontalPageBreak
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetHorizontalPageBreak" >}}
 {{< blocks/products/cells/docs-title titlemsg="Retrieve a horizontal page break descripton in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/horizontalpagebreaks/{index},GET,Eine horizontale Seitenumbruchbeschreibung im Arbeitsblatt abrufen.,<a href=\'https://apireference.aspose.cloud/cells/# /PageBreaks/GetHorizontalPageBreak\'>GetHorizontalPageBreak</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/horizontalpagebreaks/{index},GET,Eine Beschreibung des horizontalen Seitenumbruchs im Arbeitsblatt abrufen.,<a href=\'https://apireference.aspose.cloud/cells/#/PageBreaks/GetHorizontalPageBreak\'>GetHorizontalPageBreak</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Name der Arbeitsmappe." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="index,integer,Der auf Null basierende Index des Elements." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Name der Arbeitsmappe." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Index, Ganzzahl, Der nullbasierte Index des Elements." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/PageBreaksController/GetHorizontalPageBreak\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

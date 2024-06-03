@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/model/style/
 description: "Aspose.Cells Molnmodellspecifikation: Stil. Hantera enkelt Excel och andra kalkylarksdokument med funktioner som att öppna, generera, redigera, dela, slå samman, jämföra och konvertera"
+kwords: Excel, Office, Kalkylblad, Cloud REST API, Stil
 weight: 50
 ---
 ## **stil**
 
- 
+ Representerar visningsstil för Excel-dokument, som typsnitt, färg, justering, kant, etc. Stilobjektet innehåller alla stilattribut (teckensnitt, talformat, justering och så vidare) som egenskaper.
 
 | Egendomsnamn| Egenskapstyp| Nullbar| Endast läs| Standardvärde| Beskrivning|
 |:- |:- |:- |:- |:- |:- |
@@ -18,8 +19,8 @@ weight: 50
 | Beställnings| Sträng| Sann| Falsk|| Representerar den anpassade nummerformatsträngen för detta stilobjekt. Om det anpassade sifferformatet inte är inställt (Till exempel, sifferformatet är inbyggt), kommer "" att returneras.|
 | Bakgrundsfärg| Klass: Färg| Sann| Falsk|| Hämtar eller ställer in en stils bakgrundsfärg.|
 | Förgrundsfärg| Klass: Färg| Sann| Falsk|| Hämtar eller ställer in en stils förgrundsfärg.|
-| IsFormulaHidden| Boolean| Sann| Falsk|| Representerar om formeln kommer att döljas när kalkylbladet är skyddat.|
-| IsDateTime| Boolean| Sann| Falsk||Anger om sifferformatet är ett datumformat.|
+| IsFormulaHidden| Boolean| Sann| Falsk||Representerar om formeln kommer att döljas när kalkylbladet är skyddat.|
+| IsDateTime| Boolean| Sann| Falsk|| Anger om sifferformatet är ett datumformat.|
 | IsTextWrapped| Boolean| Sann| Falsk|| Hämtar eller ställer in ett värde som anger om texten i en cell är radbruten.|
 | IsGradient| Boolean| Sann| Falsk|| Indikerar om cellskuggningen är ett gradientmönster.|
 | Är låst| Boolean| Sann| Falsk|| Hämtar eller ställer in ett värde som anger om en cell kan ändras eller inte.|
@@ -30,8 +31,8 @@ weight: 50
 | Rotations vinkel| Heltal| Sann| Falsk|| Representerar textrotationsvinkel.|
 | Mönster| Sträng| Sann| Falsk|| Hämtar eller ställer in cellbakgrundsmönstertypen.|
 | TextDirection| Sträng| Sann| Falsk|| Representerar textläsordning.|
-| Vertical Alignment| Sträng| Sann| Falsk|| Hämtar eller ställer in den vertikala anpassningstypen för texten i en cell.|
-| Horisontell linjering| Sträng| Sann| Falsk||Hämtar eller ställer in den horisontella justeringen av texten i en cell.|
+| Vertical Alignment| Sträng| Sann| Falsk||Hämtar eller ställer in den vertikala anpassningstypen för texten i en cell.|
+| Horisontell linjering| Sträng| Sann| Falsk|| Hämtar eller ställer in den horisontella justeringen av texten i en cell.|
 | BorderCollection| Behållare| Sann| Falsk|||
 | Bakgrundstemafärg| Klass: Temafärg| Sann| Falsk|| Hämtar och ställer in bakgrundstemafärgen.|
 | Förgrundstemafärg| Klass: Temafärg| Sann| Falsk|| Hämtar och ställer in förgrundstemafärgen.|

@@ -7,6 +7,7 @@ aliases: [/support-request-file-in-task-api/]
 keywords: REST API, task, request, spreadsheets, exce
 description: "Cells.Cloud API pour Excel fonctionne : fichier de demande de prise en charge des tâches"
 weight: 10
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdwon, Fichier de demande de support dans la tâche API
 ---
 ## REPOS API
 
@@ -16,7 +17,7 @@ weight: 10
 
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Task/PostRunTask) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement depuis un navigateur Web.
 
- Vous pouvez utiliser**cURL** outil de ligne de commande pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment passer des appels vers Cloud API avec cURL.
+ Vous pouvez utiliser**cURL**outil de ligne de commande pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment passer des appels vers Cloud API avec cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 

@@ -3,6 +3,7 @@ title:  Ottieni l'asse dei valori del grafico
 type: docs
 url: /it/charts/value-axis/get/
 weight: 60
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Ottieni asse valore grafico
 ---
 Questo REST API indica Ottieni asse valore grafico
  

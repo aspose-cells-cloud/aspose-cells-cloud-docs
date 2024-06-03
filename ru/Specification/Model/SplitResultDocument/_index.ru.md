@@ -5,6 +5,7 @@ type: docs
 url: /ru/specification/model/splitresultdocument/
 description: "Aspose.Cells Спецификация облачной модели: SplitResultDocument. Легко обрабатывайте Excel и другие документы электронных таблиц с помощью таких функций, как открытие, создание, редактирование, разделение, слияние, сравнение и преобразование."
 weight: 50
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, SplitResultDocument
 ---
 ## **СплитРезультатДокумент**
 
@@ -15,4 +16,5 @@ weight: 50
 | Идентификатор| Целое число| Истинный| ЛОЖЬ|||
 | связь| Класс:Ссылка| Истинный| ЛОЖЬ|||
 
-**Имя родителя** : (LinkElement)[linkelement]
+**Имя родителя** : [СсылкаЭлемент](linkelement)
+

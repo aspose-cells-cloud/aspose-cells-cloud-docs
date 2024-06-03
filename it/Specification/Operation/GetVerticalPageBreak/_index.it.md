@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/getverticalpagebreak/
 description: Recupera una descrizione dell'interruzione di pagina verticale nel foglio di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, GetVerticalPageBreak
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetVerticalPageBreak" >}}

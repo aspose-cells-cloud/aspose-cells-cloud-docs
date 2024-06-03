@@ -8,6 +8,7 @@ aliases: [/working-with-worksheets/]
 keywords: Working with worksheet on an Excel workbook
 description: Aspose.Cells Prise en charge de Cloud REST API pour l'utilisation d'une feuille de calcul sur un classeur Excel. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 100
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, utilisation de la feuille de calcul Excel.
 ---
 Une feuille de calcul est une collection de cellules dans lesquelles vous conservez et manipulez les données. Chaque classeur Excel peut contenir plusieurs feuilles de calcul.
 

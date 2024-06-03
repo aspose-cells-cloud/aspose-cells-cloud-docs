@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/putworksheetformatconditioncondition/
 description: Добавьте условие для условия формата на листе.
+kwords: Excel, Office, электронная таблица, Cloud REST API, PutWorksheetFormatConditionCondition
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetFormatConditionCondition" >}}

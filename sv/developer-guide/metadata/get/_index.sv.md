@@ -7,6 +7,7 @@ url: /sv/metadata/get/
 keywords: Get properties from Excel files
 description: Aspose.Cells Cloud REST API stöder att hämta egenskaper från excel-filer. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 23
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Hämta metadata från Excel filer
 ---
 Denna REST API indikerar att få `metadata` från flera Excel filer.
 

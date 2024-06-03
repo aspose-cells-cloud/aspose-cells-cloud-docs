@@ -8,6 +8,7 @@ aliases: [/convert-excel-file-to-html-in-cloud/]
 keywords: Convert excel files to html files
 description: Aspose.Cells Cloud REST API поддерживает преобразование файлов Excel в файлы html. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 100
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, от Excel до HTML
 ---
 Этот файл Excel REST API `saveas` имеет номер HTML.
 
@@ -15,11 +16,11 @@ weight: 100
 
 Этот файл Excel REST API `convert` имеет номер HTML.
 
-[PUT/ячейки/конвертировать](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)API позволяет конвертировать файл MS Excel в файл HTML с дополнительными настройками и сохранять результат в ответ.
+[PUT/ячейки/конвертировать](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) API позволяет конвертировать файл MS Excel в файл HTML с дополнительными настройками и сохранять результат в ответ.
 
 Этот файл Excel REST API `export` имеет номер HTML.
 
-[ПОЛУЧИТЬ /cells/{имя}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook  )API позволяет конвертировать файл MS Excel в файл HTML с дополнительными настройками и сохранять результат в ответ.
+[ПОЛУЧИТЬ /cells/{имя}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook  ) API позволяет конвертировать файл MS Excel в файл HTML с дополнительными настройками и сохранять результат в ответ.
 
 ## ОТДЫХ API
 
@@ -33,7 +34,7 @@ weight: 100
 
 Эти API определяют общедоступный программный интерфейс и позволяют выполнять взаимодействие с REST непосредственно из веб-браузера.
 
- Вы можете использовать**cURL** инструмент командной строки для легкого доступа к веб-службам Aspose.Cells. В следующем примере показано, как позвонить на Cloud API с помощью cURL.
+ Вы можете использовать**cURL**инструмент командной строки для легкого доступа к веб-службам Aspose.Cells. В следующем примере показано, как позвонить на Cloud API с помощью cURL.
 
 
 {{< tabs tabTotal="3" tabID="11" tabName11="convert" tabName12="saveas" tabName13="export" >}}

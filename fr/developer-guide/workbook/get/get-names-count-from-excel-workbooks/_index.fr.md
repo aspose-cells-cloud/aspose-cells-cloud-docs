@@ -8,6 +8,7 @@ aliases: [/get-names-count-from-excel-workbooks/,/workbook/names/]
 keywords: Getting names on an Excel workbook
 description: Aspose.Cells Cloud REST API prend en charge l'obtention de noms sur un classeur Excel. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 120
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, obtenir les noms d'un classeur Excel
 ---
 Ce REST API indique d'obtenir les noms d'un classeur Excel.
  
@@ -20,9 +21,9 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/names
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
-| nom| chaîne| chemin|Le nom du classeur.|
+| nom| chaîne| chemin| Le nom du classeur.|
 | dossier| chaîne| requête| Le dossier du classeur.|
 | Nom de stockage| chaîne| requête| nom de stockage.|
  

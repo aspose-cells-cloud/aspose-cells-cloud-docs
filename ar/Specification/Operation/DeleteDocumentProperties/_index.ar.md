@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/deletedocumentproperties/
 description: احذف كافة خصائص المستند المخصصة وأعد تعيين الخصائص المضمنة
+kwords: Excel، Office، جدول البيانات، Cloud REST API، حذف المستندات
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteDocumentProperties" >}}

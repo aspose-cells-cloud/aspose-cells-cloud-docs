@@ -8,6 +8,7 @@ aliases: [/add-pictures-to-excel-worksheet/]
 keywords: Add a picture in an Excel file
 description: Aspose.Cells Cloud REST API يدعم إضافة صورة في ملف Excel. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 20
+kwords: Excel، Office Cloud، REST API، جدول البيانات، PDF، CSV، Json، Markdwon، إضافة صورة في ملف Excel
 ---
 يشير REST API إلى `add` إلى صورة جديدة لورقة عمل Excel.
  
@@ -22,7 +23,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
  
 | اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/HTTPBody|وصف|
 |:- |:- |:- |:- |
-| اسم| خيط| طريق|اسم المصنف.|
+| اسم| خيط| طريق| اسم المصنف.|
 | اسم الورقة| خيط| طريق| اسم الورشة.|
 | صورة|| جسم| كائن مصور|
 | UpperLeftRow| عدد صحيح| استفسار|0 |
@@ -69,7 +70,7 @@ curl -v "http://api.aspose.com/v1.1/cells/Sample_Test_Book.xls/worksheets/Sheet6
  
 ## عائلة Cloud SDK
  
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
  
 توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
  

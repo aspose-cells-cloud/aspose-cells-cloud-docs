@@ -8,6 +8,7 @@ aliases: [/calculate-formula-in-a-worksheet/]
 keywords: Calculate formula on an Excel worksheet
 description: Aspose.Cells Cloud REST API, Excel çalışma sayfasında formül hesaplamayı destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 20
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel çalışma sayfasında formülü hesapla
 ---
 Bu REST API, bir çalışma sayfasında `calculate formula value`'in alındığını gösterir.
  

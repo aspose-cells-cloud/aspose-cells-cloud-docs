@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postdeleteincompleterows/
 description: Удаление неполных строк файлов электронных таблиц в основном используется для удаления неполных строк в таблицах и диапазонах.
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostDeleteIncompleteRows
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostDeleteIncompleteRows" >}}
@@ -15,7 +16,7 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Имя параметра, тип, описание" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="deleteIncompleteRowsRequest, класс: deleteIncompleterowsrequest," >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="deleteIncompleteRowsRequest, класс: deleteincompleterowsrequest," >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

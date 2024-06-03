@@ -8,6 +8,7 @@ aliases: [/add-a-pivot-table-in-a-worksheet/]
 keywords: Add a pivot field in a pivot table
 description: Aspose.Cells Cloud REST API, pivot tabloya pivot alanı eklemeyi destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 40
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Pivot tabloya pivot alanı ekleyin
 ---
 Bu REST API, `add` pivot alanının pivot tabloya dönüştürülmesini belirtir
  
@@ -27,7 +28,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables
 | pivotTableIndex| tamsayı| yol| Pivot tablo dizini|
 | pivotFieldType| sicim| sorgu| Alanlar alan türü.|
 | rica etmek|| vücut| Alan dizinlerini içeren Dto|
-| yeniden hesaplamaya ihtiyaç var| boolean| sorgu| YANLIŞ|
+| yeniden hesaplamaya ihtiyaç var|boolean| sorgu| YANLIŞ|
 | dosya| sicim| sorgu| Belgenin klasörü.|
 | depolamaAdı| sicim| sorgu| depolama adı.|
  

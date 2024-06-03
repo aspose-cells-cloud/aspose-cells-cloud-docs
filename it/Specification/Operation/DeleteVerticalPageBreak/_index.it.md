@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/deleteverticalpagebreak/
 description: Elimina un'interruzione di pagina verticale nel foglio di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, EliminaVerticalPageBreak
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteVerticalPageBreak" >}}

@@ -1,18 +1,19 @@
 ﻿---
-title: ImportJsonReques
+title: ImportJsonRequests
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/model/importjsonrequest/
-description: "Aspose.Cells Cloud-Modellspezifikation: ImportJsonRequest. Bearbeiten Sie mühelos Excel und andere Tabellenkalkulationsdokumente mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+description: "Aspose.Cells Cloud-Modellspezifikation: ImportJsonRequest. Müheloses Bearbeiten von Excel und anderen Tabellenkalkulationsdokumenten mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, ImportJsonRequest
 weight: 50
 ---
-## **importJsonRequest**
+## **Importieren von Json-Anfragen**
 
- Zeigt eine Anforderung zum Importieren von XML-Daten an
+ Zeigt die Importanforderung für XML-Daten an
 
-| Name des Anwesens| Art der Immobilie| Nullbar| Schreibgeschützt| Standardwert| Beschreibung|
+| Name des Anwesens| Art der Immobilie| Nullwerte zulassen| Schreibgeschützt| Standardwert| Beschreibung|
 |:- |:- |:- |:- |:- |:- |
-| JsonFileSource| Klasse:FileSource| WAHR| FALSCH|| Json-Dateiquelle|
-| ImportPosition| Klasse:ImportPosition| WAHR| FALSCH|| Positionsbeschreibung importieren.|
-| JsonContent| Zeichenfolge| WAHR| FALSCH|| Der Base64String-Standardwert ist null|
+| JsonFileSource| Klasse:Datenquelle| WAHR| FALSCH|| JSON-Dateiquelle|
+| ImportPosition| Klasse:ImportPosition| WAHR| FALSCH|| Beschreibung der Importposition.|
+| Json-Inhalt| Zeichenfolge| WAHR| FALSCH|| Base64String-Standard ist null|
 

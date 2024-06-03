@@ -1,30 +1,31 @@
 ﻿---
-title: DeleteWorksheetConditionalFormattingAre
+title: LöschenArbeitsblattBedingteFormatierungSind
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/deleteworksheetconditionalformattingarea/
-description: Zellbereich aus der bedingten Formatierung entfernen
+description: Zellbereich aus bedingter Formatierung entfernen
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, DeleteWorksheetConditionalFormattingArea
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetConditionalFormattingArea" >}}
 {{< blocks/products/cells/docs-title titlemsg="Remove cell area from conditional formatting." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/conditionalFormattings/area,DELETE,Zellbereich aus der bedingten Formatierung entfernen.,<a href=\'https://apireference.aspose.cloud/cells/#/ConditionalFormattings/DeleteWorksheetConditionalFormattingArea\' >DeleteWorksheetConditionalFormattingArea</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/conditionalFormattings/area,DELETE,Zellenbereich aus bedingter Formatierung entfernen.,<a href=\'https://apireference.aspose.cloud/cells/#/ConditionalFormattings/DeleteWorksheetConditionalFormattingArea\'>DeleteWorksheetConditionalFormattingArea</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="startRow,integer,Die Startzeile des Bereichs." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="startColumn,integer,Die Startspalte des Bereichs." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="totalRows,integer,Die Anzahl der Zeilen des Bereichs." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="totalColumns,integer,Die Anzahl der Spalten des Bereichs." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="startRow, Integer, Die Startzeile des Bereichs." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="startColumn, Integer, Die Startspalte des Bereichs." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="totalRows, Integer, Die Anzahl der Zeilen des Bereichs." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="totalColumns, Integer, Die Anzahl der Spalten des Bereichs." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/ConditionalFormattingsController/DeleteWorksheetConditionalFormattingArea\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

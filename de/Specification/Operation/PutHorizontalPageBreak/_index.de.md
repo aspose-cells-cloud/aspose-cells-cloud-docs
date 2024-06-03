@@ -3,29 +3,30 @@ title: PutHorizontalPageBrea
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/puthorizontalpagebreak/
-description: Fügen Sie im Arbeitsblatt einen horizontalen Seitenumbruch ein
+description: Fügen Sie im Arbeitsblatt horizontale Seitenumbrüche hinzu
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PutHorizontalPageBreak
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutHorizontalPageBreak" >}}
 {{< blocks/products/cells/docs-title titlemsg="Add a horizontal page breaks in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/horizontalpagebreaks,PUT,Horizontale Seitenumbrüche im Arbeitsblatt hinzufügen.,<a href=\'https://apireference.aspose.cloud/cells/#/PageBreaks/PutHorizontalPageBreak\' >PutHorizontalPageBreak</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/horizontalpagebreaks,PUT,Fügen Sie dem Arbeitsblatt einen horizontalen Seitenumbruch hinzu.,<a href=\'https://apireference.aspose.cloud/cells/#/PageBreaks/PutHorizontalPageBreak\'>PutHorizontalPageBreak</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Name der Arbeitsmappe." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Name der Arbeitsmappe." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="Zellenname, Zeichenfolge, Zellenname" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="Zeile, Ganzzahl, Zeilenindex, nullbasiert." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="Spalte, Ganzzahl, Spaltenindex, nullbasiert." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="startColumn,integer,Startspaltenindex, nullbasiert." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="endColumn,integer,Endspaltenindex, nullbasiert." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Zellenname,Zeichenfolge,Zellenname" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Zeile, Ganzzahl, Zeilenindex, basierend auf Null." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Spalte, Ganzzahl, Spaltenindex, basierend auf Null." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="startColumn, Integer, Startspaltenindex, basierend auf Null." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="endColumn,integer,Endspaltenindex, basierend auf null." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/PageBreaksController/PutHorizontalPageBreak\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

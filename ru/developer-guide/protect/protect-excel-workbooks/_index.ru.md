@@ -8,6 +8,7 @@ aliases: [/protect-excel-workbooks/]
 keywords: Protect Excel files
 description: Aspose.Cells Cloud REST API поддерживает защиту Excel файлов. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 30
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, защита книги Excel
 ---
 Этот REST API защищает Excel `workbook`.
 
@@ -41,7 +42,7 @@ weight: 30
 
 [Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostProtectDocument) определяет общедоступный интерфейс программирования и позволяет выполнять взаимодействие с REST непосредственно из веб-браузера.
 
- Вы можете использовать**cURL** инструмент командной строки для легкого доступа к веб-службам Aspose.Cells. В следующем примере показано, как позвонить на Cloud API с помощью cURL.
+ Вы можете использовать**cURL**инструмент командной строки для легкого доступа к веб-службам Aspose.Cells. В следующем примере показано, как позвонить на Cloud API с помощью cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 

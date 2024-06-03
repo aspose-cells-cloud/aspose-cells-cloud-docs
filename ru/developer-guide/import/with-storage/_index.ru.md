@@ -7,6 +7,7 @@ url: /ru/import/with-using-storage/
 aliases: [/import-data-into-excel-worksheet/, /import-data-into-worksheet/ , /import-data-in-excel-worksheet/, /import-data/]
 description: "Cells.Облако API для Excel. Операция: импорт данных в рабочий лист Excel."
 weight: 10
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, импорт данных с использованием хранилища
 ---
 Этот REST API указывает `import data` в файл Excel.
  

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/postconvertworkbooktocsv/
 description: Converti il file Excel in file CSV
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PostConvertWorkbookToCSV
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostConvertWorkbookToCSV" >}}

@@ -7,6 +7,7 @@ aliases: [/developer-guide/v3.0/,/developer-guide-v3.0/]
 keywords: How to use Aspose.Cells Cloud REST APIs. Office Excel 2013,  Office Excel 2016,  Office Excel 2019，office Excel 365
 description: В этом руководстве разработчика описаны практические сценарии и советы, которые помогут вам использовать определенные Aspose.Cells for .NET функции, добиться определенного Excel внешнего вида документа или сделать возможным вариант использования.
 weight: 20
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, Руководство разработчика
 ---
 ## Работа с Aspose.Cells Cloud REST API.
 
@@ -56,7 +57,7 @@ weight: 20
             <li><a href="/cells/ru/get-cell-style-from-a-worksheet/">Получает стиль ячейки из листа Excel.</a></li>
             <li><a href="/cells/ru/update-multiple-cells-style/">Обновляет стиль нескольких ячеек на листе Excel.</a></li>
             <li><a href="/cells/ru/change-cell-style-in-excel-worksheet/">Обновляет стиль ячеек на листе Excel.</a></li>
-            <li><a href="/cells/ru/apply-rich-text-formatting-to-a-cell/">Устанавливает форматированное форматирование текста в ячейку листа Excel.</a></li>
+            <li><a href="/cells/ru/apply-rich-text-formatting-to-a-cell/">Устанавливает форматирование расширенного текста в ячейку листа Excel.</a></li>
             <li><a href="/cells/ru/clear-contents-and-styles-of-cells-in-excel-worksheet/">Очищает содержимое и стили ячеек на листе Excel.</a></li>
             <li><a href="/cells/ru/working-with-conditional-formatting/">Добавляет, удаляет и обновляет условное форматирование на листе Excel.</a></li>
             <li><a href="/cells/ru/set-value-of-a-cell-in-a-worksheet/">Устанавливает значение ячейки на листе Excel.</a></li>

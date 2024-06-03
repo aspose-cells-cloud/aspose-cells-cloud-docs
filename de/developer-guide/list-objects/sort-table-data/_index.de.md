@@ -1,15 +1,16 @@
 ﻿---
-title: Listenobjektdaten in einem Arbeitsblatt Excel sortieren
+title: Sortieren von Listenobjektdaten in einem Excel-Arbeitsblatt
 second_title: Aspose.Cells Cloud Documen
-linktitle: Herr
+linktitle: Sor
 type: docs
 url: /de/list-objects/sort-data/
 aliases: [/get-a-list-object-or-table-inside-the-worksheet/,/tables/sort-data/]
 keywords: Sort a list object(table) in an Excel worksheet
 description: Aspose.Cells Cloud REST API unterstützt das Sortieren eines Listenobjekts (Tabelle) in einem Excel Arbeitsblatt. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
 weight: 40
+kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdwon, Listenobjektdaten in einem Excel Arbeitsblatt sortieren
 ---
-Dieser REST API gibt `sort table's data` in einem Excel-Arbeitsblatt an.
+Dieser REST API zeigt `sort table's data` in einem Excel-Arbeitsblatt an.
 
 ## RSET API
  
@@ -22,16 +23,16 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobject
  
 | Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
 |:- |:- |:- |:- |
-| Name| Zeichenfolge| Weg||
-| Blattname| Zeichenfolge| Weg||
-| listObjectIndex| ganze Zahl| Weg||
-| dataSorter|| Körper||
-| Ordner| Zeichenfolge| Abfrage||
-| Speichername| Zeichenfolge| Abfrage| Speichername.|
+| Name| Schnur| Weg||
+| Blattname| Schnur| Weg||
+| Listenobjektindex| ganze Zahl| Weg||
+| Datensortierer|| Körper||
+| Ordner| Schnur| Abfrage||
+| Speichername| Schnur| Abfrage| Speichername.|
  
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObjectSortTable) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht die Durchführung von REST-Interaktionen direkt über einen Webbrowser.
+ Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObjectSortTable) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen, REST-Interaktionen direkt von einem Webbrowser aus durchzuführen.
  
-Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie man mit cURL Anrufe zur Cloud API tätigt.
+Mit dem Befehlszeilentool cURL können Sie ganz einfach auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie Sie mit cURL Anrufe an Cloud API tätigen.
  
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
  
@@ -66,9 +67,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet7/listob
  
 ## Cloud SDK-Familie
  
- Die Verwendung eines SDK ist der beste Weg, die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte schauen Sie sich die an[GitHub-Repository](https://github.com/aspose-cells-cloud) Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie hier.
+ Die Verwendung eines SDK ist der beste Weg, um die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte lesen Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
  
-Die folgenden Codebeispiele veranschaulichen, wie Aspose.Cells-Webdienste mithilfe verschiedener SDKs aufgerufen werden:
+Die folgenden Codebeispiele zeigen, wie Sie mit verschiedenen SDKs Aufrufe an die Webdienste Aspose.Cells tätigen:
 
 {{< tabs tabTotal="6" tabID="4" tabName1="C#" tabName2="PHP" tabName3="Ruby" tabName4="Node.js" tabName5="Perl" tabName6="Go" >}}
 

@@ -3,6 +3,7 @@ title:  Få diagrammets andra värdeaxel
 type: docs
 url: /sv/charts/second-value-axis/get/
 weight: 60
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Get Chart Second Value Axis
 ---
  Denna REST API indikerar Get Chart Second Value Axis.
  

@@ -7,6 +7,7 @@ aliases: [/working-with-rows/]
 keywords: Working with rows on an Excel file
 description: Aspose.Cells Cloud REST API stöder att arbeta med rader på en Excel-fil. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Rows
 ---
 ## Arbeta med rader på en Excel-fil.
 

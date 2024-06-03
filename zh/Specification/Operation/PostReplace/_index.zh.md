@@ -1,25 +1,26 @@
 ﻿---
-title: 更换后
+title: 后替换
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/postreplace/
 description: 将 Excel 文件中的指定文本替换为新文本
+kwords: Excel, Office, 电子表格, Cloud REST API, PostReplace
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostReplace" >}}
 {{< blocks/products/cells/docs-title titlemsg="Replace specified text with new text in Excel files." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/replace,POST,用 Excel 文件中的新文本替换指定文本。,<a href=\'https://apireference.aspose.cloud/cells/#/LightCells/PostReplace\'>PostReplace</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/replace,POST,在 Excel 文件中用新文本替换指定文本。,<a href=\'https://apireference.aspose.cloud/cells/#/LightCells/PostReplace\'>PostReplace</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="文本、字符串、查找内容" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="新建文本、字符串、替换内容" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="密码,字符串,打开Excel文件所需的密码。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="sheetname,字符串,工作表名称。在工作表中找到指定的文本内容。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction,boolean,用户修改单元格相关对象时是否检查excel文件的限制。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="文本，字符串，查找内容" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="newtext,string,替换内容" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="password，string，打开Excel文件所需的密码。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="sheetname,string,工作表名称，在工作表中定位指定的文本内容。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction,boolean,当用户修改单元格相关对象时是否检查excel文件的限制。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/LightCellsController/PostReplace\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

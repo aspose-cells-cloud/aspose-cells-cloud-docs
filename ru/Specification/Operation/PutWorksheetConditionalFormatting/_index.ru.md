@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/putworksheetconditionalformatting/
 description: Добавить условное форматирование на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, PutWorksheetConditionalFormatting
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetConditionalFormatting" >}}

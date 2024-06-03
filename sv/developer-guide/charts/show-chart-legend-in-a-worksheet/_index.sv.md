@@ -4,6 +4,7 @@ type: docs
 url: /sv/charts/legend/show/
 aliases: [/show-chart-legend-in-a-worksheet/]
 weight: 100
+kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdwon, Visa diagramförklaring i ett kalkylblad
 ---
 Denna REST API indikerar visa legend i diagrammet
  

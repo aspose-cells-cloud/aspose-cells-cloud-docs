@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postworksheetchart/
 description: تحديث خصائص المخطط في ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostWorksheetChart
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetChart" >}}

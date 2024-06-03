@@ -8,6 +8,7 @@ aliases: [/get-text-items-from-a-worksheet/]
 weight: 20
 keywords: Get text from Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) worksheet
 description: Aspose.Cells Cloud REST API, Excel çalışma sayfasından metin almayı destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel çalışma sayfasından metin öğeleri alın
 ---
 Bu REST API, Excel çalışma sayfasındaki `read` çalışma sayfasının `text items`'ini gösterir.
  

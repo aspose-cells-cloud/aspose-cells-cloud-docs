@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/getcellhtmlstring/
 description: Hämta HTML-strängen som innehåller data och specifika format i den här cellen
+kwords: Excel, Office, Kalkylblad, Cloud REST API, GetCellHtmlString
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetCellHtmlString" >}}

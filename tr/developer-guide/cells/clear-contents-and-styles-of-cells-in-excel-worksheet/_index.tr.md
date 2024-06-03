@@ -3,6 +3,7 @@ title: Excel Çalışma Sayfasındaki Cells'in İçeriğini ve Stillerini Temizl
 type: docs
 url: /tr/clear-contents-and-styles-of-cells-in-excel-worksheet/
 weight: 50
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel Çalışma Sayfasındaki Cells'in Açık İçerikleri ve Stilleri
 ---
 Bu REST API, bir Excel dosyasındaki `clear` hücresini `content` gösterir.
 

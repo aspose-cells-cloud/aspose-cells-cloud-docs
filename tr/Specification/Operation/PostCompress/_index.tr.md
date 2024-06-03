@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/postcompress/
 description: Dosyaları sıkıştırın ve çeşitli formatlarda hedef dosyalar oluşturun; desteklenen dosya formatları Xls, Xlsx, Xlsm, Xlsb, Ods ve daha fazlasını içerir
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PostCompress
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostCompress" >}}

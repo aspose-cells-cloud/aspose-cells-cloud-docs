@@ -1,16 +1,17 @@
 ﻿---
-title: SparklineGroup
+title: SparklineGruppe
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/model/sparklinegroups/
-description: "Aspose.Cells Cloud-Modellspezifikation: SparklineGroups. Bearbeiten Sie mühelos Excel und andere Tabellenkalkulationsdokumente mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+description: "Aspose.Cells Cloud-Modellspezifikation: SparklineGroups. Müheloses Bearbeiten von Excel und anderen Tabellenkalkulationsdokumenten mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, SparklineGroups
 weight: 50
 ---
-## **sparklineGroups**
+## **Sparkline-Gruppen**
 
  Kapselt eine Sammlung von Aspose.Cells.Charts.SparklineGroup-Objekten.
 
-| Name des Anwesens| Art der Immobilie| Nullbar| Schreibgeschützt| Standardwert| Beschreibung|
+| Name des Anwesens| Art der Immobilie| Nullwerte zulassen| Schreibgeschützt| Standardwert| Beschreibung|
 |:- |:- |:- |:- |:- |:- |
-| SparklineGroupList| Container| WAHR| FALSCH|| Kapselt eine Sammlung von Aspose.Cells.Charts.SparklineGroup-Objekten.|
+| SparklineGruppenliste| Container| WAHR| FALSCH|| Kapselt eine Sammlung von Aspose.Cells.Charts.SparklineGroup-Objekten.|
 

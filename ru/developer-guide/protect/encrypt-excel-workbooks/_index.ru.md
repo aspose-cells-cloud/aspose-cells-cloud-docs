@@ -1,13 +1,14 @@
 ﻿---
 title: Зашифруйте рабочую книгу Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: Шифровать
+linktitle: Шифрование
 type: docs
 url: /ru/workbook/encrypt/
 aliases: [/encrypt-excel-workbooks/]
 keywords: Encrypt Excel workbook
 description: Aspose.Cells Cloud REST API поддерживает шифрование книги Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 20
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, зашифровать книгу Excel
 ---
 Этот REST API зашифровывает Excel `workbook`.
 
@@ -40,7 +41,7 @@ weight: 20
 
 [Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostEncryptDocument) определяет общедоступный интерфейс программирования и позволяет выполнять взаимодействие с REST непосредственно из веб-браузера.
 
- Вы можете использовать**cURL** инструмент командной строки для легкого доступа к веб-службам Aspose.Cells. В следующем примере показано, как позвонить на Cloud API с помощью cURL.
+ Вы можете использовать**cURL**инструмент командной строки для легкого доступа к веб-службам Aspose.Cells. В следующем примере показано, как позвонить на Cloud API с помощью cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 

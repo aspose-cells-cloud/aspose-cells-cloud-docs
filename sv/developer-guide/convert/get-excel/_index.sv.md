@@ -8,6 +8,7 @@ aliases: [/export-excel-workbook-to-different-file-formats/]
 keywords: Get excel files to kinds of format files
 description: Aspose.Cells Cloud REST API-stöd få excel-filer till olika formatfiler. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 10
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Får Excel fil till andra format
 ---
 Denna REST API indikerar till `get` excel-fil till annan filformat.
 
@@ -35,7 +36,7 @@ Denna REST API indikerar till `get` excel-fil till annan filformat.
 
  De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook) definierar ett allmänt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
 
- Du kan använda**cURL** kommandoradsverktyg för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man ringer till Cloud API med cURL.
+ Du kan använda**cURL**kommandoradsverktyg för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man ringer till Cloud API med cURL.
 
 
 {{< tabs tabTotal="1" tabID="11" tabName11="Request" >}}

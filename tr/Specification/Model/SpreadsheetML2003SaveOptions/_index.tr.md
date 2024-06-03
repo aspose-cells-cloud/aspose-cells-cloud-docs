@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/model/spreadsheetml2003saveoptions/
 description: "Aspose.Cells Bulut modeli spesifikasyonu: SpreadsheetML2003SaveOptions. Açma, oluşturma, düzenleme, bölme, birleştirme, karşılaştırma ve dönüştürme gibi özelliklerle Excel ve diğer elektronik tablo belgelerini zahmetsizce yönetin"
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, Elektronik TabloML2003SaveOptions
 weight: 50
 ---
 ## **e-tabloML2003KaydetmeSeçenekleri**
@@ -21,7 +22,8 @@ weight: 50
 | Dizin Oluştur| Boolean| Doğru| YANLIŞ|||
 | HTTPSıkıştırmayı Etkinleştir| Boolean| Doğru| YANLIŞ|||
 | Grafik Önbelleğini Yenile| Boolean| Doğru| YANLIŞ|||
-|SıralamaAdları| Boolean| Doğru| YANLIŞ|||
+| SıralamaAdları| Boolean| Doğru| YANLIŞ|||
 | Birleştirilmiş Alanları Doğrula| Boolean| Doğru| YANLIŞ|||
 
-**Ebeveyn adı** : (KaydetmeSeçenekleri)[kaydetmeseçenekleri]
+**Ebeveyn adı** : [KaydetSeçenekler](/specification/model/saveoptions)
+

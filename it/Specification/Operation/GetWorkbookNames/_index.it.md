@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/getworkbooknames/
 description: Recupera gli intervalli denominati nella cartella di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, GetWorkbookNames
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorkbookNames" >}}

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/postworksheetcellsrangemerge/
 description: Unisci un intervallo di celle in un'unica cella
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PostWorksheetCellsRangeMerge
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangeMerge" >}}

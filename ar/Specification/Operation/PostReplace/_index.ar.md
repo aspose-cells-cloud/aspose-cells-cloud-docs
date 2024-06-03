@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postreplace/
 description: استبدل النص المحدد بنص جديد في ملفات Excel
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostReplace
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostReplace" >}}

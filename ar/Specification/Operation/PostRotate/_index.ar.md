@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postrotate/
 description: قم بتدوير الصفوف أو الأعمدة أو الكائنات الأخرى في ملفات Excel وحفظها بتنسيقات مختلفة
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostRotate
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostRotate" >}}

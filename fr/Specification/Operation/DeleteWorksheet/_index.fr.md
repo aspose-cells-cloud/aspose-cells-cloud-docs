@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/deleteworksheet/
 description: Supprimer une feuille de calcul dans le classeur
+kwords: Excel, Office, feuille de calcul, Cloud REST API, DeleteWorksheet
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheet" >}}

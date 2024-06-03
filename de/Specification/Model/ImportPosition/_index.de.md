@@ -1,18 +1,19 @@
 ﻿---
-title: ImportPositio
+title: ImportPosition
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/model/importposition/
-description: "Aspose.Cells Cloud-Modellspezifikation: ImportPosition. Bearbeiten Sie mühelos Excel und andere Tabellenkalkulationsdokumente mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+description: "Aspose.Cells Cloud-Modellspezifikation: ImportPosition. Müheloses Bearbeiten von Excel und anderen Tabellenkalkulationsdokumenten mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, ImportPosition
 weight: 50
 ---
-## **importPosition**
+## **Importposition**
 
  
 
-| Name des Anwesens| Art der Immobilie| Nullbar| Schreibgeschützt| Standardwert| Beschreibung|
+| Name des Anwesens| Art der Immobilie| Nullwerte zulassen| Schreibgeschützt| Standardwert| Beschreibung|
 |:- |:- |:- |:- |:- |:- |
 | Blattname| Zeichenfolge| WAHR| FALSCH|||
-| RowIndex| Ganze Zahl| WAHR| FALSCH|||
-| ColumnIndex| Ganze Zahl| WAHR| FALSCH|||
+| Zeilenindex| Ganze Zahl| WAHR| FALSCH|||
+| Spaltenindex| Ganze Zahl| WAHR| FALSCH|||
 

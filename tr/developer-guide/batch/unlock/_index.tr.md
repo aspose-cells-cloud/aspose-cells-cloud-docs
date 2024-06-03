@@ -6,6 +6,7 @@ url: /tr/batch/unlock
 keywords: Batch unlock of multiple Excel files
 description: Aspose.Cells Bulut API, birden fazla excel dosyasının toplu kilidini açmayı destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 100
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Toplu Kilit Açma
 ---
 Bu REST API, uygun dosyaların `batch unlock`'ini gösterir.
  
@@ -66,7 +67,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/batch/unlock" \
  
 ## Bulut SDK Ailesi
  
- SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük düzeyli ayrıntılarla ilgilenir ve kilit açma görevlerinize odaklanmanıza olanak tanır. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük düzeyli ayrıntılarla ilgilenir ve kilit açma görevlerinize odaklanmanıza olanak tanır. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
  
 Aşağıdaki kod örnekleri, çeşitli SDK'ları kullanarak Aspose.Cells web hizmetlerine nasıl çağrı yapılacağını gösterir:
  

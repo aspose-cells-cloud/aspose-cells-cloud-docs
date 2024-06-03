@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/postworkbookdatacleansing/
 description: Elektronik tablo dosyalarının veri temizliği, tablolardaki ve aralıklardaki hataları, eksiklikleri, kopyaları veya yanlışlıkları tanımlamak, düzeltmek ve kaldırmak için kullanılan bir veri yönetimi işlemidir
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PostWorkbookDataCleansing
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookDataCleansing" >}}
@@ -20,7 +21,7 @@ weight: 50
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametre Adı,Tip,Açıklama" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="klasör,dize,Dosyanın bulunduğu klasör." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="depolamaAdı,dize,Dosyanın bulunduğu depolama adı." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns=" şifre,dize,Dosya şifresi." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="şifre,dize,Dosya şifresi." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="bölge,dize,Çalışma kitabının bölgesel ayarları." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="checkExcel Kısıtlaması, boolean," >}} 
 {{< /blocks/products/cells/docs-Parameter >}}

@@ -8,8 +8,9 @@ aliases: [/convert-picture-to-image/]
 keywords: Get a picture in an Excel file
 description: Aspose.Cells Cloud REST API, Excel dosyasında resim almayı destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 10
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel dosyasında resim alın
 ---
-Bu REST API, Excel çalışma sayfasındaki `get` resim dizinine işaret eder.
+Bu REST API, Excel çalışma sayfasından `get` resim dizinine işaret eder.
  
 ## RSET API
  

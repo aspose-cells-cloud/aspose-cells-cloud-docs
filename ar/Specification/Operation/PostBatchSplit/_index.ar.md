@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postbatchsplit/
 description: تقسيم الملفات دفعة واحدة والتي تستوفي شروط مطابقة محددة
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostBatchSplit
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostBatchSplit" >}}

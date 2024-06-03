@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/deletepivottablefield/
 description: Supprimer un champ pivot dans le tableau croisé dynamique
+kwords: Excel, Office, feuille de calcul, Cloud REST API, SupprimerPivotTableField
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeletePivotTableField" >}}

@@ -8,6 +8,7 @@ aliases: [/hide-pivot-field-item/]
 keywords: Hide a pivot field in a pivot table
 description: Aspose.Cells Cloud REST API يدعم إخفاء حقل محوري في الجدول المحوري. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 110
+kwords: Excel، Office كلاود، ريست API، جدول بيانات، PDF، CSV، Json، Markdwon، إخفاء عنصر الحقل المحوري في جدول محوري
 ---
 يشير REST API إلى إخفاء عنصر الحقل المحوري.
  
@@ -28,8 +29,8 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottable
 | PivotFieldType| خيط| استفسار||
 | fieldIndex| عدد صحيح| استفسار||
 | itemIndex| عدد صحيح| استفسار||
-| com.isHide| منطقية| استفسار||
-| needReCalculate| منطقية| استفسار| خطأ شنيع|
+| com.isHide|منطقية| استفسار||
+| needReCalculate|منطقية| استفسار| خطأ شنيع|
 | مجلد| خيط| استفسار||
 | اسم التخزين| خيط| استفسار| اسم التخزين.|
  
@@ -69,7 +70,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/pivott
  
 ## عائلة Cloud SDK
  
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
  
 توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
  

@@ -1,29 +1,30 @@
 ﻿---
-title: 放置插入新工作表
+title: 插入新工作表
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/putinsertnewworksheet/
 description: 在工作簿中插入新工作表
+kwords: Excel，Office，电子表格，云 REST API，PutInsertNewWorksheet
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutInsertNewWorksheet" >}}
 {{< blocks/products/cells/docs-title titlemsg="Insert a new worksheet in the workbook." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/insert,PUT,在工作簿中插入新工作表。,<a href=\'https://apireference.aspose.cloud/cells/#/Worksheets/PutInsertNewWorksheet\'>PutInsertNewWorksheet</a >" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/insert,PUT,在工作簿中插入新工作表。,<a href=\'https://apireference.aspose.cloud/cells/#/Worksheets/PutInsertNewWorksheet\'>PutInsertNewWorksheet</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="参数名称、类型、描述" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="名称，字符串，文件名。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="name，string，文件名。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="sheetName,字符串,工作表名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="sheetName，string，工作表名称。" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="索引，整数，" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="sheettype,string,指定工作表类型(VB/Worksheet/Chart/BIFF4Macro/InternationalMacro/Other/Dialog)。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="新表名称，字符串，" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="sheettype，string，指定工作表类型（VB/Worksheet/Chart/BIFF4Macro/InternationalMacro/Other/Dialog）。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="新工作表名称，字符串，" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="文件夹，字符串，文件所在的文件夹。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,文件所在的存储名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName，string，文件所在的存储名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/WorksheetsController/PutInsertNewWorksheet\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

@@ -6,6 +6,7 @@ url: /sv/file/move/
 keywords: Learn how to download file with Aspose Cells Cloud REST API
 description: Lär dig hur du laddar ner filer med Aspose Cells Cloud REST API SDK-stöd för olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Flytta fil
 ---
 Denna REST API indikerar `move file`
  
@@ -20,7 +21,7 @@ PUT http://api.aspose.cloud/v3.0/cells/storage/file/move/{srcPath}
  
 | Parameternamn| Typ| Sökväg/Frågesträng/HTTPBody|Beskrivning|
 |:- |:- |:- |:- |
-| srcPath| sträng| väg| Källfilens sökväg t.ex. '/src.ext'|
+| srcPath| sträng| väg|Källfilens sökväg t.ex. '/src.ext'|
 | destPath| sträng| fråga| Destinationsfilens sökväg t.ex. '/dest.ext'|
 | srcStorageName| sträng| fråga| Källlagringsnamn|
 | destStorageName| sträng| fråga| Destinationslagringsnamn|

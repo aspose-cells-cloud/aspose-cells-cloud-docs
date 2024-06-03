@@ -4,6 +4,7 @@ type: docs
 url: /ru/charts/to-image/
 aliases: [/convert-chart-to-image/]
 weight: 50
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Преобразование диаграммы в изображение
 ---
 Этот REST API указывает, как преобразовать диаграмму в изображение.
  

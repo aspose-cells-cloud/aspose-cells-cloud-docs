@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/getworksheetautoshapes/
 description: Få beskrivning av autoformer i kalkylbladet
+kwords: Excel, Office, Spreadsheet, Cloud REST API, GetWorksheetAutoshapes
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetAutoshapes" >}}

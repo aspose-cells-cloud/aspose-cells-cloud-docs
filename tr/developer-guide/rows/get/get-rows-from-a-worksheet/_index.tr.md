@@ -8,6 +8,7 @@ aliases: [/get-row-from-a-worksheet/]
 keywords: Get rows info on an Excel workshee
 description: Aspose.Cells Cloud REST API, Excel çalışma sayfasında satır almayı destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 10
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel çalışma sayfasından satır bilgilerini alın
 ---
 Bu REST API, Excel çalışma sayfasındaki satır bilgilerinin alınacağını belirtir.
  
@@ -22,7 +23,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
  
 | Parametre adı| Tip| Yol/Sorgu Dizesi/HTTPBody|Tanım|
 |:- |:- |:- |:- |
-| isim| sicim| yol|Çalışma kitabı adı.|
+| isim| sicim| yol| Çalışma kitabı adı.|
 | sayfaAdı| sicim| yol| Çalışma sayfası adı.|
 | dosya| sicim| sorgu| Workdook klasörü.|
 | depolamaAdı| sicim| sorgu| depolama adı.|

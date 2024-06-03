@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/deleteworksheetconditionalformatting/
 description: Ta bort en villkorlig formatering
+kwords: Excel, Office, Kalkylblad, Cloud REST API, Ta bort ArbetsbladConditional Formatting
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetConditionalFormatting" >}}

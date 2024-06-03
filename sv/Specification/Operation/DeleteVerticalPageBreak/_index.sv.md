@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/deleteverticalpagebreak/
 description: Ta bort en vertikal sidbrytning i kalkylbladet
+kwords: Excel, Office, Kalkylblad, Cloud REST API, DeleteVerticalPageBreak
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteVerticalPageBreak" >}}

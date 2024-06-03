@@ -1,26 +1,27 @@
 ﻿---
-title: 后分割
+title: 后分裂
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/postsplit/
-description: 根据工作表拆分Excel电子表格文件并创建各种格式的输出文件
+description: 根据工作表拆分 Excel 电子表格文件并创建各种格式的输出文件
+kwords: Excel, Office, 电子表格, Cloud REST API, PostSplit
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostSplit" >}}
 {{< blocks/products/cells/docs-title titlemsg="Split Excel spreadsheet files based on worksheets and create output files in various formats." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/split,POST,Split Excel 基于工作表的电子表格文件并创建各种格式的输出文件。,<a href=\'https://apireference.aspose.cloud/cells/#/LightCells/PostSplit\'>PostSplit</一个>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/split,POST,根据工作表拆分 Excel 电子表格文件并创建各种格式的输出文件。,<a href=\'https://apireference.aspose.cloud/cells/#/LightCells/PostSplit\'>PostSplit</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="outFormat,字符串,输出数据文件格式。(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF /BMP/MD[Markdown]/数字）" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="密码,字符串,打开Excel文件所需的密码。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="outFormat，string，输出数据文件格式。(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="password，string，打开Excel文件所需的密码。" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="来自，整数，工作表索引" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="至，整数，工作表索引" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction,boolean,用户修改单元格相关对象时是否检查excel文件的限制。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="Region,string,工作簿的区域设置。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="至,整数,工作表索引" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction,boolean,当用户修改单元格相关对象时是否检查excel文件的限制。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="region，string，工作簿的区域设置。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/LightCellsController/PostSplit\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

@@ -1,13 +1,14 @@
 ﻿---
-title: 将 Excel 文件获取为其他格式
+title: 将 Excel 文件转换为其他格式
 second_title: Aspose.Cells Cloud Documen
-linktitle: 锗
+linktitle: 葛
 type: docs
 url: /zh/export-different-formats/
 aliases: [/export-excel-workbook-to-different-file-formats/]
 keywords: Get excel files to kinds of format files
-description: Aspose.Cells Cloud REST API 支持将excel文件转换为各种格式文件。 SDK支持多种开发语言。它们包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 swift
+description: Aspose.Cells Cloud REST API 支持将 excel 文件转换为各种格式的文件。SDK 支持各种开发语言。它们包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 swift
 weight: 10
+kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdwon、将 Excel 文件转换为其他格式
 ---
 此 REST API 表示将 `get` excel 文件转换为不同格式的文件。
 
@@ -16,11 +17,11 @@ weight: 10
 
 |参数名称|类型|描述|
 |:- |:- |:- |
-|格式|细绳|文件格式(csv/xls/html/mhtml/ods/pdf/xml/txt/tiff/xlsb/xlsm/xlsx/xltm/xltx/xps/png/jpg/gif/emf/bmp/md/Numbers/wmf/svg ）|
+|格式|细绳|文件格式(csv/xls/html/mhtml/ods/pdf/xml/txt/tiff/xlsb/xlsm/xlsx/xltm/xltx/xps/png/jpg/gif/emf/bmp/md/Numbers/wmf/svg)|
 |密码|细绳||
-|是自动调整|细绳|真假|
-|只保存表|细绳|真假|
-|输出路径|细绳|新文件位置。|
+|是否自动调整|细绳|真假|
+|仅保存表|细绳|真假|
+|输出路径|细绳|新的文件位置。|
 |文件夹|细绳|原始工作簿文件夹。|
 |存储名称|细绳|存储名称。|
 
@@ -28,14 +29,14 @@ weight: 10
 
 ## 休息 API
 
-|**API**|**类型**|**描述**|**招摇链接**|
+|**API**|**类型**|**描述**|**Swagger 链接**|
 |:- |:- |:- |:- |
-|/细胞/{名称}|得到|将工作簿导出为其他格式。|[获取工作簿](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)|
+|/单元格/{名称}|得到|将工作簿导出为其他格式。|[获取工作簿](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)|
 
 
-这[开放API规范](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)定义了一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
 
-您可以使用**cURL**命令行工具轻松访问 Aspose.Cells Web 服务。以下示例展示如何使用 cURL 呼叫云端 API。
+您可以使用**cURL**命令行工具可轻松访问 Aspose.Cells Web 服务。以下示例显示如何使用 cURL 调用云 API。
 
 
 {{< tabs tabTotal="1" tabID="11" tabName11="Request" >}}
@@ -51,9 +52,9 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/book1.xlsx?format=pdf" -H "acce
 
 {{< /tabs >}}
 
-## 云SDK系列
+## Cloud SDK 系列
 
-使用 SDK 是加快开发速度的最佳方式。 SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)有关 Aspose.Cells Cloud SDK 的完整列表。
+使用 SDK 是加快开发速度的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)获得 Aspose.Cells Cloud SDKs 的完整列表。
 
 以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
 

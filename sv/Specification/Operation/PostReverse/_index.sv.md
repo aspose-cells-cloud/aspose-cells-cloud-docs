@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/postreverse/
 description: Vänd om rader eller kolumner i Excel-filer och skapa utdatafiler i olika format
+kwords: Excel, Office, Kalkylblad, Cloud REST API, PostReverse
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostReverse" >}}

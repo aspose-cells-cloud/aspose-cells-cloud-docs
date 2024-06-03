@@ -1,13 +1,14 @@
 ﻿---
-title: Fügen Sie die Top 10 Elemente in einem Arbeitsblatt Excel hinzu
+title: Top 10-Elemente in ein Excel-Arbeitsblatt einfügen
 second_title: Aspose.Cells Cloud Documen
-linktitle: Top-10-Filter hinzufügen
+linktitle: Top 10 Filter hinzufügen
 type: docs
 url: /de/autofilter/add-top-10-filter/ 
 aliases: [/filter-the-top-10-items-in-the-list/, /autofilter/add-a-top-10-filter/ ]
 keywords: Adds a top10 filter on an Excel worksheet
-description: Die Aspose.Cells Cloud API unterstützt das Hinzufügen eines Top10-Filters zu einem Excel-Arbeitsblatt. Das SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
+description: Die Aspose.Cells Cloud API unterstützt das Hinzufügen eines Top10-Filters zu einem Excel-Arbeitsblatt. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
 weight: 65
+kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdwon, Top 10 Elemente in einem Excel Arbeitsblatt hinzufügen
 ---
 Dieser REST API gibt an, das Element `top 10` in der Liste zu filtern
  
@@ -22,21 +23,21 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/
  
 | Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
 |:- |:- |:- |:- |
-| Name| Zeichenfolge| Weg||
-| Blattname| Zeichenfolge| Weg||
-| Reichweite| Zeichenfolge| Abfrage||
-| fieldIndex| ganze Zahl| Abfrage||
-| ich halte an| Boolescher Wert| Abfrage||
-| isPercent| Boolescher Wert| Abfrage||
+| Name| Schnur| Weg||
+| Blattname| Schnur| Weg||
+| Reichweite| Schnur| Abfrage||
+| FeldIndex| ganze Zahl| Abfrage||
+| ich halte an|Boolescher Wert| Abfrage||
+| istProzent|Boolescher Wert| Abfrage||
 | Stückzahl| ganze Zahl| Abfrage||
-| matchBlanks| Boolescher Wert| Abfrage||
-| Aktualisierung| Boolescher Wert| Abfrage||
-| Ordner| Zeichenfolge| Abfrage||
-| Speichername| Zeichenfolge| Abfrage| Speichername.|
+| matchBlanks|Boolescher Wert| Abfrage||
+| Aktualisierung|Boolescher Wert| Abfrage||
+| Ordner| Schnur| Abfrage||
+| Speichername| Schnur| Abfrage| Speichername.|
  
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetFilterTop10) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht die Durchführung von REST-Interaktionen direkt über einen Webbrowser.
+ Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetFilterTop10) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen, REST-Interaktionen direkt von einem Webbrowser aus durchzuführen.
  
-Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie man mit cURL Anrufe zur Cloud API tätigt.
+Mit dem Befehlszeilentool cURL können Sie ganz einfach auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie Sie mit cURL Anrufe an Cloud API tätigen.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
@@ -74,9 +75,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFil
 
 ## Cloud SDK-Familie
  
- Die Verwendung eines SDK ist der beste Weg, die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte schauen Sie sich die an[GitHub-Repository](https://github.com/aspose-cells-cloud) Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie hier.
+ Die Verwendung eines SDK ist der beste Weg, um die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte lesen Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
  
-Die folgenden Codebeispiele veranschaulichen, wie Aspose.Cells-Webdienste mithilfe verschiedener SDKs aufgerufen werden:
+Die folgenden Codebeispiele zeigen, wie Sie mit verschiedenen SDKs Aufrufe an die Webdienste Aspose.Cells tätigen:
  
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" >}}
 

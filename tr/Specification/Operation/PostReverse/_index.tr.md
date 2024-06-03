@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/postreverse/
 description: Excel dosyalarındaki satırları veya sütunları ters çevirin ve çeşitli formatlarda çıktı dosyaları oluşturun
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PostReverse
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostReverse" >}}

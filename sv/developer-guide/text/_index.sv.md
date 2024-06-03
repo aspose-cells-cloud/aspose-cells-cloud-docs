@@ -7,6 +7,7 @@ aliases: [/working-with-text/]
 keywords: Get, find, and replace text from Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) files
 description: Aspose.Cells Cloud REST API stöd för att hämta, hitta och ersätta text från Excel-filer. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 34
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Text
 ---
 Text operate är en komplex process för Excel fie. Många faktorer bidrar till komplexiteten och bör därför beaktas under exportprocessen. Möjligheten att textstyra olika format och typer av data i filen med en exakt professionell kvalitet är en toppfunktion i Aspose.Cells Cloud.
 

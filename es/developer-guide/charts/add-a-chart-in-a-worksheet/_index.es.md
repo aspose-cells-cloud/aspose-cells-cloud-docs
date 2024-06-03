@@ -4,6 +4,7 @@ type: docs
 url: /es/charts/add/
 aliases: [/add-a-chart-in-a-worksheet/]
 weight: 20
+kwords: Excel, Office Cloud, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Agregar un gráfico en una hoja de trabajo
 ---
 Este REST API indica agregar un nuevo gráfico a la hoja de trabajo.
  
@@ -26,13 +27,13 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts
 | fila inferior derecha| entero| consulta|0 |
 | columna inferior derecha| entero| consulta|0 |
 | área| cadena| consulta| Especifica valores a partir de los cuales trazar la serie de datos.|
-| es vertical| booleano| consulta| Verdadero|
+| es vertical|booleano| consulta| Verdadero|
 | categoríaDatos| cadena| consulta| Obtiene o establece el rango de valores del eje de categoría. Puede ser un rango de celdas (como "d1:e10").|
-| esAutoGetSerialName| booleano| consulta| Verdadero|
+|esAutoGetSerialName|booleano| consulta| Verdadero|
 | título| cadena| consulta| Especifica el nombre del título del gráfico.|
 | carpeta| cadena| consulta| La carpeta del libro de trabajo.|
 | nombredealmacenamiento| cadena| consulta| nombre del almacenamiento.|
-|etiquetas de datos| booleano| consulta| Verdadero|
+| etiquetas de datos|booleano| consulta| Verdadero|
 | datosEtiquetasPosición| cadena| consulta| Arriba|
 | hoja de tabla dinámica| cadena| consulta||
 | nombre de tabla dinámica| cadena| consulta||

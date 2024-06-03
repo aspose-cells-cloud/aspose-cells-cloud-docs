@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/putworksheetformatconditioncondition/
 description: Ajouter une condition pour la condition de format dans la feuille de calcul
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PutWorksheetFormatConditionCondition
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetFormatConditionCondition" >}}

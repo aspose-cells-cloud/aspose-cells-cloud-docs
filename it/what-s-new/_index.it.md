@@ -7,6 +7,7 @@ weight: 5
 url: /it/what-s-new-in-aspose-cells-cloud/
 keywords: What's new in aspose cells cloud. Office Excel 2013,  Office Excel 2016,  Office Excel 2019，office Excel 365
 description: In questa pagina vengono descritte le novità più interessanti di Aspose.Cells Cloud introdotte nelle ultime versioni
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Novità in Aspose.Cells Cloud
 ---
 Benvenuti alle novità di Aspose.Cells Documenti cloud. Utilizza questa pagina per trovare rapidamente le ultime modifiche.
 
@@ -116,7 +117,7 @@ Benvenuti alle novità di Aspose.Cells Documenti cloud. Utilizza questa pagina p
 
 ## Aspose.Cells Nuvola 22.11
 
- Aggiungi nuova API per la conversione in JSON.
+ * Aggiungi nuova API per la conversione in JSON.
  * Aggiungi nuova API per la conversione in SQL.
  * Aggiunta nuova API per la conversione in cvs.
 
@@ -145,12 +146,12 @@ Benvenuti alle novità di Aspose.Cells Documenti cloud. Utilizza questa pagina p
 
 ## Aspose.Cells Nuvola 22.6
 
-* [Miglioramento per le API Cloud Cells.](/cells/aspose-cells-cloud-22-6-release-notes/)
+[Miglioramento per le API Cloud Cells.](/cells/aspose-cells-cloud-22-6-release-notes/)
 * Supporto per convertire i file nel pacchetto zip in tipi di formato.
 
 ## Aspose.Cells Nuvola 22.5
 
-[Miglioramento per l'esportazione API.](https://docs.aspose.cloud/cells/export/)
+* [Miglioramento per l'esportazione API.](https://docs.aspose.cloud/cells/export/)
 * [Miglioramento per clear API.](https://docs.aspose.cloud/cells/clear/)
 
 ## Aspose.Cells Nuvola 22.4

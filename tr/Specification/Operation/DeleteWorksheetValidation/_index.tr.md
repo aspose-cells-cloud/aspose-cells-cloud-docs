@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/deleteworksheetvalidation/
 description: Çalışma sayfasında dizine göre doğrulamayı silme
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, deleteWorksheetValidation
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetValidation" >}}

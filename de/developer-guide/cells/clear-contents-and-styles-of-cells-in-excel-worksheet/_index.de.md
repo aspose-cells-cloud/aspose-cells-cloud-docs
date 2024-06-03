@@ -3,8 +3,9 @@ title: Klare Inhalte und Stile von Cells im Arbeitsblatt Excel
 type: docs
 url: /de/clear-contents-and-styles-of-cells-in-excel-worksheet/
 weight: 50
+kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdwon, Inhalte und Stile von Cells in Excel Arbeitsblatt löschen
 ---
-Dieser REST API gibt `clear` Zellen `content` in einer Excel-Datei an.
+Dieser REST API zeigt `clear` Zellen `content` in einer Excel Datei an.
 
 ## RSET API
  
@@ -17,19 +18,19 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clea
  
 | Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
 |:- |:- |:- |:- |
-| Name| Zeichenfolge| Weg| Name der Arbeitsmappe.|
-| Blattname| Zeichenfolge| Weg| Arbeitsblattname.|
-| Reichweite| Zeichenfolge| Abfrage| Die Reichweite.|
-| startRow| ganze Zahl| Abfrage| Die Startreihe.|
-| startColumn| ganze Zahl| Abfrage| Die Startspalte.|
-| endRow| ganze Zahl| Abfrage| Die letzte Reihe.|
-| endColumn| ganze Zahl| Abfrage| Die Endspalte.|
-| Ordner| Zeichenfolge| Abfrage| Der Arbeitsmappenordner.|
-| Speichername| Zeichenfolge| Abfrage| Speichername.|
+| Name| Schnur| Weg| Name der Arbeitsmappe.|
+| Blattname| Schnur| Weg| Arbeitsblattname.|
+| Reichweite| Schnur| Abfrage| Die Reichweite.|
+| Startzeile| ganze Zahl| Abfrage| Die Startreihe.|
+| Startspalte| ganze Zahl| Abfrage| Die Startspalte.|
+| Zeilenende| ganze Zahl| Abfrage| Die Endreihe.|
+| Spaltenende| ganze Zahl| Abfrage| Die Endspalte.|
+| Ordner| Schnur| Abfrage| Der Arbeitsmappenordner.|
+| Speichername| Schnur| Abfrage| Speichername.|
  
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Cells/PostClearContents) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht die Durchführung von REST-Interaktionen direkt über einen Webbrowser.
+ Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Cells/PostClearContents) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen, REST-Interaktionen direkt von einem Webbrowser aus durchzuführen.
  
-Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie man mit cURL Anrufe zur Cloud API tätigt.
+Mit dem Befehlszeilentool cURL können Sie ganz einfach auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie Sie mit cURL Anrufe an Cloud API tätigen.
  
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
  
@@ -63,9 +64,9 @@ curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cell
  
 ## Cloud SDK-Familie
 
- Die Verwendung eines SDK ist der beste Weg, die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte schauen Sie sich die an[GitHub-Repository](https://github.com/aspose-cells-cloud) Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie hier.
+ Die Verwendung eines SDK ist der beste Weg, um die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte lesen Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
 
-Die folgenden Codebeispiele veranschaulichen, wie Aspose.Cells-Webdienste mithilfe verschiedener SDKs aufgerufen werden:
+Die folgenden Codebeispiele zeigen, wie Sie mit verschiedenen SDKs Aufrufe an die Webdienste Aspose.Cells tätigen:
 
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}

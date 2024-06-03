@@ -8,6 +8,7 @@ aliases: [/get-oleobject-from-a-worksheet/]
 keywords: Get an OLE object in an Excel worksheet
 description: Aspose.Cells Cloud REST API поддерживает получение объекта OLE на листе Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 10
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Получить объект OLE на листе Excel
 ---
 Этот REST API указывает на `get` и `OLE object` с форматом на листе Excel.
  

@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/model/ticklabels/
 description: "Aspose.Cells Especificación del modelo de nube: TickLabels. Maneje sin esfuerzo Excel y otros documentos de hoja de cálculo con funciones como abrir, generar, editar, dividir, fusionar, comparar y convertir."
+kwords: Excel, Office, Hoja de cálculo, Nube REST API, TickLabels
 weight: 50
 ---
 ## **tickEtiquetas**
 
- 
+ Representa las etiquetas de marca asociadas con las marcas de graduación en un eje de gráfico.
 
 | Nombre de la propiedad| tipo de propiedad| Anulable| Solo lectura| Valor por defecto| Descripción|
 |:- |:- |:- |:- |:- |:- |
@@ -20,9 +21,10 @@ weight: 50
 | FormatoNúmeroEnlazado| Booleano| Verdadero| FALSO|| Verdadero si el formato del número está vinculado a las celdas (de modo que el formato del número cambia en las etiquetas cuando cambia en las celdas).|
 | Compensar| Entero| Verdadero| FALSO|| Obtiene y establece la distancia de las etiquetas desde el eje.|
 | Ángulo de rotación| Entero| Verdadero| FALSO|| Representa el ángulo de rotación del texto en el sentido de las agujas del reloj.|
-| Dirección del texto| Cadena| Verdadero| FALSO|| Representa el orden de lectura del texto.|
-| Orden de lectura| Cadena| Verdadero| FALSO|| Representa el orden de lectura del texto.|
+| Dirección del texto| Cadena| Verdadero| FALSO||Representa el orden de lectura del texto.|
+| Orden de lectura| Cadena| Verdadero| FALSO||Representa el orden de lectura del texto.|
 | Tipo de dirección| Cadena| Verdadero| FALSO|| Obtiene y establece la dirección del texto.|
 | enlace| Clase: enlace| Verdadero| FALSO|||
 
-**Nombre del padre** : (ElementoEnlace)[elementoEnlace]
+**Nombre del padre** : [Elemento de enlace](/specification/model/linkelement)
+

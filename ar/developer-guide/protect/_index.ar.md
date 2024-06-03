@@ -7,6 +7,7 @@ url: /ar/protect/
 keywords: Protect and unprotect Excel workbook
 description: Aspose.Cells Cloud REST API دعم الحماية وفك الحماية Excel المصنف. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 36
+kwords: Excel، Office كلاود، ريست API، جدول بيانات، PDF، CSV، Json، Markdwon، حماية المصنف
 ---
 **كيفية حماية ملفات Excel.**
 

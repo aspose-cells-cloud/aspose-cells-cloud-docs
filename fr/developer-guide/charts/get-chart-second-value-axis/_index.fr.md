@@ -3,6 +3,7 @@ title:  Obtenir la deuxième valeur du graphique Axi
 type: docs
 url: /fr/charts/second-value-axis/get/
 weight: 60
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, obtenir le deuxième axe de valeur du graphique
 ---
  Ce REST API indique Obtenir le deuxième axe de valeur du graphique.
  
@@ -15,7 +16,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{cha
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin||
 | Nom de la feuille| chaîne| chemin||

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postfittalltopages/
 description: قم بتعيين المقياس الذي سيتم عنده احتواء الصفحة عند طباعتها على الورقة
+kwords: Excel, Office, جدول البيانات, Cloud REST API, PostFitTallToPages
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostFitTallToPages" >}}

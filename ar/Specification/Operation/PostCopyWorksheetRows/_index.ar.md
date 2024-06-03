@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postcopyworksheetrows/
 description: انسخ البيانات والتنسيقات من صفوف كاملة محددة في ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostCopyWorksheetRows
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostCopyWorksheetRows" >}}

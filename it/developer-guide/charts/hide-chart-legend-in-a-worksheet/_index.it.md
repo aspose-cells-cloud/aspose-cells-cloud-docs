@@ -4,6 +4,7 @@ type: docs
 url: /it/charts/legend/hide/
 aliases: [/hide-chart-legend-in-a-worksheet/]
 weight: 110
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Nascondi legenda del grafico in un foglio di lavoro
 ---
 Questo REST API indica la legenda nascosta nel grafico
  

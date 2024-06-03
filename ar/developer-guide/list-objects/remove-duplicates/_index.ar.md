@@ -7,6 +7,7 @@ keywords: list object(table) remove duplicates
 url: /ar/list-objects/remove-duplicates/
 description:  إزالة التكرارات في كائن القائمة.
 weight: 20
+kwords: Excel، Office Cloud، REST API، جدول البيانات، PDF، CSV، Json، Markdwon، كائن القائمة إزالة التكرارات
 ---
  يشير REST API إلى إزالة التكرارات في كائن القائمة.
 

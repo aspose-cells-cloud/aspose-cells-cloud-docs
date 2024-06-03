@@ -7,6 +7,7 @@ aliases: [/working-with-saveresult-task/]
 keywords: REST API, task, save result, spreadsheets, exce
 description: "Cells.Cloud API para Excel operar: tareas compatibles para guardar el resultado en contenido de respuesta o almacenamiento en la nube"
 weight: 50
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Trabajar con la tarea SaveResult
 ---
 ## DESCANSO API
 
@@ -17,7 +18,7 @@ weight: 50
 
  El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/Task/PostRunTask) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
 
- Puedes usar**cURL** Herramienta de línea de comandos para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
+ Puedes usar**cURL**Herramienta de línea de comandos para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
 
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}

@@ -8,8 +8,9 @@ aliases: [/create-excel-workbook-from-a-smartmarker-template/,/workbook/smartmar
 keywords: How to create an Excel workbook with a smart marker template
 description: Aspose.Cells Cloud REST API akıllı işaretleyici şablonuyla Excel çalışma kitabının nasıl oluşturulacağı. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 40
+kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Akıllı işaretleyici şablonuyla Excel çalışma kitabı nasıl oluşturulur
 ---
-Bu REST API, `smart marker` ile `workbook` oluşturulacağını gösterir.
+Bu REST API, `smart marker` ile `workbook` oluşturulacağını belirtir.
 
 **Sorgu Parametresi**
 
@@ -36,7 +37,7 @@ Bu REST API, `smart marker` ile `workbook` oluşturulacağını gösterir.
 
 [OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookGetSmartMarkerResult) herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
 
- Kullanabilirsiniz**cURL** Aspose.Cells web hizmetlerine kolayca erişmek için komut satırı aracı. Aşağıdaki örnekte, cURL ile Cloud API'e nasıl çağrı yapılacağı gösterilmektedir.
+ Kullanabilirsiniz**cURL**Aspose.Cells web hizmetlerine kolayca erişmek için komut satırı aracı. Aşağıdaki örnekte, cURL ile Cloud API'e nasıl çağrı yapılacağı gösterilmektedir.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 

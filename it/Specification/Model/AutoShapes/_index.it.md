@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/model/autoshapes/
 description: "Aspose.Cells Specifica del modello cloud: forme automatiche. Gestisci facilmente Excel e altri fogli di calcolo con funzionalità come apertura, generazione, modifica, divisione, unione, confronto e conversione"
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, Forme
 weight: 50
 ---
 ## **autoShapes**
@@ -15,4 +16,5 @@ weight: 50
 | Elenco forme automatiche| Contenitore| VERO| Falso|||
 | collegamento| Classe: collegamento| VERO| Falso|||
 
-**Nome del genitore** : (ElementoLink)[elementolink]
+**Nome del genitore** : [Elemento di collegamento](/specification/model/linkelement)
+

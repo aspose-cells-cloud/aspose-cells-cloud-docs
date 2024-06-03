@@ -4,6 +4,7 @@ type: docs
 url: /sv/charts/add/
 aliases: [/add-a-chart-in-a-worksheet/]
 weight: 20
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Lägg till ett diagram i ett kalkylblad
 ---
 Denna REST API indikerar att ett nytt diagram läggs till i arbetsbladet.
  
@@ -26,13 +27,13 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts
 | nedre högerrad| heltal| fråga|0 |
 | nedre högerkolumn| heltal| fråga|0 |
 | område| sträng| fråga| Anger värden från vilka dataserien ska plottas.|
-| är Vertikal| booleskt| fråga| Sann|
+| är Vertikal|booleskt| fråga| Sann|
 | kategoriData| sträng| fråga| Hämtar eller ställer in intervallet för kategoriaxelvärden. Det kan vara ett cellintervall (som "d1:e10").|
-| isAutoGetSerialName| booleskt| fråga| Sann|
+|isAutoGetSerialName|booleskt| fråga| Sann|
 | titel| sträng| fråga| Anger diagramtitelns namn.|
 | mapp| sträng| fråga| Arbetsboksmappen.|
 | lagringsnamn| sträng| fråga| lagringsnamn.|
-|dataetiketter| booleskt| fråga| Sann|
+| dataetiketter|booleskt| fråga| Sann|
 | dataLabelsPosition| sträng| fråga| Ovan|
 | pivotTableSheet| sträng| fråga||
 | pivottabellnamn| sträng| fråga||

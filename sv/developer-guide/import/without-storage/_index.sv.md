@@ -8,6 +8,7 @@ aliases: [/import-data-in-excel-worksheet-without-using-storage/]
 keywords: REST API,  spreadsheets, excel, Import
 description: Cells. Cloud API för Excel filimport
 weight: 10
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Importera data utan att använda lagring
 ---
 Excel dataimport är en komplex process. Många faktorer bidrar till komplexiteten och bör därför beaktas under exportprocessen. Möjligheten att importera typer av format och typer av data till filen med en exakt professionell kvalitet är en toppfunktion i Aspose.Cells Cloud.
 
@@ -26,7 +27,7 @@ POST https://api.aspose.cloud/v3.0/cells/import
 | Parameternamn| Typ| Sökväg/Frågesträng/HTTPBody|Beskrivning|
 |:- |:- |:- |:- |
 | fil| fil| formData| Fil att ladda upp|
-| Importalternativ| Importalternativ|HTTPBody| IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/Picture|
+| Importalternativ| Importalternativ| HTTPBody| IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/Picture|
 
 **Parametrarna för import av dataalternativ** beskrivs i[referenslänken](/cells/sv/import/#import-data-option-parameter).
 

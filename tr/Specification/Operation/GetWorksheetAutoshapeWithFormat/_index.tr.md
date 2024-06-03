@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/getworksheetautoshapewithformat/
 description: Bazı formatlarda otomatik şekil açıklamasını alın
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, GetWorksheetAutoshapeWithFormat
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetAutoshapeWithFormat" >}}

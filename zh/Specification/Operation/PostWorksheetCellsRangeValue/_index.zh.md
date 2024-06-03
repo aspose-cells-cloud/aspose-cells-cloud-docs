@@ -1,29 +1,30 @@
 ﻿---
-title: 后工作表单元格范围值
+title: 发布工作表单元格范围值
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/postworksheetcellsrangevalue/
-description: 给范围赋值；如有必要，该值将转换为另一种数据类型，并且单元格的数字格式将被重置
+description: 为范围分配一个值；如有必要，该值将转换为另一种数据类型，并且单元格的数字格式将被重置
+kwords: Excel，Office，电子表格，云 REST API，PostWorksheetCellsRangeValue
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangeValue" >}}
 {{< blocks/products/cells/docs-title titlemsg="Assign a value to the range; if necessary, the value will be converted to another data type, and the cell\'s number format will be reset." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges/value,POST,为范围赋值；如有必要，该值将转换为另一种数据类型，并且单元格的数字格式将被重置。<a href=\'https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeValue\'>PostWorksheetCellsRangeValue</一个>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges/value,POST,为范围分配一个值；如有必要，该值将转换为另一种数据类型，并重置单元格的数字格式。,<a href=\'https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeValue\'>PostWorksheetCellsRangeValue</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="参数名称、类型、描述" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="名称，字符串，文件名。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,字符串,工作表名称。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="name，string，文件名。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName，string，工作表名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="值，字符串，输入值。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="isConverted,boolean,True：如果合适，转换为其他数据类型。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="isConverted,boolean,True：如果合适，则转换为其他数据类型。" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="setStyle,boolean,True：转换为其他数据类型时，将数字格式设置为单元格的样式。" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="文件夹，字符串，原始工作簿文件夹。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="存储名称，字符串，存储名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName，string，存储名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="参数名称、类型、描述" >}}
     {{< blocks/products/cells/docs-Parameter-content columns=" range,class:range,工作表中的范围。" >}} 

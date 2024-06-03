@@ -1,30 +1,31 @@
 ﻿---
-title: PutWorksheetPivotTabl
+title: Arbeitsblatt einfügenPivotTabelle
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/putworksheetpivottable/
 description: Fügen Sie dem Arbeitsblatt eine PivotTable hinzu
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PutWorksheetPivotTable
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetPivotTable" >}}
 {{< blocks/products/cells/docs-title titlemsg="Add a PivotTable in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pivottables,PUT,Fügen Sie eine PivotTable zum Arbeitsblatt hinzu.,<a href=\'https://apireference.aspose.cloud/cells/#/PivotTables/PutWorksheetPivotTable\'>PutWorksheetPivotTable </a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pivottables,PUT,Fügen Sie dem Arbeitsblatt eine PivotTable hinzu.,<a href=\'https://apireference.aspose.cloud/cells/#/PivotTables/PutWorksheetPivotTable\'>PutWorksheetPivotTable</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="sourceData,string,Die Daten für den neuen PivotTable-Cache." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="destCellName,string,Die Zelle in der oberen linken Ecke des Zielbereichs für den PivotTable-Bericht." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="tableName,string,Der Name der neuen PivotTable." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="useSameSource,boolean,Gibt an, ob dieselbe Datenquelle verwendet wird, wenn eine andere vorhandene PivotTable diese Datenquelle verwendet hat. Wenn die Eigenschaft wahr ist, wird Speicherplatz gespart." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Quelldaten, Zeichenfolge, Die Daten für den neuen PivotTable-Cache." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="destCellName, Zeichenfolge, Die Zelle in der oberen linken Ecke des Zielbereichs für den PivotTable-Bericht." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="tableName, string, Der Name der neuen PivotTable." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="useSameSource, boolean, Gibt an, ob dieselbe Datenquelle verwendet wird, wenn eine andere vorhandene PivotTable diese Datenquelle verwendet hat. Wenn die Eigenschaft „true“ ist, wird Speicher gespart." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/PivotTablesController/PutWorksheetPivotTable\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

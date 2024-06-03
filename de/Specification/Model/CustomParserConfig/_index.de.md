@@ -1,18 +1,19 @@
 ﻿---
-title: CustomParserConfi
+title: BenutzerdefinierteParserConfi
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/model/customparserconfig/
-description: "Aspose.Cells Cloud-Modellspezifikation: CustomParserConfig. Bearbeiten Sie mühelos Excel und andere Tabellenkalkulationsdokumente mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+description: "Aspose.Cells Cloud-Modellspezifikation: CustomParserConfig. Müheloses Bearbeiten von Excel und anderen Tabellenkalkulationsdokumenten mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, CustomParserConfig
 weight: 50
 ---
-## **customParserConfig**
+## **benutzerdefinierteParserConfig**
 
  
 
-| Name des Anwesens| Art der Immobilie| Nullbar| Schreibgeschützt| Standardwert| Beschreibung|
+| Name des Anwesens| Art der Immobilie| Nullwerte zulassen| Schreibgeschützt| Standardwert| Beschreibung|
 |:- |:- |:- |:- |:- |:- |
-| ColumnIndex| Ganze Zahl| WAHR| FALSCH|| Punktsäule|
-| ParseMethod| Zeichenfolge| WAHR| FALSCH|| Datenparser-Methode. ToDateTime ToString|
-| CustomStyle| Zeichenfolge| WAHR| FALSCH|||
+| Spaltenindex| Ganze Zahl| WAHR| FALSCH|| Punktspalte|
+| ParseMethod| Zeichenfolge| WAHR| FALSCH||Datenparsermethode. ToDateTime ToString|
+| Benutzerdefinierter Stil| Zeichenfolge| WAHR| FALSCH|||
 

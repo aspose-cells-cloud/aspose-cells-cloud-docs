@@ -8,6 +8,7 @@ aliases: [/unprotect-excel-workbooks/]
 keywords: REST API, spreadsheets, excel, merg
 description: "Cells.Cloud API, Excel için çalışır: Excel çalışma kitabını korur"
 weight: 60
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel çalışma kitabının korumasını kaldır
 ---
 Bu REST API, Excel `workbook`'in korumasını kaldırır.
 
@@ -40,7 +41,7 @@ Bu REST API, Excel `workbook`'in korumasını kaldırır.
 
 [OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Workbook/DeleteUnProtectDocument) herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
 
- Kullanabilirsiniz**cURL** Aspose.Cells web hizmetlerine kolayca erişmek için komut satırı aracı. Aşağıdaki örnekte, cURL ile Cloud API'e nasıl çağrı yapılacağı gösterilmektedir.
+ Kullanabilirsiniz**cURL**Aspose.Cells web hizmetlerine kolayca erişmek için komut satırı aracı. Aşağıdaki örnekte, cURL ile Cloud API'e nasıl çağrı yapılacağı gösterilmektedir.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 

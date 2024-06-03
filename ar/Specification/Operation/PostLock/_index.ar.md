@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postlock/
 description: قفل Excel الملفات
+kwords: Excel, Office, جدول البيانات, Cloud REST API, PostLock
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostLock" >}}

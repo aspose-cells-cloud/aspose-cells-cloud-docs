@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/getworksheetpivottable/
 description: Recuperare le informazioni della tabella pivot in base all'indice nel foglio di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, Ottieni tabella pivot foglio di lavoro
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetPivotTable" >}}

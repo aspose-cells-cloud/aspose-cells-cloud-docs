@@ -7,6 +7,7 @@ aliases: [/working-with-workbook/]
 keywords: Working with workbook on an Excel file
 description: Aspose.Cells Cloud REST API stöd för att arbeta med arbetsbok på en Excel-fil. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 100
+kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdwon, Arbetsbok
 ---
 ## Arbeta med en Excel arbetsbok.
 

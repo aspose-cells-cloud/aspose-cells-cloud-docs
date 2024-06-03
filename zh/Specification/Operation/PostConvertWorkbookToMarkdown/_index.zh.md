@@ -1,23 +1,24 @@
 ﻿---
-title: 将工作簿后转换为 Markdow
+title: PostConvertWorkbookToMarkdow
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/postconvertworkbooktomarkdown/
 description: 将 Excel 文件转换为 Markdown 文件
+kwords: Excel，Office，电子表格，云 REST API，PostConvertWorkbookToMarkdown
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostConvertWorkbookToMarkdown" >}}
 {{< blocks/products/cells/docs-title titlemsg="Convert Excel file to Markdown files." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="/cells/convert/markdown,POST,将 Excel 文件转换为 Markdown 文件。,<a href=\'https://apireference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToMarkdown\'>PostConvertWorkbookToMarkdown</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="密码,字符串,打开Excel文件所需的密码。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction,boolean,用户修改单元格相关对象时是否检查excel文件的限制。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="Region,string,工作簿的区域设置。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="password，string，打开Excel文件所需的密码。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction,boolean,当用户修改单元格相关对象时是否检查excel文件的限制。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="region，string，工作簿的区域设置。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/ConversionController/PostConvertWorkbookToMarkdown\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

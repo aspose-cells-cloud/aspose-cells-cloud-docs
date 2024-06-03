@@ -7,8 +7,9 @@ keywords: Range Sort
 url: /sv/ranges/sort/
 description:  Anger konturkant runt ett cellintervall.
 weight: 20
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Range Sort
 ---
-Denna REST API indikerar intervallsortering.
+ Denna REST API indikerar intervallsortering.
 
 ## RSET API
 

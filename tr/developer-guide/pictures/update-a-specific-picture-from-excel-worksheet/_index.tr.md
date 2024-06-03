@@ -8,6 +8,7 @@ aliases: [/update-a-specific-picture-from-excel-workshee/]
 keywords: Update a picture in an Excel file
 description: Aspose.Cells Cloud REST API, Excel dosyasındaki bir resmin güncellenmesini destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 70
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel dosyasındaki resmi güncelle
 ---
 Bu REST API, Excel çalışma sayfası için fiyat endeksine göre `update` resme işaret eder.
  

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/postworkbookdatacleansing/
 description: La pulizia dei dati dei file dei fogli di calcolo è un processo di gestione dei dati utilizzato per identificare, correggere e rimuovere errori, incompletezze, duplicati o imprecisioni nelle tabelle e negli intervalli
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PostWorkbookDataCleansing
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookDataCleansing" >}}
@@ -20,7 +21,7 @@ weight: 50
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Nome parametro, Tipo, Descrizione" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="cartella,stringa,La cartella in cui si trova il file." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Il nome dell\'archivio in cui si trova il file." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns=" password,stringa,La password del file." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="password,stringa,La password del file." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="regione,string,Impostazioni internazionali per la cartella di lavoro." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction,booleano," >}} 
 {{< /blocks/products/cells/docs-Parameter >}}

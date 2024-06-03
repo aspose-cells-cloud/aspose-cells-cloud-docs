@@ -6,8 +6,9 @@ type: docs
 url: /tr/autofilter/match-all-non-blank/
 aliases: [/match-all-non-blank-cells-in-the-list/]
 keywords: Match all not blank cells in the filter list on an Excel worksheet
-description: Aspose.Cells Bulut API, bir Excel çalışma sayfasındaki filtre listesindeki boş olmayan tüm hücrelerin eşleştirilmesini destekler. SDK, geliştirme dilleri türlerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
+description: Aspose.Cells Bulut API, Excel çalışma sayfasındaki filtre listesindeki boş olmayan tüm hücrelerin eşleştirilmesini destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 100
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel çalışma sayfasında boş olmayan tüm hücreleri eşleştir
 ---
 Bu REST API, Excel çalışma sayfasındaki listedeki `match`'in tamamını `not blank cell`'i gösterir.
             

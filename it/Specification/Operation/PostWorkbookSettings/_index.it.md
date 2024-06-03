@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/postworkbooksettings/
 description: Aggiorna l'impostazione nella cartella di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, Impostazioni cartella postlavoro
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookSettings" >}}

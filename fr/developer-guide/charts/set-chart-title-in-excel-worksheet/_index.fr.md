@@ -4,6 +4,7 @@ type: docs
 url: /fr/chart/title/add/
 aliases: [/set-chart-title-in-excel-worksheet/]
 weight: 30
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, définir le titre du graphique dans la feuille de calcul Excel
 ---
 Ce REST API indique l'ajout du titre du graphique/définir le titre du graphique visible
  
@@ -16,7 +17,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{cha
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Nom du classeur.|
 | Nom de la feuille| chaîne| chemin| Nom de la feuille de calcul.|

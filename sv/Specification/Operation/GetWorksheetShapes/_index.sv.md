@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/getworksheetshapes/
 description: Hämta beskrivningar av former i arbetsbladet
+kwords: Excel, Office, Spreadsheet, Cloud REST API, GetWorksheetShapes
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetShapes" >}}

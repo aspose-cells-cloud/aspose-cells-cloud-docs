@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/postworksheetcomment/
 description: Aggiorna il commento della cella nel foglio di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PostWorksheetCommento
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetComment" >}}

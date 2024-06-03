@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/deletedecryptworkbook/
 description: Excel dosyaların şifresini çözme
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, SilDecryptWorkbook
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteDecryptWorkbook" >}}

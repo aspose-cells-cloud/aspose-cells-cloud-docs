@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/model/pivottable/
 description: "Aspose.Cells Specifica del modello cloud: tabella pivot. Gestisci facilmente Excel e altri fogli di calcolo con funzionalità come apertura, generazione, modifica, divisione, unione, confronto e conversione"
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, Tabella pivot
 weight: 50
 ---
 ## **tabella pivot**
 
- 
+ Descrizione riepilogativa della tabella pivot.
 
 | Nome della proprietà| Tipo di proprietà| Nullabile| Sola lettura| Valore di default| Descrizione|
 |:- |:- |:- |:- |:- |:- |
@@ -31,7 +32,7 @@ weight: 50
 | Abilita modifica valore dati| Booleano| VERO| Falso|||
 | AbilitaDrilldown| Booleano| VERO| Falso|||
 | EnableFieldDialog| Booleano| VERO| Falso|||
-|EnableFieldList| Booleano| VERO| Falso|||
+| EnableFieldList| Booleano| VERO| Falso|||
 | EnableWizard| Booleano| VERO| Falso|||
 | ErrorString| Corda| VERO| Falso|||
 | FieldListOrdinamentoAscending| Booleano| VERO| Falso|||
@@ -44,9 +45,9 @@ weight: 50
 | È selezionato| Booleano| VERO| Falso|||
 | ItemPrintTitles| Booleano| VERO| Falso|||
 | Aggiornamento manuale| Booleano| VERO| Falso|||
-| Unisci etichette| Booleano| VERO| Falso|||
+|Unisci etichette| Booleano| VERO| Falso|||
 | Limite elementi mancanti| Corda| VERO| Falso|||
-| Nome| Corda| VERO| Falso|||
+| Nome| Corda| VERO| Falso||Rappresenta il nome della tabella pivot.|
 | NullString| Corda| VERO| Falso|||
 | Ordine campo pagina| Corda| VERO| Falso|||
 | Campi di pagina| Contenitore| VERO| Falso|||
@@ -78,8 +79,9 @@ weight: 50
 | Mostra riga valori| Booleano| VERO| Falso|||
 | SubtotaleElementiPaginaNascosti| Booleano| VERO| Falso|||
 | TabellaIntervallo1| Classe:CellArea| VERO| Falso|||
-|TabellaIntervallo2| Classe:CellArea| VERO| Falso|||
+| TabellaIntervallo2| Classe:CellArea| VERO| Falso|||
 | Etichetta| Corda| VERO| Falso|||
 | collegamento| Classe: collegamento| VERO| Falso|||
 
-**Nome del genitore** : (ElementoLink)[elementolink]
+**Nome del genitore** : [Elemento di collegamento](/specification/model/linkelement)
+

@@ -4,13 +4,14 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/deleteworksheetcellsrange/
 description: Удалить диапазон ячеек и сдвинуть существующие ячейки на основе указанного параметра сдвига.
+kwords: Excel, Office, электронная таблица, Cloud REST API, DeleteWorksheetCellsRange
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetCellsRange" >}}
 {{< blocks/products/cells/docs-title titlemsg="Delete a range of cells and shift existing cells based on the specified shift option." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Описание,ссылка API" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges,DELETE,Удалить диапазон ячеек и сдвинуть существующие ячейки на основе указанного параметра сдвига.,<a href=\'https://apireference.aspose.cloud/cells /#/Ranges/DeleteWorksheetCellsRange\'>DeleteWorksheetCellsRange</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges,DELETE,Удалить диапазон ячеек и сдвинуть существующие ячейки в соответствии с указанным параметром сдвига.,<a href=\'https://apireference.aspose.cloud/cells /#/Ranges/DeleteWorksheetCellsRange\'>DeleteWorksheetCellsRange</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

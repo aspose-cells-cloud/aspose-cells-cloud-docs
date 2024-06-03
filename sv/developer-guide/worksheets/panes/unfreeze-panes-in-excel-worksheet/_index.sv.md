@@ -8,6 +8,7 @@ aliases: [/unfreeze-panes-in-excel-worksheet/,/worksheets/unfreeze-panes/]
 keywords: Unfreeze panes on an Excel worksheet
 description: Aspose.Cells Cloud REST API stöder upplåsning av rutor på ett Excel-kalkylblad. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 200
+kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdwon, Lås upp rutor på ett Excel kalkylblad
 ---
 Detta REST API indikerar `unfreeze panes` på Excel arbetsblad.
  

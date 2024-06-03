@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postautofitworkbookrows/
 description: Автоподбор строк в книге
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostAutofitWorkbookRows
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostAutofitWorkbookRows" >}}

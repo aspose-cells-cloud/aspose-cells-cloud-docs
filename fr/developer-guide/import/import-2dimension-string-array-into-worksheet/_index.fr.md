@@ -1,13 +1,14 @@
 ﻿---
-title: Importer un tableau de chaînes à 2 dimensions dans la feuille de calcul Excel
+title: Importer un tableau de chaînes à 2 dimensions dans la feuille de travail Excel
 second_title: Aspose.Cells Cloud Documen
 linktitle: Importer un tableau de chaînes à 2 dimensions
 type: docs
 url: /fr/import/2dimension-string-array/
 aliases: [/import-2dimension-string-array-into-excel-worksheet/,/import-2dimension-string-array-into-worksheet/,/import-data/-2dimension-string-array/,/import-data/2dimension-string-array/]
 keywords: Import 2 dimension string array data into Excel files
-description: Aspose.Cells Cloud REST API prend en charge l'importation de données de tableau de chaînes à 2 dimensions dans des fichiers Excel. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
+description: Aspose.Cells Cloud REST API prend en charge l'importation de données de tableaux de chaînes à 2 dimensions dans des fichiers Excel. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 20
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, importer un tableau de chaînes à 2 dimensions dans une feuille de calcul Excel
 ---
 Ce REST API `import 2 dimension string array data` dans la feuille de travail Excel.
 

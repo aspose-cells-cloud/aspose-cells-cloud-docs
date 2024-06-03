@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/putchangevisibilityworksheet/
 description: Modifier la visibilité de la feuille de calcul dans le classeur
+kwords: Excel, Office, feuille de calcul, Cloud REST API, feuille de travail PutChangeVisibility
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutChangeVisibilityWorksheet" >}}

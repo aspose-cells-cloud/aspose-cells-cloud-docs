@@ -1,32 +1,33 @@
 ﻿---
-title: 发布数据透视表字段隐藏项目
+title: 发布数据透视表字段隐藏项
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/postpivottablefieldhideitem/
 description: 隐藏数据透视表中的数据透视字段项
+kwords: Excel, Office, 电子表格, Cloud REST API, PostPivotTableFieldHideItem
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostPivotTableFieldHideItem" >}}
 {{< blocks/products/cells/docs-title titlemsg="Hide a pivot field item in the PivotTable." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotField/Hide,POST,隐藏数据透视表中的数据透视字段项。,<a href=\'https://apireference.aspose.cloud/单元格/#/PivotTables/PostPivotTableFieldHideItem\'>PostPivotTableFieldHideItem</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotField/Hide,POST,隐藏数据透视表中的数据透视表字段项。,<a href=\'https://apireference.aspose.cloud/cells/#/PivotTables/PostPivotTableFieldHideItem\'>PostPivotTableFieldHideItem</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="参数名称、类型、描述" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="名称，字符串，文件名。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,字符串,工作表名称。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="hubTableIndex,整数,数据透视表索引。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="name，string，文件名。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName，string，工作表名称。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="pivotTableIndex，整数，数据透视表索引。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="ivotFieldType,string,表示数据透视表字段类型（未定义/行/列/页/数据）。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="fieldIndex,integer,主元字段索引。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="itemIndex,integer,数据透视项在数据透视字段中的索引。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="isHide,boolean,是否隐藏特定的 PivotItem(true/false)。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="needReCalculate,boolean,是否对特定数据透视表进行计算(true/false)。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="pivotFieldType，string，表示数据透视表字段类型（未定义/行/列/页/数据）。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="fieldIndex，整数，枢轴字段索引。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="itemIndex，整数，数据透视表字段中数据透视表项的索引。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="isHide，boolean，特定PivotItem是否隐藏（true/false）。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="needReCalculate,boolean,特定数据透视表是否计算（true/false）。" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="文件夹，字符串，文件所在的文件夹。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,文件所在的存储名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName，string，文件所在的存储名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/PivotTablesController/PostPivotTableFieldHideItem\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

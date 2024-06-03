@@ -1,28 +1,29 @@
 ﻿---
-title: PostWorksheetTextReplace
+title: PostWorksheetTextReplac
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postworksheettextreplace/
 description: Ersetzen Sie alten Text durch neuen Text im Arbeitsblatt
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostWorksheetTextReplace
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetTextReplace" >}}
 {{< blocks/products/cells/docs-title titlemsg="Replace old text with new text in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/replaceText,POST,Ersetzen Sie alten Text durch neuen Text im Arbeitsblatt.,<a href=\'https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetTextReplace \'>PostWorksheetTextReplace</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/replaceText,POST,Alten Text im Arbeitsblatt durch neuen Text ersetzen.,<a href=\'https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetTextReplace\'>PostWorksheetTextReplace</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Arbeitsblattname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Blattname, Zeichenfolge, Arbeitsblattname." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="oldValue,string,Der alte Text, der ersetzt werden soll." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="newValue,string,Der neue Text, durch den ersetzt werden soll." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="oldValue, string, Der alte zu ersetzende Text." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="newValue, string, Der neue Text, durch den ersetzt werden soll." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/WorksheetsController/PostWorksheetTextReplace\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

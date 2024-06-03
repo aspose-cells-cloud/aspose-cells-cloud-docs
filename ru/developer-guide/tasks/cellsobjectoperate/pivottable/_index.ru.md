@@ -7,6 +7,7 @@ aliases: [/working-with-pivot-table-using-cellsobjectoperate-task/]
 keywords: REST API, pivot table, spreadsheets, exce
 description: "Cells.Облако API для Excel работает: создайте сводную таблицу с помощью задачи CellsObjectOperate."
 weight: 10
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Работа со сводной таблицей с использованием задачи CellsObjectOperate
 ---
 Этот REST API создает `pivot table` с использованием объекта ячеек, работающего `task`.
 
@@ -22,7 +23,7 @@ weight: 10
 | Индекс сводной таблицы| целое число||
 | PivotFieldRows|целое число[]||
 | PivotFieldСтолбцы|целое число[]||
-|PivotFieldData|целое число[]||
+| PivotFieldData|целое число[]||
 
 
 ## ОТДЫХ API
@@ -33,7 +34,7 @@ weight: 10
 
 [Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData) определяет общедоступный интерфейс программирования и позволяет выполнять взаимодействие с REST непосредственно из веб-браузера.
 
- Вы можете использовать**cURL** инструмент командной строки для легкого доступа к веб-службам Aspose.Cells. В следующем примере показано, как позвонить на Cloud API с помощью cURL.
+ Вы можете использовать**cURL**инструмент командной строки для легкого доступа к веб-службам Aspose.Cells. В следующем примере показано, как позвонить на Cloud API с помощью cURL.
 
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}

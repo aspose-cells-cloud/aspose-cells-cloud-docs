@@ -6,6 +6,7 @@ url: /ru/storage/exist/
 keywords: Learn how to check storage exist with Aspose Cells Cloud REST API
 description: Узнайте, как проверить наличие хранилища с помощью Aspose Cells Cloud REST API SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 100
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, хранилище существует
 ---
 Этот REST API указывает на проверку `storage exists`.
  

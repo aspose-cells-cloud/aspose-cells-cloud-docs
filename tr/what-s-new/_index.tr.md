@@ -7,6 +7,7 @@ weight: 5
 url: /tr/what-s-new-in-aspose-cells-cloud/
 keywords: What's new in aspose cells cloud. Office Excel 2013,  Office Excel 2016,  Office Excel 2019，office Excel 365
 description: Bu sayfada son sürümlerde sunulan en ilginç yeni Aspose.Cells Bulut özellikleri açıklanmaktadır
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Aspose.Cells Cloud'daki yenilikler
 ---
 Aspose.Cells Bulut belgelerindeki yeniliklere hoş geldiniz. En son değişiklikleri hızla bulmak için bu sayfayı kullanın.
 
@@ -116,7 +117,7 @@ Aspose.Cells Bulut belgelerindeki yeniliklere hoş geldiniz. En son değişiklik
 
 ## Aspose.Cells Bulut 22.11
 
- Json'a dönüştürmek için yeni API ekleyin.
+ * Json'a dönüştürmek için yeni API ekleyin.
  * Sql'ye dönüştürmek için yeni API ekleyin.
  * CVS'ye dönüştürmek için yeni API ekleyin.
 
@@ -145,12 +146,12 @@ Aspose.Cells Bulut belgelerindeki yeniliklere hoş geldiniz. En son değişiklik
 
 ## Aspose.Cells Bulut 22.6
 
-* [Cells Bulut API'leri için iyileştirme.](/cells/aspose-cells-cloud-22-6-release-notes/)
+[Cells Bulut API'leri için iyileştirme.](/cells/aspose-cells-cloud-22-6-release-notes/)
 * Zip paketindeki dosyaları format türlerine dönüştürme desteği.
 
 ## Aspose.Cells Bulut 22,5
 
-[Dışa aktarma için iyileştirme API.](https://docs.aspose.cloud/cells/export/)
+* [Dışa aktarma için iyileştirme API.](https://docs.aspose.cloud/cells/export/)
 * [Clear API için iyileştirme.](https://docs.aspose.cloud/cells/clear/)
 
 ## Aspose.Cells Bulut 22.4

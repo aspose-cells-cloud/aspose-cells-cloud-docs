@@ -4,13 +4,14 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/postimport/
 description: Verileri Excel dosyasına aktarın ve çeşitli formatlarda çıktı dosyaları oluşturun
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PostImport
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostImport" >}}
 {{< blocks/products/cells/docs-title titlemsg="Import data into an Excel file and generate output files in various formats." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Açıklama,API referans" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/import,POST,Verileri bir Excel dosyasına aktarın ve çeşitli formatlarda çıktı dosyaları oluşturun.,<a href=\'https://apireference.aspose.cloud/cells/#/LightCells/PostImport\'>PostImport</a >" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/import,POST,Verileri Excel dosyasına aktarın ve çeşitli formatlarda çıktı dosyaları oluşturun.,<a href=\'https://apireference.aspose.cloud/cells/#/LightCells/PostImport\'>PostImport</a >" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

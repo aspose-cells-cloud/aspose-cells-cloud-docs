@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/model/hyperlink/
 description: "Aspose.Cells Especificación del modelo de nube: hipervínculo. Maneje sin esfuerzo Excel y otros documentos de hoja de cálculo con funciones como abrir, generar, editar, dividir, fusionar, comparar y convertir."
+kwords: Excel, Office, hoja de cálculo, nube REST API, hipervínculo
 weight: 50
 ---
 ## **Hipervínculo**
 
- 
+ Encapsula el objeto que representa un hipervínculo.
 
 | Nombre de la propiedad| tipo de propiedad| Anulable| Solo lectura| Valor por defecto| Descripción|
 |:- |:- |:- |:- |:- |:- |
@@ -19,4 +20,5 @@ weight: 50
 | Tipo de enlace| Cadena| Verdadero| FALSO|| Obtiene el tipo de vínculo.|
 | enlace| Clase: enlace| Verdadero| FALSO|||
 
-**Nombre del padre** : (ElementoEnlace)[elementoEnlace]
+**Nombre del padre** : [Elemento de enlace](/specification/model/linkelement)
+

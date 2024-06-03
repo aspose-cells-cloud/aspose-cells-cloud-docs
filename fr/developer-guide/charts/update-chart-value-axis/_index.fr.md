@@ -3,6 +3,7 @@ title:  Mettre à jour l'axe de la valeur du graphique
 type: docs
 url: /fr/charts/value-axis/update/
 weight: 160
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, mise à jour de l'axe des valeurs du graphique
 ---
  Ce REST API indique Mettre à jour l’axe des valeurs du graphique.
  
@@ -15,7 +16,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{ch
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin||
 | Nom de la feuille| chaîne| chemin||

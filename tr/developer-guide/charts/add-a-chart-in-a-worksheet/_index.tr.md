@@ -4,6 +4,7 @@ type: docs
 url: /tr/charts/add/
 aliases: [/add-a-chart-in-a-worksheet/]
 weight: 20
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Çalışma Sayfasına Grafik Ekleme
 ---
 Bu REST API, çalışma sayfasına yeni bir grafik eklendiğini gösterir.
  
@@ -26,13 +27,13 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts
 | altSağSatır| tamsayı| sorgu|0 |
 | altSağ Sütun| tamsayı| sorgu|0 |
 | alan| sicim| sorgu| Veri serisinin grafiğinin çizileceği değerleri belirtir.|
-| Dikey| boolean| sorgu| Doğru|
+| Dikey|boolean| sorgu| Doğru|
 | kategoriVeri| sicim| sorgu| Kategori Eksen değerlerinin aralığını alır veya ayarlar. Bir dizi hücre olabilir ("d1:e10" gibi).|
-| isAutoGetSerialName| boolean| sorgu| Doğru|
+|isAutoGetSerialName|boolean| sorgu| Doğru|
 | başlık| sicim| sorgu| Grafik başlığı adını belirtir.|
 | dosya| sicim| sorgu| Çalışma kitabı klasörü.|
 | depolamaAdı| sicim| sorgu| depolama adı.|
-|veri etiketleri| boolean| sorgu| Doğru|
+| veri etiketleri|boolean| sorgu| Doğru|
 | veriEtiketlerKonum| sicim| sorgu| Üstünde|
 | pivotTableSheet| sicim| sorgu||
 | pivotTableAdı| sicim| sorgu||

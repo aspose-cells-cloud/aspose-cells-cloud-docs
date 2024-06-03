@@ -8,6 +8,7 @@ aliases: [/copy-columns-in-excel-worksheet/,/copy-columns-in-an-excel-worksheet/
 keywords: Copy column on an Excel workshee
 description: Aspose.Cells Cloud REST API supporta la copia della colonna su un foglio di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 30
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Copia colonne su un foglio di lavoro Excel
 ---
 Questo REST API copia `columns` in un foglio di lavoro Excel.
 
@@ -22,17 +23,17 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/colu
  
 | Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
 |:- |:- |:- |:- |
-| nome| corda| sentiero|Il nome della cartella di lavoro.|
+| nome| corda| sentiero| Il nome della cartella di lavoro.|
 | nomefoglio| corda| sentiero| Il nome del foglio di lavoro.|
 | sourceColumnIndex| numero intero| domanda| Indice della colonna di origine|
-|destinazioneColumnIndex| numero intero| domanda| Indice della colonna di destinazione|
+| destinazioneColumnIndex| numero intero| domanda| Indice della colonna di destinazione|
 | colonnaNumero| numero intero| domanda| Il numero della colonna copiata|
 | foglio di lavoro| corda| domanda||
 | cartella| corda| domanda| La cartella documenti.|
 
  IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostCopyWorksheetColumns) definisce un'interfaccia di programmazione accessibile pubblicamente e consente di eseguire interazioni REST direttamente da un browser web.
 
- Puoi usare**cURL** strumento da riga di comando per accedere facilmente ai servizi web Aspose.Cells. Nell'esempio seguente viene illustrato come effettuare chiamate al Cloud API con cURL.
+ Puoi usare**cURL**strumento da riga di comando per accedere facilmente ai servizi web Aspose.Cells. Nell'esempio seguente viene illustrato come effettuare chiamate al Cloud API con cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 

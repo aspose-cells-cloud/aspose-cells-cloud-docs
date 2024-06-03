@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/postworkbooksmerge/
 description: Unire una cartella di lavoro nella cartella di lavoro esistente
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PostWorkbooksUnisci
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbooksMerge" >}}

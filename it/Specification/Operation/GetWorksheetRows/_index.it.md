@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/getworksheetrows/
 description: Recuperare le descrizioni delle righe nel foglio di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, GetWorksheetRows
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetRows" >}}

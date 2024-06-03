@@ -4,6 +4,7 @@ type: docs
 url: /es/charts/propreties/update/
 aliases: [/update-chart-propreties/]
 weight: 160
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Actualizar propiedades de gráfico
 ---
 Este REST API indica las propiedades del gráfico de actualización
  

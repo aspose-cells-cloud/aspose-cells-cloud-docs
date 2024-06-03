@@ -1,26 +1,27 @@
 ﻿---
-title: GetDocumentPropert
+title: Dokumenteigenschaft abrufen
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/getdocumentproperty/
-description: Holen Sie sich die Eigenschaft Excel nach Namen
+description: Holen Sie sich die Immobilie Excel nach Namen
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, GetDocumentProperty
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetDocumentProperty" >}}
 {{< blocks/products/cells/docs-title titlemsg="Get Excel property by name." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/documentproperties/{propertyName},GET,Get Excel Eigenschaft nach Namen.,<a href=\'https://apireference.aspose.cloud/cells/#/Properties/GetDocumentProperty\'>GetDocumentProperty</a >" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/documentproperties/{propertyName},GET,Eigenschaft Excel nach Namen abrufen.,<a href=\'https://apireference.aspose.cloud/cells/#/Properties/GetDocumentProperty\'>GetDocumentProperty</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Name der Arbeitsmappe." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="propertyName,string,Der Eigenschaftsname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Name der Arbeitsmappe." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="propertyName, string, Der Eigenschaftsname." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/PropertiesController/GetDocumentProperty\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

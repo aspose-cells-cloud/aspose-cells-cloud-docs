@@ -1,18 +1,19 @@
 ﻿---
-title: TableTotalReques
+title: TabelleGesamtAnfragen
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/model/tabletotalrequest/
-description: "Aspose.Cells Cloud-Modellspezifikation: TableTotalRequest. Bearbeiten Sie mühelos Excel und andere Tabellenkalkulationsdokumente mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+description: "Aspose.Cells Cloud-Modellspezifikation: TableTotalRequest. Müheloses Bearbeiten von Excel und anderen Tabellenkalkulationsdokumenten mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, TableTotalRequest
 weight: 50
 ---
-## **tableTotalRequest**
+## **TabelleGesamtAnfrage**
 
- Zeigt die Gesamtanzahl der Tabellenanfragen an
+ Zeigt die Gesamtzahl der Tabellenanfragen an
 
-| Name des Anwesens| Art der Immobilie| Nullbar| Schreibgeschützt| Standardwert| Beschreibung|
+| Name des Anwesens| Art der Immobilie| Nullwerte zulassen| Schreibgeschützt| Standardwert| Beschreibung|
 |:- |:- |:- |:- |:- |:- |
-| ListColumnIndex| Ganze Zahl| WAHR| FALSCH|| Gibt den Listenspaltenindex an.|
-| Summenberechnung| Zeichenfolge| WAHR| FALSCH|| Zeigt die Summenberechnung an.|
-| BenutzerdefinierteFormel| Zeichenfolge| WAHR| FALSCH|| Zeigt eine benutzerdefinierte Formel an.|
+| Listenspaltenindex| Ganze Zahl| WAHR| FALSCH|| Gibt den Listenspaltenindex an.|
+| SummenBerechnung| Zeichenfolge| WAHR| FALSCH|| Zeigt die Berechnung der Summen an.|
+| BenutzerdefinierteFormel| Zeichenfolge| WAHR| FALSCH||Zeigt eine benutzerdefinierte Formel an.|
 

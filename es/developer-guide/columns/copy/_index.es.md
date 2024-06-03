@@ -8,6 +8,7 @@ aliases: [/copy-columns-in-excel-worksheet/,/copy-columns-in-an-excel-worksheet/
 keywords: Copy column on an Excel workshee
 description: Aspose.Cells Cloud REST API admite la copia de la columna en una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 30
+kwords: Excel, Office Cloud, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Copiar columnas en una hoja de trabajo Excel
 ---
 Este REST API copia `columns` en una hoja de trabajo Excel.
 
@@ -22,17 +23,17 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/colu
  
 | Nombre del parámetro| Tipo| Ruta/Cadena de consulta/Cuerpo HTTP|Descripción|
 |:- |:- |:- |:- |
-| nombre| cadena| camino|El nombre del libro de trabajo.|
+| nombre| cadena| camino| El nombre del libro de trabajo.|
 | nombre de la hoja| cadena| camino| El nombre de la hoja de trabajo.|
 | fuenteColumnIndex| entero| consulta| Índice de la columna de origen|
-|destinoColumnaÍndice| entero| consulta| Índice de la columna de destino|
+| destinoColumnaÍndice| entero| consulta| Índice de la columna de destino|
 | columnaNúmero| entero| consulta| El número de columna copiado.|
 | hoja de cálculo| cadena| consulta||
 | carpeta| cadena| consulta| La carpeta de documentos.|
 
  El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/Cells/PostCopyWorksheetColumns) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
 
- Puedes usar**cURL** Herramienta de línea de comandos para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
+ Puedes usar**cURL**Herramienta de línea de comandos para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 

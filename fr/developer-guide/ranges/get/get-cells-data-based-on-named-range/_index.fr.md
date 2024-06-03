@@ -8,6 +8,7 @@ aliases: [/get-cells-data-based-on-named-range/]
 keywords: Get cells data based on named range on an Excel worksheet
 description: Aspose.Cells Cloud REST API prend en charge l'obtention de données de cellules en fonction d'une plage nommée sur une feuille de calcul Excel. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 20
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, obtenir des données de cellules basées sur une plage nommée
 ---
  Ce REST API indique Obtenir la liste des cellules dans une plage par nom de plage ou index de colonne de ligne
 
@@ -21,7 +22,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/valu
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| nom du classeur|
 | Nom de la feuille| chaîne| chemin| nom de la feuille de calcul|

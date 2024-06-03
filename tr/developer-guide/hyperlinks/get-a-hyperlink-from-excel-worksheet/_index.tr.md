@@ -5,6 +5,7 @@ url: /tr/hyperlinks/get/
 keywords: Delete a hyperlink from an Excel worksheet
 description: Aspose.Cells Cloud REST API, Excel çalışma sayfasından köprülerin silinmesini destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 10
+kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Al
 ---
 Bu REST API, Excel çalışma sayfasındaki dizine göre `get worksheet hyperlink`'i gösterir.
  

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postrowstyle/
 description: Применение форматов ко всей строке на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostRowStyle
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostRowStyle" >}}

@@ -8,6 +8,7 @@ aliases: [/delete-background-or-watermark-of-excel-worksheet/]
 keywords: Delete background on an Excel worksheet
 description: Aspose.Cells Cloud REST API поддерживает удаление фона на листе Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 210
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Удалить фон на листе Excel
 ---
 Этот REST API указывает на `delete worksheet background image`.
  

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/getworksheethyperlink/
 description: Récupérer la description du lien hypertexte par index dans la feuille de calcul
+kwords: Excel, Office, feuille de calcul, Cloud REST API, GetWorksheetHyperlink
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetHyperlink" >}}

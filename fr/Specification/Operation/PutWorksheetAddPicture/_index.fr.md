@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/putworksheetaddpicture/
 description: Ajouter une nouvelle image dans la feuille de calcul
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PutWorksheetAddPicture
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetAddPicture" >}}

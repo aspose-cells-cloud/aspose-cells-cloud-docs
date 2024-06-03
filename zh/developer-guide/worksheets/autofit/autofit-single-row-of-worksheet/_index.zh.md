@@ -1,17 +1,18 @@
 ﻿---
-title: 在 Excel 工作表上自动调整一行
+title: 自动调整 Excel 工作表上的一行
 second_title: Aspose.Cells Cloud Documen
 linktitle: 罗
 type: docs
 url: /zh/worksheets/autofit/row/
 aliases: [/autofit-single-row-of-worksheet/]
 keywords: Autofit rows on an Excel workshee
-description: Aspose.Cells Cloud REST API 支持在 Excel 工作表上自动调整行。 SDK支持多种开发语言。它们包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 swift
+description: Aspose.Cells Cloud REST API 支持在 Excel 工作表上自动调整行。SDK 支持多种开发语言。其中包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 swift
 weight: 30
+kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdwon、在 Excel 工作表上自动调整一行
 ---
-此 REST API 指示自动调整 Excel 工作表上的行。
+此 REST API 表示自动调整 Excel 工作表上的一行。
  
-## RSET API
+## 重置 API
  
 ```bash
  
@@ -27,13 +28,13 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitrow
 |行索引|整数|询问||
 |第一列|整数|询问||
 |最后一列|整数|询问||
-|自动调整选项||身体||
+|自动装配选项||身体||
 |文件夹|细绳|询问||
 |存储名称|细绳|询问|存储名称。|
  
-这[开放API规范](https://apireference.aspose.cloud/cells/#/Worksheets/PostAutofitWorksheetRow)定义了一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Worksheets/PostAutofitWorksheetRow)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
  
-您可以使用cURL命令行工具轻松访问Aspose.Cells Web服务。以下示例展示如何使用 cURL 呼叫云端 API。
+您可以使用 cURL 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例显示如何使用 cURL 调用云 API。
  
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
  
@@ -65,9 +66,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/sampleAutoFit.xlsx/worksheets/Sheet1
  
 {{< /tabs >}}
  
-## 云SDK系列
+## Cloud SDK 系列
  
-使用 SDK 是加快开发速度的最佳方式。 SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)有关 Aspose.Cells Cloud SDK 的完整列表。
+使用 SDK 是加快开发速度的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)获得 Aspose.Cells Cloud SDKs 的完整列表。
  
 以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
  

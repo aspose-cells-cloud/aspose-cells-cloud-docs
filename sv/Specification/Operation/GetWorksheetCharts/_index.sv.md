@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/getworksheetcharts/
 description: Hämta beskrivningar av diagram i arbetsbladet
+kwords: Excel, Office, Spreadsheet, Cloud REST API, GetWorksheetCharts
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetCharts" >}}

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postgroupworksheetrows/
 description: صفوف المجموعة في ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostGroupWorksheetRows
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostGroupWorksheetRows" >}}

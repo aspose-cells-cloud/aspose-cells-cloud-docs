@@ -8,6 +8,7 @@ aliases: [/unfreeze-panes-in-excel-worksheet/,/worksheets/unfreeze-panes/]
 keywords: Unfreeze panes on an Excel worksheet
 description: Aspose.Cells Cloud REST API, Excel çalışma sayfasındaki bölmelerin donmasını destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 200
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel çalışma sayfasındaki bölmeleri çözme
 ---
 Bu REST API, Excel çalışma sayfasında `unfreeze panes`'i gösterir.
  

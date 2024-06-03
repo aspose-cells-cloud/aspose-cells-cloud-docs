@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/getworksheetpivottable/
 description: PivotTable bilgilerini çalışma sayfasındaki dizine göre alma
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, GetWorksheetPivotTable
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetPivotTable" >}}

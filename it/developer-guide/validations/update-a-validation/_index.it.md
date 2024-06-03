@@ -7,6 +7,7 @@ url: /it/validations/update/
 keywords: Delete a worksheet validation on an Excel worksheet
 description: Aspose.Cells Cloud REST API supporta l'eliminazione di una convalida del foglio di lavoro su un foglio di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 10
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Aggiorna la convalida di un foglio di lavoro su un foglio di lavoro Excel
 ---
 Questo REST API indica di aggiornare la convalida del foglio di lavoro in base all'indice su un foglio di lavoro Excel.
  

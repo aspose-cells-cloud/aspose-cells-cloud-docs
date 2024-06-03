@@ -4,6 +4,7 @@ type: docs
 url: /tr/charts/legend/get/
 aliases: [/get-chart-legend-from-a-worksheet/]
 weight: 80
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Çalışma Sayfasından Grafik Göstergesini Alma
 ---
 Bu REST API, grafik açıklamasının alındığını gösterir
  

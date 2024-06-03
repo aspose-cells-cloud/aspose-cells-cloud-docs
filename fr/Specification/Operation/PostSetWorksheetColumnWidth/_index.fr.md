@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postsetworksheetcolumnwidth/
 description: Définir la largeur des colonnes de la feuille de calcul
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostSetWorksheetColumnWidth
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostSetWorksheetColumnWidth" >}}

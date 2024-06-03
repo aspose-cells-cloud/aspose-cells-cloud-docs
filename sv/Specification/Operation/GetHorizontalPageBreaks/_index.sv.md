@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/gethorizontalpagebreaks/
 description: Hämta beskrivningar av horisontella sidbrytningar i kalkylbladet
+kwords: Excel, Office, Kalkylblad, Cloud REST API, GetHorizontalPageBreaks
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetHorizontalPageBreaks" >}}

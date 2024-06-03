@@ -7,6 +7,7 @@ aliases: [/working-with-hyperlinks/,/working-with-hyperlink/]
 keywords: REST API, hyperlinks, spreadsheets, exce
 description: "Cells.Cloud API per Excel funziona: lavorare con collegamenti ipertestuali su un file Excel"
 weight: 100
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Collegamenti ipertestuali
 ---
 &nbsp;&nbsp;&nbsp;&nbsp;I collegamenti ipertestuali in Excel consentono agli utenti di creare un modo rapido per raggiungere determinati fogli di lavoro, file, cartelle o pagine Web. Ci aiuta a raggiungere rapidamente qualsiasi cartella o collegamento specifico.
 

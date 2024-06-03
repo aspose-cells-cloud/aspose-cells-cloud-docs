@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postpivottablefieldmoveto/
 description: نقل حقل محوري في PivotTable
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostPivotTableFieldMoveTo
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostPivotTableFieldMoveTo" >}}

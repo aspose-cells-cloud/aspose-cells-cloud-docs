@@ -4,23 +4,24 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/getnamedrangevalue/
 description: Werte im Bereich abrufen
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, GetNamedRangeValue
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetNamedRangeValue" >}}
 {{< blocks/products/cells/docs-title titlemsg="Retrieve values in range." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/ranges/{namerange}/value,GET,Werte im Bereich abrufen.,<a href=\'https://apireference.aspose.cloud/cells/#/Worksheets/GetNamedRangeValue\'>GetNamedRangeValue </a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/ranges/{namerange}/value,GET,Werte im Bereich abrufen.,<a href=\'https://apireference.aspose.cloud/cells/#/Worksheets/GetNamedRangeValue\'>GetNamedRangeValue</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="namerange,string,Bereichsname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Namerange, Zeichenfolge, Bereichsname." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/WorksheetsController/GetNamedRangeValue\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/postworksheetcellsrangeoutlineborder/
 description: Applicare un bordo di contorno attorno a un intervallo di celle
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PostWorksheetCellsRangeOutlineBorder
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangeOutlineBorder" >}}

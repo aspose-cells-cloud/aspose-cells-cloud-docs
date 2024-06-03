@@ -1,26 +1,27 @@
 ﻿---
-title: DeleteUnProtectWorkboo
+title: LöschenUnProtectWorkboo
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/deleteunprotectworkbook/
-description: Excel ungeschützt
+description: Excel Schutz aufheben
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, LöschenUnSchützenArbeitsmappe
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteUnProtectWorkbook" >}}
 {{< blocks/products/cells/docs-title titlemsg="Excel unprotection." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/protection,DELETE,Excel unprotection.,<a href=\'https://apireference.aspose.cloud/cells/#/Protection/DeleteUnProtectWorkbook\'>DeleteUnProtectWorkbook</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/protection,DELETE,Excel Schutz aufgehoben.,<a href=\'https://apireference.aspose.cloud/cells/#/Protection/DeleteUnProtectWorkbook\'>DeleteUnProtectWorkbook</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="Passwort, Zeichenfolge, Schutzeinstellungen, es kann nur ein Passwort angegeben werden." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Kennwort, Zeichenfolge, Schutzeinstellungen, es kann nur ein Kennwort angegeben werden." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/ProtectionController/DeleteUnProtectWorkbook\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

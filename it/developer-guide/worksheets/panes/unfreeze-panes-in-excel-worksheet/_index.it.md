@@ -8,6 +8,7 @@ aliases: [/unfreeze-panes-in-excel-worksheet/,/worksheets/unfreeze-panes/]
 keywords: Unfreeze panes on an Excel worksheet
 description: Aspose.Cells Cloud REST API supporta lo sblocco dei riquadri su un foglio di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 200
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Sblocca riquadri su un foglio di lavoro Excel
 ---
 Questo REST API indica `unfreeze panes` sul foglio di lavoro Excel.
  

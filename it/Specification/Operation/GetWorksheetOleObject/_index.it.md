@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/getworksheetoleobject/
 description: Recuperare l'oggetto OLE in un formato specificato nel foglio di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, GetWorksheetOleObject
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetOleObject" >}}

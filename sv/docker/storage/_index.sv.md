@@ -5,6 +5,7 @@ type: docs
 url: /sv/docker/storage/
 description: Hur man ställer in lagringsposition om Aspose.Cells Cloud for Docker
 weight: 30
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Storage
 ---
 ##  Standardlagringskonfiguration ##
 

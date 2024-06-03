@@ -5,6 +5,7 @@ type: docs
 url: /it/supported-file-formats/
 description: Aspose.Cells Cloud supporta Excel per creare, convertire, unire, dividere, proteggere, operazioni di oggetti interni e così via
 weight: 40
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Formati di file supportati
 ---
 |**Formato**|**Descrizione**|**Carico**|**Salva**|
 |:- |:- |:- |:- |
@@ -16,7 +17,7 @@ weight: 40
 |[XLTX](https://docs.fileformat.com/spreadsheet/xltx/)|Excel Modello.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[XLTM](https://docs.fileformat.com/spreadsheet/xltm/)|Excel Modello con attivazione macro.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[XLAM](https://docs.fileformat.com/spreadsheet/xlam/)|Un file aggiuntivo Excel abilitato per le macro utilizzato per aggiungere nuove funzioni a Excel.||{{< emoticons/tick >}}|
-|[CSV](https://docs.fileformat.com/spreadsheet/csv/)|File CSV (valori separati da virgole).|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[CSV](https://docs.fileformat.com/spreadsheet/csv/)|File CSV (valori separati da virgola).|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[TSV](https://docs.fileformat.com/spreadsheet/tsv/)|File TSV (valori separati da tabulazioni).|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |Delimitato da tabulazioni|File di testo delimitato da tabulazioni, lo stesso con il file TSV.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[TXT](https://docs.fileformat.com/word-processing/txt/)|File di testo semplice delimitato.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|

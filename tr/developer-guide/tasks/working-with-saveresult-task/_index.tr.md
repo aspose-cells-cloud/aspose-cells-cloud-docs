@@ -7,6 +7,7 @@ aliases: [/working-with-saveresult-task/]
 keywords: REST API, task, save result, spreadsheets, exce
 description: "Cells.Cloud API, Excel için çalışır: sonucun yanıt içeriğine veya bulut depolama alanına kaydedilmesini sağlayan görevler desteği"
 weight: 50
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, SaveResult Göreviyle Çalışma
 ---
 ## DİNLENME API
 
@@ -17,7 +18,7 @@ weight: 50
 
 [OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Task/PostRunTask) herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
 
- Kullanabilirsiniz**cURL** Aspose.Cells web hizmetlerine kolayca erişmek için komut satırı aracı. Aşağıdaki örnekte, cURL ile Cloud API'e nasıl çağrı yapılacağı gösterilmektedir.
+ Kullanabilirsiniz**cURL**Aspose.Cells web hizmetlerine kolayca erişmek için komut satırı aracı. Aşağıdaki örnekte, cURL ile Cloud API'e nasıl çağrı yapılacağı gösterilmektedir.
 
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}

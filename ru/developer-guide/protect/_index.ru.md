@@ -7,6 +7,7 @@ url: /ru/protect/
 keywords: Protect and unprotect Excel workbook
 description: Aspose.Cells Cloud REST API поддерживает защиту и снятие защиты Excel книги. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 36
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Защитить книгу
 ---
 **Как защитить файлы Excel.**
 

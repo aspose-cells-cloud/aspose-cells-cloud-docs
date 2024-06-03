@@ -3,6 +3,7 @@ title: Obtener MinColumn de la hoja de trabajo Excel
 type: docs
 url: /es/get-mincolumn-from-excel-worksheet/
 weight: 100
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Obtener MinColumn de la hoja de trabajo Excel
 ---
 Este REST API indica que muestra obtener un `mincolumn` en un archivo Excel cuando el parámetro `cellOrMethodName` es `mincolumn`.
 

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/getpagesetup/
 description: استرداد وصف إعداد الصفحة في ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، GetPageSetup
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetPageSetup" >}}

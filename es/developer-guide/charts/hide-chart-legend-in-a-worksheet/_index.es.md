@@ -4,6 +4,7 @@ type: docs
 url: /es/charts/legend/hide/
 aliases: [/hide-chart-legend-in-a-worksheet/]
 weight: 110
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Ocultar leyenda del gráfico en una hoja de trabajo
 ---
 Este REST API indica ocultar leyenda en el gráfico
  

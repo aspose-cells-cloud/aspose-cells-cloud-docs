@@ -8,6 +8,7 @@ aliases: [/get-worksheet-count/]
 keywords: Get worksheets description from an Excel workbook
 description: Aspose.Cells Cloud REST API supporta il recupero della descrizione dei fogli di lavoro da una cartella di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 10
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Ottieni fogli di lavoro
 ---
 Questo REST API indica `get worksheets information`.
  

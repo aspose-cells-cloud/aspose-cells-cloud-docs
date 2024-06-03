@@ -3,27 +3,28 @@ title: PostWorksheetCellsRangeSor
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postworksheetcellsrangesort/
-description: Führen Sie eine Datensortierung nach einem Bereich von Zellen durch
+description: Datensortierung für einen Zellbereich durchführen
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostWorksheetCellsRangeSort
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangeSort" >}}
 {{< blocks/products/cells/docs-title titlemsg="Perform data sorting around a range of cells." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges/sort,POST,Führen Sie eine Datensortierung um einen Bereich von Zellen durch.,<a href=\'https://apireference.aspose.cloud/cells/#/Ranges/ PostWorksheetCellsRangeSort\'>PostWorksheetCellsRangeSort</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges/sort,POST,Datensortierung für einen Zellbereich durchführen.,<a href=\'https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeSort\'>PostWorksheetCellsRangeSort</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Original-Arbeitsmappenordner." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Ursprünglicher Arbeitsmappenordner." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Speichername." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns=" rangeSortRequest,class:rangesortrequest,RangeSortRequest Bereichssortierungsanforderung" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns=" rangeSortRequest,Klasse:rangesortrequest,RangeSortRequest Bereichssortieranforderung" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

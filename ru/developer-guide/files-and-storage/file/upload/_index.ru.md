@@ -6,6 +6,7 @@ url: /ru/file/upload/
 keywords: Learn how to upload file with Aspose Cells Cloud REST API
 description: Узнайте, как загрузить файл с помощью Aspose Cells Cloud REST API SDK, поддерживающего различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 100
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, загрузить файл
 ---
 Этот REST API указывает на `upload file`.
 
@@ -20,7 +21,7 @@ PUT http://api.aspose.cloud/v3.0/cells/storage/file/{path}
  
 | Имя параметра| Тип| Путь/строка запроса/HTTPBody|Описание|
 |:- |:- |:- |:- |
-| путь| нить| путь| Путь для загрузки, включая имя и расширение файла, например /file.ext или /Folder 1/file.ext. Если содержимое состоит из нескольких частей и путь не содержит имени файла, он пытается получить их из параметра имени файла из заголовка Content-Disposition.|
+| путь| нить| путь| Путь для загрузки, включая имя файла и расширение, например /file.ext или /Folder 1/file.ext. Если содержимое состоит из нескольких частей и путь не содержит имени файла, он пытается получить их из параметра имени файла из заголовка Content-Disposition.|
 | файл| Файл| данные формы| Файл для загрузки|
 | имя_хранилища| нить| запрос| Имя хранилища|
  

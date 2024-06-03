@@ -3,16 +3,17 @@ title: SolidFil
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/model/solidfill/
-description: "Aspose.Cells Wolkenmodellspezifikation: SolidFill. Bearbeiten Sie mühelos Excel und andere Tabellenkalkulationsdokumente mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+description: "Aspose.Cells Cloud-Modellspezifikation: SolidFill. Müheloses Bearbeiten von Excel und anderen Tabellenkalkulationsdokumenten mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, SolidFill
 weight: 50
 ---
 ## **Feste füllung**
 
- 
+ Kapselt das Objekt ein, das das Format für die Vollfüllung darstellt
 
-| Name des Anwesens| Art der Immobilie| Nullbar| Schreibgeschützt| Standardwert| Beschreibung|
+| Name des Anwesens| Art der Immobilie| Nullwerte zulassen| Schreibgeschützt| Standardwert| Beschreibung|
 |:- |:- |:- |:- |:- |:- |
-| Farbe| Klasse:Farbe| WAHR| FALSCH|| Ruft die ab oder legt sie fest.|
+| Farbe| Klasse:Farbe| WAHR| FALSCH|| Ruft ab oder legt fest.|
 | ZellenFarbe| Klasse:CellsColor| WAHR| FALSCH|| Ruft das Objekt ab und legt es fest.|
-| Transparenz| Schwebend| WAHR| FALSCH|| Gibt den Grad der Transparenz des Bereichs als Wert von 0,0 (undurchsichtig) bis 1,0 (klar) zurück oder legt ihn fest.|
+| Transparenz| Schwimmend| WAHR| FALSCH|| Gibt den Transparenzgrad des Bereichs als Wert zwischen 0,0 (undurchsichtig) und 1,0 (durchsichtig) zurück oder legt ihn fest.|
 

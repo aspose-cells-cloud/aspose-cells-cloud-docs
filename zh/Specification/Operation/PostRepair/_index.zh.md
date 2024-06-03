@@ -3,19 +3,20 @@ title: 修复后
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/postrepair/
-description: 修复异常文件并生成各种格式的文件
+description: 修复异常文件并生成多种格式的文件
+kwords: Excel, Office, 电子表格, Cloud REST API, PostRepair
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostRepair" >}}
 {{< blocks/products/cells/docs-title titlemsg="Repair abnormal files and generate files in various formats." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/repair,POST,修复异常文件并生成各种格式的文件,<a href=\'https://apireference.aspose.cloud/cells/#/LightCells/PostRepair\'>PostRepair</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/repair,POST,修复异常文件，生成多种格式的文件,<a href=\'https://apireference.aspose.cloud/cells/#/LightCells/PostRepair\'>PostRepair</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="outFormat,字符串,输出数据文件格式。(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF /BMP/MD[Markdown]/数字）" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="outFormat，string，输出数据文件格式。(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/LightCellsController/PostRepair\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

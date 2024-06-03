@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/model/tabletotalrequest/
 description: "Aspose.Cells Specifica del modello cloud: TableTotalRequest. Gestisci facilmente Excel e altri fogli di calcolo con funzionalità come apertura, generazione, modifica, divisione, unione, confronto e conversione"
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, TabellaTotaleRichiesta
 weight: 50
 ---
 ## **tableTotalRequest**
@@ -14,5 +15,5 @@ weight: 50
 |:- |:- |:- |:- |:- |:- |
 | ElencoColonnaIndice| Numero intero| VERO| Falso|| Indica l'indice della colonna dell'elenco.|
 | Calcolo dei totali| Corda| VERO| Falso|| Indica il calcolo dei totali.|
-| Formula personalizzata| Corda| VERO| Falso|| Indica la formula personalizzata.|
+| Formula personalizzata| Corda| VERO| Falso||Indica la formula personalizzata.|
 

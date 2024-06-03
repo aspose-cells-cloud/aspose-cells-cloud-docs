@@ -6,6 +6,7 @@ url: /es/batch/protect
 keywords: Batch protection of multiple Excel files
 description: Aspose.Cells Cloud API admite la protección por lotes de múltiples archivos de Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 100
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Protección por lotes
 ---
 Este REST API indica el `batch protection` de archivos elegibles.
  
@@ -26,7 +27,7 @@ POST http://api.aspose.cloud/v3.0/cells/batch/protect
  
 Nombre | Tipo | Descripción | Notas
 ------------ | ------------- | ------------- | -------------
-Carpeta de origen | cadena | | [opcional]Condición de coincidencia | Solicitud de condición de coincidencia | | [opcional]Tipo de protección | cadena | | [opcional]Contraseña | cadena | | [opcional]Carpeta exterior | cadena | | [opcional]**Propiedades de MatchConditionRequest**
+ Carpeta de origen | cadena | | [opcional]Condición de coincidencia | Solicitud de condición de coincidencia | | [opcional]Tipo de protección | cadena | | [opcional]Contraseña | cadena | | [opcional]Carpeta exterior | cadena | | [opcional]**Propiedades de MatchConditionRequest**
  
 Nombre | Tipo | Descripción | Notas
 ------------ | ------------- | ------------- | -------------

@@ -7,6 +7,7 @@ aliases: [/working-with-files-and-storage-using-aspose-cells-cloud/]
 keywords: Learn how to work with Aspose Cells Cloud file storage
 description: Узнайте, как работать с Aspose Cells Облачным файловым хранилищем. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 100
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, файлы и хранилище
 ---
 Облако Aspose.Cells предоставляет вспомогательные функции для работы с файлами, загруженными в облачное хранилище Aspose.Cells или любое другое облачное хранилище по вашему выбору. Если вам нужна помощь в настройке стороннего хранилища, см.[Aspose Разделы справки по Cloud UI](https://docs.aspose.cloud/display/totalcloud/Aspose+Cloud+UI+Help+Topics).
 

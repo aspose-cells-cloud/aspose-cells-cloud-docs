@@ -8,6 +8,7 @@ aliases: [/import-csv-data-into-excel-worksheet/, /import-csv-data-into-workshee
 keywords: Import csv data into Excel files
 description: Aspose.Cells Cloud REST API prend en charge l'importation de données CSV dans des fichiers Excel. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 19
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, importer des données CSV dans la feuille de calcul Excel
 ---
 Ce REST API `import csv data` dans la feuille de travail Excel.
 

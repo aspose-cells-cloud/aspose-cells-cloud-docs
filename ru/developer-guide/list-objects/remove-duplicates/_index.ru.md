@@ -7,6 +7,7 @@ keywords: list object(table) remove duplicates
 url: /ru/list-objects/remove-duplicates/
 description:  Удалите дубликаты в объекте списка.
 weight: 20
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Объект списка, удаление дубликатов
 ---
  Этот REST API указывает на удаление дубликатов в объекте списка.
 

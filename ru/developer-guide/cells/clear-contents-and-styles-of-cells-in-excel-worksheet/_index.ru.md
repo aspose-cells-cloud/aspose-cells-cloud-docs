@@ -3,6 +3,7 @@ title: Очистить содержимое и стили Cells в рабоче
 type: docs
 url: /ru/clear-contents-and-styles-of-cells-in-excel-worksheet/
 weight: 50
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, очистить содержимое и стили Cells на листе Excel
 ---
 Этот REST API указывает на `clear` ячеек `content` в файле Excel.
 

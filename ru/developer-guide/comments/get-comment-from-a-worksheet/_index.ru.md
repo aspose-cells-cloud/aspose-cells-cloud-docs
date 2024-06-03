@@ -6,6 +6,7 @@ aliases: [/get-comment-from-a-worksheet/]
 keywords: REST API, spreadsheets, excel, get commen
 description: "Cells.Облако API для Excel работает: получить комментарий"
 weight: 10
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Получить
 ---
 Этот REST API указывает на получение комментария к листу по имени ячейки.
  

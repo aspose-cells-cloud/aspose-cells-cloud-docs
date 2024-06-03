@@ -1,16 +1,17 @@
 ﻿---
-title: 后批定位
+title: PostBatchLoc
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/postbatchlock/
 description: 批量锁定满足特定匹配条件的文件
+kwords: Excel，Office，电子表格，云 REST API，PostBatchLock
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostBatchLock" >}}
 {{< blocks/products/cells/docs-title titlemsg="Batch locking files that meet specific matching conditions." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/batch/lock,POST,批量锁定满足特定匹配条件的文件。,<a href=\'https://apireference.aspose.cloud/cells/#/Batch/PostBatchLock\'>PostBatchLock</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/batch/lock,POST,批量锁定符合特定匹配条件的文件。,<a href=\'https://apireference.aspose.cloud/cells/#/Batch/PostBatchLock\'>PostBatchLock</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

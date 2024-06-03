@@ -8,6 +8,7 @@ aliases: [/get-named-ranges-inside-the-workbook/]
 keywords: Get cells data based on named range on an Excel worksheet
 description: Aspose.Cells Cloud REST API stöder att hämta celldata baserat på namngivet intervall på ett Excel-kalkylblad. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 10
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Get Named Ranges på en Excel arbetsbok
 ---
 Denna REST API indikerar information om intervall för Läs kalkylblad.
  

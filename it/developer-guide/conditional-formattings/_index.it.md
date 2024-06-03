@@ -7,6 +7,7 @@ aliases: [/working-with-conditional-formatting/]
 keywords: REST API, spreadsheets, excel, conditional formattin
 description: "Cells.Cloud API per Excel operare: formattazione condizionale operare"
 weight: 100
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Formattazioni condizionali
 ---
 &nbsp;&nbsp;&nbsp;&nbsp;La formattazione condizionale in Excel ti consente di evidenziare le celle con un determinato colore, a seconda del valore della cella.
 

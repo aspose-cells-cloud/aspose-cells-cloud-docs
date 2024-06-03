@@ -4,24 +4,25 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/postworksheetlistobjectconverttorange/
 description: 将列表对象转换为工作表中的范围
+kwords: Excel，Office，电子表格，云 REST API，PostWorksheetListObjectConvertToRange
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetListObjectConvertToRange" >}}
 {{< blocks/products/cells/docs-title titlemsg="Convert list object to range in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/ConvertToRange,POST,将列表对象转换为工作表中的范围。,<a href=\'https://apireference.aspose.cloud/cells/ #/ListObjects/PostWorksheetListObjectConvertToRange\'>PostWorksheetListObjectConvertToRange</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/ConvertToRange,POST,将列表对象转换为工作表中的范围。,<a href=\'https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObjectConvertToRange\'>PostWorksheetListObjectConvertToRange</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="参数名称、类型、描述" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="名称，字符串，文件名。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,字符串,工作表名称。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="listObjectIndex,整数,列表对象索引。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="name，string，文件名。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName，string，工作表名称。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="listObjectIndex，整数，列表对象索引。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="文件夹，字符串，文件所在的文件夹。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,文件所在的存储名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName，string，文件所在的存储名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/ListObjectsController/PostWorksheetListObjectConvertToRange\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

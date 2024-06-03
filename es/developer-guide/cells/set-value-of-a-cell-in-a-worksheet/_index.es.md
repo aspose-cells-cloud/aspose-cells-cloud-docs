@@ -3,6 +3,7 @@ title: Establecer el valor de una celda en una hoja de trabajo
 type: docs
 url: /es/set-value-of-a-cell-in-a-worksheet/
 weight: 70
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Establecer valor de una celda en una hoja de trabajo
 ---
 Este REST API indica el conjunto `cell value` en un archivo Excel.
  

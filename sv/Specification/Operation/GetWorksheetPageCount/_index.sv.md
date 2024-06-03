@@ -4,13 +4,14 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/getworksheetpagecount/
 description: Få sidräkning i arbetsbladet
+kwords: Excel, Office, Spreadsheet, Cloud REST API, GetWorksheetPageCount
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetPageCount" >}}
 {{< blocks/products/cells/docs-title titlemsg="Get page count in the worksheet." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API referens" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pagecount,GET,Hämta sidantal i kalkylbladet.,<a href=\'https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetPageCount\'>GetWorksheetPageCount </a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pagecount,GET,Hämta sidräkning i kalkylbladet.,<a href=\'https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetPageCount\'>GetWorksheetPageCount </a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

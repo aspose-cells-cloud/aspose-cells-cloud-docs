@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/deleteworksheetfreezepanes/
 description: Разморозить панели на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, DeleteWorksheetFreezePanes
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetFreezePanes" >}}

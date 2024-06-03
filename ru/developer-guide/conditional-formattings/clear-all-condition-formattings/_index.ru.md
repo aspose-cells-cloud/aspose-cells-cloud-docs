@@ -6,6 +6,7 @@ aliases: [/clear-all-condition-formattings/]
 keywords: REST API, spreadsheets, excel, clear all condition formatting
 description: "Cells.Облако API для Excel работает: очистка всех форматирований условий"
 weight: 80
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, форматирование четких условий
 ---
 Этот REST API указывает на очистку всех форматирований условий.
  

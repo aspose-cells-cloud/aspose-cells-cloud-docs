@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/getworksheetpicturewithformat/
 description: Recupera un'immagine in base al numero nel foglio di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, GetWorksheetPictureWithFormat
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetPictureWithFormat" >}}

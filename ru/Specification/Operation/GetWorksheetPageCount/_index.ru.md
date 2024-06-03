@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/getworksheetpagecount/
 description: Получить количество страниц на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, GetWorksheetPageCount
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetPageCount" >}}

@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/model/oval/
 description: "Aspose.Cells Especificación del modelo de nube: Ovalada. Maneje sin esfuerzo Excel y otros documentos de hoja de cálculo con funciones como abrir, generar, editar, dividir, fusionar, comparar y convertir."
+kwords: Excel, Office, Hoja de cálculo, Nube REST API, Ovalada
 weight: 50
 ---
 ## **oval**
 
- 
+ Representa la forma ovalada.
 
 | Nombre de la propiedad| tipo de propiedad| Anulable| Solo lectura| Valor por defecto| Descripción|
 |:- |:- |:- |:- |:- |:- |
@@ -29,7 +30,7 @@ weight: 50
 | X| Entero| Verdadero| FALSO|||
 | Y| Entero| Verdadero| FALSO|||
 | Ángulo de rotación| Flotante| Verdadero| FALSO|||
-| Texto HTML| Cadena| Verdadero| FALSO|||
+|Texto HTML| Cadena| Verdadero| FALSO|||
 | Texto| Cadena| Verdadero| FALSO|||
 | Texto alternativo| Cadena| Verdadero| FALSO|||
 | TextoAlineaciónHorizontal| Cadena| Verdadero| FALSO|||
@@ -50,4 +51,5 @@ weight: 50
 | Hipervínculo| Cadena| Verdadero| FALSO|||
 | enlace| Clase: enlace| Verdadero| FALSO|||
 
-**Nombre del padre** : (Forma)[forma]
+**Nombre del padre** : [Forma](/specification/model/shape)
+

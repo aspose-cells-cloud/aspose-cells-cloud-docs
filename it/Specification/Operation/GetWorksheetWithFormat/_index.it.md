@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/getworksheetwithformat/
 description: Recupera il foglio di lavoro in un formato specificato dalla cartella di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, GetWorksheetWithFormat
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetWithFormat" >}}
@@ -19,7 +20,7 @@ weight: 50
      {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Il nome del foglio di lavoro." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Nome parametro, Tipo, Descrizione" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="formato,stringa,Formato di esportazione (CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/076173 481/MD [Ribasso]/Numeri)." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="formato,stringa,Formato di esportazione (CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/0761 73481/MD [Ribasso]/Numeri)." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="verticalResolution,intero,Risoluzione verticale dell\'immagine." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="risoluzioneorizzontale,intero,Risoluzione orizzontale dell\'immagine." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="area,stringa,Rappresenta l\'intervallo da stampare." >}} 

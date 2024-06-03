@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/postprotect/
 description: Excel cifrado de archivos
+kwords: Excel, Office, Hoja de cálculo, Nube REST API, PostProtect
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostProtect" >}}

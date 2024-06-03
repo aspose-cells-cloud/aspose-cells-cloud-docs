@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/putworksheetcellsrange/
 description: Inserte un rango de celdas y cambie las celdas existentes según la opción de cambio especificada
+kwords: Excel, Office, hoja de cálculo, nube REST API, PutWorksheetCellsRange
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetCellsRange" >}}

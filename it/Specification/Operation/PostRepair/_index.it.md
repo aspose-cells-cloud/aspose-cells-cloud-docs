@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/postrepair/
 description: Ripara file anomali e genera file in vari formati
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PostRiparazione
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostRepair" >}}

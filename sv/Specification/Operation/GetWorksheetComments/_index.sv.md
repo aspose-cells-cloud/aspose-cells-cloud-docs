@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/getworksheetcomments/
 description: Hämta beskrivningen av kommentarer i arbetsbladet
+kwords: Excel, Office, Spreadsheet, Cloud REST API, GetWorksheetComments
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetComments" >}}

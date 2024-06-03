@@ -8,6 +8,7 @@ aliases: [/get-worksheet-pivot-tables-information/]
 keywords: Get all pivot tables in an Excel worksheet
 description: Aspose.Cells Cloud REST API-stöd få alla pivottabeller i ett Excel-kalkylblad. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 20
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Hämta alla pivottabeller i ett Excel kalkylblad
 ---
 Denna REST API indikerar att få arbetsblad `pivottables` info.
  

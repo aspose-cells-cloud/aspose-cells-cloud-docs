@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/postmoveworksheet/
 description: Çalışma sayfasını çalışma kitabında taşıma
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PostMoveWorksheet
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostMoveWorksheet" >}}

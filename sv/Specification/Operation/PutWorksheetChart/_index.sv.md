@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/putworksheetchart/
 description: Lägg till ett nytt diagram i kalkylbladet
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PutWorksheetChart
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetChart" >}}

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/putconvertworkbook/
 description: تحويل المصنف من المحتوى المطلوب إلى ملفات بتنسيقات مختلفة
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PutConvertWorkbook
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutConvertWorkbook" >}}
@@ -15,7 +16,7 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="اسم المعلمة، النوع، الوصف" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="تنسيق، سلسلة، التنسيق المطلوب تحويله (CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/07617) 3481 /MD[تخفيض السعر]/الأرقام)." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="التنسيق، سلسلة، التنسيق المطلوب تحويله (CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/076) 173481 /MD[تخفيض السعر]/الأرقام)." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="كلمة المرور، سلسلة، كلمة المرور اللازمة لفتح ملف Excel." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="outPath,string,Path لحفظ النتيجة. إذا كان ملفًا واحدًا، فيجب أن يشمل \"outPath\" كلاً من اسم الملف والامتداد. في حالة وجود ملفات متعددة، يجب أن يتضمن \"outPath\" المجلد فقط." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="اسم التخزين، سلسلة، اسم التخزين حيث يوجد الملف." >}} 

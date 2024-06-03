@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postworksheetcellsrangeunmerge/
 description: Annuler la fusion des cellules fusionnées dans cette plage
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostWorksheetCellsRangeUnMerge
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangeUnMerge" >}}

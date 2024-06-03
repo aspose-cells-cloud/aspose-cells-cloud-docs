@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/postworksheetlistobjectremoveduplicates/
 description: Ta bort dubbletter i listobjekt
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostWorksheetListObjectRemoveDuplicates
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetListObjectRemoveDuplicates" >}}

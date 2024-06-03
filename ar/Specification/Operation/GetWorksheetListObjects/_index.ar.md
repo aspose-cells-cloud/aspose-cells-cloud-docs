@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/getworksheetlistobjects/
 description: استرداد أوصاف كائنات القائمة في ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، GetWorksheetListObjects
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetListObjects" >}}

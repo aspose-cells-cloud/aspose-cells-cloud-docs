@@ -3,27 +3,28 @@ title: PostWorkbookCalculateFormul
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postworkbookcalculateformula/
-description: Berechnen Sie alle Formeln in der Arbeitsmappe
+description: Berechnen aller Formeln in der Arbeitsmappe
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostWorkbookCalculateFormula
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookCalculateFormula" >}}
 {{< blocks/products/cells/docs-title titlemsg="Calculate all formulas in the workbook." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/calculateformula,POST,Alle Formeln in der Arbeitsmappe berechnen.,<a href=\'https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookCalculateFormula\'>PostWorkbookCalculateFormula</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="ignoreError,boolean,Fehler ignorieren." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="ignoreError, boolean, Fehler ignorieren." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="Optionen, Klasse: Berechnungsoptionen, Berechnungsoptionen Berechnungsoptionen." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Optionen, Klasse: Berechnungsoptionen, Berechnungsoptionen, Berechnungsoptionen." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

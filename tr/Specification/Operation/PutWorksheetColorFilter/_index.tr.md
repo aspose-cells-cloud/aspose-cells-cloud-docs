@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/putworksheetcolorfilter/
 description: Çalışma sayfasına renk filtresi ekleme
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PutWorksheetColorFilter
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetColorFilter" >}}

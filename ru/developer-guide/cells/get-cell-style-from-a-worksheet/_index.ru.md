@@ -3,6 +3,7 @@ title: Получить стиль ячейки из рабочего листа
 type: docs
 url: /ru/get-cell-style-from-a-worksheet/
 weight: 10
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, получение стиля ячейки из рабочего листа
 ---
 Этот REST API указывает на получение ячейки `style` в файле Excel.
 

@@ -4,6 +4,7 @@ type: docs
 url: /ru/charts/delete-chart-title/
 aliases: [/delete-chart-title-in-a-worksheet/]
 weight: 150
+kwords: Excel, Office Cloud, REST API, электронная таблица, PDF, CSV, Json, Markdwon, удалить заголовок диаграммы на листе
 ---
 Этот REST API указывает на скрытие заголовка в диаграмме.
  

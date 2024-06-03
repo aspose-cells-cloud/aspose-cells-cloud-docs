@@ -4,18 +4,19 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/model/workbooksettings/
 description: "Aspose.Cells Specifica del modello cloud: WorkbookSettings. Gestisci facilmente Excel e altri fogli di calcolo con funzionalità come apertura, generazione, modifica, divisione, unione, confronto e conversione"
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, Impostazioni cartella di lavoro
 weight: 50
 ---
 ## **workbookSettings**
 
- 
+ Rappresenta tutte le impostazioni della cartella di lavoro.
 
 | Nome della proprietà| Tipo di proprietà| Nullabile| Sola lettura| Valore di default| Descrizione|
 |:- |:- |:- |:- |:- |:- |
-| Compressione automatica delle immagini| Booleano| VERO| Falso|| Specifica un valore booleano che indica le immagini compresse automaticamente dall'applicazione nella cartella di lavoro.|
+| Compressione automatica delle immagini| Booleano| VERO| Falso||Specifica un valore booleano che indica le immagini compresse automaticamente dall'applicazione nella cartella di lavoro.|
 | Ripristino automatico| Booleano| VERO| Falso|| Indica se il file è contrassegnato per il ripristino automatico.|
 | BuildVersion| Corda| VERO| Falso|| Specifica la versione pubblica incrementale dell'applicazione.|
-| ModalitàCalc| Corda| VERO| Falso||Specifica se calcolare le formule manualmente, automaticamente o automaticamente ad eccezione di più operazioni su tabelle.|
+| ModalitàCalc| Corda| VERO| Falso|| Specifica se calcolare le formule manualmente, automaticamente o automaticamente ad eccezione di più operazioni su tabelle.|
 | ID calcolo| Corda| VERO| Falso|| Specifica la versione del motore di calcolo utilizzato per calcolare i valori nella cartella di lavoro.|
 | ControllaComptibilità| Booleano| VERO| Falso|| Indica se verificare la compatibilità durante il salvataggio della cartella di lavoro. Osservazioni: il valore predefinito è true.|
 | CheckExcelRestrizione| Booleano| VERO| Falso||Se controllare la restrizione del file Excel quando l'utente modifica gli oggetti correlati alle celle. Ad esempio, Excel non consente l'immissione di valori di stringa più lunghi di 32K. Quando inserisci un valore più lungo di 32 KB come Cell.PutValue(string), se questa proprietà è vera, otterrai un'eccezione. Se questa proprietà è false, accetteremo il valore della stringa di input come valore della cella in modo che in seguito potrai restituire il valore della stringa completo per altri formati di file come CSV. Tuttavia, se hai impostato un tipo di valore che non è valido per il formato di file Excel, non dovresti salvare la cartella di lavoro come formato di file Excel in un secondo momento. Altrimenti potrebbe esserci un errore imprevisto per il file Excel generato.|

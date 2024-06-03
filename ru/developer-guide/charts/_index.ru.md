@@ -7,6 +7,7 @@ aliases: [/working-with-charts/]
 keywords: REST API, spreadsheets, excel, chart
 description: "Cells.Облако API для Excel работает: графики работают"
 weight: 100
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, диаграммы
 ---
 ## Работа с диаграммами в файле Excel.
 

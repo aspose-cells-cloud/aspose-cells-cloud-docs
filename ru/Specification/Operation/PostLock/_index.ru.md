@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postlock/
 description: Заблокировать Excel файлы
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostLock
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostLock" >}}
@@ -15,7 +16,7 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Имя параметра, тип, описание" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="пароль,строка,Пароль, необходимый для открытия файла Excel." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="пароль, строка, пароль, необходимый для открытия файла Excel." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/ProtectionController/PostLock\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

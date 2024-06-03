@@ -6,6 +6,7 @@ url: /ru/batch/convert
 keywords: Batch conversion of multiple excel files
 description: Aspose.Cells Cloud API поддерживает пакетное преобразование нескольких файлов Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 100
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, пакетное преобразование
 ---
  Этот REST API указывает на `batch conversion` подходящих файлов.
  

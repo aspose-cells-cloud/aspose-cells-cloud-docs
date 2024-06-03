@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/deleteworksheet/
 description: Elimina un foglio di lavoro nella cartella di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, Elimina foglio di lavoro
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheet" >}}

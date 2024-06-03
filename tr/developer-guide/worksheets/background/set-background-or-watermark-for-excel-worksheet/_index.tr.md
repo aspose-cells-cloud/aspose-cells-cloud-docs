@@ -8,6 +8,7 @@ aliases: [/set-background-or-watermark-for-excel-worksheet/]
 keywords: Delete an Excel worksheet on an Excel workbook
 description: Aspose.Cells Cloud REST API, Excel çalışma kitabındaki Excel çalışma sayfasının silinmesini destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 180
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel çalışma sayfasında arka planı ayarla
 ---
 Bu REST API, `add worksheet background image`'i gösterir.
  
@@ -24,7 +25,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/background
 |:- |:- |:- |:- |
 | isim| sicim| yol||
 | sayfaAdı| sicim| yol||
-| png|| vücut||
+|png|| vücut||
 | dosya| sicim| sorgu||
 | depolamaAdı| sicim| sorgu| depolama adı.|
  

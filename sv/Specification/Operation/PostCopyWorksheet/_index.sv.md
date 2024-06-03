@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/postcopyworksheet/
 description: Kopiera innehåll och format från ett annat kalkylblad
+kwords: Excel, Office, Kalkylblad, Cloud REST API, PostCopyWorksheet
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostCopyWorksheet" >}}

@@ -4,19 +4,20 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/model/listbox/
 description: "Aspose.Cells Specifica del modello cloud: ListBox. Gestisci facilmente Excel e altri fogli di calcolo con funzionalità come apertura, generazione, modifica, divisione, unione, confronto e conversione"
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, ListBox
 weight: 50
 ---
 ## **listBox**
 
- 
+ Rappresenta un oggetto casella di riepilogo.
 
 | Nome della proprietà| Tipo di proprietà| Nullabile| Sola lettura| Valore di default| Descrizione|
 |:- |:- |:- |:- |:- |:- |
 | Intervallo di input| Corda| VERO| Falso|||
 | Conteggio articoli| Numero intero| VERO| Falso|| Ottiene il numero di elementi nella casella di riepilogo.|
-| Cambio pagina| Numero intero| VERO| Falso|| Specifica l'entità della modifica del valore del controllo quando l'utente fa clic sull'area pagina su o pagina giù della barra di scorrimento.|
+| Cambio pagina| Numero intero| VERO| Falso||Specifica l'entità della modifica del valore del controllo quando l'utente fa clic sull'area pagina su o pagina giù della barra di scorrimento.|
 | Celle selezionate| Contenitore| VERO| Falso|| Ottiene le celle selezionate. Restituisce null se l'intervallo di input non è impostato o non è selezionato alcun elemento|
-| Indice selezionato| Numero intero| VERO| Falso|| Ottiene o imposta il numero di indice dell'elemento attualmente selezionato in una casella di riepilogo o in una casella combinata. A base zero.|
+| Indice selezionato| Numero intero| VERO| Falso||Ottiene o imposta il numero di indice dell'elemento attualmente selezionato in una casella di riepilogo o in una casella combinata. A base zero.|
 | Tipo di selezione| Corda| VERO| Falso|| Ottiene o imposta la modalità di selezione della casella di riepilogo specificata.|
 | Ombra| Booleano| VERO| Falso|| Indica se la casella combinata ha un'ombreggiatura 3D.|
 | Nome| Corda| VERO| Falso|||
@@ -36,7 +37,7 @@ weight: 50
 | X| Numero intero| VERO| Falso|||
 | Y| Numero intero| VERO| Falso|||
 | Angolo di rotazione| Galleggiante| VERO| Falso|||
-| HtmlText| Corda| VERO| Falso|||
+|HtmlText| Corda| VERO| Falso|||
 | Testo| Corda| VERO| Falso|||
 | Testo alternativo| Corda| VERO| Falso|||
 | TestoAllineamento orizzontale| Corda| VERO| Falso|||
@@ -57,4 +58,5 @@ weight: 50
 | Collegamento ipertestuale| Corda| VERO| Falso|||
 | collegamento| Classe: collegamento| VERO| Falso|||
 
-**Nome del genitore** : (Forma)[forma]
+**Nome del genitore** : [Forma](/specification/model/shape)
+

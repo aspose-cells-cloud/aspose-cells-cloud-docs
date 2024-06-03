@@ -8,6 +8,7 @@ aliases: [/add-an-icon-filter/,/autofilter/add-an-icon-filter/]
 keywords: Adds an icon filter on an Excel worksheet
 description: Aspose.Cells Cloud API stöder att lägga till ett ikonfilter på ett Excel kalkylblad.SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 65
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Lägg till ett ikonfilter i ett Excel kalkylblad
 ---
 Denna REST API indikerar att lägga till ett `icon filter` på ett Excel arbetsblad.
 
@@ -23,11 +24,11 @@ Begärans parametrar är:
 
 | Parameternamn| Typ| Sökväg/Frågesträng/HTTPBody|Beskrivning|
 |:- |:- |:- |:- |
-| namn| sträng| Väg|Arbetsbokens namn.|
+| namn| sträng| Väg| Arbetsbokens namn.|
 | arknamn| sträng| Väg| Kalkylbladets namn.|
 |räckvidd|sträng| Fråga||
 |fieldIndex|heltal| Fråga||
-|iconSetType|sträng| Fråga| Arrows3/ArrowsGray3/Flags3/Signs3/Symbols3/Symbols32/TrafficLights31/TrafficLights32/Arrows4/ArrowsGray4/Rating4/RedToBlack4/TrafficLights4/Arrows5/Arrows/Arrows/ArrowsGray5R5/Bre ustomSet/Smilies3/ColorSmilies3|
+|iconSetType|sträng| Fråga|Arrows3/ArrowsGray3/Flags3/Signs3/Symbols3/Symbols32/TrafficLights31/TrafficLights32/Arrows4/ArrowsGray4/Rating4/RedToBlack4/TrafficLights4/Arrows5/Arrows/Arrows/Arrows/Stjärnor/Stjärnor5Grå5/R5/Nej ne/CustomSet/Smilies3/ColorSmilies3|
 |iconId|heltal| Fråga||
 |matchBlanks|sträng| Fråga|sant falskt|
 |uppdatera|sträng| Fråga|sant falskt|

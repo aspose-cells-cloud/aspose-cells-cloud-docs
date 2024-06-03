@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/getworksheetvalidation/
 description: Çalışma sayfasındaki dizinine göre bir doğrulama alma
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, GetWorksheetValidation
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetValidation" >}}

@@ -3,6 +3,7 @@ title: Hämta MinDataColumn från Excel Workshee
 type: docs
 url: /sv/get-mindatacolumn-from-excel-worksheet/
 weight: 110
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Hämta MinDataColumn från Excel Arbetsblad
 ---
 Denna REST API indikerar visar få ett `mindatacolumn` i en Excel fil när parametern `cellOrMethodName` är `mindatacolumn`.
 

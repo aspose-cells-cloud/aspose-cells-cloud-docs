@@ -3,6 +3,7 @@ title: Получите MaxColumn из рабочей таблицы Excel.
 type: docs
 url: /ru/get-maxcolumn-from-excel-worksheet/
 weight: 60
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, получить MaxColumn из рабочего листа Excel
 ---
 Этот REST API указывает, что показывает получение `maxcolumn` в файле Excel, когда параметр `cellOrMethodName` равен `maxcolumn`.
 

@@ -6,6 +6,7 @@ url: /ru/tasks/cells-object-operate/
 aliases: [/working-with-cellsobjectoperate-task/]
 description: "Cells.Облако API для Excel работает: задача управления объектом ячеек"
 weight: 20
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, работа с задачей CellsObjectOperate
 ---
 Этот REST API управляет объектом ячеек `task`.
 
@@ -33,7 +34,7 @@ weight: 20
 |Имя параметра|Тип|Описание|
 |:- |:- |:- |
 | Индекс диаграммы| целое число||
-| Тип диаграммы| нить||
+|Тип диаграммы| нить||
 | Верхний левый ряд| целое число||
 | Верхний левый столбец| целое число||
 | Нижний правый ряд| целое число||
@@ -80,7 +81,7 @@ weight: 20
 | Индекс сводной таблицы| целое число||
 | PivotFieldRows|целое число[]||
 | PivotFieldСтолбцы|целое число[]||
-|PivotFieldData|целое число[]||
+| PivotFieldData|целое число[]||
 
 
 **ФормаОператеПараметр**

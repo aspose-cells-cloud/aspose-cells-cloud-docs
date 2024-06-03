@@ -7,6 +7,7 @@ url: /sv/worksheets/get-worksheet/
 keywords: Get worksheet to different format from an Excel worksheet
 description: Aspose.Cells Cloud REST API stöder att få kalkylblad till ett annat format än ett Excel kalkylblad. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 10
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Hämta kalkylblad från ett Excel kalkylblad
 ---
 Denna REST API indikerar `get worksheet description` eller `export worksheet to kinds of format file`.
  

@@ -8,6 +8,7 @@ aliases: [/delete-background-in-workbook/,/workbook/delete-background/]
 keywords: Delete background on an Excel workbook
 description: Aspose.Cells Cloud REST API stöder radering av bakgrund på en Excel-arbetsbok på en Excel-fil. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 170
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Ta bort bakgrund på en Excel arbetsbok
 ---
 Denna REST API anger att bakgrunden ska tas bort på en Excel arbetsbok.
 
@@ -27,7 +28,7 @@ Denna REST API anger att bakgrunden ska tas bort på en Excel arbetsbok.
 
  De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDecryptDDeleteWorkbookBackgroundocument) definierar ett allmänt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
 
- Du kan använda**cURL** kommandoradsverktyg för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man ringer till Cloud API med cURL.
+ Du kan använda**cURL**kommandoradsverktyg för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man ringer till Cloud API med cURL.
 
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}

@@ -6,6 +6,7 @@ url: /sv/file/upload/
 keywords: Learn how to upload file with Aspose Cells Cloud REST API
 description: Lär dig hur du laddar upp filer med Aspose Cells Cloud REST API SDK-stöd för olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Ladda upp fil
 ---
 Denna REST API indikerar `upload file`.
 

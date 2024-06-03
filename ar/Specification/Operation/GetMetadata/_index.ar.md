@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/getmetadata/
 description: الحصول على خصائص وثيقة الخلايا
+kwords: Excel، Office، جدول البيانات، Cloud REST API، GetMetadata
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetMetadata" >}}

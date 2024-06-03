@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/postclearobjects/
 description: Rensa interna element i Excel-filer och generera utdatafiler i olika format
+kwords: Excel, Office, Kalkylblad, Cloud REST API, PostClearObjects
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostClearObjects" >}}

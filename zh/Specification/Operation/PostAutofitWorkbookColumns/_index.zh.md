@@ -1,27 +1,28 @@
 ﻿---
-title: 发布自动调整工作簿列
+title: PostAutofitWorkbookColumn
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/postautofitworkbookcolumns/
-description: 工作簿中的自动调整列
+description: 自动调整工作簿中的列
+kwords: Excel，Office，电子表格，云 REST API，PostAutofitWorkbookColumns
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostAutofitWorkbookColumns" >}}
 {{< blocks/products/cells/docs-title titlemsg="Autofit columns in the workbook." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/autofitcolumns,POST,工作簿中的自动调整列。,<a href=\'https://apireference.aspose.cloud/cells/#/Workbook/PostAutofitWorkbookColumns\'>PostAutofitWorkbookColumns</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/autofitcolumns,POST,自动调整工作簿中的列。,<a href=\'https://apireference.aspose.cloud/cells/#/Workbook/PostAutofitWorkbookColumns\'>PostAutofitWorkbookColumns</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="参数名称、类型、描述" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="名称、字符串、" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="名称，字符串，" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="startColumn,integer,起始列索引。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="endColumn,integer,结束列索引。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="startColumn，integer，起始列索引。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="endColumn，integer，结束列索引。" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="文件夹，字符串，文件所在的文件夹。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,文件所在的存储名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName，string，文件所在的存储名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/WorkbookController/PostAutofitWorkbookColumns\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/model/fillformat/
 description: "Aspose.Cells Spécification du modèle cloud : FillFormat. Gérez sans effort Excel et d'autres feuilles de calcul avec des fonctionnalités telles que l'ouverture, la génération, l'édition, le fractionnement, la fusion, la comparaison et la conversion."
+kwords: Excel, Office, feuille de calcul, Cloud REST API, FillFormat
 weight: 50
 ---
 ## **remplirFormat**
 
- 
+ Encapsule l'objet qui représente le formatage de remplissage d'une forme.
 
 | Nom de la propriété| Type de propriété| Nullable| Lecture seulement| Valeur par défaut| Description|
 |:- |:- |:- |:- |:- |:- |

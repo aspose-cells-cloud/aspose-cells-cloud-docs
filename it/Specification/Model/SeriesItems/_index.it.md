@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/model/seriesitems/
 description: "Aspose.Cells Specifica del modello cloud: SeriesItems. Gestisci facilmente Excel e altri fogli di calcolo con funzionalità come apertura, generazione, modifica, divisione, unione, confronto e conversione"
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, Articoli di serie
 weight: 50
 ---
 ## **serieArticoli**
@@ -18,4 +19,5 @@ weight: 50
 | Elenco serie| Contenitore| VERO| Falso|||
 | collegamento| Classe: collegamento| VERO| Falso|||
 
-**Nome del genitore** : (ElementoLink)[elementolink]
+**Nome del genitore** : [Elemento di collegamento](/specification/model/linkelement)
+

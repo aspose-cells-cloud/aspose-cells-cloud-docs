@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/postreplace/
 description: Belirtilen metni Excel dosyalarındaki yeni metinle değiştirin
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PostReplace
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostReplace" >}}

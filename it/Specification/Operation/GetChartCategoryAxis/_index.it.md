@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/getchartcategoryaxis/
 description: Recupera le descrizioni dell'asse delle serie di grafici nel grafico
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, GetChartCategoryAxis
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetChartCategoryAxis" >}}

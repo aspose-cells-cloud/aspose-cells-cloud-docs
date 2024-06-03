@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/getworkbooknamevalue/
 description: Получить значение именованного диапазона в книге
+kwords: Excel, Office, электронная таблица, Cloud REST API, GetWorkbookNameValue
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorkbookNameValue" >}}

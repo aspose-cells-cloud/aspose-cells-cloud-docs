@@ -1,29 +1,30 @@
 ﻿---
-title: PostWorksheetCellsRangesCop
+title: PostArbeitsblattZellenBereicheCop
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postworksheetcellsrangescopy/
 description: Kopieren Sie Inhalte aus dem Quellbereich in den Zielbereich im Arbeitsblatt
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostWorksheetCellsRangesCopy
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangesCopy" >}}
 {{< blocks/products/cells/docs-title titlemsg="Copy content from the source range to the destination range in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges/copy,POST,Inhalt vom Quellbereich in den Zielbereich im Arbeitsblatt kopieren.,<a href=\'https://apireference.aspose.cloud/cells /#/Ranges/PostWorksheetCellsRangesCopy\'>PostWorksheetCellsRangesCopy</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges/copy,POST,Inhalt aus dem Quellbereich in den Zielbereich im Arbeitsblatt kopieren.,<a href=\'https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangesCopy\'>PostWorksheetCellsRangesCopy</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Original-Arbeitsmappenordner." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Ursprünglicher Arbeitsmappenordner." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Speichername." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="rangeOperate,class:rangecopyrequest,RangeCopyRequestcopydata,copystyle,copyto,copyvalue" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="rangeOperate, Klasse: Bereichskopieranforderung, Bereichskopieranforderungskopierdaten, Kopierstil, Kopieren nach, Kopierwert" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

@@ -3,19 +3,20 @@ title: PostDataCleansin
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postdatacleansing/
-description: Die Datenbereinigung von Tabellenkalkulationsdateien ist ein Datenverwaltungsprozess, der dazu dient, Fehler, Unvollständigkeiten, Duplikate oder Ungenauigkeiten in Tabellen und Bereichen zu identifizieren, zu korrigieren und zu entfernen
+description: Die Datenbereinigung von Tabellenkalkulationsdateien ist ein Datenverwaltungsprozess, der verwendet wird, um Fehler, Unvollständigkeiten, Duplikate oder Ungenauigkeiten in Tabellen und Bereichen zu identifizieren, zu korrigieren und zu entfernen.
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostDataCleansing
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostDataCleansing" >}}
 {{< blocks/products/cells/docs-title titlemsg="Data cleansing of spreadsheet files is a data management process used to identify, correct, and remove errors, incompleteness, duplicates, or inaccuracies in tables and ranges." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/datacleansing,POST,Die Datenbereinigung von Tabellenkalkulationsdateien ist ein Datenverwaltungsprozess, mit dem Fehler, Unvollständigkeiten, Duplikate oder Ungenauigkeiten in Tabellen und Bereichen identifiziert, korrigiert und entfernt werden.,<a href=\'https://apireference. aspose.cloud/cells/#/DataProcessing/PostDataCleansing\'>PostDataCleansing</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/datacleansing,POST,Die Datenbereinigung von Tabellenkalkulationsdateien ist ein Datenverwaltungsprozess, der zum Identifizieren, Korrigieren und Entfernen von Fehlern, Unvollständigkeiten, Duplikaten oder Ungenauigkeiten in Tabellen und Bereichen verwendet wird.,<a href=\'https://apireference.aspose.cloud/cells/#/DataProcessing/PostDataCleansing\'>PostDataCleansing</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="dataCleansingRequest,class:datacleansingrequest," >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="dataCleansingRequest,Klasse:datacleansingrequest," >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

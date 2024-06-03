@@ -3,25 +3,26 @@ title: GetWorksheetMergedCel
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/getworksheetmergedcell/
-description: Rufen Sie die Beschreibung einer verbundenen Zelle anhand ihres Index im Arbeitsblatt ab
+description: Abrufen der Beschreibung einer verbundenen Zelle anhand ihres Index im Arbeitsblatt
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, GetWorksheetMergedCell
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetMergedCell" >}}
 {{< blocks/products/cells/docs-title titlemsg="Retrieve description of a merged cell by its index in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/mergedCells/{mergedCellIndex},GET,Beschreibung einer zusammengeführten Zelle anhand ihres Index im Arbeitsblatt abrufen.,<a href=\'https://apireference.aspose.cloud/ celles/#/Worksheets/GetWorksheetMergedCell\'>GetWorksheetMergedCell</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/mergedCells/{mergedCellIndex},GET,Beschreibung einer zusammengeführten Zelle anhand ihres Index im Arbeitsblatt abrufen.,<a href=\'https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetMergedCell\'>GetWorksheetMergedCell</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Arbeitsblattname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="mergedCellIndex,integer,Index der zusammengeführten Zellen." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Blattname, Zeichenfolge, Arbeitsblattname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="mergedCellIndex,Integer,Zusammengeführter Zellenindex." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/WorksheetsController/GetWorksheetMergedCell\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

@@ -2,157 +2,160 @@
 title: نموذج
 second_title: Aspose.Cells Cloud Documen
 type: docs
+kwords: Excel، Office، جدول البيانات، Cloud REST API، نموذج البيانات
 weight: 50
 ---
 - [ObjectExistsExtensions](objectexistsextensions)  :   
 - [إصدار الملف](fileversion)  :   
 - [ملف التخزين](storagefile) : معلومات الملف أو المجلد
 - [GoogleDriveStorageFile](googledrivestoragefile)  :   
-- [فوق المتوسط](aboveaverage) وصف قاعدة التنسيق الشرطي فوق المتوسط. تقوم قاعدة التنسيق الشرطي هذه بتمييز الخلايا التي تكون أعلى أو أقل من المتوسط لجميع القيم الموجودة في النطاق.
+- [فوق المتوسط](aboveaverage) : وصف قاعدة التنسيق الشرطي فوق المتوسط. تقوم قاعدة التنسيق الشرطي هذه بتمييز الخلايا التي تكون أعلى أو أقل من المتوسط لجميع القيم الموجودة في النطاق.
 - [AbstractCalculationEngine](abstractcalculationengine) : يمثل محرك الحساب المخصص للمستخدم لتوسيع محرك الحساب الافتراضي Aspose.Cells.
 - [AbstractCalculationMonitor](abstractcalculationmonitor) : مراقب للمستخدم لتتبع التقدم المحرز في حساب الصيغة.
-- [فلتر السيارات](autofilter)  :   
-- [خيارات AutoFitter](autofitteroptions)  :   
-- [حدود](border)  :   
-- [خيارات الحساب](calculationoptions)  :   
-- [خلية](cell)  :   
-- [منطقة الخلية](cellarea)  :   
-- [Cells](cells)  :   
+- [فلتر السيارات](autofilter) : يمثل التصفية التلقائية لورقة العمل المحددة.
+- [خيارات AutoFitter](autofitteroptions) : يمثل جميع خيارات المثبت التلقائي.
+- [حدود](border) : يقوم بتغليف الكائن الذي يمثل حدود الخلية.
+- [خيارات الحساب](calculationoptions) : يمثل خيارات للحساب.
+- [خلية](cell) : يقوم بتغليف الكائن الذي يمثل خلية مصنف واحدة.
+- [منطقة الخلية](cellarea) : تمثل مساحة من الخلايا.
+- [Cells](cells) : تغليف مجموعة من الكائنات ذات الصلة بالخلية، مثل Aspose.Cells.Cell، Aspose.Cells.Row، ... إلخ.
 - [CellsCloudFileInfo](cellscloudfileinfo) : Cells وصف معلومات الملف السحابي.
-- [لون الخلايا](cellscolor)  :   
+- [لون الخلايا](cellscolor) : يمثل جميع أنواع الألوان.
 - [خصائص وثيقة الخلايا](cellsdocumentproperties) : Excel عقار
 - [CellsDocumentProperty](cellsdocumentproperty) : Cells خاصية الوثيقة .
-- [لون](color) : لون.
+- [لون](color) لون.
 - [مرشح الألوان](colorfilter) : مرشح الألوان.
 - [مقياس الألوان](colorscale) : وصف قاعدة التنسيق الشرطي ColorScale. تقوم قاعدة التنسيق الشرطي هذه بإنشاء تدرج ألوان متدرج على الخلايا.
-- [عمود](column)  :   
-- [أعمدة](columns)  :   
-- [تعليق](comment)  :   
-- [تعليقات](comments)  :   
+- [عمود](column) : يمثل عمودًا واحدًا في ورقة العمل.
+- [أعمدة](columns) : الأعمدة
+- [تعليق](comment) : يقوم بتغليف الكائن الذي يمثل تعليق الخلية.
+- [تعليقات](comments) : يغلف مجموعة من الكائنات.
 - [تنسيق مشروط](conditionalformatting)  :   
-- [أيقونة التنسيق الشرطي](conditionalformattingicon)  :   
-- [التنسيقات الشرطية](conditionalformattings)  :   
-- [قيمة التنسيق الشرطي](conditionalformattingvalue)  :   
+- [أيقونة التنسيق الشرطي](conditionalformattingicon) : يمثل الرمز المخصص لقاعدة التنسيق الشرطي.
+- [التنسيقات الشرطية](conditionalformattings) : يغلف مجموعة من الكائنات.
+- [قيمة التنسيق الشرطي](conditionalformattingvalue) : يصف قيم نقاط الاستيفاء في مقياس التدرج أو dataBar أو IconSet.
 - [خيارات النسخ](copyoptions) : يمثل خيارات النسخ.
 - [معايير التصفية المتعددة](criteriamultiplefilter)  :   
-- [تصفية مخصص](customfilter)  :   
+- [تصفية مخصص](customfilter) : يمثل عامل التصفية المخصص.
 - [شريط البيانات](databar) : وصف قاعدة التنسيق الشرطي لـ DataBar. تعرض قاعدة التنسيق الشرطي شريط بيانات متدرجًا في نطاق الخلايا.
-- [DataBarBorder](databarborder)  :   
-- [تنظيف البيانات](datacleansing) : تنظيف البيانات
-- [DataColumnFillValue](datacolumnfillvalue)  :   
-- [تعبئة البيانات](datafill)  :   
-- [قيمة تعبئة البيانات](datafillvalue)  :   
+- [DataBarBorder](databarborder) : يمثل حدود أشرطة البيانات المحددة بواسطة قاعدة التنسيق الشرطي.
+- [تنظيف البيانات](datacleansing) : يمثل تنظيف البيانات.
+- [DataColumnFillValue](datacolumnfillvalue) : يمثل أن عمود البيانات مملوء بالقيمة المحددة.
+- [تعبئة البيانات](datafill) : يمثل تعبئة البيانات.
+- [قيمة تعبئة البيانات](datafillvalue) : يمثل أن البيانات يتم ملؤها بالقيمة المحددة.
+- [DataItem](dataitem) : يمثل عنصر البيانات.
+- [DataItemType](dataitemtype) : يمثل نوع عنصر البيانات.
 - [فارز البيانات](datasorter) : وصف ملخص لـ DataSorter.
 - [DataSorterKey](datasorterkey) : يمثل مفتاح فارز البيانات.
-- [DateTimeGroupItem](datetimegroupitem)  :   
-- [منطقة إلغاء البيانات المكررة](deduplicationregion)  :   
-- [مرشح ديناميكي](dynamicfilter)  :   
-- [معلومات الملف](fileinfo) : معلومات الملف
+- [مصدر البيانات](datasource) : يمثل مصدر البيانات.
+- [نوع مصدر البيانات](datasourcetype) : يمثل نوع مصدر البيانات.
+- [DateTimeGroupItem](datetimegroupitem) : يمثل إعداد مجموعة التاريخ والوقت.
+- [منطقة إلغاء البيانات المكررة](deduplicationregion) : يمثل منطقة إلغاء البيانات المكررة.
+- [مرشح ديناميكي](dynamicfilter) : يمثل المرشح الديناميكي.
+- [معلومات الملف](fileinfo) : يمثل معلومات الملف.
+- [مصدر الملف](filesource)  :   
+- [نوع مصدر الملف](filesourcetype)  :   
 - [نتيجة الملفات](filesresult)  :   
-- [FilterColumn](filtercolumn)  :   
-- [الخط](font)  :   
-- [إعداد الخط](fontsetting)  :   
-- [FormatCondition](formatcondition)  :   
+- [FilterColumn](filtercolumn) : يمثل مرشحًا لعمود واحد. كائن التصفية هو عضو في مجموعة عوامل التصفية
+- [الخط](font) : لتغليف كائن الخط المستخدم في جدول البيانات.
+- [إعداد الخط](fontsetting) : يمثل نطاقًا من الأحرف داخل نص الخلية.
+- [FormatCondition](formatcondition) : يمثل حالة التنسيق الشرطي.
 - [FormulaFormatCondition](formulaformatcondition)  :   
 - [إعدادات الصيغة](formulasettings) : إعدادات الصيغ والحساب.
 - [إعدادات العولمة](globalizationsettings) : يمثل إعدادات العولمة.
-- [HorizontalPageBreak](horizontalpagebreak)  :   
-- [فواصل الصفحات الأفقية](horizontalpagebreaks)  :   
-- [الارتباط التشعبي](hyperlink)  :   
-- [الارتباطات التشعبية](hyperlinks)  :   
-- [مرشح الأيقونات](iconfilter)  :   
-- [IconSet](iconset) وصف قاعدة التنسيق الشرطي IconSet. تطبق قاعدة التنسيق الشرطي هذه الرموز على الخلايا وفقًا لقيمها.
+- [HorizontalPageBreak](horizontalpagebreak) : يقوم بتغليف الكائن الذي يمثل فاصل الصفحات الأفقي.
+- [فواصل الصفحات الأفقية](horizontalpagebreaks) : يغلف مجموعة من الكائنات.
+- [الارتباط التشعبي](hyperlink) : يقوم بتغليف الكائن الذي يمثل ارتباطًا تشعبيًا.
+- [الارتباطات التشعبية](hyperlinks) : يغلف مجموعة من الكائنات.
+- [مرشح الأيقونات](iconfilter) : يمثل مرشح الأيقونة.
+- [IconSet](iconset) : وصف قاعدة التنسيق الشرطي IconSet. تطبق قاعدة التنسيق الشرطي هذه الرموز على الخلايا وفقًا لقيمها.
 - [وصلة](link)  :   
 - [LinkElement](linkelement)  :   
-- [خيارات التحميل](loadoptions)  :   
+- [خيارات التحميل](loadoptions) : يمثل خيارات تحميل الملف.
 - [MergedCell](mergedcell)  :   
 - [الخلايا المدمجة](mergedcells)  :   
 - [مرشح متعدد](multiplefilter)  :   
-- [مرشحات متعددة](multiplefilters)  :   
-- [اسم](name)  :   
-- [الأسماء](names)  :   
+- [مرشحات متعددة](multiplefilters) : يمثل مجموعة المرشحات المتعددة.
+- [اسم](name) : يمثل اسمًا محددًا لنطاق من الخلايا.
+- [الأسماء](names) : يمثل مجموعة من كافة الكائنات الموجودة في جدول البيانات.
 - [تنسيق شريط سلبي](negativebarformat) : يمثل إعدادات الألوان لأشرطة البيانات للقيم السالبة التي تم تحديدها بواسطة قاعدة التنسيق الشرطي لشريط البيانات.
 - [قسم الصفحة](pagesection)  :   
-- [اعداد الصفحة](pagesetup)  :   
+- [اعداد الصفحة](pagesetup) : إعداد صفحة الطباعة إكسل
 - [خيارات اللصق](pasteoptions) : يمثل خيارات اللصق الخاصة.
-- [خيارات PDF الأمنية](pdfsecurityoptions)  :   
+- [خيارات PDF الأمنية](pdfsecurityoptions) : خيارات التشفير وأذونات الوصول لمستند PDF. PDF/A لا يسمح بإعدادات الأمان.
 - [حماية](protection) : يمثل الأنواع المختلفة لخيارات الحماية المتاحة لورقة العمل.
 - [ProtectSheetParameter](protectsheetparameter)  :   
-- [جدول الاستعلام](querytable) : يمثل معلومات جدول الاستعلام.
-- [يتراوح](range)  :   
-- [نطاقات](ranges)  :   
-- [صف](row)  :   
-- [الصفوف](rows)  :   
-- [حفظ النتيجة](saveresult)  :   
+- [يتراوح](range) يقوم بتغليف الكائن الذي يمثل نطاقًا من الخلايا داخل جدول بيانات.
+- [نطاقات](ranges) : يغلف مجموعة من الكائنات.
+- [صف](row) : يمثل صفًا واحدًا في ورقة العمل.
+- [الصفوف](rows) : يجمع الكائنات التي تمثل الصفوف الفردية في ورقة العمل.
+- [حفظ النتيجة](saveresult) : يمثل حفظ النتيجة.
 - [خيارات الحفظ المرقّمة](paginatedsaveoptions) : يمثل خيارات ترقيم الصفحات.
-- [قيمة واحدة](singlevalue)  :   
-- [مفتاح الفرز](sortkey)  :   
-- [SplitResult](splitresult)  :   
-- [SplitResultDocument](splitresultdocument)  :   
-- [أسلوب](style)  :   
-- [StyleFormatCondition](styleformatcondition)  :   
-- [الأنماط](styles)  :   
-- [TextFormatCondition](textformatcondition)  :   
-- [TextItem](textitem)  :   
-- [عناصر نصية](textitems)  :   
-- [خيارات النص](textoptions)  :   
-- [لون الموضوع](themecolor)  :   
-- [TimePeriodFormatCondition](timeperiodformatcondition)  :   
-- [أعلى 10](top10) وصف قاعدة التنسيق الشرطي Top10. تقوم قاعدة التنسيق الشرطي هذه بتمييز الخلايا التي تقع قيمها في قوس N العلوي أو N السفلي، كما هو محدد.
-- [مرشح Top10](top10filter)  :   
-- [تصديق](validation)  :   
-- [التحقق من الصحة](validations)  :   
-- [VerticalPageBreak](verticalpagebreak)  :   
-- [فواصل الصفحات العمودية](verticalpagebreaks)  :   
-- [دفتر العمل](workbook)  :   
-- [إعدادات المصنف](workbooksettings)  :   
-- [ورقة عمل](worksheet)  :   
-- [أوراق عمل](worksheets)  :   
+- [قيمة واحدة](singlevalue) : يمثل قيمة واحدة.
+- [مفتاح الفرز](sortkey) : يمثل مفتاح الفرز.
+- [SplitResult](splitresult) : يمثل نتيجة تقسيم الملف.
+- [أسلوب](style) : يمثل نمط عرض مستند Excel، مثل الخط واللون والمحاذاة والحدود وما إلى ذلك. يحتوي كائن النمط على كافة سمات النمط (الخط وتنسيق الأرقام والمحاذاة وما إلى ذلك) كخصائص.
+- [StyleFormatCondition](styleformatcondition) : يمثل حالة تنسيق النمط.
+- [الأنماط](styles) : يمثل جمع نمط البيانات.
+- [TextFormatCondition](textformatcondition) : يمثل حالة تنسيق النص.
+- [TextItem](textitem) : يمثل عنصر النص.
+- [عناصر نصية](textitems) يمثل مجموعة عناصر النص.
+- [خيارات النص](textoptions) : يمثل خيارات النص.
+- [لون الموضوع](themecolor) : يمثل لون السمة.
+- [TimePeriodFormatCondition](timeperiodformatcondition) : يمثل حالة تنسيق الفترة الزمنية.
+- [أعلى 10](top10) : وصف قاعدة التنسيق الشرطي Top10. تقوم قاعدة التنسيق الشرطي هذه بتمييز الخلايا التي تقع قيمها في قوس N العلوي أو N السفلي، كما هو محدد.
+- [مرشح Top10](top10filter) : يمثل أفضل 10 مرشحات.
+- [تصديق](validation) : يمثل التحقق من صحة البيانات.الإعدادات.
+- [التحقق من الصحة](validations) : يمثل جمع التحقق من صحة البيانات.
+- [VerticalPageBreak](verticalpagebreak) : يقوم بتغليف الكائن الذي يمثل فاصل الصفحات العمودي.
+- [فواصل الصفحات العمودية](verticalpagebreaks) : يغلف مجموعة من الكائنات.
+- [دفتر العمل](workbook) : يمثل كائنًا جذرًا لإنشاء جدول بيانات Excel.
+- [إعدادات المصنف](workbooksettings) : يمثل كافة إعدادات المصنف.
+- [ورقة عمل](worksheet) : يقوم بتغليف الكائن الذي يمثل ورقة عمل واحدة.
+- [أوراق عمل](worksheets) : يغلف مجموعة من الكائنات.
 - [حماية الكتابة](writeprotection) : تحديد إعدادات الحماية ضد الكتابة لمصنف.
 - [XmlDataBinding](xmldatabinding) : يمثل معلومات ربط بيانات Xml.
 - [XmlMap](xmlmap) : يمثل معلومات خريطة XML.
-- [CellsObjectOperateTaskParameter](cellsobjectoperatetaskparameter)  :   
-- [ConvertTaskParameter](converttaskparameter)  :   
-- [ConvertWorksheetTaskParameter](convertworksheettaskparameter)  :   
-- [مصدر الملف](filesource)  :   
-- [نوع مصدر الملف](filesourcetype)  :   
-- [ImportDataTaskParameter](importdatataskparameter)  :   
-- [النتيجةالوجهة](resultdestination)  :   
-- [نوع الوجهة النتيجة](resultdestinationtype)  :   
-- [مصدر النتيجة](resultsource)  :   
-- [SaveFilesToCloudResult](savefilestocloudresult)  :   
-- [SaveResultTaskParameter](saveresulttaskparameter)  :   
-- [SmartMarkerTaskParameter](smartmarkertaskparameter)  :   
-- [SplitWorkbookTaskParameter](splitworkbooktaskparameter)  :   
-- [TaskData](taskdata)  :   
-- [وصف المهمة](taskdescription)  :   
-- [معلمة المهمة](taskparameter)  :   
-- [TaskResultParameter](taskresultparameter)  :   
-- [TaskRunResult](taskrunresult)  :   
-- [نوع المهمة](tasktype)  :   
-- [ChartOperateParameter](chartoperateparameter)  :   
-- [ListObjectOperateParameter](listobjectoperateparameter)  :   
-- [كائن تشغيل](operateobject)  :   
-- [OperateObjectPosition](operateobjectposition)  :   
-- [OperateObjectType](operateobjecttype)  :   
-- [معلمة التشغيل](operateparameter)  :   
-- [نوع التشغيل](operatetype)  :   
-- [PageBreakOperateParameter](pagebreakoperateparameter)  :   
-- [PageSetupOperateParameter](pagesetupoperateparameter)  :   
-- [PivotTableOperateParameter](pivottableoperateparameter)  :   
-- [ShapeOperateParameter](shapeoperateparameter)  :   
-- [WorkbookOperateParameter](workbookoperateparameter)  :   
-- [إعدادات المصنفOperateParameter](workbooksettingsoperateparameter)  :   
-- [ورقة عملOperateParameter](worksheetoperateparameter)  :   
-- [ListColumn](listcolumn)  :   
-- [ListObject](listobject)  :   
-- [كائنات القائمة](listobjects)  :   
+- [CellsObjectOperateTaskParameter](cellsobjectoperatetaskparameter) : يمثل معلمة مهمة كائن الخلايا.
+- [ConvertTaskParameter](converttaskparameter) : يمثل معلمة مهمة التحويل.
+- [ConvertWorksheetTaskParameter](convertworksheettaskparameter) : يمثل تحويل معلمة مهمة ورقة العمل.
+- [ImportDataTaskParameter](importdatataskparameter) : يمثل معلمة مهمة استيراد البيانات.
+- [النتيجةالوجهة](resultdestination) : يمثل وجهة النتيجة.
+- [نوع الوجهة النتيجة](resultdestinationtype) : يمثل نوع وجهة النتيجة.
+- [مصدر النتيجة](resultsource) : يمثل نوع مصدر النتيجة.
+- [SaveFilesToCloudResult](savefilestocloudresult) : يمثل حفظ الملف إلى نتيجة السحابة.
+- [SaveResultTaskParameter](saveresulttaskparameter) : يمثل معلمة مهمة حفظ النتيجة.
+- [SmartMarkerTaskParameter](smartmarkertaskparameter) : يمثل معلمة مهمة العلامة الذكية.
+- [SplitWorkbookTaskParameter](splitworkbooktaskparameter) : يمثل معلمة مهمة المصنف المقسمة.
+- [TaskData](taskdata) : يمثل بيانات المهمة.
+- [وصف المهمة](taskdescription) : يمثل وصف المهمة.
+- [معلمة المهمة](taskparameter) : يمثل معلمة المهمة.
+- [TaskResultParameter](taskresultparameter) يمثل معلمة نتيجة المهمة.
+- [TaskRunResult](taskrunresult) : يمثل نتيجة تشغيل المهمة.
+- [نوع المهمة](tasktype) : يمثل نوع المهمة.
+- [ChartOperateParameter](chartoperateparameter) : يمثل معلمة تشغيل المخطط.
+- [ListObjectOperateParameter](listobjectoperateparameter) : يمثل معلمة تشغيل كائن القائمة.
+- [كائن تشغيل](operateobject) : يمثل كائن التشغيل.
+- [OperateObjectPosition](operateobjectposition) : يمثل موضع كائن التشغيل.
+- [OperateObjectType](operateobjecttype) : يمثل نوع كائن التشغيل.
+- [معلمة التشغيل](operateparameter) : يمثل معلمة التشغيل.
+- [نوع التشغيل](operatetype) : يمثل نوع التشغيل.
+- [PageBreakOperateParameter](pagebreakoperateparameter) : يمثل معلمة تشغيل فاصل الصفحات.
+- [PageSetupOperateParameter](pagesetupoperateparameter) : يمثل معلمة تشغيل إعداد الصفحة.
+- [PivotTableOperateParameter](pivottableoperateparameter) : يمثل معلمة تشغيل الجدول المحوري.
+- [ShapeOperateParameter](shapeoperateparameter) : يمثل معلمة تشغيل الشكل.
+- [WorkbookOperateParameter](workbookoperateparameter) : يمثل معلمة تشغيل المصنف.
+- [إعدادات المصنفOperateParameter](workbooksettingsoperateparameter) : يمثل معلمة تشغيل إعداد المصنف.
+- [ورقة عملOperateParameter](worksheetoperateparameter) : يمثل معلمة تشغيل ورقة العمل.
+- [ListColumn](listcolumn) : يمثل عمودًا في الجدول.
+- [ListObject](listobject) يمثل كائن قائمة في ورقة العمل. كائن ListObject عضو في مجموعة ListObjects. تحتوي مجموعة ListObjects على كافة كائنات القائمة الموجودة في ورقة العمل.
+- [كائنات القائمة](listobjects) : يمثل مجموعة من الكائنات في ورقة العمل.
 - [إعدادات العولمة المحورية](pivotglobalizationsettings) : يمثل إعدادات العولمة للجداول المحورية.
 - [DifSaveOptions](difsaveoptions) : يمثل خيارات حفظ ملف dif.
 - [DocxSaveOptions](docxsaveoptions) : يمثل خيارات حفظ ملف .docx.
 - [هتملسافيوبتيونس](htmlsaveoptions) : يمثل خيارات حفظ ملف .html.
 - [خيارات حفظ الصورة](imagesaveoptions) : يمثل خيارات حفظ ملف الصورة.
-- [JsonSaveOptions](jsonsaveoptions) يمثل خيارات حفظ ملف .json.
+- [JsonSaveOptions](jsonsaveoptions) : يمثل خيارات حفظ ملف .json.
 - [خيارات تخفيض السعر](markdownsaveoptions) : يمثل خيارات حفظ ملف .md.
 - [MHtmlSaveOptions](mhtmlsaveoptions) : يمثل خيارات حفظ ملف .mhtml.
 - [OdsSaveOptions](odssaveoptions) : يمثل خيارات حفظ ملف .ods.
@@ -160,135 +163,135 @@ weight: 50
 - [خيارات حفظ PDF](pdfsaveoptions) : يمثل خيارات حفظ ملف pdf.
 - [خيارات PptxSave](pptxsaveoptions) : يمثل خيارات حفظ ملف pptx.
 - [خيارات الحفظ](saveoptions) : يمثل جميع خيارات الحفظ
-- [جدول البياناتML2003SaveOptions](spreadsheetml2003saveoptions) : يمثل خيارات حفظ ملف .xml.
+- [جدول البياناتML2003SaveOptions](spreadsheetml2003saveoptions) يمثل خيارات حفظ ملف .xml.
 - [خيارات سقلسكريبتيسيف](sqlscriptsaveoptions) : يمثل خيارات حفظ ملف .sql.
 - [خيارات SvgSave](svgsaveoptions) : يمثل خيارات حفظ ملف .svg.
 - [خيارات تكستسيف](txtsaveoptions) : يمثل خيارات حفظ ملف .txt.
 - [خيارات xlsbSave](xlsbsaveoptions) : يمثل خيارات حفظ ملف .xlsb.
 - [XlsSaveOptions](xlssaveoptions) : يمثل خيارات حفظ ملف .xls.
 - [خيارات XpsSave](xpssaveoptions) : يمثل خيارات حفظ ملف .xps.
-- [تحليلExcelResponse](analyzeexcelresponse)  :   
-- [ArcShapeResponse](arcshaperesponse)  :   
-- [استجابة التصفية التلقائية](autofilterresponse)  :   
-- [الاستجابة التلقائية](autoshaperesponse)  :   
-- [الاستجابة للأشكال التلقائية](autoshapesresponse)  :   
-- [استجابة المحور](axisresponse)  :   
-- [استجابة الحدود](borderresponse)  :   
-- [ButtonResponse](buttonresponse)  :   
-- [CalculateFormulaResponse](calculateformularesponse)  :   
-- [رد الخلية](cellresponse)  :   
-- [CellsCloudFileInfoResponse](cellscloudfileinforesponse)  :   
-- [CellsCloudResponse](cellscloudresponse)  :   
-- [CellsDocumentPropertiesResponse](cellsdocumentpropertiesresponse)  :   
-- [CellsDocumentPropertyResponse](cellsdocumentpropertyresponse)  :   
-- [استجابة رسم الخلايا](cellsdrawingresponse)  :   
-- [استجابة الخلايا](cellsresponse)  :   
-- [منطقة الرسم البيانيالاستجابة](chartarearesponse)  :   
-- [ChartDataTableResponse](chartdatatableresponse)  :   
-- [استجابة تشارتبوينت](chartpointresponse)  :   
-- [استجابة نقاط الرسم البياني](chartpointsresponse)  :   
-- [استجابة الرسم البياني](chartresponse)  :   
-- [استجابة الرسوم البيانية](chartsresponse)  :   
-- [CheckBoxResponse](checkboxresponse)  :   
-- [استجابة العمود](columnresponse)  :   
-- [استجابة الأعمدة](columnsresponse)  :   
-- [comboBoxResponse](comboboxresponse)  :   
-- [رد التعليق](commentresponse)  :   
-- [تعليق الشكلالاستجابة](commentshaperesponse)  :   
-- [رد التعليقات](commentsresponse)  :   
-- [استجابة التنسيق الشرطي](conditionalformattingresponse)  :   
-- [استجابة التنسيقات الشرطية](conditionalformattingsresponse)  :   
-- [DataLabelsResponse](datalabelsresponse)  :   
-- [DisplayUnitLabelResponse](displayunitlabelresponse)  :   
-- [DropBarsResponse](dropbarsresponse)  :   
-- [خطأ بارالاستجابة](errorbarresponse)  :   
-- [فيلفورماتريسبونس](fillformatresponse)  :   
-- [FindResponse](findresponse)  :   
-- [FloorResponse](floorresponse)  :   
-- [رد النموذج](formresponse)  :   
-- [استجابة النماذج](formsresponse)  :   
-- [استجابة GroupBox](groupboxresponse)  :   
-- [HorizontalPageBreakResponse](horizontalpagebreakresponse)  :   
-- [HorizontalPageBreaksResponse](horizontalpagebreaksresponse)  :   
-- [استجابة الارتباط التشعبي](hyperlinkresponse)  :   
-- [استجابة الارتباطات التشعبية](hyperlinksresponse)  :   
-- [استجابة التسمية](labelresponse)  :   
-- [LegendEntriesResponse](legendentriesresponse)  :   
-- [LegendEntryResponse](legendentryresponse)  :   
-- [رد الأسطورة](legendresponse)  :   
-- [استجابة الخط](lineresponse)  :   
-- [استجابة LineShape](lineshaperesponse)  :   
-- [ListBoxResponse](listboxresponse)  :   
-- [ListObjectResponse](listobjectresponse)  :   
-- [ListObjectsResponse](listobjectsresponse)  :   
-- [MergedCellResponse](mergedcellresponse)  :   
-- [استجابة الخلايا المدمجة](mergedcellsresponse)  :   
-- [رد الاسم](nameresponse)  :   
-- [رد الأسماء](namesresponse)  :   
-- [OleObjectResponse](oleobjectresponse)  :   
-- [OleObjectsResponse](oleobjectsresponse)  :   
-- [الاستجابة البيضاوية](ovalresponse)  :   
-- [استجابة أقسام الصفحة](pagesectionsresponse)  :   
-- [استجابة إعداد الصفحة](pagesetupresponse)  :   
-- [استجابة الصورة](pictureresponse)  :   
-- [رد الصور](picturesresponse)  :   
-- [الاستجابة المحورية](pivotfieldresponse)  :   
-- [استجابة مرشح المحور](pivotfilterresponse)  :   
-- [استجابة عوامل التصفية المحورية](pivotfiltersresponse)  :   
-- [PivotTableResponse](pivottableresponse)  :   
-- [استجابة الجداول المحورية](pivottablesresponse)  :   
-- [PlotAreaResponse](plotarearesponse)  :   
-- [استجابة زر الراديو](radiobuttonresponse)  :   
-- [استجابة المدى](rangeresponse)  :   
-- [استجابة النطاقات](rangesresponse)  :   
-- [RangeValueResponse](rangevalueresponse)  :   
-- [RectangleShapeResponse](rectangleshaperesponse)  :   
-- [استجابة الصف](rowresponse)  :   
-- [استجابة الصفوف](rowsresponse)  :   
-- [SaveFilesToCloudResultResponse](savefilestocloudresultresponse)  :   
-- [حفظ الاستجابة](saveresponse)  :   
-- [ScrollBarResponse](scrollbarresponse)  :   
-- [استجابة السلسلة](seriesesresponse)  :   
-- [استجابة السلسلة](seriesresponse)  :   
-- [استجابة الشكل](shaperesponse)  :   
-- [استجابة الأشكال](shapesresponse)  :   
-- [استجابة فردية القيمة](singlevalueresponse)  :   
-- [SparklineGroupResponse](sparklinegroupresponse)  :   
-- [SparklineGroupsResponse](sparklinegroupsresponse)  :   
-- [رد الدوار](spinnerresponse)  :   
-- [SplitResultResponse](splitresultresponse)  :   
-- [رد ستايل](styleresponse)  :   
-- [TaskRunResultResponse](taskrunresultresponse)  :   
-- [TextBoxResponse](textboxresponse)  :   
-- [TextItemResponse](textitemresponse)  :   
-- [TextItemsResponse](textitemsresponse)  :   
-- [استجابة القراد](ticklabelsresponse)  :   
-- [استجابة العنوان](titleresponse)  :   
-- [استجابة خط الاتجاه](trendlineresponse)  :   
-- [استجابة خطوط الاتجاه](trendlinesresponse)  :   
-- [رد التحقق من الصحة](validationresponse)  :   
-- [رد التحقق من الصحة](validationsresponse)  :   
-- [VerticalPageBreakResponse](verticalpagebreakresponse)  :   
-- [VerticalPageBreaksResponse](verticalpagebreaksresponse)  :   
-- [استجابة الجدران](wallsresponse)  :   
-- [WorkbookReplaceResponse](workbookreplaceresponse)  :   
-- [استجابة المصنف](workbookresponse)  :   
-- [استجابة إعدادات المصنف](workbooksettingsresponse)  :   
-- [استجابة المصنفات](workbooksresponse)  :   
-- [ورقة العملReplaceResponse](worksheetreplaceresponse)  :   
-- [استجابة ورقة العمل](worksheetresponse)  :   
-- [استجابة أوراق العمل](worksheetsresponse)  :   
+- [ArcShapeResponse](arcshaperesponse) : يمثل استجابة ArcShape.
+- [استجابة التصفية التلقائية](autofilterresponse) : يمثل استجابة التصفية التلقائية.
+- [الاستجابة التلقائية](autoshaperesponse) : يمثل استجابة الشكل التلقائي.
+- [الاستجابة للأشكال التلقائية](autoshapesresponse) : يمثل استجابة الأشكال التلقائية.
+- [استجابة المحور](axisresponse) : يمثل استجابة المحور.
+- [استجابة الحدود](borderresponse) : يمثل الاستجابة الحدودية.
+- [ButtonResponse](buttonresponse) : يمثل استجابة الزر.
+- [CalculateFormulaResponse](calculateformularesponse) : يمثل استجابة CalculateFormula.
+- [رد الخلية](cellresponse) : يمثل استجابة الخلية.
+- [CellsCloudFileInfoResponse](cellscloudfileinforesponse) : يمثل استجابة CellsCloudFileInfo.
+- [CellsCloudResponse](cellscloudresponse) : يمثل استجابة CellsCloud.
+- [CellsDocumentPropertiesResponse](cellsdocumentpropertiesresponse) : يمثل استجابة CellsDocumentProperties.
+- [CellsDocumentPropertyResponse](cellsdocumentpropertyresponse) يمثل استجابة CellsDocumentProperty.
+- [استجابة رسم الخلايا](cellsdrawingresponse) : يمثل استجابة CellsDrawing.
+- [استجابة الخلايا](cellsresponse) : يمثل الرد Cells.
+- [منطقة الرسم البيانيالاستجابة](chartarearesponse) : يمثل استجابة منطقة التخطيط.
+- [ChartDataTableResponse](chartdatatableresponse) : يمثل استجابة ChartDataTable.
+- [استجابة تشارتبوينت](chartpointresponse) : يمثل استجابة ChartPoint.
+- [استجابة نقاط الرسم البياني](chartpointsresponse) : يمثل استجابة ChartPoints.
+- [استجابة الرسم البياني](chartresponse) : يمثل استجابة المخطط.
+- [استجابة الرسوم البيانية](chartsresponse) : يمثل استجابة المخططات.
+- [CheckBoxResponse](checkboxresponse) : يمثل استجابة CheckBox.
+- [استجابة العمود](columnresponse) : يمثل استجابة العمود.
+- [استجابة الأعمدة](columnsresponse) : يمثل استجابة الأعمدة.
+- [comboBoxResponse](comboboxresponse) : يمثل استجابة ComboBox.
+- [رد التعليق](commentresponse) : يمثل الرد على التعليق.
+- [تعليق الشكلالاستجابة](commentshaperesponse) : يمثل استجابة CommentShape.
+- [رد التعليقات](commentsresponse) : يمثل الرد على التعليقات.
+- [استجابة التنسيق الشرطي](conditionalformattingresponse) : يمثل استجابة التنسيق الشرطي.
+- [استجابة التنسيقات الشرطية](conditionalformattingsresponse) : يمثل استجابة التنسيقات الشرطية.
+- [DataLabelsResponse](datalabelsresponse) : يمثل استجابة DataLabels.
+- [DisplayUnitLabelResponse](displayunitlabelresponse) : يمثل استجابة DisplayUnitLabel.
+- [DropBarsResponse](dropbarsresponse) : يمثل استجابة DropBars.
+- [خطأ بارالاستجابة](errorbarresponse) يمثل استجابة ErrorBar.
+- [فيلفورماتريسبونس](fillformatresponse) : يمثل استجابة fillFormat.
+- [FindResponse](findresponse) : يمثل استجابة البحث.
+- [FloorResponse](floorresponse) : يمثل استجابة الأرضية.
+- [رد النموذج](formresponse) : يمثل استجابة النموذج.
+- [استجابة النماذج](formsresponse) : يمثل استجابة النماذج.
+- [استجابة GroupBox](groupboxresponse) : يمثل استجابة GroupBox.
+- [HorizontalPageBreakResponse](horizontalpagebreakresponse) : يمثل استجابة HorizontalPageBreak.
+- [HorizontalPageBreaksResponse](horizontalpagebreaksresponse) : يمثل استجابة HorizontalPageBreaks.
+- [استجابة الارتباط التشعبي](hyperlinkresponse) : يمثل استجابة الارتباط التشعبي.
+- [استجابة الارتباطات التشعبية](hyperlinksresponse) : يمثل استجابة الارتباطات التشعبية.
+- [استجابة التسمية](labelresponse) : يمثل استجابة التسمية.
+- [LegendEntriesResponse](legendentriesresponse) : يمثل استجابة LegendEntries.
+- [LegendEntryResponse](legendentryresponse) : يمثل استجابة LegendEntry.
+- [رد الأسطورة](legendresponse) : يمثل استجابة وسيلة الإيضاح.
+- [استجابة الخط](lineresponse) : يمثل استجابة الخط.
+- [استجابة LineShape](lineshaperesponse) : يمثل استجابة LineShape.
+- [ListBoxResponse](listboxresponse) : يمثل استجابة ListBox.
+- [ListObjectResponse](listobjectresponse) : يمثل استجابة ListObject.
+- [ListObjectsResponse](listobjectsresponse) : يمثل استجابة ListObjects.
+- [MergedCellResponse](mergedcellresponse) : يمثل استجابة MergedCell.
+- [استجابة الخلايا المدمجة](mergedcellsresponse) يمثل استجابة MergedCells.
+- [رد الاسم](nameresponse) : يمثل استجابة الاسم.
+- [رد الأسماء](namesresponse) : يمثل استجابة الأسماء.
+- [OleObjectResponse](oleobjectresponse) : يمثل استجابة OleObject.
+- [OleObjectsResponse](oleobjectsresponse) : يمثل استجابة OleObjects.
+- [الاستجابة البيضاوية](ovalresponse) : يمثل الاستجابة البيضاوية.
+- [استجابة أقسام الصفحة](pagesectionsresponse) : يمثل استجابة PageSections.
+- [استجابة إعداد الصفحة](pagesetupresponse) : يمثل استجابة PageSetup.
+- [استجابة الصورة](pictureresponse) : يمثل استجابة الصورة.
+- [رد الصور](picturesresponse) : يمثل استجابة الصور.
+- [الاستجابة المحورية](pivotfieldresponse) : يمثل استجابة PivotField.
+- [استجابة مرشح المحور](pivotfilterresponse) : يمثل استجابة PivotFilter.
+- [استجابة عوامل التصفية المحورية](pivotfiltersresponse) : يمثل استجابة PivotFilters.
+- [PivotTableResponse](pivottableresponse) : يمثل استجابة PivotTable.
+- [استجابة الجداول المحورية](pivottablesresponse) : يمثل استجابة PivotTables.
+- [PlotAreaResponse](plotarearesponse) : يمثل استجابة PlotArea.
+- [استجابة زر الراديو](radiobuttonresponse) : يمثل استجابة زر الراديو.
+- [استجابة المدى](rangeresponse) : يمثل استجابة النطاق.
+- [استجابة النطاقات](rangesresponse) : يمثل استجابة النطاقات.
+- [RangeValueResponse](rangevalueresponse) : يمثل استجابة RangeValue.
+- [RectangleShapeResponse](rectangleshaperesponse) : يمثل استجابة الشكل المستطيل.
+- [استجابة الصف](rowresponse) : يمثل استجابة الصف.
+- [استجابة الصفوف](rowsresponse) يمثل استجابة الصفوف.
+- [SaveFilesToCloudResultResponse](savefilestocloudresultresponse) : يمثل استجابة SaveFilesToCloudResult.
+- [حفظ الاستجابة](saveresponse) : يمثل استجابة الحفظ.
+- [ScrollBarResponse](scrollbarresponse) : يمثل استجابة شريط التمرير.
+- [استجابة السلسلة](seriesesresponse) : يمثل استجابة السلسلة.
+- [استجابة السلسلة](seriesresponse) : يمثل استجابة السلسلة.
+- [استجابة الشكل](shaperesponse) : يمثل استجابة الشكل.
+- [استجابة الأشكال](shapesresponse) : يمثل استجابة الأشكال.
+- [استجابة فردية القيمة](singlevalueresponse) : يمثل استجابة SingleValue.
+- [SparklineGroupResponse](sparklinegroupresponse) : يمثل استجابة SparklineGroup.
+- [SparklineGroupsResponse](sparklinegroupsresponse) : يمثل استجابة SparklineGroups.
+- [رد الدوار](spinnerresponse) : يمثل استجابة الدوار.
+- [SplitResultResponse](splitresultresponse) : يمثل استجابة SplitResult.
+- [رد ستايل](styleresponse) : يمثل استجابة النمط.
+- [TaskRunResultResponse](taskrunresultresponse) : يمثل استجابة TaskRunResult.
+- [TextBoxResponse](textboxresponse) : يمثل استجابة TextBox.
+- [TextItemResponse](textitemresponse) : يمثل استجابة TextItem.
+- [TextItemsResponse](textitemsresponse) : يمثل استجابة TextItems.
+- [استجابة القراد](ticklabelsresponse) : يمثل استجابة TickLabels.
+- [استجابة العنوان](titleresponse) : يمثل استجابة العنوان.
+- [استجابة خط الاتجاه](trendlineresponse) : يمثل استجابة خط الاتجاه.
+- [استجابة خطوط الاتجاه](trendlinesresponse) يمثل استجابة خطوط الاتجاه.
+- [رد التحقق من الصحة](validationresponse) : يمثل استجابة التحقق من الصحة.
+- [رد التحقق من الصحة](validationsresponse) : يمثل استجابة عمليات التحقق من الصحة.
+- [VerticalPageBreakResponse](verticalpagebreakresponse) : يمثل استجابة VerticalPageBreak.
+- [VerticalPageBreaksResponse](verticalpagebreaksresponse) : يمثل استجابة VerticalPageBreaks.
+- [استجابة الجدران](wallsresponse) : يمثل استجابة الجدران.
+- [WorkbookReplaceResponse](workbookreplaceresponse) : يمثل استجابة WorkbookReplace.
+- [استجابة المصنف](workbookresponse) : يمثل استجابة المصنف.
+- [استجابة إعدادات المصنف](workbooksettingsresponse) : يمثل استجابة إعدادات المصنف.
+- [استجابة المصنفات](workbooksresponse) : يمثل استجابة المصنفات.
+- [ورقة العملReplaceResponse](worksheetreplaceresponse) : يمثل استجابة WorksheetReplace.
+- [استجابة ورقة العمل](worksheetresponse) : يمثل استجابة ورقة العمل.
+- [استجابة أوراق العمل](worksheetsresponse) : يمثل استجابة أوراق العمل.
 - [تحليل طلب Excel](analyzeexcelrequest)  :   
 - [BatchConvertRequest](batchconvertrequest) : يشير إلى طلب ملف تحويل الدفعة
 - [BatchLockRequest](batchlockrequest) : يشير إلى طلب ملف القفل الدفعي
 - [طلب حماية الدفعة](batchprotectrequest) : يشير إلى طلب ملف حماية الدفعة
 - [BatchSplitRequest](batchsplitrequest)  :   
 - [طلب تصفية الألوان](colorfilterrequest) : يشير إلى طلب مرشح الألوان
-- [تحويل المعلمة](convertparameter) : يشير إلى تحويل المعلمة
+- [تحويل المعلمة](convertparameter) يشير إلى تحويل المعلمة
 - [إنشاءPivotTableRequest](createpivottablerequest) : يشير إلى إنشاء طلب جدول محوري
-- [طلب تنظيف البيانات](datacleansingrequest) : طلب تنظيف البيانات لملف جدول بيانات.
+- [طلب تنظيف البيانات](datacleansingrequest) : طلب تنظيف البيانات لملف جدول البيانات.
 - [طلب إزالة البيانات المكررة](datadeduplicationrequest)  :   
 - [طلب تعبئة البيانات](datafillrequest)  :   
+- [طلب تحويل البيانات](datatransformationrequest)  :   
 - [طلب حذف غير كامل](deleteincompleterowsrequest)  :   
 - [ImportJsonRequest](importjsonrequest) : يشير إلى طلب استيراد بيانات XML
 - [استيرادXMLRequest](importxmlrequest) : يشير إلى طلب استيراد بيانات XML
@@ -297,27 +300,37 @@ weight: 50
 - [PivotTableFieldRequest](pivottablefieldrequest) : يشير إلى طلب حقل الجدول المحوري
 - [طلب حماية Workbook](protectworkbookrequest) : يشير إلى طلب حماية المصنف
 - [طلب نسخ النطاق](rangecopyrequest) : يشير إلى طلب نسخ النطاق
-- [RangeSetOutlineBorderRequest](rangesetoutlineborderrequest) يشير إلى طلب الحدود التفصيلية لمجموعة النطاق.
+- [RangeSetOutlineBorderRequest](rangesetoutlineborderrequest) : يشير إلى طلب الحدود التفصيلية لمجموعة النطاق.
 - [RangeSetStyleRequest](rangesetstylerequest) : يشير إلى طلب نمط مجموعة النطاق.
-- [طلب ترتيب النطاق](rangesortrequest) : يشير إلى طلب فرز النطاق
+- [طلب ترتيب النطاق](rangesortrequest) يشير إلى طلب فرز النطاق
 - [TableTotalRequest](tabletotalrequest) : يشير إلى إجمالي طلب الجدول
 - [طلب TextWaterMarker](textwatermarkerrequest) : يشير إلى طلب علامة مائية نصية.
 - [طلب تشفير المصنف](workbookencryptionrequest) : يُستخدم بواسطة طلبات تشفير/فك تشفير المصنف.
 - [طلب حماية المصنف](workbookprotectionrequest) : يُستخدم بواسطة طلبات حماية المصنف.
 - [طلب نقل ورقة العمل](worksheetmovingrequest) : يستخدم بواسطة طلبات نقل المصنف.
-- [خيارات الصورة أو الطباعة](imageorprintoptions)  :   
-- [RenderingFont](renderingfont)  :   
-- [تقديم العلامة المائية](renderingwatermark)  :   
-- [PivotField](pivotfield)  :   
+- [خيارات الصورة أو الطباعة](imageorprintoptions) : يسمح بتحديد الخيارات عند عرض ورقة العمل على الصور أو طباعة ورقة العمل أو عرض المخطط على الصورة.
+- [RenderingFont](renderingfont) : الخط للتقديم.
+- [تقديم العلامة المائية](renderingwatermark) : علامة مائية للعرض.
+- [نوع الانضمام](jointype)  :   
+- [تحميل البيانات](loaddata) : تحميل معلومات البيانات.
+- [تحميل إلى](loadto)  :   
+- [MergeQueries](mergequeries) : يمثل أسئلة الدمج.
+- [عمود محوري](pivotcolumn)  :   
+- [QueryDataSource](querydatasource)  :   
+- [QueryDataSourceDataType](querydatasourcedatatype)  :   
+- [جدول الاستعلام](querytable) : يمثل معلومات جدول الاستعلام.
+- [تحويل](transformation)  :   
+- [UnpivotColumn](unpivotcolumn)  :   
+- [PivotField](pivotfield) يمثل حقلاً في تقرير PivotTable.
 - [مرشح محوري](pivotfilter) : يمثل PivotFilter في مجموعة PivotFilter.
-- [PivotItem](pivotitem)  :   
-- [جدول محوري](pivottable)  :   
-- [الجداول المحورية](pivottables)  :   
+- [PivotItem](pivotitem) : يمثل عنصرًا في تقرير PivotField.
+- [جدول محوري](pivottable) : وصف ملخص لـ PivotTable.
+- [الجداول المحورية](pivottables) : يمثل مجموعة كافة كائنات PivotTable في ورقة العمل المحددة.
+- [قيمة الخلية](cellvalue) : يمثل قيمة الخلية والنوع المقابل.
 - [CustomParserConfig](customparserconfig)  :   
 - [Import2DimensionDoubleArrayOption](import2dimensiondoublearrayoption)  :   
 - [Import2DimensionIntArrayOption](import2dimensionintarrayoption)  :   
 - [Import2DimensionStringArrayOption](import2dimensionstringarrayoption)  :   
-- [قيمة الخلية](cellvalue)  :   
 - [ImportBatchDataOption](importbatchdataoption)  :   
 - [ImportCSVDataOption](importcsvdataoption)  :   
 - [ImportDataType](importdatatype)  :   
@@ -327,87 +340,84 @@ weight: 50
 - [ImportPictureOption](importpictureoption)  :   
 - [موضع الاستيراد](importposition)  :   
 - [ImportStringArrayOption](importstringarrayoption)  :   
-- [شكل قوس](arcshape)  :   
-- [منطقة](area)  :   
-- [شكل تلقائي](autoshape)  :   
+- [شكل قوس](arcshape) : يمثل الشكل القوسي.
+- [منطقة](area) : يقوم بتغليف الكائن الذي يمثل تنسيق المنطقة.
+- [شكل تلقائي](autoshape) : يمثل شكلاً تلقائيًا.
 - [الأشكال التلقائية](autoshapes)  :   
-- [زر](button)  :   
-- [رسم الخلايا](cellsdrawing)  :   
-- [خانة الاختيار](checkbox)  :   
-- [صندوق التحرير](combobox)  :   
-- [شكل التعليق](commentshape)  :   
-- [تنسيق التعبئة](fillformat)  :   
+- [زر](button) : يمثل عنصر التحكم في النماذج: الزر
+- [رسم الخلايا](cellsdrawing) : يمثل الشكل التلقائي والكائن الرسومي.
+- [خانة الاختيار](checkbox) : يمثل كائن خانة الاختيار في ورقة العمل.
+- [صندوق التحرير](combobox) : يمثل نموذج التحكم ComboBox.
+- [شكل التعليق](commentshape) : يمثل شكل التعليق.
+- [تنسيق التعبئة](fillformat) : يقوم بتغليف الكائن الذي يمثل تنسيق التعبئة للشكل.
 - [استمارة](form)  :   
 - [نماذج](forms)  :   
-- [ملء الانحدار](gradientfill)  :   
+- [ملء الانحدار](gradientfill) يمثل تعبئة متدرجة.
 - [GradientFillStop](gradientfillstop)  :   
-- [صندوق المجموعة](groupbox)  :   
-- [شكل المجموعة](groupshape)  :   
-- [ملصق](label)  :   
+- [صندوق المجموعة](groupbox) : يقوم بتغليف الكائن الذي يمثل مربع مجموعة في جدول بيانات.
+- [شكل المجموعة](groupshape) : يمثل شكل المجموعة الذي يحتوي على الأشكال الفردية.
+- [ملصق](label) : يقوم بتغليف الكائن الذي يمثل تسمية في جدول البيانات.
 - [خط](line) : يقوم بتغليف الكائن الذي يمثل تنسيق الخط.
-- [تنسيق الخط](lineformat)  :   
-- [شكل خط](lineshape)  :   
-- [ListBox](listbox)  :   
-- [كائن أوله](oleobject)  :   
-- [كائنات أولية](oleobjects)  :   
-- [بيضاوي](oval)  :   
-- [تعبئة الأنماط](patternfill)  :   
-- [PicFormatOption](picformatoption)  :   
-- [صورة](picture)  :   
-- [الصور](pictures)  :   
-- [زر الراديو](radiobutton)  :   
-- [شكل مستطيل](rectangleshape)  :   
-- [شريط التمرير](scrollbar)  :   
-- [تأثير الظل](shadoweffect)  :   
-- [شكل](shape)  :   
-- [الأشكال](shapes)  :   
-- [ملء الصلبة](solidfill)  :   
-- [سبينر](spinner)  :   
-- [مربع الكتابة](textbox)  :   
-- [TextureFill](texturefill)  :   
-- [TilePicOption](tilepicoption)  :   
+- [تنسيق الخط](lineformat) : يمثل كافة إعدادات الخط.
+- [شكل خط](lineshape) : يمثل شكل الخط.
+- [ListBox](listbox) : يمثل كائن مربع القائمة.
+- [كائن أوله](oleobject) : يمثل OleObject في ورقة العمل.
+- [كائنات أولية](oleobjects) : يمثل كائنات OLE المضمنة.
+- [بيضاوي](oval) : يمثل الشكل البيضاوي.
+- [تعبئة الأنماط](patternfill) : يقوم بتغليف الكائن الذي يمثل تنسيق تعبئة النمط
+- [PicFormatOption](picformatoption) : يمثل خيار تنسيق الصورة
+- [صورة](picture) : يقوم بتغليف الكائن الذي يمثل صورة واحدة في جدول بيانات.
+- [الصور](pictures) : يغلف مجموعة من الكائنات.
+- [زر الراديو](radiobutton) : يمثل زر الاختيار.
+- [شكل مستطيل](rectangleshape) : يمثل الشكل المستطيل.
+- [شريط التمرير](scrollbar) يمثل كائن شريط التمرير.
+- [تأثير الظل](shadoweffect) : تحدد هذه الفئة تأثير الظل لعنصر أو شكل المخطط.
+- [شكل](shape) : يمثل كائن msodrawing.
+- [الأشكال](shapes) : يمثل كل الأشكال في ورقة العمل/المخطط.
+- [ملء الصلبة](solidfill) : يقوم بتغليف الكائن الذي يمثل تنسيق التعبئة الصلبة
+- [سبينر](spinner) : يمثل عنصر تحكم النماذج: Spinner.
+- [مربع الكتابة](textbox) : يقوم بتغليف الكائن الذي يمثل مربع نص في جدول البيانات.
+- [TextureFill](texturefill) : يقوم بتغليف الكائن الذي يمثل تنسيق تعبئة النسيج
+- [TilePicOption](tilepicoption) : يمثل صورة البلاط كملمس.
 - [توقيع إلكتروني](digitalsignature) : التوقيع في الملف.
-- [محور](axis)  :   
-- [جدول](chart)  :   
-- [منطقة الرسم البياني](chartarea)  :   
-- [ChartDataTable](chartdatatable)  :   
-- [إطار الرسم البياني](chartframe)  :   
+- [محور](axis) : يقوم بتغليف الكائن الذي يمثل محور المخطط.
+- [جدول](chart) : يقوم بتغليف الكائن الذي يمثل مخططًا واحدًا Excel.
+- [منطقة الرسم البياني](chartarea) : يقوم بتغليف الكائن الذي يمثل منطقة المخطط في ورقة العمل.
+- [ChartDataTable](chartdatatable) يمثل جدول بيانات الرسم البياني.
+- [إطار الرسم البياني](chartframe) : يقوم بتغليف الكائن الذي يمثل كائن الإطار في المخطط.
 - [إعدادات عولمة الرسم البياني](chartglobalizationsettings) : يمثل إعدادات العولمة للمخطط.
-- [تشارتبوينت](chartpoint)  :   
-- [نقاط الرسم البياني](chartpoints)  :   
-- [الرسوم البيانية](charts)  :   
+- [تشارتبوينت](chartpoint) : يمثل نقطة واحدة في سلسلة في المخطط.
+- [نقاط الرسم البياني](chartpoints) : يمثل مجموعة تحتوي على جميع النقاط في سلسلة واحدة.
+- [الرسوم البيانية](charts) : يغلف مجموعة من الكائنات.
 - [شكل الرسم البياني](chartshape) : كائن شكل الرسم البياني
-- [DataLabels](datalabels)  :   
-- [DisplayUnitLabel](displayunitlabel)  :   
-- [DropBars](dropbars)  :   
-- [شريط خطأ](errorbar)  :   
-- [أرضية](floor)  :   
-- [أسطورة](legend)  :   
+- [DataLabels](datalabels) : يقوم بتغليف مجموعة من كافة كائنات DataLabel للسلسلة المحددة.
+- [DisplayUnitLabel](displayunitlabel) : يمثل ملصق وحدة العرض.
+- [DropBars](dropbars) : يمثل الأشرطة لأعلى ولأسفل في الرسم البياني.
+- [شريط خطأ](errorbar) : يمثل شريط الخطأ في سلسلة البيانات.
+- [أرضية](floor) : يقوم بتغليف الكائن الذي يمثل أرضية مخطط ثلاثي الأبعاد.
+- [أسطورة](legend) : يقوم بتغليف الكائن الذي يمثل وسيلة إيضاح المخطط.
 - [LegendEntries](legendentries)  :   
-- [LegendEntry](legendentry)  :   
-- [علامة](marker)  :   
-- [منطقة الأرض](plotarea)  :   
-- [مسلسل](series)  :   
+- [LegendEntry](legendentry) : يمثل إدخال وسيلة إيضاح في وسيلة إيضاح المخطط.
+- [علامة](marker) : يمثل العلامة في مخطط خطي أو مخطط مبعثر أو مخطط راداري.
+- [منطقة الأرض](plotarea) يقوم بتغليف الكائن الذي يمثل منطقة الرسم في المخطط.
+- [مسلسل](series) : يقوم بتغليف الكائن الذي يمثل سلسلة بيانات واحدة في المخطط.
 - [عناصر السلسلة](seriesitems)  :   
 - [خط التألق](sparkline) : يمثل خط المؤشر مخططًا أو رسمًا صغيرًا في خلية ورقة عمل يوفر تمثيلاً مرئيًا للبيانات.
-- [SparklineGroup](sparklinegroup)  :   
+- [SparklineGroup](sparklinegroup) : تم تنظيمه في مجموعة Sparkline. تحتوي مجموعة SparklineGroup على عدد متغير من عناصر خط المؤشر. تحدد مجموعة خطوط المؤشر النوع وإعدادات العرض وإعدادات المحور لخطوط المؤشرات.
 - [SparklineGroups](sparklinegroups) : يغلف مجموعة من كائنات Aspose.Cells.Charts.SparklineGroup.
-- [علامات التجزئة](ticklabels)  :   
-- [عنوان](title)  :   
-- [خط الاتجاه](trendline)  :   
-- [خطوط الاتجاه](trendlines)  :   
-- [الجدران](walls)  :   
+- [علامات التجزئة](ticklabels) : يمثل تسميات علامات التجزئة المرتبطة بعلامات التجزئة على محور المخطط.
+- [عنوان](title) : يقوم بتغليف الكائن الذي يمثل عنوان المخطط أو المحور.
+- [خط الاتجاه](trendline) : يمثل خط الاتجاه في الرسم البياني.
+- [خطوط الاتجاه](trendlines) : يمثل مجموعة من كافة الكائنات لسلسلة البيانات المحددة.
+- [الجدران](walls) يقوم بتغليف الكائن الذي يمثل جدران مخطط ثلاثي الأبعاد.
 - [ColumnDataExceptionDescription](columndataexceptiondescription)  :   
 - [فئة النص](textcategorytype)  :   
-- [وصف العمود التحليلي](analyzedcolumndescription) كيفية استخدام خصائص كل عمود: مقسم حاليا إلى خط زمني، خط إنتاج، خط إحصائيات رقمية كيفية تقديم المنتج، خطة موحدة كيفية حل مشكلة الرقمية الكاملة؟ النص الكامل كيفية حلها؟ عمودين: نص، الرقم هو الأسهل ثلاثة أعمدة: نص، نص، نص رقم، رقم، رقم --- تاريخ التاريخ؛ التاريخ رقمي ; رقمي رقمي ماذا عن أربعة أعمدة، خمسة أعمدة؟
-- [النتيجة التحليلية](analyzedresult)  :   
-- [تحليل الجدول الوصف](analyzedtabledescription)  :   
-- [نوع مصدر التاريخ](datesourcetype)  :   
-- [نوع الإخراج المقترح](suggestedoutputtype)  :   
-- [تحليل الاقتراح](analyzesuggestion)  :   
-- [DiscoverChart](discoverchart)  :   
-- [DiscoverPivotTable](discoverpivottable)  :   
-- [ExcelDataStatistics](exceldatastatistics)  :   
-- [إحصائيات ورقة العمل](worksheetdatastatistics)  :   
+- [وصف العمود التحليلي](analyzedcolumndescription) : يمثل وصف العمود الذي تم تحليله.
+- [النتيجة التحليلية](analyzedresult) : يمثل نتائج البيانات التي تم تحليلها.
+- [تحليل الجدول الوصف](analyzedtabledescription) : يمثل وصف الجدول الذي تم تحليله.
+- [DiscoverChart](discoverchart) : يمثل مخططًا، وهو مخطط تم إنشاؤه بناءً على تحليل بيانات الجدول.
+- [DiscoverPivotTable](discoverpivottable) : يمثل الجدول المحوري، وهو جدول محوري تم إنشاؤه بناءً على تحليل بيانات الجدول.
+- [ExcelDataStatistics](exceldatastatistics) : يمثل Excel إحصائيات البيانات.
+- [إحصائيات ورقة العمل](worksheetdatastatistics) : يمثل إحصائيات بيانات ورقة العمل.
 - [خطأ](error) : خطأ
 - [تفاصيل الخطأ](errordetails) : تفاصيل الخطأ

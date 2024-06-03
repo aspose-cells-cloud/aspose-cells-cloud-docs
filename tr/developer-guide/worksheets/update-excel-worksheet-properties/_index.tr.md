@@ -6,6 +6,7 @@ type: docs
 url: /tr/worksheets/update-properties/
 aliases: [/update-excel-worksheet-properties/]
 weight: 20
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel çalışma sayfasındaki özellikleri güncelleme
 ---
 Bu REST API, `update worksheet base properties`'i gösterir.
  

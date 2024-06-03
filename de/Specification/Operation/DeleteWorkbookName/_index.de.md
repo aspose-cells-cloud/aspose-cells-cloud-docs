@@ -1,26 +1,27 @@
 ﻿---
-title: Arbeitsmappennamen löschen
+title: DeleteWorkbookNam
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/deleteworkbookname/
-description: Löschen Sie einen benannten Bereich in der Arbeitsmappe
+description: Löschen eines benannten Bereichs in der Arbeitsmappe
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, DeleteWorkbookName
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorkbookName" >}}
 {{< blocks/products/cells/docs-title titlemsg="Delete a named range in the workbook." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/names/{nameName},DELETE,Löschen Sie einen benannten Bereich in der Arbeitsmappe.,<a href=\'https://apireference.aspose.cloud/cells/#/Workbook/DeleteWorkbookName\'>DeleteWorkbookName< /a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/names/{nameName},DELETE,Einen benannten Bereich in der Arbeitsmappe löschen.,<a href=\'https://apireference.aspose.cloud/cells/#/Workbook/DeleteWorkbookName\'>DeleteWorkbookName</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="nameName,string,der Aspose.Cells.Name-Elementname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="nameName, string, der Name des Aspose.Cells.Name-Elements." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/WorkbookController/DeleteWorkbookName\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

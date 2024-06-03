@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/model/criteriamultiplefilter/
 description: "Aspose.Cells Especificación del modelo de nube: CriteriaMultipleFilter. Maneje sin esfuerzo Excel y otros documentos de hoja de cálculo con funciones como abrir, generar, editar, dividir, fusionar, comparar y convertir."
+kwords: Excel, Office, Hoja de cálculo, Nube REST API, CriteriaMultipleFilter
 weight: 50
 ---
 ## **criteriosFiltroMúltiple**
@@ -14,4 +15,5 @@ weight: 50
 |:- |:- |:- |:- |:- |:- |
 | Criterios| Cadena| Verdadero| FALSO|||
 
-**Nombre del padre** : (Filtro múltiple)[filtro múltiple]
+**Nombre del padre** : [Filtro múltiple](/specification/model/multiplefilter)
+

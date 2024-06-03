@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/putinsertworksheetrow/
 description: Вставить новую строку на лист
+kwords: Excel, Office, электронная таблица, Cloud REST API, PutInsertWorksheetRow
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutInsertWorksheetRow" >}}

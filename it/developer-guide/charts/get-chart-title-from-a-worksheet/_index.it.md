@@ -4,6 +4,7 @@ type: docs
 url: /it/charts/title/get/
 aliases: [/get-chart-title-from-a-worksheet/]
 weight: 120
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Ottieni titolo del grafico da un foglio di lavoro
 ---
 Questo REST API indica il titolo del grafico ottenuto
  

@@ -4,6 +4,7 @@ type: docs
 url: /ru/charts/area/get/
 aliases: [/get-chart-area-from-a-worksheet/]
 weight: 60
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, получение области диаграммы из рабочего листа
 ---
 Этот REST API указывает на получение информации об области диаграммы.
  

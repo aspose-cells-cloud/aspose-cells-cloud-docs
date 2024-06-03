@@ -1,29 +1,30 @@
 ﻿---
-title: 更新后工作表Ro
+title: PostUpdateWorksheetRo
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/postupdateworksheetrow/
 description: 更新工作表中的行高
+kwords: Excel，Office，电子表格，云 REST API，PostUpdateWorksheetRow
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostUpdateWorksheetRow" >}}
 {{< blocks/products/cells/docs-title titlemsg="Update height of rows in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells/rows/{rowIndex},POST,更新工作表中的行高。,<a href=\'https://apireference.aspose.cloud/cells/# /Cells/PostUpdateWorksheetRow\'>PostUpdateWorksheetRow</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells/rows/{rowIndex},POST,更新工作表中行的高度。,<a href=\'https://apireference.aspose.cloud/cells/#/Cells/PostUpdateWorksheetRow\'>PostUpdateWorksheetRow</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="参数名称、类型、描述" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="名称，字符串，文件名。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,字符串,工作表名称。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="rowIndex,整数,行索引。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="name，string，文件名。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName，string，工作表名称。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="rowIndex，整数，行索引。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="height,float,新的行高。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="height，floating，新的行高。" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="计数，整数，" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="文件夹，字符串，文件所在的文件夹。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,文件所在的存储名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName，string，文件所在的存储名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/CellsController/PostUpdateWorksheetRow\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

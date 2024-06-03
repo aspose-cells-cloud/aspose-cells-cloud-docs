@@ -3,6 +3,7 @@ title: Ottieni MaxDataColumn dal foglio di lavoro Excel
 type: docs
 url: /it/get-maxdatacolumn-from-excel-worksheet/
 weight: 70
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Ottieni MaxDataColumn da Excel Foglio di lavoro
 ---
 Questo REST API indica che viene ottenuto `maxdatacolumn` in un file Excel quando il parametro `cellOrMethodName` è `maxdatacolumn`.
 

@@ -3,6 +3,7 @@ title: Ottieni MinDataRow dal foglio di lavoro Excel
 type: docs
 url: /it/get-mindatarow-from-excel-worksheet/
 weight: 90
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Ottieni MinDataRow da Excel Foglio di lavoro
 ---
 Questo REST API indica che viene ottenuto `mindatarow` in un file Excel quando il parametro `cellOrMethodName` è `mindatarow`.
 

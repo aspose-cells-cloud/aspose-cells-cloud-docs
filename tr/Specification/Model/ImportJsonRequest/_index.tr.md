@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/model/importjsonrequest/
 description: "Aspose.Cells Bulut modeli spesifikasyonu: ImportJsonRequest. Açma, oluşturma, düzenleme, bölme, birleştirme, karşılaştırma ve dönüştürme gibi özelliklerle Excel ve diğer elektronik tablo belgelerini zahmetsizce yönetin"
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, ImportJsonRequest
 weight: 50
 ---
 ## **importJsonRequest**
@@ -12,7 +13,7 @@ weight: 50
 
 | Mülkiyet adı| Emlak Tipi| Geçersiz kılınabilir| Sadece oku| Varsayılan değer| Tanım|
 |:- |:- |:- |:- |:- |:- |
-| JsonDosya Kaynağı| Sınıf:FileSource| Doğru| YANLIŞ|| Json dosya kaynağı|
+| JsonDosya Kaynağı| Sınıf:DataSource| Doğru| YANLIŞ|| Json dosya kaynağı|
 | İçe Aktarma Konumu| Sınıf:ImportPosition| Doğru| YANLIŞ|| Konum açıklamasını içe aktarın.|
 | Jsonİçeriği| Sicim| Doğru| YANLIŞ|| Base64String varsayılanı null|
 

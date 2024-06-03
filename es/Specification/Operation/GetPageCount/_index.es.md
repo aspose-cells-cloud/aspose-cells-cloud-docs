@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/getpagecount/
 description: Obtener el recuento de páginas en el libro de trabajo
+kwords: Excel, Office, hoja de cálculo, nube REST API, GetPageCount
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetPageCount" >}}

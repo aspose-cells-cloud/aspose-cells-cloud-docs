@@ -8,6 +8,7 @@ aliases: [/move-excel-worksheets/]
 keywords: Move an Excel worksheet on an Excel workbook
 description: Aspose.Cells Cloud REST API admite mover una hoja de trabajo Excel en un libro de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 20
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Mover una hoja de trabajo Excel
 ---
 Este REST API indica `move worksheet`.
  

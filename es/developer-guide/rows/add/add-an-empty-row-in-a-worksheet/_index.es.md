@@ -8,6 +8,7 @@ aliases: [/add-an-empty-row-in-a-worksheet/]
 keywords: Add an empty row on an Excel workshee
 description: Aspose.Cells Cloud REST API admite agregar una fila vacía en una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 20
+kwords: Excel, Office Cloud, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Agregar una fila vacía en una hoja de trabajo Excel
 ---
 Este REST API indica agregar una nueva fila de hoja de trabajo en una hoja de trabajo Excel.
  
@@ -22,7 +23,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/
  
 | Nombre del parámetro| Tipo| Ruta/Cadena de consulta/Cuerpo HTTP|Descripción|
 |:- |:- |:- |:- |
-| nombre| cadena| camino|El nombre del libro de trabajo.|
+| nombre| cadena| camino| El nombre del libro de trabajo.|
 | nombre de la hoja| cadena| camino| El nombre de la hoja de trabajo.|
 | índice de fila| entero| camino| El nuevo índice de fila.|
 | carpeta| cadena| consulta| La carpeta de documentos.|

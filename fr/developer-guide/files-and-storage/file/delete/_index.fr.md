@@ -6,6 +6,7 @@ url: /fr/file/delete/
 keywords: Learn how to delete file with Aspose Cells Cloud REST API
 description: Découvrez comment supprimer un fichier avec le SDK Aspose Cells Cloud REST API prenant en charge les types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 100
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, supprimer le fichier
 ---
 Ce REST API indique `delete file`.
  
@@ -18,7 +19,7 @@ DELETE http://api.aspose.cloud/v3.0/cells/storage/file/{path}
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | chemin| chaîne| chemin| Chemin du fichier, par exemple '/folder/file.ext'|
 | Nom de stockage| chaîne| requête| Nom de stockage|

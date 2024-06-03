@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/postworksheetlistcolumnstotal/
 description: Tablodaki liste sütunlarının toplamını güncelle
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PostWorksheetListColumnsTotal
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetListColumnsTotal" >}}

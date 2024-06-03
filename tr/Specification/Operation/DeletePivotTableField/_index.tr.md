@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/deletepivottablefield/
 description: PivotTable'da bir pivot alanını silme
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, SilPivotTableField
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeletePivotTableField" >}}

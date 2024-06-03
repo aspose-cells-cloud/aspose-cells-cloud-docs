@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/getworksheetcells/
 description: Получить описания ячеек в указанном формате
+kwords: Excel, Office, электронная таблица, Cloud REST API, GetWorksheetCells
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetCells" >}}

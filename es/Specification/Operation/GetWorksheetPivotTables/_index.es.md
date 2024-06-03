@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/getworksheetpivottables/
 description: Recuperar descripciones de tablas dinámicas en la hoja de trabajo
+kwords: Excel, Office, hoja de cálculo, nube REST API, GetWorksheetPivotTables
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetPivotTables" >}}

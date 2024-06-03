@@ -7,6 +7,7 @@ url: /es/rows/add/
 keywords: Working with adding row on an Excel worksheet. How to add rows on an Excel worksheet
 description: Aspose.Cells Cloud REST API admite agregar filas en una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 20
+kwords: Excel, Office Cloud, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Trabajar agregando una fila en una hoja de trabajo Excel
 ---
 ## Trabajando con la eliminación de filas en una hoja de trabajo Excel.
 

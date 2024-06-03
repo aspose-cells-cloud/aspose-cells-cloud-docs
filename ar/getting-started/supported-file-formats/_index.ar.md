@@ -5,6 +5,7 @@ type: docs
 url: /ar/supported-file-formats/
 description: Aspose.Cells تدعم السحابة Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 40
+kwords: Excel، Office كلاود، ريست API، جدول البيانات، PDF، CSV، Json، Markdwon، تنسيقات الملفات المدعومة
 ---
 |**شكل**|**وصف**|**حمولة**|**يحفظ**|
 |:- |:- |:- |:- |

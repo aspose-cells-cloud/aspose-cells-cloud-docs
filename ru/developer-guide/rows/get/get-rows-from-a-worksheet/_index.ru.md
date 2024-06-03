@@ -8,6 +8,7 @@ aliases: [/get-row-from-a-worksheet/]
 keywords: Get rows info on an Excel workshee
 description: Aspose.Cells Cloud REST API поддерживает получение строк на листе Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 10
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, получение информации о строках из листа Excel.
 ---
 Этот REST API указывает на получение информации о строках на листе Excel.
  
@@ -22,7 +23,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
  
 | Имя параметра| Тип| Путь/строка запроса/HTTPBody|Описание|
 |:- |:- |:- |:- |
-| имя| нить| путь|Имя рабочей книги.|
+| имя| нить| путь| Имя рабочей книги.|
 | имя листа| нить| путь| Имя рабочего листа.|
 | папка| нить| запрос| Папка рабочих документов.|
 | имя_хранилища| нить| запрос| имя хранилища.|

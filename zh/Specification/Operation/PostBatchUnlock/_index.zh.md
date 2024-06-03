@@ -1,16 +1,17 @@
 ﻿---
-title: 批量解锁后
+title: PostBatchUnloc
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/postbatchunlock/
-description: 批量解锁满足特定匹配条件的文件
+description: 批量解锁符合特定匹配条件的文件
+kwords: Excel，Office，电子表格，云 REST API，PostBatchUnlock
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostBatchUnlock" >}}
 {{< blocks/products/cells/docs-title titlemsg="Batch unlocking files that meet specific matching conditions." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/batch/unlock,POST,批量解锁满足特定匹配条件的文件。,<a href=\'https://apireference.aspose.cloud/cells/#/Batch/PostBatchUnlock\'>PostBatchUnlock</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/batch/unlock,POST,批量解锁符合特定匹配条件的文件,<a href=\'https://apireference.aspose.cloud/cells/#/Batch/PostBatchUnlock\'>PostBatchUnlock</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

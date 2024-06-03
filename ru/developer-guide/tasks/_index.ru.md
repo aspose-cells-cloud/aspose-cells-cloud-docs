@@ -7,6 +7,7 @@ aliases: [/working-with-tasks/]
 keywords: REST API, task, spreadsheets, exce
 description: "Cells.Облако API для Excel работает: работает с Excel с задачами."
 weight: 100
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, задачи
 ---
 ## Работа с задачами.
 

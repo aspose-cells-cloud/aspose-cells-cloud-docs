@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/model/top10/
 description: "Aspose.Cells Specifica del modello cloud: Top10. Gestisci facilmente Excel e altri fogli di calcolo con funzionalità come apertura, generazione, modifica, divisione, unione, confronto e conversione"
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, Top10
 weight: 50
 ---
 ## **top10**
 
-Descrivi la regola di formattazione condizionale Top10. Questa regola di formattazione condizionale evidenzia le celle i cui valori rientrano nella parentesi N superiore o N inferiore, come specificato.
+ Descrivi la regola di formattazione condizionale Top10. Questa regola di formattazione condizionale evidenzia le celle i cui valori rientrano nella parentesi N superiore o N inferiore, come specificato.
 
 | Nome della proprietà| Tipo di proprietà| Nullabile| Sola lettura| Valore di default| Descrizione|
 |:- |:- |:- |:- |:- |:- |

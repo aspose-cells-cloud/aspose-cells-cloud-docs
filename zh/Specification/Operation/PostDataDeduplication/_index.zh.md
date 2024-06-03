@@ -1,21 +1,22 @@
 ﻿---
-title: 重复数据删除后
+title: 后数据重复数据删除
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/postdatadeduplication/
-description: 电子表格文件的重复数据删除主要用于消除表和范围中的重复数据
+description: 电子表格文件的数据重复数据删除主要用于消除表格和范围内的重复数据
+kwords: Excel，Office，电子表格，云 REST API，PostDataDeduplication
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostDataDeduplication" >}}
 {{< blocks/products/cells/docs-title titlemsg="Data deduplication of spreadsheet files is mainly used to eliminate duplicate data in tables and ranges." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/datadeduplication,POST,电子表格文件的重复数据删除主要用于消除表和范围中的重复数据。,<a href=\'https://apireference.aspose.cloud/cells/#/DataProcessing/PostDataDeduplication\'>PostDataDeduplication </a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/datadeduplication,POST,电子表格文件的数据重复数据删除主要用于消除表格和范围内的重复数据。,<a href=\'https://apireference.aspose.cloud/cells/#/DataProcessing/PostDataDeduplication\'>PostDataDeduplication</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="dataDeduplicationRequest，类：datadeduplicationrequest，" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="dataDeduplicationRequest，类：datadeduplicationRequest，" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

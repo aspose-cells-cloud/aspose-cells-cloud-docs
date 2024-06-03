@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/deleteworksheet/
 description: حذف ورقة عمل في المصنف
+kwords: Excel، Office، جدول البيانات، Cloud REST API، حذف ورقة العمل
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheet" >}}

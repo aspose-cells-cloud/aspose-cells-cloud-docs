@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/deleteworksheetchart/
 description: Eliminar un gráfico por índice en la hoja de trabajo
+kwords: Excel, Office, hoja de cálculo, nube REST API, eliminar gráfico de hoja de trabajo
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetChart" >}}

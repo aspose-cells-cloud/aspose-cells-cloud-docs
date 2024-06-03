@@ -7,6 +7,7 @@ aliases: [/working-with-autofilter/]
 keywords: Get, add， delete, and so on for auto filter on an Excel worksheet
 description: "Aspose.Cells Cloud API:er stöder för att hämta, lägga till, ta bort och så vidare för autofilter på ett Excel-kalkylblad. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift"
 weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, AutoFilter
 ---
 Autofilter är det snabbaste sättet att bara välja de objekt från kalkylbladet som du vill visa i en lista. Den automatiska filterfunktionen tillåter användare att filtrera objekt i en lista enligt ett fastställt villkor. Filtrera baserat på text, siffror eller datum.
 
@@ -29,7 +30,7 @@ för att filtrera data baserat på fyllnadsfärgsegenskapen för cellerna.</p>
     <td class="col-md-2"> <li>Datum</li> </td>
   <td class="col-md-10">
   <p>
- Olika typer av datumfilter kan implementeras som att filtrera alla rader med datum i januari 2018.<a href="/cells/sv/autofilter/add-date-filter/">API för lägg till datumfärgfilter</a> kan implementera denna funktion.
+Olika typer av datumfilter kan implementeras som att filtrera alla rader med datum i januari 2018.<a href="/cells/sv/autofilter/add-date-filter/">API för lägg till datumfärgfilter</a> kan implementera denna funktion.
 </p>
   </td>
   </tr>
@@ -53,7 +54,7 @@ för att filtrera data baserat på fyllnadsfärgsegenskapen för cellerna.</p>
     <td class="col-md-2"> <li>Text</li> </td>
   <td class="col-md-10">
   <p>
- Om en kolumn innehåller text och celler ska väljas som innehåller viss text,<a href="/cells/sv/autofilter/add-filter/"> Tilläggsfiltret API</a>kan användas.
+ Om en kolumn innehåller text och celler ska väljas som innehåller viss text,<a href="/cells/sv/autofilter/add-filter/"> Tilläggsfiltret API</a> kan användas.
 </p>
   </td>
   </tr>
@@ -79,7 +80,7 @@ för att filtrera data baserat på fyllnadsfärgsegenskapen för cellerna.</p>
     <td class="col-md-2"> <li>Anpassat filter</li> </td>
   <td class="col-md-10">
   <p>
- Aspose.Cells Cloud tillhandahåller<a href="/cells/sv/autofilter/add-dynamic-filter/"> anpassade filter API</a> som filterrader som innehåller någon specifik sträng och filterrader som börjar eller slutar med någon specifik sträng.
+ Aspose.Cells Cloud tillhandahåller<a href="/cells/sv/autofilter/add-dynamic-filter/">anpassade filter API</a> som filterrader som innehåller någon specifik sträng och filterrader som börjar eller slutar med någon specifik sträng.
 </p>
   </td>
   </tr>

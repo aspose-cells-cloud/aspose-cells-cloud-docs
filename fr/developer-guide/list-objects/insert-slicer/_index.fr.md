@@ -7,6 +7,7 @@ keywords: Insert slicer for list object
 url: /fr/list-objects/insert-slicer/
 description:  Insérez un slicer pour l'objet de liste.
 weight: 20
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, trancheur d'insertion d'objet de liste
 ---
  Ce REST API indique un segment d'insertion pour un objet de liste sur une feuille de calcul Excel.
 
@@ -20,7 +21,7 @@ POST http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/listobjec
 
  Les paramètres de la requête sont :
 
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP| Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody| Description|
 |:- |:- |:- |:- |
 |nom|Chaîne|Chemin||
 |Nom de la feuille|Chaîne|Chemin||

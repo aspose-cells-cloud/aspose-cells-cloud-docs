@@ -1,29 +1,30 @@
 ﻿---
-title: 后设置单元格范围值
+title: 设定单元格范围值
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/postsetcellrangevalue/
-description: 设置工作表中的范围值
+description: 设置工作表中范围的值
+kwords: Excel，Office，电子表格，云 REST API，PostSetCellRangeValue
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostSetCellRangeValue" >}}
 {{< blocks/products/cells/docs-title titlemsg="Set the value of the range in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells,POST,设置工作表中范围的值。,<a href=\'https://apireference.aspose.cloud/cells/#/Cells/PostSetCellRangeValue \'>PostSetCellRangeValue</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells,POST,设置工作表中范围的值。,<a href=\'https://apireference.aspose.cloud/cells/#/Cells/PostSetCellRangeValue\'>PostSetCellRangeValue</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="参数名称、类型、描述" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="名称，字符串，文件名。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,字符串,工作表名称。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="name，string，文件名。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName，string，工作表名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="cellarea、字符串、单元格区域（如“A1:C2”）" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="值、字符串、范围值" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="cellarea，string，单元格区域（如 \'A1:C2\'）" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="值，字符串，范围值" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="类型、字符串、值数据类型（如“int”）" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="文件夹，字符串，文件所在的文件夹。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,文件所在的存储名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName，string，文件所在的存储名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/CellsController/PostSetCellRangeValue\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

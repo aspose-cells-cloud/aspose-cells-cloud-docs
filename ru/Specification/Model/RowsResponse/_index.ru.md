@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/model/rowsresponse/
 description: "Aspose.Cells Спецификация облачной модели: RowsResponse. Легко обрабатывайте Excel и другие документы электронных таблиц с помощью таких функций, как открытие, создание, редактирование, разделение, слияние, сравнение и преобразование."
+kwords: Excel, Office, электронная таблица, Cloud REST API, RowsResponse
 weight: 50
 ---
 ## **строкиОтвет**
 
- 
+ Представляет ответ строк.
 
 | Имя свойства| Тип недвижимости| Обнуляемый| Только чтение| Значение по умолчанию| Описание|
 |:- |:- |:- |:- |:- |:- |
@@ -16,4 +17,5 @@ weight: 50
 | Код| Целое число| Истинный| ЛОЖЬ|||
 | Положение дел| Нить| Истинный| ЛОЖЬ|||
 
-**Имя родителя** : (CellsCloudResponse)[cellscloudresponse]
+**Имя родителя** : [ЯчейкиОблакоОтвет](/specification/model/cellscloudresponse)
+

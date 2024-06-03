@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/deleteworksheetpivottablefilters/
 description: Elimina tutti i filtri pivot nella tabella pivot
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, Elimina filtri tabella pivot foglio di lavoro
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetPivotTableFilters" >}}

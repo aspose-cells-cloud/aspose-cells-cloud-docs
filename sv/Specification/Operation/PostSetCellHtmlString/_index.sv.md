@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/postsetcellhtmlstring/
 description: Ställ in strängen HTML som innehåller data och specifika format i den här cellen
+kwords: Excel, Office, Kalkylblad, Cloud REST API, PostSetCellHtmlString
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostSetCellHtmlString" >}}

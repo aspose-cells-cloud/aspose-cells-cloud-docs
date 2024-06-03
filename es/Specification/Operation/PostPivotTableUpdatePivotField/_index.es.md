@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/postpivottableupdatepivotfield/
 description: Actualizar campo dinámico en la tabla dinámica
+kwords: Excel, Office, hoja de cálculo, nube REST API, PostPivotTableUpdatePivotField
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostPivotTableUpdatePivotField" >}}

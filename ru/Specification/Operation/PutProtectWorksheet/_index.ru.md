@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/putprotectworksheet/
 description: Защитить лист
+kwords: Excel, Office, электронная таблица, Cloud REST API, PutProtectWorksheet
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutProtectWorksheet" >}}

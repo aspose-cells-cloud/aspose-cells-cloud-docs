@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/getchartsecondvalueaxis/
 description: Grafikteki grafiğin ikinci değer eksenini al
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, GetChartSecondValueAxis
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetChartSecondValueAxis" >}}

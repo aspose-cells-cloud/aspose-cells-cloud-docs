@@ -4,13 +4,14 @@ type: docs
 url: /fr/how-to-convert-file-formats
 description: Comment convertir des formats de fichiers via Aspose.Cells Cloud
 weight: 10
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdwon, Comment convertir des formats de fichiers via Aspose.Cells Cloud
 ---
 ## Introduction
 Le Aspose.Cells Cloud API est une puissante solution basée sur le cloud conçue pour la création, l'édition et la conversion de fichiers de feuilles de calcul. Dans cet article, nous vous guiderons tout au long du processus d'utilisation du Aspose.Cells Cloud API pour la conversion de format de fichier, y compris des cas d'utilisation typiques et des exemples de code.
 
 ## Aperçu
 
- Le Aspose.Cells Cloud API fournit un ensemble robuste d'API pour convertir des feuilles de calcul entre différents formats. Les formats pris en charge incluent**Excel** (XLS, XLSX),**CSV**, **HTML**, **PDF**, et plus. En tirant parti du Aspose.Cells Cloud API, vous pouvez facilement convertir des fichiers de feuilles de calcul vers d'autres formats largement utilisés, répondant à un large éventail d'exigences.
+Le Aspose.Cells Cloud API fournit un ensemble robuste d'API pour convertir des feuilles de calcul entre différents formats. Les formats pris en charge incluent**Excel** (XLS, XLSX),**CSV**, **HTML**, **PDF**, et plus. En tirant parti du Aspose.Cells Cloud API, vous pouvez facilement convertir des fichiers de feuilles de calcul vers d'autres formats largement utilisés, répondant à un large éventail d'exigences.
 
 De nombreuses API sont disponibles pour la conversion de fichiers, généralement compatibles avec divers environnements en ligne. Vous trouverez ci-dessous une description détaillée de ces API :
 
@@ -22,7 +23,7 @@ De nombreuses API sont disponibles pour la conversion de fichiers, généralemen
 
 # Comment convertir des formats de fichiers via Aspose.Cells Cloud
 
- Le Aspose.Cells Cloud API fournit[plusieurs SDK](https://github.com/aspose-cells-cloud)pour différents langages de programmation. Choisissez le SDK qui correspond à votre langage de programmation préféré et suivez la documentation qui l'accompagne pour l'installation et l'initialisation. Alternativement, vous pouvez créer votre propre SDK selon les[Référence API](https://reference.aspose.cloud/cells/). Dans cette section, nous utiliserons C# comme exemple pour détailler le processus de conversion de fichier.
+ Le Aspose.Cells Cloud API fournit[plusieurs SDK](https://github.com/aspose-cells-cloud) pour différents langages de programmation. Choisissez le SDK qui correspond à votre langage de programmation préféré et suivez la documentation qui l'accompagne pour l'installation et l'initialisation. Alternativement, vous pouvez créer votre propre SDK selon les[Référence API](https://reference.aspose.cloud/cells/). Dans cette section, nous utiliserons C# comme exemple pour détailler le processus de conversion de fichier.
 
 
 ## Inscription et obtention de la clé API

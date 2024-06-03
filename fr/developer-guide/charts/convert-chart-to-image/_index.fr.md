@@ -4,6 +4,7 @@ type: docs
 url: /fr/charts/to-image/
 aliases: [/convert-chart-to-image/]
 weight: 50
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, convertir un graphique en image
 ---
 Ce REST API indique comment convertir un graphique en image .
  
@@ -16,7 +17,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{cha
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Nom du document.|
 | Nom de la feuille| chaîne| chemin| Nom de la feuille de calcul.|

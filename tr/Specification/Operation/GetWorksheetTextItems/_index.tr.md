@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/getworksheettextitems/
 description: Çalışma sayfasındaki metin öğelerini alma
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, GetWorksheetTextItems
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetTextItems" >}}

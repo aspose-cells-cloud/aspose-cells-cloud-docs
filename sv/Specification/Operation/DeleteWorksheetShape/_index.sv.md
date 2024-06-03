@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/deleteworksheetshape/
 description: Ta bort en form i kalkylbladet
+kwords: Excel, Office, Spreadsheet, Cloud REST API, DeleteWorksheetShape
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetShape" >}}

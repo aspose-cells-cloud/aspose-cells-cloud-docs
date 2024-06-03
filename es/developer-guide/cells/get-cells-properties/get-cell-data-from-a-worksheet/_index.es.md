@@ -3,6 +3,7 @@ title: Obtener datos celulares de una hoja de trabajo
 type: docs
 url: /es/get-cell-data-from-a-worksheet/
 weight: 10
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Obtener datos de celda de una hoja de trabajo
 ---
 Este REST API indica que muestra obtener un `cell` en un archivo Excel cuando el parámetro `cellOrMethodName` es el nombre de la celda.
 

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/getchartsecondvalueaxis/
 description: Recupera il secondo asse dei valori del grafico nel grafico
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, GetChartSecondValueAxis
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetChartSecondValueAxis" >}}

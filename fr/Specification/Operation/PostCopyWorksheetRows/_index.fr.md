@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postcopyworksheetrows/
 description: Copier les données et les formats de lignes entières spécifiques de la feuille de calcul
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostCopyWorksheetRows
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostCopyWorksheetRows" >}}

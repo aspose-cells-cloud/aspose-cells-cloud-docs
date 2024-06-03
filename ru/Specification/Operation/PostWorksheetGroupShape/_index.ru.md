@@ -4,13 +4,14 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postworksheetgroupshape/
 description: Группировать фигуры на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostWorksheetGroupShape
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetGroupShape" >}}
 {{< blocks/products/cells/docs-title titlemsg="Group shapes in the worksheet." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Описание,ссылка API" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/shapes/group,POST,Группируйте фигуры на листе.,<a href=\'https://apireference.aspose.cloud/cells/#/Shapes/PostWorksheetGroupShape\'> Постворклистгруппапе</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/shapes/group,POST,Группировать фигуры на листе.,<a href=\'https://apireference.aspose.cloud/cells/#/Shapes/PostWorksheetGroupShape\'> Постворклистгруппапе</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

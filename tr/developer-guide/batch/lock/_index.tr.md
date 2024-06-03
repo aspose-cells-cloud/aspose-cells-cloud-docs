@@ -6,6 +6,7 @@ url: /tr/batch/lock
 keywords: Batch lock of multiple Excel files
 description: Aspose.Cells Bulut API, birden fazla excel dosyasının toplu kilidini destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 100
+kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Toplu Kilit
 ---
 Bu REST API, uygun dosyaların `batch lock`'ini gösterir.
  

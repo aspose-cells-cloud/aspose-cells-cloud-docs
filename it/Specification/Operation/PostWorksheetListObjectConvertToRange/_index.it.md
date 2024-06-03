@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/postworksheetlistobjectconverttorange/
 description: Converti l'oggetto dell'elenco nell'intervallo nel foglio di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PostWorksheetListObjectConvertToRange
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetListObjectConvertToRange" >}}

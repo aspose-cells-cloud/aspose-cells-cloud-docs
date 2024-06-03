@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/postworkbookstextsearch/
 description: Çalışma kitabında metin arayın
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PostWorkbooksTextSearch
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbooksTextSearch" >}}

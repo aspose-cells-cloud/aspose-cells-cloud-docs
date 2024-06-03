@@ -3,6 +3,7 @@ title:  Grafik Değeri Eksenini Güncelle
 type: docs
 url: /tr/charts/value-axis/update/
 weight: 160
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Grafik Değer Eksenini Güncelle
 ---
  Bu REST API, Güncelleştirme Grafiği Değer Eksenini gösterir.
  

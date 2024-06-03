@@ -7,6 +7,7 @@ aliases: [/working-with-worksheets/]
 keywords: REST API, spreadsheets, excel, cell
 description: "Cells.Cloud API pour Excel fonctionnent : les cellules fonctionnent"
 weight: 100
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdwon, Cells
 ---
  Cells est l'objet d'exploitation de base de Aspose.Cells pour le fichier Excel.
 

@@ -8,6 +8,7 @@ aliases: [/add-a-pivot-table-in-a-worksheet/]
 keywords: Add a pivot field in a pivot table
 description: Aspose.Cells Cloud REST API supporta l'aggiunta di un campo pivot in una tabella pivot. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 40
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Aggiungi un campo pivot nella tabella pivot
 ---
 Questo REST API indica il campo pivot `add` nella tabella pivot
  
@@ -27,7 +28,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables
 | pivotTableIndex| numero intero| sentiero| Indice della tabella pivot|
 | pivotFieldType| corda| domanda| Il tipo di area dei campi.|
 | richiesta|| corpo| Dto che contiene gli indici di campo|
-| bisogno di ricalcolare| booleano| domanda| Falso|
+| bisogno di ricalcolare|booleano| domanda| Falso|
 | cartella| corda| domanda| Cartella del documento.|
 | storageName| corda| domanda| nome dell'archivio.|
  

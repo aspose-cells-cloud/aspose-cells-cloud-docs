@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/model/svgsaveoptions/
 description: "Aspose.Cells Spécification du modèle cloud : SvgSaveOptions. Gérez sans effort Excel et d'autres feuilles de calcul avec des fonctionnalités telles que l'ouverture, la génération, l'édition, le fractionnement, la fusion, la comparaison et la conversion."
+kwords: Excel, Office, Feuille de calcul, Cloud REST API, SvgSaveOptions
 weight: 50
 ---
 ## **svgEnregistrerOptions**
@@ -19,7 +20,8 @@ weight: 50
 | Créer le répertoire| Booléen| Vrai| FAUX|||
 | Activer la compression HTTP| Booléen| Vrai| FAUX|||
 | Actualiser le cache de graphiques| Booléen| Vrai| FAUX|||
-|Trier les noms| Booléen| Vrai| FAUX|||
+| Trier les noms| Booléen| Vrai| FAUX|||
 | ValidateMergedAreas| Booléen| Vrai| FAUX|||
 
-**Nom du parent** : (EnregistrerOptions)[Enregistreroptions]
+**Nom du parent** : [Options d'enregistrement](/specification/model/saveoptions)
+

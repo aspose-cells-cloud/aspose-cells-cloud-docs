@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/postconvertworkbooktosql/
 description: Convierta el archivo Excel a archivos de script SQL
+kwords: Excel, Office, hoja de cálculo, nube REST API, PostConvertWorkbookToSQL
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostConvertWorkbookToSQL" >}}

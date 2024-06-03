@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/model/formulasettings/
 description: "Aspose.Cells Molnmodellspecifikation: FormulaSettings. Hantera enkelt Excel och andra kalkylarksdokument med funktioner som att öppna, generera, redigera, dela, slå samman, jämföra och konvertera"
+kwords: Excel, Office, Kalkylblad, Cloud REST API, FormulaSettings
 weight: 50
 ---
 ## **formulaInställningar**
@@ -13,8 +14,8 @@ weight: 50
 | Egendomsnamn| Egenskapstyp| Nullbar| Endast läs| Standardvärde| Beskrivning|
 |:- |:- |:- |:- |:- |:- |
 | Beräkna PåÖppen| Boolean| Sann| Falsk|| Anger om programmet måste utföra en fullständig beräkning när arbetsboken öppnas.|
-|CalculateOnSave| Boolean| Sann| Falsk|| Anger om arbetsboken ska beräknas om innan dokumentet sparas, i manuellt beräkningsläge.|
-| ForceFullCalculation| Boolean| Sann| Falsk|| Anger om alla formler beräknas varje gång en beräkning utlöses.|
+| CalculateOnSave| Boolean| Sann| Falsk|| Anger om arbetsboken ska beräknas om innan dokumentet sparas, i manuellt beräkningsläge.|
+|ForceFullCalculation| Boolean| Sann| Falsk|| Anger om alla formler beräknas varje gång en beräkning utlöses.|
 | Beräkningsläge| Sträng| Sann| Falsk|| Hämtar eller ställer in läget för beräkning av arbetsbok i ms excel.|
 | CalculationId| Sträng| Sann| Falsk|| Anger versionen av beräkningsmotorn som används för att beräkna värden i arbetsboken.|
 | EnableIterativeCalculation| Boolean| Sann| Falsk|| Anger om aktivera iterativ beräkning för att lösa cirkulära referenser.|

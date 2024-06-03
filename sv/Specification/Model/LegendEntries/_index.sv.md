@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/model/legendentries/
 description: "Aspose.Cells Molnmodellspecifikation: LegendEntries. Hantera enkelt Excel och andra kalkylarksdokument med funktioner som att öppna, generera, redigera, dela, slå samman, jämföra och konvertera"
+kwords: Excel, Office, Kalkylblad, Cloud REST API, LegendEntries
 weight: 50
 ---
 ## **legendinlägg**
@@ -12,7 +13,8 @@ weight: 50
 
 | Egendomsnamn| Egenskapstyp| Nullbar| Endast läs| Standardvärde| Beskrivning|
 |:- |:- |:- |:- |:- |:- |
-| legendEntryList| Behållare| Sann| Falsk|||
+|legendEntryList| Behållare| Sann| Falsk|||
 | länk| Klass: Länk| Sann| Falsk|||
 
-**Förälders namn** : (LinkElement)[linkelement]
+**Förälders namn** : [LinkElement](/specification/model/linkelement)
+

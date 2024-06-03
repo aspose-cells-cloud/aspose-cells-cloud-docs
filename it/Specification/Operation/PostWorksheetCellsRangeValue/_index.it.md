@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/postworksheetcellsrangevalue/
 description: Assegnare un valore all'intervallo; se necessario, il valore verrà convertito in un altro tipo di dati e il formato numerico della cella verrà ripristinato
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PostWorksheetCellsRangeValue
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangeValue" >}}

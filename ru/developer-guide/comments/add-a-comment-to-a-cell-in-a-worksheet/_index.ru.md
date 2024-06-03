@@ -6,6 +6,7 @@ aliases: [/add-a-comment-to-a-cell-in-a-worksheet/]
 keywords: REST API, spreadsheets, excel, add commen
 description: "Cells.Облако API для Excel работает: добавить комментарий"
 weight: 20
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Добавить
 ---
 Этот REST API указывает на добавление комментария к ячейке рабочего листа.
  

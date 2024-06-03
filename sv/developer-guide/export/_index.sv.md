@@ -7,8 +7,9 @@ url: /sv/export/
 keywords: Export workbook and internal objects to kinds of format files
 description: Aspose.Cells Cloud REST API stöder export av Excel-filer och interna objekt till olika formatfiler. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 31
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Exportera arbetsbok och interna objekt till olika format
 ---
- Om du ursprungligen har skapat en Excel-fil i ett visst format, t.ex[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/) , och[CSV](https://docs.fileformat.com/spreadsheet/csv/) , kan du ibland tycka att det är användbart att konvertera excel-filen till ett annat format så att du kan dra fördel av specialfunktioner som den tillhandahåller. Du kanske till exempel vill exportera en excel-fil till[PDF](https://docs.fileformat.com/pdf/) för att skydda ditt innehåll från alla obehöriga ändringar och göra det enkelt att läsa och dela samtidigt.
+ Om du ursprungligen har skapat en Excel-fil i ett visst format, t.ex[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/) , och[CSV](https://docs.fileformat.com/spreadsheet/csv/) kan du ibland tycka att det är användbart att konvertera excel-filen till ett annat format så att du kan dra fördel av specialfunktioner som den tillhandahåller. Du kanske till exempel vill exportera en excel-fil till[PDF](https://docs.fileformat.com/pdf/) för att skydda ditt innehåll från alla obehöriga ändringar och göra det enkelt att läsa och dela samtidigt.
 
  Excel objektexport är en komplex process. Många faktorer bidrar till komplexiteten och bör därför beaktas under exportprocessen. Möjligheten att exportera Excel-objekt till en filformat med exakt professionell kvalitet är en toppfunktion i Aspose.Cells Cloud.
 
@@ -31,7 +32,7 @@ POST https://api.aspose.cloud/v3.0/cells/export
 | Parameternamn| Typ| Sökväg/Frågesträng/HTTPBody|Beskrivning|
 |:- |:- |:- |:- |
 | fil| fil| formData| Fil att ladda upp|
-| objectType| sträng| fråga|objekttyp (arbetsbok/kalkylblad/diagram/form/bild/listobjekt/oleobjekt)|
+| objectType| sträng| fråga| objekttyp (arbetsbok/kalkylblad/diagram/form/bild/listobjekt/oleobjekt)|
 | formatera| sträng| fråga|[Filformat](/cells/sv/supported-file-formats/)  |
  
  De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) definierar ett allmänt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.

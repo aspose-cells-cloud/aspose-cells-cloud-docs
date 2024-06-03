@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/getworksheetrow/
 description: Recupera i dati della riga in base all'indice della riga nel foglio di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, GetWorksheetRow
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetRow" >}}

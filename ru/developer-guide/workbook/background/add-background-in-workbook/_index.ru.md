@@ -8,6 +8,7 @@ aliases: [/add-background-in-workbook/,/workbook/add-background/]
 keywords: Add background on an Excel workbook
 description: Aspose.Cells Cloud REST API поддерживает добавление фона в книгу Excel в файл Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 160
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Добавить фон в книгу
 ---
 Этот REST API указывает на добавление `background` в книгу Excel.
 
@@ -34,7 +35,7 @@ weight: 160
 
 [Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookBackground) определяет общедоступный интерфейс программирования и позволяет выполнять взаимодействие с REST непосредственно из веб-браузера.
 
- Вы можете использовать**cURL** инструмент командной строки для легкого доступа к веб-службам Aspose.Cells. В следующем примере показано, как позвонить на Cloud API с помощью cURL.
+ Вы можете использовать**cURL**инструмент командной строки для легкого доступа к веб-службам Aspose.Cells. В следующем примере показано, как позвонить на Cloud API с помощью cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 

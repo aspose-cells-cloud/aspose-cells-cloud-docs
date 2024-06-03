@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/getworksheetcellsrangevalue/
 description: Получить значения ячеек в указанном диапазоне
+kwords: Excel, Office, электронная таблица, Cloud REST API, GetWorksheetCellsRangeValue
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetCellsRangeValue" >}}

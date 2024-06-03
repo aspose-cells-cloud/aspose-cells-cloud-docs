@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/deleteworksheetpicture/
 description: Çalışma sayfasındaki bir resim nesnesini dizine göre silme
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, deleteWorksheetPicture
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetPicture" >}}

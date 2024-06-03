@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/getworksheetrows/
 description: Çalışma sayfasındaki satırların açıklamalarını alın
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, GetWorksheetRows
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetRows" >}}
@@ -20,7 +21,7 @@ weight: 50
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametre Adı,Tip,Açıklama" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="ofset, tamsayı, Satır ofseti." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="count,integer,Satır sayısını görüntüle." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="count,integer,Satır sayısını göster." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="klasör,dize,Dosyanın bulunduğu klasör." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="depolamaAdı,dize,Dosyanın bulunduğu depolama adı." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}

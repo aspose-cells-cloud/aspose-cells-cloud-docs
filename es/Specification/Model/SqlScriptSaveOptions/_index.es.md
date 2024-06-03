@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/model/sqlscriptsaveoptions/
 description: "Aspose.Cells Especificación del modelo de nube: SqlScriptSaveOptions. Maneje sin esfuerzo Excel y otros documentos de hoja de cálculo con funciones como abrir, generar, editar, dividir, fusionar, comparar y convertir."
+kwords: Excel, Office, Hoja de cálculo, Nube REST API, SqlScriptSaveOptions
 weight: 50
 ---
 ## **Opciones de guardado de sqlScript**
 
-Representa las opciones de guardar el archivo .sql.
+ Representa las opciones de guardar el archivo .sql.
 
 | Nombre de la propiedad| tipo de propiedad| Anulable| Solo lectura| Valor por defecto| Descripción|
 |:- |:- |:- |:- |:- |:- |
@@ -20,10 +21,10 @@ Representa las opciones de guardar el archivo .sql.
 | Tipo de operador| Cadena| Verdadero| FALSO|| Obtiene y establece el tipo de operador de sql.|
 | Clave primaria| Entero| Verdadero| FALSO|| Representa qué columna es la clave principal de la tabla de datos.|
 | Crear mesa| Booleano| Verdadero| FALSO|| Indica si se exporta sql o se crea la tabla.|
-| Nombre de identificación| Cadena| Verdadero| FALSO|| Obtiene y establece el nombre de la columna de identificación.|
+| Nombre de identificación| Cadena| Verdadero| FALSO||Obtiene y establece el nombre de la columna de identificación.|
 | ID de inicio| Entero| Verdadero| FALSO|| Obtiene y establece la identificación de inicio.|
 | Nombre de la tabla| Cadena| Verdadero| FALSO|| Obtiene y establece el nombre de la tabla.|
-|Exportar como cadena| Booleano| Verdadero| FALSO|| Indica si se exportan todos los datos como valor de cadena.|
+| Exportar como cadena| Booleano| Verdadero| FALSO|| Indica si se exportan todos los datos como valor de cadena.|
 | Área de exportación| Clase: Área de celda| Verdadero| FALSO|| Obtiene o establece el rango de exportación.|
 | Tiene fila de encabezado| Booleano| Verdadero| FALSO|| Indica si el rango contiene una fila de encabezado.|
 | Guardar formato| Cadena| Verdadero| FALSO|||
@@ -32,7 +33,8 @@ Representa las opciones de guardar el archivo .sql.
 | Crear directorio| Booleano| Verdadero| FALSO|||
 | Habilitar compresión HTTP| Booleano| Verdadero| FALSO|||
 | Actualizar caché de gráficos| Booleano| Verdadero| FALSO|||
-|Ordenar nombres| Booleano| Verdadero| FALSO|||
+| Ordenar nombres| Booleano| Verdadero| FALSO|||
 | Validar áreas fusionadas| Booleano| Verdadero| FALSO|||
 
-**Nombre del padre** : (GuardarOpciones)[guardaropciones]
+**Nombre del padre** : [Guardar Opciones](/specification/model/saveoptions)
+

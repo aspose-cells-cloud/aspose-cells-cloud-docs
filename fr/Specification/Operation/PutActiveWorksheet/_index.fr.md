@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/putactiveworksheet/
 description: Définir l'index de la feuille de calcul active dans le classeur
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PutActiveWorksheet
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutActiveWorksheet" >}}

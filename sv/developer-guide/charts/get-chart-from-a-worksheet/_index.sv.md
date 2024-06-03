@@ -4,6 +4,7 @@ type: docs
 url: /sv/charts/get/
 aliases: [/get-chart-from-a-worksheet/]
 weight: 10
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Hämta diagram från ett kalkylblad
 ---
 Denna REST API indikerar att få sjökortsinformation.
  

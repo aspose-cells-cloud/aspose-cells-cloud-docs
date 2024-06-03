@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/getworksheetcolumn/
 description: Recupera i dati delle colonne del foglio di lavoro in base all'indice della colonna
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, GetWorksheetColumn
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetColumn" >}}

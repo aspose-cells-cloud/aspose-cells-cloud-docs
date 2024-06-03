@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postworkbookdatacleansing/
 description: Очистка данных файлов электронных таблиц — это процесс управления данными, используемый для выявления, исправления и удаления ошибок, неполноты, дубликатов или неточностей в таблицах и диапазонах.
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostWorkbookDataCleansing
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookDataCleansing" >}}
@@ -20,7 +21,7 @@ weight: 50
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Имя параметра, тип, описание" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="папка,строка,Папка, в которой находится файл." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="StorageName,string,Имя хранилища, в котором находится файл." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns=" пароль, строка, пароль файла." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="пароль, строка, пароль файла." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="регион,строка,Региональные настройки книги." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction, логическое значение," >}} 
 {{< /blocks/products/cells/docs-Parameter >}}

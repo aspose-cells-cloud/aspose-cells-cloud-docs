@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/getworksheetcellsrangevalue/
 description: Récupérer les valeurs des cellules dans la plage spécifiée
+kwords: Excel, Office, feuille de calcul, Cloud REST API, GetWorksheetCellsRangeValue
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetCellsRangeValue" >}}

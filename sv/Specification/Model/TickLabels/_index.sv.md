@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/model/ticklabels/
 description: "Aspose.Cells Molnmodellspecifikation: TickLabels. Hantera enkelt Excel och andra kalkylarksdokument med funktioner som att öppna, generera, redigera, dela, slå samman, jämföra och konvertera"
+kwords: Excel, Office, Kalkylblad, Cloud REST API, TickLabels
 weight: 50
 ---
 ## **tickEtiketter**
 
- 
+ Representerar de bockmarkeringar som är associerade med bockmarkeringar på en diagramaxel.
 
 | Egendomsnamn| Egenskapstyp| Nullbar| Endast läs| Standardvärde| Beskrivning|
 |:- |:- |:- |:- |:- |:- |
@@ -20,9 +21,10 @@ weight: 50
 | NumberFormatLinked| Boolean| Sann| Falsk|| Sant om talformatet är kopplat till cellerna (så att talformatet ändras i etiketterna när det ändras i cellerna).|
 | Offset| Heltal| Sann| Falsk|| Hämtar och ställer in etiketternas avstånd från axeln.|
 | Rotations vinkel| Heltal| Sann| Falsk|| Representerar textrotationsvinkel medurs.|
-| TextDirection| Sträng| Sann| Falsk|| Representerar textläsordning.|
-| Läsordning| Sträng| Sann| Falsk|| Representerar textläsordning.|
+| TextDirection| Sträng| Sann| Falsk||Representerar textläsordning.|
+| Läsordning| Sträng| Sann| Falsk||Representerar textläsordning.|
 | DirectionType| Sträng| Sann| Falsk|| Hämtar och anger textens riktning.|
 | länk| Klass: Länk| Sann| Falsk|||
 
-**Förälders namn** : (LinkElement)[linkelement]
+**Förälders namn** : [LinkElement](/specification/model/linkelement)
+

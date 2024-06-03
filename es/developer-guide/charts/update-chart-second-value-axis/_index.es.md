@@ -3,6 +3,7 @@ title:  Actualizar gráfico segundo valor Axi
 type: docs
 url: /es/charts/second-value-axis/update/
 weight: 160
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Actualizar gráfico segundo eje de valores
 ---
  Este REST API indica Actualizar el segundo eje de valores del gráfico.
  

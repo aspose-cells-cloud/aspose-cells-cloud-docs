@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/getchartsecondcategoryaxis/
 description: Hämta diagrammets andra kategoriaxel i tecknet
+kwords: Excel, Office, Kalkylblad, Cloud REST API, GetChartSecondCategoryAxis
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetChartSecondCategoryAxis" >}}

@@ -4,28 +4,29 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/postworksheetcellsrangemoveto/
 description: 将当前范围移动到目标范围
+kwords: Excel，Office，电子表格，云 REST API，PostWorksheetCellsRangeMoveTo
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangeMoveTo" >}}
 {{< blocks/products/cells/docs-title titlemsg="Move the current range to the destination range." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges/moveto,POST,将当前范围移动到目标范围。,<a href=\'https://apireference.aspose.cloud/cells/#/Ranges/ PostWorksheetCellsRangeMoveTo\'>PostWorksheetCellsRangeMoveTo</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges/moveto,POST,将当前范围移动到目标范围。,<a href=\'https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeMoveTo\'>PostWorksheetCellsRangeMoveTo</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="参数名称、类型、描述" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="名称，字符串，文件名。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,字符串,工作表名称。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="name，string，文件名。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName，string，工作表名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="destRow,integer,dest 范围的起始行。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="destColumn,integer,dest 范围的起始列。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="destRow，integer，目标范围的起始行。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="destColumn，integer，目标范围的起始列。" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="文件夹，字符串，原始工作簿文件夹。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="存储名称，字符串，存储名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName，string，存储名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="范围，类：范围，工作表中的范围" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="范围，类别：范围，工作表中的范围" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/getworksheetcharts/
 description: Получение описаний диаграмм на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, GetWorksheetCharts
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetCharts" >}}

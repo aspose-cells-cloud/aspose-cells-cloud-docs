@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/getworkbook/
 description: Получение книг в различных форматах
+kwords: Excel, Office, электронная таблица, Cloud REST API, GetWorkbook
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorkbook" >}}
@@ -18,8 +19,8 @@ weight: 50
      {{< blocks/products/cells/docs-Parameter-content columns="имя, строка, имя файла." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Имя параметра, тип, описание" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="формат, строка, формат преобразования (CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/0761 73481/ MD[Markdown]/Numbers)." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="пароль,строка,Пароль, необходимый для открытия файла Excel." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="формат, строка, формат преобразования (CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/076 173481/ MD[Markdown]/Numbers)." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="пароль, строка, пароль, необходимый для открытия файла Excel." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="isAutoFit,boolean,Указывает, нужно ли автоматически подгонять строки книги." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="onlySaveTable,boolean,Указывает, следует ли сохранять только данные таблицы. Для Excel используйте только PDF-файл." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="папка,строка,Папка, в которой находится файл." >}} 

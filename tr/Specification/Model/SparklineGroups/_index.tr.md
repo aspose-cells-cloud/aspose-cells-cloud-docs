@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/model/sparklinegroups/
 description: "Aspose.Cells Bulut modeli spesifikasyonu: SparklineGroups. Açma, oluşturma, düzenleme, bölme, birleştirme, karşılaştırma ve dönüştürme gibi özelliklerle Excel ve diğer elektronik tablo belgelerini zahmetsizce yönetin"
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, SparklineGroups
 weight: 50
 ---
 ## **mini grafikGruplar**

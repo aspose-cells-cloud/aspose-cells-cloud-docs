@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/postworkbookexportxml/
 description: XML verilerini Excel dosyasından dışa aktarın. Excel dosyasında XML Eşlemeleri olduğunda, XML verilerini dışa aktarın. Excel dosyasında XML haritası olmadığında Excel dosyasını XML dosyasına dönüştürün
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PostWorkbookExportXML
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookExportXML" >}}

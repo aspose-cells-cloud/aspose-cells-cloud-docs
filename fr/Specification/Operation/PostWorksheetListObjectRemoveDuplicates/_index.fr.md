@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postworksheetlistobjectremoveduplicates/
 description: Supprimer les doublons dans l'objet de liste
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostWorksheetListObjectRemoveDuplicates
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetListObjectRemoveDuplicates" >}}

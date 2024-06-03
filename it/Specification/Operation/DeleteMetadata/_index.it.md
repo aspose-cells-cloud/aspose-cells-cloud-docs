@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/deletemetadata/
 description: Elimina le proprietà del documento delle celle nel file Excel e salvale in vari formati
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, Elimina metadati
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteMetadata" >}}

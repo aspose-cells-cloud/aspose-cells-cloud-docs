@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/getworkbooksettings/
 description: Hämta beskrivningar av arbetsboksinställningar
+kwords: Excel, Office, Kalkylblad, Cloud REST API, GetWorkbookSettings
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorkbookSettings" >}}

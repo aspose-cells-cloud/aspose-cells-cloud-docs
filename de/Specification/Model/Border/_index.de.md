@@ -3,18 +3,19 @@ title: Borde
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/model/border/
-description: "Aspose.Cells Cloud-Modellspezifikation: Grenze. Bearbeiten Sie mühelos Excel und andere Tabellenkalkulationsdokumente mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+description: "Aspose.Cells Cloud-Modellspezifikation: Border. Müheloses Bearbeiten von Excel und anderen Tabellenkalkulationsdokumenten mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, Rahmen
 weight: 50
 ---
 ## **Grenze**
 
- 
+ Kapselt das Objekt ein, das den Zellrand darstellt.
 
-| Name des Anwesens| Art der Immobilie| Nullbar| Schreibgeschützt| Standardwert| Beschreibung|
+| Name des Anwesens| Art der Immobilie| Nullwerte zulassen| Schreibgeschützt| Standardwert| Beschreibung|
 |:- |:- |:- |:- |:- |:- |
-| Linienstil| Zeichenfolge| WAHR| FALSCH|| Ruft den Zellrahmentyp ab oder legt diesen fest.|
-| Farbe| Klasse:Farbe| WAHR| FALSCH|| Ruft den Wert des Rahmens ab oder legt diesen fest.|
-| BorderType| Zeichenfolge| WAHR| FALSCH|||
-| ThemeColor| Klasse:ThemeColor| WAHR| FALSCH|| Ruft die Designfarbe des Rahmens ab und legt diese fest.|
-| ArgbColor| Ganze Zahl| WAHR| FALSCH|| Ruft die Farbe mit einem 32-Bit-ARGB-Wert ab und legt sie fest.|
+| Linienart| Zeichenfolge| WAHR| FALSCH|| Ruft den Zellenrahmentyp ab oder legt ihn fest.|
+| Farbe| Klasse:Farbe| WAHR| FALSCH|| Ruft die Form der Umrandung ab oder legt sie fest.|
+| Rahmentyp| Zeichenfolge| WAHR| FALSCH|||
+| Themenfarbe| Klasse:ThemeColor| WAHR| FALSCH||Ruft die Designfarbe des Rahmens ab und legt sie fest.|
+| ArgbFarbe| Ganze Zahl| WAHR| FALSCH|| Ruft die Farbe mit einem 32-Bit-ARGB-Wert ab und legt sie fest.|
 

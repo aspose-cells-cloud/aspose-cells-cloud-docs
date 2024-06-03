@@ -1,28 +1,29 @@
 ﻿---
-title: 工作簿后重复数据删除
+title: PostWorkbookDataDeduplication（重复数据删除）
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/postworkbookdatadeduplication/
-description: 电子表格文件的重复数据删除主要用于消除表和范围中的重复数据
+description: 电子表格文件的数据重复数据删除主要用于消除表格和范围内的重复数据
+kwords: Excel，Office，电子表格，云 REST API，PostWorkbookDataDeduplication
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookDataDeduplication" >}}
 {{< blocks/products/cells/docs-title titlemsg="Data deduplication of spreadsheet files is mainly used to eliminate duplicate data in tables and ranges." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/datadeduplication,POST,电子表格文件的重复数据删除主要用于消除表和范围中的重复数据。,<a href=\'https://apireference.aspose.cloud/cells/#/DataProcessing/ PostWorkbookDataDeduplication\'>PostWorkbookDataDeduplication</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/datadeduplication,POST,电子表格文件的数据重复数据删除主要用于消除表格和范围内的重复数据。,<a href=\'https://apireference.aspose.cloud/cells/#/DataProcessing/PostWorkbookDataDeduplication\'>PostWorkbookDataDeduplication</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="参数名称、类型、描述" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="名称、字符串、" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="名称，字符串，" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="文件夹、字符串、" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="存储名称,字符串," >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="密码,字符串," >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="区域、字符串、" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="检查Excel限制，布尔值，" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="文件夹，字符串，" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="存储名称，字符串，" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="密码，字符串，" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="区域，字符串，" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction，布尔值，" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="参数名称、类型、描述" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="重复数据删除区域，类：重复数据删除区域，" >}} 

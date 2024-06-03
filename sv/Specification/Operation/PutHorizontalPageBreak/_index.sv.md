@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/puthorizontalpagebreak/
 description: Lägg till horisontella sidbrytningar i kalkylbladet
+kwords: Excel, Office, Kalkylblad, Cloud REST API, PutHorizontalPageBreak
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutHorizontalPageBreak" >}}

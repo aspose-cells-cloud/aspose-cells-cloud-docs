@@ -8,6 +8,7 @@ aliases: [/get-a-shape-by-index-inside-the-worksheet/]
 keywords: Get a shape on an Excel workshee
 description: Aspose.Cells Cloud REST API admite la obtención de una forma en una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 20
+kwords: Excel, Office Cloud, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Obtener una forma por índice en una hoja de trabajo Excel
 ---
 Este REST API indica obtener una forma con formato de imagen o información de forma en una hoja de trabajo Excel.
  

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postworksheetsparklinegroup/
 description: Обновление группы спарклайнов на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostWorksheetSparklineGroup
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetSparklineGroup" >}}

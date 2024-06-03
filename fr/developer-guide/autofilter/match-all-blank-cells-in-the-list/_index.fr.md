@@ -8,6 +8,7 @@ aliases: [/match-all-blank-cells-in-the-list/]
 keywords: Match all blank cells in the filter list on an Excel worksheet
 description: Le Aspose.Cells Cloud API prend en charge la correspondance de toutes les cellules vides de la liste de filtres sur une feuille de calcul Excel. Le SDK prend en charge les types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 100
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, faire correspondre toutes les cellules vides d'une feuille de calcul Excel
 ---
 Ce REST API indique à `match` tous les `blank cell` dans la liste de filtres sur une feuille de calcul Excel.
  
@@ -20,7 +21,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin||
 | Nom de la feuille| chaîne| chemin||

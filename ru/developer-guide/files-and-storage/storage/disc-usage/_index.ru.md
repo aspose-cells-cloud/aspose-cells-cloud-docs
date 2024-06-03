@@ -6,6 +6,7 @@ url: /ru/storage/disc-usage/
 keywords: Learn how to get disc-usage with Aspose Cells Cloud REST API
 description: Узнайте, как получить использование диска с помощью Aspose Cells Cloud REST API SDK, поддерживающего различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 100
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, использование диска
 ---
 Этот REST API указывает на `get disc usage`.
  

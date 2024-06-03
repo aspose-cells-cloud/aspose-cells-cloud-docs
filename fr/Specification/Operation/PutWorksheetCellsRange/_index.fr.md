@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/putworksheetcellsrange/
 description: Insérer une plage de cellules et décaler les cellules existantes en fonction de l'option de décalage spécifiée
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PutWorksheetCellsRange
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetCellsRange" >}}

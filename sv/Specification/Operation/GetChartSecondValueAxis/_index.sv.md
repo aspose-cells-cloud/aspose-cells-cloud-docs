@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/getchartsecondvalueaxis/
 description: Hämta diagrammets andra värdeaxel i diagrammet
+kwords: Excel, Office, Kalkylblad, Cloud REST API, GetChartSecondValueAxis
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetChartSecondValueAxis" >}}

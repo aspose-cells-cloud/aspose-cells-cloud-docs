@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/getworkbook/
 description: Recupera cartelle di lavoro in vari formati
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, GetWorkbook
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorkbook" >}}
@@ -18,7 +19,7 @@ weight: 50
      {{< blocks/products/cells/docs-Parameter-content columns="nome,stringa,Il nome del file." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Nome parametro, Tipo, Descrizione" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="format,string,Il formato di conversione (CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/076173 481/ MD[Ribasso]/Numeri)." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="format,string,Il formato di conversione (CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/0761 73481/ MD[Ribasso]/Numeri)." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="password,string,La password necessaria per aprire un file Excel." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="isAutoFit,boolean,Specifica se impostare le righe della cartella di lavoro da adattare automaticamente." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="onlySaveTable,boolean,Specifica se salvare solo i dati della tabella.Utilizza solo pdf per Excel." >}} 

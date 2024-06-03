@@ -1,31 +1,32 @@
 ﻿---
-title: 将单元格复制到单元格后
+title: 复制单元格到单元格
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/postcopycellintocell/
-description: 将数据从工作表中的源单元格复制到目标单元格
+description: 将数据从源单元格复制到工作表中的目标单元格
+kwords: Excel，Office，电子表格，云 REST API，PostCopyCellIntoCell
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostCopyCellIntoCell" >}}
 {{< blocks/products/cells/docs-title titlemsg="Copy data from a source cell to a destination cell in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells/{destCellName}/copy,POST,将数据从源单元格复制到工作表中的目标单元格。,<a href=\'https://apireference.aspose .cloud/cells/#/Cells/PostCopyCellIntoCell\'>PostCopyCellIntoCell</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells/{destCellName}/copy,POST,将数据从源单元格复制到工作表中的目标单元格。,<a href=\'https://apireference.aspose.cloud/cells/#/Cells/PostCopyCellIntoCell\'>PostCopyCellIntoCell</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="参数名称、类型、描述" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="名称，字符串，文件名。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="destCellName,字符串,目标单元格名称。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,字符串,目标工作表名称。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="name，string，文件名。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="destCellName，string，目标单元格名称。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName，string，目标工作表名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="worksheet,string,源工作表名称。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="cellname,string,源单元格名称。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="row,integer,源行索引。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="column,integer,源列索引。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="cellname，string，源单元格名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="row，integer，源行索引。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="column，integer，源列索引。" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="文件夹，字符串，文件所在的文件夹。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,文件所在的存储名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName，string，文件所在的存储名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/CellsController/PostCopyCellIntoCell\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

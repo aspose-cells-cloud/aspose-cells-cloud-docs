@@ -6,6 +6,7 @@ aliases: [/delete-a-comment-in-a-worksheet/]
 keywords: REST API, spreadsheets, excel, delete a commen
 description: "Cells.Cloud API för Excel fungera: ta bort en kommentar"
 weight: 40
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Delete
 ---
 Denna REST API indikerar Ta bort kalkylbladets cellkommentar.
  

@@ -3,6 +3,7 @@ title: Modifier le style de cellule dans la feuille de calcul Excel
 type: docs
 url: /fr/change-cell-style-in-excel-worksheet/
 weight: 30
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, modifier le style de cellule dans la feuille de calcul Excel
 ---
 Ce REST API indique la mise à jour `cell style` dans un fichier Excel.
 
@@ -15,7 +16,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cel
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Nom du classeur.|
 | Nom de la feuille| chaîne| chemin| Nom de la feuille de calcul.|

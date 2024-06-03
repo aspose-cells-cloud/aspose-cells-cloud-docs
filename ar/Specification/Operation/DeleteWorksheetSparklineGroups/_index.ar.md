@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/deleteworksheetsparklinegroups/
 description: حذف مجموعات الخطوط المميزة في ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، DeleteWorksheetSparklineGroups
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetSparklineGroups" >}}

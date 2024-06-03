@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/getheader/
 description: Récupérer la description de l'en-tête de page dans la feuille de calcul
+kwords: Excel, Office, feuille de calcul, Cloud REST API, GetHeader
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetHeader" >}}

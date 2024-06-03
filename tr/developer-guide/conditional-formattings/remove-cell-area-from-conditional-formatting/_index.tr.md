@@ -6,6 +6,7 @@ aliases: [/remove-cell-area-from-conditional-formatting/]
 keywords: REST API, spreadsheets, excel, delete cell area from condition formattin
 description: "Cells.Cloud API, Excel için çalışır: hücre alanını koşul biçimlendirmesinden silme"
 weight: 70
+kwords:  Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Hücre Alanını Sil
 ---
 Bu REST API, Hücre alanını koşullu biçimlendirmeden kaldır anlamına gelir.
  
@@ -25,7 +26,7 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditio
 | startRow| tamsayı| sorgu||
 | startColumn| tamsayı| sorgu||
 | toplamSatırlar| tamsayı| sorgu||
-|toplamSütunlar| tamsayı| sorgu||
+| toplamSütunlar| tamsayı| sorgu||
 | dosya| sicim| sorgu||
 | depolamaAdı| sicim| sorgu| depolama adı.|
  

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postworksheetlistobjectsummarizewithpivottable/
 description: Создайте сводную таблицу с объектом списка на листе.
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostWorksheetListObjectSummarizeWithPivotTable
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetListObjectSummarizeWithPivotTable" >}}

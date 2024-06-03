@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/model/styleformatcondition/
 description: "Aspose.Cells مواصفات النموذج السحابي: StyleFormatCondition. تعامل بسهولة مع Excel ومستندات جداول البيانات الأخرى التي تحتوي على ميزات مثل الفتح والتوليد والتحرير والتقسيم والدمج والمقارنة والتحويل"
+kwords: Excel، Office، جدول البيانات، Cloud REST API، StyleFormatCondition
 weight: 50
 ---
 ## **styleFormatCondition**
 
- 
+ يمثل حالة تنسيق النمط.
 
 | اسم الخاصية| نوع الملكية| لاغية| يقرأ فقط| القيمة الافتراضية| وصف|
 |:- |:- |:- |:- |:- |:- |
@@ -28,4 +29,5 @@ weight: 50
 | أعلى 10| الفئة: Top10| حقيقي| خطأ شنيع|||
 | وصلة| الفئة: الرابط| حقيقي| خطأ شنيع|||
 
-**اسم الوالدين** : (حالة التنسيق)[حالة التنسيق]
+**اسم الوالدين** : [FormatCondition](/specification/model/formatcondition)
+

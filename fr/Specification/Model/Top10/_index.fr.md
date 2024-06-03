@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/model/top10/
 description: "Aspose.Cells Spécification du modèle Cloud : Top10. Gérez sans effort Excel et d'autres feuilles de calcul avec des fonctionnalités telles que l'ouverture, la génération, l'édition, le fractionnement, la fusion, la comparaison et la conversion."
+kwords: Excel, Office, feuille de calcul, Cloud REST API, Top10
 weight: 50
 ---
 ## **Top 10**
 
-Décrivez la règle de mise en forme conditionnelle Top10. Cette règle de mise en forme conditionnelle met en évidence les cellules dont les valeurs se situent dans la parenthèse N supérieure ou N inférieure, comme spécifié.
+ Décrivez la règle de mise en forme conditionnelle Top10. Cette règle de mise en forme conditionnelle met en évidence les cellules dont les valeurs se situent dans la parenthèse N supérieure ou N inférieure, comme spécifié.
 
 | Nom de la propriété| Type de propriété| Nullable| Lecture seulement| Valeur par défaut| Description|
 |:- |:- |:- |:- |:- |:- |

@@ -1,27 +1,28 @@
 ﻿---
-title: GetWorksheetCel
+title: ArbeitsblattCel abrufen
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/getworksheetcell/
-description: Rufen Sie Zelldaten entweder mithilfe der Zellreferenz oder des Methodennamens im Arbeitsblatt ab
+description: Rufen Sie Zelldaten entweder über die Zellreferenz oder den Methodennamen im Arbeitsblatt ab
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, GetWorksheetCell
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetCell" >}}
 {{< blocks/products/cells/docs-title titlemsg="Retrieve cell data using either cell reference or method name in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells/{cellOrMethodName},GET,Zelldaten mithilfe der Zellreferenz oder des Methodennamens im Arbeitsblatt abrufen.,<a href=\'https://apireference.aspose.cloud /cells/#/Cells/GetWorksheetCell\'>GetWorksheetCell</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells/{cellOrMethodName},GET,Zellendaten abrufen, indem im Arbeitsblatt entweder die Zellreferenz oder der Methodenname verwendet wird.,<a href=\'https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetCell\'>GetWorksheetCell</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="cellOrMethodName,string,Der Name der Zelle oder Methode. (Methodenname wie Firstcell, Endcell usw.)" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="cellOrMethodName, string, Der Name der Zelle oder Methode. (Methodenname wie firstcell, endcell usw.)" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/CellsController/GetWorksheetCell\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

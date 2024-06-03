@@ -4,6 +4,7 @@ type: docs
 url: /ru/charts/legend/update/
 aliases: [/update-chart-legend-in-a-worksheet/]
 weight: 160
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, обновление легенды диаграммы на листе
 ---
 Этот REST API указывает легенду диаграммы обновления.
  

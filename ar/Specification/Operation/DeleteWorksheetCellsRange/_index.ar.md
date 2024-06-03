@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/deleteworksheetcellsrange/
 description: حذف نطاق من الخلايا ونقل الخلايا الموجودة بناءً على خيار النقل المحدد
+kwords: Excel، Office، جدول البيانات، Cloud REST API، RemoveWorksheetCellsRange
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetCellsRange" >}}

@@ -1,15 +1,16 @@
 ﻿---
-title: Holen Sie sich eine Autoform aus einem Arbeitsblatt Excel
+title: Holen Sie sich eine AutoForm aus einem Excel-Arbeitsblatt
 second_title: Aspose.Cells Cloud Documen
 linktitle: AutoShap
 type: docs
 url: /de/shapes/get-autoshape/
 aliases: [/get-autoshape-from-a-worksheet/]
 keywords: Get autoshape to different format from an Excel worksheet
-description: Aspose.Cells Cloud REST API unterstützt die automatische Umformung in ein anderes Format aus einem Excel-Arbeitsblatt. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
+description: Aspose.Cells Cloud REST API unterstützt das Umwandeln von AutoShape in ein anderes Format aus einem Excel Arbeitsblatt. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift.
 weight: 10
+kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdwon, Holen Sie sich eine AutoForm aus einem Excel Arbeitsblatt
 ---
-Dieser REST API gibt `get autoshape info` an.
+Dieser REST API zeigt `get autoshape info` an.
  
 ## RSET API
  
@@ -22,16 +23,16 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoshapes/
  
 | Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
 |:- |:- |:- |:- |
-| Name| Zeichenfolge| Weg| Dokumentname.|
-| Blattname| Zeichenfolge| Weg| Arbeitsblattname.|
-| autoshapeNumber| ganze Zahl| Weg| Die Autoshape-Nummer.|
-| Format| Zeichenfolge| Abfrage| Exportiertes Format.|
-| Ordner| Zeichenfolge| Abfrage| Der Dokumentenordner.|
-| Speichername| Zeichenfolge| Abfrage| Speichername.|
+| Name| Schnur| Weg| Dokumentname.|
+| Blattname| Schnur| Weg| Arbeitsblattname.|
+| autoshapeNummer| ganze Zahl| Weg| Die AutoShape-Nummer.|
+| Format| Schnur| Abfrage| Exportiertes Format.|
+| Ordner| Schnur| Abfrage| Der Dokumentordner.|
+| Speichername| Schnur| Abfrage| Speichername.|
  
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Autoshapes/GetWorksheetAutoshape) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht die Durchführung von REST-Interaktionen direkt über einen Webbrowser.
+ Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Autoshapes/GetWorksheetAutoshape) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen, REST-Interaktionen direkt von einem Webbrowser aus durchzuführen.
  
-Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie man mit cURL Anrufe zur Cloud API tätigt.
+Mit dem Befehlszeilentool cURL können Sie ganz einfach auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie Sie mit cURL Anrufe an Cloud API tätigen.
  
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
  
@@ -146,9 +147,9 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet4
  
 ## Cloud SDK-Familie
  
- Die Verwendung eines SDK ist der beste Weg, die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte schauen Sie sich die an[GitHub-Repository](https://github.com/aspose-cells-cloud) Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie hier.
+ Die Verwendung eines SDK ist der beste Weg, um die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte lesen Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
  
-Die folgenden Codebeispiele veranschaulichen, wie Aspose.Cells-Webdienste mithilfe verschiedener SDKs aufgerufen werden:
+Die folgenden Codebeispiele zeigen, wie Sie mit verschiedenen SDKs Aufrufe an die Webdienste Aspose.Cells tätigen:
  
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/deletemetadata/
 description: Elimine las propiedades del documento de celdas en el archivo Excel y guárdelas en varios formatos
+kwords: Excel, Office, hoja de cálculo, nube REST API, eliminar metadatos
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteMetadata" >}}
@@ -16,7 +17,7 @@ weight: 50
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Nombre del parámetro, tipo, descripción" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="tipo, cadena, Cells nombre de propiedad del documento." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="outFormat,cadena,El formato del archivo de datos de salida.(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF /BMP/MD[Rebaja]/Números)" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="OUTFORMAT, String, el formato de archivo de datos de salida. (CSV/XLS/HTML/MHTML/ODS/PDF/xml/txt/TIFF/xlsb/xlsx/xltm/xltx/XPS/0761414448 GIF/EMF /BMP/MD[Rebaja]/Números)" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="contraseña,cadena,La contraseña necesaria para abrir un archivo Excel." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction,boolean,Si verifica la restricción del archivo Excel cuando el usuario modifica los objetos relacionados con las celdas." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/getchartseriesaxis/
 description: Recuperar descripciones del eje de serie del gráfico en el gráfico
+kwords: Excel, Office, hoja de cálculo, nube REST API, GetChartSeriesAxis
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetChartSeriesAxis" >}}

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/getchartseriesaxis/
 description: Récupérer les descriptions des axes des séries de graphiques dans le graphique
+kwords: Excel, Office, feuille de calcul, Cloud REST API, GetChartSeriesAxis
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetChartSeriesAxis" >}}

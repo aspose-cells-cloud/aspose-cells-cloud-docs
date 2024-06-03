@@ -5,10 +5,11 @@ type: docs
 url: /zh/working-with-cells/
 aliases: [/working-with-worksheets/]
 keywords: REST API, spreadsheets, excel, cell
-description: Cells.Cloud API 为 Excel 操作：单元操作
+description: Cells.Cloud API 为 Excel 操作：细胞操作
 weight: 100
+kwords: Excel, Office 云、REST API、电子表格、PDF、CSV、Json、Markdwon、Cells
 ---
-Cells是Aspose.Cells对excel文件的基本操作对象。
+ Cells是Aspose.Cells对excel文件的基本操作对象。
 
 ## 特征图
 
@@ -30,13 +31,13 @@ Cells是Aspose.Cells对excel文件的基本操作对象。
 <div class="row">
     <div class="col-md-6">
         <ul>
-            <li><a href="/cells/zh/get-cell-style-from-a-worksheet/">从 Excel 工作表获取单元格样式。</a></li>
+            <li><a href="/cells/zh/get-cell-style-from-a-worksheet/">从 Excel 工作表中获取单元格样式。</a></li>
             <li><a href="/cells/zh/clear-cells-formatting-in-excel-worksheet/">清除 Excel 工作表中的 Cells 格式。</a></li>
             <li><a href="/cells/zh/update-multiple-cells-style/">更新 Excel 工作表上的多个单元格样式。</a></li>
             <li><a href="/cells/zh/change-cell-style-in-excel-worksheet/">更新 Excel 工作表上的单元格样式。</a></li>
             <li><a href="/cells/zh/apply-rich-text-formatting-to-a-cell/">将富文本格式设置为 Excel 工作表的单元格。</a></li>
-            <li><a href="/cells/zh/clear-contents-and-styles-of-cells-in-excel-worksheet/">清除 Excel 工作表上单元格的内容和样式。</a></li>
-            <li><a href="/cells/zh/working-with-conditional-formatting/">添加、删除和更新 Excel 工作表上的条件格式。</a></li>            
+            <li><a href="/cells/zh/clear-contents-and-styles-of-cells-in-excel-worksheet/">清除 Excel 工作表上的单元格的内容和样式。</a></li>
+            <li><a href="/cells/zh/working-with-conditional-formatting/">在 Excel 工作表上添加、删除和更新条件格式。</a></li>            
         </ul>
     </div>
 </div>

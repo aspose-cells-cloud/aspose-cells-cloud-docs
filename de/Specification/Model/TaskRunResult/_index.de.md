@@ -3,17 +3,18 @@ title: TaskRunResul
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/model/taskrunresult/
-description: "Aspose.Cells Cloud-Modellspezifikation: TaskRunResult. Bearbeiten Sie mühelos Excel und andere Tabellenkalkulationsdokumente mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+description: "Aspose.Cells Cloud-Modellspezifikation: TaskRunResult. Müheloses Bearbeiten von Excel und anderen Tabellenkalkulationsdokumenten mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, TaskRunResult
 weight: 50
 ---
-## **taskRunResult**
+## **TaskAusführenErgebnis**
 
- 
+ Stellt das Ergebnis der Aufgabenausführung dar.
 
-| Name des Anwesens| Art der Immobilie| Nullbar| Schreibgeschützt| Standardwert| Beschreibung|
+| Name des Anwesens| Art der Immobilie| Nullwerte zulassen| Schreibgeschützt| Standardwert| Beschreibung|
 |:- |:- |:- |:- |:- |:- |
-| Beschreibung| Zeichenfolge| WAHR| FALSCH|||
-| OutFileList| Container| WAHR| FALSCH|||
+| Beschreibung| Zeichenfolge| WAHR| FALSCH|| Stellt eine Beschreibung des Ergebnisses der Aufgabenausführung dar.|
+| Ausgabedateiliste| Container| WAHR| FALSCH|| Stellt unsere Datendateiliste dar.|
 
-**Kindername** : 
+**Name des Kindes** : 
 	-  [SaveFilesToCloudResult](savefilestocloudresult) 

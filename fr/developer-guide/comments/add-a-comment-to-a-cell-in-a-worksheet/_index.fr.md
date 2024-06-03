@@ -6,6 +6,7 @@ aliases: [/add-a-comment-to-a-cell-in-a-worksheet/]
 keywords: REST API, spreadsheets, excel, add commen
 description: "Cells.Cloud API pour Excel fonctionner : ajouter un commentaire"
 weight: 20
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, Ajouter
 ---
 Ce REST API indique Ajouter le commentaire de cellule de la feuille de calcul.
  
@@ -18,7 +19,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{c
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Le nom du document.|
 | Nom de la feuille| chaîne| chemin| Le nom de la feuille de calcul.|

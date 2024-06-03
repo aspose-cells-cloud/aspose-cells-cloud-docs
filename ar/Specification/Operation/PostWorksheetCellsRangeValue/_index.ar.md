@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postworksheetcellsrangevalue/
 description: تعيين قيمة للنطاق؛ إذا لزم الأمر، سيتم تحويل القيمة إلى نوع بيانات آخر، وسيتم إعادة تعيين تنسيق أرقام الخلية
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostWorksheetCellsRangeValue
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangeValue" >}}

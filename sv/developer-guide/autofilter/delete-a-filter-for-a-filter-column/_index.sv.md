@@ -8,6 +8,7 @@ aliases: [/delete-a-filter-for-a-filter-column/,/delete-auto-filter/]
 keywords: Deletes a filter on an Excel worksheet
 description: Aspose.Cells Cloud API stöder radering av ett filter på ett Excel kalkylblad.SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Ta bort ett filter i ett Excel kalkylblad
 ---
 Denna REST API indikerar att en `filter` ska raderas på ett Excel kalkylblad.
 
@@ -22,7 +23,7 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilt
 Begärans parametrar är:
 | Parameternamn| Typ| Sökväg/Frågesträng/HTTPBody|Beskrivning|
 |:- |:- |:- |:- |
-| namn| sträng| Väg|Arbetsbokens namn.|
+| namn| sträng| Väg| Arbetsbokens namn.|
 | arknamn| sträng| Väg| Kalkylbladets namn.|
 |räckvidd|sträng| Fråga||
 |fieldIndex|heltal| Fråga||

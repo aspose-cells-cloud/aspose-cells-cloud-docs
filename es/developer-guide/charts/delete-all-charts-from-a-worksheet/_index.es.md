@@ -4,6 +4,7 @@ type: docs
 url: /es/charts/clear/
 aliases: [/delete-all-charts-from-a-worksheet/]
 weight: 30
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Eliminar todos los gráficos de una hoja de trabajo
 ---
 Este REST API indica borrar los gráficos.
  

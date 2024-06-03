@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postdatadeduplication/
 description: Дедупликация данных в файлах электронных таблиц в основном используется для устранения дублирующихся данных в таблицах и диапазонах.
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostDataDeduplication
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostDataDeduplication" >}}

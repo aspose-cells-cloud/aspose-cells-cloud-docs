@@ -8,6 +8,7 @@ aliases: [/get-a-list-object-or-table-inside-the-worksheet/,/tables/sort-data/]
 keywords: Sort a list object(table) in an Excel worksheet
 description: Aspose.Cells Cloud REST API supporta l'ordinamento di un oggetto elenco (tabella) in un foglio di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 40
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Ordina i dati degli oggetti dell'elenco in un foglio di lavoro Excel
 ---
 Questo REST API indica `sort table's data` in un foglio di lavoro Excel.
 

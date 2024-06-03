@@ -8,6 +8,7 @@ aliases: [/set-modify-password-of-excel-workbooks/,/workbook/modify-password/]
 keywords: Modify password for an Excel workbook
 description: Aspose.Cells Cloud REST API supporta la modifica della password per una cartella di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 100
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Imposta modifica password di una cartella di lavoro Excel
 ---
 Questo REST API indica di proteggere il documento dalle modifiche.
 

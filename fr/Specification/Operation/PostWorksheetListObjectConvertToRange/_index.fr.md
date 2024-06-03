@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postworksheetlistobjectconverttorange/
 description: Convertir un objet de liste en plage dans la feuille de calcul
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostWorksheetListObjectConvertToRange
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetListObjectConvertToRange" >}}

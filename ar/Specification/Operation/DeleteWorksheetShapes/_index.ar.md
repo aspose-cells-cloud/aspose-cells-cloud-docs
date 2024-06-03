@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/deleteworksheetshapes/
 description: حذف كافة الأشكال في ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، حذف أوراق العمل
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetShapes" >}}

@@ -8,8 +8,9 @@ aliases: [/delete-horizontal-page-break-inside-worksheet/]
 keywords: Delete a page break in an Excel worksheet
 description: Aspose.Cells Cloud REST API stöder att ta bort en sidbrytning i ett Excel-kalkylblad. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 50
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Ta bort horisontell sidbrytning
 ---
-Denna REST API indikerar att en `horizontal` sidbrytning ska raderas.
+ Denna REST API indikerar att en `horizontal` sidbrytning ska raderas.
  
 ## RSET API
  

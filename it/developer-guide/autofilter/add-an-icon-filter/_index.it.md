@@ -8,6 +8,7 @@ aliases: [/add-an-icon-filter/,/autofilter/add-an-icon-filter/]
 keywords: Adds an icon filter on an Excel worksheet
 description: Il cloud Aspose.Cells API supporta l'aggiunta di un filtro icona su un foglio di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 65
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Aggiungi un filtro icona in un foglio di lavoro Excel
 ---
 Questo REST API indica di aggiungere un `icon filter` su un foglio di lavoro Excel.
 
@@ -23,11 +24,11 @@ I parametri della richiesta sono:
 
 | Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
 |:- |:- |:- |:- |
-| nome| corda| Sentiero|Il nome della cartella di lavoro.|
+| nome| corda| Sentiero| Il nome della cartella di lavoro.|
 | nomefoglio| corda| Sentiero| Il nome del foglio di lavoro.|
 |allineare|corda| Domanda||
 |campoIndice|numero intero| Domanda||
-|iconSetType|corda| Domanda| Frecce3/FrecceGrigio3/Frecce3/Segni3/Simboli3/Simboli32/Semafori31/Semafori32/Frecce4/FrecceGrigio4/Votazione4/RossoConNero4/Semafori4/Frecce5/FrecceGrigio5/Quartieri5/Voto5/Stelle3/Caselle5/Triangoli3/Nessuno/ImpostaPersonalizzato/Smilies3/ColorSmilies 3|
+|iconSetType|corda| Domanda|Frecce3/FrecceGrigio3/Flags3/Segni3/Simboli3/Simboli32/Semafori31/Semafori32/Frecce4/FrecceGrigio4/Votazione4/RossoConNero4/Semafori4/Frecce5/FrecceGrigio5/Quartieri5/Voto5/Stelle3/Boxes5/Triangoli3/Nessuno/CustomSet/Smilies3/ ColorSmilies3|
 |iconId|numero intero| Domanda||
 |matchBlanks|corda| Domanda|vero falso|
 |ricaricare|corda| Domanda|vero falso|

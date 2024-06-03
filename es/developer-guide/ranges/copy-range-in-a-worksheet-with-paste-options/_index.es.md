@@ -8,6 +8,7 @@ aliases: [/copy-range-in-a-worksheet-with-paste-options/]
 keywords: Copy a range in an Excel worksheet with paste options
 description: Aspose.Cells Cloud REST API admite copiar un rango en una hoja de trabajo Excel con opciones de pegado. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 20
+kwords: Excel, Office Cloud, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Copiar rango en una hoja de trabajo con opciones de pegado
 ---
 Este REST API indica copiar el rango en la hoja de trabajo en una hoja de trabajo Excel.
  
@@ -24,7 +25,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges
 |:- |:- |:- |:- |
 | nombre| cadena| camino| nombre del libro de trabajo|
 | nombre de la hoja| cadena| camino| nombre de la hoja de trabajo|
-| rangoOperar|| cuerpo|copiar datos, copiar estilo, copiar a, copiar valor|
+| rangoOperar|| cuerpo| copiar datos, copiar estilo, copiar a, copiar valor|
 | carpeta| cadena| consulta| Carpeta del libro de trabajo.|
 | nombredealmacenamiento| cadena| consulta| nombre del almacenamiento.|
  

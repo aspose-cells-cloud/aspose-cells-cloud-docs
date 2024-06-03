@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/postworksheetcellsrangecolumnwidth/
 description: Imposta la larghezza della colonna dell'intervallo specificato
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PostWorksheetCellsRangeColumnWidth
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangeColumnWidth" >}}

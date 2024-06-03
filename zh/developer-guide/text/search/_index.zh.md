@@ -1,15 +1,16 @@
 ﻿---
 title: 从 Excel 文件中查找文本
 second_title: Aspose.Cells Cloud Documen
-linktitle: 不使用storag查找
+linktitle: 不使用存储查找
 type: docs
 url: /zh/search/
 aliases: [/search-without-using-storage/,/search-without-storage/]
 keywords: Find text from Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) files
-description: Aspose.Cells Cloud REST API 支持从 Excel 文件中查找文本。 SDK支持多种开发语言。它们包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 swift
+description: Aspose.Cells Cloud REST API 支持从 Excel 文件中查找文本。SDK 支持多种开发语言。其中包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 swift
 weight: 50
+kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdwon、从 Excel 文件中查找文本
 ---
-此 REST API 指示 Excel 文件中的 `search` 文本。
+此 REST API 表示来自 Excel 文件的 `search` 文本。
 `## RSET API
  
 ```bash

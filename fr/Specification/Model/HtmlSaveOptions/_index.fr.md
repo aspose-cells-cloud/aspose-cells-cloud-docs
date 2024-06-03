@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/model/htmlsaveoptions/
 description: "Aspose.Cells Spécification du modèle cloud : HtmlSaveOptions. Gérez sans effort Excel et d'autres feuilles de calcul avec des fonctionnalités telles que l'ouverture, la génération, l'édition, le fractionnement, la fusion, la comparaison et la conversion."
+kwords: Excel, Office, feuille de calcul, Cloud REST API, HtmlSaveOptions
 weight: 50
 ---
 ## **htmlEnregistrerOptions**
@@ -19,9 +20,9 @@ weight: 50
 | Options d'image| Classe : ImageOrPrintOptions| Vrai| FAUX|||
 | Enregistrer en tant que fichier unique| Booléen| Vrai| FAUX|| Indique si vous enregistrez le code HTML sous forme de fichier unique. La valeur par défaut est fausse.|
 | Exporter une feuille de travail masquée| Booléen| Vrai| FAUX|| Indique si vous enregistrez le code HTML sous forme de fichier unique. La valeur par défaut est fausse.|
-| ExporterGridLines| Booléen| Vrai| FAUX||Indique s'il faut exporter le quadrillage. La valeur par défaut est false.|
+| ExporterGridLines| Booléen| Vrai| FAUX|| Indique s'il faut exporter le quadrillage. La valeur par défaut est false.|
 | PrésentationPréférence| Booléen| Vrai| FAUX|| Indiquer si le fichier HTML ou MHT est la préférence de présentation. La valeur par défaut est false. Si vous souhaitez obtenir une présentation plus belle, veuillez définir la valeur sur true.|
-| Préfixe CellCss| Chaîne| Vrai| FAUX|| Obtient et définit le préfixe du nom CSS, la valeur par défaut est "".|
+| Préfixe CellCss| Chaîne| Vrai| FAUX||Obtient et définit le préfixe du nom CSS, la valeur par défaut est "".|
 | TableCssId| Chaîne| Vrai| FAUX|| Obtient et définit le préfixe du nom CSS du type tel que tr, col, td et ainsi de suite, ils sont contenus dans l'élément table qui a l'attribut spécifique TableCssId. La valeur par défaut est "".|
 | EstFullPathLink| Booléen| Vrai| FAUX|| Indique si vous utilisez le lien de chemin complet dans sheet00x.htm, filelist.xml et tabstrip.htm. La valeur par défaut est fausse.|
 | Exporter une feuille de travail CSS séparément| Booléen| Vrai| FAUX|| Indique si vous exportez la feuille de calcul CSS séparément. La valeur par défaut est false.|
@@ -44,7 +45,7 @@ weight: 50
 | ExportActiveWorksheetOnly| Booléen| Vrai| FAUX|| Indique si vous exportez l’intégralité du classeur vers un fichier HTML.|
 | ExporterChartImageFormat| Chaîne| Vrai| FAUX|| Obtenez ou définissez le format de l'image du graphique avant de l'exporter|
 | ExporterImagesAsBase64| Booléen| Vrai| FAUX|||
-| HiddenColDisplayType| Chaîne| Vrai| FAUX|| Colonne masquée (la largeur de cette colonne est de 0) dans Excel, avant de l'enregistrer au format HTML, si HtmlHiddenColDisplayType est "Supprimer", la colonne masquée ne serait pas affichée, si la valeur est "Cachée", la colonne serait affichée, mais était masqué, la valeur par défaut est "Caché"|
+| HiddenColDisplayType| Chaîne| Vrai| FAUX|| Colonne cachée (la largeur de cette colonne est de 0) dans Excel, avant de l'enregistrer au format HTML, si HtmlHiddenColDisplayType est "Supprimer", la colonne masquée ne sera pas affichée, si la valeur est "Cachée", la colonne sera affichée, mais était masqué, la valeur par défaut est "Caché"|
 | HiddenRowDisplayType| Chaîne| Vrai| FAUX||Ligne cachée (la hauteur de cette ligne est 0) dans Excel, avant de l'enregistrer au format HTML, si HtmlHiddenRowDisplayType est "Supprimer", la ligne cachée ne serait pas affichée, si la valeur est "Cachée", la ligne serait affichée, mais était masqué, la valeur par défaut est "Caché"|
 | HtmlCrossStringType| Chaîne| Vrai| FAUX|| Indique si une chaîne inter-cellules sera affichée de la même manière que MS Excel lors de l'enregistrement d'un fichier Excel au format html. Par défaut, la valeur est Default, donc pour les chaînes inter-cellules, il y a peu de différence entre les fichiers HTML créés par Aspose.Cells et MS Excel. Mais les performances de création de fichiers HTML volumineux, en définissant la valeur sur Cross, seraient plusieurs fois plus rapides que en le définissant sur Default ou Fit2Cell.|
 | IsExpImageToTempDir| Booléen| Vrai| FAUX|| Indique si vous exportez les fichiers image vers le répertoire temporaire. Uniquement pour l'enregistrement dans un flux HTML.|
@@ -56,7 +57,8 @@ weight: 50
 | Créer le répertoire| Booléen| Vrai| FAUX|||
 | Activer la compression HTTP| Booléen| Vrai| FAUX|||
 | Actualiser le cache de graphiques| Booléen| Vrai| FAUX|||
-|Trier les noms| Booléen| Vrai| FAUX|||
+| Trier les noms| Booléen| Vrai| FAUX|||
 | ValidateMergedAreas| Booléen| Vrai| FAUX|||
 
-**Nom du parent** : (EnregistrerOptions)[Enregistreroptions]
+**Nom du parent** : [Options d'enregistrement](/specification/model/saveoptions)
+

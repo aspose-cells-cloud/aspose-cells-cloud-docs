@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/postchartseriesaxis/
 description: Actualizar el eje de la serie del gráfico en el gráfico
+kwords: Excel, Office, hoja de cálculo, nube REST API, PostChartSeriesAxis
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostChartSeriesAxis" >}}

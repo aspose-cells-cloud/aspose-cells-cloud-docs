@@ -3,6 +3,7 @@ title: Skaffa MaxDataRow från Excel Workshee
 type: docs
 url: /sv/get-maxdatarow-from-excel-worksheet/
 weight: 50
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Hämta MaxDataRow från Excel Arbetsblad
 ---
 Denna REST API indikerar visar få ett `maxdatarow` i en Excel fil när parametern `cellOrMethodName` är `maxdatarow`.
 

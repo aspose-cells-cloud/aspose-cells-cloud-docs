@@ -7,8 +7,9 @@ keywords: Range Sort
 url: /fr/ranges/sort/
 description:  Définit la bordure du contour autour d’une plage de cellules.
 weight: 20
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, tri par plage
 ---
-Ce REST API indique le tri par plage.
+ Ce REST API indique le tri par plage.
 
 ## RSET API
 
@@ -21,7 +22,7 @@ POST http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/ranges/so
 
  Les paramètres de la requête sont :
 
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP| Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody| Description|
 |:- |:- |:- |:- |
 |nom|Chaîne|Chemin|Le nom du classeur.|
 |Nom de la feuille|Chaîne|Chemin|Le nom de la feuille de calcul.|

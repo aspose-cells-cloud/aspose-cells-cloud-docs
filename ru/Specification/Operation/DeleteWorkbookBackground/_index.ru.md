@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/deleteworkbookbackground/
 description: Удалить фон в книге
+kwords: Excel, Office, электронная таблица, Cloud REST API, DeleteWorkbookBackground
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorkbookBackground" >}}

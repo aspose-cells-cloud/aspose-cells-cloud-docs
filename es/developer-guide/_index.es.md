@@ -7,6 +7,7 @@ aliases: [/developer-guide/v3.0/,/developer-guide-v3.0/]
 keywords: How to use Aspose.Cells Cloud REST APIs. Office Excel 2013,  Office Excel 2016,  Office Excel 2019，office Excel 365
 description: Esta guía para desarrolladores describe escenarios prácticos y consejos para ayudarle a utilizar funciones Aspose.Cells for .NET específicas, lograr una determinada Excel apariencia del documento o hacer posible un caso de uso.
 weight: 20
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Guía para desarrolladores
 ---
 ## Trabajando con Aspose.Cells API REST de Cloud.
 
@@ -35,7 +36,7 @@ weight: 20
     <div class="col-md-6">
         <p>Fusionar y dividir libros</p>
         <ul>
-            <li><a href="/cells/es/merge/">Fusiona Excel libros de trabajo.</a></li>
+            <li><a href="/cells/es/merge/">Combina Excel libros de trabajo.</a></li>
             <li><a href="/cells/es/split/">Divide Excel libros de trabajo.</a></li>
         </ul>
         <p>Marcas de agua</p>

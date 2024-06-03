@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postworkbookstextsearch/
 description: Rechercher du texte dans le classeur
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostWorkbooksTextSearch
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbooksTextSearch" >}}

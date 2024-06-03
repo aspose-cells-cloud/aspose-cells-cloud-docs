@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/deleteworksheetdatefilter/
 description: Удаление фильтра даты на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, DeleteWorksheetDateFilter
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetDateFilter" >}}

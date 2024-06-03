@@ -4,6 +4,7 @@ type: docs
 url: /ar/charts/add/
 aliases: [/add-a-chart-in-a-worksheet/]
 weight: 20
+kwords: Excel، Office كلاود، ريست API، جدول بيانات، PDF، CSV، Json، Markdwon، إضافة مخطط في ورقة عمل
 ---
 يشير REST API إلى إضافة مخطط جديد إلى ورقة العمل.
  
@@ -26,13 +27,13 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts
 | LowerRightRow| عدد صحيح| استفسار|0 |
 | LowerRightColumn| عدد صحيح| استفسار|0 |
 | منطقة| خيط| استفسار| يحدد القيم التي سيتم من خلالها رسم سلسلة البيانات.|
-| isVertical| منطقية| استفسار| حقيقي|
+| isVertical|منطقية| استفسار| حقيقي|
 | classData| خيط| استفسار| الحصول على نطاق قيم محور الفئة أو تعيينه. ويمكن أن يكون نطاقًا من الخلايا (مثل "d1:e10").|
-| isAutoGetSerialName| منطقية| استفسار| حقيقي|
+|isAutoGetSerialName|منطقية| استفسار| حقيقي|
 | عنوان| خيط| استفسار| يحدد اسم عنوان المخطط.|
 | مجلد| خيط| استفسار| مجلد المصنف.|
 | اسم التخزين| خيط| استفسار| اسم التخزين.|
-|dataLabels| منطقية| استفسار| حقيقي|
+| dataLabels|منطقية| استفسار| حقيقي|
 | dataLabelsPosition| خيط| استفسار| فوق|
 | PivotTableSheet| خيط| استفسار||
 | PivotTableName| خيط| استفسار||
@@ -78,7 +79,7 @@ curl  -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cha
 
 ## عائلة Cloud SDK
  
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
  
 توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
 

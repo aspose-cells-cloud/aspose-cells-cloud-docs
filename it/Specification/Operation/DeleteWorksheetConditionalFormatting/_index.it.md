@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/deleteworksheetconditionalformatting/
 description: Rimuovere una formattazione condizionale
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, Elimina Foglio di lavoro Condizionale Formattazione
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetConditionalFormatting" >}}

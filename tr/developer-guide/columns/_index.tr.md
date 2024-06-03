@@ -7,6 +7,7 @@ aliases: [/working-with-columns/]
 keywords: REST API, columns, spreadsheets, exce
 description: "Cells.Cloud API, Excel için çalışır: Excel Çalışma Sayfasındaki sütunları gösterme"
 weight: 100
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Sütunlar
 ---
 ## Excel dosyasındaki Sütunlarla çalışma.
 

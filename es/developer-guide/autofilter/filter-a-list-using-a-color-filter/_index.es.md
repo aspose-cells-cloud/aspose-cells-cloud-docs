@@ -8,6 +8,7 @@ aliases: [/filter-a-list-using-a-color-filter/,/autofilter/add-a-color-filter/]
 keywords: Adds a color filter on an Excel worksheet
 description: Aspose.Cells Cloud API admite agregar un filtro de color en una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 65
+kwords: Excel, Office Cloud, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Agregar un filtro de color en una hoja de trabajo Excel
 ---
 Este REST API indica agregar un `color filter` en una hoja de trabajo Excel.
 
@@ -28,8 +29,8 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/
 | rango| cadena| consulta||
 | índice de campo| entero| consulta||
 | filtro de color|| cuerpo||
-| MatchBlancos| booleano| consulta||
-| actualizar| booleano| consulta||
+| MatchBlancos|booleano| consulta||
+| actualizar|booleano| consulta||
 | carpeta| cadena| consulta||
 | nombredealmacenamiento| cadena| consulta| nombre del almacenamiento.|
  

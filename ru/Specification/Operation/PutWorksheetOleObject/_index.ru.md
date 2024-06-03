@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/putworksheetoleobject/
 description: Добавьте объект OLE на лист
+kwords: Excel, Office, электронная таблица, Cloud REST API, PutWorksheetOleObject
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetOleObject" >}}

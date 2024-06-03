@@ -7,6 +7,7 @@ aliases: [/working-with-hyperlinks/,/working-with-hyperlink/]
 keywords: REST API, hyperlinks, spreadsheets, exce
 description: "Cells.Cloud API لـ Excel التشغيل: العمل مع الارتباطات التشعبية على ملف Excel"
 weight: 100
+kwords: Excel، Office كلاود، ريست API، جدول البيانات، PDF، CSV، Json، Markdwon، الارتباطات التشعبية
 ---
 &nbsp;&nbsp;&nbsp;&nbsp;تسمح الارتباطات التشعبية في Excel للمستخدمين بإنشاء طريقة اختصار للوصول إلى أي ورقة عمل أو ملف أو مجلد أو صفحة ويب معينة. فهو يساعدنا في الوصول إلى أي مجلد أو رابط محدد بسرعة.
 

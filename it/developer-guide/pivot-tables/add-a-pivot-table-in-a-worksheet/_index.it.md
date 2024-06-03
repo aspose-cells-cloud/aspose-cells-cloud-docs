@@ -8,6 +8,7 @@ aliases: [/add-a-pivot-table-in-a-worksheet/]
 keywords: Add a pivot table in an Excel worksheet
 description: Aspose.Cells Cloud REST API supporta l'aggiunta di una tabella pivot in un foglio di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 30
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Aggiungi una tabella pivot in un foglio di lavoro Excel
 ---
 Questo REST API indica a `add` una tabella pivot nel foglio di lavoro.
  
@@ -28,9 +29,9 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables
 | cartella| corda| domanda| Cartella del documento.|
 | storageName| corda| domanda| nome dell'archivio.|
 | sourceData| corda| domanda| I dati per la nuova cache della tabella pivot.|
-| nomeCelladestinazione| corda| domanda| La cella nell'angolo superiore sinistro dell'intervallo di destinazione del rapporto di tabella pivot.|
+| nomeCelladestinazione| corda| domanda|La cella nell'angolo superiore sinistro dell'intervallo di destinazione del rapporto di tabella pivot.|
 | nometabella| corda| domanda| Il nome del nuovo rapporto di tabella pivot.|
-| useSameSource| booleano| domanda| Indica se si utilizza la stessa origine dati quando un'altra tabella pivot esistente ha utilizzato questa origine dati. Se la proprietà è vera, salverà memoria.|
+| useSameSource|booleano| domanda| Indica se si utilizza la stessa origine dati quando un'altra tabella pivot esistente ha utilizzato questa origine dati. Se la proprietà è vera, salverà memoria.|
  
  IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/PivotTables/PutWorksheetPivotTable) definisce un'interfaccia di programmazione accessibile pubblicamente e consente di eseguire interazioni REST direttamente da un browser web.
  

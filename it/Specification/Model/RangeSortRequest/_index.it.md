@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/model/rangesortrequest/
 description: "Aspose.Cells Specifica del modello cloud: RangeSortRequest. Gestisci facilmente Excel e altri fogli di calcolo con funzionalità come apertura, generazione, modifica, divisione, unione, confronto e conversione"
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, RangeSortRequest
 weight: 50
 ---
 ## **rangeSortRequest**
 
-Indica la richiesta di ordinamento dell'intervallo
+ Indica la richiesta di ordinamento dell'intervallo
 
 | Nome della proprietà| Tipo di proprietà| Nullabile| Sola lettura| Valore di default| Descrizione|
 |:- |:- |:- |:- |:- |:- |

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/getworksheetcolumn/
 description: Çalışma sayfası sütun verilerini sütun dizinine göre alın
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, GetWorksheetColumn
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetColumn" >}}

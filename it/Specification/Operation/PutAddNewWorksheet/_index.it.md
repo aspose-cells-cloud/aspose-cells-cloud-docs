@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/putaddnewworksheet/
 description: Aggiungi un nuovo foglio di lavoro nella cartella di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PutAddNewWorksheet
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutAddNewWorksheet" >}}

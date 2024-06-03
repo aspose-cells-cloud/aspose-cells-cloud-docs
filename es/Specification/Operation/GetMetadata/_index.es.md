@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/getmetadata/
 description: Obtener propiedades del documento de celdas
+kwords: Excel, Office, Hoja de cálculo, Nube REST API, GetMetadata
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetMetadata" >}}

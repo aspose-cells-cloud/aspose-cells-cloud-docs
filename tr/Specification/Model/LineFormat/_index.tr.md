@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/model/lineformat/
 description: "Aspose.Cells Bulut modeli spesifikasyonu: LineFormat. Açma, oluşturma, düzenleme, bölme, birleştirme, karşılaştırma ve dönüştürme gibi özelliklerle Excel ve diğer elektronik tablo belgelerini zahmetsizce yönetin"
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, LineFormat
 weight: 50
 ---
 ## **satır Formatı**
 
- 
+ Hattın tüm ayarlarını temsil eder.
 
 | Mülkiyet adı| Emlak Tipi| Geçersiz kılınabilir| Sadece oku| Varsayılan değer| Tanım|
 |:- |:- |:- |:- |:- |:- |
@@ -30,4 +31,5 @@ weight: 50
 | Gradyan Doldurma| Sınıf:GradientFill| Doğru| YANLIŞ|||
 | Görüntü Verileri| Sicim| Doğru| YANLIŞ|||
 
-**Ebeveyn adı** : (Format Doldur)[format Doldur]
+**Ebeveyn adı** : [Doldurma Biçimi](/specification/model/fillformat)
+

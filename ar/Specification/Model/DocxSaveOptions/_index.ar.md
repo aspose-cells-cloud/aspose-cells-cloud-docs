@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/model/docxsaveoptions/
 description: "Aspose.Cells مواصفات النموذج السحابي: DocxSaveOptions. تعامل بسهولة مع Excel ومستندات جداول البيانات الأخرى التي تحتوي على ميزات مثل الفتح والتوليد والتحرير والتقسيم والدمج والمقارنة والتحويل"
+kwords: Excel، Office، جدول البيانات، Cloud REST API، DocxSaveOptions
 weight: 50
 ---
 ## **docxSaveOptions**
@@ -28,7 +29,7 @@ weight: 50
 | DefaultEditLanguage| خيط| حقيقي| خطأ شنيع|||
 | EmfRenderSetting| خيط| حقيقي| خطأ شنيع|||
 | MergeAreas| منطقية| حقيقي| خطأ شنيع|||
-|فرز الأسماء الخارجية| منطقية| حقيقي| خطأ شنيع|||
+| فرز الأسماء الخارجية| منطقية| حقيقي| خطأ شنيع|||
 | UpdateSmartArt| منطقية| حقيقي| خطأ شنيع|||
 | حفظ التنسيق| خيط| حقيقي| خطأ شنيع|||
 | CachedFileFolder| خيط| حقيقي| خطأ شنيع|||
@@ -36,7 +37,8 @@ weight: 50
 | إنشاء دليل| منطقية| حقيقي| خطأ شنيع|||
 | تمكينHTTPCompression| منطقية| حقيقي| خطأ شنيع|||
 | RefreshChartCache| منطقية| حقيقي| خطأ شنيع|||
-|أسماء الفرز| منطقية| حقيقي| خطأ شنيع|||
+| أسماء الفرز| منطقية| حقيقي| خطأ شنيع|||
 | التحقق من صحة المناطق المندمجة| منطقية| حقيقي| خطأ شنيع|||
 
-**اسم الوالدين** : (خيارات الحفظ المرقّمة)[خيارات الحفظ المرقّمة]
+**اسم الوالدين** : [خيارات الحفظ المرقّمة](/specification/model/paginatedsaveoptions)
+

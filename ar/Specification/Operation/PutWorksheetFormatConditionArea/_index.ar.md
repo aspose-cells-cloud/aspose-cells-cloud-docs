@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/putworksheetformatconditionarea/
 description: أضف منطقة خلية لشرط التنسيق في ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PutWorksheetFormatConditionArea
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetFormatConditionArea" >}}

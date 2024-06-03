@@ -8,6 +8,7 @@ aliases: [/group-columns-in-an-excel-worksheet/, /group-columns-in-excel-workshe
 keywords: Group column on an Excel workshee
 description: Aspose.Cells Cloud REST API admite la columna de agrupación en una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 60
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Agrupar columnas en una hoja de trabajo Excel
 ---
 Este REST API indica las columnas de la hoja de trabajo del grupo.
  
@@ -22,18 +23,18 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/colu
  
 | Nombre del parámetro| Tipo| Ruta/Cadena de consulta/Cuerpo HTTP|Descripción|
 |:- |:- |:- |:- |
-| nombre| cadena| camino|El nombre del libro de trabajo.|
+| nombre| cadena| camino| El nombre del libro de trabajo.|
 | nombre de la hoja| cadena| camino| El nombre de la hoja de trabajo.|
 | primer índice| entero| consulta| El primer índice de columna que se va a operar.|
 | último índice| entero| consulta| El último índice de columna que se va a operar.|
-| esconder| booleano| consulta| estado visible de las columnas|
+| esconder|booleano| consulta| estado visible de las columnas|
 | carpeta| cadena| consulta| La carpeta de documentos.|
 | nombredealmacenamiento| cadena| consulta| nombre del almacenamiento.|
 
 
  El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/Cells/PostGroupWorksheetColumns) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
 
- Puedes usar**cURL** Herramienta de línea de comandos para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
+ Puedes usar**cURL**Herramienta de línea de comandos para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 

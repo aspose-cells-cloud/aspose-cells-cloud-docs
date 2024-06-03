@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/putconvertworkbook/
 description: Çalışma kitabını istenen içerikten farklı formatlardaki dosyalara dönüştürün
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PutConvertWorkbook
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutConvertWorkbook" >}}
@@ -15,7 +16,7 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametre Adı,Tip,Açıklama" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="format,dize,Dönüştürülecek format(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/07617) 3481 /MD[İşaretleme]/Numaralar)." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="format,dize,Dönüştürülecek format(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/0761 73481 /MD[İşaretleme]/Numaralar)." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="şifre,string,Excel dosyasını açmak için gereken şifre." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="outPath,string,Path sonucu kaydetmek için. Tek bir dosya ise, \"outPath\" hem dosya adını hem de uzantıyı kapsamalıdır. Birden fazla dosya olması durumunda, \"outPath\" yalnızca klasörü içermelidir." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="depolamaAdı,dize,Dosyanın bulunduğu depolama adı." >}} 

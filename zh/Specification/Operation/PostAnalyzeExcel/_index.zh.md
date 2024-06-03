@@ -1,21 +1,22 @@
 ﻿---
-title: 事后分析异常
+title: 后分析Exce
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/postanalyzeexcel/
-description: 对Excel文件中的数据进行业务分析
+description: 对 Excel 文件中的数据进行业务分析
+kwords: Excel，Office，电子表格，云 REST API，PostAnalyzeExcel
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostAnalyzeExcel" >}}
 {{< blocks/products/cells/docs-title titlemsg="Perform business analysis of data in Excel files." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/analyze,POST,对Excel文件中的数据进行业务分析。,<a href=\'https://apireference.aspose.cloud/cells/#/Analyse/PostAnalyzeExcel\'>PostAnalyzeExcel</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/analyze,POST,对 Excel 文件中的数据执行业务分析。,<a href=\'https://apireference.aspose.cloud/cells/#/Analyse/PostAnalyzeExcel\'>PostAnalyzeExcel</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="analyzeExcelRequest,class:analyzeexcelrequest,Excel 文件及分析输出要求" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="analyzeExcelRequest,class:analyzeexcelrequest,Excel 文件和分析输出要求" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

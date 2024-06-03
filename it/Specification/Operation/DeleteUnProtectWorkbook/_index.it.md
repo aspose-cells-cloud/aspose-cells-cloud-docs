@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/deleteunprotectworkbook/
 description: Excel senza protezione
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, EliminaUnProtectWorkbook
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteUnProtectWorkbook" >}}

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/postautofitworkbookrows/
 description: Adatta automaticamente le righe nella cartella di lavoro
+kwords: Excel, Office, foglio di calcolo, Cloud REST API, PostAutofitWorkbookRows
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostAutofitWorkbookRows" >}}

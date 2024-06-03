@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/postworksheetmatchblanks/
 description: Abbina tutte le celle vuote nell'elenco
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PostWorksheetMatchBlanks
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetMatchBlanks" >}}

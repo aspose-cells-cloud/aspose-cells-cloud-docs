@@ -3,6 +3,7 @@ title: Få MaxDataColumn från Excel Workshee
 type: docs
 url: /sv/get-maxdatacolumn-from-excel-worksheet/
 weight: 70
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Hämta MaxDataColumn från Excel Arbetsblad
 ---
 Denna REST API indikerar visar få ett `maxdatacolumn` i en Excel fil när parametern `cellOrMethodName` är `maxdatacolumn`.
 

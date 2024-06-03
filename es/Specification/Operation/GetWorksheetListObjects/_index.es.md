@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/getworksheetlistobjects/
 description: Recuperar descripciones de ListObjects en la hoja de trabajo
+kwords: Excel, Office, hoja de cálculo, nube REST API, GetWorksheetListObjects
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetListObjects" >}}

@@ -8,6 +8,7 @@ aliases: [/delete-a-filter-for-a-filter-column/,/delete-auto-filter/]
 keywords: Deletes a filter on an Excel worksheet
 description: Aspose.Cells Bulut API, Excel çalışma sayfasındaki bir filtrenin silinmesini destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 100
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel çalışma sayfasındaki filtreyi silme
 ---
 Bu REST API, Excel Çalışma Sayfasındaki `filter`'in silineceğini belirtir.
 
@@ -22,7 +23,7 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilt
 İstek parametreleri şunlardır:
 | Parametre adı| Tip| Yol/Sorgu Dizesi/HTTPBody|Tanım|
 |:- |:- |:- |:- |
-| isim| sicim| Yol|Çalışma kitabı adı.|
+| isim| sicim| Yol| Çalışma kitabı adı.|
 | sayfaAdı| sicim| Yol| Çalışma sayfası adı.|
 |menzil|sicim| Sorgu||
 |alanIndex|tamsayı| Sorgu||

@@ -8,6 +8,7 @@ aliases: [/move-excel-worksheets/]
 keywords: Move an Excel worksheet on an Excel workbook
 description: Aspose.Cells Cloud REST API stöder att flytta ett Excel-kalkylblad på en Excel-arbetsbok. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 20
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Flytta ett Excel kalkylblad
 ---
 Denna REST API indikerar `move worksheet`.
  

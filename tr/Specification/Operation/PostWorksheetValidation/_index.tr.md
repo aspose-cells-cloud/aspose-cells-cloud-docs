@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/postworksheetvalidation/
 description: Çalışma sayfasındaki dizine göre doğrulamayı güncelleme
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PostWorksheetValidation
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetValidation" >}}

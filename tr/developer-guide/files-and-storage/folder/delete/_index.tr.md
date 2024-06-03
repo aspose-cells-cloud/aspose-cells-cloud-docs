@@ -6,6 +6,7 @@ url: /tr/folder/delete/
 keywords: Learn how to delete folder with Aspose Cells Cloud REST API
 description: Aspose Cells Cloud REST API SDK desteğiyle çeşitli geliştirme dillerini destekleyen klasörü nasıl sileceğinizi öğrenin. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 100
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Klasörü Sil
 ---
 Bu REST API, `delete folder`'i gösterir.
  
@@ -22,7 +23,7 @@ DELETE http://api.aspose.cloud/v3.0/cells/storage/folder/{path}
 |:- |:- |:- |:- |
 | yol| sicim| yol| Klasör yolu örneğin '/klasör'|
 | depolamaAdı| sicim| sorgu| Depolama adı|
-| özyinelemeli| boolean| sorgu| YANLIŞ|
+| özyinelemeli|boolean| sorgu| YANLIŞ|
 
  
 [OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Folder/DeleteFolder) herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.

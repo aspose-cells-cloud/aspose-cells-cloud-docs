@@ -8,6 +8,7 @@ aliases: [/group-rows-in-excel-worksheet/]
 keywords: Group rows on an Excel worksheet
 description: Aspose.Cells Cloud REST API supporta il raggruppamento di righe su un foglio di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 60
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Raggruppa righe su un foglio di lavoro Excel
 ---
 Questo REST API indica di raggruppare le righe su un foglio di lavoro Excel.
  
@@ -22,11 +23,11 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
  
 | Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
 |:- |:- |:- |:- |
-| nome| corda| sentiero|Il nome della cartella di lavoro.|
+| nome| corda| sentiero| Il nome della cartella di lavoro.|
 | nomefoglio| corda| sentiero| Il nome del foglio di lavoro.|
 | primoIndice| numero intero| domanda| L'indice della prima riga da utilizzare.|
 | ultimoIndice| numero intero| domanda| L'ultimo indice di riga da utilizzare.|
-| nascondere| booleano| domanda| stato visibile delle righe|
+| nascondere|booleano| domanda| stato visibile delle righe|
 | cartella| corda| domanda| La cartella documenti.|
 | storageName| corda| domanda| nome dell'archivio.|
  

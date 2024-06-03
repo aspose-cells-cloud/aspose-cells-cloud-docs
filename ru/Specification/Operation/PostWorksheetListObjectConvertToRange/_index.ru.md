@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postworksheetlistobjectconverttorange/
 description: Преобразование объекта списка в диапазон на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostWorksheetListObjectConvertToRange
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetListObjectConvertToRange" >}}

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/postpagesetup/
 description: Actualizar la configuración de la página en la hoja de trabajo
+kwords: Excel, Office, hoja de cálculo, nube REST API, PostPageSetup
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostPageSetup" >}}

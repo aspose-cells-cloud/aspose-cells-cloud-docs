@@ -7,6 +7,7 @@ url: /sv/worksheets/panes/
 keywords: How to work with visibility on an Excel worksheet
 description: Aspose.Cells Cloud REST API stöd för att arbeta med synlighet på ett Excel kalkylblad. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 20
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Hur man arbetar med synlighet på ett Excel kalkylblad
 ---
 ## Arbeta med synlighet på ett Excel kalkylblad.
 

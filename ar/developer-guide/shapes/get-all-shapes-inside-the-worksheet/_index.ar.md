@@ -8,8 +8,9 @@ aliases: [/get-all-shapes-inside-the-worksheet/]
 keywords: Get all shapes on an Excel workshee
 description: Aspose.Cells Cloud REST API يدعم الحصول على جميع الأشكال في ورقة عمل Excel. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 10
+kwords: Excel، Office Cloud، REST API، جدول بيانات، PDF، CSV، Json، Markdwon، احصل على جميع الأشكال في ورقة عمل Excel
 ---
-يشير REST API إلى الحصول على أشكال ورقة العمل
+ يشير REST API إلى الحصول على أشكال ورقة العمل
  
 ## رسيت API
  
@@ -150,7 +151,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/shapes
  
 ## عائلة Cloud SDK
  
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
  
 توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
  

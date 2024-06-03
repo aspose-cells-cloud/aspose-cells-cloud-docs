@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/postchartsecondvalueaxis/
 description: Grafikteki grafik ikinci değer eksenini güncelleyin
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PostChartSecondValueAxis
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostChartSecondValueAxis" >}}

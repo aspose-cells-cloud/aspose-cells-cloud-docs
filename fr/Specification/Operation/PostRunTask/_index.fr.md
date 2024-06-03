@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postruntask/
 description: Exécuter des tâches
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostRunTask
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostRunTask" >}}

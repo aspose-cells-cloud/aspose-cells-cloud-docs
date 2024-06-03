@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/model/sparkline/
 description: "Aspose.Cells Спецификация облачной модели: Sparkline. Легко обрабатывайте Excel и другие документы электронных таблиц с помощью таких функций, как открытие, создание, редактирование, разделение, слияние, сравнение и преобразование."
+kwords: Excel, Office, электронная таблица, Cloud REST API, спарклайн
 weight: 50
 ---
 ## **спарклайн**

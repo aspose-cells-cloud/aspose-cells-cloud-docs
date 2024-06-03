@@ -4,13 +4,14 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/deletedocumentproperties/
 description: Tüm özel belge özelliklerini silin ve yerleşik özellikleri sıfırlayın
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, deleteDocumentProperties
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteDocumentProperties" >}}
 {{< blocks/products/cells/docs-title titlemsg="Delete all custom document properties and reset built-in ones." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Açıklama,API referans" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/documentproperties,DELETE,Tüm özel belge özelliklerini silin ve yerleşik özellikleri sıfırlayın.,<a href=\'https://apireference.aspose.cloud/cells/#/Properties/DeleteDocumentProperties\'>DeleteDocumentProperties< /a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/documentproperties,DELETE,Tüm özel belge özelliklerini silin ve yerleşik olanları sıfırlayın.,<a href=\'https://apireference.aspose.cloud/cells/#/Properties/DeleteDocumentProperties\'>DeleteDocumentProperties< /a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

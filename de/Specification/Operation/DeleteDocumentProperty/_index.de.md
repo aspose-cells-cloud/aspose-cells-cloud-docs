@@ -1,27 +1,28 @@
 ﻿---
-title: DeleteDocumentPropert
+title: Dokumenteigenschaft löschen
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/deletedocumentproperty/
-description: Löschen Sie eine Excel-Eigenschaft
+description: Löschen einer Excel-Eigenschaft
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, DeleteDocumentProperty
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteDocumentProperty" >}}
 {{< blocks/products/cells/docs-title titlemsg="Delete an Excel property." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/documentproperties/{propertyName},DELETE,Eine Excel-Eigenschaft löschen.,<a href=\'https://apireference.aspose.cloud/cells/#/Properties/DeleteDocumentProperty\'>DeleteDocumentProperty</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/documentproperties/{propertyName},DELETE,Löschen Sie eine Excel-Eigenschaft.,<a href=\'https://apireference.aspose.cloud/cells/#/Properties/DeleteDocumentProperty\'>DeleteDocumentProperty</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Name der Arbeitsmappe." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="propertyName,string,Der Eigenschaftsname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Name der Arbeitsmappe." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="propertyName, string, Der Eigenschaftsname." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="Typ, Zeichenfolge," >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/PropertiesController/DeleteDocumentProperty\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

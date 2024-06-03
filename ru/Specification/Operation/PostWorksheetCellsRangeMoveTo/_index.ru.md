@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postworksheetcellsrangemoveto/
 description: Переместить текущий диапазон в целевой диапазон
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostWorksheetCellsRangeMoveTo
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangeMoveTo" >}}
@@ -20,7 +21,7 @@ weight: 50
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Имя параметра, тип, описание" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="destRow,integer,начальная строка конечного диапазона." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="destColumn,integer,начальный столбец целевого диапазона." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="destColumn,integer,Начальный столбец целевого диапазона." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="папка, строка, исходная папка рабочей книги." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="имя_хранилища, строка, имя хранилища." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}

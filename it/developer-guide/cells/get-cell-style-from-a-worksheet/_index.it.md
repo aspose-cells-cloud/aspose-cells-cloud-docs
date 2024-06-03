@@ -3,6 +3,7 @@ title: Ottieni lo stile della cella da un foglio di lavoro
 type: docs
 url: /it/get-cell-style-from-a-worksheet/
 weight: 10
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Ottieni stile cella da un foglio di lavoro
 ---
 Questo REST API indica ottenere la cella `style` in un file Excel.
 

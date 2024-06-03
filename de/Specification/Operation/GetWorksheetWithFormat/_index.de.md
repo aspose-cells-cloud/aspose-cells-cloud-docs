@@ -1,31 +1,32 @@
 ﻿---
-title: GetWorksheetWithForma
+title: ArbeitsblattMitForma abrufen
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/getworksheetwithformat/
-description: Rufen Sie das Arbeitsblatt in einem angegebenen Format aus der Arbeitsmappe ab
+description: Abrufen des Arbeitsblatts in einem angegebenen Format aus der Arbeitsmappe
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, GetWorksheetWithFormat
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetWithFormat" >}}
 {{< blocks/products/cells/docs-title titlemsg="Retrieve the worksheet in a specified format from the workbook." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName},GET,Rufen Sie das Arbeitsblatt in einem angegebenen Format aus der Arbeitsmappe ab.,<a href=\'https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetWithFormat\' >GetWorksheetWithFormat</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName},GET,Rufen Sie das Arbeitsblatt in einem angegebenen Format aus der Arbeitsmappe ab.,<a href=\'https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetWithFormat\'>GetWorksheetWithFormat</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="Format, Zeichenfolge, Exportformat (CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF /BMP/MD [Markdown]/Zahlen)." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="VerticalResolution, Ganzzahl, vertikale Bildauflösung." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="horizontalResolution,integer,Horizontale Bildauflösung." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="Bereich, Zeichenfolge, Stellt den zu druckenden Bereich dar." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Format, Zeichenfolge, Exportformat (CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="verticalResolution,integer,vertikale Bildauflösung." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="horizontalResolution,Integer,Horizontale Bildauflösung." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Bereich, Zeichenfolge, stellt den zu druckenden Bereich dar." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="pageIndex,integer,Stellt die zu druckende Seite dar" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/WorksheetsController/GetWorksheetWithFormat\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

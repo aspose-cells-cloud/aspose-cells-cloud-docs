@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/deleteworkbookbackground/
 description: Supprimer l'arrière-plan du classeur
+kwords: Excel, Office, feuille de calcul, Cloud REST API, SupprimerWorkbookBackground
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorkbookBackground" >}}

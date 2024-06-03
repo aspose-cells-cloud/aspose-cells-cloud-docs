@@ -4,6 +4,7 @@ type: docs
 url: /es/charts/title/update/
 aliases: [/update-chart-title-in-excel-worksheet/]
 weight: 160
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Actualizar título del gráfico en Excel Hoja de trabajo
 ---
 Este REST API indica el título del gráfico de actualización
  

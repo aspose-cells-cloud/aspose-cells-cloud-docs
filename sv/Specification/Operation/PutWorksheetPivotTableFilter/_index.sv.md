@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/putworksheetpivottablefilter/
 description: Lägg till ett pivotfilter i pivottabellen
+kwords: Excel, Office, Kalkylblad, Cloud REST API, PutWorksheetPivotTableFilter
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetPivotTableFilter" >}}

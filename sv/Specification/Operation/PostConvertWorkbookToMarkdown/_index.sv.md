@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/postconvertworkbooktomarkdown/
 description: Konvertera Excel-filen till Markdown-filer
+kwords: Excel, Office, Kalkylblad, Cloud REST API, PostConvertWorkbookToMarkdown
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostConvertWorkbookToMarkdown" >}}

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/getworksheetvalidation/
 description: Récupérer une validation par son index dans la feuille de calcul
+kwords: Excel, Office, feuille de calcul, Cloud REST API, GetWorksheetValidation
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetValidation" >}}

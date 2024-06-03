@@ -8,6 +8,7 @@ aliases: [/refresh-an-autofilter/]
 weight: 100
 keywords: Refresh auto filter on an Excel worksheet
 description: Il cloud Aspose.Cells API supporta l'aggiornamento del filtro automatico su un foglio di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Aggiorna un filtro automatico in un foglio di lavoro Excel
 ---
 Questo REST API indica il filtro automatico `refresh` su un foglio di lavoro Excel.
  

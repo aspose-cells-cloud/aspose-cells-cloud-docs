@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/getnamedrangevalue/
 description: Aralıktaki değerleri al
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, GetNamedRangeValue
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetNamedRangeValue" >}}

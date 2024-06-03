@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/postpivottablestyle/
 description: Uppdatera stil i pivottabellen
+kwords: Excel, Office, Kalkylblad, Cloud REST API, PostPivotTableStyle
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostPivotTableStyle" >}}

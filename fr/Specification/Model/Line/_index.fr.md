@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/model/line/
 description: "Aspose.Cells Spécification du modèle Cloud : Ligne. Gérez sans effort Excel et d'autres feuilles de calcul avec des fonctionnalités telles que l'ouverture, la génération, l'édition, le fractionnement, la fusion, la comparaison et la conversion."
+kwords: Excel, Office, feuille de calcul, Cloud REST API, ligne
 weight: 50
 ---
 ## **doubler**
@@ -26,9 +27,9 @@ weight: 50
 | EstAuto| Booléen| Vrai| FAUX|| Indique si ce style de ligne est attribué automatiquement.|
 | EstAutomatiqueCouleur| Booléen| Vrai| FAUX|| Indique si la couleur du trait est attribuée automatiquement.|
 | Est visible| Booléen| Vrai| FAUX|| Représente si la ligne est visible.|
-| Type de jointure| Chaîne| Vrai| FAUX||Spécifie les capuchons de jonction.|
+| Type de jointure| Chaîne| Vrai| FAUX|| Spécifie les capuchons de jonction.|
 | Style| Chaîne| Vrai| FAUX|| Représente le style de la ligne.|
-| Transparence| Flottant| Vrai| FAUX|| Renvoie ou définit le degré de transparence de la ligne sous la forme d'une valeur comprise entre 0,0 (opaque) et 1,0 (clair).|
+| Transparence| Flottant| Vrai| FAUX||Renvoie ou définit le degré de transparence de la ligne sous la forme d'une valeur comprise entre 0,0 (opaque) et 1,0 (clair).|
 | Poids| Chaîne| Vrai| FAUX|| Obtient ou définit le nom de la ligne.|
 | PoidsPt| Flottant| Vrai| FAUX|| Obtient ou définit l'épaisseur de la ligne en unité de points.|
 

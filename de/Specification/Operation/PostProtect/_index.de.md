@@ -3,22 +3,23 @@ title: PostProtec
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postprotect/
-description: Excel Dateiverschlüsselung
+description: Excel Dateien Verschlüsselung
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostProtect
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostProtect" >}}
 {{< blocks/products/cells/docs-title titlemsg="Excel files encryption." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="/cells/protect,POST,Excel Dateiverschlüsselung.,<a href=\'https://apireference.aspose.cloud/cells/#/Protection/PostProtect\'>PostProtect</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="Passwort, Zeichenfolge, Das zum Öffnen einer Excel-Datei erforderliche Passwort." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Kennwort, Zeichenfolge, Das zum Öffnen einer Excel-Datei erforderliche Kennwort." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="ProtectWorkbookRequest, Klasse: ProtectWorkbookRequest," >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Arbeitsmappenanfrage schützen,Klasse:Arbeitsmappenanfrage schützen," >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

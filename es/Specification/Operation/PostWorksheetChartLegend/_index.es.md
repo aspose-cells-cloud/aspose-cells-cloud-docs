@@ -1,9 +1,10 @@
 ﻿---
-title: Publicar hoja de cálculo Gráfico Leyenda
+title: Publicar hoja de trabajo Gráfico Leyenda
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/postworksheetchartlegend/
 description: Actualizar la leyenda del gráfico en la hoja de trabajo
+kwords: Excel, Office, hoja de cálculo, nube REST API, PostWorksheetChartLegend
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetChartLegend" >}}

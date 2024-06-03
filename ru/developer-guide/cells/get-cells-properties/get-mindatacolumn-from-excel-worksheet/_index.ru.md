@@ -3,6 +3,7 @@ title: Получить MinDataColumn из рабочего листа Excel.
 type: docs
 url: /ru/get-mindatacolumn-from-excel-worksheet/
 weight: 110
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, получить MinDataColumn из рабочего листа Excel
 ---
 Этот REST API указывает, что показывает получение `mindatacolumn` в файле Excel, когда параметр `cellOrMethodName` равен `mindatacolumn`.
 

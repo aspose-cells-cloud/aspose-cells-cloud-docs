@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/getworksheetrow/
 description: استرداد بيانات الصف من خلال فهرس الصف في ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، GetWorksheetRow
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetRow" >}}

@@ -3,25 +3,26 @@ title: DeleteVerticalPageBrea
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/deleteverticalpagebreak/
-description: Löschen Sie einen vertikalen Seitenumbruch im Arbeitsblatt
+description: Löschen eines vertikalen Seitenumbruchs im Arbeitsblatt
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, DeleteVerticalPageBreak
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteVerticalPageBreak" >}}
 {{< blocks/products/cells/docs-title titlemsg="Delete a vertical page break in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/verticalpagebreaks/{index},DELETE,Löschen Sie einen vertikalen Seitenumbruch im Arbeitsblatt.,<a href=\'https://apireference.aspose.cloud/cells/#/ PageBreaks/DeleteVerticalPageBreak\'>DeleteVerticalPageBreak</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/verticalpagebreaks/{index},DELETE,Löscht einen vertikalen Seitenumbruch im Arbeitsblatt.,<a href=\'https://apireference.aspose.cloud/cells/#/PageBreaks/DeleteVerticalPageBreak\'>DeleteVerticalPageBreak</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Name der Arbeitsmappe." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="index,integer,Entfernt das vertikale Seitenumbruchelement unter einem angegebenen Namen. Elementindex, nullbasiert." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Name der Arbeitsmappe." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Index, Integer, Entfernt das vertikale Seitenumbruchelement bei einem angegebenen Namen. Elementindex, nullbasiert." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/PageBreaksController/DeleteVerticalPageBreak\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

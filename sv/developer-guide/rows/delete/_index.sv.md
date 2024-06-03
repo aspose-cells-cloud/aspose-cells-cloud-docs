@@ -7,6 +7,7 @@ url: /sv/rows/delete/
 keywords: Working with deleting row on an Excel worksheet. How to add rows on an Excel worksheet
 description: Aspose.Cells Cloud REST API stöder radering av rader på ett Excel-kalkylblad. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 20
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Arbeta med att ta bort rad på ett Excel kalkylblad
 ---
 ## Arbeta med att ta bort rad på ett Excel-kalkylblad.
 

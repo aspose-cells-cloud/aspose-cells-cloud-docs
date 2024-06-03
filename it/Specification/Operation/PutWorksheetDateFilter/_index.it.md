@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/putworksheetdatefilter/
 description: Applicare un filtro data nel foglio di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PutWorksheetDateFilter
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetDateFilter" >}}

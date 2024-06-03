@@ -4,17 +4,18 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/model/scrollbar/
 description: "Aspose.Cells Specifica del modello cloud: ScrollBar. Gestisci facilmente Excel e altri fogli di calcolo con funzionalità come apertura, generazione, modifica, divisione, unione, confronto e conversione"
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, Barra di scorrimento
 weight: 50
 ---
 ## **barra di scorrimento**
 
- 
+ Rappresenta un oggetto barra di scorrimento.
 
 | Nome della proprietà| Tipo di proprietà| Nullabile| Sola lettura| Valore di default| Descrizione|
 |:- |:- |:- |:- |:- |:- |
 | Valore corrente| Numero intero| VERO| Falso|| Ottiene o imposta il valore corrente.|
 | Modifica incrementale| Numero intero| VERO| Falso|| Ottiene o imposta la quantità di incremento della barra di scorrimento o della casella di selezione durante lo scorrimento di una riga.|
-| È orizzontale| Booleano| VERO| Falso||Indica se si tratta di una barra di scorrimento orizzontale.|
+| È orizzontale| Booleano| VERO| Falso|| Indica se si tratta di una barra di scorrimento orizzontale.|
 | Massimo| Numero intero| VERO| Falso|| Ottiene o imposta il valore massimo di una barra di scorrimento o di un intervallo di selezione.|
 | minimo| Numero intero| VERO| Falso|| Ottiene o imposta il valore minimo di una barra di scorrimento o di un intervallo di selezione.|
 | Cambio pagina| Numero intero| VERO| Falso|| Ottiene o imposta il cambio di pagina|
@@ -36,7 +37,7 @@ weight: 50
 | X| Numero intero| VERO| Falso|||
 | Y| Numero intero| VERO| Falso|||
 | Angolo di rotazione| Galleggiante| VERO| Falso|||
-| HtmlText| Corda| VERO| Falso|||
+|HtmlText| Corda| VERO| Falso|||
 | Testo| Corda| VERO| Falso|||
 | Testo alternativo| Corda| VERO| Falso|||
 | TestoAllineamento orizzontale| Corda| VERO| Falso|||
@@ -57,4 +58,5 @@ weight: 50
 | Collegamento ipertestuale| Corda| VERO| Falso|||
 | collegamento| Classe: collegamento| VERO| Falso|||
 
-**Nome del genitore** : (Forma)[forma]
+**Nome del genitore** : [Forma](/specification/model/shape)
+

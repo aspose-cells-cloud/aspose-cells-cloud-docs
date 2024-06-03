@@ -6,6 +6,7 @@ url: /es/folder/delete/
 keywords: Learn how to delete folder with Aspose Cells Cloud REST API
 description: Aprenda cómo eliminar una carpeta con Aspose Cells Cloud REST API SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 100
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Eliminar carpeta
 ---
 Este REST API indica `delete folder`.
  
@@ -22,7 +23,7 @@ DELETE http://api.aspose.cloud/v3.0/cells/storage/folder/{path}
 |:- |:- |:- |:- |
 | camino| cadena| camino| Ruta de la carpeta, por ejemplo, '/carpeta'|
 | nombredealmacenamiento| cadena| consulta| Nombre de almacenamiento|
-| recursivo| booleano| consulta| FALSO|
+| recursivo|booleano| consulta| FALSO|
 
  
  El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/Folder/DeleteFolder) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.

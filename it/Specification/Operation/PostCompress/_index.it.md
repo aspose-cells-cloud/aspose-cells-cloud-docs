@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/postcompress/
 description: Comprimi file e genera file di destinazione in vari formati, i formati di file supportati includono Xls, Xlsx, Xlsm, Xlsb, Ods e altri
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PostCompress
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostCompress" >}}

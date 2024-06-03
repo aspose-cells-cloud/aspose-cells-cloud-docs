@@ -3,7 +3,8 @@ title: PutWorksheetColorFilte
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/putworksheetcolorfilter/
-description: Добавьте цветовой фильтр на лист
+description: Добавление цветового фильтра на лист
+kwords: Excel, Office, электронная таблица, Cloud REST API, PutWorksheetColorFilter
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetColorFilter" >}}
@@ -19,7 +20,7 @@ weight: 50
      {{< blocks/products/cells/docs-Parameter-content columns="имя_листа,строка,имя листа." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Имя параметра, тип, описание" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="range,string, Представляет диапазон, к которому применяется указанный автофильтр." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="range,string,Представляет диапазон, к которому применяется указанный автофильтр." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="fieldIndex,integer,целочисленное смещение поля, на котором вы хотите основывать фильтр (слева от списка; самое левое поле — это поле 0)." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="matchBlanks,boolean,Сопоставить все пустые ячейки в списке." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="обновить,логическое значение,Обновить автоматические фильтры, чтобы скрыть или отобразить строки." >}} 

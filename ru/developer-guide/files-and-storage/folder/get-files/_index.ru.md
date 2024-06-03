@@ -6,6 +6,7 @@ url: /ru/folder/get-files/
 keywords: Learn how to get files from folder with Aspose Cells Cloud REST API
 description: Узнайте, как получить файл из папки с помощью Aspose Cells Cloud REST API SDK, поддерживающего различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 100
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Получить файлы
 ---
 Этот REST API указывает на `get files`.
  

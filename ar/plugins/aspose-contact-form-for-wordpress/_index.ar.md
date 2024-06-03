@@ -5,6 +5,7 @@ type: docs
 url: /ar/aspose-contact-form-for-wordpress/
 description: قم بإنشاء نماذج الاتصال وإدارتها باستخدام العلامات أو باستخدام نماذج النماذج الخاصة بنا. يمكن لعملائك ملء النماذج على صفحة WordPress وستحصل على بيانات البريد الإلكتروني via. يوفر نموذج الاتصال Aspose أيضًا نموذج ويب لميزة Excel. يمكن للمستخدمين ملء البيانات في نماذج WordPress، والتي يتم إضافتها بعد ذلك إلى ورقة Excel. يمكنك عرض البيانات من جميع العملاء داخل صفحة WordPress الخاصة بك
 weight: 10
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Aspose نموذج الاتصال لـ WordPress
 ---
 يحتوي هذا القسم على المواضيع التالية:
 

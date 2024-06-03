@@ -3,24 +3,25 @@ title: 删除工作表注释
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/deleteworksheetcomments/
-description: 删除工作表中的所有注释
+description: 删除工作表中的所有评论
+kwords: Excel，Office，电子表格，Cloud REST API，删除工作表注释
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetComments" >}}
 {{< blocks/products/cells/docs-title titlemsg="Delete all comments in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/comments,DELETE,删除工作表中的所有注释。,<a href=\'https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheetComments\'>DeleteWorksheetComments </a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/comments,DELETE,删除工作表中的所有注释。,<a href=\'https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheetComments\'>DeleteWorksheetComments</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="参数名称、类型、描述" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="名称，字符串，文件名。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,字符串,工作表名称。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="name，string，文件名。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName，string，工作表名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="文件夹，字符串，文件所在的文件夹。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,文件所在的存储名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName，string，文件所在的存储名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/WorksheetsController/DeleteWorksheetComments\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/getpagecount/
 description: Ottieni il conteggio delle pagine nella cartella di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, GetPageCount
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetPageCount" >}}

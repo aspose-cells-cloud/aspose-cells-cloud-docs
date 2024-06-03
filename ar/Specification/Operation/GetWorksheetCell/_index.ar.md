@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/getworksheetcell/
 description: قم باسترداد بيانات الخلية باستخدام مرجع الخلية أو اسم الطريقة في ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، GetWorksheetCell
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetCell" >}}

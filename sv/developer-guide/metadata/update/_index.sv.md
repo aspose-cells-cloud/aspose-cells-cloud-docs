@@ -7,6 +7,7 @@ url: /sv/metadata/update/
 keywords: Update metadata on excel files
 description: Aspose.Cells Cloud REST API stöder uppdatering av metadata på excel-filer. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 35
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Update Metadata
 ---
 Denna REST API indikerar att uppdatera `metadata` från flera Excel filer.
 

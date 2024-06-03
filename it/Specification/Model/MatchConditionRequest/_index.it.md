@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/model/matchconditionrequest/
 description: "Aspose.Cells Specifica del modello cloud: MatchConditionRequest. Gestisci facilmente Excel e altri fogli di calcolo con funzionalità come apertura, generazione, modifica, divisione, unione, confronto e conversione"
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, MatchConditionRequest
 weight: 50
 ---
 ## **matchConditionRequest**
@@ -12,6 +13,6 @@ weight: 50
 
 | Nome della proprietà| Tipo di proprietà| Nullabile| Sola lettura| Valore di default| Descrizione|
 |:- |:- |:- |:- |:- |:- |
-| Modello Regex| Corda| VERO| Falso|| Modello regex.|
+| Modello Regex| Corda| VERO| Falso||Modello regex.|
 | Condizioni di corrispondenza completa| Contenitore| VERO| Falso|| Lista di nomi.|
 

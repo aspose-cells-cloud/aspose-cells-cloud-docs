@@ -8,6 +8,7 @@ aliases: [/add-a-pivot-table-in-a-worksheet/]
 keywords: Add a pivot table in an Excel worksheet
 description: Aspose.Cells Cloud REST API stöder att lägga till en pivottabell i ett Excel kalkylblad. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 30
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Lägg till en pivottabell i ett Excel kalkylblad
 ---
 Denna REST API indikerar till `add` en pivottabell till kalkylblad.
  
@@ -28,9 +29,9 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables
 | mapp| sträng| fråga| Dokumentets mapp.|
 | lagringsnamn| sträng| fråga| lagringsnamn.|
 | källdata| sträng| fråga| Data för den nya PivotTable-cachen.|
-| destCellName| sträng| fråga| Cellen i det övre vänstra hörnet av pivottabellrapportens målområde.|
+| destCellName| sträng| fråga|Cellen i det övre vänstra hörnet av pivottabellrapportens målområde.|
 | tabellnamn| sträng| fråga| Namnet på den nya pivottabellsrapporten.|
-| useSameSource| booleskt| fråga| Anger om samma datakälla används när en annan befintlig pivottabell har använt denna datakälla. Om egenskapen är sann kommer den att spara minne.|
+| useSameSource|booleskt| fråga| Anger om samma datakälla används när en annan befintlig pivottabell har använt denna datakälla. Om egenskapen är sann kommer den att spara minne.|
  
  De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/PivotTables/PutWorksheetPivotTable) definierar ett allmänt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
  

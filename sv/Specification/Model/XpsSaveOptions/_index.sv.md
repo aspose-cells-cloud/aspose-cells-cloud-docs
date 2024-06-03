@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/model/xpssaveoptions/
 description: "Aspose.Cells Molnmodellspecifikation: XpsSaveOptions. Hantera enkelt Excel och andra kalkylarksdokument med funktioner som att öppna, generera, redigera, dela, slå samman, jämföra och konvertera"
+kwords: Excel, Office, Kalkylblad, Cloud REST API, XpsSaveOptions
 weight: 50
 ---
 ## **xpsSaveOptions**
@@ -28,7 +29,7 @@ weight: 50
 | DefaultEditLanguage| Sträng| Sann| Falsk|||
 | EmfRenderSetting| Sträng| Sann| Falsk|||
 | MergeAreas| Boolean| Sann| Falsk|||
-|SortExternalNames| Boolean| Sann| Falsk|||
+| SortExternalNames| Boolean| Sann| Falsk|||
 | UpdateSmartArt| Boolean| Sann| Falsk|||
 | SaveFormat| Sträng| Sann| Falsk|||
 | Cachad filmapp| Sträng| Sann| Falsk|||
@@ -36,7 +37,8 @@ weight: 50
 | Skapa katalog| Boolean| Sann| Falsk|||
 | Aktivera HTTPCompression| Boolean| Sann| Falsk|||
 | RefreshChartCache| Boolean| Sann| Falsk|||
-|Sortera namn| Boolean| Sann| Falsk|||
+| Sortera namn| Boolean| Sann| Falsk|||
 | Validera sammanslagna områden| Boolean| Sann| Falsk|||
 
-**Förälders namn** : (PaginatedSaveOptions)[paginerade sparaalternativ]
+**Förälders namn** : [Paginerade Sparalternativ](/specification/model/paginatedsaveoptions)
+

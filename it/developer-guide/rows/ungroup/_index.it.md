@@ -8,6 +8,7 @@ aliases: [/ungroup-rows-in-excel-worksheet/]
 keywords: Ungroup rows on an Excel worksheet
 description: Aspose.Cells Cloud REST API supporta la separazione delle righe su un foglio di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 70
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Separa righe su un foglio di lavoro Excel
 ---
 Questo REST API indica di separare le righe su un foglio di lavoro Excel.
  
@@ -22,11 +23,11 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
  
 | Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
 |:- |:- |:- |:- |
-| nome| corda| sentiero|Il nome della cartella di lavoro.|
+| nome| corda| sentiero| Il nome della cartella di lavoro.|
 | nomefoglio| corda| sentiero| Il nome del foglio di lavoro.|
 | primoIndice| numero intero| domanda| L'indice della prima riga da utilizzare.|
 | ultimoIndice| numero intero| domanda| L'ultimo indice di riga da utilizzare.|
-| è tutto| booleano| domanda| Tutta la fila deve essere gestita|
+| è tutto|booleano| domanda| Tutta la fila deve essere gestita|
 | cartella| corda| domanda| La cartella documenti.|
 | storageName| corda| domanda| nome dell'archivio.|
  

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postpivottablecellstyle/
 description: تحديث نمط الخلية في PivotTable
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostPivotTableCellStyle
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostPivotTableCellStyle" >}}

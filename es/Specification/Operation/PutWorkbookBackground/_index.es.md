@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/putworkbookbackground/
 description: Establecer fondo en el libro de trabajo
+kwords: Excel, Office, Hoja de cálculo, Nube REST API, PutWorkbookBackground
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorkbookBackground" >}}

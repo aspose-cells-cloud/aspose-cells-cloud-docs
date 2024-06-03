@@ -3,6 +3,7 @@ title:  تحديث محور قيمة المخطط
 type: docs
 url: /ar/charts/value-axis/update/
 weight: 160
+kwords: Excel، Office السحابة، REST API، جدول البيانات، PDF، CSV، Json، Markdwon، تحديث محور قيمة المخطط
 ---
  يشير REST API إلى محور قيمة مخطط التحديث.
  
@@ -60,7 +61,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/" \
  
 ## عائلة Cloud SDK
  
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
  
 توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
  

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postdatadeduplication/
 description: يتم استخدام إلغاء البيانات المكررة لملفات جداول البيانات بشكل أساسي لإزالة البيانات المكررة في الجداول والنطاقات
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostDataDeduplication
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostDataDeduplication" >}}

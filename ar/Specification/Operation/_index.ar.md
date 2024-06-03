@@ -2,6 +2,7 @@
 title: عملية
 second_title: Aspose.Cells Cloud Documen
 type: docs
+kwords: Excel, Office, جدول البيانات, Cloud REST API, وصف العملية
 weight: 50
 ---
 - [PostAnalyzeExcel](postanalyzeexcel) : إجراء تحليل الأعمال للبيانات في ملفات Excel.
@@ -14,7 +15,7 @@ weight: 50
 - [ضع WorksheetFilterTop10](putworksheetfiltertop10) : قم بتصفية أعلى 10 عناصر في القائمة في ورقة العمل.
 - [وضع WorksheetColorFilter](putworksheetcolorfilter) : أضف مرشح الألوان في ورقة العمل.
 - [PostWorksheetMatchBlanks](postworksheetmatchblanks) : قم بمطابقة كافة الخلايا الفارغة في القائمة.
-- [PostWorksheetMatchNonBlanks](postworksheetmatchnonblanks) : قم بمطابقة جميع الخلايا غير الفارغة في القائمة.
+- [PostWorksheetMatchNonBlanks](postworksheetmatchnonblanks) : قم بمطابقة كافة الخلايا غير الفارغة في القائمة.
 - [PostWorksheetAutoFilterRefresh](postworksheetautofilterrefresh) : قم بتحديث عوامل التصفية التلقائية في ورقة العمل.
 - [حذف ورقة العملDateFilter](deleteworksheetdatefilter) : قم بإزالة عامل تصفية التاريخ في ورقة العمل.
 - [حذف عامل تصفية ورقة العمل](deleteworksheetfilter) : حذف عامل تصفية لعمود في ورقة العمل.
@@ -127,6 +128,7 @@ weight: 50
 - [PostWorkbookDataFill](postworkbookdatafill) يتم استخدام تعبئة البيانات لملفات جداول البيانات بشكل أساسي لملء البيانات الفارغة في الجداول والنطاقات.
 - [PostDataFill](postdatafill) يتم استخدام تعبئة البيانات لملفات جداول البيانات بشكل أساسي لملء البيانات الفارغة في الجداول والنطاقات.
 - [PostDeleteIncompleteRows](postdeleteincompleterows) : يتم استخدام حذف الصفوف غير المكتملة من ملفات جداول البيانات بشكل أساسي لإزالة الصفوف غير المكتملة في الجداول والنطاقات.
+- [تحويل البيانات بعد](postdatatransformation) : يتم استخدام تحويل بيانات جدول البيانات بشكل أساسي للأعمدة المحورية والأعمدة غير المحورية.
 - [الحصول على الارتباطات التشعبية لورقة العمل](getworksheethyperlinks) : استرداد أوصاف الارتباطات التشعبية في ورقة العمل.
 - [GetWorksheetHyperlink](getworksheethyperlink) : استرداد وصف الارتباط التشعبي حسب الفهرس في ورقة العمل.
 - [حذف ورقة العمل الارتباط التشعبي](deleteworksheethyperlink) : حذف الارتباط التشعبي حسب الفهرس في ورقة العمل.
@@ -134,7 +136,7 @@ weight: 50
 - [ضع ورقة عمل الارتباط التشعبي](putworksheethyperlink) : إضافة ارتباط تشعبي في ورقة العمل.
 - [حذف الارتباطات التشعبية لورقة العمل](deleteworksheethyperlinks) : حذف كافة الارتباطات التشعبية في ورقة العمل.
 - [PostAssemble](postassemble) : تجميع ملفات البيانات مع ملفات القالب لإنشاء ملفات بتنسيقات مختلفة.
-- [بوستكومبريس](postcompress) : ضغط الملفات وإنشاء الملفات المستهدفة بتنسيقات مختلفة، وتشمل تنسيقات الملفات المدعومة Xls وXlsx وXlsm وXlsb وOds والمزيد.
+- [بوستكومبريس](postcompress) ضغط الملفات وإنشاء الملفات المستهدفة بتنسيقات مختلفة، وتشمل تنسيقات الملفات المدعومة Xls وXlsx وXlsm وXlsb وOds والمزيد.
 - [ما بعد الدمج](postmerge) : دمج الخلايا في ورقة العمل.
 - [PostSplit](postsplit) : قم بتقسيم ملفات جداول البيانات Excel بناءً على أوراق العمل وإنشاء ملفات الإخراج بتنسيقات مختلفة.
 - [ما بعد البحث](postsearch) : البحث عن نص محدد ضمن ملفات Excel.
@@ -144,8 +146,8 @@ weight: 50
 - [PostClearObjects](postclearobjects) : مسح العناصر الداخلية في ملفات Excel وإنشاء ملفات الإخراج بتنسيقات مختلفة.
 - [PostReverse](postreverse) : عكس الصفوف أو الأعمدة في ملفات Excel وإنشاء ملفات الإخراج بتنسيقات مختلفة.
 - [PostRepair](postrepair) : إصلاح الملفات غير الطبيعية وإنشاء ملفات بتنسيقات مختلفة.
-- [PostRotate](postrotate) : تدوير الصفوف أو الأعمدة أو الكائنات الأخرى في ملفات Excel وحفظها بتنسيقات مختلفة.
-- [PostMetadata](postmetadata) تحديث خصائص الوثيقة في الملف Excel وحفظها بصيغ مختلفة.
+- [PostRotate](postrotate) تدوير الصفوف أو الأعمدة أو الكائنات الأخرى في ملفات Excel وحفظها بتنسيقات مختلفة.
+- [PostMetadata](postmetadata) : تحديث خصائص الوثيقة في الملف Excel وحفظها بصيغ مختلفة.
 - [GetMetadata](getmetadata) : الحصول على خصائص مستند الخلايا.
 - [حذف البيانات الوصفية](deletemetadata) : حذف خصائص وثيقة الخلايا في ملف Excel، وحفظها بتنسيقات مختلفة.
 - [GetWorksheetListObjects](getworksheetlistobjects) : استرداد أوصاف كائنات القائمة في ورقة العمل.
@@ -155,8 +157,8 @@ weight: 50
 - [حذف كائن قائمة ورقة العمل](deleteworksheetlistobject) : حذف كائن القائمة حسب الفهرس في ورقة العمل.
 - [PostWorksheetListObject](postworksheetlistobject) : تحديث كائن القائمة حسب الفهرس في ورقة العمل.
 - [PostWorksheetListObjectConvertToRange](postworksheetlistobjectconverttorange) : تحويل كائن القائمة إلى نطاق في ورقة العمل.
-- [PostWorksheetListObjectSummarizeWithPivotTable](postworksheetlistobjectsummarizewithpivottable) : قم بإنشاء جدول محوري يحتوي على كائن قائمة في ورقة العمل.
-- [PostWorksheetListObjectSortTable](postworksheetlistobjectsorttable) فرز كائن القائمة في ورقة العمل.
+- [PostWorksheetListObjectSummarizeWithPivotTable](postworksheetlistobjectsummarizewithpivottable) قم بإنشاء جدول محوري يحتوي على كائن قائمة في ورقة العمل.
+- [PostWorksheetListObjectSortTable](postworksheetlistobjectsorttable) : فرز كائن القائمة في ورقة العمل.
 - [PostWorksheetListObjectRemoveDuplicates](postworksheetlistobjectremoveduplicates) : إزالة التكرارات في كائن القائمة.
 - [PostWorksheetListObjectInsertSlicer](postworksheetlistobjectinsertslicer) : إدراج أداة تقطيع لكائن القائمة.
 - [PostWorksheetListColumn](postworksheetlistcolumn) : تحديث عمود القائمة في كائن القائمة.
@@ -167,8 +169,8 @@ weight: 50
 - [حذف ورقة العملOleObject](deleteworksheetoleobject) : حذف كائن OLE في ورقة العمل.
 - [PostUpdateWorksheetOleObject](postupdateworksheetoleobject) : تحديث كائن OLE في ورقة العمل.
 - [PutWorksheetOleObject](putworksheetoleobject) : إضافة كائن OLE في ورقة العمل.
-- [GetVerticalPageBreaks](getverticalpagebreaks) : استرداد أوصاف فواصل الصفحات الرأسية في ورقة العمل.
-- [GetHorizontalPageBreaks](gethorizontalpagebreaks) استرداد أوصاف فواصل الصفحات الأفقية في ورقة العمل.
+- [GetVerticalPageBreaks](getverticalpagebreaks) استرداد أوصاف فواصل الصفحات العمودية في ورقة العمل.
+- [GetHorizontalPageBreaks](gethorizontalpagebreaks) : استرداد أوصاف فواصل الصفحات الأفقية في ورقة العمل.
 - [GetVerticalPageBreak](getverticalpagebreak) : استرداد وصف فاصل الصفحات العمودي في ورقة العمل.
 - [GetHorizontalPageBreak](gethorizontalpagebreak) : استرداد وصف فاصل الصفحات الأفقي في ورقة العمل.
 - [PutVerticalPageBreak](putverticalpagebreak) : إضافة فاصل صفحات رأسي في ورقة العمل.
@@ -179,9 +181,9 @@ weight: 50
 - [حذف HorizontalPageBreak](deletehorizontalpagebreak) : حذف فاصل الصفحات الأفقي في ورقة العمل.
 - [GetPageSetup](getpagesetup) : استرداد وصف إعداد الصفحة في ورقة العمل.
 - [PostPageSetup](postpagesetup) : تحديث إعداد الصفحة في ورقة العمل.
-- [حذفHeaderFooter](deleteheaderfooter) : مسح الرأس والتذييل في ورقة العمل.
+- [حذفHeaderFooter](deleteheaderfooter) مسح الرأس والتذييل في ورقة العمل.
 - [GetHeader](getheader) : استرداد وصف رأس الصفحة في ورقة العمل.
-- [PostHeader](postheader) تحديث رأس الصفحة في ورقة العمل.
+- [PostHeader](postheader) : تحديث رأس الصفحة في ورقة العمل.
 - [GetFooter](getfooter) : استرداد وصف تذييل الصفحة في ورقة العمل.
 - [PostFooter](postfooter) : تحديث تذييل الصفحة في ورقة العمل.
 - [PostFitWideToPages](postfitwidetopages) : قم بتعيين المقياس الذي سيتم عنده احتواء الصفحة على نطاق واسع عند طباعتها على الورقة.
@@ -191,9 +193,9 @@ weight: 50
 - [ضع ورقة عمل أضف صورة](putworksheetaddpicture) : إضافة صورة جديدة في ورقة العمل.
 - [صورة ما بعد ورقة العمل](postworksheetpicture) : تحديث الصورة حسب الفهرس في ورقة العمل.
 - [حذف صورة ورقة العمل](deleteworksheetpicture) : حذف كائن صورة حسب الفهرس في ورقة العمل.
-- [حذف صور ورقة العمل](deleteworksheetpictures) : حذف كافة الصور في ورقة العمل.
+- [حذف صور ورقة العمل](deleteworksheetpictures) حذف كافة الصور في ورقة العمل.
 - [GetWorksheetPivotTables](getworksheetpivottables) : استرداد أوصاف الجداول المحورية في ورقة العمل.
-- [GetWorksheetPivotTable](getworksheetpivottable) استرداد معلومات PivotTable حسب الفهرس في ورقة العمل.
+- [GetWorksheetPivotTable](getworksheetpivottable) : استرداد معلومات PivotTable حسب الفهرس في ورقة العمل.
 - [GetPivotTableField](getpivottablefield) : استرداد أوصاف الحقول المحورية في PivotTable.
 - [GetWorksheetPivotTableFilters](getworksheetpivottablefilters) : الحصول على عوامل تصفية PivotTable في ورقة العمل.
 - [GetWorksheetPivotTableFilter](getworksheetpivottablefilter) : استرداد عوامل تصفية PivotTable في ورقة العمل.
@@ -215,9 +217,9 @@ weight: 50
 - [حذف ورقة العملPivotTableFilter](deleteworksheetpivottablefilter) : حذف عامل تصفية محوري في PivotTable.
 - [GetDocumentProperties](getdocumentproperties) : استرداد أوصاف خصائص الملف Excel.
 - [PutDocumentProperty](putdocumentproperty) : تعيين أو إضافة خاصية Excel.
-- [GetDocumentProperty](getdocumentproperty) : احصل على عقار Excel بالاسم.
+- [GetDocumentProperty](getdocumentproperty) : احصل على Excel عقار بالاسم.
 - [حذفDocumentProperty](deletedocumentproperty) : حذف خاصية Excel.
-- [حذف خصائص المستند](deletedocumentproperties) : احذف جميع خصائص المستند المخصصة وأعد تعيين الخصائص المضمنة.
+- [حذف خصائص المستند](deletedocumentproperties) احذف جميع خصائص المستند المخصصة وأعد تعيين الخصائص المضمنة.
 - [التوقيع الرقمي](postdigitalsignature) : Excel ملف التوقيع الرقمي.
 - [PostEncryptWorkbook](postencryptworkbook) : Excel التشفير.
 - [حذفDecryptWorkbook](deletedecryptworkbook) : Excel فك تشفير الملفات.
@@ -230,9 +232,9 @@ weight: 50
 - [PostProtect](postprotect) : Excel تشفير الملفات.
 - [PostWorksheetCellsRangesCopy](postworksheetcellsrangescopy) : انسخ المحتوى من النطاق المصدر إلى النطاق الوجهة في ورقة العمل.
 - [PostWorksheetCellsRangeMerge](postworksheetcellsrangemerge) : دمج مجموعة من الخلايا في خلية واحدة.
-- [PostWorksheetCellsRangeUnMerge](postworksheetcellsrangeunmerge) : قم بإلغاء دمج الخلايا المدمجة ضمن هذا النطاق.
+- [PostWorksheetCellsRangeUnMerge](postworksheetcellsrangeunmerge) قم بإلغاء دمج الخلايا المدمجة ضمن هذا النطاق.
 - [PostWorksheetCellsRangeStyle](postworksheetcellsrangestyle) : قم بتعيين النمط للنطاق المحدد.
-- [GetWorksheetCellsRangeValue](getworksheetcellsrangevalue) استرداد قيم الخلايا ضمن النطاق المحدد.
+- [GetWorksheetCellsRangeValue](getworksheetcellsrangevalue) : استرداد قيم الخلايا ضمن النطاق المحدد.
 - [PostWorksheetCellsRangeValue](postworksheetcellsrangevalue) : تعيين قيمة للنطاق؛ إذا لزم الأمر، سيتم تحويل القيمة إلى نوع بيانات آخر، وسيتم إعادة تعيين تنسيق أرقام الخلية.
 - [PostWorksheetCellsRangeMoveTo](postworksheetcellsrangemoveto) :نقل النطاق الحالي إلى النطاق الوجهة.
 - [PostWorksheetCellsRangeSort](postworksheetcellsrangesort) : إجراء فرز البيانات حول نطاق من الخلايا.
@@ -240,8 +242,8 @@ weight: 50
 - [PostWorksheetCellsRangeColumnWidth](postworksheetcellsrangecolumnwidth) : قم بتعيين عرض العمود للنطاق المحدد.
 - [PostWorksheetCellsRangeRowHeight](postworksheetcellsrangerowheight) : يضبط ارتفاع الصف للنطاق.
 - [ضع ورقة العملCellsRange](putworksheetcellsrange) : إدراج نطاق من الخلايا ونقل الخلايا الموجودة بناءً على خيار النقل المحدد.
-- [حذف ورقة العملCellsRange](deleteworksheetcellsrange) : حذف نطاق من الخلايا ونقل الخلايا الموجودة بناءً على خيار النقل المحدد.
-- [الحصول على أشكال ورقة العمل](getworksheetshapes) استرداد أوصاف الأشكال في ورقة العمل.
+- [حذف ورقة العملCellsRange](deleteworksheetcellsrange) حذف نطاق من الخلايا ونقل الخلايا الموجودة بناءً على خيار النقل المحدد.
+- [الحصول على أشكال ورقة العمل](getworksheetshapes) : استرداد أوصاف الأشكال في ورقة العمل.
 - [احصل على شكل ورقة العمل](getworksheetshape) : استرداد وصف الشكل في ورقة العمل.
 - [ضع شكل ورقة العمل](putworksheetshape) : إضافة شكل في ورقة العمل.
 - [حذف أشكال ورقة العمل](deleteworksheetshapes) : حذف كافة الأشكال في ورقة العمل.
@@ -253,9 +255,9 @@ weight: 50
 - [احصل على ورقة عملSparklineGroup](getworksheetsparklinegroup) : استرداد وصف مجموعة الخطوط المميزة في ورقة العمل.
 - [حذف ورقة عملSparklineGroups](deleteworksheetsparklinegroups) : حذف مجموعات الخطوط المميزة في ورقة العمل.
 - [حذف ورقة عملSparklineGroup](deleteworksheetsparklinegroup) : حذف مجموعة خطوط المؤشر في ورقة العمل.
-- [ضع ورقة عملSparklineGroup](putworksheetsparklinegroup) : أضف مجموعة خطوط لامعة في ورقة العمل.
+- [ضع ورقة عملSparklineGroup](putworksheetsparklinegroup) أضف مجموعة خطوط لامعة في ورقة العمل.
 - [PostWorksheetSparklineGroup](postworksheetsparklinegroup) : قم بتحديث مجموعة الخطوط المميزة في ورقة العمل.
-- [PostRunTask](postruntask) تشغيل المهام.
+- [PostRunTask](postruntask) : تشغيل المهام.
 - [احصل على WorkbookDefaultStyle](getworkbookdefaultstyle) : استرداد وصف النمط الافتراضي للمصنف.
 - [GetWorkbookTextItems](getworkbooktextitems) : استرداد العناصر النصية في المصنف.
 - [احصل على أسماء المصنفات](getworkbooknames) : استرداد النطاقات المسماة في المصنف.
@@ -267,10 +269,10 @@ weight: 50
 - [حذف اسم المصنف](deleteworkbookname) : حذف نطاق مسمى في المصنف.
 - [PostWorkbooksMerge](postworkbooksmerge) : دمج مصنف في المصنف الموجود.
 - [PostWorkbooksTextSearch](postworkbookstextsearch) : البحث عن نص في المصنف.
-- [PostWorkbookTextReplace](postworkbooktextreplace) : استبدال النص في المصنف.
+- [PostWorkbookTextReplace](postworkbooktextreplace) استبدال النص في المصنف.
 - [PostWorkbookGetSmartMarkerResult](postworkbookgetsmartmarkerresult) : معالجة العلامة الذكية.
 - [ضع WorkbookCreate](putworkbookcreate) : قم بإنشاء مصنف جديد باستخدام طرق مختلفة.
-- [PostWorkbookSplit](postworkbooksplit) قم بتقسيم المصنف بتنسيق معين.
+- [PostWorkbookSplit](postworkbooksplit) : قم بتقسيم المصنف بتنسيق معين.
 - [PostWorkbookCalculateFormula](postworkbookcalculateformula) : حساب كافة الصيغ في المصنف.
 - [صفوف PostAutofitWorkbook](postautofitworkbookrows) : الاحتواء التلقائي للصفوف في المصنف.
 - [PostAutofitWorkbookColumns](postautofitworkbookcolumns) : أعمدة الاحتواء التلقائي في المصنف.
@@ -283,7 +285,7 @@ weight: 50
 - [احصل على أوراق العمل](getworksheets) : استرداد وصف أوراق العمل من المصنف.
 - [GetWorksheetWithFormat](getworksheetwithformat) : استرداد ورقة العمل بالتنسيق المحدد من المصنف.
 - [ورقة عمل PutChangeVisibility](putchangevisibilityworksheet) : تغيير رؤية ورقة العمل في المصنف.
-- [PutActiveWorksheet](putactiveworksheet) قم بتعيين فهرس ورقة العمل النشط في المصنف.
+- [PutActiveWorksheet](putactiveworksheet) : قم بتعيين فهرس ورقة العمل النشط في المصنف.
 - [وضع ورقة عمل جديدة](putinsertnewworksheet) : قم بإدراج ورقة عمل جديدة في المصنف.
 - [ضع ورقة عمل جديدة](putaddnewworksheet) : إضافة ورقة عمل جديدة في المصنف.
 - [حذف ورقة العمل](deleteworksheet) : حذف ورقة عمل في المصنف.
@@ -296,8 +298,8 @@ weight: 50
 - [الحصول على تعليق ورقة العمل](getworksheetcomment) : استرجاع وصف التعليق في ورقة العمل.
 - [ضع تعليق ورقة العمل](putworksheetcomment) : أضف تعليق الخلية في ورقة العمل.
 - [تعليق ما بعد ورقة العمل](postworksheetcomment) : تحديث تعليق الخلية في ورقة العمل.
-- [حذف تعليق ورقة العمل](deleteworksheetcomment) : حذف تعليق الخلية في ورقة العمل.
-- [حذف تعليقات ورقة العمل](deleteworksheetcomments) حذف كافة التعليقات في ورقة العمل.
+- [حذف تعليق ورقة العمل](deleteworksheetcomment) حذف تعليق الخلية في ورقة العمل.
+- [حذف تعليقات ورقة العمل](deleteworksheetcomments) : حذف كافة التعليقات في ورقة العمل.
 - [GetWorksheetMergedCells](getworksheetmergedcells) : الحصول على خلايا ورقة العمل المدمجة.
 - [GetWorksheetMergedCell](getworksheetmergedcell) : استرداد وصف الخلية المدمجة حسب فهرسها في ورقة العمل.
 - [GetWorksheetCalculateFormula](getworksheetcalculateformula) : حساب الصيغة في ورقة العمل.
@@ -321,7 +323,7 @@ weight: 50
 - [GetWorksheetPageCount](getworksheetpagecount) : الحصول على عدد الصفحات في ورقة العمل.
 - [GetWorksheetValidations](getworksheetvalidations) : استرداد أوصاف عمليات التحقق من الصحة في ورقة العمل.
 - [GetWorksheetValidation](getworksheetvalidation) : استرداد التحقق من الصحة من خلال فهرسه في ورقة العمل.
-- [PutWorksheetValidation](putworksheetvalidation) : أضف التحقق من الصحة في الفهرس في ورقة العمل.
-- [التحقق من صحة ما بعد ورقة العمل](postworksheetvalidation) : قم بتحديث التحقق من الصحة بواسطة الفهرس في ورقة العمل.
-- [حذف ورقة العملالتحقق من الصحة](deleteworksheetvalidation) حذف التحقق من الصحة عن طريق الفهرس في ورقة العمل.
+- [PutWorksheetValidation](putworksheetvalidation) : إضافة التحقق من الصحة في الفهرس في ورقة العمل.
+- [التحقق من صحة ما بعد ورقة العمل](postworksheetvalidation) قم بتحديث التحقق من الصحة بواسطة الفهرس في ورقة العمل.
+- [حذف ورقة العملالتحقق من الصحة](deleteworksheetvalidation) : حذف التحقق من الصحة عن طريق الفهرس في ورقة العمل.
 - [حذف ورقة العملValidations](deleteworksheetvalidations) : حذف كافة عمليات التحقق من الصحة في ورقة العمل.

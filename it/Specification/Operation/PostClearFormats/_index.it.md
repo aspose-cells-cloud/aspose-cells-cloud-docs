@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/postclearformats/
 description: Cancella i formati delle celle nel foglio di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PostClearFormats
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostClearFormats" >}}

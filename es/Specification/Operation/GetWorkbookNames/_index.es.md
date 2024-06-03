@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/getworkbooknames/
 description: Recuperar rangos con nombre en el libro de trabajo
+kwords: Excel, Office, hoja de cálculo, nube REST API, GetWorkbookNames
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorkbookNames" >}}

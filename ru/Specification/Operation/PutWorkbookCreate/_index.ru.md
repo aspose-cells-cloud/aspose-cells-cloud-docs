@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/putworkbookcreate/
 description: Создайте новую книгу, используя разные методы.
+kwords: Excel, Office, электронная таблица, Cloud REST API, PutWorkbookCreate
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorkbookCreate" >}}

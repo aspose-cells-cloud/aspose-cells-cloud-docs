@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postclearobjects/
 description: Очистить внутренние элементы в файлах Excel и сгенерировать выходные файлы в различных форматах.
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostClearObjects
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostClearObjects" >}}
@@ -17,8 +18,8 @@ weight: 50
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Имя параметра, тип, описание" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="тип объекта, строка, диаграмма/комментарий/изображение/форма/объект списка/гиперссылка/олеобъект/сводная таблица/проверка/фон" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="имя_листа,строка,Имя листа, укажите область удаления." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="Outformat, String, формат файла выходных данных. (CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/07613481/076148484848484848484848484484848484848484848484848484848484848484848484848484848484848484848484848484848484848484848484848484848484848нт. GIF/EMF /BMP/MD[Markdown]/Числа)" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="пароль,строка,Пароль, необходимый для открытия файла Excel." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="outFormat,строка,формат файла выходных данных.(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/07616348 1 /BMP/MD[Markdown]/Числа)" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="пароль, строка, пароль, необходимый для открытия файла Excel." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction,boolean, проверяется ли ограничение файла Excel, когда пользователь изменяет связанные объекты ячеек." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="регион,строка,Региональные настройки книги." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/getworkbookdefaultstyle/
 description: استرداد وصف النمط الافتراضي للمصنف
+kwords: Excel، Office، جدول البيانات، Cloud REST API، GetWorkbookDefaultStyle
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorkbookDefaultStyle" >}}

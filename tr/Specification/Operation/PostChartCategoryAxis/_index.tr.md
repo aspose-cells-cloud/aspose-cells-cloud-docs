@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/postchartcategoryaxis/
 description: Grafikteki grafik kategorisi eksenini güncelleyin
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PostChartCategoryAxis
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostChartCategoryAxis" >}}

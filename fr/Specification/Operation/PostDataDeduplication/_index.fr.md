@@ -4,13 +4,14 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postdatadeduplication/
 description: La déduplication des données des feuilles de calcul est principalement utilisée pour éliminer les données en double dans les tableaux et les plages.
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostDataDeduplication
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostDataDeduplication" >}}
 {{< blocks/products/cells/docs-title titlemsg="Data deduplication of spreadsheet files is mainly used to eliminate duplicate data in tables and ranges." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,Référence API" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/datadeduplication,POST,La déduplication des données des fichiers de feuilles de calcul est principalement utilisée pour éliminer les données en double dans les tables et les plages.,<a href=\'https://apireference.aspose.cloud/cells/#/DataProcessing/PostDataDeduplication\'>PostDataDeduplication </a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/datadeduplication,POST,La déduplication des données des fichiers de feuille de calcul est principalement utilisée pour éliminer les données en double dans les tables et les plages.,<a href=\'https://apireference.aspose.cloud/cells/#/DataProcessing/PostDataDeduplication\'>PostDataDeduplication </a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

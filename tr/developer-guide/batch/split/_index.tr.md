@@ -6,6 +6,7 @@ url: /tr/batch/split
 keywords: Batch split Excel file
 description: Aspose.Cells Bulut API toplu bölünmüş dosyayı destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 100
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Toplu Bölme
 ---
 Bu REST API, uygun dosyanın `batch split`'ini gösterir.
  
@@ -20,7 +21,7 @@ POST http://api.aspose.cloud/v3.0/cells/batch/split
  
 | Parametre adı| Tip| Yol/Sorgu Dizesi/HTTPBody|Tanım|
 |:- |:- |:- |:- |
-| Toplu Bölme İsteği|| vücut||
+|Toplu Bölme İsteği|| vücut||
 
 **BatchSplitRequest Özellikleri**
  
@@ -66,7 +67,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/batch/split" \
  
 ## Bulut SDK Ailesi
  
-SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük düzeyli ayrıntılarla ilgilenir ve bölünmüş görevlerinize odaklanmanıza olanak tanır. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
+ SDK kullanmak, geliştirmeyi hızlandırmanın en iyi yoludur. Bir SDK, düşük düzeyli ayrıntılarla ilgilenir ve bölünmüş görevlerinize odaklanmanıza olanak tanır. Lütfen şuraya göz atın:[GitHub deposu](https://github.com/aspose-cells-cloud) Aspose.Cells Bulut SDK'larının tam listesi için.
  
 Aşağıdaki kod örnekleri, çeşitli SDK'ları kullanarak Aspose.Cells web hizmetlerine nasıl çağrı yapılacağını gösterir:
  

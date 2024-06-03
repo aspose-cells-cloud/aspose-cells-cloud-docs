@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/getpivottablefield/
 description: Recuperar descripciones de campos dinámicos en la tabla dinámica
+kwords: Excel, Office, hoja de cálculo, nube REST API, GetPivotTableField
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetPivotTableField" >}}

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/getworksheetcolumns/
 description: Hämta beskrivningar av kalkylbladskolumner
+kwords: Excel, Office, Spreadsheet, Cloud REST API, GetWorksheetColumns
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetColumns" >}}

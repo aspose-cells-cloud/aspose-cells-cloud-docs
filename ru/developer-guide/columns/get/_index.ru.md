@@ -8,6 +8,7 @@ aliases: [/get-columns-from-an-excel-worksheet/,/get-columns-from-a-worksheet/,/
 keywords: Get columns on an Excel workshee
 description: Aspose.Cells Cloud REST API поддерживает получение столбцов на листе Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 10
+kwords: Excel, Office Cloud, REST API, электронная таблица, PDF, CSV, Json, Markdwon, получить столбцы из листа Excel.
 ---
 Этот REST API указывает на чтение данных столбца рабочего листа по индексу столбца.
  
@@ -22,7 +23,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/colum
  
 | Имя параметра| Тип| Путь/строка запроса/HTTPBody|Описание|
 |:- |:- |:- |:- |
-| имя| нить| путь|Имя рабочей книги.|
+| имя| нить| путь| Имя рабочей книги.|
 | имя листа| нить| путь| Имя рабочего листа.|
 | индекс столбца| целое число| путь| Индекс столбца.|
 | папка| нить| запрос| Папка рабочей книги.|
@@ -30,7 +31,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/colum
  
 [Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetColumns) определяет общедоступный интерфейс программирования и позволяет выполнять взаимодействие с REST непосредственно из веб-браузера.
 
- Вы можете использовать**cURL** инструмент командной строки для легкого доступа к веб-службам Aspose.Cells. В следующем примере показано, как позвонить на Cloud API с помощью cURL.
+ Вы можете использовать**cURL**инструмент командной строки для легкого доступа к веб-службам Aspose.Cells. В следующем примере показано, как позвонить на Cloud API с помощью cURL.
 
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}

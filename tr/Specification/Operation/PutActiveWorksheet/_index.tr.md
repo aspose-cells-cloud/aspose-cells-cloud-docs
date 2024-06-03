@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/putactiveworksheet/
 description: Çalışma kitabında etkin çalışma sayfası dizinini ayarlama
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PutActiveWorksheet
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutActiveWorksheet" >}}

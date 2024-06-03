@@ -8,6 +8,7 @@ aliases: [/filter-a-list-using-a-color-filter/,/autofilter/add-a-color-filter/]
 keywords: Adds a color filter on an Excel worksheet
 description: Aspose.Cells Bulut API, Excel çalışma sayfasına renk filtresi eklemeyi destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 65
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel çalışma sayfasına renk filtresi ekleme
 ---
 Bu REST API, Excel Çalışma Sayfasına `color filter` eklenmesi gerektiğini belirtir.
 
@@ -28,8 +29,8 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/
 | menzil| sicim| sorgu||
 | alanIndex| tamsayı| sorgu||
 | renk filtresi|| vücut||
-| maçBoşluklar| boolean| sorgu||
-| yenileme| boolean| sorgu||
+| maçBoşluklar|boolean| sorgu||
+| yenileme|boolean| sorgu||
 | dosya| sicim| sorgu||
 | depolamaAdı| sicim| sorgu| depolama adı.|
  

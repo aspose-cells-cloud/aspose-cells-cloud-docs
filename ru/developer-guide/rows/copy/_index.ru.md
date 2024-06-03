@@ -8,6 +8,7 @@ aliases: [/copy-rows-in-excel-worksheet/]
 keywords: Copy rows on an Excel workshee
 description: Aspose.Cells Cloud REST API поддерживает копирование строк на листе Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 30
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Копирование строк на листе Excel
 ---
 Этот REST API указывает на копирование строк рабочего листа.
  
@@ -22,7 +23,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
  
 | Имя параметра| Тип| Путь/строка запроса/HTTPBody|Описание|
 |:- |:- |:- |:- |
-| имя| нить| путь|Имя рабочей книги.|
+| имя| нить| путь| Имя рабочей книги.|
 | имя листа| нить| путь| Имя рабочего листа.|
 | саурцеРовИндекс| целое число| запрос| Индекс исходной строки|
 | Место назначенияRowIndex| целое число| запрос| Индекс целевой строки|

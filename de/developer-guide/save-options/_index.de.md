@@ -5,11 +5,12 @@ linktitle: Option speichern
 type: docs
 url: /de/save-options/
 keywords: Workbook save options
-description: Aspose.Cells Cloud REST API unterstützt das Abrufen von Excel-Dateien in verschiedene Formatdateien. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
+description: Aspose.Cells Cloud REST API unterstützt das Konvertieren von Excel-Dateien in verschiedene Formatdateien. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift.
 weight: 79
+kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdwon, Speicheroptionen
 ---
 # SaveOptions-Eigenschaften
 
-Name | Geben Sie | ein Beschreibung | Anmerkungen
+Name | Typ | Beschreibung | Hinweise
 ------------ | ------------- | ------------- | -------------
-**Aktivieren Sie HTTP-Komprimierung** | **bool?** | | [Optional]**SaveFormat** | **Zeichenfolge** | | [Optional]**Daten löschen** | **bool?** | Machen Sie die Arbeitsmappe leer, nachdem Sie die Datei gespeichert haben. | [Optional]**CachedFileFolder** | **Zeichenfolge** | Der zwischengespeicherte Dateiordner wird zum Speichern großer Datenmengen verwendet. | [Optional]**ValidateMergedAreas** | **bool?** | Gibt an, ob zusammengeführte Bereiche vor dem Speichern der Datei validiert werden. Der Standardwert ist false. | [Optional]**ChartCache aktualisieren** | **bool?** | | [Optional]**Verzeichnis erstellen** | **bool?** | Wenn „true“ und das Verzeichnis nicht existiert, wird das Verzeichnis automatisch erstellt, bevor die Datei gespeichert wird. | [Optional]**Sortiernamen** | **bool?** | | [Optional]
+**HTTP-Komprimierung aktivieren** | **bool?** | | [optional]**Format speichern** | **Schnur** | | [optional]**Daten löschen** | **bool?** | Leeren Sie die Arbeitsmappe nach dem Speichern der Datei. | [optional]**ZwischengespeicherterDateiordner** | **Schnur** | Der zwischengespeicherte Dateiordner wird zum Speichern einiger großer Datenmengen verwendet. | [optional]**ValidateMergedAreas** | **bool?** | Gibt an, ob zusammengeführte Bereiche vor dem Speichern der Datei validiert werden sollen. Der Standardwert ist „false“. | [optional]**ChartCache aktualisieren** | **bool?** | | [optional]**Verzeichnis erstellen** | **bool?** | Wenn wahr und das Verzeichnis nicht existiert, wird das Verzeichnis vor dem Speichern der Datei automatisch erstellt. | [optional]**SortNames** | **bool?** | | [optional]

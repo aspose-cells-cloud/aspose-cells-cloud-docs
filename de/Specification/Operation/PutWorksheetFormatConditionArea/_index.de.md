@@ -1,28 +1,29 @@
 ﻿---
-title: PutWorksheetFormatConditionAre
+title: SetzenArbeitsblattFormatBedingungSind
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/putworksheetformatconditionarea/
-description: Fügen Sie einen Zellbereich für die Formatbedingung im Arbeitsblatt hinzu
+description: Fügen Sie im Arbeitsblatt einen Zellbereich für die Formatbedingung hinzu
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PutWorksheetFormatConditionArea
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetFormatConditionArea" >}}
 {{< blocks/products/cells/docs-title titlemsg="Add a cell area for the format condition in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}/area,PUT,Fügen Sie einen Zellbereich für die Formatbedingung im Arbeitsblatt hinzu.,<a href=\'https://apireference.aspose.cloud /cells/#/ConditionalFormattings/PutWorksheetFormatConditionArea\'>PutWorksheetFormatConditionArea</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}/area,PUT,Fügen Sie einen Zellbereich für die Formatbedingung im Arbeitsblatt hinzu.,<a href=\'https://apireference.aspose.cloud/cells/#/ConditionalFormattings/PutWorksheetFormatConditionArea\'>PutWorksheetFormatConditionArea</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="index,integer,Ruft das bedingte Formatierungselement am angegebenen Index ab." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Index, Ganzzahl, Ruft das Element der bedingten Formatierung am angegebenen Index ab." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="cellArea,string,Fügt einen bedingt formatierten Zellbereich hinzu." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="cellArea, string, Fügt einen bedingt formatierten Zellbereich hinzu." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/ConditionalFormattingsController/PutWorksheetFormatConditionArea\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

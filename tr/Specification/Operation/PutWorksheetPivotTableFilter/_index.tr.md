@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/putworksheetpivottablefilter/
 description: PivotTable'a pivot filtresi ekleme
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PutWorksheetPivotTableFilter
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetPivotTableFilter" >}}

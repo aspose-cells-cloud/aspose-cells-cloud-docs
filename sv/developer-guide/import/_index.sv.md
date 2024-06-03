@@ -7,6 +7,7 @@ aliases: [/import-data-in-excel-worksheet-without-using-storage/]
 keywords: Import data into Excel files
 description: Aspose.Cells Cloud REST API stödjer import av data till Excel filer. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 31
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Import
 ---
 Att importera data till en Excel-fil är en komplex process. Många faktorer bidrar till komplexiteten och bör därför beaktas under exportprocessen. Möjligheten att importera typer av format och typer av data till filen med en exakt professionell kvalitet är en toppfunktion i Aspose.Cells Cloud.
 
@@ -26,7 +27,7 @@ Följande API:er för att importera data till en Excel-fil eller flera Excel-fil
 | Parameternamn| Typ| Sökväg/Frågesträng/HTTPBody|Beskrivning|
 |:- |:- |:- |:- |
 | fil| fil| formData| Fil att ladda upp|
-| Importalternativ| Importalternativ|HTTPBody| IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/Picture|
+| Importalternativ| Importalternativ| HTTPBody| IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/Picture|
 
 ### Med användning av förvaring
 
@@ -83,7 +84,7 @@ Följande API:er för att importera data till en Excel-fil eller flera Excel-fil
   <tbody>
     <tr> <td>Första raden</td><td>int</td> <td></td> </tr>
     <tr> <td>Första kolumnen</td><td>int</td><td></td></tr>
-    <tr><td>Är Vertikal</td><td>Sträng</td><td>sant falskt.</td></tr>
+    <tr><td>IsVertikal</td><td>Sträng</td><td>sant falskt.</td></tr>
     <tr><td>Data</td><td> Sträng[]</td> <td></td></tr>
     <tr> <td>Destinationsarbetsblad</td><td> Sträng</td><td> Namn på målarbetsblad.</td></tr>
     <tr><td>IsInsert</td><td>Sträng</td><td>sant falskt.</td></tr>
@@ -151,7 +152,7 @@ Följande API:er för att importera data till en Excel-fil eller flera Excel-fil
   <tbody>
     <tr> <td>Första raden</td><td>int</td> <td></td> </tr>
     <tr> <td>Första kolumnen</td><td>int</td><td></td></tr>
-    <tr><td>Är Vertikal</td><td>Sträng</td><td>sant falskt.</td></tr>
+    <tr><td>IsVertikal</td><td>Sträng</td><td>sant falskt.</td></tr>
     <tr><td>Data</td><td> Heltal[]</td> <td></td></tr>
     <tr> <td>Destinationsarbetsblad</td><td> Sträng</td><td> Namn på målarbetsblad.</td></tr>
     <tr><td>IsInsert</td><td>Sträng</td><td>sant falskt.</td></tr>
@@ -169,7 +170,7 @@ Följande API:er för att importera data till en Excel-fil eller flera Excel-fil
   <tbody>
     <tr> <td>Första raden</td><td>int</td> <td></td> </tr>
     <tr> <td>Första kolumnen</td><td>int</td><td></td></tr>
-    <tr><td>Är Vertikal</td><td>Sträng</td><td>sant falskt.</td></tr>
+    <tr><td>IsVertikal</td><td>Sträng</td><td>sant falskt.</td></tr>
     <tr><td>Data</td><td> Dubbel[]</td> <td></td></tr>
     <tr> <td>Destinationsarbetsblad</td><td> Sträng</td><td> Namn på målarbetsblad.</td></tr>
     <tr><td>IsInsert</td><td>Sträng</td><td>sant falskt.</td></tr>

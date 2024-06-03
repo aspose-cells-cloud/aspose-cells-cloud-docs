@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/getworksheetsparklinegroup/
 description: استرداد وصف مجموعة الخطوط المميزة في ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، GetWorksheetSparklineGroup
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetSparklineGroup" >}}

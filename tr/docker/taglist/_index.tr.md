@@ -5,6 +5,7 @@ type: docs
 url: /tr/docker/tag-list/
 description: Desteklenen Platformlar
 weight: 30
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, TagList
 ---
 ##  Windows Sunucu 2016 Görselleri ##
 

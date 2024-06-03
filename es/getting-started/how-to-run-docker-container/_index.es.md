@@ -6,8 +6,9 @@ url: /es/getting-started/how-to-run-docker-container/
 aliases: [/how-to-run-docker-container/]
 description: Cómo ejecutar el contenedor en la nube Docker Aspose.Cells. Aspose.Cells La nube admite Excel para crear, convertir, fusionar, dividir, proteger, operaciones de objetos internos, etc.
 weight: 100
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Cómo ejecutar el contenedor Docker
 ---
- El**Estibador** La tecnología está diseñada para automatizar la implementación de las aplicaciones mediante el uso de contenedores livianos. Los desarrolladores pueden utilizar un**Contenedor acoplable** para concluir una aplicación con todas sus bibliotecas y dependencias e implementar todo como un solo paquete.
+ El**Estibador**La tecnología está diseñada para automatizar la implementación de las aplicaciones mediante el uso de contenedores livianos. Los desarrolladores pueden utilizar un**Contenedor acoplable** para concluir una aplicación con todas sus bibliotecas y dependencias e implementar todo como un solo paquete.
 
  Aspose.Cells El equipo de la nube ha publicado Docker Container en[Centro acoplable](https://hub.docker.com/r/aspose/cells-cloud) para facilitar a los usuarios de Docker. Las siguientes secciones le guiarán sobre cómo ejecutar comandos de Docker o escribir la configuración en un archivo Yaml para la herramienta de redacción de Docker.
 
@@ -33,7 +34,7 @@ Si se omiten los parámetros de "Licencia", la aplicación funcionará en modo d
 
 ### Ejecute un contenedor Docker usando la línea de comando
 
- Simplemente puede ejecutar el siguiente comando de la ventana acoplable después de extraer el contenedor de[Centro acoplable](https://href.li/?https://hub.docker.com/r/aspose/cells-cloud).
+Simplemente puede ejecutar el siguiente comando de la ventana acoplable después de extraer el contenedor de[Centro acoplable](https://href.li/?https://hub.docker.com/r/aspose/cells-cloud).
 
 ```JAVA
 docker run   -e "LicensePublicKey=public_key" -e "LicensePrivateKey=private_key" -v c:/data:c:/data  -v C:/Windows/Fonts:C:/Windows/Fonts -p 80:5000   aspose/cells-cloud

@@ -8,6 +8,7 @@ aliases: [/remove-a-date-filter/,/autofilter/delete-a-date-filter/]
 weight: 100
 keywords: Delete a date filter on an Excel worksheet
 description: Il cloud Aspose.Cells API supporta l'eliminazione di un filtro data su un foglio di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Elimina un filtro data
 ---
 Questo REST API indica di eliminare un filtro data su un foglio di lavoro Excel.
             

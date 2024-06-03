@@ -3,24 +3,25 @@ title: GetFoote
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/getfooter/
-description: Rufen Sie die Beschreibung der Seitenfußzeile im Arbeitsblatt ab
+description: Abrufen der Seitenfußzeilenbeschreibung im Arbeitsblatt
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, GetFooter
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetFooter" >}}
 {{< blocks/products/cells/docs-title titlemsg="Retrieve page footer description in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pagesetup/footer,GET,Seitenfußbeschreibung im Arbeitsblatt abrufen.,<a href=\'https://apireference.aspose.cloud/cells/#/PageSetup/GetFooter \'>GetFooter</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pagesetup/footer,GET,Beschreibung der Seitenfußzeile im Arbeitsblatt abrufen.,<a href=\'https://apireference.aspose.cloud/cells/#/PageSetup/GetFooter\'>GetFooter</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/PageSetupController/GetFooter\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

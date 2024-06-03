@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postcopyworksheetcolumns/
 description: Copier les données des colonnes source vers les colonnes de destination dans la feuille de calcul
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostCopyWorksheetColumns
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostCopyWorksheetColumns" >}}

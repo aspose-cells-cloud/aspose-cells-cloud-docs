@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/getworkbook/
 description: استرداد المصنفات في أشكال مختلفة
+kwords: Excel، Office، جدول البيانات، Cloud REST API، GetWorkbook
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorkbook" >}}
@@ -18,7 +19,7 @@ weight: 50
      {{< blocks/products/cells/docs-Parameter-content columns="الاسم، السلسلة، اسم الملف." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="اسم المعلمة، النوع، الوصف" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="تنسيق، سلسلة، تنسيق التحويل (CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/076173) 481/ MD[تخفيض السعر]/الأرقام)." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="تنسيق، سلسلة، تنسيق التحويل (CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/0761) 73481/ MD[تخفيض السعر]/الأرقام)." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="كلمة المرور، سلسلة، كلمة المرور اللازمة لفتح ملف Excel." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="isAutoFit,boolean,يحدد ما إذا كان سيتم ضبط صفوف المصنف على الاحتواء التلقائي أم لا." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="OnlySaveTable,boolean,يحدد ما إذا كان سيتم حفظ بيانات الجدول فقط أم لا. استخدم pdf فقط للتفوق." >}} 

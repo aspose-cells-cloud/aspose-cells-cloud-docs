@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/getworksheetcellsrangevalue/
 description: استرداد قيم الخلايا ضمن النطاق المحدد
+kwords: Excel، Office، جدول البيانات، Cloud REST API، GetWorksheetCellsRangeValue
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetCellsRangeValue" >}}

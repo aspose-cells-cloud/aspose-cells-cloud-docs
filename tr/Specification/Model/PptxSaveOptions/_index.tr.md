@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/model/pptxsaveoptions/
 description: "Aspose.Cells Bulut modeli spesifikasyonu: PptxSaveOptions. Açma, oluşturma, düzenleme, bölme, birleştirme, karşılaştırma ve dönüştürme gibi özelliklerle Excel ve diğer elektronik tablo belgelerini zahmetsizce yönetin"
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PptxSaveOptions
 weight: 50
 ---
 ## **pptxKaydetmeSeçenekleri**
@@ -12,9 +13,9 @@ weight: 50
 
 | Mülkiyet adı| Emlak Tipi| Geçersiz kılınabilir| Sadece oku| Varsayılan değer| Tanım|
 |:- |:- |:- |:- |:- |:- |
-| Gizli Satırları Yoksay| Boolean| Doğru| YANLIŞ|||
-| AyarlamaFontSizeForRowType| Sicim| Doğru| YANLIŞ|||
-| Dışa Aktarma Görünümü Türü| Sicim| Doğru| YANLIŞ|||
+| Gizli Satırları Yoksay| Boolean| Doğru| YANLIŞ|| Gizli satırları yoksay|
+| AyarlamaFontSizeForRowType| Sicim| Doğru| YANLIŞ|| Satır türü için yazı tipi boyutunu ayarlayın|
+| Dışa Aktarma Görünümü Türü| Sicim| Doğru| YANLIŞ|| PowerPoint'e dışa aktarırken görüntü türünü alır ve ayarlar. Varsayılan dışa aktarma türü yazdırma olarak çalışmaktadır.|
 | Varsayılan yazı tipi| Sicim| Doğru| YANLIŞ|||
 | CheckWorkbookDefaultYazı Tipi| Boolean| Doğru| YANLIŞ|||
 | Yazı Tipi Uyumluluğunu Kontrol Edin| Boolean| Doğru| YANLIŞ|||
@@ -31,7 +32,7 @@ weight: 50
 | VarsayılanDilDüzenle| Sicim| Doğru| YANLIŞ|||
 | EmfRenderSetting| Sicim| Doğru| YANLIŞ|||
 | Alanları Birleştir| Boolean| Doğru| YANLIŞ|||
-|DışAdları Sırala| Boolean| Doğru| YANLIŞ|||
+| DışAdları Sırala| Boolean| Doğru| YANLIŞ|||
 | GüncellemeSmartArt| Boolean| Doğru| YANLIŞ|||
 | Formatı Kaydet| Sicim| Doğru| YANLIŞ|||
 | Önbelleğe Alınmış DosyaKlasörü| Sicim| Doğru| YANLIŞ|||
@@ -39,7 +40,8 @@ weight: 50
 | Dizin Oluştur| Boolean| Doğru| YANLIŞ|||
 | HTTPSıkıştırmayı Etkinleştir| Boolean| Doğru| YANLIŞ|||
 | Grafik Önbelleğini Yenile| Boolean| Doğru| YANLIŞ|||
-|SıralamaAdları| Boolean| Doğru| YANLIŞ|||
+| SıralamaAdları| Boolean| Doğru| YANLIŞ|||
 | Birleştirilmiş Alanları Doğrula| Boolean| Doğru| YANLIŞ|||
 
-**Ebeveyn adı** : (Sayfalandırılmış Kaydetme Seçenekleri)[sayfalandırılmış kaydetme seçenekleri]
+**Ebeveyn adı** : [Sayfalandırılmış Kaydetme Seçenekleri](/specification/model/paginatedsaveoptions)
+

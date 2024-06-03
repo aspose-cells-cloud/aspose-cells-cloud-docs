@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/putworksheetcolorfilter/
 description: Agregar un filtro de color en la hoja de trabajo
+kwords: Excel, Office, Hoja de cálculo, Cloud REST API, PutWorksheetColorFilter
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetColorFilter" >}}

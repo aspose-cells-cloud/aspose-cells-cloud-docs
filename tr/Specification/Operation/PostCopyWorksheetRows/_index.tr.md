@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/postcopyworksheetrows/
 description: Çalışma sayfasındaki belirli satırların tamamındaki verileri ve biçimleri kopyalayın
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PostCopyWorksheetRows
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostCopyWorksheetRows" >}}

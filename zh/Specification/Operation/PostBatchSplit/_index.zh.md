@@ -1,21 +1,22 @@
 ﻿---
-title: 后批分割
+title: 后批处理
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/postbatchsplit/
-description: 批量拆分满足特定匹配条件的文件
+description: 批量分割符合特定匹配条件的文件
+kwords: Excel，Office，电子表格，云 REST API，PostBatchSplit
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostBatchSplit" >}}
 {{< blocks/products/cells/docs-title titlemsg="Batch splitting files that meet specific matching conditions." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/batch/split,POST,批量拆分满足特定匹配条件的文件。,<a href=\'https://apireference.aspose.cloud/cells/#/Batch/PostBatchSplit\'>PostBatchSplit</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/batch/split,POST,批量拆分符合特定匹配条件的文件。,<a href=\'https://apireference.aspose.cloud/cells/#/Batch/PostBatchSplit\'>PostBatchSplit</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns=" batchSplitRequest,class:batchsplitrequest,BatchSplitRequest 批量分割文件请求。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns=" batchSplitRequest,class:batchsplitrequest,BatchSplitRequest 批量拆分文件请求。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

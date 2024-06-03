@@ -8,6 +8,7 @@ aliases: [/copy-range-in-a-worksheet-with-paste-options/]
 keywords: Copy a range in an Excel worksheet with paste options
 description: Aspose.Cells Cloud REST API, Excel çalışma sayfasındaki bir aralığın yapıştırma seçenekleriyle kopyalanmasını destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 20
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Yapıştırma Seçenekli Çalışma Sayfasındaki Kopyalama Aralığı
 ---
 Bu REST API, çalışma sayfasındaki aralığın Excel çalışma sayfasına kopyalanacağını belirtir.
  
@@ -24,7 +25,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges
 |:- |:- |:- |:- |
 | isim| sicim| yol| çalışma kitabı adı|
 | sayfaAdı| sicim| yol| çalışma sayfası adı|
-| aralıkİşlet|| vücut|veri kopyalama,kopyalama stili,kopyalama,kopyalama değeri|
+| aralıkİşlet|| vücut| veri kopyalama,kopyalama stili,kopyalama,kopyalama değeri|
 | dosya| sicim| sorgu| Çalışma kitabı klasörü.|
 | depolamaAdı| sicim| sorgu| depolama adı.|
  

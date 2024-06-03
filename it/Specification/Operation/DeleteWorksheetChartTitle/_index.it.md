@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/deleteworksheetcharttitle/
 description: Nascondi il titolo del grafico nel foglio di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, EliminaWorksheetChartTitle
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetChartTitle" >}}

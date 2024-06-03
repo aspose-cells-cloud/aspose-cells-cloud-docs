@@ -8,8 +8,9 @@ aliases: [/delete-horizontal-page-break-inside-worksheet/]
 keywords: Delete a page break in an Excel worksheet
 description: Aspose.Cells Cloud REST API, Excel çalışma sayfasındaki sayfa sonunun silinmesini destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 50
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Yatay sayfa sonunu sil
 ---
-Bu REST API, `horizontal` sayfa sonunun silineceğini belirtir.
+ Bu REST API, `horizontal` sayfa sonunun silineceğini belirtir.
  
 ## RSET API
  

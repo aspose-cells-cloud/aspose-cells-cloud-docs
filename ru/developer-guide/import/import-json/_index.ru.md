@@ -7,6 +7,7 @@ url: /ru/import/json/
 keywords: Import Json data into Excel
 description: Aspose.Cells Cloud REST API поддерживает импорт данных строкового массива в файлы Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 40
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, импорт данных Json в Excel
 ---
 Этот REST API `import json data` в рабочий лист Excel.
 
@@ -29,10 +30,10 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/importjson
 | имя| нить| Имя книги|
 | импортJsonRequest| сорт| Импортируйте json-запрос.|
 | пароль| нить| Пароль рабочей книги.|
-| папка| нить|Оригинальная папка с рабочей тетрадью.|
+| папка| нить| Оригинальная папка с рабочей тетрадью.|
 | имя_хранилища| нить| Имя хранилища.|
 | outPath| нить| Путь к выходному файлу.|
-| outStorageName| нить| Имя хранилища для выходного файла.|
+| outStorageName| нить|Имя хранилища для выходного файла.|
 | проверкаExcelRestriction| нить| Проверьте ограничение Excel.|
 
 

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/deletepivottablefield/
 description: Ta bort ett pivotfält i pivottabellen
+kwords: Excel, Office, Kalkylblad, Cloud REST API, DeletePivotTableField
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeletePivotTableField" >}}

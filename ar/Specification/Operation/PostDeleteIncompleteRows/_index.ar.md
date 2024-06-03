@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postdeleteincompleterows/
 description: يتم استخدام حذف الصفوف غير المكتملة من ملفات جداول البيانات بشكل أساسي لإزالة الصفوف غير المكتملة في الجداول والنطاقات
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostDeleteIncompleteRows
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostDeleteIncompleteRows" >}}

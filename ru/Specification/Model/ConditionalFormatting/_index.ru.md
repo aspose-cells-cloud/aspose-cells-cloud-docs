@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/model/conditionalformatting/
 description: "Aspose.Cells Спецификация облачной модели: условное форматирование. Легко обрабатывайте Excel и другие документы электронных таблиц с помощью таких функций, как открытие, создание, редактирование, разделение, слияние, сравнение и преобразование."
+kwords: Excel, Office, электронная таблица, Cloud REST API, условное форматирование
 weight: 50
 ---
 ## **условное форматирование**
@@ -16,4 +17,5 @@ weight: 50
 | Условия формата| Контейнер| Истинный| ЛОЖЬ|||
 | связь| Класс:Ссылка| Истинный| ЛОЖЬ|||
 
-**Имя родителя** : (LinkElement)[linkelement]
+**Имя родителя** : [СсылкаЭлемент](/specification/model/linkelement)
+

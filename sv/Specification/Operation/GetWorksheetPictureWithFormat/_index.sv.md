@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/getworksheetpicturewithformat/
 description: Hämta en bild efter nummer i arbetsbladet
+kwords: Excel, Office, Spreadsheet, Cloud REST API, GetWorksheetPictureWithFormat
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetPictureWithFormat" >}}

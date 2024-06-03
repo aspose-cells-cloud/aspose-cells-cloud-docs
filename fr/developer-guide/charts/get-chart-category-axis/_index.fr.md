@@ -3,6 +3,7 @@ title:  Obtenir la catégorie de graphique Axi
 type: docs
 url: /fr/charts/category-axis/get/
 weight: 60
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, obtenir l'axe de catégorie de graphique
 ---
 Ce REST API indique Obtenir l'axe de la catégorie du graphique
  
@@ -15,7 +16,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{cha
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin||
 | Nom de la feuille| chaîne| chemin||

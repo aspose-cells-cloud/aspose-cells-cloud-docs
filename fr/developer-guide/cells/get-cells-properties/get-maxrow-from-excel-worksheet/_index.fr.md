@@ -3,6 +3,7 @@ title: Obtenez MaxRow à partir du Excel Workshee
 type: docs
 url: /fr/get-maxrow-from-excel-worksheet/
 weight: 40
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, obtenir MaxRow à partir de la feuille de calcul Excel
 ---
 Ce REST API indique que les spectacles obtiennent un `maxrow` dans un fichier Excel lorsque le paramètre `cellOrMethodName` est `maxrow`.
 

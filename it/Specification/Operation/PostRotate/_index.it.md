@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/postrotate/
 description: Ruota righe, colonne o altri oggetti nei file Excel e salvali in vari formati
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PostRuota
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostRotate" >}}

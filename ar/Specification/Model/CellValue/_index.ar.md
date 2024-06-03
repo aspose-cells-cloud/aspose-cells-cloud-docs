@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/model/cellvalue/
 description: "Aspose.Cells مواصفات النموذج السحابي: CellValue. تعامل بسهولة مع Excel ومستندات جداول البيانات الأخرى التي تحتوي على ميزات مثل الفتح والتوليد والتحرير والتقسيم والدمج والمقارنة والتحويل"
+kwords: Excel, Office, جدول البيانات, Cloud REST API, CellValue
 weight: 50
 ---
 ## **cellValue**
 
- 
+ يمثل قيمة الخلية والنوع المقابل.
 
 | اسم الخاصية| نوع الملكية| لاغية| يقرأ فقط| القيمة الافتراضية| وصف|
 |:- |:- |:- |:- |:- |:- |

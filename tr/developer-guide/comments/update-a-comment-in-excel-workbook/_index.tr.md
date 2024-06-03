@@ -6,6 +6,7 @@ aliases: [/update-a-comment-in-excel-workbook/]
 keywords: REST API, spreadsheets, excel, update commen
 description: "Cells.Cloud API, Excel için çalışır: yorumu güncelle"
 weight: 30
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Güncelleme
 ---
 Bu REST API, Güncelleme çalışma sayfasının hücre yorumunu gösterir.
  

@@ -1,8 +1,9 @@
 ﻿---
-title: Hämta diagram andra kategori Axi
+title:  Hämta diagram andra kategori Axi
 type: docs
 url: /sv/charts/second-category-axis/get/
 weight: 60
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Get Chart Second Category Axis
 ---
  Denna REST API indikerar Hämta diagrams andra kategoriaxel.
  

@@ -2,9 +2,10 @@
 title: Operasyon
 second_title: Aspose.Cells Cloud Documen
 type: docs
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API , İşlem Açıklaması
 weight: 50
 ---
-- [PostAnalizExcel](postanalyzeexcel) : Excel dosyasındaki verilerin iş analizini gerçekleştirin.
+- [PostAnalizExcel](postanalyzeexcel) : Excel dosyalarındaki verilerin iş analizini gerçekleştirin.
 - [GetWorksheetOtomatik Filtre](getworksheetautofilter) : Otomatik filtrelerin açıklamasını bir çalışma sayfasından alın.
 - [PutWorksheetDateFilter](putworksheetdatefilter) : Çalışma sayfasına bir tarih filtresi uygulayın.
 - [PutWorksheetFilter](putworksheetfilter) : Çalışma sayfasındaki bir sütun için filtre ekleyin.
@@ -127,6 +128,7 @@ weight: 50
 - [PostWorkbookDataFill](postworkbookdatafill) Elektronik tablo dosyaları için veri doldurma, öncelikle tablolardaki ve aralıklardaki boş verileri doldurmak için kullanılır.
 - [Veri Doldurma Sonrası](postdatafill) Elektronik tablo dosyaları için veri doldurma, öncelikle tablolardaki ve aralıklardaki boş verileri doldurmak için kullanılır.
 - [GönderiSilEksikSatırlar](postdeleteincompleterows) : Elektronik tablo dosyalarının eksik satırlarını silmek, esas olarak tablolardaki ve aralıklardaki eksik satırları ortadan kaldırmak için kullanılır.
+- [Veri SonrasıDönüşüm](postdatatransformation) : Elektronik tablo verilerini dönüştürmek, esas olarak sütunları döndürmek ve sütunları özetlemek için kullanılır.
 - [GetWorksheetKöprüler](getworksheethyperlinks) : Çalışma sayfasındaki köprülerin açıklamalarını alın.
 - [GetWorksheetHyperlink](getworksheethyperlink) : Çalışma sayfasındaki dizine göre köprü açıklamasını alın.
 - [Çalışma Sayfası Köprüsünü Sil](deleteworksheethyperlink) : Çalışma sayfasındaki köprüyü dizine göre silin.
@@ -134,7 +136,7 @@ weight: 50
 - [PutWorksheetHyperlink](putworksheethyperlink) : Çalışma sayfasına köprü ekleyin.
 - [Çalışma SayfasıKöprülerini Sil](deleteworksheethyperlinks) : Çalışma sayfasındaki tüm köprüleri silin.
 - [Montaj Sonrası](postassemble) : Çeşitli formatlarda dosyalar oluşturmak için veri dosyalarını şablon dosyalarıyla birleştirin.
-- [PostCompress](postcompress) : Dosyaları sıkıştırın ve çeşitli formatlarda hedef dosyalar oluşturun; desteklenen dosya formatları Xls, Xlsx, Xlsm, Xlsb, Ods ve daha fazlasını içerir.
+- [PostCompress](postcompress) Dosyaları sıkıştırın ve çeşitli formatlarda hedef dosyalar oluşturun; desteklenen dosya formatları Xls, Xlsx, Xlsm, Xlsb, Ods ve daha fazlasını içerir.
 - [Birleştirme Sonrası](postmerge) : Çalışma sayfasındaki hücreleri birleştirin.
 - [PostBölme](postsplit) : Excel elektronik tablo dosyasını çalışma sayfalarına göre bölün ve çeşitli formatlarda çıktı dosyaları oluşturun.
 - [Mesaj Arama](postsearch) : Excel dosya içinde belirtilen metni arayın.
@@ -144,8 +146,8 @@ weight: 50
 - [PostClearObjects](postclearobjects) : Excel dosyalarındaki dahili öğeleri temizleyin ve çeşitli formatlarda çıktı dosyaları oluşturun.
 - [GönderiTersine Çevir](postreverse) : Excel dosyalarındaki satırları veya sütunları ters çevirin ve çeşitli formatlarda çıktı dosyaları oluşturun.
 - [Onarım Sonrası](postrepair) : Anormal dosyaları onarın ve çeşitli formatlarda dosyalar oluşturun.
-- [Sonradan Döndür](postrotate) : Excel dosyalarındaki satırları, sütunları veya diğer nesneleri döndürün ve bunları çeşitli formatlarda kaydedin.
-- [GönderiMeta Verileri](postmetadata) Excel dosyasındaki belge özelliklerini güncelleyin ve bunları çeşitli formatlarda kaydedin.
+- [Sonradan Döndür](postrotate) Excel dosyalarındaki satırları, sütunları veya diğer nesneleri döndürün ve bunları çeşitli formatlarda kaydedin.
+- [GönderiMeta Verileri](postmetadata) : Excel dosyasındaki belge özelliklerini güncelleyin ve bunları çeşitli formatlarda kaydedin.
 - [Meta Verileri Al](getmetadata) : Hücre belge özelliklerini alın.
 - [Meta Verileri Sil](deletemetadata) : Excel dosyasındaki hücrelerin belge özelliklerini silin ve bunları çeşitli formatlarda kaydedin.
 - [GetWorksheetListObjects](getworksheetlistobjects) : Çalışma sayfasındaki ListObjects'in açıklamalarını alın.
@@ -155,8 +157,8 @@ weight: 50
 - [SilmeÇalışma SayfasıListObjesi](deleteworksheetlistobject) : Çalışma sayfasındaki liste nesnesini dizine göre silin.
 - [PostWorksheetListObject](postworksheetlistobject) : Çalışma sayfasındaki liste nesnesini dizine göre güncelleyin.
 - [PostWorksheetListObjectConvertToRange](postworksheetlistobjectconverttorange) : Liste nesnesini çalışma sayfasındaki aralığa dönüştürün.
-- [PostWorksheetListObjectSummarizeWithPivotTable](postworksheetlistobjectsummarizewithpivottable) : Çalışma sayfasında liste nesnesi içeren bir pivot tablo oluşturun.
-- [PostWorksheetListObjectSortTable](postworksheetlistobjectsorttable) Çalışma sayfasındaki liste nesnesini sıralayın.
+- [PostWorksheetListObjectSummarizeWithPivotTable](postworksheetlistobjectsummarizewithpivottable) Çalışma sayfasında liste nesnesi içeren bir pivot tablo oluşturun.
+- [PostWorksheetListObjectSortTable](postworksheetlistobjectsorttable) : Çalışma sayfasındaki liste nesnesini sıralayın.
 - [PostWorksheetListObjectRemoveDuplicates](postworksheetlistobjectremoveduplicates) : Liste nesnesindeki kopyaları kaldırın.
 - [PostWorksheetListObjectInsertSlicer](postworksheetlistobjectinsertslicer) : Liste nesnesi için dilimleyiciyi ekleyin.
 - [PostWorksheetListColumn](postworksheetlistcolumn) : Liste nesnesindeki liste sütununu güncelleyin.
@@ -167,8 +169,8 @@ weight: 50
 - [SilmeÇalışma SayfasıOleObject](deleteworksheetoleobject) : Çalışma sayfasındaki bir OLE nesnesini silin.
 - [Güncelleme SonrasıÇalışma SayfasıOleObject](postupdateworksheetoleobject) : Çalışma sayfasındaki bir OLE nesnesini güncelleyin.
 - [PutWorksheetOleObject](putworksheetoleobject) : Çalışma sayfasına bir OLE nesnesi ekleyin.
-- [DikeyPageBreaks'i Alın](getverticalpagebreaks) : Çalışma sayfasındaki dikey sayfa sonlarının açıklamalarını alın.
-- [Yatay Sayfa Sonlarını Getir](gethorizontalpagebreaks) Çalışma sayfasındaki yatay sayfa sonlarının açıklamalarını alın.
+- [DikeyPageBreaks'i Alın](getverticalpagebreaks) Çalışma sayfasındaki dikey sayfa sonlarının açıklamalarını alın.
+- [Yatay Sayfa Sonlarını Getir](gethorizontalpagebreaks) : Çalışma sayfasındaki yatay sayfa sonlarının açıklamalarını alın.
 - [GetVerticalPageBreak](getverticalpagebreak) : Çalışma sayfasında dikey sayfa sonu açıklamasını alın.
 - [Yatay Sayfa Sonu Getir](gethorizontalpagebreak) : Çalışma sayfasında yatay sayfa sonu açıklamasını alın.
 - [PutVerticalPageBreak](putverticalpagebreak) : Çalışma sayfasına dikey sayfa sonu ekleyin.
@@ -179,9 +181,9 @@ weight: 50
 - [Yatay Sayfa Sonunu Sil](deletehorizontalpagebreak) : Çalışma sayfasındaki yatay sayfa sonunu silin.
 - [GetPageSetup](getpagesetup) : Çalışma sayfasındaki sayfa yapısı açıklamasını alın.
 - [Sayfa Sonrası Kurulumu](postpagesetup) : Çalışma sayfasındaki sayfa düzenini güncelleyin.
-- [ÜstbilgiAltbilgiyi Sil](deleteheaderfooter) : Çalışma sayfasında üstbilgi ve altbilgiyi temizleyin.
+- [ÜstbilgiAltbilgiyi Sil](deleteheaderfooter) Çalışma sayfasında üstbilgi ve altbilgiyi temizleyin.
 - [GetHeader](getheader) : Çalışma sayfasındaki sayfa başlığı açıklamasını alın.
-- [Gönderi Başlığı](postheader) Çalışma sayfasındaki sayfa başlığını güncelleyin.
+- [Gönderi Başlığı](postheader) : Çalışma sayfasındaki sayfa başlığını güncelleyin.
 - [Altbilgiyi Al](getfooter) : Çalışma sayfasındaki sayfa altbilgi açıklamasını alın.
 - [Yazı Altbilgisi](postfooter) : Çalışma sayfasındaki sayfa altbilgisini güncelleyin.
 - [PostFitWideToPages](postfitwidetopages) : Yaprağa yazdırıldığında sayfanın geniş sığacağı ölçeği ayarlayın.
@@ -191,10 +193,10 @@ weight: 50
 - [PutWorksheetAddPicture](putworksheetaddpicture) : Çalışma sayfasına yeni bir resim ekleyin.
 - [Çalışma SonrasıResim](postworksheetpicture) : Çalışma sayfasındaki bir resmi dizine göre güncelleyin.
 - [Çalışma Sayfası Resmini Sil](deleteworksheetpicture) : Çalışma sayfasındaki bir resim nesnesini dizine göre silin.
-- [Çalışma SayfasıResimlerini Sil](deleteworksheetpictures) : Çalışma sayfasındaki tüm resimleri silin.
+- [Çalışma SayfasıResimlerini Sil](deleteworksheetpictures) Çalışma sayfasındaki tüm resimleri silin.
 - [GetWorksheetPivotTable'lar](getworksheetpivottables) : Çalışma sayfasındaki pivot tabloların açıklamalarını alın.
-- [GetWorksheetPivotTable](getworksheetpivottable) Çalışma sayfasındaki dizine göre PivotTable bilgilerini alın.
-- [GetPivotTableField](getpivottablefield) : PivotTable'daki pivot alanların açıklamalarını alın.
+- [GetWorksheetPivotTable](getworksheetpivottable) : Çalışma sayfasındaki dizine göre PivotTable bilgilerini alın.
+- [GetPivotTableField](getpivottablefield) : PivotTable'daki pivot alanlarının açıklamalarını alın.
 - [GetWorksheetPivotTableFilters](getworksheetpivottablefilters) : Çalışma sayfasında PivotTable filtrelerini alır.
 - [GetWorksheetPivotTableFilter](getworksheetpivottablefilter) : Çalışma sayfasındaki PivotTable filtrelerini alın.
 - [PutWorksheetPivotTable](putworksheetpivottable) : Çalışma sayfasına bir PivotTable ekleyin.
@@ -217,7 +219,7 @@ weight: 50
 - [PutDocumentProperty](putdocumentproperty) : Bir Excel özelliği ayarlayın veya ekleyin.
 - [GetDocumentProperty](getdocumentproperty) : Excel özelliğini ada göre alın.
 - [Belge Özelliğini Sil](deletedocumentproperty) : Bir Excel özelliğini silin.
-- [Belge Özelliklerini Sil](deletedocumentproperties) : Tüm özel belge özelliklerini silin ve yerleşik özellikleri sıfırlayın.
+- [Belge Özelliklerini Sil](deletedocumentproperties) Tüm özel belge özelliklerini silin ve yerleşik özellikleri sıfırlayın.
 - [PostDijitalİmza](postdigitalsignature) : Excel dosya dijital imza.
 - [GönderiŞifrelemeÇalışma Kitabı](postencryptworkbook) : Excel Şifreleme.
 - [Şifre ÇözmeÇalışma Kitabını Sil](deletedecryptworkbook) : Excel dosyaların şifresini çözme.
@@ -230,9 +232,9 @@ weight: 50
 - [PostProtect](postprotect) : Excel dosya şifreleme.
 - [GönderiÇalışma SayfasıHücrelerAralıklarKopya](postworksheetcellsrangescopy) : İçeriği kaynak aralıktan çalışma sayfasındaki hedef aralığa kopyalayın.
 - [Çalışma Sayfası SonrasıHücrelerAralıkBirleştirme](postworksheetcellsrangemerge) : Bir dizi hücreyi tek bir hücrede birleştirin.
-- [Çalışma Sayfası SonrasıHücrelerAralıkBirleştirmeyi Kaldır](postworksheetcellsrangeunmerge) : Bu aralıktaki birleştirilmiş hücreleri ayır.
+- [Çalışma Sayfası SonrasıHücrelerAralıkBirleştirmeyi Kaldır](postworksheetcellsrangeunmerge) Bu aralıktaki birleştirilmiş hücreleri ayır.
 - [PostWorksheetCellsRangeStyle](postworksheetcellsrangestyle) : Belirtilen aralık için stili ayarlayın.
-- [GetWorksheetCellsRangeValue](getworksheetcellsrangevalue) Belirtilen aralıktaki hücrelerin değerlerini alın.
+- [GetWorksheetCellsRangeValue](getworksheetcellsrangevalue) : Belirtilen aralıktaki hücrelerin değerlerini alın.
 - [PostWorksheetCellsRangeValue](postworksheetcellsrangevalue) : Aralığa bir değer atayın; gerekirse değer başka bir veri tipine dönüştürülecek ve hücrenin sayı formatı sıfırlanacaktır.
 - [PostWorksheetCellsRangeMoveTo](postworksheetcellsrangemoveto) : Geçerli aralığı hedef aralığa taşıyın.
 - [Çalışma Sayfası SonrasıHücrelerAralıkSıralama](postworksheetcellsrangesort) : Bir hücre aralığı etrafında veri sıralaması gerçekleştirin.
@@ -240,8 +242,8 @@ weight: 50
 - [GönderiÇalışma SayfasıHücrelerAralıkSütunGenişlik](postworksheetcellsrangecolumnwidth) : Belirtilen aralığın sütun genişliğini ayarlayın.
 - [PostWorksheetCellsRangeRowHeight](postworksheetcellsrangerowheight) : Aralığın satır yüksekliğini ayarlar.
 - [PutWorksheetCellsRange](putworksheetcellsrange) : Bir hücre aralığı ekleyin ve belirtilen kaydırma seçeneğine göre mevcut hücreleri kaydırın.
-- [Çalışma Sayfası Hücrelerini SilAralığı](deleteworksheetcellsrange) : Bir hücre aralığını silin ve belirtilen kaydırma seçeneğine göre mevcut hücreleri kaydırın.
-- [Çalışma Sayfası Şekillerini Al](getworksheetshapes) Çalışma sayfasındaki şekillerin açıklamalarını alın.
+- [Çalışma Sayfası Hücrelerini SilAralığı](deleteworksheetcellsrange) Bir hücre aralığını silin ve belirtilen kaydırma seçeneğine göre mevcut hücreleri kaydırın.
+- [Çalışma Sayfası Şekillerini Al](getworksheetshapes) : Çalışma sayfasındaki şekillerin açıklamalarını alın.
 - [GetWorksheetShape](getworksheetshape) : Çalışma sayfasındaki şeklin açıklamasını alın.
 - [Çalışma Sayfası Şeklini Koy](putworksheetshape) : Çalışma sayfasına bir şekil ekleyin.
 - [Çalışma Sayfası Şekillerini Sil](deleteworksheetshapes) : Çalışma sayfasındaki tüm şekilleri silin.
@@ -253,9 +255,9 @@ weight: 50
 - [GetWorksheetSparklineGroup](getworksheetsparklinegroup) : Çalışma sayfasındaki mini grafik grubunun açıklamasını alın.
 - [Çalışma SayfasıSparkline Gruplarını Sil](deleteworksheetsparklinegroups) : Çalışma sayfasındaki mini grafik gruplarını silin.
 - [Çalışma SayfasıSparklineGroup'u Sil](deleteworksheetsparklinegroup) : Çalışma sayfasındaki bir mini grafik grubunu silin.
-- [PutWorksheetSparklineGroup](putworksheetsparklinegroup) : Çalışma sayfasına bir mini grafik grubu ekleyin.
+- [PutWorksheetSparklineGroup](putworksheetsparklinegroup) Çalışma sayfasına bir mini grafik grubu ekleyin.
 - [Çalışma Sayfası SonrasıSparklineGroup](postworksheetsparklinegroup) : Çalışma sayfasında bir mini grafik grubunu güncelleyin.
-- [Çalıştırma SonrasıGörev](postruntask) Görevleri çalıştırın.
+- [Çalıştırma SonrasıGörev](postruntask) : Görevleri çalıştırın.
 - [GetWorkbookDefaultStyle](getworkbookdefaultstyle) : Çalışma kitabının varsayılan stilinin açıklamasını alın.
 - [GetWorkbookTextItems](getworkbooktextitems) : Çalışma kitabındaki metin öğelerini alın.
 - [GetWorkbookNames](getworkbooknames) : Çalışma kitabındaki adlandırılmış aralıkları alın.
@@ -267,15 +269,15 @@ weight: 50
 - [Çalışma Kitabının Adını Sil](deleteworkbookname) : Çalışma kitabındaki adlandırılmış bir aralığı silin.
 - [Çalışma Kitapları SonrasıBirleştirme](postworkbooksmerge) : Bir çalışma kitabını mevcut çalışma kitabıyla birleştirin.
 - [GönderiÇalışma KitaplarıMetinArama](postworkbookstextsearch) : Çalışma kitabında metin arayın.
-- [PostWorkbookTextDeğiştir](postworkbooktextreplace) : Çalışma kitabındaki metni değiştirin.
+- [PostWorkbookTextDeğiştir](postworkbooktextreplace) Çalışma kitabındaki metni değiştirin.
 - [PostWorkbookGetSmartMarkerResult](postworkbookgetsmartmarkerresult) : Akıllı işaretleyici işleme.
 - [PutWorkbookCreate](putworkbookcreate) : Farklı yöntemler kullanarak yeni bir çalışma kitabı oluşturun.
-- [Çalışma Sonrası Kitap Bölünmesi](postworkbooksplit) Çalışma kitabını belirli bir formatla bölün.
+- [Çalışma Sonrası Kitap Bölünmesi](postworkbooksplit) : Çalışma kitabını belirli bir formatla bölün.
 - [PostWorkbookHesaplaFormül](postworkbookcalculateformula) : Çalışma kitabındaki tüm formülleri hesaplayın.
 - [PostOtomatik SığdırÇalışma KitabıSatırlar](postautofitworkbookrows) : Çalışma kitabındaki satırları otomatik sığdır.
 - [PostOtomatik SığdırÇalışma KitabıSütunlar](postautofitworkbookcolumns) : Çalışma kitabındaki sütunları otomatik sığdır.
 - [GetWorkbookSettings](getworkbooksettings) : Çalışma kitabı ayarlarının açıklamalarını alın.
-- [Çalışma Kitabı SonrasıAyarlar](postworkbooksettings) : Çalışma kitabındaki ayarı güncelleyin.
+- [Çalışma Kitabı SonrasıAyarlar](postworkbooksettings) : Çalışma kitabındaki ayarı güncelleştirin.
 - [PutWorkbookArka Plan](putworkbookbackground) : Çalışma kitabındaki arka planı ayarlayın.
 - [Çalışma Kitabı Arka Planını Sil](deleteworkbookbackground) : Çalışma kitabındaki arka planı silin.
 - [Çalışma Kitabını KoySuİşaretleyici](putworkbookwatermarker) : Çalışma kitabında su işaretçisini ayarlayın.
@@ -283,7 +285,7 @@ weight: 50
 - [Çalışma Sayfalarını Al](getworksheets) : Bir çalışma kitabından çalışma sayfalarının açıklamasını alın.
 - [GetWorksheetWithFormat](getworksheetwithformat) : Çalışma kitabından çalışma sayfasını belirtilen biçimde alın.
 - [PutChangeVisibilityÇalışma Sayfası](putchangevisibilityworksheet) : Çalışma kitabındaki çalışma sayfasının görünürlüğünü değiştirin.
-- [PutActiveWorksheet](putactiveworksheet) Çalışma kitabında etkin çalışma sayfası dizinini ayarlayın.
+- [PutActiveWorksheet](putactiveworksheet) : Çalışma kitabında etkin çalışma sayfası dizinini ayarlayın.
 - [PutInsertNewWorksheet](putinsertnewworksheet) : Çalışma kitabına yeni bir çalışma sayfası ekleyin.
 - [PutAddNewWorksheet](putaddnewworksheet) : Çalışma kitabına yeni bir çalışma sayfası ekleyin.
 - [Çalışma Sayfasını Sil](deleteworksheet) : Çalışma kitabındaki bir çalışma sayfasını silin.
@@ -296,8 +298,8 @@ weight: 50
 - [GetWorksheetYorum](getworksheetcomment) : Çalışma sayfasındaki yorumun açıklamasını alın.
 - [PutWorksheetYorum](putworksheetcomment) : Çalışma sayfasına hücre yorumu ekleyin.
 - [PostWorksheetYorum](postworksheetcomment) : Çalışma sayfasındaki hücre yorumunu güncelleyin.
-- [Çalışma Sayfasını SilYorum](deleteworksheetcomment) : Çalışma sayfasındaki hücre yorumunu silin.
-- [Çalışma Sayfasını SilYorumlar](deleteworksheetcomments) Çalışma sayfasındaki tüm yorumları silin.
+- [Çalışma Sayfasını SilYorum](deleteworksheetcomment) Çalışma sayfasındaki hücre yorumunu silin.
+- [Çalışma Sayfasını SilYorumlar](deleteworksheetcomments) : Çalışma sayfasındaki tüm yorumları silin.
 - [GetWorksheetMergedCells](getworksheetmergedcells) : Çalışma sayfasında birleştirilmiş hücreleri alın.
 - [GetWorksheetMergedCell](getworksheetmergedcell) : Birleştirilmiş bir hücrenin açıklamasını çalışma sayfasındaki dizinine göre alın.
 - [GetWorksheetCalculateFormula](getworksheetcalculateformula) : Çalışma sayfasındaki formülü hesaplayın.
@@ -306,8 +308,8 @@ weight: 50
 - [PostWorksheetMetinDeğiştir](postworksheettextreplace) : Çalışma sayfasındaki eski metni yeni metinle değiştirin.
 - [Çalışma Sayfası SonrasıAralıkSıralama](postworksheetrangesort) : Çalışma sayfasındaki bir aralığı sıralayın.
 - [PostOtomatik SığdırÇalışma SayfasıSatır](postautofitworksheetrow) : Çalışma sayfasındaki bir satırı otomatik olarak sığdırın.
-- [PostOtomatik SığdırÇalışma SayfasıSatırlar](postautofitworksheetrows) : Çalışma sayfasındaki satırları otomatik sığdır.
-- [PostOtomatik SığdırÇalışma SayfasıSütunlar](postautofitworksheetcolumns) : Çalışma sayfasındaki sütunları otomatik sığdır.
+- [PostOtomatik SığdırmaÇalışma SayfasıSatırlar](postautofitworksheetrows) : Çalışma sayfasındaki satırları otomatik sığdır.
+- [PostOtomatik SığdırmaÇalışma SayfasıSütunlar](postautofitworksheetcolumns) : Çalışma sayfasındaki sütunları otomatik sığdır.
 - [PutWorksheetArka Plan](putworksheetbackground) : Çalışma sayfasında arka plan resmini ayarlayın.
 - [Çalışma Sayfası Arka Planını Sil](deleteworksheetbackground) : Çalışma sayfasındaki arka plan resmini silin.
 - [PutWorksheetFreezePanes](putworksheetfreezepanes) : Çalışma sayfasındaki bölmeleri dondurmayı ayarlayın.
@@ -322,6 +324,6 @@ weight: 50
 - [GetWorksheetValidations](getworksheetvalidations) : Çalışma sayfasındaki doğrulamaların açıklamalarını alın.
 - [GetWorksheetValidation](getworksheetvalidation) : Çalışma sayfasındaki dizinine göre bir doğrulama alın.
 - [PutWorksheetDoğrulaması](putworksheetvalidation) : Çalışma sayfasında dizine bir doğrulama ekleyin.
-- [Çalışma Sayfası Sonrası Doğrulama](postworksheetvalidation) : Çalışma sayfasındaki doğrulamayı dizine göre güncelleyin.
-- [Çalışma Sayfası Doğrulamasını Sil](deleteworksheetvalidation) Çalışma sayfasında dizine göre doğrulamayı silin.
+- [Çalışma Sayfası Sonrası Doğrulama](postworksheetvalidation) Çalışma sayfasındaki doğrulamayı dizine göre güncelleyin.
+- [Çalışma Sayfası Doğrulamasını Sil](deleteworksheetvalidation) : Çalışma sayfasında dizine göre doğrulamayı silin.
 - [Çalışma Sayfası Doğrulamalarını Sil](deleteworksheetvalidations) : Çalışma sayfasındaki tüm doğrulamaları silin.

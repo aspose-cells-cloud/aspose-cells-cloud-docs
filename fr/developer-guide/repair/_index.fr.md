@@ -6,6 +6,7 @@ url: /fr/repair/
 keywords: Repair Excel, ODS, WPS, and so on files
 description: Aspose.Cells Cloud REST API prend en charge la réparation des fichiers Excel. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 39
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdwon, Réparation
 ---
 Ce REST API indique les fichiers `repair` Excel.
 
@@ -24,7 +25,7 @@ POST https://api.aspose.cloud/v3.0/cells/repair
 
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | déposer| déposer| Données de formulaire| Fichier à télécharger|
 | format| chaîne| requête| Format de sortie, la valeur par défaut est nulle, le format de sortie est égal au format du fichier d'entrée.|

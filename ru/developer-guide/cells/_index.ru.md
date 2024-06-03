@@ -7,6 +7,7 @@ aliases: [/working-with-worksheets/]
 keywords: REST API, spreadsheets, excel, cell
 description: "Cells.Облако API для Excel работает: ячейки работают"
 weight: 100
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, Cells
 ---
  Cells — это основной объект операции Aspose.Cells для файла Excel.
 
@@ -34,7 +35,7 @@ weight: 100
             <li><a href="/cells/ru/clear-cells-formatting-in-excel-worksheet/">Очистите Cells Форматирование на листе Excel.</a></li>
             <li><a href="/cells/ru/update-multiple-cells-style/">Обновляет стиль нескольких ячеек на листе Excel.</a></li>
             <li><a href="/cells/ru/change-cell-style-in-excel-worksheet/">Обновляет стиль ячеек на листе Excel.</a></li>
-            <li><a href="/cells/ru/apply-rich-text-formatting-to-a-cell/">Устанавливает форматированное форматирование текста в ячейку листа Excel.</a></li>
+            <li><a href="/cells/ru/apply-rich-text-formatting-to-a-cell/">Устанавливает форматирование расширенного текста в ячейку листа Excel.</a></li>
             <li><a href="/cells/ru/clear-contents-and-styles-of-cells-in-excel-worksheet/">Очищает содержимое и стили ячеек на листе Excel.</a></li>
             <li><a href="/cells/ru/working-with-conditional-formatting/">Добавляет, удаляет и обновляет условное форматирование на листе Excel.</a></li>            
         </ul>

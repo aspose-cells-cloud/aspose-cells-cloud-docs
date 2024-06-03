@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/postdatafill/
 description: El llenado de datos para archivos de hojas de cálculo se utiliza principalmente para completar datos vacíos en tablas y rangos.
+kwords: Excel, Office, Hoja de cálculo, Nube REST API, PostDataFill
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostDataFill" >}}

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/getworksheetautoshapes/
 description: Obtenir la description des formes automatiques dans la feuille de calcul
+kwords: Excel, Office, feuille de calcul, Cloud REST API, GetWorksheetAutoshapes
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetAutoshapes" >}}

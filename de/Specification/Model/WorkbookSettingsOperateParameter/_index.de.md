@@ -1,18 +1,20 @@
 ﻿---
-title: WorkbookSettingsOperateParameter
+title: ArbeitsmappeneinstellungenBedienparameter
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/model/workbooksettingsoperateparameter/
-description: "Aspose.Cells Cloud-Modellspezifikation: WorkbookSettingsOperateParameter. Bearbeiten Sie mühelos Excel und andere Tabellenkalkulationsdokumente mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+description: "Aspose.Cells Cloud-Modellspezifikation: WorkbookSettingsOperateParameter. Müheloses Bearbeiten von Excel und anderen Tabellenkalkulationsdokumenten mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, WorkbookSettingsOperateParameter
 weight: 50
 ---
-## **workbookSettingsOperateParameter**
+## **ArbeitsmappeEinstellungenBedienenParameter**
 
- 
+ Stellt den Betriebsparameter der Arbeitsmappeneinstellung dar.
 
-| Name des Anwesens| Art der Immobilie| Nullbar| Schreibgeschützt| Standardwert| Beschreibung|
+| Name des Anwesens| Art der Immobilie| Nullwerte zulassen| Schreibgeschützt| Standardwert| Beschreibung|
 |:- |:- |:- |:- |:- |:- |
-| Arbeitsmappeneinstellungen| Klasse:WorkbookSettings| WAHR| FALSCH|||
-| OperateType| Zeichenfolge| WAHR| FALSCH|||
+| Arbeitsmappeneinstellungen| Klasse:Arbeitsmappeneinstellungen| WAHR| FALSCH|| Stellt die Arbeitsmappeneinstellung dar.|
+| Betriebsart| Zeichenfolge| WAHR| FALSCH|||
 
-**Elternname** : (OperateParameter)[operateparameter]
+**Elternname** : [Betriebsparameter](/specification/model/operateparameter)
+

@@ -4,17 +4,18 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/model/oleobject/
 description: "Aspose.Cells Especificación del modelo de nube: OleObject. Maneje sin esfuerzo Excel y otros documentos de hoja de cálculo con funciones como abrir, generar, editar, dividir, fusionar, comparar y convertir."
+kwords: Excel, Office, Hoja de cálculo, Nube REST API, OleObject
 weight: 50
 ---
 ## **objeto OLE**
 
- 
+ Representa un OleObject en una hoja de trabajo.
 
 | Nombre de la propiedad| tipo de propiedad| Anulable| Solo lectura| Valor por defecto| Descripción|
 |:- |:- |:- |:- |:- |:- |
-| Mostrar como icono| Booleano| Verdadero| FALSO||Verdadero si el objeto especificado se muestra como un icono y la imagen no se cambiará automáticamente.|
+| Mostrar como icono| Booleano| Verdadero| FALSO|| Verdadero si el objeto especificado se muestra como un icono y la imagen no se cambiará automáticamente.|
 | Tipo de formato de archivo| Cadena| Verdadero| FALSO|| Obtiene y establece el tipo de archivo de los datos del objeto OLE incrustado.|
-| FuenteImagenNombreCompleto| Cadena| Verdadero| FALSO|| Obtiene o establece la ruta y el nombre del archivo de origen de la imagen vinculada.|
+|FuenteImagenNombreCompleto| Cadena| Verdadero| FALSO|| Obtiene o establece la ruta y el nombre del archivo de origen de la imagen vinculada.|
 | EsAutoSize| Booleano| Verdadero| FALSO|| Verdadero indica que el tamaño del objeto antiguo se cambiará automáticamente como el tamaño de la instantánea del contenido incrustado cuando se activa el objeto antiguo.|
 | esenlace| Booleano| Verdadero| FALSO|| Devuelve verdadero si el OleObject se vincula al archivo.|
 | ID de programa| Cadena| Verdadero| FALSO|| Obtiene o establece el ProgID del objeto OLE.|
@@ -36,7 +37,7 @@ weight: 50
 | X| Entero| Verdadero| FALSO|||
 | Y| Entero| Verdadero| FALSO|||
 | Ángulo de rotación| Flotante| Verdadero| FALSO|||
-| Texto HTML| Cadena| Verdadero| FALSO|||
+|Texto HTML| Cadena| Verdadero| FALSO|||
 | Texto| Cadena| Verdadero| FALSO|||
 | Texto alternativo| Cadena| Verdadero| FALSO|||
 | TextoAlineaciónHorizontal| Cadena| Verdadero| FALSO|||
@@ -57,4 +58,5 @@ weight: 50
 | Hipervínculo| Cadena| Verdadero| FALSO|||
 | enlace| Clase: enlace| Verdadero| FALSO|||
 
-**Nombre del padre** : (Forma)[forma]
+**Nombre del padre** : [Forma](/specification/model/shape)
+

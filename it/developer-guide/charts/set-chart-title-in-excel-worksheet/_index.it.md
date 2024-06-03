@@ -4,6 +4,7 @@ type: docs
 url: /it/chart/title/add/
 aliases: [/set-chart-title-in-excel-worksheet/]
 weight: 30
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Imposta titolo grafico nel foglio di lavoro Excel
 ---
 Questo REST API indica l'aggiunta del titolo del grafico/l'impostazione del titolo del grafico visibile
  

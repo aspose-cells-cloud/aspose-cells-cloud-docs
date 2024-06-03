@@ -8,6 +8,7 @@ aliases: [/get-columns-from-an-excel-worksheet/,/get-columns-from-a-worksheet/,/
 keywords: Get columns on an Excel workshee
 description: Aspose.Cells Cloud REST API admite la obtención de columnas en una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 10
+kwords: Excel, Office Cloud, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Obtener columnas de una hoja de trabajo Excel
 ---
 Este REST API indica Leer datos de columna de la hoja de cálculo por índice de columna.
  
@@ -22,7 +23,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/colum
  
 | Nombre del parámetro| Tipo| Ruta/Cadena de consulta/Cuerpo HTTP|Descripción|
 |:- |:- |:- |:- |
-| nombre| cadena| camino|El nombre del libro de trabajo.|
+| nombre| cadena| camino| El nombre del libro de trabajo.|
 | nombre de la hoja| cadena| camino| El nombre de la hoja de trabajo.|
 | columnaÍndice| entero| camino| El índice de la columna.|
 | carpeta| cadena| consulta| La carpeta del libro de trabajo.|
@@ -30,7 +31,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/colum
  
  El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetColumns) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
 
- Puedes usar**cURL** Herramienta de línea de comandos para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
+ Puedes usar**cURL**Herramienta de línea de comandos para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
 
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}

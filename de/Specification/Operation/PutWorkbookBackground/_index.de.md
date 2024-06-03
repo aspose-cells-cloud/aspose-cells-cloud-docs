@@ -1,26 +1,27 @@
 ﻿---
-title: PutWorkbookBackgroun
+title: Arbeitsmappenhintergrund setzen
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/putworkbookbackground/
-description: Hintergrund in der Arbeitsmappe festlegen
+description: Festlegen des Hintergrunds in der Arbeitsmappe
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PutWorkbookBackground
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorkbookBackground" >}}
 {{< blocks/products/cells/docs-title titlemsg="Set background in the workbook." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/background,PUT,Hintergrund in der Arbeitsmappe festlegen.,<a href=\'https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookBackground\'>PutWorkbookBackground</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="picPath,string,Der vollständige Pfad des Bildes." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="picPath, Zeichenfolge, Der vollständige Pfad des Bildes." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/WorkbookController/PutWorkbookBackground\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

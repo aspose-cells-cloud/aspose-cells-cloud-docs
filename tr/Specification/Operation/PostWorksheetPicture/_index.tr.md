@@ -4,13 +4,14 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/postworksheetpicture/
 description: Çalışma sayfasındaki bir resmi dizine göre güncelleme
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PostWorksheetPicture
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetPicture" >}}
 {{< blocks/products/cells/docs-title titlemsg="Update a picture by index in the worksheet." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Açıklama,API referans" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex},POST,Çalışma sayfasındaki bir resmi dizine göre güncelleyin.,<a href=\'https://apireference.aspose.cloud/cells/#/ Resimler/PostWorksheetPicture\'>PostWorksheetPicture</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex},POST,Bir resmi çalışma sayfasında dizine göre güncelleyin.,<a href=\'https://apireference.aspose.cloud/cells/#/ Resimler/PostWorksheetPicture\'>PostWorksheetPicture</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

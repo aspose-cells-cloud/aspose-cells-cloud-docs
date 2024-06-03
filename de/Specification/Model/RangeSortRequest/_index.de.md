@@ -1,17 +1,18 @@
 ﻿---
-title: RangeSortReques
+title: RangeSortRequests
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/model/rangesortrequest/
-description: "Aspose.Cells Cloud-Modellspezifikation: RangeSortRequest. Bearbeiten Sie mühelos Excel und andere Tabellenkalkulationsdokumente mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+description: "Aspose.Cells Cloud-Modellspezifikation: RangeSortRequest. Müheloses Bearbeiten von Excel und anderen Tabellenkalkulationsdokumenten mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, RangeSortRequest
 weight: 50
 ---
 ## **rangeSortRequest**
 
-Gibt eine Bereichssortierungsanforderung an
+ Gibt die Bereichssortierungsanforderung an
 
-| Name des Anwesens| Art der Immobilie| Nullbar| Schreibgeschützt| Standardwert| Beschreibung|
+| Name des Anwesens| Art der Immobilie| Nullwerte zulassen| Schreibgeschützt| Standardwert| Beschreibung|
 |:- |:- |:- |:- |:- |:- |
 | Datensortierer| Klasse:DataSorter| WAHR| FALSCH|| Zusammenfassende Beschreibung für DataSorter.|
-| Zellbereich| Klasse:Bereich| WAHR| FALSCH|| Kapselt das Objekt, das einen Zellbereich in einer Tabelle darstellt.|
+| Zellbereich| Klasse:Reichweite| WAHR| FALSCH|| Kapselt das Objekt ein, das einen Zellbereich in einer Kalkulationstabelle darstellt.|
 

@@ -1,9 +1,10 @@
 ﻿---
-title: Obtener hoja de trabajoRo
+title: Obtener hoja de trabajo Ro
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/getworksheetrow/
 description: Recuperar datos de fila por índice de fila en la hoja de trabajo
+kwords: Excel, Office, hoja de cálculo, nube REST API, GetWorksheetRow
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetRow" >}}

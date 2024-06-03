@@ -1,12 +1,13 @@
 ﻿---
 title: Proteggi workboo
 second_title: Aspose.Cells Cloud Documen
-linktitle: Proteggi
+linktitle: Protez
 type: docs
 url: /it/protect/
 keywords: Protect and unprotect Excel workbook
 description: Aspose.Cells Cloud REST API supporta la protezione e la rimozione della protezione della cartella di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 36
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Proteggi cartella di lavoro
 ---
 **Come proteggere i file Excel.**
 

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/model/mergedcell/
 description: "Aspose.Cells Molnmodellspecifikation: MergedCell. Hantera enkelt Excel och andra kalkylarksdokument med funktioner som att öppna, generera, redigera, dela, slå samman, jämföra och konvertera"
+kwords: Excel, Office, Kalkylblad, Cloud REST API, MergedCell
 weight: 50
 ---
 ## **mergedCell**
@@ -18,4 +19,5 @@ weight: 50
 | StartRow| Heltal| Sann| Falsk|||
 | länk| Klass: Länk| Sann| Falsk|||
 
-**Förälders namn** : (LinkElement)[linkelement]
+**Förälders namn** : [LinkElement](/specification/model/linkelement)
+

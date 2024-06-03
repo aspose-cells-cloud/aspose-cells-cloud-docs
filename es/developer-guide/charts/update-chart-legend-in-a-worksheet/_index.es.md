@@ -4,6 +4,7 @@ type: docs
 url: /es/charts/legend/update/
 aliases: [/update-chart-legend-in-a-worksheet/]
 weight: 160
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Actualizar leyenda del gráfico en una hoja de trabajo
 ---
 Este REST API indica la leyenda del gráfico de actualización
  

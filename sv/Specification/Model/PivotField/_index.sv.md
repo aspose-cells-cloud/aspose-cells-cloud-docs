@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/model/pivotfield/
 description: "Aspose.Cells Molnmodellspecifikation: PivotField. Hantera enkelt Excel och andra kalkylarksdokument med funktioner som att öppna, generera, redigera, dela, slå samman, jämföra och konvertera"
+kwords: Excel, Office, Kalkylblad, Cloud REST API, PivotField
 weight: 50
 ---
 ## **pivotfält**
 
- 
+ Representerar ett fält i en pivottabellrapport.
 
 | Egendomsnamn| Egenskapstyp| Nullbar| Endast läs| Standardvärde| Beskrivning|
 |:- |:- |:- |:- |:- |:- |
@@ -20,11 +21,11 @@ weight: 50
 | Basobjekt| Heltal| Sann| Falsk|||
 | BaseItemPosition| Sträng| Sann| Falsk|||
 | CurrentPageItem| Heltal| Sann| Falsk|||
-| DataDisplayFormat| Sträng| Sann| Falsk|||
+|DataDisplayFormat| Sträng| Sann| Falsk|||
 | Visningsnamn| Sträng| Sann| Falsk|||
 | DragToColumn| Boolean| Sann| Falsk|||
 | DragToData| Boolean| Sann| Falsk|||
-|DragToHide| Boolean| Sann| Falsk|||
+| DragToHide| Boolean| Sann| Falsk|||
 | DragToPage| Boolean| Sann| Falsk|||
 | DragToRow| Boolean| Sann| Falsk|||
 | Fungera| Sträng| Sann| Falsk|||
@@ -46,7 +47,7 @@ weight: 50
 | NumberFormat| Sträng| Sann| Falsk|||
 | Originalobjekt|Array<String> | Sann| Falsk|||
 | PivotItems| Behållare| Sann| Falsk|||
-|Placera| Heltal| Sann| Falsk|||
+| Placera| Heltal| Sann| Falsk|||
 | ShowAllItems| Boolean| Sann| Falsk|||
 | ShowCompact| Boolean| Sann| Falsk|||
 | ShowInOutlineForm| Boolean| Sann| Falsk|||

@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/model/cellscloudresponse/
 description: "Aspose.Cells Especificación del modelo de nube: CellsCloudResponse. Maneje sin esfuerzo Excel y otros documentos de hoja de cálculo con funciones como abrir, generar, editar, dividir, fusionar, comparar y convertir."
+kwords: Excel, Office, Hoja de cálculo, Nube REST API, CellsCloudResponse
 weight: 50
 ---
 ## **célulasNubeRespuesta**
 
- 
+ Representa la respuesta de CellsCloud.
 
 | Nombre de la propiedad| tipo de propiedad| Anulable| Solo lectura| Valor por defecto| Descripción|
 |:- |:- |:- |:- |:- |:- |
@@ -83,7 +84,7 @@ weight: 50
 	-  [Respuesta de filtro dinámico](pivotfilterresponse) 
 	-  [Respuesta de filtros dinámicos](pivotfiltersresponse) 
 	-  [Respuesta de tabla dinámica](pivottableresponse) 
-	-  [Tablas dinámicasRespuesta](pivottablesresponse) 
+	-  [Respuesta de tablas dinámicas](pivottablesresponse) 
 	-  [PlotAreaResponse](plotarearesponse) 
 	-  [RadioBotónRespuesta](radiobuttonresponse) 
 	-  [RangoRespuesta](rangeresponse) 

@@ -7,6 +7,7 @@ url: /it/workbook/background/
 keywords: Working with background an Excel workbook
 description: Aspose.Cells Cloud REST API supporta il lavoro in background su una cartella di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 100
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Utilizzo dello sfondo su una cartella di lavoro Excel
 ---
 ## Lavorare con lo sfondo su una cartella di lavoro Excel.
 

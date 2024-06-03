@@ -7,6 +7,7 @@ url: /tr/split/multi-files/
 keywords: Split multi Excel files
 description: Aspose.Cells Cloud REST API, çoklu Excel dosyalarının bölünmesini destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 32
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Split
 ---
 Bu REST Api, `split` çoklu Excel dosyasını gösterir.
 

@@ -8,6 +8,7 @@ aliases: [/freeze-panes-in-excel-worksheet/,/worksheets/freeze-panes/]
 keywords: Freeze panes on an Excel Worksheet
 description: Aspose.Cells Cloud REST API, Excel Çalışma Sayfasındaki bölmelerin dondurulmasını destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 190
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel Çalışma Sayfasındaki bölmeleri dondur
 ---
 Bu REST API, Excel çalışma sayfasında `set freeze panes`'i gösterir.
  

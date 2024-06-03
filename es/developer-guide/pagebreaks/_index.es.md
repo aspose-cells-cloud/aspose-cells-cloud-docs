@@ -7,6 +7,7 @@ aliases: [/working-with-pagebreaks/]
 keywords: Get, add, delete, and update page break in an Excel worksheet
 description: Aspose.Cells Cloud REST API admite la obtención, adición, eliminación y actualización de saltos de página en una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 100
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, PageBreaks
 ---
 ## Cómo trabajar con saltos de página en una hoja de trabajo Excel.
 

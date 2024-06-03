@@ -4,13 +4,14 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/getverticalpagebreak/
 description: استرداد وصف فاصل الصفحات العمودي في ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، GetVerticalPageBreak
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetVerticalPageBreak" >}}
 {{< blocks/products/cells/docs-title titlemsg="Retrieve a vertical page break description in the worksheet." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API، طريقة المتشعب، الوصف، مرجع API" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/verticalpagebreaks/{index},GET,استرجاع وصف فاصل الصفحات العمودي في ورقة العمل.,<a href=\'https://apireference.aspose.cloud/cells/# /PageBreaks/GetVerticalPageBreak\'>GetVerticalPageBreak</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/verticalpagebreaks/{index},GET,استرداد وصف فاصل الصفحات العمودي في ورقة العمل.,<a href=\'https://apireference.aspose.cloud/cells/# /PageBreaks/GetVerticalPageBreak\'>GetVerticalPageBreak</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

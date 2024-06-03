@@ -1,29 +1,30 @@
 ﻿---
-title: PostCopyWorkshee
+title: PostCopyWorksheet
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postcopyworksheet/
-description: Kopieren Sie Inhalte und Formate aus einem anderen Arbeitsblatt
+description: Inhalte und Formate aus einem anderen Arbeitsblatt kopieren
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostCopyWorksheet
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostCopyWorksheet" >}}
 {{< blocks/products/cells/docs-title titlemsg="Copy contents and formats from another worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/copy,POST,Inhalte und Formate aus einem anderen Arbeitsblatt kopieren.,<a href=\'https://apireference.aspose.cloud/cells/#/Worksheets/PostCopyWorksheet\'> PostCopyWorksheet</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/copy,POST,Inhalte und Formate aus einem anderen Arbeitsblatt kopieren.,<a href=\'https://apireference.aspose.cloud/cells/#/Worksheets/PostCopyWorksheet\'>PostCopyWorksheet</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="sourceSheet,string,Quellarbeitsblatt." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="sourceWorkbook,string,source Workbook." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="sourceFolder,string,Ursprünglicher Arbeitsmappenordner." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Quellblatt, Zeichenfolge, Quellarbeitsblatt." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Quellarbeitsmappe, Zeichenfolge, Quellarbeitsmappe." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Quellordner, Zeichenfolge, Ursprünglicher Arbeitsmappenordner." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Parametername, Typ, Beschreibung" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="Optionen, Klasse: Kopieroptionen, Stellt die Kopieroptionen dar." >}} 

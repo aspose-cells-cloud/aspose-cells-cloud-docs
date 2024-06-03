@@ -7,6 +7,7 @@ aliases: [/working-with-charts/]
 keywords: REST API, spreadsheets, excel, chart
 description: "Cells.Cloud API, Excel için çalışır: çizelgeler çalışır"
 weight: 100
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Grafikler
 ---
 ## Excel dosyasındaki Grafiklerle çalışma.
 

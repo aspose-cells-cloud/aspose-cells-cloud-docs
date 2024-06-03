@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/postdeleteincompleterows/
 description: L'eliminazione di righe incomplete di file di fogli di calcolo viene utilizzata principalmente per eliminare righe incomplete in tabelle e intervalli
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PostDeleteIncompleteRows
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostDeleteIncompleteRows" >}}

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/postbatchprotect/
 description: Protezione in batch dei file che soddisfano condizioni di corrispondenza specifiche
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PostBatchProtect
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostBatchProtect" >}}
@@ -15,7 +16,7 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Nome parametro, Tipo, Descrizione" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="batchProtectRequest,class:batchprotectrequest,BatchProtectRequest Richiesta di file di protezione batch." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns=" batchProtectRequest,class:batchprotectrequest,BatchProtectRequest Richiesta di file di protezione batch." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

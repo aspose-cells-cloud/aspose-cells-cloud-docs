@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/putworksheetformatconditionarea/
 description: Agregue un área de celda para la condición de formato en la hoja de trabajo
+kwords: Excel, Office, hoja de cálculo, nube REST API, PutWorksheetFormatConditionArea
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetFormatConditionArea" >}}

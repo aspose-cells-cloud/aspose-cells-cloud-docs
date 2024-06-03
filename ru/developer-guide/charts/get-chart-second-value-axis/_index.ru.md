@@ -3,6 +3,7 @@ title:  Получить ось второго значения диаграмм
 type: docs
 url: /ru/charts/second-value-axis/get/
 weight: 60
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, получение второй оси значений диаграммы
 ---
  Этот REST API указывает на вторую ось значений диаграммы.
  

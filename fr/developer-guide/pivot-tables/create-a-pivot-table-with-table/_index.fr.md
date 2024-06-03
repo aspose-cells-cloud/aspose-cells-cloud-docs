@@ -8,6 +8,7 @@ aliases: [/create-a-pivottable-with-table/,/create-new-pivot-table-with-list-obj
 keywords: Create a pivot table with list object. Convert list object to pivot table
 description: Aspose.Cells Cloud REST API prend en charge la création d'un tableau croisé dynamique avec un objet liste. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 60
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdwon, Convertir un tableau en tableau croisé dynamique
 ---
 Ce REST API indique de créer un `pivottable` avec un objet liste.
  
@@ -20,7 +21,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobject
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin||
 | Nom de la feuille| chaîne| chemin||

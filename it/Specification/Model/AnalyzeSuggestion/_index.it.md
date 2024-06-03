@@ -5,6 +5,7 @@ type: docs
 url: /it/specification/model/analyzesuggestion/
 description: "Aspose.Cells Specifica del modello cloud: AnalizzaSuggestion. Gestisci facilmente Excel e altri fogli di calcolo con funzionalità come apertura, generazione, modifica, divisione, unione, confronto e conversione"
 weight: 50
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, AnalizzaSuggerimento
 ---
 ## **analizzareSuggerimento**
 
@@ -19,5 +20,5 @@ weight: 50
 | Tipo di output suggerito| Corda| VERO| Falso|| Sulla base dei risultati dell'analisi dei dati, vengono forniti suggerimenti per la creazione di nuovi tipi di dati.|
 | Descrizione| Corda| VERO| Falso|| Sulla base dei risultati dell'analisi dei dati, viene creata una descrizione aziendale del nuovo oggetto dati.|
 | DataSouceThumbnail| Corda| VERO| Falso|||
-| Miniatura| Corda| VERO| Falso|||
+|Miniatura| Corda| VERO| Falso|||
 

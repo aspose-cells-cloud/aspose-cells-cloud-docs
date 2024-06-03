@@ -8,6 +8,7 @@ aliases: [/get-a-list-object-or-table-inside-the-worksheet/,/tables/get/]
 keywords: Get a list object(table) into an Excel worksheet
 description: Aspose.Cells Cloud REST API supporta l'inserimento di un oggetto elenco (tabella) in un foglio di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 9
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Ottieni un oggetto elenco in un foglio di lavoro Excel
 ---
  Questo REST API indica a `get` un elenco di informazioni sull'oggetto per indice o converte un `list object` in un file di formato diverso in un foglio di lavoro Excel.
 

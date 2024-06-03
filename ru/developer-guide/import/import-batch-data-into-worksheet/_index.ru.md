@@ -8,6 +8,7 @@ aliases: [/import-batch-data-into-excel-worksheet/,/import-batch-data-into-works
 keywords: Import batch data into Excel files
 description: Aspose.Cells Cloud REST API поддерживает импорт пакетных данных в файлы Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 19
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, импорт пакетных данных в рабочий лист Excel
 ---
 Этот REST API `import batch data` в рабочий лист Excel.
 
@@ -43,7 +44,7 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/import-data
 |:- |:- |:- |
 | индекс строки| интервал||
 | индекс столбца| интервал||
-| тип| нить| тип данных|
+| тип| нить|тип данных|
 | ценить| нить||
 | стиль| Стиль (объект)||
 

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/deleteworksheetcellsrange/
 description: Ta bort ett cellintervall och flytta befintliga celler baserat på det angivna skiftalternativet
+kwords: Excel, Office, Kalkylblad, Cloud REST API, DeleteWorksheetCellsRange
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetCellsRange" >}}

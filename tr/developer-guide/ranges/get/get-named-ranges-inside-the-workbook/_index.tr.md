@@ -1,13 +1,14 @@
 ﻿---
 title: Excel çalışma kutusunda Adlandırılmış Aralıkları alın
 second_title: Aspose.Cells Cloud Documen
-linktitle: isim
+linktitle: İsim
 type: docs
 url: /tr/ranges/get/name/
 aliases: [/get-named-ranges-inside-the-workbook/]
 keywords: Get cells data based on named range on an Excel worksheet
 description: Aspose.Cells Cloud REST API, Excel çalışma sayfasındaki adlandırılmış aralığa göre hücre verilerinin alınmasını destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 10
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel çalışma kitabındaki Adlandırılmış Aralıkları Al
 ---
 Bu REST API, Okuma çalışma sayfası aralıkları bilgisini gösterir.
  

@@ -7,6 +7,7 @@ aliases: [/working-with-columns/]
 keywords: REST API, columns, spreadsheets, exce
 description: "Cells.Cloud API per Excel funziona: mostra le colonne da un foglio di lavoro Excel"
 weight: 100
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Colonne
 ---
 ## Lavorare con le colonne su un file Excel.
 

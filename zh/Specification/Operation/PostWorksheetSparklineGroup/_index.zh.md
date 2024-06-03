@@ -1,30 +1,31 @@
 ﻿---
-title: 后期工作表SparklineGrou
+title: 帖子工作表迷你图组
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/postworksheetsparklinegroup/
 description: 更新工作表中的迷你图组
+kwords: Excel，Office，电子表格，云 REST API，PostWorksheetSparklineGroup
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetSparklineGroup" >}}
 {{< blocks/products/cells/docs-title titlemsg="Update a sparkline group in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/sparklineGroups/{sparklineGroupIndex},POST,更新工作表中的迷你图组。,<a href=\'https://apireference.aspose.cloud/cells/#/SparklineGroups /PostWorksheetSparklineGroup\'>PostWorksheetSparklineGroup</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/sparklineGroups/{sparklineGroupIndex},POST,更新工作表中的 sparkline 组。,<a href=\'https://apireference.aspose.cloud/cells/#/SparklineGroups/PostWorksheetSparklineGroup\'>PostWorksheetSparklineGroup</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="参数名称、类型、描述" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="名称，字符串，文件名。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,字符串,工作表名称。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="SparklineGroupIndex,整数,元素的从零开始的索引。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="name，string，文件名。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName，string，工作表名称。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sparklineGroupIndex，integer，元素的从零开始的索引。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="文件夹，字符串，文件所在的文件夹。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,文件所在的存储名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName，string，文件所在的存储名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="SparklineGroup,class:sparklinegroup,火花线组描述。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="sparklineGroup，class：sparklinegroup，Spark线组描述。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

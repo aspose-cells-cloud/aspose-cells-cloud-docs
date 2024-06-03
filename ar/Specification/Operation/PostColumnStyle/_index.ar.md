@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postcolumnstyle/
 description: تعيين نمط العمود في ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostColumnStyle
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostColumnStyle" >}}

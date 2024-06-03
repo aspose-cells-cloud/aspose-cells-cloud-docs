@@ -1,10 +1,11 @@
 ﻿---
-title: Zelldaten aus einem Arbeitsblatt abrufen
+title: Abrufen von Zelldaten aus einem Arbeitsblatt
 type: docs
 url: /de/get-cell-data-from-a-worksheet/
 weight: 10
+kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdwon, Zelldaten aus einem Arbeitsblatt abrufen
 ---
-Dieser REST API zeigt an, dass ein `cell` in einer Excel-Datei abgerufen wird, wenn der Parameter `cellOrMethodName` der Zellenname ist.
+Dieser REST API zeigt an, dass in einer Excel-Datei ein `cell` abgerufen wird, wenn der `cellOrMethodName`-Parameter der Zellenname ist.
 
 - **cURL Beispiel**
 
@@ -90,9 +91,9 @@ curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/
 
 - **Cloud SDK-Familie**
 
- Die Verwendung eines SDK ist der beste Weg, die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte schauen Sie sich die an[GitHub-Repository](https://github.com/aspose-cells-cloud) Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie hier.
+ Die Verwendung eines SDK ist der beste Weg, um die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte lesen Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
 
-Die folgenden Codebeispiele veranschaulichen, wie Aspose.Cells-Webdienste mithilfe verschiedener SDKs aufgerufen werden:
+Die folgenden Codebeispiele zeigen, wie Sie mit verschiedenen SDKs Aufrufe an die Webdienste Aspose.Cells tätigen:
 
 {{< tabs tabTotal="9" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Objective C" tabName8="Android" tabName9="Go" >}}
 

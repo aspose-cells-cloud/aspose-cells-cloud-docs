@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/deleteverticalpagebreaks/
 description: حذف فواصل الصفحات الرأسية في ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، RemoveVerticalPageBreaks
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteVerticalPageBreaks" >}}

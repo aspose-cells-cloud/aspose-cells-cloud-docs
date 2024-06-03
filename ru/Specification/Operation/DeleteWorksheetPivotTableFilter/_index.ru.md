@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/deleteworksheetpivottablefilter/
 description: Удаление сводного фильтра в сводной таблице
+kwords: Excel, Office, электронная таблица, Cloud REST API, DeleteWorksheetPivotTableFilter
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetPivotTableFilter" >}}

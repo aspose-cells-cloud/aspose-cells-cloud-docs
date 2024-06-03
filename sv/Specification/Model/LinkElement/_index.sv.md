@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/model/linkelement/
 description: "Aspose.Cells Molnmodellspecifikation: LinkElement. Hantera enkelt Excel och andra kalkylarksdokument med funktioner som att öppna, generera, redigera, dela, slå samman, jämföra och konvertera"
+kwords: Excel, Office, Kalkylblad, Cloud REST API, LinkElement
 weight: 50
 ---
 ## **linkElement**
@@ -35,7 +36,6 @@ weight: 50
 	-  [Utskriftsformat](pagesetup) 
 	-  [Rad](row) 
 	-  [Rader](rows) 
-	-  [SplitResultDocument](splitresultdocument) 
 	-  [Stilar](styles) 
 	-  [TextItem](textitem) 
 	-  [TextItems](textitems) 
@@ -60,7 +60,7 @@ weight: 50
 	-  [ChartPoints](chartpoints) 
 	-  [Diagram](charts) 
 	-  [DropBars](dropbars) 
-	-  [LegendEntries](legendentries) 
+	-  [Legendentries](legendentries) 
 	-  [LegendEntry](legendentry) 
 	-  [Serier](series) 
 	-  [Serieobjekt](seriesitems) 

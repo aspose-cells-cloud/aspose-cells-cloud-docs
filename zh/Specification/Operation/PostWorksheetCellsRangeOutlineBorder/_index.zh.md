@@ -1,29 +1,30 @@
 ﻿---
-title: 后工作表单元格范围大纲边框
+title: 发布工作表单元格范围轮廓边框
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/postworksheetcellsrangeoutlineborder/
-description: 在一系列单元格周围应用轮廓边框
+description: 在单元格区域周围应用外框
+kwords: Excel，Office，电子表格，云 REST API，PostWorksheetCellsRangeOutlineBorder
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangeOutlineBorder" >}}
 {{< blocks/products/cells/docs-title titlemsg="Apply an outline border around a range of cells." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges/outlineBorder,POST,在一系列单元格周围应用轮廓边框。,<a href=\'https://apireference.aspose.cloud/cells/#/Ranges /PostWorksheetCellsRangeOutlineBorder\'>PostWorksheetCellsRangeOutlineBorder</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges/outlineBorder,POST,在单元格范围周围应用轮廓边框。,<a href=\'https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeOutlineBorder\'>PostWorksheetCellsRangeOutlineBorder</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="参数名称、类型、描述" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="名称，字符串，文件名。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,字符串,工作表名称。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="name，string，文件名。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName，string，工作表名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="文件夹，字符串，原始工作簿文件夹。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="存储名称，字符串，存储名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName，string，存储名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="rangeOperate,class:rangesetoutlineborderrequest,RangeSetOutlineBorderRequest 范围设置 OutlineBorder 请求。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="rangeOperate，class：rangesetoutlineborderrequest，RangeSetOutlineBorderRequest范围设置OutlineBorder请求。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

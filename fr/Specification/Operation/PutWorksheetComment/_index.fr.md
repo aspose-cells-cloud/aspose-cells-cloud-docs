@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/putworksheetcomment/
 description: Ajouter un commentaire de cellule dans la feuille de calcul
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PutWorksheetComment
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetComment" >}}

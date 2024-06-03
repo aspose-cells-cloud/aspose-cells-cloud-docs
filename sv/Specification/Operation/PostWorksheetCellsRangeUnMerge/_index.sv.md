@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/postworksheetcellsrangeunmerge/
 description: Ta bort sammanslagna celler inom detta intervall
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostWorksheetCellsRangeUnMerge
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangeUnMerge" >}}

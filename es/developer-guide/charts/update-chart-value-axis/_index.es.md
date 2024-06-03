@@ -3,6 +3,7 @@ title:  Actualizar valor del gráfico Axi
 type: docs
 url: /es/charts/value-axis/update/
 weight: 160
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Actualizar eje de valores del gráfico
 ---
  Este REST API indica Actualizar eje de valores del gráfico.
  

@@ -7,6 +7,7 @@ aliases: [/working-with-columns/]
 keywords: REST API, columns, spreadsheets, exce
 description: "Cells.Облако API для Excel работает: отображает столбцы из рабочего листа Excel."
 weight: 100
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, столбцы
 ---
 ## Работа со столбцами в файле Excel.
 

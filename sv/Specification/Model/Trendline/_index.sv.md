@@ -4,23 +4,24 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/model/trendline/
 description: "Aspose.Cells Molnmodellspecifikation: Trendline. Hantera enkelt Excel och andra kalkylarksdokument med funktioner som att öppna, generera, redigera, dela, slå samman, jämföra och konvertera"
+kwords: Excel, Office, Kalkylblad, Cloud REST API, Trendline
 weight: 50
 ---
 ## **trendlinje**
 
- 
+ Representerar en trendlinje i ett diagram.
 
 | Egendomsnamn| Egenskapstyp| Nullbar| Endast läs| Standardvärde| Beskrivning|
 |:- |:- |:- |:- |:- |:- |
 | länk| Klass: Länk| Sann| Falsk|||
 | Bakåt| Flytande| Sann| Falsk|| Returnerar eller ställer in antalet perioder (eller enheter på ett punktdiagram) som trendlinjen sträcker sig bakåt. Antalet perioder måste vara större än eller lika med noll. Om diagramtypen är kolumn måste antalet perioder vara mellan 0 och 0,5|
-| Dataetiketter| Klass: LinkElement| Sann| Falsk|| Representerar DataLabels-objektet för den angivna serien.|
+| Dataetiketter| Klass: DataLabels| Sann| Falsk|| Representerar DataLabels-objektet för den angivna serien.|
 | DisplayEkvation| Boolean| Sann| Falsk|| Representerar om ekvationen för trendlinjen visas i diagrammet (i samma dataetikett som R-kvadratvärdet). Om du ställer in den här egenskapen till True aktiveras dataetiketter automatiskt.|
 | DisplayRSquared| Boolean| Sann| Falsk||Representerar om trendlinjens R-kvadratvärde visas i diagrammet (i samma dataetikett som ekvationen). Om du ställer in den här egenskapen till True aktiveras dataetiketter automatiskt.|
 | Fram| Flytande| Sann| Falsk|| Returnerar eller ställer in antalet perioder (eller enheter på ett punktdiagram) som trendlinjen sträcker sig framåt. Antalet perioder måste vara större än eller lika med noll.|
 | Genskjuta| Flytande| Sann| Falsk|| Returnerar eller ställer in punkten där trendlinjen korsar värdeaxeln.|
 | IsNameAuto| Boolean| Sann| Falsk|| Returnerar om Microsoft Excel automatiskt bestämmer namnet på trendlinjen.|
-| LegendEntry| Klass: LinkElement| Sann| Falsk|| Får legendposten enligt denna trendlinje|
+| LegendEntry| Klass: LegendEntry| Sann| Falsk|| Får legendposten enligt denna trendlinje|
 | namn| Sträng| Sann| Falsk|| Returnerar namnet på trendlinjen.|
 | Beställa| Heltal| Sann| Falsk|| Returnerar eller ställer in trendlinjeordningen (ett heltal större än 1) när trendlinjetypen är polynom. Beställningen måste vara mellan 2 och 6.|
 | Period| Heltal| Sann| Falsk|| Returnerar eller ställer in perioden för trendlinjen för glidande medelvärde.|
@@ -45,4 +46,5 @@ weight: 50
 | Vikt| Sträng| Sann| Falsk|||
 | ViktPt| Flytande| Sann| Falsk|||
 
-**Förälders namn** : (Linje)[linje]
+**Förälders namn** : [Linje](/specification/model/line)
+

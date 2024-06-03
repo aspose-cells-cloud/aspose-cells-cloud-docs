@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/model/cell/
 description: "Aspose.Cells Specifica modello Cloud: Cell. Gestisci facilmente Excel e altri fogli di calcolo con funzionalità come apertura, generazione, modifica, divisione, unione, confronto e conversione"
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, Cellulare
 weight: 50
 ---
 ## **cellula**
 
- 
+ Incapsula l'oggetto che rappresenta una singola cella della cartella di lavoro.
 
 | Nome della proprietà| Tipo di proprietà| Nullabile| Sola lettura| Valore di default| Descrizione|
 |:- |:- |:- |:- |:- |:- |
@@ -17,7 +18,7 @@ weight: 50
 | Colonna| Numero intero| VERO| Falso|| Ottiene il numero di colonna (in base zero) della cella.|
 | Valore| Corda| VERO| Falso|| Ottiene il valore contenuto in questa cella.|
 | Tipo| Corda| VERO| Falso|| Rappresenta il tipo di valore della cella.|
-|Formula| Corda| VERO| Falso|| Ottiene o imposta una formula di .|
+| Formula| Corda| VERO| Falso||Ottiene o imposta una formula di .|
 | ÈFormula| Booleano| VERO| Falso|| Rappresenta se la cella specificata contiene una formula.|
 | È unito| Booleano| VERO| Falso|| Controlla se una cella fa parte di un intervallo unito o meno.|
 | IsArrayHeader| Booleano| VERO| Falso|| Indica che la formula della cella è una formula di matrice ed è la prima cella della matrice.|
@@ -30,4 +31,5 @@ weight: 50
 | Foglio di lavoro| Corda| VERO| Falso|| Ottiene il foglio di lavoro padre.|
 | collegamento| Classe: collegamento| VERO| Falso|||
 
-**Nome del genitore** : (ElementoLink)[elementolink]
+**Nome del genitore** : [Elemento di collegamento](/specification/model/linkelement)
+

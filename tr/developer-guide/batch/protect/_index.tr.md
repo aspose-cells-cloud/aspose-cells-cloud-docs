@@ -6,6 +6,7 @@ url: /tr/batch/protect
 keywords: Batch protection of multiple Excel files
 description: Aspose.Cells Bulut API, birden fazla Excel dosyasının toplu korumasını destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 100
+kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Toplu Koruma
 ---
 Bu REST API, uygun dosyaların `batch protection`'ini gösterir.
  
@@ -26,7 +27,7 @@ POST http://api.aspose.cloud/v3.0/cells/batch/protect
  
 İsim | Tür | Açıklama | Notlar
 ------------ | ------------- | ------------- | -------------
-KaynakKlasörü | dize | | [isteğe bağlı]Eşleşme Durumu | Eşleşme DurumuTalebi | | [isteğe bağlı]Koruma Türü | dize | | [isteğe bağlı]Şifre | dize | | [isteğe bağlı]ÇıkışKlasörü | dize | | [isteğe bağlı]**MatchConditionRequest Özellikleri**
+ KaynakKlasörü | dize | | [isteğe bağlı]Eşleşme Durumu | Eşleşme DurumuTalebi | | [isteğe bağlı]Koruma Türü | dize | | [isteğe bağlı]Şifre | dize | | [isteğe bağlı]ÇıkışKlasörü | dize | | [isteğe bağlı]**MatchConditionRequest Özellikleri**
  
 İsim | Tür | Açıklama | Notlar
 ------------ | ------------- | ------------- | -------------

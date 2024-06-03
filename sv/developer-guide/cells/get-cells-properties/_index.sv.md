@@ -3,6 +3,7 @@ title: Skaffa Cells Fastighet
 type: docs
 url: /sv/get-cells-properties/
 weight: 130
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Get Cells Properties
 ---
 Denna REST API visar hur man `get a specific cell` i en Excel fil.
 

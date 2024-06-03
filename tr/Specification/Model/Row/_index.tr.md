@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/model/row/
 description: "Aspose.Cells Bulut modeli spesifikasyonu: Row. Açma, oluşturma, düzenleme, bölme, birleştirme, karşılaştırma ve dönüştürme gibi özelliklerle Excel ve diğer elektronik tablo belgelerini zahmetsizce yönetin"
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, Satır
 weight: 50
 ---
 ## **sıra**
 
- 
+ Çalışma sayfasındaki tek bir satırı temsil eder.
 
 | Mülkiyet adı| Emlak Tipi| Geçersiz kılınabilir| Sadece oku| Varsayılan değer| Tanım|
 |:- |:- |:- |:- |:- |:- |
@@ -17,8 +18,9 @@ weight: 50
 | Dizin| Tamsayı| Doğru| YANLIŞ|| Bu satırın indeksini alır.|
 | Boş| Boolean| Doğru| YANLIŞ|| Satırın herhangi bir veri içerip içermediğini belirtir|
 | IsHeightMatched| Boolean| Doğru| YANLIŞ|| Satır yüksekliğinin ve varsayılan yazı tipi yüksekliğinin eşleştiğini belirtir.|
-| Gizli| Boolean| Doğru| YANLIŞ|| Satırın gizli olup olmadığını belirtir.|
+| Gizli| Boolean| Doğru| YANLIŞ||Satırın gizli olup olmadığını belirtir.|
 | Stil| Sınıf:LinkElement| Doğru| YANLIŞ|| Bu satırın stilini temsil eder.|
 | bağlantı| Sınıf:Bağlantı| Doğru| YANLIŞ|||
 
-**Ebeveyn adı** : (LinkElement)[bağlantıelement]
+**Ebeveyn adı** : [Bağlantı Öğesi](/specification/model/linkelement)
+

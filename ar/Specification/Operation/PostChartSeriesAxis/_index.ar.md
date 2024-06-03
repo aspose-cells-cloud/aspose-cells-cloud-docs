@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postchartseriesaxis/
 description: تحديث محور سلسلة المخطط في المخطط
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostChartSeriesAxis
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostChartSeriesAxis" >}}

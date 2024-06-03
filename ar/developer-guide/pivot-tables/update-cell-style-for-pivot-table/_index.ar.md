@@ -8,6 +8,7 @@ aliases: [/update-cell-style-for-pivot-table/]
 keywords: Update cell style for a pivot table
 description: Aspose.Cells Cloud REST API يدعم تحديث نمط الخلية للجدول المحوري. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 90
+kwords: Excel، Office Cloud، REST API، جدول البيانات، PDF، CSV، Json، Markdwon، تحديث نمط الخلية للجدول المحوري
 ---
 يشير REST API إلى خلية التحديث `style` للجدول المحوري.
  
@@ -28,7 +29,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottable
 | عمود| عدد صحيح| استفسار||
 | صف| عدد صحيح| استفسار||
 | أسلوب|| جسم| نمط dto في نص الطلب.|
-| needReCalculate| منطقية| استفسار| خطأ شنيع|
+| needReCalculate|منطقية| استفسار| خطأ شنيع|
 | مجلد| خيط| استفسار| مجلد الوثيقة.|
 | اسم التخزين| خيط| استفسار| اسم التخزين.|
  
@@ -69,7 +70,7 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/workshe
  
 ## عائلة Cloud SDK
  
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
  
 توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
  

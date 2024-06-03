@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/postworksheetpivottablemove/
 description: Sposta la tabella pivot nel foglio di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PostWorksheetPivotTableMove
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetPivotTableMove" >}}

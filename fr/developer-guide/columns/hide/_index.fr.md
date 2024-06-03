@@ -8,6 +8,7 @@ aliases: [/hide-columns-in-excel-worksheet/,/hide-columns-in-an-excel-worksheet/
 keywords: Hide column on an Excel workshee
 description: Aspose.Cells Cloud REST API prend en charge le masquage de la colonne sur une feuille de calcul Excel. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 40
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdwon, Masquer les colonnes sur une feuille de calcul Excel
 ---
 Ce REST API indique masquer les colonnes de la feuille de calcul.
  
@@ -20,19 +21,19 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/colu
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
-| nom| chaîne| chemin|Le nom du classeur.|
+| nom| chaîne| chemin| Le nom du classeur.|
 | Nom de la feuille| chaîne| chemin| Le nom de la feuille de calcul.|
 | colonneDébut| entier| requête| Index de colonne de début à exploiter.|
-|totalColonnes| entier| requête| Nombre de colonnes à exploiter.|
+| totalColonnes| entier| requête| Nombre de colonnes à exploiter.|
 | dossier| chaîne| requête| Le dossier de documents.|
 | Nom de stockage| chaîne| requête| nom de stockage.|
  
 
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostHideWorksheetColumns) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement depuis un navigateur Web.
 
- Vous pouvez utiliser**cURL** outil de ligne de commande pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment passer des appels vers Cloud API avec cURL.
+ Vous pouvez utiliser**cURL**outil de ligne de commande pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment passer des appels vers Cloud API avec cURL.
 
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}

@@ -5,6 +5,7 @@ type: docs
 url: /es/docker/storage/
 description: Cómo configurar la posición de almacenamiento sobre Aspose.Cells Cloud para Docker
 weight: 30
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Almacenamiento
 ---
 ##  Configuración de almacenamiento predeterminada ##
 

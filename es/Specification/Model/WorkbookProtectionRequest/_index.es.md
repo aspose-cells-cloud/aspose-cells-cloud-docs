@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/model/workbookprotectionrequest/
 description: "Aspose.Cells Especificación del modelo de nube: WorkbookProtectionRequest. Maneje sin esfuerzo Excel y otros documentos de hoja de cálculo con funciones como abrir, generar, editar, dividir, fusionar, comparar y convertir."
+kwords: Excel, Office, hoja de cálculo, nube REST API, WorkbookProtectionRequest
 weight: 50
 ---
 ## **libro de trabajoProtectionRequest**
@@ -13,5 +14,5 @@ weight: 50
 | Nombre de la propiedad| tipo de propiedad| Anulable| Solo lectura| Valor por defecto| Descripción|
 |:- |:- |:- |:- |:- |:- |
 | Tipo de protección| Cadena| Verdadero| FALSO|| Tipo de protección. Puede ser TODO, CONTENIDO, NINGUNO, OBJETOS, ESCENARIOS, ESTRUCTURA, VENTANAS|
-| Contraseña| Cadena| Verdadero| FALSO||Contraseña de cifrado.|
+| Contraseña| Cadena| Verdadero| FALSO|| Contraseña de cifrado.|
 

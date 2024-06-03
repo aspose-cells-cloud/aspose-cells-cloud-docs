@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postworksheetlistobjectsorttable/
 description: Trier l'objet de la liste dans la feuille de calcul
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostWorksheetListObjectSortTable
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetListObjectSortTable" >}}

@@ -3,6 +3,7 @@ title:  Aggiorna grafico Secondo asse dei valori
 type: docs
 url: /it/charts/second-value-axis/update/
 weight: 160
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Aggiorna grafico secondo asse valori
 ---
  Questo REST API indica l'aggiornamento del secondo asse dei valori del grafico.
  

@@ -5,6 +5,7 @@ type: docs
 url: /ar/aspose-cells-cloud-for-wordpress-faqs/
 description: Aspose.Cells تدعم السحابة Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 40
+kwords: Excel، Office Cloud، REST API، Spreadsheet، PDF، CSV، Json، Markdwon، Aspose.Cells Cloud for WordPress - الأسئلة الشائعة
 ---
 ## نماذج Aspose.Cells
 ### هل يمكنني استخدام البرنامج المساعد للنماذج Aspose.Cells دون أن يكون لدي حساب على aspose.cloud؟

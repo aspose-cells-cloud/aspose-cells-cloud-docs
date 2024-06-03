@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/getworksheetautofilter/
 description: Recupera la descrizione dei filtri automatici da un foglio di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, GetWorksheetAutoFilter
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetAutoFilter" >}}

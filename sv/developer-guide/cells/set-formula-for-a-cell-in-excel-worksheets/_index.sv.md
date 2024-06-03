@@ -3,6 +3,7 @@ title: Ställ in formel för en cell i arbetsbladet Excel
 type: docs
 url: /sv/set-formula-for-a-cell-in-excel-worksheets/
 weight: 80
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Ställ in formel för en cell i Excel kalkylblad
 ---
 Denna REST API indikerar set `cell formula` i en Excel fil.
  

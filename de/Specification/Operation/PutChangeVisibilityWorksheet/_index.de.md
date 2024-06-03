@@ -1,27 +1,28 @@
 ﻿---
-title: PutChangeVisibilityWorkshee
+title: PutChangeVisibilityWorksheet
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/putchangevisibilityworksheet/
-description: Ändern Sie die Sichtbarkeit des Arbeitsblatts in der Arbeitsmappe
+description: Ändern der Arbeitsblattsichtbarkeit in der Arbeitsmappe
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PutChangeVisibilityWorksheet
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutChangeVisibilityWorksheet" >}}
 {{< blocks/products/cells/docs-title titlemsg="Change worksheet visibility in the workbook." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/visible,PUT,Arbeitsblattsichtbarkeit in der Arbeitsmappe ändern.,<a href=\'https://apireference.aspose.cloud/cells/#/Worksheets/PutChangeVisibilityWorksheet\'>PutChangeVisibilityWorksheet </a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/visible,PUT,Sichtbarkeit des Arbeitsblatts in der Arbeitsmappe ändern.,<a href=\'https://apireference.aspose.cloud/cells/#/Worksheets/PutChangeVisibilityWorksheet\'>PutChangeVisibilityWorksheet</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Arbeitsblattname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Blattname, Zeichenfolge, Arbeitsblattname." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="isVisible, boolean, Neuer Sichtbarkeitswert für das Arbeitsblatt." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/WorksheetsController/PutChangeVisibilityWorksheet\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

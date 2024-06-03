@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postworkbookexportxml/
 description: Экспортируйте данные XML из файла Excel. Если в файле Excel есть карты XML, экспортируйте данные XML. Если в файле Excel нет карты XML, преобразуйте файл Excel в файл XML.
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostWorkbookExportXML
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookExportXML" >}}
@@ -18,7 +19,7 @@ weight: 50
      {{< blocks/products/cells/docs-Parameter-content columns="имя, строка, имя файла." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Имя параметра, тип, описание" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="пароль,строка,Пароль, необходимый для открытия файла Excel." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="пароль, строка, пароль, необходимый для открытия файла Excel." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="папка,строка,Папка, в которой находится файл." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="StorageName,string,Имя хранилища, в котором находится файл." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="outPath,string,Путь для сохранения результата. Если это один файл, outPath должен включать в себя как имя файла, так и расширение. В случае нескольких файлов outPath должен включать только папку." >}} 

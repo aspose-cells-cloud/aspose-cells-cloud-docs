@@ -1,32 +1,33 @@
 ﻿---
-title: PutWorksheetOleObjec
+title: Arbeitsblatt einfügenOleObject
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/putworksheetoleobject/
 description: Fügen Sie dem Arbeitsblatt ein OLE-Objekt hinzu
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PutWorksheetOleObject
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetOleObject" >}}
 {{< blocks/products/cells/docs-title titlemsg="Add an OLE object in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/oleobjects,PUT,Fügen Sie ein OLE-Objekt im Arbeitsblatt hinzu.,<a href=\'https://apireference.aspose.cloud/cells/#/OleObjects/PutWorksheetOleObject\'> PutWorksheetOleObject</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/oleobjects,PUT,Fügen Sie dem Arbeitsblatt ein OLE-Objekt hinzu.,<a href=\'https://apireference.aspose.cloud/cells/#/OleObjects/PutWorksheetOleObject\'>PutWorksheetOleObject</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblattes." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="upperLeftRow,integer,Index der oberen linken Zeile" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="UpperLeftColumn,Integer,Index der oberen linken Spalte" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="height,integer,Höhe von oleObject, in Pixeleinheiten" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="width,integer,Breite von oleObject, in Pixeleinheiten" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="oleFile,string,OLE-Dateinamenpfad (vollständiger Dateiname)." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="imageFile,string,Pfad des Bilddateinamens (vollständiger Dateiname)." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="upperLeftRow,integer,Oberer linker Zeilenindex" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="upperLeftColumn,integer,Index der oberen linken Spalte" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="height,integer,Höhe des oleObject, in Pixeleinheiten" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="width,integer,Breite des oleObjects, in Pixeleinheiten" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="oleFile, string, OLE-Dateinamepfad (vollständiger Dateiname)." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Bilddatei, Zeichenfolge, Pfad der Bilddatei (vollständiger Dateiname)." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/OleObjectsController/PutWorksheetOleObject\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

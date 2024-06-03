@@ -3,6 +3,7 @@ title: Ottieni MinRow dal foglio di lavoro Excel
 type: docs
 url: /it/get-minrow-from-excel-worksheet/
 weight: 80
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Ottieni MinRow da Excel Foglio di lavoro
 ---
 Questo REST API indica che viene ottenuto `minrow` in un file Excel quando il parametro `cellOrMethodName` è `minrow`.
 

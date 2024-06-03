@@ -3,24 +3,25 @@ title: 获取文档属性
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/getdocumentproperty/
-description: 按名称获取 Excel 房产
+description: 通过名称获取 Excel 房产
+kwords: Excel，Office，电子表格，云 REST API，GetDocumentProperty
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetDocumentProperty" >}}
 {{< blocks/products/cells/docs-title titlemsg="Get Excel property by name." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/documentproperties/{propertyName},GET,按名称获取 Excel 属性。,<a href=\'https://apireference.aspose.cloud/cells/#/Properties/GetDocumentProperty\'>GetDocumentProperty</a >" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/documentproperties/{propertyName},GET,通过名称获取 Excel 属性。,<a href=\'https://apireference.aspose.cloud/cells/#/Properties/GetDocumentProperty\'>GetDocumentProperty</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="参数名称、类型、描述" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="名称，字符串，工作簿名称。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="propertyName,字符串,属性名称。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="name,string,工作簿名称。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="propertyName，string，属性名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="文件夹，字符串，文件所在的文件夹。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,文件所在的存储名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName，string，文件所在的存储名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/PropertiesController/GetDocumentProperty\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

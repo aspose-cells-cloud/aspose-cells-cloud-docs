@@ -8,6 +8,7 @@ aliases: [/add-a-new-excel-worksheet/]
 keywords: Add an Excel worksheet
 description: Aspose.Cells Cloud REST API stöder att lägga till ett Excel kalkylblad. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 20
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Lägg till ett Excel kalkylblad
 ---
 Denna REST API indikerar `add new worksheet`.
  

@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/model/imageorprintoptions/
 description: "Aspose.Cells Molnmodellspecifikation: ImageOrPrintOptions. Hantera enkelt Excel och andra kalkylarksdokument med funktioner som att öppna, generera, redigera, dela, slå samman, jämföra och konvertera"
+kwords: Excel, Office, Kalkylblad, Cloud REST API, ImageOrPrintOptions
 weight: 50
 ---
 ## **imageOrPrintOptions**
 
- 
+ Tillåter att ange alternativ när du renderar kalkylblad till bilder, skriver ut kalkylblad eller renderar diagram till bild.
 
 | Egendomsnamn| Egenskapstyp| Nullbar| Endast läs| Standardvärde| Beskrivning|
 |:- |:- |:- |:- |:- |:- |
@@ -33,7 +34,7 @@ weight: 50
 | TiffColorDepth| Sträng| Sann| Falsk|| Färgdjup|
 | TiffCompression| Sträng| Sann| Falsk|| TiffCompression|
 | Utskriftssida| Sträng| Sann| Falsk|| PrintingPageType|
-|Kvalitet| Heltal| Sann| Falsk|||
+| Kvalitet| Heltal| Sann| Falsk|||
 | ImageType| Sträng| Sann| Falsk|| ImageType|
 | OnePagePerSheet| Boolean| Sann| Falsk|||
 | TiffBinarizationMethod| Sträng| Sann| Falsk|| ImageBinarizationMethod|

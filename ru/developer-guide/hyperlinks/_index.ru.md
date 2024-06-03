@@ -7,6 +7,7 @@ aliases: [/working-with-hyperlinks/,/working-with-hyperlink/]
 keywords: REST API, hyperlinks, spreadsheets, exce
 description: "Cells.Облако API для Excel Операция: работа с гиперссылками в файле Excel"
 weight: 100
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, гиперссылки
 ---
 &nbsp;&nbsp;&nbsp;&nbsp;Гиперссылки в Excel позволяют пользователям создавать ярлык для доступа к любому определенному листу, файлу, папке или веб-странице. Это помогает нам быстро добраться до любой конкретной папки или ссылки.
 

@@ -8,8 +8,9 @@ aliases: [/combines-a-range-of-cells-into-a-single-cell/]
 keywords: Merge a range of cells into a single cell
 description: Aspose.Cells Cloud REST API, bir dizi hücrenin Excel çalışma sayfasında tek bir hücrede birleştirilmesini destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 20
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Cells Aralığını Tek Hücrede Birleştirir
 ---
- Bu REST API, bir hücre aralığının Excel çalışma sayfasında tek bir hücrede birleştirileceğini gösterir.
+ Bu REST API, bir hücre aralığının Excel çalışma sayfasında tek bir hücrede birleştirileceğini belirtir.
             
  
 ## RSET API

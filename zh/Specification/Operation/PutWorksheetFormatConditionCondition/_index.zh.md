@@ -1,31 +1,32 @@
 ﻿---
-title: PutWorksheetFormatConditio
+title: 放置工作表格式条件条件
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/putworksheetformatconditioncondition/
-description: 在工作表中添加格式条件的条件
+description: 在工作表中添加格式条件
+kwords: Excel，Office，电子表格，云 REST API，PutWorksheetFormatConditionCondition
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetFormatConditionCondition" >}}
 {{< blocks/products/cells/docs-title titlemsg="Add a condition for the format condition in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}/condition,PUT,在工作表中添加格式条件的条件。,<a href=\'https://apireference.aspose.cloud/单元格/#/ConditionalFormattings/PutWorksheetFormatConditionCondition\'>PutWorksheetFormatConditionCondition</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}/condition,PUT,为工作表中的格式条件添加条件。,<a href=\'https://apireference.aspose.cloud/cells/#/ConditionalFormattings/PutWorksheetFormatConditionCondition\'>PutWorksheetFormatConditionCondition</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="参数名称、类型、描述" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="名称，字符串，文件名。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,字符串,工作表名称。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="index,integer,获取指定索引处的条件格式元素。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="name，string，文件名。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName，string，工作表名称。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="index，integer，获取指定索引处的条件格式元素。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="类型，字符串，格式条件类型（CellValue/Expression/ColorScale/DataBar/IconSet/Top10/UniqueValues/DuplicateValues/ContainsText/NotContainsText/BeginsWith/EndsWith/ContainsBlanks/NotContainsBlanks/ContainsErrors/NotContainsErrors/TimePeriod/AboveAverage）。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="operatorType,string,表示条件格式和数据验证的运算符类型(Between/Equal/GreaterThan/GreaterOrEqual/LessThan/None/NotBetween/NotEqual)。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="Formula1,字符串,与条件格式关联的值或表达式。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="Formula2,字符串,与条件格式关联的值或表达式。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="operatorType，string，表示条件格式和数据验证的运算符类型（Between/Equal/GreaterThan/GreaterOrEqual/LessThan/None/NotBetween/NotEqual）。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="formula1，string，与条件格式相关的值或表达式。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="formula2，string，与条件格式相关的值或表达式。" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="文件夹，字符串，文件所在的文件夹。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,文件所在的存储名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName，string，文件所在的存储名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/ConditionalFormattingsController/PutWorksheetFormatConditionCondition\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

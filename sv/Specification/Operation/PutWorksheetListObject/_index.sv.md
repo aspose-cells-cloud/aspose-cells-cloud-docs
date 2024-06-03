@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/putworksheetlistobject/
 description: Lägg till ett ListObject i kalkylbladet
+kwords: Excel, Office, Kalkylblad, Cloud REST API, PutWorksheetListObject
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetListObject" >}}

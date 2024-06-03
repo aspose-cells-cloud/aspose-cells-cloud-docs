@@ -7,6 +7,7 @@ aliases: [/working-with-worksheets/]
 keywords: REST API, spreadsheets, excel, cell
 description: "Cells.Cloud API, Excel için çalışır: hücreler çalışır"
 weight: 100
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Cells
 ---
  Cells, excel dosyası için Aspose.Cells'in temel çalıştırma nesnesidir.
 

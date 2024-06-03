@@ -6,6 +6,7 @@ aliases: [/update-a-comment-in-excel-workbook/]
 keywords: REST API, spreadsheets, excel, update commen
 description: "Cells. Cloud API för Excel fungera: uppdatera kommentar"
 weight: 30
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Update
 ---
 Denna REST API anger cellkommentaren för Uppdatera arbetsbladet.
  

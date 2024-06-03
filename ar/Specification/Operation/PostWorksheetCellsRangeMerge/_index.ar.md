@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postworksheetcellsrangemerge/
 description: دمج نطاق من الخلايا في خلية واحدة
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostWorksheetCellsRangeMerge
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangeMerge" >}}

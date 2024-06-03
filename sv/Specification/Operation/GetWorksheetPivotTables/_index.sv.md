@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/getworksheetpivottables/
 description: Hämta beskrivningar av pivottabeller i arbetsbladet
+kwords: Excel, Office, Kalkylblad, Cloud REST API, GetWorksheetPivotTables
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetPivotTables" >}}

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/postheader/
 description: Aggiorna l'intestazione della pagina nel foglio di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PostHeader
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostHeader" >}}

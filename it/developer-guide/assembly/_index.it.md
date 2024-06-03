@@ -6,6 +6,7 @@ url: /it/assembly/
 keywords: Assemble data in Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) files
 description: Aspoe.Cells Cloud genera report nei file XLS, XLSX, XLSM, XLSB e ODS utilizzando il modello e la scheda tecnica. Elabora gli indicatori intelligenti nel modello per riempire i dati da un altro foglio dati. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 40
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Assemblaggio
 ---
 Questo REST API indica i dati `assembly` in un file Excel.
 

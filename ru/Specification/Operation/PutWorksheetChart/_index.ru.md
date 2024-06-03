@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/putworksheetchart/
 description: Добавьте новую диаграмму на лист
+kwords: Excel, Office, электронная таблица, Cloud REST API, PutWorksheetChart
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetChart" >}}

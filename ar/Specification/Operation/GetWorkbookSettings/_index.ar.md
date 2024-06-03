@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/getworkbooksettings/
 description: استرداد أوصاف إعدادات المصنف
+kwords: Excel، Office، جدول البيانات، Cloud REST API، GetWorkbookSettings
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorkbookSettings" >}}

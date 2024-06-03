@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/putworkbookcreate/
 description: Skapa en ny arbetsbok med olika metoder
+kwords: Excel, Office, Kalkylblad, Cloud REST API, PutWorkbookCreate
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorkbookCreate" >}}

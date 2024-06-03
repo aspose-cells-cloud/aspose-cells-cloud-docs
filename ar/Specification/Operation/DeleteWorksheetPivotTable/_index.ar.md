@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/deleteworksheetpivottable/
 description: حذف PivotTable حسب الفهرس في ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، DeleteWorksheetPivotTable
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetPivotTable" >}}

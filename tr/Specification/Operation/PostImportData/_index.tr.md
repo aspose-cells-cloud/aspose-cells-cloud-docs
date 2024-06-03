@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/postimportdata/
 description: Verileri Excel dosyasına aktarın
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PostImportData
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostImportData" >}}
@@ -23,7 +24,7 @@ weight: 50
     {{< blocks/products/cells/docs-Parameter-content columns="bölge,dize,Çalışma kitabının bölgesel ayarları." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Parametre Adı,Tip,Açıklama" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns=" importOption,class:importoption,İçe aktarma seçeneği. Bunlar arasında ImportCSVDataOption, ImportBatchDataOption, ImportPictureOption, ImportStringArrayOption, Import2DimensionStringArrayOption vb. bulunur." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="importOption,class:importoption,İçe aktarma seçeneği. Bunlar arasında ImportCSVDataOption, ImportBatchDataOption, ImportPictureOption, ImportStringArrayOption, Import2DimensionStringArrayOption vb. bulunur." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

@@ -4,13 +4,14 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/putworksheetshape/
 description: Çalışma sayfasına şekil ekleme
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PutWorksheetShape
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetShape" >}}
 {{< blocks/products/cells/docs-title titlemsg="Add a shape in the worksheet." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Açıklama,API referans" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/shapes,PUT,Çalışma sayfasına şekil ekleyin.,<a href=\'https://apireference.aspose.cloud/cells/#/Shapes/PutWorksheetShape\'>PutWorksheetShape </a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/shapes,PUT,Çalışma sayfasına bir şekil ekleyin.,<a href=\'https://apireference.aspose.cloud/cells/#/Shapes/PutWorksheetShape\'>PutWorksheetShape </a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
@@ -23,7 +24,7 @@ weight: 50
     {{< blocks/products/cells/docs-Parameter-content columns="UpperLeftRow,integer,Sol üst satır dizini." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="UpperLeftColumn,integer,Sol üst sütun dizini." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="top,integer,Spinner\'ın sol satırından dikey uzaklığını piksel cinsinden temsil eder." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="left,integer,Spinner\'ın sol sütunundan yatay uzaklığını piksel cinsinden temsil eder." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="left,integer,Spinner\'ın sol sütunundan yatay uzaklığını piksel biriminde temsil eder." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="genişlik,integer,Piksel birimi cinsinden Spinner\'ın yüksekliğini temsil eder." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="height,integer,Spinner\'ın genişliğini piksel birimi cinsinden temsil eder." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="klasör,dize,Dosyanın bulunduğu klasör." >}} 

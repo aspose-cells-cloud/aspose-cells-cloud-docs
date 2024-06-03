@@ -3,27 +3,28 @@ title: PostUpdateWorksheetPropert
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postupdateworksheetproperty/
-description: Aktualisieren Sie die Arbeitsblatteigenschaften in der Arbeitsmappe
+description: Aktualisieren der Arbeitsblatteigenschaften in der Arbeitsmappe
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostUpdateWorksheetProperty
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostUpdateWorksheetProperty" >}}
 {{< blocks/products/cells/docs-title titlemsg="Update worksheet properties in the workbook." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName},POST,Arbeitsblatteigenschaften in der Arbeitsmappe aktualisieren.,<a href=\'https://apireference.aspose.cloud/cells/#/Worksheets/PostUpdateWorksheetProperty\'>PostUpdateWorksheetProperty</ a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName},POST,Arbeitsblatteigenschaften in der Arbeitsmappe aktualisieren.,<a href=\'https://apireference.aspose.cloud/cells/#/Worksheets/PostUpdateWorksheetProperty\'>PostUpdateWorksheetProperty</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="sheet,class:worksheet,Die Arbeitsblattbeschreibung." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Blatt, Klasse: Arbeitsblatt, Die Arbeitsblattbeschreibung." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

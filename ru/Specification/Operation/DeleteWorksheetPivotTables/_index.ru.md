@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/deleteworksheetpivottables/
 description: Удаление сводных таблиц на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, DeleteWorksheetPivotTables
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetPivotTables" >}}

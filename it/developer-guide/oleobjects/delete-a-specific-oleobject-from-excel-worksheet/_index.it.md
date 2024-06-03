@@ -8,6 +8,7 @@ aliases: [/delete-a-specific-oleobject-from-excel-worksheet/]
 keywords: Delete an OLE object in an Excel worksheet
 description: Aspose.Cells Cloud REST API supporta l'eliminazione di un oggetto OLE in un foglio di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 50
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Elimina un oggetto OLE in un foglio di lavoro Excel
 ---
 Questo REST API indica `delete` un oggetto OLE in un foglio di lavoro Excel.
  
@@ -22,7 +23,7 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjec
  
 | Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
 |:- |:- |:- |:- |
-| nome| corda| sentiero|Il nome della cartella di lavoro.|
+| nome| corda| sentiero| Il nome della cartella di lavoro.|
 | nomefoglio| corda| sentiero| Il nome del foglio di lavoro.|
 | oleObjectIndex| numero intero| sentiero| Indice degli oggetti Ole|
 | cartella| corda| domanda| La cartella della cartella di lavoro.|

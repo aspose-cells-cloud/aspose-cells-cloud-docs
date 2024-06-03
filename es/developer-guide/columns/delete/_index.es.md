@@ -8,6 +8,7 @@ aliases: [/delete-column-from-an-excel-worksheet/,/delete-column-from-a-workshee
 keywords: Delete column on an Excel workshee
 description: Aspose.Cells Cloud REST API admite la eliminación de columnas en una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 80
+kwords: Excel, Office Cloud, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Eliminar una columna en una hoja de trabajo Excel
 ---
 Este REST API copia `column` en una hoja de trabajo Excel.
 
@@ -22,17 +23,17 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/co
  
 | Nombre del parámetro| Tipo| Ruta/Cadena de consulta/Cuerpo HTTP|Descripción|
 |:- |:- |:- |:- |
-| nombre| cadena| camino|El nombre del libro de trabajo.|
+| nombre| cadena| camino| El nombre del libro de trabajo.|
 | nombre de la hoja| cadena| camino| El nombre de la hoja de trabajo.|
 | columnaÍndice| entero| camino| El índice de la columna.|
 | columnas| entero| consulta| Las columnas.|
-| actualizarReferencia| booleano| consulta| La referencia de actualización.|
+| actualizarReferencia|booleano| consulta| La referencia de actualización.|
 | carpeta| cadena| consulta| La carpeta del libro de trabajo.|
 | nombredealmacenamiento| cadena| consulta| nombre del almacenamiento.|
 
  El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetColumns) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
 
- Puedes usar**cURL** Herramienta de línea de comandos para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
+ Puedes usar**cURL**Herramienta de línea de comandos para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 

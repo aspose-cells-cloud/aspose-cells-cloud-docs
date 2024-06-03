@@ -8,6 +8,7 @@ aliases: [/delete-all-shapes-inside-the-worksheet/]
 keywords: Delete all shapes on an Excel workshee
 description: Aspose.Cells Cloud REST API admite la eliminación de todas las formas en una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 40
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Eliminar todas las formas en una hoja de trabajo Excel
 ---
 Este REST API indica eliminar todas las formas en una hoja de trabajo Excel.
  

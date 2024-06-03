@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/postbatchprotect/
 description: Belirli eşleşme koşullarını karşılayan dosyaları toplu koruma
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PostBatchProtect
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostBatchProtect" >}}
@@ -15,7 +16,7 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Parametre Adı,Tip,Açıklama" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="BatchProtectRequest,class:batchprotectrequest,BatchProtectRequest Toplu koruma dosyası isteği." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns=" BatchProtectRequest,class:batchprotectrequest,BatchProtectRequest Toplu koruma dosyası isteği." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

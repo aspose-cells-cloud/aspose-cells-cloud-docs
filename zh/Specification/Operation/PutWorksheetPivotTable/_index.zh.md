@@ -4,27 +4,28 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/putworksheetpivottable/
 description: 在工作表中添加数据透视表
+kwords: Excel，Office，电子表格，Cloud REST API，PutWorksheetPivotTable
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetPivotTable" >}}
 {{< blocks/products/cells/docs-title titlemsg="Add a PivotTable in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pivottables,PUT,在工作表中添加数据透视表。,<a href=\'https://apireference.aspose.cloud/cells/#/PivotTables/PutWorksheetPivotTable\'>PutWorksheetPivotTable </a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pivottables,PUT,在工作表中添加数据透视表。,<a href=\'https://apireference.aspose.cloud/cells/#/PivotTables/PutWorksheetPivotTable\'>PutWorksheetPivotTable</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="参数名称、类型、描述" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="名称，字符串，文件名。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,字符串,工作表名称。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="name，string，文件名。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName，string，工作表名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="文件夹，字符串，文件所在的文件夹。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="sourceData，字符串，新数据透视表缓存的数据。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="destCellName,字符串,数据透视表目标范围左上角的单元格。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="tableName,字符串,新数据透视表的名称。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="useSameSource,boolean,指示当另一个现有数据透视表已使用此数据源时是否使用相同的数据源。如果该属性为 true，则会节省内存。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,文件所在的存储名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="sourceData，string，新数据透视表缓存的数据。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="destCellName，string，数据透视表目标范围左上角的单元格。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="tableName，string，新数据透视表的名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="useSameSource,boolean,当另一个现有的数据透视表已经使用了此数据源时，是否使用相同的数据源。如果该属性为 true，则可以节省内存。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName，string，文件所在的存储名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/PivotTablesController/PutWorksheetPivotTable\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

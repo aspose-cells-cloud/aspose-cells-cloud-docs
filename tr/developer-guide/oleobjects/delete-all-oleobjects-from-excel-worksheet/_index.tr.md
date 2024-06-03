@@ -8,6 +8,7 @@ aliases: [/delete-all-oleobjects-from-excel-worksheet/]
 keywords: Delete all OLE objects in an Excel worksheet
 description: Aspose.Cells Cloud REST API, Excel çalışma sayfasındaki tüm OLE nesnelerinin silinmesini destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 60
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel çalışma sayfasındaki tüm OLE nesnelerini silin
 ---
 Bu REST API, Excel çalışma sayfasında `delete all` OLE nesnesini gösterir.
  
@@ -22,7 +23,7 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjec
  
 | Parametre adı| Tip| Yol/Sorgu Dizesi/HTTPBody|Tanım|
 |:- |:- |:- |:- |
-| isim| sicim| yol|Çalışma kitabı adı.|
+| isim| sicim| yol| Çalışma kitabı adı.|
 | sayfaAdı| sicim| yol| Kötü sayfa adı.|
 | dosya| sicim| sorgu| Çalışma kitabı klasörü.|
 | depolamaAdı| sicim| sorgu| depolama adı.|

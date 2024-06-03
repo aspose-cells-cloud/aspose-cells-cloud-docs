@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postreverse/
 description: Inversez les lignes ou les colonnes des fichiers Excel et créez des fichiers de sortie dans différents formats
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostReverse
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostReverse" >}}

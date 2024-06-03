@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/deleteworksheetsparklinegroups/
 description: Удаление групп спарклайнов на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, DeleteWorksheetSparklineGroups
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetSparklineGroups" >}}

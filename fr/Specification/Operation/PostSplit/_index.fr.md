@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postsplit/
 description: Divisez les fichiers de feuille de calcul Excel en fonction de feuilles de calcul et créez des fichiers de sortie dans différents formats
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostSplit
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostSplit" >}}

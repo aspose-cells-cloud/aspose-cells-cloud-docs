@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/deletedecryptworkbook/
 description: Excel расшифровка файлов
+kwords: Excel, Office, электронная таблица, Cloud REST API, DeleteDecryptWorkbook
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteDecryptWorkbook" >}}

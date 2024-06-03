@@ -8,6 +8,7 @@ aliases: [/working-with-worksheets/]
 keywords: Working with worksheet on an Excel workbook
 description: Aspose.Cells Cloud REST API دعم العمل مع ورقة العمل في مصنف Excel. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 100
+kwords: Excel، Office كلاود، ريست API، جدول بيانات، PDF، CSV، Json، Markdwon، العمل مع ورقة عمل Excel.
 ---
 ورقة العمل عبارة عن مجموعة من الخلايا حيث يمكنك الاحتفاظ بالبيانات ومعالجتها. يمكن أن يحتوي كل مصنف Excel على أوراق عمل متعددة.
 

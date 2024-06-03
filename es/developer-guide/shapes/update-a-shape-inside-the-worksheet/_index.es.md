@@ -8,6 +8,7 @@ aliases: [/update-a-shape-inside-the-worksheet/]
 keywords: Update a shape on an Excel workshee
 description: Aspose.Cells Cloud REST API admite la actualización de una forma en una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 31
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Actualizar una forma en una hoja de trabajo Excel
 ---
 Este REST API indica actualizar una forma en una hoja de trabajo Excel.
  

@@ -3,6 +3,7 @@ title: Obtenir des données cellulaires à partir d'une feuille de travail
 type: docs
 url: /fr/get-cell-data-from-a-worksheet/
 weight: 10
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, obtenir des données cellulaires à partir d'une feuille de calcul
 ---
 Ce REST API indique que les spectacles obtiennent un `cell` dans un fichier Excel lorsque le paramètre `cellOrMethodName` est le nom de la cellule.
 

@@ -8,6 +8,7 @@ aliases: [/add-a-shape-inside-the-worksheet/]
 keywords: Add shape on an Excel workshee
 description: Aspose.Cells Cloud REST API prend en charge l'ajout de forme sur une feuille de calcul Excel. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 30
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdwon, Ajouter une forme sur une feuille de calcul Excel
 ---
 Ce REST API indique d'ajouter une forme sur une feuille de calcul Excel.
  
@@ -20,7 +21,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Nom du document.|
 | Nom de la feuille| chaîne| chemin| nom de la feuille de calcul.|

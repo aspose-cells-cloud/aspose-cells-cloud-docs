@@ -6,6 +6,7 @@ url: /fr/compress/
 keywords: Compress excel files
 description: Aspose.Cells Cloud REST API prend en charge la compression des fichiers Excel. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 39
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdwon, Compresser
 ---
 Ce REST API indique à `compress` des données dans un fichier Excel.
 
@@ -24,7 +25,7 @@ POST https://api.aspose.cloud/v3.0/cells/compress
 
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | déposer| déposer| Données de formulaire| Fichier à télécharger|
 | Niveau de compression| entier| requête||

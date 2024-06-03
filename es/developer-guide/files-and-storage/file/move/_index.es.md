@@ -6,6 +6,7 @@ url: /es/file/move/
 keywords: Learn how to download file with Aspose Cells Cloud REST API
 description: Aprenda a descargar archivos con Aspose Cells Cloud REST API SDK que admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 100
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Mover archivo
 ---
 Este REST API indica `move file`
  
@@ -20,7 +21,7 @@ PUT http://api.aspose.cloud/v3.0/cells/storage/file/move/{srcPath}
  
 | Nombre del parámetro| Tipo| Ruta/Cadena de consulta/Cuerpo HTTP|Descripción|
 |:- |:- |:- |:- |
-| srcPath| cadena| camino| Ruta del archivo fuente, por ejemplo, '/src.ext'|
+| srcPath| cadena| camino|Ruta del archivo fuente, por ejemplo, '/src.ext'|
 | rutadestino| cadena| consulta| Ruta del archivo de destino, por ejemplo, '/dest.ext'|
 | srcNombreAlmacenamiento| cadena| consulta| Nombre del almacenamiento de origen|
 | nombredealmacenamientodestino| cadena| consulta| Nombre del almacenamiento de destino|

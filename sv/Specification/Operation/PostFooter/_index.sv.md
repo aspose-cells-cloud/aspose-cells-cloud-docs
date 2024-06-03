@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/postfooter/
 description: Uppdatera sidfoten i kalkylbladet
+kwords: Excel, Office, Kalkylblad, Cloud REST API, PostFooter
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostFooter" >}}

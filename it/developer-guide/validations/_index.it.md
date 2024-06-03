@@ -6,6 +6,7 @@ url: /it/validations/
 keywords: Working with validations on an Excel file
 description: Aspose.Cells Cloud REST API supporta il funzionamento con convalide su un file Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 100
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Validazioni
 ---
 La convalida dei dati è una funzionalità di MS Excel utilizzata per controllare ciò che un utente può inserire in una cella di un foglio Excel. Ad esempio, limita le voci in un foglio, ad esempio un intervallo di date o solo numeri interi. Possiamo anche creare menu a discesa, risparmiando spazio non necessario e mostrando i valori in una singola cella. Inoltre, possiamo creare un messaggio personalizzato che apparirà all'utente che inserisce un valore errato o un formato errato.
 

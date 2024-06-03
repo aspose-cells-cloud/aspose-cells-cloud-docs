@@ -7,6 +7,7 @@ aliases: [/working-with-pivot-tables/]
 keywords: Working with pivot table on an Excel worksheet
 description: Comment faire fonctionner les API Cloud REST Aspose.Cells avec un tableau croisé dynamique dans une feuille de calcul Excel. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 100
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, tableaux croisés dynamiques
 ---
 ## Travailler avec des tableaux croisés dynamiques sur un fichier Excel.
 

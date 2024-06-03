@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/getworkbooknames/
 description: Récupérer les plages nommées dans le classeur
+kwords: Excel, Office, feuille de calcul, Cloud REST API, GetWorkbookNames
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorkbookNames" >}}

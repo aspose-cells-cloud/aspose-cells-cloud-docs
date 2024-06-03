@@ -4,13 +4,14 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/getworksheetautofilter/
 description: استرداد وصف المرشحات التلقائية من ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، GetWorksheetAutoFilter
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetAutoFilter" >}}
 {{< blocks/products/cells/docs-title titlemsg="Retrieve the description of auto filters from a worksheet." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API، طريقة المتشعب، الوصف، مرجع API" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/autoFilter,GET,استرجاع وصف عوامل التصفية التلقائية من ورقة العمل.,<a href=\'https://apireference.aspose.cloud/cells/#/AutoFilter/GetWorksheetAutoFilter \'>GetWorksheetAutoFilter</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/autoFilter,GET,استرجاع وصف المرشحات التلقائية من ورقة العمل.,<a href=\'https://apireference.aspose.cloud/cells/#/AutoFilter/GetWorksheetAutoFilter \'>GetWorksheetAutoFilter</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

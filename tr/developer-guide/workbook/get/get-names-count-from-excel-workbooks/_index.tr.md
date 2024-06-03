@@ -8,6 +8,7 @@ aliases: [/get-names-count-from-excel-workbooks/,/workbook/names/]
 keywords: Getting names on an Excel workbook
 description: Aspose.Cells Cloud REST API, Excel çalışma kitabında ad almayı destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 120
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel çalışma kitabındaki adları alın
 ---
 Bu REST API, Excel çalışma kitabından ad alınacağını belirtir.
  
@@ -22,7 +23,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/names
  
 | Parametre adı| Tip| Yol/Sorgu Dizesi/HTTPBody|Tanım|
 |:- |:- |:- |:- |
-| isim| sicim| yol|Çalışma kitabı adı.|
+| isim| sicim| yol| Çalışma kitabı adı.|
 | dosya| sicim| sorgu| Çalışma kitabı klasörü.|
 | depolamaAdı| sicim| sorgu| depolama adı.|
  

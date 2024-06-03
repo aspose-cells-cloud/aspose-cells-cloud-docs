@@ -8,6 +8,7 @@ aliases: [/convert-excel-workbook-to-different-file-formats/]
 keywords: Convert excel files to kinds of format files
 description: Aspose.Cells Cloud REST API поддерживает преобразование файлов Excel в различные форматы файлов. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 10
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, конвертировать Excel
 ---
 Этот REST API указывает на файл Excel `convert` в файл другого формата.
 
@@ -37,7 +38,7 @@ weight: 10
 
 [Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) определяет общедоступный интерфейс программирования и позволяет выполнять взаимодействие с REST непосредственно из веб-браузера.
 
- Вы можете использовать**cURL** инструмент командной строки для легкого доступа к веб-службам Aspose.Cells. В следующем примере показано, как позвонить на Cloud API с помощью cURL.
+ Вы можете использовать**cURL**инструмент командной строки для легкого доступа к веб-службам Aspose.Cells. В следующем примере показано, как позвонить на Cloud API с помощью cURL.
 
 
 {{< tabs tabTotal="1" tabID="11" tabName11="Request" >}}

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/postrowstyle/
 description: Aplicar formatos a una fila completa en la hoja de trabajo
+kwords: Excel, Office, Hoja de cálculo, Nube REST API, PostRowStyle
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostRowStyle" >}}

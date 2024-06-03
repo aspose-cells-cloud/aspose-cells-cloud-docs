@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/getworksheetpictures/
 description: Recuperar descripciones de imágenes en la hoja de trabajo.
+kwords: Excel, Office, Hoja de cálculo, Nube REST API, GetWorksheetPictures
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetPictures" >}}

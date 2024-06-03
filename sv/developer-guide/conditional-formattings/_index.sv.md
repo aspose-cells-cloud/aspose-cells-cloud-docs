@@ -7,6 +7,7 @@ aliases: [/working-with-conditional-formatting/]
 keywords: REST API, spreadsheets, excel, conditional formattin
 description: "Cells. Cloud API för Excel fungerar: villkorlig formatering fungerar"
 weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Villkorsformatering
 ---
 &nbsp;&nbsp;&nbsp;&nbsp;Villkorlig formatering i Excel gör att du kan markera celler med en viss färg, beroende på cellens värde.
 

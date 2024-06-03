@@ -8,6 +8,7 @@ aliases: [/working-with-worksheets/]
 keywords: Working with worksheet on an Excel workbook
 description: Aspose.Cells Cloud REST API, Excel çalışma kitabındaki çalışma sayfasıyla çalışmayı destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 100
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel çalışma sayfasıyla çalışma.
 ---
 Çalışma sayfası, verileri sakladığınız ve değiştirdiğiniz bir hücre koleksiyonudur. Her Excel çalışma kitabı birden fazla çalışma sayfası içerebilir.
 
@@ -28,7 +29,7 @@ weight: 100
 - [Excel çalışma sayfası nasıl kopyalanır?](/cells/tr/worksheets/copy/)
 - [Excel çalışma sayfasını nasıl yeniden adlandırabilirim?](/cells/tr/worksheets/rename/)
 - [Excel çalışma sayfası özellikleri nasıl güncelleştirilir?](/cells/tr/worksheets/update-properties/)
-- [Excel çalışma sayfası yakınlaştırma nasıl ayarlanır.](/cells/tr/worksheets/zoom/)
+- [Excel çalışma sayfası yakınlaştırma nasıl ayarlanır?](/cells/tr/worksheets/zoom/)
 - [Excel çalışma sayfası bölmeleri nasıl dondurulur.](/cells/tr/worksheets/freeze-panes/)
 - [Excel çalışma sayfası bölmeleri nasıl çözülür?](/cells/tr/worksheets/unfreeze-panes/)
 - [Excel çalışma sayfası nasıl silinir?](/cells/tr/worksheets/delete/)

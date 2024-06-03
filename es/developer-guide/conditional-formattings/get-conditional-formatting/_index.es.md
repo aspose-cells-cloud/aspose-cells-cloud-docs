@@ -6,6 +6,7 @@ aliases: [/get-conditional-formatting/]
 keywords: REST API, spreadsheets, excel, get condition formattin
 description: "Cells.Cloud API para Excel operar: obtener formato de condición"
 weight: 10
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Obtener formato condicional
 ---
 Este REST API indica Obtener formato condicional
  

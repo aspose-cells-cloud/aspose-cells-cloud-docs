@@ -3,6 +3,7 @@ title: Obtenez la propriété Cells
 type: docs
 url: /fr/get-cells-properties/
 weight: 130
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, obtenir les propriétés Cells
 ---
 Ce REST API indique comment `get a specific cell` dans un fichier Excel.
 
@@ -15,7 +16,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cell
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Nom du document.|
 | Nom de la feuille| chaîne| chemin| Nom de la feuille de calcul.|

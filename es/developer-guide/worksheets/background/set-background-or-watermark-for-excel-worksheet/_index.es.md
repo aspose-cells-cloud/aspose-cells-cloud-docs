@@ -8,6 +8,7 @@ aliases: [/set-background-or-watermark-for-excel-worksheet/]
 keywords: Delete an Excel worksheet on an Excel workbook
 description: Aspose.Cells Cloud REST API admite la eliminación de una hoja de trabajo Excel en un libro de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 180
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Establecer fondo en una hoja de trabajo Excel
 ---
 Este REST API indica `add worksheet background image`.
  
@@ -24,7 +25,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/background
 |:- |:- |:- |:- |
 | nombre| cadena| camino||
 | nombre de la hoja| cadena| camino||
-| png|| cuerpo||
+|png|| cuerpo||
 | carpeta| cadena| consulta||
 | nombredealmacenamiento| cadena| consulta| nombre del almacenamiento.|
  

@@ -4,6 +4,7 @@ type: docs
 url: /tr/charts/propreties/update/
 aliases: [/update-chart-propreties/]
 weight: 160
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Grafik Özelliklerini Güncelle
 ---
 Bu REST API, güncelleme grafiği özelliklerini gösterir
  

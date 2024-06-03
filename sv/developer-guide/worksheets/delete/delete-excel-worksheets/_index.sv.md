@@ -1,5 +1,5 @@
 ﻿---
-title: Ta bort flera Excel kalkylblad
+title: Ta bort flera kalkylblad Excel
 second_title: Aspose.Cells Cloud Documen
 linktitle: Flera arbetsblad
 type: docs
@@ -8,6 +8,7 @@ aliases: [/delete-excel-worksheets/]
 keywords: Delete multiple Excel worksheets on an Excel workbook
 description: Aspose.Cells Cloud REST API stöder radering av flera Excel-kalkylblad i en Excel-arbetsbok. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 20
+kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdwon, Ta bort flera Excel kalkylblad
 ---
 Denna REST API indikerar `delete multiple worksheets`.
  

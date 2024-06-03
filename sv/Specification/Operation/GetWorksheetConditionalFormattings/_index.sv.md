@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/getworksheetconditionalformattings/
 description: Hämta beskrivningar av villkorlig formatering i ett kalkylblad
+kwords: Excel, Office, Kalkylblad, Cloud REST API, GetWorksheetConditionalFormattings
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetConditionalFormattings" >}}

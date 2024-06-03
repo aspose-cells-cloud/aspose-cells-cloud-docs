@@ -3,6 +3,7 @@ title: Modifica lo stile della cella nel foglio di lavoro Excel
 type: docs
 url: /it/change-cell-style-in-excel-worksheet/
 weight: 30
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Modifica stile cella nel foglio di lavoro Excel
 ---
 Questo REST API indica l'aggiornamento `cell style` in un file Excel.
 

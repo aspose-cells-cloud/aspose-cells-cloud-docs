@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/getworksheetcharts/
 description: Recuperar descripciones de gráficos en la hoja de trabajo.
+kwords: Excel, Office, Hoja de cálculo, Cloud REST API, GetWorksheetCharts
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetCharts" >}}

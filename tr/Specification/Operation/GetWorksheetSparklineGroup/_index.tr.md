@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/getworksheetsparklinegroup/
 description: Çalışma sayfasındaki mini grafik grubunun açıklamasını alma
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, GetWorksheetSparklineGroup
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetSparklineGroup" >}}

@@ -5,6 +5,7 @@ type: docs
 url: /sv/getting-started/
 description: Aspose.Cells Cloud stöder Excel för att skapa, konvertera, sammanfoga, dela, skydda, inre objektoperation och så vidare
 weight: 10
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Komma igång
 ---
 Denna Komma igång ger denna introduktion till Aspose.Cells Grunderna i molnet. För användare som är nya i Aspose.Cells Cloud är detta det snabbaste sättet att lära sig de grundläggande kraven och funktionerna och komma igång.
 
@@ -12,7 +13,7 @@ För att ta reda på mer om Aspose.Cells Cloud, välj lämpligt avsnitt:
 
 - [Översikt](/cells/sv/overview/).
 - [Snabbstart](/cells/sv/quickstart/).
-- [Tillgängliga SDK:er](/cells/sv/available-sdks/) – ger information om Aspose.Cells Cloud SDK.
+- [Tillgängliga SDK:er](/cells/sv/available-sdks/)– ger information om Aspose.Cells Cloud SDK.
 - [Plattformar som stöds](/cells/sv/supported-platforms/) – ger information om plattformar som stöds.
 - [Filformat som stöds](/cells/sv/supported-file-formats/) – ger information om format som stöds.
 - [Utvärdera Aspose.Cells Moln](/cells/sv/evaluate-aspose-cells/).

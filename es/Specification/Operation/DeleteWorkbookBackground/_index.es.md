@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/deleteworkbookbackground/
 description: Eliminar fondo en el libro de trabajo
+kwords: Excel, Office, hoja de cálculo, nube REST API, eliminar fondo del libro de trabajo
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorkbookBackground" >}}

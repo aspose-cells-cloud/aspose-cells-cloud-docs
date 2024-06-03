@@ -7,6 +7,7 @@ url: /tr/validations/get-all/
 keywords: Get all worksheet validations from an Excel worksheet
 description: Aspose.Cells Cloud REST API, tüm çalışma sayfası doğrulamalarının Excel çalışma sayfasından alınmasını destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 10
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel çalışma sayfasından tüm çalışma sayfası doğrulamalarını alın
 ---
 Bu REST API, tüm çalışma sayfası doğrulamalarının Excel çalışma sayfasında alınması gerektiğini belirtir.
  

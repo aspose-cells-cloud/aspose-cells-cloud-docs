@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/getpivottablefield/
 description: PivotTable'daki pivot alanların açıklamalarını alma
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, GetPivotTableField
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetPivotTableField" >}}

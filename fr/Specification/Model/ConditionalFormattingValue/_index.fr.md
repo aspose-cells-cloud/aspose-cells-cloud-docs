@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/model/conditionalformattingvalue/
 description: "Aspose.Cells Spécification du modèle cloud : ConditionalFormattingValue. Gérez sans effort Excel et d'autres feuilles de calcul avec des fonctionnalités telles que l'ouverture, la génération, l'édition, le fractionnement, la fusion, la comparaison et la conversion."
+kwords: Excel, Office, feuille de calcul, Cloud REST API, ConditionalFormattingValue
 weight: 50
 ---
 ## **valeur de formatage conditionnelle**
 
- 
+ Décrit les valeurs des points d'interpolation dans une échelle de dégradé, dataBar ou iconSet.
 
 | Nom de la propriété| Type de propriété| Nullable| Lecture seulement| Valeur par défaut| Description|
 |:- |:- |:- |:- |:- |:- |

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/postworksheetcellsrangemerge/
 description: Fusionar un rango de celdas en una sola celda
+kwords: Excel, Office, hoja de cálculo, nube REST API, PostWorksheetCellsRangeMerge
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangeMerge" >}}

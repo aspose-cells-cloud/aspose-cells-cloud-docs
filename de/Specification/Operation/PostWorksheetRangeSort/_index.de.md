@@ -3,28 +3,29 @@ title: PostWorksheetRangeSor
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postworksheetrangesort/
-description: Sortieren Sie einen Bereich im Arbeitsblatt
+description: Sortieren eines Bereichs im Arbeitsblatt
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostWorksheetRangeSort
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetRangeSort" >}}
 {{< blocks/products/cells/docs-title titlemsg="Sort a range in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/sort,POST,Sortieren Sie einen Bereich im Arbeitsblatt.,<a href=\'https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetRangeSort\'>PostWorksheetRangeSort </a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/sort,POST,Sortiert einen Bereich im Arbeitsblatt.,<a href=\'https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetRangeSort\'>PostWorksheetRangeSort</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="cellArea,string,Der zum Sortieren benötigte Bereich." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="cellArea, string, Der Bereich, der sortiert werden muss." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="dataSorter,class:datasorter,DataSorter mit Sortiereinstellungen." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="dataSorter, Klasse: datasorter, DataSorter mit Sortiereinstellungen." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

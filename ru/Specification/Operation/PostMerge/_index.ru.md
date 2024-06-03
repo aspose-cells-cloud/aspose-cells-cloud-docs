@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postmerge/
 description: Объединить ячейки на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostMerge
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostMerge" >}}
@@ -15,9 +16,9 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Имя параметра, тип, описание" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="Outformat, String, формат файла выходных данных. (CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/07613481/076148484848484848484848484484848484848484848484848484848484848484848484848484848484848484848484848484848484848484848484848484848484848нт. GIF/EMF /BMP/MD[Markdown]/Числа)" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="outFormat,строка,формат файла выходных данных.(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/07616348 1 /BMP/MD[Markdown]/Числа)" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="mergeToOneSheet,boolean,Объединить все книги в один лист." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="пароль,строка,Пароль, необходимый для открытия файла Excel." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="пароль, строка, пароль, необходимый для открытия файла Excel." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction,boolean, проверяется ли ограничение файла Excel, когда пользователь изменяет связанные объекты ячеек." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="регион,строка,Региональные настройки книги." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}

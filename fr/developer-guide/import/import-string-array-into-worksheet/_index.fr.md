@@ -6,8 +6,9 @@ type: docs
 url: /fr/import/string-array/
 aliases: [/import-string-array-into-excel-worksheet/,/import-string-array-into-worksheet/,/import-data/string-array/]
 keywords: Import string array data into Excel files
-description: Aspose.Cells Cloud REST API prend en charge l'importation de données de tableaux de chaînes dans des fichiers Excel. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
+description: Aspose.Cells Cloud REST API prend en charge l'importation de données de tableau de chaînes dans des fichiers Excel. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 40
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, importer un tableau de chaînes dans une feuille de calcul Excel
 ---
 Ce REST API `import string array data` dans la feuille de travail Excel.
 

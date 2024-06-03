@@ -8,6 +8,7 @@ aliases: [/change-widths-of-columns-inside-the-range/]
 keywords: Set column width for range on an Excel workshee
 description: Aspose.Cells Cloud REST API stöder inställning av kolumnbredd för intervall på ett Excel-kalkylblad. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 74
+kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdwon, Ändra bredd på kolumner inom området
 ---
 Denna REST API indikerar Ange kolumnbredd för intervall
  

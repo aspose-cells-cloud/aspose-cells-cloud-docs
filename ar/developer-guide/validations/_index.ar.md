@@ -6,6 +6,7 @@ url: /ar/validations/
 keywords: Working with validations on an Excel file
 description: Aspose.Cells دعم Cloud REST API العمل مع عمليات التحقق من الصحة على ملف Excel. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 100
+kwords: Excel، Office كلاود، ريست API، جدول بيانات، PDF، CSV، Json، Markdwon، عمليات التحقق من الصحة
 ---
 يعد التحقق من صحة البيانات إحدى الميزات الموجودة في MS Excel المستخدمة للتحكم في ما يمكن للمستخدم إدخاله في خلية ورقة Excel. مثل، تقييد الإدخالات في ورقة، مثل نطاق زمني أو أرقام صحيحة فقط. يمكننا أيضًا إنشاء قوائم منسدلة، مما يوفر مساحة غير ضرورية ويظهر القيم في خلية واحدة. يمكننا أيضًا إنشاء رسالة مخصصة تظهر للمستخدم وهو يقوم بإدخال أي قيمة غير صحيحة أو تنسيق غير صحيح.
 

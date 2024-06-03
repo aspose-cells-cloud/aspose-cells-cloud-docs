@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postworksheetpicture/
 description: Обновить изображение по индексу на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostWorksheetPicture
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetPicture" >}}

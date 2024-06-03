@@ -8,6 +8,7 @@ aliases: [/filter-the-top-10-items-in-the-list/, /autofilter/add-a-top-10-filter
 keywords: Adds a top10 filter on an Excel worksheet
 description: Aspose.Cells Bulut API, Excel çalışma sayfasına top10 filtresinin eklenmesini destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 65
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel çalışma sayfasına ilk 10 öğeyi ekleyin
 ---
 Bu REST API, listedeki `top 10` öğesinin filtrelenmesini belirtir
  
@@ -26,11 +27,11 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/
 | sayfaAdı| sicim| yol||
 | menzil| sicim| sorgu||
 | alanIndex| tamsayı| sorgu||
-| bun durdum| boolean| sorgu||
-| Yüzde| boolean| sorgu||
+| bun durdum|boolean| sorgu||
+| Yüzde|boolean| sorgu||
 | eşya sayısı| tamsayı| sorgu||
-| maçBoşluklar| boolean| sorgu||
-| yenileme| boolean| sorgu||
+| maçBoşluklar|boolean| sorgu||
+| yenileme|boolean| sorgu||
 | dosya| sicim| sorgu||
 | depolamaAdı| sicim| sorgu| depolama adı.|
  

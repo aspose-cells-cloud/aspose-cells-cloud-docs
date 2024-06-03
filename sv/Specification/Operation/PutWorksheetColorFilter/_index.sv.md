@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/putworksheetcolorfilter/
 description: Lägg till ett färgfilter i kalkylbladet
+kwords: Excel, Office, Kalkylblad, Cloud REST API, PutWorksheetColorFilter
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetColorFilter" >}}

@@ -1,19 +1,21 @@
 ﻿---
-title: SpinnerRespons
+title: SpinnerAntworten
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/model/spinnerresponse/
-description: "Aspose.Cells Cloud-Modellspezifikation: SpinnerResponse. Bearbeiten Sie mühelos Excel und andere Tabellenkalkulationsdokumente mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+description: "Aspose.Cells Cloud-Modellspezifikation: SpinnerResponse. Müheloses Bearbeiten von Excel und anderen Tabellenkalkulationsdokumenten mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, SpinnerResponse
 weight: 50
 ---
-## **spinnerResponse**
+## **spinnerAntwort**
 
- 
+ Stellt die Spinner-Antwort dar.
 
-| Name des Anwesens| Art der Immobilie| Nullbar| Schreibgeschützt| Standardwert| Beschreibung|
+| Name des Anwesens| Art der Immobilie| Nullwerte zulassen| Schreibgeschützt| Standardwert| Beschreibung|
 |:- |:- |:- |:- |:- |:- |
-| Form| Klasse:Spinner| WAHR| FALSCH|||
+| Form| Klasse: Spinner| WAHR| FALSCH|||
 | Code| Ganze Zahl| WAHR| FALSCH|||
 | Status| Zeichenfolge| WAHR| FALSCH|||
 
-**Elternname** : (CellsCloudResponse)[cellscloudresponse]
+**Elternname** : [ZellenCloudResponse](/specification/model/cellscloudresponse)
+

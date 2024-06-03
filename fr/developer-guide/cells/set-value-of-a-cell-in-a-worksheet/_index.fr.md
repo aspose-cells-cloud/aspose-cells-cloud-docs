@@ -3,6 +3,7 @@ title: Définir la valeur d'une cellule dans une feuille de calcul
 type: docs
 url: /fr/set-value-of-a-cell-in-a-worksheet/
 weight: 70
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdwon, Définir la valeur d'une cellule dans une feuille de calcul
 ---
 Ce REST API indique l'ensemble `cell value` dans un fichier Excel.
  
@@ -15,7 +16,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cel
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Le nom du document.|
 | Nom de la feuille| chaîne| chemin| Le nom de la feuille de calcul.|

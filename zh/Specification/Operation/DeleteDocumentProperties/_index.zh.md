@@ -4,22 +4,23 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/deletedocumentproperties/
 description: 删除所有自定义文档属性并重置内置属性
+kwords: Excel，Office，电子表格，云 REST API，删除文档属性
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteDocumentProperties" >}}
 {{< blocks/products/cells/docs-title titlemsg="Delete all custom document properties and reset built-in ones." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/documentproperties,DELETE,删除所有自定义文档属性并重置内置属性。,<a href=\'https://apireference.aspose.cloud/cells/#/Properties/DeleteDocumentProperties\'>DeleteDocumentProperties< /a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/documentproperties,DELETE,删除所有自定义文档属性并重置内置属性。,<a href=\'https://apireference.aspose.cloud/cells/#/Properties/DeleteDocumentProperties\'>DeleteDocumentProperties</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="参数名称、类型、描述" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="名称，字符串，工作簿名称。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="name,string,工作簿名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="文件夹，字符串，文件所在的文件夹。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,文件所在的存储名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName，string，文件所在的存储名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/PropertiesController/DeleteDocumentProperties\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

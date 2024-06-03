@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postheader/
 description: Обновить заголовок страницы на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, заголовок сообщения
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostHeader" >}}

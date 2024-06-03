@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/postdatacleansing/
 description: La limpieza de datos de archivos de hojas de cálculo es un proceso de gestión de datos que se utiliza para identificar, corregir y eliminar errores, datos incompletos, duplicados o imprecisiones en tablas y rangos.
+kwords: Excel, Office, Hoja de cálculo, Nube REST API, PostDataCleansing
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostDataCleansing" >}}

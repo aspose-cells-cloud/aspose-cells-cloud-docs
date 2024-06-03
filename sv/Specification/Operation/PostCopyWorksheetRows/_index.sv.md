@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/postcopyworksheetrows/
 description: Kopiera data och format från specifika hela rader i kalkylbladet
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostCopyWorksheetRows
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostCopyWorksheetRows" >}}

@@ -5,6 +5,7 @@ type: docs
 url: /it/docker/tag-list/
 description: Piattaforme supportate
 weight: 30
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, TagList
 ---
 ##  Windows Server 2016 Immagini ##
 

@@ -4,6 +4,7 @@ type: docs
 url: /fr/charts/title/get/
 aliases: [/get-chart-title-from-a-worksheet/]
 weight: 120
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, obtenir le titre du graphique à partir d'une feuille de calcul
 ---
 Ce REST API indique obtenir le titre du graphique
  
@@ -16,7 +17,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{cha
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Nom du classeur.|
 | Nom de la feuille| chaîne| chemin| Nom de la feuille de calcul.|

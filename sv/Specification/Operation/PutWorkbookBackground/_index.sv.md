@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/putworkbookbackground/
 description: Ange bakgrund i arbetsboken
+kwords: Excel, Office, Kalkylblad, Cloud REST API, PutWorkbookBackground
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorkbookBackground" >}}

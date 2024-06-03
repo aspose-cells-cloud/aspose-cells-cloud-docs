@@ -7,6 +7,7 @@ aliases: [/working-with-autofilter/]
 keywords: Get, add， delete, and so on for auto filter on an Excel worksheet
 description: Aspose.Cells Bulut API'leri, Excel çalışma sayfasında otomatik filtreleme için alma, ekleme, silme vb. işlemlerini destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 100
+kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Otomatik Filtre
 ---
 Otomatik filtre, çalışma sayfasında yalnızca listede görüntülemek istediğiniz öğeleri seçmenin en hızlı yoludur. Otomatik filtreleme özelliği, kullanıcıların bir listedeki öğeleri belirlenen kriterlere göre filtrelemesine olanak tanır. Metne, sayılara veya tarihlere göre filtreleyin.
 
@@ -29,7 +30,7 @@ Verileri hücrelerin dolgu rengi özelliğine göre filtrelemek için.</p>
     <td class="col-md-2"> <li>Tarih</li> </td>
   <td class="col-md-10">
   <p>
- Ocak 2018'de tarihleri olan tüm satırları filtrelemek gibi farklı türde tarih filtreleri uygulanabilir.<a href="/cells/tr/autofilter/add-date-filter/">tarih ekleme renk filtresinin API'i</a> bu işlevi uygulayabilir.
+Ocak 2018'de tarihleri olan tüm satırları filtrelemek gibi farklı türde tarih filtreleri uygulanabilir.<a href="/cells/tr/autofilter/add-date-filter/">tarih ekleme renk filtresinin API'i</a> bu işlevi uygulayabilir.
 </p>
   </td>
   </tr>
@@ -53,7 +54,7 @@ Verileri hücrelerin dolgu rengi özelliğine göre filtrelemek için.</p>
     <td class="col-md-2"> <li>Metin</li> </td>
   <td class="col-md-10">
   <p>
- Bir sütun metin içeriyorsa ve belirli bir metni içeren hücreler seçilecekse,<a href="/cells/tr/autofilter/add-filter/"> Ekleme filtresi API</a>kullanılabilir.
+ Bir sütun metin içeriyorsa ve belirli bir metni içeren hücreler seçilecekse,<a href="/cells/tr/autofilter/add-filter/"> Ekleme filtresi API</a> kullanılabilir.
 </p>
   </td>
   </tr>
@@ -79,7 +80,7 @@ Verileri hücrelerin dolgu rengi özelliğine göre filtrelemek için.</p>
     <td class="col-md-2"> <li>Özel filtre</li> </td>
   <td class="col-md-10">
   <p>
- Aspose.Cells Bulut şunları sağlar<a href="/cells/tr/autofilter/add-dynamic-filter/"> özel filtreler API</a> belirli bir dize içeren filtre satırları ve belirli bir dizeyle başlayan veya biten filtre satırları gibi.
+ Aspose.Cells Bulut şunları sağlar<a href="/cells/tr/autofilter/add-dynamic-filter/">özel filtreler API</a> belirli bir dize içeren filtre satırları ve belirli bir dizeyle başlayan veya biten filtre satırları gibi.
 </p>
   </td>
   </tr>

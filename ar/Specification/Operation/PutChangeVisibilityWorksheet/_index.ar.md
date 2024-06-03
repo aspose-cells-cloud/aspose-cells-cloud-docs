@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/putchangevisibilityworksheet/
 description: تغيير رؤية ورقة العمل في المصنف
+kwords: Excel، Office، جدول البيانات، Cloud REST API، ورقة عمل PutChangeVisibility
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutChangeVisibilityWorksheet" >}}

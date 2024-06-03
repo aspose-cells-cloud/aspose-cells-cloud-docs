@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postcopyworksheetcolumns/
 description: Копирование данных из исходных столбцов в целевые столбцы на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostCopyWorksheetColumns
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostCopyWorksheetColumns" >}}

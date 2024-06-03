@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/model/conditionalformatting/
 description: "Aspose.Cells Molnmodellspecifikation: ConditionalFormatting. Hantera enkelt Excel och andra kalkylarksdokument med funktioner som att öppna, generera, redigera, dela, slå samman, jämföra och konvertera"
+kwords: Excel, Office, Kalkylblad, Cloud REST API, Conditional Formatting
 weight: 50
 ---
 ## **villkorlig formatering**
@@ -16,4 +17,5 @@ weight: 50
 | Formatvillkor| Behållare| Sann| Falsk|||
 | länk| Klass: Länk| Sann| Falsk|||
 
-**Förälders namn** : (LinkElement)[linkelement]
+**Förälders namn** : [LinkElement](/specification/model/linkelement)
+

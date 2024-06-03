@@ -6,6 +6,7 @@ url: /it/tasks/cells-object-operate/
 aliases: [/working-with-cellsobjectoperate-task/]
 description: "Cells.Cloud API per Excel operare: attività di operazione oggetto celle"
 weight: 20
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Utilizzo dell'attività CellsObjectOperate
 ---
 Questo REST API gestisce le celle oggetto `task`.
 
@@ -33,7 +34,7 @@ Questo REST API gestisce le celle oggetto `task`.
 |Nome del parametro|Tipo|Descrizione|
 |:- |:- |:- |
 | ChartIndex| numero intero||
-| ChartType| corda||
+|ChartType| corda||
 | Riga superiore sinistra| numero intero||
 | Colonna superiore sinistra| numero intero||
 | Riga InferioreDestra| numero intero||
@@ -80,7 +81,7 @@ Questo REST API gestisce le celle oggetto `task`.
 | Indice tabella pivot| numero intero||
 | Righe del campo pivot|numero intero[]||
 | Colonne del campo pivot|numero intero[]||
-|Dati campo pivot|numero intero[]||
+| Dati campo pivot|numero intero[]||
 
 
 **ShapeOperateParametro**

@@ -8,6 +8,7 @@ aliases: [/working-with-shapes/,/working-with-images/]
 keywords: Working with shape on an Excel workshee
 description: Come lavorare con la forma su un foglio di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 100
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Lavorare con la forma su un foglio di lavoro Excel
 ---
 ## Lavorare con le forme su un file Excel.
 

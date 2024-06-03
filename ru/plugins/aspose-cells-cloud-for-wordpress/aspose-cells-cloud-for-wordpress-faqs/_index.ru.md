@@ -5,6 +5,7 @@ type: docs
 url: /ru/aspose-cells-cloud-for-wordpress-faqs/
 description: Aspose.Cells Облако поддерживает Excel для создания, преобразования, объединения, разделения, защиты, операций с внутренними объектами и т. д.
 weight: 40
+kwords: Excel, Office Cloud, REST API, электронная таблица, PDF, CSV, Json, Markdwon, Aspose.Cells Cloud для WordPress — часто задаваемые вопросы
 ---
 ## Aspose.Cells Формы
 ### Могу ли я использовать плагин Aspose.Cells Forms, не имея учетной записи в aspose.cloud?

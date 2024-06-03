@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/deleteworksheetcomment/
 description: Ta bort cellkommentar i kalkylbladet
+kwords: Excel, Office, Kalkylblad, Cloud REST API, Ta bort ArbetsbladKommentar
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetComment" >}}

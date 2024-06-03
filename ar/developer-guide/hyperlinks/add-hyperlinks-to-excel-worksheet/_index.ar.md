@@ -6,6 +6,7 @@ aliases: [/add-hyperlinks-to-excel-worksheet/]
 keywords: Add a hyperlink into an Excel worksheet
 description: Aspose.Cells Cloud REST API يدعم إضافة رابط تشعبي إلى ورقة عمل Excel. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 20
+kwords: Excel، Office كلاود، ريست API، جدول بيانات، PDF، CSV، Json، Markdwon، Add
 ---
 يشير REST API إلى `add a worksheet hyperlink` في ورقة عمل Excel.
  
@@ -25,7 +26,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks
 | السطر الاول| عدد صحيح| استفسار||
 | العمود الأول| عدد صحيح| استفسار||
 | com.totalRows| عدد صحيح| استفسار||
-|إجمالي الأعمدة| عدد صحيح| استفسار||
+| إجمالي الأعمدة| عدد صحيح| استفسار||
 | عنوان| خيط| استفسار||
 | مجلد| خيط| استفسار| مجلد المستندات.|
 | اسم التخزين| خيط| استفسار| اسم التخزين.|
@@ -70,7 +71,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/hyperli
 {{< /tabs >}}
 ## عائلة Cloud SDK
  
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
  
 توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
 

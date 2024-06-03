@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/putinsertnewworksheet/
 description: قم بإدراج ورقة عمل جديدة في المصنف
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PutInsertNewWorksheet
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutInsertNewWorksheet" >}}

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postworksheetcellsrangeunmerge/
 description: قم بإلغاء دمج الخلايا المدمجة ضمن هذا النطاق
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostWorksheetCellsRangeUnMerge
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangeUnMerge" >}}

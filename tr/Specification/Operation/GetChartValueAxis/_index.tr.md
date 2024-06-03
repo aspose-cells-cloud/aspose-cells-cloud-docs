@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/getchartvalueaxis/
 description: Grafikteki grafik değeri eksenini alın
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, GetChartValueAxis
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetChartValueAxis" >}}

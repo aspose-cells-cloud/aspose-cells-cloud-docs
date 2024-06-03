@@ -8,6 +8,7 @@ aliases: [/convert-excel-file-to-docx-in-cloud/]
 keywords: Convert excel files to docx files
 description: Aspose.Cells Cloud REST API admite la conversión de archivos Excel a archivos docx. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 90
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Excel a Docx
 ---
 Este archivo de Excel REST API `saveas` en Docx.
 
@@ -33,7 +34,7 @@ Este archivo de Excel REST API `export` en Docx.
 
 Estas API definen una interfaz de programación de acceso público y le permiten realizar interacciones REST directamente desde un navegador web.
 
- Puedes usar**cURL** Herramienta de línea de comandos para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
+ Puedes usar**cURL**Herramienta de línea de comandos para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
 
 
 {{< tabs tabTotal="3" tabID="11" tabName11="convert" tabName12="saveas" tabName13="export" >}}

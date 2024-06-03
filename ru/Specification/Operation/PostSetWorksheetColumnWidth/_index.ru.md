@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postsetworksheetcolumnwidth/
 description: Установить ширину столбца листа
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostSetWorksheetColumnWidth
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostSetWorksheetColumnWidth" >}}

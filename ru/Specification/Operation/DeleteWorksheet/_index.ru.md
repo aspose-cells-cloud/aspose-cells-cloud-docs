@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/deleteworksheet/
 description: Удаление листа в книге
+kwords: Excel, Office, электронная таблица, Cloud REST API, DeleteWorksheet
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheet" >}}

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/deleteworksheetlistobject/
 description: Ta bort listobjekt efter index i kalkylbladet
+kwords: Excel, Office, Kalkylblad, Cloud REST API, DeleteWorksheetListObject
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetListObject" >}}

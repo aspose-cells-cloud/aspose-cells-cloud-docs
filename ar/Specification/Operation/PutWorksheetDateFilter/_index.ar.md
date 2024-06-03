@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/putworksheetdatefilter/
 description: تطبيق عامل تصفية التاريخ في ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PutWorksheetDateFilter
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetDateFilter" >}}

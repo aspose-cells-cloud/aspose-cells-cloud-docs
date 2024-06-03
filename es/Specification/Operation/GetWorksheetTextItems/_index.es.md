@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/getworksheettextitems/
 description: Recuperar elementos de texto en la hoja de trabajo
+kwords: Excel, Office, hoja de cálculo, nube REST API, GetWorksheetTextItems
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetTextItems" >}}

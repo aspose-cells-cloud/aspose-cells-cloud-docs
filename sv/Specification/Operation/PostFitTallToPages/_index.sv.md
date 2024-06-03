@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/postfittalltopages/
 description: Ställ in den skala på vilken sidan ska passa högt när den skrivs ut på arket
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostFitTallToPages
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostFitTallToPages" >}}

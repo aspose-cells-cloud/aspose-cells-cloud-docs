@@ -3,6 +3,7 @@ title:  Grafiği Güncelle İkinci Değer Ekseni
 type: docs
 url: /tr/charts/second-value-axis/update/
 weight: 160
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Güncelleme Tablosu İkinci Değer Ekseni
 ---
  Bu REST API, Güncelleme Grafiği İkinci Değer Eksenini gösterir.
  

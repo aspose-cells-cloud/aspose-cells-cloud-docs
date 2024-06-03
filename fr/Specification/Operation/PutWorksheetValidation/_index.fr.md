@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/putworksheetvalidation/
 description: Ajouter une validation à l'index dans la feuille de calcul
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PutWorksheetValidation
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetValidation" >}}

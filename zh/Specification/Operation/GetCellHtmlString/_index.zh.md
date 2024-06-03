@@ -1,27 +1,28 @@
 ﻿---
-title: 获取CellHtmlStrin
+title: 获取单元格Html字符串
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/getcellhtmlstring/
-description: 检索包含此单元格中的数据和特定格式的 HTML 字符串
+description: 检索此单元格中包含数据和特定格式的 HTML 字符串
+kwords: Excel，Office，电子表格，云 REST API，GetCellHtmlString
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetCellHtmlString" >}}
 {{< blocks/products/cells/docs-title titlemsg="Retrieve the HTML string containing data and specific formats in this cell." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells/{cellName}/htmlstring,GET,检索此单元格中包含数据和特定格式的 HTML 字符串。,<a href=\'https://apireference.aspose.云/细胞/#/Cells/GetCellHtmlString\'>GetCellHtmlString</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells/{cellName}/htmlstring,GET,检索此单元格中包含数据和特定格式的 HTML 字符串。,<a href=\'https://apireference.aspose.cloud/cells/#/Cells/GetCellHtmlString\'>GetCellHtmlString</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="参数名称、类型、描述" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="名称，字符串，文件名。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,字符串,工作表名称。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="cellName,字符串,单元格名称。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="name，string，文件名。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName，string，工作表名称。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="cellName，string，单元格名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="文件夹，字符串，文件所在的文件夹。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,文件所在的存储名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName，string，文件所在的存储名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/CellsController/GetCellHtmlString\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

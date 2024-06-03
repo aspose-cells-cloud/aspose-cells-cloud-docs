@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/postworksheetlistobjectinsertslicer/
 description: Infoga slicer för listobjekt
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostWorksheetListObjectInsertSlicer
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetListObjectInsertSlicer" >}}
@@ -20,7 +21,7 @@ weight: 50
      {{< blocks/products/cells/docs-Parameter-content columns="listObjectIndex,integer,Listobjektindex." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parameternamn, typ, beskrivning" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns=" columnIndex,integer,Indexet för ListColumn i ListObject.ListColumns" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="columnIndex,integer,Indexet för ListColumn i ListObject.ListColumns" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns=" destCellName,string,Cellen i det övre vänstra hörnet av Slicer-intervallet." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="folder,string,Mappen där filen finns." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Lagringsnamnet där filen finns." >}} 

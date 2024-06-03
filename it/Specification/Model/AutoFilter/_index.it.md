@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/model/autofilter/
 description: "Aspose.Cells Specifica del modello cloud: filtro automatico. Gestisci facilmente Excel e altri fogli di calcolo con funzionalità come apertura, generazione, modifica, divisione, unione, confronto e conversione"
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, Filtro automatico
 weight: 50
 ---
 ## **filtro automatico**
 
- 
+ Rappresenta il filtro automatico per il foglio di lavoro specificato.
 
 | Nome della proprietà| Tipo di proprietà| Nullabile| Sola lettura| Valore di default| Descrizione|
 |:- |:- |:- |:- |:- |:- |
@@ -18,4 +19,5 @@ weight: 50
 | Mostra pulsante filtro| Booleano| VERO| Falso|| Indica se il pulsante Filtro automatico per questa colonna è visibile.|
 | collegamento| Classe: collegamento| VERO| Falso|||
 
-**Nome del genitore** : (ElementoLink)[elementolink]
+**Nome del genitore** : [Elemento di collegamento](/specification/model/linkelement)
+

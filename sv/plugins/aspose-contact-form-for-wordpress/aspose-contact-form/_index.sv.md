@@ -5,6 +5,7 @@ type: docs
 url: /sv/aspose-contact-form/
 description: Skapa och hantera kontaktformulär med hjälp av uppmärkning eller med våra exempelmallar. Dina kunder kan fylla i formulär på WordPress-sidan och du får informationen via e-post. Aspose Kontaktformulär tillhandahåller även webbformulär till funktionen Excel. Användare kan fylla i data i WordPress-formulär, som sedan läggs till på ett Excel-ark. Du kan se data från alla kunder på din WordPress-sida
 weight: 10
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Aspose Kontaktformulär
 ---
 ## **Introduktion**
 ### **Aspose Kontaktformulär**

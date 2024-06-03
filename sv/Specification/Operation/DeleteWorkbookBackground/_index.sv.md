@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/deleteworkbookbackground/
 description: Ta bort bakgrund i arbetsboken
+kwords: Excel, Office, Kalkylblad, Cloud REST API, DeleteWorkbookBackground
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorkbookBackground" >}}

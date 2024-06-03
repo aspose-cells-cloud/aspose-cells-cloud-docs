@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postworksheetrangesort/
 description: Trier une plage dans la feuille de calcul
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostWorksheetRangeSort
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetRangeSort" >}}

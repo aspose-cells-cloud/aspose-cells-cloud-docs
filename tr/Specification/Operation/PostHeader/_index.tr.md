@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/postheader/
 description: Çalışma sayfasındaki sayfa başlığını güncelleme
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PostHeader
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostHeader" >}}

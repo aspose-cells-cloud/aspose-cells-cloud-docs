@@ -1,16 +1,17 @@
 ﻿---
-title: 后批量转换
+title: 后批处理转换
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/postbatchconvert/
-description: 批量转换满足特定匹配条件的文件
+description: 批量转换符合特定匹配条件的文件
+kwords: Excel，Office，电子表格，云 REST API，PostBatchConvert
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostBatchConvert" >}}
 {{< blocks/products/cells/docs-title titlemsg="Batch converting files that meet specific matching conditions." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/batch/convert,POST,批量转换满足特定匹配条件的文件。,<a href=\'https://apireference.aspose.cloud/cells/#/Batch/PostBatchConvert\'>PostBatchConvert</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/batch/convert,POST,批量转换符合特定匹配条件的文件。,<a href=\'https://apireference.aspose.cloud/cells/#/Batch/PostBatchConvert\'>PostBatchConvert</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

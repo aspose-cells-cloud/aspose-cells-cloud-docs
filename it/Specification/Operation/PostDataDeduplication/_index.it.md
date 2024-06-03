@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/postdatadeduplication/
 description: La deduplicazione dei dati dei file di fogli di calcolo viene utilizzata principalmente per eliminare i dati duplicati in tabelle e intervalli
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PostDataDeduplication
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostDataDeduplication" >}}

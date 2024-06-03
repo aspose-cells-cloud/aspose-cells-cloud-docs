@@ -8,6 +8,7 @@ aliases: [/unhide-excel-worksheets/]
 keywords: Unhide an Excel Worksheet on an Excel Workbook
 description: Aspose.Cells Cloud REST API, Excel Çalışma Kitabında Excel Çalışma Sayfasını göstermeyi destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 60
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel çalışma sayfasını göster
 ---
 Bu REST API, `unhide worksheet`'i gösterir.
  
@@ -24,7 +25,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/visible
 |:- |:- |:- |:- |
 | isim| sicim| yol| Belge adı.|
 | sayfaAdı| sicim| yol| Çalışma sayfası adı.|
-| Görünür| boolean| sorgu| Yeni çalışma sayfası görünürlük değeri.|
+| Görünür|boolean| sorgu| Yeni çalışma sayfası görünürlük değeri.|
 | dosya| sicim| sorgu| Belge klasörü.|
 | depolamaAdı| sicim| sorgu| depolama adı.|
  

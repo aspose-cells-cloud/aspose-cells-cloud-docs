@@ -8,6 +8,7 @@ aliases: [/import-batch-data-into-excel-worksheet/,/import-batch-data-into-works
 keywords: Import batch data into Excel files
 description: Aspose.Cells Cloud REST API supporta l'importazione di dati batch in file Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 19
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Importa dati batch nel foglio di lavoro Excel
 ---
 Questo REST API `import batch data` nel foglio di lavoro Excel.
 
@@ -43,7 +44,7 @@ I parametri importanti sono descritti nella tabella seguente:
 |:- |:- |:- |
 | rigaIndice| int||
 | colonnaIndice| int||
-| tipo| corda| tipo di dati|
+| tipo| corda|tipo di dati|
 | valore| corda||
 | stile| Stile(oggetto)||
 

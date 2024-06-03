@@ -3,17 +3,19 @@ title: TextItemsRespons
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/model/textitemsresponse/
-description: "Aspose.Cells Cloud-Modellspezifikation: TextItemsResponse. Bearbeiten Sie mühelos Excel und andere Tabellenkalkulationsdokumente mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+description: "Aspose.Cells Cloud-Modellspezifikation: TextItemsResponse. Müheloses Bearbeiten von Excel und anderen Tabellenkalkulationsdokumenten mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, TextItemsResponse
 weight: 50
 ---
 ## **textItemsResponse**
 
- 
+ Stellt die TextItems-Antwort dar.
 
-| Name des Anwesens| Art der Immobilie| Nullbar| Schreibgeschützt| Standardwert| Beschreibung|
+| Name des Anwesens| Art der Immobilie| Nullwerte zulassen| Schreibgeschützt| Standardwert| Beschreibung|
 |:- |:- |:- |:- |:- |:- |
-| TextItems| Klasse:TextItems| WAHR| FALSCH|||
+| Textelemente| Klasse:TextItems| WAHR| FALSCH|||
 | Code| Ganze Zahl| WAHR| FALSCH|||
 | Status| Zeichenfolge| WAHR| FALSCH|||
 
-**Elternname** : (CellsCloudResponse)[cellscloudresponse]
+**Elternname** : [ZellenCloudResponse](/specification/model/cellscloudresponse)
+

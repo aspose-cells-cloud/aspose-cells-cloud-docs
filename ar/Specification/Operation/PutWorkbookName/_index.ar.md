@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/putworkbookname/
 description: تحديد اسم جديد في المصنف
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PutWorkbookName
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorkbookName" >}}

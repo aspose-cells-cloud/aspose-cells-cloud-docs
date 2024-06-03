@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/model/linkelement/
 description: "Aspose.Cells Bulut modeli spesifikasyonu: LinkElement. Açma, oluşturma, düzenleme, bölme, birleştirme, karşılaştırma ve dönüştürme gibi özelliklerle Excel ve diğer elektronik tablo belgelerini zahmetsizce yönetin"
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, LinkElement
 weight: 50
 ---
 ## **bağlantı öğesi**
@@ -35,7 +36,6 @@ weight: 50
 	-  [Sayfa ayarı](pagesetup) 
 	-  [Sıra](row) 
 	-  [Satırlar](rows) 
-	-  [BölünmüşSonuçBelgesi](splitresultdocument) 
 	-  [Stiller](styles) 
 	-  [Metin Öğesi](textitem) 
 	-  [Metin Öğeleri](textitems) 

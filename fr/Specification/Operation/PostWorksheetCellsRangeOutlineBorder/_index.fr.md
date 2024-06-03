@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postworksheetcellsrangeoutlineborder/
 description: Appliquer une bordure de contour autour d'une plage de cellules
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostWorksheetCellsRangeOutlineBorder
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangeOutlineBorder" >}}

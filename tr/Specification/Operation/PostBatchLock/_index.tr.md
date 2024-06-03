@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/postbatchlock/
 description: Belirli eşleştirme koşullarını karşılayan toplu kilitleme dosyaları
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PostBatchLock
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostBatchLock" >}}

@@ -8,6 +8,7 @@ aliases: [/add-a-pivot-table-in-a-worksheet/]
 keywords: Add a pivot field in a pivot table
 description: Aspose.Cells Cloud REST API admite la adición de un campo dinámico en una tabla dinámica. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 40
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Agregar un campo dinámico a la tabla dinámica
 ---
 Este REST API indica que `add` gire el campo hacia la tabla dinámica
  
@@ -27,7 +28,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables
 | índice de tabla dinámica| entero| camino| Índice de tabla dinámica|
 | tipo de campo pivote| cadena| consulta| El tipo de área de campos.|
 | pedido|| cuerpo| Dto que limita los índices de campo.|
-| necesitaReCalcular| booleano| consulta| FALSO|
+| necesitaReCalcular|booleano| consulta| FALSO|
 | carpeta| cadena| consulta| Carpeta del documento.|
 | nombredealmacenamiento| cadena| consulta| nombre del almacenamiento.|
  

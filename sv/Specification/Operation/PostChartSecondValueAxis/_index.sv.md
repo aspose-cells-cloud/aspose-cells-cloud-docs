@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/postchartsecondvalueaxis/
 description: Uppdatera diagrams sändvärdesaxel i diagrammet
+kwords: Excel, Office, Kalkylblad, Cloud REST API, PostChartSecondValueAxis
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostChartSecondValueAxis" >}}

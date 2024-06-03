@@ -7,6 +7,7 @@ aliases: [/working-with-pivot-table-using-cellsobjectoperate-task/]
 keywords: REST API, pivot table, spreadsheets, exce
 description: "Cells.Cloud API لـ Excel التشغيل: إنشاء جدول محوري باستخدام مهمة CellsObjectOperate"
 weight: 10
+kwords: Excel، Office Cloud، REST API، Spreadsheet، PDF، CSV، Json، Markdwon، العمل مع الجدول المحوري باستخدام مهمة CellsObjectOperate
 ---
 يقوم REST API بإنشاء `pivot table` باستخدام كائن الخلايا الذي يعمل `task`.
 
@@ -22,7 +23,7 @@ weight: 10
 | PivotTableIndex| عدد صحيح||
 | PivotFieldRows|عدد صحيح[]||
 | PivotFieldColumns|عدد صحيح[]||
-|PivotFieldData|عدد صحيح[]||
+| PivotFieldData|عدد صحيح[]||
 
 
 ## بقية API
@@ -33,7 +34,7 @@ weight: 10
 
  ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك تنفيذ تفاعلات REST مباشرة من متصفح الويب.
 
- يمكنك استخدام**cURL** أداة سطر الأوامر للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
+ يمكنك استخدام**cURL**أداة سطر الأوامر للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
 
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
@@ -377,7 +378,7 @@ HttpResponseMessage with the operation result.
 
 ## عائلة Cloud SDK
 
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
 
 توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
 

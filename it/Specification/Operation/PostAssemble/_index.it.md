@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/postassemble/
 description: Assemblare file di dati con file modello per generare file in vari formati
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, Postassemblaggio
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostAssemble" >}}
@@ -16,7 +17,7 @@ weight: 50
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Nome parametro, Tipo, Descrizione" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="origine dati, stringa," >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="outFormat,string,Il formato da convertire(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/076 173481 /MD[Ribasso]/Numeri)" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="outFormat,string,Il formato da convertire(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/0 76173481 /MD[Ribasso]/Numeri)" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="password,string,La password necessaria per aprire un file Excel." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction,boolean,Se controlla la restrizione del file Excel quando l\'utente modifica gli oggetti correlati alle celle." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="regione,string,Impostazioni internazionali per la cartella di lavoro." >}} 

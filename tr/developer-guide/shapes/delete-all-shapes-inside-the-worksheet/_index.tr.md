@@ -8,6 +8,7 @@ aliases: [/delete-all-shapes-inside-the-worksheet/]
 keywords: Delete all shapes on an Excel workshee
 description: Aspose.Cells Cloud REST API, Excel çalışma sayfasındaki tüm şekillerin silinmesini destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 40
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel çalışma sayfasındaki tüm şekilleri sil
 ---
 Bu REST API, Excel çalışma sayfasındaki tüm şekillerin silineceğini belirtir.
  

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postworkbooktextreplace/
 description: Заменить текст в книге
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostWorkbookTextReplace
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookTextReplace" >}}

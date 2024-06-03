@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/getworksheetcolumn/
 description: Hämta kalkylbladskolumndata efter kolumnindex
+kwords: Excel, Office, Spreadsheet, Cloud REST API, GetWorksheetColumn
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetColumn" >}}

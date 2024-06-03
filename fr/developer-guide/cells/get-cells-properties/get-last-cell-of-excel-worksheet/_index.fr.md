@@ -1,8 +1,9 @@
 ﻿---
-title: Obtenir la dernière cellule de la feuille de calcul Excel
+title: Obtenir la dernière cellule de la feuille de travail Excel
 type: docs
 url: /fr/get-last-cell-of-excel-worksheet/
 weight: 30
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, obtenir la dernière cellule de la feuille de calcul Excel
 ---
 Ce REST API indique que les spectacles obtiennent un `endcell` dans un fichier Excel lorsque le paramètre `cellOrMethodName` est `endcell`.
 

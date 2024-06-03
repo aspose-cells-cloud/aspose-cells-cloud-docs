@@ -6,6 +6,7 @@ aliases: [/remove-cell-area-from-conditional-formatting/]
 keywords: REST API, spreadsheets, excel, delete cell area from condition formattin
 description: "Cells.Cloud API لـ Excel التشغيل: حذف منطقة الخلية من تنسيق الشرط"
 weight: 70
+kwords:  Excel، Office كلاود، ريست API، جدول بيانات، PDF، CSV، Json، Markdwon، حذف منطقة الخلية
 ---
 يشير REST API إلى إزالة منطقة الخلية من التنسيق الشرطي.
  
@@ -25,7 +26,7 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditio
 | startRow| عدد صحيح| استفسار||
 | startColumn| عدد صحيح| استفسار||
 | com.totalRows| عدد صحيح| استفسار||
-|إجمالي الأعمدة| عدد صحيح| استفسار||
+| إجمالي الأعمدة| عدد صحيح| استفسار||
 | مجلد| خيط| استفسار||
 | اسم التخزين| خيط| استفسار| اسم التخزين.|
  
@@ -68,7 +69,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditi
 
 ## عائلة Cloud SDK
  
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
  
 توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
 

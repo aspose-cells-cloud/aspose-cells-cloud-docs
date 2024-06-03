@@ -8,6 +8,7 @@ aliases: [/match-all-blank-cells-in-the-list/]
 keywords: Match all blank cells in the filter list on an Excel worksheet
 description: Облако Aspose.Cells API поддерживает сопоставление всех пустых ячеек в списке фильтров на листе Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 100
+kwords: Excel, Office Cloud, REST API, электронная таблица, PDF, CSV, Json, Markdwon, сопоставить все пустые ячейки на листе Excel.
 ---
 Этот REST API указывает на `match` все `blank cell` в списке фильтров на листе Excel.
  
@@ -24,7 +25,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter
 |:- |:- |:- |:- |
 | имя| нить| путь||
 | имя листа| нить| путь||
-| полеИндекс| целое число| запрос||
+| полеиндекс| целое число| запрос||
 | папка| нить| запрос||
 | имя_хранилища| нить| запрос| имя хранилища.|
  

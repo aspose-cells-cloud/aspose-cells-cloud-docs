@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/getworkbookdefaultstyle/
 description: Récupérer la description du style par défaut du classeur
+kwords: Excel, Office, feuille de calcul, Cloud REST API, GetWorkbookDefaultStyle
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorkbookDefaultStyle" >}}

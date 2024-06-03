@@ -5,6 +5,7 @@ type: docs
 url: /ar/aspose-contact-form-for-wordpress-faqs/
 description: Aspose نموذج الاتصال يدعم Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 40
+kwords: Excel، Office Cloud، REST API، Spreadsheet، PDF، CSV، Json، Markdwon، Aspose نموذج الاتصال لـ WordPress - الأسئلة الشائعة
 ---
 ## Aspose نموذج الاتصال
 ### هل يمكنني استخدام البرنامج المساعد لنموذج الاتصال Aspose دون أن يكون لدي حساب على aspose.cloud؟

@@ -3,6 +3,7 @@ title: Cells'i Excel Çalışma Sayfası'nda ayırın
 type: docs
 url: /tr/unmerge-cells-in-excel-worksheet/
 weight: 120
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Cells'i Excel Çalışma Sayfasında Ayır
 ---
 Bu REST API, Excel dosyasındaki `unmerge` hücreyi gösterir.
 
@@ -17,12 +18,12 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/unme
  
 | Parametre adı| Tip| Yol/Sorgu Dizesi/HTTPBody|Tanım|
 |:- |:- |:- |:- |
-| isim| sicim| yol|Çalışma kitabı adı.|
+| isim| sicim| yol| Çalışma kitabı adı.|
 | sayfaAdı| sicim| yol| Çalışma sayfası adı.|
 | startRow| tamsayı| sorgu| Başlangıç satırı.|
 | startColumn| tamsayı| sorgu| Başlangıç sütunu.|
 | toplamSatırlar| tamsayı| sorgu| Toplam satırlar|
-|toplamSütunlar| tamsayı| sorgu| Toplam sütunlar.|
+| toplamSütunlar| tamsayı| sorgu| Toplam sütunlar.|
 | dosya| sicim| sorgu| Çalışma kitabı klasörü.|
 | depolamaAdı| sicim| sorgu| depolama adı.|
  

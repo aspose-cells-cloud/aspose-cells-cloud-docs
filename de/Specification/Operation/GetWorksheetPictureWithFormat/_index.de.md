@@ -3,26 +3,27 @@ title: GetWorksheetPictureWithForma
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/getworksheetpicturewithformat/
-description: Rufen Sie ein Bild anhand der Nummer im Arbeitsblatt auf
+description: Abrufen eines Bilds anhand einer Nummer im Arbeitsblatt
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, GetWorksheetPictureWithFormat
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetPictureWithFormat" >}}
 {{< blocks/products/cells/docs-title titlemsg="Retrieve a picture by number in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pictures/{pictureNumber},GET,Rufen Sie ein Bild nach Nummer im Arbeitsblatt ab.,<a href=\'https://apireference.aspose.cloud/cells/#/ Pictures/GetWorksheetPictureWithFormat\'>GetWorksheetPictureWithFormat</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pictures/{pictureNumber},GET,Rufen Sie ein Bild anhand der Nummer im Arbeitsblatt ab.,<a href=\'https://apireference.aspose.cloud/cells/#/Pictures/GetWorksheetPictureWithFormat\'>GetWorksheetPictureWithFormat</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
      {{< blocks/products/cells/docs-Parameter-content columns="Bildnummer, Ganzzahl, Der Bildindex." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="Format, Zeichenfolge, Bildkonvertierungsformat (PNG/TIFF/JPEG/GIF/EMF/BMP)." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/PicturesController/GetWorksheetPictureWithFormat\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

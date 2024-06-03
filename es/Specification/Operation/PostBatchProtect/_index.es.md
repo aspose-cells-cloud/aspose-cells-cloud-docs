@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/postbatchprotect/
 description: Protección por lotes de archivos que cumplen condiciones de coincidencia específicas
+kwords: Excel, Office, hoja de cálculo, nube REST API, PostBatchProtect
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostBatchProtect" >}}
@@ -15,7 +16,7 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Nombre del parámetro, tipo, descripción" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="batchProtectRequest,clase:batchprotectrequest,BatchProtectRequest Solicitud de archivo de protección por lotes." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns=" batchProtectRequest,clase:batchprotectrequest,BatchProtectRequest Solicitud de archivo de protección por lotes." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

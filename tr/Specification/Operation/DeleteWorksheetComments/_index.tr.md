@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/deleteworksheetcomments/
 description: Çalışma sayfasındaki tüm yorumları sil
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, SilÇalışma SayfasıYorumlar
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetComments" >}}

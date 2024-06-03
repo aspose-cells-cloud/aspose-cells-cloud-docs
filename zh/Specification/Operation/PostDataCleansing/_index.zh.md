@@ -3,14 +3,15 @@ title: 数据清理后
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/postdatacleansing/
-description: 电子表格文件的数据清理是一种数据管理过程，用于识别、更正和删除表格和范围中的错误、不完整、重复或不准确
+description: 电子表格文件的数据清理是一种数据管理过程，用于识别、纠正和删除表格和范围中的错误、不完整、重复或不准确的信息
+kwords: Excel，Office，电子表格，云 REST API，PostDataCleansing
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostDataCleansing" >}}
 {{< blocks/products/cells/docs-title titlemsg="Data cleansing of spreadsheet files is a data management process used to identify, correct, and remove errors, incompleteness, duplicates, or inaccuracies in tables and ranges." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/datacleansing,POST,电子表格文件的数据清理是一种数据管理过程，用于识别、更正和删除表格和范围中的错误、不完整、重复或不准确之处。<a href=\'https://apireference. aspose.cloud/cells/#/DataProcessing/PostDataCleansing\'>PostDataCleansing</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/datacleansing,POST,电子表格文件的数据清理是一种数据管理过程，用于识别、更正和删除表格和范围中的错误、不完整、重复或不准确的信息。,<a href=\'https://apireference.aspose.cloud/cells/#/DataProcessing/PostDataCleansing\'>PostDataCleansing</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

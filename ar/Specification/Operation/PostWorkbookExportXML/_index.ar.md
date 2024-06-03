@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postworkbookexportxml/
 description: تصدير بيانات XML من ملف Excel. عند وجود خرائط XML في ملف Excel، قم بتصدير بيانات XML. عندما لا يكون هناك مخطط XML في الملف Excel، قم بتحويل الملف Excel إلى ملف XML
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostWorkbookExportXML
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookExportXML" >}}

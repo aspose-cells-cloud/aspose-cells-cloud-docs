@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/putworkbookwatermarker/
 description: قم بتعيين علامة مائية في المصنف
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PutWorkbookWaterMarker
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorkbookWaterMarker" >}}

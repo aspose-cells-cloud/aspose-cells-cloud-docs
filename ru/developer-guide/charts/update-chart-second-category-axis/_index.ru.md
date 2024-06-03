@@ -3,6 +3,7 @@ title:  Обновить ось второй категории диаграмм
 type: docs
 url: /ru/charts/second-category-axis/update/
 weight: 160
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Обновление оси второй категории диаграммы
 ---
  Этот REST API указывает на ось второй категории диаграммы обновления.
  

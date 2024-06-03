@@ -1,14 +1,15 @@
 ﻿---
 title:  Slicer zum Einfügen von Listenobjekten
 second_title: Aspose.Cells Cloud Documen
-linktitle: Scheibe einlegen
+linktitle: Slice einfügen
 type: docs
 keywords: Insert slicer for list object
 url: /de/list-objects/insert-slicer/
 description:  Slicer für Listenobjekt einfügen.
 weight: 20
+kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdwon, Slicer zum Einfügen von Listenobjekten
 ---
- Dieser REST API gibt den Einfüge-Slicer für ein Listenobjekt in einem Excel-Arbeitsblatt an.
+ Dieser REST API gibt an, dass in einem Excel-Arbeitsblatt ein Slicer für ein Listenobjekt eingefügt werden soll.
 
 ## RSET API
 
@@ -24,17 +25,17 @@ POST http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/listobjec
 |:- |:- |:- |:- |
 |Name|Zeichenfolge|Weg||
 |Blattname|Zeichenfolge|Weg||
-|listObjectIndex|Ganze Zahl|Weg||
-|ColumnIndex|Ganze Zahl|Abfrage||
-|destCellName|Zeichenfolge|Abfrage||
+|Listenobjektindex|Ganze Zahl|Weg||
+|SpaltenIndex|Ganze Zahl|Abfrage||
+|Zielzellenname|Zeichenfolge|Abfrage||
 |Ordner|Zeichenfolge|Abfrage||
 |Speichername|Zeichenfolge|Abfrage||
 
 
 
- Der[OpenAPI-Spezifikation](https://reference.aspose.cloud/cells/#/ListObjectsController/PostWorksheetListObjectInsertSlicer) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht die Durchführung von REST-Interaktionen direkt über einen Webbrowser.
+ Der[OpenAPI-Spezifikation](https://reference.aspose.cloud/cells/#/ListObjectsController/PostWorksheetListObjectInsertSlicer) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen, REST-Interaktionen direkt von einem Webbrowser aus durchzuführen.
 
-Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie man mit cURL Anrufe zur Cloud API tätigt.
+Mit dem Befehlszeilentool cURL können Sie ganz einfach auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie Sie mit cURL Anrufe an Cloud API tätigen.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 {{< tab tabNum="1" >}}
@@ -56,6 +57,6 @@ curl -v "http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listob
 
 ## Cloud SDK-Familie
 
-Die Verwendung eines SDK ist der beste Weg, die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie im GitHub-Repository.
+Die Verwendung eines SDK ist die beste Möglichkeit, die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie im GitHub-Repository.
 
-Die folgenden Codebeispiele veranschaulichen, wie Aspose.Cells-Webdienste mithilfe verschiedener SDKs aufgerufen werden:
+Die folgenden Codebeispiele zeigen, wie Sie mit verschiedenen SDKs Aufrufe an die Webdienste Aspose.Cells tätigen:

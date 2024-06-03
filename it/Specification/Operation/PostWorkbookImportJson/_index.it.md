@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/postworkbookimportjson/
 description: Importa un file di dati JSON nella cartella di lavoro. Il file di dati JSON può essere un file cloud o dati da un URI HTTP
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PostWorkbookImportJson
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookImportJson" >}}

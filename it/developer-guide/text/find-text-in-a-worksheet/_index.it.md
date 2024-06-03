@@ -8,6 +8,7 @@ aliases: [/find-text-in-a-worksheet/]
 weight: 40
 keywords: Find text from Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) worksheet
 description: Aspose.Cells Cloud REST API supporta la ricerca di testo dal foglio di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Trova testo in un foglio di lavoro Excel
 ---
 Questo REST API indica il testo `search` nel foglio di lavoro Excel.
  

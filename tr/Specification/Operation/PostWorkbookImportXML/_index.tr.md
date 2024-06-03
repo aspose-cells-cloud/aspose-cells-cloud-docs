@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/postworkbookimportxml/
 description: Bir XML veri dosyasını Excel dosyasına aktarın. XML veri dosyası bir bulut dosyası veya bir HTTP URI'sinden gelen veriler olabilir
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PostWorkbookImportXML
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookImportXML" >}}

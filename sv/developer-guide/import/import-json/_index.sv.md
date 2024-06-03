@@ -7,6 +7,7 @@ url: /sv/import/json/
 keywords: Import Json data into Excel
 description: Aspose.Cells Cloud REST API stöder import av strängarraydata till Excel-filer. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 40
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Importera Json-data till Excel
 ---
 Detta REST API `import json data` till Excel arbetsblad.
 
@@ -29,10 +30,10 @@ De viktiga parametrarna beskrivs i följande tabell:
 | namn| sträng| Arbetsbokens namn|
 | importJsonRequest| klass| Importera json-förfrågan.|
 | Lösenord| sträng| Lösenordet för arbetsboken.|
-| mapp| sträng|Original arbetsboksmapp.|
+| mapp| sträng| Original arbetsboksmapp.|
 | lagringsnamn| sträng| Lagringsnamn.|
 | outPath| sträng| Utdatafilens sökväg.|
-| outStorageName| sträng| Lagringsnamn för utdatafil.|
+| outStorageName| sträng|Lagringsnamn för utdatafil.|
 | checkExcelRestriction| sträng| Kontrollera Excel begränsning.|
 
 

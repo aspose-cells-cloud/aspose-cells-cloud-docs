@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/model/datacleansingrequest/
 description: "Aspose.Cells Спецификация облачной модели: DataCleansingRequest. Легко обрабатывайте Excel и другие документы электронных таблиц с помощью таких функций, как открытие, создание, редактирование, разделение, слияние, сравнение и преобразование."
+kwords: Excel, Office, электронная таблица, Cloud REST API, DataCleansingRequest
 weight: 50
 ---
 ## **dataCleansingRequest**

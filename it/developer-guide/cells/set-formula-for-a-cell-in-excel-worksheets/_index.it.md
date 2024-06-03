@@ -3,6 +3,7 @@ title: Imposta la formula per una cella nel foglio di lavoro Excel
 type: docs
 url: /it/set-formula-for-a-cell-in-excel-worksheets/
 weight: 80
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Imposta formula per una cella nei fogli di lavoro Excel
 ---
 Questo REST API indica l'insieme `cell formula` in un file Excel.
  

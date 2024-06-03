@@ -1,21 +1,22 @@
 ﻿---
-title: 删除后不完整行
+title: 删除未完成行
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/postdeleteincompleterows/
-description: 删除电子表格文件的不完整行主要用于消除表和范围中的不完整行
+description: 删除电子表格文件的不完整行主要用于消除表格和范围内的不完整行
+kwords: Excel，Office，电子表格，云 REST API，PostDeleteIncompleteRows
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostDeleteIncompleteRows" >}}
 {{< blocks/products/cells/docs-title titlemsg="Deleting incomplete rows of spreadsheet files is mainly used to eliminate incomplete rows in tables and ranges." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/deleteincompleterows,POST,删除电子表格文件的不完整行主要用于消除表和范围中的不完整行。,<a href=\'https://apireference.aspose.cloud/cells/#/DataProcessing/PostDeleteIncompleteRows\'>删除不完整行后</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/deleteincompleterows,POST,删除电子表格文件的不完整行主要用于消除表格和范围内的不完整行。,<a href=\'https://apireference.aspose.cloud/cells/#/DataProcessing/PostDeleteIncompleteRows\'>PostDeleteIncompleteRows</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="删除不完整行请求，类：删除不完整行请求，" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="deleteIncompleteRowsRequest，类：deleteincompleterowsrequest，" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

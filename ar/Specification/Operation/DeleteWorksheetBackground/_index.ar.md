@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/deleteworksheetbackground/
 description: حذف صورة الخلفية في ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، حذف ورقة العمل الخلفية
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetBackground" >}}

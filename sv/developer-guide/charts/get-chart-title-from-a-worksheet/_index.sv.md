@@ -4,6 +4,7 @@ type: docs
 url: /sv/charts/title/get/
 aliases: [/get-chart-title-from-a-worksheet/]
 weight: 120
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Hämta diagramtitel från ett kalkylblad
 ---
 Denna REST API indikerar att få sjökortstitel
  

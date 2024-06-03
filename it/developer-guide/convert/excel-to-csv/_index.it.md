@@ -8,6 +8,7 @@ aliases: [/convert-excel-file-to-csv-in-cloud/]
 keywords: Convert excel files to csv files
 description: Aspose.Cells Cloud REST API supporta la conversione di file Excel in file CSV. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 90
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, da Excel a CSV
 ---
 Questo file Excel REST API `saveas` in CSV.
 
@@ -33,7 +34,7 @@ Questo file Excel REST API `export` in CSV.
 
 Queste API definiscono un'interfaccia di programmazione accessibile pubblicamente e consentono di eseguire interazioni REST direttamente da un browser Web.
 
- Puoi usare**cURL** strumento da riga di comando per accedere facilmente ai servizi web Aspose.Cells. Nell'esempio seguente viene illustrato come effettuare chiamate al Cloud API con cURL.
+ Puoi usare**cURL**strumento da riga di comando per accedere facilmente ai servizi web Aspose.Cells. Nell'esempio seguente viene illustrato come effettuare chiamate al Cloud API con cURL.
 
 
 {{< tabs tabTotal="3" tabID="11" tabName11="convert" tabName12="saveas" tabName13="export" >}}

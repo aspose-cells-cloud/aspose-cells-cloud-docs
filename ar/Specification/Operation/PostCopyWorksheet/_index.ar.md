@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postcopyworksheet/
 description: نسخ المحتويات والتنسيقات من ورقة عمل أخرى
+kwords: Excel، Office، جدول البيانات، Cloud REST API، ورقة عمل PostCopy
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostCopyWorksheet" >}}

@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/model/floor/
 description: "Aspose.Cells Specifica modello Cloud: Piano. Gestisci facilmente Excel e altri fogli di calcolo con funzionalità come apertura, generazione, modifica, divisione, unione, confronto e conversione"
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, Piano
 weight: 50
 ---
 ## **pavimento**
 
- 
+ Incapsula l'oggetto che rappresenta il fondo di un grafico 3D.
 
 | Nome della proprietà| Tipo di proprietà| Nullabile| Sola lettura| Valore di default| Descrizione|
 |:- |:- |:- |:- |:- |:- |
@@ -20,5 +21,7 @@ weight: 50
 | InvertiSeNegativo| Booleano| VERO| Falso|||
 | Trasparenza| Galleggiante| VERO| Falso|||
 
-**Nome del genitore** : (Zona)[zona]**Nome dei bambini** : 
+**Nome del genitore** : [La zona](/specification/model/area)
+
+**Nome dei bambini** : 
 	-  [Muri](walls) 

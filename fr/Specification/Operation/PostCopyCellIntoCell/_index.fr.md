@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postcopycellintocell/
 description: Copier les données d'une cellule source vers une cellule de destination dans la feuille de calcul
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostCopyCellIntoCell
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostCopyCellIntoCell" >}}

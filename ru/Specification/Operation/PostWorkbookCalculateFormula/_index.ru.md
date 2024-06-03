@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postworkbookcalculateformula/
 description: Вычислить все формулы в рабочей тетради
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostWorkbookCalculateFormula
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookCalculateFormula" >}}

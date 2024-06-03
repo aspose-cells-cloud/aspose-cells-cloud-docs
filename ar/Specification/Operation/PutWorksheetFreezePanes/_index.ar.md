@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/putworksheetfreezepanes/
 description: تعيين أجزاء التجميد في ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PutWorksheetFreezePanes
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetFreezePanes" >}}

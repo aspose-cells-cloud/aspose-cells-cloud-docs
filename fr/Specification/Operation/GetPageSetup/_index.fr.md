@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/getpagesetup/
 description: Récupérer la description de la mise en page dans la feuille de calcul
+kwords: Excel, Office, feuille de calcul, Cloud REST API, GetPageSetup
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetPageSetup" >}}

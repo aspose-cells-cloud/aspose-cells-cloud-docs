@@ -3,8 +3,9 @@ title: Bir Çalışma Sayfasından MergedCell'i Alma
 type: docs
 url: /tr/get-mergedcell-from-a-worksheet/
 weight: 60
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Çalışma Sayfasından MergedCell'i Alma
 ---
-Bu REST API, Excel dosyasında `merged cell`'in alındığını gösterir.
+Bu REST API, Excel dosyasında `merged cell` alındığını gösterir.
 
 ## RSET API
  

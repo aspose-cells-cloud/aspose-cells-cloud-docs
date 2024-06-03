@@ -1,16 +1,18 @@
 ﻿---
-title: ColumnDataExceptionDescriptio
+title: ColumnDataExceptionDescription
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/model/columndataexceptiondescription/
-description: "Aspose.Cells Cloud-Modellspezifikation: ColumnDataExceptionDescription. Bearbeiten Sie mühelos Excel und andere Tabellenkalkulationsdokumente mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+description: "Aspose.Cells Cloud-Modellspezifikation: ColumnDataExceptionDescription. Müheloses Bearbeiten von Excel und anderen Tabellenkalkulationsdokumenten mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, ColumnDataExceptionDescription
 weight: 50
 ---
-## **ColumnDataExceptionDescription**
+## **columnDataExceptionDescription**
 
  
 
-| Name des Anwesens| Art der Immobilie| Nullbar| Schreibgeschützt| Standardwert| Beschreibung|
+| Name des Anwesens| Art der Immobilie| Nullwerte zulassen| Schreibgeschützt| Standardwert| Beschreibung|
 |:- |:- |:- |:- |:- |:- |
 
-**Elternname** : (Enum)[enum]
+**Elternname** : [Aufzählung](/specification/model/enum)
+

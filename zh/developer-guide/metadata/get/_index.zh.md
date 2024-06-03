@@ -1,14 +1,15 @@
 ﻿---
 title: 从 Excel 文件获取元数据
 second_title: Aspose.Cells Cloud Documen
-linktitle: 不使用storag获取
+linktitle: 无需使用存储即可获取
 type: docs
 url: /zh/metadata/get/
 keywords: Get properties from Excel files
-description: Aspose.Cells Cloud REST API 支持从 Excel 文件获取属性。 SDK支持多种开发语言。它们包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 swift
+description: Aspose.Cells Cloud REST API 支持从 excel 文件获取属性。SDK 支持多种开发语言。包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 swift
 weight: 23
+kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdwon、从 Excel 文件获取元数据
 ---
-这个REST API表示从多个Excel文件中获取`metadata`。
+这个 REST API 表示从多个 Excel 文件中获取 `metadata`。
 
 ```bash
 
@@ -23,11 +24,11 @@ POST https://api.aspose.cloud/v3.0/cells/metadata/get
 |类型|细绳|全部/内置/自定义|
 
 
-- **请求体参数**
+- **请求主体参数**
 
 |参数名称|类型|描述|
 |:- |:- |:- |
-|excel文件|数据文件|数据文件保存到多部分内容的第一部分中。|
+|excel 文件|数据文件|数据文件保存到多部分内容的第一部分中。|
 
 - **回复**
 
@@ -47,9 +48,9 @@ POST https://api.aspose.cloud/v3.0/cells/metadata/get
     ]
 }
 ```
-- **云SDK系列**
+- **Cloud SDK 系列**
 
-使用 SDK 是加快开发速度的最佳方式。 SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)有关 Aspose.Cells Cloud SDK 的完整列表。
+使用 SDK 是加快开发速度的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)获得 Aspose.Cells Cloud SDKs 的完整列表。
 
 以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
 

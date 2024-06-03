@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postworksheetlistobjectconverttorange/
 description: تحويل كائن القائمة إلى نطاق في ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostWorksheetListObjectConvertToRange
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetListObjectConvertToRange" >}}

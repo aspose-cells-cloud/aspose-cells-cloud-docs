@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/postworksheetvalidation/
 description: Uppdatera en validering efter index i kalkylbladet
+kwords: Excel, Office, Kalkylblad, Cloud REST API, PostWorksheetValidation
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetValidation" >}}

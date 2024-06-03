@@ -8,6 +8,7 @@ aliases: [/convert-autoshape-to-image/]
 keywords: Convert shape on an Excel workshee
 description: Aspose.Cells Cloud REST API admite la conversión de formas en una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 10
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Convertir forma en imagen
 ---
 Este REST API indica obtener forma con formato de imagen en una hoja de trabajo Excel.
  

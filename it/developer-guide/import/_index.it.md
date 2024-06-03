@@ -7,6 +7,7 @@ aliases: [/import-data-in-excel-worksheet-without-using-storage/]
 keywords: Import data into Excel files
 description: Aspose.Cells Cloud REST API supporta l'importazione di dati nei file Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 31
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Importa
 ---
 L'importazione dei dati in un file Excel è un processo complesso. Molti fattori contribuiscono alla complessità e pertanto dovrebbero essere presi in considerazione durante il processo di esportazione. La possibilità di importare tipi di formati e tipi di dati nel file con una precisa qualità professionale è una caratteristica principale di Aspose.Cells Cloud.
 
@@ -26,7 +27,7 @@ Vengono fornite le seguenti API per importare i dati in un file Excel o in più 
 | Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
 |:- |:- |:- |:- |
 | file| file| formData| File da caricare|
-| ImportOpzione| Opzioni di importazione|HTTPBody| IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/Picture|
+| ImportOpzione| Opzioni di importazione| HTTPBody| IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/Picture|
 
 ### Con l'utilizzo dello spazio di archiviazione
 

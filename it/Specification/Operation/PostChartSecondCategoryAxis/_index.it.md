@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/postchartsecondcategoryaxis/
 description: Aggiorna il secondo asse della categoria del grafico nel grafico
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PostChartSecondCategoryAxis
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostChartSecondCategoryAxis" >}}

@@ -6,8 +6,9 @@ aliases: [/add-hyperlinks-to-excel-worksheet/]
 keywords: Clear hyperlinks from an Excel worksheet
 description: Aspose.Cells Cloud REST API stöder att rensa hyperlänkar från ett Excel-kalkylblad. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 40
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Clear
 ---
-Detta REST API indikerar till `delete all hyperlinks` på ett Excel kalkylblad.
+Denna REST API indikerar till `delete all hyperlinks` på ett Excel kalkylblad.
  
 ## RSET API
  

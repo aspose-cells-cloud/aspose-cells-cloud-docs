@@ -7,6 +7,7 @@ url: /tr/protect/
 keywords: Protect and unprotect Excel workbook
 description: Aspose.Cells Cloud REST API, Excel çalışma kitabının korunmasını ve korumasının kaldırılmasını destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 36
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Koruma çalışma kitabı
 ---
 **Excel dosyaları nasıl korunur?**
 

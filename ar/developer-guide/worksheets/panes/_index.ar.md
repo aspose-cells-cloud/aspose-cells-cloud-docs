@@ -7,6 +7,7 @@ url: /ar/worksheets/panes/
 keywords: How to work with panes on an Excel worksheet
 description: Aspose.Cells Cloud REST API يدعم العمل مع الأجزاء في ورقة عمل Excel. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 20
+kwords: Excel، Office Cloud، REST API، جدول البيانات، PDF، CSV، Json، Markdwon، كيفية العمل مع الأجزاء في ورقة عمل Excel
 ---
 ## العمل مع الأجزاء في ورقة عمل Excel.
 

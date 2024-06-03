@@ -8,6 +8,7 @@ aliases: [/autofit-multiple-columns-of-worksheet/]
 keywords: Autofit columns on an Excel workboo
 description: Aspose.Cells Cloud REST API поддерживает автоподбор столбцов в книге Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 20
+kwords: Excel, Office Cloud, REST API, электронная таблица, PDF, CSV, Json, Markdwon, автоподбор нескольких столбцов на листе Excel
 ---
  Этот REST API указывает на автоматическую установку `multiple columns` на листе Excel.
  

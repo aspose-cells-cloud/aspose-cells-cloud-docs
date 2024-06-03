@@ -4,6 +4,7 @@ type: docs
 url: /tr/charts/area/get/
 aliases: [/get-chart-area-from-a-worksheet/]
 weight: 60
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Çalışma Sayfasından Grafik Alanı Alma
 ---
 Bu REST API, grafik alanı bilgisinin alındığını gösterir.
  

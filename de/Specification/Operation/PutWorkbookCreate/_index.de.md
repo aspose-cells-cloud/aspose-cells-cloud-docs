@@ -1,28 +1,29 @@
 ﻿---
-title: PutWorkbookCreat
+title: Arbeitsmappe erstellen
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/putworkbookcreate/
-description: Erstellen Sie mit verschiedenen Methoden eine neue Arbeitsmappe
+description: Erstellen einer neuen Arbeitsmappe mithilfe unterschiedlicher Methoden
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PutWorkbookCreate
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorkbookCreate" >}}
 {{< blocks/products/cells/docs-title titlemsg="Create a new workbook using different methods." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name},PUT,Erstellen Sie eine neue Arbeitsmappe mit verschiedenen Methoden.,<a href=\'https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookCreate\'>PutWorkbookCreate</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name},PUT,Erstellen Sie eine neue Arbeitsmappe mit unterschiedlichen Methoden.,<a href=\'https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookCreate\'>PutWorkbookCreate</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der neue Dokumentname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der neue Dokumentname." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="templateFile,string,Die Vorlagendatei, wenn die Daten nicht bereitgestellt werden, wird die Standardarbeitsmappe erstellt." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="dataFile,string,Smart-Marker-Datendatei. Wenn die Daten nicht bereitgestellt werden, wird der Anforderungsinhalt auf die Daten überprüft." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="isWriteOver,boolean,Gibt an, ob über die Zieldatei geschrieben werden soll." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="templateFile, string, Die Vorlagendatei. Wenn die Daten nicht bereitgestellt werden, wird die Standardarbeitsmappe erstellt." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="dataFile, string, Smartmarker-Datendatei. Wenn die Daten nicht bereitgestellt werden, wird der Anforderungsinhalt auf die Daten überprüft." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="isWriteOver, boolean, Gibt an, ob die Zieldatei überschrieben werden soll." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction,boolean," >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 

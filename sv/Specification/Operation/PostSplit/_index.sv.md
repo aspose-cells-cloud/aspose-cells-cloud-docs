@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/postsplit/
 description: Dela Excel kalkylbladsfiler baserade på kalkylblad och skapa utdatafiler i olika format
+kwords: Excel, Office, Kalkylblad, Cloud REST API, PostSplit
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostSplit" >}}

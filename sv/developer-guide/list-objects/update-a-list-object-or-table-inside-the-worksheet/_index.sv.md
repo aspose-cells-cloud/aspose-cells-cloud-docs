@@ -8,6 +8,7 @@ aliases: [/update-a-list-object-or-table-inside-the-worksheet/,/tables/update/]
 keywords: Update a list object(table) in an Excel worksheet
 description: Aspose.Cells Cloud REST API stöder uppdatering av ett listobjekt(tabell) i ett Excel-kalkylblad. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 20
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Uppdatera ett listobjekt i ett Excel kalkylblad
 ---
 Denna REST API anger till `update` och `list object` egenskaper.
 

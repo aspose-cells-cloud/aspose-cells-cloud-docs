@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/postsetworksheetcolumnwidth/
 description: Ställ in kalkylbladets kolumnbredd
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostSetWorksheetColumnWidth
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostSetWorksheetColumnWidth" >}}

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postworksheetvalidation/
 description: قم بتحديث التحقق من الصحة بواسطة الفهرس في ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، التحقق من صحة ورقة العمل
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetValidation" >}}

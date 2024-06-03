@@ -8,6 +8,7 @@ aliases: [/split-excel-workbooks/]
 keywords: Split an Excel workbook to multi-files
 description: Aspose.Cells Cloud REST API يدعم تقسيم مصنف Excel إلى ملفات متعددة.. SDK يدعم أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 130
+kwords: Excel، Office Cloud، REST API، جدول بيانات، PDF، CSV، Json، Markdwon، تقسيم مصنف Excel إلى ملفات متعددة
 ---
 يشير REST API إلى تقسيم Excel `workbook` إلى ملفات متعددة بتنسيق مختلف.
 
@@ -30,11 +31,11 @@ weight: 130
 
 |**API**|**يكتب**|**وصف**|**رابط التبختر**|
 |:- |:- |:- |:- |
-|/الخلايا/{اسم}/split|بريد|تقسيم المصنف Excel|[PostWorkbookSplit](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookSplit)|
+|/الخلايا/{اسم}/split|بريد|تقسيم مصنف Excel|[PostWorkbookSplit](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookSplit)|
 
  ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookSplit) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك تنفيذ تفاعلات REST مباشرة من متصفح الويب.
 
- يمكنك استخدام**cURL** أداة سطر الأوامر للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
+ يمكنك استخدام**cURL**أداة سطر الأوامر للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
@@ -94,7 +95,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/split?format=jpeg&fr
 
 ## عائلة Cloud SDK
 
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
 
 توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
 

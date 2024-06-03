@@ -7,6 +7,7 @@ aliases: [/clearobjects/]
 keywords: Clear internal objects of Excel files
 description: Aspose.Cells Cloud REST API يدعم مسح الكائنات الداخلية لملفات Excel. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 39
+kwords: Excel، Office كلاود، ريست API، جدول بيانات، PDF، CSV، Json، Markdwon، Clear
 ---
 يشير REST API إلى كائن Excel `clear` في ملفات Excel.
 
@@ -22,7 +23,7 @@ POST https://api.aspose.cloud/v3.0/cells/clearobjects
 | اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/HTTPBody|وصف|
 |:- |:- |:- |:- |
 | ملف| ملف| بيانات النموذج| ملف للتحميل|
-| نوع الكائن| خيط| استفسار|صفوف مكررة/أعمدة فارغة/صفوف فارغة/صيغة/محتوى/نمط/مخطط/تعليق/صورة/شكل/قائمةكائن/ارتباط تشعبي/كائن أولي/محوري/التحقق من الصحة/الخلفية|
+| نوع الكائن| خيط| استفسار| صفوف مكررة/أعمدة فارغة/صفوف فارغة/صيغة/محتوى/نمط/مخطط/تعليق/صورة/شكل/قائمةكائن/ارتباط تشعبي/كائن أولي/محوري/التحقق من الصحة/الخلفية|
  
  ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostClearObjects) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك تنفيذ تفاعلات REST مباشرة من متصفح الويب.
  
@@ -72,7 +73,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/clearobjects?objecttype=comment" \
  
 ## عائلة Cloud SDK
 
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
 
 توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
 

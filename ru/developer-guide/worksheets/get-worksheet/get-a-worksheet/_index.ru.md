@@ -5,8 +5,9 @@ linktitle: рабочий лист
 type: docs
 url: /ru/worksheets/get-worksheet/
 keywords: Get worksheet to different format from an Excel worksheet
-description: Aspose.Cells Cloud REST API поддерживает преобразование рабочего листа в формат, отличный от формата Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
+description: Aspose.Cells Cloud REST API поддерживает преобразование рабочего листа в формат, отличный от рабочего листа Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 10
+kwords: Excel, Office Cloud, REST API, электронная таблица, PDF, CSV, Json, Markdwon, получить рабочий лист из рабочего листа Excel
 ---
 Этот REST API указывает на `get worksheet description` или `export worksheet to kinds of format file`.
  

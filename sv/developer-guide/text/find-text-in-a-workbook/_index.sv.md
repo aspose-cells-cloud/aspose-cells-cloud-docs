@@ -8,6 +8,7 @@ aliases: [/find-text-in-a-workbook/]
 weight: 30
 keywords: Find text from Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) workbook
 description: Aspose.Cells Cloud REST API stöder att hitta text från Excel arbetsbok. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Hitta text i en Excel arbetsbok
 ---
 Denna REST API indikerar till `search` text i en Excel fil.
  

@@ -3,21 +3,23 @@ title: ImportOptio
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/model/importoption/
-description: "Aspose.Cells Cloud-Modellspezifikation: ImportOption. Bearbeiten Sie mühelos Excel und andere Tabellenkalkulationsdokumente mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+description: "Aspose.Cells Cloud-Modellspezifikation: ImportOption. Müheloses Bearbeiten von Excel und anderen Tabellenkalkulationsdokumenten mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, ImportOption
 weight: 50
 ---
-## **importOption**
+## **Importoption**
 
  
 
-| Name des Anwesens| Art der Immobilie| Nullbar| Schreibgeschützt| Standardwert| Beschreibung|
+| Name des Anwesens| Art der Immobilie| Nullwerte zulassen| Schreibgeschützt| Standardwert| Beschreibung|
 |:- |:- |:- |:- |:- |:- |
-| Zielarbeitsblatt| Zeichenfolge| WAHR| FALSCH|| Name des Zielarbeitsblatts.|
-| IsInsert| Boolescher Wert| WAHR| FALSCH|||
-| ImportDataType| Zeichenfolge| WAHR| FALSCH|||
-| Quelle| Klasse:FileSource| WAHR| FALSCH|||
+| ZielArbeitsblatt| Zeichenfolge| WAHR| FALSCH|| Name des Zielarbeitsblatts.|
+| IstEinfügen| Boolescher Wert| WAHR| FALSCH|||
+| ImportierenDatentyp| Zeichenfolge| WAHR| FALSCH|||
+| Datenquelle| Klasse:Datenquelle| WAHR| FALSCH|||
+| Quelle| Klasse:Dateiquelle| WAHR| FALSCH|||
 
-**Kindername** : 
+**Name des Kindes** : 
 	-  [Import2DimensionDoubleArrayOption](import2dimensiondoublearrayoption) 
 	-  [Import2DimensionIntArrayOption](import2dimensionintarrayoption) 
 	-  [Import2DimensionStringArrayOption](import2dimensionstringarrayoption) 

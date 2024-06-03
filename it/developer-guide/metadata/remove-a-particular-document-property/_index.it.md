@@ -8,6 +8,7 @@ aliases: [/remove-a-particular-document-property/]
 keywords: Delete, and update properties from excel files
 description: Aspose.Cells Cloud REST API supporta l'eliminazione delle proprietà dai file Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 50
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Elimina una particolare proprietà del documento
 ---
 Questo REST API indica la proprietà del documento `delete`.
  

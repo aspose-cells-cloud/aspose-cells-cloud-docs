@@ -8,6 +8,7 @@ aliases: [/auto-fit-columns-in-excel-workbooks,/autofit-columns-in-excel-workboo
 keywords: Autofit columns on an Excel workboo
 description: Aspose.Cells Cloud REST API supporta l'adattamento automatico delle colonne su una cartella di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 90
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Adatta colonne su una cartella di lavoro Excel
 ---
 Questo REST API indica di adattare automaticamente le colonne su una cartella di lavoro Excel.
  
@@ -24,7 +25,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/autofitcolumns
 |:- |:- |:- |:- |
 | nome| corda| sentiero| Nome del documento.|
 | autoFitterOptions|| corpo| Opzioni di installazione automatica.|
-| startColumn| numero intero| domanda| Inizia colonna.|
+| startColonna| numero intero| domanda| Inizia colonna.|
 | endColumn| numero intero| domanda| Fine colonna.|
 | cartella| corda| domanda| Cartella del documento.|
 | storageName| corda| domanda| nome dell'archivio.|

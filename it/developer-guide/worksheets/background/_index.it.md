@@ -7,6 +7,7 @@ url: /it/worksheets/background/
 keywords: How to work with background on an Excel worksheet
 description: Aspose.Cells Cloud REST API supporta il lavoro in background su un foglio di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 20
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Come lavorare con lo sfondo su un foglio di lavoro Excel
 ---
 ## Lavorare con lo sfondo su un foglio di lavoro Excel.
 

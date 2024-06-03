@@ -4,12 +4,13 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/getcellscloudservicestatus/
 description: Aspose.Cells 云服务健康状态检查
+kwords: Excel，Office，电子表格，云 REST API，GetCellsCloudServiceStatus
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetCellsCloudServiceStatus" >}}
 {{< blocks/products/cells/docs-title titlemsg="Aspose.Cells Cloud service health status check." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="/cells/status/check,GET,Aspose.Cells 云服务健康状态检查。,<a href=\'https://apireference.aspose.cloud/cells/#/CellsStatus/GetCellsCloudServiceStatus\'>GetCellsCloudServiceStatus</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 

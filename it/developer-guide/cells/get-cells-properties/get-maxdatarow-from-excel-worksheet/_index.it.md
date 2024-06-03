@@ -3,6 +3,7 @@ title: Ottieni MaxDataRow dal foglio di lavoro Excel
 type: docs
 url: /it/get-maxdatarow-from-excel-worksheet/
 weight: 50
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Ottieni MaxDataRow da Excel Foglio di lavoro
 ---
 Questo REST API indica che viene ottenuto `maxdatarow` in un file Excel quando il parametro `cellOrMethodName` è `maxdatarow`.
 

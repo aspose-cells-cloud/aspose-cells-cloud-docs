@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/deleteworksheetvalidation/
 description: حذف التحقق من الصحة عن طريق الفهرس في ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، RemoveWorksheetValidation
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetValidation" >}}

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/getworksheetpivottablefilter/
 description: Hämta pivottabellfilter i kalkylbladet
+kwords: Excel, Office, Kalkylblad, Cloud REST API, GetWorksheetPivotTableFilter
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetPivotTableFilter" >}}

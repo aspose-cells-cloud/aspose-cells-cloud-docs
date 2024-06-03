@@ -4,12 +4,13 @@ type: docs
 url: /zh/conditional-formattings/get-all/
 aliases: [/get-conditional-formattings-of-worksheet/]
 keywords: REST API, spreadsheets, excel, get condition formattin
-description: Cells.Cloud API for Excel操作：获取条件格式化
+description: Cells.Cloud API 为 Excel 操作：获取条件格式
 weight: 20
+kwords: Excel, Office 云, REST API, 电子表格, PDF, CSV, Json, Markdwon, 获取条件格式
 ---
 此 REST API 表示获取条件格式
  
-## RSET API
+## 重置 API
  
 ```bash
  
@@ -25,9 +26,9 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditional
 |文件夹|细绳|询问||
 |存储名称|细绳|询问|存储名称。|
  
-这[开放API规范](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/GetWorksheetConditionalFormattings)定义了一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/GetWorksheetConditionalFormattings)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
  
-您可以使用cURL命令行工具轻松访问Aspose.Cells Web服务。以下示例展示如何使用 cURL 呼叫云端 API。
+您可以使用 cURL 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例显示如何使用 cURL 调用云 API。
  
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
@@ -284,9 +285,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditi
 {{< /tab >}}
 
 {{< /tabs >}}
-## **SDK源码**
-Aspose.Cells Cloud SDK可以从以下页面下载：[可用的 SDK](/cells/zh/available-sdks/)
-### **SDK示例**
+## **SDK 源**
+Aspose.Cells Cloud SDKs可从以下页面下载：[可用的 SDK](/cells/zh/available-sdks/)
+### **SDK 示例**
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}

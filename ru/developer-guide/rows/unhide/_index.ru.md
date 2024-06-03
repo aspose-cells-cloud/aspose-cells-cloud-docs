@@ -8,6 +8,7 @@ aliases: [/unhide-rows-in-excel-worksheet/]
 keywords: Unhide rows on an Excel worksheet
 description: Aspose.Cells Cloud REST API поддерживает отображение строк на листе Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 50
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Показать строки на листе Excel
 ---
 Этот REST API указывает на отображение строк на листе Excel.
  
@@ -22,7 +23,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
  
 | Имя параметра| Тип| Путь/строка запроса/HTTPBody|Описание|
 |:- |:- |:- |:- |
-| имя| нить| путь|Имя рабочей книги.|
+| имя| нить| путь| Имя рабочей книги.|
 | имя листа| нить| путь| Имя рабочего листа.|
 | Стартроу| целое число| запрос| Индекс начальной строки, с которой нужно работать.|
 | всего строк| целое число| запрос| Количество рядов, которые будут работать.|

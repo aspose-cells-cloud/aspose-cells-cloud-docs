@@ -5,6 +5,7 @@ type: docs
 url: /ru/getting-started/
 description: Aspose.Cells Облако поддерживает Excel для создания, преобразования, объединения, разделения, защиты, операций с внутренними объектами и т. д.
 weight: 10
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, Начало работы
 ---
 В этом руководстве «Начало работы» представлено введение в основы облака Aspose.Cells. Для пользователей, впервые использующих облако Aspose.Cells, это самый быстрый способ узнать основные требования и возможности и начать работу.
 
@@ -12,7 +13,7 @@ weight: 10
 
 - [Обзор](/cells/ru/overview/).
 - [Быстрый старт](/cells/ru/quickstart/).
-- [Доступные SDK](/cells/ru/available-sdks/) – предоставляет информацию о Aspose.Cells Cloud SDK.
+- [Доступные SDK](/cells/ru/available-sdks/)– предоставляет информацию о Aspose.Cells Cloud SDK.
 - [Поддерживаемые платформы](/cells/ru/supported-platforms/) – предоставляет информацию о поддерживаемых платформах.
 - [Поддерживаемые форматы файлов](/cells/ru/supported-file-formats/) – предоставляет информацию о поддерживаемых форматах.
 - [Оценить Aspose.Cells Облако](/cells/ru/evaluate-aspose-cells/).

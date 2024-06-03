@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postworkbookstextsearch/
 description: البحث عن نص في المصنف
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostWorkbooksTextSearch
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbooksTextSearch" >}}

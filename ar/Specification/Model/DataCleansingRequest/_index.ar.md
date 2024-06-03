@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/model/datacleansingrequest/
 description: "Aspose.Cells مواصفات النموذج السحابي: DataCleansingRequest. تعامل بسهولة مع Excel ومستندات جداول البيانات الأخرى التي تحتوي على ميزات مثل الفتح والتوليد والتحرير والتقسيم والدمج والمقارنة والتحويل"
+kwords: Excel, Office, جدول البيانات, Cloud REST API, DataCleansingRequest
 weight: 50
 ---
 ## **dataCleansingRequest**

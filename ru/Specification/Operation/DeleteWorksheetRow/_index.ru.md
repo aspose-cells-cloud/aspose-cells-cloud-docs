@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/deleteworksheetrow/
 description: Удалить строку на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, DeleteWorksheetRow
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetRow" >}}

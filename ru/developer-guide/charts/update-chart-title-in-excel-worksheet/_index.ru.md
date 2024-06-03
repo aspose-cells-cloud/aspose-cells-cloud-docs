@@ -4,6 +4,7 @@ type: docs
 url: /ru/charts/title/update/
 aliases: [/update-chart-title-in-excel-worksheet/]
 weight: 160
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, обновить заголовок диаграммы в рабочем листе Excel
 ---
 Этот REST API указывает заголовок диаграммы обновления.
  

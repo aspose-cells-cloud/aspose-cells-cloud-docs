@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/model/pdfsaveoptions/
 description: "Aspose.Cells Specifica del modello cloud: PdfSaveOptions. Gestisci facilmente Excel e altri fogli di calcolo con funzionalità come apertura, generazione, modifica, divisione, unione, confronto e conversione"
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PdfSaveOptions
 weight: 50
 ---
 ## **pdfSalvaOpzioni**
@@ -18,9 +19,9 @@ weight: 50
 | EsportazioneProprietàPersonalizzate| Corda| VERO| Falso|| Specifica il modo in cui CustomDocumentPropertyCollection viene esportato nel file PDF.|
 | Tipo di ottimizzazione| Corda| VERO| Falso|| Ottiene e imposta il tipo di ottimizzazione PDF.|
 | Produttore| Corda| VERO| Falso|| Ottiene e imposta il produttore del documento PDF generato.|
-| PdfCompressione| Corda| VERO| Falso||Indicare l'algoritmo di compressione.|
+| PdfCompressione| Corda| VERO| Falso|| Indicare l'algoritmo di compressione.|
 | Codifica dei caratteri| Corda| VERO| Falso|| Ottiene o imposta la codifica dei caratteri incorporati in pdf.|
-| Filigrana| Classe:RenderingWatermark| VERO| Falso|| Ottiene o imposta la filigrana sull'output.|
+| Filigrana|Classe:RenderingWatermark| VERO| Falso|| Ottiene o imposta la filigrana sull'output.|
 | CalcolaFormula| Booleano| VERO| Falso|| Indica se calcolare le formule prima di salvare il file PDF. Il valore predefinito è false.|
 | Controlla la compatibilità dei caratteri| Booleano| VERO| Falso|| Indica se verificare la compatibilità dei caratteri per ogni carattere nel testo. Il valore predefinito è vero. Disabilitare questa proprietà può fornire prestazioni migliori. Ma quando il carattere predefinito o specificato del testo/carattere non può essere utilizzato per eseguirne il rendering, nel pdf generato potrebbero essere presenti caratteri illeggibili (come il blocco). Per tale situazione l'utente dovrebbe mantenere questa proprietà su true in modo che sia possibile cercare e utilizzare caratteri alternativi per visualizzare il testo;|
 | Conformità| Corda| VERO| Falso|| La cartella di lavoro viene convertita in PDF secondo PdfCompliance in questa proprietà.|
@@ -37,7 +38,8 @@ weight: 50
 | CreaDirectory| Booleano| VERO| Falso|||
 | Abilita compressione HTTP| Booleano| VERO| Falso|||
 | AggiornaChartCache| Booleano| VERO| Falso|||
-|OrdinaNomi| Booleano| VERO| Falso|||
+| OrdinaNomi| Booleano| VERO| Falso|||
 | ValidateMergedAreas| Booleano| VERO| Falso|||
 
-**Nome del genitore** : (OpzioniSalva)[opzionisalva]
+**Nome del genitore** : [SalvaOpzioni](/specification/model/saveoptions)
+

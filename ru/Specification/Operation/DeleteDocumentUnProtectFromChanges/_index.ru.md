@@ -3,7 +3,8 @@ title: Удалитьдокументунпротектфромчанже
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/deletedocumentunprotectfromchanges/
-description: Excel защита от записи файла, отмена
+description: Excel защита от записи файла
+kwords: Excel, Office, электронная таблица, Cloud REST API, DeleteDocumentUnProtectFromChanges
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteDocumentUnProtectFromChanges" >}}

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postworksheetlistcolumn/
 description: Обновить столбец списка в объекте списка
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostWorksheetListColumn
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetListColumn" >}}

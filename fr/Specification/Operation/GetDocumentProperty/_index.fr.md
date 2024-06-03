@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/getdocumentproperty/
 description: Obtenez la propriété Excel par son nom
+kwords: Excel, Office, feuille de calcul, Cloud REST API, GetDocumentProperty
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetDocumentProperty" >}}

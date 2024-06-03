@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/deleteheaderfooter/
 description: Очистить верхний и нижний колонтитулы на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, DeleteHeaderFooter
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteHeaderFooter" >}}

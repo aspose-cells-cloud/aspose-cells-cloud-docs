@@ -7,6 +7,7 @@ aliases: [/working-with-pivot-tables/]
 keywords: Working with pivot table on an Excel worksheet
 description: Come fare in modo che le API REST cloud Aspose.Cells funzionino con la tabella pivot in un foglio di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 100
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Tabelle pivot
 ---
 ## Lavorare con tabelle pivot su un file Excel.
 

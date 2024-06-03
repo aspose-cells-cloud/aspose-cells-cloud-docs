@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/deleteworksheetshapes/
 description: Ta bort alla former i kalkylbladet
+kwords: Excel, Office, Kalkylblad, Cloud REST API, DeleteWorksheetShapes
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetShapes" >}}

@@ -3,6 +3,7 @@ title:  Actualizar la categoría del gráfico Axi
 type: docs
 url: /es/charts/category-axis/update/
 weight: 160
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Actualizar eje de categorías de gráfico
 ---
 Este REST API indica el eje de categoría del gráfico de actualización.
  

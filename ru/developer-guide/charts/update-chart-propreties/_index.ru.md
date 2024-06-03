@@ -4,6 +4,7 @@ type: docs
 url: /ru/charts/propreties/update/
 aliases: [/update-chart-propreties/]
 weight: 160
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, обновление свойств диаграммы
 ---
 Этот REST API указывает свойства диаграммы обновления.
  

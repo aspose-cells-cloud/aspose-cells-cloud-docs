@@ -8,6 +8,7 @@ aliases: [/hide-excel-worksheets/]
 keywords: Hide an Excel Worksheet on an Excel Workbook
 description: Aspose.Cells Cloud REST API поддерживает скрытие рабочего листа Excel в книге Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 50
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Скрыть лист Excel
 ---
 Этот REST API указывает на `hide worksheet`.
  
@@ -24,7 +25,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/visible
 |:- |:- |:- |:- |
 | имя| нить| путь| Название документа.|
 | имя листа| нить| путь| Имя рабочего листа.|
-| isVisible| логическое значение| запрос| Новое значение видимости листа.|
+| isVisible|логическое значение| запрос| Новое значение видимости листа.|
 | папка| нить| запрос| Папка документов.|
 | имя_хранилища| нить| запрос| имя хранилища.|
  

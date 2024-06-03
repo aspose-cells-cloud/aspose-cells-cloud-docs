@@ -8,6 +8,7 @@ aliases: [/clear-modify-password-of-excel-workbooks/,/workbook/clear-modify-pass
 keywords: Delete password on an Excel workbook
 description: Aspose.Cells Cloud REST API prend en charge la suppression du mot de passe sur un classeur Excel. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 110
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, effacer le mot de passe de modification des classeurs Excel
 ---
 Ce REST API indique de déprotéger le document contre les modifications.
  
@@ -20,7 +21,7 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/writeProtection
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Le nom du document.|
 | dossier| chaîne| requête| Dossier du document.|

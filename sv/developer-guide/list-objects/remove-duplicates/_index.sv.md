@@ -7,6 +7,7 @@ keywords: list object(table) remove duplicates
 url: /sv/list-objects/remove-duplicates/
 description:  Ta bort dubbletter på listobjekt.
 weight: 20
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Listobjekt ta bort dubbletter
 ---
  Denna REST API indikerar att ta bort dubbletter på listobjekt.
 

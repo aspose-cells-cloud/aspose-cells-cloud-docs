@@ -1,26 +1,27 @@
 ﻿---
-title: 帖子适合高到页面
+title: 帖子适合高度至页面
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/postfittalltopages/
-description: 设置在纸张上打印时页面适合高度的比例
+description: 设置打印在纸张上时页面的高度比例
+kwords: Excel，Office，电子表格，云 REST API，PostFitTallToPages
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostFitTallToPages" >}}
 {{< blocks/products/cells/docs-title titlemsg="Set the scale at which the page will fit tall when printed on the sheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pagesetup/fittalltopages,POST,设置在纸张上打印时页面适合高度的比例。,<a href=\'https://apireference.aspose.cloud /cells/#/PageSetup/PostFitTallToPages\'>PostFitTallToPages</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pagesetup/fittalltopages,POST,设置在打印到纸张上时页面的高度比例。,<a href=\'https://apireference.aspose.cloud/cells/#/PageSetup/PostFitTallToPages\'>PostFitTallToPages</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="参数名称、类型、描述" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="名称，字符串，文件名。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,字符串,工作表名称。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="name，string，文件名。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName，string，工作表名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="文件夹，字符串，文件所在的文件夹。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,文件所在的存储名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName，string，文件所在的存储名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/PageSetupController/PostFitTallToPages\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

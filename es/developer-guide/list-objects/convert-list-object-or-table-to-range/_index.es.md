@@ -8,6 +8,7 @@ aliases: [/convert-list-object-or-table-to-range/,/tables/to-range/]
 keywords: Convert a list object(table) to range in an Excel worksheet
 description: Aspose.Cells Cloud REST API admite la conversión de un objeto de lista (tabla) a un rango en una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 30
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Convertir objeto de lista en rango en una hoja de trabajo Excel
 ---
 Este REST API indica `convert table or list object to range` en una hoja de trabajo Excel.
  

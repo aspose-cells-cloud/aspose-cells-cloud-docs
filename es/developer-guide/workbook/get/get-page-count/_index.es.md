@@ -8,6 +8,7 @@ aliases: [/workbook/page-count/]
 keywords: Getting pages count on an Excel workbook
 description: Aspose.Cells Cloud REST API admite el recuento de páginas en un libro de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 10
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Obtener recuento de páginas
 ---
 Este REST API indica `get page count` para el libro de trabajo.
  

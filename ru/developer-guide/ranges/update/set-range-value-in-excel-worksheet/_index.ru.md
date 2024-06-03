@@ -8,6 +8,7 @@ aliases: [/set-range-value-in-excel-worksheet/]
 keywords: Set range value on an Excel workshee
 description: Aspose.Cells Cloud REST API поддерживает настройку значения диапазона на листе Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 72
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Установить значение диапазона на листе Excel
 ---
 Этот REST API указывает, что значение помещается в диапазон. При необходимости значение будет преобразовано в другой тип данных, а числовой формат ячейки будет сброшен.
             
@@ -27,8 +28,8 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/val
 | имя листа| нить| путь| имя листа|
 | ценить| нить| запрос| Входное значение|
 | диапазон|| тело| диапазон на листе|
-| isConverted| логическое значение| запрос| ЛОЖЬ|
-| setStyle| логическое значение| запрос| ЛОЖЬ|
+| isConverted|логическое значение| запрос| ЛОЖЬ|
+| setStyle|логическое значение| запрос| ЛОЖЬ|
 | папка| нить| запрос| Папка с рабочей тетрадью.|
 | имя_хранилища| нить| запрос| имя хранилища.|
  

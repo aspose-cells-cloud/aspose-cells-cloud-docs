@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/getworksheetpivottablefilter/
 description: Çalışma sayfasında PivotTable filtrelerini alma
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, GetWorksheetPivotTableFilter
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetPivotTableFilter" >}}

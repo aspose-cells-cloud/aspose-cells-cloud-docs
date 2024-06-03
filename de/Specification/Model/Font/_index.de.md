@@ -3,25 +3,26 @@ title: Fon
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/model/font/
-description: "Aspose.Cells Cloud-Modellspezifikation: Schriftart. Bearbeiten Sie mühelos Excel und andere Tabellenkalkulationsdokumente mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+description: "Aspose.Cells Cloud-Modellspezifikation: Schriftart. Müheloses Bearbeiten von Excel und anderen Tabellenkalkulationsdokumenten mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, Schriftart
 weight: 50
 ---
 ## **Schriftart**
 
- 
+ Kapselt das in einer Kalkulationstabelle verwendete Schriftobjekt ein.
 
-| Name des Anwesens| Art der Immobilie| Nullbar| Schreibgeschützt| Standardwert| Beschreibung|
+| Name des Anwesens| Art der Immobilie| Nullwerte zulassen| Schreibgeschützt| Standardwert| Beschreibung|
 |:- |:- |:- |:- |:- |:- |
-| Farbe| Klasse:Farbe| WAHR| FALSCH|| Ruft die Schriftart der Schriftart ab oder legt diese fest.|
-| Doppelte Größe| Schwebend| WAHR| FALSCH|| Ruft die doppelte Größe der Schriftart ab und legt diese fest.|
-| IsBold| Boolescher Wert| WAHR| FALSCH|| Ruft einen Wert ab, der angibt, ob die Schriftart fett ist, oder legt diesen fest.|
-| IsItalic| Boolescher Wert| WAHR| FALSCH|| Ruft einen Wert ab, der angibt, ob die Schriftart kursiv ist, oder legt diesen fest.|
-| IsStrikeout| Boolescher Wert| WAHR| FALSCH|| Ruft einen Wert ab, der angibt, ob die Schriftart einfach durchgestrichen ist, oder legt diesen fest.|
-| IsSubscript| Boolescher Wert| WAHR| FALSCH|| Ruft einen Wert ab, der angibt, ob die Schriftart tiefgestellt ist, oder legt diesen fest.|
-| IsSuperscript| Boolescher Wert| WAHR| FALSCH|| Ruft einen Wert ab, der angibt, ob es sich bei der Schriftart um eine Hochschrift handelt, oder legt diesen fest.|
-| Name| Zeichenfolge| WAHR| FALSCH|| Ruft den Namen der ab oder legt diesen fest.|
-| Größe| Ganze Zahl| WAHR| FALSCH|| Ruft die Größe der Schriftart ab oder legt diese fest.|
-| Unterstreichen| Zeichenfolge| WAHR| FALSCH|| Ruft den Unterstreichungstyp der Schriftart ab oder legt diesen fest.|
+| Farbe| Klasse:Farbe| WAHR| FALSCH|| Ruft die Schriftart ab oder legt sie fest.|
+| Doppelte Größe| Schwimmend| WAHR| FALSCH|| Ruft die doppelte Schriftgröße ab und legt sie fest.|
+| Ist fett| Boolescher Wert| WAHR| FALSCH|| Ruft einen Wert ab oder legt einen Wert fest, der angibt, ob die Schriftart fett ist.|
+| IsItalic| Boolescher Wert| WAHR| FALSCH|| Ruft einen Wert ab oder legt einen Wert fest, der angibt, ob die Schriftart kursiv ist.|
+| IstStrikeout| Boolescher Wert| WAHR| FALSCH||Ruft einen Wert ab oder legt einen Wert fest, der angibt, ob die Schriftart einfach durchgestrichen ist.|
+| IstSubscript| Boolescher Wert| WAHR| FALSCH|| Ruft einen Wert ab oder legt einen Wert fest, der angibt, ob die Schriftart tiefgestellt ist.|
+| Ist hochgestellt| Boolescher Wert| WAHR| FALSCH|| Ruft einen Wert ab oder legt einen Wert fest, der angibt, ob die Schriftart hochgestellt ist.|
+| Name| Zeichenfolge| WAHR| FALSCH|| Ruft den Namen des ab oder legt ihn fest.|
+| Größe| Ganze Zahl| WAHR| FALSCH|| Ruft die Schriftgröße ab oder legt sie fest.|
+| Unterstreichen| Zeichenfolge| WAHR| FALSCH|| Ruft den Unterstreichungstyp der Schriftart ab oder legt ihn fest.|
 
-**Kindername** : 
+**Name des Kindes** : 
 	-  [Textoptionen](textoptions) 

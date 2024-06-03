@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postrepair/
 description: Исправляйте аномальные файлы и создавайте файлы в различных форматах.
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostRepair
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostRepair" >}}
@@ -15,7 +16,7 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Имя параметра, тип, описание" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="Outformat, String, формат файла выходных данных. (CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/07613481/076148484848484848484848484484848484848484848484848484848484848484848484848484848484848484848484848484848484848484848484848484848484848нт. GIF/EMF /BMP/MD[Markdown]/Числа)" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="outFormat,строка,формат файла выходных данных.(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/07616348 1 /BMP/MD[Markdown]/Числа)" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/LightCellsController/PostRepair\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

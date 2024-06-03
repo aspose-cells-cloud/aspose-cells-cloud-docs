@@ -1,28 +1,29 @@
 ﻿---
-title: PutAddNewWorkshee
+title: NeuesArbeitsblatthinzufügen
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/putaddnewworksheet/
-description: Fügen Sie der Arbeitsmappe ein neues Arbeitsblatt hinzu
+description: Hinzufügen eines neuen Arbeitsblatts zur Arbeitsmappe
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PutAddNewWorksheet
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutAddNewWorksheet" >}}
 {{< blocks/products/cells/docs-title titlemsg="Add a new worksheet in the workbook." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName},PUT,Fügen Sie ein neues Arbeitsblatt zur Arbeitsmappe hinzu.,<a href=\'https://apireference.aspose.cloud/cells/#/Worksheets/PutAddNewWorksheet\'>PutAddNewWorksheet< /a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName},PUT,Fügen Sie der Arbeitsmappe ein neues Arbeitsblatt hinzu.,<a href=\'https://apireference.aspose.cloud/cells/#/Worksheets/PutAddNewWorksheet\'>PutAddNewWorksheet</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der neue Blattname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der neue Blattname." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="position,integer,Die neue Blattposition." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="sheettype,string,Gibt den Arbeitsblatttyp an (VB/Worksheet/Chart/BIFF4Macro/InternationalMacro/Other/Dialog)." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Position, Ganzzahl, Die neue Blattposition." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Blatttyp, Zeichenfolge, Gibt den Arbeitsblatttyp an (VB/Arbeitsblatt/Diagramm/BIFF4Macro/InternationalMacro/Andere/Dialog)." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/WorksheetsController/PutAddNewWorksheet\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

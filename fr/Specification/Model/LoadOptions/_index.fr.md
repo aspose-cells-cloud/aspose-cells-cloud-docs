@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/model/loadoptions/
 description: "Aspose.Cells Spécification du modèle cloud : LoadOptions. Gérez sans effort Excel et d'autres feuilles de calcul avec des fonctionnalités telles que l'ouverture, la génération, l'édition, le fractionnement, la fusion, la comparaison et la conversion."
+kwords: Excel, Office, feuille de calcul, Cloud REST API, LoadOptions
 weight: 50
 ---
 ## **options de chargement**
 
- 
+ Représente les options de chargement du fichier.
 
 | Nom de la propriété| Type de propriété| Nullable| Lecture seulement| Valeur par défaut| Description|
 |:- |:- |:- |:- |:- |:- |
@@ -19,8 +20,8 @@ weight: 50
 | ChargerFormat| Chaîne| Vrai| FAUX|| Obtient le format de chargement.|
 | OnlyLoadDocumentProperties| Chaîne| Vrai| FAUX|||
 | AnalyseFormulaOnOpen| Chaîne| Vrai| FAUX|| Indique si l'analyse de la formule lors de la lecture du fichier.|
-| Mot de passe| Chaîne| Vrai| FAUX||Obtient et définit le mot de passe du classeur.|
+| Mot de passe| Chaîne| Vrai| FAUX|| Obtient et définit le mot de passe du classeur.|
 | Région| Chaîne| Vrai| FAUX|| Obtient ou définit les paramètres régionaux du système en fonction de CountryCode au moment du chargement du fichier.|
 | Police standard| Chaîne| Vrai| FAUX|| Définit le nom de police standard par défaut|
-| Taille de police standard| Flottant| Vrai| FAUX|| Définit la taille de police standard par défaut.|
+| Taille de police standard| Flottant| Vrai| FAUX||Définit la taille de police standard par défaut.|
 

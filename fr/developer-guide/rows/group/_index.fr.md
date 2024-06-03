@@ -1,5 +1,5 @@
 ﻿---
-title: Regrouper les lignes sur une feuille de calcul Excel
+title: Regrouper les lignes sur une feuille de travail Excel
 second_title: Aspose.Cells Cloud Documen
 linktitle: Groupe
 type: docs
@@ -8,6 +8,7 @@ aliases: [/group-rows-in-excel-worksheet/]
 keywords: Group rows on an Excel worksheet
 description: Aspose.Cells Cloud REST API prend en charge le regroupement de lignes sur une feuille de calcul Excel. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 60
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, regrouper les lignes sur une feuille de calcul Excel
 ---
 Ce REST API indique de regrouper les lignes sur une feuille de calcul Excel.
  
@@ -20,13 +21,13 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
-| nom| chaîne| chemin|Le nom du classeur.|
+| nom| chaîne| chemin| Le nom du classeur.|
 | Nom de la feuille| chaîne| chemin| Le nom de la feuille de calcul.|
 | premierIndex| entier| requête| Index de la première ligne à exploiter.|
 | dernierIndex| entier| requête| Dernier index de ligne à exploiter.|
-| cacher| booléen| requête| état visible des lignes|
+| cacher|booléen| requête| état visible des lignes|
 | dossier| chaîne| requête| Le dossier de documents.|
 | Nom de stockage| chaîne| requête| nom de stockage.|
  

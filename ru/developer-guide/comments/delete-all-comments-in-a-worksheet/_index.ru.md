@@ -6,6 +6,7 @@ aliases: [/delete-all-comments-in-a-worksheet/]
 keywords: REST API, spreadsheets, excel, clear comment
 description: "Cells.Облако API для Excel работает: убрать комментарии"
 weight: 50
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Очистить
 ---
 Этот REST API указывает на удаление всех комментариев к рабочему листу.
  

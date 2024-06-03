@@ -1,27 +1,28 @@
 ﻿---
-title: PostWorksheetPictur
+title: PostArbeitsblattBild
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postworksheetpicture/
-description: Aktualisieren Sie ein Bild anhand des Index im Arbeitsblatt
+description: Aktualisieren eines Bilds anhand des Index im Arbeitsblatt
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostWorksheetPicture
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetPicture" >}}
 {{< blocks/products/cells/docs-title titlemsg="Update a picture by index in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex},POST,Aktualisieren Sie ein Bild nach Index im Arbeitsblatt.,<a href=\'https://apireference.aspose.cloud/cells/#/ Pictures/PostWorksheetPicture\'>PostWorksheetPicture</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex},POST,Aktualisiert ein Bild nach Index im Arbeitsblatt.,<a href=\'https://apireference.aspose.cloud/cells/#/Pictures/PostWorksheetPicture\'>PostWorksheetPicture</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
      {{< blocks/products/cells/docs-Parameter-content columns="pictureIndex,integer,Der Index des Bildes." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Parametername, Typ, Beschreibung" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="Bild, Klasse: Bild, Beschreibung des Bildobjekts." >}} 

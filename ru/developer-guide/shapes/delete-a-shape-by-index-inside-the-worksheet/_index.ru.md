@@ -8,6 +8,7 @@ aliases: [/delete-a-shape-by-index-inside-the-worksheet/]
 keywords: Delete a shape on an Excel workshee
 description: Aspose.Cells Cloud REST API поддерживает удаление фигуры на листе Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 50
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Удаление фигуры по индексу на листе Excel
 ---
 Этот REST API указывает на удаление фигуры на листе Excel.
  

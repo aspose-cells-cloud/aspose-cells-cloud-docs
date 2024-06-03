@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/deleteworksheethyperlinks/
 description: Elimina tutti i collegamenti ipertestuali nel foglio di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, Elimina foglio di lavoro Collegamenti ipertestuali
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetHyperlinks" >}}

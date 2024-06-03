@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/model/workbookprotectionrequest/
 description: "Aspose.Cells Molnmodellspecifikation: WorkbookProtectionRequest. Hantera enkelt Excel och andra kalkylarksdokument med funktioner som att öppna, generera, redigera, dela, slå samman, jämföra och konvertera"
+kwords: Excel, Office, Kalkylblad, Cloud REST API, WorkbookProtectionRequest
 weight: 50
 ---
 ## **arbetsbokProtectionRequest**
@@ -13,5 +14,5 @@ weight: 50
 | Egendomsnamn| Egenskapstyp| Nullbar| Endast läs| Standardvärde| Beskrivning|
 |:- |:- |:- |:- |:- |:- |
 | ProtectionType| Sträng| Sann| Falsk|| Skyddstyp. Kan vara ALLT, INNEHÅLL, INGEN, OBJEKT, SCENARIER, STRUKTUR, WINDOWS|
-| Lösenord| Sträng| Sann| Falsk||Lösenord för kryptering.|
+| Lösenord| Sträng| Sann| Falsk|| Lösenord för kryptering.|
 

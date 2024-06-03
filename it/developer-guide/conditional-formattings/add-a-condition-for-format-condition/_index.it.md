@@ -6,6 +6,7 @@ aliases: [/add-a-condition-for-format-condition/]
 keywords: REST API, spreadsheets, excel, add conditiona
 description: "Cells.Cloud API per Excel operare: aggiungere condizionale"
 weight: 40
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Aggiungi condizione
 ---
 Questo REST API indica Aggiungi una condizione per la condizione del formato.
  

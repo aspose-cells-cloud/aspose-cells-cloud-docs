@@ -4,13 +4,14 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/postrenameworksheet/
 description: Çalışma kitabındaki çalışma sayfasını yeniden adlandırın
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PostRenameWorksheet
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostRenameWorksheet" >}}
 {{< blocks/products/cells/docs-title titlemsg="Rename worksheet in the workbook." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Açıklama,API referans" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/rename,POST,Çalışma kitabındaki çalışma sayfasını yeniden adlandır.,<a href=\'https://apireference.aspose.cloud/cells/#/Worksheets/PostRenameWorksheet\'>PostRenameWorksheet< /a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/rename,POST,Çalışma kitabındaki çalışma sayfasını yeniden adlandırın.,<a href=\'https://apireference.aspose.cloud/cells/#/Worksheets/PostRenameWorksheet\'>PostRenameWorksheet< /a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

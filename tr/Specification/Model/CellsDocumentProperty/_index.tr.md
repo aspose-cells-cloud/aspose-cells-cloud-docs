@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/model/cellsdocumentproperty/
 description: "Aspose.Cells Bulut modeli spesifikasyonu: CellsDocumentProperty. Açma, oluşturma, düzenleme, bölme, birleştirme, karşılaştırma ve dönüştürme gibi özelliklerle Excel ve diğer elektronik tablo belgelerini zahmetsizce yönetin"
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, CellsDocumentProperty
 weight: 50
 ---
 ## **hücrelerBelgeÖzellik**
@@ -12,7 +13,7 @@ weight: 50
 
 | Mülkiyet adı| Emlak Tipi| Geçersiz kılınabilir| Sadece oku| Varsayılan değer| Tanım|
 |:- |:- |:- |:- |:- |:- |
-| İsim| Sicim| Doğru| YANLIŞ||Özelliğin adını döndürür.|
+| İsim| Sicim| Doğru| YANLIŞ|| Özelliğin adını döndürür.|
 | Değer| Sicim| Doğru| YANLIŞ|| Özelliğin değerini alır veya ayarlar.|
 | İçeriğe Bağlantılı| Sicim| Doğru| YANLIŞ|| Bu özelliğin içeriğe bağlı olup olmadığını gösterir|
 | Kaynak| Sicim| Doğru| YANLIŞ|| Bağlantılı içerik kaynağı.|

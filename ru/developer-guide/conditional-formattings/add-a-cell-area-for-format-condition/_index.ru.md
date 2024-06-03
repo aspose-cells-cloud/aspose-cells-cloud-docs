@@ -6,6 +6,7 @@ aliases: [/add-a-cell-area-for-format-condition/]
 keywords: REST API, spreadsheets, excel, add cellarea for formatconditio
 description: "Cells.Облако API для Excel работает: добавить комментарий"
 weight: 30
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Добавить CellArea
 ---
 Этот REST API указывает на добавление области ячеек для условия формата.
             

@@ -1,32 +1,33 @@
 ﻿---
-title: 把工作表图标过滤
+title: 放置工作表图标过滤器
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/putworksheeticonfilter/
 description: 在工作表中添加图标过滤器
+kwords: Excel，Office，电子表格，云 REST API，PutWorksheetIconFilter
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetIconFilter" >}}
 {{< blocks/products/cells/docs-title titlemsg="Add an icon filter in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/autoFilter/iconFilter,PUT,在工作表中添加图标过滤器。,<a href=\'https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetIconFilter \'>PutWorksheetIconFilter</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/autoFilter/iconFilter,PUT,在工作表中添加图标过滤器。,<a href=\'https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetIconFilter\'>PutWorksheetIconFilter</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="参数名称、类型、描述" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="名称，字符串，文件名。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,字符串,工作表名称。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="name，string，文件名。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName，string，工作表名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="range,字符串,表示指定自动筛选应用的范围。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="fieldIndex,integer,要作为过滤器基础的字段的整数偏移量（从列表左侧开始；最左侧的字段是字段 0）。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="iconSetType,字符串,图标集类型。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="iconId,整数,图标ID。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="matchBlanks,boolean,匹配列表中的所有空白单元格。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="range，string，表示指定的自动筛选适用的范围。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="fieldIndex，整数，要基于该字段进行过滤的整数偏移量（从列表的左侧开始；最左边的字段是字段 0）。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="iconSetType，string，图标集类型。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="iconId，整数，图标id。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="matchBlanks，boolean，匹配列表中所有空白单元格。" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="刷新，布尔值，刷新自动过滤器以隐藏或取消隐藏行。" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="文件夹，字符串，文件所在的文件夹。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,文件所在的存储名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName，string，文件所在的存储名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/AutoFilterController/PutWorksheetIconFilter\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

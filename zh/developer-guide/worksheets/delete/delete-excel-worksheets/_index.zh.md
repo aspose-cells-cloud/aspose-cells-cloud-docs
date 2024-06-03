@@ -1,17 +1,18 @@
 ﻿---
-title: 删除多个Excel工作表
+title: 删除多个 Excel 工作表
 second_title: Aspose.Cells Cloud Documen
-linktitle: 多个工作表
+linktitle: 多工作表
 type: docs
 url: /zh/worksheets/delete-multiple/
 aliases: [/delete-excel-worksheets/]
 keywords: Delete multiple Excel worksheets on an Excel workbook
-description: Aspose.Cells Cloud REST API 支持删除 Excel 工作簿上的多个 Excel 工作表。 SDK支持多种开发语言。它们包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 swift
+description: Aspose.Cells Cloud REST API 支持删除工作簿上的多个 Excel 工作表。SDK 支持多种开发语言。其中包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 swift
 weight: 20
+kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdwon、删除多个 Excel 工作表
 ---
-这个REST API表示`delete multiple worksheets`。
+这个 REST API 表示 `delete multiple worksheets`。
  
-## RSET API
+## 重置 API
  
 ```bash
  
@@ -28,13 +29,13 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets
 |存储名称|细绳|询问||
  
 
-**匹配条件请求属性**
+**MatchConditionRequest 属性**
  
-名称 |类型 |描述 |笔记
+名称 | 类型 | 描述 | 注释
 ------------ | ------------- | ------------- | -------------
-正则表达式模式 |字符串| | [可选]FullMatchConditions |字符串[]| | [可选][开放API规范](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheets)定义了一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+RegexPattern | 字符串 | | [可选]FullMatchConditions | 字符串[]| | [可选][OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheets)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
  
-您可以使用cURL命令行工具轻松访问Aspose.Cells Web服务。以下示例展示如何使用 cURL 呼叫云端 API。
+您可以使用 cURL 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例显示如何使用 cURL 调用云 API。
  
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
  
@@ -66,9 +67,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets?folder=Temp" \
  
 {{< /tabs >}}
  
-## 云SDK系列
+## Cloud SDK 系列
  
-使用 SDK 是加快开发速度的最佳方式。 SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)有关 Aspose.Cells Cloud SDK 的完整列表。
+使用 SDK 是加快开发速度的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)获得 Aspose.Cells Cloud SDKs 的完整列表。
  
 以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
  

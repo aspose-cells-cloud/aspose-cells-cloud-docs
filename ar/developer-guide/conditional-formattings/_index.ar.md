@@ -7,6 +7,7 @@ aliases: [/working-with-conditional-formatting/]
 keywords: REST API, spreadsheets, excel, conditional formattin
 description: "Cells.Cloud API لـ Excel تشغيل: تشغيل التنسيق الشرطي"
 weight: 100
+kwords: Excel، Office كلاود، ريست API، جدول البيانات، PDF، CSV، Json، Markdwon، التنسيقات الشرطية
 ---
 &nbsp;&nbsp;&nbsp;&nbsp;يمكّنك التنسيق الشرطي في Excel من تمييز الخلايا بلون معين، اعتمادًا على قيمة الخلية.
 

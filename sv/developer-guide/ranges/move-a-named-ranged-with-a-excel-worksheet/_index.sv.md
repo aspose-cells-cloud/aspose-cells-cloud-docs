@@ -8,8 +8,9 @@ aliases: [/move-a-named-ranged-with-a-excel-worksheet/]
 keywords: Move a named ranged with an Excel workshee
 description: Aspose.Cells Cloud REST API stöder att flytta en namngiven ranged med ett Excel kalkylblad. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 20
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Flytta ett namngivet område med ett Excel kalkylblad
 ---
- Denna REST API indikerar att det aktuella intervallet ska flyttas till destintervallet på ett Excel kalkylblad.
+Denna REST API indikerar att det aktuella intervallet ska flyttas till destintervallet på ett Excel kalkylblad.
             
  
 ## RSET API

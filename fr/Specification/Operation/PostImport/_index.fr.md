@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postimport/
 description: Importez des données dans un fichier Excel et générez des fichiers de sortie dans différents formats
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostImport
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostImport" >}}

@@ -8,6 +8,7 @@ aliases: [/delete-a-specific-picture-from-excel-worksheet/]
 keywords: Delete a picture in an Excel file
 description: Aspose.Cells Cloud REST API prend en charge la suppression d'une image dans un fichier Excel. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 50
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdwon, Supprimer une image dans un fichier Excel
 ---
 Ce REST API indique à `delete` une image issue d'une feuille de calcul Excel.
  
@@ -20,9 +21,9 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
-| nom| chaîne| chemin|Le nom du classeur.|
+| nom| chaîne| chemin| Le nom du classeur.|
 | Nom de la feuille| chaîne| chemin| Le nom de la feuille de travail.|
 | imageIndex| entier| chemin| Index des images|
 | dossier| chaîne| requête| Le dossier du classeur.|

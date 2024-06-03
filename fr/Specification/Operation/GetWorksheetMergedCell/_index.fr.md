@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/getworksheetmergedcell/
 description: Récupérer la description d'une cellule fusionnée par son index dans la feuille de calcul
+kwords: Excel, Office, feuille de calcul, Cloud REST API, GetWorksheetMergedCell
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetMergedCell" >}}

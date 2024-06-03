@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postcompress/
 description: ضغط الملفات وإنشاء ملفات مستهدفة بتنسيقات مختلفة، وتشمل تنسيقات الملفات المدعومة Xls وXlsx وXlsm وXlsb وOds والمزيد
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostCompress
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostCompress" >}}

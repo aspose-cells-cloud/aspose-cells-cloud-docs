@@ -8,8 +8,9 @@ aliases: [/get-all-shapes-inside-the-worksheet/]
 keywords: Get all shapes on an Excel workshee
 description: Aspose.Cells Cloud REST API, tüm şekillerin Excel çalışma sayfasında alınmasını destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 10
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Tüm şekilleri Excel çalışma sayfasında alın
 ---
-Bu REST API, Çalışma sayfası şekillerini al anlamına gelir
+ Bu REST API, Çalışma sayfası şekillerini al anlamına gelir
  
 ## RSET API
  

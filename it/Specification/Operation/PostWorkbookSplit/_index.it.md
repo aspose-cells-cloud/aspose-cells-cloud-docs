@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/postworkbooksplit/
 description: Dividere la cartella di lavoro con un formato specifico
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PostWorkbookSplit
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookSplit" >}}

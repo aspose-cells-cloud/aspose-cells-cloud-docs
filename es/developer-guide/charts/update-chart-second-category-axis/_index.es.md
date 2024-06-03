@@ -3,6 +3,7 @@ title:  Actualizar Cuadro Segunda Categoría Axi
 type: docs
 url: /es/charts/second-category-axis/update/
 weight: 160
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Actualizar gráfico Eje de segunda categoría
 ---
  Este REST API indica el eje de segunda categoría del gráfico de actualización.
  

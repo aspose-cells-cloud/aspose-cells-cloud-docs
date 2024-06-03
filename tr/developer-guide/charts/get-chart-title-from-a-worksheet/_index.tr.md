@@ -4,6 +4,7 @@ type: docs
 url: /tr/charts/title/get/
 aliases: [/get-chart-title-from-a-worksheet/]
 weight: 120
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Çalışma Sayfasından Grafik Başlığını Al
 ---
 Bu REST API, grafik başlığının alındığını gösterir
  

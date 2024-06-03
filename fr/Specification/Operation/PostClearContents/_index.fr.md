@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postclearcontents/
 description: Effacer le contenu de la zone de cellule dans la feuille de calcul
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostClearContents
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostClearContents" >}}

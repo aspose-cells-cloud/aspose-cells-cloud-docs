@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/postworksheetcellsrangeoutlineborder/
 description: Bir hücre aralığının çevresine anahat kenarlığı uygulama
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PostWorksheetCellsRangeOutlineBorder
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangeOutlineBorder" >}}
@@ -23,7 +24,7 @@ weight: 50
     {{< blocks/products/cells/docs-Parameter-content columns="depolamaAdı,dize,Depolama adı." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Parametre Adı,Tip,Açıklama" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="rangeOperate,class:rangesetoutlineborderrequest,RangeSetOutlineBorderRequest Aralık Ayarı OutlineBorder İsteği." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="rangeOperate,class:rangesetoutlineborderrequest,RangeSetOutlineBorderRequest Aralığı Ayarla OutlineBorder İsteği." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

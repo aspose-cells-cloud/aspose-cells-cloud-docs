@@ -3,25 +3,26 @@ title: PostWorkbooksMerg
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postworkbooksmerge/
-description: Führen Sie eine Arbeitsmappe mit der vorhandenen Arbeitsmappe zusammen
+description: Zusammenführen einer Arbeitsmappe mit der vorhandenen Arbeitsmappe
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostWorkbooksMerge
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbooksMerge" >}}
 {{< blocks/products/cells/docs-title titlemsg="Merge a workbook into the existing workbook." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/merge,POST,Eine Arbeitsmappe mit der vorhandenen Arbeitsmappe zusammenführen.,<a href=\'https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbooksMerge\'>PostWorkbooksMerge</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/merge,POST,Fügt eine Arbeitsmappe in die vorhandene Arbeitsmappe ein.,<a href=\'https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbooksMerge\'>PostWorkbooksMerge</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="mergeWith,string,Die Arbeitsmappe, mit der zusammengeführt werden soll." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="mergeWith, Zeichenfolge, Die Arbeitsmappe, mit der zusammengeführt werden soll." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="mergedStorageName,string,Speichername." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="mergedStorageName, Zeichenfolge, Speichername." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/WorkbookController/PostWorkbooksMerge\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

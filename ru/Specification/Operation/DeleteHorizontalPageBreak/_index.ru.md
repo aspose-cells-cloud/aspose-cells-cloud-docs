@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/deletehorizontalpagebreak/
 description: Удалить горизонтальный разрыв страницы на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, DeleteHorizontalPageBreak
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteHorizontalPageBreak" >}}

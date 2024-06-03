@@ -4,13 +4,14 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/postmoveworksheet/
 description: Mover hoja de trabajo en el libro de trabajo
+kwords: Excel, Office, Hoja de cálculo, Cloud REST API, PostMoveWorksheet
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostMoveWorksheet" >}}
 {{< blocks/products/cells/docs-title titlemsg="Move worksheet in the workbook." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API, método Http, descripción, referencia API" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/position,POST,Mover hoja de trabajo en el libro de trabajo.,<a href=\'https://apireference.aspose.cloud/cells/#/Worksheets/PostMoveWorksheet\'>PostMoveWorksheet< /a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/position,POST,Mover hoja de trabajo en el libro.,<a href=\'https://apireference.aspose.cloud/cells/#/Worksheets/PostMoveWorksheet\'>PostMoveWorksheet< /a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

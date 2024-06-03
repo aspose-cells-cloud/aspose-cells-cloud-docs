@@ -4,25 +4,26 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postworkbookgetsmartmarkerresult/
 description: Intelligente Markerverarbeitung
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostWorkbookGetSmartMarkerResult
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookGetSmartMarkerResult" >}}
 {{< blocks/products/cells/docs-title titlemsg="Smart marker processing." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/smartmarker,POST,Intelligente Markierungsverarbeitung.,<a href=\'https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookGetSmartMarkerResult\'>PostWorkbookGetSmartMarkerResult</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/smartmarker,POST,Smart-Marker-Verarbeitung.,<a href=\'https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookGetSmartMarkerResult\'>PostWorkbookGetSmartMarkerResult</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="xmlFile,string,Der vollständige Pfad der XML-Datei. Wenn dieser leer ist, werden die Daten aus dem Anforderungshauptteil gelesen." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="xmlFile, Zeichenfolge, der vollständige Pfad der XML-Datei. Wenn er leer ist, werden die Daten aus dem Anforderungstext gelesen." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="outPath,string,Der Pfad zum Speichern des Ergebnisses" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="outStorageName,string,Der Speichername, in dem sich die Ergebnisdatei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="outPath, string, Der Pfad zum Speichern des Ergebnisses" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="outStorageName, string, Der Name des Speichers, in dem sich die Ergebnisdatei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/WorkbookController/PostWorkbookGetSmartMarkerResult\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

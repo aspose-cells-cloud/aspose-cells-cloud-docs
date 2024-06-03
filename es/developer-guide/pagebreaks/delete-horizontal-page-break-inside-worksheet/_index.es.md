@@ -8,8 +8,9 @@ aliases: [/delete-horizontal-page-break-inside-worksheet/]
 keywords: Delete a page break in an Excel worksheet
 description: Aspose.Cells Cloud REST API admite la eliminación de un salto de página en una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 50
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Eliminar salto de página horizontal
 ---
-Este REST API indica que se debe eliminar un salto de página `horizontal`.
+ Este REST API indica que se debe eliminar un salto de página `horizontal`.
  
 ## RSET API
  

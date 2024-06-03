@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postworksheetlistobjectinsertslicer/
 description: Insérer un slicer pour l'objet de liste
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostWorksheetListObjectInsertSlicer
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetListObjectInsertSlicer" >}}
@@ -20,8 +21,8 @@ weight: 50
      {{< blocks/products/cells/docs-Parameter-content columns="listObjectIndex, entier, index d\'objet de liste." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Nom du paramètre, type, description" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns=" columnIndex,integer,L\'index de ListColumn dans ListObject.ListColumns" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns=" destCellName,string,Cellule dans le coin supérieur gauche de la plage Slicer." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="columnIndex,integer,L\'index de ListColumn dans ListObject.ListColumns" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns=" destCellName,string,La cellule dans le coin supérieur gauche de la plage Slicer." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="dossier, chaîne, le dossier où se trouve le fichier." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Le nom de stockage où se trouve le fichier." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}

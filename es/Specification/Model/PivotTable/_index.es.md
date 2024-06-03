@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/model/pivottable/
 description: "Aspose.Cells Especificación del modelo de nube: tabla dinámica. Maneje sin esfuerzo Excel y otros documentos de hoja de cálculo con funciones como abrir, generar, editar, dividir, fusionar, comparar y convertir."
+kwords: Excel, Office, Hoja de cálculo, Nube REST API, Tabla dinámica
 weight: 50
 ---
 ## **tabla dinámica**
 
- 
+ Descripción resumida de la tabla dinámica.
 
 | Nombre de la propiedad| tipo de propiedad| Anulable| Solo lectura| Valor por defecto| Descripción|
 |:- |:- |:- |:- |:- |:- |
@@ -31,7 +32,7 @@ weight: 50
 | Habilitar edición de valores de datos| Booleano| Verdadero| FALSO|||
 | Habilitar desglose| Booleano| Verdadero| FALSO|||
 | Habilitar cuadro de diálogo de campo| Booleano| Verdadero| FALSO|||
-|Habilitar lista de campos| Booleano| Verdadero| FALSO|||
+| Habilitar lista de campos| Booleano| Verdadero| FALSO|||
 | Habilitar asistente| Booleano| Verdadero| FALSO|||
 | cadena de error| Cadena| Verdadero| FALSO|||
 | CampoListaOrdenarAscendente| Booleano| Verdadero| FALSO|||
@@ -44,9 +45,9 @@ weight: 50
 | Está seleccionado| Booleano| Verdadero| FALSO|||
 | ArtículoImprimirTítulos| Booleano| Verdadero| FALSO|||
 | Actualización manual| Booleano| Verdadero| FALSO|||
-| Fusionar etiquetas| Booleano| Verdadero| FALSO|||
+|Fusionar etiquetas| Booleano| Verdadero| FALSO|||
 | Límite de elementos faltantes| Cadena| Verdadero| FALSO|||
-| Nombre| Cadena| Verdadero| FALSO|||
+| Nombre| Cadena| Verdadero| FALSO||Representa el nombre de la tabla dinámica.|
 | cadena nula| Cadena| Verdadero| FALSO|||
 | Orden de campo de página| Cadena| Verdadero| FALSO|||
 | Campos de página| Envase| Verdadero| FALSO|||
@@ -78,8 +79,9 @@ weight: 50
 | Mostrar valores fila| Booleano| Verdadero| FALSO|||
 | SubtotalElementos de página ocultos| Booleano| Verdadero| FALSO|||
 | Rango de tabla1| Clase: Área de celda| Verdadero| FALSO|||
-|Rango de tabla2| Clase: Área de celda| Verdadero| FALSO|||
+| Rango de tabla2| Clase: Área de celda| Verdadero| FALSO|||
 | Etiqueta| Cadena| Verdadero| FALSO|||
 | enlace| Clase: enlace| Verdadero| FALSO|||
 
-**Nombre del padre** : (ElementoEnlace)[elementoEnlace]
+**Nombre del padre** : [Elemento de enlace](/specification/model/linkelement)
+

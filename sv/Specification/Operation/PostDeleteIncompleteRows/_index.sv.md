@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/postdeleteincompleterows/
 description: Att ta bort ofullständiga rader med kalkylarksfiler används främst för att eliminera ofullständiga rader i tabeller och intervall
+kwords: Excel, Office, Kalkylblad, Cloud REST API, PostDeleteIncompleteRows
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostDeleteIncompleteRows" >}}

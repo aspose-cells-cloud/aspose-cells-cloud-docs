@@ -7,6 +7,7 @@ url: /it/validations/get-all/
 keywords: Get all worksheet validations from an Excel worksheet
 description: Aspose.Cells Cloud REST API supporta il recupero di tutte le convalide del foglio di lavoro da un foglio di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 10
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Ottieni tutte le convalide del foglio di lavoro da un foglio di lavoro Excel
 ---
 Questo REST API indica di ottenere tutte le convalide del foglio di lavoro su un foglio di lavoro Excel.
  

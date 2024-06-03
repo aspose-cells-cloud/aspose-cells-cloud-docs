@@ -3,24 +3,25 @@ title: PostFitTallToPage
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postfittalltopages/
-description: Legen Sie den Maßstab fest, in dem die Seite hochformatig auf das Blatt gedruckt wird
+description: Stellen Sie den Maßstab ein, bei dem die Seite hochkant auf das Blatt gedruckt wird
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostFitTallToPages
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostFitTallToPages" >}}
 {{< blocks/products/cells/docs-title titlemsg="Set the scale at which the page will fit tall when printed on the sheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pagesetup/fittalltopages,POST,Legen Sie den Maßstab fest, in dem die Seite groß angezeigt wird, wenn sie auf dem Blatt gedruckt wird.,<a href=\'https://apireference.aspose.cloud /cells/#/PageSetup/PostFitTallToPages\'>PostFitTallToPages</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pagesetup/fittalltopages,POST,Legen Sie den Maßstab fest, bei dem die Seite hoch auf das Blatt gedruckt wird.,<a href=\'https://apireference.aspose.cloud/cells/#/PageSetup/PostFitTallToPages\'>PostFitTallToPages</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/PageSetupController/PostFitTallToPages\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

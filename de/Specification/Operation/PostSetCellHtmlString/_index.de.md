@@ -1,27 +1,28 @@
 ﻿---
-title: PostSetCellHtmlStrin
+title: PostSetCellHtmlString
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postsetcellhtmlstring/
-description: Legen Sie in dieser Zelle die Zeichenfolge HTML fest, die Daten und bestimmte Formate enthält
+description: Setzen Sie die Zeichenfolge HTML mit Daten und bestimmten Formaten in diese Zelle
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostSetCellHtmlString
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostSetCellHtmlString" >}}
 {{< blocks/products/cells/docs-title titlemsg="Set the HTML string containing data and specific formats in this cell." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells/{cellName}/htmlstring,POST,Legen Sie die Zeichenfolge HTML fest, die Daten und bestimmte Formate in dieser Zelle enthält.,<a href=\'https://apireference.aspose. cloud/cells/#/Cells/PostSetCellHtmlString\'>PostSetCellHtmlString</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells/{cellName}/htmlstring,POST,Legen Sie die Zeichenfolge HTML mit Daten und bestimmten Formaten in dieser Zelle fest.,<a href=\'https://apireference.aspose.cloud/cells/#/Cells/PostSetCellHtmlString\'>PostSetCellHtmlString</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="cellName,string,Der Zellenname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="cellName, string, Der Zellenname." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/CellsController/PostSetCellHtmlString\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

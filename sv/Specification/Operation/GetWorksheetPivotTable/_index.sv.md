@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/getworksheetpivottable/
 description: Hämta pivottabellinformation efter index i kalkylbladet
+kwords: Excel, Office, Kalkylblad, Cloud REST API, GetWorksheetPivotTable
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetPivotTable" >}}

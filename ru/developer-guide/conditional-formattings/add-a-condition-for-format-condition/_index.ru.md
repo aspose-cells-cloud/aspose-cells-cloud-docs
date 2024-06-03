@@ -6,6 +6,7 @@ aliases: [/add-a-condition-for-format-condition/]
 keywords: REST API, spreadsheets, excel, add conditiona
 description: "Cells.Облако API для Excel работает: добавить условное"
 weight: 40
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Добавить условие
 ---
 Этот REST API указывает на добавление условия для условия формата.
  

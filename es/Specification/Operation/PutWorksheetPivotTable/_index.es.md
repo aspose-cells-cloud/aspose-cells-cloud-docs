@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/putworksheetpivottable/
 description: Agregar una tabla dinámica en la hoja de trabajo
+kwords: Excel, Office, Hoja de cálculo, Nube REST API, PutWorksheetPivotTable
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetPivotTable" >}}

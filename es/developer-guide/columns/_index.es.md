@@ -7,6 +7,7 @@ aliases: [/working-with-columns/]
 keywords: REST API, columns, spreadsheets, exce
 description: "Cells.Cloud API para Excel opera: mostrar columnas de una hoja de trabajo Excel"
 weight: 100
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Columnas
 ---
 ## Trabajar con columnas en un archivo Excel.
 

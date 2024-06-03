@@ -4,6 +4,7 @@ type: docs
 url: /fr/charts/legend/hide/
 aliases: [/hide-chart-legend-in-a-worksheet/]
 weight: 110
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, masquer la légende du graphique dans une feuille de calcul
 ---
 Ce REST API indique masquer la légende dans le graphique
  
@@ -16,7 +17,7 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Nom du classeur.|
 | Nom de la feuille| chaîne| chemin| Nom de la feuille de calcul.|

@@ -1,8 +1,9 @@
 ﻿---
-title: Supprimer la fusion Cells dans la feuille de calcul Excel
+title: Supprimer la fusion Cells dans la feuille de travail Excel
 type: docs
 url: /fr/unmerge-cells-in-excel-worksheet/
 weight: 120
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, annuler la fusion Cells dans la feuille de calcul Excel
 ---
 Ce REST API indique `unmerge` cellules dans un fichier Excel.
 
@@ -15,14 +16,14 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/unme
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
-| nom| chaîne| chemin|Le nom du classeur.|
+| nom| chaîne| chemin| Le nom du classeur.|
 | Nom de la feuille| chaîne| chemin| Le nom de la feuille de calcul.|
 | startRow| entier| requête| La ligne de départ.|
 | colonneDébut| entier| requête| La colonne de départ.|
 | totalLignes| entier| requête| Le total des lignes|
-|totalColonnes| entier| requête| Le total des colonnes.|
+| totalColonnes| entier| requête| Le total des colonnes.|
 | dossier| chaîne| requête| Le dossier du classeur.|
 | Nom de stockage| chaîne| requête| nom de stockage.|
  

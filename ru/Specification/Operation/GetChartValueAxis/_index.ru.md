@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/getchartvalueaxis/
 description: Получить ось значений диаграммы на диаграмме
+kwords: Excel, Office, электронная таблица, Cloud REST API, GetChartValueAxis
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetChartValueAxis" >}}

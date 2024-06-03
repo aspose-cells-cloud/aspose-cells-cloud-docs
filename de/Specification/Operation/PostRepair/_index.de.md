@@ -1,21 +1,22 @@
 ﻿---
-title: PostRepai
+title: Nachreparatur
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postrepair/
 description: Reparieren Sie abnormale Dateien und generieren Sie Dateien in verschiedenen Formaten
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostRepair
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostRepair" >}}
 {{< blocks/products/cells/docs-title titlemsg="Repair abnormal files and generate files in various formats." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/repair,POST,Reparieren Sie abnormale Dateien und generieren Sie Dateien in verschiedenen Formaten.,<a href=\'https://apireference.aspose.cloud/cells/#/LightCells/PostRepair\'>PostRepair</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/repair,POST,Repariert abnormale Dateien und generiert Dateien in verschiedenen Formaten.,<a href=\'https://apireference.aspose.cloud/cells/#/LightCells/PostRepair\'>PostRepair</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="outFormat,string,Das Ausgabedatenformat 1 /BMP/MD[Markdown]/Numbers)" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="outFormat, Zeichenfolge, Das Ausgabedatendateiformat. (CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/LightCellsController/PostRepair\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

@@ -3,23 +3,24 @@ title: 后旋转
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/postrotate/
-description: 旋转Excel文件中的行、列或其他对象并将其保存为各种格式
+description: 旋转 Excel 文件中的行、列或其他对象并将其保存为各种格式
+kwords: Excel，Office，电子表格，云 REST API，PostRotate
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostRotate" >}}
 {{< blocks/products/cells/docs-title titlemsg="Rotate rows, columns, or other objects in Excel files and save them in various formats." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/rotate,POST,旋转Excel文件中的行、列或其他对象并以各种格式保存。,<a href=\'https://apireference.aspose.cloud/cells/#/LightCells/PostRotate\'>后旋转</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/rotate,POST,旋转 Excel 文件中的行、列或其他对象并以各种格式保存它们。,<a href=\'https://apireference.aspose.cloud/cells/#/LightCells/PostRotate\'>PostRotate</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="旋转类型，字符串，270/90/行/列/row2col" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="outFormat,字符串,输出数据文件格式。(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF /BMP/MD[Markdown]/数字）" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="密码,字符串,打开Excel文件所需的密码。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction,boolean,用户修改单元格相关对象时是否检查excel文件的限制。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="Region,string,工作簿的区域设置。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="rotateType,string,270/90/行/列/行2列" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="outFormat，string，输出数据文件格式。(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="password，string，打开Excel文件所需的密码。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction,boolean,当用户修改单元格相关对象时是否检查excel文件的限制。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="region，string，工作簿的区域设置。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/LightCellsController/PostRotate\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

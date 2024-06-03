@@ -4,6 +4,7 @@ type: docs
 url: /tr/chart/title/add/
 aliases: [/set-chart-title-in-excel-worksheet/]
 weight: 30
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel Çalışma Sayfasındaki Grafik Başlığını Ayarla
 ---
 Bu REST API, grafik başlığı ekle/grafik başlığını görünür olarak ayarla anlamına gelir
  

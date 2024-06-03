@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/putworkbookwatermarker/
 description: Définir un marqueur d'eau dans le classeur
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PutWorkbookWaterMarker
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorkbookWaterMarker" >}}

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/model/docxsaveoptions/
 description: "Aspose.Cells Specifica del modello cloud: DocxSaveOptions. Gestisci facilmente Excel e altri fogli di calcolo con funzionalità come apertura, generazione, modifica, divisione, unione, confronto e conversione"
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, DocxSaveOptions
 weight: 50
 ---
 ## **docxSaveOptions**
@@ -28,7 +29,7 @@ weight: 50
 | Lingua di modifica predefinita| Corda| VERO| Falso|||
 | EmfRenderSetting| Corda| VERO| Falso|||
 | Unisci aree| Booleano| VERO| Falso|||
-|Ordina nomi esterni| Booleano| VERO| Falso|||
+| Ordina nomi esterni| Booleano| VERO| Falso|||
 | AggiornaSmartArt| Booleano| VERO| Falso|||
 | Salva formato| Corda| VERO| Falso|||
 | Cartella file memorizzata nella cache| Corda| VERO| Falso|||
@@ -36,7 +37,8 @@ weight: 50
 | CreaDirectory| Booleano| VERO| Falso|||
 | Abilita compressione HTTP| Booleano| VERO| Falso|||
 | AggiornaChartCache| Booleano| VERO| Falso|||
-|OrdinaNomi| Booleano| VERO| Falso|||
+| OrdinaNomi| Booleano| VERO| Falso|||
 | ValidateMergedAreas| Booleano| VERO| Falso|||
 
-**Nome del genitore** : (OpzioniPaginatedSave)[paginatedsaveopzioni]
+**Nome del genitore** : [PaginatedSaveOptions](/specification/model/paginatedsaveoptions)
+

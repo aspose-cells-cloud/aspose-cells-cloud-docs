@@ -3,19 +3,20 @@ title: PostDataFil
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postdatafill/
-description: Das Ausfüllen von Daten für Tabellenkalkulationsdateien wird hauptsächlich zum Füllen leerer Daten in Tabellen und Bereichen verwendet
+description: Das Ausfüllen von Tabellenkalkulationsdateien dient in erster Linie zum Ausfüllen leerer Daten in Tabellen und Bereichen.
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostDataFill
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostDataFill" >}}
 {{< blocks/products/cells/docs-title titlemsg="Data filling for spreadsheet files is primarily used to fill empty data in tables and ranges." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/datafill,POST,Das Ausfüllen von Daten für Tabellenkalkulationsdateien wird hauptsächlich zum Füllen leerer Daten in Tabellen und Bereichen verwendet.,<a href=\'https://apireference.aspose.cloud/cells/#/DataProcessing/PostDataFill\'>PostDataFill </a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/datafill,POST,Das Ausfüllen von Tabellenkalkulationsdateien mit Daten wird hauptsächlich zum Ausfüllen von leeren Tabellen und Bereichen mit Daten verwendet.,<a href=\'https://apireference.aspose.cloud/cells/#/DataProcessing/PostDataFill\'>PostDataFill</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="dataFillRequest,class:datafillrequest," >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="dataFillRequest,Klasse:datafillrequest," >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

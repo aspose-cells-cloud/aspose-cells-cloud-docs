@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postupdateworksheetcellstyle/
 description: Définir le style de cellule en utilisant le nom de la cellule dans la feuille de calcul
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostUpdateWorksheetCellStyle
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostUpdateWorksheetCellStyle" >}}

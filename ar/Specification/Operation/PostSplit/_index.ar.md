@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postsplit/
 description: قم بتقسيم ملفات جداول البيانات Excel بناءً على أوراق العمل وإنشاء ملفات الإخراج بتنسيقات مختلفة
+kwords: Excel, Office, جدول البيانات, Cloud REST API, PostSplit
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostSplit" >}}

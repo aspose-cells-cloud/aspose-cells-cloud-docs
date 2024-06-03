@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/postworkbookexportxml/
 description: Exportera XML-data från en Excel-fil. När det finns XML-kartor i en Excel-fil, exportera XML-data. När det inte finns någon XML-karta i Excel-filen, konvertera Excel-filen till en XML-fil
+kwords: Excel, Office, Kalkylblad, Cloud REST API, PostWorkbookExportXML
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookExportXML" >}}

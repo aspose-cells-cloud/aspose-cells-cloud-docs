@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/postworksheetcalculateformula/
 description: Beräkna formeln i kalkylbladet
+kwords: Excel, Office, Kalkylblad, Cloud REST API, PostWorksheetCalculateFormula
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCalculateFormula" >}}

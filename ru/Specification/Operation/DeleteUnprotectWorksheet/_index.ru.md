@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/deleteunprotectworksheet/
 description: Снять защиту с листа
+kwords: Excel, Office, электронная таблица, Cloud REST API, DeleteUnprotectWorksheet
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteUnprotectWorksheet" >}}

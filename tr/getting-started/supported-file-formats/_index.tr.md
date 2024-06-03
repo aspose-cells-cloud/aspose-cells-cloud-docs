@@ -5,6 +5,7 @@ type: docs
 url: /tr/supported-file-formats/
 description: Aspose.Cells Bulut, oluşturma, dönüştürme, birleştirme, bölme, koruma, iç nesne işlemleri vb. için Excel'i destekler
 weight: 40
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Desteklenen Dosya Formatları
 ---
 |**Biçim**|**Tanım**|**Yük**|**Kaydetmek**|
 |:- |:- |:- |:- |

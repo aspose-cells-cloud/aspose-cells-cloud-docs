@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postworksheetpivottablecalculate/
 description: حساب بيانات المحور المحوري إلى الخلايا
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostWorksheetPivotTableCalculate
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetPivotTableCalculate" >}}

@@ -8,6 +8,7 @@ aliases: [/unhide-columns-in-an-excel-worksheet/,/unhide-columns-in-excel-worksh
 keywords: Unhide column on an Excel workshee
 description: Aspose.Cells Cloud REST API يدعم إخفاء العمود في ورقة عمل Excel. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 50
+kwords: Excel، Office كلاود، ريست API، جدول بيانات، PDF، CSV، Json، Markdwon، إظهار الأعمدة في ورقة عمل Excel
 ---
 يشير REST API إلى إظهار أعمدة ورقة العمل.
  
@@ -22,17 +23,17 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/colu
  
 | اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/HTTPBody|وصف|
 |:- |:- |:- |:- |
-| اسم| خيط| طريق|اسم المصنف.|
+| اسم| خيط| طريق| اسم المصنف.|
 | اسم الورقة| خيط| طريق| اسم ورقة العمل.|
 | startcolumn| عدد صحيح| استفسار| مؤشر عمود البداية المراد تشغيله.|
-|إجمالي الأعمدة| عدد صحيح| استفسار| عدد الأعمدة المراد تشغيلها.|
+| إجمالي الأعمدة| عدد صحيح| استفسار| عدد الأعمدة المراد تشغيلها.|
 | عرض| رقم| استفسار|50.0 |
 | مجلد| خيط| استفسار| مجلد المستندات.|
 | اسم التخزين| خيط| استفسار| اسم التخزين.|
 
  ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostUnhideWorksheetColumns) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك تنفيذ تفاعلات REST مباشرة من متصفح الويب.
 
- يمكنك استخدام**cURL** أداة سطر الأوامر للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
+ يمكنك استخدام**cURL**أداة سطر الأوامر للوصول إلى خدمات الويب Aspose.Cells بسهولة. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API مع cURL.
 
 
 
@@ -68,7 +69,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ce
 
 ## عائلة Cloud SDK
 
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
 
 توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
 

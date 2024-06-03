@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/getworksheets/
 description: استرداد وصف أوراق العمل من مصنف
+kwords: Excel، Office، جدول البيانات، Cloud REST API، GetWorksheets
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheets" >}}

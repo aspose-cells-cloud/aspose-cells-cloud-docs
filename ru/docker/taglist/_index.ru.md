@@ -5,6 +5,7 @@ type: docs
 url: /ru/docker/tag-list/
 description: Поддерживаемые платформы
 weight: 30
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, TagList
 ---
 ##  Windows Изображения сервера 2016 ##
 

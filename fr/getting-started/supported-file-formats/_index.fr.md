@@ -5,6 +5,7 @@ type: docs
 url: /fr/supported-file-formats/
 description: Aspose.Cells Cloud prend en charge Excel pour créer, convertir, fusionner, diviser, protéger, opération d'objet interne, etc.
 weight: 40
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, formats de fichiers pris en charge
 ---
 |**Format**|**Description**|**Charger**|**Sauvegarder**|
 |:- |:- |:- |:- |

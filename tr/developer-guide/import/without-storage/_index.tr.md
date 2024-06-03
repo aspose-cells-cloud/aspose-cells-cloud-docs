@@ -8,6 +8,7 @@ aliases: [/import-data-in-excel-worksheet-without-using-storage/]
 keywords: REST API,  spreadsheets, excel, Import
 description: Cells.Cloud API, Excel dosyalarını içe aktarmak için
 weight: 10
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Depolamayı kullanmadan Verileri İçe Aktarın
 ---
 Excel veri içe aktarma karmaşık bir işlemdir. Birçok faktör karmaşıklığa katkıda bulunur ve bu nedenle ihracat sürecinde dikkate alınmalıdır. Çeşitli format ve veri türlerini kesin bir profesyonel kalitede dosyaya aktarma yeteneği, Aspose.Cells Cloud'un en önemli özelliğidir.
 
@@ -26,7 +27,7 @@ POST https://api.aspose.cloud/v3.0/cells/import
 | Parametre adı| Tip| Yol/Sorgu Dizesi/HTTPBody|Tanım|
 |:- |:- |:- |:- |
 | dosya| dosya| form verisi| Yüklenecek dosya|
-| İçe Aktarma Seçeneği| İçe Aktarma Seçenekleri|HTTPGövdesi| IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/Picture|
+| İçe Aktarma Seçeneği| İçe Aktarma Seçenekleri| HTTPGövdesi| IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/Picture|
 
 **Verileri içe aktarma seçenekleri parametreleri** içinde anlatılmıştır[referans bağlantısı](/cells/tr/import/#import-data-option-parameter).
 

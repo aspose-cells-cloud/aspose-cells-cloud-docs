@@ -3,6 +3,7 @@ title: Ottieni i dati delle celle da un foglio di lavoro
 type: docs
 url: /it/get-cell-data-from-a-worksheet/
 weight: 10
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Ottieni dati cella da un foglio di lavoro
 ---
 Questo REST API indica che viene ottenuto `cell` in un file Excel quando il parametro `cellOrMethodName` è il nome della cella.
 

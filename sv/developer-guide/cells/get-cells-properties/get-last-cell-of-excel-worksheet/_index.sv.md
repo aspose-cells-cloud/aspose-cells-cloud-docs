@@ -3,6 +3,7 @@ title: Få sista cellen av Excel Worksheet
 type: docs
 url: /sv/get-last-cell-of-excel-worksheet/
 weight: 30
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Get Last Cell of Excel Worksheet
 ---
 Denna REST API indikerar visar få ett `endcell` i en Excel fil när parametern `cellOrMethodName` är `endcell`.
 

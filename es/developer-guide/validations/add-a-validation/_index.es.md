@@ -7,6 +7,7 @@ url: /es/validations/add/
 keywords: Delete a worksheet validation on an Excel worksheet
 description: Aspose.Cells Cloud REST API admite agregar una validación de hoja de trabajo en una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 10
+kwords: Excel, Office Cloud, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Agregar una validación de hoja de trabajo en una hoja de trabajo Excel
 ---
 Este REST API indica agregar una validación de hoja de trabajo en una hoja de trabajo Excel.
  

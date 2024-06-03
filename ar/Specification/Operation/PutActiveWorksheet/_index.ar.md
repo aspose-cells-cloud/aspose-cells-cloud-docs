@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/putactiveworksheet/
 description: قم بتعيين فهرس ورقة العمل النشط في المصنف
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PutActiveWorksheet
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutActiveWorksheet" >}}

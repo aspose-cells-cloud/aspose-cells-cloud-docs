@@ -1,28 +1,29 @@
 ﻿---
-title: GetWorksheetOleObjec
+title: GetWorksheetOleObject
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/getworksheetoleobject/
-description: Rufen Sie das OLE-Objekt in einem angegebenen Format im Arbeitsblatt ab
+description: Abrufen des OLE-Objekts in einem angegebenen Format im Arbeitsblatt
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, GetWorksheetOleObject
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetOleObject" >}}
 {{< blocks/products/cells/docs-title titlemsg="Retrieve the OLE object in a specified format in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/oleobjects/{objectNumber},GET,Rufen Sie das OLE-Objekt in einem angegebenen Format im Arbeitsblatt ab.,<a href=\'https://apireference.aspose.cloud/cells /#/OleObjects/GetWorksheetOleObject\'>GetWorksheetOleObject</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/oleobjects/{objectNumber},GET,Ruft das OLE-Objekt in einem angegebenen Format im Arbeitsblatt ab.,<a href=\'https://apireference.aspose.cloud/cells/#/OleObjects/GetWorksheetOleObject\'>GetWorksheetOleObject</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
      {{< blocks/products/cells/docs-Parameter-content columns="objectNumber,integer,Die Objektnummer." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="format,string,Objektkonvertierungsformat(PNG/TIFF/JPEG/GIF/EMF/BMP)." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Format, Zeichenfolge, Objektkonvertierungsformat (PNG/TIFF/JPEG/GIF/EMF/BMP)." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/OleObjectsController/GetWorksheetOleObject\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

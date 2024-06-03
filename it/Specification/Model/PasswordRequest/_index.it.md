@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/model/passwordrequest/
 description: "Aspose.Cells Specifica del modello cloud: PasswordRequest. Gestisci facilmente Excel e altri fogli di calcolo con funzionalità come apertura, generazione, modifica, divisione, unione, confronto e conversione"
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, Richiesta password
 weight: 50
 ---
 ## **passwordRichiesta**
 
-Utilizzato per il trasferimento dei dati della password.
+ Utilizzato per il trasferimento dei dati della password.
 
 | Nome della proprietà| Tipo di proprietà| Nullabile| Sola lettura| Valore di default| Descrizione|
 |:- |:- |:- |:- |:- |:- |

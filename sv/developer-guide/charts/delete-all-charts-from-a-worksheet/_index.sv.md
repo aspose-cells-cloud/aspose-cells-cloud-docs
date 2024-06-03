@@ -4,6 +4,7 @@ type: docs
 url: /sv/charts/clear/
 aliases: [/delete-all-charts-from-a-worksheet/]
 weight: 30
+kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdwon, Ta bort alla diagram från ett arbetsblad
 ---
 Denna REST API indikerar rensa sjökorten.
  

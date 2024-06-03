@@ -6,6 +6,7 @@ url: /es/storage/
 keywords: disc-usage, file version, exist
 description: Aspose.Cells Cloud REST API admite la carga, descarga, eliminación, copia y movimiento de carpetas. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 100
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Almacenamiento
 ---
 Aspose.Cells Cloud proporciona tipos de API operativas de almacenamiento.
 

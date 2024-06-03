@@ -4,23 +4,24 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postclearobjects/
 description: Löschen Sie interne Elemente in Excel-Dateien und generieren Sie Ausgabedateien in verschiedenen Formaten
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostClearObjects
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostClearObjects" >}}
 {{< blocks/products/cells/docs-title titlemsg="Clear internal elements in Excel files and generate output files in various formats." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/clearobjects,POST,Interne Elemente in Excel-Dateien löschen und Ausgabedateien in verschiedenen Formaten generieren.,<a href=\'https://apireference.aspose.cloud/cells/#/LightCells/PostClearObjects\'>PostClearObjects</a >" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/clearobjects,POST,Interne Elemente in Excel-Dateien löschen und Ausgabedateien in verschiedenen Formaten generieren.,<a href=\'https://apireference.aspose.cloud/cells/#/LightCells/PostClearObjects\'>PostClearObjects</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="Objekttyp, Zeichenfolge, Diagramm/Kommentar/Bild/Form/Listenobjekt/Hyperlink/Oleobjekt/pivottable/Validierung/Hintergrund" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="sheetname,string,Der Name des Arbeitsblatts, geben Sie den Umfang des Löschvorgangs an." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="outFormat,string,Das Ausgabedatenformat 1 /BMP/MD[Markdown]/Numbers)" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="Passwort, Zeichenfolge, Das zum Öffnen einer Excel-Datei erforderliche Passwort." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction,boolean,Gibt an, ob die Einschränkung der Excel-Datei überprüft wird, wenn der Benutzer zellenbezogene Objekte ändert." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="region,string,Die regionalen Einstellungen für die Arbeitsmappe." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Objekttyp, Zeichenfolge, Diagramm/Kommentar/Bild/Form/Listenobjekt/Hyperlink/Oleobjekt/Pivottabelle/Validierung/Hintergrund" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Blattname, Zeichenfolge, Der Arbeitsblattname gibt den Umfang der Löschung an." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="outFormat, Zeichenfolge, Das Ausgabedatendateiformat. (CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Kennwort, Zeichenfolge, Das zum Öffnen einer Excel-Datei erforderliche Kennwort." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction, boolean, ob die Einschränkung der Excel-Datei überprüft wird, wenn der Benutzer zellenbezogene Objekte ändert." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Region, Zeichenfolge, Die regionalen Einstellungen für die Arbeitsmappe." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/LightCellsController/PostClearObjects\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

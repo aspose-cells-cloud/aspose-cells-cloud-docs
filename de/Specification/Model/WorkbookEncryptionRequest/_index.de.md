@@ -1,18 +1,19 @@
 ﻿---
-title: WorkbookEncryptionReques
+title: Arbeitsmappenverschlüsselungsanforderungen
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/model/workbookencryptionrequest/
-description: "Aspose.Cells Cloud-Modellspezifikation: WorkbookEncryptionRequest. Bearbeiten Sie mühelos Excel und andere Tabellenkalkulationsdokumente mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+description: "Aspose.Cells Cloud-Modellspezifikation: WorkbookEncryptionRequest. Müheloses Bearbeiten von Excel und anderen Tabellenkalkulationsdokumenten mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, WorkbookEncryptionRequest
 weight: 50
 ---
-## **workbookEncryptionRequest**
+## **Arbeitsmappenverschlüsselungsanforderung**
 
- Wird von Verschlüsselungs-/Entschlüsselungsanforderungen für Arbeitsmappen verwendet.
+ Wird von Anforderungen zur Verschlüsselung/Entschlüsselung von Arbeitsmappen verwendet.
 
-| Name des Anwesens| Art der Immobilie| Nullbar| Schreibgeschützt| Standardwert| Beschreibung|
+| Name des Anwesens| Art der Immobilie| Nullwerte zulassen| Schreibgeschützt| Standardwert| Beschreibung|
 |:- |:- |:- |:- |:- |:- |
-| Verschlüsselungstyp| Zeichenfolge| WAHR| FALSCH|| Verschlüsselungstyp der Arbeitsmappe.|
+| Verschlüsselungstyp| Zeichenfolge| WAHR| FALSCH|| Arbeitsmappen-Verschlüsselungstyp.|
 | Schlüssellänge| Ganze Zahl| WAHR| FALSCH|| Länge des Verschlüsselungsschlüssels.|
-| Passwort| Zeichenfolge| WAHR| FALSCH||Verschlüsselungspasswort.|
+| Passwort| Zeichenfolge| WAHR| FALSCH|| Verschlüsselungspasswort.|
 

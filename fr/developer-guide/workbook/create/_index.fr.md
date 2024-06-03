@@ -7,6 +7,7 @@ url: /fr/workbook/create/
 keywords: How to create an Excel workbook
 description: Aspose.Cells Cloud REST API comment créer un classeur Excel. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 100
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdwon, Comment créer un classeur Excel
 ---
 ## Comment créer un classeur Excel.
 

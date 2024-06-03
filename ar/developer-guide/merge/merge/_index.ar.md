@@ -7,6 +7,7 @@ url: /ar/merge/multi-files/
 keywords: Merge multi Excel files into Excel file
 description: Aspose.Cells Cloud REST API يدعم دمج ملفات Excel المتعددة في ملف Excel. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 32
+kwords: Excel، Office Cloud، REST API، Spreadsheet، PDF، CSV، Json، Markdwon، دمج ملفات Excel المتعددة في ملف Excel.
 ---
 يشير REST API إلى `merge` عدة ملفات Excel في ملف Excel.
 
@@ -23,7 +24,7 @@ POST http://api.aspose.cloud/v3.0/cells/merge
 |:- |:- |:- |:- |
 | ملف| ملف| بيانات النموذج| ملف للتحميل|
 | شكل| خيط| استفسار| xlsx|
-| mergeToOneSheet| منطقية| استفسار| خطأ شنيع|
+| mergeToOneSheet|منطقية| استفسار| خطأ شنيع|
  
  ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostMerge) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك تنفيذ تفاعلات REST مباشرة من متصفح الويب.
  
@@ -73,7 +74,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/merge?format=xlsx" \
  
 ## عائلة Cloud SDK
 
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
 
 توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
 

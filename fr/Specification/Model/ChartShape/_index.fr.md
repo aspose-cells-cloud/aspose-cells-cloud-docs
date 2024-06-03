@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/model/chartshape/
 description: "Aspose.Cells Spécification du modèle cloud : ChartShape. Gérez sans effort Excel et d'autres feuilles de calcul avec des fonctionnalités telles que l'ouverture, la génération, l'édition, le fractionnement, la fusion, la comparaison et la conversion."
+kwords: Excel, Office, feuille de calcul, Cloud REST API, ChartShape
 weight: 50
 ---
 ## **graphiqueForme**
@@ -29,7 +30,7 @@ weight: 50
 | X| Entier| Vrai| FAUX|||
 | Oui| Entier| Vrai| FAUX|||
 | Angle de rotation| Flottant| Vrai| FAUX|||
-| Texte HTML| Chaîne| Vrai| FAUX|||
+|Texte HTML| Chaîne| Vrai| FAUX|||
 | Texte| Chaîne| Vrai| FAUX|||
 | Texte alternatif| Chaîne| Vrai| FAUX|||
 | TexteHorizontalAlignement| Chaîne| Vrai| FAUX|||
@@ -50,4 +51,5 @@ weight: 50
 | Lien hypertexte| Chaîne| Vrai| FAUX|||
 | lien| Classe : Lien| Vrai| FAUX|||
 
-**Nom du parent** : (Forme)[forme]
+**Nom du parent** : [Forme](/specification/model/shape)
+

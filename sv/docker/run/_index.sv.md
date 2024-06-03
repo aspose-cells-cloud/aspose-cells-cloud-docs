@@ -5,6 +5,7 @@ type: docs
 url: /sv/docker/run/
 description: Hur man kör Aspose.Cells Cloud for Docker
 weight: 30
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Run
 ---
 ## Exponera port
 

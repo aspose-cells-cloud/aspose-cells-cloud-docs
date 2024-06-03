@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/getworksheethyperlinks/
 description: Recuperare le descrizioni dei collegamenti ipertestuali nel foglio di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, GetWorksheetCollegamenti ipertestuali
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetHyperlinks" >}}

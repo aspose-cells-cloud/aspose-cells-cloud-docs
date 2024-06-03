@@ -5,6 +5,7 @@ type: docs
 url: /ar/docker/run/
 description: كيفية تشغيل Aspose.Cells Cloud for Docker
 weight: 30
+kwords: Excel، Office كلاود، ريست API، جدول بيانات، PDF، CSV، Json، Markdwon، Run
 ---
 ## فضح المنفذ
 

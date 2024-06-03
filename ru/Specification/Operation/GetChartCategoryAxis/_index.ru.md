@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/getchartcategoryaxis/
 description: Получение описаний осей серий диаграмм на диаграмме.
+kwords: Excel, Office, электронная таблица, Cloud REST API, GetChartCategoryAxis
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetChartCategoryAxis" >}}

@@ -6,6 +6,7 @@ url: /sv/folder/
 keywords: Upload, download, delete, copy, and move folder
 description: Aspose.Cells Cloud REST API stöder uppladdning, nedladdning, radering, kopiering och flyttning av mapp. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Folder
 ---
 Aspose.Cells Cloud tillhandahåller typer av mappoperativa API:er.
 

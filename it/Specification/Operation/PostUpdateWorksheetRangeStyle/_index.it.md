@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/postupdateworksheetrangestyle/
 description: Aggiorna gli stili degli intervalli di celle nel foglio di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PostUpdateWorksheetRangeStyle
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostUpdateWorksheetRangeStyle" >}}

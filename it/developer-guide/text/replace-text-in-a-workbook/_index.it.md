@@ -8,6 +8,7 @@ aliases: [/replace-text-in-a-workbook/]
 weight: 60
 keywords: Replace text from Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) workbook
 description: Aspose.Cells Cloud REST API supporta la sostituzione del testo dalla cartella di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Sostituisci testo in una cartella di lavoro Excel
 ---
 Questo REST API indica il testo `replace` in una cartella di lavoro Excel.
  

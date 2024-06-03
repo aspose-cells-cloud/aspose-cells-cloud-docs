@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/getworkbooktextitems/
 description: Hämta textobjekt i arbetsboken
+kwords: Excel, Office, Kalkylblad, Cloud REST API, GetWorkbookTextItems
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorkbookTextItems" >}}

@@ -7,6 +7,7 @@ aliases: [/working-with-list-objects/,/working-with-list-object-or-table/]
 keywords: Add, delete, update, and get a list object(table) into an Excel worksheet
 description: Aspose.Cells Cloud REST API يدعم إضافة وحذف وتحديث والحصول على كائن قائمة (جدول) في ورقة عمل Excel. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 100
+kwords: Excel، Office كلاود، ريست API، جدول البيانات، PDF، CSV، Json، Markdwon، ListObjects
 ---
  &nbsp;&nbsp;&nbsp;&nbsp;الجداول الموجودة في Excel مفيدة في إعطاء هيكل لمجموعات البيانات. يحتوي على ميزات مفيدة بدءًا من ترتيب البيانات وتوفير الرؤوس جنبًا إلى جنب مع المرشحات المطبقة. أتقن جداول Excel وقم بتحليل بياناتك بسرعة وسهولة.
 

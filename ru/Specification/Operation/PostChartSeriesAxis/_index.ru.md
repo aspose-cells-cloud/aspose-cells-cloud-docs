@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postchartseriesaxis/
 description: Обновить ось серии диаграммы на диаграмме
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostChartSeriesAxis
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostChartSeriesAxis" >}}

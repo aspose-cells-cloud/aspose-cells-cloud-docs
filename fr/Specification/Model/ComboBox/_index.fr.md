@@ -4,18 +4,19 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/model/combobox/
 description: "Aspose.Cells Spécification du modèle Cloud : ComboBox. Gérez sans effort Excel et d'autres feuilles de calcul avec des fonctionnalités telles que l'ouverture, la génération, l'édition, le fractionnement, la fusion, la comparaison et la conversion."
+kwords: Excel, Office, feuille de calcul, Cloud REST API, ComboBox
 weight: 50
 ---
 ## **boîte combo**
 
- 
+ Représente le formulaire de contrôle ComboBox.
 
 | Nom de la propriété| Type de propriété| Nullable| Lecture seulement| Valeur par défaut| Description|
 |:- |:- |:- |:- |:- |:- |
 | Lignes déroulantes| Entier| Vrai| FAUX|| Obtient ou définit le nombre de lignes de liste affichées dans la partie déroulante d'une zone de liste déroulante.|
 | Plage d'entrée| Chaîne| Vrai| FAUX|||
 | Cellule sélectionnée| Classe : LinkElement| Vrai| FAUX|| Obtient la cellule sélectionnée dans la plage d'entrée de la zone de liste déroulante.|
-| IndexSélectionné| Entier| Vrai| FAUX|| Obtient ou définit le numéro d'index de l'élément actuellement sélectionné dans une zone de liste ou une zone de liste déroulante. Base zéro.|
+| IndexSélectionné| Entier| Vrai| FAUX||Obtient ou définit le numéro d'index de l'élément actuellement sélectionné dans une zone de liste ou une zone de liste déroulante. Base zéro.|
 | Valeur sélectionnée| Chaîne| Vrai| FAUX|| Obtient la valeur sélectionnée de la zone de liste déroulante.|
 | Ombre| Booléen| Vrai| FAUX|| Indique si la zone de liste déroulante comporte un ombrage 3D.|
 | Nom| Chaîne| Vrai| FAUX|||
@@ -35,7 +36,7 @@ weight: 50
 | X| Entier| Vrai| FAUX|||
 | Oui| Entier| Vrai| FAUX|||
 | Angle de rotation| Flottant| Vrai| FAUX|||
-| Texte HTML| Chaîne| Vrai| FAUX|||
+|Texte HTML| Chaîne| Vrai| FAUX|||
 | Texte| Chaîne| Vrai| FAUX|||
 | Texte alternatif| Chaîne| Vrai| FAUX|||
 | TexteHorizontalAlignement| Chaîne| Vrai| FAUX|||
@@ -56,4 +57,5 @@ weight: 50
 | Lien hypertexte| Chaîne| Vrai| FAUX|||
 | lien| Classe : Lien| Vrai| FAUX|||
 
-**Nom du parent** : (Forme)[forme]
+**Nom du parent** : [Forme](/specification/model/shape)
+

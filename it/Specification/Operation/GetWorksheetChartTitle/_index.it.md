@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/getworksheetcharttitle/
 description: Recupera la descrizione del titolo del grafico nel foglio di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, GetWorksheetChartTitle
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetChartTitle" >}}

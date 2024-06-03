@@ -6,6 +6,7 @@ url: /tr/tasks/cells-object-operate/
 aliases: [/working-with-cellsobjectoperate-task/]
 description: "Cells.Cloud API, Excel için çalışır: hücreler nesnesi çalıştırma görevi"
 weight: 20
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, CellsObjectOperate Göreviyle Çalışma
 ---
 Bu REST API, hücre nesnesi `task`'i çalıştırır.
 
@@ -33,7 +34,7 @@ Bu REST API, hücre nesnesi `task`'i çalıştırır.
 |Parametre adı|Tip|Tanım|
 |:- |:- |:- |
 | GrafikIndex| tamsayı||
-| Grafik tipi| sicim||
+|Grafik tipi| sicim||
 | ÜstSolSatır| tamsayı||
 | ÜstSol Sütun| tamsayı||
 | AltSağSatır| tamsayı||
@@ -80,7 +81,7 @@ Bu REST API, hücre nesnesi `task`'i çalıştırır.
 | PivotTableIndex| tamsayı||
 | PivotFieldSatırlar|tamsayı[]||
 | PivotFieldSütunlar|tamsayı[]||
-|PivotFieldData|tamsayı[]||
+| PivotFieldData|tamsayı[]||
 
 
 **ShapeOperateParametre**

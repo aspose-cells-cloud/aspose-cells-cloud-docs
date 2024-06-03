@@ -7,6 +7,7 @@ aliases: [/working-with-conditional-formatting/]
 keywords: REST API, spreadsheets, excel, conditional formattin
 description: "Cells.Cloud API pour Excel fonctionne : fonctionne avec formatage conditionnel"
 weight: 100
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, mises en forme conditionnelles
 ---
 &nbsp;&nbsp;&nbsp;&nbsp;La mise en forme conditionnelle dans Excel vous permet de mettre en surbrillance les cellules avec une certaine couleur, en fonction de la valeur de la cellule.
 

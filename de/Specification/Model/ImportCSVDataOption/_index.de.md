@@ -3,24 +3,27 @@ title: ImportCSVDataOptio
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/model/importcsvdataoption/
-description: "Aspose.Cells Cloud-Modellspezifikation: ImportCSVDataOption. Bearbeiten Sie mühelos Excel und andere Tabellenkalkulationsdokumente mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+description: "Aspose.Cells Cloud-Modellspezifikation: ImportCSVDataOption. Müheloses Bearbeiten von Excel und anderen Tabellenkalkulationsdokumenten mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, ImportCSVDataOption
 weight: 50
 ---
-## **importCSVDataOption**
+## **Importieren von CSV-Daten**
 
  
 
-| Name des Anwesens| Art der Immobilie| Nullbar| Schreibgeschützt| Standardwert| Beschreibung|
+| Name des Anwesens| Art der Immobilie| Nullwerte zulassen| Schreibgeschützt| Standardwert| Beschreibung|
 |:- |:- |:- |:- |:- |:- |
-| SeparatorString| Zeichenfolge| WAHR| FALSCH|||
-| ConvertNumericData| Boolescher Wert| WAHR| FALSCH|||
+| Trennzeichen| Zeichenfolge| WAHR| FALSCH|||
+| NumerischeDatenKonvertieren| Boolescher Wert| WAHR| FALSCH|||
 | Erste Reihe| Ganze Zahl| WAHR| FALSCH|||
 | Erste Spalte| Ganze Zahl| WAHR| FALSCH|||
 | Quelldatei| Zeichenfolge| WAHR| FALSCH|||
 | BenutzerdefinierteParser| Container| WAHR| FALSCH|||
-| Zielarbeitsblatt| Zeichenfolge| WAHR| FALSCH|||
-| IsInsert| Boolescher Wert| WAHR| FALSCH|||
-| ImportDataType| Zeichenfolge| WAHR| FALSCH|||
-| Quelle| Klasse:FileSource| WAHR| FALSCH|||
+| ZielArbeitsblatt| Zeichenfolge| WAHR| FALSCH|||
+| IstEinfügen| Boolescher Wert| WAHR| FALSCH|||
+| ImportierenDatentyp| Zeichenfolge| WAHR| FALSCH|||
+| Datenquelle| Klasse:Datenquelle| WAHR| FALSCH|||
+| Quelle| Klasse:Dateiquelle| WAHR| FALSCH|||
 
-**Elternname** : (ImportOption)[importoption]
+**Elternname** : [ImportOption](/specification/model/importoption)
+

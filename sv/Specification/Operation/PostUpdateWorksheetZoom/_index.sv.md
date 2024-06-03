@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/postupdateworksheetzoom/
 description: Uppdatera skalningsprocenten i kalkylbladet. Det bör vara mellan 10 och 400
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostUpdateWorksheetZoom
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostUpdateWorksheetZoom" >}}

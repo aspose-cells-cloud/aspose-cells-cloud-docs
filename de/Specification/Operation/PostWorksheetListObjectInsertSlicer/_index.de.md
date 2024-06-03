@@ -1,29 +1,30 @@
 ﻿---
-title: PostWorksheetListObjectInsertSlice
+title: PostenArbeitsblattListeObjektEinfügenSlice
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postworksheetlistobjectinsertslicer/
 description: Slicer für Listenobjekt einfügen
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostWorksheetListObjectInsertSlicer
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetListObjectInsertSlicer" >}}
 {{< blocks/products/cells/docs-title titlemsg="Insert slicer for list object." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/InsertSlicer,POST,Slicer für Listenobjekt einfügen.,<a href=\'https://apireference.aspose.cloud/cells/#/ListObjects /PostWorksheetListObjectInsertSlicer\'>PostWorksheetListObjectInsertSlicer</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/InsertSlicer,POST,Slicer für Listenobjekt einfügen.,<a href=\'https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObjectInsertSlicer\'>PostWorksheetListObjectInsertSlicer</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="listObjectIndex,integer,Listenobjektindex." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="listObjectIndex,Integer,Listenobjektindex." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns=" columnsIndex,integer,Der Index von ListColumn in ListObject.ListColumns" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns=" destCellName,string,Die Zelle in der oberen linken Ecke des Slicer-Bereichs." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="columnIndex,integer,Der Index der ListColumn in ListObject.ListColumns" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns=" destCellName, Zeichenfolge, Die Zelle in der oberen linken Ecke des Slicer-Bereichs." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/ListObjectsController/PostWorksheetListObjectInsertSlicer\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

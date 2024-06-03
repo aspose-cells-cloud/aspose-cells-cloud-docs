@@ -1,12 +1,13 @@
 ﻿---
-title: Metadaten für Excel-Dateien löschen
+title: Löschen Sie Metadaten für Excel-Dateien
 second_title: Aspose.Cells Cloud Documen
-linktitle: Löschen, ohne Speicher zu verwenden
+linktitle: Löschen ohne Speichernutzung
 type: docs
 url: /de/metadata/delete/
 keywords: Deleting metadata from Excel files
 description: Aspose.Cells Cloud REST API unterstützt das Löschen von Metadaten aus Excel-Dateien. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
 weight: 55
+kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdwon, Metadaten in Excel-Dateien löschen.
 ---
 Dieser REST API gibt an, `metadata` aus mehreren Excel-Dateien zu löschen.
 
@@ -22,12 +23,12 @@ POST http://api.aspose.cloud/v3.0/cells/metadata/delete
  
 | Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
 |:- |:- |:- |:- |
-| Datei| Datei| Formulardaten| Datei zum Hochladen|
-| Typ| Zeichenfolge| Abfrage| alle|
+| Datei| Datei| Formulardaten| Hochzuladende Datei|
+| Typ| Schnur| Abfrage| alle|
  
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/DeleteMetadata) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht die Durchführung von REST-Interaktionen direkt über einen Webbrowser.
+ Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/DeleteMetadata) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen, REST-Interaktionen direkt von einem Webbrowser aus durchzuführen.
  
-Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie man mit cURL Anrufe zur Cloud API tätigt.
+Mit dem Befehlszeilentool cURL können Sie ganz einfach auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie Sie mit cURL Anrufe an Cloud API tätigen.
  
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
  
@@ -74,9 +75,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/metadata/delete" \
 ## Cloud SDK-Familie
 
 
- Die Verwendung eines SDK ist der beste Weg, die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte schauen Sie sich die an[GitHub-Repository](https://github.com/aspose-cells-cloud) Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie hier.
+ Die Verwendung eines SDK ist der beste Weg, um die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte lesen Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
 
-Die folgenden Codebeispiele veranschaulichen, wie Aspose.Cells-Webdienste mithilfe verschiedener SDKs aufgerufen werden:
+Die folgenden Codebeispiele zeigen, wie Sie mit verschiedenen SDKs Aufrufe an die Webdienste Aspose.Cells tätigen:
 
 
 {{< tabs tabTotal="9" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" tabName9="Python" >}}

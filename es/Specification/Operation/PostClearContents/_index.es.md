@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/postclearcontents/
 description: Borrar el contenido del área de celda en la hoja de trabajo
+kwords: Excel, Office, Hoja de cálculo, Cloud REST API, PostClearContents
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostClearContents" >}}

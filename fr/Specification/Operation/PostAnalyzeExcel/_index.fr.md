@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postanalyzeexcel/
 description: Effectuer une analyse commerciale des données dans les fichiers Excel
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostAnalyzeExcel
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostAnalyzeExcel" >}}

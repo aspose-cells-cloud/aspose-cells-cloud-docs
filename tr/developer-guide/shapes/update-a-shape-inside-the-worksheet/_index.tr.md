@@ -6,8 +6,9 @@ type: docs
 url: /tr/shapes/update/
 aliases: [/update-a-shape-inside-the-worksheet/]
 keywords: Update a shape on an Excel workshee
-description: Aspose.Cells Cloud REST API, Excel çalışma sayfasındaki bir şeklin güncellenmesini destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
+description: Aspose.Cells Cloud REST API, Excel çalışma sayfasında bir şeklin güncellenmesini destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 31
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel çalışma sayfasındaki şekli güncelleme
 ---
 Bu REST API, Excel çalışma sayfasındaki bir şeklin güncelleştirilmesi gerektiğini belirtir.
  

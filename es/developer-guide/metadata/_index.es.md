@@ -7,6 +7,7 @@ aliases: [/document-properties/,/working-with-document-properties/]
 keywords: Get, delete, and update metadata from excel files
 description: Aspose.Cells Cloud REST API admite la obtención, eliminación y actualización de metadatos de archivos de Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 100
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Metadatos y propiedades
 ---
 **Tipos de propiedades de documentos**
 

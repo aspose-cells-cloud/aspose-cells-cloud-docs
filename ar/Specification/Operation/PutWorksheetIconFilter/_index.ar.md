@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/putworksheeticonfilter/
 description: إضافة عامل تصفية أيقونة في ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PutWorksheetIconFilter
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetIconFilter" >}}

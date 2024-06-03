@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/deleteworksheets/
 description: Удалить совпадающие листы в книге
+kwords: Excel, Office, Электронная таблица, Cloud REST API, Удалить рабочие листы
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheets" >}}

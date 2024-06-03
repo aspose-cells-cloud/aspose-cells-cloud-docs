@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/postworksheetgroupshape/
 description: Çalışma sayfasındaki şekilleri gruplandırma
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PostWorksheetGroupShape
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetGroupShape" >}}

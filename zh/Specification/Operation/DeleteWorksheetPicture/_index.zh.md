@@ -3,25 +3,26 @@ title: 删除工作表图片
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/deleteworksheetpicture/
-description: 按工作表中的索引删除图片对象
+description: 根据工作表中的索引删除图片对象
+kwords: Excel，Office，电子表格，云 REST API，DeleteWorksheetPicture
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetPicture" >}}
 {{< blocks/products/cells/docs-title titlemsg="Delete a picture object by index in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex},DELETE,按工作表中的索引删除图片对象。,<a href=\'https://apireference.aspose.cloud/cells/# /Pictures/DeleteWorksheetPicture\'>删除WorksheetPicture</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex},DELETE,根据工作表中的索引删除图片对象。,<a href=\'https://apireference.aspose.cloud/cells/#/Pictures/DeleteWorksheetPicture\'>DeleteWorksheetPicture</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="参数名称、类型、描述" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="名称，字符串，文件名。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,字符串,工作表名称。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="pictureIndex,整数,图片索引。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="name，string，文件名。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName，string，工作表名称。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="pictureIndex，整数，图片索引。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="文件夹，字符串，文件所在的文件夹。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,文件所在的存储名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName，string，文件所在的存储名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/PicturesController/DeleteWorksheetPicture\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

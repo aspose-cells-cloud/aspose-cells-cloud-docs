@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postimportdata/
 description: Importer les données dans le fichier Excel
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostImportData
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostImportData" >}}
@@ -23,7 +24,7 @@ weight: 50
     {{< blocks/products/cells/docs-Parameter-content columns="region,string,Les paramètres régionaux du classeur." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Nom du paramètre, type, description" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns=" importOption, classe: option d\'importation, option d\'importation. Ils incluent ImportCSVDataOption, ImportBatchDataOption, ImportPictureOption, ImportStringArrayOption, Import2DimensionStringArrayOption, etc." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="importOption, classe: option d\'importation, option d\'importation. Ils incluent ImportCSVDataOption, ImportBatchDataOption, ImportPictureOption, ImportStringArrayOption, Import2DimensionStringArrayOption, etc." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/getworksheetcell/
 description: Recupera i dati della cella utilizzando il riferimento di cella o il nome del metodo nel foglio di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, GetWorksheetCell
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetCell" >}}

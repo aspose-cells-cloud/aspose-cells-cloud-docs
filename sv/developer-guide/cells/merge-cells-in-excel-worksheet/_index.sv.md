@@ -3,6 +3,7 @@ title: Slå samman Cells i Excel Worksheet
 type: docs
 url: /sv/merge-cells-in-excel-worksheet/
 weight: 110
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Merge Cells in Excel Worksheet
 ---
 Denna REST API indikerar `merge` celler i en Excel fil.
 
@@ -17,12 +18,12 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/merg
  
 | Parameternamn| Typ| Sökväg/Frågesträng/HTTPBody|Beskrivning|
 |:- |:- |:- |:- |
-| namn| sträng| väg|Arbetsbokens namn.|
+| namn| sträng| väg| Arbetsbokens namn.|
 | arknamn| sträng| väg| Kalkylbladets namn.|
 | startRow| heltal| fråga| Startraden.|
 | startkolumn| heltal| fråga| Startkolumnen.|
 | totalt rader| heltal| fråga| Det totala antalet rader|
-|totalt Kolumner| heltal| fråga| Det totala antalet kolumner.|
+| totalt Kolumner| heltal| fråga| Det totala antalet kolumner.|
 | mapp| sträng| fråga| Arbetsboksmappen.|
 | lagringsnamn| sträng| fråga| lagringsnamn.|
  

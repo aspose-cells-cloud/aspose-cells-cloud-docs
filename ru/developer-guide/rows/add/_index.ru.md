@@ -7,6 +7,7 @@ url: /ru/rows/add/
 keywords: Working with adding row on an Excel worksheet. How to add rows on an Excel worksheet
 description: Aspose.Cells Cloud REST API поддерживает добавление строк на лист Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 20
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Работа с добавлением строки на лист Excel
 ---
 ## Работа с удалением строки на листе Excel.
 

@@ -6,12 +6,13 @@ type: docs
 url: /zh/autofilter/add-icon-filter/
 aliases: [/add-an-icon-filter/,/autofilter/add-an-icon-filter/]
 keywords: Adds an icon filter on an Excel worksheet
-description: Aspose.Cells云API支持在Excel工作表上添加图标过滤器。SDK支持多种开发语言。它们包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 swift
+description: Aspose.Cells Cloud API 支持在 Excel 工作表上添加图标过滤器。SDK 支持多种开发语言。其中包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 swift
 weight: 65
+kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdwon、在 Excel 工作表中添加图标过滤器
 ---
 此 REST API 表示在 Excel 工作表上添加 `icon filter`。
 
-## RSET API
+## 重置 API
 
 ```bash
 
@@ -27,16 +28,16 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/
 |工作表名称|细绳|小路|工作表名称。|
 |范围|细绳|询问||
 |字段索引|整数|询问||
-|iconSet类型|细绳|询问|箭头3/箭头灰色3/旗帜3/标志3/符号3/符号32/交通信号灯31/交通信号灯32/箭头4/箭头灰色4/评级4/红到黑色4/交通信号灯4/箭头5/箭头灰色5/四分之一5/评级5/星星3/盒子5/三角形3/无/自定义设置/表情符号3/颜色表情符号3|
-|图标ID|整数|询问||
+|图标集类型|细绳|询问|箭头 3/箭头灰色 3/旗帜 3/标志 3/符号 3/符号 32/交通灯 31/交通灯 32/箭头 4/箭头灰色 4/评级 4/红色至黑色 4/交通灯 4/箭头 5/箭头灰色 5/季度 5/评级 5/星星 3/方框 5/三角形 3/无/自定义设置/表情符号 3/颜色表情符号 3|
+|图标编号|整数|询问||
 |匹配空白|细绳|询问|真假|
 |刷新|细绳|询问|真假|
 |文件夹|细绳|询问|原始工作簿文件夹。|
 |存储名称|询问|细绳|存储名称。|
 
-这[开放API规范](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetIconFilter)定义了一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetIconFilter)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
 
-您可以使用cURL命令行工具轻松访问Aspose.Cells Web服务。以下示例展示如何使用 cURL 呼叫云端 API。
+您可以使用 cURL 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例显示如何使用 cURL 调用云 API。
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
@@ -69,9 +70,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFil
 {{< /tabs >}}
 
 
-## 云SDK系列
+## Cloud SDK 系列
 
-使用 SDK 是加快开发速度的最佳方式。 SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)有关 Aspose.Cells Cloud SDK 的完整列表。
+使用 SDK 是加快开发速度的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)获得 Aspose.Cells Cloud SDKs 的完整列表。
 
 以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
 

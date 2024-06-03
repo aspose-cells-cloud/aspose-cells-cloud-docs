@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/postassemble/
 description: Çeşitli formatlarda dosyalar oluşturmak için veri dosyalarını şablon dosyalarla birleştirin
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PostAssemble
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostAssemble" >}}
@@ -16,7 +17,7 @@ weight: 50
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametre Adı,Tip,Açıklama" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="veri kaynağı, dize," >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="outFormat,string,Dönüştürülecek format(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/076 173481 /MD[İşaretleme]/Numaralar)" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="outFormat,string,Dönüştürülecek format(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/07 6173481 /MD[İşaretleme]/Numaralar)" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="şifre,string,Excel dosyasını açmak için gereken şifre." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction,boolean,Kullanıcı hücrelerle ilgili nesneleri değiştirdiğinde excel dosyasının kısıtlamasının kontrol edilip edilmeyeceği." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="bölge,dize,Çalışma kitabının bölgesel ayarları." >}} 

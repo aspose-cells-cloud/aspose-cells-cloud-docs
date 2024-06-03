@@ -1,30 +1,31 @@
 ﻿---
-title: PostWorksheetChartLegen
+title: BeitragArbeitsblattDiagrammLegende
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postworksheetchartlegend/
-description: Diagrammlegende im Arbeitsblatt aktualisieren
+description: Aktualisieren der Diagrammlegende im Arbeitsblatt
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostWorksheetChartLegend
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetChartLegend" >}}
 {{< blocks/products/cells/docs-title titlemsg="Update chart legend in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend,POST,Diagrammlegende im Arbeitsblatt aktualisieren.,<a href=\'https://apireference.aspose.cloud/cells/#/ Charts/PostWorksheetChartLegend\'>PostWorksheetChartLegend</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend,POST,Diagrammlegende im Arbeitsblatt aktualisieren.,<a href=\'https://apireference.aspose.cloud/cells/#/Charts/PostWorksheetChartLegend\'>PostWorksheetChartLegend</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
      {{< blocks/products/cells/docs-Parameter-content columns="chartIndex,integer,Der Diagrammindex." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="Legende, Klasse: Legende," >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Legende,Klasse:Legende," >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

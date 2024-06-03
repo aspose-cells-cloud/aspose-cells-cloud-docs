@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/deleteworksheetconditionalformattingarea/
 description: Supprimer la zone de cellule de la mise en forme conditionnelle
+kwords: Excel, Office, feuille de calcul, Cloud REST API, DeleteWorksheetConditionalFormattingArea
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetConditionalFormattingArea" >}}

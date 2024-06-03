@@ -4,13 +4,14 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/putworkbookwatermarker/
 description: Установить водяной маркер в книге
+kwords: Excel, Office, электронная таблица, Cloud REST API, PutWorkbookWaterMarker
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorkbookWaterMarker" >}}
 {{< blocks/products/cells/docs-title titlemsg="Set water marker in the workbook." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Описание,ссылка API" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/watermarker,PUT,Установить водяной маркер в книге.,<a href=\'https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookWaterMarker\'>PutWorkbookWaterMarker</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/watermarker,PUT,Установить водный маркер в книге.,<a href=\'https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookWaterMarker\'>PutWorkbookWaterMarker</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

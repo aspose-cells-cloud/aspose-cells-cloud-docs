@@ -7,6 +7,7 @@ aliases: [/clearobjects/]
 keywords: Clear internal objects of Excel files
 description: Aspose.Cells Cloud REST API admite la eliminación de objetos internos de archivos Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 39
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Borrar
 ---
 Este REST API indica un objeto Excel `clear` en un archivo Excel.
 
@@ -22,7 +23,7 @@ POST https://api.aspose.cloud/v3.0/cells/clearobjects
 | Nombre del parámetro| Tipo| Ruta/Cadena de consulta/Cuerpo HTTP|Descripción|
 |:- |:- |:- |:- |
 | archivo| archivo| formularioDatos| Subir Archivo|
-| tipo de objeto| cadena| consulta|filas duplicadas/columnas en blanco/filas en blanco/fórmula/contenido/estilo/gráfico/comentario/imagen/forma/objeto de lista/hipervínculo/objeto oleo/tabla dinámica/validación/Fondo|
+| tipo de objeto| cadena| consulta| filas duplicadas/columnas en blanco/filas en blanco/fórmula/contenido/estilo/gráfico/comentario/imagen/forma/objeto de lista/hipervínculo/objeto oleo/tabla dinámica/validación/Fondo|
  
  El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/LightCells/PostClearObjects) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
  

@@ -3,6 +3,7 @@ title: Cells Özelliğini Alın
 type: docs
 url: /tr/get-cells-properties/
 weight: 130
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Cells Özelliklerini Al
 ---
 Bu REST API, Excel dosyasında `get a specific cell`'in nasıl yapılacağını gösterir.
 

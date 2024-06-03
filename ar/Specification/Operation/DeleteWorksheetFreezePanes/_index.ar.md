@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/deleteworksheetfreezepanes/
 description: إلغاء تجميد الأجزاء في ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، حذف ورقة العمل FreezePanes
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetFreezePanes" >}}

@@ -8,6 +8,7 @@ aliases: [/unhide-excel-worksheets/]
 keywords: Unhide an Excel Worksheet on an Excel Workbook
 description: Aspose.Cells Cloud REST API يدعم إظهار ورقة عمل Excel في مصنف Excel. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 60
+kwords: Excel، Office سحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdwon، إظهار ورقة عمل Excel
 ---
 يشير REST API إلى `unhide worksheet`.
  
@@ -24,7 +25,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/visible
 |:- |:- |:- |:- |
 | اسم| خيط| طريق| اسم الملف.|
 | اسم الورقة| خيط| طريق| اسم ورقة العمل.|
-| مرئي| منطقية| استفسار| قيمة رؤية ورقة العمل الجديدة.|
+| مرئي|منطقية| استفسار| قيمة رؤية ورقة العمل الجديدة.|
 | مجلد| خيط| استفسار| مجلد المستندات.|
 | اسم التخزين| خيط| استفسار| اسم التخزين.|
  
@@ -64,7 +65,7 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1
  
 ## عائلة Cloud SDK
  
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
  
 توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
 

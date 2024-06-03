@@ -7,6 +7,7 @@ keywords: Insert slicer for list object
 url: /ru/list-objects/insert-slicer/
 description:  Вставьте срез для объекта списка.
 weight: 20
+kwords: Excel, Office Cloud, REST API, электронная таблица, PDF, CSV, Json, Markdwon, срез для вставки объектов списка
 ---
  Этот REST API указывает срез вставки для объекта списка на листе Excel.
 

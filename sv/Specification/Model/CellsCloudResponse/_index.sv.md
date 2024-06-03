@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/model/cellscloudresponse/
 description: "Aspose.Cells Molnmodellspecifikation: CellsCloudResponse. Hantera enkelt Excel och andra kalkylarksdokument med funktioner som att öppna, generera, redigera, dela, slå samman, jämföra och konvertera"
+kwords: Excel, Office, Kalkylblad, Cloud REST API, CellsCloudResponse
 weight: 50
 ---
 ## **celler CloudResponse**
 
- 
+ Representerar CellsCloud-svaret.
 
 | Egendomsnamn| Egenskapstyp| Nullbar| Endast läs| Standardvärde| Beskrivning|
 |:- |:- |:- |:- |:- |:- |

@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/model/styleformatcondition/
 description: "Aspose.Cells Molnmodellspecifikation: StyleFormatCondition. Hantera enkelt Excel och andra kalkylarksdokument med funktioner som att öppna, generera, redigera, dela, slå samman, jämföra och konvertera"
+kwords: Excel, Office, Kalkylblad, Cloud REST API, StyleFormatCondition
 weight: 50
 ---
 ## **styleFormatCondition**
 
- 
+ Representerar stilformatsvillkor.
 
 | Egendomsnamn| Egenskapstyp| Nullbar| Endast läs| Standardvärde| Beskrivning|
 |:- |:- |:- |:- |:- |:- |
@@ -28,4 +29,5 @@ weight: 50
 | Topp 10| Klass: Top10| Sann| Falsk|||
 | länk| Klass: Länk| Sann| Falsk|||
 
-**Förälders namn** : (Formatvillkor)[formatvillkor]
+**Förälders namn** : [Formatvillkor](/specification/model/formatcondition)
+

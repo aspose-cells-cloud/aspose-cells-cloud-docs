@@ -3,6 +3,7 @@ title:  Uppdatera diagramvärdeaxel
 type: docs
 url: /sv/charts/value-axis/update/
 weight: 160
+kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdwon, Uppdatera diagramvärdeaxel
 ---
  Denna REST API indikerar Update Chart Value Axis.
  

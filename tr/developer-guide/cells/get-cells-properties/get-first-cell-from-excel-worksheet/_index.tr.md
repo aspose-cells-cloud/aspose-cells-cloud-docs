@@ -3,6 +3,7 @@ title: Excel Çalışma Sayfasından İlk Hücreyi Alın
 type: docs
 url: /tr/get-first-cell-from-excel-worksheet/
 weight: 20
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel Çalışma Sayfasından İlk Hücreyi Al
 ---
 Bu REST API, `cellOrMethodName` parametresi `firstcell` olduğunda Excel dosyasında gösterilerin `firstcell` aldığını gösterir.
 

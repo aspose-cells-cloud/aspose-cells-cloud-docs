@@ -4,6 +4,7 @@ type: docs
 url: /tr/charts/delete-chart-title/
 aliases: [/delete-chart-title-in-a-worksheet/]
 weight: 150
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Çalışma Sayfasındaki Grafik Başlığını Sil
 ---
 Bu REST API, grafikteki başlığın gizlendiğini gösterir
  

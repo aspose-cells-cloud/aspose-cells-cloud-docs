@@ -3,6 +3,7 @@ title: Установить значение ячейки на листе
 type: docs
 url: /ru/set-value-of-a-cell-in-a-worksheet/
 weight: 70
+kwords: Excel, Office Cloud, REST API, электронная таблица, PDF, CSV, Json, Markdwon, установка значения ячейки на листе
 ---
 Этот REST API указывает на набор `cell value` в файле Excel.
  

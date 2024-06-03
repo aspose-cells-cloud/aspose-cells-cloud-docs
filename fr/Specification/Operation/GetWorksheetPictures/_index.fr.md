@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/getworksheetpictures/
 description: Récupérer les descriptions des images dans la feuille de calcul
+kwords: Excel, Office, feuille de calcul, Cloud REST API, GetWorksheetPictures
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetPictures" >}}

@@ -7,6 +7,7 @@ keywords: Insert slicer for list object
 url: /sv/list-objects/insert-slicer/
 description:  Infoga slicer för listobjekt.
 weight: 20
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Listobjekt infogningsskiva
 ---
  Denna REST API indikerar insert slicer för listobjekt på ett Excel kalkylblad.
 

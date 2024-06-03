@@ -8,6 +8,7 @@ aliases: [/add-a-pivot-table-in-a-worksheet/]
 keywords: Add a pivot field in a pivot table
 description: Aspose.Cells Cloud REST API يدعم إضافة حقل محوري في جدول محوري. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 40
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, إضافة حقل محوري إلى الجدول المحوري
 ---
 يشير REST API إلى الحقل المحوري `add` في الجدول المحوري
  
@@ -27,7 +28,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables
 | PivotTableIndex| عدد صحيح| طريق| مؤشر الجدول المحوري|
 | PivotFieldType| خيط| استفسار| نوع منطقة الحقول.|
 | طلب|| جسم| Dto الذي يحتوي على فهارس الحقول|
-| needReCalculate| منطقية| استفسار| خطأ شنيع|
+| needReCalculate|منطقية| استفسار| خطأ شنيع|
 | مجلد| خيط| استفسار| مجلد الوثيقة.|
 | اسم التخزين| خيط| استفسار| اسم التخزين.|
  
@@ -68,7 +69,7 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/workshe
  
 ## عائلة Cloud SDK
  
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
  
 توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
  

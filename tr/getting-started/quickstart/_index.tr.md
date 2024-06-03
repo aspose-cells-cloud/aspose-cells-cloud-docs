@@ -5,6 +5,7 @@ type: docs
 url: /tr/quickstart/
 description: Aspose.Cells Bulut, oluşturma, dönüştürme, birleştirme, bölme, koruma, iç nesne işlemleri vb. için Excel'i destekler
 weight: 20
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Hızlı Başlangıç
 ---
 Bu talimatlar, Aspose.Cells Cloud API'i başlatma ve gerekli elektronik tablo işleme kitaplıklarını kurma konusunda size yol gösterir.
 
@@ -51,7 +52,7 @@ Uygulamalarınız hakkındaki bilgilere erişmek için lütfen aşağıdaki adı
 
 ![uygulamalar.png](applications.png)
 
- 3. Varsayılanı bulacağınız sayfanın altına doğru kaydırın.**"Yumruk Uygulaması"** Başvuru. Tıkla**"İlk Uygulama"**Güvenlik kimlik bilgilerinizi görüntülemek ve güncellemek için öğeyi seçin.
+ 3. Varsayılanı bulacağınız sayfanın altına doğru kaydırın.**"Yumruk Uygulaması"** Başvuru. Tıkla**"İlk Uygulama"** Güvenlik kimlik bilgilerinizi görüntülemek ve güncellemek için öğeyi seçin.
 
 ![ilkapp.png](firstapp.png)
 
@@ -63,7 +64,7 @@ Tebrikler! Aspose.Cells API çağrılarının kimliğini doğrulamak için güve
 
 ## SDK'yı Seçin ve Yükleyin
 
- Olanaklarınızı daha iyi anlamak için lütfen Aspose.Cells Bulut ürünlerinin geniş yelpazesine aşina olmak için biraz zaman ayırın. Bu yazılım ürünleri yüksek performanslı bir temel üzerine inşa edilmiştir.[Bulut API](https://apireference.aspose.com/)7/24 ulaşılabilir.
+ Olanaklarınızı daha iyi anlamak için lütfen bir dakikanızı ayırıp Aspose.Cells Bulut ürünlerinin geniş yelpazesine alışın. Bu yazılım ürünleri yüksek performanslı bir temel üzerine inşa edilmiştir.[Bulut API](https://apireference.aspose.com/)7/24 ulaşılabilir.
 
  Cloud API'in etkili kullanımı için güçlü bir aile sunuyoruz[Bulut SDK'ları](https://products.aspose.cloud/cells/family) neredeyse tüm önemli işletim sistemleri (Windows, macOS, Linux, Android) ve popüler programlama dilleri için[Android](https://products.aspose.cloud/cells/android), [C#](https://products.aspose.cloud/cells/net), [Python](https://products.aspose.cloud/cells/python), [Golang](https://products.aspose.cloud/cells/go),[Java](https://products.aspose.cloud/cells/java), [Node.js](https://products.aspose.cloud/cells/nodejs),[Perl](https://products.aspose.cloud/cells/perl), [PHP](https://products.aspose.cloud/cells/php), [Yakut](https://products.aspose.cloud/cells/ruby) Ve[Süratli](https://products.aspose.cloud/cells/swift).
 
@@ -73,7 +74,7 @@ Tebrikler! Aspose.Cells API çağrılarının kimliğini doğrulamak için güve
 
 Artık hesabınız tamamen yapılandırılmıştır ve geliştirici ortamı yüklenmiştir. Seçilen SDK ile kod yazmaya başlayabilirsiniz.
 
- Lütfen şuraya bakın:[Geliştirici Kılavuzu](https://docs.aspose.cloud/cells/developer-guide/) Bulut'un nasıl kullanılacağına ilişkin bilgileri kolayca bulmak için API'i arayın.
+Lütfen şuraya bakın:[Geliştirici Kılavuzu](https://docs.aspose.cloud/cells/developer-guide/) Bulut'un nasıl kullanılacağına ilişkin bilgileri kolayca bulmak için API'i arayın.
 
 ## Gerekirse Yardım İsteyin
 

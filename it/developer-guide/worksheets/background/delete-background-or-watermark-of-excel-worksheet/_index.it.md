@@ -8,6 +8,7 @@ aliases: [/delete-background-or-watermark-of-excel-worksheet/]
 keywords: Delete background on an Excel worksheet
 description: Aspose.Cells Cloud REST API supporta l'eliminazione dello sfondo su un foglio di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 210
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Elimina sfondo su un foglio di lavoro Excel
 ---
 Questo REST API indica `delete worksheet background image`.
  

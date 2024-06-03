@@ -3,6 +3,7 @@ title: Obtenez la première cellule du Excel Workshee
 type: docs
 url: /fr/get-first-cell-from-excel-worksheet/
 weight: 20
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, obtenir la première cellule de la feuille de calcul Excel
 ---
 Ce REST API indique que les spectacles obtiennent un `firstcell` dans un fichier Excel lorsque le paramètre `cellOrMethodName` est `firstcell`.
 

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/postworksheetgroupshape/
 description: Gruppera former i kalkylbladet
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostWorksheetGroupShape
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetGroupShape" >}}

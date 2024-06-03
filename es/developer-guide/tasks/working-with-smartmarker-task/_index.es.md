@@ -6,6 +6,7 @@ aliases: [/working-with-smartmarker-task/]
 keywords: REST API, task, save result, spreadsheets, exce
 description: "Cells.Cloud API para Excel operar: soporte de tareas para marcador inteligente"
 weight: 60
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Trabajar con la tarea SmartMarker
 ---
 ## DESCANSO API
 
@@ -16,7 +17,7 @@ weight: 60
 
  El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/Task/PostRunTask) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
 
- Puedes usar**cURL** Herramienta de línea de comandos para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
+ Puedes usar**cURL**Herramienta de línea de comandos para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
 
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}

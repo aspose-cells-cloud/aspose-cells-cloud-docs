@@ -8,6 +8,7 @@ aliases: [/create-excel-workbook-from-a-template-file/,/workbook/new-from-a-temp
 keywords: How to create an Excel workbook with a smart marker template
 description: Aspose.Cells Cloud REST API comment créer un classeur Excel à partir d'un modèle de marqueur intelligent. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 30
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Comment créer un classeur Excel avec un fichier modèle
 ---
 Ce REST API indique de créer `workbook` à partir d'un `template file`.
 
@@ -36,7 +37,7 @@ Ce REST API indique de créer `workbook` à partir d'un `template file`.
 
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookCreate) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement depuis un navigateur Web.
 
- Vous pouvez utiliser**cURL** outil de ligne de commande pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment passer des appels vers Cloud API avec cURL.
+ Vous pouvez utiliser**cURL**outil de ligne de commande pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment passer des appels vers Cloud API avec cURL.
 
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}

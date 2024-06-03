@@ -5,8 +5,9 @@ type: docs
 url: /ar/workbook/
 aliases: [/working-with-workbook/]
 keywords: Working with workbook on an Excel file
-description: Aspose.Cells Cloud REST API دعم العمل مع المصنف على ملف Excel. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
+description: Aspose.Cells Cloud REST API يدعم العمل مع المصنف على ملف Excel. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 100
+kwords: Excel، Office كلاود، ريست API، جدول البيانات، PDF، CSV، Json، Markdwon، Workbook
 ---
 ## العمل مع مصنف Excel.
 

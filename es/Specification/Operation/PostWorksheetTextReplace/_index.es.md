@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/postworksheettextreplace/
 description: Reemplace el texto antiguo con texto nuevo en la hoja de trabajo
+kwords: Excel, Office, hoja de cálculo, nube REST API, PostWorksheetTextReplace
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetTextReplace" >}}

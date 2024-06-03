@@ -6,6 +6,7 @@ aliases: [/get-comment-from-a-worksheet/]
 keywords: REST API, spreadsheets, excel, get commen
 description: "Cells.Cloud API için Excel çalıştır: yorum al"
 weight: 10
+kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Al
 ---
 Bu REST API, hücre adına göre çalışma sayfası yorumunu al anlamına gelir.
  

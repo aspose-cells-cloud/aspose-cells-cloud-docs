@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/putdocumentprotectfromchanges/
 description: Excel protection en écriture de fichier
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PutDocumentProtectFromChanges
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutDocumentProtectFromChanges" >}}

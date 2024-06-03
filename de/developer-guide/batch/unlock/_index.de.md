@@ -1,11 +1,12 @@
 ﻿---
-title: Chargenfreigabe
+title: Stapelentsperrung
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/batch/unlock
 keywords: Batch unlock of multiple Excel files
-description: Aspose.Cells Cloud API unterstützt die Batch-Entsperrung mehrerer Excel-Dateien. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
+description: Aspose.Cells Cloud API unterstützt die Stapelentsperrung mehrerer Excel-Dateien. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
 weight: 100
+kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdwon, Batch-Entsperren
 ---
 Dieser REST API weist auf `batch unlock` der berechtigten Dateien hin.
  
@@ -24,15 +25,15 @@ POST http://api.aspose.cloud/v3.0/cells/batch/unlock
 
 **BatchLockRequest-Eigenschaften**
  
-Name | Geben Sie | ein Beschreibung | Anmerkungen
+Name | Typ | Beschreibung | Hinweise
 ------------ | ------------- | ------------- | -------------
- Quellordner | Zeichenfolge | | [optional]MatchCondition | MatchConditionRequest | | [optional]Passwort | Zeichenfolge | | [optional]OutFolder | Zeichenfolge | | [Optional]**MatchConditionRequest-Eigenschaften**
+ Quellordner | Zeichenfolge | | [optional]Übereinstimmungsbedingung | Übereinstimmungsbedingungsanforderung | | [optional]Passwort | Zeichenfolge | | [optional]Ausgangsordner | Zeichenfolge | | [optional]**MatchConditionRequest-Eigenschaften**
  
-Name | Geben Sie | ein Beschreibung | Anmerkungen
+Name | Typ | Beschreibung | Hinweise
 ------------ | ------------- | ------------- | -------------
- RegexPattern | Zeichenfolge | | [optional]FullMatchConditions | string[]| | [optional]Die[OpenAPI-Spezifikation](https://reference.aspose.cloud/cells/#/Batch/PostBatchUnlock) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht die Durchführung von REST-Interaktionen direkt über einen Webbrowser.
+ RegexPattern | string | | [optional]FullMatchConditions | string[]| | [optional]Die[OpenAPI-Spezifikation](https://reference.aspose.cloud/cells/#/Batch/PostBatchUnlock) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen, REST-Interaktionen direkt von einem Webbrowser aus durchzuführen.
  
-Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie man mit cURL Anrufe zur Cloud API tätigt.
+Mit dem Befehlszeilentool cURL können Sie ganz einfach auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie Sie mit cURL Anrufe an Cloud API tätigen.
  
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
  
@@ -66,9 +67,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/batch/unlock" \
  
 ## Cloud SDK-Familie
  
- Die Verwendung eines SDK ist der beste Weg, die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Entsperraufgaben zu konzentrieren. Bitte schauen Sie sich die an[GitHub-Repository](https://github.com/aspose-cells-cloud) Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie hier.
+Die Verwendung eines SDK ist der beste Weg, um die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Entsperraufgaben zu konzentrieren. Bitte lesen Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
  
-Die folgenden Codebeispiele veranschaulichen, wie Aspose.Cells-Webdienste mithilfe verschiedener SDKs aufgerufen werden:
+Die folgenden Codebeispiele zeigen, wie Sie mit verschiedenen SDKs Aufrufe an die Webdienste Aspose.Cells tätigen:
  
  
   

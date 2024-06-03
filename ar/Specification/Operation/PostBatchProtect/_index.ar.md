@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postbatchprotect/
 description: دفعة حماية الملفات التي تستوفي شروط مطابقة محددة
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostBatchProtect
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostBatchProtect" >}}
@@ -15,7 +16,7 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="اسم المعلمة، النوع، الوصف" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="BatchProtectRequest,class:batchprotectrequest,BatchProtectRequest طلب ملف الحماية الدفعي." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns=" BatchProtectRequest,class:batchprotectrequest,BatchProtectRequest طلب ملف الحماية الدفعي." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

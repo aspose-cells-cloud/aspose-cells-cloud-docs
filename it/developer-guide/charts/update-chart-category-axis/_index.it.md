@@ -3,6 +3,7 @@ title:  Aggiorna l'asse delle categorie del grafico
 type: docs
 url: /it/charts/category-axis/update/
 weight: 160
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Aggiorna asse categoria grafico
 ---
 Questo REST API indica Aggiorna asse categoria grafico.
  

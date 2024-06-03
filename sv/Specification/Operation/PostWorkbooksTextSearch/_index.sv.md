@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/postworkbookstextsearch/
 description: Sök efter text i arbetsboken
+kwords: Excel, Office, Kalkylblad, Cloud REST API, PostWorkbooksTextSearch
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbooksTextSearch" >}}

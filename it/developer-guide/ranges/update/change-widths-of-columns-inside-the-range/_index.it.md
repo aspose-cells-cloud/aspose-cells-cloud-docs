@@ -8,6 +8,7 @@ aliases: [/change-widths-of-columns-inside-the-range/]
 keywords: Set column width for range on an Excel workshee
 description: Aspose.Cells Cloud REST API supporta l'impostazione della larghezza della colonna per l'intervallo su un foglio di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 74
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Modifica larghezza delle colonne all'interno dell'intervallo
 ---
 Questo REST API indica Imposta larghezza colonna dell'intervallo
  

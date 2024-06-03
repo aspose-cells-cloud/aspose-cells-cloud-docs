@@ -3,6 +3,7 @@ title:  Uppdatera diagramkategori Axi
 type: docs
 url: /sv/charts/category-axis/update/
 weight: 160
+kwords: Excel, Office Moln, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Uppdatera diagramkategoriaxel
 ---
 Denna REST API indikerar Update Chart Category Axis.
  

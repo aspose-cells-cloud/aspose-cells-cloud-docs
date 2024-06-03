@@ -3,6 +3,7 @@ title: Separar Cells en la hoja de trabajo Excel
 type: docs
 url: /es/unmerge-cells-in-excel-worksheet/
 weight: 120
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Separar Cells en Excel Hoja de trabajo
 ---
 Este REST API indica `unmerge` celdas en un archivo Excel.
 
@@ -17,12 +18,12 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/unme
  
 | Nombre del parámetro| Tipo| Ruta/Cadena de consulta/Cuerpo HTTP|Descripción|
 |:- |:- |:- |:- |
-| nombre| cadena| camino|El nombre del libro de trabajo.|
+| nombre| cadena| camino| El nombre del libro de trabajo.|
 | nombre de la hoja| cadena| camino| El nombre de la hoja de trabajo.|
 | inicioFila| entero| consulta| La fila inicial.|
 | columna de inicio| entero| consulta| La columna de inicio.|
 | filas totales| entero| consulta| El total de filas|
-|totalColumnas| entero| consulta| Las columnas totales.|
+| totalColumnas| entero| consulta| Las columnas totales.|
 | carpeta| cadena| consulta| La carpeta del libro de trabajo.|
 | nombredealmacenamiento| cadena| consulta| nombre del almacenamiento.|
  

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/model/spreadsheetml2003saveoptions/
 description: "Aspose.Cells Especificación del modelo de nube: SpreadsheetML2003SaveOptions. Maneje sin esfuerzo Excel y otros documentos de hoja de cálculo con funciones como abrir, generar, editar, dividir, fusionar, comparar y convertir."
+kwords: Excel, Office, Hoja de cálculo, Nube REST API, Hoja de cálculoML2003SaveOptions
 weight: 50
 ---
 ## **hoja de cálculoML2003GuardarOpciones**
@@ -21,7 +22,8 @@ weight: 50
 | Crear directorio| Booleano| Verdadero| FALSO|||
 | Habilitar compresión HTTP| Booleano| Verdadero| FALSO|||
 | Actualizar caché de gráficos| Booleano| Verdadero| FALSO|||
-|Ordenar nombres| Booleano| Verdadero| FALSO|||
+| Ordenar nombres| Booleano| Verdadero| FALSO|||
 | Validar áreas fusionadas| Booleano| Verdadero| FALSO|||
 
-**Nombre del padre** : (GuardarOpciones)[guardaropciones]
+**Nombre del padre** : [Guardar Opciones](/specification/model/saveoptions)
+

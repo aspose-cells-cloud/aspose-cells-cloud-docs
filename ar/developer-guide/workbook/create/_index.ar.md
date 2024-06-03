@@ -7,6 +7,7 @@ url: /ar/workbook/create/
 keywords: How to create an Excel workbook
 description: Aspose.Cells Cloud REST API كيفية إنشاء مصنف Excel. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 100
+kwords: Excel، Office كلاود، ريست API، جدول البيانات، PDF، CSV، Json، Markdwon، كيفية إنشاء مصنف Excel
 ---
 ## كيفية وضع مصنف Excel.
 

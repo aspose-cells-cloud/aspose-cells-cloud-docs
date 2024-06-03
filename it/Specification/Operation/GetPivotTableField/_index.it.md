@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/getpivottablefield/
 description: Recuperare le descrizioni dei campi pivot nella tabella pivot
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, GetPivotTableField
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetPivotTableField" >}}

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/getworkbooksettings/
 description: Récupérer les descriptions des paramètres du classeur
+kwords: Excel, Office, feuille de calcul, Cloud REST API, GetWorkbookSettings
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorkbookSettings" >}}

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/putworksheetpivottablefilter/
 description: Ajouter un filtre pivot au tableau croisé dynamique
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PutWorksheetPivotTableFilter
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetPivotTableFilter" >}}

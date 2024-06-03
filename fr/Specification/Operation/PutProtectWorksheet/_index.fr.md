@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/putprotectworksheet/
 description: Protéger la feuille de calcul
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PutProtectWorksheet
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutProtectWorksheet" >}}

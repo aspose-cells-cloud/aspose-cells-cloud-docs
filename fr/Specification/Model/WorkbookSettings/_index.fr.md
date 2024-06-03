@@ -4,18 +4,19 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/model/workbooksettings/
 description: "Aspose.Cells Spécification du modèle cloud : WorkbookSettings. Gérez sans effort Excel et d'autres feuilles de calcul avec des fonctionnalités telles que l'ouverture, la génération, l'édition, le fractionnement, la fusion, la comparaison et la conversion."
+kwords: Excel, Office, feuille de calcul, Cloud REST API, paramètres du classeur
 weight: 50
 ---
 ## **Paramètres du classeur**
 
- 
+ Représente tous les paramètres du classeur.
 
 | Nom de la propriété| Type de propriété| Nullable| Lecture seulement| Valeur par défaut| Description|
 |:- |:- |:- |:- |:- |:- |
-| Compresser automatiquement les images| Booléen| Vrai| FAUX|| Spécifie une valeur booléenne qui indique que l'application compresse automatiquement les images dans le classeur.|
+| Compresser automatiquement les images| Booléen| Vrai| FAUX||Spécifie une valeur booléenne qui indique que l'application compresse automatiquement les images dans le classeur.|
 | Récupération automatique| Booléen| Vrai| FAUX|| Indique si le fichier est marqué pour la récupération automatique.|
 | Version de construction| Chaîne| Vrai| FAUX|| Spécifie la version publique incrémentielle de l'application.|
-| Mode Calc| Chaîne| Vrai| FAUX||Il précise s'il faut calculer les formules manuellement, automatiquement ou automatiquement, sauf pour les opérations sur plusieurs tables.|
+| Mode Calc| Chaîne| Vrai| FAUX|| Il précise s'il faut calculer les formules manuellement, automatiquement ou automatiquement, sauf pour les opérations sur plusieurs tables.|
 | ID de calcul| Chaîne| Vrai| FAUX|| Spécifie la version du moteur de calcul utilisé pour calculer les valeurs dans le classeur.|
 | Vérifier la compatibilité| Booléen| Vrai| FAUX|| Indique si la compatibilité est vérifiée lors de l'enregistrement du classeur. Remarques : La valeur par défaut est true.|
 | CheckExcelRestriction| Booléen| Vrai| FAUX||Vérifier ou non la restriction du fichier Excel lorsque l'utilisateur modifie les objets liés aux cellules. Par exemple, Excel ne permet pas de saisir une valeur de chaîne supérieure à 32 Ko. Lorsque vous saisissez une valeur supérieure à 32 Ko, par exemple par Cell.PutValue(string), si cette propriété est vraie, vous obtiendrez une exception. Si cette propriété est fausse, nous accepterons votre valeur de chaîne d'entrée comme valeur de la cellule afin que vous puissiez ultérieurement générer la valeur de chaîne complète pour d'autres formats de fichiers tels que CSV. Toutefois, si vous avez défini un type de valeur non valide pour le format de fichier Excel, vous ne devez pas enregistrer le classeur au format de fichier Excel ultérieurement. Sinon, une erreur inattendue pourrait se produire pour le fichier Excel généré.|
@@ -30,7 +31,7 @@ weight: 50
 | IsDefaultEncrypted| Booléen| Vrai| FAUX|| Indique si le chiffrement du classeur avec le mot de passe par défaut si Structure et Windows du classeur sont verrouillés.|
 | Est caché| Booléen| Vrai| FAUX|| Indique si ce classeur est masqué.|
 | EstHScrollBarVisible| Booléen| Vrai| FAUX|| Obtient ou définit une valeur indiquant si la feuille de calcul générée contiendra une barre de défilement horizontale.|
-| Estminimisé| Booléen| Vrai| FAUX|| Représente si la feuille de calcul générée sera ouverte réduite.|
+| Estminimisé| Booléen| Vrai| FAUX|| Représente si la feuille de calcul générée sera ouverte en taille réduite.|
 | EstVScrollBarVisible| Booléen| Vrai| FAUX||Obtient ou définit une valeur indiquant si la feuille de calcul générée contiendra une barre de défilement verticale.|
 | Itération| Booléen| Vrai| FAUX|| Indique si le calcul itératif est activé pour résoudre les références circulaires.|
 | Code de langue| Chaîne| Vrai| FAUX|| Obtient ou définit la langue de l'interface utilisateur de la version du Workbook en fonction du CountryCode qui a enregistré le fichier.|

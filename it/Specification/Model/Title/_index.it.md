@@ -4,18 +4,19 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/model/title/
 description: "Aspose.Cells Specifica del modello cloud: Titolo. Gestisci facilmente Excel e altri fogli di calcolo con funzionalità come apertura, generazione, modifica, divisione, unione, confronto e conversione"
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, Titolo
 weight: 50
 ---
 ## **titolo**
 
- 
+ Incapsula l'oggetto che rappresenta il titolo del grafico o dell'asse.
 
 | Nome della proprietà| Tipo di proprietà| Nullabile| Sola lettura| Valore di default| Descrizione|
 |:- |:- |:- |:- |:- |:- |
 | È visibile| Booleano| VERO| Falso|| Indica se il titolo è visibile.|
 | LinkedSource| Corda| VERO| Falso|||
 | Angolo di rotazione| Numero intero| VERO| Falso|||
-| Testo| Corda| VERO| Falso||Ottiene o imposta il testo dell'etichetta dell'unità di visualizzazione.|
+| Testo| Corda| VERO| Falso|| Ottiene o imposta il testo dell'etichetta dell'unità di visualizzazione.|
 | DirezioneTesto| Corda| VERO| Falso|||
 | TestoAllineamento orizzontale| Corda| VERO| Falso|||
 | Allineamento verticale del testo| Corda| VERO| Falso|||
@@ -27,10 +28,10 @@ weight: 50
 | È dimensione automatica| Booleano| VERO| Falso|||
 | IsInnerMode| Booleano| VERO| Falso|||
 | Ombra| Booleano| VERO| Falso|||
-| Proprietà della forma| Contenitore| VERO| Falso|||
 | Larghezza| Numero intero| VERO| Falso|||
 | Altezza| Numero intero| VERO| Falso|||
 | X| Numero intero| VERO| Falso|||
 | Y| Numero intero| VERO| Falso|||
 
-**Nome del genitore** : (Cornice grafico)[cornice grafico]
+**Nome del genitore** : [ChartFrame](/specification/model/chartframe)
+

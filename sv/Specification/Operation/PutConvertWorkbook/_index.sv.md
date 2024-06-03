@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/putconvertworkbook/
 description: Konvertera arbetsboken från det begärda innehållet till filer i olika format
+kwords: Excel, Office, Kalkylblad, Cloud REST API, PutConvertWorkbook
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutConvertWorkbook" >}}
@@ -15,7 +16,7 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parameternamn, typ, beskrivning" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="format,string,Formatet att konvertera(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/076143418/076143416/81IF343416/81IF343476/81IF343476/81IF343476/81IF343476/81IF343476/15IF343476/70161616161616161/15143481/151123481/XLSB/XLSM/XLSX/XLTM 3481 /MD[Markdown]/Nummer)." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="format,string,Formatet som ska konverteras (CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/076143418/076143416/15PG34081/15PG34181/15PG34081/15PG34081/8400/15PG34081/15PG34081/15PG34081/15PG34081/8400/151433481/15143416 173481 /MD[Markdown]/Nummer)." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="password,string,Lösenordet som behövs för att öppna en Excel-fil." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="outPath,string,Path för att spara resultatet. Om det är en enskild fil bör `outPath` omfatta både filnamnet och filtillägget. I fallet med flera filer bör \"outPath\" endast innehålla mappen." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Lagringsnamnet där filen finns." >}} 

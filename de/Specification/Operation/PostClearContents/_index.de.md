@@ -1,31 +1,32 @@
 ﻿---
-title: PostClearContent
+title: Beitrag löschen
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postclearcontents/
-description: Löschen Sie den Inhalt des Zellbereichs im Arbeitsblatt
+description: Zellbereichsinhalte im Arbeitsblatt löschen
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostClearContents
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostClearContents" >}}
 {{< blocks/products/cells/docs-title titlemsg="Clear cell area contents in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells/clearcontents,POST,Zellenbereichsinhalte im Arbeitsblatt löschen.,<a href=\'https://apireference.aspose.cloud/cells/#/Cells/PostClearContents \'>PostClearContents</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells/clearcontents,POST,Zellbereichsinhalte im Arbeitsblatt löschen.,<a href=\'https://apireference.aspose.cloud/cells/#/Cells/PostClearContents\'>PostClearContents</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="range,string,Stellt den Bereich dar, für den die angegebenen Zellen gelten." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="startRow,integer,Der Startzeilenindex." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="startColumn,integer,Der Startspaltenindex." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="endRow,integer,Der Endzeilenindex." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="endColumn,integer,Der Endspaltenindex." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Bereich, Zeichenfolge, stellt den Bereich dar, auf den die angegebenen Zellen zutreffen." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="startRow,Integer,Der Startzeilenindex." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="startColumn,Integer,Der Startspaltenindex." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="endRow, integer, Der Index der letzten Zeile." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="endColumn,integer,Der Index der Endspalte." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/CellsController/PostClearContents\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

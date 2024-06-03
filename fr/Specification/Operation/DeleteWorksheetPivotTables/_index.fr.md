@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/deleteworksheetpivottables/
 description: Supprimer les tableaux croisés dynamiques dans la feuille de calcul
+kwords: Excel, Office, feuille de calcul, Cloud REST API, DeleteWorksheetPivotTables
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetPivotTables" >}}

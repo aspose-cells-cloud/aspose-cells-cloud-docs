@@ -7,6 +7,7 @@ aliases: [/import-data-in-excel-worksheet-without-using-storage/]
 keywords: Import data into Excel files
 description: Aspose.Cells Cloud REST API, verilerin Excel dosyalarına aktarılmasını destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 31
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, İçe Aktarma
 ---
 Verileri Excel dosyasına aktarmak karmaşık bir işlemdir. Birçok faktör karmaşıklığa katkıda bulunur ve bu nedenle ihracat sürecinde dikkate alınmalıdır. Çeşitli format ve veri türlerini kesin bir profesyonel kalitede dosyaya aktarma yeteneği, Aspose.Cells Cloud'un en önemli özelliğidir.
 
@@ -26,7 +27,7 @@ Verileri bir Excel dosyasına veya birden fazla Excel dosyasına aktarmak için 
 | Parametre adı| Tip| Yol/Sorgu Dizesi/HTTPBody|Tanım|
 |:- |:- |:- |:- |
 | dosya| dosya| form verisi| Yüklenecek dosya|
-| İçe Aktarma Seçeneği| İçe Aktarma Seçenekleri|HTTPGövdesi| IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/Picture|
+| İçe Aktarma Seçeneği| İçe Aktarma Seçenekleri| HTTPGövdesi| IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/Picture|
 
 ### Depolamayı kullanmayla
 
@@ -239,4 +240,4 @@ Aşağıdaki makaleler her API'in nasıl aranacağını ayrıntılı olarak aç�
 - [Dize Dizisi Excel Çalışma Sayfasına nasıl aktarılır](/cells/tr/import/string-array/)
 - [2 Boyutlu Tamsayı Dizisi Excel Çalışma Sayfasına nasıl aktarılır](/cells/tr/import/2dimension-integer-array/)
 - [2 Boyutlu Çift Dizi Excel Çalışma Sayfasına nasıl aktarılır](/cells/tr/import/2dimension-double-array/)
-- [Boyutlu Dize Dizisini Excel Çalışma Sayfasına Nasıl Aktarırım](/cells/tr/import/2dimension-string-array/)
+- [2 Boyutlu Dize Dizisini Excel Çalışma Sayfasına Nasıl Aktarırım](/cells/tr/import/2dimension-string-array/)

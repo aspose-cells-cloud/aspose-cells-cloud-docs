@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/model/databarborder/
 description: "Aspose.Cells Bulut modeli spesifikasyonu: DataBarBorder. Açma, oluşturma, düzenleme, bölme, birleştirme, karşılaştırma ve dönüştürme gibi özelliklerle Excel ve diğer elektronik tablo belgelerini zahmetsizce yönetin"
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, DataBarBorder
 weight: 50
 ---
 ## **veriBarSınır**
 
- 
+ Koşullu biçimlendirme kuralı tarafından belirtilen veri çubuklarının kenarlığını temsil eder.
 
 | Mülkiyet adı| Emlak Tipi| Geçersiz kılınabilir| Sadece oku| Varsayılan değer| Tanım|
 |:- |:- |:- |:- |:- |:- |

@@ -1,13 +1,14 @@
 ﻿---
 title: قم بمطابقة كافة الخلايا غير الفارغة في ورقة عمل Excel
 second_title: Aspose.Cells Cloud Documen
-linktitle: لا تطابق أي خلية فارغة
+linktitle: لا تتطابق مع أي خلية فارغة
 type: docs
 url: /ar/autofilter/match-all-non-blank/
 aliases: [/match-all-non-blank-cells-in-the-list/]
 keywords: Match all not blank cells in the filter list on an Excel worksheet
 description: يدعم Aspose.Cells Cloud API مطابقة جميع الخلايا غير الفارغة في قائمة التصفية في ورقة عمل Excel. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 100
+kwords: Excel، Office Cloud، REST API، Spreadsheet، PDF، CSV، Json، Markdwon، تطابق جميع الخلايا غير الفارغة في ورقة عمل Excel
 ---
 يشير REST API إلى `match` جميع `not blank cell` في القائمة في ورقة عمل Excel.
             
@@ -70,7 +71,7 @@ curl -v  "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFi
  
 ## عائلة Cloud SDK
  
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
  
 توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
  

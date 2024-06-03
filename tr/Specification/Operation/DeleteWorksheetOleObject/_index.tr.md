@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/deleteworksheetoleobject/
 description: Çalışma sayfasındaki bir OLE nesnesini silme
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, SilWorksheetOleObject
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetOleObject" >}}

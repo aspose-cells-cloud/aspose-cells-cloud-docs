@@ -7,6 +7,7 @@ url: /ru/workbook/create/
 keywords: How to create an Excel workbook
 description: Aspose.Cells Cloud REST API как создать книгу Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 100
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Как создать книгу Excel
 ---
 ## Как создать рабочую книгу Excel.
 

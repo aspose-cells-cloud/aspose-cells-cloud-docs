@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/getpivottablefield/
 description: Hämta beskrivningar av pivotfält i pivottabellen
+kwords: Excel, Office, Kalkylblad, Cloud REST API, GetPivotTableField
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetPivotTableField" >}}

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/deleteworksheetpivottablefilter/
 description: Eliminar un filtro dinámico en la tabla dinámica
+kwords: Excel, Office, Hoja de cálculo, Cloud REST API, Eliminar hoja de trabajoPivotTableFilter
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetPivotTableFilter" >}}

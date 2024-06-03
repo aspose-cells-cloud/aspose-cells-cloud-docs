@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/getworkbookdefaultstyle/
 description: Получить описание стиля по умолчанию для книги.
+kwords: Excel, Office, электронная таблица, Cloud REST API, GetWorkbookDefaultStyle
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorkbookDefaultStyle" >}}

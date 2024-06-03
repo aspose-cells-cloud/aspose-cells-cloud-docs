@@ -4,13 +4,14 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postworksheetcellsrangevalue/
 description: Присвойте значение диапазону; при необходимости значение будет преобразовано в другой тип данных, а числовой формат ячейки будет сброшен
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostWorksheetCellsRangeValue
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangeValue" >}}
 {{< blocks/products/cells/docs-title titlemsg="Assign a value to the range; if necessary, the value will be converted to another data type, and the cell\'s number format will be reset." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Описание,ссылка API" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges/value,POST,присвойте значение диапазону; при необходимости значение будет преобразовано в другой тип данных, а числовой формат ячейки будет сброшен. а>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges/value,POST,присвойте значение диапазону; при необходимости значение будет преобразовано в другой тип данных, а формат числа ячейки будет сброшен.,<a href=\'https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeValue\'>PostWorksheetCellsRangeValue</ а>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

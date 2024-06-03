@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/deleteworksheethyperlink/
 description: حذف الارتباط التشعبي حسب الفهرس في ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، حذف ورقة العمل، الارتباط التشعبي
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetHyperlink" >}}

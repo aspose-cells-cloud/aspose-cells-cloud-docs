@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/putworksheetcustomfilter/
 description: Filtrar una lista con criterios personalizados en la hoja de trabajo
+kwords: Excel, Office, Hoja de cálculo, Cloud REST API, PutWorksheetCustomFilter
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetCustomFilter" >}}

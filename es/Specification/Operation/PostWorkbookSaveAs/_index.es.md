@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/postworkbooksaveas/
 description: Guarde un archivo Excel en varios formatos
+kwords: Excel, Office, hoja de cálculo, nube REST API, PostWorkbookSaveAs
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookSaveAs" >}}
@@ -19,11 +20,11 @@ weight: 50
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Nombre del parámetro, tipo, descripción" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="nuevo nombre de archivo, cadena, nuevo nombre de archivo para guardar el resultado. El `nuevo nombre de archivo` debe abarcar tanto el nombre del archivo como la extensión." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="isAutoFitRows, booleano, indica si se ajustan automáticamente las filas en el libro de trabajo." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="isAutoFitRows, boolean, indica si se ajustan automáticamente las filas en el libro de trabajo." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="isAutoFitColumns,boolean,Indica si se ajustan automáticamente las columnas en el libro de trabajo." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="carpeta, cadena, la carpeta donde se encuentra el archivo." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="nombre de almacenamiento, cadena, el nombre del almacenamiento donde se encuentra el archivo." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="outStorageName, cadena, el nombre del almacenamiento donde se encuentra el archivo de salida." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="outStorageName,cadena,El nombre del almacenamiento donde se encuentra el archivo de salida." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction,boolean,Si verifica la restricción del archivo Excel cuando el usuario modifica los objetos relacionados con las celdas." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="región, cadena, la configuración regional del libro de trabajo." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="pageWideFitOnPerSheet,boolean,El ancho de la página se ajusta a la hoja de trabajo." >}} 

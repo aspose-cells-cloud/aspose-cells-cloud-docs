@@ -5,6 +5,7 @@ type: docs
 url: /es/supported-file-formats/
 description: Aspose.Cells La nube admite Excel para crear, convertir, fusionar, dividir, proteger, operar objetos internos, etc.
 weight: 40
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Formatos de archivo admitidos
 ---
 |**Formato**|**Descripción**|**Carga**|**Ahorrar**|
 |:- |:- |:- |:- |

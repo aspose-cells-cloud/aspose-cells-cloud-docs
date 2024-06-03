@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/getchartareaborder/
 description: Получить описание границы области диаграммы
+kwords: Excel, Office, электронная таблица, Cloud REST API, GetChartAreaBorder
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetChartAreaBorder" >}}

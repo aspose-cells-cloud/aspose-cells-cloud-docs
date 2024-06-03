@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/getworksheetpivottables/
 description: Recuperare le descrizioni delle tabelle pivot nel foglio di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, Ottieni tabelle pivot del foglio di lavoro
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetPivotTables" >}}

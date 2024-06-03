@@ -3,6 +3,7 @@ title: Obtener MaxColumn de la hoja de trabajo Excel
 type: docs
 url: /es/get-maxcolumn-from-excel-worksheet/
 weight: 60
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Obtener MaxColumn de la hoja de trabajo Excel
 ---
 Este REST API indica que muestra obtener un `maxcolumn` en un archivo Excel cuando el parámetro `cellOrMethodName` es `maxcolumn`.
 

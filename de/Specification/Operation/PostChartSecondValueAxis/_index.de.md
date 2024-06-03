@@ -1,30 +1,31 @@
 ﻿---
-title: PostChartSecondValueAxi
+title: PostChartZweiterWertAxi
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postchartsecondvalueaxis/
-description: Aktualisieren Sie die zweite Wertachse des Diagramms
+description: Aktualisieren Sie die zweite Werteachse des Diagramms
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostChartSecondValueAxis
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostChartSecondValueAxis" >}}
 {{< blocks/products/cells/docs-title titlemsg="Update chart sencond value axis in the chart." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/secondvalueaxis,POST,Aktualisieren Sie die zweite Wertachse des Diagramms im Diagramm.,<a href=\'https://apireference.aspose.cloud/cells/ #/Charts/PostChartSecondValueAxis\'>PostChartSecondValueAxis</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/secondvalueaxis,POST,Aktualisieren Sie die zweite Werteachse des Diagramms.,<a href=\'https://apireference.aspose.cloud/cells/#/Charts/PostChartSecondValueAxis\'>PostChartSecondValueAxis</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
      {{< blocks/products/cells/docs-Parameter-content columns="chartIndex,integer,Der Diagrammindex." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns=" Achse, Klasse: Achse, Achse" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns=" Achse,Klasse:Achse,Achse" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

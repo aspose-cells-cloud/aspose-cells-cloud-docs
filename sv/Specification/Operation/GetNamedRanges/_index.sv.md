@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/getnamedranges/
 description: Hämta beskrivningar av intervall i kalkylbladen
+kwords: Excel, Office, Kalkylblad, Cloud REST API, GetNamedRanges
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetNamedRanges" >}}

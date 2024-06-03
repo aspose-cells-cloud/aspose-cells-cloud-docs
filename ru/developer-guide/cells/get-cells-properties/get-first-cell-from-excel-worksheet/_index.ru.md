@@ -3,6 +3,7 @@ title: Получите первую ячейку из рабочего лист
 type: docs
 url: /ru/get-first-cell-from-excel-worksheet/
 weight: 20
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, получить первую ячейку из рабочего листа Excel
 ---
 Этот REST API указывает, что показывает получение `firstcell` в файле Excel, когда параметр `cellOrMethodName` равен `firstcell`.
 

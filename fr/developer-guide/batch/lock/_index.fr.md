@@ -6,6 +6,7 @@ url: /fr/batch/lock
 keywords: Batch lock of multiple Excel files
 description: Aspose.Cells Cloud API prend en charge le verrouillage par lots de plusieurs fichiers Excel. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 100
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, verrouillage par lots
 ---
 Ce REST API indique `batch lock` des fichiers éligibles.
  
@@ -18,7 +19,7 @@ POST http://api.aspose.cloud/v3.0/cells/batch/lock
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | Demande de verrouillage par lots|| corps||
 

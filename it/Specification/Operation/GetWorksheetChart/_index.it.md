@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/getworksheetchart/
 description: Recupera il grafico in un formato specificato
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, GetWorksheetChart
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetChart" >}}

@@ -8,6 +8,7 @@ aliases: [/working-with-pivot-filters/]
 keywords: Add filter for a pivot table
 description: Aspose.Cells Cloud REST API admite la adición de filtro para una tabla dinámica. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 50
+kwords: Excel, Office Cloud, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Trabajar con filtros dinámicos
 ---
 Este REST API indica `add` pivote `filter` para el índice de la tabla piovt
  
@@ -26,7 +27,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables
 | nombre de la hoja| cadena| camino||
 | índice de tabla dinámica| entero| camino||
 | filtrar|| cuerpo||
-| necesitaReCalcular| booleano| consulta| FALSO|
+| necesitaReCalcular|booleano| consulta| FALSO|
 | carpeta| cadena| consulta||
 | nombredealmacenamiento| cadena| consulta| nombre del almacenamiento.|
  

@@ -1,31 +1,32 @@
 ﻿---
-title: PutVerticalPageBrea
+title: 放置垂直分页符
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/putverticalpagebreak/
 description: 在工作表中添加垂直分页符
+kwords: Excel，Office，电子表格，云 REST API，PutVerticalPageBreak
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutVerticalPageBreak" >}}
 {{< blocks/products/cells/docs-title titlemsg="Add a vertical page break in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/verticalpagebreaks,PUT,在工作表中添加垂直分页符。,<a href=\'https://apireference.aspose.cloud/cells/#/PageBreaks/PutVerticalPageBreak\' >放置垂直分页符</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/verticalpagebreaks,PUT,在工作表中添加垂直分页符。,<a href=\'https://apireference.aspose.cloud/cells/#/PageBreaks/PutVerticalPageBreak\'>PutVerticalPageBreak</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="参数名称、类型、描述" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="名称，字符串，工作簿名称。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,字符串,工作表名称。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="name,string,工作簿名称。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName，string，工作表名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="单元格名称,字符串,单元格名称" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="cellname，字符串，单元格名称" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="列，整数，列索引，从零开始。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="row,integer,行索引，从零开始。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="startRow,integer,起始行索引，从零开始。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="endRow,integer,结束行索引，从零开始。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="行，整数，行索引，从零开始。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="startRow，integer，起始行索引，从零开始。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="endRow，integer，结束行索引，从零开始。" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="文件夹，字符串，文件所在的文件夹。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,文件所在的存储名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName，string，文件所在的存储名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/PageBreaksController/PutVerticalPageBreak\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

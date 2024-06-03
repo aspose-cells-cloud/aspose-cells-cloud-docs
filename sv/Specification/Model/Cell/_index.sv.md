@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/model/cell/
 description: "Aspose.Cells Molnmodellspecifikation: Cell. Hantera enkelt Excel och andra kalkylarksdokument med funktioner som att öppna, generera, redigera, dela, slå samman, jämföra och konvertera"
+kwords: Excel, Office, Kalkylblad, Cloud REST API, Cell
 weight: 50
 ---
 ## **cell**
 
- 
+ Kapslar in objektet som representerar en enskild arbetsbokscell.
 
 | Egendomsnamn| Egenskapstyp| Nullbar| Endast läs| Standardvärde| Beskrivning|
 |:- |:- |:- |:- |:- |:- |
@@ -17,7 +18,7 @@ weight: 50
 | Kolumn| Heltal| Sann| Falsk|| Hämtar kolumnnummer (nollbaserat) för cellen.|
 | Värde| Sträng| Sann| Falsk|| Hämtar värdet som finns i den här cellen.|
 | Typ| Sträng| Sann| Falsk|| Representerar cellvärdestyp.|
-|Formel| Sträng| Sann| Falsk|| Hämtar eller ställer in en formel för .|
+| Formel| Sträng| Sann| Falsk||Hämtar eller ställer in en formel för .|
 | IsFormula| Boolean| Sann| Falsk|| Representerar om den angivna cellen innehåller formel.|
 | IsMerged| Boolean| Sann| Falsk|| Kontrollerar om en cell är en del av ett sammanslaget område eller inte.|
 | IsArrayHeader| Boolean| Sann| Falsk|| Indikerar cellens formel är och matrisformel och det är den första cellen i matrisen.|
@@ -30,4 +31,5 @@ weight: 50
 | Arbetsblad| Sträng| Sann| Falsk|| Hämtar föräldrakalkylbladet.|
 | länk| Klass: Länk| Sann| Falsk|||
 
-**Förälders namn** : (LinkElement)[linkelement]
+**Förälders namn** : [LinkElement](/specification/model/linkelement)
+

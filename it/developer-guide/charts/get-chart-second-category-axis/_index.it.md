@@ -1,8 +1,9 @@
 ﻿---
-title: Ottieni grafico Asse seconda categoria
+title:  Ottieni grafico Asse seconda categoria
 type: docs
 url: /it/charts/second-category-axis/get/
 weight: 60
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Ottieni grafico Asse seconda categoria
 ---
  Questo REST API indica Ottieni asse della seconda categoria del grafico.
  

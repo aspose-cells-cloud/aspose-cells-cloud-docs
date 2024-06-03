@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/putworksheethyperlink/
 description: Çalışma sayfasına köprü ekleme
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PutWorksheetHyperlink
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetHyperlink" >}}

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/postfitwidetopages/
 description: Sayfanın kağıda yazdırıldığında geniş sığacağı ölçeği ayarlayın
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PostFitWideToPages
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostFitWideToPages" >}}

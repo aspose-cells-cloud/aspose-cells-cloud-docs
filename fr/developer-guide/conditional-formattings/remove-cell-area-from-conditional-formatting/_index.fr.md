@@ -6,6 +6,7 @@ aliases: [/remove-cell-area-from-conditional-formatting/]
 keywords: REST API, spreadsheets, excel, delete cell area from condition formattin
 description: "Cells.Cloud API pour Excel : supprimer la zone de cellule du formatage des conditions"
 weight: 70
+kwords:  Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, supprimer la zone de cellule
 ---
 Ce REST API indique Supprimer la zone de cellule de la mise en forme conditionnelle.
  
@@ -18,14 +19,14 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditio
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin||
 | Nom de la feuille| chaîne| chemin||
 | startRow| entier| requête||
 | colonneDébut| entier| requête||
 | totalLignes| entier| requête||
-|totalColonnes| entier| requête||
+| totalColonnes| entier| requête||
 | dossier| chaîne| requête||
 | Nom de stockage| chaîne| requête| nom de stockage.|
  

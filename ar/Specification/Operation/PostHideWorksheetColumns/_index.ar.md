@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/posthideworksheetcolumns/
 description: إخفاء أعمدة ورقة العمل في ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostHideWorksheetColumns
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostHideWorksheetColumns" >}}

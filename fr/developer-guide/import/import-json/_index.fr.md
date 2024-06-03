@@ -5,8 +5,9 @@ linktitle: Importer Jso
 type: docs
 url: /fr/import/json/
 keywords: Import Json data into Excel
-description: Aspose.Cells Cloud REST API prend en charge l'importation de données de tableaux de chaînes dans des fichiers Excel. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
+description: Aspose.Cells Cloud REST API prend en charge l'importation de données de tableau de chaînes dans des fichiers Excel. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 40
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdwon, Importer des données Json dans Excel
 ---
 Ce REST API `import json data` dans la feuille de travail Excel.
 
@@ -29,10 +30,10 @@ Les paramètres importants sont décrits dans le tableau suivant :
 | nom| chaîne| Le nom du classeur|
 | importJsonRequest| classe| Importez la requête json.|
 | mot de passe| chaîne| Le mot de passe du classeur.|
-| dossier| chaîne|Dossier de classeur d'origine.|
+| dossier| chaîne| Dossier de classeur d'origine.|
 | Nom de stockage| chaîne| Nom de stockage.|
 | chemin de sortie| chaîne| Chemin du fichier de sortie.|
-| nomdestockageout| chaîne| Nom de stockage du fichier de sortie.|
+| nomdestockageout| chaîne|Nom de stockage du fichier de sortie.|
 | checkExcelRestriction| chaîne| Vérifiez la restriction Excel.|
 
 

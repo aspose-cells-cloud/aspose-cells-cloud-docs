@@ -8,6 +8,7 @@ aliases: [/set-modify-password-of-excel-workbooks/,/workbook/modify-password/]
 keywords: Modify password for an Excel workbook
 description: Aspose.Cells Cloud REST API поддерживает изменение пароля для книги Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 100
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, установка изменения пароля книги Excel
 ---
 Этот REST API указывает на защиту документа от изменений.
 

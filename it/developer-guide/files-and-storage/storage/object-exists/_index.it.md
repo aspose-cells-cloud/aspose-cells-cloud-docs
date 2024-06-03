@@ -6,6 +6,7 @@ url: /it/storage/object-exists/
 keywords: Learn how to check object exist with Aspose Cells Cloud REST API
 description: Scopri come verificare l'esistenza dell'oggetto con Aspose Cells Cloud REST API SDK che supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 100
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Oggetto esistente
 ---
 Questo REST API indica controlla se `file or folder exists`.
  

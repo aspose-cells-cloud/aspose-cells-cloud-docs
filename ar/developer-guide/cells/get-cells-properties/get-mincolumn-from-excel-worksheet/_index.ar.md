@@ -3,6 +3,7 @@ title: احصل على MinColumn من ورقة عمل Excel
 type: docs
 url: /ar/get-mincolumn-from-excel-worksheet/
 weight: 100
+kwords: Excel، Office Cloud، REST API، جدول بيانات، PDF، CSV، Json، Markdwon، احصل على MinColumn من Excel ورقة عمل
 ---
 يشير REST API إلى الحصول على `mincolumn` في ملف Excel عندما تكون المعلمة `cellOrMethodName` هي `mincolumn`.
 
@@ -35,7 +36,7 @@ curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/
 
 - **عائلة Cloud SDK**
 
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
 
 توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
 

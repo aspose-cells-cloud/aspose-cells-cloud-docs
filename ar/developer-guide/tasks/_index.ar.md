@@ -7,6 +7,7 @@ aliases: [/working-with-tasks/]
 keywords: REST API, task, spreadsheets, exce
 description: "Cells.Cloud API لـ Excel تشغيل: تشغيل Excel مع المهام"
 weight: 100
+kwords: Excel، Office كلاود، ريست API، جدول بيانات، PDF، CSV، Json، Markdwon، المهام
 ---
 ## العمل مع المهام.
 

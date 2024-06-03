@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/putchangevisibilityworksheet/
 description: Çalışma kitabındaki çalışma sayfasının görünürlüğünü değiştirme
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PutChangeVisibilityWorksheet
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutChangeVisibilityWorksheet" >}}

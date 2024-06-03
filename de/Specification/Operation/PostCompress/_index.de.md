@@ -1,23 +1,24 @@
 ﻿---
-title: PostCompres
+title: Nachkomprimierung
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postcompress/
-description: Komprimieren Sie Dateien und generieren Sie Zieldateien in verschiedenen Formaten. Zu den unterstützten Dateiformaten gehören Xls, Xlsx, Xlsm, Xlsb, Ods und mehr
+description: Komprimieren Sie Dateien und generieren Sie Zieldateien in verschiedenen Formaten. Zu den unterstützten Dateiformaten gehören Xls, Xlsx, Xlsm, Xlsb, Ods und mehr.
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostCompress
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostCompress" >}}
 {{< blocks/products/cells/docs-title titlemsg="Compress files and generate target files in various formats, supported file formats are include Xls, Xlsx, Xlsm, Xlsb, Ods and more." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/compress,POST,Komprimieren Sie Dateien und generieren Sie Zieldateien in verschiedenen Formaten. Zu den unterstützten Dateiformaten gehören Xls, Xlsx, Xlsm, Xlsb, Ods und mehr.,<a href=\'https://apireference.aspose.cloud/ celles/#/LightCells/PostCompress\'>PostCompress</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/compress,POST,Dateien komprimieren und Zieldateien in verschiedenen Formaten generieren, unterstützte Dateiformate sind unter anderem Xls, Xlsx, Xlsm, Xlsb, Ods und mehr.,<a href=\'https://apireference.aspose.cloud/cells/#/LightCells/PostCompress\'>PostCompress</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="CompressLevel, Ganzzahl, Komprimierungsstufe. Das Komprimierungsverhältnis 1-100." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="Passwort, Zeichenfolge, Das zum Öffnen einer Excel-Datei erforderliche Passwort." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction,boolean,Gibt an, ob die Einschränkung der Excel-Datei überprüft wird, wenn der Benutzer zellenbezogene Objekte ändert." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="CompressLevel,Integer,Komprimierungsstufe. Das Komprimierungsverhältnis 1-100." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Kennwort, Zeichenfolge, Das zum Öffnen einer Excel-Datei erforderliche Kennwort." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction, boolean, ob die Einschränkung der Excel-Datei überprüft wird, wenn der Benutzer zellenbezogene Objekte ändert." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/LightCellsController/PostCompress\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

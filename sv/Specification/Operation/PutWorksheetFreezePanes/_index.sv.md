@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/putworksheetfreezepanes/
 description: Ställ in frysrutor i kalkylbladet
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PutWorksheetFreezePanes
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetFreezePanes" >}}

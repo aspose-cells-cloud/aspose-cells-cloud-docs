@@ -6,6 +6,7 @@ type: docs
 url: /ru/worksheets/update-properties/
 aliases: [/update-excel-worksheet-properties/]
 weight: 20
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, обновление свойств на листе Excel.
 ---
 Этот REST API указывает на `update worksheet base properties`.
  

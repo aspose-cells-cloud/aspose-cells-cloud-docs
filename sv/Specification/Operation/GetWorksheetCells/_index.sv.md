@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/getworksheetcells/
 description: Hämta cellbeskrivningar i ett specificerat format
+kwords: Excel, Office, Spreadsheet, Cloud REST API, GetWorksheetCells
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetCells" >}}

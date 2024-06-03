@@ -4,19 +4,20 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/model/listobject/
 description: "Aspose.Cells Molnmodellspecifikation: ListObject. Hantera enkelt Excel och andra kalkylarksdokument med funktioner som att öppna, generera, redigera, dela, slå samman, jämföra och konvertera"
+kwords: Excel, Office, Kalkylblad, Cloud REST API, ListObject
 weight: 50
 ---
 ## **listObjekt**
 
- 
+ Representerar ett listobjekt på ett kalkylblad. ListObject-objektet är en medlem av ListObjects-samlingen. ListObjects-samlingen innehåller alla listobjekt på ett kalkylblad.
 
 | Egendomsnamn| Egenskapstyp| Nullbar| Endast läs| Standardvärde| Beskrivning|
 |:- |:- |:- |:- |:- |:- |
-| AutoFilter| Klass: AutoFilter| Sann| Falsk|| Får autofilter.|
+| AutoFilter| Klass: AutoFilter| Sann| Falsk||Får autofilter.|
 | Visningsnamn| Sträng| Sann| Falsk|| Hämtar och ställer in visningsnamnet.|
 | Startkolumn| Heltal| Sann| Falsk|| Hämtar startkolumnen för intervallet.|
 | StartRow| Heltal| Sann| Falsk|| Hämtar intervallets startrad.|
-| Slutkolumn| Heltal| Sann| Falsk||Hämtar slutkolumnen för intervallet.|
+| Slutkolumn| Heltal| Sann| Falsk|| Hämtar slutkolumnen för intervallet.|
 | EndRow| Heltal| Sann| Falsk|| Hämtar den sista raden i intervallet.|
 | Lista kolumner| Behållare| Sann| Falsk|| Hämtar ListColumns av ListObject.|
 | ShowHeaderRow| Boolean| Sann| Falsk|| Hämtar och ställer in om detta ListObject visar rubrikrad.|
@@ -27,12 +28,13 @@ weight: 50
 | ShowTotals| Boolean| Sann| Falsk|| Hämtar och ställer in om detta ListObject visar total rad.|
 | Tabellstilsnamn| Sträng| Sann| Falsk|| Hämtar och ställer in tabellstilens namn.|
 | TableStyleType| Sträng| Sann| Falsk|| Gets och den inbyggda bordsstilen.|
-| Dataområde| Klass: Räckvidd| Sann| Falsk|| Hämtar dataintervallet för ListObject.|
+| Dataområde| Klass: Räckvidd| Sann| Falsk||Hämtar dataintervallet för ListObject.|
 | DataSourceType| Sträng| Sann| Falsk|| Hämtar datakällans typ för tabellen.|
 | Kommentar| Sträng| Sann| Falsk|| Får och ställer tabellens kommentar.|
-|XmlMap| Klass:XmlMap| Sann| Falsk|| Blir van vid denna lista.|
+| XmlMap| Klass:XmlMap| Sann| Falsk|| Blir van vid denna lista.|
 | Alternativtext| Sträng| Sann| Falsk|| Hämtar och ställer in den alternativa texten.|
 | Alternativbeskrivning| Sträng| Sann| Falsk|| Hämtar och ställer in den alternativa beskrivningen.|
 | länk| Klass: Länk| Sann| Falsk|||
 
-**Förälders namn** : (LinkElement)[linkelement]
+**Förälders namn** : [LinkElement](/specification/model/linkelement)
+

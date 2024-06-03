@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/getworksheetconditionalformattings/
 description: Çalışma sayfasındaki koşullu biçimlendirmelerin açıklamalarını alma
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, GetWorksheetConditionalFormattings
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetConditionalFormattings" >}}

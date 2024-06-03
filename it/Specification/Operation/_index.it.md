@@ -2,6 +2,7 @@
 title: Operazione
 second_title: Aspose.Cells Cloud Documen
 type: docs
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API , Descrizione operazione
 weight: 50
 ---
 - [PostAnalizzaExcel](postanalyzeexcel) : esegue l'analisi aziendale dei dati nei file Excel.
@@ -119,14 +120,15 @@ weight: 50
 - [PostWorkbookExportXML](postworkbookexportxml) : Esporta dati XML da un file Excel. Quando sono presenti mappe XML in un file Excel, esporta dati XML. Quando non è presente alcuna mappa XML nel file Excel, convertire il file Excel in un file XML.
 - [PostWorkbookImportJson](postworkbookimportjson) importa un file di dati JSON nella cartella di lavoro. Il file di dati JSON può essere un file cloud o dati da un URI HTTP.
 - [PostWorkbookImportXML](postworkbookimportxml) : importa un file di dati XML in un file Excel. Il file di dati XML può essere un file cloud o dati da un URI HTTP.
-- [Post-importazione dati](postimportdata) : importa i dati nel file Excel.
+- [PostImportData](postimportdata) : importa i dati nel file Excel.
 - [PostWorkbookDataCleansing](postworkbookdatacleansing) : la pulizia dei dati dei file dei fogli di calcolo è un processo di gestione dei dati utilizzato per identificare, correggere e rimuovere errori, incompletezze, duplicati o imprecisioni nelle tabelle e negli intervalli.
 - [PostPulizia dei dati](postdatacleansing) : la pulizia dei dati dei file dei fogli di calcolo è un processo di gestione dei dati utilizzato per identificare, correggere e rimuovere errori, incompletezze, duplicati o imprecisioni nelle tabelle e negli intervalli.
-- [Deduplicazione dei dati della cartella di lavoro successiva](postworkbookdatadeduplication) : la deduplicazione dei dati dei file di fogli di calcolo viene utilizzata principalmente per eliminare i dati duplicati in tabelle e intervalli.
-- [PostDataDeduplicazione](postdatadeduplication) : la deduplicazione dei dati dei file di fogli di calcolo viene utilizzata principalmente per eliminare i dati duplicati in tabelle e intervalli.
+- [Deduplicazione dei dati della cartella di lavoro successiva](postworkbookdatadeduplication) : la deduplicazione dei dati dei file dei fogli di calcolo viene utilizzata principalmente per eliminare i dati duplicati nelle tabelle e negli intervalli.
+- [PostDataDeduplicazione](postdatadeduplication) : la deduplicazione dei dati dei file dei fogli di calcolo viene utilizzata principalmente per eliminare i dati duplicati nelle tabelle e negli intervalli.
 - [PostWorkbookDataFill](postworkbookdatafill) il riempimento dei dati per i file dei fogli di calcolo viene utilizzato principalmente per riempire i dati vuoti nelle tabelle e negli intervalli.
 - [PostDataFill](postdatafill) il riempimento dei dati per i file dei fogli di calcolo viene utilizzato principalmente per riempire i dati vuoti nelle tabelle e negli intervalli.
 - [PostDeleteIncompleteRows](postdeleteincompleterows) : L'eliminazione di righe incomplete di file di fogli di calcolo viene utilizzata principalmente per eliminare righe incomplete in tabelle e intervalli.
+- [PostTrasformazionedeidati](postdatatransformation) : la trasformazione dei dati del foglio di calcolo viene utilizzata principalmente per ruotare le colonne e annullare il pivot delle colonne.
 - [Ottieni collegamenti ipertestuali del foglio di lavoro](getworksheethyperlinks) : recupera le descrizioni dei collegamenti ipertestuali nel foglio di lavoro.
 - [Ottieni collegamento ipertestuale foglio di lavoro](getworksheethyperlink) : recupera la descrizione del collegamento ipertestuale in base all'indice nel foglio di lavoro.
 - [Elimina collegamento ipertestuale foglio di lavoro](deleteworksheethyperlink) : elimina il collegamento ipertestuale per indice nel foglio di lavoro.
@@ -134,7 +136,7 @@ weight: 50
 - [PutWorksheetCollegamento ipertestuale](putworksheethyperlink) : aggiunge il collegamento ipertestuale nel foglio di lavoro.
 - [Elimina collegamenti ipertestuali del foglio di lavoro](deleteworksheethyperlinks) : elimina tutti i collegamenti ipertestuali nel foglio di lavoro.
 - [Postassemblaggio](postassemble) : assembla file di dati con file modello per generare file in vari formati.
-- [Postcompressione](postcompress) : Comprimi file e genera file di destinazione in vari formati, i formati di file supportati includono Xls, Xlsx, Xlsm, Xlsb, Ods e altri.
+- [Postcompressione](postcompress) Comprimi file e genera file di destinazione in vari formati, i formati di file supportati includono Xls, Xlsx, Xlsm, Xlsb, Ods e altri.
 - [PostUnisci](postmerge) : unisce le celle nel foglio di lavoro.
 - [PostSplit](postsplit) : divide i file di fogli di calcolo Excel in base a fogli di lavoro e crea file di output in vari formati.
 - [PostRicerca](postsearch) : cerca il testo specificato all'interno dei file Excel.
@@ -144,8 +146,8 @@ weight: 50
 - [PostClearObjects](postclearobjects) : cancella gli elementi interni nei file Excel e genera file di output in vari formati.
 - [PostReverse](postreverse) : inverte righe o colonne nei file Excel e crea file di output in vari formati.
 - [Post-riparazione](postrepair) : ripara file anomali e genera file in vari formati.
-- [PostRuota](postrotate) : ruota righe, colonne o altri oggetti nei file Excel e salvali in vari formati.
-- [PostMetadati](postmetadata) Aggiorna le proprietà del documento nel file Excel e salvale in vari formati.
+- [PostRuota](postrotate) ruota righe, colonne o altri oggetti nei file Excel e salvali in vari formati.
+- [PostMetadati](postmetadata) : Aggiorna le proprietà del documento nel file Excel e salvale in vari formati.
 - [Ottieni metadati](getmetadata) : ottiene le proprietà del documento delle celle.
 - [Elimina metadati](deletemetadata) : Elimina le proprietà del documento delle celle nel file Excel e salvale in vari formati.
 - [Ottienioggettielencofogliodilavoro](getworksheetlistobjects) : recupera le descrizioni di ListObjects nel foglio di lavoro.
@@ -155,8 +157,8 @@ weight: 50
 - [Eliminaoggettoelencofogliodilavoro](deleteworksheetlistobject) : elimina l'oggetto dell'elenco per indice nel foglio di lavoro.
 - [OggettoElencoFogliPostLavoro](postworksheetlistobject) : aggiorna l'oggetto dell'elenco in base all'indice nel foglio di lavoro.
 - [PostWorksheetListObjectConvertToRange](postworksheetlistobjectconverttorange) : converte l'oggetto dell'elenco nell'intervallo nel foglio di lavoro.
-- [PostWorksheetListObjectSummarizeWithPivotTable](postworksheetlistobjectsummarizewithpivottable) : crea una tabella pivot con un oggetto elenco nel foglio di lavoro.
-- [PostWorksheetListObjectSortTable](postworksheetlistobjectsorttable) ordina gli oggetti dell'elenco nel foglio di lavoro.
+- [PostWorksheetListObjectSummarizeWithPivotTable](postworksheetlistobjectsummarizewithpivottable) crea una tabella pivot con un oggetto elenco nel foglio di lavoro.
+- [PostWorksheetListObjectSortTable](postworksheetlistobjectsorttable) : ordina gli oggetti dell'elenco nel foglio di lavoro.
 - [PostWorksheetListObjectRemoveDuplicates](postworksheetlistobjectremoveduplicates) : rimuove i duplicati nell'oggetto dell'elenco.
 - [PostWorksheetListObjectInsertSlicer](postworksheetlistobjectinsertslicer) : inserisce l'affettatrice per l'oggetto elenco.
 - [Colonna elenco fogli di lavoro post](postworksheetlistcolumn) : Aggiorna la colonna dell'elenco nell'oggetto elenco.
@@ -167,8 +169,8 @@ weight: 50
 - [EliminaOggettoOlefogliodilavoro](deleteworksheetoleobject) : elimina un oggetto OLE nel foglio di lavoro.
 - [PostUpdateWorksheetOleObject](postupdateworksheetoleobject) : aggiorna un oggetto OLE nel foglio di lavoro.
 - [PutWorksheetOleObject](putworksheetoleobject) : aggiunge un oggetto OLE nel foglio di lavoro.
-- [Ottieni VerticalPageBreaks](getverticalpagebreaks) : recupera le descrizioni delle interruzioni di pagina verticali nel foglio di lavoro.
-- [Ottieni interruzioni di pagina orizzontali](gethorizontalpagebreaks) recupera le descrizioni delle interruzioni di pagina orizzontali nel foglio di lavoro.
+- [Ottieni VerticalPageBreaks](getverticalpagebreaks) recupera le descrizioni delle interruzioni di pagina verticali nel foglio di lavoro.
+- [Ottieni interruzioni di pagina orizzontali](gethorizontalpagebreaks) : recupera le descrizioni delle interruzioni di pagina orizzontali nel foglio di lavoro.
 - [OttieniVerticalPageBreak](getverticalpagebreak) : recupera una descrizione dell'interruzione di pagina verticale nel foglio di lavoro.
 - [Ottieni interruzione pagina orizzontale](gethorizontalpagebreak) : recupera una descrizione di interruzione di pagina orizzontale nel foglio di lavoro.
 - [PutVerticalPageBreak](putverticalpagebreak) : aggiunge un'interruzione di pagina verticale nel foglio di lavoro.
@@ -179,9 +181,9 @@ weight: 50
 - [Elimina interruzione pagina orizzontale](deletehorizontalpagebreak) : elimina un'interruzione di pagina orizzontale nel foglio di lavoro.
 - [GetPageSetup](getpagesetup) : recupera la descrizione dell'impostazione della pagina nel foglio di lavoro.
 - [PostPageSetup](postpagesetup) : aggiorna l'impostazione della pagina nel foglio di lavoro.
-- [EliminaHeaderFooter](deleteheaderfooter) : Cancella intestazione e piè di pagina nel foglio di lavoro.
+- [EliminaHeaderFooter](deleteheaderfooter) Cancella intestazione e piè di pagina nel foglio di lavoro.
 - [GetHeader](getheader) : recupera la descrizione dell'intestazione della pagina nel foglio di lavoro.
-- [Intestazione post](postheader) aggiorna l'intestazione della pagina nel foglio di lavoro.
+- [Intestazione post](postheader) : aggiorna l'intestazione della pagina nel foglio di lavoro.
 - [OttieniFooter](getfooter) : recupera la descrizione del piè di pagina nel foglio di lavoro.
 - [PostFooter](postfooter) : aggiorna il piè di pagina nel foglio di lavoro.
 - [PostFitWideToPages](postfitwidetopages) : imposta la scala in base alla quale la pagina si adatterà in larghezza quando stampata sul foglio.
@@ -191,9 +193,9 @@ weight: 50
 - [PutWorksheetAddPicture](putworksheetaddpicture) : aggiungi una nuova immagine nel foglio di lavoro.
 - [Immagine del foglio di lavoro successivo](postworksheetpicture) : aggiorna un'immagine per indice nel foglio di lavoro.
 - [Elimina immagine del foglio di lavoro](deleteworksheetpicture) : elimina un oggetto immagine in base all'indice nel foglio di lavoro.
-- [Elimina immagini del foglio di lavoro](deleteworksheetpictures) : elimina tutte le immagini nel foglio di lavoro.
+- [Elimina immagini del foglio di lavoro](deleteworksheetpictures) elimina tutte le immagini nel foglio di lavoro.
 - [Ottieni tabelle pivot del foglio di lavoro](getworksheetpivottables) : recupera le descrizioni delle tabelle pivot nel foglio di lavoro.
-- [Ottieni tabella pivot del foglio di lavoro](getworksheetpivottable) recupera le informazioni della tabella pivot in base all'indice nel foglio di lavoro.
+- [Ottieni tabella pivot del foglio di lavoro](getworksheetpivottable) : recupera le informazioni della tabella pivot in base all'indice nel foglio di lavoro.
 - [Ottieni campo tabella pivot](getpivottablefield) : recupera le descrizioni dei campi pivot nella tabella pivot.
 - [Ottieni filtri tabella pivot foglio di lavoro](getworksheetpivottablefilters) : ottiene i filtri della tabella pivot nel foglio di lavoro.
 - [Ottieni filtro tabella pivot foglio di lavoro](getworksheetpivottablefilter) : recupera i filtri della tabella pivot nel foglio di lavoro.
@@ -217,7 +219,7 @@ weight: 50
 - [PutDocumentProperty](putdocumentproperty) : imposta o aggiungi una proprietà Excel.
 - [OttieniProprietàDocumento](getdocumentproperty) : Ottieni la proprietà Excel per nome.
 - [EliminaProprietàDocumento](deletedocumentproperty) : Elimina una proprietà Excel.
-- [EliminaProprietàDocumento](deletedocumentproperties) : elimina tutte le proprietà personalizzate del documento e ripristina quelle integrate.
+- [EliminaProprietàDocumento](deletedocumentproperties) elimina tutte le proprietà personalizzate del documento e ripristina quelle integrate.
 - [PostFirmaDigitale](postdigitalsignature) : Excel file firma digitale.
 - [PostEncryptWorkbook](postencryptworkbook) : Excel Crittografia.
 - [EliminaDecryptWorkbook](deletedecryptworkbook) : Excel decrittazione dei file.
@@ -230,9 +232,9 @@ weight: 50
 - [PostProtezione](postprotect) : Excel crittografia dei file.
 - [PostFoglio di lavoroCelleIntervalliCopia](postworksheetcellsrangescopy) : copia il contenuto dall'intervallo di origine all'intervallo di destinazione nel foglio di lavoro.
 - [PostWorksheetCellsRangeUnisci](postworksheetcellsrangemerge) : unisce un intervallo di celle in un'unica cella.
-- [PostWorksheetCellsRangeUnMerge](postworksheetcellsrangeunmerge) : separa le celle unite all'interno di questo intervallo.
+- [PostWorksheetCellsRangeUnMerge](postworksheetcellsrangeunmerge) separa le celle unite all'interno di questo intervallo.
 - [PostWorksheetCellsRangeStyle](postworksheetcellsrangestyle) : imposta lo stile per l'intervallo specificato.
-- [GetWorksheetCellsRangeValue](getworksheetcellsrangevalue) recupera i valori delle celle all'interno dell'intervallo specificato.
+- [GetWorksheetCellsRangeValue](getworksheetcellsrangevalue) : recupera i valori delle celle all'interno dell'intervallo specificato.
 - [PostWorksheetCellsRangeValue](postworksheetcellsrangevalue) : Assegna un valore all'intervallo; se necessario, il valore verrà convertito in un altro tipo di dati e il formato numerico della cella verrà ripristinato.
 - [PostWorksheetCellsRangeMoveTo](postworksheetcellsrangemoveto) : sposta l'intervallo corrente nell'intervallo di destinazione.
 - [PostWorksheetCellsRangeOrdinamento](postworksheetcellsrangesort) : esegue l'ordinamento dei dati attorno a un intervallo di celle.
@@ -240,8 +242,8 @@ weight: 50
 - [PostFoglio di lavoroCelleIntervalloColonnaLarghezza](postworksheetcellsrangecolumnwidth) : imposta la larghezza della colonna dell'intervallo specificato.
 - [PostWorksheetCellsRangeRowHeight](postworksheetcellsrangerowheight) : imposta l'altezza della riga nell'intervallo.
 - [PutWorksheetCellsRange](putworksheetcellsrange) : inserisce un intervallo di celle e sposta le celle esistenti in base all'opzione di spostamento specificata.
-- [Elimina intervallo celle foglio di lavoro](deleteworksheetcellsrange) : elimina un intervallo di celle e sposta le celle esistenti in base all'opzione di spostamento specificata.
-- [Ottieni forme foglio di lavoro](getworksheetshapes) recupera le descrizioni delle forme nel foglio di lavoro.
+- [Elimina intervallo celle foglio di lavoro](deleteworksheetcellsrange) elimina un intervallo di celle e sposta le celle esistenti in base all'opzione di spostamento specificata.
+- [Ottieni forme foglio di lavoro](getworksheetshapes) : recupera le descrizioni delle forme nel foglio di lavoro.
 - [Ottieni forma foglio di lavoro](getworksheetshape) : recupera la descrizione della forma nel foglio di lavoro.
 - [PutWorksheetShape](putworksheetshape) : aggiungi una forma nel foglio di lavoro.
 - [Elimina forme foglio di lavoro](deleteworksheetshapes) : elimina tutte le forme nel foglio di lavoro.
@@ -253,10 +255,10 @@ weight: 50
 - [Ottienifoglio di lavoroSparklineGroup](getworksheetsparklinegroup) : recupera la descrizione di un gruppo sparkline nel foglio di lavoro.
 - [EliminaWorksheetSparklineGroups](deleteworksheetsparklinegroups) : elimina i gruppi sparkline nel foglio di lavoro.
 - [Elimina foglio di lavoro Sparkline Group](deleteworksheetsparklinegroup) : elimina un gruppo sparkline nel foglio di lavoro.
-- [PutWorksheetSparklineGroup](putworksheetsparklinegroup) : aggiungi un gruppo sparkline nel foglio di lavoro.
+- [PutWorksheetSparklineGroup](putworksheetsparklinegroup) aggiungi un gruppo sparkline nel foglio di lavoro.
 - [PostWorksheetSparklineGroup](postworksheetsparklinegroup) : aggiorna un gruppo sparkline nel foglio di lavoro.
-- [Attività PostEsegui](postruntask) esegui attività.
-- [GetWorkbookDefaultStyle](getworkbookdefaultstyle) : recupera la descrizione dello stile predefinito per la cartella di lavoro.
+- [Attività PostEsegui](postruntask) : esegui attività.
+- [OttieniWorkbookDefaultStyle](getworkbookdefaultstyle) : recupera la descrizione dello stile predefinito per la cartella di lavoro.
 - [GetWorkbookTextItems](getworkbooktextitems) : recupera elementi di testo nella cartella di lavoro.
 - [Ottieni nomi cartella di lavoro](getworkbooknames) : recupera gli intervalli denominati nella cartella di lavoro.
 - [PutWorkbookName](putworkbookname) : definire un nuovo nome nella cartella di lavoro.
@@ -267,10 +269,10 @@ weight: 50
 - [Elimina nome cartella di lavoro](deleteworkbookname) : elimina un intervallo denominato nella cartella di lavoro.
 - [PostWorkbooksUnisci](postworkbooksmerge) : unisce una cartella di lavoro nella cartella di lavoro esistente.
 - [PostWorkbooksTextSearch](postworkbookstextsearch) : consente di cercare testo nella cartella di lavoro.
-- [PostWorkbookTextReplace](postworkbooktextreplace) : sostituisce il testo nella cartella di lavoro.
+- [PostWorkbookTextReplace](postworkbooktextreplace) sostituisce il testo nella cartella di lavoro.
 - [PostWorkbookGetSmartMarkerResult](postworkbookgetsmartmarkerresult) : Elaborazione intelligente dei marcatori.
 - [PutWorkbookCreate](putworkbookcreate) : crea una nuova cartella di lavoro utilizzando metodi diversi.
-- [PostWorkbookSplit](postworkbooksplit) divide la cartella di lavoro con un formato specifico.
+- [PostWorkbookSplit](postworkbooksplit) : divide la cartella di lavoro con un formato specifico.
 - [PostWorkbookCalculateFormula](postworkbookcalculateformula) : calcola tutte le formule nella cartella di lavoro.
 - [PostAutofitWorkbookRows](postautofitworkbookrows) : adatta automaticamente le righe nella cartella di lavoro.
 - [PostAutofitWorkbookColumns](postautofitworkbookcolumns) : adatta automaticamente le colonne nella cartella di lavoro.
@@ -283,7 +285,7 @@ weight: 50
 - [Ottieni fogli di lavoro](getworksheets) : recupera la descrizione dei fogli di lavoro da una cartella di lavoro.
 - [Ottieni foglio di lavoro con formato](getworksheetwithformat) : recupera il foglio di lavoro in un formato specificato dalla cartella di lavoro.
 - [PutChangeVisibilityWorksheet](putchangevisibilityworksheet) : modifica la visibilità del foglio di lavoro nella cartella di lavoro.
-- [PutActiveWorksheet](putactiveworksheet) imposta l'indice del foglio di lavoro attivo nella cartella di lavoro.
+- [PutActiveWorksheet](putactiveworksheet) : imposta l'indice del foglio di lavoro attivo nella cartella di lavoro.
 - [Metti Inserisci Nuovo Foglio Di Lavoro](putinsertnewworksheet) : inserisce un nuovo foglio di lavoro nella cartella di lavoro.
 - [PutAddNewWorksheet](putaddnewworksheet) : aggiunge un nuovo foglio di lavoro nella cartella di lavoro.
 - [Elimina foglio di lavoro](deleteworksheet) : elimina un foglio di lavoro nella cartella di lavoro.
@@ -296,8 +298,8 @@ weight: 50
 - [Ottieni commento foglio di lavoro](getworksheetcomment) : recupera la descrizione del commento nel foglio di lavoro.
 - [PutWorksheetComment](putworksheetcomment) : aggiunge un commento alla cella nel foglio di lavoro.
 - [Commento post foglio di lavoro](postworksheetcomment) : aggiorna il commento della cella nel foglio di lavoro.
-- [Elimina commento foglio di lavoro](deleteworksheetcomment) : elimina il commento della cella nel foglio di lavoro.
-- [Elimina commenti del foglio di lavoro](deleteworksheetcomments) elimina tutti i commenti nel foglio di lavoro.
+- [Elimina commento foglio di lavoro](deleteworksheetcomment) elimina il commento della cella nel foglio di lavoro.
+- [Elimina commenti del foglio di lavoro](deleteworksheetcomments) : elimina tutti i commenti nel foglio di lavoro.
 - [GetWorksheetMergedCells](getworksheetmergedcells) : ottieni celle unite del foglio di lavoro.
 - [GetWorksheetMergedCell](getworksheetmergedcell) : recupera la descrizione di una cella unita tramite il suo indice nel foglio di lavoro.
 - [Ottienifoglio di lavoroCalcolaFormula](getworksheetcalculateformula) : Calcola la formula nel foglio di lavoro.
@@ -322,6 +324,6 @@ weight: 50
 - [Ottieni convalide del foglio di lavoro](getworksheetvalidations) : recupera le descrizioni delle convalide nel foglio di lavoro.
 - [OttieniValidazione foglio di lavoro](getworksheetvalidation) : recupera una convalida tramite il relativo indice nel foglio di lavoro.
 - [PutWorksheetValidation](putworksheetvalidation) : aggiunge una convalida all'indice nel foglio di lavoro.
-- [Validazione post foglio di lavoro](postworksheetvalidation) : aggiorna una convalida per indice nel foglio di lavoro.
-- [EliminaValidazione foglio di lavoro](deleteworksheetvalidation) Elimina una convalida per indice nel foglio di lavoro.
+- [Validazione post foglio di lavoro](postworksheetvalidation) aggiorna una convalida per indice nel foglio di lavoro.
+- [EliminaValidazione foglio di lavoro](deleteworksheetvalidation) : Elimina una convalida per indice nel foglio di lavoro.
 - [Elimina convalide foglio di lavoro](deleteworksheetvalidations) : Elimina tutte le convalide nel foglio di lavoro.

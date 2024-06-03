@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postgroupworksheetrows/
 description: Группировать строки на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostGroupWorksheetRows
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostGroupWorksheetRows" >}}
@@ -19,7 +20,7 @@ weight: 50
      {{< blocks/products/cells/docs-Parameter-content columns="имя_листа,строка,имя листа." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Имя параметра, тип, описание" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="firstIndex,integer, Индекс первой строки, с которой нужно работать." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="firstIndex,integer,индекс первой строки, с которой нужно работать." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="LastIndex,integer,Индекс последней строки, с которой нужно работать." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="скрыть, логическое значение, состояние видимости строк" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="папка,строка,Папка, в которой находится файл." >}} 

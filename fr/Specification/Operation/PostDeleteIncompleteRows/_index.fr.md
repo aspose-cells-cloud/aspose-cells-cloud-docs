@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postdeleteincompleterows/
 description: La suppression des lignes incomplètes des fichiers de feuilles de calcul est principalement utilisée pour éliminer les lignes incomplètes des tableaux et des plages.
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostDeleteIncompleteRows
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostDeleteIncompleteRows" >}}

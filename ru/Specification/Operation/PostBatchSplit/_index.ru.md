@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postbatchsplit/
 description: Пакетное разделение файлов, соответствующих определенным условиям соответствия.
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostBatchSplit
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostBatchSplit" >}}

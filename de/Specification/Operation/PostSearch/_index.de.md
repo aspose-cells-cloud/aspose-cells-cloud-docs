@@ -1,24 +1,25 @@
 ﻿---
-title: PostSearc
+title: Beitragssuche
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postsearch/
-description: Suchen Sie nach dem angegebenen Text in Excel-Dateien
+description: Suche nach angegebenem Text in Excel Dateien
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostSearch
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostSearch" >}}
 {{< blocks/products/cells/docs-title titlemsg="Search for specified text within Excel files." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="/cells/search,POST,Suche nach angegebenem Text in Excel Dateien.,<a href=\'https://apireference.aspose.cloud/cells/#/LightCells/PostSearch\'>PostSearch</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="Text, Zeichenfolge, Inhalt suchen" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="Passwort, Zeichenfolge, Das zum Öffnen einer Excel-Datei erforderliche Passwort." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="sheetname,string,Der Arbeitsblattname. Suchen Sie den angegebenen Textinhalt im Arbeitsblatt." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction,boolean,Gibt an, ob die Einschränkung der Excel-Datei überprüft wird, wenn der Benutzer zellenbezogene Objekte ändert." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Text,Zeichenfolge,Inhalt suchen" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Kennwort, Zeichenfolge, Das zum Öffnen einer Excel-Datei erforderliche Kennwort." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Blattname, Zeichenfolge, Der Name des Arbeitsblatts. Suchen Sie den angegebenen Textinhalt im Arbeitsblatt." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction, boolean, ob die Einschränkung der Excel-Datei überprüft wird, wenn der Benutzer zellenbezogene Objekte ändert." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/LightCellsController/PostSearch\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

@@ -1,27 +1,28 @@
 ﻿---
-title: PostWorksheetPivotTableCalculat
+title: PostArbeitsblattPivotTableRechner
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postworksheetpivottablecalculate/
-description: Berechnen Sie die Daten der Pivottable in Zellen
+description: Berechnen Sie die Daten der PivotTabelle in Zellen
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostWorksheetPivotTableCalculate
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetPivotTableCalculate" >}}
 {{< blocks/products/cells/docs-title titlemsg="Calculate pivottable\'s data to cells." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/Calculate,POST,Pivottable-Daten in Zellen berechnen.,<a href=\'https://apireference.aspose.cloud/cells/#/PivotTables /PostWorksheetPivotTableCalculate\'>PostWorksheetPivotTableCalculate</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/Calculate,POST,Daten der Pivot-Tabelle in Zellen berechnen.,<a href=\'https://apireference.aspose.cloud/cells/#/PivotTables/PostWorksheetPivotTableCalculate\'>PostWorksheetPivotTableCalculate</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="PivotTableIndex,Integer,Ruft den PivotTable-Bericht nach Index ab." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="pivotTableIndex,integer,Ruft den PivotTable-Bericht nach Index ab." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/PivotTablesController/PostWorksheetPivotTableCalculate\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

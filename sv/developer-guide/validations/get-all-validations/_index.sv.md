@@ -7,6 +7,7 @@ url: /sv/validations/get-all/
 keywords: Get all worksheet validations from an Excel worksheet
 description: Aspose.Cells Cloud REST API stöd för att hämta alla kalkylbladsvalideringar från ett Excel kalkylblad. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 10
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Hämta alla kalkylbladsvalideringar från ett Excel kalkylblad
 ---
 Denna REST API indikerar att få alla kalkylbladsvalideringar på ett Excel kalkylblad.
  

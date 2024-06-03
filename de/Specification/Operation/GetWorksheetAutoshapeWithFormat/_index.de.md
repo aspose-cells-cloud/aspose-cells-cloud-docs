@@ -3,24 +3,25 @@ title: GetWorksheetAutoshapeWithForma
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/getworksheetautoshapewithformat/
-description: Erhalten Sie eine Autoshape-Beschreibung in einem bestimmten Format
+description: Erhalten Sie eine AutoShape-Beschreibung in einem bestimmten Format
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, GetWorksheetAutoshapeWithFormat
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetAutoshapeWithFormat" >}}
 {{< blocks/products/cells/docs-title titlemsg="Get autoshape description in some format." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/autoshapes/{autoshapeNumber},GET,Autoshape-Beschreibung in einem bestimmten Format abrufen.,<a href=\'https://apireference.aspose.cloud/cells/#/Autoshapes/ GetWorksheetAutoshapeWithFormat\'>GetWorksheetAutoshapeWithFormat</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/autoshapes/{autoshapeNumber},GET,AutoShape-Beschreibung in einem bestimmten Format abrufen.,<a href=\'https://apireference.aspose.cloud/cells/#/Autoshapes/GetWorksheetAutoshapeWithFormat\'>GetWorksheetAutoshapeWithFormat</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Name der Arbeitsmappe." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Arbeitsblattname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="autoshapeNumber,integer,Die Autoshape-Nummer." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Name der Arbeitsmappe." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Blattname, Zeichenfolge, Arbeitsblattname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="autoshapeNumber, Integer, Die AutoShape-Nummer." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="Format, Zeichenfolge, Autoshape-Konvertierungsformat." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Format, Zeichenfolge, AutoShape-Konvertierungsformat." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Dokumentordner." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Speichername." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}

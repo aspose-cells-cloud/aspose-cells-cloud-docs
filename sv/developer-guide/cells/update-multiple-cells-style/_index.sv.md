@@ -3,6 +3,7 @@ title: Uppdatera flera Cells Styl
 type: docs
 url: /sv/update-multiple-cells-style/
 weight: 20
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Update Multiple Cells Style
 ---
 Denna REST API indikerar set `cells style` till en cell i en Excel fil.
 

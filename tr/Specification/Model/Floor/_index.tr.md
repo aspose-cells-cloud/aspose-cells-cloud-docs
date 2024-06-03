@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/model/floor/
 description: "Aspose.Cells Bulut modeli özellikleri: Zemin. Açma, oluşturma, düzenleme, bölme, birleştirme, karşılaştırma ve dönüştürme gibi özelliklerle Excel ve diğer elektronik tablo belgelerini zahmetsizce yönetin"
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, Kat
 weight: 50
 ---
 ## **zemin**
 
- 
+ 3 boyutlu bir grafiğin tabanını temsil eden nesneyi kapsüller.
 
 | Mülkiyet adı| Emlak Tipi| Geçersiz kılınabilir| Sadece oku| Varsayılan değer| Tanım|
 |:- |:- |:- |:- |:- |:- |
@@ -20,5 +21,7 @@ weight: 50
 | Negatif Ters Çevir| Boolean| Doğru| YANLIŞ|||
 | Şeffaflık| Yüzer| Doğru| YANLIŞ|||
 
-**Ebeveyn adı** : (Alan)[alan]**Çocuk Adı** : 
+**Ebeveyn adı** : [Alan](/specification/model/area)
+
+**Çocuk Adı** : 
 	-  [Duvarlar](walls) 

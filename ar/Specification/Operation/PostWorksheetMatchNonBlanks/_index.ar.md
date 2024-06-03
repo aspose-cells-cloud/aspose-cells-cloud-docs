@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postworksheetmatchnonblanks/
 description: مطابقة كافة الخلايا غير الفارغة في القائمة
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostWorksheetMatchNonBlanks
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetMatchNonBlanks" >}}

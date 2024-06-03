@@ -3,6 +3,7 @@ title: Obtenez MinDataColumn à partir de Excel Workshee
 type: docs
 url: /fr/get-mindatacolumn-from-excel-worksheet/
 weight: 110
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, obtenir MinDataColumn à partir de la feuille de calcul Excel
 ---
 Ce REST API indique que les spectacles obtiennent un `mindatacolumn` dans un fichier Excel lorsque le paramètre `cellOrMethodName` est `mindatacolumn`.
 

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/getworksheetmergedcells/
 description: Få kalkylblad sammanslagna celler
+kwords: Excel, Office, Spreadsheet, Cloud REST API, GetWorksheetMergedCells
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetMergedCells" >}}

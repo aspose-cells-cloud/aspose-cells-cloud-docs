@@ -6,6 +6,7 @@ url: /fr/folder/create/
 keywords: Learn how to create folder with Aspose Cells Cloud REST API
 description: Découvrez comment créer un dossier avec Aspose Cells Cloud REST API SDK prenant en charge les types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 100
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, créer un dossier
 ---
 Ce REST API indique `create folder`.
 
@@ -18,7 +19,7 @@ PUT http://api.aspose.cloud/v3.0/cells/storage/folder/{path}
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | chemin| chaîne| chemin|Chemin du dossier pour créer par exemple 'dossier_1/dossier_2/' |
 | Nom de stockage| chaîne| requête| Nom de stockage|

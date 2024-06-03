@@ -4,16 +4,17 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/model/arcshape/
 description: "Aspose.Cells Molnmodellspecifikation: ArcShape. Hantera enkelt Excel och andra kalkylarksdokument med funktioner som att öppna, generera, redigera, dela, slå samman, jämföra och konvertera"
+kwords: Excel, Office, Kalkylblad, Cloud REST API, ArcShape
 weight: 50
 ---
 ## **arcShape**
 
- 
+ Representerar bågformen.
 
 | Egendomsnamn| Egenskapstyp| Nullbar| Endast läs| Standardvärde| Beskrivning|
 |:- |:- |:- |:- |:- |:- |
 | StartArrowheadLength| Sträng| Sann| Falsk|| Hämtar och ställer in startpilens huvudlängd på linjen.|
-| Börja ArrowheadStyle| Sträng| Sann| Falsk||Hämtar och ställer in startpilens stil för linjen.|
+| Börja ArrowheadStyle| Sträng| Sann| Falsk|| Hämtar och ställer in startpilens stil för linjen.|
 | StartArrowheadWidth| Sträng| Sann| Falsk|| Hämtar och ställer in startpilens huvudbredd på linjen.|
 | EndArrowheadLength| Sträng| Sann| Falsk|| Hämtar och ställer in linjens längd på slutet av pilhuvudet.|
 | EndArrowheadStyle| Sträng| Sann| Falsk|| Hämtar och ställer in slutet av pilhuvudet för linjen.|
@@ -35,7 +36,7 @@ weight: 50
 | X| Heltal| Sann| Falsk|||
 | Y| Heltal| Sann| Falsk|||
 | Rotations vinkel| Flytande| Sann| Falsk|||
-| HtmlText| Sträng| Sann| Falsk|||
+|HtmlText| Sträng| Sann| Falsk|||
 | Text| Sträng| Sann| Falsk|||
 | Alternativtext| Sträng| Sann| Falsk|||
 | TextHorizontal Alignment| Sträng| Sann| Falsk|||
@@ -56,4 +57,5 @@ weight: 50
 | Hyperlänk| Sträng| Sann| Falsk|||
 | länk| Klass: Länk| Sann| Falsk|||
 
-**Förälders namn** : (Form)[form]
+**Förälders namn** : [Form](/specification/model/shape)
+

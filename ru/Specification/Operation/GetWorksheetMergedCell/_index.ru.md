@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/getworksheetmergedcell/
 description: Получить описание объединенной ячейки по ее индексу на листе.
+kwords: Excel, Office, электронная таблица, Cloud REST API, GetWorksheetMergedCell
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetMergedCell" >}}

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/deleteworksheetcomment/
 description: Supprimer le commentaire de cellule dans la feuille de calcul
+kwords: Excel, Office, feuille de calcul, Cloud REST API, DeleteWorksheetComment
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetComment" >}}

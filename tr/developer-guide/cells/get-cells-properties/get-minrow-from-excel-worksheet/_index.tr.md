@@ -3,6 +3,7 @@ title: Excel Çalışma Sayfasından MinRow'u edinin
 type: docs
 url: /tr/get-minrow-from-excel-worksheet/
 weight: 80
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel Çalışma Sayfasından MinRow'u Alın
 ---
 Bu REST API, `cellOrMethodName` parametresi `minrow` olduğunda Excel dosyasında gösterilerin `minrow` aldığını gösterir.
 

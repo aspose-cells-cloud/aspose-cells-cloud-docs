@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/postworksheetpivottablecalculate/
 description: Calcola i dati della tabella pivot nelle celle
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PostWorksheetPivotTableCalculate
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetPivotTableCalculate" >}}

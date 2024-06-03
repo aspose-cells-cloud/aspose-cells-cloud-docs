@@ -7,6 +7,7 @@ url: /ar/worksheets/delete/
 keywords: How to work with deleting worksheet on an Excel workbook
 description: Aspose.Cells Cloud REST API يدعم العمل مع حذف أوراق العمل في مصنف Excel. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 20
+kwords: Excel، Office Cloud، REST API، جدول البيانات، PDF، CSV، Json، Markdwon، كيفية العمل مع حذف أوراق العمل في مصنف Excel
 ---
 ## العمل مع حذف أوراق العمل في مصنف Excel.
 

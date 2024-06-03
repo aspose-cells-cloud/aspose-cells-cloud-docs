@@ -3,14 +3,16 @@ title: ErgebnisQuelle
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/model/resultsource/
-description: "Aspose.Cells Cloud-Modellspezifikation: ResultSource. Bearbeiten Sie mühelos Excel und andere Tabellenkalkulationsdokumente mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+description: "Aspose.Cells Cloud-Modellspezifikation: ResultSource. Müheloses Bearbeiten von Excel und anderen Tabellenkalkulationsdokumenten mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, Ergebnisquelle
 weight: 50
 ---
-## **resultSource**
+## **ErgebnisQuelle**
 
- 
+ Stellt den Ergebnisquellentyp dar.
 
-| Name des Anwesens| Art der Immobilie| Nullbar| Schreibgeschützt| Standardwert| Beschreibung|
+| Name des Anwesens| Art der Immobilie| Nullwerte zulassen| Schreibgeschützt| Standardwert| Beschreibung|
 |:- |:- |:- |:- |:- |:- |
 
-**Elternname** : (Enum)[enum]
+**Elternname** : [Aufzählung](/specification/model/enum)
+

@@ -5,6 +5,7 @@ type: docs
 url: /it/quickstart/
 description: Aspose.Cells Cloud supporta Excel per creare, convertire, unire, dividere, proteggere, operazioni di oggetti interni e così via
 weight: 20
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Avvio rapido
 ---
 Queste istruzioni ti guidano attraverso l'inizializzazione di Aspose.Cells Cloud API e l'installazione delle librerie di elaborazione dei fogli di calcolo richieste.
 
@@ -51,7 +52,7 @@ Per accedere alle informazioni sulle tue applicazioni, procedi come segue:
 
 ![applicazioni.png](applications.png)
 
- 3. Scorri fino alla fine della pagina, dove troverai l'impostazione predefinita**"Prima App"** Applicazione. Clicca il**"Prima applicazione"**elemento per visualizzare e aggiornare le credenziali di sicurezza.
+ 3. Scorri fino alla fine della pagina, dove troverai l'impostazione predefinita**"Prima App"** Applicazione. Clicca il**"Prima applicazione"** elemento per visualizzare e aggiornare le credenziali di sicurezza.
 
 ![primaapp.png](firstapp.png)
 
@@ -73,7 +74,7 @@ Congratulazioni! Hai ottenuto con successo le tue credenziali di sicurezza per a
 
 Ora il tuo account è completamente configurato e l'ambiente di sviluppo è installato. Puoi iniziare a scrivere il codice con l'SDK scelto.
 
- Si prega di fare riferimento al[Guida per gli sviluppatori](https://docs.aspose.cloud/cells/developer-guide/) per trovare facilmente informazioni su come utilizzare il Cloud API.
+Si prega di fare riferimento al[Guida per gli sviluppatori](https://docs.aspose.cloud/cells/developer-guide/) per trovare facilmente informazioni su come utilizzare il Cloud API.
 
 ## Richiedi assistenza, se necessario
 

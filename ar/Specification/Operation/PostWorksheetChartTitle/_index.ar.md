@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postworksheetcharttitle/
 description: تحديث عنوان المخطط في ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostWorksheetChartTitle
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetChartTitle" >}}

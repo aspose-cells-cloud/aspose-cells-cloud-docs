@@ -7,6 +7,7 @@ aliases: [/import-data-in-excel-worksheet-without-using-storage/]
 keywords: Import data into Excel files
 description: Aspose.Cells Cloud REST API prend en charge l'importation de données dans des fichiers Excel. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 31
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, importation
 ---
 L'importation de données dans un fichier Excel est un processus complexe. De nombreux facteurs contribuent à cette complexité et doivent donc être pris en compte lors du processus d’exportation. La possibilité d'importer des types de formats et des types de données dans le fichier avec une qualité professionnelle précise est l'une des principales fonctionnalités de Aspose.Cells Cloud.
 
@@ -23,14 +24,14 @@ Les API suivantes pour importer des données dans un fichier Excel ou plusieurs 
  
 ### Sans utiliser de stockage
 
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | déposer| déposer| Données de formulaire| Fichier à télécharger|
-| Option d'importation| Options d'importation|Corps HTTP| IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/Picture|
+| Option d'importation| Options d'importation| Corps HTTP| IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/Picture|
 
 ### Avec l'utilisation du stockage
 
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin||
 | dossier| chaîne| requête||

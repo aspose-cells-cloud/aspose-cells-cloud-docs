@@ -3,7 +3,8 @@ title: XlsSaveOption
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/model/xlssaveoptions/
-description: "Aspose.Cells Specifica del modello cloud: XlsSaveOptions. Gestisci facilmente Excel e altri fogli di calcolo con funzionalità come apertura, generazione, modifica, divisione, unione, confronto e conversione"
+description: "Aspose.Cells Specifica del modello cloud: XlsSaveOptions. Gestisci facilmente Excel e altri documenti di fogli di calcolo con funzionalità come apertura, generazione, modifica, divisione, unione, confronto e conversione"
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, XlsSaveOptions
 weight: 50
 ---
 ## **xlsSaveOptions**
@@ -18,7 +19,8 @@ weight: 50
 | CreaDirectory| Booleano| VERO| Falso|||
 | Abilita compressione HTTP| Booleano| VERO| Falso|||
 | AggiornaChartCache| Booleano| VERO| Falso|||
-|OrdinaNomi| Booleano| VERO| Falso|||
+| OrdinaNomi| Booleano| VERO| Falso|||
 | ValidateMergedAreas| Booleano| VERO| Falso|||
 
-**Nome del genitore** : (OpzioniSalva)[opzionisalva]
+**Nome del genitore** : [SalvaOpzioni](/specification/model/saveoptions)
+

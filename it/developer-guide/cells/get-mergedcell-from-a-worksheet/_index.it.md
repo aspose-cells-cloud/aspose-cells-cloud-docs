@@ -3,6 +3,7 @@ title: Ottieni MergedCell da un foglio di lavoro
 type: docs
 url: /it/get-mergedcell-from-a-worksheet/
 weight: 60
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Ottieni MergedCell da un foglio di lavoro
 ---
 Questo REST API indica ottenere `merged cell` in un file Excel.
 

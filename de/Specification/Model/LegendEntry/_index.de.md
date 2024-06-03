@@ -3,19 +3,21 @@ title: LegendEntr
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/model/legendentry/
-description: "Aspose.Cells Cloud-Modellspezifikation: LegendEntry. Bearbeiten Sie mühelos Excel und andere Tabellenkalkulationsdokumente mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+description: "Aspose.Cells Cloud-Modellspezifikation: LegendEntry. Müheloses Bearbeiten von Excel und anderen Tabellenkalkulationsdokumenten mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, LegendEntry
 weight: 50
 ---
-## **Legendeneintrag**
+## **LegendeEintrag**
 
- 
+ Stellt einen Legendeneintrag in einer Diagrammlegende dar.
 
-| Name des Anwesens| Art der Immobilie| Nullbar| Schreibgeschützt| Standardwert| Beschreibung|
+| Name des Anwesens| Art der Immobilie| Nullwerte zulassen| Schreibgeschützt| Standardwert| Beschreibung|
 |:- |:- |:- |:- |:- |:- |
-| AutoScaleFont| Zeichenfolge| WAHR| FALSCH||True, wenn der Text im Objekt die Schriftgröße ändert, wenn sich die Objektgröße ändert. Der Standardwert ist True.|
-| Hintergrundmodus| Zeichenfolge| WAHR| FALSCH|| Ruft den Anzeigemodus des Hintergrunds ab und legt diesen fest|
+| AutoScaleFont| Boolescher Wert| WAHR| FALSCH||True, wenn der Text im Objekt die Schriftgröße ändert, wenn sich die Objektgröße ändert. Der Standardwert ist True.|
+| Hintergrundmodus| Zeichenfolge| WAHR| FALSCH|| Ermittelt und setzt den Anzeigemodus des Hintergrunds|
 | Schriftart| Klasse:Schriftart| WAHR| FALSCH|| Ruft ein Objekt des angegebenen ChartFrame-Objekts ab.|
-| Ist gelöscht| Zeichenfolge| WAHR| FALSCH|| Ruft ab und legt fest, ob der Legendeneintrag gelöscht wird.|
+| Ist gelöscht| Boolescher Wert| WAHR| FALSCH|| Ruft ab und legt fest, ob der Legendeneintrag gelöscht wird.|
 | Verknüpfung| Klasse:Link| WAHR| FALSCH|||
 
-**Elternname** : (LinkElement)[Linkelement]
+**Elternname** : [LinkElement](/specification/model/linkelement)
+

@@ -3,8 +3,9 @@ title: Actualizar estilo múltiple Cells
 type: docs
 url: /es/update-multiple-cells-style/
 weight: 20
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Actualizar varios estilos Cells
 ---
-Este REST API indica establecer `cells style` en una celda de un archivo Excel.
+Este REST API indica establecer `cells style` en una celda en un archivo Excel.
 
  
 ## RSET API

@@ -3,6 +3,7 @@ title: Borrar formato Cells en la hoja de trabajo Excel
 type: docs
 url: /es/clear-cells-formatting-in-excel-worksheet/
 weight: 100
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Borrar Cells Formato en hoja de trabajo Excel
 ---
 Este REST API indica `clear` celdas `style` en un archivo Excel.
 

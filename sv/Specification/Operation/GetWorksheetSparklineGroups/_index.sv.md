@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/getworksheetsparklinegroups/
 description: Hämta beskrivningar av sparkline-grupper i arbetsbladet
+kwords: Excel, Office, Spreadsheet, Cloud REST API, GetWorksheetSparklineGroups
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetSparklineGroups" >}}

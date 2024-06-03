@@ -7,6 +7,7 @@ aliases: [/working-with-columns/]
 keywords: REST API, columns, spreadsheets, exce
 description: "Cells.Cloud API لـ Excel التشغيل: إظهار الأعمدة من ورقة عمل Excel"
 weight: 100
+kwords: Excel، Office كلاود، ريست API، جدول بيانات، PDF، CSV، Json، Markdwon، أعمدة
 ---
 ## العمل مع الأعمدة في ملف Excel.
 

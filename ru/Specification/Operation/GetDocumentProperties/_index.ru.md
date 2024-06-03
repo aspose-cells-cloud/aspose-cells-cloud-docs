@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/getdocumentproperties/
 description: Получить описания свойств файла Excel.
+kwords: Excel, Office, электронная таблица, Cloud REST API, GetDocumentProperties
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetDocumentProperties" >}}

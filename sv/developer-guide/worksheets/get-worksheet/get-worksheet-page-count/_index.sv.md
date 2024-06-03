@@ -7,6 +7,7 @@ url: /sv/worksheets/page-count/
 keywords: Get page count on an Excel worksheet
 description: Aspose.Cells Cloud REST API stöd för att få sidantal på ett Excel kalkylblad. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 10
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Hämta sidantal för ett Excel kalkylblad
 ---
 Denna REST API indikerar `get page count` för arbetsblad.
  

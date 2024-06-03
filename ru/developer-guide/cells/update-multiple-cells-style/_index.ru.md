@@ -3,6 +3,7 @@ title: Обновление нескольких стилей Cells
 type: docs
 url: /ru/update-multiple-cells-style/
 weight: 20
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, обновление нескольких стилей Cells
 ---
 Этот REST API указывает на установку `cells style` в ячейку в файле Excel.
 

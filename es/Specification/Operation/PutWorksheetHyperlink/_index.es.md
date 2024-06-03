@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/putworksheethyperlink/
 description: Agregar hipervínculo en la hoja de trabajo
+kwords: Excel, Office, hoja de cálculo, nube REST API, PutWorksheetHyperlink
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetHyperlink" >}}
@@ -19,7 +20,7 @@ weight: 50
      {{< blocks/products/cells/docs-Parameter-content columns="nombre de la hoja, cadena, el nombre de la hoja de trabajo." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Nombre del parámetro, tipo, descripción" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="primera fila, entero, primera fila del rango del hipervínculo." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="primera fila, número entero, primera fila del rango del hipervínculo." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="primera columna, número entero, primera columna del rango del hipervínculo." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="totalRows, entero, número de filas en este rango de hipervínculo." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="totalColumnas, número entero, número de columnas de este rango de hipervínculo." >}} 

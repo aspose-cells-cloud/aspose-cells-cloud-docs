@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/deleteworksheetlistobject/
 description: حذف كائن القائمة حسب الفهرس في ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، RemoveWorksheetListObject
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetListObject" >}}

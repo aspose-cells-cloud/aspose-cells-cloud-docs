@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/getdocumentproperties/
 description: استرداد أوصاف خصائص الملف Excel
+kwords: Excel، Office، جدول البيانات، Cloud REST API، GetDocumentProperties
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetDocumentProperties" >}}

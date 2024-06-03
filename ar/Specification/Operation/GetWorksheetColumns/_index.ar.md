@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/getworksheetcolumns/
 description: استرداد أوصاف أعمدة ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، GetWorksheetColumns
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetColumns" >}}

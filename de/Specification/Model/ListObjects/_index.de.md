@@ -1,18 +1,20 @@
 ﻿---
-title: ListObject
+title: Listenobjekt
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/model/listobjects/
-description: "Aspose.Cells Cloud-Modellspezifikation: ListObjects. Bearbeiten Sie mühelos Excel und andere Tabellenkalkulationsdokumente mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+description: "Aspose.Cells Cloud-Modellspezifikation: ListObjects. Müheloses Bearbeiten von Excel und anderen Tabellenkalkulationsdokumenten mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, ListObjects
 weight: 50
 ---
-## **listObjects**
+## **Listenobjekte**
 
- 
+ Stellt eine Sammlung von Objekten im Arbeitsblatt dar.
 
-| Name des Anwesens| Art der Immobilie| Nullbar| Schreibgeschützt| Standardwert| Beschreibung|
+| Name des Anwesens| Art der Immobilie| Nullwerte zulassen| Schreibgeschützt| Standardwert| Beschreibung|
 |:- |:- |:- |:- |:- |:- |
-|ListObjectList| Container| WAHR| FALSCH|||
+| ListeObjektListe| Container| WAHR| FALSCH|||
 | Verknüpfung| Klasse:Link| WAHR| FALSCH|||
 
-**Elternname** : (LinkElement)[Linkelement]
+**Elternname** : [LinkElement](/specification/model/linkelement)
+

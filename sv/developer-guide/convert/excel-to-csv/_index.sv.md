@@ -8,6 +8,7 @@ aliases: [/convert-excel-file-to-csv-in-cloud/]
 keywords: Convert excel files to csv files
 description: Aspose.Cells Cloud REST API stöder konvertering av excel-filer till csv-filer. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 90
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Excel till CSV
 ---
 Denna REST API `saveas` excel-fil till CSV.
 
@@ -27,13 +28,13 @@ Denna REST API `export` excel-fil till CSV.
 |:- |:- |:- |:- |
 |/celler/konvertera|SÄTTA|Konverterar arbetsbok från begäran om innehåll till något format|[PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)|
 |/celler/{namn}|SKAFFA SIG|Exporterar arbetsbok till annat format.|[GetWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)|
-|/cells/{name}/saveAs|POSTA|Exportera arbetsbok till format|[PostDocumentSaveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)|
+|/celler/{namn}/saveAs|POSTA|Exportera arbetsbok till format|[PostDocumentSaveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)|
 
 
 
 Dessa API:er definierar ett allmänt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
 
- Du kan använda**cURL** kommandoradsverktyg för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man ringer till Cloud API med cURL.
+ Du kan använda**cURL**kommandoradsverktyg för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man ringer till Cloud API med cURL.
 
 
 {{< tabs tabTotal="3" tabID="11" tabName11="convert" tabName12="saveas" tabName13="export" >}}

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/postupdateworksheetoleobject/
 description: Çalışma sayfasında bir OLE nesnesini güncelleme
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PostUpdateWorksheetOleObject
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostUpdateWorksheetOleObject" >}}

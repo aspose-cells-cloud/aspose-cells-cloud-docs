@@ -4,6 +4,7 @@ type: docs
 url: /es/charts/legend/get/
 aliases: [/get-chart-legend-from-a-worksheet/]
 weight: 80
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Obtener leyenda del gráfico de una hoja de trabajo
 ---
 Este REST API indica obtener leyenda del gráfico
  

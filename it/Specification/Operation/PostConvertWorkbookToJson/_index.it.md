@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/postconvertworkbooktojson/
 description: Converti il file Excel in file Json
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PostConvertWorkbookToJson
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostConvertWorkbookToJson" >}}

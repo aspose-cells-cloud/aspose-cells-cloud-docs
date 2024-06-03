@@ -6,6 +6,7 @@ url: /sv/validations/
 keywords: Working with validations on an Excel file
 description: Aspose.Cells Cloud REST API stöd för att arbeta med valideringar på en Excel-fil. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Valideringar
 ---
 Datavalidering är en funktion i MS Excel som används för att styra vad en användare kan ange i en cell i ett excelark. Begränsa exempelvis poster i ett ark, till exempel ett datumintervall eller enbart heltal. Vi kan även skapa rullgardinsmenyn, vilket sparar onödigt utrymme och visar värdena i en enda cell. Vi kan också skapa ett anpassat meddelande som kommer att visas användaren infoga ett felaktigt värde eller ett felaktigt format.
 

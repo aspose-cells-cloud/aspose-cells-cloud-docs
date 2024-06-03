@@ -8,6 +8,7 @@ aliases: [/combines-a-range-of-cells-into-a-single-cell/]
 keywords: Merge a range of cells into a single cell
 description: Aspose.Cells Cloud REST API поддерживает объединение диапазона ячеек в одну ячейку на листе Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 20
+kwords: Excel, Office Cloud, REST API, электронная таблица, PDF, CSV, Json, Markdwon, объединяет диапазон Cells в одну ячейку.
 ---
  Этот REST API указывает на объединение диапазона ячеек в одну ячейку на листе Excel.
             

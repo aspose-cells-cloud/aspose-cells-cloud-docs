@@ -8,6 +8,7 @@ aliases: [/rename-excel-worksheet/]
 keywords: Rename an Excel worksheet name to new name on an Excel workbook
 description: Aspose.Cells Cloud REST API prend en charge le renommage d'un nom de feuille de calcul Excel en un nouveau nom sur un classeur Excel. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 20
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, Excel renommer la feuille de calcul
 ---
 Ce REST API indique `worksheet rename`
  
@@ -20,7 +21,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/rename
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin||
 | Nom de la feuille| chaîne| chemin||

@@ -8,6 +8,7 @@ aliases: [/add-pictures-to-excel-worksheet/]
 keywords: Add a picture in an Excel file
 description: Aspose.Cells Cloud REST API, Excel dosyasına resim eklemeyi destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 20
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel dosyasına Resim Ekle
 ---
 Bu REST API, `add`'e Excel çalışma sayfası için yeni bir resim gösterir.
  
@@ -22,7 +23,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
  
 | Parametre adı| Tip| Yol/Sorgu Dizesi/HTTPBody|Tanım|
 |:- |:- |:- |:- |
-| isim| sicim| yol|Çalışma kitabı adı.|
+| isim| sicim| yol| Çalışma kitabı adı.|
 | sayfaAdı| sicim| yol| Kötü sayfa adı.|
 | resim|| vücut| Nesneyi resmet|
 | üstSolSatır| tamsayı| sorgu|0 |

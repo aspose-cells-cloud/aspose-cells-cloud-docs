@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/getmetadata/
 description: Hücre belge özelliklerini alma
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, GetMetadata
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetMetadata" >}}

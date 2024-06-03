@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/gethorizontalpagebreak/
 description: Получить описание горизонтального разрыва страницы на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, GetHorizontalPageBreak
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetHorizontalPageBreak" >}}

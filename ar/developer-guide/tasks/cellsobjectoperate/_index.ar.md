@@ -6,6 +6,7 @@ url: /ar/tasks/cells-object-operate/
 aliases: [/working-with-cellsobjectoperate-task/]
 description: "Cells.Cloud API لـ Excel تشغيل: مهمة تشغيل كائن الخلايا"
 weight: 20
+kwords: Excel، Office Cloud، REST API، جدول البيانات، PDF، CSV، Json، Markdwon، العمل مع مهمة CellsObjectOperate
 ---
 يقوم REST API بتشغيل كائن الخلايا `task`.
 
@@ -33,7 +34,7 @@ weight: 20
 |اسم المعلمة|يكتب|وصف|
 |:- |:- |:- |
 | مؤشر الرسم البياني| عدد صحيح||
-| نوع التخطيط| خيط||
+|نوع التخطيط| خيط||
 | UpperLeftRow| عدد صحيح||
 | UpperLeftColumn| عدد صحيح||
 | الصف السفلي لليمين| عدد صحيح||
@@ -80,7 +81,7 @@ weight: 20
 | PivotTableIndex| عدد صحيح||
 | PivotFieldRows|عدد صحيح[]||
 | PivotFieldColumns|عدد صحيح[]||
-|PivotFieldData|عدد صحيح[]||
+| PivotFieldData|عدد صحيح[]||
 
 
 **ShapeOperateParameter**

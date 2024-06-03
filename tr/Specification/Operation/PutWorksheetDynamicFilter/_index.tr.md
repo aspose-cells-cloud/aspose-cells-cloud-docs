@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/putworksheetdynamicfilter/
 description: Çalışma sayfasına dinamik filtre ekleme
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PutWorksheetDynamicFilter
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetDynamicFilter" >}}

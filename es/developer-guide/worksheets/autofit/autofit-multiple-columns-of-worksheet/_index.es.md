@@ -8,6 +8,7 @@ aliases: [/autofit-multiple-columns-of-worksheet/]
 keywords: Autofit columns on an Excel workboo
 description: Aspose.Cells Cloud REST API admite el ajuste automático de columnas en un libro de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 20
+kwords: Excel, Office Cloud, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Autoajustar varias columnas en una hoja de trabajo Excel
 ---
  Este REST API indica el ajuste automático de `multiple columns` en una hoja de trabajo Excel.
  

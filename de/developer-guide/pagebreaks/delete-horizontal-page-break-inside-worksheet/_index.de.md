@@ -1,15 +1,16 @@
 ﻿---
-title: Horizontalen Seitenbereich löschen
+title: Horizontalen Seitenumbruch löschen
 second_title: Aspose.Cells Cloud Documen
-linktitle: Horizontalen Seitenbereich löschen
+linktitle: Horizontalen Seitenumbruch löschen
 type: docs
 url: /de/page-breaks/delete-horizontal-page-break/
 aliases: [/delete-horizontal-page-break-inside-worksheet/]
 keywords: Delete a page break in an Excel worksheet
 description: Aspose.Cells Cloud REST API unterstützt das Löschen eines Seitenumbruchs in einem Excel Arbeitsblatt. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
 weight: 50
+kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdwon, Horizontalen Seitenumbruch löschen
 ---
-Dieser REST API gibt an, einen Seitenumbruch `horizontal` zu löschen.
+ Dieser REST API gibt an, dass ein `horizontal`-Seitenumbruch gelöscht werden soll.
  
 ## RSET API
  
@@ -22,15 +23,15 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/horizont
  
 | Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
 |:- |:- |:- |:- |
-| Name| Zeichenfolge| Weg||
-| Blattname| Zeichenfolge| Weg||
+| Name| Schnur| Weg||
+| Blattname| Schnur| Weg||
 | Index| ganze Zahl| Weg||
-| Ordner| Zeichenfolge| Abfrage||
-| Speichername| Zeichenfolge| Abfrage| Speichername.|
+| Ordner| Schnur| Abfrage||
+| Speichername| Schnur| Abfrage| Speichername.|
  
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/PageBreaks/DeleteHorizontalPageBreak) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht die Durchführung von REST-Interaktionen direkt über einen Webbrowser.
+ Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/PageBreaks/DeleteHorizontalPageBreak) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen, REST-Interaktionen direkt von einem Webbrowser aus durchzuführen.
  
-Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie man mit cURL Anrufe zur Cloud API tätigt.
+Mit dem Befehlszeilentool cURL können Sie ganz einfach auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie Sie mit cURL Anrufe an Cloud API tätigen.
  
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
  
@@ -64,9 +65,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/horizon
  
 ## Cloud SDK-Familie
  
- Die Verwendung eines SDK ist der beste Weg, die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte schauen Sie sich die an[GitHub-Repository](https://github.com/aspose-cells-cloud) Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie hier.
+ Die Verwendung eines SDK ist der beste Weg, um die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte lesen Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
  
-Die folgenden Codebeispiele veranschaulichen, wie Aspose.Cells-Webdienste mithilfe verschiedener SDKs aufgerufen werden:
+Die folgenden Codebeispiele zeigen, wie Sie mit verschiedenen SDKs Aufrufe an die Webdienste Aspose.Cells tätigen:
 
 
 {{< tabs tabTotal="3" tabID="4" tabName1="C#" tabName2="Go" tabName3="Swift" >}}

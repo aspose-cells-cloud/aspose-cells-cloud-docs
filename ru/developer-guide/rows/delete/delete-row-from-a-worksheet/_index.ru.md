@@ -8,6 +8,7 @@ aliases: [/delete-row-from-a-worksheet/]
 keywords: Delete rows on an Excel workshee
 description: Aspose.Cells Cloud REST API поддерживает удаление строк на листе Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 80
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Удалить строку на листе Excel
 ---
 Этот REST API указывает на удаление строки на листе Excel.
  
@@ -22,7 +23,7 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/ro
  
 | Имя параметра| Тип| Путь/строка запроса/HTTPBody|Описание|
 |:- |:- |:- |:- |
-| имя| нить| путь|Имя рабочей книги.|
+| имя| нить| путь| Имя рабочей книги.|
 | имя листа| нить| путь| Рабочий лист плохой.|
 | индекс строки| целое число| путь| Индекс строки.|
 | папка| нить| запрос| Папка документов.|

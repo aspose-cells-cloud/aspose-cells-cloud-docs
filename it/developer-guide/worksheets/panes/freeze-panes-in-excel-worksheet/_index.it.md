@@ -8,6 +8,7 @@ aliases: [/freeze-panes-in-excel-worksheet/,/worksheets/freeze-panes/]
 keywords: Freeze panes on an Excel Worksheet
 description: Aspose.Cells Cloud REST API supporta il blocco dei riquadri su un foglio di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 190
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Blocca riquadri su un foglio di lavoro Excel
 ---
 Questo REST API indica `set freeze panes` sul foglio di lavoro Excel.
  

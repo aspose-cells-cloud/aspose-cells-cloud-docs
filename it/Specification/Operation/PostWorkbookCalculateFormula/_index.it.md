@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/postworkbookcalculateformula/
 description: Calcola tutte le formule nella cartella di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PostWorkbookCalculateFormula
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookCalculateFormula" >}}

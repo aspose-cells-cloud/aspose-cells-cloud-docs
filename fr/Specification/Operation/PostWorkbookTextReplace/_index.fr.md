@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postworkbooktextreplace/
 description: Remplacer le texte dans le classeur
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostWorkbookTextReplace
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookTextReplace" >}}

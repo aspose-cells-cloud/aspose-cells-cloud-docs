@@ -1,37 +1,38 @@
 ﻿---
-title: PutWorksheetDateFilter
+title: ArbeitsblattDatumsfilter einfügen
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/putworksheetdatefilter/
-description: Wenden Sie einen Datumsfilter im Arbeitsblatt an
+description: Anwenden eines Datumsfilters im Arbeitsblatt
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PutWorksheetDateFilter
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetDateFilter" >}}
 {{< blocks/products/cells/docs-title titlemsg="Apply a date filter in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/autoFilter/dateFilter,PUT,Wenden Sie einen Datumsfilter im Arbeitsblatt an.,<a href=\'https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetDateFilter \'>PutWorksheetDateFilter</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/autoFilter/dateFilter,PUT,Einen Datumsfilter im Arbeitsblatt anwenden.,<a href=\'https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetDateFilter\'>PutWorksheetDateFilter</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="range,string,Stellt den Bereich dar, für den der angegebene AutoFilter gilt." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="fieldIndex,integer,Der ganzzahlige Offset des Feldes, auf dem Sie den Filter basieren möchten (von links in der Liste; das Feld ganz links ist Feld 0)." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="dateTimeGroupingType,string,Gibt an, wie dateTime-Werte (Tag, Stunde, Minute, Monat, Sekunde, Jahr) gruppiert werden." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Bereich, Zeichenfolge, stellt den Bereich dar, auf den der angegebene AutoFilter angewendet wird." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="fieldIndex,integer,Der ganzzahlige Offset des Felds, auf dem der Filter basieren soll (von links in der Liste; das äußerste linke Feld ist Feld 0)." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="dateTimeGroupingType, Zeichenfolge, Gibt an, wie Datums-/Uhrzeitwerte (Tag, Stunde, Minute, Monat, Sekunde, Jahr) gruppiert werden." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Jahr, Ganzzahl, Das Jahr." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Monat, Ganzzahl, Der Monat." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Tag, Ganzzahl, Der Tag." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Stunde, Ganzzahl, Die Stunde." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Minute, Ganzzahl, Die Minute." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="Sekunde,Ganzzahl,Die Sekunde." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="matchBlanks, boolean, Übereinstimmung mit allen leeren Zellen in der Liste." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="Refresh, boolean, Automatische Filter aktualisieren, um die Zeilen auszublenden oder einzublenden." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Sekunde, Ganzzahl, Die Sekunde." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="matchBlanks, boolean, Alle leeren Zellen in der Liste übereinstimmend." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Aktualisieren, Boolesch, Automatische Filter aktualisieren, um die Zeilen auszublenden oder sichtbar zu machen." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/AutoFilterController/PutWorksheetDateFilter\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

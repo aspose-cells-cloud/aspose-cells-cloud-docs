@@ -1,10 +1,11 @@
 ﻿---
-title: 斯托拉格
+title: 储存
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/docker/storage/
-description: Aspose.Cells Cloud for Docker如何设置存储位置
+description: 如何设置 Aspose.Cells Cloud for Docker 的存储位置
 weight: 30
+kwords: Excel, Office 云, REST API, 电子表格, PDF, CSV, Json, Markdwon, 存储
 ---
 ## 默认存储配置 ##
 
@@ -56,7 +57,7 @@ c:\app\storageResource.json
 
 ```
 
-- **操作系统**
+- **Linux的**
 
 ```linux
 
@@ -75,5 +76,5 @@ docker run  -d  -v c:/data:c:/data  -p 47900:5000  -e LicensePublicKey=yourLicen
 
 ```
 
-**参考文件** : 
-  - [码头运行]( https://docs.docker.com/engine/reference/commandline/run/)
+**参考文档** : 
+  - [Docker 运行]( https://docs.docker.com/engine/reference/commandline/run/)

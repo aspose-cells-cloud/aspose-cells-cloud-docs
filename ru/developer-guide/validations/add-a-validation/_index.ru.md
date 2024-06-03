@@ -7,6 +7,7 @@ url: /ru/validations/add/
 keywords: Delete a worksheet validation on an Excel worksheet
 description: Aspose.Cells Cloud REST API поддерживает добавление проверки листа на лист Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 10
+kwords: Excel, Office Cloud, REST API, электронная таблица, PDF, CSV, Json, Markdwon, добавить проверку рабочего листа на лист Excel.
 ---
 Этот REST API указывает на необходимость добавления проверки листа на лист Excel.
  

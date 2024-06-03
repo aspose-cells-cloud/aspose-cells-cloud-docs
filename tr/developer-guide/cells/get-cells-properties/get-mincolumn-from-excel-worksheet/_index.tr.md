@@ -3,6 +3,7 @@ title: Excel Çalışma Sayfasından MinColumn'u edinin
 type: docs
 url: /tr/get-mincolumn-from-excel-worksheet/
 weight: 100
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel Çalışma Sayfasından MinColumn'u Alın
 ---
 Bu REST API, `cellOrMethodName` parametresi `mincolumn` olduğunda Excel dosyasında gösterilerin `mincolumn` aldığını gösterir.
 

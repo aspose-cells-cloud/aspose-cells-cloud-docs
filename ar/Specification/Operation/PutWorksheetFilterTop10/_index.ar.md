@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/putworksheetfiltertop10/
 description: قم بتصفية أعلى 10 عناصر في القائمة في ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PutWorksheetFilterTop10
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetFilterTop10" >}}

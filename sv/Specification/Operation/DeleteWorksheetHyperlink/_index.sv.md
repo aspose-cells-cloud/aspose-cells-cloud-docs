@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/deleteworksheethyperlink/
 description: Ta bort hyperlänk efter index i kalkylbladet
+kwords: Excel, Office, Kalkylblad, Cloud REST API, Ta bort ArbetsbladHyperlänk
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetHyperlink" >}}

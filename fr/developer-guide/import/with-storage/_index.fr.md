@@ -7,6 +7,7 @@ url: /fr/import/with-using-storage/
 aliases: [/import-data-into-excel-worksheet/, /import-data-into-worksheet/ , /import-data-in-excel-worksheet/, /import-data/]
 description: "Cells.Cloud API pour Excel fonctionner : importer des données dans la feuille de calcul Excel"
 weight: 10
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, importer des données avec utilisation du stockage
 ---
 Ce REST API indique `import data` dans le fichier Excel.
  
@@ -19,7 +20,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/importdata
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin||
 | dossier| chaîne| requête||

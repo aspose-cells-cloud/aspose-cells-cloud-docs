@@ -1,23 +1,24 @@
 ﻿---
-title: 压缩后
+title: 后压缩
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/postcompress/
-description: 压缩文件并生成各种格式的目标文件，支持的文件格式包括Xls、Xlsx、Xlsm、Xlsb、Ods等
+description: 压缩文件并生成各种格式的目标文件，支持的文件格式包括Xls，Xlsx，Xlsm，Xlsb，Ods等
+kwords: Excel, Office, 电子表格, Cloud REST API, PostCompress
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostCompress" >}}
 {{< blocks/products/cells/docs-title titlemsg="Compress files and generate target files in various formats, supported file formats are include Xls, Xlsx, Xlsm, Xlsb, Ods and more." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/compress,POST,压缩文件并生成各种格式的目标文件，支持的文件格式包括Xls、Xlsx、Xlsm、Xlsb、Ods等。,<a href=\'https://apireference.aspose.cloud/ cells/#/LightCells/PostCompress\'>PostCompress</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/compress,POST,压缩文件并生成各种格式的目标文件，支持的文件格式包括Xls，Xlsx，Xlsm，Xlsb，Ods等。,<a href=\'https://apireference.aspose.cloud/cells/#/LightCells/PostCompress\'>PostCompress</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="压缩级别，整数，压缩级别。压缩比1-100。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="密码,字符串,打开Excel文件所需的密码。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction,boolean,用户修改单元格相关对象时是否检查excel文件的限制。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="CompressLevel,integer,压缩级别，压缩率1-100。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="password，string，打开Excel文件所需的密码。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction,boolean,当用户修改单元格相关对象时是否检查excel文件的限制。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/LightCellsController/PostCompress\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

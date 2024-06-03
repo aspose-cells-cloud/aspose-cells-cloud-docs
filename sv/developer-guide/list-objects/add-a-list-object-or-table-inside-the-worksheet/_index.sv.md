@@ -8,6 +8,7 @@ aliases: [/add-a-list-object-or-table-inside-the-worksheet/,/tables/add/]
 keywords: Add a list object(table) into an Excel worksheet
 description: Aspose.Cells Cloud REST API stöder att lägga till ett listobjekt(tabell) i ett Excel kalkylblad. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 10
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Lägg till ett listobjekt i ett Excel kalkylblad
 ---
 Denna REST API indikerar till `add a list object(table)` i ett Excel kalkylblad.
  
@@ -28,7 +29,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects
 | startkolumn| heltal| fråga| Startraden i listintervallet.|
 | endRow| heltal| fråga| Startraden i listintervallet.|
 | slutkolumn| heltal| fråga| Startraden i listintervallet.|
-| har Headers| booleskt| fråga| Sann|
+| har Headers|booleskt| fråga| Sann|
 | listObjekt|| kropp| Listobjekt|
 | mapp| sträng| fråga| Dokumentets mapp.|
 | lagringsnamn| sträng| fråga| lagringsnamn.|

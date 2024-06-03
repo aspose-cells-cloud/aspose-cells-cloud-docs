@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/model/textformatcondition/
 description: "Aspose.Cells Molnmodellspecifikation: TextFormatCondition. Hantera enkelt Excel och andra kalkylarksdokument med funktioner som att öppna, generera, redigera, dela, slå samman, jämföra och konvertera"
+kwords: Excel, Office, Kalkylblad, Cloud REST API, TextFormatCondition
 weight: 50
 ---
 ## **textFormatCondition**
 
- 
+ Representerar textformatsvillkor.
 
 | Egendomsnamn| Egenskapstyp| Nullbar| Endast läs| Standardvärde| Beskrivning|
 |:- |:- |:- |:- |:- |:- |
@@ -17,4 +18,5 @@ weight: 50
 | Formel 2| Sträng| Sann| Falsk|||
 | Operatör| Sträng| Sann| Falsk|||
 
-**Förälders namn** (FormulaFormatCondition)[formulaformatcondition]
+**Förälders namn** : [FormelFormatCondition](/specification/model/formulaformatcondition)
+

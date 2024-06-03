@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postmerge/
 description: Fusionner les cellules dans la feuille de calcul
+kwords: Excel, Office, Feuille de calcul, Cloud REST API, PostMerge
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostMerge" >}}

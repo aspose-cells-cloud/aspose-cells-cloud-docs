@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/deleteworksheetsparklinegroups/
 description: Ta bort sparkline-grupper i kalkylbladet
+kwords: Excel, Office, Kalkylblad, Cloud REST API, DeleteWorksheetSparklineGroups
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetSparklineGroups" >}}

@@ -8,6 +8,7 @@ aliases: [/update-style-for-pivot-table/]
 keywords: Update all cell style for a pivot table
 description: Aspose.Cells Cloud REST API admite la actualización de todos los estilos de celda para una tabla dinámica. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 100
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Estilo de actualización para tabla dinámica
 ---
 Este REST API indica el estilo `update` para la tabla dinámica
  
@@ -26,7 +27,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottable
 | nombre de la hoja| cadena| camino| El nombre de la hoja de trabajo.|
 | índice de tabla dinámica| entero| camino| Índice de tabla dinámica|
 | estilo|| cuerpo| Estilo dto en el cuerpo de la solicitud.|
-| necesitaReCalcular| booleano| consulta| FALSO|
+| necesitaReCalcular|booleano| consulta| FALSO|
 | carpeta| cadena| consulta| Carpeta del documento.|
 | nombredealmacenamiento| cadena| consulta| nombre del almacenamiento.|
  

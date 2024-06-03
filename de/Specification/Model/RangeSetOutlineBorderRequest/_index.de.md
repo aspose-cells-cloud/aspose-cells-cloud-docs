@@ -1,19 +1,20 @@
 ﻿---
-title: RangeSetOutlineBorderReques
+title: RangeSetOutlineBorderRequests
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/model/rangesetoutlineborderrequest/
-description: "Aspose.Cells Cloud-Modellspezifikation: RangeSetOutlineBorderRequest. Bearbeiten Sie mühelos Excel und andere Tabellenkalkulationsdokumente mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+description: "Aspose.Cells Cloud-Modellspezifikation: RangeSetOutlineBorderRequest. Müheloses Bearbeiten von Excel und anderen Tabellenkalkulationsdokumenten mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, RangeSetOutlineBorderRequest
 weight: 50
 ---
 ## **rangeSetOutlineBorderRequest**
 
- Gibt die Anforderung für die Umrissgrenze des Bereichssatzes an.
+ Gibt eine Anforderung für die Umrissgrenze eines Bereichssatzes an.
 
-| Name des Anwesens| Art der Immobilie| Nullbar| Schreibgeschützt| Standardwert| Beschreibung|
+| Name des Anwesens| Art der Immobilie| Nullwerte zulassen| Schreibgeschützt| Standardwert| Beschreibung|
 |:- |:- |:- |:- |:- |:- |
-| Reichweite| Klasse:Bereich| WAHR| FALSCH|| Kapselt das Objekt, das einen Zellbereich in einer Tabelle darstellt.|
-| borderEdge| Zeichenfolge| WAHR| FALSCH||LeftBorder, RightBorder, TopBorder, BottomBorder, DiagonalDown, DiagonalUp, Vertical und Horizontal.|
-| borderStyle| Zeichenfolge| WAHR| FALSCH|| None, Thin, Medium, Dashed, Dotted, Thick, Double, Hair, MediumDashed, DashDot, MediumDashDot, DashDotDot, MediumDashDotDot und SlantedDashDot.|
+| Reichweite| Klasse:Reichweite| WAHR| FALSCH|| Kapselt das Objekt ein, das einen Zellbereich in einer Kalkulationstabelle darstellt.|
+| RandKante| Zeichenfolge| WAHR| FALSCH|| Linker Rand, Rechter Rand, Oberer Rand, Unterer Rand, Diagonal nach unten, Diagonal nach oben, Vertikal und Horizontal.|
+| Rahmenstil| Zeichenfolge| WAHR| FALSCH|| Keine, Dünn, Mittel, Gestrichelt, Gepunktet, Dick, Doppelt, Haar, Mittelgestrichelt, Strichpunkt, MittelStrichpunkt, StrichpunktPunkt, MittelStrichpunktPunkt und SchrägStrichpunkt.|
 | Randfarbe| Klasse:Farbe| WAHR| FALSCH|| Randfarbe.|
 

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/postworksheettextsearch/
 description: Çalışma sayfasında metin arayın
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PostWorksheetTextSearch
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetTextSearch" >}}

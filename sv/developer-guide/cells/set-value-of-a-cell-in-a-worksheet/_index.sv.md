@@ -3,6 +3,7 @@ title: Ange värde för en cell i ett arbetsblad
 type: docs
 url: /sv/set-value-of-a-cell-in-a-worksheet/
 weight: 70
+kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdwon, Ange värde för en cell i ett kalkylblad
 ---
 Denna REST API indikerar set `cell value` i en Excel fil.
  

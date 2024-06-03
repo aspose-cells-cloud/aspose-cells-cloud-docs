@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/postconvertworkbooktodocx/
 description: Excel dosyasını Docx dosyalarına dönüştürün
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PostConvertWorkbookToDocx
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostConvertWorkbookToDocx" >}}

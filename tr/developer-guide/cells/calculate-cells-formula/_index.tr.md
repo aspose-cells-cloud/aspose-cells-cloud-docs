@@ -3,6 +3,7 @@ title: Cells formülünü hesapla
 type: docs
 url: /tr/calculate-cells-formula/
 weight: 90
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Hesapla Cells formülü
 ---
 Bu REST API, bir Excel dosyasında `cells formula`'in hesaplanmasını gösterir.
 

@@ -1,28 +1,29 @@
 ﻿---
-title: 删除工作表数据透视表过滤器
+title: 删除工作表数据透视表筛选器
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/deleteworksheetpivottablefilters/
-description: 删除数据透视表中的所有数据透视过滤器
+description: 删除数据透视表中的所有数据透视筛选器
+kwords: Excel，Office，电子表格，云 REST API，DeleteWorksheetPivotTableFilters
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetPivotTableFilters" >}}
 {{< blocks/products/cells/docs-title titlemsg="Delete all pivot filters in the PivotTable." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotFilters,DELETE,删除数据透视表中的所有数据透视过滤器。,<a href=\'https://apireference.aspose.cloud/cells/# /数据透视表/DeleteWorksheetPivotTableFilters\'>删除工作表数据透视表过滤器</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotFilters,DELETE,删除数据透视表中的所有数据透视表过滤器。,<a href=\'https://apireference.aspose.cloud/cells/#/PivotTables/DeleteWorksheetPivotTableFilters\'>DeleteWorksheetPivotTableFilters</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="参数名称、类型、描述" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="名称，字符串，文件名。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,字符串,工作表名称。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="hubTableIndex,整数,数据透视表索引。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="name，string，文件名。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName，string，工作表名称。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="pivotTableIndex，整数，数据透视表索引。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="needReCalculate,boolean,是否对特定数据透视表进行计算(true/false)。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="needReCalculate,boolean,特定数据透视表是否计算（true/false）。" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="文件夹，字符串，文件所在的文件夹。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,文件所在的存储名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName，string，文件所在的存储名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/PivotTablesController/DeleteWorksheetPivotTableFilters\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

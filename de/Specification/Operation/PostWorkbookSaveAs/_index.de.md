@@ -4,33 +4,34 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postworkbooksaveas/
 description: Speichern Sie eine Excel-Datei in verschiedenen Formaten
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostWorkbookSaveAs
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookSaveAs" >}}
 {{< blocks/products/cells/docs-title titlemsg="Save an Excel file in various formats." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/SaveAs,POST,Speichern Sie eine Excel-Datei in verschiedenen Formaten.,<a href=\'https://apireference.aspose.cloud/cells/#/Conversion/PostWorkbookSaveAs\'>PostWorkbookSaveAs</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Name der Arbeitsmappe." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Name der Arbeitsmappe." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="newfilename,string,newfilename, um das Ergebnis zu speichern. Der `newfilename` sollte sowohl den Dateinamen als auch die Erweiterung umfassen." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="isAutoFitRows,boolean,Gibt an, ob Zeilen in der Arbeitsmappe automatisch angepasst werden." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="isAutoFitColumns,boolean,Gibt an, ob Spalten in der Arbeitsmappe automatisch angepasst werden." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="newfilename, string, newfilename, um das Ergebnis zu speichern. „newfilename“ sollte sowohl den Dateinamen als auch die Erweiterung umfassen." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="isAutoFitRows, boolean, gibt an, ob Zeilen in der Arbeitsmappe automatisch angepasst werden." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="isAutoFitColumns, boolean, Gibt an, ob Spalten in der Arbeitsmappe automatisch angepasst werden." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="outStorageName,string,Der Speichername, in dem sich die Ausgabedatei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction,boolean,Gibt an, ob die Einschränkung der Excel-Datei überprüft wird, wenn der Benutzer zellenbezogene Objekte ändert." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="region,string,Die regionalen Einstellungen für die Arbeitsmappe." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="pageWideFitOnPerSheet, boolean, Die Seitenbreite, die in das Arbeitsblatt passt." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="pageTallFitOnPerSheet, boolean, Die Seitengröße, die in das Arbeitsblatt passt." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="outStorageName, string, Der Name des Speichers, in dem sich die Ausgabedatei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction, boolean, ob die Einschränkung der Excel-Datei überprüft wird, wenn der Benutzer zellenbezogene Objekte ändert." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Region, Zeichenfolge, Die regionalen Einstellungen für die Arbeitsmappe." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="pageWideFitOnPerSheet, Boolean, Die seitenbreite Anpassung an das Arbeitsblatt." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="pageTallFitOnPerSheet, Boolesch, Die Seitenhöhe wird auf das Arbeitsblatt angepasst." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="saveOptions,class:saveoptions," >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Speicheroptionen,Klasse:Speicheroptionen," >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

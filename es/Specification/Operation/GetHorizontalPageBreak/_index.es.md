@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/gethorizontalpagebreak/
 description: Recuperar una descripción de salto de página horizontal en la hoja de trabajo
+kwords: Excel, Office, Hoja de cálculo, Nube REST API, GetHorizontalPageBreak
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetHorizontalPageBreak" >}}

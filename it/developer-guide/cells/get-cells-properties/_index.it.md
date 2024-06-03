@@ -3,6 +3,7 @@ title: Ottieni Cells Proprietà
 type: docs
 url: /it/get-cells-properties/
 weight: 130
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Ottieni Cells Proprietà
 ---
 Questo REST API indica come eseguire `get a specific cell` in un file Excel.
 

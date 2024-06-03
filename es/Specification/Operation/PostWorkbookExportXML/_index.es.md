@@ -4,13 +4,14 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/postworkbookexportxml/
 description: Exporte datos XML desde un archivo Excel. Cuando haya mapas XML en un archivo Excel, exporte datos XML. Cuando no hay un mapa XML en el archivo Excel, convierta el archivo Excel en un archivo XML
+kwords: Excel, Office, Hoja de cálculo, Nube REST API, PostWorkbookExportXML
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookExportXML" >}}
 {{< blocks/products/cells/docs-title titlemsg="Export XML data from an Excel file.When there are XML Maps in an Excel file, export XML data. When there is no XML map in the Excel file, convert the Excel file to an XML file." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API, método Http, descripción, referencia API" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/exportxml,POST,Exportar datos XML desde un archivo Excel. Cuando hay mapas XML en un archivo Excel, exportar datos XML. Cuando no haya un mapa XML en el archivo Excel, convierta el archivo Excel en un archivo XML.,<a href=\'https://apireference.aspose.cloud/cells/#/DataProcessing/PostWorkbookExportXML\'>PostWorkbookExportXML</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/exportxml,POST,Exportar datos XML desde un archivo Excel. Cuando hay mapas XML en un archivo Excel, exportar datos XML. Cuando no haya ningún mapa XML en el archivo Excel, convierta el archivo Excel en un archivo XML.,<a href=\'https://apireference.aspose.cloud/cells/#/DataProcessing/PostWorkbookExportXML\'>PostWorkbookExportXML</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
@@ -22,7 +23,7 @@ weight: 50
     {{< blocks/products/cells/docs-Parameter-content columns="carpeta, cadena, la carpeta donde se encuentra el archivo." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="nombre de almacenamiento, cadena, el nombre del almacenamiento donde se encuentra el archivo." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="outPath,string,Ruta para guardar el resultado. Si es un solo archivo, `outPath` debe abarcar tanto el nombre del archivo como la extensión. En el caso de varios archivos, `outPath` solo debe incluir la carpeta." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="outStorageName, cadena, el nombre del almacenamiento donde se encuentra el archivo de salida." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="outStorageName,cadena,El nombre del almacenamiento donde se encuentra el archivo de salida." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction,boolean,Si verifica la restricción del archivo Excel cuando el usuario modifica los objetos relacionados con las celdas." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="región, cadena, la configuración regional del libro de trabajo." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}

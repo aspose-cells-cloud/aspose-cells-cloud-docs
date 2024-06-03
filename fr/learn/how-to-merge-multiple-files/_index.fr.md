@@ -4,13 +4,14 @@ type: docs
 url: /fr/how-to-merge-multiple-files
 description: Comment fusionner plusieurs fichiers via Aspose.Cells Cloud
 weight: 10
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdwon, Comment fusionner plusieurs fichiers via Aspose.Cells Cloud
 ---
 ## Introduction
 Le Aspose.Cells Cloud API est une puissante solution basée sur le cloud conçue pour la création, l'édition et la conversion de fichiers de feuilles de calcul. Dans cet article, nous vous guiderons tout au long du processus d'utilisation du Aspose.Cells Cloud API pour le format de fichier fusionné, y compris des cas d'utilisation typiques et des exemples de code.
 
 ## Aperçu
 
- Le Aspose.Cells Cloud API fournit deux API robustes pour fusionner plusieurs feuilles de calcul en un fichier avec des types de formats. Les formats pris en charge incluent**Excel** (XLS, XLSX),**CSV**, **HTML**, **PDF**, et plus. En tirant parti du Aspose.Cells Cloud API, vous pouvez facilement fusionner plusieurs feuilles de calcul en un fichier aux formats largement utilisés, répondant à un large éventail d'exigences.
+ Le Aspose.Cells Cloud API fournit deux API robustes pour fusionner plusieurs feuilles de calcul en un fichier avec des types de formats. Les formats pris en charge incluent**Excel** (XLS, XLSX),**CSV**, **HTML**, **PDF**et plus. En tirant parti du Aspose.Cells Cloud API, vous pouvez facilement fusionner plusieurs feuilles de calcul en un fichier aux formats largement utilisés, répondant à un large éventail d'exigences.
 
 De nombreuses API sont disponibles pour la fusion de fichiers, généralement compatibles avec divers environnements en ligne. Vous trouverez ci-dessous une description détaillée de ces API :
 
@@ -20,7 +21,7 @@ De nombreuses API sont disponibles pour la fusion de fichiers, généralement co
 
 # Comment fusionner plusieurs fichiers dans un fichier via Aspose.Cells Cloud
 
- Le Aspose.Cells Cloud API fournit[plusieurs SDK](https://github.com/aspose-cells-cloud)pour différents langages de programmation. Choisissez le SDK qui correspond à votre langage de programmation préféré et suivez la documentation qui l'accompagne pour l'installation et l'initialisation. Alternativement, vous pouvez créer votre propre SDK selon les[Référence API](https://reference.aspose.cloud/cells/). Dans cette section, nous utiliserons C# comme exemple pour détailler le processus de fusion de fichiers.
+ Le Aspose.Cells Cloud API fournit[plusieurs SDK](https://github.com/aspose-cells-cloud) pour différents langages de programmation. Choisissez le SDK qui correspond à votre langage de programmation préféré et suivez la documentation qui l'accompagne pour l'installation et l'initialisation. Alternativement, vous pouvez créer votre propre SDK selon les[Référence API](https://reference.aspose.cloud/cells/). Dans cette section, nous utiliserons C# comme exemple pour détailler le processus de fusion de fichiers.
 
 
 ## Inscription et obtention de la clé API

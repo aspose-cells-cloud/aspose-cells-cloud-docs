@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/getworksheetrows/
 description: Hämta beskrivningar av rader i arbetsbladet
+kwords: Excel, Office, Spreadsheet, Cloud REST API, GetWorksheetRows
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetRows" >}}

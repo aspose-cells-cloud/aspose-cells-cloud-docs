@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/postrotate/
 description: Rotera rader, kolumner eller andra objekt i Excel-filer och spara dem i olika format
+kwords: Excel, Office, Kalkylblad, Cloud REST API, PostRotate
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostRotate" >}}

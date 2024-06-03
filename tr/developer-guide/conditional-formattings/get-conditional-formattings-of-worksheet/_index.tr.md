@@ -6,6 +6,7 @@ aliases: [/get-conditional-formattings-of-worksheet/]
 keywords: REST API, spreadsheets, excel, get condition formattin
 description: "Cells.Cloud API, Excel için çalışır: koşul biçimlendirmesini alır"
 weight: 20
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Koşullu Biçimlendirmeleri Al
 ---
  Bu REST API, Koşullu biçimlendirmeleri al anlamına gelir
  

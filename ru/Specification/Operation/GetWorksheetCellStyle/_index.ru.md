@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/getworksheetcellstyle/
 description: Получение описаний стилей ячеек на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, GetWorksheetCellStyle
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetCellStyle" >}}

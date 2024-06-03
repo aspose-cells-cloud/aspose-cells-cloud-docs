@@ -6,6 +6,7 @@ aliases: [/remove-cell-area-from-conditional-formatting/]
 keywords: REST API, spreadsheets, excel, delete cell area from condition formattin
 description: "Cells.Облако API для Excel работает: удалить область ячеек из условия форматирования"
 weight: 70
+kwords:  Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, удалить область ячейки
 ---
 Этот REST API указывает на удаление области ячеек из условного форматирования.
  
@@ -25,7 +26,7 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditio
 | startRow| целое число| запрос||
 | startColumn| целое число| запрос||
 | всего строк| целое число| запрос||
-|итогостолбцы| целое число| запрос||
+| итогостолбцы| целое число| запрос||
 | папка| нить| запрос||
 | имя_хранилища| нить| запрос| имя хранилища.|
  

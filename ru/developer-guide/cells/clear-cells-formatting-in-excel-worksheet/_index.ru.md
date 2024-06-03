@@ -3,6 +3,7 @@ title: Очистить Cells Форматирование в рабочем л�
 type: docs
 url: /ru/clear-cells-formatting-in-excel-worksheet/
 weight: 100
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, Clear Cells Форматирование в рабочем листе Excel
 ---
 Этот REST API указывает на `clear` ячеек `style` в файле Excel.
 

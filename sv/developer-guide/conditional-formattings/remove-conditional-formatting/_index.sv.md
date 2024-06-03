@@ -6,6 +6,7 @@ aliases: [/remove-conditional-formatting/]
 keywords: REST API, spreadsheets, excel, delete cell area from condition formattin
 description: "Cells.Cloud API för Excel fungera: ta bort cellområde från villkorsformatering"
 weight: 60
+kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdwon, Ta bort villkorlig formatering
 ---
 Denna REST API indikerar Ta bort villkorlig formatering
  

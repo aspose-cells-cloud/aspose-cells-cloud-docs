@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/putworksheetbackground/
 description: Установить фоновое изображение на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, PutWorksheetBackground
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetBackground" >}}

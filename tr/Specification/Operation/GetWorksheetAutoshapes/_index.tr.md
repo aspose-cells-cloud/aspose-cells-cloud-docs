@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/getworksheetautoshapes/
 description: Çalışma sayfasında otomatik şekiller açıklamasını alın
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, GetWorksheetAutoshapes
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetAutoshapes" >}}

@@ -3,7 +3,8 @@ title: GetWorksheetSparklineGroup
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/getworksheetsparklinegroups/
-description: Получение описаний групп спарклайнов на листе
+description: Получение описаний групп спарклайнов на листе.
+kwords: Excel, Office, электронная таблица, Cloud REST API, GetWorksheetSparklineGroups
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetSparklineGroups" >}}

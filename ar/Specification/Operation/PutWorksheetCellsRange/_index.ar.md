@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/putworksheetcellsrange/
 description: قم بإدراج نطاق من الخلايا وقم بإزاحة الخلايا الموجودة بناءً على خيار النقل المحدد
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PutWorksheetCellsRange
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetCellsRange" >}}

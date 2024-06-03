@@ -2,412 +2,422 @@
 title: 模型
 second_title: Aspose.Cells Cloud Documen
 type: docs
+kwords: Excel，Office，电子表格，云 REST API，数据模型
 weight: 50
 ---
 - [对象存在扩展](objectexistsextensions)  :   
 - [文件版本](fileversion)  :   
 - [存储文件](storagefile)：文件或文件夹信息
 - [GoogleDrive存储文件](googledrivestoragefile)  :   
-- [高于平均水平](aboveaverage)：描述AboveAverage条件格式规则。此条件格式规则突出显示高于或低于范围内所有值平均值的单元格。
-- [抽象计算引擎](abstractcalculationengine)：代表用户自定义计算引擎，扩展默认计算引擎Aspose.Cells。
-- [抽象计算监视器](abstractcalculationmonitor)：监控，供用户跟踪公式计算的进度。
-- [自动筛选](autofilter)  :   
-- [自动调整选项](autofitteroptions)  :   
-- [边界](border)  :   
-- [计算选项](calculationoptions)  :   
-- [细胞](cell)  :   
-- [细胞区域](cellarea)  :   
-- [Cells](cells)  :   
-- [Cells云文件信息](cellscloudfileinfo)：Cells 云文件信息说明。
-- [细胞颜色](cellscolor)  :   
+- [高于平均水平](aboveaverage)：描述 AboveAverage 条件格式规则。此条件格式规则突出显示范围内所有值高于或低于平均值的单元格。
+- [抽象计算引擎](abstractcalculationengine)：代表用户自定义的计算引擎，以扩展默认的计算引擎Aspose.Cells。
+- [摘要计算监控器](abstractcalculationmonitor)：监控用户追踪公式计算的进度。
+- [自动筛选](autofilter) ：代表对指定工作表进行自动过滤。
+- [自动装配选项](autofitteroptions)：代表所有自动装配器选项。
+- [边界](border)：封装代表单元格边框的对象。
+- [计算选项](calculationoptions)：代表计算的选项。
+- [细胞](cell) ：封装代表单个工作簿单元格的对象。
+- [单元格区域](cellarea)：代表细胞区域。
+- [Cells](cells) ：封装单元格相关对象的集合，如Aspose.Cells.Cell，Aspose.Cells.Row，...等。
+- [CellsCloud文件信息](cellscloudfileinfo)：Cells 云文件信息说明。
+- [单元格颜色](cellscolor)：代表所有类型的颜色。
 - [单元格文档属性](cellsdocumentproperties) Excel 属性
-- [单元格文档属性](cellsdocumentproperty)：Cells文档属性。
+- [单元格文档属性](cellsdocumentproperty)：Cells 文件属性。
 - [颜色](color)： 颜色。
-- [彩色滤光片](colorfilter)：彩色滤光片。
-- [色阶](colorscale)：描述ColorScale条件格式规则。此条件格式规则在单元格上创建渐变色标。
-- [柱子](column)  :   
-- [列](columns)  :   
-- [评论](comment)  :   
-- [评论](comments)  :   
+- [色彩滤镜](colorfilter)：彩色滤光片。
+- [色阶](colorscale)：描述 ColorScale 条件格式规则。此条件格式规则在单元格上创建渐变色阶。
+- [柱子](column) ：代表工作表中的单个列。
+- [列](columns) ： 列
+- [评论](comment)：封装代表单元格注释的对象。
+- [评论](comments) ：封装对象的集合。
 - [条件格式](conditionalformatting)  :   
-- [条件格式图标](conditionalformattingicon)  :   
-- [条件格式](conditionalformattings)  :   
-- [条件格式值](conditionalformattingvalue)  :   
+- [条件格式图标](conditionalformattingicon)：代表条件格式规则的自定义图标。
+- [条件格式](conditionalformattings) ：封装对象的集合。
+- [条件格式值](conditionalformattingvalue)：描述渐变刻度、dataBar或iconSet中插值点的值。
 - [复制选项](copyoptions)：代表复制选项。
-- [标准多重过滤器](criteriamultiplefilter)  :   
-- [自定义过滤器](customfilter)  :   
-- [数据栏](databar)：描述DataBar条件格式规则。此条件格式规则在单元格区域中显示分级数据栏。
-- [数据栏边框](databarborder)  :   
-- [数据清理](datacleansing)： 数据清理
-- [数据列填充值](datacolumnfillvalue)  :   
-- [数据填充](datafill)  :   
-- [数据填充值](datafillvalue)  :   
-- [数据分类器](datasorter)：DataSorter 的摘要描述。
-- [数据分类器键](datasorterkey)：代表数据排序器的键。
-- [日期时间组项目](datetimegroupitem)  :   
-- [重复数据删除区域](deduplicationregion)  :   
-- [动态过滤器](dynamicfilter)  :   
-- [文件信息](fileinfo)：文件信息
+- [标准多重筛选](criteriamultiplefilter)  :   
+- [自定义过滤器](customfilter)：代表自定义过滤器。
+- [数据条](databar)：描述 DataBar 条件格式规则。此条件格式规则在单元格范围内显示分级数据条。
+- [数据条边框](databarborder)：表示条件格式规则指定的数据条的边框。
+- [数据清理](datacleansing)：代表数据清洗。
+- [数据列填充值](datacolumnfillvalue)：表示用指定的值填充数据列。
+- [数据填充](datafill)：代表数据填充。
+- [数据填充值](datafillvalue)：表示数据用指定的值填充。
+- [数据项](dataitem)：代表数据项。
+- [数据项类型](dataitemtype)：代表数据项类型。
+- [数据分类器](datasorter)：DataSorter 的摘要说明。
+- [数据排序键](datasorterkey)：代表数据排序器的键。
+- [数据源](datasource)：代表数据源。
+- [数据源类型](datasourcetype)：代表数据源类型。
+- [日期时间组项](datetimegroupitem) ：代表日期时间的分组设置。
+- [重复数据删除区域](deduplicationregion)：代表数据重复数据删除区域。
+- [动态过滤器](dynamicfilter)：代表动态过滤器。
+- [文件信息](fileinfo)：代表文件信息。
+- [文件源](filesource)  :   
+- [文件源类型](filesourcetype)  :   
 - [文件结果](filesresult)  :   
-- [过滤列](filtercolumn)  :   
-- [字体](font)  :   
-- [字体设置](fontsetting)  :   
-- [格式条件](formatcondition)  :   
+- [筛选列](filtercolumn)：表示单个列的过滤器。Filter 对象是 Filters 集合的成员
+- [字体](font)：封装电子表格中使用的字体对象。
+- [字型設定](fontsetting)：代表单元格文本内的字符范围。
+- [格式条件](formatcondition) ：代表条件格式条件。
 - [公式格式条件](formulaformatcondition)  :   
 - [公式设置](formulasettings)：公式和计算的设置。
 - [全球化设置](globalizationsettings)：代表全球化设置。
-- [水平分页符](horizontalpagebreak)  :   
-- [水平分页符](horizontalpagebreaks)  :   
-- [超级链接](hyperlink)  :   
-- [超链接](hyperlinks)  :   
-- [图标过滤器](iconfilter)  :   
-- [图标集](iconset)：描述IconSet条件格式规则。此条件格式规则根据单元格的值将图标应用于单元格。
+- [水平分页符](horizontalpagebreak) ：封装代表水平分页符的对象。
+- [水平分页符](horizontalpagebreaks) ：封装对象的集合。
+- [超级链接](hyperlink) ：封装代表超链接的对象。
+- [超链接](hyperlinks) ：封装对象的集合。
+- [图标过滤器](iconfilter)：代表图标过滤器。
+- [图标集](iconset)：描述 IconSet 条件格式规则。此条件格式规则根据图标的值将图标应用于单元格。
 - [关联](link)  :   
 - [链接元素](linkelement)  :   
-- [加载选项](loadoptions)  :   
+- [加载选项](loadoptions)：代表加载文件的选项。
 - [合并单元格](mergedcell)  :   
 - [合并单元格](mergedcells)  :   
-- [多重过滤器](multiplefilter)  :   
-- [多重过滤器](multiplefilters)  :   
-- [姓名](name)  :   
-- [名称](names)  :   
-- [负条格式](negativebarformat)：表示由数据栏条件格式规则定义的负值数据栏的颜色设置。
+- [多重过滤](multiplefilter)  :   
+- [多重过滤器](multiplefilters)：代表多个过滤器集合。
+- [姓名](name) ：代表单元格区域的定义名称。
+- [名字](names) ：代表电子表格中所有对象的集合。
+- [负条格式](negativebarformat)：表示数据栏条件格式规则定义的负值的数据栏颜色设置。
 - [页面部分](pagesection)  :   
-- [页面设置](pagesetup)  :   
-- [粘贴选项](pasteoptions)：代表粘贴特殊选项。
-- [Pdf安全选项](pdfsecurityoptions)  :   
+- [页面设置](pagesetup)：excel打印页面设置
+- [粘贴选项](pasteoptions)：代表选择性粘贴选项。
+- [Pdf安全选项](pdfsecurityoptions)：PDF 文档的加密和访问权限选项。PDF/A 不允许安全设置。
 - [保护](protection)：代表工作表可用的各种类型的保护选项。
-- [保护表参数](protectsheetparameter)  :   
-- [查询表](querytable)：代表查询表信息。
-- [范围](range)  :   
-- [范围](ranges)  :   
-- [排](row)  :   
-- [行数](rows)  :   
-- [保存结果](saveresult)  :   
-- [分页保存选项](paginatedsaveoptions)：代表分页选项。
-- [单值](singlevalue)  :   
-- [排序键](sortkey)  :   
-- [分割结果](splitresult)  :   
-- [拆分结果文档](splitresultdocument)  :   
-- [风格](style)  :   
-- [样式格式条件](styleformatcondition)  :   
-- [风格](styles)  :   
-- [文本格式条件](textformatcondition)  :   
-- [文本项](textitem)  :   
-- [文本项](textitems)  :   
-- [文本选项](textoptions)  :   
-- [主题颜色](themecolor)  :   
-- [时间周期格式条件](timeperiodformatcondition)  :   
-- [前10名](top10)：描述Top10条件格式规则。此条件格式规则突出显示值位于指定的前 N 或后 N 括号内的单元格。
-- [Top10过滤器](top10filter)  :   
-- [验证](validation)  :   
-- [验证](validations)  :   
-- [垂直分页符](verticalpagebreak)  :   
-- [垂直分页符](verticalpagebreaks)  :   
-- [练习册](workbook)  :   
-- [工作簿设置](workbooksettings)  :   
-- [工作表](worksheet)  :   
-- [工作表](worksheets)  :   
+- [保护工作表参数](protectsheetparameter)  :   
+- [范围](range)：封装代表电子表格内的单元格范围的对象。
+- [范围](ranges)：封装对象的集合。
+- [排](row) ：代表工作表中的一行。
+- [行](rows) ：收集代表工作表中各个行的对象。
+- [保存结果](saveresult)：代表保存结果。
+- [分页保存选项](paginatedsaveoptions) ：代表分页的选项。
+- [单值](singlevalue)：代表单个值。
+- [排序键](sortkey)：代表排序键。
+- [分割结果](splitresult)：代表文件分割的结果。
+- [风格](style) ：表示 excel 文档的显示样式，如字体、颜色、对齐方式、边框等。Style 对象包含所有样式属性（字体、数字格式、对齐方式等）作为属性。
+- [样式格式条件](styleformatcondition) ：代表样式格式条件。
+- [样式](styles) ：表示数据样式集合。
+- [文本格式条件](textformatcondition) ：代表文本格式条件。
+- [文本项](textitem) ：代表文本项。
+- [文本项](textitems)：代表文本项集合。
+- [文本选项](textoptions) ：代表文本选项。
+- [主题颜色](themecolor)：代表主题颜色。
+- [时间段格式条件](timeperiodformatcondition)：代表时间段格式条件。
+- [前10名](top10)：描述 Top10 条件格式规则。此条件格式规则会突出显示值位于指定前 N 个或后 N 个括号内的单元格。
+- [Top10过滤器](top10filter)：代表前 10 个过滤器。
+- [验证](validation) ：代表数据验证.设置。
+- [验证](validations) ：代表数据验证集合。
+- [垂直分页符](verticalpagebreak) ：封装代表垂直分页符的对象。
+- [垂直分页符](verticalpagebreaks) ：封装对象的集合。
+- [工作簿](workbook)：代表创建 Excel 电子表格的根对象。
+- [工作簿设置](workbooksettings)：代表工作簿的所有设置。
+- [工作表](worksheet) ：封装代表单个工作表的对象。
+- [工作表](worksheets) ：封装对象的集合。
 - [写保护](writeprotection)：指定工作簿的写保护设置。
-- [Xml数据绑定](xmldatabinding)：代表Xml数据绑定信息。
-- [XmlMap](xmlmap) ：代表Xml映射信息。
-- [单元格对象操作任务参数](cellsobjectoperatetaskparameter)  :   
-- [转换任务参数](converttaskparameter)  :   
-- [转换工作表任务参数](convertworksheettaskparameter)  :   
-- [文件源](filesource)  :   
-- [文件源类型](filesourcetype)  :   
-- [导入数据任务参数](importdatataskparameter)  :   
-- [结果目的地](resultdestination)  :   
-- [结果目的地类型](resultdestinationtype)  :   
-- [结果来源](resultsource)  :   
-- [保存文件到云结果](savefilestocloudresult)  :   
-- [保存结果任务参数](saveresulttaskparameter)  :   
-- [SmartMarker任务参数](smartmarkertaskparameter)  :   
-- [分割工作簿任务参数](splitworkbooktaskparameter)  :   
-- [任务数据](taskdata)  :   
-- [任务描述](taskdescription)  :   
-- [任务参数](taskparameter)  :   
-- [任务结果参数](taskresultparameter)  :   
-- [任务运行结果](taskrunresult)  :   
-- [任务类型](tasktype)  :   
-- [图表操作参数](chartoperateparameter)  :   
-- [列表对象操作参数](listobjectoperateparameter)  :   
-- [操作对象](operateobject)  :   
-- [操作对象位置](operateobjectposition)  :   
-- [操作对象类型](operateobjecttype)  :   
-- [操作参数](operateparameter)  :   
-- [操作类型](operatetype)  :   
-- [分页操作参数](pagebreakoperateparameter)  :   
-- [页面设置操作参数](pagesetupoperateparameter)  :   
-- [数据透视表操作参数](pivottableoperateparameter)  :   
-- [形状操作参数](shapeoperateparameter)  :   
-- [工作簿操作参数](workbookoperateparameter)  :   
-- [工作簿设置操作参数](workbooksettingsoperateparameter)  :   
-- [工作表操作参数](worksheetoperateparameter)  :   
-- [列表栏](listcolumn)  :   
-- [列表对象](listobject)  :   
-- [列表对象](listobjects)  :   
-- [Pivot全球化设置](pivotglobalizationsettings)：代表数据透视表的全球化设置。
-- [差异保存选项](difsaveoptions) ：代表保存dif文件的选项。
+- [XML数据绑定](xmldatabinding)：代表Xml数据绑定信息。
+- [XML地图](xmlmap)：代表Xml地图信息。
+- [CellsObjectOperateTask参数](cellsobjectoperatetaskparameter) ：代表cells对象操作任务的参数。
+- [转换任务参数](converttaskparameter) ：代表转换任务参数。
+- [转换工作表任务参数](convertworksheettaskparameter) ：代表转换工作表任务参数。
+- [导入数据任务参数](importdatataskparameter) ：代表导入数据任务参数。
+- [结果目的地](resultdestination)：代表结果目的地。
+- [结果目标类型](resultdestinationtype)：代表结果目标类型。
+- [结果源](resultsource)：代表结果来源类型。
+- [SaveFilesToCloud结果](savefilestocloudresult) ：代表将文件保存到云端结果。
+- [保存结果任务参数](saveresulttaskparameter) ：代表保存结果任务参数。
+- [SmartMarker任务参数](smartmarkertaskparameter) ：代表智能标记任务参数。
+- [SplitWorkbookTask参数](splitworkbooktaskparameter) ：表示拆分工作簿任务参数。
+- [任务数据](taskdata)：代表任务数据。
+- [任务描述](taskdescription)：代表任务描述。
+- [任务参数](taskparameter) ：代表任务参数。
+- [任务结果参数](taskresultparameter)：代表任务结果参数。
+- [任务运行结果](taskrunresult) ：代表任务运行结果。
+- [任务类型](tasktype)：代表任务类型。
+- [图表操作参数](chartoperateparameter) ：代表图表操作参数。
+- [列出对象操作参数](listobjectoperateparameter) ：代表列表对象操作参数。
+- [操作对象](operateobject) ：代表操作对象。
+- [操作对象位置](operateobjectposition) ：代表操作对象位置。
+- [操作对象类型](operateobjecttype)：代表操作对象类型。
+- [操作参数](operateparameter) ：代表操作参数。
+- [操作类型](operatetype)：代表操作类型。
+- [分页操作参数](pagebreakoperateparameter) ：代表分页操作参数。
+- [页面设置操作参数](pagesetupoperateparameter) ：代表页面设置操作参数。
+- [数据透视表操作参数](pivottableoperateparameter) ：代表数据透视表操作参数。
+- [形状操作参数](shapeoperateparameter) ：表示形状操作参数。
+- [工作簿操作参数](workbookoperateparameter) ：代表工作簿操作参数。
+- [工作簿设置操作参数](workbooksettingsoperateparameter) ：代表工作簿设置操作参数。
+- [工作表操作参数](worksheetoperateparameter) ：代表工作表操作参数。
+- [列表列](listcolumn)：代表表中的一列。
+- [列表对象](listobject)：表示工作表上的列表对象。ListObject 对象是 ListObjects 集合的成员。ListObjects 集合包含工作表上的所有列表对象。
+- [列表对象](listobjects) ：代表工作表中的对象集合。
+- [枢轴全球化设置](pivotglobalizationsettings)：代表数据透视表的全球化设置。
+- [不同的保存选项](difsaveoptions) ：代表保存dif文件的选项。
 - [Docx保存选项](docxsaveoptions) ：代表保存.docx文件的选项。
-- [Html保存选项](htmlsaveoptions) ：代表保存.html 文件的选项。
-- [图像保存选项](imagesaveoptions) ：表示保存图像文件的选项。
-- [Json保存选项](jsonsaveoptions)：代表保存.json文件的选项。
-- [Markdown保存选项](markdownsaveoptions) ：代表保存.md 文件的选项。
-- [MHtml保存选项](mhtmlsaveoptions) ：代表保存.mhtml 文件的选项。
-- [赔率保存选项](odssaveoptions) ：代表保存.ods 文件的选项。
-- [Ooxml保存选项](ooxmlsaveoptions) ：代表保存ooxml文件的选项。
+- [Html保存选项](htmlsaveoptions) ：代表保存.html文件的选项。
+- [图像保存选项](imagesaveoptions) ：代表保存图像文件的选项。
+- [JsonSaveOptions](jsonsaveoptions) ：代表保存.json文件的选项。
+- [Markdown保存选项](markdownsaveoptions) ：代表保存.md文件的选项。
+- [MHtmlSave选项](mhtmlsaveoptions) ：代表保存.mhtml文件的选项。
+- [OdsSave选项](odssaveoptions) ：代表保存.ods文件的选项。
+- [保存选项](ooxmlsaveoptions) ：代表保存ooxml文件的选项。
 - [Pdf保存选项](pdfsaveoptions) ：代表保存pdf文件的选项。
 - [Pptx保存选项](pptxsaveoptions) ：代表保存pptx文件的选项。
 - [保存选项](saveoptions) ：代表所有保存选项
-- [SpreadsheetML2003保存选项](spreadsheetml2003saveoptions)：代表保存.xml 文件的选项。
+- [电子表格ML2003保存选项](spreadsheetml2003saveoptions)：代表保存.xml文件的选项。
 - [SqlScript保存选项](sqlscriptsaveoptions) ：代表保存.sql文件的选项。
-- [Svg保存选项](svgsaveoptions) ：代表保存.svg 文件的选项。
-- [文本保存选项](txtsaveoptions) ：代表保存.txt 文件的选项。
+- [SvgSaveOptions](svgsaveoptions) ：代表保存.svg文件的选项。
+- [文本保存选项](txtsaveoptions) ：代表保存.txt文件的选项。
 - [Xlsb保存选项](xlsbsaveoptions) ：代表保存.xlsb文件的选项。
-- [Xls保存选项](xlssaveoptions) ：代表保存.xls 文件的选项。
-- [Xps保存选项](xpssaveoptions) ：代表保存.xps 文件的选项。
-- [分析Excel响应](analyzeexcelresponse)  :   
-- [弧形响应](arcshaperesponse)  :   
-- [自动过滤响应](autofilterresponse)  :   
-- [自选图形响应](autoshaperesponse)  :   
-- [自选图形响应](autoshapesresponse)  :   
-- [轴响应](axisresponse)  :   
-- [边境反应局](borderresponse)  :   
-- [按钮响应](buttonresponse)  :   
-- [计算公式响应](calculateformularesponse)  :   
-- [细胞反应](cellresponse)  :   
-- [CellsCloudFileInfoResponse](cellscloudfileinforesponse)  :   
-- [Cells云响应](cellscloudresponse)  :   
-- [细胞文档属性响应](cellsdocumentpropertiesresponse)  :   
-- [细胞文档属性响应](cellsdocumentpropertyresponse)  :   
-- [细胞绘图响应](cellsdrawingresponse)  :   
-- [细胞反应](cellsresponse)  :   
-- [图表区域响应](chartarearesponse)  :   
-- [图表数据表响应](chartdatatableresponse)  :   
-- [图表点响应](chartpointresponse)  :   
-- [图表点响应](chartpointsresponse)  :   
-- [图表响应](chartresponse)  :   
-- [图表响应](chartsresponse)  :   
-- [复选框响应](checkboxresponse)  :   
-- [列响应](columnresponse)  :   
-- [专栏响应](columnsresponse)  :   
-- [组合框响应](comboboxresponse)  :   
-- [评论回复](commentresponse)  :   
-- [评论形状响应](commentshaperesponse)  :   
-- [评论回复](commentsresponse)  :   
-- [条件格式化响应](conditionalformattingresponse)  :   
-- [条件格式响应](conditionalformattingsresponse)  :   
-- [数据标签响应](datalabelsresponse)  :   
-- [显示单元标签响应](displayunitlabelresponse)  :   
-- [DropBars响应](dropbarsresponse)  :   
-- [错误栏响应](errorbarresponse)  :   
-- [填写格式响应](fillformatresponse)  :   
-- [查找响应](findresponse)  :   
-- [楼层响应](floorresponse)  :   
-- [表单响应](formresponse)  :   
-- [表格回复](formsresponse)  :   
-- [组框响应](groupboxresponse)  :   
-- [水平分页响应](horizontalpagebreakresponse)  :   
-- [水平分页响应](horizontalpagebreaksresponse)  :   
-- [超链接响应](hyperlinkresponse)  :   
-- [超链接响应](hyperlinksresponse)  :   
-- [标签响应](labelresponse)  :   
-- [图例条目响应](legendentriesresponse)  :   
-- [图例条目响应](legendentryresponse)  :   
-- [图例响应](legendresponse)  :   
-- [线路响应](lineresponse)  :   
-- [线形响应](lineshaperesponse)  :   
-- [列表框响应](listboxresponse)  :   
-- [列表对象响应](listobjectresponse)  :   
-- [列出对象响应](listobjectsresponse)  :   
-- [合并单元响应](mergedcellresponse)  :   
-- [合并单元格响应](mergedcellsresponse)  :   
-- [名称响应](nameresponse)  :   
-- [名称响应](namesresponse)  :   
-- [Ole对象响应](oleobjectresponse)  :   
-- [OleObject响应](oleobjectsresponse)  :   
-- [椭圆响应](ovalresponse)  :   
-- [页面部分响应](pagesectionsresponse)  :   
-- [页面设置响应](pagesetupresponse)  :   
-- [图片响应](pictureresponse)  :   
-- [图片回复](picturesresponse)  :   
-- [数据透视字段响应](pivotfieldresponse)  :   
-- [数据透视过滤器响应](pivotfilterresponse)  :   
-- [数据透视过滤器响应](pivotfiltersresponse)  :   
-- [数据透视表响应](pivottableresponse)  :   
-- [数据透视表响应](pivottablesresponse)  :   
-- [绘图区域响应](plotarearesponse)  :   
-- [单选按钮响应](radiobuttonresponse)  :   
-- [范围响应](rangeresponse)  :   
-- [范围响应](rangesresponse)  :   
-- [范围值响应](rangevalueresponse)  :   
-- [矩形形状响应](rectangleshaperesponse)  :   
-- [行响应](rowresponse)  :   
-- [行响应](rowsresponse)  :   
-- [保存文件到云结果响应](savefilestocloudresultresponse)  :   
-- [保存响应](saveresponse)  :   
-- [滚动条响应](scrollbarresponse)  :   
-- [系列回应](seriesesresponse)  :   
-- [系列响应](seriesresponse)  :   
-- [形状响应](shaperesponse)  :   
-- [形状响应](shapesresponse)  :   
-- [单值响应](singlevalueresponse)  :   
-- [SparklineGroup响应](sparklinegroupresponse)  :   
-- [迷你图组响应](sparklinegroupsresponse)  :   
-- [旋转响应](spinnerresponse)  :   
-- [分割结果响应](splitresultresponse)  :   
-- [风格回应](styleresponse)  :   
-- [任务运行结果响应](taskrunresultresponse)  :   
-- [文本框响应](textboxresponse)  :   
-- [文本项响应](textitemresponse)  :   
-- [文本项目响应](textitemsresponse)  :   
-- [勾选标签响应](ticklabelsresponse)  :   
-- [标题响应](titleresponse)  :   
-- [趋势线响应](trendlineresponse)  :   
-- [趋势线响应](trendlinesresponse)  :   
-- [验证响应](validationresponse)  :   
-- [验证响应](validationsresponse)  :   
-- [垂直分页响应](verticalpagebreakresponse)  :   
-- [垂直分页响应](verticalpagebreaksresponse)  :   
-- [墙响应](wallsresponse)  :   
-- [工作簿替换响应](workbookreplaceresponse)  :   
-- [工作簿响应](workbookresponse)  :   
-- [工作簿设置响应](workbooksettingsresponse)  :   
-- [作业簿回应](workbooksresponse)  :   
-- [工作表替换响应](worksheetreplaceresponse)  :   
-- [工作表响应](worksheetresponse)  :   
-- [工作表响应](worksheetsresponse)  :   
+- [Xls保存选项](xlssaveoptions) ：代表保存.xls文件的选项。
+- [Xps保存选项](xpssaveoptions) ：代表保存.xps文件的选项。
+- [ArcShapeResponse](arcshaperesponse) ：代表 ArcShape 响应。
+- [自动过滤响应](autofilterresponse) ：代表自动过滤响应。
+- [自动形状响应](autoshaperesponse) ：代表自选图形响应。
+- [自动形状响应](autoshapesresponse) ：代表自选图形响应。
+- [轴响应](axisresponse) ：代表轴响应。
+- [边境响应](borderresponse) ：代表边境响应。
+- [按钮响应](buttonresponse) ：代表按钮响应。
+- [计算公式响应](calculateformularesponse) ：代表 CalculateFormula 响应。
+- [细胞反应](cellresponse) ：代表细胞反应。
+- [CellsCloudFileInfoResponse](cellscloudfileinforesponse) ：代表 CellsCloudFileInfo 响应。
+- [细胞云响应](cellscloudresponse) ：代表CellsCloud响应。
+- [单元格文档属性响应](cellsdocumentpropertiesresponse) ：代表 CellsDocumentProperties 响应。
+- [单元格文档属性响应](cellsdocumentpropertyresponse)：代表CellsDocumentProperty响应。
+- [单元格绘制响应](cellsdrawingresponse) ：代表CellsDrawing响应。
+- [细胞反应](cellsresponse) ：代表Cells响应。
+- [ChartAreaResponse](chartarearesponse) ：代表 ChartArea 响应。
+- [图表数据表响应](chartdatatableresponse) ：代表ChartDataTable响应。
+- [ChartPoint响应](chartpointresponse) ：代表 ChartPoint 响应。
+- [ChartPoints 响应](chartpointsresponse) ：代表 ChartPoints 响应。
+- [图表响应](chartresponse) ：代表图表响应。
+- [图表响应](chartsresponse) ：代表图表响应。
+- [CheckBoxResponse](checkboxresponse) ：代表 CheckBox 响应。
+- [列响应](columnresponse) ：代表列响应。
+- [列响应](columnsresponse) ：代表列响应。
+- [组合框响应](comboboxresponse) ：代表 ComboBox 响应。
+- [评论回应](commentresponse) ：代表评论回复。
+- [评论形状响应](commentshaperesponse) ：代表 CommentShape 响应。
+- [评论回应](commentsresponse) ：代表评论回复。
+- [条件格式响应](conditionalformattingresponse) ：代表条件格式响应。
+- [条件格式响应](conditionalformattingsresponse) ：代表条件格式响应。
+- [数据标签响应](datalabelsresponse) ：代表 DataLabels 响应。
+- [DisplayUnitLabelResponse](displayunitlabelresponse) ：代表 DisplayUnitLabel 响应。
+- [DropBars 响应](dropbarsresponse) ：代表 DropBars 响应。
+- [错误栏响应](errorbarresponse)：代表ErrorBar响应。
+- [填写格式响应](fillformatresponse) ：代表 FillFormat 响应。
+- [查找响应](findresponse) ：代表查找响应。
+- [楼层响应](floorresponse) ：代表全体响应。
+- [表单响应](formresponse) ：代表表单响应。
+- [表单响应](formsresponse) ：代表表单响应。
+- [组框响应](groupboxresponse) ：代表 GroupBox 响应。
+- [水平分页响应](horizontalpagebreakresponse) ：代表HorizontalPageBreak响应。
+- [水平分页响应](horizontalpagebreaksresponse) ：代表 HorizontalPageBreaks 响应。
+- [超链接响应](hyperlinkresponse) ：代表超链接响应。
+- [超链接响应](hyperlinksresponse) ：代表超链接响应。
+- [标签响应](labelresponse) ：代表标签响应。
+- [图例条目响应](legendentriesresponse) ：代表 LegendEntries 响应。
+- [图例入口响应](legendentryresponse) ：代表 LegendEntry 响应。
+- [LegendResponse](legendresponse) ：代表传奇响应。
+- [线路响应](lineresponse) ：代表线路响应。
+- [线形响应](lineshaperesponse) ：代表LineShape响应。
+- [列表框响应](listboxresponse) ：代表 ListBox 响应。
+- [列表对象响应](listobjectresponse) ：代表 ListObject 响应。
+- [ListObjects响应](listobjectsresponse) ：代表 ListObjects 响应。
+- [合并单元格响应](mergedcellresponse) ：代表MergedCell响应。
+- [MergedCells响应](mergedcellsresponse)：代表MergedCells响应。
+- [名称响应](nameresponse) ：代表名称响应。
+- [姓名回应](namesresponse) ：代表姓名响应。
+- [Ole对象响应](oleobjectresponse) ：代表OleObject响应。
+- [Ole对象响应](oleobjectsresponse) ：代表OleObjects响应。
+- [椭圆形响应](ovalresponse) ：代表椭圆形响应。
+- [页面部分响应](pagesectionsresponse) ：代表PageSections响应。
+- [页面设置响应](pagesetupresponse) ：代表PageSetup响应。
+- [图片回应](pictureresponse) ：代表图片响应。
+- [图片回应](picturesresponse) ：代表图片响应。
+- [数据透视字段响应](pivotfieldresponse) ：代表 PivotField 响应。
+- [枢轴过滤响应](pivotfilterresponse) ：代表 PivotFilter 响应。
+- [PivotFilters响应](pivotfiltersresponse) ：代表 PivotFilters 响应。
+- [数据透视表响应](pivottableresponse) ：代表数据透视表响应。
+- [数据透视表响应](pivottablesresponse) ：代表数据透视表响应。
+- [绘图区域响应](plotarearesponse) ：代表 PlotArea 响应。
+- [单选按钮响应](radiobuttonresponse) ：代表RadioButton响应。
+- [范围响应](rangeresponse) ：代表范围响应。
+- [范围响应](rangesresponse) ：代表范围响应。
+- [范围值响应](rangevalueresponse) ：代表RangeValue响应。
+- [矩形形状响应](rectangleshaperesponse) ：代表 RectangleShape 响应。
+- [行响应](rowresponse) ：代表行响应。
+- [RowsResponse](rowsresponse)：代表行响应。
+- [SaveFilesToCloud结果响应](savefilestocloudresultresponse) ：代表SaveFilesToCloudResult响应。
+- [保存响应](saveresponse) ：代表保存响应。
+- [ScrollBarResponse](scrollbarresponse) ：代表ScrollBar响应。
+- [系列回应](seriesesresponse) ：代表系列响应。
+- [系列回应](seriesresponse) ：代表系列响应。
+- [形状响应](shaperesponse) ：代表形状响应。
+- [形状响应](shapesresponse) ：代表形状响应。
+- [单值响应](singlevalueresponse) ：代表单值响应。
+- [SparklineGroupResponse](sparklinegroupresponse) ：代表 SparklineGroup 响应。
+- [SparklineGroups 响应](sparklinegroupsresponse) ：代表 SparklineGroups 响应。
+- [SpinnerResponse](spinnerresponse) ：代表旋转器响应。
+- [拆分结果响应](splitresultresponse) ：代表 SplitResult 响应。
+- [风格回应](styleresponse) ：代表风格响应。
+- [任务运行结果响应](taskrunresultresponse) ：代表 TaskRunResult 响应。
+- [文本框响应](textboxresponse) ：代表文本框响应。
+- [文本项响应](textitemresponse) ：代表TextItem响应。
+- [TextItemsResponse](textitemsresponse) ：代表 TextItems 响应。
+- [TickLabelsResponse](ticklabelsresponse) ：代表 TickLabels 响应。
+- [标题回应](titleresponse) ：代表标题回应。
+- [趋势线反应](trendlineresponse) ：代表趋势线响应。
+- [趋势线响应](trendlinesresponse)：代表趋势线响应。
+- [验证响应](validationresponse) ：代表验证响应。
+- [验证响应](validationsresponse) ：代表验证响应。
+- [垂直分页响应](verticalpagebreakresponse) ：代表 VerticalPageBreak 响应。
+- [垂直分页响应](verticalpagebreaksresponse) ：代表 VerticalPageBreaks 响应。
+- [墙壁回应](wallsresponse) ：代表墙壁的回应。
+- [工作簿替换响应](workbookreplaceresponse) ：代表 WorkbookReplace 响应。
+- [工作簿响应](workbookresponse) ：代表工作簿响应。
+- [工作簿设置响应](workbooksettingsresponse) ：代表 WorkbookSettings 响应。
+- [工作簿回应](workbooksresponse) ：代表工作簿响应。
+- [工作表替换响应](worksheetreplaceresponse) ：代表 WorksheetReplace 响应。
+- [工作表响应](worksheetresponse) ：代表工作表响应。
+- [工作表回应](worksheetsresponse) ：代表工作表响应。
 - [分析Excel请求](analyzeexcelrequest)  :   
 - [批量转换请求](batchconvertrequest)：表示批量转换文件请求
 - [批量锁定请求](batchlockrequest)：表示批量锁定文件请求
 - [批量保护请求](batchprotectrequest)：表示批量保护文件请求
-- [批量分割请求](batchsplitrequest)  :   
-- [色彩滤镜请求](colorfilterrequest)：表示滤色片要求
+- [批量拆分请求](batchsplitrequest)  :   
+- [颜色过滤请求](colorfilterrequest)：表示颜色滤镜请求
 - [转换参数](convertparameter)：表示转换参数
 - [创建数据透视表请求](createpivottablerequest)：表示创建数据透视表请求
 - [数据清理请求](datacleansingrequest)：电子表格文件的数据清理请求。
-- [重复数据删除请求](datadeduplicationrequest)  :   
-- [数据填写请求](datafillrequest)  :   
-- [删除不完整行请求](deleteincompleterowsrequest)  :   
+- [数据去重请求](datadeduplicationrequest)  :   
+- [数据填充请求](datafillrequest)  :   
+- [数据转换请求](datatransformationrequest)  :   
+- [删除未完成行请求](deleteincompleterowsrequest)  :   
 - [导入Json请求](importjsonrequest)：表示导入xml数据请求
 - [导入XML请求](importxmlrequest)：表示导入xml数据请求
-- [匹配条件请求](matchconditionrequest)：表示文件名需要处理的匹配条件。
+- [匹配条件请求](matchconditionrequest)：表示该文件名需要处理的匹配条件。
 - [密码请求](passwordrequest)：用于密码数据传输。
 - [数据透视表字段请求](pivottablefieldrequest)：表示数据透视表字段请求
 - [保护工作簿请求](protectworkbookrequest)：表示保护工作簿请求
 - [范围复制请求](rangecopyrequest)：表示范围复制请求
-- [范围设置轮廓边框请求](rangesetoutlineborderrequest)：表示范围设置轮廓边框请求。
-- [范围集样式请求](rangesetstylerequest)：表示范围设置样式请求。
+- [RangeSetOutlineBorder请求](rangesetoutlineborderrequest)：表示范围设置轮廓边界请求。
+- [RangeSetStyle请求](rangesetstylerequest)：表示范围集样式请求。
 - [范围排序请求](rangesortrequest)：表示范围排序请求
-- [表总请求数](tabletotalrequest)：表示表总请求数
-- [文本水标记请求](textwatermarkerrequest)：表示文本水标记请求。
+- [表请求总数](tabletotalrequest)：表示表格总请求数
+- [文本水标请求](textwatermarkerrequest)：表示文本水标请求。
 - [工作簿加密请求](workbookencryptionrequest) ：由工作簿加密/解密请求使用。
 - [工作簿保护请求](workbookprotectionrequest) ：由工作簿保护请求使用。
 - [工作表移动请求](worksheetmovingrequest)：由工作簿移动请求使用。
-- [图像或打印选项](imageorprintoptions)  :   
-- [渲染字体](renderingfont)  :   
-- [渲染水印](renderingwatermark)  :   
-- [数据透视字段](pivotfield)  :   
-- [枢轴过滤器](pivotfilter)：代表PivotFilter集合中的一个PivotFilter。
-- [数据透视项](pivotitem)  :   
-- [数据透视表](pivottable)  :   
-- [数据透视表](pivottables)  :   
+- [图像或打印选项](imageorprintoptions)：允许指定将工作表渲染为图像、打印工作表或将图表渲染为图像时的选项。
+- [渲染字体](renderingfont)：用于渲染的字体。
+- [渲染水印](renderingwatermark)：渲染水印。
+- [连接类型](jointype)  :   
+- [加载数据](loaddata)：正在加载数据信息。
+- [载入至](loadto)  :   
+- [合并查询](mergequeries)：代表合并查询。
+- [数据透视表](pivotcolumn)  :   
+- [查询数据源](querydatasource)  :   
+- [查询数据源数据类型](querydatasourcedatatype)  :   
+- [查询表](querytable)：代表QueryTable信息。
+- [转型](transformation)  :   
+- [取消透视列](unpivotcolumn)  :   
+- [数据透视字段](pivotfield)：代表数据透视表中的字段。
+- [数据透视筛选器](pivotfilter)：代表 PivotFilter 集合中的 PivotFilter。
+- [数据透视表项](pivotitem)：代表数据透视字段报表中的项目。
+- [数据透视表](pivottable) ：数据透视表的摘要说明。
+- [数据透视表](pivottables) ：代表指定工作表上所有数据透视表对象的集合。
+- [单元格值](cellvalue) ：代表单元格值及对应的类型。
 - [自定义解析器配置](customparserconfig)  :   
-- [导入 2DimensionDoubleArray 选项](import2dimensiondoublearrayoption)  :   
-- [导入 2DimensionIntArray 选项](import2dimensionintarrayoption)  :   
-- [导入2DimensionStringArray选项](import2dimensionstringarrayoption)  :   
-- [细胞价值](cellvalue)  :   
-- [导入批量数据选项](importbatchdataoption)  :   
+- [Import2DimensionDoubleArray选项](import2dimensiondoublearrayoption)  :   
+- [Import2DimensionIntArray选项](import2dimensionintarrayoption)  :   
+- [Import2DimensionStringArray选项](import2dimensionstringarrayoption)  :   
+- [ImportBatchData选项](importbatchdataoption)  :   
 - [导入CSV数据选项](importcsvdataoption)  :   
 - [导入数据类型](importdatatype)  :   
-- [导入双数组选项](importdoublearrayoption)  :   
-- [导入整数数组选项](importintarrayoption)  :   
+- [ImportDoubleArray选项](importdoublearrayoption)  :   
+- [导入IntArray选项](importintarrayoption)  :   
 - [导入选项](importoption)  :   
 - [导入图片选项](importpictureoption)  :   
 - [导入位置](importposition)  :   
 - [导入字符串数组选项](importstringarrayoption)  :   
-- [弧形](arcshape)  :   
-- [区域](area)  :   
-- [自选图形](autoshape)  :   
+- [弧形](arcshape)：代表圆弧形状。
+- [区域](area) ：封装代表区域格式的对象。
+- [自选图形](autoshape) ：代表自选图形。
 - [自选图形](autoshapes)  :   
-- [按钮](button)  :   
-- [细胞绘图](cellsdrawing)  :   
-- [复选框](checkbox)  :   
-- [组合框](combobox)  :   
-- [评论形状](commentshape)  :   
-- [填充格式](fillformat)  :   
+- [按钮](button) ：代表表单控件：按钮
+- [单元格绘制](cellsdrawing)：代表自动形状和绘图对象。
+- [复选框](checkbox) ：代表工作表中的复选框对象。
+- [组合框](combobox) ：代表ComboBox 控件。
+- [评论形状](commentshape) ：代表评论的形状。
+- [填充格式](fillformat) ：封装代表形状填充格式的对象。
 - [形式](form)  :   
 - [形式](forms)  :   
-- [渐变填充](gradientfill)  :   
+- [渐变填充](gradientfill)：代表渐变填充。
 - [渐变填充停止](gradientfillstop)  :   
-- [分组框](groupbox)  :   
-- [团体形态](groupshape)  :   
-- [标签](label)  :   
-- [线](line)：封装表示线路格式的对象。
-- [行格式](lineformat)  :   
-- [线形](lineshape)  :   
-- [列表框](listbox)  :   
-- [对象](oleobject)  :   
-- [Ole对象](oleobjects)  :   
-- [椭圆形](oval)  :   
-- [图案填充](patternfill)  :   
-- [图片格式选项](picformatoption)  :   
-- [图片](picture)  :   
-- [图片](pictures)  :   
-- [单选按钮](radiobutton)  :   
-- [矩形形状](rectangleshape)  :   
-- [滚动条](scrollbar)  :   
-- [阴影效果](shadoweffect)  :   
-- [形状](shape)  :   
-- [形状](shapes)  :   
-- [实心填充](solidfill)  :   
-- [旋转器](spinner)  :   
-- [文本框](textbox)  :   
-- [纹理填充](texturefill)  :   
-- [平铺图片选项](tilepicoption)  :   
-- [电子签名](digitalsignature) 文件中的签名。
-- [轴](axis)  :   
-- [图表](chart)  :   
-- [图表区](chartarea)  :   
-- [图表数据表](chartdatatable)  :   
-- [图表框架](chartframe)  :   
+- [组框](groupbox)：封装代表电子表格中的组框的对象。
+- [群组形状](groupshape) ：表示包含单个形状的组合形状。
+- [标签](label) ：封装代表电子表格中的标签的对象。
+- [线](line) ：封装表示行格式的对象。
+- [行格式](lineformat) ：代表该线路的所有设置。
+- [线形](lineshape) ：表示线的形状。
+- [列表框](listbox) ：代表列表框对象。
+- [对象](oleobject) ：代表工作表中的 OleObject。
+- [对象](oleobjects) ：代表嵌入的 OLE 对象。
+- [椭圆形](oval) ：代表椭圆形。
+- [图案填充](patternfill)：封装表示图案填充格式的对象
+- [图片格式选项](picformatoption)：代表图片格式选项
+- [图片](picture)：封装代表电子表格中单张图片的对象。
+- [图片](pictures) ：封装对象的集合。
+- [单选按钮](radiobutton) ：代表单选按钮。
+- [矩形形状](rectangleshape) ：代表矩形形状。
+- [滚动条](scrollbar)：代表滚动条对象。
+- [阴影效果](shadoweffect)：该类指定图表元素或形状的阴影效果。
+- [形状](shape) ：代表msodrawing对象。
+- [形状](shapes) ：代表工作表/图表中的所有形状。
+- [实心填充](solidfill)：封装表示实心填充格式的对象
+- [Spinner](spinner)：代表表单控件：Spinner。
+- [文本框](textbox) ：封装代表电子表格中的文本框的对象。
+- [纹理填充](texturefill)：封装表示纹理填充格式的对象
+- [TilePic选项](tilepicoption)：将瓦片图片表示为纹理。
+- [电子签名](digitalsignature)：文件中的签名。
+- [轴](axis) ：封装代表图表轴的对象。
+- [图表](chart) ：封装代表单个Excel图表的对象。
+- [图表区域](chartarea) ：封装代表工作表中图表区的对象。
+- [图表数据表](chartdatatable)：代表图表数据表。
+- [图表框架](chartframe) ：封装代表图表中的框架对象的对象。
 - [图表全球化设置](chartglobalizationsettings)：代表图表的全球化设置。
-- [图表点](chartpoint)  :   
-- [图表点](chartpoints)  :   
-- [图表](charts)  :   
+- [图表点](chartpoint) ：代表图表中一系列的单个点。
+- [图表点](chartpoints) ：表示包含一个系列中的所有点的集合。
+- [图表](charts) ：封装对象的集合。
 - [图表形状](chartshape) ：图表形状对象
-- [数据标签](datalabels)  :   
-- [显示单元标签](displayunitlabel)  :   
-- [下拉栏](dropbars)  :   
-- [错误栏](errorbar)  :   
-- [地面](floor)  :   
-- [传奇](legend)  :   
+- [数据标签](datalabels)：封装指定Series的所有DataLabel对象的集合。
+- [显示单元标签](displayunitlabel) ：代表显示单元标签。
+- [下拉栏](dropbars) ：代表图表中的上涨/下跌条。
+- [误差线](errorbar) ：表示数据系列的误差线。
+- [地面](floor) ：封装代表三维图表底部的对象。
+- [传奇](legend) ：封装代表图表图例的对象。
 - [图例条目](legendentries)  :   
-- [传奇入口](legendentry)  :   
-- [标记](marker)  :   
-- [绘图区](plotarea)  :   
-- [系列](series)  :   
-- [系列项目](seriesitems)  :   
-- [迷你图](sparkline)：迷你图表示工作表单元格中的微小图表或图形，提供数据的可视化表示。
-- [迷你图集团](sparklinegroup)  :   
+- [传奇入口](legendentry) ：表示图表图例中的图例条目。
+- [标记](marker)：表示折线图、散点图或雷达图中的标记。
+- [绘图区](plotarea)：封装代表图表中绘图区域的对象。
+- [系列](series) ：封装代表图表中单个数据系列的对象。
+- [系列商品](seriesitems)  :   
+- [迷你图](sparkline)：迷你图表示工作表单元格中的微型图表或图形，可以提供数据的直观表示。
+- [Sparkline集团](sparklinegroup) ：被组织成 sparkline 组。SparklineGroup 包含可变数量的 sparkline 项目。sparkline 组指定 sparkline 的类型、显示设置和轴设置。
 - [迷你图组](sparklinegroups)：封装Aspose.Cells.Charts.SparklineGroup对象的集合。
-- [刻度标签](ticklabels)  :   
-- [标题](title)  :   
-- [趋势线](trendline)  :   
-- [趋势线](trendlines)  :   
-- [墙壁](walls)  :   
+- [勾选标签](ticklabels) ：表示与图表轴上的刻度标记关联的刻度标记标签。
+- [标题](title) ：封装代表图表或轴的标题的对象。
+- [趋势线](trendline) ：表示图表中的趋势线。
+- [趋势线](trendlines) ：表示指定数据系列的所有对象的集合。
+- [墙壁](walls)：封装代表三维图表墙的对象。
 - [列数据异常描述](columndataexceptiondescription)  :   
-- [文本类别类型](textcategorytype)  :   
-- [分析列描述](analyzedcolumndescription)：如何利用各栏目的属性：目前分为时间线、产品线、数值统计线 如何呈现产品、统一计划 如何解决全数字化的问题？全文 如何解决？两列：Text、Number最简单 三列：Text、Text、Number text、number、number --- date date ；日期 数字 ;数字 数字 四列、五列呢？
-- [分析结果](analyzedresult)  :   
-- [分析表描述](analyzedtabledescription)  :   
-- [日期源类型](datesourcetype)  :   
-- [建议的输出类型](suggestedoutputtype)  :   
-- [分析建议](analyzesuggestion)  :   
-- [发现图表](discoverchart)  :   
-- [发现数据透视表](discoverpivottable)  :   
-- [Excel数据统计](exceldatastatistics)  :   
-- [工作表数据统计](worksheetdatastatistics)  :   
+- [文本分类类型](textcategorytype)  :   
+- [分析列描述](analyzedcolumndescription)：代表所分析列的描述。
+- [分析结果](analyzedresult)：代表分析数据的结果。
+- [分析表描述](analyzedtabledescription)：代表分析的表描述。
+- [探索图表](discoverchart)：表示图表，是根据表格的数据分析而创建的图表。
+- [发现数据透视表](discoverpivottable)：表示数据透视表，是根据表的数据分析而建立的数据透视表。
+- [Excel数据统计](exceldatastatistics)：代表Excel数据统计。
+- [工作表数据统计](worksheetdatastatistics)：代表工作表数据统计。
 - [错误](error)： 错误
-- [错误详情](errordetails) 错误详细信息
+- [错误详情](errordetails)：错误详细信息

@@ -4,6 +4,7 @@ type: docs
 url: /sv/charts/propreties/update/
 aliases: [/update-chart-propreties/]
 weight: 160
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Uppdatera diagramegenskaper
 ---
 Denna REST API indikerar uppdateringsdiagramegenskaper
  

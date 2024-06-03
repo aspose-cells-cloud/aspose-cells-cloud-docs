@@ -8,6 +8,7 @@ aliases: [/delete-row-from-a-worksheet/]
 keywords: Delete rows on an Excel workshee
 description: Aspose.Cells Cloud REST API prend en charge la suppression de lignes sur une feuille de calcul Excel. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 80
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, supprimer une ligne sur une feuille de calcul Excel
 ---
 Ce REST API indique de supprimer une ligne sur une feuille de calcul Excel.
  
@@ -20,9 +21,9 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/ro
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
-| nom| chaîne| chemin|Le nom du classeur.|
+| nom| chaîne| chemin| Le nom du classeur.|
 | Nom de la feuille| chaîne| chemin| La feuille de travail est identique.|
 | indexligne| entier| chemin| L'index de ligne.|
 | dossier| chaîne| requête| Le dossier de documents.|

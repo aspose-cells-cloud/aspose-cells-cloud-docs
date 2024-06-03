@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/postupdateworksheetzoom/
 description: Actualice el porcentaje de escala en la hoja de trabajo. Debería estar entre 10 y 400
+kwords: Excel, Office, hoja de cálculo, nube REST API, PostUpdateWorksheetZoom
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostUpdateWorksheetZoom" >}}

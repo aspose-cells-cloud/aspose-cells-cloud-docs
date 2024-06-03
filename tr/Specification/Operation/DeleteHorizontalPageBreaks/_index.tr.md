@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/deletehorizontalpagebreaks/
 description: Çalışma sayfasındaki yatay sayfa sonlarını silme
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, HorizontalPageBreaks'i Sil
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteHorizontalPageBreaks" >}}

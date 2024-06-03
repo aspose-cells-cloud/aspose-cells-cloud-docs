@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/model/style/
 description: "Aspose.Cells Specifica modello Cloud: Stile. Gestisci facilmente Excel e altri fogli di calcolo con funzionalità come apertura, generazione, modifica, divisione, unione, confronto e conversione"
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, Stile
 weight: 50
 ---
 ## **stile**
 
- 
+ Rappresenta lo stile di visualizzazione del documento Excel, come carattere, colore, allineamento, bordo, ecc. L'oggetto Style contiene tutti gli attributi di stile (carattere, formato numero, allineamento e così via) come proprietà.
 
 | Nome della proprietà| Tipo di proprietà| Nullabile| Sola lettura| Valore di default| Descrizione|
 |:- |:- |:- |:- |:- |:- |
@@ -18,8 +19,8 @@ weight: 50
 | Costume| Corda| VERO| Falso|| Rappresenta la stringa di formato numero personalizzato di questo oggetto di stile. Se il formato numero personalizzato non è impostato (ad esempio, il formato numero è integrato), verrà restituito "".|
 | Colore di sfondo| Classe: colore| VERO| Falso|| Ottiene o imposta il colore di sfondo di uno stile.|
 | Colore di primo piano| Classe: colore| VERO| Falso|| Ottiene o imposta il colore di primo piano di uno stile.|
-| La formula è nascosta| Booleano| VERO| Falso|| Indica se la formula verrà nascosta quando il foglio di lavoro sarà protetto.|
-| IsDateTime| Booleano| VERO| Falso||Indica se il formato numero è un formato data.|
+| La formula è nascosta| Booleano| VERO| Falso||Indica se la formula verrà nascosta quando il foglio di lavoro sarà protetto.|
+| IsDateTime| Booleano| VERO| Falso|| Indica se il formato numero è un formato data.|
 | IsTextWrapped| Booleano| VERO| Falso|| Ottiene o imposta un valore che indica se il testo all'interno di una cella va a capo.|
 | ÈGradiente| Booleano| VERO| Falso|| Indica se l'ombreggiatura della cella è un modello sfumato.|
 | È bloccato| Booleano| VERO| Falso|| Ottiene o imposta un valore che indica se una cella può essere modificata o meno.|
@@ -30,8 +31,8 @@ weight: 50
 | Angolo di rotazione| Numero intero| VERO| Falso|| Rappresenta l'angolo di rotazione del testo.|
 | Modello| Corda| VERO| Falso|| Ottiene o imposta il tipo di motivo di sfondo della cella.|
 | DirezioneTesto| Corda| VERO| Falso|| Rappresenta l'ordine di lettura del testo.|
-| Allineamento verticale| Corda| VERO| Falso|| Ottiene o imposta il tipo di allineamento verticale del testo in una cella.|
-| Allineamento orizzontale| Corda| VERO| Falso||Ottiene o imposta il tipo di allineamento orizzontale del testo in una cella.|
+| Allineamento verticale| Corda| VERO| Falso||Ottiene o imposta il tipo di allineamento verticale del testo in una cella.|
+| Allineamento orizzontale| Corda| VERO| Falso|| Ottiene o imposta il tipo di allineamento orizzontale del testo in una cella.|
 | Collezione Border| Contenitore| VERO| Falso|||
 | BackgroundThemeColor| Classe: TemaColore| VERO| Falso|| Ottiene e imposta il colore del tema di sfondo.|
 | PrimopianoTemaColore| Classe: TemaColore| VERO| Falso|| Ottiene e imposta il colore del tema di primo piano.|

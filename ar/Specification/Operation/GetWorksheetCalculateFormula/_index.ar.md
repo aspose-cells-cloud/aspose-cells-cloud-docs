@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/getworksheetcalculateformula/
 description: حساب الصيغة في ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، GetWorksheetCalculateFormula
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetCalculateFormula" >}}

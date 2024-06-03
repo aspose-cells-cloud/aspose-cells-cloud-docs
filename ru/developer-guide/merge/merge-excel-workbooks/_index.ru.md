@@ -8,6 +8,7 @@ aliases: [/merge-excel-workbooks/]
 keywords: Merge an Excel Workbooks into other Excel file
 description: Aspose.Cells Cloud REST API поддерживает объединение файлов Excel с другим файлом Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 50
+kwords: Excel, Office Cloud, REST API, электронная таблица, PDF, CSV, Json, Markdwon, объединить книги Excel с другим файлом Excel.
 ---
 Этот REST API указывает на объединение Excel `workbook` с другой книгой Excel.
 
@@ -26,7 +27,7 @@ weight: 50
 
 [Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbooksMerge) определяет общедоступный интерфейс программирования и позволяет выполнять взаимодействие с REST непосредственно из веб-браузера.
 
- Вы можете использовать**cURL** инструмент командной строки для легкого доступа к веб-службам Aspose.Cells. В следующем примере показано, как позвонить на Cloud API с помощью cURL.
+ Вы можете использовать**cURL**инструмент командной строки для легкого доступа к веб-службам Aspose.Cells. В следующем примере показано, как позвонить на Cloud API с помощью cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 

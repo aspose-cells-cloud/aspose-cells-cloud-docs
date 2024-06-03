@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/getverticalpagebreak/
 description: Hämta en vertikal sidbrytningsbeskrivning i kalkylbladet
+kwords: Excel, Office, Kalkylblad, Cloud REST API, GetVerticalPageBreak
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetVerticalPageBreak" >}}

@@ -7,6 +7,7 @@ url: /sv/ranges/get/
 keywords: How to get range content from an Excel worksheet
 description: Aspose.Cells Cloud REST API stöd för att hämta intervallinnehåll från ett Excel kalkylblad. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 20
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Hur får man intervallinnehåll från ett Excel kalkylblad
 ---
 ## Arbetar med att hämta intervallinnehåll på ett Excel-kalkylblad.
 

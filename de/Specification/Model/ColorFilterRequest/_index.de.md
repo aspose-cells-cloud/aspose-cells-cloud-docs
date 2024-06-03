@@ -1,18 +1,19 @@
 ﻿---
-title: ColorFilterReques
+title: Farbfilteranforderungen
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/model/colorfilterrequest/
-description: "Aspose.Cells Cloud-Modellspezifikation: ColorFilterRequest. Bearbeiten Sie mühelos Excel und andere Tabellenkalkulationsdokumente mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+description: "Aspose.Cells Cloud-Modellspezifikation: ColorFilterRequest. Müheloses Bearbeiten von Excel und anderen Tabellenkalkulationsdokumenten mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, ColorFilterRequest
 weight: 50
 ---
-## **colorFilterRequest**
+## **Farbfilteranforderung**
 
- Zeigt eine Farbfilteranforderung an
+ Zeigt die Farbfilteranforderung an
 
-| Name des Anwesens| Art der Immobilie| Nullbar| Schreibgeschützt| Standardwert| Beschreibung|
+| Name des Anwesens| Art der Immobilie| Nullwerte zulassen| Schreibgeschützt| Standardwert| Beschreibung|
 |:- |:- |:- |:- |:- |:- |
-| Muster| Zeichenfolge| WAHR| FALSCH|| Ruft den Füllmustertyp ab oder legt diesen fest|
+| Muster| Zeichenfolge| WAHR| FALSCH|| Ruft den Füllmustertyp ab oder legt ihn fest|
 | Vordergrundfarbe| Klasse:CellsColor| WAHR| FALSCH|| Vordergrundfarbe|
 | Hintergrundfarbe| Klasse:CellsColor| WAHR| FALSCH|| Hintergrundfarbe|
 

@@ -1,28 +1,29 @@
 ﻿---
-title: 后工作表文本替换
+title: PostWorksheetTextReplac
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/postworksheettextreplace/
 description: 在工作表中用新文本替换旧文本
+kwords: Excel，Office，电子表格，云 REST API，PostWorksheetTextReplace
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetTextReplace" >}}
 {{< blocks/products/cells/docs-title titlemsg="Replace old text with new text in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/replaceText,POST,用工作表中的新文本替换旧文本。,<a href=\'https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetTextReplace \'>PostWorksheetTextReplace</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/replaceText,POST,用新文本替换工作表中的旧文本。,<a href=\'https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetTextReplace\'>PostWorksheetTextReplace</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="参数名称、类型、描述" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="名称，字符串，文件名。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName，字符串，工作表名称。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="name，string，文件名。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName，string，工作表名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="oldValue，字符串，要替换的旧文本。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="newValue,字符串,要替换的新文本。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="oldValue，string，要替换的旧文本。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="newValue，string，要替换的新文本。" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="文件夹，字符串，文件所在的文件夹。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,文件所在的存储名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName，string，文件所在的存储名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/WorksheetsController/PostWorksheetTextReplace\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

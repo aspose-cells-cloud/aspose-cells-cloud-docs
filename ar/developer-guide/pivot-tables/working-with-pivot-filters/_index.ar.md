@@ -8,6 +8,7 @@ aliases: [/working-with-pivot-filters/]
 keywords: Add filter for a pivot table
 description: Aspose.Cells Cloud REST API يدعم إضافة مرشح للجدول المحوري. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 50
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, العمل مع المرشحات المحورية
 ---
 يشير REST API إلى `add` المحوري `filter` لمؤشر جدول piovt
  
@@ -26,7 +27,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables
 | اسم الورقة| خيط| طريق||
 | PivotTableIndex| عدد صحيح| طريق||
 | منقي|| جسم||
-| needReCalculate| منطقية| استفسار| خطأ شنيع|
+| needReCalculate|منطقية| استفسار| خطأ شنيع|
 | مجلد| خيط| استفسار||
 | اسم التخزين| خيط| استفسار| اسم التخزين.|
  
@@ -67,7 +68,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/pivott
  
 ## عائلة Cloud SDK
  
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
  
 توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
  

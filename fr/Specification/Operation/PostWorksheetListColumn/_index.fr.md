@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postworksheetlistcolumn/
 description: Mettre à jour la colonne de liste dans l'objet de liste
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostWorksheetListColumn
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetListColumn" >}}

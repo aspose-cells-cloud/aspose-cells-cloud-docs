@@ -3,6 +3,7 @@ title: Excel Çalışma Sayfasından MaxColumn'u edinin
 type: docs
 url: /tr/get-maxcolumn-from-excel-worksheet/
 weight: 60
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel Çalışma Sayfasından MaxColumn'u Alın
 ---
 Bu REST API, `cellOrMethodName` parametresi `maxcolumn` olduğunda Excel dosyasında gösterilerin `maxcolumn` aldığını gösterir.
 

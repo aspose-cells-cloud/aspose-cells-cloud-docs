@@ -6,6 +6,7 @@ aliases: [/clear-all-condition-formattings/]
 keywords: REST API, spreadsheets, excel, clear all condition formatting
 description: "Cells.Cloud API pour Excel fonctionne : efface tous les formatages de conditions"
 weight: 80
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, formats de condition clairs
 ---
 Ce REST API indique Effacer tous les formatages de conditions
  
@@ -18,7 +19,7 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditio
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin||
 | Nom de la feuille| chaîne| chemin||

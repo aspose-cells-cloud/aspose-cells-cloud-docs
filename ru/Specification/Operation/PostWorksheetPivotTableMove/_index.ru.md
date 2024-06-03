@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postworksheetpivottablemove/
 description: Переместить сводную таблицу на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostWorksheetPivotTableMove
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetPivotTableMove" >}}

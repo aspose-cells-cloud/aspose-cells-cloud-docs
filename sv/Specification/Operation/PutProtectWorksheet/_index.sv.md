@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/putprotectworksheet/
 description: Skydda kalkylblad
+kwords: Excel, Office, Kalkylblad, Cloud REST API, PutProtectWorksheet
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutProtectWorksheet" >}}

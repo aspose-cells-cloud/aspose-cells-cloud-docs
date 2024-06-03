@@ -6,6 +6,7 @@ aliases: [/add-a-cell-area-for-format-condition/]
 keywords: REST API, spreadsheets, excel, add cellarea for formatconditio
 description: "Cells.Cloud API per Excel opera: aggiungi commento"
 weight: 30
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Aggiungi CellArea
 ---
 Questo REST API indica l'aggiunta di un'area della cella per la condizione del formato
             

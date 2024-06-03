@@ -8,6 +8,7 @@ aliases: [/add-a-filter-for-a-filter-column/]
 keywords: Adds a filter for a filter column on an Excel worksheet
 description: Aspose.Cells Cloud API admite agregar un filtro para una columna de filtro en una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 60
+kwords: Excel, Office Cloud, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Agregar un filtro en una hoja de trabajo Excel
 ---
 Este REST API indica agregar `a filter` para una columna de filtro en una hoja de trabajo Excel.
 
@@ -24,7 +25,7 @@ Los parámetros de la solicitud son:
 
 | Nombre del parámetro| Tipo| Ruta/Cadena de consulta/Cuerpo HTTP|Descripción|
 |:- |:- |:- |:- |
-| nombre| cadena| Camino|El nombre del libro de trabajo.|
+| nombre| cadena| Camino| El nombre del libro de trabajo.|
 | nombre de la hoja| cadena| Camino| El nombre de la hoja de trabajo.|
 |rango|cadena| Consulta||
 |índice de campo|entero| Consulta||

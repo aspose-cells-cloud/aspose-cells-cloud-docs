@@ -3,28 +3,29 @@ title: PostWorkbookExportXM
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postworkbookexportxml/
-description: Exportieren Sie XML-Daten aus einer Excel-Datei. Wenn eine Excel-Datei XML-Maps enthält, exportieren Sie XML-Daten. Wenn in der Datei Excel keine XML-Zuordnung vorhanden ist, konvertieren Sie die Datei Excel in eine XML-Datei
+description: Exportieren Sie XML-Daten aus einer Excel-Datei. Wenn eine Excel-Datei XML-Maps enthält, exportieren Sie XML-Daten. Wenn die Excel-Datei keine XML-Map enthält, konvertieren Sie die Excel-Datei in eine XML-Datei.
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostWorkbookExportXML
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookExportXML" >}}
 {{< blocks/products/cells/docs-title titlemsg="Export XML data from an Excel file.When there are XML Maps in an Excel file, export XML data. When there is no XML map in the Excel file, convert the Excel file to an XML file." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/exportxml,POST,XML-Daten aus einer Excel-Datei exportieren. Wenn eine Excel-Datei XML-Maps enthält, exportieren Sie XML-Daten. Wenn in der Datei Excel keine XML-Zuordnung vorhanden ist, konvertieren Sie die Datei Excel in eine XML-Datei.,<a href=\'https://apireference.aspose.cloud/cells/#/DataProcessing/PostWorkbookExportXML\'>PostWorkbookExportXML</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/exportxml,POST,XML-Daten aus einer Excel-Datei exportieren.Wenn eine Excel-Datei XML-Maps enthält, XML-Daten exportieren.Wenn die Excel-Datei keine XML-Map enthält, die Excel-Datei in eine XML-Datei konvertieren.,<a href=\'https://apireference.aspose.cloud/cells/#/DataProcessing/PostWorkbookExportXML\'>PostWorkbookExportXML</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="Passwort, Zeichenfolge, Das zum Öffnen einer Excel-Datei erforderliche Passwort." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Kennwort, Zeichenfolge, Das zum Öffnen einer Excel-Datei erforderliche Kennwort." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="outPath,string,Path um das Ergebnis zu speichern. Wenn es sich um eine einzelne Datei handelt, sollte der „outPath“ sowohl den Dateinamen als auch die Erweiterung umfassen. Bei mehreren Dateien sollte der „outPath“ nur den Ordner enthalten." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="outStorageName,string,Der Speichername, in dem sich die Ausgabedatei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction,boolean,Gibt an, ob die Einschränkung der Excel-Datei überprüft wird, wenn der Benutzer zellenbezogene Objekte ändert." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="region,string,Die regionalen Einstellungen für die Arbeitsmappe." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="outPath, string, Path zum Speichern des Ergebnisses. Wenn es sich um eine einzelne Datei handelt, sollte der „outPath“ sowohl den Dateinamen als auch die Erweiterung umfassen. Bei mehreren Dateien sollte der „outPath“ nur den Ordner umfassen." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="outStorageName, string, Der Name des Speichers, in dem sich die Ausgabedatei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction, boolean, ob die Einschränkung der Excel-Datei überprüft wird, wenn der Benutzer zellenbezogene Objekte ändert." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Region, Zeichenfolge, Die regionalen Einstellungen für die Arbeitsmappe." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/DataProcessingController/PostWorkbookExportXML\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

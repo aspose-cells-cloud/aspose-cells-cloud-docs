@@ -7,6 +7,7 @@ aliases: [/working-with-columns/]
 keywords: REST API, columns, spreadsheets, exce
 description: "Cells. Cloud API för Excel fungerar: visa kolumner från ett Excel kalkylblad"
 weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Columns
 ---
 ## Arbeta med kolumner på en Excel-fil.
 

@@ -6,6 +6,7 @@ url: /fr/file/upload/
 keywords: Learn how to upload file with Aspose Cells Cloud REST API
 description: Découvrez comment télécharger un fichier avec le SDK Aspose Cells Cloud REST API prenant en charge les types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 100
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, télécharger un fichier
 ---
 Ce REST API indique `upload file`.
 
@@ -18,7 +19,7 @@ PUT http://api.aspose.cloud/v3.0/cells/storage/file/{path}
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | chemin| chaîne| chemin| Chemin où télécharger, y compris le nom du fichier et l'extension, par exemple /file.ext ou /Folder 1/file.ext. Si le contenu est en plusieurs parties et que le chemin ne contient pas le nom du fichier, il essaie de les obtenir à partir du paramètre de nom de fichier de l'en-tête Content-Disposition.|
 | déposer| Déposer| Données de formulaire| Fichier à télécharger|

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/getpagecount/
 description: Få sidräkning i arbetsboken
+kwords: Excel, Office, Kalkylblad, Cloud REST API, GetPageCount
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetPageCount" >}}

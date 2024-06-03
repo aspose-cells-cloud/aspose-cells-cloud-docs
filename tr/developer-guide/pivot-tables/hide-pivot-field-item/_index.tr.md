@@ -8,6 +8,7 @@ aliases: [/hide-pivot-field-item/]
 keywords: Hide a pivot field in a pivot table
 description: Aspose.Cells Cloud REST API, pivot tablodaki pivot alanının gizlenmesini destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 110
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Pivot tablodaki pivot alan öğesini gizle
 ---
 Bu REST API, pivot alanı öğesinin gizlendiğini gösterir.
  
@@ -28,8 +29,8 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottable
 | pivotFieldType| sicim| sorgu||
 | alanIndex| tamsayı| sorgu||
 | itemIndex| tamsayı| sorgu||
-| Gizle| boolean| sorgu||
-| yeniden hesaplamaya ihtiyaç var| boolean| sorgu| YANLIŞ|
+| Gizle|boolean| sorgu||
+| yeniden hesaplamaya ihtiyaç var|boolean| sorgu| YANLIŞ|
 | dosya| sicim| sorgu||
 | depolamaAdı| sicim| sorgu| depolama adı.|
  

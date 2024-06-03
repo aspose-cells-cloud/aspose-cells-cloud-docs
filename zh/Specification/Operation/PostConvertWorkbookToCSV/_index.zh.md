@@ -1,23 +1,24 @@
 ﻿---
-title: 将工作簿转换为 CS 后
+title: PostConvertWorkbookToCS
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/postconvertworkbooktocsv/
 description: 将 Excel 文件转换为 Csv 文件
+kwords: Excel，Office，电子表格，云 REST API，PostConvertWorkbookToCSV
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostConvertWorkbookToCSV" >}}
 {{< blocks/products/cells/docs-title titlemsg="Convert Excel file to Csv files." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="/cells/convert/csv,POST,将 Excel 文件转换为 Csv 文件。,<a href=\'https://apireference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToCSV\'>PostConvertWorkbookToCSV</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="密码,字符串,打开Excel文件所需的密码。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction,boolean,用户修改单元格相关对象时是否检查excel文件的限制。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="Region,string,工作簿的区域设置。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="password，string，打开Excel文件所需的密码。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction,boolean,当用户修改单元格相关对象时是否检查excel文件的限制。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="region，string，工作簿的区域设置。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/ConversionController/PostConvertWorkbookToCSV\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

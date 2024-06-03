@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/model/xlsbsaveoptions/
 description: "Aspose.Cells Bulut modeli spesifikasyonu: XlsbSaveOptions. Açma, oluşturma, düzenleme, bölme, birleştirme, karşılaştırma ve dönüştürme gibi özelliklerle Excel ve diğer elektronik tablo belgelerini zahmetsizce yönetin"
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, XlsbSaveOptions
 weight: 50
 ---
 ## **xlsbKaydetmeSeçenekleri**
@@ -18,7 +19,8 @@ weight: 50
 | Dizin Oluştur| Boolean| Doğru| YANLIŞ|||
 | HTTPSıkıştırmayı Etkinleştir| Boolean| Doğru| YANLIŞ|||
 | Grafik Önbelleğini Yenile| Boolean| Doğru| YANLIŞ|||
-|SıralamaAdları| Boolean| Doğru| YANLIŞ|||
+| SıralamaAdları| Boolean| Doğru| YANLIŞ|||
 | Birleştirilmiş Alanları Doğrula| Boolean| Doğru| YANLIŞ|||
 
-**Ebeveyn adı** : (KaydetmeSeçenekleri)[kaydetmeseçenekleri]
+**Ebeveyn adı** : [KaydetSeçenekler](/specification/model/saveoptions)
+

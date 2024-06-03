@@ -7,8 +7,9 @@ keywords: Range Sort
 url: /it/ranges/sort/
 description:  Imposta il bordo del contorno attorno a un intervallo di celle.
 weight: 20
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Ordinamento per intervallo
 ---
-Questo REST API indica l'ordinamento dell'intervallo.
+ Questo REST API indica l'ordinamento dell'intervallo.
 
 ## RSETAPI
 

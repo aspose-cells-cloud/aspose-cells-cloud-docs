@@ -3,6 +3,7 @@ title: Obtener Cells Propiedad
 type: docs
 url: /es/get-cells-properties/
 weight: 130
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Obtener Cells Propiedades
 ---
 Este REST API indica cómo `get a specific cell` en un archivo Excel.
 

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/getworksheetmergedcell/
 description: Birleştirilmiş bir hücrenin açıklamasını çalışma sayfasındaki dizinine göre alın
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, GetWorksheetMergedCell
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetMergedCell" >}}

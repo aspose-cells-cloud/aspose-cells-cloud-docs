@@ -3,6 +3,7 @@ title: Получите MinDataRow из рабочего листа Excel.
 type: docs
 url: /ru/get-mindatarow-from-excel-worksheet/
 weight: 90
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, получить MinDataRow из рабочего листа Excel
 ---
 Этот REST API указывает, что показывает получение `mindatarow` в файле Excel, когда параметр `cellOrMethodName` равен `mindatarow`.
 

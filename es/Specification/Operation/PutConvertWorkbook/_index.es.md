@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/putconvertworkbook/
 description: Convierta el libro de trabajo del contenido solicitado en archivos en diferentes formatos
+kwords: Excel, Office, Hoja de cálculo, Nube REST API, PutConvertWorkbook
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutConvertWorkbook" >}}
@@ -15,7 +16,7 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Nombre del parámetro, tipo, descripción" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="formato,cadena,El formato a convertir(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/0761 73481 /MD[Markdown]/Números)." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="formato,cadena,El formato a convertir(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/076 173481 /MD[Markdown]/Números)." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="contraseña,cadena,La contraseña necesaria para abrir un archivo Excel." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="outPath,string,Ruta para guardar el resultado. Si es un solo archivo, `outPath` debe abarcar tanto el nombre del archivo como la extensión. En el caso de varios archivos, `outPath` solo debe incluir la carpeta." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="nombre de almacenamiento, cadena, el nombre del almacenamiento donde se encuentra el archivo." >}} 

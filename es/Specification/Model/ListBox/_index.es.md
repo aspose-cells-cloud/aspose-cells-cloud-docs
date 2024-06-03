@@ -4,19 +4,20 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/model/listbox/
 description: "Aspose.Cells Especificación del modelo de nube: ListBox. Maneje sin esfuerzo Excel y otros documentos de hoja de cálculo con funciones como abrir, generar, editar, dividir, fusionar, comparar y convertir."
+kwords: Excel, Office, Hoja de cálculo, Cloud REST API, ListBox
 weight: 50
 ---
 ## **cuadro de lista**
 
- 
+ Representa un objeto de cuadro de lista.
 
 | Nombre de la propiedad| tipo de propiedad| Anulable| Solo lectura| Valor por defecto| Descripción|
 |:- |:- |:- |:- |:- |:- |
 | Rango de entrada| Cadena| Verdadero| FALSO|||
 | Recuento de elementos| Entero| Verdadero| FALSO|| Obtiene el número de elementos del cuadro de lista.|
-| Cambio de página| Entero| Verdadero| FALSO|| Especifica la cantidad en la que se cambia el valor del control cuando el usuario hace clic en la región de avance o retroceso de página de la barra de desplazamiento.|
+| Cambio de página| Entero| Verdadero| FALSO||Especifica la cantidad en la que se cambia el valor del control cuando el usuario hace clic en la región de avance o retroceso de página de la barra de desplazamiento.|
 | Celdas seleccionadas| Envase| Verdadero| FALSO|| Obtiene las celdas seleccionadas. Devuelve nulo si el rango de entrada no está establecido o no se selecciona ningún elemento|
-| Índice seleccionado| Entero| Verdadero| FALSO|| Obtiene o establece el número de índice del elemento seleccionado actualmente en un cuadro de lista o cuadro combinado. De base cero.|
+| Índice seleccionado| Entero| Verdadero| FALSO||Obtiene o establece el número de índice del elemento seleccionado actualmente en un cuadro de lista o cuadro combinado. De base cero.|
 | Tipo de selección| Cadena| Verdadero| FALSO|| Obtiene o establece el modo de selección del cuadro de lista especificado.|
 | Sombra| Booleano| Verdadero| FALSO|| Indica si el cuadro combinado tiene sombreado 3D.|
 | Nombre| Cadena| Verdadero| FALSO|||
@@ -36,7 +37,7 @@ weight: 50
 | X| Entero| Verdadero| FALSO|||
 | Y| Entero| Verdadero| FALSO|||
 | Ángulo de rotación| Flotante| Verdadero| FALSO|||
-| Texto HTML| Cadena| Verdadero| FALSO|||
+|Texto HTML| Cadena| Verdadero| FALSO|||
 | Texto| Cadena| Verdadero| FALSO|||
 | Texto alternativo| Cadena| Verdadero| FALSO|||
 | TextoAlineaciónHorizontal| Cadena| Verdadero| FALSO|||
@@ -57,4 +58,5 @@ weight: 50
 | Hipervínculo| Cadena| Verdadero| FALSO|||
 | enlace| Clase: enlace| Verdadero| FALSO|||
 
-**Nombre del padre** : (Forma)[forma]
+**Nombre del padre** : [Forma](/specification/model/shape)
+

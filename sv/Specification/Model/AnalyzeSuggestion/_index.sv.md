@@ -5,6 +5,7 @@ type: docs
 url: /sv/specification/model/analyzesuggestion/
 description: "Aspose.Cells Molnmodellspecifikation: AnalyzeSuggestion. Hantera enkelt Excel och andra kalkylarksdokument med funktioner som att öppna, generera, redigera, dela, slå samman, jämföra och konvertera"
 weight: 50
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, AnalyzeSuggestion
 ---
 ## **analysera förslag**
 
@@ -19,5 +20,5 @@ weight: 50
 | SuggestedOutputType| Sträng| Sann| Falsk|| Utifrån resultaten av dataanalysen ges förslag på att skapa nya datatyper.|
 | Beskrivning| Sträng| Sann| Falsk|| Baserat på resultaten av dataanalysen skapas en verksamhetsbeskrivning av det nya dataobjektet.|
 | Datakälla Thumbnail| Sträng| Sann| Falsk|||
-| Miniatyr| Sträng| Sann| Falsk|||
+|Miniatyr| Sträng| Sann| Falsk|||
 

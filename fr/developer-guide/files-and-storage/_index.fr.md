@@ -7,6 +7,7 @@ aliases: [/working-with-files-and-storage-using-aspose-cells-cloud/]
 keywords: Learn how to work with Aspose Cells Cloud file storage
 description: Découvrez comment utiliser le stockage de fichiers cloud Aspose Cells. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 100
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, fichiers et stockage
 ---
 Aspose.Cells Cloud fournit des fonctions d'aide pour travailler avec les fichiers téléchargés sur Aspose.Cells Cloud Storage ou tout autre stockage Cloud de votre choix. Si vous avez besoin d'aide pour démarrer la configuration du stockage tiers, veuillez vous référer à[Aspose Rubriques d'aide de l'interface utilisateur cloud](https://docs.aspose.cloud/display/totalcloud/Aspose+Cloud+UI+Help+Topics).
 

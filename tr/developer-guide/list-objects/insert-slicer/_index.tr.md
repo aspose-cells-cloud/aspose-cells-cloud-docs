@@ -7,6 +7,7 @@ keywords: Insert slicer for list object
 url: /tr/list-objects/insert-slicer/
 description:  Liste nesnesi için dilimleyiciyi ekleyin.
 weight: 20
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Liste nesnesi ekleme dilimleyici
 ---
  Bu REST API, Excel çalışma sayfasındaki liste nesnesi için dilimleyici eklemeyi belirtir.
 

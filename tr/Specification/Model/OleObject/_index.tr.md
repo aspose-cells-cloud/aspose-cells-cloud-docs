@@ -4,17 +4,18 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/model/oleobject/
 description: "Aspose.Cells Bulut modeli spesifikasyonu: OleObject. Açma, oluşturma, düzenleme, bölme, birleştirme, karşılaştırma ve dönüştürme gibi özelliklerle Excel ve diğer elektronik tablo belgelerini zahmetsizce yönetin"
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, OleObject
 weight: 50
 ---
 ## **Ole nesnesi**
 
- 
+ Bir çalışma sayfasındaki bir OleObject'i temsil eder.
 
 | Mülkiyet adı| Emlak Tipi| Geçersiz kılınabilir| Sadece oku| Varsayılan değer| Tanım|
 |:- |:- |:- |:- |:- |:- |
-| DisplayAsIcon| Boolean| Doğru| YANLIŞ||Belirtilen nesne bir simge olarak görüntüleniyorsa ve görüntü otomatik olarak değiştirilmiyorsa doğrudur.|
+| DisplayAsIcon| Boolean| Doğru| YANLIŞ|| Belirtilen nesne bir simge olarak görüntüleniyorsa ve görüntü otomatik olarak değiştirilmiyorsa doğrudur.|
 | DosyaFormat Türü| Sicim| Doğru| YANLIŞ|| Gömülü ole nesnesi verilerinin dosya türünü alır ve ayarlar|
-| Görüntü KaynağıTam Adı| Sicim| Doğru| YANLIŞ|| Bağlantılı görüntünün kaynak dosyasının yolunu ve adını alır veya ayarlar.|
+|Görüntü KaynağıTam Adı| Sicim| Doğru| YANLIŞ|| Bağlantılı görüntünün kaynak dosyasının yolunu ve adını alır veya ayarlar.|
 | Otomatik Boyut| Boolean| Doğru| YANLIŞ|| True, ole nesnesi etkinleştirildiğinde gömülü içeriğin anlık görüntüsünün boyutuna göre ole nesnesinin boyutunun otomatik olarak değiştirileceğini belirtir.|
 | İş Bağlantısı| Boolean| Doğru| YANLIŞ|| OleObject dosyaya bağlanırsa true değerini döndürür.|
 | ProgID| Sicim| Doğru| YANLIŞ|| OLE nesnesinin ProgID'sini alır veya ayarlar.|
@@ -36,7 +37,7 @@ weight: 50
 | X| Tamsayı| Doğru| YANLIŞ|||
 | e| Tamsayı| Doğru| YANLIŞ|||
 | Dönüş açısı| Yüzer| Doğru| YANLIŞ|||
-| HtmlMetin| Sicim| Doğru| YANLIŞ|||
+|HtmlMetin| Sicim| Doğru| YANLIŞ|||
 | Metin| Sicim| Doğru| YANLIŞ|||
 | Alternatif metin| Sicim| Doğru| YANLIŞ|||
 | MetinYatay Hizalama| Sicim| Doğru| YANLIŞ|||
@@ -57,4 +58,5 @@ weight: 50
 | Köprü| Sicim| Doğru| YANLIŞ|||
 | bağlantı| Sınıf:Bağlantı| Doğru| YANLIŞ|||
 
-**Ebeveyn adı** : (Şekil)[şekil]
+**Ebeveyn adı** : [Şekil](/specification/model/shape)
+

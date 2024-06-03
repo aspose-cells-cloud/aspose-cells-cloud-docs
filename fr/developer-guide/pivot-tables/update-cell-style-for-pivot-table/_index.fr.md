@@ -8,6 +8,7 @@ aliases: [/update-cell-style-for-pivot-table/]
 keywords: Update cell style for a pivot table
 description: Aspose.Cells Cloud REST API prend en charge la mise à jour du style de cellule pour un tableau croisé dynamique. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 90
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdwon, Mettre à jour le style de cellule pour le tableau croisé dynamique
 ---
 Ce REST API indique la cellule de mise à jour `style` pour le tableau croisé dynamique.
  
@@ -20,7 +21,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottable
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Nom du document.|
 | Nom de la feuille| chaîne| chemin| Le nom de la feuille de calcul.|
@@ -28,7 +29,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottable
 | colonne| entier| requête||
 | rangée| entier| requête||
 | style|| corps| Style dto dans le corps de la demande.|
-| besoinReCalculer| booléen| requête| FAUX|
+| besoinReCalculer|booléen| requête| FAUX|
 | dossier| chaîne| requête| Dossier du document.|
 | Nom de stockage| chaîne| requête| nom de stockage.|
  

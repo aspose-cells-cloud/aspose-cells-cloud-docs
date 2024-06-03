@@ -1,29 +1,30 @@
 ﻿---
-title: GetPivotTableFiel
+title: PivotTableFiel abrufen
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/getpivottablefield/
-description: Rufen Sie Beschreibungen von Pivot-Feldern in der PivotTable ab
+description: Abrufen von Beschreibungen von Pivot-Feldern in der PivotTable
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, GetPivotTableField
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetPivotTableField" >}}
 {{< blocks/products/cells/docs-title titlemsg="Retrieve descriptions of pivot fields in the PivotTable." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotField,GET,Beschreibungen von Pivot-Feldern in der PivotTable abrufen.,<a href=\'https://apireference.aspose.cloud/cells/ #/PivotTables/GetPivotTableField\'>GetPivotTableField</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotField,GET,Beschreibungen von Pivot-Feldern in der PivotTable abrufen.,<a href=\'https://apireference.aspose.cloud/cells/#/PivotTables/GetPivotTableField\'>GetPivotTableField</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="PivotTableIndex,Integer,Der PivotTable-Index." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="pivotTableIndex,integer,Der PivotTable-Index." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="PivotFieldIndex,Integer,Der Pivot-Feldindex von PivotTable." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="PivotFieldType,String,Der Feldbereichstyp (Spalte/Zeile)." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="pivotFieldIndex, Integer, Der Pivot-Feldindex der PivotTable." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="pivotFieldType, string, Der Feldbereichstyp (Spalte/Zeile)." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/PivotTablesController/GetPivotTableField\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

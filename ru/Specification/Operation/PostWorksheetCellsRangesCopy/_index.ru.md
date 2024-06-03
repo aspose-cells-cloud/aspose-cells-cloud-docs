@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postworksheetcellsrangescopy/
 description: Скопируйте содержимое из исходного диапазона в целевой диапазон на листе.
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostWorksheetCellsRangesCopy
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangesCopy" >}}

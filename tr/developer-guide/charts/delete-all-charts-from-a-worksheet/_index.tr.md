@@ -4,6 +4,7 @@ type: docs
 url: /tr/charts/clear/
 aliases: [/delete-all-charts-from-a-worksheet/]
 weight: 30
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Çalışma Sayfasındaki Tüm Grafikleri Sil
 ---
 Bu REST API, grafiklerin temiz olduğunu gösterir.
  

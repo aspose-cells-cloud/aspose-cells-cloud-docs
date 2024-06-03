@@ -6,6 +6,7 @@ aliases: [/remove-conditional-formatting/]
 keywords: REST API, spreadsheets, excel, delete cell area from condition formattin
 description: "Cells.Облако API для Excel работает: удалить область ячеек из условия форматирования"
 weight: 60
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Удалить условное форматирование
 ---
 Этот REST API указывает на удаление условного форматирования.
  

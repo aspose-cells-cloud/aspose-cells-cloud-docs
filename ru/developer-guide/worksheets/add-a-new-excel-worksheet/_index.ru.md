@@ -8,6 +8,7 @@ aliases: [/add-a-new-excel-worksheet/]
 keywords: Add an Excel worksheet
 description: Aspose.Cells Cloud REST API поддерживает добавление рабочего листа Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 20
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Добавить лист Excel
 ---
 Этот REST API указывает на `add new worksheet`.
  

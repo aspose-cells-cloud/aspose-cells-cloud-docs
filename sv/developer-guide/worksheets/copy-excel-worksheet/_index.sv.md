@@ -8,6 +8,7 @@ aliases: [/copy-excel-worksheet/]
 keywords: Copies contents and formats from another Excel worksheet
 description: Aspose.Cells Cloud REST API stöder kopiering av innehåll och format från ett annat Excel kalkylblad. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 20
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Kopierar innehåll och format från ett annat kalkylblad.
 ---
  Denna REST API indikerar `copy a worksheet` och spara med nytt namn i samma arbetsbok
  

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/deleteworksheetcharts/
 description: مسح المخططات في أوراق العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، حذف أوراق العمل
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetCharts" >}}

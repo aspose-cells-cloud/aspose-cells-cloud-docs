@@ -8,6 +8,7 @@ aliases: [/match-all-blank-cells-in-the-list/]
 keywords: Match all blank cells in the filter list on an Excel worksheet
 description: Aspose.Cells Cloud API admite la coincidencia de todas las celdas en blanco en la lista de filtros en una hoja de trabajo Excel. El SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 100
+kwords: Excel, Office Cloud, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Coincidir con todas las celdas en blanco en una hoja de trabajo Excel
 ---
 Este REST API indica a `match` todos los `blank cell` en la lista de filtros en una hoja de trabajo Excel.
  

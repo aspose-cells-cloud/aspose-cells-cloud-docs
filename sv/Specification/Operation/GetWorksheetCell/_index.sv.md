@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/getworksheetcell/
 description: Hämta celldata med antingen cellreferens eller metodnamn i kalkylbladet
+kwords: Excel, Office, Spreadsheet, Cloud REST API, GetWorksheetCell
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetCell" >}}

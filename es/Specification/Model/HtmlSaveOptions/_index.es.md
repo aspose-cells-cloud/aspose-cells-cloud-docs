@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/model/htmlsaveoptions/
 description: "Aspose.Cells Especificación del modelo de nube: HtmlSaveOptions. Maneje sin esfuerzo Excel y otros documentos de hoja de cálculo con funciones como abrir, generar, editar, dividir, fusionar, comparar y convertir."
+kwords: Excel, Office, Hoja de cálculo, Nube REST API, HtmlSaveOptions
 weight: 50
 ---
 ## **htmlGuardarOpciones**
 
- Representa opciones para guardar el archivo .html.
+ Representa opciones para guardar un archivo .html.
 
 | Nombre de la propiedad| tipo de propiedad| Anulable| Solo lectura| Valor por defecto| Descripción|
 |:- |:- |:- |:- |:- |:- |
@@ -19,9 +20,9 @@ weight: 50
 | Opciones de imagen| Clase: ImageOrPrintOptions| Verdadero| FALSO|||
 | Guardar como archivo único| Booleano| Verdadero| FALSO|| Indica si se guarda el html como un solo archivo. El valor predeterminado es falso.|
 | Exportar hoja de trabajo oculta| Booleano| Verdadero| FALSO|| Indica si se guarda el html como un solo archivo. El valor predeterminado es falso.|
-| Exportar líneas de cuadrícula| Booleano| Verdadero| FALSO||Indicando si se exportan las líneas de la cuadrícula. El valor predeterminado es falso.|
+| Exportar líneas de cuadrícula| Booleano| Verdadero| FALSO|| Indicando si se exportan las líneas de la cuadrícula. El valor predeterminado es falso.|
 | PresentaciónPreferencia| Booleano| Verdadero| FALSO|| Indica si el archivo html o mht es la preferencia de presentación. El valor predeterminado es falso. Si desea obtener una presentación más hermosa, establezca el valor en verdadero.|
-| PrefijoCssCelda| Cadena| Verdadero| FALSO|| Obtiene y establece el prefijo del nombre CSS, el valor predeterminado es "".|
+| PrefijoCssCelda| Cadena| Verdadero| FALSO||Obtiene y establece el prefijo del nombre CSS, el valor predeterminado es "".|
 | TablaCssId| Cadena| Verdadero| FALSO|| Obtiene y establece el prefijo del nombre de tipo CSS, como tr,col,td, etc., que están contenidos en el elemento de tabla que tiene el atributo TableCssId específico. El valor predeterminado es "".|
 | IsFullPathEnlace| Booleano| Verdadero| FALSO|| Indicando si se utiliza el enlace de ruta completa ensheet00x.htm,filelist.xml y tabstrip.htm. El valor predeterminado es falso.|
 | Exportar hoja de trabajo CSS por separado| Booleano| Verdadero| FALSO|| Indicando si exportar la hoja de trabajo css por separado. El valor predeterminado es falso.|
@@ -56,7 +57,8 @@ weight: 50
 | Crear directorio| Booleano| Verdadero| FALSO|||
 | Habilitar compresión HTTP| Booleano| Verdadero| FALSO|||
 | Actualizar caché de gráficos| Booleano| Verdadero| FALSO|||
-|Ordenar nombres| Booleano| Verdadero| FALSO|||
+| Ordenar nombres| Booleano| Verdadero| FALSO|||
 | Validar áreas fusionadas| Booleano| Verdadero| FALSO|||
 
-**Nombre del padre** : (GuardarOpciones)[guardaropciones]
+**Nombre del padre** : [Guardar Opciones](/specification/model/saveoptions)
+

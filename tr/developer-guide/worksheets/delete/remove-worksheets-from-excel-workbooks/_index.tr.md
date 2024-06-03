@@ -8,6 +8,7 @@ aliases: [/remove-worksheets-from-excel-workbooks/]
 keywords: Delete an Excel worksheet on an Excel workbook
 description: Aspose.Cells Cloud REST API, Excel çalışma kitabındaki Excel çalışma sayfasının silinmesini destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 20
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Çalışma Sayfasını Sil
 ---
 Bu REST API, `delete worksheet`'i gösterir.
  

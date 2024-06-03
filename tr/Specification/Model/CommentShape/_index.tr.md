@@ -4,15 +4,16 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/model/commentshape/
 description: "Aspose.Cells Bulut modeli spesifikasyonu: CommentShape. Açma, oluşturma, düzenleme, bölme, birleştirme, karşılaştırma ve dönüştürme gibi özelliklerle Excel ve diğer elektronik tablo belgelerini zahmetsizce yönetin"
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, CommentShape
 weight: 50
 ---
 ## **Yorum Şekli**
 
- 
+ Yorumun şeklini temsil eder.
 
 | Mülkiyet adı| Emlak Tipi| Geçersiz kılınabilir| Sadece oku| Varsayılan değer| Tanım|
 |:- |:- |:- |:- |:- |:- |
-| Yorum| Sınıf:LinkElement| Doğru| YANLIŞ||Yorum nesnesini alır.|
+| Yorum| Sınıf:LinkElement| Doğru| YANLIŞ|| Yorum nesnesini alır.|
 | İsim| Sicim| Doğru| YANLIŞ|||
 | MsoDrawingType| Sicim| Doğru| YANLIŞ|||
 | Otomatik Şekil Türü| Sicim| Doğru| YANLIŞ|||
@@ -30,7 +31,7 @@ weight: 50
 | X| Tamsayı| Doğru| YANLIŞ|||
 | e| Tamsayı| Doğru| YANLIŞ|||
 | Dönüş açısı| Yüzer| Doğru| YANLIŞ|||
-| HtmlMetin| Sicim| Doğru| YANLIŞ|||
+|HtmlMetin| Sicim| Doğru| YANLIŞ|||
 | Metin| Sicim| Doğru| YANLIŞ|||
 | Alternatif metin| Sicim| Doğru| YANLIŞ|||
 | MetinYatay Hizalama| Sicim| Doğru| YANLIŞ|||
@@ -51,4 +52,5 @@ weight: 50
 | Köprü| Sicim| Doğru| YANLIŞ|||
 | bağlantı| Sınıf:Bağlantı| Doğru| YANLIŞ|||
 
-**Ebeveyn adı** : (Şekil)[şekil]
+**Ebeveyn adı** : [Şekil](/specification/model/shape)
+

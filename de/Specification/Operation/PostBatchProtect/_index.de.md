@@ -3,19 +3,20 @@ title: PostBatchProtec
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postbatchprotect/
-description: Batch-Schutz von Dateien, die bestimmte Übereinstimmungsbedingungen erfüllen
+description: Stapelweises Schützen von Dateien, die bestimmte Übereinstimmungsbedingungen erfüllen
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostBatchProtect
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostBatchProtect" >}}
 {{< blocks/products/cells/docs-title titlemsg="Batch protecting files that meet specific matching conditions." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="/cells/batch/protect,POST,Batch-Schutz von Dateien, die bestimmte Übereinstimmungsbedingungen erfüllen.,<a href=\'https://apireference.aspose.cloud/cells/#/Batch/PostBatchProtect\'>PostBatchProtect</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="batchProtectRequest,class:batchprotectrequest,BatchProtectRequest Batch-Schutzdateianforderung." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns=" batchProtectRequest,Klasse:batchprotectrequest,BatchProtectRequest Batch-Schutzdateianforderung." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

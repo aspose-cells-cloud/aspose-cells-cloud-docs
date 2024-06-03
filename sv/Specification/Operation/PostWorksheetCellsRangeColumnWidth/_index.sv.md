@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/postworksheetcellsrangecolumnwidth/
 description: Ställ in kolumnbredden för det angivna intervallet
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostWorksheetCellsRangeColumnWidth
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangeColumnWidth" >}}

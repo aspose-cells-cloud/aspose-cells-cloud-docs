@@ -4,6 +4,7 @@ type: docs
 url: /it/charts/legend/get/
 aliases: [/get-chart-legend-from-a-worksheet/]
 weight: 80
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Ottieni legenda del grafico da un foglio di lavoro
 ---
 Questo REST API indica la legenda del grafico
  

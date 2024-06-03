@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/deleteworksheet/
 description: Eliminar una hoja de trabajo en el libro de trabajo
+kwords: Excel, Office, Hoja de cálculo, Cloud REST API, Eliminar hoja de trabajo
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheet" >}}

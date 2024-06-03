@@ -6,6 +6,7 @@ aliases: [/delete-all-comments-in-a-worksheet/]
 keywords: REST API, spreadsheets, excel, clear comment
 description: "Cells.Cloud API, Excel için çalışır: yorumları netleştirin"
 weight: 50
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Clear
 ---
 Bu REST API, Çalışma sayfası için tüm yorumları sil anlamına gelir.
  

@@ -4,6 +4,7 @@ type: docs
 url: /sv/charts/delete/
 aliases: [/delete-a-chart-from-a-worksheet/]
 weight: 40
+kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdwon, Ta bort ett diagram från ett arbetsblad
 ---
 Denna REST API anger radera kalkylbladsdiagram efter index.
  

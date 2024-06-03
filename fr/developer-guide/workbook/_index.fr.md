@@ -7,6 +7,7 @@ aliases: [/working-with-workbook/]
 keywords: Working with workbook on an Excel file
 description: Aspose.Cells Prise en charge de Cloud REST API pour l'utilisation d'un classeur sur un fichier Excel. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 100
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, classeur
 ---
 ## Travailler avec un classeur Excel.
 

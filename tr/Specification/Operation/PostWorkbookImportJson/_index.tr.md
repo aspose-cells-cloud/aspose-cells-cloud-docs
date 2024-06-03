@@ -4,13 +4,14 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/postworkbookimportjson/
 description: Bir JSON veri dosyasını çalışma kitabına aktarın. JSON veri dosyası bir bulut dosyası veya bir HTTP URI'sinden gelen veriler olabilir
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PostWorkbookImportJson
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookImportJson" >}}
 {{< blocks/products/cells/docs-title titlemsg="Import a JSON data file into the workbook. The JSON data file can either be a cloud file or data from an HTTP URI." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Açıklama,API referans" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/importjson,POST,Bir JSON veri dosyasını çalışma kitabına aktarın. JSON veri dosyası bir bulut dosyası veya bir HTTP URI\'sinden gelen veriler olabilir.,<a href=\'https://apireference.aspose.cloud/cells/#/DataProcessing/PostWorkbookImportJson\'>PostWorkbookImportJson</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/importjson,POST,Bir JSON veri dosyasını çalışma kitabına aktarın. JSON veri dosyası bir bulut dosyası veya bir HTTP URI\'sinden alınan veriler olabilir.,<a href=\'https://apireference.aspose.cloud/cells/#/DataProcessing/PostWorkbookImportJson\'>PostWorkbookImportJson</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

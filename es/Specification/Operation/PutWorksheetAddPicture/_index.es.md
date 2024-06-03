@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/putworksheetaddpicture/
 description: Agregar una nueva imagen en la hoja de trabajo
+kwords: Excel, Office, Hoja de cálculo, Nube REST API, PutWorksheetAddPicture
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetAddPicture" >}}

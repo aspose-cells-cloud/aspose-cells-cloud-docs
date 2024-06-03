@@ -8,6 +8,7 @@ aliases: [/add-a-list-object-or-table-inside-the-worksheet/,/tables/add/]
 keywords: Add a list object(table) into an Excel worksheet
 description: Aspose.Cells Cloud REST API supporta l'aggiunta di un oggetto elenco (tabella) in un foglio di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 10
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Aggiungi un oggetto elenco in un foglio di lavoro Excel
 ---
 Questo REST API indica `add a list object(table)` in un foglio di lavoro Excel.
  
@@ -25,10 +26,10 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects
 | nome| corda| sentiero| Nome del documento.|
 | nomefoglio| corda| sentiero| Il nome del foglio di lavoro.|
 | startRow| numero intero| domanda| La riga iniziale dell'intervallo di elenchi.|
-| startColumn| numero intero| domanda| La riga iniziale dell'intervallo di elenchi.|
+| startColonna| numero intero| domanda| La riga iniziale dell'intervallo di elenchi.|
 | endRow| numero intero| domanda| La riga iniziale dell'intervallo di elenchi.|
 | endColumn| numero intero| domanda| La riga iniziale dell'intervallo di elenchi.|
-| hasHeaders| booleano| domanda| VERO|
+| hasHeaders|booleano| domanda| VERO|
 | listObject|| corpo| Elenco oggetto|
 | cartella| corda| domanda| Cartella del documento.|
 | storageName| corda| domanda| nome dell'archivio.|

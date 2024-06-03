@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/model/autofitteroptions/
 description: "Aspose.Cells Especificación del modelo de nube: AutoFitterOptions. Maneje sin esfuerzo Excel y otros documentos de hoja de cálculo con funciones como abrir, generar, editar, dividir, fusionar, comparar y convertir."
+kwords: Excel, Office, Hoja de cálculo, Cloud REST API, AutoFitterOptions
 weight: 50
 ---
 ## **opciones de autoFitter**
 
- 
+ Representa todas las opciones de instalador automático.
 
 | Nombre de la propiedad| tipo de propiedad| Anulable| Solo lectura| Valor por defecto| Descripción|
 |:- |:- |:- |:- |:- |:- |
@@ -17,7 +18,7 @@ weight: 50
 | Sólo Auto| Booleano| Verdadero| FALSO|| Indica si solo se ajustan las filas cuya altura no está personalizada.|
 | Idioma de edición predeterminado| Cadena| Verdadero| FALSO|| Obtiene o establece el idioma de edición predeterminado.|
 | Altura máxima de fila| Flotante| Verdadero| FALSO|| Obtiene y establece la altura máxima de la fila (en unidades de Punto) al ajustar automáticamente las filas.|
-| Tipo de texto envuelto de ajuste automático| Cadena| Verdadero| FALSO||Obtiene y establece el tipo de texto ajustado de ajuste automático.|
+|Tipo de texto envuelto de ajuste automático| Cadena| Verdadero| FALSO|| Obtiene y establece el tipo de texto ajustado de ajuste automático.|
 | FormatoEstrategia| Cadena| Verdadero| FALSO|| Obtiene y establece la estrategia formateada.|
 | Para renderizado| Booleano| Verdadero| FALSO|| Indica si es apto para el propósito de renderizado.|
 

@@ -8,6 +8,7 @@ aliases: [/autofit-rows-and-columns-of-worksheet/]
 keywords: Autofit rows and columns on an Excel worksheet
 description: Aspose.Cells Cloud REST API يدعم الضبط التلقائي للصفوف والأعمدة في ورقة عمل Excel. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 20
+kwords: Excel، Office Cloud، REST API، جدول البيانات، PDF، CSV، Json، Markdwon، العمل مع الاحتواء التلقائي في ورقة عمل Excel
 ---
 ## العمل مع الاحتواء التلقائي في ورقة عمل Excel
 

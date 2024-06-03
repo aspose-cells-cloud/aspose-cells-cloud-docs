@@ -4,8 +4,9 @@ type: docs
 url: /tr/conditional-formattings/add-a-condition/
 aliases: [/add-a-condition-for-format-condition/]
 keywords: REST API, spreadsheets, excel, add conditiona
-description: "Cells.Cloud API için Excel'i çalıştırın: koşullu ekleyin"
+description: "Cells.Cloud API, Excel için çalışır: koşullu ekleyin"
 weight: 40
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Koşul Ekle
 ---
 Bu REST API, biçim koşulu için koşul ekle anlamına gelir.
  

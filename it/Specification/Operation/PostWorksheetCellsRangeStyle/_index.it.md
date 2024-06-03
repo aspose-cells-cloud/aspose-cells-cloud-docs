@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/postworksheetcellsrangestyle/
 description: Imposta lo stile per l'intervallo specificato
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PostWorksheetCellsRangeStyle
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangeStyle" >}}
@@ -23,7 +24,7 @@ weight: 50
     {{< blocks/products/cells/docs-Parameter-content columns="storageName,stringa,nome dell\'archivio." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Nome parametro, Tipo, Descrizione" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns=" rangeOperate,class:rangesetstylerequest,RangeSetStyleRequest Richiesta di stile set di intervalli" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="rangeOperate,class:rangesetstylerequest,RangeSetStyleRequest Richiesta di stile set di intervalli" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

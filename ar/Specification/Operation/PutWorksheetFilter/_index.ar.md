@@ -4,13 +4,14 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/putworksheetfilter/
 description: إضافة عامل تصفية لعمود في ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PutWorksheetFilter
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetFilter" >}}
 {{< blocks/products/cells/docs-title titlemsg="Add a filter for a column in the worksheet." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API، طريقة المتشعب، الوصف، مرجع API" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/autoFilter/filter,PUT,أضف عامل تصفية لعمود في ورقة العمل.,<a href=\'https://apireference.aspose.cloud/cells/#/AutoFilter /PutWorksheetFilter\'>PutWorksheetFilter</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/autoFilter/filter,PUT,أضف مرشحًا لعمود في ورقة العمل.,<a href=\'https://apireference.aspose.cloud/cells/#/AutoFilter /PutWorksheetFilter\'>PutWorksheetFilter</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

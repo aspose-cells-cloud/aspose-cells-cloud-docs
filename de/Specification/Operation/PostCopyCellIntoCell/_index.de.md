@@ -3,29 +3,30 @@ title: PostCopyCellIntoCel
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postcopycellintocell/
-description: Kopieren Sie Daten aus einer Quellzelle in eine Zielzelle im Arbeitsblatt
+description: Kopieren von Daten aus einer Quellzelle in eine Zielzelle im Arbeitsblatt
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostCopyCellIntoCell
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostCopyCellIntoCell" >}}
 {{< blocks/products/cells/docs-title titlemsg="Copy data from a source cell to a destination cell in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells/{destCellName}/copy,POST,Kopieren Sie Daten von einer Quellzelle in eine Zielzelle im Arbeitsblatt.,<a href=\'https://apireference.aspose .cloud/cells/#/Cells/PostCopyCellIntoCell\'>PostCopyCellIntoCell</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells/{destCellName}/copy,POST,Daten von einer Quellzelle in eine Zielzelle im Arbeitsblatt kopieren.,<a href=\'https://apireference.aspose.cloud/cells/#/Cells/PostCopyCellIntoCell\'>PostCopyCellIntoCell</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="destCellName,string,Der Name der Zielzelle." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Name des Zielarbeitsblatts." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="destCellName, string, Der Name der Zielzelle." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Zielarbeitsblatts." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="Arbeitsblatt, Zeichenfolge, Der Name des Quellarbeitsblatts." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="cellname,string,Der Name der Quellzelle." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="row,integer,Der Quellzeilenindex." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Zellenname, Zeichenfolge, Der Name der Quellzelle." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Zeile, Ganzzahl, Der Quellzeilenindex." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Spalte, Ganzzahl, Der Quellspaltenindex." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/CellsController/PostCopyCellIntoCell\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

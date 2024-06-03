@@ -6,6 +6,7 @@ aliases: [/add-a-format-condition/]
 keywords: REST API, spreadsheets, excel, add a format conditio
 description: "Cells. Cloud API för Excel fungera: lägg till ett formatvillkor"
 weight: 50
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Lägg till formatvillkor
 ---
 Denna REST API indikerar Lägg till ett formatvillkor.
  

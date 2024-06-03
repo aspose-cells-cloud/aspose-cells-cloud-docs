@@ -8,6 +8,7 @@ aliases: [/combines-a-range-of-cells-into-a-single-cell/]
 keywords: Merge a range of cells into a single cell
 description: Aspose.Cells Cloud REST API admite la combinación de un rango de celdas en una sola celda en una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 20
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Combina un rango de Cells en una sola celda
 ---
  Este REST API indica fusionar un rango de celdas en una sola celda en una hoja de trabajo Excel.
             

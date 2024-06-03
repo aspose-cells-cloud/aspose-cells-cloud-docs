@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postrepair/
 description: إصلاح الملفات غير الطبيعية وإنشاء ملفات بتنسيقات مختلفة
+kwords: Excel, Office, جدول البيانات, Cloud REST API, PostRepair
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostRepair" >}}

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/gethorizontalpagebreaks/
 description: استرداد أوصاف فواصل الصفحات الأفقية في ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، GetHorizontalPageBreaks
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetHorizontalPageBreaks" >}}

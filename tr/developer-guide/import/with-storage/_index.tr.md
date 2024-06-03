@@ -7,6 +7,7 @@ url: /tr/import/with-using-storage/
 aliases: [/import-data-into-excel-worksheet/, /import-data-into-worksheet/ , /import-data-in-excel-worksheet/, /import-data/]
 description: "Cells.Cloud API, Excel için şunu çalıştırın: Verileri Excel Çalışma Sayfasına Aktarın"
 weight: 10
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Depolama kullanarak Verileri İçe Aktarma
 ---
 Bu REST API, `import data`'i Excel dosyasına belirtir.
  

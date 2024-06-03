@@ -1,27 +1,28 @@
 ﻿---
-title: 获取垂直页面Brea
+title: 获取垂直页边距
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/getverticalpagebreak/
 description: 检索工作表中的垂直分页符描述
+kwords: Excel，Office，电子表格，云 REST API，GetVerticalPageBreak
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetVerticalPageBreak" >}}
 {{< blocks/products/cells/docs-title titlemsg="Retrieve a vertical page break description in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/verticalpagebreaks/{index},GET,检索工作表中的垂直分页符描述。,<a href=\'https://apireference.aspose.cloud/cells/# /PageBreaks/GetVerticalPageBreak\'>GetVerticalPageBreak</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/verticalpagebreaks/{index},GET,检索工作表中的垂直分页符描述。,<a href=\'https://apireference.aspose.cloud/cells/#/PageBreaks/GetVerticalPageBreak\'>GetVerticalPageBreak</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="参数名称、类型、描述" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="名称，字符串，工作簿名称。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,字符串,工作表名称。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="index,integer,元素的从零开始的索引。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="name,string,工作簿名称。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName，string，工作表名称。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="index，整数，元素从零开始的索引。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="文件夹，字符串，文件所在的文件夹。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,文件所在的存储名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName，string，文件所在的存储名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/PageBreaksController/GetVerticalPageBreak\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

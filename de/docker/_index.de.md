@@ -4,8 +4,9 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/docker-developer-guide/
 aliases: [/docker/]
-description: Aspose.Cells Wolke
+description: Aspose.Cells Cloud
 weight: 30
+kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdwon, Docker
 ---
 ## Aspose.Cells Cloud Docker
 
@@ -13,12 +14,12 @@ weight: 30
 
 
 
-## API Referenz – Aspose.Cells Cloud Docker
+## API Referenz - Aspose.Cells Cloud Docker
 
-- https://hostname:port/swagger
-- https://hostname:port/swagger/ui/index.html
+- https://Hostname:Port/Swagger
+- https://Hostname:Port/swagger/ui/index.html
 
 sehen:
 - [Download-Information](/cells/de/docker/downloads/) 
-- [Laufinformationen](/cells/de/docker/run/) 
+- [Informationen zum Lauf](/cells/de/docker/run/) 
 - [Speicherinformationen](/cells/de/docker/storage/) 

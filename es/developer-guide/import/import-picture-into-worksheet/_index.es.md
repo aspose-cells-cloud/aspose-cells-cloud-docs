@@ -8,6 +8,7 @@ aliases: [/import-picture-into-excel-worksheet/,/import-picture-into-worksheet/,
 keywords: Import picture into Excel files
 description: Aspose.Cells Cloud REST API admite la importación de imágenes en archivos Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 19
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Importar imagen a hoja de trabajo Excel
 ---
 Este REST API `import picture data` en la hoja de trabajo Excel.
 
@@ -36,7 +37,7 @@ Los parámetros importantes se describen en la siguiente tabla:
 | Columna inferior derecha| En t||
 | Nombre del archivo| cadena||
 | Datos| Cadena||
-| Hoja de cálculo de destino| cadena| nombre de la hoja de trabajo de destino.|
+| Hoja de trabajo de destino| cadena| nombre de la hoja de trabajo de destino.|
 | EsInsertar| cadena| verdadero Falso.|
 | Importar tipo de datos| cadena|IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/Picture.|
 | Fuente| Fuente de archivo| Indica la posición del archivo de datos cuando el parámetro BatchData es nulo.|

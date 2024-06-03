@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/getpagecount/
 description: Obtenir le nombre de pages dans le classeur
+kwords: Excel, Office, feuille de calcul, Cloud REST API, GetPageCount
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetPageCount" >}}

@@ -1,28 +1,29 @@
 ﻿---
-title: WorksheetPivotTableFilter löschen
+title: LöschenArbeitsblattPivotTableFilter
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/deleteworksheetpivottablefilters/
-description: Löschen Sie alle Pivot-Filter in der PivotTable
+description: Löschen aller Pivotfilter in der PivotTable
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, Arbeitsblatt löschenPivotTabelleFilter
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetPivotTableFilters" >}}
 {{< blocks/products/cells/docs-title titlemsg="Delete all pivot filters in the PivotTable." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotFilters,DELETE,Alle Pivot-Filter in der PivotTable löschen.,<a href=\'https://apireference.aspose.cloud/cells/# /PivotTables/DeleteWorksheetPivotTableFilters\'>DeleteWorksheetPivotTableFilters</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotFilters,DELETE,Alle Pivot-Filter in der PivotTable löschen.,<a href=\'https://apireference.aspose.cloud/cells/#/PivotTables/DeleteWorksheetPivotTableFilters\'>DeleteWorksheetPivotTableFilters</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="PivotTableIndex,Integer,Der PivotTable-Index." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="pivotTableIndex,integer,Der PivotTable-Index." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="needReCalculate,boolean,Gibt an, ob die spezifische PivotTable berechnet wird (wahr/falsch)." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="needReCalculate, boolean, Ob die spezifische PivotTable berechnet werden soll (true/false)." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/PivotTablesController/DeleteWorksheetPivotTableFilters\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

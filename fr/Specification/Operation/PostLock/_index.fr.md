@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postlock/
 description: Verrouiller les fichiers Excel
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostLock
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostLock" >}}

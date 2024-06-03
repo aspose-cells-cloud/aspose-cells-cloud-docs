@@ -7,6 +7,7 @@ url: /es/rows/add/rows/
 keywords: Add multi rows on an Excel workshee
 description: Aspose.Cells Cloud REST API admite la adición de varias filas en una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 20
+kwords: Excel, Office Cloud, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Agregar varias filas en una hoja de trabajo Excel
 ---
 Este REST API indica agregar varias filas de hoja de trabajo nuevas en una hoja de trabajo Excel.
  
@@ -21,11 +22,11 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
  
 | Nombre del parámetro| Tipo| Ruta/Cadena de consulta/Cuerpo HTTP|Descripción|
 |:- |:- |:- |:- |
-| nombre| cadena| camino|El nombre del libro de trabajo.|
+| nombre| cadena| camino| El nombre del libro de trabajo.|
 | nombre de la hoja| cadena| camino| El nombre de la hoja de trabajo.|
 | inicio| entero| consulta| El índice de fila inicial que se va a operar.|
 | filas totales| entero| consulta|1 |
-| actualizarReferencia| booleano| consulta| Verdadero|
+| actualizarReferencia|booleano| consulta| Verdadero|
 | carpeta| cadena| consulta| La carpeta de documentos.|
 | nombredealmacenamiento| cadena| consulta| nombre del almacenamiento.|
  

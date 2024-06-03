@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/deleteworksheetchart/
 description: Supprimer un graphique par index dans la feuille de calcul
+kwords: Excel, Office, feuille de calcul, Cloud REST API, DeleteWorksheetChart
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetChart" >}}

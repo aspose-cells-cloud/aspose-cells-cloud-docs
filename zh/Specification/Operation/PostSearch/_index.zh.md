@@ -1,24 +1,25 @@
 ﻿---
-title: 后搜索
+title: 邮政搜索
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/postsearch/
-description: 在 Excel 文件中搜索指定文本
+description: 在 Excel 个文件中搜索指定文本
+kwords: Excel, Office, 电子表格, Cloud REST API, PostSearch
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostSearch" >}}
 {{< blocks/products/cells/docs-title titlemsg="Search for specified text within Excel files." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="/cells/search,POST,在 Excel 个文件中搜索指定文本。,<a href=\'https://apireference.aspose.cloud/cells/#/LightCells/PostSearch\'>PostSearch</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="文本、字符串、查找内容" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="密码,字符串,打开Excel文件所需的密码。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="sheetname,字符串,工作表名称。在工作表中找到指定的文本内容。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction,boolean,用户修改单元格相关对象时是否检查excel文件的限制。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="文本，字符串，查找内容" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="password，string，打开Excel文件所需的密码。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="sheetname,string,工作表名称，在工作表中定位指定的文本内容。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction,boolean,当用户修改单元格相关对象时是否检查excel文件的限制。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/LightCellsController/PostSearch\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

@@ -8,8 +8,9 @@ aliases: [/move-a-named-ranged-with-a-excel-worksheet/]
 keywords: Move a named ranged with an Excel workshee
 description: Aspose.Cells Cloud REST API поддерживает перемещение именованного диапазона с помощью листа Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 20
+kwords: Excel, Office Cloud, REST API, электронная таблица, PDF, CSV, Json, Markdwon, перемещение именованного диапазона с помощью листа Excel.
 ---
- Этот REST API указывает на перемещение текущего диапазона в целевой диапазон на листе Excel.
+Этот REST API указывает на перемещение текущего диапазона в целевой диапазон на листе Excel.
             
  
 ## РСЕТ API

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postcopyworksheetcolumns/
 description: انسخ البيانات من أعمدة المصدر إلى أعمدة الوجهة في ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostCopyWorksheetColumns
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostCopyWorksheetColumns" >}}

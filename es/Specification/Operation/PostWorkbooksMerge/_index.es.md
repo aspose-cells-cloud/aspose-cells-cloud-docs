@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/postworkbooksmerge/
 description: Fusionar un libro de trabajo con el libro de trabajo existente
+kwords: Excel, Office, hoja de cálculo, nube REST API, PostWorkbooksMerge
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbooksMerge" >}}

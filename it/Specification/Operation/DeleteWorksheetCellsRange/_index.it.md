@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/deleteworksheetcellsrange/
 description: Elimina un intervallo di celle e sposta le celle esistenti in base all'opzione di spostamento specificata
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, EliminaWorksheetCellsRange
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetCellsRange" >}}

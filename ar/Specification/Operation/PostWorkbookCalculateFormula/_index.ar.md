@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postworkbookcalculateformula/
 description: حساب كافة الصيغ في المصنف
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostWorkbookCalculateFormula
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookCalculateFormula" >}}

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postclearobjects/
 description: Effacer les éléments internes des fichiers Excel et générer des fichiers de sortie dans différents formats
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostClearObjects
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostClearObjects" >}}

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/postwatermark/
 description: Aggiungi filigrana di testo ai file Excel e genera file di output in vari formati
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PostWatermark
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWatermark" >}}

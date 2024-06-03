@@ -3,6 +3,7 @@ title: Excel Çalışma Sayfasındaki Hücre Formülünü Ayarlama
 type: docs
 url: /tr/set-formula-for-a-cell-in-excel-worksheets/
 weight: 80
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel Çalışma Sayfalarında Hücre Formülünü Ayarla
 ---
 Bu REST API, bir Excel dosyasındaki `cell formula` setini gösterir.
  

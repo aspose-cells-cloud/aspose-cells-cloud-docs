@@ -4,6 +4,7 @@ type: docs
 url: /sv/charts/legend/hide/
 aliases: [/hide-chart-legend-in-a-worksheet/]
 weight: 110
+kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdwon, Dölj diagramförklaring i ett kalkylblad
 ---
 Denna REST API indikerar gömma förklaringar i diagrammet
  

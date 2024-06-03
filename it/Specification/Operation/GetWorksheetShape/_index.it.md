@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/getworksheetshape/
 description: Recupera la descrizione della forma nel foglio di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, GetWorksheetShape
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetShape" >}}

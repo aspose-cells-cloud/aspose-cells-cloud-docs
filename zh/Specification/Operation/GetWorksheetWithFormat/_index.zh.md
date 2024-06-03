@@ -1,31 +1,32 @@
 ﻿---
-title: 获取带有Forma的工作表
+title: 获取工作表
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/getworksheetwithformat/
 description: 从工作簿中检索指定格式的工作表
+kwords: Excel，Office，电子表格，云 REST API，GetWorksheetWithFormat
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetWithFormat" >}}
 {{< blocks/products/cells/docs-title titlemsg="Retrieve the worksheet in a specified format from the workbook." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName},GET,从工作簿中检索指定格式的工作表。,<a href=\'https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetWithFormat\' >获取带有格式的工作表</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName},GET,从工作簿中检索指定格式的工作表。,<a href=\'https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetWithFormat\'>GetWorksheetWithFormat</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="参数名称、类型、描述" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="名称，字符串，文件名。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,字符串,工作表名称。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="name，string，文件名。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName，string，工作表名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="格式，字符串，导出格式(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP /MD [Markdown]/数字）。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="VerticalResolution,整数,图像垂直分辨率。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="格式，字符串，导出格式（CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers）。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="verticalResolution，整数，图像垂直分辨率。" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="HorizontalResolution，整数，图像水平分辨率。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="area,string,表示要打印的范围。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="pageIndex,integer,表示要打印的页" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="area，string，表示需要打印的范围。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="pageIndex，integer，表示要打印的页面" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="文件夹，字符串，文件所在的文件夹。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,文件所在的存储名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName，string，文件所在的存储名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/WorksheetsController/GetWorksheetWithFormat\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

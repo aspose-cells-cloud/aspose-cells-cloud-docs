@@ -8,6 +8,7 @@ aliases: [/convert-excel-file-to-pdf-in-cloud/]
 keywords: Convert excel files to pdf files
 description: Aspose.Cells Cloud REST API admite la conversión de archivos de Excel a archivos PDF. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 80
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Excel a PDF
 ---
 Este archivo de Excel REST API `saveas` a PDF.
 
@@ -15,11 +16,11 @@ Este archivo de Excel REST API `saveas` a PDF.
 
 Este archivo de Excel REST API `convert` a PDF.
 
-[PUT /celdas/convertir](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)API le permite convertir el archivo MS Excel al archivo PDF con configuraciones adicionales y guardar el resultado en la respuesta.
+[PUT /celdas/convertir](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) API le permite convertir el archivo MS Excel al archivo PDF con configuraciones adicionales y guardar el resultado en la respuesta.
 
 Este archivo de Excel REST API `export` a PDF.
 
-[OBTENER /celdas/{nombre}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook  )API le permite convertir el archivo MS Excel al archivo PDF con configuraciones adicionales y guardar el resultado en la respuesta.
+[OBTENER /celdas/{nombre}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook  ) API le permite convertir el archivo MS Excel al archivo PDF con configuraciones adicionales y guardar el resultado en la respuesta.
 
 ## DESCANSO API
 
@@ -34,7 +35,7 @@ Este archivo de Excel REST API `export` a PDF.
 
  Estos[PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook), [Obtener libro de trabajo](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook), [Publicar documento guardar como](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) Las API definen una interfaz de programación de acceso público y le permiten realizar interacciones REST directamente desde un navegador web.
 
- Puedes usar**cURL** Herramienta de línea de comandos para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
+ Puedes usar**cURL**Herramienta de línea de comandos para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
 
 
 

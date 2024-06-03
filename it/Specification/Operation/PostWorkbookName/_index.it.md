@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/postworkbookname/
 description: Aggiorna un intervallo denominato nella cartella di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PostWorkbookName
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookName" >}}

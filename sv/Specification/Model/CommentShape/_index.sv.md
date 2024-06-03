@@ -4,15 +4,16 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/model/commentshape/
 description: "Aspose.Cells Molnmodellspecifikation: CommentShape. Hantera enkelt Excel och andra kalkylarksdokument med funktioner som att öppna, generera, redigera, dela, slå samman, jämföra och konvertera"
+kwords: Excel, Office, Kalkylblad, Cloud REST API, CommentShape
 weight: 50
 ---
 ## **kommentarShape**
 
- 
+ Representerar formen på kommentaren.
 
 | Egendomsnamn| Egenskapstyp| Nullbar| Endast läs| Standardvärde| Beskrivning|
 |:- |:- |:- |:- |:- |:- |
-| Kommentar| Klass: LinkElement| Sann| Falsk||Hämtar kommentarobjektet.|
+| Kommentar| Klass: LinkElement| Sann| Falsk|| Hämtar kommentarobjektet.|
 | namn| Sträng| Sann| Falsk|||
 | MsoDrawingType| Sträng| Sann| Falsk|||
 | AutoShapeType| Sträng| Sann| Falsk|||
@@ -30,7 +31,7 @@ weight: 50
 | X| Heltal| Sann| Falsk|||
 | Y| Heltal| Sann| Falsk|||
 | Rotations vinkel| Flytande| Sann| Falsk|||
-| HtmlText| Sträng| Sann| Falsk|||
+|HtmlText| Sträng| Sann| Falsk|||
 | Text| Sträng| Sann| Falsk|||
 | Alternativtext| Sträng| Sann| Falsk|||
 | TextHorizontal Alignment| Sträng| Sann| Falsk|||
@@ -51,4 +52,5 @@ weight: 50
 | Hyperlänk| Sträng| Sann| Falsk|||
 | länk| Klass: Länk| Sann| Falsk|||
 
-**Förälders namn** : (Form)[form]
+**Förälders namn** : [Form](/specification/model/shape)
+

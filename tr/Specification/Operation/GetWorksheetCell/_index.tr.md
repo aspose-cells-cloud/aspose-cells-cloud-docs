@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/getworksheetcell/
 description: Çalışma sayfasındaki hücre referansını veya yöntem adını kullanarak hücre verilerini alın
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, GetWorksheetCell
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetCell" >}}

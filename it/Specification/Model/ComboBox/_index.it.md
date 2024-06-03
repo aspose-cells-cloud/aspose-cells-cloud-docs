@@ -4,18 +4,19 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/model/combobox/
 description: "Aspose.Cells Specifica del modello Cloud: ComboBox. Gestisci facilmente Excel e altri fogli di calcolo con funzionalità come apertura, generazione, modifica, divisione, unione, confronto e conversione"
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, ComboBox
 weight: 50
 ---
 ## **casella combinata**
 
- 
+ Rappresenta il modulo di controllo ComboBox.
 
 | Nome della proprietà| Tipo di proprietà| Nullabile| Sola lettura| Valore di default| Descrizione|
 |:- |:- |:- |:- |:- |:- |
 | DropDownLine| Numero intero| VERO| Falso|| Ottiene o imposta il numero di righe di elenco visualizzate nella parte a discesa di una casella combinata.|
 | Intervallo di input| Corda| VERO| Falso|||
 | Cella selezionata| Classe:LinkElement| VERO| Falso|| Ottiene la cella selezionata nell'intervallo di input della casella combinata.|
-| Indice selezionato| Numero intero| VERO| Falso|| Ottiene o imposta il numero di indice dell'elemento attualmente selezionato in una casella di riepilogo o in una casella combinata. A base zero.|
+| Indice selezionato| Numero intero| VERO| Falso||Ottiene o imposta il numero di indice dell'elemento attualmente selezionato in una casella di riepilogo o in una casella combinata. A base zero.|
 | Valore selezionato| Corda| VERO| Falso|| Ottiene il valore selezionato della casella combinata.|
 | Ombra| Booleano| VERO| Falso|| Indica se la casella combinata ha un'ombreggiatura 3D.|
 | Nome| Corda| VERO| Falso|||
@@ -35,7 +36,7 @@ weight: 50
 | X| Numero intero| VERO| Falso|||
 | Y| Numero intero| VERO| Falso|||
 | Angolo di rotazione| Galleggiante| VERO| Falso|||
-| HtmlText| Corda| VERO| Falso|||
+|HtmlText| Corda| VERO| Falso|||
 | Testo| Corda| VERO| Falso|||
 | Testo alternativo| Corda| VERO| Falso|||
 | TestoAllineamento orizzontale| Corda| VERO| Falso|||
@@ -56,4 +57,5 @@ weight: 50
 | Collegamento ipertestuale| Corda| VERO| Falso|||
 | collegamento| Classe: collegamento| VERO| Falso|||
 
-**Nome del genitore** : (Forma)[forma]
+**Nome del genitore** : [Forma](/specification/model/shape)
+

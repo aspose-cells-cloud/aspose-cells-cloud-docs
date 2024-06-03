@@ -8,6 +8,7 @@ aliases: [/remove-a-date-filter/,/autofilter/delete-a-date-filter/]
 weight: 100
 keywords: Delete a date filter on an Excel worksheet
 description: Облако Aspose.Cells API поддерживает удаление фильтра даты на листе Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, удаление фильтра даты
 ---
 Этот REST API указывает на удаление фильтра даты на листе Excel.
             
@@ -25,7 +26,7 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilt
 |:- |:- |:- |:- |
 | имя| нить| путь||
 | имя листа| нить| путь||
-| полеИндекс| целое число| запрос||
+| полеиндекс| целое число| запрос||
 | тип даты и времени группировки| нить| запрос||
 | год| целое число| запрос|0 |
 | месяц| целое число| запрос|0 |

@@ -8,6 +8,7 @@ aliases: [/create-an-empty-excel-workbook/,/workbook/new/]
 keywords: How to create an Excel workbook
 description: Aspose.Cells Cloud REST API как создать пустую книгу Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 20
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Создать пустую книгу Excel
 ---
 Этот REST API указывает на создание `empty workbook`.
 
@@ -37,7 +38,7 @@ weight: 20
 
 [Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookCreate) определяет общедоступный интерфейс программирования и позволяет выполнять взаимодействие с REST непосредственно из веб-браузера.
 
- Вы можете использовать**cURL** инструмент командной строки для легкого доступа к веб-службам Aspose.Cells. В следующем примере показано, как позвонить на Cloud API с помощью cURL.
+ Вы можете использовать**cURL**инструмент командной строки для легкого доступа к веб-службам Aspose.Cells. В следующем примере показано, как позвонить на Cloud API с помощью cURL.
 
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}

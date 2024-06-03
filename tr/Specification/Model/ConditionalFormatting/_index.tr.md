@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/model/conditionalformatting/
 description: "Aspose.Cells Bulut modeli spesifikasyonu: Koşullu Biçimlendirme. Açma, oluşturma, düzenleme, bölme, birleştirme, karşılaştırma ve dönüştürme gibi özelliklerle Excel ve diğer elektronik tablo belgelerini zahmetsizce yönetin"
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, Koşullu Biçimlendirme
 weight: 50
 ---
 ## **koşullu biçimlendirme**
@@ -16,4 +17,5 @@ weight: 50
 | FormatKoşullar| Konteyner| Doğru| YANLIŞ|||
 | bağlantı| Sınıf:Bağlantı| Doğru| YANLIŞ|||
 
-**Ebeveyn adı** : (LinkElement)[bağlantıelement]
+**Ebeveyn adı** : [Bağlantı Öğesi](/specification/model/linkelement)
+

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/model/xlsbsaveoptions/
 description: "Aspose.Cells مواصفات النموذج السحابي: XlsbSaveOptions. تعامل بسهولة مع Excel ومستندات جداول البيانات الأخرى التي تحتوي على ميزات مثل الفتح والتوليد والتحرير والتقسيم والدمج والمقارنة والتحويل"
+kwords: Excel، Office، جدول البيانات، Cloud REST API، XlsbSaveOptions
 weight: 50
 ---
 ## **xlsbSaveOptions**
@@ -18,7 +19,8 @@ weight: 50
 | إنشاء دليل| منطقية| حقيقي| خطأ شنيع|||
 | تمكينHTTPCompression| منطقية| حقيقي| خطأ شنيع|||
 | RefreshChartCache| منطقية| حقيقي| خطأ شنيع|||
-|أسماء الفرز| منطقية| حقيقي| خطأ شنيع|||
+| أسماء الفرز| منطقية| حقيقي| خطأ شنيع|||
 | التحقق من صحة المناطق المندمجة| منطقية| حقيقي| خطأ شنيع|||
 
-**اسم الوالدين** : (خيارات الحفظ)[خيارات الحفظ]
+**اسم الوالدين** : [خيارات الحفظ](/specification/model/saveoptions)
+

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/putworkbookbackground/
 description: Imposta lo sfondo nella cartella di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PutWorkbookBackground
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorkbookBackground" >}}

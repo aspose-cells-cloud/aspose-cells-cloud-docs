@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/putworksheetpivottablefilter/
 description: أضف عامل تصفية محوري إلى PivotTable
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PutWorksheetPivotTableFilter
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetPivotTableFilter" >}}

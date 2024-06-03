@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/postworksheetlistobjectremoveduplicates/
 description: Rimuovi i duplicati nell'oggetto dell'elenco
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PostWorksheetListObjectRemoveDuplicates
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetListObjectRemoveDuplicates" >}}

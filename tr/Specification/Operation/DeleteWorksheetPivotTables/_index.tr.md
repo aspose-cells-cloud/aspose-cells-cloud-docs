@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/deleteworksheetpivottables/
 description: Çalışma sayfasındaki PivotTable'ları silme
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, Çalışma Sayfası PivotTable'larını Sil
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetPivotTables" >}}

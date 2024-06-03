@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/getworksheets/
 description: Recuperar la descripción de las hojas de trabajo de un libro de trabajo.
+kwords: Excel, Office, Hoja de cálculo, Cloud REST API, GetWorksheets
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheets" >}}

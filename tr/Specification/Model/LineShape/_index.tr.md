@@ -4,16 +4,17 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/model/lineshape/
 description: "Aspose.Cells Bulut modeli spesifikasyonu: LineShape. Açma, oluşturma, düzenleme, bölme, birleştirme, karşılaştırma ve dönüştürme gibi özelliklerle Excel ve diğer elektronik tablo belgelerini zahmetsizce yönetin"
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, LineShape
 weight: 50
 ---
 ## **çizgi Şekli**
 
- 
+ Çizgi şeklini temsil eder.
 
 | Mülkiyet adı| Emlak Tipi| Geçersiz kılınabilir| Sadece oku| Varsayılan değer| Tanım|
 |:- |:- |:- |:- |:- |:- |
 | BaşlangıçOk Ucu Uzunluğu| Sicim| Doğru| YANLIŞ|| Çizginin başlangıç ok ucu uzunluğunu alır ve ayarlar.|
-| Ok Ucu Stiliyle Başla| Sicim| Doğru| YANLIŞ||Çizginin başlangıç ok başı stilini alır ve ayarlar.|
+| Ok Ucu Stiliyle Başla| Sicim| Doğru| YANLIŞ|| Çizginin başlangıç ok başı stilini alır ve ayarlar.|
 | BaşlangıçOk Ucu Genişliği| Sicim| Doğru| YANLIŞ|| Çizginin başlangıç oku başı genişliğini alır ve ayarlar.|
 | BitişOk BaşıUzunluk| Sicim| Doğru| YANLIŞ|| Çizginin uç ok başı uzunluğunu alır ve ayarlar.|
 | BitişOk Başı Stili| Sicim| Doğru| YANLIŞ|| Çizginin bitiş ok başı stilini alır ve ayarlar.|
@@ -35,7 +36,7 @@ weight: 50
 | X| Tamsayı| Doğru| YANLIŞ|||
 | e| Tamsayı| Doğru| YANLIŞ|||
 | Dönüş açısı| Yüzer| Doğru| YANLIŞ|||
-| HtmlMetin| Sicim| Doğru| YANLIŞ|||
+|HtmlMetin| Sicim| Doğru| YANLIŞ|||
 | Metin| Sicim| Doğru| YANLIŞ|||
 | Alternatif metin| Sicim| Doğru| YANLIŞ|||
 | MetinYatay Hizalama| Sicim| Doğru| YANLIŞ|||
@@ -56,4 +57,5 @@ weight: 50
 | Köprü| Sicim| Doğru| YANLIŞ|||
 | bağlantı| Sınıf:Bağlantı| Doğru| YANLIŞ|||
 
-**Ebeveyn adı** : (Şekil)[şekil]
+**Ebeveyn adı** : [Şekil](/specification/model/shape)
+

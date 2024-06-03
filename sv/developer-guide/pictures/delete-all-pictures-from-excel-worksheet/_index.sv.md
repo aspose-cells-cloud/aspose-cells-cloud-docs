@@ -8,6 +8,7 @@ aliases: [/delete-all-pictures-from-excel-worksheet/]
 keywords: Delete all pictures in an Excel worksheet
 description: Aspose.Cells Cloud REST API stöder radering av alla bilder i ett Excel kalkylblad. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 60
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Ta bort alla bilder i ett Excel kalkylblad
 ---
 Denna REST API anger till `delete` `all` bilder i kalkylblad.
  

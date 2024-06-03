@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/postworksheetmerge/
 description: Çalışma sayfasındaki hücreleri birleştirme
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PostWorksheetMerge
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetMerge" >}}

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/deletedocumentproperties/
 description: Elimina tutte le proprietà personalizzate del documento e reimposta quelle integrate
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, EliminaDocumentProperties
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteDocumentProperties" >}}

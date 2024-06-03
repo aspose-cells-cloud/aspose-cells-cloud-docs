@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/deleteworksheetcharttitle/
 description: Çalışma sayfasında grafik başlığını gizle
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, SilWorksheetChartTitle
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetChartTitle" >}}

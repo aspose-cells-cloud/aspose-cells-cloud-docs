@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/postmetadata/
 description: Aggiorna le proprietà del documento nel file Excel e salvale in vari formati
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PostMetadata
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostMetadata" >}}

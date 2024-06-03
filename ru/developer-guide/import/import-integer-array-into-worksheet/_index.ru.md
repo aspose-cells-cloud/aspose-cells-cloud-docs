@@ -7,6 +7,7 @@ aliases: [/import-integer-array-into-excel-worksheet/,/import-integer-array-into
 keywords: Import integer array data into Excel files
 description: Aspose.Cells Cloud REST API поддерживает импорт данных целочисленного массива в файлы Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 30
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, импорт целочисленного массива в рабочий лист Excel
 ---
 Этот REST API `import int array data` в рабочий лист Excel.
 

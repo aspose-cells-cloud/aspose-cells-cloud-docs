@@ -1,30 +1,31 @@
 ﻿---
-title: PutWorksheetSparklineGrou
+title: 放置工作表迷你图组
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/putworksheetsparklinegroup/
 description: 在工作表中添加迷你图组
+kwords: Excel，Office，电子表格，云 REST API，PutWorksheetSparklineGroup
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetSparklineGroup" >}}
 {{< blocks/products/cells/docs-title titlemsg="Add a sparkline group in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/sparklineGroups,PUT,在工作表中添加迷你图组。,<a href=\'https://apireference.aspose.cloud/cells/#/SparklineGroups/PutWorksheetSparklineGroup\'> PutWorksheetSparklineGroup</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/sparklineGroups,PUT,在工作表中添加一个 sparkline 组。,<a href=\'https://apireference.aspose.cloud/cells/#/SparklineGroups/PutWorksheetSparklineGroup\'>PutWorksheetSparklineGroup</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="参数名称、类型、描述" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="名称，字符串，文件名。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,字符串,工作表名称。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="name，string，文件名。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName，string，工作表名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="type,string,表示迷你图类型（Line/Column/Stacked）。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="dataRange,string,指定迷你图组的数据范围。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="isVertical,boolean,指定是按行还是按列绘制数据范围中的迷你图。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="locationRange,字符串,指定迷你图的放置位置。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="type,string,表示迷你图类型（折线图/柱形图/堆叠图）。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="dataRange，string，指定迷你图组的数据范围。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="isVertical，boolean，指定是否按行或按列绘制数据范围的迷你图。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="locationRange，string，指定放置迷你图的位置。" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="文件夹，字符串，文件所在的文件夹。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,文件所在的存储名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName，string，文件所在的存储名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/SparklineGroupsController/PutWorksheetSparklineGroup\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

@@ -1,18 +1,19 @@
 ﻿---
-title: MultipleFilter
+title: Mehrfachfilter
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/model/multiplefilter/
-description: "Aspose.Cells Cloud-Modellspezifikation: MultipleFilter. Bearbeiten Sie mühelos Excel und andere Tabellenkalkulationsdokumente mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+description: "Aspose.Cells Cloud-Modellspezifikation: MultipleFilter. Müheloses Bearbeiten von Excel und anderen Tabellenkalkulationsdokumenten mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, MultipleFilter
 weight: 50
 ---
-## **multipleFilter**
+## **Mehrfachfilter**
 
  
 
-| Name des Anwesens| Art der Immobilie| Nullbar| Schreibgeschützt| Standardwert| Beschreibung|
+| Name des Anwesens| Art der Immobilie| Nullwerte zulassen| Schreibgeschützt| Standardwert| Beschreibung|
 |:- |:- |:- |:- |:- |:- |
 
-**Kindername** : 
-	-  [CriteriaMultipleFilter](criteriamultiplefilter) 
-	-  [DateTimeGroupItem](datetimegroupitem) 
+**Name des Kindes** : 
+	-  [KriterienMehrereFilter](criteriamultiplefilter) 
+	-  [Datum/UhrzeitGruppenelement](datetimegroupitem) 

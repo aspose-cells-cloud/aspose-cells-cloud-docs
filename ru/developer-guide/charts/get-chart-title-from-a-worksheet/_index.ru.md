@@ -4,6 +4,7 @@ type: docs
 url: /ru/charts/title/get/
 aliases: [/get-chart-title-from-a-worksheet/]
 weight: 120
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Получить заголовок диаграммы из рабочего листа
 ---
 Этот REST API указывает получить заголовок диаграммы.
  

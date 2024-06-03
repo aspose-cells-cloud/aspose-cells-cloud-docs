@@ -7,6 +7,7 @@ keywords: list object(table) remove duplicates
 url: /tr/list-objects/remove-duplicates/
 description:  Liste nesnesindeki kopyaları kaldırın.
 weight: 20
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Liste nesnesi kopyaları kaldırır
 ---
  Bu REST API, liste nesnesindeki kopyaların kaldırıldığını gösterir.
 

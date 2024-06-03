@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/model/pdfsaveoptions/
 description: "Aspose.Cells Especificación del modelo de nube: PdfSaveOptions. Maneje sin esfuerzo Excel y otros documentos de hoja de cálculo con funciones como abrir, generar, editar, dividir, fusionar, comparar y convertir."
+kwords: Excel, Office, Hoja de cálculo, Nube REST API, PdfSaveOptions
 weight: 50
 ---
 ## **pdfGuardarOpciones**
@@ -18,9 +19,9 @@ weight: 50
 | Exportación de propiedades personalizadas| Cadena| Verdadero| FALSO|| Especifica la forma en que se exportan CustomDocumentPropertyCollection al archivo PDF.|
 | Tipo de optimización| Cadena| Verdadero| FALSO|| Obtiene y establece el tipo de optimización de pdf.|
 | Productor| Cadena| Verdadero| FALSO|| Obtiene y establece el productor del documento pdf generado.|
-| Compresión PDF| Cadena| Verdadero| FALSO||Indique el algoritmo de compresión.|
+| Compresión PDF| Cadena| Verdadero| FALSO|| Indique el algoritmo de compresión.|
 | Codificación de fuentes| Cadena| Verdadero| FALSO|| Obtiene o establece la codificación de fuentes incrustadas en pdf.|
-| Filigrana| Clase:RepresentaciónMarca de agua| Verdadero| FALSO|| Obtiene o establece una marca de agua para la salida.|
+| Filigrana|Clase:RepresentaciónMarca de agua| Verdadero| FALSO|| Obtiene o establece una marca de agua para la salida.|
 | CalcularFórmula| Booleano| Verdadero| FALSO|| Indica si se calculan las fórmulas antes de guardar el archivo pdf. El valor predeterminado es falso.|
 | Comprobar compatibilidad de fuentes| Booleano| Verdadero| FALSO|| Indica si se debe comprobar la compatibilidad de fuentes para cada carácter del texto. El valor por defecto es verdadero. Deshabilitar esta propiedad puede brindar un mejor rendimiento. Pero cuando la fuente de texto/carácter predeterminada o especificada no se puede utilizar para representarlo, es posible que aparezcan caracteres ilegibles (como un bloque) en el pdf generado. En tal situación, el usuario debe mantener esta propiedad como verdadera para poder buscar y utilizar fuentes alternativas para representar el texto;|
 | Cumplimiento| Cadena| Verdadero| FALSO|| El libro de trabajo se convierte a PDF de acuerdo con PdfCompliance en esta propiedad.|
@@ -37,7 +38,8 @@ weight: 50
 | Crear directorio| Booleano| Verdadero| FALSO|||
 | Habilitar compresión HTTP| Booleano| Verdadero| FALSO|||
 | Actualizar caché de gráficos| Booleano| Verdadero| FALSO|||
-|Ordenar nombres| Booleano| Verdadero| FALSO|||
+| Ordenar nombres| Booleano| Verdadero| FALSO|||
 | Validar áreas fusionadas| Booleano| Verdadero| FALSO|||
 
-**Nombre del padre** : (GuardarOpciones)[guardaropciones]
+**Nombre del padre** : [Guardar Opciones](/specification/model/saveoptions)
+

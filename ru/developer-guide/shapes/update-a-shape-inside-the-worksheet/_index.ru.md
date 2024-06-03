@@ -8,6 +8,7 @@ aliases: [/update-a-shape-inside-the-worksheet/]
 keywords: Update a shape on an Excel workshee
 description: Aspose.Cells Cloud REST API поддерживает обновление фигуры на листе Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 31
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Обновление фигуры на листе Excel
 ---
 Этот REST API указывает на обновление фигуры на листе Excel.
  

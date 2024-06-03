@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/putinsertnewworksheet/
 description: Infoga ett nytt kalkylblad i arbetsboken
+kwords: Excel, Office, Kalkylblad, Cloud REST API, PutInsertNewWorksheet
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutInsertNewWorksheet" >}}

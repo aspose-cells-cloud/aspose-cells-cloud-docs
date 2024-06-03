@@ -7,8 +7,9 @@ aliases: [/working-with-oleobjects/]
 keywords: Get, add, delete, and update an OLE object in an Excel worksheet
 description: Aspose.Cells Cloud REST API, Excel çalışma sayfasında bir OLE nesnesinin alınmasını, eklenmesini, silinmesini ve güncellenmesini destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 100
+kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, OleObjects
 ---
-**Excel çalışma sayfasında OLE nesneleriyle çalışma**
+**Excel çalışma sayfasında OLE nesneleriyle nasıl çalışılır**
 
 - [Excel çalışma sayfasından OLE nesnesi nasıl alınır?](/cells/tr/oleobjects/get/)
 - [OLE nesnesi ab Excel çalışma sayfasına nasıl eklenir?](/cells/tr/oleobjects/add/)

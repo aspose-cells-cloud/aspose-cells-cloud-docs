@@ -7,6 +7,7 @@ url: /fr/protect/
 keywords: Protect and unprotect Excel workbook
 description: Aspose.Cells Cloud REST API prend en charge la protection et la déprotection du classeur Excel. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 36
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, classeur Protect
 ---
 **Comment protéger les fichiers Excel.**
 

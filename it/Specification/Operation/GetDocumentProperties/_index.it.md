@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/getdocumentproperties/
 description: Recupera le descrizioni delle proprietà del file Excel
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, GetDocumentProperties
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetDocumentProperties" >}}

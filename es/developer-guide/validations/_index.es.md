@@ -6,6 +6,7 @@ url: /es/validations/
 keywords: Working with validations on an Excel file
 description: Aspose.Cells Cloud REST API admite trabajar con validaciones en un archivo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 100
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Validaciones
 ---
 La validación de datos es una función de MS Excel que se utiliza para controlar lo que un usuario puede ingresar en una celda de una hoja de Excel. Por ejemplo, restrinja las entradas en una hoja, como un rango de fechas o números enteros únicamente. Incluso podemos crear menús desplegables, lo que ahorra espacio innecesario y muestra los valores en una sola celda. Además, podemos crear un mensaje personalizado en el que aparecerá el usuario inserta cualquier valor incorrecto o un formato incorrecto.
 

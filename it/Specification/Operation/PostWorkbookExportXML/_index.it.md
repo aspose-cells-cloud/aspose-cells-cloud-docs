@@ -3,7 +3,8 @@ title: PostWorkbookExportXM
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/postworkbookexportxml/
-description: Esporta dati XML da un file Excel. Quando sono presenti mappe XML in un file Excel, esporta dati XML. Quando non è presente alcuna mappa XML nel file Excel, convertire il file Excel in un file XML
+description: Esporta dati XML da un file Excel. Quando sono presenti mappe XML in un file Excel, esporta dati XML. Quando non è presente una mappa XML nel file Excel, convertire il file Excel in un file XML
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PostWorkbookExportXML
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookExportXML" >}}

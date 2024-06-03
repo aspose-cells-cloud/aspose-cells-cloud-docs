@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/putdocumentproperty/
 description: Excel özelliği ayarlama veya ekleme
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PutDocumentProperty
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutDocumentProperty" >}}
@@ -22,7 +23,7 @@ weight: 50
     {{< blocks/products/cells/docs-Parameter-content columns="depolamaAdı,dize,Dosyanın bulunduğu depolama adı." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Parametre Adı,Tip,Açıklama" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="özellik,sınıf:hücrelerdocumentözellik,Özelliğin değerini alın veya ayarlayın." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="özellik,sınıf:hücrelerbelgeözellik,Özelliğin değerini alın veya ayarlayın." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

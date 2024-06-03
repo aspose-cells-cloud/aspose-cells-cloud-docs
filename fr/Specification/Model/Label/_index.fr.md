@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/model/label/
 description: "Aspose.Cells Spécification du modèle cloud : Étiquette. Gérez sans effort Excel et d'autres feuilles de calcul avec des fonctionnalités telles que l'ouverture, la génération, l'édition, le fractionnement, la fusion, la comparaison et la conversion."
+kwords: Excel, Office, feuille de calcul, Cloud REST API, étiquette
 weight: 50
 ---
 ## **étiquette**
 
- 
+ Encapsule l'objet qui représente une étiquette dans une feuille de calcul.
 
 | Nom de la propriété| Type de propriété| Nullable| Lecture seulement| Valeur par défaut| Description|
 |:- |:- |:- |:- |:- |:- |
@@ -29,8 +30,8 @@ weight: 50
 | X| Entier| Vrai| FAUX|||
 | Oui| Entier| Vrai| FAUX|||
 | Angle de rotation| Flottant| Vrai| FAUX|||
-| Texte HTML| Chaîne| Vrai| FAUX|||
-| Texte| Chaîne| Vrai| FAUX||Obtient ou définit le texte de l’étiquette de l’unité d’affichage.|
+|Texte HTML| Chaîne| Vrai| FAUX|||
+| Texte| Chaîne| Vrai| FAUX|| Obtient ou définit le texte de l’étiquette de l’unité d’affichage.|
 | Texte alternatif| Chaîne| Vrai| FAUX|||
 | TexteHorizontalAlignement| Chaîne| Vrai| FAUX|||
 | TexteHorizontalOverflow| Chaîne| Vrai| FAUX|||
@@ -50,4 +51,5 @@ weight: 50
 | Lien hypertexte| Chaîne| Vrai| FAUX|||
 | lien| Classe : Lien| Vrai| FAUX|||
 
-**Nom du parent** : (Forme)[forme]
+**Nom du parent** : [Forme](/specification/model/shape)
+

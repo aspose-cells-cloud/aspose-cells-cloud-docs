@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/postworksheetlistobjectsummarizewithpivottable/
 description: Cree una tabla dinámica con un objeto de lista en la hoja de trabajo
+kwords: Excel, Office, hoja de cálculo, nube REST API, PostWorksheetListObjectSummarizeWithPivotTable
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetListObjectSummarizeWithPivotTable" >}}

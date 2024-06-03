@@ -8,6 +8,7 @@ aliases: [/group-rows-in-excel-worksheet/]
 keywords: Group rows on an Excel worksheet
 description: Aspose.Cells Cloud REST API stödjer gruppering av rader på ett Excel-kalkylblad. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 60
+kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdwon, Grupprader på ett Excel arbetsblad
 ---
 Denna REST API indikerar att gruppera rader på ett Excel kalkylblad.
  
@@ -22,11 +23,11 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
  
 | Parameternamn| Typ| Sökväg/Frågesträng/HTTPBody|Beskrivning|
 |:- |:- |:- |:- |
-| namn| sträng| väg|Arbetsbokens namn.|
+| namn| sträng| väg| Arbetsbokens namn.|
 | arknamn| sträng| väg| Kalkylbladets namn.|
 | firstIndex| heltal| fråga| Den första radindex som ska användas.|
 | lastIndex| heltal| fråga| Det sista radindexet som ska användas.|
-| Dölj| booleskt| fråga| rader synligt tillstånd|
+| Dölj|booleskt| fråga| rader synligt tillstånd|
 | mapp| sträng| fråga| Dokumentmappen.|
 | lagringsnamn| sträng| fråga| lagringsnamn.|
  

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postworksheetvalidation/
 description: Обновить проверку по индексу на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostWorksheetValidation
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetValidation" >}}
@@ -24,7 +25,7 @@ weight: 50
     {{< blocks/products/cells/docs-Parameter-content columns="StorageName,string,Имя хранилища, в котором находится файл." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Имя параметра, тип, описание" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="проверка, класс: проверка, описание проверки." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="проверка,класс:проверка,описание проверки." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

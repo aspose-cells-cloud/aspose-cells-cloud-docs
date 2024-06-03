@@ -1,13 +1,14 @@
 ﻿---
 title: Защитите файлы Excel без использования хранилища
 second_title: Aspose.Cells Cloud Documen
-linktitle: Шифрование без использования хранилища
+linktitle: Шифровать без использования хранилища
 type: docs
 url: /ru/protect/without-using-storage/
 aliases: [/protect/without-storage/]
 keywords: Protect Excel files
 description: Aspose.Cells Cloud REST API поддерживает защиту Excel файлов. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 40
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, защита Excel файлов без использования хранилища.
 ---
 Этот REST API указывает на файлы `protect` Excel.
 

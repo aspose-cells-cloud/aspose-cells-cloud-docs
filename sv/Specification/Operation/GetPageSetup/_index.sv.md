@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/getpagesetup/
 description: Hämta sidinställningarnas beskrivning i kalkylbladet
+kwords: Excel, Office, Spreadsheet, Cloud REST API, GetPageSetup
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetPageSetup" >}}

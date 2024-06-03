@@ -4,8 +4,9 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/storage/object-exists/
 keywords: Learn how to check object exist with Aspose Cells Cloud REST API
-description: تعرف على كيفية التحقق من وجود الكائن باستخدام Aspose Cells Cloud REST API SDK الذي يدعم أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
+description: تعرف على كيفية التحقق من وجود الكائن مع Aspose Cells Cloud REST API SDK الذي يدعم أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 100
+kwords: Excel، Office كلاود، ريست API، جدول بيانات، PDF، CSV، Json، Markdwon، كائن موجود
 ---
 يشير REST API إلى التحقق مما إذا كان `file or folder exists`.
  
@@ -61,7 +62,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/storage/exist/Book1.xlsx" \
  
 ## عائلة Cloud SDK
  
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
  
 توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
  

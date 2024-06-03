@@ -7,6 +7,7 @@ url: /tr/rows/get/
 keywords: Working with getting row on an Excel worksheet. How to add rows on an Excel worksheet
 description: Aspose.Cells Cloud REST API, Excel çalışma sayfasında satır almayı destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 20
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel çalışma sayfasında satır almayla çalışma
 ---
 ## Excel çalışma sayfasındaki satırın silinmesiyle çalışma.
 

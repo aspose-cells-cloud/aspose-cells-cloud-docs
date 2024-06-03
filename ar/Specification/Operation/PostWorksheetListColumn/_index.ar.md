@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postworksheetlistcolumn/
 description: تحديث عمود القائمة في كائن القائمة
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostWorksheetListColumn
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetListColumn" >}}

@@ -7,6 +7,7 @@ aliases: [/import-data-in-excel-worksheet-without-using-storage/]
 keywords: Import data into Excel files
 description: Aspose.Cells Cloud REST API admite la importación de datos en archivos Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 31
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Importar
 ---
 Importar datos a un archivo Excel es un proceso complejo. Muchos factores contribuyen a la complejidad y, por lo tanto, deben tenerse en cuenta durante el proceso de exportación. La capacidad de importar tipos de formatos y tipos de datos al archivo con una calidad profesional precisa es una característica principal de Aspose.Cells Cloud.
 
@@ -26,7 +27,7 @@ Se proporcionan las siguientes API para importar datos en un archivo Excel o en 
 | Nombre del parámetro| Tipo| Ruta/Cadena de consulta/Cuerpo HTTP|Descripción|
 |:- |:- |:- |:- |
 | archivo| archivo| formularioDatos| Subir Archivo|
-| ImportarOpción| Opciones de importación|HTTPCuerpo| IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/Picture|
+| ImportarOpción| Opciones de importación| HTTPCuerpo| IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/Picture|
 
 ### Con el uso de almacenamiento
 
@@ -83,7 +84,7 @@ Se proporcionan las siguientes API para importar datos en un archivo Excel o en 
   <tbody>
     <tr> <td>Primera fila</td><td>En t</td> <td></td> </tr>
     <tr> <td>Primera columna</td><td>En t</td><td></td></tr>
-    <tr><td>Es vertical</td><td>Cadena</td><td>verdadero Falso.</td></tr>
+    <tr><td>es vertical</td><td>Cadena</td><td>verdadero Falso.</td></tr>
     <tr><td>Datos</td><td> Cadena[]</td> <td></td></tr>
     <tr> <td>Hoja de cálculo de destino</td><td> Cadena</td><td> Nombre de la hoja de trabajo de destino.</td></tr>
     <tr><td>EsInsertar</td><td>Cadena</td><td>verdadero Falso.</td></tr>
@@ -151,7 +152,7 @@ Se proporcionan las siguientes API para importar datos en un archivo Excel o en 
   <tbody>
     <tr> <td>Primera fila</td><td>En t</td> <td></td> </tr>
     <tr> <td>Primera columna</td><td>En t</td><td></td></tr>
-    <tr><td>Es vertical</td><td>Cadena</td><td>verdadero Falso.</td></tr>
+    <tr><td>es vertical</td><td>Cadena</td><td>verdadero Falso.</td></tr>
     <tr><td>Datos</td><td> Entero[]</td> <td></td></tr>
     <tr> <td>Hoja de cálculo de destino</td><td> Cadena</td><td> Nombre de la hoja de trabajo de destino.</td></tr>
     <tr><td>EsInsertar</td><td>Cadena</td><td>verdadero Falso.</td></tr>
@@ -169,7 +170,7 @@ Se proporcionan las siguientes API para importar datos en un archivo Excel o en 
   <tbody>
     <tr> <td>Primera fila</td><td>En t</td> <td></td> </tr>
     <tr> <td>Primera columna</td><td>En t</td><td></td></tr>
-    <tr><td>Es vertical</td><td>Cadena</td><td>verdadero Falso.</td></tr>
+    <tr><td>es vertical</td><td>Cadena</td><td>verdadero Falso.</td></tr>
     <tr><td>Datos</td><td> Doble[]</td> <td></td></tr>
     <tr> <td>Hoja de cálculo de destino</td><td> Cadena</td><td> Nombre de la hoja de trabajo de destino.</td></tr>
     <tr><td>EsInsertar</td><td>Cadena</td><td>verdadero Falso.</td></tr>
@@ -234,7 +235,7 @@ Los siguientes artículos explican en detalle cómo llamar a cada API y contiene
 - [Cómo importar datos por lotes a la hoja de trabajo Excel](/cells/es/import/batch-data/)
 - [Cómo importar datos CSV a la hoja de trabajo Excel](/cells/es/import/csv-data/)
 - [Cómo importar una imagen a la hoja de trabajo Excel](/cells/es/import/picture/)
-- [Cómo importar una matriz de enteros en la hoja de trabajo Excel](/cells/es/import/integer-array/)
+- [Cómo importar una matriz de enteros a la hoja de trabajo Excel](/cells/es/import/integer-array/)
 - [Cómo importar Double Array a la hoja de trabajo Excel](/cells/es/import/double-array/)
 - [Cómo importar una matriz de cadenas en la hoja de trabajo Excel](/cells/es/import/string-array/)
 - [Cómo importar una matriz de enteros de 2 dimensiones en la hoja de trabajo Excel](/cells/es/import/2dimension-integer-array/)

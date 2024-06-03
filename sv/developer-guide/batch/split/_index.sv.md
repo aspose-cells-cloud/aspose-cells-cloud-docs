@@ -6,6 +6,7 @@ url: /sv/batch/split
 keywords: Batch split Excel file
 description: Aspose.Cells Cloud API stöder batchdelad fil. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Batch Split
 ---
 Denna REST API indikerar till `batch split` av kvalificerad fil.
  
@@ -20,7 +21,7 @@ POST http://api.aspose.cloud/v3.0/cells/batch/split
  
 | Parameternamn| Typ| Sökväg/Frågesträng/HTTPBody|Beskrivning|
 |:- |:- |:- |:- |
-| BatchSplitRequest|| kropp||
+|BatchSplitRequest|| kropp||
 
 **BatchSplitRequest-egenskaper**
  
@@ -66,7 +67,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/batch/split" \
  
 ## Cloud SDK-familj
  
-Att använda en SDK är det bästa sättet att påskynda utvecklingen. En SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina delade uppgifter. Vänligen kolla in[GitHub-förråd](https://github.com/aspose-cells-cloud) för en komplett lista med Aspose.Cells Cloud SDK.
+ Att använda en SDK är det bästa sättet att påskynda utvecklingen. En SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina delade uppgifter. Vänligen kolla in[GitHub-förråd](https://github.com/aspose-cells-cloud) för en komplett lista med Aspose.Cells Cloud SDK.
  
 Följande kodexempel visar hur man ringer till Aspose.Cells webbtjänster med olika SDK:er:
  

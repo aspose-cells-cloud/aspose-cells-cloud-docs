@@ -4,6 +4,7 @@ type: docs
 url: /tr/charts/legend/show/
 aliases: [/show-chart-legend-in-a-worksheet/]
 weight: 100
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Grafik Açıklamasını Çalışma Sayfasında Göster
 ---
 Bu REST API, grafikteki gösteri açıklamasını gösterir
  

@@ -3,7 +3,8 @@ title: Удалитьинкомплертровсрекуес
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/model/deleteincompleterowsrequest/
-description: "Aspose.Cells Спецификация облачной модели: DeleteIncompleteRowsRequest. Легко обрабатывайте Excel и другие документы электронных таблиц с помощью таких функций, как открытие, создание, редактирование, разделение, слияние, сравнение и преобразование."
+description: "Aspose.Cells Спецификация облачной модели: DeleteIncompleteRowsRequest. Легко обрабатывайте Excel и другие электронные таблицы с помощью таких функций, как открытие, создание, редактирование, разделение, слияние, сравнение и преобразование."
+kwords: Excel, Office, электронная таблица, Cloud REST API, DeleteIncompleteRowsRequest
 weight: 50
 ---
 ## **удалитьIncompleteRowsRequest**

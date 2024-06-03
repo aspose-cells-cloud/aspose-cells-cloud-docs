@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postchartsecondvalueaxis/
 description: Mettre à jour le deuxième axe des valeurs du graphique
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostChartSecondValueAxis
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostChartSecondValueAxis" >}}

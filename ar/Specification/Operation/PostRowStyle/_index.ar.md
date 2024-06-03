@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postrowstyle/
 description: تطبيق التنسيقات على صف كامل في ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostRowStyle
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostRowStyle" >}}

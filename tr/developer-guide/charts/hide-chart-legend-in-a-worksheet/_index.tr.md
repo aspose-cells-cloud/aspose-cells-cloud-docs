@@ -4,6 +4,7 @@ type: docs
 url: /tr/charts/legend/hide/
 aliases: [/hide-chart-legend-in-a-worksheet/]
 weight: 110
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Çalışma Sayfasındaki Grafik Göstergesini Gizle
 ---
 Bu REST API, grafikteki açıklamayı gizle anlamına gelir
  

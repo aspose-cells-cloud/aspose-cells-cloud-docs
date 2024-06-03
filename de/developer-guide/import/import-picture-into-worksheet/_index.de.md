@@ -1,17 +1,18 @@
 ﻿---
-title: Bild in Excel Arbeitsblatt importieren
+title: Bild in Arbeitsblatt Excel importieren
 second_title: Aspose.Cells Cloud Documen
 linktitle: Bild importieren
 type: docs
 url: /de/import/picture/
 aliases: [/import-picture-into-excel-worksheet/,/import-picture-into-worksheet/,/import-data/picture/]
 keywords: Import picture into Excel files
-description: Aspose.Cells Cloud REST API unterstützt den Import von Bildern in Excel-Dateien. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
+description: Aspose.Cells Cloud REST API unterstützt das Importieren von Bildern in Excel Dateien. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
 weight: 19
+kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdwon, Bild in Excel Arbeitsblatt importieren
 ---
-Dieses REST API `import picture data` wird in das Arbeitsblatt Excel umgewandelt.
+Dieses REST API `import picture data` in Excel Arbeitsblatt.
 
-Bei der Anfrage handelt es sich um eine HTTP-Anfrage mit mehrteiligem Inhalt (siehe[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)oder[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). Der erste Teil des mehrteiligen Inhalts enthält die ImportPictureOption-Daten und der zweite Teil enthält eine Datendatei.
+Bei der Anfrage handelt es sich um eine HTTP-Anfrage mit mehrteiligem Inhalt (siehe[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)oder[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). Der erste Teil des mehrteiligen Inhalts enthält die ImportPictureOption-Daten und der zweite eine Datendatei.
 
 ## RSET API
 
@@ -23,23 +24,23 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/import-data
 ```
 
 
-Die wichtigen Parameter sind in der folgenden Tabelle beschrieben:
+Die wichtigen Parameter werden in der folgenden Tabelle beschrieben:
 
 
 **ImportPictureOption**
 
 |Parametername|Typ|Beschreibung|
 |:- |:- |:- |
-| UpperLeftRow| int||
-| UpperLeftColumn| int||
-| LowerRightRow| int||
-| LowerRightColumn| int||
-| Dateiname| Zeichenfolge||
+| Obere Linke Zeile| int||
+| Obere Linke Spalte| int||
+| UntereRechteReihe| int||
+| Untere Rechte Spalte| int||
+| Dateiname| Schnur||
 | Daten| Zeichenfolge||
-| Zielarbeitsblatt| Zeichenfolge| Name des Zielarbeitsblatts.|
-| IsInsert| Zeichenfolge| wahr falsch.|
-| ImportDataType| Zeichenfolge|IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/Picture.|
-| Quelle| FileSource| Gibt die Position der Datendatei an, wenn der BatchData-Parameter null ist.|
+| ZielArbeitsblatt| Schnur| Name des Zielarbeitsblatts.|
+| IstEinfügen| Schnur| wahr falsch.|
+| ImportierenDatentyp| Schnur|IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/Bild.|
+| Quelle| Dateiquelle| Gibt die Datendateiposition an, wenn der BatchData-Parameter null ist.|
 
 
 **Beispiel**
@@ -47,9 +48,9 @@ Die wichtigen Parameter sind in der folgenden Tabelle beschrieben:
 
 ## Cloud SDK-Familie
 
- Die Verwendung eines SDK ist der beste Weg, die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte schauen Sie sich die an[GitHub-Repository](https://github.com/aspose-cells-cloud) Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie hier.
+ Die Verwendung eines SDK ist der beste Weg, um die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte lesen Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
 
-Die folgenden Codebeispiele veranschaulichen, wie Aspose.Cells-Webdienste mithilfe verschiedener SDKs aufgerufen werden:
+Die folgenden Codebeispiele zeigen, wie Sie mit verschiedenen SDKs Aufrufe an die Webdienste Aspose.Cells tätigen:
 
 
 {{< tabs tabTotal="9" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" tabName9="Python" >}}

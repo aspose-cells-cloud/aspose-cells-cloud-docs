@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/postworksheetlistobjectinsertslicer/
 description: Liste nesnesi için dilimleyici ekle
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PostWorksheetListObjectInsertSlicer
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetListObjectInsertSlicer" >}}
@@ -20,7 +21,7 @@ weight: 50
      {{< blocks/products/cells/docs-Parameter-content columns="listObjectIndex,integer,List nesne dizini." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametre Adı,Tip,Açıklama" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns=" ColumnIndex,integer,ListObject.ListColumns\'daki ListColumn dizini" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="ColumnIndex,integer,ListObject.ListColumns\'daki ListColumn dizini" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns=" destCellName,string,Dilimleyici aralığının sol üst köşesindeki hücre." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="klasör,dize,Dosyanın bulunduğu klasör." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="depolamaAdı,dize,Dosyanın bulunduğu depolama adı." >}} 

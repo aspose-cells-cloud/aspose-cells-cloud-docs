@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postassemble/
 description: تجميع ملفات البيانات مع ملفات القالب لإنشاء ملفات بتنسيقات مختلفة
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostAssemble
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostAssemble" >}}
@@ -16,7 +17,7 @@ weight: 50
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="اسم المعلمة، النوع، الوصف" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="مصدر البيانات، سلسلة،" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="outFormat، سلسلة، التنسيق المطلوب تحويله (CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/076) 173481 /MD[تخفيض السعر]/الأرقام)" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="outFormat,string,تنسيق التحويل (CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/0 76173481 /MD[تخفيض السعر]/الأرقام)" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="كلمة المرور، سلسلة، كلمة المرور اللازمة لفتح ملف Excel." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction,boolean,ما إذا كان يتم التحقق من تقييد ملف Excel عندما يقوم المستخدم بتعديل الكائنات ذات الصلة بالخلايا." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="المنطقة، سلسلة، الإعدادات الإقليمية للمصنف." >}} 

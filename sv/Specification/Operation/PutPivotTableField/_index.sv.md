@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/putpivottablefield/
 description: Lägg till ett pivotfält i pivottabellen
+kwords: Excel, Office, Kalkylblad, Cloud REST API, PutPivotTableField
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutPivotTableField" >}}

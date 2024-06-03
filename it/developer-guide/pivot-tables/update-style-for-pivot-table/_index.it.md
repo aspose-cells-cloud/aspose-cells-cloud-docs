@@ -8,6 +8,7 @@ aliases: [/update-style-for-pivot-table/]
 keywords: Update all cell style for a pivot table
 description: Aspose.Cells Cloud REST API supporta l'aggiornamento di tutti gli stili di cella per una tabella pivot. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 100
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Aggiorna stile per tabella pivot
 ---
 Questo REST API indica lo stile `update` per la tabella pivot
  
@@ -26,7 +27,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottable
 | nomefoglio| corda| sentiero| Il nome del foglio di lavoro.|
 | pivotTableIndex| numero intero| sentiero| Indice della tabella pivot|
 | stile|| corpo| Stile dto nel corpo della richiesta.|
-| bisogno di ricalcolare| booleano| domanda| Falso|
+| bisogno di ricalcolare|booleano| domanda| Falso|
 | cartella| corda| domanda| Cartella del documento.|
 | storageName| corda| domanda| nome dell'archivio.|
  

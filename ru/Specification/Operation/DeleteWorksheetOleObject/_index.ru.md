@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/deleteworksheetoleobject/
 description: Удаление объекта OLE на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, DeleteWorksheetOleObject
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetOleObject" >}}

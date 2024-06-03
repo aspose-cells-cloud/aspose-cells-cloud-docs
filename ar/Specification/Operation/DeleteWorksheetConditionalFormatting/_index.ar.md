@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/deleteworksheetconditionalformatting/
 description: إزالة التنسيق الشرطي
+kwords: Excel، Office، جدول البيانات، Cloud REST API، حذف ورقة العمل، التنسيق الشرطي
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetConditionalFormatting" >}}

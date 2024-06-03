@@ -4,22 +4,23 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/model/workbooksettings/
 description: "Aspose.Cells Bulut modeli spesifikasyonu: WorkbookSettings. Açma, oluşturma, düzenleme, bölme, birleştirme, karşılaştırma ve dönüştürme gibi özelliklerle Excel ve diğer elektronik tablo belgelerini zahmetsizce yönetin"
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, Çalışma Kitabı Ayarları
 weight: 50
 ---
 ## **çalışma kitabıAyarlar**
 
- 
+ Çalışma kitabının tüm ayarlarını temsil eder.
 
 | Mülkiyet adı| Emlak Tipi| Geçersiz kılınabilir| Sadece oku| Varsayılan değer| Tanım|
 |:- |:- |:- |:- |:- |:- |
-| Otomatik SıkıştırmaResimleri| Boolean| Doğru| YANLIŞ|| Uygulamanın çalışma kitabındaki resimleri otomatik olarak sıkıştırdığını gösteren bir boole değeri belirtir.|
+| Otomatik SıkıştırmaResimleri| Boolean| Doğru| YANLIŞ||Uygulamanın çalışma kitabındaki resimleri otomatik olarak sıkıştırdığını gösteren bir boole değeri belirtir.|
 | Otomatik Kurtarma| Boolean| Doğru| YANLIŞ|| Dosyanın otomatik kurtarma için işaretlenip işaretlenmediğini belirtir.|
 | Derleme Sürümü| Sicim| Doğru| YANLIŞ|| Uygulamanın artımlı genel yayınını belirtir.|
-| Hesap Modu| Sicim| Doğru| YANLIŞ||Çoklu tablo işlemleri dışında formüllerin manuel mi, otomatik mi yoksa otomatik olarak mı hesaplanacağını belirtir.|
+| Hesap Modu| Sicim| Doğru| YANLIŞ|| Çoklu tablo işlemleri dışında formüllerin manuel mi, otomatik mi yoksa otomatik olarak mı hesaplanacağını belirtir.|
 | Hesaplama Kimliği| Sicim| Doğru| YANLIŞ|| Çalışma kitabındaki değerleri hesaplamak için kullanılan hesaplama altyapısının sürümünü belirtir.|
 | Uyumluluğu Kontrol Edin| Boolean| Doğru| YANLIŞ|| Çalışma kitabını kaydederken uyumluluğun kontrol edilip edilmeyeceğini belirtir. Açıklamalar: Varsayılan değer true'dur.|
 | CheckExcelKısıtlaması| Boolean| Doğru| YANLIŞ||Kullanıcı hücrelerle ilgili nesneleri değiştirdiğinde excel dosyasının kısıtlamasının kontrol edilip edilmeyeceği. Örneğin Excel, 32K'dan uzun dize değerinin girilmesine izin vermez. Cell.PutValue(string) gibi 32K'dan daha uzun bir değer girdiğinizde, bu özellik doğruysa bir Exception alırsınız. Bu özellik false ise giriş dizesi değerinizi hücrenin değeri olarak kabul edeceğiz, böylece daha sonra CSV gibi diğer dosya biçimleri için dize değerinin tamamının çıktısını alabilirsiniz. Ancak excel dosya formatı için geçersiz bir değer belirlediyseniz çalışma kitabını daha sonra excel dosya formatı olarak kaydetmemelisiniz. Aksi takdirde oluşturulan excel dosyasında beklenmeyen hatalar oluşabilir.|
-| Kilitlenme Kaydetme| Boolean| Doğru| YANLIŞ|| uygulamanın bir kilitlenmeden sonra çalışma kitabı dosyasını en son kaydedip kaydetmediğini gösterir.|
+| Kilitlenme Kaydetme| Boolean| Doğru| YANLIŞ|| uygulamanın bir kilitlenmeden sonra çalışma kitabı dosyasını en son kaydedip kaydetmediğini belirtir.|
 | CalcChain Oluştur| Boolean| Doğru| YANLIŞ|| Hesaplanan formüller zincirini oluşturup oluşturmadığı. Varsayılan yanlıştır.|
 | Veri Çıkarma Yükü| Boolean| Doğru| YANLIŞ||uygulamanın veri kurtarma için çalışma kitabını en son açıp açmadığını gösterir.|
 | Tarih1904| Boolean| Doğru| YANLIŞ|| Çalışma kitabının 1904 tarih sistemini kullanıp kullanmadığını temsil eden bir değer alır veya ayarlar.|

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/getworksheetchart/
 description: استرداد المخطط بتنسيق محدد
+kwords: Excel، Office، جدول البيانات، Cloud REST API، GetWorksheetChart
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetChart" >}}

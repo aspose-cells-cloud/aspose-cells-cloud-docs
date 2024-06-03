@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/model/pivottable/
 description: "Aspose.Cells Molnmodellspecifikation: Pivottabell. Hantera enkelt Excel och andra kalkylarksdokument med funktioner som att öppna, generera, redigera, dela, slå samman, jämföra och konvertera"
+kwords: Excel, Office, kalkylblad, Cloud REST API, pivottabell
 weight: 50
 ---
 ## **pivottabell**
 
- 
+ Sammanfattningsbeskrivning för pivottabell.
 
 | Egendomsnamn| Egenskapstyp| Nullbar| Endast läs| Standardvärde| Beskrivning|
 |:- |:- |:- |:- |:- |:- |
@@ -31,7 +32,7 @@ weight: 50
 | EnableDataValueEditing| Boolean| Sann| Falsk|||
 | AktiveraDrilldown| Boolean| Sann| Falsk|||
 | EnableFieldDialog| Boolean| Sann| Falsk|||
-|EnableFieldList| Boolean| Sann| Falsk|||
+| EnableFieldList| Boolean| Sann| Falsk|||
 | EnableWizard| Boolean| Sann| Falsk|||
 | ErrorString| Sträng| Sann| Falsk|||
 | FieldListSortAscending| Boolean| Sann| Falsk|||
@@ -44,9 +45,9 @@ weight: 50
 | Är vald| Boolean| Sann| Falsk|||
 | ItemPrintTitles| Boolean| Sann| Falsk|||
 | Manuell uppdatering| Boolean| Sann| Falsk|||
-| MergeLabels| Boolean| Sann| Falsk|||
+|MergeLabels| Boolean| Sann| Falsk|||
 | MissingItemsLimit| Sträng| Sann| Falsk|||
-| namn| Sträng| Sann| Falsk|||
+| namn| Sträng| Sann| Falsk||Representerar pivottabellens namn.|
 | NullString| Sträng| Sann| Falsk|||
 | PageFieldOrder| Sträng| Sann| Falsk|||
 | Sidfält| Behållare| Sann| Falsk|||
@@ -78,8 +79,9 @@ weight: 50
 | ShowValuesRow| Boolean| Sann| Falsk|||
 | SubtotalHiddenPageItems| Boolean| Sann| Falsk|||
 | Tabellsortiment1| Klass: CellArea| Sann| Falsk|||
-|TableRange2| Klass: CellArea| Sann| Falsk|||
+| TableRange2| Klass: CellArea| Sann| Falsk|||
 | Märka| Sträng| Sann| Falsk|||
 | länk| Klass: Länk| Sann| Falsk|||
 
-**Förälders namn** : (LinkElement)[linkelement]
+**Förälders namn** : [LinkElement](/specification/model/linkelement)
+

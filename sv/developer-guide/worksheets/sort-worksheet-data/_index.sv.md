@@ -8,6 +8,7 @@ aliases: [/sort-worksheet-data/]
 keywords: Sort range data on an Excel worksheet
 description: Aspose.Cells Cloud REST API stöder sorteringsintervallsdata på ett Excel-kalkylblad. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 20
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Sortera intervalldata på ett Excel kalkylblad
 ---
 Denna REST API indikerar `sort worksheet range data`.
  
@@ -22,7 +23,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/sort
  
 | Parameternamn| Typ| Sökväg/Frågesträng/HTTPBody|Beskrivning|
 |:- |:- |:- |:- |
-| namn| sträng| väg|Arbetsbokens namn.|
+| namn| sträng| väg| Arbetsbokens namn.|
 | arknamn| sträng| väg| Kalkylbladets namn.|
 | cellArea| sträng| fråga| Utbudet att sortera.|
 | dataSorter|| kropp| med sorteringsinställningar.|

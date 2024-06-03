@@ -1,25 +1,26 @@
 ﻿---
-title: GetWorksheet
+title: Arbeitsblatt abrufen
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/getworksheets/
-description: Rufen Sie die Beschreibung von Arbeitsblättern aus einer Arbeitsmappe ab
+description: Abrufen der Beschreibung von Arbeitsblättern aus einer Arbeitsmappe
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, GetWorksheets
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheets" >}}
 {{< blocks/products/cells/docs-title titlemsg="Retrieve the description of worksheets from a workbook." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets,GET,Rufen Sie die Beschreibung von Arbeitsblättern aus einer Arbeitsmappe ab.,<a href=\'https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheets\'>GetWorksheets</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets,GET,Beschreibung von Arbeitsblättern aus einer Arbeitsmappe abrufen.,<a href=\'https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheets\'>GetWorksheets</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/WorksheetsController/GetWorksheets\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

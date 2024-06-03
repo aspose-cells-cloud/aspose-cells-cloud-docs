@@ -1,5 +1,5 @@
 ﻿---
-title: Fügen Sie eine Pivot-Tabelle in einem Arbeitsblatt Excel hinzu
+title: Fügen Sie eine Pivot-Tabelle in ein Arbeitsblatt Excel ein
 second_title: Aspose.Cells Cloud Documen
 linktitle: Hinzufügen
 type: docs
@@ -8,8 +8,9 @@ aliases: [/add-a-pivot-table-in-a-worksheet/]
 keywords: Add a pivot table in an Excel worksheet
 description: Aspose.Cells Cloud REST API unterstützt das Hinzufügen einer Pivot-Tabelle in einem Excel Arbeitsblatt. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
 weight: 30
+kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdwon, Hinzufügen einer Pivot-Tabelle in einem Excel-Arbeitsblatt
 ---
-Dieser REST API weist auf `add` eine Pivot-Tabelle im Arbeitsblatt hin.
+Dieser REST API weist `add` auf eine Pivot-Tabelle im Arbeitsblatt hin.
  
 ## RSET API
  
@@ -22,19 +23,19 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables
  
 | Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
 |:- |:- |:- |:- |
-| Name| Zeichenfolge| Weg| Dokumentname.|
-| Blattname| Zeichenfolge| Weg| Der Arbeitsblattname.|
-| Anfrage|| Körper| CreatePivotTableRequest dto im Anfragetext.|
-| Ordner| Zeichenfolge| Abfrage| Ordner des Dokuments.|
-| Speichername| Zeichenfolge| Abfrage| Speichername.|
-| Quelldaten| Zeichenfolge| Abfrage| Die Daten für den neuen PivotTable-Cache.|
-| destCellName| Zeichenfolge| Abfrage| Die Zelle in der oberen linken Ecke des Zielbereichs des PivotTable-Berichts.|
-| Tabellenname| Zeichenfolge| Abfrage| Der Name des neuen PivotTable-Berichts.|
-| useSameSource| Boolescher Wert| Abfrage| Gibt an, ob dieselbe Datenquelle verwendet wird, wenn eine andere vorhandene Pivot-Tabelle diese Datenquelle verwendet hat. Wenn die Eigenschaft wahr ist, wird Speicherplatz gespart.|
+| Name| Schnur| Weg| Dokumentname.|
+| Blattname| Schnur| Weg| Der Arbeitsblattname.|
+| Anfrage|| Körper| CreatePivotTableRequest dto im Anforderungstext.|
+| Ordner| Schnur| Abfrage| Ordner des Dokuments.|
+| Speichername| Schnur| Abfrage| Speichername.|
+| Quelldaten| Schnur| Abfrage| Die Daten für den neuen PivotTable-Cache.|
+| Zielzellenname| Schnur| Abfrage|Die Zelle in der oberen linken Ecke des Zielbereichs des PivotTable-Berichts.|
+| Tabellenname| Schnur| Abfrage| Der Name des neuen PivotTable-Berichts.|
+| useSameSource|Boolescher Wert| Abfrage| Gibt an, ob dieselbe Datenquelle verwendet wird, wenn eine andere vorhandene Pivot-Tabelle diese Datenquelle verwendet hat. Wenn die Eigenschaft „true“ ist, wird Speicher gespart.|
  
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/PivotTables/PutWorksheetPivotTable) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht die Durchführung von REST-Interaktionen direkt über einen Webbrowser.
+ Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/PivotTables/PutWorksheetPivotTable) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen, REST-Interaktionen direkt von einem Webbrowser aus durchzuführen.
  
-Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie man mit cURL Anrufe zur Cloud API tätigt.
+Mit dem Befehlszeilentool cURL können Sie ganz einfach auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie Sie mit cURL Anrufe an Cloud API tätigen.
  
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
  
@@ -69,9 +70,9 @@ curl -v  "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet
  
 ## Cloud SDK-Familie
  
- Die Verwendung eines SDK ist der beste Weg, die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte schauen Sie sich die an[GitHub-Repository](https://github.com/aspose-cells-cloud) Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie hier.
+ Die Verwendung eines SDK ist der beste Weg, um die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte lesen Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
  
-Die folgenden Codebeispiele veranschaulichen, wie Aspose.Cells-Webdienste mithilfe verschiedener SDKs aufgerufen werden:
+Die folgenden Codebeispiele zeigen, wie Sie mit verschiedenen SDKs Aufrufe an die Webdienste Aspose.Cells tätigen:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 

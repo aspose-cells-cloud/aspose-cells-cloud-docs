@@ -8,6 +8,7 @@ aliases: [/combines-a-range-of-cells-into-a-single-cell/]
 keywords: Merge a range of cells into a single cell
 description: Aspose.Cells Cloud REST API stöder sammanslagning av ett cellintervall till en enda cell på ett Excel-kalkylblad. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 20
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, kombinerar ett intervall på Cells till en enda cell
 ---
  Denna REST API indikerar att ett intervall av celler ska slås samman till en enda cell på ett Excel kalkylblad.
             

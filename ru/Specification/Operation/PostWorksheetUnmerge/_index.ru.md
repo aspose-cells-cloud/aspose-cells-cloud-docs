@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postworksheetunmerge/
 description: Разъединить ячейки на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostWorksheetUnmerge
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetUnmerge" >}}

@@ -5,6 +5,7 @@ type: docs
 url: /it/aspose-contact-form-for-wordpress-faqs/
 description: Il modulo di contatto Aspose supporta Excel per creare, convertire, unire, dividere, proteggere, operazioni di oggetti interni e così via
 weight: 40
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Aspose Modulo di contatto per WordPress - Domande frequenti
 ---
 ## Aspose Modulo di contatto
 ### Posso utilizzare il plug-in Modulo di contatto Aspose senza avere un account su aspose.cloud?

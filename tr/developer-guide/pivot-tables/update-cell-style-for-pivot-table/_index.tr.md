@@ -8,6 +8,7 @@ aliases: [/update-cell-style-for-pivot-table/]
 keywords: Update cell style for a pivot table
 description: Aspose.Cells Cloud REST API, bir pivot tablo için hücre stilinin güncellenmesini destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 90
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Pivot tablo için hücre stilini güncelle
 ---
 Bu REST API, pivot tablo için `style` güncelleme hücresini gösterir.
  
@@ -28,7 +29,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottable
 | kolon| tamsayı| sorgu||
 | sıra| tamsayı| sorgu||
 | stil|| vücut| İstek gövdesinde dto stilini kullanın.|
-| yeniden hesaplamaya ihtiyaç var| boolean| sorgu| YANLIŞ|
+| yeniden hesaplamaya ihtiyaç var|boolean| sorgu| YANLIŞ|
 | dosya| sicim| sorgu| Belgenin klasörü.|
 | depolamaAdı| sicim| sorgu| depolama adı.|
  

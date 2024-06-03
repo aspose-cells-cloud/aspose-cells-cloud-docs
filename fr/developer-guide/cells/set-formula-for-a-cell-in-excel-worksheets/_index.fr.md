@@ -3,6 +3,7 @@ title: Définir la formule pour une cellule dans la feuille de calcul Excel
 type: docs
 url: /fr/set-formula-for-a-cell-in-excel-worksheets/
 weight: 80
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, définir la formule pour une cellule dans les feuilles de calcul Excel
 ---
 Ce REST API indique l'ensemble `cell formula` dans un fichier Excel.
  
@@ -15,7 +16,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cel
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Le nom du document.|
 | Nom de la feuille| chaîne| chemin| Le nom de la feuille de calcul.|

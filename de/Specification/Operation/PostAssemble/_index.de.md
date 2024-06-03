@@ -1,25 +1,26 @@
 ﻿---
-title: PostAssembl
+title: Nachassemblieren
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postassemble/
-description: Stellen Sie Datendateien mit Vorlagendateien zusammen, um Dateien in verschiedenen Formaten zu generieren
+description: Stellen Sie Datendateien mit Vorlagedateien zusammen, um Dateien in verschiedenen Formaten zu generieren
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostAssemble
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostAssemble" >}}
 {{< blocks/products/cells/docs-title titlemsg="Assemble data files with template files to generate files in various formats." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/assemble,POST,Fügen Sie Datendateien mit Vorlagendateien zusammen, um Dateien in verschiedenen Formaten zu generieren.,<a href=\'https://apireference.aspose.cloud/cells/#/LightCells/PostAssemble\'>PostAssemble</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/assemble,POST,Datendateien mit Vorlagedateien zusammenstellen, um Dateien in verschiedenen Formaten zu generieren.,<a href=\'https://apireference.aspose.cloud/cells/#/LightCells/PostAssemble\'>PostAssemble</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="Datenquelle, Zeichenfolge," >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="outFormat,string,Das zu konvertierende Format (CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/07616348 1/BMP /MD[Markdown]/Numbers)" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="Passwort, Zeichenfolge, Das zum Öffnen einer Excel-Datei erforderliche Passwort." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction,boolean,Gibt an, ob die Einschränkung der Excel-Datei überprüft wird, wenn der Benutzer zellenbezogene Objekte ändert." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="region,string,Die regionalen Einstellungen für die Arbeitsmappe." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="outFormat, Zeichenfolge, Das zu konvertierende Format (CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Kennwort, Zeichenfolge, Das zum Öffnen einer Excel-Datei erforderliche Kennwort." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction, boolean, ob die Einschränkung der Excel-Datei überprüft wird, wenn der Benutzer zellenbezogene Objekte ändert." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Region, Zeichenfolge, Die regionalen Einstellungen für die Arbeitsmappe." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/LightCellsController/PostAssemble\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

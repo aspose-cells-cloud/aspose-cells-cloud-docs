@@ -6,6 +6,7 @@ aliases: [/clear-all-condition-formattings/]
 keywords: REST API, spreadsheets, excel, clear all condition formatting
 description: "Cells.Cloud API per Excel funziona: cancella tutte le formattazioni delle condizioni"
 weight: 80
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Cancella formattazioni condizioni
 ---
 Questo REST API indica Cancella tutte le formattazioni delle condizioni
  

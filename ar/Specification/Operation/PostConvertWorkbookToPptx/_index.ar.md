@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postconvertworkbooktopptx/
 description: تحويل ملف Excel إلى ملفات Pptx
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostConvertWorkbookToPptx
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostConvertWorkbookToPptx" >}}

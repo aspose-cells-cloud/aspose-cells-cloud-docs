@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/getchartareafillformat/
 description: Récupérer la description du format de remplissage de la zone du graphique dans la feuille de calcul
+kwords: Excel, Office, feuille de calcul, Cloud REST API, GetChartAreaFillFormat
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetChartAreaFillFormat" >}}

@@ -3,6 +3,7 @@ title: Mise à jour de plusieurs styles Cells
 type: docs
 url: /fr/update-multiple-cells-style/
 weight: 20
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, mise à jour multiple du style Cells
 ---
 Ce REST API indique l'ensemble `cells style` sur une cellule d'un fichier Excel.
 
@@ -16,7 +17,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/styl
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Nom du classeur.|
 | Nom de la feuille| chaîne| chemin| Nom de la feuille de calcul.|

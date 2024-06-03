@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postworkbookimportxml/
 description: قم باستيراد ملف بيانات XML إلى ملف Excel. يمكن أن يكون ملف بيانات XML إما ملفًا سحابيًا أو بيانات من HTTP URI
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostWorkbookImportXML
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookImportXML" >}}

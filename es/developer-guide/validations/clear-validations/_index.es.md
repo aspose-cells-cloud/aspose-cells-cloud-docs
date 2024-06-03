@@ -7,6 +7,7 @@ url: /es/validations/clear/
 keywords: Delete all worksheet validations from an Excel worksheet
 description: Aspose.Cells Cloud REST API admite la eliminación de todas las validaciones de hojas de trabajo de una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 10
+kwords: Excel, Office Cloud, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Eliminar todas las validaciones de la hoja de trabajo en una hoja de trabajo Excel
 ---
 Este REST API indica eliminar todas las validaciones de la hoja de trabajo en una hoja de trabajo Excel.
  

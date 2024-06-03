@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/putworksheetchartlegend/
 description: Çalışma sayfasında grafik açıklamasını göster
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PutWorksheetChartLegend
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetChartLegend" >}}

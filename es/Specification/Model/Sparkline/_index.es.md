@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/model/sparkline/
 description: "Aspose.Cells Especificación del modelo de nube: Sparkline. Maneje sin esfuerzo Excel y otros documentos de hoja de cálculo con funciones como abrir, generar, editar, dividir, fusionar, comparar y convertir."
+kwords: Excel, Office, hoja de cálculo, nube REST API, minigráfico
 weight: 50
 ---
 ## **minigráfico**

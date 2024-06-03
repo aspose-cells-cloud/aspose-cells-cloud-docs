@@ -8,6 +8,7 @@ aliases: [/get-worksheet-count/]
 keywords: Get worksheets description from an Excel workbook
 description: Aspose.Cells Cloud REST API admite la obtención de descripciones de hojas de trabajo de un libro de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 10
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Obtener hojas de trabajo
 ---
 Este REST API indica `get worksheets information`.
  

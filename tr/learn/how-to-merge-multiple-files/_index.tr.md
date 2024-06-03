@@ -2,15 +2,16 @@
 title: Aspose.Cells Clou aracılığıyla birden fazla dosya nasıl birleştirilir
 type: docs
 url: /tr/how-to-merge-multiple-files
-description: Aspose.Cells Bulut aracılığıyla birden fazla dosya nasıl birleştirilir
+description: Aspose.Cells Cloud aracılığıyla birden fazla dosya nasıl birleştirilir
 weight: 10
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Aspose.Cells Cloud aracılığıyla birden fazla dosya nasıl birleştirilir
 ---
 ## giriiş
 Aspose.Cells Cloud API, elektronik tablo dosyalarının oluşturulması, düzenlenmesi ve dönüştürülmesi için hazırlanmış güçlü bir bulut tabanlı çözümdür. Bu makalede, tipik kullanım durumları ve örnek kod da dahil olmak üzere, birleştirilmiş dosya formatı için Aspose.Cells Bulut API'i kullanma sürecinde size yol göstereceğiz.
 
 ## Genel Bakış
 
- Aspose.Cells Bulut API, birden fazla elektronik tablo dosyasını çeşitli formatlara sahip bir dosyada birleştirmek için iki güçlü API sağlar. Desteklenen formatlar şunları içerir:**Excel** (XLS, XLSX),**CSV**, **HTML**, **PDF**, ve dahası. Aspose.Cells Bulut API'den yararlanarak, çok sayıda elektronik tablo dosyasını, çok çeşitli gereksinimleri karşılayan, yaygın olarak kullanılan formatlara sahip bir dosyada zahmetsizce birleştirebilirsiniz.
+ Aspose.Cells Bulut API, birden fazla elektronik tablo dosyasını çeşitli formatlara sahip bir dosyada birleştirmek için iki güçlü API sağlar. Desteklenen formatlar şunları içerir:**Excel** (XLS, XLSX),**CSV**, **HTML**, **PDF**ve dahası. Aspose.Cells Bulut API'den yararlanarak, çok sayıda elektronik tablo dosyasını, çok çeşitli gereksinimleri karşılayan, yaygın olarak kullanılan formatlara sahip bir dosyada zahmetsizce birleştirebilirsiniz.
 
 Dosyaların birleştirilmesi için genellikle çeşitli çevrimiçi ortamlarla uyumlu çok sayıda API mevcuttur. Aşağıda bu API'lerin ayrıntılı bir açıklaması bulunmaktadır:
 
@@ -20,7 +21,7 @@ Dosyaların birleştirilmesi için genellikle çeşitli çevrimiçi ortamlarla u
 
 # Aspose.Cells Cloud aracılığıyla birden fazla dosya bir dosya nasıl birleştirilir
 
- Aspose.Cells Bulut API şunları sağlar:[birden fazla SDK](https://github.com/aspose-cells-cloud)farklı programlama dilleri için. Tercih ettiğiniz programlama diliyle uyumlu SDK'yı seçin ve kurulum ve başlatma için birlikte gelen belgeleri izleyin. Alternatif olarak, kendi SDK'nızı aşağıdakilere göre oluşturabilirsiniz:[API referans](https://reference.aspose.cloud/cells/). Bu bölümde dosya birleştirme işlemini detaylandırmak için örnek olarak C#'i kullanacağız.
+ Aspose.Cells Bulut API şunları sağlar:[birden fazla SDK](https://github.com/aspose-cells-cloud) farklı programlama dilleri için. Tercih ettiğiniz programlama diliyle uyumlu SDK'yı seçin ve kurulum ve başlatma için birlikte gelen belgeleri izleyin. Alternatif olarak, kendi SDK'nızı aşağıdakilere göre oluşturabilirsiniz:[API referans](https://reference.aspose.cloud/cells/). Bu bölümde dosya birleştirme işlemini detaylandırmak için örnek olarak C#'i kullanacağız.
 
 
 ## Kayıt ve API Anahtarının Alınması

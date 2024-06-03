@@ -8,6 +8,7 @@ aliases: [/add-a-pivot-table-in-a-worksheet/]
 keywords: Add a pivot field in a pivot table
 description: Aspose.Cells Cloud REST API prend en charge l'ajout d'un champ croisé dynamique dans un tableau croisé dynamique. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 40
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdwon, Ajouter un champ croisé dynamique dans le tableau croisé dynamique
 ---
 Ce REST API indique au `add` le champ pivot dans le tableau croisé dynamique
  
@@ -20,14 +21,14 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Nom du document.|
 | Nom de la feuille| chaîne| chemin| Le nom de la feuille de calcul.|
 | pivotTableIndex| entier| chemin| Index du tableau croisé dynamique|
 | pivotFieldType| chaîne| requête| Le type de zone des champs.|
 | demande|| corps| Dto qui contient les index de champ|
-| besoinReCalculer| booléen| requête| FAUX|
+| besoinReCalculer|booléen| requête| FAUX|
 | dossier| chaîne| requête| Dossier du document.|
 | Nom de stockage| chaîne| requête| nom de stockage.|
  

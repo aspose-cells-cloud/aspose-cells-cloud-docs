@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/deleteheaderfooter/
 description: Effacer l'en-tête et le pied de page de la feuille de calcul
+kwords: Excel, Office, feuille de calcul, Cloud REST API, DeleteHeaderFooter
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteHeaderFooter" >}}

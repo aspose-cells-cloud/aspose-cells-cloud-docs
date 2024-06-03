@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/getworksheetpicturewithformat/
 description: Çalışma sayfasındaki numaraya göre bir resim alın
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, GetWorksheetPictureWithFormat
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetPictureWithFormat" >}}

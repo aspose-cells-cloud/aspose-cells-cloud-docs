@@ -3,6 +3,7 @@ title:  Uppdatera diagram Andra kategoriaxel
 type: docs
 url: /sv/charts/second-category-axis/update/
 weight: 160
+kwords: Excel, Office Moln, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Uppdatera diagram Andra kategoriaxel
 ---
  Denna REST API indikerar axel för uppdatering av diagrammets andra kategori.
  

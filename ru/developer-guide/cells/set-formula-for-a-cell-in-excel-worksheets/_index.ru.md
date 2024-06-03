@@ -3,6 +3,7 @@ title: Установить формулу для ячейки на листе E
 type: docs
 url: /ru/set-formula-for-a-cell-in-excel-worksheets/
 weight: 80
+kwords: Excel, Office Cloud, REST API, электронная таблица, PDF, CSV, Json, Markdwon, установка формулы для ячейки в Excel рабочих листах
 ---
 Этот REST API указывает на набор `cell formula` в файле Excel.
  

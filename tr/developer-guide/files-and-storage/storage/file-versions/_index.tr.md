@@ -6,6 +6,7 @@ url: /tr/storage/file-versions/
 keywords: Learn how to get file version with Aspose Cells Cloud REST API
 description: Aspose Cells Cloud REST API SDK desteğiyle çeşitli geliştirme dillerini destekleyen dosya sürümünü nasıl alacağınızı öğrenin. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 100
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Dosya Sürümleri
 ---
 Bu REST API, `file versions`'in alındığını gösterir.
  

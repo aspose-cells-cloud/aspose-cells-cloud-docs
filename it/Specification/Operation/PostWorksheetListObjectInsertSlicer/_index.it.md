@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/postworksheetlistobjectinsertslicer/
 description: Inserisci filtro dei dati per l'oggetto elenco
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PostWorksheetListObjectInsertSlicer
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetListObjectInsertSlicer" >}}
@@ -20,7 +21,7 @@ weight: 50
      {{< blocks/products/cells/docs-Parameter-content columns="listObjectIndex,intero,Indice degli oggetti elenco." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Nome parametro, Tipo, Descrizione" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns=" columnIndex,intero,L\'indice di ListColumn in ListObject.ListColumns" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="columnIndex,intero,L\'indice di ListColumn in ListObject.ListColumns" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns=" destCellName,string,La cella nell\'angolo superiore sinistro dell\'intervallo del filtro dei dati." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="cartella,stringa,La cartella in cui si trova il file." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Il nome dell\'archivio in cui si trova il file." >}} 

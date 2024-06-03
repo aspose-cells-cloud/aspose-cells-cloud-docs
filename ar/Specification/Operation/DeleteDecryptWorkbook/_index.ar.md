@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/deletedecryptworkbook/
 description: Excel فك تشفير الملفات
+kwords: Excel، Office، جدول البيانات، Cloud REST API، حذف ديكريبت ووركبوك
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteDecryptWorkbook" >}}

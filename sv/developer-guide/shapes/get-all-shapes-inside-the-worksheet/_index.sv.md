@@ -8,8 +8,9 @@ aliases: [/get-all-shapes-inside-the-worksheet/]
 keywords: Get all shapes on an Excel workshee
 description: Aspose.Cells Cloud REST API stöd för att få alla former på ett Excel kalkylblad. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 10
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Få alla former på ett Excel kalkylblad
 ---
-Denna REST API indikerar Get kalkylbladsformer
+ Denna REST API indikerar Get kalkylbladsformer
  
 ## RSET API
  

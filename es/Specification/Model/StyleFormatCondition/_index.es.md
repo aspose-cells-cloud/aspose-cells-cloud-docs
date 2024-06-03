@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/model/styleformatcondition/
 description: "Aspose.Cells Especificación del modelo de nube: StyleFormatCondition. Maneje sin esfuerzo Excel y otros documentos de hoja de cálculo con funciones como abrir, generar, editar, dividir, fusionar, comparar y convertir."
+kwords: Excel, Office, Hoja de cálculo, Cloud REST API, StyleFormatCondition
 weight: 50
 ---
 ## **estiloFormatoCondición**
 
- 
+ Representa la condición del formato de estilo.
 
 | Nombre de la propiedad| tipo de propiedad| Anulable| Solo lectura| Valor por defecto| Descripción|
 |:- |:- |:- |:- |:- |:- |
@@ -28,4 +29,5 @@ weight: 50
 | Top10| Clase:Top10| Verdadero| FALSO|||
 | enlace| Clase: enlace| Verdadero| FALSO|||
 
-**Nombre del padre** : (Condición de formato)[condición de formato]
+**Nombre del padre** : [Condición de formato](/specification/model/formatcondition)
+

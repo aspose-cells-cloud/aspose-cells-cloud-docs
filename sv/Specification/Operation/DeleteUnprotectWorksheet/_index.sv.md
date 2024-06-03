@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/deleteunprotectworksheet/
 description: Ta bort skyddet för arbetsbladet
+kwords: Excel, Office, Kalkylblad, Cloud REST API, DeleteUnprotectWorksheet
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteUnprotectWorksheet" >}}

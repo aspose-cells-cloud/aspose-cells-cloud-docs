@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/getworksheetlistobject/
 description: Çalışma sayfasındaki dizine göre liste nesnesi açıklamasını al
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, GetWorksheetListObject
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetListObject" >}}

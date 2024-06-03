@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/postworksheetsparklinegroup/
 description: Çalışma sayfasındaki mini grafik grubunu güncelleme
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PostWorksheetSparklineGroup
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetSparklineGroup" >}}

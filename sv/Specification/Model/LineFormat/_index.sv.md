@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/model/lineformat/
 description: "Aspose.Cells Molnmodellspecifikation: LineFormat. Hantera enkelt Excel och andra kalkylarksdokument med funktioner som att öppna, generera, redigera, dela, slå samman, jämföra och konvertera"
+kwords: Excel, Office, Kalkylblad, Cloud REST API, LineFormat
 weight: 50
 ---
 ## **linjeFormat**
 
- 
+ Representerar alla inställningar av linjen.
 
 | Egendomsnamn| Egenskapstyp| Nullbar| Endast läs| Standardvärde| Beskrivning|
 |:- |:- |:- |:- |:- |:- |
@@ -30,4 +31,5 @@ weight: 50
 | GradientFill| Klass: GradientFill| Sann| Falsk|||
 | ImageData| Sträng| Sann| Falsk|||
 
-**Förälders namn** : (FillFormat)[fillformat]
+**Förälders namn** : [FillFormat](/specification/model/fillformat)
+

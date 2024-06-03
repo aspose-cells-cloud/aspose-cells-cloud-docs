@@ -8,6 +8,7 @@ aliases: [/filter-a-list-using-dynamic-filter/,/autofilter/add-a-dynamic-filter/
 keywords: Adds a dynamic filter on an Excel worksheet
 description: Aspose.Cells Bulut API, Excel çalışma sayfasına dinamik filtre eklenmesini destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 65
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel çalışma sayfasına dinamik tarih filtresi ekleme
 ---
 Bu REST API, Excel çalışma sayfasına `dynamic filter` eklenmesi gerektiğini belirtir.
  
@@ -27,8 +28,8 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/
 | menzil| sicim| sorgu||
 | alanIndex| tamsayı| sorgu||
 | dinamikFilterType| sicim| sorgu||
-| maçBoşluklar| boolean| sorgu||
-| yenileme| boolean| sorgu||
+| maçBoşluklar|boolean| sorgu||
+| yenileme|boolean| sorgu||
 | dosya| sicim| sorgu||
 | depolamaAdı| sicim| sorgu| depolama adı.|
  

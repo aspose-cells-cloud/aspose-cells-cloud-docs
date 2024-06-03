@@ -3,6 +3,7 @@ title:  Получить ось категории диаграммы
 type: docs
 url: /ru/charts/category-axis/get/
 weight: 60
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Получить ось категории диаграммы
 ---
 Этот REST API указывает ось категории диаграммы Get.
  

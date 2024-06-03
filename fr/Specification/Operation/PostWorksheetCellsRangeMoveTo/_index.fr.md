@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postworksheetcellsrangemoveto/
 description: Déplacer la plage actuelle vers la plage de destination
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostWorksheetCellsRangeMoveTo
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangeMoveTo" >}}

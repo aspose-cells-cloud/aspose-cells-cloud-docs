@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postworkbooksettings/
 description: Обновить настройку в книге
+kwords: Excel, Office, электронная таблица, Cloud REST API, настройки PostWorkbook
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookSettings" >}}

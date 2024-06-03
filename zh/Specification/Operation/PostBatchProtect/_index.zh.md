@@ -1,21 +1,22 @@
 ﻿---
-title: 批次后保护
+title: PostBatchProtec
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/postbatchprotect/
 description: 批量保护满足特定匹配条件的文件
+kwords: Excel, Office, 电子表格, Cloud REST API, PostBatchProtect
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostBatchProtect" >}}
 {{< blocks/products/cells/docs-title titlemsg="Batch protecting files that meet specific matching conditions." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/batch/protect,POST,批量保护满足特定匹配条件的文件。,<a href=\'https://apireference.aspose.cloud/cells/#/Batch/PostBatchProtect\'>PostBatchProtect</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/batch/protect,POST,批量保护符合特定匹配条件的文件。,<a href=\'https://apireference.aspose.cloud/cells/#/Batch/PostBatchProtect\'>PostBatchProtect</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="batchProtectRequest,class:batchprotectrequest,BatchProtectRequest 批量保护文件请求。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns=" batchProtectRequest,class:batchprotectrequest,BatchProtectRequest 批量保护文件请求。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

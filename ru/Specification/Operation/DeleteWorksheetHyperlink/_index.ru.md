@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/deleteworksheethyperlink/
 description: Удалить гиперссылку по индексу на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, DeleteWorksheetHyperlink
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetHyperlink" >}}

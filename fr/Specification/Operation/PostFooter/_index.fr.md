@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postfooter/
 description: Mettre à jour le pied de page dans la feuille de calcul
+kwords: Excel, Office, Feuille de calcul, Cloud REST API, PostFooter
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostFooter" >}}

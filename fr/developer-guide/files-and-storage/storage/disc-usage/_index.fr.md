@@ -6,6 +6,7 @@ url: /fr/storage/disc-usage/
 keywords: Learn how to get disc-usage with Aspose Cells Cloud REST API
 description: Découvrez comment obtenir l'utilisation du disque avec Aspose Cells Cloud REST API SDK prenant en charge les types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 100
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, utilisation du disque
 ---
 Ce REST API indique `get disc usage`.
  
@@ -18,7 +19,7 @@ GET http://api.aspose.cloud/v3.0/cells/storage/disc
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | Nom de stockage| chaîne| requête| Nom de stockage|
 

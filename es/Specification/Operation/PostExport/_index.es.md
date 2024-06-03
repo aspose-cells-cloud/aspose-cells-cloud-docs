@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/postexport/
 description: Exporte Excel elementos internos o el propio libro a archivos de varios formatos
+kwords: Excel, Office, Hoja de cálculo, Nube REST API, PostExport
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostExport" >}}
@@ -16,7 +17,7 @@ weight: 50
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Nombre del parámetro, tipo, descripción" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="tipo de objeto, cadena, tipo de objeto exportado: libro de trabajo/hoja de trabajo/gráfico/comentario/imagen/forma/objeto de lista/objeto oleo." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="formato, cadena, el formato de conversión (CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/07617 3481/ MD[Markdown]/Números)." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="formato, cadena, el formato de conversión (CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/0761 73481/ MD[Markdown]/Números)." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="contraseña,cadena,La contraseña necesaria para abrir un archivo Excel." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction,boolean,Si verifica la restricción del archivo Excel cuando el usuario modifica los objetos relacionados con las celdas." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="región, cadena, la configuración regional del libro de trabajo." >}} 

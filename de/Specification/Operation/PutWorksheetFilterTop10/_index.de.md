@@ -1,33 +1,34 @@
 ﻿---
-title: PutWorksheetFilterTop1
+title: ArbeitsblattFilterOberstes1setzen
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/putworksheetfiltertop10/
-description: Filtern Sie die Top-10-Elemente in der Liste im Arbeitsblatt
+description: Filtern Sie die Top 10 Elemente in der Liste im Arbeitsblatt
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PutWorksheetFilterTop10
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetFilterTop10" >}}
 {{< blocks/products/cells/docs-title titlemsg="Filter the top 10 items in the list in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/autoFilter/filterTop10,PUT,Filtern Sie die obersten 10 Elemente in der Liste im Arbeitsblatt.,<a href=\'https://apireference.aspose.cloud/cells/# /AutoFilter/PutWorksheetFilterTop10\'>PutWorksheetFilterTop10</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/autoFilter/filterTop10,PUT,Filtert die ersten 10 Elemente in der Liste im Arbeitsblatt.,<a href=\'https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetFilterTop10\'>PutWorksheetFilterTop10</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Name der Arbeitsmappe." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Name der Arbeitsmappe." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="range,string,Stellt den Bereich dar, für den der angegebene AutoFilter gilt." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="fieldIndex,integer,Der ganzzahlige Offset des Feldes, auf dem Sie den Filter basieren möchten (von links in der Liste; das Feld ganz links ist Feld 0)." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Bereich, Zeichenfolge, stellt den Bereich dar, auf den der angegebene AutoFilter angewendet wird." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="fieldIndex,integer,Der ganzzahlige Offset des Felds, auf dem der Filter basieren soll (von links in der Liste; das äußerste linke Feld ist Feld 0)." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="isTop,boolean,Gibt an, ob von oben oder unten gefiltert wird" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="isPercent,boolean,Gibt an, ob es sich bei den Elementen um Prozent oder Anzahl handelt" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="itemCount,integer,Die Anzahl der Elemente" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="matchBlanks, boolean, Übereinstimmung mit allen leeren Zellen in der Liste." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="Refresh, boolean, Automatische Filter aktualisieren, um die Zeilen auszublenden oder einzublenden." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="isPercent,boolean,Gibt an, ob die Elemente Prozent oder Anzahl sind" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="itemCount,Integer,Die Anzahl der Elemente" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="matchBlanks, boolean, Alle leeren Zellen in der Liste übereinstimmend." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Aktualisieren, Boolesch, Automatische Filter aktualisieren, um die Zeilen auszublenden oder sichtbar zu machen." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/AutoFilterController/PutWorksheetFilterTop10\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

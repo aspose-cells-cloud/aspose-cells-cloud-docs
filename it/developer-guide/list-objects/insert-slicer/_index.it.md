@@ -7,6 +7,7 @@ keywords: Insert slicer for list object
 url: /it/list-objects/insert-slicer/
 description:  Inserisci filtro dei dati per l'oggetto elenco.
 weight: 20
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Elenco oggetti inserimento affettatrice
 ---
  Questo REST API indica l'inserimento del filtro dei dati per l'oggetto elenco su un foglio di lavoro Excel.
 

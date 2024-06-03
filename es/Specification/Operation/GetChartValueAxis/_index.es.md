@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/getchartvalueaxis/
 description: Recuperar el eje de valores del gráfico en el gráfico
+kwords: Excel, Office, hoja de cálculo, nube REST API, GetChartValueAxis
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetChartValueAxis" >}}

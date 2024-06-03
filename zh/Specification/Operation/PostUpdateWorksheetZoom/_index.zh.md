@@ -1,27 +1,28 @@
 ﻿---
-title: 更新后工作表Zoo
+title: PostUpdateWorksheetZoo
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/postupdateworksheetzoom/
-description: 更新工作表中的缩放百分比。应该在 10 到 400 之间
+description: 更新工作表中的缩放百分比。它应介于 10 到 400 之间
+kwords: Excel，Office，电子表格，云 REST API，PostUpdateWorksheetZoom
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostUpdateWorksheetZoom" >}}
 {{< blocks/products/cells/docs-title titlemsg="Update the scaling percentage in the worksheet. It should be between 10 and 400." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/zoom,POST,更新工作表中的缩放百分比。应介于 10 到 400 之间。<a href=\'https://apireference.aspose.cloud/cells/#/Worksheets/PostUpdateWorksheetZoom\'>PostUpdateWorksheetZoom</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/zoom,POST,更新工作表中的缩放百分比。它应该在 10 到 400 之间。,<a href=\'https://apireference.aspose.cloud/cells/#/Worksheets/PostUpdateWorksheetZoom\'>PostUpdateWorksheetZoom</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="参数名称、类型、描述" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="名称，字符串，文件名。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,字符串,工作表名称。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="name，string，文件名。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName，string，工作表名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="value,integer,表示比例因子，以百分比表示。它应该在 10 到 400 之间。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="value，integer，表示百分比的缩放因子。它应介于 10 到 400 之间。" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="文件夹，字符串，文件所在的文件夹。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,文件所在的存储名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName，string，文件所在的存储名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/WorksheetsController/PostUpdateWorksheetZoom\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

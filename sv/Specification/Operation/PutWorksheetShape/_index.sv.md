@@ -3,7 +3,8 @@ title: PutWorksheetShap
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/putworksheetshape/
-description: Lägg till en form i arbetsbladet
+description: Lägg till en form i kalkylbladet
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PutWorksheetShape
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetShape" >}}

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/deleteworksheetconditionalformattingarea/
 description: Eliminar el área de celda del formato condicional
+kwords: Excel, Office, Hoja de cálculo, Cloud REST API, DeleteWorksheetConditionalFormattingArea
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetConditionalFormattingArea" >}}

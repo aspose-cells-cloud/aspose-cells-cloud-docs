@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/postbatchconvert/
 description: Batchkonverterande filer som uppfyller specifika matchningsvillkor
+kwords: Excel, Office, Kalkylblad, Cloud REST API, PostBatchConvert
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostBatchConvert" >}}

@@ -8,6 +8,7 @@ aliases: [/protect/digital-signature/]
 keywords: Add digital signature for an Excel workbook
 description: Aspose.Cells Cloud REST API supporta l'aggiunta della firma digitale per una cartella di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 35
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Aggiungi firma digitale per la cartella di lavoro Excel
 ---
  Questo REST API indica di aggiungere un `digital signature` per una cartella di lavoro Excel.
  

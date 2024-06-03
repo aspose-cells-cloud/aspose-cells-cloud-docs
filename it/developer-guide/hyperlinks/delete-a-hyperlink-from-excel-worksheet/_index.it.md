@@ -5,6 +5,7 @@ url: /it/hyperlinks/delete/
 keywords: Delete a hyperlink from an Excel worksheet
 description: Aspose.Cells Cloud REST API supporta l'eliminazione di un collegamento ipertestuale da un foglio di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 40
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Elimina
 ---
 Questo REST API indica `delete a worksheet hyperlink` tramite indice su un foglio di lavoro Excel.
  

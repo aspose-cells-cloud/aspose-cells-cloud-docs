@@ -6,6 +6,7 @@ aliases: [/add-hyperlinks-to-excel-worksheet/]
 keywords: Add a hyperlink into an Excel worksheet
 description: Aspose.Cells Cloud REST API, Excel çalışma sayfasına köprü eklenmesini destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 20
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Ekle
 ---
 Bu REST API, Excel çalışma sayfasında `add a worksheet hyperlink`'i gösterir.
  
@@ -25,7 +26,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks
 | ilk sıra| tamsayı| sorgu||
 | ilk sütun| tamsayı| sorgu||
 | toplamSatırlar| tamsayı| sorgu||
-|toplamSütunlar| tamsayı| sorgu||
+| toplamSütunlar| tamsayı| sorgu||
 | adres| sicim| sorgu||
 | dosya| sicim| sorgu| Belge klasörü.|
 | depolamaAdı| sicim| sorgu| depolama adı.|

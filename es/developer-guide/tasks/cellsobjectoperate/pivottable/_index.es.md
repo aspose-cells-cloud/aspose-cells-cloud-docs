@@ -7,6 +7,7 @@ aliases: [/working-with-pivot-table-using-cellsobjectoperate-task/]
 keywords: REST API, pivot table, spreadsheets, exce
 description: "Cells.Cloud API para Excel operar: crear una tabla dinámica usando la tarea CellsObjectOperate"
 weight: 10
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Trabajar con tabla dinámica usando la tarea CellsObjectOperate
 ---
 Este REST API crea `pivot table` usando el objeto de celdas opera `task`.
 
@@ -22,7 +23,7 @@ Este REST API crea `pivot table` usando el objeto de celdas opera `task`.
 | Índice de tabla dinámica| entero||
 | Filas de campo dinámico|entero[]||
 | Columnas de campo dinámico|entero[]||
-|Datos de campo dinámico|entero[]||
+| Datos de campo dinámico|entero[]||
 
 
 ## DESCANSO API
@@ -33,7 +34,7 @@ Este REST API crea `pivot table` usando el objeto de celdas opera `task`.
 
  El[Especificación de API abierta](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
 
- Puedes usar**cURL** Herramienta de línea de comandos para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
+ Puedes usar**cURL**Herramienta de línea de comandos para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
 
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}

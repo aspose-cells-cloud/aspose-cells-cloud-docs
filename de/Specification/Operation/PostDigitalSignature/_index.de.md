@@ -3,25 +3,26 @@ title: PostDigitalSignatur
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postdigitalsignature/
-description: Excel Datei mit digitaler Signatur
+description: Excel Datei digitale Signatur
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostDigitalSignature
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostDigitalSignature" >}}
 {{< blocks/products/cells/docs-title titlemsg="Excel file digital signature." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/digitalsignature,POST,Excel digitale Signatur der Datei.,<a href=\'https://apireference.aspose.cloud/cells/#/Protection/PostDigitalSignature\'>PostDigitalSignature</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/digitalsignature,POST,Excel digitale Dateisignatur.,<a href=\'https://apireference.aspose.cloud/cells/#/Protection/PostDigitalSignature\'>PostDigitalSignature</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="digitalsignaturfile,string,Der Pfad der digitalen Signaturdatei sollte sowohl den Ordner als auch den Dateinamen sowie die Erweiterung enthalten." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="Passwort, Zeichenfolge, Das zum Öffnen einer Excel-Datei erforderliche Passwort." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="digitalsignaturefile,string,Der Pfad der digitalen Signaturdatei sollte sowohl den Ordner- als auch den Dateinamen sowie die Erweiterung enthalten." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Kennwort, Zeichenfolge, Das zum Öffnen einer Excel-Datei erforderliche Kennwort." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/ProtectionController/PostDigitalSignature\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

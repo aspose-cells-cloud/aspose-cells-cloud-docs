@@ -6,6 +6,7 @@ aliases: [/remove-cell-area-from-conditional-formatting/]
 keywords: REST API, spreadsheets, excel, delete cell area from condition formattin
 description: "Cells.Cloud API per Excel funziona: elimina l'area della cella dalla formattazione delle condizioni"
 weight: 70
+kwords:  Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Elimina area cella
 ---
 Questo REST API indica Rimuovi l'area della cella dalla formattazione condizionale.
  
@@ -23,9 +24,9 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditio
 | nome| corda| sentiero||
 | nomefoglio| corda| sentiero||
 | startRow| numero intero| domanda||
-| startColumn| numero intero| domanda||
+| startColonna| numero intero| domanda||
 | totaleRighe| numero intero| domanda||
-|totaleColonne| numero intero| domanda||
+| totaleColonne| numero intero| domanda||
 | cartella| corda| domanda||
 | storageName| corda| domanda| nome dell'archivio.|
  

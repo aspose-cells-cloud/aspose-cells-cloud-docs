@@ -3,6 +3,7 @@ title: Rensa Cells Formatering i Excel Arbetsblad
 type: docs
 url: /sv/clear-cells-formatting-in-excel-worksheet/
 weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Clear Cells Formatering i Excel Arbetsblad
 ---
 Denna REST API indikerar `clear` celler `style` i en Excel fil.
 

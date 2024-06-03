@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/getcellhtmlstring/
 description: Bu hücredeki verileri ve belirli biçimleri içeren HTML dizesini alın
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, GetCellHtmlString
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetCellHtmlString" >}}

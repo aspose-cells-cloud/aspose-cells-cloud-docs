@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/postworkbookstextsearch/
 description: Buscar texto en el libro de trabajo
+kwords: Excel, Office, hoja de cálculo, nube REST API, PostWorkbooksTextSearch
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbooksTextSearch" >}}

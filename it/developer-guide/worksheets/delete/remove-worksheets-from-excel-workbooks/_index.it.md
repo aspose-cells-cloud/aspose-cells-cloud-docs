@@ -8,6 +8,7 @@ aliases: [/remove-worksheets-from-excel-workbooks/]
 keywords: Delete an Excel worksheet on an Excel workbook
 description: Aspose.Cells Cloud REST API supporta l'eliminazione di un foglio di lavoro Excel su una cartella di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 20
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Elimina foglio di lavoro
 ---
 Questo REST API indica `delete worksheet`.
  

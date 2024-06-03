@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/deleteworksheetcharts/
 description: Effacer les graphiques dans les feuilles de calcul
+kwords: Excel, Office, feuille de calcul, Cloud REST API, DeleteWorksheetCharts
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetCharts" >}}

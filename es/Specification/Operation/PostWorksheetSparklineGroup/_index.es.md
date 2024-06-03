@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/postworksheetsparklinegroup/
 description: Actualizar un grupo minigráfico en la hoja de trabajo
+kwords: Excel, Office, hoja de cálculo, nube REST API, PostWorksheetSparklineGroup
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetSparklineGroup" >}}

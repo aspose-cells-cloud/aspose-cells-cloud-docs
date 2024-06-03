@@ -8,6 +8,7 @@ aliases: [/add-an-icon-filter/,/autofilter/add-an-icon-filter/]
 keywords: Adds an icon filter on an Excel worksheet
 description: Aspose.Cells Cloud API admite la adición de un filtro de ícono en una hoja de trabajo Excel. El SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 65
+kwords: Excel, Office Cloud, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Agregar un filtro de icono en una hoja de trabajo Excel
 ---
 Este REST API indica agregar un `icon filter` en una hoja de trabajo Excel.
 
@@ -23,11 +24,11 @@ Los parámetros de la solicitud son:
 
 | Nombre del parámetro| Tipo| Ruta/Cadena de consulta/Cuerpo HTTP|Descripción|
 |:- |:- |:- |:- |
-| nombre| cadena| Camino|El nombre del libro de trabajo.|
+| nombre| cadena| Camino| El nombre del libro de trabajo.|
 | nombre de la hoja| cadena| Camino| El nombre de la hoja de trabajo.|
 |rango|cadena| Consulta||
 |índice de campo|entero| Consulta||
-|iconoEstablecerTipo|cadena| Consulta| Flechas3/FlechasGris3/Banderas3/Señales3/Símbolos3/Símbolos32/Semáforos31/Semáforos32/Flechas4/FlechasGris4/Clasificación4/RedToBlack4/Semáforos4/Flechas5/FlechasGris5/Cuartos5/Clasificación5/Estrellas3/Cajas5/Triángulos3/Ninguno/Conjunto personalizado/Caritas3/Color Emoticonos3|
+|iconoEstablecerTipo|cadena| Consulta|Flechas3/FlechasGris3/Banderas3/Señales3/Símbolos3/Símbolos32/Semáforos31/Semáforos32/Flechas4/FlechasGris4/Clasificación4/RedToBlack4/Semáforos4/Flechas5/FlechasGris5/Cuartos5/Clasificación5/Estrellas3/Cajas5/Triángulos3/Ninguno/Conjunto personalizado/Smi mentiras3/ColorSmilies3|
 |ID de icono|entero| Consulta||
 |MatchBlancos|cadena| Consulta|verdadero Falso|
 |actualizar|cadena| Consulta|verdadero Falso|

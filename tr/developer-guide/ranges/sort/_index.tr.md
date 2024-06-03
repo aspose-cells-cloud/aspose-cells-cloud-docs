@@ -7,8 +7,9 @@ keywords: Range Sort
 url: /tr/ranges/sort/
 description:  Bir hücre aralığının etrafındaki ana hat kenarlığını ayarlar.
 weight: 20
+kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Aralık Sıralaması
 ---
-Bu REST API, aralık sıralamasını gösterir.
+ Bu REST API, aralık sıralamasını gösterir.
 
 ## RSET API
 

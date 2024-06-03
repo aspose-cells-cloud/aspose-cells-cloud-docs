@@ -8,8 +8,9 @@ aliases: [/working-with-pivot-filters/]
 keywords: Add filter for a pivot table
 description: Aspose.Cells Cloud REST API поддерживает добавление фильтра для сводной таблицы. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 50
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Работа со сводными фильтрами
 ---
-Этот REST API указывает `add` опорную точку `filter` для индекса таблицы сводных данных.
+Этот REST API указывает `add` опорную точку `filter` для индекса таблицы Piovt.
  
 ## РСЕТ API
  
@@ -26,7 +27,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables
 | имя листа| нить| путь||
 | сводная таблицатаблеиндекс| целое число| путь||
 | фильтр|| тело||
-| нужнопересчитать| логическое значение| запрос| ЛОЖЬ|
+| нужнопересчитать|логическое значение| запрос| ЛОЖЬ|
 | папка| нить| запрос||
 | имя_хранилища| нить| запрос| имя хранилища.|
  

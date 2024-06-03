@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/postassemble/
 description: Reúna archivos de datos con archivos de plantilla para generar archivos en varios formatos
+kwords: Excel, Office, Hoja de cálculo, Nube REST API, PostAssemble
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostAssemble" >}}
@@ -16,7 +17,7 @@ weight: 50
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Nombre del parámetro, tipo, descripción" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="fuente de datos, cadena," >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="outFormat,string,El formato a convertir(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/07 6173481 /MD[Rebajas]/Números)" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="outFormat,string,El formato a convertir(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/0 76173481 /MD[Rebajas]/Números)" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="contraseña,cadena,La contraseña necesaria para abrir un archivo Excel." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction,boolean,Si verifica la restricción del archivo Excel cuando el usuario modifica los objetos relacionados con las celdas." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="región, cadena, la configuración regional del libro de trabajo." >}} 

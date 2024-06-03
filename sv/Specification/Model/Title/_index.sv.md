@@ -4,18 +4,19 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/model/title/
 description: "Aspose.Cells Molnmodellspecifikation: Titel. Hantera enkelt Excel och andra kalkylarksdokument med funktioner som att öppna, generera, redigera, dela, slå samman, jämföra och konvertera"
+kwords: Excel, Office, Kalkylblad, Cloud REST API, Titel
 weight: 50
 ---
 ## **titel**
 
- 
+ Kapslar in objektet som representerar titeln på diagrammet eller axeln.
 
 | Egendomsnamn| Egenskapstyp| Nullbar| Endast läs| Standardvärde| Beskrivning|
 |:- |:- |:- |:- |:- |:- |
 | Är synlig| Boolean| Sann| Falsk|| Representerar om titeln är synlig.|
 | LinkedSource| Sträng| Sann| Falsk|||
 | Rotations vinkel| Heltal| Sann| Falsk|||
-| Text| Sträng| Sann| Falsk||Hämtar eller ställer in texten för displayenhetens etikett.|
+| Text| Sträng| Sann| Falsk|| Hämtar eller ställer in texten för displayenhetens etikett.|
 | TextDirection| Sträng| Sann| Falsk|||
 | TextHorizontal Alignment| Sträng| Sann| Falsk|||
 | TextVerticalAlignment| Sträng| Sann| Falsk|||
@@ -27,10 +28,10 @@ weight: 50
 | IsAutomaticSize| Boolean| Sann| Falsk|||
 | IsInnerMode| Boolean| Sann| Falsk|||
 | Skugga| Boolean| Sann| Falsk|||
-| Formegenskaper| Behållare| Sann| Falsk|||
 | Bredd| Heltal| Sann| Falsk|||
 | Höjd| Heltal| Sann| Falsk|||
 | X| Heltal| Sann| Falsk|||
 | Y| Heltal| Sann| Falsk|||
 
-**Förälders namn** : (ChartFrame)[chartframe]
+**Förälders namn** : [ChartFrame](/specification/model/chartframe)
+

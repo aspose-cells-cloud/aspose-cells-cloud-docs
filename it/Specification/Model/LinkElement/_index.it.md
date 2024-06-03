@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/model/linkelement/
 description: "Aspose.Cells Specifica del modello cloud: LinkElement. Gestisci facilmente Excel e altri fogli di calcolo con funzionalità come apertura, generazione, modifica, divisione, unione, confronto e conversione"
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, LinkElement
 weight: 50
 ---
 ## **collegamentoElemento**
@@ -35,7 +36,6 @@ weight: 50
 	-  [Impostazione della pagina](pagesetup) 
 	-  [Riga](row) 
 	-  [Righe](rows) 
-	-  [SplitResultDocument](splitresultdocument) 
 	-  [Stili](styles) 
 	-  [Elemento di testo](textitem) 
 	-  [Elementi di testo](textitems) 

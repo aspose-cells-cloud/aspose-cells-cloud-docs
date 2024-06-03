@@ -3,6 +3,7 @@ title:  Grafik Değeri Axi'yi Alın
 type: docs
 url: /tr/charts/value-axis/get/
 weight: 60
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Grafik Değeri Eksenini Al
 ---
 Bu REST API, Grafik Değeri Eksenini Al'ı gösterir
  

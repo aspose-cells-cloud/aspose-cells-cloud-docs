@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/deleteworksheetrow/
 description: حذف صف في ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، RemoveWorksheetRow
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetRow" >}}

@@ -8,6 +8,7 @@ aliases: [/working-with-worksheets/]
 keywords: Working with worksheet on an Excel workbook
 description: Aspose.Cells Cloud REST API поддерживает работу с листом в книге Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 100
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, работа с листом Excel.
 ---
 Рабочий лист — это набор ячеек, в которых вы храните данные и манипулируете ими. Каждая книга Excel может содержать несколько листов.
 

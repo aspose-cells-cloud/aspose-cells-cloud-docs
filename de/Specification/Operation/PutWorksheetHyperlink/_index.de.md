@@ -1,31 +1,32 @@
 ﻿---
-title: PutWorksheetHyperlin
+title: Arbeitsblatt einfügenHyperlin
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/putworksheethyperlink/
-description: Fügen Sie einen Hyperlink in das Arbeitsblatt ein
+description: Hyperlink im Arbeitsblatt hinzufügen
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PutWorksheetHyperlink
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetHyperlink" >}}
 {{< blocks/products/cells/docs-title titlemsg="Add hyperlink in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/hyperlinks,PUT,Hyperlink im Arbeitsblatt hinzufügen.,<a href=\'https://apireference.aspose.cloud/cells/#/Hypelinks/PutWorksheetHyperlink\'>PutWorksheetHyperlink< /a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/hyperlinks,PUT,Hyperlink im Arbeitsblatt hinzufügen.,<a href=\'https://apireference.aspose.cloud/cells/#/Hypelinks/PutWorksheetHyperlink\'>PutWorksheetHyperlink</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="firstRow,integer,Erste Zeile des Hyperlinkbereichs." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="firstRow, Integer, Erste Zeile des Hyperlinkbereichs." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="firstColumn,integer,Erste Spalte des Hyperlinkbereichs." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="totalRows,integer,Anzahl der Zeilen in diesem Hyperlinkbereich." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="totalColumns,integer,Anzahl der Spalten dieses Hyperlinkbereichs." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="totalRows, Integer, Anzahl der Zeilen in diesem Hyperlinkbereich." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="totalColumns, Integer, Anzahl der Spalten dieses Hyperlinkbereichs." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Adresse, Zeichenfolge, Adresse des Hyperlinks." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/HypelinksController/PutWorksheetHyperlink\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

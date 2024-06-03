@@ -6,6 +6,7 @@ url: /fr/split/
 keywords: Working with splitting on an Excel file
 description: Aspose.Cells Prise en charge de Cloud REST API pour le fractionnement d'un fichier Excel. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 32
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdwon, Split
 ---
 ## Travailler avec le fractionnement sur un fichier Excel.
 

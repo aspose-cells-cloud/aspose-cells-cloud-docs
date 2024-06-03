@@ -3,6 +3,7 @@ title:  Skaffa diagramkategori Axi
 type: docs
 url: /sv/charts/category-axis/get/
 weight: 60
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Get Chart Category Axis
 ---
 Denna REST API indikerar Hämta diagramkategoriaxel
  

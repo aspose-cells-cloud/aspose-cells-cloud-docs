@@ -8,6 +8,7 @@ aliases: [/set-range-value-in-excel-worksheet/]
 keywords: Set range value on an Excel workshee
 description: Aspose.Cells Cloud REST API stöder inställningsintervallvärde på ett Excel-kalkylblad. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 72
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Ställ in intervallvärde på ett Excel kalkylblad
 ---
 Denna REST API indikerar Lägger ett värde i intervallet, om så är lämpligt kommer värdet att konverteras till annan datatyp och cellens talformat återställs.
             
@@ -27,8 +28,8 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/val
 | arknamn| sträng| väg| kalkylbladsnamn|
 | värde| sträng| fråga| Ingångsvärde|
 | räckvidd|| kropp| intervall i arbetsbladet|
-| är konverterad| booleskt| fråga| Falsk|
-| setStyle| booleskt| fråga| Falsk|
+| är konverterad|booleskt| fråga| Falsk|
+| setStyle|booleskt| fråga| Falsk|
 | mapp| sträng| fråga| Arbetsboksmapp.|
 | lagringsnamn| sträng| fråga| lagringsnamn.|
  

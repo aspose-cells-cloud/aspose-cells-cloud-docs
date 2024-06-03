@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/model/importoption/
 description: "Aspose.Cells مواصفات النموذج السحابي: ImportOption. تعامل بسهولة مع Excel ومستندات جداول البيانات الأخرى التي تحتوي على ميزات مثل الفتح والتوليد والتحرير والتقسيم والدمج والمقارنة والتحويل"
+kwords: Excel، Office، جدول البيانات، Cloud REST API، ImportOption
 weight: 50
 ---
 ## **importOption**
@@ -15,6 +16,7 @@ weight: 50
 | ورقة عمل الوجهة| خيط| حقيقي| خطأ شنيع|| اسم ورقة العمل الوجهة|
 | IsInsert| منطقية| حقيقي| خطأ شنيع|||
 | ImportDataType| خيط| حقيقي| خطأ شنيع|||
+| مصدر البيانات| الفئة: مصدر البيانات| حقيقي| خطأ شنيع|||
 | مصدر| الفئة: مصدر الملف| حقيقي| خطأ شنيع|||
 
 **اسم الاطفال** : 

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/getworksheetcellstyle/
 description: Çalışma sayfasındaki hücre stili açıklamalarını alın
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, GetWorksheetCellStyle
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetCellStyle" >}}

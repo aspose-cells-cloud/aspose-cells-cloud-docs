@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postwatermark/
 description: أضف علامة مائية نصية إلى ملفات Excel وقم بإنشاء ملفات الإخراج بتنسيقات مختلفة
+kwords: Excel, Office, جدول البيانات, Cloud REST API, PostWatermark
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWatermark" >}}

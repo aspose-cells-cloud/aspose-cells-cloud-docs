@@ -1,9 +1,10 @@
 ﻿---
-title: ПоместитьВставитьНовый рабочий лист
+title: ПоместитьВставитьНовыйрабочий лист
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/putinsertnewworksheet/
 description: Вставка нового листа в книгу
+kwords: Excel, Office, электронная таблица, Cloud REST API, PutInsertNewWorksheet
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutInsertNewWorksheet" >}}
@@ -20,7 +21,7 @@ weight: 50
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Имя параметра, тип, описание" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="имя_листа,строка,имя листа." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="индекс, целое число," >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="Sheettype,строка,Указывает тип рабочего листа(VB/Worksheet/Chart/BIFF4Macro/InternationalMacro/Other/Dialog)." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Sheettype,string, Указывает тип рабочего листа (VB/Worksheet/Chart/BIFF4Macro/InternationalMacro/Other/Dialog)." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="имя нового листа, строка," >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="папка,строка,Папка, в которой находится файл." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="StorageName,string,Имя хранилища, в котором находится файл." >}} 

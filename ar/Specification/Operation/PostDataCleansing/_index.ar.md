@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postdatacleansing/
 description: إن تنظيف بيانات ملفات جداول البيانات هو عملية إدارة بيانات تستخدم لتحديد وتصحيح وإزالة الأخطاء أو عدم الاكتمال أو التكرارات أو عدم الدقة في الجداول والنطاقات
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostDataCleansing
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostDataCleansing" >}}

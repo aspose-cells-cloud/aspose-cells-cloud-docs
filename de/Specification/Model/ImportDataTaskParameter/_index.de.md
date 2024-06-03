@@ -3,17 +3,21 @@ title: ImportDataTaskParameter
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/model/importdatataskparameter/
-description: "Aspose.Cells Cloud-Modellspezifikation: ImportDataTaskParameter. Bearbeiten Sie mühelos Excel und andere Tabellenkalkulationsdokumente mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+description: "Aspose.Cells Cloud-Modellspezifikation: ImportDataTaskParameter. Müheloses Bearbeiten von Excel und anderen Tabellenkalkulationsdokumenten mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, ImportDataTaskParameter
 weight: 50
 ---
 ## **importDataTaskParameter**
 
- 
+ Stellt den Aufgabenparameter zum Importieren von Daten dar.
 
-| Name des Anwesens| Art der Immobilie| Nullbar| Schreibgeschützt| Standardwert| Beschreibung|
+| Name des Anwesens| Art der Immobilie| Nullwerte zulassen| Schreibgeschützt| Standardwert| Beschreibung|
 |:- |:- |:- |:- |:- |:- |
-| Arbeitsmappe| Klasse:FileSource| WAHR| FALSCH|||
-| ImportOption| Klasse:ImportOption| WAHR| FALSCH|||
-| DestinationWorkbook| Klasse:FileSource| WAHR| FALSCH|||
+| Datenquelle| Klasse:Datenquelle| WAHR| FALSCH|| Stellt die Datenquelle des Taskobjekts dar.|
+| Arbeitsmappe| Klasse:Dateiquelle| WAHR| FALSCH|| Stellt die Datenquelle des Taskobjekts dar.|
+| ImportOption| Klasse:ImportOption| WAHR| FALSCH|| Stellt eine Importoption dar.|
+| Zieldatenquelle| Klasse:Datenquelle| WAHR| FALSCH|| Stellt die Zieldatenquelle dar.|
+| ZielArbeitsmappe| Klasse:Dateiquelle| WAHR| FALSCH|| Stellt die Zieldatenquelle dar.|
 
-**Elternname** (Aufgabenparameter)[Aufgabenparameter]
+**Elternname** : [TaskParameter](/specification/model/taskparameter)
+

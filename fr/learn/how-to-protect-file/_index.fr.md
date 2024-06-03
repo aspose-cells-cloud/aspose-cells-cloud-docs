@@ -4,6 +4,7 @@ type: docs
 url: /fr/how-to-protect-file
 description: Comment protéger le fichier via le Cloud Aspose.Cells
 weight: 10
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdwon, Comment protéger un fichier via Aspose.Cells Cloud
 ---
 ## Introduction
 
@@ -25,7 +26,7 @@ De nombreuses API sont disponibles pour la protection des fichiers, généraleme
 
 # Comment protéger le fichier Excel ou une autre feuille de calcul via Aspose.Cells Cloud
 
- Le Aspose.Cells Cloud API fournit[plusieurs SDK](https://github.com/aspose-cells-cloud)pour différents langages de programmation. Choisissez le SDK qui correspond à votre langage de programmation préféré et suivez la documentation qui l'accompagne pour l'installation et l'initialisation. Alternativement, vous pouvez créer votre propre SDK selon les[Référence API](https://reference.aspose.cloud/cells/). Dans cette section, nous utiliserons C# comme exemple pour détailler le processus de fusion de fichiers.
+ Le Aspose.Cells Cloud API fournit[plusieurs SDK](https://github.com/aspose-cells-cloud) pour différents langages de programmation. Choisissez le SDK qui correspond à votre langage de programmation préféré et suivez la documentation qui l'accompagne pour l'installation et l'initialisation. Alternativement, vous pouvez créer votre propre SDK selon les[Référence API](https://reference.aspose.cloud/cells/). Dans cette section, nous utiliserons C# comme exemple pour détailler le processus de fusion de fichiers.
 
 
 ## Inscription et obtention de la clé API
@@ -89,8 +90,8 @@ cellsInstance.PostProtect(request);
 
  Le**protéger** Excel ou une autre fonctionnalité de feuille de calcul du Aspose.Cells Cloud API est utile dans divers cas d'utilisation pratiques. Voici quelques scénarios courants :
 
--  Ajouter**plusieurs fichiers de signature numérique**pour les fichiers locaux Excel ou d'autres fichiers de feuille de calcul.
--  Ajouter**protéger par mot de passe**pour les fichiers locaux Excel ou d'autres fichiers de feuille de calcul.
+-  Ajouter**plusieurs fichiers de signature numérique** pour les fichiers locaux Excel ou d'autres fichiers de feuille de calcul.
+-  Ajouter**protéger par mot de passe** pour les fichiers locaux Excel ou d'autres fichiers de feuille de calcul.
 -  Ensemble**Toujours ouvert en lecture seule** pour un partage facile.
 - **Fusionner plusieurs fichiers dans un fichier HTML** pour l'affichage et l'intégration dans des pages Web.
 

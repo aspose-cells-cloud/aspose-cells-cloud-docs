@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/model/jsonsaveoptions/
 description: "Aspose.Cells Molnmodellspecifikation: JsonSaveOptions. Hantera enkelt Excel och andra kalkylarksdokument med funktioner som att öppna, generera, redigera, dela, slå samman, jämföra och konvertera"
+kwords: Excel, Office, Kalkylblad, Cloud REST API, JsonSaveOptions
 weight: 50
 ---
 ## **jsonSaveOptions**
@@ -14,7 +15,7 @@ weight: 50
 |:- |:- |:- |:- |:- |:- |
 | ExportArea| Klass: CellArea| Sann| Falsk|| Hämtar eller ställer in exportintervallet.|
 | HasHeaderRow| Boolean| Sann| Falsk|| Anger om intervallet innehåller rubrikrad.|
-|ExportAsString| Boolean| Sann| Falsk|| Exporterar strängvärdet för cellerna till json.|
+| ExportAsString| Boolean| Sann| Falsk||Exporterar strängvärdet för cellerna till json.|
 | Indrag| Sträng| Sann| Falsk|| Indikerar indraget.|
 | SaveFormat| Sträng| Sann| Falsk|||
 | Cachad filmapp| Sträng| Sann| Falsk|||
@@ -22,7 +23,8 @@ weight: 50
 | Skapa katalog| Boolean| Sann| Falsk|||
 | Aktivera HTTPCompression| Boolean| Sann| Falsk|||
 | RefreshChartCache| Boolean| Sann| Falsk|||
-|Sortera namn| Boolean| Sann| Falsk|||
+| Sortera namn| Boolean| Sann| Falsk|||
 | Validera sammanslagna områden| Boolean| Sann| Falsk|||
 
-**Förälders namn** : (SaveOptions)[saveoptions]
+**Förälders namn** : [Spara Alternativ](/specification/model/saveoptions)
+

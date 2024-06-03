@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/putworksheetcustomfilter/
 description: Çalışma sayfasındaki listeyi özel ölçütlerle filtreleme
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PutWorksheetCustomFilter
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetCustomFilter" >}}

@@ -4,27 +4,28 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postworksheetcellsrangecolumnwidth/
 description: Legen Sie die Spaltenbreite des angegebenen Bereichs fest
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostWorksheetCellsRangeColumnWidth
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangeColumnWidth" >}}
 {{< blocks/products/cells/docs-title titlemsg="Set the column width of the specified range." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges/columnWidth,POST,Legen Sie die Spaltenbreite des angegebenen Bereichs fest.,<a href=\'https://apireference.aspose.cloud/cells/#/Ranges/ PostWorksheetCellsRangeColumnWidth\'>PostWorksheetCellsRangeColumnWidth</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges/columnWidth,POST,Spaltenbreite des angegebenen Bereichs festlegen.,<a href=\'https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeColumnWidth\'>PostWorksheetCellsRangeColumnWidth</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="value,floating,Legt die Spaltenbreite dieses Bereichs fest." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Original-Arbeitsmappenordner." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Wert, schwebend, Legt die Spaltenbreite dieses Bereichs fest." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Ursprünglicher Arbeitsmappenordner." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Speichername." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="range,class:range,Range Das Bereichsobjekt." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Bereich, Klasse: Bereich, Bereich. Das Bereichsobjekt." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

@@ -1,9 +1,10 @@
 ﻿---
-title: PostHideWorksheetRow
+title: PostMasquer la feuille de calcul
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/posthideworksheetrows/
 description: Masquer les lignes dans la feuille de calcul
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostHideWorksheetRows
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostHideWorksheetRows" >}}

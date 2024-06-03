@@ -8,6 +8,7 @@ aliases: [/calculate-formula-in-a-worksheet/]
 keywords: Calculate formula on an Excel worksheet
 description: Aspose.Cells Cloud REST API prend en charge la formule de calcul sur une feuille de calcul Excel. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 20
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdwon, Calculer une formule sur une feuille de calcul Excel
 ---
 Ce REST API indique obtenir `calculate formula value` dans une feuille de calcul.
  
@@ -20,7 +21,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/formulaResu
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Nom du document.|
 | Nom de la feuille| chaîne| chemin| Nom de la feuille de calcul.|

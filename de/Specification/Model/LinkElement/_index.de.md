@@ -3,18 +3,19 @@ title: LinkElemente
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/model/linkelement/
-description: "Aspose.Cells Cloud-Modellspezifikation: LinkElement. Bearbeiten Sie mühelos Excel und andere Tabellenkalkulationsdokumente mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+description: "Aspose.Cells Cloud-Modellspezifikation: LinkElement. Müheloses Bearbeiten von Excel und anderen Tabellenkalkulationsdokumenten mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, LinkElement
 weight: 50
 ---
 ## **linkElement**
 
  
 
-| Name des Anwesens| Art der Immobilie| Nullbar| Schreibgeschützt| Standardwert| Beschreibung|
+| Name des Anwesens| Art der Immobilie| Nullwerte zulassen| Schreibgeschützt| Standardwert| Beschreibung|
 |:- |:- |:- |:- |:- |:- |
 | Verknüpfung| Klasse:Link| WAHR| FALSCH|||
 
-**Kindername** : 
+**Name des Kindes** : 
 	-  [Automatischer Filter](autofilter) 
 	-  [Zelle](cell) 
 	-  [Cells](cells) 
@@ -24,8 +25,8 @@ weight: 50
 	-  [Kommentare](comments) 
 	-  [Bedingte Formatierung](conditionalformatting) 
 	-  [BedingteFormatierungen](conditionalformattings) 
-	-  [FormatBedingung](formatcondition) 
-	-  [Horizontale Seitenumbrüche](horizontalpagebreaks) 
+	-  [FormatCondition](formatcondition) 
+	-  [HorizontaleSeitenumbrüche](horizontalpagebreaks) 
 	-  [Hyperlink](hyperlink) 
 	-  [Hyperlinks](hyperlinks) 
 	-  [Zusammengeführte Zelle](mergedcell) 
@@ -35,34 +36,33 @@ weight: 50
 	-  [Seiteneinrichtung](pagesetup) 
 	-  [Reihe](row) 
 	-  [Reihen](rows) 
-	-  [SplitResultDocument](splitresultdocument) 
-	-  [Stile](styles) 
+	-  [Stil](styles) 
 	-  [TextItem](textitem) 
-	-  [TextItems](textitems) 
+	-  [Textelemente](textitems) 
 	-  [Validierung](validation) 
 	-  [Validierungen](validations) 
-	-  [Vertikale Seitenumbrüche](verticalpagebreaks) 
+	-  [VertikaleSeitenumbrüche](verticalpagebreaks) 
 	-  [Arbeitsblätter](worksheets) 
-	-  [ListObject](listobject) 
-	-  [ListObjects](listobjects) 
+	-  [Listenobjekt](listobject) 
+	-  [Objekte auflisten](listobjects) 
 	-  [PivotTable](pivottable) 
-	-  [PivotTables](pivottables) 
+	-  [PivotTabellen](pivottables) 
 	-  [AutoFormen](autoshapes) 
 	-  [Formen](forms) 
-	-  [OleObjects](oleobjects) 
+	-  [OleObjekte](oleobjects) 
 	-  [Bilder](pictures) 
 	-  [Form](shape) 
 	-  [Formen](shapes) 
 	-  [Achse](axis) 
 	-  [Diagramm](chart) 
-	-  [ChartDataTable](chartdatatable) 
+	-  [DiagrammDatenTabelle](chartdatatable) 
 	-  [ChartPoint](chartpoint) 
-	-  [ChartPoints](chartpoints) 
+	-  [Diagrammpunkte](chartpoints) 
 	-  [Diagramme](charts) 
 	-  [DropBars](dropbars) 
-	-  [Legendeneinträge](legendentries) 
+	-  [LegendEntries](legendentries) 
 	-  [Legendeneintrag](legendentry) 
 	-  [Serie](series) 
-	-  [SeriesItems](seriesitems) 
-	-  [TickLabels](ticklabels) 
+	-  [Serienartikel](seriesitems) 
+	-  [HäkchenBeschriftungen](ticklabels) 
 	-  [Trendlinien](trendlines) 

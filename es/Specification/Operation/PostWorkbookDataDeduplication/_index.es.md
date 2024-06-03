@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/postworkbookdatadeduplication/
 description: La deduplicación de datos de archivos de hojas de cálculo se utiliza principalmente para eliminar datos duplicados en tablas y rangos.
+kwords: Excel, Office, Hoja de cálculo, Cloud REST API, PostWorkbookDataDeduplication
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookDataDeduplication" >}}

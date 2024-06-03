@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/postsearch/
 description: Sök efter specificerad text i Excel-filer
+kwords: Excel, Office, Kalkylblad, Cloud REST API, PostSearch
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostSearch" >}}

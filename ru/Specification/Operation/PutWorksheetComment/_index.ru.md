@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/putworksheetcomment/
 description: Добавить комментарий к ячейке на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, PutWorksheetComment
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetComment" >}}

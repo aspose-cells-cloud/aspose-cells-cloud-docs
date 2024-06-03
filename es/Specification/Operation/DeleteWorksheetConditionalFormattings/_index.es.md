@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/deleteworksheetconditionalformattings/
 description: Borrar todos los formatos condicionales en la hoja de trabajo
+kwords: Excel, Office, Hoja de cálculo, Cloud REST API, Eliminar formato condicional de hoja de trabajo
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetConditionalFormattings" >}}

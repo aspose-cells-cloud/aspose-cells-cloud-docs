@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/model/criteriamultiplefilter/
 description: "Aspose.Cells Specifica del modello cloud: CriteriaMultipleFilter. Gestisci facilmente Excel e altri fogli di calcolo con funzionalità come apertura, generazione, modifica, divisione, unione, confronto e conversione"
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, CriteriaMultipleFilter
 weight: 50
 ---
 ## **criteriFiltroMultiplo**
@@ -14,4 +15,5 @@ weight: 50
 |:- |:- |:- |:- |:- |:- |
 | Criteri| Corda| VERO| Falso|||
 
-**Nome del genitore** : (Filtro multiplo)[filtro multiplo]
+**Nome del genitore** : [Filtro multiplo](/specification/model/multiplefilter)
+

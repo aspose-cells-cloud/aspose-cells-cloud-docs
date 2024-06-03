@@ -7,6 +7,7 @@ aliases: [/working-with-worksheets/]
 keywords: REST API, spreadsheets, excel, cell
 description: "Cells. Cloud API för Excel fungerar: celler fungerar"
 weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Cells
 ---
  Cells är det grundläggande driftobjektet för Aspose.Cells för excel-fil.
 

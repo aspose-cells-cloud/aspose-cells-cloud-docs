@@ -1,36 +1,37 @@
 ﻿---
-title: PutWorksheetShap
+title: ArbeitsblattShap einfügen
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/putworksheetshape/
 description: Fügen Sie dem Arbeitsblatt eine Form hinzu
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PutWorksheetShape
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetShape" >}}
 {{< blocks/products/cells/docs-title titlemsg="Add a shape in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/shapes,PUT,Fügen Sie eine Form zum Arbeitsblatt hinzu.,<a href=\'https://apireference.aspose.cloud/cells/#/Shapes/PutWorksheetShape\'>PutWorksheetShape </a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/shapes,PUT,Fügen Sie dem Arbeitsblatt eine Form hinzu.,<a href=\'https://apireference.aspose.cloud/cells/#/Shapes/PutWorksheetShape\'>PutWorksheetShape</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="DrawingType,string,Shape-Objekttyp" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="upperLeftRow,integer,Index der oberen linken Zeile." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="UpperLeftColumn,Integer,Index der oberen linken Spalte." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="top,integer,Stellt den vertikalen Versatz des Spinners von seiner linken Zeile in Pixeleinheiten dar." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="left,integer,Stellt den horizontalen Versatz des Spinners von seiner linken Spalte in der Einheit Pixel dar." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="width,integer,Stellt die Höhe des Spinners in Pixeleinheiten dar." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="height,integer,Stellt die Breite des Spinners in Pixeleinheiten dar." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Zeichnungstyp, Zeichenfolge, Formobjekttyp" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="upperLeftRow, Integer, Index der oberen linken Zeile." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="upperLeftColumn,Integer,Index der oberen linken Spalte." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="oben, Ganzzahl, stellt den vertikalen Versatz des Spinners von seiner linken Reihe in Pixeln dar." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="links, Ganzzahl, stellt den horizontalen Versatz des Spinners von seiner linken Spalte in Pixeln dar." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Breite, Ganzzahl, stellt die Höhe des Spinners in Pixeln dar." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Höhe, Ganzzahl, stellt die Breite des Spinners in Pixeln dar." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="shapeDTO,class:shape," >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="FormDTO, Klasse:Form," >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

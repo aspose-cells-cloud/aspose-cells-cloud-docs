@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/getworksheetconditionalformatting/
 description: Получение описаний условного форматирования на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, GetWorksheetConditionalFormatting
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetConditionalFormatting" >}}

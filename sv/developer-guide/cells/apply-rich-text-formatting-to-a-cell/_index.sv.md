@@ -3,6 +3,7 @@ title: Tillämpa Rich Text-formatering på en Cel
 type: docs
 url: /sv/apply-rich-text-formatting-to-a-cell/
 weight: 40
+kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdwon, Använd RTF-formatering på en cell
 ---
 Denna REST API indikerar att tillämpa `rich text formatting` på en cell i en Excel fil.
 

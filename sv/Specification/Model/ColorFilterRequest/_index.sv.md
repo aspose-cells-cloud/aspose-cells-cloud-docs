@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/model/colorfilterrequest/
 description: "Aspose.Cells Molnmodellspecifikation: ColorFilterRequest. Hantera enkelt Excel och andra kalkylarksdokument med funktioner som att öppna, generera, redigera, dela, slå samman, jämföra och konvertera"
+kwords: Excel, Office, Kalkylblad, Cloud REST API, ColorFilterRequest
 weight: 50
 ---
 ## **colorFilterRequest**

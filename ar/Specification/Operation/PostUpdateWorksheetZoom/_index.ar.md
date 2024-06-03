@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postupdateworksheetzoom/
 description: قم بتحديث النسبة المئوية للقياس في ورقة العمل. يجب أن يكون بين 10 و 400
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostUpdateWorksheetZoom
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostUpdateWorksheetZoom" >}}

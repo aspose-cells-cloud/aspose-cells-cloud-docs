@@ -5,6 +5,7 @@ type: docs
 url: /ar/docker/storage/
 description: كيفية ضبط موضع التخزين حول Aspose.Cells Cloud for Docker
 weight: 30
+kwords: Excel، Office كلاود، ريست API، جدول بيانات، PDF، CSV، Json، Markdwon، تخزين
 ---
 ##  تكوين التخزين الافتراضي ##
 

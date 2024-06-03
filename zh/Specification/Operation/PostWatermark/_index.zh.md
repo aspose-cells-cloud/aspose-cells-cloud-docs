@@ -1,26 +1,27 @@
 ﻿---
-title: 后沃特玛
+title: 沃特马尔邮报
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/postwatermark/
-description: 为Excel文件添加文本水印并生成各种格式的输出文件
+description: 将文本水印添加到 Excel 文件并生成各种格式的输出文件
+kwords: Excel, Office, 电子表格, Cloud REST API, PostWatermark
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWatermark" >}}
 {{< blocks/products/cells/docs-title titlemsg="Add Text Watermark to Excel files and generate output files in various formats." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/watermark,POST,为 Excel 文件添加文本水印并生成各种格式的输出文件。,<a href=\'https://apireference.aspose.cloud/cells/#/LightCells/PostWatermark\'>PostWatermark</a >" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/watermark,POST,为 Excel 文件添加文本水印并生成各种格式的输出文件。,<a href=\'https://apireference.aspose.cloud/cells/#/LightCells/PostWatermark\'>PostWatermark</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="文本、字符串、背景文本。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="文本，字符串，背景文本。" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="颜色，字符串，例如#1032ff" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="outFormat,字符串,输出数据文件格式。(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF /BMP/MD[Markdown]/数字）" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="密码,字符串,打开Excel文件所需的密码。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction,boolean,用户修改单元格相关对象时是否检查excel文件的限制。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="Region,string,工作簿的区域设置。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="outFormat，string，输出数据文件格式。(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="password，string，打开Excel文件所需的密码。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction,boolean,当用户修改单元格相关对象时是否检查excel文件的限制。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="region，string，工作簿的区域设置。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/LightCellsController/PostWatermark\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

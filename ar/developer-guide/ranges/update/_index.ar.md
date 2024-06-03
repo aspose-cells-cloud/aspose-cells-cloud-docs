@@ -7,6 +7,7 @@ url: /ar/ranges/update/
 keywords: How to update range content from an Excel worksheet
 description: Aspose.Cells Cloud REST API يدعم تحديث محتوى النطاق من ورقة عمل Excel. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 20
+kwords: Excel، Office Cloud، REST API، جدول البيانات، PDF، CSV، Json، Markdwon، كيفية تحديث محتوى النطاق من ورقة عمل Excel
 ---
 ## العمل على تحديث محتوى النطاق في ورقة عمل Excel.
 

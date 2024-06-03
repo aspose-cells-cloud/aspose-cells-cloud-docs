@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/getworksheetvalidations/
 description: Recuperar descripciones de validaciones en la hoja de trabajo.
+kwords: Excel, Office, Hoja de cálculo, Cloud REST API, GetWorksheetValidations
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetValidations" >}}

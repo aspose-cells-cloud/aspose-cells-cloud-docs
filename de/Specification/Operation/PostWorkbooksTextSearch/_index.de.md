@@ -1,26 +1,27 @@
 ﻿---
-title: PostWorkbooksTextSearc
+title: PostWorkbooksTextSearch
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postworkbookstextsearch/
-description: Suchen Sie nach Text in der Arbeitsmappe
+description: Suchen nach Text in der Arbeitsmappe
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostWorkbooksTextSearch
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbooksTextSearch" >}}
 {{< blocks/products/cells/docs-title titlemsg="Search for text in the workbook." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/findText,POST,Suchen Sie nach Text in der Arbeitsmappe.,<a href=\'https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbooksTextSearch\'>PostWorkbooksTextSearch</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/findText,POST,Suche nach Text in der Arbeitsmappe.,<a href=\'https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbooksTextSearch\'>PostWorkbooksTextSearch</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="Text, Zeichenfolge, Textbeispiel." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/WorkbookController/PostWorkbooksTextSearch\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postpivottableupdatepivotfield/
 description: تحديث الحقل المحوري في PivotTable
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostPivotTableUpdatePivotField
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostPivotTableUpdatePivotField" >}}

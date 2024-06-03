@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/getworksheetcharts/
 description: Çalışma sayfasındaki grafiklerin açıklamalarını alın
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, GetWorksheetCharts
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetCharts" >}}

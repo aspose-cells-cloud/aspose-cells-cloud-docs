@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/deleteworksheetoleobject/
 description: Ta bort ett OLE-objekt i kalkylbladet
+kwords: Excel, Office, Kalkylblad, Cloud REST API, DeleteWorksheetOleObject
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetOleObject" >}}

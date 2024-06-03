@@ -7,8 +7,9 @@ keywords: Range Sort
 url: /ru/ranges/sort/
 description:  Устанавливает контурную границу вокруг диапазона ячеек.
 weight: 20
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, сортировка по диапазону
 ---
-Этот REST API указывает сортировку диапазона.
+ Этот REST API указывает сортировку диапазона.
 
 ## РСЕТ API
 

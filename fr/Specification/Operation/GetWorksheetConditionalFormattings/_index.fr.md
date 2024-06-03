@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/getworksheetconditionalformattings/
 description: Récupérer les descriptions des mises en forme conditionnelles dans une feuille de calcul
+kwords: Excel, Office, feuille de calcul, Cloud REST API, GetWorksheetConditionalFormattings
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetConditionalFormattings" >}}

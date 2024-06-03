@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/postrotate/
 description: Excel dosyalarındaki satırları, sütunları veya diğer nesneleri döndürün ve bunları çeşitli formatlarda kaydedin
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PostRotate
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostRotate" >}}

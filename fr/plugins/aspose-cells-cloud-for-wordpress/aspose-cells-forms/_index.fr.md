@@ -5,6 +5,7 @@ type: docs
 url: /fr/aspose-cells-forms/
 description: Aspose.Cells Cloud prend en charge Excel pour créer, convertir, fusionner, diviser, protéger, opération d'objet interne, etc.
 weight: 10
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdwon, Aspose.Cells Formulaires
 ---
 ## **Introduction**
 ### **Aspose.Cells Formulaires**

@@ -1,32 +1,33 @@
 ﻿---
-title: 后工作簿分割
+title: PostWorkbookSpli
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/postworkbooksplit/
-description: 以特定格式拆分工作簿
+description: 按照特定格式拆分工作簿
+kwords: Excel，Office，电子表格，云 REST API，PostWorkbookSplit
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookSplit" >}}
 {{< blocks/products/cells/docs-title titlemsg="Split the workbook with a specific format." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/split,POST,以特定格式分割工作簿。,<a href=\'https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookSplit\'>PostWorkbookSplit</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/split,POST,使用特定格式拆分工作簿。,<a href=\'https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookSplit\'>PostWorkbookSplit</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="参数名称、类型、描述" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="名称，字符串，文件名。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="name，string，文件名。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="格式、字符串、分割格式。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="格式，字符串，拆分格式。" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="输出文件夹，字符串，" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="from,integer,开始工作表索引。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="到,整数,结束工作表索引。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="从，整数，开始工作表索引。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="到，整数，结束工作表索引。" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="HorizontalResolution，整数，图像水平分辨率。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="VerticalResolution,整数,图像垂直分辨率。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns=" splitNameRule，字符串，规则名称：sheetname newguid" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="verticalResolution，整数，图像垂直分辨率。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns=" splitNameRule，string，规则名称：sheetname newguid" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="文件夹，字符串，文件所在的文件夹。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,文件所在的存储名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName，string，文件所在的存储名称。" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="输出存储名称，字符串，" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 

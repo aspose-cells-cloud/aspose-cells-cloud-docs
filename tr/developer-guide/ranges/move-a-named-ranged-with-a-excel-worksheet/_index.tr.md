@@ -8,8 +8,9 @@ aliases: [/move-a-named-ranged-with-a-excel-worksheet/]
 keywords: Move a named ranged with an Excel workshee
 description: Aspose.Cells Cloud REST API, adlandırılmış bir aralığın Excel çalışma sayfasıyla taşınmasını destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 20
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel çalışma sayfasıyla adlandırılmış bir aralığı taşıyın
 ---
- Bu REST API, geçerli aralığın Excel çalışma sayfasındaki hedef aralığa taşınması gerektiğini belirtir.
+Bu REST API, geçerli aralığın Excel çalışma sayfasındaki hedef aralığa taşınması gerektiğini belirtir.
             
  
 ## RSET API

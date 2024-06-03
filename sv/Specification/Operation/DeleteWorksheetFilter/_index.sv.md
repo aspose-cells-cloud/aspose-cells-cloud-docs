@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/deleteworksheetfilter/
 description: Ta bort ett filter för en kolumn i kalkylbladet
+kwords: Excel, Office, Kalkylblad, Cloud REST API, DeleteWorksheetFilter
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetFilter" >}}

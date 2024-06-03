@@ -8,6 +8,7 @@ aliases: [/working-with-pivot-filters/]
 keywords: Add filter for a pivot table
 description: Aspose.Cells Cloud REST API, pivot tablo için filtre eklemeyi destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 50
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Pivot filtrelerle çalışma
 ---
 Bu REST API, piovt tablo dizini için `add` pivot `filter`'i gösterir
  
@@ -26,7 +27,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables
 | sayfaAdı| sicim| yol||
 | pivotTableIndex| tamsayı| yol||
 | filtre|| vücut||
-| yeniden hesaplamaya ihtiyaç var| boolean| sorgu| YANLIŞ|
+| yeniden hesaplamaya ihtiyaç var|boolean| sorgu| YANLIŞ|
 | dosya| sicim| sorgu||
 | depolamaAdı| sicim| sorgu| depolama adı.|
  

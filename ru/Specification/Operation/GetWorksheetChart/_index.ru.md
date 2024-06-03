@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/getworksheetchart/
 description: Получить диаграмму в указанном формате
+kwords: Excel, Office, электронная таблица, Cloud REST API, GetWorksheetChart
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetChart" >}}
@@ -20,7 +21,7 @@ weight: 50
      {{< blocks/products/cells/docs-Parameter-content columns="chartNumber, целое число, номер диаграммы." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Имя параметра, тип, описание" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="формат,строка,формат преобразования диаграммы.(PNG/TIFF/JPEG/GIF/EMF/BMP)" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="формат, строка, формат преобразования диаграммы.(PNG/TIFF/JPEG/GIF/EMF/BMP)" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="папка,строка,Папка, в которой находится файл." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="StorageName,string,Имя хранилища, в котором находится файл." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}

@@ -1,28 +1,29 @@
 ﻿---
-title: DeleteDecryptWorkboo
+title: LöschenEntschlüsselnWorkboo
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/deletedecryptworkbook/
-description: Excel Dateien entschlüsseln
+description: Excel Dateien Entschlüsselung
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, DeleteDecryptWorkbook
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteDecryptWorkbook" >}}
 {{< blocks/products/cells/docs-title titlemsg="Excel files decryption." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/encryption,DELETE,Excel Dateien entschlüsseln.,<a href=\'https://apireference.aspose.cloud/cells/#/Protection/DeleteDecryptWorkbook\'>DeleteDecryptWorkbook</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="Verschlüsselung, Klasse: Workbookencryptionrequest, WorkbookEncryptionRequestEncryption-Parameter." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Verschlüsselung, Klasse: Workbook-Verschlüsselungsanforderung, WorkbookEncryptionRequest-Verschlüsselungsparameter." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

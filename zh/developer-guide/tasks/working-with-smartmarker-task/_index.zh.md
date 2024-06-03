@@ -4,19 +4,20 @@ type: docs
 url: /zh/tasks/smartmarker/
 aliases: [/working-with-smartmarker-task/]
 keywords: REST API, task, save result, spreadsheets, exce
-description: Cells.Cloud API for Excel操作：任务支持智能标记
+description: Cells.Cloud API 为 Excel 操作：任务支持智能标记
 weight: 60
+kwords: Excel, Office 云, REST API, 电子表格, PDF, CSV, Json, Markdwon, 使用 SmartMarker 任务
 ---
 ## 休息 API
 
 |**API**|**类型**|**描述**|**资源链接**|
 |:- |:- |:- |:- |
-|/细胞/任务/runtask|邮政|运行任务|[运行后任务](https://apireference.aspose.cloud/cells/#/Task/PostRunTask)|
+|/单元格/任务/运行任务|邮政|运行任务|[运行后任务](https://apireference.aspose.cloud/cells/#/Task/PostRunTask)|
 
 
-这[开放API规范](https://apireference.aspose.cloud/cells/#/Task/PostRunTask)定义了一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Task/PostRunTask)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
 
-您可以使用**cURL**命令行工具轻松访问 Aspose.Cells Web 服务。以下示例展示如何使用 cURL 呼叫云端 API。
+您可以使用**cURL**命令行工具可轻松访问 Aspose.Cells Web 服务。以下示例显示如何使用 cURL 调用云 API。
 
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
@@ -43,7 +44,7 @@ HttpResponseMessage with the operation result.
 
 {{< /tabs >}}
 
-使用 SDK 是加快开发速度的最佳方式。 SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)有关 Aspose.Cells Cloud SDK 的完整列表。
+使用 SDK 是加快开发速度的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)获得 Aspose.Cells Cloud SDKs 的完整列表。
 
 以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
 

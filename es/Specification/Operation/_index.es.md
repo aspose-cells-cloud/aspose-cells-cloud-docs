@@ -2,6 +2,7 @@
 title: Operación
 second_title: Aspose.Cells Cloud Documen
 type: docs
+kwords: Excel, Office, Hoja de cálculo, Cloud REST API, Descripción de la operación
 weight: 50
 ---
 - [PublicarAnalizarExcel](postanalyzeexcel) : Realizar análisis comerciales de datos en archivos Excel.
@@ -30,8 +31,8 @@ weight: 50
 - [PostUpdateWorksheetRangoEstilo](postupdateworksheetrangestyle) : actualice los estilos de rango de celdas en la hoja de trabajo.
 - [Fusión posterior a la hoja de trabajo](postworksheetmerge) : fusiona celdas en la hoja de trabajo.
 - [PostWorksheetUnmerge](postworksheetunmerge) : Separar celdas en la hoja de trabajo.
-- [Obtener celdas de hoja de trabajo](getworksheetcells) : recupera descripciones de celdas en un formato específico.
-- [Obtener celda de hoja de cálculo](getworksheetcell) : recupere datos de celda utilizando la referencia de celda o el nombre del método en la hoja de trabajo.
+- [Obtener celdas de hoja de cálculo](getworksheetcells) : recupera descripciones de celdas en un formato específico.
+- [Obtener celda de hoja de trabajo](getworksheetcell) : recupere datos de celda utilizando la referencia de celda o el nombre del método en la hoja de trabajo.
 - [Obtener estilo de celda de hoja de trabajo](getworksheetcellstyle) : recupera descripciones de estilos de celda en la hoja de trabajo.
 - [PostWorksheetCellSetValue](postworksheetcellsetvalue) : establezca el valor de la celda usando el nombre de la celda en la hoja de trabajo.
 - [PostUpdateWorksheetCellStyle](postupdateworksheetcellstyle) : establece el estilo de celda usando el nombre de la celda en la hoja de trabajo.
@@ -41,8 +42,8 @@ weight: 50
 - [PostSetCellHtmlString](postsetcellhtmlstring) : establezca la cadena HTML que contiene datos y formatos específicos en esta celda.
 - [PostCellCalcular](postcellcalculate) : Calcula la fórmula de la celda en la hoja de trabajo.
 - [PostCellCaracteres](postcellcharacters) : establece caracteres de celda en la hoja de trabajo.
-- [Obtener columnas de hoja de cálculo](getworksheetcolumns) : recupera descripciones de las columnas de la hoja de trabajo.
-- [PublicarEstablecerHoja de trabajoAncho de columna](postsetworksheetcolumnwidth) : establece el ancho de columna de la hoja de trabajo.
+- [Obtener columnas de hoja de trabajo](getworksheetcolumns) : recupera descripciones de las columnas de la hoja de trabajo.
+- [PublicarEstablecerHoja de trabajoAncho de columna](postsetworksheetcolumnwidth) : establece el ancho de columna de la hoja de cálculo.
 - [Obtener columna de hoja de trabajo](getworksheetcolumn) : recupera datos de columnas de la hoja de trabajo por índice de columna.
 - [PutInsertWorksheetColumnas](putinsertworksheetcolumns) inserta columnas de la hoja de trabajo en la hoja de trabajo.
 - [Eliminar columnas de hoja de trabajo](deleteworksheetcolumns) : elimine las columnas de la hoja de trabajo en la hoja de trabajo.
@@ -83,7 +84,7 @@ weight: 50
 - [Obtener título del gráfico de hoja de trabajo](getworksheetcharttitle) : recupera la descripción del título del gráfico en la hoja de trabajo.
 - [Publicar hoja de cálculo Título del gráfico](postworksheetcharttitle) : actualiza el título del gráfico en la hoja de trabajo.
 - [PonerHoja De CálculoTítulo Del Gráfico](putworksheetcharttitle) : establece el título del gráfico en la hoja de trabajo.
-- [Eliminar título del gráfico de hoja de cálculo](deleteworksheetcharttitle) : Oculta el título del gráfico en la hoja de trabajo.
+- [Eliminar título del gráfico de hoja de trabajo](deleteworksheetcharttitle) : Oculta el título del gráfico en la hoja de trabajo.
 - [ObtenerChartSeriesAxis](getchartseriesaxis) recupera descripciones del eje de serie del gráfico en el gráfico.
 - [ObtenerChartCategoryAxis](getchartcategoryaxis) : recupera descripciones del eje de la serie del gráfico en el gráfico.
 - [ObtenerChartValueAxis](getchartvalueaxis) : recupera el eje de valores del gráfico en el gráfico.
@@ -127,6 +128,7 @@ weight: 50
 - [Publicar libro de trabajoRelleno de datos](postworkbookdatafill) El llenado de datos para archivos de hojas de cálculo se utiliza principalmente para llenar datos vacíos en tablas y rangos.
 - [PublicarRelleno de datos](postdatafill) El llenado de datos para archivos de hojas de cálculo se utiliza principalmente para llenar datos vacíos en tablas y rangos.
 - [Publicar eliminar filas incompletas](postdeleteincompleterows) : La eliminación de filas incompletas de archivos de hojas de cálculo se utiliza principalmente para eliminar filas incompletas en tablas y rangos.
+- [Transformación posterior a los datos](postdatatransformation) : Los datos de la hoja de cálculo de transformación se utilizan principalmente para pivotar columnas y desvincular columnas.
 - [Obtener hoja de trabajo Hipervínculos](getworksheethyperlinks) : recupera descripciones de hipervínculos en la hoja de trabajo.
 - [Obtener hoja de cálculo hipervínculo](getworksheethyperlink) : recupera la descripción del hipervínculo por índice en la hoja de trabajo.
 - [Eliminar hoja de trabajo hipervínculo](deleteworksheethyperlink) : Eliminar hipervínculo por índice en la hoja de trabajo.
@@ -134,7 +136,7 @@ weight: 50
 - [Poner hoja de cálculo hipervínculo](putworksheethyperlink) : Agregue un hipervínculo en la hoja de trabajo.
 - [Eliminar hoja de cálculo hipervínculos](deleteworksheethyperlinks) : elimine todos los hipervínculos de la hoja de trabajo.
 - [Publicar montaje](postassemble) : Reúna archivos de datos con archivos de plantilla para generar archivos en varios formatos.
-- [Postcomprimir](postcompress) : Comprima archivos y genere archivos de destino en varios formatos; los formatos de archivos admitidos incluyen Xls, Xlsx, Xlsm, Xlsb, Ods y más.
+- [Postcomprimir](postcompress) Comprima archivos y genere archivos de destino en varios formatos; los formatos de archivos admitidos incluyen Xls, Xlsx, Xlsm, Xlsb, Ods y más.
 - [Postfusión](postmerge) : fusiona celdas en la hoja de trabajo.
 - [Publicar división](postsplit) : divida archivos de hojas de cálculo Excel según hojas de trabajo y cree archivos de salida en varios formatos.
 - [Publicar búsqueda](postsearch) : busca texto especificado dentro de Excel archivos.
@@ -144,8 +146,8 @@ weight: 50
 - [Publicarborrarobjetos](postclearobjects) : Borre elementos internos en archivos Excel y genere archivos de salida en varios formatos.
 - [PostReverse](postreverse) : Invierta filas o columnas en archivos Excel y cree archivos de salida en varios formatos.
 - [PostReparación](postrepair) : Repare archivos anormales y genere archivos en varios formatos.
-- [PostRotar](postrotate) : gire filas, columnas u otros objetos en archivos Excel y guárdelos en varios formatos.
-- [Publicar metadatos](postmetadata) actualice las propiedades del documento en el archivo Excel y guárdelas en varios formatos.
+- [PostRotar](postrotate) gire filas, columnas u otros objetos en archivos Excel y guárdelos en varios formatos.
+- [Publicar metadatos](postmetadata) : actualice las propiedades del documento en el archivo Excel y guárdelas en varios formatos.
 - [Obtener metadatos](getmetadata) : Obtiene las propiedades del documento de las celdas.
 - [Eliminar metadatos](deletemetadata) : Elimine las propiedades del documento de celdas en el archivo Excel y guárdelas en varios formatos.
 - [Obtener objetos de lista de hojas de trabajo](getworksheetlistobjects) : recupera descripciones de ListObjects en la hoja de trabajo.
@@ -155,8 +157,8 @@ weight: 50
 - [Eliminar objeto de lista de hojas de trabajo](deleteworksheetlistobject) : Eliminar objeto de lista por índice en la hoja de trabajo.
 - [PostWorksheetListObjeto](postworksheetlistobject) : Actualiza el objeto de la lista por índice en la hoja de trabajo.
 - [PostWorksheetListObjectConvertToRange](postworksheetlistobjectconverttorange) : convierte el objeto de lista en un rango en la hoja de trabajo.
-- [PostWorksheetListObjectSummarizeWithPivotTable](postworksheetlistobjectsummarizewithpivottable) : cree una tabla dinámica con un objeto de lista en la hoja de trabajo.
-- [PostWorksheetListObjectOrdenarTabla](postworksheetlistobjectsorttable) Ordena el objeto de la lista en la hoja de trabajo.
+- [PostWorksheetListObjectSummarizeWithPivotTable](postworksheetlistobjectsummarizewithpivottable) cree una tabla dinámica con un objeto de lista en la hoja de trabajo.
+- [PostWorksheetListObjectOrdenarTabla](postworksheetlistobjectsorttable) : Ordena el objeto de la lista en la hoja de trabajo.
 - [PostWorksheetListObjectRemoveDuplicates](postworksheetlistobjectremoveduplicates) : Elimina duplicados en el objeto de lista.
 - [PostWorksheetListObjectInsertSlicer](postworksheetlistobjectinsertslicer) : Insertar segmentación para el objeto de lista.
 - [Publicar hoja de cálculoColumna de lista](postworksheetlistcolumn) : Actualizar la columna de la lista en el objeto de la lista.
@@ -167,8 +169,8 @@ weight: 50
 - [Eliminar hoja de trabajoOleObject](deleteworksheetoleobject) : elimina un objeto OLE en la hoja de trabajo.
 - [PostUpdateWorksheetOleObjeto](postupdateworksheetoleobject) : actualiza un objeto OLE en la hoja de trabajo.
 - [PutWorksheetOleObjeto](putworksheetoleobject) : agregue un objeto OLE en la hoja de trabajo.
-- [Obtener saltos de página vertical](getverticalpagebreaks) : recupera descripciones de saltos de página verticales en la hoja de trabajo.
-- [Obtener saltos de página horizontales](gethorizontalpagebreaks) recupera descripciones de saltos de página horizontales en la hoja de trabajo.
+- [Obtener saltos de página vertical](getverticalpagebreaks) recupera descripciones de saltos de página verticales en la hoja de trabajo.
+- [Obtener saltos de página horizontales](gethorizontalpagebreaks) : recupera descripciones de saltos de página horizontales en la hoja de trabajo.
 - [Obtener salto de página vertical](getverticalpagebreak) : recupera una descripción de salto de página vertical en la hoja de trabajo.
 - [GetHorizontalPageBreak](gethorizontalpagebreak) : recupera una descripción de salto de página horizontal en la hoja de trabajo.
 - [PutVerticalPageBreak](putverticalpagebreak) : agregue un salto de página vertical en la hoja de trabajo.
@@ -179,9 +181,9 @@ weight: 50
 - [Eliminar salto de página horizontal](deletehorizontalpagebreak) : elimina un salto de página horizontal en la hoja de trabajo.
 - [Obtener configuración de página](getpagesetup) : recupera la descripción de configuración de la página en la hoja de trabajo.
 - [Configuración de publicación de página](postpagesetup) : Actualiza la configuración de la página en la hoja de trabajo.
-- [Eliminar encabezado y pie de página](deleteheaderfooter) : borre el encabezado y pie de página de la hoja de trabajo.
+- [Eliminar encabezado y pie de página](deleteheaderfooter) borre el encabezado y pie de página de la hoja de trabajo.
 - [Obtener encabezado](getheader) : recupera la descripción del encabezado de la página en la hoja de trabajo.
-- [Encabezado de publicación](postheader) Actualiza el encabezado de la página en la hoja de trabajo.
+- [Encabezado de publicación](postheader) : Actualiza el encabezado de la página en la hoja de trabajo.
 - [Obtener pie de página](getfooter) : recupera la descripción del pie de página en la hoja de trabajo.
 - [Pie de página](postfooter) : actualiza el pie de página en la hoja de trabajo.
 - [PublicarFitWideToPages](postfitwidetopages) : establezca la escala en la que la página se ajustará a lo ancho cuando se imprima en la hoja.
@@ -191,9 +193,9 @@ weight: 50
 - [Poner Hoja de Trabajo Agregar Imagen](putworksheetaddpicture) : agregue una nueva imagen en la hoja de trabajo.
 - [Publicar hoja de trabajoImagen](postworksheetpicture) : actualiza una imagen por índice en la hoja de trabajo.
 - [Eliminar hoja de trabajoImagen](deleteworksheetpicture) : elimina un objeto de imagen por índice en la hoja de trabajo.
-- [Eliminar imágenes de hoja de trabajo](deleteworksheetpictures) : elimina todas las imágenes de la hoja de trabajo.
+- [Eliminar imágenes de hoja de trabajo](deleteworksheetpictures) elimina todas las imágenes de la hoja de trabajo.
 - [Obtener tablas dinámicas de hoja de trabajo](getworksheetpivottables) : recupera descripciones de tablas dinámicas en la hoja de trabajo.
-- [Obtener hoja de trabajo tabla dinámica](getworksheetpivottable) recupera información de la tabla dinámica por índice en la hoja de trabajo.
+- [Obtener hoja de trabajo tabla dinámica](getworksheetpivottable) : recupera información de la tabla dinámica por índice en la hoja de trabajo.
 - [Obtener campo de tabla dinámica](getpivottablefield) : recupera descripciones de campos dinámicos en la tabla dinámica.
 - [Obtener filtros de tabla dinámica de hoja de trabajo](getworksheetpivottablefilters) : Obtiene filtros de tabla dinámica en la hoja de trabajo.
 - [Obtener hoja de trabajoPivotTableFilter](getworksheetpivottablefilter) : recupera filtros de tabla dinámica en la hoja de trabajo.
@@ -217,7 +219,7 @@ weight: 50
 - [Poner propiedad del documento](putdocumentproperty) : establezca o agregue una propiedad Excel.
 - [Obtener propiedad del documento](getdocumentproperty) : Obtenga Excel propiedad por nombre.
 - [Eliminar propiedad del documento](deletedocumentproperty) : Eliminar una propiedad Excel.
-- [Eliminar propiedades del documento](deletedocumentproperties) : elimine todas las propiedades personalizadas del documento y restablezca las integradas.
+- [Eliminar propiedades del documento](deletedocumentproperties) elimine todas las propiedades personalizadas del documento y restablezca las integradas.
 - [Firma PostDigital](postdigitalsignature) : Excel firma digital del archivo.
 - [Publicar libro de trabajo Encrypt](postencryptworkbook) : Excel Cifrado.
 - [EliminarDecryptWorkbook](deletedecryptworkbook) : Excel descifrado de archivos.
@@ -230,9 +232,9 @@ weight: 50
 - [Postproteger](postprotect) : Excel cifrado de archivos.
 - [Publicar hoja de cálculoCeldasRangosCopiar](postworksheetcellsrangescopy) : Copie el contenido del rango de origen al rango de destino en la hoja de trabajo.
 - [PostWorksheetCellsRangeFusionar](postworksheetcellsrangemerge) : fusiona un rango de celdas en una sola celda.
-- [PostWorksheetCellsRangeUnMerge](postworksheetcellsrangeunmerge) : separa las celdas fusionadas dentro de este rango.
+- [PostWorksheetCellsRangeUnMerge](postworksheetcellsrangeunmerge) separa las celdas fusionadas dentro de este rango.
 - [PostWorksheetCellsRangoEstilo](postworksheetcellsrangestyle) : establece el estilo para el rango especificado.
-- [Obtener hoja de trabajoCellsRangeValue](getworksheetcellsrangevalue) recupera los valores de las celdas dentro del rango especificado.
+- [Obtener hoja de trabajoCellsRangeValue](getworksheetcellsrangevalue) : recupera los valores de las celdas dentro del rango especificado.
 - [PostWorksheetCellsRangeValue](postworksheetcellsrangevalue) : Asigna un valor al rango; si es necesario, el valor se convertirá a otro tipo de datos y se restablecerá el formato del número de la celda.
 - [Publicar hoja de trabajo Rango de celdas Mover a](postworksheetcellsrangemoveto) : Mueve el rango actual al rango de destino.
 - [Publicar hoja de cálculoCeldasRangoOrdenar](postworksheetcellsrangesort) : realice la clasificación de datos en un rango de celdas.
@@ -240,11 +242,11 @@ weight: 50
 - [Publicarhoja de trabajoCeldasRangoColumnaAncho](postworksheetcellsrangecolumnwidth) : establece el ancho de columna del rango especificado.
 - [Publicar hoja de trabajo Celdas Rango Fila Altura](postworksheetcellsrangerowheight) : establece la altura de fila del rango.
 - [Poner hoja de cálculo rango de celdas](putworksheetcellsrange) : inserte un rango de celdas y cambie las celdas existentes según la opción de cambio especificada.
-- [Eliminar rango de celdas de hoja de trabajo](deleteworksheetcellsrange) : elimine un rango de celdas y cambie las celdas existentes según la opción de cambio especificada.
-- [Obtener formas de hoja de cálculo](getworksheetshapes) recupera descripciones de formas en la hoja de trabajo.
+- [Eliminar rango de celdas de hoja de trabajo](deleteworksheetcellsrange) elimine un rango de celdas y cambie las celdas existentes según la opción de cambio especificada.
+- [Obtener formas de hoja de trabajo](getworksheetshapes) : recupera descripciones de formas en la hoja de trabajo.
 - [Obtener forma de hoja de trabajo](getworksheetshape) : recupera la descripción de la forma en la hoja de trabajo.
 - [Poner Forma De Hoja De Trabajo](putworksheetshape) : Agrega una forma en la hoja de trabajo.
-- [Eliminar formas de hoja de trabajo](deleteworksheetshapes) : elimina todas las formas de la hoja de trabajo.
+- [Eliminar formas de hoja de cálculo](deleteworksheetshapes) : elimina todas las formas de la hoja de trabajo.
 - [Eliminar forma de hoja de trabajo](deleteworksheetshape) : elimina una forma en la hoja de trabajo.
 - [Forma posterior a la hoja de trabajo](postworksheetshape) : actualiza una forma en la hoja de trabajo.
 - [PostWorksheetGroupForma](postworksheetgroupshape) : Agrupa formas en la hoja de trabajo.
@@ -253,9 +255,9 @@ weight: 50
 - [GetWorksheetSparklineGroup](getworksheetsparklinegroup) : recupera la descripción de un grupo de minigráficos en la hoja de trabajo.
 - [Eliminar hoja de trabajoSparklineGroups](deleteworksheetsparklinegroups) : elimine grupos de minigráficos en la hoja de trabajo.
 - [Eliminar hoja de trabajoSparklineGroup](deleteworksheetsparklinegroup) : elimine un grupo de minigráficos en la hoja de trabajo.
-- [Poner hoja de trabajoGrupo Sparkline](putworksheetsparklinegroup) : agregue un grupo de minigráficos en la hoja de trabajo.
+- [Poner hoja de trabajoGrupo Sparkline](putworksheetsparklinegroup) agregue un grupo de minigráficos en la hoja de trabajo.
 - [Publicar hoja de trabajoGrupo Sparkline](postworksheetsparklinegroup) : actualice un grupo de minigráficos en la hoja de trabajo.
-- [Tarea posterior a la ejecución](postruntask) ejecutar tareas.
+- [Tarea posterior a la ejecución](postruntask) : ejecutar tareas.
 - [ObtenerWorkbookDefaultStyle](getworkbookdefaultstyle) : recupera la descripción del estilo predeterminado del libro.
 - [Obtener elementos de texto del libro de trabajo](getworkbooktextitems) : recupera elementos de texto en el libro de trabajo.
 - [Obtener nombres de libros de trabajo](getworkbooknames) : recupera rangos con nombre en el libro de trabajo.
@@ -267,10 +269,10 @@ weight: 50
 - [Eliminar nombre del libro de trabajo](deleteworkbookname) : elimina un rango con nombre en el libro de trabajo.
 - [PostWorkbooksFusionar](postworkbooksmerge) : fusiona un libro de trabajo con el libro de trabajo existente.
 - [Publicar libros de trabajo Búsqueda de texto](postworkbookstextsearch) : busca texto en el libro de trabajo.
-- [Publicar texto del libro de trabajo Reemplazar](postworkbooktextreplace) : Reemplazar texto en el libro.
+- [Publicar texto del libro de trabajo Reemplazar](postworkbooktextreplace) Reemplazar texto en el libro.
 - [PostWorkbookGetSmartMarkerResult](postworkbookgetsmartmarkerresult) : Procesamiento de marcadores inteligentes.
 - [PonerLibroCrear](putworkbookcreate) : cree un nuevo libro de trabajo utilizando diferentes métodos.
-- [Publicar libro de trabajo](postworkbooksplit) divide el libro con un formato específico.
+- [Publicar libro de trabajo](postworkbooksplit) : divide el libro con un formato específico.
 - [Publicar libro de trabajo Calcular fórmula](postworkbookcalculateformula) : Calcula todas las fórmulas del libro de trabajo.
 - [PostAutofitWorkbookFilas](postautofitworkbookrows) : Autoajustar filas en el libro de trabajo.
 - [Publicar columnas de libro de trabajo de ajuste automático](postautofitworkbookcolumns) : Autoajustar columnas en el libro de trabajo.
@@ -283,28 +285,28 @@ weight: 50
 - [Obtener hojas de trabajo](getworksheets) : recupera la descripción de las hojas de trabajo de un libro de trabajo.
 - [Obtener hoja de trabajo con formato](getworksheetwithformat) : recupere la hoja de trabajo en un formato específico del libro de trabajo.
 - [PonerCambiarVisibilidadHoja de trabajo](putchangevisibilityworksheet) : cambia la visibilidad de la hoja de trabajo en el libro de trabajo.
-- [Poner hoja de trabajo activa](putactiveworksheet) establece el índice de la hoja de trabajo activa en el libro de trabajo.
+- [Poner hoja de trabajo activa](putactiveworksheet) : establece el índice de la hoja de trabajo activa en el libro de trabajo.
 - [PonerInsertarNuevaHoja de Trabajo](putinsertnewworksheet) : inserte una nueva hoja de trabajo en el libro de trabajo.
 - [PonerAgregarNuevaHoja de Trabajo](putaddnewworksheet) : agregue una nueva hoja de trabajo en el libro de trabajo.
 - [Eliminar hoja de trabajo](deleteworksheet) : elimina una hoja de trabajo en el libro de trabajo.
 - [Eliminar hojas de trabajo](deleteworksheets) : elimine las hojas de trabajo coincidentes en el libro de trabajo.
 - [Hoja de trabajo posterior a la mudanza](postmoveworksheet) : Mueve la hoja de trabajo en el libro de trabajo.
 - [Hoja de trabajo PutProtect](putprotectworksheet) : Proteger la hoja de trabajo.
-- [Eliminar hoja de trabajo sin protección](deleteunprotectworksheet) : Desproteger la hoja de trabajo.
+- [Eliminar hoja de trabajo sin proteger](deleteunprotectworksheet) : Desproteger la hoja de trabajo.
 - [Obtener elementos de texto de hoja de trabajo](getworksheettextitems) : recupera elementos de texto en la hoja de trabajo.
 - [Obtener hoja de trabajoComentarios](getworksheetcomments) : recupera la descripción de los comentarios en la hoja de trabajo.
 - [Obtener hoja de trabajoComentar](getworksheetcomment) : recupera la descripción del comentario en la hoja de trabajo.
-- [PonerHoja de trabajoComentario](putworksheetcomment) : agregue un comentario de celda en la hoja de trabajo.
+- [PonerHoja de trabajoComentar](putworksheetcomment) : agregue un comentario de celda en la hoja de trabajo.
 - [Publicar hoja de trabajoComentario](postworksheetcomment) : actualiza el comentario de la celda en la hoja de trabajo.
-- [Eliminar hoja de trabajo comentario](deleteworksheetcomment) : Eliminar comentario de celda en la hoja de trabajo.
-- [Eliminar hoja de trabajo Comentarios](deleteworksheetcomments) elimina todos los comentarios de la hoja de trabajo.
+- [Eliminar hoja de trabajo comentario](deleteworksheetcomment) Eliminar comentario de celda en la hoja de trabajo.
+- [Eliminar hoja de trabajo Comentarios](deleteworksheetcomments) : elimina todos los comentarios de la hoja de trabajo.
 - [Obtener hoja de cálculo de celdas fusionadas](getworksheetmergedcells) : Obtenga celdas combinadas de la hoja de trabajo.
 - [Obtener hoja de trabajo celda fusionada](getworksheetmergedcell) : recupera la descripción de una celda combinada por su índice en la hoja de trabajo.
 - [Obtener hoja de trabajo Calcular fórmula](getworksheetcalculateformula) : Calcula la fórmula en la hoja de trabajo.
 - [Publicar hoja de trabajo Calcular fórmula](postworksheetcalculateformula) : Calcula la fórmula en la hoja de trabajo.
 - [Publicar hoja de cálculoBúsqueda de texto](postworksheettextsearch) : busca texto en la hoja de trabajo.
 - [Publicar texto de hoja de cálculo Reemplazar](postworksheettextreplace) : Reemplace el texto antiguo con texto nuevo en la hoja de trabajo.
-- [Ordenar rango de hoja de trabajo posterior](postworksheetrangesort) : Ordena un rango en la hoja de trabajo.
+- [Ordenar rango de hoja de cálculo posterior](postworksheetrangesort) : Ordena un rango en la hoja de trabajo.
 - [Fila de hoja de trabajo de ajuste automático posterior](postautofitworksheetrow) : ajusta automáticamente una fila en la hoja de trabajo.
 - [Publicar filas de hoja de trabajo de ajuste automático](postautofitworksheetrows) : Autoajustar filas en la hoja de trabajo.
 - [Publicar columnas de hoja de trabajo de ajuste automático](postautofitworksheetcolumns) : Autoajustar columnas en la hoja de trabajo.
@@ -322,6 +324,6 @@ weight: 50
 - [ObtenerValidaciones de hoja de trabajo](getworksheetvalidations) : recupera descripciones de validaciones en la hoja de trabajo.
 - [ObtenerValidación de la hoja de trabajo](getworksheetvalidation) : Recupera una validación por su índice en la hoja de trabajo.
 - [PonerValidación de hoja de trabajo](putworksheetvalidation) : agregue una validación en el índice de la hoja de trabajo.
-- [Validación posterior a la hoja de trabajo](postworksheetvalidation) : Actualiza una validación por índice en la hoja de trabajo.
-- [EliminarValidación de hoja de trabajo](deleteworksheetvalidation) Eliminar una validación por índice en la hoja de trabajo.
+- [Validación posterior a la hoja de trabajo](postworksheetvalidation) Actualiza una validación por índice en la hoja de trabajo.
+- [EliminarValidación de hoja de trabajo](deleteworksheetvalidation) : Eliminar una validación por índice en la hoja de trabajo.
 - [EliminarValidaciones de hoja de trabajo](deleteworksheetvalidations) : Elimina todas las validaciones en la hoja de trabajo.

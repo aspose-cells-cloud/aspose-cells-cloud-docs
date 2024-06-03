@@ -1,26 +1,27 @@
 ﻿---
-title: RenderingWatermar
+title: RenderingWassermar
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/model/renderingwatermark/
-description: "Aspose.Cells Cloud-Modellspezifikation: RenderingWatermark. Bearbeiten Sie mühelos Excel und andere Tabellenkalkulationsdokumente mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+description: "Aspose.Cells Cloud-Modellspezifikation: RenderingWatermark. Müheloses Bearbeiten von Excel und anderen Tabellenkalkulationsdokumenten mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, RenderingWatermark
 weight: 50
 ---
-## **RenderingWatermark**
+## **RenderingWasserzeichen**
 
- 
+ Wasserzeichen zum Rendern.
 
-| Name des Anwesens| Art der Immobilie| Nullbar| Schreibgeschützt| Standardwert| Beschreibung|
+| Name des Anwesens| Art der Immobilie| Nullwerte zulassen| Schreibgeschützt| Standardwert| Beschreibung|
 |:- |:- |:- |:- |:- |:- |
-| Drehung| Schwebend| WAHR| FALSCH|||
+| Drehung| Schwimmend| WAHR| FALSCH|||
 | ScaleToPagePercent| Ganze Zahl| WAHR| FALSCH|||
-| Opazität| Schwebend| WAHR| FALSCH|||
-| IsBackground| Boolescher Wert| WAHR| FALSCH|||
+| Opazität| Schwimmend| WAHR| FALSCH|||
+|IstHintergrund| Boolescher Wert| WAHR| FALSCH|||
 | Text| Zeichenfolge| WAHR| FALSCH|||
 | Schriftart| Klasse:RenderingFont| WAHR| FALSCH|||
-| Bild|Array<Byte> | WAHR| FALSCH|||
-| HAusrichtung| Zeichenfolge| WAHR| FALSCH|||
-| VAusrichtung| Zeichenfolge| WAHR| FALSCH|||
-| OffsetX| Schwebend| WAHR| FALSCH|||
-| OffsetY| Schwebend| WAHR| FALSCH|||
+| Bild|Anordnung<Byte> | WAHR| FALSCH|||
+| HAnordnung| Zeichenfolge| WAHR| FALSCH|||
+| VAnordnung| Zeichenfolge| WAHR| FALSCH|||
+| VersatzX| Schwimmend| WAHR| FALSCH|||
+| VersatzY| Schwimmend| WAHR| FALSCH|||
 

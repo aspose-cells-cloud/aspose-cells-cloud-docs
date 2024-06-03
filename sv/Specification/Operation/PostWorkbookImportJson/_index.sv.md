@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/postworkbookimportjson/
 description: Importera en JSON-datafil till arbetsboken. JSON-datafilen kan antingen vara en molnfil eller data från en HTTP-URI
+kwords: Excel, Office, Kalkylblad, Cloud REST API, PostWorkbookImportJson
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookImportJson" >}}

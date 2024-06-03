@@ -8,6 +8,7 @@ aliases: [/split-excel-workbooks/]
 keywords: Split an Excel workbook to multi-files
 description: Aspose.Cells Cloud REST API поддерживает разделение книги Excel на несколько файлов. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 130
+kwords: Excel, Office Cloud, REST API, электронная таблица, PDF, CSV, Json, Markdwon, разделение книги Excel на несколько файлов.
 ---
 Этот REST API указывает на разделение Excel `workbook` на несколько файлов с другим форматом.
 
@@ -34,7 +35,7 @@ weight: 130
 
 [Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookSplit) определяет общедоступный интерфейс программирования и позволяет выполнять взаимодействие с REST непосредственно из веб-браузера.
 
- Вы можете использовать**cURL** инструмент командной строки для легкого доступа к веб-службам Aspose.Cells. В следующем примере показано, как позвонить на Cloud API с помощью cURL.
+ Вы можете использовать**cURL**инструмент командной строки для легкого доступа к веб-службам Aspose.Cells. В следующем примере показано, как позвонить на Cloud API с помощью cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 

@@ -3,28 +3,29 @@ title: GetWorksheetCellsRangeValu
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/getworksheetcellsrangevalue/
-description: Rufen Sie die Werte von Zellen innerhalb des angegebenen Bereichs ab
+description: Abrufen der Werte von Zellen innerhalb des angegebenen Bereichs
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, GetWorksheetCellsRangeValue
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetCellsRangeValue" >}}
 {{< blocks/products/cells/docs-title titlemsg="Retrieve the values of cells within the specified range." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges/value,GET,Rufen Sie die Werte von Zellen innerhalb des angegebenen Bereichs ab.,<a href=\'https://apireference.aspose.cloud/cells/#/Ranges /GetWorksheetCellsRangeValue\'>GetWorksheetCellsRangeValue</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges/value,GET,Ruft die Werte der Zellen innerhalb des angegebenen Bereichs ab.,<a href=\'https://apireference.aspose.cloud/cells/#/Ranges/GetWorksheetCellsRangeValue\'>GetWorksheetCellsRangeValue</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="namerange,string,Der Bereichsname." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="firstRow,integer,Ruft den Index der ersten Zeile des Bereichs ab." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="namerange, string, Der Bereichsname." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="firstRow, Integer, Ruft den Index der ersten Zeile des Bereichs ab." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="firstColumn,integer,Ruft den Index der ersten Spalte des Bereichs ab." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="rowCount,integer,Ermittelt die Anzahl der Zeilen im Bereich." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="columnsCount,integer,Ermittelt die Anzahl der Spalten im Bereich." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Original-Arbeitsmappenordner." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="rowCount, Integer, Ruft die Anzahl der Zeilen im Bereich ab." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="columnCount,Integer,Ruft die Anzahl der Spalten im Bereich ab." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Ursprünglicher Arbeitsmappenordner." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Speichername." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 

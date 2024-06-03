@@ -7,6 +7,7 @@ aliases: [/working-with-conditional-formatting/]
 keywords: REST API, spreadsheets, excel, conditional formattin
 description: "Cells.Cloud API için Excel çalıştırma: koşullu biçimlendirme çalıştırma"
 weight: 100
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Koşullu Biçimlendirmeler
 ---
 &nbsp;&nbsp;&nbsp;&nbsp;Excel'deki koşullu biçimlendirme, hücrenin değerine bağlı olarak hücreleri belirli bir renkle vurgulamanıza olanak tanır.
 

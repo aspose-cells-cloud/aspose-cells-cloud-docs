@@ -3,6 +3,7 @@ title: Cancella contenuti e stili di Cells nel foglio di lavoro Excel
 type: docs
 url: /it/clear-contents-and-styles-of-cells-in-excel-worksheet/
 weight: 50
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Cancella contenuti e stili di Cells nel foglio di lavoro Excel
 ---
 Questo REST API indica `clear` celle `content` in un file Excel.
 
@@ -21,7 +22,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clea
 | nomefoglio| corda| sentiero| Nome del foglio di lavoro.|
 | allineare| corda| domanda| La gamma.|
 | startRow| numero intero| domanda| La fila iniziale.|
-| startColumn| numero intero| domanda| La colonna iniziale.|
+| startColonna| numero intero| domanda| La colonna iniziale.|
 | endRow| numero intero| domanda| La riga finale.|
 | endColumn| numero intero| domanda| La colonna finale.|
 | cartella| corda| domanda| La cartella della cartella di lavoro.|

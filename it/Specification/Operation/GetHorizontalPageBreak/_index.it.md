@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/gethorizontalpagebreak/
 description: Recupera una descrizione dell'interruzione di pagina orizzontale nel foglio di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, GetHorizontalPageBreak
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetHorizontalPageBreak" >}}

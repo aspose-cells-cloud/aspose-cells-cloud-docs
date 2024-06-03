@@ -8,6 +8,7 @@ aliases: [/import-2dimension-string-array-into-excel-worksheet/,/import-2dimensi
 keywords: Import 2 dimension string array data into Excel files
 description: Aspose.Cells Cloud REST API поддерживает импорт данных двумерного строкового массива в файлы Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 20
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, импорт двумерного массива строк в рабочий лист Excel
 ---
 Этот REST API `import 2 dimension string array data` в рабочий лист Excel.
 

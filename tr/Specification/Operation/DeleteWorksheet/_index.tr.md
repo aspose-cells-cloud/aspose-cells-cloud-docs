@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/deleteworksheet/
 description: Çalışma kitabındaki bir çalışma sayfasını silme
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, SilÇalışma Sayfası
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheet" >}}

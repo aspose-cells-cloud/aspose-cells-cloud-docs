@@ -4,15 +4,16 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/model/commentshape/
 description: "Aspose.Cells Specifica del modello cloud: CommentShape. Gestisci facilmente Excel e altri fogli di calcolo con funzionalità come apertura, generazione, modifica, divisione, unione, confronto e conversione"
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, CommentShape
 weight: 50
 ---
 ## **commentoShape**
 
- 
+ Rappresenta la forma del commento.
 
 | Nome della proprietà| Tipo di proprietà| Nullabile| Sola lettura| Valore di default| Descrizione|
 |:- |:- |:- |:- |:- |:- |
-| Commento| Classe:LinkElement| VERO| Falso||Ottiene l'oggetto commento.|
+| Commento| Classe:LinkElement| VERO| Falso|| Ottiene l'oggetto commento.|
 | Nome| Corda| VERO| Falso|||
 | MsoDrawingType| Corda| VERO| Falso|||
 | Tipo di forma automatica| Corda| VERO| Falso|||
@@ -30,7 +31,7 @@ weight: 50
 | X| Numero intero| VERO| Falso|||
 | Y| Numero intero| VERO| Falso|||
 | Angolo di rotazione| Galleggiante| VERO| Falso|||
-| HtmlText| Corda| VERO| Falso|||
+|HtmlText| Corda| VERO| Falso|||
 | Testo| Corda| VERO| Falso|||
 | Testo alternativo| Corda| VERO| Falso|||
 | TestoAllineamento orizzontale| Corda| VERO| Falso|||
@@ -51,4 +52,5 @@ weight: 50
 | Collegamento ipertestuale| Corda| VERO| Falso|||
 | collegamento| Classe: collegamento| VERO| Falso|||
 
-**Nome del genitore** : (Forma)[forma]
+**Nome del genitore** : [Forma](/specification/model/shape)
+

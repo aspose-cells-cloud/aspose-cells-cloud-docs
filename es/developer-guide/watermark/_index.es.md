@@ -6,6 +6,7 @@ url: /es/watermark/
 keywords: Add water marker for Excel files
 description: Aspose.Cells Cloud REST API admite la adición de marcador de agua para archivos Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 39
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Marca de agua
 ---
 Este REST API indica agregar `watermark` en archivos Excel.
 

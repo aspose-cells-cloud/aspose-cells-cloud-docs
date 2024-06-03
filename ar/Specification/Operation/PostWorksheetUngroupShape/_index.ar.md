@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postworksheetungroupshape/
 description: فك تجميع الأشكال في ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostWorksheetUngroupShape
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetUngroupShape" >}}

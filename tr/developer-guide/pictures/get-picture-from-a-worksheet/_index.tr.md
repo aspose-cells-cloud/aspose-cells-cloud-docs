@@ -8,6 +8,7 @@ aliases: [/get-picture-from-a-worksheet/]
 keywords: Get all pictures in an Excel worksheet
 description: Aspose.Cells Cloud REST API, Excel çalışma sayfasındaki tüm resimlerin alınmasını destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 10
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Tüm resimleri Excel çalışma sayfasında alın
 ---
 Bu REST API, `get`'e Excel çalışma sayfasındaki tüm resim bilgilerini gösterir.
  

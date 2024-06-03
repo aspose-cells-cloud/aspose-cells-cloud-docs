@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postupdateworksheetrow/
 description: Обновить высоту строк на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostUpdateWorksheetRow
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostUpdateWorksheetRow" >}}

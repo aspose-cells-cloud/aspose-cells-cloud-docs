@@ -7,8 +7,9 @@ url: /it/export/
 keywords: Export workbook and internal objects to kinds of format files
 description: Aspose.Cells Cloud REST API supporta l'esportazione di file Excel e oggetti interni in tipi di file di formato. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 31
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Esporta cartella di lavoro e oggetti interni in tipi di formato
 ---
- Se hai originariamente creato un file Excel in un determinato formato, ad esempio[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/) , E[CSV](https://docs.fileformat.com/spreadsheet/csv/) , a volte potresti trovare utile convertire il file Excel in un altro formato in modo da poter sfruttare le funzionalità speciali fornite da esso. Ad esempio, potresti voler esportare un file Excel in[PDF](https://docs.fileformat.com/pdf/) per proteggere i tuoi contenuti da eventuali modifiche non autorizzate e facilitarne la lettura e la condivisione contemporaneamente.
+ Se hai originariamente creato un file Excel in un determinato formato, ad esempio[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/) , E[CSV](https://docs.fileformat.com/spreadsheet/csv/) a volte potresti trovare utile convertire il file Excel in un altro formato in modo da poter sfruttare le funzionalità speciali fornite da esso. Ad esempio, potresti voler esportare un file Excel in[PDF](https://docs.fileformat.com/pdf/) per proteggere i tuoi contenuti da eventuali modifiche non autorizzate e facilitarne la lettura e la condivisione contemporaneamente.
 
  Excel l'esportazione degli oggetti è un processo complesso. Molti fattori contribuiscono alla complessità e pertanto dovrebbero essere presi in considerazione durante il processo di esportazione. La possibilità di esportare l'oggetto Excel in un file di formato con una precisa qualità professionale è una caratteristica principale di Aspose.Cells Cloud.
 
@@ -31,7 +32,7 @@ POST https://api.aspose.cloud/v3.0/cells/export
 | Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
 |:- |:- |:- |:- |
 | file| file| formData| File da caricare|
-| tipo di oggetto| corda| domanda|tipo di oggetto (cartella di lavoro/foglio di lavoro/grafico/forma/immagine/elencooggetto/oleoggetto)|
+| tipo di oggetto| corda| domanda| tipo di oggetto (cartella di lavoro/foglio di lavoro/grafico/forma/immagine/elencooggetto/oleoggetto)|
 | formato| corda| domanda|[Formato del file](/cells/it/supported-file-formats/)  |
  
  IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) definisce un'interfaccia di programmazione accessibile pubblicamente e consente di eseguire interazioni REST direttamente da un browser web.

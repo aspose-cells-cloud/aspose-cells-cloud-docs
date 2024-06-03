@@ -1,33 +1,34 @@
 ﻿---
-title: PutWorksheetListObjec
+title: ArbeitsblattListenobjekt einfügen
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/putworksheetlistobject/
-description: Fügen Sie dem Arbeitsblatt ein ListObject hinzu
+description: Fügen Sie im Arbeitsblatt ein ListObject hinzu
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PutWorksheetListObject
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetListObject" >}}
 {{< blocks/products/cells/docs-title titlemsg="Add a ListObject in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/listobjects,PUT,Hinzufügen eines ListObjects zum Arbeitsblatt.,<a href=\'https://apireference.aspose.cloud/cells/#/ListObjects/PutWorksheetListObject\'>PutWorksheetListObject </a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/listobjects,PUT,Fügen Sie dem Arbeitsblatt ein ListObject hinzu.,<a href=\'https://apireference.aspose.cloud/cells/#/ListObjects/PutWorksheetListObject\'>PutWorksheetListObject</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="startRow,integer,Die Startzeile des Listenbereichs." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="startRow, Integer, Die Startzeile des Listenbereichs." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="startColumn,integer,Die Startspalte des Listenbereichs." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="endRow,integer,Die Startzeile des Listenbereichs." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="endColumn,integer,Die Startspalte des Listenbereichs." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="hasHeaders,boolean,Gibt an, ob der Bereich Header hat." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="displayName,string,Gibt an, ob der Anzeigename angezeigt wird." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="showTotals,boolean,Gibt an, ob Gesamtsummen angezeigt werden." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="hasHeaders, boolean, Gibt an, ob der Bereich Überschriften hat." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="displayName, string, Gibt an, ob der Name angezeigt werden soll." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="showTotals, Boolean, Gibt an, ob Gesamtsummen angezeigt werden." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/ListObjectsController/PutWorksheetListObject\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

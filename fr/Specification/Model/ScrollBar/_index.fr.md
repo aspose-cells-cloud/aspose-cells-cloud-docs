@@ -4,17 +4,18 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/model/scrollbar/
 description: "Aspose.Cells Spécification du modèle cloud : ScrollBar. Gérez sans effort Excel et d'autres feuilles de calcul avec des fonctionnalités telles que l'ouverture, la génération, l'édition, le fractionnement, la fusion, la comparaison et la conversion."
+kwords: Excel, Office, feuille de calcul, Cloud REST API, barre de défilement
 weight: 50
 ---
 ## **barre de défilement**
 
- 
+ Représente un objet barre de défilement.
 
 | Nom de la propriété| Type de propriété| Nullable| Lecture seulement| Valeur par défaut| Description|
 |:- |:- |:- |:- |:- |:- |
 | Valeur actuelle| Entier| Vrai| FAUX|| Obtient ou définit la valeur actuelle.|
 | Changement incrémentiel| Entier| Vrai| FAUX|| Obtient ou définit la quantité d'incrémentation de la barre de défilement ou de la double flèche lors du défilement d'une ligne.|
-| EstHorizontal| Booléen| Vrai| FAUX||Indique s'il s'agit d'une barre de défilement horizontale.|
+| EstHorizontal| Booléen| Vrai| FAUX|| Indique s'il s'agit d'une barre de défilement horizontale.|
 | Max.| Entier| Vrai| FAUX|| Obtient ou définit la valeur maximale d'une barre de défilement ou d'une plage de double flèche.|
 | Min.| Entier| Vrai| FAUX|| Obtient ou définit la valeur minimale d'une barre de défilement ou d'une plage de double flèche.|
 | Changement de page| Entier| Vrai| FAUX|| Obtient ou définit le changement de page|
@@ -36,7 +37,7 @@ weight: 50
 | X| Entier| Vrai| FAUX|||
 | Oui| Entier| Vrai| FAUX|||
 | Angle de rotation| Flottant| Vrai| FAUX|||
-| Texte HTML| Chaîne| Vrai| FAUX|||
+|Texte HTML| Chaîne| Vrai| FAUX|||
 | Texte| Chaîne| Vrai| FAUX|||
 | Texte alternatif| Chaîne| Vrai| FAUX|||
 | TexteHorizontalAlignement| Chaîne| Vrai| FAUX|||
@@ -57,4 +58,5 @@ weight: 50
 | Lien hypertexte| Chaîne| Vrai| FAUX|||
 | lien| Classe : Lien| Vrai| FAUX|||
 
-**Nom du parent** : (Forme)[forme]
+**Nom du parent** : [Forme](/specification/model/shape)
+

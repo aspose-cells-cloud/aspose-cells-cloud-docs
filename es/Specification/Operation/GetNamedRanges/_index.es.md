@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/getnamedranges/
 description: Recuperar descripciones de rangos en las hojas de trabajo.
+kwords: Excel, Office, hoja de cálculo, nube REST API, GetNamedRanges
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetNamedRanges" >}}

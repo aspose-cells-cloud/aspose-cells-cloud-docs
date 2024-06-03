@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postautofitworkbookrows/
 description: Ajustement automatique des lignes dans le classeur
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostAutofitWorkbookRows
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostAutofitWorkbookRows" >}}
@@ -18,7 +19,7 @@ weight: 50
      {{< blocks/products/cells/docs-Parameter-content columns="nom,chaîne,Le nom du fichier." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Nom du paramètre, type, description" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="startRow,entier,Démarrer la ligne." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="startRow,entier,Début de la ligne." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="endRow,entier,Fin de ligne." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="onlyAuto,boolean,Uniquement auto." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="dossier, chaîne, le dossier où se trouve le fichier." >}} 

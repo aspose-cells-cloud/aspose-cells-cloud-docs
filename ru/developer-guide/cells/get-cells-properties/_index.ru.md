@@ -3,6 +3,7 @@ title: Получите недвижимость Cells
 type: docs
 url: /ru/get-cells-properties/
 weight: 130
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Получить Cells Свойства
 ---
 Этот REST API показывает, как использовать `get a specific cell` в файле Excel.
 

@@ -4,6 +4,7 @@ type: docs
 url: /it/charts/add/
 aliases: [/add-a-chart-in-a-worksheet/]
 weight: 20
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Aggiungi un grafico in un foglio di lavoro
 ---
 Questo REST API indica l'aggiunta di un nuovo grafico al foglio di lavoro.
  
@@ -26,13 +27,13 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts
 | LowerRightRow| numero intero| domanda|0 |
 | colonna inferiore destra| numero intero| domanda|0 |
 | la zona| corda| domanda| Specifica i valori da cui tracciare la serie di dati.|
-| è verticale| booleano| domanda| VERO|
-| categoriaDati| corda| domanda| Ottiene o imposta l'intervallo dei valori della categoria Axis. Può essere un intervallo di celle (ad esempio "d1:e10").|
-| isAutoGetSerialName| booleano| domanda| VERO|
+| è verticale|booleano| domanda| VERO|
+| categoriaDati| corda| domanda| Ottiene o imposta l'intervallo di valori della categoria Axis. Può essere un intervallo di celle (ad esempio "d1:e10").|
+|isAutoGetSerialName|booleano| domanda| VERO|
 | titolo| corda| domanda| Specifica il nome del titolo del grafico.|
 | cartella| corda| domanda| La cartella della cartella di lavoro.|
 | storageName| corda| domanda| nome dell'archivio.|
-|etichettedati| booleano| domanda| VERO|
+| etichettedati|booleano| domanda| VERO|
 | datiLabelsPosizione| corda| domanda| Sopra|
 | pivotTableSheet| corda| domanda||
 | NomeTabellaPivot| corda| domanda||

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/postconvertworkbooktocsv/
 description: Convertir archivos Excel a archivos CSV
+kwords: Excel, Office, hoja de cálculo, nube REST API, PostConvertWorkbookToCSV
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostConvertWorkbookToCSV" >}}

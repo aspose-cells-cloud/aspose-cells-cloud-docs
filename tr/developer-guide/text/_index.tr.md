@@ -7,6 +7,7 @@ aliases: [/working-with-text/]
 keywords: Get, find, and replace text from Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) files
 description: Aspose.Cells Cloud REST API, Excel dosyalarından metin almayı, bulmayı ve değiştirmeyi destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 34
+kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Metin
 ---
 Metin işlemi Excel fie için karmaşık bir işlemdir. Birçok faktör karmaşıklığa katkıda bulunur ve bu nedenle ihracat sürecinde dikkate alınmalıdır. Çeşitli format ve veri türlerini hassas bir profesyonel kalitede dosyaya metin olarak yazma yeteneği, Aspose.Cells Cloud'un en önemli özelliğidir.
 

@@ -8,6 +8,7 @@ aliases: [/set-range-value-in-excel-worksheet/]
 keywords: Set range value on an Excel workshee
 description: Aspose.Cells Cloud REST API admite la configuración del valor del rango en una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 72
+kwords: Excel, Office Cloud, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Establecer valor de rango en una hoja de trabajo Excel
 ---
 Este REST API indica que coloca un valor en el rango; si corresponde, el valor se convertirá a otro tipo de datos y se restablecerá el formato del número de la celda.
             
@@ -27,8 +28,8 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/val
 | nombre de la hoja| cadena| camino| nombre de la hoja de trabajo|
 | valor| cadena| consulta| Valor de entrada|
 | rango|| cuerpo| rango en la hoja de trabajo|
-| Está convertido| booleano| consulta| FALSO|
-| establecer estilo| booleano| consulta| FALSO|
+| Está convertido|booleano| consulta| FALSO|
+| establecer estilo|booleano| consulta| FALSO|
 | carpeta| cadena| consulta| Carpeta del libro de trabajo.|
 | nombredealmacenamiento| cadena| consulta| nombre del almacenamiento.|
  

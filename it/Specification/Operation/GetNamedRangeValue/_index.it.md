@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/getnamedrangevalue/
 description: Recupera i valori nell'intervallo
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, GetNamedRangeValue
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetNamedRangeValue" >}}

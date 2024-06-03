@@ -1,5 +1,5 @@
 ﻿---
-title: Boyutlu Tamsayı Dizisini Excel Çalışma Sayfasına Aktarın
+title: 2 Boyutlu Tamsayı Dizisini Excel Çalışma Sayfasına Aktarın
 second_title: Aspose.Cells Cloud Documen
 linktitle: 2 boyutlu tamsayı dizisini içe aktar
 type: docs
@@ -8,6 +8,7 @@ aliases: [/import-2dimension-integer-array-into-excel-worksheet/,/import-2dimens
 keywords: Import 2 dimension integer array data into Excel files
 description: Aspose.Cells Cloud REST API, 2 boyutlu tam sayı dizisi verilerinin Excel dosyalarına aktarılmasını destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 20
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, 2 Boyutlu Tamsayı Dizisini Excel Çalışma Sayfasına Aktar
 ---
 Bu REST API `import 2 dimension integer array data`'i Excel çalışma sayfasına dönüştürün.
 

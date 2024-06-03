@@ -7,6 +7,7 @@ url: /sv/workbook/background/
 keywords: Working with background an Excel workbook
 description: Aspose.Cells Cloud REST API stöd för att arbeta med bakgrund på en Excel arbetsbok. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Arbeta med bakgrund på en Excel arbetsbok
 ---
 ## Arbeta med bakgrund på en Excel arbetsbok.
 

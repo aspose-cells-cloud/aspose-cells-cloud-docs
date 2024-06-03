@@ -8,6 +8,7 @@ aliases: [/add-a-new-excel-worksheet/]
 keywords: Add an Excel worksheet
 description: Aspose.Cells Cloud REST API, Excel çalışma sayfasının eklenmesini destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 20
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel çalışma sayfası ekleyin
 ---
 Bu REST API, `add new worksheet`'i gösterir.
  
@@ -25,7 +26,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
 | isim| sicim| yol| Belge adı.|
 | sayfaAdı| sicim| yol| Yeni sayfa adı.|
 | konum| tamsayı| sorgu| Yeni sayfa konumu.|
-| sayfa tipi| sicim| sorgu| Yeni sayfa türü.|
+| sayfa türü| sicim| sorgu| Yeni sayfa türü.|
 | dosya| sicim| sorgu| Belge klasörü.|
 | depolamaAdı| sicim| sorgu| depolama adı.|
  

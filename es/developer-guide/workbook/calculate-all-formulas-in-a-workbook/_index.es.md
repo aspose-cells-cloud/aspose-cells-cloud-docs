@@ -8,6 +8,7 @@ aliases: [/calculate-all-formulas-in-a-workbook/]
 keywords: Calculate all formulas on an Excel workbook
 description: Aspose.Cells Cloud REST API admite el cálculo de todas las fórmulas en un libro de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 140
+kwords: Excel, Office Cloud, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Calcular todas las fórmulas en un libro de trabajo Excel
 ---
 Este REST API indica `calculate all formulas` en un libro de trabajo Excel.
  
@@ -24,7 +25,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/calculateformula
 |:- |:- |:- |:- |
 | nombre| cadena| camino| Nombre del documento.|
 | opciones|| cuerpo| Opciones de cálculo.|
-| ignorarError| booleano| consulta| ignorar el error.|
+| ignorarError|booleano| consulta| ignorar el error.|
 | carpeta| cadena| consulta| Carpeta del documento.|
 | nombredealmacenamiento| cadena| consulta| nombre del almacenamiento.|
  

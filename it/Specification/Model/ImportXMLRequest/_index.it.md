@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/model/importxmlrequest/
 description: "Aspose.Cells Specifica del modello cloud: ImportXMLRequest. Gestisci facilmente Excel e altri fogli di calcolo con funzionalità come apertura, generazione, modifica, divisione, unione, confronto e conversione"
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, ImportXMLRequest
 weight: 50
 ---
 ## **importXMLRequest**
@@ -12,7 +13,7 @@ weight: 50
 
 | Nome della proprietà| Tipo di proprietà| Nullabile| Sola lettura| Valore di default| Descrizione|
 |:- |:- |:- |:- |:- |:- |
-| XMLFileSource| Classe:FileSource| VERO| Falso|| Origine del file XML|
+| XMLFileSource| Classe: origine dati| VERO| Falso|| Origine del file XML|
 | Importa posizione| Classe:ImportPosition| VERO| Falso|| Descrizione della posizione di importazione.|
 | Contenuto XML| Corda| VERO| Falso|| Il valore predefinito di Base64String è nullo|
 

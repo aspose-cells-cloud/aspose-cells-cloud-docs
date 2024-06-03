@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/putchangevisibilityworksheet/
 description: Modificare la visibilità del foglio di lavoro nella cartella di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PutChangeVisibilityWorksheet
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutChangeVisibilityWorksheet" >}}

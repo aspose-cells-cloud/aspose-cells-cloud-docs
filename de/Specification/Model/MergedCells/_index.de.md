@@ -3,17 +3,19 @@ title: Zusammengeführte Zelle
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/model/mergedcells/
-description: "Aspose.Cells Cloud-Modellspezifikation: MergedCells. Bearbeiten Sie mühelos Excel und andere Tabellenkalkulationsdokumente mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+description: "Aspose.Cells Cloud-Modellspezifikation: MergedCells. Müheloses Bearbeiten von Excel und anderen Tabellenkalkulationsdokumenten mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, MergedCells
 weight: 50
 ---
-## **mergedCells**
+## **zusammengeführte Zellen**
 
  
 
-| Name des Anwesens| Art der Immobilie| Nullbar| Schreibgeschützt| Standardwert| Beschreibung|
+| Name des Anwesens| Art der Immobilie| Nullwerte zulassen| Schreibgeschützt| Standardwert| Beschreibung|
 |:- |:- |:- |:- |:- |:- |
 | Zählen| Ganze Zahl| WAHR| FALSCH|||
-| MergedCellList| Container| WAHR| FALSCH|||
+| ZusammengeführteZellenliste| Container| WAHR| FALSCH|||
 | Verknüpfung| Klasse:Link| WAHR| FALSCH|||
 
-**Elternname** : (LinkElement)[Linkelement]
+**Elternname** : [LinkElement](/specification/model/linkelement)
+

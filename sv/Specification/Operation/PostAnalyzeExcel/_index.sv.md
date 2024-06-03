@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/postanalyzeexcel/
 description: Utför affärsanalys av data i Excel-filer
+kwords: Excel, Office, Kalkylblad, Cloud REST API, PostAnalyzeExcel
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostAnalyzeExcel" >}}

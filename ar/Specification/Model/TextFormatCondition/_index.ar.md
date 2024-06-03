@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/model/textformatcondition/
 description: "Aspose.Cells مواصفات النموذج السحابي: TextFormatCondition. تعامل بسهولة مع Excel ومستندات جداول البيانات الأخرى التي تحتوي على ميزات مثل الفتح والتوليد والتحرير والتقسيم والدمج والمقارنة والتحويل"
+kwords: Excel، Office، جدول البيانات، Cloud REST API، TextFormatCondition
 weight: 50
 ---
 ## **textFormatCondition**
 
- 
+ يمثل حالة تنسيق النص.
 
 | اسم الخاصية| نوع الملكية| لاغية| يقرأ فقط| القيمة الافتراضية| وصف|
 |:- |:- |:- |:- |:- |:- |
@@ -17,4 +18,5 @@ weight: 50
 | الصيغة2| خيط| حقيقي| خطأ شنيع|||
 | المشغل أو العامل| خيط| حقيقي| خطأ شنيع|||
 
-**اسم الوالدين** (فورمولافورماتكونديشن)[فورمولافورماتكونديشن]
+**اسم الوالدين** : [FormulaFormatCondition](/specification/model/formulaformatcondition)
+

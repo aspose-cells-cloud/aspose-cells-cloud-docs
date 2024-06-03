@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/getworksheetwithformat/
 description: Hämta kalkylbladet i ett angivet format från arbetsboken
+kwords: Excel, Office, Spreadsheet, Cloud REST API, GetWorksheetWithFormat
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetWithFormat" >}}
@@ -19,7 +20,7 @@ weight: 50
      {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Arbetsbladets namn." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parameternamn, typ, beskrivning" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="format,sträng,exportformat(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/15143481/15143481/JIF3407G/341761/5PG3407G/34076/341761/34161/34161/34161/341761/341761/34076 481/MD [Markdown]/Siffror)." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="format,sträng,exportformat(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/15PG343481/15PG/407G/7PG/407G/7PG3407G/76143481/76143481/15143481/15143481/15143481/15143481/151123481 73481/MD [Markdown]/Siffror)." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="verticalResolution,integer,Bildens vertikala upplösning." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="horizontalResolution,integer,Bild horisontell upplösning." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="area,string,Representerar intervallet som ska skrivas ut." >}} 

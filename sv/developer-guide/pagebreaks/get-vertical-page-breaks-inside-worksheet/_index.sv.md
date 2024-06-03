@@ -8,6 +8,7 @@ aliases: [/get-vertical-page-breaks-inside-worksheet/]
 keywords: Add a page break in an Excel worksheet
 description: Aspose.Cells Cloud REST API stöd för att lägga till en sidbrytning i ett Excel-kalkylblad. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 20
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Få vertikala sidbrytningar
 ---
  Denna REST API indikerar att få `vertical` sidbrytningar.
  

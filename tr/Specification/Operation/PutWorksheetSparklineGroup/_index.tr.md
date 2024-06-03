@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/putworksheetsparklinegroup/
 description: Çalışma sayfasına mini grafik grubu ekleme
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PutWorksheetSparklineGroup
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetSparklineGroup" >}}

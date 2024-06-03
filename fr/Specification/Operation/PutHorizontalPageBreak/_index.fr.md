@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/puthorizontalpagebreak/
 description: Ajouter un saut de page horizontal dans la feuille de calcul
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PutHorizontalPageBreak
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutHorizontalPageBreak" >}}

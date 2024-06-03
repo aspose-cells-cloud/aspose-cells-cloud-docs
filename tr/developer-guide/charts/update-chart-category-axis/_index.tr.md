@@ -3,6 +3,7 @@ title:  Grafik Kategorisini Güncelle Axi
 type: docs
 url: /tr/charts/category-axis/update/
 weight: 160
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Grafik Kategori Eksenini Güncelle
 ---
 Bu REST API, Güncelleme Grafiği Kategori Eksenini gösterir.
  

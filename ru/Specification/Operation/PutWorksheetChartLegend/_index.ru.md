@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/putworksheetchartlegend/
 description: Показать легенду диаграммы на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, PutWorksheetChartLegend
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetChartLegend" >}}

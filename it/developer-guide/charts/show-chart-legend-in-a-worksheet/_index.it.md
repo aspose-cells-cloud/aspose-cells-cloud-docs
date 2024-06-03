@@ -4,6 +4,7 @@ type: docs
 url: /it/charts/legend/show/
 aliases: [/show-chart-legend-in-a-worksheet/]
 weight: 100
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Mostra legenda del grafico in un foglio di lavoro
 ---
 Questo REST API indica la legenda della visualizzazione nel grafico
  

@@ -3,6 +3,7 @@ title:  Tabloyu Güncelle İkinci Kategori Eksen
 type: docs
 url: /tr/charts/second-category-axis/update/
 weight: 160
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Güncelleme Tablosu İkinci Kategori Ekseni
 ---
  Bu REST API, Güncelleme Tablosu İkinci Kategori Eksenini gösterir.
  

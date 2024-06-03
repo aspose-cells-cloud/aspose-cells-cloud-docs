@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/getnamedranges/
 description: Получение описаний диапазонов на листах
+kwords: Excel, Office, электронная таблица, Cloud REST API, GetNamedRanges
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetNamedRanges" >}}

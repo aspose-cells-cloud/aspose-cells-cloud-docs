@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/postdeleteincompleterows/
 description: La eliminación de filas incompletas de archivos de hojas de cálculo se utiliza principalmente para eliminar filas incompletas en tablas y rangos.
+kwords: Excel, Office, hoja de cálculo, nube REST API, PostDeleteIncompleteRows
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostDeleteIncompleteRows" >}}

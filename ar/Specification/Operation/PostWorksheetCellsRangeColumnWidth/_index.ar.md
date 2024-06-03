@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postworksheetcellsrangecolumnwidth/
 description: قم بتعيين عرض العمود للنطاق المحدد
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostWorksheetCellsRangeColumnWidth
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangeColumnWidth" >}}

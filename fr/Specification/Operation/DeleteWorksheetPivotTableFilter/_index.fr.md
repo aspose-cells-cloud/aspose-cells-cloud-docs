@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/deleteworksheetpivottablefilter/
 description: Supprimer un filtre pivot dans le tableau croisé dynamique
+kwords: Excel, Office, feuille de calcul, Cloud REST API, DeleteWorksheetPivotTableFilter
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetPivotTableFilter" >}}

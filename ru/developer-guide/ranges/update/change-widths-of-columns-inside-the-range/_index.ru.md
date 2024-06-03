@@ -8,6 +8,7 @@ aliases: [/change-widths-of-columns-inside-the-range/]
 keywords: Set column width for range on an Excel workshee
 description: Aspose.Cells Cloud REST API поддерживает настройку ширины столбца для диапазона на листе Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 74
+kwords: Excel, Office Cloud, REST API, электронная таблица, PDF, CSV, Json, Markdwon, изменение ширины столбцов внутри диапазона
 ---
 Этот REST API указывает ширину столбца диапазона.
  

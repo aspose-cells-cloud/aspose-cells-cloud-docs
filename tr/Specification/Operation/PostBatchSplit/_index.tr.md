@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/postbatchsplit/
 description: Belirli eşleştirme koşullarını karşılayan dosyaları toplu olarak bölme
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PostBatchSplit
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostBatchSplit" >}}

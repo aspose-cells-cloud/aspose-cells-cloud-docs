@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/deletepivottablefield/
 description: Eliminar un campo dinámico en la tabla dinámica
+kwords: Excel, Office, hoja de cálculo, nube REST API, eliminar campo de tabla dinámica
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeletePivotTableField" >}}

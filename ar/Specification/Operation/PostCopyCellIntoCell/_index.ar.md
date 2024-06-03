@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postcopycellintocell/
 description: انسخ البيانات من الخلية المصدر إلى الخلية الوجهة في ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostCopyCellIntoCell
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostCopyCellIntoCell" >}}

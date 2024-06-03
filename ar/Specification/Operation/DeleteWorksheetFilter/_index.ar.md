@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/deleteworksheetfilter/
 description: حذف عامل تصفية لعمود في ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، RemoveWorksheetFilter
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetFilter" >}}

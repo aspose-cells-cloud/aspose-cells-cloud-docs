@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/model/lineformat/
 description: "Aspose.Cells Especificación del modelo de nube: LineFormat. Maneje sin esfuerzo Excel y otros documentos de hoja de cálculo con funciones como abrir, generar, editar, dividir, fusionar, comparar y convertir."
+kwords: Excel, Office, Hoja de cálculo, Cloud REST API, LineFormat
 weight: 50
 ---
 ## **formato de línea**
 
- 
+ Representa toda la configuración de la línea.
 
 | Nombre de la propiedad| tipo de propiedad| Anulable| Solo lectura| Valor por defecto| Descripción|
 |:- |:- |:- |:- |:- |:- |
@@ -30,4 +31,5 @@ weight: 50
 | Relleno degradado| Clase:Relleno Degradado| Verdadero| FALSO|||
 | Datos de imagen| Cadena| Verdadero| FALSO|||
 
-**Nombre del padre** : (Formato de relleno)[formato de relleno]
+**Nombre del padre** : [Formato de relleno](/specification/model/fillformat)
+

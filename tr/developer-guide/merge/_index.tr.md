@@ -6,6 +6,7 @@ url: /tr/merge/
 keywords: Working with merger on an Excel file
 description: Aspose.Cells Cloud REST API, Excel dosyasında birleştirmeyle çalışmayı destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 32
+kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Birleştirme
 ---
 ## Excel dosyasında birleşmeyle çalışılıyor.
 

@@ -8,6 +8,7 @@ aliases: [/working-with-worksheets/]
 keywords: Working with worksheet on an Excel workbook
 description: Aspose.Cells Cloud REST API admite trabajar con una hoja de trabajo en un libro de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 100
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Trabajando con la hoja de trabajo Excel.
 ---
 Una hoja de trabajo es una colección de celdas donde se guardan y manipulan los datos. Cada libro de trabajo Excel puede contener varias hojas de trabajo.
 

@@ -8,6 +8,7 @@ aliases: [/freeze-panes-in-excel-worksheet/,/worksheets/freeze-panes/]
 keywords: Freeze panes on an Excel Worksheet
 description: Aspose.Cells Cloud REST API поддерживает фиксацию панелей на листе Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 190
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, закрепить панели на листе Excel
 ---
 Этот REST API указывает на `set freeze panes` на листе Excel.
  

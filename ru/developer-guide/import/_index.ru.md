@@ -7,12 +7,13 @@ aliases: [/import-data-in-excel-worksheet-without-using-storage/]
 keywords: Import data into Excel files
 description: Aspose.Cells Cloud REST API поддерживает импорт данных в файлы Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 31
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, импорт
 ---
 Импорт данных в файл Excel — сложный процесс. Многие факторы усложняют процесс экспорта, и поэтому их следует учитывать в процессе экспорта. Возможность импортировать в файл различные форматы и типы данных с точным профессиональным качеством — главная особенность Aspose.Cells Cloud.
 
 ## API-интерфейсы RSET
 
-Предоставляются следующие API-интерфейсы для импорта данных в файл Excel или несколько файлов Excel:
+Предоставляются следующие API для импорта данных в файл Excel или несколько файлов Excel:
 
 |API|Описание|
 |:- |:- |
@@ -26,7 +27,7 @@ weight: 31
 | Имя параметра| Тип| Путь/строка запроса/HTTPBody|Описание|
 |:- |:- |:- |:- |
 | файл| файл| данные формы| Файл для загрузки|
-| ИмпортОпция| Параметры импорта|HTTPBody| IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/Picture|
+| ИмпортОпция| Параметры импорта| HTTPBody| IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/Picture|
 
 ### С использованием хранилища
 
@@ -237,6 +238,6 @@ weight: 31
 - [Как импортировать целочисленный массив в рабочий лист Excel](/cells/ru/import/integer-array/)
 - [Как импортировать двойной массив в рабочий лист Excel](/cells/ru/import/double-array/)
 - [Как импортировать массив строк в рабочий лист Excel](/cells/ru/import/string-array/)
-- [Как импортировать двухмерный целочисленный массив в лист Excel](/cells/ru/import/2dimension-integer-array/)
+- [Как импортировать двухмерный целочисленный массив в рабочий лист Excel](/cells/ru/import/2dimension-integer-array/)
 - [Как импортировать двухмерный двойной массив в лист Excel](/cells/ru/import/2dimension-double-array/)
 - [Как импортировать двумерный массив строк в лист Excel](/cells/ru/import/2dimension-string-array/)

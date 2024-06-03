@@ -8,6 +8,7 @@ aliases: [/auto-fit-rows-in-excel-workbooks/]
 keywords: Autofit rows on an Excel workboo
 description: Aspose.Cells Cloud REST API prend en charge l'ajustement automatique des lignes sur un classeur Excel. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 90
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, ajustement automatique des lignes sur un classeur Excel
 ---
 Ce REST API indique d'ajuster automatiquement les lignes d'un classeur Excel.
  
@@ -20,13 +21,13 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/autofitrows
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Nom du document.|
 | Options d'ajustement automatique|| corps| Options de montage automatique.|
 | startRow| entier| requête| Commencez la rangée.|
 | fin de ligne| entier| requête| Fin de la rangée.|
-| uniquementAuto| booléen| requête| FAUX|
+| uniquementAuto|booléen| requête| FAUX|
 | dossier| chaîne| requête| Dossier du document.|
 | Nom de stockage| chaîne| requête| nom de stockage.|
  

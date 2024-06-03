@@ -1,30 +1,31 @@
 ﻿---
-title: PostUpdateWorksheetOleObjec
+title: PostUpdateWorksheetOleObject
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postupdateworksheetoleobject/
-description: Aktualisieren Sie ein OLE-Objekt im Arbeitsblatt
+description: Aktualisieren eines OLE-Objekts im Arbeitsblatt
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostUpdateWorksheetOleObject
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostUpdateWorksheetOleObject" >}}
 {{< blocks/products/cells/docs-title titlemsg="Update an OLE object in worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/oleobjects/{oleObjectIndex},POST,Aktualisieren Sie ein OLE-Objekt im Arbeitsblatt.,<a href=\'https://apireference.aspose.cloud/cells/#/OleObjects/ PostUpdateWorksheetOleObject\'>PostUpdateWorksheetOleObject</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/oleobjects/{oleObjectIndex},POST,Ein OLE-Objekt im Arbeitsblatt aktualisieren.,<a href=\'https://apireference.aspose.cloud/cells/#/OleObjects/PostUpdateWorksheetOleObject\'>PostUpdateWorksheetOleObject</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="oleObjectIndex,integer,Ole-Objektindex." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblattes." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="oleObjectIndex,Integer,Ole-Objektindex." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="ole,class:oleobject,Ole Objektbeschreibung." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="ole, Klasse: Ole-Objekt, Ole-Objektbeschreibung." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

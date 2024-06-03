@@ -3,6 +3,7 @@ title: Establecer fórmula para una celda en la hoja de trabajo Excel
 type: docs
 url: /es/set-formula-for-a-cell-in-excel-worksheets/
 weight: 80
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Establecer fórmula para una celda en hojas de trabajo Excel
 ---
 Este REST API indica el conjunto `cell formula` en un archivo Excel.
  

@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/model/chartdatatable/
 description: "Aspose.Cells Especificación del modelo de nube: ChartDataTable. Maneje sin esfuerzo Excel y otros documentos de hoja de cálculo con funciones como abrir, generar, editar, dividir, fusionar, comparar y convertir."
+kwords: Excel, Office, hoja de cálculo, nube REST API, ChartDataTable
 weight: 50
 ---
 ## **gráficoDatosTabla**
 
- 
+ Representa una tabla de datos de gráfico.
 
 | Nombre de la propiedad| tipo de propiedad| Anulable| Solo lectura| Valor por defecto| Descripción|
 |:- |:- |:- |:- |:- |:- |
@@ -22,4 +23,5 @@ weight: 50
 | Mostrar clave de leyenda| Booleano| Verdadero| FALSO|| Verdadero si la clave de leyenda de la etiqueta de datos está visible.|
 | enlace| Clase: enlace| Verdadero| FALSO|||
 
-**Nombre del padre** : (ElementoEnlace)[elementoEnlace]
+**Nombre del padre** : [Elemento de enlace](/specification/model/linkelement)
+

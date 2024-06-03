@@ -8,6 +8,7 @@ aliases: [/add-date-filter-in-a-worksheet/,/autofilter/add-a-date-filter/]
 keywords: Adds a date filter on an Excel worksheet
 description: Aspose.Cells Bulut API, Excel çalışma sayfasına tarih filtresi eklenmesini destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 65
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel çalışma sayfasına tarih filtresi ekleme
 ---
 Bu REST API, Excel Çalışma Sayfasına `date filter` eklenmesi gerektiğini belirtir.
 
@@ -22,7 +23,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/
 
 | Parametre adı| Tip| Yol/Sorgu Dizesi/HTTPBody|Tanım|
 |:- |:- |:- |:- |
-| isim| sicim| Yol|Çalışma kitabı adı.|
+| isim| sicim| Yol| Çalışma kitabı adı.|
 | sayfaAdı| sicim| Yol| Çalışma sayfası adı.|
 |menzil|sicim| Sorgu||
 |alanIndex|tamsayı| Sorgu||

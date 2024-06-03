@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/deleteworksheetrow/
 description: Çalışma sayfasındaki bir satırı silme
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, SilWorksheetRow
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetRow" >}}

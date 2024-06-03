@@ -7,6 +7,7 @@ url: /it/merge/multi-files/
 keywords: Merge multi Excel files into Excel file
 description: Aspose.Cells Cloud REST API supporta l'unione di più file Excel nel file Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 32
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Unisci più file Excel in un file Excel.
 ---
 Questo REST API indica a `merge` più file Excel in un file Excel.
 
@@ -23,7 +24,7 @@ POST http://api.aspose.cloud/v3.0/cells/merge
 |:- |:- |:- |:- |
 | file| file| formData| File da caricare|
 | formato| corda| domanda| xlsx|
-| unisci in un foglio| booleano| domanda| Falso|
+| unisci in un foglio|booleano| domanda| Falso|
  
  IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostMerge) definisce un'interfaccia di programmazione accessibile pubblicamente e consente di eseguire interazioni REST direttamente da un browser web.
  

@@ -1,28 +1,29 @@
 ﻿---
-title: PutWorksheetFormatConditionAre
+title: 放置工作表格式条件
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/putworksheetformatconditionarea/
 description: 在工作表中添加格式条件的单元格区域
+kwords: Excel，Office，电子表格，云 REST API，PutWorksheetFormatConditionArea
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetFormatConditionArea" >}}
 {{< blocks/products/cells/docs-title titlemsg="Add a cell area for the format condition in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}/area,PUT,在工作表中添加格式条件的单元格区域。,<a href=\'https://apireference.aspose.cloud /cells/#/ConditionalFormattings/PutWorksheetFormatConditionArea\'>PutWorksheetFormatConditionArea</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}/area,PUT,在工作表中添加用于格式条件的单元格区域。,<a href=\'https://apireference.aspose.cloud/cells/#/ConditionalFormattings/PutWorksheetFormatConditionArea\'>PutWorksheetFormatConditionArea</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="参数名称、类型、描述" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="名称，字符串，文件名。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,字符串,工作表名称。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="index,integer,获取指定索引处的条件格式元素。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="name，string，文件名。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName，string，工作表名称。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="index，integer，获取指定索引处的条件格式元素。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="cellArea,string,添加条件格式的单元格区域。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="cellArea，string，添加条件格式的单元格范围。" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="文件夹，字符串，文件所在的文件夹。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,文件所在的存储名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName，string，文件所在的存储名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/ConditionalFormattingsController/PutWorksheetFormatConditionArea\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

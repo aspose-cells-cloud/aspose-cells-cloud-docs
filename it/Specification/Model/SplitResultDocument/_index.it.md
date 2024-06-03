@@ -5,6 +5,7 @@ type: docs
 url: /it/specification/model/splitresultdocument/
 description: "Aspose.Cells Specifica del modello cloud: SplitResultDocument. Gestisci facilmente Excel e altri fogli di calcolo con funzionalità come apertura, generazione, modifica, divisione, unione, confronto e conversione"
 weight: 50
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, SplitResultDocument
 ---
 ## **splitResultDocument**
 
@@ -15,4 +16,5 @@ weight: 50
 | Id| Numero intero| VERO| Falso|||
 | collegamento| Classe: collegamento| VERO| Falso|||
 
-**Nome del genitore** : (ElementoLink)[elementolink]
+**Nome del genitore** : [Elemento di collegamento](linkelement)
+

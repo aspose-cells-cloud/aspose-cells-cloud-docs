@@ -4,18 +4,19 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/model/workbooksettings/
 description: "Aspose.Cells Especificación del modelo de nube: WorkbookSettings. Maneje sin esfuerzo Excel y otros documentos de hoja de cálculo con funciones como abrir, generar, editar, dividir, fusionar, comparar y convertir."
+kwords: Excel, Office, Hoja de cálculo, Cloud REST API, Configuración del libro de trabajo
 weight: 50
 ---
 ## **libro de trabajoConfiguración**
 
- 
+ Representa todas las configuraciones del libro de trabajo.
 
 | Nombre de la propiedad| tipo de propiedad| Anulable| Solo lectura| Valor por defecto| Descripción|
 |:- |:- |:- |:- |:- |:- |
-| AutoComprimirImágenes| Booleano| Verdadero| FALSO|| Especifica un valor booleano que indica que la aplicación comprime automáticamente las imágenes en el libro.|
+| AutoComprimirImágenes| Booleano| Verdadero| FALSO||Especifica un valor booleano que indica que la aplicación comprime automáticamente las imágenes en el libro.|
 | Autorrecuperación| Booleano| Verdadero| FALSO|| Indica si el archivo está marcado para recuperación automática.|
 | Versión de compilación| Cadena| Verdadero| FALSO|| Especifica la versión pública incremental de la aplicación.|
-| ModoCalc| Cadena| Verdadero| FALSO||Especifica si se deben calcular fórmulas de forma manual, automática o automática, excepto para operaciones de tablas múltiples.|
+| ModoCalc| Cadena| Verdadero| FALSO|| Especifica si se deben calcular fórmulas de forma manual, automática o automática, excepto para operaciones de tablas múltiples.|
 | ID de cálculo| Cadena| Verdadero| FALSO|| Especifica la versión del motor de cálculo utilizado para calcular los valores en el libro.|
 | Comprobar compatibilidad| Booleano| Verdadero| FALSO|| Indica si se verifica la compatibilidad al guardar el libro de trabajo. Observaciones: El valor predeterminado es verdadero.|
 | ComprobarExcelRestricción| Booleano| Verdadero| FALSO||Si se verifica la restricción del archivo de Excel cuando el usuario modifica los objetos relacionados con las celdas. Por ejemplo, Excel no permite ingresar un valor de cadena de más de 32 K. Cuando ingresa un valor de más de 32 K, como Cell.PutValue (cadena), si esta propiedad es verdadera, obtendrá una excepción. Si esta propiedad es falsa, aceptaremos el valor de la cadena de entrada como el valor de la celda para que luego pueda generar el valor de la cadena completa para otros formatos de archivo como CSV. Sin embargo, si ha establecido un tipo de valor que no es válido para el formato de archivo Excel, no debe guardar el libro como formato de archivo Excel más adelante. De lo contrario, puede haber un error inesperado en el archivo Excel generado.|

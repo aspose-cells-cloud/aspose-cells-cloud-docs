@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/postupdateworksheetproperty/
 description: Uppdatera kalkylbladsegenskaper i arbetsboken
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostUpdateWorksheetProperty
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostUpdateWorksheetProperty" >}}

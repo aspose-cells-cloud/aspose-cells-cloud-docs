@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/postworksheetcellsrangemerge/
 description: Slå samman ett cellintervall till en enda cell
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostWorksheetCellsRangeMerge
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangeMerge" >}}

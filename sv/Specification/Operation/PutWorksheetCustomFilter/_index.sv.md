@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/putworksheetcustomfilter/
 description: Filtrera en lista med anpassade kriterier i kalkylbladet
+kwords: Excel, Office, Kalkylblad, Cloud REST API, PutWorksheetCustomFilter
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetCustomFilter" >}}

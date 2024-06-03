@@ -1,13 +1,14 @@
 ﻿---
-title: 取消保护 Excel 工作簿
+title: 解除 Excel 工作簿保护
 second_title: Aspose.Cells Cloud Documen
-linktitle: Unprotec
+linktitle: 未保护
 type: docs
 url: /zh/workbook/unprotect/
 aliases: [/unprotect-excel-workbooks/]
 keywords: REST API, spreadsheets, excel, merg
-description: Cells.Cloud API for Excel操作：保护Excel工作簿
+description: Cells.Cloud API 用于 Excel 操作：保护 Excel 工作簿
 weight: 60
+kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdwon、取消保护 Excel 工作簿
 ---
 此 REST API 取消保护 Excel `workbook`。
 
@@ -18,7 +19,7 @@ weight: 60
 |文件夹|细绳|原始工作簿文件夹。|
 |存储名称|细绳|存储名称。|
 
-**请求体参数**
+**请求主体参数**
 
 |参数名称|类型|描述|
 |:- |:- |:- |
@@ -28,19 +29,19 @@ weight: 60
 
 |参数名称|类型|描述|
 |:- |:- |:- |
-|保护类型|细绳|所有/内容/无/对象/场景/结构/窗口|
+|保护类型|细绳|全部/内容/无/物体/场景/结构/窗口|
 |密码|细绳||
 
 
 ## 休息 API
 
-|**API**|**类型**|**描述**|**招摇链接**|
+|**API**|**类型**|**描述**|**Swagger 链接**|
 |:- |:- |:- |:- |
-|/细胞/{名称}/保护|删除|取消文档保护|[删除取消保护文档](https://apireference.aspose.cloud/cells/#/Workbook/DeleteUnProtectDocument)|
+|/细胞/{名称}/保护|删除|取消文档保护|[删除解除保护文档](https://apireference.aspose.cloud/cells/#/Workbook/DeleteUnProtectDocument)|
 
-这[开放API规范](https://apireference.aspose.cloud/cells/#/Workbook/DeleteUnProtectDocument)定义了一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Workbook/DeleteUnProtectDocument)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
 
-您可以使用**cURL**命令行工具轻松访问 Aspose.Cells Web 服务。以下示例展示如何使用 cURL 呼叫云端 API。
+您可以使用**cURL**命令行工具可轻松访问 Aspose.Cells Web 服务。以下示例显示如何使用 cURL 调用云 API。
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
@@ -72,9 +73,9 @@ curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/protection" -H "ac
 
 {{< /tabs >}}
 
-## 云SDK系列
+## Cloud SDK 系列
 
-使用 SDK 是加快开发速度的最佳方式。 SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)有关 Aspose.Cells Cloud SDK 的完整列表。
+使用 SDK 是加快开发速度的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)获得 Aspose.Cells Cloud SDKs 的完整列表。
 
 以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
 

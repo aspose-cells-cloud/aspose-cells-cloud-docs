@@ -5,6 +5,7 @@ type: docs
 url: /sv/supported-file-formats/
 description: Aspose.Cells Cloud stöder Excel för att skapa, konvertera, sammanfoga, dela, skydda, inre objektoperation och så vidare
 weight: 40
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Filformat som stöds
 ---
 |**Formatera**|**Beskrivning**|**Ladda**|**Spara**|
 |:- |:- |:- |:- |
@@ -36,7 +37,7 @@ weight: 40
 |[EMF](https://docs.fileformat.com/image/emf/)|Förbättrat metafilformat||{{< emoticons/tick >}}|
 |[JPEG](https://docs.fileformat.com/image/jpeg/)|JPEG är en typ av bildformat som sparas med metoden för förlustkomprimering.||{{< emoticons/tick >}}|
 |[GIF](https://docs.fileformat.com/image/gif/)|Grafiskt utbytesformat||{{< emoticons/tick >}}|
-|[PRISSÄNKNING](https://docs.fileformat.com/word-processing/md/)|Representerar ett markdown-dokument.||{{< emoticons/tick >}}|
+|[PRISSÄNKNING](https://docs.fileformat.com/word-processing/md/)|Representerar ett nedskrivningsdokument.||{{< emoticons/tick >}}|
 |[SXC](https://docs.fileformat.com/spreadsheet/sxc/)|Ett XML-baserat format som används av OpenOffice och StarOffice|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[FODS](https://docs.fileformat.com/spreadsheet/fods/)|Detta är ett Open Document-format som lagras som platt XML.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[DOCX](https://docs.fileformat.com/word-processing/docx/)|Ett välkänt format för Microsoft Word-dokument som är en kombination av XML och binära filer.||{{< emoticons/tick >}}|

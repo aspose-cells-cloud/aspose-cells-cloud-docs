@@ -7,6 +7,7 @@ keywords: Insert slicer for list object
 url: /ar/list-objects/insert-slicer/
 description:  إدراج مقسم شرائح لكائن القائمة.
 weight: 20
+kwords: Excel، Office Cloud، REST API، جدول البيانات، PDF، CSV، Json، Markdwon، أداة تقطيع إدراج كائن القائمة
 ---
  يشير REST API إلى أداة تقطيع الشرائح لكائن القائمة في ورقة عمل Excel.
 

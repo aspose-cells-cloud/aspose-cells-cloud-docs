@@ -3,6 +3,7 @@ title: Рассчитать формулу Cells
 type: docs
 url: /ru/calculate-cells-formula/
 weight: 90
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, формула расчета Cells
 ---
 Этот REST API указывает на вычисление `cells formula` в файле Excel.
 

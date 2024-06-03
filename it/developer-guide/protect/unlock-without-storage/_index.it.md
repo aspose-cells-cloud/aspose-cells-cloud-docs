@@ -8,6 +8,7 @@ aliases: [/unlock/without-storage/,/unlock/]
 keywords: Unlock Excel files
 description: Aspose.Cells Cloud REST API supporta lo sblocco dei file Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 70
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Sblocca
 ---
 Questo REST API indica i file `unlock` Excel.
 ## RSETAPI

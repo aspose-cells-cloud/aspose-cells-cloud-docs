@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/getworksheetmergedcells/
 description: الحصول على خلايا ورقة العمل المدمجة
+kwords: Excel، Office، جدول البيانات، Cloud REST API، GetWorksheetMergedCells
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetMergedCells" >}}

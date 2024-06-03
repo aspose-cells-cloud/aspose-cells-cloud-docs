@@ -8,6 +8,7 @@ aliases: [/move-excel-worksheets/]
 keywords: Move an Excel worksheet on an Excel workbook
 description: Aspose.Cells Cloud REST API, Excel çalışma sayfasının Excel çalışma kitabına taşınmasını destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 20
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel çalışma sayfasını taşıma
 ---
 Bu REST API, `move worksheet`'i gösterir.
  

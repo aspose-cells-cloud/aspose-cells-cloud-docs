@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postbatchunlock/
 description: فتح الملفات دفعة واحدة التي تستوفي شروط مطابقة محددة
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostBatchUnlock
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostBatchUnlock" >}}

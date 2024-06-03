@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/model/htmlsaveoptions/
 description: "Aspose.Cells Specifica del modello cloud: HtmlSaveOptions. Gestisci facilmente Excel e altri fogli di calcolo con funzionalità come apertura, generazione, modifica, divisione, unione, confronto e conversione"
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, HtmlSaveOptions
 weight: 50
 ---
 ## **htmlSaveOptions**
@@ -19,9 +20,9 @@ weight: 50
 | Opzioni immagine| Classe:ImageOrPrintOptions| VERO| Falso|||
 | Salva come file singolo| Booleano| VERO| Falso|| Indica se salvare l'html come file singolo. Il valore predefinito è falso.|
 | Esporta foglio di lavoro nascosto| Booleano| VERO| Falso|| Indica se salvare l'html come file singolo. Il valore predefinito è falso.|
-| EsportaGridLines| Booleano| VERO| Falso||Indica se esportare la griglia. Il valore predefinito è false.|
+| EsportaGridLines| Booleano| VERO| Falso|| Indica se esportare la griglia. Il valore predefinito è false.|
 | Preferenza presentazione| Booleano| VERO| Falso|| Indica se il file html o mht è la preferenza di presentazione. Il valore predefinito è false. Se desideri ottenere una presentazione più bella, imposta il valore su true.|
-| CellCssPrefisso| Corda| VERO| Falso|| Ottiene e imposta il prefisso del nome CSS, il valore predefinito è "".|
+| CellCssPrefisso| Corda| VERO| Falso||Ottiene e imposta il prefisso del nome CSS, il valore predefinito è "".|
 | TableCssId| Corda| VERO| Falso|| Ottiene e imposta il prefisso del tipo nome css come tr,col,td e così via, sono contenuti nell'elemento table che ha l'attributo specifico TableCssId. Il valore predefinito è "".|
 | IsFullPathLink| Booleano| VERO| Falso|| Indica se si utilizza il collegamento al percorso completo in sheet00x.htm, filelist.xml e tabstrip.htm. Il valore predefinito è falso.|
 | Esporta foglio di lavoro CSS separatamente| Booleano| VERO| Falso|| Indica se esportare il foglio di lavoro CSS separatamente. Il valore predefinito è false.|
@@ -56,7 +57,8 @@ weight: 50
 | CreaDirectory| Booleano| VERO| Falso|||
 | Abilita compressione HTTP| Booleano| VERO| Falso|||
 | AggiornaChartCache| Booleano| VERO| Falso|||
-|OrdinaNomi| Booleano| VERO| Falso|||
+| OrdinaNomi| Booleano| VERO| Falso|||
 | ValidateMergedAreas| Booleano| VERO| Falso|||
 
-**Nome del genitore** : (OpzioniSalva)[opzionisalva]
+**Nome del genitore** : [SalvaOpzioni](/specification/model/saveoptions)
+

@@ -7,6 +7,7 @@ url: /tr/metadata/delete/
 keywords: Deleting metadata from Excel files
 description: Aspose.Cells Cloud REST API, excel dosyalarından meta verilerin silinmesini destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 55
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel dosyalarındaki meta verileri silin.
 ---
 Bu REST API, `metadata`'in birden fazla Excel dosyasından silineceğini belirtir.
 

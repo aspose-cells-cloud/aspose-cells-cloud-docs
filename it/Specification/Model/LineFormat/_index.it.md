@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/model/lineformat/
 description: "Aspose.Cells Specifica del modello cloud: LineFormat. Gestisci facilmente Excel e altri fogli di calcolo con funzionalità come apertura, generazione, modifica, divisione, unione, confronto e conversione"
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, LineFormat
 weight: 50
 ---
 ## **lineFormat**
 
- 
+ Rappresenta tutta l'impostazione della linea.
 
 | Nome della proprietà| Tipo di proprietà| Nullabile| Sola lettura| Valore di default| Descrizione|
 |:- |:- |:- |:- |:- |:- |
@@ -30,4 +31,5 @@ weight: 50
 | Riempimento gradiente| Classe: riempimento gradiente| VERO| Falso|||
 | Datiimmagine| Corda| VERO| Falso|||
 
-**Nome del genitore** : (Formato di riempimento)[formato di riempimento]
+**Nome del genitore** : [FillFormat](/specification/model/fillformat)
+

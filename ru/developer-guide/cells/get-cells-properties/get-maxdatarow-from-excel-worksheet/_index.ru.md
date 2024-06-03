@@ -3,6 +3,7 @@ title: Получите MaxDataRow из рабочего листа Excel.
 type: docs
 url: /ru/get-maxdatarow-from-excel-worksheet/
 weight: 50
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, получить MaxDataRow из рабочего листа Excel
 ---
 Этот REST API указывает, что показывает получение `maxdatarow` в файле Excel, когда параметр `cellOrMethodName` равен `maxdatarow`.
 

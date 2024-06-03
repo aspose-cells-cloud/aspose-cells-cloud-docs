@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/model/formulaformatcondition/
 description: "Aspose.Cells Specifica del modello cloud: FormulaFormatCondition. Gestisci facilmente Excel e altri fogli di calcolo con funzionalità come apertura, generazione, modifica, divisione, unione, confronto e conversione"
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, FormulaFormatCondition
 weight: 50
 ---
 ## **formulaFormatCondizione**

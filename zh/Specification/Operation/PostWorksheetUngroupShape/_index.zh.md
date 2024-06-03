@@ -1,27 +1,28 @@
 ﻿---
-title: 后工作表取消组合形状
+title: PostWorksheet取消分组形状
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/postworksheetungroupshape/
-description: 取消工作表中形状的分组
+description: 取消工作表中的形状组合
+kwords: Excel, Office, 电子表格, Cloud REST API, PostWorksheetUngroupShape
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetUngroupShape" >}}
 {{< blocks/products/cells/docs-title titlemsg="Ungroup shapes in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/shapes/{shapeindex}/ungroup,POST,取消工作表中的形状分组。,<a href=\'https://apireference.aspose.cloud/cells/#/Shapes /PostWorksheetUngroupShape\'>PostWorksheetUngroupShape</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/shapes/{shapeindex}/ungroup,POST,取消工作表中的形状分组。,<a href=\'https://apireference.aspose.cloud/cells/#/Shapes/PostWorksheetUngroupShape\'>PostWorksheetUngroupShape</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="参数名称、类型、描述" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="名称，字符串，文件名。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,字符串,工作表名称。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="形状指数，整数，" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="name，string，文件名。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName，string，工作表名称。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="形状索引，整数，" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="文件夹，字符串，文件所在的文件夹。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,文件所在的存储名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName，string，文件所在的存储名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/ShapesController/PostWorksheetUngroupShape\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

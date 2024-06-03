@@ -1,27 +1,28 @@
 ﻿---
-title: 后工作簿文本替换
+title: PostWorkbookTextReplac
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/postworkbooktextreplace/
 description: 替换工作簿中的文本
+kwords: Excel，Office，电子表格，云 REST API，PostWorkbookTextReplace
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookTextReplace" >}}
 {{< blocks/products/cells/docs-title titlemsg="Replace text in the workbook." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/replaceText,POST,替换工作簿中的文本。,<a href=\'https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookTextReplace\'>PostWorkbookTextReplace</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="参数名称、类型、描述" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="名称，字符串，文件名。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="name，string，文件名。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="oldValue，字符串，旧值。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="newValue，字符串，新值。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="oldValue，string，旧值。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="newValue，string，新值。" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="文件夹，字符串，文件所在的文件夹。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,文件所在的存储名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName，string，文件所在的存储名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/WorkbookController/PostWorkbookTextReplace\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/postworksheetlistobjectinsertslicer/
 description: Insertar segmentación para objeto de lista
+kwords: Excel, Office, hoja de cálculo, nube REST API, PostWorksheetListObjectInsertSlicer
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetListObjectInsertSlicer" >}}
@@ -20,7 +21,7 @@ weight: 50
      {{< blocks/products/cells/docs-Parameter-content columns="listObjectIndex, entero, índice de objetos de lista." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Nombre del parámetro, tipo, descripción" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns=" columnIndex, entero, el índice de ListColumn en ListObject.ListColumns" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="columnIndex, entero, el índice de ListColumn en ListObject.ListColumns" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns=" destCellName, cadena, la celda en la esquina superior izquierda del rango de segmentación." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="carpeta, cadena, la carpeta donde se encuentra el archivo." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="nombre de almacenamiento, cadena, el nombre del almacenamiento donde se encuentra el archivo." >}} 

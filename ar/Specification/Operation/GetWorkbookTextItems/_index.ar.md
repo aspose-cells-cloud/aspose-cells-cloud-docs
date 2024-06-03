@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/getworkbooktextitems/
 description: استرداد العناصر النصية في المصنف
+kwords: Excel، Office، جدول البيانات، Cloud REST API، GetWorkbookTextItems
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorkbookTextItems" >}}

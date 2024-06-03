@@ -7,6 +7,7 @@ aliases: [/working-with-rows/]
 keywords: Working with rows on an Excel file
 description: Aspose.Cells Prise en charge de Cloud REST API pour l'utilisation de lignes sur un fichier Excel. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 100
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, lignes
 ---
 ## Travailler avec des lignes sur un fichier Excel.
 

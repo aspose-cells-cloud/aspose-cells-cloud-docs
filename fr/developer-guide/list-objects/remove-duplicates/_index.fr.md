@@ -7,6 +7,7 @@ keywords: list object(table) remove duplicates
 url: /fr/list-objects/remove-duplicates/
 description:  Supprimez les doublons sur l’objet de liste.
 weight: 20
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, objet liste supprimer les doublons
 ---
  Ce REST API indique la suppression des doublons sur l'objet de liste.
 
@@ -21,7 +22,7 @@ POST http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/listobjec
 
  Les paramètres de la requête sont :
 
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP| Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody| Description|
 |:- |:- |:- |:- |
 |nom|Chaîne|Chemin||
 |Nom de la feuille|Chaîne|Chemin||

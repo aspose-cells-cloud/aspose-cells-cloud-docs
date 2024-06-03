@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postupdateworksheetzoom/
 description: Обновите процент масштабирования на листе. Должно быть от 10 до 400.
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostUpdateWorksheetZoom
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostUpdateWorksheetZoom" >}}

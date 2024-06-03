@@ -1,17 +1,18 @@
 ﻿---
-title: 获取 Excel 工作表中的列表对象
+title: 在 Excel 工作表中获取列表对象
 second_title: Aspose.Cells Cloud Documen
-linktitle: 锗
+linktitle: 葛
 type: docs
 url: /zh/list-objects/get/
 aliases: [/get-a-list-object-or-table-inside-the-worksheet/,/tables/get/]
 keywords: Get a list object(table) into an Excel worksheet
-description: Aspose.Cells Cloud REST API 支持将列表对象（表）获取到 Excel 工作表中。 SDK支持多种开发语言。它们包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 swift
+description: Aspose.Cells Cloud REST API 支持将列表对象（表）放入 Excel 工作表中。SDK 支持多种开发语言。其中包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 swift
 weight: 9
+kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdwon、在 Excel 工作表中获取列表对象
 ---
-此 REST API 向 `get` 指示按索引列出对象信息，或将 `list object` 转换为 Excel 工作表中的不同格式文件。
+此 REST API 通过索引向 `get` 指示列表对象信息或将 `list object` 转换为 Excel 工作表中的不同格式文件。
 
-## RSET API
+## 重置 API
  
 ```bash
  
@@ -24,14 +25,14 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects
 |:- |:- |:- |:- |
 |姓名|细绳|小路|文档名称。|
 |工作表名称|细绳|小路|工作表名称。|
-|列表对象索引|整数|小路|列出对象索引。|
+|列表对象索引|整数|小路|列表对象索引。|
 |格式|细绳|询问|导出格式。|
 |文件夹|细绳|询问|文档的文件夹。|
 |存储名称|细绳|询问|存储名称。|
  
-这[开放API规范](https://apireference.aspose.cloud/cells/#/ListObjects/GetWorksheetListObject)定义了一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/ListObjects/GetWorksheetListObject)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
  
-您可以使用cURL命令行工具轻松访问Aspose.Cells Web服务。以下示例展示如何使用 cURL 呼叫云端 API。
+您可以使用 cURL 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例显示如何使用 cURL 调用云 API。
  
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
  
@@ -158,13 +159,13 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listobj
  
 {{< /tabs >}}
  
-## 云SDK系列
+## Cloud SDK 系列
  
-使用 SDK 是加快开发速度的最佳方式。 SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)有关 Aspose.Cells Cloud SDK 的完整列表。
+使用 SDK 是加快开发速度的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)获得 Aspose.Cells Cloud SDKs 的完整列表。
  
 以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
  
-此 REST API 将 Excel `listobject` 对象获取到不同格式的文件。
+此 REST API 将 excel `listobject` 对象转换为不同格式的文件。
 
 
 {{< tabs tabTotal="9" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" tabName9="Python" >}}

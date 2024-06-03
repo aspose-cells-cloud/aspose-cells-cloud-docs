@@ -4,18 +4,19 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/postimport/
 description: Importe datos a un archivo Excel y genere archivos de salida en varios formatos
+kwords: Excel, Office, Hoja de cálculo, Nube REST API, PostImport
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostImport" >}}
 {{< blocks/products/cells/docs-title titlemsg="Import data into an Excel file and generate output files in various formats." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API, método Http, descripción, referencia API" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/import,POST,Importar datos a un archivo Excel y generar archivos de salida en varios formatos.,<a href=\'https://apireference.aspose.cloud/cells/#/LightCells/PostImport\'>PostImport</a >" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/import,POST,Importar datos en un archivo Excel y generar archivos de salida en varios formatos.,<a href=\'https://apireference.aspose.cloud/cells/#/LightCells/PostImport\'>PostImport</a >" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Nombre del parámetro, tipo, descripción" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="outFormat,cadena,El formato del archivo de datos de salida.(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF /BMP/MD[Rebaja]/Números)" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="OUTFORMAT, String, el formato de archivo de datos de salida. (CSV/XLS/HTML/MHTML/ODS/PDF/xml/txt/TIFF/xlsb/xlsx/xltm/xltx/XPS/0761414448 GIF/EMF /BMP/MD[Rebaja]/Números)" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="contraseña,cadena,La contraseña necesaria para abrir un archivo Excel." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction,boolean,Si verifica la restricción del archivo Excel cuando el usuario modifica los objetos relacionados con las celdas." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="región, cadena, la configuración regional del libro de trabajo." >}} 

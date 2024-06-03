@@ -6,6 +6,7 @@ aliases: [/get-comment-from-a-worksheet/]
 keywords: REST API, spreadsheets, excel, get commen
 description: "Cells.Cloud API per Excel opera: ottieni commento"
 weight: 10
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Ottieni
 ---
 Questo REST API indica Ottieni commento sul foglio di lavoro in base al nome della cella.
  

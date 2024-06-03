@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/putworksheetcellsrange/
 description: Вставьте диапазон ячеек и сдвиньте существующие ячейки в соответствии с указанным параметром сдвига.
+kwords: Excel, Office, электронная таблица, Cloud REST API, PutWorksheetCellsRange
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetCellsRange" >}}

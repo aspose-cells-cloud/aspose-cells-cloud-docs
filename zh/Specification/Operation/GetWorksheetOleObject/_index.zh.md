@@ -1,28 +1,29 @@
 ﻿---
-title: 获取工作表OleObjec
+title: 获取工作表Ole对象
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/getworksheetoleobject/
 description: 检索工作表中指定格式的 OLE 对象
+kwords: Excel，Office，电子表格，云 REST API，GetWorksheetOleObject
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetOleObject" >}}
 {{< blocks/products/cells/docs-title titlemsg="Retrieve the OLE object in a specified format in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/oleobjects/{objectNumber},GET,检索工作表中指定格式的OLE对象。,<a href=\'https://apireference.aspose.cloud/cells /#/OleObjects/GetWorksheetOleObject\'>GetWorksheetOleObject</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/oleobjects/{objectNumber},GET,检索工作表中指定格式的 OLE 对象。,<a href=\'https://apireference.aspose.cloud/cells/#/OleObjects/GetWorksheetOleObject\'>GetWorksheetOleObject</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="参数名称、类型、描述" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="名称，字符串，文件名。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,字符串,工作表名称。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="objectNumber,integer,对象编号。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="name，string，文件名。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName，string，工作表名称。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="objectNumber，整数，对象编号。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="格式，字符串，对象转换格式(PNG/TIFF/JPEG/GIF/EMF/BMP)。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="格式，字符串，对象转换格式（PNG/TIFF/JPEG/GIF/EMF/BMP）。" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="文件夹，字符串，文件所在的文件夹。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,文件所在的存储名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName，string，文件所在的存储名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/OleObjectsController/GetWorksheetOleObject\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

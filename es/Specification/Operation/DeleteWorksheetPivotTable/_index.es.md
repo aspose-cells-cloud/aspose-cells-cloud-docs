@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/deleteworksheetpivottable/
 description: Eliminar tabla dinámica por índice en la hoja de trabajo
+kwords: Excel, Office, Hoja de cálculo, Cloud REST API, Eliminar tabla dinámica de hoja de trabajo
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetPivotTable" >}}

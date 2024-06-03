@@ -4,6 +4,7 @@ type: docs
 url: /es/charts/legend/show/
 aliases: [/show-chart-legend-in-a-worksheet/]
 weight: 100
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Mostrar leyenda del gráfico en una hoja de trabajo
 ---
 Este REST API indica mostrar leyenda en el gráfico
  

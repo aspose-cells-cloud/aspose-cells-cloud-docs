@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/getchartsecondcategoryaxis/
 description: Recupera l'asse della seconda categoria del grafico nel file char
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, GetChartSecondCategoryAxis
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetChartSecondCategoryAxis" >}}

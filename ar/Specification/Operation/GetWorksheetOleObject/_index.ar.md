@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/getworksheetoleobject/
 description: استرداد كائن OLE بتنسيق محدد في ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، GetWorksheetOleObject
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetOleObject" >}}

@@ -8,6 +8,7 @@ aliases: [/update-a-specific-picture-from-excel-workshee/]
 keywords: Update a picture in an Excel file
 description: Aspose.Cells Cloud REST API supporta l'aggiornamento di un'immagine in un file Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 70
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Aggiorna immagine in un file Excel
 ---
 Questo REST API indica l'immagine `update` per indice delle immagini per un foglio di lavoro Excel.
  

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/postworksheetlistcolumnstotal/
 description: Actualizar el total de columnas de la lista en la tabla
+kwords: Excel, Office, hoja de cálculo, nube REST API, PostWorksheetListColumnsTotal
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetListColumnsTotal" >}}

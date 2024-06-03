@@ -8,6 +8,7 @@ aliases: [/copy-columns-in-excel-worksheet/,/copy-columns-in-an-excel-worksheet/
 keywords: Copy column on an Excel workshee
 description: Aspose.Cells Cloud REST API prend en charge la copie d'une colonne sur une feuille de calcul Excel. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 30
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdwon, Copier des colonnes sur une feuille de calcul Excel
 ---
 Ce REST API copie `columns` dans une feuille de calcul Excel.
 
@@ -20,19 +21,19 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/colu
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
-| nom| chaîne| chemin|Le nom du classeur.|
+| nom| chaîne| chemin| Le nom du classeur.|
 | Nom de la feuille| chaîne| chemin| Le nom de la feuille de calcul.|
 | sourceColumnIndex| entier| requête| Index de la colonne source|
-|destinationColumnIndex| entier| requête| Index de la colonne de destination|
+| destinationColumnIndex| entier| requête| Index de la colonne de destination|
 | numéro de colonne| entier| requête| Le numéro de colonne copié|
 | feuille de travail| chaîne| requête||
 | dossier| chaîne| requête| Le dossier de documents.|
 
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/PostCopyWorksheetColumns) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement depuis un navigateur Web.
 
- Vous pouvez utiliser**cURL** outil de ligne de commande pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment passer des appels vers Cloud API avec cURL.
+ Vous pouvez utiliser**cURL**outil de ligne de commande pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment passer des appels vers Cloud API avec cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 

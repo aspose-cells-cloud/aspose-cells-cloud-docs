@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/deleteverticalpagebreaks/
 description: Удаление вертикальных разрывов страниц на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, DeleteVerticalPageBreaks
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteVerticalPageBreaks" >}}

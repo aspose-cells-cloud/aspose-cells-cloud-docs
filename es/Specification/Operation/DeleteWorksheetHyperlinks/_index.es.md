@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/deleteworksheethyperlinks/
 description: Eliminar todos los hipervínculos en la hoja de trabajo
+kwords: Excel, Office, Hoja de cálculo, Cloud REST API, Eliminar hoja de trabajo Hipervínculos
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetHyperlinks" >}}

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/deletemetadata/
 description: حذف خصائص وثيقة الخلايا في ملف Excel، وحفظها بتنسيقات مختلفة
+kwords: Excel، Office، جدول البيانات، Cloud REST API، حذف البيانات الوصفية
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteMetadata" >}}

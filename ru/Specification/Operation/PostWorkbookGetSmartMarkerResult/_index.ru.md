@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postworkbookgetsmartmarkerresult/
 description: Интеллектуальная обработка маркеров
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostWorkbookGetSmartMarkerResult
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookGetSmartMarkerResult" >}}

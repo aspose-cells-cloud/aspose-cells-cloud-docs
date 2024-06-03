@@ -1,29 +1,30 @@
 ﻿---
-title: PutConvertWorkboo
+title: KonvertierenArbeitsboo
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/putconvertworkbook/
-description: Konvertieren Sie die Arbeitsmappe aus dem angeforderten Inhalt in Dateien in verschiedenen Formaten
+description: Konvertieren Sie die Arbeitsmappe mit den gewünschten Inhalten in Dateien unterschiedlicher Formate
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PutConvertWorkbook
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutConvertWorkbook" >}}
 {{< blocks/products/cells/docs-title titlemsg="Convert the workbook from the requested content into files in different formats." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/convert,PUT,Konvertieren Sie die Arbeitsmappe aus dem angeforderten Inhalt in Dateien in verschiedenen Formaten.,<a href=\'https://apireference.aspose.cloud/cells/#/Conversion/PutConvertWorkbook\'>PutConvertWorkbook</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/convert,PUT,Konvertiert die Arbeitsmappe vom angeforderten Inhalt in Dateien in verschiedenen Formaten.,<a href=\'https://apireference.aspose.cloud/cells/#/Conversion/PutConvertWorkbook\'>PutConvertWorkbook</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="format,string,Das zu konvertierende Format (CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF /BMP /MD[Markdown]/Numbers)." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="Passwort, Zeichenfolge, Das zum Öffnen einer Excel-Datei erforderliche Passwort." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="outPath,string,Path um das Ergebnis zu speichern. Wenn es sich um eine einzelne Datei handelt, sollte der „outPath“ sowohl den Dateinamen als auch die Erweiterung umfassen. Bei mehreren Dateien sollte der „outPath“ nur den Ordner enthalten." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction,boolean,Gibt an, ob die Einschränkung der Excel-Datei überprüft wird, wenn der Benutzer zellenbezogene Objekte ändert." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns=" streamFormat,string,Das Format des Eingabedatei-Streams." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="region,string,Die regionalen Einstellungen für die Arbeitsmappe." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="pageWideFitOnPerSheet, boolean, Die Seitenbreite, die in das Arbeitsblatt passt." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="pageTallFitOnPerSheet, boolean, Die Seitengröße, die in das Arbeitsblatt passt." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Format, Zeichenfolge, Das zu konvertierende Format (CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Kennwort, Zeichenfolge, Das zum Öffnen einer Excel-Datei erforderliche Kennwort." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="outPath, string, Path zum Speichern des Ergebnisses. Wenn es sich um eine einzelne Datei handelt, sollte der „outPath“ sowohl den Dateinamen als auch die Erweiterung umfassen. Bei mehreren Dateien sollte der „outPath“ nur den Ordner umfassen." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction, boolean, ob die Einschränkung der Excel-Datei überprüft wird, wenn der Benutzer zellenbezogene Objekte ändert." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns=" streamFormat, Zeichenfolge, Das Format des Eingabedateistreams." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Region, Zeichenfolge, Die regionalen Einstellungen für die Arbeitsmappe." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="pageWideFitOnPerSheet, Boolean, Die seitenbreite Anpassung an das Arbeitsblatt." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="pageTallFitOnPerSheet, Boolesch, Die Seitenhöhe wird auf das Arbeitsblatt angepasst." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/ConversionController/PutConvertWorkbook\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

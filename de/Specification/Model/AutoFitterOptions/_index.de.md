@@ -3,21 +3,22 @@ title: AutoFitterOption
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/model/autofitteroptions/
-description: "Aspose.Cells Cloud-Modellspezifikation: AutoFitterOptions. Bearbeiten Sie mühelos Excel und andere Tabellenkalkulationsdokumente mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+description: "Aspose.Cells Cloud-Modellspezifikation: AutoFitterOptions. Müheloses Bearbeiten von Excel und anderen Tabellenkalkulationsdokumenten mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, AutoFitterOptions
 weight: 50
 ---
 ## **autoFitterOptions**
 
- 
+ Stellt alle Auto-Fitter-Optionen dar.
 
-| Name des Anwesens| Art der Immobilie| Nullbar| Schreibgeschützt| Standardwert| Beschreibung|
+| Name des Anwesens| Art der Immobilie| Nullwerte zulassen| Schreibgeschützt| Standardwert| Beschreibung|
 |:- |:- |:- |:- |:- |:- |
-| AutoFitMergedCellsType| Zeichenfolge| WAHR| FALSCH|| Ruft den Typ der automatischen Anpassung der Zeilenhöhe zusammengeführter Zellen ab und legt diesen fest.|
+| AutoFitMergedCellsType| Zeichenfolge| WAHR| FALSCH|| Ruft den Typ der automatischen Anpassung der Zeilenhöhe verbundener Zellen ab und legt ihn fest.|
 | IgnorierenVersteckt| Boolescher Wert| WAHR| FALSCH|| Ignoriert die ausgeblendeten Zeilen/Spalten.|
-| NurAuto| Boolescher Wert| WAHR| FALSCH|| Gibt an, ob nur die Zeilen passen, deren Höhe nicht angepasst ist.|
-| DefaultEditLanguage| Zeichenfolge| WAHR| FALSCH|| Ruft die Standardbearbeitungssprache ab oder legt diese fest.|
-| MaxRowHeight| Schwebend| WAHR| FALSCH|| Ruft die maximale Zeilenhöhe (in Punkteinheiten) beim automatischen Anpassen von Zeilen ab und legt diese fest.|
-| AutoFitWrappedTextType| Zeichenfolge| WAHR| FALSCH||Ruft den Typ des automatisch angepassten umbrochenen Texts ab und legt ihn fest.|
+| NurAuto| Boolescher Wert| WAHR| FALSCH|| Gibt an, ob nur die Zeilen passen, deren Höhe nicht benutzerdefiniert ist.|
+| Standardsprache bearbeiten| Zeichenfolge| WAHR| FALSCH|| Ruft die Standardbearbeitungssprache ab oder legt sie fest.|
+| MaxZeilenhöhe| Schwimmend| WAHR| FALSCH|| Ruft die maximale Zeilenhöhe (in Punkteinheiten) beim automatischen Anpassen von Zeilen ab und legt sie fest.|
+|AutoFitWrappedTextType| Zeichenfolge| WAHR| FALSCH|| Ruft den Typ der automatisch angepassten umbrochenen Texte ab und legt ihn fest.|
 | FormatStrategie| Zeichenfolge| WAHR| FALSCH|| Ruft die formatierte Strategie ab und legt sie fest.|
-| Zum Rendern| Boolescher Wert| WAHR| FALSCH|| Gibt an, ob es für den Rendering-Zweck geeignet ist.|
+| Für Rendering| Boolescher Wert| WAHR| FALSCH|| Gibt an, ob es für Renderzwecke geeignet ist.|
 

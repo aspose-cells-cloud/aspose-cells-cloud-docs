@@ -2,157 +2,160 @@
 title: Modell
 second_title: Aspose.Cells Cloud Documen
 type: docs
+kwords: Excel, Office, kalkylblad, moln REST API, datamodell
 weight: 50
 ---
 - [ObjectExistsExtensions](objectexistsextensions)  :   
 - [FileVersion](fileversion)  :   
 - [StorageFile](storagefile) : Fil- eller mappinformation
 - [GoogleDriveStorageFile](googledrivestoragefile)  :   
-- [Över medel](aboveaverage) Beskriv AboveAverage-regeln för villkorlig formatering. Denna regel för villkorlig formatering markerar celler som ligger över eller under genomsnittet för alla värden i intervallet.
+- [Över medel](aboveaverage) : Beskriv AboveAverage-regeln för villkorlig formatering. Denna regel för villkorlig formatering markerar celler som ligger över eller under genomsnittet för alla värden i intervallet.
 - [AbstractCalculation Engine](abstractcalculationengine) : Representerar användarens anpassade beräkningsmotor för att utöka standardberäkningsmotorn Aspose.Cells.
 - [AbstractCalculationMonitor](abstractcalculationmonitor) : Övervaka för användaren för att spåra framstegen i formelberäkningen.
-- [AutoFilter](autofilter)  :   
-- [AutoFitterOptions](autofitteroptions)  :   
-- [Gräns](border)  :   
-- [Beräkningsalternativ](calculationoptions)  :   
-- [Cell](cell)  :   
-- [CellArea](cellarea)  :   
-- [Cells](cells)  :   
+- [AutoFilter](autofilter) : Representerar autofiltrering för det angivna kalkylbladet.
+- [AutoFitterOptions](autofitteroptions) : Representerar alla alternativ för automatisk montering.
+- [Gräns](border) : Kapslar in objektet som representerar cellkanten.
+- [Beräkningsalternativ](calculationoptions) : Representerar alternativ för beräkning.
+- [Cell](cell) : Kapslar in objektet som representerar en enskild arbetsbokscell.
+- [CellArea](cellarea) : Representerar ett område av celler.
+- [Cells](cells) : Kapslar in en samling cellrelevanta objekt, som Aspose.Cells.Cell, Aspose.Cells.Row, ...etc.
 - [CellsCloudFileInfo](cellscloudfileinfo) : Cells Moln Filinformationsbeskrivning.
-- [CellsColor](cellscolor)  :   
+- [CellsColor](cellscolor) : Representerar alla typer av färg.
 - [CellsDocumentProperties](cellsdocumentproperties) : Excel fastigheter
 - [CellsDocumentProperty](cellsdocumentproperty) : Cells dokumentegendom.
-- [Färg](color) : Färg.
+- [Färg](color) Färg.
 - [Färgfilter](colorfilter) : Färgfilter.
 - [Färgskala](colorscale) : Beskriv ColorScales villkorliga formateringsregel. Denna villkorliga formateringsregel skapar en graderad färgskala på cellerna.
-- [Kolumn](column)  :   
-- [Kolumner](columns)  :   
-- [Kommentar](comment)  :   
-- [Kommentarer](comments)  :   
+- [Kolumn](column) : Representerar en enda kolumn i ett kalkylblad.
+- [Kolumner](columns) : Kolumner
+- [Kommentar](comment) : Kapslar in objektet som representerar en cellkommentar.
+- [Kommentarer](comments) : Kapslar in en samling objekt.
 - [Villkorlig formatering](conditionalformatting)  :   
-- [ConditionalFormattingIcon](conditionalformattingicon)  :   
-- [Villkorsformat](conditionalformattings)  :   
-- [ConditionalFormattingValue](conditionalformattingvalue)  :   
+- [ConditionalFormattingIcon](conditionalformattingicon) : Representerar den anpassade ikonen för regeln för villkorlig formatering.
+- [Villkorsformat](conditionalformattings) : Kapslar in en samling objekt.
+- [ConditionalFormattingValue](conditionalformattingvalue) : Beskriver värdena för interpolationspunkterna i en gradientskala, dataBar eller iconSet.
 - [Kopieringsalternativ](copyoptions) : Representerar kopieringsalternativen.
 - [CriteriaMultipleFilter](criteriamultiplefilter)  :   
-- [CustomFilter](customfilter)  :   
+- [CustomFilter](customfilter) : Representerar det anpassade filtret.
 - [DataBar](databar) : Beskriv DataBars villkorliga formateringsregel. Den här villkorliga formateringsregeln visar ett graderat datafält i cellintervallet.
-- [DataBarBorder](databarborder)  :   
-- [Datarensning](datacleansing) : Datarensning
-- [DataColumnFillValue](datacolumnfillvalue)  :   
-- [DataFill](datafill)  :   
-- [DataFillValue](datafillvalue)  :   
+- [DataBarBorder](databarborder) : Representerar gränsen för datafälten som anges av en villkorlig formateringsregel.
+- [Datarensning](datacleansing) : Representerar datarensning.
+- [DataColumnFillValue](datacolumnfillvalue) : Representerar att datakolumnen är fylld med det angivna värdet.
+- [DataFill](datafill) : Representerar datafyllning.
+- [DataFillValue](datafillvalue) : Representerar att data fylls i med det angivna värdet.
+- [DataItem](dataitem) : Representerar dataobjekt.
+- [DataItemType](dataitemtype) : Representerar dataobjektstyp.
 - [DataSorter](datasorter) : Sammanfattande beskrivning för DataSorter.
 - [DataSorterKey](datasorterkey) : Representerar nyckeln för datasorteraren.
-- [DateTimeGroupItem](datetimegroupitem)  :   
-- [DeduplicationRegion](deduplicationregion)  :   
-- [DynamicFilter](dynamicfilter)  :   
-- [Filinformation](fileinfo) : Filinformation
+- [Datakälla](datasource) : Representerar datakälla.
+- [DataSourceType](datasourcetype) : Representerar datakällans typ.
+- [DateTimeGroupItem](datetimegroupitem) : Representerar datetimes gruppinställning.
+- [DeduplicationRegion](deduplicationregion) : Representerar datadedupliceringsregion.
+- [DynamicFilter](dynamicfilter) : Representerar det dynamiska filtret.
+- [Filinformation](fileinfo) : Representerar filinformation.
+- [FileSource](filesource)  :   
+- [FileSourceType](filesourcetype)  :   
 - [FilerResultat](filesresult)  :   
-- [Filterkolumn](filtercolumn)  :   
-- [Font](font)  :   
-- [FontSetting](fontsetting)  :   
-- [Formatvillkor](formatcondition)  :   
+- [Filterkolumn](filtercolumn) : Representerar ett filter för en enda kolumn. Filterobjektet är en medlem av filtersamlingen
+- [Font](font) : Kapslar in teckensnittsobjektet som används i ett kalkylblad.
+- [FontSetting](fontsetting) : Representerar ett teckenintervall i celltexten.
+- [Formatvillkor](formatcondition) : Representerar villkorligt formateringsvillkor.
 - [FormelFormatCondition](formulaformatcondition)  :   
 - [Formelinställningar](formulasettings) : Inställningar av formler och beräkning.
 - [Globaliseringsinställningar](globalizationsettings) : Representerar globaliseringsinställningarna.
-- [HorizontalPageBreak](horizontalpagebreak)  :   
-- [HorizontalPageBreaks](horizontalpagebreaks)  :   
-- [Hyperlänk](hyperlink)  :   
-- [Hyperlänkar](hyperlinks)  :   
-- [IconFilter](iconfilter)  :   
-- [IconSet](iconset) Beskriv IconSets villkorliga formateringsregel. Denna regel för villkorlig formatering tillämpar ikoner på celler enligt deras värden.
+- [HorizontalPageBreak](horizontalpagebreak) : Kapslar in objektet som representerar en horisontell sidbrytning.
+- [HorizontalPageBreaks](horizontalpagebreaks) : Kapslar in en samling objekt.
+- [Hyperlänk](hyperlink) : Kapslar in objektet som representerar en hyperlänk.
+- [Hyperlänkar](hyperlinks) : Kapslar in en samling objekt.
+- [IconFilter](iconfilter) : Representerar ikonfilter.
+- [IconSet](iconset) : Beskriv IconSets villkorliga formateringsregel. Denna regel för villkorlig formatering tillämpar ikoner på celler enligt deras värden.
 - [Länk](link)  :   
 - [LinkElement](linkelement)  :   
-- [LoadOptions](loadoptions)  :   
+- [LoadOptions](loadoptions) : Representerar alternativen för att ladda filen.
 - [MergedCell](mergedcell)  :   
 - [MergedCells](mergedcells)  :   
 - [MultipleFilter](multiplefilter)  :   
-- [Flera filter](multiplefilters)  :   
-- [namn](name)  :   
-- [Namn](names)  :   
+- [Flera filter](multiplefilters) : Representerar samlingen med flera filter.
+- [namn](name) : Representerar ett definierat namn för ett cellintervall.
+- [Namn](names) : Representerar en samling av alla objekt i kalkylarket.
 - [NegativeBarFormat](negativebarformat) : Representerar färginställningarna för datafälten för negativa värden som definieras av en villkorlig formateringsregel för datafält.
 - [Sidavsnitt](pagesection)  :   
-- [Utskriftsformat](pagesetup)  :   
+- [Utskriftsformat](pagesetup) : Excel utskriftssida inställning
 - [Klistra in Alternativ](pasteoptions) : Representerar specialalternativen för klistra in.
-- [Pdf Säkerhetsalternativ](pdfsecurityoptions)  :   
+- [Pdf Säkerhetsalternativ](pdfsecurityoptions) : Alternativ för kryptering och åtkomstbehörigheter för ett PDF-dokument. PDF/A tillåter inte säkerhetsinställningar.
 - [Skydd](protection) : Representerar de olika typerna av skyddsalternativ som är tillgängliga för ett kalkylblad.
 - [ProtectSheetParameter](protectsheetparameter)  :   
-- [Frågetabell](querytable) : Representerar frågetabellinformation.
-- [Räckvidd](range)  :   
-- [Avstånd](ranges)  :   
-- [Rad](row)  :   
-- [Rader](rows)  :   
-- [Spara Resultat](saveresult)  :   
+- [Räckvidd](range) Kapslar in objektet som representerar ett cellintervall i ett kalkylblad.
+- [Avstånd](ranges) : Kapslar in en samling objekt.
+- [Rad](row) : Representerar en enda rad i ett kalkylblad.
+- [Rader](rows) : Samlar in objekten som representerar de enskilda raderna i ett kalkylblad.
+- [Spara Resultat](saveresult) : Representerar spara resultat.
 - [Paginerade Sparalternativ](paginatedsaveoptions) : Representerar alternativen för paginering.
-- [SingleValue](singlevalue)  :   
-- [SortKey](sortkey)  :   
-- [SplitResult](splitresult)  :   
-- [SplitResultDocument](splitresultdocument)  :   
-- [Stil](style)  :   
-- [StyleFormatCondition](styleformatcondition)  :   
-- [Stilar](styles)  :   
-- [TextFormatCondition](textformatcondition)  :   
-- [TextItem](textitem)  :   
-- [TextItems](textitems)  :   
-- [Textalternativ](textoptions)  :   
-- [Temafärg](themecolor)  :   
-- [TimePeriodFormatCondition](timeperiodformatcondition)  :   
-- [Topp 10](top10) Beskriv Top10-regeln för villkorlig formatering. Denna regel för villkorlig formatering markerar celler vars värden hamnar i den övre N eller nedre N-parentesen, enligt vad som anges.
-- [Top10 Filter](top10filter)  :   
-- [Godkännande](validation)  :   
-- [Valideringar](validations)  :   
-- [VerticalPageBreak](verticalpagebreak)  :   
-- [VerticalPageBreaks](verticalpagebreaks)  :   
-- [Arbetsbok](workbook)  :   
-- [Arbetsbok Inställningar](workbooksettings)  :   
-- [Arbetsblad](worksheet)  :   
-- [Arbetsblad](worksheets)  :   
+- [SingleValue](singlevalue) : Representerar ett enda värde.
+- [SortKey](sortkey) : Representerar sorteringsnyckel.
+- [SplitResult](splitresult) : Representerar resultatet av fildelningen.
+- [Stil](style) : Representerar visningsstil för Excel-dokument, som typsnitt, färg, justering, kant, etc. Stilobjektet innehåller alla stilattribut (teckensnitt, talformat, justering och så vidare) som egenskaper.
+- [StyleFormatCondition](styleformatcondition) : Representerar stilformatsvillkor.
+- [Stilar](styles) : Representerar insamling av datastil.
+- [TextFormatCondition](textformatcondition) : Representerar textformatsvillkor.
+- [TextItem](textitem) : Representerar textobjekt.
+- [TextItems](textitems) Representerar samling av textobjekt.
+- [Textalternativ](textoptions) : Representerar textalternativen.
+- [Temafärg](themecolor) : Representerar en temafärg.
+- [TimePeriodFormatCondition](timeperiodformatcondition) : Representerar tidsperiodens formattillstånd.
+- [Topp 10](top10) : Beskriv Top10-regeln för villkorlig formatering. Denna regel för villkorlig formatering markerar celler vars värden hamnar i den övre N eller nedre N-parentesen, enligt vad som anges.
+- [Top10 Filter](top10filter) : Representerar topp 10-filtret.
+- [Godkännande](validation) : Representerar datavalidering.inställningar.
+- [Valideringar](validations) : Representerar insamling av datavalidering.
+- [VerticalPageBreak](verticalpagebreak) : Kapslar in objektet som representerar en vertikal sidbrytning.
+- [VerticalPageBreaks](verticalpagebreaks) : Kapslar in en samling objekt.
+- [Arbetsbok](workbook) : Representerar ett rotobjekt för att skapa ett Excel kalkylblad.
+- [Arbetsbok Inställningar](workbooksettings) : Representerar alla inställningar i arbetsboken.
+- [Arbetsblad](worksheet) : Kapslar in objektet som representerar ett enda kalkylblad.
+- [Arbetsblad](worksheets) : Kapslar in en samling objekt.
 - [Skrivskydd](writeprotection) : Anger skrivskyddsinställningar för en arbetsbok.
 - [XmlDataBinding](xmldatabinding) : Representerar Xml-databindningsinformation.
 - [XmlMap](xmlmap) : Representerar XML-kartainformation.
-- [CellsObjectOperateTaskParameter](cellsobjectoperatetaskparameter)  :   
-- [ConvertTaskParameter](converttaskparameter)  :   
-- [ConvertWorksheetTaskParameter](convertworksheettaskparameter)  :   
-- [FileSource](filesource)  :   
-- [FileSourceType](filesourcetype)  :   
-- [ImportDataTaskParameter](importdatataskparameter)  :   
-- [ResultatDestination](resultdestination)  :   
-- [ResultDestinationType](resultdestinationtype)  :   
-- [Resultatkälla](resultsource)  :   
-- [SaveFilesToCloudResult](savefilestocloudresult)  :   
-- [SaveResultTaskParameter](saveresulttaskparameter)  :   
-- [SmartMarkerTaskParameter](smartmarkertaskparameter)  :   
-- [SplitWorkbookTaskParameter](splitworkbooktaskparameter)  :   
-- [TaskData](taskdata)  :   
-- [Uppgifts beskrivning](taskdescription)  :   
-- [TaskParameter](taskparameter)  :   
-- [TaskResultParameter](taskresultparameter)  :   
-- [TaskRunResult](taskrunresult)  :   
-- [TaskType](tasktype)  :   
-- [ChartOperateParameter](chartoperateparameter)  :   
-- [ListObjectOperateParameter](listobjectoperateparameter)  :   
-- [OperateObject](operateobject)  :   
-- [OperateObjectPosition](operateobjectposition)  :   
-- [OperateObjectType](operateobjecttype)  :   
-- [OperateParameter](operateparameter)  :   
-- [OperateType](operatetype)  :   
-- [PageBreakOperateParameter](pagebreakoperateparameter)  :   
-- [PageSetupOperateParameter](pagesetupoperateparameter)  :   
-- [PivotTableOperateParameter](pivottableoperateparameter)  :   
-- [ShapeOperateParameter](shapeoperateparameter)  :   
-- [ArbetsbokOperateParameter](workbookoperateparameter)  :   
-- [WorkbookSettingsOperateParameter](workbooksettingsoperateparameter)  :   
-- [ArbetsbladOperateParameter](worksheetoperateparameter)  :   
-- [Listkolumn](listcolumn)  :   
-- [ListObject](listobject)  :   
-- [Listobjekt](listobjects)  :   
+- [CellsObjectOperateTaskParameter](cellsobjectoperatetaskparameter) : Representerar cellobjektets funktionsparameter.
+- [ConvertTaskParameter](converttaskparameter) : Representerar parameter för konverteringsuppgift.
+- [ConvertWorksheetTaskParameter](convertworksheettaskparameter) : Representerar konvertera kalkylbladsuppgiftsparameter.
+- [ImportDataTaskParameter](importdatataskparameter) : Representerar importdatauppgiftsparameter.
+- [ResultatDestination](resultdestination) : Representerar resultatdestination.
+- [ResultDestinationType](resultdestinationtype) : Representerar resultatdestinationstyp.
+- [Resultatkälla](resultsource) : Representerar resultatkällans typ.
+- [SaveFilesToCloudResult](savefilestocloudresult) : Representerar spara fil till moln resultat.
+- [SaveResultTaskParameter](saveresulttaskparameter) : Representerar spara resultat uppgift parameter.
+- [SmartMarkerTaskParameter](smartmarkertaskparameter) : Representerar smart marköruppgiftsparameter.
+- [SplitWorkbookTaskParameter](splitworkbooktaskparameter) : Representerar uppgiftsparameter för delad arbetsbok.
+- [TaskData](taskdata) : Representerar uppgiftsdata.
+- [Uppgifts beskrivning](taskdescription) : Representerar uppgiftsbeskrivning.
+- [TaskParameter](taskparameter) : Representerar uppgiftsparameter.
+- [TaskResultParameter](taskresultparameter) Representerar parameter för uppgiftsresultat.
+- [TaskRunResult](taskrunresult) : Representerar uppgiftskörningsresultat.
+- [TaskType](tasktype) : Representerar uppgiftstyp.
+- [ChartOperateParameter](chartoperateparameter) : Representerar diagramoperationsparameter.
+- [ListObjectOperateParameter](listobjectoperateparameter) : Representerar listobjektets funktionsparameter.
+- [OperateObject](operateobject) : Representerar driftobjekt.
+- [OperateObjectPosition](operateobjectposition) : Representerar manövreringsobjektets position.
+- [OperateObjectType](operateobjecttype) : Representerar funktionsobjekttyp.
+- [OperateParameter](operateparameter) : Representerar driftsparameter.
+- [OperateType](operatetype) : Representerar driftstyp.
+- [PageBreakOperateParameter](pagebreakoperateparameter) : Representerar driftsparameter för sidbrytning.
+- [PageSetupOperateParameter](pagesetupoperateparameter) : Representerar driftsparameter för sidinställningar.
+- [PivotTableOperateParameter](pivottableoperateparameter) : Representerar driftparameter för pivottabellen.
+- [ShapeOperateParameter](shapeoperateparameter) : Representerar parameter för formoperation.
+- [ArbetsbokOperateParameter](workbookoperateparameter) : Representerar arbetsbokens funktionsparameter.
+- [WorkbookSettingsOperateParameter](workbooksettingsoperateparameter) : Representerar arbetsbokens inställningsoperationsparameter.
+- [ArbetsbladOperateParameter](worksheetoperateparameter) : Representerar kalkylbladsoperationsparameter.
+- [Listkolumn](listcolumn) : Representerar en kolumn i en tabell.
+- [ListObject](listobject) Representerar ett listobjekt på ett kalkylblad. ListObject-objektet är en medlem av ListObjects-samlingen. ListObjects-samlingen innehåller alla listobjekt på ett kalkylblad.
+- [Listobjekt](listobjects) : Representerar en samling objekt i kalkylbladet.
 - [PivotGlobalizationSettings](pivotglobalizationsettings) : Representerar globaliseringsinställningarna för pivottabeller.
 - [DifSaveOptions](difsaveoptions) : Representerar alternativen för att spara dif-fil.
 - [DocxSaveOptions](docxsaveoptions) : Representerar alternativ för att spara .docx-fil.
 - [HtmlSaveOptions](htmlsaveoptions) : Representerar alternativ för att spara .html-fil.
 - [ImageSaveOptions](imagesaveoptions) : Representerar alternativ för att spara bildfil.
-- [JsonSaveOptions](jsonsaveoptions) Representerar alternativ för att spara .json-fil.
+- [JsonSaveOptions](jsonsaveoptions) : Representerar alternativ för att spara .json-fil.
 - [MarkdownSaveOptions](markdownsaveoptions) : Representerar alternativ för att spara .md-fil.
 - [MHtmlSaveOptions](mhtmlsaveoptions) : Representerar alternativ för att spara .mhtml-fil.
 - [OdsSaveOptions](odssaveoptions) : Representerar alternativ för att spara .ods-fil.
@@ -160,135 +163,135 @@ weight: 50
 - [PdfSaveOptions](pdfsaveoptions) : Representerar alternativ för att spara pdf-fil.
 - [PptxSaveOptions](pptxsaveoptions) : Representerar alternativen för att spara pptx-fil.
 - [Spara Alternativ](saveoptions) : Representerar alla sparalternativ
-- [SpreadsheetML2003SaveOptions](spreadsheetml2003saveoptions) : Representerar alternativen för att spara .xml-fil.
+- [SpreadsheetML2003SaveOptions](spreadsheetml2003saveoptions) Representerar alternativen för att spara .xml-fil.
 - [SqlScriptSaveOptions](sqlscriptsaveoptions) : Representerar alternativen för att spara .sql-filen.
 - [SvgSaveOptions](svgsaveoptions) : Representerar alternativen för att spara en .svg-fil.
 - [TextSaveOptions](txtsaveoptions) : Representerar alternativen för att spara .txt-fil.
 - [XlsbSaveOptions](xlsbsaveoptions) : Representerar alternativen för att spara .xlsb-filen.
 - [XlsSaveOptions](xlssaveoptions) : Representerar alternativen för att spara .xls-filen.
 - [XpsSaveOptions](xpssaveoptions) : Representerar alternativen för att spara .xps-filen.
-- [AnalyzeExcelResponse](analyzeexcelresponse)  :   
-- [ArcShapeResponse](arcshaperesponse)  :   
-- [AutoFilterResponse](autofilterresponse)  :   
-- [AutoShapeResponse](autoshaperesponse)  :   
-- [AutoShapesResponse](autoshapesresponse)  :   
-- [AxisResponse](axisresponse)  :   
-- [BorderResponse](borderresponse)  :   
-- [ButtonResponse](buttonresponse)  :   
-- [Beräkna FormelSvar](calculateformularesponse)  :   
-- [CellResponse](cellresponse)  :   
-- [CellsCloudFileInfoResponse](cellscloudfileinforesponse)  :   
-- [CellsCloudResponse](cellscloudresponse)  :   
-- [CellsDocumentPropertiesResponse](cellsdocumentpropertiesresponse)  :   
-- [CellsDocumentPropertyResponse](cellsdocumentpropertyresponse)  :   
-- [CellsDrawingResponse](cellsdrawingresponse)  :   
-- [CellsResponse](cellsresponse)  :   
-- [ChartAreaResponse](chartarearesponse)  :   
-- [ChartDataTableResponse](chartdatatableresponse)  :   
-- [ChartPointResponse](chartpointresponse)  :   
-- [ChartPointsResponse](chartpointsresponse)  :   
-- [ChartResponse](chartresponse)  :   
-- [ChartsResponse](chartsresponse)  :   
-- [CheckBoxResponse](checkboxresponse)  :   
-- [Kolumnsvar](columnresponse)  :   
-- [Kolumner Svar](columnsresponse)  :   
-- [ComboBoxResponse](comboboxresponse)  :   
-- [KommentarSvar](commentresponse)  :   
-- [CommentShapeResponse](commentshaperesponse)  :   
-- [Kommentarer Svar](commentsresponse)  :   
-- [ConditionalFormattingResponse](conditionalformattingresponse)  :   
-- [ConditionalFormattingsResponse](conditionalformattingsresponse)  :   
-- [DataLabelsResponse](datalabelsresponse)  :   
-- [DisplayUnitLabelResponse](displayunitlabelresponse)  :   
-- [DropBarsResponse](dropbarsresponse)  :   
-- [ErrorBarResponse](errorbarresponse)  :   
-- [FillFormatResponse](fillformatresponse)  :   
-- [FindResponse](findresponse)  :   
-- [FloorResponse](floorresponse)  :   
-- [FormResponse](formresponse)  :   
-- [FormsResponse](formsresponse)  :   
-- [GroupBoxResponse](groupboxresponse)  :   
-- [HorizontalPageBreakResponse](horizontalpagebreakresponse)  :   
-- [HorizontalPageBreaksResponse](horizontalpagebreaksresponse)  :   
-- [Hyperlänksvar](hyperlinkresponse)  :   
-- [HyperlinksResponse](hyperlinksresponse)  :   
-- [LabelResponse](labelresponse)  :   
-- [LegendEntriesResponse](legendentriesresponse)  :   
-- [LegendEntryResponse](legendentryresponse)  :   
-- [LegendResponse](legendresponse)  :   
-- [LineResponse](lineresponse)  :   
-- [LineShapeResponse](lineshaperesponse)  :   
-- [ListBoxResponse](listboxresponse)  :   
-- [ListObjectResponse](listobjectresponse)  :   
-- [ListObjectsResponse](listobjectsresponse)  :   
-- [MergedCellResponse](mergedcellresponse)  :   
-- [MergedCellsResponse](mergedcellsresponse)  :   
-- [NameResponse](nameresponse)  :   
-- [NamesResponse](namesresponse)  :   
-- [OleObjectResponse](oleobjectresponse)  :   
-- [OleObjectsResponse](oleobjectsresponse)  :   
-- [OvalResponse](ovalresponse)  :   
-- [PageSectionsResponse](pagesectionsresponse)  :   
-- [PageSetupResponse](pagesetupresponse)  :   
-- [PictureResponse](pictureresponse)  :   
-- [Bilder Svar](picturesresponse)  :   
-- [PivotFieldResponse](pivotfieldresponse)  :   
-- [PivotFilterResponse](pivotfilterresponse)  :   
-- [PivotFiltersResponse](pivotfiltersresponse)  :   
-- [PivotTableResponse](pivottableresponse)  :   
-- [Pivottabellssvar](pivottablesresponse)  :   
-- [PlotAreaResponse](plotarearesponse)  :   
-- [RadioButtonResponse](radiobuttonresponse)  :   
-- [RangeResponse](rangeresponse)  :   
-- [RangesResponse](rangesresponse)  :   
-- [RangeValueResponse](rangevalueresponse)  :   
-- [RectangleShapeResponse](rectangleshaperesponse)  :   
-- [RowResponse](rowresponse)  :   
-- [RowsResponse](rowsresponse)  :   
-- [SaveFilesToCloudResultResponse](savefilestocloudresultresponse)  :   
-- [SaveResponse](saveresponse)  :   
-- [ScrollBarResponse](scrollbarresponse)  :   
-- [SeriesResponse](seriesesresponse)  :   
-- [Seriesvar](seriesresponse)  :   
-- [ShapeResponse](shaperesponse)  :   
-- [ShapesResponse](shapesresponse)  :   
-- [SingleValueResponse](singlevalueresponse)  :   
-- [SparklineGroupResponse](sparklinegroupresponse)  :   
-- [SparklineGroupsResponse](sparklinegroupsresponse)  :   
-- [SpinnerResponse](spinnerresponse)  :   
-- [SplitResultResponse](splitresultresponse)  :   
-- [StyleResponse](styleresponse)  :   
-- [TaskRunResultResponse](taskrunresultresponse)  :   
-- [TextBoxResponse](textboxresponse)  :   
-- [TextItemResponse](textitemresponse)  :   
-- [TextItemsResponse](textitemsresponse)  :   
-- [TickLabelsResponse](ticklabelsresponse)  :   
-- [TitleResponse](titleresponse)  :   
-- [TrendlineResponse](trendlineresponse)  :   
-- [TrendlinesResponse](trendlinesresponse)  :   
-- [Valideringssvar](validationresponse)  :   
-- [Valideringar Svar](validationsresponse)  :   
-- [VerticalPageBreakResponse](verticalpagebreakresponse)  :   
-- [VerticalPageBreaksResponse](verticalpagebreaksresponse)  :   
-- [WallsResponse](wallsresponse)  :   
-- [WorkbookReplaceResponse](workbookreplaceresponse)  :   
-- [Arbetsbokssvar](workbookresponse)  :   
-- [WorkbookSettingsResponse](workbooksettingsresponse)  :   
-- [Arbetsböcker Svar](workbooksresponse)  :   
-- [ArbetsbladReplaceResponse](worksheetreplaceresponse)  :   
-- [Arbetsbladssvar](worksheetresponse)  :   
-- [Arbetsblad Svar](worksheetsresponse)  :   
+- [ArcShapeResponse](arcshaperesponse) : Representerar ArcShape Response.
+- [AutoFilterResponse](autofilterresponse) : Representerar AutoFilter-svaret.
+- [AutoShapeResponse](autoshaperesponse) : Representerar AutoShape-svaret.
+- [AutoShapesResponse](autoshapesresponse) : Representerar AutoShapes-svaret.
+- [AxisResponse](axisresponse) : Representerar axelsvaret.
+- [BorderResponse](borderresponse) : Representerar gränssvaret.
+- [ButtonResponse](buttonresponse) : Representerar knappens svar.
+- [Beräkna FormelSvar](calculateformularesponse) : Representerar CalculateFormula-svaret.
+- [CellResponse](cellresponse) : Representerar cellsvaret.
+- [CellsCloudFileInfoResponse](cellscloudfileinforesponse) : Representerar CellsCloudFileInfo-svaret.
+- [CellsCloudResponse](cellscloudresponse) : Representerar CellsCloud-svaret.
+- [CellsDocumentPropertiesResponse](cellsdocumentpropertiesresponse) : Representerar CellsDocumentProperties-svaret.
+- [CellsDocumentPropertyResponse](cellsdocumentpropertyresponse) Representerar CellsDocumentProperty-svaret.
+- [CellsDrawingResponse](cellsdrawingresponse) : Representerar CellsDrawing-svaret.
+- [CellsResponse](cellsresponse) : Representerar Cells-svaret.
+- [ChartAreaResponse](chartarearesponse) : Representerar ChartArea Response.
+- [ChartDataTableResponse](chartdatatableresponse) : Representerar ChartDataTable-svaret.
+- [ChartPointResponse](chartpointresponse) : Representerar ChartPoint-svaret.
+- [ChartPointsResponse](chartpointsresponse) : Representerar ChartPoints-svaret.
+- [ChartResponse](chartresponse) : Representerar diagramsvaret.
+- [ChartsResponse](chartsresponse) : Representerar diagramsvaret.
+- [CheckBoxResponse](checkboxresponse) : Representerar CheckBox-svaret.
+- [Kolumnsvar](columnresponse) : Representerar kolumnsvaret.
+- [Kolumner Svar](columnsresponse) : Representerar kolumnsvaret.
+- [ComboBoxResponse](comboboxresponse) : Representerar ComboBox-svaret.
+- [KommentarSvar](commentresponse) : Representerar kommentarsvaret.
+- [CommentShapeResponse](commentshaperesponse) : Representerar CommentShape-svaret.
+- [Kommentarer Svar](commentsresponse) : Representerar kommentarsvaret.
+- [ConditionalFormattingResponse](conditionalformattingresponse) : Representerar ConditionalFormatting-svaret.
+- [ConditionalFormattingsResponse](conditionalformattingsresponse) : Representerar ConditionalFormattings-svaret.
+- [DataLabelsResponse](datalabelsresponse) : Representerar DataLabels Response.
+- [DisplayUnitLabelResponse](displayunitlabelresponse) : Representerar DisplayUnitLabel-svaret.
+- [DropBarsResponse](dropbarsresponse) : Representerar DropBars-svaret.
+- [ErrorBarResponse](errorbarresponse) Representerar ErrorBar-svaret.
+- [FillFormatResponse](fillformatresponse) : Representerar FillFormat-svaret.
+- [FindResponse](findresponse) : Representerar söksvaret.
+- [FloorResponse](floorresponse) : Representerar Floor Response.
+- [FormResponse](formresponse) : Representerar formulärsvaret.
+- [FormsResponse](formsresponse) : Representerar formulärsvaret.
+- [GroupBoxResponse](groupboxresponse) : Representerar GroupBox-svaret.
+- [HorizontalPageBreakResponse](horizontalpagebreakresponse) : Representerar HorizontalPageBreak-svaret.
+- [HorizontalPageBreaksResponse](horizontalpagebreaksresponse) : Representerar HorizontalPageBreaks-svaret.
+- [Hyperlänksvar](hyperlinkresponse) : Representerar hyperlänksvaret.
+- [HyperlinksResponse](hyperlinksresponse) : Representerar hyperlänksvaret.
+- [LabelResponse](labelresponse) : Representerar etikettens svar.
+- [LegendEntriesResponse](legendentriesresponse) : Representerar LegendEntries-svaret.
+- [LegendEntryResponse](legendentryresponse) : Representerar LegendEntry-svaret.
+- [LegendResponse](legendresponse) : Representerar förklaringssvaret.
+- [LineResponse](lineresponse) : Representerar linjesvaret.
+- [LineShapeResponse](lineshaperesponse) : Representerar LineShape-svaret.
+- [ListBoxResponse](listboxresponse) : Representerar ListBox-svaret.
+- [ListObjectResponse](listobjectresponse) : Representerar ListObject Response.
+- [ListObjectsResponse](listobjectsresponse) : Representerar ListObjects Response.
+- [MergedCellResponse](mergedcellresponse) : Representerar MergedCell-svaret.
+- [MergedCellsResponse](mergedcellsresponse) Representerar MergedCells-svaret.
+- [NameResponse](nameresponse) : Representerar namnsvaret.
+- [NamesResponse](namesresponse) : Representerar namnsvaret.
+- [OleObjectResponse](oleobjectresponse) : Representerar OleObject-svaret.
+- [OleObjectsResponse](oleobjectsresponse) : Representerar OleObjects-svaret.
+- [OvalResponse](ovalresponse) : Representerar det ovala svaret.
+- [PageSectionsResponse](pagesectionsresponse) : Representerar PageSections-svaret.
+- [PageSetupResponse](pagesetupresponse) : Representerar PageSetup-svaret.
+- [PictureResponse](pictureresponse) : Representerar bildsvaret.
+- [Bilder Svar](picturesresponse) : Representerar bildens svar.
+- [PivotFieldResponse](pivotfieldresponse) : Representerar pivotfältssvaret.
+- [PivotFilterResponse](pivotfilterresponse) : Representerar PivotFilter-svaret.
+- [PivotFiltersResponse](pivotfiltersresponse) : Representerar PivotFilters-svaret.
+- [PivotTableResponse](pivottableresponse) : Representerar pivottabellsvaret.
+- [Pivottabellssvar](pivottablesresponse) : Representerar pivottabellsvaret.
+- [PlotAreaResponse](plotarearesponse) : Representerar PlotArea-svaret.
+- [RadioButtonResponse](radiobuttonresponse) : Representerar RadioButton-svaret.
+- [RangeResponse](rangeresponse) : Representerar intervallsvaret.
+- [RangesResponse](rangesresponse) : Representerar intervallsvaret.
+- [RangeValueResponse](rangevalueresponse) : Representerar RangeValue-svaret.
+- [RectangleShapeResponse](rectangleshaperesponse) : Representerar RectangleShape-svaret.
+- [RowResponse](rowresponse) : Representerar radsvaret.
+- [RowsResponse](rowsresponse) Representerar radsvaret.
+- [SaveFilesToCloudResultResponse](savefilestocloudresultresponse) : Representerar SaveFilesToCloudResult-svaret.
+- [SaveResponse](saveresponse) : Representerar Spara-svaret.
+- [ScrollBarResponse](scrollbarresponse) : Representerar ScrollBar-svaret.
+- [SeriesResponse](seriesesresponse) : Representerar seriesvaret.
+- [Seriesvar](seriesresponse) : Representerar seriens svar.
+- [ShapeResponse](shaperesponse) : Representerar Shape Response.
+- [ShapesResponse](shapesresponse) : Representerar Shapes Response.
+- [SingleValueResponse](singlevalueresponse) : Representerar SingleValue Response.
+- [SparklineGroupResponse](sparklinegroupresponse) : Representerar SparklineGroup Response.
+- [SparklineGroupsResponse](sparklinegroupsresponse) : Representerar SparklineGroups-svaret.
+- [SpinnerResponse](spinnerresponse) : Representerar spinnerresponsen.
+- [SplitResultResponse](splitresultresponse) : Representerar SplitResult-svaret.
+- [StyleResponse](styleresponse) : Representerar stilsvaret.
+- [TaskRunResultResponse](taskrunresultresponse) : Representerar TaskRunResult-svaret.
+- [TextBoxResponse](textboxresponse) : Representerar textrutans svar.
+- [TextItemResponse](textitemresponse) : Representerar TextItem-svaret.
+- [TextItemsResponse](textitemsresponse) : Representerar TextItems-svaret.
+- [TickLabelsResponse](ticklabelsresponse) : Representerar TickLabels-svaret.
+- [TitleResponse](titleresponse) : Representerar titelsvaret.
+- [TrendlineResponse](trendlineresponse) : Representerar trendlinjesvaret.
+- [TrendlinesResponse](trendlinesresponse) Representerar trendlinjesvaret.
+- [Valideringssvar](validationresponse) : Representerar valideringssvaret.
+- [Valideringar Svar](validationsresponse) : Representerar valideringssvaret.
+- [VerticalPageBreakResponse](verticalpagebreakresponse) : Representerar VerticalPageBreak-svaret.
+- [VerticalPageBreaksResponse](verticalpagebreaksresponse) : Representerar VerticalPageBreaks-svaret.
+- [WallsResponse](wallsresponse) : Representerar Walls Response.
+- [WorkbookReplaceResponse](workbookreplaceresponse) : Representerar WorkbookReplace-svaret.
+- [Arbetsbokssvar](workbookresponse) : Representerar arbetsbokens svar.
+- [WorkbookSettingsResponse](workbooksettingsresponse) : Representerar WorkbookSettings-svaret.
+- [Arbetsböcker Svar](workbooksresponse) : Representerar Workbooks Response.
+- [ArbetsbladReplaceResponse](worksheetreplaceresponse) : Representerar WorksheetReplace-svaret.
+- [Arbetsbladssvar](worksheetresponse) : Representerar kalkylbladets svar.
+- [Arbetsblad Svar](worksheetsresponse) : Representerar arbetsbladssvaret.
 - [AnalyseraExcelRequest](analyzeexcelrequest)  :   
 - [BatchConvertRequest](batchconvertrequest) : Indikerar begäran om batchkonvertering av fil
 - [BatchLockRequest](batchlockrequest) : Indikerar begäran om batchlåsfil
 - [BatchProtectRequest](batchprotectrequest) : Indikerar begäran om batchskyddsfil
 - [BatchSplitRequest](batchsplitrequest)  :   
 - [ColorFilterRequest](colorfilterrequest) : Indikerar färgfilterbegäran
-- [Konvertera parameter](convertparameter) : Indikerar konverteringsparameter
+- [Konvertera parameter](convertparameter) Indikerar konverteringsparameter
 - [CreatePivotTableRequest](createpivottablerequest) : Indikerar att skapa pivottabellsbegäran
 - [DataCleansingRequest](datacleansingrequest) : En begäran om datarensning för en kalkylarksfil.
 - [DataDeduplicationRequest](datadeduplicationrequest)  :   
 - [DataFillRequest](datafillrequest)  :   
+- [DataTransformationRequest](datatransformationrequest)  :   
 - [DeleteIncompleteRowsRequest](deleteincompleterowsrequest)  :   
 - [ImportJsonRequest](importjsonrequest) : Indikerar begäran om import av xml-data
 - [ImportXMLRequest](importxmlrequest) : Indikerar begäran om import av xml-data
@@ -297,27 +300,37 @@ weight: 50
 - [PivotTableFieldRequest](pivottablefieldrequest) : Indikerar begäran om pivottabellfält
 - [ProtectWorkbookRequest](protectworkbookrequest) : Indikerar begäran om skydd av arbetsbok
 - [RangeCopyRequest](rangecopyrequest) : Indikerar begäran om intervallkopiering
-- [RangeSetOutlineBorderRequest](rangesetoutlineborderrequest) Indikerar begäran om gränsuppsättningskontur.
+- [RangeSetOutlineBorderRequest](rangesetoutlineborderrequest) : Indikerar begäran om gränsuppsättningskontur.
 - [RangeSetStyleRequest](rangesetstylerequest) : Indikerar intervalluppsättningsstilsbegäran.
-- [RangeSortRequest](rangesortrequest) : Indikerar begäran om intervallsortering
+- [RangeSortRequest](rangesortrequest) Indikerar begäran om intervallsortering
 - [TabellTotalRequest](tabletotalrequest) : Indikerar tabelltotal begäran
 - [TextWaterMarkerRequest](textwatermarkerrequest) : Indikerar begäran om textvattenmarkör.
 - [WorkbookEncryptionRequest](workbookencryptionrequest) : Används av förfrågningar om kryptering/dekryptering av arbetsbok.
 - [WorkbookProtectionRequest](workbookprotectionrequest) : Används av förfrågningar om arbetsbokskydd.
 - [ArbetsbladMovingRequest](worksheetmovingrequest) : Används av förfrågningar om flyttning av arbetsbok.
-- [ImageOrPrintOptions](imageorprintoptions)  :   
-- [RenderingFont](renderingfont)  :   
-- [Rendering Vattenstämpel](renderingwatermark)  :   
-- [Pivotfält](pivotfield)  :   
+- [ImageOrPrintOptions](imageorprintoptions) : Gör det möjligt att ange alternativ när du renderar kalkylblad till bilder, skriver ut kalkylblad eller renderar diagram till bild.
+- [RenderingFont](renderingfont) : Teckensnitt för rendering.
+- [Rendering Vattenstämpel](renderingwatermark) : Vattenstämpel för rendering.
+- [JoinType](jointype)  :   
+- [Ladda data](loaddata) : Laddar datainformation.
+- [Ladda till](loadto)  :   
+- [MergeQueries](mergequeries) : Representerar sammanfogningsfrågor.
+- [Pivotkolumn](pivotcolumn)  :   
+- [QueryDataSource](querydatasource)  :   
+- [QueryDataSourceDataType](querydatasourcedatatype)  :   
+- [Frågetabell](querytable) : Representerar frågetabellinformation.
+- [Omvandling](transformation)  :   
+- [Ta bort pivotkolumn](unpivotcolumn)  :   
+- [Pivotfält](pivotfield) Representerar ett fält i en pivottabellrapport.
 - [PivotFilter](pivotfilter) : Representerar ett PivotFilter i PivotFilter Collection.
-- [PivotItem](pivotitem)  :   
-- [Pivottabell](pivottable)  :   
-- [Pivottabeller](pivottables)  :   
+- [PivotItem](pivotitem) : Representerar ett objekt i en pivotfältsrapport.
+- [Pivottabell](pivottable) : Sammanfattningsbeskrivning för pivottabell.
+- [Pivottabeller](pivottables) : Representerar samlingen av alla pivottabellobjekt på det angivna kalkylbladet.
+- [CellValue](cellvalue) : Representerar cellvärdet och motsvarande typ.
 - [CustomParserConfig](customparserconfig)  :   
 - [Import2DimensionDoubleArrayOption](import2dimensiondoublearrayoption)  :   
 - [Import2DimensionIntArrayOption](import2dimensionintarrayoption)  :   
 - [Import2DimensionStringArrayOption](import2dimensionstringarrayoption)  :   
-- [CellValue](cellvalue)  :   
 - [ImportBatchDataOption](importbatchdataoption)  :   
 - [ImportCSVDataOption](importcsvdataoption)  :   
 - [ImportDataType](importdatatype)  :   
@@ -327,87 +340,84 @@ weight: 50
 - [ImportPictureOption](importpictureoption)  :   
 - [Importposition](importposition)  :   
 - [ImportStringArrayOption](importstringarrayoption)  :   
-- [ArcShape](arcshape)  :   
-- [Område](area)  :   
-- [AutoShape](autoshape)  :   
+- [ArcShape](arcshape) : Representerar bågformen.
+- [Område](area) : Kapslar in objektet som representerar ett områdesformat.
+- [AutoShape](autoshape) : Representerar en AutoShape.
 - [AutoShapes](autoshapes)  :   
-- [Knapp](button)  :   
-- [Celler Rita](cellsdrawing)  :   
-- [Kryssruta](checkbox)  :   
-- [Kombinationsrutan](combobox)  :   
-- [CommentShape](commentshape)  :   
-- [FillFormat](fillformat)  :   
+- [Knapp](button) : Representerar formulärkontrollen: Knapp
+- [Celler Rita](cellsdrawing) : Representerar den automatiska formen och ritobjektet.
+- [Kryssruta](checkbox) : Representerar ett kryssruteobjekt i ett kalkylblad.
+- [Kombinationsrutan](combobox) : Representerar kontrollformuläret ComboBox.
+- [CommentShape](commentshape) : Representerar formen på kommentaren.
+- [FillFormat](fillformat) : Kapslar in objektet som representerar fyllningsformatering för en form.
 - [Form](form)  :   
 - [Blanketter](forms)  :   
-- [GradientFill](gradientfill)  :   
+- [GradientFill](gradientfill) Representerar övertoningsfyllningen.
 - [GradientFillStop](gradientfillstop)  :   
-- [GroupBox](groupbox)  :   
-- [GroupShape](groupshape)  :   
-- [Märka](label)  :   
+- [GroupBox](groupbox) : Kapslar in objektet som representerar en gruppruta i ett kalkylblad.
+- [GroupShape](groupshape) : Representerar gruppformen som innehåller de individuella formerna.
+- [Märka](label) : Kapslar in objektet som representerar en etikett i ett kalkylblad.
 - [Linje](line) : Kapslar in objektet som representerar linjeformatet.
-- [Linjeformat](lineformat)  :   
-- [LineShape](lineshape)  :   
-- [ListBox](listbox)  :   
-- [OleObject](oleobject)  :   
-- [OleObjects](oleobjects)  :   
-- [Oval](oval)  :   
-- [PatternFill](patternfill)  :   
-- [PicFormatOption](picformatoption)  :   
-- [Bild](picture)  :   
-- [Bilder](pictures)  :   
-- [Radio knapp](radiobutton)  :   
-- [RectangleShape](rectangleshape)  :   
-- [Rullningslist](scrollbar)  :   
-- [ShadowEffect](shadoweffect)  :   
-- [Form](shape)  :   
-- [Former](shapes)  :   
-- [SolidFill](solidfill)  :   
-- [Spinnare](spinner)  :   
-- [Textruta](textbox)  :   
-- [TextureFill](texturefill)  :   
-- [TilePicOption](tilepicoption)  :   
+- [Linjeformat](lineformat) : Representerar alla inställningar för linjen.
+- [LineShape](lineshape) : Representerar linjeformen.
+- [ListBox](listbox) : Representerar ett listboxobjekt.
+- [OleObject](oleobject) : Representerar ett OleObject i ett kalkylblad.
+- [OleObjects](oleobjects) : Representerar inbäddade OLE-objekt.
+- [Oval](oval) : Representerar den ovala formen.
+- [PatternFill](patternfill) : Kapslar in objektet som representerar mönsterfyllningsformat
+- [PicFormatOption](picformatoption) : Representerar bildformatalternativ
+- [Bild](picture) : Kapslar in objektet som representerar en enda bild i ett kalkylblad.
+- [Bilder](pictures) : Kapslar in en samling objekt.
+- [Radio knapp](radiobutton) : Representerar en alternativknapp.
+- [RectangleShape](rectangleshape) : Representerar rektangelformen.
+- [Rullningslist](scrollbar) Representerar ett rullningslistobjekt.
+- [ShadowEffect](shadoweffect) : Den här klassen anger skuggeffekten för diagramelementet eller formen.
+- [Form](shape) : Representerar msodrawing-objektet.
+- [Former](shapes) : Representerar all form i ett kalkylblad/diagram.
+- [SolidFill](solidfill) : Kapslar in objektet som representerar solid fyllningsformat
+- [Spinnare](spinner) : Representerar formulärkontrollen: Spinner.
+- [Textruta](textbox) : Kapslar in objektet som representerar en textruta i ett kalkylblad.
+- [TextureFill](texturefill) : Kapslar in objektet som representerar texturfyllningsformat
+- [TilePicOption](tilepicoption) : Representerar kakelbild som struktur.
 - [Digital signatur](digitalsignature) : Signatur i fil.
-- [Axel](axis)  :   
-- [Diagram](chart)  :   
-- [ChartArea](chartarea)  :   
-- [ChartDataTable](chartdatatable)  :   
-- [ChartFrame](chartframe)  :   
+- [Axel](axis) : Kapslar in objektet som representerar en diagramaxel.
+- [Diagram](chart) : Kapslar in objektet som representerar ett enda Excel-diagram.
+- [ChartArea](chartarea) : Kapslar in objektet som representerar diagramområdet i kalkylbladet.
+- [ChartDataTable](chartdatatable) Representerar en diagramdatatabell.
+- [ChartFrame](chartframe) : Kapslar in objektet som representerar ramobjektet i ett diagram.
 - [ChartGlobalizationSettings](chartglobalizationsettings) : Representerar globaliseringsinställningarna för diagram.
-- [ChartPoint](chartpoint)  :   
-- [ChartPoints](chartpoints)  :   
-- [Diagram](charts)  :   
+- [ChartPoint](chartpoint) : Representerar en enda punkt i en serie i ett diagram.
+- [ChartPoints](chartpoints) : Representerar en samling som innehåller alla punkter i en serie.
+- [Diagram](charts) : Kapslar in en samling objekt.
 - [ChartShape](chartshape) : Objekt i diagramform
-- [Dataetiketter](datalabels)  :   
-- [DisplayUnitLabel](displayunitlabel)  :   
-- [DropBars](dropbars)  :   
-- [ErrorBar](errorbar)  :   
-- [Golv](floor)  :   
-- [Legend](legend)  :   
-- [LegendEntries](legendentries)  :   
-- [LegendEntry](legendentry)  :   
-- [Markör](marker)  :   
-- [PlotArea](plotarea)  :   
-- [Serier](series)  :   
+- [Dataetiketter](datalabels) : Kapslar in en samling av alla DataLabel-objekt för den angivna serien.
+- [DisplayUnitLabel](displayunitlabel) : Representerar displayenhetens etikett.
+- [DropBars](dropbars) : Representerar staplarna upp/ned i ett diagram.
+- [ErrorBar](errorbar) : Representerar felfältet för dataserien.
+- [Golv](floor) : Kapslar in objektet som representerar golvet i ett 3D-diagram.
+- [Legend](legend) : Kapslar in objektet som representerar diagramförklaringen.
+- [Legendentries](legendentries)  :   
+- [LegendEntry](legendentry) : Representerar en förklaringspost i en diagramförklaring.
+- [Markör](marker) : Representerar markören i ett linjediagram, punktdiagram eller radardiagram.
+- [PlotArea](plotarea) Kapslar in objektet som representerar plottområdet i ett diagram.
+- [Serier](series) : Kapslar in objektet som representerar en enskild dataserie i ett diagram.
 - [Serieobjekt](seriesitems)  :   
 - [Sparkline](sparkline) : En sparkline representerar ett litet diagram eller grafik i en kalkylbladscell som ger en visuell representation av data.
-- [SparklineGroup](sparklinegroup)  :   
+- [SparklineGroup](sparklinegroup) : är organiserad i sparkline-grupp. En SparklineGroup innehåller ett variabelt antal sparkline-objekt. En sparkline-grupp anger typ, visningsinställningar och axelinställningar för sparklines.
 - [SparklineGroups](sparklinegroups) : Kapslar in en samling Aspose.Cells.Charts.SparklineGroup-objekt.
-- [TickLabels](ticklabels)  :   
-- [Titel](title)  :   
-- [Trendlinje](trendline)  :   
-- [Trendlinjer](trendlines)  :   
-- [Väggar](walls)  :   
+- [TickLabels](ticklabels) : Representerar de tick-mark-etiketter som är associerade med tick-markeringar på en diagramaxel.
+- [Titel](title) : Kapslar in objektet som representerar titeln på diagrammet eller axeln.
+- [Trendlinje](trendline) : Representerar en trendlinje i ett diagram.
+- [Trendlinjer](trendlines) : Representerar en samling av alla objekt för den angivna dataserien.
+- [Väggar](walls) Kapslar in objektet som representerar väggarna i ett 3D-diagram.
 - [ColumnDataExceptionDescription](columndataexceptiondescription)  :   
 - [TextCategoryType](textcategorytype)  :   
-- [Analyserad kolumnbeskrivning](analyzedcolumndescription) Hur man använder egenskaperna för varje kolumn: för närvarande uppdelad i tidslinje, produktlinje, numerisk statistiklinje Hur man presenterar produkten, en enhetlig plan Hur löser man problemet med full digital? Fulltext Hur löser man det? Två kolumner: Text, Number är det enklaste Tre kolumner: Text, Text, Number text, number, number --- date date ; Datum Numerisk ; Numeric Digital Vad sägs om fyra kolumner, fem kolumner?
-- [Analyserat resultat](analyzedresult)  :   
-- [Analyserad tabellbeskrivning](analyzedtabledescription)  :   
-- [DateSourceType](datesourcetype)  :   
-- [SuggestedOutputType](suggestedoutputtype)  :   
-- [Analysera förslag](analyzesuggestion)  :   
-- [DiscoverChart](discoverchart)  :   
-- [DiscoverPivotTable](discoverpivottable)  :   
-- [ExcelDataStatistics](exceldatastatistics)  :   
-- [WorksheetDataStatistics](worksheetdatastatistics)  :   
+- [Analyserad kolumnbeskrivning](analyzedcolumndescription) : Representerar beskrivning av analyserad kolumn.
+- [Analyserat resultat](analyzedresult) : Representerar resultat av analyserad data.
+- [Analyserad tabellbeskrivning](analyzedtabledescription) : Representerar analyserad tabellbeskrivning.
+- [DiscoverChart](discoverchart) : Representerar ett diagram, vilket är ett diagram som skapats baserat på dataanalys av en tabell.
+- [DiscoverPivotTable](discoverpivottable) : Representerar en pivottabell, som är en pivottabell som skapats baserat på dataanalys av en tabell.
+- [ExcelDataStatistics](exceldatastatistics) : Representerar Excel datastatistik.
+- [WorksheetDataStatistics](worksheetdatastatistics) : Representerar statistik för kalkylbladsdata.
 - [Fel](error) : Fel
 - [Detaljer om felet](errordetails) : Feldetaljerna

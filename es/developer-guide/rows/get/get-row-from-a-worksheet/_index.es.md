@@ -8,6 +8,7 @@ aliases: [/get-row-from-a-worksheet/]
 keywords: Get row info on an Excel workshee
 description: Aspose.Cells Cloud REST API admite la obtención de información de fila en una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 10
+kwords: Excel, Office Cloud, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Obtener descripción de fila de una hoja de trabajo Excel
 ---
 Este REST API indica obtener datos de una fila por índice de fila en una hoja de trabajo Excel.
  
@@ -22,7 +23,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/
  
 | Nombre del parámetro| Tipo| Ruta/Cadena de consulta/Cuerpo HTTP|Descripción|
 |:- |:- |:- |:- |
-| nombre| cadena| camino|El nombre del libro de trabajo.|
+| nombre| cadena| camino| El nombre del libro de trabajo.|
 | nombre de la hoja| cadena| camino| El nombre de la hoja de trabajo.|
 | índice de fila| entero| camino| El índice de fila.|
 | carpeta| cadena| consulta| La carpeta del libro de trabajo.|

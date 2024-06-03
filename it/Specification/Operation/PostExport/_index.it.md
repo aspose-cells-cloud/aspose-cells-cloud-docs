@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/postexport/
 description: Esporta gli elementi interni Excel o la cartella di lavoro stessa in vari file di formato
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PostExport
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostExport" >}}
@@ -16,7 +17,7 @@ weight: 50
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Nome parametro, Tipo, Descrizione" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="objectType,string,Tipo di oggetto esportato: cartella di lavoro/foglio di lavoro/grafico/commento/immagine/forma/elencooggetto/oleoggetto." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="format,string,Il formato di conversione (CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/076173 481/ MD[Ribasso]/Numeri)." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="format,string,Il formato di conversione (CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/0761 73481/ MD[Ribasso]/Numeri)." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="password,string,La password necessaria per aprire un file Excel." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction,boolean,Se controlla la restrizione del file Excel quando l\'utente modifica gli oggetti correlati alle celle." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="regione,string,Impostazioni internazionali per la cartella di lavoro." >}} 

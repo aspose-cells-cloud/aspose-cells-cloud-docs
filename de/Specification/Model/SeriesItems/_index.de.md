@@ -1,21 +1,23 @@
 ﻿---
-title: SeriesItem
+title: Serienartikel
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/model/seriesitems/
-description: "Aspose.Cells Cloud-Modellspezifikation: SeriesItems. Bearbeiten Sie mühelos Excel und andere Tabellenkalkulationsdokumente mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+description: "Aspose.Cells Cloud-Modellspezifikation: SeriesItems. Müheloses Bearbeiten von Excel und anderen Tabellenkalkulationsdokumenten mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, SeriesItems
 weight: 50
 ---
-## **seriesItems**
+## **SerienArtikel**
 
  
 
-| Name des Anwesens| Art der Immobilie| Nullbar| Schreibgeschützt| Standardwert| Beschreibung|
+| Name des Anwesens| Art der Immobilie| Nullwerte zulassen| Schreibgeschützt| Standardwert| Beschreibung|
 |:- |:- |:- |:- |:- |:- |
-| Kategoriedaten| Zeichenfolge| WAHR| FALSCH|||
-| IsColorVaried| Boolescher Wert| WAHR| FALSCH|||
-| SecondCatergoryData| Zeichenfolge| WAHR| FALSCH|||
+| KategorieDaten| Zeichenfolge| WAHR| FALSCH|||
+| IstFarbeVariiert| Boolescher Wert| WAHR| FALSCH|||
+| ZweiteKategorieDaten| Zeichenfolge| WAHR| FALSCH|||
 | Serienliste| Container| WAHR| FALSCH|||
 | Verknüpfung| Klasse:Link| WAHR| FALSCH|||
 
-**Elternname** : (LinkElement)[Linkelement]
+**Elternname** : [LinkElement](/specification/model/linkelement)
+

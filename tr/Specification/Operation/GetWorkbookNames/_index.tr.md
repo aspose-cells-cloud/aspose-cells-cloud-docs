@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/getworkbooknames/
 description: Çalışma kitabındaki adlandırılmış aralıkları alma
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, GetWorkbookNames
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorkbookNames" >}}

@@ -6,6 +6,7 @@ url: /es/file/
 keywords: Upload, download, delete, copy, and move file
 description: Aspose.Cells Cloud REST API admite la carga, descarga, eliminación, copia y movimiento de archivos. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 100
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Archivo
 ---
 Aspose.Cells Cloud proporciona tipos de API de operación de archivos.
 

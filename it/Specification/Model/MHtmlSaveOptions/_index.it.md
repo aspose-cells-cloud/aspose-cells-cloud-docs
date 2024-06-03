@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/model/mhtmlsaveoptions/
 description: "Aspose.Cells Specifica del modello cloud: MHTmlSaveOptions. Gestisci facilmente Excel e altri fogli di calcolo con funzionalità come apertura, generazione, modifica, divisione, unione, confronto e conversione"
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, MHTmlSaveOptions
 weight: 50
 ---
 ## **mHtmlSaveOptions**
@@ -30,7 +31,8 @@ weight: 50
 | CreaDirectory| Booleano| VERO| Falso|||
 | Abilita compressione HTTP| Booleano| VERO| Falso|||
 | AggiornaChartCache| Booleano| VERO| Falso|||
-|OrdinaNomi| Booleano| VERO| Falso|||
+| OrdinaNomi| Booleano| VERO| Falso|||
 | ValidateMergedAreas| Booleano| VERO| Falso|||
 
-**Nome del genitore** : (OpzioniSalva)[opzionisalva]
+**Nome del genitore** : [SalvaOpzioni](/specification/model/saveoptions)
+

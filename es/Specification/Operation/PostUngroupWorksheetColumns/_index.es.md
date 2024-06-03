@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/postungroupworksheetcolumns/
 description: Desagrupar columnas de la hoja de trabajo
+kwords: Excel, Office, Hoja de cálculo, Cloud REST API, PostUngroupWorksheetColumns
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostUngroupWorksheetColumns" >}}

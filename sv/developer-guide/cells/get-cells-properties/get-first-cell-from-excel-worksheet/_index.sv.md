@@ -3,6 +3,7 @@ title: Få First Cell från Excel Worksheet
 type: docs
 url: /sv/get-first-cell-from-excel-worksheet/
 weight: 20
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Get First Cell from Excel Arbetsblad
 ---
 Denna REST API indikerar visar få ett `firstcell` i en Excel fil när parametern `cellOrMethodName` är `firstcell`.
 

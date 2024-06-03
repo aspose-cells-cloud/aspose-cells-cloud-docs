@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/model/importdoublearrayoption/
 description: "Aspose.Cells Спецификация облачной модели: ImportDoubleArrayOption. Легко обрабатывайте Excel и другие документы электронных таблиц с помощью таких функций, как открытие, создание, редактирование, разделение, слияние, сравнение и преобразование."
+kwords: Excel, Office, электронная таблица, Cloud REST API, ImportDoubleArrayOption
 weight: 50
 ---
 ## **импортДаблАррайОптион**
@@ -19,6 +20,8 @@ weight: 50
 | Рабочий лист назначения| Нить| Истинный| ЛОЖЬ|||
 | IsInsert| логическое значение| Истинный| ЛОЖЬ|||
 | Импортдататипе| Нить| Истинный| ЛОЖЬ|||
+| Источник данных| Класс:Источник данных| Истинный| ЛОЖЬ|||
 | Источник| Класс:FileSource| Истинный| ЛОЖЬ|||
 
-**Имя родителя** : (ImportOption)[importoption]
+**Имя родителя** : [ИмпортОпция](/specification/model/importoption)
+

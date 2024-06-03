@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/putinsertworksheetrow/
 description: Insertar una nueva fila en la hoja de trabajo
+kwords: Excel, Office, hoja de cálculo, nube REST API, PutInsertWorksheetRow
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutInsertWorksheetRow" >}}

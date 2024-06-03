@@ -3,6 +3,7 @@ title: احصل على عقار Cells
 type: docs
 url: /ar/get-cells-properties/
 weight: 130
+kwords: Excel، Office كلاود، ريست API، جدول بيانات، PDF، CSV، Json، Markdwon، احصل على Cells خصائص
 ---
 يشير REST API إلى كيفية `get a specific cell` في ملف Excel.
 

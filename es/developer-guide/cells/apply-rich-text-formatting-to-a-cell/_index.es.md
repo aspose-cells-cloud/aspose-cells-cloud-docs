@@ -3,6 +3,7 @@ title: Aplicar formato de texto enriquecido a una celda
 type: docs
 url: /es/apply-rich-text-formatting-to-a-cell/
 weight: 40
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Aplicar formato de texto enriquecido a una celda
 ---
 Este REST API indica aplicar `rich text formatting` a una celda en un archivo Excel.
 

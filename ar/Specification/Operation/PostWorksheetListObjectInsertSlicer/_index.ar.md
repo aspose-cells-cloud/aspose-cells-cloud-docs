@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postworksheetlistobjectinsertslicer/
 description: إدراج مقسم شرائح لكائن القائمة
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostWorksheetListObjectInsertSlicer
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetListObjectInsertSlicer" >}}
@@ -20,7 +21,7 @@ weight: 50
      {{< blocks/products/cells/docs-Parameter-content columns="listObjectIndex,integer,قائمة فهرس الكائنات." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="اسم المعلمة، النوع، الوصف" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns=" columnIndex، عدد صحيح، فهرس ListColumn في ListObject.ListColumns" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="columnIndex، عدد صحيح، فهرس ListColumn في ListObject.ListColumns" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns=" destCellName,string,الخلية الموجودة في الزاوية العلوية اليسرى من نطاق Slicer." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="المجلد، السلسلة، المجلد الذي يوجد به الملف." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="اسم التخزين، سلسلة، اسم التخزين حيث يوجد الملف." >}} 

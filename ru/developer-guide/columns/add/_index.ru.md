@@ -8,6 +8,7 @@ aliases: [/add-an-empty-column-in-an-excel-worksheet/,/add-an-empty-column-in-a-
 keywords: Add column on an Excel workshee
 description: Aspose.Cells Cloud REST API поддерживает добавление столбца на лист Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 20
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Добавить пустой столбец на лист Excel
 ---
 Этот REST API указывает на вставку столбцов рабочего листа.
  
@@ -22,11 +23,11 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/colum
  
 | Имя параметра| Тип| Путь/строка запроса/HTTPBody|Описание|
 |:- |:- |:- |:- |
-| имя| нить| путь|Имя рабочей книги.|
+| имя| нить| путь| Имя рабочей книги.|
 | имя листа| нить| путь| Имя рабочего листа.|
 | индекс столбца| целое число| путь| Индекс столбца.|
 | столбцы| целое число| запрос| Колонны.|
-| обновитьссылку| логическое значение| запрос| Истинный|
+| обновитьссылку|логическое значение| запрос| Истинный|
 | папка| нить| запрос| Папка рабочей книги.|
 | имя_хранилища| нить| запрос| имя хранилища.|
  

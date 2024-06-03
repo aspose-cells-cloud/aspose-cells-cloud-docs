@@ -1,17 +1,18 @@
 ﻿---
-title: 如何从 Excel 工作表获取范围内容
+title: 如何从 Excel 工作表中获取范围内容
 second_title: Aspose.Cells Cloud Documen
-linktitle: 锗
+linktitle: 葛
 type: docs
 url: /zh/ranges/get/
 keywords: How to get range content from an Excel worksheet
-description: Aspose.Cells Cloud REST API 支持从 Excel 工作表获取范围内容。 SDK支持多种开发语言。它们包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 swift
+description: Aspose.Cells Cloud REST API 支持从 Excel 工作表获取范围内容。SDK 支持多种开发语言。其中包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 swift
 weight: 20
+kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdwon、如何从 Excel 工作表中获取范围内容
 ---
-## 在 Excel 工作表上获取范围内容。
+## 正在获取 Excel 工作表上的范围内容。
 
 
 - [如何根据命名范围获取单元格数据。](/cells/zh/ranges/get/values/) 
-- [如何从 Excel 工作簿获取命名范围。](/cells/zh/ranges/get/name/) 
+- [如何从 Excel 工作簿中获取命名范围。](/cells/zh/ranges/get/name/) 
 
 

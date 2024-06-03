@@ -2,6 +2,7 @@
 title: Opération
 second_title: Aspose.Cells Cloud Documen
 type: docs
+kwords: Excel, Office, feuille de calcul, Cloud REST API, description de l'opération
 weight: 50
 ---
 - [PostAnalyseExcel](postanalyzeexcel) : Effectuer une analyse commerciale des données dans les fichiers Excel.
@@ -74,14 +75,14 @@ weight: 50
 - [GetWorksheetChart](getworksheetchart) Récupère le graphique dans un format spécifié.
 - [PutWorksheetChart](putworksheetchart) : Ajoutez un nouveau graphique dans la feuille de calcul.
 - [Supprimer la feuille de calcul](deleteworksheetchart) : Supprimer un graphique par index dans la feuille de calcul.
-- [PostWorksheetChart](postworksheetchart) : mettre à jour les propriétés du graphique dans la feuille de calcul.
+- [PostWorksheetGraphique](postworksheetchart) : mettre à jour les propriétés du graphique dans la feuille de calcul.
 - [GetWorksheetChartLegend](getworksheetchartlegend) : Récupérez la description de la légende du graphique dans la feuille de calcul.
 - [PostWorksheetGraphiqueLégende](postworksheetchartlegend) : Mettre à jour la légende du graphique dans la feuille de calcul.
 - [PutWorksheetChartLégende](putworksheetchartlegend) : Afficher la légende du graphique dans la feuille de calcul.
 - [Supprimer la feuille de calculGraphiqueLégende](deleteworksheetchartlegend) : masque la légende du graphique dans la feuille de calcul.
 - [Supprimer une feuille de calcul](deleteworksheetcharts) : Effacez les graphiques dans les feuilles de calcul.
 - [GetWorksheetChartTitle](getworksheetcharttitle) : Récupérez la description du titre du graphique dans la feuille de calcul.
-- [PostWorksheetChartTitle](postworksheetcharttitle) : Mettre à jour le titre du graphique dans la feuille de calcul.
+- [PostWorksheetChartTitre](postworksheetcharttitle) : Mettre à jour le titre du graphique dans la feuille de calcul.
 - [PutWorksheetChartTitle](putworksheetcharttitle) : Définissez le titre du graphique dans la feuille de calcul.
 - [SupprimerWorksheetChartTitle](deleteworksheetcharttitle) : Masquer le titre du graphique dans la feuille de calcul.
 - [GetChartSeriesAxis](getchartseriesaxis) Récupère les descriptions des axes des séries de graphiques dans le graphique.
@@ -127,6 +128,7 @@ weight: 50
 - [PostWorkbookDataFill](postworkbookdatafill) Le remplissage des données pour les fichiers de feuilles de calcul est principalement utilisé pour remplir des données vides dans des tableaux et des plages.
 - [PostDataFill](postdatafill) Le remplissage des données pour les fichiers de feuilles de calcul est principalement utilisé pour remplir des données vides dans des tableaux et des plages.
 - [PostDeleteIncompleteRows](postdeleteincompleterows) : La suppression des lignes incomplètes des fichiers de feuille de calcul est principalement utilisée pour éliminer les lignes incomplètes des tableaux et des plages.
+- [PostTransformationDeDonnées](postdatatransformation) : La transformation des données d'une feuille de calcul est principalement utilisée pour faire pivoter les colonnes et annuler le pivotement des colonnes.
 - [GetWorksheetHyperliens](getworksheethyperlinks) : Récupérer les descriptions des hyperliens dans la feuille de calcul.
 - [GetWorksheetHyperlien](getworksheethyperlink) : Récupérez la description du lien hypertexte par index dans la feuille de calcul.
 - [Supprimer la feuille de travailHyperlien](deleteworksheethyperlink) : Supprimer le lien hypertexte par index dans la feuille de calcul.
@@ -134,7 +136,7 @@ weight: 50
 - [PutWorksheetHyperlien](putworksheethyperlink) : Ajouter un lien hypertexte dans la feuille de calcul.
 - [Supprimer la feuille de travailHyperliens](deleteworksheethyperlinks) : supprimez tous les hyperliens dans la feuille de calcul.
 - [Post-assemblage](postassemble) : Assemblez des fichiers de données avec des fichiers modèles pour générer des fichiers dans différents formats.
-- [PostCompresser](postcompress) : Compressez les fichiers et générez des fichiers cibles dans différents formats, les formats de fichiers pris en charge incluent Xls, Xlsx, Xlsm, Xlsb, Ods et plus encore.
+- [PostCompresser](postcompress) Compressez les fichiers et générez des fichiers cibles dans différents formats, les formats de fichiers pris en charge incluent Xls, Xlsx, Xlsm, Xlsb, Ods et plus encore.
 - [Postfusion](postmerge) : Fusionner les cellules dans la feuille de calcul.
 - [Post-split](postsplit) : Divisez les fichiers de feuille de calcul Excel en fonction de feuilles de calcul et créez des fichiers de sortie dans différents formats.
 - [PostRecherche](postsearch) : Recherchez le texte spécifié dans les fichiers Excel.
@@ -144,8 +146,8 @@ weight: 50
 - [PostClearObjects](postclearobjects) : Effacer les éléments internes des fichiers Excel et générer des fichiers de sortie dans différents formats.
 - [PostReverse](postreverse) : Inversez les lignes ou les colonnes des fichiers Excel et créez des fichiers de sortie dans différents formats.
 - [Après réparation](postrepair) : Réparez les fichiers anormaux et générez des fichiers dans différents formats.
-- [PostRotation](postrotate) : faites pivoter les lignes, les colonnes ou d'autres objets dans les fichiers Excel et enregistrez-les dans différents formats.
-- [PostMétadonnées](postmetadata) Mettez à jour les propriétés du document dans le fichier Excel et enregistrez-les sous différents formats.
+- [PostRotation](postrotate) faites pivoter les lignes, les colonnes ou d'autres objets dans les fichiers Excel et enregistrez-les dans différents formats.
+- [PostMétadonnées](postmetadata) : Mettez à jour les propriétés du document dans le fichier Excel et enregistrez-les sous différents formats.
 - [Obtenir les métadonnées](getmetadata) : Obtenez les propriétés du document des cellules.
 - [Supprimer les métadonnées](deletemetadata) : Supprimez les propriétés du document des cellules dans le fichier Excel et enregistrez-les dans différents formats.
 - [GetWorksheetListObjects](getworksheetlistobjects) : Récupérez les descriptions des ListObjects dans la feuille de calcul.
@@ -155,8 +157,8 @@ weight: 50
 - [SupprimerWorksheetListObject](deleteworksheetlistobject) : Supprimer l'objet de liste par index dans la feuille de calcul.
 - [PostWorksheetListObject](postworksheetlistobject) : Mettre à jour l'objet de la liste par index dans la feuille de calcul.
 - [PostWorksheetListObjectConvertToRange](postworksheetlistobjectconverttorange) : Convertir l'objet de liste en plage dans la feuille de calcul.
-- [PostWorksheetListObjectSummarizeWithPivotTable](postworksheetlistobjectsummarizewithpivottable) : Créez un tableau croisé dynamique avec un objet de liste dans la feuille de calcul.
-- [PostWorksheetListObjectSortTable](postworksheetlistobjectsorttable) Trier l'objet de la liste dans la feuille de calcul.
+- [PostWorksheetListObjectSummarizeWithPivotTable](postworksheetlistobjectsummarizewithpivottable) Créez un tableau croisé dynamique avec un objet de liste dans la feuille de calcul.
+- [PostWorksheetListObjectSortTable](postworksheetlistobjectsorttable) : Trier l'objet de la liste dans la feuille de calcul.
 - [PostWorksheetListObjectRemoveDuplicates](postworksheetlistobjectremoveduplicates) : Supprimez les doublons dans l'objet de liste.
 - [PostWorksheetListObjectInsertSlicer](postworksheetlistobjectinsertslicer) : Insérer un slicer pour l'objet de liste.
 - [PostWorksheetListColumn](postworksheetlistcolumn) : Mettre à jour la colonne de liste dans l'objet de liste.
@@ -167,8 +169,8 @@ weight: 50
 - [Supprimer la feuille de travailOleObject](deleteworksheetoleobject) : supprime un objet OLE dans la feuille de calcul.
 - [PostUpdateWorksheetOleObject](postupdateworksheetoleobject) : Mettre à jour un objet OLE dans la feuille de calcul.
 - [PutWorksheetOleObject](putworksheetoleobject) : Ajoutez un objet OLE dans la feuille de calcul.
-- [ObtenirVerticalPageBreaks](getverticalpagebreaks) : Récupérez les descriptions des sauts de page verticaux dans la feuille de calcul.
-- [Obtenir des sauts de page horizontaux](gethorizontalpagebreaks) Récupérez les descriptions des sauts de page horizontaux dans la feuille de calcul.
+- [ObtenirVerticalPageBreaks](getverticalpagebreaks) Récupérez les descriptions des sauts de page verticaux dans la feuille de calcul.
+- [Obtenir des sauts de page horizontaux](gethorizontalpagebreaks) : Récupérez les descriptions des sauts de page horizontaux dans la feuille de calcul.
 - [ObtenirVerticalPageBreak](getverticalpagebreak) : Récupère une description de saut de page vertical dans la feuille de calcul.
 - [ObtenirHorizontalPageBreak](gethorizontalpagebreak) : Récupère une description de saut de page horizontal dans la feuille de calcul.
 - [PutVerticalPageBreak](putverticalpagebreak) : Ajoutez un saut de page vertical dans la feuille de calcul.
@@ -181,19 +183,19 @@ weight: 50
 - [Configuration de la page](postpagesetup) : Mettre à jour la mise en page dans la feuille de calcul.
 - [Supprimer l'en-tête du pied de page](deleteheaderfooter) : Effacer l'en-tête et le pied de page de la feuille de calcul.
 - [ObtenirEn-Tête](getheader) : Récupère la description de l’en-tête de page dans la feuille de calcul.
-- [En-tête de message](postheader) Mettre à jour l'en-tête de la page dans la feuille de calcul.
+- [En-tête de message](postheader) : Mettre à jour l'en-tête de la page dans la feuille de calcul.
 - [Obtenir le pied de page](getfooter) : Récupère la description du pied de page dans la feuille de calcul.
 - [Pied de page](postfooter) : Mettre à jour le pied de page dans la feuille de calcul.
 - [PostFitWideToPages](postfitwidetopages) : Définissez l'échelle à laquelle la page s'adaptera en largeur une fois imprimée sur la feuille.
 - [PostFitTallToPages](postfittalltopages) : Définissez l'échelle à laquelle la page s'ajustera en hauteur une fois imprimée sur la feuille.
-- [Obtenir des images de feuille de travail](getworksheetpictures) : Récupérez les descriptions des images dans la feuille de calcul.
+- [Obtenir des images de feuille de travail](getworksheetpictures) : Récupérer les descriptions des images dans la feuille de calcul.
 - [GetWorksheetPictureWithFormat](getworksheetpicturewithformat) : Récupérer une image par numéro dans la feuille de calcul.
 - [PutWorksheetAddPicture](putworksheetaddpicture) : Ajoutez une nouvelle image dans la feuille de calcul.
 - [PostWorksheetImage](postworksheetpicture) : Mettre à jour une image par index dans la feuille de calcul.
 - [Supprimer la feuille de travailImage](deleteworksheetpicture) : Supprimez un objet image par index dans la feuille de calcul.
-- [Supprimer la feuille de travailPhotos](deleteworksheetpictures) : Supprimez toutes les images de la feuille de calcul.
+- [Supprimer la feuille de travailPhotos](deleteworksheetpictures) Supprimez toutes les images de la feuille de calcul.
 - [GetWorksheetPivotTables](getworksheetpivottables) : Récupérez les descriptions des tableaux croisés dynamiques dans la feuille de calcul.
-- [GetWorksheetPivotTable](getworksheetpivottable) Récupérez les informations du tableau croisé dynamique par index dans la feuille de calcul.
+- [GetWorksheetPivotTable](getworksheetpivottable) : Récupérez les informations du tableau croisé dynamique par index dans la feuille de calcul.
 - [GetPivotTableField](getpivottablefield) : Récupérez les descriptions des champs pivots dans le tableau croisé dynamique.
 - [GetWorksheetPivotTableFilters](getworksheetpivottablefilters) : Obtient les filtres de tableau croisé dynamique dans la feuille de calcul.
 - [GetWorksheetPivotTableFilter](getworksheetpivottablefilter) : Récupérez les filtres du tableau croisé dynamique dans la feuille de calcul.
@@ -217,7 +219,7 @@ weight: 50
 - [PutDocumentProperty](putdocumentproperty) : Définissez ou ajoutez une propriété Excel.
 - [ObtenirDocumentProperty](getdocumentproperty) : Obtenez la propriété Excel par son nom.
 - [Supprimer la propriété du document](deletedocumentproperty) : Supprimer une propriété Excel.
-- [Supprimer les propriétés du document](deletedocumentproperties) : supprimez toutes les propriétés du document personnalisé et réinitialisez celles intégrées.
+- [Supprimer les propriétés du document](deletedocumentproperties) supprimez toutes les propriétés du document personnalisé et réinitialisez celles intégrées.
 - [PostDigitalSignature](postdigitalsignature) : Excel fichier signature numérique.
 - [PostEncryptWorkbook](postencryptworkbook) : Excel Cryptage.
 - [SupprimerDecryptWorkbook](deletedecryptworkbook) : Excel décryptage des fichiers.
@@ -230,9 +232,9 @@ weight: 50
 - [PostProtect](postprotect) : Excel cryptage des fichiers.
 - [PostWorksheetCellsRangesCopie](postworksheetcellsrangescopy) : copiez le contenu de la plage source vers la plage de destination dans la feuille de calcul.
 - [PostWorksheetCellsRangeMerge](postworksheetcellsrangemerge) : Fusionner une plage de cellules en une seule cellule.
-- [PostWorksheetCellsRangeUnMerge](postworksheetcellsrangeunmerge) : Annulez la fusion des cellules fusionnées dans cette plage.
+- [PostWorksheetCellsRangeUnMerge](postworksheetcellsrangeunmerge) Annulez la fusion des cellules fusionnées dans cette plage.
 - [PostWorksheetCellsRangeStyle](postworksheetcellsrangestyle) : définit le style pour la plage spécifiée.
-- [GetWorksheetCellsRangeValue](getworksheetcellsrangevalue) récupère les valeurs des cellules dans la plage spécifiée.
+- [GetWorksheetCellsRangeValue](getworksheetcellsrangevalue) : récupère les valeurs des cellules dans la plage spécifiée.
 - [PostWorksheetCellsRangeValue](postworksheetcellsrangevalue) : Attribuez une valeur à la plage ; si nécessaire, la valeur sera convertie en un autre type de données et le format numérique de la cellule sera réinitialisé.
 - [PostWorksheetCellsRangeMoveTo](postworksheetcellsrangemoveto) : déplace la plage actuelle vers la plage de destination.
 - [PostWorksheetCellsRangeSort](postworksheetcellsrangesort) : effectuez un tri des données autour d'une plage de cellules.
@@ -240,8 +242,8 @@ weight: 50
 - [PostWorksheetCellsRangeColumnWidth](postworksheetcellsrangecolumnwidth) : définit la largeur de colonne de la plage spécifiée.
 - [PostWorksheetCellsRangeRowHeight](postworksheetcellsrangerowheight) : Définit la hauteur de ligne de la plage.
 - [PutWorksheetCellsRange](putworksheetcellsrange) : Insérez une plage de cellules et décalez les cellules existantes en fonction de l'option de décalage spécifiée.
-- [SupprimerWorksheetCellsRange](deleteworksheetcellsrange) : supprime une plage de cellules et décale les cellules existantes en fonction de l'option de décalage spécifiée.
-- [ObtenirWorksheetShapes](getworksheetshapes) Récupérez les descriptions des formes dans la feuille de calcul.
+- [SupprimerWorksheetCellsRange](deleteworksheetcellsrange) supprime une plage de cellules et décale les cellules existantes en fonction de l'option de décalage spécifiée.
+- [ObtenirWorksheetShapes](getworksheetshapes) : Récupérez les descriptions des formes dans la feuille de calcul.
 - [Obtenir la forme de la feuille de travail](getworksheetshape) : Récupère la description de la forme dans la feuille de calcul.
 - [PutWorksheetShape](putworksheetshape) : Ajoutez une forme dans la feuille de calcul.
 - [Supprimer les formes de feuille de calcul](deleteworksheetshapes) : Supprimez toutes les formes de la feuille de calcul.
@@ -255,7 +257,7 @@ weight: 50
 - [Supprimer la feuille de travail SparklineGroup](deleteworksheetsparklinegroup) : Supprimez un groupe de sparklines dans la feuille de calcul.
 - [PutWorksheetSparklineGroup](putworksheetsparklinegroup) : Ajoutez un groupe sparkline dans la feuille de calcul.
 - [PostWorksheetSparklineGroup](postworksheetsparklinegroup) : Mettez à jour un groupe sparkline dans la feuille de calcul.
-- [PostExécutionTâche](postruntask) Exécuter des tâches.
+- [PostExécutionTâche](postruntask) : Exécuter des tâches.
 - [GetWorkbookDefaultStyle](getworkbookdefaultstyle) : Récupère la description du style par défaut du classeur.
 - [GetWorkbookTextItems](getworkbooktextitems) : Récupère les éléments de texte dans le classeur.
 - [GetWorkbookNames](getworkbooknames) : Récupère les plages nommées dans le classeur.
@@ -267,10 +269,10 @@ weight: 50
 - [Supprimer le nom du classeur](deleteworkbookname) : supprime une plage nommée dans le classeur.
 - [PostWorkbooksFusion](postworkbooksmerge) : fusionner un classeur dans le classeur existant.
 - [PostWorkbooksTextSearch](postworkbookstextsearch) : Rechercher du texte dans le classeur.
-- [PostWorkbookTextReplace](postworkbooktextreplace) : Remplace le texte dans le classeur.
+- [PostWorkbookTextReplace](postworkbooktextreplace) Remplace le texte dans le classeur.
 - [PostWorkbookGetSmartMarkerResult](postworkbookgetsmartmarkerresult) : Traitement intelligent des marqueurs.
 - [PutWorkbookCréer](putworkbookcreate) : Créez un nouveau classeur en utilisant différentes méthodes.
-- [PostWorkbookSplit](postworkbooksplit) divisez le classeur avec un format spécifique.
+- [PostWorkbookSplit](postworkbooksplit) : divisez le classeur avec un format spécifique.
 - [PostWorkbookCalculateFormule](postworkbookcalculateformula) : Calculez toutes les formules du classeur.
 - [PostAutofitWorkbookRows](postautofitworkbookrows) : Ajustement automatique des lignes dans le classeur.
 - [PostAutofitWorkbookColumns](postautofitworkbookcolumns) : Ajustement automatique des colonnes dans le classeur.
@@ -283,7 +285,7 @@ weight: 50
 - [Obtenir des feuilles de travail](getworksheets) : Récupérer la description des feuilles de calcul d'un classeur.
 - [GetWorksheetWithFormat](getworksheetwithformat) : récupère la feuille de calcul dans un format spécifié à partir du classeur.
 - [Feuille de calcul PutChangeVisibility](putchangevisibilityworksheet) : modifier la visibilité de la feuille de calcul dans le classeur.
-- [PutActiveWorksheet](putactiveworksheet) Définissez l’index de la feuille de calcul active dans le classeur.
+- [PutActiveWorksheet](putactiveworksheet) : Définissez l’index de la feuille de calcul active dans le classeur.
 - [PutInsertNewWorksheet](putinsertnewworksheet) : Insérez une nouvelle feuille de calcul dans le classeur.
 - [PutAddNewWorksheet](putaddnewworksheet) : Ajouter une nouvelle feuille de calcul dans le classeur.
 - [Supprimer la feuille de travail](deleteworksheet) : Supprimer une feuille de calcul dans le classeur.
@@ -296,8 +298,8 @@ weight: 50
 - [GetWorksheetComment](getworksheetcomment) : Récupère la description du commentaire dans la feuille de calcul.
 - [PutWorksheetComment](putworksheetcomment) : Ajoutez un commentaire de cellule dans la feuille de calcul.
 - [PostWorksheetComment](postworksheetcomment) : Mettre à jour le commentaire de la cellule dans la feuille de calcul.
-- [Supprimer la feuille de travailComment](deleteworksheetcomment) : Supprimer le commentaire de cellule dans la feuille de calcul.
-- [Supprimer les commentaires de la feuille de travail](deleteworksheetcomments) Supprimez tous les commentaires de la feuille de calcul.
+- [Supprimer la feuille de travailComment](deleteworksheetcomment) Supprimer le commentaire de cellule dans la feuille de calcul.
+- [Supprimer les commentaires de la feuille de travail](deleteworksheetcomments) : Supprimez tous les commentaires de la feuille de calcul.
 - [GetWorksheetMergedCells](getworksheetmergedcells) : Obtient les cellules fusionnées de la feuille de calcul.
 - [GetWorksheetMergedCell](getworksheetmergedcell) : Récupère la description d’une cellule fusionnée par son index dans la feuille de calcul.
 - [GetWorksheetCalculateFormula](getworksheetcalculateformula) : Calculez la formule dans la feuille de calcul.
@@ -322,6 +324,6 @@ weight: 50
 - [GetWorksheetValidations](getworksheetvalidations) : Récupérer les descriptions des validations dans la feuille de calcul.
 - [GetWorksheetValidation](getworksheetvalidation) : Récupérer une validation par son index dans la feuille de calcul.
 - [PutWorksheetValidation](putworksheetvalidation) : Ajoutez une validation à l'index dans la feuille de calcul.
-- [PostWorksheetValidation](postworksheetvalidation) : Mettre à jour une validation par index dans la feuille de calcul.
-- [Supprimer la feuille de travailValidation](deleteworksheetvalidation) Supprime une validation par index dans la feuille de calcul.
+- [PostWorksheetValidation](postworksheetvalidation) Mettre à jour une validation par index dans la feuille de calcul.
+- [Supprimer la feuille de travailValidation](deleteworksheetvalidation) : Supprime une validation par index dans la feuille de calcul.
 - [Supprimer la feuille de travailValidations](deleteworksheetvalidations) : Supprimez toutes les validations dans la feuille de calcul.

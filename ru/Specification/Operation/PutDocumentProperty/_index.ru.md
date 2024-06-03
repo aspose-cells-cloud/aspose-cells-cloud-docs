@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/putdocumentproperty/
 description: Установите или добавьте свойство Excel
+kwords: Excel, Office, электронная таблица, Cloud REST API, PutDocumentProperty
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutDocumentProperty" >}}

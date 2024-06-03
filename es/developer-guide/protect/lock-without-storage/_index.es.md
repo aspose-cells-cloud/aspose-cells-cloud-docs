@@ -8,6 +8,7 @@ aliases: [/lock/without-storage/,/lock/]
 keywords: Lock Excel files
 description: Aspose.Cells Cloud REST API admite el bloqueo de archivos Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 70
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Bloquear
 ---
 Este REST API indica `lock` Excel archivos.
 ## RSET API

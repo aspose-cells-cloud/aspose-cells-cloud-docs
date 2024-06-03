@@ -8,6 +8,7 @@ aliases: [/unhide-rows-in-excel-worksheet/]
 keywords: Unhide rows on an Excel worksheet
 description: Aspose.Cells Cloud REST API supporta la visualizzazione delle righe su un foglio di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 50
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Scopri righe su un foglio di lavoro Excel
 ---
 Questo REST API indica di mostrare le righe su un foglio di lavoro Excel.
  
@@ -22,7 +23,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
  
 | Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
 |:- |:- |:- |:- |
-| nome| corda| sentiero|Il nome della cartella di lavoro.|
+| nome| corda| sentiero| Il nome della cartella di lavoro.|
 | nomefoglio| corda| sentiero| Il nome del foglio di lavoro.|
 | startrow| numero intero| domanda| L'indice della riga iniziale da utilizzare.|
 | totaleRighe| numero intero| domanda| Numero di file da gestire.|

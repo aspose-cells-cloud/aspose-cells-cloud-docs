@@ -4,19 +4,20 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/model/listbox/
 description: "Aspose.Cells Bulut modeli spesifikasyonu: ListBox. Açma, oluşturma, düzenleme, bölme, birleştirme, karşılaştırma ve dönüştürme gibi özelliklerle Excel ve diğer elektronik tablo belgelerini zahmetsizce yönetin"
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, ListBox
 weight: 50
 ---
 ## **liste kutusu**
 
- 
+ Bir liste kutusu nesnesini temsil eder.
 
 | Mülkiyet adı| Emlak Tipi| Geçersiz kılınabilir| Sadece oku| Varsayılan değer| Tanım|
 |:- |:- |:- |:- |:- |:- |
 | Giriş aralığı| Sicim| Doğru| YANLIŞ|||
 | Eşya sayısı| Tamsayı| Doğru| YANLIŞ|| Liste kutusundaki öğe sayısını alır.|
-| Sayfa Değişikliği| Tamsayı| Doğru| YANLIŞ|| Kullanıcı kaydırma çubuğunun sayfa yukarı veya sayfa aşağı bölgesini tıklattığında denetimin değerinin ne kadar değiştirileceğini belirtir.|
+| Sayfa Değişikliği| Tamsayı| Doğru| YANLIŞ||Kullanıcı kaydırma çubuğunun sayfa yukarı veya sayfa aşağı bölgesini tıklattığında denetimin değerinin ne kadar değiştirileceğini belirtir.|
 | Seçilen Hücreler| Konteyner| Doğru| YANLIŞ|| Seçilen hücreleri alır. Giriş aralığı ayarlanmadıysa veya hiçbir öğe seçilmediyse null değerini döndürür|
-| Seçilen Dizin| Tamsayı| Doğru| YANLIŞ|| Bir liste kutusunda veya birleşik giriş kutusunda o anda seçili olan öğenin dizin numarasını alır veya ayarlar. Sıfır tabanlı.|
+| Seçilen Dizin| Tamsayı| Doğru| YANLIŞ||Bir liste kutusunda veya birleşik giriş kutusunda o anda seçili olan öğenin dizin numarasını alır veya ayarlar. Sıfır tabanlı.|
 | Seçim Türü| Sicim| Doğru| YANLIŞ|| Belirtilen liste kutusunun seçim modunu alır veya ayarlar.|
 | Gölge| Boolean| Doğru| YANLIŞ|| Açılan kutunun 3 boyutlu gölgelendirmeye sahip olup olmadığını belirtir.|
 | İsim| Sicim| Doğru| YANLIŞ|||
@@ -36,7 +37,7 @@ weight: 50
 | X| Tamsayı| Doğru| YANLIŞ|||
 | e| Tamsayı| Doğru| YANLIŞ|||
 | Dönüş açısı| Yüzer| Doğru| YANLIŞ|||
-| HtmlMetin| Sicim| Doğru| YANLIŞ|||
+|HtmlMetin| Sicim| Doğru| YANLIŞ|||
 | Metin| Sicim| Doğru| YANLIŞ|||
 | Alternatif metin| Sicim| Doğru| YANLIŞ|||
 | MetinYatay Hizalama| Sicim| Doğru| YANLIŞ|||
@@ -57,4 +58,5 @@ weight: 50
 | Köprü| Sicim| Doğru| YANLIŞ|||
 | bağlantı| Sınıf:Bağlantı| Doğru| YANLIŞ|||
 
-**Ebeveyn adı** : (Şekil)[şekil]
+**Ebeveyn adı** : [Şekil](/specification/model/shape)
+

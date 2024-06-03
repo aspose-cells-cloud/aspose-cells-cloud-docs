@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/model/row/
 description: "Aspose.Cells Specifica del modello cloud: Riga. Gestisci facilmente Excel e altri fogli di calcolo con funzionalità come apertura, generazione, modifica, divisione, unione, confronto e conversione"
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, Riga
 weight: 50
 ---
 ## **riga**
 
- 
+ Rappresenta una singola riga in un foglio di lavoro.
 
 | Nome della proprietà| Tipo di proprietà| Nullabile| Sola lettura| Valore di default| Descrizione|
 |:- |:- |:- |:- |:- |:- |
@@ -17,8 +18,9 @@ weight: 50
 | Indice| Numero intero| VERO| Falso|| Ottiene l'indice di questa riga.|
 | È vuoto| Booleano| VERO| Falso|| Indica se la riga contiene dati|
 | ÈAltezzaCorrispondente| Booleano| VERO| Falso|| Indica che l'altezza della riga e l'altezza del carattere predefinita corrispondono.|
-| È nascosto| Booleano| VERO| Falso|| Indica se la riga è nascosta.|
+| È nascosto| Booleano| VERO| Falso||Indica se la riga è nascosta.|
 | Stile| Classe:LinkElement| VERO| Falso|| Rappresenta lo stile di questa riga.|
 | collegamento| Classe: collegamento| VERO| Falso|||
 
-**Nome del genitore** : (ElementoLink)[elementolink]
+**Nome del genitore** : [Elemento di collegamento](/specification/model/linkelement)
+

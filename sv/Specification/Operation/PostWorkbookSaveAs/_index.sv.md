@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/postworkbooksaveas/
 description: Spara en Excel-fil i olika format
+kwords: Excel, Office, Kalkylblad, Cloud REST API, PostWorkbookSaveAs
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookSaveAs" >}}

@@ -3,6 +3,7 @@ title:  Aggiornamento Grafico Asse Seconda Categoria
 type: docs
 url: /it/charts/second-category-axis/update/
 weight: 160
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Aggiorna grafico Asse seconda categoria
 ---
  Questo REST API indica l'Asse della seconda categoria del grafico di aggiornamento.
  

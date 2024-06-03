@@ -3,18 +3,20 @@ title: FindRespons
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/model/findresponse/
-description: "Aspose.Cells Cloud-Modellspezifikation: FindResponse. Bearbeiten Sie mühelos Excel und andere Tabellenkalkulationsdokumente mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+description: "Aspose.Cells Cloud-Modellspezifikation: FindResponse. Müheloses Bearbeiten von Excel und anderen Tabellenkalkulationsdokumenten mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, FindResponse
 weight: 50
 ---
-## **findResponse**
+## **Antwort finden**
 
- 
+ Stellt die Suchantwort dar.
 
-| Name des Anwesens| Art der Immobilie| Nullbar| Schreibgeschützt| Standardwert| Beschreibung|
+| Name des Anwesens| Art der Immobilie| Nullwerte zulassen| Schreibgeschützt| Standardwert| Beschreibung|
 |:- |:- |:- |:- |:- |:- |
 | Zählen| Ganze Zahl| WAHR| FALSCH|||
-| TextItems| Klasse:TextItems| WAHR| FALSCH|||
+| Textelemente| Klasse:TextItems| WAHR| FALSCH|||
 | Code| Ganze Zahl| WAHR| FALSCH|||
 | Status| Zeichenfolge| WAHR| FALSCH|||
 
-**Elternname** : (CellsCloudResponse)[cellscloudresponse]
+**Elternname** : [ZellenCloudResponse](/specification/model/cellscloudresponse)
+

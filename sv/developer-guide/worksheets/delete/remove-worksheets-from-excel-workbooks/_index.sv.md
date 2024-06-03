@@ -8,6 +8,7 @@ aliases: [/remove-worksheets-from-excel-workbooks/]
 keywords: Delete an Excel worksheet on an Excel workbook
 description: Aspose.Cells Cloud REST API stöder radering av ett Excel-kalkylblad på en Excel-arbetsbok. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 20
+kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdwon, Ta bort kalkylblad
 ---
 Denna REST API indikerar `delete worksheet`.
  

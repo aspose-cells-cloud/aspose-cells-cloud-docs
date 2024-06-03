@@ -7,6 +7,7 @@ url: /sv/workbook/create/
 keywords: How to create an Excel workbook
 description: Aspose.Cells Cloud REST API hur man skapar en Excel arbetsbok. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Hur man skapar en Excel arbetsbok
 ---
 ## Hur man lagrar en Excel-arbetsbok.
 

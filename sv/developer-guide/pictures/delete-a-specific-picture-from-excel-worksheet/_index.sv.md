@@ -8,6 +8,7 @@ aliases: [/delete-a-specific-picture-from-excel-worksheet/]
 keywords: Delete a picture in an Excel file
 description: Aspose.Cells Cloud REST API stöder radering av en bild i en Excel-fil. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 50
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Ta bort en bild i en Excel-fil
 ---
 Denna REST API indikerar till `delete` en bild från ett Excel kalkylblad.
  
@@ -22,7 +23,7 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
  
 | Parameternamn| Typ| Sökväg/Frågesträng/HTTPBody|Beskrivning|
 |:- |:- |:- |:- |
-| namn| sträng| väg|Arbetsbokens namn.|
+| namn| sträng| väg| Arbetsbokens namn.|
 | arknamn| sträng| väg| Worsheet-namnet.|
 | bildindex| heltal| väg| Bildindex|
 | mapp| sträng| fråga| Arbetsboksmappen.|

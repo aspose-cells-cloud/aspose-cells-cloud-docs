@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/gethorizontalpagebreak/
 description: Çalışma sayfasında yatay sayfa sonu açıklamasını alma
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, GetHorizontalPageBreak
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetHorizontalPageBreak" >}}

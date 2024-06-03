@@ -4,10 +4,11 @@ type: docs
 url: /zh/charts/add/
 aliases: [/add-a-chart-in-a-worksheet/]
 weight: 20
+kwords: Excel, Office 云, REST API, 电子表格, PDF, CSV, Json, Markdwon, 在工作表中添加图表
 ---
 此 REST API 表示向工作表添加新图表。
  
-## RSET API
+## 重置 API
  
 ```bash
  
@@ -18,28 +19,28 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts
  
 |参数名称|类型|路径/查询字符串/HTTPBody|描述|
 |:- |:- |:- |:- |
-|姓名|细绳|小路|作业簿名称。|
+|姓名|细绳|小路|工作簿名称。|
 |工作表名称|细绳|小路|工作表名称。|
 |图表类型|细绳|询问|图表类型，请参考图表资源中的属性Type。|
 |左上行|整数|询问|0 |
-|左上栏|整数|询问|0 |
+|左上列|整数|询问|0 |
 |右下行|整数|询问|0 |
-|右下栏|整数|询问|0 |
-|区域|细绳|询问|指定绘制数据系列的值。|
-|是垂直的|布尔值|询问|真的|
-|类别数据|细绳|询问|获取或设置类别轴值的范围。它可以是单元格范围（例如“d1:e10”）。|
-| isAutoGetSerialName|布尔值|询问|真的|
+|右下列|整数|询问|0 |
+|区域|细绳|询问|指定绘制数据系列所依据的值。|
+|垂直|布尔值|询问|真的|
+|类别数据|细绳|询问|获取或设置分类轴值的范围。可以是单元格范围（例如，“d1:e10”）。|
+|是自动获取串行名称|布尔值|询问|真的|
 |标题|细绳|询问|指定图表标题名称。|
 |文件夹|细绳|询问|工作簿文件夹。|
 |存储名称|细绳|询问|存储名称。|
 |数据标签|布尔值|询问|真的|
 |数据标签位置|细绳|询问|多于|
 |数据透视表|细绳|询问||
-|数据透视表名称|细绳|询问||
+|枢轴表名称|细绳|询问||
  
-这[开放API规范](https://apireference.aspose.cloud/cells/#/Charts/PutWorksheetAddChart)定义了一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Charts/PutWorksheetAddChart)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
  
-您可以使用cURL命令行工具轻松访问Aspose.Cells Web服务。以下示例展示如何使用 cURL 呼叫云端 API。
+您可以使用 cURL 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例显示如何使用 cURL 调用云 API。
 
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
@@ -76,9 +77,9 @@ curl  -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cha
 
 {{< /tabs >}}
 
-## 云SDK系列
+## Cloud SDK 系列
  
-使用 SDK 是加快开发速度的最佳方式。 SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)有关 Aspose.Cells Cloud SDK 的完整列表。
+使用 SDK 是加快开发速度的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)获得 Aspose.Cells Cloud SDKs 的完整列表。
  
 以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
 

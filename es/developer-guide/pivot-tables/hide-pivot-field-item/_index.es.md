@@ -8,6 +8,7 @@ aliases: [/hide-pivot-field-item/]
 keywords: Hide a pivot field in a pivot table
 description: Aspose.Cells Cloud REST API admite ocultar un campo dinámico en la tabla dinámica. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 110
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Ocultar elemento de campo dinámico en una tabla dinámica
 ---
 Este REST API indica que se oculta el elemento del campo dinámico.
  
@@ -28,8 +29,8 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottable
 | tipo de campo pivote| cadena| consulta||
 | índice de campo| entero| consulta||
 | índice de artículos| entero| consulta||
-| esOcultar| booleano| consulta||
-| necesitaReCalcular| booleano| consulta| FALSO|
+| esOcultar|booleano| consulta||
+| necesitaReCalcular|booleano| consulta| FALSO|
 | carpeta| cadena| consulta||
 | nombredealmacenamiento| cadena| consulta| nombre del almacenamiento.|
  

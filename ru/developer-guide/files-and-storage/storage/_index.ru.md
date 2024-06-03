@@ -6,6 +6,7 @@ url: /ru/storage/
 keywords: disc-usage, file version, exist
 description: Aspose.Cells Cloud REST API поддерживает загрузку, скачивание, удаление, копирование и перемещение папок. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 100
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, хранилище
 ---
 Aspose.Cells Облако предоставляет различные API-интерфейсы управления хранилищем.
 

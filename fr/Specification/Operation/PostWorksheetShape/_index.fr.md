@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postworksheetshape/
 description: Mettre à jour une forme dans la feuille de calcul
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostWorksheetShape
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetShape" >}}

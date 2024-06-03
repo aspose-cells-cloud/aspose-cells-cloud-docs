@@ -8,6 +8,7 @@ aliases: [/set-the-style-of-the-range/]
 keywords: Set range style on an Excel workshee
 description: Aspose.Cells Cloud REST API поддерживает настройку стиля диапазона на листе Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 70
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Установить стиль диапазона
 ---
 ## **Введение**
 Этот пример позволяет вам установить стиль диапазона, используя Aspose.Cells Cloud API в ваших приложениях. Вы можете использовать наш REST API с любым языком: .NET, Java, PHP, Ruby, Rails, Python, jQuery и многими другими.

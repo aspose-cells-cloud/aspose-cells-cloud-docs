@@ -7,6 +7,7 @@ url: /sv/import/with-using-storage/
 aliases: [/import-data-into-excel-worksheet/, /import-data-into-worksheet/ , /import-data-in-excel-worksheet/, /import-data/]
 description: "Cells.Cloud API för Excel fungerar: Importera data till Excel Arbetsblad"
 weight: 10
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Importera data med användning av lagring
 ---
 Denna REST API indikerar `import data` till Excel fil.
  

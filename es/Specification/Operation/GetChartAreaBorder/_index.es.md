@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/getchartareaborder/
 description: Recuperar la descripción del borde del área del gráfico
+kwords: Excel, Office, hoja de cálculo, nube REST API, GetChartAreaBorder
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetChartAreaBorder" >}}

@@ -3,6 +3,7 @@ title:  Обновить ось значений диаграммы
 type: docs
 url: /ru/charts/value-axis/update/
 weight: 160
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, обновить ось значений диаграммы
 ---
  Этот REST API указывает на обновление оси значений диаграммы.
  

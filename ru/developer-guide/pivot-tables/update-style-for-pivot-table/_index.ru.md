@@ -8,6 +8,7 @@ aliases: [/update-style-for-pivot-table/]
 keywords: Update all cell style for a pivot table
 description: Aspose.Cells Cloud REST API поддерживает обновление всех стилей ячеек сводной таблицы. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 100
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Обновление стиля для сводной таблицы
 ---
 Этот REST API указывает стиль `update` для сводной таблицы.
  
@@ -26,7 +27,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottable
 | имя листа| нить| путь| Имя рабочего листа.|
 | сводная таблицатаблеиндекс| целое число| путь| Индекс сводной таблицы|
 | стиль|| тело| Стиль dto в теле запроса.|
-| нужнопересчитать| логическое значение| запрос| ЛОЖЬ|
+| нужнопересчитать|логическое значение| запрос| ЛОЖЬ|
 | папка| нить| запрос| Папка документа.|
 | имя_хранилища| нить| запрос| имя хранилища.|
  

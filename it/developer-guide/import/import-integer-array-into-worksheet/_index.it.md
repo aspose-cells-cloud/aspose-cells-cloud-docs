@@ -7,6 +7,7 @@ aliases: [/import-integer-array-into-excel-worksheet/,/import-integer-array-into
 keywords: Import integer array data into Excel files
 description: Aspose.Cells Cloud REST API supporta l'importazione di dati di array di numeri interi nei file Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 30
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Importa array di numeri interi nel foglio di lavoro Excel
 ---
 Questo REST API `import int array data` nel foglio di lavoro Excel.
 

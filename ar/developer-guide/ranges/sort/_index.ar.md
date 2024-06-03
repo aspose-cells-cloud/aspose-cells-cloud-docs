@@ -7,8 +7,9 @@ keywords: Range Sort
 url: /ar/ranges/sort/
 description:  يعين حدودًا تفصيلية حول نطاق من الخلايا.
 weight: 20
+kwords: Excel، Office كلاود، ريست API، جدول بيانات، PDF، CSV، Json، Markdwon، فرز النطاق
 ---
-يشير REST API إلى نوع النطاق.
+ يشير REST API إلى نوع النطاق.
 
 ## رسيت API
 

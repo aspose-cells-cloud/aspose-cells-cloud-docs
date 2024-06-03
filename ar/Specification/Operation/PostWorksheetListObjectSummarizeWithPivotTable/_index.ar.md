@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postworksheetlistobjectsummarizewithpivottable/
 description: قم بإنشاء جدول محوري باستخدام كائن القائمة في ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostWorksheetListObjectSummarizeWithPivotTable
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetListObjectSummarizeWithPivotTable" >}}

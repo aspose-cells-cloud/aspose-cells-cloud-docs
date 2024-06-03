@@ -5,8 +5,9 @@ type: docs
 url: /zh/tasks/
 aliases: [/working-with-tasks/]
 keywords: REST API, task, spreadsheets, exce
-description: Cells.Cloud API for Excel操作：用任务操作excel
+description: Cells.Cloud API 为 Excel 操作：使用任务操作 excel
 weight: 100
+kwords: Excel, Office 云, REST API, 电子表格, PDF, CSV, Json, Markdwon, 任务
 ---
 ## 处理任务。
 
@@ -17,4 +18,4 @@ weight: 100
 - [使用 ImportData 任务](/cells/zh/working-with-importdata-task/)
 - [使用 SaveResult 任务](/cells/zh/working-with-saveresult-task/)
 - [使用 SmartMarker 任务](/cells/zh/working-with-smartmarker-task/)
-- [在任务 API 中使用工作表操作](/cells/zh/working-with-worksheetoperates-in-task-api/)
+- [使用任务 API 中的 WorksheetOperates](/cells/zh/working-with-worksheetoperates-in-task-api/)

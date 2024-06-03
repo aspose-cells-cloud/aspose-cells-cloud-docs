@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postimportdata/
 description: استيراد البيانات إلى ملف Excel
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostImportData
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostImportData" >}}
@@ -23,7 +24,7 @@ weight: 50
     {{< blocks/products/cells/docs-Parameter-content columns="المنطقة، سلسلة، الإعدادات الإقليمية للمصنف." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="اسم المعلمة، النوع، الوصف" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns=" خيار الاستيراد، الفئة: خيار الاستيراد، خيار الاستيراد. وهي تشمل ImportCSVDataOption، وImportBatchDataOption، وImportPictureOption، وImportStringArrayOption، وImport2DimensionStringArrayOption، وما إلى ذلك." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="خيار الاستيراد، الفئة: خيار الاستيراد، خيار الاستيراد. وهي تشمل ImportCSVDataOption، وImportBatchDataOption، وImportPictureOption، وImportStringArrayOption، وImport2DimensionStringArrayOption، وما إلى ذلك." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

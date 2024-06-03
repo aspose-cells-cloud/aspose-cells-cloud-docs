@@ -4,20 +4,21 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/model/errorbar/
 description: "Aspose.Cells Molnmodellspecifikation: ErrorBar. Hantera enkelt Excel och andra kalkylarksdokument med funktioner som att öppna, generera, redigera, dela, slå samman, jämföra och konvertera"
+kwords: Excel, Office, Kalkylblad, Cloud REST API, ErrorBar
 weight: 50
 ---
 ## **errorBar**
 
- 
+ Representerar felfältet för dataserien.
 
 | Egendomsnamn| Egenskapstyp| Nullbar| Endast läs| Standardvärde| Beskrivning|
 |:- |:- |:- |:- |:- |:- |
 | Länk| Klass: Länk| Sann| Falsk|||
-| Belopp| Flytande| Sann| Falsk|| Representerar mängden felfält. Beloppet måste vara större än eller lika med noll.|
+| Belopp| Flytande| Sann| Falsk||Representerar mängden felfält. Beloppet måste vara större än eller lika med noll.|
 | Bildskärmstyp| Sträng| Sann| Falsk|| Representerar visningstyp för felfält.|
 | Minusvärde| Sträng| Sann| Falsk|| Representerar negativt felbelopp när felstapeltypen är anpassad.|
 | PlusVärde| Sträng| Sann| Falsk|| Representerar positivt felmängd när felstapeltypen är anpassad.|
-| ShowMarkerTTopp| Boolean| Sann| Falsk||Indikerar om formateringsfelstaplar med en T-top.|
+| ShowMarkerTTopp| Boolean| Sann| Falsk|| Indikerar om formateringsfelstaplar med en T-top.|
 | Typ| Sträng| Sann| Falsk|| Representerar felstapelmängdstyp.|
 | StartArrowLength| Sträng| Sann| Falsk|||
 | StartArrowWidth| Sträng| Sann| Falsk|||
@@ -39,4 +40,5 @@ weight: 50
 | Vikt| Sträng| Sann| Falsk|||
 | ViktPt| Flytande| Sann| Falsk|||
 
-**Förälders namn** : (Linje)[linje]
+**Förälders namn** : [Linje](/specification/model/line)
+

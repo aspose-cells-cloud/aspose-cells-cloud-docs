@@ -1,9 +1,10 @@
 ﻿---
-title: PublicarOcultarFila de hoja de trabajo
+title: PublicarOcultarFila de hoja de cálculo
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/posthideworksheetrows/
 description: Ocultar filas en la hoja de trabajo
+kwords: Excel, Office, hoja de cálculo, nube REST API, PostHideWorksheetRows
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostHideWorksheetRows" >}}

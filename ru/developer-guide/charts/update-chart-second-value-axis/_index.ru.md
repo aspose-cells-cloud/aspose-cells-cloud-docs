@@ -3,6 +3,7 @@ title:  Обновить ось второго значения диаграмм
 type: docs
 url: /ru/charts/second-value-axis/update/
 weight: 160
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, обновить вторую ось значений диаграммы
 ---
  Этот REST API указывает на обновление второй оси значений диаграммы.
  

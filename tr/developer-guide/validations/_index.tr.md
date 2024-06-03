@@ -6,6 +6,7 @@ url: /tr/validations/
 keywords: Working with validations on an Excel file
 description: Aspose.Cells Cloud REST API, Excel dosyasındaki doğrulamalarla çalışmayı destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 100
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Doğrulamalar
 ---
 Veri doğrulama, MS Excel'de kullanıcının bir Excel sayfasının hücresine ne girebileceğini kontrol etmek için kullanılan bir özelliktir. Örneğin, bir sayfadaki tarih aralığı veya yalnızca tam sayılar gibi girişleri kısıtlayın. Gereksiz yerden tasarruf sağlayan ve değerleri tek bir hücrede gösteren açılır menüler bile oluşturabiliriz. Ayrıca, kullanıcının herhangi bir yanlış değer veya yanlış format girdiğini gösterecek özelleştirilmiş bir mesaj da oluşturabiliriz.
 

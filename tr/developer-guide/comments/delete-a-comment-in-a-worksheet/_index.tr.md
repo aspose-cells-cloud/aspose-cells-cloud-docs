@@ -6,6 +6,7 @@ aliases: [/delete-a-comment-in-a-worksheet/]
 keywords: REST API, spreadsheets, excel, delete a commen
 description: "Cells.Cloud API'i Excel için çalıştırın: yorumu silin"
 weight: 40
+kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Sil
 ---
 Bu REST API, çalışma sayfasının hücre yorumunu sil anlamına gelir.
  

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/model/seriesitems/
 description: "Aspose.Cells Спецификация облачной модели: SeriesItems. Легко обрабатывайте Excel и другие документы электронных таблиц с помощью таких функций, как открытие, создание, редактирование, разделение, слияние, сравнение и преобразование."
+kwords: Excel, Office, электронная таблица, Cloud REST API, SeriesItems
 weight: 50
 ---
 ## **серияПредметы**
@@ -18,4 +19,5 @@ weight: 50
 | Список серий| Контейнер| Истинный| ЛОЖЬ|||
 | связь| Класс:Ссылка| Истинный| ЛОЖЬ|||
 
-**Имя родителя** : (LinkElement)[linkelement]
+**Имя родителя** : [СсылкаЭлемент](/specification/model/linkelement)
+

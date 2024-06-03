@@ -7,6 +7,7 @@ url: /ar/ranges/get/
 keywords: How to get range content from an Excel worksheet
 description: Aspose.Cells Cloud REST API يدعم الحصول على محتوى النطاق من ورقة عمل Excel. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 20
+kwords: Excel، Office Cloud، REST API، جدول البيانات، PDF، CSV، Json، Markdwon، كيفية الحصول على محتوى النطاق من ورقة عمل Excel
 ---
 ## العمل مع الحصول على محتوى النطاق في ورقة عمل Excel.
 

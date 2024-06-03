@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/getworksheets/
 description: Récupérer la description des feuilles de calcul d'un classeur
+kwords: Excel, Office, feuille de calcul, Cloud REST API, GetWorksheets
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheets" >}}

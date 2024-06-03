@@ -3,30 +3,31 @@ title: PostPivotTableUpdatePivotField
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postpivottableupdatepivotfields/
-description: Pivot-Felder in der PivotTable aktualisieren
+description: Pivotfelder in der PivotTable aktualisieren
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostPivotTableUpdatePivotFields
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostPivotTableUpdatePivotFields" >}}
 {{< blocks/products/cells/docs-title titlemsg="Update pivot fields in the PivotTable." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotFields,POST,Pivot-Felder in der PivotTable aktualisieren.,<a href=\'https://apireference.aspose.cloud/cells/#/ PivotTables/PostPivotTableUpdatePivotFields\'>PostPivotTableUpdatePivotFields</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotFields,POST,Pivotfelder in der PivotTable aktualisieren.,<a href=\'https://apireference.aspose.cloud/cells/#/PivotTables/PostPivotTableUpdatePivotFields\'>PostPivotTableUpdatePivotFields</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="PivotTableIndex,Integer,Der PivotTable-Index." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="pivotTableIndex,integer,Der PivotTable-Index." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="PivotFieldType,String,Stellt den PivotTable-Feldtyp dar (Undefiniert/Zeile/Spalte/Seite/Daten)." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="needReCalculate,boolean,Gibt an, ob die spezifische PivotTable berechnet wird (wahr/falsch)." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="pivotFieldType, Zeichenfolge, stellt den PivotTable-Feldtyp dar (Undefiniert/Zeile/Spalte/Seite/Daten)." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="needReCalculate, boolean, Ob die spezifische PivotTable berechnet werden soll (true/false)." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="PivotField, Klasse: Pivotfield, PivotField Repräsentiert das Pivot-Feld." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="PivotField, Klasse: Pivotfield, PivotField stellt Pivotfeld dar." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

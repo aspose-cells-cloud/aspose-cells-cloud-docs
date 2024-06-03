@@ -1,17 +1,17 @@
 ﻿---
-title: ExcelDataStatistic
+title: ExcelDatenStatistik
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/model/exceldatastatistics/
-description: "Aspose.Cells Cloud-Modellspezifikation: ExcelDataStatistics. Bearbeiten Sie mühelos Excel und andere Tabellenkalkulationsdokumente mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+description: "Aspose.Cells Cloud-Modellspezifikation: ExcelDataStatistics. Müheloses Bearbeiten von Excel und anderen Tabellenkalkulationsdokumenten mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, ExcelDataStatistics
 weight: 50
 ---
-## **excelDataStatistics**
+## **excelDatenStatistiken**
 
- 
+ Stellt Excel Datenstatistiken dar.
 
-| Name des Anwesens| Art der Immobilie| Nullbar| Schreibgeschützt| Standardwert| Beschreibung|
+| Name des Anwesens| Art der Immobilie| Nullwerte zulassen| Schreibgeschützt| Standardwert| Beschreibung|
 |:- |:- |:- |:- |:- |:- |
-| WorksheetDataStatistics| Container| WAHR| FALSCH|||
-| NamesCount| Ganze Zahl| WAHR| FALSCH|||
+| ArbeitsblattDatenStatistik| Container| WAHR| FALSCH|| Stellt eine Statistikliste der Arbeitsblattdaten dar.|
 

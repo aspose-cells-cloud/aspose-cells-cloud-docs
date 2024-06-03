@@ -7,6 +7,7 @@ aliases: [/working-with-text/]
 keywords: Get, find, and replace text from Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) files
 description: Aspose.Cells Cloud REST API يدعم الحصول على النص وإيجاده واستبداله من ملفات Excel. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 34
+kwords: Excel، Office كلاود، ريست API، جدول بيانات، PDF، CSV، Json، Markdwon، نص
 ---
 يعد تشغيل النص عملية معقدة لـ Excel. تساهم العديد من العوامل في التعقيد، وبالتالي يجب أخذها في الاعتبار أثناء عملية التصدير. تعد القدرة على إرسال النص إلى تشغيل أنواع من التنسيقات وأنواع البيانات في الملف بجودة احترافية دقيقة من أهم ميزات Aspose.Cells Cloud.
 

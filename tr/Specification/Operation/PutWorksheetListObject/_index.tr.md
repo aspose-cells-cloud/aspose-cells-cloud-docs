@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/putworksheetlistobject/
 description: Çalışma sayfasına bir ListObject ekleyin
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PutWorksheetListObject
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetListObject" >}}

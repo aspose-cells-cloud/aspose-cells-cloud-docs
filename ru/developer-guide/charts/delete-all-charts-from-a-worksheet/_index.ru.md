@@ -4,6 +4,7 @@ type: docs
 url: /ru/charts/clear/
 aliases: [/delete-all-charts-from-a-worksheet/]
 weight: 30
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Удалить все диаграммы с рабочего листа
 ---
 Этот REST API указывает на очистку диаграмм.
  

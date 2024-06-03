@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/postworksheetmatchblanks/
 description: Matcha alla tomma celler i listan
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostWorksheetMatchBlanks
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetMatchBlanks" >}}

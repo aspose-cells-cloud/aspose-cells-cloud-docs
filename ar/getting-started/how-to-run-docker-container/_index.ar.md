@@ -6,8 +6,9 @@ url: /ar/getting-started/how-to-run-docker-container/
 aliases: [/how-to-run-docker-container/]
 description: كيفية تشغيل حاوية Docker Aspose.Cells السحابية. Aspose.Cells تدعم السحابة Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 100
+kwords: Excel، Office Cloud، REST API، جدول البيانات، PDF، CSV، Json، Markdwon، كيفية تشغيل حاوية Docker
 ---
- ال**عامل ميناء** تم تصميم هذه التقنية لأتمتة نشر التطبيقات باستخدام حاويات خفيفة الوزن. يمكن للمطورين استخدام**حاوية عامل الميناء** لاختتام تطبيق بجميع مكتباته وتبعياته ونشر كل شيء كحزمة واحدة.
+ ال**عامل ميناء**تم تصميم هذه التقنية لأتمتة نشر التطبيقات باستخدام حاويات خفيفة الوزن. يمكن للمطورين استخدام**حاوية عامل الميناء** لاختتام تطبيق بجميع مكتباته وتبعياته ونشر كل شيء كحزمة واحدة.
 
  Aspose.Cells قام فريق Cloud بنشر حاوية Docker على[مركز عامل الميناء](https://hub.docker.com/r/aspose/cells-cloud) لتسهيل مستخدمي Docker. سترشدك الأقسام التالية إلى كيفية تشغيل أوامر Docker أو كتابة التكوين في ملف Yaml لأداة إنشاء Docker.
 
@@ -33,7 +34,7 @@ weight: 100
 
 ### قم بتشغيل حاوية Docker باستخدام سطر الأوامر
 
- يمكنك ببساطة تشغيل أمر الإرساء التالي بعد سحب الحاوية منه[مركز عامل الميناء](https://href.li/?https://hub.docker.com/r/aspose/cells-cloud).
+يمكنك ببساطة تشغيل أمر الإرساء التالي بعد سحب الحاوية منه[مركز عامل الميناء](https://href.li/?https://hub.docker.com/r/aspose/cells-cloud).
 
 ```JAVA
 docker run   -e "LicensePublicKey=public_key" -e "LicensePrivateKey=private_key" -v c:/data:c:/data  -v C:/Windows/Fonts:C:/Windows/Fonts -p 80:5000   aspose/cells-cloud

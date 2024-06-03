@@ -5,10 +5,11 @@ type: docs
 url: /zh/columns/
 aliases: [/working-with-columns/]
 keywords: REST API, columns, spreadsheets, exce
-description: Cells.Cloud API for Excel 操作：取消隐藏 Excel 工作表中的列
+description: Cells.Cloud API 用于 Excel 操作：取消隐藏 Excel 工作表中的列
 weight: 100
+kwords: Excel, Office 云, REST API, 电子表格, PDF, CSV, Json, Markdwon, 列
 ---
-## 在 Excel 文件上使用列。
+## 使用 Excel 文件上的列进行操作。
 
 - [如何从 Excel 工作表中获取列。](/cells/zh/columns/get/)
 - [如何在 Excel 工作表上添加空列。](/cells/zh/columns/add/)

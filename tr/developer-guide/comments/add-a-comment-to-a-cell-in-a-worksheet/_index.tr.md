@@ -6,6 +6,7 @@ aliases: [/add-a-comment-to-a-cell-in-a-worksheet/]
 keywords: REST API, spreadsheets, excel, add commen
 description: "Cells.Cloud API'i Excel için çalıştırın: yorum ekleyin"
 weight: 20
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Ekle
 ---
 Bu REST API, Çalışma sayfasının hücre yorumunu ekle anlamına gelir.
  

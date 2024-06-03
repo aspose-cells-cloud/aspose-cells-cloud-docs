@@ -3,6 +3,7 @@ title: Zengin Metin Formatını Cel'ye Uygula
 type: docs
 url: /tr/apply-rich-text-formatting-to-a-cell/
 weight: 40
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Hücreye Zengin Metin Biçimlendirmesi Uygulama
 ---
 Bu REST API, Excel dosyasındaki bir hücreye `rich text formatting`'in uygulandığını gösterir.
 

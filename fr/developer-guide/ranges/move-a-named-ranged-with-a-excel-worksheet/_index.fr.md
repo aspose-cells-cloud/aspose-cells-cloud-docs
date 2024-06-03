@@ -8,8 +8,9 @@ aliases: [/move-a-named-ranged-with-a-excel-worksheet/]
 keywords: Move a named ranged with an Excel workshee
 description: Aspose.Cells Cloud REST API prend en charge le déplacement d'une plage nommée avec une feuille de calcul Excel. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 20
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdwon, Déplacer une plage nommée avec une feuille de calcul Excel
 ---
- Ce REST API indique de déplacer la plage actuelle vers la plage de destination sur une feuille de calcul Excel.
+Ce REST API indique de déplacer la plage actuelle vers la plage de destination sur une feuille de calcul Excel.
             
  
 ## RSET API
@@ -21,7 +22,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/mov
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| nom du classeur|
 | Nom de la feuille| chaîne| chemin| nom de la feuille de calcul|

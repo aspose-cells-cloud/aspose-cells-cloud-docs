@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/deleteworksheetchart/
 description: حذف مخطط حسب الفهرس في ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، RemoveWorksheetChart
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetChart" >}}

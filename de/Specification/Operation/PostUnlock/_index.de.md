@@ -3,19 +3,20 @@ title: PostUnloc
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postunlock/
-description: Entsperren Sie Excel-Dateien
+description: Excel-Dateien entsperren
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostUnlock
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostUnlock" >}}
 {{< blocks/products/cells/docs-title titlemsg="Unlock Excel files." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/unlock,POST,Entsperren Sie Excel Dateien.,<a href=\'https://apireference.aspose.cloud/cells/#/Protection/PostUnlock\'>PostUnlock</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/unlock,POST,Excel Dateien entsperren.,<a href=\'https://apireference.aspose.cloud/cells/#/Protection/PostUnlock\'>PostUnlock</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="Passwort, Zeichenfolge, Das zum Öffnen einer Excel-Datei erforderliche Passwort." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Kennwort, Zeichenfolge, Das zum Öffnen einer Excel-Datei erforderliche Kennwort." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/ProtectionController/PostUnlock\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

@@ -1,30 +1,31 @@
 ﻿---
-title: PutWorksheetSparklineGrou
+title: Arbeitsblatt einfügenSparklineGruppe
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/putworksheetsparklinegroup/
 description: Fügen Sie im Arbeitsblatt eine Sparkline-Gruppe hinzu
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PutWorksheetSparklineGroup
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetSparklineGroup" >}}
 {{< blocks/products/cells/docs-title titlemsg="Add a sparkline group in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/sparklineGroups,PUT,Fügen Sie eine Sparkline-Gruppe im Arbeitsblatt hinzu.,<a href=\'https://apireference.aspose.cloud/cells/#/SparklineGroups/PutWorksheetSparklineGroup\'> PutWorksheetSparklineGroup</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/sparklineGroups,PUT,Fügen Sie dem Arbeitsblatt eine Sparkline-Gruppe hinzu.,<a href=\'https://apireference.aspose.cloud/cells/#/SparklineGroups/PutWorksheetSparklineGroup\'>PutWorksheetSparklineGroup</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="Typ, Zeichenfolge, Stellt die Sparkline-Typen dar (Zeile/Spalte/gestapelt)." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="dataRange,string,Gibt den Datenbereich der Sparkline-Gruppe an." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="isVertical,boolean,Gibt an, ob die Sparklines aus dem Datenbereich zeilen- oder spaltenweise dargestellt werden sollen." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="locationRange,string,Gibt an, wo die Sparklines platziert werden sollen." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Typ, Zeichenfolge, stellt die Sparkline-Typen dar (Zeile/Spalte/Gestapelt)." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="dataRange, Zeichenfolge, Gibt den Datenbereich der Sparkline-Gruppe an." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="isVertical, boolean, Gibt an, ob die Sparklines aus dem Datenbereich zeilen- oder spaltenweise dargestellt werden sollen." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="locationRange, Zeichenfolge, Gibt an, wo die Sparklines platziert werden sollen." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/SparklineGroupsController/PutWorksheetSparklineGroup\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

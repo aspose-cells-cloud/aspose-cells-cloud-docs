@@ -8,6 +8,7 @@ aliases: [/convert-excel-file-to-pdf-in-cloud/]
 keywords: Convert excel files to pdf files
 description: Aspose.Cells Cloud REST API поддерживает преобразование файлов Excel в файлы PDF. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 80
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, от Excel до PDF
 ---
 Этот файл Excel REST API `saveas` имеет номер PDF.
 
@@ -15,11 +16,11 @@ weight: 80
 
 Этот файл Excel REST API `convert` имеет номер PDF.
 
-[PUT/ячейки/конвертировать](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)API позволяет конвертировать файл MS Excel в файл PDF с дополнительными настройками и сохранять результат в ответ.
+[PUT/ячейки/конвертировать](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) API позволяет конвертировать файл MS Excel в файл PDF с дополнительными настройками и сохранять результат в ответ.
 
 Этот файл Excel REST API `export` имеет номер PDF.
 
-[ПОЛУЧИТЬ /cells/{имя}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook  )API позволяет конвертировать файл MS Excel в файл PDF с дополнительными настройками и сохранять результат в ответ.
+[ПОЛУЧИТЬ /cells/{имя}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook  ) API позволяет конвертировать файл MS Excel в файл PDF с дополнительными настройками и сохранять результат в ответ.
 
 ## ОТДЫХ API
 
@@ -34,7 +35,7 @@ weight: 80
 
  Эти[ПоложитьКонвертироватьWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook), [GetWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook), [ОпубликоватьДокументСохранить как](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) API определяют общедоступный программный интерфейс и позволяют выполнять взаимодействие с REST непосредственно из веб-браузера.
 
- Вы можете использовать**cURL** инструмент командной строки для легкого доступа к веб-службам Aspose.Cells. В следующем примере показано, как позвонить на Cloud API с помощью cURL.
+ Вы можете использовать**cURL**инструмент командной строки для легкого доступа к веб-службам Aspose.Cells. В следующем примере показано, как позвонить на Cloud API с помощью cURL.
 
 
 

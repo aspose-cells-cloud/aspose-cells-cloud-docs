@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/model/pptxsaveoptions/
 description: "Aspose.Cells Specifica del modello cloud: PptxSaveOptions. Gestisci facilmente Excel e altri fogli di calcolo con funzionalità come apertura, generazione, modifica, divisione, unione, confronto e conversione"
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PptxSaveOptions
 weight: 50
 ---
 ## **pptxSaveOptions**
@@ -12,9 +13,9 @@ weight: 50
 
 | Nome della proprietà| Tipo di proprietà| Nullabile| Sola lettura| Valore di default| Descrizione|
 |:- |:- |:- |:- |:- |:- |
-| Ignora righe nascoste| Booleano| VERO| Falso|||
-| Regola dimensione carattere per tipo riga| Corda| VERO| Falso|||
-| ExportViewType| Corda| VERO| Falso|||
+| Ignora righe nascoste| Booleano| VERO| Falso|| Ignora le righe nascoste|
+| Regola dimensione carattere per tipo riga| Corda| VERO| Falso|| Regola la dimensione del carattere per il tipo di riga|
+| ExportViewType| Corda| VERO| Falso|| Ottiene e imposta il tipo di visualizzazione durante l'esportazione a PowerPoint. Il tipo di esportazione predefinito funziona come stampa.|
 | Carattere predefinito| Corda| VERO| Falso|||
 | ControllareWorkbookDefaultFont| Booleano| VERO| Falso|||
 | Controlla la compatibilità dei caratteri| Booleano| VERO| Falso|||
@@ -31,7 +32,7 @@ weight: 50
 | Lingua di modifica predefinita| Corda| VERO| Falso|||
 | EmfRenderSetting| Corda| VERO| Falso|||
 | Unisci aree| Booleano| VERO| Falso|||
-|Ordina nomi esterni| Booleano| VERO| Falso|||
+| Ordina nomi esterni| Booleano| VERO| Falso|||
 | AggiornaSmartArt| Booleano| VERO| Falso|||
 | Salva formato| Corda| VERO| Falso|||
 | Cartella file memorizzata nella cache| Corda| VERO| Falso|||
@@ -39,7 +40,8 @@ weight: 50
 | CreaDirectory| Booleano| VERO| Falso|||
 | Abilita compressione HTTP| Booleano| VERO| Falso|||
 | AggiornaChartCache| Booleano| VERO| Falso|||
-|OrdinaNomi| Booleano| VERO| Falso|||
+| OrdinaNomi| Booleano| VERO| Falso|||
 | ValidateMergedAreas| Booleano| VERO| Falso|||
 
-**Nome del genitore** : (OpzioniPaginatedSave)[paginatedsaveopzioni]
+**Nome del genitore** : [PaginatedSaveOptions](/specification/model/paginatedsaveoptions)
+

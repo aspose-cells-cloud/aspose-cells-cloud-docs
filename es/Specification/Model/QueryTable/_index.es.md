@@ -1,9 +1,10 @@
 ﻿---
-title: Tabla de consulta
+title: Tabla de consultas
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/model/querytable/
 description: "Aspose.Cells Especificación del modelo de nube: QueryTable. Maneje sin esfuerzo Excel y otros documentos de hoja de cálculo con funciones como abrir, generar, editar, dividir, fusionar, comparar y convertir."
+kwords: Excel, Office, Hoja de cálculo, Cloud REST API, QueryTable
 weight: 50
 ---
 ## **tabla de consulta**

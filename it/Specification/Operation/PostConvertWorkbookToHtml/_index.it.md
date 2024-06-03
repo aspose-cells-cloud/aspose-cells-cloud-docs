@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/postconvertworkbooktohtml/
 description: Converti il file Excel in file HTML
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PostConvertWorkbookToHtml
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostConvertWorkbookToHtml" >}}

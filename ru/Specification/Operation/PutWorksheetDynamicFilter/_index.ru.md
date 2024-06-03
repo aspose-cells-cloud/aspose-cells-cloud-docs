@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/putworksheetdynamicfilter/
 description: Добавьте динамический фильтр на лист
+kwords: Excel, Office, электронная таблица, Cloud REST API, PutWorksheetDynamicFilter
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetDynamicFilter" >}}
@@ -19,7 +20,7 @@ weight: 50
      {{< blocks/products/cells/docs-Parameter-content columns="имя_листа,строка,имя листа." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Имя параметра, тип, описание" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="range,string, Представляет диапазон, к которому применяется указанный автофильтр." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="range,string,Представляет диапазон, к которому применяется указанный автофильтр." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="fieldIndex,integer,целочисленное смещение поля, на котором вы хотите основывать фильтр (слева от списка; самое левое поле — это поле 0)." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="DynamicFilterType,string,Тип динамического фильтра." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="matchBlanks,boolean,Сопоставить все пустые ячейки в списке." >}} 

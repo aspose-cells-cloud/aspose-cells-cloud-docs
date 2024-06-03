@@ -6,8 +6,9 @@ url: /es/compress/
 keywords: Compress excel files
 description: Aspose.Cells Cloud REST API admite la compresión de archivos de Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 39
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Comprimir
 ---
-Este REST API indica datos `compress` en un archivo Excel.
+Este REST API indica `compress` datos en un archivo Excel.
 
 - Comprimir XLS, XLSX, XLSM, XLSB, ODS
 - Manera rápida de comprimir múltiples archivos de hoja de cálculo Excel

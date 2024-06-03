@@ -3,7 +3,8 @@ title: Lin
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/model/line/
-description: "Aspose.Cells Specifica modello Cloud: Linea. Gestisci facilmente Excel e altri fogli di calcolo con funzionalità come apertura, generazione, modifica, divisione, unione, confronto e conversione"
+description: "Aspose.Cells Specifica modello Cloud: Line. Gestisci facilmente Excel e altri fogli di calcolo con funzionalità come apertura, generazione, modifica, divisione, unione, confronto e conversione"
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, Linea
 weight: 50
 ---
 ## **linea**
@@ -26,9 +27,9 @@ weight: 50
 | ÈAuto| Booleano| VERO| Falso|| Indica se questo stile di linea è assegnato automaticamente.|
 | IsAutomaticColor| Booleano| VERO| Falso|| Indica se il colore della linea viene assegnato automaticamente.|
 | È visibile| Booleano| VERO| Falso|| Indica se la linea è visibile.|
-| JoinType| Corda| VERO| Falso||Specifica le estremità di unione.|
+| JoinType| Corda| VERO| Falso|| Specifica le estremità di unione.|
 | Stile| Corda| VERO| Falso|| Rappresenta lo stile della linea.|
-| Trasparenza| Galleggiante| VERO| Falso|| Restituisce o imposta il grado di trasparenza della linea come un valore compreso tra 0,0 (opaco) e 1,0 (chiaro).|
+| Trasparenza| Galleggiante| VERO| Falso||Restituisce o imposta il grado di trasparenza della linea come un valore compreso tra 0,0 (opaco) e 1,0 (chiaro).|
 | Peso| Corda| VERO| Falso|| Ottiene o imposta la riga.|
 | PesoPt| Galleggiante| VERO| Falso|| Ottiene o imposta lo spessore della linea in unità di punti.|
 

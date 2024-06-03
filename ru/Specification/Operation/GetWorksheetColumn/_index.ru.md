@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/getworksheetcolumn/
 description: Получить данные столбца листа по индексу столбца
+kwords: Excel, Office, электронная таблица, Cloud REST API, GetWorksheetColumn
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetColumn" >}}

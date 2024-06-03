@@ -6,6 +6,7 @@ url: /tr/repair/
 keywords: Repair Excel, ODS, WPS, and so on files
 description: Aspose.Cells Cloud REST API excel dosyalarının onarımını destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 39
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Onarım
 ---
 Bu REST API, `repair` Excel dosyalarını gösterir.
 

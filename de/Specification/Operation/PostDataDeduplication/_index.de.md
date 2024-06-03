@@ -1,21 +1,22 @@
 ﻿---
-title: PostDataDeduplicatio
+title: PostDataDeduplizierung
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postdatadeduplication/
-description: Die Datendeduplizierung von Tabellenkalkulationsdateien wird hauptsächlich verwendet, um doppelte Daten in Tabellen und Bereichen zu entfernen
+description: Die Datendeduplizierung von Tabellenkalkulationsdateien wird hauptsächlich verwendet, um doppelte Daten in Tabellen und Bereichen zu eliminieren
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostDataDeduplication
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostDataDeduplication" >}}
 {{< blocks/products/cells/docs-title titlemsg="Data deduplication of spreadsheet files is mainly used to eliminate duplicate data in tables and ranges." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/datadeduplication,POST,Die Datendeduplizierung von Tabellenkalkulationsdateien wird hauptsächlich verwendet, um doppelte Daten in Tabellen und Bereichen zu entfernen.,<a href=\'https://apireference.aspose.cloud/cells/#/DataProcessing/PostDataDeduplication\'>PostDataDeduplication </a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/datadeduplication,POST,Die Datendeduplizierung von Tabellenkalkulationsdateien wird hauptsächlich verwendet, um doppelte Daten in Tabellen und Bereichen zu eliminieren.,<a href=\'https://apireference.aspose.cloud/cells/#/DataProcessing/PostDataDeduplication\'>PostDataDeduplication</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="dataDeduplicationRequest,class:datadeduplicationrequest," >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Datendeduplizierungsanforderung, Klasse: Datendeduplizierungsanforderung," >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

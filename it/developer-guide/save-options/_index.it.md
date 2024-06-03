@@ -7,6 +7,7 @@ url: /it/save-options/
 keywords: Workbook save options
 description: Aspose.Cells Cloud REST API supporta l'acquisizione di file Excel in tipi di file di formato. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 79
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Opzioni di salvataggio
 ---
 # Proprietà SaveOptions
 

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/getworksheetwithformat/
 description: Получить лист в указанном формате из книги
+kwords: Excel, Office, электронная таблица, Cloud REST API, GetWorksheetWithFormat
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetWithFormat" >}}
@@ -19,7 +20,7 @@ weight: 50
      {{< blocks/products/cells/docs-Parameter-content columns="имя_листа,строка,имя листа." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Имя параметра, тип, описание" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="формат, строка, формат экспорта (CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/0761 73481/МД [Уценка]/Числа)." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="формат, строка, формат экспорта (CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/0 76173481/МД [Уценка]/Числа)." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="вертикальноеРазрешение,целое,Вертикальное разрешение изображения." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="HorizontalResolution,integer,Горизонтальное разрешение изображения." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="область, строка, представляет диапазон для печати." >}} 

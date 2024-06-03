@@ -8,6 +8,7 @@ aliases: [/delete-background-or-watermark-of-excel-worksheet/]
 keywords: Delete background on an Excel worksheet
 description: Aspose.Cells Cloud REST API stöder radering av bakgrund på ett Excel-kalkylblad. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 210
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Ta bort bakgrund på ett Excel kalkylblad
 ---
 Denna REST API indikerar `delete worksheet background image`.
  

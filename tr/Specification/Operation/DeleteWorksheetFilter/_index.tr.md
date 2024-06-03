@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/deleteworksheetfilter/
 description: Çalışma sayfasındaki bir sütuna ilişkin filtreyi silme
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, deleteWorksheetFilter
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetFilter" >}}

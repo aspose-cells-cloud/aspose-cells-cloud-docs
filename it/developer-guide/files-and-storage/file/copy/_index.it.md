@@ -6,6 +6,7 @@ url: /it/file/copy/
 keywords: Learn how to copy file with Aspose Cells Cloud REST API
 description: Scopri come copiare il file con Aspose Cells Cloud REST API SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 100
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Copia file
 ---
 Questo REST API indica `copy file`.
  
@@ -24,7 +25,7 @@ PUT http://api.aspose.cloud/v3.0/cells/storage/file/copy/{srcPath}
 | destPath| corda| domanda| Percorso del file di destinazione|
 | srcNomeArchiviazione| corda| domanda| Nome dell'archivio di origine|
 | destStorageName| corda| domanda| Nome dell'archivio di destinazione|
-| versioneId| corda| domanda|ID della versione del file da copiare|
+| versioneId| corda| domanda| ID della versione del file da copiare|
  
  IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/File/CopyFile) definisce un'interfaccia di programmazione accessibile pubblicamente e consente di eseguire interazioni REST direttamente da un browser web.
  

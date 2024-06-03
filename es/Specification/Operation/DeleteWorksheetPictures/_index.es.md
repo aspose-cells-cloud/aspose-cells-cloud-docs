@@ -4,13 +4,14 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/deleteworksheetpictures/
 description: Eliminar todas las imágenes de la hoja de trabajo.
+kwords: Excel, Office, hoja de cálculo, nube REST API, eliminar imágenes de hoja de trabajo
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetPictures" >}}
 {{< blocks/products/cells/docs-title titlemsg="Delete all pictures in the worksheet." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API, método Http, descripción, referencia API" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pictures,DELETE,Eliminar todas las imágenes en la hoja de trabajo.,<a href=\'https://apireference.aspose.cloud/cells/#/Pictures/DeleteWorksheetPictures\'>DeleteWorksheetPictures </a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pictures,DELETE,Eliminar todas las imágenes de la hoja de trabajo.,<a href=\'https://apireference.aspose.cloud/cells/#/Pictures/DeleteWorksheetPictures\'>DeleteWorksheetPictures </a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

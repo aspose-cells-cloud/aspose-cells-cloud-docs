@@ -3,6 +3,7 @@ title: Få cellstil från ett arbetsblad
 type: docs
 url: /sv/get-cell-style-from-a-worksheet/
 weight: 10
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Hämta cellformat från ett kalkylblad
 ---
 Denna REST API indikerar att få cell `style` i en Excel fil.
 

@@ -6,6 +6,7 @@ aliases: [/delete-a-comment-in-a-worksheet/]
 keywords: REST API, spreadsheets, excel, delete a commen
 description: "Cells.Cloud API para Excel operar: eliminar un comentario"
 weight: 40
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Eliminar
 ---
 Este REST API indica Eliminar comentario de celda de la hoja de trabajo.
  

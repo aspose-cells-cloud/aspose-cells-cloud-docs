@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/postworksheetpicture/
 description: Uppdatera en bild efter index i kalkylbladet
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostWorksheetPicture
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetPicture" >}}

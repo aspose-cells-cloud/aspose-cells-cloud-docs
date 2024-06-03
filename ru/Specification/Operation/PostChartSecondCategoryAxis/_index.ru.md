@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postchartsecondcategoryaxis/
 description: Обновить вторую ось категории диаграммы на диаграмме
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostChartSecondCategoryAxis
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostChartSecondCategoryAxis" >}}

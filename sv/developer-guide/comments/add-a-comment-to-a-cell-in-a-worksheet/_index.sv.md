@@ -6,6 +6,7 @@ aliases: [/add-a-comment-to-a-cell-in-a-worksheet/]
 keywords: REST API, spreadsheets, excel, add commen
 description: "Cells. Cloud API för Excel fungerar: lägg till kommentar"
 weight: 20
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Add
 ---
 Denna REST API indikerar Lägg till arbetsblads cellkommentar.
  

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/model/cellscloudfileinfo/
 description: "Aspose.Cells Bulut modeli spesifikasyonu: CellsCloudFileInfo. Açma, oluşturma, düzenleme, bölme, birleştirme, karşılaştırma ve dönüştürme gibi özelliklerle Excel ve diğer elektronik tablo belgelerini zahmetsizce yönetin"
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, CellsCloudFileInfo
 weight: 50
 ---
 ## **hücrelerBulutDosyaBilgisi**

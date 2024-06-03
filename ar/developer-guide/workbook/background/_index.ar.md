@@ -7,6 +7,7 @@ url: /ar/workbook/background/
 keywords: Working with background an Excel workbook
 description: Aspose.Cells دعم Cloud REST API العمل مع الخلفية في مصنف Excel. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 100
+kwords: Excel، Office Cloud، REST API، جدول البيانات، PDF، CSV، Json، Markdwon، العمل مع الخلفية في مصنف Excel
 ---
 ## العمل مع الخلفية في مصنف Excel.
 

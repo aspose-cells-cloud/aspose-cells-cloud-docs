@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/getchartarea/
 description: Çalışma sayfasındaki grafik alanı açıklamasını alın
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, GetChartArea
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetChartArea" >}}

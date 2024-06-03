@@ -8,6 +8,7 @@ aliases: [/find-text-in-a-workbook/]
 weight: 30
 keywords: Find text from Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) workbook
 description: Aspose.Cells Cloud REST API, Excel çalışma kitabından metin bulmayı destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel çalışma kitabındaki metni bulun
 ---
 Bu REST API, Excel dosyasındaki `search` metnini belirtir.
  

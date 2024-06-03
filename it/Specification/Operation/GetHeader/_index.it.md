@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/getheader/
 description: Recupera la descrizione dell'intestazione della pagina nel foglio di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, GetHeader
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetHeader" >}}

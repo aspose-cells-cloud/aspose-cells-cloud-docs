@@ -7,6 +7,7 @@ aliases: [/working-with-list-objects/,/working-with-list-object-or-table/]
 keywords: Add, delete, update, and get a list object(table) into an Excel worksheet
 description: Aspose.Cells Cloud REST API stöder att lägga till, ta bort, uppdatera och hämta ett listobjekt(tabell) till ett Excel kalkylblad. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, ListObjects
 ---
  &nbsp;&nbsp;&nbsp;&nbsp;Tabell i Excel är fördelaktiga för att ge en struktur åt datamängder. Den har praktiska funktioner från att ordna data, tillhandahålla rubriker tillsammans med tillämpade filter.Master Excel tabeller och analysera dina data snabbt och enkelt.
 

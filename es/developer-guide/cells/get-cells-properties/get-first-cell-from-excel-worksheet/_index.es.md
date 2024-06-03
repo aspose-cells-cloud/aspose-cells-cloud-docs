@@ -3,6 +3,7 @@ title: Obtenga la primera celda de la hoja de trabajo Excel
 type: docs
 url: /es/get-first-cell-from-excel-worksheet/
 weight: 20
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Obtener la primera celda de la hoja de trabajo Excel
 ---
 Este REST API indica que muestra obtener un `firstcell` en un archivo Excel cuando el parámetro `cellOrMethodName` es `firstcell`.
 

@@ -6,6 +6,7 @@ url: /es/batch/lock
 keywords: Batch lock of multiple Excel files
 description: Aspose.Cells Cloud API admite el bloqueo por lotes de varios archivos de Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 100
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Bloqueo por lotes
 ---
 Este REST API indica el `batch lock` de archivos elegibles.
  

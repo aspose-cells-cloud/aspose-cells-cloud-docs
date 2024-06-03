@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postworksheetmatchblanks/
 description: Сопоставьте все пустые ячейки в списке
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostWorksheetMatchBlanks
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetMatchBlanks" >}}

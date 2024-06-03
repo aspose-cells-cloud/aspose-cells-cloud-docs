@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postworkbooksmerge/
 description: دمج مصنف في المصنف الموجود
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostWorkbooksMerge
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbooksMerge" >}}

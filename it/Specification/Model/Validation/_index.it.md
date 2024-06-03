@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/model/validation/
 description: "Aspose.Cells Specifica del modello cloud: convalida. Gestisci facilmente Excel e altri fogli di calcolo con funzionalità come apertura, generazione, modifica, divisione, unione, confronto e conversione"
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, Convalida
 weight: 50
 ---
 ## **convalida**
 
- 
+Rappresenta le impostazioni di convalida dei dati.
 
 | Nome della proprietà| Tipo di proprietà| Nullabile| Sola lettura| Valore di default| Descrizione|
 |:- |:- |:- |:- |:- |:- |
@@ -23,11 +24,12 @@ weight: 50
 | Messaggio di input| Corda| VERO| Falso|| Rappresenta il messaggio di input di convalida dei dati.|
 | Titolo di input| Corda| VERO| Falso|| Rappresenta il titolo della finestra di dialogo di input di convalida dei dati.|
 | Operatore| Corda| VERO| Falso|| Rappresenta l'operatore per la validazione dei dati.|
-| Mostra errore| Booleano| VERO| Falso|| Indica se il messaggio di errore di convalida dei dati verrà visualizzato ogni volta che l'utente inserisce dati non validi.|
-|MostraInput| Booleano| VERO| Falso|| Indica se il messaggio di input di convalida dei dati verrà visualizzato ogni volta che l'utente seleziona una cella nell'intervallo di convalida dei dati.|
+| Mostra errore| Booleano| VERO| Falso||Indica se il messaggio di errore di convalida dei dati verrà visualizzato ogni volta che l'utente inserisce dati non validi.|
+| MostraInput| Booleano| VERO| Falso|| Indica se il messaggio di input di convalida dei dati verrà visualizzato ogni volta che l'utente seleziona una cella nell'intervallo di convalida dei dati.|
 | Tipo| Corda| VERO| Falso|| Rappresenta il tipo di convalida dei dati.|
 | Valore1| Corda| VERO| Falso|| Rappresenta il primo valore associato alla convalida dei dati.|
 | Valore2| Corda| VERO| Falso|| Rappresenta il secondo valore associato alla convalida dei dati.|
 | collegamento| Classe: collegamento| VERO| Falso|||
 
-**Nome del genitore** : (ElementoLink)[elementolink]
+**Nome del genitore** : [Elemento di collegamento](/specification/model/linkelement)
+

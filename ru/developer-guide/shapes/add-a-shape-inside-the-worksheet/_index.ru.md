@@ -8,6 +8,7 @@ aliases: [/add-a-shape-inside-the-worksheet/]
 keywords: Add shape on an Excel workshee
 description: Aspose.Cells Cloud REST API поддерживает добавление фигуры на лист Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 30
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Добавить фигуру на лист Excel
 ---
 Этот REST API указывает на добавление фигуры на лист Excel.
  

@@ -4,13 +4,14 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/getworksheetautoshapewithformat/
 description: Obtener la descripción de la autoforma en algún formato
+kwords: Excel, Office, hoja de cálculo, nube REST API, GetWorksheetAutoshapeWithFormat
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetAutoshapeWithFormat" >}}
 {{< blocks/products/cells/docs-title titlemsg="Get autoshape description in some format." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API, método Http, descripción, referencia API" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/autoshapes/{autoshapeNumber},GET,Obtener la descripción de la autoforma en algún formato.,<a href=\'https://apireference.aspose.cloud/cells/#/Autoshapes/ GetWorksheetAutoshapeWithFormat\'>GetWorksheetAutoshapeWithFormat</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/autoshapes/{autoshapeNumber},GET,Obtener descripción de autoshape en algún formato.,<a href=\'https://apireference.aspose.cloud/cells/#/Autoshapes/ GetWorksheetAutoshapeWithFormat\'>GetWorksheetAutoshapeWithFormat</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

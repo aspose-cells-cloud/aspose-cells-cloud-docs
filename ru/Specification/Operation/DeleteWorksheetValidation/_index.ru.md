@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/deleteworksheetvalidation/
 description: Удалить проверку по индексу на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, DeleteWorksheetValidation
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetValidation" >}}

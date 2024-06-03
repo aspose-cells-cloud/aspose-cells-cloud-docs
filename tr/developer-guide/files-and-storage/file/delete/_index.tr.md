@@ -6,6 +6,7 @@ url: /tr/file/delete/
 keywords: Learn how to delete file with Aspose Cells Cloud REST API
 description: Aspose Cells Cloud REST API SDK destekli geliştirme dilleri ile dosyayı nasıl sileceğinizi öğrenin. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 100
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Dosya Sil
 ---
 Bu REST API, `delete file`'i gösterir.
  

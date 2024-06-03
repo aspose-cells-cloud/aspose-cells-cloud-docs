@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postworksheetlistobjectsorttable/
 description: Сортировка объекта списка на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostWorksheetListObjectSortTable
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetListObjectSortTable" >}}

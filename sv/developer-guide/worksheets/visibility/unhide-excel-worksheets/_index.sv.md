@@ -8,6 +8,7 @@ aliases: [/unhide-excel-worksheets/]
 keywords: Unhide an Excel Worksheet on an Excel Workbook
 description: Aspose.Cells Cloud REST API stöd för att visa ett Excel-arbetsblad på en Excel-arbetsbok. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 60
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Visa ett Excel kalkylblad
 ---
 Denna REST API indikerar `unhide worksheet`.
  
@@ -24,7 +25,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/visible
 |:- |:- |:- |:- |
 | namn| sträng| väg| Dokument namn.|
 | arknamn| sträng| väg| Arbetsbladsnamn.|
-| är synlig| booleskt| fråga| Nytt värde för kalkylbladssynlighet.|
+| är synlig|booleskt| fråga| Nytt värde för kalkylbladssynlighet.|
 | mapp| sträng| fråga| Dokumentmappen.|
 | lagringsnamn| sträng| fråga| lagringsnamn.|
  

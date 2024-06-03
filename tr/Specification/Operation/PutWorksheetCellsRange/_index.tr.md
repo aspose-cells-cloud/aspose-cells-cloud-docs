@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/putworksheetcellsrange/
 description: Bir hücre aralığı ekleyin ve belirtilen kaydırma seçeneğine göre mevcut hücreleri kaydırın
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PutWorksheetCellsRange
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetCellsRange" >}}

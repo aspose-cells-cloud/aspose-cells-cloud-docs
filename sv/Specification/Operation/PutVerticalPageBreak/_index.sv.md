@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/putverticalpagebreak/
 description: Lägg till en vertikal sidbrytning i kalkylbladet
+kwords: Excel, Office, Kalkylblad, Cloud REST API, PutVerticalPageBreak
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutVerticalPageBreak" >}}

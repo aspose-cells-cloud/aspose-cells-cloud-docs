@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/deleteworksheetshapes/
 description: Supprimer toutes les formes de la feuille de calcul
+kwords: Excel, Office, feuille de calcul, Cloud REST API, DeleteWorksheetShapes
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetShapes" >}}

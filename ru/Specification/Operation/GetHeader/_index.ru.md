@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/getheader/
 description: Получить описание заголовка страницы на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, GetHeader
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetHeader" >}}

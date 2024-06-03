@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/getcellhtmlstring/
 description: Recupere la cadena HTML que contiene datos y formatos específicos en esta celda
+kwords: Excel, Office, hoja de cálculo, nube REST API, GetCellHtmlString
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetCellHtmlString" >}}

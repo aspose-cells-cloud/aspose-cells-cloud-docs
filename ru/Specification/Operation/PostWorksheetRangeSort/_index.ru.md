@@ -4,13 +4,14 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postworksheetrangesort/
 description: Сортировка диапазона на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostWorksheetRangeSort
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetRangeSort" >}}
 {{< blocks/products/cells/docs-title titlemsg="Sort a range in the worksheet." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Описание,ссылка API" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/sort,POST,Сортировка диапазона на листе.,<a href=\'https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetRangeSort\'>PostWorksheetRangeSort </а>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/sort,POST,Sort диапазон на листе.,<a href=\'https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetRangeSort\'>PostWorksheetRangeSort </а>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

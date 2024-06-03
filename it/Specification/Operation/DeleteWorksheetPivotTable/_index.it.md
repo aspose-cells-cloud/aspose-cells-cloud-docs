@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/deleteworksheetpivottable/
 description: Elimina la tabella pivot in base all'indice nel foglio di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, Elimina tabella pivot foglio di lavoro
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetPivotTable" >}}

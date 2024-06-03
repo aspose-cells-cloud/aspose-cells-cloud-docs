@@ -3,15 +3,16 @@ title: Aufgabenbeschreibung
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/model/taskdescription/
-description: "Aspose.Cells Cloud-Modellspezifikation: TaskDescription. Bearbeiten Sie mühelos Excel und andere Tabellenkalkulationsdokumente mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+description: "Aspose.Cells Cloud-Modellspezifikation: TaskDescription. Müheloses Bearbeiten von Excel und anderen Tabellenkalkulationsdokumenten mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, Aufgabenbeschreibung
 weight: 50
 ---
 ## **Aufgabenbeschreibung**
 
- 
+ Stellt eine Aufgabenbeschreibung dar.
 
-| Name des Anwesens| Art der Immobilie| Nullbar| Schreibgeschützt| Standardwert| Beschreibung|
+| Name des Anwesens| Art der Immobilie| Nullwerte zulassen| Schreibgeschützt| Standardwert| Beschreibung|
 |:- |:- |:- |:- |:- |:- |
-| Aufgabentyp| Zeichenfolge| WAHR| FALSCH|||
-| TaskParameter| Klasse:TaskParameter| WAHR| FALSCH|||
+| Aufgabentyp| Zeichenfolge| WAHR| FALSCH|| Stellt den Aufgabentyp dar.|
+| TaskParameter| Klasse:TaskParameter| WAHR| FALSCH|| Stellt einen Task-Parameter dar.|
 

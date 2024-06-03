@@ -8,8 +8,9 @@ aliases: [/delete-vertical-page-break-inside-worksheet/]
 keywords: Delete a page break in an Excel worksheet
 description: Aspose.Cells Cloud REST API prend en charge la suppression d'un saut de page dans une feuille de calcul Excel. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 60
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdwon, Supprimer le saut de page vertical
 ---
-Ce REST API indique de supprimer un saut de page `vertical`.
+ Ce REST API indique de supprimer un saut de page `vertical`.
 ## RSET API
  
 ```bash
@@ -19,7 +20,7 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/vertical
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin||
 | Nom de la feuille| chaîne| chemin||

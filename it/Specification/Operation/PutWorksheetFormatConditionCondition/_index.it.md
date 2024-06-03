@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/putworksheetformatconditioncondition/
 description: Aggiungi una condizione per la condizione del formato nel foglio di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PutWorksheetFormatConditionCondition
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetFormatConditionCondition" >}}

@@ -3,21 +3,22 @@ title: Sind
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/model/area/
-description: "Aspose.Cells Wolkenmodellspezifikation: Fläche. Bearbeiten Sie mühelos Excel und andere Tabellenkalkulationsdokumente mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+description: "Aspose.Cells Cloud-Modellspezifikation: Bereich. Müheloses Bearbeiten von Excel und anderen Tabellenkalkulationsdokumenten mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, Bereich
 weight: 50
 ---
 ## **Bereich**
 
- 
+ Kapselt das Objekt, das ein Flächenformat darstellt.
 
-| Name des Anwesens| Art der Immobilie| Nullbar| Schreibgeschützt| Standardwert| Beschreibung|
+| Name des Anwesens| Art der Immobilie| Nullwerte zulassen| Schreibgeschützt| Standardwert| Beschreibung|
 |:- |:- |:- |:- |:- |:- |
-| Hintergrundfarbe| Klasse:Farbe| WAHR| FALSCH|| Ruft den Hintergrund der ab oder legt diesen fest.|
-| FillFormat| Klasse:FillFormat| WAHR| FALSCH|| Stellt ein Objekt dar, das Füllungsformatierungseigenschaften für das angegebene Diagramm oder die angegebene Form enthält.|
-| Vordergrundfarbe| Klasse:Farbe| WAHR| FALSCH|| Ruft den foreground ab oder legt diesen fest.|
+| Hintergrundfarbe| Klasse:Farbe| WAHR| FALSCH|| Ruft den Hintergrund von ab oder legt ihn fest.|
+| Füllformat| Klasse:FillFormat| WAHR| FALSCH|| Stellt ein Objekt dar, das Füllformatierungseigenschaften für das angegebene Diagramm oder die angegebene Form enthält.|
+| Vordergrundfarbe| Klasse:Farbe| WAHR| FALSCH|| Ruft den Vordergrund ab oder legt ihn fest.|
 | Format| Zeichenfolge| WAHR| FALSCH|||
-| InvertIfNegative| Boolescher Wert| WAHR| FALSCH||Wenn die Eigenschaft wahr ist und der Wert des Diagrammpunkts eine negative Zahl ist, werden die Vordergrundfarbe und die Hintergrundfarbe ausgetauscht.|
-| Transparenz| Schwebend| WAHR| FALSCH|| Gibt den Grad der Transparenz des Bereichs als Wert von 0,0 (undurchsichtig) bis 1,0 (klar) zurück oder legt ihn fest.|
+| InvertIfNegative| Boolescher Wert| WAHR| FALSCH|| Wenn die Eigenschaft wahr ist und der Wert des Diagrammpunkts eine negative Zahl ist, werden die Vordergrundfarbe und die Hintergrundfarbe vertauscht.|
+| Transparenz| Schwimmend| WAHR| FALSCH|| Gibt den Transparenzgrad des Bereichs als Wert zwischen 0,0 (undurchsichtig) und 1,0 (durchsichtig) zurück oder legt ihn fest.|
 
-**Kindername** : 
+**Name des Kindes** : 
 	-  [Boden](floor) 

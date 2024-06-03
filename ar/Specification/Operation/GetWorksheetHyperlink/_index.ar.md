@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/getworksheethyperlink/
 description: استرداد وصف الارتباط التشعبي حسب الفهرس في ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، GetWorksheetHyperlink
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetHyperlink" >}}

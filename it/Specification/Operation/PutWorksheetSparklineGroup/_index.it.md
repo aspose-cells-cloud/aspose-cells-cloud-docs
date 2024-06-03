@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/putworksheetsparklinegroup/
 description: Aggiungi un gruppo sparkline nel foglio di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PutWorksheetSparklineGroup
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetSparklineGroup" >}}

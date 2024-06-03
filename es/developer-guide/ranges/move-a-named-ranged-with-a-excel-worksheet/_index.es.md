@@ -8,8 +8,9 @@ aliases: [/move-a-named-ranged-with-a-excel-worksheet/]
 keywords: Move a named ranged with an Excel workshee
 description: Aspose.Cells Cloud REST API admite mover un rango con nombre con una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 20
+kwords: Excel, Office Cloud, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Mover un rango con nombre con una hoja de trabajo Excel
 ---
- Este REST API indica mover el rango actual al rango de destino en una hoja de trabajo Excel.
+Este REST API indica mover el rango actual al rango de destino en una hoja de trabajo Excel.
             
  
 ## RSET API

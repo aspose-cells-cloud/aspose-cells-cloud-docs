@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postworkbookimportxml/
 description: Importez un fichier de données XML dans un fichier Excel. Le fichier de données XML peut être soit un fichier cloud, soit des données provenant d'un URI HTTP.
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostWorkbookImportXML
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookImportXML" >}}

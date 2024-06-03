@@ -8,6 +8,7 @@ aliases: [/get-vertical-page-breaks-inside-worksheet/]
 keywords: Add a page break in an Excel worksheet
 description: Aspose.Cells Cloud REST API supporta l'aggiunta di un'interruzione di pagina in un foglio di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 20
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Ottieni interruzioni di pagina verticali
 ---
  Questo REST API indica di ottenere `vertical` interruzioni di pagina.
  

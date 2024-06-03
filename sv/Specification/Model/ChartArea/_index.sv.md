@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/model/chartarea/
 description: "Aspose.Cells Molnmodellspecifikation: ChartArea. Hantera enkelt Excel och andra kalkylarksdokument med funktioner som att öppna, generera, redigera, dela, slå samman, jämföra och konvertera"
+kwords: Excel, Office, Kalkylblad, Cloud REST API, ChartArea
 weight: 50
 ---
 ## **chartArea**
 
- 
+Kapslar in objektet som representerar diagramområdet i kalkylbladet.
 
 | Egendomsnamn| Egenskapstyp| Nullbar| Endast läs| Standardvärde| Beskrivning|
 |:- |:- |:- |:- |:- |:- |
@@ -20,10 +21,10 @@ weight: 50
 | IsAutomaticSize| Boolean| Sann| Falsk|||
 | IsInnerMode| Boolean| Sann| Falsk|||
 | Skugga| Boolean| Sann| Falsk|||
-| Formegenskaper| Behållare| Sann| Falsk|||
 | Bredd| Heltal| Sann| Falsk|||
 | Höjd| Heltal| Sann| Falsk|||
 | X| Heltal| Sann| Falsk|||
 | Y| Heltal| Sann| Falsk|||
 
-**Förälders namn** : (ChartFrame)[chartframe]
+**Förälders namn** : [ChartFrame](/specification/model/chartframe)
+

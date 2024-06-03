@@ -8,6 +8,7 @@ aliases: [/rename-excel-worksheet/]
 keywords: Rename an Excel worksheet name to new name on an Excel workbook
 description: Aspose.Cells Cloud REST API admite cambiar el nombre de una hoja de trabajo Excel a un nuevo nombre en un libro de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 20
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Excel cambio de nombre de hoja de trabajo
 ---
 Este REST API indica `worksheet rename`
  

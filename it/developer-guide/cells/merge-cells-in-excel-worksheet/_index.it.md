@@ -3,6 +3,7 @@ title: Unisci Cells nel foglio di lavoro Excel
 type: docs
 url: /it/merge-cells-in-excel-worksheet/
 weight: 110
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Unisci Cells in Excel Foglio di lavoro
 ---
 Questo REST API indica `merge` celle in un file Excel.
 
@@ -17,12 +18,12 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/merg
  
 | Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
 |:- |:- |:- |:- |
-| nome| corda| sentiero|Il nome della cartella di lavoro.|
+| nome| corda| sentiero| Il nome della cartella di lavoro.|
 | nomefoglio| corda| sentiero| Il nome del foglio di lavoro.|
 | startRow| numero intero| domanda| La fila iniziale.|
-| startColumn| numero intero| domanda| La colonna iniziale.|
+| startColonna| numero intero| domanda| La colonna iniziale.|
 | totaleRighe| numero intero| domanda| Le righe totali|
-|totaleColonne| numero intero| domanda| Le colonne totali.|
+| totaleColonne| numero intero| domanda| Le colonne totali.|
 | cartella| corda| domanda| La cartella della cartella di lavoro.|
 | storageName| corda| domanda| nome dell'archivio.|
  

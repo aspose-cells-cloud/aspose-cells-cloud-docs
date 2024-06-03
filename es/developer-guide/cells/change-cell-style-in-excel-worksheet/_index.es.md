@@ -3,6 +3,7 @@ title: Cambiar estilo de celda en la hoja de trabajo Excel
 type: docs
 url: /es/change-cell-style-in-excel-worksheet/
 weight: 30
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Cambiar estilo de celda en Excel Hoja de trabajo
 ---
 Este REST API indica la actualización `cell style` en un archivo Excel.
 

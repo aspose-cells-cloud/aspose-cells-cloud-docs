@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/putworksheetformatconditionarea/
 description: Добавьте область ячеек для условия форматирования на листе.
+kwords: Excel, Office, электронная таблица, Cloud REST API, PutWorksheetFormatConditionArea
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetFormatConditionArea" >}}

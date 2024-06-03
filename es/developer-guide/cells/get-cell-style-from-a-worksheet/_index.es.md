@@ -3,6 +3,7 @@ title: Obtener estilo de celda de una hoja de trabajo
 type: docs
 url: /es/get-cell-style-from-a-worksheet/
 weight: 10
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Obtener estilo de celda de una hoja de trabajo
 ---
 Este REST API indica obtener la celda `style` en un archivo Excel.
 

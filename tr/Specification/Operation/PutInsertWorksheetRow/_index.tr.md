@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/putinsertworksheetrow/
 description: Çalışma sayfasına yeni bir satır ekleme
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PutInsertWorksheetRow
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutInsertWorksheetRow" >}}

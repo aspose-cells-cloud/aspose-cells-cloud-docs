@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/model/xmldatabinding/
 description: "Aspose.Cells مواصفات النموذج السحابي: XmlDataBinding. تعامل بسهولة مع Excel ومستندات جداول البيانات الأخرى التي تحتوي على ميزات مثل الفتح والتوليد والتحرير والتقسيم والدمج والمقارنة والتحويل"
+kwords: Excel، Office، جدول البيانات، Cloud REST API، XmlDataBinding
 weight: 50
 ---
 ## **xmlDataBinding**

@@ -3,25 +3,26 @@ title: DeleteWorksheetCellsRang
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/deleteworksheetcellsrange/
-description: Löschen Sie einen Zellbereich und verschieben Sie vorhandene Zellen basierend auf der angegebenen Verschiebungsoption
+description: Löschen Sie einen Zellbereich und verschieben Sie vorhandene Zellen basierend auf der angegebenen Verschiebeoption
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, DeleteWorksheetCellsRange
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetCellsRange" >}}
 {{< blocks/products/cells/docs-title titlemsg="Delete a range of cells and shift existing cells based on the specified shift option." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges,DELETE,Löschen Sie einen Zellbereich und verschieben Sie vorhandene Zellen basierend auf der angegebenen Verschiebungsoption.,<a href=\'https://apireference.aspose.cloud/cells /#/Ranges/DeleteWorksheetCellsRange\'>DeleteWorksheetCellsRange</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges,DELETE,Löscht einen Zellbereich und verschiebt vorhandene Zellen basierend auf der angegebenen Verschiebeoption.,<a href=\'https://apireference.aspose.cloud/cells/#/Ranges/DeleteWorksheetCellsRange\'>DeleteWorksheetCellsRange</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="range,string,Das Bereichsobjekt." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="Verschiebung, Zeichenfolge, Stellt die Verschiebungsoptionen beim Löschen eines Zellbereichs dar (Nach unten/Links/Keine/Rechts/Nach oben)." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Original-Arbeitsmappenordner." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Bereich, Zeichenfolge, Das Bereichsobjekt." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Umschalt, Zeichenfolge, stellt die Umschaltoptionen beim Löschen eines Zellbereichs dar (Nach unten/Links/Keine/Rechts/Nach oben)." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Ursprünglicher Arbeitsmappenordner." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Speichername." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 

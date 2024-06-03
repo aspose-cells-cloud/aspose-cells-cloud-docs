@@ -4,6 +4,7 @@ type: docs
 url: /sv/charts/legend/update/
 aliases: [/update-chart-legend-in-a-worksheet/]
 weight: 160
+kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdwon, Uppdatera diagramförklaring i ett kalkylblad
 ---
 Denna REST API indikerar uppdateringsdiagramförklaring
  

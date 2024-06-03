@@ -3,15 +3,16 @@ title: Dateiquelle
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/model/filesource/
-description: "Aspose.Cells Cloud-Modellspezifikation: FileSource. Bearbeiten Sie mühelos Excel und andere Tabellenkalkulationsdokumente mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+description: "Aspose.Cells Cloud-Modellspezifikation: FileSource. Müheloses Bearbeiten von Excel und anderen Tabellenkalkulationsdokumenten mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, FileSource
 weight: 50
 ---
-## **fileSource**
+## **Dateiquelle**
 
  
 
-| Name des Anwesens| Art der Immobilie| Nullbar| Schreibgeschützt| Standardwert| Beschreibung|
+| Name des Anwesens| Art der Immobilie| Nullwerte zulassen| Schreibgeschützt| Standardwert| Beschreibung|
 |:- |:- |:- |:- |:- |:- |
-| FileSourceType| Zeichenfolge| WAHR| FALSCH|||
+| Dateiquellentyp| Zeichenfolge| WAHR| FALSCH|||
 | Dateipfad| Zeichenfolge| WAHR| FALSCH|||
 

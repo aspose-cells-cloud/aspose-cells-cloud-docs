@@ -7,6 +7,7 @@ keywords: list object(table) remove duplicates
 url: /es/list-objects/remove-duplicates/
 description:  Eliminar duplicados en el objeto de la lista.
 weight: 20
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Listar objeto eliminar duplicados
 ---
  Este REST API indica eliminar duplicados en el objeto de la lista.
 

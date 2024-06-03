@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/deleteworkbooknames/
 description: Удалить все именованные диапазоны в книге
+kwords: Excel, Office, электронная таблица, Cloud REST API, DeleteWorkbookNames
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorkbookNames" >}}

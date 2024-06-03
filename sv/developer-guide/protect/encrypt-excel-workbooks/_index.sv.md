@@ -8,6 +8,7 @@ aliases: [/encrypt-excel-workbooks/]
 keywords: Encrypt Excel workbook
 description: Aspose.Cells Cloud REST API stöder kryptering Excel arbetsbok. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 20
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Kryptera en Excel arbetsbok
 ---
 Denna REST API krypterar en Excel `workbook`.
 
@@ -40,7 +41,7 @@ Denna REST API krypterar en Excel `workbook`.
 
  De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Workbook/PostEncryptDocument) definierar ett allmänt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
 
- Du kan använda**cURL** kommandoradsverktyg för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man ringer till Cloud API med cURL.
+ Du kan använda**cURL**kommandoradsverktyg för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man ringer till Cloud API med cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/getworksheetcolumns/
 description: Recuperar descripciones de columnas de la hoja de trabajo
+kwords: Excel, Office, hoja de cálculo, nube REST API, GetWorksheetColumns
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetColumns" >}}

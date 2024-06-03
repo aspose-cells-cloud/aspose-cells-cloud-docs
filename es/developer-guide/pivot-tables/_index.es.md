@@ -7,6 +7,7 @@ aliases: [/working-with-pivot-tables/]
 keywords: Working with pivot table on an Excel worksheet
 description: Cómo hacer que las API REST de Cloud Aspose.Cells funcionen con una tabla dinámica en una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 100
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Tablas dinámicas
 ---
 ## Trabajar con tablas dinámicas en un archivo Excel.
 

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/postworkbookimportjson/
 description: Importe un archivo de datos JSON al libro de trabajo. El archivo de datos JSON puede ser un archivo en la nube o datos de un URI HTTP
+kwords: Excel, Office, hoja de cálculo, nube REST API, PostWorkbookImportJson
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookImportJson" >}}
@@ -22,7 +23,7 @@ weight: 50
     {{< blocks/products/cells/docs-Parameter-content columns="carpeta, cadena, la carpeta donde se encuentra el archivo." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="nombre de almacenamiento, cadena, el nombre del almacenamiento donde se encuentra el archivo." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="outPath,string,Ruta para guardar el resultado. Si es un solo archivo, `outPath` debe abarcar tanto el nombre del archivo como la extensión. En el caso de varios archivos, `outPath` solo debe incluir la carpeta." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="outStorageName, cadena, el nombre del almacenamiento donde se encuentra el archivo de salida." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="outStorageName,cadena,El nombre del almacenamiento donde se encuentra el archivo de salida." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction,boolean,Si verifica la restricción del archivo Excel cuando el usuario modifica los objetos relacionados con las celdas." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="región, cadena, la configuración regional del libro de trabajo." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}

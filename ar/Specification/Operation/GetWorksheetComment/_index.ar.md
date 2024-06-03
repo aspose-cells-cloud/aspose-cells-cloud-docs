@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/getworksheetcomment/
 description: استرداد وصف التعليق في ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، GetWorksheetComment
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetComment" >}}

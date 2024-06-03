@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/putworksheetdynamicfilter/
 description: Agregar un filtro dinámico en la hoja de trabajo
+kwords: Excel, Office, Hoja de cálculo, Cloud REST API, PutWorksheetDynamicFilter
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetDynamicFilter" >}}

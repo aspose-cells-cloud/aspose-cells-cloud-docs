@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/putworksheetsparklinegroup/
 description: Добавьте группу спарклайнов на лист
+kwords: Excel, Office, электронная таблица, Cloud REST API, PutWorksheetSparklineGroup
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetSparklineGroup" >}}

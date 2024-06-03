@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/getworksheetvalidations/
 description: استرداد أوصاف عمليات التحقق من الصحة في ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، GetWorksheetValidations
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetValidations" >}}

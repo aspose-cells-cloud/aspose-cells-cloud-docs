@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/postworksheetlistobject/
 description: Actualizar el objeto de la lista por índice en la hoja de trabajo
+kwords: Excel, Office, hoja de cálculo, nube REST API, PostWorksheetListObject
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetListObject" >}}

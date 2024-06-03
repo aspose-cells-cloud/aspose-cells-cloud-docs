@@ -5,6 +5,7 @@ type: docs
 url: /es/docker/run/
 description: Cómo ejecutar Aspose.Cells Cloud para Docker
 weight: 30
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Ejecutar
 ---
 ## Exponer puerto
 

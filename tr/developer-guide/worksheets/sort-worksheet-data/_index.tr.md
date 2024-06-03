@@ -8,6 +8,7 @@ aliases: [/sort-worksheet-data/]
 keywords: Sort range data on an Excel worksheet
 description: Aspose.Cells Cloud REST API, Excel çalışma sayfasındaki aralık verilerinin sıralanmasını destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 20
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel çalışma sayfasındaki aralık verilerini sırala
 ---
 Bu REST API, `sort worksheet range data`'i gösterir.
  
@@ -22,7 +23,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/sort
  
 | Parametre adı| Tip| Yol/Sorgu Dizesi/HTTPBody|Tanım|
 |:- |:- |:- |:- |
-| isim| sicim| yol|Çalışma kitabı adı.|
+| isim| sicim| yol| Çalışma kitabı adı.|
 | sayfaAdı| sicim| yol| Çalışma sayfası adı.|
 | hücre alanı| sicim| sorgu| Sıralanacak aralık.|
 | veri Sıralayıcısı|| vücut| sıralama ayarlarıyla.|

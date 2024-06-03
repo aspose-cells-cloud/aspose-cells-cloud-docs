@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/postdigitalsignature/
 description: Excel archivo firma digital
+kwords: Excel, Office, Hoja de cálculo, Nube REST API, PostDigitalSignature
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostDigitalSignature" >}}

@@ -8,6 +8,7 @@ aliases: [/get-validation-from-a-worksheet/]
 keywords: Get a worksheet validation by index from an Excel worksheet
 description: Aspose.Cells Cloud REST API, Excel çalışma sayfasından dizine göre çalışma sayfası doğrulaması almayı destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 10
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel çalışma sayfasından dizine göre çalışma sayfası doğrulaması alın
 ---
 Bu REST API, Excel çalışma sayfasında dizine göre çalışma sayfası doğrulaması alınacağını belirtir.
  

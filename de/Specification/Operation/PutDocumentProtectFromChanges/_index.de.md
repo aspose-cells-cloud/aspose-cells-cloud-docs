@@ -1,28 +1,29 @@
 ﻿---
-title: PutDocumentProtectFromChange
+title: Dokument vor Änderung schützen
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/putdocumentprotectfromchanges/
 description: Excel Dateischreibschutz
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PutDocumentProtectFromChanges
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutDocumentProtectFromChanges" >}}
 {{< blocks/products/cells/docs-title titlemsg="Excel file write protection." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/writeProtection,PUT,Excel Dateischreibschutz.,<a href=\'https://apireference.aspose.cloud/cells/#/Protection/PutDocumentProtectFromChanges\'>PutDocumentProtectFromChanges</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="Passwort, Klasse: Passwortanfrage, Das Passwort, das zum Öffnen einer Excel-Datei benötigt wird." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Passwort, Klasse: Passwortanforderung, Das zum Öffnen einer Excel-Datei erforderliche Passwort." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

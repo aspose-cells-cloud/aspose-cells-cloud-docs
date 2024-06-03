@@ -8,6 +8,7 @@ aliases: [/unhide-excel-worksheets/]
 keywords: Unhide an Excel Worksheet on an Excel Workbook
 description: Aspose.Cells Cloud REST API supporta la visualizzazione di un foglio di lavoro Excel su una cartella di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 60
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Scopri un foglio di lavoro Excel
 ---
 Questo REST API indica `unhide worksheet`.
  
@@ -24,7 +25,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/visible
 |:- |:- |:- |:- |
 | nome| corda| sentiero| Nome del documento.|
 | nomefoglio| corda| sentiero| Nome del foglio di lavoro.|
-| è visibile| booleano| domanda| Nuovo valore di visibilità del foglio di lavoro.|
+| è visibile|booleano| domanda| Nuovo valore di visibilità del foglio di lavoro.|
 | cartella| corda| domanda| La cartella documenti.|
 | storageName| corda| domanda| nome dell'archivio.|
  

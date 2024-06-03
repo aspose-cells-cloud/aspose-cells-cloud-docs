@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/putworksheetchart/
 description: إضافة مخطط جديد في ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PutWorksheetChart
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetChart" >}}

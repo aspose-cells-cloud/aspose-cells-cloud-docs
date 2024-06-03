@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/postpivottablestyle/
 description: Actualizar estilo en la tabla dinámica
+kwords: Excel, Office, Hoja de cálculo, Nube REST API, PostPivotTableStyle
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostPivotTableStyle" >}}

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postpivottablefieldmoveto/
 description: Перемещение сводного поля в сводной таблице
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostPivotTableFieldMoveTo
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostPivotTableFieldMoveTo" >}}

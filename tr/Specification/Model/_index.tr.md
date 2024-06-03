@@ -2,157 +2,160 @@
 title: Modeli
 second_title: Aspose.Cells Cloud Documen
 type: docs
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, Veri Modeli
 weight: 50
 ---
 - [ObjectExistsUzantılar](objectexistsextensions)  :   
 - [Dosya Sürümü](fileversion)  :   
 - [DepolamaDosyası](storagefile) : Dosya veya klasör bilgileri
 - [GoogleDriveDepolamaDosyası](googledrivestoragefile)  :   
-- [Ortalamanın üstü](aboveaverage) AboveAverage koşullu biçimlendirme kuralını açıklayın. Bu koşullu biçimlendirme kuralı, aralıktaki tüm değerler için ortalamanın üstünde veya altında olan hücreleri vurgular.
+- [Ortalamanın üstü](aboveaverage) : AboveAverage koşullu biçimlendirme kuralını açıklayın. Bu koşullu biçimlendirme kuralı, aralıktaki tüm değerler için ortalamanın üstünde veya altında olan hücreleri vurgular.
 - [ÖzetHesaplamaMotoru](abstractcalculationengine) : Aspose.Cells'in varsayılan hesaplama motorunu genişletmek için kullanıcının özel hesaplama motorunu temsil eder.
 - [SoyutHesaplamaMonitör](abstractcalculationmonitor) : Kullanıcının formül hesaplamasının ilerlemesini izlemesini izleyin.
-- [Otomatik filtre](autofilter)  :   
-- [Otomatik Montaj Seçenekleri](autofitteroptions)  :   
-- [Sınır](border)  :   
-- [HesaplamaSeçenekleri](calculationoptions)  :   
-- [Hücre](cell)  :   
-- [Hücre Alanı](cellarea)  :   
-- [Cells](cells)  :   
+- [Otomatik filtre](autofilter) : Belirtilen çalışma sayfası için otomatik filtrelemeyi temsil eder.
+- [Otomatik Montaj Seçenekleri](autofitteroptions) : Tüm otomatik montaj seçeneklerini temsil eder.
+- [Sınır](border) : Hücre kenarlığını temsil eden nesneyi kapsüller.
+- [HesaplamaSeçenekleri](calculationoptions) : Hesaplama seçeneklerini temsil eder.
+- [Hücre](cell) : Tek bir Çalışma Kitabı hücresini temsil eden nesneyi kapsüller.
+- [Hücre Alanı](cellarea) : Hücrelerin bir alanını temsil eder.
+- [Cells](cells) : Aspose.Cells.Cell, Aspose.Cells.Row, ...vb. gibi hücreyle ilgili nesnelerin bir koleksiyonunu kapsüller.
 - [HücrelerBulutDosyaBilgisi](cellscloudfileinfo) : Cells Bulut Dosyası bilgi açıklaması.
-- [HücrelerRenk](cellscolor)  :   
+- [HücrelerRenk](cellscolor) : Her türlü rengi temsil eder.
 - [HücrelerBelgeÖzellikler](cellsdocumentproperties) : Excel mülkler
 - [HücrelerBelgeÖzellik](cellsdocumentproperty) : Cells belge özelliği.
-- [Renk](color) : Renk.
+- [Renk](color) Renk.
 - [Renk filtresi](colorfilter) : Renk filtresi.
 - [Renk Ölçeği](colorscale) : ColorScale koşullu biçimlendirme kuralını açıklayın. Bu koşullu biçimlendirme kuralı, hücrelerde dereceli bir renk ölçeği oluşturur.
-- [Kolon](column)  :   
-- [Sütunlar](columns)  :   
-- [Yorum](comment)  :   
-- [Yorumlar](comments)  :   
+- [Kolon](column) : Çalışma sayfasındaki tek bir sütunu temsil eder.
+- [Sütunlar](columns) : Sütunlar
+- [Yorum](comment) : Bir hücre yorumunu temsil eden nesneyi kapsüller.
+- [Yorumlar](comments) : Bir nesne koleksiyonunu kapsüller.
 - [Koşullu biçimlendirme](conditionalformatting)  :   
-- [Koşullu Biçimlendirme Simgesi](conditionalformattingicon)  :   
-- [Koşullu Biçimlendirmeler](conditionalformattings)  :   
-- [Koşullu Biçimlendirme Değeri](conditionalformattingvalue)  :   
+- [Koşullu Biçimlendirme Simgesi](conditionalformattingicon) : Koşullu biçimlendirme kuralının özel simgesini temsil eder.
+- [Koşullu Biçimlendirmeler](conditionalformattings) : Bir nesne koleksiyonunu kapsüller.
+- [Koşullu Biçimlendirme Değeri](conditionalformattingvalue) : Bir degrade ölçeği, dataBar veya iconSet'teki enterpolasyon noktalarının değerlerini açıklar.
 - [KopyalamaSeçenekleri](copyoptions) : Kopyalama seçeneklerini temsil eder.
 - [ÖlçütÇokluFiltre](criteriamultiplefilter)  :   
-- [Özel Filtre](customfilter)  :   
+- [Özel Filtre](customfilter) : Özel filtreyi temsil eder.
 - [Veri Çubuğu](databar) : DataBar koşullu biçimlendirme kuralını açıklayın. Bu koşullu biçimlendirme kuralı, hücre aralığında derecelendirilmiş bir veri çubuğu görüntüler.
-- [DataBar Sınırı](databarborder)  :   
-- [Veri Temizleme](datacleansing) : Veri Temizleme
-- [DataColumnFillValue](datacolumnfillvalue)  :   
-- [Veri Doldurma](datafill)  :   
-- [Veri Doldurma Değeri](datafillvalue)  :   
+- [DataBar Sınırı](databarborder) : Koşullu biçimlendirme kuralı tarafından belirtilen veri çubuklarının kenarlığını temsil eder.
+- [Veri Temizleme](datacleansing) : Veri temizliğini temsil eder.
+- [DataColumnFillValue](datacolumnfillvalue) : Veri sütununun belirtilen değerle doldurulduğunu temsil eder.
+- [Veri Doldurma](datafill) : Veri doldurmayı temsil eder.
+- [Veri Doldurma Değeri](datafillvalue) : Verilerin belirtilen değerle doldurulduğunu temsil eder.
+- [Veri öğesi](dataitem) : Veri öğesini temsil eder.
+- [DataItemType](dataitemtype) : Veri öğesi türünü temsil eder.
 - [Veri Sıralayıcı](datasorter) : DataSorter'ın özet açıklaması.
 - [Veri Sıralayıcı Anahtarı](datasorterkey) : Veri sıralayıcının anahtarını temsil eder.
-- [TarihSaatGrupÖğesi](datetimegroupitem)  :   
-- [Tekilleştirme Bölgesi](deduplicationregion)  :   
-- [Dinamik Filtre](dynamicfilter)  :   
-- [Dosya Bilgileri](fileinfo) : Dosya bilgisi
+- [Veri kaynağı](datasource) : Veri kaynağını temsil eder.
+- [Veri Kaynağı Türü](datasourcetype) : Veri kaynağı türünü temsil eder.
+- [TarihSaatGrupÖğesi](datetimegroupitem) : Datetime'ın grup ayarını temsil eder.
+- [Tekilleştirme Bölgesi](deduplicationregion) : Veri tekilleştirme bölgesini temsil eder.
+- [Dinamik Filtre](dynamicfilter) : Dinamik filtreyi temsil eder.
+- [Dosya Bilgileri](fileinfo) : Dosya bilgilerini temsil eder.
+- [Dosya Kaynağı](filesource)  :   
+- [DosyaKaynak Türü](filesourcetype)  :   
 - [DosyalarSonucu](filesresult)  :   
-- [Filtre Sütunu](filtercolumn)  :   
-- [Yazı tipi](font)  :   
-- [Yazı Tipi Ayarı](fontsetting)  :   
-- [BiçimDurum](formatcondition)  :   
+- [Filtre Sütunu](filtercolumn) : Tek bir sütuna yönelik filtreyi temsil eder. Filter nesnesi, Filters koleksiyonunun bir üyesidir
+- [Yazı tipi](font) : Bir elektronik tabloda kullanılan yazı tipi nesnesini kapsüller.
+- [Yazı Tipi Ayarı](fontsetting) : Hücre metni içindeki bir karakter aralığını temsil eder.
+- [BiçimDurum](formatcondition) : Koşullu biçimlendirme koşulunu temsil eder.
 - [FormülFormatKoşul](formulaformatcondition)  :   
 - [FormülAyarları](formulasettings) : Formüllerin ve hesaplamanın ayarları.
 - [KüreselleşmeAyarları](globalizationsettings) : Genelleştirme ayarlarını temsil eder.
-- [YataySayfa Sonu](horizontalpagebreak)  :   
-- [YataySayfaSonları](horizontalpagebreaks)  :   
-- [Köprü](hyperlink)  :   
-- [Köprüler](hyperlinks)  :   
-- [Simge Filtresi](iconfilter)  :   
-- [Simge Seti](iconset) IconSet koşullu biçimlendirme kuralını açıklayın. Bu koşullu biçimlendirme kuralı, simgelere değerlerine göre hücrelere uygulanır.
+- [YataySayfa Sonu](horizontalpagebreak) : Yatay sayfa sonunu temsil eden nesneyi kapsüller.
+- [YataySayfaSonları](horizontalpagebreaks) : Bir nesne koleksiyonunu kapsüller.
+- [Köprü](hyperlink) : Köprüyü temsil eden nesneyi kapsüller.
+- [Köprüler](hyperlinks) : Bir nesne koleksiyonunu kapsüller.
+- [Simge Filtresi](iconfilter) : Simge filtresini temsil eder.
+- [Simge Seti](iconset) : IconSet koşullu biçimlendirme kuralını açıklayın. Bu koşullu biçimlendirme kuralı, simgelere değerlerine göre hücrelere uygulanır.
 - [Bağlantı](link)  :   
 - [Bağlantı Öğesi](linkelement)  :   
-- [Yük Seçenekleri](loadoptions)  :   
+- [Yük Seçenekleri](loadoptions) : Dosyayı yükleme seçeneklerini temsil eder.
 - [Birleştirilmiş Hücre](mergedcell)  :   
 - [Birleştirilmiş Hücreler](mergedcells)  :   
 - [Çoklu Filtre](multiplefilter)  :   
-- [Çoklu Filtreler](multiplefilters)  :   
-- [İsim](name)  :   
-- [İsimler](names)  :   
+- [Çoklu Filtreler](multiplefilters) : Çoklu filtre koleksiyonunu temsil eder.
+- [İsim](name) : Bir hücre aralığı için tanımlanmış bir adı temsil eder.
+- [İsimler](names) : Elektronik tablodaki tüm nesnelerin bir koleksiyonunu temsil eder.
 - [NegatifBarFormat](negativebarformat) : Bir veri çubuğu koşullu biçimlendirme kuralı tarafından tanımlanan negatif değerlere ilişkin veri çubuklarının renk ayarlarını temsil eder.
 - [Sayfa Bölümü](pagesection)  :   
-- [Sayfa ayarı](pagesetup)  :   
+- [Sayfa ayarı](pagesetup) : excel yazdırma sayfası ayarı
 - [YapıştırSeçenekleri](pasteoptions) : Yapıştırma özel seçeneklerini temsil eder.
-- [PdfGüvenlikSeçenekleri](pdfsecurityoptions)  :   
+- [PdfGüvenlikSeçenekleri](pdfsecurityoptions) : PDF belgesine ilişkin şifreleme ve erişim izinlerine ilişkin seçenekler. PDF/A güvenlik ayarına izin vermiyor.
 - [Koruma](protection) : Bir çalışma sayfası için kullanılabilen çeşitli koruma seçeneklerini temsil eder.
 - [Koruma SayfasıParametresi](protectsheetparameter)  :   
-- [Sorgu Tablosu](querytable) : QueryTable bilgilerini temsil eder.
-- [Menzil](range)  :   
-- [Aralıklar](ranges)  :   
-- [Sıra](row)  :   
-- [Satırlar](rows)  :   
-- [Sonucu Kaydet](saveresult)  :   
+- [Menzil](range) Bir elektronik tablodaki bir hücre aralığını temsil eden nesneyi kapsüller.
+- [Aralıklar](ranges) : Bir nesne koleksiyonunu kapsüller.
+- [Sıra](row) : Çalışma sayfasındaki tek bir satırı temsil eder.
+- [Satırlar](rows) : Bir çalışma sayfasındaki tek tek satırları temsil eden nesneleri toplar.
+- [Sonucu Kaydet](saveresult) : Kaydetme sonucunu temsil eder.
 - [Sayfalandırılmış Kaydetme Seçenekleri](paginatedsaveoptions) : Sayfalandırma seçeneklerini temsil eder.
-- [Tek değer](singlevalue)  :   
-- [Sıralama anahtarı](sortkey)  :   
-- [BölünmüşSonuç](splitresult)  :   
-- [BölünmüşSonuçBelgesi](splitresultdocument)  :   
-- [Stil](style)  :   
-- [StilFormatDurum](styleformatcondition)  :   
-- [Stiller](styles)  :   
-- [MetinFormatKoşulu](textformatcondition)  :   
-- [Metin Öğesi](textitem)  :   
-- [Metin Öğeleri](textitems)  :   
-- [MetinSeçenekleri](textoptions)  :   
-- [TemaRenk](themecolor)  :   
-- [TimePeriodFormatCondition](timeperiodformatcondition)  :   
-- [En iyi 10](top10) Top10 koşullu biçimlendirme kuralını açıklayın. Bu koşullu biçimlendirme kuralı, değerleri belirtildiği gibi üst N veya alt N parantezinde yer alan hücreleri vurgular.
-- [Top10Filtre](top10filter)  :   
-- [Doğrulama](validation)  :   
-- [Doğrulamalar](validations)  :   
-- [DikeySayfa Arası](verticalpagebreak)  :   
-- [DikeySayfaSonları](verticalpagebreaks)  :   
-- [Çalışma kitabı](workbook)  :   
-- [Çalışma KitabıAyarları](workbooksettings)  :   
-- [Çalışma kağıdı](worksheet)  :   
-- [Çalışma sayfaları](worksheets)  :   
+- [Tek değer](singlevalue) : Tek değeri temsil eder.
+- [Sıralama anahtarı](sortkey) : Sıralama anahtarını temsil eder.
+- [BölünmüşSonuç](splitresult) : Dosya bölünmesinin sonucunu temsil eder.
+- [Stil](style) : Excel belgesinin yazı tipi, renk, hizalama, kenarlık vb. gibi görüntüleme stilini temsil eder. Stil nesnesi, özellik olarak tüm stil niteliklerini (yazı tipi, sayı biçimi, hizalama vb.) içerir.
+- [StilFormatDurum](styleformatcondition) : Stil formatı koşulunu temsil eder.
+- [Stiller](styles) : Veri stili koleksiyonunu temsil eder.
+- [MetinFormatKoşulu](textformatcondition) : Metin biçimi koşulunu temsil eder.
+- [Metin Öğesi](textitem) : Metin öğesini temsil eder.
+- [Metin Öğeleri](textitems) Metin öğesi koleksiyonunu temsil eder.
+- [MetinSeçenekleri](textoptions) : Metin seçeneklerini temsil eder.
+- [TemaRenk](themecolor) : Bir tema rengini temsil eder.
+- [TimePeriodFormatCondition](timeperiodformatcondition) : Dönem formatı koşulunu temsil eder.
+- [En iyi 10](top10) : Top10 koşullu biçimlendirme kuralını açıklayın. Bu koşullu biçimlendirme kuralı, değerleri belirtildiği gibi üst N veya alt N parantezinde yer alan hücreleri vurgular.
+- [Top10Filtre](top10filter) : İlk 10 filtreyi temsil eder.
+- [Doğrulama](validation) : Veri doğrulama ayarlarını temsil eder.
+- [Doğrulamalar](validations) : Veri doğrulama koleksiyonunu temsil eder.
+- [DikeySayfa Arası](verticalpagebreak) : Dikey sayfa sonunu temsil eden nesneyi kapsüller.
+- [DikeySayfaSonları](verticalpagebreaks) : Bir nesne koleksiyonunu kapsüller.
+- [Çalışma kitabı](workbook) : Excel elektronik tablosu oluşturmak için kök nesneyi temsil eder.
+- [Çalışma KitabıAyarları](workbooksettings) : Çalışma kitabının tüm ayarlarını temsil eder.
+- [Çalışma kağıdı](worksheet) : Tek bir çalışma sayfasını temsil eden nesneyi kapsüller.
+- [Çalışma sayfaları](worksheets) : Bir nesne koleksiyonunu kapsüller.
 - [Yazma Koruması](writeprotection) : Bir çalışma kitabının yazma koruması ayarlarını belirtir.
 - [XmlDataBinding](xmldatabinding) : Xml Veri Bağlama bilgilerini temsil eder.
 - [Xml Haritası](xmlmap) : Xml harita bilgilerini temsil eder.
-- [HücrelerObjectOperateTaskParameter](cellsobjectoperatetaskparameter)  :   
-- [GörevParametresini Dönüştür](converttaskparameter)  :   
-- [ConvertWorksheetTaskParameter](convertworksheettaskparameter)  :   
-- [Dosya Kaynağı](filesource)  :   
-- [DosyaKaynak Türü](filesourcetype)  :   
-- [ImportDataTaskParameter](importdatataskparameter)  :   
-- [SonuçHedef](resultdestination)  :   
-- [SonuçHedef Türü](resultdestinationtype)  :   
-- [SonuçKaynağı](resultsource)  :   
-- [SaveFilesToCloudResult](savefilestocloudresult)  :   
-- [SaveResultGörevParametresi](saveresulttaskparameter)  :   
-- [SmartMarkerTaskParametresi](smartmarkertaskparameter)  :   
-- [BölünmüşÇalışma KitabıGörevParametresi](splitworkbooktaskparameter)  :   
-- [GörevVerileri](taskdata)  :   
-- [Görev tanımı](taskdescription)  :   
-- [GörevParametresi](taskparameter)  :   
-- [GörevSonucuParametresi](taskresultparameter)  :   
-- [GörevÇalıştırSonucu](taskrunresult)  :   
-- [Görev Türü](tasktype)  :   
-- [ChartOperateParameter](chartoperateparameter)  :   
-- [ListObjectOperateParameter](listobjectoperateparameter)  :   
-- [OperateObject](operateobject)  :   
-- [OperateObjectPosition](operateobjectposition)  :   
-- [OperateObjectType](operateobjecttype)  :   
-- [Çalıştırma Parametresi](operateparameter)  :   
-- [Çalıştırma Türü](operatetype)  :   
-- [PageBreakOperateParametre](pagebreakoperateparameter)  :   
-- [PageSetupOperateParameter](pagesetupoperateparameter)  :   
-- [PivotTableOperateParametresi](pivottableoperateparameter)  :   
-- [ShapeOperateParametre](shapeoperateparameter)  :   
-- [Çalışma KitabıOperateParametre](workbookoperateparameter)  :   
-- [Çalışma KitabıAyarlarıOperateParametresi](workbooksettingsoperateparameter)  :   
-- [Çalışma SayfasıOperateParametre](worksheetoperateparameter)  :   
-- [Liste Sütunu](listcolumn)  :   
-- [ListeObject](listobject)  :   
-- [Nesneleri Listele](listobjects)  :   
+- [HücrelerObjectOperateTaskParameter](cellsobjectoperatetaskparameter) : Hücre nesnesini çalıştırma görevi parametresini temsil eder.
+- [GörevParametresini Dönüştür](converttaskparameter) : Dönüştürme görevi parametresini temsil eder.
+- [ConvertWorksheetTaskParameter](convertworksheettaskparameter) : Çalışma sayfasını dönüştürme görevi parametresini temsil eder.
+- [ImportDataTaskParameter](importdatataskparameter) : Verileri içe aktarma görevi parametresini temsil eder.
+- [SonuçHedef](resultdestination) : Sonuç hedefini temsil eder.
+- [SonuçHedef Türü](resultdestinationtype) : Sonuç hedef türünü temsil eder.
+- [SonuçKaynağı](resultsource) : Sonuç kaynağı türünü temsil eder.
+- [SaveFilesToCloudResult](savefilestocloudresult) : Dosyayı buluta kaydetme sonucunu temsil eder.
+- [SaveResultGörevParametresi](saveresulttaskparameter) : Sonuç kaydetme görevi parametresini temsil eder.
+- [SmartMarkerTaskParametresi](smartmarkertaskparameter) : Akıllı işaretleyici görev parametresini temsil eder.
+- [BölünmüşÇalışma KitabıGörevParametresi](splitworkbooktaskparameter) : Bölünmüş çalışma kitabı görev parametresini temsil eder.
+- [GörevVerileri](taskdata) : Görev verilerini temsil eder.
+- [Görev tanımı](taskdescription) : Görev açıklamasını temsil eder.
+- [GörevParametresi](taskparameter) : Görev parametresini temsil eder.
+- [GörevSonucuParametresi](taskresultparameter) Görev sonuç parametresini temsil eder.
+- [GörevÇalıştırSonucu](taskrunresult) : Görev çalıştırma sonucunu temsil eder.
+- [Görev Türü](tasktype) : Görev türünü temsil eder.
+- [ChartOperateParameter](chartoperateparameter) : Grafik çalışma parametresini temsil eder.
+- [ListObjectOperateParameter](listobjectoperateparameter) : Liste nesnesinin çalışma parametresini temsil eder.
+- [OperateObject](operateobject) : Çalıştırma nesnesini temsil eder.
+- [OperateObjectPosition](operateobjectposition) : Çalıştırma nesnesinin konumunu temsil eder.
+- [OperateObjectType](operateobjecttype) : Çalıştırma nesnesi türünü temsil eder.
+- [Çalıştırma Parametresi](operateparameter) : Çalıştırma parametresini temsil eder.
+- [Çalıştırma Türü](operatetype) : Çalışma tipini temsil eder.
+- [PageBreakOperateParametre](pagebreakoperateparameter) : Sayfa sonu çalışma parametresini temsil eder.
+- [PageSetupOperateParameter](pagesetupoperateparameter) : Sayfa yapısı çalışma parametresini temsil eder.
+- [PivotTableOperateParametresi](pivottableoperateparameter) : Pivot tablo çalışma parametresini temsil eder.
+- [ShapeOperateParametre](shapeoperateparameter) : Şekil çalıştırma parametresini temsil eder.
+- [Çalışma KitabıOperateParametre](workbookoperateparameter) : Çalışma kitabı çalıştırma parametresini temsil eder.
+- [Çalışma KitabıAyarlarıOperateParametresi](workbooksettingsoperateparameter) : Çalışma kitabı ayarı çalıştırma parametresini temsil eder.
+- [Çalışma SayfasıOperateParametre](worksheetoperateparameter) : Çalışma sayfasının çalışma parametresini temsil eder.
+- [Liste Sütunu](listcolumn) : Tablodaki bir sütunu temsil eder.
+- [ListeObject](listobject) Çalışma sayfasındaki liste nesnesini temsil eder. ListObject nesnesi ListObjects koleksiyonunun bir üyesidir. ListObjects koleksiyonu, çalışma sayfasındaki tüm liste nesnelerini içerir.
+- [Nesneleri Listele](listobjects) : Çalışma sayfasındaki nesnelerin koleksiyonunu temsil eder.
 - [PivotGlobalizasyonAyarları](pivotglobalizationsettings) : Pivot tablolar için genelleştirme ayarlarını temsil eder.
 - [DifSaveSeçenekleri](difsaveoptions) : Dif dosyasını kaydetme seçeneklerini temsil eder.
 - [DocxSaveOptions](docxsaveoptions) : .docx dosyasını kaydetme seçeneklerini temsil eder.
 - [HtmlSaveOptions](htmlsaveoptions) : .html dosyasını kaydetme seçeneklerini temsil eder.
 - [Görüntü Kaydetme Seçenekleri](imagesaveoptions) : Görüntü dosyasını kaydetme seçeneklerini temsil eder.
-- [JsonSaveOptions](jsonsaveoptions) .json dosyasını kaydetme seçeneklerini temsil eder.
+- [JsonSaveOptions](jsonsaveoptions) : .json dosyasını kaydetme seçeneklerini temsil eder.
 - [İşaretlemeKaydetSeçenekleri](markdownsaveoptions) : .md dosyasını kaydetme seçeneklerini temsil eder.
 - [MHTmlKaydetmeSeçenekleri](mhtmlsaveoptions) : .mhtml dosyasını kaydetme seçeneklerini temsil eder.
 - [OdsKaydetmeSeçenekleri](odssaveoptions) : .ods dosyasını kaydetme seçeneklerini temsil eder.
@@ -160,135 +163,135 @@ weight: 50
 - [PdfKaydetmeSeçenekleri](pdfsaveoptions) : PDF dosyasını kaydetme seçeneklerini temsil eder.
 - [PptxSaveOptions](pptxsaveoptions) : Pptx dosyasını kaydetme seçeneklerini temsil eder.
 - [KaydetSeçenekler](saveoptions) : Tüm kaydetme seçeneklerini temsil eder
-- [Elektronik TabloML2003KaydetmeSeçenekleri](spreadsheetml2003saveoptions) : .xml dosyasını kaydetme seçeneklerini temsil eder.
+- [Elektronik TabloML2003KaydetmeSeçenekleri](spreadsheetml2003saveoptions) .xml dosyasını kaydetme seçeneklerini temsil eder.
 - [SqlScriptSaveOptions](sqlscriptsaveoptions) : .sql dosyasını kaydetme seçeneklerini temsil eder.
 - [SvgSaveSeçenekleri](svgsaveoptions) : .svg dosyasını kaydetme seçeneklerini temsil eder.
 - [TxtSaveSeçenekleri](txtsaveoptions) : .txt dosyasını kaydetme seçeneklerini temsil eder.
 - [XlsbKaydetmeSeçenekleri](xlsbsaveoptions) : .xlsb dosyasını kaydetme seçeneklerini temsil eder.
 - [XlsKaydetmeSeçenekleri](xlssaveoptions) : .xls dosyasını kaydetme seçeneklerini temsil eder.
 - [XpsSaveOptions](xpssaveoptions) : .xps dosyasını kaydetme seçeneklerini temsil eder.
-- [Excel Yanıtını Analiz Et](analyzeexcelresponse)  :   
-- [ArcShapeResponse](arcshaperesponse)  :   
-- [Otomatik Filtre Yanıtı](autofilterresponse)  :   
-- [Otomatik Şekil Yanıtı](autoshaperesponse)  :   
-- [Otomatik Şekiller Yanıtı](autoshapesresponse)  :   
-- [Eksen Tepkisi](axisresponse)  :   
-- [Sınır Yanıtı](borderresponse)  :   
-- [Düğme Yanıtı](buttonresponse)  :   
-- [FormülYanıtını Hesapla](calculateformularesponse)  :   
-- [Hücre Yanıtı](cellresponse)  :   
-- [HücrelerBulutDosyaBilgiYanıt](cellscloudfileinforesponse)  :   
-- [HücrelerBulutYanıt](cellscloudresponse)  :   
-- [HücrelerBelgeÖzelliklerYanıt](cellsdocumentpropertiesresponse)  :   
-- [HücrelerBelgeÖzellikYanıt](cellsdocumentpropertyresponse)  :   
-- [HücrelerÇizimYanıt](cellsdrawingresponse)  :   
-- [Hücrelerin Yanıtı](cellsresponse)  :   
-- [GrafikAlanYanıtı](chartarearesponse)  :   
-- [GrafikVeriTabloYanıtı](chartdatatableresponse)  :   
-- [ChartPointYanıtı](chartpointresponse)  :   
-- [ChartPointsYanıt](chartpointsresponse)  :   
-- [Grafik Yanıtı](chartresponse)  :   
-- [GrafiklerYanıt](chartsresponse)  :   
-- [Onay Kutusu Yanıtı](checkboxresponse)  :   
-- [Sütun Yanıtı](columnresponse)  :   
-- [SütunlarYanıt](columnsresponse)  :   
-- [ComboBox Yanıtı](comboboxresponse)  :   
-- [YorumYanıt](commentresponse)  :   
-- [YorumŞekilYanıt](commentshaperesponse)  :   
-- [YorumlarYanıt](commentsresponse)  :   
-- [Koşullu Biçimlendirme Yanıtı](conditionalformattingresponse)  :   
-- [Koşullu BiçimlendirmelerYanıt](conditionalformattingsresponse)  :   
-- [Veri Etiketleri Yanıtı](datalabelsresponse)  :   
-- [DisplayUnitLabelResponse](displayunitlabelresponse)  :   
-- [DropBar'ların Yanıtı](dropbarsresponse)  :   
-- [ErrorBarResponse](errorbarresponse)  :   
-- [FillFormatResponse](fillformatresponse)  :   
-- [Yanıt Bul](findresponse)  :   
-- [Kat Yanıtı](floorresponse)  :   
-- [FormYanıtı](formresponse)  :   
-- [FormlarYanıt](formsresponse)  :   
-- [GrupKutusuYanıtı](groupboxresponse)  :   
-- [YataySayfaBreakYanıtı](horizontalpagebreakresponse)  :   
-- [HorizontalPageBreaksYanıt](horizontalpagebreaksresponse)  :   
-- [Köprü Yanıtı](hyperlinkresponse)  :   
-- [KöprülerYanıt](hyperlinksresponse)  :   
-- [Etiket Yanıtı](labelresponse)  :   
-- [AçıklamaGirişlerYanıt](legendentriesresponse)  :   
-- [EfsaneGirişYanıtı](legendentryresponse)  :   
-- [Efsane Yanıtı](legendresponse)  :   
-- [Hat Yanıtı](lineresponse)  :   
-- [Çizgi Şekli Yanıtı](lineshaperesponse)  :   
-- [Liste Kutusu Yanıtı](listboxresponse)  :   
-- [ListObjectResponse](listobjectresponse)  :   
-- [ListObjectsResponse](listobjectsresponse)  :   
-- [Birleştirilmiş Hücre Yanıtı](mergedcellresponse)  :   
-- [Birleştirilmiş Hücreler Yanıtı](mergedcellsresponse)  :   
-- [AdYanıt](nameresponse)  :   
-- [İsimlerYanıt](namesresponse)  :   
-- [OleObjectResponse](oleobjectresponse)  :   
-- [OleObjectsResponse](oleobjectsresponse)  :   
-- [Oval Yanıt](ovalresponse)  :   
-- [SayfaBölümlerYanıt](pagesectionsresponse)  :   
-- [Sayfa Kurulumu Yanıt](pagesetupresponse)  :   
-- [Resim Yanıtı](pictureresponse)  :   
-- [ResimlerYanıt](picturesresponse)  :   
-- [PivotFieldResponse](pivotfieldresponse)  :   
-- [PivotFilterYanıtı](pivotfilterresponse)  :   
-- [PivotFiltrelerin Yanıtı](pivotfiltersresponse)  :   
-- [PivotTableYanıtı](pivottableresponse)  :   
-- [PivotTable'larYanıt](pivottablesresponse)  :   
-- [PlotAreaResponse](plotarearesponse)  :   
-- [Radyo Düğmesi Yanıtı](radiobuttonresponse)  :   
-- [Aralık Yanıtı](rangeresponse)  :   
-- [AralıklarYanıt](rangesresponse)  :   
-- [AralıkDeğerYanıt](rangevalueresponse)  :   
-- [DikdörtgenŞekilYanıt](rectangleshaperesponse)  :   
-- [Satır Yanıtı](rowresponse)  :   
-- [SatırlarYanıt](rowsresponse)  :   
-- [SaveFilesToCloudResultResponse](savefilestocloudresultresponse)  :   
-- [Yanıtı Kaydet](saveresponse)  :   
-- [ScrollBar Yanıtı](scrollbarresponse)  :   
-- [SerilerYanıt](seriesesresponse)  :   
-- [Seri Yanıtı](seriesresponse)  :   
-- [Şekil Yanıtı](shaperesponse)  :   
-- [ŞekillerYanıt](shapesresponse)  :   
-- [Tek Değer Yanıtı](singlevalueresponse)  :   
-- [SparklineGrup Yanıtı](sparklinegroupresponse)  :   
-- [SparklineGruplarıYanıt](sparklinegroupsresponse)  :   
-- [Döndürücü Yanıtı](spinnerresponse)  :   
-- [BölünmüşSonuçYanıtı](splitresultresponse)  :   
-- [Stil Yanıtı](styleresponse)  :   
-- [GörevÇalıştırmaSonucuYanıt](taskrunresultresponse)  :   
-- [TextBox Yanıtı](textboxresponse)  :   
-- [TextItemResponse](textitemresponse)  :   
-- [TextItemsResponse](textitemsresponse)  :   
-- [TickLabelsYanıt](ticklabelsresponse)  :   
-- [BaşlıkYanıt](titleresponse)  :   
-- [Trend çizgisi yanıtı](trendlineresponse)  :   
-- [Trend Çizgileri Yanıtı](trendlinesresponse)  :   
-- [Doğrulama Yanıtı](validationresponse)  :   
-- [Doğrulama Yanıtı](validationsresponse)  :   
-- [DikeyPageBreakYanıtı](verticalpagebreakresponse)  :   
-- [VerticalPageBreaksYanıtı](verticalpagebreaksresponse)  :   
-- [DuvarlarTepki](wallsresponse)  :   
-- [Çalışma KitabıDeğiştirYanıt](workbookreplaceresponse)  :   
-- [Çalışma Kitabı Yanıtı](workbookresponse)  :   
-- [Çalışma KitabıAyarlarYanıt](workbooksettingsresponse)  :   
-- [Çalışma KitaplarıYanıt](workbooksresponse)  :   
-- [Çalışma SayfasıDeğiştirYanıt](worksheetreplaceresponse)  :   
-- [Çalışma Sayfası Yanıtı](worksheetresponse)  :   
-- [Çalışma SayfalarıYanıt](worksheetsresponse)  :   
+- [ArcShapeResponse](arcshaperesponse) : ArcShape Yanıtını temsil eder.
+- [Otomatik Filtre Yanıtı](autofilterresponse) : Otomatik Filtre Yanıtını temsil eder.
+- [Otomatik Şekil Yanıtı](autoshaperesponse) : Otomatik Şekil Yanıtını temsil eder.
+- [Otomatik Şekiller Yanıtı](autoshapesresponse) : Otomatik Şekil Yanıtını temsil eder.
+- [Eksen Tepkisi](axisresponse) : Eksen Tepkisini temsil eder.
+- [Sınır Yanıtı](borderresponse) : Sınır Tepkisini temsil eder.
+- [Düğme Yanıtı](buttonresponse) : Düğme Yanıtını temsil eder.
+- [FormülYanıtını Hesapla](calculateformularesponse) : CalculateFormula Yanıtını temsil eder.
+- [Hücre Yanıtı](cellresponse) : Hücre Yanıtını temsil eder.
+- [HücrelerBulutDosyaBilgiYanıt](cellscloudfileinforesponse) : CellsCloudFileInfo Response'u temsil eder.
+- [HücrelerBulutYanıt](cellscloudresponse) : CellsCloud Response'u temsil eder.
+- [HücrelerBelgeÖzelliklerYanıt](cellsdocumentpropertiesresponse) : CellsDocumentProperties Yanıtını temsil eder.
+- [HücrelerBelgeÖzellikYanıt](cellsdocumentpropertyresponse) CellsDocumentProperty Response'u temsil eder.
+- [HücrelerÇizimYanıt](cellsdrawingresponse) : CellsDrawing Response'u temsil eder.
+- [Hücrelerin Yanıtı](cellsresponse) : Cells Yanıtını temsil eder.
+- [GrafikAlanYanıtı](chartarearesponse) : ChartArea Yanıtını temsil eder.
+- [GrafikVeriTabloYanıtı](chartdatatableresponse) : ChartDataTable Yanıtını temsil eder.
+- [ChartPointYanıtı](chartpointresponse) : ChartPoint Yanıtını temsil eder.
+- [ChartPointsYanıt](chartpointsresponse) : ChartPoints Yanıtını temsil eder.
+- [Grafik Yanıtı](chartresponse) : Grafik Yanıtını temsil eder.
+- [GrafiklerYanıt](chartsresponse) : Grafik Yanıtını temsil eder.
+- [Onay Kutusu Yanıtı](checkboxresponse) : CheckBox Yanıtını temsil eder.
+- [Sütun Yanıtı](columnresponse) : Sütun Yanıtını temsil eder.
+- [SütunlarYanıt](columnsresponse) : Sütun Yanıtını temsil eder.
+- [ComboBox Yanıtı](comboboxresponse) : ComboBox Yanıtını temsil eder.
+- [YorumYanıt](commentresponse) : Yorum Yanıtını temsil eder.
+- [YorumŞekilYanıt](commentshaperesponse) : CommentShape Yanıtını temsil eder.
+- [YorumlarYanıt](commentsresponse) : Yorum Yanıtını temsil eder.
+- [Koşullu Biçimlendirme Yanıtı](conditionalformattingresponse) : Koşullu Biçimlendirme Yanıtını temsil eder.
+- [Koşullu BiçimlendirmelerYanıt](conditionalformattingsresponse) : Koşullu Biçimlendirme Yanıtını temsil eder.
+- [Veri Etiketleri Yanıtı](datalabelsresponse) : DataLabels Yanıtını temsil eder.
+- [DisplayUnitLabelResponse](displayunitlabelresponse) : DisplayUnitLabel Yanıtını temsil eder.
+- [DropBar'ların Yanıtı](dropbarsresponse) : DropBars Yanıtını temsil eder.
+- [ErrorBarResponse](errorbarresponse) ErrorBar Yanıtını temsil eder.
+- [FillFormatResponse](fillformatresponse) : FillFormat Yanıtını temsil eder.
+- [Yanıt Bul](findresponse) : Yanıt Bul'u temsil eder.
+- [Kat Yanıtı](floorresponse) : Kat Tepkisini temsil eder.
+- [FormYanıtı](formresponse) : Form Yanıtını temsil eder.
+- [FormlarYanıt](formsresponse) : Form Yanıtını temsil eder.
+- [GrupKutusuYanıtı](groupboxresponse) : GroupBox Yanıtını temsil eder.
+- [YataySayfaBreakYanıtı](horizontalpagebreakresponse) : HorizontalPageBreak Yanıtını temsil eder.
+- [HorizontalPageBreaksYanıt](horizontalpagebreaksresponse) : HorizontalPageBreaks Yanıtını temsil eder.
+- [Köprü Yanıtı](hyperlinkresponse) : Köprü Yanıtını temsil eder.
+- [KöprülerYanıt](hyperlinksresponse) : Köprü Yanıtını temsil eder.
+- [Etiket Yanıtı](labelresponse) : Etiket Yanıtını temsil eder.
+- [AçıklamaGirişlerYanıt](legendentriesresponse) : LegendEntries Yanıtını temsil eder.
+- [EfsaneGirişYanıtı](legendentryresponse) : LegendEntry Yanıtını temsil eder.
+- [Efsane Yanıtı](legendresponse) : Açıklama Yanıtını temsil eder.
+- [Hat Yanıtı](lineresponse) : Hat Yanıtını temsil eder.
+- [Çizgi Şekli Yanıtı](lineshaperesponse) : LineShape Yanıtını temsil eder.
+- [Liste Kutusu Yanıtı](listboxresponse) : ListBox Yanıtını temsil eder.
+- [ListObjectResponse](listobjectresponse) : ListObject Yanıtını temsil eder.
+- [ListObjectsResponse](listobjectsresponse) : ListObjects Yanıtını temsil eder.
+- [Birleştirilmiş Hücre Yanıtı](mergedcellresponse) : MergedCell Yanıtını temsil eder.
+- [Birleştirilmiş Hücreler Yanıtı](mergedcellsresponse) MergedCells Yanıtını temsil eder.
+- [AdYanıt](nameresponse) : Ad Yanıtını temsil eder.
+- [İsimlerYanıt](namesresponse) : İsim Yanıtını temsil eder.
+- [OleObjectResponse](oleobjectresponse) : OleObject Yanıtını temsil eder.
+- [OleObjectsResponse](oleobjectsresponse) : OleObjects Yanıtını temsil eder.
+- [Oval Yanıt](ovalresponse) : Oval Yanıtı temsil eder.
+- [SayfaBölümlerYanıt](pagesectionsresponse) : PageSections Yanıtını temsil eder.
+- [Sayfa Kurulumu Yanıt](pagesetupresponse) : Sayfa Kurulumu Yanıtını temsil eder.
+- [Resim Yanıtı](pictureresponse) : Resim Yanıtını temsil eder.
+- [ResimlerYanıt](picturesresponse) : Resimlerin Yanıtını temsil eder.
+- [PivotFieldResponse](pivotfieldresponse) : PivotField Yanıtını temsil eder.
+- [PivotFilterYanıtı](pivotfilterresponse) : PivotFilter Yanıtını temsil eder.
+- [PivotFiltrelerin Yanıtı](pivotfiltersresponse) : PivotFilters Yanıtını temsil eder.
+- [PivotTableYanıtı](pivottableresponse) : PivotTable Yanıtını temsil eder.
+- [PivotTable'larYanıt](pivottablesresponse) : PivotTable Yanıtını temsil eder.
+- [PlotAreaResponse](plotarearesponse) : PlotArea Yanıtını temsil eder.
+- [Radyo Düğmesi Yanıtı](radiobuttonresponse) : RadioButton Yanıtını temsil eder.
+- [Aralık Yanıtı](rangeresponse) : Aralık Yanıtını temsil eder.
+- [AralıklarYanıt](rangesresponse) : Aralık Yanıtını temsil eder.
+- [AralıkDeğerYanıt](rangevalueresponse) : RangeValue Yanıtını temsil eder.
+- [DikdörtgenŞekilYanıt](rectangleshaperesponse) : RectangleShape Yanıtını temsil eder.
+- [Satır Yanıtı](rowresponse) : Satır Yanıtını temsil eder.
+- [SatırlarYanıt](rowsresponse) Satırların Yanıtını temsil eder.
+- [SaveFilesToCloudResultResponse](savefilestocloudresultresponse) : SaveFilesToCloudResult Yanıtını temsil eder.
+- [Yanıtı Kaydet](saveresponse) : Kaydetme Yanıtını temsil eder.
+- [ScrollBar Yanıtı](scrollbarresponse) : ScrollBar Yanıtını temsil eder.
+- [SerilerYanıt](seriesesresponse) : Serilerin Yanıtını temsil eder.
+- [Seri Yanıtı](seriesresponse) : Seri Yanıtını temsil eder.
+- [Şekil Yanıtı](shaperesponse) : Şekil Yanıtını temsil eder.
+- [ŞekillerYanıt](shapesresponse) : Şekillerin Yanıtını temsil eder.
+- [Tek Değer Yanıtı](singlevalueresponse) : SingleValue Yanıtını temsil eder.
+- [SparklineGrup Yanıtı](sparklinegroupresponse) : SparklineGroup Yanıtını temsil eder.
+- [SparklineGruplarıYanıt](sparklinegroupsresponse) : SparklineGroups Yanıtını temsil eder.
+- [Döndürücü Yanıtı](spinnerresponse) : Döndürücü Yanıtını temsil eder.
+- [BölünmüşSonuçYanıtı](splitresultresponse) : SplitResult Yanıtını temsil eder.
+- [Stil Yanıtı](styleresponse) : Stil Yanıtını temsil eder.
+- [GörevÇalıştırmaSonucuYanıt](taskrunresultresponse) : TaskRunResult Yanıtını temsil eder.
+- [TextBox Yanıtı](textboxresponse) : TextBox Yanıtını temsil eder.
+- [TextItemResponse](textitemresponse) : TextItem Response'u temsil eder.
+- [TextItemsResponse](textitemsresponse) : TextItems Yanıtını temsil eder.
+- [TickLabelsYanıt](ticklabelsresponse) : TickLabels Yanıtını temsil eder.
+- [BaşlıkYanıt](titleresponse) : Başlık Yanıtını temsil eder.
+- [Trend çizgisi yanıtı](trendlineresponse) : Trend Çizgisi Yanıtını temsil eder.
+- [Trend Çizgileri Yanıtı](trendlinesresponse) Trend Çizgilerinin Yanıtını temsil eder.
+- [Doğrulama Yanıtı](validationresponse) : Doğrulama Yanıtını temsil eder.
+- [Doğrulama Yanıtı](validationsresponse) : Doğrulama Yanıtını temsil eder.
+- [DikeyPageBreakYanıtı](verticalpagebreakresponse) : VerticalPageBreak Yanıtını temsil eder.
+- [VerticalPageBreaksYanıtı](verticalpagebreaksresponse) : VerticalPageBreaks Yanıtını temsil eder.
+- [DuvarlarTepki](wallsresponse) : Duvarların Tepkisini temsil eder.
+- [Çalışma KitabıDeğiştirYanıt](workbookreplaceresponse) : WorkbookReplace Yanıtını temsil eder.
+- [Çalışma Kitabı Yanıtı](workbookresponse) : Çalışma Kitabı Yanıtını temsil eder.
+- [Çalışma KitabıAyarlarYanıt](workbooksettingsresponse) : WorkbookSettings Yanıtını temsil eder.
+- [Çalışma KitaplarıYanıt](workbooksresponse) : Çalışma Kitaplarının Yanıtını temsil eder.
+- [Çalışma SayfasıDeğiştirYanıt](worksheetreplaceresponse) : WorksheetReplace Yanıtını temsil eder.
+- [Çalışma Sayfası Yanıtı](worksheetresponse) : Çalışma Sayfası Yanıtını temsil eder.
+- [Çalışma SayfalarıYanıt](worksheetsresponse) : Çalışma Sayfalarının Yanıtını temsil eder.
 - [AnalizExcelTalebi](analyzeexcelrequest)  :   
 - [Toplu Dönüştürme İsteği](batchconvertrequest) : Toplu dönüştürme dosyası isteğini belirtir
 - [Toplu Kilit İsteği](batchlockrequest) : Toplu kilit dosyası isteğini belirtir
 - [Toplu Koruma Talebi](batchprotectrequest) : Toplu koruma dosyası isteğini belirtir
 - [Toplu Bölme İsteği](batchsplitrequest)  :   
 - [Renk Filtresi Talebi](colorfilterrequest) : Renk filtresi isteğini belirtir
-- [Parametreyi Dönüştür](convertparameter) : Dönüştürme parametresini gösterir
+- [Parametreyi Dönüştür](convertparameter) Dönüştürme parametresini gösterir
 - [PivotTableİsteği Oluştur](createpivottablerequest) : Pivot tablo oluşturma isteğini belirtir
 - [Veri Temizleme Talebi](datacleansingrequest) : Bir Elektronik Tablo dosyası için veri temizleme isteği.
 - [Veri Tekilleştirme Talebi](datadeduplicationrequest)  :   
 - [Veri Doldurma İsteği](datafillrequest)  :   
+- [Veri Dönüşümü Talebi](datatransformationrequest)  :   
 - [Eksik Satır İsteğini Sil](deleteincompleterowsrequest)  :   
 - [ImportJsonRequest](importjsonrequest) : İçe aktarılan xml veri talebini belirtir
 - [XMLİsteğini İçe Aktar](importxmlrequest) : İçe aktarılan xml veri talebini belirtir
@@ -297,27 +300,37 @@ weight: 50
 - [PivotTableFieldRequest](pivottablefieldrequest) : Pivot tablo alanı isteğini belirtir
 - [Çalışma Kitabını KoruTalebi](protectworkbookrequest) : Çalışma kitabını koruma isteğini belirtir
 - [AralıkKopyaTalebi](rangecopyrequest) : Aralık kopyalama isteğini gösterir
-- [RangeSetOutlineBorderRequest](rangesetoutlineborderrequest) Aralık ayarı anahat kenarlığı isteğini belirtir.
+- [RangeSetOutlineBorderRequest](rangesetoutlineborderrequest) : Aralık ayarı anahat kenarlığı isteğini belirtir.
 - [RangeSetStyleRequest](rangesetstylerequest) : Aralık seti stili isteğini belirtir.
-- [Aralık Sıralama İsteği](rangesortrequest) : Aralık sıralama isteğini belirtir
+- [Aralık Sıralama İsteği](rangesortrequest) Aralık sıralama isteğini belirtir
 - [TabloToplamİstek](tabletotalrequest) : Tablo toplam talebini gösterir
 - [MetinSuİşaretçiİsteği](textwatermarkerrequest) : Metin su işaretçisi isteğini belirtir.
 - [Çalışma Kitabı Şifreleme İsteği](workbookencryptionrequest) : Çalışma kitabı şifreleme/şifre çözme istekleri tarafından kullanılır.
 - [Çalışma Kitabı Koruma Talebi](workbookprotectionrequest) : Çalışma kitabı koruma istekleri tarafından kullanılır.
 - [Çalışma SayfasıMovingRequest](worksheetmovingrequest) : Çalışma kitabı taşıma istekleri tarafından kullanılır.
-- [Görüntü Veya Yazdırma Seçenekleri](imageorprintoptions)  :   
-- [OluşturmaYazı Tipi](renderingfont)  :   
-- [İşlemeFiligran](renderingwatermark)  :   
-- [Pivot Alanı](pivotfield)  :   
+- [Görüntü Veya Yazdırma Seçenekleri](imageorprintoptions) : Çalışma sayfasını görüntülere dönüştürürken, çalışma sayfasını yazdırırken veya grafiği görüntüye dönüştürürken seçenekleri belirtmenize olanak tanır.
+- [OluşturmaYazı Tipi](renderingfont) : Oluşturma için yazı tipi.
+- [İşlemeFiligran](renderingwatermark) : Oluşturma için filigran.
+- [Birleştirme Türü](jointype)  :   
+- [Veri yükle](loaddata) : Veri bilgileri yükleniyor.
+- [Yükle](loadto)  :   
+- [Sorguları Birleştir](mergequeries) : Birleştirme sorgularını temsil eder.
+- [Pivot Sütunu](pivotcolumn)  :   
+- [SorguVeri Kaynağı](querydatasource)  :   
+- [QueryDataSourceDataType](querydatasourcedatatype)  :   
+- [Sorgu Tablosu](querytable) : QueryTable bilgilerini temsil eder.
+- [dönüşüm](transformation)  :   
+- [Özeti AçSütun](unpivotcolumn)  :   
+- [Pivot Alanı](pivotfield) PivotTable raporundaki bir alanı temsil eder.
 - [Pivot Filtresi](pivotfilter) : PivotFilter Koleksiyonundaki bir PivotFilter'ı temsil eder.
-- [Pivot Öğesi](pivotitem)  :   
-- [Pivot tablo](pivottable)  :   
-- [PivotTable'lar](pivottables)  :   
+- [Pivot Öğesi](pivotitem) : PivotField raporundaki bir öğeyi temsil eder.
+- [Pivot tablo](pivottable) : PivotTable'ın özet açıklaması.
+- [PivotTable'lar](pivottables) : Belirtilen çalışma sayfasındaki tüm PivotTable nesnelerinin koleksiyonunu temsil eder.
+- [Hücre Değeri](cellvalue) : Hücre değerini ve karşılık gelen türü temsil eder.
 - [CustomParserConfig](customparserconfig)  :   
 - [Import2DimensionDoubleArrayOption](import2dimensiondoublearrayoption)  :   
 - [Import2DimensionIntArrayOption](import2dimensionintarrayoption)  :   
 - [Import2DimensionStringArrayOption](import2dimensionstringarrayoption)  :   
-- [Hücre Değeri](cellvalue)  :   
 - [Toplu Verileri İçe Aktarma Seçeneği](importbatchdataoption)  :   
 - [CSVDataOption'ı İçe Aktar](importcsvdataoption)  :   
 - [Veri Türü İçe Aktarma](importdatatype)  :   
@@ -327,87 +340,84 @@ weight: 50
 - [Resim İçe Aktarma Seçeneği](importpictureoption)  :   
 - [İçe Aktarma Konumu](importposition)  :   
 - [ImportStringArrayOption](importstringarrayoption)  :   
-- [ArcShape](arcshape)  :   
-- [Alan](area)  :   
-- [Otomatik Şekil](autoshape)  :   
+- [ArcShape](arcshape) : Yay şeklini temsil eder.
+- [Alan](area) : Bir alan biçimini temsil eden nesneyi kapsüller.
+- [Otomatik Şekil](autoshape) : Bir Otomatik Şekil'i temsil eder.
 - [Otomatik Şekiller](autoshapes)  :   
-- [Düğme](button)  :   
-- [HücrelerÇizim](cellsdrawing)  :   
-- [Onay Kutusu](checkbox)  :   
-- [Açılan kutu](combobox)  :   
-- [Yorum Şekli](commentshape)  :   
-- [Doldurma Biçimi](fillformat)  :   
+- [Düğme](button) : Forms kontrolünü temsil eder: Düğme
+- [HücrelerÇizim](cellsdrawing) : Otomatik şekli ve çizim nesnesini temsil eder.
+- [Onay Kutusu](checkbox) : Çalışma sayfasındaki onay kutusu nesnesini temsil eder.
+- [Açılan kutu](combobox) : ComboBox kontrol formunu temsil eder.
+- [Yorum Şekli](commentshape) : Yorumun şeklini temsil eder.
+- [Doldurma Biçimi](fillformat) : Bir şeklin dolgu biçimlendirmesini temsil eden nesneyi kapsüller.
 - [Biçim](form)  :   
 - [Formlar](forms)  :   
-- [Gradyan Doldurma](gradientfill)  :   
+- [Gradyan Doldurma](gradientfill) Degrade dolguyu temsil eder.
 - [GradyanDoldurDurdur](gradientfillstop)  :   
-- [Grup Kutusu](groupbox)  :   
-- [Grup Şekli](groupshape)  :   
-- [Etiket](label)  :   
+- [Grup Kutusu](groupbox) : Bir elektronik tablodaki grup kutusunu temsil eden nesneyi kapsüller.
+- [Grup Şekli](groupshape) : Bireysel şekilleri içeren grup şeklini temsil eder.
+- [Etiket](label) : Elektronik tablodaki bir etiketi temsil eden nesneyi kapsüller.
 - [Astar](line) : Satır biçimini temsil eden nesneyi kapsüller.
-- [Satır Formatı](lineformat)  :   
-- [Çizgi Şekli](lineshape)  :   
-- [Liste kutusu](listbox)  :   
-- [Ole nesnesi](oleobject)  :   
-- [OleNesneleri](oleobjects)  :   
-- [Oval](oval)  :   
-- [Desen Doldurma](patternfill)  :   
-- [PicFormatSeçeneği](picformatoption)  :   
-- [Resim](picture)  :   
-- [Resimler](pictures)  :   
-- [Radyo düğmesi](radiobutton)  :   
-- [Dikdörtgen şekil](rectangleshape)  :   
-- [Kaydırma çubuğu](scrollbar)  :   
-- [Gölge Efekti](shadoweffect)  :   
-- [Şekil](shape)  :   
-- [Şekiller](shapes)  :   
-- [Katı dolgu](solidfill)  :   
-- [Döndürücü](spinner)  :   
-- [Metin kutusu](textbox)  :   
-- [Doku Doldurma](texturefill)  :   
-- [Döşeme Resmi Seçeneği](tilepicoption)  :   
+- [Satır Formatı](lineformat) : Hattın tüm ayarlarını temsil eder.
+- [Çizgi Şekli](lineshape) : Çizgi şeklini temsil eder.
+- [Liste kutusu](listbox) : Bir liste kutusu nesnesini temsil eder.
+- [Ole nesnesi](oleobject) : Çalışma sayfasındaki bir OleObject'i temsil eder.
+- [OleNesneleri](oleobjects) : Gömülü OLE nesnelerini temsil eder.
+- [Oval](oval) : Oval şekli temsil eder.
+- [Desen Doldurma](patternfill) : Desen dolgusu formatını temsil eden nesneyi kapsüller
+- [PicFormatSeçeneği](picformatoption) : Resim formatı seçeneğini temsil eder
+- [Resim](picture) : Bir e-tabloda tek bir resmi temsil eden nesneyi kapsüller.
+- [Resimler](pictures) : Bir nesne koleksiyonunu kapsüller.
+- [Radyo düğmesi](radiobutton) : Bir radyo düğmesini temsil eder.
+- [Dikdörtgen şekil](rectangleshape) : Dikdörtgen şeklini temsil eder.
+- [Kaydırma çubuğu](scrollbar) Kaydırma çubuğu nesnesini temsil eder.
+- [Gölge Efekti](shadoweffect) : Bu sınıf, grafik öğesinin veya şeklin gölge efektini belirtir.
+- [Şekil](shape) : Msodrawing nesnesini temsil eder.
+- [Şekiller](shapes) : Bir çalışma sayfasındaki/grafikteki tüm şekli temsil eder.
+- [Katı dolgu](solidfill) : Katı dolgu formatını temsil eden nesneyi kapsüller
+- [Döndürücü](spinner) : Formlar denetimini temsil eder: Döndürücü.
+- [Metin kutusu](textbox) : Elektronik tablodaki bir metin kutusunu temsil eden nesneyi kapsüller.
+- [Doku Doldurma](texturefill) : Doku dolgusu formatını temsil eden nesneyi kapsüller
+- [Döşeme Resmi Seçeneği](tilepicoption) : Döşeme resmini doku olarak temsil eder.
 - [Elektronik imza](digitalsignature) : Dosyadaki imza.
-- [Eksen](axis)  :   
-- [Çizelge](chart)  :   
-- [GrafikAlan](chartarea)  :   
-- [GrafikVeriTablosu](chartdatatable)  :   
-- [Grafik Çerçevesi](chartframe)  :   
+- [Eksen](axis) : Grafiğin eksenini temsil eden nesneyi kapsüller.
+- [Çizelge](chart) : Tek bir Excel grafiğini temsil eden nesneyi kapsüller.
+- [GrafikAlan](chartarea) : Çalışma sayfasında grafik alanını temsil eden nesneyi kapsüller.
+- [GrafikVeriTablosu](chartdatatable) Bir grafik veri tablosunu temsil eder.
+- [Grafik Çerçevesi](chartframe) : Bir grafikteki çerçeve nesnesini temsil eden nesneyi kapsüller.
 - [GrafikKüreselleşmeAyarlar](chartglobalizationsettings) : Grafiğin genelleştirme ayarlarını temsil eder.
-- [Harita Noktası](chartpoint)  :   
-- [Harita Noktaları](chartpoints)  :   
-- [Grafikler](charts)  :   
+- [Harita Noktası](chartpoint) : Bir grafikteki serideki tek bir noktayı temsil eder.
+- [Harita Noktaları](chartpoints) : Bir serideki tüm noktaları içeren bir koleksiyonu temsil eder.
+- [Grafikler](charts) : Bir nesne koleksiyonunu kapsüller.
 - [Grafik Şekli](chartshape) : Grafik şekli nesnesi
-- [Veri etiketleri](datalabels)  :   
-- [Ekran Birimi Etiketi](displayunitlabel)  :   
-- [DropBar'lar](dropbars)  :   
-- [Hata çubuğu](errorbar)  :   
-- [Zemin](floor)  :   
-- [Efsane](legend)  :   
+- [Veri etiketleri](datalabels) : Belirtilen Seri için tüm DataLabel nesnelerinin bir koleksiyonunu kapsüller.
+- [Ekran Birimi Etiketi](displayunitlabel) : Görüntüleme ünitesi etiketini temsil eder.
+- [DropBar'lar](dropbars) : Bir grafikteki yukarı/aşağı çubukları temsil eder.
+- [Hata çubuğu](errorbar) : Veri serisinin hata çubuğunu temsil eder.
+- [Zemin](floor) : 3 boyutlu bir grafiğin tabanını temsil eden nesneyi kapsüller.
+- [Efsane](legend) : Grafik açıklamasını temsil eden nesneyi kapsüller.
 - [EfsaneGirişler](legendentries)  :   
-- [Efsane Girişi](legendentry)  :   
-- [İşaretleyici](marker)  :   
-- [Arsa alanı](plotarea)  :   
-- [Seri](series)  :   
+- [Efsane Girişi](legendentry) : Bir grafik açıklamasındaki açıklama girişini temsil eder.
+- [İşaretleyici](marker) : Çizgi grafikte, dağılım grafiğinde veya radar grafiğinde işaretçiyi temsil eder.
+- [Arsa alanı](plotarea) Bir grafikteki çizim alanını temsil eden nesneyi kapsüller.
+- [Seri](series) : Bir grafikteki tek bir veri serisini temsil eden nesneyi kapsüller.
 - [SeriÖğeler](seriesitems)  :   
 - [Mini grafik](sparkline) : Mini grafik, çalışma sayfası hücresindeki verilerin görsel temsilini sağlayan küçük bir grafiği veya grafiği temsil eder.
-- [SparklineGrubu](sparklinegroup)  :   
+- [SparklineGrubu](sparklinegroup) : mini grafik grubu halinde düzenlenmiştir. Bir SparklineGroup değişken sayıda mini grafik öğesi içerir. Mini grafik grubu mini grafiklerin türünü, görüntü ayarlarını ve eksen ayarlarını belirtir.
 - [Mini Grafik Grupları](sparklinegroups) : Aspose.Cells.Charts.SparklineGroup nesnelerinin bir koleksiyonunu kapsüller.
-- [Onay Etiketleri](ticklabels)  :   
-- [Başlık](title)  :   
-- [Trend çizgisi](trendline)  :   
-- [Eğilim çizgileri](trendlines)  :   
-- [Duvarlar](walls)  :   
+- [Onay Etiketleri](ticklabels) : Grafik eksenindeki onay işaretleriyle ilişkili onay işareti etiketlerini temsil eder.
+- [Başlık](title) : Grafiğin veya eksenin başlığını temsil eden nesneyi kapsüller.
+- [Trend çizgisi](trendline) : Bir grafikteki eğilim çizgisini temsil eder.
+- [Eğilim çizgileri](trendlines) : Belirtilen veri serisine ait tüm nesnelerin koleksiyonunu temsil eder.
+- [Duvarlar](walls) 3 boyutlu bir grafiğin duvarlarını temsil eden nesneyi kapsüller.
 - [ColumnDataExceptionAçıklama](columndataexceptiondescription)  :   
 - [MetinKategori Türü](textcategorytype)  :   
-- [Analiz Edilen Sütun Açıklaması](analyzedcolumndescription) Her sütunun özellikleri nasıl kullanılır: şu anda zaman çizelgesine, ürün grubuna, sayısal istatistik satırına bölünmüştür Ürün nasıl sunulur, birleşik bir plan Tam dijital sorunu nasıl çözülür? Tam metin Nasıl çözülür? İki sütun: Metin, Sayı en kolayıdır Üç sütun: Metin, Metin, Sayı metin, sayı, sayı --- tarih tarih; Tarih Sayısal ; Sayısal Dijital Peki ya dört sütun, beş sütun?
-- [Analiz EdilenSonuç](analyzedresult)  :   
-- [Analiz EdilenTabloAçıklaması](analyzedtabledescription)  :   
-- [TarihKaynak Türü](datesourcetype)  :   
-- [ÖnerilenÇıkış Türü](suggestedoutputtype)  :   
-- [Öneriyi Analiz Et](analyzesuggestion)  :   
-- [Keşfet Grafiği](discoverchart)  :   
-- [PivotTable'ı Keşfedin](discoverpivottable)  :   
-- [ExcelVeriİstatistikleri](exceldatastatistics)  :   
-- [Çalışma SayfasıVeriİstatistikleri](worksheetdatastatistics)  :   
+- [Analiz Edilen Sütun Açıklaması](analyzedcolumndescription) : Analiz edilen sütunun açıklamasını temsil eder.
+- [Analiz EdilenSonuç](analyzedresult) : Analiz edilen verilerin sonuçlarını temsil eder.
+- [Analiz EdilenTabloAçıklaması](analyzedtabledescription) : Analiz edilen tablo açıklamasını temsil eder.
+- [Keşfet Grafiği](discoverchart) : Bir tablonun veri analizine dayalı olarak oluşturulan bir grafik olan bir grafiği temsil eder.
+- [PivotTable'ı Keşfedin](discoverpivottable) : Bir tablonun veri analizine dayalı olarak oluşturulan bir pivot tablo olan pivot tabloyu temsil eder.
+- [ExcelVeriİstatistikleri](exceldatastatistics) : Excel veri istatistiğini temsil eder.
+- [Çalışma SayfasıVeriİstatistikleri](worksheetdatastatistics) : Çalışma sayfası veri istatistiklerini temsil eder.
 - [Hata](error) : Hata
 - [Hata detayları](errordetails) : Hata ayrıntıları

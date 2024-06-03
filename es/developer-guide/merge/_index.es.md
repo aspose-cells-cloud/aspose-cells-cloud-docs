@@ -6,6 +6,7 @@ url: /es/merge/
 keywords: Working with merger on an Excel file
 description: Aspose.Cells Cloud REST API admite trabajar con fusión en un archivo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 32
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Fusionar
 ---
 ## Trabajando con fusión en un archivo Excel.
 

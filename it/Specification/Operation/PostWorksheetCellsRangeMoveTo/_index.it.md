@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/postworksheetcellsrangemoveto/
 description: Sposta l'intervallo corrente nell'intervallo di destinazione
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PostWorksheetCellsRangeMoveTo
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangeMoveTo" >}}

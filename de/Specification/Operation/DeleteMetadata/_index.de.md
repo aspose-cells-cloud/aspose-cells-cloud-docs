@@ -3,22 +3,23 @@ title: Metadaten löschen
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/deletemetadata/
-description: Löschen Sie die Dokumenteigenschaften der Zellen in der Datei Excel und speichern Sie sie in verschiedenen Formaten
+description: Löschen Sie Zellendokumenteigenschaften in der Datei Excel und speichern Sie sie in verschiedenen Formaten
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, DeleteMetadata
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteMetadata" >}}
 {{< blocks/products/cells/docs-title titlemsg="Delete cells document properties in Excel file, and save them is various formats." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/metadata/delete,POST,Zellen löschen, Dokumenteigenschaften in der Datei Excel speichern und in verschiedenen Formaten speichern.,<a href=\'https://apireference.aspose.cloud/cells/#/LightCells/DeleteMetadata\'>DeleteMetadata </a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/metadata/delete,POST,Löschen Sie die Eigenschaften des Zellendokuments in der Datei Excel und speichern Sie sie in verschiedenen Formaten.,<a href=\'https://apireference.aspose.cloud/cells/#/LightCells/DeleteMetadata\'>DeleteMetadata</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="Typ, Zeichenfolge, Cells Name der Dokumenteigenschaft." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="outFormat,string,Das Ausgabedatenformat 1 /BMP/MD[Markdown]/Numbers)" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="Passwort, Zeichenfolge, Das zum Öffnen einer Excel-Datei erforderliche Passwort." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction,boolean,Gibt an, ob die Einschränkung der Excel-Datei überprüft wird, wenn der Benutzer zellenbezogene Objekte ändert." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Typ, Zeichenfolge, Cells Dokument-Eigenschaftsname." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="outFormat, Zeichenfolge, Das Ausgabedatendateiformat. (CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Kennwort, Zeichenfolge, Das zum Öffnen einer Excel-Datei erforderliche Kennwort." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction, boolean, ob die Einschränkung der Excel-Datei überprüft wird, wenn der Benutzer zellenbezogene Objekte ändert." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/LightCellsController/DeleteMetadata\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

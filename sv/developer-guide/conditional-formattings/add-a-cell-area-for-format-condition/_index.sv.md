@@ -6,6 +6,7 @@ aliases: [/add-a-cell-area-for-format-condition/]
 keywords: REST API, spreadsheets, excel, add cellarea for formatconditio
 description: "Cells. Cloud API för Excel fungerar: lägg till kommentar"
 weight: 30
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Add CellArea
 ---
 Denna REST API indikerar att lägga till ett cellområde för formatvillkor
             

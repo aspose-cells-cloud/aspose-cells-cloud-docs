@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/postsetworksheetcolumnwidth/
 description: Establecer el ancho de columna de la hoja de trabajo
+kwords: Excel, Office, hoja de cálculo, nube REST API, PostSetWorksheetColumnWidth
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostSetWorksheetColumnWidth" >}}

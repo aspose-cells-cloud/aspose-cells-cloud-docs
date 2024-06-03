@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/postconvertworkbooktopng/
 description: Konvertera Excel-filen till PNG-filer
+kwords: Excel, Office, Kalkylblad, Cloud REST API, PostConvertWorkbookToPNG
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostConvertWorkbookToPNG" >}}

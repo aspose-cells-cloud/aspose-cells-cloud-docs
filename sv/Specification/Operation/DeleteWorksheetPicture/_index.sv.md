@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/deleteworksheetpicture/
 description: Ta bort ett bildobjekt genom att indexera i kalkylbladet
+kwords: Excel, Office, Kalkylblad, Cloud REST API, Ta bort WorksheetPicture
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetPicture" >}}

@@ -6,6 +6,7 @@ aliases: [/update-hyperlinks-in-excel-worksheet/]
 keywords: Update a hyperlink in an Excel worksheet
 description: Aspose.Cells Cloud REST API поддерживает обновление гиперссылки на листе Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 30
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, обновление
 ---
 Этот REST API указывает на `update worksheet hyperlink` по индексу на листе Excel.
  

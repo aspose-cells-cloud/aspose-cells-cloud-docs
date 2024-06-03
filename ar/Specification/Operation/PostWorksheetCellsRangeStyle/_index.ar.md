@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postworksheetcellsrangestyle/
 description: قم بتعيين النمط للنطاق المحدد
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostWorksheetCellsRangeStyle
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangeStyle" >}}
@@ -23,7 +24,7 @@ weight: 50
     {{< blocks/products/cells/docs-Parameter-content columns="اسم التخزين، سلسلة، اسم التخزين." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="اسم المعلمة، النوع، الوصف" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns=" rangeOperate,class:rangesetstylerequest,RangeSetStyleRequest طلب نمط تعيين النطاق" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="rangeOperate,class:rangesetstylerequest,RangeSetStyleRequest طلب نمط تعيين النطاق" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

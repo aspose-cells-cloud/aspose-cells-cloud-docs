@@ -4,6 +4,7 @@ type: docs
 url: /tr/charts/to-image/
 aliases: [/convert-chart-to-image/]
 weight: 50
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Grafiği Resme Dönüştür
 ---
 Bu REST API, bir grafiğin resme nasıl dönüştürüleceğini gösterir.
  

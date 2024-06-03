@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/deleteworksheet/
 description: Ta bort ett kalkylblad i arbetsboken
+kwords: Excel, Office, Kalkylblad, Cloud REST API, Ta bort Arbetsblad
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheet" >}}

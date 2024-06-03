@@ -3,6 +3,7 @@ title: Получить MinColumn из рабочей таблицы Excel
 type: docs
 url: /ru/get-mincolumn-from-excel-worksheet/
 weight: 100
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, получить MinColumn из рабочего листа Excel
 ---
 Этот REST API указывает, что показывает получение `mincolumn` в файле Excel, когда параметр `cellOrMethodName` равен `mincolumn`.
 

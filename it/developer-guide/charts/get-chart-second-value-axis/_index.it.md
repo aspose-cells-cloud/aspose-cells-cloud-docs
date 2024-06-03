@@ -3,6 +3,7 @@ title:  Ottieni il secondo asse dei valori del grafico
 type: docs
 url: /it/charts/second-value-axis/get/
 weight: 60
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Ottieni grafico secondo asse valore
 ---
  Questo REST API indica Ottieni secondo asse valore grafico.
  

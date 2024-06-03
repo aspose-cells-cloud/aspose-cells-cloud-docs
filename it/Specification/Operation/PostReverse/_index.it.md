@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/postreverse/
 description: Inverti righe o colonne nei file Excel e crea file di output in vari formati
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PostReverse
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostReverse" >}}

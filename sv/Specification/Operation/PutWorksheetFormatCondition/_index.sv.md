@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/putworksheetformatcondition/
 description: Lägg till ett formatvillkor i kalkylbladet
+kwords: Excel, Office, Kalkylblad, Cloud REST API, PutWorksheetFormatCondition
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetFormatCondition" >}}
@@ -21,7 +22,7 @@ weight: 50
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parameternamn, typ, beskrivning" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="cellArea,string,Lägger till ett villkorligt formaterat cellintervall." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="typ,sträng,Formatvillkorstyp(CellValue/Expression/ColorScale/DataBar/IconSet/Top10/UniqueValues/DuplicateValues/ContainsText/NotContainsText/Begins With/EndsWith/ContainsBlanks/NotContainsABlanks/InnehållerBlankErrors/NotContainsA genomsnitt)." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="typ,sträng,Formatvillkorstyp(CellValue/Expression/ColorScale/DataBar/IconSet/Top10/UniqueValues/DuplicateValues/ContainsText/NotContainsText/BeginsWith/EndsWith/ContainsBlanks/NotContainsA veAverage)." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="operatorType,string,Representerar operatortypen för villkorligt format och datavalidering (Between/Equal/GreaterThan/GreaterOrEqual/LessThan/None/NotBetween/NotEqual)." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="formula1,string,Värdet eller uttrycket som är associerat med villkorlig formatering." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="formula2,string,Värdet eller uttrycket som är associerat med villkorlig formatering." >}} 

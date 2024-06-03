@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/postcopyworksheetrows/
 description: Copia dati e formati da intere righe specifiche nel foglio di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PostCopyWorksheetRows
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostCopyWorksheetRows" >}}

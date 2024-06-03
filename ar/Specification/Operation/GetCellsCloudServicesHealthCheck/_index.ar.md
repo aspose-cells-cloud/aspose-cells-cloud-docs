@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/getcellscloudserviceshealthcheck/
 description: استرداد أوصاف الخلايا بتنسيق محدد
+kwords: Excel، Office، جدول البيانات، Cloud REST API، GetCellsCloudServicesHealthCheck
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetCellsCloudServicesHealthCheck" >}}

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/putworksheetdynamicfilter/
 description: إضافة عامل تصفية ديناميكي في ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PutWorksheetDynamicFilter
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetDynamicFilter" >}}

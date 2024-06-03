@@ -7,6 +7,7 @@ url: /it/ranges/update/
 keywords: How to update range content from an Excel worksheet
 description: Aspose.Cells Cloud REST API supporta l'aggiornamento del contenuto dell'intervallo da un foglio di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 20
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Come aggiornare il contenuto dell'intervallo da un foglio di lavoro Excel
 ---
 ## Utilizzo dell'aggiornamento del contenuto dell'intervallo su un foglio di lavoro Excel.
 

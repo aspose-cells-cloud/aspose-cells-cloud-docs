@@ -5,6 +5,7 @@ type: docs
 url: /sv/docker/tag-list/
 description: Plattformar som stöds
 weight: 30
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, TagList
 ---
 ##  Windows Server 2016-bilder ##
 

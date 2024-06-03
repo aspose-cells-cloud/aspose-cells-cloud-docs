@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/putactiveworksheet/
 description: Establecer el índice de la hoja de trabajo activa en el libro de trabajo
+kwords: Excel, Office, Hoja de cálculo, Cloud REST API, PutActiveWorksheet
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutActiveWorksheet" >}}

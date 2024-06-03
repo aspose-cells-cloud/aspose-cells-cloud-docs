@@ -6,6 +6,7 @@ aliases: [/get-comment-from-a-worksheet/]
 keywords: REST API, spreadsheets, excel, get commen
 description: "Cells. Cloud API för Excel fungerar: få kommentar"
 weight: 10
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Get
 ---
 Denna REST API indikerar Få kalkylbladskommentar efter cellnamn.
  

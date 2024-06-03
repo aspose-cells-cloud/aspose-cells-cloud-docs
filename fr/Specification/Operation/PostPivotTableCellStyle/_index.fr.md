@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postpivottablecellstyle/
 description: Mettre à jour le style de cellule dans le tableau croisé dynamique
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostPivotTableCellStyle
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostPivotTableCellStyle" >}}

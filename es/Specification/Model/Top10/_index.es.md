@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/model/top10/
 description: "Aspose.Cells Especificación del modelo de nube: Top10. Maneje sin esfuerzo Excel y otros documentos de hoja de cálculo con funciones como abrir, generar, editar, dividir, fusionar, comparar y convertir."
+kwords: Excel, Office, Hoja de cálculo, Nube REST API, Top10
 weight: 50
 ---
 ## **top10**
 
-Describe la regla de formato condicional Top10. Esta regla de formato condicional resalta las celdas cuyos valores se encuentran en el corchete N superior o N inferior, según lo especificado.
+ Describe la regla de formato condicional Top10. Esta regla de formato condicional resalta las celdas cuyos valores se encuentran en el corchete N superior o N inferior, según lo especificado.
 
 | Nombre de la propiedad| tipo de propiedad| Anulable| Solo lectura| Valor por defecto| Descripción|
 |:- |:- |:- |:- |:- |:- |

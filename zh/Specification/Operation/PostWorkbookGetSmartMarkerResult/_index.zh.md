@@ -1,28 +1,29 @@
 ﻿---
-title: 发布工作簿获取智能标记结果
+title: PostWorkbook获取智能标记结果
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/postworkbookgetsmartmarkerresult/
 description: 智能标记处理
+kwords: Excel，Office，电子表格，云 REST API，PostWorkbookGetSmartMarkerResult
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookGetSmartMarkerResult" >}}
 {{< blocks/products/cells/docs-title titlemsg="Smart marker processing." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/smartmarker,POST,智能标记处理。,<a href=\'https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookGetSmartMarkerResult\'>PostWorkbookGetSmartMarkerResult</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="参数名称、类型、描述" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="名称，字符串，文件名。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="name，string，文件名。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="xmlFile,string,xml文件完整路径，如果为空则从请求体中读取数据。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="xmlFile，string，xml文件完整路径，若为空则从请求主体中读取数据。" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="文件夹，字符串，文件所在的文件夹。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="outPath,string,结果保存路径" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,文件所在的存储名称。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="outStorageName,string,结果文件所在的存储名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="outPath,string,保存结果的路径" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName，string，文件所在的存储名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="outStorageName，string，结果文件所在的存储名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/WorkbookController/PostWorkbookGetSmartMarkerResult\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

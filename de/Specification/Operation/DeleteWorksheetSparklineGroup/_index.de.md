@@ -1,27 +1,28 @@
 ﻿---
-title: ArbeitsblattSparklineGrou löschen
+title: LöschenArbeitsblattSparklineGruppe
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/deleteworksheetsparklinegroup/
-description: Löschen Sie eine Sparkline-Gruppe im Arbeitsblatt
+description: Löschen einer Sparkline-Gruppe im Arbeitsblatt
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, DeleteWorksheetSparklineGroup
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetSparklineGroup" >}}
 {{< blocks/products/cells/docs-title titlemsg="Delete a sparkline group in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/sparklineGroups/{sparklineIndex},DELETE,Eine Sparkline-Gruppe im Arbeitsblatt löschen.,<a href=\'https://apireference.aspose.cloud/cells/#/SparklineGroups /DeleteWorksheetSparklineGroup\'>DeleteWorksheetSparklineGroup</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/sparklineGroups/{sparklineIndex},DELETE,Löschen Sie eine Sparkline-Gruppe im Arbeitsblatt.,<a href=\'https://apireference.aspose.cloud/cells/#/SparklineGroups/DeleteWorksheetSparklineGroup\'>DeleteWorksheetSparklineGroup</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sparklineIndex,integer,Der auf Null basierende Index des Elements." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sparklineIndex,Integer,Der nullbasierte Index des Elements." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/SparklineGroupsController/DeleteWorksheetSparklineGroup\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

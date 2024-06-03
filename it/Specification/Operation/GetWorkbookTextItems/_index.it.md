@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/getworkbooktextitems/
 description: Recupera elementi di testo nella cartella di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, GetWorkbookTextItems
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorkbookTextItems" >}}

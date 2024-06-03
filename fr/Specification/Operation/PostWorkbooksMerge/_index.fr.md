@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postworkbooksmerge/
 description: Fusionner un classeur dans le classeur existant
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostWorkbooksMerge
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbooksMerge" >}}

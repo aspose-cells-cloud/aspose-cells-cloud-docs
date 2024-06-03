@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/model/filtercolumn/
 description: "Aspose.Cells Spécification du modèle cloud : FilterColumn. Gérez sans effort Excel et d'autres feuilles de calcul avec des fonctionnalités telles que l'ouverture, la génération, l'édition, le fractionnement, la fusion, la comparaison et la conversion."
+kwords: Excel, Office, feuille de calcul, Cloud REST API, FilterColumn
 weight: 50
 ---
 ## **filtreColonne**
 
- 
+ Représente un filtre pour une seule colonne. L'objet Filter est membre de la collection Filters.
 
 | Nom de la propriété| Type de propriété| Nullable| Lecture seulement| Valeur par défaut| Description|
 |:- |:- |:- |:- |:- |:- |
@@ -20,5 +21,5 @@ weight: 50
 | FiltreDynamique| Classe : Filtre dynamique| Vrai| FAUX|||
 | IcôneFiltre| Classe : IcôneFilter| Vrai| FAUX|||
 | Top10Filtre| Classe : Top10Filtre| Vrai| FAUX|||
-| Liste déroulante visible| Chaîne| Vrai| FAUX|| Indique si le bouton Filtre automatique de cette colonne est visible.|
+| Liste déroulante visible| Chaîne| Vrai| FAUX||Indique si le bouton Filtre automatique de cette colonne est visible.|
 

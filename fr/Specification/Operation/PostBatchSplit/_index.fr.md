@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postbatchsplit/
 description: Fichiers de fractionnement par lots qui répondent à des conditions de correspondance spécifiques
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostBatchSplit
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostBatchSplit" >}}

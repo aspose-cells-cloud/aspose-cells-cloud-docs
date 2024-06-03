@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/putworkbookcreate/
 description: Crea una nuova cartella di lavoro utilizzando metodi diversi
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PutWorkbookCreate
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorkbookCreate" >}}

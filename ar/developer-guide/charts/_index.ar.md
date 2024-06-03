@@ -7,6 +7,7 @@ aliases: [/working-with-charts/]
 keywords: REST API, spreadsheets, excel, chart
 description: "Cells.سحابة API لـ Excel تعمل: تعمل المخططات"
 weight: 100
+kwords: Excel، Office كلاود، ريست API، جدول البيانات، PDF، CSV، Json، Markdwon، الرسوم البيانية
 ---
 ## العمل مع المخططات في ملف Excel.
 

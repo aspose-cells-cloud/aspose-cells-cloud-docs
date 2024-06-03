@@ -4,13 +4,14 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/putworksheetvalidation/
 description: Добавьте проверку по индексу на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, PutWorksheetValidation
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetValidation" >}}
 {{< blocks/products/cells/docs-title titlemsg="Add a validation at index in the worksheet." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Описание,ссылка API" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/validations,PUT,Добавить проверку по индексу на листе.,<a href=\'https://apireference.aspose.cloud/cells/#/WorksheetValidations/PutWorksheetValidation\' >PutWorksheetValidation</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/validations,PUT,Добавьте проверку по индексу на листе.,<a href=\'https://apireference.aspose.cloud/cells/#/WorksheetValidations/PutWorksheetValidation\' >PutWorksheetValidation</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

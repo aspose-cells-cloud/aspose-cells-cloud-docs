@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postworksheetcellsrangecolumnwidth/
 description: Définir la largeur de colonne de la plage spécifiée
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostWorksheetCellsRangeColumnWidth
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangeColumnWidth" >}}

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/getchartareaborder/
 description: Grafik alanı kenarlık açıklamasını al
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, GetChartAreaBorder
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetChartAreaBorder" >}}

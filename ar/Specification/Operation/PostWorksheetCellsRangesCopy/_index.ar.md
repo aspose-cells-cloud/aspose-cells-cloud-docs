@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postworksheetcellsrangescopy/
 description: انسخ المحتوى من النطاق المصدر إلى النطاق الوجهة في ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostWorksheetCellsRangesCopy
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangesCopy" >}}

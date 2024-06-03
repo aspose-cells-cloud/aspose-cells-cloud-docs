@@ -4,6 +4,7 @@ type: docs
 url: /ru/charts/chart-area/fill-format/get/
 aliases: [/get-fill-format-of-a-chart-area-from-a-worksheet/]
 weight: 70
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Получить формат заполнения области диаграммы из рабочего листа
 ---
 Этот REST API указывает на получение информации о формате заполнения области диаграммы.
  

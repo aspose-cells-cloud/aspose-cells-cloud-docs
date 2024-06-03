@@ -4,16 +4,17 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/model/lineshape/
 description: "Aspose.Cells Specifica del modello cloud: LineShape. Gestisci facilmente Excel e altri fogli di calcolo con funzionalità come apertura, generazione, modifica, divisione, unione, confronto e conversione"
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, Forma linea
 weight: 50
 ---
 ## **lineaForma**
 
- 
+ Rappresenta la forma della linea.
 
 | Nome della proprietà| Tipo di proprietà| Nullabile| Sola lettura| Valore di default| Descrizione|
 |:- |:- |:- |:- |:- |:- |
 | BeginArrowheadLength| Corda| VERO| Falso|| Ottiene e imposta la lunghezza iniziale della punta della freccia della linea.|
-| BeginArrowheadStyle| Corda| VERO| Falso||Ottiene e imposta lo stile della punta della freccia iniziale della linea.|
+| BeginArrowheadStyle| Corda| VERO| Falso|| Ottiene e imposta lo stile della punta della freccia iniziale della linea.|
 | BeginArrowheadWidth| Corda| VERO| Falso|| Ottiene e imposta la larghezza iniziale della punta della freccia della linea.|
 | EndArrowheadLength| Corda| VERO| Falso|| Ottiene e imposta la lunghezza della punta della freccia finale della linea.|
 | EndArrowheadStyle| Corda| VERO| Falso|| Ottiene e imposta lo stile della punta della freccia finale della linea.|
@@ -35,7 +36,7 @@ weight: 50
 | X| Numero intero| VERO| Falso|||
 | Y| Numero intero| VERO| Falso|||
 | Angolo di rotazione| Galleggiante| VERO| Falso|||
-| HtmlText| Corda| VERO| Falso|||
+|HtmlText| Corda| VERO| Falso|||
 | Testo| Corda| VERO| Falso|||
 | Testo alternativo| Corda| VERO| Falso|||
 | TestoAllineamento orizzontale| Corda| VERO| Falso|||
@@ -56,4 +57,5 @@ weight: 50
 | Collegamento ipertestuale| Corda| VERO| Falso|||
 | collegamento| Classe: collegamento| VERO| Falso|||
 
-**Nome del genitore** : (Forma)[forma]
+**Nome del genitore** : [Forma](/specification/model/shape)
+

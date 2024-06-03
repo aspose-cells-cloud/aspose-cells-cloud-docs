@@ -5,6 +5,7 @@ type: docs
 url: /tr/available-sdks/
 description: Aspose.Cells Bulut, oluşturma, dönüştürme, birleştirme, bölme, koruma, iç nesne işlemleri vb. için Excel'i destekler
 weight: 30
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Mevcut SDK'lar
 ---
 ## **Aspose.Cells Bulut SDK'ları**
 Aspose.Cells Cloud, mevcut sistemlere kolay entegrasyon sağlayan, modern REST odaklı bir API'dir.

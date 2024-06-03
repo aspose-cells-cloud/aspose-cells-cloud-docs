@@ -8,6 +8,7 @@ aliases: [/decrypt-excel-workbooks/]
 keywords: REST API, spreadsheets, excel, decryp
 description: "Cells.Cloud API per Excel funziona: decodifica una cartella di lavoro Excel"
 weight: 50
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Decrittografa una cartella di lavoro Excel
 ---
 Questo REST API decodifica un Excel `workbook`.
 
@@ -42,7 +43,7 @@ Questo REST API decodifica un Excel `workbook`.
 
  IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDecryptDocument) definisce un'interfaccia di programmazione accessibile pubblicamente e consente di eseguire interazioni REST direttamente da un browser web.
 
- Puoi usare**cURL** strumento da riga di comando per accedere facilmente ai servizi web Aspose.Cells. Nell'esempio seguente viene illustrato come effettuare chiamate al Cloud API con cURL.
+ Puoi usare**cURL**strumento da riga di comando per accedere facilmente ai servizi web Aspose.Cells. Nell'esempio seguente viene illustrato come effettuare chiamate al Cloud API con cURL.
 
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}

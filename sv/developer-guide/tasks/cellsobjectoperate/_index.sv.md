@@ -6,6 +6,7 @@ url: /sv/tasks/cells-object-operate/
 aliases: [/working-with-cellsobjectoperate-task/]
 description: "Cells.Cloud API för Excel operera: celler objekt operera uppgift"
 weight: 20
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Arbeta med CellsObjectOperate Task
 ---
 Detta REST API opererar cellobjekt `task`.
 
@@ -33,7 +34,7 @@ Detta REST API opererar cellobjekt `task`.
 |Parameternamn|Typ|Beskrivning|
 |:- |:- |:- |
 | ChartIndex| heltal||
-| ChartType| sträng||
+|ChartType| sträng||
 | UpperLeftRow| heltal||
 | Övre vänstra kolumnen| heltal||
 | Nedre högerrad| heltal||
@@ -80,7 +81,7 @@ Detta REST API opererar cellobjekt `task`.
 | PivotTableIndex| heltal||
 | PivotFieldRows|heltal[]||
 | Pivotfältkolumner|heltal[]||
-|PivotFieldData|heltal[]||
+| PivotFieldData|heltal[]||
 
 
 **ShapeOperateParameter**

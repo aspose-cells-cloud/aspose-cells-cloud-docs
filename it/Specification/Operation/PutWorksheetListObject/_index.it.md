@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/putworksheetlistobject/
 description: Aggiungi un ListObject nel foglio di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PutWorksheetListObject
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetListObject" >}}

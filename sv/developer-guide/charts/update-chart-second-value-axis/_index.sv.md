@@ -3,6 +3,7 @@ title:  Uppdatera diagrammets andra värdeaxel
 type: docs
 url: /sv/charts/second-value-axis/update/
 weight: 160
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Uppdatera diagram andra värdeaxel
 ---
  Denna REST API indikerar uppdateringsdiagrams andra värdeaxel.
  

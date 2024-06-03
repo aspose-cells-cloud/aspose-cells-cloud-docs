@@ -8,6 +8,7 @@ aliases: [/copy-range-in-a-worksheet-with-paste-options/]
 keywords: Copy a range in an Excel worksheet with paste options
 description: Aspose.Cells Cloud REST API supporta la copia di un intervallo in un foglio di lavoro Excel con opzioni di incolla. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 20
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Copia intervallo in un foglio di lavoro con opzioni Incolla
 ---
 Questo REST API indica di copiare l'intervallo nel foglio di lavoro su un foglio di lavoro Excel.
  
@@ -24,7 +25,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges
 |:- |:- |:- |:- |
 | nome| corda| sentiero| nome della cartella di lavoro|
 | nomefoglio| corda| sentiero| nome del foglio di lavoro|
-| rangeOperate|| corpo|copydata,copystyle,copyto,copyvalue|
+| rangeOperate|| corpo| copydata,copystyle,copyto,copyvalue|
 | cartella| corda| domanda| Cartella della cartella di lavoro.|
 | storageName| corda| domanda| nome dell'archivio.|
  

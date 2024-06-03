@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/getchartvalueaxis/
 description: Hämta diagramvärdesaxeln i diagrammet
+kwords: Excel, Office, Kalkylblad, Cloud REST API, GetChartValueAxis
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetChartValueAxis" >}}

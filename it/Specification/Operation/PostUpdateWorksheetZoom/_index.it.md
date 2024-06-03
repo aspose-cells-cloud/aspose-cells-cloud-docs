@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/postupdateworksheetzoom/
 description: Aggiorna la percentuale di ridimensionamento nel foglio di lavoro. Dovrebbe essere compreso tra 10 e 400
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PostAggiornamentoFoglio di lavoroZoom
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostUpdateWorksheetZoom" >}}

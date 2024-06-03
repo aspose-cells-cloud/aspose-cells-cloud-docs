@@ -8,6 +8,7 @@ aliases: [/delete-column-from-an-excel-worksheet/,/delete-column-from-a-workshee
 keywords: Delete column on an Excel workshee
 description: Aspose.Cells Cloud REST API поддерживает удаление столбца на листе Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 80
+kwords: Excel, Office Cloud, REST API, электронная таблица, PDF, CSV, Json, Markdwon, удалить столбец на листе Excel
 ---
 Этот REST API копирует `column` на листе Excel.
 
@@ -22,17 +23,17 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/co
  
 | Имя параметра| Тип| Путь/строка запроса/HTTPBody|Описание|
 |:- |:- |:- |:- |
-| имя| нить| путь|Имя рабочей книги.|
+| имя| нить| путь| Имя рабочей книги.|
 | имя листа| нить| путь| Имя рабочего листа.|
 | индекс столбца| целое число| путь| Индекс столбца.|
 | столбцы| целое число| запрос| Колонны.|
-| обновитьссылку| логическое значение| запрос| Ссылка на обновление.|
+| обновитьссылку|логическое значение| запрос| Ссылка на обновление.|
 | папка| нить| запрос| Папка рабочей книги.|
 | имя_хранилища| нить| запрос| имя хранилища.|
 
 [Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetColumns) определяет общедоступный интерфейс программирования и позволяет выполнять взаимодействие с REST непосредственно из веб-браузера.
 
- Вы можете использовать**cURL** инструмент командной строки для легкого доступа к веб-службам Aspose.Cells. В следующем примере показано, как позвонить на Cloud API с помощью cURL.
+ Вы можете использовать**cURL**инструмент командной строки для легкого доступа к веб-службам Aspose.Cells. В следующем примере показано, как позвонить на Cloud API с помощью cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 

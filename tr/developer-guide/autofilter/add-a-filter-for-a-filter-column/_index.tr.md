@@ -8,6 +8,7 @@ aliases: [/add-a-filter-for-a-filter-column/]
 keywords: Adds a filter for a filter column on an Excel worksheet
 description: Aspose.Cells Bulut API, Excel çalışma sayfasındaki filtre sütunu için filtre eklenmesini destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 60
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel çalışma sayfasına filtre ekleme
 ---
 Bu REST API, Excel Çalışma Sayfasındaki bir filtre sütunu için `a filter` eklenmesi gerektiğini belirtir.
 
@@ -24,7 +25,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/
 
 | Parametre adı| Tip| Yol/Sorgu Dizesi/HTTPBody|Tanım|
 |:- |:- |:- |:- |
-| isim| sicim| Yol|Çalışma kitabı adı.|
+| isim| sicim| Yol| Çalışma kitabı adı.|
 | sayfaAdı| sicim| Yol| Çalışma sayfası adı.|
 |menzil|sicim| Sorgu||
 |alanIndex|tamsayı| Sorgu||

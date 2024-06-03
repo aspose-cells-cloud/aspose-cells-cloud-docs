@@ -8,6 +8,7 @@ aliases: [/get-worksheet-pivot-tables-information/]
 keywords: Get all pivot tables in an Excel worksheet
 description: Aspose.Cells Cloud REST API поддерживает получение всех сводных таблиц на листе Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 20
+kwords: Excel, Office Cloud, REST API, электронная таблица, PDF, CSV, Json, Markdwon, получить все сводные таблицы на листе Excel.
 ---
 Этот REST API указывает на получение информации о рабочем листе `pivottables`.
  

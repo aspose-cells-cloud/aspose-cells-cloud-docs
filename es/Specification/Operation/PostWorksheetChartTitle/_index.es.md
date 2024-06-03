@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/postworksheetcharttitle/
 description: Actualizar el título del gráfico en la hoja de trabajo
+kwords: Excel, Office, Hoja de cálculo, Cloud REST API, PostWorksheetChartTitle
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetChartTitle" >}}

@@ -3,6 +3,7 @@ title:  Obtener valor del gráfico Axi
 type: docs
 url: /es/charts/value-axis/get/
 weight: 60
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Obtener eje de valor del gráfico
 ---
 Este REST API indica Obtener eje de valor del gráfico
  

@@ -7,6 +7,7 @@ aliases: [/working-with-pivot-table-using-cellsobjectoperate-task/]
 keywords: REST API, pivot table, spreadsheets, exce
 description: "Cells.Cloud API, Excel için çalışır: CellsObjectOperate görevini kullanarak pivot tablo oluşturun"
 weight: 10
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, CellsObjectOperate görevini kullanarak pivot tabloyla çalışma
 ---
 Bu REST API, hücre nesnesini kullanarak `task`'i çalıştırarak `task`'i oluşturur.
 
@@ -22,7 +23,7 @@ Bu REST API, hücre nesnesini kullanarak `task`'i çalıştırarak `task`'i olu�
 | PivotTableIndex| tamsayı||
 | PivotFieldSatırlar|tamsayı[]||
 | PivotFieldSütunlar|tamsayı[]||
-|PivotFieldData|tamsayı[]||
+| PivotFieldData|tamsayı[]||
 
 
 ## DİNLENME API
@@ -33,7 +34,7 @@ Bu REST API, hücre nesnesini kullanarak `task`'i çalıştırarak `task`'i olu�
 
 [OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData) herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
 
- Kullanabilirsiniz**cURL** Aspose.Cells web hizmetlerine kolayca erişmek için komut satırı aracı. Aşağıdaki örnekte, cURL ile Cloud API'e nasıl çağrı yapılacağı gösterilmektedir.
+ Kullanabilirsiniz**cURL**Aspose.Cells web hizmetlerine kolayca erişmek için komut satırı aracı. Aşağıdaki örnekte, cURL ile Cloud API'e nasıl çağrı yapılacağı gösterilmektedir.
 
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}

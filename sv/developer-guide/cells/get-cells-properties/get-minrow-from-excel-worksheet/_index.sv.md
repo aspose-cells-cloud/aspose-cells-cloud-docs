@@ -3,6 +3,7 @@ title: Skaffa MinRow från Excel Workshee
 type: docs
 url: /sv/get-minrow-from-excel-worksheet/
 weight: 80
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Hämta MinRow från Excel Arbetsblad
 ---
 Denna REST API indikerar visar få ett `minrow` i en Excel fil när parametern `cellOrMethodName` är `minrow`.
 

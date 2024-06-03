@@ -3,6 +3,7 @@ title: Applica la formattazione Rich Text a un Cel
 type: docs
 url: /it/apply-rich-text-formatting-to-a-cell/
 weight: 40
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Applica formattazione Rich Text a una cella
 ---
 Questo REST API indica applicare `rich text formatting` a una cella in un file Excel.
 

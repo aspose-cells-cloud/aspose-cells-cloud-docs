@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/deleteworkbookname/
 description: حذف نطاق مسمى في المصنف
+kwords: Excel، Office، جدول البيانات، Cloud REST API، حذف اسم العمل
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorkbookName" >}}

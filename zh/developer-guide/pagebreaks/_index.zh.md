@@ -5,10 +5,11 @@ type: docs
 url: /zh/working-with-pagebreaks/
 aliases: [/working-with-pagebreaks/]
 keywords: Get, add, delete, and update page break in an Excel worksheet
-description: Aspose.Cells Cloud REST API 支持在 Excel 工作表中获取、添加、删除和更新分页符。 SDK支持多种开发语言。它们包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 swift
+description: Aspose.Cells Cloud REST API 支持获取、添加、删除和更新工作表中的分页符。SDK 支持多种开发语言。它们包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 swift
 weight: 100
+kwords: Excel, Office 云, REST API, 电子表格, PDF, CSV, Json, Markdwon, PageBreaks
 ---
-## 如何处理 Excel 工作表中的分页符。
+## 如何在 Excel 工作表中处理分页符。
 
 - [如何在 Excel 工作表中添加垂直分页符。](/cells/zh/page-breaks/add-vertical-page-break/)
 - [如何在 Excel 工作表中添加水平分页符。](/cells/zh/page-breaks/add-horizontal-page-break/)

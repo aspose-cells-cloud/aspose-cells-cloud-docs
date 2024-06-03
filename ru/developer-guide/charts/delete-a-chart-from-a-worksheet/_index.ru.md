@@ -4,6 +4,7 @@ type: docs
 url: /ru/charts/delete/
 aliases: [/delete-a-chart-from-a-worksheet/]
 weight: 40
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Удаление диаграммы с листа
 ---
 Этот REST API указывает на удаление диаграммы рабочего листа по индексу.
  

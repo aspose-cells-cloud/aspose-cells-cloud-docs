@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/postmetadata/
 description: Excel dosyasındaki belge özelliklerini güncelleyin ve bunları çeşitli formatlarda kaydedin
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PostMetadata
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostMetadata" >}}

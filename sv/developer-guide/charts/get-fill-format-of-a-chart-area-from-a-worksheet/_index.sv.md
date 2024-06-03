@@ -4,6 +4,7 @@ type: docs
 url: /sv/charts/chart-area/fill-format/get/
 aliases: [/get-fill-format-of-a-chart-area-from-a-worksheet/]
 weight: 70
+kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdwon, Hämta fyllningsformat för ett diagramområde från ett kalkylblad
 ---
 Denna REST API indikerar att få information om diagramområdets fyllnadsformat.
  

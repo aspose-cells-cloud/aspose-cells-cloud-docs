@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/posthideworksheetcolumns/
 description: Çalışma sayfasındaki çalışma sayfası sütunlarını gizleme
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PostHideWorksheetColumns
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostHideWorksheetColumns" >}}

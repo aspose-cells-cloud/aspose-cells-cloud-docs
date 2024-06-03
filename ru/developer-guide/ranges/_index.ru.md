@@ -8,6 +8,7 @@ aliases: [/working-with-ranges/]
 keywords: Working with ranges on an Excel fil
 description: Как работать с диапазонами в файле Excel с помощью Aspose.Cells Cloud REST API. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 100
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Работа с диапазонами в файле Excel
 ---
 Представляет ячейку, строку, столбец, выборку ячеек, содержащую один или несколько смежных блоков ячеек, или трехмерный диапазон.
 

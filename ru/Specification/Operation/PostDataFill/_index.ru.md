@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postdatafill/
 description: Заполнение данных для файлов электронных таблиц в основном используется для заполнения пустых данных в таблицах и диапазонах.
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostDataFill
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostDataFill" >}}

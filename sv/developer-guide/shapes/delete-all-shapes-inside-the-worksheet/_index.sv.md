@@ -8,6 +8,7 @@ aliases: [/delete-all-shapes-inside-the-worksheet/]
 keywords: Delete all shapes on an Excel workshee
 description: Aspose.Cells Cloud REST API stöder radering av alla former på ett Excel-kalkylblad. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 40
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Ta bort alla former på ett Excel kalkylblad
 ---
 Denna REST API indikerar att alla former på ett Excel kalkylblad ska tas bort.
  

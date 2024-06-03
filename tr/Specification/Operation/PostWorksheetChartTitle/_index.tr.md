@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/postworksheetcharttitle/
 description: Çalışma sayfasında grafik başlığını güncelleyin
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PostWorksheetChartTitle
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetChartTitle" >}}

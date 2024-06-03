@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/getnamedrangevalue/
 description: Получить значения в диапазоне
+kwords: Excel, Office, электронная таблица, Cloud REST API, GetNamedRangeValue
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetNamedRangeValue" >}}

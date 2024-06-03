@@ -3,6 +3,7 @@ title: Çoklu Cells Stilini Güncelle
 type: docs
 url: /tr/update-multiple-cells-style/
 weight: 20
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Çoklu Güncelleme Cells Stili
 ---
 Bu REST API, `cells style`'in Excel dosyasındaki bir hücreye ayarlandığını gösterir.
 

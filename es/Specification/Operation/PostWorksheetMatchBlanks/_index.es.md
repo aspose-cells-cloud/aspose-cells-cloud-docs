@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/postworksheetmatchblanks/
 description: Haga coincidir todas las celdas en blanco de la lista
+kwords: Excel, Office, hoja de cálculo, nube REST API, PostWorksheetMatchBlanks
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetMatchBlanks" >}}

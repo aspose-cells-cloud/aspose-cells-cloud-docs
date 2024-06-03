@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/getpivottablefield/
 description: Récupérer les descriptions des champs pivots dans le tableau croisé dynamique
+kwords: Excel, Office, feuille de calcul, Cloud REST API, GetPivotTableField
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetPivotTableField" >}}

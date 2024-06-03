@@ -1,27 +1,28 @@
 ﻿---
-title: DeleteWorksheetChartLegen
+title: LöschenArbeitsblattDiagrammLegende
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/deleteworksheetchartlegend/
-description: Versteckt die Diagrammlegende im Arbeitsblatt
+description: Blendet die Diagrammlegende im Arbeitsblatt aus
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, DeleteWorksheetChartLegend
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetChartLegend" >}}
 {{< blocks/products/cells/docs-title titlemsg="Hides chart legend in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend,DELETE,Hidet Diagrammlegende im Arbeitsblatt.,<a href=\'https://apireference.aspose.cloud/cells/#/ Charts/DeleteWorksheetChartLegend\'>DeleteWorksheetChartLegend</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend,DELETE,Verbirgt die Diagrammlegende im Arbeitsblatt.,<a href=\'https://apireference.aspose.cloud/cells/#/Charts/DeleteWorksheetChartLegend\'>DeleteWorksheetChartLegend</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
      {{< blocks/products/cells/docs-Parameter-content columns="chartIndex,integer,Der Diagrammindex." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/ChartsController/DeleteWorksheetChartLegend\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/postworksheetcellsrangesort/
 description: Eseguire l'ordinamento dei dati attorno a un intervallo di celle
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PostWorksheetCellsRangeOrt
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangeSort" >}}

@@ -7,6 +7,7 @@ keywords: Insert slicer for list object
 url: /es/list-objects/insert-slicer/
 description:  Insertar segmentación para el objeto de lista.
 weight: 20
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Lista de segmentación de inserción de objetos
 ---
  Este REST API indica insertar segmentación para el objeto de lista en una hoja de trabajo Excel.
 

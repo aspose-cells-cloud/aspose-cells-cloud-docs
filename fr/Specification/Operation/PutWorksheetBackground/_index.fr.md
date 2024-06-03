@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/putworksheetbackground/
 description: Définir l'image d'arrière-plan dans la feuille de calcul
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PutWorksheetBackground
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetBackground" >}}

@@ -3,7 +3,8 @@ title: Obtener hoja de cálculo Cel
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/getworksheetcell/
-description: Recuperar datos de celda utilizando la referencia de celda o el nombre del método en la hoja de trabajo
+description: Recuperar datos de celda usando la referencia de celda o el nombre del método en la hoja de trabajo
+kwords: Excel, Office, hoja de cálculo, nube REST API, GetWorksheetCell
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetCell" >}}

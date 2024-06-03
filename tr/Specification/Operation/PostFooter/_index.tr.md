@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/postfooter/
 description: Çalışma sayfasındaki sayfa altbilgisini güncelleme
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PostFooter
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostFooter" >}}

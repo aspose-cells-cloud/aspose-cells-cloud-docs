@@ -4,13 +4,14 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/getworksheetcolumn/
 description: Recuperar datos de columnas de la hoja de trabajo por índice de columna
+kwords: Excel, Office, hoja de cálculo, nube REST API, GetWorksheetColumn
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetColumn" >}}
 {{< blocks/products/cells/docs-title titlemsg="Retrieve worksheet column data by column index." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API, método Http, descripción, referencia API" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells/columns/{columnIndex},GET,Recuperar datos de la columna de la hoja de trabajo por índice de columna.,<a href=\'https://apireference.aspose.cloud/cells/# /Cells/GetWorksheetColumn\'>GetWorksheetColumn</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells/columns/{columnIndex},GET,Recuperar datos de la columna de la hoja de cálculo por índice de columna.,<a href=\'https://apireference.aspose.cloud/cells/# /Cells/GetWorksheetColumn\'>GetWorksheetColumn</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

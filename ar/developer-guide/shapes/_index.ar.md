@@ -8,6 +8,7 @@ aliases: [/working-with-shapes/,/working-with-images/]
 keywords: Working with shape on an Excel workshee
 description: كيفية العمل مع الشكل في ورقة عمل Excel. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 100
+kwords: Excel، Office Cloud، REST API، جدول البيانات، PDF، CSV، Json، Markdwon، العمل مع الشكل في ورقة عمل Excel
 ---
 ## العمل مع الأشكال في ملف Excel.
 

@@ -4,6 +4,7 @@ type: docs
 url: /it/charts/chart-area/fill-format/get/
 aliases: [/get-fill-format-of-a-chart-area-from-a-worksheet/]
 weight: 70
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Ottieni il formato di riempimento di un'area del grafico da un foglio di lavoro
 ---
 Questo REST API indica come ottenere informazioni sul formato di riempimento dell'area del grafico.
  

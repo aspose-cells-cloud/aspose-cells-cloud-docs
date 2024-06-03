@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/postexport/
 description: Excel dahili öğeleri veya çalışma kitabının kendisini çeşitli formattaki dosyalara aktarın
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PostExport
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostExport" >}}
@@ -16,7 +17,7 @@ weight: 50
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametre Adı,Tip,Açıklama" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="objectType,string,Dışa aktarılan nesne türü:çalışma kitabı/çalışma sayfası/grafik/yorum/resim/şekil/listenesnesi/oleobject." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="format,dize,Dönüştürme formatı(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/076173 481/ MD[İşaretleme]/Numaralar)." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="format,dize,dönüştürme formatı(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/07617 3481/ MD[İşaretleme]/Numaralar)." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="şifre,string,Excel dosyasını açmak için gereken şifre." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction,boolean,Kullanıcı hücrelerle ilgili nesneleri değiştirdiğinde excel dosyasının kısıtlamasının kontrol edilip edilmeyeceği." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="bölge,dize,Çalışma kitabının bölgesel ayarları." >}} 

@@ -5,6 +5,7 @@ type: docs
 url: /ru/aspose-contact-form-for-wordpress-faqs/
 description: Aspose Контактная форма поддерживает Excel для создания, преобразования, объединения, разделения, защиты, операций с внутренними объектами и т. д.
 weight: 40
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Aspose Контактная форма для WordPress — часто задаваемые вопросы
 ---
 ## Aspose Контактная форма
 ### Могу ли я использовать плагин контактной формы Aspose, не имея учетной записи на aspose.cloud?

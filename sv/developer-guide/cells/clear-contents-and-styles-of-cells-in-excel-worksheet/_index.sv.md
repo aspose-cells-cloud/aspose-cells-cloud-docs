@@ -3,6 +3,7 @@ title: Rensa innehåll och stilar för Cells i Excel Worksheet
 type: docs
 url: /sv/clear-contents-and-styles-of-cells-in-excel-worksheet/
 weight: 50
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Clear Contents and Styles of Cells in Excel Worksheet
 ---
 Denna REST API indikerar `clear` celler `content` i en Excel fil.
 

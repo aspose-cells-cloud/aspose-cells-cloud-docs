@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/postautofitworksheetcolumns/
 description: Autoajustar columnas en la hoja de trabajo
+kwords: Excel, Office, Hoja de cálculo, Cloud REST API, PostAutofitWorksheetColumns
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostAutofitWorksheetColumns" >}}

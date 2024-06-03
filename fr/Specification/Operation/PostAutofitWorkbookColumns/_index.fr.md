@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postautofitworkbookcolumns/
 description: Ajustement automatique des colonnes dans le classeur
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostAutofitWorkbookColumns
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostAutofitWorkbookColumns" >}}

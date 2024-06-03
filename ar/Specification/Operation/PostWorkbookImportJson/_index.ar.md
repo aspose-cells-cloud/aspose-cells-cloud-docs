@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postworkbookimportjson/
 description: قم باستيراد ملف بيانات JSON إلى المصنف. يمكن أن يكون ملف بيانات JSON إما ملفًا سحابيًا أو بيانات من HTTP URI
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostWorkbookImportJson
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookImportJson" >}}

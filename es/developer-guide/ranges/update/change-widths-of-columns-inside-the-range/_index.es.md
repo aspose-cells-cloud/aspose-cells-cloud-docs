@@ -8,6 +8,7 @@ aliases: [/change-widths-of-columns-inside-the-range/]
 keywords: Set column width for range on an Excel workshee
 description: Aspose.Cells Cloud REST API admite la configuración del ancho de columna para el rango en una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 74
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Cambiar anchos de columnas dentro del rango
 ---
 Este REST API indica Establecer ancho de columna del rango
  

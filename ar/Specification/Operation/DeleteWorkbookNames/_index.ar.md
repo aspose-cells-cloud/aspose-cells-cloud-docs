@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/deleteworkbooknames/
 description: حذف كافة النطاقات المسماة في المصنف
+kwords: Excel، Office، جدول البيانات، Cloud REST API، حذف أسماء WorkbookNames
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorkbookNames" >}}

@@ -8,6 +8,7 @@ aliases: [/delete-excel-worksheets/]
 keywords: Delete multiple Excel worksheets on an Excel workbook
 description: Aspose.Cells Cloud REST API supporta l'eliminazione di più fogli di lavoro Excel su una cartella di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 20
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Elimina più fogli di lavoro Excel
 ---
 Questo REST API indica `delete multiple worksheets`.
  

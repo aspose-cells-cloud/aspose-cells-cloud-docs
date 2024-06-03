@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/postbatchunlock/
 description: Desbloqueo por lotes de archivos que cumplen condiciones de coincidencia específicas
+kwords: Excel, Office, Hoja de cálculo, Nube REST API, PostBatchUnlock
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostBatchUnlock" >}}

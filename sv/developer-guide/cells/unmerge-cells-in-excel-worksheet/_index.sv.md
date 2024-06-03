@@ -3,6 +3,7 @@ title: Ta bort sammanfogningen Cells i Excel Worksheet
 type: docs
 url: /sv/unmerge-cells-in-excel-worksheet/
 weight: 120
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Unmerge Cells in Excel Worksheet
 ---
 Denna REST API indikerar `unmerge` celler i en Excel fil.
 
@@ -17,12 +18,12 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/unme
  
 | Parameternamn| Typ| Sökväg/Frågesträng/HTTPBody|Beskrivning|
 |:- |:- |:- |:- |
-| namn| sträng| väg|Arbetsbokens namn.|
+| namn| sträng| väg| Arbetsbokens namn.|
 | arknamn| sträng| väg| Kalkylbladets namn.|
 | startRow| heltal| fråga| Startraden.|
 | startkolumn| heltal| fråga| Startkolumnen.|
 | totalt rader| heltal| fråga| Det totala antalet rader|
-|totalt Kolumner| heltal| fråga| Det totala antalet kolumner.|
+| totalt Kolumner| heltal| fråga| Det totala antalet kolumner.|
 | mapp| sträng| fråga| Arbetsboksmappen.|
 | lagringsnamn| sträng| fråga| lagringsnamn.|
  

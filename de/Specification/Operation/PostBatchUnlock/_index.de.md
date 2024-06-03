@@ -3,19 +3,20 @@ title: PostBatchUnloc
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postbatchunlock/
-description: Batch-Entsperrung von Dateien, die bestimmte Übereinstimmungsbedingungen erfüllen
+description: Stapelweises Entsperren von Dateien, die bestimmte Übereinstimmungsbedingungen erfüllen
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostBatchUnlock
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostBatchUnlock" >}}
 {{< blocks/products/cells/docs-title titlemsg="Batch unlocking files that meet specific matching conditions." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/batch/unlock,POST,Batch-Entsperrung von Dateien, die bestimmte Übereinstimmungsbedingungen erfüllen.,<a href=\'https://apireference.aspose.cloud/cells/#/Batch/PostBatchUnlock\'>PostBatchUnlock</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/batch/unlock,POST,Batch-Entsperren von Dateien, die bestimmte Bedingungen erfüllen.,<a href=\'https://apireference.aspose.cloud/cells/#/Batch/PostBatchUnlock\'>PostBatchUnlock</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns=" batchLockRequest,class:batchlockrequest,BatchLockRequest Batch-Sperrdateianforderung." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns=" batchLockRequest,Klasse:batchlockrequest,BatchLockRequest Batch-Sperrdateianforderung." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

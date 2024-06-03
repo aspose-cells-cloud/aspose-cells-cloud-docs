@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postsetcellhtmlstring/
 description: Définissez la chaîne HTML contenant des données et des formats spécifiques dans cette cellule
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostSetCellHtmlString
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostSetCellHtmlString" >}}

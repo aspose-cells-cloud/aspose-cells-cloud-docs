@@ -6,6 +6,7 @@ url: /es/storage/exist/
 keywords: Learn how to check storage exist with Aspose Cells Cloud REST API
 description: Aprenda a verificar la existencia de almacenamiento con Aspose Cells Cloud REST API El SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 100
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Almacenamiento existente
 ---
 Este REST API indica verificar si `storage exists`.
  

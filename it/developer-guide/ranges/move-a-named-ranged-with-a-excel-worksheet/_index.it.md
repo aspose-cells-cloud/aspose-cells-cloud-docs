@@ -8,8 +8,9 @@ aliases: [/move-a-named-ranged-with-a-excel-worksheet/]
 keywords: Move a named ranged with an Excel workshee
 description: Aspose.Cells Cloud REST API supporta lo spostamento di un intervallo denominato con un foglio di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 20
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Sposta un intervallo denominato con un foglio di lavoro Excel
 ---
- Questo REST API indica di spostare l'intervallo corrente nell'intervallo di destinazione su un foglio di lavoro Excel.
+Questo REST API indica di spostare l'intervallo corrente nell'intervallo di destinazione su un foglio di lavoro Excel.
             
  
 ## RSETAPI

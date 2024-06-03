@@ -3,6 +3,7 @@ title: Ottieni MinDataColumn dal foglio di lavoro Excel
 type: docs
 url: /it/get-mindatacolumn-from-excel-worksheet/
 weight: 110
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Ottieni MinDataColumn da Excel Foglio di lavoro
 ---
 Questo REST API indica che viene ottenuto `mindatacolumn` in un file Excel quando il parametro `cellOrMethodName` è `mindatacolumn`.
 

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postworkbookname/
 description: قم بتحديث نطاق مسمى في المصنف
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostWorkbookName
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookName" >}}

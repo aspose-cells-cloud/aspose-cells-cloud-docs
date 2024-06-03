@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/postworkbookdatacleansing/
 description: Datarensning av kalkylarksfiler är en datahanteringsprocess som används för att identifiera, korrigera och ta bort fel, ofullständigheter, dubbletter eller felaktigheter i tabeller och intervall
+kwords: Excel, Office, Kalkylblad, Cloud REST API, PostWorkbookDataCleansing
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookDataCleansing" >}}
@@ -20,7 +21,7 @@ weight: 50
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parameternamn, typ, beskrivning" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="folder,string,Mappen där filen finns." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Lagringsnamnet där filen finns." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns=" lösenord, sträng, Fillösenordet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="lösenord, sträng, Fillösenordet." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="region,string,De regionala inställningarna för arbetsbok." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction,boolean," >}} 
 {{< /blocks/products/cells/docs-Parameter >}}

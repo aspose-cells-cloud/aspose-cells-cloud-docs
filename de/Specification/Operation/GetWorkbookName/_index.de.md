@@ -3,24 +3,25 @@ title: GetWorkbookNam
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/getworkbookname/
-description: Rufen Sie die Beschreibung eines benannten Bereichs in der Arbeitsmappe ab
+description: Beschreibung eines benannten Bereichs in der Arbeitsmappe abrufen
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, GetWorkbookName
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorkbookName" >}}
 {{< blocks/products/cells/docs-title titlemsg="Retrieve description of a named range in the workbook." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/names/{nameName},GET,Beschreibung eines benannten Bereichs in der Arbeitsmappe abrufen.,<a href=\'https://apireference.aspose.cloud/cells/#/Workbook/GetWorkbookName\'> GetWorkbookName</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/names/{nameName},GET,Beschreibung eines benannten Bereichs im Arbeitsbuch abrufen.,<a href=\'https://apireference.aspose.cloud/cells/#/Workbook/GetWorkbookName\'>GetWorkbookName</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
      {{< blocks/products/cells/docs-Parameter-content columns="nameName,string,Der Name." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/WorkbookController/GetWorkbookName\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

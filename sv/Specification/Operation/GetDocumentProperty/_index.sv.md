@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/getdocumentproperty/
 description: Få Excel egendom med namn
+kwords: Excel, Office, Kalkylblad, Cloud REST API, GetDocumentProperty
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetDocumentProperty" >}}

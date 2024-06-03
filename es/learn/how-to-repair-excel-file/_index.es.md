@@ -4,6 +4,7 @@ type: docs
 url: /es/how-to-repair-excel-file
 description: Cómo reparar Excel u otro archivo de hoja de cálculo a través de Aspose.Cells Cloud
 weight: 10
+kwords: Excel, Office Cloud, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Cómo reparar Excel u otro archivo de hoja de cálculo a través de Aspose.Cells Cloud
 ---
 ## Introducción
 Aspose.Cells Cloud API es una potente solución basada en la nube diseñada para la creación, edición y conversión de archivos de hojas de cálculo. En este artículo, lo guiaremos a través del proceso de uso de Aspose.Cells Cloud API para reparar archivos, incluidos casos de uso típicos y código de ejemplo.
@@ -19,7 +20,7 @@ El API está disponible para reparación de archivos, generalmente compatible co
 
 # Cómo reparar Excel u otra hoja de cálculo a través de Aspose.Cells Cloud
 
- La nube Aspose.Cells API proporciona[múltiples SDK](https://github.com/aspose-cells-cloud)para diferentes lenguajes de programación. Elija el SDK que se alinee con su lenguaje de programación preferido y siga la documentación adjunta para la instalación e inicialización. Alternativamente, puede crear su propio SDK de acuerdo con las[API referencia](https://reference.aspose.cloud/cells/). En esta sección, usaremos C# como ejemplo para detallar el proceso de reparación de archivos.
+ La nube Aspose.Cells API proporciona[múltiples SDK](https://github.com/aspose-cells-cloud) para diferentes lenguajes de programación. Elija el SDK que se alinee con su lenguaje de programación preferido y siga la documentación adjunta para la instalación e inicialización. Alternativamente, puede crear su propio SDK de acuerdo con las[API referencia](https://reference.aspose.cloud/cells/). En esta sección, usaremos C# como ejemplo para detallar el proceso de reparación de archivos.
 
 
 ## Registro y Obtención de Clave API
@@ -76,7 +77,7 @@ cellsInstance.PostRepair(request);
 
 Con Aspose.Cells Cloud API, puede realizar fácilmente la reparación Excel u otro archivo de hoja de cálculo. Al realizar llamadas simples al API y configurar las opciones de reparación adecuadas, puede cumplir de manera eficiente con varios requisitos de reparación de archivos. Integre Aspose.Cells Cloud API en sus aplicaciones para mejorar la productividad y ahorrar tiempo de desarrollo.
 
- Tenga en cuenta que el código de ejemplo anterior es solo para fines de demostración y deberá reemplazarlo con credenciales de autenticación válidas y rutas de archivo cuando lo utilice en la práctica. Además, Aspose.Cells Cloud API ofrece muchas otras funciones, como creación, edición, manipulación y procesamiento de datos de hojas de cálculo. La documentación detallada de API y el código de ejemplo se pueden encontrar en[guía para desarrolladores del sitio web oficial Aspose](/developer-guide/).
+ Tenga en cuenta que el código de ejemplo anterior es solo para fines de demostración y deberá reemplazarlo con credenciales de autenticación válidas y rutas de archivos cuando lo utilice en la práctica. Además, Aspose.Cells Cloud API ofrece muchas otras funciones, como creación, edición, manipulación y procesamiento de datos de hojas de cálculo. La documentación detallada de API y el código de ejemplo se pueden encontrar en[guía para desarrolladores del sitio web oficial Aspose](/developer-guide/).
 
 Esperamos que este artículo le ayude a comprender cómo utilizar Aspose.Cells Cloud API para reparar archivos. ¡Mucha suerte con tu implementación!
 

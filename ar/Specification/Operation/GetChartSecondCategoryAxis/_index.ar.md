@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/getchartsecondcategoryaxis/
 description: استرداد محور الفئة الثانية في الرسم البياني
+kwords: Excel، Office، جدول البيانات، Cloud REST API، GetChartSecondCategoryAxis
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetChartSecondCategoryAxis" >}}

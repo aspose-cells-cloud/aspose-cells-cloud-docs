@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postworksheetcellsrangerowheight/
 description: Устанавливает высоту строки диапазона
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostWorksheetCellsRangeRowHeight
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangeRowHeight" >}}
@@ -19,7 +20,7 @@ weight: 50
      {{< blocks/products/cells/docs-Parameter-content columns="имя_листа,строка,имя листа." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Имя параметра, тип, описание" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="value,floating,устанавливает высоту столбца этого диапазона." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="значение, плавающее, устанавливает высоту столбца этого диапазона." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="папка, строка, исходная папка рабочей книги." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="имя_хранилища, строка, имя хранилища." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/getworksheetcell/
 description: Получите данные ячейки, используя ссылку на ячейку или имя метода на листе.
+kwords: Excel, Office, электронная таблица, Cloud REST API, GetWorksheetCell
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetCell" >}}

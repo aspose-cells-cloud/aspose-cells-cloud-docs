@@ -8,6 +8,7 @@ aliases: [/delete-all-pictures-from-excel-worksheet/]
 keywords: Delete all pictures in an Excel worksheet
 description: Aspose.Cells Cloud REST API admite la eliminación de todas las imágenes en una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 60
+kwords: Excel, Office Cloud, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Eliminar todas las imágenes en una hoja de trabajo Excel
 ---
 Este REST API indica al `delete` `all` imágenes en la hoja de trabajo.
  

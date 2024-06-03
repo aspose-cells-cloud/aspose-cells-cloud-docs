@@ -8,6 +8,7 @@ aliases: [/add-an-empty-column-in-an-excel-worksheet/,/add-an-empty-column-in-a-
 keywords: Add column on an Excel workshee
 description: Aspose.Cells Cloud REST API prend en charge l'ajout d'une colonne sur une feuille de calcul Excel. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 20
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdwon, Ajouter une colonne vide sur une feuille de calcul Excel
 ---
 Ce REST API indique l'insertion de colonnes de feuille de calcul.
  
@@ -20,13 +21,13 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/colum
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
-| nom| chaîne| chemin|Le nom du classeur.|
+| nom| chaîne| chemin| Le nom du classeur.|
 | Nom de la feuille| chaîne| chemin| Le nom de la feuille de calcul.|
 | Indice de colonne| entier| chemin| L'index de la colonne.|
 | Colonnes| entier| requête| Les colonnes.|
-| mise à jourRéférence| booléen| requête| Vrai|
+| mise à jourRéférence|booléen| requête| Vrai|
 | dossier| chaîne| requête| Le dossier du classeur.|
 | Nom de stockage| chaîne| requête| nom de stockage.|
  

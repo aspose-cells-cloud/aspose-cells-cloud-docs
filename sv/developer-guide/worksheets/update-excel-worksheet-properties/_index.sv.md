@@ -6,6 +6,7 @@ type: docs
 url: /sv/worksheets/update-properties/
 aliases: [/update-excel-worksheet-properties/]
 weight: 20
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Uppdatera egenskaper på ett Excel kalkylblad
 ---
 Denna REST API indikerar `update worksheet base properties`.
  

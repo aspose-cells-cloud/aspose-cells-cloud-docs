@@ -8,6 +8,7 @@ aliases: [/add-an-icon-filter/,/autofilter/add-an-icon-filter/]
 keywords: Adds an icon filter on an Excel worksheet
 description: Aspose.Cells Bulut API, Excel çalışma sayfasına simge filtresi eklemeyi destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 65
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel çalışma sayfasına simge filtresi ekleme
 ---
 Bu REST API, Excel Çalışma Sayfasına `icon filter` ekleneceğini belirtir.
 
@@ -23,11 +24,11 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/
 
 | Parametre adı| Tip| Yol/Sorgu Dizesi/HTTPBody|Tanım|
 |:- |:- |:- |:- |
-| isim| sicim| Yol|Çalışma kitabı adı.|
+| isim| sicim| Yol| Çalışma kitabı adı.|
 | sayfaAdı| sicim| Yol| Çalışma sayfası adı.|
 |menzil|sicim| Sorgu||
 |alanIndex|tamsayı| Sorgu||
-|iconSetType|sicim| Sorgu| Arrows3/ArrowsGray3/Flags3/Signs3/Symbols3/Symbols32/TrafficLights31/TrafficLights32/Arrows4/ArrowsGray4/Rating4/RedToBlack4/TrafficLights4/Arrows5/ArrowsGray5/Quarters5/Rating5/Stars3/Boxes5/Triangles3/Yok/CustomSet /Smilies3/ColorSmilies3|
+|iconSetType|sicim| Sorgu|Arrows3/ArrowsGray3/Flags3/Signs3/Symbols3/Symbols32/TrafficLights31/TrafficLights32/Arrows4/ArrowsGray4/Rating4/RedToBlack4/TrafficLights4/Arrows5/ArrowsGray5/Quarters5/Rating5/Stars3/Boxes5/Triangles3/Hiçbiri/ CustomSet/Smilies3/ColorSmilies3|
 |simge kimliği|tamsayı| Sorgu||
 |maçBoşluklar|sicim| Sorgu|doğru yanlış|
 |yenileme|sicim| Sorgu|doğru yanlış|

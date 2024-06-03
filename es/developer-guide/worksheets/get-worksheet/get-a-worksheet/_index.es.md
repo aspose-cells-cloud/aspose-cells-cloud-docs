@@ -7,6 +7,7 @@ url: /es/worksheets/get-worksheet/
 keywords: Get worksheet to different format from an Excel worksheet
 description: Aspose.Cells Cloud REST API admite la obtención de una hoja de trabajo en un formato diferente al de una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 10
+kwords: Excel, Office Cloud, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Obtener hoja de trabajo de una hoja de trabajo Excel
 ---
 Este REST API indica `get worksheet description` o `export worksheet to kinds of format file`.
  

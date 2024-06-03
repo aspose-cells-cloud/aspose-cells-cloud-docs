@@ -3,6 +3,7 @@ title: Применить форматирование расширенного 
 type: docs
 url: /ru/apply-rich-text-formatting-to-a-cell/
 weight: 40
+kwords: Excel, Office Cloud, REST API, электронная таблица, PDF, CSV, Json, Markdwon, применить расширенное форматирование текста к ячейке
 ---
 Этот REST API указывает на применение `rich text formatting` к ячейке в файле Excel.
 

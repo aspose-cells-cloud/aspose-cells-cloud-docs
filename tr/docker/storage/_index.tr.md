@@ -5,6 +5,7 @@ type: docs
 url: /tr/docker/storage/
 description: Docker için Aspose.Cells Cloud hakkında depolama konumu nasıl ayarlanır?
 weight: 30
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Depolama
 ---
 ##  Varsayılan Depolama Yapılandırması ##
 

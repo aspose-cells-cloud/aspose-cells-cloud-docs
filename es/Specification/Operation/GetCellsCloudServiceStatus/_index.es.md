@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/getcellscloudservicestatus/
 description: Aspose.Cells Comprobación del estado del servicio en la nube
+kwords: Excel, Office, hoja de cálculo, nube REST API, GetCellsCloudServiceStatus
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetCellsCloudServiceStatus" >}}

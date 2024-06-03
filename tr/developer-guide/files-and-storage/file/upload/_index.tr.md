@@ -6,6 +6,7 @@ url: /tr/file/upload/
 keywords: Learn how to upload file with Aspose Cells Cloud REST API
 description: Aspose Cells Cloud REST API SDK destekli geliştirme dilleri ile nasıl dosya yükleyeceğinizi öğrenin. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 100
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Dosya Yükle
 ---
 Bu REST API, `upload file`'i gösterir.
 
@@ -20,7 +21,7 @@ PUT http://api.aspose.cloud/v3.0/cells/storage/file/{path}
  
 | Parametre adı| Tip| Yol/Sorgu Dizesi/HTTPBody|Tanım|
 |:- |:- |:- |:- |
-| yol| sicim| yol| Dosya adı ve uzantısı da dahil olmak üzere yüklemenin yapılacağı yol, örneğin /file.ext veya /Klasör 1/file.ext İçerik çok parçalıysa ve yol, dosya adını içermiyorsa, bunları Content-Disposition başlığındaki dosya adı parametresinden almaya çalışır.|
+| yol| sicim| yol| Dosya adı ve uzantısı da dahil olmak üzere yüklenecek yol, örneğin /file.ext veya /Klasör 1/file.ext İçerik çok parçalıysa ve yol, dosya adını içermiyorsa, bunları Content-Disposition başlığındaki dosya adı parametresinden almaya çalışır.|
 | dosya| Dosya| form verisi| Yüklenecek dosya|
 | depolamaAdı| sicim| sorgu| Depolama adı|
  

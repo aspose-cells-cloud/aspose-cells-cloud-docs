@@ -8,6 +8,7 @@ aliases: [/working-with-worksheets/]
 keywords: Working with worksheet on an Excel workbook
 description: Aspose.Cells Cloud REST API supporta l'utilizzo del foglio di lavoro su una cartella di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 100
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Utilizzo del foglio di lavoro Excel.
 ---
 Un foglio di lavoro è una raccolta di celle in cui conservi e manipoli i dati. Ciascuna cartella di lavoro Excel può contenere più fogli di lavoro.
 

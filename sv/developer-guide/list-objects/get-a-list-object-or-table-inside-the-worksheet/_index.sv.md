@@ -8,6 +8,7 @@ aliases: [/get-a-list-object-or-table-inside-the-worksheet/,/tables/get/]
 keywords: Get a list object(table) into an Excel worksheet
 description: Aspose.Cells Cloud REST API stöder att få ett listobjekt(tabell) till ett Excel kalkylblad. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 9
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Hämta ett listobjekt i ett Excel kalkylblad
 ---
  Denna REST API indikerar till `get` en lista objektinformation efter index eller konvertera en `list object` till annat format fil i ett Excel kalkylblad.
 

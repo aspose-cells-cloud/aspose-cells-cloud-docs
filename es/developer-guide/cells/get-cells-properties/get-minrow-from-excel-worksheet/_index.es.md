@@ -3,6 +3,7 @@ title: Obtenga MinRow de la hoja de trabajo Excel
 type: docs
 url: /es/get-minrow-from-excel-worksheet/
 weight: 80
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Obtener MinRow de la hoja de trabajo Excel
 ---
 Este REST API indica que muestra obtener un `minrow` en un archivo Excel cuando el parámetro `cellOrMethodName` es `minrow`.
 

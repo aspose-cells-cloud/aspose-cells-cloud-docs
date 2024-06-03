@@ -8,6 +8,7 @@ aliases: [/unprotect-excel-workbooks/]
 keywords: REST API, spreadsheets, excel, merg
 description: "Cells.Облако API для Excel работает: защита книги Excel"
 weight: 60
+kwords: Excel, Office Cloud, REST API, электронная таблица, PDF, CSV, Json, Markdwon, снять защиту с книги Excel.
 ---
 Этот REST API снимает защиту с Excel `workbook`.
 
@@ -40,7 +41,7 @@ weight: 60
 
 [Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/DeleteUnProtectDocument) определяет общедоступный интерфейс программирования и позволяет выполнять взаимодействие с REST непосредственно из веб-браузера.
 
- Вы можете использовать**cURL** инструмент командной строки для легкого доступа к веб-службам Aspose.Cells. В следующем примере показано, как позвонить на Cloud API с помощью cURL.
+ Вы можете использовать**cURL**инструмент командной строки для легкого доступа к веб-службам Aspose.Cells. В следующем примере показано, как позвонить на Cloud API с помощью cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postworksheetcellsrangemerge/
 description: Объединение диапазона ячеек в одну ячейку
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostWorksheetCellsRangeMerge
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangeMerge" >}}

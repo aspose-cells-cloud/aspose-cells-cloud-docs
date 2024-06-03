@@ -6,6 +6,7 @@ aliases: [/delete-all-comments-in-a-worksheet/]
 keywords: REST API, spreadsheets, excel, clear comment
 description: "Cells.Cloud API para Excel operar: comentarios claros"
 weight: 50
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Borrar
 ---
 Este REST API indica Eliminar todos los comentarios de la hoja de trabajo.
  

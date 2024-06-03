@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postfooter/
 description: Обновить нижний колонтитул страницы на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostFooter
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostFooter" >}}

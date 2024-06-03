@@ -6,6 +6,7 @@ aliases: [/delete-all-comments-in-a-worksheet/]
 keywords: REST API, spreadsheets, excel, clear comment
 description: "Cells. Cloud API för Excel fungerar: rensa kommentarer"
 weight: 50
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Clear
 ---
 Denna REST API indikerar Ta bort alla kommentarer för kalkylbladet.
  

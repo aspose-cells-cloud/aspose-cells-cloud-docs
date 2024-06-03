@@ -8,6 +8,7 @@ aliases: [/change-heights-of-rows-inside-the-range/]
 keywords: Set row height for range on an Excel workshee
 description: Aspose.Cells Cloud REST API supporta l'impostazione dell'altezza della riga per l'intervallo su un foglio di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 76
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Imposta l'altezza delle righe all'interno dell'intervallo
 ---
 Questo REST API indica di impostare l'altezza della riga dell'intervallo su un foglio di lavoro Excel.
  

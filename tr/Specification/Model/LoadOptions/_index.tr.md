@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/model/loadoptions/
 description: "Aspose.Cells Bulut modeli spesifikasyonu: LoadOptions. Açma, oluşturma, düzenleme, bölme, birleştirme, karşılaştırma ve dönüştürme gibi özelliklerle Excel ve diğer elektronik tablo belgelerini zahmetsizce yönetin"
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, LoadOptions
 weight: 50
 ---
 ## **yüklemeSeçenekleri**
 
- 
+ Dosyayı yükleme seçeneklerini temsil eder.
 
 | Mülkiyet adı| Emlak Tipi| Geçersiz kılınabilir| Sadece oku| Varsayılan değer| Tanım|
 |:- |:- |:- |:- |:- |:- |
@@ -19,8 +20,8 @@ weight: 50
 | Yük Formatı| Sicim| Doğru| YANLIŞ|| Yük formatını alır.|
 | YalnızcaBelge Özelliklerini Yükle| Sicim| Doğru| YANLIŞ|||
 | AyrıştırmaFormulaOnOpen| Sicim| Doğru| YANLIŞ|| Dosya okunurken formülün ayrıştırılıp ayrıştırılmayacağını belirtir.|
-| Şifre| Sicim| Doğru| YANLIŞ||Çalışma kitabının parolasını alır ve ayarlar.|
+| Şifre| Sicim| Doğru| YANLIŞ|| Çalışma kitabının parolasını alır ve ayarlar.|
 | Bölge| Sicim| Doğru| YANLIŞ|| Dosyanın yüklendiği andaki Ülke Koduna göre sistem bölgesel ayarlarını alır veya ayarlar.|
 | Standart Yazı Tipi| Sicim| Doğru| YANLIŞ|| Varsayılan standart yazı tipi adını ayarlar|
-| Standart Yazı Tipi Boyutu| Yüzer| Doğru| YANLIŞ|| Varsayılan standart yazı tipi boyutunu ayarlar.|
+| Standart Yazı Tipi Boyutu| Yüzer| Doğru| YANLIŞ||Varsayılan standart yazı tipi boyutunu ayarlar.|
 

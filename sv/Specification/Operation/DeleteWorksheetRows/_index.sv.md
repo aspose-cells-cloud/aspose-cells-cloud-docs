@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/deleteworksheetrows/
 description: Ta bort flera rader i kalkylbladet
+kwords: Excel, Office, Kalkylblad, Cloud REST API, DeleteWorksheetRows
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetRows" >}}

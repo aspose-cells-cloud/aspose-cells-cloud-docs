@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/model/pdfsaveoptions/
 description: "Aspose.Cells Spécification du modèle cloud : PdfSaveOptions. Gérez sans effort Excel et d'autres feuilles de calcul avec des fonctionnalités telles que l'ouverture, la génération, l'édition, le fractionnement, la fusion, la comparaison et la conversion."
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PdfSaveOptions
 weight: 50
 ---
 ## **pdfEnregistrerOptions**
@@ -18,9 +19,9 @@ weight: 50
 | Exportation de propriétés personnalisées| Chaîne| Vrai| FAUX|| Spécifie la manière dont CustomDocumentPropertyCollection est exporté vers le fichier PDF.|
 | Type d'optimisation| Chaîne| Vrai| FAUX|| Obtient et définit le type d'optimisation PDF.|
 | Producteur| Chaîne| Vrai| FAUX|| Obtient et définit le producteur du document PDF généré.|
-| CompressionPDF| Chaîne| Vrai| FAUX||Indiquez l'algorithme de compression.|
+| CompressionPDF| Chaîne| Vrai| FAUX|| Indiquez l'algorithme de compression.|
 | FontEncoding| Chaîne| Vrai| FAUX|| Obtient ou définit l’encodage des polices intégrées au format PDF.|
-| Filigrane| Classe : RenduFiligrane| Vrai| FAUX|| Obtient ou définit le filigrane à afficher.|
+| Filigrane|Classe : RenduFiligrane| Vrai| FAUX|| Obtient ou définit le filigrane à afficher.|
 | CalculerFormule| Booléen| Vrai| FAUX|| Indique si calculer les formules avant d'enregistrer le fichier pdf. La valeur par défaut est fausse.|
 | Vérifier la compatibilité des polices| Booléen| Vrai| FAUX|| Indique si la compatibilité des polices est vérifiée pour chaque caractère du texte. La valeur par défaut est vraie. Désactiver cette propriété peut donner de meilleures performances. Mais lorsque la police de texte/caractère par défaut ou spécifiée ne peut pas être utilisée pour le restituer, des caractères illisibles (tels qu'un bloc) peuvent apparaître dans le fichier PDF généré. Dans une telle situation, l'utilisateur doit conserver cette propriété comme vraie afin qu'une police alternative puisse être recherchée et utilisée pour restituer le texte à la place ;|
 | Conformité| Chaîne| Vrai| FAUX|| Le classeur est converti en PDF conformément à PdfCompliance dans cette propriété.|
@@ -37,7 +38,8 @@ weight: 50
 | Créer le répertoire| Booléen| Vrai| FAUX|||
 | Activer la compression HTTP| Booléen| Vrai| FAUX|||
 | Actualiser le cache de graphiques| Booléen| Vrai| FAUX|||
-|Trier les noms| Booléen| Vrai| FAUX|||
+| Trier les noms| Booléen| Vrai| FAUX|||
 | ValidateMergedAreas| Booléen| Vrai| FAUX|||
 
-**Nom du parent** : (EnregistrerOptions)[Enregistreroptions]
+**Nom du parent** : [Options d'enregistrement](/specification/model/saveoptions)
+

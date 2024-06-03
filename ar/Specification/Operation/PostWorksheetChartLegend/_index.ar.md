@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postworksheetchartlegend/
 description: تحديث وسيلة إيضاح المخطط في ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostWorksheetChartLegend
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetChartLegend" >}}

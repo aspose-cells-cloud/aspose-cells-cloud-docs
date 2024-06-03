@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postpivottablefieldhideitem/
 description: Masquer un élément de champ pivot dans le tableau croisé dynamique
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostPivotTableFieldHideItem
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostPivotTableFieldHideItem" >}}

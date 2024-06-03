@@ -1,13 +1,14 @@
 ﻿---
-title: So erstellen Sie eine Excel-Arbeitsmappe mit einer Smart-Marker-Vorlage
+title: So erstellen Sie eine Excel-Arbeitsmappe mit einer Smartmarker-Vorlage
 second_title: Aspose.Cells Cloud Documen
 linktitle: SmartMarke
 type: docs
 url: /de/workbook/create/smartmarker/
 aliases: [/create-excel-workbook-from-a-smartmarker-template/,/workbook/smartmarker/]
 keywords: How to create an Excel workbook with a smart marker template
-description: Aspose.Cells Cloud REST API Anleitung zum Erstellen einer Excel Arbeitsmappe mit einer Smart-Marker-Vorlage. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
+description: Aspose.Cells Cloud REST API So erstellen Sie eine Excel Arbeitsmappe mit einer Smartmarker-Vorlage. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
 weight: 40
+kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdwon, So erstellen Sie eine Excel-Arbeitsmappe mit einer Smartmarker-Vorlage
 ---
 Dieser REST API gibt an, `workbook` mit `smart marker` zu erstellen.
 
@@ -15,28 +16,28 @@ Dieser REST API gibt an, `workbook` mit `smart marker` zu erstellen.
 
 |Parametername|Typ|Beschreibung|
 |:- |:- |:- |
-|xmlFile|Zeichenfolge||
-|outPath|Zeichenfolge||
-|Ordner|Zeichenfolge|Originaler Arbeitsmappenordner.|
-|Speichername|Zeichenfolge|Speichername.|
+|XML-Datei|Schnur||
+|Ausgangspfad|Schnur||
+|Ordner|Schnur|Original-Arbeitsmappenordner.|
+|Speichername|Schnur|Speichername.|
 
-**Body-Parameter anfordern**
+**Anforderungstextparameter**
 
 |Parametername|Typ|Beschreibung|
 |:- |:- |:- |
-|xmlFile|Datei||
+|XML-Datei|Datei||
 
 
 ## REST API
 
 |**API**|**Typ**|**Beschreibung**|**Swagger-Link**|
 |:- |:- |:- |:- |
-|/cells/{name}/smartmarker|POST|Erstellen Sie eine neue Excel-Arbeitsmappe aus einer SmartMarker-Vorlagendatei|[PostWorkbookGetSmartMarkerResult](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookGetSmartMarkerResult)|
+|/Zellen/{name}/Smartmarker|POST|Erstellen Sie eine neue Excel-Arbeitsmappe aus einer SmartMarker-Vorlagendatei|[PostWorkbookGetSmartMarkerResult](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookGetSmartMarkerResult)|
 
 
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookGetSmartMarkerResult) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht die Durchführung von REST-Interaktionen direkt über einen Webbrowser.
+ Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookGetSmartMarkerResult) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen, REST-Interaktionen direkt von einem Webbrowser aus durchzuführen.
 
- Sie können verwenden**cURL** Befehlszeilentool für den einfachen Zugriff auf Aspose.Cells-Webdienste. Das folgende Beispiel zeigt, wie Sie die Cloud API mit cURL anrufen.
+ Sie können**cURL**Befehlszeilentool für den einfachen Zugriff auf Aspose.Cells-Webdienste. Das folgende Beispiel zeigt, wie Sie mit cURL Anrufe an Cloud API tätigen.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
@@ -67,9 +68,9 @@ HttpResponseMessage with the processing result in content.
 
 ## Cloud SDK-Familie
 
- Die Verwendung eines SDK ist der beste Weg, die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte schauen Sie sich die an[GitHub-Repository](https://github.com/aspose-cells-cloud) Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie hier.
+ Die Verwendung eines SDK ist der beste Weg, um die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte lesen Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
 
-Die folgenden Codebeispiele veranschaulichen, wie Aspose.Cells-Webdienste mithilfe verschiedener SDKs aufgerufen werden:
+Die folgenden Codebeispiele zeigen, wie Sie mit verschiedenen SDKs Aufrufe an die Webdienste Aspose.Cells tätigen:
 
 
 {{< tabs tabTotal="11" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" tabName11="Swift" >}}

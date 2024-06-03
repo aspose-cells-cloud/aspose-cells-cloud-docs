@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/deleteworksheetpivottablefilters/
 description: احذف كافة عوامل التصفية المحورية في PivotTable
+kwords: Excel، Office، جدول البيانات، Cloud REST API، حذف ورقة العملPivotTableFilters
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetPivotTableFilters" >}}

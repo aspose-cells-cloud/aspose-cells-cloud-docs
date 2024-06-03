@@ -3,6 +3,7 @@ title:  Grafiği Al İkinci Değer Ekseni
 type: docs
 url: /tr/charts/second-value-axis/get/
 weight: 60
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Grafiği Al İkinci Değer Ekseni
 ---
  Bu REST API, Grafiğin İkinci Değer Eksenini Al'ı gösterir.
  

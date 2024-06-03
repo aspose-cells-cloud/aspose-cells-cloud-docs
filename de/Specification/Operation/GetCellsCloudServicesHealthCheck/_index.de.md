@@ -3,14 +3,15 @@ title: GetCellsCloudServicesHealthChec
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/getcellscloudserviceshealthcheck/
-description: Rufen Sie Zellbeschreibungen in einem angegebenen Format ab
+description: Abrufen von Zellbeschreibungen in einem angegebenen Format
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, GetCellsCloudServicesHealthCheck
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetCellsCloudServicesHealthCheck" >}}
 {{< blocks/products/cells/docs-title titlemsg="Retrieve cell descriptions in a specified format." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells,GET,Zellbeschreibungen in einem angegebenen Format abrufen.,<a href=\'https://apireference.aspose.cloud/cells/#/CellsStatus/GetCellsCloudServicesHealthCheck\'>GetCellsCloudServicesHealthCheck</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells,GET,Zellenbeschreibungen in einem angegebenen Format abrufen.,<a href=\'https://apireference.aspose.cloud/cells/#/CellsStatus/GetCellsCloudServicesHealthCheck\'>GetCellsCloudServicesHealthCheck</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

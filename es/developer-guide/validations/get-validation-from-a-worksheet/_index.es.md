@@ -8,6 +8,7 @@ aliases: [/get-validation-from-a-worksheet/]
 keywords: Get a worksheet validation by index from an Excel worksheet
 description: Aspose.Cells Cloud REST API admite la obtención de una validación de hoja de trabajo por índice a partir de una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 10
+kwords: Excel, Office Cloud, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Obtenga una validación de hoja de trabajo por índice de una hoja de trabajo Excel
 ---
 Este REST API indica obtener una validación de hoja de trabajo por índice en una hoja de trabajo Excel.
  

@@ -3,6 +3,7 @@ title: Obtenez MaxDataRow à partir de Excel Workshee
 type: docs
 url: /fr/get-maxdatarow-from-excel-worksheet/
 weight: 50
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, obtenir MaxDataRow à partir de la feuille de calcul Excel
 ---
 Ce REST API indique que les spectacles obtiennent un `maxdatarow` dans un fichier Excel lorsque le paramètre `cellOrMethodName` est `maxdatarow`.
 

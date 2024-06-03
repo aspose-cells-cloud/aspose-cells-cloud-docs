@@ -7,6 +7,7 @@ aliases: [/working-with-tasks/]
 keywords: REST API, task, spreadsheets, exce
 description: "Cells. Cloud API för Excel fungerar: kör excel med uppgifter"
 weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Tasks
 ---
 ## Arbetar med uppgifter.
 

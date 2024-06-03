@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/getnamedranges/
 description: Récupérer les descriptions des plages dans les feuilles de calcul
+kwords: Excel, Office, feuille de calcul, Cloud REST API, GetNamedRanges
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetNamedRanges" >}}

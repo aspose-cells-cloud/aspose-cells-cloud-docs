@@ -6,6 +6,7 @@ url: /it/docker-developer-guide/
 aliases: [/docker/]
 description: Aspose.Cells Nuvola
 weight: 30
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Docker
 ---
 ## Aspose.Cells Cloud Docker
 

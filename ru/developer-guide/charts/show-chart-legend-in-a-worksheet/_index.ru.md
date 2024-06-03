@@ -4,6 +4,7 @@ type: docs
 url: /ru/charts/legend/show/
 aliases: [/show-chart-legend-in-a-worksheet/]
 weight: 100
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, отображение легенды диаграммы на листе
 ---
 Этот REST API указывает легенду отображения на диаграмме.
  

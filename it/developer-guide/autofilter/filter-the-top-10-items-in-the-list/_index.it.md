@@ -8,6 +8,7 @@ aliases: [/filter-the-top-10-items-in-the-list/, /autofilter/add-a-top-10-filter
 keywords: Adds a top10 filter on an Excel worksheet
 description: Il cloud Aspose.Cells API supporta l'aggiunta di un filtro top10 su un foglio di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 65
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Aggiungi i primi 10 elementi in un foglio di lavoro Excel
 ---
 Questo REST API indica di filtrare l'elemento `top 10` nell'elenco
  
@@ -26,11 +27,11 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/
 | nomefoglio| corda| sentiero||
 | allineare| corda| domanda||
 | campoIndice| numero intero| domanda||
-| mi fermo| booleano| domanda||
-| isPercent| booleano| domanda||
+| mi fermo|booleano| domanda||
+| isPercent|booleano| domanda||
 | itemCount| numero intero| domanda||
-| matchBlanks| booleano| domanda||
-| ricaricare| booleano| domanda||
+| matchBlanks|booleano| domanda||
+| ricaricare|booleano| domanda||
 | cartella| corda| domanda||
 | storageName| corda| domanda| nome dell'archivio.|
  

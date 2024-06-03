@@ -4,13 +4,14 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/putdocumentproperty/
 description: Establecer o agregar una propiedad Excel
+kwords: Excel, Office, Hoja de cálculo, Nube REST API, PutDocumentProperty
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutDocumentProperty" >}}
 {{< blocks/products/cells/docs-title titlemsg="Set or add an Excel property." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API, método Http, descripción, referencia API" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/documentproperties,PUT,Establecer o agregar una propiedad Excel.,<a href=\'https://apireference.aspose.cloud/cells/#/Properties/PutDocumentProperty\'>PutDocumentProperty</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/documentproperties,PUT,Establece o agrega una propiedad Excel.,<a href=\'https://apireference.aspose.cloud/cells/#/Properties/PutDocumentProperty\'>PutDocumentProperty</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

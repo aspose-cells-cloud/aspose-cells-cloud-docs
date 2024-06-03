@@ -1,19 +1,21 @@
 ﻿---
-title: VerticalPageBreaksRespons
+title: VertikaleSeitenumbrücheAntworten
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/model/verticalpagebreaksresponse/
-description: "Aspose.Cells Cloud-Modellspezifikation: VerticalPageBreaksResponse. Bearbeiten Sie mühelos Excel und andere Tabellenkalkulationsdokumente mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+description: "Aspose.Cells Cloud-Modellspezifikation: VerticalPageBreaksResponse. Müheloses Bearbeiten von Excel und anderen Tabellenkalkulationsdokumenten mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, VerticalPageBreaksResponse
 weight: 50
 ---
-## **VerticalPageBreaksResponse**
+## **vertikaleSeitenumbrücheAntwort**
 
- 
+ Stellt die VerticalPageBreaks-Antwort dar.
 
-| Name des Anwesens| Art der Immobilie| Nullbar| Schreibgeschützt| Standardwert| Beschreibung|
+| Name des Anwesens| Art der Immobilie| Nullwerte zulassen| Schreibgeschützt| Standardwert| Beschreibung|
 |:- |:- |:- |:- |:- |:- |
-| Vertikale Seitenumbrüche| Klasse:VerticalPageBreaks| WAHR| FALSCH|||
+| VertikaleSeitenumbrüche| Klasse:VertikaleSeitenumbrüche| WAHR| FALSCH|||
 | Code| Ganze Zahl| WAHR| FALSCH|||
 | Status| Zeichenfolge| WAHR| FALSCH|||
 
-**Elternname** : (CellsCloudResponse)[cellscloudresponse]
+**Elternname** : [ZellenCloudResponse](/specification/model/cellscloudresponse)
+

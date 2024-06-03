@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/postworksheetcellsrangestyle/
 description: Establecer el estilo para el rango especificado
+kwords: Excel, Office, hoja de cálculo, nube REST API, PostWorksheetCellsRangeStyle
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangeStyle" >}}
@@ -23,7 +24,7 @@ weight: 50
     {{< blocks/products/cells/docs-Parameter-content columns="nombre de almacenamiento, cadena, nombre de almacenamiento." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Nombre del parámetro, tipo, descripción" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns=" rangeOperate,class:rangesetstylerequest,RangeSetStyleRequest Solicitud de estilo de conjunto de rango" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="rangeOperate,class:rangesetstylerequest,RangeSetStyleRequest Solicitud de estilo de conjunto de rango" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

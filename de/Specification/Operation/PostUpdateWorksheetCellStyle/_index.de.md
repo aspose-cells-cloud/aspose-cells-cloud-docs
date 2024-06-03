@@ -1,30 +1,31 @@
 ﻿---
-title: PostUpdateWorksheetCellStyle
+title: PostUpdateWorksheetCellStyl
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postupdateworksheetcellstyle/
-description: Legen Sie den Zellenstil mithilfe des Zellennamens im Arbeitsblatt fest
+description: Festlegen des Zellenstils anhand des Zellennamens im Arbeitsblatt
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostUpdateWorksheetCellStyle
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostUpdateWorksheetCellStyle" >}}
 {{< blocks/products/cells/docs-title titlemsg="Set cell style using cell name in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells/{cellName}/style,POST,Legen Sie den Zellenstil mithilfe des Zellennamens im Arbeitsblatt fest.,<a href=\'https://apireference.aspose.cloud/cells /#/Cells/PostUpdateWorksheetCellStyle\'>PostUpdateWorksheetCellStyle</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells/{cellName}/style,POST,Zellenstil anhand des Zellennamens im Arbeitsblatt festlegen.,<a href=\'https://apireference.aspose.cloud/cells/#/Cells/PostUpdateWorksheetCellStyle\'>PostUpdateWorksheetCellStyle</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="cellName,string,Der Zellenname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="cellName, string, Der Zellenname." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="style,class:style,Style mit aktualisierten Stileinstellungen." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Stil, Klasse: Stil, Stil mit aktualisierten Stileinstellungen." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

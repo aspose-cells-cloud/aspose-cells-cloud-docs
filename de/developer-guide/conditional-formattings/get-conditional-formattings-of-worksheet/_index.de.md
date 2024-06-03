@@ -1,13 +1,14 @@
 ﻿---
-title: Holen Sie sich bedingte Formatierung
+title: Bedingte Formatierung abrufen
 type: docs
 url: /de/conditional-formattings/get-all/
 aliases: [/get-conditional-formattings-of-worksheet/]
 keywords: REST API, spreadsheets, excel, get condition formattin
-description: "Cells.Cloud API für Excel Operate: Bedingungsformatierung abrufen"
+description: "Cells.Cloud API für Excel bedienen: Zustandsformatierung abrufen"
 weight: 20
+kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdwon, Bedingte Formatierungen abrufen
 ---
- Dieser REST API gibt „Bedingte Formatierungen abrufen“ an
+ Dieser REST API zeigt an, dass bedingte Formatierungen abgerufen werden sollen
  
 ## RSET API
  
@@ -20,14 +21,14 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditional
  
 | Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
 |:- |:- |:- |:- |
-| Name| Zeichenfolge| Weg||
-| Blattname| Zeichenfolge| Weg||
-| Ordner| Zeichenfolge| Abfrage||
-| Speichername| Zeichenfolge| Abfrage| Speichername.|
+| Name| Schnur| Weg||
+| Blattname| Schnur| Weg||
+| Ordner| Schnur| Abfrage||
+| Speichername| Schnur| Abfrage| Speichername.|
  
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/GetWorksheetConditionalFormattings) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht die Durchführung von REST-Interaktionen direkt über einen Webbrowser.
+ Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/GetWorksheetConditionalFormattings) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen, REST-Interaktionen direkt von einem Webbrowser aus durchzuführen.
  
-Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie man mit cURL Anrufe zur Cloud API tätigt.
+Mit dem Befehlszeilentool cURL können Sie ganz einfach auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie Sie mit cURL Anrufe an Cloud API tätigen.
  
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 

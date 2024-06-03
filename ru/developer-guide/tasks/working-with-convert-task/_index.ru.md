@@ -7,6 +7,7 @@ aliases: [/working-with-convert-task/]
 keywords: REST API, task, convert, spreadsheets, exce
 description: "Cells.Облако API для Excel работает: поддержка задач конвертирования файлов Excel"
 weight: 30
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Работа с задачей преобразования
 ---
 ## ОТДЫХ API
 
@@ -17,7 +18,7 @@ weight: 30
 
 [Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Task/PostRunTask) определяет общедоступный интерфейс программирования и позволяет выполнять взаимодействие с REST непосредственно из веб-браузера.
 
- Вы можете использовать**cURL** инструмент командной строки для легкого доступа к веб-службам Aspose.Cells. В следующем примере показано, как позвонить на Cloud API с помощью cURL.
+ Вы можете использовать**cURL**инструмент командной строки для легкого доступа к веб-службам Aspose.Cells. В следующем примере показано, как позвонить на Cloud API с помощью cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 

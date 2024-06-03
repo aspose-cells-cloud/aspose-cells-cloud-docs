@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/getworksheetoleobjects/
 description: Получение описаний объектов OLE на листе.
+kwords: Excel, Office, электронная таблица, Cloud REST API, GetWorksheetOleObjects
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetOleObjects" >}}

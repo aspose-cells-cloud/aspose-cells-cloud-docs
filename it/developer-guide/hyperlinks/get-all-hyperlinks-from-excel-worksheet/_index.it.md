@@ -6,6 +6,7 @@ aliases: [/get-hyperlink-from-excel-worksheet/,/get-hyperlinks-from-excel-worksh
 keywords: Get hyperlinks from an Excel worksheet
 description: Aspose.Cells Cloud REST API supporta l'ottenimento di collegamenti ipertestuali da un foglio di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 10
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Ottieni tutto
 ---
 Questo REST API indica `get all hyperlinks` su un foglio di lavoro Excel.
  

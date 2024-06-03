@@ -6,6 +6,7 @@ type: docs
 url: /fr/worksheets/update-properties/
 aliases: [/update-excel-worksheet-properties/]
 weight: 20
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdwon, Mettre à jour les propriétés sur une feuille de calcul Excel
 ---
 Ce REST API indique `update worksheet base properties`.
  
@@ -18,7 +19,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin||
 | Nom de la feuille| chaîne| chemin||

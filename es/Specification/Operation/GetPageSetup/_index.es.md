@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/getpagesetup/
 description: Recuperar la descripción de configuración de la página en la hoja de trabajo
+kwords: Excel, Office, Hoja de cálculo, Nube REST API, GetPageSetup
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetPageSetup" >}}

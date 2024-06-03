@@ -8,6 +8,7 @@ aliases: [/set-the-style-of-the-range/]
 keywords: Set range style on an Excel workshee
 description: Aspose.Cells Cloud REST API prend en charge la définition du style de plage sur une feuille de calcul Excel. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 70
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdwon, Définir le style de la plage
 ---
 ## **Introduction**
 Cet exemple vous permet de définir le style de la plage, en utilisant Aspose.Cells Cloud API dans vos applications. Vous pouvez utiliser notre REST API avec n'importe quel langage : .NET, Java, PHP, Ruby, Rails, Python, jQuery et bien d'autres.

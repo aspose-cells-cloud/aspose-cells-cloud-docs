@@ -8,6 +8,7 @@ aliases: [/group-rows-in-excel-worksheet/]
 keywords: Group rows on an Excel worksheet
 description: Aspose.Cells Cloud REST API, Excel çalışma sayfasında satırların gruplandırılmasını destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 60
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel Çalışma Sayfasındaki satırları gruplandır
 ---
 Bu REST API, Excel çalışma sayfasındaki satırların gruplandırılmasını belirtir.
  
@@ -22,11 +23,11 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
  
 | Parametre adı| Tip| Yol/Sorgu Dizesi/HTTPBody|Tanım|
 |:- |:- |:- |:- |
-| isim| sicim| yol|Çalışma kitabı adı.|
+| isim| sicim| yol| Çalışma kitabı adı.|
 | sayfaAdı| sicim| yol| Çalışma sayfası adı.|
 | ilkIndex| tamsayı| sorgu| Çalıştırılacak ilk satır dizini.|
 | LastIndex| tamsayı| sorgu| Çalıştırılacak son satır dizini.|
-| saklamak| boolean| sorgu| satırların görünür durumu|
+| saklamak|boolean| sorgu| satırların görünür durumu|
 | dosya| sicim| sorgu| Belge klasörü.|
 | depolamaAdı| sicim| sorgu| depolama adı.|
  

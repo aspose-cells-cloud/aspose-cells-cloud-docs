@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/model/validation/
 description: "Aspose.Cells Spécification du modèle cloud : Validation. Gérez sans effort Excel et d'autres feuilles de calcul avec des fonctionnalités telles que l'ouverture, la génération, l'édition, le fractionnement, la fusion, la comparaison et la conversion."
+kwords: Excel, Office, Feuille de calcul, Cloud REST API, Validation
 weight: 50
 ---
 ## **validation**
 
- 
+Représente les paramètres de validation des données.
 
 | Nom de la propriété| Type de propriété| Nullable| Lecture seulement| Valeur par défaut| Description|
 |:- |:- |:- |:- |:- |:- |
@@ -23,11 +24,12 @@ weight: 50
 | Message d'entrée| Chaîne| Vrai| FAUX|| Représente le message d’entrée de validation des données.|
 | Titre d'entrée| Chaîne| Vrai| FAUX|| Représente le titre de la boîte de dialogue de saisie de validation des données.|
 | Opérateur| Chaîne| Vrai| FAUX|| Représente l'opérateur pour la validation des données.|
-| AfficherErreur| Booléen| Vrai| FAUX|| Indique si le message d'erreur de validation des données sera affiché chaque fois que l'utilisateur saisit des données non valides.|
-|AfficherEntrée| Booléen| Vrai| FAUX|| Indique si le message d'entrée de validation des données sera affiché chaque fois que l'utilisateur sélectionne une cellule dans la plage de validation des données.|
+| AfficherErreur| Booléen| Vrai| FAUX||Indique si le message d'erreur de validation des données sera affiché chaque fois que l'utilisateur saisit des données non valides.|
+| AfficherEntrée| Booléen| Vrai| FAUX|| Indique si le message d'entrée de validation des données sera affiché chaque fois que l'utilisateur sélectionne une cellule dans la plage de validation des données.|
 | Taper| Chaîne| Vrai| FAUX|| Représente le type de validation des données.|
 | Valeur1| Chaîne| Vrai| FAUX|| Représente la première valeur associée à la validation des données.|
 | Valeur2| Chaîne| Vrai| FAUX|| Représente la deuxième valeur associée à la validation des données.|
 | lien| Classe : Lien| Vrai| FAUX|||
 
-**Nom du parent** : (LinkElement)[linkelement]
+**Nom du parent** : [LienÉlément](/specification/model/linkelement)
+

@@ -7,6 +7,7 @@ url: /fr/worksheets/panes/
 keywords: How to work with visibility on an Excel worksheet
 description: Aspose.Cells Cloud REST API prend en charge l'utilisation de la visibilité sur une feuille de calcul Excel. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 20
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdwon, Comment travailler avec la visibilité sur une feuille de calcul Excel
 ---
 ## Travailler avec la visibilité sur une feuille de calcul Excel.
 

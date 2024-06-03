@@ -7,8 +7,9 @@ url: /tr/export/
 keywords: Export workbook and internal objects to kinds of format files
 description: Aspose.Cells Cloud REST API, Excel dosyasının ve dahili nesnelerin çeşitli format dosyalarına aktarılmasını destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 31
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Çalışma kitabını ve dahili nesneleri çeşitli formatlara aktarın
 ---
- Başlangıçta belirli bir formatta Excel dosyası oluşturduysanız, örneğin[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/) , Ve[CSV](https://docs.fileformat.com/spreadsheet/csv/) , bazen excel dosyasını başka bir formata dönüştürmeyi faydalı bulabilirsiniz, böylece sağladığı özel özelliklerden yararlanabilirsiniz. Örneğin, bir excel dosyasını dışa aktarmak isteyebilirsiniz.[PDF](https://docs.fileformat.com/pdf/) İçeriğinizi yetkisiz değişikliklere karşı korumak ve aynı anda okunmasını ve paylaşılmasını kolaylaştırmak için.
+ Başlangıçta belirli bir formatta Excel dosyası oluşturduysanız, örneğin[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/) , Ve[CSV](https://docs.fileformat.com/spreadsheet/csv/) bazen excel dosyasını başka bir formata dönüştürmeyi faydalı bulabilirsiniz, böylece sağladığı özel özelliklerden yararlanabilirsiniz. Örneğin, bir excel dosyasını dışa aktarmak isteyebilirsiniz.[PDF](https://docs.fileformat.com/pdf/) İçeriğinizi her türlü yetkisiz değişiklikten korumak ve aynı anda okunmasını ve paylaşılmasını kolaylaştırmak için.
 
  Excel nesne dışa aktarımı karmaşık bir işlemdir. Birçok faktör karmaşıklığa katkıda bulunur ve bu nedenle ihracat sürecinde dikkate alınmalıdır. Excel nesnesini kesin bir profesyonel kalitede tek formatlı bir dosyaya aktarma yeteneği, Aspose.Cells Cloud'un en önemli özelliğidir.
 
@@ -31,7 +32,7 @@ POST https://api.aspose.cloud/v3.0/cells/export
 | Parametre adı| Tip| Yol/Sorgu Dizesi/HTTPBody|Tanım|
 |:- |:- |:- |:- |
 | dosya| dosya| form verisi| Yüklenecek dosya|
-| Nesne türü| sicim| sorgu|nesne türü (çalışma kitabı/çalışma sayfası/grafik/şekil/resim/listobject/oleobject)|
+| Nesne türü| sicim| sorgu| nesne türü (çalışma kitabı/çalışma sayfası/grafik/şekil/resim/listobject/oleobject)|
 | biçim| sicim| sorgu|[Dosya formatı](/cells/tr/supported-file-formats/)  |
  
 [OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.

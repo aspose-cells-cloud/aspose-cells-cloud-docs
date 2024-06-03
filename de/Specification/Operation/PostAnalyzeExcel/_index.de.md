@@ -4,18 +4,19 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postanalyzeexcel/
 description: Führen Sie eine Geschäftsanalyse der Daten in Excel-Dateien durch
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostAnalyzeExcel
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostAnalyzeExcel" >}}
 {{< blocks/products/cells/docs-title titlemsg="Perform business analysis of data in Excel files." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/analyze,POST,Geschäftsanalyse von Daten in Excel-Dateien durchführen.,<a href=\'https://apireference.aspose.cloud/cells/#/Analyse/PostAnalyzeExcel\'>PostAnalyzeExcel</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/analyze,POST,Führen Sie eine Geschäftsanalyse der Daten in Excel Dateien durch.,<a href=\'https://apireference.aspose.cloud/cells/#/Analyse/PostAnalyzeExcel\'>PostAnalyzeExcel</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="„analysierenExcelRequest,class:analyzeexcelrequest,Excel“-Dateien und Analyseausgabeanforderungen" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="analyzeExcelRequest,class:analyzeexcelrequest,Excel Dateien und Anforderungen für die Analyseausgabe" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

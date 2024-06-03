@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/postbatchconvert/
 description: Conversión por lotes de archivos que cumplan condiciones de coincidencia específicas
+kwords: Excel, Office, Hoja de cálculo, Nube REST API, PostBatchConvert
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostBatchConvert" >}}

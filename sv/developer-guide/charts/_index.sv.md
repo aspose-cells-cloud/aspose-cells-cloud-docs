@@ -7,6 +7,7 @@ aliases: [/working-with-charts/]
 keywords: REST API, spreadsheets, excel, chart
 description: "Cells. Cloud API för Excel fungerar: sjökort fungerar"
 weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Charts
 ---
 ## Arbeta med diagram på en Excel-fil.
 

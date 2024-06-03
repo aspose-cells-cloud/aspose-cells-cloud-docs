@@ -6,6 +6,7 @@ aliases: [/delete-a-comment-in-a-worksheet/]
 keywords: REST API, spreadsheets, excel, delete a commen
 description: "Cells.Облако API для Excel работает: удалить комментарий"
 weight: 40
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Удалить
 ---
 Этот REST API указывает на удаление комментария к ячейке рабочего листа.
  

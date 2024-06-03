@@ -4,6 +4,7 @@ type: docs
 url: /tr/charts/chart-area/fill-format/get/
 aliases: [/get-fill-format-of-a-chart-area-from-a-worksheet/]
 weight: 70
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Çalışma Sayfasından Grafik Alanının Doldurma Formatını Alma
 ---
 Bu REST API, grafik alanı dolgu formatı bilgisinin alındığını gösterir.
  

@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/model/imageorprintoptions/
 description: "Aspose.Cells Spécification du modèle cloud : ImageOrPrintOptions. Gérez sans effort Excel et d'autres feuilles de calcul avec des fonctionnalités telles que l'ouverture, la génération, l'édition, le fractionnement, la fusion, la comparaison et la conversion."
+kwords: Excel, Office, feuille de calcul, Cloud REST API, ImageOrPrintOptions
 weight: 50
 ---
 ## **imageOuImprimerOptions**
 
- 
+ Permet de spécifier des options lors du rendu d'une feuille de calcul en images, de l'impression d'une feuille de calcul ou du rendu d'un graphique en image.
 
 | Nom de la propriété| Type de propriété| Nullable| Lecture seulement| Valeur par défaut| Description|
 |:- |:- |:- |:- |:- |:- |
@@ -33,7 +34,7 @@ weight: 50
 | TiffColorProfondeur| Chaîne| Vrai| FAUX|| La profondeur de la couleur|
 | TiffCompression| Chaîne| Vrai| FAUX|| TiffCompression|
 | ImpressionPage| Chaîne| Vrai| FAUX|| Type de page d'impression|
-|Qualité| Entier| Vrai| FAUX|||
+| Qualité| Entier| Vrai| FAUX|||
 | Type d'image| Chaîne| Vrai| FAUX|| Type d'image|
 | Une page par feuille| Booléen| Vrai| FAUX|||
 | Méthode de binarisation Tiff| Chaîne| Vrai| FAUX|| ImageBinarisationMéthode|

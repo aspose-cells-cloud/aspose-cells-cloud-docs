@@ -1,35 +1,36 @@
 ﻿---
-title: 获取工作簿
+title: 工作簿
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/getworkbook/
 description: 检索各种格式的工作簿
+kwords: Excel，Office，电子表格，云 REST API，GetWorkbook
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorkbook" >}}
 {{< blocks/products/cells/docs-title titlemsg="Retrieve workbooks in various formats." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name},GET,检索各种格式的工作簿。,<a href=\'https://apireference.aspose.cloud/cells/#/Conversion/GetWorkbook\'>GetWorkbook</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="参数名称、类型、描述" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="名称，字符串，文件名。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="name，string，文件名。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="format,字符串,转换格式(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP / MD[Markdown]/数字）。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="密码,字符串,打开Excel文件所需的密码。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="isAutoFit,boolean,指定是否将工作簿行设置为自动调整。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="onlySaveTable,boolean,指定是否只保存表格数据。仅使用pdf转excel。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="格式，字符串，转换格式(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers)。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="password，string，打开Excel文件所需的密码。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="isAutoFit，boolean，指定是否将工作簿行设置为自动适应。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="onlySaveTable，boolean，指定是否仅保存表格数据。仅使用pdf到excel。" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="文件夹，字符串，文件所在的文件夹。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="outPath,string,结果保存路径。如果它是单个文件，则“outPath”应包含文件名和扩展名。如果有多个文件，“outPath”应仅包含文件夹。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,文件所在的存储名称。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="outStorageName,string,输出文件所在的存储名称。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction,boolean,用户修改单元格相关对象时是否检查excel文件的限制。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="Region,string,工作簿的区域设置。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="pageWideFitOnPerSheet,boolean,页面宽度适合工作表。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="pageTallFitOnPerSheet,boolean,页面高度适合工作表。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="outPath,string,保存结果的路径。如果是单个文件，则“outPath”应包含文件名和扩展名。如果有多个文件，则“outPath”应仅包含文件夹。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName，string，文件所在的存储名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="outStorageName，string，输出文件所在的存储名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction,boolean,当用户修改单元格相关对象时是否检查excel文件的限制。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="region，string，工作簿的区域设置。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="pageWideFitOnPerSheet，boolean，工作表的页面宽度适合。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="pageTallFitOnPerSheet，boolean，工作表上适合的页面高度。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/ConversionController/GetWorkbook\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

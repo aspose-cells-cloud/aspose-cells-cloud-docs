@@ -7,6 +7,7 @@ url: /it/rows/delete/rows/
 keywords: Delete rows on an Excel workshee
 description: Aspose.Cells Cloud REST API supporta l'eliminazione di righe su un foglio di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 80
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Elimina più righe su un foglio di lavoro Excel
 ---
 Questo REST API indica di eliminare più righe su un foglio di lavoro Excel.
  
@@ -21,11 +22,11 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/ro
  
 | Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
 |:- |:- |:- |:- |
-| nome| corda| sentiero|Il nome della cartella di lavoro.|
+| nome| corda| sentiero| Il nome della cartella di lavoro.|
 | nomefoglio| corda| sentiero| Il foglio di lavoro bame.|
 | startrow| numero intero| domanda| L'indice della riga iniziale da utilizzare.|
 | totaleRighe| numero intero| domanda|1 |
-| aggiornamentoRiferimento| booleano| domanda| VERO|
+| aggiornamentoRiferimento|booleano| domanda| VERO|
 | cartella| corda| domanda| La cartella documenti.|
 | storageName| corda| domanda| nome dell'archivio.|
  

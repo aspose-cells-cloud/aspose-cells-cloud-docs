@@ -6,8 +6,9 @@ type: docs
 url: /ru/workbook/autofit/rows/
 aliases: [/auto-fit-rows-in-excel-workbooks/]
 keywords: Autofit rows on an Excel workboo
-description: Aspose.Cells Cloud REST API поддерживает автоматическую подгонку строк в книге Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
+description: Aspose.Cells Cloud REST API поддерживает автоподбор строк в книге Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 90
+kwords: Excel, Office Cloud, REST API, электронная таблица, PDF, CSV, Json, Markdwon, автоподбор строк в книге Excel
 ---
 Этот REST API указывает на автоподбор строк в книге Excel.
  
@@ -26,7 +27,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/autofitrows
 | Параметры автоподборщика|| тело| Параметры автоустановщика.|
 | startRow| целое число| запрос| Начать ряд.|
 | эндРов| целое число| запрос| Конечный ряд.|
-| толькоавто| логическое значение| запрос| ЛОЖЬ|
+| толькоавто|логическое значение| запрос| ЛОЖЬ|
 | папка| нить| запрос| Папка документа.|
 | имя_хранилища| нить| запрос| имя хранилища.|
  

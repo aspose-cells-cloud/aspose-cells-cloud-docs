@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/model/pivottable/
 description: "Aspose.Cells Spécification du modèle Cloud : Tableau croisé dynamique. Gérez sans effort Excel et d'autres feuilles de calcul avec des fonctionnalités telles que l'ouverture, la génération, l'édition, le fractionnement, la fusion, la comparaison et la conversion."
+kwords: Excel, Office, feuille de calcul, Cloud REST API, tableau croisé dynamique
 weight: 50
 ---
 ## **Tableau croisé dynamique**
 
- 
+ Description récapitulative du tableau croisé dynamique.
 
 | Nom de la propriété| Type de propriété| Nullable| Lecture seulement| Valeur par défaut| Description|
 |:- |:- |:- |:- |:- |:- |
@@ -31,7 +32,7 @@ weight: 50
 | ActiverDataValueEditing| Booléen| Vrai| FAUX|||
 | Activer l'exploration| Booléen| Vrai| FAUX|||
 | Activer la boîte de dialogue de champ| Booléen| Vrai| FAUX|||
-|Activer la liste de champs| Booléen| Vrai| FAUX|||
+| Activer la liste de champs| Booléen| Vrai| FAUX|||
 | Activer l'Assistant| Booléen| Vrai| FAUX|||
 | Chaîne d'erreur| Chaîne| Vrai| FAUX|||
 | FieldListTriAscending| Booléen| Vrai| FAUX|||
@@ -44,9 +45,9 @@ weight: 50
 | Est sélectionné| Booléen| Vrai| FAUX|||
 | Titres d'impression d'éléments| Booléen| Vrai| FAUX|||
 | Mise à jour manuelle| Booléen| Vrai| FAUX|||
-| Fusionner les étiquettes| Booléen| Vrai| FAUX|||
+|Fusionner les étiquettes| Booléen| Vrai| FAUX|||
 | Limite d'éléments manquants| Chaîne| Vrai| FAUX|||
-| Nom| Chaîne| Vrai| FAUX|||
+| Nom| Chaîne| Vrai| FAUX||Représente le nom du tableau croisé dynamique.|
 | Chaîne nulle| Chaîne| Vrai| FAUX|||
 | Ordre des champs de pages| Chaîne| Vrai| FAUX|||
 | Champs de page| Récipient| Vrai| FAUX|||
@@ -78,8 +79,9 @@ weight: 50
 | ShowValuesRow| Booléen| Vrai| FAUX|||
 | Sous-totalHiddenPageItems| Booléen| Vrai| FAUX|||
 | TableRange1| Classe :CellArea| Vrai| FAUX|||
-|TableRange2| Classe :CellArea| Vrai| FAUX|||
+| TableRange2| Classe :CellArea| Vrai| FAUX|||
 | Étiqueter| Chaîne| Vrai| FAUX|||
 | lien| Classe : Lien| Vrai| FAUX|||
 
-**Nom du parent** : (LinkElement)[linkelement]
+**Nom du parent** : [LienÉlément](/specification/model/linkelement)
+

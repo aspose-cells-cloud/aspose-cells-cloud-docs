@@ -8,6 +8,7 @@ aliases: [/change-widths-of-columns-inside-the-range/]
 keywords: Set column width for range on an Excel workshee
 description: Aspose.Cells Cloud REST API prend en charge la définition de la largeur de colonne pour la plage sur une feuille de calcul Excel. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 74
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, modifier la largeur des colonnes à l'intérieur de la plage
 ---
 Ce REST API indique Définir la largeur de colonne de la plage
  
@@ -20,7 +21,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/col
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin||
 | Nom de la feuille| chaîne| chemin||

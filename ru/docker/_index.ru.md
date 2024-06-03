@@ -6,6 +6,7 @@ url: /ru/docker-developer-guide/
 aliases: [/docker/]
 description: Aspose.Cells Облако
 weight: 30
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, Docker
 ---
 ## Aspose.Cells Облачный докер
 

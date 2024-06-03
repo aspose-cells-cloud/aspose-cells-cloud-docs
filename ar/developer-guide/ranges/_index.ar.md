@@ -8,6 +8,7 @@ aliases: [/working-with-ranges/]
 keywords: Working with ranges on an Excel fil
 description: كيفية العمل مع النطاقات في ملف Excel باستخدام Aspose.Cells Cloud REST API. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 100
+kwords: Excel، Office Cloud، REST API، Spreadsheet، PDF، CSV، Json، Markdwon، العمل مع النطاقات في ملف Excel
 ---
 يمثل خلية، أو صفًا، أو عمودًا، أو مجموعة مختارة من الخلايا التي تحتوي على كتلة واحدة أو أكثر من الخلايا المتجاورة، أو نطاق ثلاثي الأبعاد.
 

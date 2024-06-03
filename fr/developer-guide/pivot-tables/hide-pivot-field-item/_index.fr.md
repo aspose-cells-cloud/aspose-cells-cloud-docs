@@ -8,6 +8,7 @@ aliases: [/hide-pivot-field-item/]
 keywords: Hide a pivot field in a pivot table
 description: Aspose.Cells Cloud REST API prend en charge le masquage d'un champ croisé dynamique dans le tableau croisé dynamique. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 110
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdwon, Masquer l'élément de champ croisé dynamique dans un tableau croisé dynamique
 ---
 Ce REST API indique le masquage d’un élément de champ pivot.
  
@@ -20,7 +21,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottable
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin||
 | Nom de la feuille| chaîne| chemin||
@@ -28,8 +29,8 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottable
 | pivotFieldType| chaîne| requête||
 | champIndex| entier| requête||
 | articleIndex| entier| requête||
-| estMasquer| booléen| requête||
-| besoinReCalculer| booléen| requête| FAUX|
+| estMasquer|booléen| requête||
+| besoinReCalculer|booléen| requête| FAUX|
 | dossier| chaîne| requête||
 | Nom de stockage| chaîne| requête| nom de stockage.|
  

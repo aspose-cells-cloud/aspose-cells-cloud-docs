@@ -7,6 +7,7 @@ url: /fr/rows/delete/
 keywords: Working with deleting row on an Excel worksheet. How to add rows on an Excel worksheet
 description: Aspose.Cells Cloud REST API prend en charge la suppression de lignes sur une feuille de calcul Excel. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 20
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdwon, Utilisation de la suppression d'une ligne sur une feuille de calcul Excel
 ---
 ## Travailler avec la suppression d'une ligne sur une feuille de calcul Excel.
 

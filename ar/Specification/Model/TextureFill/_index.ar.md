@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/model/texturefill/
 description: "Aspose.Cells مواصفات النموذج السحابي: TextureFill. تعامل بسهولة مع Excel ومستندات جداول البيانات الأخرى التي تحتوي على ميزات مثل الفتح والتوليد والتحرير والتقسيم والدمج والمقارنة والتحويل"
+kwords: Excel، Office، جدول البيانات، Cloud REST API، TextureFill
 weight: 50
 ---
 ## **TextureFill**
 
- 
+ يقوم بتغليف الكائن الذي يمثل تنسيق تعبئة النسيج
 
 | اسم الخاصية| نوع الملكية| لاغية| يقرأ فقط| القيمة الافتراضية| وصف|
 |:- |:- |:- |:- |:- |:- |

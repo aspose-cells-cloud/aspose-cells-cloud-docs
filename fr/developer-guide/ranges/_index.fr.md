@@ -8,6 +8,7 @@ aliases: [/working-with-ranges/]
 keywords: Working with ranges on an Excel fil
 description: Comment travailler avec des plages sur un fichier Excel à l'aide de Aspose.Cells Cloud REST API. Le SDK prend en charge les types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 100
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdwon, Utilisation de plages sur un fichier Excel
 ---
 Représente une cellule, une ligne, une colonne, une sélection de cellules contenant un ou plusieurs blocs de cellules contigus ou une plage 3D.
 

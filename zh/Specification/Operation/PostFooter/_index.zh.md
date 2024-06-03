@@ -1,29 +1,30 @@
 ﻿---
-title: 后页脚
+title: PostFoote
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/postfooter/
 description: 更新工作表中的页脚
+kwords: Excel, Office, 电子表格, Cloud REST API, PostFooter
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostFooter" >}}
 {{< blocks/products/cells/docs-title titlemsg="Update page footer in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pagesetup/footer,POST,更新工作表中的页脚。,<a href=\'https://apireference.aspose.cloud/cells/#/PageSetup/PostFooter\' >后页脚</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pagesetup/footer,POST,更新工作表中的页脚。,<a href=\'https://apireference.aspose.cloud/cells/#/PageSetup/PostFooter\'>PostFooter</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="参数名称、类型、描述" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="名称，字符串，文件名。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,字符串,工作表名称。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="name，string，文件名。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName，string，工作表名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="section,integer,0：左节。 1：中心部分 2：右侧部分" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="脚本，字符串，标头格式脚本。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="isFirstPage,boolean,是否为第一页(true/false)。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="section,integer,0：左节。1：中间节 2：右节" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="脚本，字符串，标题格式脚本。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="isFirstPage，boolean，是否为第一页（true/false）。" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="文件夹，字符串，文件所在的文件夹。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,文件所在的存储名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName，string，文件所在的存储名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/PageSetupController/PostFooter\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

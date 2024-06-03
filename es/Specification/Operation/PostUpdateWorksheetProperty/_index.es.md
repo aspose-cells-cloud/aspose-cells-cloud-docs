@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/postupdateworksheetproperty/
 description: Actualizar las propiedades de la hoja de trabajo en el libro de trabajo.
+kwords: Excel, Office, Hoja de cálculo, Cloud REST API, PostUpdateWorksheetProperty
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostUpdateWorksheetProperty" >}}

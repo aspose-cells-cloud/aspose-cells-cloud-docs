@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postworksheetcellsrangerowheight/
 description: Définit la hauteur de ligne de la plage
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostWorksheetCellsRangeRowHeight
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangeRowHeight" >}}

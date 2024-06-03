@@ -8,8 +8,9 @@ aliases: [/get-all-shapes-inside-the-worksheet/]
 keywords: Get all shapes on an Excel workshee
 description: Aspose.Cells Cloud REST API supporta l'acquisizione di tutte le forme su un foglio di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 10
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Ottieni tutte le forme su un foglio di lavoro Excel
 ---
-Questo REST API indica Ottieni forme del foglio di lavoro
+ Questo REST API indica Ottieni forme del foglio di lavoro
  
 ## RSETAPI
  

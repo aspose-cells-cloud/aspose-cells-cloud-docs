@@ -8,6 +8,7 @@ aliases: [/delete-all-shapes-inside-the-worksheet/]
 keywords: Delete all shapes on an Excel workshee
 description: Aspose.Cells Cloud REST API поддерживает удаление всех фигур на листе Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 40
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Удалить все фигуры на листе Excel.
 ---
 Этот REST API указывает на удаление всех фигур на листе Excel.
  

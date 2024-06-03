@@ -4,18 +4,19 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/model/combobox/
 description: "Aspose.Cells Especificación del modelo de nube: ComboBox. Maneje sin esfuerzo Excel y otros documentos de hoja de cálculo con funciones como abrir, generar, editar, dividir, fusionar, comparar y convertir."
+kwords: Excel, Office, Hoja de cálculo, Cloud REST API, ComboBox
 weight: 50
 ---
 ## **caja combo**
 
- 
+ Representa el formulario de control ComboBox.
 
 | Nombre de la propiedad| tipo de propiedad| Anulable| Solo lectura| Valor por defecto| Descripción|
 |:- |:- |:- |:- |:- |:- |
 | Líneas desplegables| Entero| Verdadero| FALSO|| Obtiene o establece el número de líneas de lista que se muestran en la parte desplegable de un cuadro combinado.|
 | Rango de entrada| Cadena| Verdadero| FALSO|||
 | Celda seleccionada| Clase: elemento de enlace| Verdadero| FALSO|| Obtiene la celda seleccionada en el rango de entrada del cuadro combinado.|
-| Índice seleccionado| Entero| Verdadero| FALSO|| Obtiene o establece el número de índice del elemento seleccionado actualmente en un cuadro de lista o cuadro combinado. De base cero.|
+| Índice seleccionado| Entero| Verdadero| FALSO||Obtiene o establece el número de índice del elemento seleccionado actualmente en un cuadro de lista o cuadro combinado. De base cero.|
 | Valor seleccionado| Cadena| Verdadero| FALSO|| Obtiene el valor seleccionado del cuadro combinado.|
 | Sombra| Booleano| Verdadero| FALSO|| Indica si el cuadro combinado tiene sombreado 3D.|
 | Nombre| Cadena| Verdadero| FALSO|||
@@ -35,7 +36,7 @@ weight: 50
 | X| Entero| Verdadero| FALSO|||
 | Y| Entero| Verdadero| FALSO|||
 | Ángulo de rotación| Flotante| Verdadero| FALSO|||
-| Texto HTML| Cadena| Verdadero| FALSO|||
+|Texto HTML| Cadena| Verdadero| FALSO|||
 | Texto| Cadena| Verdadero| FALSO|||
 | Texto alternativo| Cadena| Verdadero| FALSO|||
 | TextoAlineaciónHorizontal| Cadena| Verdadero| FALSO|||
@@ -56,4 +57,5 @@ weight: 50
 | Hipervínculo| Cadena| Verdadero| FALSO|||
 | enlace| Clase: enlace| Verdadero| FALSO|||
 
-**Nombre del padre** : (Forma)[forma]
+**Nombre del padre** : [Forma](/specification/model/shape)
+

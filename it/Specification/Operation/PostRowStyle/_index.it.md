@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/postrowstyle/
 description: Applicare i formati a un'intera riga nel foglio di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PostRowStyle
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostRowStyle" >}}

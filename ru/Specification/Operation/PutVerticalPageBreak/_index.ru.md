@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/putverticalpagebreak/
 description: Добавьте вертикальный разрыв страницы на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, PutVerticalPageBreak
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutVerticalPageBreak" >}}

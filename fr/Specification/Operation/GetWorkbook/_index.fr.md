@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/getworkbook/
 description: Récupérer des classeurs dans différents formats
+kwords: Excel, Office, feuille de calcul, Cloud REST API, GetWorkbook
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorkbook" >}}
@@ -18,7 +19,7 @@ weight: 50
      {{< blocks/products/cells/docs-Parameter-content columns="nom,chaîne,Le nom du fichier." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Nom du paramètre, type, description" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="format, chaîne, le format de conversion (CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/076173 481/ MD[Markdown]/Nombres)." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="format, chaîne, le format de conversion (CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/07617 3481/ MD[Markdown]/Nombres)." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="password,string,Le mot de passe nécessaire pour ouvrir un fichier Excel." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="isAutoFit,boolean,Spécifie si les lignes du classeur doivent être ajustées automatiquement." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="onlySaveTable,boolean,Spécifie si uniquement les données du tableau sont enregistrées. Utilisez uniquement le format PDF pour Excel." >}} 

@@ -1,9 +1,10 @@
 ﻿---
-title: Mettre à jour la légende du graphique dans une feuille de travail
+title: Mettre à jour la légende du graphique dans une feuille de calcul
 type: docs
 url: /fr/charts/legend/update/
 aliases: [/update-chart-legend-in-a-worksheet/]
 weight: 160
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, mettre à jour la légende du graphique dans une feuille de calcul
 ---
 Ce REST API indique la légende du graphique de mise à jour
  
@@ -16,7 +17,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{ch
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Nom du classeur.|
 | Nom de la feuille| chaîne| chemin| Nom de la feuille de calcul.|

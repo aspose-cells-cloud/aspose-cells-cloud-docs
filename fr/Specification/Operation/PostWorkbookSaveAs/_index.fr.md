@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postworkbooksaveas/
 description: Enregistrer un fichier Excel dans différents formats
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostWorkbookSaveAs
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookSaveAs" >}}

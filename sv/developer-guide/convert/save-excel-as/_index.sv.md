@@ -8,6 +8,7 @@ aliases: [/convert-excel-workbook-to-different-file-formats/]
 keywords: Save excel files as kinds of format files
 description: Aspose.Cells Cloud REST API stöder att spara Excel-filer som olika formatfiler. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 30
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, SaveAs Excel
 ---
 Denna REST API indikerar till `save` excel-fil som annan filformat.
 
@@ -26,11 +27,11 @@ Denna REST API indikerar till `save` excel-fil som annan filformat.
 
 |**API**|**Typ**|**Beskrivning**|**Resurslänk**|
 |:- |:- |:- |:- |
-|/cells/{name}/saveAs|POSTA|Exportera arbetsbok till format|[PostDocumentSaveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)|
+|/celler/{namn}/saveAs|POSTA|Exportera arbetsbok till format|[PostDocumentSaveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)|
 
  De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) definierar ett allmänt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
 
- Du kan använda**cURL** kommandoradsverktyg för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man ringer till Cloud API med cURL.
+ Du kan använda**cURL**kommandoradsverktyg för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man ringer till Cloud API med cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 

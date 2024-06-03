@@ -1,25 +1,26 @@
 ﻿---
-title: PostReplace
+title: PostErsatz
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postreplace/
-description: Ersetzen Sie den angegebenen Text durch neuen Text in Excel-Dateien
+description: Angegebenen Text durch neuen Text in Excel-Dateien ersetzen
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostReplace
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostReplace" >}}
 {{< blocks/products/cells/docs-title titlemsg="Replace specified text with new text in Excel files." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/replace,POST,Ersetzen Sie den angegebenen Text durch neuen Text in Excel-Dateien.,<a href=\'https://apireference.aspose.cloud/cells/#/LightCells/PostReplace\'>PostReplace</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/replace,POST,Angegebenen Text in Excel Dateien durch neuen Text ersetzen.,<a href=\'https://apireference.aspose.cloud/cells/#/LightCells/PostReplace\'>PostReplace</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="Text, Zeichenfolge, Inhalt suchen" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="neuer Text, Zeichenfolge, Inhalt ersetzen" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="Passwort, Zeichenfolge, Das zum Öffnen einer Excel-Datei erforderliche Passwort." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="sheetname,string,Der Arbeitsblattname. Suchen Sie den angegebenen Textinhalt im Arbeitsblatt." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction,boolean,Gibt an, ob die Einschränkung der Excel-Datei überprüft wird, wenn der Benutzer zellenbezogene Objekte ändert." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Text,Zeichenfolge,Inhalt suchen" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="neuerText,Zeichenfolge,Inhalt ersetzen" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Kennwort, Zeichenfolge, Das zum Öffnen einer Excel-Datei erforderliche Kennwort." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Blattname, Zeichenfolge, Der Name des Arbeitsblatts. Suchen Sie den angegebenen Textinhalt im Arbeitsblatt." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction, boolean, ob die Einschränkung der Excel-Datei überprüft wird, wenn der Benutzer zellenbezogene Objekte ändert." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/LightCellsController/PostReplace\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

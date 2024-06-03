@@ -4,6 +4,7 @@ type: docs
 url: /tr/charts/legend/update/
 aliases: [/update-chart-legend-in-a-worksheet/]
 weight: 160
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Çalışma Sayfasındaki Grafik Açıklamasını Güncelle
 ---
 Bu REST API, güncelleme tablosu açıklamasını gösterir
  

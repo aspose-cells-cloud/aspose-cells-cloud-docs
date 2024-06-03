@@ -4,23 +4,24 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/getdocumentproperties/
 description: 检索 Excel 文件属性的描述
+kwords: Excel，Office，电子表格，云 REST API，GetDocumentProperties
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetDocumentProperties" >}}
 {{< blocks/products/cells/docs-title titlemsg="Retrieve descriptions of Excel file properties." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/documentproperties,GET,检索 Excel 文件属性的描述。,<a href=\'https://apireference.aspose.cloud/cells/#/Properties/GetDocumentProperties\'>GetDocumentProperties</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="参数名称、类型、描述" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="名称，字符串，工作簿名称。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="name,string,工作簿名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="类型，字符串，Excel 属性类型。" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="文件夹，字符串，文件所在的文件夹。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,文件所在的存储名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName，string，文件所在的存储名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/PropertiesController/GetDocumentProperties\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

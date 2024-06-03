@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/deleteworksheetbackground/
 description: Çalışma sayfasındaki arka plan resmini silin
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, SilWorksheetBackground
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetBackground" >}}

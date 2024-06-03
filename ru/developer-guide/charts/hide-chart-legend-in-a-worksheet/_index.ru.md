@@ -4,6 +4,7 @@ type: docs
 url: /ru/charts/legend/hide/
 aliases: [/hide-chart-legend-in-a-worksheet/]
 weight: 110
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Скрыть легенду диаграммы на листе
 ---
 Этот REST API указывает на скрытие легенды на диаграмме.
  

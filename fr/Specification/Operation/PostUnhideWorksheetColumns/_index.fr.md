@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postunhideworksheetcolumns/
 description: Afficher les colonnes de la feuille de calcul dans la feuille de calcul
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostUnhideWorksheetColumns
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostUnhideWorksheetColumns" >}}

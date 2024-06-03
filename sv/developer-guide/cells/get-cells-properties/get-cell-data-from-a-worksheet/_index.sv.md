@@ -3,6 +3,7 @@ title: Få celldata från ett arbetsblad
 type: docs
 url: /sv/get-cell-data-from-a-worksheet/
 weight: 10
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Hämta celldata från ett kalkylblad
 ---
 Denna REST API indikerar visar få ett `cell` i en Excel fil när parametern `cellOrMethodName` är cellnamn.
 

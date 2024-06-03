@@ -8,6 +8,7 @@ aliases: [/add-a-list-object-or-table-inside-the-worksheet/,/tables/add/]
 keywords: Add a list object(table) into an Excel worksheet
 description: Aspose.Cells Cloud REST API يدعم إضافة كائن قائمة (جدول) إلى ورقة عمل Excel. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 10
+kwords: Excel، Office كلاود، ريست API، جدول بيانات، PDF، CSV، Json، Markdwon، إضافة كائن قائمة في ورقة عمل Excel
 ---
 يشير REST API إلى `add a list object(table)` في ورقة عمل Excel.
  
@@ -28,7 +29,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects
 | startColumn| عدد صحيح| استفسار| صف البداية لنطاق القائمة.|
 | endRow| عدد صحيح| استفسار| صف البداية لنطاق القائمة.|
 | endColumn| عدد صحيح| استفسار| صف البداية لنطاق القائمة.|
-| hasHeaders| منطقية| استفسار| حقيقي|
+| hasHeaders|منطقية| استفسار| حقيقي|
 | listObject|| جسم| كائن القائمة|
 | مجلد| خيط| استفسار| مجلد الوثيقة.|
 | اسم التخزين| خيط| استفسار| اسم التخزين.|
@@ -69,7 +70,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listob
  
 ## عائلة Cloud SDK
  
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
  
 توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
 

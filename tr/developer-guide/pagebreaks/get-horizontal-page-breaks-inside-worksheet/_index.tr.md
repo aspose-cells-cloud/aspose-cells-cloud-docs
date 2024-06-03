@@ -8,6 +8,7 @@ aliases: [/get-horizontal-page-breaks-inside-worksheet/]
 keywords: Add a page break in an Excel worksheet
 description: Aspose.Cells Cloud REST API, Excel çalışma sayfasına sayfa sonu eklemeyi destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 10
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Yatay sayfa sonlarını alın
 ---
  Bu REST API, `horizontal` sayfa sonlarının alınacağını gösterir.
  

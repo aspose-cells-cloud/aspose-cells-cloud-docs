@@ -5,6 +5,7 @@ type: docs
 url: /it/evaluate-aspose-cells/
 description: Aspose.Cells Cloud supporta Excel per creare, convertire, unire, dividere, proteggere, operazioni di oggetti interni e così via
 weight: 60
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Valuta Aspose.Cells Cloud
 ---
  Puoi valutare[Aspose.Cells API REST](http://apireference.aspose.cloud/cells/) creando un[account di prova gratuito](https://dashboard.aspose.cloud). La prova gratuita ti darà una buona idea delle capacità del servizio e ti consentirà di effettuare alcune fasi di sviluppo iniziali.
 

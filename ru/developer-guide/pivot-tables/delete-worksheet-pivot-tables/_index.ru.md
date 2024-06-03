@@ -8,6 +8,7 @@ aliases: [/delete-worksheet-pivot-tables/]
 keywords: Delete all pivot tables in an Excel worksheet
 description: Aspose.Cells Cloud REST API поддерживает удаление всех сводных таблиц на листе Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 80
+kwords: Excel, Office Cloud, REST API, электронная таблица, PDF, CSV, Json, Markdwon, удалить все сводные таблицы на листе Excel.
 ---
 Этот REST API указывает на удаление сводных таблиц рабочего листа.
  

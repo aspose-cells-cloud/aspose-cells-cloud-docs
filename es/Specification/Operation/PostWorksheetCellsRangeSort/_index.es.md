@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/postworksheetcellsrangesort/
 description: Realizar clasificación de datos en un rango de celdas
+kwords: Excel, Office, hoja de cálculo, nube REST API, PostWorksheetCellsRangeSort
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangeSort" >}}

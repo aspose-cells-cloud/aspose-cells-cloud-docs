@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/putaddnewworksheet/
 description: Agregar una nueva hoja de trabajo en el libro de trabajo
+kwords: Excel, Office, Hoja de cálculo, Cloud REST API, PutAddNewWorksheet
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutAddNewWorksheet" >}}
@@ -20,7 +21,7 @@ weight: 50
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Nombre del parámetro, tipo, descripción" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="posición, entero, la nueva posición de la hoja." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="tipo de hoja, cadena, especifica el tipo de hoja de trabajo (VB/Hoja de trabajo/Gráfico/BIFF4Macro/Macro internacional/Otro/Diálogo)." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="tipo de hoja, cadena, especifica el tipo de hoja de trabajo (VB/Hoja de trabajo/Gráfico/BIFF4Macro/InternationalMacro/Otro/Diálogo)." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="carpeta, cadena, la carpeta donde se encuentra el archivo." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="nombre de almacenamiento, cadena, el nombre del almacenamiento donde se encuentra el archivo." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}

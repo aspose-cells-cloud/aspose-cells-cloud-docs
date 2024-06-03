@@ -8,6 +8,7 @@ aliases: [/unhide-columns-in-an-excel-worksheet/,/unhide-columns-in-excel-worksh
 keywords: Unhide column on an Excel workshee
 description: Aspose.Cells Cloud REST API stöder visning av kolumn på ett Excel-kalkylblad. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 50
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Visa kolumner på ett Excel kalkylblad
 ---
 Denna REST API indikerar att visa kalkylbladskolumner.
  
@@ -22,17 +23,17 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/colu
  
 | Parameternamn| Typ| Sökväg/Frågesträng/HTTPBody|Beskrivning|
 |:- |:- |:- |:- |
-| namn| sträng| väg|Arbetsbokens namn.|
+| namn| sträng| väg| Arbetsbokens namn.|
 | arknamn| sträng| väg| Kalkylbladets namn.|
 | startkolumn| heltal| fråga| Startkolumnindex som ska användas.|
-|totalt Kolumner| heltal| fråga| Antal kolumner som ska användas.|
+| totalt Kolumner| heltal| fråga| Antal kolumner som ska användas.|
 | bredd| siffra| fråga|50.0 |
 | mapp| sträng| fråga| Dokumentmappen.|
 | lagringsnamn| sträng| fråga| lagringsnamn.|
 
  De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Cells/PostUnhideWorksheetColumns) definierar ett allmänt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
 
- Du kan använda**cURL** kommandoradsverktyg för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man ringer till Cloud API med cURL.
+ Du kan använda**cURL**kommandoradsverktyg för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man ringer till Cloud API med cURL.
 
 
 

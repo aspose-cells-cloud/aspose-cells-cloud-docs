@@ -4,26 +4,27 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/putworkbookcreate/
 description: 使用不同的方法创建新工作簿
+kwords: Excel，Office，电子表格，云 REST API，PutWorkbookCreate
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorkbookCreate" >}}
 {{< blocks/products/cells/docs-title titlemsg="Create a new workbook using different methods." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name},PUT,使用不同方法创建新工作簿。,<a href=\'https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookCreate\'>PutWorkbookCreate</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name},PUT,使用不同的方法创建一个新的工作簿。,<a href=\'https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookCreate\'>PutWorkbookCreate</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="参数名称、类型、描述" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,新文档名称。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="name,string,新文档的名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="templateFile,string,模板文件，如果未提供数据则创建默认工作簿。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="dataFile,string,智能标记数据文件，如果未提供数据，则检查请求内容中的数据。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="isWriteOver,boolean,指定是否覆盖目标文件。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="templateFile，string，模板文件，如果没有提供数据则创建默认工作簿。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="dataFile,string,智能标记数据文件，若未提供数据则检查请求内容的数据。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="isWriteOver，boolean，指定是否覆盖目标文件。" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="文件夹，字符串，文件所在的文件夹。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,文件所在的存储名称。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="检查Excel限制，布尔值，" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName，string，文件所在的存储名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction，布尔值，" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/WorkbookController/PutWorkbookCreate\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

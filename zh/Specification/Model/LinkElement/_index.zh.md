@@ -4,17 +4,18 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/model/linkelement/
 description: Aspose.Cells 云模型规范：LinkElement。轻松处理 Excel 和其他电子表格文档，具有打开、生成、编辑、拆分、合并、比较和转换等功能
+kwords: Excel, Office, 电子表格, Cloud REST API, LinkElement
 weight: 50
 ---
 ## **链接元素**
 
  
 
-|物业名称|财产种类|可空|只读|默认值|描述|
+|属性名称|财产种类|可空|只读|默认值|描述|
 |:- |:- |:- |:- |:- |:- |
 |关联|类别：链接|真的|错误的|||
 
-**孩子的名字** : 
+**孩子名字** : 
 	-  [自动筛选](autofilter) 
 	-  [细胞](cell) 
 	-  [Cells](cells) 
@@ -31,12 +32,11 @@ weight: 50
 	-  [合并单元格](mergedcell) 
 	-  [合并单元格](mergedcells) 
 	-  [姓名](name) 
-	-  [名称](names) 
+	-  [名字](names) 
 	-  [页面设置](pagesetup) 
 	-  [排](row) 
-	-  [行数](rows) 
-	-  [拆分结果文档](splitresultdocument) 
-	-  [风格](styles) 
+	-  [行](rows) 
+	-  [样式](styles) 
 	-  [文本项](textitem) 
 	-  [文本项](textitems) 
 	-  [验证](validation) 
@@ -49,7 +49,7 @@ weight: 50
 	-  [数据透视表](pivottables) 
 	-  [自选图形](autoshapes) 
 	-  [形式](forms) 
-	-  [Ole对象](oleobjects) 
+	-  [对象](oleobjects) 
 	-  [图片](pictures) 
 	-  [形状](shape) 
 	-  [形状](shapes) 
@@ -63,6 +63,6 @@ weight: 50
 	-  [图例条目](legendentries) 
 	-  [传奇入口](legendentry) 
 	-  [系列](series) 
-	-  [系列项目](seriesitems) 
-	-  [刻度标签](ticklabels) 
+	-  [系列商品](seriesitems) 
+	-  [勾选标签](ticklabels) 
 	-  [趋势线](trendlines) 

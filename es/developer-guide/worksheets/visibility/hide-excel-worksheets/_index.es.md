@@ -8,6 +8,7 @@ aliases: [/hide-excel-worksheets/]
 keywords: Hide an Excel Worksheet on an Excel Workbook
 description: Aspose.Cells Cloud REST API admite ocultar una hoja de trabajo Excel en un libro de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 50
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Ocultar una hoja de trabajo Excel
 ---
 Este REST API indica `hide worksheet`.
  
@@ -24,7 +25,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/visible
 |:- |:- |:- |:- |
 | nombre| cadena| camino| Nombre del documento.|
 | nombre de la hoja| cadena| camino| Nombre de la hoja de trabajo.|
-| es visible| booleano| consulta| Nuevo valor de visibilidad de la hoja de trabajo.|
+| es visible|booleano| consulta| Nuevo valor de visibilidad de la hoja de trabajo.|
 | carpeta| cadena| consulta| La carpeta de documentos.|
 | nombredealmacenamiento| cadena| consulta| nombre del almacenamiento.|
  

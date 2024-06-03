@@ -4,18 +4,19 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postbatchconvert/
 description: Stapelkonvertierung von Dateien, die bestimmte Übereinstimmungsbedingungen erfüllen
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostBatchConvert
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostBatchConvert" >}}
 {{< blocks/products/cells/docs-title titlemsg="Batch converting files that meet specific matching conditions." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/batch/convert,POST,Batch-Konvertierung von Dateien, die bestimmte Übereinstimmungsbedingungen erfüllen.,<a href=\'https://apireference.aspose.cloud/cells/#/Batch/PostBatchConvert\'>PostBatchConvert</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/batch/convert,POST,Stapelkonvertierung von Dateien, die bestimmte Übereinstimmungsbedingungen erfüllen.,<a href=\'https://apireference.aspose.cloud/cells/#/Batch/PostBatchConvert\'>PostBatchConvert</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns=" batchConvertRequest,class:batchconvertrequest,BatchConvertRequest Batch-Konvertierungsdateianforderung." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns=" batchConvertRequest,Klasse:batchconvertrequest,BatchConvertRequest Batch-Konvertierungsdateianforderung." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

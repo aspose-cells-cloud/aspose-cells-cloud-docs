@@ -8,6 +8,7 @@ aliases: [/hide-pivot-field-item/]
 keywords: Hide a pivot field in a pivot table
 description: Aspose.Cells Cloud REST API supporta il nascondere un campo pivot nella tabella pivot. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 110
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Nascondi elemento campo pivot in una tabella pivot
 ---
 Questo REST API indica l'occultamento dell'elemento del campo pivot.
  
@@ -28,8 +29,8 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottable
 | pivotFieldType| corda| domanda||
 | campoIndice| numero intero| domanda||
 | itemIndex| numero intero| domanda||
-| isHide| booleano| domanda||
-| bisogno di ricalcolare| booleano| domanda| Falso|
+| isHide|booleano| domanda||
+| bisogno di ricalcolare|booleano| domanda| Falso|
 | cartella| corda| domanda||
 | storageName| corda| domanda| nome dell'archivio.|
  

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/model/line/
 description: "Aspose.Cells Especificación del modelo de nube: Línea. Maneje sin esfuerzo Excel y otros documentos de hoja de cálculo con funciones como abrir, generar, editar, dividir, fusionar, comparar y convertir."
+kwords: Excel, Office, Hoja de cálculo, Nube REST API, Línea
 weight: 50
 ---
 ## **línea**
@@ -26,9 +27,9 @@ weight: 50
 | IsAuto| Booleano| Verdadero| FALSO|| Indica si este estilo de línea se asigna automáticamente.|
 | EsAutomáticoColor| Booleano| Verdadero| FALSO|| Indica si el color de la línea se asigna automáticamente.|
 | Es visible| Booleano| Verdadero| FALSO|| Representa si la línea es visible.|
-| Tipo de unión| Cadena| Verdadero| FALSO||Especifica las tapas de unión.|
+| Tipo de unión| Cadena| Verdadero| FALSO|| Especifica las tapas de unión.|
 | Estilo| Cadena| Verdadero| FALSO|| Representa el estilo de la línea.|
-| Transparencia| Flotante| Verdadero| FALSO|| Devuelve o establece el grado de transparencia de la línea como un valor de 0,0 (opaco) a 1,0 (claro).|
+| Transparencia| Flotante| Verdadero| FALSO||Devuelve o establece el grado de transparencia de la línea como un valor de 0,0 (opaco) a 1,0 (claro).|
 | Peso| Cadena| Verdadero| FALSO|| Obtiene o establece el valor de la línea.|
 | PesoPt| Flotante| Verdadero| FALSO|| Obtiene o establece el peso de la línea en unidades de puntos.|
 

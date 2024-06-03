@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/postassemble/
 description: Samla datafiler med mallfiler för att generera filer i olika format
+kwords: Excel, Office, Kalkylblad, Cloud REST API, PostAssemble
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostAssemble" >}}
@@ -16,7 +17,7 @@ weight: 50
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parameternamn, typ, beskrivning" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="datakälla, sträng," >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="outFormat,string,Formatet som ska konverteras(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/86143481/J63143481/J73143481/J73143481/J73143481/J73143481/J76143481/J73143481/J76143481/J76143481/J73123481/J76123481 173481 /MD[Markdown]/Nummer)" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="outFormat,string,Formatet som ska konverteras(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/43481/J63143481/J63143481/J63143481/J63143481/J63143481/J63143481/J6311/43481/J631/43481/J63143481/J63G 76173481 /MD[Markdown]/Nummer)" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="password,string,Lösenordet som behövs för att öppna en Excel-fil." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction, boolean, Om kontrollera begränsning av excel-fil när användaren ändrar cellrelaterade objekt." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="region,string,De regionala inställningarna för arbetsbok." >}} 

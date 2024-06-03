@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/putdocumentproperty/
 description: Imposta o aggiungi una proprietà Excel
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PutDocumentProperty
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutDocumentProperty" >}}

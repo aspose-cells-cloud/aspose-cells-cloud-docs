@@ -8,6 +8,7 @@ aliases: [/delete-worksheet-pivot-table-by-index/]
 keywords: Delete a pivot table in an Excel file
 description: Aspose.Cells Cloud REST API supporta l'eliminazione di una tabella pivot in un file Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 70
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Elimina una tabella pivot in un foglio di lavoro Excel
 ---
 Questo REST API indica la tabella pivot del foglio di lavoro `delete` per indice.
  

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/model/pivotfilter/
 description: "Aspose.Cells Bulut modeli spesifikasyonu: PivotFilter. Açma, oluşturma, düzenleme, bölme, birleştirme, karşılaştırma ve dönüştürme gibi özelliklerle Excel ve diğer elektronik tablo belgelerini zahmetsizce yönetin"
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PivotFilter
 weight: 50
 ---
 ## **pivotFiltre**

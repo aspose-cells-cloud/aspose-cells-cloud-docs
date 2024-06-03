@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/postworkbooksmerge/
 description: Slå samman en arbetsbok till den befintliga arbetsboken
+kwords: Excel, Office, Kalkylblad, Cloud REST API, PostWorkbooksMerge
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbooksMerge" >}}

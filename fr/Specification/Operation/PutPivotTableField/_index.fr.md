@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/putpivottablefield/
 description: Ajouter un champ pivot dans le tableau croisé dynamique
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PutPivotTableField
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutPivotTableField" >}}

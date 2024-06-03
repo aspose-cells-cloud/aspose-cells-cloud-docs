@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/postunhideworksheetrows/
 description: Scopri le righe nel foglio di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PostUnhideWorksheetRows
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostUnhideWorksheetRows" >}}

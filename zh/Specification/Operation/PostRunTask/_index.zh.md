@@ -4,18 +4,19 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/postruntask/
 description: 运行任务
+kwords: Excel，Office，电子表格，云 REST API，PostRunTask
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostRunTask" >}}
 {{< blocks/products/cells/docs-title titlemsg="Run tasks." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="/cells/task/runtask,POST,运行任务。,<a href=\'https://apireference.aspose.cloud/cells/#/Task/PostRunTask\'>PostRunTask</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="TaskData,类:taskdata,任务数据描述" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="TaskData,class:taskdata,任务数据描述" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

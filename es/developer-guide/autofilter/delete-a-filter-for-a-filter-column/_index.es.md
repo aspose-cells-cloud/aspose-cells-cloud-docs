@@ -8,6 +8,7 @@ aliases: [/delete-a-filter-for-a-filter-column/,/delete-auto-filter/]
 keywords: Deletes a filter on an Excel worksheet
 description: Aspose.Cells Cloud API admite la eliminación de un filtro en una hoja de trabajo Excel. El SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 100
+kwords: Excel, Office Cloud, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Eliminar un filtro en una hoja de trabajo Excel
 ---
 Este REST API indica eliminar un `filter` en una hoja de trabajo Excel.
 
@@ -22,7 +23,7 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilt
 Los parámetros de la solicitud son:
 | Nombre del parámetro| Tipo| Ruta/Cadena de consulta/Cuerpo HTTP|Descripción|
 |:- |:- |:- |:- |
-| nombre| cadena| Camino|El nombre del libro de trabajo.|
+| nombre| cadena| Camino| El nombre del libro de trabajo.|
 | nombre de la hoja| cadena| Camino| El nombre de la hoja de trabajo.|
 |rango|cadena| Consulta||
 |índice de campo|entero| Consulta||

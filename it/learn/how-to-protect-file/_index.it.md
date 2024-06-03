@@ -4,6 +4,7 @@ type: docs
 url: /it/how-to-protect-file
 description: Come proteggere il file tramite Aspose.Cells Cloud
 weight: 10
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Come proteggere il file tramite Aspose.Cells Cloud
 ---
 ## introduzione
 
@@ -25,7 +26,7 @@ Sono disponibili numerose API per la protezione dei file, generalmente compatibi
 
 # Come proteggere il file Excel o un altro foglio di calcolo tramite Aspose.Cells Cloud
 
- Lo Aspose.Cells Cloud API fornisce[più SDK](https://github.com/aspose-cells-cloud)per diversi linguaggi di programmazione. Scegli l'SDK che si allinea al tuo linguaggio di programmazione preferito e segui la documentazione allegata per l'installazione e l'inizializzazione. In alternativa, puoi creare il tuo SDK in base a[Riferimento API](https://reference.aspose.cloud/cells/). In questa sezione utilizzeremo C# come esempio per descrivere in dettaglio il processo di unione dei file.
+ Lo Aspose.Cells Cloud API fornisce[più SDK](https://github.com/aspose-cells-cloud) per diversi linguaggi di programmazione. Scegli l'SDK che si allinea al tuo linguaggio di programmazione preferito e segui la documentazione allegata per l'installazione e l'inizializzazione. In alternativa, puoi creare il tuo SDK in base a[Riferimento API](https://reference.aspose.cloud/cells/). In questa sezione utilizzeremo C# come esempio per descrivere in dettaglio il processo di unione dei file.
 
 
 ## Registrazione e ottenimento chiave API
@@ -89,8 +90,8 @@ cellsInstance.PostProtect(request);
 
  IL**proteggere** Excel o un'altra funzionalità del foglio di calcolo di Aspose.Cells Cloud API è utile in vari casi d'uso pratici. Ecco alcuni scenari comuni:
 
--  Aggiungere**più file di firma digitale**per i file Excel locali o altri file di fogli di calcolo.
--  Aggiungere**proteggere con password**per i file Excel locali o altri file di fogli di calcolo.
+-  Aggiungere**più file di firma digitale** per i file Excel locali o altri file di fogli di calcolo.
+-  Aggiungere**proteggere con password** per i file Excel locali o altri file di fogli di calcolo.
 -  Impostato**Sempre aperto in sola lettura** per una facile condivisione.
 - **Unisci più file in un file html** per la visualizzazione e l'incorporamento nelle pagine web.
 

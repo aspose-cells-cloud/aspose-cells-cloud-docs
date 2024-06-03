@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postcolumnstyle/
 description: Установить стиль столбца на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostColumnStyle
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostColumnStyle" >}}

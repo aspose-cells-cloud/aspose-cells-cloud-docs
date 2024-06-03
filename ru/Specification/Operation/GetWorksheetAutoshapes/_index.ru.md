@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/getworksheetautoshapes/
 description: Получить описание автофигур на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, GetWorksheetAutoshapes
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetAutoshapes" >}}

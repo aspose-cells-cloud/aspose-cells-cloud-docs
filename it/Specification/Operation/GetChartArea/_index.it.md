@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/getchartarea/
 description: Recupera la descrizione dell'area del grafico nel foglio di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, GetChartArea
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetChartArea" >}}

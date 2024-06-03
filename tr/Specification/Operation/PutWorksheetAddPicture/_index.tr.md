@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/putworksheetaddpicture/
 description: Çalışma sayfasına yeni bir resim ekleme
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PutWorksheetAddPicture
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetAddPicture" >}}

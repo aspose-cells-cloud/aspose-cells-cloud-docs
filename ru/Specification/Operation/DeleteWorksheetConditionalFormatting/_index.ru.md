@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/deleteworksheetconditionalformatting/
 description: Удаление условного форматирования
+kwords: Excel, Office, электронная таблица, Cloud REST API, DeleteWorksheetConditionalFormatting
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetConditionalFormatting" >}}

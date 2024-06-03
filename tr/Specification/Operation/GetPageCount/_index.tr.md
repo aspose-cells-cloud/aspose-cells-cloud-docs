@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/getpagecount/
 description: Çalışma kitabındaki sayfa sayısını alın
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, GetPageCount
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetPageCount" >}}

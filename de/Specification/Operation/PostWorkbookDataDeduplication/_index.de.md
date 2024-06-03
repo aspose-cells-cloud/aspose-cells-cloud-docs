@@ -1,16 +1,17 @@
 ﻿---
-title: PostWorkbookDataDeduplicatio
+title: PostWorkbookDataDeduplizierung
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postworkbookdatadeduplication/
-description: Die Datendeduplizierung von Tabellenkalkulationsdateien wird hauptsächlich verwendet, um doppelte Daten in Tabellen und Bereichen zu entfernen
+description: Die Datendeduplizierung von Tabellenkalkulationsdateien wird hauptsächlich verwendet, um doppelte Daten in Tabellen und Bereichen zu eliminieren
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostWorkbookDataDeduplication
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookDataDeduplication" >}}
 {{< blocks/products/cells/docs-title titlemsg="Data deduplication of spreadsheet files is mainly used to eliminate duplicate data in tables and ranges." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/datadeduplication,POST,Die Datendeduplizierung von Tabellenkalkulationsdateien wird hauptsächlich verwendet, um doppelte Daten in Tabellen und Bereichen zu entfernen.,<a href=\'https://apireference.aspose.cloud/cells/#/DataProcessing/ PostWorkbookDataDeduplication\'>PostWorkbookDataDeduplication</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/datadeduplication,POST,Die Datendeduplizierung von Tabellenkalkulationsdateien wird hauptsächlich verwendet, um doppelte Daten in Tabellen und Bereichen zu eliminieren.,<a href=\'https://apireference.aspose.cloud/cells/#/DataProcessing/PostWorkbookDataDeduplication\'>PostWorkbookDataDeduplication</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
@@ -20,12 +21,12 @@ weight: 50
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge," >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Speichername, Zeichenfolge," >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="Passwort, Zeichenfolge," >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="Region, Zeichenfolge," >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Passwort,Zeichenfolge," >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Region,Zeichenfolge," >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="checkExcelRestriction,boolean," >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="deduplicationRegion,class:deduplicationregion," >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Deduplizierungsregion,Klasse:Deduplizierungsregion," >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

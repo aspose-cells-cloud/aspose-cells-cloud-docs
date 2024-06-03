@@ -8,6 +8,7 @@ aliases: [/get-worksheet-pivot-table-information-by-index/]
 keywords: Get a pivot table in an Excel file
 description: Aspose.Cells Cloud REST API, Excel dosyasında pivot tablo almayı destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 10
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel çalışma sayfasında bir pivot tablo alın
 ---
 Bu REST API, çalışma sayfası `pivottable` bilgilerinin dizine göre alındığını gösterir.
  

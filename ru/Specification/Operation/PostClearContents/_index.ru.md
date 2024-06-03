@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postclearcontents/
 description: Очистить содержимое области ячеек на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostClearContents
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostClearContents" >}}

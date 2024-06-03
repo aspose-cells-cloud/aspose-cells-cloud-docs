@@ -7,8 +7,9 @@ url: /ar/export/
 keywords: Export workbook and internal objects to kinds of format files
 description: Aspose.Cells Cloud REST API يدعم تصدير Excel ملف وكائنات داخلية إلى أنواع ملفات التنسيق. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 31
+kwords: Excel، Office Cloud، REST API، Spreadsheet، PDF، CSV، Json، Markdwon، تصدير المصنف والكائنات الداخلية إلى أنواع التنسيق
 ---
- إذا قمت في الأصل بإنشاء ملف Excel بتنسيق معين، مثل[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/) ، و[CSV](https://docs.fileformat.com/spreadsheet/csv/) ، قد تجد أحيانًا أنه من المفيد تحويل ملف Excel إلى تنسيق آخر حتى تتمكن من الاستفادة من الميزات الخاصة التي يوفرها. على سبيل المثال، قد ترغب في تصدير ملف Excel إلى[PDF](https://docs.fileformat.com/pdf/) لحماية محتوياتك من أي تعديلات غير مصرح بها وتسهيل قراءتها ومشاركتها في وقت واحد.
+ إذا قمت في الأصل بإنشاء ملف Excel بتنسيق معين، مثل[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/) ، و[CSV](https://docs.fileformat.com/spreadsheet/csv/)، قد تجد أحيانًا أنه من المفيد تحويل ملف Excel إلى تنسيق آخر حتى تتمكن من الاستفادة من الميزات الخاصة التي يوفرها. على سبيل المثال، قد ترغب في تصدير ملف Excel إلى[PDF](https://docs.fileformat.com/pdf/) لحماية محتوياتك من أي تعديلات غير مصرح بها وتسهيل قراءتها ومشاركتها في وقت واحد.
 
  Excel تصدير الكائن عملية معقدة. تساهم العديد من العوامل في التعقيد، وبالتالي يجب أخذها في الاعتبار أثناء عملية التصدير. تعد القدرة على تصدير كائن Excel إلى ملف بتنسيق واحد بجودة احترافية دقيقة من أهم ميزات Aspose.Cells Cloud.
 
@@ -31,7 +32,7 @@ POST https://api.aspose.cloud/v3.0/cells/export
 | اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/HTTPBody|وصف|
 |:- |:- |:- |:- |
 | ملف| ملف| بيانات النموذج| ملف للتحميل|
-| نوع الكائن| خيط| استفسار|نوع الكائن (مصنف/ورقة عمل/مخطط/شكل/صورة/listobject/oleobject)|
+| نوع الكائن| خيط| استفسار| نوع الكائن (مصنف/ورقة عمل/مخطط/شكل/صورة/listobject/oleobject)|
 | شكل| خيط| استفسار|[تنسيق الملف](/cells/ar/supported-file-formats/)  |
  
  ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويتيح لك تنفيذ تفاعلات REST مباشرة من متصفح الويب.
@@ -83,7 +84,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/export" \
 ## عائلة Cloud SDK
 
 
- يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى الاطلاع على[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
+ يعد استخدام SDK أفضل طريقة لتسريع عملية التطوير. تهتم حزمة SDK بالتفاصيل ذات المستوى المنخفض وتتيح لك التركيز على مهام مشروعك. يرجى التحقق من[مستودع جيثب](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
 
 توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات تطوير البرامج (SDK) المتنوعة:
 

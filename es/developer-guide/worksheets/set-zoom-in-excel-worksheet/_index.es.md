@@ -8,6 +8,7 @@ aliases: [/set-zoom-in-excel-worksheet/]
 keywords: Set zoom for an Excel worksheet
 description: Aspose.Cells Cloud REST API admite la configuración de zoom para una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 20
+kwords: Excel, Office Cloud, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Establecer zoom para una hoja de trabajo Excel
 ---
 Este REST API indica `set the zoom value of Excel worksheet`.
  

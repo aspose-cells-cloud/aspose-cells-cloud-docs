@@ -4,6 +4,7 @@ type: docs
 url: /it/charts/get/
 aliases: [/get-chart-from-a-worksheet/]
 weight: 10
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Ottieni grafico da un foglio di lavoro
 ---
 Questo REST API indica come ottenere informazioni sulla mappa.
  

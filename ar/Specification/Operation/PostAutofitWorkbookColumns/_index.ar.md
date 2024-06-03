@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postautofitworkbookcolumns/
 description: الاحتواء التلقائي للأعمدة في المصنف
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostAutofitWorkbookColumns
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostAutofitWorkbookColumns" >}}

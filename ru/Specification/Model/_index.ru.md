@@ -2,157 +2,160 @@
 title: Модель
 second_title: Aspose.Cells Cloud Documen
 type: docs
+kwords: Excel, Office, электронная таблица, Cloud REST API, модель данных
 weight: 50
 ---
 - [ObjectExistsExtensions](objectexistsextensions)  :   
 - [ФайлВерсия](fileversion)  :   
 - [Файл хранения](storagefile) : информация о файле или папке.
 - [GoogleDriveStorageFile](googledrivestoragefile)  :   
-- [Выше среднего](aboveaverage) Опишите правило условного форматирования «Выше среднего». Это правило условного форматирования выделяет ячейки, значения которых выше или ниже среднего для всех значений в диапазоне.
+- [Выше среднего](aboveaverage) : Опишите правило условного форматирования «Выше среднего». Это правило условного форматирования выделяет ячейки, значения которых выше или ниже среднего для всех значений в диапазоне.
 - [АннотацияРасчетДвигатель](abstractcalculationengine) : представляет пользовательский механизм вычислений, расширяющий механизм вычислений по умолчанию Aspose.Cells.
 - [АннотацияРасчетМонитор](abstractcalculationmonitor) : Мониторинг, позволяющий пользователю отслеживать ход расчета формулы.
-- [Автофильтр](autofilter)  :   
-- [Параметры автоподборщика](autofitteroptions)  :   
-- [Граница](border)  :   
-- [Параметры расчета](calculationoptions)  :   
-- [Клетка](cell)  :   
-- [CellArea](cellarea)  :   
-- [Cells](cells)  :   
+- [Автофильтр](autofilter) : представляет автофильтрацию для указанного листа.
+- [Параметры автоподборщика](autofitteroptions) : представляет все параметры автоматической установки.
+- [Граница](border) : инкапсулирует объект, представляющий границу ячейки.
+- [Параметры расчета](calculationoptions) : представляет параметры для расчета.
+- [Клетка](cell) : инкапсулирует объект, представляющий одну ячейку книги.
+- [CellArea](cellarea) : представляет область ячеек.
+- [Cells](cells) : инкапсулирует коллекцию объектов, связанных с ячейками, например Aspose.Cells.Cell, Aspose.Cells.Row и т. д.
 - [КлеткиОблакоФайлИнформация](cellscloudfileinfo) : Cells Описание информации об облачном файле.
-- [КлеткиЦвет](cellscolor)  :   
+- [КлеткиЦвет](cellscolor) : представляет все типы цвета.
 - [Свойства документа](cellsdocumentproperties) : Excel объекты
 - [ЯчейкиДокументСвойство](cellsdocumentproperty) : Cells собственность документа.
-- [Цвет](color) : Цвет.
-- [Цветовой фильтр](colorfilter) : Цветовой фильтр.
+- [Цвет](color) Цвет.
+- [Цветовой фильтр](colorfilter) : Цветной фильтр.
 - [Цветовая шкала](colorscale) : описать правило условного форматирования ColorScale. Это правило условного форматирования создает в ячейках градуированную цветовую шкалу.
-- [Столбец](column)  :   
-- [Столбцы](columns)  :   
-- [Комментарий](comment)  :   
-- [Комментарии](comments)  :   
+- [Столбец](column) : представляет один столбец на листе.
+- [Столбцы](columns) : Столбцы
+- [Комментарий](comment) : инкапсулирует объект, представляющий комментарий к ячейке.
+- [Комментарии](comments) : инкапсулирует коллекцию объектов.
 - [Условное форматирование](conditionalformatting)  :   
-- [Значок условного форматирования](conditionalformattingicon)  :   
-- [Условное форматирование](conditionalformattings)  :   
-- [Значение условного форматирования](conditionalformattingvalue)  :   
+- [Значок условного форматирования](conditionalformattingicon) : представляет настраиваемый значок правила условного форматирования.
+- [Условное форматирование](conditionalformattings) : инкапсулирует коллекцию объектов.
+- [Значение условного форматирования](conditionalformattingvalue) : описывает значения точек интерполяции в градиентной шкале, dataBar или iconSet.
 - [КопироватьПараметры](copyoptions) : представляет параметры копирования.
 - [КритерииНесколькоФильтр](criteriamultiplefilter)  :   
-- [ПользовательскийФильтр](customfilter)  :   
+- [ПользовательскийФильтр](customfilter) : представляет пользовательский фильтр.
 - [Панель данных](databar) : Опишите правило условного форматирования DataBar. Это правило условного форматирования отображает градуированную панель данных в диапазоне ячеек.
-- [DataBarГраница](databarborder)  :   
-- [Очистка данных](datacleansing) : Очистка данных
-- [DataColumnFillValue](datacolumnfillvalue)  :   
-- [Заполнение данных](datafill)  :   
-- [DataFillValue](datafillvalue)  :   
+- [DataBarГраница](databarborder) : представляет границу гистограмм, заданных правилом условного форматирования.
+- [Очистка данных](datacleansing) : представляет собой очистку данных.
+- [DataColumnFillValue](datacolumnfillvalue) : означает, что столбец данных заполнен указанным значением.
+- [Заполнение данных](datafill) : представляет заполнение данных.
+- [DataFillValue](datafillvalue) : означает, что данные заполнены указанным значением.
+- [элемент данных](dataitem) : представляет элемент данных.
+- [Тип элемента данных](dataitemtype) : представляет тип элемента данных.
 - [Сортировщик данных](datasorter) : Краткое описание DataSorter.
 - [Ключ сортировщика данных](datasorterkey) : представляет ключ сортировщика данных.
-- [DateTimeGroupItem](datetimegroupitem)  :   
-- [Регион дедупликации](deduplicationregion)  :   
-- [ДинамическийФильтр](dynamicfilter)  :   
-- [Информация о файле](fileinfo) : Информация о файле
+- [Источник данных](datasource) : Представляет источник данных.
+- [Тип источника данных](datasourcetype) : представляет тип источника данных.
+- [DateTimeGroupItem](datetimegroupitem) : представляет настройку группы даты и времени.
+- [Регион дедупликации](deduplicationregion) : представляет область дедупликации данных.
+- [ДинамическийФильтр](dynamicfilter) : представляет динамический фильтр.
+- [Информация о файле](fileinfo) : представляет информацию о файле.
+- [источник файла](filesource)  :   
+- [ТипФайлИсточника](filesourcetype)  :   
 - [ФайлыРезультат](filesresult)  :   
-- [ФильтрСтолбец](filtercolumn)  :   
-- [Шрифт](font)  :   
-- [Настройка шрифта](fontsetting)  :   
-- [ФорматУсловие](formatcondition)  :   
+- [ФильтрСтолбец](filtercolumn) : представляет фильтр для одного столбца. Объект Filter является членом коллекции Filters.
+- [Шрифт](font) : инкапсулирует объект шрифта, используемый в электронной таблице.
+- [Настройка шрифта](fontsetting) : представляет диапазон символов в тексте ячейки.
+- [ФорматУсловие](formatcondition) : представляет условие условного форматирования.
 - [ФормулаФорматУсловие](formulaformatcondition)  :   
 - [ФормулаНастройки](formulasettings) : Настройки формул и расчетов.
 - [Настройки глобализации](globalizationsettings) : представляет настройки глобализации.
-- [Горизонтальный разрыв страницы](horizontalpagebreak)  :   
-- [Горизонтальные разрывы страниц](horizontalpagebreaks)  :   
-- [Гиперссылка](hyperlink)  :   
-- [Гиперссылки](hyperlinks)  :   
-- [ЗначокФильтр](iconfilter)  :   
-- [Набор иконок](iconset) Опишите правило условного форматирования IconSet. Это правило условного форматирования применяет значки к ячейкам в соответствии с их значениями.
+- [Горизонтальный разрыв страницы](horizontalpagebreak) : инкапсулирует объект, представляющий горизонтальный разрыв страницы.
+- [Горизонтальные разрывы страниц](horizontalpagebreaks) : инкапсулирует коллекцию объектов.
+- [Гиперссылка](hyperlink) : инкапсулирует объект, представляющий гиперссылку.
+- [Гиперссылки](hyperlinks) : инкапсулирует коллекцию объектов.
+- [ЗначокФильтр](iconfilter) : представляет фильтр значков.
+- [Набор иконок](iconset) : Опишите правило условного форматирования IconSet. Это правило условного форматирования применяет значки к ячейкам в соответствии с их значениями.
 - [Связь](link)  :   
 - [СсылкаЭлемент](linkelement)  :   
-- [Параметры загрузки](loadoptions)  :   
+- [Параметры загрузки](loadoptions) : представляет параметры загрузки файла.
 - [MergedCell](mergedcell)  :   
 - [Объединенные ячейки](mergedcells)  :   
 - [МножественныйФильтр](multiplefilter)  :   
-- [Несколько фильтров](multiplefilters)  :   
-- [Имя](name)  :   
-- [Имена](names)  :   
+- [Несколько фильтров](multiplefilters) : представляет коллекцию из нескольких фильтров.
+- [Имя](name) : представляет определенное имя для диапазона ячеек.
+- [Имена](names) : представляет коллекцию всех объектов в электронной таблице.
 - [НегативБарФормат](negativebarformat) : представляет настройки цвета гистограмм для отрицательных значений, определенных правилом условного форматирования гистограмм.
 - [Раздел страницы](pagesection)  :   
-- [Настройка страницы](pagesetup)  :   
+- [Настройка страницы](pagesetup) : настройка страницы печати Excel
 - [Параметры вставки](pasteoptions) : представляет специальные параметры вставки.
-- [PDFSecurityOptions](pdfsecurityoptions)  :   
+- [PDFSecurityOptions](pdfsecurityoptions) : Параметры шифрования и разрешения доступа для документа PDF. PDF/A не позволяет настраивать безопасность.
 - [Защита](protection) : представляет различные типы параметров защиты, доступные для листа.
 - [Протектлистпараметр](protectsheetparameter)  :   
-- [Таблица запросов](querytable) : представляет информацию QueryTable.
-- [Диапазон](range)  :   
-- [Диапазоны](ranges)  :   
-- [Ряд](row)  :   
-- [Строки](rows)  :   
-- [Сохранить результат](saveresult)  :   
+- [Диапазон](range) инкапсулирует объект, представляющий диапазон ячеек в электронной таблице.
+- [Диапазоны](ranges) : инкапсулирует коллекцию объектов.
+- [Ряд](row) : представляет одну строку на листе.
+- [Строки](rows) : собирает объекты, представляющие отдельные строки на листе.
+- [Сохранить результат](saveresult) : Представляет результат сохранения.
 - [Параметры постраничного сохранения](paginatedsaveoptions) : представляет параметры нумерации страниц.
-- [Однозначение](singlevalue)  :   
-- [СортКей](sortkey)  :   
-- [СплитРезультат](splitresult)  :   
-- [СплитРезультатДокумент](splitresultdocument)  :   
-- [Стиль](style)  :   
-- [СтильФорматУсловие](styleformatcondition)  :   
-- [Стили](styles)  :   
-- [ТекстФорматУсловие](textformatcondition)  :   
-- [Текститем](textitem)  :   
-- [Текстовые элементы](textitems)  :   
-- [Текстовые параметры](textoptions)  :   
-- [ТемаЦвет](themecolor)  :   
-- [ВремяПериодФорматУсловие](timeperiodformatcondition)  :   
-- [Топ 10](top10) Опишите правило условного форматирования Top10. Это правило условного форматирования выделяет ячейки, значения которых попадают в верхнюю N или нижнюю N скобку, как указано.
-- [Топ10Фильтр](top10filter)  :   
-- [Проверка](validation)  :   
-- [Валидации](validations)  :   
-- [Вертикальный разрыв страницы](verticalpagebreak)  :   
-- [Вертикальные разрывы страниц](verticalpagebreaks)  :   
-- [Рабочая тетрадь](workbook)  :   
-- [Настройки книги](workbooksettings)  :   
-- [Рабочий лист](worksheet)  :   
-- [Рабочие листы](worksheets)  :   
+- [Однозначение](singlevalue) : Представляет одно значение.
+- [СортКей](sortkey) : представляет ключ сортировки.
+- [СплитРезультат](splitresult) : представляет результат разделения файла.
+- [Стиль](style) : представляет стиль отображения документа Excel, например шрифт, цвет, выравнивание, границу и т. д. Объект Style содержит все атрибуты стиля (шрифт, числовой формат, выравнивание и т. д.) в качестве свойств.
+- [СтильФорматУсловие](styleformatcondition) : представляет состояние формата стиля.
+- [Стили](styles) : представляет коллекцию стилей данных.
+- [ТекстФорматУсловие](textformatcondition) : представляет состояние текстового формата.
+- [Текститем](textitem) : Представляет текстовый элемент.
+- [Текстовые элементы](textitems) представляет коллекцию текстовых элементов.
+- [Текстовые параметры](textoptions) : представляет параметры текста.
+- [ТемаЦвет](themecolor) : представляет цвет темы.
+- [ВремяПериодФорматУсловие](timeperiodformatcondition) : представляет состояние формата периода времени.
+- [Топ 10](top10) : Опишите правило условного форматирования Top10. Это правило условного форматирования выделяет ячейки, значения которых попадают в верхнюю N или нижнюю N скобку, как указано.
+- [Топ10Фильтр](top10filter) : представляет 10 лучших фильтров.
+- [Проверка](validation) : представляет данные validation.settings.
+- [Валидации](validations) : представляет сбор данных для проверки.
+- [Вертикальный разрыв страницы](verticalpagebreak) : инкапсулирует объект, представляющий вертикальный разрыв страницы.
+- [Вертикальные разрывы страниц](verticalpagebreaks) : инкапсулирует коллекцию объектов.
+- [Рабочая тетрадь](workbook) : представляет корневой объект для создания электронной таблицы Excel.
+- [Настройки книги](workbooksettings) : представляет все настройки книги.
+- [Рабочий лист](worksheet) : инкапсулирует объект, представляющий один лист.
+- [Рабочие листы](worksheets) : инкапсулирует коллекцию объектов.
 - [Защита от записи](writeprotection) : указывает параметры защиты от записи для книги.
 - [XmlDataBinding](xmldatabinding) : представляет информацию о привязке данных XML.
 - [XmlMap](xmlmap) : представляет информацию карты в формате XML.
-- [ЯчейкиОбъектОператеТаскПараметр](cellsobjectoperatetaskparameter)  :   
-- [Конвертироватьтаскпараметр](converttaskparameter)  :   
-- [Конвертироватьрабочий листтаскпараметр](convertworksheettaskparameter)  :   
-- [источник файла](filesource)  :   
-- [ТипФайлИсточника](filesourcetype)  :   
-- [Импортдататаскпараметр](importdatataskparameter)  :   
-- [Назначение результата](resultdestination)  :   
-- [ResultDestinationType](resultdestinationtype)  :   
-- [Источник результата](resultsource)  :   
-- [СохранитьFilesToCloudResult](savefilestocloudresult)  :   
-- [СохранитьResultTaskParameter](saveresulttaskparameter)  :   
-- [СмартМаркерТаскПараметр](smartmarkertaskparameter)  :   
-- [Параметр SplitWorkbookTaskParameter](splitworkbooktaskparameter)  :   
-- [Таскдата](taskdata)  :   
-- [Описание задания](taskdescription)  :   
-- [Параметр задачи](taskparameter)  :   
-- [Параметр Таскрезультат](taskresultparameter)  :   
-- [Таскрунрезультат](taskrunresult)  :   
-- [Тип задачи](tasktype)  :   
-- [ДиаграммаДействоватьПараметр](chartoperateparameter)  :   
-- [ListObjectOperateParameter](listobjectoperateparameter)  :   
-- [ОператеОбъект](operateobject)  :   
-- [ОператеОбъектПозиция](operateobjectposition)  :   
-- [ОператеОбъектТип](operateobjecttype)  :   
-- [Оператепараметр](operateparameter)  :   
-- [Оператетип](operatetype)  :   
-- [PageBreakOperateParameter](pagebreakoperateparameter)  :   
-- [PageSetupOperateParameter](pagesetupoperateparameter)  :   
-- [Сводная таблицаOperateParameter](pivottableoperateparameter)  :   
-- [ФормаОператеПараметр](shapeoperateparameter)  :   
-- [Рабочая книгаOperateParameter](workbookoperateparameter)  :   
-- [Настройки рабочей книгиOperateParameter](workbooksettingsoperateparameter)  :   
-- [Рабочий листOperateParameter](worksheetoperateparameter)  :   
-- [СписокКолонка](listcolumn)  :   
-- [СписокОбъект](listobject)  :   
-- [Список объектов](listobjects)  :   
+- [ЯчейкиОбъектОператеТаскПараметр](cellsobjectoperatetaskparameter) : Представляет объект ячейки, управляющий параметром задачи.
+- [Конвертироватьтаскпараметр](converttaskparameter) : представляет параметр задачи преобразования.
+- [Конвертироватьрабочий листтаскпараметр](convertworksheettaskparameter) : представляет параметр задачи преобразования листа.
+- [Импортдататаскпараметр](importdatataskparameter) : представляет параметр задачи импорта данных.
+- [Назначение результата](resultdestination) : Обозначает место назначения результата.
+- [ResultDestinationType](resultdestinationtype) : представляет тип назначения результата.
+- [Источник результата](resultsource) : представляет тип источника результатов.
+- [СохранитьFilesToCloudResult](savefilestocloudresult) : представляет результат сохранения файла в облаке.
+- [СохранитьResultTaskParameter](saveresulttaskparameter) : представляет параметр задачи сохранения результата.
+- [СмартМаркерТаскПараметр](smartmarkertaskparameter) : представляет параметр задачи интеллектуального маркера.
+- [Параметр SplitWorkbookTaskParameter](splitworkbooktaskparameter) : представляет параметр задачи разделенной книги.
+- [Таскдата](taskdata) : представляет данные задачи.
+- [Описание задания](taskdescription) : представляет описание задачи.
+- [Параметр задачи](taskparameter) : представляет параметр задачи.
+- [Параметр Таскрезультат](taskresultparameter) представляет параметр результата задачи.
+- [Таскрунрезультат](taskrunresult) : представляет результат выполнения задачи.
+- [Тип задачи](tasktype) : представляет тип задачи.
+- [ДиаграммаДействоватьПараметр](chartoperateparameter) : представляет параметр работы диаграммы.
+- [ListObjectOperateParameter](listobjectoperateparameter) : Представляет рабочий параметр объекта списка.
+- [ОператеОбъект](operateobject) : Представляет объект управления.
+- [ОператеОбъектПозиция](operateobjectposition) : Обозначает положение объекта управления.
+- [ОператеОбъектТип](operateobjecttype) : представляет тип объекта управления.
+- [Оператепараметр](operateparameter) : Представляет рабочий параметр.
+- [Оператетип](operatetype) : Обозначает тип работы.
+- [PageBreakOperateParameter](pagebreakoperateparameter) : представляет параметр работы разрыва страницы.
+- [PageSetupOperateParameter](pagesetupoperateparameter) : Представляет рабочий параметр настройки страницы.
+- [Сводная таблицаOperateParameter](pivottableoperateparameter) : представляет параметр работы сводной таблицы.
+- [ФормаОператеПараметр](shapeoperateparameter) : представляет параметр управления формой.
+- [Рабочая книгаOperateParameter](workbookoperateparameter) : представляет параметр работы книги.
+- [Настройки рабочей книгиOperateParameter](workbooksettingsoperateparameter) : представляет рабочий параметр настройки рабочей книги.
+- [Рабочий листOperateParameter](worksheetoperateparameter) : представляет рабочий параметр рабочего листа.
+- [СписокКолонка](listcolumn) : представляет столбец в таблице.
+- [СписокОбъект](listobject) представляет объект списка на листе. Объект ListObject является членом коллекции ListObjects. Коллекция ListObjects содержит все объекты списка на листе.
+- [Список объектов](listobjects) : представляет коллекцию объектов на листе.
 - [Настройки сводной глобализации](pivotglobalizationsettings) : представляет параметры глобализации для сводных таблиц.
 - [Параметры ДифСаве](difsaveoptions) : представляет параметры сохранения файла различий.
 - [Параметры сохранения документа](docxsaveoptions) : представляет параметры сохранения файла .docx.
 - [HtmlSaveOptions](htmlsaveoptions) : представляет параметры сохранения файла .html.
 - [Параметры сохранения изображения](imagesaveoptions) : представляет параметры сохранения файла изображения.
-- [JsonSaveOptions](jsonsaveoptions) представляет параметры сохранения файла .json.
+- [JsonSaveOptions](jsonsaveoptions) : представляет параметры сохранения файла .json.
 - [МаркдаунСохранитьПараметры](markdownsaveoptions) : представляет параметры сохранения файла .md.
 - [Мхтмлавеварианты](mhtmlsaveoptions) : представляет параметры сохранения файла .mhtml.
 - [Параметры сохранения](odssaveoptions) : представляет параметры сохранения файла .ods.
@@ -160,135 +163,135 @@ weight: 50
 - [PDFSaveOptions](pdfsaveoptions) : Представляет параметры сохранения файла PDF.
 - [PptxSaveOptions](pptxsaveoptions) : представляет параметры сохранения файла pptx.
 - [СохранитьПараметры](saveoptions) : представляет все параметры сохранения.
-- [ТаблицаML2003СохранитьПараметры](spreadsheetml2003saveoptions) : представляет параметры сохранения файла .xml.
+- [ТаблицаML2003СохранитьПараметры](spreadsheetml2003saveoptions) представляет параметры сохранения файла .xml.
 - [SqlScriptSaveOptions](sqlscriptsaveoptions) : представляет параметры сохранения файла .sql.
 - [SvgSaveOptions](svgsaveoptions) : представляет параметры сохранения файла .svg.
 - [TxtSaveOptions](txtsaveoptions) : представляет параметры сохранения файла .txt.
 - [Кслсбсавеварианты](xlsbsaveoptions) : представляет параметры сохранения файла .xlsb.
 - [Клссавеварианты](xlssaveoptions) : представляет параметры сохранения файла .xls.
 - [XpsSaveOptions](xpssaveoptions) : представляет параметры сохранения файла .xps.
-- [АнализироватьExcelResponse](analyzeexcelresponse)  :   
-- [ArcShapeResponse](arcshaperesponse)  :   
-- [Автофильтрответ](autofilterresponse)  :   
-- [АвтоShapeResponse](autoshaperesponse)  :   
-- [АвтофигурыОтвет](autoshapesresponse)  :   
-- [AxisResponse](axisresponse)  :   
-- [BorderResponse](borderresponse)  :   
-- [КнопкаОтвет](buttonresponse)  :   
-- [ВычислитьФормулаОтвет](calculateformularesponse)  :   
-- [CellResponse](cellresponse)  :   
-- [ЯчейкиОблакоФайлИнформацияОтвет](cellscloudfileinforesponse)  :   
-- [ЯчейкиОблакоОтвет](cellscloudresponse)  :   
-- [ЯчейкиДокументСвойстваОтвет](cellsdocumentpropertiesresponse)  :   
-- [ЯчейкиДокументСвойствоОтвет](cellsdocumentpropertyresponse)  :   
-- [КлеткиРисованиеОтвет](cellsdrawingresponse)  :   
-- [КлеткиОтвет](cellsresponse)  :   
-- [ОтветОбласти Диаграммы](chartarearesponse)  :   
-- [ChartDataTableResponse](chartdatatableresponse)  :   
-- [Чартпоинтответ](chartpointresponse)  :   
-- [ChartPointsОтвет](chartpointsresponse)  :   
-- [Ответ диаграммы](chartresponse)  :   
-- [ГрафикиОтвет](chartsresponse)  :   
-- [Чекбоксответ](checkboxresponse)  :   
-- [СтолбецОтвет](columnresponse)  :   
-- [СтолбцыОтвет](columnsresponse)  :   
-- [ComboBoxОтвет](comboboxresponse)  :   
-- [КомментарийОтвет](commentresponse)  :   
-- [КомментарийShapeResponse](commentshaperesponse)  :   
-- [КомментарииОтвет](commentsresponse)  :   
-- [Условный ответ форматирования](conditionalformattingresponse)  :   
-- [Ответ условного форматирования](conditionalformattingsresponse)  :   
-- [DataLabelsResponse](datalabelsresponse)  :   
-- [DisplayUnitLabelResponse](displayunitlabelresponse)  :   
-- [DropBarsResponse](dropbarsresponse)  :   
-- [Эррорбарответ](errorbarresponse)  :   
-- [ЗаполнитьФорматОтвет](fillformatresponse)  :   
-- [НайтиОтвет](findresponse)  :   
-- [ПолОтклик](floorresponse)  :   
-- [ФормОтвет](formresponse)  :   
-- [ФормыОтвет](formsresponse)  :   
-- [ГрупповойБоксОтвет](groupboxresponse)  :   
-- [Горизонтальный PageBreakResponse](horizontalpagebreakresponse)  :   
-- [Горизонтальный PageBreaksResponse](horizontalpagebreaksresponse)  :   
-- [ГиперссылкаОтвет](hyperlinkresponse)  :   
-- [ГиперссылкиОтвет](hyperlinksresponse)  :   
-- [МеткаОтвет](labelresponse)  :   
-- [LegendEntriesResponse](legendentriesresponse)  :   
-- [ЛегендаEntryResponse](legendentryresponse)  :   
-- [ЛегендаОтвет](legendresponse)  :   
-- [Линейный ответ](lineresponse)  :   
-- [LineShapeResponse](lineshaperesponse)  :   
-- [ListBoxResponse](listboxresponse)  :   
-- [СписокОбъектОтвет](listobjectresponse)  :   
-- [СписокОбъектовОтвет](listobjectsresponse)  :   
-- [MergedCellResponse](mergedcellresponse)  :   
-- [MergedCellsResponse](mergedcellsresponse)  :   
-- [ИмяОтвет](nameresponse)  :   
-- [ИменаОтвет](namesresponse)  :   
-- [ОлеОбъектОтклик](oleobjectresponse)  :   
-- [ОлеОбъектсОтвет](oleobjectsresponse)  :   
-- [ОвалОтвет](ovalresponse)  :   
-- [Разделы страницыОтвет](pagesectionsresponse)  :   
-- [PageSetupResponse](pagesetupresponse)  :   
-- [PictureResponse](pictureresponse)  :   
-- [КартинкиОтвет](picturesresponse)  :   
-- [PivotFieldResponse](pivotfieldresponse)  :   
-- [PivotFilterResponse](pivotfilterresponse)  :   
-- [PivotFiltersResponse](pivotfiltersresponse)  :   
-- [Ответ сводной таблицы](pivottableresponse)  :   
-- [Сводные таблицыОтвет](pivottablesresponse)  :   
-- [ГрафикОбластиОтвета](plotarearesponse)  :   
-- [РадиокнопкаОтвет](radiobuttonresponse)  :   
-- [ДиапазонОтвет](rangeresponse)  :   
-- [ДиапазоныОтвет](rangesresponse)  :   
-- [ДиапазонЗначениеОтвет](rangevalueresponse)  :   
-- [RectangleShapeResponse](rectangleshaperesponse)  :   
-- [Роуответ](rowresponse)  :   
-- [СтрокиОтвет](rowsresponse)  :   
-- [SaveFilesToCloudResultResponse](savefilestocloudresultresponse)  :   
-- [СохранитьОтвет](saveresponse)  :   
-- [ScrollBarОтвет](scrollbarresponse)  :   
-- [СерииОтвет](seriesesresponse)  :   
-- [СерияОтвет](seriesresponse)  :   
-- [ШейпОтклик](shaperesponse)  :   
-- [ФормыОтвет](shapesresponse)  :   
-- [SingleValueResponse](singlevalueresponse)  :   
-- [СпарклайнГрупповойОтвет](sparklinegroupresponse)  :   
-- [СпарклайнГруппыОтвет](sparklinegroupsresponse)  :   
-- [SpinnerResponse](spinnerresponse)  :   
-- [Сплитрезультатответ](splitresultresponse)  :   
-- [СтильОтвет](styleresponse)  :   
-- [Таскрунрезультатответ](taskrunresultresponse)  :   
-- [Текстбоксответ](textboxresponse)  :   
-- [Текститемответ](textitemresponse)  :   
-- [Текститемсответ](textitemsresponse)  :   
-- [TickLabelsResponse](ticklabelsresponse)  :   
-- [ЗаголовокОтвет](titleresponse)  :   
-- [TrendlineResponse](trendlineresponse)  :   
-- [Линии трендаОтвет](trendlinesresponse)  :   
-- [Ответ валидации](validationresponse)  :   
-- [Ответ валидации](validationsresponse)  :   
-- [Вертикальный PageBreakResponse](verticalpagebreakresponse)  :   
-- [Вертикальный PageBreaksResponse](verticalpagebreaksresponse)  :   
-- [СтеныОтвет](wallsresponse)  :   
-- [Рабочая книгаReplaceResponse](workbookreplaceresponse)  :   
-- [Ответ рабочей книги](workbookresponse)  :   
-- [Параметры рабочей книгиОтвет](workbooksettingsresponse)  :   
-- [Рабочие тетрадиОтвет](workbooksresponse)  :   
-- [Рабочий листReplaceResponse](worksheetreplaceresponse)  :   
-- [Рабочий листОтвет](worksheetresponse)  :   
-- [Рабочие листыОтвет](worksheetsresponse)  :   
+- [ArcShapeResponse](arcshaperesponse) : представляет ответ ArcShape.
+- [Автофильтрответ](autofilterresponse) : представляет ответ автофильтра.
+- [АвтоShapeResponse](autoshaperesponse) : представляет ответ автофигуры.
+- [АвтофигурыОтвет](autoshapesresponse) : представляет ответ автофигуры.
+- [AxisResponse](axisresponse) : представляет реакцию оси.
+- [BorderResponse](borderresponse) : представляет ответ границы.
+- [КнопкаОтвет](buttonresponse) : представляет реакцию кнопки.
+- [ВычислитьФормулаОтвет](calculateformularesponse) : представляет ответ CalculateFormula.
+- [CellResponse](cellresponse) : представляет ответ ячейки.
+- [ЯчейкиОблакоФайлИнформацияОтвет](cellscloudfileinforesponse) : представляет ответ CellsCloudFileInfo.
+- [ЯчейкиОблакоОтвет](cellscloudresponse) : представляет ответ CellsCloud.
+- [ЯчейкиДокументСвойстваОтвет](cellsdocumentpropertiesresponse) : представляет ответ CellsDocumentProperties.
+- [ЯчейкиДокументСвойствоОтвет](cellsdocumentpropertyresponse) представляет ответ CellsDocumentProperty.
+- [КлеткиРисованиеОтвет](cellsdrawingresponse) : представляет ответ CellsDrawing.
+- [КлеткиОтвет](cellsresponse) : представляет ответ Cells.
+- [ОтветОбласти Диаграммы](chartarearesponse) : представляет ответ ChartArea.
+- [ChartDataTableResponse](chartdatatableresponse) : представляет ответ ChartDataTable.
+- [Чартпоинтответ](chartpointresponse) : представляет ответ ChartPoint.
+- [ChartPointsОтвет](chartpointsresponse) : представляет ответ ChartPoints.
+- [Ответ диаграммы](chartresponse) : представляет ответ диаграммы.
+- [ГрафикиОтвет](chartsresponse) : представляет ответ диаграммы.
+- [Чекбоксответ](checkboxresponse) : представляет ответ флажка.
+- [СтолбецОтвет](columnresponse) : представляет ответ столбца.
+- [СтолбцыОтвет](columnsresponse) : представляет ответ столбцов.
+- [ComboBoxОтвет](comboboxresponse) : представляет ответ ComboBox.
+- [КомментарийОтвет](commentresponse) : представляет ответ на комментарий.
+- [КомментарийShapeResponse](commentshaperesponse) : представляет ответ CommentShape.
+- [КомментарииОтвет](commentsresponse) : представляет ответ на комментарий.
+- [Условный ответ форматирования](conditionalformattingresponse) : представляет ответ условного форматирования.
+- [Ответ условного форматирования](conditionalformattingsresponse) : представляет ответ условного форматирования.
+- [DataLabelsResponse](datalabelsresponse) : представляет ответ DataLabels.
+- [DisplayUnitLabelResponse](displayunitlabelresponse) : представляет ответ DisplayUnitLabel.
+- [DropBarsResponse](dropbarsresponse) : представляет ответ DropBars.
+- [Эррорбарответ](errorbarresponse) представляет ответ ErrorBar.
+- [ЗаполнитьФорматОтвет](fillformatresponse) : представляет ответ FillFormat.
+- [НайтиОтвет](findresponse) : представляет поиск ответа.
+- [ПолОтклик](floorresponse) : представляет реакцию этажа.
+- [ФормОтвет](formresponse) : представляет ответ формы.
+- [ФормыОтвет](formsresponse) : представляет ответ формы.
+- [ГрупповойБоксОтвет](groupboxresponse) : представляет ответ GroupBox.
+- [Горизонтальный PageBreakResponse](horizontalpagebreakresponse) : представляет ответ HorizontalPageBreak.
+- [Горизонтальный PageBreaksResponse](horizontalpagebreaksresponse) : представляет ответ HorizontalPageBreaks.
+- [ГиперссылкаОтвет](hyperlinkresponse) : представляет ответ гиперссылки.
+- [ГиперссылкиОтвет](hyperlinksresponse) : представляет ответ гиперссылки.
+- [МеткаОтвет](labelresponse) : представляет ответ метки.
+- [LegendEntriesResponse](legendentriesresponse) : представляет ответ LegendEntries.
+- [ЛегендаEntryResponse](legendentryresponse) : представляет ответ LegendEntry.
+- [ЛегендаОтвет](legendresponse) : представляет ответ легенды.
+- [Линейный ответ](lineresponse) : представляет линейный ответ.
+- [LineShapeResponse](lineshaperesponse) : представляет ответ LineShape.
+- [ListBoxResponse](listboxresponse) : представляет ответ ListBox.
+- [СписокОбъектОтвет](listobjectresponse) : представляет ответ ListObject.
+- [СписокОбъектовОтвет](listobjectsresponse) : представляет ответ ListObjects.
+- [MergedCellResponse](mergedcellresponse) : представляет ответ MergedCell.
+- [MergedCellsResponse](mergedcellsresponse) представляет ответ MergedCells.
+- [ИмяОтвет](nameresponse) : представляет ответ имени.
+- [ИменаОтвет](namesresponse) : представляет ответ Names.
+- [ОлеОбъектОтклик](oleobjectresponse) : представляет ответ OleObject.
+- [ОлеОбъектсОтвет](oleobjectsresponse) : представляет ответ OleObjects.
+- [ОвалОтвет](ovalresponse) : представляет овальный ответ.
+- [Разделы страницыОтвет](pagesectionsresponse) : представляет ответ PageSections.
+- [PageSetupResponse](pagesetupresponse) : представляет ответ PageSetup.
+- [PictureResponse](pictureresponse) : представляет реакцию изображения.
+- [КартинкиОтвет](picturesresponse) : представляет ответ изображения.
+- [PivotFieldResponse](pivotfieldresponse) : представляет ответ PivotField.
+- [PivotFilterResponse](pivotfilterresponse) : представляет ответ PivotFilter.
+- [PivotFiltersResponse](pivotfiltersresponse) : представляет ответ PivotFilters.
+- [Ответ сводной таблицы](pivottableresponse) : представляет ответ сводной таблицы.
+- [Сводные таблицыОтвет](pivottablesresponse) : представляет ответ сводных таблиц.
+- [ГрафикОбластиОтвета](plotarearesponse) : представляет ответ PlotArea.
+- [РадиокнопкаОтвет](radiobuttonresponse) : представляет ответ RadioButton.
+- [ДиапазонОтвет](rangeresponse) : представляет диапазон отклика.
+- [ДиапазоныОтвет](rangesresponse) : представляет отклик диапазонов.
+- [ДиапазонЗначениеОтвет](rangevalueresponse) : представляет ответ RangeValue.
+- [RectangleShapeResponse](rectangleshaperesponse) : представляет ответ RectangleShape.
+- [Роуответ](rowresponse) : представляет ответ строки.
+- [СтрокиОтвет](rowsresponse) представляет ответ строк.
+- [SaveFilesToCloudResultResponse](savefilestocloudresultresponse) : представляет ответ SaveFilesToCloudResult.
+- [СохранитьОтвет](saveresponse) : представляет ответ сохранения.
+- [ScrollBarОтвет](scrollbarresponse) : представляет ответ полосы прокрутки.
+- [СерииОтвет](seriesesresponse) : представляет ответ серии.
+- [СерияОтвет](seriesresponse) : представляет ответ серии.
+- [ШейпОтклик](shaperesponse) : представляет ответ формы.
+- [ФормыОтвет](shapesresponse) : представляет ответ фигуры.
+- [SingleValueResponse](singlevalueresponse) : представляет ответ SingleValue.
+- [СпарклайнГрупповойОтвет](sparklinegroupresponse) : представляет ответ SparklineGroup.
+- [СпарклайнГруппыОтвет](sparklinegroupsresponse) : представляет ответ SparklineGroups.
+- [SpinnerResponse](spinnerresponse) : представляет ответ счетчика.
+- [Сплитрезультатответ](splitresultresponse) : представляет ответ SplitResult.
+- [СтильОтвет](styleresponse) : представляет реакцию стиля.
+- [Таскрунрезультатответ](taskrunresultresponse) : представляет ответ TaskRunResult.
+- [Текстбоксответ](textboxresponse) : представляет ответ TextBox.
+- [Текститемответ](textitemresponse) : представляет ответ TextItem.
+- [Текститемсответ](textitemsresponse) : представляет ответ TextItems.
+- [TickLabelsResponse](ticklabelsresponse) : представляет ответ TickLabels.
+- [ЗаголовокОтвет](titleresponse) : представляет ответ заголовка.
+- [TrendlineResponse](trendlineresponse) : представляет реакцию линии тренда.
+- [Линии трендаОтвет](trendlinesresponse) представляет реакцию линий тренда.
+- [Ответ валидации](validationresponse) : представляет ответ проверки.
+- [Ответ валидации](validationsresponse) : представляет ответ проверки.
+- [Вертикальный PageBreakResponse](verticalpagebreakresponse) : представляет ответ вертикального разрыва страницы.
+- [Вертикальный PageBreaksResponse](verticalpagebreaksresponse) : представляет ответ UpperPageBreaks.
+- [СтеныОтвет](wallsresponse) : представляет реакцию стен.
+- [Рабочая книгаReplaceResponse](workbookreplaceresponse) : представляет ответ WorkbookReplace.
+- [Ответ рабочей книги](workbookresponse) : представляет ответ книги.
+- [Параметры рабочей книгиОтвет](workbooksettingsresponse) : представляет ответ WorkbookSettings.
+- [Рабочие тетрадиОтвет](workbooksresponse) : представляет ответ рабочих книг.
+- [Рабочий листReplaceResponse](worksheetreplaceresponse) : представляет ответ WorksheetReplace.
+- [Рабочий листОтвет](worksheetresponse) : представляет ответ рабочего листа.
+- [Рабочие листыОтвет](worksheetsresponse) : представляет ответ рабочих листов.
 - [Анализ ExcelRequest](analyzeexcelrequest)  :   
 - [Пакетное преобразование запроса](batchconvertrequest) : указывает на запрос файла пакетного преобразования.
 - [Пакетный запрос блокировки](batchlockrequest) : Указывает на запрос файла пакетной блокировки.
 - [Пакетный запрос защиты](batchprotectrequest) : указывает на запрос файла пакетной защиты.
 - [Пакетный запрос разделения](batchsplitrequest)  :   
 - [ЦветФильтрЗапрос](colorfilterrequest) : Указывает на запрос цветового фильтра.
-- [КонвертироватьПараметр](convertparameter) : указывает параметр преобразования
+- [КонвертироватьПараметр](convertparameter) указывает параметр преобразования
 - [Создать запрос сводной таблицы](createpivottablerequest) : указывает на запрос создания сводной таблицы.
 - [Запрос очистки данных](datacleansingrequest) : запрос на очистку данных для файла электронной таблицы.
 - [Запрос дедупликации данных](datadeduplicationrequest)  :   
 - [запрос заполнения данных](datafillrequest)  :   
+- [Запрос Трансформации Данных](datatransformationrequest)  :   
 - [Удалитьинкомплертровсрекуест](deleteincompleterowsrequest)  :   
 - [ИмпортJsonRequest](importjsonrequest) : указывает запрос на импорт данных XML.
 - [ИмпортXMLЗапрос](importxmlrequest) : указывает запрос на импорт данных XML.
@@ -297,27 +300,37 @@ weight: 50
 - [Поле запроса сводной таблицы](pivottablefieldrequest) : Указывает запрос поля сводной таблицы.
 - [Защитить рабочую книгуЗапрос](protectworkbookrequest) : указывает на запрос защиты книги.
 - [ДиапазонКопироватьЗапрос](rangecopyrequest) : Указывает запрос на копирование диапазона.
-- [RangeSetOutlineBorderRequest](rangesetoutlineborderrequest) Указывает на запрос границы набора диапазона.
+- [RangeSetOutlineBorderRequest](rangesetoutlineborderrequest) : Указывает на запрос границы набора диапазона.
 - [RangeSetStyleRequest](rangesetstylerequest) : Указывает на запрос стиля набора диапазона.
-- [RangeSortRequest](rangesortrequest) : указывает запрос на сортировку диапазона.
+- [RangeSortRequest](rangesortrequest) указывает запрос на сортировку диапазона.
 - [ТаблицаTotalRequest](tabletotalrequest) : Указывает общий запрос таблицы.
 - [ТекстВодаМаркерЗапрос](textwatermarkerrequest) : Указывает на текстовый запрос водного маркера.
 - [Запрос на шифрование книги](workbookencryptionrequest) : используется запросами на шифрование/дешифрование книги.
 - [Запрос на защиту книги](workbookprotectionrequest) : используется запросами защиты книги.
 - [Рабочий листЗапрос на перемещение](worksheetmovingrequest) : используется запросами на перемещение книги.
-- [Параметры изображения или печати](imageorprintoptions)  :   
-- [РендерингШрифт](renderingfont)  :   
-- [РендерингВодяной Знак](renderingwatermark)  :   
-- [Сводное поле](pivotfield)  :   
+- [Параметры изображения или печати](imageorprintoptions) : позволяет указать параметры при рендеринге листа в изображения, печати листа или рендеринге диаграммы в изображение.
+- [РендерингШрифт](renderingfont) : Шрифт для рендеринга.
+- [РендерингВодяной Знак](renderingwatermark) : Водяной знак для рендеринга.
+- [Тип соединения](jointype)  :   
+- [Загрузить данные](loaddata) : Загрузка информации о данных.
+- [ЗагрузитьTo](loadto)  :   
+- [Объединение запросов](mergequeries) : представляет запросы на слияние.
+- [Сводная колонка](pivotcolumn)  :   
+- [ЗапросDataSource](querydatasource)  :   
+- [ЗапросDataSourceDataType](querydatasourcedatatype)  :   
+- [Таблица запросов](querytable) : представляет информацию QueryTable.
+- [Трансформация](transformation)  :   
+- [UnpivotColumn](unpivotcolumn)  :   
+- [Сводное поле](pivotfield) представляет поле в отчете сводной таблицы.
 - [PivotFilter](pivotfilter) : представляет PivotFilter в коллекции PivotFilter.
-- [PivotItem](pivotitem)  :   
-- [Сводная таблица](pivottable)  :   
-- [Сводные таблицы](pivottables)  :   
+- [PivotItem](pivotitem) : представляет элемент в отчете PivotField.
+- [Сводная таблица](pivottable) : сводное описание сводной таблицы.
+- [Сводные таблицы](pivottables) : представляет коллекцию всех объектов сводной таблицы на указанном листе.
+- [CellValue](cellvalue) : представляет значение ячейки и соответствующий тип.
 - [CustomParserConfig](customparserconfig)  :   
 - [Import2DimensionDoubleArrayOption](import2dimensiondoublearrayoption)  :   
 - [Import2DimensionIntArrayOption](import2dimensionintarrayoption)  :   
 - [Import2DimensionStringArrayOption](import2dimensionstringarrayoption)  :   
-- [CellValue](cellvalue)  :   
 - [Импортбатчдатавариант](importbatchdataoption)  :   
 - [Импорт CSVDataOption](importcsvdataoption)  :   
 - [Импортдататипе](importdatatype)  :   
@@ -327,87 +340,84 @@ weight: 50
 - [Импорткартуревариант](importpictureoption)  :   
 - [ИмпортПозиция](importposition)  :   
 - [Импортстрингаррайопцион](importstringarrayoption)  :   
-- [ArcShape](arcshape)  :   
-- [Область](area)  :   
-- [Автофигура](autoshape)  :   
+- [ArcShape](arcshape) : представляет форму дуги.
+- [Область](area) : инкапсулирует объект, представляющий формат области.
+- [Автофигура](autoshape) : представляет автофигуру.
 - [Автофигуры](autoshapes)  :   
-- [Кнопка](button)  :   
-- [КлеткиРисование](cellsdrawing)  :   
-- [Флажок](checkbox)  :   
-- [Поле со списком](combobox)  :   
-- [КомментарийФорма](commentshape)  :   
-- [Формат заполнения](fillformat)  :   
+- [Кнопка](button) : Представляет элемент управления «Формы»: Кнопка
+- [КлеткиРисование](cellsdrawing) : представляет автофигуру и объект рисования.
+- [Флажок](checkbox) : представляет объект флажка на листе.
+- [Поле со списком](combobox) : представляет форму управления ComboBox.
+- [КомментарийФорма](commentshape) : представляет форму комментария.
+- [Формат заполнения](fillformat) : инкапсулирует объект, который представляет форматирование заливки фигуры.
 - [Форма](form)  :   
 - [Формы](forms)  :   
-- [Градиентная заливка](gradientfill)  :   
+- [Градиентная заливка](gradientfill) представляет градиентную заливку.
 - [ГрадиентЗаполнитьСтоп](gradientfillstop)  :   
-- [Групповой ящик](groupbox)  :   
-- [Групповая форма](groupshape)  :   
-- [Этикетка](label)  :   
+- [Групповой ящик](groupbox) : инкапсулирует объект, представляющий групповой блок в электронной таблице.
+- [Групповая форма](groupshape) : представляет фигуру группы, содержащую отдельные фигуры.
+- [Этикетка](label) : инкапсулирует объект, представляющий метку в электронной таблице.
 - [Линия](line) : инкапсулирует объект, представляющий формат строки.
-- [Формат линии](lineformat)  :   
-- [ЛинияФорма](lineshape)  :   
-- [СписокСписок](listbox)  :   
-- [ОлеОбъект](oleobject)  :   
-- [ОлеОбъекты](oleobjects)  :   
-- [Овал](oval)  :   
-- [УзорЗаливка](patternfill)  :   
-- [ПикФорматОпция](picformatoption)  :   
-- [Картина](picture)  :   
-- [Картинки](pictures)  :   
-- [Переключатель](radiobutton)  :   
-- [ПрямоугольникФорма](rectangleshape)  :   
-- [Полоса прокрутки](scrollbar)  :   
-- [ShadowEffect](shadoweffect)  :   
-- [Форма](shape)  :   
-- [Формы](shapes)  :   
-- [СолидФилл](solidfill)  :   
-- [Спиннер](spinner)  :   
-- [Текстовое окно](textbox)  :   
-- [ТекстураЗаливка](texturefill)  :   
-- [ТайлеПикОпция](tilepicoption)  :   
+- [Формат линии](lineformat) : представляет все настройки линии.
+- [ЛинияФорма](lineshape) : представляет форму линии.
+- [СписокСписок](listbox) : Представляет объект списка.
+- [ОлеОбъект](oleobject) : представляет OleObject на листе.
+- [ОлеОбъекты](oleobjects) : представляет внедренные объекты OLE.
+- [Овал](oval) : представляет овальную форму.
+- [УзорЗаливка](patternfill) : инкапсулирует объект, представляющий формат заливки узором.
+- [ПикФорматОпция](picformatoption) : представляет параметр формата изображения.
+- [Картина](picture) : инкапсулирует объект, представляющий одно изображение в электронной таблице.
+- [Картинки](pictures) : инкапсулирует коллекцию объектов.
+- [Переключатель](radiobutton) : представляет переключатель.
+- [ПрямоугольникФорма](rectangleshape) : представляет прямоугольную форму.
+- [Полоса прокрутки](scrollbar) представляет объект полосы прокрутки.
+- [ShadowEffect](shadoweffect) : этот класс определяет эффект тени элемента или фигуры диаграммы.
+- [Форма](shape) : представляет объект msodrawing.
+- [Формы](shapes) : представляет всю фигуру на листе/диаграмме.
+- [СолидФилл](solidfill) : инкапсулирует объект, представляющий формат сплошной заливки.
+- [Спиннер](spinner) : Представляет элемент управления Forms: Spinner.
+- [Текстовое окно](textbox) : инкапсулирует объект, представляющий текстовое поле в электронной таблице.
+- [ТекстураЗаливка](texturefill) : инкапсулирует объект, представляющий формат заливки текстурой.
+- [ТайлеПикОпция](tilepicoption) : представляет мозаичное изображение в виде текстуры.
 - [Цифровая подпись](digitalsignature) : Подпись в файле.
-- [Ось](axis)  :   
-- [Диаграмма](chart)  :   
-- [Область диаграммы](chartarea)  :   
-- [Таблица данных диаграммы](chartdatatable)  :   
-- [ДиаграммаКадр](chartframe)  :   
+- [Ось](axis) : инкапсулирует объект, представляющий ось диаграммы.
+- [Диаграмма](chart) : инкапсулирует объект, представляющий одну диаграмму Excel.
+- [Область диаграммы](chartarea) : инкапсулирует объект, представляющий область диаграммы на листе.
+- [Таблица данных диаграммы](chartdatatable) представляет таблицу данных диаграммы.
+- [ДиаграммаКадр](chartframe) : инкапсулирует объект, представляющий объект рамки на диаграмме.
 - [Настройки глобализации диаграммы](chartglobalizationsettings) : представляет настройки глобализации для диаграммы.
-- [Чартпойнт](chartpoint)  :   
-- [Чарт-очки](chartpoints)  :   
-- [Графики](charts)  :   
+- [Чартпойнт](chartpoint) : представляет одну точку в ряду на диаграмме.
+- [Чарт-очки](chartpoints) : представляет коллекцию, содержащую все точки одной серии.
+- [Графики](charts) : инкапсулирует коллекцию объектов.
 - [Форма Диаграммы](chartshape) : Объект формы диаграммы
-- [Метки данных](datalabels)  :   
-- [Метка DisplayUnitLabel](displayunitlabel)  :   
-- [Дропбары](dropbars)  :   
-- [ErrorBar](errorbar)  :   
-- [Пол](floor)  :   
-- [Легенда](legend)  :   
+- [Метки данных](datalabels) : инкапсулирует коллекцию всех объектов DataLabel для указанной серии.
+- [Метка DisplayUnitLabel](displayunitlabel) : Обозначает метку устройства отображения.
+- [Дропбары](dropbars) : представляет полосы вверх/вниз на графике.
+- [ErrorBar](errorbar) : представляет полосу ошибок ряда данных.
+- [Пол](floor) : инкапсулирует объект, представляющий нижнюю часть трехмерной диаграммы.
+- [Легенда](legend) : инкапсулирует объект, представляющий легенду диаграммы.
 - [ЛегендаЗаписи](legendentries)  :   
-- [ЛегендаВступление](legendentry)  :   
-- [Маркер](marker)  :   
-- [Площадь участка](plotarea)  :   
-- [Ряд](series)  :   
+- [ЛегендаВступление](legendentry) : представляет запись легенды в легенде диаграммы.
+- [Маркер](marker) : представляет маркер на линейной, точечной или лепестковой диаграмме.
+- [Площадь участка](plotarea) инкапсулирует объект, представляющий область графика на диаграмме.
+- [Ряд](series) : инкапсулирует объект, представляющий один ряд данных на диаграмме.
 - [СерияПредметы](seriesitems)  :   
 - [Спарклайн](sparkline) : спарклайн представляет собой небольшую диаграмму или рисунок в ячейке листа, который обеспечивает визуальное представление данных.
-- [Группа Спарклайн](sparklinegroup)  :   
+- [Группа Спарклайн](sparklinegroup) : организован в группу спарклайнов. SparklineGroup содержит переменное количество элементов спарклайнов. Группа спарклайнов определяет тип, настройки отображения и настройки осей спарклайнов.
 - [Группы спарклайнов](sparklinegroups) : инкапсулирует коллекцию объектов Aspose.Cells.Charts.SparklineGroup.
-- [TickLabels](ticklabels)  :   
-- [Заголовок](title)  :   
-- [Линия тренда](trendline)  :   
-- [Линии тренда](trendlines)  :   
-- [Стены](walls)  :   
+- [TickLabels](ticklabels) : представляет метки делений, связанные с делениями на оси диаграммы.
+- [Заголовок](title) : инкапсулирует объект, представляющий заголовок диаграммы или оси.
+- [Линия тренда](trendline) : представляет линию тренда на диаграмме.
+- [Линии тренда](trendlines) : представляет коллекцию всех объектов для указанного ряда данных.
+- [Стены](walls) инкапсулирует объект, представляющий стены трехмерной диаграммы.
 - [ColumnDataExceptionDescription](columndataexceptiondescription)  :   
 - [ТекстКатегориТип](textcategorytype)  :   
-- [Описание анализируемого столбца](analyzedcolumndescription) Как использовать свойства каждого столбца: в настоящее время разделены на временную шкалу, линию продуктов, строку числовой статистики. Как представить продукт, единый план. Как решить проблему полной цифровой обработки? Полный текст Как решить? Два столбца: текст, номер — самый простой. Три столбца: текст, текст, номер. Текст, число, число --- дата, дата; Дата Числовая; Числовой Цифровой А как насчет четырех столбцов, пяти столбцов?
-- [АнализируемыйРезультат](analyzedresult)  :   
-- [Анализируемая таблицаОписание](analyzedtabledescription)  :   
-- [Тип источника даты](datesourcetype)  :   
-- [Предложенный тип вывода](suggestedoutputtype)  :   
-- [АнализироватьПредложение](analyzesuggestion)  :   
-- [Откройте для себя диаграмму](discoverchart)  :   
-- [Откройте для себя сводную таблицу](discoverpivottable)  :   
-- [ExcelDataStatistics](exceldatastatistics)  :   
-- [Рабочий листДанныеСтатистика](worksheetdatastatistics)  :   
+- [Описание анализируемого столбца](analyzedcolumndescription) : представляет описание анализируемого столбца.
+- [АнализируемыйРезультат](analyzedresult) : Представляет результаты анализа данных.
+- [Анализируемая таблицаОписание](analyzedtabledescription) : представляет описание анализируемой таблицы.
+- [Откройте для себя диаграмму](discoverchart) : представляет диаграмму, созданную на основе анализа данных таблицы.
+- [Откройте для себя сводную таблицу](discoverpivottable) : представляет сводную таблицу, которая создается на основе анализа данных таблицы.
+- [ExcelDataStatistics](exceldatastatistics) : представляет статистику данных Excel.
+- [Рабочий листДанныеСтатистика](worksheetdatastatistics) : представляет статистику данных листа.
 - [Ошибка](error) : Ошибка
 - [Подробности об ошибке](errordetails) : Подробности ошибки

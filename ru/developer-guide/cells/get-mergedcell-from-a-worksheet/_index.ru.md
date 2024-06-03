@@ -3,6 +3,7 @@ title: Получить MergedCell из рабочего листа
 type: docs
 url: /ru/get-mergedcell-from-a-worksheet/
 weight: 60
+kwords: Excel, Office Cloud, REST API, электронная таблица, PDF, CSV, Json, Markdwon, получить MergedCell из рабочего листа
 ---
 Этот REST API указывает на получение `merged cell` в файле Excel.
 

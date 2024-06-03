@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/getworksheetvalidation/
 description: Получить подтверждение по его индексу на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, GetWorksheetValidation
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetValidation" >}}

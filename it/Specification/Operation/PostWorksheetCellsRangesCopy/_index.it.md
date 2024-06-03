@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/postworksheetcellsrangescopy/
 description: Copia il contenuto dall'intervallo di origine all'intervallo di destinazione nel foglio di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PostWorksheetCellsRangesCopy
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangesCopy" >}}

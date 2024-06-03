@@ -1,27 +1,28 @@
 ﻿---
-title: PostWorksheetHyperlin
+title: BeitragArbeitsblattHyperlin
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postworksheethyperlink/
-description: Aktualisieren Sie den Hyperlink nach Index im Arbeitsblatt
+description: Hyperlink nach Index im Arbeitsblatt aktualisieren
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostWorksheetHyperlink
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetHyperlink" >}}
 {{< blocks/products/cells/docs-title titlemsg="Update hyperlink by index in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/hyperlinks/{hyperlinkIndex},POST,Hyperlink nach Index im Arbeitsblatt aktualisieren.,<a href=\'https://apireference.aspose.cloud/cells/#/Hypelinks /PostWorksheetHyperlink\'>PostWorksheetHyperlink</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/hyperlinks/{hyperlinkIndex},POST,Hyperlink nach Index im Arbeitsblatt aktualisieren.,<a href=\'https://apireference.aspose.cloud/cells/#/Hypelinks/PostWorksheetHyperlink\'>PostWorksheetHyperlink</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="hyperlinkIndex,integer,Der Index des Hyperlinks." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="hyperlinkIndex,Integer,Der Index des Hyperlinks." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Parametername, Typ, Beschreibung" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="Hyperlink, Klasse: Hyperlink, Hyperlink-Objekt" >}} 

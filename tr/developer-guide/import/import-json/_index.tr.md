@@ -7,6 +7,7 @@ url: /tr/import/json/
 keywords: Import Json data into Excel
 description: Aspose.Cells Cloud REST API, dize dizisi verilerinin Excel dosyalarına aktarılmasını destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 40
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Json verilerini Excel'e aktar
 ---
 Bu REST API `import json data`'i Excel çalışma sayfasına dönüştürün.
 
@@ -29,10 +30,10 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/importjson
 | isim| sicim| Çalışma kitabı adı|
 | importJsonRequest| sınıf| Json isteğini içe aktarın.|
 | şifre| sicim| Çalışma kitabının şifresi.|
-| dosya| sicim|Orijinal çalışma kitabı klasörü.|
+| dosya| sicim| Orijinal çalışma kitabı klasörü.|
 | depolamaAdı| sicim| Depolama adı.|
 | çıkış yolu| sicim| Çıkış dosyası yolu.|
-| outStorageName| sicim| Çıkış dosyası için depolama adı.|
+| outStorageName| sicim|Çıkış dosyası için depolama adı.|
 | checkExcelKısıtlaması| sicim| Excel kısıtlamasını kontrol edin.|
 
 

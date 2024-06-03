@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/deleteworksheetcellsrange/
 description: Eliminar un rango de celdas y cambiar las celdas existentes según la opción de cambio especificada
+kwords: Excel, Office, hoja de cálculo, nube REST API, DeleteWorksheetCellsRange
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetCellsRange" >}}

@@ -1,26 +1,27 @@
 ﻿---
-title: PostWorksheetTextSearc
+title: Beitrags-ArbeitsblattTextSuche
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postworksheettextsearch/
-description: Suchen Sie im Arbeitsblatt nach Text
+description: Suchen nach Text im Arbeitsblatt
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostWorksheetTextSearch
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetTextSearch" >}}
 {{< blocks/products/cells/docs-title titlemsg="Search for text in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/findText,POST,Suchen Sie nach Text im Arbeitsblatt.,<a href=\'https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetTextSearch\'>PostWorksheetTextSearch </a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/findText,POST,Suche nach Text im Arbeitsblatt.,<a href=\'https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetTextSearch\'>PostWorksheetTextSearch</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="text,string,Zu suchender Text." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Original-Arbeitsmappenordner." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Text, Zeichenfolge, Zu suchender Text." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Ursprünglicher Arbeitsmappenordner." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Speichername." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 

@@ -3,7 +3,8 @@ title: ObtenerWorkbookDefaultStyl
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/getworkbookdefaultstyle/
-description: Recuperar la descripción del estilo predeterminado para el libro de trabajo.
+description: Recuperar la descripción del estilo predeterminado para el libro.
+kwords: Excel, Office, hoja de cálculo, nube REST API, GetWorkbookDefaultStyle
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorkbookDefaultStyle" >}}

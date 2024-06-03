@@ -8,6 +8,7 @@ aliases: [/import-data-in-excel-worksheet-without-using-storage/]
 keywords: REST API,  spreadsheets, excel, Import
 description: Cells.Облако API для импорта файлов Excel
 weight: 10
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, импорт данных без использования хранилища
 ---
 Excel импорт данных — сложный процесс. Многие факторы усложняют процесс экспорта, и поэтому их следует учитывать в процессе экспорта. Возможность импортировать в файл различные форматы и типы данных с точным профессиональным качеством — главная особенность Aspose.Cells Cloud.
 
@@ -26,7 +27,7 @@ POST https://api.aspose.cloud/v3.0/cells/import
 | Имя параметра| Тип| Путь/строка запроса/HTTPBody|Описание|
 |:- |:- |:- |:- |
 | файл| файл| данные формы| Файл для загрузки|
-| ИмпортОпция| Параметры импорта|HTTPBody| IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/Picture|
+| ИмпортОпция| Параметры импорта| HTTPBody| IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/Picture|
 
 **Параметры опций импорта данных** описаны в[ссылочная ссылка](/cells/ru/import/#import-data-option-parameter).
 

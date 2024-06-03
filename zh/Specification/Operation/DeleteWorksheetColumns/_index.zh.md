@@ -4,26 +4,27 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/deleteworksheetcolumns/
 description: 删除工作表中的工作表列
+kwords: Excel，Office，电子表格，云 REST API，DeleteWorksheetColumns
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetColumns" >}}
 {{< blocks/products/cells/docs-title titlemsg="Delete worksheet columns in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells/columns/{columnIndex},DELETE,删除工作表中的工作表列。,<a href=\'https://apireference.aspose.cloud/cells/#/ Cells/DeleteWorksheetColumns\'>删除WorksheetColumns</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells/columns/{columnIndex},DELETE,删除工作表中的工作表列。,<a href=\'https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetColumns\'>DeleteWorksheetColumns</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="参数名称、类型、描述" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="名称，字符串，文件名。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,字符串,工作表名称。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="columnIndex,整数,列索引。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="name，string，文件名。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName，string，工作表名称。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="columnIndex，整数，列索引。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="columns,整数,列数。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="updateReference,boolean,指示是否更新其他工作表中的引用。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="columns，整数，列数。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="updateReference，boolean，指示是否更新其他工作表中的引用。" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="文件夹，字符串，文件所在的文件夹。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,文件所在的存储名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName，string，文件所在的存储名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/CellsController/DeleteWorksheetColumns\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

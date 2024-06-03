@@ -8,6 +8,7 @@ aliases: [/convert-excel-file-to-tiff-in-cloud/]
 keywords: Convert excel files to tiff files
 description: Aspose.Cells Cloud REST API prend en charge la conversion de fichiers Excel en fichiers TIFF. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 90
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdwon, Excel à TIFF
 ---
 Ce fichier Excel REST API `saveas` à TIFF.
 
@@ -15,11 +16,11 @@ Ce fichier Excel REST API `saveas` à TIFF.
 
 Ce fichier Excel REST API `convert` à TIFF.
 
-[PUT /cellules/convertir](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)API vous permet de convertir le fichier MS Excel en fichier TIFF avec des paramètres supplémentaires et d'enregistrer le résultat dans la réponse.
+[PUT /cellules/convertir](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) API vous permet de convertir le fichier MS Excel en fichier TIFF avec des paramètres supplémentaires et d'enregistrer le résultat dans la réponse.
 
 Ce fichier Excel REST API `export` à TIFF.
 
-[OBTENIR /cellules/{nom}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook  )API vous permet de convertir le fichier MS Excel en fichier TIFF avec des paramètres supplémentaires et d'enregistrer le résultat dans la réponse.
+[OBTENIR /cellules/{nom}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook  ) API vous permet de convertir le fichier MS Excel en fichier TIFF avec des paramètres supplémentaires et d'enregistrer le résultat dans la réponse.
 
 ## REPOS API
 
@@ -33,7 +34,7 @@ Ce fichier Excel REST API `export` à TIFF.
 
 Ces API définissent une interface de programmation accessible au public et vous permettent d'effectuer des interactions REST directement depuis un navigateur Web.
 
- Vous pouvez utiliser**cURL** outil de ligne de commande pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment passer des appels vers Cloud API avec cURL.
+ Vous pouvez utiliser**cURL**outil de ligne de commande pour accéder facilement aux services Web Aspose.Cells. L'exemple suivant montre comment passer des appels vers Cloud API avec cURL.
 
 
 {{< tabs tabTotal="3" tabID="11" tabName11="convert" tabName12="saveas" tabName13="export" >}}

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postchartcategoryaxis/
 description: تحديث محور فئة المخطط في المخطط
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostChartCategoryAxis
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostChartCategoryAxis" >}}

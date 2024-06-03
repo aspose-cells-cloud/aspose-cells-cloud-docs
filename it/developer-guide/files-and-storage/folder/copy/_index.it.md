@@ -6,6 +6,7 @@ url: /it/folder/copy/
 keywords: Learn how to copy folder with Aspose Cells Cloud REST API
 description: Scopri come copiare la cartella con Aspose Cells Cloud REST API SDK che supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 100
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Copia cartella
 ---
 Questo REST API indica `copy folder`.
  

@@ -8,6 +8,7 @@ aliases: [/convert-picture-to-image/]
 keywords: Get a picture in an Excel file
 description: Aspose.Cells Cloud REST API admite la obtención de una imagen en un archivo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 10
+kwords: Excel, Office Cloud, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Obtener una imagen en un archivo Excel
 ---
 Este REST API indica `get` índice de imagen por imagen de una hoja de trabajo Excel.
  

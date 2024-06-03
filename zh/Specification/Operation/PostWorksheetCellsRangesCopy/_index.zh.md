@@ -1,29 +1,30 @@
 ﻿---
-title: 后工作表单元格范围Cop
+title: 发布工作表单元格范围Cop
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/postworksheetcellsrangescopy/
-description: 将工作表中源范围的内容复制到目标范围
+description: 将内容从源区域复制到工作表中的目标区域
+kwords: Excel，Office，电子表格，Cloud REST API，PostWorksheetCellsRangesCopy
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangesCopy" >}}
 {{< blocks/products/cells/docs-title titlemsg="Copy content from the source range to the destination range in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges/copy,POST,将内容从工作表中的源范围复制到目标范围。,<a href=\'https://apireference.aspose.cloud/cells /#/Ranges/PostWorksheetCellsRangesCopy\'>PostWorksheetCellsRangesCopy</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges/copy,POST,将内容从源范围复制到工作表中的目标范围。,<a href=\'https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangesCopy\'>PostWorksheetCellsRangesCopy</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="参数名称、类型、描述" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="名称，字符串，文件名。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,字符串,工作表名称。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="name，string，文件名。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName，string，工作表名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="文件夹，字符串，原始工作簿文件夹。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="存储名称，字符串，存储名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName，string，存储名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="rangeOperate，类：rangecopyrequest，RangeCopyRequestcopydata，copystyle，copyto，copyvalue" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="rangeOperate、class：rangecopyrequest、RangeCopyRequestcopydata、copystyle、copyto、copyvalue" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

@@ -4,25 +4,26 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postprotectworkbook/
 description: Excel Schutz
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostProtectWorkbook
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostProtectWorkbook" >}}
 {{< blocks/products/cells/docs-title titlemsg="Excel protection." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/protection,POST,Excel Schutz.,<a href=\'https://apireference.aspose.cloud/cells/#/Protection/PostProtectWorkbook\'>PostProtectWorkbook</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="protectedWorkbookRequest,class:protectworkbookrequest,Die Schutzeinstellungen." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="protectWorkbookRequest,Klasse:protectworkbookrequest,Die Schutzeinstellungen." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/deleteworksheetlistobject/
 description: Удалить объект списка по индексу на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, DeleteWorksheetListObject
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetListObject" >}}

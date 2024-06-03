@@ -1,26 +1,27 @@
 ﻿---
-title: StyleFormatConditio
+title: StilFormatBedingung
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/model/styleformatcondition/
-description: "Aspose.Cells Cloud-Modellspezifikation: StyleFormatCondition. Bearbeiten Sie mühelos Excel und andere Tabellenkalkulationsdokumente mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+description: "Aspose.Cells Cloud-Modellspezifikation: StyleFormatCondition. Müheloses Bearbeiten von Excel und anderen Tabellenkalkulationsdokumenten mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, StyleFormatCondition
 weight: 50
 ---
-## **styleFormatCondition**
+## **StilFormatBedingung**
 
- 
+ Stellt die Stilformatbedingung dar.
 
-| Name des Anwesens| Art der Immobilie| Nullbar| Schreibgeschützt| Standardwert| Beschreibung|
+| Name des Anwesens| Art der Immobilie| Nullwerte zulassen| Schreibgeschützt| Standardwert| Beschreibung|
 |:- |:- |:- |:- |:- |:- |
 | Priorität| Ganze Zahl| WAHR| FALSCH|||
 | Typ| Zeichenfolge| WAHR| FALSCH|||
-| StopIfTrue| Boolescher Wert| WAHR| FALSCH|||
+| StoppenWennWahr| Boolescher Wert| WAHR| FALSCH|||
 | Überdurchschnittlich| Klasse:Überdurchschnittlich| WAHR| FALSCH|||
-| Farbskala| Klasse:ColorScale| WAHR| FALSCH|||
-| DataBar| Klasse:DataBar| WAHR| FALSCH|||
+| Farbskala| Klasse:Farbskala| WAHR| FALSCH|||
+| Datenleiste| Klasse:DataBar| WAHR| FALSCH|||
 | Formel 1| Zeichenfolge| WAHR| FALSCH|||
 | Formel2| Zeichenfolge| WAHR| FALSCH|||
-| IconSet| Klasse:IconSet| WAHR| FALSCH|||
+| Symbolsatz| Klasse:IconSet| WAHR| FALSCH|||
 | Operator| Zeichenfolge| WAHR| FALSCH|||
 | Stil| Klasse:Stil| WAHR| FALSCH|||
 | Text| Zeichenfolge| WAHR| FALSCH|||
@@ -28,4 +29,5 @@ weight: 50
 | Top 10| Klasse:Top10| WAHR| FALSCH|||
 | Verknüpfung| Klasse:Link| WAHR| FALSCH|||
 
-**Elternname** : (FormatCondition)[Formatcondition]
+**Elternname** : [FormatCondition](/specification/model/formatcondition)
+

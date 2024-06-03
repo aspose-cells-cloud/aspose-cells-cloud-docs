@@ -5,6 +5,7 @@ type: docs
 url: /it/docker/downloads/
 description: Scarica Aspose.Cells Immagini Cloud Docker
 weight: 30
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Scarica
 ---
 ##  Windows Server 2016 ##
 

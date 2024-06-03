@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/getworksheetchartlegend/
 description: استرداد وصف وسيلة إيضاح المخطط في ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، GetWorksheetChartLegend
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetChartLegend" >}}

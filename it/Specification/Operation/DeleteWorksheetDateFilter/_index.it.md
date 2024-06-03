@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/deleteworksheetdatefilter/
 description: Rimuovere un filtro data nel foglio di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, EliminaFiltroDataFiltroFiglio
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetDateFilter" >}}

@@ -1,21 +1,22 @@
 ﻿---
-title: 解锁后
+title: 解除锁定
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/postunlock/
-description: 解锁Excel文件
+description: 解锁 Excel 文件
+kwords: Excel, Office, 电子表格, Cloud REST API, PostUnlock
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostUnlock" >}}
 {{< blocks/products/cells/docs-title titlemsg="Unlock Excel files." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="/cells/unlock,POST,解锁 Excel 个文件。,<a href=\'https://apireference.aspose.cloud/cells/#/Protection/PostUnlock\'>PostUnlock</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="密码,字符串,打开Excel文件所需的密码。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="password，string，打开Excel文件所需的密码。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/ProtectionController/PostUnlock\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

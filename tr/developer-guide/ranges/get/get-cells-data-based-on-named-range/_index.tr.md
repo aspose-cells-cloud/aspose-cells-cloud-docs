@@ -8,6 +8,7 @@ aliases: [/get-cells-data-based-on-named-range/]
 keywords: Get cells data based on named range on an Excel worksheet
 description: Aspose.Cells Cloud REST API, Excel çalışma sayfasındaki adlandırılmış aralığa göre hücre verilerinin alınmasını destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 20
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Adlandırılmış aralığa dayalı hücre verilerini al
 ---
  Bu REST API, aralık adına veya satır sütun dizinlerine göre bir aralıktaki hücre listesini al anlamına gelir
 

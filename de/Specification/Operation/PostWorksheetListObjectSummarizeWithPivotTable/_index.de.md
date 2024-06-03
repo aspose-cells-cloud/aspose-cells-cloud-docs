@@ -3,29 +3,30 @@ title: PostWorksheetListObjectSummarizeWithPivotTabl
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postworksheetlistobjectsummarizewithpivottable/
-description: Erstellen Sie eine Pivot-Tabelle mit einem Listenobjekt im Arbeitsblatt
+description: Erstellen einer Pivot-Tabelle mit einem Listenobjekt im Arbeitsblatt
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostWorksheetListObjectSummarizeWithPivotTable
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetListObjectSummarizeWithPivotTable" >}}
 {{< blocks/products/cells/docs-title titlemsg="Create a pivot table with a list object in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/SummarizeWithPivotTable,POST,Erstellen Sie eine Pivot-Tabelle mit einem Listenobjekt im Arbeitsblatt.,<a href=\'https://apireference.aspose.cloud /cells/#/ListObjects/PostWorksheetListObjectSummarizeWithPivotTable\'>PostWorksheetListObjectSummarizeWithPivotTable</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/SummarizeWithPivotTable,POST,Erstellen Sie eine Pivot-Tabelle mit einem Listenobjekt im Arbeitsblatt.,<a href=\'https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObjectSummarizeWithPivotTable\'>PostWorksheetListObjectSummarizeWithPivotTable</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="listObjectIndex,integer,Der Listenobjektindex." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="listObjectIndex,Integer,Der Listenobjektindex." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="destsheetName,string,Der Name des Zielarbeitsblatts." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="destsheetName, Zeichenfolge, Der Name des Zielarbeitsblatts." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="createPivotTableRequest,class:createpivottablerequest,Pivot-Tabellenanfrage erstellen." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="createPivotTableRequest, Klasse: createpivottablerequest, PivotTable-Anforderung erstellen." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

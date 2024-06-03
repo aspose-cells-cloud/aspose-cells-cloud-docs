@@ -3,6 +3,7 @@ title: Beräkna Cells formel
 type: docs
 url: /sv/calculate-cells-formula/
 weight: 90
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Beräkna Cells formel
 ---
 Denna REST API indikerar beräkna `cells formula` i en Excel fil.
 

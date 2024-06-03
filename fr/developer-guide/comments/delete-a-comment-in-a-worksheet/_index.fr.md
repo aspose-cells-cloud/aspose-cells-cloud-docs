@@ -6,6 +6,7 @@ aliases: [/delete-a-comment-in-a-worksheet/]
 keywords: REST API, spreadsheets, excel, delete a commen
 description: "Cells.Cloud API pour Excel fonctionner : supprimer un commentaire"
 weight: 40
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdwon, Supprimer
 ---
 Ce REST API indique Supprimer le commentaire de cellule de la feuille de calcul.
  
@@ -18,7 +19,7 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Le nom du document.|
 | Nom de la feuille| chaîne| chemin| Le nom de la feuille de calcul.|

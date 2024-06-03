@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/postworkbooksplit/
 description: Çalışma kitabını belirli bir formatla bölme
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PostWorkbookSplit
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookSplit" >}}

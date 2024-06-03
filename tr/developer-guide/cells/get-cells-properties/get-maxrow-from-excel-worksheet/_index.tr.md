@@ -3,6 +3,7 @@ title: MaxRow'u Excel Çalışma Sayfasından edinin
 type: docs
 url: /tr/get-maxrow-from-excel-worksheet/
 weight: 40
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel Çalışma Sayfasından MaxRow'u Alın
 ---
 Bu REST API, `cellOrMethodName` parametresi `maxrow` olduğunda Excel dosyasında gösterilerin `maxrow` aldığını gösterir.
 

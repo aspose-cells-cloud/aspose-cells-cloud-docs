@@ -3,6 +3,7 @@ title: Получить данные ячейки из рабочего лист
 type: docs
 url: /ru/get-cell-data-from-a-worksheet/
 weight: 10
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, получение данных ячейки из листа
 ---
 Этот REST API указывает, что показывает получение `cell` в файле Excel, когда параметр `cellOrMethodName` является именем ячейки.
 

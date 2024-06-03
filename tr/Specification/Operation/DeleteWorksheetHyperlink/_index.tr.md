@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/deleteworksheethyperlink/
 description: Çalışma sayfasındaki köprüyü dizine göre sil
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, SilWorksheetHyperlink
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetHyperlink" >}}

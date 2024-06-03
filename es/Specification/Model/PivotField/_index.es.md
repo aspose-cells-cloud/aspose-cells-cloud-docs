@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/model/pivotfield/
 description: "Aspose.Cells Especificación del modelo de nube: PivotField. Maneje sin esfuerzo Excel y otros documentos de hoja de cálculo con funciones como abrir, generar, editar, dividir, fusionar, comparar y convertir."
+kwords: Excel, Office, Hoja de cálculo, Nube REST API, PivotField
 weight: 50
 ---
 ## **campo pivote**
 
- 
+ Representa un campo en un informe de tabla dinámica.
 
 | Nombre de la propiedad| tipo de propiedad| Anulable| Solo lectura| Valor por defecto| Descripción|
 |:- |:- |:- |:- |:- |:- |
@@ -20,11 +21,11 @@ weight: 50
 | Artículo base| Entero| Verdadero| FALSO|||
 | Posición del artículo base| Cadena| Verdadero| FALSO|||
 | Artículo de página actual| Entero| Verdadero| FALSO|||
-| Formato de visualización de datos| Cadena| Verdadero| FALSO|||
+|Formato de visualización de datos| Cadena| Verdadero| FALSO|||
 | Nombre para mostrar| Cadena| Verdadero| FALSO|||
 | Arrastrar a columna| Booleano| Verdadero| FALSO|||
 | Arrastrar a datos| Booleano| Verdadero| FALSO|||
-|Arrastrar para ocultar| Booleano| Verdadero| FALSO|||
+| Arrastrar para ocultar| Booleano| Verdadero| FALSO|||
 | Arrastrar a la página| Booleano| Verdadero| FALSO|||
 | Arrastrar a fila| Booleano| Verdadero| FALSO|||
 | Función| Cadena| Verdadero| FALSO|||
@@ -46,7 +47,7 @@ weight: 50
 | Formato numérico| Cadena| Verdadero| FALSO|||
 | Artículos originales|Formación<String> | Verdadero| FALSO|||
 | Elementos dinámicos| Envase| Verdadero| FALSO|||
-|Posición| Entero| Verdadero| FALSO|||
+| Posición| Entero| Verdadero| FALSO|||
 | Mostrar todos los artículos| Booleano| Verdadero| FALSO|||
 | MostrarCompacto| Booleano| Verdadero| FALSO|||
 | Mostrar en formato de esquema| Booleano| Verdadero| FALSO|||

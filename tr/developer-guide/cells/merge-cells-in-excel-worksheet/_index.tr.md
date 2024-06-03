@@ -3,6 +3,7 @@ title: Cells'i Excel Çalışma Sayfası'nda birleştir
 type: docs
 url: /tr/merge-cells-in-excel-worksheet/
 weight: 110
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Cells'i Excel Çalışma Sayfasında Birleştir
 ---
 Bu REST API, Excel dosyasındaki `merge` hücreyi gösterir.
 
@@ -17,12 +18,12 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/merg
  
 | Parametre adı| Tip| Yol/Sorgu Dizesi/HTTPBody|Tanım|
 |:- |:- |:- |:- |
-| isim| sicim| yol|Çalışma kitabı adı.|
+| isim| sicim| yol| Çalışma kitabı adı.|
 | sayfaAdı| sicim| yol| Çalışma sayfası adı.|
 | startRow| tamsayı| sorgu| Başlangıç satırı.|
 | startColumn| tamsayı| sorgu| Başlangıç sütunu.|
 | toplamSatırlar| tamsayı| sorgu| Toplam satırlar|
-|toplamSütunlar| tamsayı| sorgu| Toplam sütunlar.|
+| toplamSütunlar| tamsayı| sorgu| Toplam sütunlar.|
 | dosya| sicim| sorgu| Çalışma kitabı klasörü.|
 | depolamaAdı| sicim| sorgu| depolama adı.|
  

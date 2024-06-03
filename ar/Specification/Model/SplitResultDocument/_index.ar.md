@@ -5,6 +5,7 @@ type: docs
 url: /ar/specification/model/splitresultdocument/
 description: "Aspose.Cells مواصفات النموذج السحابي: SplitResultDocument. تعامل بسهولة مع Excel ومستندات جداول البيانات الأخرى التي تحتوي على ميزات مثل الفتح والتوليد والتحرير والتقسيم والدمج والمقارنة والتحويل"
 weight: 50
+kwords: Excel، Office كلاود، ريست API، جدول بيانات، PDF، CSV، Json، Markdwon، SplitResultDocument
 ---
 ## **SplitResultDocument**
 
@@ -15,4 +16,5 @@ weight: 50
 | بطاقة تعريف| عدد صحيح| حقيقي| خطأ شنيع|||
 | وصلة| الفئة: الرابط| حقيقي| خطأ شنيع|||
 
-**اسم الوالدين** : (LinkElement)[linkElement]
+**اسم الوالدين** : [LinkElement](linkelement)
+

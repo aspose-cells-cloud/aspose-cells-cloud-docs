@@ -8,6 +8,7 @@ aliases: [/working-with-ranges/]
 keywords: Working with ranges on an Excel fil
 description: Aspose.Cells Cloud REST API kullanılarak Excel dosyasındaki aralıklarla nasıl çalışılır. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 100
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel dosyasındaki aralıklarla çalışma
 ---
 Bir hücreyi, bir satırı, bir sütunu, bir veya daha fazla bitişik hücre bloğu içeren hücre seçimini veya 3B aralığı temsil eder.
 

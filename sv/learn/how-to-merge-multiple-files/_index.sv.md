@@ -4,13 +4,14 @@ type: docs
 url: /sv/how-to-merge-multiple-files
 description: Hur man slår ihop flera filer genom Aspose.Cells Cloud
 weight: 10
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Hur man slår ihop flera filer genom Aspose.Cells Cloud
 ---
 ## Introduktion
 Aspose.Cells Cloud API är en potent molnbaserad lösning skapad för att skapa, redigera och konvertera kalkylarksfiler. I den här artikeln går vi igenom processen med att använda Aspose.Cells Cloud API för sammanslagna filformat, inklusive typiska användningsfall och exempelkod.
 
 ## Översikt
 
- Aspose.Cells Cloud API tillhandahåller två robusta API:er för att slå samman flera kalkylarksfiler till en fil med olika format. De format som stöds inkluderar**Excel** (XLS, XLSX),**CSV**, **HTML**, **PDF**, och mer. Genom att använda Aspose.Cells Cloud API kan du enkelt slå samman flera kalkylarksfiler till en fil med allmänt använda format, som tillgodoser en mängd olika krav.
+ Aspose.Cells Cloud API tillhandahåller två robusta API:er för att slå samman flera kalkylarksfiler till en fil med olika format. De format som stöds inkluderar**Excel** (XLS, XLSX),**CSV**, **HTML**, **PDF**och mer. Genom att använda Aspose.Cells Cloud API kan du enkelt slå samman flera kalkylarksfiler till en fil med allmänt använda format, som tillgodoser en mängd olika krav.
 
 Flera API:er är tillgängliga för sammanslagna filer, vanligtvis kompatibla med olika onlinemiljöer. Nedan finns en detaljerad beskrivning av dessa API:er:
 
@@ -20,7 +21,7 @@ Flera API:er är tillgängliga för sammanslagna filer, vanligtvis kompatibla me
 
 # Hur man slår samman flera filer i en fil genom Aspose.Cells Cloud
 
- Aspose.Cells Cloud API tillhandahåller[flera SDK:er](https://github.com/aspose-cells-cloud)för olika programmeringsspråk. Välj den SDK som passar ditt föredragna programmeringsspråk och följ den medföljande dokumentationen för installation och initiering. Alternativt kan du skapa din egen SDK enligt[API referens](https://reference.aspose.cloud/cells/). I det här avsnittet kommer vi att använda C# som ett exempel för att detaljera processen för att sammanfoga filen.
+ Aspose.Cells Cloud API tillhandahåller[flera SDK:er](https://github.com/aspose-cells-cloud) för olika programmeringsspråk. Välj den SDK som passar ditt föredragna programmeringsspråk och följ den medföljande dokumentationen för installation och initiering. Alternativt kan du skapa din egen SDK enligt[API referens](https://reference.aspose.cloud/cells/). I det här avsnittet kommer vi att använda C# som ett exempel för att detaljera processen för att sammanfoga filen.
 
 
 ## Registrering och erhållande av API Nyckel

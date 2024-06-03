@@ -8,6 +8,7 @@ aliases: [/working-with-worksheets/]
 keywords: Working with worksheet on an Excel workbook
 description: Aspose.Cells Cloud REST API stöd för att arbeta med kalkylblad på en Excel arbetsbok. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Arbeta med Excel kalkylblad.
 ---
 Ett kalkylblad är en samling celler där du lagrar och manipulerar data. Varje Excel-arbetsbok kan innehålla flera kalkylblad.
 

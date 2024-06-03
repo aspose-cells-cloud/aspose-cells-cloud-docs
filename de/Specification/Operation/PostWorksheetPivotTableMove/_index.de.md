@@ -1,30 +1,31 @@
 ﻿---
-title: PostWorksheetPivotTableMov
+title: PostArbeitsblattPivotTableMov
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postworksheetpivottablemove/
-description: Verschieben Sie die PivotTable im Arbeitsblatt
+description: PivotTable im Arbeitsblatt verschieben
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostWorksheetPivotTableMove
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetPivotTableMove" >}}
 {{< blocks/products/cells/docs-title titlemsg="Move PivotTable in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/Move,POST,Move PivotTable im Arbeitsblatt.,<a href=\'https://apireference.aspose.cloud/cells/#/PivotTables /PostWorksheetPivotTableMove\'>PostWorksheetPivotTableMove</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/Move,POST,PivotTable im Arbeitsblatt verschieben.,<a href=\'https://apireference.aspose.cloud/cells/#/PivotTables/PostWorksheetPivotTableMove\'>PostWorksheetPivotTableMove</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="PivotTableIndex,Integer,Ruft den PivotTable-Bericht nach Index ab." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="pivotTableIndex,integer,Ruft den PivotTable-Bericht nach Index ab." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="Zeile, Ganzzahl, Zeilenindex." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Spalte, Ganzzahl, Spaltenindex." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="destCellName,string,Der Name der Zielzelle." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="destCellName, string, Der Name der Zielzelle." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/PivotTablesController/PostWorksheetPivotTableMove\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

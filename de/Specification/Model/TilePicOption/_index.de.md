@@ -3,19 +3,20 @@ title: TilePicOptio
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/model/tilepicoption/
-description: "Aspose.Cells Cloud-Modellspezifikation: TilePicOption. Bearbeiten Sie mühelos Excel und andere Tabellenkalkulationsdokumente mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+description: "Aspose.Cells Cloud-Modellspezifikation: TilePicOption. Müheloses Bearbeiten von Excel und anderen Tabellenkalkulationsdokumenten mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, TilePicOption
 weight: 50
 ---
-## **TilePicOption**
+## **Kachelbildoption**
 
- 
+ Stellt Kachelbild als Textur dar.
 
-| Name des Anwesens| Art der Immobilie| Nullbar| Schreibgeschützt| Standardwert| Beschreibung|
+| Name des Anwesens| Art der Immobilie| Nullwerte zulassen| Schreibgeschützt| Standardwert| Beschreibung|
 |:- |:- |:- |:- |:- |:- |
-| OffsetX| Schwebend| WAHR| FALSCH|| Ruft den X-Offset für das Kacheln von Bildern ab oder legt diesen fest.|
-| OffsetY| Schwebend| WAHR| FALSCH|| Ruft den Y-Versatz für die Kachelung des Bildes ab oder legt diesen fest.|
-| ScaleX| Schwebend| WAHR| FALSCH|| Ruft den X-Maßstab für das Kachelbild ab oder legt diesen fest.|
-| ScaleY| Schwebend| WAHR| FALSCH|| Ruft die Y-Skala für das Kacheln von Bildern ab oder legt diese fest.|
-| Ausrichtungstyp| Zeichenfolge| WAHR| FALSCH|| Ruft die Ausrichtung für die Kachelung ab oder legt diese fest.|
-| MirrorType| Zeichenfolge| WAHR| FALSCH|| Ruft den Spiegeltyp für die Kachelung ab oder legt diesen fest.|
+| VersatzX| Schwimmend| WAHR| FALSCH|| Ruft den X-Versatz für die Bildkachelung ab oder legt ihn fest.|
+| VersatzY| Schwimmend| WAHR| FALSCH|| Ruft den Y-Versatz für die Bildkachelung ab oder legt ihn fest.|
+| MaßstabX| Schwimmend| WAHR| FALSCH||Ruft den X-Maßstab für die Bildkachelung ab oder legt ihn fest.|
+| SkalierungY| Schwimmend| WAHR| FALSCH|| Ruft die Y-Skala für die Bildkachelung ab oder legt sie fest.|
+| Ausrichtungstyp| Zeichenfolge| WAHR| FALSCH|| Ruft die Ausrichtung für die Kachelung ab oder legt sie fest.|
+| Spiegeltyp| Zeichenfolge| WAHR| FALSCH|| Ruft den Spiegeltyp für die Kachelung ab oder legt ihn fest.|
 

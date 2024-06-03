@@ -5,6 +5,7 @@ type: docs
 url: /es/aspose-cells-cloud-for-wordpress-faqs/
 description: Aspose.Cells La nube admite Excel para crear, convertir, fusionar, dividir, proteger, operar objetos internos, etc.
 weight: 40
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Aspose.Cells Nube para WordPress - Preguntas frecuentes
 ---
 ## Aspose.Cells Formularios
 ### ¿Puedo usar el complemento Formularios Aspose.Cells sin tener una cuenta en aspose.cloud?

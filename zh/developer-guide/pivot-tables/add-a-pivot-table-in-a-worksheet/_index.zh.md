@@ -6,12 +6,13 @@ type: docs
 url: /zh/pivot-tables/add/
 aliases: [/add-a-pivot-table-in-a-worksheet/]
 keywords: Add a pivot table in an Excel worksheet
-description: Aspose.Cells Cloud REST API 支持在 Excel 工作表中添加数据透视表。 SDK支持多种开发语言。它们包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 swift
+description: Aspose.Cells Cloud REST API 支持在 Excel 工作表中添加数据透视表。SDK 支持多种开发语言。其中包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 swift
 weight: 30
+kwords: Excel，Office 云，REST API，电子表格，PDF，CSV，Json，Markdwon，在 Excel 工作表中添加数据透视表
 ---
-此 REST API 向 `add` 指示将数据透视表转换为工作表。
+此 REST API 指示将 `add` 数据透视表放入工作表中。
  
-## RSET API
+## 重置 API
  
 ```bash
  
@@ -28,13 +29,13 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables
 |文件夹|细绳|询问|文档的文件夹。|
 |存储名称|细绳|询问|存储名称。|
 |源数据|细绳|询问|新数据透视表缓存的数据。|
-|目标单元名称|细绳|询问|数据透视表目标范围左上角的单元格。|
+|目的单元名称|细绳|询问|数据透视表目标范围左上角的单元格。|
 |表名|细绳|询问|新数据透视表的名称。|
-|使用同源|布尔值|询问|指示当另一个现有数据透视表已使用此数据源时是否使用相同的数据源。如果该属性为 true，则会节省内存。|
+|使用相同来源|布尔值|询问|指示当另一个现有的数据透视表已使用该数据源时是否使用相同的数据源。如果该属性为 true，则将节省内存。|
  
-这[开放API规范](https://apireference.aspose.cloud/cells/#/PivotTables/PutWorksheetPivotTable)定义了一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/PivotTables/PutWorksheetPivotTable)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
  
-您可以使用cURL命令行工具轻松访问Aspose.Cells Web服务。以下示例展示如何使用 cURL 呼叫云端 API。
+您可以使用 cURL 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例显示如何使用 cURL 调用云 API。
  
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
  
@@ -67,9 +68,9 @@ curl -v  "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet
  
 {{< /tabs >}}
  
-## 云SDK系列
+## Cloud SDK 系列
  
-使用 SDK 是加快开发速度的最佳方式。 SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)有关 Aspose.Cells Cloud SDK 的完整列表。
+使用 SDK 是加快开发速度的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)获得 Aspose.Cells Cloud SDKs 的完整列表。
  
 以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
 

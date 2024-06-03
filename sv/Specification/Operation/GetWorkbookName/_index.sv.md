@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/getworkbookname/
 description: Hämta beskrivning av ett namngivet område i arbetsboken
+kwords: Excel, Office, Kalkylblad, Cloud REST API, GetWorkbookName
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorkbookName" >}}

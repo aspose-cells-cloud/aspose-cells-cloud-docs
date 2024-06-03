@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/getverticalpagebreaks/
 description: Récupérer les descriptions des sauts de page verticaux dans la feuille de calcul
+kwords: Excel, Office, feuille de calcul, Cloud REST API, GetVerticalPageBreaks
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetVerticalPageBreaks" >}}

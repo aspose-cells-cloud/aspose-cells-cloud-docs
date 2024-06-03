@@ -4,6 +4,7 @@ type: docs
 url: /es/charts/area/get/
 aliases: [/get-chart-area-from-a-worksheet/]
 weight: 60
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Obtener área de gráfico de una hoja de trabajo
 ---
 Este REST API indica obtener información del área del gráfico.
  

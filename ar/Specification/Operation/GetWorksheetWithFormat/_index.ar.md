@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/getworksheetwithformat/
 description: استرداد ورقة العمل بتنسيق محدد من المصنف
+kwords: Excel، Office، جدول البيانات، Cloud REST API، GetWorksheetWithFormat
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetWithFormat" >}}
@@ -19,7 +20,7 @@ weight: 50
      {{< blocks/products/cells/docs-Parameter-content columns="اسم الورقة، سلسلة، اسم ورقة العمل." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="اسم المعلمة، النوع، الوصف" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="تنسيق، سلسلة، تنسيق التصدير (CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/076173) 481/م.د [تخفيض السعر]/الأرقام)." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="تنسيق، سلسلة، تنسيق التصدير (CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/0761) 73481/م.د [تخفيض السعر]/الأرقام)." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="الدقة العمودية، عدد صحيح، الدقة الرأسية للصورة." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="الدقة الأفقية، عدد صحيح، دقة الصورة الأفقية." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="المنطقة، السلسلة، تمثل النطاق المراد طباعته." >}} 

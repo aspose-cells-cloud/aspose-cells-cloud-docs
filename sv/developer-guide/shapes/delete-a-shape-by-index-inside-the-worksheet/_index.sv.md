@@ -8,6 +8,7 @@ aliases: [/delete-a-shape-by-index-inside-the-worksheet/]
 keywords: Delete a shape on an Excel workshee
 description: Aspose.Cells Cloud REST API stöder radering av form på ett Excel-kalkylblad. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 50
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Ta bort en form efter index på ett Excel kalkylblad
 ---
 Denna REST API indikerar att en form tas bort på ett Excel-kalkylblad.
  

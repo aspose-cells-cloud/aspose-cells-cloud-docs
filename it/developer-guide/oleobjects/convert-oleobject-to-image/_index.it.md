@@ -8,6 +8,7 @@ aliases: [/convert-oleobject-to-image/]
 keywords: Convert an OLE object to image in an Excel worksheet
 description: Aspose.Cells Cloud REST API supporta la conversazione di un oggetto OLE nell'immagine in un foglio di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 40
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Converti oggetto OLE in immagine in un foglio di lavoro Excel
 ---
 Questo REST API indica `get OLE object` con il formato in un foglio di lavoro Excel.
  

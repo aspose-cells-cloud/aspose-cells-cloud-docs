@@ -4,6 +4,7 @@ type: docs
 url: /it/charts/clear/
 aliases: [/delete-all-charts-from-a-worksheet/]
 weight: 30
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Elimina tutti i grafici da un foglio di lavoro
 ---
 Questo REST API indica di cancellare le classifiche.
  

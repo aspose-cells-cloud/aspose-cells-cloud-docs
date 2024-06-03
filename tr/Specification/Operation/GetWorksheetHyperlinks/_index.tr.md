@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/getworksheethyperlinks/
 description: Çalışma sayfasındaki köprülerin açıklamalarını alın
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, GetWorksheetHyperlinks
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetHyperlinks" >}}

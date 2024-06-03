@@ -6,6 +6,7 @@ url: /sv/batch/unlock
 keywords: Batch unlock of multiple Excel files
 description: Aspose.Cells Cloud API stöder batchupplåsning av flera Excel-filer. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Batch Unlock
 ---
 Denna REST API indikerar till `batch unlock` av kvalificerade filer.
  
@@ -66,7 +67,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/batch/unlock" \
  
 ## Cloud SDK-familj
  
- Att använda en SDK är det bästa sättet att påskynda utvecklingen. En SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina upplåsningsuppgifter. Vänligen kolla in[GitHub-förråd](https://github.com/aspose-cells-cloud) för en komplett lista med Aspose.Cells Cloud SDK.
+Att använda en SDK är det bästa sättet att påskynda utvecklingen. En SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina upplåsningsuppgifter. Vänligen kolla in[GitHub-förråd](https://github.com/aspose-cells-cloud) för en komplett lista med Aspose.Cells Cloud SDK.
  
 Följande kodexempel visar hur man ringer till Aspose.Cells webbtjänster med olika SDK:er:
  

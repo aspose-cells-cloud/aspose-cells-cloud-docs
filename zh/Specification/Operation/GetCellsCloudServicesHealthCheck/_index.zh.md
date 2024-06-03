@@ -1,16 +1,17 @@
 ﻿---
-title: GetCellsCloudServicesHealthCheck
+title: 获取CellsCloudServicesHealthChec
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/getcellscloudserviceshealthcheck/
 description: 以指定格式检索单元格描述
+kwords: Excel，Office，电子表格，云 REST API，GetCellsCloudServicesHealthCheck
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetCellsCloudServicesHealthCheck" >}}
 {{< blocks/products/cells/docs-title titlemsg="Retrieve cell descriptions in a specified format." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells,GET,以指定格式检索单元描述。,<a href=\'https://apireference.aspose.cloud/cells/#/CellsStatus/GetCellsCloudServicesHealthCheck\'>GetCellsCloudServicesHealthCheck</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells,GET,以指定格式检索细胞描述。,<a href=\'https://apireference.aspose.cloud/cells/#/CellsStatus/GetCellsCloudServicesHealthCheck\'>GetCellsCloudServicesHealthCheck</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

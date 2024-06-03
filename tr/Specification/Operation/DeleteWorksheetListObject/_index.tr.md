@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/deleteworksheetlistobject/
 description: Çalışma sayfasındaki liste nesnesini dizine göre sil
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, SilWorksheetListObject
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetListObject" >}}

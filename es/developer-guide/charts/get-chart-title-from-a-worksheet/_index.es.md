@@ -4,6 +4,7 @@ type: docs
 url: /es/charts/title/get/
 aliases: [/get-chart-title-from-a-worksheet/]
 weight: 120
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Obtener título de gráfico de una hoja de trabajo
 ---
 Este REST API indica obtener título del gráfico
  

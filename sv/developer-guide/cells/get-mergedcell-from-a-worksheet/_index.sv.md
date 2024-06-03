@@ -3,6 +3,7 @@ title: Få MergedCell från en Workshee
 type: docs
 url: /sv/get-mergedcell-from-a-worksheet/
 weight: 60
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Get MergedCell from a Worksheet
 ---
 Denna REST API indikerar få `merged cell` i en Excel fil.
 

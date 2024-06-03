@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/putworksheetchart/
 description: Agregar un nuevo gráfico en la hoja de trabajo
+kwords: Excel, Office, Hoja de cálculo, Cloud REST API, PutWorksheetChart
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetChart" >}}
@@ -31,7 +32,7 @@ weight: 50
     {{< blocks/products/cells/docs-Parameter-content columns="título,cadena,Especifique el nombre del título del gráfico." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="carpeta, cadena, la carpeta donde se encuentra el archivo." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="dataLabels,boolean,Representa el comportamiento de visualización de los valores de la etiqueta de datos del gráfico especificado. True para mostrar los valores, False para ocultarlos." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="dataLabelsPosition,string,Representa la posición de la etiqueta de datos (Centro/InsideBase/InsideEnd/OutsideEnd/Arriba/Abajo/Izquierda/Derecha/Mejor Ajuste/Movido)." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="dataLabelsPosition,cadena,Representa la posición de la etiqueta de datos (Centro/InsideBase/InsideEnd/OutsideEnd/Arriba/Abajo/Izquierda/Derecha/Mejor Ajuste/Movido)." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="pivotTableSheet,string,La fuente son los datos de la tabla dinámica. Si PivotSource no está vacío, el gráfico es un gráfico dinámico." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="pivotTableName, cadena, el nombre de la tabla dinámica." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="nombre de almacenamiento, cadena, el nombre del almacenamiento donde se encuentra el archivo." >}} 

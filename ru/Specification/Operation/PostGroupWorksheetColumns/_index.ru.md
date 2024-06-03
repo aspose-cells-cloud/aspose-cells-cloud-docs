@@ -4,13 +4,14 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postgroupworksheetcolumns/
 description: Группировать столбцы рабочего листа на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostGroupWorksheetColumns
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostGroupWorksheetColumns" >}}
 {{< blocks/products/cells/docs-title titlemsg="Group worksheet columns in the worksheet." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Описание,ссылка API" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells/columns/group,POST,Сгруппировать столбцы рабочего листа на листе.,<a href=\'https://apireference.aspose.cloud/cells/#/Cells/ PostGroupWorksheetColumns\'>PostGroupWorksheetColumns</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells/columns/group,POST,Сгруппировать столбцы рабочего листа на рабочем листе.,<a href=\'https://apireference.aspose.cloud/cells/#/Cells/ PostGroupWorksheetColumns\'>PostGroupWorksheetColumns</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

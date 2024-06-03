@@ -7,6 +7,7 @@ aliases: [/working-with-conditional-formatting/]
 keywords: REST API, spreadsheets, excel, conditional formattin
 description: "Cells.Облако API для Excel работает: работает условное форматирование"
 weight: 100
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, условное форматирование
 ---
 &nbsp;&nbsp;&nbsp;&nbsp;Условное форматирование в Excel позволяет выделять ячейки определенным цветом в зависимости от значения ячейки.
 

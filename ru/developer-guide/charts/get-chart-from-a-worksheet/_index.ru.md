@@ -4,6 +4,7 @@ type: docs
 url: /ru/charts/get/
 aliases: [/get-chart-from-a-worksheet/]
 weight: 10
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, получение диаграммы из рабочего листа
 ---
 Этот REST API указывает на получение информации о диаграмме.
  

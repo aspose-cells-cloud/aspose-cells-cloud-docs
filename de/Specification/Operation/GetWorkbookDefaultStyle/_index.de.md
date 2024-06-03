@@ -1,25 +1,26 @@
 ﻿---
-title: GetWorkbookDefaultStyle
+title: GetWorkbookDefaultStyl
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/getworkbookdefaultstyle/
-description: Rufen Sie die Beschreibung des Standardstils für die Arbeitsmappe ab
+description: Abrufen der Beschreibung des Standardstils für die Arbeitsmappe
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, GetWorkbookDefaultStyle
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorkbookDefaultStyle" >}}
 {{< blocks/products/cells/docs-title titlemsg="Retrieve the description of the default style for the workbook." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/defaultstyle,GET,Rufen Sie die Beschreibung des Standardstils für die Arbeitsmappe ab.,<a href=\'https://apireference.aspose.cloud/cells/#/Workbook/GetWorkbookDefaultStyle\'>GetWorkbookDefaultStyle</ a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/defaultstyle,GET,Beschreibung des Standardstils für die Arbeitsmappe abrufen.,<a href=\'https://apireference.aspose.cloud/cells/#/Workbook/GetWorkbookDefaultStyle\'>GetWorkbookDefaultStyle</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/WorkbookController/GetWorkbookDefaultStyle\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

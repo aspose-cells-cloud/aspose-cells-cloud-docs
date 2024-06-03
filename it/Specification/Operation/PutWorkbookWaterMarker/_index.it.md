@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/putworkbookwatermarker/
 description: Imposta l'indicatore dell'acqua nella cartella di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PutWorkbookWaterMarker
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorkbookWaterMarker" >}}

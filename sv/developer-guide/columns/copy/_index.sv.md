@@ -8,6 +8,7 @@ aliases: [/copy-columns-in-excel-worksheet/,/copy-columns-in-an-excel-worksheet/
 keywords: Copy column on an Excel workshee
 description: Aspose.Cells Cloud REST API stödjer kopieringskolumnen på ett Excel-kalkylblad. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 30
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Kopiera kolumner på ett Excel kalkylblad
 ---
 Denna REST API kopia `columns` i ett Excel arbetsblad.
 
@@ -22,17 +23,17 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/colu
  
 | Parameternamn| Typ| Sökväg/Frågesträng/HTTPBody|Beskrivning|
 |:- |:- |:- |:- |
-| namn| sträng| väg|Arbetsbokens namn.|
+| namn| sträng| väg| Arbetsbokens namn.|
 | arknamn| sträng| väg| Kalkylbladets namn.|
 | sourceColumnIndex| heltal| fråga| Källkolumnindex|
-|destinationColumnIndex| heltal| fråga| Destinationskolumnindex|
+| destinationColumnIndex| heltal| fråga| Destinationskolumnindex|
 | kolumnnummer| heltal| fråga| Det kopierade kolumnnumret|
 | arbetsblad| sträng| fråga||
 | mapp| sträng| fråga| Dokumentmappen.|
 
  De[OpenAPI-specifikation](https://apireference.aspose.cloud/cells/#/Cells/PostCopyWorksheetColumns) definierar ett allmänt tillgängligt programmeringsgränssnitt och låter dig utföra REST-interaktioner direkt från en webbläsare.
 
- Du kan använda**cURL** kommandoradsverktyg för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man ringer till Cloud API med cURL.
+ Du kan använda**cURL**kommandoradsverktyg för att enkelt komma åt Aspose.Cells webbtjänster. Följande exempel visar hur man ringer till Cloud API med cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 

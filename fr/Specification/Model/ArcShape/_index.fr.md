@@ -4,16 +4,17 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/model/arcshape/
 description: "Aspose.Cells Spécification du modèle cloud : ArcShape. Gérez sans effort Excel et d'autres feuilles de calcul avec des fonctionnalités telles que l'ouverture, la génération, l'édition, le fractionnement, la fusion, la comparaison et la conversion."
+kwords: Excel, Office, feuille de calcul, Cloud REST API, ArcShape
 weight: 50
 ---
 ## **Forme d'arc**
 
- 
+ Représente la forme de l'arc.
 
 | Nom de la propriété| Type de propriété| Nullable| Lecture seulement| Valeur par défaut| Description|
 |:- |:- |:- |:- |:- |:- |
 | Longueur de la pointe de flèche de début| Chaîne| Vrai| FAUX|| Obtient et définit la longueur de la pointe de flèche de début de la ligne.|
-| DébutArrowheadStyle| Chaîne| Vrai| FAUX||Obtient et définit le style de pointe de flèche de début de la ligne.|
+| DébutArrowheadStyle| Chaîne| Vrai| FAUX|| Obtient et définit le style de pointe de flèche de début de la ligne.|
 | Début de la flècheLargeur| Chaîne| Vrai| FAUX|| Obtient et définit la largeur de la pointe de flèche de début de la ligne.|
 | FinArrowheadLength| Chaîne| Vrai| FAUX|| Obtient et définit la longueur de la pointe de flèche de fin de la ligne.|
 | FinArrowheadStyle| Chaîne| Vrai| FAUX|| Obtient et définit le style de pointe de flèche de fin de la ligne.|
@@ -35,7 +36,7 @@ weight: 50
 | X| Entier| Vrai| FAUX|||
 | Oui| Entier| Vrai| FAUX|||
 | Angle de rotation| Flottant| Vrai| FAUX|||
-| Texte HTML| Chaîne| Vrai| FAUX|||
+|Texte HTML| Chaîne| Vrai| FAUX|||
 | Texte| Chaîne| Vrai| FAUX|||
 | Texte alternatif| Chaîne| Vrai| FAUX|||
 | TexteHorizontalAlignement| Chaîne| Vrai| FAUX|||
@@ -56,4 +57,5 @@ weight: 50
 | Lien hypertexte| Chaîne| Vrai| FAUX|||
 | lien| Classe : Lien| Vrai| FAUX|||
 
-**Nom du parent** : (Forme)[forme]
+**Nom du parent** : [Forme](/specification/model/shape)
+

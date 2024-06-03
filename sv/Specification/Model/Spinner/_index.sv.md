@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/model/spinner/
 description: "Aspose.Cells Molnmodellspecifikation: Spinner. Hantera enkelt Excel och andra kalkylarksdokument med funktioner som att öppna, generera, redigera, dela, slå samman, jämföra och konvertera"
+kwords: Excel, Office, Kalkylblad, Cloud REST API, Spinner
 weight: 50
 ---
 ## **spinnare**
 
- 
+ Representerar formulärkontrollen: Spinner.
 
 | Egendomsnamn| Egenskapstyp| Nullbar| Endast läs| Standardvärde| Beskrivning|
 |:- |:- |:- |:- |:- |:- |
@@ -34,7 +35,7 @@ weight: 50
 | X| Heltal| Sann| Falsk|||
 | Y| Heltal| Sann| Falsk|||
 | Rotations vinkel| Flytande| Sann| Falsk|||
-| HtmlText| Sträng| Sann| Falsk|||
+|HtmlText| Sträng| Sann| Falsk|||
 | Text| Sträng| Sann| Falsk|||
 | Alternativtext| Sträng| Sann| Falsk|||
 | TextHorizontal Alignment| Sträng| Sann| Falsk|||
@@ -55,4 +56,5 @@ weight: 50
 | Hyperlänk| Sträng| Sann| Falsk|||
 | länk| Klass: Länk| Sann| Falsk|||
 
-**Förälders namn** : (Form)[form]
+**Förälders namn** : [Form](/specification/model/shape)
+

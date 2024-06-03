@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/deleteunprotectworksheet/
 description: Desproteger hoja de trabajo
+kwords: Excel, Office, hoja de cálculo, nube REST API, eliminar hoja de trabajo sin proteger
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteUnprotectWorksheet" >}}

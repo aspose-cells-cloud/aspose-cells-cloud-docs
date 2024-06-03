@@ -8,6 +8,7 @@ aliases: [/unmerge-merged-cells-of-the-range/]
 keywords: Unmerge merged cells of the range on an Excel worksheet
 description: Aspose.Cells Cloud REST API prend en charge la dissociation des cellules fusionnées de la plage sur une feuille de calcul Excel. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 20
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdwon, Annuler la fusion des cellules fusionnées de la plage
 ---
 Ce REST API indique la fusion des cellules fusionnées de cette plage sur une feuille de calcul Excel.
             
@@ -21,7 +22,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/unm
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| nom du classeur|
 | Nom de la feuille| chaîne| chemin| nom de la feuille de calcul|

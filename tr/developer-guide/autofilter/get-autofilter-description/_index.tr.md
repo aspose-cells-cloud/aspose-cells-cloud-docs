@@ -8,6 +8,7 @@ aliases: [/get-autofilter-description/]
 keywords: Gets auto filter description from an Excel worksheet
 description: Aspose.Cells Bulut API desteği, Excel çalışma sayfasından otomatik filtre açıklamasını alır. SDK, geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 50
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel çalışma sayfasında otomatik filtre alma
 ---
 Bu REST API, Excel çalışma sayfasında `auto filter` açıklamasını almayı gösterir.
  

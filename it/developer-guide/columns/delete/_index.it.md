@@ -8,6 +8,7 @@ aliases: [/delete-column-from-an-excel-worksheet/,/delete-column-from-a-workshee
 keywords: Delete column on an Excel workshee
 description: Aspose.Cells Cloud REST API supporta l'eliminazione della colonna su un foglio di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 80
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Elimina una colonna su un foglio di lavoro Excel
 ---
 Questo REST API copia `column` in un foglio di lavoro Excel.
 
@@ -22,17 +23,17 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/co
  
 | Nome del parametro| Tipo| Percorso/Stringa di query/Corpo HTTP|Descrizione|
 |:- |:- |:- |:- |
-| nome| corda| sentiero|Il nome della cartella di lavoro.|
+| nome| corda| sentiero| Il nome della cartella di lavoro.|
 | nomefoglio| corda| sentiero| Il nome del foglio di lavoro.|
 | colonnaIndice| numero intero| sentiero| L'indice della colonna.|
 | colonne| numero intero| domanda| Le colonne.|
-| aggiornamentoRiferimento| booleano| domanda| Il riferimento all'aggiornamento.|
+| aggiornamentoRiferimento|booleano| domanda| Il riferimento all'aggiornamento.|
 | cartella| corda| domanda| La cartella della cartella di lavoro.|
 | storageName| corda| domanda| nome dell'archivio.|
 
  IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetColumns) definisce un'interfaccia di programmazione accessibile pubblicamente e consente di eseguire interazioni REST direttamente da un browser web.
 
- Puoi usare**cURL** strumento da riga di comando per accedere facilmente ai servizi web Aspose.Cells. Nell'esempio seguente viene illustrato come effettuare chiamate al Cloud API con cURL.
+ Puoi usare**cURL**strumento da riga di comando per accedere facilmente ai servizi web Aspose.Cells. Nell'esempio seguente viene illustrato come effettuare chiamate al Cloud API con cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 

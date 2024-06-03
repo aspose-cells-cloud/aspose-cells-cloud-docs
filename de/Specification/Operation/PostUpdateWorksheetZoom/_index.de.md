@@ -1,27 +1,28 @@
 ﻿---
-title: PostUpdateWorksheetZoo
+title: BeitragUpdateWorksheetZoo
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postupdateworksheetzoom/
-description: Aktualisieren Sie den Skalierungsprozentsatz im Arbeitsblatt. Er sollte zwischen 10 und 400 liegen
+description: Aktualisieren Sie den Skalierungsprozentsatz im Arbeitsblatt. Er sollte zwischen 10 und 400 liegen.
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostUpdateWorksheetZoom
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostUpdateWorksheetZoom" >}}
 {{< blocks/products/cells/docs-title titlemsg="Update the scaling percentage in the worksheet. It should be between 10 and 400." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/zoom,POST,Aktualisieren Sie den Skalierungsprozentsatz im Arbeitsblatt. Er sollte zwischen 10 und 400 liegen.,<a href=\'https://apireference.aspose.cloud/cells/#/Worksheets/PostUpdateWorksheetZoom\'>PostUpdateWorksheetZoom</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="value,integer,Stellt den Skalierungsfaktor in Prozent dar. Er sollte zwischen 10 und 400 liegen." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Wert, Ganzzahl, stellt den Skalierungsfaktor in Prozent dar. Er sollte zwischen 10 und 400 liegen." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/WorksheetsController/PostUpdateWorksheetZoom\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

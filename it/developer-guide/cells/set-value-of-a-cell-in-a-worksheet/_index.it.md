@@ -3,6 +3,7 @@ title: Imposta il valore di una cella in un foglio di lavoro
 type: docs
 url: /it/set-value-of-a-cell-in-a-worksheet/
 weight: 70
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Imposta valore di una cella in un foglio di lavoro
 ---
 Questo REST API indica l'insieme `cell value` in un file Excel.
  

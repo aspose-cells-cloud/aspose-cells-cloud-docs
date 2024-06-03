@@ -1,28 +1,29 @@
 ﻿---
-title: 获取工作表AutoshapeWithForma
+title: 获取工作表自动形状与格式
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/getworksheetautoshapewithformat/
-description: 获取某种格式的自动形状描述
+description: 以某种格式获取自动形状描述
+kwords: Excel，Office，电子表格，云 REST API，GetWorksheetAutoshapeWithFormat
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetAutoshapeWithFormat" >}}
 {{< blocks/products/cells/docs-title titlemsg="Get autoshape description in some format." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/autoshapes/{autoshapeNumber},GET,以某种格式获取自动形状描述。,<a href=\'https://apireference.aspose.cloud/cells/#/Autoshapes/ GetWorksheetAutoshapeWithFormat\'>GetWorksheetAutoshapeWithFormat</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/autoshapes/{autoshapeNumber},GET,以某种格式获取自动形状描述。,<a href=\'https://apireference.aspose.cloud/cells/#/Autoshapes/GetWorksheetAutoshapeWithFormat\'>GetWorksheetAutoshapeWithFormat</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="参数名称、类型、描述" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="名称，字符串，工作簿名称。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName，字符串，工作表名称。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="autoshapeNumber,integer,自动形状编号。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="name,string,工作簿名称。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName，string，工作表名称。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="autoshapeNumber，整数，自动形状编号。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="格式，字符串，自动形状转换格式。" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="文件夹，字符串，文档文件夹。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="存储名称，字符串，存储名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName，string，存储名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/AutoshapesController/GetWorksheetAutoshapeWithFormat\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

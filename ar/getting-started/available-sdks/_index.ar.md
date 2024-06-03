@@ -5,6 +5,7 @@ type: docs
 url: /ar/available-sdks/
 description: Aspose.Cells تدعم السحابة Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
 weight: 30
+kwords: Excel، Office Cloud، REST API، جدول البيانات، PDF، CSV، Json، Markdwon، حزم SDK المتوفرة
 ---
 ## **Aspose.Cells مجموعة أدوات تطوير البرمجيات السحابية**
 Aspose.Cells السحابة هي API موجهة نحو REST، والتي تتيح سهولة التكامل في الأنظمة الحالية.

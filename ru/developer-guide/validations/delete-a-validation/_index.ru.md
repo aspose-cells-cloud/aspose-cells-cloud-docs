@@ -7,6 +7,7 @@ url: /ru/validations/delete/
 keywords: Delete a worksheet validation on an Excel worksheet
 description: Aspose.Cells Cloud REST API поддерживает удаление проверки листа на листе Excel. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 10
+kwords: Excel, Office Cloud, REST API, электронная таблица, PDF, CSV, Json, Markdwon, удалить проверку рабочего листа на листе Excel.
 ---
 Этот REST API указывает на удаление проверки листа по индексу на листе Excel.
  

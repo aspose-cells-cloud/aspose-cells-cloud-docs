@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/model/chartdatatable/
 description: "Aspose.Cells Molnmodellspecifikation: ChartDataTable. Hantera enkelt Excel och andra kalkylarksdokument med funktioner som att öppna, generera, redigera, dela, slå samman, jämföra och konvertera"
+kwords: Excel, Office, Kalkylblad, Cloud REST API, ChartDataTable
 weight: 50
 ---
 ## **chartDataTable**
 
- 
+ Representerar en diagramdatatabell.
 
 | Egendomsnamn| Egenskapstyp| Nullbar| Endast läs| Standardvärde| Beskrivning|
 |:- |:- |:- |:- |:- |:- |
@@ -22,4 +23,5 @@ weight: 50
 | ShowLegendKey| Boolean| Sann| Falsk|| Sant om nyckeln för dataetikettförklaringen är synlig.|
 | länk| Klass: Länk| Sann| Falsk|||
 
-**Förälders namn** : (LinkElement)[linkelement]
+**Förälders namn** : [LinkElement](/specification/model/linkelement)
+

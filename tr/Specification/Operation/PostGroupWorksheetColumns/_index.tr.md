@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/postgroupworksheetcolumns/
 description: Çalışma sayfasındaki çalışma sayfası sütunlarını gruplandırma
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PostGroupWorksheetColumns
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostGroupWorksheetColumns" >}}

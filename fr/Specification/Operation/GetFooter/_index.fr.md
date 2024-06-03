@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/getfooter/
 description: Récupérer la description du pied de page dans la feuille de calcul
+kwords: Excel, Office, feuille de calcul, Cloud REST API, GetFooter
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetFooter" >}}

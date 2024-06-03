@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postmoveworksheet/
 description: Déplacer la feuille de calcul dans le classeur
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostMoveWorksheet
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostMoveWorksheet" >}}

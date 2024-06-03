@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/postworksheetcellsrangesort/
 description: Utför datasortering runt ett cellintervall
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PostWorksheetCellsRangeSort
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangeSort" >}}

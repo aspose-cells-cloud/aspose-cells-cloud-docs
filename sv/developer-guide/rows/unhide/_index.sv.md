@@ -8,6 +8,7 @@ aliases: [/unhide-rows-in-excel-worksheet/]
 keywords: Unhide rows on an Excel worksheet
 description: Aspose.Cells Cloud REST API stöder visning av rader på ett Excel-kalkylblad. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 50
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Visa rader på ett Excel kalkylblad
 ---
 Denna REST API indikerar att rader ska visas i ett Excel kalkylblad.
  
@@ -22,7 +23,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
  
 | Parameternamn| Typ| Sökväg/Frågesträng/HTTPBody|Beskrivning|
 |:- |:- |:- |:- |
-| namn| sträng| väg|Arbetsbokens namn.|
+| namn| sträng| väg| Arbetsbokens namn.|
 | arknamn| sträng| väg| Kalkylbladets namn.|
 | startrad| heltal| fråga| Startradens index som ska användas.|
 | totalt rader| heltal| fråga| Antal rader som ska hanteras.|

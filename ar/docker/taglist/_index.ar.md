@@ -5,6 +5,7 @@ type: docs
 url: /ar/docker/tag-list/
 description: المنصات المدعومة
 weight: 30
+kwords: Excel، Office كلاود، ريست API، جدول البيانات، PDF، CSV، Json، Markdwon، TagList
 ---
 ##  Windows سيرفر 2016 صور ##
 

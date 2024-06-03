@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/getworksheetvalidations/
 description: Hämta beskrivningar av valideringar i arbetsbladet
+kwords: Excel, Office, Spreadsheet, Cloud REST API, GetWorksheetValidations
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetValidations" >}}

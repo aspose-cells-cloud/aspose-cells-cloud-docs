@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postcellcalculate/
 description: Вычислить формулу ячейки на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostCellCalculate
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostCellCalculate" >}}

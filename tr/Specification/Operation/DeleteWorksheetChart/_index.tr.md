@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/deleteworksheetchart/
 description: Çalışma sayfasında bir grafiği dizine göre silme
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, deleteWorksheetChart
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetChart" >}}

@@ -6,6 +6,7 @@ aliases: [/update-a-comment-in-excel-workbook/]
 keywords: REST API, spreadsheets, excel, update commen
 description: "Cells.Облако API для Excel работает: обновить комментарий"
 weight: 30
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, обновление
 ---
 Этот REST API указывает комментарий к ячейке листа обновления.
  

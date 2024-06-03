@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/postworksheetcomment/
 description: Çalışma sayfasındaki hücre yorumunu güncelleme
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PostWorksheetComment
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetComment" >}}

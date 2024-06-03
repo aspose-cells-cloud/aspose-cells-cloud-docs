@@ -8,6 +8,7 @@ aliases: [/unmerge-merged-cells-of-the-range/]
 keywords: Unmerge merged cells of the range on an Excel worksheet
 description: Aspose.Cells Cloud REST API stöder att ta bort sammanslagna celler i intervallet på ett Excel-kalkylblad. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 20
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Unmerge sammanslagna celler i intervallet
 ---
 Denna REST API indikerar att sammanslagna celler i detta intervall ska tas bort på ett Excel-kalkylblad.
             

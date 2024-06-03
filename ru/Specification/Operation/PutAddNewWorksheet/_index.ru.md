@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/putaddnewworksheet/
 description: Добавить новый лист в книгу
+kwords: Excel, Office, электронная таблица, Cloud REST API, PutAddNewWorksheet
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutAddNewWorksheet" >}}
@@ -20,7 +21,7 @@ weight: 50
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Имя параметра, тип, описание" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="позиция, целое число, новая позиция листа." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="Sheettype,строка,Указывает тип рабочего листа(VB/Worksheet/Chart/BIFF4Macro/InternationalMacro/Other/Dialog)." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Sheettype,string, Указывает тип рабочего листа (VB/Worksheet/Chart/BIFF4Macro/InternationalMacro/Other/Dialog)." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="папка,строка,Папка, в которой находится файл." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="StorageName,string,Имя хранилища, в котором находится файл." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}

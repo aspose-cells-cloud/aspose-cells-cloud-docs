@@ -4,6 +4,7 @@ type: docs
 url: /tr/charts/delete/
 aliases: [/delete-a-chart-from-a-worksheet/]
 weight: 40
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Çalışma Sayfasından Grafik Silme
 ---
 Bu REST API, çalışma sayfası grafiğinin dizine göre silindiğini gösterir.
  

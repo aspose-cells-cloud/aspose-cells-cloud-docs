@@ -2,6 +2,7 @@
 title: Операция
 second_title: Aspose.Cells Cloud Documen
 type: docs
+kwords: Excel, Office, Электронная таблица, Cloud REST API, Описание операции
 weight: 50
 ---
 - [Пост-анализExcel](postanalyzeexcel) : выполнить бизнес-анализ данных в файлах Excel.
@@ -58,7 +59,7 @@ weight: 50
 - [Удалитьрабочие строки](deleteworksheetrows) : удалить несколько строк на листе.
 - [PutInsertWorksheetRows](putinsertworksheetrows) : вставьте несколько новых строк на лист.
 - [PutInsertWorksheetRow](putinsertworksheetrow) : вставить новую строку на лист.
-- [PostUpdateWorksheetRow](postupdateworksheetrow) : обновить высоту строк на листе.
+- [Постобдатерабочий листстрока](postupdateworksheetrow) : обновить высоту строк на листе.
 - [СообщениеСкрыть листРоки](posthideworksheetrows) : скрыть строки на листе.
 - [PostUnhideWorksheetRows](postunhideworksheetrows) : показать строки на листе.
 - [СообщениеГруппаРабочий ЛистСтроки](postgroupworksheetrows) : группировать строки на листе.
@@ -104,7 +105,7 @@ weight: 50
 - [Удалитьрабочий лист с условным форматированием](deleteworksheetconditionalformatting) : удалить условное форматирование.
 - [Удалитьрабочий листКондиционалФорматтингАреа](deleteworksheetconditionalformattingarea) : удалить область ячейки из условного форматирования.
 - [Получить рабочую книгу](getworkbook) : Извлечение книг в различных форматах.
-- [PutConvertWorkbook](putconvertworkbook) : преобразовать книгу из запрошенного содержимого в файлы разных форматов.
+- [PutConvertWorkbook](putconvertworkbook) : Преобразовать книгу из запрошенного содержимого в файлы разных форматов.
 - [ПосткнигаСохранить как](postworkbooksaveas) : сохраните файл Excel в различных форматах.
 - [Постконвертироватьрабочую книгу в PDF](postconvertworkbooktopdf) : Преобразовать файл Excel в файлы PDF.
 - [PostConvertWorkbookToPNG](postconvertworkbooktopng) : Преобразовать файл Excel в файлы PNG.
@@ -127,6 +128,7 @@ weight: 50
 - [PostWorkbookDataFill](postworkbookdatafill) Заполнение данных для файлов электронных таблиц в основном используется для заполнения пустых данных в таблицах и диапазонах.
 - [Постдатафилл](postdatafill) Заполнение данных для файлов электронных таблиц в основном используется для заполнения пустых данных в таблицах и диапазонах.
 - [PostDeleteIncompleteRows](postdeleteincompleterows) : Удаление неполных строк файлов электронных таблиц в основном используется для удаления неполных строк в таблицах и диапазонах.
+- [ПостDataTransformation](postdatatransformation) : Преобразование данных электронной таблицы в основном используется для поворота столбцов и отмены поворота столбцов.
 - [GetWorksheetHyperlinks](getworksheethyperlinks) : получить описания гиперссылок на листе.
 - [GetWorksheetГиперссылка](getworksheethyperlink) : Получить описание гиперссылки по индексу на листе.
 - [Удалить рабочий листгиперссылка](deleteworksheethyperlink) : удалить гиперссылку по индексу на листе.
@@ -134,7 +136,7 @@ weight: 50
 - [PutWorksheetГиперссылка](putworksheethyperlink) : добавить гиперссылку на лист.
 - [Удалить рабочий листгиперссылки](deleteworksheethyperlinks) : удалить все гиперссылки на листе.
 - [ПостАссемблировать](postassemble) : Объедините файлы данных с файлами шаблонов для создания файлов в различных форматах.
-- [Посткомпресс](postcompress) : Сжимайте файлы и генерируйте целевые файлы в различных форматах. Поддерживаемые форматы файлов включают Xls, Xlsx, Xlsm, Xlsb, Ods и другие.
+- [Посткомпресс](postcompress) Сжимайте файлы и генерируйте целевые файлы в различных форматах. Поддерживаемые форматы файлов включают Xls, Xlsx, Xlsm, Xlsb, Ods и другие.
 - [PostMerge](postmerge) : объединить ячейки на листе.
 - [ПостСплит](postsplit) : Разделение файлов электронных таблиц Excel на основе рабочих листов и создание выходных файлов в различных форматах.
 - [ПостПоиск](postsearch) : Поиск указанного текста в файлах Excel.
@@ -144,8 +146,8 @@ weight: 50
 - [Постклиробъектс](postclearobjects) : Очистить внутренние элементы в файлах Excel и сгенерировать выходные файлы в различных форматах.
 - [ПостРеверс](postreverse) : перевернуть строки или столбцы в файлах Excel и создать выходные файлы в различных форматах.
 - [Послеремонт](postrepair) : восстанавливайте ненормальные файлы и создавайте файлы в различных форматах.
-- [PostRotate](postrotate) : вращайте строки, столбцы или другие объекты в файлах Excel и сохраняйте их в различных форматах.
-- [Метаданные сообщения](postmetadata) Обновите свойства документа в файле Excel и сохраните их в различных форматах.
+- [PostRotate](postrotate) вращайте строки, столбцы или другие объекты в файлах Excel и сохраняйте их в различных форматах.
+- [Метаданные сообщения](postmetadata) : Обновите свойства документа в файле Excel и сохраните их в различных форматах.
 - [Получить метаданные](getmetadata) : Получить свойства документа ячеек.
 - [Удалить метаданные](deletemetadata) : Удалить свойства документа ячеек в файле Excel и сохранить их в различных форматах.
 - [GetWorksheetListObjects](getworksheetlistobjects) : Получить описания ListObjects на листе.
@@ -155,8 +157,8 @@ weight: 50
 - [Удалитьрабочий листлистобъект](deleteworksheetlistobject) : Удалить объект списка по индексу на листе.
 - [PostWorksheetListObject](postworksheetlistobject) : обновить объект списка по индексу на листе.
 - [PostWorksheetListObjectConvertToRange](postworksheetlistobjectconverttorange) : преобразовать объект списка в диапазон на листе.
-- [PostWorksheetListObjectSummarizeWithPivotTable](postworksheetlistobjectsummarizewithpivottable) : Создайте сводную таблицу с объектом списка на листе.
-- [PostWorksheetListObjectSortTable](postworksheetlistobjectsorttable) Сортировка объекта списка на листе.
+- [PostWorksheetListObjectSummarizeWithPivotTable](postworksheetlistobjectsummarizewithpivottable) Создайте сводную таблицу с объектом списка на листе.
+- [PostWorksheetListObjectSortTable](postworksheetlistobjectsorttable) : Сортировка объекта списка на листе.
 - [Пострабочий листлистлистобжектремоведупликатес](postworksheetlistobjectremoveduplicates) : удалить дубликаты в объекте списка.
 - [PostWorksheetListObjectInsertSlicer](postworksheetlistobjectinsertslicer) : Вставить срез для объекта списка.
 - [PostWorksheetListColumn](postworksheetlistcolumn) : Обновить столбец списка в объекте списка.
@@ -167,33 +169,33 @@ weight: 50
 - [Удалитьрабочий листОлеОбъект](deleteworksheetoleobject) : удалить объект OLE на листе.
 - [PostUpdateWorksheetOleObject](postupdateworksheetoleobject) : обновить объект OLE на листе.
 - [Поместитьрабочий листОлеОбъект](putworksheetoleobject) : добавить объект OLE на лист.
-- [GetVerticalPageBreaks](getverticalpagebreaks) : получить описания вертикальных разрывов страниц на листе.
-- [GetHorizontalPageBreaks](gethorizontalpagebreaks) получить описания горизонтальных разрывов страниц на листе.
+- [GetVerticalPageBreaks](getverticalpagebreaks) получить описания вертикальных разрывов страниц на листе.
+- [GetHorizontalPageBreaks](gethorizontalpagebreaks) : получить описания горизонтальных разрывов страниц на листе.
 - [GetVerticalPageBreak](getverticalpagebreak) : получить описание вертикального разрыва страницы на листе.
 - [GetHorizontalPageBreak](gethorizontalpagebreak) : получить описание горизонтального разрыва страницы на листе.
 - [ПоместитьВертикальныйРазрыв Страницы](putverticalpagebreak) : добавить вертикальный разрыв страницы на листе.
 - [Поместить по горизонталиРазрыв страницы](puthorizontalpagebreak) : добавить горизонтальные разрывы страниц на листе.
 - [Удалить вертикальные разрывы страницы](deleteverticalpagebreaks) : удалить вертикальные разрывы страниц на листе.
-- [Удалить горизонтальные разрывы страниц](deletehorizontalpagebreaks) : удалить горизонтальные разрывы страниц на листе.
+- [Удалить горизонтальные разрывы страницы](deletehorizontalpagebreaks) : удалить горизонтальные разрывы страниц на листе.
 - [Удалитьвертикальный разрыв страницы](deleteverticalpagebreak) : удалить вертикальный разрыв страницы на листе.
 - [Удалить по горизонталиPageBreak](deletehorizontalpagebreak) : удалить горизонтальный разрыв страницы на листе.
 - [GetPageSetup](getpagesetup) : Получить описание настройки страницы на листе.
 - [Настройка пост-страницы](postpagesetup) : обновить настройки страницы на листе.
-- [УдалитьHeaderFooter](deleteheaderfooter) : очистить верхний и нижний колонтитулы на листе.
+- [УдалитьHeaderFooter](deleteheaderfooter) очистить верхний и нижний колонтитулы на листе.
 - [GetHeader](getheader) : Получить описание заголовка страницы на листе.
-- [Заголовок сообщения](postheader) обновить заголовок страницы на листе.
+- [Заголовок сообщения](postheader) : обновить заголовок страницы на листе.
 - [GetFooter](getfooter) : Получить описание нижнего колонтитула страницы на листе.
 - [Нижний колонтитул поста](postfooter) : обновить нижний колонтитул страницы на листе.
 - [PostFitWideToPages](postfitwidetopages) : установка масштаба, при котором страница будет соответствовать ширине при печати на листе.
 - [PostFitTallToPages](postfittalltopages) : установка масштаба, при котором страница будет соответствовать высоте при печати на листе.
 - [Получить рабочий лист картинки](getworksheetpictures) : Получить описания изображений на листе.
 - [GetWorksheetPictureWithFormat](getworksheetpicturewithformat) : Получить изображение по номеру на листе.
-- [Поместитьрабочий листДобавить изображение](putworksheetaddpicture) : добавить новое изображение на лист.
+- [Поместить рабочий листДобавить изображение](putworksheetaddpicture) : добавить новое изображение на лист.
 - [СообщениеРабочий ЛистКартинка](postworksheetpicture) : обновить изображение по индексу на листе.
 - [Удалить рабочий листPicture](deleteworksheetpicture) : удалить объект изображения по индексу на листе.
-- [Удалить рабочий листPictures](deleteworksheetpictures) : удалить все изображения на листе.
+- [Удалить рабочий листPictures](deleteworksheetpictures) удалить все изображения на листе.
 - [Получить рабочий лист сводных таблиц](getworksheetpivottables) : Получить описания сводных таблиц на листе.
-- [Получить рабочий лист сводной таблицы](getworksheetpivottable) получить информацию сводной таблицы по индексу на листе.
+- [Получить рабочий лист сводной таблицы](getworksheetpivottable) : получить информацию сводной таблицы по индексу на листе.
 - [ПолучитьPivotTableField](getpivottablefield) : получение описаний сводных полей в сводной таблице.
 - [GetWorksheetPivotTableFilters](getworksheetpivottablefilters) : получает фильтры сводной таблицы на листе.
 - [GetWorksheetPivotTableFilter](getworksheetpivottablefilter) : получить фильтры сводной таблицы на листе.
@@ -217,7 +219,7 @@ weight: 50
 - [ПоместитьДокументСвойство](putdocumentproperty) : Установите или добавьте свойство Excel.
 - [Получить свойство документа](getdocumentproperty) : Получить свойство Excel по имени.
 - [Удалитьсвойство документа](deletedocumentproperty) : удалить свойство Excel.
-- [Удалитьсвойства документа](deletedocumentproperties) : удалить все пользовательские свойства документа и сбросить встроенные.
+- [Удалитьсвойства документа](deletedocumentproperties) удалить все пользовательские свойства документа и сбросить встроенные.
 - [СообщениеЦифровойПодпись](postdigitalsignature) : Excel цифровая подпись файла.
 - [PostEncryptWorkbook](postencryptworkbook) : Excel Шифрование.
 - [Удалить расшифровку рабочей книги](deletedecryptworkbook) : Excel расшифровка файлов.
@@ -230,9 +232,9 @@ weight: 50
 - [ПостЗащита](postprotect) : Excel шифрование файлов.
 - [PostWorksheetCellsRangesCopy](postworksheetcellsrangescopy) : копирование содержимого из исходного диапазона в целевой диапазон на листе.
 - [PostWorksheetCellsRangeMerge](postworksheetcellsrangemerge) : объединить диапазон ячеек в одну ячейку.
-- [PostWorksheetCellsRangeUnMerge](postworksheetcellsrangeunmerge) : отменить объединение ячеек в этом диапазоне.
+- [PostWorksheetCellsRangeUnMerge](postworksheetcellsrangeunmerge) отменить объединение ячеек в этом диапазоне.
 - [PostWorksheetCellsRangeStyle](postworksheetcellsrangestyle) : установить стиль для указанного диапазона.
-- [GetWorksheetCellsRangeValue](getworksheetcellsrangevalue) получить значения ячеек в указанном диапазоне.
+- [GetWorksheetCellsRangeValue](getworksheetcellsrangevalue) : получить значения ячеек в указанном диапазоне.
 - [PostWorksheetCellsRangeValue](postworksheetcellsrangevalue) : присвоение значения диапазону; при необходимости значение будет преобразовано в другой тип данных, а числовой формат ячейки будет сброшен.
 - [PostWorksheetCellsRangeMoveTo](postworksheetcellsrangemoveto) : перемещение текущего диапазона в диапазон назначения.
 - [PostWorksheetCellsRangeSort](postworksheetcellsrangesort) : выполнить сортировку данных по диапазону ячеек.
@@ -240,8 +242,8 @@ weight: 50
 - [PostWorksheetCellsRangeColumnWidth](postworksheetcellsrangecolumnwidth) : установите ширину столбца указанного диапазона.
 - [PostWorksheetCellsRangeRowHeight](postworksheetcellsrangerowheight) : Устанавливает высоту строки диапазона.
 - [Поместитьрабочий листячейкидиапазон](putworksheetcellsrange) : вставить диапазон ячеек и сдвинуть существующие ячейки в соответствии с указанным параметром сдвига.
-- [Удалитьрабочий листклеллсдиапазон](deleteworksheetcellsrange) : удалить диапазон ячеек и сдвинуть существующие ячейки в соответствии с указанным параметром сдвига.
-- [GetWorksheetShapes](getworksheetshapes) Получить описания фигур на листе.
+- [Удалитьрабочий листселлсдиапазон](deleteworksheetcellsrange) удалить диапазон ячеек и сдвинуть существующие ячейки в соответствии с указанным параметром сдвига.
+- [GetWorksheetShapes](getworksheetshapes) : Получить описания фигур на листе.
 - [GetWorksheetShape](getworksheetshape) : Получить описание фигуры на листе.
 - [Поместитьрабочий листShape](putworksheetshape) : добавить фигуру на лист.
 - [Удалить рабочий листфигуры](deleteworksheetshapes) : удалить все фигуры на листе.
@@ -253,9 +255,9 @@ weight: 50
 - [GetWorksheetSparklineGroup](getworksheetsparklinegroup) : Получить описание группы спарклайнов на листе.
 - [Удалить рабочий листSparklineGroups](deleteworksheetsparklinegroups) : удалить группы спарклайнов на листе.
 - [Удалить рабочий листSparklineGroup](deleteworksheetsparklinegroup) : удалить группу спарклайнов на листе.
-- [Поместитьрабочий листSparklineGroup](putworksheetsparklinegroup) : добавьте группу спарклайнов на лист.
+- [Поместитьрабочий листSparklineGroup](putworksheetsparklinegroup) добавьте группу спарклайнов на лист.
 - [СообщениеРабочий ЛистСпарклайнГруппа](postworksheetsparklinegroup) : обновить группу спарклайнов на листе.
-- [Пострантаск](postruntask) Запуск задач.
+- [Пострантаск](postruntask) : Запуск задач.
 - [GetWorkbookDefaultStyle](getworkbookdefaultstyle) : получить описание стиля по умолчанию для книги.
 - [GetWorkbookTextItems](getworkbooktextitems) : получить текстовые элементы в книге.
 - [Получить имена рабочих книг](getworkbooknames) : получить именованные диапазоны в книге.
@@ -267,10 +269,10 @@ weight: 50
 - [Удалитьимя рабочей книги](deleteworkbookname) : удалить именованный диапазон в книге.
 - [PostWorkbooksMerge](postworkbooksmerge) : объединить книгу с существующей книгой.
 - [СообщениеРабочие книгиПоиск текста](postworkbookstextsearch) : поиск текста в книге.
-- [PostWorkbookTextReplace](postworkbooktextreplace) : заменить текст в книге.
+- [PostWorkbookTextReplace](postworkbooktextreplace) заменить текст в книге.
 - [PostWorkbookGetSmartMarkerResult](postworkbookgetsmartmarkerresult) : интеллектуальная обработка маркеров.
 - [Поместитьрабочую книгуСоздать](putworkbookcreate) : Создайте новую книгу, используя разные методы.
-- [ПостРабочая КнигаСплит](postworkbooksplit) разделить книгу на определенный формат.
+- [ПостРабочая КнигаСплит](postworkbooksplit) : разделить книгу на определенный формат.
 - [PostWorkbookРассчитатьФормула](postworkbookcalculateformula) : вычислить все формулы в книге.
 - [СообщениеAutofitWorkbookRows](postautofitworkbookrows) : автоподбор строк в книге.
 - [СообщениеAutofitWorkbookСтолбцы](postautofitworkbookcolumns) : автоподбор столбцов в книге.
@@ -283,22 +285,22 @@ weight: 50
 - [Получить рабочие листы](getworksheets) : получить описание листов из книги.
 - [GetWorksheetWithFormat](getworksheetwithformat) : получить лист в указанном формате из книги.
 - [PutChangeVisibilityWorksheet](putchangevisibilityworksheet) : изменить видимость листа в книге.
-- [Поместить активный лист](putactiveworksheet) установить активный индекс листа в книге.
+- [Поместить активный лист](putactiveworksheet) : установить активный индекс листа в книге.
 - [ПоместитьВставитьНовыйРабочий Лист](putinsertnewworksheet) : вставить новый лист в книгу.
 - [ПоместитьДобавитьНовыйРабочий Лист](putaddnewworksheet) : добавить новый лист в книгу.
 - [Удалить рабочий лист](deleteworksheet) : удалить лист в книге.
 - [Удалить рабочие листы](deleteworksheets) : удалить совпадающие листы в книге.
 - [PostMoveWorksheet](postmoveworksheet) : Переместить лист в книге.
-- [Рабочий лист PutProtect](putprotectworksheet) : Защитить рабочий лист.
+- [Рабочий лист PutProtect](putprotectworksheet) : защитить лист.
 - [УдалитьUnprotectWorksheet](deleteunprotectworksheet) : снять защиту с листа.
 - [GetWorksheetTextItems](getworksheettextitems) : получить текстовые элементы на листе.
 - [GetWorksheetКомментарии](getworksheetcomments) : Получить описание комментариев на листе.
 - [GetWorksheetComment](getworksheetcomment) : Получить описание комментария на листе.
 - [Поместитьрабочий листКомментарий](putworksheetcomment) : добавить комментарий к ячейке на листе.
 - [PostWorksheetКомментарий](postworksheetcomment) : обновить комментарий к ячейке на листе.
-- [Удалитьрабочий листкомментарий](deleteworksheetcomment) : удалить комментарий к ячейке на листе.
-- [Удалитькомментарии листа](deleteworksheetcomments) удалить все комментарии на листе.
-- [GetWorksheetMergedCells](getworksheetmergedcells) : получить объединенные ячейки рабочего листа.
+- [Удалитьрабочий листкомментарий](deleteworksheetcomment) удалить комментарий к ячейке на листе.
+- [Удалитькомментарии листа](deleteworksheetcomments) : удалить все комментарии на листе.
+- [GetWorksheetMergedCells](getworksheetmergedcells) : Получить объединенные ячейки листа.
 - [GetWorksheetMergedCell](getworksheetmergedcell) : Получить описание объединенной ячейки по ее индексу на листе.
 - [GetWorksheetCalculateFormula](getworksheetcalculateformula) : вычислить формулу на листе.
 - [СообщениеРабочий ЛистРассчитатьФормула](postworksheetcalculateformula) : вычислить формулу на листе.
@@ -322,6 +324,6 @@ weight: 50
 - [GetWorksheetValidations](getworksheetvalidations) : Получить описания проверок на листе.
 - [GetWorksheetValidation](getworksheetvalidation) : получить подтверждение по его индексу на листе.
 - [PutWorksheetValidation](putworksheetvalidation) : добавить проверку по индексу на листе.
-- [Пострабочий листПроверка](postworksheetvalidation) : обновить проверку по индексу на листе.
-- [Удалить рабочий лист валидация](deleteworksheetvalidation) удалить проверку по индексу на листе.
+- [Пострабочий листПроверка](postworksheetvalidation) обновить проверку по индексу на листе.
+- [Удалить рабочий лист валидация](deleteworksheetvalidation) : удалить проверку по индексу на листе.
 - [Удалить рабочий лист валидации](deleteworksheetvalidations) : удалить все проверки на листе.

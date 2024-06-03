@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/putaddnewworksheet/
 description: Çalışma kitabına yeni bir çalışma sayfası ekleme
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PutAddNewWorksheet
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutAddNewWorksheet" >}}

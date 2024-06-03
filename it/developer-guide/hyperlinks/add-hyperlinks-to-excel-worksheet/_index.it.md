@@ -6,6 +6,7 @@ aliases: [/add-hyperlinks-to-excel-worksheet/]
 keywords: Add a hyperlink into an Excel worksheet
 description: Aspose.Cells Cloud REST API supporta l'aggiunta di un collegamento ipertestuale in un foglio di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 20
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Aggiungi
 ---
 Questo REST API indica `add a worksheet hyperlink` su un foglio di lavoro Excel.
  
@@ -25,7 +26,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks
 | prima riga| numero intero| domanda||
 | primacolonna| numero intero| domanda||
 | totaleRighe| numero intero| domanda||
-|totaleColonne| numero intero| domanda||
+| totaleColonne| numero intero| domanda||
 | indirizzo| corda| domanda||
 | cartella| corda| domanda| La cartella documenti.|
 | storageName| corda| domanda| nome dell'archivio.|

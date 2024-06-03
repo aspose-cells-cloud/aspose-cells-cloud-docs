@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/getworksheetcellsrangevalue/
 description: Hämta värdena för celler inom det angivna intervallet
+kwords: Excel, Office, Spreadsheet, Cloud REST API, GetWorksheetCellsRangeValue
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetCellsRangeValue" >}}

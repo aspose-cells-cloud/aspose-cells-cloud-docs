@@ -5,6 +5,7 @@ type: docs
 url: /sv/docker/downloads/
 description: Ladda ner Aspose.Cells Cloud Docker-bilder
 weight: 30
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Ladda ner
 ---
 ##  Windows Server 2016 ##
 

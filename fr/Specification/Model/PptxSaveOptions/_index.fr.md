@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/model/pptxsaveoptions/
 description: "Aspose.Cells Spécification du modèle cloud : PptxSaveOptions. Gérez sans effort Excel et d'autres feuilles de calcul avec des fonctionnalités telles que l'ouverture, la génération, l'édition, le fractionnement, la fusion, la comparaison et la conversion."
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PptxSaveOptions
 weight: 50
 ---
 ## **pptxSaveOptions**
@@ -12,9 +13,9 @@ weight: 50
 
 | Nom de la propriété| Type de propriété| Nullable| Lecture seulement| Valeur par défaut| Description|
 |:- |:- |:- |:- |:- |:- |
-| Ignorer les lignes cachées| Booléen| Vrai| FAUX|||
-| Ajuster la taille de la police pour le type de ligne| Chaîne| Vrai| FAUX|||
-| ExportViewType| Chaîne| Vrai| FAUX|||
+| Ignorer les lignes cachées| Booléen| Vrai| FAUX|| Ignorer les lignes masquées|
+| Ajuster la taille de la police pour le type de ligne| Chaîne| Vrai| FAUX|| Ajuster la taille de la police pour le type de ligne|
+| ExportViewType| Chaîne| Vrai| FAUX|| Obtient et définit le type d'affichage lors de l'exportation vers PowerPoint. Le type d'exportation par défaut fonctionne comme une impression.|
 | Police par défaut| Chaîne| Vrai| FAUX|||
 | CheckWorkbookDefaultFont| Booléen| Vrai| FAUX|||
 | Vérifier la compatibilité des polices| Booléen| Vrai| FAUX|||
@@ -31,7 +32,7 @@ weight: 50
 | Langue d'édition par défaut| Chaîne| Vrai| FAUX|||
 | EmfRenderSetting| Chaîne| Vrai| FAUX|||
 | Fusionner les zones| Booléen| Vrai| FAUX|||
-|Trier les noms externes| Booléen| Vrai| FAUX|||
+| Trier les noms externes| Booléen| Vrai| FAUX|||
 | Mettre à jourSmartArt| Booléen| Vrai| FAUX|||
 | EnregistrerFormat| Chaîne| Vrai| FAUX|||
 | Dossier de fichiers mis en cache| Chaîne| Vrai| FAUX|||
@@ -39,7 +40,8 @@ weight: 50
 | Créer le répertoire| Booléen| Vrai| FAUX|||
 | Activer la compression HTTP| Booléen| Vrai| FAUX|||
 | Actualiser le cache de graphiques| Booléen| Vrai| FAUX|||
-|Trier les noms| Booléen| Vrai| FAUX|||
+| Trier les noms| Booléen| Vrai| FAUX|||
 | ValidateMergedAreas| Booléen| Vrai| FAUX|||
 
-**Nom du parent** : (Options de sauvegarde paginées)[options de sauvegarde paginées]
+**Nom du parent** : [Options de sauvegarde paginées](/specification/model/paginatedsaveoptions)
+

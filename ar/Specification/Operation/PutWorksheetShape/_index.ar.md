@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/putworksheetshape/
 description: إضافة شكل في ورقة العمل
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PutWorksheetShape
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetShape" >}}

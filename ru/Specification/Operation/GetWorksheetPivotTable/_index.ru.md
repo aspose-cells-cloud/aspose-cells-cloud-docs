@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/getworksheetpivottable/
 description: Получение информации сводной таблицы по индексу на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, GetWorksheetPivotTable
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetPivotTable" >}}

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/getworkbooksettings/
 description: Recuperare le descrizioni delle impostazioni della cartella di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, GetWorkbookSettings
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorkbookSettings" >}}

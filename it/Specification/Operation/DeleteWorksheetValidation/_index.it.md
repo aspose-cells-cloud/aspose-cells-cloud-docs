@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/deleteworksheetvalidation/
 description: Elimina una convalida per indice nel foglio di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, EliminaConvalida foglio di lavoro
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetValidation" >}}

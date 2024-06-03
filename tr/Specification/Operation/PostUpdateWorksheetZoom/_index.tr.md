@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/postupdateworksheetzoom/
 description: Çalışma sayfasındaki ölçeklendirme yüzdesini güncelleyin. 10 ila 400 arasında olmalıdır
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PostUpdateWorksheetZoom
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostUpdateWorksheetZoom" >}}

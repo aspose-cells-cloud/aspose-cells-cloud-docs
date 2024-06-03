@@ -6,6 +6,7 @@ url: /tr/file/move/
 keywords: Learn how to download file with Aspose Cells Cloud REST API
 description: Aspose Cells Cloud REST API SDK destekli geliştirme dilleri ile dosyayı nasıl indireceğinizi öğrenin. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 100
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Dosyayı Taşı
 ---
 Bu REST API, `move file`'i gösterir
  
@@ -20,7 +21,7 @@ PUT http://api.aspose.cloud/v3.0/cells/storage/file/move/{srcPath}
  
 | Parametre adı| Tip| Yol/Sorgu Dizesi/HTTPBody|Tanım|
 |:- |:- |:- |:- |
-| srcPath| sicim| yol| Kaynak dosya yolu örneğin '/src.ext'|
+| srcPath| sicim| yol|Kaynak dosya yolu örneğin '/src.ext'|
 | hedefYol| sicim| sorgu| Hedef dosya yolu örneğin '/dest.ext'|
 | srcStorageName| sicim| sorgu| Kaynak depolama adı|
 | destStorageName| sicim| sorgu| Hedef depolama adı|

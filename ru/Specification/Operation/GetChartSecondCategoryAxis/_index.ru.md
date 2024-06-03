@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/getchartsecondcategoryaxis/
 description: Получить ось второй категории диаграммы в символе
+kwords: Excel, Office, электронная таблица, Cloud REST API, GetChartSecondCategoryAxis
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetChartSecondCategoryAxis" >}}

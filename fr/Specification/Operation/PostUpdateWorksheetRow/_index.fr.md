@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postupdateworksheetrow/
 description: Mettre à jour la hauteur des lignes dans la feuille de calcul
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostUpdateWorksheetRow
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostUpdateWorksheetRow" >}}

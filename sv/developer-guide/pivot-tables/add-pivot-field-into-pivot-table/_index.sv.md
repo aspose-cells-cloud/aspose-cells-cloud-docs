@@ -8,6 +8,7 @@ aliases: [/add-a-pivot-table-in-a-worksheet/]
 keywords: Add a pivot field in a pivot table
 description: Aspose.Cells Cloud REST API stöder att lägga till ett pivotfält i en pivottabell. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 40
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Lägg till ett pivotfält i pivottabellen
 ---
 Denna REST API indikerar till `add` pivotfält in i pivottabell
  
@@ -27,7 +28,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables
 | pivotTableIndex| heltal| väg| Pivottabellindex|
 | pivotFieldType| sträng| fråga| Fältets områdestyp.|
 | begäran|| kropp| Dto som innehåller fältindex|
-| behöver Beräkna om| booleskt| fråga| Falsk|
+| behöver Beräkna om|booleskt| fråga| Falsk|
 | mapp| sträng| fråga| Dokumentets mapp.|
 | lagringsnamn| sträng| fråga| lagringsnamn.|
  

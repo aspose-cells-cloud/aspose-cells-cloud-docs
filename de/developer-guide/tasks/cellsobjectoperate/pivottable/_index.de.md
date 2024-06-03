@@ -1,39 +1,40 @@
 ﻿---
-title: Arbeiten mit der Pivot-Tabelle mithilfe des CellsObjectOperate-Tasks
+title: Arbeiten mit Pivot-Tabellen mithilfe von CellsObjectOperate tas
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/tasks/cells-object-operate/pivottable/
 aliases: [/working-with-pivot-table-using-cellsobjectoperate-task/]
 keywords: REST API, pivot table, spreadsheets, exce
-description: "Cells.Cloud API für Excel Operate: Pivot-Tabelle mit der CellsObjectOperate-Aufgabe erstellen"
+description: "Cells.Cloud API für Excel bedienen: Pivot-Tabelle mit CellsObjectOperate-Aufgabe erstellen"
 weight: 10
+kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdwon, Arbeiten mit Pivot-Tabellen unter Verwendung der Aufgabe CellsObjectOperate
 ---
-Dieser REST API erstellt `pivot table` unter Verwendung des Zellenobjekts `task`.
+Dieser REST API erstellt `pivot table` mithilfe der Zellenobjektoperation `task`.
 
 **PivotTableOperateParameter**
 
 
 |Parametername|Typ|Beschreibung|
 |:- |:- |:- |
-| Zielzellenname| Zeichenfolge||
-| Quelldaten| Zeichenfolge||
-| Tabellenname| Zeichenfolge||
-| UseSameSource| Zeichenfolge| wahr falsch|
+| Zielzellenname| Schnur||
+| Quelldaten| Schnur||
+| Tabellenname| Schnur||
+| UseSameSource| Schnur| wahr falsch|
 | PivotTableIndex| ganze Zahl||
 | PivotFieldRows|ganze Zahl[]||
 | PivotFieldColumns|ganze Zahl[]||
-|PivotFieldData|ganze Zahl[]||
+| PivotFieldData|ganze Zahl[]||
 
 
 ## REST API
 
 |**API**|**Typ**|**Beschreibung**|**Ressourcenlink**|
 |:- |:- |:- |:- |
-|/cells/task/runtask|POST|Aufgabe ausführen|[PostRunTask](https://apireference.aspose.cloud/cells/#/Task/PostRunTask)|
+|/Zellen/Aufgabe/Runtask|POST|Aufgabe ausführen|[PostRunTask](https://apireference.aspose.cloud/cells/#/Task/PostRunTask)|
 
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht die Durchführung von REST-Interaktionen direkt über einen Webbrowser.
+ Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen, REST-Interaktionen direkt von einem Webbrowser aus durchzuführen.
 
- Sie können verwenden**cURL** Befehlszeilentool für den einfachen Zugriff auf Aspose.Cells-Webdienste. Das folgende Beispiel zeigt, wie Sie die Cloud API mit cURL anrufen.
+ Sie können**cURL**Befehlszeilentool für den einfachen Zugriff auf Aspose.Cells-Webdienste. Das folgende Beispiel zeigt, wie Sie mit cURL Anrufe an Cloud API tätigen.
 
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
@@ -377,7 +378,7 @@ HttpResponseMessage with the operation result.
 
 ## Cloud SDK-Familie
 
- Die Verwendung eines SDK ist der beste Weg, die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte schauen Sie sich die an[GitHub-Repository](https://github.com/aspose-cells-cloud) Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie hier.
+ Die Verwendung eines SDK ist der beste Weg, um die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte lesen Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
 
-Die folgenden Codebeispiele veranschaulichen, wie Aspose.Cells-Webdienste mithilfe verschiedener SDKs aufgerufen werden:
+Die folgenden Codebeispiele zeigen, wie Sie mit verschiedenen SDKs Aufrufe an die Webdienste Aspose.Cells tätigen:
 

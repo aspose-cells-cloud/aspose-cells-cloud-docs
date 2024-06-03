@@ -8,6 +8,7 @@ aliases: [/autofit-single-column-of-worksheet/]
 keywords: Autofit a column on an Excel workshee
 description: Aspose.Cells Cloud REST API prend en charge l'ajustement automatique d'une colonne sur une feuille de calcul Excel. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 10
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdwon, Ajustement automatique d'une colonne sur une feuille de calcul Excel
 ---
 Ce REST API indique d'ajuster automatiquement une colonne sur une feuille de calcul Excel.
  
@@ -20,7 +21,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitcol
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin||
 | Nom de la feuille| chaîne| chemin||

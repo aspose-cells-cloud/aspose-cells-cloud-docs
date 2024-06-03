@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/deleteworksheetconditionalformattingarea/
 description: Удалить область ячейки из условного форматирования
+kwords: Excel, Office, электронная таблица, Cloud REST API, DeleteWorksheetConditionalFormattingArea
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetConditionalFormattingArea" >}}

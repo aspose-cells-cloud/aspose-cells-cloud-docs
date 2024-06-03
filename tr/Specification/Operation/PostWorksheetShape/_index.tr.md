@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/postworksheetshape/
 description: Çalışma sayfasında bir şekli güncelleme
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PostWorksheetShape
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetShape" >}}

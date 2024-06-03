@@ -8,6 +8,7 @@ aliases: [/copy-range-in-a-worksheet-with-paste-options/]
 keywords: Copy a range in an Excel worksheet with paste options
 description: Aspose.Cells Cloud REST API stöder kopiering av ett intervall i ett Excel-kalkylblad med inklistringsalternativ. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 20
+kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdwon, Kopiera intervall i ett kalkylblad med alternativ för inklistring
 ---
 Denna REST API anger att intervallet ska kopieras i kalkylbladet på ett Excel kalkylblad.
  
@@ -24,7 +25,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges
 |:- |:- |:- |:- |
 | namn| sträng| väg| arbetsbokens namn|
 | arknamn| sträng| väg| kalkylbladsnamn|
-| räckviddOperera|| kropp|copydata,copystyle,copyto,copyvalue|
+| räckviddOperera|| kropp| copydata,copystyle,copyto,copyvalue|
 | mapp| sträng| fråga| Arbetsboksmapp.|
 | lagringsnamn| sträng| fråga| lagringsnamn.|
  

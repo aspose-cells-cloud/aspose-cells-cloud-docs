@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/getworksheetcomment/
 description: Получить описание комментария на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, GetWorksheetComment
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetComment" >}}

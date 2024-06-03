@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/getworkbooktextitems/
 description: Récupérer des éléments de texte dans le classeur
+kwords: Excel, Office, feuille de calcul, Cloud REST API, GetWorkbookTextItems
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorkbookTextItems" >}}

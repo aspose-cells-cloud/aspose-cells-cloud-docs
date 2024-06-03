@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/getworksheetpictures/
 description: Çalışma sayfasındaki resimlerin açıklamalarını alın
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, GetWorksheetPictures
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetPictures" >}}

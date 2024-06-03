@@ -8,6 +8,7 @@ aliases: [/copy-range-in-a-worksheet-with-paste-options/]
 keywords: Copy a range in an Excel worksheet with paste options
 description: Aspose.Cells Cloud REST API поддерживает копирование диапазона на листе Excel с параметрами вставки. SDK поддерживает различные языки разработки. К ним относятся Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 20
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Копировать диапазон на листе с параметрами вставки
 ---
 Этот REST API указывает на копирование диапазона рабочего листа на лист Excel.
  
@@ -24,7 +25,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges
 |:- |:- |:- |:- |
 | имя| нить| путь| имя книги|
 | имя листа| нить| путь| имя листа|
-| диапазонРабота|| тело|копирование данных, стиль копирования, копирование, значение копирования|
+| диапазонРабота|| тело| копирование данных, стиль копирования, копирование, значение копирования|
 | папка| нить| запрос| Папка с рабочей тетрадью.|
 | имя_хранилища| нить| запрос| имя хранилища.|
  

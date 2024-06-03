@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postworksheetcellsrangesort/
 description: Выполнить сортировку данных по диапазону ячеек
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostWorksheetCellsRangeSort
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangeSort" >}}

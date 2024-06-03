@@ -7,6 +7,7 @@ url: /ar/worksheets/background/
 keywords: How to work with background on an Excel worksheet
 description: Aspose.Cells دعم Cloud REST API العمل مع الخلفية في ورقة عمل Excel. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 20
+kwords: Excel، Office السحابة، REST API، جدول البيانات، PDF، CSV، Json، Markdwon، كيفية العمل مع الخلفية في ورقة عمل Excel
 ---
 ## العمل مع الخلفية في ورقة عمل Excel.
 

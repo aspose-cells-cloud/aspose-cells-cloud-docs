@@ -8,6 +8,7 @@ aliases: [/add-a-new-excel-worksheet/]
 keywords: Add an Excel worksheet
 description: Aspose.Cells Cloud REST API admite la adición de una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 20
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Agregar una hoja de trabajo Excel
 ---
 Este REST API indica `add new worksheet`.
  

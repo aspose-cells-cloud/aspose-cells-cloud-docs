@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/putworksheeticonfilter/
 description: Lägg till ett ikonfilter i kalkylbladet
+kwords: Excel, Office, Kalkylblad, Cloud REST API, PutWorksheetIconFilter
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetIconFilter" >}}

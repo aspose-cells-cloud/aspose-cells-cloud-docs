@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/getworkbookname/
 description: Recuperar la descripción de un rango con nombre en el libro de trabajo
+kwords: Excel, Office, hoja de cálculo, nube REST API, GetWorkbookName
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorkbookName" >}}

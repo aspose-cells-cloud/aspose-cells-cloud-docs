@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/model/solidfill/
 description: "Aspose.Cells مواصفات النموذج السحابي: SolidFill. تعامل بسهولة مع Excel ومستندات جداول البيانات الأخرى التي تحتوي على ميزات مثل الفتح والتوليد والتحرير والتقسيم والدمج والمقارنة والتحويل"
+kwords: Excel, Office, جدول البيانات, Cloud REST API, SolidFill
 weight: 50
 ---
 ## **ملء الصلبة**
 
- 
+ يقوم بتغليف الكائن الذي يمثل تنسيق التعبئة الصلبة
 
 | اسم الخاصية| نوع الملكية| لاغية| يقرأ فقط| القيمة الافتراضية| وصف|
 |:- |:- |:- |:- |:- |:- |

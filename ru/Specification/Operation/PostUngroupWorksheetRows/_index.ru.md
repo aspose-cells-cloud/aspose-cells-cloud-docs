@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/postungroupworksheetrows/
 description: Разгруппировать строки на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, PostUngroupWorksheetRows
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostUngroupWorksheetRows" >}}
@@ -19,7 +20,7 @@ weight: 50
      {{< blocks/products/cells/docs-Parameter-content columns="имя_листа,строка,имя листа." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Имя параметра, тип, описание" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="firstIndex,integer, Индекс первой строки, с которой нужно работать." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="firstIndex,integer,индекс первой строки, с которой нужно работать." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="LastIndex,integer,Индекс последней строки, с которой нужно работать." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="isAll,boolean,все ли строки будут работать" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="папка,строка,Папка, в которой находится файл." >}} 

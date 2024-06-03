@@ -4,6 +4,7 @@ type: docs
 url: /sv/charts/to-image/
 aliases: [/convert-chart-to-image/]
 weight: 50
+kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdwon, Konvertera diagram till bild
 ---
 Denna REST API anger hur man konverterar ett diagram till bild.
  

@@ -4,13 +4,14 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/getworksheetlistobjects/
 description: Получить описания ListObjects на листе.
+kwords: Excel, Office, электронная таблица, Cloud REST API, GetWorksheetListObjects
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetListObjects" >}}
 {{< blocks/products/cells/docs-title titlemsg="Retrieve descriptions of ListObjects in the worksheet." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Описание,ссылка API" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/listobjects,GET,Получить описания ListObjects на листе.,<a href=\'https://apireference.aspose.cloud/cells/#/ListObjects/GetWorksheetListObjects\'> GetWorksheetListObjects</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/listobjects,GET,Получить описания объектов ListObjects на листе.,<a href=\'https://apireference.aspose.cloud/cells/#/ListObjects/GetWorksheetListObjects\'> GetWorksheetListObjects</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

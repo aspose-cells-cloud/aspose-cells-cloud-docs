@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/putinsertworksheetcolumns/
 description: Çalışma sayfasına çalışma sayfası sütunları ekleme
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PutInsertWorksheetColumns
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutInsertWorksheetColumns" >}}

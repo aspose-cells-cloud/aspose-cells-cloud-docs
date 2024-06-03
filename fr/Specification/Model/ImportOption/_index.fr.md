@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/model/importoption/
 description: "Aspose.Cells Spécification du modèle cloud : ImportOption. Gérez sans effort Excel et d'autres feuilles de calcul avec des fonctionnalités telles que l'ouverture, la génération, l'édition, le fractionnement, la fusion, la comparaison et la conversion."
+kwords: Excel, Office, feuille de calcul, Cloud REST API, Option d'importation
 weight: 50
 ---
 ## **optiond'importation**
@@ -15,6 +16,7 @@ weight: 50
 | Feuille de travail de destination| Chaîne| Vrai| FAUX|| Nom de la feuille de calcul de destination.|
 | EstInsérer| Booléen| Vrai| FAUX|||
 | ImportDataType| Chaîne| Vrai| FAUX|||
+| La source de données| Classe : Source de données| Vrai| FAUX|||
 | Source| Classe : FichierSource| Vrai| FAUX|||
 
 **Nom des enfants** : 

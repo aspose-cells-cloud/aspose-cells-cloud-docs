@@ -1,12 +1,13 @@
 ﻿---
-title: Storag
+title: Lagerung
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/docker/storage/
-description: So legen Sie die Speicherposition etwa Aspose.Cells Cloud für Docker fest
+description: So legen Sie die Speicherposition für Aspose.Cells Cloud für Docker fest
 weight: 30
+kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdwon, Speicher
 ---
-##  Standardspeicherkonfiguration ##
+##  Standardmäßige Speicherkonfiguration ##
 
 {{< tabs tabTotal="2" tabID="1" tabName1="windows" tabName2="linux" >}}
 
@@ -56,7 +57,7 @@ c:\app\storageResource.json
 
 ```
 
-- **Linux**
+- **linux**
 
 ```linux
 
@@ -67,7 +68,7 @@ c:\app\storageResource.json
 
 ##  Benutzerdefinierte Speicherkonfiguration ##
 
-Das Speicherprofil für die Cloud-Image-Datei Aspose.Cells muss neu angegeben werden, wenn der Kunde einen Speicherordner angibt.
+Das Speicherprofil für die Cloud-Image-Datei Aspose.Cells muss erneut angegeben werden, wenn der Kunde einen Speicherordner angeben muss.
 
 ``` powershell
 
@@ -76,4 +77,4 @@ docker run  -d  -v c:/data:c:/data  -p 47900:5000  -e LicensePublicKey=yourLicen
 ```
 
 **Referenzdokument** : 
-  - [Docker-Run]( https://docs.docker.com/engine/reference/commandline/run/)
+  - [Docker-Ausführung]( https://docs.docker.com/engine/reference/commandline/run/)

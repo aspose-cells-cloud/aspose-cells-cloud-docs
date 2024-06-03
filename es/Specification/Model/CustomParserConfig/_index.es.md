@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/model/customparserconfig/
 description: "Aspose.Cells Especificación del modelo de nube: CustomParserConfig. Maneje sin esfuerzo Excel y otros documentos de hoja de cálculo con funciones como abrir, generar, editar, dividir, fusionar, comparar y convertir."
+kwords: Excel, Office, hoja de cálculo, nube REST API, CustomParserConfig
 weight: 50
 ---
 ## **personalizadoParserConfig**
@@ -13,6 +14,6 @@ weight: 50
 | Nombre de la propiedad| tipo de propiedad| Anulable| Solo lectura| Valor por defecto| Descripción|
 |:- |:- |:- |:- |:- |:- |
 | Índice de columnas| Entero| Verdadero| FALSO|| Columna de puntos|
-| Método de análisis| Cadena| Verdadero| FALSO|| método de análisis de datos. HastaFechaHora HastaCadena|
+| Método de análisis| Cadena| Verdadero| FALSO||método de análisis de datos. HastaFechaHora HastaCadena|
 | Estilo personalizado| Cadena| Verdadero| FALSO|||
 

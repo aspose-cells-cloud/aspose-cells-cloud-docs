@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/putworksheetfiltertop10/
 description: Çalışma sayfasındaki listedeki ilk 10 öğeyi filtreleyin
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PutWorksheetFilterTop10
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetFilterTop10" >}}

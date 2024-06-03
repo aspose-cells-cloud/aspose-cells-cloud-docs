@@ -8,6 +8,7 @@ aliases: [/decrypt-excel-workbooks/]
 keywords: REST API, spreadsheets, excel, decryp
 description: "Cells.Cloud API, Excel için çalışır: Excel çalışma kitabının şifresini çözer"
 weight: 50
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel çalışma kitabının şifresini çözme
 ---
 Bu REST API, Excel `workbook`'in şifresini çözer.
 
@@ -42,7 +43,7 @@ Bu REST API, Excel `workbook`'in şifresini çözer.
 
 [OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDecryptDocument) herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
 
- Kullanabilirsiniz**cURL** Aspose.Cells web hizmetlerine kolayca erişmek için komut satırı aracı. Aşağıdaki örnekte, cURL ile Cloud API'e nasıl çağrı yapılacağı gösterilmektedir.
+ Kullanabilirsiniz**cURL**Aspose.Cells web hizmetlerine kolayca erişmek için komut satırı aracı. Aşağıdaki örnekte, cURL ile Cloud API'e nasıl çağrı yapılacağı gösterilmektedir.
 
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}

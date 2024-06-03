@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/getworksheethyperlinks/
 description: Получение описаний гиперссылок на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, GetWorksheetHyperlinks
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetHyperlinks" >}}

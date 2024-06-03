@@ -6,8 +6,9 @@ type: docs
 url: /tr/rows/unhide/
 aliases: [/unhide-rows-in-excel-worksheet/]
 keywords: Unhide rows on an Excel worksheet
-description: Aspose.Cells Cloud REST API, Excel çalışma sayfasında satırların gizlenmesini destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
+description: Aspose.Cells Cloud REST API, Excel çalışma sayfasında satırların gösterilmesini destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 50
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel çalışma sayfasındaki satırları göster
 ---
 Bu REST API, Excel çalışma sayfasındaki satırların gösterilmesini belirtir.
  
@@ -22,7 +23,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
  
 | Parametre adı| Tip| Yol/Sorgu Dizesi/HTTPBody|Tanım|
 |:- |:- |:- |:- |
-| isim| sicim| yol|Çalışma kitabı adı.|
+| isim| sicim| yol| Çalışma kitabı adı.|
 | sayfaAdı| sicim| yol| Çalışma sayfası adı.|
 | başlangıç sırası| tamsayı| sorgu| Çalıştırılacak başlangıç satırı dizini.|
 | toplamSatırlar| tamsayı| sorgu| Çalıştırılacak satır sayısı.|

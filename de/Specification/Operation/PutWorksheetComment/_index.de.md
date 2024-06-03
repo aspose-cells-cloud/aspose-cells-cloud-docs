@@ -1,27 +1,28 @@
 ﻿---
-title: PutWorksheetCommen
+title: Arbeitsblatt einfügenKommen
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/putworksheetcomment/
-description: Fügen Sie dem Arbeitsblatt einen Zellenkommentar hinzu
+description: Zellkommentar im Arbeitsblatt hinzufügen
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PutWorksheetComment
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetComment" >}}
 {{< blocks/products/cells/docs-title titlemsg="Add cell comment in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/comments/{cellName},PUT,Zellkommentar im Arbeitsblatt hinzufügen.,<a href=\'https://apireference.aspose.cloud/cells/#/Worksheets/ PutWorksheetComment\'>PutWorksheetComment</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/comments/{cellName},PUT,Zellenkommentar im Arbeitsblatt hinzufügen.,<a href=\'https://apireference.aspose.cloud/cells/#/Worksheets/PutWorksheetComment\'>PutWorksheetComment</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="cellName,string,Der Zellenname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="cellName, string, Der Zellenname." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Parametername, Typ, Beschreibung" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="Kommentar, Klasse: Kommentar, Kommentarobjekt." >}} 

@@ -7,8 +7,9 @@ keywords: Range Sort
 url: /es/ranges/sort/
 description:  Establece el borde del contorno alrededor de un rango de celdas.
 weight: 20
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Ordenación por rango
 ---
-Este REST API indica clasificación de rango.
+ Este REST API indica clasificación de rango.
 
 ## RSET API
 

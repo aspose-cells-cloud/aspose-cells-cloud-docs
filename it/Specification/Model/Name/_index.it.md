@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/model/name/
 description: "Aspose.Cells Specifica del modello cloud: Nome. Gestisci facilmente Excel e altri fogli di calcolo con funzionalità come apertura, generazione, modifica, divisione, unione, confronto e conversione"
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, Nome
 weight: 50
 ---
 ## **nome**
 
- 
+ Rappresenta un nome definito per un intervallo di celle.
 
 | Nome della proprietà| Tipo di proprietà| Nullabile| Sola lettura| Valore di default| Descrizione|
 |:- |:- |:- |:- |:- |:- |
@@ -21,4 +22,5 @@ weight: 50
 | Testo| Corda| VERO| Falso|| Ottiene il testo del nome dell'oggetto.|
 | collegamento| Classe: collegamento| VERO| Falso|||
 
-**Nome del genitore** : (ElementoLink)[elementolink]
+**Nome del genitore** : [Elemento di collegamento](/specification/model/linkelement)
+

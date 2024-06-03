@@ -1,9 +1,10 @@
 ﻿---
-title: Ta bort UnProtectWorkboo
+title: Ta bortUnProtectWorkboo
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/deleteunprotectworkbook/
 description: Excel oskydd
+kwords: Excel, Office, Kalkylblad, Cloud REST API, DeleteUnProtectWorkbook
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteUnProtectWorkbook" >}}

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/putworksheetcellsrange/
 description: Infoga ett cellintervall och flytta befintliga celler baserat på det angivna skiftalternativet
+kwords: Excel, Office, Spreadsheet, Cloud REST API, PutWorksheetCellsRange
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetCellsRange" >}}

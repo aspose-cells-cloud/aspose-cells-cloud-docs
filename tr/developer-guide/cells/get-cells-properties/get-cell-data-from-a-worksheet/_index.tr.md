@@ -3,6 +3,7 @@ title: Çalışma Sayfasından Hücre Verilerini Alma
 type: docs
 url: /tr/get-cell-data-from-a-worksheet/
 weight: 10
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Çalışma Sayfasından Hücre Verilerini Alma
 ---
 Bu REST API, `cellOrMethodName` parametresi hücre adı olduğunda Excel dosyasında `cell` alındığını gösterir.
 

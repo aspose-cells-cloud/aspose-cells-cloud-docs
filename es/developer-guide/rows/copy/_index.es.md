@@ -8,6 +8,7 @@ aliases: [/copy-rows-in-excel-worksheet/]
 keywords: Copy rows on an Excel workshee
 description: Aspose.Cells Cloud REST API admite la copia de filas en una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 30
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Copiar filas en una hoja de trabajo Excel
 ---
 Este REST API indica copiar filas de la hoja de trabajo.
  
@@ -22,7 +23,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
  
 | Nombre del parámetro| Tipo| Ruta/Cadena de consulta/Cuerpo HTTP|Descripción|
 |:- |:- |:- |:- |
-| nombre| cadena| camino|El nombre del libro de trabajo.|
+| nombre| cadena| camino| El nombre del libro de trabajo.|
 | nombre de la hoja| cadena| camino| El nombre de la hoja de trabajo.|
 | fuenteRowIndex| entero| consulta| Índice de fila de origen|
 | destinoRowIndex| entero| consulta| Índice de fila de destino|

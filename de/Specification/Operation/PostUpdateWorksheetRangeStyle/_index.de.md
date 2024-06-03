@@ -3,28 +3,29 @@ title: PostUpdateWorksheetRangeStyl
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postupdateworksheetrangestyle/
-description: Zellbereichsstile im Arbeitsblatt aktualisieren
+description: Aktualisieren Sie die Zellbereichsstile im Arbeitsblatt
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostUpdateWorksheetRangeStyle
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostUpdateWorksheetRangeStyle" >}}
 {{< blocks/products/cells/docs-title titlemsg="Update cell range styles in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells/style,POST,Aktualisieren Sie Zellbereichsstile im Arbeitsblatt.,<a href=\'https://apireference.aspose.cloud/cells/#/Cells/PostUpdateWorksheetRangeStyle \'>PostUpdateWorksheetRangeStyle</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells/style,POST,Zellbereichsstile im Arbeitsblatt aktualisieren.,<a href=\'https://apireference.aspose.cloud/cells/#/Cells/PostUpdateWorksheetRangeStyle\'>PostUpdateWorksheetRangeStyle</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="range,string,Stellt den Bereich dar, für den die angegebenen Zellen gelten." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Bereich, Zeichenfolge, stellt den Bereich dar, auf den die angegebenen Zellen zutreffen." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="style,class:style,Style mit aktualisierten Stileinstellungen." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Stil, Klasse: Stil, Stil mit aktualisierten Stileinstellungen." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

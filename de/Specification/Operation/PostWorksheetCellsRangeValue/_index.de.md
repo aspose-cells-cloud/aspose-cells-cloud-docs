@@ -3,30 +3,31 @@ title: PostWorksheetCellsRangeValu
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postworksheetcellsrangevalue/
-description: Weisen Sie dem Bereich einen Wert zu. Bei Bedarf wird der Wert in einen anderen Datentyp konvertiert und das Zahlenformat der Zelle zurückgesetzt
+description: Weisen Sie dem Bereich einen Wert zu; bei Bedarf wird der Wert in einen anderen Datentyp konvertiert und das Zahlenformat der Zelle wird zurückgesetzt
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostWorksheetCellsRangeValue
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangeValue" >}}
 {{< blocks/products/cells/docs-title titlemsg="Assign a value to the range; if necessary, the value will be converted to another data type, and the cell\'s number format will be reset." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges/value,POST,Weisen Sie dem Bereich einen Wert zu; Bei Bedarf wird der Wert in einen anderen Datentyp konvertiert und das Zahlenformat der Zelle zurückgesetzt.,<a href=\'https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeValue\'>PostWorksheetCellsRangeValue</ a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges/value,POST,Weisen Sie dem Bereich einen Wert zu; bei Bedarf wird der Wert in einen anderen Datentyp konvertiert und das Zahlenformat der Zelle zurückgesetzt.,<a href=\'https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeValue\'>PostWorksheetCellsRangeValue</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="Wert, Zeichenfolge, Eingabewert." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="isConverted,boolean,True: gegebenenfalls in einen anderen Datentyp konvertiert." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="setStyle,boolean,True: Legt beim Konvertieren in einen anderen Datentyp das Zahlenformat auf den Zellenstil fest." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Original-Arbeitsmappenordner." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="isConverted,boolean,True: bei Bedarf in einen anderen Datentyp konvertiert." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="setStyle,boolean,True: Legt das Zahlenformat beim Konvertieren in einen anderen Datentyp auf den Stil der Zelle fest." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Ursprünglicher Arbeitsmappenordner." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Speichername." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns=" range,class:range,Der Bereich im Arbeitsblatt." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns=" Bereich, Klasse: Bereich, Der Bereich im Arbeitsblatt." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

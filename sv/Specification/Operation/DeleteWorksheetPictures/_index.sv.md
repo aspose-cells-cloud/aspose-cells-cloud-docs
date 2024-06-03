@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/deleteworksheetpictures/
 description: Ta bort alla bilder i arbetsbladet
+kwords: Excel, Office, Kalkylblad, Cloud REST API, Ta bort WorksheetPictures
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetPictures" >}}

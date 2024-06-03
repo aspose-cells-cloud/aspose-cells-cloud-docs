@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/postpivottablefieldmoveto/
 description: Sposta un campo pivot nella tabella pivot
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, PostPivotTableFieldMoveTo
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostPivotTableFieldMoveTo" >}}

@@ -1,17 +1,18 @@
 ﻿---
-title: 删除 Excel 工作表上的背景
+title: 删除 Excel 工作表的背景
 second_title: Aspose.Cells Cloud Documen
-linktitle: 删除
+linktitle: 刪除
 type: docs
 url: /zh/worksheets/background/delete/
 aliases: [/delete-background-or-watermark-of-excel-worksheet/]
 keywords: Delete background on an Excel worksheet
-description: Aspose.Cells Cloud REST API 支持删除 Excel 工作表上的背景。 SDK支持多种开发语言。它们包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 swift
+description: Aspose.Cells Cloud REST API 支持删除 Excel 工作表的背景。SDK 支持多种开发语言。包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 swift
 weight: 210
+kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdwon、删除 Excel 工作表的背景
 ---
-这个REST API表示`delete worksheet background image`。
+这个 REST API 表示 `delete worksheet background image`。
  
-## RSET API
+## 重置 API
  
 ```bash
  
@@ -27,9 +28,9 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/backgrou
 |文件夹|细绳|询问||
 |存储名称|细绳|询问|存储名称。|
  
-这[开放API规范](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheetBackground)定义了一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheetBackground)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
  
-您可以使用cURL命令行工具轻松访问Aspose.Cells Web服务。以下示例展示如何使用 cURL 呼叫云端 API。
+您可以使用 cURL 命令行工具轻松访问 Aspose.Cells Web 服务。以下示例显示如何使用 cURL 调用云 API。
  
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
  
@@ -61,9 +62,9 @@ curl -v "http://api.aspose.com/v3.0/cells/WorkSheetBackground_Sample_Test_Book.x
  
 {{< /tabs >}}
  
-## 云SDK系列
+## Cloud SDK 系列
  
-使用 SDK 是加快开发速度的最佳方式。 SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)有关 Aspose.Cells Cloud SDK 的完整列表。
+使用 SDK 是加快开发速度的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)获得 Aspose.Cells Cloud SDKs 的完整列表。
  
 以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
  

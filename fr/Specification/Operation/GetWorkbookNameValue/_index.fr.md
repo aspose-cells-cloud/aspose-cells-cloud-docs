@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/getworkbooknamevalue/
 description: Récupérer la valeur d'une plage nommée dans le classeur
+kwords: Excel, Office, feuille de calcul, Cloud REST API, GetWorkbookNameValue
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorkbookNameValue" >}}

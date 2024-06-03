@@ -3,6 +3,7 @@ title: Изменить стиль ячейки в рабочем листе Exc
 type: docs
 url: /ru/change-cell-style-in-excel-worksheet/
 weight: 30
+kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, изменить стиль ячейки на листе Excel
 ---
 Этот REST API указывает на обновление `cell style` в файле Excel.
 

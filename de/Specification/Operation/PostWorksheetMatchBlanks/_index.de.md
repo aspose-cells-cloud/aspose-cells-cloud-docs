@@ -1,27 +1,28 @@
 ﻿---
-title: PostWorksheetMatchBlank
+title: BeitragArbeitsblattMatchBlank
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postworksheetmatchblanks/
-description: Passen Sie alle leeren Zellen in der Liste an
+description: Alle leeren Zellen in der Liste abgleichen
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostWorksheetMatchBlanks
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetMatchBlanks" >}}
 {{< blocks/products/cells/docs-title titlemsg="Match all blank cells in the list." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/autoFilter/matchBlanks,POST,Alle leeren Zellen in der Liste abgleichen.,<a href=\'https://apireference.aspose.cloud/cells/#/AutoFilter/PostWorksheetMatchBlanks \'>PostWorksheetMatchBlanks</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/autoFilter/matchBlanks,POST,Alle leeren Zellen in der Liste abgleichen.,<a href=\'https://apireference.aspose.cloud/cells/#/AutoFilter/PostWorksheetMatchBlanks\'>PostWorksheetMatchBlanks</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Name der Arbeitsmappe." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Name der Arbeitsmappe." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="fieldIndex,integer,Der ganzzahlige Offset des Feldes, auf dem Sie den Filter basieren möchten (von links in der Liste; das Feld ganz links ist Feld 0)." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="fieldIndex,integer,Der ganzzahlige Offset des Felds, auf dem der Filter basieren soll (von links in der Liste; das äußerste linke Feld ist Feld 0)." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/AutoFilterController/PostWorksheetMatchBlanks\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

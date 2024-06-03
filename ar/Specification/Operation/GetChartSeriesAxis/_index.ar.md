@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/getchartseriesaxis/
 description: استرجع أوصاف محور سلسلة المخططات في المخطط
+kwords: Excel، Office، جدول البيانات، Cloud REST API، GetChartSeriesAxis
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetChartSeriesAxis" >}}

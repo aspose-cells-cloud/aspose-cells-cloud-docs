@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/deleteverticalpagebreak/
 description: Çalışma sayfasındaki dikey sayfa sonunu silme
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, SilVerticalPageBreak
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteVerticalPageBreak" >}}

@@ -7,6 +7,7 @@ weight: 5
 url: /ru/what-s-new-in-aspose-cells-cloud/
 keywords: What's new in aspose cells cloud. Office Excel 2013,  Office Excel 2016,  Office Excel 2019，office Excel 365
 description: На этой странице описаны наиболее интересные новые Aspose.Cells облачные функции, представленные в последних выпусках.
+kwords: Excel, Office Cloud, REST API, электронная таблица, PDF, CSV, Json, Markdwon, что нового в Aspose.Cells Cloud
 ---
 Добро пожаловать в раздел «Новости облачной документации Aspose.Cells». Используйте эту страницу, чтобы быстро найти последние изменения.
 
@@ -30,7 +31,7 @@ description: На этой странице описаны наиболее ин
 
 ## Улучшения в версии 23.12.0
 
-- API конверсий добавляют параметр региона.
+- API-интерфейсы конверсии добавляют параметр региона.
 - API защиты добавляют параметр региона.
 - Данные сборки API добавляют параметр региона.
 - Объединить файлы API добавляет параметр региона.
@@ -116,7 +117,7 @@ description: На этой странице описаны наиболее ин
 
 ## Aspose.Cells Облако 22.11
 
- Добавлен новый API для конвертации в JSON.
+ * Добавлен новый API для конвертации в JSON.
  * Добавлен новый API для конвертации в sql.
  * Добавлен новый API для конвертации в cvs.
 
@@ -145,12 +146,12 @@ description: На этой странице описаны наиболее ин
 
 ## Aspose.Cells Облако 22,6
 
-* [Улучшение для облачных API Cells.](/cells/aspose-cells-cloud-22-6-release-notes/)
+[Улучшение для облачных API Cells.](/cells/aspose-cells-cloud-22-6-release-notes/)
 * Поддержка преобразования файлов в zip-архиве в различные форматы.
 
 ## Aspose.Cells Облако 22,5
 
-[Улучшение для экспорта API.](https://docs.aspose.cloud/cells/export/)
+* [Улучшение для экспорта API.](https://docs.aspose.cloud/cells/export/)
 * [Улучшение для очистки API.](https://docs.aspose.cloud/cells/clear/)
 
 ## Aspose.Cells Облако 22,4

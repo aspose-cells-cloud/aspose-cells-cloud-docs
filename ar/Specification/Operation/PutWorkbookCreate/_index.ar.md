@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/putworkbookcreate/
 description: إنشاء مصنف جديد باستخدام أساليب مختلفة
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PutWorkbookCreate
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorkbookCreate" >}}

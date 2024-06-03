@@ -8,6 +8,7 @@ aliases: [/get-oleobject-from-a-worksheet/]
 keywords: Get an OLE object in an Excel worksheet
 description: Aspose.Cells Cloud REST API stöder att få ett OLE-objekt i ett Excel-kalkylblad. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 10
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Hämta ett OLE-objekt i ett Excel kalkylblad
 ---
 Denna REST API indikerar till `get` en `OLE object` med format i ett Excel kalkylblad.
  

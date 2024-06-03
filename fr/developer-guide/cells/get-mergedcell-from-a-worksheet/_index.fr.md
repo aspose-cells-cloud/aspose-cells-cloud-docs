@@ -3,6 +3,7 @@ title: Obtenir MergedCell à partir d'une feuille de travail
 type: docs
 url: /fr/get-mergedcell-from-a-worksheet/
 weight: 60
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, obtenir MergedCell à partir d'une feuille de calcul
 ---
 Ce REST API indique obtenir `merged cell` dans un fichier Excel.
 
@@ -15,7 +16,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/mergedCells
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Nom du document.|
 | Nom de la feuille| chaîne| chemin| Le nom de la classe de travail.|

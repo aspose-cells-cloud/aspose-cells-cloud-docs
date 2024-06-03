@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postclearobjects/
 description: مسح العناصر الداخلية في ملفات Excel وإنشاء ملفات الإخراج بتنسيقات مختلفة
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostClearObjects
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostClearObjects" >}}

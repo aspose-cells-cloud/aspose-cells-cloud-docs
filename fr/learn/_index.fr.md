@@ -4,6 +4,7 @@ type: docs
 url: /fr/learn-aspose-cells-cloud
 description: Bienvenue pour apprendre Aspose.Cells Cloud
 weight: 10
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, bienvenue pour apprendre Aspose.Cells Cloud
 ---
 # Bienvenue pour apprendre Aspose.Cells Cloud
 
@@ -11,7 +12,7 @@ Ce site est dédié à aider les développeurs qui souhaitent utiliser le dével
 
 ## Qu'est-ce que les API Cloud Aspose.Cells ?
 
- Le Aspose.Cells Cloud API est un service basé sur le cloud offrant aux développeurs une boîte à outils complète pour exécuter diverses tâches liées aux feuilles de calcul.
+Le Aspose.Cells Cloud API est un service basé sur le cloud offrant aux développeurs une boîte à outils complète pour exécuter diverses tâches liées aux feuilles de calcul.
 
 Ce API fait partie de la suite d'outils de manipulation de documents basés sur le cloud de Aspose, permettant aux utilisateurs de gérer par programme des documents Microsoft Excel (y compris XLS, XLSX, CSV et plus) via le cloud API.
 
@@ -23,7 +24,7 @@ Le Aspose.Cells Cloud API est un excellent outil pour les développeurs de tous 
 ## Comment utiliser les API Cloud Aspose.Cells ?
 
 - [Enregistrez un compte Cloud Aspose](https://id.containerize.com/signup) et[obtenir une clé API pour l'authentification](https://dashboard.aspose.cloud/applications)
-- Installez des SDK dans différents langages de développement en fonction des besoins des développeurs, ou développez des SDK selon les[API références](https://reference.aspose.cloud/cells/) fourni par Aspose.Cells Cloud.
+-  Installez des SDK dans différents langages de développement en fonction des besoins des développeurs, ou développez des SDK selon les[API références](https://reference.aspose.cloud/cells/) fourni par Aspose.Cells Cloud.
 - Créez une demande API et appelez le API.
 
 

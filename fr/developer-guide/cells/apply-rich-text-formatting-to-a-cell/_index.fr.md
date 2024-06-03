@@ -3,6 +3,7 @@ title: Appliquer le formatage de texte enrichi à un Cel
 type: docs
 url: /fr/apply-rich-text-formatting-to-a-cell/
 weight: 40
+kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, appliquer un formatage de texte enrichi à une cellule
 ---
 Ce REST API indique d'appliquer `rich text formatting` à une cellule d'un fichier Excel.
 
@@ -15,7 +16,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cel
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin||
 | Nom de la feuille| chaîne| chemin||

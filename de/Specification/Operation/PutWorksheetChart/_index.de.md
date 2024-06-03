@@ -1,40 +1,41 @@
 ﻿---
-title: PutWorksheetChar
+title: ArbeitsblattZeichen einfügen
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/putworksheetchart/
-description: Fügen Sie im Arbeitsblatt ein neues Diagramm hinzu
+description: Fügen Sie dem Arbeitsblatt ein neues Diagramm hinzu
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PutWorksheetChart
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetChart" >}}
 {{< blocks/products/cells/docs-title titlemsg="Add a new chart in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/charts,PUT,Fügen Sie ein neues Diagramm im Arbeitsblatt hinzu.,<a href=\'https://apireference.aspose.cloud/cells/#/Charts/PutWorksheetChart\'> PutWorksheetChart</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/charts,PUT,Fügen Sie dem Arbeitsblatt ein neues Diagramm hinzu.,<a href=\'https://apireference.aspose.cloud/cells/#/Charts/PutWorksheetChart\'>PutWorksheetChart</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="chartType,string,Diagrammtyp, siehe Eigenschaft Typ in der Diagrammressource." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="UpperLeftRow,integer,Obere linke Zeile für das neue Diagramm." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="UpperLeftColumn,integer,Obere linke Spalte für das neue Diagramm." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="LowerRightRow,integer,Untere linke Zeile für das neue Diagramm." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="LowerRightColumn,integer,Spalte unten links für das neue Diagramm." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Diagrammtyp, Zeichenfolge, Diagrammtyp, siehe Eigenschaftentyp in der Diagrammressource." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="upperLeftRow,integer,Obere linke Zeile für das neue Diagramm." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="upperLeftColumn,integer,Obere linke Spalte für das neue Diagramm." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="lowerRightRow,integer,Untere linke Zeile für das neue Diagramm." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="lowerRightColumn,integer,Untere linke Spalte für das neue Diagramm." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Bereich, Zeichenfolge, Geben Sie die Werte an, aus denen die Datenreihe dargestellt werden soll." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns=" isVertical,boolean,Geben Sie an, ob die Reihe aus einem Bereich von Zellwerten zeilen- oder spaltenweise dargestellt werden soll." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="CategoryData,String,Den Bereich der Kategorieachsenwerte abrufen oder festlegen. Es kann sich um einen Bereich von Zellen handeln (z. B. „D1:E10“)." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="isAutoGetSerialName,boolean,Geben Sie an, ob der Seriennummernname automatisch aktualisiert werden soll." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="title,string,Geben Sie den Namen des Diagrammtitels an." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns=" isVertical, boolean, Geben Sie an, ob die Reihe aus einem Bereich von Zellwerten zeilen- oder spaltenweise dargestellt werden soll." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="categoryData, string, Ruft den Bereich der Kategorieachsenwerte ab oder legt ihn fest. Es kann sich um einen Zellbereich handeln (z. B. „D1:E10“)." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="isAutoGetSerialName,boolean,Geben Sie an, ob der Serienname automatisch aktualisiert werden soll." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="Titel, Zeichenfolge, Geben Sie den Titelnamen des Diagramms an." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="dataLabels,boolean,Stellt das Anzeigeverhalten der Datenbeschriftungswerte des angegebenen Diagramms dar. True, um die Werte anzuzeigen, False, um sie auszublenden." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="dataLabelsPosition,string,Stellt die Position der Datenbeschriftung dar (Center/InsideBase/InsideEnd/OutsideEnd/Oben/Unten/Links/Rechts/BestFit/Moved)." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="PivotTableSheet,String,Die Quelle sind die Daten der PivotTable. Wenn PivotSource nicht leer ist, handelt es sich bei dem Diagramm um ein PivotChart." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="PivotTableName,String,Der Name der Pivot-Tabelle." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="dataLabels, boolean, stellt das Anzeigeverhalten der Datenbeschriftungswerte des angegebenen Diagramms dar. True, um die Werte anzuzeigen, False, um sie auszublenden." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="dataLabelsPosition, Zeichenfolge, stellt die Position der Datenbeschriftung dar (Mitte/Innenbasis/Innenende/Außenende/Oben/Unten/Links/Rechts/BesteAnpassung/Verschoben)." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="pivotTableSheet, string, Die Quelle sind die Daten der PivotTable. Wenn PivotSource nicht leer ist, handelt es sich bei dem Diagramm um ein PivotChart." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="pivotTableName, Zeichenfolge, Der Name der Pivot-Tabelle." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/ChartsController/PutWorksheetChart\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

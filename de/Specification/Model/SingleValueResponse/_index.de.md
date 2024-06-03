@@ -1,19 +1,21 @@
 ﻿---
-title: SingleValueRespons
+title: Einzelwertantworten
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/model/singlevalueresponse/
-description: "Aspose.Cells Cloud-Modellspezifikation: SingleValueResponse. Bearbeiten Sie mühelos Excel und andere Tabellenkalkulationsdokumente mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+description: "Aspose.Cells Cloud-Modellspezifikation: SingleValueResponse. Müheloses Bearbeiten von Excel und anderen Tabellenkalkulationsdokumenten mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, SingleValueResponse
 weight: 50
 ---
-## **singleValueResponse**
+## **Einzelwertantwort**
 
- 
+ Stellt die SingleValue-Antwort dar.
 
-| Name des Anwesens| Art der Immobilie| Nullbar| Schreibgeschützt| Standardwert| Beschreibung|
+| Name des Anwesens| Art der Immobilie| Nullwerte zulassen| Schreibgeschützt| Standardwert| Beschreibung|
 |:- |:- |:- |:- |:- |:- |
-| Wert| Klasse:SingleValue| WAHR| FALSCH|||
+| Wert| Klasse:Einzelwert| WAHR| FALSCH|||
 | Code| Ganze Zahl| WAHR| FALSCH|||
 | Status| Zeichenfolge| WAHR| FALSCH|||
 
-**Elternname** : (CellsCloudResponse)[cellscloudresponse]
+**Elternname** : [ZellenCloudResponse](/specification/model/cellscloudresponse)
+

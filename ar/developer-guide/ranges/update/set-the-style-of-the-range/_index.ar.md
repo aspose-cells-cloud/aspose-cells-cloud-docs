@@ -8,6 +8,7 @@ aliases: [/set-the-style-of-the-range/]
 keywords: Set range style on an Excel workshee
 description: Aspose.Cells Cloud REST API يدعم إعداد نمط النطاق في ورقة عمل Excel. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 70
+kwords: Excel، Office Cloud، REST API، جدول البيانات، PDF، CSV، Json، Markdwon، ضبط نمط النطاق
 ---
 ## **مقدمة**
 يتيح لك هذا المثال ضبط نمط النطاق باستخدام Aspose.Cells Cloud API في تطبيقاتك. يمكنك استخدام REST API الخاص بنا بأي لغة: .NET، Java، PHP، Ruby، Rails، Python، jQuery وغيرها الكثير.

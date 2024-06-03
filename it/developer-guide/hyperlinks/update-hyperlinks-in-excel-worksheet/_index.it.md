@@ -6,6 +6,7 @@ aliases: [/update-hyperlinks-in-excel-worksheet/]
 keywords: Update a hyperlink in an Excel worksheet
 description: Aspose.Cells Cloud REST API supporta l'aggiornamento di un collegamento ipertestuale in un foglio di lavoro Excel. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 30
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Aggiorna
 ---
 Questo REST API indica `update worksheet hyperlink` tramite indice su un foglio di lavoro Excel.
  

@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postworksheetlistobjectremoveduplicates/
 description: إزالة التكرارات في كائن القائمة
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostWorksheetListObjectRemoveDuplicates
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetListObjectRemoveDuplicates" >}}

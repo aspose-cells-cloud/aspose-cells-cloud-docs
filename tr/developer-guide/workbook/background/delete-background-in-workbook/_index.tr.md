@@ -8,6 +8,7 @@ aliases: [/delete-background-in-workbook/,/workbook/delete-background/]
 keywords: Delete background on an Excel workbook
 description: Aspose.Cells Cloud REST API, Excel dosyasındaki Excel çalışma kitabındaki arka planın silinmesini destekler. SDK çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur
 weight: 170
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel çalışma kitabındaki arka planı silin
 ---
 Bu REST API, Excel çalışma kitabındaki arka planın silineceğini belirtir.
 
@@ -27,7 +28,7 @@ Bu REST API, Excel çalışma kitabındaki arka planın silineceğini belirtir.
 
 [OpenAPI Spesifikasyonu](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDecryptDDeleteWorkbookBackgroundocument) herkese açık bir programlama arayüzü tanımlar ve REST etkileşimlerini doğrudan bir web tarayıcısından gerçekleştirmenize olanak tanır.
 
- Kullanabilirsiniz**cURL** Aspose.Cells web hizmetlerine kolayca erişmek için komut satırı aracı. Aşağıdaki örnekte, cURL ile Cloud API'e nasıl çağrı yapılacağı gösterilmektedir.
+ Kullanabilirsiniz**cURL**Aspose.Cells web hizmetlerine kolayca erişmek için komut satırı aracı. Aşağıdaki örnekte, cURL ile Cloud API'e nasıl çağrı yapılacağı gösterilmektedir.
 
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}

@@ -4,6 +4,7 @@ type: docs
 url: /ru/chart/title/add/
 aliases: [/set-chart-title-in-excel-worksheet/]
 weight: 30
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Установить заголовок диаграммы на листе Excel
 ---
 Этот REST API указывает добавить заголовок диаграммы/установить видимый заголовок диаграммы.
  

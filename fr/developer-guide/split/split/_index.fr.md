@@ -1,12 +1,13 @@
 ﻿---
 title: Split
 second_title: Aspose.Cells Cloud Documen
-linktitle: Multi-fichier
+linktitle: Multi-fichiers
 type: docs
 url: /fr/split/multi-files/
 keywords: Split multi Excel files
 description: Aspose.Cells Cloud REST API prend en charge le fractionnement de plusieurs fichiers Excel. Le SDK prend en charge différents types de langages de développement. Ils incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 32
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdwon, Split
 ---
 Cette API REST indique `split` multi fichiers Excel.
 
@@ -19,7 +20,7 @@ POST http://api.aspose.cloud/v3.0/cells/split
 ```
  Les paramètres de la requête sont :
  
-| Le nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
+| Le nom du paramètre| Taper| Chemin/Chaîne de requête/HTTPBody|Description|
 |:- |:- |:- |:- |
 | déposer| déposer| Données de formulaire| Fichier à télécharger|
 | format| chaîne| requête||

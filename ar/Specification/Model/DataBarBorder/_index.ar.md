@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/model/databarborder/
 description: "Aspose.Cells مواصفات النموذج السحابي: DataBarBorder. تعامل بسهولة مع Excel ومستندات جداول البيانات الأخرى التي تحتوي على ميزات مثل الفتح والتوليد والتحرير والتقسيم والدمج والمقارنة والتحويل"
+kwords: Excel، Office، جدول البيانات، Cloud REST API، DataBarBorder
 weight: 50
 ---
 ## **dataBarBorder**
 
- 
+ يمثل حدود أشرطة البيانات المحددة بواسطة قاعدة التنسيق الشرطي.
 
 | اسم الخاصية| نوع الملكية| لاغية| يقرأ فقط| القيمة الافتراضية| وصف|
 |:- |:- |:- |:- |:- |:- |

@@ -1,30 +1,31 @@
 ﻿---
-title: PostWorksheetShap
+title: Beitrags-WorksheetShap
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postworksheetshape/
-description: Aktualisieren Sie eine Form im Arbeitsblatt
+description: Aktualisieren einer Form im Arbeitsblatt
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostWorksheetShape
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetShape" >}}
 {{< blocks/products/cells/docs-title titlemsg="Update a shape in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/shapes/{shapeindex},POST,Aktualisieren Sie eine Form im Arbeitsblatt.,<a href=\'https://apireference.aspose.cloud/cells/#/Shapes/ PostWorksheetShape\'>PostWorksheetShape</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/shapes/{shapeindex},POST,Eine Form im Arbeitsblatt aktualisieren.,<a href=\'https://apireference.aspose.cloud/cells/#/Shapes/PostWorksheetShape\'>PostWorksheetShape</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="Shapeindex, Ganzzahl, Formindex in Arbeitsblattformen." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Shapeindex, Integer, Shapeindex in Arbeitsblattformen." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="dto,class:shape,Die Formbeschreibung." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="dto, Klasse: Form, Die Formbeschreibung." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

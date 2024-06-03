@@ -5,6 +5,7 @@ type: docs
 url: /tr/aspose-contact-form/
 description: İşaretlemeyi veya örnek şablonlarımızı kullanarak iletişim formları oluşturun ve yönetin. Müşterileriniz WordPress sayfasındaki formları doldurabilir ve via e-postasını alırsınız. Aspose İletişim Formu ayrıca Excel özelliğine web formu da sağlar. Kullanıcılar verileri WordPress formlarına doldurabilir ve bu formlar daha sonra Excel sayfasına eklenir. WordPress sayfanızdaki tüm müşterilerden gelen verileri görüntüleyebilirsiniz
 weight: 10
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Aspose İletişim Formu
 ---
 ## **giriiş**
 ### **Aspose İletişim Formu**
@@ -29,7 +30,7 @@ Bu eklentiyi yüklerken veya kullanırken herhangi bir sorunla karşılaşırsan
 Aspose İletişim Formu eklentisini yükledikten sonra web sitenizde kullanmaya başlamak gerçekten çok basit. Başlamak için lütfen bu basit adımları izleyin.
 *Form Oluşturucuyu Kullanma*
 1. Yönetici düzeyinde hesapla bir WordPress sitesinde oturum açtığınızdan emin olun.
-1. Yönetici sol menüsünden "Aspose Form" sayfasına gidin.
+1. Yöneticinin sol menüsünden "Aspose Form" sayfasına gidin.
 1. Yeni Form oluşturmak çok basit, Yeni Ekle sekmesinde aşağıdaki Formu kaydet butonuna basarak olduğu gibi kullanabileceğiniz Örnek Form oluşturduk.
 1. Bu Formu istediğiniz zaman Düzenle düğmesine basarak düzenleyebilirsiniz.
 1. Bize Ulaşın, Geri Bildirim ve Genel Sorgu Örnek Formları da hızlı bir şekilde farklı formlar oluşturabilmeniz için dahildir

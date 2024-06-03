@@ -4,6 +4,7 @@ type: docs
 url: /es/charts/delete/
 aliases: [/delete-a-chart-from-a-worksheet/]
 weight: 40
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Eliminar un gráfico de una hoja de trabajo
 ---
 Este REST API indica eliminar el gráfico de la hoja de trabajo por índice.
  

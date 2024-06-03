@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/getworksheetrow/
 description: Satır verilerini çalışma sayfasındaki satırın dizinine göre alın
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, GetWorksheetRow
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetRow" >}}

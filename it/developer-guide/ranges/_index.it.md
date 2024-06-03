@@ -8,6 +8,7 @@ aliases: [/working-with-ranges/]
 keywords: Working with ranges on an Excel fil
 description: Come lavorare con gli intervalli su un file Excel utilizzando Aspose.Cells Cloud REST API. L'SDK supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 100
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Utilizzo degli intervalli su un file Excel
 ---
 Rappresenta una cella, una riga, una colonna, una selezione di celle contenente uno o più blocchi di celle contigui o un intervallo 3D.
 

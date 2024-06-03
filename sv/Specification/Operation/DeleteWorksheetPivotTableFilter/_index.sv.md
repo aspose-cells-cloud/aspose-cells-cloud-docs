@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/deleteworksheetpivottablefilter/
 description: Ta bort ett pivotfilter i pivottabellen
+kwords: Excel, Office, Kalkylblad, Cloud REST API, DeleteWorksheetPivotTableFilter
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetPivotTableFilter" >}}

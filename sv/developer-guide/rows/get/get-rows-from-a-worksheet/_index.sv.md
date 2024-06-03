@@ -8,6 +8,7 @@ aliases: [/get-row-from-a-worksheet/]
 keywords: Get rows info on an Excel workshee
 description: Aspose.Cells Cloud REST API stöder att få rader på ett Excel kalkylblad. SDK stöder olika utvecklingsspråk. De inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och swift
 weight: 10
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Få radinformation från ett Excel kalkylblad
 ---
 Denna REST API indikerar att få radinformation på ett Excel kalkylblad.
  
@@ -22,7 +23,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
  
 | Parameternamn| Typ| Sökväg/Frågesträng/HTTPBody|Beskrivning|
 |:- |:- |:- |:- |
-| namn| sträng| väg|Arbetsbokens namn.|
+| namn| sträng| väg| Arbetsbokens namn.|
 | arknamn| sträng| väg| Kalkylbladets namn.|
 | mapp| sträng| fråga| Workdook-mappen.|
 | lagringsnamn| sträng| fråga| lagringsnamn.|

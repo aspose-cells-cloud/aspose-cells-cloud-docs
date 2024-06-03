@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/postworksheetungroupshape/
 description: Çalışma sayfasındaki şekillerin grubunu çözme
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PostWorksheetUngroupShape
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetUngroupShape" >}}

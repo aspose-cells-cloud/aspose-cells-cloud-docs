@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/putworksheetfiltertop10/
 description: Filtre los 10 elementos principales de la lista de la hoja de trabajo
+kwords: Excel, Office, Hoja de cálculo, Nube REST API, PutWorksheetFilterTop10
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetFilterTop10" >}}
@@ -21,7 +22,7 @@ weight: 50
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Nombre del parámetro, tipo, descripción" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="rango,cadena,Representa el rango al que se aplica el Autofiltro especificado." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="fieldIndex,integer,El desplazamiento entero del campo en el que desea basar el filtro (desde la izquierda de la lista; el campo más a la izquierda es el campo 0)." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="isTop,boolean,Indica si el filtro se realiza desde arriba o desde abajo" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="isTop, booleano, indica si el filtro se realiza desde arriba o desde abajo" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="isPercent,boolean,Indica si los elementos son porcentaje o recuento" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="itemCount, entero, el recuento de elementos" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="matchBlanks,boolean,Coincide con todas las celdas en blanco de la lista." >}} 

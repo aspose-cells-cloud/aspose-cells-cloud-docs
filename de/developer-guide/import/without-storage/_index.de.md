@@ -1,17 +1,18 @@
 ﻿---
-title: Importieren Sie Daten, ohne Speicher zu verwenden
+title: Daten importieren ohne Speicher zu verwenden
 second_title: Aspose.Cells Cloud Documen
-linktitle: Importieren Sie Daten ohne Speicherung
+linktitle: Daten importieren ohne Speicherung
 type: docs
 url: /de/import/without-using-storage/ 
 aliases: [/import-data-in-excel-worksheet-without-using-storage/]
 keywords: REST API,  spreadsheets, excel, Import
-description: Cells.Cloud API für den Import von Excel-Dateien
+description: Cells.Cloud API für Excel Dateien importieren
 weight: 10
+kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdwon, Daten importieren ohne Speicher zu verwenden
 ---
-Excel Der Datenimport ist ein komplexer Prozess. Viele Faktoren tragen zur Komplexität bei und sollten daher beim Exportprozess berücksichtigt werden. Die Möglichkeit, verschiedene Formate und Datentypen mit präziser, professioneller Qualität in die Datei zu importieren, ist ein Hauptmerkmal von Aspose.Cells Cloud.
+Excel Datenimport ist ein komplexer Prozess. Viele Faktoren tragen zur Komplexität bei und sollten daher beim Exportprozess berücksichtigt werden. Die Möglichkeit, alle Arten von Formaten und Datentypen in präziser professioneller Qualität in die Datei zu importieren, ist ein Top-Feature von Aspose.Cells Cloud.
 
-Dieser REST API gibt `import data` in einer Excel-Datei an.
+Dieser REST API zeigt `import data` in einer Excel-Datei an.
 
 ## RSET API
 
@@ -25,17 +26,17 @@ POST https://api.aspose.cloud/v3.0/cells/import
  
 | Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
 |:- |:- |:- |:- |
-| Datei| Datei| Formulardaten| Datei zum Hochladen|
-| ImportOption| Importoptionen|HTTPBody| IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/Picture|
+| Datei| Datei| Formulardaten| Hochzuladende Datei|
+| ImportOption| Importoptionen| HTTPBody| IntArray/DoubleArray/StringArray/ZweidimensionalIntArray/ZweidimensionalDoubleArray/ZweidimensionalStringArray/BatchData/CSVData/Bild|
 
-**Die Parameter der Importdatenoptionen** sind beschrieben in[der Referenzlink](/cells/de/import/#import-data-option-parameter).
-
-
+**Die Parameter für die Importdatenoptionen** sind beschrieben in[der Referenzlink](/cells/de/import/#import-data-option-parameter).
 
 
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/LightCells/PostImport) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht die Durchführung von REST-Interaktionen direkt über einen Webbrowser.
+
+
+ Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/LightCells/PostImport) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen, REST-Interaktionen direkt von einem Webbrowser aus durchzuführen.
  
-Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie man mit cURL Anrufe zur Cloud API tätigt.
+Mit dem Befehlszeilentool cURL können Sie ganz einfach auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie Sie mit cURL Anrufe an Cloud API tätigen.
  
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
  
@@ -82,9 +83,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/import" \
  
 ## Cloud SDK-Familie
  
- Die Verwendung eines SDK ist der beste Weg, die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte schauen Sie sich die an[GitHub-Repository](https://github.com/aspose-cells-cloud) Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie hier.
+ Die Verwendung eines SDK ist der beste Weg, um die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte lesen Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
  
-Die folgenden Codebeispiele veranschaulichen, wie Aspose.Cells-Webdienste mithilfe verschiedener SDKs aufgerufen werden:
+Die folgenden Codebeispiele zeigen, wie Sie mit verschiedenen SDKs Aufrufe an die Webdienste Aspose.Cells tätigen:
 
 
 {{< tabs tabTotal="9" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" tabName9="Python" >}}

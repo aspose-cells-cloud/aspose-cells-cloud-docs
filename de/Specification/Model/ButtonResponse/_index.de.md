@@ -1,19 +1,21 @@
 ﻿---
-title: ButtonRespons
+title: Schaltflächenantworten
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/model/buttonresponse/
-description: "Aspose.Cells Cloud-Modellspezifikation: ButtonResponse. Bearbeiten Sie mühelos Excel und andere Tabellenkalkulationsdokumente mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+description: "Aspose.Cells Cloud-Modellspezifikation: ButtonResponse. Müheloses Bearbeiten von Excel und anderen Tabellenkalkulationsdokumenten mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, ButtonResponse
 weight: 50
 ---
-## **ButtonResponse**
+## **Schaltflächenantwort**
 
- 
+ Stellt die Schaltflächenantwort dar.
 
-| Name des Anwesens| Art der Immobilie| Nullbar| Schreibgeschützt| Standardwert| Beschreibung|
+| Name des Anwesens| Art der Immobilie| Nullwerte zulassen| Schreibgeschützt| Standardwert| Beschreibung|
 |:- |:- |:- |:- |:- |:- |
-| Form| Klasse:Knopf| WAHR| FALSCH|||
+| Form| Klasse:Schaltfläche| WAHR| FALSCH|||
 | Code| Ganze Zahl| WAHR| FALSCH|||
 | Status| Zeichenfolge| WAHR| FALSCH|||
 
-**Elternname** : (CellsCloudResponse)[cellscloudresponse]
+**Elternname** : [ZellenCloudResponse](/specification/model/cellscloudresponse)
+

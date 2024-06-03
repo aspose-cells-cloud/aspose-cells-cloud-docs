@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/model/pivotfield/
 description: "Aspose.Cells Specifica del modello cloud: PivotField. Gestisci facilmente Excel e altri fogli di calcolo con funzionalità come apertura, generazione, modifica, divisione, unione, confronto e conversione"
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, Campo pivot
 weight: 50
 ---
 ## **campo pivot**
 
- 
+ Rappresenta un campo in un rapporto di tabella pivot.
 
 | Nome della proprietà| Tipo di proprietà| Nullabile| Sola lettura| Valore di default| Descrizione|
 |:- |:- |:- |:- |:- |:- |
@@ -20,11 +21,11 @@ weight: 50
 | BaseItem| Numero intero| VERO| Falso|||
 | BaseItemPosition| Corda| VERO| Falso|||
 | ElementoPaginaCorrente| Numero intero| VERO| Falso|||
-| DataDisplayFormat| Corda| VERO| Falso|||
+|DataDisplayFormat| Corda| VERO| Falso|||
 | Nome da visualizzare| Corda| VERO| Falso|||
 | Trascina su colonna| Booleano| VERO| Falso|||
 | Trascina su dati| Booleano| VERO| Falso|||
-|Trascina per nascondere| Booleano| VERO| Falso|||
+| Trascina per nascondere| Booleano| VERO| Falso|||
 | Trascina su pagina| Booleano| VERO| Falso|||
 | Trascina su riga| Booleano| VERO| Falso|||
 | Funzione| Corda| VERO| Falso|||
@@ -46,7 +47,7 @@ weight: 50
 | NumberFormat| Corda| VERO| Falso|||
 | Articoli originali|Vettore<String> | VERO| Falso|||
 | Elementi pivot| Contenitore| VERO| Falso|||
-|Posizione| Numero intero| VERO| Falso|||
+| Posizione| Numero intero| VERO| Falso|||
 | Mostra tutti gli elementi| Booleano| VERO| Falso|||
 | MostraCompatto| Booleano| VERO| Falso|||
 | Mostra nel modulo contorno| Booleano| VERO| Falso|||

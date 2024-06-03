@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/postfittalltopages/
 description: Establezca la escala en la que la página se ajustará a lo alto cuando se imprima en la hoja
+kwords: Excel, Office, hoja de cálculo, nube REST API, PostFitTallToPages
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostFitTallToPages" >}}

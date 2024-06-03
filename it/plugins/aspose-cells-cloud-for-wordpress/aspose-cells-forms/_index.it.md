@@ -5,10 +5,11 @@ type: docs
 url: /it/aspose-cells-forms/
 description: Aspose.Cells Cloud supporta Excel per creare, convertire, unire, dividere, proteggere, operazioni di oggetti interni e così via
 weight: 10
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Aspose.Cells Moduli
 ---
 ## **introduzione**
 ### **Aspose.Cells Moduli**
-Il plug-in moduli Aspose.Cells per WordPress offre la possibilità di creare moduli di immissione per la raccolta di informazioni e di salvarli nei fogli di calcolo utilizzando Aspose.Cells. È molto utile per sondaggi o qualsiasi tipo di facile raccolta di informazioni per un gran numero di persone. Tutto ciò che serve è fornire un foglio di calcolo Microsoft Excel con intestazioni, il plug-in fornirà due codici brevi, uno a scopo di inserimento dati e l'altro a scopo di elenco. Questo plugin dimostra funzionalità molto potenti fornite da Aspose.Cells. Aggiunge una nuova pagina nel menu denominata come**“Moduli Aspose.Cells”**. L'amministratore fornisce il foglio di calcolo Excel utilizzando il caricatore di WordPress Media e fa clic su \*“Genera codici brevi” \*pulsante. Non appena si fa clic sul pulsante, viene generato l'inserimento dei dati e l'elenco dei codici funzione.
+Il plug-in moduli Aspose.Cells per WordPress offre la possibilità di creare moduli di immissione per la raccolta di informazioni e di salvarli nei fogli di calcolo utilizzando Aspose.Cells. È molto utile per sondaggi o qualsiasi tipo di semplice raccolta di informazioni per un gran numero di persone. Tutto ciò che serve è fornire un foglio di calcolo Microsoft Excel con intestazioni, il plug-in fornirà due codici brevi, uno a scopo di inserimento dati e l'altro a scopo di elenco. Questo plugin dimostra funzionalità molto potenti fornite da Aspose.Cells. Aggiunge una nuova pagina nel menu denominata come**“Moduli Aspose.Cells”**. L'amministratore fornisce il foglio di calcolo Excel utilizzando il caricatore di WordPress Media e fa clic su \*“Genera codici brevi” \*pulsante. Non appena si fa clic sul pulsante, viene generato l'inserimento dei dati e l'elenco dei codici funzione.
 ## **Requisiti di sistema e piattaforme supportate**
 ### **Requisiti di sistema**
 Per installare e utilizzare Aspose Cloud Excel To Form Builder Plugin è necessario avere gli elementi elencati di seguito.

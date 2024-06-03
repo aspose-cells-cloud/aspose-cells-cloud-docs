@@ -4,27 +4,28 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postworksheetmerge/
 description: Zellen im Arbeitsblatt zusammenführen
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostWorksheetMerge
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetMerge" >}}
 {{< blocks/products/cells/docs-title titlemsg="Merge cells in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells/merge,POST,Zellen im Arbeitsblatt zusammenführen.,<a href=\'https://apireference.aspose.cloud/cells/#/Cells/PostWorksheetMerge\'> PostWorksheetMerge</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells/merge,POST,Zellen im Arbeitsblatt zusammenführen.,<a href=\'https://apireference.aspose.cloud/cells/#/Cells/PostWorksheetMerge\'>PostWorksheetMerge</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="startRow,integer,Der Startzeilenindex." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="startColumn,integer,Der Startspaltenindex." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="totalRows,integer,Die Gesamtzahl der Zeilen." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="totalColumns,integer,Die Gesamtzahl der Spalten." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="startRow,Integer,Der Startzeilenindex." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="startColumn,Integer,Der Startspaltenindex." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="totalRows, Integer, Die Gesamtzahl der Zeilen." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="totalColumns, Integer, Die Gesamtzahl der Spalten." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/CellsController/PostWorksheetMerge\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

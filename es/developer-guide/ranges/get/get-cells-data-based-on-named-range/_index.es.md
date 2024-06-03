@@ -8,6 +8,7 @@ aliases: [/get-cells-data-based-on-named-range/]
 keywords: Get cells data based on named range on an Excel worksheet
 description: Aspose.Cells Cloud REST API admite la obtención de datos de celdas según el rango con nombre en una hoja de trabajo Excel. SDK admite tipos de lenguajes de desarrollo. Incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 20
+kwords: Excel, Office Cloud, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Obtener datos de celdas según el rango con nombre
 ---
  Este REST API indica Obtener la lista de celdas en un rango por nombre de rango o índices de columna de fila
 

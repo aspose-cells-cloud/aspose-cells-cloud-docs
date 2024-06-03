@@ -4,13 +4,14 @@ type: docs
 url: /tr/how-to-repair-excel-file
 description: Excel veya diğer elektronik tablo dosyası Aspose.Cells Cloud aracılığıyla nasıl onarılır
 weight: 10
+kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Excel veya diğer elektronik tablo dosyası Aspose.Cells Cloud aracılığıyla nasıl onarılır
 ---
 ## giriiş
 Aspose.Cells Cloud API, elektronik tablo dosyalarının oluşturulması, düzenlenmesi ve dönüştürülmesi için hazırlanmış güçlü bir bulut tabanlı çözümdür. Bu makalede, tipik kullanım durumları ve örnek kod da dahil olmak üzere, onarılan dosya için Aspose.Cells Bulut API'i kullanma sürecinde size yol göstereceğiz.
 
 ## Genel Bakış
 
-Aspose.Cells Bulut API, Excel'i veya başka bir elektronik tablo dosyasını onarmak için sağlam bir API sağlar. Aspose.Cells Bulut API'i kullanarak, Excel'i veya başka bir elektronik tablo dosyasını zahmetsizce onararak çeşitli gereksinimleri karşılayabilirsiniz.
+Aspose.Cells Bulut API, Excel'i veya başka bir elektronik tablo dosyasını onarmak için sağlam bir API sağlar. Aspose.Cells Bulut API'den yararlanarak, Excel'i veya başka bir elektronik tablo dosyasını zahmetsizce onararak çeşitli gereksinimleri karşılayabilirsiniz.
 
 API, genellikle çeşitli çevrimiçi ortamlarla uyumlu olan dosya onarımı için kullanılabilir. Aşağıda API'in ayrıntılı bir açıklaması bulunmaktadır:
 
@@ -19,7 +20,7 @@ API, genellikle çeşitli çevrimiçi ortamlarla uyumlu olan dosya onarımı iç
 
 # Excel veya başka bir e-tablo Aspose.Cells Cloud aracılığıyla nasıl onarılır
 
- Aspose.Cells Bulut API şunları sağlar:[birden fazla SDK](https://github.com/aspose-cells-cloud)farklı programlama dilleri için. Tercih ettiğiniz programlama diliyle uyumlu SDK'yı seçin ve kurulum ve başlatma için birlikte gelen belgeleri izleyin. Alternatif olarak, kendi SDK'nızı aşağıdakilere göre oluşturabilirsiniz:[API referans](https://reference.aspose.cloud/cells/). Bu bölümde dosya onarım sürecini detaylandırmak için örnek olarak C#'i kullanacağız.
+ Aspose.Cells Bulut API şunları sağlar:[birden fazla SDK](https://github.com/aspose-cells-cloud) farklı programlama dilleri için. Tercih ettiğiniz programlama diliyle uyumlu SDK'yı seçin ve kurulum ve başlatma için birlikte gelen belgeleri izleyin. Alternatif olarak, kendi SDK'nızı aşağıdakilere göre oluşturabilirsiniz:[API referans](https://reference.aspose.cloud/cells/). Bu bölümde dosya onarım sürecini detaylandırmak için örnek olarak C#'i kullanacağız.
 
 
 ## Kayıt ve API Anahtarının Alınması

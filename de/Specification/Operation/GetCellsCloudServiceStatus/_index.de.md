@@ -3,14 +3,15 @@ title: GetCellsCloudServiceStatus
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/getcellscloudservicestatus/
-description: Aspose.Cells Überprüfung des Cloud-Dienst-Gesundheitsstatus
+description: Aspose.Cells Überprüfung des Integritätsstatus des Cloud-Dienstes
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, GetCellsCloudServiceStatus
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetCellsCloudServiceStatus" >}}
 {{< blocks/products/cells/docs-title titlemsg="Aspose.Cells Cloud service health status check." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/status/check,GET,Aspose.Cells Überprüfung des Cloud-Dienst-Gesundheitsstatus.,<a href=\'https://apireference.aspose.cloud/cells/#/CellsStatus/GetCellsCloudServiceStatus\'>GetCellsCloudServiceStatus</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/status/check,GET,Aspose.Cells Überprüfung des Integritätsstatus des Cloud-Dienstes.,<a href=\'https://apireference.aspose.cloud/cells/#/CellsStatus/GetCellsCloudServiceStatus\'>GetCellsCloudServiceStatus</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

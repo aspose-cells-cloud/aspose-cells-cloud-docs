@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/operation/postworksheetlistobject/
 description: Çalışma sayfasındaki liste nesnesini dizine göre güncelleme
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, PostWorksheetListObject
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetListObject" >}}

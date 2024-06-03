@@ -5,6 +5,7 @@ type: docs
 url: /it/available-sdks/
 description: Aspose.Cells Cloud supporta Excel per creare, convertire, unire, dividere, proteggere, operazioni di oggetti interni e così via
 weight: 30
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, SDK disponibili
 ---
 ## **Aspose.Cells SDK cloud**
 Aspose.Cells Cloud è un moderno API orientato al REST, che consente una facile integrazione nei sistemi esistenti.

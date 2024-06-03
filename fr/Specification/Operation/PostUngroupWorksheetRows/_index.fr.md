@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/specification/operation/postungroupworksheetrows/
 description: Dissocier les lignes de la feuille de calcul
+kwords: Excel, Office, feuille de calcul, Cloud REST API, PostUngroupWorksheetRows
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostUngroupWorksheetRows" >}}

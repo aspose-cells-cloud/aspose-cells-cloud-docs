@@ -1,9 +1,10 @@
 ﻿---
-title: Fusión posterior de hoja de cálculo
+title: Fusión posterior de hoja de trabajo
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/postworksheetmerge/
 description: Fusionar celdas en la hoja de trabajo
+kwords: Excel, Office, hoja de cálculo, nube REST API, PostWorksheetMerge
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetMerge" >}}

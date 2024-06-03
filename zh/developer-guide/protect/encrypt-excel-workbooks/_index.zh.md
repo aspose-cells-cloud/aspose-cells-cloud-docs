@@ -6,8 +6,9 @@ type: docs
 url: /zh/workbook/encrypt/
 aliases: [/encrypt-excel-workbooks/]
 keywords: Encrypt Excel workbook
-description: Aspose.Cells Cloud REST API 支持加密 Excel 工作簿。 SDK支持多种开发语言。它们包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 swift
+description: Aspose.Cells Cloud REST API 支持加密 Excel 工作簿。SDK 支持多种开发语言。包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 swift
 weight: 20
+kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdwon、加密 Excel 工作簿
 ---
 此 REST API 加密 Excel `workbook`。
 
@@ -18,7 +19,7 @@ weight: 20
 |文件夹|细绳|原始工作簿文件夹。|
 |存储名称|细绳|存储名称。|
 
-**请求体参数**
+**请求主体参数**
 
 |参数名称|类型|描述|
 |:- |:- |:- |
@@ -27,20 +28,20 @@ weight: 20
 **工作簿加密请求**
 |参数名称|类型|描述|
 |:- |:- |:- |
-|加密类型|细绳|异或/兼容/增强型加密提供程序V1/强加密提供程序|
+|加密类型|细绳|XOR/兼容/EnhancedCryptographicProviderV1/StrongCryptographicProvider|
 |密钥长度|整数||
 |密码|细绳||
 
 
 ## 休息 API
 
-|**API**|**类型**|**描述**|**招摇链接**|
+|**API**|**类型**|**描述**|**Swagger 链接**|
 |:- |:- |:- |:- |
-|/cells/{name}/加密|邮政|加密Excel文档|[后加密文档](https://apireference.aspose.cloud/cells/#/Workbook/PostEncryptDocument)|
+|/单元格/{名称}/加密|邮政|加密 Excel 文档|[加密文档](https://apireference.aspose.cloud/cells/#/Workbook/PostEncryptDocument)|
 
-这[开放API规范](https://apireference.aspose.cloud/cells/#/Workbook/PostEncryptDocument)定义了一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Workbook/PostEncryptDocument)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
 
-您可以使用**cURL**命令行工具轻松访问 Aspose.Cells Web 服务。以下示例展示如何使用 cURL 呼叫云端 API。
+您可以使用**cURL**命令行工具可轻松访问 Aspose.Cells Web 服务。以下示例显示如何使用 cURL 调用云 API。
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
@@ -72,9 +73,9 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/encryption" -H "acce
 
 {{< /tabs >}}
 
-## 云SDK系列
+## Cloud SDK 系列
 
-使用 SDK 是加快开发速度的最佳方式。 SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)有关 Aspose.Cells Cloud SDK 的完整列表。
+使用 SDK 是加快开发速度的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)获得 Aspose.Cells Cloud SDKs 的完整列表。
 
 以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
 

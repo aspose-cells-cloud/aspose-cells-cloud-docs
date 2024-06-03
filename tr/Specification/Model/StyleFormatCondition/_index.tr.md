@@ -4,11 +4,12 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/model/styleformatcondition/
 description: "Aspose.Cells Bulut modeli spesifikasyonu: StyleFormatCondition. Açma, oluşturma, düzenleme, bölme, birleştirme, karşılaştırma ve dönüştürme gibi özelliklerle Excel ve diğer elektronik tablo belgelerini zahmetsizce yönetin"
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, StyleFormatCondition
 weight: 50
 ---
 ## **stilFormatDurum**
 
- 
+ Stil formatı koşulunu temsil eder.
 
 | Mülkiyet adı| Emlak Tipi| Geçersiz kılınabilir| Sadece oku| Varsayılan değer| Tanım|
 |:- |:- |:- |:- |:- |:- |
@@ -28,4 +29,5 @@ weight: 50
 | En iyi 10| Sınıf:İlk 10| Doğru| YANLIŞ|||
 | bağlantı| Sınıf:Bağlantı| Doğru| YANLIŞ|||
 
-**Ebeveyn adı** : (BiçimKoşulu)[biçimkoşulu]
+**Ebeveyn adı** : [BiçimDurum](/specification/model/formatcondition)
+

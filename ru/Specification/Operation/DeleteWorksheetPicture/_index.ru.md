@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/specification/operation/deleteworksheetpicture/
 description: Удалить объект изображения по индексу на листе
+kwords: Excel, Office, электронная таблица, Cloud REST API, DeleteWorksheetPicture
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetPicture" >}}

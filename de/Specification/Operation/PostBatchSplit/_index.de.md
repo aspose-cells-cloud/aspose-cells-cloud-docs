@@ -3,19 +3,20 @@ title: PostBatchSpli
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postbatchsplit/
-description: Dateien, die bestimmte Übereinstimmungsbedingungen erfüllen, stapelweise aufteilen
+description: Stapelaufteilung von Dateien, die bestimmte Übereinstimmungsbedingungen erfüllen
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostBatchSplit
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostBatchSplit" >}}
 {{< blocks/products/cells/docs-title titlemsg="Batch splitting files that meet specific matching conditions." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/batch/split,POST,Stapelaufteilung von Dateien, die bestimmte Übereinstimmungsbedingungen erfüllen.,<a href=\'https://apireference.aspose.cloud/cells/#/Batch/PostBatchSplit\'>PostBatchSplit</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/batch/split,POST,Batch-Aufteilung von Dateien, die bestimmte Übereinstimmungsbedingungen erfüllen.,<a href=\'https://apireference.aspose.cloud/cells/#/Batch/PostBatchSplit\'>PostBatchSplit</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns=" batchSplitRequest,class:batchsplitRequest,BatchSplitRequest Batch-Splitting-Dateianforderung." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns=" batchSplitRequest, Klasse: batchsplitrequest, batchSplitRequest Batch-Aufteilungsdateianforderung." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

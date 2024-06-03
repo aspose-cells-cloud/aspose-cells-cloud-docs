@@ -3,19 +3,20 @@ title: PostRunTas
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/postruntask/
-description: Aufgaben ausführen
+description: Ausführen von Aufgaben
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PostRunTask
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostRunTask" >}}
 {{< blocks/products/cells/docs-title titlemsg="Run tasks." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="/cells/task/runtask,POST,Aufgaben ausführen.,<a href=\'https://apireference.aspose.cloud/cells/#/Task/PostRunTask\'>PostRunTask</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Request Body Parameter" columns="Parametername, Typ, Beschreibung" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="TaskData,class:taskdata,Aufgabendatenbeschreibung" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="TaskData, Klasse: Taskdata, Taskdatenbeschreibung" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

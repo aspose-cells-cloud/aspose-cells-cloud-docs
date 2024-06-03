@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/deletedocumentunprotectfromchanges/
 description: Excel archivo cancelar protección contra escritura
+kwords: Excel, Office, hoja de cálculo, nube REST API, DeleteDocumentUnProtectFromChanges
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="DeleteDocumentUnProtectFromChanges" >}}

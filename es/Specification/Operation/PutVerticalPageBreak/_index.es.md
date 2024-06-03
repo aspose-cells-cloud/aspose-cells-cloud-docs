@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/specification/operation/putverticalpagebreak/
 description: Agregar un salto de página vertical en la hoja de trabajo
+kwords: Excel, Office, hoja de cálculo, nube REST API, PutVerticalPageBreak
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutVerticalPageBreak" >}}

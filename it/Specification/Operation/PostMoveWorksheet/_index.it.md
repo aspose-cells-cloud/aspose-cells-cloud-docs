@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /it/specification/operation/postmoveworksheet/
 description: Sposta il foglio di lavoro nella cartella di lavoro
+kwords: Excel, Office, Foglio di calcolo, Cloud REST API, Foglio di lavoro PostMove
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostMoveWorksheet" >}}

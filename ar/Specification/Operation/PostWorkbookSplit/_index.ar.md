@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postworkbooksplit/
 description: تقسيم المصنف بتنسيق معين
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostWorkbookSplit
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookSplit" >}}

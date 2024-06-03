@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/model/xlssaveoptions/
 description: "Aspose.Cells Molnmodellspecifikation: XlsSaveOptions. Hantera enkelt Excel och andra kalkylarksdokument med funktioner som att öppna, generera, redigera, dela, slå samman, jämföra och konvertera"
+kwords: Excel, Office, Kalkylblad, Cloud REST API, XlsSaveOptions
 weight: 50
 ---
 ## **xlsSaveOptions**
@@ -18,7 +19,8 @@ weight: 50
 | Skapa katalog| Boolean| Sann| Falsk|||
 | Aktivera HTTPCompression| Boolean| Sann| Falsk|||
 | RefreshChartCache| Boolean| Sann| Falsk|||
-|Sortera namn| Boolean| Sann| Falsk|||
+| Sortera namn| Boolean| Sann| Falsk|||
 | Validera sammanslagna områden| Boolean| Sann| Falsk|||
 
-**Förälders namn** : (SaveOptions)[saveoptions]
+**Förälders namn** : [Spara Alternativ](/specification/model/saveoptions)
+

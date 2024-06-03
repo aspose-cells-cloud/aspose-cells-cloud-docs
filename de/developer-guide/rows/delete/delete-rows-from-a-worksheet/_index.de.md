@@ -1,5 +1,5 @@
 ﻿---
-title: Löschen Sie mehrere Zeilen auf einem Arbeitsblatt Excel
+title: Löschen mehrerer Zeilen in einem Arbeitsblatt Excel
 second_title: Aspose.Cells Cloud Documen
 linktitle: Reihe
 type: docs
@@ -7,8 +7,9 @@ url: /de/rows/delete/rows/
 keywords: Delete rows on an Excel workshee
 description: Aspose.Cells Cloud REST API unterstützt das Löschen von Zeilen in einem Excel Arbeitsblatt. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
 weight: 80
+kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdwon, Mehrere Zeilen in einem Excel-Arbeitsblatt löschen
 ---
-Dieser REST API gibt an, mehrere Zeilen in einem Arbeitsblatt Excel zu löschen.
+Dieser REST API gibt an, dass mehrere Zeilen in einem Excel-Arbeitsblatt gelöscht werden sollen.
  
 ## RSET API
  
@@ -21,17 +22,17 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/ro
  
 | Parametername| Typ| Pfad/Abfragezeichenfolge/HTTPBody|Beschreibung|
 |:- |:- |:- |:- |
-| Name| Zeichenfolge| Weg|Der Name der Arbeitsmappe.|
-| Blattname| Zeichenfolge| Weg| Das Arbeitsblatt bame.|
-| startrow| ganze Zahl| Abfrage| Der Anfangszeilenindex, der bearbeitet werden soll.|
-| totalRows| ganze Zahl| Abfrage|1 |
-| updateReference| Boolescher Wert| Abfrage| WAHR|
-| Ordner| Zeichenfolge| Abfrage| Der Dokumentenordner.|
-| Speichername| Zeichenfolge| Abfrage| Speichername.|
+| Name| Schnur| Weg| Der Name der Arbeitsmappe.|
+| Blattname| Schnur| Weg| Das Arbeitsblatt, Bame.|
+| startrow| ganze Zahl| Abfrage| Der Index der Anfangszeile, die bearbeitet werden soll.|
+| Gesamtzeilen| ganze Zahl| Abfrage|1 |
+| Referenz aktualisieren|Boolescher Wert| Abfrage| WAHR|
+| Ordner| Schnur| Abfrage| Der Dokumentordner.|
+| Speichername| Schnur| Abfrage| Speichername.|
  
- Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetRows) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht die Durchführung von REST-Interaktionen direkt über einen Webbrowser.
+ Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetRows) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen, REST-Interaktionen direkt von einem Webbrowser aus durchzuführen.
  
-Mit dem Befehlszeilentool cURL können Sie problemlos auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie man mit cURL Anrufe zur Cloud API tätigt.
+Mit dem Befehlszeilentool cURL können Sie ganz einfach auf die Webdienste Aspose.Cells zugreifen. Das folgende Beispiel zeigt, wie Sie mit cURL Anrufe an Cloud API tätigen.
  
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
  
@@ -65,9 +66,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
  
 ## Cloud SDK-Familie
  
- Die Verwendung eines SDK ist der beste Weg, die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte schauen Sie sich die an[GitHub-Repository](https://github.com/aspose-cells-cloud) Eine vollständige Liste der Aspose.Cells Cloud SDKs finden Sie hier.
+ Die Verwendung eines SDK ist der beste Weg, um die Entwicklung zu beschleunigen. Ein SDK kümmert sich um Details auf niedriger Ebene und ermöglicht es Ihnen, sich auf Ihre Projektaufgaben zu konzentrieren. Bitte lesen Sie die[GitHub-Repository](https://github.com/aspose-cells-cloud) für eine vollständige Liste der Aspose.Cells Cloud SDKs.
  
-Die folgenden Codebeispiele veranschaulichen, wie Aspose.Cells-Webdienste mithilfe verschiedener SDKs aufgerufen werden:
+Die folgenden Codebeispiele zeigen, wie Sie mit verschiedenen SDKs Aufrufe an die Webdienste Aspose.Cells tätigen:
  
  
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}

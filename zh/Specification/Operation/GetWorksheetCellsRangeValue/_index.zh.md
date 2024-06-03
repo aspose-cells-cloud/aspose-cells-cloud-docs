@@ -1,31 +1,32 @@
 ﻿---
-title: 获取工作表单元格范围值
+title: 获取工作表单元格区域值
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /zh/specification/operation/getworksheetcellsrangevalue/
 description: 检索指定范围内的单元格的值
+kwords: Excel，Office，电子表格，云 REST API，GetWorksheetCellsRangeValue
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetCellsRangeValue" >}}
 {{< blocks/products/cells/docs-title titlemsg="Retrieve the values of cells within the specified range." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API参考" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges/value,GET,检索指定范围内单元格的值。,<a href=\'https://apireference.aspose.cloud/cells/#/Ranges /GetWorksheetCellsRangeValue\'>GetWorksheetCellsRangeValue</a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,描述,API 参考" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges/value,GET,检索指定范围内单元格的值。,<a href=\'https://apireference.aspose.cloud/cells/#/Ranges/GetWorksheetCellsRangeValue\'>GetWorksheetCellsRangeValue</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="参数名称、类型、描述" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="名称，字符串，文件名。" >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,字符串,工作表名称。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="name，string，文件名。" >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName，string，工作表名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="参数名称、类型、描述" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="namerange,字符串,范围名称。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="firstRow,integer,获取范围第一行的索引。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="firstColumn,integer,获取范围第一列的索引。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="rowCount,integer,获取范围内的行数。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="columnCount,integer,获取范围内的列数。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="namerange，string，范围名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="firstRow，integer，获取范围第一行的索引。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="firstColumn，integer，获取范围第一列的索引。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="rowCount，integer，获取范围内的行数。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="columnCount，integer，获取范围内的列数。" >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="文件夹，字符串，原始工作簿文件夹。" >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="存储名称，字符串，存储名称。" >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName，string，存储名称。" >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/RangesController/GetWorksheetCellsRangeValue\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

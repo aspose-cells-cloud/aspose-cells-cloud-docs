@@ -1,19 +1,21 @@
 ﻿---
-title: WorkbookRespons
+title: Arbeitsmappenantworten
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/model/workbookresponse/
-description: "Aspose.Cells Cloud-Modellspezifikation: WorkbookResponse. Bearbeiten Sie mühelos Excel und andere Tabellenkalkulationsdokumente mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+description: "Aspose.Cells Cloud-Modellspezifikation: WorkbookResponse. Müheloses Bearbeiten von Excel und anderen Tabellenkalkulationsdokumenten mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, WorkbookResponse
 weight: 50
 ---
-## **ArbeitsmappeAntwort**
+## **Arbeitsmappenantwort**
 
- 
+ Stellt die Arbeitsmappenantwort dar.
 
-| Name des Anwesens| Art der Immobilie| Nullbar| Schreibgeschützt| Standardwert| Beschreibung|
+| Name des Anwesens| Art der Immobilie| Nullwerte zulassen| Schreibgeschützt| Standardwert| Beschreibung|
 |:- |:- |:- |:- |:- |:- |
-| Arbeitsmappe| Klasse: Arbeitsbuch| WAHR| FALSCH|||
+| Arbeitsmappe| Klasse:Arbeitsbuch| WAHR| FALSCH|||
 | Code| Ganze Zahl| WAHR| FALSCH|||
 | Status| Zeichenfolge| WAHR| FALSCH|||
 
-**Elternname** : (CellsCloudResponse)[cellscloudresponse]
+**Elternname** : [ZellenCloudResponse](/specification/model/cellscloudresponse)
+

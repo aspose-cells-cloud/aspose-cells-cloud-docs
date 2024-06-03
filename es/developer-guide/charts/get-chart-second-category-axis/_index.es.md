@@ -1,8 +1,9 @@
 ﻿---
-title: Obtener gráfico Segunda categoría Axi
+title:  Obtener gráfico Segunda categoría Axi
 type: docs
 url: /es/charts/second-category-axis/get/
 weight: 60
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Obtener gráfico Eje de segunda categoría
 ---
  Este REST API indica Obtener el eje de segunda categoría del gráfico.
  

@@ -6,6 +6,7 @@ aliases: [/remove-conditional-formatting/]
 keywords: REST API, spreadsheets, excel, delete cell area from condition formattin
 description: "Cells.Cloud API per Excel funziona: elimina l'area della cella dalla formattazione delle condizioni"
 weight: 60
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Elimina formattazione condizionale
 ---
 Questo REST API indica Rimuovi formattazione condizionale
  

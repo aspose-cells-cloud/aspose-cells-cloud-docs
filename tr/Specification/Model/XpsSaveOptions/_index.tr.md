@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/specification/model/xpssaveoptions/
 description: "Aspose.Cells Bulut modeli spesifikasyonu: XpsSaveOptions. Açma, oluşturma, düzenleme, bölme, birleştirme, karşılaştırma ve dönüştürme gibi özelliklerle Excel ve diğer elektronik tablo belgelerini zahmetsizce yönetin"
+kwords: Excel, Office, Elektronik Tablo, Cloud REST API, XpsSaveOptions
 weight: 50
 ---
 ## **xpsSaveOptions**
@@ -28,7 +29,7 @@ weight: 50
 | VarsayılanDilDüzenle| Sicim| Doğru| YANLIŞ|||
 | EmfRenderSetting| Sicim| Doğru| YANLIŞ|||
 | Alanları Birleştir| Boolean| Doğru| YANLIŞ|||
-|DışAdları Sırala| Boolean| Doğru| YANLIŞ|||
+| DışAdları Sırala| Boolean| Doğru| YANLIŞ|||
 | GüncellemeSmartArt| Boolean| Doğru| YANLIŞ|||
 | Formatı Kaydet| Sicim| Doğru| YANLIŞ|||
 | Önbelleğe Alınmış DosyaKlasörü| Sicim| Doğru| YANLIŞ|||
@@ -36,7 +37,8 @@ weight: 50
 | Dizin Oluştur| Boolean| Doğru| YANLIŞ|||
 | HTTPSıkıştırmayı Etkinleştir| Boolean| Doğru| YANLIŞ|||
 | Grafik Önbelleğini Yenile| Boolean| Doğru| YANLIŞ|||
-|SıralamaAdları| Boolean| Doğru| YANLIŞ|||
+| SıralamaAdları| Boolean| Doğru| YANLIŞ|||
 | Birleştirilmiş Alanları Doğrula| Boolean| Doğru| YANLIŞ|||
 
-**Ebeveyn adı** : (Sayfalandırılmış Kaydetme Seçenekleri)[sayfalandırılmış kaydetme seçenekleri]
+**Ebeveyn adı** : [Sayfalandırılmış Kaydetme Seçenekleri](/specification/model/paginatedsaveoptions)
+

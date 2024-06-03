@@ -6,6 +6,7 @@ url: /it/folder/move/
 keywords: Learn how to move folder with Aspose Cells Cloud REST API
 description: Scopri come spostare la cartella con Aspose Cells Cloud REST API SDK che supporta tipi di linguaggi di sviluppo. Includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e swift
 weight: 100
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Sposta cartella
 ---
 Questo REST API indica `move folder`
  

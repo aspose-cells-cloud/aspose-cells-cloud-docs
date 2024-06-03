@@ -1,17 +1,18 @@
 ﻿---
-title: WorkbookProtectionReques
+title: Arbeitsmappenschutzanforderungen
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/model/workbookprotectionrequest/
-description: "Aspose.Cells Cloud-Modellspezifikation: WorkbookProtectionRequest. Bearbeiten Sie mühelos Excel und andere Tabellenkalkulationsdokumente mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+description: "Aspose.Cells Cloud-Modellspezifikation: WorkbookProtectionRequest. Müheloses Bearbeiten von Excel und anderen Tabellenkalkulationsdokumenten mit Funktionen wie Öffnen, Generieren, Bearbeiten, Teilen, Zusammenführen, Vergleichen und Konvertieren"
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, WorkbookProtectionRequest
 weight: 50
 ---
-## **workbookProtectionRequest**
+## **Arbeitsmappenschutzanforderung**
 
- Wird von Arbeitsmappenschutzanfragen verwendet.
+ Wird von Arbeitsmappenschutzanforderungen verwendet.
 
-| Name des Anwesens| Art der Immobilie| Nullbar| Schreibgeschützt| Standardwert| Beschreibung|
+| Name des Anwesens| Art der Immobilie| Nullwerte zulassen| Schreibgeschützt| Standardwert| Beschreibung|
 |:- |:- |:- |:- |:- |:- |
-| Schutztyp| Zeichenfolge| WAHR| FALSCH|| Schutzart. Kann ALLE, INHALT, KEINE, OBJEKTE, SZENARIEN, STRUKTUR, WINDOWS sein|
-| Passwort| Zeichenfolge| WAHR| FALSCH||Verschlüsselungspasswort.|
+| Schutztyp| Zeichenfolge| WAHR| FALSCH|| Schutzart. Kann ALLES, INHALT, KEINES, OBJEKTE, SZENARIEN, STRUKTUR, FENSTER sein.|
+| Passwort| Zeichenfolge| WAHR| FALSCH|| Verschlüsselungspasswort.|
 

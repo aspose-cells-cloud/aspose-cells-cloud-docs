@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/specification/operation/putworkbookname/
 description: Definiera ett nytt namn i arbetsboken
+kwords: Excel, Office, Kalkylblad, Cloud REST API, PutWorkbookName
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorkbookName" >}}

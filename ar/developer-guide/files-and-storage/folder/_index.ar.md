@@ -6,6 +6,7 @@ url: /ar/folder/
 keywords: Upload, download, delete, copy, and move folder
 description: Aspose.Cells Cloud REST API يدعم رفع وتنزيل وحذف ونسخ ونقل المجلد. يدعم SDK أنواع لغات التطوير. وهي تشمل Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وswift.
 weight: 100
+kwords: Excel، Office كلاود، ريست API، جدول بيانات، PDF، CSV، Json، Markdwon، Folder
 ---
 Aspose.Cells توفر السحابة أنواعًا من واجهات برمجة التطبيقات (API) لتشغيل المجلدات.
 

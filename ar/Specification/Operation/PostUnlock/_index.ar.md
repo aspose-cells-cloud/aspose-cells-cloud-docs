@@ -4,6 +4,7 @@ second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/specification/operation/postunlock/
 description: فتح ملفات Excel
+kwords: Excel، Office، جدول البيانات، Cloud REST API، PostUnlock
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PostUnlock" >}}

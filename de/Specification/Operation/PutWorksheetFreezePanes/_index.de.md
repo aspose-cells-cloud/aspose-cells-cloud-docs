@@ -1,30 +1,31 @@
 ﻿---
-title: PutWorksheetFreezePane
+title: Arbeitsblatt einfügenEinfrierenBereich
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/specification/operation/putworksheetfreezepanes/
-description: Legen Sie Standfenster im Arbeitsblatt fest
+description: Festlegen von Fixierungsbereichen im Arbeitsblatt
+kwords: Excel, Office, Tabellenkalkulation, Cloud REST API, PutWorksheetFreezePanes
 weight: 50
 ---
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetFreezePanes" >}}
 {{< blocks/products/cells/docs-title titlemsg="Set freeze panes in the worksheet." >}}
 
-{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API Referenz" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/freezepanes,PUT,Einfrierbereiche im Arbeitsblatt festlegen.,<a href=\'https://apireference.aspose.cloud/cells/#/Worksheets/PutWorksheetFreezePanes\'>PutWorksheetFreezePanes </a>" >}}
+{{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Beschreibung,API Referenz" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/freezepanes,PUT,Fenster im Arbeitsblatt fixieren.,<a href=\'https://apireference.aspose.cloud/cells/#/Worksheets/PutWorksheetFreezePanes\'>PutWorksheetFreezePanes</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
 {{< blocks/products/cells/docs-Parameter parametertitle="Path Parameter" columns="Parametername, Typ, Beschreibung" >}}
-     {{< blocks/products/cells/docs-Parameter-content columns="name,string,Der Dateiname." >}} 
-     {{< blocks/products/cells/docs-Parameter-content columns="sheetName,string,Der Arbeitsblattname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="Name, Zeichenfolge, Der Dateiname." >}} 
+     {{< blocks/products/cells/docs-Parameter-content columns="sheetName, string, Der Name des Arbeitsblatts." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 {{< blocks/products/cells/docs-Parameter parametertitle="Query Parameter" columns="Parametername, Typ, Beschreibung" >}}
     {{< blocks/products/cells/docs-Parameter-content columns="Zeile, Ganzzahl, Zeilenindex." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Spalte, Ganzzahl, Spaltenindex." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="freezedRows,integer,Anzahl der sichtbaren Zeilen im oberen Bereich, nicht mehr als der Zeilenindex." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="freezedColumns,integer,Anzahl der sichtbaren Spalten im linken Bereich, nicht mehr als der Spaltenindex." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="freezedRows, Integer, Anzahl der sichtbaren Zeilen im oberen Bereich, nicht mehr als der Zeilenindex." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="freezedColumns, Integer, Anzahl der sichtbaren Spalten im linken Bereich, nicht mehr als der Spaltenindex." >}} 
     {{< blocks/products/cells/docs-Parameter-content columns="Ordner, Zeichenfolge, Der Ordner, in dem sich die Datei befindet." >}} 
-    {{< blocks/products/cells/docs-Parameter-content columns="storageName,string,Der Speichername, in dem sich die Datei befindet." >}} 
+    {{< blocks/products/cells/docs-Parameter-content columns="storageName, string, Der Name des Speichers, in dem sich die Datei befindet." >}} 
 {{< /blocks/products/cells/docs-Parameter >}}
 
 {{< blocks/products/cells/docs-title titlemsg="The <a href=\'https://apireference.aspose.cloud/cells/#/WorksheetsController/PutWorksheetFreezePanes\'>OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. " >}}

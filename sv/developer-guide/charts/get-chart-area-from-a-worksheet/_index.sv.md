@@ -4,6 +4,7 @@ type: docs
 url: /sv/charts/area/get/
 aliases: [/get-chart-area-from-a-worksheet/]
 weight: 60
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Hämta diagramområde från ett kalkylblad
 ---
 Denna REST API indikerar att få kartområdesinformation.
  
