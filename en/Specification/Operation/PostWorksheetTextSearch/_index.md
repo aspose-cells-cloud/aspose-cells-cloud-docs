@@ -3,7 +3,7 @@ title: "PostWorksheetTextSearch"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postworksheettextsearch/
-description: ""
+description: "Search for text in the worksheet."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, PostWorksheetTextSearch
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetTextSearch" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Search for text in the worksheet." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/findText,POST,,<a href='https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetTextSearch'>PostWorksheetTextSearch</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/findText,POST,Search for text in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetTextSearch'>PostWorksheetTextSearch</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

@@ -3,7 +3,7 @@ title: "DeleteMetadata"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/deletemetadata/
-description: ""
+description: "Delete cells document properties in Excel file, and save them is various formats."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, DeleteMetadata
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="DeleteMetadata" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Delete cells document properties in Excel file, and save them is various formats." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/metadata/delete,POST,,<a href='https://apireference.aspose.cloud/cells/#/LightCells/DeleteMetadata'>DeleteMetadata</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/metadata/delete,POST,Delete cells document properties in Excel file, and save them is various formats.,<a href='https://apireference.aspose.cloud/cells/#/LightCells/DeleteMetadata'>DeleteMetadata</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

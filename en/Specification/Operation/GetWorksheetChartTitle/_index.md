@@ -3,7 +3,7 @@ title: "GetWorksheetChartTitle"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/getworksheetcharttitle/
-description: ""
+description: "Retrieve chart title description in the worksheet."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, GetWorksheetChartTitle
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetChartTitle" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Retrieve chart title description in the worksheet." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title,GET,,<a href='https://apireference.aspose.cloud/cells/#/Charts/GetWorksheetChartTitle'>GetWorksheetChartTitle</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title,GET,Retrieve chart title description in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/Charts/GetWorksheetChartTitle'>GetWorksheetChartTitle</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

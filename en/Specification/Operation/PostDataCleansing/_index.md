@@ -3,7 +3,7 @@ title: "PostDataCleansing"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postdatacleansing/
-description: ""
+description: "Data cleansing of spreadsheet files is a data management process used to identify, correct, and remove errors, incompleteness, duplicates, or inaccuracies in tables and ranges."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, PostDataCleansing
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostDataCleansing" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Data cleansing of spreadsheet files is a data management process used to identify, correct, and remove errors, incompleteness, duplicates, or inaccuracies in tables and ranges." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/datacleansing,POST,,<a href='https://apireference.aspose.cloud/cells/#/DataProcessing/PostDataCleansing'>PostDataCleansing</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/datacleansing,POST,Data cleansing of spreadsheet files is a data management process used to identify, correct, and remove errors, incompleteness, duplicates, or inaccuracies in tables and ranges.,<a href='https://apireference.aspose.cloud/cells/#/DataProcessing/PostDataCleansing'>PostDataCleansing</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

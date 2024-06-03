@@ -3,7 +3,7 @@ title: "GetWorksheetConditionalFormattings"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/getworksheetconditionalformattings/
-description: ""
+description: "Retrieve descriptions of conditional formattings in a worksheet."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, GetWorksheetConditionalFormattings
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetConditionalFormattings" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Retrieve descriptions of conditional formattings in a worksheet." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/conditionalFormattings,GET,,<a href='https://apireference.aspose.cloud/cells/#/ConditionalFormattings/GetWorksheetConditionalFormattings'>GetWorksheetConditionalFormattings</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/conditionalFormattings,GET,Retrieve descriptions of conditional formattings in a worksheet.,<a href='https://apireference.aspose.cloud/cells/#/ConditionalFormattings/GetWorksheetConditionalFormattings'>GetWorksheetConditionalFormattings</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

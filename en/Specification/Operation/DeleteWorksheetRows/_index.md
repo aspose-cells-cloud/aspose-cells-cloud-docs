@@ -3,7 +3,7 @@ title: "DeleteWorksheetRows"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/deleteworksheetrows/
-description: ""
+description: "Delete several rows in the worksheet."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, DeleteWorksheetRows
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetRows" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Delete several rows in the worksheet." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells/rows/,DELETE,,<a href='https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetRows'>DeleteWorksheetRows</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells/rows/,DELETE,Delete several rows in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetRows'>DeleteWorksheetRows</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

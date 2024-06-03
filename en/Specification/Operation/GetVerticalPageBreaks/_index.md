@@ -3,7 +3,7 @@ title: "GetVerticalPageBreaks"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/getverticalpagebreaks/
-description: ""
+description: "Retrieve descriptions of vertical page breaks in the worksheet."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, GetVerticalPageBreaks
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="GetVerticalPageBreaks" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Retrieve descriptions of vertical page breaks in the worksheet." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/verticalpagebreaks,GET,,<a href='https://apireference.aspose.cloud/cells/#/PageBreaks/GetVerticalPageBreaks'>GetVerticalPageBreaks</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/verticalpagebreaks,GET,Retrieve descriptions of vertical page breaks in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/PageBreaks/GetVerticalPageBreaks'>GetVerticalPageBreaks</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

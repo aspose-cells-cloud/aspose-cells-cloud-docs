@@ -3,7 +3,7 @@ title: "DeleteWorksheetComment"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/deleteworksheetcomment/
-description: ""
+description: "Delete cell comment in the worksheet."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, DeleteWorksheetComment
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetComment" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Delete cell comment in the worksheet." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/comments/{cellName},DELETE,,<a href='https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheetComment'>DeleteWorksheetComment</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/comments/{cellName},DELETE,Delete cell comment in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheetComment'>DeleteWorksheetComment</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

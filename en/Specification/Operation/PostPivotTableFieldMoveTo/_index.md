@@ -3,7 +3,7 @@ title: "PostPivotTableFieldMoveTo"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postpivottablefieldmoveto/
-description: ""
+description: "Move a pivot field in the PivotTable."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, PostPivotTableFieldMoveTo
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostPivotTableFieldMoveTo" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Move a pivot field in the PivotTable." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotField/Move,POST,,<a href='https://apireference.aspose.cloud/cells/#/PivotTables/PostPivotTableFieldMoveTo'>PostPivotTableFieldMoveTo</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotField/Move,POST,Move a pivot field in the PivotTable.,<a href='https://apireference.aspose.cloud/cells/#/PivotTables/PostPivotTableFieldMoveTo'>PostPivotTableFieldMoveTo</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

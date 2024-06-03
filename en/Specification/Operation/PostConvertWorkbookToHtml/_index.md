@@ -3,7 +3,7 @@ title: "PostConvertWorkbookToHtml"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postconvertworkbooktohtml/
-description: ""
+description: "Convert Excel file to HTML files."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, PostConvertWorkbookToHtml
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostConvertWorkbookToHtml" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Convert Excel file to HTML files." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/convert/html,POST,,<a href='https://apireference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToHtml'>PostConvertWorkbookToHtml</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/convert/html,POST,Convert Excel file to HTML files.,<a href='https://apireference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToHtml'>PostConvertWorkbookToHtml</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

@@ -3,7 +3,7 @@ title: "PutWorksheetComment"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/putworksheetcomment/
-description: ""
+description: "Add cell comment in the worksheet."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, PutWorksheetComment
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetComment" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Add cell comment in the worksheet." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/comments/{cellName},PUT,,<a href='https://apireference.aspose.cloud/cells/#/Worksheets/PutWorksheetComment'>PutWorksheetComment</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/comments/{cellName},PUT,Add cell comment in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/Worksheets/PutWorksheetComment'>PutWorksheetComment</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

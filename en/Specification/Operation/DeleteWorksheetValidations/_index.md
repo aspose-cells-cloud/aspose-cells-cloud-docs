@@ -3,7 +3,7 @@ title: "DeleteWorksheetValidations"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/deleteworksheetvalidations/
-description: ""
+description: "Delete all validations in the worksheet."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, DeleteWorksheetValidations
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetValidations" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Delete all validations in the worksheet." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/validations,DELETE,,<a href='https://apireference.aspose.cloud/cells/#/WorksheetValidations/DeleteWorksheetValidations'>DeleteWorksheetValidations</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/validations,DELETE,Delete all validations in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/WorksheetValidations/DeleteWorksheetValidations'>DeleteWorksheetValidations</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

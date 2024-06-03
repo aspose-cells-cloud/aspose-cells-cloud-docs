@@ -3,7 +3,7 @@ title: "PostWorkbookSplit"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postworkbooksplit/
-description: ""
+description: "Split the workbook with a specific format."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, PostWorkbookSplit
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookSplit" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Split the workbook with a specific format." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/split,POST,,<a href='https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookSplit'>PostWorkbookSplit</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/split,POST,Split the workbook with a specific format.,<a href='https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookSplit'>PostWorkbookSplit</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

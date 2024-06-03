@@ -3,7 +3,7 @@ title: "PutWorksheetCustomFilter"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/putworksheetcustomfilter/
-description: ""
+description: "Filter a list with custom criteria in the worksheet."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, PutWorksheetCustomFilter
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetCustomFilter" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Filter a list with custom criteria in the worksheet." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/autoFilter/custom,PUT,,<a href='https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetCustomFilter'>PutWorksheetCustomFilter</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/autoFilter/custom,PUT,Filter a list with custom criteria in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetCustomFilter'>PutWorksheetCustomFilter</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

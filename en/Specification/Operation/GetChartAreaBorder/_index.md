@@ -3,7 +3,7 @@ title: "GetChartAreaBorder"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/getchartareaborder/
-description: ""
+description: "Retrieve chart area border description."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, GetChartAreaBorder
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="GetChartAreaBorder" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Retrieve chart area border description." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/chartArea/border,GET,,<a href='https://apireference.aspose.cloud/cells/#/ChartArea/GetChartAreaBorder'>GetChartAreaBorder</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/chartArea/border,GET,Retrieve chart area border description.,<a href='https://apireference.aspose.cloud/cells/#/ChartArea/GetChartAreaBorder'>GetChartAreaBorder</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

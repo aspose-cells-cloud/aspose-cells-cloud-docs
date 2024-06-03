@@ -3,7 +3,7 @@ title: "GetWorksheetChartLegend"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/getworksheetchartlegend/
-description: ""
+description: "Retrieve chart legend description in the worksheet."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, GetWorksheetChartLegend
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetChartLegend" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Retrieve chart legend description in the worksheet." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend,GET,,<a href='https://apireference.aspose.cloud/cells/#/Charts/GetWorksheetChartLegend'>GetWorksheetChartLegend</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend,GET,Retrieve chart legend description in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/Charts/GetWorksheetChartLegend'>GetWorksheetChartLegend</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

@@ -3,7 +3,7 @@ title: "DeleteWorksheetFilter"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/deleteworksheetfilter/
-description: ""
+description: "Delete a filter for a column in the worksheet."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, DeleteWorksheetFilter
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetFilter" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Delete a filter for a column in the worksheet." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/autoFilter/filter,DELETE,,<a href='https://apireference.aspose.cloud/cells/#/AutoFilter/DeleteWorksheetFilter'>DeleteWorksheetFilter</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/autoFilter/filter,DELETE,Delete a filter for a column in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/AutoFilter/DeleteWorksheetFilter'>DeleteWorksheetFilter</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

@@ -3,7 +3,7 @@ title: "PutWorksheetDynamicFilter"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/putworksheetdynamicfilter/
-description: ""
+description: "Add a dynamic filter in the worksheet."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, PutWorksheetDynamicFilter
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetDynamicFilter" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Add a dynamic filter in the worksheet." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/autoFilter/dynamicFilter,PUT,,<a href='https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetDynamicFilter'>PutWorksheetDynamicFilter</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/autoFilter/dynamicFilter,PUT,Add a dynamic filter in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetDynamicFilter'>PutWorksheetDynamicFilter</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

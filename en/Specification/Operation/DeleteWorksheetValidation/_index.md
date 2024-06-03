@@ -3,7 +3,7 @@ title: "DeleteWorksheetValidation"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/deleteworksheetvalidation/
-description: ""
+description: "Delete a validation by index in worksheet."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, DeleteWorksheetValidation
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetValidation" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Delete a validation by index in worksheet." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/validations/{validationIndex},DELETE,,<a href='https://apireference.aspose.cloud/cells/#/WorksheetValidations/DeleteWorksheetValidation'>DeleteWorksheetValidation</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/validations/{validationIndex},DELETE,Delete a validation by index in worksheet.,<a href='https://apireference.aspose.cloud/cells/#/WorksheetValidations/DeleteWorksheetValidation'>DeleteWorksheetValidation</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

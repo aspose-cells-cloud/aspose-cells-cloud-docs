@@ -3,7 +3,7 @@ title: "PostWorksheetCellsRangeUnMerge"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postworksheetcellsrangeunmerge/
-description: ""
+description: "Unmerge merged cells within this range."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, PostWorksheetCellsRangeUnMerge
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangeUnMerge" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Unmerge merged cells within this range." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges/unmerge,POST,,<a href='https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeUnMerge'>PostWorksheetCellsRangeUnMerge</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges/unmerge,POST,Unmerge merged cells within this range.,<a href='https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeUnMerge'>PostWorksheetCellsRangeUnMerge</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

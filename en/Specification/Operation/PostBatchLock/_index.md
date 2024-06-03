@@ -3,7 +3,7 @@ title: "PostBatchLock"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postbatchlock/
-description: ""
+description: "Batch locking files that meet specific matching conditions."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, PostBatchLock
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostBatchLock" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Batch locking files that meet specific matching conditions." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/batch/lock,POST,,<a href='https://apireference.aspose.cloud/cells/#/Batch/PostBatchLock'>PostBatchLock</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/batch/lock,POST,Batch locking files that meet specific matching conditions.,<a href='https://apireference.aspose.cloud/cells/#/Batch/PostBatchLock'>PostBatchLock</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

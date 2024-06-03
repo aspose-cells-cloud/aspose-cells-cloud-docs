@@ -3,7 +3,7 @@ title: "PostReplace"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postreplace/
-description: ""
+description: "Replace specified text with new text in Excel files."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, PostReplace
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostReplace" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Replace specified text with new text in Excel files." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/replace,POST,,<a href='https://apireference.aspose.cloud/cells/#/LightCells/PostReplace'>PostReplace</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/replace,POST,Replace specified text with new text in Excel files.,<a href='https://apireference.aspose.cloud/cells/#/LightCells/PostReplace'>PostReplace</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

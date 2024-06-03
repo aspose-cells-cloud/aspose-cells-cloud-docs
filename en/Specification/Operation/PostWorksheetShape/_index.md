@@ -3,7 +3,7 @@ title: "PostWorksheetShape"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postworksheetshape/
-description: ""
+description: "Update a shape in the worksheet."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, PostWorksheetShape
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetShape" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Update a shape in the worksheet." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/shapes/{shapeindex},POST,,<a href='https://apireference.aspose.cloud/cells/#/Shapes/PostWorksheetShape'>PostWorksheetShape</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/shapes/{shapeindex},POST,Update a shape in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/Shapes/PostWorksheetShape'>PostWorksheetShape</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

@@ -3,7 +3,7 @@ title: "PostImportData"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postimportdata/
-description: ""
+description: "Import data into the Excel file."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, PostImportData
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostImportData" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Import data into the Excel file." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/importdata,POST,,<a href='https://apireference.aspose.cloud/cells/#/DataProcessing/PostImportData'>PostImportData</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/importdata,POST,Import data into the Excel file.,<a href='https://apireference.aspose.cloud/cells/#/DataProcessing/PostImportData'>PostImportData</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

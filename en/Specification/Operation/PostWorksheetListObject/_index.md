@@ -3,7 +3,7 @@ title: "PostWorksheetListObject"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postworksheetlistobject/
-description: ""
+description: "Update list object by index in the worksheet."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, PostWorksheetListObject
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetListObject" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Update list object by index in the worksheet." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex},POST,,<a href='https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObject'>PostWorksheetListObject</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex},POST,Update list object by index in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObject'>PostWorksheetListObject</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

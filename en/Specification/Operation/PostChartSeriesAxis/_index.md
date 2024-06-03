@@ -3,7 +3,7 @@ title: "PostChartSeriesAxis"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postchartseriesaxis/
-description: ""
+description: "Update chart series axis in the chart."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, PostChartSeriesAxis
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostChartSeriesAxis" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Update chart series axis in the chart." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/seriesaxis,POST,,<a href='https://apireference.aspose.cloud/cells/#/Charts/PostChartSeriesAxis'>PostChartSeriesAxis</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/seriesaxis,POST,Update chart series axis in the chart.,<a href='https://apireference.aspose.cloud/cells/#/Charts/PostChartSeriesAxis'>PostChartSeriesAxis</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

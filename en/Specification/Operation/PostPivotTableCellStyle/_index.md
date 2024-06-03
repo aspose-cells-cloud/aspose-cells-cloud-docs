@@ -3,7 +3,7 @@ title: "PostPivotTableCellStyle"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postpivottablecellstyle/
-description: ""
+description: "Update cell style in the PivotTable."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, PostPivotTableCellStyle
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostPivotTableCellStyle" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Update cell style in the PivotTable." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/Format,POST,,<a href='https://apireference.aspose.cloud/cells/#/PivotTables/PostPivotTableCellStyle'>PostPivotTableCellStyle</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/Format,POST,Update cell style in the PivotTable.,<a href='https://apireference.aspose.cloud/cells/#/PivotTables/PostPivotTableCellStyle'>PostPivotTableCellStyle</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

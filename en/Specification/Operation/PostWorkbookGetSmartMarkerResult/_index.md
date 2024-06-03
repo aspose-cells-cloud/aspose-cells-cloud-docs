@@ -3,7 +3,7 @@ title: "PostWorkbookGetSmartMarkerResult"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postworkbookgetsmartmarkerresult/
-description: ""
+description: "Smart marker processing."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, PostWorkbookGetSmartMarkerResult
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookGetSmartMarkerResult" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Smart marker processing." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/smartmarker,POST,,<a href='https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookGetSmartMarkerResult'>PostWorkbookGetSmartMarkerResult</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/smartmarker,POST,Smart marker processing.,<a href='https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookGetSmartMarkerResult'>PostWorkbookGetSmartMarkerResult</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

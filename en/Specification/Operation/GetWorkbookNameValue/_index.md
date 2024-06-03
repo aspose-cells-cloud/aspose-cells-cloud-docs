@@ -3,7 +3,7 @@ title: "GetWorkbookNameValue"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/getworkbooknamevalue/
-description: ""
+description: "Retrieve the value of a named range in the workbook."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, GetWorkbookNameValue
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="GetWorkbookNameValue" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Retrieve the value of a named range in the workbook." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/names/{nameName}/value,GET,,<a href='https://apireference.aspose.cloud/cells/#/Workbook/GetWorkbookNameValue'>GetWorkbookNameValue</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/names/{nameName}/value,GET,Retrieve the value of a named range in the workbook.,<a href='https://apireference.aspose.cloud/cells/#/Workbook/GetWorkbookNameValue'>GetWorkbookNameValue</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

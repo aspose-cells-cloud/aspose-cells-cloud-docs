@@ -3,7 +3,7 @@ title: "PostBatchSplit"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postbatchsplit/
-description: ""
+description: "Batch splitting files that meet specific matching conditions."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, PostBatchSplit
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostBatchSplit" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Batch splitting files that meet specific matching conditions." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/batch/split,POST,,<a href='https://apireference.aspose.cloud/cells/#/Batch/PostBatchSplit'>PostBatchSplit</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/batch/split,POST,Batch splitting files that meet specific matching conditions.,<a href='https://apireference.aspose.cloud/cells/#/Batch/PostBatchSplit'>PostBatchSplit</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

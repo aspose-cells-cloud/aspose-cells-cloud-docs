@@ -3,7 +3,7 @@ title: "GetChartValueAxis"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/getchartvalueaxis/
-description: ""
+description: "Retrieve chart value axis in the chart."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, GetChartValueAxis
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="GetChartValueAxis" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Retrieve chart value axis in the chart." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/valueaxis,GET,,<a href='https://apireference.aspose.cloud/cells/#/Charts/GetChartValueAxis'>GetChartValueAxis</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/valueaxis,GET,Retrieve chart value axis in the chart.,<a href='https://apireference.aspose.cloud/cells/#/Charts/GetChartValueAxis'>GetChartValueAxis</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

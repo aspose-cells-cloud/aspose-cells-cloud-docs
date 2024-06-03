@@ -3,7 +3,7 @@ title: "PostRenameWorksheet"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postrenameworksheet/
-description: ""
+description: "Rename worksheet in the workbook."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, PostRenameWorksheet
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostRenameWorksheet" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Rename worksheet in the workbook." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/rename,POST,,<a href='https://apireference.aspose.cloud/cells/#/Worksheets/PostRenameWorksheet'>PostRenameWorksheet</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/rename,POST,Rename worksheet in the workbook.,<a href='https://apireference.aspose.cloud/cells/#/Worksheets/PostRenameWorksheet'>PostRenameWorksheet</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

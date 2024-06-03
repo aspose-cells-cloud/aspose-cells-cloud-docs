@@ -3,7 +3,7 @@ title: "PostSearch"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postsearch/
-description: ""
+description: "Search for specified text within Excel files."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, PostSearch
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostSearch" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Search for specified text within Excel files." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/search,POST,,<a href='https://apireference.aspose.cloud/cells/#/LightCells/PostSearch'>PostSearch</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/search,POST,Search for specified text within Excel files.,<a href='https://apireference.aspose.cloud/cells/#/LightCells/PostSearch'>PostSearch</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

@@ -3,7 +3,7 @@ title: "GetHorizontalPageBreak"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/gethorizontalpagebreak/
-description: ""
+description: "Retrieve a horizontal page break descripton in the worksheet."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, GetHorizontalPageBreak
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="GetHorizontalPageBreak" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Retrieve a horizontal page break descripton in the worksheet." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/horizontalpagebreaks/{index},GET,,<a href='https://apireference.aspose.cloud/cells/#/PageBreaks/GetHorizontalPageBreak'>GetHorizontalPageBreak</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/horizontalpagebreaks/{index},GET,Retrieve a horizontal page break descripton in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/PageBreaks/GetHorizontalPageBreak'>GetHorizontalPageBreak</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

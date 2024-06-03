@@ -3,7 +3,7 @@ title: "PutWorksheetHyperlink"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/putworksheethyperlink/
-description: ""
+description: "Add hyperlink in the worksheet."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, PutWorksheetHyperlink
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetHyperlink" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Add hyperlink in the worksheet." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/hyperlinks,PUT,,<a href='https://apireference.aspose.cloud/cells/#/Hypelinks/PutWorksheetHyperlink'>PutWorksheetHyperlink</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/hyperlinks,PUT,Add hyperlink in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/Hypelinks/PutWorksheetHyperlink'>PutWorksheetHyperlink</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

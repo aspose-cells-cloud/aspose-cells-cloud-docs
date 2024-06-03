@@ -3,7 +3,7 @@ title: "PostUnhideWorksheetColumns"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postunhideworksheetcolumns/
-description: ""
+description: "Unhide worksheet columns in the worksheet."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, PostUnhideWorksheetColumns
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostUnhideWorksheetColumns" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Unhide worksheet columns in the worksheet." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells/columns/unhide,POST,,<a href='https://apireference.aspose.cloud/cells/#/Cells/PostUnhideWorksheetColumns'>PostUnhideWorksheetColumns</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells/columns/unhide,POST,Unhide worksheet columns in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/Cells/PostUnhideWorksheetColumns'>PostUnhideWorksheetColumns</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

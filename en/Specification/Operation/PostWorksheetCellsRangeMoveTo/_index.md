@@ -3,7 +3,7 @@ title: "PostWorksheetCellsRangeMoveTo"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postworksheetcellsrangemoveto/
-description: ""
+description: "Move the current range to the destination range."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, PostWorksheetCellsRangeMoveTo
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangeMoveTo" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Move the current range to the destination range." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges/moveto,POST,,<a href='https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeMoveTo'>PostWorksheetCellsRangeMoveTo</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges/moveto,POST,Move the current range to the destination range.,<a href='https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeMoveTo'>PostWorksheetCellsRangeMoveTo</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

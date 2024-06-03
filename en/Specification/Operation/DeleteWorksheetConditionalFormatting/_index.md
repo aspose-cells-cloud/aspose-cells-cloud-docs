@@ -3,7 +3,7 @@ title: "DeleteWorksheetConditionalFormatting"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/deleteworksheetconditionalformatting/
-description: ""
+description: "Remove a conditional formatting."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, DeleteWorksheetConditionalFormatting
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetConditionalFormatting" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Remove a conditional formatting." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index},DELETE,,<a href='https://apireference.aspose.cloud/cells/#/ConditionalFormattings/DeleteWorksheetConditionalFormatting'>DeleteWorksheetConditionalFormatting</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index},DELETE,Remove a conditional formatting.,<a href='https://apireference.aspose.cloud/cells/#/ConditionalFormattings/DeleteWorksheetConditionalFormatting'>DeleteWorksheetConditionalFormatting</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

@@ -3,7 +3,7 @@ title: "GetWorksheetColumn"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/getworksheetcolumn/
-description: ""
+description: "Retrieve worksheet column data by column index."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, GetWorksheetColumn
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetColumn" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Retrieve worksheet column data by column index." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells/columns/{columnIndex},GET,,<a href='https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetColumn'>GetWorksheetColumn</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells/columns/{columnIndex},GET,Retrieve worksheet column data by column index.,<a href='https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetColumn'>GetWorksheetColumn</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

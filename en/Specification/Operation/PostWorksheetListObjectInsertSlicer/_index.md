@@ -3,7 +3,7 @@ title: "PostWorksheetListObjectInsertSlicer"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postworksheetlistobjectinsertslicer/
-description: ""
+description: "Insert slicer for list object."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, PostWorksheetListObjectInsertSlicer
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetListObjectInsertSlicer" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Insert slicer for list object." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/InsertSlicer,POST,,<a href='https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObjectInsertSlicer'>PostWorksheetListObjectInsertSlicer</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/InsertSlicer,POST,Insert slicer for list object.,<a href='https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObjectInsertSlicer'>PostWorksheetListObjectInsertSlicer</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

@@ -3,7 +3,7 @@ title: "GetWorksheetCellsRangeValue"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/getworksheetcellsrangevalue/
-description: ""
+description: "Retrieve the values of cells within the specified range."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, GetWorksheetCellsRangeValue
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetCellsRangeValue" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Retrieve the values of cells within the specified range." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges/value,GET,,<a href='https://apireference.aspose.cloud/cells/#/Ranges/GetWorksheetCellsRangeValue'>GetWorksheetCellsRangeValue</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges/value,GET,Retrieve the values of cells within the specified range.,<a href='https://apireference.aspose.cloud/cells/#/Ranges/GetWorksheetCellsRangeValue'>GetWorksheetCellsRangeValue</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

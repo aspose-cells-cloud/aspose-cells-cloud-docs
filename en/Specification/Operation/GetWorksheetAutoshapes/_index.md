@@ -3,7 +3,7 @@ title: "GetWorksheetAutoshapes"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/getworksheetautoshapes/
-description: ""
+description: "Get autoshapes description in worksheet."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, GetWorksheetAutoshapes
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetAutoshapes" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Get autoshapes description in worksheet." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/autoshapes,GET,,<a href='https://apireference.aspose.cloud/cells/#/Autoshapes/GetWorksheetAutoshapes'>GetWorksheetAutoshapes</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/autoshapes,GET,Get autoshapes description in worksheet.,<a href='https://apireference.aspose.cloud/cells/#/Autoshapes/GetWorksheetAutoshapes'>GetWorksheetAutoshapes</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

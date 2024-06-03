@@ -3,7 +3,7 @@ title: "GetMetadata"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/getmetadata/
-description: ""
+description: "Get cells document properties."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, GetMetadata
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="GetMetadata" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Get cells document properties." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/metadata/get,POST,,<a href='https://apireference.aspose.cloud/cells/#/LightCells/GetMetadata'>GetMetadata</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/metadata/get,POST,Get cells document properties.,<a href='https://apireference.aspose.cloud/cells/#/LightCells/GetMetadata'>GetMetadata</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

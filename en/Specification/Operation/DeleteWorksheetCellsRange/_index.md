@@ -3,7 +3,7 @@ title: "DeleteWorksheetCellsRange"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/deleteworksheetcellsrange/
-description: ""
+description: "Delete a range of cells and shift existing cells based on the specified shift option."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, DeleteWorksheetCellsRange
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetCellsRange" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Delete a range of cells and shift existing cells based on the specified shift option." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges,DELETE,,<a href='https://apireference.aspose.cloud/cells/#/Ranges/DeleteWorksheetCellsRange'>DeleteWorksheetCellsRange</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges,DELETE,Delete a range of cells and shift existing cells based on the specified shift option.,<a href='https://apireference.aspose.cloud/cells/#/Ranges/DeleteWorksheetCellsRange'>DeleteWorksheetCellsRange</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

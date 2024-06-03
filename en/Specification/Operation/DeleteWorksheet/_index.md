@@ -3,7 +3,7 @@ title: "DeleteWorksheet"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/deleteworksheet/
-description: ""
+description: "Delete a worksheet in the workbook."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, DeleteWorksheet
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheet" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Delete a worksheet in the workbook." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName},DELETE,,<a href='https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheet'>DeleteWorksheet</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName},DELETE,Delete a worksheet in the workbook.,<a href='https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheet'>DeleteWorksheet</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

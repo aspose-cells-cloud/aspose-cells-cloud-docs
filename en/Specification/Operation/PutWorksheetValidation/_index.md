@@ -3,7 +3,7 @@ title: "PutWorksheetValidation"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/putworksheetvalidation/
-description: ""
+description: "Add a validation at index in the worksheet."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, PutWorksheetValidation
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetValidation" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Add a validation at index in the worksheet." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/validations,PUT,,<a href='https://apireference.aspose.cloud/cells/#/WorksheetValidations/PutWorksheetValidation'>PutWorksheetValidation</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/validations,PUT,Add a validation at index in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/WorksheetValidations/PutWorksheetValidation'>PutWorksheetValidation</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

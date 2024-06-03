@@ -3,7 +3,7 @@ title: "GetWorksheetCells"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/getworksheetcells/
-description: ""
+description: "Retrieve cell descriptions in a specified format."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, GetWorksheetCells
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetCells" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Retrieve cell descriptions in a specified format." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells,GET,,<a href='https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetCells'>GetWorksheetCells</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells,GET,Retrieve cell descriptions in a specified format.,<a href='https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetCells'>GetWorksheetCells</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

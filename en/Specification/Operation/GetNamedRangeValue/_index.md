@@ -3,7 +3,7 @@ title: "GetNamedRangeValue"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/getnamedrangevalue/
-description: ""
+description: "Retrieve values in range."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, GetNamedRangeValue
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="GetNamedRangeValue" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Retrieve values in range." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/ranges/{namerange}/value,GET,,<a href='https://apireference.aspose.cloud/cells/#/Worksheets/GetNamedRangeValue'>GetNamedRangeValue</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/ranges/{namerange}/value,GET,Retrieve values in range.,<a href='https://apireference.aspose.cloud/cells/#/Worksheets/GetNamedRangeValue'>GetNamedRangeValue</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

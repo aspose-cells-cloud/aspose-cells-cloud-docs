@@ -3,7 +3,7 @@ title: "PostWorksheetSparklineGroup"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postworksheetsparklinegroup/
-description: ""
+description: "Update a sparkline group in the worksheet."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, PostWorksheetSparklineGroup
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetSparklineGroup" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Update a sparkline group in the worksheet." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/sparklineGroups/{sparklineGroupIndex},POST,,<a href='https://apireference.aspose.cloud/cells/#/SparklineGroups/PostWorksheetSparklineGroup'>PostWorksheetSparklineGroup</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/sparklineGroups/{sparklineGroupIndex},POST,Update a sparkline group in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/SparklineGroups/PostWorksheetSparklineGroup'>PostWorksheetSparklineGroup</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

@@ -3,7 +3,7 @@ title: "PostWorksheetCellsRangeColumnWidth"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postworksheetcellsrangecolumnwidth/
-description: ""
+description: "Set the column width of the specified range."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, PostWorksheetCellsRangeColumnWidth
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetCellsRangeColumnWidth" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Set the column width of the specified range." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges/columnWidth,POST,,<a href='https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeColumnWidth'>PostWorksheetCellsRangeColumnWidth</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/ranges/columnWidth,POST,Set the column width of the specified range.,<a href='https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeColumnWidth'>PostWorksheetCellsRangeColumnWidth</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

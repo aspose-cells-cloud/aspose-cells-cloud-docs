@@ -3,7 +3,7 @@ title: "PutWorksheetListObject"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/putworksheetlistobject/
-description: ""
+description: "Add a ListObject in the worksheet."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, PutWorksheetListObject
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetListObject" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Add a ListObject in the worksheet." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/listobjects,PUT,,<a href='https://apireference.aspose.cloud/cells/#/ListObjects/PutWorksheetListObject'>PutWorksheetListObject</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/listobjects,PUT,Add a ListObject in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/ListObjects/PutWorksheetListObject'>PutWorksheetListObject</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

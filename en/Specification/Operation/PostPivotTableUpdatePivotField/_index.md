@@ -3,7 +3,7 @@ title: "PostPivotTableUpdatePivotField"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postpivottableupdatepivotfield/
-description: ""
+description: "Update pivot field in the PivotTable."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, PostPivotTableUpdatePivotField
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostPivotTableUpdatePivotField" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Update pivot field in the PivotTable." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotFields/{pivotFieldIndex},POST,,<a href='https://apireference.aspose.cloud/cells/#/PivotTables/PostPivotTableUpdatePivotField'>PostPivotTableUpdatePivotField</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotFields/{pivotFieldIndex},POST,Update pivot field in the PivotTable.,<a href='https://apireference.aspose.cloud/cells/#/PivotTables/PostPivotTableUpdatePivotField'>PostPivotTableUpdatePivotField</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

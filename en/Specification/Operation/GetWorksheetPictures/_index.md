@@ -3,7 +3,7 @@ title: "GetWorksheetPictures"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/getworksheetpictures/
-description: ""
+description: "Retrieve descriptions of pictures in the worksheet."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, GetWorksheetPictures
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="GetWorksheetPictures" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Retrieve descriptions of pictures in the worksheet." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pictures,GET,,<a href='https://apireference.aspose.cloud/cells/#/Pictures/GetWorksheetPictures'>GetWorksheetPictures</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pictures,GET,Retrieve descriptions of pictures in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/Pictures/GetWorksheetPictures'>GetWorksheetPictures</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

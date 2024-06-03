@@ -3,7 +3,7 @@ title: "DeleteWorksheetSparklineGroup"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/deleteworksheetsparklinegroup/
-description: ""
+description: "Delete a sparkline group in the worksheet."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, DeleteWorksheetSparklineGroup
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetSparklineGroup" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Delete a sparkline group in the worksheet." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/sparklineGroups/{sparklineIndex},DELETE,,<a href='https://apireference.aspose.cloud/cells/#/SparklineGroups/DeleteWorksheetSparklineGroup'>DeleteWorksheetSparklineGroup</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/sparklineGroups/{sparklineIndex},DELETE,Delete a sparkline group in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/SparklineGroups/DeleteWorksheetSparklineGroup'>DeleteWorksheetSparklineGroup</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

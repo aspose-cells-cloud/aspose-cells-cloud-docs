@@ -3,7 +3,7 @@ title: "DeleteDocumentProperties"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/deletedocumentproperties/
-description: ""
+description: "Delete all custom document properties and reset built-in ones."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, DeleteDocumentProperties
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="DeleteDocumentProperties" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Delete all custom document properties and reset built-in ones." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/documentproperties,DELETE,,<a href='https://apireference.aspose.cloud/cells/#/Properties/DeleteDocumentProperties'>DeleteDocumentProperties</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/documentproperties,DELETE,Delete all custom document properties and reset built-in ones.,<a href='https://apireference.aspose.cloud/cells/#/Properties/DeleteDocumentProperties'>DeleteDocumentProperties</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

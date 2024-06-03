@@ -3,7 +3,7 @@ title: "PostGroupWorksheetRows"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postgroupworksheetrows/
-description: ""
+description: "Group rows in the worksheet."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, PostGroupWorksheetRows
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostGroupWorksheetRows" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Group rows in the worksheet." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells/rows/group,POST,,<a href='https://apireference.aspose.cloud/cells/#/Cells/PostGroupWorksheetRows'>PostGroupWorksheetRows</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells/rows/group,POST,Group rows in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/Cells/PostGroupWorksheetRows'>PostGroupWorksheetRows</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

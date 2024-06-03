@@ -3,7 +3,7 @@ title: "DeleteWorksheetPivotTable"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/deleteworksheetpivottable/
-description: ""
+description: "Delete PivotTable by index in the worksheet."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, DeleteWorksheetPivotTable
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetPivotTable" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Delete PivotTable by index in the worksheet." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex},DELETE,,<a href='https://apireference.aspose.cloud/cells/#/PivotTables/DeleteWorksheetPivotTable'>DeleteWorksheetPivotTable</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex},DELETE,Delete PivotTable by index in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/PivotTables/DeleteWorksheetPivotTable'>DeleteWorksheetPivotTable</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

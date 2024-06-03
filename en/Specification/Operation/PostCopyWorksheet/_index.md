@@ -3,7 +3,7 @@ title: "PostCopyWorksheet"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postcopyworksheet/
-description: ""
+description: "Copy contents and formats from another worksheet."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, PostCopyWorksheet
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostCopyWorksheet" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Copy contents and formats from another worksheet." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/copy,POST,,<a href='https://apireference.aspose.cloud/cells/#/Worksheets/PostCopyWorksheet'>PostCopyWorksheet</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/copy,POST,Copy contents and formats from another worksheet.,<a href='https://apireference.aspose.cloud/cells/#/Worksheets/PostCopyWorksheet'>PostCopyWorksheet</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

@@ -3,7 +3,7 @@ title: "PostDataDeduplication"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postdatadeduplication/
-description: ""
+description: "Data deduplication of spreadsheet files is mainly used to eliminate duplicate data in tables and ranges."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, PostDataDeduplication
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostDataDeduplication" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Data deduplication of spreadsheet files is mainly used to eliminate duplicate data in tables and ranges." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/datadeduplication,POST,,<a href='https://apireference.aspose.cloud/cells/#/DataProcessing/PostDataDeduplication'>PostDataDeduplication</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/datadeduplication,POST,Data deduplication of spreadsheet files is mainly used to eliminate duplicate data in tables and ranges.,<a href='https://apireference.aspose.cloud/cells/#/DataProcessing/PostDataDeduplication'>PostDataDeduplication</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

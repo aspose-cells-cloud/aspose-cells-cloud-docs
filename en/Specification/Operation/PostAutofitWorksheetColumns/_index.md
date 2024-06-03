@@ -3,7 +3,7 @@ title: "PostAutofitWorksheetColumns"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postautofitworksheetcolumns/
-description: ""
+description: "Autofit columns in the worksheet."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, PostAutofitWorksheetColumns
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostAutofitWorksheetColumns" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Autofit columns in the worksheet." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/autofitcolumns,POST,,<a href='https://apireference.aspose.cloud/cells/#/Worksheets/PostAutofitWorksheetColumns'>PostAutofitWorksheetColumns</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/autofitcolumns,POST,Autofit columns in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/Worksheets/PostAutofitWorksheetColumns'>PostAutofitWorksheetColumns</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

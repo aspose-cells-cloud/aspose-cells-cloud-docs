@@ -3,7 +3,7 @@ title: "PutWorksheetFilterTop10"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/putworksheetfiltertop10/
-description: ""
+description: "Filter the top 10 items in the list in the worksheet."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, PutWorksheetFilterTop10
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetFilterTop10" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Filter the top 10 items in the list in the worksheet." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/autoFilter/filterTop10,PUT,,<a href='https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetFilterTop10'>PutWorksheetFilterTop10</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/autoFilter/filterTop10,PUT,Filter the top 10 items in the list in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetFilterTop10'>PutWorksheetFilterTop10</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

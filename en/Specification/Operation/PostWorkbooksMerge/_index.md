@@ -3,7 +3,7 @@ title: "PostWorkbooksMerge"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postworkbooksmerge/
-description: ""
+description: "Merge a workbook into the existing workbook."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, PostWorkbooksMerge
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbooksMerge" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Merge a workbook into the existing workbook." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/merge,POST,,<a href='https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbooksMerge'>PostWorkbooksMerge</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/merge,POST,Merge a workbook into the existing workbook.,<a href='https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbooksMerge'>PostWorkbooksMerge</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

@@ -3,7 +3,7 @@ title: "DeleteDocumentProperty"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/deletedocumentproperty/
-description: ""
+description: "Delete an Excel property."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, DeleteDocumentProperty
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="DeleteDocumentProperty" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Delete an Excel property." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/documentproperties/{propertyName},DELETE,,<a href='https://apireference.aspose.cloud/cells/#/Properties/DeleteDocumentProperty'>DeleteDocumentProperty</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/documentproperties/{propertyName},DELETE,Delete an Excel property.,<a href='https://apireference.aspose.cloud/cells/#/Properties/DeleteDocumentProperty'>DeleteDocumentProperty</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

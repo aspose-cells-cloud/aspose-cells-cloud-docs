@@ -3,7 +3,7 @@ title: "PostWorksheetTextReplace"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postworksheettextreplace/
-description: ""
+description: "Replace old text with new text in the worksheet."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, PostWorksheetTextReplace
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetTextReplace" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Replace old text with new text in the worksheet." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/replaceText,POST,,<a href='https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetTextReplace'>PostWorksheetTextReplace</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/replaceText,POST,Replace old text with new text in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetTextReplace'>PostWorksheetTextReplace</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

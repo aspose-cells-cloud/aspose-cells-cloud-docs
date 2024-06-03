@@ -3,7 +3,7 @@ title: "DeleteWorksheetCharts"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/deleteworksheetcharts/
-description: ""
+description: "Clear the charts in the worksheets."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, DeleteWorksheetCharts
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="DeleteWorksheetCharts" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Clear the charts in the worksheets." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/charts,DELETE,,<a href='https://apireference.aspose.cloud/cells/#/Charts/DeleteWorksheetCharts'>DeleteWorksheetCharts</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/charts,DELETE,Clear the charts in the worksheets.,<a href='https://apireference.aspose.cloud/cells/#/Charts/DeleteWorksheetCharts'>DeleteWorksheetCharts</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

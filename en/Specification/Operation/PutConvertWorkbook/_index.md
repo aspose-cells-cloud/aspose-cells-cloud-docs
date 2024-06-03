@@ -3,7 +3,7 @@ title: "PutConvertWorkbook"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/putconvertworkbook/
-description: ""
+description: "Convert the workbook from the requested content into files in different formats."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, PutConvertWorkbook
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="PutConvertWorkbook" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Convert the workbook from the requested content into files in different formats." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/convert,PUT,,<a href='https://apireference.aspose.cloud/cells/#/Conversion/PutConvertWorkbook'>PutConvertWorkbook</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/convert,PUT,Convert the workbook from the requested content into files in different formats.,<a href='https://apireference.aspose.cloud/cells/#/Conversion/PutConvertWorkbook'>PutConvertWorkbook</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

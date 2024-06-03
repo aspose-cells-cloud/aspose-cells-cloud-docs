@@ -3,7 +3,7 @@ title: "PostSplit"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postsplit/
-description: ""
+description: "Split Excel spreadsheet files based on worksheets and create output files in various formats."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, PostSplit
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostSplit" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Split Excel spreadsheet files based on worksheets and create output files in various formats." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/split,POST,,<a href='https://apireference.aspose.cloud/cells/#/LightCells/PostSplit'>PostSplit</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/split,POST,Split Excel spreadsheet files based on worksheets and create output files in various formats.,<a href='https://apireference.aspose.cloud/cells/#/LightCells/PostSplit'>PostSplit</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

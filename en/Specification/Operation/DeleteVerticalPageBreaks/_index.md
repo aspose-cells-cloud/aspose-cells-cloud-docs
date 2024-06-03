@@ -3,7 +3,7 @@ title: "DeleteVerticalPageBreaks"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/deleteverticalpagebreaks/
-description: ""
+description: "Delete vertical page breaks in the worksheet."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, DeleteVerticalPageBreaks
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="DeleteVerticalPageBreaks" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Delete vertical page breaks in the worksheet." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/verticalpagebreaks,DELETE,,<a href='https://apireference.aspose.cloud/cells/#/PageBreaks/DeleteVerticalPageBreaks'>DeleteVerticalPageBreaks</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/verticalpagebreaks,DELETE,Delete vertical page breaks in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/PageBreaks/DeleteVerticalPageBreaks'>DeleteVerticalPageBreaks</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

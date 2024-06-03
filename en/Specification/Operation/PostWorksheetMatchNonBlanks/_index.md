@@ -3,7 +3,7 @@ title: "PostWorksheetMatchNonBlanks"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postworksheetmatchnonblanks/
-description: ""
+description: "Match all not blank cells in the list."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, PostWorksheetMatchNonBlanks
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetMatchNonBlanks" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Match all not blank cells in the list." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/autoFilter/matchNonBlanks,POST,,<a href='https://apireference.aspose.cloud/cells/#/AutoFilter/PostWorksheetMatchNonBlanks'>PostWorksheetMatchNonBlanks</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/autoFilter/matchNonBlanks,POST,Match all not blank cells in the list.,<a href='https://apireference.aspose.cloud/cells/#/AutoFilter/PostWorksheetMatchNonBlanks'>PostWorksheetMatchNonBlanks</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

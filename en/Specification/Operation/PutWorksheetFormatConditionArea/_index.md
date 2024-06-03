@@ -3,7 +3,7 @@ title: "PutWorksheetFormatConditionArea"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/putworksheetformatconditionarea/
-description: ""
+description: "Add a cell area for the format condition in the worksheet."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, PutWorksheetFormatConditionArea
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetFormatConditionArea" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Add a cell area for the format condition in the worksheet." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}/area,PUT,,<a href='https://apireference.aspose.cloud/cells/#/ConditionalFormattings/PutWorksheetFormatConditionArea'>PutWorksheetFormatConditionArea</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}/area,PUT,Add a cell area for the format condition in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/ConditionalFormattings/PutWorksheetFormatConditionArea'>PutWorksheetFormatConditionArea</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

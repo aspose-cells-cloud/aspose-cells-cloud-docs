@@ -3,7 +3,7 @@ title: "PutWorksheetFilter"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/putworksheetfilter/
-description: ""
+description: "Add a filter for a column in the worksheet."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, PutWorksheetFilter
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="PutWorksheetFilter" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Add a filter for a column in the worksheet." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/autoFilter/filter,PUT,,<a href='https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetFilter'>PutWorksheetFilter</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/autoFilter/filter,PUT,Add a filter for a column in the worksheet.,<a href='https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetFilter'>PutWorksheetFilter</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

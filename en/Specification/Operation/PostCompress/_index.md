@@ -3,7 +3,7 @@ title: "PostCompress"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postcompress/
-description: ""
+description: "Compress files and generate target files in various formats, supported file formats are include Xls, Xlsx, Xlsm, Xlsb, Ods and more."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, PostCompress
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostCompress" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Compress files and generate target files in various formats, supported file formats are include Xls, Xlsx, Xlsm, Xlsb, Ods and more." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/compress,POST,,<a href='https://apireference.aspose.cloud/cells/#/LightCells/PostCompress'>PostCompress</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/compress,POST,Compress files and generate target files in various formats, supported file formats are include Xls, Xlsx, Xlsm, Xlsb, Ods and more.,<a href='https://apireference.aspose.cloud/cells/#/LightCells/PostCompress'>PostCompress</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

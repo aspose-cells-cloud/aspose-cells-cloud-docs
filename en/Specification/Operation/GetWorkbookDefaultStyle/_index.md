@@ -3,7 +3,7 @@ title: "GetWorkbookDefaultStyle"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/getworkbookdefaultstyle/
-description: ""
+description: "Retrieve the description of the default style for the workbook."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, GetWorkbookDefaultStyle
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="GetWorkbookDefaultStyle" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Retrieve the description of the default style for the workbook." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/defaultstyle,GET,,<a href='https://apireference.aspose.cloud/cells/#/Workbook/GetWorkbookDefaultStyle'>GetWorkbookDefaultStyle</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/defaultstyle,GET,Retrieve the description of the default style for the workbook.,<a href='https://apireference.aspose.cloud/cells/#/Workbook/GetWorkbookDefaultStyle'>GetWorkbookDefaultStyle</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

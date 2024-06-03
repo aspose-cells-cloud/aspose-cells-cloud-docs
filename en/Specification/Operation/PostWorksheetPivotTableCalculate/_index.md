@@ -3,7 +3,7 @@ title: "PostWorksheetPivotTableCalculate"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postworksheetpivottablecalculate/
-description: ""
+description: "Calculate pivottable's data to cells."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, PostWorksheetPivotTableCalculate
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostWorksheetPivotTableCalculate" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Calculate pivottable's data to cells." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/Calculate,POST,,<a href='https://apireference.aspose.cloud/cells/#/PivotTables/PostWorksheetPivotTableCalculate'>PostWorksheetPivotTableCalculate</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/Calculate,POST,Calculate pivottable's data to cells.,<a href='https://apireference.aspose.cloud/cells/#/PivotTables/PostWorksheetPivotTableCalculate'>PostWorksheetPivotTableCalculate</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

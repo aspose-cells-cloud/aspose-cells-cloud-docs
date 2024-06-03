@@ -3,7 +3,7 @@ title: "PostConvertWorkbookToPDF"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postconvertworkbooktopdf/
-description: ""
+description: "Convert Excel file to PDF files."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, PostConvertWorkbookToPDF
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostConvertWorkbookToPDF" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Convert Excel file to PDF files." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/convert/pdf,POST,,<a href='https://apireference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToPDF'>PostConvertWorkbookToPDF</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/convert/pdf,POST,Convert Excel file to PDF files.,<a href='https://apireference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToPDF'>PostConvertWorkbookToPDF</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

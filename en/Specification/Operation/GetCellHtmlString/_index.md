@@ -3,7 +3,7 @@ title: "GetCellHtmlString"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/getcellhtmlstring/
-description: ""
+description: "Retrieve the HTML string containing data and specific formats in this cell."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, GetCellHtmlString
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="GetCellHtmlString" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Retrieve the HTML string containing data and specific formats in this cell." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells/{cellName}/htmlstring,GET,,<a href='https://apireference.aspose.cloud/cells/#/Cells/GetCellHtmlString'>GetCellHtmlString</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/worksheets/{sheetName}/cells/{cellName}/htmlstring,GET,Retrieve the HTML string containing data and specific formats in this cell.,<a href='https://apireference.aspose.cloud/cells/#/Cells/GetCellHtmlString'>GetCellHtmlString</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

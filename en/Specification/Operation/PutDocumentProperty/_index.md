@@ -3,7 +3,7 @@ title: "PutDocumentProperty"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/putdocumentproperty/
-description: ""
+description: "Set or add an Excel property."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, PutDocumentProperty
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="PutDocumentProperty" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Set or add an Excel property." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/documentproperties,PUT,,<a href='https://apireference.aspose.cloud/cells/#/Properties/PutDocumentProperty'>PutDocumentProperty</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/documentproperties,PUT,Set or add an Excel property.,<a href='https://apireference.aspose.cloud/cells/#/Properties/PutDocumentProperty'>PutDocumentProperty</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

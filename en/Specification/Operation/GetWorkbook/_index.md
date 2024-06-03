@@ -3,7 +3,7 @@ title: "GetWorkbook"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/getworkbook/
-description: ""
+description: "Retrieve workbooks in various formats."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, GetWorkbook
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="GetWorkbook" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Retrieve workbooks in various formats." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name},GET,,<a href='https://apireference.aspose.cloud/cells/#/Conversion/GetWorkbook'>GetWorkbook</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name},GET,Retrieve workbooks in various formats.,<a href='https://apireference.aspose.cloud/cells/#/Conversion/GetWorkbook'>GetWorkbook</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 

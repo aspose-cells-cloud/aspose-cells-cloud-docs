@@ -3,7 +3,7 @@ title: "PostWorkbookName"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /specification/operation/postworkbookname/
-description: ""
+description: "Update a named range in the workbook."
 kwords: Excel, Office, Spreadsheet, Cloud REST API, PostWorkbookName
 weight: 50
 
@@ -11,10 +11,10 @@ weight: 50
 
 
 {{< blocks/products/cells/docs-title titlemsg="PostWorkbookName" >}}
-{{< blocks/products/cells/docs-title titlemsg="" >}}
+{{< blocks/products/cells/docs-title titlemsg="Update a named range in the workbook." >}}
 
 {{< blocks/products/cells/docs-Parameter parametertitle="REST API" columns="API,HttpMethod,Description,API reference" >}}
-    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/names/{nameName},POST,,<a href='https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookName'>PostWorkbookName</a>" >}}
+    {{< blocks/products/cells/docs-Parameter-content columns="/cells/{name}/names/{nameName},POST,Update a named range in the workbook.,<a href='https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookName'>PostWorkbookName</a>" >}}
 {{< /blocks/products/cells/docs-Parameter >}}
 
 
