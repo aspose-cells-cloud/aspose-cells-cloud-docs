@@ -7,256 +7,74 @@ description: Aspose.Cells Cloud prend en charge Excel pour créer, convertir, fu
 weight: 30
 kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, SDK disponibles
 ---
-## **Aspose.Cells SDK cloud**
-Aspose.Cells Cloud est un API moderne orienté REST, qui permet une intégration facile dans les systèmes existants.
-### **Pourquoi utiliser un SDK ?**
-L'utilisation d'un SDK (client API) est le moyen le plus rapide pour un développeur d'accélérer le développement. Un SDK prend en charge de nombreux détails de bas niveau liés à la création de requêtes et à la gestion des réponses et vous permet de vous concentrer sur l'écriture de code spécifique à votre projet particulier.
-### **Avantages du SDK**
+# **Pourquoi utiliser le SDK Cloud Aspose.Cells**
+
+## **Compatibilité multiplateforme**
+
+Aspose.Cells Cloud SDK fournit une bibliothèque de SDK fiable et stable pour plusieurs langages de développement, offrant aux développeurs une solide prise en charge multiplateforme, ce qui facilite son intégration et son utilisation avec Windows, Linux ou macOS.
+
+## **Traitement Excel efficace et riche ensemble de fonctionnalités**
+
+Aspose.Cells Cloud SDK permet aux développeurs de travailler efficacement avec des fichiers Excel dans le cloud, y compris la lecture, l'écriture, la modification et la conversion, sans installer de logiciel Office local. Le SDK fournit une multitude d'API et de fonctions pour prendre en charge des opérations Excel complexes, telles que le calcul de formules, la création de graphiques, le formatage conditionnel, etc., afin de répondre aux divers besoins des développeurs.
+
+## **Facile à intégrer**
+
+Le SDK fournit une interface API concise et claire, qui permet aux développeurs de s'intégrer rapidement aux projets existants, réduisant ainsi le cycle et les coûts de développement.
+
+## **Réduire les coûts**
+
+L'utilisation du SDK Cloud Aspose.Cells peut réduire les coûts d'exploitation de votre entreprise en évitant d'avoir à acheter et à entretenir des logiciels ou des serveurs Office sur site coûteux.
+
+En résumé, l'utilisation du SDK Cloud Aspose.Cells pour Go peut apporter de nombreux avantages, notamment la compatibilité multiplateforme, la gestion efficace des fichiers Excel, un ensemble riche de fonctionnalités, la sécurité et la protection de la confidentialité, une évolutivité élevée, une intégration facile, une assistance et une documentation communautaires et des coûts réduits. Ces avantages font du SDK Cloud Aspose.Cells un choix idéal pour les développeurs Go travaillant avec des fichiers Excel.
+
+# **Scénarios d'application**
+
+## **Automatisation du traitement des feuilles de calcul**
+
+- À l'aide du SDK Cloud Aspose.Cells for Java, les développeurs peuvent écrire des scripts d'automatisation pour le traitement par lots de fichiers de feuilles de calcul tels que Excel.
+- Les tâches automatisées peuvent inclure l'importation/exportation de données, le formatage, les calculs de formules, la génération de graphiques, etc.
+
+## **Traitement et analyse des données cloud**
+
+- Avec le service Aspose.Cells dans le cloud, des données volumineuses de feuilles de calcul peuvent être traitées sans mobiliser les ressources informatiques locales.
+- Il convient aux scénarios nécessitant une analyse de données complexe, une exploration de données ou une génération de rapports.
+
+## **Compatibilité multiplateforme**
+
+- En raison de la nature multiplateforme de Go, le SDK Cloud Aspose.Cells for Java facilite la mise en œuvre du traitement des feuilles de calcul sur différents systèmes d'exploitation et architectures.
+- Il est particulièrement adapté aux scénarios qui doivent prendre en charge plusieurs environnements d'exploitation, tels que le backend d'application Web, l'application de bureau et le backend d'application mobile.
+
+## **API Intégrations et extensions**
+
+- Aspose.Cells Cloud SDK for Java peut être intégré aux API existantes, fournissant des capacités de traitement de feuilles de calcul dans le cadre du service.
+- Il convient à la création d'applications de niveau entreprise, de plates-formes SaaS ou à la fourniture de services API.
+
+## **Collaboration et partage de documents**
+
+- Avec le SDK Cloud Aspose.Cells for Java, vous pouvez réaliser la fonction d'édition collaborative en ligne de feuilles de calcul par plusieurs personnes.
+- Les utilisateurs peuvent modifier, commenter et partager des feuilles de calcul en temps réel dans le cloud pour améliorer la collaboration en équipe.
+
+## **Migration et transformation des données**
+
+- Lorsque les données doivent être migrées à partir d'autres formats ou systèmes, le SDK Cloud Aspose.Cells for Java peut servir de pont pour la transformation des données.
+- Les données dans d'autres formats peuvent être converties au format Excel pour une analyse et un traitement ultérieurs.
+
+## **Génération de rapports automatisée :**
+
+- En exécutant régulièrement des scripts, des rapports ou des tableaux de bord périodiques peuvent être générés automatiquement à l'aide du Aspose.Cells Cloud SDK for Java.
+- Ceci est utile pour les organisations qui doivent surveiller régulièrement les mesures commerciales, les données de vente ou les données financières.
+
+## **Intégration dans les processus CI/CD**
+
+- Intégrez le SDK Cloud Aspose.Cells for Java dans votre processus d'intégration/déploiement continu (CI/CD) pour automatiser les tests d'exactitude des données des feuilles de calcul.
+- Cela permet de garantir que les modifications du code ne compromettent pas l'intégrité ou le formatage des données de la feuille de calcul.
+
+## **Application de feuille de calcul personnalisée**
+
+- Avec le SDK Cloud Aspose.Cells for Java, vous pouvez créer des applications de feuilles de calcul personnalisées pour répondre aux besoins spécifiques de votre entreprise.
+- Par exemple, développer des applications de traitement de formulaires personnalisées, des outils de gestion de données financières, etc.
+
+
+# **Avantages du SDK**
+
 Nos SDK pris en charge sont testés à 100 % et prêts à l'emploi. Ces SDK sont open source et disposent d'une licence MIT. Vous pouvez les utiliser et même les personnaliser gratuitement.
-### **SDK pris en charge**
-{{< tabs tabTotal="11" tabID="1" tabName1=".NET" tabName2="Java" tabName3="PHP" tabName4="Android" tabName5="Perl" tabName6="Ruby" tabName7="Python" tabName8="Node Js" tabName9="Swift" tabName10="Go" tabName11="CPP" >}}
-
-{{< tab tabNum="1" >}}
-
-**Aspose.Cells SDK Cloud for .NET**vous permet d'intégrer les services Cloud Aspose.Cells dans vos applications .NET rapidement et facilement.
-
-{{% alert color="primary" %}} 
-
- Le code source complet du SDK Cloud Aspose.Cells pour .Net est disponible gratuitement sur le[GitHub](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet).
-
-{{% /alert %}}
-
-**Aspose Gestionnaire de paquets**
-
-```powershell
-
-Install-Package Aspose.Cells-Cloud 
-
-````
-
-**Aspose .Net CTL**
-
-
-```dotnet
-
-dotnet add package Aspose.Cells-Cloud 
-
-```
-
-
-
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-
-**Aspose.Cells Cloud SDK for Java** allows you to incorporate Aspose.Cells Cloud services in your Java applications quickly and easily.
-
-You can directly include the source code of Aspose.Cells Cloud SDK for Java in your own project, the source code is available from [Aspose.Cells Cloud SDK for Java](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java).
-
-Alternatively, you can use Maven to include in your Java project. Below are the steps for Maven.
-
-**Aspose Maven Repository**
-
-```java
-
-<repositories>
-    <repository>
-        <id>aspose-cloud-repository</id>
-        <name>Aspose Cloud Repository</name>
-        <url>https://repository.aspose.cloud/repo/</url>
-    </repository>
-</repositories>
-
-```
-
-**Maven Dependency**
-
-```java
-
-<dependency>
-      <groupId>com.aspose</groupId>
-      <artifactId>aspose-cloud-cells</artifactId>
-      <version>20.2</version>
-</dependency>
-
-```
-
-**Get Sources and Javadocs**
-
-**Maven**
-
-```java
-
-$ mvn dependency:sources
-$ mvn dependency:resolve -Dclassifier=javadoc
-
-```
-
-**Eclipse IDE**
-
-```java
-
-$ mvn eclipse:eclipse -DdownloadSources=true
-$ mvn eclipse:eclipse -DdownloadSources=true -DdownloadJavadocs=false
-
-```
-
-**pom.xml**
-
-```java
-
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-eclipse-plugin</artifactId>
-        <configuration>
-            <downloadSources>true</downloadSources>
-            <downloadJavadocs>false</downloadJavadocs>
-        </configuration>
-      </plugin>
-    </plugins>
-   </build>
-
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="3" >}}
-
-**Aspose.Cells Cloud SDK for PHP** allows you to incorporate Aspose.Cells Cloud services in your PHP applications quickly and easily.
-
-{{% alert color="primary" %}} 
-
-Complete source code of Aspose.Cells Cloud SDK for PHP is freely available on [GitHub](https://github.com/aspose-cells-cloud/aspose-cells-cloud-php).
-
-{{% /alert %}}
-
-Aspose.Cells Cloud SDK for PHP can be installed using **Composer**.
-
-```php
-
-require:{ "aspose/cells-sdk-php": "dev-master" }
-
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="4" >}}
-
-Please visit the Aspose.Cells Cloud [GitHub Repository](https://github.com/aspose-cells-cloud/aspose-cells-cloud-android) to get started with using Aspose.Cells Cloud SDK for Android
-
-{{< /tab >}}
-
-{{< tab tabNum="5" >}}
-
-Please visit the Aspose.Cells Cloud [GitHub Repository](https://github.com/aspose-cells-cloud/aspose-cells-cloud-perl) to get started with using Aspose.Cells Cloud SDK for Perl
-
-Aspose.Cells Cloud SDK for Perl can be installed using **cpan**.
-
-```perl
-
-perl -MCPAN -e shell
-
-install AsposeCellsCloud::CellsApi
-
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="6" >}}
-
-Please visit the Aspose.Cells Cloud [GitHub Repository](https://github.com/aspose-cells-cloud/aspose-cells-cloud-ruby) to get started with using Aspose.Cells Cloud SDK for Ruby
-
-```ruby
-
-gem install aspose_cells_cloud
-
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="7" >}}
-
-Please visit the Aspose.Cells Cloud [GitHub Repository](https://github.com/aspose-cells-cloud/aspose-cells-cloud-python) to get started with using Aspose.Cells Cloud SDK for Python
-
-```python
-
-pip3 install AsposeCellsCloud
-
-```
-
-
-{{< /tab >}}
-
-{{< tab tabNum="8" >}}
-
-Please visit the Aspose.Cells Cloud [GitHub Repository](https://github.com/aspose-cells-cloud/aspose-cells-cloud-node) to get started with using Aspose.Cells Cloud SDK for NodeJS
-
-```nodejs
-
-npm install asposecellscloud
-
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="9" >}}
-
-Please visit the Aspose.Cells Cloud [GitHub Repository](https://github.com/aspose-cells-cloud/aspose-cells-cloud-swift) to get started with using Aspose.Cells Cloud SDK for Swift
-
-
-```console
-target 'MyApp' do
-  pod 'AsposeCellsCloud', '~> 20.9'
-end
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="10" >}}
-
-Please visit the Aspose.Cells Cloud [GitHub Repository](https://github.com/aspose-cells-cloud/aspose-cells-cloud-go) to get started with using Aspose.Cells Cloud SDK for Go
-
-If you want to download [Go Module](https://pkg.go.dev),please import aspose-cells-cloud in your code.
-
-```go
- 
- import "github.com/aspose-cells-cloud/aspose-cells-cloud-go/v20"`
-
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="11" >}}
-
-Please visit the Aspose.Cells Cloud [GitHub Repository](https://github.com/aspose-cells-cloud/aspose-cells-cloud-cpp) to get started with using Aspose.Cells Cloud SDK for CPP
-
-If you want to use [Aspose.Cells Cloud SDK for CPP](https://github.com/aspose-cells-cloud/aspose-cells-cloud-cpp),please reference readme in [Aspose.Cells Cloud SDK for CPP](https://github.com/aspose-cells-cloud/aspose-cells-cloud-cpp).
-
-```cmd
-sudo apt-get install gcc cmake openssl-dev
-git clone https://github.com/aspose-cells-cloud/aspose-cells-cloud-cpp
-cd aspose-cells-cloud-cpp
-mkdir -p ./build
-
-cmake -DCMAKE_BUILD_TYPE=Release -S . -B ./build 
-cmake --build ./build --config Release --target aspose_cells_cloud_sdk
-```
-
-```cmd
-vcpkg install openssl:x64-windows
-git clone https://github.com/aspose-cells-cloud/aspose-cells-cloud-cpp
-cd aspose-cells-cloud-cpp
-mkdir .\build
-cmake -G "Visual Studio 17 2022" -Thost=x64 -Ax64 -S . -B ./build
-cmake --build ./build --config Release --target aspose_cells_cloud_sdk
-```
-
-{{< /tab >}}
-{{< /tabs >}}
-
-
-
-
-`
