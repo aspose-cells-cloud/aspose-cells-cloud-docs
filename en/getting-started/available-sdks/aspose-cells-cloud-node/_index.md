@@ -8,7 +8,7 @@ weight: 30
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Node
 ---
 
-The SDK is open-source and has an MIT license. You can get the Node library source code about Aspose.Cells Cloud [here](https://github.com/aspose-cells-cloud/aspose-cells-cloud-node).
+The SDK is open-source and licensed under the MIT License. You can access the Node library source code for Aspose.Cells Cloud [here](https://github.com/aspose-cells-cloud/aspose-cells-cloud-node).
 
 
 # **How to use Node library of Aspose.Cells Cloud**
@@ -20,7 +20,7 @@ In this article, we'll explore how to use Aspose.Cells Cloud SDK for Node to per
 
 ## Getting Started
 
-BefBefore you can start using Aspose.Cells Cloud SDK for Node, you'll need to set up your development environment and install the necessary dependencies. You can refer to [the article](https://docs.aspose.cloud/cells/quickstart/) on the Aspose website to get your client ID and client secret.
+Before you can start using the Aspose.Cells Cloud SDK for Go, you need to set up your development environment and install the necessary dependencies. Refer to [the article](https://docs.aspose.cloud/cells/quickstart/) on the Aspose website to obtain your client ID and client secret.
 
 ## How to install the Node package for Aspose.Cells Cloud
 

@@ -8,7 +8,7 @@ weight: 30
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Perl
 ---
 
-The SDK is open-source and has an MIT license. You can get the Node library source code about Aspose.Cells Cloud [here](https://github.com/aspose-cells-cloud/aspose-cells-cloud-perl).
+The SDK is open-source and licensed under the MIT License. You can access the Perl library source code for Aspose.Cells Cloud [here](https://github.com/aspose-cells-cloud/aspose-cells-cloud-perl).
 
 
 # **How to use Perl library of Aspose.Cells Cloud**
@@ -19,7 +19,7 @@ In this article, we'll explore how to use Aspose.Cells Cloud SDK for Perl to per
 
 ## Getting Started
 
-Before you can start using Aspose.Cells Cloud SDK for Perl, you'll need to set up your development environment and install the necessary dependencies. You can refer to [the article](https://docs.aspose.cloud/cells/quickstart/) on the Aspose website to get your client ID and client secret.
+Before you can start using the Aspose.Cells Cloud SDK for Go, you need to set up your development environment and install the necessary dependencies. Refer to [the article](https://docs.aspose.cloud/cells/quickstart/) on the Aspose website to obtain your client ID and client secret.
 
 ## How to install the Perl package for Aspose.Cells Cloud
 

@@ -9,7 +9,7 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Ja
 ---
 
 
-The SDK is open-source and has an MIT license. You can get the Java library source code about Aspose.Cells Cloud [here](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java).
+The SDK is open-source and licensed under the MIT License. You can access the Java library source code for Aspose.Cells Cloud [here](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java).
 
 # **How to use Java library of Aspose.Cells Cloud**
 
@@ -19,7 +19,7 @@ In this article, we'll explore how to use Aspose.Cells Cloud SDK for Java to per
 
 ## Getting Started
 
-Before you can start using Aspose.Cells Cloud SDK for Java, you'll need to set up your development environment and install the necessary dependencies. You can refer to [the article](https://docs.aspose.cloud/cells/quickstart/) on the Aspose website to get your client ID and client secret.
+Before you can start using the Aspose.Cells Cloud SDK for Go, you need to set up your development environment and install the necessary dependencies. Refer to [the article](https://docs.aspose.cloud/cells/quickstart/) on the Aspose website to obtain your client ID and client secret.
 
 ## How to use Maven to add dependencies for Aspose.Cells Cloud
 

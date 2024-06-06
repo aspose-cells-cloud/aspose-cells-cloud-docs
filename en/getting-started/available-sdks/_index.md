@@ -29,7 +29,6 @@ Using Aspose.Cells Cloud SDK can reduce the operating costs of your business by 
 
 In summary, using Aspose.Cells Cloud SDK for Go can bring many benefits, including cross-platform compatibility, efficient handling of Excel files, rich feature set, security and privacy protection, high scalability, easy integration, community support and documentation, and reduced costs. These advantages make Aspose.Cells Cloud SDK an ideal choice for Go developers working with Excel files.
 
-
 # **Application scenarios**
 
 ## **Spreadsheet Processing Automation**
@@ -79,4 +78,5 @@ In summary, using Aspose.Cells Cloud SDK for Go can bring many benefits, includi
 
 
 # **SDK benefits**
+
 Our supported SDKs are 100% tested and out of the box running. These SDKs are open source and have an MIT license. You can use them, and even customize them for absolutely free of charge.
