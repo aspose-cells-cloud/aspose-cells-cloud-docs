@@ -10,7 +10,6 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Ne
 
 The SDK is open-source and licensed under the MIT License. You can access the Net library source code for Aspose.Cells Cloud [here](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet).
 
-
 # **How to use Net library of Aspose.Cells Cloud**
 
 Aspose.Cells Cloud SDK for Net is a powerful library that allows developers to manipulate and process Microsoft Excel files using the Net programming language. With this SDK, you can create, edit, and convert Excel documents in the cloud, without installing additional software or dependencies on your local machine.
@@ -61,18 +60,15 @@ using System.IO;
 using System.Collections.Generic;
 
 CellsApi cellsApi = new CellsApi("xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx", "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
-string remoteFolder = "TestData/In";
 
 string localName = "Book1.xlsx";
 string remoteName = "Book1.xlsx";
-
-this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
 
 IDictionary<string, Stream> mapFiles =new Dictionary<string,Stream>(); 
 AddFileParameter(localName,mapFiles);       
 var request = new PutConvertWorkbookRequest(
     file: mapFiles,
-    format: format
+    format: "pdf"
 );
 this.CellsApi.PutConvertWorkbook(request);
 ```

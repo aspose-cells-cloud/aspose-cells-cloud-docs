@@ -31,15 +31,13 @@ go get -u github.com/aspose-cells-cloud/aspose-cells-cloud-go
 
 This will download and install the latest version of the SDK to your Go workspace.
 
-
 ## How to import Go library into your project
-
 
 ```golang
 package main
 
 import (
-	asposecellscloud "github.com/aspose-cells-cloud/aspose-cells-cloud-go"
+ asposecellscloud "github.com/aspose-cells-cloud/aspose-cells-cloud-go"
 )
 ```
 
@@ -60,12 +58,11 @@ import (
 package main
 
 import (
-	"os"
-	asposecellscloud "github.com/aspose-cells-cloud/aspose-cells-cloud-go"
+ "os"
+ asposecellscloud "github.com/aspose-cells-cloud/aspose-cells-cloud-go"
 )
 func main() {
-	instance := asposecellscloud.NewCellsApiService(os.Getenv("ProductClientId"), os.Getenv("ProductClientSecret"), "https://api.aspose.cloud", "v3.0")
-    remoteFolder := "TestData/In"
+    instance := asposecellscloud.NewCellsApiService(os.Getenv("ProductClientId"), os.Getenv("ProductClientSecret"), "https://api.aspose.cloud", "v3.0")
 
     localName := "Book1.xlsx"
     remoteName := "Book1.xlsx"

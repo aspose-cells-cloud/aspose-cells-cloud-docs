@@ -10,11 +10,9 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, No
 
 The SDK is open-source and licensed under the MIT License. You can access the Node library source code for Aspose.Cells Cloud [here](https://github.com/aspose-cells-cloud/aspose-cells-cloud-node).
 
-
 # **How to use Node library of Aspose.Cells Cloud**
 
 Aspose.Cells Cloud SDK for Node is a powerful library that allows developers to manipulate and process Microsoft Excel files using the Node programming language. With this SDK, you can create, edit, and convert Excel documents in the cloud, without installing additional software or dependencies on your local machine.
-
 
 In this article, we'll explore how to use Aspose.Cells Cloud SDK for Node to perform some common tasks, such as creating a new Excel workbook, inserting data into cells, and saving the modified workbook to the cloud.
 
@@ -25,7 +23,6 @@ Before you can start using the Aspose.Cells Cloud SDK for Go, you need to set up
 ## How to install the Node package for Aspose.Cells Cloud
 
 You can install Aspose.Cells Cloud SDK for Node using npm. Below are the steps for npm:
-
 
 ```Powershell
 
@@ -73,24 +70,12 @@ var path = require('path');
 const _ = require('asposecellscloud');
 
 const cellsApi = new CellsApi(process.env.CellsCloudClientId, process.env.CellsCloudClientSecret,"v3.0",process.env.CellsCloudApiBaseUrl);
-
-var remoteFolder = "TestData/In"
-  
 var localName = "Book1.xlsx"
 var remoteName = "Book1.xlsx"
-
-var localNameRequest = new  model.UploadFileRequest();
-localNameRequest.uploadFiles ={localName:fs.createReadStream(localPath  + localName)};
-localNameRequest.path = remoteFolder + "/" + remoteName ;
-localNameRequest.storageName ="";
-cellsApi.uploadFile(localNameRequest );
- 
-var format = "csv"
-
+var format = "pdf"
 var mapFiles = {};           
 
- mapFiles[localName]= fs.createReadStream(localPath  +localName) ;
-
+mapFiles[localName]= fs.createReadStream(localPath  +localName) ;
 var request = new model.PutConvertWorkbookRequest();
 request.file =  mapFiles;
 request.format =  format;

@@ -10,7 +10,6 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Pe
 
 The SDK is open-source and licensed under the MIT License. You can access the Perl library source code for Aspose.Cells Cloud [here](https://github.com/aspose-cells-cloud/aspose-cells-cloud-perl).
 
-
 # **How to use Perl library of Aspose.Cells Cloud**
 
 Aspose.Cells Cloud SDK for Perl is a powerful library that allows developers to manipulate and process Microsoft Excel files using the Perl programming language. With this SDK, you can create, edit, and convert Excel documents in the cloud, without installing additional software or dependencies on your local machine.
@@ -54,19 +53,12 @@ use AsposeCellsCloud::CellsApi;
 
 my $config = AsposeCellsCloud::Configuration->new( client_id => $ENV{'CellsCloudClientId'}, client_secret => $ENV{'CellsCloudClientSecret'});
 my $instance = AsposeCellsCloud::CellsApi->new(AsposeCellsCloud::ApiClient->new( $config));
-
-my $remoteFolder = 'TestData/In';
   
 my $localName = 'Book1.xlsx';
 my $remoteName = 'Book1.xlsx';
-
-my $upload_file_request = AsposeCellsCloud::Request::UploadFileRequest->new( 'UploadFiles'=>{ $localName => $localName  }  ,'path'=>$remoteFolder . '/' . $remoteName );
- 
-my $format = 'csv';
-
+my $format = 'pdf';
 my $mapFiles = {};           
-
- $mapFiles->{$localName}= "TestData/".$localName ;
+$mapFiles->{$localName}= "TestData/".$localName ;
 
 my $request = AsposeCellsCloud::Request::PutConvertWorkbookRequest->new();
 $request->{file} =  $mapFiles;
