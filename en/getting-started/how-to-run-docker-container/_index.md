@@ -11,7 +11,7 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Ho
 
 The **Docker** technology is designed to automate the deployment of the applications by using lightweight containers. Developers can use a **Docker Container** to wrap up an application with all of its libraries and dependencies and deploy everything as a single package.
 
-Aspose.Cells Cloud team has published the Docker Container on [Docker Hub](https://hub.docker.com/r/aspose/cells-cloud) to facilitate the Docker users. The following sections will guide you that how to run a Docker commands or write configuration in a Yaml file for Docker compose tool.
+Aspose.Cells Cloud team has published the Docker Container on [Docker Hub](https://hub.docker.com/r/aspose/cells-cloud) to facilitate the Docker users. The following sections will guide you on how to run Docker commands or write configuration in a Yaml file for the Docker compose tool.
 
 ## Container configuration
 
@@ -29,9 +29,7 @@ Aspose.Cells Cloud team has published the Docker Container on [Docker Hub](https
 |LicensePublicKey|Public key of the license|
 |LicensePrivateKey|Private key of the license|
 
-
 If "License" parameters are omitted, the app will work in trial mode.
-
 
 ### Run a Docker container using command line
 

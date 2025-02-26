@@ -68,7 +68,7 @@ Congratulations! You have successfully obtained your security credentials to aut
 
 Please take a moment to familiarize yourself with a wide range of Aspose.Cells Cloud products for a better understanding of your possibilities. These software products are built around a high-performance [Cloud API](https://apireference.aspose.com/), available 24/7.
 
-For the effective use of Cloud API we provide a family of powerful [Cloud SDKs](https://products.aspose.cloud/cells/family) for almost all major operating systems (Windows, macOS, Linux, Android) and popular programming languages, including [Android](https://products.aspose.cloud/cells/android), [C#](https://products.aspose.cloud/cells/net), [Python](https://products.aspose.cloud/cells/python), [Golang](https://products.aspose.cloud/cells/go),[Java](https://products.aspose.cloud/cells/java), [Node.js](https://products.aspose.cloud/cells/nodejs),[Perl](https://products.aspose.cloud/cells/perl), [PHP](https://products.aspose.cloud/cells/php), [Ruby](https://products.aspose.cloud/cells/ruby) and [Swift](https://products.aspose.cloud/cells/swift).
+For the effective use of Cloud API, we provide a family of powerful [Cloud SDKs](https://products.aspose.cloud/cells/family) for almost all major operating systems (Windows, macOS, Linux, Android) and popular programming languages, including [Android](https://products.aspose.cloud/cells/android), [C#](https://products.aspose.cloud/cells/net), [Python](https://products.aspose.cloud/cells/python), [Golang](https://products.aspose.cloud/cells/go), [Java](https://products.aspose.cloud/cells/java), [Node.js](https://products.aspose.cloud/cells/nodejs), [Perl](https://products.aspose.cloud/cells/perl), [PHP](https://products.aspose.cloud/cells/php), [Ruby](https://products.aspose.cloud/cells/ruby), and [Swift](https://products.aspose.cloud/cells/swift).
 
  All of the above SDKs are hosted on [GitHub](https://github.com/aspose-cells-cloud/). Each repository contains a wide range of code examples to illustrate its usage.
 
@@ -81,7 +81,3 @@ Please refer to the [Developer Guide](https://docs.aspose.cloud/cells/developer-
 ## Ask for Assistance, If Necessary
 
 Feel free to describe your problems and ask questions on our [Cloud Forums](https://forum.aspose.cloud/c/cells/7). Aspose technical support team is ready to help you. Have a note that Aspose does not provide technical support over the phone. Phone support is available only for sales and purchase questions.
-
-
-
-
