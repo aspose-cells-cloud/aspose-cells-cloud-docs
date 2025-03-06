@@ -1,6 +1,7 @@
 ---
-title: "Text"
+title: "Working with workbook text content"
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "Text"
 type: docs
 url: /text/
 aliases: [/working-with-text/]
@@ -12,7 +13,7 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Te
 
 Text operate  is a complex process for Excel fie. Many factors contribute to the complexity and therefore, should be taken into account during the export process. The ability to text operates kinds of formats and types of data into the file with a precise professional quality is a top feature of Aspose.Cells Cloud.
 
-## How to work with text on an Excel file.
+## How to work with text on an Excel file
 
 - [How to get text items from an Excel workbook.](/cells/workbook/get-text-items/)
 - [How to get text items from an Excel worksheet.](/cells/worksheets/get-text-items/)

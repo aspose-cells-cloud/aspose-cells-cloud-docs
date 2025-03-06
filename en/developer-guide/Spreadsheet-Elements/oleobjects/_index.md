@@ -1,6 +1,7 @@
 ---
-title: "OleObjects"
+title: "Working with Excel Ole object"
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "OleObjects"
 type: docs
 url: /oleobjects/
 aliases: [/working-with-oleobjects/]

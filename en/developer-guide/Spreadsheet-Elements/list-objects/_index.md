@@ -1,6 +1,7 @@
 ---
-title: "ListObjects"
+title: "Working with Excel list object"
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "ListObjects"
 type: docs
 url: /list-objects/
 aliases: [/working-with-list-objects/,/working-with-list-object-or-table/]
@@ -10,7 +11,7 @@ weight: 100
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, ListObjects
 ---
 
-&nbsp;&nbsp;&nbsp;&nbsp;Tables in Excel are beneficial for giving a structure to data sets. It has handy features from arranging the data, providing the headers along with applied filters.Master Excel tables and analyze your data quickly and easily. 
+&nbsp;&nbsp;&nbsp;&nbsp;Tables in Excel are beneficial for giving a structure to data sets. It has handy features from arranging the data, providing the headers along with applied filters.Master Excel tables and analyze your data quickly and easily.
 
 &nbsp;&nbsp;&nbsp;&nbsp;How to add, sort and filter a table, and how to display a total row at the end of a table.
 

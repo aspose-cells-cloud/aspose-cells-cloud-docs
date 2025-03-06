@@ -1,5 +1,5 @@
 ---
-title: "Working with shape on an Excel worksheet"
+title: "Working with Excel shape"
 second_title: "Aspose.Cells Cloud Document"
 linktitle: "Shapes"
 type: docs
@@ -11,7 +11,7 @@ weight: 100
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Working with shape on an Excel worksheet
 ---
 
-## Working with shapes on an Excel file.
+## Working with shapes on an Excel file
 
 - [How to get all shapes on an Excel worksheet.](/cells/shapes/get-all/)
 - [How to get a shape by Index inside on an Excel worksheet.](/cells/shapes/get/)

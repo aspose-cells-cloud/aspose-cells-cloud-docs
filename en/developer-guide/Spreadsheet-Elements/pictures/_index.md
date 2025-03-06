@@ -1,6 +1,7 @@
 ---
-title: "Pictures"
+title: "Working with Excel picture"
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "Pictures"
 type: docs
 url: /pictures/
 aliases: [/working-with-pictures/]
@@ -10,7 +11,7 @@ weight: 100
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Pictures
 ---
 
-## Working with pictures on an Excel file.
+## Working with pictures on an Excel file
 
 - [How to get a specific format picture from an Excel worksheet.](/cells/pictures/get/)
 - [How to get all pictures information from an Excel worksheet.](/cells/pictures/get-all/)

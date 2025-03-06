@@ -1,6 +1,7 @@
 ---
-title: "Metadata & Properties"
+title: "Working with Excel metadata & properties"
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "Metadata & Properties"
 type: docs
 url: /metadata/
 aliases: [/document-properties/,/working-with-document-properties/]
@@ -18,7 +19,6 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Me
 - Standard properties are common to Excel. They contain basic information about the document such as title, subject, author, category, etc. You can assign your own text values for these properties to make it easier to find the Excel document.
 
 - Custom properties are user-defined properties. They allow you to add other properties to your Excel document.
-
 
 **How to working with document properties on an Excel file.**
 

@@ -1,6 +1,7 @@
 ---
-title: "Import"
+title: "Working with import data into workbook"
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "Import"
 type: docs
 url: /import/ 
 aliases: [/import-data-in-excel-worksheet-without-using-storage/]
@@ -23,23 +24,22 @@ The following APIs to import data into an Excel file or multiple Excel files is 
 |[POST /cells/{name}/impportdata](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData)|Import data into the Excel file with using storage.|
 
 ## Request Parameters
- 
+
 ### Without using storage
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description| 
-| :- | :- | :- |:- | 
+| Parameter Name | Type | Path/Query String/HTTPBody | Description|
+| :- | :- | :- |:- |
 | file | file | formData | File to upload |
 | ImportOption | ImportOptions | HTTPBody |  IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/Picture |
 
 ### With using storage
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description| 
-| :- | :- | :- |:- | 
+| Parameter Name | Type | Path/Query String/HTTPBody | Description|
+| :- | :- | :- |:- |
 | name | string | path |   |
 | folder | string | query |   |
 | storageName | string | query | storage name. |
 | importData |  | body |   |
-
 
 ### Import data option parameter
 

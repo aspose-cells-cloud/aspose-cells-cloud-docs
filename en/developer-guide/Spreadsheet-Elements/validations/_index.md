@@ -1,6 +1,7 @@
 ---
-title: "Validations"
+title: "Working with Excel validation"
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "Validations"
 type: docs
 url: /validations/
 keywords: "Working with validations on an Excel file."
@@ -16,7 +17,7 @@ As an example, A user can specify a meeting scheduled between 9:00 AM and 6:00 P
 
 As we can use data validation in excel to make sure a value is a positive number, a date between 15 and 30, make sure a date occurs in the next 30 days, or make sure a text entry is less than 25 characters etc.
 
-## Working with validations on an Excel file.
+## Working with validations on an Excel file
 
 - [How to add a validation information from an Execl worksheet.](/cells/validations/delete/)
 - [How to get validation information from an Execl worksheet.](/cells/validations/get/)

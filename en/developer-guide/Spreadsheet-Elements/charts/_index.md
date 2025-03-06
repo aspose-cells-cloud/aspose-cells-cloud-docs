@@ -1,6 +1,7 @@
 ---
-title: "Charts"
+title: "Working with Excel charts"
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "Charts"
 type: docs
 url: /charts/
 aliases: [/working-with-charts/]
@@ -10,7 +11,7 @@ weight: 100
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Charts
 ---
 
-## Working with Charts on an Excel file.
+## Working with Charts on an Excel file
 
 - [Get Chart from a Worksheet](/cells/get-chart-from-a-worksheet/)
 - [Add a Chart in a Worksheet](/cells/add-a-chart-in-a-worksheet/)

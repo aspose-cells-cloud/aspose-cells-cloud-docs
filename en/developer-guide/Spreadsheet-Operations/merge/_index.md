@@ -1,6 +1,7 @@
 ---
-title: "Merge"
+title: "Working with merge data"
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "Merge"
 type: docs
 url: /merge/
 keywords: "Working with merger on an Excel file."
@@ -9,7 +10,7 @@ weight: 32
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Merge
 ---
 
-## Working with merger on an Excel file.
+## Working with merger on an Excel file
 
 - [How to merge multi Excel files into an Excel file.](/cells/merge/multi-files/)
 - [How to merge an Excel Workbooks into other Excel file.](/cells/workbook/merge/)

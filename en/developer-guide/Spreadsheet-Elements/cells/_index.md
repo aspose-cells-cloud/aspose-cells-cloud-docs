@@ -1,6 +1,7 @@
 ---
-title: "Cells"
+title: "Working with Excel Cells"
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "Cells"
 type: docs
 url: /working-with-cells/
 aliases: [/working-with-worksheets/]
@@ -10,10 +11,9 @@ weight: 100
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Cells
 ---
 
-Cells is the basic operate object of Aspose.Cells for excel file. 
+Cells is the basic operate object of Aspose.Cells for excel file.
 
 ## Feature Map
-
 
 {{< tabs tabTotal="3" tabID="1" tabName1="Data" tabName2="Style" tabName3="merge" >}}
 {{< tab tabNum="1" >}}
@@ -23,7 +23,7 @@ Cells is the basic operate object of Aspose.Cells for excel file.
             <li><a href="/cells/get-mergedcell-from-a-worksheet//">Get MergedCell from a Worksheet.</a></li>
             <li><a href="/cells/set-value-of-a-cell-in-a-worksheet/">Sets value of a cell on an Excel worksheet.</a></li>
             <li><a href="/cells/set-formula-for-a-cell-in-excel-worksheets/">Set Formula for a Cell in Excel Worksheets.</a></li>
-            <li><a href="/cells/calculate-cells-formula/">Calculate Cells formula.</a></li>            
+            <li><a href="/cells/calculate-cells-formula/">Calculate Cells formula.</a></li>
         </ul>
     </div>
 </div>
@@ -38,7 +38,7 @@ Cells is the basic operate object of Aspose.Cells for excel file.
             <li><a href="/cells/change-cell-style-in-excel-worksheet/">Updates cell style on an Excel worksheet.</a></li>
             <li><a href="/cells/apply-rich-text-formatting-to-a-cell/">Sets rich text formatting to a cell of Excel worksheet.</a></li>
             <li><a href="/cells/clear-contents-and-styles-of-cells-in-excel-worksheet/">Clears contents and styles of cells on Excel worksheet.</a></li>
-            <li><a href="/cells/working-with-conditional-formatting/">Adds, deletes and updates conditional formatting on Excel worksheet.</a></li>            
+            <li><a href="/cells/working-with-conditional-formatting/">Adds, deletes and updates conditional formatting on Excel worksheet.</a></li>
         </ul>
     </div>
 </div>
@@ -55,4 +55,3 @@ Cells is the basic operate object of Aspose.Cells for excel file.
 {{< /tab >}}
 
 {{< /tabs >}}
-

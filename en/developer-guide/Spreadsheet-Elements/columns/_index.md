@@ -1,6 +1,7 @@
 ---
-title: "Columns"
+title: "Working with Excel columns"
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "Columns"
 type: docs
 url: /columns/
 aliases: [/working-with-columns/]
@@ -10,7 +11,7 @@ weight: 100
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Columns
 ---
 
-## Working with Columns on an Excel file.
+## Working with Columns on an Excel file
 
 - [How to get column from an Excel worksheet.](/cells/columns/get/)
 - [How to add an empty column on an Excel worksheet.](/cells/columns/add/)
@@ -20,5 +21,3 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Co
 - [How to group columns on an Excel worksheet.](/cells/columns/group/)
 - [How to ungroup columns on an Excel worksheet.](/cells/columns/ungroup/)
 - [How to delete column on an Excel worksheet.](/cells/columns/delete/)
-
-

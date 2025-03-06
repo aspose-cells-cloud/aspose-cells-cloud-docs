@@ -1,6 +1,7 @@
 ---
-title: "AutoFilter"
+title: "Working with Excel AutoFilter"
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "AutoFilter"
 type: docs
 url: /autofilter/
 aliases: [/working-with-autofilter/]
@@ -12,9 +13,7 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Au
 
 Auto filter is the quickest way to select only those items from the worksheet that you want to display in a list. The auto filter feature allows users to filter items in a list according to a set criteria. Filter based on text, numbers or dates.
 
-
-
-**Different types of Filter** 
+**Different types of Filter**
 
 Aspose.Cells Cloud provides multiple APIs to apply different type of filters like Color Filter, Date Filter, Number Filter, Text Filter, Blank Filters and None Blank Filters.
 
@@ -22,7 +21,7 @@ Aspose.Cells Cloud provides multiple APIs to apply different type of filters lik
   <tr>
   <td class="col-md-2"> <li>Fill Color</li> </td>
   <td class="col-md-10">
-  <p>Aspose.Cells Cloud provides 
+  <p>Aspose.Cells Cloud provides
  <a href="/cells/autofilter/add-color-filter/">the API of add fill color filter</a>
 to filter data based upon the fill color property of the cells.</p>
   </td>
@@ -47,7 +46,7 @@ Sometimes dynamic filters are required based on a date like all the cells having
     <td class="col-md-2"> <li>Number</li> </td>
   <td class="col-md-10">
   <p>
-<a href="/cells/autofilter/add-filter/">The Custom filters API</a> can be applied using Aspose.Cells like selecting cells having number between a given range. 
+<a href="/cells/autofilter/add-filter/">The Custom filters API</a> can be applied using Aspose.Cells like selecting cells having number between a given range.
 </p>
   </td>
   </tr>
@@ -55,7 +54,7 @@ Sometimes dynamic filters are required based on a date like all the cells having
     <td class="col-md-2"> <li>Text</li> </td>
   <td class="col-md-10">
   <p>
-If a column contains text and cells are to be selected containing particular text, <a href="/cells/autofilter/add-filter/">The add filter API </a> can be used. 
+If a column contains text and cells are to be selected containing particular text, <a href="/cells/autofilter/add-filter/">The add filter API </a> can be used.
 </p>
   </td>
   </tr>
@@ -87,7 +86,6 @@ Aspose.Cells Cloud provides <a href="/cells/autofilter/add-dynamic-filter/">cust
   </tr>
 </table>
 
-
 **Auto Filter Data Operate**
 
 - [How to add a color filter in an Excel worksheet.](/cells/autofilter/add-color-filter/)
@@ -102,4 +100,3 @@ Aspose.Cells Cloud provides <a href="/cells/autofilter/add-dynamic-filter/">cust
 - [How to match all blank in an Excel worksheet.](/cells/autofilter/match-all-blank/)
 - [How to match all non blank in an Excel worksheet.](/cells/autofilter/match-all-non-blank/)
 - [How to refresh an autofilter in an Excel worksheet.](/cells/autofilter/refresh/)
-

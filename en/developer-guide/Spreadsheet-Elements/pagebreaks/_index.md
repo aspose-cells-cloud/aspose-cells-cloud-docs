@@ -1,6 +1,7 @@
 ---
-title: "PageBreaks"
+title: "Working with Excel page break"
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "PageBreaks"
 type: docs
 url: /working-with-pagebreaks/
 aliases: [/working-with-pagebreaks/]
@@ -10,7 +11,7 @@ weight: 100
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, PageBreaks
 ---
 
-## How to working with page breaks in an Excel worksheet.
+## How to working with page breaks in an Excel worksheet
 
 - [How to add a vertical page break in an Excel worksheet.](/cells/page-breaks/add-vertical-page-break/)
 - [How to add a horizontal page break in an Excel worksheet.](/cells/page-breaks/add-horizontal-page-break/)

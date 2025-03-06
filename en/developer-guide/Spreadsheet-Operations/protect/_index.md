@@ -1,5 +1,5 @@
 ---
-title: "Protect workbook"
+title: "Working with protect workbook"
 second_title: "Aspose.Cells Cloud Document"
 linktitle: "Protect"
 type: docs

@@ -1,6 +1,7 @@
 ---
-title: "PivotTables"
+title: "Working with Excel pivot table"
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "PivotTables"
 type: docs
 url: /pivottables/
 aliases: [/working-with-pivot-tables/]
@@ -10,7 +11,7 @@ weight: 100
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, PivotTables
 ---
 
-## Working with pivot tables on an Excel file.
+## Working with pivot tables on an Excel file
 
 - [How to get pivot tables information from Excel worksheet.](/cells/pivot-tables/get-all/)
 - [How to get pivot table information by index from Excel worksheet.](/cells/pivot-tables/get/)
@@ -25,4 +26,3 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Pi
 - [How to move pivot table on Excel worksheet.](/cells/pivot-tables/move/)
 - [How to working with using CellsObjectOperate task.](/cells/working-with-pivot-table-using-cellsobjectoperate-task/)
 - [How to convert list object to pivot table.](/cells/pivot-tables/convert-table-to-pivottable/)
-

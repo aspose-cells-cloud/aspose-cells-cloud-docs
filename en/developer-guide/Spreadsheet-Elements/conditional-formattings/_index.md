@@ -1,6 +1,7 @@
 ---
-title: "Conditional Formattings"
+title: "Working with Excel conditional formattings"
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "Conditional Formattings"
 type: docs
 url: /conditional-formattings/
 aliases: [/working-with-conditional-formatting/]

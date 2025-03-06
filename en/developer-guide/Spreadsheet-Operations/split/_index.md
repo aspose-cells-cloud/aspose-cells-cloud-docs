@@ -1,6 +1,7 @@
 ---
-title: "Split"
+title: "Working with split workbook"
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "Split"
 type: docs
 url: /split/
 keywords: "Working with splitting on an Excel file."
@@ -9,7 +10,7 @@ weight: 32
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Split
 ---
 
-## Working with splitting on an Excel file.
+## Working with splitting on an Excel file
 
 - [How to split multi Excel files.](/cells/split/multi-files/)
 - [How to split an Excel workbook to multi-files.](/cells/workbook/split/)

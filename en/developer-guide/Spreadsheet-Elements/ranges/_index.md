@@ -1,5 +1,5 @@
 ---
-title: "Working with ranges on an Excel file"
+title: "Working with Excel range"
 second_title: "Aspose.Cells Cloud Document"
 linktitle: "Range"
 type: docs
@@ -13,7 +13,7 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Wo
 
 Represents a cell, a row, a column, a selection of cells containing one or more contiguous blocks of cells, or a 3D range.
 
-## Working with ranges on an Excel file.
+## Working with ranges on an Excel file
 
 - [Get Named Ranges inside the Workbook](/cells/get-named-ranges-inside-the-workbook/)
 - [Get Cells Data Based on Named Range](/cells/get-cells-data-based-on-named-range/)
