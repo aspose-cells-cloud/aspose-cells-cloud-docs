@@ -1,5 +1,5 @@
 ---
-title: "Working with merge data"
+title: "Merge workbook"
 second_title: "Aspose.Cells Cloud Document"
 linktitle: "Merge"
 type: docs

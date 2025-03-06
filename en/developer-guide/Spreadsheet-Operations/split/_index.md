@@ -1,5 +1,5 @@
 ---
-title: "Working with split workbook"
+title: "Split workbook"
 second_title: "Aspose.Cells Cloud Document"
 linktitle: "Split"
 type: docs

@@ -1,5 +1,5 @@
 ---
-title: "Working with clear objects in Excel files"
+title: "Clear the objects in the Excel file"
 second_title: "Aspose.Cells Cloud Document"
 linktitle: "Clear"
 type: docs

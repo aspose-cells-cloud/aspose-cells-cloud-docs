@@ -1,5 +1,5 @@
 ---
-title: "Working with batch data in Excel files"
+title: "Batch Excel files"
 second_title: "Aspose.Cells Cloud Document"
 linktitle: "Batch"
 type: docs

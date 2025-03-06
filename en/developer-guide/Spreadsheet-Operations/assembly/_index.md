@@ -1,5 +1,5 @@
 ---
-title: "Working with assembly data in Excel files"
+title: "Assemble data in Microsoft Excel"
 second_title: "Aspose.Cells Cloud Document"
 linktitle: "Assembly"
 type: docs

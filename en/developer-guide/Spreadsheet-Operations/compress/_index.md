@@ -1,5 +1,5 @@
 ---
-title: "Working with compressed data in Excel files"
+title: "Compress the data in an Excel file"
 second_title: "Aspose.Cells Cloud Document"
 linktitle: "Compress"
 type: docs

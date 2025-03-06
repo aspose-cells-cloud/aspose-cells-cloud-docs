@@ -1,5 +1,5 @@
 ---
-title: "Working with workbook watermark"
+title: "Add a watermark to the workbook"
 second_title: "Aspose.Cells Cloud Document"
 linktitle: "Watermark"
 type: docs

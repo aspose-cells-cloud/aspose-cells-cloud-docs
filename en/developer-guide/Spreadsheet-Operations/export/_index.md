@@ -1,5 +1,5 @@
 ---
-title: "Working with workbook data export"
+title: "Export the data in the workbook"
 second_title: "Aspose.Cells Cloud Document"
 linktitle: "Export"
 type: docs

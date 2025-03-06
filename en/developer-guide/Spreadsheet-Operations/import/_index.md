@@ -1,5 +1,5 @@
 ---
-title: "Working with import data into workbook"
+title: "Import data into a workbook"
 second_title: "Aspose.Cells Cloud Document"
 linktitle: "Import"
 type: docs

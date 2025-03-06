@@ -1,5 +1,5 @@
 ---
-title: "Working with convert an Excel file to kinds of format file"
+title: "Convert the spreadsheet file to another format"
 second_title: "Aspose.Cells Cloud Document"
 linktitle: "Conversion"
 type: docs

@@ -1,5 +1,5 @@
 ---
-title: "Working with workbook text content"
+title: "Workbook text manipulation"
 second_title: "Aspose.Cells Cloud Document"
 linktitle: "Text"
 type: docs
