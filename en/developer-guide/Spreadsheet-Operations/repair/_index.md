@@ -2,9 +2,9 @@
 title: "Repair"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
-url: /repair/
+url: /repair-excel-files/
 keywords: "Repair Excel, ODS, WPS, and so on files."
-description: "Aspose.Cells Cloud REST API support repair excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+description: "Repair Excel files using Aspose.Cells Cloud REST API. The API supports multiple development languages ​​including Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby and Swift for quick integration in your projects."
 weight: 39
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Repair
 ---
@@ -24,46 +24,46 @@ POST https://api.aspose.cloud/v3.0/cells/repair
 
 ```
 
-The request parameters are: 
- 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description| 
-| :- | :- | :- |:- | 
+The request parameters are:
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description|
+| :- | :- | :- |:- |
 | file | file | formData | File to upload |
 | format | string | query |  Output format, Default value is null, output format is equal to input file format. |
- 
+
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/LightCells/PostRepair) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
- 
+
 You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
- 
+
 {{< tab tabNum="11" >}}
- 
+
 ```bash
- 
+
 curl -v "http://api.aspose.cloud/v3.0/cells/repair" \
 -X POST \
 -H "Content-Type: multipart/form-data" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>" \
 -F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx' 
+-F 'xxxxx2=@xxxx2.xlsx'
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="12" >}}
- 
+
 ```bash
 
 {
     "Files":
     [
-        { 
+        {
             "Filename":"xxxx1.xlsx",
             "FileSize":274022,
             "FileContent":"-----Base64String--------"
         },
-        { 
+        {
             "Filename":"xxxx2.xlsx",
             "FileSize":274022,
             "FileContent":"-----Base64String--------"
@@ -72,11 +72,11 @@ curl -v "http://api.aspose.cloud/v3.0/cells/repair" \
 }
 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
+
 
 
 ## Cloud SDK Family
