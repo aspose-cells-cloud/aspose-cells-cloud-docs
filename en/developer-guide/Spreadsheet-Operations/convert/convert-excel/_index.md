@@ -21,7 +21,6 @@ The request is an HTTP request with multipart content (see [RFC 2046](http://to
 | :- | :- | :- |
 |format|string| file format(csv/xls/html/mhtml/ods/pdf/xml/txt/tiff/xlsb/xlsm/xlsx/xltm/xltx/xps/png/jpg/gif/emf/bmp/md/Numbers/wmf/svg) |
 
-
 **Request Body Parameter**
 
 |Parameter Name|Type|Description|
@@ -29,18 +28,15 @@ The request is an HTTP request with multipart content (see [RFC 2046](http://to
 |datafile|data file | The data file save into the first part of the multipart content.|
 |SaveOptions|Object | Save option save into the second part of the multipart content.|
 
-
 ## REST API
 
 |**API**|**Type**|**Description**|**Swagger Link**|
 | :- | :- | :- | :- |
 |/cells/convert|PUT|Converts workbook from request content to some format|[PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)|
 
-
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. 
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 You can use **cURL** command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
-
 
 {{< tabs tabTotal="1" tabID="11" tabName11="Request" >}}
 
@@ -61,8 +57,6 @@ Using an SDK is the best way to speed up the development. An SDK takes care of l
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 
-
-
 {{< tabs tabTotal="3" tabID="3" tabName1="C#" tabName2="Java" tabName3="Go" >}}
 
 {{< tab tabNum="1" >}}
@@ -70,9 +64,9 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/
 
-Aspose.Cells.Cloud.SDK.Api.CellsApi cellsApi = new CellsApi("your client id", "your client secret");
-var response = cellsApi.CellsWorkbookPutConvertWorkbook( File.OpenRead(@".\TestData\datasource.xlsx"), "pdf", null, null);
-Assert.IsInstanceOf<System.IO.Stream>(response, "response is System.IO.Stream");
+CellsApi cellsApi = new CellsApi(System.getenv("CellsCloudTestClientId"),System.getenv("CellsCloudTestClientSecret"));
+var request = new PutConvertWorkbookRequest( file: new Dictionary<string, Stream> { {"Book1.xlsx", File.OpenRead("Book1.xlsx") }},   format: "pdf" );
+cellsApi.PutConvertWorkbook(request);
 
 ```
 
@@ -82,36 +76,24 @@ Assert.IsInstanceOf<System.IO.Stream>(response, "response is System.IO.Stream");
 
 ```java
 // For complete examples and data files, please go to https://github.com/aspose-cells-cloud/aspose-cells-cloud-java/
-try{
-    CellsApi api = new CellsApi(System.getenv("CellsCloudTestClientId"),System.getenv("CellsCloudTestClientSecret"));
-    File response = api.cellsWorkbookPutConvertWorkbook(
-        new File("TestData\\Book1.xlsx"), "pdf", null, null);
-} catch (ApiException e) {
-    e.printStackTrace();
-}	
-
+    PutConvertWorkbookRequest request = new PutConvertWorkbookRequest();
+    request.setFormat("pdf");
+    HashMap<String,File> fileMap = new HashMap<String,File>(); 
+    fileMap.put(localName ,CellsApiUtil.GetFileHolder(localName) ); 
+    request.setFile(fileMap);
+    this.api.putConvertWorkbook(request);
 ```
+
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
 ```go
 
-CellsAPI := NewCellsApiService(clientId, clientSecret)
-args := new(CellsWorkbookPutConvertWorkbookOpts)
-args.Format = "pdf"
-file, err := os.Open("TestData\\Book1.xlsx")
-if err != nil {
-	return
-}
-localVarReturnValue, httpResponse, err := CellsAPI.CellsWorkbookPutConvertWorkbook(file, args)
-if err != nil {
-	t.Error(err)
-} else if httpResponse.StatusCode < 200 || httpResponse.StatusCode > 299 {
-	t.Fail()
-} else {
-	fmt.Printf("\t TestCellsPutConvertWorkbook - %d\n", httpResponse.StatusCode)
-}
+instance := NewCellsApiService(os.Getenv("ProductClientId"), os.Getenv("ProductClientSecret"))
+request := PutConvertWorkbookRequest{File: map[string]string{"Book1.xlsx": "TestData/Book1.xlsx"}, Format: "pdf"}
+instance.PutConvertWorkbook(&request)
+
 ```
 
 {{< /tab >}}

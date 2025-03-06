@@ -12,6 +12,65 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Wh
 
 Welcome to what's new in Aspose.Cells Cloud docs. Use this page to quickly find the latest changes.
 
+## Feature & Enhancements in Version 25.1.1
+
+Optimized the API PostWorksheetCellsRangesCopy
+
+## Feature & Enhancements in Version 25.1
+
+Full list of issues covering all changes in this release:
+
+- Add the new API for splitting text in the cell.
+- Optimize pivot table filter-related APIs.
+
+## Enhancements in Version 24.12
+
+- Add the new remove duplicates api.
+- Add the new extract text API.
+- The pivot filter could not be created successfully.
+
+## Enhancements in Version 24.11
+
+- Add convert text feature on TextProcessingController.
+
+## Enhancements in Version 24.10
+
+- Add the new feature about removing characters on TextProcessingController.
+
+## Enhancements in Version 24.9
+
+- Add word case function for TextProcessingController.
+- Support to export Worksheet to HTML with cell address or id.
+
+## Enhancements in Version 24.8
+
+- Add the text trim feature on Cells Cloud Services.
+
+## Enhancements in Version 24.7
+
+- Add a new feature about adding text content.
+- Add get access token by client id and client secret.
+
+## Enhancements in Version 24.6.1
+
+- fix extend query parameters for APIs.
+
+## Enhancements in Version 24.6.0
+
+- Optimize the data conversion applied steps.
+- Optimize load data function of data transformation.
+- Increase support for net425 and netstandard2.0.
+
+## Enhancements in Version 24.5.1
+
+- Add merge queries method for loading data of data transformation.
+- Optimize chart data model.
+- Update obtaining access token address.
+
+## Enhancements in Version 24.4
+
+- Support data transformation function for Aspose.Cells Cloud Services.
+
 ## Enhancements in Version 24.3
 
 - Support data deduplication.
@@ -69,99 +128,86 @@ Welcome to what's new in Aspose.Cells Cloud docs. Use this page to quickly find 
 
 ## Aspose.Cells Cloud 23.7
 
-* Support to repair file. 
-* Optimize conversion functions.
-
+- Support to repair file.
+- Optimize conversion functions.
 
 ## Aspose.Cells Cloud 23.6
 
-* Support to batch lock multi-files. 
-* Support to batch unlock multi-files. 
-* Support to batch protect multi-files. 
-* Support to batch split multi-files. 
-* Fix put document property api. 
-
+- Support to batch lock multi-files.
+- Support to batch unlock multi-files.
+- Support to batch protect multi-files.
+- Support to batch split multi-files.
+- Fix put document property api.
 
 ## Aspose.Cells Cloud 23.5
 
-* Fix few methods are misspelled. 
-
+- Fix few methods are misspelled.
 
 ## Aspose.Cells Cloud 23.4
 
-* Support import and export XML data. 
-
+- Support import and export XML data.
 
 ## Aspose.Cells Cloud 23.3
 
-* Optimize Hyperlink properties. 
-
+- Optimize Hyperlink properties.
 
 ## Aspose.Cells Cloud 23.2
 
-* Optimize replace API. 
-* Optimize Swagger UI.
-
-
-
+- Optimize replace API.
+- Optimize Swagger UI.
 
 ## Aspose.Cells Cloud 23.1
 
-* Fix the bug for PostCellCharacters method. 
-
-
+- Fix the bug for PostCellCharacters method.
 
 ## Aspose.Cells Cloud 22.12
 
-* Support chart axis operation. 
-
+- Support chart axis operation.
 
 ## Aspose.Cells Cloud 22.11
 
-* Add new api for convert to json. 
-* Add new api for convert to sql. 
-* Add new api for convert to cvs. 
-
+- Add new api for convert to json.
+- Add new api for convert to sql.
+- Add new api for convert to cvs.
 
 ## Aspose.Cells Cloud 22.10
 
-* Add new api for convert to pptx. 
-* Add new api for convert to markdown. 
-* Add new api for convert to html. 
+- Add new api for convert to pptx.
+- Add new api for convert to markdown.
+- Add new api for convert to html.
 
 ## Aspose.Cells Cloud 22.9
 
-* Support exporting page to other format file. 
-* Add new api for convert to pdf. 
-* Add new api for convert to png. 
-* Add new api for convert to docx. 
+- Support exporting page to other format file.
+- Add new api for convert to pdf.
+- Add new api for convert to png.
+- Add new api for convert to docx.
 
 ## Aspose.Cells Cloud 22.8
 
-* Support transposing Excel Rows to Columns.
+- Support transposing Excel Rows to Columns.
 
 ## Aspose.Cells Cloud 22.7
 
-* Improvement Save API on cells cloud services( add four save option).
-* Optimized LightCellsController on cells cloud.
+- Improvement Save API on cells cloud services( add four save option).
+- Optimized LightCellsController on cells cloud.
 
 ## Aspose.Cells Cloud 22.6
 
-* [Improvement for Cells Cloud APIs.](/cells/aspose-cells-cloud-22-6-release-notes/)
-* Support to convert files in the zip package to kinds of the format.
+- [Improvement for Cells Cloud APIs.](/cells/aspose-cells-cloud-22-6-release-notes/)
+- Support to convert files in the zip package to kinds of the format.
 
 ## Aspose.Cells Cloud 22.5
 
-* [Improvement for export API.](https://docs.aspose.cloud/cells/export/)
-* [Improvement for clear API.](https://docs.aspose.cloud/cells/clear/)
+- [Improvement for export API.](https://docs.aspose.cloud/cells/export/)
+- [Improvement for clear API.](https://docs.aspose.cloud/cells/clear/)
 
 ## Aspose.Cells Cloud 22.4
 
-* Fix few bugs.
-* [Improvement for swagger UI.](https://apireference.aspose.cloud/cells/)
+- Fix few bugs.
+- [Improvement for swagger UI.](https://apireference.aspose.cloud/cells/)
 
 ## Aspose.Cells Cloud 22.3
 
-* [Add new API about building codegen specification.](https://api.aspose.cloud/v3.0/cells/codegen/spec)
-* [Support to add digital signature for Aspose.Cells Cloud.](/cells/workbook/digital-signature/)
-
+- [Add new API about building codegen specification.](https://api.aspose.cloud/v3.0/cells/codegen/spec)
+- [Support to add digital signature for Aspose.Cells Cloud.](/cells/workbook/digital-signature/)

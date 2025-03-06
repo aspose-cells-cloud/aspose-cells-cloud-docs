@@ -25,21 +25,15 @@ This REST API `export` excel file to PDF.
 
 ## REST API
 
-
 |**API**|**Type**|**Description**|**Swagger Link**|
 | :- | :- | :- | :- |
 |/cells/convert|PUT|Converts workbook from request content to some format|[PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)|
 |/cells/{name}|GET|Exports workbook to other format.|[GetWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)|
 |/cells/{name}/saveAs|POST|Export workbook to Format|[PostDocumentSaveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)|
 
-
-
-These [PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook), [GetWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook), [PostDocumentSaveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) APIs define a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. 
+These [PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook), [GetWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook), [PostDocumentSaveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) APIs define a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 You can use **cURL** command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
-
-
-
 
 {{< tabs tabTotal="3" tabID="11" tabName11="Convert Workbook API"  tabName12="Get Workbook format API" tabName13="Save  Workbook as format API" >}}
 
@@ -79,16 +73,11 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/sampleBook.xlsx/SaveAs?newfile
 
 {{< /tabs >}}
 
-
-
-
-
 ## Cloud SDK Family
 
 Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
-
 
 {{< tabs tabTotal="3" tabID="3" tabName1="C#" tabName2="Java" tabName3="Go" >}}
 
@@ -96,9 +85,10 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/
-Aspose.Cells.Cloud.SDK.Api.CellsApi cellsApi = new CellsApi("your client id", "your client secret");
-var response = cellsApi.CellsWorkbookPutConvertWorkbook( File.OpenRead(@".\TestData\datasource.xlsx"), "pdf", null, null);
-Assert.IsInstanceOf<System.IO.Stream>(response, "response is System.IO.Stream");
+
+CellsApi cellsApi = new CellsApi(System.getenv("CellsCloudTestClientId"),System.getenv("CellsCloudTestClientSecret"));
+var request = new PutConvertWorkbookRequest( file: new Dictionary<string, Stream> { {"Book1.xlsx", File.OpenRead("Book1.xlsx") }},   format: "pdf" );
+cellsApi.PutConvertWorkbook(request);
 
 ```
 
@@ -108,36 +98,24 @@ Assert.IsInstanceOf<System.IO.Stream>(response, "response is System.IO.Stream");
 
 ```java
 // For complete examples and data files, please go to https://github.com/aspose-cells-cloud/aspose-cells-cloud-java/
-try{
-    CellsApi api = new CellsApi(System.getenv("CellsCloudTestClientId"),System.getenv("CellsCloudTestClientSecret"));
-    File response = api.cellsWorkbookPutConvertWorkbook(
-        new File("TestData\\Book1.xlsx"), "pdf", null, null);
-} catch (ApiException e) {
-    e.printStackTrace();
-}	
-
+    PutConvertWorkbookRequest request = new PutConvertWorkbookRequest();
+    request.setFormat("pdf");
+    HashMap<String,File> fileMap = new HashMap<String,File>(); 
+    fileMap.put(localName ,CellsApiUtil.GetFileHolder(localName) ); 
+    request.setFile(fileMap);
+    this.api.putConvertWorkbook(request);
 ```
+
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
 ```go
-// For complete examples and data files, please go to https://github.com/aspose-cells-cloud/aspose-cells-cloud-go/
-CellsAPI := NewCellsApiService(clientId, clientSecret)
-args := new(CellsWorkbookPutConvertWorkbookOpts)
-args.Format = "pdf"
-file, err := os.Open("TestData\\Book1.xlsx")
-if err != nil {
-	return
-}
-localVarReturnValue, httpResponse, err := CellsAPI.CellsWorkbookPutConvertWorkbook(file, args)
-if err != nil {
-	t.Error(err)
-} else if httpResponse.StatusCode < 200 || httpResponse.StatusCode > 299 {
-	t.Fail()
-} else {
-	fmt.Printf("\t TestCellsPutConvertWorkbook - %d\n", httpResponse.StatusCode)
-}
+
+instance := NewCellsApiService(os.Getenv("ProductClientId"), os.Getenv("ProductClientSecret"))
+request := PutConvertWorkbookRequest{File: map[string]string{"Book1.xlsx": "TestData/Book1.xlsx"}, Format: "pdf"}
+instance.PutConvertWorkbook(&request)
+
 ```
 
 {{< /tab >}}

@@ -31,12 +31,9 @@ This REST API `export` excel file to TIFF.
 |/cells/{name}|GET|Exports workbook to other format.|[GetWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)|
 |/cells/{name}/saveAs|POST|Export workbook to Format|[PostDocumentSaveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)|
 
-
-
-These APIs define a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. 
+These APIs define a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 You can use **cURL** command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
-
 
 {{< tabs tabTotal="3" tabID="11" tabName11="convert" tabName12="saveas" tabName13="export">}}
 
@@ -90,17 +87,16 @@ Using an SDK is the best way to speed up the development. An SDK takes care of l
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 
-
-
 {{< tabs tabTotal="3" tabID="3" tabName1="C#" tabName2="Java" tabName3="Go" >}}
 
 {{< tab tabNum="1" >}}
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/
-Aspose.Cells.Cloud.SDK.Api.CellsApi cellsApi = new CellsApi("your client id", "your client secret");
-var response = cellsApi.CellsWorkbookPutConvertWorkbook( File.OpenRead(@".\TestData\datasource.xlsx"), "tiff", null, null);
-Assert.IsInstanceOf<System.IO.Stream>(response, "response is System.IO.Stream");
+
+CellsApi cellsApi = new CellsApi(System.getenv("CellsCloudTestClientId"),System.getenv("CellsCloudTestClientSecret"));
+var request = new PutConvertWorkbookRequest( file: new Dictionary<string, Stream> { {"Book1.xlsx", File.OpenRead("Book1.xlsx") }},   format: "tiff" );
+cellsApi.PutConvertWorkbook(request);
 
 ```
 
@@ -110,67 +106,24 @@ Assert.IsInstanceOf<System.IO.Stream>(response, "response is System.IO.Stream");
 
 ```java
 // For complete examples and data files, please go to https://github.com/aspose-cells-cloud/aspose-cells-cloud-java/
-try{
-    LightCellsApi liteApi = new LightCellsApi(System.getenv("CellsCloudTestClientId"),System.getenv("CellsCloudTestClientSecret"));
-    String AssemblyTestXlsx = "assemblytest.xlsx";
-    String DataSourceXlsx = "datasource.xlsx";
-    HashMap<String,File> fileMap = new HashMap<String,File>();
-    fileMap.put(AssemblyTestXlsx , new File("TestData\\" + AssemblyTestXlsx));
-    fileMap.put(DataSourceXlsx , new File("TestData\\" + DataSourceXlsx) );
-    FilesResult response = liteApi.postExport(fileMap, "workbook","tiff");
-} catch (ApiException e) {
-    e.printStackTrace();
-}		
-
-//2. solution
-try{
-    CellsApi api = new CellsApi(System.getenv("CellsCloudTestClientId"),System.getenv("CellsCloudTestClientSecret"));
-    File response = api.cellsWorkbookPutConvertWorkbook(
-        new File("TestData\\Book1.xlsx"), "tiff", null, null);
-} catch (ApiException e) {
-    e.printStackTrace();
-}	
-
+    PutConvertWorkbookRequest request = new PutConvertWorkbookRequest();
+    request.setFormat("tiff");
+    HashMap<String,File> fileMap = new HashMap<String,File>(); 
+    fileMap.put(localName ,CellsApiUtil.GetFileHolder(localName) ); 
+    request.setFile(fileMap);
+    this.api.putConvertWorkbook(request);
 ```
+
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
 ```go
 
-LightCellsAPI := NewLightCellsApiService(clientId, clientSecret)
+instance := NewCellsApiService(os.Getenv("ProductClientId"), os.Getenv("ProductClientSecret"))
+request := PutConvertWorkbookRequest{File: map[string]string{"Book1.xlsx": "TestData/Book1.xlsx"}, Format: "tiff"}
+instance.PutConvertWorkbook(&request)
 
-var fileMap map[string]string
-fileMap = make(map[string]string)
-fileMap["Book1.xlsx"] = "TestData\\Book1.xlsx"
-fileMap["Book2.xlsx"] = "TestData\\Book2.xlsx"
-postOpts := new(PostExportOpts)
-postOpts.Format = "tiff"
-postOpts.ObjectType = "workbook"
-_, httpResponse, err := LightCellsAPI.PostExport(fileMap, postOpts)
-if err != nil {
-	t.Error(err)
-} else if httpResponse.StatusCode < 200 || httpResponse.StatusCode > 299 {
-	t.Fail()
-} else {
-	fmt.Printf("\tTestCellsPostExport \n")
-}
-
-CellsAPI := NewCellsApiService(clientId, clientSecret)
-args := new(CellsWorkbookPutConvertWorkbookOpts)
-args.Format = "tiff"
-file, err := os.Open("TestData\\Book1.xlsx")
-if err != nil {
-	return
-}
-localVarReturnValue, httpResponse, err := CellsAPI.CellsWorkbookPutConvertWorkbook(file, args)
-if err != nil {
-	t.Error(err)
-} else if httpResponse.StatusCode < 200 || httpResponse.StatusCode > 299 {
-	t.Fail()
-} else {
-	fmt.Printf("\t TestCellsPutConvertWorkbook - %d\n", httpResponse.StatusCode)
-}
 ```
 
 {{< /tab >}}
