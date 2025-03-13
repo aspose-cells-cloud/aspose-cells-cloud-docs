@@ -9,7 +9,6 @@ kwords: Excel, Office Облако, REST API, электронная табли�
 ---
  SDK имеет открытый исходный код и лицензируется по лицензии MIT. Вы можете получить доступ к исходному коду библиотеки Net для Aspose.Cells Cloud.[здесь](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet).
 
-
 # **Как использовать сетевую библиотеку Aspose.Cells Cloud**
 
 Aspose.Cells Cloud SDK для Net — это мощная библиотека, которая позволяет разработчикам манипулировать и обрабатывать файлы Microsoft Excel с помощью языка программирования Net. С помощью этого SDK вы можете создавать, редактировать и конвертировать документы Excel в облаке без установки дополнительного программного обеспечения или зависимостей на локальном компьютере.
@@ -51,27 +50,4 @@ dotnet add package Aspose.Cells-Cloud
 
 ### **Образец кода**
 
-```CSharp
-using Aspose.Cells.Cloud.SDK.Api;
-using Aspose.Cells.Cloud.SDK.Model;
-using Aspose.Cells.Cloud.SDK.Request;
-using System;
-using System.IO;
-using System.Collections.Generic;
-
-CellsApi cellsApi = new CellsApi("xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx", "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
-string remoteFolder = "TestData/In";
-
-string localName = "Book1.xlsx";
-string remoteName = "Book1.xlsx";
-
-this.UploadFile( localName, remoteFolder + "/" + remoteName, "");
-
-IDictionary<string, Stream> mapFiles =new Dictionary<string,Stream>(); 
-AddFileParameter(localName,mapFiles);       
-var request = new PutConvertWorkbookRequest(
-    file: mapFiles,
-    format: format
-);
-this.CellsApi.PutConvertWorkbook(request);
-```
+{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example-Convert-Excel-To-PDF.cs" >}}
