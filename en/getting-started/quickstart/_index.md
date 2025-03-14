@@ -54,7 +54,15 @@ To access information about your Applications, please perform the following step
 
 ![applications.png](applications.png)
 
-3. Scroll down to the bottom of the page, where you will find the default **"Fist App"** Application. Click the **"First App"** item to view and update your security credentials.
+3. Scroll down to the bottom of the page, you can find a Create New Application button, click it to create it.
+
+![createnewapplication.png](createnewapplication.png)
+
+4. Enter the creation page, select and enter the name, description, and storage address you want to build, and click the save button to return to the previous page after successful creation.
+
+![applicationinfo.png](applicationinfo.png)
+
+5. Scroll down to the bottom of the page, you will see the Application information box you just created, click it to view and update your security credentials.
 
 ![firstapp.png](firstapp.png)
 
