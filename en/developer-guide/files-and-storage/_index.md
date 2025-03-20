@@ -14,7 +14,7 @@ Aspose.Cells Cloud provides helper functions to work with files uploaded to Asp
 
 **Aspose.Cells Cloud provides kinds of file/folder/storage operating APIs.**
 
-## How to upload file
+## **How to upload file**
 
 ### Upload File API Information
  
@@ -77,7 +77,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/storage/file/Book1.xlsx" \
 {{< /tabs >}}
 
 
-## How to download file
+## **How to download file**
 
 ### Download File API Information 
 
@@ -127,7 +127,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/storage/file/Book1.xlsx" \
 {{< /tabs >}}
  
 
-## How to delete file
+## **How to delete file**
 
 ### Delete File API Information
 
@@ -176,9 +176,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/storage/file/book12.xlsx" \
 {{< /tab >}}
 {{< /tabs >}}
  
-## How to copy file
+## **How to copy file**
 
-### Copy File Information
+### Copy File API Information
 
  
 ```bash
@@ -202,7 +202,7 @@ The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/File/CopyF
 
 You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
  
-{{< tabs tabTotal="2" tabID="17" tabName17="Request" tabName16="Response" >}}
+{{< tabs tabTotal="2" tabID="17" tabName17="Request" tabName18="Response" >}}
  
 {{< tab tabNum="17" >}}
  
@@ -230,7 +230,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/storage/file/copy/Book1.xlsx?destPat
 {{< /tab >}} 
 {{< /tabs >}}
 
-## How to move file
+## **How to move file**
 
 ### Move File API Information
 
@@ -282,7 +282,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/storage/file/move/Book2.xlsx?destPat
 {{< /tab >}}
 {{< /tabs >}}
  
-## How to create folder
+## **How to create folder**
 
 ### Create Folder API Information
 
@@ -342,7 +342,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/storage/folder/newfolder" \
 {{< /tab >}} 
 {{< /tabs >}}
 
-## How to get files in folder
+## **How to get files in folder**
 
 ### Get Files API Information
 
@@ -397,7 +397,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/storage/folder/desfolder" \
 {{< /tab >}}
 {{< /tabs >}}
  
-## How to delete folder
+## **How to delete folder**
 
 ### Delete Folder API Information
 
@@ -450,7 +450,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/storage/folder/desfolder" \
 {{< /tab >}} 
 {{< /tabs >}}
 
-## How to copy folder
+## **How to copy folder**
 
 ### Copy Folder API Information
 
@@ -502,7 +502,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/storage/folder/copy/srcfolder?destPa
 {{< /tabs >}}
  
 
-## How to move folder
+## **How to move folder**
 
 ### Move Folder API Information
 
@@ -555,7 +555,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/storage/folder/move/desfolder" \
 {{< /tab >}} 
 {{< /tabs >}}
 
-## How to check if storage exists
+## **How to check if storage exists**
 
 ### Storage Exists API Information
 
@@ -606,7 +606,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/storage/cellsstorage/exist" \
 {{< /tabs >}}
 
 
-## How to check if file or folder exists
+## **How to check if file or folder exists**
 
 ### Object Exists API Information
 
@@ -659,7 +659,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/storage/exist/Book1.xlsx" \
 {{< /tabs >}}
 
 
-## How to get disc usage
+## **How to get disc usage**
 
 ### Get Disc Usage API Information
 
@@ -710,7 +710,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/storage/disc" \
 {{< /tab >}} 
 {{< /tabs >}}
 
-## How to get file versions
+## **How to get file versions**
 
 ### Get File Versions API Information
 
