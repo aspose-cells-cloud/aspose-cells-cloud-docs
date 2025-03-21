@@ -1,9 +1,10 @@
 ---
-title: "Add a watermark to the workbook"
+title: "Add  watermark into the Excel files"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: "Watermark"
+linktitle: "Add Watermark into Excel Files"
 type: docs
-url: /watermark/
+url: /add-watermark-into-excel-files/
+aliases: [ /watermark/]
 keywords: "Add water marker for Excel files."
 description: "Aspose.Cells Cloud REST API support adding water marker for Excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 39

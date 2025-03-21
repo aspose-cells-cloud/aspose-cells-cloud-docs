@@ -1,7 +1,7 @@
 ---
 title: "Batch Excel files"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: "Batch"
+linktitle: "Batch Excel files"
 type: docs
 url: /batch/
 keywords: "Batch processing of multiple excel files."

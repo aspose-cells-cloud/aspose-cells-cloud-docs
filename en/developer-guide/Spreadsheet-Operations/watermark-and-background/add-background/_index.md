@@ -3,8 +3,8 @@ title: "Add Background in Workbook"
 second_title: "Aspose.Cells Cloud Document"
 linktitle: "Add"
 type: docs
-url: /workbook/background/add/
-aliases: [/add-background-in-workbook/,/workbook/add-background/]
+url: /add-background-in-excel-file/
+aliases: [/add-background-in-workbook/,/workbook/add-background/,/workbook/background/add/]
 keywords: "Add background on an Excel workbook."
 description: "Aspose.Cells Cloud REST API support adding background on an Excel workbook on an Excel file. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 160
@@ -12,7 +12,6 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Ad
 ---
 
 This REST API indicates to add `background` on an Excel workbook.
-
 
 **Query Parameter**
 
@@ -34,7 +33,7 @@ This REST API indicates to add `background` on an Excel workbook.
 | :- | :- | :- | :- |
 |/cells/{name}/background|PUT|Add background in excel file|[PutWorkbookBackground](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookBackground)|
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookBackground) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. 
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookBackground) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 You can use **cURL** command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
 
@@ -56,9 +55,9 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/background?picPath=D
 
 {
 
-	"Code": 200,
+ "Code": 200,
 
- 	"Status": "OK"
+  "Status": "OK"
 
 }
 
@@ -67,7 +66,6 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/background?picPath=D
 {{< /tab >}}
 
 {{< /tabs >}}
-
 
 ## Cloud SDK Family
 

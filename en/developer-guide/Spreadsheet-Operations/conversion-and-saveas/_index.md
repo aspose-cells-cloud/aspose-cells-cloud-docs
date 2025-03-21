@@ -1,13 +1,13 @@
 ---
 title: "Convert an Excel file to another format or save it differently."
 second_title: "Aspose.Cells Cloud Document"
-linktitle: "Conversion"
+linktitle: "Conversion and Save As"
 type: docs
 url: /conversion-and-save-as/
 aliases: [/convert-excel/,/convert/]
 keywords: "File conversion, Format conversion, PDF export, Save file, Save Excel files"
 description: "Aspose.Cells Cloud REST API support conversion excel files to kinds of format files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
-weight: 30
+weight: 20
 kwords: File conversion, Format conversion, PDF export, Save file, Save Excel files, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Convert Excel to kinds of format
 ---
 
