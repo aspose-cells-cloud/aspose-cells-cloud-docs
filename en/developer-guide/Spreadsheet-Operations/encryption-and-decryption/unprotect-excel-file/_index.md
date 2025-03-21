@@ -4,7 +4,7 @@ second_title: "Aspose.Cells Cloud Document"
 linktitle: "Unprotect Excel file"
 type: docs
 url: /excel-file-unprotect/
-aliases: [/unprotect-excel-workbooks/， /workbook/unprotect/]
+aliases: [/unprotect-excel-workbooks/, /workbook/unprotect/]
 keywords: "REST API, spreadsheets, excel, merge"
 description: "Cells.Cloud API for Excel operate: protect an Excel workbook."
 weight: 60

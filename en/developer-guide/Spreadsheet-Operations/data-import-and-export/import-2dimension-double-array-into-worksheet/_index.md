@@ -4,7 +4,7 @@ second_title: "Aspose.Cells Cloud Document"
 linktitle: "Import 2 dimension double array"
 type: docs
 url: /import-a-2D-double-array-into-excel-worksheet/
-aliases: [/import-2dimension-double-array-into-excel-worksheet/,/import-2dimension-double-array-into-worksheet/, /import-data/2dimension-double-array/， /import/2dimension-double-array/]
+aliases: [/import-2dimension-double-array-into-excel-worksheet/,/import-2dimension-double-array-into-worksheet/, /import-data/2dimension-double-array/, /import/2dimension-double-array/]
 keywords: "Import 2 dimension double array data into Excel files."
 description: "Aspose.Cells Cloud REST API support importing 2 dimension double array data into Excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 20

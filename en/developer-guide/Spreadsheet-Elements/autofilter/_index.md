@@ -5,8 +5,8 @@ linktitle: "AutoFilter"
 type: docs
 url: /autofilter/
 aliases: [/working-with-autofilter/]
-keywords: "Get, add， delete, and so on for auto filter on an Excel worksheet."
-description: "The Aspose.Cells Cloud APIs support to get, add， delete, and so on for auto filter on an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "Get, add, delete, and so on for auto filter on an Excel worksheet."
+description: "The Aspose.Cells Cloud APIs support to get, add, delete, and so on for auto filter on an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 100
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, AutoFilter
 ---

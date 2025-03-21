@@ -4,7 +4,7 @@ second_title: "Aspose.Cells Cloud Document"
 linktitle: "Digital signature"
 type: docs
 url: /excel-digital-signature/
-aliases: [/protect/digital-signature/，/workbook/digital-signature/]
+aliases: [/protect/digital-signature/,/workbook/digital-signature/]
 keywords: "Add digital signature for an Excel workbook."
 description: "Aspose.Cells Cloud REST API support adding digital signature for an Excel workbook. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 35
