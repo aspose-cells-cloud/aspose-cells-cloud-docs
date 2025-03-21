@@ -1,5 +1,5 @@
 ---
-title: "Working with workbook"
+title: "Working in Excel files: formula calculation, auto-adjustment, purge objects, and so on."
 second_title: "Aspose.Cells Cloud Document"
 linktitle: "Excel Common operations"
 type: docs

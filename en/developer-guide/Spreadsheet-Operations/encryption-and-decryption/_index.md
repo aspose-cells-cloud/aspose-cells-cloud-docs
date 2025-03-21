@@ -1,5 +1,5 @@
 ---
-title: "Protect the workbook"
+title: "Encrypt, Decrypt, and Digital signature Excel Files."
 second_title: "Aspose.Cells Cloud Document"
 linktitle: "Protect"
 type: docs
