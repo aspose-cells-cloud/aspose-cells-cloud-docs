@@ -10,7 +10,7 @@ weight: 100
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, How to create an Excel workbook
 ---
 
-## How to crate an Excel workbook.
+## How to crate an Excel workbook
 
 - [How to create an empty workbook.](/cells/workbook/create/empty-workbook/)
 - [How to create an Excel workbook with a smart marker template.](/cells/workbook/create/smartmarker/)
