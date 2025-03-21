@@ -1,5 +1,5 @@
 ---
-title: "Add Watermark and Background into Excel Files"
+title: "Insert Watermarks and Set Backgrounds in Excel Files"
 second_title: "Aspose.Cells Cloud Document"
 linktitle: "Watermark and Background"
 type: docs
@@ -7,7 +7,7 @@ url: /watermark-and-background/
 aliases: [ /export/excel-chart-to-different-formats/，/workbook/background/]
 keywords: "Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Watermark, Background"
 description: "Aspose.Cells Cloud REST API support working with background on an Excel workbook. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
-weight: 100
+weight: 20
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Watermark, Background
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "Search text content and replace text content in Excel files"
+title: "Search and replace text content within Excel files"
 second_title: "Aspose.Cells Cloud Document"
 linktitle: "Search and Replace"
 type: docs
