@@ -5,7 +5,7 @@ type: docs
 url: /data-import-and-export/
 keywords: "Excel data import vs. Direct database access; Batch data import vs. Row-by-row data writing; Automated data export vs. Manual data extraction."
 description: "Generate new documents or reports that can include charts, tables, and other data visualization elements"
-weight: 20
+weight: 25
 kwords: Excel data import vs. Direct database access; Batch data import vs. Row-by-row data writing; Automated data export vs. Manual data extraction.
 ---
 
