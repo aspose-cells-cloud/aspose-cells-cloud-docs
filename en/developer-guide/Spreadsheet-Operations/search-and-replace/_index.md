@@ -7,7 +7,7 @@ url: /search-and-replace/
 aliases: [/working-with-text/，/text/]
 keywords: "Get, find, and replace text from Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) files."
 description: "Aspose.Cells Cloud REST API support getting, finding, and replacing text from Excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
-weight: 34
+weight: 20
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Text
 ---
 
