@@ -26,7 +26,7 @@ Before you can start using the Aspose.Cells Cloud SDK for Go, you need to set up
 You can install Aspose.Cells Cloud SDK for Go using the `go get` command. Open your terminal or command prompt and run the following command:
 
 ```bash
-go get -u github.com/aspose-cells-cloud/aspose-cells-cloud-go
+go install github.com/aspose-cells-cloud/aspose-cells-cloud-go@latest
 ```
 
 This will download and install the latest version of the SDK to your Go workspace.
@@ -37,51 +37,24 @@ This will download and install the latest version of the SDK to your Go workspac
 package main
 
 import (
- asposecellscloud "github.com/aspose-cells-cloud/aspose-cells-cloud-go"
+ . "github.com/aspose-cells-cloud/aspose-cells-cloud-go/v25"
 )
 ```
 
-## How to use Go package to convert Xlsx to PDF
+## How to get started with Aspose.Cells Cloud for Go, follow these steps
 
-- Import Aspose.Cells Cloud Library
-  Begin by importing the necessary package from the Aspose.Cells Cloud Go SDK into your project.
-- Configure API Client with Credentials
-  Authenticate your API client with your unique client ID and client secret.
-- Prepare Conversion Parameters
-  Define parameters for the conversion task, including the source file name, desired output format, and the storage folder path.
-- Execute Workbook Conversion
-  Invoke the conversion process using the PostConvertWorkbook method and handle the response.
+- Create an account at Aspose for Cloud and obtain your application client id and secret.
+- Create a directory for your project and a main.go file within. Add the following code to your main.go.
 
 ### **Sample Code**
 
-```golang
-package main
+{{< gist "aspose-cells-cloud-gists" "a52d6fe194479160b5b85f7d34262795" "Example_PutConvertWorkbook.go" >}}
 
-import (
- "os"
- asposecellscloud "github.com/aspose-cells-cloud/aspose-cells-cloud-go"
-)
-func main() {
-    instance := asposecellscloud.NewCellsApiService(os.Getenv("ProductClientId"), os.Getenv("ProductClientSecret"), "https://api.aspose.cloud", "v3.0")
+- Initialize project go.mod , fetch the dependencies for your project, and run your created application.
 
-    localName := "Book1.xlsx"
-    remoteName := "Book1.xlsx"
-
-    format := "pdf"
-
-    var mapFiles map[string]string       
-    mapFiles = make(map[string]string)
-    mapFiles[localName]=  localName 
-
-    request := new (asposecellscloud.PutConvertWorkbookRequest)
-    request.File =         mapFiles    
-    request.Format =         format    
-    _, httpResponse, err := instance.PutConvertWorkbook(request)
-    if err != nil {
-      print(err)
-    } else if httpResponse.StatusCode < 200 || httpResponse.StatusCode > 299 {
-      print("Test fail")
-    }
-}
+```bash
+go mod init main
+go mod tidy
+go run main.go
 
 ```

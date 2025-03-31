@@ -53,7 +53,7 @@ node configuration file : package.json
 
 ```
 
-## How to use Node package to convert Xlsx to PDF
+## How to use Node package to convert Xlsx to other formats
 
 - Import Aspose.Cells Cloud Library
   Begin by importing the necessary package from the Aspose.Cells Cloud NodeJS SDK into your project.
@@ -64,22 +64,4 @@ node configuration file : package.json
 - Execute Workbook Conversion
   Invoke the conversion process using the PostConvertWorkbook method and handle the response.
 
-```javascript
-var fs = require('fs');
-var path = require('path');
-const _ = require('asposecellscloud');
-
-const cellsApi = new CellsApi(process.env.CellsCloudClientId, process.env.CellsCloudClientSecret,"v3.0",process.env.CellsCloudApiBaseUrl);
-var localName = "Book1.xlsx"
-var remoteName = "Book1.xlsx"
-var format = "pdf"
-var mapFiles = {};           
-
-mapFiles[localName]= fs.createReadStream(localPath  +localName) ;
-var request = new model.PutConvertWorkbookRequest();
-request.file =  mapFiles;
-request.format =  format;
-return cellsApi.putConvertWorkbook(request).then((result) => {
-    expect(result.response.statusCode).to.equal(200);
-});
-```
+{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PutConvertWorkbook.ts" >}}

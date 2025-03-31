@@ -82,9 +82,61 @@ For the effective use of Cloud API, we provide a family of powerful [Cloud SDKs]
 
 ## Check the Developer Documentation and Code Examples
 
-Now your account is fully configured and the developer environment is installed. You can start writing code with the chosen SDK.
+Now your account is fully configured and the developer environment is installed. You can start writing code with the chosen SDK. Please refer to the [Developer Guide](https://docs.aspose.cloud/cells/developer-guide/) for information on using the Cloud API easily.
 
-Please refer to the [Developer Guide](https://docs.aspose.cloud/cells/developer-guide/) to find information on how to use the Cloud API easily.
+e.g. Convert a Workbook to other formats.
+
+{{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+
+{{< tab tabNum="1" >}}
+
+{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "" >}}
+
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_PutConvertWorkbook.java" >}}
+
+{{< /tab >}}
+
+{{< tab tabNum="3" >}}
+
+{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_PutConvertWorkbook.php" >}}
+
+{{< /tab >}}
+
+{{< tab tabNum="4" >}}
+
+{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_PutConvertWorkbook.rb" >}}
+
+{{< /tab >}}
+
+{{< tab tabNum="5" >}}
+
+{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PutConvertWorkbook.ts" >}}
+
+{{< /tab >}}
+
+{{< tab tabNum="6" >}}
+
+{{< gist "aspose-cells-cloud-gists" "75ea6b5d2f6d82f9c2f9279fb37ebbdf" "Example_PutConvertWorkbook.py" >}}
+
+{{< /tab >}}
+
+{{< tab tabNum="7" >}}
+
+{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_PutConvertWorkbook.pl" >}}
+
+{{< /tab >}}
+
+{{< tab tabNum="8" >}}
+
+{{< gist "aspose-cells-cloud-gists" "a52d6fe194479160b5b85f7d34262795" "Example_PutConvertWorkbook.go" >}}
+
+{{< /tab >}}
+
+{{< /tabs >}}
 
 ## Ask for Assistance, If Necessary
 

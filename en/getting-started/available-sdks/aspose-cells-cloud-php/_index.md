@@ -50,7 +50,7 @@ You can install Aspose.Cells Cloud SDK for PHP. Below are the steps:
 
    ```
 
-## How to use PHP package to convert Xlsx to PDF
+## How to use PHP package to convert Xlsx to other formats
 
 - Import Aspose.Cells Cloud Library
   Begin by importing the necessary package from the Aspose.Cells Cloud PHP SDK into your project.
@@ -61,22 +61,4 @@ You can install Aspose.Cells Cloud SDK for PHP. Below are the steps:
 - Execute Workbook Conversion
   Invoke the conversion process using the PostConvertWorkbook method and handle the response.
 
-```PHP
-<?php
-require_once('vendor\autoload.php');
-use \Aspose\Cells\Cloud\Api\CellsApi;
-use \Aspose\Cells\Cloud\Request\PutConvertWorkbookRequest;
-
-$cellsApi = new CellsApi(getenv("CellsCloudClientId"),getenv("CellsCloudClientSecret"),"v3.0",getenv("CellsCloudApiBaseUrl"));
-
-$localName = "Book1.xlsx";
-$remoteName = "Book1.xlsx";
-$format = "pdf";
-$mapFiles = array ();
-$mapFiles[$localName] = CellsApiTestBase::getfullfilename($localName);
- 
-$request = new PutConvertWorkbookRequest();
-$request->setFile( $mapFiles);
-$request->setFormat( $format);
-$$cellsApi->putConvertWorkbook($request);
-```
+{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_PutConvertWorkbook.php" >}}

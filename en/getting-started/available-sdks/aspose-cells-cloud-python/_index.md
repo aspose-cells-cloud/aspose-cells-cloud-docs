@@ -41,23 +41,4 @@ You can install Aspose.Cells Cloud SDK for Python by the command below:
 - Execute Workbook Conversion
   Invoke the conversion process using the PostConvertWorkbook method and handle the response.
 
-```python
-import os
-import sys
-from asposecellscloud.apis.cells_api import CellsApi
-from asposecellscloud.models import *
-from asposecellscloud.requests import *
-
-api  = CellsApi(os.getenv('CellsCloudClientId'),os.getenv('CellsCloudClientSecret'),"v3.0",os.getenv('CellsCloudApiBaseUrl'))
-
-local_name = 'Book1.xlsx'
-remote_name = 'Book1.xlsx'
-format = 'pdf'
-mapFiles = { 
-    local_name: os.path.dirname(os.path.realpath(__file__)) + "/TestData/" +local_name             
-}
- 
-request =  PutConvertWorkbookRequest( mapFiles,format= format)
-api.put_convert_workbook(request)
-
-```
+{{< gist "aspose-cells-cloud-gists" "75ea6b5d2f6d82f9c2f9279fb37ebbdf" "Example_PutConvertWorkbook.py" >}}

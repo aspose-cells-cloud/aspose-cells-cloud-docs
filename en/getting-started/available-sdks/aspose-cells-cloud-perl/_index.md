@@ -32,7 +32,7 @@ install AsposeCellsCloud::CellsApi
 
 ```
 
-## How to use Perl package to convert Xlsx to PDF
+## How to use Perl package to convert Xlsx to other formats
 
 - Import Aspose.Cells Cloud Library
   Begin by importing the necessary package from the Aspose.Cells Cloud Perl SDK into your project.
@@ -43,25 +43,4 @@ install AsposeCellsCloud::CellsApi
 - Execute Workbook Conversion
   Invoke the conversion process using the PostConvertWorkbook method and handle the response.
 
-```Perl
-use lib 'lib';
-use strict;
-use warnings;
-use File::Slurp;
-use MIME::Base64;
-use AsposeCellsCloud::CellsApi;
-
-my $config = AsposeCellsCloud::Configuration->new( client_id => $ENV{'CellsCloudClientId'}, client_secret => $ENV{'CellsCloudClientSecret'});
-my $instance = AsposeCellsCloud::CellsApi->new(AsposeCellsCloud::ApiClient->new( $config));
-  
-my $localName = 'Book1.xlsx';
-my $remoteName = 'Book1.xlsx';
-my $format = 'pdf';
-my $mapFiles = {};           
-$mapFiles->{$localName}= "TestData/".$localName ;
-
-my $request = AsposeCellsCloud::Request::PutConvertWorkbookRequest->new();
-$request->{file} =  $mapFiles;
-$request->{format} =  $format;
-$instance->put_convert_workbook(request=> $request);
-```
+{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_PutConvertWorkbook.pl" >}}

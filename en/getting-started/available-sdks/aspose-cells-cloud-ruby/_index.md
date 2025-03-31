@@ -30,7 +30,7 @@ You can install Aspose.Cells Cloud SDK for Ruby by the command below:
   
  ```
 
-## How to use Ruby package to convert Xlsx to PDF
+## How to use Ruby package to convert Xlsx to other formats
 
 - Import Aspose.Cells Cloud Library
   Begin by importing the necessary package from the Aspose.Cells Cloud Python SDK into your project.
@@ -41,20 +41,4 @@ You can install Aspose.Cells Cloud SDK for Ruby by the command below:
 - Execute Workbook Conversion
   Invoke the conversion process using the PostConvertWorkbook method and handle the response.
 
-```Ruby
-require 'openssl'
-require 'bundler'
-require 'aspose_cells_cloud'
-
-@instance = AsposeCellsCloud::CellsApi.new(ENV['CellsCloudClientId'], ENV['CellsCloudClientSecret'],'v3.0',ENV['CellsCloudApiBaseUrl'])
-
-local_name = 'Book1.xlsx'
-remote_name = 'Book1.xlsx'
-format = "pdf"
-    
-mapFiles = { }   
-mapFiles[local_name]= ::File.open(File.expand_path("TestData/"+local_name),"r")
-request =   AsposeCellsCloud::PutConvertWorkbookRequest.new(:File=>mapFiles,:format=>format);
-@instance.put_convert_workbook(request);
-
-```
+{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_PutConvertWorkbook.rb" >}}
