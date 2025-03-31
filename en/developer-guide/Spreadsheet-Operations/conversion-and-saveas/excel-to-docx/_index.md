@@ -86,44 +86,53 @@ curl -v "https://api.aspose.cloud/v3.0/cells/book1.xlsx?format=docx" \
 Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
-{{< tabs tabTotal="3" tabID="3" tabName1="C#" tabName2="Java" tabName3="Go" >}}
+{{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
 {{< tab tabNum="1" >}}
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/
-
-CellsApi cellsApi = new CellsApi(System.getenv("CellsCloudTestClientId"),System.getenv("CellsCloudTestClientSecret"));
-var request = new PutConvertWorkbookRequest( file: new Dictionary<string, Stream> { {"Book1.xlsx", File.OpenRead("Book1.xlsx") }},   format: "docx" );
-cellsApi.PutConvertWorkbook(request);
-
-```
+{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExamplePutConvertWorkbookToDocx.cs" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
-// For complete examples and data files, please go to https://github.com/aspose-cells-cloud/aspose-cells-cloud-java/
-    PutConvertWorkbookRequest request = new PutConvertWorkbookRequest();
-    request.setFormat("docx");
-    HashMap<String,File> fileMap = new HashMap<String,File>(); 
-    fileMap.put(localName ,CellsApiUtil.GetFileHolder(localName) ); 
-    request.setFile(fileMap);
-    this.api.putConvertWorkbook(request);
-```
+{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_PutConvertWorkbookToDocx.java" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-```go
+{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_PutConvertWorkbookToDocx.php" >}}
 
-instance := NewCellsApiService(os.Getenv("ProductClientId"), os.Getenv("ProductClientSecret"))
-request := PutConvertWorkbookRequest{File: map[string]string{"Book1.xlsx": "TestData/Book1.xlsx"}, Format: "docx"}
-instance.PutConvertWorkbook(&request)
+{{< /tab >}}
 
-```
+{{< tab tabNum="4" >}}
+
+{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_PutConvertWorkbookToDocx.rb" >}}
+
+{{< /tab >}}
+
+{{< tab tabNum="5" >}}
+
+{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PutConvertWorkbookToDocx.ts" >}}
+
+{{< /tab >}}
+
+{{< tab tabNum="6" >}}
+
+{{< gist "aspose-cells-cloud-gists" "75ea6b5d2f6d82f9c2f9279fb37ebbdf" "Example_PutConvertWorkbookToDocx.py" >}}
+
+{{< /tab >}}
+
+{{< tab tabNum="7" >}}
+
+{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_PutConvertWorkbookToDocx.pl" >}}
+
+{{< /tab >}}
+
+{{< tab tabNum="8" >}}
+
+{{< gist "aspose-cells-cloud-gists" "a52d6fe194479160b5b85f7d34262795" "Example_PutConvertWorkbookToDocx.go" >}}
 
 {{< /tab >}}
 
