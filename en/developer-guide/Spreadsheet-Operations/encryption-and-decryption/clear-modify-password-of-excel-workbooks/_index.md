@@ -12,30 +12,31 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Cl
 ---
 
 This REST API indicates to unprotect document from changes.
- 
+
 ## RSET API
- 
+
 ```bash
  
 DELETE http://api.aspose.cloud/v3.0/cells/{name}/writeProtection
  
 ```
-The request parameters are: 
- 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description| 
-| :- | :- | :- |:- | 
+
+The request parameters are:
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description|
+| :- | :- | :- |:- |
 | name | string | path | The document name. |
 | folder | string | query | Document's folder. |
 | storageName | string | query | storage name. |
- 
+
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDocumentUnprotectFromChanges) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
- 
+
 You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
- 
+
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
 {{< tab tabNum="1" >}}
- 
+
 ```bash
  
 curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xlsx/writeProtection" \
@@ -45,11 +46,11 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xlsx/writeProtecti
 -H "Authorization: Bearer <jwt token>"
  
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
+
 ```bash
 {
 "Code": 200,
@@ -57,19 +58,18 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xlsx/writeProtecti
 }
  
 ```
- 
-{{< /tab >}}
- 
-{{< /tabs >}}
- 
-## Cloud SDK Family
- 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
- 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
- 
 
-{{< tabs tabTotal="11" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" tabName11="Swift" >}}
+{{< /tab >}}
+
+{{< /tabs >}}
+
+## Cloud SDK Family
+
+Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+
+{{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js"  tabName7="Swift" tabName8="Perl" tabName9="Go" tabName10="Swift" >}}
 
 {{< tab tabNum="1" >}}
 
@@ -109,27 +109,21 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 {{< tab tabNum="7" >}}
 
-{{< gist "aspose-cells-cloud-gists" "9d725d4678edaac53f95c5208e17783c" "Examples-Android-workbook-RemoveModifyPassword-remove-modify-password.java" >}}
-
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="9" >}}
 
 {{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Examples-Perl-Workbook-RemoveModifyPassword-1.pl" >}}
 
 {{< /tab >}}
 
-{{< tab tabNum="10" >}}
+{{< tab tabNum="9" >}}
 
 {{< gist "aspose-cells-cloud-gists" "082f086237433f463991b862a2c58963" >}}
 
 {{< /tab >}}
 
-{{< tab tabNum="11" >}}
+{{< tab tabNum="10" >}}
 
 {{< gist "aspose-cells-cloud-gists" "a4419dca557b3edc083dc1e16bb69063" >}}
 

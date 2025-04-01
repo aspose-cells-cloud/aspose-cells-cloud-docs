@@ -131,7 +131,7 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 {{< tab tabNum="8" >}}
 
-{{< gist "aspose-cells-cloud-gists" "a52d6fe194479160b5b85f7d34262795" "example_PostCompress.go" >}}
+{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "example_PostCompress.go" >}}
 
 {{< /tab >}}
 

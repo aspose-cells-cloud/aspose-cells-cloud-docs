@@ -80,7 +80,7 @@ Using an SDK is the best way to speed up the development. An SDK takes care of l
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 
-{{< tabs tabTotal="11" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" tabName11="Swift" >}}
+{{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js"  tabName7="Swift" tabName8="Perl" tabName9="Go" tabName10="Swift" >}}
 
 {{< tab tabNum="1" >}}
 
@@ -120,27 +120,21 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 {{< tab tabNum="7" >}}
 
-{{< gist "aspose-cells-cloud-gists" "9d725d4678edaac53f95c5208e17783c" "Examples-Android-workbook-DecryptWorkbook-decrypt-excel-workbook.java" >}}
-
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="9" >}}
 
 {{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Examples-Perl-Workbook-DecryptWorkbook-1.pl" >}}
 
 {{< /tab >}}
 
-{{< tab tabNum="10" >}}
+{{< tab tabNum="9" >}}
 
 {{< gist "aspose-cells-cloud-gists" "7e303f6cbff92b225230ca3df7dd3df8" >}}
 
 {{< /tab >}}
 
-{{< tab tabNum="11" >}}
+{{< tab tabNum="10" >}}
 
 {{< gist "aspose-cells-cloud-gists" "8982baf625e5894b2eb99f2e0f9e957e" >}}
 

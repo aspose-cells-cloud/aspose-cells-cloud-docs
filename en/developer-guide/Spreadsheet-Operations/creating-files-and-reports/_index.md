@@ -12,12 +12,9 @@ kwords: Create document, Generate report, Excel report, Dynamic report
 
 Using the Aspose.Cells Cloud API, you can effortlessly create new Excel workbooks and also generate specific Excel workbooks based on template files. Additionally, it supports the creation of complex Excel reports in conjunction with the SmartMarker feature, which can meet a variety of complex data processing and report generation needs.
 
-## How to crate an Excel file
+## Crate an Excel file and build report
 
 - [How to create an empty workbook.](/create-an-empty-excel-file/)
 - [How to create an Excel workbook with a template file.](/cells/workbook/create/template-file/)
-
-## How to build an Excel report
-
 - [How to create an Excel report with a smart marker template](/build-report-with-smart-marker/)
 - [How to assemble data for the creation of an Excel report](assembly-data-for-the-creation-of-an-excel-report/)

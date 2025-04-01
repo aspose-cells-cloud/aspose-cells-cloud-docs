@@ -49,7 +49,7 @@ Using an SDK is the best way to speed up the development. An SDK takes care of l
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 
-{{< tabs tabTotal="9" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Android" tabName7="Perl" tabName8="Go" tabName9="Python" >}}
+{{< tabs tabTotal="9" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js"  tabName7="Swift" tabName8="Perl" tabName9="Go" >}}
 
 {{< tab tabNum="1" >}}
 
@@ -84,7 +84,6 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{< /tab >}}
 
 {{< tab tabNum="9" >}}
-
 {{< /tab >}}
 
 {{< /tabs >}}

@@ -9,47 +9,47 @@ weight: 100
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Batch Convert
 ---
 
-This REST API indicates to `batch conversion` of eligible files 
- 
+This REST API indicates to `batch conversion` of eligible files
+
 ## RSET API
- 
+
 ```bash
  
 POST http://api.aspose.cloud/v3.0/cells/batch/convert
  
 ```
-The request parameters are: 
- 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description| 
-| :- | :- | :- |:- | 
+
+The request parameters are:
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description|
+| :- | :- | :- |:- |
 | batchConvertRequest |  | body |   |
 
 **BatchConvertRequest Properties**
- 
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
- SourceFolder | string |  | [optional] 
- MatchCondition | MatchConditionRequest |  | [optional] 
- Format | string |  | [optional] 
- OutFolder | string |  | [optional] 
- SaveOptions | SaveOptions |  | [optional] 
+ SourceFolder | string |  | [optional]
+ MatchCondition | MatchConditionRequest |  | [optional]
+ Format | string |  | [optional]
+ OutFolder | string |  | [optional]
+ SaveOptions | SaveOptions |  | [optional]
 
 **MatchConditionRequest Properties**
- 
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
- RegexPattern | string |  | [optional] 
- FullMatchConditions | string[] |  | [optional] 
+ RegexPattern | string |  | [optional]
+ FullMatchConditions | string[] |  | [optional]
 
- 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PostBatchConvert) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
- 
+
 You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
- 
+
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
- 
+
 {{< tab tabNum="11" >}}
- 
+
 ```bash
  
 curl -v "http://api.aspose.cloud/v3.0/cells/batch/convert" \
@@ -59,11 +59,11 @@ curl -v "http://api.aspose.cloud/v3.0/cells/batch/convert" \
 -H "Authorization: Bearer <jwt token>"
 -D "{\"SourceFolder\":\"CellsTests\",\"OutFolder\":\"Output\",\"MatchCondition\":{\"RegexPattern\":\"(^Book)(.+)(xlsx$)\"},\"Format\":\"pdf\",\"SaveOptions\":{\"SaveFormat\":\"pdf\",\"CalculateFormula\":true,\"EnableHTTPCompression\":true,\"OnePagePerSheet\":true,\"CreateDirectory\":false,\"Compliance\":\"None\"}}" 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="12" >}}
- 
+
 ```bash
 {
 "Code": 200,
@@ -71,20 +71,18 @@ curl -v "http://api.aspose.cloud/v3.0/cells/batch/convert" \
 }
  
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
+
 ## Cloud SDK Family
- 
+
 Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
- 
+
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
- 
- 
-  
-{{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
+
+{{< tabs tabTotal="9" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Swift" tabName8="Perl" tabName9="Go" >}}
 
 {{< tab tabNum="1" >}}
 
@@ -124,25 +122,18 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 {{< tab tabNum="7" >}}
 
-{{< gist "aspose-cells-cloud-gists" "9d725d4678edaac53f95c5208e17783c" "Examples-Batch-Convet.java" >}}
-
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="9" >}}
 
 {{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Examples-Batch-Convet.pl" >}}
 
 {{< /tab >}}
 
-{{< tab tabNum="10" >}}
+{{< tab tabNum="9" >}}
 
 {{< gist "aspose-cells-cloud-gists" "d763dc80b0aff6275403dc1d82ad59a5" "Examples-Batch-Convet.go" >}}
 
 {{< /tab >}}
 
 {{< /tabs >}}
-
