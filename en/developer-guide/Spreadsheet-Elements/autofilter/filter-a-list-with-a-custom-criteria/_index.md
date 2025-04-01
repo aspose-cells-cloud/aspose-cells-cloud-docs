@@ -118,7 +118,7 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 
 
-{{< gist "aspose-cells-cloud-gists" "75ea6b5d2f6d82f9c2f9279fb37ebbdf" "Examples-Android-filters-FilterListCustomCriteriaExample-1.java" >}}
+{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Examples-Android-filters-FilterListCustomCriteriaExample-1.java" >}}
 
 {{< /tab >}}
 
