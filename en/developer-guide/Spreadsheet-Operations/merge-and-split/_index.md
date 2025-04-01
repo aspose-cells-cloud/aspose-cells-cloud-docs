@@ -10,12 +10,9 @@ weight: 32
 kwords: Merge Excel Files,Combine Excel Sheets,Join Excel Spreadsheets,Merge Multiple Excel Files,Split Excel File,Excel Sheet Separator,Excel Workbook Splitter
 ---
 
-## Working with merger on an Excel file
+## Merge and split with Excel files
 
 - [How to merge multi Excel files into an Excel file.](/cells/merge-multi-files-into-excel/)
 - [How to merge an Excel Workbooks into other Excel file.](/cells/merge-an-excel-file-into-the-excel-file/)
-
-## Working with splitting on an Excel file
-
 - [How to split multi Excel files.](/cells/split-multi-excel-files/)
 - [How to split an Excel workbook to multi-files.](/cells/split-an-excel-file-to-multi-files/)
