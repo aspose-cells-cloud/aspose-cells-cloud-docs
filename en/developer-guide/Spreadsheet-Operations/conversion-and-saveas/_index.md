@@ -27,9 +27,9 @@ The following APIs to convert an Excel file to other file formats is provided:
 
 The following articles explain each API in detail and contain cURL and SDK Examples of each API:
 
-- [Convert Excel file to different file format in cloud](/cells/convert/excel-to-different-formats/)
-- [Save Excel workbook as different file formats](/cells/saveas-other-formats/)
-- [Export Excel file to different file format in cloud](/cells/export-different-formats/)
-- [Convert Excel file to PDF](/cells/convert/excel-to-pdf)
-- [Convert Excel file to Html](/cells/convert/excel-to-html)
-- [Convert Excel file to TIFF](/cells/convert/excel-to-tiff)
+- [Convert an Excel file to different format file.](/cells/convert-an-excel-file-to-different-formats)
+- [Save an Excel file as a different file format.](/cells/save-an-excel-file-as-other-formats-files)
+- [Export an Excel file to different file format.](/cells/export-different-formats)
+- [Convert Excel file to PDF](/cells/convert-excel-file-to-pdf-file)
+- [Convert Excel file to Html](/cells/convert-excel-file-to-html-file)
+- [Convert Excel file to TIFF](/cells/convert-excel-file-to-tiff-file)
