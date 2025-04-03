@@ -16,12 +16,12 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Pr
 
 **Protect and unprotect Excel files.**
 
-- [How to encrypt Excel workbooks.](/cells/excel-file-encrypt/)
-- [How to protect Excel workbooks.](/cells/protect-excel-file/)
-- [How to add digital signature for Excel workbook.](/cells/excel-digital-signature/)
-- [How to protect Excel files without using storage](/cells/protect-excel-files/)
-- [How to set password on an Execl workbook.](/cells//workbook/password/modify/)
-- [How to decrypt Excel workbooks.](/cells/excel-file-decrypt/)
-- [How to unprotect Excel workbooks.](/cells/excel-file-unprotect/)
-- [How to unlock Excel files without using storage](/cells/unlock-excel-files/)
-- [How to clear password on an Execl workbook.](/cells/clear-excel-files-password/)
+- [How to encrypt an Excel file.](/cells/excel-file-encrypt/)
+- [How to protect an Excel file.](/cells/protect-excel-file/)
+- [How to add digital signature for an Excel file.](/cells/excel-digital-signature/)
+- [How to protect Excel files.](/cells/protect-excel-files/)
+- [How to set password for an Excel file.](/cells//workbook/password/modify/)
+- [How to decrypt an Excel file.](/cells/excel-file-decrypt/)
+- [How to unprotect an Excel file.](/cells/excel-file-unprotect/)
+- [How to unlock Excel files.](/cells/unlock-excel-files/)
+- [How to clear password for an Excel file.](/cells/clear-excel-files-password/)
