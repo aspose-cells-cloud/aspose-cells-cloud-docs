@@ -3,8 +3,8 @@ title: "Get names from an Excel workbook"
 second_title: "Aspose.Cells Cloud Document"
 linktitle: "Names"
 type: docs
-url: /workbook/get/names/
-aliases: [/get-names-count-from-excel-workbooks/,/workbook/names/]
+url: /get-names-from-an-excel-file/
+aliases: [/get-names-count-from-excel-workbooks/,/workbook/names/,/workbook/get/names/]
 keywords: "Getting names on an Excel workbook."
 description: "Aspose.Cells Cloud REST API support getting names on an Excel workbook. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 120

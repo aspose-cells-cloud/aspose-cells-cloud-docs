@@ -2,9 +2,9 @@
 title: "Autofit rows on an Excel workbook"
 second_title: "Aspose.Cells Cloud Document"
 linktitle: "Rows"
-type: docs
-url: /workbook/autofit/rows/
-aliases: [/auto-fit-rows-in-excel-workbooks/]
+type: docs 
+url: /autofit-rows-on-an-excel-file/
+aliases: [/auto-fit-rows-in-excel-workbooks/,/workbook/autofit/rows/]
 keywords: "Autofit rows on an Excel workbook"
 description: "Aspose.Cells Cloud REST API support autofitting rows on an Excel workbook. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 90

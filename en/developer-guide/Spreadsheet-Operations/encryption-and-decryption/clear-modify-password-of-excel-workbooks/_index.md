@@ -1,10 +1,10 @@
 ---
 title: "Clear Modify Password of Excel Workbooks"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: "Delete"
+linktitle: "Clear Excel Files Password"
 type: docs
-url: /workbook/password/clear/
-aliases: [/clear-modify-password-of-excel-workbooks/,/workbook/clear-modify-password/]
+url:  /clear-excel-files-password/
+aliases: [/clear-modify-password-of-excel-workbooks/,/workbook/clear-modify-password/，/workbook/password/clear/]
 keywords: "Delete password on an Excel workbook."
 description: "Aspose.Cells Cloud REST API support deleting password on an Excel workbook. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 110

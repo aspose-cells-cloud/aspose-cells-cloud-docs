@@ -1,5 +1,5 @@
 ---
-title: "Batch Lock"
+title: "Batch Lock Excel Files"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /batch/lock

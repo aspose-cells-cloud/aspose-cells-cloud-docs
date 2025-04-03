@@ -1,10 +1,10 @@
 ---
-title: "Get page count"
+title: "Get page count form an Excel File"
 second_title: "Aspose.Cells Cloud Document"
 linktitle: "Pages"
 type: docs
-url: /workbook/get/page-count/
-aliases: [/workbook/page-count/]
+url: /get-page-count-from-an-excel-file/
+aliases: [/workbook/page-count/,/workbook/get/page-count/]
 keywords: "Getting pages count on an Excel workbook."
 description: "Aspose.Cells Cloud REST API support getting pages count on an Excel workbook. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 10

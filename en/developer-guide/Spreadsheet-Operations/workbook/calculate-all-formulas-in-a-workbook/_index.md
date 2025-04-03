@@ -3,8 +3,8 @@ title: "Calculate all formulas on an Excel workbook"
 second_title: "Aspose.Cells Cloud Document"
 linktitle: "Calculate"
 type: docs
-url: /workbook/calculate-all-formulas/
-aliases: [/calculate-all-formulas-in-a-workbook/]
+url: /calculate-all-formulas-on-an-excel-file/
+aliases: [/calculate-all-formulas-in-a-workbook/,/workbook/calculate-all-formulas/]
 keywords: "Calculate all formulas on an Excel workbook."
 description: "Aspose.Cells Cloud REST API support calculating all formulas on an Excel workbook. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 140
@@ -122,4 +122,3 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{< /tab >}}
 
 {{< /tabs >}}
-

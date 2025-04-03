@@ -1,10 +1,10 @@
 ---
-title: "Autofit columns on an Excel workbook"
+title: "Autofit columns on an Excel file"
 second_title: "Aspose.Cells Cloud Document"
 linktitle: "Columns"
 type: docs
-url: /workbook/autofit/columns/
-aliases: [/auto-fit-columns-in-excel-workbooks,/autofit-columns-in-excel-workbooks/,/columns/autofit/]
+url: /autofit-columns-on-an-excel-file/
+aliases: [/auto-fit-columns-in-excel-workbooks,/autofit-columns-in-excel-workbooks/,/columns/autofit/,/workbook/autofit/columns/]
 keywords: "Autofit columns on an Excel workbook"
 description: "Aspose.Cells Cloud REST API support autofitting columns on an Excel workbook. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 90

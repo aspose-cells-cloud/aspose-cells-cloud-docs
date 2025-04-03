@@ -24,4 +24,4 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Pr
 - [How to decrypt Excel workbooks.](/cells/excel-file-decrypt/)
 - [How to unprotect Excel workbooks.](/cells/excel-file-unprotect/)
 - [How to unlock Excel files without using storage](/cells/unlock-excel-files/)
-- [How to clear password on an Execl workbook.](/cells/workbook/password/clear/)
+- [How to clear password on an Execl workbook.](/cells/clear-excel-files-password/)

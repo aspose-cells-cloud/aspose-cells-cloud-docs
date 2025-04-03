@@ -13,9 +13,10 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Wo
 
 ## Working with an Excel workbook
 
-- [How to calculate formuls on an Excel workbook](/cells/workbook/calculate-all-formulas/)
-- [How to create an Excel workbook](/cells/workbook/create/)
-- [How to work with getting an Excel workbook](/cells/workbook/get/)
-- [How to work with autofit an Excel workbook](/cells/workbook/autofit/)
-- [How to get pages count on an Excel workbook.](/cells/workbook/get/page-count/)
-- [How to get names on an Excel workbook.](/cells/workbook/get/names/)
+- [How to calculate formuls on an Excel file.](/cells/workbook/calculate-all-formulas/)
+- [How to create an Excel file.](/cells/workbook/create/)
+- [How to work with getting an Excel file.](/cells/workbook/get/)
+- [How to auto-fit columns on an Excel file.](/cells/autofit-columns-on-an-excel-file/)
+- [How to auto-fit rows on an Excel file.](/cells/autofit-rows-on-an-excel-file/)
+- [How to get pages count on an Excel file.](/cells/wget-page-count-from-an-excel-file/)
+- [How to get names from  an Excel file.](/cells/get-names-from-an-excel-file/)

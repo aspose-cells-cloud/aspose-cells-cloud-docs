@@ -1,7 +1,7 @@
 ---
 title: "Protect Excel files"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: "Encrypt without using storage"
+linktitle: "Encrypt Excel files"
 type: docs
 url: /protect-excel-files/
 aliases: [/protect/without-storage/,/protect/without-using-storage/,/protect/without-using-storage/]
@@ -10,8 +10,6 @@ description: "Aspose.Cells Cloud REST API support protecting Excel files. SDK su
 weight: 40
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Protect Excel files without using storage
 ---
-
-
 
 
 This REST API indicates to `protect` Excel files.

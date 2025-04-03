@@ -45,7 +45,7 @@ Name | Type | Description | Notes
  RegexPattern | string |  | [optional]
  FullMatchConditions | string[] |  | [optional]
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/Batch/PostBatchsplit) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/Batch/PostBatchSplit) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
 

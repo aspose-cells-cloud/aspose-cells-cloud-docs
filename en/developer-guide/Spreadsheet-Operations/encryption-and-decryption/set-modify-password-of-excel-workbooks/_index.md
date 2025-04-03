@@ -1,7 +1,7 @@
 ---
 title: "Set modify password of an Excel workbook"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: "Update"
+linktitle: "Modify an Excel file password"
 type: docs
 url: /workbook/password/modify/
 aliases: [/set-modify-password-of-excel-workbooks/,/workbook/modify-password/]
