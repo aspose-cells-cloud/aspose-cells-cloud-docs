@@ -1,7 +1,7 @@
 ---
 title: "Gets Excel file to other formats"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: "Get Other Formats Files"
+linktitle: "Get Excel"
 type: docs
 url: /get different formats files/
 aliases: [/export-excel-workbook-to-different-file-formats/, /export-different-formats/]

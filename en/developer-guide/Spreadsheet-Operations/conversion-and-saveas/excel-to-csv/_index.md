@@ -3,8 +3,8 @@ title: "Excel to CSV"
 second_title: "Aspose.Cells Cloud Document"
 linktitle: "Excel to CSV"
 type: docs
-url: /convert-excel-file-to-csv-file/
-aliases: [/convert-excel-file-to-csv-in-cloud/,/convert/excel-to-csv/]
+url:  convert-excel-file-to-csv-file/
+aliases: [/convert-excel-file-to-csv-in-cloud/,/convert/excel-to-csv/,/convert-excel-file-to-csv-file/]
 keywords: "Convert excel files to csv files."
 description: "Aspose.Cells Cloud REST API support conversion excel files to csv files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 90
