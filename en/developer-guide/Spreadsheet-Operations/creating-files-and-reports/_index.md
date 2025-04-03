@@ -3,6 +3,7 @@ title: "Create Excel Files or Build Excel Reports"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /creating-files-and-reports/
+aliases: [/workbook/create/]
 linktitle: "Create Excel and Report"
 keywords: "Create document, Generate report, Excel report, Dynamic report"
 description: "Generate new documents or reports that can include charts, tables, and other data visualization elements"
