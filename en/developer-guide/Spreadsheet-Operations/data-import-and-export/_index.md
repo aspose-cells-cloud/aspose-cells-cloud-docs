@@ -1,7 +1,7 @@
 ---
 title: "Import Data into Excel files and Export data from Excel files."
 second_title: "Aspose.Cells Cloud Document"
-linktitle: "Import and Export data"
+linktitle: "Import and Export Data"
 type: docs
 url: /data-import-and-export/
 keywords: "Excel data import vs. Direct database access; Batch data import vs. Row-by-row data writing; Automated data export vs. Manual data extraction."
