@@ -8,7 +8,7 @@ aliases: [/ungroup-rows-in-excel-worksheet/]
 keywords: "Ungroup rows on an Excel worksheet."
 description: "Aspose.Cells Cloud REST API support ungrouping rows on an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 70
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Ungroup rows on an Excel Worksheet
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Ungroup rows on an Excel Worksheet
 ---
 
 This REST API indicates to ungroup rows on an Excel worksheet.

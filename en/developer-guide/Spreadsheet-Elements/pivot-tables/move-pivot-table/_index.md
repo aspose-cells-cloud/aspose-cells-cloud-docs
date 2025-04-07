@@ -8,7 +8,7 @@ aliases: [/move-pivot-table/]
 keywords: "Move a pivot table in an Excel file."
 description: "Aspose.Cells Cloud REST API support moving a pivot table in an Excel file. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 120
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Move a pivot table in an Excel file
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Move a pivot table in an Excel file
 ---
 
 This REST API indicates `move` pivot table.

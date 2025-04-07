@@ -3,7 +3,7 @@ title: "Apply Rich Text Formatting to a Cell"
 type: docs
 url: /apply-rich-text-formatting-to-a-cell/
 weight: 40
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Apply Rich Text Formatting to a Cell
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Apply Rich Text Formatting to a Cell
 ---
 
 This REST API indicates apply `rich text formatting` to a cell in an Excel file.

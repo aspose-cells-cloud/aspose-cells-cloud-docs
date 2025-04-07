@@ -5,7 +5,7 @@ type: docs
 url: /docker/storage/
 description: "How to set storage position about Aspose.Cells Cloud for Docker."
 weight: 30
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Storage
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Storage
 ---
 
 

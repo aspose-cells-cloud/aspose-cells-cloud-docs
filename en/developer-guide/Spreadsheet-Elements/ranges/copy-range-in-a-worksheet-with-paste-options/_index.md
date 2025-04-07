@@ -8,7 +8,7 @@ aliases: [/copy-range-in-a-worksheet-with-paste-options/]
 keywords: "Copy a range in an Excel worksheet with paste options."
 description: "Aspose.Cells Cloud REST API support copying a range in an Excel worksheet with paste options. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 20
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Copy Range in a Worksheet with Paste Options
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Copy Range in a Worksheet with Paste Options
 ---
 
 This REST API indicates to copy range in the worksheet on an Excel worksheet.

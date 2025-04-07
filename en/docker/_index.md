@@ -6,7 +6,7 @@ url: /docker-developer-guide/
 aliases: [/docker/, /docker/run/]
 description: "Aspose.Cells Cloud "
 weight: 30
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Docker
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Docker
 ---
 
 

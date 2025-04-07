@@ -8,7 +8,7 @@ aliases: [/import-2dimension-integer-array-into-excel-worksheet/,/import-2dimens
 keywords: "Import 2 dimension integer array data into Excel files."
 description: "Aspose.Cells Cloud REST API support importing 2 dimension integer array data into Excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 20
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Import 2 Dimension Integer Array into Excel Worksheet
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Import 2 Dimension Integer Array into Excel Worksheet
 ---
 
 This REST API `import 2 dimension integer array data` into Excel work sheet.

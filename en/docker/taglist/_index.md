@@ -5,7 +5,7 @@ type: docs
 url: /docker/tag-list/
 description: "Supported Platforms."
 weight: 30
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, TagList
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, TagList
 ---
 
 ## Windows Server 2016 Images ##

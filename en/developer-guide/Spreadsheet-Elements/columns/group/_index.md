@@ -8,7 +8,7 @@ aliases: [/group-columns-in-an-excel-worksheet/, /group-columns-in-excel-workshe
 keywords: "Group column on an Excel worksheet"
 description: "Aspose.Cells Cloud REST API support grouping column on an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 60
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Group columns on an Excel worksheet
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Group columns on an Excel worksheet
 ---
 
 This REST API indicates group worksheet columns.

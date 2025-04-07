@@ -8,7 +8,7 @@ aliases: [/add-background-in-workbook/,/workbook/add-background/,/workbook/backg
 keywords: "Add background on an Excel workbook."
 description: "Aspose.Cells Cloud REST API support adding background on an Excel workbook on an Excel file. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 160
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Add Background in Workbook
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Add Background in Workbook
 ---
 
 This REST API indicates to add `background` on an Excel workbook.

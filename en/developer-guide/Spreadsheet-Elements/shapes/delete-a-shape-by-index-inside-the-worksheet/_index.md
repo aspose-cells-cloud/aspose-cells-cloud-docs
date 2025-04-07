@@ -8,7 +8,7 @@ aliases: [/delete-a-shape-by-index-inside-the-worksheet/]
 keywords: "Delete a shape on an Excel worksheet"
 description: "Aspose.Cells Cloud REST API support deleting shape on an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 50
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Delete a shape by index on an Excel worksheet
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Delete a shape by index on an Excel worksheet
 ---
 
 

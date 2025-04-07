@@ -7,7 +7,7 @@ url: /ranges/update/
 keywords: "How to update range content from an Excel worksheet."
 description: "Aspose.Cells Cloud REST API support updating range content from an Excel Worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 20
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, How to update range content from an Excel worksheet
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, How to update range content from an Excel worksheet
 ---
 
 ## Working with updating range content on an Excel worksheet.

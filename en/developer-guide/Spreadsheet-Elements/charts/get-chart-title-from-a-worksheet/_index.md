@@ -4,7 +4,7 @@ type: docs
 url: /charts/title/get/
 aliases: [/get-chart-title-from-a-worksheet/]
 weight: 120
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Get Chart Title From a Worksheet
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Get Chart Title From a Worksheet
 ---
 
 This REST API indicates get chart title

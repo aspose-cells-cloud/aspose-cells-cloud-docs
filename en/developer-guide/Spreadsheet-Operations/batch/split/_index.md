@@ -6,7 +6,7 @@ url: /batch/split
 keywords: "Batch split Excel file."
 description: "Aspose.Cells Cloud API supports batch split file. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Batch Split
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Batch Split
 ---
 
 This REST API indicates to `batch split` of eligible file.

@@ -3,7 +3,7 @@ title: "Get MaxDataColumn from Excel Worksheet"
 type: docs
 url: /get-maxdatacolumn-from-excel-worksheet/
 weight: 70
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Get MaxDataColumn from Excel Worksheet
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Get MaxDataColumn from Excel Worksheet
 ---
 
 

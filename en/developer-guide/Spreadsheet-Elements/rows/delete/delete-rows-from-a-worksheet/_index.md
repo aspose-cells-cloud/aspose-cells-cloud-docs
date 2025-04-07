@@ -7,7 +7,7 @@ url: /rows/delete/rows/
 keywords: "Delete rows on an Excel worksheet"
 description: "Aspose.Cells Cloud REST API support deleting rows on an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 80
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Delete multi rows on an Excel worksheet
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Delete multi rows on an Excel worksheet
 ---
 
 This REST API indicates to delete multi rows on an Excel worksheet.

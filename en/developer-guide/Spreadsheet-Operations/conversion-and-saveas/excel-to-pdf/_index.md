@@ -8,7 +8,7 @@ aliases: [/convert-excel-file-to-pdf-in-cloud/,/convert/excel-to-pdf/]
 keywords: "Convert excel files to pdf files."
 description: "Aspose.Cells Cloud REST API support conversion excel files to pdf files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 80
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Excel to PDF
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Excel to PDF
 ---
 
 This REST API `saveas` excel file to PDF.

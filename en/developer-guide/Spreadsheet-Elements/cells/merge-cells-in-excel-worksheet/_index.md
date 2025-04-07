@@ -3,7 +3,7 @@ title: "Merge Cells in Excel Worksheet"
 type: docs
 url: /merge-cells-in-excel-worksheet/
 weight: 110
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Merge Cells in Excel Worksheet
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Merge Cells in Excel Worksheet
 ---
 
 This REST API indicates `merge` cells in an Excel file.

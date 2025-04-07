@@ -8,7 +8,7 @@ aliases: [/hide-excel-worksheets/]
 keywords: "Hide an Excel Worksheet on an Excel Workbook."
 description: "Aspose.Cells Cloud REST API support hiding an Excel Worksheet on an Excel Workbook. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 50
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Hide an Excel worksheet
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Hide an Excel worksheet
 ---
 
 This REST API indicates `hide worksheet`.

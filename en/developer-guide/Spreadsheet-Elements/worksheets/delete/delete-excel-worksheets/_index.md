@@ -8,7 +8,7 @@ aliases: [/delete-excel-worksheets/]
 keywords: "Delete multiple Excel worksheets on an Excel workbook."
 description: "Aspose.Cells Cloud REST API support deleting multiple Excel worksheets on an Excel workbook. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 20
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Delete multiple Excel worksheets
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Delete multiple Excel worksheets
 ---
 
 This REST API indicates `delete multiple worksheets`.

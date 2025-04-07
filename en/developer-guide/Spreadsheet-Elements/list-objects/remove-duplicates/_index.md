@@ -7,7 +7,7 @@ keywords: "list object(table) remove duplicates ."
 url: /list-objects/remove-duplicates/
 description: Remove duplicates on list object. 
 weight: 20
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, List object remove duplicates
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, List object remove duplicates
 ---
 
 This REST API indicates remove duplicates on list object. 

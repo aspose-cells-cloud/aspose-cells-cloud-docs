@@ -3,7 +3,7 @@ title: " Get Chart Second Category Axis"
 type: docs
 url: /charts/second-category-axis/get/
 weight: 60
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon,  Get Chart Second Category Axis
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown,  Get Chart Second Category Axis
 ---
 This REST API indicates Get Chart Second Category Axis. 
  

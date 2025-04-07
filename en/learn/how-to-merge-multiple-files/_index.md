@@ -4,7 +4,7 @@ type: docs
 url: /how-to-merge-multiple-files
 description: "How to merge multiple files through Aspose.Cells Cloud."
 weight: 10
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, How to merge multiple files through Aspose.Cells Cloud
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, How to merge multiple files through Aspose.Cells Cloud
 ---
 
 ## Introduction

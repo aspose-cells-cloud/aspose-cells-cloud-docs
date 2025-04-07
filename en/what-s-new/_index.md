@@ -7,7 +7,7 @@ weight: 5
 url: /what-s-new-in-aspose-cells-cloud/
 keywords: "What's new in aspose cells cloud. Office Excel 2013,  Office Excel 2016,  Office Excel 2019,office Excel 365."
 description: "This page describes the most interesting new Aspose.Cells Cloud features introduced in recent releases."
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, What's new in Aspose.Cells Cloud
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, What's new in Aspose.Cells Cloud
 ---
 
 Welcome to what's new in Aspose.Cells Cloud docs. Use this page to quickly find the latest changes.

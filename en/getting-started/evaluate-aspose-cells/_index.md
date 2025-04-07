@@ -5,7 +5,7 @@ type: docs
 url: /evaluate-aspose-cells/
 description: "Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on."
 weight: 60
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Evaluate Aspose.Cells Cloud
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Evaluate Aspose.Cells Cloud
 ---
 
 

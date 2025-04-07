@@ -3,7 +3,7 @@ title: " Update Chart Second Value Axis"
 type: docs
 url: /charts/second-value-axis/update/
 weight: 160
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon,  Update Chart Second Value Axis
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown,  Update Chart Second Value Axis
 ---
 
 This REST API indicates Update Chart Second Value Axis. 

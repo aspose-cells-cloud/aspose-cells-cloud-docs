@@ -3,7 +3,7 @@ title: "Get MaxDataRow from Excel Worksheet"
 type: docs
 url: /get-maxdatarow-from-excel-worksheet/
 weight: 50
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Get MaxDataRow from Excel Worksheet
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Get MaxDataRow from Excel Worksheet
 ---
 
 

@@ -8,7 +8,7 @@ aliases: [/create-an-empty-excel-workbook/,/workbook/new/,/workbook/create/empty
 keywords: "How to create an Excel workbook."
 description: "Aspose.Cells Cloud REST API how to create an empty Excel workbook. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 20
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Create an empty Excel workbook
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Create an empty Excel workbook
 ---
 
 This REST API indicates to create an `empty workbook`.

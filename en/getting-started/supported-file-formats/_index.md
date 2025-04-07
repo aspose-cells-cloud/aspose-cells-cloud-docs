@@ -5,7 +5,7 @@ type: docs
 url: /supported-file-formats/
 description: "Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on."
 weight: 40
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Supported File Formats
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Supported File Formats
 ---
 
 |**Format**|**Description**|**Load**|**Save**|

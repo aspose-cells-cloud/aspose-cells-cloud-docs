@@ -3,7 +3,7 @@ title: "Set Formula for a Cell in Excel Worksheets"
 type: docs
 url: /set-formula-for-a-cell-in-excel-worksheets/
 weight: 80
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Set Formula for a Cell in Excel Worksheets
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Set Formula for a Cell in Excel Worksheets
 ---
 
 This REST API indicates set `cell formula` in an Excel file.

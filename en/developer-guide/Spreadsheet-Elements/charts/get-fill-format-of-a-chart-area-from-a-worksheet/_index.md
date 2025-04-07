@@ -4,7 +4,7 @@ type: docs
 url: /charts/chart-area/fill-format/get/
 aliases: [/get-fill-format-of-a-chart-area-from-a-worksheet/]
 weight: 70
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Get Fill Format of a Chart Area from a Worksheet
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Get Fill Format of a Chart Area from a Worksheet
 ---
 
 This REST API indicates get chart area fill format info.

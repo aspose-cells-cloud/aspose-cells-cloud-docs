@@ -7,7 +7,7 @@ keywords: "Insert slicer for list object."
 url: /list-objects/insert-slicer/
 description: Insert slicer for list object. 
 weight: 20
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, List object insert slicer
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, List object insert slicer
 ---
 
 This REST API indicates insert slicer for list object on an Excel worksheet. 

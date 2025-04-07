@@ -7,7 +7,7 @@ url: /validations/
 keywords: "Working with validations on an Excel file."
 description: "Aspose.Cells Cloud REST API support working with validations on an Excel file. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Validations
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Validations
 ---
 
 
@@ -19,9 +19,9 @@ As we can use data validation in excel to make sure a value is a positive number
 
 ## Working with validations on an Excel file
 
-- [How to add a validation information from an Execl worksheet.](/cells/validations/delete/)
-- [How to get validation information from an Execl worksheet.](/cells/validations/get/)
-- [How to get all validations information from an Execl worksheet.](/cells/validations/get-all/)
-- [How to delete a validation information from an Execl worksheet.](/cells/validations/delete/)
-- [How to clear all validations information from an Execl worksheet.](/cells/validations/clear/)
-- [How to update a validation information on an Execl worksheet.](/cells/validations/update/)
+- [How to add a validation information from an Excel worksheet.](/cells/validations/delete/)
+- [How to get validation information from an Excel worksheet.](/cells/validations/get/)
+- [How to get all validations information from an Excel worksheet.](/cells/validations/get-all/)
+- [How to delete a validation information from an Excel worksheet.](/cells/validations/delete/)
+- [How to clear all validations information from an Excel worksheet.](/cells/validations/clear/)
+- [How to update a validation information on an Excel worksheet.](/cells/validations/update/)

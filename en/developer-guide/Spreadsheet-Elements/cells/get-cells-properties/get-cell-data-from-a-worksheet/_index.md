@@ -3,7 +3,7 @@ title: "Get Cell Data from a Worksheet"
 type: docs
 url: /get-cell-data-from-a-worksheet/
 weight: 10
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Get Cell Data from a Worksheet
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Get Cell Data from a Worksheet
 ---
 
 This REST API indicates shows get a `cell` in an Excel file when the `cellOrMethodName` parameter is cell name.

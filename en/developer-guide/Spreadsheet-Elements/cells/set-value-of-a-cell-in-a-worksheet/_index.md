@@ -3,7 +3,7 @@ title: "Set Value of a Cell in a Worksheet"
 type: docs
 url: /set-value-of-a-cell-in-a-worksheet/
 weight: 70
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Set Value of a Cell in a Worksheet
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Set Value of a Cell in a Worksheet
 ---
 
 This REST API indicates set `cell value` in an Excel file.

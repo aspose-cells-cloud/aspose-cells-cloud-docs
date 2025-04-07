@@ -8,7 +8,7 @@ aliases: [/sort-worksheet-data/]
 keywords: "Sort range data on an Excel worksheet."
 description: "Aspose.Cells Cloud REST API support sortting range data on an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 20
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Sort range data on an Excel worksheet
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Sort range data on an Excel worksheet
 ---
 
 This REST API indicates `sort worksheet range data`.

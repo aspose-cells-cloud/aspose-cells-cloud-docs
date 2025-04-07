@@ -1,5 +1,5 @@
 ---
-title: "Merge and Split Excel files"
+title: "Merge and Split Excel files."
 second_title: "Aspose.Cells Cloud Document"
 linktitle: "Merge and Split"
 type: docs

@@ -8,7 +8,7 @@ aliases: [/import-string-array-into-worksheet/,/import-data/string-array/,/impor
 keywords: "Import string array data into Excel files."
 description: "Aspose.Cells Cloud REST API support importing string array data into Excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 40
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Import String Array into Excel Worksheet
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Import String Array into Excel Worksheet
 ---
 
 This REST API `import string array data` into Excel work sheet.

@@ -4,7 +4,7 @@ type: docs
 url: /charts/to-image/
 aliases: [/convert-chart-to-image/]
 weight: 50
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Convert Chart to Image
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Convert Chart to Image
 ---
 
 This REST API indicates how to convert a chart to image .

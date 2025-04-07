@@ -4,7 +4,7 @@ type: docs
 url: /how-to-protect-file
 description: "How to protect file through Aspose.Cells Cloud."
 weight: 10
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, How to protect file through Aspose.Cells Cloud
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, How to protect file through Aspose.Cells Cloud
 ---
 
 ## Introduction

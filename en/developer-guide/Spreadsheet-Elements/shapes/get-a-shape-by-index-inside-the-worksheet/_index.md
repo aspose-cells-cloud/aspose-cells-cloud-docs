@@ -8,7 +8,7 @@ aliases: [/get-a-shape-by-index-inside-the-worksheet/]
 keywords: "Get a shape on an Excel worksheet"
 description: "Aspose.Cells Cloud REST API support getting a shape on an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 20
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Get a shape by index on an Excel worksheet
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Get a shape by index on an Excel worksheet
 ---
 
 

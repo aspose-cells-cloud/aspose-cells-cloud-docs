@@ -8,7 +8,7 @@ aliases: [/match-all-blank-cells-in-the-list/]
 keywords: "Match all blank cells in the filter list on an Excel worksheet."
 description: "The Aspose.Cells Cloud API supports matching all blank cells in the filter list on an Excel worksheet.SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Match all blank cells in an Excel worksheet
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
 ---
 
 This REST API indicates to `match` all `blank cell` in the filter list on an Excel worksheet.

@@ -7,7 +7,7 @@ aliases: [/working-with-pivot-table-using-cellsobjectoperate-task/]
 keywords: "REST API, pivot table, spreadsheets, excel"
 description: "Cells.Cloud API for Excel operate: create pivot table using CellsObjectOperate task."
 weight: 10
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Working with pivot table using CellsObjectOperate task
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Working with pivot table using CellsObjectOperate task
 ---
 
 This REST API create `pivot table` using  cells object operate `task`.

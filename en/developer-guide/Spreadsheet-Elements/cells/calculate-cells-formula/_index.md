@@ -3,7 +3,7 @@ title: "Calculate Cells formula"
 type: docs
 url: /calculate-cells-formula/
 weight: 90
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Calculate Cells formula
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Calculate Cells formula
 ---
 
 This REST API indicates calculate `cells formula` in an Excel file.

@@ -8,7 +8,7 @@ aliases: [/unhide-columns-in-an-excel-worksheet/,/unhide-columns-in-excel-worksh
 keywords: "Unhide column on an Excel worksheet"
 description: "Aspose.Cells Cloud REST API support unhiding column on an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 50
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Unhide columns on an Excel worksheet
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Unhide columns on an Excel worksheet
 ---
 
 This REST API indicates unhide worksheet columns.

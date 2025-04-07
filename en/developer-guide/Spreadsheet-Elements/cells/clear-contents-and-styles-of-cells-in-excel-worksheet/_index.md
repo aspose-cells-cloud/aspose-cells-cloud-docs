@@ -3,7 +3,7 @@ title: "Clear Contents and Styles of Cells in Excel Worksheet"
 type: docs
 url: /clear-contents-and-styles-of-cells-in-excel-worksheet/
 weight: 50
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Clear Contents and Styles of Cells in Excel Worksheet
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Clear Contents and Styles of Cells in Excel Worksheet
 ---
 
 This REST API indicates `clear` cells `content` in an Excel file.

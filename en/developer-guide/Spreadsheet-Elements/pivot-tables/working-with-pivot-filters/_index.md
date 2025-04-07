@@ -8,7 +8,7 @@ aliases: [/working-with-pivot-filters/]
 keywords: "Add filter for a pivot table."
 description: "Aspose.Cells Cloud REST API support adding filter for a pivot table. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 50
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Working with pivot filters
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Working with pivot filters
 ---
 
 This REST API indicates `add` pivot `filter` for piovt table index

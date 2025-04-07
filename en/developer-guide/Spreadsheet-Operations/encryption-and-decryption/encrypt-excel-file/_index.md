@@ -8,7 +8,7 @@ aliases: [/encrypt-excel-workbooks/,/workbook/encrypt/]
 keywords: "Encrypt Excel workbook."
 description: "Aspose.Cells Cloud REST API support encrypting Excel workbook. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 20
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Encrypt an Excel workbook
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Encrypt an Excel workbook
 ---
 
 This REST API encrypt an Excel `workbook`.

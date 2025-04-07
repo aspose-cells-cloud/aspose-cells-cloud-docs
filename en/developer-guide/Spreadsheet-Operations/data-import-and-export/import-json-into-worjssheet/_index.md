@@ -8,7 +8,7 @@ aliases: [ /import/json/]
 keywords: "Import Json data into Excel."
 description: "Aspose.Cells Cloud REST API support importing string array data into Excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 40
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Import Json data into Excel
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Import Json data into Excel
 ---
 
 This REST API `import json data` into Excel work sheet.
