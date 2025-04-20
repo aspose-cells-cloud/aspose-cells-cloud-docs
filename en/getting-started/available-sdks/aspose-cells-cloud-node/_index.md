@@ -64,4 +64,4 @@ node configuration file : package.json
 - Execute Workbook Conversion
   Invoke the conversion process using the PostConvertWorkbook method and handle the response.
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PutConvertWorkbook.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_AvailableSDKs.ts" >}}

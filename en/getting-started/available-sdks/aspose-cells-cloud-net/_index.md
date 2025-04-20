@@ -34,7 +34,7 @@ You can install Aspose.Cells Cloud SDK for Net using dotnet, too. Below are the 
 
 ```powershell
 
-dotnet add package Aspose.Cells-Cloud 
+dotnet add package Aspose.Cells-Cloud
 
 ```
 
@@ -51,4 +51,4 @@ dotnet add package Aspose.Cells-Cloud
 
 ### **Sample Code**
 
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example-Convert-Excel-To-PDF.cs" >}}
+{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example_AvailableSDKs.cs" >}}
