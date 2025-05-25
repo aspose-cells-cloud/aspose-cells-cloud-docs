@@ -64,4 +64,4 @@ In your Maven project, add dependencies for the Aspose.Cells Cloud SDK. Include 
 
 ### **Sample Code**
 
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_PutConvertWorkbook.java" >}}
+{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_AvailableSDKs.java" >}}
