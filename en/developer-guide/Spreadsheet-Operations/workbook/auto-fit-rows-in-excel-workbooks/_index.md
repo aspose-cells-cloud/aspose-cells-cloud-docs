@@ -27,8 +27,10 @@ The request parameters are:
 | :- | :- | :- |:- |
 | name | string | path | Document name. |
 | autoFitterOptions |  | body | Auto Fitter Options. |
-| startRow | integer | query | Start row. |
-| endRow | integer | query | End row. |
+| startRow | integer | query | Start row index. |
+| endRow | integer | query | End row index. |
+| firstColumn | integer | query | First column index. |
+| lastColumn | integer | query | Last column index. |
 | onlyAuto | boolean | query | False |
 | folder | string | query | Document's folder. |
 | storageName | string | query | storage name. |

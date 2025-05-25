@@ -17,13 +17,19 @@ This REST API indicates to `get` excel file to different format file.
 
 |Parameter Name|Type|Description|
 | :- | :- | :- |
-|format|string| file format(csv/xls/html/mhtml/ods/pdf/xml/txt/tiff/xlsb/xlsm/xlsx/xltm/xltx/xps/png/jpg/gif/emf/bmp/md/Numbers/wmf/svg) |
-|password|string||
-|isAutoFit|string| true/false|
+|format|string|The file format: csv, xls, html, mhtml, ods, pdf, xml, txt, tiff, xlsb, xlsm, xlsx, xltm, xltx, xps, png, jpg, gif, emf, bmp, md, Numbers, wmf, svg, and so on.|
+|password|string|The password needed to open an Excel file.|
+|isAutoFit|string|Auto-fits the rows and columns width in this workbook. The default value is false.|
 |onlySaveTable|string| true/false|
-|outPath|string| new file position.|
+|outPath|string| Path to save the result. If it's a single file, the `outPath` should encompass both the filename and extension. In the case of multiple files, the `outPath` should only include the folder. |
+|outStorageName|string| The storage name where the saved file is situated. |
+|checkExcelRestriction|bool| Whether check restriction of excel file when user modify cells related objects. |
+|region|string| The regional settings for workbook. |
+|pageWideFitOnPerSheet|bool| The page wide fit on worksheet. |
+|pageTallFitOnPerSheet|bool| The page tall fit on worksheet. |
+|onePagePerSheet|bool| When converting to PDF format, one page per sheet.  |
 |folder|string|Original workbook folder.|
-|storageName|string|Storage name.|
+|storageName|string|The storage name where the file is situated.|
 
 ## REST API
 

@@ -13,15 +13,35 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Sa
 
 This REST API indicates to `save` excel file as different format file.
 
+**Path Parameter**
+
+|Parameter Name|Type|Description|
+| :- | :- | :- |
+|name|string| The file name. |
+
 **Query Parameter**
 
 |Parameter Name|Type|Description|
 | :- | :- | :- |
 |newfilename|string| new file name |
-|isAutoFitRows|string| true/false |
-|isAutoFitColumns|string| true/false |
+|isAutoFitRows|string| Auto-fits all rows in this workbook. The default value is false. |
+|isAutoFitColumns|string|  Auto-fits the columns width in this workbook. The default value is false. |
 |folder|string|Original workbook folder.|
-|storageName|string|Storage name.|
+|storageName|string| The storage name where the file is situated. |
+|outStorageName|string| The storage name where the saved file is situated. |
+|checkExcelRestriction|bool| Whether check restriction of excel file when user modify cells related objects. |
+|region|string| The regional settings for workbook. |
+|pageWideFitOnPerSheet|bool| The page wide fit on worksheet.  |
+|pageTallFitOnPerSheet|bool| The page tall fit on worksheet. |
+|sheetName|string| Convert the specified worksheet.  |
+|pageIndex|string| Convert the specified page  of worksheet, sheetName is required. |
+|onePagePerSheet|bool| When converting to PDF format, one page per sheet.  |
+
+**Request Body Parameter**
+
+|Parameter Name|Type|Description|
+| :- | :- | :- |
+|SaveOptions|Object | Save option save into the second part of the multipart content.|
 
 ## REST API
 

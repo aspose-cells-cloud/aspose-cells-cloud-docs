@@ -26,7 +26,7 @@ The request parameters are:
 | Parameter Name | Type | Path/Query String/HTTPBody | Description|
 | :- | :- | :- |:- |
 | name | string | path | Document name. |
-| autoFitterOptions |  | body | Auto Fitter Options. |
+| [autoFitterOptions](/cells/auto-fitter-options/) |  | body | Auto Fitter Options. |
 | startColumn | integer | query | Start column. |
 | endColumn | integer | query | End column. |
 | folder | string | query | Document's folder. |

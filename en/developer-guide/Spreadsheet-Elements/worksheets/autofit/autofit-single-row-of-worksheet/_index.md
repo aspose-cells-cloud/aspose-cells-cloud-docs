@@ -25,13 +25,13 @@ The request parameters are:
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description|
 | :- | :- | :- |:- |
-| name | string | path |   |
-| sheetName | string | path |   |
-| rowIndex | integer | query |   |
-| firstColumn | integer | query |   |
-| lastColumn | integer | query |   |
-| autoFitterOptions |  | body |   |
-| folder | string | query |   |
+| name | string | path | The file name.  |
+| sheetName | string | path |  The worksheet name. |
+| rowIndex | integer | query | The  row index.  |
+| firstColumn | integer | query | The first column index.  |
+| lastColumn | integer | query |  The last column index.  |
+| [autoFitterOptions](/cells/auto-fitter-options) | object | body | The Auto Fitter Options.  |
+| folder | string | query | The folder. |
 | storageName | string | query | storage name. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostAutofitWorksheetRow) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.

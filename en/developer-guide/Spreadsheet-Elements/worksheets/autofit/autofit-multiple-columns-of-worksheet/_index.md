@@ -25,11 +25,11 @@ The request parameters are:
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description|
 | :- | :- | :- |:- |
-| name | string | path |   |
-| sheetName | string | path |   |
-| firstColumn | integer | query |   |
-| lastColumn | integer | query |   |
-| autoFitterOptions |  | body |   |
+| name | string | path | The file name. |
+| sheetName | string | path | The worksheet name.  |
+| firstColumn | integer | query | The start column index.  |
+| lastColumn | integer | query |  The end column index. |
+| [autoFitterOptions](/cells/auto-fitter-options/) |  | body |   Auto Fitter Options.  |
 | firstRow | integer | query |   |
 | lastRow | integer | query |   |
 | folder | string | query |   |
