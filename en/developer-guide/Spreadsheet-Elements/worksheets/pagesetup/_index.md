@@ -1,7 +1,7 @@
 ---
 title: "Worksheet page setup"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: "page setup"
+linktitle: "Page setup"
 type: docs
 url: /page-setup/
 keywords: "An Excel worksheet page setup."
@@ -13,7 +13,7 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, An
 
 # **pageSetup**
 
-excel print page setting 
+excel print page setting
 
 ## **Properties**
 
@@ -36,7 +36,7 @@ excel print page setting
 |IsPercentScale|Boolean|true|false |  |If this property is False, the FitToPagesWide and FitToPagesTall properties control how the worksheet is scaled.|
 |LeftMargin|Floating|true|false |  |Represents the size of the left margin, in unit of centimeters.|
 |Order|String|true|false |  |Represents the order that Microsoft Excel uses to number pages when printing a large worksheet.|
-|Orientation|String|true|false |  |Represents page print orientation.|
+|Orientation|String|true|false |  |Represents page print orientation. Landscape/Portrait |
 |PaperSize|String|true|false |  |Represents the size of the paper.|
 |PrintArea|String|true|false |  |Represents the range to be printed.|
 |PrintComments|String|true|false |  |Represents the way comments are printed with the sheet.|
