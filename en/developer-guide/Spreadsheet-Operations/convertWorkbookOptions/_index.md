@@ -14,12 +14,12 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Co
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**DataSource** | **string** | Gets and set the type of auto fitting row height of merged cells. |
-**FileInfo** | **boolean** | Ignores the hidden rows/columns. |
-**PageSetup** | **boolean** | Indicates whether only fit the rows which height are not customed. |
-**SaveOptions** | **string** | Gets or sets default edit language. |
-**ConvertFormat** | **double** | Gets and sets the max row height(in unit of Point) when autofitting rows. |
-**CheckExcelRestriction** | **string** | Gets and sets the type of auto fitting wrapped text. |
+**DataSource** | **Object** | Data file soruce : CloudFileSystem ,RequestFiles , HttpUri. |
+**FileInfo** | **Object** |  File inforamtion description. include of filename, file size, and file content(base64 string). |
+**PageSetup** | **Object** | Page setup properties. |
+**SaveOptions** | **Object** | Save Options:  DbfSaveOptions, DifSaveOptions, DocxSaveOptions, HtmlSaveOptions, XlsSaveOptions, XlsxSaveOptions, XpsSaveOptions, PngSaveOptions, JpgSaveOptions, GifSaveOptions, EmfSaveOptions, BmpSaveOptions, MdSaveOptions, NumbersSaveOptions, WmfSaveOptions, SvgSaveOptions, TxtSaveOptions, TifSaveOptions, XlsbSaveOptions |
+**ConvertFormat** | **string** | The file format: csv, xls, html, mhtml, ods, pdf, xml, txt, tiff, xlsb, xlsm, xlsx, xltm, xltx, xps, png, jpg, gif, emf, bmp, md, Numbers, wmf, svg, and so on.  |
+**CheckExcelRestriction** | **boolean** | Gets and sets the type of auto fitting wrapped text. |
 
 ## **DbfSaveOptions Properties**
 

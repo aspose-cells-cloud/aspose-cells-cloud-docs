@@ -10,13 +10,13 @@ weight: 10
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Convert Excel
 ---
 
-This REST API indicates to `convert` excel file to different format file.
+This REST API indicates to `convert` an Excel file to a different format. It supports different formats. It can also set page setup and save options before converting.
 
 **Request Body Parameter**
 
 |Parameter Name|Type|Description|
 | :- | :- | :- |
-|ConvertWorkbookOptions|object | Convert Workbook Options. |
+|[ConvertWorkbookOptions](/cells/convert-workbook-options/)|object | Convert Workbook Options. |
 
 **Response**
 
