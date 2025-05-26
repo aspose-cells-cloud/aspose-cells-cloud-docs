@@ -10,16 +10,25 @@ weight: 79
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Convert Workbook Options
 ---
 
+
+
 # ConvertWorkbookOptions Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **DataSource** | **Object** | Data file soruce : CloudFileSystem ,RequestFiles , HttpUri. |
-**FileInfo** | **Object** |  File inforamtion description. include of filename, file size, and file content(base64 string). |
-**PageSetup** | **Object** | Page setup properties. |
+**[FileInfo](/cells/file-info/)** | **Object** |  File inforamtion description. include of filename, file size, and file content(base64 string). |
+**[PageSetup](/cells/page-setup/)** | **Object** | Page setup properties. |
 **SaveOptions** | **Object** | Save Options:  DbfSaveOptions, DifSaveOptions, DocxSaveOptions, HtmlSaveOptions, XlsSaveOptions, XlsxSaveOptions, XpsSaveOptions, PngSaveOptions, JpgSaveOptions, GifSaveOptions, EmfSaveOptions, BmpSaveOptions, MdSaveOptions, NumbersSaveOptions, WmfSaveOptions, SvgSaveOptions, TxtSaveOptions, TifSaveOptions, XlsbSaveOptions |
 **ConvertFormat** | **string** | The file format: csv, xls, html, mhtml, ods, pdf, xml, txt, tiff, xlsb, xlsm, xlsx, xltm, xltx, xps, png, jpg, gif, emf, bmp, md, Numbers, wmf, svg, and so on.  |
 **CheckExcelRestriction** | **boolean** | Gets and sets the type of auto fitting wrapped text. |
+
+## **fileSource Properties**
+
+| Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description |
+| :- | :- | :- |:- |  :- | :- |
+|FileSourceType|String|true|false |  |A property named FileSourceType of type FileSourceType that can be accessed and modified.(CloudFileSystem/RequestFiles/HttpUri)|
+|FilePath|String|true|false |  | The file position path.|
 
 ## **DbfSaveOptions Properties**
 
