@@ -1,7 +1,18 @@
+---
+title: "copy file"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "copy file"
+type: docs
+url: /copy-file/
+keywords: ""
+description: " "
+weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+---
+
 # **Excel API : CopyFile **
 
  
-
 
 ## **Interface Details**
 

@@ -1,7 +1,18 @@
+---
+title: "split spreadsheet"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "split spreadsheet"
+type: docs
+url: /split-spreadsheet/
+keywords: ""
+description: "Split a local spreadsheet into the specified format, multi-file. "
+weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+---
+
 # **Excel API : SplitSpreadsheet **
 
 Split a local spreadsheet into the specified format, multi-file. 
-
 
 ## **Interface Details**
 

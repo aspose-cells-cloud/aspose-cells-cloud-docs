@@ -1,7 +1,18 @@
+---
+title: "get disc usage"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "get disc usage"
+type: docs
+url: /get-disc-usage/
+keywords: ""
+description: " "
+weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+---
+
 # **Excel API : GetDiscUsage **
 
  
-
 
 ## **Interface Details**
 

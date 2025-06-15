@@ -1,7 +1,18 @@
+---
+title: "search spreadsheet broken links"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "search spreadsheet broken links"
+type: docs
+url: /search-spreadsheet-broken-links/
+keywords: ""
+description: "Search broken links in the local spreadsheet. "
+weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+---
+
 # **Excel API : SearchSpreadsheetBrokenLinks **
 
 Search broken links in the local spreadsheet. 
-
 
 ## **Interface Details**
 

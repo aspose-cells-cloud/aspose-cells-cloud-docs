@@ -1,7 +1,18 @@
+---
+title: "convert spreadsheet"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "convert spreadsheet"
+type: docs
+url: /convert-spreadsheet/
+keywords: ""
+description: "Converts a spreadsheet on a local drive to the specified format. "
+weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+---
+
 # **Excel API : ConvertSpreadsheet **
 
 Converts a spreadsheet on a local drive to the specified format. 
-
 
 ## **Interface Details**
 

@@ -1,7 +1,18 @@
+---
+title: "get file versions"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "get file versions"
+type: docs
+url: /get-file-versions/
+keywords: ""
+description: " "
+weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+---
+
 # **Excel API : GetFileVersions **
 
  
-
 
 ## **Interface Details**
 

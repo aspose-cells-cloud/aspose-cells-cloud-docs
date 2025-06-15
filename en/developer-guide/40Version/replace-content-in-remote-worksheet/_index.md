@@ -1,7 +1,18 @@
+---
+title: "replace content in remote worksheet"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "replace content in remote worksheet"
+type: docs
+url: /replace-content-in-remote-worksheet/
+keywords: ""
+description: "Replace text in the worksheet of remoted spreadsheet. "
+weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+---
+
 # **Excel API : ReplaceContentInRemoteWorksheet **
 
 Replace text in the worksheet of remoted spreadsheet. 
-
 
 ## **Interface Details**
 

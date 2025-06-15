@@ -1,7 +1,18 @@
+---
+title: "export spreadsheet as format"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "export spreadsheet as format"
+type: docs
+url: /export-spreadsheet-as-format/
+keywords: ""
+description: "Converts a spreadsheet in cloud storage to the specified format. "
+weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+---
+
 # **Excel API : ExportSpreadsheetAsFormat **
 
 Converts a spreadsheet in cloud storage to the specified format. 
-
 
 ## **Interface Details**
 

@@ -1,7 +1,18 @@
+---
+title: "split remote spreadsheet"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "split remote spreadsheet"
+type: docs
+url: /split-remote-spreadsheet/
+keywords: ""
+description: "Split a spreadsheet in cloud storage into the specified format, multi-file. "
+weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+---
+
 # **Excel API : SplitRemoteSpreadsheet **
 
 Split a spreadsheet in cloud storage into the specified format, multi-file. 
-
 
 ## **Interface Details**
 

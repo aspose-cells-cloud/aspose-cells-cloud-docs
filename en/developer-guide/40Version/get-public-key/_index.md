@@ -1,7 +1,18 @@
+---
+title: "get public key"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "get public key"
+type: docs
+url: /get-public-key/
+keywords: ""
+description: "Get an asymmetric public key. "
+weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+---
+
 # **Excel API : GetPublicKey **
 
 Get an asymmetric public key. 
-
 
 ## **Interface Details**
 

@@ -1,7 +1,18 @@
+---
+title: "replace spreadsheet content"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "replace spreadsheet content"
+type: docs
+url: /replace-spreadsheet-content/
+keywords: ""
+description: "Replace text in the local spreadsheet. "
+weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+---
+
 # **Excel API : ReplaceSpreadsheetContent **
 
 Replace text in the local spreadsheet. 
-
 
 ## **Interface Details**
 

@@ -1,7 +1,18 @@
+---
+title: "create folder"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "create folder"
+type: docs
+url: /create-folder/
+keywords: ""
+description: " "
+weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+---
+
 # **Excel API : CreateFolder **
 
  
-
 
 ## **Interface Details**
 

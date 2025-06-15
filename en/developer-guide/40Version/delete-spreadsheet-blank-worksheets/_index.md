@@ -1,7 +1,18 @@
+---
+title: "delete spreadsheet blank worksheets"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "delete spreadsheet blank worksheets"
+type: docs
+url: /delete-spreadsheet-blank-worksheets/
+keywords: ""
+description: "Delete all blank worksheets which do not contain any data or other object. "
+weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+---
+
 # **Excel API : DeleteSpreadsheetBlankWorksheets **
 
 Delete all blank worksheets which do not contain any data or other object. 
-
 
 ## **Interface Details**
 

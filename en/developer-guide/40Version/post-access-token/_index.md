@@ -1,7 +1,18 @@
+---
+title: "post access token"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "post access token"
+type: docs
+url: /post-access-token/
+keywords: ""
+description: "Get Access Token Result: The Cells Cloud Get Token API acts as a proxy service,forwarding user requests to the Aspose Cloud authentication server and returning the resulting access token to the client. "
+weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+---
+
 # **Excel API : PostAccessToken **
 
 Get Access Token Result: The Cells Cloud Get Token API acts as a proxy service,forwarding user requests to the Aspose Cloud authentication server and returning the resulting access token to the client. 
-
 
 ## **Interface Details**
 

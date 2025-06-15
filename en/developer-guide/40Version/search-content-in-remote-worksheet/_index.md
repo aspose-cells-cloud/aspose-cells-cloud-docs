@@ -1,7 +1,18 @@
+---
+title: "search content in remote worksheet"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "search content in remote worksheet"
+type: docs
+url: /search-content-in-remote-worksheet/
+keywords: ""
+description: "Search text in the worksheet of remoted spreadsheet. "
+weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+---
+
 # **Excel API : SearchContentInRemoteWorksheet **
 
 Search text in the worksheet of remoted spreadsheet. 
-
 
 ## **Interface Details**
 

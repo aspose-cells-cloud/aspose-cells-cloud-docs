@@ -1,7 +1,18 @@
+---
+title: "move file"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "move file"
+type: docs
+url: /move-file/
+keywords: ""
+description: " "
+weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+---
+
 # **Excel API : MoveFile **
 
  
-
 
 ## **Interface Details**
 

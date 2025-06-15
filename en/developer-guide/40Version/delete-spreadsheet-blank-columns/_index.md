@@ -1,7 +1,18 @@
+---
+title: "delete spreadsheet blank columns"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "delete spreadsheet blank columns"
+type: docs
+url: /delete-spreadsheet-blank-columns/
+keywords: ""
+description: "Delete all blank columns which do not contain any data. "
+weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+---
+
 # **Excel API : DeleteSpreadsheetBlankColumns **
 
 Delete all blank columns which do not contain any data. 
-
 
 ## **Interface Details**
 

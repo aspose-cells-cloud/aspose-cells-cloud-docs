@@ -1,7 +1,18 @@
+---
+title: "delete folder"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "delete folder"
+type: docs
+url: /delete-folder/
+keywords: ""
+description: " "
+weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+---
+
 # **Excel API : DeleteFolder **
 
  
-
 
 ## **Interface Details**
 

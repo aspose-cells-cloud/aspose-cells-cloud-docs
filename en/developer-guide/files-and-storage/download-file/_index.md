@@ -1,7 +1,18 @@
+---
+title: "download file"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "download file"
+type: docs
+url: /download-file/
+keywords: ""
+description: " "
+weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+---
+
 # **Excel API : DownloadFile **
 
  
-
 
 ## **Interface Details**
 

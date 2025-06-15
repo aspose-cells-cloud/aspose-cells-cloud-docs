@@ -1,7 +1,18 @@
+---
+title: "object exists"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "object exists"
+type: docs
+url: /object-exists/
+keywords: ""
+description: " "
+weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+---
+
 # **Excel API : ObjectExists **
 
  
-
 
 ## **Interface Details**
 

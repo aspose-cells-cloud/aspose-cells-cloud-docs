@@ -1,7 +1,18 @@
+---
+title: "merge remote spreadsheet"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "merge remote spreadsheet"
+type: docs
+url: /merge-remote-spreadsheet/
+keywords: ""
+description: "Merge a spreadsheet file into other spreadsheet in cloud storage, and output a specified format file. "
+weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+---
+
 # **Excel API : MergeRemoteSpreadsheet **
 
 Merge a spreadsheet file into other spreadsheet in cloud storage, and output a specified format file. 
-
 
 ## **Interface Details**
 

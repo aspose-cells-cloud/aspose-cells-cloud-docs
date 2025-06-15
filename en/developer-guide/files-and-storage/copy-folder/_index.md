@@ -1,7 +1,18 @@
+---
+title: "copy folder"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "copy folder"
+type: docs
+url: /copy-folder/
+keywords: ""
+description: " "
+weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+---
+
 # **Excel API : CopyFolder **
 
  
-
 
 ## **Interface Details**
 

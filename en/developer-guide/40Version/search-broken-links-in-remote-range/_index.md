@@ -1,7 +1,18 @@
+---
+title: "search broken links in remote range"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "search broken links in remote range"
+type: docs
+url: /search-broken-links-in-remote-range/
+keywords: ""
+description: "Search broken links in the range of remoted spreadsheet. "
+weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+---
+
 # **Excel API : SearchBrokenLinksInRemoteRange **
 
 Search broken links in the range of remoted spreadsheet. 
-
 
 ## **Interface Details**
 

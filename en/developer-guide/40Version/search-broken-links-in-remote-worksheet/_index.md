@@ -1,7 +1,18 @@
+---
+title: "search broken links in remote worksheet"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "search broken links in remote worksheet"
+type: docs
+url: /search-broken-links-in-remote-worksheet/
+keywords: ""
+description: "Search broken links in the worksheet of remoted spreadsheet. "
+weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+---
+
 # **Excel API : SearchBrokenLinksInRemoteWorksheet **
 
 Search broken links in the worksheet of remoted spreadsheet. 
-
 
 ## **Interface Details**
 

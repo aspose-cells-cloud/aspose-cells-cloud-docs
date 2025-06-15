@@ -1,7 +1,18 @@
+---
+title: "delete file"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "delete file"
+type: docs
+url: /delete-file/
+keywords: ""
+description: " "
+weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+---
+
 # **Excel API : DeleteFile **
 
  
-
 
 ## **Interface Details**
 

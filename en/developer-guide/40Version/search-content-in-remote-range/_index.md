@@ -1,7 +1,18 @@
+---
+title: "search content in remote range"
+second_title: "Aspose.Cells Cloud Document"
+linktitle: "search content in remote range"
+type: docs
+url: /search-content-in-remote-range/
+keywords: ""
+description: "Search text in the range of remoted spreadsheet. "
+weight: 100
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+---
+
 # **Excel API : SearchContentInRemoteRange **
 
 Search text in the range of remoted spreadsheet. 
-
 
 ## **Interface Details**
 
