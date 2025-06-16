@@ -1,7 +1,7 @@
 ---
-title: "search broken links in remote range"
+title: "Search broken links in remote range"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: "search broken links in remote range"
+linktitle: "Search broken links in remote range"
 type: docs
 url: /search-broken-links-in-remote-range/
 keywords: ""

@@ -1,7 +1,7 @@
 ---
-title: "search content in remote spreadsheet"
+title: "Search content in remote spreadsheet"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: "search content in remote spreadsheet"
+linktitle: "Search content in remote spreadsheet"
 type: docs
 url: /search-content-in-remote-spreadsheet/
 keywords: ""

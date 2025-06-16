@@ -1,7 +1,7 @@
 ---
-title: "post access token"
+title: "Post access token"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: "post access token"
+linktitle: "Post access token"
 type: docs
 url: /post-access-token/
 keywords: ""

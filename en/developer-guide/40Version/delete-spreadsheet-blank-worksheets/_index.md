@@ -1,7 +1,7 @@
 ---
-title: "delete spreadsheet blank worksheets"
+title: "Delete spreadsheet blank worksheets"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: "delete spreadsheet blank worksheets"
+linktitle: "Delete spreadsheet blank worksheets"
 type: docs
 url: /delete-spreadsheet-blank-worksheets/
 keywords: ""

@@ -1,7 +1,7 @@
 ---
-title: "convert spreadsheet"
+title: "Convert spreadsheet"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: "convert spreadsheet"
+linktitle: "Convert spreadsheet"
 type: docs
 url: /convert-spreadsheet/
 keywords: ""

@@ -1,7 +1,7 @@
 ---
-title: "merge spreadsheets in remote folder"
+title: "Merge spreadsheets in remote folder"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: "merge spreadsheets in remote folder"
+linktitle: "Merge spreadsheets in remote folder"
 type: docs
 url: /merge-spreadsheets-in-remote-folder/
 keywords: ""

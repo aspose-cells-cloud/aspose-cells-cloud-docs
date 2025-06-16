@@ -1,7 +1,7 @@
 ---
-title: "check cloud service health"
+title: "Check cloud service health"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: "check cloud service health"
+linktitle: "Check cloud service health"
 type: docs
 url: /check-cloud-service-health/
 keywords: ""

@@ -1,7 +1,7 @@
 ---
-title: "get public key"
+title: "Get public key"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: "get public key"
+linktitle: "Get public key"
 type: docs
 url: /get-public-key/
 keywords: ""

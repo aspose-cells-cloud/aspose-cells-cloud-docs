@@ -1,7 +1,7 @@
 ---
-title: "delete file"
+title: "Delete file"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: "delete file"
+linktitle: "Delete file"
 type: docs
 url: /delete-file/
 keywords: ""

@@ -1,7 +1,7 @@
 ---
-title: "replace content in remote range"
+title: "Replace content in remote range"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: "replace content in remote range"
+linktitle: "Replace content in remote range"
 type: docs
 url: /replace-content-in-remote-range/
 keywords: ""

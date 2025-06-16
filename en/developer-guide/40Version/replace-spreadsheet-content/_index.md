@@ -1,7 +1,7 @@
 ---
-title: "replace spreadsheet content"
+title: "Replace spreadsheet content"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: "replace spreadsheet content"
+linktitle: "Replace spreadsheet content"
 type: docs
 url: /replace-spreadsheet-content/
 keywords: ""

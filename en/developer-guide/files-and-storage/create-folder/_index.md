@@ -1,7 +1,7 @@
 ---
-title: "create folder"
+title: "Create folder"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: "create folder"
+linktitle: "Create folder"
 type: docs
 url: /create-folder/
 keywords: ""

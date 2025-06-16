@@ -1,7 +1,7 @@
 ---
-title: "split spreadsheet"
+title: "Split spreadsheet"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: "split spreadsheet"
+linktitle: "Split spreadsheet"
 type: docs
 url: /split-spreadsheet/
 keywords: ""

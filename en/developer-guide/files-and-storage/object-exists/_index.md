@@ -1,7 +1,7 @@
 ---
-title: "object exists"
+title: "Object exists"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: "object exists"
+linktitle: "Object exists"
 type: docs
 url: /object-exists/
 keywords: ""

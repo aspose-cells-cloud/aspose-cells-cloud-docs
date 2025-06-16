@@ -1,7 +1,7 @@
 ---
-title: "convert chart to image"
+title: "Convert chart to image"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: "convert chart to image"
+linktitle: "Convert chart to image"
 type: docs
 url: /convert-chart-to-image/
 keywords: ""

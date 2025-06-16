@@ -1,7 +1,7 @@
 ---
-title: "get disc usage"
+title: "Get disc usage"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: "get disc usage"
+linktitle: "Get disc usage"
 type: docs
 url: /get-disc-usage/
 keywords: ""

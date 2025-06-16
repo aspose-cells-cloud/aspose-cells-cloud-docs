@@ -1,7 +1,7 @@
 ---
-title: "convert chart to pdf"
+title: "Convert chart to pdf"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: "convert chart to pdf"
+linktitle: "Convert chart to pdf"
 type: docs
 url: /convert-chart-to-pdf/
 keywords: ""

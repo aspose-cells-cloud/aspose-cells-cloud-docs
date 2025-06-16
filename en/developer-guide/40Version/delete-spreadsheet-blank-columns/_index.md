@@ -1,7 +1,7 @@
 ---
-title: "delete spreadsheet blank columns"
+title: "Delete spreadsheet blank columns"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: "delete spreadsheet blank columns"
+linktitle: "Delete spreadsheet blank columns"
 type: docs
 url: /delete-spreadsheet-blank-columns/
 keywords: ""

@@ -1,7 +1,7 @@
 ---
-title: "upload file"
+title: "Upload file"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: "upload file"
+linktitle: "Upload file"
 type: docs
 url: /upload-file/
 keywords: ""

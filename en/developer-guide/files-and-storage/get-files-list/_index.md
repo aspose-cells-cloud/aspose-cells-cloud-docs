@@ -1,7 +1,7 @@
 ---
-title: "get files list"
+title: "Get files list"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: "get files list"
+linktitle: "Get files list"
 type: docs
 url: /get-files-list/
 keywords: ""

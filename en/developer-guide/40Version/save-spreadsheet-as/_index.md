@@ -1,7 +1,7 @@
 ---
-title: "save spreadsheet as"
+title: "Save spreadsheet as"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: "save spreadsheet as"
+linktitle: "Save spreadsheet as"
 type: docs
 url: /save-spreadsheet-as/
 keywords: ""

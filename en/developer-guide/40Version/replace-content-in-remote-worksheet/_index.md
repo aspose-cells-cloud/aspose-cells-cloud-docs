@@ -1,7 +1,7 @@
 ---
-title: "replace content in remote worksheet"
+title: "Replace content in remote worksheet"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: "replace content in remote worksheet"
+linktitle: "Replace content in remote worksheet"
 type: docs
 url: /replace-content-in-remote-worksheet/
 keywords: ""
