@@ -25,16 +25,16 @@ The important parameters are described in the following table:
 
 **ImportStringArrayOption**
 
-| Parameter Name|Type|Description|
+| Parameter Name| Path/Query String/HTTPBody |Type|Description|
 | :- | :- | :- |
-| name | string | The workbook name |
-| importJsonRequest  | class |  Import json request. |
-| password | string |  The password of workbook. |
-| folder | string | Original workbook folder. |
-| storageName | string | Storage name. |
-| outPath | string | Output file path. |
-| outStorageName | string | Storage name for output file. |
-| checkExcelRestriction | string | Check Excel restriction. |
+| name | Path | string | The workbook name |
+| importJsonRequest  | HTTPBody | class |  Import json request. |
+| password | Query String | string |  The password of workbook. |
+| folder | Query String |  string | Original workbook folder. |
+| storageName | Query String | string | Storage name. |
+| outPath | Query String | string | Output file path. |
+| outStorageName | Query String | string | Storage name for output file. |
+| checkExcelRestriction | Query String | string | Check Excel restriction. |
 
 **Example**
 
