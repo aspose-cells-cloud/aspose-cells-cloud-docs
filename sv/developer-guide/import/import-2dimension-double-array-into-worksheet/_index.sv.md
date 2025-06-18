@@ -19,7 +19,7 @@ Begäran är en HTTP-begäran med innehåll i flera delar (se[RFC 2046](http://t
 ```bash
 
 POST https://api.aspose.cloud/v3.0/cells/import
-POST https://api.aspose.cloud/v3.0/cells/{name}/import-data
+POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
 
 ```
 De viktiga parametrarna beskrivs i följande tabell:

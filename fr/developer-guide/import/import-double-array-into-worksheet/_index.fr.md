@@ -19,7 +19,7 @@ La requête est une requête HTTP avec un contenu en plusieurs parties (voir[RFC
 ```bash
 
 POST https://api.aspose.cloud/v3.0/cells/import
-POST https://api.aspose.cloud/v3.0/cells/{name}/import-data
+POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
 
 ```
 

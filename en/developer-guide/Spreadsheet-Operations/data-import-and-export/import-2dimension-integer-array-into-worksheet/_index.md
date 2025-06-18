@@ -22,7 +22,7 @@ The important parameters are described in the following table:
 ```bash
 
 POST https://api.aspose.cloud/v3.0/cells/import
-POST https://api.aspose.cloud/v3.0/cells/{name}/import-data
+POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
 
 ```
 

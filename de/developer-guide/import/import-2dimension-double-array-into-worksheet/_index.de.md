@@ -19,7 +19,7 @@ Bei der Anfrage handelt es sich um eine HTTP-Anfrage mit mehrteiligem Inhalt (si
 ```bash
 
 POST https://api.aspose.cloud/v3.0/cells/import
-POST https://api.aspose.cloud/v3.0/cells/{name}/import-data
+POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
 
 ```
 Die wichtigen Parameter werden in der folgenden Tabelle beschrieben:

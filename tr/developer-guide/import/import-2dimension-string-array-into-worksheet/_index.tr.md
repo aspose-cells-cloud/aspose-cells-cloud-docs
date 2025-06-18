@@ -19,7 +19,7 @@ Bu REST API `import 2 dimension string array data`'i Excel çalışma sayfasına
 ```bash
 
 POST https://api.aspose.cloud/v3.0/cells/import
-POST https://api.aspose.cloud/v3.0/cells/{name}/import-data
+POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
 
 ```
 
