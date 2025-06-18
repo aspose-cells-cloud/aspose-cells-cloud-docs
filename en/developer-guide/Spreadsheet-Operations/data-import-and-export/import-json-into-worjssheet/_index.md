@@ -26,7 +26,7 @@ The important parameters are described in the following table:
 **ImportStringArrayOption**
 
 | Parameter Name| Path/Query String/HTTPBody |Type|Description|
-| :- | :- | :- |
+| :- | :- | :- | :- |
 | name | Path | string | The workbook name |
 | importJsonRequest  | HTTPBody | class |  Import json request. |
 | password | Query String | string |  The password of workbook. |
