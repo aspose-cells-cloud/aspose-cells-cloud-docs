@@ -3,7 +3,7 @@ title: "Import Batch Data into Excel Worksheet"
 second_title: "Aspose.Cells Cloud Document"
 linktitle: "Import batch data"
 type: docs
-url: /import-batch-data-into-excel-worksheet/
+url: /import-batch-data-into-excel/
 aliases: [/import-batch-data-into-worksheet/,/import-data/batch-data/,/import/batch-data/]
 keywords: "Import batch data into Excel files."
 description: "Aspose.Cells Cloud REST API support importing batch data into Excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
