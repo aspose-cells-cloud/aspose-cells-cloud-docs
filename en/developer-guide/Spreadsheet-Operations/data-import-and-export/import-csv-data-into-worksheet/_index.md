@@ -4,7 +4,7 @@ second_title: "Aspose.Cells Cloud Document"
 linktitle: "Import csv data"
 type: docs
 url: /import-csv-data-into-excel-worksheet/
-aliases: [/import-csv-data-into-excel-worksheet/, /import-csv-data-into-worksheet/,/import-data/csv-data/,/import/csv-data/]
+aliases: [/import-csv-data-into-worksheet/,/import-data/csv-data/,/import/csv-data/]
 keywords: "Import csv data into Excel files."
 description: "Aspose.Cells Cloud REST API support importing csv data into Excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 19
