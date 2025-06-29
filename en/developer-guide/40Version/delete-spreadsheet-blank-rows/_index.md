@@ -10,7 +10,7 @@ weight: 100
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
 ---
 
-# **Excel API : DeleteSpreadsheetBlankRows **
+# **Excel API : DeleteSpreadsheetBlankRows**
 
 Delete all blank rows which do not contain any data or other object. 
 
