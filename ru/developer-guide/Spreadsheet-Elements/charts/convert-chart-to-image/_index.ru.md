@@ -2,21 +2,21 @@
 title: Преобразовать диаграмму в изображение
 type: docs
 url: /ru/charts/to-image/
-aliases: [/convert-chart-to-image/]
+aliases: [/convert-charts-to-image/]
 weight: 50
 kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Преобразование диаграммы в изображение
 ---
 Этот REST API показывает, как преобразовать диаграмму в изображение.
- 
+
 ## РЕТ API
- 
+
 ```bash
- 
+
 GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartNumber}?format={format}
- 
+
 ```
  Параметры запроса:
- 
+
 | Имя параметра| Тип| Путь/Строка запроса/HTTPBody|Описание|
 |:- |:- |:- |:- |
 | имя| нить| путь| Название документа.|
@@ -25,44 +25,44 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{cha
 | формат| нить| запрос| Формат экспортированного файла.|
 | папка| нить| запрос| Папка с документами.|
 | имя_хранилища| нить| запрос| имя хранилища.|
- 
+
  The[Спецификация OpenAPI](https://apireference.aspose.cloud/cells/#/Charts/GetWorksheetChart) определяет общедоступный программный интерфейс и позволяет выполнять REST-взаимодействия непосредственно из веб-браузера.
- 
+
 Вы можете использовать командную строку cURL для легкого доступа к веб-сервисам Aspose.Cells. В следующем примере показано, как совершать вызовы в облако API с помощью cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
- 
+
 {{< tab tabNum="11" >}}
- 
+
 ```bash
 
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0?format=jpg" 
--X GET 
+curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0?format=jpg"
+-X GET
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
+
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="12" >}}
- 
+
 ```bash
 byte[]
- 
+
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
+
 ## Семейство облачных SDK
- 
+
  Использование SDK — лучший способ ускорить разработку. SDK заботится о низкоуровневых деталях и позволяет вам сосредоточиться на задачах вашего проекта. Пожалуйста, ознакомьтесь с[Репозиторий GitHub](https://github.com/aspose-cells-cloud) для полного списка Aspose.Cells Cloud SDK.
- 
+
 В следующих примерах кода показано, как выполнять вызовы веб-служб Aspose.Cells с использованием различных SDK:
-  
+
 
 {{< tabs tabTotal="9" tabID="4" tabName1="C#" tabName2="PHP" tabName3="Ruby" tabName4="Node.js" tabName5="Python" tabName6="Android" tabName7="Objective C" tabName8="Perl" tabName9="Go" >}}
 

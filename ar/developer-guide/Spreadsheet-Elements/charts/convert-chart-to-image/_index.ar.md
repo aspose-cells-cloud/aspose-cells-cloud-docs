@@ -2,21 +2,21 @@
 title: تحويل الرسم البياني إلى صورة
 type: docs
 url: /ar/charts/to-image/
-aliases: [/convert-chart-to-image/]
+aliases: [/convert-charts-to-image/]
 weight: 50
 kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، تحويل الرسم البياني إلى صورة
 ---
 يشير هذا REST API إلى كيفية تحويل مخطط إلى صورة.
- 
+
 ## RSET API
- 
+
 ```bash
- 
+
 GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartNumber}?format={format}
- 
+
 ```
  معلمات الطلب هي:
- 
+
 | اسم المعلمة| يكتب| المسار/سلسلة الاستعلام/نص HTTP|وصف|
 |:- |:- |:- |:- |
 | اسم| خيط| طريق| اسم الوثيقة.|
@@ -25,44 +25,44 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{cha
 | شكل| خيط| استفسار| تنسيق الملف المُصدَّر.|
 | مجلد| خيط| استفسار| مجلد المستندات.|
 | اسم التخزين| خيط| استفسار| اسم التخزين.|
- 
+
  ال[مواصفات OpenAPI](https://apireference.aspose.cloud/cells/#/Charts/GetWorksheetChart) يحدد واجهة برمجة يمكن الوصول إليها بشكل عام ويسمح لك بتنفيذ تفاعلات REST مباشرة من متصفح الويب.
- 
+
 يمكنك استخدام أداة سطر الأوامر cURL للوصول بسهولة إلى خدمات الويب Aspose.Cells. يوضح المثال التالي كيفية إجراء مكالمات إلى Cloud API باستخدام cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
- 
+
 {{< tab tabNum="11" >}}
- 
+
 ```bash
 
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0?format=jpg" 
--X GET 
+curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0?format=jpg"
+-X GET
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
+
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="12" >}}
- 
+
 ```bash
 byte[]
- 
+
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
+
 ## عائلة SDK السحابية
- 
+
  يُعد استخدام حزمة تطوير برمجيات (SDK) أفضل طريقة لتسريع عملية التطوير. فهي تُعنى بالتفاصيل البسيطة وتُتيح لك التركيز على مهام مشروعك. يُرجى الاطلاع على[مستودع GitHub](https://github.com/aspose-cells-cloud) للحصول على قائمة كاملة بـ Aspose.Cells Cloud SDKs.
- 
+
 توضح أمثلة التعليمات البرمجية التالية كيفية إجراء مكالمات إلى خدمات الويب Aspose.Cells باستخدام مجموعات أدوات تطوير البرامج المختلفة:
-  
+
 
 {{< tabs tabTotal="9" tabID="4" tabName1="C#" tabName2="PHP" tabName3="Ruby" tabName4="Node.js" tabName5="Python" tabName6="Android" tabName7="Objective C" tabName8="Perl" tabName9="Go" >}}
 

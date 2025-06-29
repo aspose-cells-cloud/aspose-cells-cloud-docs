@@ -2,21 +2,21 @@
 title: Convertir gráfico a imagen
 type: docs
 url: /es/charts/to-image/
-aliases: [/convert-chart-to-image/]
+aliases: [/convert-charts-to-image/]
 weight: 50
 kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Convertir gráfico a imagen
 ---
 Este REST API indica cómo convertir un gráfico a imagen.
- 
+
 ## RSET API
- 
+
 ```bash
- 
+
 GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartNumber}?format={format}
- 
+
 ```
  Los parámetros de la solicitud son:
- 
+
 | Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
 |:- |:- |:- |:- |
 | nombre| cadena| camino| Nombre del documento.|
@@ -25,44 +25,44 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{cha
 | formato| cadena| consulta| El formato del archivo exportado.|
 | carpeta| cadena| consulta| La carpeta de documentos.|
 | nombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
- 
+
  El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Charts/GetWorksheetChart) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
- 
+
 Puede usar la herramienta de línea de comandos cURL para acceder fácilmente a los servicios web Aspose.Cells. El siguiente ejemplo muestra cómo realizar llamadas a Cloud API con cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
- 
+
 {{< tab tabNum="11" >}}
- 
+
 ```bash
 
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0?format=jpg" 
--X GET 
+curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0?format=jpg"
+-X GET
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
+
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="12" >}}
- 
+
 ```bash
 byte[]
- 
+
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
+
 ## Familia de SDK en la nube
- 
+
  Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
- 
+
 Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
-  
+
 
 {{< tabs tabTotal="9" tabID="4" tabName1="C#" tabName2="PHP" tabName3="Ruby" tabName4="Node.js" tabName5="Python" tabName6="Android" tabName7="Objective C" tabName8="Perl" tabName9="Go" >}}
 

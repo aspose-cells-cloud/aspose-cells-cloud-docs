@@ -2,21 +2,21 @@
 title: 将图表转换为图像
 type: docs
 url: /zh/charts/to-image/
-aliases: [/convert-chart-to-image/]
+aliases: [/convert-charts-to-image/]
 weight: 50
 kwords: Excel, Office 云, REST API, 电子表格, PDF, CSV, Json, Markdown, 将图表转换为图像
 ---
 此 REST API 指示如何将图表转换为图像。
- 
+
 ## 重新设置 API
- 
+
 ```bash
- 
+
 GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartNumber}?format={format}
- 
+
 ```
 请求参数为：
- 
+
 |参数名称|类型|路径/查询字符串/HTTPBody|描述|
 |:- |:- |:- |:- |
 |姓名|细绳|小路|文档名称。|
@@ -25,44 +25,44 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{cha
 |格式|细绳|询问|导出的文件格式。|
 |文件夹|细绳|询问|文件夹。|
 |存储名称|细绳|询问|存储名称。|
- 
+
 这[OpenAPI规范](https://apireference.aspose.cloud/cells/#/Charts/GetWorksheetChart)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
- 
+
 您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
- 
+
 {{< tab tabNum="11" >}}
- 
+
 ```bash
 
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0?format=jpg" 
--X GET 
+curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0?format=jpg"
+-X GET
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
+
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="12" >}}
- 
+
 ```bash
 byte[]
- 
+
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
+
 ## Cloud SDK 系列
- 
+
 使用 SDK 是加速开发的最佳方式。SDK 负责处理底层细节，让您专注于项目任务。请查看[GitHub 存储库](https://github.com/aspose-cells-cloud)以获取 Aspose.Cells Cloud SDKs 的完整列表。
- 
+
 以下代码示例演示了如何使用各种 SDK 调用 Aspose.Cells Web 服务：
-  
+
 
 {{< tabs tabTotal="9" tabID="4" tabName1="C#" tabName2="PHP" tabName3="Ruby" tabName4="Node.js" tabName5="Python" tabName6="Android" tabName7="Objective C" tabName8="Perl" tabName9="Go" >}}
 
