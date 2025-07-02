@@ -1,5 +1,6 @@
 ---
 title: "Aspose.Cells Cloud Web API Documentation | Quick Integration Guide | Developer Center"
+linktitle: "Developer Center"
 type: docs
 url: /
 description: "Aspose.Cells Cloud Spreadsheet/Excel Web APIs support Excel to create, convert, merge, split, protect, and perform inner object operations, among other functions.  Aspose.Cells Cloud provides a complete document, Spreadsheet Web API that supports RESTful interfaces, including authentication, endpoints, parameter descriptions, and code examples to help developers quickly integrate."
@@ -18,7 +19,6 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, As
 - **[Delete Spreadsheet blank columns](https://docs.aspose.cloud/cells/delete-spreadsheet-blank-columns/)**
 - **[Replace Spreadsheet content](https://docs.aspose.cloud/cells/replace-spreadsheet-content/)**
 
-
 ## **Quick Start**
 
 - **[Register Aspose Cloud Account](id.containerize.com/login)**
@@ -28,15 +28,16 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, As
   - [.Net - NuGet](https://www.nuget.org/packages/Aspose.cells-Cloud/#readme-body-tab)
   - [Python - pip](https://pypi.org/project/asposecellscloud/)
   - [Node.JS - npm](https://www.npmjs.com/package/asposecellscloud)
-  - [PHP - Composer](https://packagist.org/packages/aspose/cells-sdk-php), 
+  - [PHP - Composer](https://packagist.org/packages/aspose/cells-sdk-php),
   - [GoLang - Go Modules](https://pkg.go.dev/github.com/aspose-cells-cloud/aspose-cells-cloud-go/v25)
   - [Ruby - RubyGems](https://rubygems.org/gems/aspose_cells_cloud)
-  - [Perl - CPAN](https://metacpan.org/dist/AsposeCellsCloud-CellsApi) 
+  - [Perl - CPAN](https://metacpan.org/dist/AsposeCellsCloud-CellsApi)
   - **API Endpoint**: [Aspose.Cells Cloud Spreadsheet Web API Reference](https://reference.aspose.cloud/cells/)
 
-##  **Code & Example**
+## **Code & Example**
 
 Discover Cells Cloud SDKs on GitHub for free. Access open-source code and extensive use case examples:
+
 - [Java SDK repository on Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java)
 - [.NET SDK repository on Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet)
 - [Python SDK repository on Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-python)
