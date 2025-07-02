@@ -3,7 +3,7 @@ title: What's new in Aspose.Cells Cloud
 second_title: "Latest Updates & Features"
 linktitle: "What's new"
 type: docs
-weight: 5
+weight: 9
 url: /new-features/
 aliases: [/what-s-new-in-aspose-cells-cloud/]
 keywords: "What's new in aspose cells cloud. Microsoft Office Excel, Open Office Spreadsheet, CSV, PDF."

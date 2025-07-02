@@ -3,7 +3,7 @@ title: "Welcome To Learn Aspose.Cells Cloud"
 type: docs
 url: /learn-aspose-cells-cloud
 description: "Welcome to learn Aspose.Cells Cloud."
-weight: 10
+weight: 5
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Welcome To Learn Aspose.Cells Cloud
 ---
 
