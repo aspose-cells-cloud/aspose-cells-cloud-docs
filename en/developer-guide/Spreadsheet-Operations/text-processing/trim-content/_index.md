@@ -1,7 +1,7 @@
 ---
 title: "Trim content: Fix Excel Spaces & Line Breaks"
 second_title: "Aspose.Cells Cloud Document"
-linktitle: "Trim content"
+linktitle: "Trim Content"
 type: docs
 url: /spreadsheet-trim-content/ 
 keywords: ""
