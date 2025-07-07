@@ -1,7 +1,7 @@
 ---
-title: What's new in Aspose.Cells Cloud
+title: What's new in Aspose.Cells Cloud in 2024
 second_title: "Latest Updates & Features"
-linktitle: "What's new"
+linktitle: "What's new in 2024"
 type: docs
 weight: 20
 url: /new-features/2024/

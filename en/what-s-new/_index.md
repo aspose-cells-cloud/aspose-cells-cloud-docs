@@ -34,7 +34,7 @@ Welcome to what's new in Aspose.Cells Cloud docs. Use this page to quickly find 
 
 # Historical Releases
 
-- [2025 Release](/new-features/2025/)
-- [2024 Release](/new-features/2024/)
-- [2023 Release](/new-features/2023/)
-- [2022 Release](/new-features/2022/)
+- [2025 Release](/cells/new-features/2025/)
+- [2024 Release](/cells/new-features/2024/)
+- [2023 Release](/cells/new-features/2023/)
+- [2022 Release](/cells/new-features/2022/)
