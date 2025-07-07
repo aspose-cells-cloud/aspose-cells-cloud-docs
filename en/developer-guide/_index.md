@@ -1,6 +1,7 @@
 ---
 title: "Developer Guide: Conversion, Merge, Split, Protect, Search, Replace, Transform"
 second_title: "Aspose.Cells Cloud Document"
+linktitle: "Developer Guide"
 type: docs
 url: /developer-guide/
 aliases: [/developer-guide-v4.0/]

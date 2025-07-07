@@ -1,7 +1,7 @@
 ---
 title: "Spreadsheet data processing: merge, split."
 second_title: "Aspose.Cells Cloud Document"
-linktitle: "data processing"
+linktitle: "Data Processing"
 type: docs
 url: /data-processing/
 keywords: "How to use Aspose.Cells Cloud REST APIs. Spreadsheet data processing: merge, split. Office Excel 2016,  Office Excel 2019,office Excel 365."

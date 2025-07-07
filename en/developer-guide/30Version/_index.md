@@ -1,5 +1,5 @@
 ---
-title: "Developer Guide"
+title: "Developer Guide 3.0"
 second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /developer-guide-3.0/
