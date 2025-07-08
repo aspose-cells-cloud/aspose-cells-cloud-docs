@@ -45,7 +45,7 @@ curl -v "https://api.aspose.cloud/v4.0/cells/convert/spreadsheet?format=PDF" \
 -F "File=@input.xlsx"
 ```
 
-### **  
+### **Execute Spreadsheet API using SDK**  
 
 ```python
 # Python SDK example

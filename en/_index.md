@@ -21,8 +21,20 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, As
 
 ## **Quick Start**
 
-- **[Register Aspose Cloud Account](id.containerize.com/login)**
+### Step 1: **Get API Credentials**  
+
+- **[Register Aspose Cloud Account](https://dashboard.aspose.cloud/signup)**
 - **[Get Client Credentials](https://dashboard.aspose.cloud/#/applications)**
+
+### Step 2: **Call Conversion API**  
+
+```C#
+    CellsApi cellsApi = new CellsApi(Environment.GetEnvironmentVariable("ProductClientId"), Environment.GetEnvironmentVariable("ProductClientSecret"));
+    cellsApi.ConvertSpreadsheet(new ConvertSpreadsheetRequest { Spreadsheet = "EmployeeSalesSummary.xlsx", format = "pdf" }, "EmployeeSalesSummary.pdf");
+```
+
+## **Available SDKs**
+
 - **Select the appropriate SDK or [call the REST endpoint directly](https://reference.aspose.cloud/cells/)**
   - [Java - Maven](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java/blob/master/Aspose.Cells.Cloud.pom.xml)
   - [.Net - NuGet](https://www.nuget.org/packages/Aspose.cells-Cloud/#readme-body-tab)
