@@ -11,8 +11,6 @@ description: "This page describes the most interesting new Aspose.Cells Cloud fe
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, What's new in Aspose.Cells Cloud
 ---
 
-Welcome to what's new in Aspose.Cells Cloud docs. Use this page to quickly find the latest changes.
-
 # Most Important Release
 
 - **The latest version of Aspose.Cells Cloud 4.0 is now available. This release has been redesigned to be more streamlined and efficient, ensuring a stable and reliable experience.**
