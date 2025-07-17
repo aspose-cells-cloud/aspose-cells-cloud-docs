@@ -1,6 +1,6 @@
 ---
 title: "How to merge multiple files through Aspose.Cells Cloud"
-linktitle: "How to merge multiple filess"
+linktitle: "How to merge multiple files"
 type: docs
 url: /how-to-merge-multiple-files
 description: "How to merge multiple files through Aspose.Cells Cloud."
