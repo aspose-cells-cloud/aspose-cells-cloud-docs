@@ -10,7 +10,7 @@ weight: 100
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
 ---
 
-# **Excel API : MergeSpreadsheetsInRemoteFolder **
+# **Excel API : MergeSpreadsheetsInRemoteFolder**
 
 Merge spreadsheet files in folder of cloud storage into a specified format file. 
 

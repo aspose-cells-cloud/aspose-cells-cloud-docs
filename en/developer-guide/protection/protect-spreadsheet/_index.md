@@ -10,7 +10,7 @@ weight: 100
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
 ---
 
-# **Excel API : ProtectSpreadsheet **
+# **Excel API : ProtectSpreadsheet**
 
 Applies dual-layer password protection to Excel spreadsheets, supporting both open and modify passwords with encryption. 
 

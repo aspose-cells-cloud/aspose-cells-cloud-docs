@@ -10,7 +10,7 @@ weight: 100
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
 ---
 
-# **Excel API : SearchBrokenLinksInRemoteWorksheet **
+# **Excel API : SearchBrokenLinksInRemoteWorksheet**
 
 Search broken links in the worksheet of remoted spreadsheet. 
 

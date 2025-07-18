@@ -10,7 +10,7 @@ weight: 100
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
 ---
 
-# **Excel API : ExportTableAsFormat **
+# **Excel API : ExportTableAsFormat**
 
 Converts a table of spreadsheet in cloud storage to the specified format. 
 

@@ -10,7 +10,7 @@ weight: 100
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
 ---
 
-# **Excel API : ConvertRangeToCsv **
+# **Excel API : ConvertRangeToCsv**
 
 Converts a range of spreadsheet on a local drive to the csv file. 
 

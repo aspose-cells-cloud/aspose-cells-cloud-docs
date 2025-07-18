@@ -10,7 +10,7 @@ weight: 100
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
 ---
 
-# **Excel API : SplitRemoteSpreadsheet **
+# **Excel API : SplitRemoteSpreadsheet**
 
 Split a spreadsheet in cloud storage into the specified format, multi-file. 
 

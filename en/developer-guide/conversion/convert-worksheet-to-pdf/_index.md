@@ -10,7 +10,7 @@ weight: 100
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
 ---
 
-# **Excel API : ConvertWorksheetToPdf **
+# **Excel API : ConvertWorksheetToPdf**
 
 Converts a worksheet of spreadsheet on a local drive to the pdf file. 
 
