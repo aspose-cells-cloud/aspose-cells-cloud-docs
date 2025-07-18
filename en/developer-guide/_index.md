@@ -11,11 +11,8 @@ weight: 20
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Developer Guide
 ---
 
-## Reconstructing Cells Cloud 4.0: Simplifying the WEB API
 
-To address these challenges and enhance user experience, we have reconstructed Cells Cloud 4.0 with a focus on Functionality Singularization and API Simplification the WEB API.
-
-Core Features:
+## **Core Features**
 
 - **[Convert Spreadsheet to PDF file](https://docs.aspose.cloud/cells/convert-excel-file-to-pdf-file/)**
 - **[Convert Spreadsheet Chart to Image](https://docs.aspose.cloud/cells/convert-chart-to-image/)**
@@ -27,7 +24,6 @@ Core Features:
 - **[Delete Spreadsheet blank rows](https://docs.aspose.cloud/cells/delete-spreadsheet-blank-rows/)**
 - **[Delete Spreadsheet blank columns](https://docs.aspose.cloud/cells/delete-spreadsheet-blank-columns/)**
 - **[Replace Spreadsheet content](https://docs.aspose.cloud/cells/replace-spreadsheet-content/)**
-
 
 ## **Code & Example**
 
