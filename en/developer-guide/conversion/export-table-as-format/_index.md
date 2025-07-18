@@ -19,7 +19,7 @@ Converts a table of spreadsheet in cloud storage to the specified format.
 ### **Endpoint** 
 
 ```
-GET http://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/tables/{tablename}
+GET http://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/tables/{tableName}
 ```
 
 ### **Function Description**
@@ -32,7 +32,7 @@ This method processes a table of spreadsheet directly in cloud storage, converti
 | :- | :- | :- |:- | 
 |name|String|Path|(Required) The name of the workbook file to be retrieved.|
 |worksheet|String|Path|worksheet name|
-|tablename|String|Path|table name|
+|tableName|String|Path|table name|
 |format|String|Query|(Required) The desired format  (e.g., "png", "Pdf", "svg").|
 |folder|String|Query|(Optional) The folder path where the workbook is stored. The default is null.|
 |storageName|String|Query|(Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.|
