@@ -12,6 +12,20 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Wh
 
 Welcome to what's new in Aspose.Cells Cloud docs. Use this page to quickly find the latest changes.
 
+## Feature & Enhancements in Version 25.6
+
+|**ID**|**Summary**|**Category**|
+| :- | :- | :- |
+| 55222 | Fix the bug about uploading multi-files in Swagger UI. | Bug |
+| 55335 | Optimize convert range to image. | Improvement |
+| 55370 | Fix the bug for replacing text in a local file on cells cloud 4.0. | Bug |
+| 55374 | Fix the bug about uploading multi-files in Swagger UI. | Bug |
+| 55440 | Unable to convert chart to svg format image | Bug |
+| 55539 | Support delete blank rows, columns, and worksheets. | New Feature |
+| 55540 | Optimize search context for remote spreadsheet features by splitting them into independent APIs, each dedicated to a specific operational area. | New Feature |
+| 55541 | Optimize search broken links for remote spreadsheet features by splitting them into independent APIs, each dedicated to a specific operational area. | New Feature |
+| 55542 | Optimize replace context for remote spreadsheet features by splitting them into independent APIs, each dedicated to a specific operational area. | New Feature |
+
 ## Feature & Enhancements in Version 25.5
 
 |**ID**|**Summary**|**Category**|

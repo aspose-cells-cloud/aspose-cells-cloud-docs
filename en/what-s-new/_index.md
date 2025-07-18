@@ -20,15 +20,11 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Wh
 
 |**ID**|**Summary**|**Category**|
 | :- | :- | :- |
-| 55222 | Fix the bug about uploading multi-files in Swagger UI. | Bug |
-| 55335 | Optimize convert range to image. | Improvement |
-| 55370 | Fix the bug for replacing text in a local file on cells cloud 4.0. | Bug |
-| 55374 | Fix the bug about uploading multi-files in Swagger UI. | Bug |
-| 55440 | Unable to convert chart to svg format image | Bug |
-| 55539 | Support delete blank rows, columns, and worksheets. | New Feature |
-| 55540 | Optimize search context for remote spreadsheet features by splitting them into independent APIs, each dedicated to a specific operational area. | New Feature |
-| 55541 | Optimize search broken links for remote spreadsheet features by splitting them into independent APIs, each dedicated to a specific operational area. | New Feature |
-| 55542 | Optimize replace context for remote spreadsheet features by splitting them into independent APIs, each dedicated to a specific operational area. | New Feature |
+| 55754 | Trimming the entire workbook failed. | Bug
+| 55755 | Updating word case of the entire workbook failed. | Bug
+| 55930 | Add protect/unprotect spreadsheet features.  | New Feature
+| 55931 | Add convert worksheet/table/range to other formats. | New Feature
+| 56088 | Optimize operate scope options for TextProcessingController. | Improvement
 
 # Historical Releases
 
