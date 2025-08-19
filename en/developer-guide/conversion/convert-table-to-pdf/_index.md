@@ -12,21 +12,27 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Ma
 
 # **Excel API : ConvertTableToPdf**
 
+## **Overview**
+
 Converts a table of spreadsheet on a local drive to the pdf file. 
 
-## **Interface Details**
+## **Function Description**
 
-### **Endpoint** 
+This method reads a spreadsheet file from the local file system, converts it's table to the desired pdf file, and returns the converted result. 
+The source file path and target format must be specified correctly. 
+Ensure that the necessary permissions are in place to read the source file and write the converted file if applicable. 
+The conversion process occurs entirely on the cloud server, eliminating the need for any cloud storage or external downloads. 
+If the source file does not exist, is inaccessible, or if an error occurs during the conversion process, an appropriate exception will be thrown. 
+Supported formats for conversion depend on the available libraries and their capabilities.
 
-```
+
+## **API Endpoint** 
+
+```http
 PUT http://api.aspose.cloud/v4.0/cells/convert/table/pdf
 ```
 
-### **Function Description**
-
-This method reads a spreadsheet file from the local file system, converts it's table to the desired pdf file, and returns the converted result.The source file path and target format must be specified correctly.Ensure that the necessary permissions are in place to read the source file and write the converted file if applicable.The conversion process occurs entirely on the cloud server, eliminating the need for any cloud storage or external downloads.If the source file does not exist, is inaccessible, or if an error occurs during the conversion process, an appropriate exception will be thrown.Supported formats for conversion depend on the available libraries and their capabilities.
-
-### The request parameters of **convertTableToPdf** API are: 
+## The request parameters of **convertTableToPdf** API are: 
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
@@ -40,12 +46,28 @@ This method reads a spreadsheet file from the local file system, converts it's t
 |password|String|Query|The password for opening spreadsheet file.|
 
 
-### **Response Description**
+## **Response Structure**
+
 ```json
 {
 File
 }
 ```
+
+## Error Handling
+
+- **400 Bad Request**: Invalid url.
+- **401 Unauthorized**:  Authentication has failed, or no credentials were provided.
+- **404 Not Found**: Source file not accessible.
+- **500 Server Error** The spreadsheet has encountered an anomaly in obtaining conversion data.
+
+
+## Usage Scenarios
+## Key Features and Benefits
+
+- **Cloud-Native Conversion**: Conversion of local files directly in the cloud, eliminating the need to store them there.
+- **Reduced Cloud Resource Burden**: No need to upload files to the cloud, saving cloud storage space.
+- **Simplified Workflow**: Convert local spreadsheets to the pdf format directly through cloud services, without intermediate steps.
 
 ## OpenAPI Specification
 

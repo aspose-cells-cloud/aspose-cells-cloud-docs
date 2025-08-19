@@ -12,21 +12,27 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Ma
 
 # **Excel API : MergeSpreadsheets**
 
+## **Overview**
+
 Merge local spreadsheet files into a specified format file. 
 
-## **Interface Details**
+## **Function Description**
 
-### **Endpoint** 
+This method combines multiple spreadsheet files from the local file system into a single output file in the specified format (e.g., XLSX, CSV, PDF). 
+All input files must be accessible and in a supported format for the merge operation to succeed. 
+The merged content is processed cloudly, without requiring cloud storage. 
+Ensure proper file permissions are granted for reading the source files and writing the output file. 
+If any of the files cannot be accessed or an error occurs during the merging process, an appropriate exception will be thrown. 
+The final output format can be configured based on available conversion and export capabilities.
 
-```
+
+## **API Endpoint** 
+
+```http
 PUT http://api.aspose.cloud/v4.0/cells/merge/spreadsheet
 ```
 
-### **Function Description**
-
-This method combines multiple spreadsheet files from the local file system into a single output file in the specified format (e.g., XLSX, CSV, PDF).All input files must be accessible and in a supported format for the merge operation to succeed.The merged content is processed cloudly, without requiring cloud storage.Ensure proper file permissions are granted for reading the source files and writing the output file.If any of the files cannot be accessed or an error occurs during the merging process, an appropriate exception will be thrown.The final output format can be configured based on available conversion and export capabilities.
-
-### The request parameters of **mergeSpreadsheets** API are: 
+## The request parameters of **mergeSpreadsheets** API are: 
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
@@ -40,12 +46,28 @@ This method combines multiple spreadsheet files from the local file system into 
 |password|String|Query|The password for opening spreadsheet file.|
 
 
-### **Response Description**
+## **Response Structure**
+
 ```json
 {
 File
 }
 ```
+
+## Error Handling
+
+- **400 Bad Request**: Invalid url.
+- **401 Unauthorized**:  Authentication has failed, or no credentials were provided.
+- **404 Not Found**: Source file not accessible.
+- **500 Server Error** The spreadsheet has encountered an anomaly in obtaining data.
+
+
+## Usage Scenarios
+## Key Features and Benefits
+
+- **Local File Merge:**: Combines multiple local spreadsheet files into a single output file in the specified format (e.g., XLSX, CSV, PDF).
+- **Efficient Data Handling**: Processes the merge operation in the cloud without requiring cloud storage.Merges multiple files into a single output file efficiently, leveraging cloud processing capabilities.
+- **Format Flexibility**: Supports a range of output formats based on the available conversion and export capabilities.
 
 ## OpenAPI Specification
 

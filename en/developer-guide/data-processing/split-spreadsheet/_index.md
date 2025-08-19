@@ -12,21 +12,28 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Ma
 
 # **Excel API : SplitSpreadsheet**
 
+## **Overview**
+
 Split a local spreadsheet into the specified format, multi-file. 
 
-## **Interface Details**
+## **Function Description**
 
-### **Endpoint** 
+This method splits a single local spreadsheet file into multiple output files in the specified format (e.g., XLSX, CSV, PDF). 
+Each split file may represent different sheets, sections, or segments of the original document based on user-defined criteria. 
+The operation is performed cloudly, requiring no cloud storage. 
+Ensure that you have the necessary permissions to read the source file and write the resulting files. 
+If the source file cannot be accessed or if an error occurs during the splitting process, an appropriate exception will be thrown. 
+Supported formats for output depend on the available libraries and their capabilities. 
+Users should specify clear criteria for how the input file should be divided to ensure accurate results.
 
-```
+
+## **API Endpoint** 
+
+```http
 PUT http://api.aspose.cloud/v4.0/cells/split/spreadsheet
 ```
 
-### **Function Description**
-
-This method splits a single local spreadsheet file into multiple output files in the specified format (e.g., XLSX, CSV, PDF).Each split file may represent different sheets, sections, or segments of the original document based on user-defined criteria.The operation is performed cloudly, requiring no cloud storage.Ensure that you have the necessary permissions to read the source file and write the resulting files.If the source file cannot be accessed or if an error occurs during the splitting process, an appropriate exception will be thrown.Supported formats for output depend on the available libraries and their capabilities.Users should specify clear criteria for how the input file should be divided to ensure accurate results.
-
-### The request parameters of **splitSpreadsheet** API are: 
+## The request parameters of **splitSpreadsheet** API are: 
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
@@ -41,12 +48,28 @@ This method splits a single local spreadsheet file into multiple output files in
 |password|String|Query|The password for opening spreadsheet file.|
 
 
-### **Response Description**
+## **Response Structure**
+
 ```json
 {
 File
 }
 ```
+
+## Error Handling
+
+- **400 Bad Request**: Invalid url.
+- **401 Unauthorized**:  Authentication has failed, or no credentials were provided.
+- **404 Not Found**: Source file not accessible.
+- **500 Server Error** The spreadsheet has encountered an anomaly in obtaining data.
+
+
+## Usage Scenarios
+## Key Features and Benefits
+
+- **Local File Splitting**: Splits a single local spreadsheet file into multiple output files in the specified format (e.g., XLSX, CSV, PDF).
+- **Cloud-Based Processing**: Performs the splitting operation in the cloud, without requiring cloud storage.
+- **Enhanced Performance**: Processes the file in the cloud, reducing the need for local processing and improving performance.
 
 ## OpenAPI Specification
 

@@ -12,21 +12,26 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Ma
 
 # **Excel API : SaveSpreadsheetAs**
 
+## **Overview**
+
 Converts a spreadsheet in cloud storage to the specified format. 
 
-## **Interface Details**
+## **Function Description**
 
-### **Endpoint** 
+This method accesses a spreadsheet file directly from cloud storage, converts it into the desired output format (e.g., XLSX, PDF, CSV), and returns the converted result without downloading the file to the local system. 
+Ensure that the cloud storage configuration (such as access credentials and file path) is correctly set up. 
+The conversion process happens entirely within the cloud environment, minimizing data transfer overhead and enhancing security by keeping sensitive data within the cloud infrastructure. 
+If the source file does not exist, or if an error occurs during the conversion process, an appropriate exception will be thrown. 
+Supported output formats depend on the underlying conversion service capabilities.
 
-```
+
+## **API Endpoint** 
+
+```http
 PUT http://api.aspose.cloud/v4.0/cells/{name}/saveas
 ```
 
-### **Function Description**
-
-This method accesses a spreadsheet file directly from cloud storage, converts it into the desired output format (e.g., XLSX, PDF, CSV), and returns the converted result without downloading the file to the local system.Ensure that the cloud storage configuration (such as access credentials and file path) is correctly set up.The conversion process happens entirely within the cloud environment, minimizing data transfer overhead and enhancing security by keeping sensitive data within the cloud infrastructure.If the source file does not exist, or if an error occurs during the conversion process, an appropriate exception will be thrown.Supported output formats depend on the underlying conversion service capabilities.
-
-### The request parameters of **saveSpreadsheetAs** API are: 
+## The request parameters of **saveSpreadsheetAs** API are: 
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
@@ -42,7 +47,8 @@ This method accesses a spreadsheet file directly from cloud storage, converts it
 |password|String|Query|The password for opening spreadsheet file.|
 
 
-### **Response Description**
+## **Response Structure**
+
 ```json
 {
   "Name": "CellsCloudResponse",
@@ -72,6 +78,21 @@ This method accesses a spreadsheet file directly from cloud storage, converts it
   ]
 }
 ```
+
+## Error Handling
+
+- **400 Bad Request**: Invalid url.
+- **401 Unauthorized**:  Authentication has failed, or no credentials were provided.
+- **404 Not Found**: Source file not accessible.
+- **500 Server Error** The spreadsheet has encountered an anomaly in obtaining conversion data.
+
+
+## Usage Scenarios
+## Key Features and Benefits
+
+- **Cloud-Based Conversion**: Directly accesses and converts spreadsheet files in cloud storage to desired formats (e.g., XLSX, PDF, CSV).
+- **Efficient Data Handling**: Minimizes data transfer by performing conversions remotely.Enhances security by keeping sensitive data within the cloud infrastructure.
+- **Convenience**: Simplifies the conversion process by handling everything in the cloud.
 
 ## OpenAPI Specification
 

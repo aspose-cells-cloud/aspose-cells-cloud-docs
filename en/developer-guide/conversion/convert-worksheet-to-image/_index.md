@@ -12,21 +12,27 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Ma
 
 # **Excel API : ConvertWorksheetToImage**
 
+## **Overview**
+
 Converts a worksheet of spreadsheet on a local drive to the image format. 
 
-## **Interface Details**
+## **Function Description**
 
-### **Endpoint** 
+This method reads a spreadsheet file from the local file system, converts it's worksheet to the desired image format (e.g., svg, png, ...), and returns the converted result. 
+The source file path and target format must be specified correctly. 
+Ensure that the necessary permissions are in place to read the source file and write the converted file if applicable. 
+The conversion process occurs entirely on the cloud server, eliminating the need for any cloud storage or external downloads. 
+If the source file does not exist, is inaccessible, or if an error occurs during the conversion process, an appropriate exception will be thrown. 
+Supported formats for conversion depend on the available libraries and their capabilities.
 
-```
+
+## **API Endpoint** 
+
+```http
 PUT http://api.aspose.cloud/v4.0/cells/convert/worksheet/image
 ```
 
-### **Function Description**
-
-This method reads a spreadsheet file from the local file system, converts it's worksheet to the desired image format (e.g., svg, png, ...), and returns the converted result.The source file path and target format must be specified correctly.Ensure that the necessary permissions are in place to read the source file and write the converted file if applicable.The conversion process occurs entirely on the cloud server, eliminating the need for any cloud storage or external downloads.If the source file does not exist, is inaccessible, or if an error occurs during the conversion process, an appropriate exception will be thrown.Supported formats for conversion depend on the available libraries and their capabilities.
-
-### The request parameters of **convertWorksheetToImage** API are: 
+## The request parameters of **convertWorksheetToImage** API are: 
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
@@ -40,12 +46,29 @@ This method reads a spreadsheet file from the local file system, converts it's w
 |password|String|Query|The password for opening spreadsheet file.|
 
 
-### **Response Description**
+## **Response Structure**
+
 ```json
 {
 File
 }
 ```
+
+## Error Handling
+
+- **400 Bad Request**: Invalid url.
+- **401 Unauthorized**:  Authentication has failed, or no credentials were provided.
+- **404 Not Found**: Source file not accessible.
+- **500 Server Error** The spreadsheet has encountered an anomaly in obtaining conversion data.
+
+
+## Usage Scenarios
+## Key Features and Benefits
+
+- **Cloud-Native Conversion**: Conversion of local files directly in the cloud, eliminating the need to store them there.
+- **Reduced Cloud Resource Burden**: No need to upload files to the cloud, saving cloud storage space.
+- **Format Versatility**: Supports common output image formats (png, svg, tiff and so on).
+- **Simplified Workflow**: Convert local spreadsheets to the desired format directly through cloud services, without intermediate steps.
 
 ## OpenAPI Specification
 

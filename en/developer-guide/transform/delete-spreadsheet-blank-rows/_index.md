@@ -5,28 +5,33 @@ linktitle: "Delete spreadsheet blank rows"
 type: docs
 url: /delete-spreadsheet-blank-rows/
 keywords: ""
-description: "Delete all blank rows which do not contain any data or other object. "
+description: "Delete all blank rows that do not contain any data or other objects. "
 weight: 100
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
 ---
 
 # **Excel API : DeleteSpreadsheetBlankRows**
 
-Delete all blank rows which do not contain any data or other object. 
+## **Overview**
 
-## **Interface Details**
+Delete all blank rows that do not contain any data or other objects. 
 
-### **Endpoint** 
+## **Function Description**
 
-```
+This method removes rows from a spreadsheet that are completely empty, containing no data or objects. 
+It scans through all sheets and identifies rows where every cell is empty. 
+The operation is performed directly on the spreadsheet, ensuring that only rows with no content are deleted. 
+This helps in cleaning up the spreadsheet and removing unnecessary blank rows, making the data more organized and easier to manage. 
+Users should ensure that the spreadsheet is backed up before performing this operation, as deleted rows cannot be recovered. 
+
+
+## **API Endpoint** 
+
+```http
 PUT http://api.aspose.cloud/v4.0/cells/delete/blank-rows
 ```
 
-### **Function Description**
-
-- **Blank Row Identification**: This function identifies rows that do not contain any data or objects, ensuring thorough removal of unnecessary blank rows.- **Data Integrity**: By removing only truly empty rows, it maintains the integrity of your dataset, preventing accidental data loss.- **Usage**:- Ideal for cleaning large datasets where blank rows may interfere with data analysis or processing.- Enhances the readability and usability of spreadsheets by eliminating extraneous blank rows.
-
-### The request parameters of **deleteSpreadsheetBlankRows** API are: 
+## The request parameters of **deleteSpreadsheetBlankRows** API are: 
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
@@ -37,12 +42,29 @@ PUT http://api.aspose.cloud/v4.0/cells/delete/blank-rows
 |password|String|Query|The password for opening spreadsheet file.|
 
 
-### **Response Description**
+## **Response Structure**
+
 ```json
 {
 File
 }
 ```
+
+## Error Handling
+
+- **400 Bad Request**: Invalid url.
+- **401 Unauthorized**:  Authentication has failed, or no credentials were provided.
+- **404 Not Found**: Source file not accessible.
+- **500 Server Error** The spreadsheet has encountered an anomaly in obtaining data.
+
+
+## Usage Scenarios
+## Key Features and Benefits
+
+- **Blank Row Identification**: This function identifies rows that do not contain any data or objects, ensuring thorough removal of unnecessary blank rows.
+- **Data Integrity**: By removing only truly empty rows, it maintains the integrity of your dataset, preventing accidental data loss.
+- **Efficiency**: Enhances the readability and usability of spreadsheets by eliminating extraneous blank rows.
+- **Usage scenarios**: Ideal for cleaning large datasets where blank rows may interfere with data analysis or processing.
 
 ## OpenAPI Specification
 
