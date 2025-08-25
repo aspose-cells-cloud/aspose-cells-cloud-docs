@@ -18,7 +18,7 @@ Aspose.Cells Cloud offers the following key features to meet enterprise-level sp
 - **[Convert Spreadsheet Chart to Image](https://docs.aspose.cloud/cells/convert-chart-to-image/)**
 - **[Save Spreadsheet As](https://docs.aspose.cloud/cells/save-an-excel-file-as-other-formats-files/)**
 
-### **Data Organization**
+### **Data Processing**
 
 - **[Merge Spreadsheets](https://docs.aspose.cloud/cells/merge-spreadsheets/)**
 - **[Split Spreadsheets](https://docs.aspose.cloud/cells/split-spreadsheet/)**
