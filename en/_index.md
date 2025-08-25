@@ -26,7 +26,7 @@ Aspose.Cells Cloud offers the following key features to meet enterprise-level sp
 - **[Delete Spreadsheet blank columns](https://docs.aspose.cloud/cells/delete-spreadsheet-blank-columns/)**
 - **[Replace Spreadsheet content](https://docs.aspose.cloud/cells/replace-spreadsheet-content/)**
 
-## **Quick Start**
+## **[Quick Integration Guide](https://docs.aspose.cloud/cells/getting-started/)**
 
 ### Step 1: **Get API Credentials**  
 
