@@ -1,6 +1,6 @@
 ---
 title: "Add worksheet to spreadsheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Developer Guide"
 linktitle: "Add worksheet to spreadsheet"
 type: docs
 url: /add-worksheet-to-spreadsheet/

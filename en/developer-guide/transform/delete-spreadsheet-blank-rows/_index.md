@@ -1,6 +1,6 @@
 ---
 title: "Delete spreadsheet blank rows"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Developer Guide"
 linktitle: "Delete spreadsheet blank rows"
 type: docs
 url: /delete-spreadsheet-blank-rows/

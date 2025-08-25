@@ -1,6 +1,6 @@
 ---
 title: "Move worksheet in spreadsheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Developer Guide"
 linktitle: "Move worksheet in spreadsheet"
 type: docs
 url: /move-worksheet-in-spreadsheet/

@@ -1,6 +1,6 @@
 ---
 title: "Get files list"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Developer Guide"
 linktitle: "Get files list"
 type: docs
 url: /get-files-list/

@@ -1,6 +1,6 @@
 ---
 title: "Convert range to image"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Developer Guide"
 linktitle: "Convert range to image"
 type: docs
 url: /convert-range-to-image/

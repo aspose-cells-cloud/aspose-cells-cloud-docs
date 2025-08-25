@@ -1,6 +1,6 @@
 ---
 title: "Aggregate cells by color"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Developer Guide"
 linktitle: "Aggregate cells by color"
 type: docs
 url: /aggregate-cells-by-color/

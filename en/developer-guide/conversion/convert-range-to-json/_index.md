@@ -1,6 +1,6 @@
 ---
 title: "Convert range to json"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Developer Guide"
 linktitle: "Convert range to json"
 type: docs
 url: /convert-range-to-json/

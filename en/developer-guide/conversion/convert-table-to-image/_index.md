@@ -1,6 +1,6 @@
 ---
 title: "Convert table to image"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Developer Guide"
 linktitle: "Convert table to image"
 type: docs
 url: /convert-table-to-image/

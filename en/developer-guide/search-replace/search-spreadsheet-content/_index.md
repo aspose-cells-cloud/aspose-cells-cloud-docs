@@ -1,6 +1,6 @@
 ---
 title: "Search spreadsheet content"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Developer Guide"
 linktitle: "Search spreadsheet content"
 type: docs
 url: /search-spreadsheet-content/

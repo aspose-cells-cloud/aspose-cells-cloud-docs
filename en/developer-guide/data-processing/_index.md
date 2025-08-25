@@ -1,6 +1,6 @@
 ---
 title: "Spreadsheet data processing: merge, split."
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Developer Guide"
 linktitle: "Data Processing"
 type: docs
 url: /data-processing/

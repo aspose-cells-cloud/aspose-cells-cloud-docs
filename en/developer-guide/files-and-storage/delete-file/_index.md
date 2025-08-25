@@ -1,6 +1,6 @@
 ---
 title: "Delete file"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Developer Guide"
 linktitle: "Delete file"
 type: docs
 url: /delete-file/

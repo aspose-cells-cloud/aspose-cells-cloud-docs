@@ -1,6 +1,6 @@
 ---
 title: "Import data into spreadsheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Developer Guide"
 linktitle: "Import data into spreadsheet"
 type: docs
 url: /import-data-into-spreadsheet/

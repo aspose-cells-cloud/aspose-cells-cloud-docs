@@ -1,6 +1,6 @@
 ---
 title: "Merge spreadsheets"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Developer Guide"
 linktitle: "Merge spreadsheets"
 type: docs
 url: /merge-spreadsheets/

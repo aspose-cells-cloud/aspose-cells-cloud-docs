@@ -1,6 +1,6 @@
 ---
 title: "Convert worksheet to image"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Developer Guide"
 linktitle: "Convert worksheet to image"
 type: docs
 url: /convert-worksheet-to-image/

@@ -1,6 +1,6 @@
 ---
 title: "Transform Spreadsheet: Delete Empty Rows, Columns and worksheet."
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Developer Guide"
 linktitle: "Transform"
 type: docs
 url: /transform/

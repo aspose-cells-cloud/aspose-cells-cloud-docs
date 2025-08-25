@@ -1,6 +1,6 @@
 ---
 title: "Search broken links in remote worksheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Developer Guide"
 linktitle: "Search broken links in remote worksheet"
 type: docs
 url: /search-broken-links-in-remote-worksheet/

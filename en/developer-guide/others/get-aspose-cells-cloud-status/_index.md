@@ -1,6 +1,6 @@
 ---
 title: "Get aspose cells cloud status"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Developer Guide"
 linktitle: "Get aspose cells cloud status"
 type: docs
 url: /get-aspose-cells-cloud-status/

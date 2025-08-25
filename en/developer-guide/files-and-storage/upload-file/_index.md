@@ -1,6 +1,6 @@
 ---
 title: "Upload file"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Developer Guide"
 linktitle: "Upload file"
 type: docs
 url: /upload-file/

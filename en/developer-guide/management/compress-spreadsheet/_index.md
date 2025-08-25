@@ -1,6 +1,6 @@
 ---
 title: "Compress spreadsheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Developer Guide"
 linktitle: "Compress spreadsheet"
 type: docs
 url: /compress-spreadsheet/

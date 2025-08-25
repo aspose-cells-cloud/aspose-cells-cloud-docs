@@ -1,6 +1,6 @@
 ---
 title: "Convert range to html"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Developer Guide"
 linktitle: "Convert range to html"
 type: docs
 url: /convert-range-to-html/

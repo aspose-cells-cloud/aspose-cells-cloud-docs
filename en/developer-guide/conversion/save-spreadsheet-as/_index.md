@@ -1,6 +1,6 @@
 ---
 title: "Save spreadsheet as"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Developer Guide"
 linktitle: "Save spreadsheet as"
 type: docs
 url: /save-spreadsheet-as/

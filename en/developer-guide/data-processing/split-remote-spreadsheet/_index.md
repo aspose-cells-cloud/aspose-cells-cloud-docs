@@ -1,6 +1,6 @@
 ---
 title: "Split remote spreadsheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Developer Guide"
 linktitle: "Split remote spreadsheet"
 type: docs
 url: /split-remote-spreadsheet/

@@ -1,6 +1,6 @@
 ---
 title: "Export range as format"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Developer Guide"
 linktitle: "Export range as format"
 type: docs
 url: /export-range-as-format/

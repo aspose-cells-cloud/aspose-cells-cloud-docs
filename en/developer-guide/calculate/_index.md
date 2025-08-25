@@ -1,7 +1,7 @@
 ---
-title: "Developer Guide: Calculate"
-second_title: "Aspose.Cells Cloud Document"
-linktitle: "Developer Guide"
+title: "Calculate"
+second_title: "Developer Guide"
+linktitle: "Calculate"
 type: docs
 url: /calculate/
 keywords: "How to use Aspose.Cells Cloud REST APIs.  Conversion, Merge, Split, Protect, Search, Replace, Transform. Office Excel 2016,  Office Excel 2019,office Excel 365."

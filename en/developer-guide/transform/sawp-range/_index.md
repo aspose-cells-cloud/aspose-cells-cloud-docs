@@ -1,6 +1,6 @@
 ---
 title: "Sawp range"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Developer Guide"
 linktitle: "Sawp range"
 type: docs
 url: /sawp-range/

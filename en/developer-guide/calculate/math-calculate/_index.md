@@ -1,6 +1,6 @@
 ---
 title: "Math calculate"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Developer Guide"
 linktitle: "Math calculate"
 type: docs
 url: /math-calculate/

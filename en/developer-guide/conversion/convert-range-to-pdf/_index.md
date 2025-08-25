@@ -1,6 +1,6 @@
 ---
 title: "Convert range to pdf"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Developer Guide"
 linktitle: "Convert range to pdf"
 type: docs
 url: /convert-range-to-pdf/

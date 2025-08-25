@@ -1,6 +1,6 @@
 ---
 title: "Move folder"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Developer Guide"
 linktitle: "Move folder"
 type: docs
 url: /move-folder/

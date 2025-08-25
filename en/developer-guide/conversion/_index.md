@@ -1,6 +1,6 @@
 ---
 title: "Conversion for Spreadsheet, worksheet, table and range."
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Developer Guide"
 linktitle: "Conversion"
 type: docs
 url: /conversion/

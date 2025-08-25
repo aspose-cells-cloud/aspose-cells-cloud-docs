@@ -1,6 +1,6 @@
 ---
 title: "Search spreadsheet broken links"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Developer Guide"
 linktitle: "Search spreadsheet broken links"
 type: docs
 url: /search-spreadsheet-broken-links/

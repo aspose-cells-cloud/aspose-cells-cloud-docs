@@ -1,6 +1,6 @@
 ---
 title: "Convert chart to image"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Developer Guide"
 linktitle: "Convert chart to image"
 type: docs
 url: /convert-chart-to-image/

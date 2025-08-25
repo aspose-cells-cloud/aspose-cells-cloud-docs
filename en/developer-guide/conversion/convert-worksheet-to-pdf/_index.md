@@ -1,6 +1,6 @@
 ---
 title: "Convert worksheet to pdf"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Developer Guide"
 linktitle: "Convert worksheet to pdf"
 type: docs
 url: /convert-worksheet-to-pdf/

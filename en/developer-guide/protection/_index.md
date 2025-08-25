@@ -1,6 +1,6 @@
 ---
 title: "Protection Spreadsheet: Set open password and modify password."
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Developer Guide"
 linktitle: "Protection"
 type: docs
 url: /protection/

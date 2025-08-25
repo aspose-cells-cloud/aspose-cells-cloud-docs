@@ -1,6 +1,6 @@
 ---
 title: "Search and replace content in Spreadsheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Developer Guide"
 linktitle: "Search&Replace"
 type: docs
 url: /search-replace/

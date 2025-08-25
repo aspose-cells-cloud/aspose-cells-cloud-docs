@@ -1,6 +1,6 @@
 ---
 title: "Get file versions"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Developer Guide"
 linktitle: "Get file versions"
 type: docs
 url: /get-file-versions/
