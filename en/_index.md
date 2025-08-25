@@ -1,5 +1,5 @@
 ---
-title: "Aspose.Cells Cloud Web API Documentation | Quick Integration Guide"
+title: "Aspose.Cells Cloud Web API: Spreadsheet conversion, merged, splitter, protect, data processing, etc | Developer Center"
 linktitle: "Developer Center"
 type: docs
 url: /
@@ -9,6 +9,8 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, As
 ---
 
 ## **Core Functions**
+
+Aspose.Cells Cloud offers the following key features to meet enterprise-level spreadsheet automation needs:
 
 ### **Spreadsheet Convert**
 
@@ -62,26 +64,26 @@ dotnet add package Aspose.Cells-Cloud --version 25.8.0
 
 | Language | Installation Method | GitHub Repository |
 |------|----------|-------------|
-| [Java](https://www.oracle.com/java/) | [Maven](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java/blob/master/Aspose.Cells.Cloud.pom.xml) | [GitHub](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java) |
-| [.NET](https://dotnet.microsoft.com/) | [NuGet](https://www.nuget.org/packages/Aspose.cells-Cloud/#readme-body-tab) | [GitHub](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet) |
-| [Python](https://www.python.org/) | [pip](https://pypi.org/project/asposecellscloud/) | [GitHub](https://github.com/aspose-cells-cloud/aspose-cells-cloud-python) |
-| [Node.js](https://nodejs.org/en) | [npm](https://www.npmjs.com/package/asposecellscloud) | [GitHub](https://github.com/aspose-cells-cloud/aspose-cells-cloud-node) |
-| [PHP](https://www.php.net/) | [Composer](https://packagist.org/packages/aspose/cells-sdk-php) | [GitHub](https://github.com/aspose-cells-cloud/aspose-cells-cloud-php) |
-| [GoLang](https://go.dev/) | [Go Modules](https://pkg.go.dev/github.com/aspose-cells-cloud/aspose-cells-cloud-go/v25) | [GitHub](https://github.com/aspose-cells-cloud/aspose-cells-cloud-go) |
-| [Ruby](https://www.ruby-lang.org/) | [RubyGems](https://rubygems.org/gems/aspose_cells_cloud) | [GitHub](https://github.com/aspose-cells-cloud/aspose-cells-cloud-ruby) |
-| [Perl](https://www.perl.org/) | [CPAN](https://metacpan.org/dist/AsposeCellsCloud-CellsApi) | [GitHub](https://github.com/aspose-cells-cloud/aspose-cells-cloud-perl) |
+| [Java](https://www.oracle.com/java/) | [Maven](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java/blob/master/Aspose.Cells.Cloud.pom.xml) | [Java SDK repository on GitHub](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java) |
+| [.NET](https://dotnet.microsoft.com/) | [NuGet](https://www.nuget.org/packages/Aspose.cells-Cloud/#readme-body-tab) | [.NET SDK repository on GitHub](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet) |
+| [Python](https://www.python.org/) | [pip](https://pypi.org/project/asposecellscloud/) | [Python SDK repository on GitHub](https://github.com/aspose-cells-cloud/aspose-cells-cloud-python) |
+| [Node.js](https://nodejs.org/en) | [npm](https://www.npmjs.com/package/asposecellscloud) | [Node.js SDK repository on GitHub](https://github.com/aspose-cells-cloud/aspose-cells-cloud-node) |
+| [PHP](https://www.php.net/) | [Composer](https://packagist.org/packages/aspose/cells-sdk-php) | [PHP SDK repository on GitHub](https://github.com/aspose-cells-cloud/aspose-cells-cloud-php) |
+| [GoLang](https://go.dev/) | [Go Modules](https://pkg.go.dev/github.com/aspose-cells-cloud/aspose-cells-cloud-go/v25) | [GoLang SDK repository on GitHub](https://github.com/aspose-cells-cloud/aspose-cells-cloud-go) |
+| [Ruby](https://www.ruby-lang.org/) | [RubyGems](https://rubygems.org/gems/aspose_cells_cloud) | [Ruby SDK repository on GitHub](https://github.com/aspose-cells-cloud/aspose-cells-cloud-ruby) |
+| [Perl](https://www.perl.org/) | [CPAN](https://metacpan.org/dist/AsposeCellsCloud-CellsApi) | [Perl SDK repository on GitHub](https://github.com/aspose-cells-cloud/aspose-cells-cloud-perl) |
 
 - **API Endpoint**: [Aspose.Cells Cloud Spreadsheet Web API Reference](https://reference.aspose.cloud/cells/)
 
-## **Code & Example**
+## **Code examples and open source projects**
 
-Discover Cells Cloud SDKs on GitHub for free. Access open-source code and extensive use case examples:
+All SDKs are open-source and include rich examples:
 
-- [Java SDK repository on Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java)
-- [.NET SDK repository on Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet)
-- [Python SDK repository on Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-python)
-- [Node.js SDK repository on Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-node)
-- [PHP SDK repository on Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-php)
-- [Go SDK repository on Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-go)
-- [Ruby SDK repository on Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-ruby)
-- [Perl SDK repository on Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-perl)
+- [Java SDK Examples on Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java/tree/master/Examples)
+- [.NET SDK Examples on Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/tree/master/examples)
+- [Python SDK Examples on Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-python/tree/master/examples)
+- [Node.js SDK Examples on Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-node/tree/master/Examples)
+- [PHP SDK Examples on Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-php/tree/master/examples)
+- [Go SDK Examples on Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-go/tree/master/examples)
+- [Ruby SDK Examples on Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-ruby/tree/master/examples)
+- [Perl SDK Examples on Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-perl/tree/master/examples)
