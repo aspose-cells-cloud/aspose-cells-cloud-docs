@@ -1,5 +1,5 @@
 ---
-title: "Protection Spreadsheet: Set open password and modify password."
+title: "Protection Spreadsheet: Set open password and modify password"
 second_title: "Developer Guide"
 linktitle: "Protection"
 type: docs

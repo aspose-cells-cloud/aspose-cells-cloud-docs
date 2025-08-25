@@ -1,5 +1,5 @@
 ---
-title: "Spreadsheet data processing: merge, split."
+title: "Spreadsheet data processing: merge, split"
 second_title: "Developer Guide"
 linktitle: "Data Processing"
 type: docs
