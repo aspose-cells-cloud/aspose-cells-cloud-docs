@@ -1,9 +1,9 @@
 ---
-title: "How to convert file formats through Aspose.Cells Cloud"
-linktitle: "How to convert file formats"
+title: "How to convert spreadsheet file formats with Aspose.Cells Cloud"
+linktitle: "How to convert spreadsheet file formats"
 type: docs
 url: /how-to-convert-file-formats
-description: "How to convert file formats through Aspose.Cells Cloud."
+description: "How to convert file formats with Aspose.Cells Cloud."
 weight: 10
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, How to convert file formats through Aspose.Cells Cloud
 ---

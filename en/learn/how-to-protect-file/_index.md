@@ -1,9 +1,9 @@
 ---
 title: "How to protect a file with Aspose.Cells Cloud"
-linktitle: "How to protect a file"
+linktitle: "How to protect an Excel file"
 type: docs
 url: /how-to-protect-file
-description: "How to protect file with Aspose.Cells Cloud."
+description: "How to protect an Excel file with Aspose.Cells Cloud."
 weight: 10
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, How to protect file through Aspose.Cells Cloud
 ---
