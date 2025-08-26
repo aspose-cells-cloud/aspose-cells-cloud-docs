@@ -14,12 +14,13 @@ The Aspose.Cells Cloud API is a potent cloud-based solution crafted for the crea
 
 ## Overview
 
-The Aspose.Cells Cloud API provides two robust APIs for merge multiple spreadsheet files into a file with kind of formats. The supported formats include **Excel** (XLS, XLSX), **CSV**, **HTML**, **PDF**, and more. By leveraging the Aspose.Cells Cloud API, you can effortlessly merge multiple spreadsheet files into a file with widely used formats, catering to a diverse range of requirements.
+The Aspose.Cells Cloud API provides robust APIs for merge multiple spreadsheet files into a file with kind of formats. The supported formats include **Excel** (XLS, XLSX), **CSV**, **HTML**, **PDF**, and more. By leveraging the Aspose.Cells Cloud API, you can effortlessly merge multiple spreadsheet files into a file with widely used formats, catering to a diverse range of requirements.
 
 Numerous APIs are available for file merged, generally compatible with various online environments. Below is a detailed description of these APIs:
 
-- **[Merge multi Excel files into an Excel file.](https://reference.aspose.cloud/cells/#/LightCells/PostMerge)**. For guidance on how to call this API, please refer to the  [development guide](https://docs.aspose.cloud/cells/merge/multi-files/).
-- **[Merge an Excel Workbooks into other Excel file](https://reference.aspose.cloud/cells/#/Workbook/PostWorkbooksMerge)**. For guidance on how to call this API, please refer to the  [development guide](https://docs.aspose.cloud/cells/workbook/merge/).
+- **[Merge Spreadsheets](reference.aspose.cloud/cells/?urls.primaryName=API+v4#/DataProcessing/MergeSpreadsheets)**. For guidance on how to call this API, please refer to the  [development guide](docs.aspose.cloud/cells/merge-spreadsheets/).
+- **[Merge Remote Spreadsheet](reference.aspose.cloud/cells/?urls.primaryName=API+v4#/DataProcessing/MergeRemoteSpreadsheet)**. For guidance on how to call this API, please refer to the  [development guide](docs.aspose.cloud/cells/merge-remote-spreadsheet/).
+- **[Merge Spreadsheets In Remote Folder](reference.aspose.cloud/cells/?urls.primaryName=API+v4#/DataProcessing/MergeSpreadsheetsInRemoteFolder)**. For guidance on how to call this API, please refer to the  [development guide](docs.aspose.cloud/cells/merge-spreadsheets-in-remote-folder/).
 
 # How to merge multiple files a file through Aspose.Cells Cloud
 
@@ -54,22 +55,22 @@ Make sure to replace YOUR_API_KEY, YOUR_APP_SID, and YOUR_APP_KEY with your actu
 
 ## Construct the API Request and Call the API
 
-This creates a new instance of the PostMergeRequest, initializing it with your desired file format and files. It then calls the merged API with this merge request. The merged function supports extended query parameters, too. Below are the details of the aforementioned code snippet:
+This snippet first authenticates with the Aspose.Cells Cloud .NET SDK by passing client credentials from environment variables, then creates a new MergeSpreadsheetsRequest, initializes it with the desired PDF output format, and adds Book1.xlsx and Book2.xlsx as streams to the request’s file dictionary. Afterward, it invokes MergeSpreadsheets, uploading the workbooks to the cloud service and downloading the combined result as MergedResultFile.pdf; the merged endpoint also supports additional query parameters if required.
 
 ```CSharp
 
 using System.Collections.Generic;
 
-PostMergeRequest request = new PostMergeRequest();
+var cellsApi = new Aspose.Cells.Cloud.SDK.Api.CellsApi(System.Environment.GetEnvironmentVariable("ProductClientId"), System.Environment.GetEnvironmentVariable("ProductClientSecret"));
 
-request.Format = "pdf";
-request.mergeToOneSheet = true;
-IDictionary<string, System.IO.Stream> mapFiles =new Dictionary<string, System.IO.Stream>(); 
+var request = new Aspose.Cells.Cloud.SDK.Request.MergeSpreadsheetsRequest();
+IDictionary<string, System.IO.Stream> mapFiles = new Dictionary<string, System.IO.Stream>();
 mapFiles.Add("Book1.xlsx", File.OpenRead(@"c:\testdata\Book1.xlsx"));
 mapFiles.Add("Book2.xlsx", File.OpenRead(@"c:\testdata\Book2.xlsx"));
-request.Files = mapFiles;
+request.Spreadsheet = mapFiles;
+request.outFormat = "pdf";
 
-cellsInstance.PostMerge(request);
+cellsApi.MergeSpreadsheets(request, "MergedResultFile.pdf");
 
 ```
 
