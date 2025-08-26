@@ -1,9 +1,9 @@
 ---
-title: "How to protect file through Aspose.Cells Cloud"
-linktitle: "How to protect file"
+title: "How to protect a file with Aspose.Cells Cloud"
+linktitle: "How to protect a file"
 type: docs
 url: /how-to-protect-file
-description: "How to protect file through Aspose.Cells Cloud."
+description: "How to protect file with Aspose.Cells Cloud."
 weight: 10
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, How to protect file through Aspose.Cells Cloud
 ---
@@ -18,15 +18,23 @@ The Aspose.Cells Cloud API provides multiples robust APIs for protecting Excel o
 
 Numerous APIs are available for file protection, generally compatible with various online environments. Below is a detailed description of these APIs:
 
-- **[Secure MS Excel and OpenDocument Spreadsheet by applying password protection.](https://reference.aspose.cloud/cells/#/Workbook/PostEncryptWorkbook)**. For guidance on how to call this API, please refer to the  [development guide](https://docs.aspose.cloud/cells/workbook/encrypt/).
-- **[Protect MS Excel and OpenDocument Spreadsheet.](https://reference.aspose.cloud/cells/#/Workbook/PostProtectWorkbook)**. For guidance on how to call this API, please refer to the  [development guide](https://docs.aspose.cloud/cells/workbook/protect/).
-- **[Protect MS Excel and OpenDocument Spreadsheet without using cloud storage.](https://reference.aspose.cloud/cells/#/LightCells/PostProtect)**. For guidance on how to call this API, please refer to the  [development guide](https://docs.aspose.cloud/cells/protect/without-using-storage/).
-- **[MS Excel and OpenDocument Spreadsheet digital signature.](https://reference.aspose.cloud/cells/#/Workbook/PostDigitalSignature)**. For guidance on how to call this API, please refer to the  [development guide](https://docs.aspose.cloud/cells/workbook/digital-signature/).
-- **[Batch protect files](https://reference.aspose.cloud/cells/#/Batch/PostBatchProtect)**. For guidance on how to call this API, please refer to the  [development guide](https://docs.aspose.cloud/cells/batch/protect/).
+- **[Protect a spreadsheet.](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Protection/ProtectSpreadsheet)**  For guidance on how to call this API, please refer to the  [development guide](https://docs.aspose.cloud/cells/protect-spreadsheet/).
 
-# How to protect Excel file or another spreadsheet through Aspose.Cells Cloud
+- **[Unprotect a spreadsheet.](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Protection/UnprotectSpreadsheet)**  For guidance on how to call this API, please refer to the  [development guide](https://docs.aspose.cloud/cells/unprotect-spreadsheet/).
 
-The Aspose.Cells Cloud API provides [multiple SDKs](https://github.com/aspose-cells-cloud) for different programming languages. Choose the SDK that aligns with your preferred programming language and follow the accompanying documentation for installation and initialization. Alternatively, you can craft your own SDK according to the [API reference](https://reference.aspose.cloud/cells/). In this section, we'll use C# as an example to detail the process of file merged.
+- The following shows the protection feature APIs of version 3.0.
+
+| Function Description       | Development Document      | API Function |
+|-----------------------|-------------------|---------------------------------|
+| **[Secure MS Excel and OpenDocument Spreadsheet by applying password protection.](https://reference.aspose.cloud/cells/#/Protection/PostEncryptWorkbook)** | [Development Guide](https://docs.aspose.cloud/cells/excel-file-encrypt/) | [PostEncryptWorkbook](https://reference.aspose.cloud/cells/#/Protection/PostEncryptWorkbook) |
+| **[Protect MS Excel and OpenDocument Spreadsheet.](https://reference.aspose.cloud/cells/#/Workbook/PostProtectWorkbook)** | [Development Guide](https://docs.aspose.cloud/cells/protect-excel-file/) | [PostProtectWorkbook](https://apireference.aspose.cloud/cells/#/Workbook/PostProtectWorkbook) |
+| **[Protect MS Excel and OpenDocument Spreadsheet without using cloud storage.](https://reference.aspose.cloud/cells/#/LightCells/PostProtect)** | [Development Guide](https://docs.aspose.cloud/cells/protect-excel-files/) | [PostProtect](https://apireference.aspose.cloud/cells/#/LightCells/PostProtect) |
+| **[MS Excel and OpenDocument Spreadsheet digital signature.](https://reference.aspose.cloud/cells/#/Protection/PostDigitalSignature)** | [Development Guide](https://docs.aspose.cloud/cells/workbook/digital-signature/) | [PostDigitalSignature](https://reference.aspose.cloud/cells/#/Protection/PostDigitalSignature) |
+| **[Batch protect files.](https://reference.aspose.cloud/cells/#/Batch/PostBatchProtect)** | [Development Guide](https://docs.aspose.cloud/cells/batch/protect/) | [PostBatchProtect](https://reference.aspose.cloud/cells/#/Batch/PostBatchProtect) |
+
+# How to protect Excel file with Aspose.Cells Cloud
+
+The Aspose.Cells Cloud API provides [multiple SDKs](https://github.com/aspose-cells-cloud) for different programming languages. Choose the SDK that aligns with your preferred programming language and follow the accompanying documentation for installation and initialization. Alternatively, you can craft your own SDK according to the [API reference](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Protection/ProtectSpreadsheet). In this section, we'll use C# as an example to detail the process of file merged.
 
 ## Registration and Obtaining API Key
 
@@ -42,7 +50,7 @@ Here's how you can install the package using the Package Manager Console:
 ```Powershell
 
 Install-Package Aspose.Cells-Cloud
-
+ww
 ```
 
 Creates a new instance of the CellsApi class, initializing it with your client ID and client secret. Below are the details of the aforementioned code snippet:
@@ -61,25 +69,8 @@ This creates a new instance of the PostProtectRequest, initializing it with your
 
 ```CSharp
 
-using System.Collections.Generic;
-
-PostProtectRequest request = new PostProtectRequest();
-
-IDictionary<string, System.IO.Stream> mapFiles =new Dictionary<string, System.IO.Stream>(); 
-mapFiles.Add("Book1.xlsx", File.OpenRead(@"c:\testdata\Book1.xlsx"));
-mapFiles.Add("Book2.xlsx", File.OpenRead(@"c:\testdata\Book2.xlsx"));
-request.Files = mapFiles;
-
-request.protectWorkbookRequst = new ProtectWorkbookRequst {
-    AwaysOpenReadOnly = true ,
-    EncryptWithPassword = "123456",
-    ProtectCurrentSheet = new Protection { 
-        AllowDeletingColumn =true
-    }
-};
-
-
-cellsInstance.PostProtect(request);
+CellsApi cellsApi = new CellsApi(Environment.GetEnvironmentVariable("ProductClientId"), Environment.GetEnvironmentVariable("ProductClientSecret"));
+cellsApi.ProtectSpreadsheet(new ProtectSpreadsheetRequest { Spreadsheet = "Book1.xlsx" , password= "123456" , modifyPassword ="654321" } , "ProtectedBook1.xlsx");
 
 ```
 
@@ -98,4 +89,4 @@ With Aspose.Cells Cloud API, you can easily perform protected Excel files or ano
 
 Please note that the above example code is for demonstration purposes only, and you would need to replace it with valid authentication credentials and file paths when using it in practice. Additionally, Aspose.Cells Cloud API offers many other features, such as spreadsheet creation, editing, manipulation, and data processing. Detailed API documentation and example code can be found on [developer guide of the official Aspose website](/developer-guide/).
 
-We hope this article helps you understand how to use Aspose.Cells Cloud API for file merge. Best of luck with your implementation!
+We hope this article helps you understand how to use Aspose.Cells Cloud API for file protect. Best of luck with your implementation!

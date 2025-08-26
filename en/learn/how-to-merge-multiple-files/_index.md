@@ -1,9 +1,9 @@
 ---
-title: "How to merge multiple files through Aspose.Cells Cloud"
+title: "How to merge multiple files with Aspose.Cells Cloud"
 linktitle: "How to merge multiple files"
 type: docs
 url: /how-to-merge-multiple-files
-description: "How to merge multiple files through Aspose.Cells Cloud."
+description: "How to merge multiple files with Aspose.Cells Cloud."
 weight: 10
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, How to merge multiple files through Aspose.Cells Cloud
 ---
@@ -55,7 +55,7 @@ Make sure to replace YOUR_API_KEY, YOUR_APP_SID, and YOUR_APP_KEY with your actu
 
 ## Construct the API Request and Call the API
 
-This snippet first authenticates with the Aspose.Cells Cloud .NET SDK by passing client credentials from environment variables, then creates a new MergeSpreadsheetsRequest, initializes it with the desired PDF output format, and adds Book1.xlsx and Book2.xlsx as streams to the request’s file dictionary. Afterward, it invokes MergeSpreadsheets, uploading the workbooks to the cloud service and downloading the combined result as MergedResultFile.pdf; the merged endpoint also supports additional query parameters if required.
+### Leverage cloud services to merge local spreadsheets and deliver the consolidated files—either as local outputs or in-memory streams—in any required format
 
 ```CSharp
 
@@ -63,15 +63,48 @@ using System.Collections.Generic;
 
 var cellsApi = new Aspose.Cells.Cloud.SDK.Api.CellsApi(System.Environment.GetEnvironmentVariable("ProductClientId"), System.Environment.GetEnvironmentVariable("ProductClientSecret"));
 
+// Suild merged spreadsheet request
 var request = new Aspose.Cells.Cloud.SDK.Request.MergeSpreadsheetsRequest();
+// Set need merged files.
 IDictionary<string, System.IO.Stream> mapFiles = new Dictionary<string, System.IO.Stream>();
-mapFiles.Add("Book1.xlsx", File.OpenRead(@"c:\testdata\Book1.xlsx"));
-mapFiles.Add("Book2.xlsx", File.OpenRead(@"c:\testdata\Book2.xlsx"));
+mapFiles.Add("Book1.xlsx", File.OpenRead("Book1.xlsx"));
+mapFiles.Add("Book2.xlsx", File.OpenRead("Book2.xlsx"));
 request.Spreadsheet = mapFiles;
+// Set output format
 request.outFormat = "pdf";
 
 cellsApi.MergeSpreadsheets(request, "MergedResultFile.pdf");
 
+```
+
+### Cloud-merge spreadsheets stored in the cloud and deliver the consolidated file—locally or back to cloud storage—in any required format
+
+```C#
+// Get your Client ID and Client Secret from https://dashboard.aspose.cloud (free registration is required).
+var cellsApi = new Aspose.Cells.Cloud.SDK.Api.CellsApi(System.Environment.GetEnvironmentVariable("ProductClientId"), System.Environment.GetEnvironmentVariable("ProductClientSecret"));
+// Build merge request parameters 
+var request = new Aspose.Cells.Cloud.SDK.Request.MergeRemoteSpreadsheetRequest();
+// Set cloud main file
+request.name = "Book1.xlsx";
+request.folder = "RemoteFolder1";
+// Set cloud merged file
+request.mergedSpreadsheet = "RemoteFolder2/Book2.xlsx";
+request.outFormat = "pdf";
+cellsApi.MergeRemoteSpreadsheet(request, "MergedResultOutPutToLocalFile.pdf");
+```
+
+### Auto-merge matching files in a cloud directory, export the consolidated result in the specified format, and deliver it locally or back to cloud storage
+
+```csharp
+// Get your Client ID and Client Secret from https://dashboard.aspose.cloud (free registration is required).
+var cellsApi = new Aspose.Cells.Cloud.SDK.Api.CellsApi(System.Environment.GetEnvironmentVariable("ProductClientId"), System.Environment.GetEnvironmentVariable("ProductClientSecret"));
+// Build merge request parameters 
+var request = new Aspose.Cells.Cloud.SDK.Request.MergeSpreadsheetsInRemoteFolderRequest();
+// Storage directory that needs to merge files
+request.folder = "RemoteFolder";
+request.fileMatchExpression = "*xlsx$";
+request.outFormat = "pdf";
+cellsApi.MergeSpreadsheetsInRemoteFolder(request, "MergedResultOutPutToLocalFile.pdf");
 ```
 
 ## Use Cases
