@@ -1,5 +1,5 @@
 ---
-title: "How to repair Excel file with Aspose.Cells Cloud"
+title: "How to repair Excel file"
 type: docs
 url: /how-to-repair-excel-file
 description: "How to repair Excel or other spreadsheet file with Aspose.Cells Cloud."

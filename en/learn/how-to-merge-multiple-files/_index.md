@@ -18,9 +18,11 @@ The Aspose.Cells Cloud API provides robust APIs for merge multiple spreadsheet f
 
 Numerous APIs are available for file merged, generally compatible with various online environments. Below is a detailed description of these APIs:
 
-- **[Merge Spreadsheets](reference.aspose.cloud/cells/?urls.primaryName=API+v4#/DataProcessing/MergeSpreadsheets)**. For guidance on how to call this API, please refer to the  [development guide](docs.aspose.cloud/cells/merge-spreadsheets/).
-- **[Merge Remote Spreadsheet](reference.aspose.cloud/cells/?urls.primaryName=API+v4#/DataProcessing/MergeRemoteSpreadsheet)**. For guidance on how to call this API, please refer to the  [development guide](docs.aspose.cloud/cells/merge-remote-spreadsheet/).
-- **[Merge Spreadsheets In Remote Folder](reference.aspose.cloud/cells/?urls.primaryName=API+v4#/DataProcessing/MergeSpreadsheetsInRemoteFolder)**. For guidance on how to call this API, please refer to the  [development guide](docs.aspose.cloud/cells/merge-spreadsheets-in-remote-folder/).
+| Function        | Description      | API Reference      |
+| :------------------------- | :------------------------- | :------------------------- |
+| **[MergeSpreadsheets](https://docs.aspose.cloud/cells/merge-spreadsheets/)** | Merge local spreadsheet files into a specified format file. | [MergeSpreadsheets](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/DataProcessing/MergeSpreadsheets) |
+| **[MergeRemoteSpreadsheet](https://docs.aspose.cloud/cells/merge-remote-spreadsheet/)** | Merge spreadsheet files in folder of cloud storage into a specified format file. | [Merge Remote Spreadsheet](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/DataProcessing/MergeRemoteSpreadsheet) |
+| **[Merge Spreadsheets In Remote Folder](https://docs.aspose.cloud/cells/merge-spreadsheets-in-remote-folder/)** |  Merge spreadsheet files in folder of cloud storage into a specified format file. | [Merge Spreadsheets In Remote Folder](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/DataProcessing/MergeSpreadsheetsInRemoteFolder) |
 
 # How to merge multiple files a file through Aspose.Cells Cloud
 

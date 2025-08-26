@@ -18,9 +18,10 @@ The Aspose.Cells Cloud API provides multiples robust APIs for protecting Excel o
 
 Numerous APIs are available for file protection, generally compatible with various online environments. Below is a detailed description of these APIs:
 
-- **[Protect a spreadsheet.](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Protection/ProtectSpreadsheet)**  For guidance on how to call this API, please refer to the  [development guide](https://docs.aspose.cloud/cells/protect-spreadsheet/).
-
-- **[Unprotect a spreadsheet.](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Protection/UnprotectSpreadsheet)**  For guidance on how to call this API, please refer to the  [development guide](https://docs.aspose.cloud/cells/unprotect-spreadsheet/).
+| Function        | Description      | API Reference      |
+| :------------------------- | :------------------------- | :------------------------- |
+| **[Protect a spreadsheet](https://docs.aspose.cloud/cells/protect-spreadsheet/)**  | Protect a spreadsheet. | [PostProtect](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Protection/ProtectSpreadsheet) |
+| **[Unprotect a spreadsheet](https://docs.aspose.cloud/cells/unprotect-spreadsheet/)**  | Unprotect a spreadsheet. | [DeleteUnprotect](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Protection/UnprotectSpreadsheet) |
 
 - The following shows the protection feature APIs of version 3.0.
 
