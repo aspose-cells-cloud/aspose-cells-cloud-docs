@@ -1,24 +1,24 @@
 ﻿---
-title: Docker Contain Nasıl Çalıştırılır
+title: Docker Containe Nasıl Çalıştırılır
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/getting-started/how-to-run-docker-container/
 aliases: [/how-to-run-docker-container/]
-description: Docker Aspose.Cells Bulut konteyneri nasıl çalıştırılır. Aspose.Cells Bulut, oluşturma, dönüştürme, birleştirme, bölme, koruma, iç nesne işlemleri vb. için Excel'i destekler
+description: Docker Aspose.Cells Cloud konteyneri nasıl çalıştırılır? Aspose.Cells Cloud, Excel'i oluşturma, dönüştürme, birleştirme, bölme, korumalı, iç nesne işlemleri vb. için destekler.
 weight: 100
-kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Docker Container Nasıl Çalıştırılır
+kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Docker Konteyneri Nasıl Çalıştırılır
 ---
-**Liman işçisi**teknolojisi, hafif kaplar kullanarak uygulamaların dağıtımını otomatikleştirmek için tasarlanmıştır. Geliştiriciler şunları kullanabilir:**Docker Konteyneri** Bir uygulamayı tüm kitaplıkları ve bağımlılıklarıyla birlikte sarmak ve her şeyi tek bir paket olarak dağıtmak için.
+ The**Liman işçisi** Bu teknoloji, hafif kapsayıcılar kullanılarak uygulamaların dağıtımını otomatikleştirmek üzere tasarlanmıştır. Geliştiriciler,**Docker Konteyneri** Bir uygulamayı tüm kütüphaneleri ve bağımlılıklarıyla birlikte tamamlamak ve her şeyi tek bir paket olarak dağıtmak.
 
- Aspose.Cells Bulut ekibi Docker Container'ı şu tarihte yayınladı:[Docker Merkezi](https://hub.docker.com/r/aspose/cells-cloud) Docker kullanıcılarını kolaylaştırmak için. Aşağıdaki bölümler, Docker komutlarını nasıl çalıştıracağınız veya Docker oluşturma aracı için Yaml dosyasına yapılandırmayı nasıl yazacağınız konusunda size yol gösterecektir.
+ Aspose.Cells Bulut ekibi Docker Konteynerini yayınladı[Docker Hub](https://hub.docker.com/r/aspose/cells-cloud)Docker kullanıcılarının işini kolaylaştırmak için. Aşağıdaki bölümler, Docker komutlarını nasıl çalıştıracağınız veya Docker Compose aracı için bir Yaml dosyasına nasıl yapılandırma yazacağınız konusunda size rehberlik edecektir.
 
 ## Konteyner yapılandırması
 
 ### Gerekli hacimler
 
-|Konteynere montaj yolu|Tanım|
+|Konteynerdeki montaj yolu|Tanım|
 |:- |:- |
-|C:\fontlar|Belgeleri oluşturmak için kullanılacak yazı tiplerini içeren klasör|
+|C:\fontlar|Belgeleri oluşturmak için kullanılacak yazı tiplerinin bulunduğu klasör|
 |C:\veri|Dosya depolama klasörü|
 
 ### Parametreler
@@ -28,21 +28,19 @@ kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwo
 |LisansGenelAnahtar|Lisansın genel anahtarı|
 |LisansÖzelAnahtar|Lisansın özel anahtarı|
 
-
 "Lisans" parametreleri atlanırsa uygulama deneme modunda çalışacaktır.
 
+### Komut satırını kullanarak bir Docker konteyneri çalıştırın
 
-### Komut satırını kullanarak Docker kapsayıcısını çalıştırın
-
-Konteyneri çıkardıktan sonra aşağıdaki docker komutunu çalıştırabilirsiniz.[Docker Merkezi](https://href.li/?https://hub.docker.com/r/aspose/cells-cloud).
+ Konteyneri çektikten sonra aşağıdaki docker komutunu çalıştırabilirsiniz[Docker Hub](https://href.li/?https://hub.docker.com/r/aspose/cells-cloud).
 
 ```JAVA
 docker run   -e "LicensePublicKey=public_key" -e "LicensePrivateKey=private_key" -v c:/data:c:/data  -v C:/Windows/Fonts:C:/Windows/Fonts -p 80:5000   aspose/cells-cloud
 ```
 
-### Docker-Compose Tool için Yapılandırmalar
+### Docker-Compose Aracı için Yapılandırmalar
 
-Docker-Compose aracı için yaml dosyanıza aşağıdaki konfigürasyonları yazabilirsiniz:
+Docker-Compose aracı için yaml dosyanıza aşağıdaki yapılandırmaları yazabilirsiniz:
 
 ```JAVA
 AsposeCellsCloud:

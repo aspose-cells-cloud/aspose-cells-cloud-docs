@@ -5,9 +5,9 @@ type: docs
 url: /de/docker/storage/
 description: So legen Sie die Speicherposition für Aspose.Cells Cloud für Docker fest
 weight: 30
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdwon, Speicher
+kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Speicher
 ---
-##  Standardmäßige Speicherkonfiguration ##
+##  Standardspeicherkonfiguration ##
 
 {{< tabs tabTotal="2" tabID="1" tabName1="windows" tabName2="linux" >}}
 
@@ -46,7 +46,7 @@ kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Mark
 
 {{< /tabs >}}
 
-##  Grundposition ##
+##  Standardposition ##
 
 
 - **Fenster**
@@ -57,7 +57,7 @@ c:\app\storageResource.json
 
 ```
 
-- **linux**
+- **Linux**
 
 ```linux
 
@@ -68,7 +68,7 @@ c:\app\storageResource.json
 
 ##  Benutzerdefinierte Speicherkonfiguration ##
 
-Das Speicherprofil für die Cloud-Image-Datei Aspose.Cells muss erneut angegeben werden, wenn der Kunde einen Speicherordner angeben muss.
+Das Speicherprofil für die Cloud-Image-Datei Aspose.Cells muss neu angegeben werden, wenn der Kunde einen Speicherordner angeben muss.
 
 ``` powershell
 

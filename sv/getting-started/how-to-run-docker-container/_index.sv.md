@@ -1,48 +1,46 @@
 ﻿---
-title: Hur man kör Docker Containe
+title: Hur man kör Docker-behållaren
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/getting-started/how-to-run-docker-container/
 aliases: [/how-to-run-docker-container/]
-description: Hur man kör Docker Aspose.Cells Molncontainer. Aspose.Cells Cloud stöder Excel för att skapa, konvertera, sammanfoga, dela, skydda, inre objektoperation och så vidare
+description: Hur man kör Docker Aspose.Cells Cloud-container. Aspose.Cells Cloud stöder Excel för att skapa, konvertera, slå samman, dela, skydda, hantera interna objekt och så vidare.
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, How to Run Docker Container
+kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Hur man kör Docker-container
 ---
- De**Hamnarbetare**Tekniken är utformad för att automatisera distributionen av applikationerna genom att använda lätta behållare. Utvecklare kan använda en**Docker Container** att avsluta ett program med alla dess bibliotek och beroenden och distribuera allt som ett enda paket.
+ De**Hamnarbetare** Tekniken är utformad för att automatisera distributionen av applikationerna genom att använda lättviktiga containrar. Utvecklare kan använda en**Docker-behållare** att avsluta en applikation med alla dess bibliotek och beroenden och distribuera allt som ett enda paket.
 
- Aspose.Cells Cloud-teamet har publicerat Docker Container på[Docker Hub](https://hub.docker.com/r/aspose/cells-cloud) för att underlätta Docker-användarna. Följande avsnitt kommer att guida dig hur du kör ett Docker-kommandon eller skriver konfiguration i en Yaml-fil för Docker-skrivverktyget.
+ Aspose.Cells Molnteamet har publicerat Docker-containern på[Docker Hub](https://hub.docker.com/r/aspose/cells-cloud)för att underlätta för Docker-användare. Följande avsnitt vägleder dig i hur du kör Docker-kommandon eller skriver konfiguration i en Yaml-fil för Docker Compose-verktyget.
 
-## Behållarkonfiguration
+## Containerkonfiguration
 
-### Erforderliga volymer
+### Nödvändiga volymer
 
-|Montera banan i container|Beskrivning|
+|Monteringssökväg i container|Beskrivning|
 |:- |:- |
-|C:\fonts|Mapp med typsnitt, som kommer att användas för att rendera dokument|
+|C:\fonter|Mapp med teckensnitt, som kommer att användas för att rendera dokument|
 |C:\data|Fillagringsmapp|
 
 ### Parametrar
 
-|namn|Beskrivning|
+|Namn|Beskrivning|
 |:- |:- |
-|LicensePublicKey|Licensens offentliga nyckel|
-|LicensPrivateKey|Licensens privata nyckel|
+|LicensOffentlig nyckel|Licensens offentliga nyckel|
+|LicensPrivatnyckel|Licensens privata nyckel|
 
+Om parametrarna "Licens" utelämnas kommer appen att fungera i testläge.
 
-Om "Licens"-parametrar utelämnas kommer appen att fungera i testläge.
+### Kör en Docker-container med hjälp av kommandoraden
 
-
-### Kör en Docker-behållare med kommandoraden
-
-Du kan helt enkelt köra följande docker-kommando efter att ha dragit behållaren från[Docker Hub](https://href.li/?https://hub.docker.com/r/aspose/cells-cloud).
+ Du kan helt enkelt köra följande docker-kommando efter att du har hämtat containern från[Docker Hub](https://href.li/?https://hub.docker.com/r/aspose/cells-cloud).
 
 ```JAVA
 docker run   -e "LicensePublicKey=public_key" -e "LicensePrivateKey=private_key" -v c:/data:c:/data  -v C:/Windows/Fonts:C:/Windows/Fonts -p 80:5000   aspose/cells-cloud
 ```
 
-### Konfigurationer för Docker-Compose Tool
+### Konfigurationer för Docker-Compose-verktyget
 
-Du kan skriva följande konfigurationer i din yaml-fil för verktyget Docker-Compose:
+Du kan skriva följande konfigurationer i din yaml-fil för Docker-Compose-verktyget:
 
 ```JAVA
 AsposeCellsCloud:

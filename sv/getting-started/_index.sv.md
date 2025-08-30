@@ -1,22 +1,18 @@
 ﻿---
 title: Komma igång
-second_title: Aspose.Cells Cloud Documen
+second_title: How to Process Excel Files in 3 Steps Using Aspose.Cells Cloud WEB API
 type: docs
 url: /sv/getting-started/
-description: Aspose.Cells Cloud stöder Excel för att skapa, konvertera, sammanfoga, dela, skydda, inre objektoperation och så vidare
+description: Aspose.Cells Molnet stöder Excel för att skapa, konvertera, sammanfoga, dela, skydda, hantera interna objekt och så vidare.
 weight: 10
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Komma igång
+kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Komma igång
 ---
-Denna Komma igång ger denna introduktion till Aspose.Cells Grunderna i molnet. För användare som är nya i Aspose.Cells Cloud är detta det snabbaste sättet att lära sig de grundläggande kraven och funktionerna och komma igång.
-
-För att ta reda på mer om Aspose.Cells Cloud, välj lämpligt avsnitt:
-
-- [Översikt](/cells/sv/overview/).
-- [Snabbstart](/cells/sv/quickstart/).
-- [Tillgängliga SDK:er](/cells/sv/available-sdks/)– ger information om Aspose.Cells Cloud SDK.
-- [Plattformar som stöds](/cells/sv/supported-platforms/) – ger information om plattformar som stöds.
-- [Filformat som stöds](/cells/sv/supported-file-formats/) – ger information om format som stöds.
-- [Utvärdera Aspose.Cells Moln](/cells/sv/evaluate-aspose-cells/).
-- [Prissättningsplan](/cells/sv/pricing-plan/).
-- [Teknisk support](/cells/sv/technical-support/).
-- [Hur man kör Docker Container](/cells/sv/how-to-run-docker-container/) – ger information om hur man använder Aspose.Cells Cloud i en Docker-behållare.
+- [Översikt](/cells/sv/overview/)
+- [Snabbstart](/cells/sv/quickstart/)
+- [Tillgängliga SDK:er](/cells/sv/available-sdks/)
+- [Plattformar som stöds](/cells/sv/supported-platforms/)
+- [Filformat som stöds](/cells/sv/supported-file-formats/)
+- [Utvärdera Aspose.Cells Cloud](/cells/sv/evaluate-aspose-cells/)
+- [Prisplan](/cells/sv/pricing-plan/)
+- [Teknisk support](/cells/sv/technical-support/)
+- [Hur man kör en Docker-behållare](/cells/sv/how-to-run-docker-container/)

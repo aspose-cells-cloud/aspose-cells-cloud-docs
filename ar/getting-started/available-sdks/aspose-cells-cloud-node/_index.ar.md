@@ -1,30 +1,27 @@
 ﻿---
-title: Aspose.Cells Cloud SDK للإيماءة
+title: Aspose.Cells مجموعة تطوير البرامج السحابية لـ Nod
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/available-sdks/aspose-cells-cloud-node/
-description: Aspose.Cells تدعم السحابة Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
+description: Aspose.Cells تدعم السحابة Excel لإنشاء الكائنات الداخلية وتحويلها ودمجها وتقسيمها وحمايتها وما إلى ذلك
 weight: 30
-kwords: Excel، Office كلاود، ريست API، جدول بيانات، PDF، CSV، Json، Markdwon، Node
+kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، Node
 ---
- SDK مفتوح المصدر ومرخص بموجب ترخيص MIT. يمكنك الوصول إلى الكود المصدري لمكتبة Node لـ Aspose.Cells Cloud[هنا](https://github.com/aspose-cells-cloud/aspose-cells-cloud-node).
+ مجموعة تطوير البرامج (SDK) مفتوحة المصدر ومرخصة بموجب ترخيص معهد ماساتشوستس للتكنولوجيا (MIT). يمكنك الوصول إلى شفرة المصدر لمكتبة Node لـ Aspose.Cells Cloud.[هنا](https://github.com/aspose-cells-cloud/aspose-cells-cloud-node).
 
+# **كيفية استخدام مكتبة Node من Aspose.Cells Cloud**
 
-# **كيفية استخدام مكتبة العقدة Aspose.Cells السحابية**
+مجموعة تطوير البرامج السحابية Aspose.Cells لـ Node هي مكتبة فعّالة تُمكّن المطورين من التعامل مع ملفات Microsoft Excel ومعالجتها باستخدام لغة برمجة Node. باستخدام هذه المجموعة، يُمكنك إنشاء مستندات Excel وتحريرها وتحويلها في السحابة، دون الحاجة إلى تثبيت برامج أو تبعيات إضافية على جهازك المحلي.
 
-Aspose.Cells Cloud SDK for Node هي مكتبة قوية تسمح للمطورين بمعالجة ومعالجة ملفات Microsoft Excel باستخدام لغة برمجة Node. باستخدام SDK هذا، يمكنك إنشاء وتحرير وتحويل Excel مستندًا في السحابة، دون تثبيت برامج أو تبعيات إضافية على جهازك المحلي.
-
-
-في هذه المقالة، سنستكشف كيفية استخدام Aspose.Cells Cloud SDK for Node لتنفيذ بعض المهام الشائعة، مثل إنشاء مصنف Excel جديد، وإدراج البيانات في الخلايا، وحفظ المصنف المعدل في السحابة.
+في هذه المقالة، سنستكشف كيفية استخدام Aspose.Cells Cloud SDK for Node لأداء بعض المهام الشائعة، مثل إنشاء مصنف Excel جديد، وإدراج البيانات في الخلايا، وحفظ المصنف المعدل في السحابة.
 
 ## ابدء
 
- قبل أن تتمكن من البدء في استخدام Aspose.Cells Cloud SDK for Go، تحتاج إلى إعداد بيئة التطوير الخاصة بك وتثبيت التبعيات اللازمة. تشير إلى[المقالة](https://docs.aspose.cloud/cells/quickstart/) على الموقع الإلكتروني Aspose للحصول على معرف العميل وسر العميل.
+ قبل أن تتمكن من استخدام حزمة تطوير البرامج السحابية Aspose.Cells للغة Go، عليك إعداد بيئة التطوير وتثبيت التبعيات اللازمة. راجع[المقال](https://docs.aspose.cloud/cells/quickstart/) على موقع الويب Aspose للحصول على معرف العميل والسر الخاص بالعميل.
 
-## كيفية تثبيت حزمة العقدة لسحابة Aspose.Cells
+## كيفية تثبيت حزمة Node لـ Aspose.Cells Cloud
 
-يمكنك تثبيت Aspose.Cells Cloud SDK للعقدة باستخدام npm. فيما يلي خطوات npm:
-
+يمكنك تثبيت حزمة تطوير البرامج السحابية Aspose.Cells لـ Node باستخدام npm. فيما يلي خطوات استخدام npm:
 
 ```Powershell
 
@@ -55,45 +52,15 @@ npm install asposecellscloud
 
 ```
 
-## كيفية استخدام حزمة Node لتحويل Xlsx إلى PDF
+## كيفية استخدام حزمة Node لتحويل Xlsx إلى تنسيقات أخرى
 
-- استيراد Aspose.Cells المكتبة السحابية
- ابدأ باستيراد الحزمة الضرورية من Aspose.Cells Cloud NodeJS SDK إلى مشروعك.
-- قم بتكوين API عميل ببيانات الاعتماد
- قم بتوثيق عميلك API بمعرف العميل الفريد وسر العميل.
+- استيراد مكتبة السحابة Aspose.Cells
+ ابدأ باستيراد الحزمة اللازمة من SDK Aspose.Cells Cloud NodeJS إلى مشروعك.
+- تكوين العميل API باستخدام بيانات الاعتماد
+ قم بمصادقة عميلك API باستخدام معرف العميل الفريد والسر الخاص بالعميل.
 - إعداد معلمات التحويل
- حدد المعلمات لمهمة التحويل، بما في ذلك اسم الملف المصدر، وتنسيق الإخراج المطلوب، ومسار مجلد التخزين.
+ قم بتحديد المعلمات لمهمة التحويل، بما في ذلك اسم ملف المصدر، وتنسيق الإخراج المطلوب، ومسار مجلد التخزين.
 - تنفيذ تحويل المصنف
- استدعاء عملية التحويل باستخدام أسلوب PostConvertWorkbook والتعامل مع الاستجابة.
+ استدعاء عملية التحويل باستخدام طريقة PostConvertWorkbook ومعالجة الاستجابة.
 
-```javascript
-var fs = require('fs');
-var path = require('path');
-const _ = require('asposecellscloud');
-
-const cellsApi = new CellsApi(process.env.CellsCloudClientId, process.env.CellsCloudClientSecret,"v3.0",process.env.CellsCloudApiBaseUrl);
-
-var remoteFolder = "TestData/In"
-  
-var localName = "Book1.xlsx"
-var remoteName = "Book1.xlsx"
-
-var localNameRequest = new  model.UploadFileRequest();
-localNameRequest.uploadFiles ={localName:fs.createReadStream(localPath  + localName)};
-localNameRequest.path = remoteFolder + "/" + remoteName ;
-localNameRequest.storageName ="";
-cellsApi.uploadFile(localNameRequest );
- 
-var format = "csv"
-
-var mapFiles = {};           
-
- mapFiles[localName]= fs.createReadStream(localPath  +localName) ;
-
-var request = new model.PutConvertWorkbookRequest();
-request.file =  mapFiles;
-request.format =  format;
-return cellsApi.putConvertWorkbook(request).then((result) => {
-    expect(result.response.statusCode).to.equal(200);
-});
-```
+{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_AvailableSDKs.ts" >}}

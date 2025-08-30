@@ -1,49 +1,145 @@
 ﻿---
-title: Aspose.Cells Clou aracılığıyla dosya formatları nasıl dönüştürülür?
+title: Aspose.Cells Clou ile elektronik tablo dosya biçimleri nasıl dönüştürülür
+linktitle: E-tablo dosya biçimi nasıl dönüştürülür
 type: docs
 url: /tr/how-to-convert-file-formats
-description: Aspose.Cells Cloud aracılığıyla dosya formatları nasıl dönüştürülür?
+description: Aspose.Cells Cloud ile dosya formatları nasıl dönüştürülür?
 weight: 10
-kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Aspose.Cells Cloud aracılığıyla dosya formatları nasıl dönüştürülür?
+kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Aspose.Cells Bulut aracılığıyla dosya formatlarını nasıl dönüştürebilirim?
 ---
 ## giriiş
-Aspose.Cells Cloud API, elektronik tablo dosyalarının oluşturulması, düzenlenmesi ve dönüştürülmesi için hazırlanmış güçlü bir bulut tabanlı çözümdür. Bu makalede, tipik kullanım durumları ve örnek kod da dahil olmak üzere, dosya formatı dönüşümü için Aspose.Cells Bulut API'i kullanma sürecinde size yol göstereceğiz.
 
-## Genel Bakış
+Aspose.Cells Bulut E-Tablosu API, yerel ve bulut tabanlı e-tablo dosyalarını dönüştürmek için bir dizi çift kanallı arayüz sağlar. Excel (XLS, XLSX), CSV, HTML ve PDF gibi formatları destekleyerek, çeşitli ihtiyaçları karşılamak için dönüştürmeyi zahmetsiz hale getirir.
 
-Aspose.Cells Bulut API, elektronik tablo dosyalarını farklı formatlar arasında dönüştürmek için güçlü bir API seti sağlar. Desteklenen formatlar şunları içerir:**Excel** (XLS, XLSX),**CSV**, **HTML**, **PDF**, ve dahası. Aspose.Cells Cloud API'den yararlanarak, elektronik tablo dosyalarını zahmetsizce diğer yaygın olarak kullanılan formatlara dönüştürebilir ve çeşitli gereksinimleri karşılayabilirsiniz.
+### Üç Dönüştürme Modu · Birleşik Nesne Modeli · Tam Biçim Kapsamı
 
-Dosya dönüştürme için genellikle çeşitli çevrimiçi ortamlarla uyumlu çok sayıda API mevcuttur. Aşağıda bu API'lerin ayrıntılı bir açıklaması bulunmaktadır:
+![Dönüşüm Modları](image.png)
 
-- **[Belirtilen formatta bir Excel dosyası alın](https://reference.aspose.cloud/cells/#/Conversion/GetWorkbook)** . Bu API'i nasıl arayacağınız konusunda rehberlik için lütfen şu adrese bakın:[geliştirme kılavuzu](https://docs.aspose.cloud/cells/export-different-formats/).
-- **[Excel dosyasını diğer formattaki dosyaya dönüştürün](https://reference.aspose.cloud/cells/#/Conversion/PutConvertWorkbook)** . Bu API'i nasıl arayacağınız konusunda rehberlik için lütfen şu adrese bakın:[geliştirme kılavuzu](https://docs.aspose.cloud/cells/convert/excel-to-different-formats/).
-- **[Excel dosyasını başka formattaki dosya olarak kaydedin](https://reference.aspose.cloud/cells/#/Conversion/PostWorkbookSaveAs)** . Bu API'i nasıl arayacağınız konusunda rehberlik için lütfen şu adrese bakın:[geliştirme kılavuzu](https://docs.aspose.cloud/cells/saveas-other-formats/).
-- **[Excel dosyayı dışa aktarın](https://reference.aspose.cloud/cells/#/LightCells/PostExport)** . Bu API'i nasıl arayacağınız konusunda rehberlik için lütfen şu adrese bakın:[geliştirme kılavuzu](https://docs.aspose.cloud/cells/export/excel-to-different-formats/).
+## **Çekirdek Dönüşüm Matrisi**
 
+| Dönüşüm Türü| Nesne Düzeyi| Tipik API| Çıktı Biçimleri|
+|-----------------|-------------|---------------------------|--------------------------|
+|**Yerel Dönüşüm**  | Çalışma kitabı|`ConvertSpreadsheet`            | PDF/XLSX/JSON/.... 30+ format|
+|| Çalışma sayfası|`ConvertWorksheetToImage`       |PNG/JPEG/SVG                   |
+|||`ConvertWorksheetToPdf`         | PDF|
+|| Masa|`ConvertTableToImage`           |PNG/JPEG/SVG/....              |
+|||`ConvertTableToPdf`             | PDF|
+|||`ConvertTableToCsv`             | CSV|
+|||`ConvertTableToHtml`            | HTML|
+|||`ConvertTableToJson`            | HTML|
+|| Menzil|`ConvertRangeToImage`           |PNG/JPEG/SVG/....              |
+|||`ConvertRangeToPdf`             | PDF|
+|||`ConvertRangeToCsv`             | CSV|
+|||`ConvertRangeToHtml`            | HTML|
+|||`ConvertRangeToJson`            | JSON|
+||Çizelge|`ConvertChartToImage`           |PNG/JPEG/SVG/....              |
+|||`ConvertChartToPdf`             |PDF                            |
+|**Bulut Dönüşümü**  | Çalışma kitabı|`ExportSpreadsheetAsFormat`     | PDF/XLSX/JSON/.... 30+ format|
+|| Çalışma sayfası|`ExportWorksheetAsFormat`       | PDF/XLSX/JSON/.... 30+ format|
+|| Masa|`ExportTableAsFormat`           | PDF/XLSX/JSON/.... 30+ format|
+|| Menzil|`ExportRangeAsFormat`           | PDF/XLSX/JSON/.... 30+ format|
+||Çizelge|`ExportChartAsFormat`           | PDF/XLSX/JSON/.... 30+ format|
+|**Bulut Farklı Kaydet**     | Çalışma kitabı|`SaveSpreadsheetAs`             | PDF/XLSX/JSON/.... 30+ format|
 
-# Aspose.Cells Cloud aracılığıyla dosya formatları nasıl dönüştürülür?
+### **Yerel Dosya Dönüştürme**
 
- Aspose.Cells Bulut API şunları sağlar:[birden fazla SDK](https://github.com/aspose-cells-cloud) farklı programlama dilleri için. Tercih ettiğiniz programlama diliyle uyumlu SDK'yı seçin ve kurulum ve başlatma için birlikte gelen belgeleri izleyin. Alternatif olarak, kendi SDK'nızı aşağıdakilere göre oluşturabilirsiniz:[API referans](https://reference.aspose.cloud/cells/). Bu bölümde dosya dönüştürme işlemini detaylandırmak için örnek olarak C#'i kullanacağız.
+```csharp
+// Get Cells Cloud API client
+CellsApi cellsApi = new CellsApi(Environment.GetEnvironmentVariable("ProductClientId"), Environment.GetEnvironmentVariable("ProductClientSecret"));
+```
 
+- **Excel Dosya Dönüştürme**
 
-## Kayıt ve API Anahtarının Alınması
+```c#
+// Convert local Excel to PDF
+cellsApi.ConvertSpreadsheet(new ConvertSpreadsheetRequest { Spreadsheet = "EmployeeSalesSummary.xlsx", format = "pdf" }, "EmployeeSalesSummary.pdf");
+```
 
- Başlamadan önce yapmanız gerekenler[Aspose Bulut hesabını kaydedin](https://id.containerize.com/signup) Ve[kimlik doğrulama için API anahtarını edinin](https://dashboard.aspose.cloud/applications). Resmi Aspose Cloud web sitesine giriş yaparak ücretsiz bir hesap oluşturabilir ve kimlik doğrulama amacıyla API anahtarını alabilirsiniz.
+- **Excel Tablosunu SVG dosyasına dönüştürün**
 
- Daha ayrıntılı işlemler için lütfen aşağıdaki belgelere bakın:[Cells Cloud ile Hızlı Başlangıç](https://docs.aspose.cloud/cells/quickstart/)
+```c#
+// Convert local Excel Chart to Svg
+cellsApi.ConvertChartToImage(new SDK.Request.ConvertChartToImageRequest
+{
+    Spreadsheet = "EmployeeSalesSummary.xlsx",
+    worksheet = "Sales",
+    chartIndex = 0,
+    format = "svg"
+}, "EmployeeSalesSummary.svg");
 
+```
 
-## Aspose.Cells Bulut SDK'sını Yükleme ve Başlatma
+- **Tabloyu CSV dosyasına dönüştür**
 
-Aspose.Cells-Cloud NuGet paketini .NET projenize kurun, NuGet Paket Yönetici Konsolunu veya Visual Studio’deki NuGet Paket Yöneticisini kullanabilirsiniz.
-Paket Yönetici Konsolu'nu kullanarak paketi şu şekilde yükleyebilirsiniz:
+```C#
+# Convert the sale logs table of the Sales worksheet to csv
+result = api.ConvertTableToCsv( new SDK.Request.ConvertTableToCsvRequest
+{
+    Spreadsheet = "EmployeeSalesSummary.xlsx",
+    worksheet = "Sales",
+    tableName = "SaleLogs",
+    format = "csv"
+}, "EmployeeSalesLog.csv");
+
+```
+
+### **Bulut Dosya Dönüştürme**
+
+Ayrıca Aspose Cells Cloud API istemcisini de edinmeniz gerekiyor.
+
+```csharp
+// Get Cells Cloud API client
+CellsApi cellsApi = new CellsApi(Environment.GetEnvironmentVariable("ProductClientId"), Environment.GetEnvironmentVariable("ProductClientSecret"));
+```
+
+- **Excel'i PDF'e dönüştürün**
+
+```csharp
+// Convert cloud Excel to PDF, Save to local file
+cellsApi.ExportSpreadsheetAsFormat( new SDK.Request.ExportSpreadsheetAsFormatRequest 
+{ 
+    name = "EmployeeSalesSummary.xlsx" ,
+    format = "pdf",
+    folder ="NetSDKData" 
+} , "EmployeeSalesSummary.pdf");   
+```
+
+- **Excel çalışma sayfasını PDF'ye dönüştürün**
+
+```csharp
+// Convert cloud Excel worksheet to PDF, Save to local file
+cellsApi.ExportWorksheetAsFormat (new SDK.Request.ExportWorksheetAsFormatRequest 
+{ 
+    name = "EmployeeSalesSummary.xlsx",
+    worksheet = "Sales",
+    format = "pdf",
+    folder ="NetSDKData" 
+} , "EmployeeSalesSummary_Sales.pdf");   
+```
+
+```csharp
+// Convert cloud Excel worksheet to PDF, Save to local file
+cellsApi.ExportWorksheetAsFormat (new SDK.Request.ExportWorksheetAsFormatRequest 
+{ 
+    name = "EmployeeSalesSummary.xlsx",
+    worksheet = "Sales",
+    format = "pdf",
+    folder ="NetSDKData" 
+} , "EmployeeSalesSummary_Sales.pdf");   
+```
+
+## Aspose.Cells Cloud SDK'sını Yükleme ve Başlatma
+
+.NET projenize Aspose.Cells-Cloud NuGet paketini kurun, NuGet Paket Yöneticisi Konsolunu veya Visual Studio'deki NuGet Paket Yöneticisini kullanabilirsiniz.
+Paketi Paket Yöneticisi Konsolu'nu kullanarak nasıl kurabileceğiniz aşağıda açıklanmıştır:
 
 ```Powershell
 
 Install-Package Aspose.Cells-Cloud
 
 ```
-CellsApi sınıfının yeni bir örneğini oluşturur ve onu istemci kimliğiniz ve istemci sırrınızla başlatır. Yukarıda belirtilen kod pasajının ayrıntıları aşağıda verilmiştir:
+
+CellsApi sınıfının yeni bir örneğini oluşturur ve istemci kimliğiniz ve istemci sırrınızla başlatır. Yukarıda belirtilen kod parçacığının ayrıntıları aşağıdadır:
 
 ```CSharp
 
@@ -51,65 +147,20 @@ CellsApi cellsInstance = new CellsApi(clientID, clientSecret);
 
 ```
 
-KENDİNİZİ değiştirdiğinizden emin olun_API_ANAHTAR, SİZİN_UYGULAMA_SID ve SİZİN_UYGULAMA_Gerçek API anahtarınızı, uygulama SID'nizi ve uygulama anahtarınızı içeren KEY.
+KENDİ'nizi değiştirdiğinizden emin olun_API_ANAHTAR, SENİN_UYGULAMA_SID ve SİZİN_UYGULAMA_Gerçek API anahtarınız, uygulama SID'niz ve uygulama anahtarınızla KEY.
 
-## API İsteğini oluşturun ve API'i arayın.
+## **Dosya Biçimi Dönüştürme Kullanım Örnekleri**
 
-Bu, PutConvertWorkbookRequest'in yeni bir örneğini oluşturur ve bunu istediğiniz dosya formatı ve dosyalarla başlatır. Daha sonra bu dönüşüm isteğiyle birlikte API dönüşümünü çağırır. Yukarıda belirtilen kod pasajının ayrıntıları aşağıda verilmiştir:
+ Aspose Cells Bulut API kurumsal düzeyde hizmet sunar**elektronik tablo dönüşümü** Kritik iş senaryoları için yetenekler:
 
+1. **Excel → PDF**  
+ Korunmuş biçimlendirmeyle baskıya hazır raporlar oluşturun
+2. **Elektronik Tablolar → HTML**  
+ Etkileşimli tabloları web uygulamalarına yerleştirin
+3. **CSV → Excel (XLSX)**  
+ Ham verileri analiz edilebilir çalışma kitaplarına dönüştürün
+4. **Özel Format Kod Dönüştürme**  
+ 20'den fazla format arasında dönüştürme yapın (XLS, XLSB, ODS, FODS, TSV)
+![Giriş formatlarından çıktı formatlarına dönüştürme](image-1.png)
 
-```CSharp
-
-using System.Collections.Generic;
-
-PutConvertWorkbookRequest request = new PutConvertWorkbookRequest();
-
-request.Format = "pdf";
-IDictionary<string, System.IO.Stream> mapFiles =new Dictionary<string, System.IO.Stream>(); 
-mapFiles.Add("Book1.xlsx", File.OpenRead(@"c:\testdata\Book1.xlsx"));
-mapFiles.Add("Book2.xlsx", File.OpenRead(@"c:\testdata\Book2.xlsx"));
-request.Files = mapFiles;
-
-cellsInstance.PutConvertWorkbook(request);
-
-```
-
-Dönüştürme işlevi daha az bilinen bir özellik içerir: genişletilmiş sorgu parametreleri. Bu özellik öncelikle müşterilerin farklı ihtiyaçlarını karşılamak için ek tasarruf parametrelerinin ayarlanmasına olanak sağlar. Belirli parametreler, PDFSaveOptions gibi Aspose.Cells API referansına göre ilgili formatta kaydedilebilir.
-
-Peki bu genişletilmiş sorgu parametrelerini nasıl ayarlıyorsunuz? Aşağıdaki kod parçacığını inceleyelim:
-
-```CSharp
-
-using System.Collections.Generic;
-
-PutConvertWorkbookRequest request = new PutConvertWorkbookRequest();
-
-request.Format = "pdf";
-IDictionary<string, System.IO.Stream> mapFiles =new Dictionary<string, System.IO.Stream>(); 
-mapFiles.Add("Book1.xlsx", File.OpenRead(@"c:\testdata\Book1.xlsx"));
-mapFiles.Add("Book2.xlsx", File.OpenRead(@"c:\testdata\Book2.xlsx"));
-request.Files = mapFiles;
-request.extendQueryParameterMap = new  Dictionary<string, string>();
-request.extendQueryParameterMap.Add("OnePagePerSheet","false");
-request.extendQueryParameterMap.Add("CalculateFormula","true");
-cellsInstance.PutConvertWorkbook(request);
-
-```
-
-## Kullanım Durumları
-
- Dosya**format dönüştürme** Aspose.Cells Cloud API'in özelliği çeşitli pratik kullanım durumlarında faydalıdır. İşte bazı yaygın senaryolar:
-
-- **Excel dosyalarını PDF formatına dönüştürün** Farklı cihazlarda paylaşım ve yazdırma için.
-- **Elektronik tablo dosyalarını HTML biçimine dönüştürün** Web sayfalarında görüntülemek ve gömmek için.
-- **CSV dosyalarını Excel formatına dönüştürün** Elektronik tablo uygulamalarında daha fazla düzenleme ve analiz için.
-- **Elektronik tablo dosyalarını diğer formatlara dönüştürün**belirli iş gereksinimlerini veya veri alışverişi ihtiyaçlarını karşılamak için.
-
-## Çözüm
-
- Aspose.Cells Cloud API ile, ister dönüştürme olsun, elektronik tablo dosyaları için dosya formatı dönüştürmelerini kolayca gerçekleştirebilirsiniz.**Excel** dosyalar**PDF**, **HTML** veya dönüştürme**CSV** dosyalar**Excel** biçim. Basit API aramaları yaparak ve uygun dönüştürme seçeneklerini ayarlayarak çeşitli dosya formatı dönüştürme gereksinimlerini verimli bir şekilde karşılayabilirsiniz. Üretkenliği artırmak ve geliştirme süresinden tasarruf etmek için Aspose.Cells Bulut API'i uygulamalarınıza entegre edin.
-
- Lütfen yukarıdaki örnek kodun yalnızca tanıtım amaçlı olduğunu ve onu pratikte kullanırken onu geçerli kimlik doğrulama bilgileri ve dosya yollarıyla değiştirmeniz gerekeceğini unutmayın. Ayrıca Aspose.Cells Cloud API, elektronik tablo oluşturma, düzenleme, işleme ve veri işleme gibi birçok başka özellik sunar. Ayrıntılı API belgelerini ve örnek kodu şu adreste bulabilirsiniz:[resmi Aspose web sitesinin geliştirici kılavuzu](/developer-guide/).
-
-Bu makalenin, dosya formatı dönüşümü için Aspose.Cells Cloud API'i nasıl kullanacağınızı anlamanıza yardımcı olacağını umuyoruz. Uygulamanızda iyi şanslar!
-
+## **Sonuç: Tek Bir API Çağrısıyla Dönüşümleri Kolaylaştırın**

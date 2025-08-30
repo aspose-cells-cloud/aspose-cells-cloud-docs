@@ -1,88 +1,58 @@
 ﻿---
-title: Aspose.Cells Cloud SDK для G
+title: Aspose.Cells Облачный SDK для G
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/available-sdks/aspose-cells-cloud-go/
-description: Aspose.Cells Cloud SDK для Go обеспечивает надежную кросс-платформенную поддержку для разработчиков Go, упрощая интеграцию и использование для Windows, Linux или macOS. Он поддерживает Excel для создания, преобразования, объединения, разделения, защиты, операций с внутренними объектами и т. д.
+description: Cloud SDK Aspose.Cells для Go обеспечивает мощную кроссплатформенную поддержку для разработчиков Go, упрощая интеграцию и использование в Windows, Linux и macOS. Он поддерживает Excel для создания, преобразования, слияния, разделения, защиты, операций с внутренними объектами и т. д.
 weight: 30
-kwords: Go, Excel, Office Облако, REST API, Диаграмма, Сводная таблица, Таблица, Электронная таблица, PDF, CSV, Json, Markdown
+kwords: Go, Excel, Office Cloud, REST API, Chart, Pivot Table, Таблица, Электронная таблица, PDF, CSV, Json, Markdown
 ---
- SDK имеет открытый исходный код и лицензируется по лицензии MIT. Вы можете получить доступ к исходному коду библиотеки Go для Aspose.Cells Cloud.[здесь](https://github.com/aspose-cells-cloud/aspose-cells-cloud-go).
+ SDK имеет открытый исходный код и распространяется по лицензии MIT. Вы можете получить доступ к исходному коду библиотеки Go для Aspose.Cells Cloud.[здесь](https://github.com/aspose-cells-cloud/aspose-cells-cloud-go).
 
-# **Как использовать библиотеку Go от Aspose.Cells Cloud**
+# **Как использовать библиотеку Go в облаке Aspose.Cells**
 
-Aspose.Cells Cloud SDK для Go — это мощная библиотека, которая позволяет разработчикам манипулировать и обрабатывать файлы Microsoft Excel с помощью языка программирования Go. С помощью этого SDK вы можете создавать, редактировать и конвертировать документы Excel в облаке без установки дополнительного программного обеспечения или зависимостей на локальном компьютере.
+Aspose.Cells Cloud SDK для Go — это мощная библиотека, позволяющая разработчикам обрабатывать файлы Microsoft и Excel, используя язык программирования Go. С помощью этого SDK вы можете создавать, редактировать и конвертировать документы Excel в облаке, не устанавливая дополнительное программное обеспечение или зависимости на локальный компьютер.
 
-В этой статье мы рассмотрим, как использовать Cloud SDK Aspose.Cells для Go для выполнения некоторых распространенных задач, таких как создание новой книги Excel, вставка данных в ячейки и сохранение измененной книги в облаке.
+В этой статье мы рассмотрим, как использовать Aspose.Cells Cloud SDK для Go для выполнения некоторых распространенных задач, таких как создание новой книги Excel, вставка данных в ячейки и сохранение измененной книги в облаке.
 
 ## **Начиная**
 
- Прежде чем вы сможете начать использовать Cloud SDK для Go Aspose.Cells, вам необходимо настроить среду разработки и установить необходимые зависимости. Ссылаться на[статья](https://docs.aspose.cloud/cells/quickstart/) на веб-сайте Aspose, чтобы получить идентификатор клиента и секрет клиента.
+ Прежде чем начать использовать Cloud SDK Aspose.Cells для Go, необходимо настроить среду разработки и установить необходимые зависимости. См.[статья](https://docs.aspose.cloud/cells/quickstart/) на сайте Aspose, чтобы получить свой идентификатор клиента и секретный код клиента.
 
-## Как установить пакет Go для облака Aspose.Cells
+## Как установить пакет Go для Aspose.Cells Cloud
 
-Вы можете установить Aspose.Cells Cloud SDK для Go с помощью команды `go get`. Откройте терминал или командную строку и выполните следующую команду:
+Вы можете установить Cloud SDK Aspose.Cells для Go с помощью команды `go get`. Откройте терминал или командную строку и выполните следующую команду:
 
 ```bash
-go get -u github.com/aspose-cells-cloud/aspose-cells-cloud-go
+go install github.com/aspose-cells-cloud/aspose-cells-cloud-go@latest
 ```
 
-Это приведет к загрузке и установке последней версии SDK в ваше рабочее пространство Go.
-
+Это позволит загрузить и установить последнюю версию SDK в ваше рабочее пространство Go.
 
 ## Как импортировать библиотеку Go в свой проект
 
-
 ```golang
 package main
 
 import (
-	asposecellscloud "github.com/aspose-cells-cloud/aspose-cells-cloud-go"
+ . "github.com/aspose-cells-cloud/aspose-cells-cloud-go/v25"
 )
 ```
 
-## Как использовать пакет Go для преобразования Xlsx в PDF
+## Чтобы начать работу с Aspose.Cells Cloud for Go, выполните следующие действия.
 
-- Импортировать облачную библиотеку Aspose.Cells
-Начните с импорта необходимого пакета из Cloud Go SDK Aspose.Cells в свой проект.
-- Настройте клиент API с учетными данными
- Аутентифицируйте своего клиента API с помощью уникального идентификатора клиента и секретного кода клиента.
-- Подготовьте параметры преобразования
- Определите параметры задачи преобразования, включая имя исходного файла, желаемый выходной формат и путь к папке хранения.
-- Выполнить преобразование книги
- Вызовите процесс преобразования с помощью метода PostConvertWorkbook и обработайте ответ.
+- Создайте учетную запись по номеру Aspose для Cloud и получите идентификатор клиента приложения и секретный код.
+- Создайте каталог для своего проекта и файл main.go в нём. Добавьте следующий код в файл main.go.
 
-### **Образец кода**
+### **Пример кода**
 
-```golang
-package main
+{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_AvailableSDKs.go" >}}
 
-import (
-	"os"
-	asposecellscloud "github.com/aspose-cells-cloud/aspose-cells-cloud-go"
-)
-func main() {
-	instance := asposecellscloud.NewCellsApiService(os.Getenv("ProductClientId"), os.Getenv("ProductClientSecret"), "https://api.aspose.cloud", "v3.0")
-    remoteFolder := "TestData/In"
+- Инициализируйте проект go.mod, извлеките зависимости для вашего проекта и запустите созданное вами приложение.
 
-    localName := "Book1.xlsx"
-    remoteName := "Book1.xlsx"
-
-    format := "pdf"
-
-    var mapFiles map[string]string       
-    mapFiles = make(map[string]string)
-    mapFiles[localName]=  localName 
-
-    request := new (asposecellscloud.PutConvertWorkbookRequest)
-    request.File =         mapFiles    
-    request.Format =         format    
-    _, httpResponse, err := instance.PutConvertWorkbook(request)
-    if err != nil {
-      print(err)
-    } else if httpResponse.StatusCode < 200 || httpResponse.StatusCode > 299 {
-      print("Test fail")
-    }
-}
+```bash
+go mod init main
+go mod tidy
+go run main.go
 
 ```

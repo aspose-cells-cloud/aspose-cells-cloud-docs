@@ -1,40 +1,38 @@
 ﻿---
-title: كيفية تشغيل دوكر كونتين
+title: كيفية تشغيل Docker Containe
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/getting-started/how-to-run-docker-container/
 aliases: [/how-to-run-docker-container/]
-description: كيفية تشغيل حاوية Docker Aspose.Cells السحابية. Aspose.Cells تدعم السحابة Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
+description: كيفية تشغيل حاوية Docker Aspose.Cells السحابية. تدعم Aspose.Cells السحابية Excel إنشاء الكائنات الداخلية وتحويلها ودمجها وتقسيمها وحمايتها وتشغيلها وما إلى ذلك.
 weight: 100
-kwords: Excel، Office Cloud، REST API، جدول البيانات، PDF، CSV، Json، Markdwon، كيفية تشغيل حاوية Docker
+kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، كيفية تشغيل حاوية Docker
 ---
- ال**عامل ميناء**تم تصميم هذه التقنية لأتمتة نشر التطبيقات باستخدام حاويات خفيفة الوزن. يمكن للمطورين استخدام**حاوية عامل الميناء** لاختتام تطبيق بجميع مكتباته وتبعياته ونشر كل شيء كحزمة واحدة.
+ ال**عامل ميناء** صُممت هذه التقنية لأتمتة نشر التطبيقات باستخدام حاويات خفيفة الوزن. يمكن للمطورين استخدام**حاوية Docker** لتغليف التطبيق بكل مكتباته وتبعياته ونشر كل شيء كحزمة واحدة.
 
- Aspose.Cells قام فريق Cloud بنشر حاوية Docker على[مركز عامل الميناء](https://hub.docker.com/r/aspose/cells-cloud) لتسهيل مستخدمي Docker. سترشدك الأقسام التالية إلى كيفية تشغيل أوامر Docker أو كتابة التكوين في ملف Yaml لأداة إنشاء Docker.
+ Aspose.Cells نشر فريق Cloud حاوية Docker على[مركز دوكر](https://hub.docker.com/r/aspose/cells-cloud)لتسهيل الأمر على مستخدمي Docker. سترشدك الأقسام التالية إلى كيفية تشغيل أوامر Docker أو كتابة الإعدادات في ملف Yaml لأداة Docker Compose.
 
 ## تكوين الحاوية
 
-### الكميات المطلوبة
+### الأحجام المطلوبة
 
-|مسار التثبيت في الحاوية|وصف|
+|مسار التركيب في الحاوية|وصف|
 |:- |:- |
-|ج:\الخطوط|مجلد يحتوي على الخطوط، والذي سيتم استخدامه لعرض المستندات|
+|ج:\الخطوط|مجلد يحتوي على الخطوط التي سيتم استخدامها لعرض المستندات|
 |ج:\البيانات|مجلد تخزين الملفات|
 
 ### حدود
 
 |اسم|وصف|
 |:- |:- |
-|مفتاح الترخيص العام|المفتاح العام للترخيص|
+|ترخيص المفتاح العام|المفتاح العام للترخيص|
 |مفتاح الترخيص الخاص|المفتاح الخاص للترخيص|
-
 
 إذا تم حذف معلمات "الترخيص"، فسيعمل التطبيق في الوضع التجريبي.
 
+### تشغيل حاوية Docker باستخدام سطر الأوامر
 
-### قم بتشغيل حاوية Docker باستخدام سطر الأوامر
-
-يمكنك ببساطة تشغيل أمر الإرساء التالي بعد سحب الحاوية منه[مركز عامل الميناء](https://href.li/?https://hub.docker.com/r/aspose/cells-cloud).
+ يمكنك ببساطة تشغيل أمر docker التالي بعد سحب الحاوية من[مركز دوكر](https://href.li/?https://hub.docker.com/r/aspose/cells-cloud).
 
 ```JAVA
 docker run   -e "LicensePublicKey=public_key" -e "LicensePrivateKey=private_key" -v c:/data:c:/data  -v C:/Windows/Fonts:C:/Windows/Fonts -p 80:5000   aspose/cells-cloud

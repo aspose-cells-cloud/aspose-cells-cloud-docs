@@ -1,33 +1,32 @@
 ﻿---
-title: EtiketLis
+title: TagLis
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/docker/tag-list/
 description: Desteklenen Platformlar
 weight: 30
-kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, TagList
+kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Etiket Listesi
 ---
-##  Windows Sunucu 2016 Görselleri ##
+##  Windows Sunucu 2016 Görüntüleri ##
 
-Etiketler | Mimarlık | Docker dosyası | Açıklama
+Etiketler | Mimari | Dockerfile | Açıklama
 ---|:--:|:--:|---:
-ltsc2016.23.5.0 | x64 | Docker dosyası yok | Yükseltmeyi durdurun. Son sürüm 23.5.0
+ltsc2016.23.5.0 | x64 | Dockerfile Yok | Yükseltmeyi durdurun. Son sürüm 23.5.0'dır.
 
+## Windows Sunucu 2019 Görüntüleri ##
 
-##  Windows Sunucu 2019 Görselleri ##
-
-Etiketler | Mimarlık | Docker dosyası | Açıklama
+Etiketler | Mimari | Dockerfile | Açıklama
 ---|:--:|:--:|---:
-ltsc2019.23.11.0 | x64 | Docker dosyası yok |
+ltsc2019.25.7.0 | x64 | Dockerfile Yok |
 
-##  Windows Sunucu 2022 Görselleri ##
+##  Windows Sunucu 2022 Görüntüleri ##
 
-Etiketler | Mimarlık | Docker dosyası | Açıklama
+Etiketler | Mimari | Dockerfile | Açıklama
 ---|:--:|:--:|---:
- ltsc2022.23.11.0 | x64 | Docker dosyası yok |
+ltsc2022.25.7.0 | x64 | Dockerfile Yok |
 
-##  Linux Görselleri ##
+##  Linux Görüntüleri ##
 
-Etiketler | Mimarlık | Docker dosyası | Açıklama
+Etiketler | Mimari | Dockerfile | Açıklama
 ---|:--:|:--:|---:
-linux.23.11.0 | x64 | Docker dosyası yok |
+linux.25.7.0 | x64 | Dockerfile Yok |

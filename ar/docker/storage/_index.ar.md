@@ -3,9 +3,9 @@ title: تخزين
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/docker/storage/
-description: كيفية ضبط موضع التخزين حول Aspose.Cells Cloud for Docker
+description: كيفية تعيين موضع التخزين حول Aspose.Cells Cloud لـ Docker
 weight: 30
-kwords: Excel، Office كلاود، ريست API، جدول بيانات، PDF، CSV، Json، Markdwon، تخزين
+kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، التخزين
 ---
 ##  تكوين التخزين الافتراضي ##
 
@@ -49,7 +49,7 @@ kwords: Excel، Office كلاود، ريست API، جدول بيانات، PDF،
 ##  الموضع الافتراضي ##
 
 
-- **شبابيك**
+- **النوافذ**
 
 ```powershell
 
@@ -68,7 +68,7 @@ c:\app\storageResource.json
 
 ##  تكوين التخزين المخصص ##
 
-تحتاج إلى إعادة تحديد ملف تعريف التخزين لملف الصورة السحابية Aspose.Cells عندما يحتاج العميل إلى تحديد مجلد التخزين.
+هناك حاجة إلى إعادة تحديد ملف تعريف التخزين لملف صورة السحابة Aspose.Cells عندما يحتاج العميل إلى تحديد مجلد التخزين.
 
 ``` powershell
 
@@ -77,4 +77,4 @@ docker run  -d  -v c:/data:c:/data  -p 47900:5000  -e LicensePublicKey=yourLicen
 ```
 
 **وثيقة مرجعية** : 
-  - [تشغيل عامل الميناء]( https://docs.docker.com/engine/reference/commandline/run/)
+  - [تشغيل Docker]( https://docs.docker.com/engine/reference/commandline/run/)

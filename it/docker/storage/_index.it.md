@@ -5,7 +5,7 @@ type: docs
 url: /it/docker/storage/
 description: Come impostare la posizione di archiviazione su Aspose.Cells Cloud per Docker
 weight: 30
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Archiviazione
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Archiviazione
 ---
 ##  Configurazione di archiviazione predefinita ##
 
@@ -46,7 +46,7 @@ kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdw
 
 {{< /tabs >}}
 
-##  Posizione di default ##
+##  Posizione predefinita ##
 
 
 - **finestre**
@@ -77,4 +77,4 @@ docker run  -d  -v c:/data:c:/data  -p 47900:5000  -e LicensePublicKey=yourLicen
 ```
 
 **Documento di riferimento** : 
-  - [Esegui Docker]( https://docs.docker.com/engine/reference/commandline/run/)
+  - [Esecuzione Docker]( https://docs.docker.com/engine/reference/commandline/run/)

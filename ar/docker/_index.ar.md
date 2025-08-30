@@ -1,25 +1,77 @@
 ﻿---
-title: قفص الاتهام
+title: دوكي
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/docker-developer-guide/
-aliases: [/docker/]
-description: Aspose.Cells سحاب
+aliases: [/docker/, /docker/run/]
+description: Aspose.Cells سحابة
 weight: 30
-kwords: Excel، Office كلاود، ريست API، جدول بيانات، PDF، CSV، Json، Markdwon، Docker
+kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، Docker
 ---
-## Aspose.Cells كلاود دوكر
+## Aspose.Cells دوكر السحابي
 
- Aspose.Cells Cloud Image متاحة لنظام التشغيل Linux، Microsoft Windows 10 Pro، Microsoft Windows Server 2016، وMicrosoft Windows Server 2019.
+تتوفر صورة السحابة Aspose.Cells لنظام Linux، وMicrosoft Windows 11 Pro، وMicrosoft Windows Server 2016، وMicrosoft Windows Server 2019، وMicrosoft Windows Server 2022.
+
+## API مرجع - Aspose.Cells Cloud Docker
+
+- <https://hostname:port/swagger>
+- <https://hostname:port/swagger/ui/index.html>
+
+## منفذ العرض
+
+المنفذ | الوصف | مطلوب
+---|:--:|---:
+5000 | مجلد يحتوي على الخطوط التي سيتم استخدامها لعرض المستندات | صحيح
+
+##  الأحجام المطلوبة ##
+
+مسار التثبيت في الحاوية | الوصف | مطلوب
+---|:--:|---:
+C:\fonts | مجلد يحتوي على الخطوط التي سيتم استخدامها لعرض المستندات | خطأ
+C:\data | مجلد تخزين الملفات | خطأ
+
+##  معلمات التشغيل ##
+
+الاسم | الوصف | مطلوب
+---|:--:|---:
+LicensePublicKey | المفتاح العام للترخيص | صحيح
+LicensePrivateKey | المفتاح الخاص للترخيص | صحيح
+مسار ملف بيانات اعتماد التخزين | مسار ملف تهيئة التخزين. الملف الافتراضي هو ./storageResource.json | صحيح
+
+##  أمر التشغيل ##
+
+{{< tabs tabTotal="2" tabID="1" tabName1="windows" tabName2="linux" >}}
+
+{{< tab tabNum="1" >}}
+
+```windows
+
+docker run  -d  -v c:/data:c:/data  -v C:/Windows/Fonts:C:/Windows/Fonts -p 47900:5000  -e LicensePublicKey=yourLicensePublicKey  -e LicensePrivateKey=yourLicensePrivateKey-e storagesCredentialsFilePath=./storageResource.json --name asposecellscloud  aspose/cells-cloud:linux.22.2.0
+
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+```linux
+
+docker run  -d  -p 47900:5000  -e LicensePublicKey=yourLicensePublicKey  -e LicensePrivateKey=yourLicensePrivateKey-e storagesCredentialsFilePath=./storageResource.json --name asposecellscloud  aspose/cells-cloud:linux.22.2.0
 
 
+```
 
-## API مرجع - Aspose.Cells كلاود دوكر
+{{< /tab >}}
 
-- https://hostname:port/swagger
-- https://hostname:port/swagger/ui/index.html
+{{< /tabs >}}
+
+**وثيقة مرجعية** :
+
+- [تشغيل Docker]( https://docs.docker.com/engine/reference/commandline/run/)
+-
 
 يرى:
-- [تحميل المعلومات](/cells/ar/docker/downloads/) 
-- [تشغيل المعلومات](/cells/ar/docker/run/) 
-- [معلومات التخزين](/cells/ar/docker/storage/) 
+
+- [معلومات التنزيل](/cells/ar/docker/downloads/)
+- [معلومات إصدار التشغيل](/cells/ar//docker/tag-list/)
+- [معلومات التخزين](/cells/ar/docker/storage/)

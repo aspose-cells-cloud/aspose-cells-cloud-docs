@@ -1,49 +1,145 @@
 ﻿---
-title: Come convertire i formati di file tramite Aspose.Cells Clou
+title: Come convertire i formati di file di fogli di calcolo con Aspose.Cells Clou
+linktitle: Come convertire il formato del file del foglio di calcolo
 type: docs
 url: /it/how-to-convert-file-formats
-description: Come convertire i formati di file tramite Aspose.Cells Cloud
+description: Come convertire i formati di file con Aspose.Cells Cloud
 weight: 10
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, Come convertire i formati di file tramite Aspose.Cells Cloud
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Come convertire i formati di file tramite Aspose.Cells Cloud
 ---
-## introduzione
-Aspose.Cells Cloud API è una potente soluzione basata su cloud creata per la creazione, la modifica e la conversione di file di fogli di calcolo. In questo articolo ti guideremo attraverso il processo di utilizzo di Aspose.Cells Cloud API per la conversione del formato file, inclusi casi d'uso tipici e codice di esempio.
+## Introduzione
 
-## Panoramica
+Aspose.Cells Cloud Spreadsheet API fornisce un set di interfacce a doppio canale per la conversione di file di fogli di calcolo locali e basati su cloud. Supporta formati come Excel (XLS, XLSX), CSV, HTML e PDF, semplificando la conversione per soddisfare diverse esigenze.
 
-Il cloud Aspose.Cells API fornisce un robusto set di API per convertire file di fogli di calcolo tra diversi formati. I formati supportati includono**Excel** (XLS, XLSX),**CSV**, **HTML**, **PDF**e altro ancora. Sfruttando Aspose.Cells Cloud API, puoi convertire facilmente i file dei fogli di calcolo in altri formati ampiamente utilizzati, soddisfacendo una vasta gamma di requisiti.
+### Tre modalità di conversione · Modello di oggetti unificato · Copertura completa del formato
 
-Sono disponibili numerose API per la conversione dei file, generalmente compatibili con vari ambienti online. Di seguito è riportata una descrizione dettagliata di queste API:
+![Modalità di conversione](image.png)
 
-- **[Ottieni un file Excel con il formato specificato](https://reference.aspose.cloud/cells/#/Conversion/GetWorkbook)** . Per indicazioni su come chiamare lo API, fare riferimento al[guida allo sviluppo](https://docs.aspose.cloud/cells/export-different-formats/).
-- **[Converti il file Excel in un altro formato di file](https://reference.aspose.cloud/cells/#/Conversion/PutConvertWorkbook)** . Per indicazioni su come chiamare lo API, fare riferimento al[guida allo sviluppo](https://docs.aspose.cloud/cells/convert/excel-to-different-formats/).
-- **[Salva il file Excel come file in altro formato](https://reference.aspose.cloud/cells/#/Conversion/PostWorkbookSaveAs)** . Per indicazioni su come chiamare lo API, fare riferimento al[guida allo sviluppo](https://docs.aspose.cloud/cells/saveas-other-formats/).
-- **[Esporta file Excel](https://reference.aspose.cloud/cells/#/LightCells/PostExport)** . Per indicazioni su come chiamare lo API, fare riferimento al[guida allo sviluppo](https://docs.aspose.cloud/cells/export/excel-to-different-formats/).
+## **Matrice di conversione del nucleo**
 
+| Tipo di conversione| Livello oggetto| Tipico API| Formati di output|
+|-----------------|-------------|---------------------------|--------------------------|
+|**Conversione locale**  | Quaderno di lavoro|`ConvertSpreadsheet`            | PDF/XLSX/JSON/.... 30+ formati|
+|| Foglio di lavoro|`ConvertWorksheetToImage`       |PNG/JPEG/SVG                   |
+|||`ConvertWorksheetToPdf`         | PDF|
+|| Tavolo|`ConvertTableToImage`           |PNG/JPEG/SVG/....              |
+|||`ConvertTableToPdf`             | PDF|
+|||`ConvertTableToCsv`             | Csv|
+|||`ConvertTableToHtml`            | HTML|
+|||`ConvertTableToJson`            | HTML|
+|| Allineare|`ConvertRangeToImage`           |PNG/JPEG/SVG/....              |
+|||`ConvertRangeToPdf`             | PDF|
+|||`ConvertRangeToCsv`             | Csv|
+|||`ConvertRangeToHtml`            | HTML|
+|||`ConvertRangeToJson`            | JSON|
+||Grafico|`ConvertChartToImage`           |PNG/JPEG/SVG/....              |
+|||`ConvertChartToPdf`             |PDF                            |
+|**Conversione cloud**  | Quaderno di lavoro|`ExportSpreadsheetAsFormat`     | PDF/XLSX/JSON/.... 30+ formati|
+|| Foglio di lavoro|`ExportWorksheetAsFormat`       | PDF/XLSX/JSON/.... 30+ formati|
+|| Tavolo|`ExportTableAsFormat`           | PDF/XLSX/JSON/.... 30+ formati|
+|| Allineare|`ExportRangeAsFormat`           | PDF/XLSX/JSON/.... 30+ formati|
+||Grafico|`ExportChartAsFormat`           | PDF/XLSX/JSON/.... 30+ formati|
+|**Salva con nome nel cloud**     | Quaderno di lavoro|`SaveSpreadsheetAs`             | PDF/XLSX/JSON/.... 30+ formati|
 
-# Come convertire i formati di file tramite Aspose.Cells Cloud
+### **Conversione di file locali**
 
- Lo Aspose.Cells Cloud API fornisce[più SDK](https://github.com/aspose-cells-cloud) per diversi linguaggi di programmazione. Scegli l'SDK che si allinea al tuo linguaggio di programmazione preferito e segui la documentazione allegata per l'installazione e l'inizializzazione. In alternativa, puoi creare il tuo SDK in base a[Riferimento API](https://reference.aspose.cloud/cells/). In questa sezione utilizzeremo C# come esempio per dettagliare il processo di conversione del file.
+```csharp
+// Get Cells Cloud API client
+CellsApi cellsApi = new CellsApi(Environment.GetEnvironmentVariable("ProductClientId"), Environment.GetEnvironmentVariable("ProductClientSecret"));
+```
 
+- **Excel Conversione file**
 
-## Registrazione e ottenimento chiave API
+```c#
+// Convert local Excel to PDF
+cellsApi.ConvertSpreadsheet(new ConvertSpreadsheetRequest { Spreadsheet = "EmployeeSalesSummary.xlsx", format = "pdf" }, "EmployeeSalesSummary.pdf");
+```
 
- Prima di iniziare, devi farlo[registra un account Cloud Aspose](https://id.containerize.com/signup) E[ottenere una chiave API per l'autenticazione](https://dashboard.aspose.cloud/applications). Accedendo al sito ufficiale Aspose Cloud è possibile creare un account gratuito e ottenere una chiave API per l'autenticazione.
+- **Converti il grafico Excel nel file SVG**
 
- Per operazioni più approfondite si rimanda ai seguenti documenti:[Avvio rapido con Cells Cloud](https://docs.aspose.cloud/cells/quickstart/)
+```c#
+// Convert local Excel Chart to Svg
+cellsApi.ConvertChartToImage(new SDK.Request.ConvertChartToImageRequest
+{
+    Spreadsheet = "EmployeeSalesSummary.xlsx",
+    worksheet = "Sales",
+    chartIndex = 0,
+    format = "svg"
+}, "EmployeeSalesSummary.svg");
 
+```
 
-## Installazione e inizializzazione di Aspose.Cells Cloud SDK
+- **Converti la tabella in file CSV**
 
-Installa il pacchetto Aspose.Cells-Cloud NuGet nel tuo progetto .NET, puoi utilizzare la console di gestione pacchetti NuGet o la console di gestione pacchetti NuGet in Visual Studio.
-Ecco come è possibile installare il pacchetto utilizzando la Console di gestione pacchetti:
+```C#
+# Convert the sale logs table of the Sales worksheet to csv
+result = api.ConvertTableToCsv( new SDK.Request.ConvertTableToCsvRequest
+{
+    Spreadsheet = "EmployeeSalesSummary.xlsx",
+    worksheet = "Sales",
+    tableName = "SaleLogs",
+    format = "csv"
+}, "EmployeeSalesLog.csv");
+
+```
+
+### **Conversione di file cloud**
+
+È inoltre necessario ottenere il client Cloud Aspose Cells API.
+
+```csharp
+// Get Cells Cloud API client
+CellsApi cellsApi = new CellsApi(Environment.GetEnvironmentVariable("ProductClientId"), Environment.GetEnvironmentVariable("ProductClientSecret"));
+```
+
+- **Converti Excel in PDF**
+
+```csharp
+// Convert cloud Excel to PDF, Save to local file
+cellsApi.ExportSpreadsheetAsFormat( new SDK.Request.ExportSpreadsheetAsFormatRequest 
+{ 
+    name = "EmployeeSalesSummary.xlsx" ,
+    format = "pdf",
+    folder ="NetSDKData" 
+} , "EmployeeSalesSummary.pdf");   
+```
+
+- **Converti il foglio di lavoro Excel in PDF**
+
+```csharp
+// Convert cloud Excel worksheet to PDF, Save to local file
+cellsApi.ExportWorksheetAsFormat (new SDK.Request.ExportWorksheetAsFormatRequest 
+{ 
+    name = "EmployeeSalesSummary.xlsx",
+    worksheet = "Sales",
+    format = "pdf",
+    folder ="NetSDKData" 
+} , "EmployeeSalesSummary_Sales.pdf");   
+```
+
+```csharp
+// Convert cloud Excel worksheet to PDF, Save to local file
+cellsApi.ExportWorksheetAsFormat (new SDK.Request.ExportWorksheetAsFormatRequest 
+{ 
+    name = "EmployeeSalesSummary.xlsx",
+    worksheet = "Sales",
+    format = "pdf",
+    folder ="NetSDKData" 
+} , "EmployeeSalesSummary_Sales.pdf");   
+```
+
+## Installazione e inizializzazione del Cloud SDK Aspose.Cells
+
+Installa il pacchetto Aspose.Cells-Cloud NuGet nel tuo progetto .NET, puoi utilizzare la console di gestione pacchetti NuGet o il gestore pacchetti NuGet in Visual Studio.
+Ecco come puoi installare il pacchetto utilizzando la console di Package Manager:
 
 ```Powershell
 
 Install-Package Aspose.Cells-Cloud
 
 ```
-Crea una nuova istanza della classe CellsApi, inizializzandola con l'ID client e il segreto client. Di seguito sono riportati i dettagli del suddetto snippet di codice:
+
+Crea una nuova istanza della classe CellsApi, inizializzandola con il tuo ID client e il tuo segreto client. Di seguito sono riportati i dettagli del frammento di codice sopra menzionato:
 
 ```CSharp
 
@@ -51,65 +147,20 @@ CellsApi cellsInstance = new CellsApi(clientID, clientSecret);
 
 ```
 
-Assicurati di sostituire il TUO_API_CHIAVE, TUA_APP_SID e TUO_APP_KEY con la chiave effettiva API, il SID dell'applicazione e la chiave dell'applicazione.
+Assicurati di sostituire il TUO_API_CHIAVE, LA TUA_APP_SID e IL TUO_APP_CHIAVE con la tua chiave API effettiva, SID dell'applicazione e chiave dell'applicazione.
 
-## Costruisci la Richiesta API e Chiama lo API.
+## **Casi d'uso della conversione del formato file**
 
-Ciò crea una nuova istanza di PutConvertWorkbookRequest, inizializzandola con il formato di file e i file desiderati. Quindi chiama la conversione API con questa richiesta di conversione. Di seguito sono riportati i dettagli del suddetto snippet di codice:
+ Aspose Cells Cloud API offre servizi di livello aziendale**conversione di fogli di calcolo** capacità per scenari aziendali critici:
 
+1. **Excel → PDF**  
+ Genera report pronti per la stampa con formattazione preservata
+2. **Fogli di calcolo → HTML**  
+ Incorpora tabelle interattive nelle applicazioni web
+3. **CSV → Excel (XLSX)**  
+ Trasforma i dati grezzi in cartelle di lavoro analizzabili
+4. **Transcodifica del formato personalizzato**  
+ Converti tra oltre 20 formati (XLS, XLSB, ODS, FODS, TSV)
+![Conversione da formati di input a formati di output](image-1.png)
 
-```CSharp
-
-using System.Collections.Generic;
-
-PutConvertWorkbookRequest request = new PutConvertWorkbookRequest();
-
-request.Format = "pdf";
-IDictionary<string, System.IO.Stream> mapFiles =new Dictionary<string, System.IO.Stream>(); 
-mapFiles.Add("Book1.xlsx", File.OpenRead(@"c:\testdata\Book1.xlsx"));
-mapFiles.Add("Book2.xlsx", File.OpenRead(@"c:\testdata\Book2.xlsx"));
-request.Files = mapFiles;
-
-cellsInstance.PutConvertWorkbook(request);
-
-```
-
-La funzione Converti include una funzionalità meno conosciuta: parametri di query estesi. Questa funzionalità serve principalmente per consentire l'impostazione di parametri di risparmio aggiuntivi per soddisfare le diverse esigenze dei clienti. Parametri specifici possono essere salvati nel formato corrispondente secondo il riferimento Aspose.Cells API, come PDFSaveOptions.
-
-Quindi, come si impostano questi parametri di query estesi? Esploriamo il seguente frammento di codice:
-
-```CSharp
-
-using System.Collections.Generic;
-
-PutConvertWorkbookRequest request = new PutConvertWorkbookRequest();
-
-request.Format = "pdf";
-IDictionary<string, System.IO.Stream> mapFiles =new Dictionary<string, System.IO.Stream>(); 
-mapFiles.Add("Book1.xlsx", File.OpenRead(@"c:\testdata\Book1.xlsx"));
-mapFiles.Add("Book2.xlsx", File.OpenRead(@"c:\testdata\Book2.xlsx"));
-request.Files = mapFiles;
-request.extendQueryParameterMap = new  Dictionary<string, string>();
-request.extendQueryParameterMap.Add("OnePagePerSheet","false");
-request.extendQueryParameterMap.Add("CalculateFormula","true");
-cellsInstance.PutConvertWorkbook(request);
-
-```
-
-## Casi d'uso
-
- Il file**conversione del formato** La funzionalità del Cloud Aspose.Cells API è utile in vari casi d'uso pratici. Ecco alcuni scenari comuni:
-
-- **Converti i file Excel nel formato PDF** per la condivisione e la stampa su diversi dispositivi.
-- **Converti file di fogli di calcolo nel formato HTML** per la visualizzazione e l'incorporamento nelle pagine web.
-- **Converti file CSV nel formato Excel** per ulteriori modifiche e analisi nelle applicazioni per fogli di calcolo.
-- **Converti file di fogli di calcolo in altri formati**per soddisfare specifici requisiti aziendali o esigenze di scambio di dati.
-
-## Conclusione
-
- Con Aspose.Cells Cloud API, puoi facilmente eseguire conversioni di formato file per file di fogli di calcolo, sia che si tratti di conversione**Excel** file in**PDF**, **HTML** o conversione**CSV** file in**Excel** formato. Effettuando semplici chiamate allo API e impostando le opzioni di conversione appropriate, puoi soddisfare in modo efficiente vari requisiti di conversione del formato file. Integra Aspose.Cells Cloud API nelle tue applicazioni per migliorare la produttività e risparmiare tempo di sviluppo.
-
- Tieni presente che il codice di esempio riportato sopra è solo a scopo dimostrativo e dovrai sostituirlo con credenziali di autenticazione e percorsi di file validi quando lo utilizzi nella pratica. Inoltre, Aspose.Cells Cloud API offre molte altre funzionalità, come la creazione, la modifica, la manipolazione e l'elaborazione dei dati di fogli di calcolo. È possibile trovare la documentazione dettagliata API e il codice di esempio su[guida per sviluppatori del sito web ufficiale Aspose](/developer-guide/).
-
-Ci auguriamo che questo articolo ti aiuti a capire come utilizzare Aspose.Cells Cloud API per la conversione del formato file. Buona fortuna con la tua implementazione!
-
+## **Conclusione: semplifica le conversioni con una chiamata al numero API**

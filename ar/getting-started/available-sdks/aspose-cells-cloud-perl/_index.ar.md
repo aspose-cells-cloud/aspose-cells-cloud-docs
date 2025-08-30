@@ -1,28 +1,27 @@
 ﻿---
-title: Aspose.Cells Cloud SDK لكل
+title: Aspose.Cells مجموعة SDK السحابية لكل
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/available-sdks/aspose-cells-cloud-perl/
-description: Aspose.Cells تدعم السحابة Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
+description: Aspose.Cells تدعم السحابة Excel لإنشاء الكائنات الداخلية وتحويلها ودمجها وتقسيمها وحمايتها وما إلى ذلك
 weight: 30
-kwords: Excel، Office كلاود، ريست API، جدول بيانات، PDF، CSV، Json، ماركدوون، Perl
+kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، Perl
 ---
- SDK مفتوح المصدر ومرخص بموجب ترخيص MIT. يمكنك الوصول إلى الكود المصدري للمكتبة Perl لسحابة Aspose.Cells[هنا](https://github.com/aspose-cells-cloud/aspose-cells-cloud-perl).
+مجموعة تطوير البرامج مفتوحة المصدر ومرخصة بموجب ترخيص معهد ماساتشوستس للتكنولوجيا. يمكنك الوصول إلى شفرة مصدر مكتبة Perl لـ Aspose.Cells Cloud.[هنا](https://github.com/aspose-cells-cloud/aspose-cells-cloud-perl).
 
+# **كيفية استخدام مكتبة Perl من Aspose.Cells Cloud**
 
-# **كيفية استخدام مكتبة Perl للسحابة Aspose.Cells**
+مجموعة تطوير البرامج السحابية Aspose.Cells لـ Perl هي مكتبة فعّالة تُمكّن المطورين من التعامل مع ملفات Microsoft Excel ومعالجتها باستخدام لغة البرمجة Perl. باستخدام هذه المجموعة، يُمكنك إنشاء مستندات Excel وتحريرها وتحويلها في السحابة، دون الحاجة إلى تثبيت برامج أو تبعيات إضافية على جهازك المحلي.
 
-Aspose.Cells Cloud SDK لـ Perl هي مكتبة قوية تسمح للمطورين بمعالجة ومعالجة ملفات Microsoft Excel باستخدام لغة البرمجة Perl. باستخدام SDK هذا، يمكنك إنشاء وتحرير وتحويل Excel مستندًا في السحابة، دون تثبيت برامج أو تبعيات إضافية على جهازك المحلي.
-
-في هذه المقالة، سنستكشف كيفية استخدام Aspose.Cells Cloud SDK لـ Perl لتنفيذ بعض المهام الشائعة، مثل إنشاء مصنف Excel جديد، وإدراج البيانات في الخلايا، وحفظ المصنف المعدل في السحابة.
+في هذه المقالة، سنستكشف كيفية استخدام Aspose.Cells Cloud SDK لـ Perl لأداء بعض المهام الشائعة، مثل إنشاء مصنف Excel جديد، وإدراج البيانات في الخلايا، وحفظ المصنف المعدل في السحابة.
 
 ## ابدء
 
- قبل أن تتمكن من البدء في استخدام Aspose.Cells Cloud SDK for Go، تحتاج إلى إعداد بيئة التطوير الخاصة بك وتثبيت التبعيات اللازمة. تشير إلى[المقالة](https://docs.aspose.cloud/cells/quickstart/) على الموقع الإلكتروني Aspose للحصول على معرف العميل وسر العميل.
+ قبل أن تتمكن من استخدام حزمة تطوير البرامج السحابية Aspose.Cells للغة Go، عليك إعداد بيئة التطوير وتثبيت التبعيات اللازمة. راجع[المقال](https://docs.aspose.cloud/cells/quickstart/) على موقع الويب Aspose للحصول على معرف العميل والسر الخاص بالعميل.
 
-## كيفية تثبيت حزمة Perl لسحابة Aspose.Cells
+## كيفية تثبيت الحزمة Perl لـ Aspose.Cells Cloud
 
-يمكنك تثبيت Aspose.Cells Cloud SDK لـ Perl عن طريق الأمر أدناه:
+يمكنك تثبيت Aspose.Cells Cloud SDK لـ Perl من خلال الأمر أدناه:
 
 ```Powershell
 
@@ -32,43 +31,15 @@ install AsposeCellsCloud::CellsApi
 
 ```
 
-## كيفية استخدام حزمة Perl لتحويل Xlsx إلى PDF
+## كيفية استخدام الحزمة Perl لتحويل Xlsx إلى تنسيقات أخرى
 
-- استيراد Aspose.Cells المكتبة السحابية
- ابدأ باستيراد الحزمة الضرورية من Aspose.Cells Cloud Perl SDK إلى مشروعك.
-- قم بتكوين API عميل ببيانات الاعتماد
- قم بتوثيق عميلك API بمعرف العميل الفريد وسر العميل.
+- استيراد مكتبة السحابة Aspose.Cells
+ ابدأ باستيراد الحزمة اللازمة من SDK Aspose.Cells Cloud Perl إلى مشروعك.
+- تكوين العميل API باستخدام بيانات الاعتماد
+ قم بمصادقة عميلك API باستخدام معرف العميل الفريد والسر الخاص بالعميل.
 - إعداد معلمات التحويل
- حدد المعلمات لمهمة التحويل، بما في ذلك اسم الملف المصدر، وتنسيق الإخراج المطلوب، ومسار مجلد التخزين.
+ قم بتحديد المعلمات لمهمة التحويل، بما في ذلك اسم ملف المصدر، وتنسيق الإخراج المطلوب، ومسار مجلد التخزين.
 - تنفيذ تحويل المصنف
- استدعاء عملية التحويل باستخدام أسلوب PostConvertWorkbook والتعامل مع الاستجابة.
+ استدعاء عملية التحويل باستخدام طريقة PostConvertWorkbook ومعالجة الاستجابة.
 
-```Perl
-use lib 'lib';
-use strict;
-use warnings;
-use File::Slurp;
-use MIME::Base64;
-use AsposeCellsCloud::CellsApi;
-
-my $config = AsposeCellsCloud::Configuration->new( client_id => $ENV{'CellsCloudClientId'}, client_secret => $ENV{'CellsCloudClientSecret'});
-my $instance = AsposeCellsCloud::CellsApi->new(AsposeCellsCloud::ApiClient->new( $config));
-
-my $remoteFolder = 'TestData/In';
-  
-my $localName = 'Book1.xlsx';
-my $remoteName = 'Book1.xlsx';
-
-my $upload_file_request = AsposeCellsCloud::Request::UploadFileRequest->new( 'UploadFiles'=>{ $localName => $localName  }  ,'path'=>$remoteFolder . '/' . $remoteName );
- 
-my $format = 'csv';
-
-my $mapFiles = {};           
-
- $mapFiles->{$localName}= "TestData/".$localName ;
-
-my $request = AsposeCellsCloud::Request::PutConvertWorkbookRequest->new();
-$request->{file} =  $mapFiles;
-$request->{format} =  $format;
-$instance->put_convert_workbook(request=> $request);
-```
+{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_AvailableSDKs.pl" >}}

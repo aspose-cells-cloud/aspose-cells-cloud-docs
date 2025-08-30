@@ -1,29 +1,29 @@
 ﻿---
-title: Aspose.Cells Cloud SDK för Java
+title: Aspose.Cells Cloud SDK för Jav
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/available-sdks/aspose-cells-cloud-java/
-description: Aspose.Cells Cloud stöder Excel för att skapa, konvertera, sammanfoga, dela, skydda, inre objektoperation och så vidare
+description: Aspose.Cells Molnet stöder Excel för att skapa, konvertera, sammanfoga, dela, skydda, hantera interna objekt och så vidare.
 weight: 30
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Java
+kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Java
 ---
- SDK:n är öppen källkod och licensierad under MIT-licensen. Du kan komma åt Java-bibliotekets källkod för Aspose.Cells Cloud[här](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java).
+SDK:et är öppen källkod och licensierat under MIT-licensen. Du kan komma åt källkoden för Java-biblioteket för Aspose.Cells Cloud.[här](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java).
 
 # **Hur man använder Java-biblioteket i Aspose.Cells Cloud**
 
-Aspose.Cells Cloud SDK for Java är ett kraftfullt bibliotek som tillåter utvecklare att manipulera och bearbeta Microsoft Excel filer med hjälp av programmeringsspråket Java. Med denna SDK kan du skapa, redigera och konvertera Excel dokument i molnet, utan att installera ytterligare programvara eller beroenden på din lokala dator.
+Aspose.Cells Cloud SDK for Java är ett kraftfullt bibliotek som låter utvecklare manipulera och bearbeta Microsoft Excel-filer med programmeringsspråket Java. Med detta SDK kan du skapa, redigera och konvertera Excel-dokument i molnet, utan att installera ytterligare programvara eller beroenden på din lokala dator.
 
-I den här artikeln kommer vi att utforska hur du använder Aspose.Cells Cloud SDK for Java för att utföra några vanliga uppgifter, som att skapa en ny Excel arbetsbok, infoga data i celler och spara den modifierade arbetsboken i molnet.
+I den här artikeln ska vi utforska hur man använder Aspose.Cells Cloud SDK for Java för att utföra några vanliga uppgifter, till exempel att skapa en ny Excel-arbetsbok, infoga data i celler och spara den ändrade arbetsboken i molnet.
 
 ## Komma igång
 
- Innan du kan börja använda Aspose.Cells Cloud SDK för Go måste du konfigurera din utvecklingsmiljö och installera nödvändiga beroenden. Hänvisa till[artikeln](https://docs.aspose.cloud/cells/quickstart/) på webbplatsen Aspose för att få ditt klient-ID och klienthemlighet.
+ Innan du kan börja använda Aspose.Cells Cloud SDK för Go måste du konfigurera din utvecklingsmiljö och installera nödvändiga beroenden. Se[artikeln](https://docs.aspose.cloud/cells/quickstart/) på webbplatsen Aspose för att få ditt klient-ID och din klienthemlighet.
 
 ## Hur man använder Maven för att lägga till beroenden för Aspose.Cells Cloud
 
-I ditt Maven-projekt lägger du till beroenden för Aspose.Cells Cloud SDK. Inkludera följande beroenden i filen pom.xml:
+I ditt Maven-projekt lägger du till beroenden för Aspose.Cells Cloud SDK. Inkludera följande beroenden i pom.xml-filen:
 
-**Aspose Maven Förvar**
+**Aspose Maven Arkiv**
 
 ```java
 
@@ -53,74 +53,13 @@ I ditt Maven-projekt lägger du till beroenden för Aspose.Cells Cloud SDK. Inkl
 
 - Importera Aspose.Cells Molnbibliotek
  Börja med att importera det nödvändiga paketet från Aspose.Cells Cloud Java SDK till ditt projekt.
-- Konfigurera API klient med inloggningsuppgifter
- Autentisera din API-klient med ditt unika klient-ID och klienthemlighet.
+- Konfigurera API-klienten med autentiseringsuppgifter
+ Autentisera din API-klient med ditt unika klient-ID och din klienthemlighet.
 - Förbered konverteringsparametrar
- Definiera parametrar för konverteringsuppgiften, inklusive källfilens namn, önskat utdataformat och lagringsmappens sökväg.
-- Utför arbetsbokkonvertering
- Anropa konverteringsprocessen med PostConvertWorkbook-metoden och hantera svaret.
+ Definiera parametrar för konverteringsuppgiften, inklusive källfilens namn, önskat utdataformat och sökvägen till lagringsmappen.
+- Kör arbetsbokskonvertering
+ Anropa konverteringsprocessen med hjälp av PostConvertWorkbook-metoden och hantera svaret.
 
 ### **Exempelkod**
 
-```java
-package com.aspose.cloud.cells.api;
-
-import com.aspose.cloud.cells.client.*;
-import com.aspose.cloud.cells.model.*;
-import com.aspose.cloud.cells.request.*;
-
-import org.junit.Test;
-import java.util.ArrayList;
-import java.util.List;
-import java.io.File;
-import java.util.HashMap;
-
-public class ExamplePutConvertWorkbook {
-    private  CellsApi api;
-    public ExamplePutConvertWorkbook(){
-        try {
-            api = new CellsApi(
-                System.getenv("CellsCloudClientId"),
-                System.getenv("CellsCloudClientSecret"),
-                "v3.0",
-                System.getenv("CellsCloudApiBaseUrl")
-            );
-        } catch (ApiException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public void Run(){
-        try{
-            String remoteFolder = "TestData/In";
-
-            String localName = "Book1.xlsx";
-            String remoteName = "Book1.xlsx";
-
-            String format = "pdf";
-
-            UploadFileRequest  uploadFileRequest = new UploadFileRequest();
-            uploadFileRequest.setPath( remoteFolder + "/" + remoteName );
-            uploadFileRequest.setStorageName( "");
-            HashMap<String,File> files = new HashMap<String,File>();
-            files.put( localName , new File(localName ));
-            uploadFileRequest.setUploadFiles(files);
-            cellsApi.uploadFile(uploadFileRequest);
-   
-            PutConvertWorkbookRequest request = new PutConvertWorkbookRequest();
-            request.setFormat(format);
-             
-
-            HashMap<String,File> fileMap = new HashMap<String,File>(); 
-            fileMap.put(localName ,CellsApiUtil.GetFileHolder(localName) ); 
-            request.setFile(fileMap);
-            this.api.putConvertWorkbook(request);
-
-        } catch (ApiException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-    }
-}
-
-```
+{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_AvailableSDKs.java" >}}

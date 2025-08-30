@@ -5,29 +5,28 @@ type: docs
 url: /it/docker/tag-list/
 description: Piattaforme supportate
 weight: 30
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdwon, TagList
+kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, TagList
 ---
-##  Windows Server 2016 Immagini ##
+##  Windows Immagini del server 2016 ##
 
 Tag | Architettura | Dockerfile | Osservazione
 ---|:--:|:--:|---:
-ltsc2016.23.5.0 | x64 | Nessun file Docker | Interrompere l'aggiornamento. La versione finale è la 23.5.0
+ltsc2016.23.5.0 | x64 | Nessun Dockerfile | Interrompi l'aggiornamento. La versione finale è 23.5.0
 
-
-##  Windows Server 2019 Immagini ##
-
-Tag | Architettura | Dockerfile | Osservazione
----|:--:|:--:|---:
-ltsc2019.23.11.0 | x64 | Nessun file Docker |
-
-##  Windows Server 2022 Immagini ##
+## Windows Immagini del server 2019 ##
 
 Tag | Architettura | Dockerfile | Osservazione
 ---|:--:|:--:|---:
- ltsc2022.23.11.0 | x64 | Nessun file Docker |
+ltsc2019.25.7.0 | x64 | Nessun Dockerfile |
 
-##  Immagini di Linux ##
+##  Windows Immagini del server 2022 ##
 
 Tag | Architettura | Dockerfile | Osservazione
 ---|:--:|:--:|---:
-linux.23.11.0 | x64 | Nessun file Docker |
+ltsc2022.25.7.0 | x64 | Nessun Dockerfile |
+
+##  Immagini Linux ##
+
+Tag | Architettura | Dockerfile | Osservazione
+---|:--:|:--:|---:
+linux.25.7.0 | x64 | Nessun Dockerfile |

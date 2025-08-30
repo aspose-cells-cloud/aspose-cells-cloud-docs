@@ -1,14 +1,14 @@
 ﻿---
-title: Değerlendirin Aspose.Cells Clou
+title: Aspose.Cells Clou'yu değerlendirin
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /tr/evaluate-aspose-cells/
-description: Aspose.Cells Bulut, oluşturma, dönüştürme, birleştirme, bölme, koruma, iç nesne işlemleri vb. için Excel'i destekler
+description: Aspose.Cells Bulut, Excel'in oluşturma, dönüştürme, birleştirme, bölme, korumalı, iç nesne işlemleri vb. işlemlerini destekler
 weight: 60
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdwon, Değerlendir Aspose.Cells Bulut
+kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Değerlendirme Aspose.Cells Bulut
 ---
- Değerlendirebilirsiniz[Aspose.Cells REST API'leri](http://apireference.aspose.cloud/cells/) bir oluşturarak[ücretsiz deneme hesabı](https://dashboard.aspose.cloud). Ücretsiz deneme size hizmetin yetenekleri hakkında iyi bir fikir verecek ve bazı erken geliştirmeler yapmanıza olanak sağlayacaktır.
+ Değerlendirebilirsiniz[Aspose.Cells REST API'leri](http://apireference.aspose.cloud/cells/)bir yaratarak[ücretsiz deneme hesabı](https://dashboard.aspose.cloud)Ücretsiz deneme, servisin yetenekleri hakkında iyi bir fikir edinmenizi ve erken geliştirme yapmanızı sağlayacaktır.
 
- lütfen kontrol edin[Deneme Planı](https://purchase.aspose.cloud/trial) Daha fazla ayrıntı için web sayfası.
+ lütfen kontrol edin[Deneme Planı](https://purchase.aspose.cloud/trial) Daha fazla bilgi için web sayfamızı ziyaret edin.
 
 

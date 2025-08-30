@@ -5,7 +5,7 @@ type: docs
 url: /fr/docker/storage/
 description: Comment définir la position de stockage sur Aspose.Cells Cloud pour Docker
 weight: 30
-kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, stockage
+kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Stockage
 ---
 ##  Configuration de stockage par défaut ##
 
@@ -49,7 +49,7 @@ kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdw
 ##  Position par défaut ##
 
 
-- **les fenêtres**
+- **fenêtres**
 
 ```powershell
 
@@ -68,7 +68,7 @@ c:\app\storageResource.json
 
 ##  Configuration de stockage personnalisée ##
 
-Il est nécessaire de re-spécifier le profil de stockage pour le fichier image Cloud Aspose.Cells lorsque le client a besoin de spécifier le dossier de stockage.
+Il est nécessaire de spécifier à nouveau le profil de stockage pour le fichier image Cloud Aspose.Cells lorsque le client doit spécifier le dossier de stockage.
 
 ``` powershell
 
@@ -77,4 +77,4 @@ docker run  -d  -v c:/data:c:/data  -p 47900:5000  -e LicensePublicKey=yourLicen
 ```
 
 **Document de référence** : 
-  - [Exécution Docker]( https://docs.docker.com/engine/reference/commandline/run/)
+  - [Docker Run]( https://docs.docker.com/engine/reference/commandline/run/)

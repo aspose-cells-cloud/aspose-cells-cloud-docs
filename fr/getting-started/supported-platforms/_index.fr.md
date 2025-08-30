@@ -3,10 +3,8 @@ title: Plateforme prise en charge
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/supported-platforms/
-description: Aspose.Cells Cloud prend en charge Excel pour créer, convertir, fusionner, diviser, protéger, opération d'objet interne, etc.
+description: Aspose.Cells Cloud prend en charge Excel pour créer, convertir, fusionner, diviser, protéger, effectuer des opérations sur des objets internes, etc.
 weight: 50
-kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, plates-formes prises en charge
+kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Plateformes prises en charge
 ---
-Aspose.Cells La manipulation de documents indépendante de la plate-forme Cloud API est un véritable REST API qui peut être utilisé avec n'importe quel langage : Go, Java, NET, NodeJs, Perl, PHP,Python, Ruby et bien d'autres. Vous pouvez l'utiliser avec n'importe quel langage ou plate-forme prenant en charge REST. (Presque toutes les plates-formes et langages prennent en charge REST et fournissent des clients REST natifs pour travailler avec les API REST). Vous n'avez pas à vous soucier des limitations de langue ou de plate-forme. Vous pouvez l’utiliser avec n’importe quelle plateforme : Web, ordinateur de bureau, mobile et cloud. Le API s'intègre à d'autres services cloud pour vous offrir la flexibilité dont vous avez besoin lors du traitement des documents. Il convient à tout type d’entreprise, de document ou de contenu.
-
-
+Aspose.Cells Cloud, la solution de manipulation de documents indépendante de la plateforme, est un véritable REST API compatible avec tous les langages : Go, Java, NET, NodeJs, Perl, PHP, Python, Ruby, et bien d'autres. Elle est compatible avec tout langage ou plateforme prenant en charge REST. (Presque toutes les plateformes et tous les langages prennent en charge REST et proposent des clients REST natifs pour travailler avec les API REST.) Nul besoin de vous soucier des limitations de langage ou de plateforme. Elle est compatible avec toutes les plateformes : web, bureau, mobile et cloud. API s'intègre à d'autres services cloud pour vous offrir la flexibilité nécessaire au traitement de vos documents. Elle convient à tout type d'entreprise, de document ou de contenu.

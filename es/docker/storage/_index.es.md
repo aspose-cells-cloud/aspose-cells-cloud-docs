@@ -1,11 +1,11 @@
 ﻿---
-title: almacenamiento
+title: Almacenamiento
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/docker/storage/
-description: Cómo configurar la posición de almacenamiento sobre Aspose.Cells Cloud para Docker
+description: Cómo configurar la posición de almacenamiento en Aspose.Cells Cloud for Docker
 weight: 30
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Almacenamiento
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Almacenamiento
 ---
 ##  Configuración de almacenamiento predeterminada ##
 
@@ -46,7 +46,7 @@ kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon
 
 {{< /tabs >}}
 
-##  Posición por defecto ##
+##  Posición predeterminada ##
 
 
 - **ventanas**
@@ -68,7 +68,7 @@ c:\app\storageResource.json
 
 ##  Configuración de almacenamiento personalizada ##
 
-Es necesario volver a especificar el perfil de almacenamiento para el archivo de imagen de nube Aspose.Cells cuando el cliente necesite especificar la carpeta de almacenamiento.
+Es necesario volver a especificar el perfil de almacenamiento para el archivo de imagen en la nube Aspose.Cells cuando el cliente necesita especificar la carpeta de almacenamiento.
 
 ``` powershell
 
@@ -77,4 +77,4 @@ docker run  -d  -v c:/data:c:/data  -p 47900:5000  -e LicensePublicKey=yourLicen
 ```
 
 **Documento de referencia** : 
-  - [Ejecución de ventana acoplable]( https://docs.docker.com/engine/reference/commandline/run/)
+  - [Ejecución de Docker]( https://docs.docker.com/engine/reference/commandline/run/)

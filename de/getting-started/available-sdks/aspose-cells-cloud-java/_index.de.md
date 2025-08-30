@@ -3,17 +3,17 @@ title: Aspose.Cells Cloud SDK für Jav
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /de/available-sdks/aspose-cells-cloud-java/
-description: Aspose.Cells Cloud unterstützt Excel zum Erstellen, Konvertieren, Zusammenführen, Aufteilen, Schützen, für interne Objektoperationen usw.
+description: Aspose.Cells Cloud unterstützt Excel zum Erstellen, Konvertieren, Zusammenführen, Teilen, Schützen, für innere Objektoperationen usw.
 weight: 30
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdwon, Java
+kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Java
 ---
- Das SDK ist Open Source und unter der MIT-Lizenz lizenziert. Sie können auf den Quellcode der Java-Bibliothek für Aspose.Cells Cloud zugreifen[Hier](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java).
+Das SDK ist Open Source und steht unter der MIT-Lizenz. Sie können auf den Quellcode der Bibliothek Java für Aspose.Cells Cloud zugreifen.[Hier](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java).
 
-# **So verwenden Sie die Java-Bibliothek von Aspose.Cells Cloud**
+# **So verwenden Sie die Java-Bibliothek der Aspose.Cells Cloud**
 
-Aspose.Cells Cloud SDK for Java ist eine leistungsstarke Bibliothek, mit der Entwickler Microsoft Excel-Dateien mit der Programmiersprache Java bearbeiten und verarbeiten können. Mit diesem SDK können Sie Excel-Dokumente in der Cloud erstellen, bearbeiten und konvertieren, ohne zusätzliche Software oder Abhängigkeiten auf Ihrem lokalen Computer installieren zu müssen.
+Aspose.Cells Cloud SDK for Java ist eine leistungsstarke Bibliothek, die es Entwicklern ermöglicht, Microsoft Excel-Dateien mit der Programmiersprache Java zu bearbeiten und zu verarbeiten. Mit diesem SDK können Sie Excel-Dokumente in der Cloud erstellen, bearbeiten und konvertieren, ohne zusätzliche Software oder Abhängigkeiten auf Ihrem lokalen Computer installieren zu müssen.
 
-In diesem Artikel untersuchen wir, wie Sie mit Aspose.Cells Cloud SDK for Java einige gängige Aufgaben ausführen, z. B. eine neue Excel-Arbeitsmappe erstellen, Daten in Zellen einfügen und die geänderte Arbeitsmappe in der Cloud speichern.
+In diesem Artikel erfahren Sie, wie Sie mit Aspose.Cells Cloud SDK for Java einige gängige Aufgaben ausführen, z. B. eine neue Arbeitsmappe Excel erstellen, Daten in Zellen einfügen und die geänderte Arbeitsmappe in der Cloud speichern.
 
 ## Erste Schritte
 
@@ -52,7 +52,7 @@ Fügen Sie in Ihrem Projekt Maven Abhängigkeiten für das Cloud SDK Aspose.Cell
 ## So verwenden Sie das Paket Java, um Xlsx in PDF zu konvertieren
 
 - Importieren Sie Aspose.Cells Cloud-Bibliothek
- Importieren Sie zunächst das erforderliche Paket aus dem Aspose.Cells Cloud Java SDK in Ihr Projekt.
+ Beginnen Sie, indem Sie das erforderliche Paket aus dem Aspose.Cells Cloud Java SDK in Ihr Projekt importieren.
 - Konfigurieren Sie den API-Client mit Anmeldeinformationen
  Authentifizieren Sie Ihren API-Client mit Ihrer eindeutigen Client-ID und Ihrem Client-Geheimnis.
 - Konvertierungsparameter vorbereiten
@@ -62,65 +62,4 @@ Fügen Sie in Ihrem Projekt Maven Abhängigkeiten für das Cloud SDK Aspose.Cell
 
 ### **Beispielcode**
 
-```java
-package com.aspose.cloud.cells.api;
-
-import com.aspose.cloud.cells.client.*;
-import com.aspose.cloud.cells.model.*;
-import com.aspose.cloud.cells.request.*;
-
-import org.junit.Test;
-import java.util.ArrayList;
-import java.util.List;
-import java.io.File;
-import java.util.HashMap;
-
-public class ExamplePutConvertWorkbook {
-    private  CellsApi api;
-    public ExamplePutConvertWorkbook(){
-        try {
-            api = new CellsApi(
-                System.getenv("CellsCloudClientId"),
-                System.getenv("CellsCloudClientSecret"),
-                "v3.0",
-                System.getenv("CellsCloudApiBaseUrl")
-            );
-        } catch (ApiException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public void Run(){
-        try{
-            String remoteFolder = "TestData/In";
-
-            String localName = "Book1.xlsx";
-            String remoteName = "Book1.xlsx";
-
-            String format = "pdf";
-
-            UploadFileRequest  uploadFileRequest = new UploadFileRequest();
-            uploadFileRequest.setPath( remoteFolder + "/" + remoteName );
-            uploadFileRequest.setStorageName( "");
-            HashMap<String,File> files = new HashMap<String,File>();
-            files.put( localName , new File(localName ));
-            uploadFileRequest.setUploadFiles(files);
-            cellsApi.uploadFile(uploadFileRequest);
-   
-            PutConvertWorkbookRequest request = new PutConvertWorkbookRequest();
-            request.setFormat(format);
-             
-
-            HashMap<String,File> fileMap = new HashMap<String,File>(); 
-            fileMap.put(localName ,CellsApiUtil.GetFileHolder(localName) ); 
-            request.setFile(fileMap);
-            this.api.putConvertWorkbook(request);
-
-        } catch (ApiException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-    }
-}
-
-```
+{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_AvailableSDKs.java" >}}

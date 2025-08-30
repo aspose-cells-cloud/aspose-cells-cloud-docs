@@ -1,30 +1,27 @@
 ﻿---
-title: Aspose.Cells Cloud SDK для Nod
+title: Aspose.Cells Облачный SDK для Nod
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/available-sdks/aspose-cells-cloud-node/
-description: Aspose.Cells Облако поддерживает Excel для создания, преобразования, объединения, разделения, защиты, операций с внутренними объектами и т. д.
+description: Aspose.Cells Облако поддерживает Excel для создания, преобразования, слияния, разделения, защиты, внутренних операций с объектами и т. д.
 weight: 30
-kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdwon, Node
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Node
 ---
- SDK имеет открытый исходный код и лицензируется по лицензии MIT. Вы можете получить доступ к исходному коду библиотеки Node для Aspose.Cells Cloud.[здесь](https://github.com/aspose-cells-cloud/aspose-cells-cloud-node).
+ SDK имеет открытый исходный код и распространяется по лицензии MIT. Вы можете получить доступ к исходному коду библиотеки Node для Aspose.Cells Cloud.[здесь](https://github.com/aspose-cells-cloud/aspose-cells-cloud-node).
 
+# **Как использовать библиотеку Node облака Aspose.Cells**
 
-# **Как использовать библиотеку Node Aspose.Cells Cloud**
+Облачный SDK Aspose.Cells для Node — это мощная библиотека, позволяющая разработчикам обрабатывать файлы Microsoft и Excel, используя язык программирования Node. С помощью этого SDK вы можете создавать, редактировать и конвертировать документы Excel в облаке, не устанавливая дополнительное программное обеспечение или зависимости на локальный компьютер.
 
-Aspose.Cells Cloud SDK для Node — это мощная библиотека, которая позволяет разработчикам манипулировать и обрабатывать файлы Microsoft Excel с помощью языка программирования Node. С помощью этого SDK вы можете создавать, редактировать и конвертировать документы Excel в облаке без установки дополнительного программного обеспечения или зависимостей на локальном компьютере.
-
-
-В этой статье мы рассмотрим, как использовать Aspose.Cells Cloud SDK для Node для выполнения некоторых распространенных задач, таких как создание новой книги Excel, вставка данных в ячейки и сохранение измененной книги в облаке.
+В этой статье мы рассмотрим, как использовать Aspose.Cells Cloud SDK for Node для выполнения некоторых распространенных задач, таких как создание новой книги Excel, вставка данных в ячейки и сохранение измененной книги в облаке.
 
 ## Начиная
 
- Прежде чем вы сможете начать использовать Cloud SDK для Go Aspose.Cells, вам необходимо настроить среду разработки и установить необходимые зависимости. Ссылаться на[статья](https://docs.aspose.cloud/cells/quickstart/) на веб-сайте Aspose, чтобы получить идентификатор клиента и секрет клиента.
+ Прежде чем начать использовать Cloud SDK Aspose.Cells для Go, необходимо настроить среду разработки и установить необходимые зависимости. См.[статья](https://docs.aspose.cloud/cells/quickstart/) на сайте Aspose, чтобы получить свой идентификатор клиента и секретный код клиента.
 
 ## Как установить пакет Node для облака Aspose.Cells
 
-Вы можете установить Aspose.Cells Cloud SDK для Node с помощью npm. Ниже приведены шаги для npm:
-
+Вы можете установить Cloud SDK Aspose.Cells для Node с помощью npm. Ниже приведены шаги для npm:
 
 ```Powershell
 
@@ -32,7 +29,7 @@ npm install asposecellscloud
 
 ```
 
-## Как добавить зависимости в конфигурацию пакета для Aspose.Cells Cloud
+## Как добавить зависимости в конфигурацию пакета для облака Aspose.Cells
 
 файл конфигурации узла: package.json
 
@@ -55,45 +52,15 @@ npm install asposecellscloud
 
 ```
 
-## Как использовать пакет Node для преобразования Xlsx в PDF
+## Как использовать пакет Node для конвертации Xlsx в другие форматы
 
-- Импортировать облачную библиотеку Aspose.Cells
- Начните с импорта необходимого пакета из Cloud NodeJS SDK Aspose.Cells в свой проект.
-- Настройте клиент API с учетными данными
- Аутентифицируйте своего клиента API с помощью уникального идентификатора клиента и секретного кода клиента.
-- Подготовьте параметры преобразования
+- Импорт Aspose.Cells Облачная библиотека
+ Начните с импорта необходимого пакета из Cloud NodeJS SDK Aspose.Cells в ваш проект.
+- Настройте клиента API с учетными данными
+ Авторизуйте своего клиента API, используя свой уникальный идентификатор клиента и секретный код клиента.
+- Подготовить параметры преобразования
  Определите параметры задачи преобразования, включая имя исходного файла, желаемый выходной формат и путь к папке хранения.
-- Выполнить преобразование книги
+- Выполнить преобразование рабочей книги
  Вызовите процесс преобразования с помощью метода PostConvertWorkbook и обработайте ответ.
 
-```javascript
-var fs = require('fs');
-var path = require('path');
-const _ = require('asposecellscloud');
-
-const cellsApi = new CellsApi(process.env.CellsCloudClientId, process.env.CellsCloudClientSecret,"v3.0",process.env.CellsCloudApiBaseUrl);
-
-var remoteFolder = "TestData/In"
-  
-var localName = "Book1.xlsx"
-var remoteName = "Book1.xlsx"
-
-var localNameRequest = new  model.UploadFileRequest();
-localNameRequest.uploadFiles ={localName:fs.createReadStream(localPath  + localName)};
-localNameRequest.path = remoteFolder + "/" + remoteName ;
-localNameRequest.storageName ="";
-cellsApi.uploadFile(localNameRequest );
- 
-var format = "csv"
-
-var mapFiles = {};           
-
- mapFiles[localName]= fs.createReadStream(localPath  +localName) ;
-
-var request = new model.PutConvertWorkbookRequest();
-request.file =  mapFiles;
-request.format =  format;
-return cellsApi.putConvertWorkbook(request).then((result) => {
-    expect(result.response.statusCode).to.equal(200);
-});
-```
+{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_AvailableSDKs.ts" >}}

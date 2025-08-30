@@ -1,19 +1,18 @@
 ﻿---
-title: Assistance technique
+title: Support technique
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/technical-support/
-description: Aspose.Cells Cloud prend en charge Excel pour créer, convertir, fusionner, diviser, protéger, opération d'objet interne, etc.
+description: Aspose.Cells Cloud prend en charge Excel pour créer, convertir, fusionner, diviser, protéger, effectuer des opérations sur des objets internes, etc.
 weight: 80
-kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, Json, Markdwon, support technique
+kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Support technique
 ---
 ## **Aspose.Cloud Assistance technique**
-Le Aspose fournit une assistance technique gratuite et illimitée pour tous ses produits. Le support est disponible pour tous les utilisateurs, y compris l'évaluation.
 
-Si vous avez besoin d'aide avec Aspose.Cells Cloud, considérez les éléments suivants :
+Le Aspose offre une assistance technique gratuite et illimitée pour tous ses produits. Cette assistance est accessible à tous les utilisateurs, y compris pour l'évaluation.
 
--  La principale voie de soutien est le[Aspose.Forums](http://forum.aspose.cloud/) . Postez votre question dans le[Aspose.Cells Forum](https://forum.aspose.cloud/c/cells) et nous y répondrons dans quelques heures. L'équipe de développement Aspose.Cells pour Cloud répond directement aux questions.
-- Veuillez noter que le Aspose ne fournit pas d'assistance technique par téléphone. L'assistance téléphonique n'est disponible que pour les questions de vente et d'achat.
-- Lorsque vous attendez une réponse sur les forums, veuillez tenir compte des différences de fuseau horaire.
+Si vous avez besoin d'aide avec Aspose.Cells Cloud, tenez compte des points suivants :
 
-
+-  La principale voie de soutien est la[Aspose.Forum](http://forum.aspose.cloud/) . Posez votre question dans le[Forum Aspose.Cells](https://forum.aspose.cloud/c/cells) Nous répondrons à vos questions en quelques heures. L'équipe de développement Cloud répond directement à vos questions au Aspose.Cells.
+- Veuillez noter que le Aspose ne propose pas d'assistance technique par téléphone. L'assistance téléphonique est uniquement disponible pour les questions relatives aux ventes et aux achats.
+- Lorsque vous attendez une réponse dans les forums, veuillez tenir compte des différences de fuseau horaire.

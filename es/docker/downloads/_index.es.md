@@ -5,7 +5,7 @@ type: docs
 url: /es/docker/downloads/
 description: Descargar imágenes de Docker en la nube Aspose.Cells
 weight: 30
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Descargar
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Descargar
 ---
 ##  Windows Servidor 2016 ##
 
@@ -24,7 +24,7 @@ docker pull aspose/cells-cloud:ltsc2019.21.9
 ```
 
 
-##  linux ##
+##  Linux ##
 
 ```sh
 

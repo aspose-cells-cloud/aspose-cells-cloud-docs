@@ -3,9 +3,9 @@ title: Télécharger
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /fr/docker/downloads/
-description: Télécharger Aspose.Cells Images Docker Cloud
+description: Télécharger les images Cloud Docker Aspose.Cells
 weight: 30
-kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdwon, Télécharger
+kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Télécharger
 ---
 ##  Windows Serveur 2016 ##
 

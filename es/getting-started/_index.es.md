@@ -1,22 +1,18 @@
 ﻿---
-title: Empezando
-second_title: Aspose.Cells Cloud Documen
+title: Primeros pasos
+second_title: How to Process Excel Files in 3 Steps Using Aspose.Cells Cloud WEB API
 type: docs
 url: /es/getting-started/
-description: Aspose.Cells La nube admite Excel para crear, convertir, fusionar, dividir, proteger, operar objetos internos, etc.
+description: Aspose.Cells Cloud admite Excel para crear, convertir, fusionar, dividir, proteger, realizar operaciones con objetos internos, etc.
 weight: 10
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, Primeros pasos
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Primeros pasos
 ---
-Este Getting Started proporciona esta introducción a los fundamentos de la nube Aspose.Cells. Para los usuarios nuevos en Aspose.Cells Cloud, esta es la forma más rápida de conocer los requisitos y capacidades básicos y comenzar.
-
-Para obtener más información sobre Aspose.Cells Cloud, seleccione la sección correspondiente:
-
-- [Descripción general](/cells/es/overview/).
-- [Inicio rápido](/cells/es/quickstart/).
-- [SDK disponibles](/cells/es/available-sdks/)– proporciona información sobre Aspose.Cells Cloud SDK.
-- [Plataformas compatibles](/cells/es/supported-platforms/) – proporciona información sobre las plataformas compatibles.
-- [Formatos de archivo admitidos](/cells/es/supported-file-formats/) – proporciona información sobre los formatos compatibles.
-- [Evaluar Aspose.Cells Nube](/cells/es/evaluate-aspose-cells/).
-- [Plan de precios](/cells/es/pricing-plan/).
-- [Apoyo técnico](/cells/es/technical-support/).
-- [Cómo ejecutar el contenedor Docker](/cells/es/how-to-run-docker-container/) – proporciona información sobre cómo utilizar Aspose.Cells Cloud en un contenedor Docker.
+- [Descripción general](/cells/es/overview/)
+- [Inicio rápido](/cells/es/quickstart/)
+- [SDK disponibles](/cells/es/available-sdks/)
+- [Plataformas compatibles](/cells/es/supported-platforms/)
+- [Formatos de archivo compatibles](/cells/es/supported-file-formats/)
+- [Evaluar Aspose.Cells Nube](/cells/es/evaluate-aspose-cells/)
+- [Plan de precios](/cells/es/pricing-plan/)
+- [Apoyo técnico](/cells/es/technical-support/)
+- [Cómo ejecutar un contenedor Docker](/cells/es/how-to-run-docker-container/)

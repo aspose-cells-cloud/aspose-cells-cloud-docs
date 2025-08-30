@@ -1,13 +1,13 @@
 ﻿---
-title: Storag
+title: Förvaring
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /sv/docker/storage/
-description: Hur man ställer in lagringsposition om Aspose.Cells Cloud for Docker
+description: Hur man ställer in lagringsposition för Aspose.Cells Cloud för Docker
 weight: 30
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, Storage
+kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Lagring
 ---
-##  Standardlagringskonfiguration ##
+##  Standardkonfiguration för lagring ##
 
 {{< tabs tabTotal="2" tabID="1" tabName1="windows" tabName2="linux" >}}
 
@@ -46,7 +46,7 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdwon, St
 
 {{< /tabs >}}
 
-##  Standard position ##
+##  Standardposition ##
 
 
 - **fönster**
@@ -57,7 +57,7 @@ c:\app\storageResource.json
 
 ```
 
-- **linux**
+- **Linux**
 
 ```linux
 
@@ -68,7 +68,7 @@ c:\app\storageResource.json
 
 ##  Anpassad lagringskonfiguration ##
 
-Behöver specificera om lagringsprofilen för Aspose.Cells Molnbildsfil när kundens behov specificerar lagringsmappen.
+Behöver ange om lagringsprofilen för molnbildsfilen Aspose.Cells när kunden anger en lagringsmapp.
 
 ``` powershell
 

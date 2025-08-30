@@ -1,29 +1,29 @@
 ﻿---
-title: Aspose.Cells Cloud SDK لـ PH
+title: Aspose.Cells مجموعة SDK السحابية للفلبين
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ar/available-sdks/aspose-cells-cloud-php/
-description: Aspose.Cells تدعم السحابة Excel لإنشاء وتحويل ودمج وتقسيم وحماية وتشغيل الكائن الداخلي وما إلى ذلك
+description: Aspose.Cells تدعم السحابة Excel لإنشاء الكائنات الداخلية وتحويلها ودمجها وتقسيمها وحمايتها وما إلى ذلك
 weight: 30
-kwords: Excel، Office كلاود، ريست API، جدول بيانات، PDF، CSV، Json، ماركدوون، PHP
+kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، PHP
 ---
- SDK مفتوح المصدر ومرخص بموجب ترخيص MIT. يمكنك الوصول إلى الكود المصدري للمكتبة PHP لسحابة Aspose.Cells[هنا](https://github.com/aspose-cells-cloud/aspose-cells-cloud-php).
+مجموعة تطوير البرامج مفتوحة المصدر ومرخصة بموجب ترخيص معهد ماساتشوستس للتكنولوجيا. يمكنك الوصول إلى شفرة مصدر مكتبة PHP لـ Aspose.Cells Cloud.[هنا](https://github.com/aspose-cells-cloud/aspose-cells-cloud-php).
 
 # **كيفية استخدام Aspose.Cells Cloud SDK لـ PHP**
 
-Aspose.Cells Cloud SDK لـ PHP هي مكتبة قوية تسمح للمطورين بمعالجة ومعالجة ملفات Microsoft Excel باستخدام لغة البرمجة Go. باستخدام SDK هذا، يمكنك إنشاء وتحرير وتحويل Excel مستندًا في السحابة، دون تثبيت برامج أو تبعيات إضافية على جهازك المحلي.
+مجموعة تطوير البرامج السحابية Aspose.Cells لـ PHP هي مكتبة فعّالة تُمكّن المطورين من التعامل مع ملفات Microsoft Excel ومعالجتها باستخدام لغة البرمجة Go. باستخدام هذه المجموعة، يُمكنك إنشاء مستندات Excel وتحريرها وتحويلها في السحابة، دون الحاجة إلى تثبيت برامج أو تبعيات إضافية على جهازك المحلي.
 
-في هذه المقالة، سنستكشف كيفية استخدام Aspose.Cells Cloud SDK لـ PHP لتنفيذ بعض المهام الشائعة، مثل إنشاء مصنف Excel جديد، وإدراج البيانات في الخلايا، وحفظ المصنف المعدل في السحابة.
+في هذه المقالة، سنستكشف كيفية استخدام Aspose.Cells Cloud SDK لـ PHP لأداء بعض المهام الشائعة، مثل إنشاء مصنف Excel جديد، وإدراج البيانات في الخلايا، وحفظ المصنف المعدل في السحابة.
 
 ## ابدء
 
- قبل أن تتمكن من البدء في استخدام Aspose.Cells Cloud SDK for Go، تحتاج إلى إعداد بيئة التطوير الخاصة بك وتثبيت التبعيات اللازمة. تشير إلى[المقالة](https://docs.aspose.cloud/cells/quickstart/) على الموقع الإلكتروني Aspose للحصول على معرف العميل وسر العميل.
+ قبل أن تتمكن من استخدام حزمة تطوير البرامج السحابية Aspose.Cells للغة Go، عليك إعداد بيئة التطوير وتثبيت التبعيات اللازمة. راجع[المقال](https://docs.aspose.cloud/cells/quickstart/) على موقع الويب Aspose للحصول على معرف العميل والسر الخاص بالعميل.
 
-## كيفية تثبيت حزمة PHP لسحابة Aspose.Cells
+## كيفية تثبيت الحزمة PHP لـ Aspose.Cells Cloud
 
 يمكنك تثبيت Aspose.Cells Cloud SDK لـ PHP. فيما يلي الخطوات:
 
-- أضف Aspose.Cells Cloud باعتبارها تبعية لملف `composer.json` الخاص بك:
+- أضف Aspose.Cells Cloud كتبعية لملف `composer.json` الخاص بك:
 
    ```json
    {
@@ -41,7 +41,7 @@ Aspose.Cells Cloud SDK لـ PHP هي مكتبة قوية تسمح للمطوري
 
    ```
 
-- قم بتضمين أداة التحميل التلقائي للملحن في كود PHP الخاص بك:
+- قم بتضمين أداة التحميل التلقائي الخاصة بـ Composer في الكود PHP الخاص بك:
 
    ```php
 
@@ -49,38 +49,15 @@ Aspose.Cells Cloud SDK لـ PHP هي مكتبة قوية تسمح للمطوري
 
    ```
 
-## كيفية استخدام حزمة PHP لتحويل Xlsx إلى PDF
+## كيفية استخدام الحزمة PHP لتحويل Xlsx إلى تنسيقات أخرى
 
-- استيراد Aspose.Cells المكتبة السحابية
- ابدأ باستيراد الحزمة الضرورية من Aspose.Cells Cloud PHP SDK إلى مشروعك.
-- قم بتكوين API عميل ببيانات الاعتماد
- قم بتوثيق عميلك API بمعرف العميل الفريد وسر العميل.
+- استيراد مكتبة السحابة Aspose.Cells
+ ابدأ باستيراد الحزمة اللازمة من SDK Aspose.Cells Cloud PHP إلى مشروعك.
+- تكوين العميل API باستخدام بيانات الاعتماد
+ قم بمصادقة عميلك API باستخدام معرف العميل الفريد والسر الخاص بالعميل.
 - إعداد معلمات التحويل
- حدد المعلمات لمهمة التحويل، بما في ذلك اسم الملف المصدر، وتنسيق الإخراج المطلوب، ومسار مجلد التخزين.
+ قم بتحديد المعلمات لمهمة التحويل، بما في ذلك اسم ملف المصدر، وتنسيق الإخراج المطلوب، ومسار مجلد التخزين.
 - تنفيذ تحويل المصنف
- استدعاء عملية التحويل باستخدام أسلوب PostConvertWorkbook والتعامل مع الاستجابة.
+ استدعاء عملية التحويل باستخدام طريقة PostConvertWorkbook ومعالجة الاستجابة.
 
-```PHP
-<?php
-require_once('vendor\autoload.php');
-use \Aspose\Cells\Cloud\Api\CellsApi;
-use \Aspose\Cells\Cloud\Request\PutConvertWorkbookRequest;
-
-$cellsApi = new CellsApi(getenv("CellsCloudClientId"),getenv("CellsCloudClientSecret"),"v3.0",getenv("CellsCloudApiBaseUrl"));
-
-$remoteFolder = "TestData/In";
-
-$localName = "Book1.xlsx";
-$remoteName = "Book1.xlsx";
-
-$format = "csv";
-
-$mapFiles = array ();
-$mapFiles[$localName] = CellsApiTestBase::getfullfilename($localName);
-CellsApiTestBase::ready(  $this->instance,$localName ,$remoteFolder . "/" . $remoteName ,  "");
- 
-$request = new PutConvertWorkbookRequest();
-$request->setFile( $mapFiles);
-$request->setFormat( $format);
-$$cellsApi->putConvertWorkbook($request);
-```
+{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_AvailableSDKs.php" >}}

@@ -1,33 +1,32 @@
 ﻿---
-title: EtiquetaLis
+title: TagLis
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /es/docker/tag-list/
 description: Plataformas compatibles
 weight: 30
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdwon, TagList
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, TagList
 ---
-##  Windows Servidor 2016 Imágenes ##
+##  Imágenes del servidor Windows 2016 ##
 
-Etiquetas | Arquitectura | Archivo Docker | Observación
+Etiquetas | Arquitectura | Dockerfile | Observación
 ---|:--:|:--:|---:
-ltsc2016.23.5.0 | x64 | Sin archivo Docker | Detenga la actualización. La versión final es 23.5.0
+ltsc2016.23.5.0 | x64 | Sin Dockerfile | Detener la actualización. La versión final es la 23.5.0
 
+## Imágenes del servidor Windows 2019 ##
 
-##  Windows Servidor 2019 Imágenes ##
-
-Etiquetas | Arquitectura | Archivo Docker | Observación
+Etiquetas | Arquitectura | Dockerfile | Observación
 ---|:--:|:--:|---:
-ltsc2019.23.11.0 | x64 | Sin archivo Docker |
+ltsc2019.25.7.0 | x64 | Sin Dockerfile |
 
-##  Windows Servidor 2022 Imágenes ##
+##  Imágenes del servidor Windows 2022 ##
 
-Etiquetas | Arquitectura | Archivo Docker | Observación
+Etiquetas | Arquitectura | Dockerfile | Observación
 ---|:--:|:--:|---:
- ltsc2022.23.11.0 | x64 | Sin archivo Docker |
+ltsc2022.25.7.0 | x64 | Sin Dockerfile |
 
 ##  Imágenes de Linux ##
 
-Etiquetas | Arquitectura | Archivo Docker | Observación
+Etiquetas | Arquitectura | Dockerfile | Observación
 ---|:--:|:--:|---:
-Linux.23.11.0 | x64 | Sin archivo Docker |
+linux.25.7.0 | x64 | Sin Dockerfile |

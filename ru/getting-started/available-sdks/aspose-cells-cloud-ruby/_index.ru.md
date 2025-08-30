@@ -1,27 +1,27 @@
 ﻿---
-title: Aspose.Cells Cloud SDK за руб.
+title: Aspose.Cells Облачный SDK для Rub
 second_title: Aspose.Cells Cloud Documen
 type: docs
 url: /ru/available-sdks/aspose-cells-cloud-ruby/
-description: Aspose.Cells Облако поддерживает Excel для создания, преобразования, объединения, разделения, защиты, операций с внутренними объектами и т. д.
+description: Aspose.Cells Облако поддерживает Excel для создания, преобразования, слияния, разделения, защиты, внутренних операций с объектами и т. д.
 weight: 30
-kwords: Excel, Office Облако, REST API, электронная таблица, PDF, CSV, Json, Markdwon, Ruby
+kwords: Excel, Office Облако, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Ruby
 ---
- SDK имеет открытый исходный код и лицензируется по лицензии MIT. Вы можете получить доступ к исходному коду библиотеки Ruby по адресу Aspose.Cells Cloud.[здесь](https://github.com/aspose-cells-cloud/aspose-cells-cloud-ruby).
+SDK имеет открытый исходный код и распространяется по лицензии MIT. Вы можете получить доступ к исходному коду библиотеки Ruby по адресу Aspose.Cells Cloud.[здесь](https://github.com/aspose-cells-cloud/aspose-cells-cloud-ruby).
 
 # **Как использовать Aspose.Cells Cloud SDK для Ruby**
 
-Aspose.Cells Cloud SDK для Ruby — это мощная библиотека, которая позволяет разработчикам манипулировать и обрабатывать файлы Microsoft Excel с помощью языка программирования Ruby. С помощью этого SDK вы можете создавать, редактировать и конвертировать документы Excel в облаке без установки дополнительного программного обеспечения или зависимостей на локальном компьютере.
+Облачный SDK Aspose.Cells для Ruby — это мощная библиотека, позволяющая разработчикам обрабатывать файлы Microsoft и Excel, используя язык программирования Ruby. С помощью этого SDK вы можете создавать, редактировать и конвертировать документы Excel в облаке, не устанавливая дополнительное программное обеспечение или зависимости на локальный компьютер.
 
-В этой статье мы рассмотрим, как использовать Cloud SDK Aspose.Cells для Ruby для выполнения некоторых распространенных задач, таких как создание новой книги Excel, вставка данных в ячейки и сохранение измененной книги в облаке.
+В этой статье мы рассмотрим, как использовать Aspose.Cells Cloud SDK for Ruby для выполнения некоторых распространенных задач, таких как создание новой книги Excel, вставка данных в ячейки и сохранение измененной книги в облаке.
 
 ## Начиная
 
- Прежде чем вы сможете начать использовать Cloud SDK для Go Aspose.Cells, вам необходимо настроить среду разработки и установить необходимые зависимости. Ссылаться на[статья](https://docs.aspose.cloud/cells/quickstart/) на веб-сайте Aspose, чтобы получить идентификатор клиента и секрет клиента.
+ Прежде чем начать использовать Cloud SDK Aspose.Cells для Go, необходимо настроить среду разработки и установить необходимые зависимости. См.[статья](https://docs.aspose.cloud/cells/quickstart/) на сайте Aspose, чтобы получить свой идентификатор клиента и секретный код клиента.
 
 ## Как установить пакет Ruby для облака Aspose.Cells
 
-Вы можете установить Aspose.Cells Cloud SDK для Ruby с помощью следующей команды:
+Установить Aspose.Cells Cloud SDK для Ruby можно с помощью команды ниже:
 
 ```bash
 
@@ -29,41 +29,15 @@ Aspose.Cells Cloud SDK для Ruby — это мощная библиотека,
   
  ```
 
-## Как использовать пакет Ruby для преобразования Xlsx в PDF
+## Как использовать пакет Ruby для конвертации Xlsx в другие форматы
 
-- Импортировать облачную библиотеку Aspose.Cells
- Начните с импорта необходимого пакета из Aspose.Cells Cloud Python SDK в свой проект.
-- Настройте клиент API с учетными данными
- Аутентифицируйте своего клиента API с помощью уникального идентификатора клиента и секретного кода клиента.
-- Подготовьте параметры преобразования
+- Импорт Aspose.Cells Облачная библиотека
+ Начните с импорта необходимого пакета из Aspose.Cells Cloud Python SDK в ваш проект.
+- Настройте клиента API с учетными данными
+ Авторизуйте своего клиента API, используя свой уникальный идентификатор клиента и секретный код клиента.
+- Подготовить параметры преобразования
  Определите параметры задачи преобразования, включая имя исходного файла, желаемый выходной формат и путь к папке хранения.
-- Выполнить преобразование книги
+- Выполнить преобразование рабочей книги
  Вызовите процесс преобразования с помощью метода PostConvertWorkbook и обработайте ответ.
 
-```Ruby
-require 'openssl'
-require 'bundler'
-require 'aspose_cells_cloud'
-
-@instance = AsposeCellsCloud::CellsApi.new(ENV['CellsCloudClientId'], ENV['CellsCloudClientSecret'],'v3.0',ENV['CellsCloudApiBaseUrl'])
-
-remote_folder = 'TestData/In'
-
-local_name = 'Book1.xlsx'
-remote_name = 'Book1.xlsx'
-
-format = "csv"
-
-    
-mapFiles = { }   
-mapFiles = { }               
-mapFiles[local_name] = ::File.open(File.expand_path("TestData/"+local_name),"r")  
- 
-uploadrequest = AsposeCellsCloud::UploadFileRequest.new( { :UploadFiles=>mapFiles,:path=>remote_folder })
-@instance.upload_file(uploadrequest)
-mapFiles[local_name]= ::File.open(File.expand_path("TestData/"+local_name),"r")
-request =   AsposeCellsCloud::PutConvertWorkbookRequest.new(:File=>mapFiles,:format=>format);
-@instance.put_convert_workbook(request);
-
-
-```
+{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_AvailableSDKs.rb" >}}
