@@ -497,7 +497,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/storage/folder/move/desfolder" \
 ```
 
 {{< /tab >}}
-{{< tab tab num="24" >}}
+{{< tab tabnum="24" >}}
 
 ```bash
 {
