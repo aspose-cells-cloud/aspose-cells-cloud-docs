@@ -1,22 +1,22 @@
 ---
-title: "Search content in remote spreadsheet"
-second_title: "Developer Guide"
-linktitle: "Search content in remote spreadsheet"
+title: "Search Content in Remote Spreadsheet - Excel API"
+second_title: "Aspose.Cells Cloud"
+linktitle: "Search Content in Remote Spreadsheet"
 type: docs
 url: /search-content-in-remote-spreadsheet/
-keywords: ""
-description: "Search text in the remoted spreadsheet. "
+keywords: "remote spreadsheet search, Excel API, search text in spreadsheet, cloud storage search, Aspose.Cells API"
+description: "Efficiently search for text in a remote spreadsheet using the Aspose.Cells API."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Match all blank cells in an Excel worksheet, remote spreadsheet search, cloud storage search
 ---
 
-# **Excel API : SearchContentInRemoteSpreadsheet**
+# **Excel API: Search Content in Remote Spreadsheet**
 
-Search text in the remoted spreadsheet. 
+Efficiently search for specified text in a remote spreadsheet.
 
 ## **Interface Details**
 
-### **Endpoint** 
+### **Endpoint**
 
 ```
 PUT http://api.aspose.cloud/v4.0/cells/{name}/search/content
@@ -24,22 +24,22 @@ PUT http://api.aspose.cloud/v4.0/cells/{name}/search/content
 
 ### **Function Description**
 
-This method searches for specified text within a spreadsheet file stored in remote cloud storage.It supports searching through all sheets and cells of the workbook, identifying occurrences of the search term directly within the cloud environment.The operation is performed remotely, eliminating the need to download the file to the local machine.Ensure that you have valid cloud storage credentials and accessible file paths or identifiers for the target spreadsheet.If the source file cannot be accessed, permissions are insufficient, or if an error occurs during the search process (such as an unsupported file format), an appropriate exception will be thrown.Depending on the implementation, the method may return the locations of the matches (e.g., sheet name, cell coordinates).Users should specify the exact search criteria, including case sensitivity and whole word matching options, to refine search results.
+This method allows users to search for specified text within a spreadsheet file stored in remote cloud storage. It supports searching through all sheets and cells of the workbook, identifying occurrences of the search term directly within the cloud environment. The operation is performed remotely, eliminating the need to download the file to the local machine. Ensure that you have valid cloud storage credentials and accessible file paths or identifiers for the target spreadsheet. If the source file cannot be accessed, permissions are insufficient, or if an error occurs during the search process (such as an unsupported file format), an appropriate exception will be thrown. Depending on the implementation, the method may return the locations of the matches (e.g., sheet name, cell coordinates). Users should specify the exact search criteria, including case sensitivity and whole word matching options, to refine search results.
 
-### The request parameters of **searchContentInRemoteSpreadsheet** API are: 
+### The request parameters of **searchContentInRemoteSpreadsheet** API are
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description | 
-| :- | :- | :- |:- | 
-|name|String|Path|The name of the workbook file to be search.|
-|searchText|String|Query|The searched text.|
-|ignoringCase|Boolean|Query|Ignore the text of the search.|
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+| :- | :- | :- |:- |
+|name|String|Path|The name of the workbook file to search.|
+|searchText|String|Query|The text to search for in the spreadsheet.|
+|ignoringCase|Boolean|Query|Indicates whether to ignore case in the search.|
 |folder|String|Query|The folder path where the workbook is stored.|
-|storageName|String|Query|(Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.|
-|regoin|String|Query|The spreadsheet region setting.|
-|password|String|Query|The password for opening spreadsheet file.|
-
+|storageName|String|Query|(Optional) The name of the custom cloud storage. Default storage is used if omitted.|
+|region|String|Query|The spreadsheet region setting.|
+|password|String|Query|The password for opening the spreadsheet file.|
 
 ### **Response Description**
+
 ```json
 {
   "Name": "SearchResponse",
@@ -89,14 +89,13 @@ This method searches for specified text within a spreadsheet file stored in remo
 
 ## OpenAPI Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/SearchControllor/SearchContentInRemoteSpreadsheet) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/SearchControllor/SearchContentInRemoteSpreadsheet) defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
-## Excel API SDK 
+## Excel API SDK
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Utilizing an SDK is the most efficient way to expedite development. An SDK manages low-level details, allowing you to concentrate on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
-
+The following code examples illustrate how to invoke Aspose.Cells web services using various SDKs:
 
 {{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 {{<tab tabNum="1" >}}
@@ -124,5 +123,3 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_SearchTextInRemoteSpreadsheet.go" >}}
 {{</tab>}}
 {{< /tabs >}}
-
-

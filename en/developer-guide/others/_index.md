@@ -1,12 +1,11 @@
 ---
-title: "Other Features: Health Check, Get public key, and more"
+title: "Other Features: Health Check, Get Public Key, and More"
 linktitle: "Other Features"
-second_title: "Developer Guide"
+second_title: "Aspose.Cells Cloud"
 type: docs
 url: /other-features/
-keywords: "How to use Aspose.Cells Cloud REST APIs. Office Excel 2013,  Office Excel 2016,  Office Excel 2019,office Excel 365."
-description: "This Developer Guide describes practical scenarios and tips to help you use specific Aspose.Cells for .NET features, achieve a certain Excel document appearance, or make a use case possible."
+keywords: "Aspose.Cells Cloud REST API, Health Check, Public Key Retrieval, Excel 2013, Excel 2016, Excel 2019, Excel 365"
+description: "This Developer Guide provides practical scenarios and tips for utilizing specific features of Aspose.Cells for .NET, ensuring optimal Excel document appearance and enabling various use cases."
 weight: 120
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Developer Guide
+kwords: "Excel, Aspose.Cells, Cloud API, RESTful API, Spreadsheet Management, PDF Conversion, CSV Handling, JSON Processing, Markdown Support, Developer Documentation"
 ---
-

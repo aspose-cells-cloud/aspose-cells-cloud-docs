@@ -1,43 +1,41 @@
 ---
-title: "Compress spreadsheet"
-second_title: "Developer Guide"
-linktitle: "Compress spreadsheet"
+title: "Compress Spreadsheet - Excel API"
+second_title: "Aspose.Cells Cloud"
+linktitle: "Compress Spreadsheet"
 type: docs
 url: /compress-spreadsheet/
-keywords: ""
-description: "The Web API endpoint allows users to compress a spreadsheet to reduce its file size. This function provides a straightforward way to optimize the storage and performance of spreadsheets by applying a specified compression level. "
+keywords: "Spreadsheet Compression, Reduce File Size, Excel API, Optimize Storage, REST API, Cloud Storage"
+description: "The Compress Spreadsheet API allows users to efficiently reduce the file size of spreadsheets by applying specified compression levels, optimizing storage and enhancing performance."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+kwords: "Excel, Office Cloud, REST API, Spreadsheet Compression, File Size Optimization, PDF, CSV, Json, Markdown, Manage Blank Cells in Excel"
 ---
 
-# **Excel API : CompressSpreadsheet**
+# **Compress Spreadsheet API**
 
 ## **Overview**
 
-The Web API endpoint allows users to compress a spreadsheet to reduce its file size. This function provides a straightforward way to optimize the storage and performance of spreadsheets by applying a specified compression level. 
+The Compress Spreadsheet API allows users to efficiently reduce the file size of spreadsheets. This function optimizes storage and enhances performance by applying specified compression levels, making it an essential tool for managing large spreadsheet files effectively.
 
 ## **Function Description**
 
-By using the CompressSpreadsheet API, you can dynamically manage the storage and performance of your spreadsheets, applying specified compression levels to reduce file sizes and optimize storage usage. This feature enhances your ability to manage and optimize your spreadsheets efficiently, ensuring minimal storage usage and enhanced performance.
+With the Compress Spreadsheet API, you can dynamically manage the storage and performance of your spreadsheets by applying specified compression levels to reduce file sizes. This feature enables efficient spreadsheet management, ensuring minimal storage usage and improved performance for your applications.
 
-
-## **API Endpoint** 
+## **API Endpoint**
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/spreadsheet/compress
 ```
 
-## The request parameters of **compressSpreadsheet** API are: 
+## The request parameters of **compressSpreadsheet** API are
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description | 
-| :- | :- | :- |:- | 
-|Spreadsheet|File|FormData|Upload spreadsheet file.|
-|level|Integer|Query|Specifies the compression level to be applied to the spreadsheet. The level should be within a valid range (e.g., 0-9 for most compression algorithms, where 0 is no compression and 9 is maximum compression).|
-|outPath|String|Query|(Optional) The folder path where the workbook is stored. The default is null.|
-|outStorageName|String|Query|Output file Storage Name.|
-|regoin|String|Query|The spreadsheet region setting.|
-|password|String|Query|The password for opening spreadsheet file.|
-
+| Parameter Name | Type | Path/Query String/HTTP Body | Description |
+| :- | :- | :- |:- |
+|Spreadsheet|File|FormData|Upload the spreadsheet file to be compressed.|
+|level|Integer|Query|Specifies the compression level to be applied, ranging from 0 (no compression) to 9 (maximum compression).|
+|outPath|String|Query|(Optional) The folder path where the compressed workbook will be stored. Default is null.|
+|outStorageName|String|Query|Output file storage name.|
+|region|String|Query|The spreadsheet region setting.|
+|password|String|Query|The password required to open the spreadsheet file.|
 
 ## **Response Structure**
 
@@ -49,28 +47,27 @@ File
 
 ## Error Handling
 
-- **400 Bad Request**: Invalid url.
-- **401 Unauthorized**:  Authentication has failed, or no credentials were provided.
-- **404 Not Found**: Source file not accessible.
-- **500 Server Error** The spreadsheet has encountered an anomaly in obtaining data.
-
+- **400 Bad Request**: The request URL is invalid.
+- **401 Unauthorized**: Authentication failed or no credentials provided.
+- **404 Not Found**: The source file is not accessible.
+- **500 Server Error**: An error occurred while processing the spreadsheet.
 
 ## Usage Scenarios
+
 ## Key Features and Benefits
 
-- **Dynamic Compression**: Allows users to compress a spreadsheet to reduce its file size.
-- **Specified Compression Levels**: Provides the ability to apply different levels of compression based on user requirements.
+- **Dynamic Compression**: Easily compress spreadsheets to significantly reduce file sizes.
+- **Flexible Compression Levels**: Choose from various compression levels tailored to user needs, optimizing performance and storage.
 
 ## OpenAPI Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ManagementController/CompressSpreadsheet) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ManagementController/CompressSpreadsheet) provides a publicly accessible interface for REST interactions, allowing direct API calls from a web browser.
 
-## Excel API SDK 
+## Excel API SDK
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Utilizing an SDK accelerates development by managing low-level details, allowing developers to focus on their projects. Visit the [GitHub repository](https://github.com/aspose-cells-cloud) for an extensive list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
-
+The following code examples demonstrate how to interact with Aspose.Cells web services using various SDKs:
 
 {{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 {{<tab tabNum="1" >}}
@@ -98,5 +95,3 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_CompressSpreadsheet.go" >}}
 {{</tab>}}
 {{< /tabs >}}
-
-

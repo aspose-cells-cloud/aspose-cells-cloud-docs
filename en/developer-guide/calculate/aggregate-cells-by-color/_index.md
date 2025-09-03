@@ -1,52 +1,50 @@
 ---
-title: "Aggregate cells by color"
-second_title: "Developer Guide"
-linktitle: "Aggregate cells by color"
+title: "Aggregate Cells by Color - Excel API"
+second_title: "Aspose.Cells Cloud"
+linktitle: "Aggregate Cells by Color"
 type: docs
 url: /aggregate-cells-by-color/
-keywords: ""
-description: "The Aggregate by Color API provides a convenient way to perform calculations on cells that share the same fill or font color. This API supports a range of aggregate operations, including count, sum, maximum value, minimum value, and average value, enabling you to analyze and summarize data based on color distinctions. "
+keywords: "Excel API, Aggregate Cells, Color-based Calculation, Data Analysis, REST API, Spreadsheet Operations, Aspose.Cells"
+description: "The Aggregate by Color API enables efficient calculations on cells with matching fill or font colors in Excel spreadsheets. Support for aggregate operations like count, sum, max, min, and average allows for effective data analysis based on color distinctions."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+kwords: Excel API, Aggregate by Color, Data Analysis, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Color-based Aggregation
 ---
 
-# **Excel API : AggregateCellsByColor**
+# **Excel API: Aggregate Cells by Color**
 
 ## **Overview**
 
-The Aggregate by Color API provides a convenient way to perform calculations on cells that share the same fill or font color. This API supports a range of aggregate operations, including count, sum, maximum value, minimum value, and average value, enabling you to analyze and summarize data based on color distinctions. 
+The Aggregate by Color API enables efficient calculations on cells with matching fill or font colors in Excel spreadsheets. This API supports various aggregate operations, including count, sum, maximum, minimum, and average, allowing for effective data analysis based on color distinctions.
 
 ## **Function Description**
 
-The Aggregate by Color API is a powerful tool for data analysis, allowing you to perform color-based aggregations efficiently. Whether you need to count, sum, find the max or min value, or calculate the average, this API provides the flexibility to handle various aggregate operations based on cell colors.
+The Aggregate by Color API is a powerful tool for data analysis, allowing you to perform color-based aggregations efficiently. Whether you need to count, sum, find the maximum or minimum value, or calculate the average, this API provides the flexibility to handle various aggregate operations based on cell colors.
 
-- Color-Based Aggregation: Perform calculations on cells grouped by their fill or font color.
-- Aggregate Operations:
-  - Count: Determine the number of cells with the same color.
-  - Sum: Calculate the total value of cells with the same color.
-  - Max Value: Identify the highest value among cells with the same color.
-  - Min Value: Find the lowest value among cells with the same color.
-  - Average Value: Compute the mean value of cells with the same color.
- 
+- **Color-Based Aggregation**: Perform calculations on cells grouped by their fill or font color.
+- **Aggregate Operations**:
+  - **Count**: Determine the number of cells with the same color.
+  - **Sum**: Calculate the total value of cells with the same color.
+  - **Max Value**: Identify the highest value among cells with the same color.
+  - **Min Value**: Find the lowest value among cells with the same color.
+  - **Average Value**: Compute the mean value of cells with the same color.
 
-## **API Endpoint** 
+## **API Endpoint**
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/calculate/aggergate/color
+PUT http://api.aspose.cloud/v4.0/cells/calculate/aggregate/color
 ```
 
-## The request parameters of **aggregateCellsByColor** API are: 
+## **Request Parameters of the `aggregateCellsByColor` API:**
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description | 
-| :- | :- | :- |:- | 
-|Spreadsheet|File|FormData|Upload spreadsheet file.|
-|worksheet|String|Query|Specified worksheet.|
-|range|String|Query|Specified range.|
-|operation|String|Query|Specify calculation operation methods, including Sum, Count, Average, Min, and Max.|
-|colorPosition|String|Query|Indicates the content to sum and count based on background color and/or font color.|
-|regoin|String|Query|The spreadsheet region setting.|
-|password|String|Query|The password for opening spreadsheet file.|
-
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+| :- | :- | :- |:- |
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| Worksheet | String | Query | Specifies the worksheet. |
+| Range | String | Query | Specifies the range. |
+| Operation | String | Query | Specify calculation operation methods, including Sum, Count, Average, Min, and Max. |
+| ColorPosition | String | Query | Indicates the content to sum and count based on background color and/or font color. |
+| Region | String | Query | The spreadsheet region setting. |
+| Password | String | Query | The password for opening the spreadsheet file. |
 
 ## **Response Structure**
 
@@ -99,11 +97,10 @@ PUT http://api.aspose.cloud/v4.0/cells/calculate/aggergate/color
 
 ## Error Handling
 
-- **400 Bad Request**: Invalid url.
-- **401 Unauthorized**:  Authentication has failed, or no credentials were provided.
+- **400 Bad Request**: Invalid URL.
+- **401 Unauthorized**: Authentication has failed, or no credentials were provided.
 - **404 Not Found**: Source file not accessible.
-- **500 Server Error** The spreadsheet has encountered an anomaly in obtaining calculation data.
-
+- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
 
 ## Usage Scenarios
 
@@ -112,20 +109,18 @@ Suppose you have a spreadsheet where different categories of data are highlighte
 ## Key Features and Benefits
 
 - **Simplified Data Analysis**: Eliminates manual sorting or filtering of color-coded cells, reducing tedious manual operations and saving time.
-- **Clear Color-Driven Insights**: Enables users to quickly summarize and understand data rules based on color distinctions(e.g., identifying the total sales value of cells marked with a specific fill color).
-- **Strong Flexibility**: Adapts to multiple common analysis scenarios(quantity statistics, value summation, extremum search, average calculation) through its diversified aggregate operations, no need for additional custom development.
-
+- **Clear Color-Driven Insights**: Enables users to quickly summarize and understand data rules based on color distinctions (e.g., identifying the total sales value of cells marked with a specific fill color).
+- **Strong Flexibility**: Adapts to multiple common analysis scenarios (quantity statistics, value summation, extremum search, average calculation) through its diversified aggregate operations, eliminating the need for additional custom development.
 
 ## OpenAPI Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/CalculateController/AggregateCellsByColor) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/CalculateController/AggregateCellsByColor) defines a publicly accessible programming interface and allows you to carry out REST interactions directly from a web browser.
 
-## Excel API SDK 
+## Excel API SDK
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK takes care of low-level details and allows you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
-
 
 {{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 {{<tab tabNum="1" >}}
@@ -153,5 +148,3 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_AggregateCellsByColor.go" >}}
 {{</tab>}}
 {{< /tabs >}}
-
-

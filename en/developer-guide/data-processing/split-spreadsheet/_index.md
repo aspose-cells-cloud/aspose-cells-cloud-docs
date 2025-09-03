@@ -1,52 +1,44 @@
 ---
-title: "Split spreadsheet"
-second_title: "Developer Guide"
-linktitle: "Split spreadsheet"
+title: "Split Spreadsheet - Excel API"
+second_title: "Aspose.Cells Cloud"
+linktitle: "Split Spreadsheet"
 type: docs
 url: /split-spreadsheet/
-keywords: ""
-description: "Split a local spreadsheet into the specified format, multi-file. "
+keywords: "Excel API, Split Spreadsheet, Spreadsheet Management, Cloud Processing, File Formats, REST API, XLSX, CSV, PDF, JSON, Markdown"
+description: "Efficiently split a local spreadsheet into multiple files in various formats without requiring cloud storage."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+kwords: "Excel API, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Split Local Spreadsheet, Cloud Processing, File Management, Error Handling"
 ---
 
-# **Excel API : SplitSpreadsheet**
+# **Excel API: Split Spreadsheet**
 
 ## **Overview**
 
-Split a local spreadsheet into the specified format, multi-file. 
+Easily split a local spreadsheet into multiple output files in the specified format, enhancing your spreadsheet management capabilities.
 
 ## **Function Description**
 
-This method splits a single local spreadsheet file into multiple output files in the specified format (e.g., XLSX, CSV, PDF). 
-Each split file may represent different sheets, sections, or segments of the original document based on user-defined criteria. 
-The operation is performed cloudly, requiring no cloud storage. 
-Ensure that you have the necessary permissions to read the source file and write the resulting files. 
-If the source file cannot be accessed or if an error occurs during the splitting process, an appropriate exception will be thrown. 
-Supported formats for output depend on the available libraries and their capabilities. 
-Users should specify clear criteria for how the input file should be divided to ensure accurate results.
+This method allows users to split a single local spreadsheet file into multiple output files in various formats (e.g., XLSX, CSV, PDF). Each output file can represent different sheets, sections, or segments of the original document, determined by user-defined criteria. The operation is performed in the cloud, eliminating the need for cloud storage. Ensure that you have the necessary permissions to access the source file and write the output files. In cases where the source file cannot be accessed or if an error occurs during the splitting process, an appropriate exception will be triggered. The supported output formats depend on the libraries available and their capabilities. Users should provide clear criteria for splitting to guarantee precise results.
 
-
-## **API Endpoint** 
+## **API Endpoint**
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/split/spreadsheet
 ```
 
-## The request parameters of **splitSpreadsheet** API are: 
+## The request parameters of **splitSpreadsheet** API are
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description | 
-| :- | :- | :- |:- | 
-|Spreadsheet|File|FormData|Upload spreadsheet file.|
-|from|Integer|Query|Begin worksheet index.|
-|to|Integer|Query|End worksheet index.|
-|outFormat|String|Query|The out file format.|
-|outPath|String|Query|(Optional) The folder path where the workbook is stored. The default is null.|
-|outStorageName|String|Query|Output file Storage Name.|
-|fontsLocation|String|Query|Use Custom fonts.|
-|regoin|String|Query|The spreadsheet region setting.|
-|password|String|Query|The password for opening spreadsheet file.|
-
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+| :- | :- | :- |:- |
+| Spreadsheet | File | FormData | Upload the spreadsheet file to be split. |
+| from | Integer | Query | Specify the beginning worksheet index. |
+| to | Integer | Query | Specify the ending worksheet index. |
+| outFormat | String | Query | Define the output file format. |
+| outPath | String | Query | (Optional) The folder path for storing the output workbook. Defaults to null. |
+| outStorageName | String | Query | Define the output file storage name. |
+| fontsLocation | String | Query | Specify custom fonts if required. |
+| regoin | String | Query | Set the spreadsheet region. |
+| password | String | Query | Provide the password for accessing the spreadsheet file. |
 
 ## **Response Structure**
 
@@ -58,29 +50,28 @@ File
 
 ## Error Handling
 
-- **400 Bad Request**: Invalid url.
-- **401 Unauthorized**:  Authentication has failed, or no credentials were provided.
-- **404 Not Found**: Source file not accessible.
-- **500 Server Error** The spreadsheet has encountered an anomaly in obtaining data.
-
+- **400 Bad Request**: Invalid URL.
+- **401 Unauthorized**: Authentication failed, or no credentials provided.
+- **404 Not Found**: Source file is not accessible.
+- **500 Server Error**: An anomaly occurred while processing the spreadsheet data.
 
 ## Usage Scenarios
+
 ## Key Features and Benefits
 
-- **Local File Splitting**: Splits a single local spreadsheet file into multiple output files in the specified format (e.g., XLSX, CSV, PDF).
-- **Cloud-Based Processing**: Performs the splitting operation in the cloud, without requiring cloud storage.
-- **Enhanced Performance**: Processes the file in the cloud, reducing the need for local processing and improving performance.
+- **Local File Splitting**: Seamlessly split a single local spreadsheet file into multiple output files in various formats (e.g., XLSX, CSV, PDF).
+- **Cloud-Based Processing**: Execute the splitting operation in the cloud, without the need for cloud storage.
+- **Enhanced Performance**: Cloud processing reduces local resource consumption, improving overall performance.
 
 ## OpenAPI Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/DataProcessingController/SplitSpreadsheet) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/DataProcessingController/SplitSpreadsheet) provides a publicly accessible programming interface for performing REST interactions directly from a web browser.
 
-## Excel API SDK 
+## Excel API SDK
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Utilizing an SDK is the most efficient way to accelerate your development. An SDK manages low-level details, allowing you to concentrate on your project tasks. Explore the [GitHub repository](https://github.com/aspose-cells-cloud) for a comprehensive list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
-
+The following code examples illustrate how to invoke Aspose.Cells web services using different SDKs:
 
 {{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 {{<tab tabNum="1" >}}
@@ -108,5 +99,3 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_SplitLocalFile.go" >}}
 {{</tab>}}
 {{< /tabs >}}
-
-

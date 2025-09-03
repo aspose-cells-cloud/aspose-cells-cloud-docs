@@ -1,22 +1,20 @@
 ---
-title: "Copy folder"
-second_title: "Developer Guide"
-linktitle: "Copy folder"
+title: "Copy Folder"
+second_title: "Aspose.Cells Cloud"
+linktitle: "Copy Folder"
 type: docs
 url: /copy-folder/
-keywords: ""
-description: " "
+keywords: "Excel API, Copy Folder, Office Cloud, REST API, Spreadsheet Management, File Operations"
+description: "Learn how to use the CopyFolder API to efficiently copy folders in the Aspose.Cells cloud environment."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+kwords: "Excel, Office Cloud, REST API, Copy Folder, File Management, PDF, CSV, JSON, Markdown, Match all blank cells in an Excel worksheet"
 ---
 
-# **Excel API : CopyFolder**
-
- 
+# **Excel API: Copy Folder**
 
 ## **Interface Details**
 
-### **Endpoint** 
+### **Endpoint**
 
 ```
 PUT http://api.aspose.cloud/v4.0/cells/storage/folder/copy/{srcPath}
@@ -24,16 +22,16 @@ PUT http://api.aspose.cloud/v4.0/cells/storage/folder/copy/{srcPath}
 
 ### **Function Description**
 
+The **CopyFolder** API allows users to duplicate an existing folder within the Aspose.Cells cloud storage. This functionality is essential for managing files efficiently, enabling users to create backups or organize their work without manually transferring contents.
 
-### The request parameters of **copyFolder** API are: 
+### The request parameters of the **CopyFolder** API are:
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description | 
-| :- | :- | :- |:- | 
-|srcPath|String|Path||
-|destPath|String|Query||
-|srcStorageName|String|Query||
-|destStorageName|String|Query||
-
+| Parameter Name       | Type   | Path/Query String/HTTPBody | Description                               |
+|----------------------|--------|-----------------------------|-------------------------------------------|
+| srcPath              | String | Path                        | The path of the source folder to copy.   |
+| destPath             | String | Query                       | The path where the new folder will be created. |
+| srcStorageName       | String | Query                       | The name of the storage containing the source folder. |
+| destStorageName      | String | Query                       | The name of the destination storage where the folder should be copied. |
 
 ### **Response Description**
 ```json
@@ -46,12 +44,11 @@ Void
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/FolderController/CopyFolder) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-## Excel API SDK 
+## Excel API SDK
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
-
 
 {{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 {{<tab tabNum="1" >}}
@@ -79,5 +76,3 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_CopyFolder.go" >}}
 {{</tab>}}
 {{< /tabs >}}
-
-

@@ -1,18 +1,16 @@
 ---
-title: "Move folder"
-second_title: "Developer Guide"
-linktitle: "Move folder"
+title: "Move Folder"
+second_title: "Aspose.Cells Cloud"
+linktitle: "Move Folder"
 type: docs
 url: /move-folder/
-keywords: ""
-description: " "
+keywords: "Move folder API, Excel API, Folder management, REST API, Aspose.Cells, Cloud storage"
+description: "This documentation provides a comprehensive guide to using the Move Folder API for managing folders within the Aspose.Cells cloud storage."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+kwords: "Excel API, Move folder API, Office Cloud, REST API, Spreadsheet management, PDF, CSV, JSON, Markdown, Match all blank cells in an Excel worksheet"
 ---
 
-# **Excel API : MoveFolder**
-
- 
+# **Excel API: Move Folder**
 
 ## **Interface Details**
 
@@ -24,16 +22,16 @@ PUT http://api.aspose.cloud/v4.0/cells/storage/folder/move/{srcPath}
 
 ### **Function Description**
 
+This API allows users to move a folder from one location to another within the Aspose.Cells cloud storage. It is essential for organizing files and managing cloud storage effectively.
 
 ### The request parameters of **moveFolder** API are: 
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description | 
-| :- | :- | :- |:- | 
-|srcPath|String|Path||
-|destPath|String|Query||
-|srcStorageName|String|Query||
-|destStorageName|String|Query||
-
+| Parameter Name       | Type   | Path/Query String/HTTP Body | Description                                                  | 
+|----------------------|--------|------------------------------|--------------------------------------------------------------| 
+| srcPath              | String | Path                         | The source path of the folder to be moved.                  |
+| destPath             | String | Query                        | The destination path where the folder should be moved.      |
+| srcStorageName       | String | Query                        | The name of the source storage.                              |
+| destStorageName      | String | Query                        | The name of the destination storage.                         |
 
 ### **Response Description**
 ```json
@@ -51,7 +49,6 @@ The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/FolderControl
 Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
-
 
 {{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 {{<tab tabNum="1" >}}
@@ -79,5 +76,3 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_MoveFolder.go" >}}
 {{</tab>}}
 {{< /tabs >}}
-
-

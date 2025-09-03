@@ -1,43 +1,41 @@
 ---
-title: "Unprotect spreadsheet"
-second_title: "Developer Guide"
-linktitle: "Unprotect spreadsheet"
+title: "Unprotect Spreadsheet - Excel API"
+second_title: "Aspose.Cells Cloud"
+linktitle: "Unprotect Spreadsheet"
 type: docs
 url: /unprotect-spreadsheet/
-keywords: ""
-description: "Removes dual-layer password protection from Excel spreadsheets, supporting both open and modify passwords with encryption. "
+keywords: "Excel API, Unprotect Spreadsheet, Password Removal, Encryption, Office Cloud, REST API, Spreadsheet Security, Excel File Management"
+description: "Efficiently removes dual-layer password protection from Excel spreadsheets, supporting both open and modify passwords with advanced encryption techniques."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Match all blank cells in an Excel worksheet
 ---
 
-# **Excel API : UnprotectSpreadsheet**
+# **Excel API : Unprotect Spreadsheet**
 
 ## **Overview**
 
-Removes dual-layer password protection from Excel spreadsheets, supporting both open and modify passwords with encryption. 
+This API efficiently removes dual-layer password protection from Excel spreadsheets, allowing for the decryption of both open and modify passwords.
 
 ## **Function Description**
 
-This WEB API removes dual-layer password protection from Excel spreadsheets, supporting both open and modify passwords. Passwords can be encrypted to enhance security.
+This WEB API allows you to remove dual-layer password protection from Excel spreadsheets, supporting both open and modify passwords. Passwords can be encrypted to enhance security.
 
-
-## **API Endpoint** 
+## **API Endpoint**
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/unprotection/spreadsheet
 ```
 
-## The request parameters of **unprotectSpreadsheet** API are: 
+## The request parameters of **unprotectSpreadsheet** API are
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description | 
-| :- | :- | :- |:- | 
-|Spreadsheet|File|FormData|Upload spreadsheet file.|
-|password|String|Query|Spreadsheet file encryption password.|
-|modifyPassword|String|Query|Sets the protected password to modify the file.|
-|outPath|String|Query|(Optional) The folder path where the workbook is stored. The default is null.|
-|outStorageName|String|Query|Output file Storage Name.|
-|regoin|String|Query|The spreadsheet region setting.|
-
+| Parameter Name | Type | Path/Query String/HTTP Body | Description |
+| :- | :- | :- |:- |
+|Spreadsheet|File|FormData|Upload the spreadsheet file to be unprotected.|
+|password|String|Query|The encryption password for the spreadsheet file.|
+|modifyPassword|String|Query|The password required to modify the protected file.|
+|outPath|String|Query|(Optional) The folder path where the unprotected workbook will be stored. Defaults to null.|
+|outStorageName|String|Query|Specifies the output file storage name.|
+|region|String|Query|Defines the spreadsheet region settings.|
 
 ## **Response Structure**
 
@@ -49,27 +47,26 @@ File
 
 ## Error Handling
 
-- **400 Bad Request**: Invalid url.
-- **401 Unauthorized**:  Authentication has failed, or no credentials were provided.
-- **404 Not Found**: Source file not accessible.
-- **500 Server Error** The spreadsheet has encountered an anomaly in obtaining data.
-
+- **400 Bad Request**: The URL is invalid.
+- **401 Unauthorized**: Authentication has failed, or no credentials were provided.
+- **404 Not Found**: The source file is not accessible.
+- **500 Server Error**: An anomaly occurred while processing the spreadsheet.
 
 ## Usage Scenarios
+
 ## Key Features and Benefits
 
-- **Dual-Layer Password Removal**: Removes both open and modify passwords from Excel spreadsheets.
+- **Dual-Layer Password Removal**: Effectively removes both open and modify passwords from Excel spreadsheets, streamlining access to protected files.
 
 ## OpenAPI Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ProtectionController/UnprotectSpreadsheet) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ProtectionController/UnprotectSpreadsheet) defines a publicly accessible programming interface, enabling you to perform REST interactions directly from a web browser.
 
-## Excel API SDK 
+## Excel API SDK
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Utilizing an SDK is the most effective way to accelerate your development process. An SDK manages low-level details, allowing you to concentrate on your project tasks. Explore the [GitHub repository](https://github.com/aspose-cells-cloud) for a comprehensive list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
-
+The following code examples illustrate how to call Aspose.Cells web services using various SDKs:
 
 {{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 {{<tab tabNum="1" >}}
@@ -97,5 +94,3 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_UnprotectSpreadsheet.go" >}}
 {{</tab>}}
 {{< /tabs >}}
-
-

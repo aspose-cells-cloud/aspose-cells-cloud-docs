@@ -1,18 +1,16 @@
 ---
-title: "Upload file"
-second_title: "Developer Guide"
-linktitle: "Upload file"
+title: "Upload File to Aspose Cells"
+second_title: "Developer Guide for File Upload"
+linktitle: "Upload File"
 type: docs
 url: /upload-file/
-keywords: ""
-description: " "
+keywords: "Aspose, file upload, Excel API, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, upload Excel files, match blank cells"
+description: "Comprehensive guide on how to upload files using the Aspose Cells API, including parameters and response structure."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+kwords: "Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, match all blank cells in an Excel worksheet, upload file"
 ---
 
-# **Excel API : UploadFile **
-
- 
+# **Aspose Cells API: Upload File**
 
 ## **Interface Details**
 
@@ -24,15 +22,15 @@ PUT http://api.aspose.cloud/v4.0/cells/storage/file/{path}
 
 ### **Function Description**
 
+The **uploadFile** API enables developers to upload files directly to cloud storage for processing with Aspose Cells.
 
 ### The request parameters of **uploadFile** API are: 
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description | 
+| Parameter Name | Type | Path/Query String/HTTP Body | Description | 
 | :- | :- | :- |:- | 
-|UploadFiles|File|FormData|Upload files to cloud storage.|
-|path|String|Path||
-|storageName|String|Query||
-
+| UploadFiles | File | FormData | Upload files to cloud storage.|
+| path | String | Path | The destination path in the cloud storage. Specify the path where the file should be uploaded. |
+| storageName | String | Query | The name of the storage where the file will be uploaded. |
 
 ### **Response Description**
 ```json
@@ -87,14 +85,13 @@ PUT http://api.aspose.cloud/v4.0/cells/storage/file/{path}
 
 ## OpenAPI Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/FileController/UploadFile) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/FileController/UploadFile) provides a detailed description of the API, enabling developers to perform REST interactions directly from a web browser.
 
-## Excel API SDK 
+## Aspose Cells API SDK 
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Utilizing an SDK enhances development efficiency by managing low-level details, allowing developers to concentrate on project tasks. Visit the [GitHub repository](https://github.com/aspose-cells-cloud) for a comprehensive list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
-
+The following code examples illustrate how to call Aspose.Cells web services using various SDKs:
 
 {{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 {{<tab tabNum="1" >}}
@@ -122,5 +119,3 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_UploadFile.go" >}}
 {{</tab>}}
 {{< /tabs >}}
-
-

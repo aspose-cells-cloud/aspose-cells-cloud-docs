@@ -1,50 +1,43 @@
 ---
-title: "Convert table to csv"
-second_title: "Developer Guide"
-linktitle: "Convert table to csv"
+title: "Convert Table to CSV - Excel API"
+second_title: "Aspose.Cells Cloud"
+linktitle: "Convert Table to CSV"
 type: docs
 url: /convert-table-to-csv/
-keywords: ""
-description: "Converts a table of spreadsheet on a local drive to the csv file. "
+keywords: "table to csv, convert spreadsheet to csv, Excel to CSV conversion, CSV file generation, cloud-based file conversion"
+description: "Efficiently converts a table from a spreadsheet on your local drive to a CSV file using our API."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+kwords: "Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Match all blank cells in an Excel worksheet, Table to CSV, Local to Cloud Conversion"
 ---
 
-# **Excel API : ConvertTableToCsv**
+# **Excel API: Convert Table to CSV**
 
 ## **Overview**
 
-Converts a table of spreadsheet on a local drive to the csv file. 
+This API converts a table from a spreadsheet located on your local drive into a CSV file, facilitating easy data handling and import/export tasks.
 
 ## **Function Description**
 
-This method reads a spreadsheet file from the local file system, converts it's table to the desired csv file, and returns the converted result. 
-The source file path and target format must be specified correctly. 
-Ensure that the necessary permissions are in place to read the source file and write the converted file if applicable. 
-The conversion process occurs entirely on the cloud server, eliminating the need for any cloud storage or external downloads. 
-If the source file does not exist, is inaccessible, or if an error occurs during the conversion process, an appropriate exception will be thrown. 
-Supported formats for conversion depend on the available libraries and their capabilities.
+The `convertTableToCsv` method reads a specified spreadsheet file from the local file system, converts its table into the desired CSV format, and returns the resulting CSV file. Ensure that the source file path and target format are specified correctly. Adequate permissions must be granted to read the source file and write the converted file as necessary. The conversion occurs entirely on the cloud server, negating the need for any cloud storage or external downloads. If the source file is missing, inaccessible, or if an error arises during conversion, an appropriate exception will be raised. Supported conversion formats are contingent on the capabilities of the available libraries.
 
-
-## **API Endpoint** 
+## **API Endpoint**
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/convert/table/csv
 ```
 
-## The request parameters of **convertTableToCsv** API are: 
+## The request parameters of **convertTableToCsv** API are
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description | 
-| :- | :- | :- |:- | 
-|Spreadsheet|File|FormData|Upload spreadsheet file.|
-|worksheet|String|Query|worksheet name of spreadsheet.|
-|tableName|String|Query|table name|
-|outPath|String|Query|(Optional) The folder path where the workbook is stored. The default is null.|
-|outStorageName|String|Query|Output file Storage Name.|
-|fontsLocation|String|Query|Use Custom fonts.|
-|regoin|String|Query|The spreadsheet region setting.|
-|password|String|Query|The password for opening spreadsheet file.|
-
+| Parameter Name   | Type  | Path/Query String/HTTP Body | Description                                     |
+|-------------------|-------|------------------------------|-------------------------------------------------|
+| Spreadsheet       | File  | FormData                     | Upload the spreadsheet file.                    |
+| worksheet         | String| Query                        | Name of the worksheet in the spreadsheet.       |
+| tableName         | String| Query                        | Name of the table to be converted.              |
+| outPath           | String| Query                        | (Optional) Folder path where the workbook is stored; defaults to null. |
+| outStorageName    | String| Query                        | Name of the output file storage.                |
+| fontsLocation     | String| Query                        | Path for using custom fonts.                     |
+| region            | String| Query                        | Defines the spreadsheet region setting.         |
+| password          | String| Query                        | Password for opening the spreadsheet file.      |
 
 ## **Response Structure**
 
@@ -54,28 +47,27 @@ File
 }
 ```
 
-## Error Handling
+## **Error Handling**
 
-- **400 Bad Request**: Invalid url.
-- **401 Unauthorized**:  Authentication has failed, or no credentials were provided.
+- **400 Bad Request**: Invalid URL.
+- **401 Unauthorized**: Authentication has failed, or no credentials were provided.
 - **404 Not Found**: Source file not accessible.
-- **500 Server Error** The spreadsheet has encountered an anomaly in obtaining conversion data.
+- **500 Server Error**: An anomaly occurred in obtaining conversion data from the spreadsheet.
 
+## **Usage Scenarios**
 
-## Usage Scenarios
-## Key Features and Benefits
+## **Key Features and Benefits**
 
-- **Cloud-Native Conversion**: Conversion of local files directly in the cloud, eliminating the need to store them there.
-- **Reduced Cloud Resource Burden**: No need to upload files to the cloud, saving cloud storage space.
-- **Simplified Workflow**: Convert local spreadsheets to the csv format directly through cloud services, without intermediate steps.
+- **Cloud-Native Conversion**: Perform conversion of local files directly in the cloud, eliminating the need for file storage.
+- **Reduced Cloud Resource Burden**: No requirement to upload files to the cloud, conserving cloud storage space.
+- **Simplified Workflow**: Effortlessly convert local spreadsheets to CSV format directly through cloud services, minimizing intermediate steps.
 
-## OpenAPI Specification
+## **OpenAPI Specification**
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertTableToCsv) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertTableToCsv) provides a publicly accessible programming interface, allowing REST interactions directly from a web browser.
 
-## Excel API SDK 
+## **Excel API SDK**
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Utilizing an SDK significantly accelerates development. An SDK handles low-level details, allowing you to focus on your project tasks. For a complete list of Aspose.Cells Cloud SDKs, please visit the [GitHub repository](https://github.com/aspose-cells-cloud).
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
-
+The following code examples illustrate how to make calls to Aspose.Cells web services using various SDKs:

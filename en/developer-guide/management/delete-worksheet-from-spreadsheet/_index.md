@@ -1,43 +1,41 @@
 ---
-title: "Delete worksheet from spreadsheet"
-second_title: "Developer Guide"
-linktitle: "Delete worksheet from spreadsheet"
+title: "Delete Worksheet from Spreadsheet - Excel API"
+second_title: "Aspose.Cells Cloud"
+linktitle: "Delete Worksheet from Spreadsheet"
 type: docs
 url: /delete-worksheet-from-spreadsheet/
-keywords: ""
-description: "The Web API endpoint allows users to delete a specified worksheet from a workbook. This function provides a straightforward way to manage workbook structure by removing unnecessary or redundant worksheets. "
+keywords: "delete worksheet, spreadsheet management, Excel API, REST API, workbook structure, remove worksheets"
+description: "This API endpoint enables users to delete a specified worksheet from a workbook, simplifying the management of workbook structures by eliminating unnecessary or redundant worksheets."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Manage Excel Worksheets, Delete Redundant Worksheets
 ---
 
-# **Excel API : DeleteWorksheetFromSpreadsheet**
+# **Excel API : Delete Worksheet from Spreadsheet**
 
 ## **Overview**
 
-The Web API endpoint allows users to delete a specified worksheet from a workbook. This function provides a straightforward way to manage workbook structure by removing unnecessary or redundant worksheets. 
+The Web API endpoint enables users to delete a specified worksheet from a workbook, simplifying the management of workbook structures by eliminating unnecessary or redundant worksheets. This feature enhances your ability to maintain an organized spreadsheet environment.
 
 ## **Function Description**
 
-By using the Web API, you can dynamically manage the structure of your workbook, removing specified worksheets to maintain a clean and organized spreadsheet environment. This feature enhances your ability to manage and optimize your workbook efficiently.
+With the Web API, you can dynamically manage the structure of your workbook, allowing for the removal of specified worksheets. This functionality promotes efficient organization and optimization of your workbook, ensuring a clean and manageable workspace.
 
-
-## **API Endpoint** 
+## **API Endpoint**
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/spreadsheet/delete/worksheet
 ```
 
-## The request parameters of **deleteWorksheetFromSpreadsheet** API are: 
+## The request parameters of **deleteWorksheetFromSpreadsheet** API are
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description | 
-| :- | :- | :- |:- | 
-|Spreadsheet|File|FormData|Upload spreadsheet file.|
-|sheetName|String|Query|Specifies the name or identifier of the worksheet to be deleted. This parameter is required and must match the name of an existing worksheet in the workbook.|
-|outPath|String|Query|(Optional) The folder path where the workbook is stored. The default is null.|
-|outStorageName|String|Query|Output file Storage Name.|
-|regoin|String|Query|The spreadsheet region setting.|
-|password|String|Query|The password for opening spreadsheet file.|
-
+| Parameter Name   | Type   | Path/Query String/HTTPBody | Description |
+| :-               | :-     | :-                         |:-           |
+| Spreadsheet      | File   | FormData                  | Upload the spreadsheet file. |
+| sheetName        | String | Query                     | Specifies the name or identifier of the worksheet to be deleted. This parameter is required and must match the name of an existing worksheet in the workbook. |
+| outPath          | String | Query                     | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName   | String | Query                     | Output file Storage Name. |
+| region           | String | Query                     | The spreadsheet region setting. |
+| password         | String | Query                     | The password for opening the spreadsheet file. |
 
 ## **Response Structure**
 
@@ -49,28 +47,27 @@ File
 
 ## Error Handling
 
-- **400 Bad Request**: Invalid url.
-- **401 Unauthorized**:  Authentication has failed, or no credentials were provided.
+- **400 Bad Request**: Invalid URL.
+- **401 Unauthorized**: Authentication has failed, or no credentials were provided.
 - **404 Not Found**: Source file not accessible.
-- **500 Server Error** The spreadsheet has encountered an anomaly in obtaining data.
-
+- **500 Server Error**: The spreadsheet has encountered an anomaly while obtaining data.
 
 ## Usage Scenarios
+
 ## Key Features and Benefits
 
-- **Worksheet Deletion**: Allows users to delete a specified worksheet from a workbook.
-- **Simplified Workbook Management**: Provides a straightforward method to manage workbook structure by removing unnecessary or redundant worksheets.
+- **Worksheet Deletion**: Facilitates the deletion of a specified worksheet from a workbook.
+- **Simplified Workbook Management**: Offers a straightforward method to manage workbook structures by removing unnecessary or redundant worksheets.
 
 ## OpenAPI Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ManagementController/DeleteWorksheetFromSpreadsheet) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ManagementController/DeleteWorksheetFromSpreadsheet) defines a publicly accessible programming interface, allowing you to carry out REST interactions directly from a web browser.
 
-## Excel API SDK 
+## Excel API SDK
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the most efficient way to accelerate development. An SDK handles low-level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
-
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 {{<tab tabNum="1" >}}
@@ -98,5 +95,3 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_DeleteWorksheet.go" >}}
 {{</tab>}}
 {{< /tabs >}}
-
-

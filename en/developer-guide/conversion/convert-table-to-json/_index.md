@@ -1,50 +1,43 @@
 ---
-title: "Convert table to json"
-second_title: "Developer Guide"
-linktitle: "Convert table to json"
+title: "Convert Table to JSON - Excel API"
+second_title: "Aspose.Cells Cloud"
+linktitle: "Convert Table to JSON"
 type: docs
 url: /convert-table-to-json/
-keywords: ""
-description: "Converts a table of spreadsheet on a local drive to the json file. "
+keywords: "Excel API, JSON conversion, spreadsheet to JSON, cloud file conversion, REST API, Aspose.Cells"
+description: "Convert a local spreadsheet table to JSON format efficiently using the Excel API. This method enables seamless file processing without the need for cloud storage."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+kwords: "Excel API, JSON conversion, cloud file conversion, spreadsheet, REST API, Aspose.Cells, local drive processing, file format conversion"
 ---
 
-# **Excel API : ConvertTableToJson**
+# **Excel API: ConvertTableToJson**
 
 ## **Overview**
 
-Converts a table of spreadsheet on a local drive to the json file. 
+The ConvertTableToJson method converts a table from a local spreadsheet into a JSON file format. Designed for efficiency and ease of use, this API allows users to process files directly without requiring cloud storage.
 
 ## **Function Description**
 
-This method reads a spreadsheet file from the local file system, converts it's table to the desired html file, and returns the converted result. 
-The source file path and target format must be specified correctly. 
-Ensure that the necessary permissions are in place to read the source file and write the converted file if applicable. 
-The conversion process occurs entirely on the cloud server, eliminating the need for any cloud storage or external downloads. 
-If the source file does not exist, is inaccessible, or if an error occurs during the conversion process, an appropriate exception will be thrown. 
-Supported formats for conversion depend on the available libraries and their capabilities.
+This method reads a specified spreadsheet file from the local file system, converts its table into JSON format, and returns the result. Users must accurately specify the source file path and target format. Proper permissions are required to read the source file and write the converted output. The entire conversion process is executed on the cloud server, eliminating the need for external downloads or cloud storage. In the event of an inaccessible source file or conversion error, the method will throw an appropriate exception. Supported formats for conversion are contingent on the capabilities of the available libraries.
 
-
-## **API Endpoint** 
+## **API Endpoint**
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/convert/table/json
 ```
 
-## The request parameters of **convertTableToJson** API are: 
+## The request parameters of **convertTableToJson** API are
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description | 
-| :- | :- | :- |:- | 
-|Spreadsheet|File|FormData|Upload spreadsheet file.|
-|worksheet|String|Query|worksheet name of spreadsheet.|
-|tableName|String|Query|table name|
-|outPath|String|Query|(Optional) The folder path where the workbook is stored. The default is null.|
-|outStorageName|String|Query|Output file Storage Name.|
-|fontsLocation|String|Query|Use Custom fonts.|
-|regoin|String|Query|The spreadsheet region setting.|
-|password|String|Query|The password for opening spreadsheet file.|
-
+| Parameter Name    | Type  | Path/Query String/HTTP Body | Description                                        |
+|-------------------|-------|-----------------------------|----------------------------------------------------|
+| Spreadsheet       | File  | FormData                    | Upload the spreadsheet file.                       |
+| worksheet         | String| Query                       | Specify the worksheet name of the spreadsheet.     |
+| tableName         | String| Query                       | Provide the name of the table to convert.          |
+| outPath           | String| Query                       | (Optional) The folder path where the workbook is stored; defaults to null. |
+| outStorageName    | String| Query                       | Specify the output file storage name.              |
+| fontsLocation     | String| Query                       | Use custom fonts for conversion.                   |
+| region            | String| Query                       | Define the region settings for the spreadsheet.    |
+| password          | String| Query                       | The password required to open the spreadsheet file. |
 
 ## **Response Structure**
 
@@ -56,26 +49,25 @@ File
 
 ## Error Handling
 
-- **400 Bad Request**: Invalid url.
-- **401 Unauthorized**:  Authentication has failed, or no credentials were provided.
-- **404 Not Found**: Source file not accessible.
-- **500 Server Error** The spreadsheet has encountered an anomaly in obtaining conversion data.
-
+- **400 Bad Request**: Invalid URL or parameters.
+- **401 Unauthorized**: Authentication failed or no credentials provided.
+- **404 Not Found**: The specified source file is not accessible.
+- **500 Server Error**: An error occurred while obtaining conversion data from the spreadsheet.
 
 ## Usage Scenarios
+
 ## Key Features and Benefits
 
-- **Cloud-Native Conversion**: Conversion of local files directly in the cloud, eliminating the need to store them there.
-- **Reduced Cloud Resource Burden**: No need to upload files to the cloud, saving cloud storage space.
-- **Simplified Workflow**: Convert local spreadsheets to the json format directly through cloud services, without intermediate steps.
+- **Cloud-Native Conversion**: Directly convert local files in the cloud without needing to store them there.
+- **Reduced Cloud Resource Burden**: Avoid uploading files to save cloud storage space while processing.
+- **Simplified Workflow**: Convert local spreadsheets to JSON format seamlessly through cloud services, eliminating unnecessary intermediate steps.
 
 ## OpenAPI Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertTableToJson) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertTableToJson) provides a publicly accessible programming interface, enabling REST interactions directly from a web browser.
 
-## Excel API SDK 
+## Excel API SDK
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Utilizing an SDK accelerates development by managing low-level details, allowing you to concentrate on your project tasks. For a complete list of Aspose.Cells Cloud SDKs, please check the [GitHub repository](https://github.com/aspose-cells-cloud).
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
-
+The following code examples demonstrate how to interact with Aspose.Cells web services using various SDKs:

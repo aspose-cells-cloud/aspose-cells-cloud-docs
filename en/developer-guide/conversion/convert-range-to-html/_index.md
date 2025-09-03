@@ -1,50 +1,43 @@
 ---
-title: "Convert range to html"
-second_title: "Developer Guide"
-linktitle: "Convert range to html"
+title: "Convert Range to HTML - Excel API"
+second_title: "Aspose.Cells Cloud"
+linktitle: "Convert Range to HTML"
 type: docs
 url: /convert-range-to-html/
-keywords: ""
-description: "Converts a range of spreadsheet on a local drive to the html file. "
+keywords: "Excel API, Convert Range to HTML, Spreadsheet Conversion, HTML File Generation, Cloud API, Document Conversion"
+description: "Effortlessly converts a specified range of a spreadsheet on your local drive to an HTML file using the Aspose.Cells API."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+kwords: "Excel, Office Cloud, REST API, Spreadsheet, HTML, PDF, CSV, JSON, Markdown, Match Blank Cells, Data Conversion"
 ---
 
-# **Excel API : ConvertRangeToHtml**
+# **Excel API: ConvertRangeToHtml**
 
 ## **Overview**
 
-Converts a range of spreadsheet on a local drive to the html file. 
+This API allows you to convert a specified range of a spreadsheet from your local drive directly to an HTML file.
 
 ## **Function Description**
 
-This method reads a spreadsheet file from the local file system, converts it's range to the desired html file, and returns the converted result. 
-The source file path and target format must be specified correctly. 
-Ensure that the necessary permissions are in place to read the source file and write the converted file if applicable. 
-The conversion process occurs entirely on the cloud server, eliminating the need for any cloud storage or external downloads. 
-If the source file does not exist, is inaccessible, or if an error occurs during the conversion process, an appropriate exception will be thrown. 
-Supported formats for conversion depend on the available libraries and their capabilities.
+The `ConvertRangeToHtml` method reads a specified range from a spreadsheet file located on the local file system, converts it to the desired HTML format, and returns the converted result. Ensure that the source file path and target format are specified correctly. You must have the necessary permissions to read the source file and write the converted file, if applicable. The conversion process occurs entirely on the cloud server, which means there is no need for cloud storage or external downloads. If the source file is missing, inaccessible, or if an error arises during the conversion process, the API will throw an appropriate exception. Supported formats for conversion depend on the available libraries and their capabilities.
 
-
-## **API Endpoint** 
+## **API Endpoint**
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/convert/range/html
 ```
 
-## The request parameters of **convertRangeToHtml** API are: 
+## The request parameters of **convertRangeToHtml** API are
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description | 
-| :- | :- | :- |:- | 
-|Spreadsheet|File|FormData|Upload spreadsheet file.|
-|worksheet|String|Query|worksheet name of spreadsheet.|
-|range|String|Query|cell area. e.g. A1:C10|
-|outPath|String|Query|(Optional) The folder path where the workbook is stored. The default is null.|
-|outStorageName|String|Query|Output file Storage Name.|
-|fontsLocation|String|Query|Use Custom fonts.|
-|regoin|String|Query|The spreadsheet region setting.|
-|password|String|Query|The password for opening spreadsheet file.|
-
+| Parameter Name   | Type   | Path/Query String/HTTP Body | Description                                           |
+|------------------|--------|------------------------------|-------------------------------------------------------|
+| Spreadsheet      | File   | FormData                     | Upload the spreadsheet file.                          |
+| worksheet        | String | Query                        | Name of the worksheet within the spreadsheet.        |
+| range            | String | Query                        | The cell area to convert, e.g., A1:C10.              |
+| outPath          | String | Query                        | (Optional) The folder path where the workbook is stored. Default is null. |
+| outStorageName   | String | Query                        | Name of the output file storage.                      |
+| fontsLocation     | String | Query                        | Specify custom fonts to use.                          |
+| region           | String | Query                        | The spreadsheet region setting.                        |
+| password         | String | Query                        | Password for opening the spreadsheet file.            |
 
 ## **Response Structure**
 
@@ -54,28 +47,27 @@ File
 }
 ```
 
-## Error Handling
+## **Error Handling**
 
-- **400 Bad Request**: Invalid url.
-- **401 Unauthorized**:  Authentication has failed, or no credentials were provided.
+- **400 Bad Request**: Invalid URL.
+- **401 Unauthorized**: Authentication failed or no credentials were provided.
 - **404 Not Found**: Source file not accessible.
-- **500 Server Error** The spreadsheet has encountered an anomaly in obtaining conversion data.
+- **500 Server Error**: An anomaly occurred while obtaining conversion data for the spreadsheet.
 
+## **Usage Scenarios**
 
-## Usage Scenarios
-## Key Features and Benefits
+## **Key Features and Benefits**
 
-- **Cloud-Native Conversion**: Conversion of local files directly in the cloud, eliminating the need to store them there.
-- **Reduced Cloud Resource Burden**: No need to upload files to the cloud, saving cloud storage space.
-- **Simplified Workflow**: Convert local spreadsheets to the html format directly through cloud services, without intermediate steps.
+- **Cloud-Native Conversion**: Convert local files directly in the cloud, eliminating the need for cloud storage.
+- **Resource Efficiency**: No requirement to upload files to the cloud, saving valuable storage space.
+- **Streamlined Workflow**: Easily convert local spreadsheets to HTML format directly through cloud services without any intermediate steps.
 
-## OpenAPI Specification
+## **OpenAPI Specification**
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertRangeToHtml) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertRangeToHtml) provides a publicly accessible programming interface, enabling you to carry out REST interactions directly from a web browser.
 
-## Excel API SDK 
+## **Excel API SDK**
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Utilizing an SDK is the most efficient way to accelerate development. An SDK handles low-level details, allowing you to concentrate on your project objectives. Please visit the [GitHub repository](https://github.com/aspose-cells-cloud) for a comprehensive list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
-
+The following code examples illustrate how to interact with Aspose.Cells web services using various SDKs:

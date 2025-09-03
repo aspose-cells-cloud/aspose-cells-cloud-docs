@@ -1,12 +1,12 @@
 ---
 title: "Management Spreadsheet"
-second_title: "Developer Guide"
+second_title: "Aspose.Cells Cloud"
 linktitle: "Management"
 type: docs
 url: /management/
-keywords: "How to use Aspose.Cells Cloud REST APIs. Search and replace content in Spreadsheet.  Office Excel 2016,  Office Excel 2019,office Excel 365."
-description: "Search and replace content in Spreadsheet."
+keywords: "Aspose.Cells Cloud REST API, manage spreadsheets, search and replace content, Excel 2016, Excel 2019, Excel 365, cloud-based spreadsheet management."
+description: "Comprehensive guide on how to utilize Aspose.Cells Cloud REST API for managing spreadsheets, including search and replace functionalities."
 weight: 50
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Developer Guide
+kwords: "Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Developer Guide, cloud spreadsheet management, content replacement, API documentation."
 ---
 

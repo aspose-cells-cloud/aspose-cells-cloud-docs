@@ -1,51 +1,44 @@
 ---
-title: "Convert table to image"
-second_title: "Developer Guide"
-linktitle: "Convert table to image"
+title: "Convert Table to Image - Excel API"
+second_title: "Aspose.Cells Cloud"
+linktitle: "Convert Table to Image"
 type: docs
 url: /convert-table-to-image/
-keywords: ""
-description: "Converts a table of spreadsheet on a local drive to the image file. "
+keywords: "table to image, Excel API, cloud conversion, spreadsheet to image, image formats"
+description: "Convert a local spreadsheet table into an image file efficiently using the Excel API."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+kwords: "Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, convert table to image, cloud-native conversion, image file formats, spreadsheet conversion"
 ---
 
-# **Excel API : ConvertTableToImage**
+# **Excel API: Convert Table to Image**
 
 ## **Overview**
 
-Converts a table of spreadsheet on a local drive to the image file. 
+This API method allows you to convert a table from a spreadsheet located on your local drive into an image file seamlessly.
 
 ## **Function Description**
 
-This method reads a spreadsheet file from the local file system, converts it's table to the desired image file, and returns the converted result. 
-The source file path and target format must be specified correctly. 
-Ensure that the necessary permissions are in place to read the source file and write the converted file if applicable. 
-The conversion process occurs entirely on the cloud server, eliminating the need for any cloud storage or external downloads. 
-If the source file does not exist, is inaccessible, or if an error occurs during the conversion process, an appropriate exception will be thrown. 
-Supported formats for conversion depend on the available libraries and their capabilities.
+The `convertTableToImage` method reads a specified spreadsheet file from the local file system, converts the designated table into the desired image format, and returns the resulting image. Ensure that the source file path and target format are specified accurately. It is crucial to have the correct permissions to read the source file and write the converted image if necessary. The entire conversion process is handled on the cloud server, which means there is no requirement for cloud storage or external downloads. If the source file is not found, inaccessible, or if any errors occur during the conversion, an appropriate exception will be raised. Supported output formats for conversion depend on the libraries available.
 
-
-## **API Endpoint** 
+## **API Endpoint**
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/convert/table/image
 ```
 
-## The request parameters of **convertTableToImage** API are: 
+## The request parameters of **convertTableToImage** API are
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description | 
-| :- | :- | :- |:- | 
-|Spreadsheet|File|FormData|Upload spreadsheet file.|
-|worksheet|String|Query|worksheet name of spreadsheet.|
-|tableName|String|Query|table name|
-|format|String|Query|file format.  |
-|outPath|String|Query|(Optional) The folder path where the workbook is stored. The default is null.|
-|outStorageName|String|Query|Output file Storage Name.|
-|fontsLocation|String|Query|Use Custom fonts.|
-|regoin|String|Query|The spreadsheet region setting.|
-|password|String|Query|The password for opening spreadsheet file.|
-
+| Parameter Name | Type | Path/Query String/HTTP Body | Description |
+| :- | :- | :- |:- |
+|Spreadsheet|File|FormData|Upload the spreadsheet file.|
+|worksheet|String|Query|Specify the worksheet name within the spreadsheet.|
+|tableName|String|Query|Name of the table to convert.|
+|format|String|Query|Desired image file format (e.g., png, svg).|
+|outPath|String|Query|(Optional) The folder path where the converted image will be stored. Defaults to null.|
+|outStorageName|String|Query|Specify the output file storage name.|
+|fontsLocation|String|Query|Use custom fonts if required.|
+|region|String|Query|Defines the spreadsheet region settings.|
+|password|String|Query|Password required to access the spreadsheet file.|
 
 ## **Response Structure**
 
@@ -57,30 +50,29 @@ File
 
 ## Error Handling
 
-- **400 Bad Request**: Invalid url.
-- **401 Unauthorized**:  Authentication has failed, or no credentials were provided.
-- **404 Not Found**: Source file not accessible.
-- **500 Server Error** The spreadsheet has encountered an anomaly in obtaining conversion data.
-
+- **400 Bad Request**: Invalid URL provided.
+- **401 Unauthorized**: Authentication failed, or no credentials provided.
+- **404 Not Found**: The source file is inaccessible.
+- **500 Server Error**: An error occurred during data conversion.
 
 ## Usage Scenarios
+
 ## Key Features and Benefits
 
-- **Cloud-Native Conversion**: Conversion of local files directly in the cloud, eliminating the need to store them there.
-- **Reduced Cloud Resource Burden**: No need to upload files to the cloud, saving cloud storage space.
-- **Format Versatility**: Supports common output image formats (png, svg, tiff and so on).
-- **Simplified Workflow**: Convert local spreadsheets to the desired format directly through cloud services, without intermediate steps.
+- **Cloud-Native Conversion**: Convert local spreadsheet files directly in the cloud, without the need for local storage.
+- **Reduced Cloud Resource Burden**: Save cloud storage space by avoiding unnecessary uploads.
+- **Format Versatility**: Supports multiple output image formats including png, svg, tiff, and more.
+- **Simplified Workflow**: Streamline the process of converting spreadsheets to image formats via cloud services, bypassing intermediate steps.
 
 ## OpenAPI Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertTableToImage) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertTableToImage) provides a publicly accessible programming interface for conducting REST interactions directly from a web browser.
 
-## Excel API SDK 
+## Excel API SDK
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Utilizing an SDK is the most efficient way to accelerate development. An SDK manages low-level details, allowing you to concentrate on your project objectives. Please visit the [GitHub repository](https://github.com/aspose-cells-cloud) for an extensive list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
-
+The following code examples illustrate how to invoke Aspose.Cells web services using various SDKs:
 
 {{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 {{<tab tabNum="1" >}}
@@ -108,5 +100,3 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ConvertTableToSvg.go" >}}
 {{</tab>}}
 {{< /tabs >}}
-
-

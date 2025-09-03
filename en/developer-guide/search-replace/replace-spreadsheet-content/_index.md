@@ -1,22 +1,22 @@
 ---
-title: "Replace spreadsheet content"
-second_title: "Developer Guide"
-linktitle: "Replace spreadsheet content"
+title: "Replace Spreadsheet Content - Excel API"
+second_title: "Aspose.Cells Cloud"
+linktitle: "Replace Spreadsheet Content"
 type: docs
 url: /replace-spreadsheet-content/
-keywords: ""
-description: "Replace text in the local spreadsheet. "
+keywords: "Excel API, Spreadsheet manipulation, Replace text, Office Cloud integration, REST API"
+description: "Efficiently replace text in local spreadsheet files using Aspose.Cells API."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+kwords: "Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Replace text in Excel, Match blank cells in Excel worksheet"
 ---
 
-# **Excel API : ReplaceSpreadsheetContent**
+# **Excel API: ReplaceSpreadsheetContent**
 
-Replace text in the local spreadsheet. 
+Efficiently replace specified text within local spreadsheet files.
 
 ## **Interface Details**
 
-### **Endpoint** 
+### **Endpoint**
 
 ```
 PUT http://api.aspose.cloud/v4.0/cells/replace/content
@@ -24,22 +24,22 @@ PUT http://api.aspose.cloud/v4.0/cells/replace/content
 
 ### **Function Description**
 
-This method replaces specified text within a local spreadsheet file. It supports replacing occurrences of the target text across all sheets and cells of the workbook.The operation is performed cloudly, requiring no cloud storage.Ensure that you have the necessary permissions to read from and write to the source file.If the source file cannot be accessed, if writing to the file fails, or if an error occurs during the replacement process (such as an unsupported file format), an appropriate exception will be thrown.Depending on the implementation, the method may return the number of replacements made or the locations of the replaced texts (e.g., sheet name, cell coordinates).Users should specify the exact text to replace and its replacement to ensure accurate modifications.
+This method allows users to replace specified text within a local spreadsheet file across all sheets and cells of the workbook. The operation is performed in the cloud without requiring cloud storage. Ensure you have the necessary permissions to read from and write to the source file. If the source file cannot be accessed, writing to the file fails, or an error occurs during the replacement process (such as an unsupported file format), an appropriate exception will be thrown. Depending on the implementation, the method may return the number of replacements made or the locations of the replaced texts (e.g., sheet name, cell coordinates). Users should specify the exact text to replace and its replacement to ensure accurate modifications.
 
-### The request parameters of **replaceSpreadsheetContent** API are: 
+### The request parameters of **replaceSpreadsheetContent** API are
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description | 
-| :- | :- | :- |:- | 
-|Spreadsheet|File|FormData|Upload spreadsheet file.|
-|searchText|String|Query|The searched text.|
-|replaceText|String|Query|The replaced text.|
-|worksheet|String|Query|Specify the worksheet for the replace.|
-|cellArea|String|Query|Specify the cell area for the replace.|
-|regoin|String|Query|The spreadsheet region setting.|
-|password|String|Query|The password for opening spreadsheet file.|
-
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+| :- | :- | :- |:- |
+| Spreadsheet | File | FormData | Upload the spreadsheet file. |
+| searchText | String | Query | The text to search for. |
+| replaceText | String | Query | The text to replace with. |
+| worksheet | String | Query | Specify the worksheet for the replacement. |
+| cellArea | String | Query | Specify the cell area for the replacement. |
+| region | String | Query | The spreadsheet region setting. |
+| password | String | Query | The password for opening the spreadsheet file. |
 
 ### **Response Description**
+
 ```json
 {
 File
@@ -48,14 +48,13 @@ File
 
 ## OpenAPI Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/SearchControllor/ReplaceSpreadsheetContent) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/SearchControllor/ReplaceSpreadsheetContent) defines a publicly accessible programming interface, allowing you to perform REST interactions directly from a web browser.
 
-## Excel API SDK 
+## Excel API SDK
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to accelerate development. An SDK manages low-level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
-
+The following code examples demonstrate how to interact with Aspose.Cells web services using various SDKs:
 
 {{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 {{<tab tabNum="1" >}}
@@ -83,5 +82,3 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ReplaceTextInLocalFile.go" >}}
 {{</tab>}}
 {{< /tabs >}}
-
-

@@ -1,43 +1,41 @@
 ---
-title: "Create spreadsheet"
-second_title: "Developer Guide"
-linktitle: "Create spreadsheet"
+title: "Create Spreadsheet - Excel API"
+second_title: "Aspose.Cells Cloud"
+linktitle: "Create Spreadsheet"
 type: docs
 url: /create-spreadsheet/
-keywords: ""
-description: "The Web API allows users to create a new spreadsheet with a specified name. Optionally, a template can be provided to initialize the spreadsheet with predefined content or formatting. "
+keywords: "Spreadsheet Creation, Excel API, REST API, Office Cloud, Template Support, Productivity Enhancement"
+description: "The Excel API allows users to create a new spreadsheet with a specified name, supporting optional templates for predefined content or formatting, enhancing user productivity."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+kwords: "Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Match all blank cells in an Excel worksheet, Spreadsheet Creation, Template Support, Productivity Enhancement"
 ---
 
-# **Excel API : CreateSpreadsheet**
+# **Excel API: Create Spreadsheet**
 
 ## **Overview**
 
-The Web API allows users to create a new spreadsheet with a specified name. Optionally, a template can be provided to initialize the spreadsheet with predefined content or formatting. 
+The Excel API allows users to create a new spreadsheet with a specified name. Users can optionally provide a template to initialize the spreadsheet with predefined content or formatting, significantly enhancing workflow efficiency.
 
 ## **Function Description**
 
-By using the CreateSpreadsheet function, you can quickly set up new spreadsheets with or without templates, streamlining your workflow and enhancing productivity.
+By using the CreateSpreadsheet function, you can quickly set up new spreadsheets, with or without templates, streamlining your workflow and enhancing overall productivity.
 
-
-## **API Endpoint** 
+## **API Endpoint**
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/spreadsheet/create
 ```
 
-## The request parameters of **createSpreadsheet** API are: 
+## The request parameters of **createSpreadsheet** API are
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description | 
-| :- | :- | :- |:- | 
-|format|String|Query|Specifies the name of the new spreadsheet. This name will be used to identify the spreadsheet in the system.|
-|template|String|Query|template: Optional.If provided, the new spreadsheet will be created based on the specified template.This can be useful for applying predefined layouts and styles.|
-|outPath|String|Query|(Optional) The folder path where the workbook is stored. The default is null.|
-|outStorageName|String|Query|Output file Storage Name.|
-|regoin|String|Query|The spreadsheet region setting.|
-|password|String|Query|The password for opening spreadsheet file.|
-
+| Parameter Name   | Type   | Path/Query String/HTTP Body | Description |
+| ---------------- | ------ | ----------------------------- | ----------- |
+| format           | String | Query                         | Specifies the name of the new spreadsheet. This name will be used to identify the spreadsheet in the system. |
+| template         | String | Query                         | Optional. If provided, the new spreadsheet will be created based on the specified template. This can be useful for applying predefined layouts and styles. |
+| outPath          | String | Query                         | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName   | String | Query                         | Output file Storage Name. |
+| region           | String | Query                         | The spreadsheet region setting. |
+| password         | String | Query                         | The password for opening the spreadsheet file. |
 
 ## **Response Structure**
 
@@ -47,31 +45,30 @@ File
 }
 ```
 
-## Error Handling
+## **Error Handling**
 
-- **400 Bad Request**: Invalid url.
-- **401 Unauthorized**:  Authentication has failed, or no credentials were provided.
+- **400 Bad Request**: Invalid URL.
+- **401 Unauthorized**: Authentication has failed, or no credentials were provided.
 - **404 Not Found**: Source file not accessible.
-- **500 Server Error** The spreadsheet has encountered an anomaly in obtaining data.
+- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining data.
 
+## **Usage Scenarios**
 
-## Usage Scenarios
-## Key Features and Benefits
+## **Key Features and Benefits**
 
 - **Spreadsheet Creation**: Allows users to create a new spreadsheet with a specified name.
-- **Template Support**: Optionally, users can provide a template to initialize the spreadsheet with predefined content or formatting.
-- **Enhanced Productivity**: Quickly set up new spreadsheets, streamlining your workflow.
+- **Template Support**: Users can provide a template to initialize the spreadsheet with predefined content or formatting.
+- **Enhanced Productivity**: Quickly set up new spreadsheets to streamline workflows and improve efficiency.
 
-## OpenAPI Specification
+## **OpenAPI Specification**
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ManagementController/CreateSpreadsheet) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ManagementController/CreateSpreadsheet) defines a publicly accessible programming interface and enables REST interactions directly from a web browser.
 
-## Excel API SDK 
+## **Excel API SDK**
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK handles low-level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
-
 
 {{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 {{<tab tabNum="1" >}}
@@ -99,5 +96,3 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_CreateSpreadsheet.go" >}}
 {{</tab>}}
 {{< /tabs >}}
-
-

@@ -1,18 +1,16 @@
 ---
-title: "Object exists"
-second_title: "Developer Guide"
-linktitle: "Object exists"
+title: "Object Exists"
+second_title: "Aspose.Cells Cloud"
+linktitle: "Object Exists"
 type: docs
 url: /object-exists/
-keywords: ""
-description: " "
+keywords: "Excel API, Object Exists, REST API, Aspose, File Management, Excel, Office Cloud, Spreadsheet, PDF, CSV, JSON, Markdown"
+description: "The Object Exists API checks if a specified file or folder exists in the Aspose.Cells cloud storage."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+kwords: "Excel API, Object Exists, REST API, Aspose, Office Cloud, File Management, Spreadsheet, PDF, CSV, JSON, Markdown, Check file existence in Excel"
 ---
 
-# **Excel API : ObjectExists**
-
- 
+# **Excel API: Object Exists**
 
 ## **Interface Details**
 
@@ -24,15 +22,15 @@ GET http://api.aspose.cloud/v4.0/cells/storage/exist/{path}
 
 ### **Function Description**
 
+The `objectExists` API allows developers to verify the existence of a specified file or folder within the Aspose.Cells cloud storage.
 
 ### The request parameters of **objectExists** API are: 
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description | 
+| Parameter Name | Type | Path/Query String/HTTP Body | Description | 
 | :- | :- | :- |:- | 
-|path|String|Path||
-|storageName|String|Query||
-|versionId|String|Query||
-
+|path|String|Path|The path to the file or folder in the cloud storage.|
+|storageName|String|Query|The name of the storage where the file is located.|
+|versionId|String|Query|The version ID of the file (if applicable).|
 
 ### **Response Description**
 ```json
@@ -80,10 +78,9 @@ The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/StorageContro
 
 ## Excel API SDK 
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
-
 
 {{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 {{<tab tabNum="1" >}}
@@ -111,5 +108,3 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ObjectExists.go" >}}
 {{</tab>}}
 {{< /tabs >}}
-
-

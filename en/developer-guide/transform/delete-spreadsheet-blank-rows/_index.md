@@ -1,46 +1,40 @@
 ---
-title: "Delete spreadsheet blank rows"
-second_title: "Developer Guide"
-linktitle: "Delete spreadsheet blank rows"
+title: "Delete Spreadsheet Blank Rows - Excel API"
+second_title: "Aspose.Cells Cloud"
+linktitle: "Delete Spreadsheet Blank Rows"
 type: docs
 url: /delete-spreadsheet-blank-rows/
-keywords: ""
-description: "Delete all blank rows that do not contain any data or other objects. "
+keywords: "Delete blank rows, Excel API, Spreadsheet cleaning, Office Cloud, REST API, Data management, Remove empty rows"
+description: "Efficiently delete all blank rows in a spreadsheet that do not contain any data or objects, enhancing data organization."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Match all blank cells in an Excel worksheet, Remove empty rows, Data integrity, Spreadsheet cleaning
 ---
 
-# **Excel API : DeleteSpreadsheetBlankRows**
+# **Excel API: DeleteSpreadsheetBlankRows**
 
 ## **Overview**
 
-Delete all blank rows that do not contain any data or other objects. 
+Efficiently delete all blank rows in a spreadsheet that do not contain any data or objects.
 
 ## **Function Description**
 
-This method removes rows from a spreadsheet that are completely empty, containing no data or objects. 
-It scans through all sheets and identifies rows where every cell is empty. 
-The operation is performed directly on the spreadsheet, ensuring that only rows with no content are deleted. 
-This helps in cleaning up the spreadsheet and removing unnecessary blank rows, making the data more organized and easier to manage. 
-Users should ensure that the spreadsheet is backed up before performing this operation, as deleted rows cannot be recovered. 
+This method removes rows from a spreadsheet that are completely empty, containing no data or objects. It scans through all sheets and identifies rows where every cell is empty. The operation is performed directly on the spreadsheet, ensuring that only rows with no content are deleted. This helps in cleaning up the spreadsheet and enhancing the organization of data. Users should ensure that the spreadsheet is backed up before performing this operation, as deleted rows cannot be recovered.
 
-
-## **API Endpoint** 
+## **API Endpoint**
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/delete/blank-rows
 ```
 
-## The request parameters of **deleteSpreadsheetBlankRows** API are: 
+## The request parameters of **deleteSpreadsheetBlankRows** API are
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description | 
-| :- | :- | :- |:- | 
-|Spreadsheet|File|FormData|Upload spreadsheet file.|
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+| :- | :- | :- |:- |
+|Spreadsheet|File|FormData|Upload the spreadsheet file.|
 |outPath|String|Query|(Optional) The folder path where the workbook is stored. The default is null.|
-|outStorageName|String|Query|Output file Storage Name.|
-|regoin|String|Query|The spreadsheet region setting.|
-|password|String|Query|The password for opening spreadsheet file.|
-
+|outStorageName|String|Query|Name of the output file storage.|
+|region|String|Query|The spreadsheet region setting.|
+|password|String|Query|The password for opening the spreadsheet file.|
 
 ## **Response Structure**
 
@@ -52,30 +46,29 @@ File
 
 ## Error Handling
 
-- **400 Bad Request**: Invalid url.
-- **401 Unauthorized**:  Authentication has failed, or no credentials were provided.
+- **400 Bad Request**: Invalid URL.
+- **401 Unauthorized**: Authentication has failed, or no credentials were provided.
 - **404 Not Found**: Source file not accessible.
-- **500 Server Error** The spreadsheet has encountered an anomaly in obtaining data.
-
+- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining data.
 
 ## Usage Scenarios
+
 ## Key Features and Benefits
 
-- **Blank Row Identification**: This function identifies rows that do not contain any data or objects, ensuring thorough removal of unnecessary blank rows.
+- **Blank Row Identification**: This function accurately identifies rows that do not contain any data or objects, ensuring thorough removal of unnecessary blank rows.
 - **Data Integrity**: By removing only truly empty rows, it maintains the integrity of your dataset, preventing accidental data loss.
 - **Efficiency**: Enhances the readability and usability of spreadsheets by eliminating extraneous blank rows.
-- **Usage scenarios**: Ideal for cleaning large datasets where blank rows may interfere with data analysis or processing.
+- **Usage Scenarios**: Ideal for cleaning large datasets where blank rows may interfere with data analysis or processing.
 
 ## OpenAPI Specification
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/TransformController/DeleteSpreadsheetBlankRows) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-## Excel API SDK 
+## Excel API SDK
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
-
 
 {{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 {{<tab tabNum="1" >}}
@@ -103,5 +96,3 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_DeleteSpreadsheetBlankRows.go" >}}
 {{</tab>}}
 {{< /tabs >}}
-
-

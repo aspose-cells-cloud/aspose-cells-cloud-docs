@@ -1,49 +1,42 @@
 ---
-title: "Convert spreadsheet"
-second_title: "Developer Guide"
-linktitle: "Convert spreadsheet"
+title: "Convert Spreadsheet - Excel API"
+second_title: "Aspose.Cells Cloud"
+linktitle: "Convert Spreadsheet"
 type: docs
 url: /convert-spreadsheet/
-keywords: ""
-description: "Converts a spreadsheet on a local drive to the specified format. "
+keywords: "spreadsheet conversion, Excel API, cloud conversion, REST API, XLSX, PDF, CSV, JSON, Markdown, convert local files"
+description: "Effortlessly converts a spreadsheet from a local drive to various specified formats using the Excel API."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+kwords: Excel, Office Cloud, REST API, Spreadsheet Conversion, PDF, CSV, JSON, Markdown, Match all blank cells in an Excel worksheet
 ---
 
-# **Excel API : ConvertSpreadsheet**
+# **Excel API : Convert Spreadsheet**
 
 ## **Overview**
 
-Converts a spreadsheet on a local drive to the specified format. 
+This API converts a spreadsheet located on a local drive into the specified output format, including XLSX, PDF, and CSV.
 
 ## **Function Description**
 
-This method reads a spreadsheet file from the local file system, converts it into the desired output format (e.g., XLSX, PDF, CSV), and returns the converted result. 
-The source file path and target format must be specified correctly. 
-Ensure that the necessary permissions are in place to read the source file and write the converted file if applicable. 
-The conversion process occurs entirely on the cloud server, eliminating the need for any cloud storage or external downloads. 
-If the source file does not exist, is inaccessible, or if an error occurs during the conversion process, an appropriate exception will be thrown. 
-Supported formats for conversion depend on the available libraries and their capabilities.
+The `ConvertSpreadsheet` method reads a spreadsheet file from the local file system and converts it into the desired output format (e.g., XLSX, PDF, CSV). The source file path and target format must be specified correctly. Ensure that the necessary permissions are in place to read the source file and write the converted file if applicable. The conversion process is performed entirely on the cloud server, eliminating the need for any external cloud storage or downloads. If the source file is inaccessible or an error occurs during the conversion process, an appropriate exception will be thrown. Supported formats for conversion depend on the available libraries and their capabilities.
 
-
-## **API Endpoint** 
+## **API Endpoint**
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/convert/spreadsheet
 ```
 
-## The request parameters of **convertSpreadsheet** API are: 
+## The request parameters of **convertSpreadsheet** API are
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description | 
-| :- | :- | :- |:- | 
-|Spreadsheet|File|FormData|Upload spreadsheet file.|
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+| :- | :- | :- |:- |
+|Spreadsheet|File|FormData|Upload the spreadsheet file to be converted.|
 |format|String|Query|(Required) The desired output format (e.g., "Xlsx", "Pdf", "Csv").|
-|outPath|String|Query|(Optional) The folder path where the workbook is stored. The default is null.|
-|outStorageName|String|Query|Output file Storage Name.|
-|fontsLocation|String|Query|Use Custom fonts.|
-|regoin|String|Query|The spreadsheet region setting.|
-|password|String|Query|The password for opening spreadsheet file.|
-
+|outPath|String|Query|(Optional) The folder path where the converted workbook will be stored. The default is null.|
+|outStorageName|String|Query|Specify an output file storage name.|
+|fontsLocation|String|Query|Use custom fonts for the spreadsheet.|
+|region|String|Query|Specify the spreadsheet region setting.|
+|password|String|Query|The password for opening the spreadsheet file if it is protected.|
 
 ## **Response Structure**
 
@@ -55,30 +48,29 @@ File
 
 ## Error Handling
 
-- **400 Bad Request**: Invalid url.
-- **401 Unauthorized**:  Authentication has failed, or no credentials were provided.
-- **404 Not Found**: Source file not accessible.
-- **500 Server Error** The spreadsheet has encountered an anomaly in obtaining conversion data.
-
+- **400 Bad Request**: Invalid URL or request parameters.
+- **401 Unauthorized**: Authentication has failed, or no credentials were provided.
+- **404 Not Found**: Source file not accessible or does not exist.
+- **500 Server Error**: An anomaly occurred during the spreadsheet conversion process.
 
 ## Usage Scenarios
+
 ## Key Features and Benefits
 
-- **Cloud-Native Conversion**: Conversion of local files directly in the cloud, eliminating the need to store them there.
-- **Reduced Cloud Resource Burden**: No need to upload files to the cloud, saving cloud storage space.
-- **Format Versatility**: Supports common output formats (XLSX, PDF, CSV).
-- **Simplified Workflow**: Convert local spreadsheets to the desired format directly through cloud services, without intermediate steps.
+- **Cloud-Native Conversion**: Convert local files directly in the cloud, reducing the need for intermediate storage.
+- **Resource Efficiency**: Save cloud storage space as files do not need to be uploaded.
+- **Format Versatility**: Supports multiple output formats including XLSX, PDF, and CSV.
+- **Streamlined Workflow**: Convert local spreadsheets directly through cloud services without unnecessary steps.
 
 ## OpenAPI Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertSpreadsheet) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertSpreadsheet) defines a publicly accessible programming interface, allowing you to perform REST interactions directly from a web browser.
 
-## Excel API SDK 
+## Excel API SDK
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK accelerates the development process. An SDK manages low-level details, allowing you to focus on your project tasks. Please check the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
-
+The following code examples demonstrate how to invoke Aspose.Cells web services using various SDKs:
 
 {{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 {{<tab tabNum="1" >}}
@@ -106,5 +98,3 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ConvertWorkbook.go" >}}
 {{</tab>}}
 {{< /tabs >}}
-
-

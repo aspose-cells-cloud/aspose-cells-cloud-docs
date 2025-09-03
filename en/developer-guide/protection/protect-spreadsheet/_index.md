@@ -1,43 +1,41 @@
 ---
-title: "Protect spreadsheet"
-second_title: "Developer Guide"
-linktitle: "Protect spreadsheet"
+title: "Protect Spreadsheet - Excel API"
+second_title: "Developer Guide for Excel Protection"
+linktitle: "Protect Spreadsheet"
 type: docs
 url: /protect-spreadsheet/
-keywords: ""
-description: "Applies dual-layer password protection to Excel spreadsheets, supporting both open and modify passwords with encryption. "
+keywords: "Excel API, password protection, encrypt spreadsheet, dual-layer security, modify password, REST API, data encryption"
+description: "This API applies dual-layer password protection to Excel spreadsheets, ensuring secure access and modification through encryption."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+kwords: "Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, dual-layer password protection, encrypt spreadsheet, secure Excel"
 ---
 
-# **Excel API : ProtectSpreadsheet**
+# **Protect Spreadsheet API**
 
 ## **Overview**
 
-Applies dual-layer password protection to Excel spreadsheets, supporting both open and modify passwords with encryption. 
+This API applies dual-layer password protection to Excel spreadsheets, supporting both open and modify passwords with encryption to enhance data security.
 
 ## **Function Description**
 
-This WEB API applies dual-layer password protection to Excel spreadsheets, supporting both open and modify passwords. Passwords can be encrypted to enhance security.
+The Protect Spreadsheet API applies dual-layer password security to Excel files, allowing users to set passwords for opening and modifying spreadsheets. Passwords are encrypted to ensure maximum protection.
 
-
-## **API Endpoint** 
+## **API Endpoint**
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/protection/spreadsheet
 ```
 
-## The request parameters of **protectSpreadsheet** API are: 
+## The request parameters of **protectSpreadsheet** API are
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description | 
-| :- | :- | :- |:- | 
-|Spreadsheet|File|FormData|Upload spreadsheet file.|
-|password|String|Query|Spreadsheet file encryption password.|
-|modifyPassword|String|Query|Sets the protected password to modify the file.|
-|outPath|String|Query|(Optional) The folder path where the workbook is stored. The default is null.|
-|outStorageName|String|Query|Output file Storage Name.|
-|regoin|String|Query|The spreadsheet region setting.|
-
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+| :- | :- | :- |:- |
+|Spreadsheet|File|FormData|Upload the spreadsheet file to be protected.|
+|password|String|Query|Encryption password for the spreadsheet file.|
+|modifyPassword|String|Query|Password required to modify the spreadsheet.|
+|outPath|String|Query|(Optional) The folder path where the protected workbook will be stored. The default is null.|
+|outStorageName|String|Query|Name of the storage for output files.|
+|region|String|Query|Defines the region settings for the spreadsheet.|
 
 ## **Response Structure**
 
@@ -49,29 +47,28 @@ File
 
 ## Error Handling
 
-- **400 Bad Request**: Invalid url.
-- **401 Unauthorized**:  Authentication has failed, or no credentials were provided.
-- **404 Not Found**: Source file not accessible.
-- **500 Server Error** The spreadsheet has encountered an anomaly in obtaining data.
-
+- **400 Bad Request**: Invalid URL or parameters.
+- **401 Unauthorized**: Authentication failed or credentials not provided.
+- **404 Not Found**: The source file cannot be accessed.
+- **500 Server Error**: An internal error occurred while processing the spreadsheet.
 
 ## Usage Scenarios
+
 ## Key Features and Benefits
 
-- **Open Password**: Restricts access to the spreadsheet, ensuring only authorized users can open the file.
-- **Modify Password**: Restricts the ability to edit the spreadsheet, allowing users to view but not alter the content.
-- **Encryption**: Passwords are encrypted to provide an additional layer of security.
+- **Open Password**: Limits access to authorized users only, ensuring that sensitive data remains secure.
+- **Modify Password**: Prevents unauthorized changes, allowing users to view the spreadsheet without editing rights.
+- **Encryption**: Provides an additional security layer by encrypting passwords to protect sensitive information effectively.
 
 ## OpenAPI Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ProtectionController/ProtectSpreadsheet) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ProtectionController/ProtectSpreadsheet) provides a detailed programming interface for executing REST interactions directly from a web browser.
 
-## Excel API SDK 
+## Excel API SDK
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Utilizing an SDK streamlines the development process by managing low-level details, allowing developers to focus on their projects. Visit the [GitHub repository](https://github.com/aspose-cells-cloud) for a comprehensive list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
-
+The following code examples illustrate how to interact with Aspose.Cells web services using various SDKs:
 
 {{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 {{<tab tabNum="1" >}}
@@ -99,5 +96,3 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ProtectSpreadsheet.go" >}}
 {{</tab>}}
 {{< /tabs >}}
-
-

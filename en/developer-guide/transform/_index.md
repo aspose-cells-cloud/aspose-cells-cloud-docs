@@ -1,12 +1,12 @@
 ---
-title: "Transform Spreadsheet: Delete Empty Rows, Columns and worksheet"
-second_title: "Developer Guide"
+title: "Transform Spreadsheet: Delete Empty Rows, Columns, and Worksheets"
+second_title: "Aspose.Cells Cloud"
 linktitle: "Transform"
 type: docs
 url: /transform/
-keywords: "How to use Aspose.Cells Cloud REST APIs. Transform Spreadsheet: Delete Empty Rows, Columns and worksheet. Office Excel 2016,  Office Excel 2019,office Excel 365."
-description: "Transform Spreadsheet: Delete Empty Rows, Columns and worksheet."
+keywords: "Aspose.Cells Cloud REST API, Transform Spreadsheet, Remove Empty Rows, Remove Empty Columns, Delete Worksheets, Office Excel 2016, Office Excel 2019, Office Excel 365"
+description: "Learn how to efficiently transform spreadsheets by deleting empty rows, columns, and worksheets using the Aspose.Cells Cloud REST API."
 weight: 40
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Developer Guide
+kwords: "Excel, Office Cloud, REST API, Spreadsheet Transformation, PDF Conversion, CSV Handling, JSON Support, Markdown Processing, Developer Guide"
 ---
 

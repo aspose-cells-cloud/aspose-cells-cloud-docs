@@ -1,52 +1,50 @@
 ---
-title: "Merge spreadsheets in remote folder"
-second_title: "Developer Guide"
-linktitle: "Merge spreadsheets in remote folder"
+title: "Merge Spreadsheets in Remote Folder - Excel API"
+second_title: "Aspose.Cells Cloud"
+linktitle: "Merge Spreadsheets in Remote Folder"
 type: docs
 url: /merge-spreadsheets-in-remote-folder/
-keywords: ""
-description: "Merge spreadsheet files in folder of cloud storage into a specified format file. "
+keywords: "Merge spreadsheets, cloud storage, Excel API, remote processing, spreadsheet formats, REST API"
+description: "Seamlessly merge spreadsheet files stored in cloud storage into specified output formats like XLSX, CSV, and PDF."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Merge spreadsheets, Cloud processing, Remote file handling
 ---
 
-# **Excel API : MergeSpreadsheetsInRemoteFolder**
+# **Excel API: MergeSpreadsheetsInRemoteFolder**
 
 ## **Overview**
 
-Merge spreadsheet files in folder of cloud storage into a specified format file. 
+This API allows you to merge spreadsheet files located in a cloud storage folder into a specified output format file, such as XLSX, CSV, or PDF.
 
 ## **Function Description**
 
-This method merges multiple spreadsheet files stored in cloud storage into a single output file in the specified format (e.g., XLSX, CSV, PDF). 
-The operation is performed remotely, without requiring the files to be downloaded to the local machine. 
-Valid cloud storage credentials and accessible file paths or identifiers are required for all input files. 
-The merging process is executed entirely within the cloud environment, reducing data transfer and improving performance. 
-If any of the source files cannot be accessed, or if an error occurs during the merge or conversion process, an appropriate exception will be thrown. 
-Supported output formats depend on the capabilities of the underlying cloud processing service.
+The `MergeSpreadsheetsInRemoteFolder` method combines multiple spreadsheet files stored in cloud storage into a single output file in the desired format.
+This operation is executed remotely, eliminating the need to download files to your local machine.
+Ensure that valid cloud storage credentials and accessible file paths or identifiers are provided for all input files.
+The merging process is performed entirely within the cloud environment, which minimizes data transfer and boosts performance.
+In cases where source files cannot be accessed or if an error occurs during the merge or conversion process, an appropriate exception will be raised.
+The supported output formats are dependent on the capabilities of the cloud processing service used.
 
-
-## **API Endpoint** 
+## **API Endpoint**
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/merge/remote-spreadsheets
 ```
 
-## The request parameters of **mergeSpreadsheetsInRemoteFolder** API are: 
+## The request parameters of **MergeSpreadsheetsInRemoteFolder** API are
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description | 
-| :- | :- | :- |:- | 
-|folder|String|Query|The folder used to store the merged files.|
-|fileMatchExpression|String|Query||
-|outFormat|String|Query|The out file format.|
-|mergeInOneSheet|Boolean|Query|Whether to combine all data into a single worksheet.|
-|storageName|String|Query|(Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.|
-|outPath|String|Query|(Optional) The folder path where the workbook is stored. The default is null.|
-|outStorageName|String|Query|Output file Storage Name.|
-|fontsLocation|String|Query|Use Custom fonts.|
-|regoin|String|Query|The spreadsheet region setting.|
-|password|String|Query|The password for opening spreadsheet file.|
-
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+| :- | :- | :- |:- |
+| folder | String | Query | The folder where the merged files will be stored.|
+| fileMatchExpression | String | Query | Expression to match files for merging. |
+| outFormat | String | Query | The desired output file format. |
+| mergeInOneSheet | Boolean | Query | Indicates whether to combine all data into a single worksheet. |
+| storageName | String | Query | (Optional) The name of the custom cloud storage; defaults to default storage if omitted. |
+| outPath | String | Query | (Optional) The folder path for storing the workbook; defaults to null. |
+| outStorageName | String | Query | The name of the storage for the output file. |
+| fontsLocation | String | Query | Specifies custom fonts. |
+| region | String | Query | Sets the spreadsheet region. |
+| password | String | Query | The password for opening the spreadsheet file. |
 
 ## **Response Structure**
 
@@ -58,26 +56,25 @@ File
 
 ## Error Handling
 
-- **400 Bad Request**: Invalid url.
-- **401 Unauthorized**:  Authentication has failed, or no credentials were provided.
+- **400 Bad Request**: Invalid URL.
+- **401 Unauthorized**: Authentication has failed, or no credentials were provided.
 - **404 Not Found**: Source file not accessible.
-- **500 Server Error** The spreadsheet has encountered an anomaly in obtaining data.
-
+- **500 Server Error**: An anomaly occurred while obtaining data from the spreadsheet.
 
 ## Usage Scenarios
+
 ## Key Features and Benefits
 
-- **Cloud Storage Integration**: Merges multiple spreadsheet files stored in cloud storage into a single output file in the specified format (e.g., XLSX, CSV, PDF).
-- **Remote Processing**: Performs the merging operation entirely within the cloud environment, eliminating the need to download files to the local machine.
-- **Efficient Data Handling**: Reduces data transfer and enhances performance by processing files remotely.
+- **Cloud Storage Integration**: Efficiently merges multiple spreadsheet files stored in cloud storage into a single output file in formats like XLSX, CSV, or PDF.
+- **Remote Processing**: Conducts the merging operation entirely within the cloud, negating the need to download files locally.
+- **Efficient Data Handling**: Enhances performance and reduces data transfer by processing files in the cloud environment.
 
 ## OpenAPI Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/DataProcessingController/MergeSpreadsheetsInRemoteFolder) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/DataProcessingController/MergeSpreadsheetsInRemoteFolder) provides a publicly accessible programming interface allowing REST interactions directly from a web browser.
 
-## Excel API SDK 
+## Excel API SDK
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Utilizing an SDK is the optimal method to expedite development. An SDK manages low-level details, allowing you to concentrate on project tasks. Visit the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
-
+The following code examples illustrate how to interact with Aspose.Cells web services using various SDKs:

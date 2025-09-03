@@ -1,53 +1,46 @@
 ---
-title: "Split remote spreadsheet"
-second_title: "Developer Guide"
-linktitle: "Split remote spreadsheet"
+title: "Split Remote Spreadsheet - Excel API"
+second_title: "Aspose.Cells Cloud"
+linktitle: "Split Remote Spreadsheet"
 type: docs
 url: /split-remote-spreadsheet/
-keywords: ""
-description: "Split a spreadsheet in cloud storage into the specified format, multi-file. "
+keywords: "spreadsheet splitting, cloud spreadsheet API, Excel remote processing, split Excel file, multi-format output, cloud storage integration"
+description: "Efficiently split a spreadsheet stored in cloud storage into multiple output formats without downloading."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+kwords: "Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, split remote spreadsheet, cloud processing, multi-file output"
 ---
 
-# **Excel API : SplitRemoteSpreadsheet**
+# **Excel API : Split Remote Spreadsheet**
 
 ## **Overview**
 
-Split a spreadsheet in cloud storage into the specified format, multi-file. 
+Efficiently split a spreadsheet stored in cloud storage into multiple output files in specified formats.
 
 ## **Function Description**
 
-This method splits a single spreadsheet file stored in cloud storage into multiple output files in the specified format (e.g., XLSX, CSV, PDF). 
-Each split file may represent different sheets, sections, or segments of the original document based on user-defined criteria. 
-The operation is performed remotely within the cloud environment, eliminating the need to download the files to the local machine. 
-Ensure that you have valid cloud storage credentials and accessible file paths or identifiers for all input files. 
-If the source file cannot be accessed, permissions are insufficient, or if an error occurs during the splitting process, an appropriate exception will be thrown. 
-Supported formats for output depend on the capabilities of the underlying cloud processing service. Users should specify clear criteria for how the input file should be divided to ensure accurate results.
+This method allows users to split a single spreadsheet file stored in cloud storage into multiple output files in various formats (e.g., XLSX, CSV, PDF). Each output file can represent different sheets, sections, or segments of the original document, based on user-defined criteria. The operation is performed remotely in the cloud environment, eliminating the need for local downloads. Ensure you have valid cloud storage credentials and accessible file paths for all input files. In case of access issues, insufficient permissions, or errors during the splitting process, an appropriate exception will be thrown. Supported output formats depend on the capabilities of the underlying cloud processing service. Users should specify clear criteria for how the input file should be divided to ensure accurate results.
 
-
-## **API Endpoint** 
+## **API Endpoint**
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/{name}/split/spreadsheet
 ```
 
-## The request parameters of **splitRemoteSpreadsheet** API are: 
+## The request parameters of **splitRemoteSpreadsheet** API are
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description | 
-| :- | :- | :- |:- | 
-|name|String|Path|The name of the workbook file to be split.|
-|folder|String|Query|The folder path where the workbook is stored.|
-|from|Integer|Query|Begin worksheet index.|
-|to|Integer|Query|End worksheet index.|
-|outFormat|String|Query|The desired output format (e.g., "Xlsx", "Pdf", "Csv").|
-|storageName|String|Query|(Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.|
-|outPath|String|Query|(Optional) The folder path where the workbook is stored. The default is null.|
-|outStorageName|String|Query|Output file Storage Name.|
-|fontsLocation|String|Query|Use Custom fonts.|
-|regoin|String|Query|The spreadsheet region setting.|
-|password|String|Query|The password for opening spreadsheet file.|
-
+| Parameter Name | Type | Path/Query String/HTTP Body | Description |
+| :- | :- | :- |:- |
+| name | String | Path | The name of the workbook file to be split. |
+| folder | String | Query | The folder path where the workbook is stored. |
+| from | Integer | Query | Begin worksheet index. |
+| to | Integer | Query | End worksheet index. |
+| outFormat | String | Query | The desired output format (e.g., "Xlsx", "Pdf", "Csv"). |
+| storageName | String | Query | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted. |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file storage name. |
+| fontsLocation | String | Query | Use custom fonts. |
+| region | String | Query | The spreadsheet region setting. |
+| password | String | Query | The password for opening the spreadsheet file. |
 
 ## **Response Structure**
 
@@ -59,29 +52,28 @@ File
 
 ## Error Handling
 
-- **400 Bad Request**: Invalid url.
-- **401 Unauthorized**:  Authentication has failed, or no credentials were provided.
+- **400 Bad Request**: Invalid URL.
+- **401 Unauthorized**: Authentication has failed, or no credentials were provided.
 - **404 Not Found**: Source file not accessible.
-- **500 Server Error** The spreadsheet has encountered an anomaly in obtaining data.
-
+- **500 Server Error**: An anomaly occurred while accessing spreadsheet data.
 
 ## Usage Scenarios
+
 ## Key Features and Benefits
 
-- **Cloud Storage Integration**: Splits a single spreadsheet file stored in cloud storage into multiple output files in the specified format (e.g., XLSX, CSV, PDF).
-- **Remote Processing**: Performs the splitting operation entirely within the cloud environment, eliminating the need to download files to the local machine.
-- **Enhanced Performance**: Processes the file in the cloud, reducing the need for local processing and improving performance.
+- **Cloud Storage Integration**: Allows seamless splitting of spreadsheet files stored in the cloud into multiple output formats (e.g., XLSX, CSV, PDF).
+- **Remote Processing**: Conducts the splitting operation entirely in the cloud, eliminating the need for local file downloads.
+- **Enhanced Performance**: Leverages cloud processing to improve performance and reduce the burden on local machines.
 
 ## OpenAPI Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/DataProcessingController/SplitRemoteSpreadsheet) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/DataProcessingController/SplitRemoteSpreadsheet) defines a publicly accessible programming interface and enables REST interactions directly from a web browser.
 
-## Excel API SDK 
+## Excel API SDK
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK can significantly speed up development. An SDK handles low-level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
-
 
 {{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 {{<tab tabNum="1" >}}
@@ -109,5 +101,3 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_SplitFileInRemote.go" >}}
 {{</tab>}}
 {{< /tabs >}}
-
-

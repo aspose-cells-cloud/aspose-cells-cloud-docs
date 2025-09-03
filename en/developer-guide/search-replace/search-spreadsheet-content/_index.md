@@ -1,18 +1,18 @@
 ---
-title: "Search spreadsheet content"
-second_title: "Developer Guide"
-linktitle: "Search spreadsheet content"
+title: "Search Spreadsheet Content"
+second_title: "Aspose.Cells Cloud"
+linktitle: "Search Spreadsheet Content"
 type: docs
 url: /search-spreadsheet-content/
-keywords: ""
-description: "Search text in the local spreadsheet. "
+keywords: "Excel, Office Cloud, REST API, Spreadsheet Search, PDF Export, CSV Handling, JSON Formatting, Markdown Integration, Match Empty Cells in Excel"
+description: "Efficiently search for text within local spreadsheet files using our API."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+kwords: Excel, Office Cloud, REST API, Spreadsheet Search, PDF Export, CSV Handling, JSON Formatting, Markdown Integration, Match Empty Cells in Excel
 ---
 
 # **Excel API : SearchSpreadsheetContent**
 
-Search text in the local spreadsheet. 
+Efficiently search for text within local spreadsheet files using our API.
 
 ## **Interface Details**
 
@@ -24,20 +24,19 @@ PUT http://api.aspose.cloud/v4.0/cells/search/content
 
 ### **Function Description**
 
-This method searches for specified text within a local spreadsheet file.It supports searching through all sheets and cells of the workbook, identifying occurrences of the search term.The operation is performed cloudly, requiring no cloud storage. Ensure that you have the necessary permissions to read the source file.If the source file cannot be accessed or if an error occurs during the search process (such as an unsupported file format), an appropriate exception will be thrown.The method may return the locations of the matches (e.g., sheet name, cell coordinates) depending on implementation details.Users should specify the exact search criteria, including case sensitivity and whole word matching options, to refine search results.
+This method searches for specified text within a local spreadsheet file. It supports searching through all sheets and cells of the workbook, identifying occurrences of the search term. The operation is performed in the cloud, requiring no cloud storage. Ensure that you have the necessary permissions to read the source file. If the source file cannot be accessed or if an error occurs during the search process (such as an unsupported file format), an appropriate exception will be thrown. The method may return the locations of the matches (e.g., sheet name, cell coordinates) depending on implementation details. Users should specify the exact search criteria, including case sensitivity and whole word matching options, to refine search results.
 
 ### The request parameters of **searchSpreadsheetContent** API are: 
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description | 
 | :- | :- | :- |:- | 
-|Spreadsheet|File|FormData|Upload spreadsheet file.|
-|searchText|String|Query|The searched text.|
-|ignoringCase|Boolean|Query|Ignore the text of the search.|
-|worksheet|String|Query|Specify the worksheet for the lookup.|
-|cellArea|String|Query|Specify the cell area for the lookup|
-|regoin|String|Query|The spreadsheet region setting.|
-|password|String|Query|The password for opening spreadsheet file.|
-
+|Spreadsheet|File|FormData|Upload the spreadsheet file to search.|
+|searchText|String|Query|The text to search for within the spreadsheet.|
+|ignoringCase|Boolean|Query|Specify whether to ignore case in the search.|
+|worksheet|String|Query|Specify the worksheet to search within.|
+|cellArea|String|Query|Specify the area of cells to search.|
+|region|String|Query|The region setting for the spreadsheet.|
+|password|String|Query|The password required to open the spreadsheet file.|
 
 ### **Response Description**
 ```json
@@ -93,10 +92,9 @@ The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/SearchControl
 
 ## Excel API SDK 
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK handles low-level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
-
 
 {{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 {{<tab tabNum="1" >}}
@@ -124,5 +122,3 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_SearchTextInLocalFile.go" >}}
 {{</tab>}}
 {{< /tabs >}}
-
-
