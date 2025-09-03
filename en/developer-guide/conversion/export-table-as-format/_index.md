@@ -85,7 +85,7 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{<tab tabNum="3" >}}
 {{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ExportTableAsFormat.php" >}}
 {{</tab>}}
-{{<tab tab tabNum="4" >}}
+{{<tab tabtabNum="4" >}}
 {{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ExportTableAsFormat.rb" >}}
 {{</tab>}}
 {{<tab tabNum="5" >}}
