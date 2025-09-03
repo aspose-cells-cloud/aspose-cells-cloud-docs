@@ -676,7 +676,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/storage/cellsstorage/exist" \
 ```
 
 {{< /tab >}}
-{{< tab tab num="47" >}}
+{{< tab tabnum="47" >}}
 
 ```bash
 {
