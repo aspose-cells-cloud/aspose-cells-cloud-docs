@@ -1,5 +1,5 @@
 ---
-title: "Swap Range - Excel API"
+title: "Swap Range in Spreadsheet - Excel API"
 second_title: "Aspose.Cells Cloud"
 linktitle: "Swap Range"
 type: docs

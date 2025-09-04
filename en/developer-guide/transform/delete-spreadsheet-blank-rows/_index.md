@@ -1,7 +1,7 @@
 ---
-title: "Delete Spreadsheet Blank Rows - Excel API"
+title: "Delete Blank Rows in Spreadsheet- Excel API"
 second_title: "Aspose.Cells Cloud"
-linktitle: "Delete Spreadsheet Blank Rows"
+linktitle: "Delete Blank Rows"
 type: docs
 url: /delete-spreadsheet-blank-rows/
 keywords: "Delete blank rows, Excel API, Spreadsheet cleaning, Office Cloud, REST API, Data management, Remove empty rows"

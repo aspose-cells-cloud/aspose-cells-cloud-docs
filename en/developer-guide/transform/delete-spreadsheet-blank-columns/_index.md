@@ -1,7 +1,7 @@
 ---
-title: "Delete Spreadsheet Blank Columns - Excel API"
+title: "Delete Blank Columns in Spreadsheet - Excel API"
 second_title: "Aspose.Cells Cloud"
-linktitle: "Delete Spreadsheet Blank Columns"
+linktitle: "Delete Blank Columns"
 type: docs
 url: /delete-spreadsheet-blank-columns/
 keywords: "Excel API, Cloud API, Delete Blank Columns, Spreadsheet Cleanup, REST API, Excel, Office Cloud"

@@ -1,7 +1,7 @@
 ---
-title: "Delete Spreadsheet Blank Worksheets - Excel API"
+title: "Delete Blank Worksheets in Spreadsheet- Excel API"
 second_title: "Aspose.Cells Cloud"
-linktitle: "Delete Spreadsheet Blank Worksheets"
+linktitle: "Delete Blank Worksheets"
 type: docs
 url: /delete-spreadsheet-blank-worksheets/
 keywords: "Excel API, Delete Blank Worksheets, Spreadsheet Management, Office Cloud API, Clean Up Spreadsheets"
