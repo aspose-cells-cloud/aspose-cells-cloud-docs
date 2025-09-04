@@ -1,7 +1,7 @@
 ---
-title: "Search Content in Remote Range - Excel API"
+title: "Search Range Content in Remote Spreadsheet - Excel API"
 second_title: "Aspose.Cells Cloud"
-linktitle: "Search Content in Remote Range"
+linktitle: "Search Range Content in Remote Spreadsheet"
 type: docs
 url: /search-content-in-remote-range/
 keywords: "Excel API, Remote Spreadsheet Search, Cloud Storage, Data Retrieval, Spreadsheet Search, Text Search API"

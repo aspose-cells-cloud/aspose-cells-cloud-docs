@@ -1,7 +1,7 @@
 ---
-title: "Replace Content in Remote Range - Excel API"
+title: "Replace Range Content in Remote Spreadsheet - Excel API"
 second_title: "Aspose.Cells Cloud"
-linktitle: "Replace Content in Remote Range"
+linktitle: "Replace Range Content in Remote Spreadsheet"
 type: docs
 url: /replace-content-in-remote-range/
 keywords: "API, Excel API, Replace Content, Remote Spreadsheet, Cloud Storage, Text Replacement, REST API"
@@ -16,7 +16,7 @@ Efficiently replace specified text within a range of a remote spreadsheet file.
 
 ## **Interface Details**
 
-### **Endpoint** 
+### **Endpoint**
 
 ```
 PUT http://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{cellArea}/replace/content
@@ -26,10 +26,10 @@ PUT http://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{cel
 
 This method allows users to replace specified text within a range of a spreadsheet file stored in remote cloud storage. It supports replacing occurrences of the target text across all sheets and cells of the workbook directly within the cloud environment. The operation is performed remotely, eliminating the need to download the file to the local machine. Ensure that you have valid cloud storage credentials and accessible file paths or identifiers for the target spreadsheet. If the source file cannot be accessed, permissions are insufficient, writing to the file fails, or an error occurs during the replacement process (such as an unsupported file format), an appropriate exception will be thrown. Depending on the implementation, the method may return the number of replacements made or the locations of the replaced texts (e.g., sheet name, cell coordinates). Users should specify the exact text to replace and its replacement to ensure accurate modifications.
 
-### The request parameters of **replaceContentInRemoteRange** API are: 
+### The request parameters of **replaceContentInRemoteRange** API are
 
-| Parameter Name | Type | Path/Query String/HTTP Body | Description | 
-| :- | :- | :- |:- | 
+| Parameter Name | Type | Path/Query String/HTTP Body | Description |
+| :- | :- | :- |:- |
 | name | String | Path | The name of the workbook file to be modified. |
 | searchText | String | Query | The text to search for within the spreadsheet. |
 | replaceText | String | Query | The text to replace the searched text with. |
@@ -41,6 +41,7 @@ This method allows users to replace specified text within a range of a spreadshe
 | password | String | Query | The password for opening the spreadsheet file. |
 
 ### **Response Description**
+
 ```json
 {
   "Name": "CellsCloudResponse",
@@ -75,7 +76,7 @@ This method allows users to replace specified text within a range of a spreadshe
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/SearchControllor/ReplaceContentInRemoteRange) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-## Excel API SDK 
+## Excel API SDK
 
 Using an SDK is the best way to speed up development. An SDK abstracts low-level details and allows you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

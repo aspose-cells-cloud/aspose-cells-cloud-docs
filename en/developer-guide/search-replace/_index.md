@@ -1,7 +1,7 @@
 ---
-title: "Search and Replace Content in Spreadsheets with Aspose.Cells Cloud"
-second_title: "Comprehensive Developer Guide"
-linktitle: "Search & Replace Functionality"
+title: "Search and Replace Content in Spreadsheets - Excel API"
+second_title: "Aspose.Cells Cloud"
+linktitle: "Search&Replace"
 type: docs
 url: /search-replace/
 keywords: "Aspose.Cells Cloud REST API, search and replace content in spreadsheets, Excel 2016, Excel 2019, Excel 365, cloud-based office solutions."
