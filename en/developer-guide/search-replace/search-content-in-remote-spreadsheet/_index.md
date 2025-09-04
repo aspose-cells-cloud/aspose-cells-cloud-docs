@@ -1,7 +1,7 @@
 ---
 title: "Search Content in Remote Spreadsheet - Excel API"
 second_title: "Aspose.Cells Cloud"
-linktitle: "Search Content in Remote Spreadsheet"
+linktitle: "Search Remote Spreadsheet Content"
 type: docs
 url: /search-content-in-remote-spreadsheet/
 keywords: "remote spreadsheet search, Excel API, search text in spreadsheet, cloud storage search, Aspose.Cells API"

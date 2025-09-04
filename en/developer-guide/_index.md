@@ -33,7 +33,7 @@ kwords: Excel, Office Cloud, REST API,Convert/Merge/Split/Protect, Spreadsheet, 
 - **[Delete Spreadsheet blank columns](https://docs.aspose.cloud/cells/delete-spreadsheet-blank-columns/)**
 - **[Replace Spreadsheet content](https://docs.aspose.cloud/cells/replace-spreadsheet-content/)**
 
-### **Spreadsheet Management**
+### **Management**
 
 - **[Create a new spreadsheet](https://docs.aspose.cloud/cells/create-spreadsheet/)**
 - **[Add a worksheet to spreadsheet](https://docs.aspose.cloud/cells/add-worksheet-to-spreadsheet/)**

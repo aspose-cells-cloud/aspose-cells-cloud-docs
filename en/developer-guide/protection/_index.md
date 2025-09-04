@@ -1,7 +1,7 @@
 ---
 title: "Protection Spreadsheet: Set Open Password and Modify Password"
 second_title: "Comprehensive Developer Guide"
-linktitle: "Spreadsheet Protection"
+linktitle: "Protection"
 type: docs
 url: /protection/
 keywords: "Aspose.Cells Cloud REST APIs, set open password, modify password, Excel security, Office Excel 2016, Office Excel 2019, Office Excel 365."
@@ -22,6 +22,7 @@ In this guide, you will learn how to utilize the Aspose.Cells Cloud REST APIs to
 ### Content Relevance
 
 The content should focus on:
+
 1. Explaining the importance of spreadsheet protection.
 2. Providing step-by-step instructions on using the API for setting and modifying passwords.
 3. Offering examples and best practices for password management.

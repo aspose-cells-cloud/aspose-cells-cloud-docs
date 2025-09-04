@@ -1,7 +1,7 @@
 ---
 title: "Search Broken Links of Worksheet in Remote Spreadsheet - Excel API"
 second_title: "Aspose.Cells Cloud"
-linktitle: "Search Broken Links of Worksheet in Remote Spreadsheet"
+linktitle: "Search Remote Worksheet Broken Links"
 type: docs
 url: /search-broken-links-in-remote-worksheet/
 keywords: "broken links, Excel API, cloud spreadsheet, REST API, hyperlink validation, remote worksheet"

@@ -1,7 +1,7 @@
 ---
 title: "Search for Broken Links in Remote Spreadsheets - Excel API"
 second_title: "Aspose.Cells Cloud"
-linktitle: "Search for Broken Links in Remote Spreadsheets"
+linktitle: "Search Remote Spreadsheets Broken Links"
 type: docs
 url: /search-broken-links-in-remote-spreadsheet/
 keywords: "broken links, remote spreadsheet, Excel API, cloud storage, hyperlink checker, dead URL detection, REST API"
@@ -16,7 +16,7 @@ Efficiently search for broken links in remote spreadsheets stored in cloud envir
 
 ## **Interface Details**
 
-### **Endpoint** 
+### **Endpoint**
 
 ```
 PUT http://api.aspose.cloud/v4.0/cells/{name}/search/broken-links
@@ -26,10 +26,10 @@ PUT http://api.aspose.cloud/v4.0/cells/{name}/search/broken-links
 
 This method scans a spreadsheet file located in remote cloud storage to identify broken links, such as dead URLs or missing external references. It checks all sheets and cells for hyperlinks that no longer point to valid destinations. The operation is performed remotely, eliminating the need to download the file to a local machine. Ensure you have valid cloud storage credentials and proper access permissions to the target file. If the source file cannot be accessed, contains unsupported formats, or encounters an error during scanning, an appropriate exception will be thrown. The method may return a list of broken links with details, including the sheet name, cell coordinates, and the invalid URL. Users should review the results to update or remove outdated links in the spreadsheet.
 
-### The request parameters of **searchBrokenLinksInRemoteSpreadsheet** API are: 
+### The request parameters of **searchBrokenLinksInRemoteSpreadsheet** API are
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description | 
-| :- | :- | :- |:- | 
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+| :- | :- | :- |:- |
 |name|String|Path|The name of the workbook file to be searched.|
 |worksheet|String|Query|Specify the worksheet for the lookup.|
 |cellArea|String|Query|Specify the cell area for the lookup.|
@@ -39,6 +39,7 @@ This method scans a spreadsheet file located in remote cloud storage to identify
 |password|String|Query|The password for opening the spreadsheet file.|
 
 ### **Response Description**
+
 ```json
 {
   "Name": "BrokenLinksResponse",
@@ -90,7 +91,7 @@ This method scans a spreadsheet file located in remote cloud storage to identify
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/SearchController/SearchBrokenLinksInRemoteSpreadsheet) defines a publicly accessible programming interface and allows you to perform REST interactions directly from a web browser.
 
-## Excel API SDK 
+## Excel API SDK
 
 Using an SDK is the most efficient way to accelerate development. An SDK manages low-level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
