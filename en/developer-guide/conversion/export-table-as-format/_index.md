@@ -1,5 +1,5 @@
 ---
-title: "Export Table to Specified Format"
+title: "Export Table to Specified Format - Excel API"
 second_title: "Aspose.Cells Cloud"
 linktitle: "Export Table to Specified Format"
 type: docs
