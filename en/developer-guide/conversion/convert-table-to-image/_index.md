@@ -31,7 +31,7 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/table/image
 | Parameter Name | Type | Path/Query String/HTTP Body | Description |
 | :- | :- | :- |:- |
 |Spreadsheet|File|FormData|Upload the spreadsheet file.|
-|worksheet|String|Query|Specify the worksheet name within the spreadsheet.|
+|worksheet|String|Query|The worksheet name of Spreadsheet/Excel|
 |tableName|String|Query|Name of the table to convert.|
 |format|String|Query|Desired image file format (e.g., png, svg).|
 |outPath|String|Query|(Optional) The folder path where the converted image will be stored. Defaults to null.|

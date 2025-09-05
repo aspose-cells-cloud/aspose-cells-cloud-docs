@@ -31,7 +31,7 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/table/html
 | Parameter Name | Type | Path/Query String/HTTP Body | Description |
 | :- | :- | :- | :- |
 | Spreadsheet | File | FormData | Upload the spreadsheet file to be converted. |
-| worksheet | String | Query | The name of the worksheet within the spreadsheet. |
+| worksheet | String | Query | The worksheet name of Spreadsheet/Excel |
 | tableName | String | Query | The name of the table to convert. |
 | outPath | String | Query | (Optional) The folder path where the converted file will be stored. The default value is null. |
 | outStorageName | String | Query | The designated storage name for the output file. |

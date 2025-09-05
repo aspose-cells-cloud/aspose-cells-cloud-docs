@@ -35,7 +35,7 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/range/image
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 | :- | :- | :- |:- |
 |Spreadsheet|File|FormData|Upload the spreadsheet file for conversion.|
-|worksheet|String|Query|Specify the worksheet name within the spreadsheet.|
+|worksheet|String|Query|The worksheet name of Spreadsheet/Excel|
 |range|String|Query|Define the cell area to convert (e.g., A1:C10).|
 |format|String|Query|Specify the output file format (e.g., png, svg, tiff).|
 |printHeadings|Boolean|Query|Indicate if row and column headings should be printed.|

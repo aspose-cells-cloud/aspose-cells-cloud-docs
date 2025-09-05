@@ -31,7 +31,7 @@ GET http://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{ran
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 | :- | :- | :- |:- |
 |name|String|Path|(Required) The name of the workbook file to be retrieved.|
-|worksheet|String|Path|The name of the worksheet to be processed.|
+|worksheet|String|Path|The The worksheet name of Spreadsheet/Excel|
 |range|String|Path|The range to be converted (e.g., A1:C12).|
 |format|String|Query|(Required) The desired output format (e.g., "png", "pdf", "svg").|
 |folder|String|Query|(Optional) The folder path where the workbook is stored. Defaults to null.|

@@ -31,7 +31,7 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/table/pdf
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 | :- | :- | :- |:- |
 |Spreadsheet|File|FormData|Upload the spreadsheet file to be converted.|
-|worksheet|String|Query|Specify the worksheet name from the spreadsheet.|
+|worksheet|String|Query|The worksheet name of Spreadsheet/Excel|
 |tableName|String|Query|Name of the table to convert.|
 |outPath|String|Query|(Optional) The folder path where the converted PDF will be stored. The default is null.|
 |outStorageName|String|Query|Specify the name of the output file storage.|

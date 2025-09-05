@@ -28,7 +28,7 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/range/csv
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 | :- | :- | :- |:- |
 |Spreadsheet|File|FormData|Upload the spreadsheet file.|
-|worksheet|String|Query|Name of the worksheet to be processed.|
+|worksheet|String|Query|The worksheet name of Spreadsheet/Excel|
 |range|String|Query|Specify the cell area (e.g., A1:C10).|
 |outPath|String|Query|(Optional) The folder path where the workbook will be stored. Default is null.|
 |outStorageName|String|Query|Name of the output file storage.|
