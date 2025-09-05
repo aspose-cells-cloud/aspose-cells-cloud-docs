@@ -1,5 +1,5 @@
 ---
-title: "Calculate - Excel API"
+title: "Excel Cloud API: Calculate"
 second_title: "Aspose.Cells Cloud"
 linktitle: "Calculate"
 type: docs
@@ -9,3 +9,4 @@ description: "This Developer Guide provides practical scenarios and tips for eff
 weight: 20
 kwords: Excel, Office Cloud, REST API, Spreadsheet Manipulation, PDF Conversion, CSV Processing, JSON Handling, Markdown Support, Developer Guide, Calculate Functionality
 ---
+

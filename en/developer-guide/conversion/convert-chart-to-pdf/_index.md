@@ -1,6 +1,7 @@
 ---
-title: "Convert Chart to PDF - Excel API"
+title: "Aspose.Cells Cloud Web API - Converting Spreadsheet/Excel Chart to Pdf"
 second_title: "Aspose.Cells Cloud"
+ArticleTitle: Converting Spreadsheet/Excel Chart to Image
 linktitle: "Convert Chart to PDF"
 type: docs
 url: /convert-chart-to-pdf/
@@ -10,23 +11,15 @@ weight: 100
 kwords: "Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Convert Chart to PDF, Cloud-Native Conversion"
 ---
 
-# **Excel API: ConvertChartToPdf**
+Convert a chart from a local spreadsheet/Excel file to a [PDF](https://docs.fileformat.com/pdf/) file with the Aspose.Cells Cloud Web API.
 
-## **Overview**
-
-This API converts charts from spreadsheets on a local drive to PDF format seamlessly.
-
-## **Function Description**
-
-This method reads a spreadsheet file containing a chart from the local file system, converts it into the desired PDF format, and returns the converted result. The source file path and target format must be specified correctly. Ensure that the necessary permissions are in place to read the source file and write the converted file, if applicable. The conversion process occurs entirely on the cloud server, eliminating the need for any cloud storage or external downloads. If the source file does not exist, is inaccessible, or if an error occurs during the conversion process, an appropriate exception will be thrown. Supported formats for conversion depend on the available libraries and their capabilities.
-
-## **API Endpoint**
+## **Convert Chart to Pdf API**
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/convert/chart/pdf
 ```
 
-## The request parameters of **convertChartToPdf** API are
+### **Request Parameters:**
 
 | Parameter Name       | Type   | Path/Query String/HTTPBody | Description                                               |
 | -------------------- | ------ | --------------------------- | --------------------------------------------------------- |
@@ -39,7 +32,7 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/chart/pdf
 | region               | String | Query                      | The spreadsheet region setting.                           |
 | password             | String | Query                      | The password for opening the spreadsheet file.           |
 
-## **Response Structure**
+## **Response**
 
 ```json
 {
@@ -47,29 +40,27 @@ File
 }
 ```
 
-## Error Handling
+### Error Codes
 
-- **400 Bad Request**: Invalid URL or parameters.
-- **401 Unauthorized**: Authentication has failed, or no credentials were provided.
-- **404 Not Found**: Source file not accessible.
-- **500 Server Error**: An anomaly occurred while obtaining conversion data from the spreadsheet.
+- **400 Bad Request**: Invalid Apose.Cells Cloud API URI.
+- **401 Unauthorized**: Invalid access token. Or invalid client id and secret.
+- **404 Not Found**: The spreadsheet file not accessible.
+- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
 
-## Usage Scenarios
+## Why should you use the Convert Chart to Pdf API?
 
-## Key Features and Benefits
+- No need for cloud storage, reducing the burden on cloud resources.
+- Development can be quickly completed through the existing SDK.
 
-- **Cloud-Native Conversion**: Convert local files directly in the cloud, eliminating the need to store them there.
-- **Reduced Cloud Resource Burden**: No need to upload files to the cloud, saving cloud storage space.
-- **Simplified Workflow**: Convert local spreadsheets to PDF format directly through cloud services, without intermediate steps.
+## How to Use the Convert Chart to Pdf API with SDKs?
 
-## OpenAPI Specification
+### OpenAPI Specification
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertChartToPdf) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-## Excel API SDK
+## Use Aspose.Cells Cloud SDKs
 
-Using an SDK is the best way to speed up development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
-
+Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement convert spreadsheet/Excel chart to pdf for cells with minimal code.
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 
 {{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}

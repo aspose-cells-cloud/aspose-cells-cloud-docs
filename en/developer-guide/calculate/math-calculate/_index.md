@@ -1,44 +1,44 @@
 ---
-title: "Math Calculate - Excel API"
+title: "An API of Aspose.Cells Cloud for Add, Minus, Multiply, Divide, and Percentage on a range of Spreadsheet/Excel"
 second_title: "Aspose.Cells Cloud"
+ArticleTitle: "Add, Minus, Multiply, Divide and Percentage in Spreadsheet/Excel"
 linktitle: "Math Calculate"
 type: docs
 url: /math-calculate/
-keywords: "Excel API, Math calculation, REST API, Spreadsheet processing, Office Cloud, Aspose.Cells, File upload, JSON response, Error handling"
+keywords: "Math calculation,Cloud REST API, Add, Minus, Multiply, Divide, Percentage, Office Cloud, Aspose.Cells"
 description: "Comprehensive guide for using the Math Calculate API to perform calculations in Excel spreadsheets."
 weight: 100
-kwords: Excel API, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Calculate math in Excel worksheets
+kwords: Math calculation,Cloud REST API, Add, Minus, Multiply, Divide, Percentage, Office Cloud, Aspose.Cells
 ---
 
-# **Excel API: Math Calculate**
+The API allows developers to perform addition, subtraction, multiplication, division, and percentage calculations on specified ranges of spreadsheets/Excel with a RESTful interface.
 
-## **Overview**
+| **Calculate Operation** | Description |
+| **Add** |  |
+| **Minus** |  |
+| **Multiply** |  |
+| **Divide** |  |
+| **Percentage** |  |
 
-The Math Calculate API allows developers to perform mathematical calculations on Excel spreadsheets through a RESTful interface. This guide covers the API's functionality, request parameters, and response structures, enabling seamless integration into applications.
-
-## **Function Description**
-
-This API performs a variety of mathematical operations on specified ranges within an Excel worksheet. Users can upload a spreadsheet and specify the operation to be executed.
-
-## **API Endpoint**
+## **Math Calculate API**
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/calculate/math
 ```
 
-## The request parameters of **MathCalculate** API are
+### **Request Parameters:**
 
 | Parameter Name | Type | Path/Query String/HTTP Body | Description |
 | :- | :- | :- |:- |
 | Spreadsheet | File | FormData | Upload the spreadsheet file for processing. |
-| operation | String | Query | The mathematical operation to perform (e.g., SUM, AVERAGE). |
+| operation | String | Query | The mathematical operation to perform (Add, Minus, Multiply, Divide, and Percentage). |
 | value | String | Query | A value to use in the calculation, if applicable. |
 | worksheet | String | Query | The name of the worksheet to operate on. |
 | range | String | Query | The range of cells to include in the calculation. |
 | region | String | Query | Defines the specific region of the spreadsheet. |
 | password | String | Query | The password for opening the spreadsheet file, if protected. |
 
-## **Response Structure**
+### **Response**
 
 ```json
 {
@@ -46,28 +46,32 @@ File
 }
 ```
 
-## Error Handling
+### Error Codes
 
-Detailed error messages will be returned in the response for various scenarios, such as invalid parameters or file format issues. Ensure to handle these gracefully in your application.
+- **400 Bad Request**: Invalid Apose.Cells Cloud API URI.
+- **401 Unauthorized**: Invalid access token. Or invalid client id and secret.
+- **404 Not Found**: The spreadsheet file not accessible.
+- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
 
-## Usage Scenarios
+## Where should we use the Math Calculate API?
 
-The Math Calculate API is ideal for applications needing to perform batch calculations on spreadsheets, automate data analysis, or integrate Excel functionalities into larger workflows.
+The mathematical computation API is suitable for batch calculations on spreadsheets.
 
-## Key Features and Benefits
+## Why should you use the Math Calculate API?
 
-- **Seamless Integration**: Easily integrate advanced mathematical calculations into your applications.
-- **Versatile Operations**: Support for multiple mathematical operations on Excel data.
-- **Robust Error Handling**: Comprehensive error messages for easier debugging.
-- **File Format Support**: Works with various spreadsheet formats including XLSX, CSV, and more.
+- Perform batch mathematical calculations.
+- Development can be quickly completed through the existing SDK.
 
-## OpenAPI Specification
+## How to Use the Math Calculate API with SDKs
+
+### OpenAPI Specification
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/CalculateController/MathCalculate) defines a publicly accessible programming interface, allowing developers to interact with the API directly from a web browser.
 
-## Excel API SDK
+### Use Aspose.Cells Cloud SDKs
 
-Using an SDK is the best way to speed up development. An SDK manages low-level details, allowing you to focus on your project tasks. Check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement math calculations for cells with minimal code.
+Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 

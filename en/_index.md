@@ -1,9 +1,9 @@
 ---
-title: "Aspose.Cells Cloud Web API: Spreadsheet conversion, merged, splitter, protect, data processing, etc | Developer Center"
+title: "Aspose.Cells Cloud Web API: Spreadsheet conversion, merged, splitter, protect, data processing, etc"
 linktitle: "Developer Center"
 type: docs
 url: /
-description: "Aspose.Cells Cloud Spreadsheet/Excel Web APIs support Excel to create, convert, merge, split, protect, and perform inner object operations, among other functions.  Aspose.Cells Cloud provides a complete document, Spreadsheet Web API that supports RESTful interfaces, including authentication, endpoints, parameter descriptions, and code examples to help developers quickly integrate."
+description: "Aspose.Cells Cloud Web APIs support Spreadsheet/Excel to create, convert, merge, split, protect, and perform inner object operations, among other functions.  Aspose.Cells Cloud provides a complete document, supports RESTful interfaces, and code examples to help developers quickly integrate."
 weight: 10
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Aspose.Cells Cloud Document
 ---
