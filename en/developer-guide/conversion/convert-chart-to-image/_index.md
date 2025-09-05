@@ -6,7 +6,7 @@ linktitle: "Convert Chart to Image"
 type: docs
 url: /convert-chart-to-image/
 keywords: "convert chart to image, png, svg, tiff, jpg, bmp, Spreadsheet, Excel"
-description: "Convert a chart from a local spreadsheet/Excel file to an image format with the Aspose.Cells Cloud Web API."
+description: "Convert a chart from a local spreadsheet/Excel file to an image file with the Aspose.Cells Cloud Web API."
 weight: 100
 kwords: "convert chart to image, png, svg, tiff, jpg, bmp, Spreadsheet, Excel"
 ---

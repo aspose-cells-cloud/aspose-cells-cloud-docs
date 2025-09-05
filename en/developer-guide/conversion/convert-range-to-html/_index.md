@@ -1,32 +1,25 @@
 ---
-title: "Convert Range to HTML - Excel API"
+title: "Aspose.Cells Cloud Web API - Converting Spreadsheet Range to HTML"
 second_title: "Aspose.Cells Cloud"
+ArticleTitle: "Converting Spreadsheet/Excel Range to Html
 linktitle: "Convert Range to HTML"
 type: docs
 url: /convert-range-to-html/
-keywords: "Excel API, Convert Range to HTML, Spreadsheet Conversion, HTML File Generation, Cloud API, Document Conversion"
-description: "Effortlessly converts a specified range of a spreadsheet on your local drive to an HTML file using the Aspose.Cells API."
+keywords: "Convert range to html, Spreadsheet, Excel"
+description: "Convert a range from a local spreadsheet/Excel file to an html file with the Aspose.Cells Cloud Web API."
 weight: 100
-kwords: "Excel, Office Cloud, REST API, Spreadsheet, HTML, PDF, CSV, JSON, Markdown, Match Blank Cells, Data Conversion"
+kwords: "Convert range to html, Spreadsheet, Excel"
 ---
 
-# **Excel API: ConvertRangeToHtml**
+Convert a range from a local spreadsheet/Excel file to an html file with the Aspose.Cells Cloud Web API.
 
-## **Overview**
-
-This API allows you to convert a specified range of a spreadsheet from your local drive directly to an HTML file.
-
-## **Function Description**
-
-The `ConvertRangeToHtml` method reads a specified range from a spreadsheet file located on the local file system, converts it to the desired HTML format, and returns the converted result. Ensure that the source file path and target format are specified correctly. You must have the necessary permissions to read the source file and write the converted file, if applicable. The conversion process occurs entirely on the cloud server, which means there is no need for cloud storage or external downloads. If the source file is missing, inaccessible, or if an error arises during the conversion process, the API will throw an appropriate exception. Supported formats for conversion depend on the available libraries and their capabilities.
-
-## **API Endpoint**
+## **Convert Range to Html API**
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/convert/range/html
 ```
 
-## The request parameters of **convertRangeToHtml** API are
+### **Request Parameters:**
 
 | Parameter Name   | Type   | Path/Query String/HTTP Body | Description                                           |
 |------------------|--------|------------------------------|-------------------------------------------------------|
@@ -39,7 +32,7 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/range/html
 | region           | String | Query                        | The spreadsheet region setting.                        |
 | password         | String | Query                        | Password for opening the spreadsheet file.            |
 
-## **Response Structure**
+### **Response Structure**
 
 ```json
 {
@@ -47,27 +40,27 @@ File
 }
 ```
 
-## **Error Handling**
+### Error Codes
 
-- **400 Bad Request**: Invalid URL.
-- **401 Unauthorized**: Authentication failed or no credentials were provided.
-- **404 Not Found**: Source file not accessible.
-- **500 Server Error**: An anomaly occurred while obtaining conversion data for the spreadsheet.
+- **400 Bad Request**: Invalid Apose.Cells Cloud API URI.
+- **401 Unauthorized**: Invalid access token. Or invalid client id and secret.
+- **404 Not Found**: The spreadsheet file not accessible.
+- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
 
-## **Usage Scenarios**
+## Why should you use the Convert Range to Html API?
 
-## **Key Features and Benefits**
+- No need for cloud storage, reducing the burden on cloud resources.
+- Development can be quickly completed through the existing SDK.
 
-- **Cloud-Native Conversion**: Convert local files directly in the cloud, eliminating the need for cloud storage.
-- **Resource Efficiency**: No requirement to upload files to the cloud, saving valuable storage space.
-- **Streamlined Workflow**: Easily convert local spreadsheets to HTML format directly through cloud services without any intermediate steps.
+## How to Use the Convert Range to Html API with SDKs?
 
-## **OpenAPI Specification**
+### OpenAPI Specification
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertRangeToHtml) provides a publicly accessible programming interface, enabling you to carry out REST interactions directly from a web browser.
 
-## **Excel API SDK**
+### Use Aspose.Cells Cloud SDKs
 
-Utilizing an SDK is the most efficient way to accelerate development. An SDK handles low-level details, allowing you to concentrate on your project objectives. Please visit the [GitHub repository](https://github.com/aspose-cells-cloud) for a comprehensive list of Aspose.Cells Cloud SDKs.
+Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement convert spreadsheet/Excel range to html for cells with minimal code.
+Please visit the [GitHub repository](https://github.com/aspose-cells-cloud) for a comprehensive list of Aspose.Cells Cloud SDKs.
 
 The following code examples illustrate how to interact with Aspose.Cells web services using various SDKs:
