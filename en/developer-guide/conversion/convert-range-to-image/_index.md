@@ -1,5 +1,5 @@
 ---
-title: "Convert Range to Image - Excel API"
+title: "Aspose.Cells Cloud Web API - Convert Range to Image"
 second_title: "Aspose.Cells Cloud"
 linktitle: "Convert Range to Image"
 type: docs
