@@ -1,6 +1,7 @@
 ---
-title: "Rename Worksheet in Spreadsheet - Excel API"
+title: "Aspose.Cells Cloud Web API - Rename Worksheet in Spreadsheet"
 second_title: "Aspose.Cells Cloud"
+ArticleTitle: "Rename worksheet in Spreadsheet"
 linktitle: "Rename Worksheet in Spreadsheet"
 type: docs
 url: /rename-worksheet-in-spreadsheet/
@@ -10,23 +11,16 @@ weight: 100
 kwords: Excel API, Rename Worksheet, Workbook Management, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Match all blank cells in an Excel worksheet
 ---
 
-# **Excel API: Rename Worksheet in Spreadsheet**
 
-## **Overview**
+Rename worksheet name in a spreadsheet.
 
-The Web API endpoint enables users to rename a specified worksheet within a workbook. This function streamlines the process of updating worksheet names, significantly enhancing workbook organization and readability.
-
-## **Function Description**
-
-Utilizing the RenameWorksheet API allows for dynamic management of your workbook's structure. By updating worksheet names, users can maintain a clear and organized spreadsheet environment, thereby optimizing workbook efficiency.
-
-## **API Endpoint**
+## **Rename worksheet name in Spreadsheet API**
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/spreadsheet/rename/worksheet
 ```
 
-## The request parameters of **renameWorksheetInSpreadsheet** API are
+### **Request Parameters:**
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 | :- | :- | :- |:- |
@@ -38,35 +32,47 @@ PUT http://api.aspose.cloud/v4.0/cells/spreadsheet/rename/worksheet
 |region|String|Query|Spreadsheet region setting.|
 |password|String|Query|Password for opening spreadsheet file.|
 
-## **Response Structure**
+## **Response**
 
 ```json
-{
-File
-}
+[
+    {
+        "Name": "ResponseFile",
+        "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+        }
+    }
+]
 ```
 
-## Error Handling
+### Error Codes
 
-- **400 Bad Request**: Invalid URL.
-- **401 Unauthorized**: Authentication failed or no credentials provided.
-- **404 Not Found**: Source file not accessible.
-- **500 Server Error**: Anomaly encountered while obtaining data from the spreadsheet.
+- **400 Bad Request**: Invalid Apose.Cells Cloud API URI.
+- **401 Unauthorized**: Invalid access token. Or invalid client id and secret.
+- **404 Not Found**: The spreadsheet file not accessible.
+- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
 
-## Usage Scenarios
+## Where should we use the Rename Worksheet in Spreadsheet API?
 
-## Key Features and Benefits
+When you need to rename worksheet in spreadsheets, you can use this API.
 
-- **Worksheet Renaming**: Seamlessly rename a specified worksheet within a workbook.
-- **Streamlined Workbook Management**: Simplifies the updating of worksheet names, improving organization and readability.
+## Why should you use the Rename Worksheet in Spreadsheet API?
 
-## OpenAPI Specification
+- Quickly rename worksheets from spreadsheets.
+- Development can be quickly completed through the existing SDK.
+
+## How to Use the Rename Worksheet in Spreadsheet API with SDKs
+
+### OpenAPI Specification
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ManagementController/RenameWorksheetInSpreadsheet) details a publicly accessible programming interface, allowing for REST interactions directly from a web browser.
 
-## Excel API SDK
+### Use Aspose.Cells Cloud SDKs
 
-Using an SDK accelerates development. An SDK manages low-level details, enabling you to focus on your project tasks. Explore the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement rename worksheet name in spreadsheets for cells with minimal code.
+Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples illustrate how to call Aspose.Cells web services using various SDKs:
 

@@ -1,6 +1,7 @@
 ---
-title: "Save Spreadsheet as - Excel API"
+title: "Aspose.Cells Cloud Web API - Save Spreadsheet as another format"
 second_title: "Aspose.Cells Cloud"
+ArticleTitle: "Save Spreadsheet as another Format"
 linktitle: "Save Spreadsheet as"
 type: docs
 url: /save-spreadsheet-as/
@@ -10,27 +11,15 @@ weight: 100
 kwords: "Excel API, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, convert Excel files, save spreadsheet as, API functionality, cloud-based conversion"
 ---
 
-# **Excel API: SaveSpreadsheetAs**
+Save a cloud spreadsheet/Excel file in another format to cloud storage using Aspose.Cells Cloud Web API.
 
-## **Overview**
-
-This API allows users to convert a spreadsheet stored in cloud storage into a specified format seamlessly.
-
-## **Function Description**
-
-The `SaveSpreadsheetAs` method directly accesses a spreadsheet file from cloud storage, converting it into the desired output format (e.g., XLSX, PDF, CSV) while ensuring that no local downloads are necessary.
-It is crucial to have the cloud storage configuration (including access credentials and file path) correctly set up.
-The conversion is performed entirely within the cloud environment, minimizing data transfer and enhancing security by keeping sensitive information within the cloud infrastructure.
-Should the specified source file be unavailable or if an error occurs during the conversion, an appropriate exception will be thrown.
-Supported output formats are contingent on the capabilities of the underlying conversion service.
-
-## **API Endpoint**
+## **Save Spreadsheet as API**
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/{name}/saveas
 ```
 
-## The request parameters of **saveSpreadsheetAs** API are
+### **Request Parameters:**
 
 | Parameter Name | Type | Path/Query String/HTTP Body | Description |
 | :- | :- | :- |:- |
@@ -45,7 +34,7 @@ PUT http://api.aspose.cloud/v4.0/cells/{name}/saveas
 | region | String | Query | The spreadsheet region setting. |
 | password | String | Query | The password for opening the spreadsheet file. |
 
-## **Response Structure**
+## **Response**
 
 ```json
 {
@@ -77,30 +66,30 @@ PUT http://api.aspose.cloud/v4.0/cells/{name}/saveas
 }
 ```
 
-## Error Handling
+### Error Codes
 
-- **400 Bad Request**: Invalid URL.
-- **401 Unauthorized**: Authentication failed or no credentials provided.
-- **404 Not Found**: Source file not accessible.
-- **500 Server Error**: An anomaly occurred while obtaining conversion data.
+- **400 Bad Request**: Invalid Apose.Cells Cloud API URI.
+- **401 Unauthorized**: Invalid access token. Or invalid client id and secret.
+- **404 Not Found**: The spreadsheet file not accessible.
+- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
 
-## Usage Scenarios
+## Why should you use the Save Spread API?
 
-## Key Features and Benefits
+- You can convert cloud files to different formats anytime and anywhere.
+- Development can be quickly completed through the existing SDK.
 
-- **Cloud-Based Conversion**: Access and convert spreadsheet files in cloud storage to desired formats (e.g., XLSX, PDF, CSV) without local downloads.
-- **Efficient Data Handling**: The API minimizes data transfer by performing conversions remotely and enhances security by keeping sensitive data within the cloud infrastructure.
-- **Convenience**: Simplifies the conversion process by managing everything in the cloud.
+## How to Use the Convert Table to Json API with SDKs?
 
-## OpenAPI Specification
+### OpenAPI Specification
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ConversionController/SaveSpreadsheetAs) defines a publicly accessible programming interface, allowing you to carry out REST interactions directly from a web browser.
 
-## Excel API SDK
+### Use Aspose.Cells Cloud SDKs
 
-Using an SDK is the best way to expedite your development process. SDKs handle low-level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement save cloud spreadsheet/Excel as another format file for cells with minimal code.
+Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples showcase how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 
 {{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 {{<tab tabNum="1" >}}

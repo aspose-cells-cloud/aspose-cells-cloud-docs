@@ -1,7 +1,7 @@
 ---
-title: "Aspose.Cells Cloud Web API - Converting Spreadsheet/Excel Chart to Image"
+title: "Aspose.Cells Cloud Web API - Converting Spreadsheet Chart to Image"
 second_title: "Aspose.Cells Cloud"
-ArticleTitle: "Converting Spreadsheet/Excel Chart to Image
+ArticleTitle: "Converting Spreadsheet Chart to Image
 linktitle: "Convert Chart to Image"
 type: docs
 url: /convert-chart-to-image/
@@ -38,9 +38,16 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/chart/image
 ## **Response**
 
 ```json
-{
-File
-}
+[
+    {
+        "Name": "ResponseFile",
+        "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+        }
+    }
+]
 ```
 
 ### Error Codes

@@ -1,6 +1,7 @@
 ---
-title: "Merge Spreadsheets in Remote Folder - Excel API"
+title: "Aspose.Cells Cloud Web API - Merge Spreadsheets in Remote Folder"
 second_title: "Aspose.Cells Cloud"
+ArticleTitle: "Merge Spreadsheets into a Single File in Cloud Storage Folder"
 linktitle: "Merge Spreadsheets in Remote Folder"
 type: docs
 url: /merge-spreadsheets-in-remote-folder/
@@ -10,28 +11,15 @@ weight: 100
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Merge spreadsheets, Cloud processing, Remote file handling
 ---
 
-# **Excel API: MergeSpreadsheetsInRemoteFolder**
+Merge multiple spreadsheet files which stored in a cloud storage folder, while supporting output in 30+ file formats.
 
-## **Overview**
-
-This API allows you to merge spreadsheet files located in a cloud storage folder into a specified output format file, such as XLSX, CSV, or PDF.
-
-## **Function Description**
-
-The `MergeSpreadsheetsInRemoteFolder` method combines multiple spreadsheet files stored in cloud storage into a single output file in the desired format.
-This operation is executed remotely, eliminating the need to download files to your local machine.
-Ensure that valid cloud storage credentials and accessible file paths or identifiers are provided for all input files.
-The merging process is performed entirely within the cloud environment, which minimizes data transfer and boosts performance.
-In cases where source files cannot be accessed or if an error occurs during the merge or conversion process, an appropriate exception will be raised.
-The supported output formats are dependent on the capabilities of the cloud processing service used.
-
-## **API Endpoint**
+## **Merge Spreadsheets in Remote Folder API**
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/merge/remote-spreadsheets
 ```
 
-## The request parameters of **MergeSpreadsheetsInRemoteFolder** API are
+### **Request Parameters:**
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 | :- | :- | :- |:- |
@@ -46,35 +34,47 @@ PUT http://api.aspose.cloud/v4.0/cells/merge/remote-spreadsheets
 | region | String | Query | Sets the spreadsheet region. |
 | password | String | Query | The password for opening the spreadsheet file. |
 
-## **Response Structure**
+## **Response**
 
 ```json
-{
-File
-}
+[
+    {
+        "Name": "ResponseFile",
+        "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+        }
+    }
+]
 ```
 
-## Error Handling
+### Error Codes
 
-- **400 Bad Request**: Invalid URL.
-- **401 Unauthorized**: Authentication has failed, or no credentials were provided.
-- **404 Not Found**: Source file not accessible.
-- **500 Server Error**: An anomaly occurred while obtaining data from the spreadsheet.
+- **400 Bad Request**: Invalid Apose.Cells Cloud API URI.
+- **401 Unauthorized**: Invalid access token. Or invalid client id and secret.
+- **404 Not Found**: The spreadsheet file not accessible.
+- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
 
-## Usage Scenarios
+## Where should we use the Merge Spreadsheet in remote folder API?
 
-## Key Features and Benefits
+When you need to merge multiple data files together, you can use this API.
 
-- **Cloud Storage Integration**: Efficiently merges multiple spreadsheet files stored in cloud storage into a single output file in formats like XLSX, CSV, or PDF.
-- **Remote Processing**: Conducts the merging operation entirely within the cloud, negating the need to download files locally.
-- **Efficient Data Handling**: Enhances performance and reduces data transfer by processing files in the cloud environment.
+## Why should you use the Merge Spreadsheet in remote folder API?
 
-## OpenAPI Specification
+- Cloud storage files do not need to be downloaded, and can be merged directly in the cloud.
+- Batch merge multiple spreadsheet files together, Support matching expression.
+- Development can be quickly completed through the existing SDK.
+
+## How to Use the Merge Spreadsheet in remote folder API with SDKs
+
+### OpenAPI Specification
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/DataProcessingController/MergeSpreadsheetsInRemoteFolder) provides a publicly accessible programming interface allowing REST interactions directly from a web browser.
 
-## Excel API SDK
+### Use Aspose.Cells Cloud SDKs
 
-Utilizing an SDK is the optimal method to expedite development. An SDK manages low-level details, allowing you to concentrate on project tasks. Visit the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement merge spreadsheets for cells with minimal code.
+Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples illustrate how to interact with Aspose.Cells web services using various SDKs:

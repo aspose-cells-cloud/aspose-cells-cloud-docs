@@ -39,37 +39,47 @@ PUT http://api.aspose.cloud/v4.0/cells/delete/blank-worksheets
 | region | String | Query | The spreadsheet region setting. |
 | password | String | Query | The password for opening the spreadsheet file. |
 
-## **Response Structure**
+## **Response**
 
 ```json
-{
-  "File": "path/to/cleaned/spreadsheet"
-}
+[
+    {
+        "Name": "ResponseFile",
+        "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+        }
+    }
+]
 ```
 
-## Error Handling
+### Error Codes
 
-- **400 Bad Request**: Invalid URL.
-- **401 Unauthorized**: Authentication has failed, or no credentials were provided.
-- **404 Not Found**: Source file not accessible.
-- **500 Server Error**: An anomaly was encountered while processing the spreadsheet.
+- **400 Bad Request**: Invalid Apose.Cells Cloud API URI.
+- **401 Unauthorized**: Invalid access token. Or invalid client id and secret.
+- **404 Not Found**: The spreadsheet file not accessible.
+- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
 
-## Usage Scenarios
+## Where should we use the Delete Spreadsheet Blank Worksheet API?
 
-## Key Features and Benefits
+When you need to transform data, you can use this API.
 
-- **Blank Worksheet Identification**: This function identifies and deletes worksheets that do not contain any data or objects, ensuring a clean and manageable workbook.
-- **Workbook Optimization**: By removing empty worksheets, it optimizes the workbook, reducing file size and improving performance.
-- **Efficiency**: Enhances the organization and manageability of spreadsheets by eliminating unnecessary sheets.
-- **Usage Scenarios**: Ideal for cleaning up workbooks where unused worksheets may clutter the file and affect usability.
+## Why should you use the Delete Spreadsheet Blank Worksheet API?
 
-## OpenAPI Specification
+- Quickly delete all blank rows that do not contain any data or other objects from an Excel spreadsheet.
+- Development can be quickly completed through the existing SDK.
+
+## How to Use the Delete Spreadsheet Blank Worksheet API with SDKs
+
+### OpenAPI Specification
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/TransformController/DeleteSpreadsheetBlankWorksheets) defines a publicly accessible programming interface, allowing you to carry out REST interactions directly from a web browser.
 
-## Excel API SDK
+### Use Aspose.Cells Cloud SDKs
 
-Using an SDK is the best way to speed up development. An SDK handles low-level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement delete spreadsheets blank worksheets for cells with minimal code.
+Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 

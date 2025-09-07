@@ -1,5 +1,5 @@
 ---
-title: "Spreadsheet Data Processing: Merge and Split"
+title: "Aspose.Cells Cloud Spreadsheet Data Processing - Merge and Split"
 second_title: "Aspose.Cells Cloud"
 linktitle: "Data Processing"
 type: docs

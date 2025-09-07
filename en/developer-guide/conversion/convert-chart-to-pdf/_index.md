@@ -1,12 +1,12 @@
 ---
-title: "Aspose.Cells Cloud Web API - Converting Spreadsheet/Excel Chart to Pdf"
+title: "Aspose.Cells Cloud Web API - Converting Spreadsheet Chart to Pdf"
 second_title: "Aspose.Cells Cloud"
-ArticleTitle: Converting Spreadsheet/Excel Chart to Image
+ArticleTitle: Converting Spreadsheet Chart to Image
 linktitle: "Convert Chart to PDF"
 type: docs
 url: /convert-chart-to-pdf/
-keywords: "chart to pdf, convert spreadsheet to pdf, Aspose API, cloud conversion, Excel to PDF"
-description: "This API converts charts from spreadsheets located on a local drive to PDF format seamlessly."
+keywords: "convert chart to pdf, convert spreadsheet to pdf, Aspose API, cloud conversion, Excel to PDF"
+description: "This API converts charts from spreadsheets located on a local drive to PDF file seamlessly."
 weight: 100
 kwords: "Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Convert Chart to PDF, Cloud-Native Conversion"
 ---
@@ -35,9 +35,16 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/chart/pdf
 ## **Response**
 
 ```json
-{
-File
-}
+[
+    {
+        "Name": "ResponseFile",
+        "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+        }
+    }
+]
 ```
 
 ### Error Codes

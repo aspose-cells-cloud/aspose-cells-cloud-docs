@@ -1,32 +1,25 @@
 ---
-title: "Convert Table to HTML - Excel API"
+title: "Aspose.Cells Cloud Web API - Convert Spreadsheet Table to HTML"
 second_title: "Aspose.Cells Cloud"
+ArticleTitle: "Convert Spreadsheet Table to HTML"
 linktitle: "Convert Table to HTML"
 type: docs
 url: /convert-table-to-html/
-keywords: "Excel to HTML, Spreadsheet Conversion, HTML Generation, Cloud API, REST API, Convert Excel to HTML, Table to HTML, Document Conversion, Cloud Services"
+keywords: "Excel Table to HTML, Spreadsheet Conversion, HTML Generation, Cloud API, REST API, Convert Excel to HTML, Table to HTML, Document Conversion, Cloud Services"
 description: "Easily convert tables from local spreadsheet files into HTML format using our cloud-based API."
 weight: 100
 kwords: "Excel, Office Cloud, REST API, Spreadsheet, HTML, PDF, CSV, JSON, Markdown, Match blank cells in Excel"
 ---
 
-# **Excel API: ConvertTableToHtml**
+Convert a local spreadsheet/Excel table to a html file with the Aspose.Cells Cloud Web API.
 
-## **Overview**
-
-This API enables the conversion of tables from spreadsheet files on your local drive into HTML format.
-
-## **Function Description**
-
-The `ConvertTableToHtml` method reads a specified spreadsheet file from the local file system, converts its table into the desired HTML file format, and returns the converted result. Ensure that the source file path and target format are specified correctly. Proper permissions must be granted to read the source file and write the converted file, if applicable. The entire conversion process occurs securely on our cloud server, eliminating the need for any cloud storage or external downloads. If the source file does not exist, is inaccessible, or if an error occurs during the conversion process, an appropriate exception will be thrown. Supported formats for conversion are contingent on the capabilities of the libraries in use.
-
-## **API Endpoint**
+## **Convert Table to Html API**
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/convert/table/html
 ```
 
-## The request parameters of **convertTableToHtml** API are
+### **Request Parameters:**
 
 | Parameter Name | Type | Path/Query String/HTTP Body | Description |
 | :- | :- | :- | :- |
@@ -39,35 +32,42 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/table/html
 | region | String | Query | Define the spreadsheet region settings. |
 | password | String | Query | The password required to access the spreadsheet file. |
 
-## **Response Structure**
+### **Response**
 
 ```json
-{
-File
-}
+[
+    {
+        "Name": "ResponseFile",
+        "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+        }
+    }
+]
 ```
 
-## Error Handling
+### Error Codes
 
-- **400 Bad Request**: The request URL is invalid.
-- **401 Unauthorized**: Authentication has failed, or no credentials were provided.
-- **404 Not Found**: The source file is not accessible.
-- **500 Server Error**: An anomaly has occurred while obtaining conversion data from the spreadsheet.
+- **400 Bad Request**: Invalid Apose.Cells Cloud API URI.
+- **401 Unauthorized**: Invalid access token. Or invalid client id and secret.
+- **404 Not Found**: The spreadsheet file not accessible.
+- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
 
-## Usage Scenarios
+## Why should you use the Convert Table to Pdf API?
 
-## Key Features and Benefits
+- No need for cloud storage, reducing the burden on cloud resources.
+- Development can be quickly completed through the existing SDK.
 
-- **Cloud-Native Conversion**: Convert local files directly in the cloud, removing the necessity to store them there.
-- **Reduced Cloud Resource Burden**: By converting files without uploading them, you save on cloud storage space.
-- **Simplified Workflow**: Seamlessly convert local spreadsheets to HTML format via our cloud services, avoiding unnecessary intermediate steps.
+## How to Use the Convert Table to Html API with SDKs?
 
-## OpenAPI Specification
+### OpenAPI Specification
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertTableToHtml) outlines a publicly accessible programming interface, allowing you to perform REST interactions directly from your web browser.
 
-## Excel API SDK
+### Use Aspose.Cells Cloud SDKs
 
-Utilizing an SDK is the most efficient way to expedite development. An SDK manages low-level details, allowing you to concentrate on your project tasks. Please visit the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of available Aspose.Cells Cloud SDKs.
+Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement convert spreadsheet/Excel table to html for cells with minimal code.
+Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples illustrate how to interact with Aspose.Cells web services using various SDKs:

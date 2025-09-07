@@ -1,11 +1,11 @@
 ---
-title: "Aspose.Cells Cloud Web API - Converting Spreadsheet/Excel Range to CSV"
+title: "Aspose.Cells Cloud Web API - Converting Spreadsheet Range to CSV"
 second_title: "Aspose.Cells Cloud"
-ArticleTitle: Converting Spreadsheet/Excel Range to CSV
+ArticleTitle: Converting Spreadsheet Range to CSV
 linktitle: "Convert Range to CSV"
 type: docs
 url: /convert-range-to-csv/
-keywords: "range to csv, convert spreadsheet to csv, Aspose API, cloud conversion, Excel to csv"
+keywords: "Convert range to csv, convert spreadsheet to csv, Aspose API, cloud conversion, Excel to csv"
 description: "Convert a specified range from a local spreadsheet file to a CSV format using the Excel API, ensuring seamless cloud execution."
 weight: 100
 kwords: range to csv, convert spreadsheet to csv, Aspose API, cloud conversion, Excel to csv
@@ -13,17 +13,13 @@ kwords: range to csv, convert spreadsheet to csv, Aspose API, cloud conversion, 
 
 Convert a range from a local spreadsheet/Excel file to a [CSV](https://docs.fileformat.com/spreadsheet/csv/) file with the Aspose.Cells Cloud Web API.
 
-## **Function Description**
-
-The `ConvertRangeToCsv` method reads a spreadsheet file from the local file system, converts the specified range to a CSV file, and returns the conversion result. It's crucial to specify the source file path and target format correctly. Ensure that the necessary permissions are in place to access the source file and to write the converted file if applicable. The conversion process takes place entirely on the cloud server, removing the need for cloud storage or external downloads. If the source file is non-existent, inaccessible, or if any error occurs during the conversion process, an appropriate exception will be triggered. Supported formats for conversion are contingent on the available libraries and their capabilities.
-
-## **API Endpoint**
+## **Convert Range to CSV API**
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/convert/range/csv
 ```
 
-## The request parameters of **convertRangeToCsv** API are
+### **Request Parameters:**
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 | :- | :- | :- |:- |
@@ -39,32 +35,39 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/range/csv
 ## **Response Structure**
 
 ```json
-{
-File
-}
+[
+    {
+        "Name": "ResponseFile",
+        "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+        }
+    }
+]
 ```
 
-## Error Handling
+### Error Codes
 
-- **400 Bad Request**: Invalid URL provided.
-- **401 Unauthorized**: Authentication failed or no credentials were provided.
-- **404 Not Found**: The source file is not accessible.
-- **500 Server Error**: An anomaly occurred when obtaining conversion data from the spreadsheet.
+- **400 Bad Request**: Invalid Apose.Cells Cloud API URI.
+- **401 Unauthorized**: Invalid access token. Or invalid client id and secret.
+- **404 Not Found**: The spreadsheet file not accessible.
+- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
 
-## Usage Scenarios
+## Why should you use the Convert Chart to Pdf API?
 
-## Key Features and Benefits
+- No need for cloud storage, reducing the burden on cloud resources.
+- Development can be quickly completed through the existing SDK.
 
-- **Cloud-Native Conversion**: Effortlessly convert local files directly in the cloud, negating the need for file storage.
-- **Reduced Cloud Resource Burden**: No uploads required, conserving cloud storage capacity.
-- **Simplified Workflow**: Directly convert local spreadsheets to CSV format using cloud services without intermediate steps.
+## How to Use the Convert Chart to Pdf API with SDKs?
 
-## OpenAPI Specification
+### OpenAPI Specification
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertRangeToCsv) outlines a publicly accessible API, enabling REST interactions directly from a web browser.
 
-## Excel API SDK
+## Use Aspose.Cells Cloud SDKs
 
-Utilizing an SDK is the optimal approach to expedite development. SDKs manage low-level details, allowing you to concentrate on your project tasks. Explore the complete list of Aspose.Cells Cloud SDKs in our [GitHub repository](https://github.com/aspose-cells-cloud).
+Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement convert spreadsheet/Excel range to csv for cells with minimal code.
+Explore the complete list of Aspose.Cells Cloud SDKs in our [GitHub repository](https://github.com/aspose-cells-cloud).
 
 The following code examples illustrate how to call Aspose.Cells web services using various SDKs:

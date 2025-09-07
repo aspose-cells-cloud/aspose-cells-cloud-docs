@@ -1,7 +1,7 @@
 ---
 title: "Aspose.Cells Cloud Web API - Converting Spreadsheet Range to HTML"
 second_title: "Aspose.Cells Cloud"
-ArticleTitle: "Converting Spreadsheet/Excel Range to Html
+ArticleTitle: "Converting Spreadsheet Range to Html
 linktitle: "Convert Range to HTML"
 type: docs
 url: /convert-range-to-html/
@@ -11,7 +11,7 @@ weight: 100
 kwords: "Convert range to html, Spreadsheet, Excel"
 ---
 
-Convert a range from a local spreadsheet/Excel file to an html file with the Aspose.Cells Cloud Web API.
+Convert a range from a local spreadsheet/Excel file to a html file with the Aspose.Cells Cloud Web API.
 
 ## **Convert Range to Html API**
 
@@ -35,9 +35,16 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/range/html
 ### **Response Structure**
 
 ```json
-{
-File
-}
+[
+    {
+        "Name": "ResponseFile",
+        "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+        }
+    }
+]
 ```
 
 ### Error Codes

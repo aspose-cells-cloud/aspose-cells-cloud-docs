@@ -1,7 +1,8 @@
 ---
-title: "Convert Worksheet to PDF - Excel API"
+title: "Aspose.Cells Cloud Web API - Convert Spreadsheet Worksheet to Pdf"
 second_title: "Aspose.Cells Cloud"
-linktitle: "Convert Worksheet to PDF"
+ArticleTitle: "Convert Spreadsheet Worksheet to Pdf"
+linktitle: "Convert Worksheet to Pdf"
 type: docs
 url: /convert-worksheet-to-pdf/
 keywords: "worksheet to pdf, Excel PDF conversion, REST API, cloud-based conversion, spreadsheet to PDF"
@@ -10,28 +11,15 @@ weight: 100
 kwords: "Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, convert worksheet to PDF, cloud conversion, local file conversion"
 ---
 
-# **Excel API: ConvertWorksheetToPdf**
+Convert a local spreadsheet/Excel worksheet to a pdf file with the Aspose.Cells Cloud Web API.
 
-## **Overview**
-
-This API allows you to convert a worksheet from a local spreadsheet file into a PDF format seamlessly.
-
-## **Function Description**
-
-The `ConvertWorksheetToPdf` method reads a spreadsheet file from your local file system, converts its worksheet into a specified PDF format, and returns the converted result.
-Ensure that the source file path and target format are specified accurately.
-Necessary permissions must be in place to read the source file and write the converted file.
-The conversion process is handled entirely on the cloud server, negating the need for cloud storage or external downloads.
-In cases where the source file is missing, inaccessible, or if an error occurs during conversion, an appropriate exception will be thrown.
-Supported formats for conversion are determined by the capabilities of available libraries.
-
-## **API Endpoint**
+## **Convert Worksheet to Pdf API**
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/convert/worksheet/pdf
 ```
 
-## The request parameters of **convertWorksheetToPdf** API are
+### **Request Parameters:**
 
 | Parameter Name        | Type  | Path/Query String/HTTPBody | Description                              |
 |-----------------------|-------|-----------------------------|------------------------------------------|
@@ -43,36 +31,43 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/worksheet/pdf
 | region                | String| Query                      | Define the spreadsheet region setting.   |
 | password              | String| Query                      | The password required to open the spreadsheet file.|
 
-## **Response Structure**
+## **Response**
 
 ```json
-{
-File
-}
+[
+    {
+        "Name": "ResponseFile",
+        "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+        }
+    }
+]
 ```
 
-## Error Handling
+### Error Codes
 
-- **400 Bad Request**: Invalid URL.
-- **401 Unauthorized**: Authentication has failed, or no credentials were provided.
-- **404 Not Found**: The source file is not accessible.
-- **500 Server Error**: An anomaly occurred while obtaining conversion data for the spreadsheet.
+- **400 Bad Request**: Invalid Apose.Cells Cloud API URI.
+- **401 Unauthorized**: Invalid access token. Or invalid client id and secret.
+- **404 Not Found**: The spreadsheet file not accessible.
+- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
 
-## Usage Scenarios
+## Why should you use the Convert Table to Json API?
 
-## Key Features and Benefits
+- No need for cloud storage, reducing the burden on cloud resources.
+- Development can be quickly completed through the existing SDK.
 
-- **Cloud-Native Conversion**: Convert local files directly in the cloud, without the need to store them there.
-- **Reduced Cloud Resource Burden**: No uploads are required, saving valuable cloud storage space.
-- **Simplified Workflow**: Convert local spreadsheets to PDF format directly through cloud services, streamlining the process.
+## How to Use the Convert Table to Json API with SDKs?
 
-## OpenAPI Specification
+### OpenAPI Specification
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertWorksheetToPdf) provides a publicly accessible programming interface and enables REST interactions directly from a web browser.
 
-## Excel API SDK
+### Use Aspose.Cells Cloud SDKs
 
-Utilizing an SDK is the optimal approach to accelerate development. An SDK manages low-level details, allowing you to concentrate on your project tasks. Visit the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement convert spreadsheet/Excel worksheet to a image for cells with minimal code.
+Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples illustrate how to call Aspose.Cells web services using various SDKs:
 

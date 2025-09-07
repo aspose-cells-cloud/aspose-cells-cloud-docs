@@ -1,6 +1,7 @@
 ---
-title: "Add Worksheet to Spreadsheet - Excel API"
+title: "Aspose.Cells Cloud Webb API - Add Worksheet to Spreadsheet"
 second_title: "Aspose.Cells Cloud"
+ArticleTitle: "Add a worksheet to Spreadsheet"
 linktitle: "Add Worksheet to Spreadsheet"
 type: docs
 url: /add-worksheet-to-spreadsheet/
@@ -10,23 +11,15 @@ weight: 100
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Manage Excel Worksheets, Dynamic Spreadsheet Creation
 ---
 
-# **Excel API: Add Worksheet to Spreadsheet**
+Add a worksheet to the spreadsheet, specifying the type and location of the worksheet.
 
-## **Overview**
-
-The Excel API enables developers to efficiently add a new worksheet to a workbook, specifying the worksheet's type, position, and name. This functionality enhances workbook management by providing greater flexibility and control over the worksheet addition process.
-
-## **Function Description**
-
-By utilizing the AddWorksheet API, users can dynamically manage their workbook structure, adding new worksheets with specific types, positions, and names. This capability significantly enhances productivity and control over spreadsheet management tasks.
-
-## **API Endpoint**
+## **Add Worksheet to Spreadsheet API**
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/spreadsheet/add/worksheet
 ```
 
-## The request parameters of **addWorksheetToSpreadsheet** API are
+### **Request Parameters:**
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 | :- | :- | :- |:- |
@@ -39,36 +32,47 @@ PUT http://api.aspose.cloud/v4.0/cells/spreadsheet/add/worksheet
 |region|String|Query|The spreadsheet region setting.|
 |password|String|Query|The password for opening the spreadsheet file.|
 
-## **Response Structure**
+## **Response**
 
 ```json
-{
-File
-}
+[
+    {
+        "Name": "ResponseFile",
+        "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+        }
+    }
+]
 ```
 
-## **Error Handling**
+### Error Codes
 
-- **400 Bad Request**: Invalid URL.
-- **401 Unauthorized**: Authentication has failed, or no credentials were provided.
-- **404 Not Found**: Source file not accessible.
-- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining data.
+- **400 Bad Request**: Invalid Apose.Cells Cloud API URI.
+- **401 Unauthorized**: Invalid access token. Or invalid client id and secret.
+- **404 Not Found**: The spreadsheet file not accessible.
+- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
 
-## **Usage Scenarios**
+## Where should we use the Add Worksheet to Spreadsheet API?
 
-### Key Features and Benefits
+When you need to add a worksheet for a spreadsheet, you can use this API.
 
-- **Dynamic Spreadsheet Creation**: Enables users to create new worksheets with specified attributes seamlessly.
-- **Template Support**: Users can provide a template for initializing spreadsheets with predefined content or formatting, enhancing usability.
-- **Enhanced Workbook Management**: Offers detailed control over the addition of new worksheets, significantly improving flexibility in workbook structure management.
+## Why should you use the Add worksheet to Spreadsheet API?
 
-## **OpenAPI Specification**
+- Add a worksheet to the spreadsheet, specifying the type and location of the worksheet.
+- Development can be quickly completed through the existing SDK.
+
+## How to Use the Add Worksheet to Spreadsheet API with SDKs
+
+### OpenAPI Specification
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ManagementController/AddWorksheetToSpreadsheet) defines a publicly accessible programming interface and allows you to carry out REST interactions directly from a web browser.
 
-## **Excel API SDK**
+### Use Aspose.Cells Cloud SDKs
 
-Using an SDK is the best way to accelerate development. An SDK handles low-level details, allowing you to focus on project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement add a worksheet to spreadsheets for cells with minimal code.
+Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make API calls to Aspose.Cells web services using various SDKs:
 

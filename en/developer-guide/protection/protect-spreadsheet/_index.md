@@ -1,32 +1,25 @@
 ---
-title: "Protect Spreadsheet - Excel API"
+title: "Aspose.Cells Cloud Web API - Protect Spreadsheet"
 second_title: "Developer Guide for Excel Protection"
+ArticleTitle: "Protect the Spreadsheet with password"
 linktitle: "Protect Spreadsheet"
 type: docs
 url: /protect-spreadsheet/
-keywords: "Excel API, password protection, encrypt spreadsheet, dual-layer security, modify password, REST API, data encryption"
+keywords: "Aspose.Cells Cloud Web API, password protection, encrypt spreadsheet, modify password"
 description: "This API applies dual-layer password protection to Excel spreadsheets, ensuring secure access and modification through encryption."
 weight: 100
 kwords: "Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, dual-layer password protection, encrypt spreadsheet, secure Excel"
 ---
 
-# **Protect Spreadsheet API**
+Applies password protection to Excel spreadsheets, supporting both open and modify passwords.
 
-## **Overview**
-
-This API applies dual-layer password protection to Excel spreadsheets, supporting both open and modify passwords with encryption to enhance data security.
-
-## **Function Description**
-
-The Protect Spreadsheet API applies dual-layer password security to Excel files, allowing users to set passwords for opening and modifying spreadsheets. Passwords are encrypted to ensure maximum protection.
-
-## **API Endpoint**
+## **Protect Spreadsheet API**
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/protection/spreadsheet
 ```
 
-## The request parameters of **protectSpreadsheet** API are
+### **Request Parameters:**
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 | :- | :- | :- |:- |
@@ -37,36 +30,47 @@ PUT http://api.aspose.cloud/v4.0/cells/protection/spreadsheet
 |outStorageName|String|Query|Name of the storage for output files.|
 |region|String|Query|Defines the region settings for the spreadsheet.|
 
-## **Response Structure**
+## **Response**
 
 ```json
-{
-File
-}
+[
+    {
+        "Name": "ResponseFile",
+        "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+        }
+    }
+]
 ```
 
-## Error Handling
+### Error Codes
 
-- **400 Bad Request**: Invalid URL or parameters.
-- **401 Unauthorized**: Authentication failed or credentials not provided.
-- **404 Not Found**: The source file cannot be accessed.
-- **500 Server Error**: An internal error occurred while processing the spreadsheet.
+- **400 Bad Request**: Invalid Apose.Cells Cloud API URI.
+- **401 Unauthorized**: Invalid access token. Or invalid client id and secret.
+- **404 Not Found**: The spreadsheet file not accessible.
+- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
 
-## Usage Scenarios
+## Where should we use the Protect Spreadsheet API?
 
-## Key Features and Benefits
+When you need to lock spreadsheet with password, you can use this API.
 
-- **Open Password**: Limits access to authorized users only, ensuring that sensitive data remains secure.
-- **Modify Password**: Prevents unauthorized changes, allowing users to view the spreadsheet without editing rights.
-- **Encryption**: Provides an additional security layer by encrypting passwords to protect sensitive information effectively.
+## Why should you use the Protect Spreadsheet API?
 
-## OpenAPI Specification
+- Quickly lock spreadsheets with password.
+- Development can be quickly completed through the existing SDK.
+
+## How to Use the Protect Spreadsheet API with SDKs
+
+### OpenAPI Specification
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ProtectionController/ProtectSpreadsheet) provides a detailed programming interface for executing REST interactions directly from a web browser.
 
-## Excel API SDK
+### Use Aspose.Cells Cloud SDKs
 
-Utilizing an SDK streamlines the development process by managing low-level details, allowing developers to focus on their projects. Visit the [GitHub repository](https://github.com/aspose-cells-cloud) for a comprehensive list of Aspose.Cells Cloud SDKs.
+Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement protect spreadsheets for cells with minimal code.
+Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples illustrate how to interact with Aspose.Cells web services using various SDKs:
 

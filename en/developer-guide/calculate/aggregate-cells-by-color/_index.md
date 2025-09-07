@@ -1,5 +1,5 @@
 ---
-title: "An API of Cells Cloud for Sum, Count, Average Value, etc by color in Spreadsheet/Excel"
+title: "Aspose.Cells Cloud Web API - Sum, Count, Average Value, etc by color in Spreadsheet/Excel"
 second_title: "Aspose.Cells Cloud"
 ArticleTitle: "Sum, Count, Average Value, etc by color in Spreadsheet/Excel"
 LinkTitle: "Aggregate Cells by Color"

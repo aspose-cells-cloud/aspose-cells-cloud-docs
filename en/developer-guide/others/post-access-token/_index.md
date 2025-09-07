@@ -1,6 +1,7 @@
 ---
-title: "Post Access Token - Excel API"
+title: "Aspose.Cells Cloud Web API - Post Access Token"
 second_title: "Aspose.Cells Cloud"
+ArticleTitle: "Get Access Token with Client ID and Secret"
 linktitle: "Post Access Token"
 type: docs
 url: /post-access-token/
@@ -10,48 +11,44 @@ weight: 100
 kwords: "Excel, Office Cloud, REST API, Authentication, Token Management, Middleware Integration, Secure API, Aspose Cloud"
 ---
 
-# **Excel API: Post Access Token**
+Retrieve an Access Token using the Cells Cloud Get Token API with Client ID and Secret.
 
-Retrieve an Access Token using the Cells Cloud Get Token API, which acts as a proxy service forwarding user requests to the Aspose Cloud authentication server, returning the resulting access token to the client securely.
-
-## **Interface Details**
-
-### **Endpoint**
+## **Post Access Token API**
 
 ```
 POST http://api.aspose.cloud/v4.0/cells/connect/token
 ```
 
-### **Function Description**
-
-- This API serves as an intermediary proxy, transparently forwarding client authentication requests to the Aspose Cloud authorization service.
-- Upon successful authentication, the access token issued by Aspose Cloud is returned intact to the caller.
-- **Use Cases**: Middleware systems requiring integration with Aspose Cloud services that delegate OAuth or similar authentication processes.
-- **Considerations**:
-  - Ensure valid Aspose Cloud API credentials are registered before invocation.
-  - Should be invoked over HTTPS secure channels to prevent token leakage.
-  - Securely store returned access tokens and implement proper expiration management.
-  - Handle potential error responses (e.g., 401 Unauthorized, 503 Service Unavailable).
-
-### The request parameters of **postAccessToken** API are
+### **Request Parameters:**
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 | :- | :- | :- |:- |
+| Client ID | string | query | Client ID |
+| Client Secret | string | query | Client Secret |
 
-### **Response Description**
+### **Response**
 
 ```json
-{
-String
-}
+ [
+        {
+          "Name": "String",
+          "DataType": {
+            "Identifier": "String",
+            "Name": "string"
+          }
+        }
+  ]
 ```
 
-## OpenAPI Specification
+## How to Use the Get public key API with SDKs
+
+### OpenAPI Specification
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/CellsAuthorityController/PostAccessToken) defines a publicly accessible programming interface, allowing you to carry out REST interactions directly from a web browser.
 
-## Excel API SDK
+### Use Aspose.Cells Cloud SDKs
 
-Using an SDK is the best way to speed up development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement get access token for cells with minimal code.
+Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.nt. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:

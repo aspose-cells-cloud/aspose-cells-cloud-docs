@@ -1,6 +1,7 @@
 ---
-title: "Unprotect Spreadsheet - Excel API"
+title: "Aspose.Cells Cloud Web API - Unprotect Spreadsheet with password"
 second_title: "Aspose.Cells Cloud"
+ArticleTitle: "Unprotect the Spreadsheet with password"
 linktitle: "Unprotect Spreadsheet"
 type: docs
 url: /unprotect-spreadsheet/
@@ -10,23 +11,16 @@ weight: 100
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Match all blank cells in an Excel worksheet
 ---
 
-# **Excel API : Unprotect Spreadsheet**
 
-## **Overview**
+Applies unprotect Excel spreadsheets with password , supporting both open and modify passwords.
 
-This API efficiently removes dual-layer password protection from Excel spreadsheets, allowing for the decryption of both open and modify passwords.
-
-## **Function Description**
-
-This WEB API allows you to remove dual-layer password protection from Excel spreadsheets, supporting both open and modify passwords. Passwords can be encrypted to enhance security.
-
-## **API Endpoint**
+## **Unprotect Spreadsheet API**
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/unprotection/spreadsheet
 ```
 
-## The request parameters of **unprotectSpreadsheet** API are
+### **Request Parameters:**
 
 | Parameter Name | Type | Path/Query String/HTTP Body | Description |
 | :- | :- | :- |:- |
@@ -37,34 +31,47 @@ PUT http://api.aspose.cloud/v4.0/cells/unprotection/spreadsheet
 |outStorageName|String|Query|Specifies the output file storage name.|
 |region|String|Query|Defines the spreadsheet region settings.|
 
-## **Response Structure**
+### **Response**
 
 ```json
-{
-File
-}
+[
+    {
+        "Name": "ResponseFile",
+        "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+        }
+    }
+]
 ```
 
-## Error Handling
+### Error Codes
 
-- **400 Bad Request**: The URL is invalid.
-- **401 Unauthorized**: Authentication has failed, or no credentials were provided.
-- **404 Not Found**: The source file is not accessible.
-- **500 Server Error**: An anomaly occurred while processing the spreadsheet.
+- **400 Bad Request**: Invalid Apose.Cells Cloud API URI.
+- **401 Unauthorized**: Invalid access token. Or invalid client id and secret.
+- **404 Not Found**: The spreadsheet file not accessible.
+- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
 
-## Usage Scenarios
+## Where should we use the Delete Spreadsheet Blank Columns API?
 
-## Key Features and Benefits
+When you need to transform data, you can use this API.
 
-- **Dual-Layer Password Removal**: Effectively removes both open and modify passwords from Excel spreadsheets, streamlining access to protected files.
+## Why should you use the Delete Spreadsheet Blank Columns API?
 
-## OpenAPI Specification
+- Quickly delete all blank columns that do not contain any data or other objects from an Excel spreadsheet.
+- Development can be quickly completed through the existing SDK.
+
+## How to Use the Delete Spreadsheet Blank Columns API with SDKs
+
+### OpenAPI Specification
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ProtectionController/UnprotectSpreadsheet) defines a publicly accessible programming interface, enabling you to perform REST interactions directly from a web browser.
 
-## Excel API SDK
+### Use Aspose.Cells Cloud SDKs
 
-Utilizing an SDK is the most effective way to accelerate your development process. An SDK manages low-level details, allowing you to concentrate on your project tasks. Explore the [GitHub repository](https://github.com/aspose-cells-cloud) for a comprehensive list of Aspose.Cells Cloud SDKs.
+Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement delete spreadsheets blank columns for cells with minimal code.
+Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples illustrate how to call Aspose.Cells web services using various SDKs:
 

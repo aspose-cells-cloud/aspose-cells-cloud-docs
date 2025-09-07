@@ -1,6 +1,7 @@
 ---
-title: "Convert Table to JSON - Excel API"
+title: "Aspose.Cells Cloud Web API - Convert Spreadsheet Table to JSON"
 second_title: "Aspose.Cells Cloud"
+ArticleTitle: "Convert Spreadsheet Table to Json"
 linktitle: "Convert Table to JSON"
 type: docs
 url: /convert-table-to-json/
@@ -10,23 +11,15 @@ weight: 100
 kwords: "Excel API, JSON conversion, cloud file conversion, spreadsheet, REST API, Aspose.Cells, local drive processing, file format conversion"
 ---
 
-# **Excel API: ConvertTableToJson**
+Convert a local spreadsheet/Excel table to a json file with the Aspose.Cells Cloud Web API.
 
-## **Overview**
-
-The ConvertTableToJson method converts a table from a local spreadsheet into a JSON file format. Designed for efficiency and ease of use, this API allows users to process files directly without requiring cloud storage.
-
-## **Function Description**
-
-This method reads a specified spreadsheet file from the local file system, converts its table into JSON format, and returns the result. Users must accurately specify the source file path and target format. Proper permissions are required to read the source file and write the converted output. The entire conversion process is executed on the cloud server, eliminating the need for external downloads or cloud storage. In the event of an inaccessible source file or conversion error, the method will throw an appropriate exception. Supported formats for conversion are contingent on the capabilities of the available libraries.
-
-## **API Endpoint**
+## **Convert Table to Json API**
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/convert/table/json
 ```
 
-## The request parameters of **convertTableToJson** API are
+### **Request Parameters:**
 
 | Parameter Name    | Type  | Path/Query String/HTTP Body | Description                                        |
 |-------------------|-------|-----------------------------|----------------------------------------------------|
@@ -39,35 +32,42 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/table/json
 | region            | String| Query                       | Define the region settings for the spreadsheet.    |
 | password          | String| Query                       | The password required to open the spreadsheet file. |
 
-## **Response Structure**
+## **Response**
 
 ```json
-{
-File
-}
+[
+    {
+        "Name": "ResponseFile",
+        "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+        }
+    }
+]
 ```
 
-## Error Handling
+### Error Codes
 
-- **400 Bad Request**: Invalid URL or parameters.
-- **401 Unauthorized**: Authentication failed or no credentials provided.
-- **404 Not Found**: The specified source file is not accessible.
-- **500 Server Error**: An error occurred while obtaining conversion data from the spreadsheet.
+- **400 Bad Request**: Invalid Apose.Cells Cloud API URI.
+- **401 Unauthorized**: Invalid access token. Or invalid client id and secret.
+- **404 Not Found**: The spreadsheet file not accessible.
+- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
 
-## Usage Scenarios
+## Why should you use the Convert Table to Json API?
 
-## Key Features and Benefits
+- No need for cloud storage, reducing the burden on cloud resources.
+- Development can be quickly completed through the existing SDK.
 
-- **Cloud-Native Conversion**: Directly convert local files in the cloud without needing to store them there.
-- **Reduced Cloud Resource Burden**: Avoid uploading files to save cloud storage space while processing.
-- **Simplified Workflow**: Convert local spreadsheets to JSON format seamlessly through cloud services, eliminating unnecessary intermediate steps.
+## How to Use the Convert Table to Json API with SDKs?
 
-## OpenAPI Specification
+### OpenAPI Specification
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertTableToJson) provides a publicly accessible programming interface, enabling REST interactions directly from a web browser.
 
-## Excel API SDK
+### Use Aspose.Cells Cloud SDKs
 
-Utilizing an SDK accelerates development by managing low-level details, allowing you to concentrate on your project tasks. For a complete list of Aspose.Cells Cloud SDKs, please check the [GitHub repository](https://github.com/aspose-cells-cloud).
+Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement convert spreadsheet/Excel table to a json file for cells with minimal code.
+Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to interact with Aspose.Cells web services using various SDKs:

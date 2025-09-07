@@ -1,32 +1,25 @@
 ---
-title: "Move Worksheet in Spreadsheet - Excel API"
+title: "Aspose.Cells Cloud Web API - Move Worksheet in Spreadsheet"
 second_title: "Aspose.Cells Cloud"
+ArticleTitle: "Move worksheet to new position in Spreadsheet"
 linktitle: "Move Worksheet in Spreadsheet"
 type: docs
 url: /move-worksheet-in-spreadsheet/
-keywords: "Move Worksheet, Excel API, Spreadsheet Management, Worksheet Positioning, Workbook Organization, Aspose API"
+keywords: "Move Worksheet, Aspose.Cells Cloud Web API, Spreadsheet Management, Worksheet Positioning, Workbook Organization, Excel API"
 description: "The MoveWorksheet API enables users to efficiently reposition a specified worksheet within a workbook, thus enhancing the organization and accessibility of spreadsheet data."
 weight: 100
 kwords: Excel, Office Cloud, REST API, Spreadsheet, Move Worksheet, Workbook Organization, PDF, CSV, JSON, Markdown
 ---
 
-# **Excel API: Move Worksheet in Spreadsheet**
+Move a worksheet to new position in a spreadsheet.
 
-## **Overview**
-
-The MoveWorksheet API allows users to efficiently reposition a specified worksheet within a workbook. This functionality enhances the organization and accessibility of spreadsheet data, providing a straightforward method to manage worksheet placement.
-
-## **Function Description**
-
-By utilizing the MoveWorksheet API, users can dynamically manage the structure of their workbook by relocating a specified worksheet to a new position. This feature not only improves the readability of the workbook but also enables users to group related data effectively. Whether for reorganizing data or improving workflow, this API offers the flexibility to optimize workbook structure with ease.
-
-## **API Endpoint**
+## **Move worksheet from Spreadsheet API**
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/spreadsheet/move/worksheet
 ```
 
-## The request parameters of **moveWorksheetInSpreadsheet** API are
+### **Request Parameters:**
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 | :- | :- | :- |:- |
@@ -38,35 +31,47 @@ PUT http://api.aspose.cloud/v4.0/cells/spreadsheet/move/worksheet
 |region|String|Query|The spreadsheet region setting.|
 |password|String|Query|The password for opening the spreadsheet file.|
 
-## **Response Structure**
+## **Response**
 
 ```json
-{
-File
-}
+[
+    {
+        "Name": "ResponseFile",
+        "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+        }
+    }
+]
 ```
 
-## Error Handling
+### Error Codes
 
-- **400 Bad Request**: Invalid URL.
-- **401 Unauthorized**: Authentication has failed, or no credentials were provided.
-- **404 Not Found**: Source file not accessible.
-- **500 Server Error**: The spreadsheet encountered an anomaly while processing.
+- **400 Bad Request**: Invalid Apose.Cells Cloud API URI.
+- **401 Unauthorized**: Invalid access token. Or invalid client id and secret.
+- **404 Not Found**: The spreadsheet file not accessible.
+- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
 
-## Usage Scenarios
+## Where should we use the Move Worksheet in Spreadsheet API?
 
-## Key Features and Benefits
+When you need to move a worksheet to new position in spreadsheets, you can use this API.
 
-- **Dynamic Worksheet Movement**: Enables users to move a specified worksheet to a new position within the workbook, enhancing data organization.
+## Why should you use the Move Worksheet in Spreadsheet API?
 
-## OpenAPI Specification
+- Quickly move worksheets from spreadsheets.
+- Development can be quickly completed through the existing SDK.
+
+## How to Use the Move Worksheet in Spreadsheet API with SDKs
+
+### OpenAPI Specification
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ManagementController/MoveWorksheetInSpreadsheet) provides a publicly accessible programming interface to facilitate direct REST interactions from a web browser.
 
-## Excel API SDK
+### Use Aspose.Cells Cloud SDKs
 
-Utilizing an SDK accelerates development by managing low-level details, allowing developers to focus on their project tasks. For a comprehensive list of Aspose.Cells Cloud SDKs, visit the [GitHub repository](https://github.com/aspose-cells-cloud).
-
+Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement move worksheet in spreadsheets for cells with minimal code.
+Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 The following code examples demonstrate how to call the Aspose.Cells web services using various SDKs:
 
 {{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}

@@ -1,6 +1,7 @@
 ---
-title: "Import Data into Spreadsheet - Excel API"
+title: "Aspose.Cells Cloud Web API - Import Data into Spreadsheet"
 second_title: "Aspose.Cells Cloud"
+ArticleTitle: "Import Data into Spreadsheet"
 linktitle: "Import Data into Spreadsheet"
 type: docs
 url: /import-data-into-spreadsheet/
@@ -10,28 +11,15 @@ weight: 100
 kwords: "Excel API, Import Data, Office Cloud, REST API, Spreadsheet, CSV, JSON, XML, Data Integration, Error Handling"
 ---
 
-# **Excel API: Import Data Into Spreadsheet**
+Import CSV, JSON, and XML data into a spreadsheet.
 
-## **Overview**
-
-Efficiently import data into a spreadsheet from supported file formats such as CSV, JSON, and XML.
-
-## **Function Description**
-
-This API enables the importation of data into a spreadsheet from supported data file formats (CSV, JSON, XML).
-It requires two primary inputs: the target spreadsheet and the data file.
-The data file must be accessible and in one of the supported formats (CSV, JSON, XML).
-The API ensures that the import process is handled efficiently, accurately parsing and inserting data into the specified spreadsheet.
-In cases where the data file is inaccessible, the format is unsupported, or errors occur during the import process, appropriate exceptions are thrown.
-Users are advised to ensure that their data files are properly formatted and that the target spreadsheet is accessible to avoid errors.
-
-## **API Endpoint**
+## **Import Data into Spreadsheet API**
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/import/data
 ```
 
-## The request parameters of **importDataIntoSpreadsheet** API are
+### **Request Parameters:**
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 | :- | :- | :- |:- |
@@ -48,34 +36,47 @@ PUT http://api.aspose.cloud/v4.0/cells/import/data
 | regoin | String | Query | Set the spreadsheet region configuration. |
 | password | String | Query | The password for opening the spreadsheet file. |
 
-## **Response Structure**
+### **Response**
 
 ```json
-{
-File
-}
+[
+    {
+        "Name": "ResponseFile",
+        "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+        }
+    }
+]
 ```
 
-## **Error Handling**
+### Error Codes
 
-- **400 Bad Request**: Invalid URL.
-- **401 Unauthorized**: Authentication failed, or credentials were not provided.
-- **404 Not Found**: Source file is not accessible.
-- **500 Server Error**: An anomaly occurred during data retrieval from the spreadsheet.
+- **400 Bad Request**: Invalid Apose.Cells Cloud API URI.
+- **401 Unauthorized**: Invalid access token. Or invalid client id and secret.
+- **404 Not Found**: The spreadsheet file not accessible.
+- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
 
-## **Usage Scenarios and Key Features**
+## Where should we use the Import Data into Spreadsheet API?
 
-- **Multiple Data Formats**: Import data seamlessly from CSV, JSON, and XML file formats.
-- **Direct Spreadsheet Integration**: Easily import data directly into the specified spreadsheet.
-- **Efficient Data Handling**: Ensure accurate parsing and efficient handling of data during import.
+Importing large amounts of data into spreadsheets.
 
-## **OpenAPI Specification**
+## Why should you use the Import Data into Spreadsheet API?
+
+- Importing large amounts of data into spreadsheets.
+- Development can be quickly completed through the existing SDK.
+
+## How to Use the Import Data into Spreadsheet API with SDKs
+
+### OpenAPI Specification
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/DataProcessingController/ImportDataIntoSpreadsheet) provides a publicly accessible programming interface, allowing REST interactions directly from your web browser.
 
-## **Excel API SDK**
+### Use Aspose.Cells Cloud SDKs
 
-Utilizing an SDK is the optimal approach to expedite development. An SDK manages low-level details, allowing you to concentrate on your project tasks. Explore the [GitHub repository](https://github.com/aspose-cells-cloud) for a comprehensive list of Aspose.Cells Cloud SDKs.
+Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement Import data into spreadsheet for cells with minimal code.
+Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples illustrate how to invoke Aspose.Cells web services using various SDKs:
 

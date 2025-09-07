@@ -41,9 +41,16 @@ This method allows users to replace specified text within a local spreadsheet fi
 ### **Response Description**
 
 ```json
-{
-File
-}
+[
+    {
+        "Name": "ResponseFile",
+        "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+        }
+    }
+]
 ```
 
 ## OpenAPI Specification

@@ -1,6 +1,7 @@
 ---
-title: "Aspose.Cells Cloud Web API - Convert Range to Image"
+title: "Aspose.Cells Cloud Web API - Convert Spreadsheet Range to Image"
 second_title: "Aspose.Cells Cloud"
+ArticleTitle: "Converting Spreadsheet Range to Image"
 linktitle: "Convert Range to Image"
 type: docs
 url: /convert-range-to-image/
@@ -10,27 +11,17 @@ weight: 100
 kwords: Excel, Office Cloud, REST API, Spreadsheet, Image Conversion, PNG, SVG, TIFF, JSON, Markdown, Match all blank cells in an Excel worksheet
 ---
 
-# **Excel API: ConvertRangeToImage**
+Convert a range from a local spreadsheet/Excel file to an image file with the Aspose.Cells Cloud Web API.
 
-## **Overview**
+**IMAGE FORMATS:** [PNG](https://docs.fileformat.com/image/png/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/)
 
-This API allows you to convert a specified range of a spreadsheet on your local drive into an image file.
-
-## **Function Description**
-
-This method reads a spreadsheet file from the local file system, converts the specified range to the desired image format, and returns the converted result.
-Ensure that the source file path and target format are specified correctly, and that you have the necessary permissions to read the source file and write the converted file if applicable.
-The conversion process occurs entirely on the cloud server, eliminating the need for any cloud storage or external downloads.
-If the source file does not exist, is inaccessible, or if an error occurs during the conversion process, an appropriate exception will be thrown.
-Supported formats for conversion depend on the available libraries and their capabilities.
-
-## **API Endpoint**
+## **Convert Range to Image API**
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/convert/range/image
 ```
 
-## The request parameters of **convertRangeToImage** API are
+### **Request Parameters:**
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 | :- | :- | :- |:- |
@@ -45,36 +36,43 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/range/image
 |regoin|String|Query|Define the spreadsheet region setting.|
 |password|String|Query|Password for opening the spreadsheet file if protected.|
 
-## **Response Structure**
+### **Response**
 
 ```json
-{
-File
-}
+[
+    {
+        "Name": "ResponseFile",
+        "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+        }
+    }
+]
 ```
 
-## Error Handling
+### Error Codes
 
-- **400 Bad Request**: Invalid URL or parameters.
-- **401 Unauthorized**: Authentication failed or no credentials provided.
-- **404 Not Found**: The source file is not accessible.
-- **500 Server Error**: An error occurred while processing the conversion.
+- **400 Bad Request**: Invalid Apose.Cells Cloud API URI.
+- **401 Unauthorized**: Invalid access token. Or invalid client id and secret.
+- **404 Not Found**: The spreadsheet file not accessible.
+- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
 
-## Usage Scenarios
+## Why should you use the Convert Range to Image API?
 
-## Key Features and Benefits
+- No need for cloud storage, reducing the burden on cloud resources.
+- Development can be quickly completed through the existing SDK.
 
-- **Cloud-Native Conversion**: Convert local files directly in the cloud, avoiding the need to store them there.
-- **Reduced Cloud Resource Burden**: No need to upload files to the cloud, saving valuable storage space.
-- **Simplified Workflow**: Seamlessly convert local spreadsheets to image formats via cloud services without intermediate steps.
+## How to Use the Convert Range to Html API with SDKs?
 
-## OpenAPI Specification
+### OpenAPI Specification
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertRangeToImage) provides a publicly accessible programming interface, enabling REST interactions directly from your web browser.
 
-## Excel API SDK
+### Use Aspose.Cells Cloud SDKs
 
-Utilizing an SDK is the most efficient way to expedite development. An SDK manages low-level details, allowing you to focus on your project tasks. Visit the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement convert spreadsheet/Excel chart to image for cells with minimal code.
+Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples illustrate how to call Aspose.Cells web services using various SDKs:
 

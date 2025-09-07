@@ -1,5 +1,5 @@
 ---
-title: "An API of Aspose.Cells Cloud for Add, Minus, Multiply, Divide, and Percentage on a range of Spreadsheet/Excel"
+title: "Aspose.Cells Cloud Web API - Add, Minus, Multiply, Divide, and Percentage on a range of Spreadsheet/Excel"
 second_title: "Aspose.Cells Cloud"
 ArticleTitle: "Add, Minus, Multiply, Divide and Percentage in Spreadsheet/Excel"
 linktitle: "Math Calculate"
@@ -41,9 +41,16 @@ PUT http://api.aspose.cloud/v4.0/cells/calculate/math
 ### **Response**
 
 ```json
-{
-File
-}
+[
+    {
+        "Name": "ResponseFile",
+        "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+        }
+    }
+]
 ```
 
 ### Error Codes

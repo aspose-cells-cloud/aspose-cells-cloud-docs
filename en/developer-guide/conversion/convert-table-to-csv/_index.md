@@ -1,32 +1,25 @@
 ---
-title: "Convert Table to CSV - Excel API"
+title: "Aspose.Cells Cloud Web API - Convert Spreadsheet Table to CSV"
 second_title: "Aspose.Cells Cloud"
+ArticleTitle: "Convert Spreadsheet Table to CSV"
 linktitle: "Convert Table to CSV"
 type: docs
 url: /convert-table-to-csv/
-keywords: "table to csv, convert spreadsheet to csv, Excel to CSV conversion, CSV file generation, cloud-based file conversion"
+keywords: "convert table to csv, convert spreadsheet to csv, Excel to CSV conversion, CSV file generation, cloud-based file conversion"
 description: "Efficiently converts a table from a spreadsheet on your local drive to a CSV file using our API."
 weight: 100
 kwords: "Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Match all blank cells in an Excel worksheet, Table to CSV, Local to Cloud Conversion"
 ---
 
-# **Excel API: Convert Table to CSV**
+Convert a local spreadsheet/Excel table to csv file with the Aspose.Cells Cloud Web API.
 
-## **Overview**
-
-This API converts a table from a spreadsheet located on your local drive into a CSV file, facilitating easy data handling and import/export tasks.
-
-## **Function Description**
-
-The `convertTableToCsv` method reads a specified spreadsheet file from the local file system, converts its table into the desired CSV format, and returns the resulting CSV file. Ensure that the source file path and target format are specified correctly. Adequate permissions must be granted to read the source file and write the converted file as necessary. The conversion occurs entirely on the cloud server, negating the need for any cloud storage or external downloads. If the source file is missing, inaccessible, or if an error arises during conversion, an appropriate exception will be raised. Supported conversion formats are contingent on the capabilities of the available libraries.
-
-## **API Endpoint**
+## **Convert Table to CSV API**
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/convert/table/csv
 ```
 
-## The request parameters of **convertTableToCsv** API are
+### **Request Parameters:**
 
 | Parameter Name   | Type  | Path/Query String/HTTP Body | Description                                     |
 |-------------------|-------|------------------------------|-------------------------------------------------|
@@ -42,32 +35,39 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/table/csv
 ## **Response Structure**
 
 ```json
-{
-File
-}
+[
+    {
+        "Name": "ResponseFile",
+        "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+        }
+    }
+]
 ```
 
-## **Error Handling**
+### Error Codes
 
-- **400 Bad Request**: Invalid URL.
-- **401 Unauthorized**: Authentication has failed, or no credentials were provided.
-- **404 Not Found**: Source file not accessible.
-- **500 Server Error**: An anomaly occurred in obtaining conversion data from the spreadsheet.
+- **400 Bad Request**: Invalid Apose.Cells Cloud API URI.
+- **401 Unauthorized**: Invalid access token. Or invalid client id and secret.
+- **404 Not Found**: The spreadsheet file not accessible.
+- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
 
-## **Usage Scenarios**
+## Why should you use the Convert Range to Pdf API?
 
-## **Key Features and Benefits**
+- No need for cloud storage, reducing the burden on cloud resources.
+- Development can be quickly completed through the existing SDK.
 
-- **Cloud-Native Conversion**: Perform conversion of local files directly in the cloud, eliminating the need for file storage.
-- **Reduced Cloud Resource Burden**: No requirement to upload files to the cloud, conserving cloud storage space.
-- **Simplified Workflow**: Effortlessly convert local spreadsheets to CSV format directly through cloud services, minimizing intermediate steps.
+## How to Use the Convert Range to Html API with SDKs?
 
-## **OpenAPI Specification**
+### OpenAPI Specification
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertTableToCsv) provides a publicly accessible programming interface, allowing REST interactions directly from a web browser.
 
-## **Excel API SDK**
+### Use Aspose.Cells Cloud SDKs
 
-Utilizing an SDK significantly accelerates development. An SDK handles low-level details, allowing you to focus on your project tasks. For a complete list of Aspose.Cells Cloud SDKs, please visit the [GitHub repository](https://github.com/aspose-cells-cloud).
+Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement convert spreadsheet/Excel table to a csv file for cells with minimal code.
+Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples illustrate how to make calls to Aspose.Cells web services using various SDKs:

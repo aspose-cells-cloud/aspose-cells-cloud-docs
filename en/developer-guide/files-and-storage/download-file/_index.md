@@ -35,9 +35,16 @@ The **downloadFile** API allows you to retrieve files stored in the Aspose Cloud
 
 ### **Response Description**
 ```json
-{
-File
-}
+[
+    {
+        "Name": "ResponseFile",
+        "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+        }
+    }
+]
 ```
 
 ## OpenAPI Specification

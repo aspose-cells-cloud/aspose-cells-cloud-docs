@@ -1,7 +1,8 @@
 ---
-title: "Split Remote Spreadsheet - Excel API"
+title: "Aspose.Cells Cloud Web API - Split Spreadsheet in the Cloud"
 second_title: "Aspose.Cells Cloud"
-linktitle: "Split Remote Spreadsheet"
+ArticleTitle: "Split Spreadsheets into multiple files in the Cloud"
+linktitle: "Split Remote Spreadsheet in Cloud"
 type: docs
 url: /split-remote-spreadsheet/
 keywords: "spreadsheet splitting, cloud spreadsheet API, Excel remote processing, split Excel file, multi-format output, cloud storage integration"
@@ -10,23 +11,15 @@ weight: 100
 kwords: "Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, split remote spreadsheet, cloud processing, multi-file output"
 ---
 
-# **Excel API : Split Remote Spreadsheet**
+Split a spreadsheet stored in cloud storage into multiple files. Support 30+ outfile formats.
 
-## **Overview**
-
-Efficiently split a spreadsheet stored in cloud storage into multiple output files in specified formats.
-
-## **Function Description**
-
-This method allows users to split a single spreadsheet file stored in cloud storage into multiple output files in various formats (e.g., XLSX, CSV, PDF). Each output file can represent different sheets, sections, or segments of the original document, based on user-defined criteria. The operation is performed remotely in the cloud environment, eliminating the need for local downloads. Ensure you have valid cloud storage credentials and accessible file paths for all input files. In case of access issues, insufficient permissions, or errors during the splitting process, an appropriate exception will be thrown. Supported output formats depend on the capabilities of the underlying cloud processing service. Users should specify clear criteria for how the input file should be divided to ensure accurate results.
-
-## **API Endpoint**
+## **Split Remote Spreadsheet API**
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/{name}/split/spreadsheet
 ```
 
-## The request parameters of **splitRemoteSpreadsheet** API are
+### **Request Parameters:**
 
 | Parameter Name | Type | Path/Query String/HTTP Body | Description |
 | :- | :- | :- |:- |
@@ -42,37 +35,47 @@ PUT http://api.aspose.cloud/v4.0/cells/{name}/split/spreadsheet
 | region | String | Query | The spreadsheet region setting. |
 | password | String | Query | The password for opening the spreadsheet file. |
 
-## **Response Structure**
+## **Response**
 
 ```json
-{
-File
-}
+[
+    {
+        "Name": "ResponseFile",
+        "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+        }
+    }
+]
 ```
 
-## Error Handling
+### Error Codes
 
-- **400 Bad Request**: Invalid URL.
-- **401 Unauthorized**: Authentication has failed, or no credentials were provided.
-- **404 Not Found**: Source file not accessible.
-- **500 Server Error**: An anomaly occurred while accessing spreadsheet data.
+- **400 Bad Request**: Invalid Apose.Cells Cloud API URI.
+- **401 Unauthorized**: Invalid access token. Or invalid client id and secret.
+- **404 Not Found**: The spreadsheet file not accessible.
+- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
 
-## Usage Scenarios
+## Where should we use the Split Remote Spreadsheet API?
 
-## Key Features and Benefits
+When you need to merge multiple data files together, you can use this API.
 
-- **Cloud Storage Integration**: Allows seamless splitting of spreadsheet files stored in the cloud into multiple output formats (e.g., XLSX, CSV, PDF).
-- **Remote Processing**: Conducts the splitting operation entirely in the cloud, eliminating the need for local file downloads.
-- **Enhanced Performance**: Leverages cloud processing to improve performance and reduce the burden on local machines.
+## Why should you use the Split Remote Spreadsheet API?
 
-## OpenAPI Specification
+- Cloud storage files do not need to be downloaded, and can be split directly in the cloud.
+- Development can be quickly completed through the existing SDK.
+
+## How to Use the Split Remote Spreadsheet API with SDKs
+
+### OpenAPI Specification
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/DataProcessingController/SplitRemoteSpreadsheet) defines a publicly accessible programming interface and enables REST interactions directly from a web browser.
 
-## Excel API SDK
+### Use Aspose.Cells Cloud SDKs
 
-Using an SDK can significantly speed up development. An SDK handles low-level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
-
+Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement split remote spreadsheet for cells with minimal code.
+Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 
 {{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}

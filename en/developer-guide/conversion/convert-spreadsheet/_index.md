@@ -1,32 +1,25 @@
 ---
-title: "Convert Spreadsheet - Excel API"
+title: "Aspose.Cells Cloud Web API - Convert Spreadsheet"
 second_title: "Aspose.Cells Cloud"
+ArticleTitle: "Convert Spreadsheet"
 linktitle: "Convert Spreadsheet"
 type: docs
 url: /convert-spreadsheet/
-keywords: "spreadsheet conversion, Excel API, cloud conversion, REST API, XLSX, PDF, CSV, JSON, Markdown, convert local files"
+keywords: "spreadsheet conversion, convert spreadsheet, cloud conversion, REST API, XLSX, PDF, CSV, JSON, Markdown, convert local files"
 description: "Effortlessly converts a spreadsheet from a local drive to various specified formats using the Excel API."
 weight: 100
 kwords: Excel, Office Cloud, REST API, Spreadsheet Conversion, PDF, CSV, JSON, Markdown, Match all blank cells in an Excel worksheet
 ---
 
-# **Excel API : Convert Spreadsheet**
+Convert a local spreadsheet/Excel file to other format file with the Aspose.Cells Cloud Web API.
 
-## **Overview**
-
-This API converts a spreadsheet located on a local drive into the specified output format, including XLSX, PDF, and CSV.
-
-## **Function Description**
-
-The `ConvertSpreadsheet` method reads a spreadsheet file from the local file system and converts it into the desired output format (e.g., XLSX, PDF, CSV). The source file path and target format must be specified correctly. Ensure that the necessary permissions are in place to read the source file and write the converted file if applicable. The conversion process is performed entirely on the cloud server, eliminating the need for any external cloud storage or downloads. If the source file is inaccessible or an error occurs during the conversion process, an appropriate exception will be thrown. Supported formats for conversion depend on the available libraries and their capabilities.
-
-## **API Endpoint**
+## **Convert Spreadsheet API**
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/convert/spreadsheet
 ```
 
-## The request parameters of **convertSpreadsheet** API are
+### **Request Parameters:**
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 | :- | :- | :- |:- |
@@ -38,37 +31,43 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/spreadsheet
 |region|String|Query|Specify the spreadsheet region setting.|
 |password|String|Query|The password for opening the spreadsheet file if it is protected.|
 
-## **Response Structure**
+## **Response**
 
 ```json
-{
-File
-}
+[
+    {
+        "Name": "ResponseFile",
+        "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+        }
+    }
+]
 ```
 
-## Error Handling
+### Error Codes
 
-- **400 Bad Request**: Invalid URL or request parameters.
-- **401 Unauthorized**: Authentication has failed, or no credentials were provided.
-- **404 Not Found**: Source file not accessible or does not exist.
-- **500 Server Error**: An anomaly occurred during the spreadsheet conversion process.
+- **400 Bad Request**: Invalid Apose.Cells Cloud API URI.
+- **401 Unauthorized**: Invalid access token. Or invalid client id and secret.
+- **404 Not Found**: The spreadsheet file not accessible.
+- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
 
-## Usage Scenarios
+## Why should you use the Convert Range to Pdf API?
 
-## Key Features and Benefits
+- No need for cloud storage, reducing the burden on cloud resources.
+- Development can be quickly completed through the existing SDK.
 
-- **Cloud-Native Conversion**: Convert local files directly in the cloud, reducing the need for intermediate storage.
-- **Resource Efficiency**: Save cloud storage space as files do not need to be uploaded.
-- **Format Versatility**: Supports multiple output formats including XLSX, PDF, and CSV.
-- **Streamlined Workflow**: Convert local spreadsheets directly through cloud services without unnecessary steps.
+## How to Use the Convert Range to Html API with SDKs?
 
-## OpenAPI Specification
+### OpenAPI Specification
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertSpreadsheet) defines a publicly accessible programming interface, allowing you to perform REST interactions directly from a web browser.
 
-## Excel API SDK
+### Use Aspose.Cells Cloud SDKs
 
-Using an SDK accelerates the development process. An SDK manages low-level details, allowing you to focus on your project tasks. Please check the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement convert spreadsheet/Excel to other format for cells with minimal code.
+Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to invoke Aspose.Cells web services using various SDKs:
 

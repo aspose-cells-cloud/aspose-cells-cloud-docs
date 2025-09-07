@@ -1,32 +1,25 @@
 ---
-title: "Merge Spreadsheets - Excel API"
+title: "Aspose.Cells Cloud Web API - Merge Spreadsheets"
 second_title: "Aspose.Cells Cloud"
+ArticleTitle: "Merge Spreadsheets into a Single File"
 linktitle: "Merge Spreadsheets"
 type: docs
 url: /merge-spreadsheets/
-keywords: "Merge spreadsheets, Excel API, cloud processing, data merging, file format conversion, REST API, XLSX, CSV, PDF"
+keywords: "Merge spreadsheets, data merging, file format conversion, REST API, XLSX, CSV, PDF"
 description: "Easily merge local spreadsheet files into various formats (XLSX, CSV, PDF) using the Excel API."
 weight: 100
-kwords: "Excel API, Merge spreadsheets, Office Cloud, REST API, Spreadsheet merging, PDF export, CSV format, JSON, Markdown, Excel worksheet blank cells handling"
+kwords: "Excel API, Merge spreadsheets, Office Cloud, REST API, Spreadsheet merging, CSV format, JSON, Markdown"
 ---
 
-# **Excel API: MergeSpreadsheets**
+Merge multiple local spreadsheet files into a single file, while supporting output in dozens of file formats.
 
-## **Overview**
-
-This API method allows users to merge local spreadsheet files into a specified output format file, such as XLSX, CSV, or PDF.
-
-## **Function Description**
-
-The **MergeSpreadsheets** method combines multiple spreadsheet files from the local file system into a single output file in the desired format. All input files must be accessible and in a supported format for the merge operation to succeed. The merging process is handled in the cloud without requiring cloud storage, ensuring user data privacy. Proper file permissions must be granted for reading the source files and writing the output file. If any file cannot be accessed or an error occurs during the merging process, an appropriate exception will be thrown. The final output format can be configured based on the available conversion and export capabilities.
-
-## **API Endpoint**
+## **Merge Spreadsheet API**
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/merge/spreadsheet
 ```
 
-## The request parameters of **mergeSpreadsheets** API are
+### **Request Parameters:**
 
 | Parameter Name | Type | Path/Query String/HTTP Body | Description |
 | :- | :- | :- |:- |
@@ -39,35 +32,46 @@ PUT http://api.aspose.cloud/v4.0/cells/merge/spreadsheet
 | region | String | Query | Set the spreadsheet region. |
 | password | String | Query | Provide the password for opening the spreadsheet file. |
 
-## **Response Structure**
+### **Response**
 
 ```json
-{
-File
-}
+[
+    {
+        "Name": "ResponseFile",
+        "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+        }
+    }
+]
 ```
 
-## Error Handling
+### Error Codes
 
-- **400 Bad Request**: Invalid URL.
-- **401 Unauthorized**: Authentication has failed or no credentials were provided.
-- **404 Not Found**: Source file not accessible.
-- **500 Server Error**: An anomaly occurred while obtaining data from the spreadsheet.
+- **400 Bad Request**: Invalid Apose.Cells Cloud API URI.
+- **401 Unauthorized**: Invalid access token. Or invalid client id and secret.
+- **404 Not Found**: The spreadsheet file not accessible.
+- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
 
-## **Usage Scenarios**
+## Where should we use the Merge Local Spreadsheet API?
 
-## **Key Features and Benefits**
+When you need to merge multiple data files together, you can use this API.
 
-- **Local File Merge**: Efficiently combines multiple local spreadsheet files into a single output file in various formats (e.g., XLSX, CSV, PDF).
-- **Efficient Data Handling**: Processes the merge operation in the cloud without requiring cloud storage, leveraging cloud processing capabilities for enhanced performance.
-- **Format Flexibility**: Supports a diverse range of output formats based on available conversion and export capabilities for user convenience.
+## Why should you use the Merge Local Spreadsheet API?
 
-## **OpenAPI Specification**
+- No need for cloud storage space, just merge directly.
+- Development can be quickly completed through the existing SDK.
+
+## How to Use the Merge Local Spreadsheet API with SDKs
+
+### OpenAPI Specification
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/DataProcessingController/MergeSpreadsheets) provides a publicly accessible programming interface, allowing users to perform REST interactions directly from a web browser.
 
-## **Excel API SDK**
+### Use Aspose.Cells Cloud SDKs
 
-Utilizing an SDK expedites development processes by managing low-level details, allowing developers to focus on project tasks. Check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement merge spreadsheets for cells with minimal code.
+Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples illustrate how to make calls to Aspose.Cells web services using various SDKs:

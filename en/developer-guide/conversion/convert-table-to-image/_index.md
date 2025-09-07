@@ -1,6 +1,7 @@
 ---
-title: "Convert Table to Image - Excel API"
+title: "Aspose.Cells Cloud Web API - Convert Spreadsheet Table to Image"
 second_title: "Aspose.Cells Cloud"
+ArticleTitle: "Convert Spreadsheet Table to Image"
 linktitle: "Convert Table to Image"
 type: docs
 url: /convert-table-to-image/
@@ -10,23 +11,15 @@ weight: 100
 kwords: "Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, convert table to image, cloud-native conversion, image file formats, spreadsheet conversion"
 ---
 
-# **Excel API: Convert Table to Image**
+Convert a local spreadsheet/Excel table to a html file with the Aspose.Cells Cloud Web API.
 
-## **Overview**
-
-This API method allows you to convert a table from a spreadsheet located on your local drive into an image file seamlessly.
-
-## **Function Description**
-
-The `convertTableToImage` method reads a specified spreadsheet file from the local file system, converts the designated table into the desired image format, and returns the resulting image. Ensure that the source file path and target format are specified accurately. It is crucial to have the correct permissions to read the source file and write the converted image if necessary. The entire conversion process is handled on the cloud server, which means there is no requirement for cloud storage or external downloads. If the source file is not found, inaccessible, or if any errors occur during the conversion, an appropriate exception will be raised. Supported output formats for conversion depend on the libraries available.
-
-## **API Endpoint**
+## **Convert Table to Image API**
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/convert/table/image
 ```
 
-## The request parameters of **convertTableToImage** API are
+### **Request Parameters:**
 
 | Parameter Name | Type | Path/Query String/HTTP Body | Description |
 | :- | :- | :- |:- |
@@ -40,37 +33,43 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/table/image
 |region|String|Query|Defines the spreadsheet region settings.|
 |password|String|Query|Password required to access the spreadsheet file.|
 
-## **Response Structure**
+## **Response**
 
 ```json
-{
-File
-}
+[
+    {
+        "Name": "ResponseFile",
+        "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+        }
+    }
+]
 ```
 
-## Error Handling
+### Error Codes
 
-- **400 Bad Request**: Invalid URL provided.
-- **401 Unauthorized**: Authentication failed, or no credentials provided.
-- **404 Not Found**: The source file is inaccessible.
-- **500 Server Error**: An error occurred during data conversion.
+- **400 Bad Request**: Invalid Apose.Cells Cloud API URI.
+- **401 Unauthorized**: Invalid access token. Or invalid client id and secret.
+- **404 Not Found**: The spreadsheet file not accessible.
+- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
 
-## Usage Scenarios
+## Why should you use the Convert Table to Image API?
 
-## Key Features and Benefits
+- No need for cloud storage, reducing the burden on cloud resources.
+- Development can be quickly completed through the existing SDK.
 
-- **Cloud-Native Conversion**: Convert local spreadsheet files directly in the cloud, without the need for local storage.
-- **Reduced Cloud Resource Burden**: Save cloud storage space by avoiding unnecessary uploads.
-- **Format Versatility**: Supports multiple output image formats including png, svg, tiff, and more.
-- **Simplified Workflow**: Streamline the process of converting spreadsheets to image formats via cloud services, bypassing intermediate steps.
+## How to Use the Convert Table to Image API with SDKs?
 
-## OpenAPI Specification
+### OpenAPI Specification
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertTableToImage) provides a publicly accessible programming interface for conducting REST interactions directly from a web browser.
 
-## Excel API SDK
+### Use Aspose.Cells Cloud SDKs
 
-Utilizing an SDK is the most efficient way to accelerate development. An SDK manages low-level details, allowing you to concentrate on your project objectives. Please visit the [GitHub repository](https://github.com/aspose-cells-cloud) for an extensive list of Aspose.Cells Cloud SDKs.
+Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement convert spreadsheet/Excel table to image for cells with minimal code.
+Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples illustrate how to invoke Aspose.Cells web services using various SDKs:
 

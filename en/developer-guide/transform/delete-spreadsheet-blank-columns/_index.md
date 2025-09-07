@@ -1,6 +1,7 @@
 ---
-title: "Delete Blank Columns in Spreadsheet - Excel API"
+title: "Aspose.Cells Cloud Web API - Delete Blank Columns in Spreadsheet"
 second_title: "Aspose.Cells Cloud"
+ArticleTitle: "Delete Blank Columns in a Spreadsheet"
 linktitle: "Delete Blank Columns"
 type: docs
 url: /delete-spreadsheet-blank-columns/
@@ -10,27 +11,16 @@ weight: 100
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Remove Blank Columns, Excel Worksheet Cleanup, Data Integrity, Data Management
 ---
 
-# **Excel API: DeleteSpreadsheetBlankColumns**
 
-## **Overview**
+Delete all blank columns that do not contain any data or other objects from an Excel spreadsheet.
 
-Efficiently delete all blank columns that do not contain any data or other objects from an Excel spreadsheet.
-
-## **Function Description**
-
-This method is designed to streamline Excel spreadsheets by removing columns that are completely empty, containing no data or objects.
-It scans through all sheets and identifies columns where every cell is empty.
-The operation is performed directly on the Excel file, ensuring that only columns with no content are deleted.
-This helps in organizing the data and removing unnecessary blank columns, making the spreadsheet more manageable and user-friendly.
-Users should ensure that the Excel file is backed up before performing this operation, as deleted columns cannot be recovered.
-
-## **API Endpoint**
+## **DeleteSpreadsheetBlankColumns AP**
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/delete/blank-columns
 ```
 
-## The request parameters of **deleteSpreadsheetBlankColumns** API are
+### **Request Parameters:**
 
 | Parameter Name | Type | Path/Query String/HTTP Body | Description |
 | :- | :- | :- |:- |
@@ -40,37 +30,47 @@ PUT http://api.aspose.cloud/v4.0/cells/delete/blank-columns
 |region|String|Query|The spreadsheet region setting.|
 |password|String|Query|The password for opening the spreadsheet file.|
 
-## **Response Structure**
+### **Response**
 
 ```json
-{
-File
-}
+[
+    {
+        "Name": "ResponseFile",
+        "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+        }
+    }
+]
 ```
 
-## Error Handling
+### Error Codes
 
-- **400 Bad Request**: Invalid URL.
-- **401 Unauthorized**: Authentication has failed, or no credentials were provided.
-- **404 Not Found**: Source file not accessible.
-- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining data.
+- **400 Bad Request**: Invalid Apose.Cells Cloud API URI.
+- **401 Unauthorized**: Invalid access token. Or invalid client id and secret.
+- **404 Not Found**: The spreadsheet file not accessible.
+- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
 
-## Usage Scenarios
+## Where should we use the Delete Spreadsheet Blank Columns API?
 
-## Key Features and Benefits
+When you need to transform data, you can use this API.
 
-- **Blank Column Identification**: This function identifies columns that do not contain any data or objects, ensuring thorough removal of unnecessary blank columns.
-- **Data Integrity**: By removing only truly empty columns, it maintains the integrity of your dataset, preventing accidental data loss.
-- **Efficiency**: Enhances the readability and usability of spreadsheets by eliminating extraneous blank columns.
-- **Usage Scenarios**: Ideal for cleaning large datasets where blank columns may interfere with data analysis or processing.
+## Why should you use the Delete Spreadsheet Blank Columns API?
 
-## OpenAPI Specification
+- Quickly delete all blank columns that do not contain any data or other objects from an Excel spreadsheet.
+- Development can be quickly completed through the existing SDK.
+
+## How to Use the Delete Spreadsheet Blank Columns API with SDKs
+
+### OpenAPI Specification
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/TransformController/DeleteSpreadsheetBlankColumns) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-## Excel API SDK
+### Use Aspose.Cells Cloud SDKs
 
-Using an SDK is the best way to speed up development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement delete spreadsheets blank columns for cells with minimal code.
+Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 
