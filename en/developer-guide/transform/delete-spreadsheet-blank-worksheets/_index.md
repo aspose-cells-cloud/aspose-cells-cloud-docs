@@ -1,6 +1,7 @@
 ---
-title: "Delete Blank Worksheets in Spreadsheet- Excel API"
+title: "Aspose.Cells Cloud Web API -  Delete Blank Worksheets in Spreadsheet"
 second_title: "Aspose.Cells Cloud"
+ArticleTitle: "Delete Blank Worksheets in a Spreadsheet"
 linktitle: "Delete Blank Worksheets"
 type: docs
 url: /delete-spreadsheet-blank-worksheets/
@@ -10,26 +11,15 @@ weight: 100
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Clean empty worksheets, Optimize workbook performance
 ---
 
-# **Excel API: DeleteSpreadsheetBlankWorksheets**
+Delete all blank worksheets that do not contain any data or other objects from an Excel spreadsheet.
 
-## **Overview**
-
-Efficiently delete all blank rows and worksheets that do not contain any data or other objects, ensuring a more organized spreadsheet.
-
-## **Function Description**
-
-This method removes completely empty rows and worksheets from a spreadsheet, identifying those where every cell is empty.
-The operation is performed directly on the spreadsheet, ensuring that only rows and worksheets with no content are deleted.
-This helps in cleaning up the spreadsheet, making data management easier and more efficient.
-Users should ensure that the spreadsheet is backed up before performing this operation, as deleted rows and worksheets cannot be recovered.
-
-## **API Endpoint**
+## **DeleteSpreadsheetBlankWorksheets API**
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/delete/blank-worksheets
 ```
 
-## The request parameters of **deleteSpreadsheetBlankWorksheets** API are
+### **Request Parameters:**
 
 | Parameter Name | Type | Path/Query String/HTTP Body | Description |
 | :- | :- | :- |:- |
@@ -61,16 +51,16 @@ PUT http://api.aspose.cloud/v4.0/cells/delete/blank-worksheets
 - **404 Not Found**: The spreadsheet file not accessible.
 - **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
 
-## Where should we use the Delete Spreadsheet Blank Worksheet API?
+## Where should we use the Delete Spreadsheet Blank Worksheets API?
 
 When you need to transform data, you can use this API.
 
-## Why should you use the Delete Spreadsheet Blank Worksheet API?
+## Why should you use the Delete Spreadsheet Blank Worksheets API?
 
-- Quickly delete all blank rows that do not contain any data or other objects from an Excel spreadsheet.
+- Quickly delete all blank worksheets that do not contain any data or other objects from an Excel spreadsheet.
 - Development can be quickly completed through the existing SDK.
 
-## How to Use the Delete Spreadsheet Blank Worksheet API with SDKs
+## How to Use the Delete Spreadsheet Blank Worksheets API with SDKs
 
 ### OpenAPI Specification
 

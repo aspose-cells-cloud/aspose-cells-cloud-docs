@@ -1,6 +1,7 @@
 ---
-title: "Delete Blank Rows in Spreadsheet- Excel API"
+title: "Aspose.Cells Cloud Web API - Delete Blank Rows in Spreadsheet"
 second_title: "Aspose.Cells Cloud"
+ArticleTitle: "Delete Blank Rows in a Spreadsheet"
 linktitle: "Delete Blank Rows"
 type: docs
 url: /delete-spreadsheet-blank-rows/
@@ -28,7 +29,7 @@ PUT http://api.aspose.cloud/v4.0/cells/delete/blank-rows
 |region|String|Query|The spreadsheet region setting.|
 |password|String|Query|The password for opening the spreadsheet file.|
 
-## **Response Structure**
+## **Response**
 
 ```json
 [
