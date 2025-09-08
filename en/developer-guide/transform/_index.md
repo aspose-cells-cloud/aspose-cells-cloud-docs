@@ -1,6 +1,7 @@
 ---
-title: "Transform Spreadsheet: Delete Empty Rows, Columns, and Worksheets"
+title: "Aspose.Cells Cloud Web API - Transform Spreadsheet: Swap Range Data, Delete Empty Rows, Columns, and Worksheets, and more."
 second_title: "Aspose.Cells Cloud"
+ArticleTitle: "Transform Spreadsheet: Swap Range Data, Delete Empty Rows, Columns, and Worksheets, and more."
 linktitle: "Transform"
 type: docs
 url: /transform/

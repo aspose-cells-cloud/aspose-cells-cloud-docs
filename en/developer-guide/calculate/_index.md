@@ -1,6 +1,7 @@
 ---
-title: "Excel Cloud API: Calculate"
+title: "Aspose.Cells Cloud Web API - Excel Calculate: Sum, Count, Average, Min, Max, Add, Subtract, Multiply, Divide, etc "
 second_title: "Aspose.Cells Cloud"
+ArticleTitle: "Excel Calculation: Sum, Count, Average, Min, Max, Add, Subtract, Multiply, Divide, etc"
 linktitle: "Calculate"
 type: docs
 url: /calculate/
@@ -10,5 +11,5 @@ weight: 20
 kwords: Excel, Office Cloud, REST API, Spreadsheet Manipulation, PDF Conversion, CSV Processing, JSON Handling, Markdown Support, Developer Guide, Calculate Functionality
 ---
 
-- **["Sum, Count, Average Value, etc by color in Spreadsheet/Excel"](https://docs.aspose.cloud/cells/aggregate-cells-by-color/)**
-- **["Add, Minus, Multiply, Divide and Percentage in Spreadsheet/Excel"](https://docs.aspose.cloud/cells/math-calculate/)**
+- **[Sum, Count, Average Value, etc by color in Spreadsheet/Excel](https://docs.aspose.cloud/cells/aggregate-cells-by-color/)**
+- **[Add, Minus, Multiply, Divide and Percentage in Spreadsheet/Excel](https://docs.aspose.cloud/cells/math-calculate/)**
