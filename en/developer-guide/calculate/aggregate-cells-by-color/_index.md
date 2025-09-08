@@ -14,6 +14,8 @@ kwords: Sum, Count, Average Value, Max Value, Min Value, Excel REST API, Spreads
 
 The API can perform data calculations, summation, and averaging, and can also find the maximum and minimum values in an Excel spreadsheet based on the fill or font color of the cells.
 
+### **Calculate Operations**
+
 | Calculate Operation | Description |
 | :- | :- |
 | Count | Determine the number of cells with the same color. |
