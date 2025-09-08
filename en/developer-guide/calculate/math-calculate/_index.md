@@ -11,9 +11,10 @@ weight: 100
 kwords: Math calculation,Cloud REST API, Add, Minus, Multiply, Divide, Percentage, Office Cloud, Aspose.Cells
 ---
 
-The API allows developers to perform addition, subtraction, multiplication, division, and percentage calculations on specified ranges of spreadsheets/Excel with a RESTful interface.
+Developers can use this API to perform addition, subtraction, multiplication, division, and percentage calculations on specified ranges of spreadsheets/Excel.
 
 | **Calculate Operation** | Description |
+| :- | :- |
 | **Add** |  |
 | **Minus** |  |
 | **Multiply** |  |
