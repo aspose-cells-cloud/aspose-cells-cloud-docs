@@ -11,3 +11,5 @@ kwords: Deep file compression vs. Quick compression; Comprehensive file repair v
 ---
 
 
+- **["Compress the data in an Excel file"](https://docs.aspose.cloud/cells/compress-excel-files/)**
+- **["Repair Excel Files"](https://docs.aspose.cloud/cells/repair-excel-files/)**

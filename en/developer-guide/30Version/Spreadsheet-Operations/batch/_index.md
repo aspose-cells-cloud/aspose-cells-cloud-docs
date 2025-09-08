@@ -10,3 +10,8 @@ weight: 35
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Batch, Conversion, Lock, Protect, Split, and Unlock.
 ---
 
+- **["Batch Convert Excel Files"](https://docs.aspose.cloud/cells/batch/convert)**
+- **["Batch Lock Excel Files"](https://docs.aspose.cloud/cells/batch/lock)**
+- **["Batch Protect Excel Files"](https://docs.aspose.cloud/cells/batch/protect)**
+- **["Batch Split"](https://docs.aspose.cloud/cells/batch/split)**
+- **["Batch Unlock"](https://docs.aspose.cloud/cells/batch/unlock)**

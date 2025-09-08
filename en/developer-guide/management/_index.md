@@ -10,3 +10,9 @@ weight: 50
 kwords: "Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Developer Guide, cloud spreadsheet management, content replacement, API documentation."
 ---
 
+- **["Add a worksheet to Spreadsheet"](https://docs.aspose.cloud/cells/add-worksheet-to-spreadsheet/)**
+- **["Compress the size of Spreadsheet"](https://docs.aspose.cloud/cells/compress-spreadsheet/)**
+- **["Create new Spreadsheet with Template - Timeline WorkPlan Table, Sales Data Comparison, etc"](https://docs.aspose.cloud/cells/create-spreadsheet/)**
+- **["Delete worksheet from Spreadsheet"](https://docs.aspose.cloud/cells/delete-worksheet-from-spreadsheet/)**
+- **["Move worksheet to new position in Spreadsheet"](https://docs.aspose.cloud/cells/move-worksheet-in-spreadsheet/)**
+- **["Rename worksheet in Spreadsheet"](https://docs.aspose.cloud/cells/rename-worksheet-in-spreadsheet/)**

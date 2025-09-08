@@ -9,3 +9,7 @@ description: "Aspose.Cells Cloud REST API support working with merger and splitt
 weight: 20
 ---
 
+- **["Add Text to Excel: Efficiently Insert Data with Spreadsheet WEB API"](https://docs.aspose.cloud/cells/excel-add-text/)**
+- **["Remove Characters from Excel: Efficiently Insert Data with Spreadsheet WEB API"](https://docs.aspose.cloud/cells/excel-remove-characters/)**
+- **["Trim content: Fix Excel Spaces & Line Breaks"](https://docs.aspose.cloud/cells/spreadsheet-trim-content/)**
+- **["Update Word Case"](https://docs.aspose.cloud/cells/post-update-word-case/)**
