@@ -1,6 +1,7 @@
 ---
-title: "Search Spreadsheet Content - Excel API"
+title: "Aspose.Cells Cloud Web API - Search Spreadsheet Content"
 second_title: "Aspose.Cells Cloud"
+ArticleTitle: "Search Spreadsheet Content"
 linktitle: "Search Spreadsheet Content"
 type: docs
 url: /search-spreadsheet-content/
@@ -10,23 +11,15 @@ weight: 100
 kwords: Excel, Office Cloud, REST API, Spreadsheet Search, PDF Export, CSV Handling, JSON Formatting, Markdown Integration, Match Empty Cells in Excel
 ---
 
-# **Excel API : SearchSpreadsheetContent**
+Search for text within local spreadsheet files using our API.
 
-Efficiently search for text within local spreadsheet files using our API.
-
-## **Interface Details**
-
-### **Endpoint**
+## **Search Spreadsheet Content API**
 
 ```
 PUT http://api.aspose.cloud/v4.0/cells/search/content
 ```
 
-### **Function Description**
-
-This method searches for specified text within a local spreadsheet file. It supports searching through all sheets and cells of the workbook, identifying occurrences of the search term. The operation is performed in the cloud, requiring no cloud storage. Ensure that you have the necessary permissions to read the source file. If the source file cannot be accessed or if an error occurs during the search process (such as an unsupported file format), an appropriate exception will be thrown. The method may return the locations of the matches (e.g., sheet name, cell coordinates) depending on implementation details. Users should specify the exact search criteria, including case sensitivity and whole word matching options, to refine search results.
-
-### The request parameters of **searchSpreadsheetContent** API are
+### **Request Parameters:**
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 | :- | :- | :- |:- |
@@ -38,62 +31,67 @@ This method searches for specified text within a local spreadsheet file. It supp
 |region|String|Query|The region setting for the spreadsheet.|
 |password|String|Query|The password required to open the spreadsheet file.|
 
-### **Response Description**
+### **Response**
 
 ```json
 {
-  "Name": "SearchResponse",
+  "Name": "BrokenLinksResponse",
   "Type": "Class",
   "ParentName": "CellsCloudResponse",
-  "IsAbstract": false,
   "Properties": [
     {
-      "Name": "TextItems",
-      "Nullable": true,
-      "ReadOnly": false,
-      "IsInherit": false,
+      "Name": "BrokenLinks",
       "DataType": {
         "Identifier": "Container",
-        "Reference": "TextItem",
+        "Reference": "BrokenLink",
         "ElementDataType": {
           "Identifier": "Class",
-          "Reference": "TextItem",
-          "Name": "class:textitem"
+          "Reference": "BrokenLink",
         },
-        "Name": "container"
       }
     },
     {
       "Name": "Code",
-      "Nullable": true,
-      "ReadOnly": false,
-      "IsInherit": true,
       "DataType": {
         "Identifier": "Integer",
-        "Name": "integer"
       }
     },
     {
       "Name": "Status",
-      "Nullable": true,
-      "ReadOnly": false,
-      "IsInherit": true,
       "DataType": {
         "Identifier": "String",
-        "Name": "string"
       }
     }
   ]
 }
 ```
 
-## OpenAPI Specification
+### Error Codes
+
+- **400 Bad Request**: Invalid Apose.Cells Cloud API URI.
+- **401 Unauthorized**: Invalid access token. Or invalid client id and secret.
+- **404 Not Found**: The spreadsheet file not accessible.
+- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
+
+## Where should we use the Search content within the Spreadsheet API?
+
+When you need to Search content within the Spreadsheet, you can use this API.
+
+## Why should you use the Search content within the Spreadsheet API?
+
+- Effortlessly search content within a spreadsheet with this API.
+- Development can be quickly completed through the existing SDK.
+
+## How to Use the Search for broken links within the Spreadsheet API with SDKs
+
+### OpenAPI Specification
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/SearchControllor/SearchSpreadsheetContent) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-## Excel API SDK
+### Use Aspose.Cells Cloud SDKs
 
-Using an SDK is the best way to speed up development. An SDK handles low-level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement search content within spreadsheets for cells with minimal code.
+Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 

@@ -1,6 +1,7 @@
 ---
-title: "Search Range Content in Remote Spreadsheet - Excel API"
+title: "Aspose.Cells Cloud Web API - Search Range Content in Remote Spreadsheet"
 second_title: "Aspose.Cells Cloud"
+ArticleTitle: "Search Range Content in Remote Spreadsheet"
 linktitle: "Search Remote Range Content"
 type: docs
 url: /search-content-in-remote-range/
@@ -10,23 +11,16 @@ weight: 100
 kwords: "Excel, Office Cloud, REST API, Spreadsheet, Text Search, JSON, CSV, PDF, Markdown, Match Blank Cells in Excel"
 ---
 
-# **Excel API : SearchContentInRemoteRange**
 
-Efficiently search for specified text within a range of a remote spreadsheet.
+Search for specified text within a range of a remote spreadsheet.
 
-## **Interface Details**
-
-### **Endpoint**
+## **Search Content In Remote Range API**
 
 ```
 PUT http://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{cellArea}/search/content
 ```
 
-### **Function Description**
-
-This method allows you to search for specific text within a range of a spreadsheet file stored in remote cloud storage. It supports searching through all sheets and cells of the workbook and identifies occurrences of the search term directly within the cloud environment. The operation is performed remotely, eliminating the need to download the file to the local machine. Ensure that you have valid cloud storage credentials and accessible file paths or identifiers for the target spreadsheet. If the source file cannot be accessed, permissions are insufficient, or if an error occurs during the search process (such as an unsupported file format), an appropriate exception will be thrown. Depending on the implementation, the method may return the locations of the matches (e.g., sheet name, cell coordinates). Users should specify the exact search criteria, including case sensitivity and whole word matching options, to refine search results.
-
-### The request parameters of **searchContentInRemoteRange** API are
+### **Request Parameters:**
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 | :- | :- | :- |:- |
@@ -40,62 +34,67 @@ This method allows you to search for specific text within a range of a spreadshe
 |regoin|String|Query|The spreadsheet region setting.|
 |password|String|Query|The password for opening the spreadsheet file.|
 
-### **Response Description**
+### **Response**
 
 ```json
 {
-  "Name": "SearchResponse",
+  "Name": "BrokenLinksResponse",
   "Type": "Class",
   "ParentName": "CellsCloudResponse",
-  "IsAbstract": false,
   "Properties": [
     {
-      "Name": "TextItems",
-      "Nullable": true,
-      "ReadOnly": false,
-      "IsInherit": false,
+      "Name": "BrokenLinks",
       "DataType": {
         "Identifier": "Container",
-        "Reference": "TextItem",
+        "Reference": "BrokenLink",
         "ElementDataType": {
           "Identifier": "Class",
-          "Reference": "TextItem",
-          "Name": "class:textitem"
+          "Reference": "BrokenLink",
         },
-        "Name": "container"
       }
     },
     {
       "Name": "Code",
-      "Nullable": true,
-      "ReadOnly": false,
-      "IsInherit": true,
       "DataType": {
         "Identifier": "Integer",
-        "Name": "integer"
       }
     },
     {
       "Name": "Status",
-      "Nullable": true,
-      "ReadOnly": false,
-      "IsInherit": true,
       "DataType": {
         "Identifier": "String",
-        "Name": "string"
       }
     }
   ]
 }
 ```
 
-## OpenAPI Specification
+### Error Codes
+
+- **400 Bad Request**: Invalid Apose.Cells Cloud API URI.
+- **401 Unauthorized**: Invalid access token. Or invalid client id and secret.
+- **404 Not Found**: The spreadsheet file not accessible.
+- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
+
+## Where should we use the Search content within the range of Spreadsheet API?
+
+When you need to Search content within the range of Spreadsheet, you can use this API.
+
+## Why should you use the Search content within the range of Spreadsheet API?
+
+- Effortlessly search content within a remote spreadsheet range with this API.
+- Development can be quickly completed through the existing SDK.
+
+## How to Use the Search for broken links within the range of the Spreadsheet API with SDKs
+
+### OpenAPI Specification
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/SearchControllor/SearchContentInRemoteRange) defines a publicly accessible programming interface and allows you to carry out REST interactions directly from a web browser.
 
-## Excel API SDK
+### Use Aspose.Cells Cloud SDKs
 
-Using an SDK is the best way to expedite development. An SDK handles low-level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement search content within range of spreadsheets for cells with minimal code.
+Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 

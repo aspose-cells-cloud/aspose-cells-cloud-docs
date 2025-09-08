@@ -1,6 +1,7 @@
 ---
-title: "Search Spreadsheet Broken Links - Excel API"
+title: "Aspose.Cells Cloud Web API - Search Spreadsheet Broken Links in a Spreadsheet"
 second_title: "Aspose.Cells Cloud"
+ArticleTitle: "Search Spreadsheet Broken Links in a Spreadsheet"
 linktitle: "Search Spreadsheet Broken Links"
 type: docs
 url: /search-spreadsheet-broken-links/
@@ -10,23 +11,15 @@ weight: 100
 kwords: "Excel API, search broken links, Office Cloud, REST API, Spreadsheet management, PDF, CSV, JSON, Markdown, identify broken links, repair hyperlinks"
 ---
 
-# **Excel API : SearchSpreadsheetBrokenLinks**
+Search for broken links within local spreadsheets.
 
-Efficiently search for broken links within local spreadsheets.
-
-## **Interface Details**
-
-### **Endpoint**
+## **Search Spreadsheet Broken Links API**
 
 ```
 PUT http://api.aspose.cloud/v4.0/cells/search/broken-links
 ```
 
-### **Function Description**
-
-This method identifies broken links within a local spreadsheet file by scanning all sheets and cells to detect hyperlinks that point to invalid destinations, such as dead URLs or missing references. The operation is executed in the cloud, requiring no cloud storage. Ensure the necessary permissions are in place to read the source file. If the source file is inaccessible, contains unsupported formats, or if an error occurs during the search process, an appropriate exception will be thrown. The method may return a list of broken links, detailing the sheet name, cell coordinates, and the problematic URL. Users are advised to review the results carefully to update or remove invalid links.
-
-### The request parameters of **searchSpreadsheetBrokenLinks** API are
+### **Request Parameters:**
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 | :- | :- | :- |:- |
@@ -36,62 +29,67 @@ This method identifies broken links within a local spreadsheet file by scanning 
 |region|String|Query|Set the spreadsheet region configuration.|
 |password|String|Query|Provide the password for accessing the spreadsheet file.|
 
-### **Response Description**
+### **Response**
 
 ```json
 {
   "Name": "BrokenLinksResponse",
   "Type": "Class",
   "ParentName": "CellsCloudResponse",
-  "IsAbstract": false,
   "Properties": [
     {
       "Name": "BrokenLinks",
-      "Nullable": true,
-      "ReadOnly": false,
-      "IsInherit": false,
       "DataType": {
         "Identifier": "Container",
         "Reference": "BrokenLink",
         "ElementDataType": {
           "Identifier": "Class",
           "Reference": "BrokenLink",
-          "Name": "class:brokenlink"
         },
-        "Name": "container"
       }
     },
     {
       "Name": "Code",
-      "Nullable": true,
-      "ReadOnly": false,
-      "IsInherit": true,
       "DataType": {
         "Identifier": "Integer",
-        "Name": "integer"
       }
     },
     {
       "Name": "Status",
-      "Nullable": true,
-      "ReadOnly": false,
-      "IsInherit": true,
       "DataType": {
         "Identifier": "String",
-        "Name": "string"
       }
     }
   ]
 }
 ```
 
-## OpenAPI Specification
+### Error Codes
+
+- **400 Bad Request**: Invalid Apose.Cells Cloud API URI.
+- **401 Unauthorized**: Invalid access token. Or invalid client id and secret.
+- **404 Not Found**: The spreadsheet file not accessible.
+- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
+
+## Where should we use the Search broken links within the Spreadsheet API?
+
+When you need to Search broken links within the Spreadsheet, you can use this API.
+
+## Why should you use the Search broken links within the Spreadsheet API?
+
+- Effortlessly search broken links within a remote spreadsheet with this API.
+- Development can be quickly completed through the existing SDK.
+
+## How to Use the Search for broken links within the Spreadsheet API with SDKs
+
+### OpenAPI Specification
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/SearchController/SearchSpreadsheetBrokenLinks) defines a publicly accessible programming interface, allowing you to carry out REST interactions directly from a web browser.
 
-## Excel API SDK
+### Use Aspose.Cells Cloud SDKs
 
-Using an SDK is the best way to expedite development. An SDK manages low-level details, enabling you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement search broken links within spreadsheets for cells with minimal code.
+Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples illustrate how to make calls to Aspose.Cells web services using various SDKs:
 

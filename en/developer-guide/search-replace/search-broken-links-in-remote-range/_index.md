@@ -1,6 +1,7 @@
 ---
-title: "Search Broken Links of Range in Remote Spreadsheet - Excel API"
+title: "Aspose.Cells Cloud Web API - Search Broken Links of Range in Remote Spreadsheet"
 second_title: "Aspose.Cells Cloud"
+ArticleTitle: "Search Broken Links of Range in Remote a Spreadsheet"
 linktitle: "Search Remote Range Broken Links"
 type: docs
 url: /search-broken-links-in-remote-range/
@@ -10,23 +11,15 @@ weight: 100
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, broken links, hyperlink validation, cloud storage
 ---
 
-# **Excel API: SearchBrokenLinksInRemoteRange**
-
 Efficiently search for broken links within a specified range of a remote spreadsheet stored in cloud storage.
 
-## **Interface Details**
-
-### **Endpoint**
+## **Search Broken Links In Remote Range API**
 
 ```
 PUT http://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{cellArea}/search/broken-links
 ```
 
-### **Function Description**
-
-This method searches for broken links within a range of a spreadsheet file stored in remote cloud storage. It scans all sheets and cells to identify hyperlinks that no longer point to valid destinations, such as dead URLs or missing external references. The operation is performed remotely within the cloud environment, eliminating the need to download the file to the local machine. Ensure that you have valid cloud storage credentials and proper access permissions to the target file. If the source file cannot be accessed, contains unsupported formats, or if an error occurs during the scanning process, an appropriate exception will be thrown. Depending on the implementation, the method may return a list of broken links with details such as sheet name, cell coordinates, and the invalid URL. Users should carefully review the results to update or remove outdated links in the spreadsheet.
-
-### The request parameters of **searchBrokenLinksInRemoteRange** API are
+### **Request Parameters:**
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 | :- | :- | :- |:- |
@@ -38,62 +31,67 @@ This method searches for broken links within a range of a spreadsheet file store
 | region | String | Query | The spreadsheet region setting. |
 | password | String | Query | The password for opening the spreadsheet file. |
 
-### **Response Description**
+### **Response**
 
 ```json
 {
   "Name": "BrokenLinksResponse",
   "Type": "Class",
   "ParentName": "CellsCloudResponse",
-  "IsAbstract": false,
   "Properties": [
     {
       "Name": "BrokenLinks",
-      "Nullable": true,
-      "ReadOnly": false,
-      "IsInherit": false,
       "DataType": {
         "Identifier": "Container",
         "Reference": "BrokenLink",
         "ElementDataType": {
           "Identifier": "Class",
           "Reference": "BrokenLink",
-          "Name": "class:brokenlink"
         },
-        "Name": "container"
       }
     },
     {
       "Name": "Code",
-      "Nullable": true,
-      "ReadOnly": false,
-      "IsInherit": true,
       "DataType": {
         "Identifier": "Integer",
-        "Name": "integer"
       }
     },
     {
       "Name": "Status",
-      "Nullable": true,
-      "ReadOnly": false,
-      "IsInherit": true,
       "DataType": {
         "Identifier": "String",
-        "Name": "string"
       }
     }
   ]
 }
 ```
 
-## OpenAPI Specification
+### Error Codes
+
+- **400 Bad Request**: Invalid Apose.Cells Cloud API URI.
+- **401 Unauthorized**: Invalid access token. Or invalid client id and secret.
+- **404 Not Found**: The spreadsheet file not accessible.
+- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
+
+## Where should we use the Search for broken links within the range of the Spreadsheet API?
+
+When you need to Search for broken links within the range of the Spreadsheet, you can use this API.
+
+## Why should you use the Search for broken links within the range of the Spreadsheet API?
+
+- Quickly Search for broken links within the range of the Spreadsheet.
+- Development can be quickly completed through the existing SDK.
+
+## How to Use the Search for broken links within the range of the Spreadsheet API with SDKs
+
+### OpenAPI Specification
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/SearchControllor/SearchBrokenLinksInRemoteRange) defines a publicly accessible programming interface and allows you to carry out REST interactions directly from a web browser.
 
-## Excel API SDK
+### Use Aspose.Cells Cloud SDKs
 
-Using an SDK is the best way to speed up development. An SDK handles low-level details and allows you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement search broken within range of spreadsheets for cells with minimal code.
+Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 
