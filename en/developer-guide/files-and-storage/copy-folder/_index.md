@@ -10,11 +10,7 @@ weight: 100
 kwords: "Excel, Office Cloud, REST API, Copy Folder, File Management, PDF, CSV, JSON, Markdown, Match all blank cells in an Excel worksheet"
 ---
 
-# **Excel API: Copy Folder**
-
-## **Interface Details**
-
-### **Endpoint**
+## **Excel API: Copy Folder**
 
 ```
 PUT http://api.aspose.cloud/v4.0/cells/storage/folder/copy/{srcPath}
@@ -24,7 +20,7 @@ PUT http://api.aspose.cloud/v4.0/cells/storage/folder/copy/{srcPath}
 
 The **CopyFolder** API allows users to duplicate an existing folder within the Aspose.Cells cloud storage. This functionality is essential for managing files efficiently, enabling users to create backups or organize their work without manually transferring contents.
 
-### The request parameters of the **CopyFolder** API are:
+### The request parameters of the **CopyFolder** API are
 
 | Parameter Name       | Type   | Path/Query String/HTTPBody | Description                               |
 |----------------------|--------|-----------------------------|-------------------------------------------|
@@ -34,6 +30,7 @@ The **CopyFolder** API allows users to duplicate an existing folder within the A
 | destStorageName      | String | Query                       | The name of the destination storage where the folder should be copied. |
 
 ### **Response Description**
+
 ```json
 {
 Void

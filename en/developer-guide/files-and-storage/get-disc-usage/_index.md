@@ -10,26 +10,24 @@ weight: 100
 kwords: "Disk Usage, Excel API, Aspose Cloud, REST API, Storage Information, SDK Examples, Programming Interface"
 ---
 
-# **Excel API : GetDiskUsage**
-
-## **Interface Details**
-
-### **Endpoint** 
+## **Excel API : GetDiskUsage**
 
 ```
 GET http://api.aspose.cloud/v4.0/cells/storage/disk
 ```
 
 ### **Function Description**
+
 This API endpoint retrieves the current disk usage for the Excel API in the Aspose Cloud environment, allowing developers to monitor the storage space used by their applications.
 
-### The request parameters of **getDiskUsage** API are: 
+### The request parameters of **getDiskUsage** API are
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description | 
-| :- | :- | :- |:- | 
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+| :- | :- | :- |:- |
 |storageName|String|Query|The name of the storage to retrieve disk usage for.|
 
 ### **Response Description**
+
 ```json
 {
   "Name": "DiskUsage",
@@ -73,7 +71,7 @@ This API endpoint retrieves the current disk usage for the Excel API in the Aspo
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/StorageController/GetDiskUsage) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-## Excel API SDK 
+## Excel API SDK
 
 Using an SDK is the best way to speed up development. An SDK handles low-level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

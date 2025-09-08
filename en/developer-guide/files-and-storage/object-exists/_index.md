@@ -10,11 +10,7 @@ weight: 100
 kwords: "Excel API, Object Exists, REST API, Aspose, Office Cloud, File Management, Spreadsheet, PDF, CSV, JSON, Markdown, Check file existence in Excel"
 ---
 
-# **Excel API: Object Exists**
-
-## **Interface Details**
-
-### **Endpoint** 
+## **Excel API: Object Exists**
 
 ```
 GET http://api.aspose.cloud/v4.0/cells/storage/exist/{path}
@@ -24,15 +20,16 @@ GET http://api.aspose.cloud/v4.0/cells/storage/exist/{path}
 
 The `objectExists` API allows developers to verify the existence of a specified file or folder within the Aspose.Cells cloud storage.
 
-### The request parameters of **objectExists** API are: 
+### The request parameters of **objectExists** API are
 
-| Parameter Name | Type | Path/Query String/HTTP Body | Description | 
-| :- | :- | :- |:- | 
+| Parameter Name | Type | Path/Query String/HTTP Body | Description |
+| :- | :- | :- |:- |
 |path|String|Path|The path to the file or folder in the cloud storage.|
 |storageName|String|Query|The name of the storage where the file is located.|
 |versionId|String|Query|The version ID of the file (if applicable).|
 
 ### **Response Description**
+
 ```json
 {
   "Name": "ObjectExist",
@@ -76,7 +73,7 @@ The `objectExists` API allows developers to verify the existence of a specified 
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/StorageController/ObjectExists) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-## Excel API SDK 
+## Excel API SDK
 
 Using an SDK is the best way to speed up development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

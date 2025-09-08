@@ -10,11 +10,7 @@ weight: 100
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Download Excel File, Retrieve Blank Cells
 ---
 
-# **Excel API: Download File**
-
-## **Interface Details**
-
-### **Endpoint** 
+## **Excel API: Download File**
 
 ```
 GET http://api.aspose.cloud/v4.0/cells/storage/file/{path}
@@ -22,18 +18,18 @@ GET http://api.aspose.cloud/v4.0/cells/storage/file/{path}
 
 ### **Function Description**
 
-The **downloadFile** API allows you to retrieve files stored in the Aspose Cloud storage. This functionality is essential for managing and accessing various file formats, including Excel spreadsheets, PDFs, and CSVs. 
+The **downloadFile** API allows you to retrieve files stored in the Aspose Cloud storage. This functionality is essential for managing and accessing various file formats, including Excel spreadsheets, PDFs, and CSVs.
 
-### The request parameters of **downloadFile** API are: 
+### The request parameters of **downloadFile** API are
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description | 
-| :- | :- | :- |:- | 
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+| :- | :- | :- |:- |
 | path | String | Path | The path to the file you want to download. |
 | storageName | String | Query | The name of the storage from which the file will be retrieved. |
 | versionId | String | Query | The version identifier of the file to download, if applicable. |
 
-
 ### **Response Description**
+
 ```json
 [
     {
@@ -51,7 +47,7 @@ The **downloadFile** API allows you to retrieve files stored in the Aspose Cloud
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/FileController/DownloadFile) defines a publicly accessible programming interface and allows you to perform REST interactions directly from a web browser.
 
-## Excel API SDK 
+## Excel API SDK
 
 Using an SDK is the best way to speed up development. An SDK handles low-level details and enables you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

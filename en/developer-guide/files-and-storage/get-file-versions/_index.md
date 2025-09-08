@@ -10,11 +10,7 @@ weight: 100
 kwords: "Get File Versions, Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, document management"
 ---
 
-# **Excel API: Get File Versions**
-
-## **Interface Details**
-
-### **Endpoint** 
+## **Excel API: Get File Versions**
 
 ```
 GET http://api.aspose.cloud/v4.0/cells/storage/version/{path}
@@ -24,14 +20,15 @@ GET http://api.aspose.cloud/v4.0/cells/storage/version/{path}
 
 The **GetFileVersions** API allows users to retrieve the different versions of a specified file stored in the Aspose.Cells Cloud. This functionality is crucial for maintaining document integrity and tracking changes over time.
 
-### The request parameters of **GetFileVersions** API are: 
+### The request parameters of **GetFileVersions** API are
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description | 
-| :- | :- | :- |:- | 
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+| :- | :- | :- |:- |
 | path | String | Path | The path to the file for which versions are to be retrieved. |
 | storageName | String | Query | The name of the storage where the file is located. |
 
 ### **Response Description**
+
 ```json
 {
   "Name": "FileVersions",
@@ -68,12 +65,11 @@ The **GetFileVersions** API allows users to retrieve the different versions of a
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/StorageController/GetFileVersions) provides a comprehensive programming interface for executing REST interactions directly from a web browser.
 
-## Excel API SDK 
+## Excel API SDK
 
 Utilizing an SDK streamlines development by abstracting low-level complexities, allowing developers to focus on core functionalities. Explore the [GitHub repository](https://github.com/aspose-cells-cloud) for a full list of Aspose.Cells Cloud SDKs.
 
 The following code examples illustrate how to interact with Aspose.Cells web services across various programming languages:
-
 
 {{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 {{<tab tabNum="1" >}}

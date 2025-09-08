@@ -10,11 +10,7 @@ weight: 100
 kwords: "Create Folder, Excel API, Office Cloud, REST API, Cloud Storage, Folder Management, Match all blank cells in an Excel worksheet"
 ---
 
-# **Excel API: Create Folder**
-
-## **Interface Details**
-
-### **Endpoint**
+## **Excel API: Create Folder**
 
 ```
 PUT http://api.aspose.cloud/v4.0/cells/storage/folder/{path}
@@ -24,7 +20,7 @@ PUT http://api.aspose.cloud/v4.0/cells/storage/folder/{path}
 
 The **createFolder** API allows users to create a new folder in the specified path within the cloud storage of the Excel API. This functionality is essential for organizing files and maintaining a structured directory.
 
-### The request parameters of **createFolder** API are:
+### The request parameters of **createFolder** API are
 
 | Parameter Name | Type   | Path/Query String/HTTP Body | Description                           |
 |----------------|--------|------------------------------|---------------------------------------|
@@ -32,6 +28,7 @@ The **createFolder** API allows users to create a new folder in the specified pa
 | storageName    | String | Query                        | The name of the storage to use.      |
 
 ### **Response Description**
+
 ```json
 {
 Void

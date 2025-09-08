@@ -10,28 +10,26 @@ weight: 100
 kwords: "Excel API, Office Cloud, REST API, Spreadsheet management, PDF, CSV, JSON, Markdown, delete folder in Excel worksheets"
 ---
 
-# **Excel API : Delete Folder**
-
-## **Interface Details**
-
-### **Endpoint** 
+## **Excel API : Delete Folder**
 
 ```
 DELETE http://api.aspose.cloud/v4.0/cells/storage/folder/{path}
 ```
 
 ### **Function Description**
+
 The `deleteFolder` API allows users to remove a specified folder from the cloud storage associated with Aspose.Cells. This can be useful for maintaining organization and managing storage effectively.
 
-### The request parameters of **deleteFolder** API are: 
+### The request parameters of **deleteFolder** API are
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description | 
-| :- | :- | :- |:- | 
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+| :- | :- | :- |:- |
 | path | String | Path | The path of the folder to be deleted. |
 | storageName | String | Query | The name of the storage where the folder is located. |
 | recursive | Boolean | Query | Indicates if the deletion should be recursive, removing all contents within the folder as well. |
 
 ### **Response Description**
+
 ```json
 {
 Void
@@ -42,7 +40,7 @@ Void
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/FolderController/DeleteFolder) defines a publicly accessible programming interface and allows you to perform REST interactions directly from a web browser.
 
-## Excel API SDK 
+## Excel API SDK
 
 Using an SDK is the best way to speed up development. An SDK handles low-level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

@@ -10,11 +10,7 @@ weight: 100
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Match all blank cells in an Excel worksheet
 ---
 
-# **Excel API : Storage Exists**
-
-## **Interface Details**
-
-### **Endpoint** 
+## **Excel API : Storage Exists**
 
 ```
 GET http://api.aspose.cloud/v4.0/cells/storage/{storageName}/exist
@@ -24,13 +20,14 @@ GET http://api.aspose.cloud/v4.0/cells/storage/{storageName}/exist
 
 The **storageExists** API checks whether a specified storage exists in the Aspose.Cells cloud service. This functionality is critical for ensuring that all operations dependent on storage can proceed without errors.
 
-### The request parameters of **storageExists** API are: 
+### The request parameters of **storageExists** API are
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description | 
-| :- | :- | :- |:- | 
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+| :- | :- | :- |:- |
 |storageName|String|Path|The name of the storage to check for existence.|
 
 ### **Response Description**
+
 ```json
 {
   "Name": "StorageExist",
@@ -62,7 +59,7 @@ The **storageExists** API checks whether a specified storage exists in the Aspos
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/StorageController/StorageExists) defines a publicly accessible programming interface, allowing developers to seamlessly interact with the REST API directly from a web browser.
 
-## Excel API SDK 
+## Excel API SDK
 
 Utilizing an SDK is the most efficient approach to accelerate development. An SDK abstracts low-level implementation details, enabling developers to concentrate on their project tasks. For a comprehensive list of available Aspose.Cells Cloud SDKs, please visit the [GitHub repository](https://github.com/aspose-cells-cloud).
 

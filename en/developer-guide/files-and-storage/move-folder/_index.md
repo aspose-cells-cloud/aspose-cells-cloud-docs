@@ -10,11 +10,7 @@ weight: 100
 kwords: "Excel API, Move folder API, Office Cloud, REST API, Spreadsheet management, PDF, CSV, JSON, Markdown, Match all blank cells in an Excel worksheet"
 ---
 
-# **Excel API: Move Folder**
-
-## **Interface Details**
-
-### **Endpoint** 
+## **Excel API: Move Folder**
 
 ```
 PUT http://api.aspose.cloud/v4.0/cells/storage/folder/move/{srcPath}
@@ -24,16 +20,17 @@ PUT http://api.aspose.cloud/v4.0/cells/storage/folder/move/{srcPath}
 
 This API allows users to move a folder from one location to another within the Aspose.Cells cloud storage. It is essential for organizing files and managing cloud storage effectively.
 
-### The request parameters of **moveFolder** API are: 
+### The request parameters of **moveFolder** API are
 
-| Parameter Name       | Type   | Path/Query String/HTTP Body | Description                                                  | 
-|----------------------|--------|------------------------------|--------------------------------------------------------------| 
+| Parameter Name       | Type   | Path/Query String/HTTP Body | Description                                                  |
+|----------------------|--------|------------------------------|--------------------------------------------------------------|
 | srcPath              | String | Path                         | The source path of the folder to be moved.                  |
 | destPath             | String | Query                        | The destination path where the folder should be moved.      |
 | srcStorageName       | String | Query                        | The name of the source storage.                              |
 | destStorageName      | String | Query                        | The name of the destination storage.                         |
 
 ### **Response Description**
+
 ```json
 {
 Void
@@ -44,7 +41,7 @@ Void
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/FolderController/MoveFolder) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-## Excel API SDK 
+## Excel API SDK
 
 Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

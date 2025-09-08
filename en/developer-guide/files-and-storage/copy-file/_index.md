@@ -10,11 +10,7 @@ weight: 100
 kwords: "Excel API, Office Cloud, REST API, Spreadsheet Copy, PDF Conversion, CSV Export, JSON Handling, Markdown Support, Copy Excel File, Match Blank Cells"
 ---
 
-# **Excel API: Copy File**
-
-## **Interface Details**
-
-### **Endpoint** 
+## **Excel API: Copy File**
 
 ```
 PUT http://api.aspose.cloud/v4.0/cells/storage/file/copy/{srcPath}
@@ -24,10 +20,10 @@ PUT http://api.aspose.cloud/v4.0/cells/storage/file/copy/{srcPath}
 
 The **copyFile** API allows users to duplicate an Excel file from a specified source path to a destination path, supporting various storage options.
 
-### The request parameters of **copyFile** API are: 
+### The request parameters of **copyFile** API are
 
-| Parameter Name       | Type   | Path/Query String/HTTPBody | Description                                  | 
-| -------------------- | ------ | --------------------------- | -------------------------------------------- | 
+| Parameter Name       | Type   | Path/Query String/HTTPBody | Description                                  |
+| -------------------- | ------ | --------------------------- | -------------------------------------------- |
 | srcPath              | String | Path                        | The source path of the file to be copied.   |
 | destPath             | String | Query                       | The destination path where the file will be saved. |
 | srcStorageName       | String | Query                       | The name of the source storage.              |
@@ -35,6 +31,7 @@ The **copyFile** API allows users to duplicate an Excel file from a specified so
 | versionId            | String | Query                       | Optional version ID of the file to copy.    |
 
 ### **Response Description**
+
 ```json
 {
 Void
@@ -45,7 +42,7 @@ Void
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/FileController/CopyFile) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-## Excel API SDK 
+## Excel API SDK
 
 Using an SDK is the best way to speed up development. An SDK manages low-level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
