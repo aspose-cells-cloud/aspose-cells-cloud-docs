@@ -63,16 +63,16 @@ PUT http://api.aspose.cloud/v4.0/cells/calculate/math
 
 ## Where should we use the Math Calculate API?
 
-The mathematical computation API is suitable for batch calculations on spreadsheets.
+The math calculation API is suitable for batch calculations on spreadsheets.
 
 ## Why should you use the Math Calculate API?
 
-- Perform batch mathematical calculations.
+- Perform batch math calculations.
 - Development can be quickly completed through the existing SDK.
 
 ## How to Use the Math Calculate API with SDKs
 
-### OpenAPI Specification
+### Math Calculate API Specification
 
 The [Math Calculate Specification](https://reference.aspose.cloud/cells/#/CalculateController/MathCalculate) defines a publicly accessible programming interface, allowing developers to interact with the API directly from a web browser.
 
