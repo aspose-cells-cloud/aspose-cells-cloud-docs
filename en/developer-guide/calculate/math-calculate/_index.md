@@ -15,11 +15,11 @@ Developers can use this API to perform addition, subtraction, multiplication, di
 
 | **Calculate Operation** | Description |
 | :- | :- |
-| **Add** |  |
-| **Minus** |  |
-| **Multiply** |  |
-| **Divide** |  |
-| **Percentage** |  |
+| **Add** |  + |
+| **Minus** | -  |
+| **Multiply** | *  |
+| **Divide** |  / |
+| **Percentage** |  % |
 
 ## **Math Calculate API**
 
@@ -74,11 +74,11 @@ The mathematical computation API is suitable for batch calculations on spreadshe
 
 ### OpenAPI Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/CalculateController/MathCalculate) defines a publicly accessible programming interface, allowing developers to interact with the API directly from a web browser.
+The [Math Calculate Specification](https://reference.aspose.cloud/cells/#/CalculateController/MathCalculate) defines a publicly accessible programming interface, allowing developers to interact with the API directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement math calculations for cells with minimal code.
+Using the SDK is the fastest way to develop, as it abstracts away the low-level details, allowing you to math calculations by cell with just a short code.
 Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:

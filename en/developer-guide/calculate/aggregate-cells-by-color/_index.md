@@ -5,16 +5,13 @@ ArticleTitle: "Sum, Count, Average Value, etc by color in Spreadsheet/Excel"
 LinkTitle: "Aggregate Cells by Color"
 type: docs
 url: /aggregate-cells-by-color/
-keywords: "Sum, Count, Average Value, Max Value, Min Value, Excel REST API, Spreadsheet Operations, Aspose.Cells, Excel"
-description: "The API can perform data calculations, summation, and averaging, and can also find the maximum and minimum values in an Excel spreadsheet based on the fill or font color of the cells."
+keywords: "Sum, Count, Average Value, Max Value, Min Value, Excel REST API, Spreadsheet Operations, Aspose.Cells, Excel Cloud API"
+description: "The Aspose.Cells Cloud Web API(Excel Cloud API) can perform data calculations, summation, and averaging, and can also find the maximum and minimum values in an Excel spreadsheet based on the fill or font color of the cells."
 weight: 100
-kwords: Sum, Count, Average Value, Max Value, Min Value, Excel REST API, Spreadsheet Operations, Aspose.Cells, Excel
+kwords: Sum, Count, Average Value, Max Value, Min Value, Excel REST API, Spreadsheet Operations, Aspose.Cells, Excel Cloud API
 ---
 
-
 The API can perform data calculations, summation, and averaging, and can also find the maximum and minimum values in an Excel spreadsheet based on the fill or font color of the cells.
-
-### **Calculate Operations**
 
 | Calculate Operation | Description |
 | :- | :- |
@@ -86,22 +83,23 @@ PUT http://api.aspose.cloud/v4.0/cells/calculate/aggregate/color
 
 ## Where should we use the Aggregate by Color API?
 
-In a spreadsheet, data from different categories is displayed in different colors, allowing operations such as filtering, counting, calculating averages, and finding maximum and minimum values based on color.
+In a spreadsheet, data from different categories is displayed in different colors, allowing operations such as summing, counting, calculating averages, and finding maximum and minimum values based on color.
 
 ## Why should you use the Aggregate by Color API?
 
-- Conduct basic data classification calculations, which can provide foundational data for data analysis.
+- Provide methods for color data analysis.
+- Classify and calculate data based on color to provide foundational data for data analysis.
 - Development can be quickly completed through the existing SDK.
 
 ## How to Use the Aggregate by Color API with SDKs
 
-### OpenAPI Specification
+### Aggregate by Color API Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/CalculateController/AggregateCellsByColor) defines a publicly accessible programming interface and allows you to carry out REST interactions directly from a web browser.
+The [Aggregate by Color API Specification](https://reference.aspose.cloud/cells/#/CalculateController/AggregateCellsByColor) defines a publicly accessible programming interface and allows you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement color aggregation for cells with minimal code.
+Using the SDK is the fastest way to develop, as it abstracts away the low-level details, allowing you to aggregate calculations by cell color with just a short piece of code.
 Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
