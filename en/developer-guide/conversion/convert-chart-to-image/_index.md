@@ -1,19 +1,17 @@
 ---
-title: "Aspose.Cells Cloud Web API - Converting Spreadsheet Chart to Image"
+title: "Aspose.Cells Cloud Web API - Convert a Spreadsheet Chart to an Image"
 second_title: "Aspose.Cells Cloud"
-ArticleTitle: "Converting Spreadsheet Chart to Image"
+ArticleTitle: "Convert a Spreadsheet Chart to an Image"
 linktitle: "Convert Chart to Image"
 type: docs
 url: /convert-chart-to-image/
-keywords: "convert chart to image, png, svg, tiff, jpg, bmp, Spreadsheet, Excel"
+keywords: "convert chart to image, png, svg, tiff, jpg, bmp, convert a Spreadsheet chart to png,convert an Excel chart to svg, convert an Excel chart to jpg, convert a Spreadsheet chart to bmp, convert an Excel chart to tiff"
 description: "Convert a chart from a local spreadsheet/Excel file to an image file with the Aspose.Cells Cloud Web API."
 weight: 100
-kwords: "convert chart to image, png, svg, tiff, jpg, bmp, Spreadsheet, Excel"
+kwords: "convert an Excel chart to image, png, svg, tiff, jpg, bmp, Spreadsheet"
 ---
 
-Convert a chart from a local spreadsheet/Excel file to an image format with the Aspose.Cells Cloud Web API.
-
-**IMAGE FORMATS:** [PNG](https://docs.fileformat.com/image/png/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/)
+Convert a chart from a local spreadsheet/Excel file to an image format file. Supported **IMAGE FORMATS:** [PNG](https://docs.fileformat.com/image/png/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/)
 
 ## **Convert Chart to Image API**
 
@@ -42,9 +40,8 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/chart/image
     {
         "Name": "ResponseFile",
         "DataType": {
-        "Identifier": "File",
-        "Reference": "Stream",
-        "Name": "file"
+            "Identifier": "File",
+            "Reference": "Stream"
         }
     }
 ]
@@ -57,6 +54,10 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/chart/image
 - **404 Not Found**: The spreadsheet file not accessible.
 - **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
 
+## Where should you use the Convert Chart to Image API?
+
+- Export the charts in the spreadsheet as images.
+
 ## Why should you use the Convert Chart to Image API?
 
 - No need for cloud storage, reducing the burden on cloud resources.
@@ -64,13 +65,13 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/chart/image
 
 ## How to Use the Convert Chart to Image API with SDKs?
 
-### OpenAPI Specification
+### Convert Chart to Image API Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertChartToImage) defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
+The [Convert Chart to Image API Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertChartToImage) defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement convert spreadsheet/Excel chart to image for cells with minimal code.
+Using the SDK is the fastest way to develop, as it abstracts away the low-level details, allowing you to convert a chart to an image with short code.
 Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:

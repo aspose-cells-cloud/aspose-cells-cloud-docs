@@ -31,7 +31,7 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/worksheet/pdf
 | region                | String| Query                      | Define the spreadsheet region setting.   |
 | password              | String| Query                      | The password required to open the spreadsheet file.|
 
-## **Response**
+### **Response**
 
 ```json
 [
@@ -53,20 +53,20 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/worksheet/pdf
 - **404 Not Found**: The spreadsheet file not accessible.
 - **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
 
-## Why should you use the Convert Table to Json API?
+## Why should you use the Convert Table to Pdf API?
 
 - No need for cloud storage, reducing the burden on cloud resources.
 - Development can be quickly completed through the existing SDK.
 
-## How to Use the Convert Table to Json API with SDKs?
+## How to Use the Convert Table to Pdf API with SDKs?
 
-### OpenAPI Specification
+### Convert Table to Pdf API Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertWorksheetToPdf) provides a publicly accessible programming interface and enables REST interactions directly from a web browser.
+The [Convert Table to Pdf API Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertWorksheetToPdf) provides a publicly accessible programming interface and enables REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement convert spreadsheet/Excel worksheet to a image for cells with minimal code.
+Using the SDK is the fastest way to develop, as it abstracts away the low-level details, allowing you to convert a spreadsheet table data to a pdf file with short code.
 Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples illustrate how to call Aspose.Cells web services using various SDKs:

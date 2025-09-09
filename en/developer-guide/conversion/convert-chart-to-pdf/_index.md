@@ -1,17 +1,17 @@
 ---
-title: "Aspose.Cells Cloud Web API - Converting Spreadsheet Chart to Pdf"
+title: "Aspose.Cells Cloud Web API - Converting a Spreadsheet Chart to a Pdf file"
 second_title: "Aspose.Cells Cloud"
-ArticleTitle: Converting Spreadsheet Chart to Image
+ArticleTitle: Converting a Spreadsheet Chart to a Pdf file
 linktitle: "Convert Chart to PDF"
 type: docs
 url: /convert-chart-to-pdf/
-keywords: "convert chart to pdf, convert spreadsheet to pdf, Aspose API, cloud conversion, Excel to PDF"
+keywords: "convert an Excel chart to pdf, convert spreadsheet to pdf, Aspose Cloud Web  API, cloud conversion, Excel to PDF"
 description: "This API converts charts from spreadsheets located on a local drive to PDF file seamlessly."
 weight: 100
-kwords: "Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Convert Chart to PDF, Cloud-Native Conversion"
+kwords: "Excel, Office Cloud, REST API, Spreadsheet Conversion, PDF, CSV, JSON, Markdown, Convert Chart to PDF, Cloud Conversion"
 ---
 
-Convert a chart from a local spreadsheet/Excel file to a [PDF](https://docs.fileformat.com/pdf/) file with the Aspose.Cells Cloud Web API.
+Convert a chart from a local spreadsheet/Excel file to a [PDF](https://docs.fileformat.com/pdf/) file.
 
 ## **Convert Chart to Pdf API**
 
@@ -32,16 +32,15 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/chart/pdf
 | region               | String | Query                      | The spreadsheet region setting.                           |
 | password             | String | Query                      | The password for opening the spreadsheet file.           |
 
-## **Response**
+### **Response**
 
 ```json
 [
     {
         "Name": "ResponseFile",
         "DataType": {
-        "Identifier": "File",
-        "Reference": "Stream",
-        "Name": "file"
+            "Identifier": "File",
+            "Reference": "Stream"
         }
     }
 ]
@@ -54,6 +53,10 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/chart/pdf
 - **404 Not Found**: The spreadsheet file not accessible.
 - **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
 
+## Where should you use the Convert Chart to Pdf API?
+
+- Export the charts in the spreadsheet as Pdf.
+
 ## Why should you use the Convert Chart to Pdf API?
 
 - No need for cloud storage, reducing the burden on cloud resources.
@@ -61,13 +64,13 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/chart/pdf
 
 ## How to Use the Convert Chart to Pdf API with SDKs?
 
-### OpenAPI Specification
+### Convert Chart to Pdf API Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertChartToPdf) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [Convert Chart to Pdf API Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertChartToPdf) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 ## Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement convert spreadsheet/Excel chart to pdf for cells with minimal code.
+Using the SDK is the fastest way to develop, as it abstracts away the low-level details, allowing you to convert a chart to a pdf file with short code.
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 
 {{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}

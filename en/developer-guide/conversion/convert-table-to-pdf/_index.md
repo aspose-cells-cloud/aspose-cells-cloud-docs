@@ -1,17 +1,17 @@
 ---
-title: "Aspose.Cells Cloud Web API - Convert Spreadsheet Table to PDF"
+title: "Aspose.Cells Cloud Web API - Convert a Spreadsheet Table data to a Pdf file."
 second_title: "Aspose.Cells Cloud"
-ArticleTitle: "Convert Spreadsheet Table to PDF"
+ArticleTitle: "Convert a Spreadsheet Table data to a Pdf file."
 linktitle: "Convert Table to PDF"
 type: docs
 url: /convert-table-to-pdf/
-keywords: "Table to PDF conversion, Excel to PDF, REST API, Spreadsheet conversion, Cloud-based PDF generation"
+keywords: "Table to PDF conversion, Excel to PDF, REST API, Spreadsheet conversion, Aspose.Cells Cloud Web API"
 description: "Convert a table from a spreadsheet on your local drive to a PDF file using our efficient API."
 weight: 100
 kwords: "Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Excel table conversion, Cloud PDF service"
 ---
 
-Convert a local spreadsheet/Excel table to a pdf file with the Aspose.Cells Cloud Web API.
+Convert a local spreadsheet/Excel table data to a pdf file.
 
 ## **Convert Table to PDF API**
 
@@ -32,16 +32,15 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/table/pdf
 |region|String|Query|Define the spreadsheet region setting.|
 |password|String|Query|Password for accessing the spreadsheet file.|
 
-## **Response**
+### **Response**
 
 ```json
 [
     {
         "Name": "ResponseFile",
         "DataType": {
-        "Identifier": "File",
-        "Reference": "Stream",
-        "Name": "file"
+            "Identifier": "File",
+            "Reference": "Stream"
         }
     }
 ]
@@ -61,13 +60,13 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/table/pdf
 
 ## How to Use the Convert Table to Pdf API with SDKs?
 
-### OpenAPI Specification
+### Convert Table to Pdf API Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertTableToPdf) provides a publicly accessible programming interface for executing REST interactions directly from a web browser.
+The [Convert Table to Pdf API Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertTableToPdf) provides a publicly accessible programming interface for executing REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement convert spreadsheet/Excel table to a pdf file for cells with minimal code.
+Using the SDK is the fastest way to develop, as it abstracts away the low-level details, allowing you to convert a spreadsheet table data to a pdf file with short code.
 Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples illustrate how to call Aspose.Cells web services using various SDKs:

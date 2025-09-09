@@ -1,18 +1,18 @@
 ---
-title: "Aspose.Cells Could Web API - Convert Spreadsheet Range to PDF"
+title: "Aspose.Cells Could Web API - Convert a Spreadsheet Range data to a Pdf file"
 second_title: "Aspose.Cells Cloud"
-ArticleTitle: "Converting Spreadsheet Range to Pdf"
+ArticleTitle: "Convert a Spreadsheet Range data to a Pdf file."
 linktitle: "Convert Range to PDF"
 type: docs
 url: /convert-range-to-pdf/
-keywords: "Excel API, Convert Range to PDF, Spreadsheet Conversion, Cloud Conversion, PDF Generation, REST API"
+keywords: "Aspose.Cells Cloud Web API, Convert Range to PDF, Spreadsheet Conversion, Cloud Conversion, REST API"
 description: "Effortlessly convert a range of spreadsheets on your local drive to PDF files using our powerful API."
 weight: 100
 kwords: "Excel API, Convert Range to PDF, Cloud Conversion, PDF Generation, REST API, Spreadsheet, Local File Conversion"
 ---
 
 
-Convert a range from a local spreadsheet/Excel file to a pdf file with the Aspose.Cells Cloud Web API.
+Convert a range from a local spreadsheet/Excel file to a pdf file.
 
 ## **Convert Range to Pdf API**
 
@@ -33,12 +33,18 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/range/pdf
 | regoin              | String| Query                        | The spreadsheet region setting.                   |
 | password            | String| Query                        | The password for opening the spreadsheet file.    |
 
-## **Response**
+### **Response**
 
 ```json
-{
-  File
-}
+[
+    {
+        "Name": "ResponseFile",
+        "DataType": {
+            "Identifier": "File",
+            "Reference": "Stream"
+        }
+    }
+]
 ```
 
 ### Error Codes
@@ -53,15 +59,15 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/range/pdf
 - No need for cloud storage, reducing the burden on cloud resources.
 - Development can be quickly completed through the existing SDK.
 
-## How to Use the Convert Range to Html API with SDKs?
+## How to Use the Convert Range to Pdf API with SDKs?
 
-### OpenAPI Specification
+### Convert Range to Pdf API Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertRangeToPdf) defines a publicly accessible programming interface and allows you to carry out REST interactions directly from a web browser.
+The [Convert Range to Pdf API Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertRangeToPdf) defines a publicly accessible programming interface and allows you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement convert spreadsheet/Excel range to pdf for cells with minimal code.
+Using the SDK is the fastest way to develop, as it abstracts away the low-level details, allowing you to convert a range data to a json file with short code.
 Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:

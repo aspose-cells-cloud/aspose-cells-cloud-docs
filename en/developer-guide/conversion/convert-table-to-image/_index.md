@@ -1,17 +1,17 @@
 ---
-title: "Aspose.Cells Cloud Web API - Convert Spreadsheet Table to Image"
+title: "Aspose.Cells Cloud Web API - Convert a Spreadsheet Table data to an Image"
 second_title: "Aspose.Cells Cloud"
-ArticleTitle: "Convert Spreadsheet Table to Image"
+ArticleTitle: "Convert a Spreadsheet Table data to an Image"
 linktitle: "Convert Table to Image"
 type: docs
 url: /convert-table-to-image/
-keywords: "table to image, Excel API, cloud conversion, spreadsheet to image, image formats"
-description: "Convert a local spreadsheet table into an image file efficiently using the Excel API."
+keywords: "table to image, Aspose.Cells Cloud Web API, cloud conversion, spreadsheet to image, image formats"
+description: "Convert a local spreadsheet table into an image file efficiently using the Aspose.Cells Cloud Web API."
 weight: 100
-kwords: "Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, convert table to image, cloud-native conversion, image file formats, spreadsheet conversion"
+kwords: "Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, convert table to image, cloud conversion, image file formats, spreadsheet conversion"
 ---
 
-Convert a local spreadsheet/Excel table to a html file with the Aspose.Cells Cloud Web API.
+Convert a local spreadsheet/Excel table data to an image.  Supported **IMAGE FORMATS:** [PNG](https://docs.fileformat.com/image/png/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/)
 
 ## **Convert Table to Image API**
 
@@ -33,16 +33,15 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/table/image
 |region|String|Query|Defines the spreadsheet region settings.|
 |password|String|Query|Password required to access the spreadsheet file.|
 
-## **Response**
+### **Response**
 
 ```json
 [
     {
         "Name": "ResponseFile",
         "DataType": {
-        "Identifier": "File",
-        "Reference": "Stream",
-        "Name": "file"
+            "Identifier": "File",
+            "Reference": "Stream"
         }
     }
 ]
@@ -62,13 +61,13 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/table/image
 
 ## How to Use the Convert Table to Image API with SDKs?
 
-### OpenAPI Specification
+### Convert Table to Image API Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertTableToImage) provides a publicly accessible programming interface for conducting REST interactions directly from a web browser.
+The [Convert Table to Image API Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertTableToImage) provides a publicly accessible programming interface for conducting REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement convert spreadsheet/Excel table to image for cells with minimal code.
+Using the SDK is the fastest way to develop, as it abstracts away the low-level details, allowing you to convert a spreadsheet table data to an image with short code.
 Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples illustrate how to invoke Aspose.Cells web services using various SDKs:

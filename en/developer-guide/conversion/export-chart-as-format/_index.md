@@ -1,14 +1,14 @@
 ---
-title: "Aspose.Cells Cloud Web API - Export Spreadsheet Chart as Format"
+title: "Aspose.Cells Cloud Web API - Export a Spreadsheet Chart as a Format file"
 second_title: "Aspose.Cells Cloud"
-ArticleTitle: "Export Spreadsheet Chart as Format"
+ArticleTitle: "Export a Spreadsheet Chart as a Format file"
 linktitle: "Export Chart as Format"
 type: docs
 url: /export-chart-as-format/
-keywords: "Export Chart, Cloud Storage API, Spreadsheet Conversion, PDF Export, Image Export, REST API, Excel, CSV, JSON"
+keywords: "Export Chart, Aspose.Cells Cloud Web API, Spreadsheet Conversion, PDF Export, Image Export, REST, Excel, CSV, JSON"
 description: "Efficiently converts charts from spreadsheets stored in cloud to specified formats like PDF or image directly without downloading."
 weight: 100
-kwords: "Export Chart, Cloud Storage, REST API, Spreadsheet Conversion, PDF, CSV, JSON, Markdown, Excel, Image Formats"
+kwords: "Export Chart, REST, Spreadsheet Conversion, PDF, CSV, JSON, Markdown, Excel, Image Formats"
 ---
 
 Export a cloud spreadsheet/Excel chart to a another format file with the Aspose.Cells Cloud Web API.
@@ -35,16 +35,15 @@ GET http://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/charts/{cha
 | region | String | Query | The spreadsheet region setting. |
 | password | String | Query | The password for opening the spreadsheet file. |
 
-## **Response**
+### **Response**
 
 ```json
 [
     {
         "Name": "ResponseFile",
         "DataType": {
-        "Identifier": "File",
-        "Reference": "Stream",
-        "Name": "file"
+            "Identifier": "File",
+            "Reference": "Stream"
         }
     }
 ]
@@ -64,13 +63,13 @@ GET http://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/charts/{cha
 
 ## How to Use the Export Spreadsheet Chart as Format API with SDKs?
 
-### OpenAPI Specification
+### Export Chart as Format API Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ConversionController/ExportChartAsFormat) defines a publicly accessible programming interface, allowing you to carry out REST interactions directly from a web browser.
+The [Export Chart as Format API Specification](https://reference.aspose.cloud/cells/#/ConversionController/ExportChartAsFormat) defines a publicly accessible programming interface, allowing you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement export cloud spreadsheet/Excel chart to another format file for cells with minimal code.
+Using the SDK is the fastest way to develop, as it abstracts away the low-level details, allowing you to export a spreadsheet chart data to a format file with short code.
 Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 

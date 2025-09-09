@@ -1,17 +1,17 @@
 ---
-title: "Aspose.Cells Cloud Web API - Save Spreadsheet as another format"
+title: "Aspose.Cells Cloud Web API - Save Spreadsheet as a format file"
 second_title: "Aspose.Cells Cloud"
-ArticleTitle: "Save Spreadsheet as another Format"
+ArticleTitle: "Save Spreadsheet as a Format file"
 linktitle: "Save Spreadsheet as"
 type: docs
 url: /save-spreadsheet-as/
-keywords: "spreadsheet conversion, cloud storage API, Excel to PDF, Excel to CSV, REST API, Aspose.Cells"
+keywords: "spreadsheet conversion, Save as, Excel to PDF, Excel to CSV, REST"
 description: "Effortlessly convert spreadsheets stored in the cloud to various formats, including XLSX, PDF, and CSV, using our robust API."
 weight: 100
-kwords: "Excel API, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, convert Excel files, save spreadsheet as, API functionality, cloud-based conversion"
+kwords: "Excel API, Office Cloud, REST, Spreadsheet, PDF, CSV, JSON, Markdown, convert Excel files, save spreadsheet as, Aspose.Cells Cloud Web API"
 ---
 
-Save a cloud spreadsheet/Excel file in another format to cloud storage using Aspose.Cells Cloud Web API.
+Save a cloud spreadsheet/Excel file as a format file to cloud storage.
 
 ## **Save Spreadsheet as API**
 
@@ -34,32 +34,23 @@ PUT http://api.aspose.cloud/v4.0/cells/{name}/saveas
 | region | String | Query | The spreadsheet region setting. |
 | password | String | Query | The password for opening the spreadsheet file. |
 
-## **Response**
+### **Response**
 
 ```json
 {
   "Name": "CellsCloudResponse",
   "Type": "Class",
-  "IsAbstract": false,
   "Properties": [
     {
       "Name": "Code",
-      "Nullable": true,
-      "ReadOnly": false,
-      "IsInherit": false,
       "DataType": {
         "Identifier": "Integer",
-        "Name": "integer"
       }
     },
     {
       "Name": "Status",
-      "Nullable": true,
-      "ReadOnly": false,
-      "IsInherit": false,
       "DataType": {
         "Identifier": "String",
-        "Name": "string"
       }
     }
   ]
@@ -80,13 +71,13 @@ PUT http://api.aspose.cloud/v4.0/cells/{name}/saveas
 
 ## How to Use the Convert Table to Json API with SDKs?
 
-### OpenAPI Specification
+### Save Spreadsheet as API Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ConversionController/SaveSpreadsheetAs) defines a publicly accessible programming interface, allowing you to carry out REST interactions directly from a web browser.
+The [Save Spreadsheet as API Specification](https://reference.aspose.cloud/cells/#/ConversionController/SaveSpreadsheetAs) defines a publicly accessible programming interface, allowing you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement save cloud spreadsheet/Excel as another format file for cells with minimal code.
+Using the SDK is the fastest way to develop, as it abstracts away the low-level details, allowing you to save a spreadsheet as a format file with short code.
 Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:

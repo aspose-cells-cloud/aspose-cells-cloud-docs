@@ -1,17 +1,17 @@
 ---
-title: "Aspose.Cells Cloud Web API - Export Spreadsheet Range as Format"
+title: "Aspose.Cells Cloud Web API - Export a Spreadsheet Range data as a Format file."
 second_title: "Aspose.Cells Cloud"
-ArticleTitle: "Export Spreadsheet Range as Format"
+ArticleTitle: "Export a Spreadsheet Range data as a Format file."
 linktitle: "Export Range as Format"
 type: docs
 url: /export-range-as-format/
-keywords: "Excel API, Export range, Cloud storage, Spreadsheet conversion, REST API, PDF, CSV, JSON, Markdown, Excel worksheet, cloud-native conversion, format versatility"
+keywords: "Aspose.Cells Cloud Web API, Export range, Spreadsheet conversion, REST API, PDF, CSV, JSON, Markdown, Excel worksheet"
 description: "Convert a specified range of a spreadsheet in cloud storage to various formats such as PDF, CSV, or image formats without downloading the file."
 weight: 100
-kwords: Excel API, Cloud storage, Spreadsheet conversion, REST API, PDF, CSV, JSON, Markdown, Excel worksheet
+kwords: Spreadsheet conversion, REST API, PDF, CSV, JSON, Markdown, Excel worksheet
 ---
 
-Export a cloud spreadsheet/Excel range to a another format file with the Aspose.Cells Cloud Web API.
+Export a cloud spreadsheet/Excel range to a format file. The format file can be saved in the cloud or exported to the local storage.
 
 ## **Export Range as Format API**
 
@@ -35,16 +35,15 @@ GET http://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{ran
 |region|String|Query|The region setting of the spreadsheet.|
 |password|String|Query|The password required to open the spreadsheet file.|
 
-## **Response**
+### **Response**
 
 ```json
 [
     {
         "Name": "ResponseFile",
         "DataType": {
-        "Identifier": "File",
-        "Reference": "Stream",
-        "Name": "file"
+            "Identifier": "File",
+            "Reference": "Stream"
         }
     }
 ]
@@ -64,13 +63,13 @@ GET http://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{ran
 
 ## How to Use the Export Spreadsheet Range as Format API with SDKs?
 
-### OpenAPI Specification
+### Export Range as Format API Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ConversionController/ExportRangeAsFormat) provides a publicly accessible programming interface, enabling REST interactions directly from a web browser.
+The [Export Range as Format API Specification](https://reference.aspose.cloud/cells/#/ConversionController/ExportRangeAsFormat) provides a publicly accessible programming interface, enabling REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement export cloud spreadsheet/Excel range to another format file for cells with minimal code.
+Using the SDK is the fastest way to develop, as it abstracts away the low-level details, allowing you to export a spreadsheet range data to a format file with short code.
 Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:

@@ -1,17 +1,17 @@
 ---
-title: "Aspose.Cells Cloud Web API - Export Spreadsheet as Format"
+title: "Aspose.Cells Cloud Web API - Export a Spreadsheet as a Format file."
 second_title: "Aspose.Cells Cloud"
-ArticleTitle: "Export Spreadsheet Range as Format"
+ArticleTitle: "Export a Spreadsheet as a Format file"
 linktitle: "Export Spreadsheet as Format"
 type: docs
 url: /export-spreadsheet-as-format/
-keywords: "Export spreadsheet, Cloud storage API, Convert spreadsheet, Spreadsheet formats, XLSX, PDF, CSV, JSON, Markdown"
+keywords: "Export spreadsheet, Aspose.Cells Cloud Web API, Convert spreadsheet, Spreadsheet formats, XLSX, PDF, CSV, JSON, Markdown"
 description: "Efficiently converts spreadsheets stored in cloud storage to various formats like XLSX, PDF, and CSV."
 weight: 100
-kwords: "Excel, Office Cloud, REST API, Spreadsheet conversion, PDF, CSV, JSON, Markdown, Handle blank cells in Excel worksheets"
+kwords: "Excel, Office Cloud, REST, Spreadsheet conversion, PDF, CSV, JSON, Markdown"
 ---
 
-Export a cloud spreadsheet/Excel to a another format file with the Aspose.Cells Cloud Web API.
+Export a cloud spreadsheet/Excel to another format file.
 
 ## **Export Spreadsheet as Format API**
 
@@ -33,16 +33,15 @@ GET http://api.aspose.cloud/v4.0/cells/{name}
 | region | String | Query | The spreadsheet region setting. |
 | password | String | Query | The password for opening the spreadsheet file. |
 
-## **Response**
+### **Response**
 
 ```json
 [
     {
         "Name": "ResponseFile",
         "DataType": {
-        "Identifier": "File",
-        "Reference": "Stream",
-        "Name": "file"
+            "Identifier": "File",
+            "Reference": "Stream"
         }
     }
 ]
@@ -62,13 +61,13 @@ GET http://api.aspose.cloud/v4.0/cells/{name}
 
 ## How to Use the Export Spreadsheet as Format API with SDKs?
 
-### OpenAPI Specification
+### Export Spreadsheet as Format API Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ConversionController/ExportSpreadsheetAsFormat) provides a publicly accessible programming interface to perform REST interactions seamlessly.
+The [Export Spreadsheet as Format API Specification](https://reference.aspose.cloud/cells/#/ConversionController/ExportSpreadsheetAsFormat) provides a publicly accessible programming interface to perform REST interactions seamlessly.
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement export cloud spreadsheet/Excel to another format file for cells with minimal code.
+Using the SDK is the fastest way to develop, as it abstracts away the low-level details, allowing you to export a spreadsheet to a format file with short code.
 Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples illustrate how to interact with Aspose.Cells web services via various SDKs:
