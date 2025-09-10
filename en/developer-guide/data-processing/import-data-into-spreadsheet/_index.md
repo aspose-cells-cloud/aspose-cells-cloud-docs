@@ -1,17 +1,17 @@
 ---
-title: "Aspose.Cells Cloud Web API - Import Data into Spreadsheet"
+title: "Aspose.Cells Cloud Web API - Import Csv, JSON, or XML Data into a Spreadsheet file."
 second_title: "Aspose.Cells Cloud"
-ArticleTitle: "Import Data into Spreadsheet"
+ArticleTitle: "Import Csv, JSON, or XML Data into a Spreadsheet file."
 linktitle: "Import Data into Spreadsheet"
 type: docs
 url: /import-data-into-spreadsheet/
-keywords: "Import data, Excel API, spreadsheet integration, CSV, JSON, XML, data handling, Aspose.Cells"
-description: "Efficiently import data into a spreadsheet from supported formats like CSV, JSON, and XML using the Excel API."
+keywords: "Import data, Aspose.Cells Cloud Web API, spreadsheet integration, CSV, JSON, XML, data handling, Aspose.Cells"
+description: "Efficiently import data into a spreadsheet from supported formats like CSV, JSON, and XML using the Aspose.Cells Cloud Web API."
 weight: 100
-kwords: "Excel API, Import Data, Office Cloud, REST API, Spreadsheet, CSV, JSON, XML, Data Integration, Error Handling"
+kwords: "Aspose.Cells Cloud Web API, Import Data, Office Cloud, REST, Spreadsheet, CSV, JSON, XML"
 ---
 
-Import CSV, JSON, and XML data into a spreadsheet.
+Import data into a spreadsheet worksheet. The supported format of the imported data file is [Xml](https://docs.fileformat.com/web/xml/), [JSON](https://docs.fileformat.com/web/json/) or [CSV](https://docs.fileformat.com/spreadsheet/csv/).
 
 ## **Import Data into Spreadsheet API**
 
@@ -43,9 +43,8 @@ PUT http://api.aspose.cloud/v4.0/cells/import/data
     {
         "Name": "ResponseFile",
         "DataType": {
-        "Identifier": "File",
-        "Reference": "Stream",
-        "Name": "file"
+            "Identifier": "File",
+            "Reference": "Stream"
         }
     }
 ]
@@ -60,7 +59,8 @@ PUT http://api.aspose.cloud/v4.0/cells/import/data
 
 ## Where should we use the Import Data into Spreadsheet API?
 
-Importing large amounts of data into spreadsheets.
+- Importing large amounts of data into spreadsheet worksheet.
+- The imported data file format is [Xml](https://docs.fileformat.com/web/xml/), [JSON](https://docs.fileformat.com/web/json/) and [CSV](https://docs.fileformat.com/spreadsheet/csv/).
 
 ## Why should you use the Import Data into Spreadsheet API?
 
@@ -69,13 +69,13 @@ Importing large amounts of data into spreadsheets.
 
 ## How to Use the Import Data into Spreadsheet API with SDKs
 
-### OpenAPI Specification
+### Import Data into Spreadsheet API Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/DataProcessingController/ImportDataIntoSpreadsheet) provides a publicly accessible programming interface, allowing REST interactions directly from your web browser.
+The [Import Data into Spreadsheet API Specification](https://reference.aspose.cloud/cells/#/DataProcessingController/ImportDataIntoSpreadsheet) provides a publicly accessible programming interface, allowing REST interactions directly from your web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement Import data into spreadsheet for cells with minimal code.
+Using the SDK is the fastest way to develop, as it abstracts away the low-level details, allowing you to import data into  a spreadsheet worksheet with short code.
 Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples illustrate how to invoke Aspose.Cells web services using various SDKs:
