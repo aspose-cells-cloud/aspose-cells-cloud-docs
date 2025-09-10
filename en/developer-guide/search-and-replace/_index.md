@@ -2,7 +2,7 @@
 title: "Aspose.Cells Cloud Web API - Search and Replace in Spreadsheet"
 second_title: "Aspose.Cells Cloud"
 ArticleTitle: "Search and Replace in Spreadsheet"
-linktitle: "Search&Replace"
+linktitle: "Search and Replace"
 type: docs
 url: /search-replace/
 keywords: "Aspose.Cells Cloud REST API, search and replace content in spreadsheets, Excel 2016, Excel 2019, Excel 365, cloud-based office solutions."
