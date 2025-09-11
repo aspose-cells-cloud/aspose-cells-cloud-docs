@@ -1,17 +1,17 @@
 ---
-title: "Aspose.Cells Cloud Web API - Compress Spreadsheet"
+title: "Aspose.Cells Cloud Web API - Compress the size of the Spreadsheet."
 second_title: "Aspose.Cells Cloud"
-ArticleTitle: "Compress the size of Spreadsheet"
+ArticleTitle: "Compress the size of the Spreadsheet"
 linktitle: "Compress Spreadsheet"
 type: docs
 url: /compress-spreadsheet/
-keywords: "Spreadsheet Compression, Reduce File Size, Cells Cloud Web API, Optimize Storage, REST API, Cloud Storage"
-description: "The Compress Spreadsheet API allows users to efficiently reduce the file size of spreadsheets by applying specified compression levels, optimizing storage and enhancing performance."
+keywords: "Spreadsheet Compression, Reduce File Size, Aspose.Cells Cloud Web API"
+description: "The Compress Spreadsheet API allows users to efficiently reduce the file size of spreadsheets by applying specified compression levels, optimizing storage, and enhancing performance."
 weight: 100
-kwords: "Excel, Office Cloud, REST API, Spreadsheet Compression, File Size Optimization, PDF, CSV, Json, Markdown, Manage Blank Cells in Excel"
+kwords: "Excel, Office Cloud, REST, Spreadsheet Compression, File Size Optimization, PDF, CSV, Json, Markdown"
 ---
 
-Compress the size of the electronic spreadsheet.
+Compress the size of the spreadsheet.
 
 ## **Compress Spreadsheet API**
 
@@ -30,16 +30,15 @@ PUT http://api.aspose.cloud/v4.0/cells/spreadsheet/compress
 |region|String|Query|The spreadsheet region setting.|
 |password|String|Query|The password required to open the spreadsheet file.|
 
-## **Response**
+### **Response**
 
 ```json
 [
     {
         "Name": "ResponseFile",
         "DataType": {
-        "Identifier": "File",
-        "Reference": "Stream",
-        "Name": "file"
+            "Identifier": "File",
+            "Reference": "Stream"
         }
     }
 ]
@@ -63,13 +62,13 @@ When you need to reducing the size of spreadsheets, you can use this API.
 
 ## How to Use the Compress Spreadsheet API with SDKs
 
-### OpenAPI Specification
+### Compress Spreadsheet API Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ManagementController/CompressSpreadsheet) provides a publicly accessible interface for REST interactions, allowing direct API calls from a web browser.
+The [Compress Spreadsheet API Specification](https://reference.aspose.cloud/cells/#/ManagementController/CompressSpreadsheet) provides a publicly accessible interface for REST interactions, allowing direct API calls from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement compress spreadsheets for cells with minimal code.
+Using the SDK is the fastest way to develop, as it abstracts away the low-level details, allowing you to compress the spreadsheet size with short code.
 Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to interact with Aspose.Cells web services using various SDKs:

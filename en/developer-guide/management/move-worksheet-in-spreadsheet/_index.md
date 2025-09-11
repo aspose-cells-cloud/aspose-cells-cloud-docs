@@ -1,5 +1,5 @@
 ---
-title: "Aspose.Cells Cloud Web API - Move Worksheet in Spreadsheet"
+title: "Aspose.Cells Cloud Web API - Move a Worksheet to new position in the Spreadsheet"
 second_title: "Aspose.Cells Cloud"
 ArticleTitle: "Move worksheet to new position in Spreadsheet"
 linktitle: "Move Worksheet in Spreadsheet"
@@ -31,16 +31,15 @@ PUT http://api.aspose.cloud/v4.0/cells/spreadsheet/move/worksheet
 |region|String|Query|The spreadsheet region setting.|
 |password|String|Query|The password for opening the spreadsheet file.|
 
-## **Response**
+### **Response**
 
 ```json
 [
     {
         "Name": "ResponseFile",
         "DataType": {
-        "Identifier": "File",
-        "Reference": "Stream",
-        "Name": "file"
+            "Identifier": "File",
+            "Reference": "Stream"
         }
     }
 ]
@@ -64,13 +63,13 @@ When you need to move a worksheet to new position in spreadsheets, you can use t
 
 ## How to Use the Move Worksheet in Spreadsheet API with SDKs
 
-### OpenAPI Specification
+### Move Worksheet in Spreadsheet API Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ManagementController/MoveWorksheetInSpreadsheet) provides a publicly accessible programming interface to facilitate direct REST interactions from a web browser.
+The [Move Worksheet in Spreadsheet API Specification](https://reference.aspose.cloud/cells/#/ManagementController/MoveWorksheetInSpreadsheet) provides a publicly accessible programming interface to facilitate direct REST interactions from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement move worksheet in spreadsheets for cells with minimal code.
+Using the SDK is the fastest way to develop, as it abstracts away the low-level details, allowing you to move worksheet in the spreadsheet with short code.
 Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 The following code examples demonstrate how to call the Aspose.Cells web services using various SDKs:
 

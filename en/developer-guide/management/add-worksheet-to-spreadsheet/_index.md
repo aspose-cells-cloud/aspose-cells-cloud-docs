@@ -1,17 +1,27 @@
 ---
-title: "Aspose.Cells Cloud Webb API - Add Worksheet to Spreadsheet"
+title: "Aspose.Cells Cloud Webb API - Add a Worksheet to a Spreadsheet"
 second_title: "Aspose.Cells Cloud"
-ArticleTitle: "Add a worksheet to Spreadsheet"
+ArticleTitle: "Add a Worksheet to a Spreadsheet"
 linktitle: "Add Worksheet to Spreadsheet"
 type: docs
 url: /add-worksheet-to-spreadsheet/
-keywords: "Excel API, Add Worksheet, Spreadsheet Management, REST API, Office Cloud, Dynamic Workbook, Excel Integration"
-description: "The Excel API allows developers to efficiently add a new worksheet to a workbook, providing control over the worksheet's type, position, and name. This functionality enhances workbook management and flexibility."
+keywords: "Aspose.Cells Cloud Web API, Add Worksheet, Spreadsheet Management, REST"
+description: "The Aspose.Cells Cloud Web API allows developers to efficiently add a new worksheet to a workbook, providing control over the worksheet's type, position, and name. This functionality enhances workbook management and flexibility."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Manage Excel Worksheets, Dynamic Spreadsheet Creation
+kwords: Excel, Office Cloud, REST, Spreadsheet, PDF, CSV, JSON, Markdown, Manage Excel Worksheets, Dynamic Spreadsheet Creation
 ---
 
-Add a worksheet to the spreadsheet, specifying the type and location of the worksheet.
+Adding a worksheet to the spreadsheet, specifying the type and location of the worksheet.
+
+| **Worksheet Type** | Description |
+| :- | :- |
+| **VB** | Visual Basic module |
+| **Worksheet** | Worksheet  |
+| **Chart** | Chart sheet  |
+| **BIFF4Macro** | BIFF4 Macro sheet |
+| **InternationalMacro** | International Macro sheet |
+| **Other** | International Macro sheet |
+| **Dialog** | Dialog worksheet |
 
 ## **Add Worksheet to Spreadsheet API**
 
@@ -32,16 +42,15 @@ PUT http://api.aspose.cloud/v4.0/cells/spreadsheet/add/worksheet
 |region|String|Query|The spreadsheet region setting.|
 |password|String|Query|The password for opening the spreadsheet file.|
 
-## **Response**
+### **Response**
 
 ```json
 [
     {
         "Name": "ResponseFile",
         "DataType": {
-        "Identifier": "File",
-        "Reference": "Stream",
-        "Name": "file"
+            "Identifier": "File",
+            "Reference": "Stream"
         }
     }
 ]
@@ -65,13 +74,13 @@ When you need to add a worksheet for a spreadsheet, you can use this API.
 
 ## How to Use the Add Worksheet to Spreadsheet API with SDKs
 
-### OpenAPI Specification
+### Add Worksheet to Spreadsheet API Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ManagementController/AddWorksheetToSpreadsheet) defines a publicly accessible programming interface and allows you to carry out REST interactions directly from a web browser.
+The [Add Worksheet to Spreadsheet API Specification](https://reference.aspose.cloud/cells/#/ManagementController/AddWorksheetToSpreadsheet) defines a publicly accessible programming interface and allows you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement add a worksheet to spreadsheets for cells with minimal code.
+Using the SDK is the fastest way to develop, as it abstracts away the low-level details, allowing you to add a worksheet to a spreadsheet with short code.
 Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make API calls to Aspose.Cells web services using various SDKs:

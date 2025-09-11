@@ -32,16 +32,15 @@ PUT http://api.aspose.cloud/v4.0/cells/spreadsheet/rename/worksheet
 |region|String|Query|Spreadsheet region setting.|
 |password|String|Query|Password for opening spreadsheet file.|
 
-## **Response**
+### **Response**
 
 ```json
 [
     {
         "Name": "ResponseFile",
         "DataType": {
-        "Identifier": "File",
-        "Reference": "Stream",
-        "Name": "file"
+            "Identifier": "File",
+            "Reference": "Stream"
         }
     }
 ]

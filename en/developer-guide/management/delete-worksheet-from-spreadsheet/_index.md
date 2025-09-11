@@ -1,7 +1,7 @@
 ---
-title: "Aspose.Cells Cloud Web API - Delete Worksheet from Spreadsheet"
+title: "Aspose.Cells Cloud Web API - Delete a Worksheet from the Spreadsheet"
 second_title: "Aspose.Cells Cloud"
-ArticleTitle: "Delete worksheet from Spreadsheet"
+ArticleTitle: "Delete a worksheet from the Spreadsheet"
 linktitle: "Delete Worksheet from Spreadsheet"
 type: docs
 url: /delete-worksheet-from-spreadsheet/
@@ -30,16 +30,15 @@ PUT http://api.aspose.cloud/v4.0/cells/spreadsheet/delete/worksheet
 | region           | String | Query                     | The spreadsheet region setting. |
 | password         | String | Query                     | The password for opening the spreadsheet file. |
 
-## **Response**
+### **Response**
 
 ```json
 [
     {
         "Name": "ResponseFile",
         "DataType": {
-        "Identifier": "File",
-        "Reference": "Stream",
-        "Name": "file"
+            "Identifier": "File",
+            "Reference": "Stream"
         }
     }
 ]
@@ -63,13 +62,13 @@ When you need to delete an worksheet from spreadsheets, you can use this API.
 
 ## How to Use the Delete worksheet from Spreadsheet API with SDKs
 
-### OpenAPI Specification
+### Delete worksheet from Spreadsheet API Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ManagementController/DeleteWorksheetFromSpreadsheet) defines a publicly accessible programming interface, allowing you to carry out REST interactions directly from a web browser.
+The [Delete worksheet from Spreadsheet API Specification](https://reference.aspose.cloud/cells/#/ManagementController/DeleteWorksheetFromSpreadsheet) defines a publicly accessible programming interface, allowing you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement delete worksheet from spreadsheets for cells with minimal code.
+Using the SDK is the fastest way to develop, as it abstracts away the low-level details, allowing you to delete a worksheet from the spreadsheet with short code.
 Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:

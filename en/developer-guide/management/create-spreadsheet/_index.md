@@ -1,7 +1,7 @@
 ---
-title: "Aspose.Cells Cloud Web API - Create new Spreadsheet with Template"
+title: "Aspose.Cells Cloud Web API - Build a new Spreadsheet with a spreadsheet template."
 second_title: "Aspose.Cells Cloud"
-ArticleTitle: "Create new Spreadsheet with Template - Timeline WorkPlan Table, Sales Data Comparison, etc"
+ArticleTitle: "Build a new Spreadsheet with a spreadsheet template - Timeline WorkPlan Table, Sales Data Comparison, etc."
 linktitle: "Create Spreadsheet"
 type: docs
 url: /create-spreadsheet/
@@ -30,16 +30,15 @@ PUT http://api.aspose.cloud/v4.0/cells/spreadsheet/create
 | region           | String | Query                         | The spreadsheet region setting. |
 | password         | String | Query                         | The password for opening the spreadsheet file. |
 
-## **Response**
+### **Response**
 
 ```json
 [
     {
         "Name": "ResponseFile",
         "DataType": {
-        "Identifier": "File",
-        "Reference": "Stream",
-        "Name": "file"
+            "Identifier": "File",
+            "Reference": "Stream"
         }
     }
 ]
@@ -63,13 +62,13 @@ When you need to new a spreadsheet, you can use this API.
 
 ## How to Use the Create Spreadsheet API with SDKs
 
-### OpenAPI Specification
+### Create Spreadsheet API Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ManagementController/CreateSpreadsheet) defines a publicly accessible programming interface and enables REST interactions directly from a web browser.
+The [Create Spreadsheet API Specification](https://reference.aspose.cloud/cells/#/ManagementController/CreateSpreadsheet) defines a publicly accessible programming interface and enables REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement create spreadsheets for cells with minimal code.
+Using the SDK is the fastest way to develop, as it abstracts away the low-level details, allowing you to build the spreadsheet with short code.
 Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
