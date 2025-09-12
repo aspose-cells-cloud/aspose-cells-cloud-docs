@@ -18,16 +18,16 @@ ltsc2016.23.5.0 | x64   | No Dockerfile | Stop the upgrade. The final version is
 
 Tags | Architecture | Dockerfile  | Remark
 ---|:--:|:--:|---:
-ltsc2019.25.7.0 | x64   | No Dockerfile |
+ltsc2019.25.8.0 | x64   | No Dockerfile |
 
 ## Windows Server 2022 Images ##
 
 Tags | Architecture | Dockerfile  | Remark
 ---|:--:|:--:|---:
-ltsc2022.25.7.0 | x64   | No Dockerfile |
+ltsc2022.25.8.0 | x64   | No Dockerfile |
 
 ## Linux Images ##
 
 Tags | Architecture | Dockerfile  | Remark
 ---|:--:|:--:|---:
-linux.25.7.0 | x64   | No Dockerfile |
+linux.25.8.0 | x64   | No Dockerfile |

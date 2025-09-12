@@ -8,25 +8,24 @@ weight: 10
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Aspose.Cells Cloud Document
 ---
 
-## **Core Functions**
+## What is Aspose.Cells Cloud APIs?
 
-Aspose.Cells Cloud offers the following key features to meet enterprise-level spreadsheet automation needs:
+Aspose.Cells Cloud APIs are a set of Spreadsheet/Excel cloud services - no need to install Office, no need to configure servers, just send an HTTP request, and you can perform all common operations such as creating, editing, format conversion, data cleanup, charts, pivot tables, encryption, splitting, merging, watermarks, digital signatures, etc., anywhere and in any language.1
 
-### **Spreadsheet Convert**
+## Why is Aspose.1Cells Cloud APIs?
 
-- **[Convert Spreadsheet to PDF file](https://docs.aspose.cloud/cells/convert-excel-file-to-pdf-file/)**
-- **[Convert Spreadsheet Chart to Image](https://docs.aspose.cloud/cells/convert-chart-to-image/)**
-- **[Save Spreadsheet As](https://docs.aspose.cloud/cells/save-an-excel-file-as-other-formats-files/)**
+- Creating, editing, converting, and analyzing spreadsheets in cloud storage based on Aspose.Cells Cloud Web API services.
+- Create, edit, convert, and analyze local spreadsheet files based on Aspose.Cells Cloud Web API services.
+- Supported file formats are 30, such as xlsx, csv, ods, xlsb, etc.
+- Operate spreadsheets directly through the Aspose.Cells Cloud Web API without the need for Microsoft Excel dependencies.
+- Free 150 API calls per month.
+- Stepwise charging, how much users use, how much they charge, the more they use, the more discounts they offer.
+- **Short-code**:Things that can be done in one sentence.
+  - **Convert XLSX to PDF** → ConvertSpreadsheetToPdf
+  - **Delete extra spaces in the entire file** → TrimSpreadsheetContent
+  - **Combine 10+ files into one report** → MergeSpreadsheets
 
-### **Data Processing**
-
-- **[Merge Spreadsheets](https://docs.aspose.cloud/cells/merge-spreadsheets/)**
-- **[Split Spreadsheets](https://docs.aspose.cloud/cells/split-spreadsheet/)**
-- **[Delete Spreadsheet blank rows](https://docs.aspose.cloud/cells/delete-spreadsheet-blank-rows/)**
-- **[Delete Spreadsheet blank columns](https://docs.aspose.cloud/cells/delete-spreadsheet-blank-columns/)**
-- **[Replace Spreadsheet content](https://docs.aspose.cloud/cells/replace-spreadsheet-content/)**
-
-## **[Quick Integration Guide](https://docs.aspose.cloud/cells/getting-started/)**
+## **How to Use Aspose.Cells Cloud API?**
 
 ### Step 1: **Get API Credentials**  
 
@@ -57,6 +56,24 @@ dotnet add package Aspose.Cells-Cloud --version 25.8.0
 - **Spreadsheet**: The Excel file name that must be in the local storage.
 - **Format**: Target format. e.g. pdf, png, csv, json, etc.
 - **Output file** wTll be saved to the local location.
+
+## **Core Functions**
+
+Aspose.Cells Cloud offers the following key features to meet enterprise-level spreadsheet automation needs:
+
+### **Spreadsheet Convert**
+
+- **[Convert Spreadsheet to PDF file](https://docs.aspose.cloud/cells/convert-excel-file-to-pdf-file/)**
+- **[Convert Spreadsheet Chart to Image](https://docs.aspose.cloud/cells/convert-chart-to-image/)**
+- **[Save Spreadsheet As](https://docs.aspose.cloud/cells/save-an-excel-file-as-other-formats-files/)**
+
+### **Data Processing**
+
+- **[Merge Spreadsheets](https://docs.aspose.cloud/cells/merge-spreadsheets/)**
+- **[Split Spreadsheets](https://docs.aspose.cloud/cells/split-spreadsheet/)**
+- **[Delete Spreadsheet blank rows](https://docs.aspose.cloud/cells/delete-spreadsheet-blank-rows/)**
+- **[Delete Spreadsheet blank columns](https://docs.aspose.cloud/cells/delete-spreadsheet-blank-columns/)**
+- **[Replace Spreadsheet content](https://docs.aspose.cloud/cells/replace-spreadsheet-content/)**
 
 ## Support SDKs(**Available SDKs**)
 

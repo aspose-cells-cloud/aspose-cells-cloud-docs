@@ -12,6 +12,30 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Wh
 
 Welcome to what's new in Aspose.Cells Cloud docs. Use this page to quickly find the latest changes.
 
+## Feature & Enhancements in Version 25.8
+
+|**ID**|**Summary**|**Category**|
+| :- | :- | :- |
+|37693|Support of Authorization in Aspose.Cells Cloud Docker Container|New Feature|
+|56300|New Feature: Aggregate cells by color in CalculateController.|New Feature|
+|56301|New Feature: Math Calculations in CalculateController.|New Feature|
+|56302|New Feature: Adding/Deleting/Renaming worksheet in ManagementController.|New Feature|
+|56303|New Feature: Adding/Deleting worksheet in ManagementController.|New Feature|
+|56304|New Feature: create spreadsheet in ManagementController.|New Feature|
+|56309|New feature: Redesign the data import into the Spreadsheet.|New Feature|
+|56310|New feature: Swap data ranges in the spreadsheet.|New Feature|
+|56407|Fix the code generator of the cells cloud SDK specification for the enum query parameter.|Bug|
+
+## Feature & Enhancements in Version 25.7
+
+|**ID**|**Summary**|**Category**|
+| :- | :- | :- |
+|55754|Trimming the entire workbook failed.|Bug|
+|55755|Updating word case of the entire workbook failed.|Bug|
+|55930|Add protect/unprotect spreadsheet features.|New Feature|
+|55931|Add convert worksheet/table/range to other formats.|New Feature|
+|56088|Optimize operate scope options for TextProcessingController.|Improvement|
+
 ## Feature & Enhancements in Version 25.6
 
 |**ID**|**Summary**|**Category**|
