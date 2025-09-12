@@ -5,10 +5,10 @@ ArticleTitle: "Delete Blank Rows in a Spreadsheet"
 linktitle: "Delete Blank Rows"
 type: docs
 url: /delete-spreadsheet-blank-rows/
-keywords: "Delete blank rows, Excel API, Spreadsheet cleaning, Office Cloud, REST API, Data management, Remove empty rows"
+keywords: "Delete blank rows, Excel API, Spreadsheet cleaning, Aspose.Cells Cloud Web API, Remove empty rows"
 description: "Efficiently delete all blank rows in a spreadsheet that do not contain any data or objects, enhancing data organization."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Match all blank cells in an Excel worksheet, Remove empty rows, Data integrity, Spreadsheet cleaning
+kwords: Excel, REST, Spreadsheet, PDF, CSV, JSON, Markdown, Match all blank cells in an Excel worksheet, Remove empty rows
 ---
 
 Delete all blank rows that do not contain any data or other objects from an Excel spreadsheet.
@@ -29,16 +29,15 @@ PUT http://api.aspose.cloud/v4.0/cells/delete/blank-rows
 |region|String|Query|The spreadsheet region setting.|
 |password|String|Query|The password for opening the spreadsheet file.|
 
-## **Response**
+### **Response**
 
 ```json
 [
     {
         "Name": "ResponseFile",
         "DataType": {
-        "Identifier": "File",
-        "Reference": "Stream",
-        "Name": "file"
+            "Identifier": "File",
+            "Reference": "Stream"
         }
     }
 ]
@@ -62,13 +61,13 @@ When you need to transform data, you can use this API.
 
 ## How to Use the Delete Spreadsheet Blank Rows API with SDKs
 
-### OpenAPI Specification
+### Delete Spreadsheet Blank Rows API Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/TransformController/DeleteSpreadsheetBlankRows) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [Delete Spreadsheet Blank Rows API Specification](https://reference.aspose.cloud/cells/#/TransformController/DeleteSpreadsheetBlankRows) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement delete spreadsheets blank rows for cells with minimal code.
+Using the SDK is the fastest way to develop, as it abstracts away the low-level details, allowing you to delete spreadsheet blank rows with short code.
 Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:

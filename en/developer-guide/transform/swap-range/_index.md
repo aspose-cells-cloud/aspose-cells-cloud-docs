@@ -5,10 +5,10 @@ ArticleTitle: "Swap Range Data in a Spreadsheet"
 linktitle: "Swap Range"
 type: docs
 url: /swap-range/
-keywords: "Excel API, Swap Ranges, Office Cloud, REST API, Spreadsheet Manipulation, Data Re-arrangement, Preserve Formatting"
+keywords: "Aspose.Cells Cloud Web API, Swap Ranges, Office Cloud, REST"
 description: "The Swap Ranges for Excel API provides a powerful tool to interchange any two columns, rows, ranges, or individual cells within an Excel file. This API allows users to efficiently rearrange their tables, ensuring that the original data formatting is preserved and all existing formulas continue to function correctly. By leveraging this API, users can streamline their data manipulation tasks and maintain the integrity of their spreadsheets."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet Manipulation, Data Re-arrangement, Preserve Formatting, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+kwords: Excel, Office Cloud, REST, PDF, CSV, Json, Markdown
 ---
 
 Exchange data between any two columns, rows, ranges, or individual cells in an Excel file.
@@ -33,16 +33,15 @@ PUT http://api.aspose.cloud/v4.0/cells/swap/range
 |region|String|Query|The spreadsheet region setting.|
 |password|String|Query|The password for opening the spreadsheet file.|
 
-## **Response**
+### **Response**
 
 ```json
 [
     {
         "Name": "ResponseFile",
         "DataType": {
-        "Identifier": "File",
-        "Reference": "Stream",
-        "Name": "file"
+            "Identifier": "File",
+            "Reference": "Stream"
         }
     }
 ]
@@ -66,13 +65,13 @@ When you need to swap range data in a spreadsheet, you can use this API.
 
 ## How to Use the Swap Range API with SDKs
 
-### OpenAPI Specification
+### Swap Range API Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/TransformController/SwapRange) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [Swap Range API Specification](https://reference.aspose.cloud/cells/#/TransformController/SwapRange) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement swap range for cells with minimal code.
+Using the SDK is the fastest way to develop, as it abstracts away the low-level details, allowing you to swap range with short code.
 Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:

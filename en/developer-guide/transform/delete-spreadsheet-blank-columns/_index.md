@@ -5,10 +5,10 @@ ArticleTitle: "Delete Blank Columns in a Spreadsheet"
 linktitle: "Delete Blank Columns"
 type: docs
 url: /delete-spreadsheet-blank-columns/
-keywords: "Excel API, Cloud API, Delete Blank Columns, Spreadsheet Cleanup, REST API, Excel, Office Cloud"
+keywords: "Aspose.Cells Cloud Web API, Delete Blank Columns, Spreadsheet Cleanup, REST, Excel, Office Cloud"
 description: "Efficiently delete all blank columns from an Excel spreadsheet, improving data management and usability."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Remove Blank Columns, Excel Worksheet Cleanup, Data Integrity, Data Management
+kwords: Excel, Office Cloud, Spreadsheet, PDF, CSV, JSON, Markdown, Remove Blank Columns, Excel Worksheet Cleanup
 ---
 
 
@@ -37,9 +37,8 @@ PUT http://api.aspose.cloud/v4.0/cells/delete/blank-columns
     {
         "Name": "ResponseFile",
         "DataType": {
-        "Identifier": "File",
-        "Reference": "Stream",
-        "Name": "file"
+            "Identifier": "File",
+            "Reference": "Stream"
         }
     }
 ]
@@ -63,13 +62,13 @@ When you need to transform data, you can use this API.
 
 ## How to Use the Delete Spreadsheet Blank Columns API with SDKs
 
-### OpenAPI Specification
+### Delete Spreadsheet Blank Columns API Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/TransformController/DeleteSpreadsheetBlankColumns) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [Delete Spreadsheet Blank Columns API Specification](https://reference.aspose.cloud/cells/#/TransformController/DeleteSpreadsheetBlankColumns) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement delete spreadsheets blank columns for cells with minimal code.
+Using the SDK is the fastest way to develop, as it abstracts away the low-level details, allowing you to delete spreadsheet blank columns with short code.
 Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:

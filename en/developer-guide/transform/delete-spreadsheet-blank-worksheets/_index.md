@@ -5,10 +5,10 @@ ArticleTitle: "Delete Blank Worksheets in a Spreadsheet"
 linktitle: "Delete Blank Worksheets"
 type: docs
 url: /delete-spreadsheet-blank-worksheets/
-keywords: "Excel API, Delete Blank Worksheets, Spreadsheet Management, Office Cloud API, Clean Up Spreadsheets"
+keywords: "Aspose.Cells Cloud Web API, Delete Blank Worksheets, Spreadsheet Management"
 description: "Efficiently delete all blank worksheets from a spreadsheet that do not contain any data or objects. Optimize your workbook for better performance."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Clean empty worksheets, Optimize workbook performance
+kwords: Excel, Office Cloud, REST, Spreadsheet, PDF, CSV, JSON, Markdown
 ---
 
 Delete all blank worksheets that do not contain any data or other objects from an Excel spreadsheet.
@@ -36,9 +36,8 @@ PUT http://api.aspose.cloud/v4.0/cells/delete/blank-worksheets
     {
         "Name": "ResponseFile",
         "DataType": {
-        "Identifier": "File",
-        "Reference": "Stream",
-        "Name": "file"
+            "Identifier": "File",
+            "Reference": "Stream"
         }
     }
 ]
@@ -62,13 +61,13 @@ When you need to transform data, you can use this API.
 
 ## How to Use the Delete Spreadsheet Blank Worksheets API with SDKs
 
-### OpenAPI Specification
+### Delete Spreadsheet Blank Worksheets API Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/TransformController/DeleteSpreadsheetBlankWorksheets) defines a publicly accessible programming interface, allowing you to carry out REST interactions directly from a web browser.
+The [Delete Spreadsheet Blank Worksheets API Specification](https://reference.aspose.cloud/cells/#/TransformController/DeleteSpreadsheetBlankWorksheets) defines a publicly accessible programming interface, allowing you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement delete spreadsheets blank worksheets for cells with minimal code.
+Using the SDK is the fastest way to develop, as it abstracts away the low-level details, allowing you to delete spreadsheet blank worksheets with short code.
 Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
