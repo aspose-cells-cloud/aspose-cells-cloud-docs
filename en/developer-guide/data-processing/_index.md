@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud Web API - Data Processing: Merge, Split, and Import Data."
-second_title: "Aspose.Cells Cloud"
+second_title: "Aspose.Cells Cloud Document"
 ArticleTitle: "Spreadsheet Data Processing: Merge and Split, and Import Data."
 linktitle: "Data Processing"
 type: docs

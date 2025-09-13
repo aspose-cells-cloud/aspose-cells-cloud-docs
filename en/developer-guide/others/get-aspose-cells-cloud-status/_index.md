@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud Web API - Get Aspose Cells Cloud Status"
-second_title: "Aspose.Cells Cloud"
+second_title: "Aspose.Cells Cloud Document"
 ArticleTitle: "Get Aspose.Cells Cloud Run Status"
 linktitle: "Get Aspose Cells Cloud Status"
 type: docs

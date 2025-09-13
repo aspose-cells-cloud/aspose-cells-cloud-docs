@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud Web API - Delete a Worksheet from the Spreadsheet"
-second_title: "Aspose.Cells Cloud"
+second_title: "Aspose.Cells Cloud Document"
 ArticleTitle: "Delete a worksheet from the Spreadsheet"
 linktitle: "Delete Worksheet from Spreadsheet"
 type: docs

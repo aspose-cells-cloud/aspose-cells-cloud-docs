@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud WEb API - Split the Spreadsheet into separate files."
-second_title: "Aspose.Cells Cloud"
+second_title: "Aspose.Cells Cloud Document"
 ArticleTitle: "Split the Spreadsheet into separate files."
 linktitle: "Split Spreadsheet"
 type: docs

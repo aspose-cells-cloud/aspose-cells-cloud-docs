@@ -1,6 +1,6 @@
 ---
 title: "Delete File - Excel API"
-second_title: "Aspose.Cells Cloud"
+second_title: "Aspose.Cells Cloud Document"
 linktitle: "Delete File"
 type: docs
 url: /delete-file/

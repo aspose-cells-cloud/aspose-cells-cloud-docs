@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud Web API - Search Spreadsheet Content"
-second_title: "Aspose.Cells Cloud"
+second_title: "Aspose.Cells Cloud Document"
 ArticleTitle: "Search Spreadsheet Content"
 linktitle: "Search Spreadsheet Content"
 type: docs

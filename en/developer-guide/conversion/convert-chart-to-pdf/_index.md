@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud Web API - Converting a Spreadsheet Chart to a Pdf file"
-second_title: "Aspose.Cells Cloud"
+second_title: "Aspose.Cells Cloud Document"
 ArticleTitle: Converting a Spreadsheet Chart to a Pdf file
 linktitle: "Convert Chart to PDF"
 type: docs

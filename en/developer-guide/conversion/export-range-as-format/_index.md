@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud Web API - Export a Spreadsheet Range data as a Format file."
-second_title: "Aspose.Cells Cloud"
+second_title: "Aspose.Cells Cloud Document"
 ArticleTitle: "Export a Spreadsheet Range data as a Format file."
 linktitle: "Export Range as Format"
 type: docs

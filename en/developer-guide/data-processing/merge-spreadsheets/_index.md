@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud Web API - Merge multiple Spreadsheets into a single spreadsheet."
-second_title: "Aspose.Cells Cloud"
+second_title: "Aspose.Cells Cloud Document"
 ArticleTitle: "Merge multiple Spreadsheets into a single spreadsheet."
 linktitle: "Merge Spreadsheets"
 type: docs

@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud Web API - Search Broken Links of Range in Remote Spreadsheet"
-second_title: "Aspose.Cells Cloud"
+second_title: "Aspose.Cells Cloud Document"
 ArticleTitle: "Search Broken Links of Range in Remote a Spreadsheet"
 linktitle: "Search Remote Range Broken Links"
 type: docs

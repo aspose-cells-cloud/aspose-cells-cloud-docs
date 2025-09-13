@@ -1,6 +1,6 @@
 ---
 title: "Copy Folder"
-second_title: "Aspose.Cells Cloud"
+second_title: "Aspose.Cells Cloud Document"
 linktitle: "Copy Folder"
 type: docs
 url: /copy-folder/

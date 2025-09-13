@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud Web API - Convert a Spreadsheet Range data to a CSV file."
-second_title: "Aspose.Cells Cloud"
+second_title: "Aspose.Cells Cloud Document"
 ArticleTitle: Convert a Spreadsheet Range data to a CSV file.
 linktitle: "Convert Range to CSV"
 type: docs

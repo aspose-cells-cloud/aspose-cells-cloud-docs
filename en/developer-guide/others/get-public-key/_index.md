@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud WEb API - Get Public Key"
-second_title: "Aspose.Cells Cloud"
+second_title: "Aspose.Cells Cloud Document"
 ArticleTitle: "Get Public Key"
 linktitle: "Get Public Key"
 type: docs

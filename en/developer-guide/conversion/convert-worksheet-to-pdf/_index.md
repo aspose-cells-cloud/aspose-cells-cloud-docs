@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud Web API - Convert Spreadsheet Worksheet to Pdf"
-second_title: "Aspose.Cells Cloud"
+second_title: "Aspose.Cells Cloud Document"
 ArticleTitle: "Convert Spreadsheet Worksheet to Pdf"
 linktitle: "Convert Worksheet to Pdf"
 type: docs

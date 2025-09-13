@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud Web API - Check Cloud Service Health"
-second_title: "Aspose.Cells Cloud"
+second_title: "Aspose.Cells Cloud Document"
 ArticleTitle: "Aspose.Cells Cloud Health Check"
 linktitle: "Check Cloud Service Health"
 type: docs

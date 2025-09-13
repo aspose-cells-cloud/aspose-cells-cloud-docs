@@ -1,6 +1,6 @@
 ---
 title: "Get Disk Usage"
-second_title: "Aspose.Cells Cloud"
+second_title: "Aspose.Cells Cloud Document"
 linktitle: "Get Disk Usage"
 type: docs
 url: /get-disk-usage/

@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud Web API - Convert a Spreadsheet Range data to an Image"
-second_title: "Aspose.Cells Cloud"
+second_title: "Aspose.Cells Cloud Document"
 ArticleTitle: "Convert a Spreadsheet Range data to an Image"
 linktitle: "Convert Range to Image"
 type: docs

@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud Web API - Convert a Spreadsheet Table data to a Csv file."
-second_title: "Aspose.Cells Cloud"
+second_title: "Aspose.Cells Cloud Document"
 ArticleTitle: "Convert a Spreadsheet Table data to a Csv file."
 linktitle: "Convert Table to CSV"
 type: docs

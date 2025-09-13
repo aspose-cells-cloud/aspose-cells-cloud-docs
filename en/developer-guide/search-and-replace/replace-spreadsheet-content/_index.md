@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud Web API - Replace Spreadsheet Content"
-second_title: "Aspose.Cells Cloud"
+second_title: "Aspose.Cells Cloud Document"
 ArticleTitle: "Replace Spreadsheet Content"
 linktitle: "Replace Spreadsheet Content"
 type: docs

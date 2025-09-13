@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud Web API - Convert a Spreadsheet Worksheet to an Image"
-second_title: "Aspose.Cells Cloud"
+second_title: "Aspose.Cells Cloud Document"
 ArticleTitle: "Convert a Spreadsheet Worksheet to an Image"
 linktitle: "Convert Worksheet to Image"
 type: docs

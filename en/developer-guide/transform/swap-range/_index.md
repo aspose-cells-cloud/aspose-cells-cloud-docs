@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud Web API - Swap Range in Spreadsheet"
-second_title: "Aspose.Cells Cloud"
+second_title: "Aspose.Cells Cloud Document"
 ArticleTitle: "Swap Range Data in a Spreadsheet"
 linktitle: "Swap Range"
 type: docs

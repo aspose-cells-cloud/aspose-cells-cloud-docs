@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud Web API - Split a spreadsheet into multiple files, one for each worksheet."
-second_title: "Aspose.Cells Cloud"
+second_title: "Aspose.Cells Cloud Document"
 ArticleTitle: "Split a spreadsheet into multiple files, one for each worksheet."
 linktitle: "Split Remote Spreadsheet in Cloud"
 type: docs

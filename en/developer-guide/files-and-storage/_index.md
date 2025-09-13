@@ -1,6 +1,6 @@
 ---
 title: "Files and Storage"
-second_title: "Aspose.Cells Cloud"
+second_title: "Aspose.Cells Cloud Document"
 type: docs
 url: /files-and-storage/
 aliases: [/working-with-files-and-storage-using-aspose-cells-cloud/]

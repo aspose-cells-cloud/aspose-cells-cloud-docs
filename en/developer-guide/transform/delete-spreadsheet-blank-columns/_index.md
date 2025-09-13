@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud Web API - Delete Blank Columns in Spreadsheet"
-second_title: "Aspose.Cells Cloud"
+second_title: "Aspose.Cells Cloud Document"
 ArticleTitle: "Delete Blank Columns in a Spreadsheet"
 linktitle: "Delete Blank Columns"
 type: docs

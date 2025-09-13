@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud Web API - Search Spreadsheet Broken Links in a Spreadsheet"
-second_title: "Aspose.Cells Cloud"
+second_title: "Aspose.Cells Cloud Document"
 ArticleTitle: "Search Spreadsheet Broken Links in a Spreadsheet"
 linktitle: "Search Spreadsheet Broken Links"
 type: docs

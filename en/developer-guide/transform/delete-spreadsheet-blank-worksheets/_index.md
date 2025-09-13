@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud Web API -  Delete Blank Worksheets in Spreadsheet"
-second_title: "Aspose.Cells Cloud"
+second_title: "Aspose.Cells Cloud Document"
 ArticleTitle: "Delete Blank Worksheets in a Spreadsheet"
 linktitle: "Delete Blank Worksheets"
 type: docs

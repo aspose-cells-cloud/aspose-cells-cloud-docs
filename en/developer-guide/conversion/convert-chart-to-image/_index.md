@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud Web API - Convert a Spreadsheet Chart to an Image"
-second_title: "Aspose.Cells Cloud"
+second_title: "Aspose.Cells Cloud Document"
 ArticleTitle: "Convert a Spreadsheet Chart to an Image"
 linktitle: "Convert Chart to Image"
 type: docs

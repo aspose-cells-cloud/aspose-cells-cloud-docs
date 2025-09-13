@@ -1,6 +1,6 @@
 ---
 title: "Storage Exists"
-second_title: "Aspose.Cells Cloud"
+second_title: "Aspose.Cells Cloud Document"
 linktitle: "Storage Exists"
 type: docs
 url: /storage-exists/

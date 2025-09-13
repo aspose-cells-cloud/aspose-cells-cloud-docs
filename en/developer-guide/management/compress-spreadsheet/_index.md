@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud Web API - Compress the size of the Spreadsheet."
-second_title: "Aspose.Cells Cloud"
+second_title: "Aspose.Cells Cloud Document"
 ArticleTitle: "Compress the size of the Spreadsheet"
 linktitle: "Compress Spreadsheet"
 type: docs

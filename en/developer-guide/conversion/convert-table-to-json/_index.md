@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud Web API - Convert a Spreadsheet Table data to a Json file."
-second_title: "Aspose.Cells Cloud"
+second_title: "Aspose.Cells Cloud Document"
 ArticleTitle: "Convert a Spreadsheet Table data to a Json file."
 linktitle: "Convert Table to JSON"
 type: docs

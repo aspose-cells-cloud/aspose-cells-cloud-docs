@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud Webb API - Add a Worksheet to a Spreadsheet"
-second_title: "Aspose.Cells Cloud"
+second_title: "Aspose.Cells Cloud Document"
 ArticleTitle: "Add a Worksheet to a Spreadsheet"
 linktitle: "Add Worksheet to Spreadsheet"
 type: docs

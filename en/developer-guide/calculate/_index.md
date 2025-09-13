@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud Web API - Excel Calculate: Sum, Count, Average, Min, Max, Add, Subtract, Multiply, Divide, etc "
-second_title: "Aspose.Cells Cloud"
+second_title: "Aspose.Cells Cloud Document"
 ArticleTitle: "Excel Calculation: Sum, Count, Average, Min, Max, Add, Subtract, Multiply, Divide, etc"
 linktitle: "Calculate"
 type: docs

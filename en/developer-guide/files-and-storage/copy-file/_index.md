@@ -1,6 +1,6 @@
 ---
 title: "Copy File - Excel API"
-second_title: "Aspose.Cells Cloud"
+second_title: "Aspose.Cells Cloud Document"
 linktitle: "Copy File"
 type: docs
 url: /copy-file/

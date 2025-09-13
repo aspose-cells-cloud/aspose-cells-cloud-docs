@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud Web API - Merge matching spreadsheet files into a file in a remote Folder."
-second_title: "Aspose.Cells Cloud"
+second_title: "Aspose.Cells Cloud Document"
 ArticleTitle: "Merge matching spreadsheet files into a file in a remote Folder."
 linktitle: "Merge Spreadsheets in Remote Folder"
 type: docs

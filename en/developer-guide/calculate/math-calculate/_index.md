@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud Web API - Add, Minus, Multiply, Divide, and Percentage on a range of Spreadsheet/Excel"
-second_title: "Aspose.Cells Cloud"
+second_title: "Aspose.Cells Cloud Document"
 ArticleTitle: "Add, Minus, Multiply, Divide and Percentage in Spreadsheet/Excel"
 linktitle: "Math Calculate"
 type: docs
