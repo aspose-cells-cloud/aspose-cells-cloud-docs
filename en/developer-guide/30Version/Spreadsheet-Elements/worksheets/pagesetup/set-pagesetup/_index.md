@@ -1,6 +1,6 @@
 ---
 title: "Set page setup for a worksheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Set page setup"
 type: docs
 url: /set-page-setup/

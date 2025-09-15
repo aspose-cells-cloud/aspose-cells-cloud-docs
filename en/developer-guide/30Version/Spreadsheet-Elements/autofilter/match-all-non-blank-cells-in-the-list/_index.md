@@ -1,6 +1,6 @@
 ---
 title: "Match all non blank cells in an Excel worksheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Match no blank cell"
 type: docs
 url: /autofilter/match-all-non-blank/

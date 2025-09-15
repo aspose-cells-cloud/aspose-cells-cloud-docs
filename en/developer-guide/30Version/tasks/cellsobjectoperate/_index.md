@@ -1,6 +1,6 @@
 ---
 title: "Working with CellsObjectOperate Task"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 type: docs
 url: /tasks/cells-object-operate/
 aliases: [/working-with-cellsobjectoperate-task/]

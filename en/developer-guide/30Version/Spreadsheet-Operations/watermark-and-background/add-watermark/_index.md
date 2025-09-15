@@ -1,6 +1,6 @@
 ---
 title: "Add  watermark into the Excel files"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Add Watermark into Excel Files"
 type: docs
 url: /add-watermark-into-excel-files/

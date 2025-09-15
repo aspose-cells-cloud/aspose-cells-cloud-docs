@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud Web API - Unprotect Spreadsheet with password"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 ArticleTitle: "Unprotect the Spreadsheet with password"
 linktitle: "Unprotect Spreadsheet"
 type: docs

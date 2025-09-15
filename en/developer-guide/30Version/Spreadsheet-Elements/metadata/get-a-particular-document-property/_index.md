@@ -1,6 +1,6 @@
 ---
 title: "Get a Particular Document Property"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Get"
 type: docs
 url: /document-properties/get/

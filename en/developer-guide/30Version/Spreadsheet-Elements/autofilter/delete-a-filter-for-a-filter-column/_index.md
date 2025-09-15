@@ -1,6 +1,6 @@
 ---
 title: "Delete a filter in an Excel worksheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Delete filter"
 type: docs
 url: /delete-filter/

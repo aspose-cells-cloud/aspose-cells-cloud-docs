@@ -1,6 +1,6 @@
 ---
 title: "Set heights of rows inside the range"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Row height"
 type: docs
 url: /ranges/update/row-height/

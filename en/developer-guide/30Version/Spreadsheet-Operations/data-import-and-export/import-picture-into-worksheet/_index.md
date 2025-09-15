@@ -1,6 +1,6 @@
 ---
 title: "Import Picture into Excel Worksheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Import picture"
 type: docs
 url: /import-picture-into-excel-worksheet/

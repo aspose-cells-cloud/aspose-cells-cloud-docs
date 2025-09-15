@@ -1,6 +1,6 @@
 ---
 title: "SaveAs Excel"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Save as"
 type: docs
 url: /save-an-excel-file-as-other-formats-files/

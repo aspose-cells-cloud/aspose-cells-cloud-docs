@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud Web API - Converting Spreadsheet Range to HTML"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 ArticleTitle: "Converting Spreadsheet Range to Html"
 linktitle: "Convert Range to HTML"
 type: docs

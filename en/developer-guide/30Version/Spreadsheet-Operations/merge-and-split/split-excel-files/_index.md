@@ -1,6 +1,6 @@
 ---
 title: "Split an Excel workbook to multi-files"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Split an Excel file"
 type: docs
 url: /split-multi-excel-files/

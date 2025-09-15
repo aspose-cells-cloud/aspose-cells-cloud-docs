@@ -1,6 +1,6 @@
 ---
 title: "Merge multi Excel files into an Excel file."
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Merge Multi Excel files"
 type: docs
 url: /merge-multi-files-into-excel/

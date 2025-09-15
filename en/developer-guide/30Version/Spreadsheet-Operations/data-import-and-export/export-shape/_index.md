@@ -1,6 +1,6 @@
 ---
 title: "Export Shape"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Shape"
 type: docs
 url: /export-excel-shape-to-different-formats/

@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud Web API - Export a Spreadsheet Worksheet as a Format file"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 ArticleTitle: "Export a Spreadsheet Worksheet as a Format file"
 linktitle: "Export Worksheet"
 type: docs

@@ -1,6 +1,6 @@
 ---
 title: "Update an OLE object in an Excel worksheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Update"
 type: docs
 url: /oleobjects/update/

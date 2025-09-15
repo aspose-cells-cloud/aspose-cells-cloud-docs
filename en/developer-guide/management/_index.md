@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud Web API - Spreadsheet Management: Create a Spreadsheet and add, delete, move, and rename worksheets."
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 ArticleTitle: "Spreadsheet Management: Create a Spreadsheet and add, delete, move, and rename worksheets."
 linktitle: "Management"
 type: docs

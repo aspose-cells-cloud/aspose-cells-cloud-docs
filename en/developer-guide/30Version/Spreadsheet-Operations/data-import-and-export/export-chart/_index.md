@@ -1,6 +1,6 @@
 ---
 title: "Export Chart"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Chart"
 type: docs
 url: /export-excel-chart-to-different-formats/

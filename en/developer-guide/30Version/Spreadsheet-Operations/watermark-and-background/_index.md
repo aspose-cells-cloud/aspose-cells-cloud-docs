@@ -1,6 +1,6 @@
 ---
 title: "Insert Watermarks or set Backgrounds in Excel files."
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Watermark and Background"
 type: docs
 url: /watermark-and-background/

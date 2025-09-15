@@ -1,6 +1,6 @@
 ---
 title: "Get text items from an Excel workbook"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Get in workbook"
 type: docs
 url: /workbook/get-text-items/

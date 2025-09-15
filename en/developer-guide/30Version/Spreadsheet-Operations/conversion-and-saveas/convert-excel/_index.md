@@ -1,6 +1,6 @@
 ---
 title: "Convert an Excel File to Different Formats"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Convert Excel "
 type: docs
 url: /convert-an-excel-file-to-different-formats/

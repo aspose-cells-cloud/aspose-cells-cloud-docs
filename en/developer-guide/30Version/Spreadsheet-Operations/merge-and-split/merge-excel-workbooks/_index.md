@@ -1,6 +1,6 @@
 ---
 title: "Merge an Excel Workbooks into other Excel file"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Merge an Excel file into the Excel file"
 type: docs
 url: /merge-an-excel-file-into-the-excel-file/

@@ -1,6 +1,6 @@
 ---
 title: "Change Widths of Columns inside the Range"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Column width"
 type: docs
 url: /ranges/update/column-width/

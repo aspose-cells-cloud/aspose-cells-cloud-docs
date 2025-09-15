@@ -1,6 +1,6 @@
 ---
 title: "Add a dynamic date filter in an Excel worksheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Add dynamic filter"
 type: docs
 url: /autofilter/add-dynamic-filter/

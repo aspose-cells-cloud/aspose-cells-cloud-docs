@@ -1,6 +1,6 @@
 ---
 title: "Clear Modify Password of Excel Workbooks"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Clear Excel Files Password"
 type: docs
 url:  /clear-excel-files-password/

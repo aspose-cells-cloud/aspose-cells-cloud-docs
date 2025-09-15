@@ -1,6 +1,6 @@
 ---
 title: "Working with SaveResult Task"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 type: docs
 url: /tasks/save-result/
 aliases: [/working-with-saveresult-task/]

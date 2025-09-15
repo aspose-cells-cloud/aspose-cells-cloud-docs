@@ -1,6 +1,6 @@
 ---
 title: "Find text from Excel files"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Find without using storage"
 type: docs
 url: /search/

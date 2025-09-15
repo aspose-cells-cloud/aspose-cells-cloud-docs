@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud Web APIs - Convert a spreadsheet to another file format, including worksheets, tables, charts, and data ranges."
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 ArticleTitle: "Convert spreadsheets, worksheets, tables, and ranges to other format files."
 linktitle: "Conversion"
 type: docs

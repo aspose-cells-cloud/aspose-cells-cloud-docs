@@ -1,6 +1,6 @@
 ---
 title: "Spreadsheet Elements"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 type: docs
 url: /spreadsheet-elements/
 keywords: "Learn how to work with spreadsheet elements on Aspose Cells Cloud file."

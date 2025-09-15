@@ -1,6 +1,6 @@
 ---
 title: "Get metadata from Excel files"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Get without using storage"
 type: docs
 url: /metadata/get/

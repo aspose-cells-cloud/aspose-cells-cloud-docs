@@ -1,6 +1,6 @@
 ---
 title: "Copy Range in a Worksheet with Paste Options"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Copy"
 type: docs
 url: /ranges/copy/

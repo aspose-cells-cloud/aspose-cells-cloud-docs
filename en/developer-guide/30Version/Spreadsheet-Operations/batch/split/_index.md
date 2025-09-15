@@ -1,6 +1,6 @@
 ---
 title: "Batch Split"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 type: docs
 url: /batch/split
 keywords: "Batch split Excel file."

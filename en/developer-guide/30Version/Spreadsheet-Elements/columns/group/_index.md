@@ -1,6 +1,6 @@
 ---
 title: "Group columns on an Excel worksheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Group"
 type: docs
 url: /columns/group/

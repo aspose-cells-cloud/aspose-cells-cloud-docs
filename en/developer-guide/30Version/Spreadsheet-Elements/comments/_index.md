@@ -1,6 +1,6 @@
 ---
 title: "Working with Excel comments"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Comments"
 type: docs
 url: /comments/

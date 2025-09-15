@@ -1,6 +1,6 @@
 ---
 title: "Calculate formula on an Excel worksheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Calculate"
 type: docs
 url: /worksheets/calculate-formula/

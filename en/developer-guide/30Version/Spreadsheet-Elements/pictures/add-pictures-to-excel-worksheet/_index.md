@@ -1,6 +1,6 @@
 ---
 title: "Add Picture in an Excel file"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Add"
 type: docs
 url: /pictures/add/

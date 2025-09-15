@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud SDK for Go"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 type: docs
 url: /available-sdks/aspose-cells-cloud-go/
 description: "Aspose.Cells Cloud SDK for Go provides strong cross-platform support for Go developers, making it easy to integrate and use for Windows, Linux, or macOS. It supports Excel to create, convert, merge, split, protected, inner object operation, and so on."

@@ -1,6 +1,6 @@
 ---
 title: "Working with Excel validation"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Validations"
 type: docs
 url: /validations/

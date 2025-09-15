@@ -1,6 +1,6 @@
 ---
 title: "Get all pictures in an Excel worksheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Get all"
 type: docs
 url: /pictures/get-all/

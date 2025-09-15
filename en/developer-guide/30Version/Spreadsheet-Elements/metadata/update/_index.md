@@ -1,6 +1,6 @@
 ---
 title: "Update Metadata"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Update without using storage"
 type: docs
 url: /metadata/update/

@@ -1,6 +1,6 @@
 ---
 title: "How to update range content from an Excel worksheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Update"
 type: docs
 url: /ranges/update/

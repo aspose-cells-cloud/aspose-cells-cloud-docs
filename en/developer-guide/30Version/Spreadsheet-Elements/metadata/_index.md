@@ -1,6 +1,6 @@
 ---
 title: "Working with Excel metadata & properties"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Metadata & Properties"
 type: docs
 url: /metadata/

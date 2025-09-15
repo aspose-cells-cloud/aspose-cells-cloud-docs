@@ -1,6 +1,6 @@
 ---
 title: "Convert OLE object to image in an Excel worksheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Conversion"
 type: docs
 url: /oleobjects/convert/

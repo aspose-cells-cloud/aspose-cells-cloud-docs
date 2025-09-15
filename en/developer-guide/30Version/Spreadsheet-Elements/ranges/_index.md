@@ -1,6 +1,6 @@
 ---
 title: "Working with Excel range"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Range"
 type: docs
 url: /ranges/

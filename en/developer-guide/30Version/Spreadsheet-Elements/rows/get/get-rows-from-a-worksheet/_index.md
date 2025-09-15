@@ -1,6 +1,6 @@
 ---
 title: "Get rows info from an Excel worksheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Rows"
 type: docs
 url: /rows/get/rows/

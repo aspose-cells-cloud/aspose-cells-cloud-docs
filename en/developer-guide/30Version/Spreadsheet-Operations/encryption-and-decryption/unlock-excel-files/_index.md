@@ -1,6 +1,6 @@
 ---
 title: "Unlock Excel Files"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Unlock Excel Files"
 type: docs
 url: /unlock-excel-files/

@@ -1,6 +1,6 @@
 ---
 title: "How to build an Excel report with a smart marker template"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "SmartMarker"
 type: docs
 url: /build-report-with-smart-marker/

@@ -1,6 +1,6 @@
 ---
 title: "Add a top 10 items in an Excel worksheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Add top 10 filter"
 type: docs
 url: /autofilter/add-top-10-filter/ 

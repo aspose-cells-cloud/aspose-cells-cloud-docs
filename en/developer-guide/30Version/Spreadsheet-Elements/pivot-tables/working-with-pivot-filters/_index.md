@@ -1,6 +1,6 @@
 ---
 title: "Working with pivot filters"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: Filters
 type: docs
 url: /pivot-tables/add-filters/

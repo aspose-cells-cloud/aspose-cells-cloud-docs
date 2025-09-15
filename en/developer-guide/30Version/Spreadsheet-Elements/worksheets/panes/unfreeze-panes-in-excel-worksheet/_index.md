@@ -1,6 +1,6 @@
 ---
 title: "Unfreeze panes on an Excel worksheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Unfreeze"
 type: docs
 url: /worksheets/panes/unfreeze/

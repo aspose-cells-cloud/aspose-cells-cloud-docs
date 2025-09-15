@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud Web API - Rename Worksheet in Spreadsheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 ArticleTitle: "Rename worksheet in Spreadsheet"
 linktitle: "Rename Worksheet in Spreadsheet"
 type: docs

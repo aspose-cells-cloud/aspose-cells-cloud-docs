@@ -1,6 +1,6 @@
 ---
 title: "Add digital signature for Excel workbook" 
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Digital signature"
 type: docs
 url: /excel-digital-signature/

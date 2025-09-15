@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud Web API - Post Access Token"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 ArticleTitle: "Get Access Token with Client ID and Secret"
 linktitle: "Post Access Token"
 type: docs

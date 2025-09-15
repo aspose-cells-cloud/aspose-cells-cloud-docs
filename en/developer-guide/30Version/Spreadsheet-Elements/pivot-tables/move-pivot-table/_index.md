@@ -1,6 +1,6 @@
 ---
 title: "Move a pivot table in an Excel file"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: Move
 type: docs
 url: /pivot-tables/move/

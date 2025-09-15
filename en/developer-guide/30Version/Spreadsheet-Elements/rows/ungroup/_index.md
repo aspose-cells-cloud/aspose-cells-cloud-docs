@@ -1,6 +1,6 @@
 ---
 title: "Ungroup rows on an Excel Worksheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Ungroup"
 type: docs
 url: /rows/ungroup/

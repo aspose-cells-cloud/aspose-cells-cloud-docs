@@ -1,6 +1,6 @@
 ---
 title: "Unmerge merged cells of the range"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Unmerge"
 type: docs
 url: /ranges/unmerge/

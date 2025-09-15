@@ -1,6 +1,6 @@
 ---
 title: "Working with Excel columns"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Columns"
 type: docs
 url: /columns/

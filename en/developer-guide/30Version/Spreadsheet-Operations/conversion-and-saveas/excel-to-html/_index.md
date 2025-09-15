@@ -1,6 +1,6 @@
 ---
 title: "Excel to HTML"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Excel to HTML"
 type: docs
 url: /convert-excel-file-to-html-file/

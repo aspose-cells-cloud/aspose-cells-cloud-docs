@@ -1,6 +1,6 @@
 ---
 title: What's new in Aspose.Cells Cloud
-second_title: "Latest Updates & Features"
+second_title: "Document"
 linktitle: "What's new"
 type: docs
 weight: 9

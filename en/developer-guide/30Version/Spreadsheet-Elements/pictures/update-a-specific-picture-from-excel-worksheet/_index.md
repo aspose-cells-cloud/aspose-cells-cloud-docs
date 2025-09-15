@@ -1,6 +1,6 @@
 ---
 title: "Update picture in an Excel file"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Update"
 type: docs
 url: /pictures/update/

@@ -1,6 +1,6 @@
 ---
 title: "Excel Text Processing: Add Text, Remove Characters, Trim Text, Update Word Case, and so much more"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Text Processing"
 type: docs
 url: /text-processing/

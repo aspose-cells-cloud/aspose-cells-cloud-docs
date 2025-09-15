@@ -1,6 +1,6 @@
 ---
 title: "Delete vertical page break"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Delete vertical page break"
 type: docs
 url: /page-breaks/delete-vertical-page-break/

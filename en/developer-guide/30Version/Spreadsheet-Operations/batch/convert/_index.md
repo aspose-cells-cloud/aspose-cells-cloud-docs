@@ -1,6 +1,6 @@
 ---
 title: "Batch Convert Excel Files"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 type: docs
 url: /batch/convert
 keywords: "Batch conversion of multiple excel files."

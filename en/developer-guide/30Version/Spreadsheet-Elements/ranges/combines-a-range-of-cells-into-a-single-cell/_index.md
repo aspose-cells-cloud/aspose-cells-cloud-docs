@@ -1,6 +1,6 @@
 ---
 title: "Combines a Range of Cells into a Single Cell"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Merge"
 type: docs
 url: /ranges/merge/

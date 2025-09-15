@@ -1,6 +1,6 @@
 ---
 title: "Get names from an Excel workbook"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Names"
 type: docs
 url: /get-names-from-an-excel-file/

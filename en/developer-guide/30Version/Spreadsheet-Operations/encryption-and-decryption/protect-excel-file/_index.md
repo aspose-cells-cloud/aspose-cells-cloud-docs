@@ -1,6 +1,6 @@
 ---
 title: "Protect an Excel Workbook"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Protect an Excel File"
 type: docs
 url: /protect-excel-file/

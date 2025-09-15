@@ -1,6 +1,6 @@
 ---
 title: "Add Background in Workbook"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Add"
 type: docs
 url: /add-background-in-excel-file/

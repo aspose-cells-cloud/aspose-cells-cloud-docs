@@ -1,6 +1,6 @@
 ---
 title: "Working with Excel pivot table"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "PivotTables"
 type: docs
 url: /pivottables/

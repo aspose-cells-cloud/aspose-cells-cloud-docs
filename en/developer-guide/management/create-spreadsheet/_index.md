@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud Web API - Build a new Spreadsheet with a spreadsheet template."
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 ArticleTitle: "Build a new Spreadsheet with a spreadsheet template - Timeline WorkPlan Table, Sales Data Comparison, etc."
 linktitle: "Create Spreadsheet"
 type: docs

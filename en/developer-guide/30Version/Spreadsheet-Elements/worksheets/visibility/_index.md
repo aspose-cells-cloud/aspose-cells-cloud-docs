@@ -1,6 +1,6 @@
 ---
 title: "How to work with visibility on an Excel worksheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Visibility"
 type: docs
 url: /worksheets/panes/

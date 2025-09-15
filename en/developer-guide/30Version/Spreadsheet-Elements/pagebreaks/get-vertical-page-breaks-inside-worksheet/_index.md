@@ -1,6 +1,6 @@
 ---
 title: "Get vertical page breaks"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Get vertical page breaks"
 type: docs
 url: /page-breaks/get-vertical-page-breaks/

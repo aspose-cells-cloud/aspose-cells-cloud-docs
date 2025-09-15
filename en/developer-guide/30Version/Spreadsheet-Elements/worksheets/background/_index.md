@@ -1,6 +1,6 @@
 ---
 title: "How to work with background on an Excel worksheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Background"
 type: docs
 url: /worksheets/background/

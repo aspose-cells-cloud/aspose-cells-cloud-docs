@@ -1,6 +1,6 @@
 ---
 title: "Working with Excel AutoFilter"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "AutoFilter"
 type: docs
 url: /autofilter/

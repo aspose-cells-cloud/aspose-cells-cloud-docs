@@ -1,6 +1,6 @@
 ---
 title: "Docker"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 type: docs
 url: /docker-developer-guide/
 aliases: [/docker/, /docker/run/]

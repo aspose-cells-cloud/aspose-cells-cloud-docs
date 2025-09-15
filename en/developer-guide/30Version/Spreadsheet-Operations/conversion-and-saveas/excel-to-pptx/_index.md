@@ -1,6 +1,6 @@
 ---
 title: "Excel to Pptx"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Excel to Pptx"
 type: docs
 url: /convert-excel-file-to-pptx-file/

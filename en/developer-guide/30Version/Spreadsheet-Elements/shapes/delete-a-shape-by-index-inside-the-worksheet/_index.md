@@ -1,6 +1,6 @@
 ---
 title: "Delete a shape by index on an Excel worksheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Delete"
 type: docs
 url: /shapes/delete/

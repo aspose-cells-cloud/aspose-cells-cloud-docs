@@ -1,6 +1,6 @@
 ---
 title: "Get a shape by index on an Excel worksheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Get"
 type: docs
 url: /shapes/get/

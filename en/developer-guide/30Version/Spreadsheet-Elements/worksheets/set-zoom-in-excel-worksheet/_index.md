@@ -1,6 +1,6 @@
 ---
 title: "Set zoom for an Excel worksheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Zoom"
 type: docs
 url: /worksheets/zoom/

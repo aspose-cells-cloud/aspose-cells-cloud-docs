@@ -1,6 +1,6 @@
 ---
 title: "Import Data with using storage"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Import data with storage"
 type: docs
 url: /import-data-with-using-storage/

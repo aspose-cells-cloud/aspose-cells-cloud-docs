@@ -1,6 +1,6 @@
 ---
 title: "Batch Protect Excel Files"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 type: docs
 url: /batch/protect
 keywords: "Batch protection of multiple Excel files."

@@ -1,6 +1,6 @@
 ---
 title: "Quickstart"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 type: docs
 url: /quickstart/
 description: "Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on."

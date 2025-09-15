@@ -1,6 +1,6 @@
 ---
 title: "How to work with deleting worksheets on an Excel workbook"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Delete"
 type: docs
 url: /worksheets/delete/

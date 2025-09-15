@@ -1,6 +1,6 @@
 ---
 title: "Import CSV Data into Excel Worksheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Import csv data"
 type: docs
 url: /import-csv-data-into-excel/

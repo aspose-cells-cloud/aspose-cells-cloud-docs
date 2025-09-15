@@ -1,6 +1,6 @@
 ---
 title: "How to get range content from an Excel worksheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Get"
 type: docs
 url: /ranges/get/

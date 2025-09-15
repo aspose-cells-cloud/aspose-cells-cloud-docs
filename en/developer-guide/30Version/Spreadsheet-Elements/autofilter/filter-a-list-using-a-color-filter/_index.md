@@ -1,6 +1,6 @@
 ---
 title: "Add a color filter in an Excel worksheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Add color filter"
 type: docs
 url: /autofilter/add-color-filter/

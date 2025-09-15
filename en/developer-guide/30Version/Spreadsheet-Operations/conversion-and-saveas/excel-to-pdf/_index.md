@@ -1,6 +1,6 @@
 ---
 title: "Excel to PDF"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Excel to PDF"
 type: docs
 url: /convert-excel-file-to-pdf-file/

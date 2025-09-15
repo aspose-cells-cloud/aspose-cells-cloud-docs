@@ -1,6 +1,6 @@
 ---
 title: "How to work with panes on an Excel worksheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Panes"
 type: docs
 url: /worksheets/panes/

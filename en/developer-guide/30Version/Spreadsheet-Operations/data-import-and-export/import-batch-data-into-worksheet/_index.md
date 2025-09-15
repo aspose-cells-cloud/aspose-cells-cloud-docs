@@ -1,6 +1,6 @@
 ---
 title: "Import Batch Data into Excel Worksheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Import batch data"
 type: docs
 url: /import-batch-data-into-excel/

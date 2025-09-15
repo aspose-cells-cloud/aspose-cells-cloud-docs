@@ -1,6 +1,6 @@
 ---
 title: "Move an Excel worksheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Move"
 type: docs
 url: /worksheets/move/

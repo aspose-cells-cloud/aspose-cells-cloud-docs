@@ -1,6 +1,6 @@
 ---
 title: "Set range value on an Excel worksheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Set values"
 type: docs
 url: /ranges/update/values/

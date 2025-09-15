@@ -1,6 +1,6 @@
 ---
 title: "Delete metadata on Excel files."
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Delete without using storage"
 type: docs
 url: /metadata/delete/

@@ -1,6 +1,6 @@
 ---
 title: "Excel to CSV"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Excel to CSV"
 type: docs
 url:  convert-excel-file-to-csv-file/

@@ -1,6 +1,6 @@
 ---
 title: "Add a worksheet validation on an Excel worksheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Add"
 type: docs
 url: /validations/add/

@@ -1,6 +1,6 @@
 ---
 title: "Replace text from Excel files"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Replace without using storage"
 type: docs
 url: /replace/

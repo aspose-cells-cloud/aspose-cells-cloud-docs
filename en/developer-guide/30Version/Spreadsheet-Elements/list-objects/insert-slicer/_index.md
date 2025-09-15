@@ -1,6 +1,6 @@
 ---
 title: List object insert slicer 
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Insert slicer"
 type: docs
 keywords: "Insert slicer for list object."

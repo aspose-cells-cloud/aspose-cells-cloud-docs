@@ -1,6 +1,6 @@
 ---
 title: "Delete all OLE objects in an Excel worksheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Clear"
 type: docs
 url: /oleobjects/clear/

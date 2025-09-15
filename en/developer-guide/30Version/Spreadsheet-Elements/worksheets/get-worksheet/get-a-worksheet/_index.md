@@ -1,6 +1,6 @@
 ---
 title: "Get worksheet from an Excel worksheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Worksheet"
 type: docs
 url: /worksheets/get-worksheet/

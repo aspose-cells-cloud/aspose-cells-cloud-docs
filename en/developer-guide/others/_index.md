@@ -2,7 +2,7 @@
 title: "Aspose.Cells Cloud Web API - Other Features: Health Check, Get Public Key, and More"
 linktitle: "Other Features"
 ArticleTitle: "Other Features: Health Check, Get Public Key, and More"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 type: docs
 url: /other-features/
 keywords: "Aspose.Cells Cloud REST API, Health Check, Public Key Retrieval, Excel 2013, Excel 2016, Excel 2019, Excel 365"

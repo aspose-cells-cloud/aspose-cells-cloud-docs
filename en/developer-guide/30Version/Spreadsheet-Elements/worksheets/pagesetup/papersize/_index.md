@@ -1,6 +1,6 @@
 ---
 title: "Paper Size"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Paper Size"
 type: docs
 url: /paper-size/

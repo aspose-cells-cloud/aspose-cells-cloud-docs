@@ -1,6 +1,6 @@
 ---
 title: "Import String Array into Excel Worksheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Import string array"
 type: docs
 url: /import-string-array-into-excel-worksheet/

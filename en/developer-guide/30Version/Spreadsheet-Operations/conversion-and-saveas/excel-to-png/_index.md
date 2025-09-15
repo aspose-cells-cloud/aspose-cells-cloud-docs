@@ -1,6 +1,6 @@
 ---
 title: "Excel to PNG"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Excel to PNG"
 type: docs
 url:  convert-excel-file-to-png-file/

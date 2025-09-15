@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud Web API - Save Spreadsheet as a format file"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 ArticleTitle: "Save Spreadsheet as a Format file"
 linktitle: "Save Spreadsheet as"
 type: docs

@@ -1,6 +1,6 @@
 ---
 title: "Batch processing of Excel files. Conversion, Lock, Protect, Split, and Unlock."
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Batch Excel files"
 type: docs
 url: /batch/

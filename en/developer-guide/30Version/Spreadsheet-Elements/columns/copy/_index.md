@@ -1,6 +1,6 @@
 ---
 title: "Copy columns on an Excel worksheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Copy"
 type: docs
 url: /columns/copy/

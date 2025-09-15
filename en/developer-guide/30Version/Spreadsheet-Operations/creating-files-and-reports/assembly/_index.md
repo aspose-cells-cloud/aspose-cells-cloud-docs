@@ -1,6 +1,6 @@
 ---
 title: "Assembling data for the creation of an Excel report."
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Assembly Data"
 type: docs
 url: /assembly-data-for-the-creation-of-an-excel-report/

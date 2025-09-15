@@ -1,6 +1,6 @@
 ---
 title: "Import Data into Excel files and Export data from Excel files."
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Import and Export Data"
 type: docs
 url: /data-import-and-export/

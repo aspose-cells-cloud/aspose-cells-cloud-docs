@@ -1,6 +1,6 @@
 ---
 title: "Set a Particular Document Property"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Update"
 type: docs
 url: /document-properties/update/

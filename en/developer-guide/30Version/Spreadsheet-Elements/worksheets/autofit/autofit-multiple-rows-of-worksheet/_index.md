@@ -1,6 +1,6 @@
 ---
 title: "Autofit multiple rows on an Excel worksheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Rows"
 type: docs
 url: /worksheets/autofit/rows/

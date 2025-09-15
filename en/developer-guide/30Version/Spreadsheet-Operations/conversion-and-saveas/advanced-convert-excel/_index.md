@@ -1,6 +1,6 @@
 ---
 title: "Advanced Convert Excel file"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Advanced Convert"
 type: docs
 url: /advanced-convert-excel/

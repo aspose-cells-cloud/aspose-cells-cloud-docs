@@ -1,6 +1,6 @@
 ---
 title: "Import Double Array into Excel Worksheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Import double array"
 type: docs
 url: /import-double-array-into-excel-worksheet/

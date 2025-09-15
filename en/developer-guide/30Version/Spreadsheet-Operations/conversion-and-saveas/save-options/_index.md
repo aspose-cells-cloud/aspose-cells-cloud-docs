@@ -1,6 +1,6 @@
 ---
 title: "Save Options"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Save options"
 type: docs
 url: /save-options/

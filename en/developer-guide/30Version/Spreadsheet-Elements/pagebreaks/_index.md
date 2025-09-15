@@ -1,6 +1,6 @@
 ---
 title: "Working with Excel page break"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "PageBreaks"
 type: docs
 url: /working-with-pagebreaks/

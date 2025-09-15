@@ -1,6 +1,6 @@
 ---
 title: "Add a list object in an Excel worksheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Add"
 type: docs
 url: /list-objects/add/

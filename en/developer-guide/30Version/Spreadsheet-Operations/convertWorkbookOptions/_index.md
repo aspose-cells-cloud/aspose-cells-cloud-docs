@@ -1,6 +1,6 @@
 ---
 title: "Convert Workbook Options"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Convert Workbook Options"
 type: docs
 url: /convert-workbook-options/

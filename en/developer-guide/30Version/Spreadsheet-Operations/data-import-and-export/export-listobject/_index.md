@@ -1,6 +1,6 @@
 ---
 title: "Export List Object"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "List Object"
 type: docs
 url: /export-excel-listobject-to-different-formats/

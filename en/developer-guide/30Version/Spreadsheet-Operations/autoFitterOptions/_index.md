@@ -1,6 +1,6 @@
 ---
 title: "Auto Fitter Options"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Auto Fitter Options"
 type: docs
 url: /auto-fitter-options/

@@ -1,6 +1,6 @@
 ---
 title: "Import Json data into Excel"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Import Json"
 type: docs
 url: /import-json-data-into-excel/

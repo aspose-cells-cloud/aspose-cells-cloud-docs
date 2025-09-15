@@ -1,6 +1,6 @@
 ---
 title: "Convert table to pivot table"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: Convert
 type: docs
 url: /pivot-tables/convert-table-to-pivottable/

@@ -1,6 +1,6 @@
 ---
 title: "Compress and Repair Excel files."
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 type: docs
 url: /compress-and-repair-excel-files/
 linktitle: "Compress and Repair"

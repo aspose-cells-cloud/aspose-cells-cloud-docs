@@ -1,6 +1,6 @@
 ---
 title: "Set the Style of the Range"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Set style"
 type: docs
 url: /ranges/update/style/

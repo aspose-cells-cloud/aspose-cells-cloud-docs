@@ -1,6 +1,6 @@
 ---
 title: "Working with Excel charts"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Charts"
 type: docs
 url: /charts/

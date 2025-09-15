@@ -1,6 +1,6 @@
 ---
 title: "Replace text in an Excel workbook"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Replace in workbook"
 type: docs
 url: /workbook/replace-text/

@@ -1,6 +1,6 @@
 ---
 title: "Batch Lock Excel Files"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 type: docs
 url: /batch/lock
 keywords: "Batch lock of multiple Excel files."

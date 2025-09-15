@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud Web API - Replace Range Content in Remote Spreadsheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 ArticleTitle: "Replace Range Content in Remote a Spreadsheet"
 linktitle: "Replace Remote Range Content"
 type: docs

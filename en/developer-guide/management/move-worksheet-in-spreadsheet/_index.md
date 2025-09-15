@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud Web API - Move a Worksheet to new position in the Spreadsheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 ArticleTitle: "Move worksheet to new position in Spreadsheet"
 linktitle: "Move Worksheet in Spreadsheet"
 type: docs

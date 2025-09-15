@@ -1,6 +1,6 @@
 ---
 title: "Add an Empty Column on an Excel worksheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Add"
 type: docs
 url: /columns/add/

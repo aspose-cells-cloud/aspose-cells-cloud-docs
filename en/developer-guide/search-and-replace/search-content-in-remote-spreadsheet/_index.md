@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud Web API - Search Content in Remote Spreadsheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 ArticleTitle: "Search Content in a Remote Spreadsheet"
 linktitle: "Search Remote Spreadsheet Content"
 type: docs

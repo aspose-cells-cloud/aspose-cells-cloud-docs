@@ -1,6 +1,6 @@
 ---
 title: "Available SDKs"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 type: docs
 url: /available-sdks/
 description: "Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on."
@@ -75,7 +75,6 @@ In summary, using Aspose.Cells Cloud SDK for Go can bring many benefits, includi
 
 - With Aspose.Cells Cloud SDK for Java, you can build customized spreadsheet applications to meet specific business needs.
 - For example, developing custom form processing applications, financial data management tools, etc.
-
 
 # **SDK benefits**
 

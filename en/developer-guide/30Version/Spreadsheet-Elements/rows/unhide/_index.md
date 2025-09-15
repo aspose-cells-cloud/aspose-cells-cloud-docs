@@ -1,6 +1,6 @@
 ---
 title: "Unhide rows on an Excel worksheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Unhide"
 type: docs
 url: /rows/unhide/

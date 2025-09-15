@@ -1,6 +1,6 @@
 ---
 title: "Excel to Docx"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Excel to Docx"
 type: docs
 url:  convert-excel-file-to-docx-file/

@@ -1,6 +1,6 @@
 ---
 title: "Working with ImportData Task"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 type: docs
 url: /tasks/importdata/
 aliases: [/working-with-importdata-task/]

@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud Web API - Import Csv, JSON, or XML Data into a Spreadsheet file."
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 ArticleTitle: "Import Csv, JSON, or XML Data into a Spreadsheet file."
 linktitle: "Import Data into Spreadsheet"
 type: docs

@@ -1,6 +1,6 @@
 ---
 title: "Add Text to Excel: Efficiently Insert Data with Spreadsheet WEB API"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Add Text"
 type: docs
 url: /excel-add-text/

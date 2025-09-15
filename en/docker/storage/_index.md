@@ -1,6 +1,6 @@
 ---
 title: "Storage"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 type: docs
 url: /docker/storage/
 description: "How to set storage position about Aspose.Cells Cloud for Docker."

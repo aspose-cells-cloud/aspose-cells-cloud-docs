@@ -1,6 +1,6 @@
 ---
 title: "Update Word Case"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Word Case"
 type: docs
 url: /post-update-word-case/

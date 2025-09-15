@@ -1,6 +1,6 @@
 ---
 title: "Add an empty row on an Excel worksheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Row"
 type: docs
 url: /rows/add/row/

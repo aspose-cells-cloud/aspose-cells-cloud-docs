@@ -1,6 +1,6 @@
 ---
 title: "Working in Excel files: Formula Calculation, Auto-fit, Clear objects, etc."
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Excel Common Operations"
 type: docs
 url: /workbook/

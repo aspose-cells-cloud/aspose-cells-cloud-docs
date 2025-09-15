@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Could Web API - Convert a Spreadsheet Range data to a Pdf file"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 ArticleTitle: "Convert a Spreadsheet Range data to a Pdf file."
 linktitle: "Convert Range to PDF"
 type: docs

@@ -1,6 +1,6 @@
 ---
 title: "Excel to Json"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Excel to Json"
 type: docs
 url: /convert-excel-file-to-json-file/

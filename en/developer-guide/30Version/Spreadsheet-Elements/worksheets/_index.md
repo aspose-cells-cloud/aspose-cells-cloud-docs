@@ -1,6 +1,6 @@
 ---
 title: "Working with Excel worksheet."
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Worksheets"
 type: docs
 url: /worksheets/

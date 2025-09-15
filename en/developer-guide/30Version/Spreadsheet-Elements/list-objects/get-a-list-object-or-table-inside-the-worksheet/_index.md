@@ -1,6 +1,6 @@
 ---
 title: "Get a list object in an Excel worksheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Get"
 type: docs
 url: /list-objects/get/

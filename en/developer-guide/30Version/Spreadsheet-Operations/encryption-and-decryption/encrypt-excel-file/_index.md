@@ -1,6 +1,6 @@
 ---
 title: "Encrypt an Excel workbook"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Encrypt an Excel file"
 type: docs
 url: /excel-file-encrypt/

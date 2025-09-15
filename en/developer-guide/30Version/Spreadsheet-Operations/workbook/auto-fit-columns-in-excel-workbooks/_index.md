@@ -1,6 +1,6 @@
 ---
 title: "Autofit columns on an Excel file"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Columns"
 type: docs
 url: /autofit-columns-on-an-excel-file/

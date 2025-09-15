@@ -1,6 +1,6 @@
 ---
 title: "Hide an Excel worksheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Hide"
 type: docs
 url: /worksheets/hide/

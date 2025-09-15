@@ -1,6 +1,6 @@
 ---
 title: "Hide pivot field item in a pivot table"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: Hide
 type: docs
 url: /pivot-tables/hide-pivot-field-item/

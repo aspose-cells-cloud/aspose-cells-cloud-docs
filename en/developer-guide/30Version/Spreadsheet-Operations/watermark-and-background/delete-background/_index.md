@@ -1,6 +1,6 @@
 ---
 title: "Delete background on an Excel workbook"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Delete"
 type: docs
 url: /delete-background-in-excel-file/

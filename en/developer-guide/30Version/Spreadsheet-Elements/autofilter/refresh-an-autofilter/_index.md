@@ -1,6 +1,6 @@
 ---
 title: "Refresh an Auto Filter in an Excel worksheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Refresh auto filter"
 type: docs
 url: /autofilter/refresh/

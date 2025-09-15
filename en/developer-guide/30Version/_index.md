@@ -1,6 +1,6 @@
 ---
 title: "Developer Guide 3.0"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 type: docs
 url: /developer-guide-3.0/
 aliases: [/developer-guide/v3.0/,/developer-guide-v3.0/]

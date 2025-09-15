@@ -1,6 +1,6 @@
 ---
 title: "Remove Characters from Excel: Efficiently Insert Data with Spreadsheet WEB API"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Remove Characters"
 type: docs
 url: /excel-remove-characters/

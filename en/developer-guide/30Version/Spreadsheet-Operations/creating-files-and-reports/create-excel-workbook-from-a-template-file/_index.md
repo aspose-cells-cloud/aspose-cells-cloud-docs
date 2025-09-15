@@ -1,6 +1,6 @@
 ---
 title: "How to create an Excel workbook with a template file"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Template File"
 type: docs
 url: /create-an-excel-file-with-template-file/

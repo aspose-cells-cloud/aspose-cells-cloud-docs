@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud Web API - Convert a Spreadsheet Table data to a Html file"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 ArticleTitle: "Convert a Spreadsheet Table data to a Html file"
 linktitle: "Convert Table to HTML"
 type: docs

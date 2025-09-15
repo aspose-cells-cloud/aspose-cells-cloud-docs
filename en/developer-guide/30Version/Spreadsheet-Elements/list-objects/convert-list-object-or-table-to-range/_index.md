@@ -1,6 +1,6 @@
 ---
 title: "Convert list object to range in an Excel worksheet"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Conversion"
 type: docs
 url: /list-objects/to-range/

@@ -1,6 +1,6 @@
 ---
 title: "Excel to TIFF"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linketitle: "Excel to Tiff"
 type: docs
 url: /convert-excel-file-to-tiff-file/

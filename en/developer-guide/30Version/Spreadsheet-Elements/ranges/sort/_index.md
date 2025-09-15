@@ -1,6 +1,6 @@
 ---
 title: Range Sort 
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Sort"
 type: docs
 keywords: "Range Sort."

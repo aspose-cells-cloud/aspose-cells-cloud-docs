@@ -1,6 +1,6 @@
 ---
 title: "Excel to Markdown"
-second_title: "Aspose.Cells Cloud Document"
+second_title: "Document"
 linktitle: "Excel to Markdown"
 type: docs
 url: /convert-excel-file-to-markdown-file/
