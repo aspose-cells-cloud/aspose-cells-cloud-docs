@@ -2,6 +2,7 @@
 title: "Aspose.Cells Cloud Supported Platforms"
 second_title: "Document"
 ArticleTitle: "Aspose.Cells Cloud Supported Platforms: Windows, Linux, and MacOS"
+linktitle: "Supported Platforms"
 type: docs
 url: /supported-platforms/
 description: "Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on."
