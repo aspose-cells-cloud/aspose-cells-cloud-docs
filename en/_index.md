@@ -11,9 +11,9 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, As
 
 ## What is Aspose.Cells Cloud APIs?
 
-Aspose.Cells Cloud APIs are a set of Spreadsheet/Excel cloud services - no need to install Office, no need to configure servers, just send an HTTP request, and you can perform all common operations such as creating, editing, format conversion, data cleanup, charts, pivot tables, encryption, splitting, merging, watermarks, digital signatures, etc., anywhere and in any language.1
+Aspose.Cells Cloud APIs are a set of Spreadsheet/Excel cloud services - no need to install Office, no need to configure servers, just send an HTTP request, and you can perform all common operations such as creating, editing, format conversion, data cleanup, charts, pivot tables, encryption, splitting, merging, watermarks, digital signatures, etc., anywhere and in any language.
 
-## Why is Aspose.1Cells Cloud APIs?
+## Why use Aspose.Cells Cloud APIs?
 
 - Creating, editing, converting, and analyzing spreadsheets in cloud storage based on Aspose.Cells Cloud Web API services.
 - Create, edit, convert, and analyze local spreadsheet files based on Aspose.Cells Cloud Web API services.
@@ -26,7 +26,7 @@ Aspose.Cells Cloud APIs are a set of Spreadsheet/Excel cloud services - no need 
   - **Delete extra spaces in the entire file** → TrimSpreadsheetContent
   - **Combine 10+ files into one report** → MergeSpreadsheets
 
-## **How to Use Aspose.Cells Cloud API?**
+## **How to use Aspose.Cells Cloud APIs?**
 
 ### Step 1: **Get API Credentials**  
 
