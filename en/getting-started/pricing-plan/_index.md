@@ -2,6 +2,7 @@
 title: "Aspose.Cells Cloud Pricing Plan: 150 free API calls per month, with a tiered pricing model for exceeding usage."
 second_title: "Document"
 ArticleTitle: "Aspose.Cells Cloud Pricing Plan"
+LinkTitle: "Pricing Plan"
 type: docs
 url: /pricing-plan/
 description: "Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on."

@@ -2,6 +2,7 @@
 title: "Evaluate Aspose.Cells Cloud"
 second_title: "Document"
 ArticleTitle: "Evaluate Aspose.Cells Cloud"
+LinkTitle: "Evaluate"
 type: docs
 url: /evaluate-aspose-cells/
 description: "Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on."

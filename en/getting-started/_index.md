@@ -2,6 +2,7 @@
 title: "Aspose.Cells Cloud Getting Started: How to Process Excel Files in 3 Steps Using Aspose.Cells Cloud WEB API."
 second_title: "Document"
 ArticleTitle: "Aspose.Cells Cloud Getting Started"
+linktitle: "Getting Started"
 type: docs
 url: /getting-started/
 description: "Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on."

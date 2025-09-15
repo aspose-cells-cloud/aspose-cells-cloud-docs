@@ -2,6 +2,7 @@
 title: "Aspose.Cells Cloud Quickstart: Create a spreadsheet application in 5 minutes."
 second_title: "Document"
 ArticleTitle: "Aspose.Cells Cloud Quickstart"
+LinkTitle: "Quickstart"
 type: docs
 url: /quickstart/
 description: "Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on."

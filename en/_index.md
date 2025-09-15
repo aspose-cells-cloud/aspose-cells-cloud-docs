@@ -1,6 +1,7 @@
 ---
-title: "Aspose.Cells Cloud Web API: Spreadsheet conversion, merged, splitter, protect, data processing, etc"
+title: "Aspose.Cells Cloud Web: Cloud storage, Spreadsheet conversion, merged, splitting, protecting, data processing, and more"
 second_title: "Document"
+ArticleTitle: "Aspose.Cells Cloud Web: Cloud storage, Spreadsheet conversion, merged, splitting, protecting, data processing, and more"
 linktitle: "Developer Center"
 type: docs
 url: /
@@ -56,7 +57,7 @@ dotnet add package Aspose.Cells-Cloud --version 25.8.0
 
 - **Spreadsheet**: The Excel file name that must be in the local storage.
 - **Format**: Target format. e.g. pdf, png, csv, json, etc.
-- **Output file** wTll be saved to the local location.
+- **Output file** will be saved to the local location. "EmployeeSalesSummary.pdf" is the output file name.
 
 ## **Core Functions**
 
