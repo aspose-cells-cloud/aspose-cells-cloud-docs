@@ -1,6 +1,7 @@
 ---
-title: "Supported File Formats"
+title: "Aspose.Cells Cloud Supported File Formats"
 second_title: "Document"
+ArticleTitle: "Aspose.Cells Cloud Supported File Formats: Excel, Pdf, CSV, Json, Markdown, and more"
 type: docs
 url: /supported-file-formats/
 description: "Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on."

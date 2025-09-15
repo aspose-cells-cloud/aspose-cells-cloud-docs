@@ -1,6 +1,7 @@
 ---
-title: "How to Run Docker Container"
+title: "How to Run Aspose.Cells Cloud Docker Container:Run the official Aspose.Cells Cloud container in 3 steps: pull, configure, start."
 second_title: "Document"
+ArticleTitle: "How to Run Aspose.Cells Cloud Docker Container"
 type: docs
 url: /getting-started/how-to-run-docker-container/
 aliases: [/how-to-run-docker-container/]
@@ -31,15 +32,24 @@ Aspose.Cells Cloud team has published the Docker Container on [Docker Hub](https
 
 If "License" parameters are omitted, the app will work in trial mode.
 
-### Run a Docker container using command line
+### 1. Pull Aspose.Cells Cloud Image
 
-You can simply run the following docker command after pulling the container from [Docker Hub](https://href.li/?https://hub.docker.com/r/aspose/cells-cloud).
-
-```JAVA
-docker run   -e "LicensePublicKey=public_key" -e "LicensePrivateKey=private_key" -v c:/data:c:/data  -v C:/Windows/Fonts:C:/Windows/Fonts -p 80:5000   aspose/cells-cloud
+```bash
+# Pull Aspose.Cells Cloud Image latest version
+docker pull aspose/cells-cloud:latest
 ```
 
-### Configurations for Docker-Compose Tool
+```powershell
+# Pull Aspose.Cells Cloud Image  version on windows server 2019
+docker pull aspose/cells-cloud:ltsc2019.25.9.0 
+# Pull Aspose.Cells Cloud Image  version on windows server 2022
+docker pull aspose/cells-cloud:ltsc2022.25.9.0 
+
+# Pull Aspose.Cells Cloud Image  version on windows 11
+docker pull aspose/cells-cloud:ltsc2019.25.9.0 
+```
+
+### 2. Configurations for Docker-Compose Tool
 
 You can write the following configurations in your yaml file for Docker-Compose tool:
 
@@ -54,4 +64,12 @@ AsposeCellsCloud:
       environment:
         "LicensePublicKey": "yourKeyHere"
         "LicensePrivateKey": "yourKeyHere"
+```
+
+### 3. Run a Docker container using command line
+
+You can simply run the following docker command after pulling the container from [Docker Hub](https://href.li/?https://hub.docker.com/r/aspose/cells-cloud).
+
+```JAVA
+docker run   -e "LicensePublicKey=public_key" -e "LicensePrivateKey=private_key" -v c:/data:c:/data  -v C:/Windows/Fonts:C:/Windows/Fonts -p 80:5000   aspose/cells-cloud
 ```

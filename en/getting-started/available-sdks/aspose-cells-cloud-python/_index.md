@@ -1,6 +1,7 @@
 ---
-title: "Aspose.Cells Cloud SDK for Python"
+title: "Aspose.Cells Cloud SDK for Python: Convert, merge, split, protect, search, replace, and more."
 second_title: "Document"
+ArticleTitle: "Aspose.Cells Cloud SDK for Python: Convert, merge, split, protect, search, replace, and more."
 type: docs
 url: /available-sdks/aspose-cells-cloud-python/
 description: "Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on."

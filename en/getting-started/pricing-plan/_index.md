@@ -1,6 +1,7 @@
 ---
-title: "Pricing Plan"
+title: "Aspose.Cells Cloud Pricing Plan: 150 free API calls per month, with a tiered pricing model for exceeding usage."
 second_title: "Document"
+ArticleTitle: "Aspose.Cells Cloud Pricing Plan"
 type: docs
 url: /pricing-plan/
 description: "Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on."
@@ -52,6 +53,5 @@ Aspose builds incredibly easy-to-use Software as a Service (SaaS) that developer
         </tr>
     </tbody>
 </table>
-
 
 Please check [the Pricing Plan and How to Purchase](https://purchase.aspose.cloud/buy) webpage which gives an overview of our single pricing plan and why there are no “upgrades” or “downgrades”.

@@ -1,6 +1,7 @@
 ---
-title: "Aspose.Cells Cloud SDK for Perl"
+title: "Aspose.Cells Cloud SDK for Perl: Convert, merge, split, protect, search, replace, and more."
 second_title: "Document"
+ArticleTitle: "Aspose.Cells Cloud SDK for Perl: Convert, merge, split, protect, search, replace, and more."
 type: docs
 url: /available-sdks/aspose-cells-cloud-perl/
 description: "Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on."
