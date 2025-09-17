@@ -20,11 +20,35 @@ Local file processing and cloud file processing are different data management pa
   - The customer has complete physical control over the hardware.
   - The purchase, maintenance, upgrade and retirement of the infrastructure is the responsibility of the user or their organization.
 
+```Python
+from asposecellscloud.apis.cells_api import CellsApi
+from asposecellscloud.requests import ConvertSpreadsheetRequest
+# Initialize CellsApi
+api  = CellsApi('YourCellsCloudClientId','YourCellsCloudClientSecret')
+# Convert Local Excel file to PDF
+api.convert_spreadsheet( ConvertSpreadsheetRequest( 'D:\\Data\\BookSales.xlsx', "pdf" ) , local_outpath = "BookSales.pdf")
+
+```
+
 - Cloud file:
 
   - Files are stored in remote data centers operated by third-party cloud service providers (Aspose cloud storage, Dropbox, AWS, Google Cloud, Microsoft Azure). AWS, Dropbox, Google Cloud, and Microsoft Azure can all connect people to Aspose cloud storage.
   - Customers access these files over the Internet, regardless of the location and maintenance of the underlying hardware.
   - The infrastructure is the responsibility of the cloud service provider, and users use it on demand.
+
+```Python
+from asposecellscloud.apis.cells_api import CellsApi
+from asposecellscloud.requests import UploadFileRequest, ExportSpreadsheetAsFormatRequest, SaveSpreadsheetAsRequest
+# Initialize CellsApi
+api  = CellsApi('YourCellsCloudClientId','YourCellsCloudClientSecret')
+# Upload local file to cloud storage
+api.upload_file( UploadFileRequest("D:\\Data\\EmployeeSalesSummary.xlsx", "PythonSDK/EmployeeSalesSummary.xlsx"))
+# Export cloud file to specified format file to local storage
+api.export_spreadsheet_as_format( ExportSpreadsheetAsFormatRequest( "EmployeeSalesSummary.xlsx","pdf" ,folder= "PythonSDK"  ) , local_outpath="D:\\DataOutput\\EmployeeSalesSummary.pdf" )
+# Or Save an Excel file of Cells Cloud as another format file of Cells Cloud. 
+api.save_spreadsheet_as( SaveSpreadsheetAsRequest (  "EmployeeSalesSummary.xlsx","pdf" ,folder= RemoteFolder ) )
+
+```
 
 ## 2. Business processing
 
