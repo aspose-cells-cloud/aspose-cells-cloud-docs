@@ -1,7 +1,8 @@
 ---
-title: "Developer Guide: Conversion, Merge, Split, Protect, Search, Replace, Transform"
+title: "Developer Guide: Convert, Merge, Split, Protect, Search, Replace & Transform — All in Cells Cloud."
 second_title: "Document"
 linktitle: "Developer Guide"
+ArticleTitle: "Convert, Merge, Split, Protect, Search, Replace & Transform — All in Cells Cloud."
 type: docs
 url: /developer-guide/
 aliases: [/developer-guide-v4.0/]

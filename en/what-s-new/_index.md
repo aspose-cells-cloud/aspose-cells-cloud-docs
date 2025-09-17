@@ -20,11 +20,13 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Wh
 
 |**ID**|**Summary**|**Category**|
 | :- | :- | :- |
-| 55754 | Trimming the entire workbook failed. | Bug
-| 55755 | Updating word case of the entire workbook failed. | Bug
-| 55930 | Add protect/unprotect spreadsheet features.  | New Feature
-| 55931 | Add convert worksheet/table/range to other formats. | New Feature
-| 56088 | Optimize operate scope options for TextProcessingController. | Improvement
+| 56632 | Update form data parameter name for cells cloud code specification on cells cloud 3.0 services. | Improvement  |
+| 56793 | Fix the issue of StringEnumConverter on Aspose.Cells Cloud Services. | Bug  |
+| 56866 | Support trim spreadsheet content in Cells Cloud 4.0. | Improvement  |
+| 56867 | Support trim worksheet range content in Cells Cloud 4.0. | Improvement  |
+| 56919 | An exception occurred when saving the spreadsheet as a different format file on the cell cloud. | Bug  |
+| 56922 | When exporting the range/table as an HTML file, data is lost. | Bug  |
+| 56936 | Fix few issues about spelling error. | Bug  |
 
 # Historical Releases
 

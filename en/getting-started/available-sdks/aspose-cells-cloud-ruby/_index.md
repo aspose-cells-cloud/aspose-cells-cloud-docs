@@ -2,6 +2,7 @@
 title: "Aspose.Cells Cloud SDK for Ruby: Convert, merge, split, protect, search, replace, and more."
 second_title: "Document"
 ArticleTitle: "Aspose.Cells Cloud SDK for Ruby: Convert, merge, split, protect, search, replace, and more."
+linktitle: "Aspose.Cells Cloud SDK for Ruby"
 type: docs
 url: /available-sdks/aspose-cells-cloud-ruby/
 description: "Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on."

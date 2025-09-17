@@ -2,6 +2,7 @@
 title: "Aspose.Cells Cloud SDK for PHP: Convert, merge, split, protect, search, replace, and more."
 second_title: "Document"
 ArticleTitle: "Aspose.Cells Cloud SDK for PHP: Convert, merge, split, protect, search, replace, and more."
+linktitle: "Aspose.Cells Cloud SDK for PHP"
 type: docs
 url: /available-sdks/aspose-cells-cloud-php/
 description: "Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on."
