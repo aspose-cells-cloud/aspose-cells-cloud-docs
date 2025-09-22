@@ -50,7 +50,6 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, St
 
 ## Default Position ##
 
-
 - **windows**
 
 ```powershell
@@ -74,9 +73,10 @@ Need to re-specify the storage profile for Aspose.Cells Cloud image file when th
 
 ``` powershell
 
-docker run  -d  -v c:/data:c:/data  -p 47900:5000  -e LicensePublicKey=yourLicensePublicKey	 -e LicensePrivateKey=yourLicensePrivateKey	 -e storagesCredentialsFilePath=c:/data/storageResource.json --name asposecellscloud aspose/cells-cloud:ltsc2019.22.2.0
+docker run  -d  -v c:/data:c:/data  -p 47900:5000  -e LicensePublicKey=yourLicensePublicKey  -e LicensePrivateKey=yourLicensePrivateKey  -e storagesCredentialsFilePath=c:/data/storageResource.json --name asposecellscloud aspose/cells-cloud:ltsc2019.22.9.0
 
 ```
 
-**Reference Document** : 
-  - [Docker Run]( https://docs.docker.com/engine/reference/commandline/run/)
+**Reference Document** :
+
+- [Docker Run]( https://docs.docker.com/engine/reference/commandline/run/)

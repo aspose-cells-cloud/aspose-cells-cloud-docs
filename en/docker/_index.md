@@ -1,48 +1,86 @@
 ---
-title: "Run Aspose.Cells Cloud in Docker Container: Host the Aspose.Cells Cloud application on your own private infrastructure."
+title: "Aspose.Cells Cloud Docker Operation Manual: Host the Aspose.Cells Cloud application on your own private infrastructure."
 second_title: "Document"
-ArticleTitle: "Run Aspose.Cells Cloud in Docker Container"
+ArticleTitle: "Aspose.Cells Cloud Docker Operation Manual"
 linktitle: "Docker"
 type: docs
 url: /docker-developer-guide/
 aliases: [/docker/, /docker/run/]
 description: "Aspose.Cells Cloud "
 weight: 30
-kwords: Excel Cloud, Self-Cloud, REST, Spreadsheet, PDF, CSV, Json, Markdown, Docker
+kwords: Excel Cloud, Self-Cloud, REST, Spreadsheet, PDF, CSV, Json, Markdown, Docker Image, Docker Container
 ---
 
+Aspose.Cells Cloud is a cloud-based spreadsheet processing service that supports the creation, editing, conversion, and manipulation of files in formats such as Excel. It can be quickly set up as an independent service environment through Docker deployment, simplifying dependency management and cross-platform deployment processes.
 
-## Aspose.Cells Cloud for Docker
+This manual will provide a detailed introduction to the complete operational steps from environment preparation to service verification.
 
-Aspose.Cells Cloud Image is available for Linux ,Microsoft Windows 11 Pro, Microsoft Windows Server 2016, Microsoft Windows Server 2019, Microsoft Windows Server 2022.
+## Environment Preparation
 
-## API Reference - Aspose.Cells Cloud Docker
+Before deploying the Aspose.Cells Cloud Docker container, ensure that the local environment meets the following dependency requirements to avoid deployment failures due to missing components.
 
-- <https://hostname:port/swagger>
-- <https://hostname:port/swagger/ui/index.html>
+### Basic dependency components
 
-## Expose Port
+- **Docker Engine:** The container runtime core engine is responsible for creating and managing containers. Minimum Version Requirement is 18.09.0.
+- **Operating Systems:** Mainstream operating systems that support Docker
 
-Port | Description | Required
----|:--:|---:
-5000 |  Folder with fonts, which will be used to render documents | true
+   | Operating System Type | Version |
+   |:-- |:-- |
+   | Windows | Windows 10/11, |
+   | Windows | Windows Server 2016/2019/2022 |
+   | Linux | CentOS 7+/Ubuntu 20.04+ |
 
-## Required volumes ##
+- **Hardware resources:** Ensure the service runs smoothly to avoid crashes due to insufficient resources.
 
-Mount path in container | Description | Required
----|:--:|---:
-C:\fonts |  Folder with fonts, which will be used to render documents | false
-C:\data | File storage folder | false
+  - CPU: 2 cores or more.
+  - Memory: 4GB or more.
+  - Disk: 10GB of free space.
 
-## Run Parameters ##
+### Key prerequisite conditions
 
-Name | Description | Required
----|:--:|---:
-LicensePublicKey | Public key of the license   | true
-LicensePrivateKey | Private key of the license  | true
-storagesCredentialsFilePath | Storage configure file path. Default file is ./storageResource.json  | true
+- **Aspose License**: You need to register for an Aspose official account to obtain a valid License (you can apply for a trial version or purchase a commercial version). Without a license, service functionality may be restricted. Please refer to the [License](https://purchase.aspose.com/buy) page for more details.
 
-## Run Command ##
+- **Network Connectivity**: Ensure that the deployment environment can access Docker Hub (to pull images).
+
+## Obtain the Aspose.Cells Cloud Docker image
+
+The Aspose.Cells Cloud image is hosted on Docker Hub and can be directly pulled using the docker pull command, without the need for manual building.
+
+```bash
+# Linux
+docker pull aspose/cells-cloud:linux.22.2.0
+docker pull aspose/cells-cloud:latest
+
+```
+
+```powershell
+# Windows
+docker pull aspose/cells-cloud:ltsc2019.25.9.0
+docker pull aspose/cells-cloud:ltsc2022.25.9.0
+
+```
+
+## Run Aspose.Cells Cloud Docker Container
+
+### **Run Parameters**
+
+|Name | Description | Remark |
+| ---|:--:|---: |
+| LicensePublicKey | Set up the public key of the license when using the Metered billing mode.  | Only effective when the Metered billing mode is adopted. |
+| LicensePrivateKey | Set up the private key of the license when using the Metered billing mode. | Only effective when the Metered billing mode is adopted. |
+| storagesCredentialsFilePath | Storage configure file path. Default file is ./storageResource.json  |  |
+| LicenseFile | Set up the license file when using the LicenseFile billing mode. | Only effective when the LicenseFile billing mode is adopted. |
+| AccessToken | Set the token for accessing the API.   | If the AccessToken is empty, there is no need for AccessToken confirmation. |
+
+### **Run Command**
+
+Running the container in trial mode is as simple as this:
+
+```
+docker run -p 47900:5000 aspose/cells-cloud:ltsc2022.22.9.0
+```
+
+For full-fledged execution, you should obtain [Metered license](https://purchase.aspose.com/faqs/licensing/metered/) and mount a host folder for file storage. Here is how run command would look like in this case:
 
 {{< tabs tabTotal="2" tabID="1" tabName1="windows" tabName2="linux" >}}
 
@@ -50,7 +88,7 @@ storagesCredentialsFilePath | Storage configure file path. Default file is ./sto
 
 ```windows
 
-docker run  -d  -v c:/data:c:/data  -v C:/Windows/Fonts:C:/Windows/Fonts -p 47900:5000  -e LicensePublicKey=yourLicensePublicKey  -e LicensePrivateKey=yourLicensePrivateKey-e storagesCredentialsFilePath=./storageResource.json --name asposecellscloud  aspose/cells-cloud:linux.22.2.0
+docker run  -d  -v c:/data:c:/data  -v C:/Windows/Fonts:C:/Windows/Fonts -p 47900:5000  -e LicensePublicKey=yourLicensePublicKey  -e LicensePrivateKey=yourLicensePrivateKey-e storagesCredentialsFilePath=./storageResource.json --name asposecellscloud  aspose/cells-cloud:ltsc2022.25.9.0
 
 ```
 
@@ -60,8 +98,7 @@ docker run  -d  -v c:/data:c:/data  -v C:/Windows/Fonts:C:/Windows/Fonts -p 4790
 
 ```linux
 
-docker run  -d  -p 47900:5000  -e LicensePublicKey=yourLicensePublicKey  -e LicensePrivateKey=yourLicensePrivateKey-e storagesCredentialsFilePath=./storageResource.json --name asposecellscloud  aspose/cells-cloud:linux.22.2.0
-
+docker run  -d  -p 47900:5000  -e LicensePublicKey=yourLicensePublicKey  -e LicensePrivateKey=yourLicensePrivateKey-e storagesCredentialsFilePath=./storageResource.json --name asposecellscloud  aspose/cells-cloud:linux.25.9.0
 
 ```
 
@@ -69,13 +106,27 @@ docker run  -d  -p 47900:5000  -e LicensePublicKey=yourLicensePublicKey  -e Lice
 
 {{< /tabs >}}
 
-**Reference Document** :
+### **API Reference** - Aspose.Cells Cloud Docker
+
+- <https://hostname:port/swagger>
+- <https://hostname:port/swagger/ui/index.html>
+
+### **Expose Port**
+
+|Port | Description | Required|
+|---|:--:|---:|
+5000 |  Folder with fonts, which will be used to render documents | true
+
+### **Required volumes**
+
+| Mount path in container | Description | Required | Remark |
+| ---|:--:|---: | ---: |
+| C:\fonts |  Folder with fonts, which will be used to render documents | false | Resolve some issues in the spreadsheet/Excel caused by missing fonts. |
+| C:\data | File storage folder | false | Increase storage space for easier file management and access. |
+
+## **Reference Document**
 
 - [Docker Run]( https://docs.docker.com/engine/reference/commandline/run/)
--
-
-see:
-
 - [Download Information](/cells/docker/downloads/)
 - [Run version Information](/cells//docker/tag-list/)
 - [Storage Information](/cells/docker/storage/)
