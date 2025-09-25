@@ -5,12 +5,12 @@ ArticleTitle: "Aspose.Cells Cloud SDK for Ruby: Convert, merge, split, protect, 
 linktitle: "Aspose.Cells Cloud SDK for Ruby"
 type: docs
 url: /available-sdks/aspose-cells-cloud-ruby/
-description: "Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on."
+description: "Aspose.Cells Cloud SDK for Ruby offers true cross-platform power: one import provides Windows, Linux, and macOS developers with the same fluent API to create, convert, merge, split, protect, and manipulate every Excel object—no Office installation is required, and no platform-specific tweaks are needed."
 weight: 30
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Ruby
+kwords: Ruby SDK, Excel SDK for Ruby, Cloud SDK for Ruby, REST, Chart, Pivot Table, Table/List Object, Convert Spreadsheet, PDF, CSV, Json, Markdown, Merge, Split, Protect, Search, Replace
 ---
 
-The SDK is open-source and licensed under the MIT License. You can access the Ruby library source code for Aspose.Cells Cloud [here](https://github.com/aspose-cells-cloud/aspose-cells-cloud-ruby).
+The SDK is open-source and licensed under the MIT License. You can access [the Ruby library source code for Aspose.Cells Cloud](https://github.com/aspose-cells-cloud/aspose-cells-cloud-ruby).
 
 # **How to use Aspose.Cells Cloud SDK for Ruby**
 

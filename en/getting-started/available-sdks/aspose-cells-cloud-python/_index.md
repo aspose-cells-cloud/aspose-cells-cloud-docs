@@ -5,12 +5,12 @@ ArticleTitle: "Aspose.Cells Cloud SDK for Python: Convert, merge, split, protect
 linktitle: "Aspose.Cells Cloud SDK for Python"
 type: docs
 url: /available-sdks/aspose-cells-cloud-python/
-description: "Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on."
+description: "Aspose.Cells Cloud SDK for Python offers true cross-platform power: one import provides Windows, Linux, and macOS developers with the same fluent API to create, convert, merge, split, protect, and manipulate every Excel object—no Office installation is required, and no platform-specific tweaks are needed."
 weight: 30
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Python
+kwords: Python SDK, Excel SDK for Python, Cloud SDK for Python, REST, Chart, Pivot Table, Table/List Object, Convert Spreadsheet, PDF, CSV, Json, Markdown, Merge, Split, Protect, Search, Replace
 ---
 
-The SDK is open-source and licensed under the MIT License. You can access the Python library source code for Aspose.Cells Cloud [here](https://github.com/aspose-cells-cloud/aspose-cells-cloud-python).
+The SDK is open-source and licensed under the MIT License. You can access [the Python library source code for Aspose.Cells Cloud](https://github.com/aspose-cells-cloud/aspose-cells-cloud-python).
 
 # **How to use Aspose.Cells Cloud SDK for Python**
 

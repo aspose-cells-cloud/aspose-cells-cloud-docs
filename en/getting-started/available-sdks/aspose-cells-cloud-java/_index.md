@@ -5,13 +5,13 @@ ArticleTitle: "Aspose.Cells Cloud SDK for Java: Convert, merge, split, protect, 
 linktitle: "Aspose.Cells Cloud SDK for Java"
 type: docs
 url: /available-sdks/aspose-cells-cloud-java/
-description: "Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on."
+description: "Aspose.Cells Cloud SDK for Java offers true cross-platform power: one import provides Windows, Linux, and macOS developers with the same fluent API to create, convert, merge, split, protect, and manipulate every Excel object—no Office installation is required, and no platform-specific tweaks are needed."
 weight: 30
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Java
+kwords: Java SDK, Excel SDK for Java, Cloud SDK for Java, REST, Chart, Pivot Table, Table/List Object, Convert Spreadsheet, PDF, CSV, Json, Markdown, Merge, Split, Protect, Search, Replace
 ---
 
 
-The SDK is open-source and licensed under the MIT License. You can access the Java library source code for Aspose.Cells Cloud [here](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java).
+The SDK is open-source and licensed under the MIT License. You can access [the Java library source code for Aspose.Cells Cloud](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java).
 
 # **How to use Java library of Aspose.Cells Cloud**
 

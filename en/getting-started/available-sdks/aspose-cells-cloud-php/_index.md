@@ -5,12 +5,12 @@ ArticleTitle: "Aspose.Cells Cloud SDK for PHP: Convert, merge, split, protect, s
 linktitle: "Aspose.Cells Cloud SDK for PHP"
 type: docs
 url: /available-sdks/aspose-cells-cloud-php/
-description: "Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on."
+description: "Aspose.Cells Cloud SDK for PHP offers true cross-platform power: one import provides Windows, Linux, and macOS developers with the same fluent API to create, convert, merge, split, protect, and manipulate every Excel object—no Office installation is required, and no platform-specific tweaks are needed."
 weight: 30
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, PHP
+kwords: PHP SDK, Excel SDK for PHP, Cloud SDK for PHP, REST, Chart, Pivot Table, Table/List Object, Convert Spreadsheet, PDF, CSV, Json, Markdown, Merge, Split, Protect, Search, Replace
 ---
 
-The SDK is open-source and licensed under the MIT License. You can access the PHP library source code for Aspose.Cells Cloud [here](https://github.com/aspose-cells-cloud/aspose-cells-cloud-php).
+The SDK is open-source and licensed under the MIT License. You can access [the PHP library source code for Aspose.Cells Cloud](https://github.com/aspose-cells-cloud/aspose-cells-cloud-php).
 
 # **How to use Aspose.Cells Cloud SDK for PHP**
 

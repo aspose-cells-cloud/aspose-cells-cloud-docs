@@ -5,13 +5,13 @@ ArticleTitle: "Aspose.Cells Cloud SDK for Go: Convert, merge, split, protect, se
 linktitle: "Aspose.Cells Cloud SDK for Go"
 type: docs
 url: /available-sdks/aspose-cells-cloud-go/
-description: "Aspose.Cells Cloud SDK for Go provides strong cross-platform support for Go developers, making it easy to integrate and use for Windows, Linux, or macOS. It supports Excel to create, convert, merge, split, protected, inner object operation, and so on."
+description: "Aspose.Cells Cloud SDK for Go offers true cross-platform power: one import provides Windows, Linux, and macOS developers with the same fluent API to create, convert, merge, split, protect, delete blank rows/columns, and manipulate every Excel object—no Office installation required, no platform-specific tweaks."
 weight: 30
-kwords: Go, Excel, Office Cloud, REST API, Chart, Pivot Table, Table, Spreadsheet, PDF, CSV, Json, Markdown
+kwords: Go SDK, Excel SDK for GoLang, Cloud SDK for Go, REST, Chart, Pivot Table, Table/List Object, Convert Spreadsheet, PDF, CSV, Json, Markdown, Merge, Split, Protect, Search, Replace
 ---
 
 
-The SDK is open-source and licensed under the MIT License. You can access the Go library source code for Aspose.Cells Cloud [here](https://github.com/aspose-cells-cloud/aspose-cells-cloud-go).
+The SDK is open-source and licensed under the MIT License. You can access [the Go library source code for Aspose.Cells Cloud](https://github.com/aspose-cells-cloud/aspose-cells-cloud-go).
 
 # **How to use Go library of Aspose.Cells Cloud**
 
