@@ -2,7 +2,7 @@
 title: "Aspose.Cells Cloud Docker Core Functionality: Spreadsheet conversion, merged, splitting, protecting, data processing, and more."
 second_title: "Document"
 ArticleTitle: "Aspose.Cells Cloud Docker Core Functionality"
-linktitle: "Core Functionality"
+linktitle: "Features"
 type: docs
 url: /docker-container-features/
 description: "Aspose.Cells Cloud Docker Container is a containerized service provided by Aspose that is based on Docker, allowing you to deploy the functionalities of the Aspose.Cells Cloud API in local or private cloud environments without relying on Aspose's public cloud services."
@@ -40,3 +40,7 @@ Aspose.Cells Cloud Docker Container encapsulates these features as a RESTful API
 ## How to use Aspose.Cells Cloud Docker Container
 
 Refer to the user manual -- [how to use Aspose.Cells Cloud Docker Container](https://docs.aspose.cloud/cells/docker-developer-guide/#run-asposecells-cloud-docker-container).
+
+## Reference Document
+
+- [How to configure Aspose.Cells Cloud Docker Container storage.](https://docs.aspose.cloud/cells/docker/storage/)
