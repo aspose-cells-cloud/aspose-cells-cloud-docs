@@ -5,7 +5,7 @@ ArticleTitle: "How to run Aspose.Cells Cloud Docker Container"
 linktitle: "Container Run"
 type: docs
 url: /run-aspose-cells-cloud-docker-container/
-description: "How to run Aspose.Cells Cloud Docker Container"
+description: "How to run Aspose.Cells Cloud Docker Container. Aspose.Cells Cloud Docker Container is a containerized service provided by Aspose that is based on Docker, allowing you to deploy the functionalities of the Aspose.Cells Cloud API in local or private cloud environments without relying on Aspose's public cloud services."
 weight: 30
 kwords: Excel Cloud Docker Container, Self-Cloud Docker Container, REST Docker Container, Spreadsheet, PDF, CSV, Json, Markdown, Docker Image, Run Docker Container
 ---
@@ -39,6 +39,7 @@ docker run  -d  -v c:/data:c:/data  -v C:/Windows/Fonts:C:/Windows/Fonts -p 4790
 docker run  -d  -v c:/data:c:/data  -v C:/Windows/Fonts:C:/Windows/Fonts -p 47900:5000  -e LicenseFile=c:/data/aspose.cells.lic  -e storagesCredentialsFilePath=./storageResource.json --name asposecellscloud  aspose/cells-cloud:ltsc2022.25.9.0
 
 ```
+
 
 
 ## Reference Document

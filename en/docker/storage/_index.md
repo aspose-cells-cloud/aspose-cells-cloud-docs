@@ -2,12 +2,12 @@
 title: "How to set the storage position for Aspose.Cells Cloud Docker Container storage"
 second_title: "Document"
 ArticleTitle: "Aspose.Cells Cloud Docker Container Storage Configuration"
-linktitle: "Storage"
+linktitle: "Container Storage"
 type: docs
 url: /docker/storage/
 description: "How to set the storage position for Aspose.Cells Cloud Docker Container storage."
 weight: 30
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Storage
+kwords: Excel Cloud Docker Container, Self-Cloud Docker Container, REST Docker Container, Spreadsheet, PDF, CSV, Json, Markdown, Docker Image, Run Docker Container
 ---
 
 

@@ -134,7 +134,7 @@ cellsApi.ExportWorksheetAsFormat (new SDK.Request.ExportWorksheetAsFormatRequest
 Install the Aspose.Cells-Cloud NuGet package in your .NET project, you can use the NuGet Package Manager Console or the NuGet Package Manager in Visual Studio.
 Here's how you can install the package using the Package Manager Console:
 
-```Powershell
+```powershell
 
 Install-Package Aspose.Cells-Cloud
 
