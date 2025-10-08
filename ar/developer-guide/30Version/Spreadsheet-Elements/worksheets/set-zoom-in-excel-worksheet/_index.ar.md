@@ -1,6 +1,6 @@
 ﻿---
 title: ضبط التكبير/التصغير لورقة العمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: حديقة الحيوانات
 type: docs
 url: /ar/worksheets/zoom/

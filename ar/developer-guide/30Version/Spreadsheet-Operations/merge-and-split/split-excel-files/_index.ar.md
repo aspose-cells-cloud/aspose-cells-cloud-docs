@@ -1,6 +1,6 @@
 ﻿---
 title: تقسيم مصنف Excel إلى ملفات متعددة
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: تقسيم Excel فيل
 type: docs
 url: /ar/split-multi-excel-files/

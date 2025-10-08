@@ -1,6 +1,6 @@
 ﻿---
 title: العمل على حذف صف في ورقة عمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: حذف
 type: docs
 url: /ar/rows/delete/

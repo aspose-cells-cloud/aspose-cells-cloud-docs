@@ -1,14 +1,14 @@
 ﻿---
 title: Déplacer une feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
-linktitle: Déplacer
+second_title: Documen
+linktitle: Mouvement
 type: docs
 url: /fr/worksheets/move/
 aliases: [/move-excel-worksheets/]
 keywords: Move an Excel worksheet on an Excel workbook
 description: Aspose.Cells Cloud REST API prend en charge le déplacement d'une feuille de calcul Excel vers un classeur Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 20
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Déplacer une feuille de calcul Excel
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Déplacer une feuille de calcul Excel
 ---
 Ce REST API indique `move worksheet`.
  
@@ -19,7 +19,7 @@ Ce REST API indique `move worksheet`.
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/position
  
 ```
- Les paramètres de la requête sont :
+ Les paramètres de la requête sont :
  
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

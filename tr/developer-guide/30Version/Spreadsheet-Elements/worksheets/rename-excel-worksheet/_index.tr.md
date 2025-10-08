@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma sayfası yeniden adlandırma
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Yeniden adlandırmak
 type: docs
 url: /tr/worksheets/rename/

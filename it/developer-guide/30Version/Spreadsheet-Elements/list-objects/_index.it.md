@@ -1,6 +1,6 @@
 ﻿---
 title: Lavorando con l'oggetto elenco Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: ElencoOggetto
 type: docs
 url: /it/list-objects/

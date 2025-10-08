@@ -1,6 +1,6 @@
 ﻿---
 title: Ottieni interruzione di pagina verticale
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ottieni interruzione di pagina verticale
 type: docs
 url: /it/page-breaks/get-vertical-page-breaks/

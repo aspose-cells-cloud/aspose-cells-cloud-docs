@@ -1,6 +1,6 @@
 ﻿---
 title: تحديث البيانات الوصفية
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: التحديث دون استخدام التخزين
 type: docs
 url: /ar/metadata/update/

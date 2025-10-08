@@ -1,12 +1,12 @@
 ﻿---
 title: Masquer les colonnes sur une feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Caché
 type: docs
 url: /fr/columns/hide/
 aliases: [/hide-columns-in-excel-worksheet/,/hide-columns-in-an-excel-worksheet/]
 keywords: Hide column on an Excel workshee
-description: Aspose.Cells Cloud REST API prend en charge le masquage de colonne dans une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
+description: Aspose.Cells Cloud REST API prend en charge le masquage de colonnes dans une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 40
 kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Masquer les colonnes sur une feuille de calcul Excel
 ---
@@ -20,14 +20,14 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/colu
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Le nom du classeur.|
 | nom de la feuille| chaîne| chemin| Le nom de la feuille de calcul.|
 | colonne de démarrage| entier| requête| L'index de la colonne de début à exploiter.|
-| totalColumns| entier| requête| Nombre de colonnes à exploiter.|
+| colonnes totales| entier| requête| Nombre de colonnes à exploiter.|
 | dossier| chaîne| requête| Le dossier de documents.|
 | nom de stockage| chaîne| requête| nom de stockage.|
 

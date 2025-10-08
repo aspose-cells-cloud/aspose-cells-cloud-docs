@@ -1,6 +1,6 @@
 ﻿---
 title: Cancella la password di modifica della cartella di lavoro Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Cancella la password dei file Excel
 type: docs
 url: /it/clear-excel-files-password/

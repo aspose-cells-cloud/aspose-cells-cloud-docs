@@ -1,6 +1,6 @@
 ﻿---
 title: Skapa Excel-filer eller bygg Excel-rapporter
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /sv/creating-files-and-reports/
 aliases: [/workbook/create/]

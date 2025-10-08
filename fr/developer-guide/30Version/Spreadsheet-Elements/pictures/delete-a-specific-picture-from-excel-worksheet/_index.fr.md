@@ -1,6 +1,6 @@
 ﻿---
 title: Supprimer une image dans un fichier Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Supprimer
 type: docs
 url: /fr/pictures/delete/
@@ -10,7 +10,7 @@ description: Aspose.Cells Cloud REST API prend en charge la suppression d'une im
 weight: 50
 kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Supprimer une image dans un fichier Excel
 ---
-Ce REST API indique à `delete` une image d'une feuille de calcul Excel.
+Ce REST API indique à `delete` une image provenant d'une feuille de calcul Excel.
 
 ## RSET API
 
@@ -20,13 +20,13 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Le nom du classeur.|
 | nom de la feuille| chaîne| chemin| Le nom de la feuille de travail.|
-| Index des images| entier| chemin| Index des images|
+| index des images| entier| chemin| Index des images|
 | dossier| chaîne| requête| Le dossier du classeur.|
 | nom de stockage| chaîne| requête| nom de stockage.|
 

@@ -1,6 +1,6 @@
 ﻿---
 title: Supprimer une colonne sur une feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Supprimer
 type: docs
 url: /fr/columns/delete/
@@ -8,7 +8,7 @@ aliases: [/delete-column-from-an-excel-worksheet/,/delete-column-from-a-workshee
 keywords: Delete column on an Excel workshee
 description: Aspose.Cells Cloud REST API prend en charge la suppression de colonnes dans une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 80
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Supprimer une colonne sur une feuille de calcul Excel
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Supprimer une colonne sur une feuille de calcul Excel
 ---
 Cette copie REST API `column` dans une feuille de calcul Excel.
 
@@ -20,7 +20,7 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/co
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

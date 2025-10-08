@@ -1,12 +1,12 @@
 ﻿---
 title: Excel a TIF
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linketitle: Excel to Tif
 type: docs
 url: /es/convert-excel-file-to-tiff-file/
 aliases: [/convert-excel-file-to-tiff-in-cloud/,/convert/excel-to-tiff/]
 keywords: Convert excel files to tiff files
-description: Aspose.Cells Cloud REST API admite la conversión de archivos de Excel a TIFF. El SDK es compatible con varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
+description: Aspose.Cells Cloud REST API admite la conversión de archivos Excel a TIFF. El SDK es compatible con varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 90
 kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Excel a TIFF
 ---
@@ -16,7 +16,7 @@ Este archivo de Excel REST API `saveas` a TIFF.
 
 Este archivo de Excel REST API `convert` a TIFF.
 
-[PUT /células/convertir](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) API le permite convertir el archivo MS Excel al archivo TIFF con configuraciones adicionales y guardar el resultado en la respuesta.
+[PUT /celdas/convertir](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) API le permite convertir el archivo MS Excel al archivo TIFF con configuraciones adicionales y guardar el resultado en la respuesta.
 
 Este archivo de Excel REST API `export` a TIFF.
 
@@ -82,7 +82,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/book1.xlsx?format=html" \
 
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
 
 Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
 

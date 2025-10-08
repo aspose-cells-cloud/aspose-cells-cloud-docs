@@ -1,6 +1,6 @@
 ﻿---
 title: Adatta automaticamente le righe su una cartella di lavoro Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Riga
 type: docs 
 url: /it/autofit-rows-on-an-excel-file/

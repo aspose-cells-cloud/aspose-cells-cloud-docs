@@ -1,6 +1,6 @@
 ﻿---
 title: Bir Tarih Filtresini Sil
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Tarih filtresini sil
 type: docs
 url: /tr/autofilter/delete-date-filter/

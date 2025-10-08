@@ -1,12 +1,12 @@
 ﻿---
 title: Exportar objeto OLE
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Objeto OLE
 type: docs
 url: /es/export-excel-ole-object/
 aliases: [ /export/excel-ole-object/]
 keywords: Export Excel OLE object to kinds of format files
-description: Aspose.Cells Cloud REST API admite la exportación de objetos OLE Excel a archivos de diversos formatos. El SDK admite diversos lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
+description: Aspose.Cells Cloud REST API admite la exportación de objetos OLE Excel a diversos formatos de archivo. El SDK admite diversos lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 20
 kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Exportar objeto OLE
 ---
@@ -45,7 +45,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=oleobject" -
 
 - **Familia de SDK en la nube**
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
 
 Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
 

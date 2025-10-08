@@ -1,6 +1,6 @@
 ﻿---
 title: Как создать отчет Excel с помощью шаблона смарт-маркера
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: SmartMarke
 type: docs
 url: /ru/build-report-with-smart-marker/

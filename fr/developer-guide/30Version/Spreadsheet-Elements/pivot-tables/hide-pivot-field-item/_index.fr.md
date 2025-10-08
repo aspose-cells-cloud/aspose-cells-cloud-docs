@@ -1,6 +1,6 @@
 ﻿---
 title: Masquer l'élément de champ pivot dans un tableau croisé dynamique
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Cacher
 type: docs
 url: /fr/pivot-tables/hide-pivot-field-item/
@@ -19,7 +19,7 @@ Ce REST API indique le masquage de l'élément de champ pivot.
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotField/Hide
  
 ```
- Les paramètres de la requête sont :
+ Les paramètres de la requête sont :
  
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

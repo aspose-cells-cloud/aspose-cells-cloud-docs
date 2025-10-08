@@ -1,6 +1,6 @@
 ﻿---
 title: نسخ النطاق في ورقة عمل باستخدام خيار اللصق
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: شرطي
 type: docs
 url: /ar/ranges/copy/

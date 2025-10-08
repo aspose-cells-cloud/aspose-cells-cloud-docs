@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma kitabında metin bulun
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Workboo'da bul
 type: docs
 url: /tr/workbook/find-text/

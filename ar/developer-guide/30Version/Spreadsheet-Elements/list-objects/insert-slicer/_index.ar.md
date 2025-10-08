@@ -1,6 +1,6 @@
 ﻿---
 title:  قائمة إدراج كائنات المقطع
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: إدراج شريحة
 type: docs
 keywords: Insert slicer for list object

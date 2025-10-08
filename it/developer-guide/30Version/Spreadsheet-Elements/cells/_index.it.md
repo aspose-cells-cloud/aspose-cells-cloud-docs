@@ -1,6 +1,6 @@
 ﻿---
 title: Lavora con Excel Cell
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Cella
 type: docs
 url: /it/working-with-cells/

@@ -1,6 +1,6 @@
 ﻿---
 title: Löschen Sie alle OLE-Objekte in einem Excel-Arbeitsblatt
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Clea
 type: docs
 url: /de/oleobjects/clear/

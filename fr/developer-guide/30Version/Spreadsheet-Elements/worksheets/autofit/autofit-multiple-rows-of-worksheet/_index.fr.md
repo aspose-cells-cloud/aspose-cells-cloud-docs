@@ -1,6 +1,6 @@
 ﻿---
 title: Ajuster automatiquement plusieurs lignes sur une feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Rangée
 type: docs
 url: /fr/worksheets/autofit/rows/
@@ -20,14 +20,14 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitrow
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Nom du document.|
 | nom de la feuille| chaîne| chemin| Le nom de la feuille de calcul.|
-| Options d'auto-ajustement|| corps| Options d'installation automatique.|
-| startRow| entier| requête| Ligne de départ.|
+| Options d'installation automatique|| corps| Options d'installation automatique.|
+| startRow| entier| requête| Rangée de départ.|
 | fin de ligne| entier| requête| Fin de rangée.|
 | seulementAuto| booléen| requête|FAUX|
 | dossier| chaîne| requête| Dossier du document.|

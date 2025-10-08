@@ -1,6 +1,6 @@
 ﻿---
 title: Définir l'arrière-plan sur une feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Annonce
 type: docs
 url: /fr/worksheets/background/add/
@@ -8,7 +8,7 @@ aliases: [/set-background-or-watermark-for-excel-worksheet/]
 keywords: Delete an Excel worksheet on an Excel workbook
 description: Aspose.Cells Cloud REST API prend en charge la suppression d'une feuille de calcul Excel dans un classeur Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 180
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Définir l'arrière-plan sur une feuille de calcul Excel
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Définir l'arrière-plan sur une feuille de calcul Excel
 ---
 Ce REST API indique `add worksheet background image`.
 
@@ -20,7 +20,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/background
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

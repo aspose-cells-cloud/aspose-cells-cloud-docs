@@ -1,6 +1,6 @@
 ﻿---
 title: Batch-Spli
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /de/batch/split
 keywords: Batch split Excel file

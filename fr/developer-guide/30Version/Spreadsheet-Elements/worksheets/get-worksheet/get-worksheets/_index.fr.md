@@ -1,6 +1,6 @@
 ﻿---
 title: Obtenir la feuille de travail
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Al
 type: docs
 url: /fr/worksheets/get-all/
@@ -20,7 +20,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

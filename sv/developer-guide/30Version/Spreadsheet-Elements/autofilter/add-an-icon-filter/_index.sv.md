@@ -1,6 +1,6 @@
 ﻿---
 title: Lägg till ett ikonfilter i ett Excel-arbetsblad
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Lägg till ikonfilter
 type: docs
 url: /sv/autofilter/add-icon-filter/
@@ -28,7 +28,7 @@ Begäranparametrarna är:
 | arknamn| sträng| Väg| Arbetsbladets namn.|
 |räckvidd|sträng| Fråga||
 |fältindex|heltal| Fråga||
-|ikonuppsättningstyp|sträng| Fråga| Pilar3/Grå pilar3/Flaggor3/Skyltar3/Symboler3/Symboler32/Trafikljus31/Trafikljus32/Pilar4/Grå pilar4/Betyg4/Röd till svart4/Trafikljus4/Pilar5/Grå pilar5/Kvarter5/Betyg5/Stjärnor3/Rutor5/Trianglar3/Ingen/Anpassad uppsättning/Smilies3/FärgSmilies3|
+|ikonuppsättningstyp|sträng| Fråga| Pilar3/Grå pilar3/Flaggor3/Skyltar3/Symboler3/Symboler32/Trafikljus31/Trafikljus32/Pilar4/Grå pilar4/Betyg4/Röd till svart4/Trafikljus4/Pilar5/Grå pilar5/Kvarter5/Betyg5/Stjärnor3/Rutor5/Trianglar3/Ingen/Anpassad/Smilies3/FärgSmilies3|
 |ikon-ID|heltal| Fråga||
 |matchBlanks|sträng| Fråga|sant/falskt|
 |uppdatera|sträng| Fråga|sant/falskt|
@@ -71,7 +71,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFil
 
 ## Cloud SDK-familjen
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkivet](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+ Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
 
 Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
 

@@ -1,6 +1,6 @@
 ﻿---
-title: التجهيز التلقائي لعمود في ورقة عمل Excel
-second_title: Aspose.Cells Cloud Documen
+title: ملاءمة عمود تلقائيًا في ورقة عمل Excel
+second_title: Documen
 linktitle: عمود
 type: docs
 url: /ar/worksheets/autofit/column/

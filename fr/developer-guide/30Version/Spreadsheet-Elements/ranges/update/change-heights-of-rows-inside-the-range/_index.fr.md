@@ -1,6 +1,6 @@
 ﻿---
 title: Définir les hauteurs des lignes à l'intérieur du rang
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Hauteur de rangée
 type: docs
 url: /fr/ranges/update/row-height/
@@ -20,7 +20,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/row
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

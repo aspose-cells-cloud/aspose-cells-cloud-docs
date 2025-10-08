@@ -1,6 +1,6 @@
 ﻿---
 title: Enregistrer sous Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Enregistrer un
 type: docs
 url: /fr/save-an-excel-file-as-other-formats-files/
@@ -28,10 +28,10 @@ Ce REST API indique le fichier Excel `save` comme un fichier de format différen
 |dossier|chaîne|Classeur original.|
 |nom de stockage|chaîne| Le nom du stockage où se trouve le fichier.|
 |outStorageName|chaîne| Le nom du stockage où se trouve le fichier enregistré.|
-|checkExcelRestriction|booléen| Vérifiez si la restriction du fichier Excel est vérifiée lorsque l'utilisateur modifie les objets liés aux cellules.|
+|vérifierExcelRestriction|booléen| Vérifiez si la restriction du fichier Excel est vérifiée lorsque l'utilisateur modifie les objets liés aux cellules.|
 |région|chaîne| Les paramètres régionaux du classeur.|
 |pageWideFitOnPerSheet|booléen| La page s'adapte à la largeur de la feuille de calcul.|
-|pageTallFitOnPerSheet|booléen| La page haute tient sur la feuille de travail.|
+|pageTallFitOnPerSheet|booléen| La page haute tient sur la feuille de calcul.|
 |nom de la feuille|chaîne| Convertissez la feuille de calcul spécifiée.|
 |pageIndex|chaîne| Convertissez la page spécifiée de la feuille de calcul, sheetName est requis.|
 |une page par feuille|booléen| Lors de la conversion au format PDF, une page par feuille.|
@@ -40,7 +40,7 @@ Ce REST API indique le fichier Excel `save` comme un fichier de format différen
 
 |Nom du paramètre|Taper|Description|
 |:- |:- |:- |
-|Options de sauvegarde| Objet|Option d'enregistrement Enregistrer dans la deuxième partie du contenu en plusieurs parties.|
+|Options de sauvegarde| Objet|Option d'enregistrement pour enregistrer dans la deuxième partie du contenu en plusieurs parties.|
 
 ## RESTE API
 

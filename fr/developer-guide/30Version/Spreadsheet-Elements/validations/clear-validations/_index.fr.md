@@ -1,6 +1,6 @@
 ﻿---
 title: Supprimer toutes les validations de feuille de calcul sur une feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Cléa
 type: docs
 url: /fr/validations/clear/
@@ -19,12 +19,12 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validati
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Nom du document.|
-| nom de la feuille| chaîne| chemin| Nom de la feuille de travail.|
+| nom de la feuille| chaîne| chemin| Nom de la feuille de calcul.|
 | validationIndex| entier| chemin| L'indice de validation.|
 | dossier| chaîne| requête| Dossier du document.|
 | nom de stockage| chaîne| requête| nom de stockage.|

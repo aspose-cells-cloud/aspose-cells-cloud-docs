@@ -17,7 +17,7 @@ Ce REST API indique Obtenir une mise en forme conditionnelle
 GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}
  
 ```
- Les paramètres de la requête sont :
+ Les paramètres de la requête sont :
  
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

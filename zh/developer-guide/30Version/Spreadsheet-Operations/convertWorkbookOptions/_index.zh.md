@@ -1,6 +1,6 @@
 ﻿---
 title: 转换工作簿选项
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: 转换工作簿选项
 type: docs
 url: /zh/convert-workbook-options/
@@ -16,20 +16,20 @@ kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdo
 **数据源** | **目的** 数据文件来源：CloudFileSystem、RequestFiles、HttpUri。|
 **[文件信息](/cells/file-info/)** | **目的** | 文件信息描述。包括文件名、文件大小和文件内容（base64字符串）。|
 **[页面设置](/cells/page-setup/)** | **目的** | 页面设置属性。|
-**保存选项** | **目的** 保存选项：DbfSaveOptions、DifSaveOptions、DocxSaveOptions、HtmlSaveOptions、XlsSaveOptions、XlsxSaveOptions、XpsSaveOptions、PngSaveOptions、JpgSaveOptions、GifSaveOptions、EmfSaveOptions、BmpSaveOptions、MdSaveOptions、NumbersSaveOptions、WmfSaveOptions、SvgSaveOptions、TxtSaveOptions、TifSaveOptions、XlsbSaveOptions |
+**保存选项** | **目的** | 保存选项：DbfSaveOptions、DifSaveOptions、DocxSaveOptions、HtmlSaveOptions、XlsSaveOptions、XlsxSaveOptions、XpsSaveOptions、PngSaveOptions、JpgSaveOptions、GifSaveOptions、EmfSaveOptions、BmpSaveOptions、MdSaveOptions、NumbersSaveOptions、WmfSaveOptions、SvgSaveOptions、TxtSaveOptions、TifSaveOptions、XlsbSaveOptions |
 **转换格式** | **细绳** 文件格式：csv、xls、html、mhtml、ods、pdf、xml、txt、tiff、xlsb、xlsm、xlsx、xltm、xltx、xps、png、jpg、gif、emf、bmp、md、Numbers、wmf、svg 等。|
 **检查Excel限制** | **布尔值** 获取并设置自动适应换行文本的类型。|
 
 ## **fileSource 属性**
 
-|属性名称|房产类型|可空|只读|默认值|描述|
+|属性名称|房产类型|可为空|只读|默认值|描述|
 |:- |:- |:- |:- |:- |:- |
 |文件源类型|细绳|真的|错误的||可以访问和修改的 FileSourceType 类型的名为 FileSourceType 的属性。(CloudFileSystem/RequestFiles/HttpUri)|
 |文件路径|细绳|真的|错误的||文件位置路径。|
 
 ## **DbfSaveOptions 属性**
 
-|属性名称|房产类型|可空|只读|默认值|描述|
+|属性名称|房产类型|可为空|只读|默认值|描述|
 |:- |:- |:- |:- |:- |:- |
 |导出为字符串|布尔值|真的|错误的|||
 |保存格式|细绳|真的|错误的|||
@@ -48,7 +48,7 @@ kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdo
 
 ## **DifSaveOptions 属性**
 
-|属性名称|房产类型|可空|只读|默认值|描述|
+|属性名称|房产类型|可为空|只读|默认值|描述|
 |:- |:- |:- |:- |:- |:- |
 |保存格式|细绳|真的|错误的|||
 |缓存文件夹|细绳|真的|错误的|||
@@ -66,7 +66,7 @@ kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdo
 
 ## **DocxSaveOptions 属性**
 
-|属性名称|房产类型|可空|只读|默认值|描述|
+|属性名称|房产类型|可为空|只读|默认值|描述|
 |:- |:- |:- |:- |:- |:- |
 |默认字体|细绳|真的|错误的|||
 |检查工作簿默认字体|布尔值|真的|错误的|||
@@ -75,12 +75,12 @@ kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdo
 |每张纸一页|布尔值|真的|错误的|||
 |每张表一页内的所有列|布尔值|真的|错误的|||
 |忽略错误|布尔值|真的|错误的|||
-|无需打印时输出空白页|布尔值|真的|错误的|||
+|无内容可打印时输出空白页|布尔值|真的|错误的|||
 |页面索引|整数|真的|错误的|||
 |页数|整数|真的|错误的|||
 |打印页面类型|细绳|真的|错误的|||
 |网格线类型|细绳|真的|错误的|||
-|文本跨类型|细绳|真的|错误的|||
+|文本交叉类型|细绳|真的|错误的|||
 |默认编辑语言|细绳|真的|错误的|||
 |EmfRenderSetting|细绳|真的|错误的|||
 |合并区域|布尔值|真的|错误的|||
@@ -99,7 +99,7 @@ kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdo
 
 ## **HtmlSaveOptions 属性**
 
-|属性名称|房产类型|可空|只读|默认值|描述|
+|属性名称|房产类型|可为空|只读|默认值|描述|
 |:- |:- |:- |:- |:- |:- |
 |导出页眉|布尔值|真的|错误的|||
 |导出页脚|布尔值|真的|错误的|||
@@ -114,8 +114,8 @@ kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdo
 |表格样式ID|细绳|真的|错误的|||
 |IsFullPathLink|布尔值|真的|错误的|||
 |单独导出工作表CSS|布尔值|真的|错误的|||
-|导出相似边框样式|布尔值|真的|错误的|||
-|MergeEmptyTdForcely|布尔值|真的|错误的|||
+|导出类似边框样式|布尔值|真的|错误的|||
+|强制合并空Td|布尔值|真的|错误的|||
 |导出单元格坐标|布尔值|真的|错误的|||
 |导出额外标题|布尔值|真的|错误的|||
 |出口标题|布尔值|真的|错误的|||
@@ -138,7 +138,7 @@ kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdo
 |HtmlCrossString类型|细绳|真的|错误的|||
 |IsExpImageToTempDir|布尔值|真的|错误的|||
 |页面标题|细绳|真的|错误的|||
-|解析单元格中的HTML标签|布尔值|真的|错误的|||
+|解析HtmlTagInCell|布尔值|真的|错误的|||
 |CellName属性|细绳|真的|错误的|||
 |保存格式|细绳|真的|错误的|||
 |缓存文件夹|细绳|真的|错误的|||
@@ -156,7 +156,7 @@ kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdo
 
 ## **ImageSaveOptions 属性**
 
-|属性名称|房产类型|可空|只读|默认值|描述|
+|属性名称|房产类型|可为空|只读|默认值|描述|
 |:- |:- |:- |:- |:- |:- |
 |图表图像类型|细绳|真的|错误的|||
 |嵌入图像名称在SVG中|细绳|真的|错误的|||
@@ -186,7 +186,7 @@ kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdo
 
 ## **JsonSaveOptions 属性**
 
-|属性名称|房产类型|可空|只读|默认值|描述|
+|属性名称|房产类型|可为空|只读|默认值|描述|
 |:- |:- |:- |:- |:- |:- |
 |出口区域|班级|真的|错误的|||
 |HasHeaderRow|布尔值|真的|错误的|||
@@ -208,7 +208,7 @@ kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdo
 
 ## **MarkdownSaveOptions 属性**
 
-|属性名称|房产类型|可空|只读|默认值|描述|
+|属性名称|房产类型|可为空|只读|默认值|描述|
 |:- |:- |:- |:- |:- |:- |
 |编码|细绳|真的|错误的|||
 |格式策略|细绳|真的|错误的|||
@@ -229,7 +229,7 @@ kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdo
 
 ## **OoxmlSaveOptions 属性**
 
-|属性名称|房产类型|可空|只读|默认值|描述|
+|属性名称|房产类型|可为空|只读|默认值|描述|
 |:- |:- |:- |:- |:- |:- |
 |导出单元格名称|布尔值|真的|错误的|||
 |更新缩放|布尔值|真的|错误的|||
@@ -252,7 +252,7 @@ kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdo
 
 ## **PclSaveOptions 属性**
 
-|属性名称|房产类型|可空|只读|默认值|描述|
+|属性名称|房产类型|可为空|只读|默认值|描述|
 |:- |:- |:- |:- |:- |:- |
 |字体全名|细绳|真的|错误的|||
 |字体Pcl名称|细绳|真的|错误的|||
@@ -272,7 +272,7 @@ kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdo
 
 ## **PdfSaveOptions 属性**
 
-|属性名称|房产类型|可空|只读|默认值|描述|
+|属性名称|房产类型|可为空|只读|默认值|描述|
 |:- |:- |:- |:- |:- |:- |
 |显示文档标题|布尔值|真的|错误的|||
 |出口文件结构|布尔值|真的|错误的|||
@@ -309,7 +309,7 @@ kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdo
 
 ## **PptxSaveOptions 属性**
 
-|属性名称|房产类型|可空|只读|默认值|描述|
+|属性名称|房产类型|可为空|只读|默认值|描述|
 |:- |:- |:- |:- |:- |:- |
 |忽略隐藏行|布尔值|真的|错误的|||
 |调整行类型的字体大小|细绳|真的|错误的|||
@@ -321,12 +321,12 @@ kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdo
 |每张纸一页|布尔值|真的|错误的|||
 |每张表一页内的所有列|布尔值|真的|错误的|||
 |忽略错误|布尔值|真的|错误的|||
-|无需打印时输出空白页|布尔值|真的|错误的|||
+|无内容可打印时输出空白页|布尔值|真的|错误的|||
 |页面索引|整数|真的|错误的|||
 |页数|整数|真的|错误的|||
 |打印页面类型|细绳|真的|错误的|||
 |网格线类型|细绳|真的|错误的|||
-|文本跨类型|细绳|真的|错误的|||
+|文本交叉类型|细绳|真的|错误的|||
 |默认编辑语言|细绳|真的|错误的|||
 |EmfRenderSetting|细绳|真的|错误的|||
 |合并区域|布尔值|真的|错误的|||
@@ -345,14 +345,14 @@ kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdo
 
 ## **SqlScriptSaveOptions 属性**
 
-|属性名称|房产类型|可空|只读|默认值|描述|
+|属性名称|房产类型|可为空|只读|默认值|描述|
 |:- |:- |:- |:- |:- |:- |
 |检查表是否存在|布尔值|真的|错误的|||
 |列类型映射|细绳|真的|错误的|||
 |检查所有数据列类型|布尔值|真的|错误的|||
 |在行间添加空白行|布尔值|真的|错误的|||
 |分隔符|细绳|真的|错误的|||
-|操作符类型|细绳|真的|错误的|||
+|操作员类型|细绳|真的|错误的|||
 |主键|整数|真的|错误的|||
 |创建表|布尔值|真的|错误的|||
 |标识名称|细绳|真的|错误的|||
@@ -377,7 +377,7 @@ kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdo
 
 ## **SvgSaveOptions 属性**
 
-|属性名称|房产类型|可空|只读|默认值|描述|
+|属性名称|房产类型|可为空|只读|默认值|描述|
 |:- |:- |:- |:- |:- |:- |
 |工作表索引|整数|真的|错误的|||
 |图表图像类型|细绳|真的|错误的|||
@@ -408,9 +408,9 @@ kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdo
 
 ## **TxtSaveOptions 属性**
 
-|属性名称|房产类型|可空|只读|默认值|描述|
+|属性名称|房产类型|可为空|只读|默认值|描述|
 |:- |:- |:- |:- |:- |:- |
-|引用类型|细绳|真的|错误的|||
+|报价类型|细绳|真的|错误的|||
 |分隔符|细绳|真的|错误的|||
 |分隔符字符串|细绳|真的|错误的|||
 |总是引用|布尔值|真的|错误的|||
@@ -430,7 +430,7 @@ kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdo
 
 ## **XlsSaveOptions&XlsbSaveOptions 属性**
 
-|属性名称|房产类型|可空|只读|默认值|描述|
+|属性名称|房产类型|可为空|只读|默认值|描述|
 |:- |:- |:- |:- |:- |:- |
 |匹配颜色|布尔值|真的|错误的|||
 |Wps兼容性|布尔值|真的|错误的|||
@@ -450,7 +450,7 @@ kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdo
 
 ## **XmlSaveOptions 属性**
 
-|属性名称|房产类型|可空|只读|默认值|描述|
+|属性名称|房产类型|可为空|只读|默认值|描述|
 |:- |:- |:- |:- |:- |:- |
 |工作表索引|大批|真的|错误的|||
 |出口区域|班级|真的|错误的|||
@@ -474,7 +474,7 @@ kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdo
 
 ## **XpsSaveOptions 属性**
 
-|属性名称|房产类型|可空|只读|默认值|描述|
+|属性名称|房产类型|可为空|只读|默认值|描述|
 |:- |:- |:- |:- |:- |:- |
 |默认字体|细绳|真的|错误的|||
 |检查工作簿默认字体|布尔值|真的|错误的|||
@@ -483,12 +483,12 @@ kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdo
 |每张纸一页|布尔值|真的|错误的|||
 |每张表一页内的所有列|布尔值|真的|错误的|||
 |忽略错误|布尔值|真的|错误的|||
-|无需打印时输出空白页|布尔值|真的|错误的|||
+|无内容可打印时输出空白页|布尔值|真的|错误的|||
 |页面索引|整数|真的|错误的|||
 |页数|整数|真的|错误的|||
 |打印页面类型|细绳|真的|错误的|||
 |网格线类型|细绳|真的|错误的|||
-|文本跨类型|细绳|真的|错误的|||
+|文本交叉类型|细绳|真的|错误的|||
 |默认编辑语言|细绳|真的|错误的|||
 |EmfRenderSetting|细绳|真的|错误的|||
 |合并区域|布尔值|真的|错误的|||

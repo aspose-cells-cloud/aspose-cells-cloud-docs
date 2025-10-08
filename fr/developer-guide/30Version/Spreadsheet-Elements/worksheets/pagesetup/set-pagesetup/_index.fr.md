@@ -1,7 +1,7 @@
 ﻿---
 title: Définir la mise en page d'une feuille de calcul
-second_title: Aspose.Cells Cloud Documen
-linktitle: Définir la configuration de la page
+second_title: Documen
+linktitle: Définir les paramètres de page
 type: docs
 url: /fr/set-page-setup/
 keywords: Set page setup for an Excel worksheet
@@ -19,7 +19,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pagesetup
 
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

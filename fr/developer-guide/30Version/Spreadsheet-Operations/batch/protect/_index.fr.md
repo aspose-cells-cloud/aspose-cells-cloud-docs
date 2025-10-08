@@ -1,6 +1,6 @@
 ﻿---
 title: Fichier Batch Protect Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /fr/batch/protect
 keywords: Batch protection of multiple Excel files
@@ -18,11 +18,11 @@ POST http://api.aspose.cloud/v3.0/cells/batch/protect
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
-| batchProtectRequest|| corps||
+| demande de protection par lots|| corps||
 
 **Propriétés de BatchProtectRequest**
 

@@ -1,6 +1,6 @@
 ﻿---
 title: Ottieni i dati delle celle in base all'intervallo denominato
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Valore
 type: docs
 url: /it/ranges/get/values/

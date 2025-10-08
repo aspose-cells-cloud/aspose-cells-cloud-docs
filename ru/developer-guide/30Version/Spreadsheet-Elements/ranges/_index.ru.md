@@ -1,6 +1,6 @@
 ﻿---
 title: Работа с Excel звонил
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Позвонил
 type: docs
 url: /ru/ranges/

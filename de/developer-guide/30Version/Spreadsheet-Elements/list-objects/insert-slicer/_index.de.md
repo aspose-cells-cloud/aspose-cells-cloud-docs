@@ -1,6 +1,6 @@
 ﻿---
 title:  Slicer zum Einfügen von Listenobjekten
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Slice einfügen
 type: docs
 keywords: Insert slicer for list object

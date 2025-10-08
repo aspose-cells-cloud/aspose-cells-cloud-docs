@@ -1,6 +1,6 @@
 ﻿---
 title: Получить рабочий лист из рабочего листа Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Рабочий лист
 type: docs
 url: /ru/worksheets/get-worksheet/

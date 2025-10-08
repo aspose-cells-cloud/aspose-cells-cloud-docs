@@ -1,6 +1,6 @@
 ﻿---
 title: Rimuovi tutte le proprietà del documento
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Pulito
 type: docs
 url: /it/document-properties/clear/

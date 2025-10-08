@@ -1,6 +1,6 @@
 ﻿---
 title: Excel workbook'tan isim al
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: İsim
 type: docs
 url: /tr/get-names-from-an-excel-file/

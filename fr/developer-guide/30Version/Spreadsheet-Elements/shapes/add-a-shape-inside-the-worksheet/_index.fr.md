@@ -1,6 +1,6 @@
 ﻿---
 title: Ajouter une forme sur une feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Annonce
 type: docs
 url: /fr/shapes/add/
@@ -8,7 +8,7 @@ aliases: [/add-a-shape-inside-the-worksheet/]
 keywords: Add shape on an Excel workshee
 description: Aspose.Cells Cloud REST API prend en charge l'ajout de formes dans une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 30
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Ajouter une forme sur une feuille de calcul Excel
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Ajouter une forme sur une feuille de calcul Excel
 ---
 Ce REST API indique d'ajouter une forme sur une feuille de calcul Excel.
 
@@ -20,14 +20,14 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| nom du document.|
 | nom de la feuille| chaîne| chemin| nom de la feuille de calcul.|
 | formeDTO|| corps||
-|dessinType| chaîne| requête| type d'objet de forme|
+|type de dessin| chaîne| requête| type d'objet de forme|
 | ligne supérieure gauche| entier| requête| Index de la rangée supérieure gauche.|
 | colonne supérieure gauche| entier| requête| Index de la colonne supérieure gauche.|
 | haut| entier| requête| Représente le décalage vertical de Spinner par rapport à sa rangée de gauche, en unité de pixel.|

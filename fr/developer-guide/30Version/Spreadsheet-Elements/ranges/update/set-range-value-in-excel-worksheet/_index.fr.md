@@ -1,6 +1,6 @@
 ﻿---
-title: Définir une valeur de plage sur une feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
+title: Définir la valeur de la plage sur une feuille de calcul Excel
+second_title: Documen
 linktitle: Définir la valeur
 type: docs
 url: /fr/ranges/update/values/
@@ -20,7 +20,7 @@ Ce REST API indique qu'il place une valeur dans la plage, le cas échéant, la v
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/value
  
 ```
- Les paramètres de la requête sont :
+ Les paramètres de la requête sont :
  
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
@@ -28,8 +28,8 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/val
 | nom de la feuille| chaîne| chemin| nom de la feuille de calcul|
 | valeur| chaîne| requête| Valeur d'entrée|
 | gamme|| corps| plage dans la feuille de calcul|
-| estConverti| booléen| requête|FAUX|
-| définirStyle| booléen| requête|FAUX|
+| est converti| booléen| requête|FAUX|
+| définir le style| booléen| requête|FAUX|
 | dossier| chaîne| requête| Dossier de classeur.|
 | nom de stockage| chaîne| requête| nom de stockage.|
  

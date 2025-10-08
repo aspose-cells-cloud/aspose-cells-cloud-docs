@@ -1,6 +1,6 @@
 ﻿---
 title: Удалить определенное свойство документа
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Удалить
 type: docs
 url: /ru/document-properties/delete/

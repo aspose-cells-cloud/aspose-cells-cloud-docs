@@ -1,6 +1,6 @@
 ﻿---
 title: حذف جميع الصور في ورقة العمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: كليا
 type: docs
 url: /ar/pictures/clear/

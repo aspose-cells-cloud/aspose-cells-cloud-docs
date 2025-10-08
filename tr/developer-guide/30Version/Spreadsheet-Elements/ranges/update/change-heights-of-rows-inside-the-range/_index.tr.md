@@ -1,6 +1,6 @@
 ﻿---
 title: Aralık içindeki satırların yüksekliklerini ayarlayın
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Sıra yüksekliği
 type: docs
 url: /tr/ranges/update/row-height/

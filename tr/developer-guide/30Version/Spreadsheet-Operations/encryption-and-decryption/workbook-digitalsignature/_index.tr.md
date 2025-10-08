@@ -1,6 +1,6 @@
 ﻿---
 title: Excel workboo için dijital imza ekleyin
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Dijital imza
 type: docs
 url: /tr/excel-digital-signature/

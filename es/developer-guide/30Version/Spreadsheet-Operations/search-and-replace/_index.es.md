@@ -1,12 +1,12 @@
 ﻿---
 title: Buscar y reemplazar contenido de texto en archivos Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Buscar y reemplazar
 type: docs
 url: /es/search-and-replace/
 aliases: [/working-with-text/，/text/]
 keywords: Get, find, and replace text from Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) files
-description: Aspose.Cells Cloud REST API admite la obtención, búsqueda y reemplazo de texto de archivos Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
+description: Aspose.Cells Cloud REST API permite obtener, buscar y reemplazar texto de archivos Excel. El SDK es compatible con varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 20
 kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Texto
 ---

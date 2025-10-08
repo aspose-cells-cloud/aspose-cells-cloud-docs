@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma kitabının korumasını kaldırın
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Excel dosyasını koruma altına alın
 type: docs
 url: /tr/excel-file-unprotect/

@@ -1,6 +1,6 @@
 ﻿---
 title: Başka bir çalışma sayfasından içerikleri ve biçimleri kopyalar
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Polis
 type: docs
 url: /tr/worksheets/copy/

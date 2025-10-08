@@ -1,6 +1,6 @@
 ﻿---
 title: Ottieni elementi di testo da una cartella di lavoro Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Entra nel workboo
 type: docs
 url: /it/workbook/get-text-items/

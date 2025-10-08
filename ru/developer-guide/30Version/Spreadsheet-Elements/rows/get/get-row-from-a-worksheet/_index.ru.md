@@ -1,6 +1,6 @@
 ﻿---
 title: Получить описание строки из рабочего листа Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ро
 type: docs
 url: /ru/rows/get/row/

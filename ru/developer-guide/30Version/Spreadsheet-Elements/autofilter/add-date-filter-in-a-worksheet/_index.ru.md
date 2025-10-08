@@ -1,6 +1,6 @@
 ﻿---
 title: Добавить фильтр по дате на рабочий лист Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Добавить фильтр по дате
 type: docs
 url: /ru/autofilter/add-date-filter/

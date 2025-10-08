@@ -1,6 +1,6 @@
 ﻿---
 title: Работа с разрывом страницы Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: PageBreak
 type: docs
 url: /ru/working-with-pagebreaks/

@@ -32,7 +32,7 @@ Die wichtigen Parameter sind in der folgenden Tabelle beschrieben:
 | Erste Spalte| int||
 | IsVertical| Schnur| wahr/falsch.|
 | Daten|Ganze Zahl[]||
-| ZielArbeitsblatt| Schnur| Name des Zielarbeitsblatts.|
+|ZielArbeitsblatt| Schnur| Name des Zielarbeitsblatts.|
 | IsInsert| Schnur| wahr/falsch.|
 | ImportDataType| Schnur|IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData.|
 | Quelle| Dateiquelle| Gibt die Datendateiposition an, wenn der BatchData-Parameter null ist.|

@@ -1,6 +1,6 @@
 ﻿---
 title: Sortieren von Listenobjektdaten in einem Excel-Arbeitsblatt
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Sor
 type: docs
 url: /de/list-objects/sort-data/

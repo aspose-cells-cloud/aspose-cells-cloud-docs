@@ -1,6 +1,6 @@
 ﻿---
 title: Ajuster automatiquement une colonne sur une feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Colonne
 type: docs
 url: /fr/worksheets/autofit/column/
@@ -8,7 +8,7 @@ aliases: [/autofit-single-column-of-worksheet/]
 keywords: Autofit a column on an Excel workshee
 description: Aspose.Cells Cloud REST API prend en charge l'ajustement automatique d'une colonne dans une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 10
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Ajuster automatiquement une colonne sur une feuille de calcul Excel
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Ajuster automatiquement une colonne sur une feuille de calcul Excel
 ---
 Ce REST API indique d'ajuster automatiquement une colonne sur une feuille de calcul Excel.
 
@@ -20,7 +20,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitcol
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
@@ -28,7 +28,7 @@ Les paramètres de la requête sont :
 | nom de la feuille| chaîne| chemin| Le nom de la feuille de calcul.|
 | première colonne| entier| requête| Index de la première colonne.|
 | dernière colonne| entier| requête| Index de la dernière colonne.|
-|[Options d'auto-ajustement](/cells/fr/auto-filter-options) || corps| Options d'installation automatique.|
+|[Options d'installation automatique](/cells/fr/auto-filter-options) || corps| Options d'installation automatique.|
 | première rangée| entier| requête| Index de la première ligne.|
 | dernière ligne| entier| requête| Index de la dernière ligne.|
 | dossier| chaîne| requête| Le dossier.|

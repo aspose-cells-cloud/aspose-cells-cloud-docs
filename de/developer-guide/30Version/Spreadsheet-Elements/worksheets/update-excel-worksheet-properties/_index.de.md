@@ -1,7 +1,7 @@
 ﻿---
 title: Aktualisieren Sie die Eigenschaften eines Excel-Arbeitsblatts
-second_title: Aspose.Cells Cloud Documen
-linktitle: Aktualisierung
+second_title: Documen
+linktitle: Aktualisieren
 type: docs
 url: /de/worksheets/update-properties/
 aliases: [/update-excel-worksheet-properties/]

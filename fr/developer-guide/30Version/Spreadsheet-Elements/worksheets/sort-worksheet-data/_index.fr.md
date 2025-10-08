@@ -1,6 +1,6 @@
 ﻿---
 title: Trier les données de plage sur une feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Sor
 type: docs
 url: /fr/worksheets/sort-data/
@@ -19,7 +19,7 @@ Ce REST API indique `sort worksheet range data`.
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/sort
  
 ```
- Les paramètres de la requête sont :
+ Les paramètres de la requête sont :
  
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

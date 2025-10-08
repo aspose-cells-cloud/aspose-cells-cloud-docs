@@ -1,6 +1,6 @@
 ﻿---
 title: إخفاء الصفوف في ورقة العمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: اختبأ
 type: docs
 url: /ar/rows/hide/

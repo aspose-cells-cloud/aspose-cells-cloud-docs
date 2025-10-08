@@ -1,6 +1,6 @@
 ﻿---
 title: Arbeta med Excel metadata och egenskaper
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Metadata och egenskaper
 type: docs
 url: /sv/metadata/
@@ -26,5 +26,5 @@ Innan vi börjar lära oss hur man använder Aspose.Cells Cloud APIs för att vi
 - [Hur man uppdaterar en specifik dokumentegenskap med hjälp av lagring](/cells/sv/document-properties/update/)
 - [Hur man uppdaterar en viss dokumentegenskap utan att använda lagring](/cells/sv/metadata/update/)
 - [Hur man tar bort en viss dokumentegenskap med hjälp av lagring](/cells/sv/document-properties/delete/)
-- [Så här tar du bort dokumentegenskaper utan att använda lagring](/cells/sv/metadata/delete/)
+- [Hur man tar bort dokumentegenskaper utan att använda lagring](/cells/sv/metadata/delete/)
 - [Hur man tar bort alla dokumentegenskaper med hjälp av lagring](/cells/sv/document-properties/clear/)

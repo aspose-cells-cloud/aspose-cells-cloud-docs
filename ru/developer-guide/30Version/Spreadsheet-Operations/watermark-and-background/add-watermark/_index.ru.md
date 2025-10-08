@@ -1,6 +1,6 @@
 ﻿---
 title: Добавить водяной знак в файл Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Добавить водяной знак в файл Excel
 type: docs
 url: /ru/add-watermark-into-excel-files/

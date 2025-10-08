@@ -1,6 +1,6 @@
 ﻿---
 title: إضافة مرشح التاريخ في ورقة عمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: إضافة فلتر التاريخ
 type: docs
 url: /ar/autofilter/add-date-filter/

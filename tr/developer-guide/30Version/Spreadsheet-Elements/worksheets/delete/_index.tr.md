@@ -1,6 +1,6 @@
 ﻿---
 title: Excel workbook'ta çalışma sayfalarını silme işlemi nasıl yapılır?
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Sil
 type: docs
 url: /tr/worksheets/delete/

@@ -1,5 +1,5 @@
 ﻿---
-title: Cancella formattazione delle condizioni
+title: Formattazione delle condizioni chiare
 type: docs
 url: /it/conditional-formattings/clear/
 aliases: [/clear-all-condition-formattings/]

@@ -1,6 +1,6 @@
 ﻿---
 title: دمج مصنفات Excel في ملف Excel آخر
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: دمج ملف Excel في الملف Excel
 type: docs
 url: /ar/merge-an-excel-file-into-the-excel-file/

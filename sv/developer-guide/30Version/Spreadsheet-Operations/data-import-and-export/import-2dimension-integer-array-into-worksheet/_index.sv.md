@@ -1,6 +1,6 @@
 ﻿---
 title: Importera en 2-dimensionell heltalsmatris till arbetsbladet Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Importera 2-dimensionell heltalsarray
 type: docs
 url: /sv/import-a-2D-integer-array-into-excel-worksheet/
@@ -32,7 +32,7 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
 | Första raden| int||
 | Första kolumnen| int||
 | Data|Heltal[,]||
-| Destinationsarbetsblad| sträng| namn på destinationsarbetsblad.|
+|Destinationsarbetsblad| sträng| namn på destinationsarbetsblad.|
 | ÄrInfoga| sträng| sant/falskt.|
 | Importera datatyp| sträng|IntArray/DubbelArray/StringArray/TvåDimensionIntArray/TvåDimensionDubbelArray/TvåDimensionStringArray/BatchData/CSVData.|
 | Källa| Filkälla| Anger datafilens position när BatchData-parametern är null.|
@@ -55,7 +55,7 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
 
 ## Cloud SDK-familjen
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkivet](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+ Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
 
 Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
 

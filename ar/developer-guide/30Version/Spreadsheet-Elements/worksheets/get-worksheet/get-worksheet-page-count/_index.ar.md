@@ -1,6 +1,6 @@
 ﻿---
 title: احصل على عدد الصفحات لورقة العمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: صفحة المجلس
 type: docs
 url: /ar/worksheets/page-count/

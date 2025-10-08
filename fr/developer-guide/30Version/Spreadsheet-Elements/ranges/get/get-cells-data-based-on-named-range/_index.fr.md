@@ -1,6 +1,6 @@
 ﻿---
 title: Obtenir des données de cellules en fonction de la plage nommée
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Valeur
 type: docs
 url: /fr/ranges/get/values/
@@ -20,7 +20,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/valu
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

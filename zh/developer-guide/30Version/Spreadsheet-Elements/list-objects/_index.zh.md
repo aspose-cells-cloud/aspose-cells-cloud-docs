@@ -1,6 +1,6 @@
 ﻿---
 title: 使用 Excel 列表对象
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: 列表对象
 type: docs
 url: /zh/list-objects/

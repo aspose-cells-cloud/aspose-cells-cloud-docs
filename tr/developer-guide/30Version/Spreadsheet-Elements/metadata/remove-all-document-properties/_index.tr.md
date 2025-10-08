@@ -1,6 +1,6 @@
 ﻿---
 title: Tüm Belge Özelliklerini Kaldır
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Temiz
 type: docs
 url: /tr/document-properties/clear/

@@ -1,6 +1,6 @@
 ﻿---
 title: Descifrar un libro de trabajo Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Descifrar un archivo Excel
 type: docs
 url: /es/excel-file-decrypt/
@@ -37,7 +37,7 @@ Este REST API descifra un Excel `workbook`.
 
 |**API**|**Tipo**|**Descripción**|**Enlace Swagger**|
 |:- |:- |:- |:- |
-|/células/{nombre}/cifrado|DELTE|Descifrar un documento|[Eliminar descifrar libro de trabajo](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDecryptWorkbook)|
+|/células/{nombre}/cifrado|DELTE|Descifrar un documento|[EliminarDescifrarLibro](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDecryptWorkbook)|
 
  El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDecryptWorkbook) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
 
@@ -75,7 +75,7 @@ curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/encryption" -H "ac
 
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
 
 Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
 

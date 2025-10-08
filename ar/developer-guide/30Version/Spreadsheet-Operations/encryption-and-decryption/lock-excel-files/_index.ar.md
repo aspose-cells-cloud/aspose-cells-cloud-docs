@@ -1,6 +1,6 @@
 ﻿---
 title: قفل الملف Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: قفل الملف Excel
 type: docs
 url: /ar/lock-excel-files/

@@ -1,6 +1,6 @@
 ﻿---
 title: Excel Çalışma Sayfasındaki Grup Satırları
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Grup
 type: docs
 url: /tr/rows/group/

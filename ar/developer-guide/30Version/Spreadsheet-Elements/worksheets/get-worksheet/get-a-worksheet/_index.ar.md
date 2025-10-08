@@ -1,6 +1,6 @@
 ﻿---
 title: احصل على ورقة عمل من ورقة عمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: ورقة عمل
 type: docs
 url: /ar/worksheets/get-worksheet/

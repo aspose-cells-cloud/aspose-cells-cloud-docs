@@ -1,6 +1,6 @@
 ﻿---
 title: Excel в Ppt
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Excel в Ppt
 type: docs
 url: /ru/convert-excel-file-to-pptx-file/

@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma sayfasına bir liste nesnesi ekleyin
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Reklam
 type: docs
 url: /tr/list-objects/add/

@@ -1,6 +1,6 @@
 ﻿---
 title: Zusammenführen einer Excel-Arbeitsmappe mit einer anderen Excel-Datei
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Fügen Sie eine Excel-Datei in die Excel-Datei ein
 type: docs
 url: /de/merge-an-excel-file-into-the-excel-file/

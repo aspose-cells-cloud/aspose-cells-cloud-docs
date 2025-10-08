@@ -1,6 +1,6 @@
 ﻿---
 title: مهمة
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /ar/tasks/
 aliases: [/working-with-tasks/]

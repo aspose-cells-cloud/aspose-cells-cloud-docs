@@ -1,7 +1,7 @@
 ﻿---
 title: Obtenir le nombre de pages pour une feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
-linktitle: PageCoun
+second_title: Documen
+linktitle: PageConseil
 type: docs
 url: /fr/worksheets/page-count/
 keywords: Get page count on an Excel worksheet
@@ -19,7 +19,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pagecount
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

@@ -1,6 +1,6 @@
 ﻿---
 title: Excel TIF'e
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linketitle: Excel to Tif
 type: docs
 url: /tr/convert-excel-file-to-tiff-file/

@@ -1,6 +1,6 @@
 ﻿---
 title: Ajouter un filtre dans une feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ajouter un filtre
 type: docs
 url: /fr/autofilter/add-filter/
@@ -20,7 +20,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/
 
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

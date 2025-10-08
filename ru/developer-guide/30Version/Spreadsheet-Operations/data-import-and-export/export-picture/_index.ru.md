@@ -1,6 +1,6 @@
 ﻿---
 title: Экспортировать изображение
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Picturetur
 type: docs
 url: /ru/export-excel-picture-to-different-formats/

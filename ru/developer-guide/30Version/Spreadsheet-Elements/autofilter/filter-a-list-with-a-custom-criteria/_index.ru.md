@@ -1,6 +1,6 @@
 ﻿---
 title: Добавьте пользовательские критерии в рабочий лист Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Добавить пользовательский фильтр
 type: docs
 url: /ru/autofilter/add-custom-filter/ 

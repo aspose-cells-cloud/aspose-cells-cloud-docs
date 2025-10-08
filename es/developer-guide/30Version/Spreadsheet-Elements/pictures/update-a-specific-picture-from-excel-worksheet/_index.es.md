@@ -1,6 +1,6 @@
 ﻿---
 title: Actualizar imagen en un archivo Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Actualización
 type: docs
 url: /es/pictures/update/
@@ -10,7 +10,7 @@ description: Aspose.Cells Cloud REST API admite la actualización de imágenes e
 weight: 70
 kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Actualizar imagen en un archivo Excel
 ---
-Este REST API indica el índice imagen por imagen `update` para una hoja de trabajo Excel.
+Este REST API indica `update` imagen por índice de imagen para una hoja de trabajo Excel.
 
 ## RSET API
 
@@ -26,8 +26,8 @@ Los parámetros de la solicitud son:
 |:- |:- |:- |:- |
 | nombre| cadena| camino| Nombre del documento.|
 | nombreHoja| cadena| camino| Nombre de la hoja de trabajo.|
-| Índice de imágenes| entero| camino| Índice de imágenes.|
-| imagen|| cuerpo| objeto de imagen|
+| índice de imágenes| entero| camino| Índice de imágenes.|
+| imagen|| cuerpo| Objeto de imagen|
 | carpeta| cadena| consulta| La carpeta de documentos.|
 | nombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
 
@@ -68,7 +68,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/picture
 
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
 
 Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
 

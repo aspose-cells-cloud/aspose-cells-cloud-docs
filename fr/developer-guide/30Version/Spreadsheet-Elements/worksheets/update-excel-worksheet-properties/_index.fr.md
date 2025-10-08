@@ -1,6 +1,6 @@
 ﻿---
-title: Mettre à jour les propriétés d'une feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
+title: Mettre à jour les propriétés sur une feuille de calcul Excel
+second_title: Documen
 linktitle: Mise à jour
 type: docs
 url: /fr/worksheets/update-properties/
@@ -17,7 +17,7 @@ Ce REST API indique `update worksheet base properties`.
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
  
 ```
- Les paramètres de la requête sont :
+ Les paramètres de la requête sont :
  
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

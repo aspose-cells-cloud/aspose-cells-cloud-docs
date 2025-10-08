@@ -1,6 +1,6 @@
 ﻿---
 title: دمج ملفات متعددة Excel في ملف Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: دمج ملف متعدد Excel
 type: docs
 url: /ar/merge-multi-files-into-excel/

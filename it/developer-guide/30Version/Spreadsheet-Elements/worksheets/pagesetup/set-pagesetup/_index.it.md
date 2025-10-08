@@ -1,6 +1,6 @@
 ﻿---
 title: Imposta l'impostazione della pagina per un foglio di lavoro
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Imposta pagina
 type: docs
 url: /it/set-page-setup/

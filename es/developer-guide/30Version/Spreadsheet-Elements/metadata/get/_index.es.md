@@ -1,6 +1,6 @@
 ﻿---
 title: Obtener metadatos del archivo Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Consíguelo sin usar almacenamiento
 type: docs
 url: /es/metadata/get/
@@ -9,7 +9,7 @@ description: Aspose.Cells Cloud REST API admite la obtención de propiedades de 
 weight: 23
 kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Obtener metadatos de archivos Excel
 ---
-Este REST API indica obtener `metadata` de varios archivos Excel.
+Este REST API indica obtener `metadata` de múltiples archivos Excel.
 
 ```bash
 
@@ -50,7 +50,7 @@ POST https://api.aspose.cloud/v3.0/cells/metadata/get
 
 - **Familia de SDK en la nube**
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
 
 Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
 

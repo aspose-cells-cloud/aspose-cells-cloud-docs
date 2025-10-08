@@ -1,6 +1,6 @@
 ﻿---
 title: احصل على نموذج عدد الصفحات على الرقم Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: صفحة
 type: docs
 url: /ar/get-page-count-from-an-excel-file/

@@ -1,6 +1,6 @@
 ﻿---
 title: Разблокировать файл Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Разблокировать файл Excel
 type: docs
 url: /ru/unlock-excel-files/

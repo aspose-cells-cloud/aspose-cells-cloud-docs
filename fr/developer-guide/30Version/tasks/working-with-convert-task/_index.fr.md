@@ -1,11 +1,11 @@
 ﻿---
 title: Travailler avec Convert Tas
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /fr/tasks/convert/
 aliases: [/working-with-convert-task/]
 keywords: REST API, task, convert, spreadsheets, exce
-description: "Cells.Cloud API pour Excel fonctionne : tâches de support de conversion de fichier Excel"
+description: "Cells.Cloud API pour Excel fonctionne : les tâches prennent en charge la conversion de fichiers Excel"
 weight: 30
 kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Utilisation de la tâche de conversion
 ---

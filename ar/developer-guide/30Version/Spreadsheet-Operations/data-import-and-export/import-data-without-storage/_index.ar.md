@@ -1,6 +1,6 @@
 ﻿---
 title: استيراد البيانات دون استخدام التخزين
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: استيراد البيانات بدون تخزين
 type: docs
 url: /ar/import/without-using-storage/ 

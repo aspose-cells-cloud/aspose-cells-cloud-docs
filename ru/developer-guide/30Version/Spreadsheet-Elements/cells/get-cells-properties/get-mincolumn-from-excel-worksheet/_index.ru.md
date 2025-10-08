@@ -1,5 +1,5 @@
 ﻿---
-title: Получить MinColumn из рабочей таблицы Excel
+title: Получить MinColumn из рабочего листа Excel
 type: docs
 url: /ru/get-mincolumn-from-excel-worksheet/
 weight: 100

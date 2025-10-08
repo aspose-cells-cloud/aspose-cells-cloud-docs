@@ -15,12 +15,12 @@ Ce REST API indique comment convertir un graphique en image.
 GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartNumber}?format={format}
 
 ```
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Nom du document.|
-| nom de la feuille| chaîne| chemin| Nom de la feuille de travail.|
+| nom de la feuille| chaîne| chemin| Nom de la feuille de calcul.|
 | numéro de graphique| entier| chemin| Le numéro du graphique.|
 | format| chaîne| requête| Le format du fichier exporté.|
 | dossier| chaîne| requête| Le dossier de documents.|

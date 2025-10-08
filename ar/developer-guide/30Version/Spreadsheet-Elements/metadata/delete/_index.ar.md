@@ -1,6 +1,6 @@
 ﻿---
 title: حذف البيانات الوصفية على ملفات Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: حذف بدون استخدام التخزين
 type: docs
 url: /ar/metadata/delete/

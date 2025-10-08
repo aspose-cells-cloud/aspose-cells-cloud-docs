@@ -1,6 +1,6 @@
 ﻿---
 title: البحث عن نص في دفتر العمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: البحث في workboo
 type: docs
 url: /ar/workbook/find-text/

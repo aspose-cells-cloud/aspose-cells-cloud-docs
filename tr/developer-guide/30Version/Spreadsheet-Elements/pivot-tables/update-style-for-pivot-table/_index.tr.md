@@ -1,6 +1,6 @@
 ﻿---
 title: Pivot tablo için stil güncellemesi
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Tümünü biçimlendir
 type: docs
 url: /tr/pivot-tables/format-all/

@@ -1,6 +1,6 @@
 ﻿---
 title: Resim Dışa Aktar
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Resim
 type: docs
 url: /tr/export-excel-picture-to-different-formats/

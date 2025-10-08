@@ -1,6 +1,6 @@
 ﻿---
 title: Combina un intervallo di Cells in una singola cella
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Fusione
 type: docs
 url: /it/ranges/merge/

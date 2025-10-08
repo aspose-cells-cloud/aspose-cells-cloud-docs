@@ -1,6 +1,6 @@
 ﻿---
 title: Verschieben Sie eine Pivot-Tabelle in einer Excel-Datei
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Bewegen
 type: docs
 url: /de/pivot-tables/move/

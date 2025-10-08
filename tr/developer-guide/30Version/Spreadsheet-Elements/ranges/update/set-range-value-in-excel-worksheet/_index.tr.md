@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma sayfasında aralık değerini ayarlayın
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Değer ayarla
 type: docs
 url: /tr/ranges/update/values/

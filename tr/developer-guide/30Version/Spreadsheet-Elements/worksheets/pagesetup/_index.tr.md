@@ -1,6 +1,6 @@
 ﻿---
 title: Çalışma sayfası sayfa düzeni
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Sayfa ayarı
 type: docs
 url: /tr/page-setup/
@@ -27,7 +27,7 @@ excel yazdırma sayfası ayarı
 |Altbilgi Kenar Boşluğu|Yüzer|doğru| YANLIŞ||Sayfanın alt kısmından alt bilgiye kadar olan mesafeyi santimetre cinsinden gösterir.|
 |Başlık Kenar Boşluğu|Yüzer|doğru| YANLIŞ||Sayfanın üst kısmından başlığa kadar olan mesafeyi santimetre cinsinden gösterir.|
 |IsAutoFirstPageNumber|Boolean|doğru| YANLIŞ||İlk sayfa numarasının otomatik olarak atanıp atanmadığını belirtir.|
-|IsHFAlignMargins|Boolean|doğru| YANLIŞ||Üstbilgi ve altbilgi kenar boşluklarının sayfa kenar boşluklarıyla hizalanıp hizalanmadığını belirtir. Bu özellik doğruysa, sol üstbilgi ve altbilgi sol kenar boşluğuna, sağ üstbilgi ve altbilgi ise sağ kenar boşluğuna hizalanır. Bu seçenek varsayılan olarak etkindir.|
+|IsHFAlignMargins|Boolean|doğru| YANLIŞ||Üstbilgi ve altbilgi kenar boşluklarının sayfa kenar boşluklarıyla hizalanıp hizalanmadığını belirtir. Bu özellik doğruysa, sol üstbilgi ve altbilgi sol kenar boşluğuyla, sağ üstbilgi ve altbilgi ise sağ kenar boşluğuyla hizalanır. Bu seçenek varsayılan olarak etkindir.|
 |IsHFDiffFirst|Boolean|doğru| YANLIŞ||True, ilk sayfanın üstbilgisinin/altbilgisinin diğer sayfalardan farklı olduğu anlamına gelir.|
 |IsHFDiffOddEven|Boolean|doğru| YANLIŞ||True, tek sayfaların üstbilgisinin/altbilgisinin tek sayfalardan farklı olduğu anlamına gelir.|
 |HFScaleWithDoc|Boolean|doğru| YANLIŞ||Üstbilgi ve altbilginin belge ölçeklemesiyle ölçeklenip ölçeklenmediğini belirtir. Yalnızca Excel 2007 için geçerlidir.|
@@ -38,7 +38,7 @@ excel yazdırma sayfası ayarı
 |Kağıt Boyutu|Sicim|doğru| YANLIŞ||Kağıdın boyutunu temsil eder.|
 |Yazdırma Alanı|Sicim|doğru| YANLIŞ||Yazdırılacak aralığı temsil eder.|
 |Yorumları Yazdır|Sicim|doğru| YANLIŞ||Yorumların sayfaya yazdırılma şeklini gösterir.|
-|Kopya Yazdır|Tam sayı|doğru| YANLIŞ||Yazdırılacak kopya sayısını al ve ayarla.|
+|Kopya Yazdır|Tam sayı|doğru| YANLIŞ||Yazdırılacak kopya sayısını alın ve ayarlayın.|
 |Taslak Yazdır|Boolean|doğru| YANLIŞ||Sayfanın grafiksiz olarak yazdırılıp yazdırılmayacağını gösterir.|
 |Yazdırma Hataları|Sicim|doğru| YANLIŞ||Görüntülenen yazdırma hatasının türünü belirtir.|
 |PrintGridlines|Boolean|doğru| YANLIŞ||Sayfada hücre kılavuz çizgilerinin yazdırılıp yazdırılmayacağını gösterir.|

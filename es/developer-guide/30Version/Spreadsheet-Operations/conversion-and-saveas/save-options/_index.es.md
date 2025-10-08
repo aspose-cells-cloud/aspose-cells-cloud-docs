@@ -1,6 +1,6 @@
 ﻿---
 title: Opción de guardar
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Opción de guardar
 type: docs
 url: /es/save-options/
@@ -13,4 +13,4 @@ kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown
 
 Nombre | Tipo | Descripción | Notas
 ------------ | ------------- | ------------- | -------------
-**Habilitar compresión HTTP** | **¿bool?** | | [opcional]**Guardar formato** | **cadena** | | [opcional]**ClearData** | **¿bool?** | Vaciar el libro de trabajo después de guardar el archivo. | [opcional]**Carpeta de archivos en caché** | **cadena** | La carpeta de archivos en caché se utiliza para almacenar datos grandes. | [opcional]**ValidarÁreasFusionadas** | **¿bool?** | Indica si se validan las áreas fusionadas antes de guardar el archivo. El valor predeterminado es falso. | [opcional]**Actualizar caché de gráficos** | **¿bool?** | | [opcional]**Crear directorio** | **¿bool?** | Si es verdadero y el directorio no existe, este se creará automáticamente antes de guardar el archivo. | [opcional]**Nombres de clasificación** | **¿bool?** | | [opcional]
+**Habilitar compresión HTTP** | **¿bool?** | | [opcional]**Guardar formato** | **cadena** | | [opcional]**ClearData** | **¿bool?** | Vaciar el libro de trabajo después de guardar el archivo. | [opcional]**Carpeta de archivos en caché** | **cadena** | La carpeta de archivos en caché se utiliza para almacenar algunos datos grandes. | [opcional]**ValidarÁreasFusionadas** | **¿bool?** | Indica si se validan las áreas fusionadas antes de guardar el archivo. El valor predeterminado es falso. | [opcional]**Actualizar caché de gráficos** | **¿bool?** | | [opcional]**Crear directorio** | **¿bool?** | Si es verdadero y el directorio no existe, este se creará automáticamente antes de guardar el archivo. | [opcional]**Nombres de clasificación** | **¿bool?** | | [opcional]

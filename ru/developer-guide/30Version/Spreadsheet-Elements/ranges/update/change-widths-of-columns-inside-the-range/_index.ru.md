@@ -1,6 +1,6 @@
 ﻿---
 title: Изменение ширины столбцов внутри диапазона
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ширина столбца
 type: docs
 url: /ru/ranges/update/column-width/

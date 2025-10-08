@@ -1,7 +1,7 @@
 ﻿---
 title: 从 Excel 文件获取元数据
-second_title: Aspose.Cells Cloud Documen
-linktitle: 无需使用存储即可获取
+second_title: Documen
+linktitle: 无需使用存储
 type: docs
 url: /zh/metadata/get/
 keywords: Get properties from Excel files
@@ -23,7 +23,7 @@ POST https://api.aspose.cloud/v3.0/cells/metadata/get
 |:- |:- |:- |
 |类型|细绳|全部/内置/自定义|
 
-- **请求体参数**
+- **请求主体参数**
 
 |参数名称|类型|描述|
 |:- |:- |:- |

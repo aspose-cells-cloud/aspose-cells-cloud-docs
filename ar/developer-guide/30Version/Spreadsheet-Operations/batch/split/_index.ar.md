@@ -1,6 +1,6 @@
 ﻿---
 title: تقسيم الدفعة
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /ar/batch/split
 keywords: Batch split Excel file

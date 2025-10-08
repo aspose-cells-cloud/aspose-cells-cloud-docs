@@ -1,6 +1,6 @@
 ﻿---
 title: Konvertieren Sie das Arbeitsblatt in verschiedene Formate
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Arbeitsblatt konvertieren
 type: docs
 url: /de/worksheets/conversion/

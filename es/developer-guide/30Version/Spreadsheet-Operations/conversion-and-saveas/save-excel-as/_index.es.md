@@ -1,6 +1,6 @@
 ﻿---
 title: Guardar como Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Guardar un
 type: docs
 url: /es/save-an-excel-file-as-other-formats-files/
@@ -26,12 +26,12 @@ Este REST API indica que el archivo Excel `save` tiene un formato de archivo dif
 |esAutoAjustarFilas|cadena| Ajusta automáticamente todas las filas de este libro. El valor predeterminado es "falso".|
 |esAutoAjustarColumnas|cadena| Ajusta automáticamente el ancho de las columnas en este libro. El valor predeterminado es "false".|
 |carpeta|cadena|Carpeta del libro de trabajo original.|
-|nombreDeAlmacenamiento|cadena| El nombre de almacenamiento donde se encuentra el archivo.|
+|nombreDeAlmacenamiento|cadena| El nombre del almacenamiento donde se encuentra el archivo.|
 |nombreAlmacenamientoExterno|cadena| El nombre de almacenamiento donde se encuentra el archivo guardado.|
-|comprobarRestricciónExcel|bool| Si verificar la restricción del archivo Excel cuando el usuario modifica objetos relacionados con celdas.|
+|comprobarRestricción de Excel|bool| Si verificar la restricción del archivo Excel cuando el usuario modifica objetos relacionados con celdas.|
 |región|cadena| La configuración regional del libro de trabajo.|
 |Ajuste de ancho de página por hoja|bool| La página se ajusta al ancho de la hoja de cálculo.|
-|Ajuste de altura de página por hoja|bool| La página se ajusta a la altura de la hoja de trabajo.|
+|Ajuste de altura de página por hoja|bool| La página se ajusta a la altura de la hoja de cálculo.|
 |nombreHoja|cadena| Convertir la hoja de trabajo especificada.|
 |índice de página|cadena| Convierte la página especificada de la hoja de trabajo, se requiere sheetName.|
 |una página por hoja|bool| Al convertir al formato PDF, una página por hoja.|
@@ -96,7 +96,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/sampleBook.xlsx/SaveAs?newfile
 
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
 
 Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
 

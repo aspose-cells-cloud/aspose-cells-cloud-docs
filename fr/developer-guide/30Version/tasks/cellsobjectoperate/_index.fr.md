@@ -1,6 +1,6 @@
 ﻿---
 title: Travailler avec CellsObjectOperate Tas
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /fr/tasks/cells-object-operate/
 aliases: [/working-with-cellsobjectoperate-task/]
@@ -14,7 +14,7 @@ Cet objet REST API exploite les cellules `task`.
 
 |Nom du paramètre|Taper|Description|
 |:- |:- |:- |
-| OperateObjectType| chaîne| Classeur/Feuille de calcul/Mise en page/Cells/Graphique/Forme/Objet de liste/Tableau croisé dynamique/Paramètres du classeur/Saut de page|
+| Type d'objet opérationnel| chaîne|Classeur/Feuille de calcul/Mise en page/Cells/Graphique/Forme/Objet de liste/Tableau croisé dynamique/Paramètres du classeur/Saut de page|
 | Fonctionnement de la position de l'objet| Objet||
 
 **Fonctionnement de la position de l'objet**
@@ -26,7 +26,7 @@ Cet objet REST API exploite les cellules `task`.
 | Index des graphiques| entier||
 | Index de forme| entier||
 | Nom de la cellule| chaîne||
-| Index d'objets de liste| entier||
+| Index des objets de liste| entier||
 
 
 **ChartOperateParameter**
@@ -35,14 +35,14 @@ Cet objet REST API exploite les cellules `task`.
 |:- |:- |:- |
 | Index des graphiques| entier||
 | Type de graphique| chaîne||
-| Ligne supérieure gauche| entier||
+| Rangée supérieure gauche| entier||
 | Colonne supérieure gauche| entier||
 | Ligne inférieure droite| entier||
 | Colonne inférieure droite| entier||
 | Zone| chaîne||
 | EstVertical| chaîne| vrai/faux|
 | CatégorieDonnées| chaîne||
-| Est-ce que AutoGetSerialName| chaîne| vrai/faux|
+| EstAutoGetSerialName| chaîne| vrai/faux|
 | Zone| Titre||
 
 **ListObjectOperateParameter** 
@@ -63,7 +63,7 @@ Cet objet REST API exploite les cellules `task`.
 | FinIndex| entier||
 
 
-**PageSetupOperateParameter**
+**Paramètre d'opération de configuration de page**
 
 |Nom du paramètre|Taper|Description|
 |:- |:- |:- |
@@ -75,12 +75,12 @@ Cet objet REST API exploite les cellules `task`.
 |Nom du paramètre|Taper|Description|
 |:- |:- |:- |
 | Nom de la cellule de destination| chaîne||
-| SourceData| chaîne||
+| Données sources| chaîne||
 | Nom de la table| chaîne||
 | Utiliser la même source| chaîne| vrai/faux|
-| Index de tableau croisé dynamique| entier||
+| Index du tableau croisé dynamique| entier||
 | Lignes de champ croisé dynamique|entier[]||
-| PivotFieldColumns|entier[]||
+| Colonnes de champ croisé dynamique|entier[]||
 | Données du champ croisé dynamique|entier[]||
 
 
@@ -92,7 +92,7 @@ Cet objet REST API exploite les cellules `task`.
 | Forme| Objet||
 
 
-**Paramètres du classeur OpérationParamètre**
+**Paramètres du classeurOperateParameter**
 
 
 |Nom du paramètre|Taper|Description|

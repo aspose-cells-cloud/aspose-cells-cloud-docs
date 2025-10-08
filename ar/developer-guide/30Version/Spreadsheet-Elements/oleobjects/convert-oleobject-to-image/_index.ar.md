@@ -1,6 +1,6 @@
 ﻿---
 title: تحويل كائن OLE إلى صورة في ورقة عمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: تحويل
 type: docs
 url: /ar/oleobjects/convert/

@@ -1,7 +1,7 @@
 ﻿---
 title: Aktualisieren Sie ein Listenobjekt in einem Excel-Arbeitsblatt
-second_title: Aspose.Cells Cloud Documen
-linktitle: Aktualisierung
+second_title: Documen
+linktitle: Aktualisieren
 type: docs
 url: /de/list-objects/update/
 aliases: [/update-a-list-object-or-table-inside-the-worksheet/,/tables/update/]

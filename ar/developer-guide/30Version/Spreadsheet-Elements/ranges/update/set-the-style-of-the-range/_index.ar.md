@@ -1,6 +1,6 @@
 ﻿---
 title: ضبط نمط النطاق
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: مجموعة نمطية
 type: docs
 url: /ar/ranges/update/style/

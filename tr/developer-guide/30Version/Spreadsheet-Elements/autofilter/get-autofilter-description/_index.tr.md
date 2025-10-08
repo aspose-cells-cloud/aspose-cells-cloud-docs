@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma sayfasında otomatik filtre edinin
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Otomatik filtrelemeyi al
 type: docs
 url: /tr/autofilter/get/

@@ -32,7 +32,7 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
 | FirstColumn| инт||
 | IsVertical| нить| верно/ложно.|
 | Данные|Целое число[]||
-| Рабочий лист назначения| нить| имя конечного рабочего листа.|
+|Рабочий лист назначения| нить| имя конечного рабочего листа.|
 | IsInsert| нить| верно/ложно.|
 | ImportDataType| нить|IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData.|
 | Источник| FileSource| Указывает позицию файла данных, если параметр BatchData равен нулю.|

@@ -1,6 +1,6 @@
 ﻿---
 title: Nascondi l'elemento del campo pivot in una tabella pivot
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Nascondere
 type: docs
 url: /it/pivot-tables/hide-pivot-field-item/

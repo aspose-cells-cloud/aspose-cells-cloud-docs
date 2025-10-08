@@ -1,6 +1,6 @@
 ﻿---
 title: Добавить горизонтальный разрыв страницы
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Добавить горизонтальный разрыв страницы
 type: docs
 url: /ru/page-breaks/add-horizontal-page-break/

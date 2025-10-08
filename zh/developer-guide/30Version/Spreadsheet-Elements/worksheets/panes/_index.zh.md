@@ -1,6 +1,6 @@
 ﻿---
 title: 如何使用 Excel 工作表上的窗格
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: 窗格
 type: docs
 url: /zh/worksheets/panes/

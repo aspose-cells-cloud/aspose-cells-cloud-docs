@@ -1,7 +1,7 @@
 ﻿---
 title: Metadaten aktualisieren
-second_title: Aspose.Cells Cloud Documen
-linktitle: Aktualisieren ohne Verwendung von Speicher
+second_title: Documen
+linktitle: Aktualisieren ohne Speichernutzung
 type: docs
 url: /de/metadata/update/
 keywords: Update metadata on excel files

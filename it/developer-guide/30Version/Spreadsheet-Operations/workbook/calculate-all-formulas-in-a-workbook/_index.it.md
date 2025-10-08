@@ -1,6 +1,6 @@
 ﻿---
 title: Calcola tutte le formule su un quaderno di lavoro Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Calcolatore
 type: docs
 url: /it/calculate-all-formulas-on-an-excel-file/

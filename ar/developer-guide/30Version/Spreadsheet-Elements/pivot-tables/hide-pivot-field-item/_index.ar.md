@@ -1,6 +1,6 @@
 ﻿---
 title: إخفاء عنصر حقل المحور في جدول محوري
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: يخفي
 type: docs
 url: /ar/pivot-tables/hide-pivot-field-item/

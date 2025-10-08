@@ -1,12 +1,12 @@
 ﻿---
 title: 匹配 Excel 工作表中的所有非空白单元格
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: 不匹配空白单元格
 type: docs
 url: /zh/autofilter/match-all-non-blank/
 aliases: [/match-all-non-blank-cells-in-the-list/]
 keywords: Match all not blank cells in the filter list on an Excel worksheet
-description: Aspose.Cells Cloud API 支持匹配 Excel 工作表的筛选列表中所有非空白单元格。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
+description: Aspose.Cells Cloud API 支持匹配 Excel 工作表上筛选列表中所有非空白单元格。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
 weight: 100
 kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、匹配 Excel 工作表中的所有非空白单元格
 ---
@@ -30,7 +30,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter
 |文件夹|细绳|询问||
 |存储名称|细绳|询问|存储名称。|
 
-这[OpenAPI规范](https://apireference.aspose.cloud/cells/#/AutoFilter/PostWorksheetMatchNonBlanks)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/AutoFilter/PostWorksheetMatchNonBlanks)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
 
 您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
 

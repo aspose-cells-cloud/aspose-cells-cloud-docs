@@ -1,6 +1,6 @@
 ﻿---
 title: Excel resimle çalışıyor
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Resim
 type: docs
 url: /tr/pictures/
@@ -12,7 +12,7 @@ kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdow
 ---
 ## Excel dosyasında resimlerle çalışma
 
-- [Excel çalışma sayfasından belirli bir formattaki resmi nasıl alabilirim?](/cells/tr/pictures/get/)
+- [Excel çalışma sayfasından belirli formattaki bir resmi nasıl alabilirim.](/cells/tr/pictures/get/)
 - [Excel çalışma sayfasından tüm resim bilgileri nasıl alınır.](/cells/tr/pictures/get-all/)
 - [Excel çalışma sayfasına resim nasıl eklenir.](/cells/tr/pictures/add/)
 - [Excel çalışma sayfasından belirli bir resmi nasıl güncellerim?](/cells/tr/pictures/update/)

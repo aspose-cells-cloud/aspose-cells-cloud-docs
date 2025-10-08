@@ -1,6 +1,6 @@
 ﻿---
 title: مسح تعديل كلمة المرور لمصنف العمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: مسح كلمة مرور الملفات Excel
 type: docs
 url: /ar/clear-excel-files-password/

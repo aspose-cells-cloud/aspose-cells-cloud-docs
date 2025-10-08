@@ -1,6 +1,6 @@
 ﻿---
 title: Holen Sie sich alle Arbeitsblattvalidierungen aus einem Excel-Arbeitsblatt
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Holen Sie sich al
 type: docs
 url: /de/validations/get-all/

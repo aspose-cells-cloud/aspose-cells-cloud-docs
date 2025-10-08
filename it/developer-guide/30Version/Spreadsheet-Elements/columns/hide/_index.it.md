@@ -1,6 +1,6 @@
 ﻿---
 title: Nascondi colonne su un foglio di lavoro Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Nascosto
 type: docs
 url: /it/columns/hide/
@@ -26,7 +26,7 @@ I parametri della richiesta sono:
 |:- |:- |:- |:- |
 | nome| corda| sentiero| Il nome della cartella di lavoro.|
 | Nome foglio| corda| sentiero| Il nome del foglio di lavoro.|
-| colonna di inizio| intero| domanda| Indice della colonna iniziale su cui operare.|
+| colonna di inizio| intero| domanda| Indice della colonna iniziale da utilizzare.|
 | colonne totali| intero| domanda| Numero di colonne da gestire.|
 | cartella| corda| domanda| La cartella dei documenti.|
 | Nome di archiviazione| corda| domanda| nome di archiviazione.|

@@ -1,6 +1,6 @@
 ﻿---
 title: Travailler avec la page Excel brea
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Saut de page
 type: docs
 url: /fr/working-with-pagebreaks/

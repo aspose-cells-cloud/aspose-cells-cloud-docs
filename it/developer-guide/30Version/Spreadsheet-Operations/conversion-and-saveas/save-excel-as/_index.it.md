@@ -1,6 +1,6 @@
 ﻿---
 title: Salva con nome Eccedi
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Salva un
 type: docs
 url: /it/save-an-excel-file-as-other-formats-files/

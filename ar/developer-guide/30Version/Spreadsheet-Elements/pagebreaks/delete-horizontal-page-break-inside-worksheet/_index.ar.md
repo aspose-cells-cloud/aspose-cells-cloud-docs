@@ -1,6 +1,6 @@
 ﻿---
 title: حذف كسر الصفحة الأفقية
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: حذف كسر الصفحة الأفقية
 type: docs
 url: /ar/page-breaks/delete-horizontal-page-break/

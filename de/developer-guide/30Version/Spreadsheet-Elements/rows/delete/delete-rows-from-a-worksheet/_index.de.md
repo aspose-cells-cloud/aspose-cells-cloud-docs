@@ -1,6 +1,6 @@
 ﻿---
 title: Löschen Sie mehrere Zeilen in einem Arbeitsblatt Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Reihe
 type: docs
 url: /de/rows/delete/rows/

@@ -1,6 +1,6 @@
 ﻿---
 title: تعيين قيمة النطاق على ورقة عمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: تعيين القيمة
 type: docs
 url: /ar/ranges/update/values/

@@ -1,6 +1,6 @@
 ﻿---
 title: العمل مع كسر الصفحة Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: فاصل الصفحات
 type: docs
 url: /ar/working-with-pagebreaks/

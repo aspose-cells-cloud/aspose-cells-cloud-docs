@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma sayfasındaki liste nesnesi verilerini sıralayın
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Sor
 type: docs
 url: /tr/list-objects/sort-data/

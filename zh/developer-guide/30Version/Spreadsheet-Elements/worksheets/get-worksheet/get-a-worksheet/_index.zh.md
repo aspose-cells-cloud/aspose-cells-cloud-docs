@@ -1,6 +1,6 @@
 ﻿---
 title: 从 Excel 工作表中获取工作表
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: 工作表
 type: docs
 url: /zh/worksheets/get-worksheet/
@@ -11,7 +11,7 @@ kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdo
 ---
 此 REST API 表示 `get worksheet description` 或 `export worksheet to kinds of format file`。
 
-您可以导出以下格式：[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [消耗臭氧层物质](https://docs.fileformat.com/spreadsheet/ods/), [TXT](https://docs.fileformat.com/word-processing/txt/), [PDF](https://docs.fileformat.com/pdf/), [奥特斯](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [DIF](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/),[动图](https://docs.fileformat.com/image/gif/), [BMP](https://docs.fileformat.com/image/bmp/), [WMF](https://docs.fileformat.com/image/wmf/),[TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [数字](https://docs.fileformat.com/spreadsheet/numbers/), [食物中毒](https://docs.fileformat.com/spreadsheet/fods/).
+您可以导出以下格式：[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [消耗臭氧层物质](https://docs.fileformat.com/spreadsheet/ods/), [TXT](https://docs.fileformat.com/word-processing/txt/), [PDF](https://docs.fileformat.com/pdf/), [奥特斯](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [DIF](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/),[GIF](https://docs.fileformat.com/image/gif/), [BMP](https://docs.fileformat.com/image/bmp/), [WMF](https://docs.fileformat.com/image/wmf/),[TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [数字](https://docs.fileformat.com/spreadsheet/numbers/), [食物中毒](https://docs.fileformat.com/spreadsheet/fods/).
 
 ## 重新设置 API
 
@@ -35,7 +35,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
 |文件夹|细绳|询问|文件夹。|
 |存储名称|细绳|询问|存储名称。|
 
-这[OpenAPI规范](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheet)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheet)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
 
 您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
 

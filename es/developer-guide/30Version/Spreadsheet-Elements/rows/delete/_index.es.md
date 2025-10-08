@@ -1,6 +1,6 @@
 ﻿---
 title: Trabajar con la eliminación de filas en una hoja de cálculo Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Borrar
 type: docs
 url: /es/rows/delete/

@@ -1,6 +1,6 @@
 ﻿---
 title: إزالة كافة خصائص المستند
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: كليا
 type: docs
 url: /ar/document-properties/clear/

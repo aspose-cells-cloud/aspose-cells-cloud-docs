@@ -1,6 +1,6 @@
 ﻿---
 title: Aggiungi interruzione di pagina orizzontale
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Aggiungi interruzione di pagina orizzontale
 type: docs
 url: /it/page-breaks/add-horizontal-page-break/

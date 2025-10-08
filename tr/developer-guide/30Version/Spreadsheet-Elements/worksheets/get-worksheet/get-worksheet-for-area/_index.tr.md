@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma sayfasından bir alanı dışa aktarın
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Vardır
 type: docs
 url: /tr/worksheets/area-to-different-formats/

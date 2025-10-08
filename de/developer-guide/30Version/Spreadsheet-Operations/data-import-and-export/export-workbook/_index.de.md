@@ -1,6 +1,6 @@
 ﻿---
 title: Arbeitsbuch exportieren
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Workboo
 type: docs
 url: /de/export-excel-to-different-formats/

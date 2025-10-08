@@ -1,6 +1,6 @@
 ﻿---
 title: Импорт данных Json в Exce
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Импорт Jso
 type: docs
 url: /ru/import-json-data-into-excel/
@@ -32,7 +32,7 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/importjson
 | папка| Строка запроса| нить| Оригинальная папка рабочей тетради.|
 | имя_хранилища| Строка запроса| нить| Имя хранилища.|
 | outPath| Строка запроса| нить| Путь к выходному файлу.|
-| outStorageName| Строка запроса| нить| Имя хранилища выходного файла.|
+|outStorageName| Строка запроса| нить| Имя хранилища выходного файла.|
 | checkExcelRestriction| Строка запроса| нить| Проверьте ограничение Excel.|
 
 **Пример**

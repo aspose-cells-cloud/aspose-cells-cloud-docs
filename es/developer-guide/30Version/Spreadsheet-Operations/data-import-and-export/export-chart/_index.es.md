@@ -1,12 +1,12 @@
 ﻿---
 title: Exportar Char
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Carbonizarse
 type: docs
 url: /es/export-excel-chart-to-different-formats/
 aliases: [ /export/excel-chart-to-different-formats/]
 keywords: Export Excel chart to kinds of format files
-description: Aspose.Cells Cloud REST API admite la exportación de gráficos Excel a diversos formatos de archivo. El SDK es compatible con diversos lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
+description: Aspose.Cells Cloud REST API admite la exportación de gráficos Excel a diversos formatos de archivo. El SDK admite diversos lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 20
 kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, JSON, Markdown, Exportar gráfico
 ---
@@ -71,7 +71,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=chart&format
 
 - **Familia de SDK en la nube**
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
 
 Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
 

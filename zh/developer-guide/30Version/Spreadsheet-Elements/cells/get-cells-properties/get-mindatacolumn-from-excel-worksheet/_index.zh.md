@@ -3,7 +3,7 @@ title: 从 Excel 工作表中获取 MinDataColumn
 type: docs
 url: /zh/get-mindatacolumn-from-excel-worksheet/
 weight: 110
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、从 Excel 工作表中获取 MinDataColumn
+kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、从 Excel 工作表获取 MinDataColumn
 ---
 此 REST API 表示当 `cellOrMethodName` 参数为 `mindatacolumn` 时，在 Excel 文件中获取 `mindatacolumn`。
 

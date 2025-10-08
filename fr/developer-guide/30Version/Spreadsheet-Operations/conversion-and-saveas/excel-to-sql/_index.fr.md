@@ -1,6 +1,6 @@
 ﻿---
 title: Excel à SQ
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Excel à SQ
 type: docs
 url: /fr/convert-excel-file-to-sql-file/
@@ -17,7 +17,7 @@ Ce REST API indique à `convert` un fichier de feuille de calcul vers un fichier
 |:- |:- |:- |
 |mot de passe|chaîne| Le mot de passe nécessaire pour ouvrir un fichier Excel.|
 |nom de stockage|chaîne| Le nom du stockage où se trouve le fichier.|
-|checkExcelRestriction|booléen| Vérifiez si la restriction du fichier Excel est vérifiée lorsque l'utilisateur modifie les objets liés aux cellules.|
+|vérifierExcelRestriction|booléen| Vérifiez si la restriction du fichier Excel est vérifiée lorsque l'utilisateur modifie les objets liés aux cellules.|
 
 **Paramètre du corps de la requête**
 

@@ -1,6 +1,6 @@
 ﻿---
 title: Разгруппировать строки на рабочем листе Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Унгру
 type: docs
 url: /ru/rows/ungroup/

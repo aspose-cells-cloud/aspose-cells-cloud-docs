@@ -1,6 +1,6 @@
 ﻿---
 title: Çalışma sayfasını biçim türlerine dönüştürün
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Çalışma sayfasını dönüştür
 type: docs
 url: /tr/worksheets/conversion/

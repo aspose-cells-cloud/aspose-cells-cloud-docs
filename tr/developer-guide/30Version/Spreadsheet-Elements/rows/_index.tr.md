@@ -1,6 +1,6 @@
 ﻿---
 title: Excel satırıyla çalışılıyor
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Sıra
 type: docs
 url: /tr/rows/

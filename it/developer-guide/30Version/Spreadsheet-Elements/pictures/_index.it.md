@@ -1,6 +1,6 @@
 ﻿---
 title: Lavorando con Excel picturer
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Immagine
 type: docs
 url: /it/pictures/

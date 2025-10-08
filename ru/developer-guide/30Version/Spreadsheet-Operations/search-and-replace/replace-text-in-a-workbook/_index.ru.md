@@ -1,6 +1,6 @@
 ﻿---
 title: Заменить текст в рабочей книге Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Заменить в рабочей книге
 type: docs
 url: /ru/workbook/replace-text/

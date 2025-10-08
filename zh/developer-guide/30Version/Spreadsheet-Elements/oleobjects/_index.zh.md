@@ -1,6 +1,6 @@
 ﻿---
 title: 使用 Excel Ole 对象
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ole对象
 type: docs
 url: /zh/oleobjects/

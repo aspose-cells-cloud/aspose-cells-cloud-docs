@@ -1,6 +1,6 @@
 ﻿---
-title: Excel dosyalarını sıkıştırın ve onarın
-second_title: Aspose.Cells Cloud Documen
+title: Excel dosyalarını sıkıştır ve onar
+second_title: Documen
 type: docs
 url: /tr/compress-and-repair-excel-files/
 linktitle: Sıkıştır ve Onar
@@ -9,3 +9,5 @@ description: Depolama alanını optimize etmek için dosya boyutlarını azaltar
 weight: 100
 kwords: Derin dosya sıkıştırma ve Hızlı sıkıştırma; Kapsamlı dosya onarımı ve Kısmi onarım girişimleri; Otomatik hata tespiti ve Kullanıcı kılavuzu kontrolleri
 ---
+- **["Excel dosyasındaki verileri sıkıştır"](https://docs.aspose.cloud/cells/compress-excel-files/)**
+- **["Excel Dosyalarını Onar"](https://docs.aspose.cloud/cells/repair-excel-files/)**

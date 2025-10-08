@@ -1,6 +1,6 @@
 ﻿---
 title: Копирует содержимое и форматы из другого рабочего листа
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Коп
 type: docs
 url: /ru/worksheets/copy/
@@ -28,8 +28,8 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/copy
 | Имя_листа| нить| путь||
 | исходный лист| нить| запрос||
 | параметры|| тело||
-| источникРабочая тетрадь| нить| запрос||
-| исходная_папка| нить| запрос||
+| источникРабочая книга| нить| запрос||
+| sourceFolder| нить| запрос||
 | папка| нить| запрос||
 | имя_хранилища| нить| запрос| имя хранилища.|
 

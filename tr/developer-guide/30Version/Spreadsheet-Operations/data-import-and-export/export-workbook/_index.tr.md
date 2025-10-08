@@ -1,6 +1,6 @@
 ﻿---
 title: Workboo'yu Dışa Aktar
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Workboo
 type: docs
 url: /tr/export-excel-to-different-formats/

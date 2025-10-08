@@ -1,6 +1,6 @@
 ﻿---
 title: Seitenzahl für ein Excel-Arbeitsblatt abrufen
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: PageCount
 type: docs
 url: /de/worksheets/page-count/

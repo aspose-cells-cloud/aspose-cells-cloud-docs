@@ -1,6 +1,6 @@
 ﻿---
-title: Trabajar con la adición de filas en una hoja de cálculo Excel
-second_title: Aspose.Cells Cloud Documen
+title: Trabajando con la adición de filas en una hoja de cálculo Excel
+second_title: Documen
 linktitle: Anuncio
 type: docs
 url: /es/rows/add/

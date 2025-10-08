@@ -1,6 +1,6 @@
 ﻿---
 title: Сопоставьте все непустые ячейки на рабочем листе Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Нет совпадений с пустыми ячейками
 type: docs
 url: /ru/autofilter/match-all-non-blank/

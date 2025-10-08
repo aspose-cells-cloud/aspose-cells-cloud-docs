@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma sayfasına Boş Sütun Ekleme
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Reklam
 type: docs
 url: /tr/columns/add/

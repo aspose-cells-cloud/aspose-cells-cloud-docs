@@ -1,6 +1,6 @@
 ﻿---
 title: Décrypter un classeur Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Décrypter un fichier Excel
 type: docs
 url: /fr/excel-file-decrypt/
@@ -8,7 +8,7 @@ aliases: [/decrypt-excel-workbooks/,/workbook/decrypt/]
 keywords: REST API, spreadsheets, excel, decryp
 description: "Cells.Cloud API pour Excel opération : décrypter un classeur Excel"
 weight: 50
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Décrypter un classeur Excel
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Décrypter un classeur Excel
 ---
 Ce REST API décrypte un Excel `workbook`.
 
@@ -29,7 +29,7 @@ Ce REST API décrypte un Excel `workbook`.
 
 |Nom du paramètre|Taper|Description|
 |:- |:- |:- |
-|Type de cryptage|chaîne|XOR/Compatible/EnhancedCryptographicProviderV1/StrongCryptographicProvider|
+|Type de cryptage|chaîne|XOR/Compatible/Fournisseur cryptographique amélioré V1/Fournisseur cryptographique fort|
 |Longueur de clé|entier||
 |Mot de passe|chaîne||
 

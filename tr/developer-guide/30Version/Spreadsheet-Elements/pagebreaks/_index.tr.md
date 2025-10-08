@@ -1,6 +1,6 @@
 ﻿---
 title: Excel sayfa sonu ile çalışılıyor
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Sayfa Sonu
 type: docs
 url: /tr/working-with-pagebreaks/

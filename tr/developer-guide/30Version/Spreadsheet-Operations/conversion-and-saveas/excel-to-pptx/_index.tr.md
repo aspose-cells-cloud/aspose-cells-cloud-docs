@@ -1,6 +1,6 @@
 ﻿---
 title: Excel Ppt'ye
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Excel Ppt'ye
 type: docs
 url: /tr/convert-excel-file-to-pptx-file/

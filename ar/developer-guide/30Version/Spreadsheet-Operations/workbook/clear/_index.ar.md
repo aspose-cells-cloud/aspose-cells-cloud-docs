@@ -1,6 +1,6 @@
 ﻿---
 title: قم بمسح الكائنات الموجودة في الملف Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: كليا
 type: docs
 url: /ar/clear/

@@ -1,6 +1,6 @@
 ﻿---
 title: تصدير كائن OLE
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: كائن OLE
 type: docs
 url: /ar/export-excel-ole-object/

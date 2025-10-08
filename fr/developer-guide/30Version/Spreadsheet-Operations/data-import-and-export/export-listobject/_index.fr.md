@@ -1,6 +1,6 @@
 ﻿---
-title: Exporter la liste des objets
-second_title: Aspose.Cells Cloud Documen
+title: Exporter la liste d'objets
+second_title: Documen
 linktitle: Liste des objets
 type: docs
 url: /fr/export-excel-listobject-to-different-formats/
@@ -8,7 +8,7 @@ aliases: [ /export/excel-listobject-to-different-formats/]
 keywords: Export Excel list object to kinds of format files
 description: Aspose.Cells Cloud REST API prend en charge l'exportation d'objets de liste Excel vers différents formats de fichiers. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 20
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Exporter un objet de liste
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Exporter un objet de liste
 ---
  Vous pouvez exporter les formats :[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [SAO](https://docs.fileformat.com/spreadsheet/ods/), [SMS](https://docs.fileformat.com/word-processing/txt/), [PDF](https://docs.fileformat.com/pdf/), [OTS](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [DIF](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [NOMBRES](https://docs.fileformat.com/spreadsheet/numbers/), [FODS](https://docs.fileformat.com/spreadsheet/fods/)..
 

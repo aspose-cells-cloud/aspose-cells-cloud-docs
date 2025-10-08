@@ -1,6 +1,6 @@
 ﻿---
 title: حذف ورقة العمل
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: ورقة عمل واحدة
 type: docs
 url: /ar/worksheets/delete-worksheet/

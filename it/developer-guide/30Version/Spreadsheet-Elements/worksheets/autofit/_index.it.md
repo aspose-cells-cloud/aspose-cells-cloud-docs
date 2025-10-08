@@ -1,6 +1,6 @@
 ﻿---
 title:  Lavorare con l'adattamento automatico su un foglio di lavoro Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Autofi
 type: docs
 url: /it/worksheets/autofit/

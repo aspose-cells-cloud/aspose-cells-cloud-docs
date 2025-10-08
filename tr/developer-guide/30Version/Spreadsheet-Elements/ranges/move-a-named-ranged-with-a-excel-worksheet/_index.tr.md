@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma sayfasıyla adlandırılmış bir aralığı taşıyın
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Hareket
 type: docs
 url: /tr/ranges/move/

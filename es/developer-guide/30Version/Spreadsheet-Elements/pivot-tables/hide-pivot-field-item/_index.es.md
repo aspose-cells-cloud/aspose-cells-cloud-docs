@@ -1,6 +1,6 @@
 ﻿---
 title: Ocultar el elemento del campo dinámico en una tabla dinámica
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Esconder
 type: docs
 url: /es/pivot-tables/hide-pivot-field-item/
@@ -26,7 +26,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottable
 | nombre| cadena| camino||
 | nombreHoja| cadena| camino||
 | índice de tabla dinámica| entero| camino||
-| tipoDeCampoPivote| cadena| consulta||
+| tipo de campo pivote| cadena| consulta||
 | índice de campo| entero| consulta||
 | índice de artículos| entero| consulta||
 | esOcultar| booleano| consulta||
@@ -70,7 +70,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/pivott
  
 ## Familia de SDK en la nube
  
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
  
 Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
  

@@ -1,6 +1,6 @@
 ﻿---
 title: Come lavorare con l'eliminazione dei fogli di lavoro su una cartella di lavoro Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Elimina
 type: docs
 url: /it/worksheets/delete/

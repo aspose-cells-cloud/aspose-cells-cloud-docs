@@ -1,6 +1,6 @@
 ﻿---
 title: Imposta una proprietà di un documento particolare
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Aggiornamento
 type: docs
 url: /it/document-properties/update/

@@ -1,6 +1,6 @@
 ﻿---
 title: "Lavorare nei file Excel: Calcolo della formula, Adattamento automatico, Cancella oggetti, ecc."
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Excel Operazione comune
 type: docs
 url: /it/workbook/

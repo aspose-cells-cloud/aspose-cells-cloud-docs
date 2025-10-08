@@ -1,6 +1,6 @@
 ﻿---
 title: Gruppieren Sie Spalten auf einem Excel-Arbeitsblatt
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Grou
 type: docs
 url: /de/columns/group/

@@ -1,6 +1,6 @@
 ﻿---
 title: Obtenir un objet de liste dans une feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Gé
 type: docs
 url: /fr/list-objects/get/
@@ -8,9 +8,9 @@ aliases: [/get-a-list-object-or-table-inside-the-worksheet/,/tables/get/]
 keywords: Get a list object(table) into an Excel worksheet
 description: Aspose.Cells Cloud REST API prend en charge l'insertion d'un objet liste (table) dans une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 9
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Obtenir un objet de liste dans une feuille de calcul Excel
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Obtenir un objet de liste dans une feuille de calcul Excel
 ---
-Ce REST API indique à `get` une liste d'informations d'objet par index ou convertit un `list object` en un fichier de format différent dans une feuille de calcul Excel.
+Ce REST API indique à `get` une liste d'informations sur les objets par index ou convertit un `list object` en un fichier de format différent dans une feuille de calcul Excel.
 
 ## RSET API
 
@@ -20,13 +20,13 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Nom du document.|
 | nom de la feuille| chaîne| chemin| Le nom de la feuille de calcul.|
-| index d'objets de liste| entier| chemin| index d'objet de liste.|
+| index d'objets de liste| entier| chemin| index des objets de liste.|
 | format| chaîne| requête| format d'exportation.|
 | dossier| chaîne| requête| Dossier du document.|
 | nom de stockage| chaîne| requête| nom de stockage.|

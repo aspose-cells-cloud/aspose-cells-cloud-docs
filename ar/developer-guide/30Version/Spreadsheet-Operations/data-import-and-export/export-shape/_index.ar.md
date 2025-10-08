@@ -1,6 +1,6 @@
 ﻿---
 title: تصدير الشكل
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: شاب
 type: docs
 url: /ar/export-excel-shape-to-different-formats/

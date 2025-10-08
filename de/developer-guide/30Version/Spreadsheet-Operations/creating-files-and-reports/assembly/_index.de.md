@@ -1,6 +1,6 @@
 ﻿---
 title: Zusammenstellung der Daten zur Erstellung eines Excel-Berichts
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Montagedatum
 type: docs
 url: /de/assembly-data-for-the-creation-of-an-excel-report/

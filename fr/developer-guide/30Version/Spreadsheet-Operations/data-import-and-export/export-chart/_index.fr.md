@@ -1,6 +1,6 @@
 ﻿---
 title: Exporter le caractère
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Carboniser
 type: docs
 url: /fr/export-excel-chart-to-different-formats/

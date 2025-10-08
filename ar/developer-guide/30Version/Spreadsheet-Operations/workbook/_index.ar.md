@@ -1,6 +1,6 @@
 ﻿---
 title: "العمل في ملفات Excel: حساب الصيغة، والملاءمة التلقائية، ومسح الكائنات، وما إلى ذلك"
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Excel عملية مشتركة
 type: docs
 url: /ar/workbook/

@@ -1,6 +1,6 @@
 ﻿---
 title: تعيين إعداد الصفحة لورقة العمل
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: تعيين الصفحة setu
 type: docs
 url: /ar/set-page-setup/

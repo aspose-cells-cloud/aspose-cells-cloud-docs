@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma sayfasında formülü hesaplayın
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Hesapla
 type: docs
 url: /tr/worksheets/calculate-formula/

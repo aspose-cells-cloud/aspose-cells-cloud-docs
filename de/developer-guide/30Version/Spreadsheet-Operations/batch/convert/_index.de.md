@@ -1,6 +1,6 @@
 ﻿---
 title: Batch-Konvertierung Excel Datei
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /de/batch/convert
 keywords: Batch conversion of multiple excel files
@@ -8,7 +8,7 @@ description: Aspose.Cells Cloud API unterstützt die Stapelkonvertierung mehrere
 weight: 100
 kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Batch-Konvertierung
 ---
-Dieser REST API zeigt an, `batch conversion` der berechtigten Dateien
+Dieser REST API zeigt an, dass `batch conversion` der berechtigten Dateien
 
 ## RSET API
 

@@ -3,7 +3,7 @@ title: Obtener MaxDataColumn de la hoja de trabajo Excel
 type: docs
 url: /es/get-maxdatacolumn-from-excel-worksheet/
 weight: 70
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Obtener MaxDataColumn de la hoja de cálculo Excel
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Obtener MaxDataColumn de la hoja de trabajo Excel
 ---
 Este REST API indica que se obtiene un `maxdatacolumn` en un archivo Excel cuando el parámetro `cellOrMethodName` es `maxdatacolumn`.
 
@@ -36,7 +36,7 @@ curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/
 
 - **Familia de SDK en la nube**
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
 
 Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
 

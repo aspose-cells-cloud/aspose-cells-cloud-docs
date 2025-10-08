@@ -1,6 +1,6 @@
 ﻿---
 title: Holen Sie sich ein Listenobjekt in einem Excel-Arbeitsblatt
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ge
 type: docs
 url: /de/list-objects/get/

@@ -1,6 +1,6 @@
 ﻿---
 title: Ajuster automatiquement les lignes sur un classeur Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Rangée
 type: docs 
 url: /fr/autofit-rows-on-an-excel-file/
@@ -20,12 +20,12 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/autofitrows
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Nom du document.|
-| Options d'auto-ajustement|| corps| Options d'installation automatique.|
+| Options d'installation automatique|| corps| Options d'installation automatique.|
 | startRow| entier| requête| Index de la ligne de départ.|
 | fin de ligne| entier| requête| Index de fin de ligne.|
 | première colonne| entier| requête| Index de la première colonne.|

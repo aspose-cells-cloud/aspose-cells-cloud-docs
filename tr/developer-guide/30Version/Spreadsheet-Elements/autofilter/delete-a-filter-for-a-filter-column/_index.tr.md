@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma sayfasındaki bir filtreyi silin
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Filtreyi sil
 type: docs
 url: /tr/delete-filter/

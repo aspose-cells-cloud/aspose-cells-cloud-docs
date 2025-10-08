@@ -1,6 +1,6 @@
 ﻿---
 title: التجهيز التلقائي لعدة صفوف في ورقة عمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: صف
 type: docs
 url: /ar/worksheets/autofit/rows/

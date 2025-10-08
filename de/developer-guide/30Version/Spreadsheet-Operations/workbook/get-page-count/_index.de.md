@@ -1,6 +1,6 @@
 ﻿---
 title: Holen Sie sich die Seitenzahl aus einem Excel Fil
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Seite
 type: docs
 url: /de/get-page-count-from-an-excel-file/

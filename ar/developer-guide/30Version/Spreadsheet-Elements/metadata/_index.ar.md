@@ -1,6 +1,6 @@
 ﻿---
 title: العمل مع البيانات الوصفية والخصائص Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: البيانات الوصفية والخصائص
 type: docs
 url: /ar/metadata/

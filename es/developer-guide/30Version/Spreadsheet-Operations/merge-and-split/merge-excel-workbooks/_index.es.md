@@ -1,6 +1,6 @@
 ﻿---
 title: Fusionar un libro de trabajo Excel en otro archivo Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Fusionar un archivo Excel en el archivo Excel
 type: docs
 url: /es/merge-an-excel-file-into-the-excel-file/
@@ -23,7 +23,7 @@ Este REST API indica fusionar un libro de trabajo Excel `workbook` en otro libro
 
 |**API**|**Tipo**|**Descripción**|**Enlace Swagger**|
 |:- |:- |:- |:- |
-|/células/{nombre}/fusionar|CORREO|Fusionar libros de trabajo Excel|[Fusionar libros de trabajo posteriores](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbooksMerge)|
+|/celdas/{nombre}/fusionar|CORREO|Fusionar libros de trabajo Excel|[Fusionar libros de trabajo posteriores](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbooksMerge)|
 
  El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbooksMerge) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
 
@@ -283,7 +283,7 @@ Response headers
 
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
 
 Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
 

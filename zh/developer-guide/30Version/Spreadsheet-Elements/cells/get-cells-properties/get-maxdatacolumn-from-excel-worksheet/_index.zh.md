@@ -3,7 +3,7 @@ title: 从 Excel 工作表中获取 MaxDataColumn
 type: docs
 url: /zh/get-maxdatacolumn-from-excel-worksheet/
 weight: 70
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、从 Excel 工作表中获取 MaxDataColumn
+kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、从 Excel 工作表获取 MaxDataColumn
 ---
 此 REST API 表示当 `cellOrMethodName` 参数为 `maxdatacolumn` 时，在 Excel 文件中获取 `maxdatacolumn`。
 

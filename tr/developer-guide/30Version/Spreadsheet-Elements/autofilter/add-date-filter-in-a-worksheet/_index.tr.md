@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma sayfasına tarih filtresi ekleyin
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Tarih filtresi ekle
 type: docs
 url: /tr/autofilter/add-date-filter/

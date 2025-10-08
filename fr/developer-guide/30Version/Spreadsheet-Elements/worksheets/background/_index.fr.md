@@ -1,6 +1,6 @@
 ﻿---
 title: Comment travailler avec l'arrière-plan sur une feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Contexte
 type: docs
 url: /fr/worksheets/background/

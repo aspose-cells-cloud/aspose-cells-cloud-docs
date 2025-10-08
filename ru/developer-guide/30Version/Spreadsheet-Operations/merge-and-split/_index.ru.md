@@ -1,6 +1,6 @@
 ﻿---
 title: Объединение и разделение файлов Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Объединение и разделение
 type: docs
 url: /ru/merge-and-split/

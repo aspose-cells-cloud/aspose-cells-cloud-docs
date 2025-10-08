@@ -1,6 +1,6 @@
 ﻿---
 title: Автоподбор столбцов на фил Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Столбец
 type: docs
 url: /ru/autofit-columns-on-an-excel-file/

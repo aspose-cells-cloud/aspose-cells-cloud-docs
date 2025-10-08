@@ -1,6 +1,6 @@
 ﻿---
 title: Преобразует файл Excel в другой формат
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Получить Exce
 type: docs
 url: /ru/get different formats files/

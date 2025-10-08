@@ -1,6 +1,6 @@
 ﻿---
 title: Double Dizisini Excel Çalışma Sayfasına Aktar
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Çift diziyi içe aktar
 type: docs
 url: /tr/import-double-array-into-excel-worksheet/
@@ -33,7 +33,7 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
 | İlkSütun| int||
 | Dikey| sicim| doğru/yanlış.|
 | Veri|Çift[]||
-| Hedef Çalışma Sayfası| sicim| hedef çalışma sayfası adı.|
+|Hedef Çalışma Sayfası| sicim| hedef çalışma sayfası adı.|
 | IsInsert| sicim| doğru/yanlış.|
 | Veri Türünü İçe Aktar| sicim|IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData.|
 | Kaynak| Dosya Kaynağı| BatchData parametresi boş olduğunda veri dosyasının konumunu gösterir.|

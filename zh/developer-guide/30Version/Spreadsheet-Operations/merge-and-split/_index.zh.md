@@ -1,6 +1,6 @@
 ﻿---
 title: 合并和拆分 Excel 文件
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: 合并和拆分
 type: docs
 url: /zh/merge-and-split/

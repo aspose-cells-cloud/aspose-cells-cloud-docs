@@ -1,7 +1,7 @@
 ﻿---
 title: Faire correspondre toutes les cellules non vides dans une feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
-linktitle: Ne faites correspondre aucune cellule vide
+second_title: Documen
+linktitle: Ne correspond à aucune cellule vide
 type: docs
 url: /fr/autofilter/match-all-non-blank/
 aliases: [/match-all-non-blank-cells-in-the-list/]
@@ -20,7 +20,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

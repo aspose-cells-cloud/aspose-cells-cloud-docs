@@ -1,6 +1,6 @@
 ﻿---
 title: Mehrere Excel-Dateien zu einer Excel-Datei zusammenführen
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Mehrere Excel-Dateien zusammenführen
 type: docs
 url: /de/merge-multi-files-into-excel/

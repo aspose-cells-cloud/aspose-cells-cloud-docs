@@ -1,6 +1,6 @@
 ﻿---
 title: Обновить картинку в файле Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Обновление
 type: docs
 url: /ru/pictures/update/

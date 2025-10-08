@@ -1,6 +1,6 @@
 ﻿---
 title: 使用 Excel 超链接
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 linktitle: 超级链接
 url: /zh/hyperlinks/

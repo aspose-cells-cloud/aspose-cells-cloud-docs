@@ -1,6 +1,6 @@
 ﻿---
 title: Utvecklarguide 3.
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /sv/developer-guide-3.0/
 aliases: [/developer-guide/v3.0/,/developer-guide-v3.0/]
@@ -54,7 +54,7 @@ kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Utve
     <div class="col-md-6">
         <p>Cells teckensnitt, stilar, villkorsstyrd formatering och värde</p>
         <ul>
-            <li><a href="/cells/sv/get-cell-style-from-a-worksheet/">Hämtar cellstil från ett Excel-arbetsblad.</a></li>
+            <li><a href="/cells/sv/get-cell-style-from-a-worksheet/">Hämtar cellformat från ett Excel-arbetsblad.</a></li>
             <li><a href="/cells/sv/update-multiple-cells-style/">Uppdaterar flera cellformat i ett Excel-arbetsblad.</a></li>
             <li><a href="/cells/sv/change-cell-style-in-excel-worksheet/">Uppdaterar cellstilen i ett Excel-arbetsblad.</a></li>
             <li><a href="/cells/sv/apply-rich-text-formatting-to-a-cell/">Ställer in RTF-formatering för en cell i kalkylbladet Excel.</a></li>

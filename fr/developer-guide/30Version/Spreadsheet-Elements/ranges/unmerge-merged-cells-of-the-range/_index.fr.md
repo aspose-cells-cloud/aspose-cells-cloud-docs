@@ -1,12 +1,12 @@
 ﻿---
 title: Annuler la fusion des cellules fusionnées du rang
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Défusionner
 type: docs
 url: /fr/ranges/unmerge/
 aliases: [/unmerge-merged-cells-of-the-range/]
 keywords: Unmerge merged cells of the range on an Excel worksheet
-description: Aspose.Cells Cloud REST API prend en charge la suppression de la fusion des cellules d'une plage dans une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
+description: Aspose.Cells Cloud REST API prend en charge la suppression de la fusion des cellules de la plage d'une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 20
 kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Annuler la fusion des cellules fusionnées de la plage
 ---
@@ -20,7 +20,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/unm
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

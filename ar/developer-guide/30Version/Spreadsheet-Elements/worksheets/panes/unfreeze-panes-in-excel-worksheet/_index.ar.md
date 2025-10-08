@@ -1,6 +1,6 @@
 ﻿---
 title: إلغاء تجميد الأجزاء في ورقة العمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: إزالة التجميد
 type: docs
 url: /ar/worksheets/panes/unfreeze/

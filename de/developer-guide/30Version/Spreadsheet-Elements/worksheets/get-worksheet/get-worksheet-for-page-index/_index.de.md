@@ -1,6 +1,6 @@
 ﻿---
 title: Exportieren Sie eine Seite eines Excel-Arbeitsblatts
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Pag
 type: docs
 url: /de/worksheets/page-to-different-formats/

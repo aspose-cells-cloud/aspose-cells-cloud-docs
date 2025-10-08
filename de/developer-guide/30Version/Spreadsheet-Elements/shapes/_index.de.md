@@ -1,6 +1,6 @@
 ﻿---
 title: Arbeiten mit Excel shap
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Form
 type: docs
 url: /de/shapes/

@@ -1,6 +1,6 @@
 ﻿---
 title: Работа с проверкой Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Проверка
 type: docs
 url: /ru/validations/

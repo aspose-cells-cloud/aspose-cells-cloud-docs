@@ -1,6 +1,6 @@
 ﻿---
 title: Birden fazla Excel çalışma sayfasını sil
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Çoklu çalışma sayfası
 type: docs
 url: /tr/worksheets/delete-multiple/

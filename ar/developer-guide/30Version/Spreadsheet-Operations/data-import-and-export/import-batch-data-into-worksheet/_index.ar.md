@@ -1,6 +1,6 @@
 ﻿---
 title: استيراد بيانات الدفعة إلى ورقة العمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: استيراد بيانات الدفعة
 type: docs
 url: /ar/import-batch-data-into-excel/
@@ -30,7 +30,7 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
 |اسم المعلمة|يكتب|وصف|
 |:- |:- |:- |
 | بيانات الدفعة|قائمة<CellValue> | بيانات الدفعة|
-| ورقة عمل الوجهة| خيط| اسم ورقة عمل الوجهة.|
+|ورقة عمل الوجهة| خيط| اسم ورقة عمل الوجهة.|
 | هل تم إدراجه| خيط| صواب/خطأ.|
 | نوع بيانات الاستيراد| خيط|IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData.|
 | مصدر| مصدر الملف| يشير إلى موضع ملف البيانات عندما تكون معلمة BatchData فارغة.|

@@ -1,6 +1,6 @@
 ﻿---
 title: Speicheroption
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Speicheroption
 type: docs
 url: /de/save-options/

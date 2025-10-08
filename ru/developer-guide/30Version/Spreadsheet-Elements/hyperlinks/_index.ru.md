@@ -1,6 +1,6 @@
 ﻿---
 title: Работа с гиперссылкой Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 linktitle: Гиперссылка
 url: /ru/hyperlinks/

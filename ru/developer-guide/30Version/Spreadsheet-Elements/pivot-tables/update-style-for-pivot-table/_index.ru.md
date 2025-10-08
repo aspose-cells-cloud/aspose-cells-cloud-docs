@@ -1,6 +1,6 @@
 ﻿---
 title: Обновить стиль для сводной таблицы
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Форматировать все
 type: docs
 url: /ru/pivot-tables/format-all/

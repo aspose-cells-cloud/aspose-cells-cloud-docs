@@ -1,6 +1,6 @@
 ﻿---
 title: Alle Dokumenteigenschaften abrufen
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Holen Sie sich al
 type: docs
 url: /de/document-properties/get-all/

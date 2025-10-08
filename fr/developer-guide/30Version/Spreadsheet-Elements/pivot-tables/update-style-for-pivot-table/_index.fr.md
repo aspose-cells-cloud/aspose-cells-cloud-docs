@@ -1,6 +1,6 @@
 ﻿---
 title: Mettre à jour le style du tableau croisé dynamique
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Formater tout
 type: docs
 url: /fr/pivot-tables/format-all/
@@ -8,7 +8,7 @@ aliases: [/update-style-for-pivot-table/]
 keywords: Update all cell style for a pivot table
 description: Aspose.Cells Cloud REST API prend en charge la mise à jour de tous les styles de cellules d'un tableau croisé dynamique. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 100
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Mettre à jour le style du tableau croisé dynamique
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Mettre à jour le style du tableau croisé dynamique
 ---
 Ce REST API indique le style `update` pour le tableau croisé dynamique
  
@@ -19,7 +19,7 @@ Ce REST API indique le style `update` pour le tableau croisé dynamique
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/FormatAll
  
 ```
- Les paramètres de la requête sont :
+ Les paramètres de la requête sont :
  
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

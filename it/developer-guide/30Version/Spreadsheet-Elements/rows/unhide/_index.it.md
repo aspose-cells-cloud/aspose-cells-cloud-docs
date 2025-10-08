@@ -1,6 +1,6 @@
 ﻿---
 title: Scopri le righe su un foglio di lavoro Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Non nascosto
 type: docs
 url: /it/rows/unhide/

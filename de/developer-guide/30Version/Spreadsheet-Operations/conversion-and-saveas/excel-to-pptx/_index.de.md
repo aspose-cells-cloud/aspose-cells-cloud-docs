@@ -1,6 +1,6 @@
 ﻿---
 title: Excel bis Ppt
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Excel bis Ppt
 type: docs
 url: /de/convert-excel-file-to-pptx-file/

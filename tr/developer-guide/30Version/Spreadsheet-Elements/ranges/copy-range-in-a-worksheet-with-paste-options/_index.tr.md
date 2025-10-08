@@ -1,6 +1,6 @@
 ﻿---
 title: Çalışma Sayfasında Yapıştır Seçeneğiyle Aralığı Kopyala
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Polis
 type: docs
 url: /tr/ranges/copy/

@@ -1,6 +1,6 @@
 ﻿---
 title: Arbeiten mit Excel Bild
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Bild
 type: docs
 url: /de/pictures/

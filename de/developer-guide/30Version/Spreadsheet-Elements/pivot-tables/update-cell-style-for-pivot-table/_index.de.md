@@ -1,6 +1,6 @@
 ﻿---
 title: Aktualisieren Sie den Zellenstil für die Pivot-Tabelle
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Format
 type: docs
 url: /de/pivot-tables/format/

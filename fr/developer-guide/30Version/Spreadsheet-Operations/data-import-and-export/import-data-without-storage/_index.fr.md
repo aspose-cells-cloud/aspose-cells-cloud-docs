@@ -1,6 +1,6 @@
 ﻿---
 title: Importer des données sans utiliser de stockage
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Importer des données sans stockage
 type: docs
 url: /fr/import/without-using-storage/ 
@@ -8,7 +8,7 @@ aliases: [/import-data-in-excel-worksheet-without-using-storage/]
 keywords: REST API,  spreadsheets, excel, Import
 description: Cells.Cloud API pour l'importation de fichiers Excel
 weight: 10
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Importer des données sans utiliser de stockage
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Importer des données sans utiliser de stockage
 ---
 L'importation de données Excel est un processus complexe. De nombreux facteurs contribuent à cette complexité et doivent donc être pris en compte lors de l'exportation. La possibilité d'importer des formats et types de données variés dans le fichier avec une qualité professionnelle est l'une des principales fonctionnalités de Aspose.Cells Cloud.
 
@@ -22,14 +22,14 @@ POST https://api.aspose.cloud/v3.0/cells/import
 
 ```
 
-**Les paramètres de la requête sont :**
+**Les paramètres de la requête sont :**
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
 | déposer| déposer| données de formulaire| Fichier à télécharger|
 | Option d'importation| Options d'importation| Corps HTTP| IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/Picture|
 
-**Les paramètres des options d'importation des données** sont décrits dans[le lien de référence](/cells/fr/import/#import-data-option-parameter).
+**Les paramètres des options d'importation de données** sont décrits dans[le lien de référence](/cells/fr/import/#import-data-option-parameter).
 
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostImport) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
 

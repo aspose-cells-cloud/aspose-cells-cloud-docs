@@ -1,6 +1,6 @@
 ﻿---
 title: Экспорт списка объектов
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Список объектов
 type: docs
 url: /ru/export-excel-listobject-to-different-formats/

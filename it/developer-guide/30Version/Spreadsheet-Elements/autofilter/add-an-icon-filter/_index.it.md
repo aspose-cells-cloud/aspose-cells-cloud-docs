@@ -1,6 +1,6 @@
 ﻿---
 title: Aggiungere un filtro icona in un foglio di lavoro Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Aggiungi filtro icona
 type: docs
 url: /it/autofilter/add-icon-filter/
@@ -28,7 +28,7 @@ I parametri della richiesta sono:
 | Nome foglio| corda| Sentiero| Il nome del foglio di lavoro.|
 |allineare|corda| Domanda||
 |fieldIndex|intero| Domanda||
-|iconSetType|corda| Domanda| Frecce3/FrecceGrigie3/Bandiere3/Segnali3/Simboli3/Simboli32/Semafori31/Semafori32/Frecce4/FrecceGrigie4/Valutazione4/Rosso-Nero4/Semafori4/Frecce5/FrecceGrigie5/Quarti5/Valutazione5/Stelle3/Caselle5/Triangoli3/Nessuno/Set personalizzato/Emoticon3/Emoticon colorate3|
+|iconSetType|corda| Domanda| Frecce3/FrecceGrigie3/Bandiere3/Segnali3/Simboli3/Simboli32/Semafori31/Semafori32/Frecce4/FrecceGrigie4/Valutazione4/Rosso-Nero4/Semafori4/Frecce5/FrecceGrigie5/Quarti5/Valutazione5/Stelle3/Caselle5/Triangoli3/Nessuno/Set Personalizzato/Emoticon3/Emoticon Colorate3|
 |ID icona|intero| Domanda||
 |matchBlanks|corda| Domanda|vero/falso|
 |aggiornare|corda| Domanda|vero/falso|

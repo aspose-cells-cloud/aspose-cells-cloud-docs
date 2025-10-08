@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma sayfasına birden fazla satır ekleyin
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Sıra
 type: docs
 url: /tr/rows/add/rows/

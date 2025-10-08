@@ -1,6 +1,6 @@
 ﻿---
 title: Blocca il file Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Blocca il file Excel
 type: docs
 url: /it/lock-excel-files/

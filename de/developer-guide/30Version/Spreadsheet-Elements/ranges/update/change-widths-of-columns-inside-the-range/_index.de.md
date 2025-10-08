@@ -1,6 +1,6 @@
 ﻿---
 title: Ändern Sie die Breite der Spalten innerhalb des Bereichs
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Spaltenbreite
 type: docs
 url: /de/ranges/update/column-width/

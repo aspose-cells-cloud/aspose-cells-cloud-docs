@@ -1,6 +1,6 @@
 ﻿---
 title: Löschen Sie alle Pivot-Tabellen in einem Excel-Arbeitsblatt
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Klar
 type: docs
 url: /de/pivot-tables/clear/

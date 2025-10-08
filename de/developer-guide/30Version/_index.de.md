@@ -1,6 +1,6 @@
 ﻿---
 title: Entwicklerhandbuch 3.
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /de/developer-guide-3.0/
 aliases: [/developer-guide/v3.0/,/developer-guide-v3.0/]
@@ -26,7 +26,7 @@ kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Mark
         <p>Suchen, Ersetzen</p>
         <ul>
             <li><a href="/cells/de/search/">Suchen Sie nach Textformulardateien Excel.</a></li>
-            <li><a href="/cells/de/replace/">Ersetzen Sie den alten Wert durch den neuen Wert in den Dateien Excel.</a></li>
+            <li><a href="/cells/de/replace/">Ersetzen Sie in den Dateien Excel den alten Wert durch den neuen Wert.</a></li>
         </ul>
         <p>Kompresse</p>
         <ul>
@@ -60,7 +60,7 @@ kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Mark
             <li><a href="/cells/de/apply-rich-text-formatting-to-a-cell/">Legt die Rich-Text-Formatierung für eine Zelle des Arbeitsblatts Excel fest.</a></li>
             <li><a href="/cells/de/clear-contents-and-styles-of-cells-in-excel-worksheet/">Löscht Inhalt und Formatvorlagen der Zellen im Arbeitsblatt Excel.</a></li>
             <li><a href="/cells/de/working-with-conditional-formatting/">Fügt bedingte Formatierungen im Arbeitsblatt Excel hinzu, löscht und aktualisiert sie.</a></li>
-            <li><a href="/cells/de/set-value-of-a-cell-in-a-worksheet/">Legt den Wert einer Zelle in einem Excel-Arbeitsblatt fest.</a></li>
+            <li><a href="/cells/de/set-value-of-a-cell-in-a-worksheet/">Legt den Wert einer Zelle in einem Arbeitsblatt Excel fest.</a></li>
         </ul>
     </div>
     <div class="col-md-6">

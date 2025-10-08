@@ -1,6 +1,6 @@
 ﻿---
 title: Tüm çalışma sayfası doğrulamalarını Excel numaralı çalışma sayfasından alın
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Al al
 type: docs
 url: /tr/validations/get-all/

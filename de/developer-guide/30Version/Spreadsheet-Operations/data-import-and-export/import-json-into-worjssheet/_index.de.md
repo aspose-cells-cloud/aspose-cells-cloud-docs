@@ -1,6 +1,6 @@
 ﻿---
 title: Importieren Sie JSON-Daten in Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: JSO importieren
 type: docs
 url: /de/import-json-data-into-excel/
@@ -32,7 +32,7 @@ Die wichtigen Parameter sind in der folgenden Tabelle beschrieben:
 | Ordner| Abfragezeichenfolge| Schnur| Original-Arbeitsmappenordner.|
 | Speichername| Abfragezeichenfolge| Schnur| Speichername.|
 | Ausgangspfad| Abfragezeichenfolge| Schnur| Pfad der Ausgabedatei.|
-| outStorageName| Abfragezeichenfolge| Schnur| Speichername für die Ausgabedatei.|
+|outStorageName| Abfragezeichenfolge| Schnur| Speichername für die Ausgabedatei.|
 | checkExcelRestriction| Abfragezeichenfolge| Schnur| Überprüfen Sie die Einschränkung Excel.|
 
 **Beispiel**

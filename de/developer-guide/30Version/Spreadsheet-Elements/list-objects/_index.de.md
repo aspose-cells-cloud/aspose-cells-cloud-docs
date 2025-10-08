@@ -1,6 +1,6 @@
 ﻿---
 title: Arbeiten mit Excel Listenobjekt
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: ListObject
 type: docs
 url: /de/list-objects/

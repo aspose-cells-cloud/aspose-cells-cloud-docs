@@ -1,6 +1,6 @@
 ﻿---
 title: Excel Çalışma Sayfasındaki camları dondurun
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Dondur
 type: docs
 url: /tr/worksheets/panes/freeze/

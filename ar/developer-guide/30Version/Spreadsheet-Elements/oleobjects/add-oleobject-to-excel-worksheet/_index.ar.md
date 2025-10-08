@@ -1,6 +1,6 @@
 ﻿---
 title: إضافة كائن OLE في ورقة عمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: يضيف
 type: docs
 url: /ar/oleobjects/add/

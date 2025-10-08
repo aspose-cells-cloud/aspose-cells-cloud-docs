@@ -1,6 +1,6 @@
 ﻿---
 title: Excel raporunun oluşturulması için verilerin toplanması
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Meclis Tarihi
 type: docs
 url: /tr/assembly-data-for-the-creation-of-an-excel-report/

@@ -1,6 +1,6 @@
 ﻿---
 title: Zusammengeführte Zellen des Bereichs aufheben
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Unmerg
 type: docs
 url: /de/ranges/unmerge/

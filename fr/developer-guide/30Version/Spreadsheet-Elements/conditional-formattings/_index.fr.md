@@ -1,6 +1,6 @@
 ﻿---
 title: Travailler avec la mise en forme conditionnelle Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Mise en forme conditionnelle
 type: docs
 url: /fr/conditional-formattings/
@@ -16,7 +16,7 @@ La mise en forme conditionnelle dans Excel vous permet de mettre en évidence le
 
 La mise en forme conditionnelle permet de mettre facilement en évidence des cellules ou des plages de cellules intéressantes, de souligner des valeurs inhabituelles et de visualiser des données à l'aide de barres de données, d'échelles de couleurs et d'ensembles d'icônes correspondant à des variations spécifiques des données.
 
-Un format conditionnel modifie l'apparence des cellules en fonction des conditions que vous spécifiez. Si les conditions sont vraies, la plage de cellules est formatée ; si les conditions sont fausses, elle ne l'est pas. Il existe de nombreuses conditions intégrées, et vous pouvez également créer les vôtres (notamment en utilisant une formule qui renvoie Vrai ou Faux).
+Un format conditionnel modifie l'apparence des cellules selon les conditions que vous spécifiez. Si les conditions sont vraies, la plage de cellules est formatée ; si elles sont fausses, elle ne l'est pas. Il existe de nombreuses conditions prédéfinies, et vous pouvez également créer les vôtres (notamment en utilisant une formule qui renvoie Vrai ou Faux).
 
 **Résumé**
 

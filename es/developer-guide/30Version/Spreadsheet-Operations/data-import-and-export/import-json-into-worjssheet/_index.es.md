@@ -1,7 +1,7 @@
 ﻿---
 title: Importar datos Json a Excel
-second_title: Aspose.Cells Cloud Documen
-linktitle: Importar JSO
+second_title: Documen
+linktitle: Importar Jso
 type: docs
 url: /es/import-json-data-into-excel/
 aliases: [ /import/json/]
@@ -32,8 +32,8 @@ Los parámetros importantes se describen en la siguiente tabla:
 | carpeta| Cadena de consulta| cadena| Carpeta del libro de trabajo original.|
 | nombreDeAlmacenamiento| Cadena de consulta| cadena| Nombre de almacenamiento.|
 | Ruta de salida| Cadena de consulta| cadena| Ruta del archivo de salida.|
-| nombreAlmacenamientoExterno| Cadena de consulta| cadena| Nombre de almacenamiento para el archivo de salida.|
-| comprobarRestricciónExcel| Cadena de consulta| cadena| Consulte la restricción Excel.|
+|nombreAlmacenamientoExterno| Cadena de consulta| cadena| Nombre de almacenamiento para el archivo de salida.|
+| comprobarRestricción de Excel| Cadena de consulta| cadena| Consulte la restricción Excel.|
 
 **Ejemplo**
 
@@ -55,6 +55,6 @@ Los parámetros importantes se describen en la siguiente tabla:
 
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
 
 Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:

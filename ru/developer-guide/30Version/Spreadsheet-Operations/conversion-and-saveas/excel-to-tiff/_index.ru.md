@@ -1,6 +1,6 @@
 ﻿---
 title: Excel в ТИФ
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linketitle: Excel to Tif
 type: docs
 url: /ru/convert-excel-file-to-tiff-file/

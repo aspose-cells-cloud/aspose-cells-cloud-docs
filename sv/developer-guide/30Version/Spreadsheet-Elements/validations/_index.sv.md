@@ -1,6 +1,6 @@
 ﻿---
 title: Arbetar med Excel-validering
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Godkännande
 type: docs
 url: /sv/validations/

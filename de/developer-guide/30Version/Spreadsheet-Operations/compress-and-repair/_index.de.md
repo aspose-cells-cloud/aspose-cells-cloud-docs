@@ -1,6 +1,6 @@
 ﻿---
 title: Komprimieren und Reparieren von Excel-Dateien
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /de/compress-and-repair-excel-files/
 linktitle: Komprimieren und Reparieren
@@ -9,3 +9,5 @@ description: Durch die Reduzierung der Dateigrößen zur Optimierung des Speiche
 weight: 100
 kwords: Tiefe Dateikomprimierung vs. Schnellkomprimierung; Umfassende Dateireparatur vs. Teilreparaturversuche; Automatische Fehlererkennung vs. manuelle Überprüfung durch den Benutzer
 ---
+- **["Komprimieren Sie die Daten in einer Excel-Datei"](https://docs.aspose.cloud/cells/compress-excel-files/)**
+- **["Excel-Dateien reparieren"](https://docs.aspose.cloud/cells/repair-excel-files/)**

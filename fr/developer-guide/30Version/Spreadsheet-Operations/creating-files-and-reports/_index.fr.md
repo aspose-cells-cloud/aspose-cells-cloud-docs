@@ -1,6 +1,6 @@
 ﻿---
 title: Créer des fichiers Excel ou générer des rapports Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /fr/creating-files-and-reports/
 aliases: [/workbook/create/]
@@ -10,7 +10,7 @@ description: Générer de nouveaux documents ou rapports pouvant inclure des gra
 weight: 10
 kwords: Créer un document, Générer un rapport, Rapport Excel, Rapport dynamique
 ---
-Grâce au Cloud Aspose.Cells et au Cloud API, vous pouvez facilement créer de nouveaux classeurs Excel et générer des classeurs spécifiques Excel à partir de fichiers modèles. De plus, il prend en charge la création de rapports complexes Excel grâce à la fonctionnalité SmartMarker, qui répond à divers besoins complexes de traitement de données et de génération de rapports.
+Grâce au Cloud Aspose.Cells et au Cloud API, vous pouvez facilement créer de nouveaux classeurs Excel et générer des classeurs spécifiques à partir de fichiers modèles. De plus, il prend en charge la création de rapports complexes Excel grâce à la fonctionnalité SmartMarker, qui répond à divers besoins complexes de traitement de données et de génération de rapports.
 
 ## Créez un fichier Excel et générez un rapport
 

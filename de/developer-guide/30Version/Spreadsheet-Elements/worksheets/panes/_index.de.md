@@ -1,6 +1,6 @@
 ﻿---
 title: So arbeiten Sie mit Fenstern auf einem Arbeitsblatt Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Bereich
 type: docs
 url: /de/worksheets/panes/

@@ -1,5 +1,5 @@
 ﻿---
-title: Aktualisierung
+title: Aktualisieren
 type: docs
 url: /de/hyperlinks/update/
 aliases: [/update-hyperlinks-in-excel-worksheet/]

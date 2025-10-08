@@ -5,7 +5,7 @@ url: /fr/get-cell-data-from-a-worksheet/
 weight: 10
 kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Récupérer les données d'une cellule à partir d'une feuille de calcul
 ---
-Ce REST API indique que les émissions obtiennent un `cell` dans un fichier Excel lorsque le paramètre `cellOrMethodName` est le nom de la cellule.
+Ce REST API indique qu'il faut obtenir un `cell` dans un fichier Excel lorsque le paramètre `cellOrMethodName` est le nom de la cellule.
 
 - **cURL Exemple**
 

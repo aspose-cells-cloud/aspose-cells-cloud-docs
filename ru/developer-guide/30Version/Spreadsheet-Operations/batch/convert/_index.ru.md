@@ -1,6 +1,6 @@
 ﻿---
 title: Пакетное преобразование файла Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /ru/batch/convert
 keywords: Batch conversion of multiple excel files

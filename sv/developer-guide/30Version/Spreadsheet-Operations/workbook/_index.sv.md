@@ -1,6 +1,6 @@
 ﻿---
 title: "Arbeta i Excel-filer: Formelberäkning, Autoanpassning, Rensa objekt, etc."
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Excel Vanlig drift
 type: docs
 url: /sv/workbook/

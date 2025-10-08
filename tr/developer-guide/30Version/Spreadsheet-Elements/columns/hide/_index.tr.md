@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma sayfasındaki sütunları gizle
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Saklandı
 type: docs
 url: /tr/columns/hide/

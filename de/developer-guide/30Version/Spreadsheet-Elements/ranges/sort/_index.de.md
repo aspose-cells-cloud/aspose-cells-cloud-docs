@@ -1,6 +1,6 @@
 ﻿---
 title:  Bereichssortierung
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Sor
 type: docs
 keywords: Range Sort
@@ -9,7 +9,7 @@ description:  Legt einen Umrissrahmen um einen Zellbereich fest.
 weight: 20
 kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Bereichssortierung
 ---
-Dieser REST API gibt eine Bereichssortierung an.
+Dieser REST API zeigt eine Bereichssortierung an.
 
 ## RSET API
 

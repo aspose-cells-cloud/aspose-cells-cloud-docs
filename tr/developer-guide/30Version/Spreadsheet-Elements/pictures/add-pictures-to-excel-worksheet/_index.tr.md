@@ -1,6 +1,6 @@
 ﻿---
 title: Excel dosyasına Resim Ekle
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Reklam
 type: docs
 url: /tr/pictures/add/

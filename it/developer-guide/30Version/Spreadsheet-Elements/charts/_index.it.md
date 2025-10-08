@@ -1,6 +1,6 @@
 ﻿---
 title: Lavorare con il grafico Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Grafico
 type: docs
 url: /it/charts/

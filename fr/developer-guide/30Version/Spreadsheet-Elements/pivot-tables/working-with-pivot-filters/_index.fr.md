@@ -1,6 +1,6 @@
 ﻿---
 title: Travailler avec le filtre pivot
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Filtres
 type: docs
 url: /fr/pivot-tables/add-filters/
@@ -19,7 +19,7 @@ Ce REST API indique `add` pivot `filter` pour l'index de la table pivot
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotFilters
  
 ```
- Les paramètres de la requête sont :
+ Les paramètres de la requête sont :
  
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

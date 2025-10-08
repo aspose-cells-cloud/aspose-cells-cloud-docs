@@ -1,6 +1,6 @@
 ﻿---
 title: Сбор данных для создания отчета Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Дата сборки
 type: docs
 url: /ru/assembly-data-for-the-creation-of-an-excel-report/

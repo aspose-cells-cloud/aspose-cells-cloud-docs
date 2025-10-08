@@ -4,7 +4,7 @@ type: docs
 url: /fr/charts/clear/
 aliases: [/delete-all-charts-from-a-worksheet/]
 weight: 30
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Supprimer tous les graphiques d'une feuille de calcul
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Supprimer tous les graphiques d'une feuille de calcul
 ---
 Ce REST API indique effacer les cartes.
  
@@ -15,7 +15,7 @@ Ce REST API indique effacer les cartes.
 DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts
  
 ```
- Les paramètres de la requête sont :
+ Les paramètres de la requête sont :
  
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

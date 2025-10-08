@@ -1,6 +1,6 @@
 ﻿---
 title: Fusionner plusieurs fichiers Excel dans un fichier Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Fusionner le fichier Multi Excel
 type: docs
 url: /fr/merge-multi-files-into-excel/
@@ -8,7 +8,7 @@ aliases: [ /merge/multi-files/]
 keywords: Merge multi Excel files into Excel file
 description: Aspose.Cells Cloud REST API prend en charge la fusion de plusieurs fichiers Excel en un fichier Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 32
-kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Fusionner plusieurs fichiers Excel dans un fichier Excel.
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Fusionner plusieurs Excel fichiers dans un fichier Excel.
 ---
 Ce REST API indique à `merge` plusieurs fichiers Excel dans un fichier Excel.
 
@@ -20,7 +20,7 @@ POST http://api.aspose.cloud/v3.0/cells/merge
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

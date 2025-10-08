@@ -1,6 +1,6 @@
 ﻿---
 title: Automatische Anpassung mehrerer Spalten in einem Arbeitsblatt Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Spalte
 type: docs
 url: /de/worksheets/autofit/columns/

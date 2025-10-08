@@ -1,6 +1,6 @@
 ﻿---
 title: Преобразовать рабочий лист в различные форматы
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Преобразовать рабочий лист
 type: docs
 url: /ru/worksheets/conversion/

@@ -1,6 +1,6 @@
 ﻿---
 title: Excel CS'ye
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Excel CS'ye
 type: docs
 url: /trconvert-excel-file-to-csv-file/
@@ -130,7 +130,7 @@ Aşağıdaki kod örnekleri çeşitli SDK'ları kullanarak Aspose.Cells web serv
 
 ## Diğer API'ler bu işlevi uygular
 
-[POST /hücreler/{ad}/kaydet](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) API, MS Excel dosyasını ek ayarlarla CSV dosyası olarak kaydetmenizi ve sonucu depolama alanına kaydetmenizi sağlar.
+[POST /hücreler/{ad}/kaydet](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)API, MS Excel dosyasını ek ayarlarla CSV dosyası olarak kaydetmenizi ve sonucu depolama alanına kaydetmenizi sağlar.
 
 Bu REST API `convert` excel dosyasını CSV'ye dönüştürün.
 

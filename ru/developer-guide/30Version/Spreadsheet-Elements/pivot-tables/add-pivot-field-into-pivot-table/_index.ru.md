@@ -1,6 +1,6 @@
 ﻿---
 title: Добавить сводное поле в сводную таблицу
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Добавить опорное поле
 type: docs
 url: /ru/pivot-tables/add-pivot-field/

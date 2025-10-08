@@ -1,6 +1,6 @@
 ﻿---
-title: Excel feuille de travail renommée
-second_title: Aspose.Cells Cloud Documen
+title: Excel renommage de la feuille de calcul
+second_title: Documen
 linktitle: Renommer
 type: docs
 url: /fr/worksheets/rename/
@@ -19,7 +19,7 @@ Ce REST API indique `worksheet rename`
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/rename
  
 ```
- Les paramètres de la requête sont :
+ Les paramètres de la requête sont :
  
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

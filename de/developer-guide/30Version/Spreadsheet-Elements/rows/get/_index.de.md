@@ -1,6 +1,6 @@
 ﻿---
 title: Arbeiten mit dem Abrufen einer Zeile auf einem Arbeitsblatt Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ge
 type: docs
 url: /de/rows/get/

@@ -1,6 +1,6 @@
 ﻿---
 title: Convertir un archivo Excel a un formato diferente
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Convertir Excel
 type: docs
 url: /es/convert-an-excel-file-to-different-formats/
@@ -8,7 +8,7 @@ aliases: [/convert-excel-workbook-to-different-file-formats/,/convert/excel-to-d
 keywords: Convert excel files to kinds of format files
 description: Aspose.Cells Cloud REST API admite la conversión de archivos de Excel a diversos formatos. El SDK es compatible con diversos lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 10
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, JSON, Markdown, Convertir Excel
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Convertir Excel
 ---
 Este REST API indica que el archivo de Excel `convert` es un archivo de formato diferente.
 
@@ -18,15 +18,15 @@ La solicitud es una solicitud HTTP con contenido de varias partes (ver[RFC 2046]
 
 |Nombre del parámetro|Tipo|Descripción|
 |:- |:- |:- |
-|formato|cadena|El formato de archivo: csv, xls, html, mhtml, ods, pdf, xml, txt, tiff, xlsb, xlsm, xlsx, xltm, xltx, xps, png, jpg, gif, emf, bmp, md, Numbers, wmf, SVG, etc.|
+|formato|cadena| El formato de archivo: csv, xls, html, mhtml, ods, pdf, xml, txt, tiff, xlsb, xlsm, xlsx, xltm, xltx, xps, png, jpg, gif, emf, bmp, md, Numbers, wmf, svg, etc.|
 |contraseña|cadena| La contraseña necesaria para abrir un archivo Excel.|
 |Ruta de salida|cadena| Ruta para guardar el resultado. Si se trata de un solo archivo, el código `outPath` debe incluir tanto el nombre del archivo como la extensión. Si se trata de varios archivos, el código `outPath` solo debe incluir la carpeta.|
-|nombreDeAlmacenamiento|cadena| El nombre de almacenamiento donde se encuentra el archivo.|
-|comprobarRestricciónExcel|bool| Si verificar la restricción del archivo Excel cuando el usuario modifica objetos relacionados con celdas.|
+|nombreDeAlmacenamiento|cadena| El nombre del almacenamiento donde se encuentra el archivo.|
+|comprobarRestricción de Excel|bool| Si verificar la restricción del archivo Excel cuando el usuario modifica objetos relacionados con celdas.|
 |formato de flujo|cadena| El formato del flujo de archivo de entrada.|
 |región|cadena| La configuración regional del libro de trabajo.|
 |Ajuste de ancho de página por hoja|bool| La página se ajusta al ancho de la hoja de cálculo.|
-|Ajuste de altura de página por hoja|bool| La página se ajusta a la altura de la hoja de trabajo.|
+|Ajuste de altura de página por hoja|bool| La página se ajusta a la altura de la hoja de cálculo.|
 |nombreHoja|cadena| Convertir la hoja de trabajo especificada.|
 |índice de página|cadena| Convierte la página especificada de la hoja de trabajo, se requiere sheetName.|
 |una página por hoja|bool| Al convertir al formato PDF, una página por hoja.|
@@ -65,7 +65,7 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/convert?format=html" -H "accept
 
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
 
 Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
 

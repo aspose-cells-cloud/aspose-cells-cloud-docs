@@ -1,6 +1,6 @@
 ﻿---
 title: تغيير عرض الأعمدة داخل النطاق
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: عرض العمود
 type: docs
 url: /ar/ranges/update/column-width/

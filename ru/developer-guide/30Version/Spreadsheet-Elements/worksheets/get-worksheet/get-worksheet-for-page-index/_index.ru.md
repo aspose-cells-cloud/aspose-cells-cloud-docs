@@ -1,6 +1,6 @@
 ﻿---
 title: Экспорт страницы рабочего листа Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Паг
 type: docs
 url: /ru/worksheets/page-to-different-formats/

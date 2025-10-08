@@ -1,6 +1,6 @@
 ﻿---
 title: Exporter une page d'une feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Page
 type: docs
 url: /fr/worksheets/page-to-different-formats/

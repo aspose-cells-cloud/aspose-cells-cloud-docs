@@ -1,7 +1,7 @@
 ﻿---
 title: Aktualisieren eines OLE-Objekts in einem Excel-Arbeitsblatt
-second_title: Aspose.Cells Cloud Documen
-linktitle: Aktualisierung
+second_title: Documen
+linktitle: Aktualisieren
 type: docs
 url: /de/oleobjects/update/
 aliases: [/update-a-specific-oleobject-from-excel-worksheet/]

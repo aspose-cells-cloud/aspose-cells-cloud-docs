@@ -1,6 +1,6 @@
 ﻿---
 title: Holen Sie sich Zelldaten basierend auf benannten Bereichen
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Wert
 type: docs
 url: /de/ranges/get/values/

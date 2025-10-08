@@ -1,6 +1,6 @@
 ﻿---
 title: Отобразить строки на листе Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Нескрытый
 type: docs
 url: /ru/rows/unhide/

@@ -1,6 +1,6 @@
 ﻿---
 title: Получить столбцы из листа Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ге
 type: docs
 url: /ru/columns/get/

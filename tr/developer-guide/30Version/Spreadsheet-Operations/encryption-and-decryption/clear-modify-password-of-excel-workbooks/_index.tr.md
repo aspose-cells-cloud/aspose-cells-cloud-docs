@@ -1,6 +1,6 @@
 ﻿---
 title: Excel Çalışma Kitabının Şifresini Değiştir'i Temizle
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Excel Dosya Şifresini Temizle
 type: docs
 url: /tr/clear-excel-files-password/

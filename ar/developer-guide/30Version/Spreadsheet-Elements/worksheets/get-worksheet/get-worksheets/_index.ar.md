@@ -1,6 +1,6 @@
 ﻿---
 title: احصل على ورقة العمل
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: ال
 type: docs
 url: /ar/worksheets/get-all/

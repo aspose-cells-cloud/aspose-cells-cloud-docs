@@ -1,6 +1,6 @@
 ﻿---
 title: تعيين كلمة مرور التعديل لدفتر العمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: تعديل كلمة مرور الملف Excel
 type: docs
 url: /ar/workbook/password/modify/

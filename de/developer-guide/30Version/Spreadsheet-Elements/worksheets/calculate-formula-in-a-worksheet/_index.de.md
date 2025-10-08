@@ -1,6 +1,6 @@
 ﻿---
 title: Formel auf einem Excel-Arbeitsblatt berechnen
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Berechnen
 type: docs
 url: /de/worksheets/calculate-formula/

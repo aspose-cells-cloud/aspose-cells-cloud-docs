@@ -1,6 +1,6 @@
 ﻿---
 title: تحديث النمط لجدول المحور
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: تنسيق الكل
 type: docs
 url: /ar/pivot-tables/format-all/

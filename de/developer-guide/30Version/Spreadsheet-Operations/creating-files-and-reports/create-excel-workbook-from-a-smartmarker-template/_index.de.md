@@ -1,6 +1,6 @@
 ﻿---
 title: So erstellen Sie einen Excel-Bericht mit einer Smart-Marker-Vorlage
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: SmartMarke
 type: docs
 url: /de/build-report-with-smart-marker/

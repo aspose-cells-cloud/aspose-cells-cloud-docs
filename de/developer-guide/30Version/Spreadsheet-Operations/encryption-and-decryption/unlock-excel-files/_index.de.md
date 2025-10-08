@@ -1,6 +1,6 @@
 ﻿---
 title: Datei Excel entsperren
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Datei Excel entsperren
 type: docs
 url: /de/unlock-excel-files/

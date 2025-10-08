@@ -1,6 +1,6 @@
 ﻿---
 title: Raggruppa le colonne su un foglio di lavoro Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Gruppo
 type: docs
 url: /it/columns/group/

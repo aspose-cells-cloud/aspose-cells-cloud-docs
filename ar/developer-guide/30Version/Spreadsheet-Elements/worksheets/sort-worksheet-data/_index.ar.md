@@ -1,6 +1,6 @@
 ﻿---
 title: فرز بيانات النطاق على ورقة عمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: سور
 type: docs
 url: /ar/worksheets/sort-data/

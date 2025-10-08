@@ -1,6 +1,6 @@
 ﻿---
 title: Excel Dateien zusammenführen und teilen
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Zusammenführen und Aufteilen
 type: docs
 url: /de/merge-and-split/

@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma sayfası için yakınlaştırmayı ayarlayın
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Hayvanat bahçesi
 type: docs
 url: /tr/worksheets/zoom/

@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma kitabındaki tüm formülleri hesaplayın
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Hesapla
 type: docs
 url: /tr/calculate-all-formulas-on-an-excel-file/

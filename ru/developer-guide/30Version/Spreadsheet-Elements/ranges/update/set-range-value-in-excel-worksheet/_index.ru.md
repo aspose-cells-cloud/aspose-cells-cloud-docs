@@ -1,6 +1,6 @@
 ﻿---
 title: Установить значение диапазона на рабочем листе Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Установить значение
 type: docs
 url: /ru/ranges/update/values/

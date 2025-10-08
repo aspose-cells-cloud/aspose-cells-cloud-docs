@@ -1,6 +1,6 @@
 ﻿---
 title: CSV Verilerini Excel Çalışma Sayfasına Aktar
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: csv verilerini içe aktar
 type: docs
 url: /tr/import-csv-data-into-excel/

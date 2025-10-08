@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma sayfasına dinamik tarih filtresi ekleyin
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Dinamik filtre ekle
 type: docs
 url: /tr/autofilter/add-dynamic-filter/

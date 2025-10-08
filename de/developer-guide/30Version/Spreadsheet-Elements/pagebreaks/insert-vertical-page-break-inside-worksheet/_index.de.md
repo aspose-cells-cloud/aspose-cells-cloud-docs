@@ -1,6 +1,6 @@
 ﻿---
 title: Vertikalen Seitenumbruch hinzufügen
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Vertikalen Seitenumbruch hinzufügen
 type: docs
 url: /de/page-breaks/add-vertical-page-break/

@@ -1,6 +1,6 @@
 ﻿---
 title: Holen Sie sich einen Autofilter in einem Excel-Arbeitsblatt
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Holen Sie sich einen automatischen Filter
 type: docs
 url: /de/autofilter/get/

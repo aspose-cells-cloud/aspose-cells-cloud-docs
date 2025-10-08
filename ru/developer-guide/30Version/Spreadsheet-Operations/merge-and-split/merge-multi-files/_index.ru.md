@@ -1,6 +1,6 @@
 ﻿---
 title: Объединить несколько файлов Excel в один файл Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Объединить несколько файлов Excel
 type: docs
 url: /ru/merge-multi-files-into-excel/

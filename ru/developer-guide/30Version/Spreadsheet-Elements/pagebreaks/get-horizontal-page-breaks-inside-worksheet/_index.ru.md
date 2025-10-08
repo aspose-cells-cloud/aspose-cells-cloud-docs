@@ -1,6 +1,6 @@
 ﻿---
 title: Получить горизонтальный разрыв страницы
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Получить горизонтальный разрыв страницы
 type: docs
 url: /ru/page-breaks/get-horizontal-page-breaks/

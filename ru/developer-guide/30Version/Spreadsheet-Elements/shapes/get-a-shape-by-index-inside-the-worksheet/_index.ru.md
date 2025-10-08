@@ -1,6 +1,6 @@
 ﻿---
 title: Получить форму по индексу на рабочем листе Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ге
 type: docs
 url: /ru/shapes/get/
@@ -8,7 +8,7 @@ aliases: [/get-a-shape-by-index-inside-the-worksheet/]
 keywords: Get a shape on an Excel workshee
 description: Aspose.Cells Cloud REST API поддерживает создание формы на листе Excel. SDK поддерживает различные языки разработки, включая Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby и Swift.
 weight: 20
-kwords: Excel, Office Cloud, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Получение фигуры по индексу на листе Excel
+kwords: Excel, Office Cloud, REST API, Электронная таблица, PDF, CSV, Json, Markdown, Получение формы по индексу на листе Excel
 ---
 Этот REST API указывает на получение фигуры с форматом изображения или информации о фигуре на листе Excel.
 

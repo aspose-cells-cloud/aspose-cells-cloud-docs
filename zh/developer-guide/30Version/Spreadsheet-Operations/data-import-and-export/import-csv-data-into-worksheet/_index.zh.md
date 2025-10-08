@@ -1,6 +1,6 @@
 ﻿---
 title: 将 CSV 数据导入 Excel 工作表
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: 导入 csv 数据
 type: docs
 url: /zh/import-csv-data-into-excel/
@@ -10,7 +10,7 @@ description: Aspose.Cells Cloud REST API 支持将 csv 数据导入 Excel 文件
 weight: 19
 kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、将 CSV 数据导入 Excel 工作表
 ---
-此 REST API `import csv data` 放入 Excel 工作表。
+此 REST API `import csv data` 进入 Excel 工作表。
 
 该请求是具有多部分内容的 HTTP 请求（请参阅[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)或者[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)）。多部分内容的第一部分包含 ImportCSVDataOption 数据，第二部分包含数据文件。
 
@@ -30,7 +30,7 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
 |参数名称|类型|描述|
 |:- |:- |:- |
 |分隔符字符串|细绳||
-|转换数字数据|细绳|真/假。|
+|转换数字数据|细绳|对/错。|
 |第一排|整数||
 |第一列|整数||
 |源文件|细绳||

@@ -1,6 +1,6 @@
 ﻿---
 title: Komprimera och reparera Excel-filer
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /sv/compress-and-repair-excel-files/
 linktitle: Komprimera och reparera
@@ -9,3 +9,5 @@ description: Genom att minska filstorlekarna för att optimera lagringsutrymmet 
 weight: 100
 kwords: Djup filkomprimering kontra snabb komprimering; Omfattande filreparation kontra partiella reparationsförsök; Automatisk feldetektering kontra användarmanualkontroller.
 ---
+- **["Komprimera data i en Excel-fil"](https://docs.aspose.cloud/cells/compress-excel-files/)**
+- **["Reparera Excel-filer"](https://docs.aspose.cloud/cells/repair-excel-files/)**

@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma sayfasına arka plan ayarlayın
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Reklam
 type: docs
 url: /tr/worksheets/background/add/

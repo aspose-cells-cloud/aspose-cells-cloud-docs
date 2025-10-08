@@ -1,6 +1,6 @@
 ﻿---
 title: التجهيز التلقائي لأعمدة متعددة في ورقة عمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: عمود
 type: docs
 url: /ar/worksheets/autofit/columns/

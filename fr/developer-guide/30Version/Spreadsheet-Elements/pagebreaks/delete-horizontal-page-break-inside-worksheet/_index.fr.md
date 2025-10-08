@@ -1,6 +1,6 @@
 ﻿---
 title: Supprimer le saut de page horizontal
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Supprimer le saut de page horizontal
 type: docs
 url: /fr/page-breaks/delete-horizontal-page-break/
@@ -20,7 +20,7 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/horizont
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

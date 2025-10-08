@@ -1,6 +1,6 @@
 ﻿---
 title: تعيين ارتفاعات الصفوف داخل النطاق
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: ارتفاع الصف
 type: docs
 url: /ar/ranges/update/row-height/

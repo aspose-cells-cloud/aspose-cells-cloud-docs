@@ -1,6 +1,6 @@
 ﻿---
 title: Aktualisieren Sie einen Autofilter in einem Excel-Arbeitsblatt
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Automatischen Filter aktualisieren
 type: docs
 url: /de/autofilter/refresh/

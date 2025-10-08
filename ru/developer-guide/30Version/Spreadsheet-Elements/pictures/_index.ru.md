@@ -1,6 +1,6 @@
 ﻿---
 title: Работа с картинкой Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Картина
 type: docs
 url: /ru/pictures/

@@ -1,6 +1,6 @@
 ﻿---
 title: Excel workboo'da satırları otomatik olarak sığdır
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Sıra
 type: docs 
 url: /tr/autofit-rows-on-an-excel-file/

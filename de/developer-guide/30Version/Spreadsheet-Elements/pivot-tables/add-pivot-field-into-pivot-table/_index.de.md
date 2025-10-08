@@ -1,6 +1,6 @@
 ﻿---
 title: Fügen Sie ein Pivot-Feld in die Pivot-Tabelle ein
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Pivot-Feld hinzufügen
 type: docs
 url: /de/pivot-tables/add-pivot-field/

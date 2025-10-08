@@ -1,6 +1,6 @@
 ﻿---
 title: Komprimieren Sie die Daten in einer Excel-Datei
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Excel-Datei komprimieren
 type: docs
 url: /de/compress-excel-files/

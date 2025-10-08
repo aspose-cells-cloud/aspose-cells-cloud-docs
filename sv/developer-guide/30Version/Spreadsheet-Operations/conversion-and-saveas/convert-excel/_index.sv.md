@@ -1,6 +1,6 @@
 ﻿---
 title: Konvertera en Excel-fil till ett annat format
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Konvertera Excel
 type: docs
 url: /sv/convert-an-excel-file-to-different-formats/
@@ -18,7 +18,7 @@ Begäran är en HTTP-begäran med flerdelat innehåll (se[RFC 2046](http://tools
 
 |Parameternamn|Typ|Beskrivning|
 |:- |:- |:- |
-|formatera|sträng|Filformaten: csv, xls, html, mhtml, ods, pdf, xml, txt, tiff, xlsb, xlsm, xlsx, xltm, xltx, xps, png, jpg, gif, emf, bmp, md, Numbers, wmf, svg, och så vidare.|
+|formatera|sträng| Filformaten: csv, xls, html, mhtml, ods, pdf, xml, txt, tiff, xlsb, xlsm, xlsx, xltm, xltx, xps, png, jpg, gif, emf, bmp, md, Numbers, wmf, svg, och så vidare.|
 |lösenord|sträng| Lösenordet som behövs för att öppna en Excel-fil.|
 |utväg|sträng| Sökväg för att spara resultatet. Om det är en enda fil ska `outPath` omfatta både filnamnet och filändelsen. Om det gäller flera filer ska `outPath` endast inkludera mappen.|
 |lagringsnamn|sträng| Lagringsnamnet där filen finns.|
@@ -65,7 +65,7 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/convert?format=html" -H "accept
 
 ## Cloud SDK-familjen
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkivet](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+ Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
 
 Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
 

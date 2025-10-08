@@ -1,6 +1,6 @@
 ﻿---
 title: Trabajando con Excel Autofiltro
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Autofiltro
 type: docs
 url: /es/autofilter/
@@ -53,7 +53,7 @@ para filtrar datos según la propiedad de color de relleno de las celdas.</p>
     <td class="col-md-2"> <li>Texto</li> </td>
   <td class="col-md-10">
   <p>
- Si una columna contiene texto y se deben seleccionar celdas que contengan texto específico,<a href="/cells/es/autofilter/add-filter/"> El filtro de añadir API</a> puede ser utilizado
+ Si una columna contiene texto y se deben seleccionar celdas que contengan texto específico,<a href="/cells/es/autofilter/add-filter/"> El filtro de añadir API</a> se puede utilizar
 </p>
   </td>
   </tr>
@@ -92,10 +92,10 @@ para filtrar datos según la propiedad de color de relleno de las celdas.</p>
 - [Cómo agregar un filtro de fecha en una hoja de cálculo Excel.](/cells/es/autofilter/add-date-filter/)
 - [Cómo agregar un filtro dinámico en una hoja de cálculo Excel.](/cells/es/autofilter/add-dynamic-filter/)
 - [Cómo agregar un filtro en una hoja de cálculo Excel.](/cells/es/autofilter/add-filter/)
-- [Cómo agregar un filtro de icono en una hoja de cálculo Excel.](/cells/es/autofilter/add-icon-filter/)
+- [Cómo agregar un filtro de ícono en una hoja de cálculo Excel.](/cells/es/autofilter/add-icon-filter/)
 - [Cómo eliminar un filtro de fecha en una hoja de cálculo Excel.](/cells/es/autofilter/delete-a-date-filter/)
 - [Cómo eliminar un filtro en una hoja de cálculo Excel.](/cells/es/delete-filter/)
-- [Cómo obtener una descripción de autofiltro de una hoja de trabajo Excel.](/cells/es/autofilter/get/)
+- [Cómo obtener una descripción de filtro automático de una hoja de trabajo Excel.](/cells/es/autofilter/get/)
 - [Cómo hacer coincidir todos los espacios en blanco en una hoja de trabajo Excel.](/cells/es/autofilter/match-all-blank/)
 - [Cómo hacer coincidir todos los espacios que no están en blanco en una hoja de trabajo Excel.](/cells/es/autofilter/match-all-non-blank/)
 - [Cómo actualizar un autofiltro en una hoja de cálculo Excel.](/cells/es/autofilter/refresh/)

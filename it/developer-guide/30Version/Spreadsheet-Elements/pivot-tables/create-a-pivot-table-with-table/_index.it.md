@@ -1,6 +1,6 @@
 ﻿---
 title: Convertire la tabella in tabella pivot
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Convertire
 type: docs
 url: /it/pivot-tables/convert-table-to-pivottable/

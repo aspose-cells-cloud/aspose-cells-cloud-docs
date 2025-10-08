@@ -1,6 +1,6 @@
 ﻿---
 title: Format du papier
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Format du papier
 type: docs
 url: /fr/paper-size/
@@ -14,8 +14,8 @@ kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Format
 | Nom| Description|
 |:- |:- |
 | Lettre en papier| Lettre (8-1/2 po x 11 po)|
-| PaperLetterSmall| Lettre petite (8-1/2 po x 11 po)|
-| PaperTabloïd| Tabloïd (11 po x 17 po)|
+| PapierLettrePetit| Lettre petite (8-1/2 po x 11 po)|
+| PaperTabloid| Tabloïd (11 po x 17 po)|
 | PaperLedger| Grand livre (17 po x 11 po)|
 | Papier juridique| Légal (8-1/2 po x 14 po)|
 | Déclaration sur papier| Déclaration (5-1/2 po x 8-1/2 po)|
@@ -33,11 +33,11 @@ kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Format
 | PaperNote| Remarque (8-1/2 po x 111 po)|
 | PaperEnvelope9| Enveloppe n° 9 (3-7/8 po 1 x 8-7/8 po)|
 | Enveloppe en papier 10| Enveloppe n° 10 (4-1/8 po x 9-1/2 po)|
-| PaperEnvelope11| Enveloppe n° 11 (4-1/2 po x 10-3/8 po)|
+| Enveloppe en papier11| Enveloppe n° 11 (4-1/2 po x 10-3/8 po)|
 | Enveloppe en papier 12| Enveloppe n° 12 (4-1/2 po x 11 po)|
 | Enveloppe en papier 14| Enveloppe n° 14 (5 po x 11-1/2 po)|
 | Feuille de papier| feuille de taille C|
-| Feuille de papier| feuille de format D|
+| Feuille de papier| Feuille de taille D|
 | Feuille de papier| Feuille de taille E|
 | Enveloppe en papier DL| Enveloppe DL (110 mm x 220 mm)|
 | Enveloppe en papier C5| Enveloppe C5 (162 mm x 229 mm)|
@@ -45,29 +45,29 @@ kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Format
 | Enveloppe en papier C4| Enveloppe C4 (229 mm x 324 mm)|
 | Enveloppe en papier C6| Enveloppe C6 (114 mm x 162 mm)|
 |Enveloppe en papier C65| Enveloppe C65 (114 mm x 229 mm)|
-| PapierEnveloppeB4| Enveloppe B4 (250 mm x 353 mm)|
+| Enveloppe en papier B4| Enveloppe B4 (250 mm x 353 mm)|
 | Enveloppe en papier B5| Enveloppe B5 (176 mm x 250 mm)|
-| PapierEnveloppeB6| Enveloppe B6 (176 mm x 125 mm)|
-| Enveloppe en papier Italie| Enveloppe Italie (110 mm x 230 mm)|
+| Enveloppe en papier B6| Enveloppe B6 (176 mm x 125 mm)|
+| Enveloppe en papierItalie| Enveloppe Italie (110 mm x 230 mm)|
 | Enveloppe en papier Monarch| Enveloppe Monarch (3-7/8 po x 7-1/2 po)|
-| PapierEnveloppePersonnel| Enveloppe (3-5/8 po x 6-1/2 po)|
-| PaperFanfoldUS| Pli en accordéon standard américain (14-7/8 po x 11 po)|
-| Papier plié en accordéonStdAllemand| Pli en accordéon standard allemand (8-1/2 po x 12 po)|
-| Papier plié en accordéon, juridique, allemand| Pliage en accordéon légal allemand (8-1/2 po x 13 po)|
+| Enveloppe en papier personnelle| Enveloppe (3-5/8 po x 6-1/2 po)|
+| Papier plié en éventailUS| Plié en accordéon standard américain (14-7/8 po x 11 po)|
+| Papier plié en accordéonStdAllemand| Pliage en accordéon standard allemand (8-1/2 po x 12 po)|
+| Papier plié en accordéonJuridiqueAllemand| Pliage en accordéon légal allemand (8-1/2 po x 13 po)|
 | PapierISOB4| B4 (ISO) 250 x 353 mm|
 | Carte postale japonaise en papier| Carte postale japonaise (100 mm × 148 mm)|
 | Papier 9x11|9? × 11?0 |
 | Papier 10x11|10? × 11? |
 | Papier 15x11|15? × 11? |
 | Enveloppe en papierInvitation| Enveloppe d'invitation (220 mm × 220 mm)|
-| PaperLetterExtra| Lettre US Extra 9 \ 275 x 12 po|
-| PaperLegalExtra|US Legal Extra 9 \275 x 15 po|
+| PaperLetterExtra| Lettre US Extra 9 \275 x 12 po|
+| PaperLegalExtra|US Legal Extra 9 \275 x 15 pouces|
 | PaperTabloidExtra| Tabloïd américain Extra 11,69 x 18 pouces|
 | Papier A4 Extra| A4 Extra 9,27 x 12,69 pouces|
 | PapierLettreTransversale| Lettre transversale 8 \275 x 11 po|
-| Papier A4Transversal| A4 transversal 210 x 297 mm|
+| Papier A4Transversal| A4 Transversal 210 x 297 mm|
 | PaperLetterExtraTransverse| Lettre extra transversale 9\275 x 12 po|
-| PaperSuperA| SuperA/SuperA/A4 227 x 356 mm|
+| PapierSuperA| SuperA/SuperA/A4 227 x 356 mm|
 | PaperSuperB| SuperB/SuperB/A3 305 x 487 mm|
 | PaperLetterPlus| Lettre US Plus 8,5 x 12,69 pouces|
 | PapierA4Plus| A4 Plus 210 x 330 mm|
@@ -76,30 +76,30 @@ kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Format
 | Papier A3 Extra| A3 Extra 322 x 445 mm|
 | Papier A5 Extra| A5 Extra 174 x 235 mm|
 | PapierISOB5Extra| B5 (ISO) Extra 201 x 276 mm|
-| Document A2| A2 420 x 594 mm|
+| Papier A2| A2 420 x 594 mm|
 | Papier A3Transversal| A3 Transversal 297 x 420 mm|
 | Papier A3 ExtraTransversal|A3 Extra Transversal 322 x 445 mm|
-| Carte postale double japonaise en papier| Carte postale japonaise double 200 x 148 mm|
+| Carte postale double en papier japonais| Carte postale japonaise double 200 x 148 mm|
 | Papier A6| A6 105 x 148 mm|
-| Papier japonais Enveloppe Kaku2| Enveloppe japonaise Kaku #2|
-| Papier japonaisEnveloppeKaku3| Enveloppe japonaise Kaku #3|
+| PapierJaponaisEnveloppeKaku2| Enveloppe japonaise Kaku #2|
+| PapierJaponaisEnveloppeKaku3| Enveloppe japonaise Kaku #3|
 | PapierJaponaisEnveloppeChou3| Enveloppe japonaise Chou #3|
 | PapierJaponaisEnveloppeChou4| Enveloppe japonaise Chou #4|
-| PapierLettreRotated| 11 po × 8,5 po|
+| Lettre en papier tournée| 11 po × 8,5 po|
 | Papier A3 tourné| 420 mm × 297 mm|
 | Papier A4 tourné| 297 mm × 210 mm|
 | Papier A5 tourné| 210 mm × 148 mm|
 | PaperJISB4Rotated| B4 (JIS) tourné 364 x 257 mm|
-| PaperJISB5Rotated| B5 (JIS) tourné 257 x 182 mm|
-| Carte postale japonaise en papier, tournée| Carte postale japonaise tournée 148 x 100 mm|
-| Carte postale double en papier japonais, tournée| Carte postale japonaise double tournée 148 x 200 mm|
+| PaperJISB5 tourné| B5 (JIS) tourné 257 x 182 mm|
+| Carte postale japonaise en papier tournée| Carte postale japonaise tournée 148 x 100 mm|
+| Carte postale double en papier japonais tournée| Carte postale japonaise double tournée 148 x 200 mm|
 | Papier A6 tourné| A6 tourné 148 x 105 mm|
 | PapierJaponaisEnveloppeKaku2Rotation|Enveloppe japonaise Kaku #2 tournée|
 | papierjaponaisenveloppekaku3rotation| Enveloppe japonaise Kaku #3 tournée|
 | PapierJaponaisEnveloppeChou3Rotation| Enveloppe japonaise Chou #3 tournée|
 | PapierJaponaisEnveloppeChou4Rotation| Enveloppe japonaise Chou #4 tournée|
 | PapierJISB6| B6 (JIS) 128 x 182 mm|
-| PaperJISB6Rotated| B6 (JIS) tourné 182 x 128 mm|
+| PaperJISB6 tourné| B6 (JIS) tourné 182 x 128 mm|
 | Papier 12x11| 12 x 11 pouces|
 | PapierJaponaisEnveloppeYou4| Enveloppe japonaise You #4|
 | PapierJaponaisEnveloppeYou4Rotated| Enveloppe japonaise You #4 tournée|
@@ -118,17 +118,17 @@ kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Format
 | PapierPRC16KRotated| PRC 16K tourné|
 | PapierPRC32KRotated| PRC 32K tourné|
 | PapierPRCBig32KRotated| PRC 32K (grand) tourné|
-| PapierPRCEnveloppe1Tourné| Enveloppe PRC n° 1 tournée 165 x 102 mm|
+| PapierPRCEnveloppe1tourné| Enveloppe PRC n° 1 tournée 165 x 102 mm|
 | PapierPRCEnveloppe2tourné| Enveloppe PRC n° 2 tournée 176 x 102 mm|
 | PapierPRCEnveloppe3Tourné| Enveloppe PRC n° 3 tournée 176 x 125 mm|
 | PapierPRCEnveloppe4Rotated| Enveloppe PRC n° 4 tournée 208 x 110 mm|
 | PapierPRCEnveloppe5Tourné| Enveloppe PRC n° 5 tournée 220 x 110 mm|
 | PapierPRCEnveloppe6Tourné| Enveloppe PRC n° 6 tournée 230 x 120 mm|
-| PapierPRCEnveloppe7Tourné| Enveloppe PRC n° 7 tournée 230 x 160 mm|
+| PapierPRCEnveloppe7tourné| Enveloppe PRC n° 7 tournée 230 x 160 mm|
 | PapierPRCEnveloppe8Tourné|Enveloppe PRC n° 8 tournée 309 x 120 mm|
-| PapierPRCEnveloppe9Tourné| Enveloppe PRC n° 9 tournée 324 x 229 mm|
-| PapierPRCEnveloppe10Tourné| Enveloppe PRC n° 10 tournée 458 x 324 mm|
-| Document B3| B3 habituel (13,9 x 19,7 pouces)|
+| PapierPRCEnveloppe9tourné| Enveloppe PRC n° 9 tournée 324 x 229 mm|
+| PapierPRCEnveloppe10tourné| Enveloppe PRC n° 10 tournée 458 x 324 mm|
+| Papier B3| B3 habituel (13,9 x 19,7 pouces)|
 | Carte de visite en papier| Carte de visite (90 mm x 55 mm)|
 | Papier thermique| Thermique (3 x 11 pouces)|
 | Coutume| Représente le format de papier personnalisé.|

@@ -1,6 +1,6 @@
 ﻿---
 title: Définir une propriété de document particulière
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Mise à jour
 type: docs
 url: /fr/document-properties/update/
@@ -8,7 +8,7 @@ aliases: [/set-a-particular-document-property/]
 keywords: Update properties from excel files
 description: Aspose.Cells Cloud REST API prend en charge la mise à jour des propriétés à partir de fichiers Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 30
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Définir une propriété de document particulière
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Définir une propriété de document particulière
 ---
 Ce REST API indique la propriété du document `set/create`.
 
@@ -20,7 +20,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/documentproperties/{propertyName}
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

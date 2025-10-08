@@ -1,6 +1,6 @@
 ﻿---
 title: Ottieni il foglio di lavoro
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Al
 type: docs
 url: /it/worksheets/get-all/

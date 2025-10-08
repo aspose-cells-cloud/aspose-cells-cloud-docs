@@ -1,6 +1,6 @@
 ﻿---
 title: Очистите объекты в файле Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Клеа
 type: docs
 url: /ru/clear/

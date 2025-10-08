@@ -1,6 +1,6 @@
 ﻿---
 title: Elimina un filtro data
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Elimina filtro data
 type: docs
 url: /it/autofilter/delete-date-filter/

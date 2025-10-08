@@ -1,6 +1,6 @@
 ﻿---
 title: Работа с сотовым телефоном Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Клетка
 type: docs
 url: /ru/working-with-cells/

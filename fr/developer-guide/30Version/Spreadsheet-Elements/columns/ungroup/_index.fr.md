@@ -1,6 +1,6 @@
 ﻿---
 title: Dissocier les colonnes d'une feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ungrou
 type: docs
 url: /fr/columns/ungroup/
@@ -20,7 +20,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/colu
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

@@ -1,15 +1,15 @@
 ﻿---
 title: Travailler avec un tableau croisé dynamique à l'aide de la tâche CellsObjectOperate
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /fr/tasks/cells-object-operate/pivottable/
 aliases: [/working-with-pivot-table-using-cellsobjectoperate-task/]
 keywords: REST API, pivot table, spreadsheets, exce
 description: "Cells.Cloud API pour Excel operate : créer un tableau croisé dynamique à l'aide de la tâche CellsObjectOperate"
 weight: 10
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Utilisation d'un tableau croisé dynamique à l'aide de la tâche CellsObjectOperate
+kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Utilisation d'un tableau croisé dynamique avec la tâche CellsObjectOperate
 ---
-Ce REST API crée `pivot table` en utilisant l'objet cellules fonctionnant `task`.
+Ce REST API crée `pivot table` en utilisant l'objet cellules opérant `task`.
 
 **PivotTableOperateParameter**
 
@@ -17,12 +17,12 @@ Ce REST API crée `pivot table` en utilisant l'objet cellules fonctionnant `task
 |Nom du paramètre|Taper|Description|
 |:- |:- |:- |
 | Nom de la cellule de destination| chaîne||
-| SourceData| chaîne||
+| Données sources| chaîne||
 | Nom de la table| chaîne||
 | Utiliser la même source| chaîne| vrai/faux|
-| Index de tableau croisé dynamique| entier||
+| Index du tableau croisé dynamique| entier||
 | Lignes de champ croisé dynamique|entier[]||
-| PivotFieldColumns|entier[]||
+| Colonnes de champ croisé dynamique|entier[]||
 | Données du champ croisé dynamique|entier[]||
 
 

@@ -1,27 +1,27 @@
 ﻿---
 title: Travailler avec Excel AutoFilte
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Filtre automatique
 type: docs
 url: /fr/autofilter/
 aliases: [/working-with-autofilter/]
 keywords: Get, add, delete, and so on for auto filter on an Excel worksheet
-description: Les API Cloud Aspose.Cells prennent en charge l'obtention, l'ajout, la suppression, etc., pour le filtrage automatique d'une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
+description: Les API Cloud Aspose.Cells permettent d'obtenir, d'ajouter, de supprimer, etc., pour le filtrage automatique d'une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 100
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Filtre automatique
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Filtre automatique
 ---
 Le filtre automatique est le moyen le plus rapide de sélectionner uniquement les éléments de la feuille de calcul à afficher dans une liste. La fonctionnalité de filtrage automatique permet aux utilisateurs de filtrer les éléments d'une liste selon des critères définis. Filtrez par texte, nombres ou dates.
 
 **Différents types de filtres**
 
-Aspose.Cells Cloud fournit plusieurs API pour appliquer différents types de filtres tels que le filtre de couleur, le filtre de date, le filtre numérique, le filtre de texte, les filtres vides et les filtres sans vide.
+Aspose.Cells Cloud fournit plusieurs API pour appliquer différents types de filtres tels que le filtre de couleur, le filtre de date, le filtre numérique, le filtre de texte, les filtres vides et les filtres non vides.
 
 <table class="table table-striped">
   <tr>
   <td class="col-md-2"> <li>Couleur de remplissage</li> </td>
   <td class="col-md-10">
   <p>Aspose.Cells Cloud fournit
- <a href="/cells/fr/autofilter/add-color-filter/">le API de ajouter un filtre de couleur de remplissage</a>
+ <a href="/cells/fr/autofilter/add-color-filter/">le API d'ajouter un filtre de couleur de remplissage</a>
 pour filtrer les données en fonction de la propriété de couleur de remplissage des cellules.</p>
   </td>
   </tr>
@@ -53,7 +53,7 @@ pour filtrer les données en fonction de la propriété de couleur de remplissag
     <td class="col-md-2"> <li>Texte</li> </td>
   <td class="col-md-10">
   <p>
- Si une colonne contient du texte et que des cellules contenant un texte particulier doivent être sélectionnées,<a href="/cells/fr/autofilter/add-filter/"> Le filtre d'ajout API</a> peut être utilisé.
+ Si une colonne contient du texte et que des cellules contenant un texte particulier doivent être sélectionnées,<a href="/cells/fr/autofilter/add-filter/"> Le filtre supplémentaire API</a> peut être utilisé.
 </p>
   </td>
   </tr>
@@ -85,7 +85,7 @@ pour filtrer les données en fonction de la propriété de couleur de remplissag
   </tr>
 </table>
 
-**Fonctionnement du filtre automatique des données**
+**Fonctionnement du filtrage automatique des données**
 
 - [Comment ajouter un filtre de couleur dans une feuille de calcul Excel.](/cells/fr/autofilter/add-color-filter/)
 - [Comment ajouter un filtre personnalisé dans une feuille de calcul Excel.](/cells/fr/autofilter/add-custom-filter/)
@@ -96,6 +96,6 @@ pour filtrer les données en fonction de la propriété de couleur de remplissag
 - [Comment supprimer un filtre de date dans une feuille de calcul Excel.](/cells/fr/autofilter/delete-a-date-filter/)
 - [Comment supprimer un filtre dans une feuille de calcul Excel.](/cells/fr/delete-filter/)
 - [Comment obtenir une description de filtre automatique à partir d'une feuille de calcul Excel.](/cells/fr/autofilter/get/)
-- [Comment faire correspondre tous les espaces vides dans une feuille de calcul Excel.](/cells/fr/autofilter/match-all-blank/)
+- [Comment faire correspondre tous les blancs dans une feuille de calcul Excel.](/cells/fr/autofilter/match-all-blank/)
 - [Comment faire correspondre tous les éléments non vides dans une feuille de calcul Excel.](/cells/fr/autofilter/match-all-non-blank/)
 - [Comment actualiser un filtre automatique dans une feuille de calcul Excel.](/cells/fr/autofilter/refresh/)

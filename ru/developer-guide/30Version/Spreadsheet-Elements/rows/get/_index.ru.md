@@ -1,6 +1,6 @@
 ﻿---
 title: Работа с получением строки на рабочем листе Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ге
 type: docs
 url: /ru/rows/get/

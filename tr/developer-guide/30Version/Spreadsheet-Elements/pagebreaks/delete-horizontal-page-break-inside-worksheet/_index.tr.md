@@ -1,6 +1,6 @@
 ﻿---
 title: Yatay sayfa sonunu sil
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Yatay sayfa sonunu sil
 type: docs
 url: /tr/page-breaks/delete-horizontal-page-break/

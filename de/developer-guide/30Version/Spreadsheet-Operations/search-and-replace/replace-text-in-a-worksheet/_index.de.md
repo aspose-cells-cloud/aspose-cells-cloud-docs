@@ -1,6 +1,6 @@
 ﻿---
 title: Ersetzen Sie Text in einem Excel-Arbeitsblatt
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Im Arbeitsblatt ersetzen
 type: docs
 url: /de/replace-text-in-a-worksheet/

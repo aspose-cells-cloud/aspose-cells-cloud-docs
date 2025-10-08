@@ -1,6 +1,6 @@
 ﻿---
 title: Erstellen Sie Excel-Dateien oder erstellen Sie Excel-Berichte
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /de/creating-files-and-reports/
 aliases: [/workbook/create/]

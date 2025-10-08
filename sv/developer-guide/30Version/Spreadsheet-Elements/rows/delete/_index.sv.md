@@ -1,6 +1,6 @@
 ﻿---
 title: Arbeta med att ta bort rader i ett Excel-arbetsblad
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ta bort
 type: docs
 url: /sv/rows/delete/

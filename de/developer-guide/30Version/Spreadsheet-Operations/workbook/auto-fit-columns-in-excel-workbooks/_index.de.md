@@ -1,6 +1,6 @@
 ﻿---
 title: Spalten automatisch an eine Datei mit der Nummer Excel anpassen
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Spalte
 type: docs
 url: /de/autofit-columns-on-an-excel-file/

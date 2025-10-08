@@ -1,6 +1,6 @@
 ﻿---
 title: Birden fazla Excel dosyasını Excel dosyasında birleştir
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Çoklu Excel dosyasını birleştir
 type: docs
 url: /tr/merge-multi-files-into-excel/

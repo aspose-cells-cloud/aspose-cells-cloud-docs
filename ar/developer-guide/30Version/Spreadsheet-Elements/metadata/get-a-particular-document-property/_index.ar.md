@@ -1,6 +1,6 @@
 ﻿---
 title: الحصول على خاصية مستند معينة
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: جي
 type: docs
 url: /ar/document-properties/get/

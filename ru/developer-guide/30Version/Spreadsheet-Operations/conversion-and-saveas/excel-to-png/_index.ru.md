@@ -1,6 +1,6 @@
 ﻿---
 title: Excel в ПН
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Excel в ПН
 type: docs
 url: /ruconvert-excel-file-to-png-file/
@@ -129,7 +129,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/png"
 
 ## Другие API реализуют эту функцию
 
-[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) API позволяет сохранить файл MS Excel как CSV-файл с дополнительными настройками и сохранить результат в хранилище.
+[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)API позволяет сохранить файл MS Excel как CSV-файл с дополнительными настройками и сохранить результат в хранилище.
 
 Этот файл REST API `convert` Excel в CSV.
 

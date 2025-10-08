@@ -1,6 +1,6 @@
 ﻿---
 title: Importa dati nei file Excel ed esporta dati dai file Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Importazione ed esportazione dati
 type: docs
 url: /it/data-import-and-export/
@@ -231,7 +231,7 @@ Sono fornite le seguenti API per importare dati in un file Excel o in più file 
 
 ## Come esportare gli oggetti Excel in vari formati di file
 
- Se hai originariamente creato un file Excel in un determinato formato, come[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/) , E[CSV](https://docs.fileformat.com/spreadsheet/csv/) volte potrebbe essere utile convertire il file Excel in un altro formato per sfruttare le funzionalità speciali offerte. Ad esempio, potresti voler esportare un file Excel in[PDF](https://docs.fileformat.com/pdf/)per proteggere i tuoi contenuti da modifiche non autorizzate e renderli facili da leggere e condividere contemporaneamente.
+Se hai originariamente creato un file Excel in un determinato formato, come[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/) , E[CSV](https://docs.fileformat.com/spreadsheet/csv/) volte potrebbe essere utile convertire il file Excel in un altro formato per sfruttare le funzionalità speciali offerte. Ad esempio, potresti voler esportare un file Excel in[PDF](https://docs.fileformat.com/pdf/) per proteggere i tuoi contenuti da modifiche non autorizzate e renderli facili da leggere e condividere contemporaneamente.
 
 L'esportazione di oggetti Excel è un processo complesso. Molti fattori contribuiscono alla complessità e, pertanto, è necessario tenerne conto durante il processo di esportazione. La possibilità di esportare oggetti Excel in un unico formato con una qualità professionale precisa è una delle principali caratteristiche di Aspose.Cells Cloud.
 

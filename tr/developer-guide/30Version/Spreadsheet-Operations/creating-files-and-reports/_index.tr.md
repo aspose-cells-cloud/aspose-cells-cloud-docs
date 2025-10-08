@@ -1,6 +1,6 @@
 ﻿---
 title: Excel Dosyaları Oluşturun veya Excel Raporları Oluşturun
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /tr/creating-files-and-reports/
 aliases: [/workbook/create/]

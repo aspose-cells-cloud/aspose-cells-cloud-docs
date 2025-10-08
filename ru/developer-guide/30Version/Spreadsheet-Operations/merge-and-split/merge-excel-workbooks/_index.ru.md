@@ -1,6 +1,6 @@
 ﻿---
 title: Объединить рабочие книги Excel с другими книгами Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Объединить файл Excel с файлом Excel
 type: docs
 url: /ru/merge-an-excel-file-into-the-excel-file/

@@ -6,7 +6,7 @@ aliases: [/update-a-comment-in-excel-workbook/]
 keywords: REST API, spreadsheets, excel, update commen
 description: "Cells.Cloud API pour Excel fonctionne : mettre à jour le commentaire"
 weight: 30
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Mise à jour
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Mise à jour
 ---
 Ce REST API indique Mettre à jour le commentaire de cellule de la feuille de calcul.
 
@@ -18,7 +18,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

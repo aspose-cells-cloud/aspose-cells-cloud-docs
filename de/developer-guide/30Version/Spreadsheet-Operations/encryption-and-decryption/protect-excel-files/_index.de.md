@@ -1,6 +1,6 @@
 ﻿---
 title: Datei Excel schützen
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Datei Excel verschlüsseln
 type: docs
 url: /de/protect-excel-files/

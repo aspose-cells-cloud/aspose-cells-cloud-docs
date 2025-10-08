@@ -1,6 +1,6 @@
 ﻿---
 title: Очистить Изменить пароль рабочей книги Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Очистить пароль к файлам Excel
 type: docs
 url: /ru/clear-excel-files-password/

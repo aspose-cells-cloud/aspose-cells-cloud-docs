@@ -1,6 +1,6 @@
 ﻿---
 title: العمل على إضافة صف في ورقة عمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: إعلان
 type: docs
 url: /ar/rows/add/

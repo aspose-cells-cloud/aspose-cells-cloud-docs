@@ -1,11 +1,11 @@
 ﻿---
 title: Fichier de demande d'assistance dans la tâche AP
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /fr/tasks/support-request-file/
 aliases: [/support-request-file-in-task-api/]
 keywords: REST API, task, request, spreadsheets, exce
-description: "Cells.Cloud API pour Excel opérer : fichier de demande de support de tâches"
+description: "Cells.Cloud API pour Excel operate: fichier de demande de support de tâches"
 weight: 10
 kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Fichier de demande d'assistance dans la tâche API
 ---

@@ -1,6 +1,6 @@
 ﻿---
 title: Excel meta verileri ve özellikleriyle çalışma
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Meta Veri ve Özellikler
 type: docs
 url: /tr/metadata/

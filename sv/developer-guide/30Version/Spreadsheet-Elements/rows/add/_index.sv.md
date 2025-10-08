@@ -1,6 +1,6 @@
 ﻿---
 title: Arbeta med att lägga till rader i ett Excel-arbetsblad
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Annons
 type: docs
 url: /sv/rows/add/

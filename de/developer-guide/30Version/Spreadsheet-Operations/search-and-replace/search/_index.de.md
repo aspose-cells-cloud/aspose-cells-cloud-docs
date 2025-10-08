@@ -1,6 +1,6 @@
 ﻿---
 title: Text aus der Datei Excel suchen
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Suchen ohne Speicher
 type: docs
 url: /de/search/

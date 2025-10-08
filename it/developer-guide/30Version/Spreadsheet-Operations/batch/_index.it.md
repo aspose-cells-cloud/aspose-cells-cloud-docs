@@ -1,6 +1,6 @@
 ﻿---
 title: Elaborazione batch di Excel file. Conversione, Blocco, Protezione, Divisione e Sblocco
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: File batch Excel
 type: docs
 url: /it/batch/
@@ -9,3 +9,8 @@ description: Aspose.Cells Cloud API supporta l'elaborazione batch di più file E
 weight: 35
 kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Batch, Conversione, Blocco, Protezione, Divisione e Sblocco.
 ---
+- **["Conversione batch di Excel file"](https://docs.aspose.cloud/cells/batch/convert)**
+- **["Blocca in batch i file Excel"](https://docs.aspose.cloud/cells/batch/lock)**
+- **["Protezione batch dei file Excel"](https://docs.aspose.cloud/cells/batch/protect)**
+- **["Divisione in batch"](https://docs.aspose.cloud/cells/batch/split)**
+- **["Sblocco batch"](https://docs.aspose.cloud/cells/batch/unlock)**

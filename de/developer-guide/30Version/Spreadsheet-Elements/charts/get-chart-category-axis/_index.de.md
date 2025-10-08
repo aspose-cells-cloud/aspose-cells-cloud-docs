@@ -5,7 +5,7 @@ url: /de/charts/category-axis/get/
 weight: 60
 kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Diagrammkategorieachse abrufen
 ---
-Dieser REST API zeigt „Get Chart Category Axis“ an
+Dieser REST API zeigt Get Chart Category Axis an
  
 ## RSET API
  

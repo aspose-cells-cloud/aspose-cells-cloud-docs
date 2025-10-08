@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma sayfasından satır açıklamasını al
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ro
 type: docs
 url: /tr/rows/get/row/

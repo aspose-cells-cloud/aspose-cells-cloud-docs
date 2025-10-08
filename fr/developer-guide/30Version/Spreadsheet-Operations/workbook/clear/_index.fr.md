@@ -1,6 +1,6 @@
 ﻿---
 title: Effacer les objets dans le fichier Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Cléa
 type: docs
 url: /fr/clear/

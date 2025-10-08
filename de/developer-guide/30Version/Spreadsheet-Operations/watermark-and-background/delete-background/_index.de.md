@@ -1,6 +1,6 @@
 ﻿---
 title: Hintergrund auf einem Excel-Arbeitsbuch löschen
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Löschen
 type: docs
 url: /de/delete-background-in-excel-file/

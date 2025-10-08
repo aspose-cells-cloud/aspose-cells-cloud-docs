@@ -1,6 +1,6 @@
 ﻿---
 title: Konvertieren Sie ein Listenobjekt in einen Bereich in einem Excel-Arbeitsblatt
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Konvertierung
 type: docs
 url: /de/list-objects/to-range/

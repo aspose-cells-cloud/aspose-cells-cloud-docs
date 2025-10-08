@@ -1,6 +1,6 @@
 ﻿---
 title: Вычислить все формулы в рабочей книге Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Вычислить
 type: docs
 url: /ru/calculate-all-formulas-on-an-excel-file/

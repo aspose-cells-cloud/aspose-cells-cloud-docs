@@ -1,6 +1,6 @@
 ﻿---
 title: Excel dosyasını çoklu dosyaya bölün
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Split Multi Excel dosyası
 type: docs
 url: /tr/split-an-excel-file-to-multi-files/

@@ -1,12 +1,12 @@
 ﻿---
 title: Obtener un objeto de lista en una hoja de trabajo Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ge
 type: docs
 url: /es/list-objects/get/
 aliases: [/get-a-list-object-or-table-inside-the-worksheet/,/tables/get/]
 keywords: Get a list object(table) into an Excel worksheet
-description: Aspose.Cells Cloud REST API admite la introducción de un objeto de lista (tabla) en una hoja de cálculo Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
+description: Aspose.Cells Cloud REST API permite obtener un objeto de lista (tabla) en una hoja de cálculo Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 9
 kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Obtener un objeto de lista en una hoja de cálculo Excel
 ---
@@ -26,7 +26,7 @@ Los parámetros de la solicitud son:
 |:- |:- |:- |:- |
 | nombre| cadena| camino| Nombre del documento.|
 | nombreHoja| cadena| camino| El nombre de la hoja de trabajo.|
-| índice de objeto de lista| entero| camino| índice de objeto de lista.|
+| índice de objetos listos| entero| camino| índice de objeto de lista.|
 | formato| cadena| consulta| formato de exportación.|
 | carpeta| cadena| consulta| Carpeta del documento.|
 | nombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
@@ -162,7 +162,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listobj
 
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
 
 Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
 

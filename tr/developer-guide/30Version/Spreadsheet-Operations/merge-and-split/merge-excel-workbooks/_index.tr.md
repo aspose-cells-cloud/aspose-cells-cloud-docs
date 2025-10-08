@@ -1,6 +1,6 @@
 ﻿---
 title: Excel Çalışma Kitaplarını diğer Excel dosyasına birleştir
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Excel dosyasını Excel dosyasına birleştir
 type: docs
 url: /tr/merge-an-excel-file-into-the-excel-file/

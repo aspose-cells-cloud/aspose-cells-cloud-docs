@@ -1,6 +1,6 @@
 ﻿---
 title: Raccolta dati per la creazione di un report Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Data di assemblaggio
 type: docs
 url: /it/assembly-data-for-the-creation-of-an-excel-report/

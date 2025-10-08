@@ -1,6 +1,6 @@
 ﻿---
 title: Excel à Ppt
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Excel à Ppt
 type: docs
 url: /fr/convert-excel-file-to-pptx-file/
@@ -9,7 +9,7 @@ description: Aspose.Cells Cloud REST API prend en charge la conversion de fichie
 weight: 90
 kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Excel vers Pptx
 ---
-Ce REST API indique à `convert` un fichier tableur vers un fichier au format pptx.
+Ce REST API indique à `convert` un fichier de feuille de calcul vers un fichier au format pptx.
 
 **Paramètre de requête**
 
@@ -17,7 +17,7 @@ Ce REST API indique à `convert` un fichier tableur vers un fichier au format pp
 |:- |:- |:- |
 |mot de passe|chaîne| Le mot de passe nécessaire pour ouvrir un fichier Excel.|
 |nom de stockage|chaîne| Le nom du stockage où se trouve le fichier.|
-|checkExcelRestriction|booléen| Vérifiez si la restriction du fichier Excel est vérifiée lorsque l'utilisateur modifie les objets liés aux cellules.|
+|vérifierExcelRestriction|booléen| Vérifiez si la restriction du fichier Excel est vérifiée lorsque l'utilisateur modifie les objets liés aux cellules.|
 
 **Paramètre du corps de la requête**
 

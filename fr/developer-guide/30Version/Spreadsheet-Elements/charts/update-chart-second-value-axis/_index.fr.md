@@ -5,7 +5,7 @@ url: /fr/charts/second-value-axis/update/
 weight: 160
 kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Mettre à jour le deuxième axe des valeurs du graphique
 ---
- Ce REST API indique la mise à jour de l'axe des deuxièmes valeurs du graphique.
+ Ce REST API indique la mise à jour du deuxième axe de valeur du graphique.
  
 ## RSET API
  
@@ -14,7 +14,7 @@ kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdo
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/secondvalueaxis
  
 ```
- Les paramètres de la requête sont :
+ Les paramètres de la requête sont :
  
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

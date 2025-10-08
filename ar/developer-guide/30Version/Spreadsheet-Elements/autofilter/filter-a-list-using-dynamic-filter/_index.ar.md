@@ -1,6 +1,6 @@
 ﻿---
 title: إضافة مرشح تاريخ ديناميكي في ورقة عمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: إضافة مرشح ديناميكي
 type: docs
 url: /ar/autofilter/add-dynamic-filter/

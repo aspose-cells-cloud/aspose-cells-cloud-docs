@@ -1,6 +1,6 @@
 ﻿---
 title: Obtenez le nombre de pages à partir d'un formulaire Excel Fil
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Page
 type: docs
 url: /fr/get-page-count-from-an-excel-file/
@@ -20,7 +20,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/pagecount
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

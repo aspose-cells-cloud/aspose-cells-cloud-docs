@@ -1,6 +1,6 @@
 ﻿---
 title: 替换 Excel 工作表中的文本
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: 在工作表中替换
 type: docs
 url: /zh/replace-text-in-a-worksheet/
@@ -11,7 +11,7 @@ description: Aspose.Cells Cloud REST API 支持从 Excel 工作表中查找文�
 weight: 70
 kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、在 Excel 工作表中替换文本
 ---
-此 REST API 指示 Excel 工作表中的 `replace` 文本。
+此 REST API 表示 Excel 工作表中的 `replace` 文本。
 
 ## 重新设置 API
 
@@ -32,7 +32,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/replaceTex
 |文件夹|细绳|询问|文档的文件夹。|
 |存储名称|细绳|询问|存储名称。|
 
-这[OpenAPI规范](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorsheetTextReplace)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorsheetTextReplace)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
 
 您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}

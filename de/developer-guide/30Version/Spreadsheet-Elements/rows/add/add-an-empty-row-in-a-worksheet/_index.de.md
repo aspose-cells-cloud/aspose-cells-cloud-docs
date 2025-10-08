@@ -1,6 +1,6 @@
 ﻿---
 title: Fügen Sie eine leere Zeile in einem Excel-Arbeitsblatt hinzu
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ro
 type: docs
 url: /de/rows/add/row/

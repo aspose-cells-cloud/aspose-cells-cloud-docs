@@ -1,6 +1,6 @@
 ﻿---
 title: Elimina i metadati sui file Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Elimina senza utilizzare l'archiviazione
 type: docs
 url: /it/metadata/delete/

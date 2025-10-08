@@ -1,6 +1,6 @@
 ﻿---
 title: Verschlüsseln Sie ein Excel-Arbeitsbuch
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Verschlüsseln Sie eine Excel-Datei
 type: docs
 url: /de/excel-file-encrypt/

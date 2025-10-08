@@ -1,6 +1,6 @@
 ﻿---
 title: Hur man arbetar med rutor på ett Excel-arbetsblad
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ruta
 type: docs
 url: /sv/worksheets/panes/

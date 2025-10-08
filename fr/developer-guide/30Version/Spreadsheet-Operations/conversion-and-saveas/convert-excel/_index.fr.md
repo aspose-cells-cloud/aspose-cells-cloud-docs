@@ -1,6 +1,6 @@
 ﻿---
 title: Convertir un fichier Excel dans un format différent
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Convertir Excel
 type: docs
 url: /fr/convert-an-excel-file-to-different-formats/
@@ -12,21 +12,21 @@ kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Conver
 ---
 Ce REST API indique au fichier Excel `convert` un fichier de format différent.
 
-La requête est une requête HTTP avec un contenu en plusieurs parties (voir[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)ou[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). La première partie du contenu multipartite contient le fichier de données et la seconde contient les options de sauvegarde.
+La requête est une requête HTTP avec un contenu en plusieurs parties (voir[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)ou[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). La première partie du contenu en plusieurs parties contient le fichier de données et la seconde contient les options de sauvegarde.
 
 **Paramètre de requête**
 
 |Nom du paramètre|Taper|Description|
 |:- |:- |:- |
-|format|chaîne|Le format de fichier : csv, xls, html, mhtml, ods, pdf, xml, txt, tiff, xlsb, xlsm, xlsx, xltm, xltx, xps, png, jpg, gif, emf, bmp, md, Numbers, wmf, svg, etc.|
+|format|chaîne| Le format de fichier : csv, xls, html, mhtml, ods, pdf, xml, txt, tiff, xlsb, xlsm, xlsx, xltm, xltx, xps, png, jpg, gif, emf, bmp, md, Numbers, wmf, svg, etc.|
 |mot de passe|chaîne| Le mot de passe nécessaire pour ouvrir un fichier Excel.|
 |chemin de sortie|chaîne| Chemin d'accès pour enregistrer le résultat. S'il s'agit d'un fichier unique, `outPath` doit inclure le nom et l'extension du fichier. S'il s'agit de plusieurs fichiers, `outPath` doit uniquement inclure le dossier.|
 |nom de stockage|chaîne| Le nom du stockage où se trouve le fichier.|
-|checkExcelRestriction|booléen| Vérifiez si la restriction du fichier Excel est vérifiée lorsque l'utilisateur modifie les objets liés aux cellules.|
+|vérifierExcelRestriction|booléen| Vérifiez si la restriction du fichier Excel est vérifiée lorsque l'utilisateur modifie les objets liés aux cellules.|
 |Format de flux|chaîne| Le format du flux de fichiers d'entrée.|
 |région|chaîne| Les paramètres régionaux du classeur.|
 |pageWideFitOnPerSheet|booléen| La page s'adapte à la largeur de la feuille de calcul.|
-|pageTallFitOnPerSheet|booléen| La page haute tient sur la feuille de travail.|
+|pageTallFitOnPerSheet|booléen| La page haute tient sur la feuille de calcul.|
 |nom de la feuille|chaîne| Convertissez la feuille de calcul spécifiée.|
 |pageIndex|chaîne| Convertissez la page spécifiée de la feuille de calcul, sheetName est requis.|
 |une page par feuille|booléen| Lors de la conversion au format PDF, une page par feuille.|
@@ -38,13 +38,13 @@ La requête est une requête HTTP avec un contenu en plusieurs parties (voir[RFC
 |Nom du paramètre|Taper|Description|
 |:- |:- |:- |
 |fichier de données| fichier de données|Le fichier de données est enregistré dans la première partie du contenu en plusieurs parties.|
-|Options de sauvegarde| Objet|Option d'enregistrement Enregistrer dans la deuxième partie du contenu en plusieurs parties.|
+|Options de sauvegarde| Objet|Option d'enregistrement pour enregistrer dans la deuxième partie du contenu en plusieurs parties.|
 
 ## RESTE API
 
 |**API**|**Taper**|**Description**|**Lien Swagger**|
 |:- |:- |:- |:- |
-|/cellules/convertir|METTRE|Convertit le classeur du contenu de la requête vers un format donné|[PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)|
+|/cellules/convertir|METTRE|Convertit le classeur à partir du contenu de la requête vers un format donné|[PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)|
 
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
 

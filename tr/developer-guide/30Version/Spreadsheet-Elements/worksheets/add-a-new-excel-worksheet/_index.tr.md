@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma sayfasını ekleyin
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Reklam
 type: docs
 url: /tr/worksheets/add/

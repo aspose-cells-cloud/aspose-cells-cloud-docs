@@ -1,12 +1,12 @@
 ﻿---
 title: Travailler avec la carte Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Graphique
 type: docs
 url: /fr/charts/
 aliases: [/working-with-charts/]
 keywords: REST API, spreadsheets, excel, chart
-description: "Cells.Cloud API pour Excel fonctionnent : les cartes fonctionnent"
+description: "Cells.Cloud API pour Excel fonctionne : les cartes fonctionnent"
 weight: 100
 kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Graphiques
 ---

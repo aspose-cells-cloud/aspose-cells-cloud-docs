@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma sayfasına birden fazla sütunu otomatik olarak sığdır
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Kolon
 type: docs
 url: /tr/worksheets/autofit/columns/

@@ -1,6 +1,6 @@
 ﻿---
 title: Kombiniert einen Bereich von Cells in einer einzigen Zelle
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Merg
 type: docs
 url: /de/ranges/merge/

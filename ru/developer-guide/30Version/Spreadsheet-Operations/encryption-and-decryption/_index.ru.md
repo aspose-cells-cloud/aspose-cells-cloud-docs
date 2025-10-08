@@ -1,6 +1,6 @@
 ﻿---
 title: Шифрование, дешифрование и цифровая подпись файлов Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Защитить Exce
 type: docs
 url: /ru/protect/

@@ -1,6 +1,6 @@
 ﻿---
 title: Option d'installation automatique
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Option d'installation automatique
 type: docs
 url: /fr/auto-fitter-options/
@@ -13,11 +13,11 @@ kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Option
 
 Nom | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Ajustement automatique des cellules fusionnéesType** | **chaîne** | Obtient et définit le type de hauteur de ligne d'ajustement automatique des cellules fusionnées.
+**Ajustement automatique des cellules fusionnéesType** | **chaîne** | Obtient et définit le type de hauteur de ligne d'ajustement automatique des cellules fusionnées. |
 **IgnorerCaché** | **booléen** | Ignore les lignes/colonnes masquées. |
 **OnlyAuto** | **booléen** | Indique si seules les lignes dont la hauteur n'est pas personnalisée doivent être adaptées. |
-**Langue par défaut** | **chaîne** | Obtient ou définit la langue d'édition par défaut. |
-**Hauteur de ligne maximale** | **double** | Obtient et définit la hauteur de ligne maximale (en unité de point) lors de l'ajustement automatique des lignes.
+**Langue d'édition par défaut** | **chaîne** | Obtient ou définit la langue d'édition par défaut. |
+**Hauteur maximale de la ligne** | **double** Obtient et définit la hauteur de ligne maximale (en unité de point) lors de l'ajustement automatique des lignes. |
 **Ajustement automatique du type de texte enveloppé** | **chaîne** | Obtient et définit le type de texte enveloppé à ajustement automatique. |
-**FormatStratégie** | **chaîne** | Obtient et définit la stratégie formatée. |
+**Stratégie de format** | **chaîne** | Obtient et définit la stratégie formatée. |
 **Pour le rendu** | **chaîne** | Indique si le rendu est adapté à des fins de rendu. |

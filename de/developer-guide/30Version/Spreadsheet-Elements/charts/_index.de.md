@@ -1,6 +1,6 @@
 ﻿---
 title: Arbeiten mit dem Diagramm Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Diagramm
 type: docs
 url: /de/charts/

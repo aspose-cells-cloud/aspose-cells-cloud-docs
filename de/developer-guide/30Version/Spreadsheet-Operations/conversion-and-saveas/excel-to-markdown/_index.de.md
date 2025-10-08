@@ -1,6 +1,6 @@
 ﻿---
 title: Excel nach Markdow
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Excel nach Markdow
 type: docs
 url: /de/convert-excel-file-to-markdown-file/

@@ -1,6 +1,6 @@
 ﻿---
 title: Удалить несколько строк на листе Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ряд
 type: docs
 url: /ru/rows/delete/rows/

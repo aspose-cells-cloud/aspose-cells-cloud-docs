@@ -1,6 +1,6 @@
 ﻿---
 title: Listobjekt ta bort dubbletter
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ta bort dubblett
 type: docs
 keywords: list object(table) remove duplicates 

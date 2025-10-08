@@ -1,6 +1,6 @@
 ﻿---
 title: Excel dosyasındaki bir resmi sil
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Sil
 type: docs
 url: /tr/pictures/delete/

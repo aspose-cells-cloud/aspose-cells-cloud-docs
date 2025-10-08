@@ -1,6 +1,6 @@
 ﻿---
 title: Ripara il file Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 linktitle: Ripara il file Excel
 url: /it/repair-excel-files/

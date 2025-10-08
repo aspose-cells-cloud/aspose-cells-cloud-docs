@@ -1,6 +1,6 @@
 ﻿---
 title: Travailler avec la colonne Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Colonne
 type: docs
 url: /fr/columns/

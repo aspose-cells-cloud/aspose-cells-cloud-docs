@@ -1,6 +1,6 @@
 ﻿---
 title: CellsObjectOperate kullanarak pivot tabloyla çalışma
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /tr/tasks/cells-object-operate/pivottable/
 aliases: [/working-with-pivot-table-using-cellsobjectoperate-task/]

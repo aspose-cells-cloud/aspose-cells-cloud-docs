@@ -1,6 +1,6 @@
 ﻿---
 title: Importa dati Json in Exce
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Importa Jso
 type: docs
 url: /it/import-json-data-into-excel/
@@ -32,7 +32,7 @@ I parametri importanti sono descritti nella seguente tabella:
 | cartella| Stringa di query| corda| Cartella della cartella di lavoro originale.|
 | Nome di archiviazione| Stringa di query| corda| Nome dell'archivio.|
 | Percorso in uscita| Stringa di query| corda| Percorso del file di output.|
-| outStorageName| Stringa di query| corda| Nome di archiviazione per il file di output.|
+|outStorageName| Stringa di query| corda| Nome di archiviazione per il file di output.|
 | checkExcelRestriction| Stringa di query| corda| Controllare la restrizione Excel.|
 
 **Esempio**

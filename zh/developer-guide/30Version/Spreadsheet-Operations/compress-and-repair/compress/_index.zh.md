@@ -1,6 +1,6 @@
 ﻿---
 title: 将数据压缩到 Excel 文件中
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: 压缩Excel文件
 type: docs
 url: /zh/compress-excel-files/
@@ -10,7 +10,7 @@ description: Aspose.Cells Cloud REST API 支持压缩 Excel 文件。SDK 支持�
 weight: 39
 kwords: Excel, Office 云, REST API, 电子表格, PDF, CSV, Json, Markdown, 压缩
 ---
-此 REST API 指示 Excel 文件中的 `compress` 数据。
+此 REST API 表示 Excel 文件中的 `compress` 数据。
 
 - 压缩 XLS、XLSX、XLSM、XLSB、ODS
 - 压缩多个 Excel 电子表格文件的快捷方法
@@ -32,7 +32,7 @@ POST https://api.aspose.cloud/v3.0/cells/compress
 |文件|文件|表单数据|要上传的文件|
 |压缩级别|整数|询问||
 
-这[OpenAPI规范](https://apireference.aspose.cloud/cells/#/LightCells/PostCompress)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/LightCells/PostCompress)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
 
 您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}

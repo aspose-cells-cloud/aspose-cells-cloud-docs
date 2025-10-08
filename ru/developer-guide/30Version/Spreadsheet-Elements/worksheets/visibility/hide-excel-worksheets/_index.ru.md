@@ -1,7 +1,7 @@
 ﻿---
 title: Скрыть рабочий лист Excel
-second_title: Aspose.Cells Cloud Documen
-linktitle: Спрятался
+second_title: Documen
+linktitle: Спрятан
 type: docs
 url: /ru/worksheets/hide/
 aliases: [/hide-excel-worksheets/]

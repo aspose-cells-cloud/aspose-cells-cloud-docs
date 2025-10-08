@@ -1,6 +1,6 @@
 ﻿---
 title: Arbeta med att hämta rader på ett Excel-arbetsblad
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ge
 type: docs
 url: /sv/rows/get/

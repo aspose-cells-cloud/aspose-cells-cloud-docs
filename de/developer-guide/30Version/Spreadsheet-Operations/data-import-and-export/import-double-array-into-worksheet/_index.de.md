@@ -1,6 +1,6 @@
 ﻿---
 title: Importieren Sie ein doppeltes Array in das Arbeitsblatt Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Doppeltes Arra importieren
 type: docs
 url: /de/import-double-array-into-excel-worksheet/
@@ -33,7 +33,7 @@ Die wichtigen Parameter sind in der folgenden Tabelle beschrieben:
 | Erste Spalte| int||
 | IsVertical| Schnur| wahr/falsch.|
 | Daten|Doppelt[]||
-| ZielArbeitsblatt| Schnur| Name des Zielarbeitsblatts.|
+|ZielArbeitsblatt| Schnur| Name des Zielarbeitsblatts.|
 | IsInsert| Schnur| wahr/falsch.|
 | ImportDataType| Schnur|IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData.|
 | Quelle| Dateiquelle| Gibt die Datendateiposition an, wenn der BatchData-Parameter null ist.|

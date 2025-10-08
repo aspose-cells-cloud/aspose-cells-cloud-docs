@@ -1,6 +1,6 @@
 ﻿---
 title: Ajouter une validation de feuille de calcul sur une feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Annonce
 type: docs
 url: /fr/validations/add/
@@ -19,12 +19,12 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Nom du document.|
-| nom de la feuille| chaîne| chemin| Nom de la feuille de travail.|
+| nom de la feuille| chaîne| chemin| Nom de la feuille de calcul.|
 | gamme| chaîne| requête| Zone de cellules spécifiée|
 | validation|| corps| validation|
 | dossier| chaîne| requête| Dossier du document.|

@@ -1,6 +1,6 @@
 ﻿---
 title: Удалить вертикальный разрыв страницы
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Удалить вертикальный разрыв страницы
 type: docs
 url: /ru/page-breaks/delete-vertical-page-break/

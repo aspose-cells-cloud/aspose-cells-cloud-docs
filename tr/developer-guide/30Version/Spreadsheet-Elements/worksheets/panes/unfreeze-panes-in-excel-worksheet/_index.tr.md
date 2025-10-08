@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma sayfasındaki bölmeleri çözün
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Çözmek
 type: docs
 url: /tr/worksheets/panes/unfreeze/

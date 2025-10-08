@@ -1,6 +1,6 @@
 ﻿---
 title: إضافة توقيع رقمي لدفتر العمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: التوقيع الرقمي
 type: docs
 url: /ar/excel-digital-signature/

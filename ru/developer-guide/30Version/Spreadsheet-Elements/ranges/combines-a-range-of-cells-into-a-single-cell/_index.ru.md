@@ -1,6 +1,6 @@
 ﻿---
 title: Объединяет диапазон Cells в один элемент
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Слияние
 type: docs
 url: /ru/ranges/merge/

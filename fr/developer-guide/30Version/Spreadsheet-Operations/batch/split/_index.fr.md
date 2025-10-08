@@ -1,6 +1,6 @@
 ﻿---
 title: Séparation par lots
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /fr/batch/split
 keywords: Batch split Excel file
@@ -18,7 +18,7 @@ POST http://api.aspose.cloud/v3.0/cells/batch/split
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
@@ -28,7 +28,7 @@ Les paramètres de la requête sont :
 
 Nom | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
- SourceFolder | chaîne | | [facultatif]SourceStorage | chaîne | | [facultatif]MatchCondition | MatchConditionRequest | | [facultatif]Format | chaîne | | [facultatif]FromIndex | entier | | [facultatif]ToIndex | entier | | [facultatif]OutFolder | chaîne | | [facultatif]SaveOptions | SaveOptions | | [facultatif]**Propriétés de MatchConditionRequest**
+ SourceFolder | chaîne | | [optionnel]SourceStorage | chaîne | | [optionnel]MatchCondition | MatchConditionRequest | | [optionnel]Format | chaîne | | [optionnel]FromIndex | entier | | [optionnel]ToIndex | entier | | [optionnel]OutFolder | chaîne | | [optionnel]SaveOptions | SaveOptions | | [optionnel]**Propriétés de MatchConditionRequest**
 
 Nom | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

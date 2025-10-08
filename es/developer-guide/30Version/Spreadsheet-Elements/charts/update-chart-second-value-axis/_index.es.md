@@ -1,11 +1,11 @@
 ﻿---
-title:  Actualizar el gráfico Segundo valor Axi
+title:  Actualizar gráfico Segundo valor Axi
 type: docs
 url: /es/charts/second-value-axis/update/
 weight: 160
 kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Actualizar el segundo eje de valores del gráfico
 ---
- Este REST API indica Actualizar eje de valores del segundo gráfico.
+ Este REST API indica Actualizar el segundo eje de valores del gráfico.
  
 ## RSET API
  
@@ -61,7 +61,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/" \
  
 ## Familia de SDK en la nube
  
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
  
 Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
  

@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma sayfasına boş bir satır ekleyin
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ro
 type: docs
 url: /tr/rows/add/row/

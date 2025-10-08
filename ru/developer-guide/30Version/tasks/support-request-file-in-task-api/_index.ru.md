@@ -1,6 +1,6 @@
 ﻿---
 title: Файл запроса на поддержку в задаче AP
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /ru/tasks/support-request-file/
 aliases: [/support-request-file-in-task-api/]

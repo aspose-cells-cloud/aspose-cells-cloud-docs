@@ -1,12 +1,12 @@
 ﻿---
 title: Arbeta med Excel AutoFilte
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: AutoFiltrera
 type: docs
 url: /sv/autofilter/
 aliases: [/working-with-autofilter/]
 keywords: Get, add, delete, and so on for auto filter on an Excel worksheet
-description: "Aspose.Cells Cloud API:er har stöd för att hämta, lägga till, ta bort och så vidare för automatisk filtrering på ett Excel-arbetsblad. SDK:er stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift."
+description: "Aspose.Cells Cloud API:er har stöd för att hämta, lägga till, ta bort och så vidare för automatisk filterering på ett Excel-arbetsblad. SDK:er stöder olika typer av utvecklingsspråk. Dessa inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift."
 weight: 100
 kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Autofilter
 ---
@@ -85,7 +85,7 @@ för att filtrera data baserat på cellernas fyllningsfärgsegenskap.</p>
   </tr>
 </table>
 
-**Automatisk filtrering av datadrift**
+**Automatisk filtrering av data**
 
 - [Hur man lägger till ett färgfilter i ett Excel-arbetsblad.](/cells/sv/autofilter/add-color-filter/)
 - [Hur man lägger till ett anpassat filter i ett Excel-arbetsblad.](/cells/sv/autofilter/add-custom-filter/)

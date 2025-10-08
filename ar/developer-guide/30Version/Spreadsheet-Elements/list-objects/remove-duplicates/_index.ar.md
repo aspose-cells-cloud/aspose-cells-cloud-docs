@@ -1,6 +1,6 @@
 ﻿---
 title: قائمة إزالة العناصر المكررة
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: إزالة المكرر
 type: docs
 keywords: list object(table) remove duplicates 

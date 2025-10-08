@@ -1,6 +1,6 @@
 ﻿---
 title: Arbeiten mit der Spalte Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Spalte
 type: docs
 url: /de/columns/

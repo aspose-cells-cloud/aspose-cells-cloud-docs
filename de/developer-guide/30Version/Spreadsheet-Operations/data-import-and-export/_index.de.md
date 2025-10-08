@@ -1,6 +1,6 @@
 ﻿---
 title: Importieren Sie Daten in Excel-Dateien und exportieren Sie Daten aus Excel-Dateien
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Importieren und Exportieren von Daten
 type: docs
 url: /de/data-import-and-export/
@@ -231,7 +231,7 @@ Die folgenden APIs zum Importieren von Daten in eine Excel-Datei oder mehrere Ex
 
 ## So exportieren Sie Excel-Objekte in verschiedene Dateiformate
 
- Wenn Sie ursprünglich eine Excel-Datei in einem bestimmten Format erstellt haben, wie[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/) , Und[CSV](https://docs.fileformat.com/spreadsheet/csv/) kann es manchmal sinnvoll sein, die Excel-Datei in ein anderes Format zu konvertieren, um die speziellen Funktionen der Datei nutzen zu können. Beispielsweise möchten Sie eine Excel-Datei exportieren nach[PDF](https://docs.fileformat.com/pdf/)um Ihre Inhalte vor unbefugten Änderungen zu schützen und das gleichzeitige Lesen und Teilen zu erleichtern.
+Wenn Sie ursprünglich eine Excel-Datei in einem bestimmten Format erstellt haben, wie[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/) , Und[CSV](https://docs.fileformat.com/spreadsheet/csv/) kann es manchmal sinnvoll sein, die Excel-Datei in ein anderes Format zu konvertieren, um die speziellen Funktionen der Datei nutzen zu können. Beispielsweise möchten Sie eine Excel-Datei exportieren nach[PDF](https://docs.fileformat.com/pdf/) um Ihre Inhalte vor unbefugten Änderungen zu schützen und das gleichzeitige Lesen und Teilen zu erleichtern.
 
 Der Export von Excel-Objekten ist ein komplexer Prozess. Viele Faktoren tragen zur Komplexität bei und sollten daher beim Export berücksichtigt werden. Die Möglichkeit, Excel-Objekte in eine Datei in präziser, professioneller Qualität zu exportieren, ist ein Top-Feature von Aspose.Cells Cloud.
 

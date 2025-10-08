@@ -1,12 +1,12 @@
 ﻿---
 title: Trabajando con el formato condicional Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Formato condicional
 type: docs
 url: /es/conditional-formattings/
 aliases: [/working-with-conditional-formatting/]
 keywords: REST API, spreadsheets, excel, conditional formattin
-description: "Cells.Cloud API para Excel opera: operación de formato condicional"
+description: "Cells.Cloud API para Excel operar: operación de formato condicional"
 weight: 100
 kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, JSON, Markdown, Formatos condicionales
 ---

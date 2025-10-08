@@ -1,6 +1,6 @@
 ﻿---
 title: Получить данные ячеек на основе именованного диапазона
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ценить
 type: docs
 url: /ru/ranges/get/values/

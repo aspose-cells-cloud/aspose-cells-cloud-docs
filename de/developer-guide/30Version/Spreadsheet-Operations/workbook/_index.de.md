@@ -1,6 +1,6 @@
 ﻿---
 title: "Arbeiten in Excel-Dateien: Formelberechnung, automatische Anpassung, Objekte löschen usw."
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Excel Gemeinsame Bedienung
 type: docs
 url: /de/workbook/

@@ -1,14 +1,14 @@
 ﻿---
 title: Supprimer l'arrière-plan sur un classeur Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Supprimer
 type: docs
 url: /fr/delete-background-in-excel-file/
 aliases: [/delete-background-in-workbook/,/workbook/delete-background/,/workbook/background/delete/]
 keywords: Delete background on an Excel workbook
-description: Aspose.Cells Cloud REST API prend en charge la suppression de l'arrière-plan d'un classeur Excel ou d'un fichier Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
+description: Aspose.Cells Cloud REST API prend en charge la suppression de l'arrière-plan d'un classeur Excel et d'un fichier Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 170
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Supprimer l'arrière-plan d'un classeur Excel
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Supprimer l'arrière-plan d'un classeur Excel
 ---
 Ce REST API indique de supprimer l'arrière-plan sur un classeur Excel.
 

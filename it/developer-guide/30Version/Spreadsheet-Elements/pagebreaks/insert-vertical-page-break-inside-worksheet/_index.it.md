@@ -1,6 +1,6 @@
 ﻿---
 title: Aggiungi interruzione di pagina verticale
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Aggiungi interruzione di pagina verticale
 type: docs
 url: /it/page-breaks/add-vertical-page-break/

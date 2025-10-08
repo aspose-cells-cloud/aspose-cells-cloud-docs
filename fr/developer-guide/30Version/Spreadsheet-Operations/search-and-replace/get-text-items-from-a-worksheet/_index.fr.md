@@ -1,7 +1,7 @@
 ﻿---
 title: Obtenir des éléments de texte à partir d'une feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
-linktitle: Obtenir dans la feuille de travail
+second_title: Documen
+linktitle: Obtenir la feuille de travail
 type: docs
 url: /fr/worksheets/get-text-items/
 aliases: [/get-text-items-from-a-worksheet/]
@@ -20,7 +20,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/textItems
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

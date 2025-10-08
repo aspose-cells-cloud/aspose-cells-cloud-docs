@@ -1,6 +1,6 @@
 ﻿---
 title: Excel à PD
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Excel à PD
 type: docs
 url: /fr/convert-excel-file-to-pdf-file/
@@ -18,7 +18,7 @@ Ce REST API indique à `convert` un fichier de feuille de calcul vers un fichier
 |:- |:- |:- |
 |mot de passe|chaîne| Le mot de passe nécessaire pour ouvrir un fichier Excel.|
 |nom de stockage|chaîne| Le nom du stockage où se trouve le fichier.|
-|checkExcelRestriction|booléen| Vérifiez si la restriction du fichier Excel est vérifiée lorsque l'utilisateur modifie les objets liés aux cellules.|
+|vérifierExcelRestriction|booléen| Vérifiez si la restriction du fichier Excel est vérifiée lorsque l'utilisateur modifie les objets liés aux cellules.|
 
 **Paramètre du corps de la requête**
 
@@ -34,7 +34,7 @@ Ce REST API indique à `convert` un fichier de feuille de calcul vers un fichier
 
 |**API**|**Taper**|**Description**|**Lien Swagger**|
 |:- |:- |:- |:- |
-|/cellules/convertir/pdf|POSTE|Convertir une feuille de calcul en fichier PDF.|[PostConvertWorkbookToPDF](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToPDF)|
+|/cellules/convertir/pdf|POSTE|Convertir une feuille de calcul en fichier PDF.|[PostConvert WorkbookToPDF](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToPDF)|
 
  Le[Spécification OpenAPI](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToPDF) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
 
@@ -132,7 +132,7 @@ Les exemples de code suivants montrent comment effectuer des appels aux services
 
 |**API**|**Taper**|**Description**|**Lien Swagger**|
 |:- |:- |:- |:- |
-|/cellules/convertir|METTRE|Convertit le classeur du contenu de la requête vers un format donné|[PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)|
+|/cellules/convertir|METTRE|Convertit le classeur à partir du contenu de la requête vers un format donné|[PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)|
 
 [POST /cellules/{nom}/enregistrer sous](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) API vous permet d'enregistrer le fichier MS Excel en tant que fichier PDF avec des paramètres supplémentaires et d'enregistrer le résultat sur le stockage.
 

@@ -1,6 +1,6 @@
 ﻿---
 title: Ställ in stilen för Rang
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ställ in stil
 type: docs
 url: /sv/ranges/update/style/

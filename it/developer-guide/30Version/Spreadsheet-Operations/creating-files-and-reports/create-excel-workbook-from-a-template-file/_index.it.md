@@ -1,6 +1,6 @@
 ﻿---
 title: Come creare una cartella di lavoro Excel con un file modello
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Modello Fil
 type: docs
 url: /it/create-an-excel-file-with-template-file/

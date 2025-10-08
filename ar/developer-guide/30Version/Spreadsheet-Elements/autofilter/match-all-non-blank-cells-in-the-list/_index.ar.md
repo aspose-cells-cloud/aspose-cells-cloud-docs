@@ -1,6 +1,6 @@
 ﻿---
 title: قم بمطابقة جميع الخلايا غير الفارغة في ورقة العمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: لا تتطابق مع أي خلية فارغة
 type: docs
 url: /ar/autofilter/match-all-non-blank/

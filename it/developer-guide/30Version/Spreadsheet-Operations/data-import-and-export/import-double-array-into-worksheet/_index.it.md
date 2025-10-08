@@ -1,6 +1,6 @@
 ﻿---
 title: Importa array doppio nel foglio di lavoro Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Importa doppio arra
 type: docs
 url: /it/import-double-array-into-excel-worksheet/
@@ -33,7 +33,7 @@ I parametri importanti sono descritti nella seguente tabella:
 | Prima colonna| interno||
 | IsVertical| corda| vero/falso.|
 | Dati|Raddoppiare[]||
-| Foglio di lavoro sulla destinazione| corda| nome del foglio di lavoro di destinazione.|
+|Foglio di lavoro sulla destinazione| corda| nome del foglio di lavoro di destinazione.|
 | ÈInserisci| corda| vero/falso.|
 | ImportDataType| corda|IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData.|
 | Fonte| FileSource| Indica la posizione del file di dati quando il parametro BatchData è null.|

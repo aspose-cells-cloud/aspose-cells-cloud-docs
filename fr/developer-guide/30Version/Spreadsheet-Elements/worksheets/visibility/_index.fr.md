@@ -1,6 +1,6 @@
 ﻿---
 title: Comment travailler avec la visibilité sur une feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Visibilité
 type: docs
 url: /fr/worksheets/panes/

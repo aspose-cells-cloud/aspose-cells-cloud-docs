@@ -1,6 +1,6 @@
 ﻿---
 title:  فرز النطاق
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: سور
 type: docs
 keywords: Range Sort

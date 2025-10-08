@@ -1,13 +1,13 @@
 ﻿---
 title: Excel à PN
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Excel à PN
 type: docs
 url: /frconvert-excel-file-to-png-file/
 keywords: Convert excel files to png files
 description: Aspose.Cells Cloud REST API prend en charge la conversion de fichiers Excel en fichiers CSV. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 90
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Excel vers CSV
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Excel vers CSV
 ---
 Ce REST API indique à `convert` un fichier de feuille de calcul vers un fichier au format png.
 
@@ -17,7 +17,7 @@ Ce REST API indique à `convert` un fichier de feuille de calcul vers un fichier
 |:- |:- |:- |
 |mot de passe|chaîne| Le mot de passe nécessaire pour ouvrir un fichier Excel.|
 |nom de stockage|chaîne| Le nom du stockage où se trouve le fichier.|
-|checkExcelRestriction|booléen| Vérifiez si la restriction du fichier Excel est vérifiée lorsque l'utilisateur modifie les objets liés aux cellules.|
+|vérifierExcelRestriction|booléen| Vérifiez si la restriction du fichier Excel est vérifiée lorsque l'utilisateur modifie les objets liés aux cellules.|
 
 **Paramètre du corps de la requête**
 
@@ -129,7 +129,7 @@ Les exemples de code suivants montrent comment effectuer des appels aux services
 
 ## D'autres API implémentent cette fonction
 
-[POST /cellules/{nom}/enregistrer sous](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) API vous permet d'enregistrer le fichier MS Excel sous forme de fichier CSV avec des paramètres supplémentaires et d'enregistrer le résultat sur le stockage.
+[POST /cellules/{nom}/enregistrer sous](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)API vous permet d'enregistrer le fichier MS Excel sous forme de fichier CSV avec des paramètres supplémentaires et d'enregistrer le résultat sur le stockage.
 
 Ce fichier Excel REST API `convert` au format CSV.
 

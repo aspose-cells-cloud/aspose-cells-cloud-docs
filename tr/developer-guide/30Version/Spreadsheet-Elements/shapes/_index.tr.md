@@ -1,6 +1,6 @@
 ﻿---
 title: Excel şekliyle çalışıyor
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Şekil
 type: docs
 url: /tr/shapes/

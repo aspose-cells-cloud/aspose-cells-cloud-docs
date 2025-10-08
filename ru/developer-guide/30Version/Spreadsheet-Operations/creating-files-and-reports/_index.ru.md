@@ -1,6 +1,6 @@
 ﻿---
 title: Создание файлов Excel или построение отчетов Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /ru/creating-files-and-reports/
 aliases: [/workbook/create/]

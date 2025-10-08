@@ -1,6 +1,6 @@
 ﻿---
 title: Importera Json-data till Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Importera Jso
 type: docs
 url: /sv/import-json-data-into-excel/
@@ -32,7 +32,7 @@ De viktiga parametrarna beskrivs i följande tabell:
 | mapp| Frågesträng| sträng| Original arbetsboksmapp.|
 | lagringsnamn| Frågesträng| sträng| Lagringsnamn.|
 | utväg| Frågesträng| sträng| Sökväg till utdatafil.|
-| outStorageName| Frågesträng| sträng| Lagringsnamn för utdatafilen.|
+|outStorageName| Frågesträng| sträng| Lagringsnamn för utdatafilen.|
 | kontrolleraExcelBegränsning| Frågesträng| sträng| Kontrollera Excel-begränsningen.|
 
 **Exempel**
@@ -55,6 +55,6 @@ De viktiga parametrarna beskrivs i följande tabell:
 
 ## Cloud SDK-familjen
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkivet](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+ Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
 
 Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:

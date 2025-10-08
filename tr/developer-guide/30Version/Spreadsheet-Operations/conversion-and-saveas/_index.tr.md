@@ -1,6 +1,6 @@
 ﻿---
 title: Excel dosyasını başka bir biçime dönüştürün veya farklı şekilde kaydedin
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Dönüştürme ve Kaydetme
 type: docs
 url: /tr/conversion-and-save-as/
@@ -10,7 +10,7 @@ description: Aspose.Cells Cloud REST API, Excel dosyalarını çeşitli biçimle
 weight: 30
 kwords: Dosya dönüştürme, Biçim dönüştürme, PDF dışa aktarma, Dosyayı kaydet, Excel dosyalarını kaydet, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel'i çeşitli biçimlere dönüştür
 ---
- Başlangıçta belirli bir biçimde Excel dosyasını oluşturduysanız, örneğin:[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/) , Ve[CSV](https://docs.fileformat.com/spreadsheet/csv/) Bazen Excel dosyasını başka bir biçime dönüştürmeyi faydalı bulabilirsiniz, böylece sunduğu özel özelliklerden yararlanabilirsiniz. Örneğin, bir Excel dosyasını şu biçime dönüştürmek isteyebilirsiniz:[PDF](https://docs.fileformat.com/pdf/)İçeriklerinizi yetkisiz değişikliklerden korumak ve aynı anda okunmasını ve paylaşılmasını kolaylaştırmak için.
+Başlangıçta belirli bir biçimde Excel dosyasını oluşturduysanız, örneğin:[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/) , Ve[CSV](https://docs.fileformat.com/spreadsheet/csv/) Bazen Excel dosyasını başka bir biçime dönüştürmeyi faydalı bulabilirsiniz, böylece sunduğu özel özelliklerden yararlanabilirsiniz. Örneğin, bir Excel dosyasını şu biçime dönüştürmek isteyebilirsiniz:[PDF](https://docs.fileformat.com/pdf/) İçeriklerinizi yetkisiz değişikliklerden korumak ve aynı anda okunmasını ve paylaşılmasını kolaylaştırmak için.
 
 Belge dönüştürme karmaşık bir süreçtir. Karmaşıklığa katkıda bulunan birçok faktör vardır ve bu nedenle dönüştürme işlemi sırasında dikkate alınmalıdır. Excel dosyalarını bir formattan diğerine hassas ve profesyonel bir kalitede dönüştürme yeteneği, Aspose.Cells Cloud'un en önemli özelliklerinden biridir.
 

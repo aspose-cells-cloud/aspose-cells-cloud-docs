@@ -1,6 +1,6 @@
 ﻿---
 title: Obtenir un tableau croisé dynamique dans une feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Obtenir
 type: docs
 url: /fr/pivot-tables/get/
@@ -8,7 +8,7 @@ aliases: [/get-worksheet-pivot-table-information-by-index/]
 keywords: Get a pivot table in an Excel file
 description: Aspose.Cells Cloud REST API prend en charge l'obtention d'un tableau croisé dynamique dans un fichier Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 10
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Obtenir un tableau croisé dynamique dans une feuille de calcul Excel
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Obtenir un tableau croisé dynamique dans une feuille de calcul Excel
 ---
 Ce REST API indique comment obtenir les informations de la feuille de calcul `pivottable` par index.
  
@@ -19,13 +19,13 @@ Ce REST API indique comment obtenir les informations de la feuille de calcul `pi
 GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivottableIndex}
  
 ```
- Les paramètres de la requête sont :
+ Les paramètres de la requête sont :
  
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Nom du document.|
 | nom de la feuille| chaîne| chemin| Le nom de la feuille de calcul.|
-| pivottableIndex| entier| chemin||
+| Index du tableau croisé dynamique| entier| chemin||
 | dossier| chaîne| requête| Dossier du document.|
 | nom de stockage| chaîne| requête| nom de stockage.|
  

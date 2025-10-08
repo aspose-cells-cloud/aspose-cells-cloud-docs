@@ -1,6 +1,6 @@
 ﻿---
 title: 使用 Excel 元数据和属性
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: 元数据和属性
 type: docs
 url: /zh/metadata/
@@ -8,7 +8,7 @@ aliases: [/document-properties/,/working-with-document-properties/]
 keywords: Get, delete, and update metadata from excel files
 description: Aspose.Cells Cloud REST API 支持从 Excel 文件获取、删除和更新元数据。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
 weight: 100
-kwords: Excel, Office 云, REST API, 电子表格, PDF, CSV, Json, Markdown, 元数据和属性
+kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、元数据和属性
 ---
 **文档属性的类型**
 

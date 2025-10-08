@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma sayfasından farklı içerik nasıl alınır?
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ge
 type: docs
 url: /tr/worksheets/get/

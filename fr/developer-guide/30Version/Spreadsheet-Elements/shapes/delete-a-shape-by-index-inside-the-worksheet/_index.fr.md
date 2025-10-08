@@ -1,6 +1,6 @@
 ﻿---
 title: Supprimer une forme par index sur une feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Supprimer
 type: docs
 url: /fr/shapes/delete/
@@ -8,7 +8,7 @@ aliases: [/delete-a-shape-by-index-inside-the-worksheet/]
 keywords: Delete a shape on an Excel workshee
 description: Aspose.Cells Cloud REST API prend en charge la suppression de formes dans une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 50
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Supprimer une forme par index sur une feuille de calcul Excel
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Supprimer une forme par index sur une feuille de calcul Excel
 ---
 Ce REST API indique de supprimer une forme sur une feuille de calcul Excel.
 
@@ -20,13 +20,13 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes/{
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| nom du document.|
 | nom de la feuille| chaîne| chemin| nom de la feuille de calcul.|
-| index de forme| entier| chemin| index des formes dans les formes de la feuille de calcul.|
+| indice de forme| entier| chemin| index des formes dans les formes de la feuille de calcul.|
 | dossier| chaîne| requête| Dossier du document.|
 | nom de stockage| chaîne| requête| nom de stockage.|
 

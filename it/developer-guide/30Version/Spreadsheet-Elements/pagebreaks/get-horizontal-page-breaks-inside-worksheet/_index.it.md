@@ -1,6 +1,6 @@
 ﻿---
 title: Ottieni interruzione di pagina orizzontale
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ottieni interruzione di pagina orizzontale
 type: docs
 url: /it/page-breaks/get-horizontal-page-breaks/

@@ -1,6 +1,6 @@
 ﻿---
 title: Excel dosyalarını şifreleme, şifresini çözme ve dijital imza
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Exce'yi Koru
 type: docs
 url: /tr/protect/

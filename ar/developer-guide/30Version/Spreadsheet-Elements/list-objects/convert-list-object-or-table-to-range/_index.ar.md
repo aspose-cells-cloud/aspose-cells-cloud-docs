@@ -1,6 +1,6 @@
 ﻿---
 title: تحويل كائن القائمة إلى نطاق في ورقة عمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: تحويل
 type: docs
 url: /ar/list-objects/to-range/

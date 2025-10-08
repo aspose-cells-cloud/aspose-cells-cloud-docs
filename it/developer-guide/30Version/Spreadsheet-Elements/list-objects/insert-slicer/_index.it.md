@@ -1,6 +1,6 @@
 ﻿---
 title:  Elenco degli oggetti inseriti nel filtro
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Inserisci fetta
 type: docs
 keywords: Insert slicer for list object

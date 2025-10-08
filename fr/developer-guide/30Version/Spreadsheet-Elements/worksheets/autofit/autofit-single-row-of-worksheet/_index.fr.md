@@ -1,6 +1,6 @@
 ﻿---
 title: Ajuster automatiquement une ligne sur une feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ro
 type: docs
 url: /fr/worksheets/autofit/row/
@@ -8,7 +8,7 @@ aliases: [/autofit-single-row-of-worksheet/]
 keywords: Autofit rows on an Excel workshee
 description: Aspose.Cells Cloud REST API prend en charge l'ajustement automatique d'une ligne dans une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 30
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Ajuster automatiquement une ligne sur une feuille de calcul Excel
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Ajuster automatiquement une ligne sur une feuille de calcul Excel
 ---
 Ce REST API indique d'ajuster automatiquement une ligne sur une feuille de calcul Excel.
 
@@ -20,7 +20,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitrow
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
@@ -29,7 +29,7 @@ Les paramètres de la requête sont :
 | index de ligne| entier| requête| L'index de ligne.|
 | première colonne| entier| requête| L'index de la première colonne.|
 | dernière colonne| entier| requête| L'index de la dernière colonne.|
-|[Options d'auto-ajustement](/cells/fr/auto-fitter-options) | objet| corps| Les options de l'installateur automatique.|
+|[Options d'installation automatique](/cells/fr/auto-fitter-options) | objet| corps| Les options de l'installateur automatique.|
 | dossier| chaîne| requête| Le dossier.|
 | nom de stockage| chaîne| requête| nom de stockage.|
 

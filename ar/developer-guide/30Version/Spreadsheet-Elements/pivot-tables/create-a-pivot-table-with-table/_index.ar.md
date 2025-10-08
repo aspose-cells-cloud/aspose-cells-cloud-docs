@@ -1,6 +1,6 @@
 ﻿---
 title: تحويل الجدول إلى جدول محوري
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: يتحول
 type: docs
 url: /ar/pivot-tables/convert-table-to-pivottable/

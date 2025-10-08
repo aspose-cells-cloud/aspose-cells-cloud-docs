@@ -1,6 +1,6 @@
 ﻿---
 title: 更新 Excel 文件中的图片
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: 更新
 type: docs
 url: /zh/pictures/update/
@@ -10,7 +10,7 @@ description: Aspose.Cells Cloud REST API 支持更新 Excel 文件中的图片�
 weight: 70
 kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、在 Excel 文件中更新图片
 ---
-此 REST API 指示 `update` 工作表的图片索引。
+此 REST API 指示 Excel 工作表的逐张图片索引为 `update`。
 
 ## 重新设置 API
 
@@ -31,7 +31,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{
 |文件夹|细绳|询问|文件夹。|
 |存储名称|细绳|询问|存储名称。|
 
-这[OpenAPI规范](https://apireference.aspose.cloud/cells/#/Pictures/PostWorksheetPicture)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Pictures/PostWorksheetPicture)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
 
 您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
 

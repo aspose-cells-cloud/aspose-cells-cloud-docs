@@ -1,6 +1,6 @@
 ﻿---
 title: Çalma Tarzını Ayarla
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Stil ayarla
 type: docs
 url: /tr/ranges/update/style/

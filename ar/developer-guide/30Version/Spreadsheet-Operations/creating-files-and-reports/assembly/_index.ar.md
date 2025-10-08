@@ -1,6 +1,6 @@
 ﻿---
 title: تجميع البيانات لإنشاء تقرير Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: بيانات التجميع
 type: docs
 url: /ar/assembly-data-for-the-creation-of-an-excel-report/

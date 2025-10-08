@@ -1,6 +1,6 @@
 ﻿---
 title: كيفية إنشاء مصنف Excel باستخدام ملف قالب
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: قالب الملف
 type: docs
 url: /ar/create-an-excel-file-with-template-file/

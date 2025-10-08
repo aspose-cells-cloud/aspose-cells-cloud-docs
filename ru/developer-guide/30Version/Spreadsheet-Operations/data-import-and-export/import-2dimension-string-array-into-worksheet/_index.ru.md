@@ -1,6 +1,6 @@
 ﻿---
 title: Импорт 2-мерного строкового массива в рабочий лист Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Импорт 2-мерной строки arra
 type: docs
 url: /ru/import-a-2D-string-array-into-excel-worksheet/
@@ -32,7 +32,7 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
 | FirstRow| инт||
 | FirstColumn| инт||
 | Данные|Нить[,]||
-| Рабочий лист назначения| нить| имя конечного рабочего листа.|
+|Рабочий лист назначения| нить| имя конечного рабочего листа.|
 | IsInsert| нить| верно/ложно.|
 | ImportDataType| нить|IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData.|
 | Источник| FileSource| Указывает позицию файла данных, если параметр BatchData равен нулю.|

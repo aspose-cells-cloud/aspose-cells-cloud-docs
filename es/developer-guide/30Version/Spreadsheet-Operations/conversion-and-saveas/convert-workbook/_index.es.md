@@ -1,13 +1,13 @@
 ﻿---
 title: Convertir un archivo Excel a un formato diferente
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Convertir hoja de cálculo
 type: docs
 url: /es/convert-a-spread-file-to-different-formats/
 keywords: Convert excel files to kinds of format files
 description: Aspose.Cells Cloud REST API admite la conversión de archivos de Excel a diversos formatos. El SDK es compatible con diversos lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 10
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, JSON, Markdown, Convertir Excel
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Convertir Excel
 ---
 Este REST API indica a `convert` un archivo Excel en un formato diferente. Admite diferentes formatos. También permite configurar la página y guardar las opciones antes de la conversión.
 
@@ -25,7 +25,7 @@ Este REST API indica a `convert` un archivo Excel en un formato diferente. Admit
 
 |**API**|**Tipo**|**Descripción**|**Enlace Swagger**|
 |:- |:- |:- |:- |
-|/células/convertir|CORREO|Convierte el libro de trabajo del contenido de la solicitud a algún formato|[PostConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PostConvertWorkBook)|
+|/células/convertir|CORREO|Convierte el libro de trabajo del contenido de la solicitud a algún formato|[PostConvertirLibroDeTrabajo](https://apireference.aspose.cloud/cells/#/Workbook/PostConvertWorkBook)|
 
  El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostConvertWorkBook) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
 
@@ -60,7 +60,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/convert"
 
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
 
 Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
 

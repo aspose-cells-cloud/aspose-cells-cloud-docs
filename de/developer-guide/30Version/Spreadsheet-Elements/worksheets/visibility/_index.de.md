@@ -1,6 +1,6 @@
 ﻿---
 title: So arbeiten Sie mit Sichtbarkeit auf einem Excel-Arbeitsblatt
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Sichtbarkeit
 type: docs
 url: /de/worksheets/panes/

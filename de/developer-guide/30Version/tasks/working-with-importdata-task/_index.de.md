@@ -1,6 +1,6 @@
 ﻿---
 title: Arbeiten mit ImportData Tas
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /de/tasks/importdata/
 aliases: [/working-with-importdata-task/]

@@ -1,6 +1,6 @@
 ﻿---
 title: فرز بيانات كائن القائمة في ورقة عمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: سور
 type: docs
 url: /ar/list-objects/sort-data/

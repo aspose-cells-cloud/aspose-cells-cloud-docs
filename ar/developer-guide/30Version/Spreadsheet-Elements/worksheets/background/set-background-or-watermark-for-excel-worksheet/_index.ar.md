@@ -1,6 +1,6 @@
 ﻿---
 title: تعيين الخلفية على ورقة عمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: إعلان
 type: docs
 url: /ar/worksheets/background/add/

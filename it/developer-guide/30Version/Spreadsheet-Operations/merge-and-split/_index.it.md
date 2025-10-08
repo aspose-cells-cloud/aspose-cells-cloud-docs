@@ -1,6 +1,6 @@
 ﻿---
 title: Unisci e dividi i file Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Unisci e Sdoppia
 type: docs
 url: /it/merge-and-split/

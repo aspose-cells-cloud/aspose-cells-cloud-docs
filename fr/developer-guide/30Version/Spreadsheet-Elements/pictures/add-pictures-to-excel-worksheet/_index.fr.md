@@ -1,6 +1,6 @@
 ﻿---
 title: Ajouter une image dans un fichier Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Annonce
 type: docs
 url: /fr/pictures/add/
@@ -8,7 +8,7 @@ aliases: [/add-pictures-to-excel-worksheet/]
 keywords: Add a picture in an Excel file
 description: Aspose.Cells Cloud REST API prend en charge l'ajout d'images dans un fichier Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 20
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Ajouter une image dans un fichier Excel
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Ajouter une image dans un fichier Excel
 ---
 Ce REST API indique à `add` une nouvelle image pour une feuille de calcul Excel.
 
@@ -20,7 +20,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

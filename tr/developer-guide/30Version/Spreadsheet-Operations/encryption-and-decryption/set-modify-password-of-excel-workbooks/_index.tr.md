@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma kitabının şifresini değiştir
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Excel dosya şifresini değiştirin
 type: docs
 url: /tr/workbook/password/modify/

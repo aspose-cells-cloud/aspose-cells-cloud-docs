@@ -1,6 +1,6 @@
 ﻿---
 title: Как работать с удалением рабочих листов в рабочей книге Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Удалить
 type: docs
 url: /ru/worksheets/delete/

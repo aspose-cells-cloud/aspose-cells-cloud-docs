@@ -1,7 +1,7 @@
 ﻿---
 title: Desagrupar filas en una hoja de trabajo Excel
-second_title: Aspose.Cells Cloud Documen
-linktitle: Desagruparse
+second_title: Documen
+linktitle: Ungrou
 type: docs
 url: /es/rows/ungroup/
 aliases: [/ungroup-rows-in-excel-worksheet/]
@@ -28,7 +28,7 @@ Los parámetros de la solicitud son:
 | nombreHoja| cadena| camino| El nombre de la hoja de trabajo.|
 | primerÍndice| entero| consulta| El primer índice de fila que se va a operar.|
 | últimoÍndice| entero| consulta| El último índice de fila que se va a operar.|
-| es todo| booleano| consulta| ¿Se deben operar todas las filas?|
+| esTodo| booleano| consulta| ¿Se deben operar todas las filas?|
 | carpeta| cadena| consulta| La carpeta de documentos.|
 | nombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
 
@@ -68,7 +68,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
 
 Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
 

@@ -1,6 +1,6 @@
 ﻿---
 title: Insertar marcas de agua o establecer fondos en archivos Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Marca de agua y fondo
 type: docs
 url: /es/watermark-and-background/

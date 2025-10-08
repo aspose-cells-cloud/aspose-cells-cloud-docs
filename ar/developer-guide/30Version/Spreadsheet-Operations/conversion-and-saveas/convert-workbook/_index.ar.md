@@ -1,6 +1,6 @@
 ﻿---
 title: تحويل ملف Excel إلى تنسيق مختلف
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: تحويل جدول البيانات
 type: docs
 url: /ar/convert-a-spread-file-to-different-formats/

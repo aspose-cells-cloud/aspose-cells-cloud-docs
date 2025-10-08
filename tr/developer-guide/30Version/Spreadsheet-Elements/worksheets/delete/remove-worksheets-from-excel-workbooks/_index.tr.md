@@ -1,6 +1,6 @@
 ﻿---
 title: Çalışma Sayfasını Sil
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Bir çalışma sayfası
 type: docs
 url: /tr/worksheets/delete-worksheet/

@@ -1,6 +1,6 @@
 ﻿---
 title: Convertire un file Excel in un formato diverso
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Converti Excel
 type: docs
 url: /it/convert-an-excel-file-to-different-formats/
@@ -18,7 +18,7 @@ La richiesta è una richiesta HTTP con contenuto multiparte (vedere[RFC 2046](ht
 
 |Nome del parametro|Tipo|Descrizione|
 |:- |:- |:- |
-|formato|corda|Formato del file: csv, xls, html, mhtml, ods, pdf, xml, txt, tiff, xlsb, xlsm, xlsx, xltm, xltx, xps, png, jpg, gif, emf, bmp, md, Numbers, wmf, svg e così via.|
+|formato|corda| Formato del file: csv, xls, html, mhtml, ods, pdf, xml, txt, tiff, xlsb, xlsm, xlsx, xltm, xltx, xps, png, jpg, gif, emf, bmp, md, Numbers, wmf, svg e così via.|
 |password|corda| La password necessaria per aprire un file Excel.|
 |Percorso in uscita|corda| Percorso in cui salvare il risultato. Se si tratta di un singolo file, `outPath` dovrebbe includere sia il nome del file che l'estensione. Nel caso di più file, `outPath` dovrebbe includere solo la cartella.|
 |Nome di archiviazione|corda| Nome dell'archivio in cui si trova il file.|

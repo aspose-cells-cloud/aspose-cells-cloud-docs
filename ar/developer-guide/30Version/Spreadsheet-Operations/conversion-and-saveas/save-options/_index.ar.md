@@ -1,6 +1,6 @@
 ﻿---
 title: خيار الحفظ
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: خيار الحفظ
 type: docs
 url: /ar/save-options/

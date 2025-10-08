@@ -11,7 +11,7 @@ kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Import
 ---
 Cette feuille de travail REST API `import int array data` dans Excel.
 
-La requête est une requête HTTP avec un contenu en plusieurs parties (voir[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)ou[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). La première partie du contenu multipart contient les données ImportIntegerArrayOption et la seconde contient un fichier de données.
+La requête est une requête HTTP avec un contenu en plusieurs parties (voir[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)ou[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). La première partie du contenu en plusieurs parties contient les données ImportIntegerArrayOption et la seconde contient un fichier de données.
 
 ## RSET API
 
@@ -24,7 +24,7 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
 
 Les paramètres importants sont décrits dans le tableau suivant :
 
-**ImportIntegerArrayOption**
+**Importer une option de tableau entier**
 
 |Nom du paramètre|Taper|Description|
 |:- |:- |:- |
@@ -32,9 +32,9 @@ Les paramètres importants sont décrits dans le tableau suivant :
 | Première colonne| int||
 | EstVertical| chaîne| vrai/faux.|
 | Données|Entier[]||
-| Feuille de travail de destination| chaîne| nom de la feuille de travail de destination.|
+|Feuille de travail de destination| chaîne| nom de la feuille de travail de destination.|
 | EstInsérer| chaîne| vrai/faux.|
-| ImportDataType| chaîne|IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData.|
+| ImporterDataType| chaîne|IntArray/DoubleArray/StringArray/DeuxDimensionIntArray/DeuxDimensionDoubleArray/DeuxDimensionStringArray/BatchData/CSVData.|
 | Source| Source du fichier| Indique la position du fichier de données lorsque le paramètre BatchData est nul.|
 
 **Exemple**

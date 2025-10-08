@@ -1,6 +1,6 @@
 ﻿---
 title: Скрыть элемент поля сводки в сводной таблице
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Скрывать
 type: docs
 url: /ru/pivot-tables/hide-pivot-field-item/

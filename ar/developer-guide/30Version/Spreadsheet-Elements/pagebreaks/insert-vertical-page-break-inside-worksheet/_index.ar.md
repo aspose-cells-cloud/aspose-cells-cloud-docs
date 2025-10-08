@@ -1,6 +1,6 @@
 ﻿---
 title: إضافة فواصل الصفحات العمودية
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: إضافة فواصل الصفحات العمودية
 type: docs
 url: /ar/page-breaks/add-vertical-page-break/

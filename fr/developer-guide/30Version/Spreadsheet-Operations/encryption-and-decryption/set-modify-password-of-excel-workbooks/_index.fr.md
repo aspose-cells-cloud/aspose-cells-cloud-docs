@@ -1,14 +1,14 @@
 ﻿---
 title: Définir le mot de passe de modification d'un classeur Excel
-second_title: Aspose.Cells Cloud Documen
-linktitle: Modifier le mot de passe d'un fichier Excel
+second_title: Documen
+linktitle: Modifier un mot de passe de fichier Excel
 type: docs
 url: /fr/workbook/password/modify/
 aliases: [/set-modify-password-of-excel-workbooks/,/workbook/modify-password/]
 keywords: Modify password for an Excel workbook
 description: Aspose.Cells Cloud REST API prend en charge la modification du mot de passe d'un classeur Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 100
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Définir le mot de passe de modification d'un classeur Excel
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Définir le mot de passe de modification d'un classeur Excel
 ---
 Ce REST API indique de protéger le document contre les modifications.
 
@@ -20,7 +20,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/writeProtection
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

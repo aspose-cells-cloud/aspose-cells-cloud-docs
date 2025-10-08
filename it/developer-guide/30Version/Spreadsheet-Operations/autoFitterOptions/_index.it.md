@@ -1,6 +1,6 @@
 ﻿---
 title: Opzione Auto Fitter
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Opzione Auto Fitter
 type: docs
 url: /it/auto-fitter-options/
@@ -17,7 +17,7 @@ Nome | Tipo | Descrizione | Note
 **IgnoraNascosto** | **booleano** | Ignora le righe/colonne nascoste. |
 **SoloAuto** | **booleano** | Indica se adattare solo le righe la cui altezza non è personalizzata. |
 **Lingua di modifica predefinita** | **corda** | Ottiene o imposta la lingua di modifica predefinita. |
-**Altezza massima riga** | **raddoppiare** | Ottiene e imposta l'altezza massima della riga (in unità di punti) durante l'adattamento automatico delle righe. |
+**Altezza massima riga** | **raddoppiare** Ottiene e imposta l'altezza massima della riga (in unità di punti) durante l'adattamento automatico delle righe. |
 **AutoFitWrappedTextType** | **corda** | Ottiene e imposta il tipo di testo con adattamento automatico. |
 **FormatStrategy** | **corda** | Ottiene e imposta la strategia formattata. |
 **Per il rendering** | **corda** | Indica se è adatto allo scopo di rendering. |

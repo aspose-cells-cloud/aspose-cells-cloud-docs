@@ -1,6 +1,6 @@
 ﻿---
 title: 如何从 Excel 工作表中获取范围内容
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: 葛
 type: docs
 url: /zh/ranges/get/
@@ -9,7 +9,7 @@ description: Aspose.Cells Cloud REST API 支持从 Excel 工作表获取范围�
 weight: 20
 kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、如何从 Excel 工作表中获取范围内容
 ---
-## 处理 Excel 工作表上的获取范围内容。
+## 处理 Excel 工作表上的范围内容。
 
 
 - [如何根据命名范围获取单元格数据。](/cells/zh/ranges/get/values/) 

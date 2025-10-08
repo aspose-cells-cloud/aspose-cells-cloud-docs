@@ -1,6 +1,6 @@
 ﻿---
 title: Преобразование объекта OLE в изображение на рабочем листе Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Конверсио
 type: docs
 url: /ru/oleobjects/convert/

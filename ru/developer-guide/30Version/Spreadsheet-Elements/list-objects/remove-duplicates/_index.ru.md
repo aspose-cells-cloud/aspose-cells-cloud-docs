@@ -1,6 +1,6 @@
 ﻿---
 title: Список объектов удалить дубликаты
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Удалить дубликат
 type: docs
 keywords: list object(table) remove duplicates 

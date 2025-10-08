@@ -1,6 +1,6 @@
 ﻿---
 title: Mettre à jour un objet de liste dans une feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Mise à jour
 type: docs
 url: /fr/list-objects/update/
@@ -20,13 +20,13 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobject
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Nom du document.|
 | nom de la feuille| chaîne| chemin| Le nom de la feuille de calcul.|
-| listObjectIndex| entier| chemin| liste Index des objets|
+| index d'objets de liste| entier| chemin| liste Index des objets|
 | objet de liste|| corps| listObject dto dans le corps de la requête.|
 | dossier| chaîne| requête| Dossier du document.|
 | nom de stockage| chaîne| requête| nom de stockage.|

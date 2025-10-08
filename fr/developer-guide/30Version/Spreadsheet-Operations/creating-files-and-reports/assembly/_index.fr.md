@@ -1,6 +1,6 @@
 ﻿---
 title: Assemblage de données pour la création d'un rapport Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Date d'assemblage
 type: docs
 url: /fr/assembly-data-for-the-creation-of-an-excel-report/
@@ -20,7 +20,7 @@ POST https://api.aspose.cloud/v3.0/cells/assembly
 
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

@@ -1,6 +1,6 @@
 ﻿---
 title:  Liste nesnesi dilimleyici ekle
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Dilim ekle
 type: docs
 keywords: Insert slicer for list object

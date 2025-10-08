@@ -1,6 +1,6 @@
 ﻿---
 title: Travailler avec les métadonnées et les propriétés Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Métadonnées et propriétés
 type: docs
 url: /fr/metadata/
@@ -12,11 +12,11 @@ kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Métad
 ---
 **Types de propriétés de document**
 
-&nbsp;&nbsp;&nbsp;&nbsp;Avant de commencer à apprendre à utiliser les API Cloud Aspose.Cells pour afficher, modifier et supprimer les propriétés du document (métadonnées) dans Excel, clarifions les types de propriétés qu'un document Excel peut avoir.
+&nbsp;&nbsp;&nbsp;&nbsp;Avant de commencer à apprendre comment utiliser Aspose.Cells Cloud Apis pour afficher, modifier et supprimer les propriétés du document (métadonnées) dans Excel, clarifions les types de propriétés qu'un document Excel peut avoir.
 
-- Les propriétés standard sont communes à Excel. Elles contiennent des informations de base sur le document telles que le titre, le sujet, l'auteur, la catégorie, etc. Vous pouvez attribuer vos propres valeurs de texte à ces propriétés pour faciliter la recherche du document Excel.
+- Les propriétés standard sont communes à Excel. Elles contiennent des informations de base sur le document, telles que le titre, le sujet, l'auteur, la catégorie, etc. Vous pouvez attribuer vos propres valeurs de texte à ces propriétés pour faciliter la recherche du document Excel.
 
-- Les propriétés personnalisées sont des propriétés définies par l'utilisateur. Elles vous permettent d'ajouter d'autres propriétés à votre document Excel.
+- Les propriétés personnalisées sont définies par l'utilisateur. Elles vous permettent d'ajouter d'autres propriétés à votre document Excel.
 
 **Comment travailler avec les propriétés du document sur un fichier Excel.**
 

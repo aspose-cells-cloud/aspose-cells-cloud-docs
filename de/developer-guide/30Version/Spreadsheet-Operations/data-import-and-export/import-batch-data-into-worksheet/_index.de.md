@@ -1,6 +1,6 @@
 ﻿---
 title: Batchdaten in das Arbeitsblatt Excel importieren
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Batchdaten importieren
 type: docs
 url: /de/import-batch-data-into-excel/
@@ -30,7 +30,7 @@ Die wichtigen Parameter sind in der folgenden Tabelle beschrieben:
 |Parametername|Typ|Beschreibung|
 |:- |:- |:- |
 | Batchdaten|Liste<CellValue> | Batchdaten|
-| ZielArbeitsblatt| Schnur| Name des Zielarbeitsblatts.|
+|ZielArbeitsblatt| Schnur| Name des Zielarbeitsblatts.|
 | IsInsert| Schnur| wahr/falsch.|
 | ImportDataType| Schnur|IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData.|
 | Quelle| Dateiquelle| Gibt die Datendateiposition an, wenn der BatchData-Parameter null ist.|

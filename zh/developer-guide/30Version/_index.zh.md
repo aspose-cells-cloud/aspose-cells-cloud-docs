@@ -1,11 +1,11 @@
 ﻿---
-title: 开发者指南 3.
-second_title: Aspose.Cells Cloud Documen
+title: 开发者指南3.
+second_title: Documen
 type: docs
 url: /zh/developer-guide-3.0/
 aliases: [/developer-guide/v3.0/,/developer-guide-v3.0/]
 keywords: How to use Aspose.Cells Cloud REST APIs. Office Excel 2013,  Office Excel 2016,  Office Excel 2019,office Excel 365
-description: 本开发者指南介绍了一些实用场景和技巧，可帮助您使用特定的 Aspose.Cells for .NET 功能、实现特定的 Excel 文档外观或实现用例
+description: 本《开发者指南》介绍了一些实用场景和技巧，可帮助您使用特定的 Aspose.Cells for .NET 功能、实现特定的 Excel 文档外观或实现用例
 weight: 150
 kwords: Excel, Office 云, REST API, 电子表格, PDF, CSV, Json, Markdown, 开发者指南
 ---
@@ -95,7 +95,7 @@ kwords: Excel, Office 云, REST API, 电子表格, PDF, CSV, Json, Markdown, 开
         </ul>
         <p>桌子</p>
         <ul>
-            <li><a href="/cells/zh/add-a-list-object-or-table-inside-the-worksheet/">在 Excel 工作表上添加列表对象。</a></li>
+            <li><a href="/cells/zh/add-a-list-object-or-table-inside-the-worksheet/">在 Excel 工作表上添加一个列表对象。</a></li>
             <li><a href="/cells/zh/update-a-list-object-or-table-inside-the-worksheet/">更新 Excel 工作表上的列表对象。</a></li>
             <li><a href="/cells/zh/convert-list-object-or-table-to-range/">将列表对象转换为范围。</a></li>
             <li><a href="/cells/zh/sort-table-data/">对表格数据进行排序。</a></li>
@@ -112,7 +112,7 @@ kwords: Excel, Office 云, REST API, 电子表格, PDF, CSV, Json, Markdown, 开
     <div class="col-md-6">
         <p>形状</p>
         <ul>
-            <li><a href="/cells/zh/add-a-shape-inside-the-worksheet/">在 Excel 工作表上添加一个形状。</a></li>
+            <li><a href="/cells/zh/add-a-shape-inside-the-worksheet/">在 Excel 工作表上添加形状。</a></li>
             <li><a href="/cells/zh/delete-all-shapes-inside-the-worksheet/">删除 Excel 工作表上的所有形状。</a></li>
             <li><a href="/cells/zh/delete-a-shape-by-index-inside-the-worksheet/">根据 Excel 工作表上的索引删除形状。</a></li>
         </ul>
@@ -203,7 +203,7 @@ kwords: Excel, Office 云, REST API, 电子表格, PDF, CSV, Json, Markdown, 开
         </ul>
         <p>集会</p>
         <ul>
-            <li><a href="/cells/zh/assembly/">在 Excel 文件中汇编数据。</a></li>
+            <li><a href="/cells/zh/assembly/">汇编 Excel 文件中的数据。</a></li>
         </ul>
     </div>
 </div>
@@ -215,7 +215,7 @@ kwords: Excel, Office 云, REST API, 电子表格, PDF, CSV, Json, Markdown, 开
         <ul>
             <li><a href="/cells/zh/add-a-comment-to-a-cell-in-a-worksheet/">向 Excel 工作表上的单元格添加注释。</a></li>
             <li><a href="/cells/zh/update-a-comment-in-excel-workbook/">更新 Excel 工作表上的评论。</a></li>
-            <li><a href="/cells/zh/delete-all-comments-in-a-worksheet/">删除 Excel 工作表上的所有注释。</a></li>
+            <li><a href="/cells/zh/delete-all-comments-in-a-worksheet/">删除 Excel 工作表上的所有评论。</a></li>
         </ul>
     </div>
     <div class="col-md-6">
@@ -235,7 +235,7 @@ kwords: Excel, Office 云, REST API, 电子表格, PDF, CSV, Json, Markdown, 开
             <li><a href="/cells/zh/freeze-panes-in-excel-worksheet/">冻结 Excel 工作表上的窗格。</a></li>
             <li><a href="/cells/zh/unfreeze-panes-in-excel-worksheet/">取消冻结 Excel 工作表上的窗格。</a></li>
             <li><a href="/cells/zh/hide-excel-worksheets/">隐藏 Excel 工作表。</a></li>
-            <li><a href="/cells/zh/unhide-excel-worksheets/">删除 Excel 工作表上的所有注释。</a></li>
+            <li><a href="/cells/zh/unhide-excel-worksheets/">删除 Excel 工作表上的所有评论。</a></li>
         </ul>
     </div>
     <div class="col-md-6">

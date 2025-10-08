@@ -1,6 +1,6 @@
 ﻿---
 title: Guide du développeur 3.
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /fr/developer-guide-3.0/
 aliases: [/developer-guide/v3.0/,/developer-guide-v3.0/]
@@ -70,7 +70,7 @@ kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Guide 
             <li><a href="/cells/fr/delete-row-from-a-worksheet/">Supprime la ligne d'une feuille de calcul Excel.</a></li>
             <li><a href="/cells/fr/copy-rows-in-excel-worksheet/">Copie les lignes d'une feuille de calcul Excel.</a></li>
             <li><a href="/cells/fr/hide-rows-in-excel-worksheet/">Masquer les lignes sur une feuille de calcul Excel.</a></li>
-            <li><a href="/cells/fr/auto-fit-rows-in-excel-workbooks/">Ajuster automatiquement les lignes sur un classeur Excel.</a></li>
+            <li><a href="/cells/fr/auto-fit-rows-in-excel-workbooks/">Ajustement automatique des lignes sur un classeur Excel.</a></li>
             <li><a href="/cells/fr/columns/add/">Ajoute une colonne vide sur une feuille de calcul Excel.</a></li>
             <li><a href="/cells/fr/columns/delete/">Supprime la colonne d'une feuille de calcul Excel.</a></li>
             <li><a href="/cells/fr/columns/copy/">Copie les colonnes d'une feuille de calcul Excel.</a></li>
@@ -97,14 +97,14 @@ kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Guide 
         <ul>
             <li><a href="/cells/fr/add-a-list-object-or-table-inside-the-worksheet/">Ajoute un objet de liste sur une feuille de calcul Excel.</a></li>
             <li><a href="/cells/fr/update-a-list-object-or-table-inside-the-worksheet/">Met à jour un objet de liste sur une feuille de calcul Excel.</a></li>
-            <li><a href="/cells/fr/convert-list-object-or-table-to-range/">Convertit l'objet de liste en plage.</a></li>
+            <li><a href="/cells/fr/convert-list-object-or-table-to-range/">Convertit un objet de liste en plage.</a></li>
             <li><a href="/cells/fr/sort-table-data/">Trie les données du tableau.</a></li>
         </ul>
         <p>OleObject</p>
         <ul>
             <li><a href="/cells/fr/add-oleobject-to-excel-worksheet/">Ajoute un objet Ole sur une feuille de calcul Excel.</a></li>
             <li><a href="/cells/fr/update-a-specific-oleobject-from-excel-worksheet/">Met à jour un objet Ole spécifique sur une feuille de calcul Excel.</a></li>
-            <li><a href="/cells/fr/convert-oleobject-to-image/">Convertit l'objet Ole en image.</a></li>
+            <li><a href="/cells/fr/convert-oleobject-to-image/">Convertit un objet Ole en image.</a></li>
             <li><a href="/cells/fr/delete-all-oleobjects-from-excel-worksheet/">Supprime tous les objets Ole sur une feuille de calcul Excel.</a></li>
             <li><a href="/cells/fr/delete-a-specific-oleobject-from-excel-worksheet/">Supprime un objet Ole spécifique sur une feuille de calcul Excel.</a></li>
         </ul>

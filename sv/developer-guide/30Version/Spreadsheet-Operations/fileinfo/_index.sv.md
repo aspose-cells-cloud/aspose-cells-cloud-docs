@@ -1,6 +1,6 @@
 ﻿---
 title: Filinformation
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Filinformation
 type: docs
 url: /sv/file-info/

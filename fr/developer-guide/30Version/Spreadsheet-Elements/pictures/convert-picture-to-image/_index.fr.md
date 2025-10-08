@@ -1,6 +1,6 @@
 ﻿---
 title: Obtenez une photo dans un fichier Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Gé
 type: docs
 url: /fr/pictures/get/
@@ -8,7 +8,7 @@ aliases: [/convert-picture-to-image/]
 keywords: Get a picture in an Excel file
 description: Aspose.Cells Cloud REST API prend en charge l'obtention d'une image dans un fichier Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 10
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Obtenir une image dans un fichier Excel
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Obtenir une image dans un fichier Excel
 ---
 Ce REST API indique l'index image par image `get` à partir d'une feuille de calcul Excel.
 
@@ -20,13 +20,13 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{p
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Nom du document.|
-| nom de la feuille| chaîne| chemin| Nom de la feuille de travail.|
-| Index des images| entier| chemin| L'index des images.|
+| nom de la feuille| chaîne| chemin| Nom de la feuille de calcul.|
+| index des images| entier| chemin| L'index des images.|
 | format| chaîne| requête| Le format de l'objet exporté.|
 | dossier| chaîne| requête| Le dossier de documents.|
 | nom de stockage| chaîne| requête| nom de stockage.|

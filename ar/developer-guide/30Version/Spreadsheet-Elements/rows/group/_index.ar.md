@@ -1,6 +1,6 @@
 ﻿---
 title: تجميع الصفوف في ورقة العمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: جرو
 type: docs
 url: /ar/rows/group/

@@ -1,6 +1,6 @@
 ﻿---
 title: Verschlüsseln, Entschlüsseln und digitale Signatur von Excel-Dateien
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Schützen Sie Exce
 type: docs
 url: /de/protect/

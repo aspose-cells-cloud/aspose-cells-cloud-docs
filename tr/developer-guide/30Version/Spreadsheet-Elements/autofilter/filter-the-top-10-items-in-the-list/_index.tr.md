@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma sayfasına en önemli 10 öğeyi ekleyin
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: En iyi 10 filtreyi ekle
 type: docs
 url: /tr/autofilter/add-top-10-filter/ 

@@ -1,6 +1,6 @@
 ﻿---
 title: 加密、解密和数字签名 Excel 文件
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: 保护 Exce
 type: docs
 url: /zh/protect/

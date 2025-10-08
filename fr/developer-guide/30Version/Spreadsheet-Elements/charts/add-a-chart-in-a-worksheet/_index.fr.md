@@ -15,7 +15,7 @@ Ce REST API indique d'ajouter un nouveau graphique à la feuille de calcul.
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts
  
 ```
- Les paramètres de la requête sont :
+ Les paramètres de la requête sont :
  
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
@@ -36,7 +36,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts
 | étiquettes de données| booléen| requête| Vrai|
 | Étiquettes de donnéesPosition| chaîne| requête| Au-dessus de|
 | feuille de tableau croisé dynamique| chaîne| requête||
-| pivotTableName| chaîne| requête||
+| nom du tableau croisé dynamique| chaîne| requête||
  
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Charts/PutWorksheetAddChart) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
  

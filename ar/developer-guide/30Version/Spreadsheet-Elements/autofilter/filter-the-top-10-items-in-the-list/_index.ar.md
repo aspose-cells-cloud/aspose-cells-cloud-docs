@@ -1,6 +1,6 @@
 ﻿---
 title: أضف أفضل 10 عناصر في ورقة العمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: أضف أفضل 10 مرشحات
 type: docs
 url: /ar/autofilter/add-top-10-filter/ 

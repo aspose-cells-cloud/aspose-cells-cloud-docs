@@ -1,6 +1,6 @@
 ﻿---
 title: So erstellen Sie eine Excel-Arbeitsmappe mit einer Vorlagendatei
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Vorlagendatei
 type: docs
 url: /de/create-an-excel-file-with-template-file/

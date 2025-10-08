@@ -1,6 +1,6 @@
 ﻿---
-title: Comment supprimer des feuilles de calcul sur un classeur Excel
-second_title: Aspose.Cells Cloud Documen
+title: Comment travailler avec la suppression de feuilles de calcul sur un classeur Excel
+second_title: Documen
 linktitle: Supprimer
 type: docs
 url: /fr/worksheets/delete/

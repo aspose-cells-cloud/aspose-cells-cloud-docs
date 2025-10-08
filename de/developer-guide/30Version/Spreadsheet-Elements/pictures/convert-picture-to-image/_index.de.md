@@ -1,6 +1,6 @@
 ﻿---
 title: Holen Sie sich ein Bild in einem Excel fil
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ge
 type: docs
 url: /de/pictures/get/

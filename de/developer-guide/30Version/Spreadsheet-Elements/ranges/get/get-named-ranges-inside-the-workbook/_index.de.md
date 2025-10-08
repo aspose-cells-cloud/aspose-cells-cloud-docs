@@ -1,6 +1,6 @@
 ﻿---
 title: Holen Sie sich benannte Bereiche auf einem Excel-Arbeitsbuch
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Nam
 type: docs
 url: /de/ranges/get/name/

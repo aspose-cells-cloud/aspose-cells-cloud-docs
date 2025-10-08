@@ -1,6 +1,6 @@
 ﻿---
 title: Восстановить файл Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 linktitle: Восстановить файл Excel
 url: /ru/repair-excel-files/

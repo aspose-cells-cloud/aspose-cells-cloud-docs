@@ -1,6 +1,6 @@
 ﻿---
 title: أضف العلامة المائية إلى الملف Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: إضافة علامة مائية إلى الملف Excel
 type: docs
 url: /ar/add-watermark-into-excel-files/

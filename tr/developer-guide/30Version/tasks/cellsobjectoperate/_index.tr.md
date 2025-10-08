@@ -1,6 +1,6 @@
 ﻿---
 title: CellsObjectOperate Tas ile Çalışma
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /tr/tasks/cells-object-operate/
 aliases: [/working-with-cellsobjectoperate-task/]
@@ -14,7 +14,7 @@ Bu REST API hücre nesnesi `task`'i çalıştırır.
 
 |Parametre Adı|Tip|Tanım|
 |:- |:- |:- |
-| OperateObjectType| sicim| Çalışma Kitabı/Çalışma Sayfası/Sayfa Kurulumu/Cells/Grafik/Şekil/ListeNesnesi/PivotTable/Çalışma Kitabı Ayarları/Sayfa Sonu|
+| OperateObjectType| sicim|Çalışma Kitabı/Çalışma Sayfası/Sayfa Kurulumu/Cells/Grafik/Şekil/ListeNesnesi/PivotTable/Çalışma Kitabı Ayarları/Sayfa Sonu|
 | NesneKonumunuİşlet| Nesne||
 
 **NesneKonumunuİşlet**

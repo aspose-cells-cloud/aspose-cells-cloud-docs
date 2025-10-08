@@ -1,6 +1,6 @@
 ﻿---
 title: إضافة صفوف متعددة إلى ورقة عمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: صف
 type: docs
 url: /ar/rows/add/rows/

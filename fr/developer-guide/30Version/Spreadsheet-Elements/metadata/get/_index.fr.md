@@ -1,13 +1,13 @@
 ﻿---
 title: Obtenir les métadonnées du fichier Excel
-second_title: Aspose.Cells Cloud Documen
-linktitle: Obtenez-le sans utiliser de stockage
+second_title: Documen
+linktitle: Obtenez sans utiliser de stockage
 type: docs
 url: /fr/metadata/get/
 keywords: Get properties from Excel files
 description: Aspose.Cells Cloud REST API prend en charge l'obtention de propriétés à partir de fichiers Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 23
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Obtenir les métadonnées des fichiers Excel
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Obtenir des métadonnées à partir de fichiers Excel
 ---
 Ce REST API indique d'obtenir `metadata` à partir de plusieurs fichiers Excel.
 

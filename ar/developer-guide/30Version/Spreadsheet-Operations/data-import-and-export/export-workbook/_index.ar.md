@@ -1,6 +1,6 @@
 ﻿---
 title: تصدير دفتر العمل
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: وركبو
 type: docs
 url: /ar/export-excel-to-different-formats/

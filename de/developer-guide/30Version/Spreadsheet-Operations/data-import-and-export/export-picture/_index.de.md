@@ -1,6 +1,6 @@
 ﻿---
 title: Bild exportieren
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Bild
 type: docs
 url: /de/export-excel-picture-to-different-formats/

@@ -1,6 +1,6 @@
 ﻿---
 title: Aggiungi firma digitale per il libro di lavoro Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Firma digitale
 type: docs
 url: /it/excel-digital-signature/

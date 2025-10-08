@@ -1,6 +1,6 @@
 ﻿---
 title: Trabajando con el gráfico Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Cuadro
 type: docs
 url: /es/charts/
@@ -20,7 +20,7 @@ kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, JSON, Markdown
 - [Obtener el área del gráfico de una hoja de cálculo](/cells/es/get-chart-area-from-a-worksheet/)
 - [Obtener el formato de relleno de un área de gráfico desde una hoja de cálculo](/cells/es/get-fill-format-of-a-chart-area-from-a-worksheet/)
 - [Obtener la leyenda del gráfico de una hoja de cálculo](/cells/es/get-chart-legend-from-a-worksheet/)
-- [Actualizar la leyenda del gráfico en una hoja de trabajo](/cells/es/update-chart-legend-in-a-worksheet/)
+- [Actualizar la leyenda del gráfico en una hoja de cálculo](/cells/es/update-chart-legend-in-a-worksheet/)
 - [Mostrar la leyenda del gráfico en una hoja de cálculo](/cells/es/show-chart-legend-in-a-worksheet/)
 - [Ocultar la leyenda del gráfico en una hoja de cálculo](/cells/es/hide-chart-legend-in-a-worksheet/)
 - [Obtener el título del gráfico de una hoja de cálculo](/cells/es/get-chart-title-from-a-worksheet/)
@@ -32,7 +32,7 @@ kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, JSON, Markdown
 - [Obtener el eje de valores del gráfico](/cells/es/charts/value-axis/get/)
 - [Obtener el eje de segunda categoría del gráfico](/cells/es/charts/second-category-axis/get/)
 - [Obtener el segundo eje de valores del gráfico](/cells/es/charts/second-value-axis/get/)
-- [Actualizar eje de categorías del gráfico](/cells/es/charts/category-axis/update/)
+- [Actualizar el eje de categorías del gráfico](/cells/es/charts/category-axis/update/)
 - [Actualizar el eje de valores del gráfico](/cells/es/charts/value-axis/update/)
 - [Actualización del eje de la segunda categoría del gráfico](/cells/es/charts/second-category-axis/update/)
 - [Actualizar el segundo eje de valores del gráfico](/cells/es/charts/second-value-axis/update/)

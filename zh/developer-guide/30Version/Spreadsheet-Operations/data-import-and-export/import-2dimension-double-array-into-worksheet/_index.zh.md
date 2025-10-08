@@ -1,6 +1,6 @@
 ﻿---
 title: 将二维双精度数组导入 Excel 工作表
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: 导入二维双阵列
 type: docs
 url: /zh/import-a-2D-double-array-into-excel-worksheet/
@@ -10,9 +10,9 @@ description: Aspose.Cells Cloud REST API 支持将二维双精度数组数据导
 weight: 20
 kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、将二维双精度数组导入 Excel 工作表
 ---
-此 REST API `import 2 dimension double array data` 放入 Excel 工作表。
+此 REST API `import 2 dimension double array data` 进入 Excel 工作表。
 
-该请求是具有多部分内容的 HTTP 请求（请参阅[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)或者[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)）。多部分内容的第一部分包含 Import2DimensionDoubleArrayOption 数据，第二部分包含数据文件。
+该请求是具有多部分内容的 HTTP 请求（请参阅[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)或者[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)）。多部分内容的第一部分包含 Import2DimensionDoubleArrayOption 数据，第二部分包含一个数据文件。
 
 ## 重新设置 API
 
@@ -33,7 +33,7 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
 |第一列|整数||
 |数据|双倍的[，]||
 |目的地工作表|细绳|目标工作表名称。|
-|是否插入|细绳|真/假。|
+|是否插入|细绳|对/错。|
 |导入数据类型|细绳|整数数组/双精度数组/字符串数组/二维整数数组/二维双精度数组/二维字符串数组/批量数据/CSV数据。|
 |来源|文件源|当 BatchData 参数为空时，指示数据文件位置。|
 

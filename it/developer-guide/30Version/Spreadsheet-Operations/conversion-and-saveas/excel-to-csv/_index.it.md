@@ -1,6 +1,6 @@
 ﻿---
 title: Excel a CS
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Excel a CS
 type: docs
 url: /itconvert-excel-file-to-csv-file/
@@ -130,7 +130,7 @@ I seguenti esempi di codice mostrano come effettuare chiamate ai servizi Web Asp
 
 ## Altre API implementano questa funzione
 
-[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) API consente di salvare il file MS Excel come file CSV con impostazioni aggiuntive e di salvare il risultato nell'archivio.
+[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)API consente di salvare il file MS Excel come file CSV con impostazioni aggiuntive e di salvare il risultato nell'archivio.
 
 Questo file Excel REST API `convert` in CSV.
 

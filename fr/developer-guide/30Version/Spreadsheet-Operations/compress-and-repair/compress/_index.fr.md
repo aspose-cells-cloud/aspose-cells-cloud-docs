@@ -1,6 +1,6 @@
 ﻿---
 title: Compresser les données dans un fichier Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Compresser le fichier Excel
 type: docs
 url: /fr/compress-excel-files/
@@ -25,12 +25,12 @@ POST https://api.aspose.cloud/v3.0/cells/compress
 
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
 | déposer| déposer| données de formulaire| Fichier à télécharger|
-| CompressLevel| entier| requête||
+| Niveau de compression| entier| requête||
 
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostCompress) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
 

@@ -1,6 +1,6 @@
 ﻿---
 title: Lavorando con Excel interruzione di pagina
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Interruzione di pagina
 type: docs
 url: /it/working-with-pagebreaks/

@@ -1,6 +1,6 @@
 ﻿---
 title: Löschen einer Form nach Index auf einem Excel-Arbeitsblatt
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Löschen
 type: docs
 url: /de/shapes/delete/

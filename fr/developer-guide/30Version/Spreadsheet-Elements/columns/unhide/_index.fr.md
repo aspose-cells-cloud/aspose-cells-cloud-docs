@@ -1,6 +1,6 @@
 ﻿---
 title: Afficher les colonnes sur une feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Dévoilé
 type: docs
 url: /fr/columns/unhide/
@@ -10,7 +10,7 @@ description: Aspose.Cells Cloud REST API prend en charge l'affichage des colonne
 weight: 50
 kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Afficher les colonnes sur une feuille de calcul Excel
 ---
-Ce REST API indique de masquer les colonnes de la feuille de calcul.
+Ce REST API indique d'afficher les colonnes de la feuille de calcul.
 
 ## RSET API
 
@@ -20,14 +20,14 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/colu
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Le nom du classeur.|
 | nom de la feuille| chaîne| chemin| Le nom de la feuille de calcul.|
 | colonne de départ| entier| requête| L'index de la colonne de début à exploiter.|
-| totalColumns| entier| requête| Nombre de colonnes à exploiter.|
+| colonnes totales| entier| requête| Nombre de colonnes à exploiter.|
 | largeur| nombre| requête|50.0 |
 | dossier| chaîne| requête| Le dossier de documents.|
 | nom de stockage| chaîne| requête| nom de stockage.|

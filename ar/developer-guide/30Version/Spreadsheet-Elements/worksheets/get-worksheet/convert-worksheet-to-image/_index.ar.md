@@ -1,6 +1,6 @@
 ﻿---
 title: تحويل ورقة العمل إلى أنواع من النماذج
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: تحويل ورقة العمل
 type: docs
 url: /ar/worksheets/conversion/

@@ -1,6 +1,6 @@
 ﻿---
 title: Excel pivot tabl ile çalışma
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: PivotTable
 type: docs
 url: /tr/pivottables/

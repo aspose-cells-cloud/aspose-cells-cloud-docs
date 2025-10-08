@@ -1,6 +1,6 @@
 ﻿---
 title: Spara alternativ
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Spara alternativ
 type: docs
 url: /sv/save-options/
@@ -9,7 +9,7 @@ description: Aspose.Cells Cloud REST API stöder hämta Excel-filer till olika t
 weight: 79
 kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Sparalternativ
 ---
-# SaveOptions-egenskaper
+# Sparaalternativens egenskaper
 
 Namn | Typ | Beskrivning | Anteckningar
 ------------ | ------------- | ------------- | -------------

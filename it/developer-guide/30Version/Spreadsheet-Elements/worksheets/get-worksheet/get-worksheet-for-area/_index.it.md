@@ -1,6 +1,6 @@
 ﻿---
 title: Esportare un'area da un foglio di lavoro Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Sono
 type: docs
 url: /it/worksheets/area-to-different-formats/

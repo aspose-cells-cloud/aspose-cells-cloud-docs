@@ -1,14 +1,14 @@
 ﻿---
-title: Obtenez toutes les formes sur une feuille de travail Excel
-second_title: Aspose.Cells Cloud Documen
+title: Obtenez toutes les formes sur une feuille de calcul Excel
+second_title: Documen
 linktitle: Obtenez-al
 type: docs
 url: /fr/shapes/get-all/
 aliases: [/get-all-shapes-inside-the-worksheet/]
 keywords: Get all shapes on an Excel workshee
-description: Aspose.Cells Cloud REST API prend en charge l'obtention de toutes les formes d'une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
+description: Aspose.Cells Cloud REST API prend en charge l'extraction de toutes les formes d'une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 10
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Obtenir toutes les formes sur une feuille de calcul Excel
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Obtenir toutes les formes sur une feuille de calcul Excel
 ---
 Ce REST API indique Obtenir des formes de feuille de calcul
 
@@ -20,7 +20,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

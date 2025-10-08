@@ -1,6 +1,6 @@
 ﻿---
 title: استيراد البيانات باستخدام التخزين
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: استيراد البيانات مع التخزين
 type: docs
 url: /ar/import-data-with-using-storage/

@@ -1,6 +1,6 @@
 ﻿---
 title: Добавьте 10 лучших элементов в рабочий лист Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Добавить фильтр 10 лучших
 type: docs
 url: /ru/autofilter/add-top-10-filter/ 

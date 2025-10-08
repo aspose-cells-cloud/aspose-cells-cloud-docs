@@ -1,6 +1,6 @@
 ﻿---
 title: Zeichen exportieren
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Verkohlen
 type: docs
 url: /de/export-excel-chart-to-different-formats/

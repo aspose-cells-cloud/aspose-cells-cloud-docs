@@ -1,6 +1,6 @@
 ﻿---
 title: Comprimi i dati in un file Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Comprimi file Excel
 type: docs
 url: /it/compress-excel-files/

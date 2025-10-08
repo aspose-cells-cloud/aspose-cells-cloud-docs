@@ -1,6 +1,6 @@
 ﻿---
 title: Excel Dosyasını Onarın
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 linktitle: Excel Dosyasını Onarın
 url: /tr/repair-excel-files/

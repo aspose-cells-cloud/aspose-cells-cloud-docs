@@ -1,6 +1,6 @@
 ﻿---
 title: Arbeiten mit Excel klingelte
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Rang
 type: docs
 url: /de/ranges/

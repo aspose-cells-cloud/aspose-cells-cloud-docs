@@ -17,12 +17,12 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks/
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Nom du document.|
-| nom de la feuille| chaîne| chemin| Nom de la feuille de travail.|
+| nom de la feuille| chaîne| chemin| Nom de la feuille de calcul.|
 | hyperlienIndex| entier| chemin| L'index de l'hyperlien.|
 | dossier| chaîne| requête| Le dossier de documents.|
 | nom de stockage| chaîne| requête| nom de stockage.|

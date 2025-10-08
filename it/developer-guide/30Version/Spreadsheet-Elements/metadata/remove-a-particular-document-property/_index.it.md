@@ -1,6 +1,6 @@
 ﻿---
 title: Elimina una proprietà specifica del documento
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Elimina
 type: docs
 url: /it/document-properties/delete/

@@ -1,6 +1,6 @@
 ﻿---
 title: Hur man uppdaterar intervallinnehåll från ett Excel-arbetsblad
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Uppdatering
 type: docs
 url: /sv/ranges/update/

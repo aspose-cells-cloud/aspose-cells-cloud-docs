@@ -1,6 +1,6 @@
 ﻿---
 title: Переместить сводную таблицу в файл Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Двигаться
 type: docs
 url: /ru/pivot-tables/move/

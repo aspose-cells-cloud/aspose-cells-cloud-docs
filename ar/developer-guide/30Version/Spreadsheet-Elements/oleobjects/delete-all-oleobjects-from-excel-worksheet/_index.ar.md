@@ -1,6 +1,6 @@
 ﻿---
 title: حذف جميع كائنات OLE في ورقة العمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: كليا
 type: docs
 url: /ar/oleobjects/clear/

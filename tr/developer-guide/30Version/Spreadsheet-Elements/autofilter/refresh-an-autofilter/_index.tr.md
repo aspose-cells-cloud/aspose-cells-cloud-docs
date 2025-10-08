@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma sayfasındaki Otomatik Filtreyi Yenile
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Otomatik filtreyi yenile
 type: docs
 url: /tr/autofilter/refresh/

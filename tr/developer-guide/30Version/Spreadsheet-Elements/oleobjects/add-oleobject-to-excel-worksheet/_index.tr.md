@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma sayfasına bir OLE nesnesi ekleyin
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Eklemek
 type: docs
 url: /tr/oleobjects/add/

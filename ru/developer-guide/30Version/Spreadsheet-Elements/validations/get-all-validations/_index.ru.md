@@ -1,6 +1,6 @@
 ﻿---
 title: Получите все проверки рабочего листа из рабочего листа Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Получить все
 type: docs
 url: /ru/validations/get-all/

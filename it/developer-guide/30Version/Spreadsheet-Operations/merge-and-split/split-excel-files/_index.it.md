@@ -1,6 +1,6 @@
 ﻿---
 title: Dividi una cartella di lavoro Excel in più file
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Dividi un fil Excel
 type: docs
 url: /it/split-multi-excel-files/

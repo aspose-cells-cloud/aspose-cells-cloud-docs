@@ -1,6 +1,6 @@
 ﻿---
 title: Come lavorare con i riquadri su un foglio di lavoro Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Pannello
 type: docs
 url: /it/worksheets/panes/

@@ -1,6 +1,6 @@
 ﻿---
 title: Aggiungere una convalida del foglio di lavoro su un foglio di lavoro Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: A.D
 type: docs
 url: /it/validations/add/

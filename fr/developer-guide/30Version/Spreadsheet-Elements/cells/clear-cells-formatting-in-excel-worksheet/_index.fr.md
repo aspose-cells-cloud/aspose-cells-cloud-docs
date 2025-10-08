@@ -3,7 +3,7 @@ title: Effacer la mise en forme Cells dans la feuille de calcul Excel
 type: docs
 url: /fr/clear-cells-formatting-in-excel-worksheet/
 weight: 100
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Effacer Cells Formatage dans Excel Feuille de calcul
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Effacer Cells Formatage dans Excel Feuille de calcul
 ---
 Ce REST API indique `clear` cellules `style` dans un fichier Excel.
 
@@ -15,12 +15,12 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clea
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Nom du classeur.|
-| nom de la feuille| chaîne| chemin| Nom de la feuille de travail.|
+| nom de la feuille| chaîne| chemin| Nom de la feuille de calcul.|
 | gamme| chaîne| requête| La gamme.|
 | startRow| entier| requête| La ligne de départ.|
 | colonne de démarrage| entier| requête| La colonne de départ.|

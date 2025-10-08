@@ -1,6 +1,6 @@
 ﻿---
 title: Şablon dosyasıyla Excel çalışma kitabı nasıl oluşturulur?
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Şablon Dosyası
 type: docs
 url: /tr/create-an-excel-file-with-template-file/

@@ -1,6 +1,6 @@
 ﻿---
 title: Fenster auf einem Arbeitsblatt Excel einfrieren
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Freez
 type: docs
 url: /de/worksheets/panes/freeze/

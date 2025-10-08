@@ -1,6 +1,6 @@
 ﻿---
 title: إضافة حقل محوري إلى جدول محوري
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: إضافة حقل محوري
 type: docs
 url: /ar/pivot-tables/add-pivot-field/

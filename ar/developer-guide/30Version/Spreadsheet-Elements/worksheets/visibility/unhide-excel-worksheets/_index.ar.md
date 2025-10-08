@@ -1,6 +1,6 @@
 ﻿---
 title: إظهار ورقة عمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: غير مخفي
 type: docs
 url: /ar/worksheets/unhide/

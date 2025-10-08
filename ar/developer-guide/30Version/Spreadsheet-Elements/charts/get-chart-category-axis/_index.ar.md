@@ -3,7 +3,7 @@ title:  الحصول على فئة الرسم البياني Axi
 type: docs
 url: /ar/charts/category-axis/get/
 weight: 60
-kwords: Excel، Office Cloud، REST API، جدول بيانات، PDF، CSV، Json، Markdown، الحصول على محور فئة الرسم البياني
+kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، الحصول على محور فئة الرسم البياني
 ---
 يشير هذا REST API إلى محور فئة الرسم البياني
  

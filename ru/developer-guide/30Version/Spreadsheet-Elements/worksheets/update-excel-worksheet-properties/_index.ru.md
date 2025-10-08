@@ -1,6 +1,6 @@
 ﻿---
 title: Обновление свойств на листе Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Обновление
 type: docs
 url: /ru/worksheets/update-properties/

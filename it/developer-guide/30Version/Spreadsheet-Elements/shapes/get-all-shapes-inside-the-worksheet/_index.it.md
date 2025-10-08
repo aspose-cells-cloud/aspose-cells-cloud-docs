@@ -1,6 +1,6 @@
 ﻿---
 title: Ottieni tutte le forme su un foglio di lavoro Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Get-al
 type: docs
 url: /it/shapes/get-all/

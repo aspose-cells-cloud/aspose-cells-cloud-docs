@@ -1,6 +1,6 @@
 ﻿---
 title: 在 Excel 工作表上添加行
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: 广告
 type: docs
 url: /zh/rows/add/

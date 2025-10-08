@@ -1,6 +1,6 @@
 ﻿---
 title: Excel dosyalarına veri aktarın ve Excel dosyalarına veri aktarın
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: İthalat ve İhracat Verileri
 type: docs
 url: /tr/data-import-and-export/
@@ -104,7 +104,7 @@ Excel dosyasına veya birden fazla Excel dosyasına veri aktarmak için aşağı
   <tbody>
     <tr> <td>İlk Sıra</td><td>int</td> <td></td> </tr>
     <tr> <td>İlkSütun</td><td>int</td><td></td></tr>
-    <tr><td>Veri</td><td> Tamsayı[,]</td> <td></td></tr>
+    <tr><td>Veri</td><td> Tam sayı[,]</td> <td></td></tr>
     <tr> <td>Hedef Çalışma Sayfası</td><td> Sicim</td><td> Hedef çalışma kağıdının adı.</td></tr>
     <tr><td>IsInsert</td><td>Sicim</td><td>doğru/yanlış.</td></tr>
     <tr><td>Veri Türünü İçe Aktar</td><td> Sicim</td><td>İki Boyutlu Tam Dizi</td></tr>
@@ -231,7 +231,7 @@ Excel dosyasına veya birden fazla Excel dosyasına veri aktarmak için aşağı
 
 ## Excel nesneleri çeşitli dosya biçimlerine nasıl aktarılır
 
- Başlangıçta belirli bir biçimde Excel dosyasını oluşturduysanız, örneğin:[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/) , Ve[CSV](https://docs.fileformat.com/spreadsheet/csv/)Bazen Excel dosyasını başka bir biçime dönüştürüp, sunduğu özel özelliklerden yararlanmayı faydalı bulabilirsiniz. Örneğin, bir Excel dosyasını şuraya aktarmak isteyebilirsiniz:[PDF](https://docs.fileformat.com/pdf/)İçeriklerinizi yetkisiz değişikliklerden korumak ve aynı anda okunmasını ve paylaşılmasını kolaylaştırmak için.
+Başlangıçta belirli bir biçimde Excel dosyasını oluşturduysanız, örneğin:[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/) , Ve[CSV](https://docs.fileformat.com/spreadsheet/csv/)Bazen Excel dosyasını başka bir biçime dönüştürüp, sunduğu özel özelliklerden yararlanmayı faydalı bulabilirsiniz. Örneğin, bir Excel dosyasını şuraya aktarmak isteyebilirsiniz:[PDF](https://docs.fileformat.com/pdf/) İçeriklerinizi yetkisiz değişikliklerden korumak ve aynı anda okunmasını ve paylaşılmasını kolaylaştırmak için.
 
 Excel nesnesinin dışa aktarımı karmaşık bir süreçtir. Karmaşıklığa katkıda bulunan birçok faktör vardır ve bu nedenle dışa aktarma işlemi sırasında dikkate alınmalıdır. Excel nesnesini tek bir format dosyasına hassas ve profesyonel bir kalitede aktarabilme özelliği, Aspose.Cells Cloud'un en önemli özelliklerinden biridir.
 

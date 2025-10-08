@@ -1,6 +1,6 @@
 ﻿---
 title: Horizontalen Seitenumbruch löschen
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Horizontalen Seitenumbruch löschen
 type: docs
 url: /de/page-breaks/delete-horizontal-page-break/

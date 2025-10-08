@@ -1,6 +1,6 @@
 ﻿---
 title: Importer des données CSV dans la feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Importer des données CSV
 type: docs
 url: /fr/import-csv-data-into-excel/
@@ -29,14 +29,14 @@ Les paramètres importants sont décrits dans le tableau suivant :
 
 |Nom du paramètre|Taper|Description|
 |:- |:- |:- |
-| Séparateur de chaîne| chaîne||
+| Chaîne de séparation| chaîne||
 | Convertir des données numériques| chaîne|vrai/faux.|
 | Première rangée| int||
 | Première colonne| int||
 | Fichier source| chaîne||
 | Analyseurs personnalisés|Liste<CustomParserConfig> ||
 
-**CustomParserConfig**
+**Configuration de l'analyseur personnalisé**
 
 |Nom du paramètre|Taper|Description|
 |:- |:- |:- |

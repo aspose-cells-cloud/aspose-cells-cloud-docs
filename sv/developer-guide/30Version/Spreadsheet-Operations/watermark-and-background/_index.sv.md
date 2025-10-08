@@ -1,6 +1,6 @@
 ﻿---
 title: Infoga vattenstämplar eller ange bakgrunder i Excel-filer
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Vattenstämpel och bakgrund
 type: docs
 url: /sv/watermark-and-background/

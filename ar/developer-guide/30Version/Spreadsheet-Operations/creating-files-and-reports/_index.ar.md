@@ -1,6 +1,6 @@
 ﻿---
 title: إنشاء ملفات Excel أو إنشاء تقارير Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /ar/creating-files-and-reports/
 aliases: [/workbook/create/]

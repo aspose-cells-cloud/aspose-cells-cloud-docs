@@ -1,6 +1,6 @@
 ﻿---
 title: Lavorare con l'aggiunta di righe su un foglio di lavoro Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: A.D
 type: docs
 url: /it/rows/add/

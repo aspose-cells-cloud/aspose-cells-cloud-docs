@@ -4,7 +4,7 @@ type: docs
 url: /fr/charts/delete-chart-title/
 aliases: [/delete-chart-title-in-a-worksheet/]
 weight: 150
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Supprimer le titre d'un graphique dans une feuille de calcul
+kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Supprimer le titre du graphique dans une feuille de calcul
 ---
 Ce REST API indique de masquer le titre dans le graphique
  
@@ -15,12 +15,12 @@ Ce REST API indique de masquer le titre dans le graphique
 DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title
  
 ```
- Les paramètres de la requête sont :
+ Les paramètres de la requête sont :
  
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Nom du classeur.|
-| nom de la feuille| chaîne| chemin| Nom de la feuille de travail.|
+| nom de la feuille| chaîne| chemin| Nom de la feuille de calcul.|
 | index des graphiques| entier| chemin| L'index des graphiques.|
 | dossier| chaîne| requête| Le dossier du classeur.|
 | nom de stockage| chaîne| requête| nom de stockage.|

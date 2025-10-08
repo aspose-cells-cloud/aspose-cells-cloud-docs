@@ -1,11 +1,11 @@
 ﻿---
 title: Tâche
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /fr/tasks/
 aliases: [/working-with-tasks/]
 keywords: REST API, task, spreadsheets, exce
-description: "Cells.Cloud API pour Excel opérer : opérer Excel avec des tâches"
+description: "Cells.Cloud API pour Excel fonctionner : exécuter Excel avec des tâches"
 weight: 100
 kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Tâches
 ---

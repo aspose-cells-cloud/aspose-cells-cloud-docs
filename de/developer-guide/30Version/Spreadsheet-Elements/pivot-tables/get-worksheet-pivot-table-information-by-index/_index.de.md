@@ -1,6 +1,6 @@
 ﻿---
 title: Holen Sie sich eine Pivot-Tabelle in einem Excel-Arbeitsblatt
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Erhalten
 type: docs
 url: /de/pivot-tables/get/

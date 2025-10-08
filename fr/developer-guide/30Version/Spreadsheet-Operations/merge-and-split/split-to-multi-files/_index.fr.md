@@ -1,6 +1,6 @@
 ﻿---
 title: Diviser un fichier Excel en plusieurs fichiers
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Fichier Split Multi Excel
 type: docs
 url: /fr/split-an-excel-file-to-multi-files/
@@ -20,7 +20,7 @@ POST http://api.aspose.cloud/v3.0/cells/split
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

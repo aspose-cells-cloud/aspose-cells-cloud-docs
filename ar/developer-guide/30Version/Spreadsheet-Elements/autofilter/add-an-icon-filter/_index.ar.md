@@ -1,6 +1,6 @@
 ﻿---
 title: إضافة مرشح أيقونة في ورقة عمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: إضافة فلتر الأيقونات
 type: docs
 url: /ar/autofilter/add-icon-filter/

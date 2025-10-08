@@ -1,6 +1,6 @@
 ﻿---
 title: Lavorare con SaveResult Tas
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /it/tasks/save-result/
 aliases: [/working-with-saveresult-task/]

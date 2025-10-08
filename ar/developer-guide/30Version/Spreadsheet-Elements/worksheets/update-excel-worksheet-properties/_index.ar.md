@@ -1,6 +1,6 @@
 ﻿---
 title: تحديث الخصائص على ورقة العمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: تحديث
 type: docs
 url: /ar/worksheets/update-properties/

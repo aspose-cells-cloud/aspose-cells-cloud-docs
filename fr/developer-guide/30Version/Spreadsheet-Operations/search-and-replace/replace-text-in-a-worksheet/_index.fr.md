@@ -1,6 +1,6 @@
 ﻿---
 title: Remplacer du texte dans une feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Remplacer dans la feuille de calcul
 type: docs
 url: /fr/replace-text-in-a-worksheet/
@@ -9,7 +9,7 @@ aliases: [/replace-text-in-a-workbook/]
 keywords: Find text from Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) worksheet
 description: Aspose.Cells Cloud REST API prend en charge la recherche de texte à partir de la feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 70
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Remplacer du texte dans une feuille de calcul Excel
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Remplacer du texte dans une feuille de calcul Excel
 ---
 Ce REST API indique le texte `replace` dans une feuille de calcul Excel.
 
@@ -21,14 +21,14 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/replaceTex
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Nom du document.|
-| nom de la feuille| chaîne| chemin| Nom de la feuille de travail.|
+| nom de la feuille| chaîne| chemin| Nom de la feuille de calcul.|
 | ancienneValeur| chaîne| requête|L'ancien texte à remplacer.|
-| nouvelleValeur| chaîne| requête| Le nouveau texte à remplacer par.|
+| nouvelle valeur| chaîne| requête| Le nouveau texte à remplacer par.|
 | dossier| chaîne| requête| Dossier du document.|
 | nom de stockage| chaîne| requête| nom de stockage.|
 

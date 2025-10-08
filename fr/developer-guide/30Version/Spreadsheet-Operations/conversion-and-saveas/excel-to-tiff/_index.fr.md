@@ -1,6 +1,6 @@
 ﻿---
 title: Excel à TIF
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linketitle: Excel to Tif
 type: docs
 url: /fr/convert-excel-file-to-tiff-file/
@@ -26,7 +26,7 @@ Ce fichier Excel REST API `export` à TIFF.
 
 |**API**|**Taper**|**Description**|**Lien Swagger**|
 |:- |:- |:- |:- |
-|/cellules/convertir|METTRE|Convertit le classeur du contenu de la requête vers un format donné|[PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)|
+|/cellules/convertir|METTRE|Convertit le classeur à partir du contenu de la requête vers un format donné|[PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)|
 |/cellules/{nom}|OBTENIR|Exporte le classeur vers un autre format.|[ObtenirWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)|
 |/cellules/{nom}/enregistrer sous|POSTE|Exporter le classeur au format|[PostDocumentEnregistrer sous](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)|
 

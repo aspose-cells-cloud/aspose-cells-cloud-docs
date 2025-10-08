@@ -1,6 +1,6 @@
 ﻿---
 title: Travailler avec l'objet de liste Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: ListObject
 type: docs
 url: /fr/list-objects/
@@ -10,13 +10,13 @@ description: Aspose.Cells Cloud REST API prend en charge l'ajout, la suppression
 weight: 100
 kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, ListObjects
 ---
-Les tableaux de Excel permettent de structurer des ensembles de données. Ils offrent des fonctionnalités pratiques pour organiser les données, fournir des en-têtes et appliquer des filtres. Maîtrisez les tableaux de Excel et analysez vos données rapidement et facilement.
+Les tableaux de Excel permettent de structurer des ensembles de données. Ils offrent des fonctionnalités pratiques comme l'organisation des données, la création d'en-têtes et l'application de filtres. Maîtrisez les tableaux de Excel et analysez vos données rapidement et facilement.
 
-Comment ajouter, trier et filtrer un tableau, et comment afficher une ligne de total à la fin d'un tableau.
+&nbsp;&nbsp;&nbsp;&nbsp;Comment ajouter, trier et filtrer un tableau, et comment afficher une ligne de total à la fin d'un tableau.
 
 ## Comment travailler avec une table (objet liste)
   
 - [Comment ajouter un tableau (objet de liste) à l'intérieur de la feuille de calcul.](/cells/fr/add-a-list-object-or-table-inside-the-worksheet/)
-- [Comment mettre à jour un tableau (objet de liste) dans la feuille de calcul.](/cells/fr/update-a-list-object-or-table-inside-the-worksheet/)
+- [Comment mettre à jour un tableau (objet de liste) à l'intérieur de la feuille de calcul.](/cells/fr/update-a-list-object-or-table-inside-the-worksheet/)
 - [Comment convertir un tableau (objet liste) en plage.](/cells/fr/convert-list-object-or-table-to-range/)
 - [Comment trier les données d'un tableau.](/cells/fr/sort-table-data/)

@@ -1,6 +1,6 @@
 ﻿---
 title: إضافة كائن قائمة في ورقة عمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: إعلان
 type: docs
 url: /ar/list-objects/add/

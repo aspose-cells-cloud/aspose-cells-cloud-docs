@@ -1,6 +1,6 @@
 ﻿---
 title: حساب جميع الصيغ على كتاب العمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: احسب
 type: docs
 url: /ar/calculate-all-formulas-on-an-excel-file/

@@ -1,6 +1,6 @@
 ﻿---
 title: Как создать рабочую книгу Excel с помощью шаблона fil
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Шаблон Fil
 type: docs
 url: /ru/create-an-excel-file-with-template-file/

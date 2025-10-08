@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma sayfasına bir simge filtresi ekleyin
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Simge filtresi ekle
 type: docs
 url: /tr/autofilter/add-icon-filter/

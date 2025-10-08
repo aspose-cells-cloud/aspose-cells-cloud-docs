@@ -1,6 +1,6 @@
 ﻿---
 title: Berechnen Sie alle Formeln auf einem Excel Arbeitsbuch
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Berechnen
 type: docs
 url: /de/calculate-all-formulas-on-an-excel-file/

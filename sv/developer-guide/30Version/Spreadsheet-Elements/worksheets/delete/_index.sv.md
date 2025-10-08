@@ -1,6 +1,6 @@
 ﻿---
 title: Hur man arbetar med att ta bort kalkylblad i en Excel-arbetsbok
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ta bort
 type: docs
 url: /sv/worksheets/delete/

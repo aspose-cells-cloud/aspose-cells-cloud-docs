@@ -1,6 +1,6 @@
 ﻿---
 title: Come lavorare con la visibilità su un foglio di lavoro Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Visibilità
 type: docs
 url: /it/worksheets/panes/

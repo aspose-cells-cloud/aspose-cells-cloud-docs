@@ -1,6 +1,6 @@
 ﻿---
 title: Excel Dosyasının Kilidini Aç
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Excel Dosyasının Kilidini Aç
 type: docs
 url: /tr/unlock-excel-files/

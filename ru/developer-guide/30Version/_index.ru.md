@@ -1,6 +1,6 @@
 ﻿---
 title: Руководство разработчика 3.
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /ru/developer-guide-3.0/
 aliases: [/developer-guide/v3.0/,/developer-guide-v3.0/]

@@ -1,6 +1,6 @@
 ﻿---
 title: العمل مع الرابط التشعبي Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 linktitle: رابط تشعبي
 url: /ar/hyperlinks/

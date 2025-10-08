@@ -1,7 +1,7 @@
 ﻿---
 title: Legen Sie eine bestimmte Dokumenteigenschaft fest
-second_title: Aspose.Cells Cloud Documen
-linktitle: Aktualisierung
+second_title: Documen
+linktitle: Aktualisieren
 type: docs
 url: /de/document-properties/update/
 aliases: [/set-a-particular-document-property/]

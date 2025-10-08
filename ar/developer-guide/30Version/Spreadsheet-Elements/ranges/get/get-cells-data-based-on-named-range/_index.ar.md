@@ -1,6 +1,6 @@
 ﻿---
 title: الحصول على بيانات الخلايا بناءً على النطاق المسمى
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: قيمة
 type: docs
 url: /ar/ranges/get/values/

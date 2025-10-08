@@ -1,6 +1,6 @@
 ﻿---
 title: Mehrere Zeilen in einem Arbeitsblatt Excel automatisch anpassen
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Reihe
 type: docs
 url: /de/worksheets/autofit/rows/

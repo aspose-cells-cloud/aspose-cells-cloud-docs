@@ -1,6 +1,6 @@
 ﻿---
 title: Comment obtenir un contenu différent à partir d'une feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Gé
 type: docs
 url: /fr/worksheets/get/
@@ -9,7 +9,7 @@ description: Aspose.Cells Cloud REST API prend en charge l'obtention de contenu 
 weight: 20
 kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Comment obtenir un contenu différent à partir d'une feuille de calcul Excel
 ---
-## Travailler pour obtenir une feuille de travail Excel.
+## Travailler avec l'obtention d'une feuille de travail Excel.
 
 - [Comment obtenir une feuille de calcul Excel avec différents formats.](/cells/fr/worksheets/get-worksheet/) 
     - [Comment convertir la feuille de calcul Excel en image.](/cells/fr/worksheets/to-image/)

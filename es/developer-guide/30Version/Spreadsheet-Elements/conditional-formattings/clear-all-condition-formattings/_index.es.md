@@ -4,7 +4,7 @@ type: docs
 url: /es/conditional-formattings/clear/
 aliases: [/clear-all-condition-formattings/]
 keywords: REST API, spreadsheets, excel, clear all condition formatting
-description: "Cells.Cloud API para Excel opera: borra todos los formatos de condición"
+description: "Cells.Cloud API para Excel operar: borrar todos los formatos de condición"
 weight: 80
 kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, JSON, Markdown, Borrar formatos de condición
 ---
@@ -62,7 +62,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditi
 
 {{< /tabs >}}
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
  
 Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
 

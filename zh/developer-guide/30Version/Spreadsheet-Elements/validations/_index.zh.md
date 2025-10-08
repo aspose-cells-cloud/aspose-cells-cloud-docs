@@ -1,6 +1,6 @@
 ﻿---
 title: 使用 Excel 验证
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: 验证
 type: docs
 url: /zh/validations/
@@ -13,7 +13,7 @@ kwords: Excel, Office 云, REST API, 电子表格, PDF, CSV, Json, Markdown, 验
 
 例如，用户可以指定安排在上午 9:00 至下午 6:00 之间的会议。
 
-因为我们可以在 Excel 中使用数据验证来确保值是正数、15 到 30 之间的日期、确保日期发生在接下来的 30 天内，或者确保文本输入少于 25 个字符等。
+因为我们可以在 Excel 中使用数据验证来确保值是正数、日期在 15 到 30 之间、确保日期发生在接下来的 30 天内，或者确保文本输入少于 25 个字符等。
 
 ## 对 Excel 文件进行验证
 

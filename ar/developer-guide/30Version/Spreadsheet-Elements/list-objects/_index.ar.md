@@ -1,6 +1,6 @@
 ﻿---
 title: العمل مع كائن القائمة Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: قائمة الكائنات
 type: docs
 url: /ar/list-objects/

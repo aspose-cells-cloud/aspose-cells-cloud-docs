@@ -1,6 +1,6 @@
 ﻿---
 title: Dikey sayfa sonu ekle
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Dikey sayfa sonu ekle
 type: docs
 url: /tr/page-breaks/add-vertical-page-break/

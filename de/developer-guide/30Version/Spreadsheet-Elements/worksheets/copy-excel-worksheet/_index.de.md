@@ -1,6 +1,6 @@
 ﻿---
 title: Kopiert Inhalte und Formate aus einem anderen Arbeitsblatt
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Polizist
 type: docs
 url: /de/worksheets/copy/

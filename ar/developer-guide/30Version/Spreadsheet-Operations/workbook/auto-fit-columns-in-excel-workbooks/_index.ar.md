@@ -1,6 +1,6 @@
 ﻿---
 title: أعمدة ملائمة تلقائيًا على ملف Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: عمود
 type: docs
 url: /ar/autofit-columns-on-an-excel-file/

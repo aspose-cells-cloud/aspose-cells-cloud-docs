@@ -3,7 +3,7 @@ title:  Actualización del gráfico de segunda categoría Axi
 type: docs
 url: /es/charts/second-category-axis/update/
 weight: 160
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Actualizar gráfico del segundo eje de categoría
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Actualizar gráfico, eje de segunda categoría
 ---
  Este REST API indica Actualizar Gráfico de Segunda Categoría Eje.
  
@@ -61,7 +61,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/" \
  
 ## Familia de SDK en la nube
  
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
  
 Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
  

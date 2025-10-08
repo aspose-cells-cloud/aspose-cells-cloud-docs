@@ -1,6 +1,6 @@
 ﻿---
 title: 导出列表对象
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: 列表对象
 type: docs
 url: /zh/export-excel-listobject-to-different-formats/
@@ -18,9 +18,9 @@ kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdo
 |:- |:- |:- |:- |
 |/单元格/导出|邮政|将请求内容中的 Excel 导出为某种格式|[出口后](https://apireference.aspose.cloud/cells/#/LightCells/PostExport)|
 
-这[OpenAPI规范](https://apireference.aspose.cloud/cells/#/LightCells/PostExport)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/LightCells/PostExport)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
 
-您可以使用**cURL**命令行工具可轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用 Cloud API。
+您可以使用**cURL**命令行工具可轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
 
 - **要求**
 

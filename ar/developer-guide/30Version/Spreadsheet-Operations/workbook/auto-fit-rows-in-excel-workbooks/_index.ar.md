@@ -1,6 +1,6 @@
 ﻿---
 title: ضبط الصفوف تلقائيًا على دفتر العمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: صف
 type: docs 
 url: /ar/autofit-rows-on-an-excel-file/

@@ -1,6 +1,6 @@
 ﻿---
 title:  Segmentador de inserción de objetos de lista
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Insertar rebanada
 type: docs
 keywords: Insert slicer for list object

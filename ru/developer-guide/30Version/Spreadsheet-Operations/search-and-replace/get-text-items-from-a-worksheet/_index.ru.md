@@ -1,6 +1,6 @@
 ﻿---
 title: Получить текстовые элементы из рабочего листа Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Получить в рабочем листе
 type: docs
 url: /ru/worksheets/get-text-items/

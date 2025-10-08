@@ -1,6 +1,6 @@
 ﻿---
 title: Convertire l'oggetto elenco in intervallo in un foglio di lavoro Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Conversione
 type: docs
 url: /it/list-objects/to-range/

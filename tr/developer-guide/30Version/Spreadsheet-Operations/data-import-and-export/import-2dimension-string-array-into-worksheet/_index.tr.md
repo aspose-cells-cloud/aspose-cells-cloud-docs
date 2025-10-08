@@ -1,7 +1,7 @@
 ﻿---
 title: 2 Boyutlu Dize Dizisini Excel Çalışma Sayfasına Aktar
-second_title: Aspose.Cells Cloud Documen
-linktitle: boyutlu dize dizisini içe aktar
+second_title: Documen
+linktitle: 2 boyutlu dize dizisini içe aktar
 type: docs
 url: /tr/import-a-2D-string-array-into-excel-worksheet/
 aliases: [/import-2dimension-string-array-into-excel-worksheet/,/import-2dimension-string-array-into-worksheet/,/import-data/-2dimension-string-array/,/import-data/2dimension-string-array/,/import/2dimension-string-array/ ]
@@ -32,7 +32,7 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
 | İlk Sıra| int||
 | İlkSütun| int||
 | Veri|Sicim[,]||
-| Hedef Çalışma Sayfası| sicim| hedef çalışma sayfası adı.|
+|Hedef Çalışma Sayfası| sicim| hedef çalışma sayfası adı.|
 | IsInsert| sicim| doğru/yanlış.|
 | Veri Türünü İçe Aktar| sicim|IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData.|
 | Kaynak| Dosya Kaynağı| BatchData parametresi boş olduğunda veri dosyasının konumunu gösterir.|

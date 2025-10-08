@@ -1,6 +1,6 @@
 ﻿---
-title: Obtenga una tabla dinámica en una hoja de cálculo Excel
-second_title: Aspose.Cells Cloud Documen
+title: Obtener una tabla dinámica en una hoja de cálculo Excel
+second_title: Documen
 linktitle: Conseguir
 type: docs
 url: /es/pivot-tables/get/
@@ -10,7 +10,7 @@ description: Aspose.Cells Cloud REST API admite la obtención de una tabla diná
 weight: 10
 kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Obtener una tabla dinámica en una hoja de cálculo Excel
 ---
-Este REST API indica obtener la información de la hoja de trabajo `pivottable` por índice.
+Este REST API indica obtener información de la hoja de trabajo `pivottable` por índice.
  
 ## RSET API
  
@@ -177,7 +177,7 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/workshe
  
 ## Familia de SDK en la nube
  
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
  
 Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
  

@@ -1,6 +1,6 @@
 ﻿---
 title: 使用 Excel 工作表
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: 工作表
 type: docs
 url: /zh/worksheets/
@@ -29,7 +29,7 @@ kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdo
 - [如何复制 Excel 工作表。](/cells/zh/worksheets/copy/)
 - [如何重命名 Excel 工作表。](/cells/zh/worksheets/rename/)
 - [如何更新 Excel 工作表属性。](/cells/zh/worksheets/update-properties/)
-- [如何设置Excel工作表缩放。](/cells/zh/worksheets/zoom/)
+- [如何设置 Excel 工作表缩放。](/cells/zh/worksheets/zoom/)
 - [如何冻结 Excel 工作表窗格。](/cells/zh/worksheets/freeze-panes/)
 - [如何解冻 Excel 工作表窗格。](/cells/zh/worksheets/unfreeze-panes/)
 - [如何删除 Excel 工作表。](/cells/zh/worksheets/delete/)

@@ -1,6 +1,6 @@
 ﻿---
 title: Сохранить вариант
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Сохранить вариант
 type: docs
 url: /ru/save-options/

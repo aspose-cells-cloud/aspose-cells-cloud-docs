@@ -1,6 +1,6 @@
 ﻿---
 title: Excel إلى HTM
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Excel إلى HTM
 type: docs
 url: /ar/convert-excel-file-to-html-file/

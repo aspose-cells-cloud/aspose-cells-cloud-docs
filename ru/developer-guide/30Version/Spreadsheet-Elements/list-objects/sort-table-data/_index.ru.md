@@ -1,6 +1,6 @@
 ﻿---
 title: Сортировка данных объекта списка на рабочем листе Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Сор
 type: docs
 url: /ru/list-objects/sort-data/

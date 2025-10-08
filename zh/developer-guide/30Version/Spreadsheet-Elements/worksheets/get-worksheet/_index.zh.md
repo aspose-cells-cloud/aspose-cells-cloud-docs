@@ -1,6 +1,6 @@
 ﻿---
 title: 如何从 Excel 工作表中获取不同的内容
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: 葛
 type: docs
 url: /zh/worksheets/get/

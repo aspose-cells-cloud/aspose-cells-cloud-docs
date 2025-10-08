@@ -1,6 +1,6 @@
 ﻿---
 title: Ajouter un tableau croisé dynamique dans une feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ajouter
 type: docs
 url: /fr/pivot-tables/add/
@@ -19,7 +19,7 @@ Ce REST API indique à `add` un tableau croisé dynamique dans une feuille de ca
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables
  
 ```
- Les paramètres de la requête sont :
+ Les paramètres de la requête sont :
  
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
@@ -28,7 +28,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables
 | demande|| corps| CreatePivotTableRequest dto dans le corps de la requête.|
 | dossier| chaîne| requête| Dossier du document.|
 | nom de stockage| chaîne| requête| nom de stockage.|
-| sourceData| chaîne| requête| Les données du nouveau cache de tableau croisé dynamique.|
+| données sources| chaîne| requête| Les données du nouveau cache de tableau croisé dynamique.|
 |destCellName| chaîne| requête| La cellule dans le coin supérieur gauche de la plage de destination du rapport de tableau croisé dynamique.|
 | Nom de la table| chaîne| requête| Le nom du nouveau rapport de tableau croisé dynamique.|
 | utiliser la même source| booléen| requête| Indique si la même source de données est utilisée lorsqu'un autre tableau croisé dynamique existant utilise cette source de données. Si la propriété est vraie, la mémoire est économisée.|

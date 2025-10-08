@@ -1,6 +1,6 @@
 ﻿---
 title: Importer des données à l'aide de storag
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Importer des données avec stockage
 type: docs
 url: /fr/import-data-with-using-storage/
@@ -19,7 +19,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/importdata
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
@@ -28,7 +28,7 @@ Les paramètres de la requête sont :
 | nom de stockage| chaîne| requête| nom de stockage.|
 | importer des données|| corps||
 
-**Les paramètres des options d'importation des données** sont décrits dans[le lien de référence](/cells/fr/import/#import-data-option-parameter).
+**Les paramètres des options d'importation de données** sont décrits dans[le lien de référence](/cells/fr/import/#import-data-option-parameter).
 
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
 

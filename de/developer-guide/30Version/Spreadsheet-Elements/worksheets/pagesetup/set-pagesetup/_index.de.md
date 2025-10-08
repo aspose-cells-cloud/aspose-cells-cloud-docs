@@ -1,6 +1,6 @@
 ﻿---
 title: Festlegen der Seiteneinrichtung für ein Arbeitsblatt
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Seiteneinstellungen festlegen
 type: docs
 url: /de/set-page-setup/

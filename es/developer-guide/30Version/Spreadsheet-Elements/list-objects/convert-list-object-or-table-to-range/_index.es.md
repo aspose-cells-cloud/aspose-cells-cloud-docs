@@ -1,6 +1,6 @@
 ﻿---
 title: Convertir un objeto de lista en un rango en una hoja de cálculo Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Conversión
 type: docs
 url: /es/list-objects/to-range/
@@ -8,7 +8,7 @@ aliases: [/convert-list-object-or-table-to-range/,/tables/to-range/]
 keywords: Convert a list object(table) to range in an Excel worksheet
 description: Aspose.Cells Cloud REST API admite la conversión de un objeto de lista (tabla) a un rango en una hoja de cálculo Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 30
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Convertir objeto de lista a rango en una hoja de cálculo Excel
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Convertir objeto de lista en rango en una hoja de cálculo Excel
 ---
 Este REST API indica `convert table or list object to range` en una hoja de cálculo Excel.
 
@@ -66,7 +66,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listob
 
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
 
 Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
 

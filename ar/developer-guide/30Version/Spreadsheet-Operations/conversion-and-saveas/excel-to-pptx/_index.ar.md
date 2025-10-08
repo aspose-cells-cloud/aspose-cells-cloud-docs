@@ -1,6 +1,6 @@
 ﻿---
 title: Excel إلى باوربوينت
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Excel إلى باوربوينت
 type: docs
 url: /ar/convert-excel-file-to-pptx-file/

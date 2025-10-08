@@ -1,6 +1,6 @@
 ﻿---
 title: Cómo trabajar con el fondo en una hoja de cálculo Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Antecedentes
 type: docs
 url: /es/worksheets/background/
@@ -12,6 +12,6 @@ kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown
 ## Trabajando con el fondo en una hoja de cálculo Excel.
 
 - [Cómo establecer un fondo en una hoja de cálculo Excel.](/cells/es/worksheets/background/add/) 
-- [Cómo eliminar el fondo de una hoja de cálculo Excel.](/cells/es/worksheets/background/delete/) 
+- [Cómo eliminar el fondo en una hoja de cálculo Excel.](/cells/es/worksheets/background/delete/) 
 
 

@@ -1,6 +1,6 @@
 ﻿---
 title: Обновить метаданные
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Обновление без использования хранилища
 type: docs
 url: /ru/metadata/update/

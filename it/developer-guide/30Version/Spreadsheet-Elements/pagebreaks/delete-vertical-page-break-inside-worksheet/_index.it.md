@@ -1,6 +1,6 @@
 ﻿---
 title: Elimina interruzione di pagina verticale
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Elimina interruzione di pagina verticale
 type: docs
 url: /it/page-breaks/delete-vertical-page-break/

@@ -1,6 +1,6 @@
 ﻿---
-title: 批量分割
-second_title: Aspose.Cells Cloud Documen
+title: 批量拆分
+second_title: Documen
 type: docs
 url: /zh/batch/split
 keywords: Batch split Excel file
@@ -28,11 +28,11 @@ POST http://api.aspose.cloud/v3.0/cells/batch/split
 
 名称 | 类型 | 描述 | 备注
 ------------ | ------------- | ------------- | -------------
-源文件夹 | 字符串 | | [可选]源存储 | 字符串 | | [可选]匹配条件 | MatchConditionRequest | | [可选]格式 | 字符串 | | [可选]从索引 | 整数 | | [可选]到索引 | 整数 | | [可选]输出文件夹 | 字符串 | | [可选]保存选项 | SaveOptions | | [可选]**MatchConditionRequest 属性**
+源文件夹 | 字符串 | | [可选]源存储 | 字符串 | | [可选]匹配条件 | 匹配条件请求 | | [可选]格式 | 字符串 | | [可选]从索引 | 整数 | | [可选]到索引 | 整数 | | [可选]输出文件夹 | 字符串 | | [可选]保存选项 | 保存选项 | | [可选]**MatchConditionRequest 属性**
 
 名称 | 类型 | 描述 | 备注
 ------------ | ------------- | ------------- | -------------
-RegexPattern | 字符串 | | [可选]FullMatchConditions | 字符串[]| | [可选][OpenAPI规范](https://reference.aspose.cloud/cells/#/Batch/PostBatchSplit)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+RegexPattern | 字符串 | | [可选]FullMatchConditions | 字符串[]| | [可选][OpenAPI 规范](https://reference.aspose.cloud/cells/#/Batch/PostBatchSplit)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
 
 您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
 

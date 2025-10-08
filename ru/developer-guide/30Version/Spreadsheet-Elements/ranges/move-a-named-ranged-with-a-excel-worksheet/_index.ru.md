@@ -1,6 +1,6 @@
 ﻿---
 title: Переместить именованный диапазон с помощью рабочего листа Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Мов
 type: docs
 url: /ru/ranges/move/

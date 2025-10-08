@@ -1,6 +1,6 @@
 ﻿---
 title: تصدير صفحة من ورقة عمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: الصفحة
 type: docs
 url: /ar/worksheets/page-to-different-formats/

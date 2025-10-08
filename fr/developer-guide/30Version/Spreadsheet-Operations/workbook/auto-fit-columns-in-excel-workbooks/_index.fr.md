@@ -1,6 +1,6 @@
 ﻿---
 title: Ajuster automatiquement les colonnes sur un fichier Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Colonne
 type: docs
 url: /fr/autofit-columns-on-an-excel-file/
@@ -20,12 +20,12 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/autofitcolumns
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Nom du document.|
-|[Options d'auto-ajustement](/cells/fr/auto-fitter-options/) || corps| Options d'installation automatique.|
+|[Options d'installation automatique](/cells/fr/auto-fitter-options/) || corps| Options d'installation automatique.|
 | colonne de démarrage| entier| requête| Colonne de départ.|
 | fin de colonne| entier| requête| Colonne de fin.|
 | dossier| chaîne| requête| Dossier du document.|

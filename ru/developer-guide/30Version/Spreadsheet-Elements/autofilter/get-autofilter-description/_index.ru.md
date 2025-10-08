@@ -1,6 +1,6 @@
 ﻿---
 title: Получить автоматический фильтр в рабочем листе Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Получить автоматический фильтр
 type: docs
 url: /ru/autofilter/get/

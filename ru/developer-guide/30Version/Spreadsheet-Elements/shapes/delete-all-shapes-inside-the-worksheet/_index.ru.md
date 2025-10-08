@@ -1,6 +1,6 @@
 ﻿---
 title: Удалить все фигуры на листе Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Клеа
 type: docs
 url: /ru/shapes/clear/

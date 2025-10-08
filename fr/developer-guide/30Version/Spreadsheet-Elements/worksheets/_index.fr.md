@@ -1,6 +1,6 @@
 ﻿---
 title: Travailler avec la feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Feuille de travail
 type: docs
 url: /fr/worksheets/
@@ -10,7 +10,7 @@ description: Aspose.Cells Cloud REST API prend en charge l'utilisation de feuill
 weight: 100
 kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Utilisation de la feuille de calcul Excel.
 ---
-Une feuille de calcul est un ensemble de cellules dans lesquelles vous conservez et manipulez des données. Chaque classeur Excel peut contenir plusieurs feuilles de calcul.
+Une feuille de calcul est un ensemble de cellules où sont stockées et manipulées des données. Chaque classeur Excel peut contenir plusieurs feuilles de calcul.
 
 **Feuille de travail Opération**
 
@@ -24,7 +24,7 @@ Une feuille de calcul est un ensemble de cellules dans lesquelles vous conservez
 - [Comment trier les données de la feuille de calcul Excel.](/cells/fr/worksheets/sort-data/)
 - [Comment masquer la feuille de calcul Excel.](/cells/fr/worksheets/hide/)
 - [Comment afficher la feuille de calcul Excel.](/cells/fr/worksheets/unhide/)
-- [Comment déplacer la feuille de travail Excel.](/cells/fr/worksheets/move/)
+- [Feuille de travail Comment déplacer Excel.](/cells/fr/worksheets/move/)
 - [Comment calculer la formule Excel.](/cells/fr/worksheets/calculate-formula/)
 - [Comment copier la feuille de calcul Excel.](/cells/fr/worksheets/copy/)
 - [Comment renommer la feuille de calcul Excel.](/cells/fr/worksheets/rename/)
@@ -34,4 +34,4 @@ Une feuille de calcul est un ensemble de cellules dans lesquelles vous conservez
 - [Comment dégeler les volets de la feuille de calcul Excel.](/cells/fr/worksheets/unfreeze-panes/)
 - [Comment supprimer la feuille de calcul Excel.](/cells/fr/worksheets/delete/)
 - [Comment supprimer l'arrière-plan de la feuille de calcul Excel.](/cells/fr/worksheets/background/delete/)
-- [Comment travailler avec l'ajustement automatique dans un classeur Excel](/cells/fr/worksheets/autofit/)
+- [Comment travailler avec l'ajustement automatique d'un classeur Excel](/cells/fr/worksheets/autofit/)

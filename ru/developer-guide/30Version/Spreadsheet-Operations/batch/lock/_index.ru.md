@@ -1,6 +1,6 @@
 ﻿---
 title: Пакетная блокировка файла Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /ru/batch/lock
 keywords: Batch lock of multiple Excel files
