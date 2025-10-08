@@ -1,13 +1,15 @@
 ﻿---
-title: Förvaring
-second_title: Aspose.Cells Cloud Documen
+title: Så här ställer du in lagringspositionen för Aspose.Cells Cloud Docker Container-lagring
+second_title: Documen
+ArticleTitle: Aspose.Cells Cloud Docker Container Storage Configuratio
+linktitle: Containerlagring
 type: docs
 url: /sv/docker/storage/
-description: Hur man ställer in lagringsposition för Aspose.Cells Cloud för Docker
+description: Så här ställer du in lagringspositionen för Aspose.Cells Cloud Docker Container-lagring
 weight: 30
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Lagring
+kwords: Excel Cloud Docker-behållare, Self-Cloud Docker-behållare, REST Docker-behållare, kalkylblad, PDF, CSV, JSON, Markdown, Docker-avbildning, Run Docker-behållare
 ---
-##  Standardkonfiguration för lagring ##
+## Standardkonfiguration för lagring ##
 
 {{< tabs tabTotal="2" tabID="1" tabName1="windows" tabName2="linux" >}}
 
@@ -48,7 +50,6 @@ kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Lagr
 
 ##  Standardposition ##
 
-
 - **fönster**
 
 ```powershell
@@ -72,9 +73,10 @@ Behöver ange om lagringsprofilen för molnbildsfilen Aspose.Cells när kunden a
 
 ``` powershell
 
-docker run  -d  -v c:/data:c:/data  -p 47900:5000  -e LicensePublicKey=yourLicensePublicKey	 -e LicensePrivateKey=yourLicensePrivateKey	 -e storagesCredentialsFilePath=c:/data/storageResource.json --name asposecellscloud aspose/cells-cloud:ltsc2019.22.2.0
+docker run  -d  -v c:/data:c:/data  -p 47900:5000  -e LicensePublicKey=yourLicensePublicKey  -e LicensePrivateKey=yourLicensePrivateKey  -e storagesCredentialsFilePath=c:/data/storageResource.json --name asposecellscloud aspose/cells-cloud:ltsc2019.22.9.0
 
 ```
 
-**Referensdokument** : 
-  - [Docker Run]( https://docs.docker.com/engine/reference/commandline/run/)
+**Referensdokument** :
+
+- [Hur man kör Cloud Docker-containern Aspose.Cells.]( https://docs.aspose.cloud/cells/run-aspose-cells-cloud-docker-container/)

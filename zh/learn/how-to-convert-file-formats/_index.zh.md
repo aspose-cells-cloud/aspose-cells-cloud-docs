@@ -9,7 +9,7 @@ kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdo
 ---
 ## 介绍
 
-Aspose.Cells 云表格 API 提供一套双通道接口，用于本地与云端表格文件的转换，支持 Excel (XLS、XLSX)、CSV、HTML、PDF 等格式，轻松转换，满足各种需求。
+Aspose.Cells 云表格 API 提供一套双通道接口，用于本地和云端表格文件的转换，支持 Excel (XLS、XLSX)、CSV、HTML、PDF 等格式，轻松转换，满足各种需求。
 
 ### 三种转换模式·统一对象模型·全格式覆盖
 
@@ -131,9 +131,9 @@ cellsApi.ExportWorksheetAsFormat (new SDK.Request.ExportWorksheetAsFormatRequest
 ## 安装并初始化 Aspose.Cells Cloud SDK
 
 在您的 .NET 项目中安装 Aspose.Cells-Cloud NuGet 包，您可以使用 NuGet 包管理器控制台或 Visual Studio 中的 NuGet 包管理器。
-以下是使用程序包管理器控制台安装程序包的方法：
+以下是使用软件包管理器控制台安装软件包的方法：
 
-```Powershell
+```powershell
 
 Install-Package Aspose.Cells-Cloud
 

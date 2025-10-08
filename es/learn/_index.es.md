@@ -3,6 +3,7 @@ title: Aprende Aspose.Cells Nube
 type: docs
 url: /es/learn
 aliases: [/learn-aspose-cells-cloud]
+linktitle: Lear
 description: Bienvenido a aprender Aspose.Cells Nube
 weight: 15
 kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Bienvenido a aprender Aspose.Cells Nube
@@ -17,9 +18,9 @@ Un servicio basado en REST para crear, editar, convertir y analizar hojas de cá
 
 ## ¿Quién debería utilizar las API en la nube Aspose.Cells?
 
-Desarrolladores que crean soluciones de automatización de hojas de cálculo, desde principiantes hasta equipos empresariales. Cree, edite, convierta y analice archivos XLSX/CSV con API REST via sin necesidad de instalaciones Excel.
+Desarrolladores que crean soluciones de automatización de hojas de cálculo, desde principiantes hasta equipos empresariales. Cree, edite, convierta y analice archivos XLSX/CSV con las API REST via sin necesidad de instalaciones Excel.
 
-## **Cómo usar Aspose.Cells Cloud API en dos pasos**
+## **Cómo utilizar Aspose.Cells Cloud API en dos pasos**
 
 ### *De cero a la automatización en 5 minutos*
 
@@ -44,7 +45,7 @@ curl -v "https://api.aspose.cloud/v4.0/cells/convert/spreadsheet?format=PDF" \
 -F "File=@input.xlsx"
 ```
 
-### **Ejecutar la hoja de cálculo API mediante el SDK**
+### **Ejecutar la hoja de cálculo API usando el SDK**
 
 ```python
 # Python SDK example
@@ -59,7 +60,7 @@ response = instance.convert_spreadsheet(ConvertSpreadsheetRequest( 'EmployeeSale
 
 ```
 
-## ¿Por qué debería utilizar las API de la nube Aspose.Cells?
+## ¿Por qué debería utilizar las API en la nube Aspose.Cells?
 
 ### El motor Excel de nivel empresarial para servicios en la nube
 

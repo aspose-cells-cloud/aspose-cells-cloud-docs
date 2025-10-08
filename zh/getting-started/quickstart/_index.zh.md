@@ -1,6 +1,8 @@
 ﻿---
-title: 快星
-second_title: Aspose.Cells Cloud Documen
+title: Aspose.Cells 云快速入门：5 分钟内创建电子表格应用程序
+second_title: Documen
+ArticleTitle: Aspose.Cells Cloud Quickstar
+linktitle: 快星
 type: docs
 url: /zh/quickstart/
 description: Aspose.Cells 云支持 Excel 创建、转换、合并、拆分、保护、内部对象操作等
@@ -43,7 +45,7 @@ Aspose Cloud 依赖于清晰、舒适的销售模式，您可以在决定购买�
 
 Aspose 非常重视安全问题。我们使用 JWT 令牌进行身份验证，并使用端到端 HTTPS 加密来确保所有客户端与服务器交互的安全。
 
-应用程序是一组唯一的 API 凭证 —**客户端 ID**和**客户端机密**您可以在致电我们的云服务 API 时使用它们进行身份验证。在大多数情况下，您只需要一个应用程序。在某些高级情况下，您可能需要注册并使用多个具有单独**客户端 ID 和密钥**证书。
+应用程序是一组唯一的 API 凭证 —**客户端 ID**和**客户端密钥**您可以在致电我们的云服务 API 时使用它们进行身份验证。在大多数情况下，您只需要一个应用程序。在某些高级情况下，您可能需要注册并使用多个具有单独**客户端 ID 和密钥**证书。
 
 要访问有关您的应用程序的信息，请执行以下步骤：
 
@@ -56,17 +58,17 @@ Aspose 非常重视安全问题。我们使用 JWT 令牌进行身份验证，�
 
 ![创建新应用程序.png](createnewapplication.png)
 
-4、进入创建页面，选择并输入您要构建的名称、描述、存储地址，创建成功后点击保存按钮返回上一页。
+4.进入创建页面，选择并输入要创建的名称、描述、存储地址，创建成功后点击保存按钮返回上一页。
 
 ![应用程序信息.png](applicationinfo.png)
 
 5. 滚动到页面底部，您将看到刚刚创建的应用程序信息框，单击它即可查看和更新您的安全凭证。
 
-![firstapp.png](firstapp.png)
+![第一个应用程序.png](firstapp.png)
 
 {{% alert style="info" %}}
 
-恭喜！您已成功获取安全凭证，可以验证 Aspose.Cells API 的通话。
+恭喜！您已成功获取安全凭证，可以验证 Aspose.Cells API 的呼叫。
 
 {{% /alert %}}
 
@@ -76,7 +78,7 @@ Aspose 非常重视安全问题。我们使用 JWT 令牌进行身份验证，�
 
 为了有效使用云 API，我们提供了一系列强大的[云 SDK](https://products.aspose.cloud/cells/family)适用于几乎所有主流操作系统（Windows、macOS、Linux、Android）和流行的编程语言，包括[安卓](https://products.aspose.cloud/cells/android), [C#](https://products.aspose.cloud/cells/net), [Python](https://products.aspose.cloud/cells/python), [Golang](https://products.aspose.cloud/cells/go), [Java](https://products.aspose.cloud/cells/java), [Node.js](https://products.aspose.cloud/cells/nodejs), [Perl](https://products.aspose.cloud/cells/perl), [PHP](https://products.aspose.cloud/cells/php), [红宝石](https://products.aspose.cloud/cells/ruby)， 和[迅速](https://products.aspose.cloud/cells/swift).
 
-以上所有 SDK 均托管于[GitHub](https://github.com/aspose-cells-cloud/)。每个存储库都包含大量代码示例来说明其用法。
+以上所有 SDK 均托管于[GitHub](https://github.com/aspose-cells-cloud/)。每个存储库都包含广泛的代码示例来说明其用法。
 
 ## 查看开发人员文档和代码示例
 

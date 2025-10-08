@@ -1,6 +1,8 @@
 ﻿---
-title: Fiyatlandırma Planı
-second_title: Aspose.Cells Cloud Documen
+title: "Aspose.Cells Bulut Fiyatlandırma Planı: Kullanım aşımı için kademeli fiyatlandırma modeliyle ayda 150 ücretsiz API arama"
+second_title: Documen
+ArticleTitle: Aspose.Cells Cloud Pricing Pla
+linktitle: Fiyatlandırma Planı
 type: docs
 url: /tr/pricing-plan/
 description: Aspose.Cells Bulut, Excel'in oluşturma, dönüştürme, birleştirme, bölme, korumalı, iç nesne işlemleri vb. işlemlerini destekler
@@ -50,6 +52,5 @@ Aspose, geliştiricilerin satın almaya karar vermeden önce kapsamlı bir şeki
         </tr>
     </tbody>
 </table>
-
 
  lütfen kontrol edin[Fiyatlandırma Planı ve Satın Alma Yöntemi](https://purchase.aspose.cloud/buy) Tek fiyatlandırma planımıza genel bir bakış sunan ve neden "yükseltme" veya "düşürme" olmadığını açıklayan web sayfası.

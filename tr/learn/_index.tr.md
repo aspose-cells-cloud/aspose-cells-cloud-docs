@@ -3,6 +3,7 @@ title: Aspose.Cells Clou'yu öğrenin
 type: docs
 url: /tr/learn
 aliases: [/learn-aspose-cells-cloud]
+linktitle: Öğrenmek
 description: Aspose.Cells Bulut'u öğrenmeye hoş geldiniz
 weight: 15
 kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Öğrenmeye Hoş Geldiniz Aspose.Cells Bulut

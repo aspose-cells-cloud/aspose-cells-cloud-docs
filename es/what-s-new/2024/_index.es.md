@@ -1,7 +1,7 @@
 ﻿---
 title: Novedades de Aspose.Cells Cloud en 2024
-second_title: Latest Updates & Feature
-linktitle: Novedades del 202
+second_title: Documen
+linktitle: Novedades en 202
 type: docs
 weight: 20
 url: /es/new-features/2024/
@@ -19,7 +19,7 @@ Bienvenido a las novedades de la documentación de la nube Aspose.Cells. Utilice
 
 ## Mejoras en la versión 24.11
 
-- Agregar función de conversión de texto en TextProcessingController.
+- Agregue la función de conversión de texto en TextProcessingController.
 
 ## Mejoras en la versión 24.10
 
@@ -36,7 +36,7 @@ Bienvenido a las novedades de la documentación de la nube Aspose.Cells. Utilice
 
 ## Mejoras en la versión 24.7
 
-- Añade una nueva función sobre cómo agregar contenido de texto.
+- Agregue una nueva función sobre cómo agregar contenido de texto.
 - Agregue el token de acceso obtenido por ID de cliente y secreto de cliente.
 
 ## Mejoras en la versión 24.6.1
@@ -75,4 +75,4 @@ Bienvenido a las novedades de la documentación de la nube Aspose.Cells. Utilice
 - Se corrigieron errores ortográficos para varias funciones.
 - Agregue el método PostFitTallToPages para el controlador de configuración de página.
 - Agregue el método PostFitWideToPages para el controlador de configuración de página.
-- Optimizar las opciones de guardado acerca de la paginación.
+- Optimizar las opciones de guardado acerca de paginado.

@@ -1,6 +1,8 @@
 ﻿---
-title: Hızlı yıldız
-second_title: Aspose.Cells Cloud Documen
+title: "Aspose.Cells Bulut Hızlı Başlangıç: 5 dakikada bir elektronik tablo uygulaması oluşturun"
+second_title: Documen
+ArticleTitle: Aspose.Cells Cloud Quickstar
+linktitle: Hızlı yıldız
 type: docs
 url: /tr/quickstart/
 description: Aspose.Cells Bulut, Excel'in oluşturma, dönüştürme, birleştirme, bölme, korumalı, iç nesne işlemleri vb. işlemlerini destekler
@@ -43,7 +45,7 @@ Daha sonra hesabınızda bireysel ayarlamalar yapmanız gerekiyor:
 
 Aspose, güvenlik konularına büyük önem vermektedir. Kimlik doğrulama için JWT belirtecini, tüm istemci-sunucu etkileşimlerini güvence altına almak içinse uçtan uca HTTPS şifrelemesini kullanıyoruz.
 
- Bir Uygulama, benzersiz API kimlik bilgilerinden oluşan bir kümedir —**Müşteri Kimliği** Ve**Müşteri Sırrı**API numaralı Bulutumuzu aradığınızda kimlik doğrulaması için bunları kullanabilirsiniz. Çoğu durumda, yalnızca tek bir Uygulamaya ihtiyacınız vardır. Bazı gelişmiş senaryolarda, ayrı ayrı birden fazla Uygulama kaydedip kullanmak isteyebilirsiniz.**İstemci Kimliği ve Gizli** kimlik bilgileri.
+ Bir Uygulama, benzersiz API kimlik bilgilerinden oluşan bir kümedir —**Müşteri Kimliği** Ve**Müşteri Sırrı** API numaralı Bulutumuzu aradığınızda kimlik doğrulaması için bunları kullanabilirsiniz. Çoğu durumda, yalnızca tek bir Uygulamaya ihtiyacınız vardır. Bazı gelişmiş senaryolarda, ayrı ayrı birden fazla Uygulama kaydedip kullanmak isteyebilirsiniz.**İstemci Kimliği ve Gizli** kimlik bilgileri.
 
 Başvurularınız hakkında bilgi edinmek için lütfen aşağıdaki adımları izleyin:
 
@@ -74,13 +76,13 @@ Tebrikler! Aspose.Cells API numaralı aramaları doğrulamak için güvenlik bil
 
  Olasılıklarınızı daha iyi anlamak için lütfen Aspose.Cells Bulut ürünlerinin geniş yelpazesini incelemek için bir dakikanızı ayırın. Bu yazılım ürünleri, yüksek performanslı bir temel üzerine inşa edilmiştir.[Bulut API](https://apireference.aspose.com/)7/24 hizmetinizdeyiz.
 
- Cloud API'in etkili kullanımı için güçlü bir aile sunuyoruz[Bulut SDK'ları](https://products.aspose.cloud/cells/family) neredeyse tüm büyük işletim sistemleri (Windows, macOS, Linux, Android) ve popüler programlama dilleri için,[Android](https://products.aspose.cloud/cells/android), [C#](https://products.aspose.cloud/cells/net), [Python](https://products.aspose.cloud/cells/python), [Golang](https://products.aspose.cloud/cells/go), [Java](https://products.aspose.cloud/cells/java), [Düğüm.js](https://products.aspose.cloud/cells/nodejs), [Perl](https://products.aspose.cloud/cells/perl), [PHP](https://products.aspose.cloud/cells/php), [Yakut](https://products.aspose.cloud/cells/ruby) , Ve[Süratli](https://products.aspose.cloud/cells/swift).
+ Cloud API'in etkili kullanımı için güçlü bir aile sunuyoruz[Bulut SDK'ları](https://products.aspose.cloud/cells/family)neredeyse tüm büyük işletim sistemleri (Windows, macOS, Linux, Android) ve popüler programlama dilleri için,[Android](https://products.aspose.cloud/cells/android), [C#](https://products.aspose.cloud/cells/net), [Python](https://products.aspose.cloud/cells/python), [Golang](https://products.aspose.cloud/cells/go), [Java](https://products.aspose.cloud/cells/java), [Düğüm.js](https://products.aspose.cloud/cells/nodejs), [Perl](https://products.aspose.cloud/cells/perl), [PHP](https://products.aspose.cloud/cells/php), [Yakut](https://products.aspose.cloud/cells/ruby) , Ve[Süratli](https://products.aspose.cloud/cells/swift).
 
  Yukarıdaki SDK'ların tümü şu adreste barındırılıyor:[GitHub](https://github.com/aspose-cells-cloud/)Her depo, kullanımını göstermek için çok çeşitli kod örnekleri içerir.
 
 ## Geliştirici Belgelerini ve Kod Örneklerini Kontrol Edin
 
-Hesabınız artık tamamen yapılandırılmış ve geliştirici ortamı yüklenmiştir. Seçtiğiniz SDK ile kod yazmaya başlayabilirsiniz. Lütfen şuraya bakın:[Geliştirici Kılavuzu](https://docs.aspose.cloud/cells/developer-guide/) Cloud API'i kolayca kullanmak için bilgi almak için.
+ Hesabınız artık tamamen yapılandırılmış ve geliştirici ortamı yüklenmiştir. Seçtiğiniz SDK ile kod yazmaya başlayabilirsiniz. Lütfen şuraya bakın:[Geliştirici Kılavuzu](https://docs.aspose.cloud/cells/developer-guide/) Cloud API'i kolayca kullanmak için bilgi almak için.
 
 Örn. Bir Çalışma Kitabını diğer biçimlere dönüştürün.
 

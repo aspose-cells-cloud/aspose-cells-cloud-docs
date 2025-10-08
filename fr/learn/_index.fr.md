@@ -3,17 +3,18 @@ title: Apprendre Aspose.Cells Clou
 type: docs
 url: /fr/learn
 aliases: [/learn-aspose-cells-cloud]
+linktitle: Lear
 description: Bienvenue pour apprendre Aspose.Cells Cloud
 weight: 15
 kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Bienvenue pour apprendre Aspose.Cells Cloud
 ---
 # Bienvenue sur Learn Aspose.Cells Cloud
 
-Ce site est dédié à aider les développeurs qui souhaitent utiliser les API Cloud Aspose.Cells pour créer des applications.
+Ce site est dédié à aider les développeurs qui souhaitent utiliser les API Cloud Aspose.Cells de développement framework pour créer des applications.
 
 ## Qu'est-ce que Aspose.Cells Cloud APIs ?
 
-Un service REST pour la création, l'édition, la conversion et l'analyse programmatiques de feuilles de calcul dans le cloud. Traitez les fichiers XLS, XLSX et CSV grâce à des API évolutives sans dépendances.
+Un service REST pour la création, la modification, la conversion et l'analyse programmatiques de feuilles de calcul dans le cloud. Traitez les fichiers XLS, XLSX et CSV grâce à des API évolutives sans dépendances.
 
 ## Qui devrait utiliser les API Cloud Aspose.Cells ?
 
@@ -26,7 +27,7 @@ Développeurs créant des solutions d'automatisation de feuilles de calcul, des 
 ###  Étape 1 :**Obtenez les identifiants API**
 
 1. [Inscrivez-vous gratuitement](https://dashboard.aspose.cloud/signup)  
-2. [Créer une application](https://dashboard.aspose.cloud/applications) → Copie `Client ID` et `Client Secret`  
+2. [Créer une application](https://dashboard.aspose.cloud/applications) → Copie `Client ID` & `Client Secret`  
 
 ###  Étape 2 :**Exécutez votre premier appel API**
 
@@ -67,7 +68,7 @@ Aspose.Cells Cloud est un puissant moteur Excel pour les services cloud. Il offr
 
 ### Prise en charge du SDK multilingue
 
-- **Couverture complète : .NET/Java/Python/Node.js/PHP/Perl**
+- **Couverture complète : .NET/Java/Python/Node.js/PHP/Perl**
 - **Langages émergents : Go/Ruby**
 
 ### Low Code : favoriser un développement rapide avec un codage minimal

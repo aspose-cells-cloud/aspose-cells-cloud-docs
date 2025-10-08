@@ -19,17 +19,17 @@ kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF،
 
 | وظيفة| وصف| API مرجع|
 |:------------------------- |:------------------------- |:------------------------- |
-|**[دمج جداول البيانات](https://docs.aspose.cloud/cells/merge-spreadsheets/)** |دمج ملفات جدول البيانات المحلية في ملف بتنسيق محدد.|[دمج جداول البيانات](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/DataProcessing/MergeSpreadsheets) |
+|**[دمج جداول البيانات](https://docs.aspose.cloud/cells/merge-spreadsheets/)** | دمج ملفات جدول البيانات المحلية في ملف بتنسيق محدد.|[دمج جداول البيانات](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/DataProcessing/MergeSpreadsheets) |
 |**[دمج جدول البيانات عن بُعد](https://docs.aspose.cloud/cells/merge-remote-spreadsheet/)** | دمج ملفات جدول البيانات الموجودة في مجلد التخزين السحابي في ملف بتنسيق محدد.|[دمج جدول البيانات عن بعد](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/DataProcessing/MergeRemoteSpreadsheet) |
-|**[دمج جداول البيانات في مجلد بعيد](https://docs.aspose.cloud/cells/merge-spreadsheets-in-remote-folder/)** | دمج ملفات جدول البيانات الموجودة في مجلد التخزين السحابي في ملف بتنسيق محدد.|[دمج جداول البيانات في المجلد البعيد](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/DataProcessing/MergeSpreadsheetsInRemoteFolder) |
+|**[دمج جداول البيانات في مجلد بعيد](https://docs.aspose.cloud/cells/merge-spreadsheets-in-remote-folder/)** | دمج ملفات جدول البيانات الموجودة في مجلد التخزين السحابي في ملف بتنسيق محدد.|[دمج جداول البيانات في مجلد بعيد](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/DataProcessing/MergeSpreadsheetsInRemoteFolder) |
 
 # كيفية دمج ملفات متعددة في ملف واحد من خلال Aspose.Cells Cloud
 
- توفر السحابة Aspose.Cells API[مجموعات تطوير البرامج المتعددة](https://github.com/aspose-cells-cloud) للغات البرمجة المختلفة. اختر حزمة تطوير البرامج (SDK) التي تتوافق مع لغة البرمجة المفضلة لديك، واتبع الوثائق المرفقة للتثبيت والتهيئة. أو يمكنك تصميم حزمة تطوير البرامج (SDK) الخاصة بك وفقًا لـ[API مرجع](https://reference.aspose.cloud/cells/)في هذا القسم، سنستخدم C# كمثال لتفصيل عملية دمج الملفات.
+ توفر السحابة Aspose.Cells API[مجموعات تطوير البرامج المتعددة](https://github.com/aspose-cells-cloud)للغات البرمجة المختلفة. اختر حزمة تطوير البرامج (SDK) التي تتوافق مع لغة البرمجة المفضلة لديك، واتبع الوثائق المرفقة للتثبيت والتهيئة. أو يمكنك تصميم حزمة تطوير البرامج (SDK) الخاصة بك وفقًا لـ[API مرجع](https://reference.aspose.cloud/cells/)في هذا القسم، سنستخدم C# كمثال لتفصيل عملية دمج الملفات.
 
 ## التسجيل والحصول على مفتاح API
 
-قبل البدء، عليك أن:[تسجيل حساب سحابي Aspose](https://id.containerize.com/signup) و[احصل على مفتاح API للمصادقة](https://dashboard.aspose.cloud/applications)من خلال تسجيل الدخول إلى موقع Aspose Cloud الرسمي، يمكنك إنشاء حساب مجاني والحصول على مفتاح API لأغراض المصادقة.
+ قبل البدء، عليك أن:[تسجيل حساب سحابي Aspose](https://id.containerize.com/signup) و[احصل على مفتاح API للمصادقة](https://dashboard.aspose.cloud/applications)من خلال تسجيل الدخول إلى موقع Aspose Cloud الرسمي، يمكنك إنشاء حساب مجاني والحصول على مفتاح API لأغراض المصادقة.
 
  لمزيد من التفاصيل حول العمليات، يرجى الرجوع إلى المستندات التالية:[البدء السريع مع Cells Cloud](https://docs.aspose.cloud/cells/quickstart/)
 
@@ -94,7 +94,7 @@ request.outFormat = "pdf";
 cellsApi.MergeRemoteSpreadsheet(request, "MergedResultOutPutToLocalFile.pdf");
 ```
 
-### دمج الملفات المتطابقة تلقائيًا في دليل سحابي، وتصدير النتيجة الموحدة بالتنسيق المحدد، وتسليمها محليًا أو مرة أخرى إلى التخزين السحابي
+### دمج الملفات المتطابقة تلقائيًا في دليل سحابي، وتصدير النتيجة الموحدة بالتنسيق المحدد، وتسليمها محليًا أو مرة أخرى إلى تخزين سحابي
 
 ```csharp
 // Get your Client ID and Client Secret from https://dashboard.aspose.cloud (free registration is required).
@@ -110,7 +110,7 @@ cellsApi.MergeSpreadsheetsInRemoteFolder(request, "MergedResultOutPutToLocalFile
 
 ## حالات الاستخدام
 
- الملفات المتعددة**تم دمجها**ميزة Aspose.Cells Cloud API مفيدة في العديد من حالات الاستخدام العملي. إليك بعض السيناريوهات الشائعة:
+ الملفات المتعددة**تم دمجها** ميزة Aspose.Cells Cloud API مفيدة في العديد من حالات الاستخدام العملي. إليك بعض السيناريوهات الشائعة:
 
 - **دمج ملفات Excel متعددة في ملف Excel** لتحليل البيانات وتخزينها.
 - **دمج ملفات البيانات في ملف Excel** لتحليل البيانات.
@@ -121,6 +121,6 @@ cellsApi.MergeSpreadsheetsInRemoteFolder(request, "MergedResultOutPutToLocalFile
 
 مع Aspose.Cells Cloud API، يمكنك بسهولة دمج ملفات جداول بيانات متعددة في ملف واحد. من خلال إجراء مكالمات بسيطة API وضبط خيارات الدمج المناسبة، يمكنك تلبية متطلبات دمج الملفات المختلفة بكفاءة. ادمج Aspose.Cells Cloud API في تطبيقاتك لتحسين الإنتاجية وتوفير وقت التطوير.
 
-يرجى ملاحظة أن الكود المثال أعلاه هو لأغراض العرض التوضيحي فقط، وسيلزم استبداله ببيانات اعتماد مصادقة ومسارات ملفات صالحة عند استخدامه عمليًا. بالإضافة إلى ذلك، يوفر Aspose.Cells Cloud API العديد من الميزات الأخرى، مثل إنشاء جداول البيانات وتحريرها ومعالجتها ومعالجة البيانات. يمكنك الاطلاع على وثائق API التفصيلية والكود المثال على[دليل المطور للموقع الرسمي Aspose](/developer-guide/).
+ يرجى ملاحظة أن الكود المثال أعلاه هو لأغراض العرض التوضيحي فقط، وسيلزم استبداله ببيانات اعتماد مصادقة ومسارات ملفات صالحة عند استخدامه عمليًا. بالإضافة إلى ذلك، يوفر Aspose.Cells Cloud API العديد من الميزات الأخرى، مثل إنشاء جداول البيانات وتحريرها ومعالجتها ومعالجة البيانات. يمكنك الاطلاع على وثائق API التفصيلية والكود المثال على[دليل المطور للموقع الرسمي Aspose](/developer-guide/).
 
 نأمل أن تساعدك هذه المقالة على فهم كيفية استخدام Aspose.Cells Cloud API لدمج الملفات. نتمنى لك التوفيق في التنفيذ!

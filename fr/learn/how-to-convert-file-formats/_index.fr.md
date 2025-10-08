@@ -1,5 +1,5 @@
 ﻿---
-title: Comment convertir les formats de fichiers de feuille de calcul avec Aspose.Cells Clou
+title: Comment convertir des formats de fichiers de feuille de calcul avec Aspose.Cells Clou
 linktitle: Comment convertir un fichier au format tableur
 type: docs
 url: /fr/how-to-convert-file-formats
@@ -9,7 +9,7 @@ kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Commen
 ---
 ## Introduction
 
-Aspose.Cells Cloud Spreadsheet API propose un ensemble d'interfaces double canal pour la conversion de fichiers tableurs locaux et cloud. Il prend en charge des formats tels que Excel (XLS, XLSX), CSV, HTML et PDF, facilitant ainsi la conversion et répondant à divers besoins.
+Aspose.Cells Cloud Spreadsheet API propose un ensemble d'interfaces double canal pour la conversion de fichiers tableurs locaux et cloud. Il prend en charge des formats tels que Excel (XLS, XLSX), CSV, HTML et PDF, simplifiant ainsi la conversion et répondant à divers besoins.
 
 ### Trois modes de conversion · Modèle d'objet unifié · Couverture complète du format
 
@@ -32,13 +32,13 @@ Aspose.Cells Cloud Spreadsheet API propose un ensemble d'interfaces double canal
 |||`ConvertRangeToCsv`             | CSV|
 |||`ConvertRangeToHtml`            | HTML|
 |||`ConvertRangeToJson`            | JSON|
-||Graphique|`ConvertChartToImage`           |PNG/JPEG/SVG/....              |
+|| Graphique|`ConvertChartToImage`           |PNG/JPEG/SVG/....              |
 |||`ConvertChartToPdf`             |PDF                            |
-|**Conversion du cloud**  | Cahier d'exercices|`ExportSpreadsheetAsFormat`     | PDF/XLSX/JSON/.... 30+ formats|
+|**Conversion en nuage**  | Cahier d'exercices|`ExportSpreadsheetAsFormat`     | PDF/XLSX/JSON/.... 30+ formats|
 || Feuille de travail|`ExportWorksheetAsFormat`       | PDF/XLSX/JSON/.... 30+ formats|
 || Tableau|`ExportTableAsFormat`           | PDF/XLSX/JSON/.... 30+ formats|
 || Gamme|`ExportRangeAsFormat`           | PDF/XLSX/JSON/.... 30+ formats|
-||Graphique|`ExportChartAsFormat`           | PDF/XLSX/JSON/.... 30+ formats|
+|| Graphique|`ExportChartAsFormat`           | PDF/XLSX/JSON/.... 30+ formats|
 |**Enregistrer sous dans le cloud**     | Cahier d'exercices|`SaveSpreadsheetAs`             | PDF/XLSX/JSON/.... 30+ formats|
 
 ### **Conversion de fichiers locaux**
@@ -133,13 +133,13 @@ cellsApi.ExportWorksheetAsFormat (new SDK.Request.ExportWorksheetAsFormatRequest
 Installez le package Aspose.Cells-Cloud NuGet dans votre projet .NET, vous pouvez utiliser la console du gestionnaire de packages NuGet ou le gestionnaire de packages NuGet dans Visual Studio.
 Voici comment vous pouvez installer le package à l’aide de la console du gestionnaire de packages :
 
-```Powershell
+```powershell
 
 Install-Package Aspose.Cells-Cloud
 
 ```
 
-Crée une nouvelle instance de la classe CellsApi, en l'initialisant avec votre ID client et votre secret client. Voici les détails de l'extrait de code mentionné ci-dessus :
+Crée une nouvelle instance de la classe CellsApi, en l'initialisant avec votre identifiant et votre secret client. Voici les détails de l'extrait de code mentionné ci-dessus :
 
 ```CSharp
 
@@ -151,7 +151,7 @@ Assurez-vous de remplacer VOTRE_API_CLÉ, VOTRE_APPLICATION_SID et VOTRE_APPLICA
 
 ## **Cas d'utilisation de la conversion de format de fichier**
 
- Aspose Cells Cloud API offre une qualité professionnelle**conversion de feuille de calcul** capacités pour les scénarios commerciaux critiques :
+ Aspose Cells Cloud API offre une qualité professionnelle**conversion de feuille de calcul** capacités pour les scénarios commerciaux critiques :
 
 1. **Excel → PDF**  
  Générez des rapports prêts à imprimer avec une mise en forme préservée

@@ -21,11 +21,11 @@ Die Nummer API steht für die Dateireparatur zur Verfügung und ist grundsätzli
 
 # So reparieren Sie Excel oder eine andere Tabelle über Aspose.Cells Cloud
 
- Die Aspose.Cells Cloud API bietet[mehrere SDKs](https://github.com/aspose-cells-cloud) für verschiedene Programmiersprachen. Wählen Sie das SDK, das zu Ihrer bevorzugten Programmiersprache passt, und befolgen Sie die Anweisungen zur Installation und Initialisierung. Alternativ können Sie Ihr eigenes SDK gemäß den[API Referenz](https://reference.aspose.cloud/cells/)In diesem Abschnitt verwenden wir C# als Beispiel, um den Vorgang der Dateireparatur detailliert zu erläutern.
+ Die Aspose.Cells Cloud API bietet[mehrere SDKs](https://github.com/aspose-cells-cloud)für verschiedene Programmiersprachen. Wählen Sie das SDK, das zu Ihrer bevorzugten Programmiersprache passt, und befolgen Sie die Anweisungen zur Installation und Initialisierung. Alternativ können Sie Ihr eigenes SDK gemäß den[API Referenz](https://reference.aspose.cloud/cells/)In diesem Abschnitt verwenden wir C# als Beispiel, um den Vorgang der Dateireparatur detailliert zu erläutern.
 
 ## Registrierung und Erhalt des Schlüssels API
 
-Bevor Sie beginnen, müssen Sie[Registrieren Sie ein Aspose Cloud-Konto](https://id.containerize.com/signup) Und[einen API-Schlüssel zur Authentifizierung erhalten](https://dashboard.aspose.cloud/applications). Indem Sie sich auf der offiziellen Aspose Cloud-Website anmelden, können Sie ein kostenloses Konto erstellen und einen API-Schlüssel zur Authentifizierung erhalten.
+ Bevor Sie beginnen, müssen Sie[Registrieren Sie ein Aspose Cloud-Konto](https://id.containerize.com/signup) Und[einen API-Schlüssel zur Authentifizierung erhalten](https://dashboard.aspose.cloud/applications). Indem Sie sich auf der offiziellen Aspose Cloud-Website anmelden, können Sie ein kostenloses Konto erstellen und einen API-Schlüssel zur Authentifizierung erhalten.
 
  Ausführlichere Informationen zu den Vorgängen finden Sie in den folgenden Dokumenten:[Schnellstart mit Cells Cloud](https://docs.aspose.cloud/cells/quickstart/)
 
@@ -69,6 +69,6 @@ Dadurch wird eine neue Instanz der PostRepairRequest erstellt und mit dem gewün
 
 Mit Aspose.Cells Cloud API können Sie problemlos Excel oder andere Tabellenkalkulationsdateien reparieren. Durch einfache API-Aufrufe und die Festlegung geeigneter Reparaturoptionen können Sie verschiedene Dateireparaturanforderungen effizient erfüllen. Integrieren Sie Aspose.Cells Cloud API in Ihre Anwendungen, um die Produktivität zu steigern und Entwicklungszeit zu sparen.
 
-Bitte beachten Sie, dass der obige Beispielcode nur zu Demonstrationszwecken dient und Sie ihn bei der praktischen Anwendung durch gültige Authentifizierungsdaten und Dateipfade ersetzen müssen. Darüber hinaus bietet Aspose.Cells Cloud API viele weitere Funktionen, wie z. B. die Erstellung, Bearbeitung, Manipulation und Datenverarbeitung von Tabellenkalkulationen. Eine ausführliche Dokumentation und Beispielcode zu API finden Sie unter[Entwicklerhandbuch der offiziellen Aspose-Website](/developer-guide/).
+ Bitte beachten Sie, dass der obige Beispielcode nur zu Demonstrationszwecken dient und Sie ihn bei der praktischen Anwendung durch gültige Authentifizierungsdaten und Dateipfade ersetzen müssen. Darüber hinaus bietet Aspose.Cells Cloud API viele weitere Funktionen, wie z. B. die Erstellung, Bearbeitung, Manipulation und Datenverarbeitung von Tabellenkalkulationen. Eine ausführliche Dokumentation und Beispielcode zu API finden Sie unter[Entwicklerhandbuch der offiziellen Aspose-Website](/developer-guide/).
 
 Wir hoffen, dieser Artikel hilft Ihnen zu verstehen, wie Sie Aspose.Cells Cloud API zur Dateireparatur verwenden. Viel Erfolg bei Ihrer Implementierung!

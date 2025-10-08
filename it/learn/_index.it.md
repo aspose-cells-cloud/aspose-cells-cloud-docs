@@ -3,6 +3,7 @@ title: Scopri Aspose.Cells Clou
 type: docs
 url: /it/learn
 aliases: [/learn-aspose-cells-cloud]
+linktitle: Imparare
 description: Benvenuti a imparare Aspose.Cells Cloud
 weight: 15
 kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Benvenuti a Learn Aspose.Cells Cloud

@@ -1,6 +1,6 @@
 ﻿---
 title: Sürüm Notu
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /tr/release-notes/
 description: Aspose.Cells Bulut, Excel'in oluşturma, dönüştürme, birleştirme, bölme, korumalı, iç nesne işlemleri vb. işlemlerini destekler

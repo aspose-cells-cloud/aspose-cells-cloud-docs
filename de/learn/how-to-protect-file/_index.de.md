@@ -34,11 +34,11 @@ Für den Dateischutz stehen zahlreiche APIs zur Verfügung, die in der Regel mit
 
 # So schützen Sie die Datei Excel mit der Cloud Aspose.Cells
 
- Die Aspose.Cells Cloud API bietet[mehrere SDKs](https://github.com/aspose-cells-cloud) für verschiedene Programmiersprachen. Wählen Sie das SDK, das zu Ihrer bevorzugten Programmiersprache passt, und befolgen Sie die Anweisungen zur Installation und Initialisierung. Alternativ können Sie Ihr eigenes SDK gemäß den[API Referenz](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Protection/ProtectSpreadsheet)In diesem Abschnitt verwenden wir C# als Beispiel, um den Vorgang der Dateizusammenführung detailliert zu erläutern.
+ Die Aspose.Cells Cloud API bietet[mehrere SDKs](https://github.com/aspose-cells-cloud)für verschiedene Programmiersprachen. Wählen Sie das SDK, das zu Ihrer bevorzugten Programmiersprache passt, und befolgen Sie die Anweisungen zur Installation und Initialisierung. Alternativ können Sie Ihr eigenes SDK gemäß den[API Referenz](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Protection/ProtectSpreadsheet)In diesem Abschnitt verwenden wir C# als Beispiel, um den Vorgang der Dateizusammenführung detailliert zu erläutern.
 
 ## Registrierung und Erhalt des Schlüssels API
 
-Bevor Sie beginnen, müssen Sie[Registrieren Sie ein Aspose Cloud-Konto](https://id.containerize.com/signup) Und[einen API-Schlüssel zur Authentifizierung erhalten](https://dashboard.aspose.cloud/applications). Indem Sie sich auf der offiziellen Aspose Cloud-Website anmelden, können Sie ein kostenloses Konto erstellen und einen API-Schlüssel zur Authentifizierung erhalten.
+ Bevor Sie beginnen, müssen Sie[Registrieren Sie ein Aspose Cloud-Konto](https://id.containerize.com/signup) Und[einen API-Schlüssel zur Authentifizierung erhalten](https://dashboard.aspose.cloud/applications). Indem Sie sich auf der offiziellen Aspose Cloud-Website anmelden, können Sie ein kostenloses Konto erstellen und einen API-Schlüssel zur Authentifizierung erhalten.
 
  Ausführlichere Informationen zu den Vorgängen finden Sie in den folgenden Dokumenten:[Schnellstart mit Cells Cloud](https://docs.aspose.cloud/cells/quickstart/)
 
@@ -87,6 +87,6 @@ cellsApi.ProtectSpreadsheet(new ProtectSpreadsheetRequest { Spreadsheet = "Book1
 
 Mit Aspose.Cells Cloud API können Sie problemlos geschützte Excel-Dateien oder andere Tabellenkalkulationsdateien erstellen. Durch einfache API-Aufrufe und das Setzen geeigneter Schutzoptionen können Sie verschiedene Anforderungen an die Dateizusammenführung effizient erfüllen. Integrieren Sie Aspose.Cells Cloud API in Ihre Anwendungen, um die Produktivität zu steigern und Entwicklungszeit zu sparen.
 
-Bitte beachten Sie, dass der obige Beispielcode nur zu Demonstrationszwecken dient und Sie ihn bei der praktischen Anwendung durch gültige Authentifizierungsdaten und Dateipfade ersetzen müssen. Darüber hinaus bietet Aspose.Cells Cloud API viele weitere Funktionen, wie z. B. die Erstellung, Bearbeitung, Manipulation und Datenverarbeitung von Tabellenkalkulationen. Eine ausführliche Dokumentation und Beispielcode zu API finden Sie unter[Entwicklerhandbuch der offiziellen Aspose-Website](/developer-guide/).
+ Bitte beachten Sie, dass der obige Beispielcode nur zu Demonstrationszwecken dient und Sie ihn bei der praktischen Anwendung durch gültige Authentifizierungsdaten und Dateipfade ersetzen müssen. Darüber hinaus bietet Aspose.Cells Cloud API viele weitere Funktionen, wie z. B. die Erstellung, Bearbeitung, Manipulation und Datenverarbeitung von Tabellenkalkulationen. Eine ausführliche Dokumentation und Beispielcode zu API finden Sie unter[Entwicklerhandbuch der offiziellen Aspose-Website](/developer-guide/).
 
 Wir hoffen, dieser Artikel hilft Ihnen zu verstehen, wie Sie Aspose.Cells Cloud API zum Dateischutz verwenden. Viel Erfolg bei Ihrer Implementierung!

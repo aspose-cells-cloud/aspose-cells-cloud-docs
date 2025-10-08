@@ -1,13 +1,15 @@
 ﻿---
-title: Aspose.Cells Java için Bulut SDK'sı
-second_title: Aspose.Cells Cloud Documen
+title: "Aspose.Cells Cloud SDK for Java: Dönüştürme, birleştirme, bölme, koruma, arama, değiştirme ve daha fazlası"
+second_title: Documen
+ArticleTitle: "Aspose.Cells Cloud SDK for Java: Convert, merge, split, protect, search, replace, and more"
+linktitle: Aspose.Cells Java için Bulut SDK'sı
 type: docs
 url: /tr/available-sdks/aspose-cells-cloud-java/
-description: Aspose.Cells Bulut, Excel'in oluşturma, dönüştürme, birleştirme, bölme, korumalı, iç nesne işlemleri vb. işlemlerini destekler
+description: "Aspose.Cells Cloud SDK for Java gerçek platformlar arası güç sunar: tek bir içe aktarma, Windows, Linux ve macOS geliştiricilerine her nesneyi oluşturma, dönüştürme, birleştirme, bölme, koruma ve düzenleme konusunda aynı akıcılığı sağlar; Excel kurulum gerekmez ve platforma özgü ayarlamalar gerekmez"
 weight: 30
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Java
+kwords: Java SDK, Excel SDK for Java, Cloud SDK for Java, REST, Grafik, Pivot Tablo, Tablo/Liste Nesnesi, Elektronik Tabloyu Dönüştür, PDF, CSV, Json, Markdown, Birleştir, Böl, Koru, Ara, Değiştir
 ---
-SDK açık kaynaklıdır ve MIT Lisansı kapsamında lisanslanmıştır. Aspose.Cells Cloud için Java kütüphane kaynak koduna erişebilirsiniz.[Burada](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java).
+SDK açık kaynaklıdır ve MIT Lisansı kapsamında lisanslanmıştır. Erişim sağlayabilirsiniz[Aspose.Cells Cloud için Java kütüphane kaynak kodu](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java).
 
 # **Aspose.Cells Cloud'un Java kütüphanesi nasıl kullanılır?**
 

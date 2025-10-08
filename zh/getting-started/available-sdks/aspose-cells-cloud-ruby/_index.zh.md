@@ -1,13 +1,15 @@
 ﻿---
-title: Aspose.Cells Rub 云 SDK
-second_title: Aspose.Cells Cloud Documen
+title: Aspose.Cells Cloud SDK for Ruby：转换、合并、拆分、保护、搜索、替换等
+second_title: Documen
+ArticleTitle: "Aspose.Cells Cloud SDK for Ruby: Convert, merge, split, protect, search, replace, and more"
+linktitle: Aspose.Cells Rub 云 SDK
 type: docs
 url: /zh/available-sdks/aspose-cells-cloud-ruby/
-description: Aspose.Cells 云支持 Excel 创建、转换、合并、拆分、保护、内部对象操作等
+description: Aspose.Cells Cloud SDK for Ruby 提供真正的跨平台功能：一次导入即可为 Windows、Linux 和 macOS 开发人员提供相同的流畅 API 来创建、转换、合并、拆分、保护和操作每个 Excel 对象 - 无需 Office 安装，也无需针对特定平台进行调整
 weight: 30
-kwords: Excel, Office 云, REST API, 电子表格, PDF, CSV, Json, Markdown, Ruby
+kwords: Ruby SDK、Excel Ruby SDK、Ruby Cloud SDK、REST、图表、数据透视表、表格/列表对象、转换电子表格、PDF、CSV、Json、Markdown、合并、拆分、保护、搜索、替换
 ---
-该 SDK 是开源的，并遵循 MIT 许可证。您可以访问 Aspose.Cells Cloud 的 Ruby 库源代码[这里](https://github.com/aspose-cells-cloud/aspose-cells-cloud-ruby).
+该 SDK 是开源的，并遵循 MIT 许可证。您可以访问[Aspose.Cells Cloud 的 Ruby 库源代码](https://github.com/aspose-cells-cloud/aspose-cells-cloud-ruby).
 
 # **如何使用 Aspose.Cells Cloud SDK for Ruby**
 
@@ -17,11 +19,11 @@ Aspose.Cells Cloud SDK for Ruby 是一个功能强大的库，允许开发者使
 
 ## 入门
 
-在开始使用 Aspose.Cells Cloud SDK for Go 之前，您需要设置开发环境并安装必要的依赖项。请参阅[文章](https://docs.aspose.cloud/cells/quickstart/)在 Aspose 网站上获取您的客户端 ID 和客户端密钥。
+在开始使用 Aspose.Cells Cloud SDK for Go 之前，您需要设置开发环境并安装必要的依赖项。请参阅[这篇文章](https://docs.aspose.cloud/cells/quickstart/)在 Aspose 网站上获取您的客户端 ID 和客户端密钥。
 
 ## 如何安装 Aspose.Cells Cloud 的 Ruby 包
 
-您可以通过以下命令安装 Aspose.Cells Cloud SDK for Ruby：
+您可以使用以下命令安装 Aspose.Cells Cloud SDK for Ruby：
 
 ```bash
 
@@ -34,7 +36,7 @@ Aspose.Cells Cloud SDK for Ruby 是一个功能强大的库，允许开发者使
 - 导入 Aspose.Cells 云图书馆
 首先将 Aspose.Cells Cloud Python SDK 中的必要包导入到您的项目中。
 - 使用凭证配置 API 客户端
-使用您唯一的客户端 ID 和客户端密钥对您的 API 客户端进行身份验证。
+使用您的唯一客户端 ID 和客户端密钥验证您的 API 客户端。
 - 准备转换参数
 定义转换任务的参数，包括源文件名、所需的输出格式和存储文件夹路径。
 - 执行工作簿转换

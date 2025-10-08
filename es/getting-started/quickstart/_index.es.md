@@ -1,6 +1,8 @@
 ﻿---
-title: Estrella rápida
-second_title: Aspose.Cells Cloud Documen
+title: "Aspose.Cells Inicio rápido en la nube: Cree una aplicación de hoja de cálculo en 5 minutos"
+second_title: Documen
+ArticleTitle: Aspose.Cells Cloud Quickstar
+linktitle: Estrella rápida
 type: docs
 url: /es/quickstart/
 description: Aspose.Cells Cloud admite Excel para crear, convertir, fusionar, dividir, proteger, realizar operaciones con objetos internos, etc.
@@ -13,7 +15,7 @@ Puede integrar fácilmente funciones de conversión, generación y edición de h
 
 ## Crea una cuenta gratuita
 
-Aspose Cloud se basa en un modelo de venta claro y cómodo, con el que podrás evaluar y probar totalmente un producto antes de comprometerte a comprarlo.
+Aspose Cloud se basa en un modelo de venta claro y cómodo, con el que podrás evaluar y probar completamente un producto antes de comprometerte a comprarlo.
 
 Primero, necesitas crear una cuenta gratuita para tener acceso a la infraestructura de la nube:
 
@@ -37,13 +39,13 @@ A continuación, deberás realizar ajustes individuales en tu cuenta:
 
 -  Seleccione el**Configuraciones de la cuenta** elemento de la barra de menú. Verifique su configuración y haga clic en el**Guardar cambios** botón para confirmar.
 
-![ajustes.png](settings.png)
+![configuraciones.png](settings.png)
 
 ## Obtenga sus credenciales de seguridad (ID de cliente y secreto)
 
-Aspose concede gran importancia a la seguridad. Utilizamos el token JWT para la autenticación y el cifrado HTTPS de extremo a extremo para proteger todas las interacciones cliente-servidor.
+Aspose da gran importancia a la seguridad. Utilizamos el token JWT para la autenticación y el cifrado HTTPS de extremo a extremo para proteger todas las interacciones cliente-servidor.
 
- Una aplicación es un conjunto de credenciales únicas API —**Id. del cliente** y**Secreto del cliente**Puede usarlas para autenticarse al llamar a nuestra nube al API. En la mayoría de los casos, solo necesita una aplicación. En algunos casos avanzados, puede que desee registrar y usar varias aplicaciones con...**Id. y secreto del cliente** cartas credenciales.
+ Una aplicación es un conjunto de credenciales únicas API —**Id. de cliente** y**Secreto del cliente** Puede usarlos para autenticarse al llamar a nuestra nube al API. En la mayoría de los casos, solo necesita una aplicación. En algunos casos avanzados, es posible que desee registrar y usar varias aplicaciones con...**Id. y secreto del cliente** cartas credenciales.
 
 Para acceder a la información sobre sus Aplicaciones, realice los siguientes pasos:
 
@@ -74,13 +76,13 @@ Para acceder a la información sobre sus Aplicaciones, realice los siguientes pa
 
  Tómese un momento para familiarizarse con la amplia gama de productos Aspose.Cells Cloud para comprender mejor sus posibilidades. Estos productos de software se basan en un alto rendimiento.[Nube API](https://apireference.aspose.com/), disponible 24/7.
 
- Para el uso efectivo de Cloud API, ponemos a su disposición una familia de potentes[SDK en la nube](https://products.aspose.cloud/cells/family) para casi todos los sistemas operativos principales (Windows, macOS, Linux, Android) y lenguajes de programación populares, incluidos[Androide](https://products.aspose.cloud/cells/android), [C#](https://products.aspose.cloud/cells/net), [Python](https://products.aspose.cloud/cells/python), [Golang](https://products.aspose.cloud/cells/go), [Java](https://products.aspose.cloud/cells/java), [Node.js](https://products.aspose.cloud/cells/nodejs), [Perl](https://products.aspose.cloud/cells/perl), [PHP](https://products.aspose.cloud/cells/php), [Rubí](https://products.aspose.cloud/cells/ruby) , y[Rápido](https://products.aspose.cloud/cells/swift).
+ Para el uso efectivo de Cloud API, ponemos a su disposición una familia de potentes[SDK en la nube](https://products.aspose.cloud/cells/family)para casi todos los sistemas operativos principales (Windows, macOS, Linux, Android) y lenguajes de programación populares, incluidos[Androide](https://products.aspose.cloud/cells/android), [C#](https://products.aspose.cloud/cells/net), [Python](https://products.aspose.cloud/cells/python), [Golang](https://products.aspose.cloud/cells/go), [Java](https://products.aspose.cloud/cells/java), [Node.js](https://products.aspose.cloud/cells/nodejs), [Perl](https://products.aspose.cloud/cells/perl), [PHP](https://products.aspose.cloud/cells/php), [Rubí](https://products.aspose.cloud/cells/ruby) , y[Rápido](https://products.aspose.cloud/cells/swift).
 
  Todos los SDK anteriores están alojados en[GitHub](https://github.com/aspose-cells-cloud/)Cada repositorio contiene una amplia gama de ejemplos de código para ilustrar su uso.
 
 ## Consulte la documentación para desarrolladores y los ejemplos de código
 
-Ahora su cuenta está completamente configurada y el entorno de desarrollo está instalado. Puede empezar a escribir código con el SDK seleccionado. Consulte la[Guía para desarrolladores](https://docs.aspose.cloud/cells/developer-guide/) Para obtener información sobre cómo utilizar la Nube fácilmente API.
+ Ahora su cuenta está completamente configurada y el entorno de desarrollo está instalado. Puede empezar a escribir código con el SDK seleccionado. Consulte la[Guía para desarrolladores](https://docs.aspose.cloud/cells/developer-guide/) Para obtener información sobre cómo utilizar la Nube fácilmente API.
 
 p.ej. Convertir un libro de trabajo a otros formatos.
 

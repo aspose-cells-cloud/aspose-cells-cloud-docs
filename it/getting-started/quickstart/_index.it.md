@@ -1,6 +1,8 @@
 ﻿---
-title: Quickstar
-second_title: Aspose.Cells Cloud Documen
+title: "Aspose.Cells Cloud Quickstart: crea un'applicazione foglio di calcolo in 5 minuti"
+second_title: Documen
+ArticleTitle: Aspose.Cells Cloud Quickstar
+linktitle: Quickstar
 type: docs
 url: /it/quickstart/
 description: Aspose.Cells Cloud supporta Excel per creare, convertire, unire, dividere, proteggere, operazioni di oggetti interni e così via
@@ -43,7 +45,7 @@ Successivamente, dovrai apportare modifiche individuali al tuo account:
 
 Aspose attribuisce grande importanza alla sicurezza. Utilizziamo il token JWT per l'autenticazione e la crittografia HTTPS end-to-end per proteggere tutte le interazioni client-server.
 
- Un'applicazione è un insieme di credenziali univoche API —**ID cliente** E**Segreto del cliente**Puoi usarli per autenticarti quando chiami il nostro Cloud al numero API. Nella maggior parte dei casi, è necessaria una sola applicazione. In alcuni scenari avanzati, potresti voler registrare e utilizzare più applicazioni con account separati.**ID cliente e segreto** credenziali.
+ Un'applicazione è un insieme di credenziali univoche API —**ID cliente** E**Segreto del cliente** Puoi usarli per autenticarti quando chiami il nostro Cloud al numero API. Nella maggior parte dei casi, è necessaria una sola applicazione. In alcuni scenari avanzati, potresti voler registrare e utilizzare più applicazioni con account separati.**ID cliente e segreto** credenziali.
 
 Per accedere alle informazioni sulle tue Applicazioni, procedi come segue:
 
@@ -56,7 +58,7 @@ Per accedere alle informazioni sulle tue Applicazioni, procedi come segue:
 
 ![crea nuova applicazione.png](createnewapplication.png)
 
-4. Accedere alla pagina di creazione, selezionare e immettere il nome, la descrizione e l'indirizzo di archiviazione che si desidera creare, quindi fare clic sul pulsante Salva per tornare alla pagina precedente dopo la creazione.
+4. Accedere alla pagina di creazione, selezionare e immettere il nome, la descrizione e l'indirizzo di archiviazione che si desidera creare, quindi fare clic sul pulsante Salva per tornare alla pagina precedente al termine della creazione.
 
 ![applicationinfo.png](applicationinfo.png)
 
@@ -74,13 +76,13 @@ Congratulazioni! Hai ottenuto con successo le credenziali di sicurezza per auten
 
  Prenditi un momento per familiarizzare con l'ampia gamma di prodotti Cloud Aspose.Cells per comprendere meglio le tue possibilità. Questi prodotti software sono basati su un'architettura ad alte prestazioni.[Nuvola API](https://apireference.aspose.com/), disponibile 24 ore su 24, 7 giorni su 7.
 
- Per un utilizzo efficace del Cloud API, forniamo una famiglia di potenti[SDK cloud](https://products.aspose.cloud/cells/family) per quasi tutti i principali sistemi operativi (Windows, macOS, Linux, Android) e linguaggi di programmazione più diffusi, tra cui[Android](https://products.aspose.cloud/cells/android), [C#](https://products.aspose.cloud/cells/net), [Python](https://products.aspose.cloud/cells/python), [Golang](https://products.aspose.cloud/cells/go), [Java](https://products.aspose.cloud/cells/java), [Node.js](https://products.aspose.cloud/cells/nodejs), [Perl](https://products.aspose.cloud/cells/perl), [PHP](https://products.aspose.cloud/cells/php), [Rubino](https://products.aspose.cloud/cells/ruby) , E[Veloce](https://products.aspose.cloud/cells/swift).
+ Per un utilizzo efficace del Cloud API, forniamo una famiglia di potenti[SDK cloud](https://products.aspose.cloud/cells/family)per quasi tutti i principali sistemi operativi (Windows, macOS, Linux, Android) e linguaggi di programmazione più diffusi, tra cui[Android](https://products.aspose.cloud/cells/android), [C#](https://products.aspose.cloud/cells/net), [Python](https://products.aspose.cloud/cells/python), [Golang](https://products.aspose.cloud/cells/go), [Java](https://products.aspose.cloud/cells/java), [Node.js](https://products.aspose.cloud/cells/nodejs), [Perl](https://products.aspose.cloud/cells/perl), [PHP](https://products.aspose.cloud/cells/php), [Rubino](https://products.aspose.cloud/cells/ruby) , E[Veloce](https://products.aspose.cloud/cells/swift).
 
  Tutti gli SDK sopra indicati sono ospitati su[GitHub](https://github.com/aspose-cells-cloud/)Ogni repository contiene un'ampia gamma di esempi di codice per illustrarne l'utilizzo.
 
 ## Controlla la documentazione dello sviluppatore e gli esempi di codice
 
-Ora il tuo account è completamente configurato e l'ambiente di sviluppo è installato. Puoi iniziare a scrivere codice con l'SDK scelto. Fai riferimento a[Guida per gli sviluppatori](https://docs.aspose.cloud/cells/developer-guide/) per informazioni su come utilizzare facilmente il Cloud API.
+ Ora il tuo account è completamente configurato e l'ambiente di sviluppo è installato. Puoi iniziare a scrivere codice con l'SDK scelto. Fai riferimento a[Guida per gli sviluppatori](https://docs.aspose.cloud/cells/developer-guide/) per informazioni su come utilizzare facilmente il Cloud API.
 
 ad esempio convertire una cartella di lavoro in altri formati.
 

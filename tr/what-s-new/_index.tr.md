@@ -1,6 +1,6 @@
 ﻿---
 title: Aspose.Cells Cloud'daki yenilikler
-second_title: Latest Updates & Feature
+second_title: Documen
 linktitle: Ne var ne yok
 type: docs
 weight: 9
@@ -19,11 +19,13 @@ kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdow
 
 |**İD**|**Özet**|**Kategori**|
 |:- |:- |:- |
-|55754 | Çalışma kitabının tamamının kırpılması başarısız oldu.|
-|55755 | Tüm çalışma kitabının büyük/küçük harf durumunun güncellenmesi başarısız oldu.|
-|55930 | Elektronik tabloları koruma/korumasını kaldırma özelliklerini ekleyin.|
-|55931 | Çalışma sayfasını/tabloyu/aralığı diğer biçimlere dönüştürmeyi ekleyin.|
-|56088 | TextProcessingController için çalışma kapsamı seçeneklerini optimize edin.|
+|56632 | Hücre bulutu 3.0 hizmetlerinde hücre bulutu kod belirtimi için form veri parametresi adını güncelleyin.| Gelişim|
+|56793 | Aspose.Cells Cloud Services'daki StringEnumConverter sorununu düzeltin.| Böcek|
+|56866 | Cells Cloud 4.0'da elektronik tablo içeriğini kırpma desteği.| Gelişim|
+|56867 | Cells Cloud 4.0'da trim çalışma sayfası aralığı içeriğini destekleyin.| Gelişim|
+|56919 | Hücre bulutunda elektronik tabloyu farklı bir format dosyası olarak kaydederken bir istisna oluştu.| Böcek|
+|56922 | Aralık/tablo HTML dosyası olarak dışa aktarıldığında veriler kayboluyor.| Böcek|
+|56936 | Yazım hatalarıyla ilgili birkaç sorunu düzeltin.| Böcek|
 
 # Tarihsel Sürümler
 

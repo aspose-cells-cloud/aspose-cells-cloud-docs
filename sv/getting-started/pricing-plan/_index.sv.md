@@ -1,6 +1,8 @@
 ﻿---
-title: Prissättningsplan
-second_title: Aspose.Cells Cloud Documen
+title: "Aspose.Cells Molnprisplan: 150 gratis API-samtal per månad, med en nivåindelad prismodell för överskridande användning"
+second_title: Documen
+ArticleTitle: Aspose.Cells Cloud Pricing Pla
+linktitle: Prissättningsplan
 type: docs
 url: /sv/pricing-plan/
 description: Aspose.Cells Molnet stöder Excel för att skapa, konvertera, sammanfoga, dela, skydda, hantera interna objekt och så vidare.
@@ -51,5 +53,4 @@ Aspose bygger otroligt lättanvänd programvara som en tjänst (SaaS) som utveck
     </tbody>
 </table>
 
-
- Vänligen kontrollera[Prisplanen och hur man köper](https://purchase.aspose.cloud/buy) webbsida som ger en översikt över vår enhetsprisplan och varför det inte finns några "uppgraderingar" eller "nedgraderingar".
+ Vänligen kontrollera[Prisplanen och hur man köper](https://purchase.aspose.cloud/buy) webbsida som ger en översikt över vår enhetliga prisplan och varför det inte finns några "uppgraderingar" eller "nedgraderingar".

@@ -1,13 +1,15 @@
 ﻿---
-title: Stockage
-second_title: Aspose.Cells Cloud Documen
+title: Comment définir la position de stockage pour le stockage du conteneur Cloud Docker Aspose.Cells
+second_title: Documen
+ArticleTitle: Aspose.Cells Cloud Docker Container Storage Configuratio
+linktitle: Stockage de conteneurs
 type: docs
 url: /fr/docker/storage/
-description: Comment définir la position de stockage sur Aspose.Cells Cloud pour Docker
+description: Comment définir la position de stockage pour le stockage du conteneur Cloud Docker Aspose.Cells
 weight: 30
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Stockage
+kwords: Excel Conteneur Docker Cloud, Conteneur Docker Cloud autonome, Conteneur Docker REST, Feuille de calcul, PDF, CSV, Json, Markdown, Image Docker, Exécuter le conteneur Docker
 ---
-##  Configuration de stockage par défaut ##
+## Configuration de stockage par défaut ##
 
 {{< tabs tabTotal="2" tabID="1" tabName1="windows" tabName2="linux" >}}
 
@@ -48,7 +50,6 @@ kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Stocka
 
 ##  Position par défaut ##
 
-
 - **fenêtres**
 
 ```powershell
@@ -72,9 +73,10 @@ Il est nécessaire de spécifier à nouveau le profil de stockage pour le fichie
 
 ``` powershell
 
-docker run  -d  -v c:/data:c:/data  -p 47900:5000  -e LicensePublicKey=yourLicensePublicKey	 -e LicensePrivateKey=yourLicensePrivateKey	 -e storagesCredentialsFilePath=c:/data/storageResource.json --name asposecellscloud aspose/cells-cloud:ltsc2019.22.2.0
+docker run  -d  -v c:/data:c:/data  -p 47900:5000  -e LicensePublicKey=yourLicensePublicKey  -e LicensePrivateKey=yourLicensePrivateKey  -e storagesCredentialsFilePath=c:/data/storageResource.json --name asposecellscloud aspose/cells-cloud:ltsc2019.22.9.0
 
 ```
 
-**Document de référence** : 
-  - [Docker Run]( https://docs.docker.com/engine/reference/commandline/run/)
+**Document de référence** :
+
+- [Comment exécuter le conteneur Cloud Docker Aspose.Cells.]( https://docs.aspose.cloud/cells/run-aspose-cells-cloud-docker-container/)

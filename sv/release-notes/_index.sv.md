@@ -1,6 +1,6 @@
 ﻿---
 title: Versionsinformation
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /sv/release-notes/
 description: Aspose.Cells Molnet stöder Excel för att skapa, konvertera, sammanfoga, dela, skydda, hantera interna objekt och så vidare.

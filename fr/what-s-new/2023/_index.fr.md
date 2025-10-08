@@ -1,6 +1,6 @@
 ﻿---
 title: Quoi de neuf dans Aspose.Cells Cloud en 2023
-second_title: Latest Updates & Feature
+second_title: Documen
 linktitle: Quoi de neuf dans 202
 type: docs
 weight: 30
@@ -15,8 +15,8 @@ Bienvenue dans les nouveautés de la documentation Cloud Aspose.Cells. Utilisez 
 
 - Les API de conversion ajoutent un paramètre de région.
 - Les API de protection ajoutent un paramètre de région.
-- L'assemblage des données API ajoute le paramètre de région.
-- Fusionner les fichiers API ajoute le paramètre de région.
+- L'assemblage des données API ajoute un paramètre de région.
+- La fusion des fichiers API ajoute le paramètre de région.
 - Les fichiers divisés API ajoutent un paramètre de région.
 - Les données d'importation API ajoutent le paramètre de région.
 - Le filigrane API ajoute un paramètre de région.
@@ -28,7 +28,7 @@ Bienvenue dans les nouveautés de la documentation Cloud Aspose.Cells. Utilisez 
 
 - Optimiser l'importation des données XML dans le fichier Excel.
 - Optimiser l'importation des données json dans le fichier Excel.
-- Supprimez les fonctions, classes et cas de test obsolètes.
+- Supprimez les fonctions, les classes et les cas de test obsolètes.
 
 ## Améliorations de la version 23.10
 
@@ -50,7 +50,7 @@ Bienvenue dans les nouveautés de la documentation Cloud Aspose.Cells. Utilisez 
 
 ## Aspose.Cells Cloud 23.7
 
-- Prise en charge de la réparation de fichiers.
+- Prise en charge de la réparation des fichiers.
 - Optimiser les fonctions de conversion.
 
 ## Aspose.Cells Cloud 23.6
@@ -59,13 +59,13 @@ Bienvenue dans les nouveautés de la documentation Cloud Aspose.Cells. Utilisez 
 - Prise en charge du déverrouillage par lots de plusieurs fichiers.
 - Prise en charge de la protection par lots de plusieurs fichiers.
 - Prise en charge de la division par lots de plusieurs fichiers.
-- Correction de l'API de propriété de document.
+- Correction de l'API de propriété du document.
 
-## Aspose.Cells Cloud 23.5
+## Aspose.Cells Cloud 23,5
 
 - Corriger quelques méthodes mal orthographiées.
 
-## Aspose.Cells Cloud 23.4
+## Aspose.Cells Nuage 23.4
 
 - Prise en charge de l'importation et de l'exportation de données XML.
 
@@ -80,4 +80,4 @@ Bienvenue dans les nouveautés de la documentation Cloud Aspose.Cells. Utilisez 
 
 ## Aspose.Cells Cloud 23.1
 
-- Corrige le bug pour la méthode PostCellCharacters.
+- Corriger le bug pour la méthode PostCellCharacters.

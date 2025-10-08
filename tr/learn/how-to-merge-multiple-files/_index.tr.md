@@ -19,17 +19,17 @@ Dosya birleştirme için çok sayıda API mevcuttur ve genellikle çeşitli çev
 
 | İşlev| Tanım| API Referans|
 |:------------------------- |:------------------------- |:------------------------- |
-|**[E-Tabloları Birleştir](https://docs.aspose.cloud/cells/merge-spreadsheets/)** |Yerel elektronik tablo dosyalarını belirtilen formattaki bir dosyaya birleştirin.|[Birleştirme Tabloları](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/DataProcessing/MergeSpreadsheets) |
+|**[E-Tabloları Birleştir](https://docs.aspose.cloud/cells/merge-spreadsheets/)** | Yerel elektronik tablo dosyalarını belirtilen formattaki bir dosyaya birleştirin.|[Birleştirme Tabloları](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/DataProcessing/MergeSpreadsheets) |
 |**[UzakBirleştirmeE-Tablosu](https://docs.aspose.cloud/cells/birleştirme-uzak-birleştirme-e-tablosu/)** | Bulut depolama klasöründeki elektronik tablo dosyalarını belirtilen formattaki dosyaya birleştirin.|[Uzak Elektronik Tabloyu Birleştir](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/DataProcessing/MergeRemoteSpreadsheet) |
 |**[Uzak Klasördeki Elektronik Tabloları Birleştirme](https://docs.aspose.cloud/cells/merge-spreadsheets-in-remote-folder/)** | Bulut depolama klasöründeki elektronik tablo dosyalarını belirtilen formattaki dosyaya birleştirin.|[Uzak Klasördeki Elektronik Tabloları Birleştir](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/DataProcessing/MergeSpreadsheetsInRemoteFolder) |
 
 # Aspose.Cells Bulut aracılığıyla birden fazla dosya nasıl birleştirilir
 
- Aspose.Cells Bulut API şunları sağlar:[birden fazla SDK](https://github.com/aspose-cells-cloud) Farklı programlama dilleri için. Tercih ettiğiniz programlama diline uygun SDK'yı seçin ve kurulum ve başlatma için beraberindeki belgeleri izleyin. Alternatif olarak, kendi SDK'nızı aşağıdakilere göre oluşturabilirsiniz:[API referans](https://reference.aspose.cloud/cells/)Bu bölümde, dosya birleştirme işlemini ayrıntılı olarak anlatmak için C# örneğini kullanacağız.
+ Aspose.Cells Bulut API şunları sağlar:[birden fazla SDK](https://github.com/aspose-cells-cloud)Farklı programlama dilleri için. Tercih ettiğiniz programlama diline uygun SDK'yı seçin ve kurulum ve başlatma için beraberindeki belgeleri takip edin. Alternatif olarak, kendi SDK'nızı aşağıdakilere göre oluşturabilirsiniz:[API referans](https://reference.aspose.cloud/cells/)Bu bölümde, dosya birleştirme işlemini ayrıntılı olarak anlatmak için C# örneğini kullanacağız.
 
 ## API Anahtarının Kaydı ve Alınması
 
-Başlamadan önce şunları yapmanız gerekir:[Aspose Bulut hesabını kaydedin](https://id.containerize.com/signup) Ve[kimlik doğrulaması için API anahtarını edinin](https://dashboard.aspose.cloud/applications)Resmi Aspose Cloud web sitesine giriş yaparak ücretsiz hesap oluşturabilir ve kimlik doğrulama amacıyla API anahtarını alabilirsiniz.
+ Başlamadan önce şunları yapmanız gerekir:[Aspose Bulut hesabını kaydedin](https://id.containerize.com/signup) Ve[kimlik doğrulaması için API anahtarını edinin](https://dashboard.aspose.cloud/applications)Resmi Aspose Cloud web sitesine giriş yaparak ücretsiz hesap oluşturabilir ve kimlik doğrulama amacıyla API anahtarını alabilirsiniz.
 
  Daha detaylı işlemler için lütfen aşağıdaki belgelere bakınız:[Cells Bulut ile Hızlı Başlangıç](https://docs.aspose.cloud/cells/quickstart/)
 
@@ -110,7 +110,7 @@ cellsApi.MergeSpreadsheetsInRemoteFolder(request, "MergedResultOutPutToLocalFile
 
 ## Kullanım Örnekleri
 
- Birden fazla dosya**birleştirilmiş**Aspose.Cells Cloud API'in bu özelliği çeşitli pratik kullanım durumlarında faydalıdır. İşte bazı yaygın senaryolar:
+ Birden fazla dosya**birleştirilmiş** Aspose.Cells Cloud API'in bu özelliği çeşitli pratik kullanım durumlarında faydalıdır. İşte bazı yaygın senaryolar:
 
 - **Birden fazla Excel dosyasını bir Excel dosyasında birleştirin** veri analizi ve depolama için.
 - **Veri dosyalarını Excel dosyasına birleştir** Veri analizi için.
@@ -121,6 +121,6 @@ cellsApi.MergeSpreadsheetsInRemoteFolder(request, "MergedResultOutPutToLocalFile
 
 Aspose.Cells Cloud API ile birden fazla elektronik tablo dosyasını tek bir dosyada kolayca birleştirebilirsiniz. Basit API aramaları yaparak ve uygun birleştirme seçeneklerini ayarlayarak, çeşitli dosya birleştirme gereksinimlerini verimli bir şekilde karşılayabilirsiniz. Verimliliği artırmak ve geliştirme süresinden tasarruf etmek için Aspose.Cells Cloud API'i uygulamalarınıza entegre edin.
 
-Yukarıdaki örnek kodun yalnızca tanıtım amaçlı olduğunu ve pratikte kullanırken geçerli kimlik doğrulama bilgileri ve dosya yollarıyla değiştirmeniz gerekeceğini lütfen unutmayın. Ayrıca, Aspose.Cells Cloud API, elektronik tablo oluşturma, düzenleme, düzenleme ve veri işleme gibi birçok başka özellik sunar. Ayrıntılı API dokümantasyonu ve örnek kod şu adreste bulunabilir:[resmi Aspose web sitesinin geliştirici kılavuzu](/developer-guide/).
+ Yukarıdaki örnek kodun yalnızca tanıtım amaçlı olduğunu ve pratikte kullanırken geçerli kimlik doğrulama bilgileri ve dosya yollarıyla değiştirmeniz gerekeceğini lütfen unutmayın. Ayrıca, Aspose.Cells Cloud API, elektronik tablo oluşturma, düzenleme, düzenleme ve veri işleme gibi birçok başka özellik sunar. Ayrıntılı API dokümantasyonu ve örnek kod şu adreste bulunabilir:[resmi Aspose web sitesinin geliştirici kılavuzu](/developer-guide/).
 
 Bu makalenin, Aspose.Cells Cloud API'i dosya birleştirme için nasıl kullanacağınızı anlamanıza yardımcı olmasını umuyoruz. Uygulamanızda bol şans!

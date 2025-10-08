@@ -1,6 +1,8 @@
 ﻿---
-title: Stödda filformat
-second_title: Aspose.Cells Cloud Documen
+title: Aspose.Cells Molnstödda filformat
+second_title: Documen
+ArticleTitle: "Aspose.Cells Cloud Supported File Formats: Excel, Pdf, CSV, Json, Markdown, and mor"
+linktitle: Stödda filformat
 type: docs
 url: /sv/supported-file-formats/
 description: Aspose.Cells Molnet stöder Excel för att skapa, konvertera, sammanfoga, dela, skydda, hantera interna objekt och så vidare.

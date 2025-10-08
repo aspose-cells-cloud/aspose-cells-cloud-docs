@@ -1,6 +1,6 @@
 ﻿---
 title: Nyheter i Aspose.Cells Cloud
-second_title: Latest Updates & Feature
+second_title: Documen
 linktitle: Vad är nytt
 type: docs
 weight: 9
@@ -19,11 +19,13 @@ kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Nyhe
 
 |**ID**|**Sammanfattning**|**Kategori**|
 |:- |:- |:- |
-|55754 | Det gick inte att beskära hela arbetsboken.|
-|55755 | Uppdatering av skiftläge och gemener i hela arbetsboken misslyckades.|
-|55930 | Lägg till funktioner för att skydda/avskydda kalkylblad.|
-|55931 | Lägg till konvertera kalkylblad/tabell/område till andra format.|
-|56088 | Optimera operate scope-alternativ för TextProcessingController.|
+|56632 | Uppdatera formulärdataparameternamn för Cells Cloud-kodspecifikation på Cells Cloud 3.0-tjänster.| Förbättring|
+|56793 | Åtgärda problemet med StringEnumConverter på Aspose.Cells Cloud Services.| Bugga|
+|56866 | Stöd för att trimma kalkylbladsinnehåll i Cells Cloud 4.0.| Förbättring|
+|56867 | Stöd för innehållet i intervallet för trimningsarbetsbladet i Cells Cloud 4.0.| Förbättring|
+|56919 | Ett undantag inträffade när kalkylbladet sparades som en fil i ett annat format i cellmolnet.| Bugga|
+|56922 | När man exporterar området/tabellen som en HTML-fil förloras data.| Bugga|
+|56936 | Åtgärdade några problem med stavfel.| Bugga|
 
 # Historiska utgåvor
 

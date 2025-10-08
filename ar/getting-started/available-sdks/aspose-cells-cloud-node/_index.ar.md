@@ -1,13 +1,15 @@
 ﻿---
-title: Aspose.Cells مجموعة تطوير البرامج السحابية لـ Nod
-second_title: Aspose.Cells Cloud Documen
+title: "Aspose.Cells مجموعة SDK السحابية لـ Node.js: التحويل، الدمج، التقسيم، الحماية، البحث، الاستبدال، والمزيد"
+second_title: Documen
+ArticleTitle: "Aspose.Cells Cloud SDK for Node.js: Convert, merge, split, protect, search, replace, and more"
+linktitle: Aspose.Cells مجموعة تطوير البرامج السحابية لـ Node.j
 type: docs
 url: /ar/available-sdks/aspose-cells-cloud-node/
-description: Aspose.Cells تدعم السحابة Excel لإنشاء الكائنات الداخلية وتحويلها ودمجها وتقسيمها وحمايتها وما إلى ذلك
+description: "توفر مجموعة SDK السحابية Aspose.Cells لـ Node.js قوة حقيقية عبر الأنظمة الأساسية: يوفر استيراد واحد للمطورين Windows وLinux وmacOS نفس القدرة على إنشاء كل كائن وتحويله ودمجه وتقسيمه وحمايته ومعالجته - لا يلزم تثبيت Office ولا يلزم إجراء تعديلات خاصة بالمنصة"
 weight: 30
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، Node
+kwords: Node.js، مجموعة أدوات تطوير برمجيات Node.js، مجموعة أدوات تطوير برمجيات Excel لـ Node.js، مجموعة أدوات تطوير برمجيات Cloud لـ Node.js، REST، مخطط، جدول محوري، كائن جدول/قائمة، تحويل جدول بيانات، PDF، CSV، JSON، Markdown، دمج، تقسيم، حماية، بحث، استبدال
 ---
- مجموعة تطوير البرامج (SDK) مفتوحة المصدر ومرخصة بموجب ترخيص معهد ماساتشوستس للتكنولوجيا (MIT). يمكنك الوصول إلى شفرة المصدر لمكتبة Node لـ Aspose.Cells Cloud.[هنا](https://github.com/aspose-cells-cloud/aspose-cells-cloud-node).
+مجموعة تطوير البرامج مفتوحة المصدر ومرخصة بموجب ترخيص معهد ماساتشوستس للتكنولوجيا. يمكنك الوصول إليها[كود مصدر مكتبة Node لـ Aspose.Cells Cloud](https://github.com/aspose-cells-cloud/aspose-cells-cloud-node).
 
 # **كيفية استخدام مكتبة Node من Aspose.Cells Cloud**
 

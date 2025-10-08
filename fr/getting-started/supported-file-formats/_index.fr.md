@@ -1,6 +1,8 @@
 ﻿---
-title: Format de fichier pris en charge
-second_title: Aspose.Cells Cloud Documen
+title: Aspose.Cells Format de fichier pris en charge par le cloud
+second_title: Documen
+ArticleTitle: "Aspose.Cells Cloud Supported File Formats: Excel, Pdf, CSV, Json, Markdown, and mor"
+linktitle: Format de fichier pris en charge
 type: docs
 url: /fr/supported-file-formats/
 description: Aspose.Cells Cloud prend en charge Excel pour créer, convertir, fusionner, diviser, protéger, effectuer des opérations sur des objets internes, etc.
@@ -11,10 +13,10 @@ kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Format
 |:- |:- |:- |:- |
 |[XLS](https://docs.fileformat.com/spreadsheet/xls/)|Excel 95/5.0 - 2003 Cahier d'exercices.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[XLSX](https://docs.fileformat.com/spreadsheet/xlsx/)|Le format de fichier Open XML SpreadsheetML Office.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[XLSB](https://docs.fileformat.com/spreadsheet/xlsb/)|Excel Cahier d'exercices binaire.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[XLSB](https://docs.fileformat.com/spreadsheet/xlsb/)|Excel Classeur binaire.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[XLSM](https://docs.fileformat.com/spreadsheet/xlsm/)|Excel Classeur prenant en charge les macros.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[XLT](https://docs.fileformat.com/spreadsheet/xlt/)|Excel 97 - Excel 2003 Modèle.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[XLTX](https://docs.fileformat.com/spreadsheet/xltx/)|Modèle Excel.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[XLTX](https://docs.fileformat.com/spreadsheet/xltx/)|Excel Modèle.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[XLTM](https://docs.fileformat.com/spreadsheet/xltm/)|Excel Modèle prenant en charge les macros.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[XLAM](https://docs.fileformat.com/spreadsheet/xlam/)|Un fichier complémentaire prenant en charge les macros Excel utilisé pour ajouter de nouvelles fonctions à Excel.||{{< emoticons/tick >}}|
 |[CSV](https://docs.fileformat.com/spreadsheet/csv/)|Fichier CSV (valeurs séparées par des virgules).|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
@@ -24,8 +26,8 @@ kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Format
 |[HTML](https://docs.fileformat.com/web/html/)|Format HTML.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[MHTML](https://docs.fileformat.com/web/mhtml/)|Fichier MHTML.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[SAO](https://docs.fileformat.com/spreadsheet/ods/)|ODS (feuille de calcul OpenDocument).|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|Feuille de calculML|Excel 2003 fichier XML.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Nombres](https://docs.fileformat.com/spreadsheet/numbers/)|Le document est créé par l'application « Numbers » d'Apple qui fait partie de la suite iWork office d'Apple, un ensemble d'applications qui fonctionnent sur les systèmes d'exploitation Mac OS X et iOS.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|Feuille de calculML|Excel 2003 Fichier XML.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Nombres](https://docs.fileformat.com/spreadsheet/numbers/)|Le document est créé par l'application « Numbers » d'Apple qui fait partie de la suite iWork office d'Apple, un ensemble d'applications qui s'exécutent sur les systèmes d'exploitation Mac OS X et iOS.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[JSON](https://docs.fileformat.com/web/json/)|Notation d'objet JavaScript|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[DIF](https://docs.fileformat.com/spreadsheet/dif/)|Format d'échange de données.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[DBF](https://docs.fileformat.com/database/dbf/)|Le fichier avec l'extension .dbf est un fichier de base de données utilisé par une application de système de gestion de base de données appelée dBASE.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
@@ -44,8 +46,8 @@ kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Format
 |[DOCX](https://docs.fileformat.com/word-processing/docx/)|Un format bien connu pour les documents Word Microsoft qui est une combinaison de fichiers XML et binaires.||{{< emoticons/tick >}}|
 |[PPTX](https://docs.fileformat.com/presentation/pptx/)|Le format PPTX est basé sur le format de fichier de présentation XML ouvert Microsoft PowerPoint.||{{< emoticons/tick >}}|
 |[SqlScript](https://docs.fileformat.com/database/sql/)|Langage de requête structuré.||{{< emoticons/tick >}}|
-|[XHtml](https://docs.fileformat.com/web/xhtml/)|Le XHTML est un format de fichier basé sur du texte avec un balisage dans le XML, utilisant une reformulation de HTML 4.0.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[XHtml](https://docs.fileformat.com/web/xhtml/)|Le XHTML est un format de fichier basé sur du texte avec un balisage XML, utilisant une reformulation de HTML 4.0.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[Epub](https://docs.fileformat.com/ebook/epub/)|Les fichiers avec l'extension .epub sont un format de fichier de livre électronique qui fournit un format de publication numérique standard pour les éditeurs et les consommateurs.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[XML](https://docs.fileformat.com/web/xml/)|XML signifie Extensible Markup Language, un langage similaire à HTML mais différent dans l'utilisation de balises pour définir des objets.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Ots](https://docs.fileformat.com/spreadsheet/ots/)|Ouvrez le fichier de modèle de document (OTS).|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Ots](https://docs.fileformat.com/spreadsheet/ots/)|Ouvrir le fichier de modèle de document (OTS).|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[AZW3](https://docs.fileformat.com/ebook/azw3/)|AZW est un format de fichier de livre électronique numérique développé par Amazon pour ses appareils Kindle. AZW3, également connu sous le nom de Kindle Format 8 (KF8).|{{< emoticons/tick >}}|{{< emoticons/tick >}}|

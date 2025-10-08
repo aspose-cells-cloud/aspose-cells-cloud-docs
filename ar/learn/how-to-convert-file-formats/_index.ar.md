@@ -32,13 +32,13 @@ kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF،
 |||`ConvertRangeToCsv`             | ملف CSV|
 |||`ConvertRangeToHtml`            | HTML|
 |||`ConvertRangeToJson`            | JSON|
-||جدول|`ConvertChartToImage`           |PNG/JPEG/SVG/....              |
+|| جدول|`ConvertChartToImage`           |PNG/JPEG/SVG/....              |
 |||`ConvertChartToPdf`             |PDF                            |
 |**تحويل السحابة**  | كتاب العمل|`ExportSpreadsheetAsFormat`     | PDF/XLSX/JSON/.... أكثر من 30 تنسيقًا|
 || ورقة عمل|`ExportWorksheetAsFormat`       | PDF/XLSX/JSON/.... أكثر من 30 تنسيقًا|
 || طاولة|`ExportTableAsFormat`           | PDF/XLSX/JSON/.... أكثر من 30 تنسيقًا|
 || يتراوح|`ExportRangeAsFormat`           | PDF/XLSX/JSON/.... أكثر من 30 تنسيقًا|
-||جدول|`ExportChartAsFormat`           | PDF/XLSX/JSON/.... أكثر من 30 تنسيقًا|
+|| جدول|`ExportChartAsFormat`           | PDF/XLSX/JSON/.... أكثر من 30 تنسيقًا|
 |**حفظ باسم السحابة**     | كتاب العمل|`SaveSpreadsheetAs`             | PDF/XLSX/JSON/.... أكثر من 30 تنسيقًا|
 
 ### **تحويل الملفات المحلية**
@@ -133,7 +133,7 @@ cellsApi.ExportWorksheetAsFormat (new SDK.Request.ExportWorksheetAsFormatRequest
 قم بتثبيت الحزمة Aspose.Cells-Cloud NuGet في مشروعك .NET، ويمكنك استخدام وحدة التحكم Package Manager NuGet أو Package Manager NuGet في Visual Studio.
 إليك كيفية تثبيت الحزمة باستخدام وحدة التحكم في إدارة الحزم:
 
-```Powershell
+```powershell
 
 Install-Package Aspose.Cells-Cloud
 

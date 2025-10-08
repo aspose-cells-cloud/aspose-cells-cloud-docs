@@ -1,6 +1,8 @@
 ﻿---
-title: 定价计划
-second_title: Aspose.Cells Cloud Documen
+title: Aspose.Cells 云定价计划：每月 150 次免费 API 通话，超出使用量则采用分级定价模式
+second_title: Documen
+ArticleTitle: Aspose.Cells Cloud Pricing Pla
+linktitle: 定价计划
 type: docs
 url: /zh/pricing-plan/
 description: Aspose.Cells 云支持 Excel 创建、转换、合并、拆分、保护、内部对象操作等
@@ -29,7 +31,7 @@ Aspose 构建了极其易用的软件即服务 (SaaS)，开发者可以在购买
             <td style="border: none; padding: 10px;">$30</td>
         </tr>
         <tr>
-            <td style="border: none; padding: 10px;">下一个 14000 个 API 呼叫</td>
+            <td style="border: none; padding: 10px;">下一个 14000 API 呼叫</td>
             <td style="border: none; padding: 10px;">$0.090 / API 致电</td>
             <td style="border: none; padding: 10px;"></td>
         </tr>
@@ -51,5 +53,4 @@ Aspose 构建了极其易用的软件即服务 (SaaS)，开发者可以在购买
     </tbody>
 </table>
 
-
-请检查[定价方案和购买方式](https://purchase.aspose.cloud/buy)网页概述了我们的单一定价计划以及为什么没有“升级”或“降级”。
+请检查[定价计划和购买方式](https://purchase.aspose.cloud/buy)网页概述了我们的单一定价计划以及为什么没有“升级”或“降级”。

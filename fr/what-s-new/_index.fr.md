@@ -1,7 +1,7 @@
 ﻿---
 title: Quoi de neuf dans Aspose.Cells Cloud
-second_title: Latest Updates & Feature
-linktitle: Qu'est-ce qui ne va pas
+second_title: Documen
+linktitle: Qu'est-ce qui ne
 type: docs
 weight: 9
 url: /fr/new-features/
@@ -19,11 +19,13 @@ kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Nouvea
 
 |**IDENTIFIANT**|**Résumé**|**Catégorie**|
 |:- |:- |:- |
-|55754 | La découpe de l'ensemble du classeur a échoué.|
-|55755 | La mise à jour de la casse des mots de l'ensemble du classeur a échoué.|
-|55930 | Ajoutez des fonctionnalités de protection/déprotection de feuille de calcul.|
-|55931 | Ajoutez la conversion de feuille de calcul/tableau/plage vers d'autres formats.|
-|56088 | Optimiser les options de portée d'exploitation pour TextProcessingController.|
+|56632 | Mettre à jour le nom du paramètre de données de formulaire pour la spécification du code cloud des cellules sur les services Cloud 3.0 des cellules.| Amélioration|
+|56793 | Corrigez le problème de StringEnumConverter sur Aspose.Cells Cloud Services.| Bogue|
+|56866 | Prise en charge de la découpe du contenu de la feuille de calcul dans Cells Cloud 4.0.| Amélioration|
+|56867 | Prise en charge du contenu de la plage de feuilles de calcul de découpe dans Cells Cloud 4.0.| Amélioration|
+|56919 | Une exception s'est produite lors de l'enregistrement de la feuille de calcul sous un format de fichier différent sur le nuage de cellules.| Bogue|
+|56922 | Lors de l'exportation de la plage/table en tant que fichier HTML, les données sont perdues.| Bogue|
+|56936 | Correction de quelques problèmes d'erreurs d'orthographe.| Bogue|
 
 # Sorties historiques
 

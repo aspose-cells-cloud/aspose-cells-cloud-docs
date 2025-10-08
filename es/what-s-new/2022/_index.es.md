@@ -1,7 +1,7 @@
 ﻿---
 title: Novedades de Aspose.Cells Cloud en 2022
-second_title: Latest Updates & Feature
-linktitle: Novedades del 202
+second_title: Documen
+linktitle: Novedades en 202
 type: docs
 weight: 90
 url: /es/new-features/2023/
@@ -17,9 +17,9 @@ Bienvenido a las novedades de la documentación de la nube Aspose.Cells. Utilice
 
 ## Aspose.Cells Nube 22.11
 
-- Añadir nueva API para convertir a json.
+- Agregar nueva API para convertir a json.
 - Agregar nueva API para convertir a SQL.
-- Añadir nueva API para convertir a CVS.
+- Agregar nueva API para convertir a CVS.
 
 ## Aspose.Cells Nube 22.10
 
@@ -32,7 +32,7 @@ Bienvenido a las novedades de la documentación de la nube Aspose.Cells. Utilice
 - Admite la exportación de páginas a otros formatos de archivo.
 - Añadir nueva API para convertir a PDF.
 - Añadir nueva API para convertir a png.
-- Añadir nueva API para convertir a docx.
+- Agregar nueva API para convertir a docx.
 
 ## Aspose.Cells Nube 22.8
 

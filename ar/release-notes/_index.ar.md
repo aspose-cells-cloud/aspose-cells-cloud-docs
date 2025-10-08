@@ -1,6 +1,6 @@
 ﻿---
 title: ملاحظة الإصدار
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /ar/release-notes/
 description: Aspose.Cells تدعم السحابة Excel لإنشاء الكائنات الداخلية وتحويلها ودمجها وتقسيمها وحمايتها وما إلى ذلك

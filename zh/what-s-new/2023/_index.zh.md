@@ -1,7 +1,7 @@
 ﻿---
-title: 2023 年云的新功能
-second_title: Latest Updates & Feature
-linktitle: 202 中的新增功能
+title: 2023 年 Aspose.Cells 云中的新功能
+second_title: Documen
+linktitle: 202 中的新功能
 type: docs
 weight: 30
 url: /zh/new-features/2023/
@@ -9,11 +9,11 @@ keywords: What's new in aspose cells cloud. Microsoft Office Excel, Open Office 
 description: 本页介绍了最近版本中引入的最有趣的新 Aspose.Cells 云功能
 kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、Aspose.Cells 云中的新功能
 ---
-欢迎了解 Aspose.Cells 云文档的新增功能。使用此页面可以快速查找最新更改。
+欢迎了解 Aspose.Cells 云文档的新功能。使用此页面可以快速查找最新更改。
 
-## 23.12.0 版中的增强功能
+## 版本 23.12.0 中的增强功能
 
-- 转换API增加区域参数。
+- 转换 API 添加了区域参数。
 - 保护 API 添加了区域参数。
 - 装配数据API添加区域参数。
 - 合并文件 API 添加区域参数。
@@ -22,15 +22,15 @@ kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdo
 - 水印 API 增加了区域参数。
 - 清除对象 API 添加区域参数。
 - 反向数据API增加区域参数。
-- 旋转数据API添加区域参数。
+- 旋转数据API增加区域参数。
 
-## 23.11 版中的增强功能
+## 版本 23.11 中的增强功能
 
 - 优化导入xml数据到Excel文件。
 - 优化导入json数据到Excel文件。
 - 删除已弃用的函数、类和测试用例。
 
-## 23.10 版中的增强功能
+## 版本 23.10 中的增强功能
 
 - 修复保护工作簿请求。
 - 修复范围复制 API。
@@ -59,7 +59,7 @@ kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdo
 - 支持批量解锁多个文件。
 - 支持批量保护多文件。
 - 支持批量分割多文件。
-- 修复放置文档属性 API。
+- 修复放置文档属性 api。
 
 ## Aspose.Cells 云 23.5
 

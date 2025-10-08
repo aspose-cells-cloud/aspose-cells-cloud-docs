@@ -1,13 +1,15 @@
 ﻿---
-title: Depolama
-second_title: Aspose.Cells Cloud Documen
+title: Aspose.Cells Cloud Docker Container depolama için depolama konumu nasıl ayarlanır?
+second_title: Documen
+ArticleTitle: Aspose.Cells Cloud Docker Container Storage Configuratio
+linktitle: Konteyner Depolama
 type: docs
 url: /tr/docker/storage/
-description: Aspose.Cells Cloud for Docker için depolama konumu nasıl ayarlanır?
+description: Aspose.Cells Cloud Docker Konteyner depolaması için depolama konumu nasıl ayarlanır?
 weight: 30
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Depolama
+kwords: Excel Bulut Docker Konteyneri, Kendi Bulut Docker Konteyneri, REST Docker Konteyneri, Elektronik Tablo, PDF, CSV, Json, Markdown, Docker Görüntüsü, Docker Konteynerini Çalıştırma
 ---
-##  Varsayılan Depolama Yapılandırması ##
+## Varsayılan Depolama Yapılandırması ##
 
 {{< tabs tabTotal="2" tabID="1" tabName1="windows" tabName2="linux" >}}
 
@@ -48,7 +50,6 @@ kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdow
 
 ##  Varsayılan Konum ##
 
-
 - **pencereler**
 
 ```powershell
@@ -72,9 +73,10 @@ Müşteri depolama klasörünü belirttiğinde Aspose.Cells Bulut görüntü dos
 
 ``` powershell
 
-docker run  -d  -v c:/data:c:/data  -p 47900:5000  -e LicensePublicKey=yourLicensePublicKey	 -e LicensePrivateKey=yourLicensePrivateKey	 -e storagesCredentialsFilePath=c:/data/storageResource.json --name asposecellscloud aspose/cells-cloud:ltsc2019.22.2.0
+docker run  -d  -v c:/data:c:/data  -p 47900:5000  -e LicensePublicKey=yourLicensePublicKey  -e LicensePrivateKey=yourLicensePrivateKey  -e storagesCredentialsFilePath=c:/data/storageResource.json --name asposecellscloud aspose/cells-cloud:ltsc2019.22.9.0
 
 ```
 
-**Referans Belgesi** : 
-  - [Docker Çalıştırma]( https://docs.docker.com/engine/reference/commandline/run/)
+**Referans Belgesi** :
+
+- [Aspose.Cells Cloud Docker konteyneri nasıl çalıştırılır.]( https://docs.aspose.cloud/cells/run-aspose-cells-cloud-docker-container/)

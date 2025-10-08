@@ -1,6 +1,8 @@
 ﻿---
-title: Unterstütztes Dateiformat
-second_title: Aspose.Cells Cloud Documen
+title: Aspose.Cells Cloud-unterstütztes Dateiformat
+second_title: Documen
+ArticleTitle: "Aspose.Cells Cloud Supported File Formats: Excel, Pdf, CSV, Json, Markdown, and mor"
+linktitle: Unterstütztes Dateiformat
 type: docs
 url: /de/supported-file-formats/
 description: Aspose.Cells Cloud unterstützt Excel zum Erstellen, Konvertieren, Zusammenführen, Teilen, Schützen, für innere Objektoperationen usw.

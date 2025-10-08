@@ -1,13 +1,15 @@
 ﻿---
-title: Aspose.Cells Cloud SDK för Nod
-second_title: Aspose.Cells Cloud Documen
+title: "Aspose.Cells Cloud SDK för Node.js: Konvertera, slå samman, dela, skydda, sök, ersätt med mera"
+second_title: Documen
+ArticleTitle: "Aspose.Cells Cloud SDK for Node.js: Convert, merge, split, protect, search, replace, and more"
+linktitle: Aspose.Cells Cloud SDK för Node.j
 type: docs
 url: /sv/available-sdks/aspose-cells-cloud-node/
-description: Aspose.Cells Molnet stöder Excel för att skapa, konvertera, sammanfoga, dela, skydda, hantera interna objekt och så vidare.
+description: "Aspose.Cells Cloud SDK för Node.js erbjuder verklig plattformsoberoende kraft: en import ger Windows-, Linux- och macOS-utvecklare samma flytande API för att skapa, konvertera, slå samman, dela, skydda och manipulera varje Excel objekt – ingen Office installation krävs och inga plattformsspecifika justeringar behövs."
 weight: 30
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Node
+kwords: Node.js, Node.js SDK, Excel SDK för Node.js, Cloud SDK för Node.js, REST, Diagram, Pivottabell, Tabell-/Listobjekt, Konvertera kalkylblad, PDF, CSV, Json, Markdown, Sammanfoga, Dela, Skydda, Sök, Ersätt
 ---
- SDK:et är öppen källkod och licensierat under MIT-licensen. Du kan komma åt Node-bibliotekets källkod för Aspose.Cells Cloud.[här](https://github.com/aspose-cells-cloud/aspose-cells-cloud-node).
+SDK:et är öppen källkod och licensierat under MIT-licensen. Du kan komma åt[Nodbibliotekets källkod för Aspose.Cells Cloud](https://github.com/aspose-cells-cloud/aspose-cells-cloud-node).
 
 # **Hur man använder nodbiblioteket i Aspose.Cells Cloud**
 

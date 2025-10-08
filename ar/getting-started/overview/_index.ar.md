@@ -1,13 +1,15 @@
 ﻿---
-title: نظرة عامة
-second_title: Aspose.Cells Cloud Documen
+title: Aspose.Cells نظرة عامة على السحابة
+second_title: Documen
+ArticleTitle: "Aspose.Cells Cloud Overview: a REST-first, language-neutral API service that turns Excel operations into simple HTTPS calls—no local Office install, no platform"
+linktitle: نظرة عامة
 type: docs
 url: /ar/overview/
 description: Aspose.Cells تدعم السحابة Excel لإنشاء الكائنات الداخلية وتحويلها ودمجها وتقسيمها وحمايتها وما إلى ذلك
 weight: 10
 kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، نظرة عامة
 ---
-Aspose.Cells Cloud هو نظام REST API يُسهّل مجموعة واسعة من مهام معالجة المستندات، مثل إنشاء المستندات ومعالجتها وتحويلها وعرضها في السحابة. يمكنك تحويل المستندات بسهولة.[XLS](https://docs.fileformat.com/spreadsheet/xls/) و[XLSX](https://docs.fileformat.com/spreadsheet/xlsx/) الملفات إلى تنسيقات مختلفة مثل[PDF](https://docs.fileformat.com/view/pdf/), [HTML](https://docs.fileformat.com/web/html/), [المواد المستنفدة للأوزون](https://docs.fileformat.com/spreadsheet/ods/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [ملف CSV](https://docs.fileformat.com/spreadsheet/csv/)، وأكثر.
+ Aspose.Cells Cloud هو نظام REST API يُسهّل مجموعة واسعة من مهام معالجة المستندات، مثل إنشاء المستندات ومعالجتها وتحويلها وعرضها في السحابة. يمكنك تحويل المستندات بسهولة.[XLS](https://docs.fileformat.com/spreadsheet/xls/) و[XLSX](https://docs.fileformat.com/spreadsheet/xlsx/) الملفات إلى تنسيقات مختلفة مثل[PDF](https://docs.fileformat.com/view/pdf/), [HTML](https://docs.fileformat.com/web/html/), [المواد المستنفدة للأوزون](https://docs.fileformat.com/spreadsheet/ods/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [ملف CSV](https://docs.fileformat.com/spreadsheet/csv/)، وأكثر.
 
 ## **مجموعات تطوير البرامج (SDKs)**
 
@@ -15,7 +17,7 @@ Aspose.Cells Cloud هو نظام REST API يُسهّل مجموعة واسعة �
 
 ## **API المستكشف**
 
- ال[Aspose.Cells السحابة API مرجع](https://apireference.aspose.cloud/cells/)يُتيح لك هذا التطبيق تجربة واجهات برمجة التطبيقات (APIs) الخاصة بنا مباشرةً عبر متصفحك، مما يُتيح تفاعلاً سلسًا واختبارًا دقيقًا لكل عملية تُجريها واجهات برمجة التطبيقات.
+ ال[Aspose.Cells السحابة API مرجع](https://apireference.aspose.cloud/cells/) يُتيح لك هذا التطبيق تجربة واجهات برمجة التطبيقات (APIs) الخاصة بنا مباشرةً عبر متصفحك، مما يُتيح تفاعلاً سلسًا واختبارًا دقيقًا لكل عملية تُجريها واجهات برمجة التطبيقات.
 
 ## **الأمان والمصادقة**
 

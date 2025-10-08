@@ -1,13 +1,15 @@
 ﻿---
-title: Aspose.Cells Per için Bulut SDK'sı
-second_title: Aspose.Cells Cloud Documen
+title: "Aspose.Cells için Perl Cloud SDK: Dönüştürme, birleştirme, bölme, koruma, arama, değiştirme ve daha fazlası"
+second_title: Documen
+ArticleTitle: "Aspose.Cells Cloud SDK for Perl: Convert, merge, split, protect, search, replace, and more"
+linktitle: Aspose.Cells Per için Bulut SDK'sı
 type: docs
 url: /tr/available-sdks/aspose-cells-cloud-perl/
-description: Aspose.Cells Bulut, Excel'in oluşturma, dönüştürme, birleştirme, bölme, korumalı, iç nesne işlemleri vb. işlemlerini destekler
+description: "Aspose.Cells için Perl Cloud SDK, gerçek platformlar arası güç sunar: tek bir içe aktarma, Windows, Linux ve macOS geliştiricilerine her nesneyi oluşturma, dönüştürme, birleştirme, bölme, koruma ve düzenleme konusunda aynı akıcı API özelliğini sağlar; Office kurulum gerekmez ve platforma özgü ayarlamalar gerekmez"
 weight: 30
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Perl
+kwords: Perl, Perl SDK, Perl için Excel SDK, Perl için Cloud SDK, REST, Grafik, Pivot Tablo, Tablo/Liste Nesnesi, Elektronik Tabloyu Dönüştür, PDF, CSV, Json, Markdown, Birleştir, Böl, Koru, Ara, Değiştir
 ---
-SDK açık kaynaklıdır ve MIT Lisansı kapsamında lisanslanmıştır. Aspose.Cells Cloud için Perl kütüphane kaynak koduna erişebilirsiniz.[Burada](https://github.com/aspose-cells-cloud/aspose-cells-cloud-perl).
+SDK açık kaynaklıdır ve MIT Lisansı kapsamında lisanslanmıştır. Erişim sağlayabilirsiniz[Aspose.Cells Cloud için Perl kütüphane kaynak kodu](https://github.com/aspose-cells-cloud/aspose-cells-cloud-perl).
 
 # **Aspose.Cells Cloud'un Perl kütüphanesi nasıl kullanılır?**
 

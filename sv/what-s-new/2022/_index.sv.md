@@ -1,6 +1,6 @@
 ﻿---
 title: Nyheter i Aspose.Cells Cloud år 2022
-second_title: Latest Updates & Feature
+second_title: Documen
 linktitle: Vad är nytt i 202
 type: docs
 weight: 90

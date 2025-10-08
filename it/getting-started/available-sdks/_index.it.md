@@ -1,6 +1,8 @@
 ﻿---
-title: SDK disponibile
-second_title: Aspose.Cells Cloud Documen
+title: Disponibile Aspose.Cells Cloud SDK
+second_title: Documen
+ArticleTitle: "Available Aspose.Cells Cloud SDKs: C#, Java, PHP, Python, Ruby, Node.js, Go, Per"
+LinkTitle: Available SDK
 type: docs
 url: /it/available-sdks/
 description: Aspose.Cells Cloud supporta Excel per creare, convertire, unire, dividere, proteggere, operazioni di oggetti interni e così via
@@ -67,13 +69,12 @@ In sintesi, l'utilizzo di Cloud SDK Aspose.Cells per Go può offrire numerosi va
 ## **Integrazione nei processi CI/CD**
 
 - Integra Aspose.Cells Cloud SDK for Java nel tuo processo di integrazione continua/distribuzione continua (CI/CD) per automatizzare il test della correttezza dei dati del foglio di calcolo.
-- Ciò contribuisce a garantire che le modifiche al codice non compromettano l'integrità o la formattazione dei dati del foglio di calcolo.
+- Ciò aiuta a garantire che le modifiche al codice non compromettano l'integrità o la formattazione dei dati del foglio di calcolo.
 
 ## **Applicazione di foglio di calcolo personalizzata**
 
 - Con Aspose.Cells Cloud SDK for Java, puoi creare applicazioni di fogli di calcolo personalizzate per soddisfare specifiche esigenze aziendali.
 - Ad esempio, lo sviluppo di applicazioni personalizzate per l'elaborazione di moduli, strumenti di gestione dei dati finanziari, ecc.
-
 
 # **Vantaggi dell'SDK**
 

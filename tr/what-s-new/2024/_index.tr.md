@@ -1,6 +1,6 @@
 ﻿---
 title: 2024'te Aspose.Cells Cloud'daki yenilikler
-second_title: Latest Updates & Feature
+second_title: Documen
 linktitle: 202'deki yenilikler
 type: docs
 weight: 20

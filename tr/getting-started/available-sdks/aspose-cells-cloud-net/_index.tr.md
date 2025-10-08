@@ -1,13 +1,15 @@
 ﻿---
-title: Aspose.Cells Ne için Bulut SDK'sı
-second_title: Aspose.Cells Cloud Documen
+title: "Aspose.Cells için C# Cloud SDK: Dönüştürme, birleştirme, bölme, koruma, arama, değiştirme ve daha fazlası"
+second_title: Documen
+ArticleTitle: "Aspose.Cells Cloud SDK for C#: Convert, merge, split, protect, search, replace, and more"
+linktitle: .Ne için Aspose.Cells Cloud SDK
 type: docs
 url: /tr/available-sdks/aspose-cells-cloud-net/
-description: Aspose.Cells Bulut, Excel'in oluşturma, dönüştürme, birleştirme, bölme, korumalı, iç nesne işlemleri vb. işlemlerini destekler
+description: ".Net için Aspose.Cells Cloud SDK, gerçek platformlar arası güç sunar: tek bir içe aktarma, Windows, Linux ve macOS geliştiricilerine her nesneyi oluşturma, dönüştürme, birleştirme, bölme, koruma ve yönetme konusunda aynı akıcılığı sağlar; Excel kurulum gerekmez ve platforma özgü ayarlamalar gerekmez"
 weight: 30
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Net
+kwords: .Net için REST SDK, .Net için Excel SDK, .Net için Cloud SDK, Dönüştürme, birleştirme, bölme, koruma, arama, değiştirme ve daha fazlası için destek
 ---
- SDK açık kaynaklıdır ve MIT Lisansı kapsamında lisanslanmıştır. Aspose.Cells Cloud için Net kütüphane kaynak koduna erişebilirsiniz.[Burada](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet).
+SDK açık kaynaklıdır ve MIT Lisansı kapsamında lisanslanmıştır. Erişim sağlayabilirsiniz[Aspose.Cells Cloud için Net kütüphanesi kaynak kodu](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet).
 
 # **Aspose.Cells Cloud Net kütüphanesi nasıl kullanılır?**
 
@@ -21,7 +23,7 @@ Bu makalede, Aspose.Cells Cloud SDK for Net'in yeni bir Excel çalışma kitabı
 
 ## Aspose.Cells Cloud için Net paketi nasıl kurulur?
 
-nuget'i kullanarak Aspose.Cells Cloud SDK for Net'i yükleyebilirsiniz. Aşağıda nuget için adımlar yer almaktadır:
+Aspose.Cells Cloud SDK for Net'i nuget kullanarak yükleyebilirsiniz. Aşağıda nuget için adımlar yer almaktadır:
 
 ```nuget
 

@@ -1,13 +1,15 @@
 ﻿---
-title: Lagerung
-second_title: Aspose.Cells Cloud Documen
+title: So legen Sie die Speicherposition für Aspose.Cells Cloud Docker Container-Speicher fest
+second_title: Documen
+ArticleTitle: Aspose.Cells Cloud Docker Container Storage Configuratio
+linktitle: Containerlagerung
 type: docs
 url: /de/docker/storage/
-description: So legen Sie die Speicherposition für Aspose.Cells Cloud für Docker fest
+description: So legen Sie die Speicherposition für Aspose.Cells Cloud Docker Container-Speicher fest
 weight: 30
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Speicher
+kwords: Excel Cloud-Docker-Container, Self-Cloud-Docker-Container, REST-Docker-Container, Tabellenkalkulation, PDF, CSV, Json, Markdown, Docker-Image, Docker-Container ausführen
 ---
-##  Standardspeicherkonfiguration ##
+## Standardspeicherkonfiguration ##
 
 {{< tabs tabTotal="2" tabID="1" tabName1="windows" tabName2="linux" >}}
 
@@ -48,7 +50,6 @@ kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Mark
 
 ##  Standardposition ##
 
-
 - **Fenster**
 
 ```powershell
@@ -72,9 +73,10 @@ Das Speicherprofil für die Cloud-Image-Datei Aspose.Cells muss neu angegeben we
 
 ``` powershell
 
-docker run  -d  -v c:/data:c:/data  -p 47900:5000  -e LicensePublicKey=yourLicensePublicKey	 -e LicensePrivateKey=yourLicensePrivateKey	 -e storagesCredentialsFilePath=c:/data/storageResource.json --name asposecellscloud aspose/cells-cloud:ltsc2019.22.2.0
+docker run  -d  -v c:/data:c:/data  -p 47900:5000  -e LicensePublicKey=yourLicensePublicKey  -e LicensePrivateKey=yourLicensePrivateKey  -e storagesCredentialsFilePath=c:/data/storageResource.json --name asposecellscloud aspose/cells-cloud:ltsc2019.22.9.0
 
 ```
 
-**Referenzdokument** : 
-  - [Docker-Ausführung]( https://docs.docker.com/engine/reference/commandline/run/)
+**Referenzdokument** :
+
+- [So führen Sie den Cloud Docker-Container Aspose.Cells aus.]( https://docs.aspose.cloud/cells/run-aspose-cells-cloud-docker-container/)

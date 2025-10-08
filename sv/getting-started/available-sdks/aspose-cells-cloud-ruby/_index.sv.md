@@ -1,19 +1,21 @@
 ﻿---
-title: Aspose.Cells Cloud SDK för Rub
-second_title: Aspose.Cells Cloud Documen
+title: "Aspose.Cells Cloud SDK för Ruby: Konvertera, slå samman, dela, skydda, sök, ersätt med mera"
+second_title: Documen
+ArticleTitle: "Aspose.Cells Cloud SDK for Ruby: Convert, merge, split, protect, search, replace, and more"
+linktitle: Aspose.Cells Cloud SDK för Rub
 type: docs
 url: /sv/available-sdks/aspose-cells-cloud-ruby/
-description: Aspose.Cells Molnet stöder Excel för att skapa, konvertera, sammanfoga, dela, skydda, hantera interna objekt och så vidare.
+description: "Aspose.Cells Cloud SDK för Ruby erbjuder verklig plattformsoberoende kraft: en import ger Windows-, Linux- och macOS-utvecklare samma flytande API för att skapa, konvertera, slå samman, dela, skydda och manipulera alla Excel objekt – ingen Office installation krävs och inga plattformsspecifika justeringar behövs."
 weight: 30
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Ruby
+kwords: Ruby SDK, Excel SDK för Ruby, Cloud SDK för Ruby, REST, Diagram, Pivottabell, Tabell-/Listobjekt, Konvertera kalkylblad, PDF, CSV, Json, Markdown, Sammanfoga, Dela, Skydda, Sök, Ersätt
 ---
-SDK:et är öppen källkod och licensierat under MIT-licensen. Du kan komma åt Ruby-bibliotekets källkod för Aspose.Cells Cloud.[här](https://github.com/aspose-cells-cloud/aspose-cells-cloud-ruby).
+SDK:et är öppen källkod och licensierat under MIT-licensen. Du kan komma åt[Ruby-bibliotekets källkod för Aspose.Cells Cloud](https://github.com/aspose-cells-cloud/aspose-cells-cloud-ruby).
 
 # **Hur man använder Aspose.Cells Cloud SDK för Ruby**
 
 Aspose.Cells Cloud SDK för Ruby är ett kraftfullt bibliotek som låter utvecklare manipulera och bearbeta Microsoft Excel filer med hjälp av programmeringsspråket Ruby. Med detta SDK kan du skapa, redigera och konvertera Excel dokument i molnet, utan att installera ytterligare programvara eller beroenden på din lokala dator.
 
-I den här artikeln ska vi utforska hur man använder Aspose.Cells Cloud SDK för Ruby för att utföra några vanliga uppgifter, som att skapa en ny Excel-arbetsbok, infoga data i celler och spara den modifierade arbetsboken i molnet.
+den här artikeln ska vi utforska hur man använder Aspose.Cells Cloud SDK för Ruby för att utföra några vanliga uppgifter, som att skapa en ny Excel-arbetsbok, infoga data i celler och spara den modifierade arbetsboken i molnet.
 
 ## Komma igång
 

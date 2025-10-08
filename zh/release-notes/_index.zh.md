@@ -1,6 +1,6 @@
 ﻿---
 title: 发行说明
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /zh/release-notes/
 description: Aspose.Cells 云支持 Excel 创建、转换、合并、拆分、保护、内部对象操作等

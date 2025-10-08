@@ -1,13 +1,15 @@
 ﻿---
-title: Aspose.Cells Cloud SDK för Ne
-second_title: Aspose.Cells Cloud Documen
+title: "Aspose.Cells Cloud SDK för C#: Konvertera, slå samman, dela, skydda, sök, ersätt med mera"
+second_title: Documen
+ArticleTitle: "Aspose.Cells Cloud SDK for C#: Convert, merge, split, protect, search, replace, and more"
+linktitle: Aspose.Cells Cloud SDK för .Ne
 type: docs
 url: /sv/available-sdks/aspose-cells-cloud-net/
-description: Aspose.Cells Molnet stöder Excel för att skapa, konvertera, sammanfoga, dela, skydda, hantera interna objekt och så vidare.
+description: "Aspose.Cells Cloud SDK för .Net erbjuder verklig plattformsoberoende kraft: en import ger Windows-, Linux- och macOS-utvecklare samma flytande API för att skapa, konvertera, slå samman, dela, skydda och manipulera alla Excel objekt – ingen Office installation krävs och inga plattformsspecifika justeringar behövs."
 weight: 30
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Nät
+kwords: REST SDK för .Net, Excel SDK för .Net, Cloud SDK för .Net, stöd för konvertering, sammanslagning, delning, skydd, sökning, ersättning med mera
 ---
- SDK:et är öppen källkod och licensierat under MIT-licensen. Du kan komma åt Net-bibliotekets källkod för Aspose.Cells Cloud.[här](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet).
+SDK:et är öppen källkod och licensierat under MIT-licensen. Du kan komma åt[Netbibliotekets källkod för Aspose.Cells Cloud](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet).
 
 # **Hur man använder nätbiblioteket i Aspose.Cells Cloud**
 

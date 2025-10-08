@@ -1,6 +1,8 @@
 ﻿---
-title: Mevcut SDK
-second_title: Aspose.Cells Cloud Documen
+title: Aspose.Cells Bulut SDK'sı mevcuttur
+second_title: Documen
+ArticleTitle: "Available Aspose.Cells Cloud SDKs: C#, Java, PHP, Python, Ruby, Node.js, Go, Per"
+LinkTitle: Available SDK
 type: docs
 url: /tr/available-sdks/
 description: Aspose.Cells Bulut, Excel'in oluşturma, dönüştürme, birleştirme, bölme, korumalı, iç nesne işlemleri vb. işlemlerini destekler
@@ -73,7 +75,6 @@ Aspose.Cells Cloud SDK'yı kullanmak, pahalı şirket içi Office yazılım veya
 
 - Aspose.Cells Cloud SDK for Java ile belirli iş ihtiyaçlarınızı karşılayacak şekilde özelleştirilmiş elektronik tablo uygulamaları oluşturabilirsiniz.
 - Örneğin, özel form işleme uygulamaları, finansal veri yönetimi araçları vb. geliştirmek.
-
 
 # **SDK avantajları**
 

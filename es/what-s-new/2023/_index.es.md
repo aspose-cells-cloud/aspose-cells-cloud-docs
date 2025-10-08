@@ -1,7 +1,7 @@
 ﻿---
 title: Novedades de Aspose.Cells Cloud en 2023
-second_title: Latest Updates & Feature
-linktitle: Novedades del 202
+second_title: Documen
+linktitle: Novedades en 202
 type: docs
 weight: 30
 url: /es/new-features/2023/
@@ -34,14 +34,14 @@ Bienvenido a las novedades de la documentación de la nube Aspose.Cells. Utilice
 
 - Arreglar solicitud de protección de libro de trabajo.
 - Corregir copia de rango API.
-- Optimizar la protección del libro de trabajo API.
+- Optimizar libro de trabajo proteger API.
 
 ## Mejoras en la versión 23.9
 
 - Soporte para clasificación de datos en el controlador de rango.
 - Soporte para eliminar datos duplicados en el objeto de lista.
 - Soporte para insertar segmentación de datos para objetos de lista.
-- Optimizar la lista de objetos y los objetos relacionados.
+- Optimizar el objeto de lista y los objetos relacionados.
 
 ## Mejoras en la versión 23.8
 
@@ -63,7 +63,7 @@ Bienvenido a las novedades de la documentación de la nube Aspose.Cells. Utilice
 
 ## Aspose.Cells Nube 23.5
 
-- Se corrigen algunos métodos que están mal escritos.
+- Se corrigieron algunos métodos que estaban mal escritos.
 
 ## Aspose.Cells Nube 23.4
 

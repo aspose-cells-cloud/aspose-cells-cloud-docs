@@ -1,6 +1,8 @@
 ﻿---
-title: 支持的文件格式
-second_title: Aspose.Cells Cloud Documen
+title: Aspose.Cells 云支持的文件格式
+second_title: Documen
+ArticleTitle: "Aspose.Cells Cloud Supported File Formats: Excel, Pdf, CSV, Json, Markdown, and mor"
+linktitle: 支持的文件格式
 type: docs
 url: /zh/supported-file-formats/
 description: Aspose.Cells 云支持 Excel 创建、转换、合并、拆分、保护、内部对象操作等
@@ -22,7 +24,7 @@ kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdo
 |制表符分隔|制表符分隔的文本文件，与 TSV 文件相同。|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[TXT](https://docs.fileformat.com/word-processing/txt/)|分隔的纯文本文件。|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[HTML](https://docs.fileformat.com/web/html/)|HTML格式。|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[MHTML](https://docs.fileformat.com/web/mhtml/)|MHTML 文件。|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[移动HTML](https://docs.fileformat.com/web/mhtml/)|MHTML 文件。|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[消耗臭氧层物质](https://docs.fileformat.com/spreadsheet/ods/)|ODS（开放文档电子表格）。|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |电子表格ML|Excel 2003 XML 文件。|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[数字](https://docs.fileformat.com/spreadsheet/numbers/)|该文档由苹果公司的“Numbers”应用程序创建，该应用程序是苹果公司 iWork office 套件的一部分，该套件是一组在 Mac OS X 和 iOS 操作系统上运行的应用程序。|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
@@ -37,7 +39,7 @@ kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdo
 |[BMP](https://docs.fileformat.com/image/bmp/)|位图图像格式||{{< emoticons/tick >}}|
 |[EMF](https://docs.fileformat.com/image/emf/)|增强型图元文件格式||{{< emoticons/tick >}}|
 |[JPEG](https://docs.fileformat.com/image/jpeg/)|JPEG是一种使用有损压缩方法保存的图像格式。||{{< emoticons/tick >}}|
-|[动图](https://docs.fileformat.com/image/gif/)|图形交换格式||{{< emoticons/tick >}}|
+|[GIF](https://docs.fileformat.com/image/gif/)|图形交换格式||{{< emoticons/tick >}}|
 |[降价](https://docs.fileformat.com/word-processing/md/)|代表一个 markdown 文档。|{{< emoticons/tick >}} |{{< emoticons/tick >}}|
 |[西南交通大学](https://docs.fileformat.com/spreadsheet/sxc/)|OpenOffice 和 StarOffice 使用的基于 XML 的格式|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[食物中毒](https://docs.fileformat.com/spreadsheet/fods/)|这是一种以平面 XML 形式存储的开放文档格式。|{{< emoticons/tick >}}|{{< emoticons/tick >}}|

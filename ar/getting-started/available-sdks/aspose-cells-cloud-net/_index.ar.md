@@ -1,13 +1,15 @@
 ﻿---
-title: Aspose.Cells مجموعة تطوير البرامج السحابية لـ Ne
-second_title: Aspose.Cells Cloud Documen
+title: "Aspose.Cells Cloud SDK لـ C#: التحويل، الدمج، التقسيم، الحماية، البحث، الاستبدال، والمزيد"
+second_title: Documen
+ArticleTitle: "Aspose.Cells Cloud SDK for C#: Convert, merge, split, protect, search, replace, and more"
+linktitle: Aspose.Cells مجموعة تطوير البرامج السحابية لـ .Ne
 type: docs
 url: /ar/available-sdks/aspose-cells-cloud-net/
-description: Aspose.Cells تدعم السحابة Excel لإنشاء الكائنات الداخلية وتحويلها ودمجها وتقسيمها وحمايتها وما إلى ذلك
+description: "توفر مجموعة SDK السحابية Aspose.Cells لـ .Net قوة حقيقية عبر الأنظمة الأساسية: يوفر استيراد واحد للمطورين Windows وLinux وmacOS نفس القدرة على إنشاء كل كائن وتحويله ودمجه وتقسيمه وحمايته ومعالجته - لا يلزم تثبيت Office ولا يلزم إجراء تعديلات خاصة بالمنصة"
 weight: 30
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، Net
+kwords: مجموعة أدوات تطوير البرامج REST لـ .Net، مجموعة أدوات تطوير البرامج Excel لـ .Net، مجموعة أدوات تطوير البرامج السحابية لـ .Net، دعم التحويل، والدمج، والتقسيم، والحماية، والبحث، والاستبدال، والمزيد
 ---
- مجموعة تطوير البرامج مفتوحة المصدر ومرخصة بموجب ترخيص معهد ماساتشوستس للتكنولوجيا. يمكنك الوصول إلى شفرة المصدر لمكتبة Net لـ Aspose.Cells Cloud.[هنا](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet).
+مجموعة تطوير البرامج مفتوحة المصدر ومرخصة بموجب ترخيص معهد ماساتشوستس للتكنولوجيا. يمكنك الوصول إليها[كود مصدر مكتبة الشبكة لـ Aspose.Cells Cloud](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet).
 
 # **كيفية استخدام مكتبة Net من Aspose.Cells Cloud**
 
@@ -21,7 +23,7 @@ kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF،
 
 ## كيفية تثبيت حزمة Net لـ Aspose.Cells Cloud
 
-يمكنك تثبيت Aspose.Cells Cloud SDK للشبكة باستخدام nuget. فيما يلي الخطوات الخاصة بـ nuget:
+يمكنك تثبيت Aspose.Cells Cloud SDK for Net باستخدام nuget. فيما يلي الخطوات الخاصة بـ nuget:
 
 ```nuget
 

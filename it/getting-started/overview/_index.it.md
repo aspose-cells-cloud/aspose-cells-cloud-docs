@@ -1,13 +1,15 @@
 ﻿---
-title: Panoramica
-second_title: Aspose.Cells Cloud Documen
+title: Aspose.Cells Cloud Overvie
+second_title: Documen
+ArticleTitle: "Aspose.Cells Cloud Overview: a REST-first, language-neutral API service that turns Excel operations into simple HTTPS calls—no local Office install, no platform"
+linktitle: Panoramica
 type: docs
 url: /it/overview/
 description: Aspose.Cells Cloud supporta Excel per creare, convertire, unire, dividere, proteggere, operazioni di oggetti interni e così via
 weight: 10
 kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Panoramica
 ---
-Aspose.Cells Cloud è un REST API che facilita una vasta gamma di attività di elaborazione dei documenti, come la creazione, la manipolazione, la conversione e il rendering di documenti Excel nel cloud. Puoi convertire senza sforzo[XLS](https://docs.fileformat.com/spreadsheet/xls/) E[XLSX](https://docs.fileformat.com/spreadsheet/xlsx/) file in vari formati come[PDF](https://docs.fileformat.com/view/pdf/), [HTML](https://docs.fileformat.com/web/html/), [ODS](https://docs.fileformat.com/spreadsheet/ods/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [CSV](https://docs.fileformat.com/spreadsheet/csv/)e altro ancora.
+ Aspose.Cells Cloud è un REST API che facilita una vasta gamma di attività di elaborazione dei documenti, come la creazione, la manipolazione, la conversione e il rendering di documenti Excel nel cloud. Puoi convertire senza sforzo[XLS](https://docs.fileformat.com/spreadsheet/xls/) E[XLSX](https://docs.fileformat.com/spreadsheet/xlsx/) file in vari formati come[PDF](https://docs.fileformat.com/view/pdf/), [HTML](https://docs.fileformat.com/web/html/), [ODS](https://docs.fileformat.com/spreadsheet/ods/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [CSV](https://docs.fileformat.com/spreadsheet/csv/)e altro ancora.
 
 ## **SDK**
 
@@ -15,7 +17,7 @@ Aspose.Cells Cloud è un REST API che facilita una vasta gamma di attività di e
 
 ## **API Esploratore**
 
- IL[Aspose.Cells Cloud API Riferimento](https://apireference.aspose.cloud/cells/)Offre un modo intuitivo per sperimentare le nostre API direttamente nel tuo browser! Permette un'interazione e un test fluidi di ogni operazione esposta dalle nostre API.
+ IL[Aspose.Cells Cloud API Riferimento](https://apireference.aspose.cloud/cells/) Offre un modo intuitivo per sperimentare le nostre API direttamente nel tuo browser! Permette un'interazione e un test fluidi di ogni operazione esposta dalle nostre API.
 
 ## **Sicurezza e autenticazione**
 
