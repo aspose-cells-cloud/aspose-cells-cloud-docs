@@ -1,6 +1,6 @@
 ﻿---
 title: Konvertieren Sie eine Excel-Datei in ein anderes Format
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Tabellenkalkulation konvertieren
 type: docs
 url: /de/convert-a-spread-file-to-different-formats/

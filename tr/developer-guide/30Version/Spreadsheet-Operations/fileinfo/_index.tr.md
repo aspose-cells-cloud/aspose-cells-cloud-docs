@@ -1,6 +1,6 @@
 ﻿---
 title: Dosya Bilgileri
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Dosya Bilgileri
 type: docs
 url: /tr/file-info/

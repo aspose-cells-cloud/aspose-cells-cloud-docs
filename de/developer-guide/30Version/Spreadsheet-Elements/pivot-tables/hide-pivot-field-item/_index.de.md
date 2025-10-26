@@ -1,6 +1,6 @@
 ﻿---
 title: Pivot-Feldelement in einer Pivot-Tabelle ausblenden
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Verstecken
 type: docs
 url: /de/pivot-tables/hide-pivot-field-item/

@@ -1,13 +1,15 @@
 ﻿---
-title: Plan de tarification
-second_title: Aspose.Cells Cloud Documen
+title: "Plan tarifaire Cloud Aspose.Cells : 150 appels gratuits au API par mois, avec un modèle de tarification à plusieurs niveaux pour les dépassements d'utilisation"
+second_title: Documen
+ArticleTitle: Aspose.Cells Cloud Pricing Pla
+linktitle: Plan de tarification
 type: docs
 url: /fr/pricing-plan/
 description: Aspose.Cells Cloud prend en charge Excel pour créer, convertir, fusionner, diviser, protéger, effectuer des opérations sur des objets internes, etc.
 weight: 70
 kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Plan tarifaire
 ---
-Aspose crée des logiciels SaaS (Software as a Service) incroyablement faciles à utiliser, que les développeurs peuvent pleinement évaluer avant de s'engager à acheter. Pour ce faire, nous utilisons un modèle de vente légèrement différent.
+Aspose crée des logiciels en tant que service (SaaS) incroyablement faciles à utiliser, que les développeurs peuvent pleinement évaluer avant de s'engager à acheter. Pour ce faire, nous utilisons un modèle de vente légèrement différent.
 
 <table style="font-size: 16px; width: 100%; border-collapse: collapse;">
     <thead>
@@ -34,7 +36,7 @@ Aspose crée des logiciels SaaS (Software as a Service) incroyablement faciles �
             <td style="border: none; padding: 10px;"></td>
         </tr>
         <tr>
-            <td style="border: none; padding: 10px;">Prochains 15000 appels API</td>
+            <td style="border: none; padding: 10px;">15000 prochains appels au API</td>
             <td style="border: none; padding: 10px;">0,070 $ / API Appel</td>
             <td style="border: none; padding: 10px;"></td>
         </tr>
@@ -50,6 +52,5 @@ Aspose crée des logiciels SaaS (Software as a Service) incroyablement faciles �
         </tr>
     </tbody>
 </table>
-
 
  Vérifiez s'il vous plaît[le plan tarifaire et comment acheter](https://purchase.aspose.cloud/buy) page Web qui donne un aperçu de notre plan tarifaire unique et pourquoi il n'y a pas de « mises à niveau » ou de « rétrogradations ».

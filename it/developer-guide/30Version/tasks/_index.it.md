@@ -1,6 +1,6 @@
 ﻿---
 title: Compito
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /it/tasks/
 aliases: [/working-with-tasks/]

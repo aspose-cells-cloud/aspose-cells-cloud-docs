@@ -1,6 +1,6 @@
 ﻿---
 title: Daten importieren mit Hilfe von Speicher
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Daten mit Speicher importieren
 type: docs
 url: /de/import-data-with-using-storage/

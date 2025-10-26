@@ -1,6 +1,6 @@
 ﻿---
 title: 将 Excel 文件转换为其他格式
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: 获取 Exce
 type: docs
 url: /zh/get different formats files/
@@ -36,9 +36,9 @@ kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdo
 |:- |:- |:- |:- |
 |/单元格/{名称}|得到|将工作簿导出为其他格式。|[获取工作簿](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)|
 
-这[OpenAPI规范](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
 
-您可以使用**cURL**命令行工具可轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用 Cloud API。
+您可以使用**cURL**命令行工具可轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
 
 {{< tabs tabTotal="1" tabID="11" tabName11="Request" >}}
 

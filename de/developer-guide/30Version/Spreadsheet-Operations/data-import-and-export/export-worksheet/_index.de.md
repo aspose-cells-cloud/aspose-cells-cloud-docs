@@ -1,6 +1,6 @@
 ﻿---
 title: Arbeitsblatt exportieren
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Arbeitsblatt
 type: docs
 url: /de/export-excel-worksheet-to-different-formats/

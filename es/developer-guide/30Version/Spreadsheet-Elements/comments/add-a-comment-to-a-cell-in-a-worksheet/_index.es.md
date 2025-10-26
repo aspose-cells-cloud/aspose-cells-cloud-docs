@@ -25,7 +25,7 @@ Los parámetros de la solicitud son:
 | nombre| cadena| camino| El nombre del documento.|
 | nombreHoja| cadena| camino| El nombre de la hoja de trabajo.|
 | nombreCelda| cadena| camino| El nombre de la celda|
-| comentario|| cuerpo| objeto de comentario|
+| comentario|| cuerpo| Objeto de comentario|
 | carpeta| cadena| consulta| La carpeta de documentos.|
 | nombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
 
@@ -108,7 +108,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/comment
 
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
 
 Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
 

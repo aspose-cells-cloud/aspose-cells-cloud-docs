@@ -1,6 +1,6 @@
 ﻿---
 title: Lavorare con la tabella pivot Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Tabella pivot
 type: docs
 url: /it/pivottables/

@@ -1,6 +1,6 @@
 ﻿---
 title: Получить именованные диапазоны в рабочей книге Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Нам
 type: docs
 url: /ru/ranges/get/name/

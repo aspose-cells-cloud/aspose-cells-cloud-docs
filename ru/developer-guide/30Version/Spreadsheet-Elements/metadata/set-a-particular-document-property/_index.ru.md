@@ -1,6 +1,6 @@
 ﻿---
 title: Установите конкретное свойство документа
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Обновление
 type: docs
 url: /ru/document-properties/update/

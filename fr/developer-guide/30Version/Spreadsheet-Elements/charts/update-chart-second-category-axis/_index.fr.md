@@ -1,11 +1,11 @@
 ﻿---
-title:  Mise à jour du graphique de la deuxième catégorie Axi
+title:  Mise à jour du graphique Axi de la deuxième catégorie
 type: docs
 url: /fr/charts/second-category-axis/update/
 weight: 160
-kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Mettre à jour le graphique, deuxième axe de catégorie
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Mettre à jour le deuxième axe de catégorie du graphique
 ---
- Ce REST API indique la mise à jour du deuxième axe de catégorie du graphique.
+ Ce REST API indique la mise à jour de l'axe de la deuxième catégorie du graphique.
  
 ## RSET API
  
@@ -14,7 +14,7 @@ kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdo
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/secondcategoryaxis
  
 ```
- Les paramètres de la requête sont :
+ Les paramètres de la requête sont :
  
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

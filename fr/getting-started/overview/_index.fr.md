@@ -1,13 +1,15 @@
 ﻿---
-title: Aperçu
-second_title: Aspose.Cells Cloud Documen
+title: Aspose.Cells Aperçu du cloud
+second_title: Documen
+ArticleTitle: "Aspose.Cells Cloud Overview: a REST-first, language-neutral API service that turns Excel operations into simple HTTPS calls—no local Office install, no platform"
+linktitle: Aperçu
 type: docs
 url: /fr/overview/
 description: Aspose.Cells Cloud prend en charge Excel pour créer, convertir, fusionner, diviser, protéger, effectuer des opérations sur des objets internes, etc.
 weight: 10
 kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Présentation
 ---
-Aspose.Cells Cloud est une solution REST API qui facilite un large éventail de tâches de traitement de documents, telles que la création, la manipulation, la conversion et le rendu Excel de documents dans le cloud. Vous pouvez convertir facilement[XLS](https://docs.fileformat.com/spreadsheet/xls/) et[XLSX](https://docs.fileformat.com/spreadsheet/xlsx/) fichiers dans divers formats tels que[PDF](https://docs.fileformat.com/view/pdf/), [HTML](https://docs.fileformat.com/web/html/), [SAO](https://docs.fileformat.com/spreadsheet/ods/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), et plus encore.
+ Aspose.Cells Cloud est un REST API qui facilite un large éventail de tâches de traitement de documents, telles que la création, la manipulation, la conversion et le rendu Excel de documents dans le cloud. Vous pouvez convertir facilement[XLS](https://docs.fileformat.com/spreadsheet/xls/) et[XLSX](https://docs.fileformat.com/spreadsheet/xlsx/) fichiers dans divers formats comme[PDF](https://docs.fileformat.com/view/pdf/), [HTML](https://docs.fileformat.com/web/html/), [SAO](https://docs.fileformat.com/spreadsheet/ods/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), et plus encore.
 
 ## **SDK**
 
@@ -15,7 +17,7 @@ Aspose.Cells Cloud est une solution REST API qui facilite un large éventail de 
 
 ## **API Explorer**
 
- Le[Aspose.Cells Cloud API Référence](https://apireference.aspose.cloud/cells/)Offre une expérience conviviale avec nos API directement dans votre navigateur ! Elle permet une interaction et des tests fluides de chaque opération exposée par nos API.
+ Le[Aspose.Cells Cloud API Référence](https://apireference.aspose.cloud/cells/) Offre une expérience conviviale avec nos API directement dans votre navigateur ! Elle permet une interaction et des tests fluides de chaque opération exposée par nos API.
 
 ## **Sécurité et authentification**
 

@@ -1,6 +1,6 @@
 ﻿---
 title: الحصول على عناصر نصية من ورقة عمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: احصل على ورقة العمل
 type: docs
 url: /ar/worksheets/get-text-items/

@@ -1,6 +1,6 @@
 ﻿---
 title: Liste nesnesi yinelenenleri kaldırır
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Yinelenenleri kaldır
 type: docs
 keywords: list object(table) remove duplicates 

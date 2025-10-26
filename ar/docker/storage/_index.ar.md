@@ -1,13 +1,15 @@
 ﻿---
-title: تخزين
-second_title: Aspose.Cells Cloud Documen
+title: كيفية تعيين موضع التخزين لتخزين حاوية Cloud Docker Aspose.Cells
+second_title: Documen
+ArticleTitle: Aspose.Cells Cloud Docker Container Storage Configuratio
+linktitle: تخزين الحاويات
 type: docs
 url: /ar/docker/storage/
-description: كيفية تعيين موضع التخزين حول Aspose.Cells Cloud لـ Docker
+description: كيفية تعيين موضع التخزين لتخزين حاوية Cloud Docker Aspose.Cells
 weight: 30
-kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، التخزين
+kwords: Excel حاوية Docker السحابية، حاوية Docker ذاتية السحابة، حاوية REST Docker، جدول بيانات، PDF، CSV، JSON، Markdown، صورة Docker، تشغيل حاوية Docker
 ---
-##  تكوين التخزين الافتراضي ##
+## تكوين التخزين الافتراضي ##
 
 {{< tabs tabTotal="2" tabID="1" tabName1="windows" tabName2="linux" >}}
 
@@ -48,7 +50,6 @@ kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF،
 
 ##  الموضع الافتراضي ##
 
-
 - **النوافذ**
 
 ```powershell
@@ -72,9 +73,10 @@ c:\app\storageResource.json
 
 ``` powershell
 
-docker run  -d  -v c:/data:c:/data  -p 47900:5000  -e LicensePublicKey=yourLicensePublicKey	 -e LicensePrivateKey=yourLicensePrivateKey	 -e storagesCredentialsFilePath=c:/data/storageResource.json --name asposecellscloud aspose/cells-cloud:ltsc2019.22.2.0
+docker run  -d  -v c:/data:c:/data  -p 47900:5000  -e LicensePublicKey=yourLicensePublicKey  -e LicensePrivateKey=yourLicensePrivateKey  -e storagesCredentialsFilePath=c:/data/storageResource.json --name asposecellscloud aspose/cells-cloud:ltsc2019.22.9.0
 
 ```
 
-**وثيقة مرجعية** : 
-  - [تشغيل Docker]( https://docs.docker.com/engine/reference/commandline/run/)
+**وثيقة مرجعية** :
+
+- [كيفية تشغيل حاوية Aspose.Cells Cloud Docker.]( https://docs.aspose.cloud/cells/run-aspose-cells-cloud-docker-container/)

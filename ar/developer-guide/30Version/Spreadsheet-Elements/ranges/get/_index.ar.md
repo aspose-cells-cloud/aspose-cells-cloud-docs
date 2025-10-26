@@ -1,6 +1,6 @@
 ﻿---
 title: كيفية الحصول على محتوى النطاق من ورقة عمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: جي
 type: docs
 url: /ar/ranges/get/

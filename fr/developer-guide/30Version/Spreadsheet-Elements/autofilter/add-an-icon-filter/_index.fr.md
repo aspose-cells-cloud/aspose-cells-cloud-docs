@@ -1,6 +1,6 @@
 ﻿---
 title: Ajouter un filtre d'icônes dans une feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ajouter un filtre d'icônes
 type: docs
 url: /fr/autofilter/add-icon-filter/
@@ -8,7 +8,7 @@ aliases: [/add-an-icon-filter/,/autofilter/add-an-icon-filter/]
 keywords: Adds an icon filter on an Excel worksheet
 description: Le Cloud Aspose.Cells API prend en charge l'ajout d'un filtre d'icônes sur une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 65
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Ajouter un filtre d'icônes dans une feuille de calcul Excel
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Ajouter un filtre d'icônes dans une feuille de calcul Excel
 ---
 Ce REST API indique d'ajouter un `icon filter` sur une feuille de calcul Excel.
 
@@ -20,7 +20,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/
 
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
@@ -28,7 +28,7 @@ Les paramètres de la requête sont :
 | nom de la feuille| chaîne| Chemin| Le nom de la feuille de calcul.|
 |gamme|chaîne| Requête||
 |index de champ|entier| Requête||
-|iconSetType|chaîne| Requête| Flèches 3 / Flèches grises 3 / Drapeaux 3 / Panneaux 3 / Symboles 3 / Symboles 32 / Feux de circulation 31 / Feux de circulation 32 / Flèches 4 / Flèches grises 4 / Évaluation 4 / Rouge vers noir 4 / Feux de circulation 4 / Flèches 5 / Flèches grises 5 / Quartiers 5 / Évaluation 5 / Étoiles 3 / Boîtes 5 / Triangles 3 / Aucun / Ensemble personnalisé / Smileys 3 / Smileys de couleur 3|
+|type d'icône|chaîne| Requête| Flèches 3 / Flèches grises 3 / Drapeaux 3 / Panneaux 3 / Symboles 3 / Symboles 32 / Feux de circulation 31 / Feux de circulation 32 / Flèches 4 / Flèches grises 4 / Évaluation 4 / Rouge vers noir 4 / Feux de circulation 4 / Flèches 5 / Flèches grises 5 / Quartiers 5 / Évaluation 5 / Étoiles 3 / Boîtes 5 / Triangles 3 / Aucun / Ensemble personnalisé / Smileys 3 / Smileys de couleur 3|
 |identifiant d'icône|entier| Requête||
 |matchBlanks|chaîne| Requête|vrai/faux|
 |rafraîchir|chaîne| Requête|vrai/faux|

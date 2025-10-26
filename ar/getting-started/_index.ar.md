@@ -1,6 +1,8 @@
 ﻿---
-title: البدء
-second_title: How to Process Excel Files in 3 Steps Using Aspose.Cells Cloud WEB API
+title: "Aspose.Cells Cloud Getting Started: كيفية معالجة ملفات Excel في 3 خطوات باستخدام Aspose.Cells Cloud WEB API"
+second_title: Documen
+ArticleTitle: Aspose.Cells Cloud Getting Starte
+linktitle: البدء
 type: docs
 url: /ar/getting-started/
 description: Aspose.Cells تدعم السحابة Excel لإنشاء الكائنات الداخلية وتحويلها ودمجها وتقسيمها وحمايتها وما إلى ذلك

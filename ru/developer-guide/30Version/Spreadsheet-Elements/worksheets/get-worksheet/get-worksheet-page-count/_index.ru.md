@@ -1,6 +1,6 @@
 ﻿---
 title: Получить количество страниц для рабочего листа Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: PageCoun
 type: docs
 url: /ru/worksheets/page-count/

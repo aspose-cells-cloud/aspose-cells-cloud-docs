@@ -1,6 +1,6 @@
 ﻿---
 title: فك تشفير كتاب العمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: فك تشفير ملف Excel
 type: docs
 url: /ar/excel-file-decrypt/

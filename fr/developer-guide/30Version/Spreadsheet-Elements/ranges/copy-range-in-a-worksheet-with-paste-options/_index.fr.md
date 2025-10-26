@@ -1,6 +1,6 @@
 ﻿---
 title: Copier la plage dans une feuille de calcul avec l'option Coller
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Flic
 type: docs
 url: /fr/ranges/copy/
@@ -20,7 +20,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

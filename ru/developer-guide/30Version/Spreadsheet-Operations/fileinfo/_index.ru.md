@@ -1,6 +1,6 @@
 ﻿---
 title: Файл Инф
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Файл Инф
 type: docs
 url: /ru/file-info/

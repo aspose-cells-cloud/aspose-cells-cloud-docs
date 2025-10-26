@@ -1,6 +1,6 @@
 ﻿---
 title:  Слайсер для вставки объекта списка
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Вставить ломтик
 type: docs
 keywords: Insert slicer for list object

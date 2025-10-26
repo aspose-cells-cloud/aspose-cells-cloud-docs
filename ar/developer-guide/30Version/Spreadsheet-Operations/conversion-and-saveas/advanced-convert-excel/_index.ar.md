@@ -1,6 +1,6 @@
 ﻿---
 title: تحويل متقدم Excel ملف
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: المحول المتقدم
 type: docs
 url: /ar/advanced-convert-excel/

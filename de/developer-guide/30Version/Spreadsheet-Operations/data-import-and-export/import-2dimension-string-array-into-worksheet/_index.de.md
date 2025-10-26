@@ -1,6 +1,6 @@
 ﻿---
 title: Importieren Sie ein 2-dimensionales String-Array in das Arbeitsblatt Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Importieren Sie 2-dimensionale Zeichenfolgen-Arrays
 type: docs
 url: /de/import-a-2D-string-array-into-excel-worksheet/
@@ -32,7 +32,7 @@ Die wichtigen Parameter sind in der folgenden Tabelle beschrieben:
 | Erste Reihe| int||
 | Erste Spalte| int||
 | Daten|Zeichenfolge[,]||
-| ZielArbeitsblatt| Schnur| Name des Zielarbeitsblatts.|
+|ZielArbeitsblatt| Schnur| Name des Zielarbeitsblatts.|
 | IsInsert| Schnur| wahr/falsch.|
 | ImportDataType| Schnur|IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData.|
 | Quelle| Dateiquelle| Gibt die Datendateiposition an, wenn der BatchData-Parameter null ist.|

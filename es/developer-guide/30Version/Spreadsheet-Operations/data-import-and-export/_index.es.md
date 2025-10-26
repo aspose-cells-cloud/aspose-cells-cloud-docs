@@ -1,11 +1,11 @@
 ﻿---
-title: Importar datos a archivos Excel y exportar datos desde archivos Excel
-second_title: Aspose.Cells Cloud Documen
+title: Importar datos a archivos Excel y exportar datos de archivos Excel
+second_title: Documen
 linktitle: Datos de importación y exportación
 type: docs
 url: /es/data-import-and-export/
 keywords: Excel data import vs. Direct database access; Batch data import vs. Row-by-row data writing; Automated data export vs. Manual data extraction
-description: Generar nuevos documentos o informes que puedan incluir gráficos, tablas y otros elementos de visualización de datos.
+description: Generar nuevos documentos o informes que puedan incluir gráficos, tablas y otros elementos de visualización de datos
 weight: 25
 kwords: Excel Importación de datos vs. Acceso directo a la base de datos; Importación de datos por lotes vs. Escritura de datos fila por fila; Exportación de datos automatizada vs. Extracción manual de datos.
 ---
@@ -21,8 +21,8 @@ Se proporcionan las siguientes API para importar datos a un archivo Excel o a va
 
 |API|Descripción|
 |:- |:- |
-|[POST /células/importación](https://apireference.aspose.cloud/cells/#/LightCells/PostImport)|Importe datos a archivos Excel sin utilizar almacenamiento.|
-|[POST /cells/{nombre}/importdata](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData)|Importe datos al archivo Excel usando almacenamiento.|
+|[POST /celdas/import](https://apireference.aspose.cloud/cells/#/LightCells/PostImport)|Importe datos a archivos Excel sin utilizar almacenamiento.|
+|[POST /cells/{nombre}/importdata](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData)|Importe datos al archivo Excel utilizando almacenamiento.|
 
 ### Parámetros de la solicitud
 
@@ -71,7 +71,7 @@ Se proporcionan las siguientes API para importar datos a un archivo Excel o a va
     <tr> <td>Convertir datos numéricos</td><td>Cadena</td> <td>verdadero/falso.</td> </tr>
     <tr> <td>Primera fila</td><td>entero</td> <td></td> </tr>
     <tr> <td>Primera columna</td><td>entero</td><td></td></tr>
-    <tr><td>SeparadorString</td><td> Cadena</td> <td></td></tr>
+    <tr><td>Cadena separadora</td><td> Cadena</td> <td></td></tr>
     <tr> <td>Hoja de trabajo de destino</td><td> Cadena</td><td> Nombre de la hoja de trabajo de destino.</td></tr>
     <tr><td>Analizadores personalizados</td><td>Lista<CustomParserConfig></td><td></td></tr>
     <tr><td>Importar tipo de datos</td><td> Cadena</td><td>Datos CSV</td></tr>
@@ -231,11 +231,11 @@ Se proporcionan las siguientes API para importar datos a un archivo Excel o a va
 
 ## Cómo exportar objetos Excel a varios formatos de archivo
 
- Si originalmente ha creado un archivo Excel en un formato determinado, como[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/) , y[CSV](https://docs.fileformat.com/spreadsheet/csv/) veces puede resultar útil convertir el archivo de Excel a otro formato para aprovechar sus funciones especiales. Por ejemplo, puede que desee exportar un archivo de Excel a...[PDF](https://docs.fileformat.com/pdf/)para proteger sus contenidos de cualquier modificación no autorizada y facilitar su lectura y compartición simultánea.
+Si originalmente ha creado un archivo Excel en un formato determinado, como[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/) , y[CSV](https://docs.fileformat.com/spreadsheet/csv/) veces puede resultar útil convertir el archivo de Excel a otro formato para aprovechar sus funciones especiales. Por ejemplo, puede que desee exportar un archivo de Excel a...[PDF](https://docs.fileformat.com/pdf/) para proteger sus contenidos de cualquier modificación no autorizada y facilitar su lectura y compartición simultánea.
 
-La exportación de objetos Excel es un proceso complejo. Muchos factores contribuyen a la complejidad y, por lo tanto, deben tenerse en cuenta durante el proceso. La capacidad de exportar objetos Excel a un solo formato con una calidad profesional es una característica destacada de Aspose.Cells Cloud.
+Exportar el objeto Excel es un proceso complejo. Muchos factores contribuyen a la complejidad y, por lo tanto, deben tenerse en cuenta durante el proceso. La capacidad de exportar el objeto Excel a un solo formato con una calidad profesional es una característica destacada de Aspose.Cells Cloud.
 
- Funciona perfectamente con libros, gráficos, formas e imágenes exportados desde un archivo de Excel. Puede exportar en los siguientes formatos:[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [ODS](https://docs.fileformat.com/spreadsheet/ods/), [TXT](https://docs.fileformat.com/word-processing/txt/) Los formatos de solo exportación:[PDF](https://docs.fileformat.com/pdf/), [OET](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [Diferencia](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [NÚMEROS](https://docs.fileformat.com/spreadsheet/numbers/), [FODS](https://docs.fileformat.com/spreadsheet/fods/).
+ Funciona perfectamente con libros, gráficos, formas e imágenes exportados desde un archivo de Excel. Puede exportar en los siguientes formatos:[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [SAO](https://docs.fileformat.com/spreadsheet/ods/), [TXT](https://docs.fileformat.com/word-processing/txt/) Los formatos de solo exportación:[PDF](https://docs.fileformat.com/pdf/), [OET](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [Diferencia](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [NÚMEROS](https://docs.fileformat.com/spreadsheet/numbers/), [FODS](https://docs.fileformat.com/spreadsheet/fods/).
 
 La solicitud es una solicitud HTTP con contenido de varias partes (ver[RFC 2046](http://tools.ietf.org/html/rfc2046#page-17)o[RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). La primera parte del contenido multiparte contiene el archivo de datos y la segunda contiene opciones de guardado.
 
@@ -254,7 +254,7 @@ Los parámetros de la solicitud son:
 | Nombre del parámetro| Tipo| Ruta/Cadena de consulta/HTTPBody|Descripción|
 |:- |:- |:- |:- |
 | archivo| archivo| datos del formulario| Archivo para cargar|
-| tipo de objeto| cadena| consulta| tipo de objeto (libro de trabajo/hoja de trabajo/gráfico/forma/imagen/objeto de lista/objeto de hoja de cálculo)|
+| tipo de objeto| cadena| consulta| tipo de objeto (libro de trabajo/hoja de trabajo/gráfico/forma/imagen/objeto de lista/objeto de ole)|
 | formato| cadena| consulta|[Formato de archivo](/cells/es/supported-file-formats/)  |
 
  El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.

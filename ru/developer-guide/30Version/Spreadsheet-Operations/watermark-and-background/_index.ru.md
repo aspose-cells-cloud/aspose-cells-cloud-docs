@@ -1,6 +1,6 @@
 ﻿---
 title: Вставьте водяные знаки или установите фон в файлах Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Водяной знак и фон
 type: docs
 url: /ru/watermark-and-background/

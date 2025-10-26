@@ -1,14 +1,14 @@
 ﻿---
 title: Créer un classeur Excel vide
-second_title: Aspose.Cells Cloud Documen
-linktitle: classeur vide
+second_title: Documen
+linktitle: Classeur vide
 type: docs
 url: /fr/create-an-empty-excel-file/
 aliases: [/create-an-empty-excel-workbook/,/workbook/new/,/workbook/create/empty-workbook/]
 keywords: How to create an Excel workbook
-description: Aspose.Cells Cloud REST API Comment créer un classeur vide Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
+description: Aspose.Cells Cloud REST API Comment créer un classeur vide Excel. Le SDK prend en charge différents langages de développement. Parmi eux, Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 20
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Créer un classeur Excel vide
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Créer un classeur Excel vide
 ---
 Ce REST API indique de créer un `empty workbook`.
 

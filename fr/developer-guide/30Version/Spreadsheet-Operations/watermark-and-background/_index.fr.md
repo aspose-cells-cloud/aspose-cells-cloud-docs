@@ -1,6 +1,6 @@
 ﻿---
 title: Insérer des filigranes ou définir des arrière-plans dans les fichiers Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Filigrane et arrière-plan
 type: docs
 url: /fr/watermark-and-background/

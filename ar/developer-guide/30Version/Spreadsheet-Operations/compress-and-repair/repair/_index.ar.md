@@ -1,6 +1,6 @@
 ﻿---
 title: إصلاح الملف Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 linktitle: إصلاح الملف Excel
 url: /ar/repair-excel-files/

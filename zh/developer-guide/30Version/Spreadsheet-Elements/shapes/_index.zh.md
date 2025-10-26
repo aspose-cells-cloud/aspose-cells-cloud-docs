@@ -1,6 +1,6 @@
 ﻿---
 title: 与 Excel 形状合作
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: 形状
 type: docs
 url: /zh/shapes/
@@ -16,5 +16,5 @@ kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdo
 - [如何在 Excel 工作表上通过索引获取形状。](/cells/zh/shapes/get/)
 - [如何在 Excel 工作表上添加形状。](/cells/zh/shapes/add/)
 - [如何删除 Excel 工作表上的所有形状。](/cells/zh/shapes/clear/)
-- [如何在 Excel 工作表上按索引删除形状。](/cells/zh/shapes/delete/)
+- [如何通过索引删除 Excel 工作表上的形状。](/cells/zh/shapes/delete/)
 - [如何在 Excel 工作表上将形状转换为图像。](/cells/zh/shapes/conversion/)

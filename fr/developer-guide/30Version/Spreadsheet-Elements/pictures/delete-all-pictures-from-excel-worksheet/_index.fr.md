@@ -1,6 +1,6 @@
 ﻿---
-title: Supprimer toutes les images d'une feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
+title: Supprimer toutes les images dans une feuille de calcul Excel
+second_title: Documen
 linktitle: Cléa
 type: docs
 url: /fr/pictures/clear/
@@ -20,12 +20,12 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Nom du document.|
-| nom de la feuille| chaîne| chemin| Nom de la feuille de travail.|
+| nom de la feuille| chaîne| chemin| Nom de la feuille de calcul.|
 | dossier| chaîne| requête| Le dossier de documents.|
 | nom de stockage| chaîne| requête| nom de stockage.|
 

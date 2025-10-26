@@ -1,6 +1,6 @@
 ﻿---
 title: Установить параметры страницы для рабочего листа
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Установить страницу setu
 type: docs
 url: /ru/set-page-setup/

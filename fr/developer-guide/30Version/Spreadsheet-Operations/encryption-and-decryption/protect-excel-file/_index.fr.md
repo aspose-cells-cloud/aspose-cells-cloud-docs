@@ -1,6 +1,6 @@
 ﻿---
 title: Protégez un classeur Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Protégez un fil Excel
 type: docs
 url: /fr/protect-excel-file/
@@ -8,7 +8,7 @@ aliases: [/protect-excel-workbooks/,/workbook/protect/]
 keywords: Protect Excel files
 description: Aspose.Cells Cloud REST API prend en charge la protection des fichiers Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 30
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Protéger un classeur Excel
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Protéger un classeur Excel
 ---
 Ce REST API protège un Excel `workbook`.
 
@@ -36,7 +36,7 @@ Ce REST API protège un Excel `workbook`.
 
 |**API**|**Taper**|**Description**|**Lien Swagger**|
 |:- |:- |:- |:- |
-|/cellules/{nom}/protection|POSTE|Protéger un document|[PostProtectDocument](https://apireference.aspose.cloud/cells/#/Workbook/PostProtectDocument)|
+|/cellules/{nom}/protection|POSTE|Protéger un document|[Document PostProtect](https://apireference.aspose.cloud/cells/#/Workbook/PostProtectDocument)|
 
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostProtectDocument) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
 

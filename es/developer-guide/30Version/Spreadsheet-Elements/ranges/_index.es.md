@@ -1,6 +1,6 @@
 ﻿---
 title: Trabajando con el número Excel sonó
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Sonó
 type: docs
 url: /es/ranges/
@@ -21,6 +21,6 @@ Representa una celda, una fila, una columna, una selección de celdas que contie
 - [Combina un rango de Cells en una sola celda](/cells/es/combines-a-range-of-cells-into-a-single-cell/)
 - [Copiar rango en una hoja de cálculo con opciones de pegado](/cells/es/copy-range-in-a-worksheet-with-paste-options/)
 - [Establecer el estilo del rango](/cells/es/set-the-style-of-the-range/)
-- [Desvincular Fusionado Cells del Rango](/cells/es/unmerge-merged-cells-of-the-range/)
+- [Descomponer Fusionado Cells del Rango](/cells/es/unmerge-merged-cells-of-the-range/)
 - [Mover un rango nombrado con una hoja de trabajo Excel](/cells/es/move-a-named-ranged-with-a-excel-worksheet/)
 - [Establecer valor de rango en la hoja de cálculo Excel](/cells/es/ranges/set-value/)

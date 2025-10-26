@@ -1,6 +1,6 @@
 ﻿---
 title: Papiergröße
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Papiergröße
 type: docs
 url: /de/paper-size/
@@ -38,7 +38,7 @@ kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Mark
 | PapierUmschlag14| Umschlag Nr. 14 (5 Zoll x 11-1/2 Zoll)|
 | PapierCBlatt| Blatt im Format C|
 | PapierDBlatt| Blatt im Format D|
-| PapierEBlatt| Blatt in der Größe E|
+| PapierEBlatt| Blatt im Format E|
 | PapierUmschlagDL| Umschlag DL (110 mm x 220 mm)|
 | PapierUmschlagC5| Umschlag C5 (162 mm x 229 mm)|
 | PapierUmschlagC3| Umschlag C3 (324 mm x 458 mm)|

@@ -1,6 +1,6 @@
 ﻿---
 title: Arbetar med Excel Mobil
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Cell
 type: docs
 url: /sv/working-with-cells/
@@ -31,7 +31,7 @@ Cells är det grundläggande Operate-objektet för Aspose.Cells för Excel-filen
 <div class="row">
     <div class="col-md-6">
         <ul>
-            <li><a href="/cells/sv/get-cell-style-from-a-worksheet/">Hämtar cellstil från ett Excel-arbetsblad.</a></li>
+            <li><a href="/cells/sv/get-cell-style-from-a-worksheet/">Hämtar cellformat från ett Excel-arbetsblad.</a></li>
             <li><a href="/cells/sv/clear-cells-formatting-in-excel-worksheet/">Rensa Cells-formateringen i Excel-arbetsbladet.</a></li>
             <li><a href="/cells/sv/update-multiple-cells-style/">Uppdaterar flera cellformat i ett Excel-arbetsblad.</a></li>
             <li><a href="/cells/sv/change-cell-style-in-excel-worksheet/">Uppdaterar cellstilen i ett Excel-arbetsblad.</a></li>

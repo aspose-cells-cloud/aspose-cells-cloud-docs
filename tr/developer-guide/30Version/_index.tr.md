@@ -1,6 +1,6 @@
 ﻿---
 title: Geliştirici Kılavuzu 3.
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /tr/developer-guide-3.0/
 aliases: [/developer-guide/v3.0/,/developer-guide-v3.0/]
@@ -90,7 +90,7 @@ kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdow
             <li><a href="/cells/tr/delete-all-charts-from-a-worksheet/">Excel çalışma sayfasındaki tüm grafikleri siler.</a></li>
             <li><a href="/cells/tr/convert-chart-to-image/">Tabloyu resme dönüştürür.</a></li>
             <li><a href="/cells/tr/hide-chart-legend-in-a-worksheet/">Excel çalışma sayfasındaki grafik efsanesini gizler.</a></li>
-            <li><a href="/cells/tr/update-chart-title-in-excel-worksheet/">Excel numaralı çalışma sayfasındaki grafik başlığını günceller.</a></li>
+            <li><a href="/cells/tr/update-chart-title-in-excel-worksheet/">Excel çalışma sayfasındaki grafik başlığını günceller.</a></li>
             <li><a href="/cells/tr/delete-chart-title-in-a-worksheet/">Excel çalışma sayfasındaki grafik başlığını siler.</a></li>
         </ul>
         <p>Masa</p>

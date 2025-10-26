@@ -1,6 +1,6 @@
 ﻿---
 title: Fügen Sie einem Excel-Arbeitsblatt die Top 10-Elemente hinzu
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Top 10 Filter hinzufügen
 type: docs
 url: /de/autofilter/add-top-10-filter/ 

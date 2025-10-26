@@ -1,6 +1,6 @@
 ﻿---
 title: Fügen Sie einem Excel-Arbeitsblatt ein benutzerdefiniertes Kriterium hinzu
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Benutzerdefinierten Filter hinzufügen
 type: docs
 url: /de/autofilter/add-custom-filter/ 

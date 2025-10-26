@@ -1,6 +1,6 @@
 ﻿---
 title: Excel bis SQ
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Excel bis SQ
 type: docs
 url: /de/convert-excel-file-to-sql-file/

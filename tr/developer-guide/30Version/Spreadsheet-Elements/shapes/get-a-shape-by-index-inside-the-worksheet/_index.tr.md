@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma sayfasındaki dizine göre bir şekil alın
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ge
 type: docs
 url: /tr/shapes/get/

@@ -1,6 +1,6 @@
 ﻿---
 title: Hintergrund auf einem Excel-Arbeitsblatt festlegen
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Anzeige
 type: docs
 url: /de/worksheets/background/add/

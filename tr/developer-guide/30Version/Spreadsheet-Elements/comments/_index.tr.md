@@ -1,6 +1,6 @@
 ﻿---
 title: Excel yorumuyla çalışıyor
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Yorum
 type: docs
 url: /tr/comments/

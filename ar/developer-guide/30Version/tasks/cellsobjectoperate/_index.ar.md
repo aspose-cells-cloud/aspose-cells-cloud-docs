@@ -1,6 +1,6 @@
 ﻿---
 title: العمل مع CellsObjectOperate Tas
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /ar/tasks/cells-object-operate/
 aliases: [/working-with-cellsobjectoperate-task/]
@@ -14,7 +14,7 @@ kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF،
 
 |اسم المعلمة|يكتب|وصف|
 |:- |:- |:- |
-| نوع كائن التشغيل| خيط| مصنف/ورقة عمل/إعداد الصفحة/Cells/مخطط/شكل/كائن القائمة/جدول محوري/إعدادات المصنف/فاصل الصفحة|
+| نوع كائن التشغيل| خيط|مصنف/ورقة عمل/إعداد الصفحة/Cells/مخطط/شكل/كائن القائمة/جدول محوري/إعدادات المصنف/فاصل الصفحة|
 | تشغيل موضع الكائن| هدف||
 
 **تشغيل موضع الكائن**
@@ -70,7 +70,7 @@ kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF،
 | إعداد الصفحة| هدف||
 
 
-**معلمة تشغيل الجدول المحوري**
+**معلمة تشغيل جدول محوري**
 
 |اسم المعلمة|يكتب|وصف|
 |:- |:- |:- |

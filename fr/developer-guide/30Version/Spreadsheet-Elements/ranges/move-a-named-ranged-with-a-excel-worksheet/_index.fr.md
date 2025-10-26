@@ -1,7 +1,7 @@
 ﻿---
 title: Déplacer une plage nommée avec une feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
-linktitle: Déplacer
+second_title: Documen
+linktitle: Mouvement
 type: docs
 url: /fr/ranges/move/
 aliases: [/move-a-named-ranged-with-a-excel-worksheet/]
@@ -20,14 +20,14 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/mov
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| nom du classeur|
 | nom de la feuille| chaîne| chemin| nom de la feuille de calcul|
 | destRow| entier| requête| La ligne de départ de la plage de destination.|
-| destColumn| entier| requête| La colonne de départ de la plage de destination.|
+| colonne de destination| entier| requête| La colonne de départ de la plage de destination.|
 | gamme|| corps| plage dans la feuille de calcul|
 | dossier| chaîne| requête| Dossier de classeur.|
 | nom de stockage| chaîne| requête| nom de stockage.|

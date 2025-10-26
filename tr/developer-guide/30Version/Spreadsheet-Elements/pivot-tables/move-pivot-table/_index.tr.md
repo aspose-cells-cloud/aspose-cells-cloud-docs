@@ -1,6 +1,6 @@
 ﻿---
 title: Excel dosyasında pivot tabloyu taşıyın
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Taşınmak
 type: docs
 url: /tr/pivot-tables/move/

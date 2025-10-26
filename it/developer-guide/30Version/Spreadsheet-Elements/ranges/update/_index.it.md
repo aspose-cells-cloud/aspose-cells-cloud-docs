@@ -1,6 +1,6 @@
 ﻿---
 title: Come aggiornare il contenuto dell'intervallo da un foglio di lavoro Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Aggiornamento
 type: docs
 url: /it/ranges/update/

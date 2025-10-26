@@ -1,6 +1,6 @@
 ﻿---
 title: Datei-Inf
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Datei-Inf
 type: docs
 url: /de/file-info/

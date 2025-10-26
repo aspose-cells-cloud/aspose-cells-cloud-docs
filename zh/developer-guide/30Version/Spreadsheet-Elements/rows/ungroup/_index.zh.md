@@ -1,6 +1,6 @@
 ﻿---
-title: 取消分组 Excel 工作表上的行
-second_title: Aspose.Cells Cloud Documen
+title: 取消 Excel 工作表上的行分组
+second_title: Documen
 linktitle: 安格鲁
 type: docs
 url: /zh/rows/ungroup/
@@ -10,7 +10,7 @@ description: Aspose.Cells Cloud REST API 支持在 Excel 工作表上取消分�
 weight: 70
 kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、在 Excel 工作表上取消分组行
 ---
-此 REST API 表示取消分组 Excel 工作表上的行。
+此 REST API 表示取消对 Excel 工作表上的行进行分组。
 
 ## 重新设置 API
 
@@ -28,11 +28,11 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
 |工作表名称|细绳|小路|工作表名称。|
 |第一个索引|整数|询问|需要操作的第一行索引。|
 |最后一个索引|整数|询问|需要操作的最后一行索引。|
-|是全部|布尔值|询问|是否所有行均需操作|
+|是全部|布尔值|询问|是否所有行都要操作|
 |文件夹|细绳|询问|文件夹。|
 |存储名称|细绳|询问|存储名称。|
 
-这[OpenAPI规范](https://apireference.aspose.cloud/cells/#/Cells/PostUngroupWorksheetRows)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Cells/PostUngroupWorksheetRows)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
 
 您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
 

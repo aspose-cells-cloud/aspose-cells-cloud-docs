@@ -1,6 +1,6 @@
 ﻿---
 title: Lavorando con Excel rang
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Suonò
 type: docs
 url: /it/ranges/

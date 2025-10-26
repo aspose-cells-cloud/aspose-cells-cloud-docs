@@ -1,6 +1,6 @@
 ﻿---
 title: Arbeta med kolumnen Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Kolumn
 type: docs
 url: /sv/columns/

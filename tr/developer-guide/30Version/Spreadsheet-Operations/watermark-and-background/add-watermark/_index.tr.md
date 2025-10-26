@@ -1,6 +1,6 @@
 ﻿---
 title: Excel dosyasına filigran ekleyin
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Excel Dosyasına Filigran Ekle
 type: docs
 url: /tr/add-watermark-into-excel-files/

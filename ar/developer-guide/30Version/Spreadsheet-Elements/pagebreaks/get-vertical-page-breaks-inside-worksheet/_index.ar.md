@@ -1,6 +1,6 @@
 ﻿---
 title: الحصول على فاصل الصفحة العمودي
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: الحصول على فاصل الصفحة العمودي
 type: docs
 url: /ar/page-breaks/get-vertical-page-breaks/

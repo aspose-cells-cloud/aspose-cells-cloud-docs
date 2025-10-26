@@ -1,6 +1,6 @@
 ﻿---
 title: Автоматическая подгонка строки на листе Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ро
 type: docs
 url: /ru/worksheets/autofit/row/

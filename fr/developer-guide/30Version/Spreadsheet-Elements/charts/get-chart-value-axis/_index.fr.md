@@ -3,7 +3,7 @@ title:  Obtenir la valeur du graphique Axi
 type: docs
 url: /fr/charts/value-axis/get/
 weight: 60
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Obtenir l'axe des valeurs du graphique
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Obtenir l'axe des valeurs du graphique
 ---
 Ce REST API indique Obtenir l'axe des valeurs du graphique
  
@@ -14,7 +14,7 @@ Ce REST API indique Obtenir l'axe des valeurs du graphique
 GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/valueaxis
  
 ```
- Les paramètres de la requête sont :
+ Les paramètres de la requête sont :
  
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

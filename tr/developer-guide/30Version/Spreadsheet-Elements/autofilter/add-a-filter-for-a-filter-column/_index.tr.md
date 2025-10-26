@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma sayfasına bir filtre ekleyin
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Filtre ekle
 type: docs
 url: /tr/autofilter/add-filter/

@@ -1,6 +1,6 @@
 ﻿---
 title: إضافة مرشح في ورقة عمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: إضافة فلتر
 type: docs
 url: /ar/autofilter/add-filter/

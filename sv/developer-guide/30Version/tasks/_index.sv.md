@@ -1,6 +1,6 @@
 ﻿---
 title: Uppgift
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /sv/tasks/
 aliases: [/working-with-tasks/]

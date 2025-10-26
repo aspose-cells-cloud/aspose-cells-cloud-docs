@@ -1,6 +1,6 @@
 ﻿---
 title: Sök och ersätt textinnehåll i Excel-filer
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Sök och ersätt
 type: docs
 url: /sv/search-and-replace/

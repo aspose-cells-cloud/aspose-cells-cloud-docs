@@ -1,6 +1,6 @@
 ﻿---
 title: Получить имена из рабочей книги Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Имя
 type: docs
 url: /ru/get-names-from-an-excel-file/

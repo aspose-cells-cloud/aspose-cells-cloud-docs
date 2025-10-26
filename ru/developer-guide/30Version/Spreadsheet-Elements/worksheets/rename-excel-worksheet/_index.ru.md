@@ -1,6 +1,6 @@
 ﻿---
 title: Excel переименование рабочего листа
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ренам
 type: docs
 url: /ru/worksheets/rename/

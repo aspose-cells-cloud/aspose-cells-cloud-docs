@@ -1,6 +1,6 @@
 ﻿---
 title: 在 Excel 工作表上使用自动调整功能
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: 奥托菲
 type: docs
 url: /zh/worksheets/autofit/
@@ -14,5 +14,5 @@ kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdo
 
 - [如何自动调整 Excel 工作表上的列。](/cells/zh/worksheets/autofit/column/)
 - [如何在 Excel 工作表上自动调整列。](/cells/zh/worksheets/autofit/columns/)
-- [如何自动调整 Excel 工作表上的行。](/cells/zh/worksheets/autofit/row/)
+- [如何自动调整 Excel 工作表上的一行。](/cells/zh/worksheets/autofit/row/)
 - [如何在 Excel 工作表上自动调整行。](/cells/zh/worksheets/autofit/rows/)

@@ -1,6 +1,6 @@
 ﻿---
 title: حفظ باسم إكسل
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: احفظ
 type: docs
 url: /ar/save-an-excel-file-as-other-formats-files/

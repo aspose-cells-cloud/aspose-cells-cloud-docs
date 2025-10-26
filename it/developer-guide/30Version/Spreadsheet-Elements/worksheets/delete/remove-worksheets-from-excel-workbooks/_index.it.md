@@ -1,6 +1,6 @@
 ﻿---
 title: Elimina foglio di lavoro
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Un foglio di lavoro
 type: docs
 url: /it/worksheets/delete-worksheet/

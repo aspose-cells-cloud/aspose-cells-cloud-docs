@@ -1,7 +1,7 @@
 ﻿---
 title: Скрыть строки на листе Excel
-second_title: Aspose.Cells Cloud Documen
-linktitle: Спрятался
+second_title: Documen
+linktitle: Спрятан
 type: docs
 url: /ru/rows/hide/
 aliases: [/hide-rows-in-excel-worksheet/]

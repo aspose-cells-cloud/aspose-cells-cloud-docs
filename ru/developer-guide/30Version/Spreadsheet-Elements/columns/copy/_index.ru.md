@@ -1,6 +1,6 @@
 ﻿---
 title: Копировать столбцы на лист Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Коп
 type: docs
 url: /ru/columns/copy/

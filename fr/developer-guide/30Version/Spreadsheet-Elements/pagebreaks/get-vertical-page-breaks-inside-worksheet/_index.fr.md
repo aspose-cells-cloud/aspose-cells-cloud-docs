@@ -1,6 +1,6 @@
 ﻿---
 title: Obtenir un saut de page vertical
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Obtenir un saut de page vertical
 type: docs
 url: /fr/page-breaks/get-vertical-page-breaks/
@@ -20,7 +20,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/verticalpag
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

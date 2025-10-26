@@ -1,6 +1,6 @@
 ﻿---
 title: Arbetar med Excel Ole objekt
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: OleObjekt
 type: docs
 url: /sv/oleobjects/
@@ -14,7 +14,7 @@ kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, OleO
 
 - [Hur man hämtar ett OLE-objekt från ett Excel-arbetsblad.](/cells/sv/oleobjects/get/)
 - [Hur man lägger till ett OLE-objekt i kalkylbladet ab Excel.](/cells/sv/oleobjects/add/)
-- [Så här uppdaterar du ett specifikt OLE-objekt i ett Excel-arbetsblad.](/cells/sv/oleobjects/update/)
+- [Hur man uppdaterar ett specifikt OLE-objekt i ett Excel-arbetsblad.](/cells/sv/oleobjects/update/)
 - [Hur man konverterar ett OLE-objekt till en bild i ett Excel-arbetsblad.](/cells/sv/oleobjects/convert/)
 - [Så här tar du bort alla OLE-objekt i ett Excel-arbetsblad.](/cells/sv/oleobjects/clear/)
 - [Så här tar du bort ett specifikt OLE-objekt i ett Excel-arbetsblad.](/cells/sv/oleobjects/delete/)

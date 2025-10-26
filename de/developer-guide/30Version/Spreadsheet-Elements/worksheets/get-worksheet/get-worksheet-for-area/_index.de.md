@@ -1,6 +1,6 @@
 ﻿---
 title: Exportieren Sie einen Bereich aus einem Excel-Arbeitsblatt
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Sind
 type: docs
 url: /de/worksheets/area-to-different-formats/

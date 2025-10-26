@@ -1,6 +1,6 @@
 ﻿---
 title: Verileri Excel dosyasında sıkıştırın
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Excel Dosyasını Sıkıştır
 type: docs
 url: /tr/compress-excel-files/

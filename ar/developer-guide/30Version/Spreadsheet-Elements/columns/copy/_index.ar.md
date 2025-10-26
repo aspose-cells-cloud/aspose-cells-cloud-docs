@@ -1,6 +1,6 @@
 ﻿---
 title: نسخ الأعمدة في ورقة العمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: شرطي
 type: docs
 url: /ar/columns/copy/

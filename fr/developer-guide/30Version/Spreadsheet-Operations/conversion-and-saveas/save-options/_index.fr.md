@@ -1,6 +1,6 @@
 ﻿---
 title: Option de sauvegarde
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Option de sauvegarde
 type: docs
 url: /fr/save-options/
@@ -13,4 +13,4 @@ kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Option
 
 Nom | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Activer la compression HTTP** | **booléen?** | | [facultatif]**EnregistrerFormat** | **chaîne** | | [facultatif]**ClearData** | **booléen?** | Vider le classeur après avoir enregistré le fichier. | [facultatif]**Dossier de fichiers en cache** | **chaîne** | Le dossier de fichiers mis en cache est utilisé pour stocker des données volumineuses. | [facultatif]**Valider les zones fusionnées** | **booléen?** | Indique si les zones fusionnées doivent être validées avant l'enregistrement du fichier. La valeur par défaut est « false ». | [facultatif]**Actualiser le cache du graphique** | **booléen?** | | [facultatif]**Créer un répertoire** | **booléen?** | Si la valeur est true et que le répertoire n'existe pas, le répertoire sera automatiquement créé avant l'enregistrement du fichier. | [facultatif]**Trier les noms** | **booléen?** | | [facultatif]
+**Activer la compression HTTP** | **booléen?** | | [facultatif]**Enregistrer le format** | **chaîne** | | [facultatif]**ClearData** | **booléen?** | Vider le classeur après avoir enregistré le fichier. | [facultatif]**Dossier de fichiers mis en cache** | **chaîne** | Le dossier de fichiers mis en cache est utilisé pour stocker des données volumineuses. | [facultatif]**Valider les zones fusionnées** | **booléen?** | Indique si les zones fusionnées doivent être validées avant l'enregistrement du fichier. La valeur par défaut est « false ». | [facultatif]**Actualiser le cache du graphique** | **booléen?** | | [facultatif]**Créer un répertoire** | **booléen?** | Si la valeur est vraie et que le répertoire n'existe pas, le répertoire sera automatiquement créé avant l'enregistrement du fichier. | [facultatif]**Trier les noms** | **booléen?** | | [facultatif]

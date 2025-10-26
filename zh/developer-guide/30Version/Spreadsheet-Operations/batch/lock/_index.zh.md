@@ -1,6 +1,6 @@
 ﻿---
-title: 批量锁定Excel文件
-second_title: Aspose.Cells Cloud Documen
+title: 批量锁定 Excel 文件
+second_title: Documen
 type: docs
 url: /zh/batch/lock
 keywords: Batch lock of multiple Excel files
@@ -32,7 +32,7 @@ POST http://api.aspose.cloud/v3.0/cells/batch/lock
 
 名称 | 类型 | 描述 | 备注
 ------------ | ------------- | ------------- | -------------
-RegexPattern | 字符串 | | [可选]FullMatchConditions | 字符串[]| | [可选][OpenAPI规范](https://reference.aspose.cloud/cells/#/Batch/PostBatchLock)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+RegexPattern | 字符串 | | [可选]FullMatchConditions | 字符串[]| | [可选][OpenAPI 规范](https://reference.aspose.cloud/cells/#/Batch/PostBatchLock)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
 
 您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
 

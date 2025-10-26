@@ -1,6 +1,6 @@
 ﻿---
 title: العمل مع Excel الخليوي
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: خلية
 type: docs
 url: /ar/working-with-cells/

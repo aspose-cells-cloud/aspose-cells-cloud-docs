@@ -1,6 +1,6 @@
 ﻿---
 title: Работа с комментарием Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Комментарий
 type: docs
 url: /ru/comments/

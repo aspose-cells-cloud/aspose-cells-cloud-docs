@@ -1,6 +1,6 @@
 ﻿---
 title: Переместить рабочий лист Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Мов
 type: docs
 url: /ru/worksheets/move/

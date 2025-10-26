@@ -1,6 +1,6 @@
 ﻿---
 title: Работа с формой Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Форма
 type: docs
 url: /ru/shapes/

@@ -1,6 +1,6 @@
 ﻿---
 title: Ottieni metadati dal file Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ottieni senza usare l'archiviazione
 type: docs
 url: /it/metadata/get/

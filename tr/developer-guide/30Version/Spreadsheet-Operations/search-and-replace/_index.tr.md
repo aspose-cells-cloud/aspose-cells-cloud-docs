@@ -1,6 +1,6 @@
 ﻿---
 title: Excel dosyalarındaki metin içeriğini ara ve değiştir
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ara ve Değiştir
 type: docs
 url: /tr/search-and-replace/

@@ -1,6 +1,6 @@
 ﻿---
 title: Excel 至 SQ
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Excel 至 SQ
 type: docs
 url: /zh/convert-excel-file-to-sql-file/
@@ -19,7 +19,7 @@ kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdo
 |存储名称|细绳|文件所在的存储名称。|
 |检查Excel限制|布尔值|当用户修改单元格相关对象时是否检查Excel文件的限制。|
 
-**请求体参数**
+**请求主体参数**
 
 |参数名称|类型|描述|
 |:- |:- |:- |
@@ -35,9 +35,9 @@ kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdo
 |:- |:- |:- |:- |
 |/单元格/转换/sql|邮政|将电子表格转换为 SQL 文件。|[PostConvertWorkbookToSQL](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToSQL)|
 
-这[OpenAPI规范](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToSQL)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+这[OpenAPI 规范](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToSQL)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
 
-您可以使用**cURL**命令行工具可轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用 Cloud API。
+您可以使用**cURL**命令行工具可轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
@@ -129,7 +129,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/sql"
 
 ## 其他API实现此功能
 
-[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) API 可让您将 MS Excel 文件保存为带有附加设置的 HTML 文件，并将结果保存到存储中。
+[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) API 可让您将 MS Excel 文件保存为具有附加设置的 HTML 文件，并将结果保存到存储中。
 
 此 REST API `convert` excel 文件到 HTML。
 

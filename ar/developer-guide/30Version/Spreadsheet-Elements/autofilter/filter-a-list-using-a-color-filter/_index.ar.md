@@ -1,6 +1,6 @@
 ﻿---
 title: إضافة مرشح ألوان في ورقة عمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: إضافة فلتر اللون
 type: docs
 url: /ar/autofilter/add-color-filter/

@@ -1,6 +1,6 @@
 ﻿---
 title: Импорт изображения в рабочий лист Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Импортировать картинку
 type: docs
 url: /ru/import-picture-into-excel-worksheet/
@@ -35,7 +35,7 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
 | Нижний правый столбец| инт||
 | Имя файла| нить||
 | Данные| Нить||
-| Рабочий лист назначения| нить| имя конечного рабочего листа.|
+|Рабочий лист назначения| нить| имя конечного рабочего листа.|
 | IsInsert| нить| верно/ложно.|
 | ImportDataType| нить|IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/Picture.|
 | Источник| FileSource| Указывает позицию файла данных, если параметр BatchData равен нулю.|

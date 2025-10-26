@@ -1,6 +1,6 @@
 ﻿---
 title: Добавить объект OLE на рабочий лист Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Добавлять
 type: docs
 url: /ru/oleobjects/add/

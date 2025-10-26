@@ -1,6 +1,6 @@
 ﻿---
 title: Работа с сводной таблицей Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Сводная таблица
 type: docs
 url: /ru/pivottables/

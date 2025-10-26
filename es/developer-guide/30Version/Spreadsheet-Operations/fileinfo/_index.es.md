@@ -1,7 +1,7 @@
 ﻿---
-title: Información del archivo
-second_title: Aspose.Cells Cloud Documen
-linktitle: Información del archivo
+title: Archivo Inf
+second_title: Documen
+linktitle: Archivo Inf
 type: docs
 url: /es/file-info/
 keywords: File Information
@@ -13,6 +13,6 @@ kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown
 
 Nombre | Tipo | Descripción | Notas
 ------------ | ------------- | ------------- | -------------
-**Nombre del archivo** | **cadena** |El nombre del archivo.|
+**Nombre del archivo** | **cadena** | El nombre del archivo. |
 **Tamaño del archivo** | **largo** |El tamaño del archivo. |
 **Contenido del archivo** | **cadena**|Representa el contenido del archivo, byte a cadena base64.

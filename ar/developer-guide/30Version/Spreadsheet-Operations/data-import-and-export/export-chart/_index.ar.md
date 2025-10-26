@@ -1,6 +1,6 @@
 ﻿---
 title: تصدير الأحرف
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: شار
 type: docs
 url: /ar/export-excel-chart-to-different-formats/

@@ -3,6 +3,7 @@ title: Lär dig Aspose.Cells Clou
 type: docs
 url: /sv/learn
 aliases: [/learn-aspose-cells-cloud]
+linktitle: Lear
 description: Välkommen att lära dig Aspose.Cells Cloud
 weight: 15
 kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Välkommen till Learn Aspose.Cells Moln

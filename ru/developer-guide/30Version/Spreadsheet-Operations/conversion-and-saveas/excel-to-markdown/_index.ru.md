@@ -1,6 +1,6 @@
 ﻿---
 title: Excel в Маркдов
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Excel в Маркдов
 type: docs
 url: /ru/convert-excel-file-to-markdown-file/

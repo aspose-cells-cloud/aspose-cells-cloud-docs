@@ -1,7 +1,7 @@
 ﻿---
 title: 2022 年 Aspose.Cells Cloud 的新功能
-second_title: Latest Updates & Feature
-linktitle: 202 中的新增功能
+second_title: Documen
+linktitle: 202 中的新功能
 type: docs
 weight: 90
 url: /zh/new-features/2023/
@@ -9,7 +9,7 @@ keywords: What's new in aspose cells cloud. Microsoft Office Excel, Open Office 
 description: 本页介绍了最近版本中引入的最有趣的新 Aspose.Cells 云功能
 kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、Aspose.Cells 云中的新功能
 ---
-欢迎了解 Aspose.Cells 云文档的新增功能。使用此页面可以快速查找最新更改。
+欢迎了解 Aspose.Cells 云文档的新功能。使用此页面可以快速查找最新更改。
 
 ## Aspose.Cells 云 22.12
 
@@ -17,7 +17,7 @@ kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdo
 
 ## Aspose.Cells 云 22.11
 
-- 添加新的 api 用于转换为 json。
+- 添加新的 api 以转换为 json。
 - 添加用于转换为 SQL 的新 API。
 - 添加用于转换为 cvs 的新 api。
 

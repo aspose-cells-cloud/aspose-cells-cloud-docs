@@ -1,6 +1,6 @@
 ﻿---
 title: Ottieni tutte le convalide del foglio di lavoro da un foglio di lavoro Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ottieni tutto
 type: docs
 url: /it/validations/get-all/

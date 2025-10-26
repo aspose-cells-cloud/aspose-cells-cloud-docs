@@ -1,6 +1,6 @@
 ﻿---
 title: إلغاء دمج الخلايا المدمجة في النطاق
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: إلغاء الدمج
 type: docs
 url: /ar/ranges/unmerge/

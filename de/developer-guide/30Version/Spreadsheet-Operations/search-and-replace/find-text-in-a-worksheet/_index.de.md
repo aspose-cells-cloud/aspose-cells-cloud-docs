@@ -1,6 +1,6 @@
 ﻿---
 title: Suchen Sie Text in einem Excel-Arbeitsblatt
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Im Arbeitsblatt suchen
 type: docs
 url: /de/worksheets/find-text/

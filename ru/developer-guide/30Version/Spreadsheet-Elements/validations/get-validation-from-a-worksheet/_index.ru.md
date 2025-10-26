@@ -1,6 +1,6 @@
 ﻿---
 title: Получите проверку рабочего листа по индексу из рабочего листа Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ге
 type: docs
 url: /ru/validations/get/

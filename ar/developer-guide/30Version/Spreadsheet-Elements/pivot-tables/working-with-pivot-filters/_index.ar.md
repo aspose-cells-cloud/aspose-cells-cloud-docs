@@ -1,6 +1,6 @@
 ﻿---
 title: العمل مع مرشح المحور
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: المرشحات
 type: docs
 url: /ar/pivot-tables/add-filters/

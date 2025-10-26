@@ -1,6 +1,6 @@
 ﻿---
 title: Excel-Datei reparieren
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 linktitle: Excel-Datei reparieren
 url: /de/repair-excel-files/

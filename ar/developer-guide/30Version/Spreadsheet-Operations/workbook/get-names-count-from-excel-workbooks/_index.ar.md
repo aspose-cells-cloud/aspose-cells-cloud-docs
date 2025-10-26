@@ -1,6 +1,6 @@
 ﻿---
 title: احصل على الأسماء من كتاب العمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: اسم
 type: docs
 url: /ar/get-names-from-an-excel-file/

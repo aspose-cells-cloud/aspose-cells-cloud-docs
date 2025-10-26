@@ -1,6 +1,8 @@
 ﻿---
-title: Komma igång
-second_title: How to Process Excel Files in 3 Steps Using Aspose.Cells Cloud WEB API
+title: "Aspose.Cells Komma igång med molnet: Så här bearbetar du Excel-filer i 3 steg med hjälp av Aspose.Cells Cloud WEB API"
+second_title: Documen
+ArticleTitle: Aspose.Cells Cloud Getting Starte
+linktitle: Komma igång
 type: docs
 url: /sv/getting-started/
 description: Aspose.Cells Molnet stöder Excel för att skapa, konvertera, sammanfoga, dela, skydda, hantera interna objekt och så vidare.

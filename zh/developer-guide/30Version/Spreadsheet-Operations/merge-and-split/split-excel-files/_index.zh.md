@@ -1,6 +1,6 @@
 ﻿---
-title: 将 Excel 工作簿拆分为多个文件
-second_title: Aspose.Cells Cloud Documen
+title: 将 Excel 工作簿拆分为多文件
+second_title: Documen
 linktitle: 拆分 Excel fil
 type: docs
 url: /zh/split-multi-excel-files/
@@ -21,7 +21,7 @@ kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdo
 |到|整数|结束工作表索引。|
 |水平分辨率|整数|图像水平分辨率。|
 |垂直分辨率|整数|图像垂直分辨率。|
-|输出文件夹|细绳|输出分割文件的位置。|
+|出文件夹|细绳|输出分割文件位置。|
 |splitNameRule|细绳||
 |文件夹|细绳|原始工作簿文件夹。|
 |存储名称|细绳|存储名称。|
@@ -32,9 +32,9 @@ kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdo
 |:- |:- |:- |:- |
 |/单元格/{名称}/拆分|邮政|拆分 Excel 工作簿|[PostWorkbookSplit](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookSplit)|
 
-这[OpenAPI规范](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookSplit)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookSplit)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
 
-您可以使用**cURL**命令行工具可轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用 Cloud API。
+您可以使用**cURL**命令行工具可轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 

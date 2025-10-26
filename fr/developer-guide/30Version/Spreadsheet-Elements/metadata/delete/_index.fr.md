@@ -1,6 +1,6 @@
 ﻿---
 title: Supprimer les métadonnées sur les fichiers Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Supprimer sans utiliser de stockage
 type: docs
 url: /fr/metadata/delete/
@@ -19,7 +19,7 @@ POST http://api.aspose.cloud/v3.0/cells/metadata/delete
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

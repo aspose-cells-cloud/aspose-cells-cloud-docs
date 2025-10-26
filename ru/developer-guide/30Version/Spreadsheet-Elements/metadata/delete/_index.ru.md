@@ -1,6 +1,6 @@
 ﻿---
 title: Удалить метаданные файлов Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Удалить без использования хранилища
 type: docs
 url: /ru/metadata/delete/

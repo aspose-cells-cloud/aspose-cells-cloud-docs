@@ -1,6 +1,6 @@
 ﻿---
 title: Sostituisci il testo in una cartella di lavoro Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Sostituisci nel libro di lavoro
 type: docs
 url: /it/workbook/replace-text/

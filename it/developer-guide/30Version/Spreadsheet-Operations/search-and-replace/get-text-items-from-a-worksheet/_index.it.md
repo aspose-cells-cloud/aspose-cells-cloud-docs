@@ -1,6 +1,6 @@
 ﻿---
 title: Ottieni elementi di testo da un foglio di lavoro Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Entra nel foglio di lavoro
 type: docs
 url: /it/worksheets/get-text-items/

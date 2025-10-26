@@ -1,6 +1,6 @@
 ﻿---
 title: Protéger le fichier Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Crypter le fichier Excel
 type: docs
 url: /fr/protect-excel-files/
@@ -20,7 +20,7 @@ POST http://api.aspose.cloud/v3.0/cells/protect
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

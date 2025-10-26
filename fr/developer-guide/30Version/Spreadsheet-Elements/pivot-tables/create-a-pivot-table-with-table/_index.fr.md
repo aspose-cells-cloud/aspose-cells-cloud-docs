@@ -1,6 +1,6 @@
 ﻿---
 title: Convertir un tableau en tableau croisé dynamique
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Convertir
 type: docs
 url: /fr/pivot-tables/convert-table-to-pivottable/
@@ -19,14 +19,14 @@ Ce REST API indique de créer un `pivottable` avec un objet liste.
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/SummarizeWithPivotTable
  
 ```
- Les paramètres de la requête sont :
+ Les paramètres de la requête sont :
  
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin||
 | nom de la feuille| chaîne| chemin||
-| listObjectIndex| entier| chemin||
-| Nom de la feuille de calcul| chaîne| requête||
+| index d'objets de liste| entier| chemin||
+| Nom de la feuille de destination| chaîne| requête||
 | demande|| corps||
 | dossier| chaîne| requête||
 | nom de stockage| chaîne| requête| nom de stockage.|

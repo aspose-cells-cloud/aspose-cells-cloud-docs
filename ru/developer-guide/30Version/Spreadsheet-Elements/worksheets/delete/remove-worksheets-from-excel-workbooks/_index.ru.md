@@ -1,6 +1,6 @@
 ﻿---
 title: Удалить рабочий лист
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Один рабочий лист
 type: docs
 url: /ru/worksheets/delete-worksheet/

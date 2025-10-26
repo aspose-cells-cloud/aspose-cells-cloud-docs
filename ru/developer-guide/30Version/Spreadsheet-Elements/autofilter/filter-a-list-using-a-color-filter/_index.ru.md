@@ -1,6 +1,6 @@
 ﻿---
 title: Добавьте цветовой фильтр в рабочий лист Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Добавить цветовой фильтр
 type: docs
 url: /ru/autofilter/add-color-filter/

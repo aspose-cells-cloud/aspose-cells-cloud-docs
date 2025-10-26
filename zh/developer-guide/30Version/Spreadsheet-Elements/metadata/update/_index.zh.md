@@ -1,6 +1,6 @@
 ﻿---
 title: 更新元数据
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: 不使用存储进行更新
 type: docs
 url: /zh/metadata/update/
@@ -26,7 +26,7 @@ POST http://api.aspose.cloud/v3.0/cells/metadata/update
 |文件|文件|表单数据|要上传的文件|
 |文档属性||身体|Cells 文档属性。|
 
-这[OpenAPI规范](https://apireference.aspose.cloud/cells/#/PostMetadata)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/PostMetadata)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
 
 您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
 

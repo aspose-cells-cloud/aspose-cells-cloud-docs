@@ -1,6 +1,6 @@
 ﻿---
 title: Excel Çalışma Sayfasındaki satırları gruplandırma
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ungruo
 type: docs
 url: /tr/rows/ungroup/

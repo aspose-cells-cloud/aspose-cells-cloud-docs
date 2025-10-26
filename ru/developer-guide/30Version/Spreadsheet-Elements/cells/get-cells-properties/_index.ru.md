@@ -97,4 +97,4 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cell
 - [Получить MinRow из рабочего листа Excel](/cells/ru/get-minrow-from-excel-worksheet/)
 - [Получить MinDataRow из листа Excel](/cells/ru/get-mindatarow-from-excel-worksheet/)
 - [Получить MinColumn из рабочего листа Excel](/cells/ru/get-mincolumn-from-excel-worksheet/)
-- [Получить MinDataColumn из рабочего листа Excel](/cells/ru/get-mindatacolumn-from-excel-worksheet/)
+- [Получить MinDataColumn из листа Excel](/cells/ru/get-mindatacolumn-from-excel-worksheet/)

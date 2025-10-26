@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma sayfasına bir satırı otomatik olarak sığdır
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ro
 type: docs
 url: /tr/worksheets/autofit/row/

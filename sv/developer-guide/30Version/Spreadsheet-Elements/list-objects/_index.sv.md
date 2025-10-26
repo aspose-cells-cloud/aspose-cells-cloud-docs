@@ -1,6 +1,6 @@
 ﻿---
 title: Arbetar med Excel listobjekt
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: ListObject
 type: docs
 url: /sv/list-objects/
@@ -18,5 +18,5 @@ Tabeller i Excel är fördelaktiga för att ge struktur åt datamängder. Den ha
   
 - [Hur man lägger till en tabell (listobjekt) i ett kalkylblad.](/cells/sv/add-a-list-object-or-table-inside-the-worksheet/)
 - [Hur man uppdaterar en tabell (listobjekt) i kalkylbladet.](/cells/sv/update-a-list-object-or-table-inside-the-worksheet/)
-- [Hur man konverterar en tabell (listobjekt) till ett område.](/cells/sv/convert-list-object-or-table-to-range/)
+- [Hur man konverterar en tabell (listobjekt) till ett intervall.](/cells/sv/convert-list-object-or-table-to-range/)
 - [Hur man sorterar tabelldata.](/cells/sv/sort-table-data/)

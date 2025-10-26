@@ -1,5 +1,5 @@
 ﻿---
-title: Bir Çalışma Sayfasındaki Grafik Efsanesini Gizle
+title: Çalışma Sayfasındaki Grafik Efsanesini Gizle
 type: docs
 url: /tr/charts/legend/hide/
 aliases: [/hide-chart-legend-in-a-worksheet/]

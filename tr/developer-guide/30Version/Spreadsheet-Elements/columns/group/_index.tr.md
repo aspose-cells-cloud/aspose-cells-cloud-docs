@@ -1,12 +1,12 @@
 ﻿---
 title: Excel çalışma sayfasındaki grup sütunları
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Grup
 type: docs
 url: /tr/columns/group/
 aliases: [/group-columns-in-an-excel-worksheet/, /group-columns-in-excel-worksheet/]
 keywords: Group column on an Excel workshee
-description: Aspose.Cells Cloud REST API, Excel çalışma sayfasındaki gruplama sütununu destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
+description: Aspose.Cells Cloud REST API, Excel çalışma sayfasında gruplama sütununu destekler. SDK, çeşitli geliştirme dillerini destekler. Bunlar arasında Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift bulunur.
 weight: 60
 kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Excel çalışma sayfasındaki sütunları gruplama
 ---

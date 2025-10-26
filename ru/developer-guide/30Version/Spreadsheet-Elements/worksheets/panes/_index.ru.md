@@ -1,6 +1,6 @@
 ﻿---
 title: Как работать с панелями на рабочем листе Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Панель
 type: docs
 url: /ru/worksheets/panes/

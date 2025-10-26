@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma sayfasındaki pivot tabloyu silin
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Silmek
 type: docs
 url: /tr/pivot-tables/delete/

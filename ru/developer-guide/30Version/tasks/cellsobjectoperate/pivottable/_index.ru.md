@@ -1,6 +1,6 @@
 ﻿---
 title: Работа со сводной таблицей с использованием задачи CellsObjectOperate
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /ru/tasks/cells-object-operate/pivottable/
 aliases: [/working-with-pivot-table-using-cellsobjectoperate-task/]

@@ -1,6 +1,6 @@
 ﻿---
 title: إضافة الخلفية في Workboo
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: إعلان
 type: docs
 url: /ar/add-background-in-excel-file/

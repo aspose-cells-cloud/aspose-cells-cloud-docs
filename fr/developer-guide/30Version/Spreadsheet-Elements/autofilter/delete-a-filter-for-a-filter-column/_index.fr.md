@@ -1,14 +1,14 @@
 ﻿---
 title: Supprimer un filtre dans une feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Supprimer le filtre
 type: docs
 url: /fr/delete-filter/
 aliases: [/delete-a-filter-for-a-filter-column/,/delete-auto-filter/]
 keywords: Deletes a filter on an Excel worksheet
-description: Le Cloud Aspose.Cells et le SDK API permettent de supprimer un filtre sur une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
+description: Le Cloud Aspose.Cells et le Cloud API permettent de supprimer un filtre sur une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 100
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Supprimer un filtre dans une feuille de calcul Excel
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Supprimer un filtre dans une feuille de calcul Excel
 ---
 Ce REST API indique de supprimer un `filter` sur une feuille de calcul Excel.
 
@@ -20,7 +20,7 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilt
 
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
@@ -28,7 +28,7 @@ Les paramètres de la requête sont :
 | nom de la feuille| chaîne| Chemin| Le nom de la feuille de calcul.|
 |gamme|chaîne| Requête||
 |index de champ|entier| Requête||
-|dateTimeGroupingType|chaîne| Requête| Jour/Heure/Minute/Mois/Seconde/Année|
+|Type de regroupement date/heure|chaîne| Requête| Jour/Heure/Minute/Mois/Seconde/Année|
 |année|entier| Requête||
 |mois|entier| Requête||
 |jour|entier| Requête||

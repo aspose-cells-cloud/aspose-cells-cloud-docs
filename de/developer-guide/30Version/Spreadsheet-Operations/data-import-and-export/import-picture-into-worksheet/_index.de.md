@@ -1,6 +1,6 @@
 ﻿---
 title: Bild in Arbeitsblatt Excel importieren
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Bild importieren
 type: docs
 url: /de/import-picture-into-excel-worksheet/
@@ -35,7 +35,7 @@ Die wichtigen Parameter sind in der folgenden Tabelle beschrieben:
 | Untere Rechte Spalte| int||
 | Dateiname| Schnur||
 | Daten| Zeichenfolge||
-| ZielArbeitsblatt| Schnur| Name des Zielarbeitsblatts.|
+|ZielArbeitsblatt| Schnur| Name des Zielarbeitsblatts.|
 | IsInsert| Schnur| wahr/falsch.|
 | ImportDataType| Schnur|IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/Picture.|
 | Quelle| Dateiquelle| Gibt die Datendateiposition an, wenn der BatchData-Parameter null ist.|

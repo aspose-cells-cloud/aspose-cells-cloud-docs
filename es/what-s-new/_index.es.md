@@ -1,7 +1,7 @@
 ﻿---
 title: Novedades en Aspose.Cells Cloud
-second_title: Latest Updates & Feature
-linktitle: ¿Qué pasa?
+second_title: Documen
+linktitle: ¿Qué hay?
 type: docs
 weight: 9
 url: /es/new-features/
@@ -19,11 +19,13 @@ kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown
 
 |**IDENTIFICACIÓN**|**Resumen**|**Categoría**|
 |:- |:- |:- |
-|55754 | Error al recortar todo el libro de trabajo.|
-|55755 | Error al actualizar las mayúsculas y minúsculas de todo el libro de trabajo.|
-|55930 | Agregar funciones para proteger o desproteger hojas de cálculo.|
-|55931 | Agregar conversión de hoja de cálculo/tabla/rango a otros formatos.|
-|56088 | Optimizar las opciones de alcance de operación para TextProcessingController.|
+|56632 | Actualice el nombre del parámetro de datos del formulario para la especificación del código de Cells Cloud en los servicios de Cells Cloud 3.0.| Mejora|
+|56793 | Solucione el problema de StringEnumConverter en Aspose.Cells Cloud Services.| Bicho|
+|56866 | Soporte para recortar contenido de hojas de cálculo en Cells Cloud 4.0.| Mejora|
+|56867 | Admite contenido de rango de hoja de cálculo de recorte en Cells Cloud 4.0.| Mejora|
+|56919 | Se produjo una excepción al guardar la hoja de cálculo como un archivo de formato diferente en la nube de celdas.| Bicho|
+|56922 | Al exportar el rango/tabla como un archivo HTML, se pierden datos.| Bicho|
+|56936 | Soluciona algunos problemas sobre errores ortográficos.| Bicho|
 
 # Lanzamientos históricos
 

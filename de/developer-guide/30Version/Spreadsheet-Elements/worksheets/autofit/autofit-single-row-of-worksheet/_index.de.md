@@ -1,6 +1,6 @@
 ﻿---
 title: Automatisches Anpassen einer Zeile in einem Excel-Arbeitsblatt
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ro
 type: docs
 url: /de/worksheets/autofit/row/

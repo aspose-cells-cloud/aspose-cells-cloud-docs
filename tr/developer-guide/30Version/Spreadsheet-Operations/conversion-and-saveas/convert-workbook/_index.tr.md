@@ -1,6 +1,6 @@
 ﻿---
 title: Excel Dosyasını Farklı Biçime Dönüştürme
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Elektronik Tabloyu Dönüştür
 type: docs
 url: /tr/convert-a-spread-file-to-different-formats/

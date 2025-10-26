@@ -1,6 +1,8 @@
 ﻿---
-title: Başlarken
-second_title: How to Process Excel Files in 3 Steps Using Aspose.Cells Cloud WEB API
+title: "Aspose.Cells Bulut Başlarken: Aspose.Cells Bulut WEB API'i Kullanarak 3 Adımda Excel Dosyalarını Nasıl İşlersiniz?"
+second_title: Documen
+ArticleTitle: Aspose.Cells Cloud Getting Starte
+linktitle: Başlarken
 type: docs
 url: /tr/getting-started/
 description: Aspose.Cells Bulut, Excel'in oluşturma, dönüştürme, birleştirme, bölme, korumalı, iç nesne işlemleri vb. işlemlerini destekler

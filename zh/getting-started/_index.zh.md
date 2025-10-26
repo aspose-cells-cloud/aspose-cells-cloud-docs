@@ -1,6 +1,8 @@
 ﻿---
-title: 入门
-second_title: How to Process Excel Files in 3 Steps Using Aspose.Cells Cloud WEB API
+title: Aspose.Cells 云入门：如何使用 Aspose.Cells 云 WEB API 分 3 个步骤处理 Excel 文件
+second_title: Documen
+ArticleTitle: Aspose.Cells Cloud Getting Starte
+linktitle: 入门
 type: docs
 url: /zh/getting-started/
 description: Aspose.Cells 云支持 Excel 创建、转换、合并、拆分、保护、内部对象操作等

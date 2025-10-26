@@ -1,6 +1,6 @@
 ﻿---
 title: Получить все свойства документа
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Получить все
 type: docs
 url: /ru/document-properties/get-all/

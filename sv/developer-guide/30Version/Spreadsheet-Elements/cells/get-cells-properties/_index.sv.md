@@ -29,7 +29,7 @@ Begäranparametrarna är:
 
 ### **Cloud SDK-familjen**
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkivet](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+ Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
 
 Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
 
@@ -96,5 +96,5 @@ Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp
 - [Hämta MaxDataColumn från arbetsbladet Excel](/cells/sv/get-maxdatacolumn-from-excel-worksheet/)
 - [Hämta MinRow från arbetsbladet Excel](/cells/sv/get-minrow-from-excel-worksheet/)
 - [Hämta MinDataRow från arbetsbladet Excel](/cells/sv/get-mindatarow-from-excel-worksheet/)
-- [Hämta MinColumn från Excel-arbetsbladet](/cells/sv/get-mincolumn-from-excel-worksheet/)
+- [Hämta MinColumn från arbetsbladet Excel](/cells/sv/get-mincolumn-from-excel-worksheet/)
 - [Hämta MinDataColumn från arbetsbladet Excel](/cells/sv/get-mindatacolumn-from-excel-worksheet/)

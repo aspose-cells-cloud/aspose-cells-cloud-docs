@@ -1,6 +1,6 @@
 ﻿---
 title: Fügen Sie einen Filter in einem Excel-Arbeitsblatt hinzu
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Filter hinzufügen
 type: docs
 url: /de/autofilter/add-filter/

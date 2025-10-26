@@ -1,14 +1,14 @@
 ﻿---
 title: Exporter la feuille de travail
-second_title: Aspose.Cells Cloud Documen
-linktitle: Fiche d'exercices
+second_title: Documen
+linktitle: Fiche de travail
 type: docs
 url: /fr/export-excel-worksheet-to-different-formats/
 aliases: [ /export/excel-worksheet-to-different-formats/]
 keywords: Export Excel worksheet to kinds of format files
 description: Aspose.Cells Cloud REST API prend en charge l'exportation de feuilles de calcul Excel vers différents formats de fichiers. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 20
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Exporter une feuille de calcul
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Exporter une feuille de calcul
 ---
  Vous pouvez exporter les formats :[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [SAO](https://docs.fileformat.com/spreadsheet/ods/), [SMS](https://docs.fileformat.com/word-processing/txt/), [PDF](https://docs.fileformat.com/pdf/), [OTS](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [DIF](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [NOMBRES](https://docs.fileformat.com/spreadsheet/numbers/), [FODS](https://docs.fileformat.com/spreadsheet/fods/)..
 
@@ -16,7 +16,7 @@ kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Export
 
 |**API**|**Taper**|**Description**|**Lien Swagger**|
 |:- |:- |:- |:- |
-|/cellules/export|POSTE|Exporter Excel à partir du contenu de la demande vers un format|[PostExport](https://apireference.aspose.cloud/cells/#/LightCells/PostExport)|
+|/cellules/export|POSTE|Exporter Excel du contenu de la demande vers un format|[PostExport](https://apireference.aspose.cloud/cells/#/LightCells/PostExport)|
 
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
 

@@ -1,6 +1,6 @@
 ﻿---
 title: Holen Sie sich Textelemente aus einem Excel-Arbeitsbuch
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Holen Sie sich Workboo
 type: docs
 url: /de/workbook/get-text-items/

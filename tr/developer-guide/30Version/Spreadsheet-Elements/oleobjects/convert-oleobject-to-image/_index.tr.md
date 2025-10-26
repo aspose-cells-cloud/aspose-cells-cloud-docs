@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma sayfasında OLE nesnesini görüntüye dönüştürme
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Dönüşüm
 type: docs
 url: /tr/oleobjects/convert/

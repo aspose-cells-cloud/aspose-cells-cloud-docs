@@ -1,6 +1,6 @@
 ﻿---
-title: "Excel dosyalarında çalışma: Formül Hesaplama, Otomatik sığdırma, Nesneleri temizle, vb."
-second_title: Aspose.Cells Cloud Documen
+title: "Excel dosyalarında çalışma: Formül Hesaplama, Otomatik sığdırma, Nesneleri temizleme, vb."
+second_title: Documen
 linktitle: Excel Ortak İşlem
 type: docs
 url: /tr/workbook/

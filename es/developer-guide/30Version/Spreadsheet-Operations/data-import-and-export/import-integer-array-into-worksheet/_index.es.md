@@ -7,7 +7,7 @@ aliases: [/import-integer-array-into-excel-worksheet/,/import-integer-array-into
 keywords: Import integer array data into Excel files
 description: Aspose.Cells Cloud REST API admite la importación de datos de matrices de enteros a archivos Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 30
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, JSON, Markdown, Importar matriz de enteros a la hoja de cálculo Excel
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Importar matriz de enteros a la hoja de trabajo Excel
 ---
 Esta hoja de trabajo REST API `import int array data` en Excel.
 
@@ -24,7 +24,7 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
 
 Los parámetros importantes se describen en la siguiente tabla:
 
-**ImportarOpciónArrayEntero**
+**Importar opción de matriz de enteros**
 
 |Nombre del parámetro|Tipo|Descripción|
 |:- |:- |:- |
@@ -32,7 +32,7 @@ Los parámetros importantes se describen en la siguiente tabla:
 | Primera columna| entero||
 | Es vertical| cadena| verdadero/falso.|
 | Datos|Entero[]||
-| Hoja de trabajo de destino| cadena| Nombre de la hoja de trabajo de destino.|
+|Hoja de trabajo de destino| cadena| Nombre de la hoja de trabajo de destino.|
 | EsInsertar| cadena| verdadero/falso.|
 | Importar tipo de datos| cadena|IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData.|
 | Fuente| Fuente del archivo| Indica la posición del archivo de datos cuando el parámetro BatchData es nulo.|
@@ -55,7 +55,7 @@ Los parámetros importantes se describen en la siguiente tabla:
 
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
 
 Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
 

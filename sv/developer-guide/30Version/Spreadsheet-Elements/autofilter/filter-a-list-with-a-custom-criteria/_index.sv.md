@@ -1,6 +1,6 @@
 ﻿---
 title: Lägg till ett anpassat kriterium i ett Excel-arbetsblad
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Lägg till anpassat filter
 type: docs
 url: /sv/autofilter/add-custom-filter/ 
@@ -28,7 +28,7 @@ Begäranparametrarna är:
 | arknamn| sträng| väg||
 | räckvidd| sträng| fråga||
 | fältindex| heltal| fråga||
-| operatörTyp1| sträng| fråga||
+| operatörstyp1| sträng| fråga||
 | kriterier1| sträng| fråga||
 | ärOch| boolesk| fråga||
 | operatörstyp2| sträng| fråga||
@@ -78,7 +78,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFil
 
 ## Cloud SDK-familjen
 
- Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkivet](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
+ Att använda ett SDK är det bästa sättet att snabba upp utvecklingen. Ett SDK tar hand om detaljer på låg nivå och låter dig fokusera på dina projektuppgifter. Vänligen kolla in[GitHub-arkiv](https://github.com/aspose-cells-cloud) för en komplett lista över Aspose.Cells Cloud SDK:er.
 
 Följande kodexempel visar hur man anropar Aspose.Cells webbtjänster med hjälp av olika SDK:er:
 

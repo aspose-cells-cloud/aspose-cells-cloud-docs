@@ -1,6 +1,6 @@
 ﻿---
 title: Lavorare con CellsObjectOperate Tas
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /it/tasks/cells-object-operate/
 aliases: [/working-with-cellsobjectoperate-task/]
@@ -14,7 +14,7 @@ Questo REST API gestisce le celle oggetto `task`.
 
 |Nome del parametro|Tipo|Descrizione|
 |:- |:- |:- |
-| OperateObjectType| corda| Cartella di lavoro/Foglio di lavoro/Imposta pagina/Cells/Grafico/Forma/Oggetto elenco/Tabella pivot/Impostazioni cartella di lavoro/Interruzione di pagina|
+| OperateObjectType| corda|Cartella di lavoro/Foglio di lavoro/Imposta pagina/Cells/Grafico/Forma/Oggetto elenco/Tabella pivot/Impostazioni cartella di lavoro/Interruzione di pagina|
 | OperateObjectPosition| Oggetto||
 
 **OperateObjectPosition**

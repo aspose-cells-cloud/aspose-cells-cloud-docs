@@ -1,6 +1,6 @@
 ﻿---
 title: Kaydetme Seçeneği
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Kaydetme seçeneği
 type: docs
 url: /tr/save-options/

@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma sayfasındaki tüm çalışma sayfası doğrulamalarını silin
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Temiz
 type: docs
 url: /tr/validations/clear/

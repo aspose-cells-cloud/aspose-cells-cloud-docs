@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma sayfasından metin öğelerini al
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Çalışma sayfasına girin
 type: docs
 url: /tr/worksheets/get-text-items/

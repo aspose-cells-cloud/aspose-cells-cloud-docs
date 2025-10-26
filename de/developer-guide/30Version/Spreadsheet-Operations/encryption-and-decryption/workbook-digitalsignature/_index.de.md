@@ -1,6 +1,6 @@
 ﻿---
 title: Digitale Signatur für Excel Arbeitsbuch hinzufügen
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Digitale Signatur
 type: docs
 url: /de/excel-digital-signature/

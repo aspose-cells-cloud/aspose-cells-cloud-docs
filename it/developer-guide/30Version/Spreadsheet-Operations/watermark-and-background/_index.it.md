@@ -1,6 +1,6 @@
 ﻿---
 title: Inserisci filigrane o imposta sfondi nei file Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Filigrana e sfondo
 type: docs
 url: /it/watermark-and-background/

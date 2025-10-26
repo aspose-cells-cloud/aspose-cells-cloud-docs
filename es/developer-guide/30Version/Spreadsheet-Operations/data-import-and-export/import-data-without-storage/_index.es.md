@@ -1,6 +1,6 @@
 ﻿---
 title: Importar datos sin usar almacenamiento
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Importar datos sin almacenamiento
 type: docs
 url: /es/import/without-using-storage/ 
@@ -10,7 +10,7 @@ description: Cells.Cloud API para la importación de archivos Excel
 weight: 10
 kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Importar datos sin usar almacenamiento
 ---
-La importación de datos de Excel es un proceso complejo. Muchos factores contribuyen a la complejidad y, por lo tanto, deben tenerse en cuenta durante el proceso de exportación. La capacidad de importar diversos formatos y tipos de datos al archivo con una calidad profesional y precisa es una característica destacada de Aspose.Cells Cloud.
+La importación de datos de Excel es un proceso complejo. Muchos factores contribuyen a la complejidad y, por lo tanto, deben tenerse en cuenta durante el proceso de exportación. La capacidad de importar diversos formatos y tipos de datos al archivo con una calidad profesional es una característica destacada de Aspose.Cells Cloud.
 
 Este REST API indica `import data` en un archivo Excel.
 
@@ -80,7 +80,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/import" \
 
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
 
 Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
 

@@ -1,6 +1,6 @@
 ﻿---
 title: Quoi de neuf dans Aspose.Cells Cloud en 2024
-second_title: Latest Updates & Feature
+second_title: Documen
 linktitle: Quoi de neuf dans 202
 type: docs
 weight: 20
@@ -36,7 +36,7 @@ Bienvenue dans les nouveautés de la documentation Cloud Aspose.Cells. Utilisez 
 
 ## Améliorations de la version 24.7
 
-- Ajoutez une nouvelle fonctionnalité concernant l’ajout de contenu textuel.
+- Ajoutez une nouvelle fonctionnalité concernant l'ajout de contenu textuel.
 - Ajoutez un jeton d'accès par identifiant client et secret client.
 
 ## Améliorations de la version 24.6.1
@@ -45,7 +45,7 @@ Bienvenue dans les nouveautés de la documentation Cloud Aspose.Cells. Utilisez 
 
 ## Améliorations de la version 24.6.0
 
-- Optimisez les étapes appliquées à la conversion des données.
+- Optimiser les étapes de conversion de données appliquées.
 - Optimiser la fonction de chargement des données de transformation des données.
 - Augmenter la prise en charge de net425 et netstandard2.0.
 

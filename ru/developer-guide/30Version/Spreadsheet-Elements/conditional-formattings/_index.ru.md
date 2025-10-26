@@ -1,6 +1,6 @@
 ﻿---
 title: Работа с условным форматированием Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Условное форматирование
 type: docs
 url: /ru/conditional-formattings/

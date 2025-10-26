@@ -1,6 +1,6 @@
 ﻿---
 title: Экспортировать символ
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Чар
 type: docs
 url: /ru/export-excel-chart-to-different-formats/

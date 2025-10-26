@@ -1,6 +1,6 @@
 ﻿---
 title: استيراد بيانات CSV إلى ورقة العمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: استيراد بيانات csv
 type: docs
 url: /ar/import-csv-data-into-excel/

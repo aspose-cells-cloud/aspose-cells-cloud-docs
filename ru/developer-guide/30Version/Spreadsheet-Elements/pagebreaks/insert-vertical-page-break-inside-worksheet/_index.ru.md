@@ -1,6 +1,6 @@
 ﻿---
 title: Добавить вертикальный разрыв страницы
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Добавить вертикальный разрыв страницы
 type: docs
 url: /ru/page-breaks/add-vertical-page-break/

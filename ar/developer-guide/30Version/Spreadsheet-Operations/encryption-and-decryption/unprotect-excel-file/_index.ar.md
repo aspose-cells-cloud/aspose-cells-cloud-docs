@@ -1,6 +1,6 @@
 ﻿---
 title: إلغاء حماية دفتر العمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: إلغاء حماية الملف Excel
 type: docs
 url: /ar/excel-file-unprotect/

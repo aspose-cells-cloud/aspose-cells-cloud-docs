@@ -1,6 +1,6 @@
 ﻿---
 title: Excel doğrulama ile çalışıyor
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Doğrulama
 type: docs
 url: /tr/validations/

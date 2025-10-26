@@ -1,6 +1,6 @@
 ﻿---
 title: Spostare una tabella pivot in un file Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Mossa
 type: docs
 url: /it/pivot-tables/move/

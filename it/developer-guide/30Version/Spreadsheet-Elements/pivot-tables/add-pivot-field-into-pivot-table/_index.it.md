@@ -1,6 +1,6 @@
 ﻿---
 title: Aggiungere un campo pivot nella tabella pivot
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Aggiungi campo pivot
 type: docs
 url: /it/pivot-tables/add-pivot-field/

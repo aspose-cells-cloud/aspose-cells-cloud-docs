@@ -1,6 +1,6 @@
 ﻿---
 title: احصل على جميع الصور في ورقة عمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: احصل على ال
 type: docs
 url: /ar/pictures/get-all/

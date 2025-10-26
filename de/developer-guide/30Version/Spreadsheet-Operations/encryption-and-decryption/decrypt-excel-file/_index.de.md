@@ -1,6 +1,6 @@
 ﻿---
 title: Entschlüsseln Sie ein Excel-Arbeitsbuch
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Entschlüsseln Sie eine Excel-Datei
 type: docs
 url: /de/excel-file-decrypt/
@@ -37,7 +37,7 @@ Dieser REST API entschlüsselt einen Excel `workbook`.
 
 |**API**|**Typ**|**Beschreibung**|**Swagger-Link**|
 |:- |:- |:- |:- |
-|/Zellen/{Name}/Verschlüsselung|DELTE|Entschlüsseln eines Dokuments|[Arbeitsmappe löschen/entschlüsseln](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDecryptWorkbook)|
+|/Zellen/{Name}/Verschlüsselung|DELTE|Entschlüsseln eines Dokuments|[DeleteDecryptWorkbook](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDecryptWorkbook)|
 
  Der[OpenAPI-Spezifikation](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDecryptWorkbook) definiert eine öffentlich zugängliche Programmierschnittstelle und ermöglicht Ihnen die Durchführung von REST-Interaktionen direkt von einem Webbrowser aus.
 

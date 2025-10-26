@@ -1,6 +1,6 @@
 ﻿---
 title: Fügen Sie einem Arbeitsblatt Excel mehrere Zeilen hinzu
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Reihe
 type: docs
 url: /de/rows/add/rows/

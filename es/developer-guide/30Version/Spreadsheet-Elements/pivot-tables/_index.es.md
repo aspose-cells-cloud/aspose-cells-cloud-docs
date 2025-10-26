@@ -1,6 +1,6 @@
 ﻿---
 title: Trabajando con la tabla dinámica Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Tabla dinámica
 type: docs
 url: /es/pivottables/
@@ -18,7 +18,7 @@ kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, JSON, Markdown
 - [Cómo agregar un campo dinámico a una tabla dinámica.](/cells/es/pivot-tables/add-pivot-field/)
 - [Cómo eliminar todas las tablas dinámicas de la hoja de cálculo Excel.](/cells/es/pivot-tables/clear/)
 - [Cómo eliminar la tabla dinámica por índice de la hoja de trabajo Excel.](/cells/es/pivot-tables/delete/)
-- [Cómo actualizar el estilo de celda de una tabla dinámica.](/cells/es/pivot-tables/format/)
+- [Cómo actualizar el estilo de celda para una tabla dinámica.](/cells/es/pivot-tables/format/)
 - [Cómo actualizar el estilo de una tabla dinámica.](/cells/es/pivot-tables/format-all/)
 - [Cómo agregar filtros dinámicos para la tabla dinámica.](/cells/es/pivot-tables/add-filters/)
 - [Cómo ocultar el elemento del campo dinámico de una tabla dinámica.](/cells/es/pivot-tables/hide-pivot-field-item/)

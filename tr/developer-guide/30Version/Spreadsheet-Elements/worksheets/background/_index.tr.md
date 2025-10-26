@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma sayfasında arka planla nasıl çalışılır
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Arka plan
 type: docs
 url: /tr/worksheets/background/

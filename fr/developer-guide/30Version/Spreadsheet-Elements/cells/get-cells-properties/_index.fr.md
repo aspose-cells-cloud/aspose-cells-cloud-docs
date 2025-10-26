@@ -5,7 +5,7 @@ url: /fr/get-cells-properties/
 weight: 130
 kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Obtenir les propriétés Cells
 ---
-Ce REST API indique comment `get a specific cell` dans un fichier Excel.
+Ce REST API indique comment utiliser `get a specific cell` dans un fichier Excel.
 
 ## RSET API
 
@@ -15,13 +15,13 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cell
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Nom du document.|
-| nom de la feuille| chaîne| chemin| Nom de la feuille de travail.|
-| nom de la cellule ou de la méthode| chaîne| chemin|Nom de la cellule ou de la méthode. (Valeur du nom de la méthode : firstcell, endcell, maxrow, maxdatarow, maxcolumn, maxdatacolumn, minrow, mindatarow, mincolumn, mindatacolumn et cellName.)|
+| nom de la feuille| chaîne| chemin| Nom de la feuille de calcul.|
+| nom de cellule ou de méthode| chaîne| chemin|Nom de la cellule ou de la méthode. (Valeur du nom de la méthode : firstcell, endcell, maxrow, maxdatarow, maxcolumn, maxdatacolumn, minrow, mindatarow, mincolumn, mindatacolumn et cellName.)|
 | dossier| chaîne| requête| Dossier du document.|
 | nom de stockage| chaîne| requête| nom de stockage.|
 

@@ -1,6 +1,6 @@
 ﻿---
 title: Trova il testo dal file Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Trova senza usare l'archiviazione
 type: docs
 url: /it/search/

@@ -1,6 +1,6 @@
 ﻿---
 title: Listenobjekt exportieren
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Listenobjekt
 type: docs
 url: /de/export-excel-listobject-to-different-formats/

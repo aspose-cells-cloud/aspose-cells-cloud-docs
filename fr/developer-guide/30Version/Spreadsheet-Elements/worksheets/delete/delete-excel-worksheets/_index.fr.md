@@ -1,6 +1,6 @@
 ﻿---
 title: Supprimer plusieurs feuilles de calcul Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Feuille de travail multiple
 type: docs
 url: /fr/worksheets/delete-multiple/
@@ -8,7 +8,7 @@ aliases: [/delete-excel-worksheets/]
 keywords: Delete multiple Excel worksheets on an Excel workbook
 description: Aspose.Cells Cloud REST API prend en charge la suppression de plusieurs feuilles de calcul d'un classeur. Le SDK prend en charge différents langages de développement, notamment Android, Go, NodeJS, Ruby et Swift.
 weight: 20
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Supprimer plusieurs feuilles de calcul Excel
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Supprimer plusieurs Excel feuilles de calcul
 ---
 Ce REST API indique `delete multiple worksheets`.
 
@@ -20,12 +20,12 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin||
-| matchCondition|| corps||
+| condition de match|| corps||
 | dossier| chaîne| requête||
 | nom de stockage| chaîne| requête||
 

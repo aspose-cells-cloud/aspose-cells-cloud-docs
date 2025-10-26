@@ -1,6 +1,6 @@
 ﻿---
 title: قم بمطابقة جميع الخلايا الفارغة في ورقة العمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: تطابق الخلية الفارغة
 type: docs
 url: /ar/autofilter/match-all-blank/

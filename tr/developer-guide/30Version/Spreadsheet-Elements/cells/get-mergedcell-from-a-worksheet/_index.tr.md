@@ -1,5 +1,5 @@
 ﻿---
-title: Bir Workshücresinden MergedCell'i alın
+title: Bir Workshücresinden MergedCell'i Alın
 type: docs
 url: /tr/get-mergedcell-from-a-worksheet/
 weight: 60

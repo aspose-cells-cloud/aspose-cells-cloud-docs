@@ -1,5 +1,5 @@
 ﻿---
-title: İlk Cep Telefonu'nu Excel Çalışma Sayfasından Alın
+title: İlk Cep Telefonu'nu Excel Worksheet'ten Alın
 type: docs
 url: /tr/get-first-cell-from-excel-worksheet/
 weight: 20

@@ -1,13 +1,15 @@
 ﻿---
-title: Aspose.Cells Cloud SDK per Rub
-second_title: Aspose.Cells Cloud Documen
+title: "Aspose.Cells Cloud SDK per Ruby: converti, unisci, dividi, proteggi, cerca, sostituisci e altro ancora"
+second_title: Documen
+ArticleTitle: "Aspose.Cells Cloud SDK for Ruby: Convert, merge, split, protect, search, replace, and more"
+linktitle: Aspose.Cells Cloud SDK per Rub
 type: docs
 url: /it/available-sdks/aspose-cells-cloud-ruby/
-description: Aspose.Cells Cloud supporta Excel per creare, convertire, unire, dividere, proteggere, operazioni di oggetti interni e così via
+description: "Aspose.Cells Cloud SDK per Ruby offre una vera potenza multipiattaforma: un'importazione fornisce agli sviluppatori Windows, Linux e macOS la stessa fluidità API per creare, convertire, unire, dividere, proteggere e manipolare ogni Excel oggetto, senza che sia richiesta alcuna installazione Office e senza modifiche specifiche della piattaforma."
 weight: 30
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Ruby
+kwords: Ruby SDK, Excel SDK per Ruby, Cloud SDK per Ruby, REST, Grafico, Tabella pivot, Oggetto tabella/elenco, Converti foglio di calcolo, PDF, CSV, Json, Markdown, Unisci, Dividi, Proteggi, Cerca, Sostituisci
 ---
-L'SDK è open source e concesso in licenza MIT. È possibile accedere al codice sorgente della libreria Ruby per Aspose.Cells Cloud.[Qui](https://github.com/aspose-cells-cloud/aspose-cells-cloud-ruby).
+L'SDK è open source e concesso in licenza con licenza MIT. È possibile accedervi[il codice sorgente della libreria Ruby per Aspose.Cells Cloud](https://github.com/aspose-cells-cloud/aspose-cells-cloud-ruby).
 
 # **Come utilizzare Aspose.Cells Cloud SDK per Ruby**
 

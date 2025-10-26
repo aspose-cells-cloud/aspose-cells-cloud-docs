@@ -1,6 +1,6 @@
 ﻿---
 title: Excel liste nesnesiyle çalışma
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: ListeNesnesi
 type: docs
 url: /tr/list-objects/

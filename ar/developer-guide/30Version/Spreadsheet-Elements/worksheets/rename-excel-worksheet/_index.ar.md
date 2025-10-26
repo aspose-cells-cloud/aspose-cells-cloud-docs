@@ -1,6 +1,6 @@
 ﻿---
 title: Excel ورقة عمل إعادة التسمية
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: رينام
 type: docs
 url: /ar/worksheets/rename/

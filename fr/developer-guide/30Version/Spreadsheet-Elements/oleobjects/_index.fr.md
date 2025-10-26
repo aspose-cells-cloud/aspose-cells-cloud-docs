@@ -1,6 +1,6 @@
 ﻿---
-title: Travailler avec Excel Ole objec
-second_title: Aspose.Cells Cloud Documen
+title: Travailler avec l'objet Ole Excel
+second_title: Documen
 linktitle: OleObject
 type: docs
 url: /fr/oleobjects/

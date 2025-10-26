@@ -1,6 +1,6 @@
 ﻿---
 title: كيفية التعامل مع حذف أوراق العمل في دفتر العمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: حذف
 type: docs
 url: /ar/worksheets/delete/

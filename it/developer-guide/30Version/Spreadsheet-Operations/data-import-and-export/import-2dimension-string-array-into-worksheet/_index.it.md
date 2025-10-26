@@ -1,6 +1,6 @@
 ﻿---
 title: Importa array di stringhe bidimensionali nel foglio di lavoro Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Importa stringa array a 2 dimensioni
 type: docs
 url: /it/import-a-2D-string-array-into-excel-worksheet/
@@ -32,7 +32,7 @@ I parametri importanti sono descritti nella seguente tabella:
 | Prima fila| interno||
 | Prima colonna| interno||
 | Dati|Corda[,]||
-| Foglio di lavoro sulla destinazione| corda| nome del foglio di lavoro di destinazione.|
+|Foglio di lavoro sulla destinazione| corda| nome del foglio di lavoro di destinazione.|
 | ÈInserisci| corda| vero/falso.|
 | ImportDataType| corda|IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData.|
 | Fonte| FileSource| Indica la posizione del file di dati quando il parametro BatchData è null.|

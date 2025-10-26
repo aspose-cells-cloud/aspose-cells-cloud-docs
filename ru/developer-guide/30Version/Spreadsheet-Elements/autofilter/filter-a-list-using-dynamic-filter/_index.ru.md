@@ -1,6 +1,6 @@
 ﻿---
 title: Добавить динамический фильтр дат на рабочий лист Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Добавить динамический фильтр
 type: docs
 url: /ru/autofilter/add-dynamic-filter/

@@ -1,6 +1,6 @@
 ﻿---
 title: Excel à Markdow
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Excel à Markdow
 type: docs
 url: /fr/convert-excel-file-to-markdown-file/
@@ -17,7 +17,7 @@ Ce REST API indique à `convert` un fichier de feuille de calcul vers un fichier
 |:- |:- |:- |
 |mot de passe|chaîne| Le mot de passe nécessaire pour ouvrir un fichier Excel.|
 |nom de stockage|chaîne| Le nom du stockage où se trouve le fichier.|
-|checkExcelRestriction|booléen| Vérifiez si la restriction du fichier Excel est vérifiée lorsque l'utilisateur modifie les objets liés aux cellules.|
+|vérifierExcelRestriction|booléen| Vérifiez si la restriction du fichier Excel est vérifiée lorsque l'utilisateur modifie les objets liés aux cellules.|
 
 **Paramètre du corps de la requête**
 
@@ -33,7 +33,7 @@ Ce REST API indique à `convert` un fichier de feuille de calcul vers un fichier
 
 |**API**|**Taper**|**Description**|**Lien Swagger**|
 |:- |:- |:- |:- |
-|/cellules/convertir/markdown|POSTE|Convertir une feuille de calcul en fichier pptx.|[PostConvertWorkbookToMarkdown](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToMarkdown)|
+|/cellules/convertir/markdown|POSTE|Convertir une feuille de calcul en fichier pptx.|[PostConvert WorkbookToMarkdown](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToMarkdown)|
 
  Le[Spécification OpenAPI](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToMarkdown) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
 

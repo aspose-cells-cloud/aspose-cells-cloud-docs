@@ -1,7 +1,7 @@
 ﻿---
 title: Скрыть столбцы на листе Excel
-second_title: Aspose.Cells Cloud Documen
-linktitle: Спрятался
+second_title: Documen
+linktitle: Спрятан
 type: docs
 url: /ru/columns/hide/
 aliases: [/hide-columns-in-excel-worksheet/,/hide-columns-in-an-excel-worksheet/]

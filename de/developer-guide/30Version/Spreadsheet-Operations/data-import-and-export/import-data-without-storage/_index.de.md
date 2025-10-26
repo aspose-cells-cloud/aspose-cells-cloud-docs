@@ -1,6 +1,6 @@
 ﻿---
 title: Daten importieren ohne Speicher zu verwenden
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Daten importieren ohne Speicherung
 type: docs
 url: /de/import/without-using-storage/ 

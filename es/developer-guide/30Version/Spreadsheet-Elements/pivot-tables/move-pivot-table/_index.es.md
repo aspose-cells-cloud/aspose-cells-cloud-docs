@@ -1,6 +1,6 @@
 ﻿---
 title: Mover una tabla dinámica en un archivo Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Mover
 type: docs
 url: /es/pivot-tables/move/
@@ -10,7 +10,7 @@ description: Aspose.Cells Cloud REST API admite el desplazamiento de una tabla d
 weight: 120
 kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Mover una tabla dinámica en un archivo Excel
 ---
-Esta REST API indica la tabla dinámica `move`.
+Este REST API indica la tabla dinámica `move`.
  
 ## RSET API
  
@@ -68,7 +68,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/pivott
  
 ## Familia de SDK en la nube
  
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
  
 Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
  

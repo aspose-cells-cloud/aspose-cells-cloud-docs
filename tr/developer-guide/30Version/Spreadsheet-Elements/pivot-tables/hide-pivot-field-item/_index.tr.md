@@ -1,6 +1,6 @@
 ﻿---
 title: Pivot tablosundaki pivot alan öğesini gizle
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Saklamak
 type: docs
 url: /tr/pivot-tables/hide-pivot-field-item/

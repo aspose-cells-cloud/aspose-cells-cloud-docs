@@ -1,6 +1,6 @@
 ﻿---
 title: يحصل على الملف Excel بتنسيق آخر
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: احصل على التميز
 type: docs
 url: /ar/get different formats files/

@@ -1,6 +1,6 @@
 ﻿---
 title: حذف جدول محوري في ورقة عمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: يمسح
 type: docs
 url: /ar/pivot-tables/delete/

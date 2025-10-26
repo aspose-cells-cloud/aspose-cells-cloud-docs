@@ -1,6 +1,6 @@
 ﻿---
 title: Ajouter un objet OLE dans une feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ajouter
 type: docs
 url: /fr/oleobjects/add/
@@ -8,7 +8,7 @@ aliases: [/add-oleobject-to-excel-worksheet/]
 keywords: Add an OLE object in an Excel worksheet
 description: Aspose.Cells Cloud REST API prend en charge l'ajout d'un objet OLE dans une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 20
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Ajouter un objet OLE dans une feuille de calcul Excel
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Ajouter un objet OLE dans une feuille de calcul Excel
 ---
 Ce REST API indique `add OLE object` dans une feuille de calcul Excel.
 
@@ -20,7 +20,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
@@ -31,7 +31,7 @@ Les paramètres de la requête sont :
 | colonne supérieure gauche| entier| requête|0 |
 | hauteur| entier| requête|0 |
 | largeur| entier| requête|0 |
-| oleFile| chaîne| requête| nom de fichier OLE|
+| fichier ole| chaîne| requête| nom de fichier OLE|
 | fichier image| chaîne| requête| Nom du fichier image|
 | dossier| chaîne| requête| Le dossier du classeur.|
 | nom de stockage| chaîne| requête| nom de stockage.|

@@ -1,6 +1,6 @@
 ﻿---
 title: Ajustar automáticamente varias columnas en una hoja de cálculo Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Columna
 type: docs
 url: /es/worksheets/autofit/columns/
@@ -8,7 +8,7 @@ aliases: [/autofit-multiple-columns-of-worksheet/]
 keywords: Autofit columns on an Excel workboo
 description: Aspose.Cells Cloud REST API admite el ajuste automático de columnas en un libro de trabajo Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 20
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Autoajustar varias columnas en una hoja de cálculo Excel
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Ajuste automático de varias columnas en una hoja de cálculo Excel
 ---
 Este REST API indica que se debe ajustar automáticamente `multiple columns` en una hoja de cálculo Excel.
 
@@ -30,7 +30,7 @@ Los parámetros de la solicitud son:
 | últimaColumna| entero| consulta| El índice de la columna final.|
 |[Opciones de autoajuste](/cells/es/auto-fitter-options/) || cuerpo| Opciones de ajuste automático.|
 | primeraFila| entero| consulta||
-| últimaFila| entero| consulta||
+| última fila| entero| consulta||
 | carpeta| cadena| consulta||
 | nombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
 
@@ -70,7 +70,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/sampleAutoFit.xlsx/worksheets/Sheet1
 
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
 
 Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
 

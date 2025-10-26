@@ -1,6 +1,6 @@
 ﻿---
 title: Obtient le fichier Excel dans un autre format
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Obtenez Exce
 type: docs
 url: /fr/get different formats files/
@@ -19,13 +19,13 @@ Ce REST API indique au fichier Excel `get` un fichier de format différent.
 |format|chaîne|Le format de fichier : csv, xls, html, mhtml, ods, pdf, xml, txt, tiff, xlsb, xlsm, xlsx, xltm, xltx, xps, png, jpg, gif, emf, bmp, md, Numbers, wmf, svg, etc.|
 |mot de passe|chaîne|Le mot de passe nécessaire pour ouvrir un fichier Excel.|
 |isAutoFit|chaîne|Ajuste automatiquement la largeur des lignes et des colonnes de ce classeur. La valeur par défaut est « false ».|
-|uniquementEnregistrerTable|chaîne|vrai/faux|
+|Enregistrer uniquement la table|chaîne|vrai/faux|
 |chemin de sortie|chaîne| Chemin d'accès pour enregistrer le résultat. S'il s'agit d'un fichier unique, `outPath` doit inclure le nom et l'extension du fichier. S'il s'agit de plusieurs fichiers, `outPath` doit uniquement inclure le dossier.|
 |outStorageName|chaîne| Le nom du stockage où se trouve le fichier enregistré.|
-|checkExcelRestriction|booléen| Vérifiez si la restriction du fichier Excel est vérifiée lorsque l'utilisateur modifie les objets liés aux cellules.|
+|vérifierExcelRestriction|booléen| Vérifiez si la restriction du fichier Excel est vérifiée lorsque l'utilisateur modifie les objets liés aux cellules.|
 |région|chaîne| Les paramètres régionaux du classeur.|
 |pageWideFitOnPerSheet|booléen| La page s'adapte à la largeur de la feuille de calcul.|
-|pageTallFitOnPerSheet|booléen| La page haute tient sur la feuille de travail.|
+|pageTallFitOnPerSheet|booléen| La page haute tient sur la feuille de calcul.|
 |une page par feuille|booléen| Lors de la conversion au format PDF, une page par feuille.|
 |dossier|chaîne|Classeur original.|
 |nom de stockage|chaîne|Le nom du stockage où se trouve le fichier.|

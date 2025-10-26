@@ -1,6 +1,6 @@
 ﻿---
 title: 将数据导入 Excel 文件并从 Excel 文件导出数据
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: 进出口数据
 type: docs
 url: /zh/data-import-and-export/
@@ -9,19 +9,19 @@ description: 生成可包含图表、表格和其他数据可视化元素的新�
 weight: 25
 kwords: Excel 数据导入与直接数据库访问；批量数据导入与逐行数据写入；自动数据导出与手动数据提取。
 ---
-Aspose.Cells云API支持从多种数据源导入数据，并可将Excel、图表、图例数据导出为不同格式，包括Excel、CSV、PDF、HTML、PNG等，使数据管理和共享变得简单高效。
+Aspose.Cells 云 API 支持从多种数据源导入数据，并可以将 Excel、图表和图例中的数据导出为不同的格式，包括 Excel、CSV、PDF、HTML、PNG 等，使数据管理和共享变得简单高效。
 
 ## 如何从各种数据源导入数据
 
-将数据导入 Excel 文件是一个复杂的过程。许多因素都会增加其复杂性，因此在导出过程中应考虑这些因素。Aspose.Cells Cloud 的一大优势在于能够以精准的专业质量将各种格式和类型的数据导入文件。
+将数据导入 Excel 文件是一个复杂的过程。许多因素都会增加其复杂性，因此在导出过程中应考虑到这些因素。能够以精准的专业质量将各种格式和类型的数据导入文件是 Aspose.Cells Cloud 的一大特色。
 
 ### 导入数据 API 信息
 
-提供了以下 API 来将数据导入到一个或多个 Excel 文件中：
+提供了以下 API 来将数据导入到 Excel 文件或多个 Excel 文件中：
 
 |API|描述|
 |:- |:- |
-|[POST /cells/import](https://apireference.aspose.cloud/cells/#/LightCells/PostImport)|无需使用存储即可将数据导入 Excel 文件。|
+|[POST /单元格/导入](https://apireference.aspose.cloud/cells/#/LightCells/PostImport)|无需使用存储即可将数据导入 Excel 文件。|
 |[POST /cells/{name}/importdata](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData)|使用存储将数据导入 Excel 文件。|
 
 ### 请求参数
@@ -56,8 +56,8 @@ Aspose.Cells云API支持从多种数据源导入数据，并可将Excel、图表
   <tbody>
     <tr> <td>批量数据</td><td>列表<CellValue></td> <td>批次数据</td> </tr>
     <tr> <td>目的地工作表</td><td>细绳</td><td>目标工作表名称。</td></tr>
-    <tr><td>是否插入</td><td>细绳</td><td>真/假。</td></tr>
-    <tr><td>导入数据类型</td><td>细绳</td><td>二维字符串批量数据数组</td></tr>
+    <tr><td>是否插入</td><td>细绳</td><td>对/错。</td></tr>
+    <tr><td>导入数据类型</td><td>细绳</td><td>二维字符串批次数据数组</td></tr>
     <tr> <td>来源</td><td>文件源</td><td>当 BatchData 参数为空时，指示数据文件位置。</td></tr>
   </tbody>
 </table>
@@ -68,7 +68,7 @@ Aspose.Cells云API支持从多种数据源导入数据，并可将Excel、图表
     <tr><th scope="col">范围</th><th scope="col">类型</th> <th scope="col">描述</th></tr>
   </thead>
   <tbody>
-    <tr> <td>转换数字数据</td><td>细绳</td> <td>真/假。</td> </tr>
+    <tr> <td>转换数字数据</td><td>细绳</td> <td>对/错。</td> </tr>
     <tr> <td>第一排</td><td>整数</td> <td></td> </tr>
     <tr> <td>第一列</td><td>整数</td><td></td></tr>
     <tr><td>分隔符字符串</td><td>细绳</td> <td></td></tr>
@@ -87,10 +87,10 @@ Aspose.Cells云API支持从多种数据源导入数据，并可将Excel、图表
   <tbody>
     <tr> <td>第一排</td><td>整数</td> <td></td> </tr>
     <tr> <td>第一列</td><td>整数</td><td></td></tr>
-    <tr><td>垂直</td><td>细绳</td><td>真/假。</td></tr>
+    <tr><td>垂直</td><td>细绳</td><td>对/错。</td></tr>
     <tr><td>数据</td><td>细绳[]</td> <td></td></tr>
     <tr> <td>目的地工作表</td><td>细绳</td><td>目标工作表名称。</td></tr>
-    <tr><td>是否插入</td><td>细绳</td><td>真/假。</td></tr>
+    <tr><td>是否插入</td><td>细绳</td><td>对/错。</td></tr>
     <tr><td>导入数据类型</td><td>细绳</td><td>图片</td></tr>
     <tr> <td>来源</td><td>文件源</td><td>当 BatchData 参数为空时，指示数据文件位置。</td></tr>
   </tbody>
@@ -106,7 +106,7 @@ Aspose.Cells云API支持从多种数据源导入数据，并可将Excel、图表
     <tr> <td>第一列</td><td>整数</td><td></td></tr>
     <tr><td>数据</td><td>整数[,]</td> <td></td></tr>
     <tr> <td>目的地工作表</td><td>细绳</td><td>目标工作表名称。</td></tr>
-    <tr><td>是否插入</td><td>细绳</td><td>真/假。</td></tr>
+    <tr><td>是否插入</td><td>细绳</td><td>对/错。</td></tr>
     <tr><td>导入数据类型</td><td>细绳</td><td>二维整数数组</td></tr>
     <tr> <td>来源</td><td>文件源</td><td>当 BatchData 参数为空时，指示数据文件位置。</td></tr>
   </tbody>
@@ -123,7 +123,7 @@ Aspose.Cells云API支持从多种数据源导入数据，并可将Excel、图表
     <tr> <td>第一列</td><td>整数</td><td></td></tr>
     <tr><td>数据</td><td>双倍的[，]</td> <td></td></tr>
     <tr> <td>目的地工作表</td><td>细绳</td><td>目标工作表名称。</td></tr>
-    <tr><td>是否插入</td><td>细绳</td><td>真/假。</td></tr>
+    <tr><td>是否插入</td><td>细绳</td><td>对/错。</td></tr>
     <tr><td>导入数据类型</td><td>细绳</td><td>二维双精度数组</td></tr>
     <tr> <td>来源</td><td>文件源</td><td>当 BatchData 参数为空时，指示数据文件位置。</td></tr>
   </tbody>
@@ -140,7 +140,7 @@ Aspose.Cells云API支持从多种数据源导入数据，并可将Excel、图表
     <tr> <td>第一列</td><td>整数</td><td></td></tr>
     <tr><td>数据</td><td>细绳[，]</td> <td></td></tr>
     <tr> <td>目的地工作表</td><td>细绳</td><td>目标工作表名称。</td></tr>
-    <tr><td>是否插入</td><td>细绳</td><td>真/假。</td></tr>
+    <tr><td>是否插入</td><td>细绳</td><td>对/错。</td></tr>
     <tr><td>导入数据类型</td><td>细绳</td><td>二维字符串数组</td></tr>
     <tr> <td>来源</td><td>文件源</td><td>当 BatchData 参数为空时，指示数据文件位置。</td></tr>
   </tbody>
@@ -155,10 +155,10 @@ Aspose.Cells云API支持从多种数据源导入数据，并可将Excel、图表
   <tbody>
     <tr> <td>第一排</td><td>整数</td> <td></td> </tr>
     <tr> <td>第一列</td><td>整数</td><td></td></tr>
-    <tr><td>垂直</td><td>细绳</td><td>真/假。</td></tr>
+    <tr><td>垂直</td><td>细绳</td><td>对/错。</td></tr>
     <tr><td>数据</td><td>整数[]</td> <td></td></tr>
     <tr> <td>目的地工作表</td><td>细绳</td><td>目标工作表名称。</td></tr>
-    <tr><td>是否插入</td><td>细绳</td><td>真/假。</td></tr>
+    <tr><td>是否插入</td><td>细绳</td><td>对/错。</td></tr>
     <tr><td>导入数据类型</td><td>细绳</td><td>整数数组</td></tr>
     <tr> <td>来源</td><td>文件源</td><td>当 BatchData 参数为空时，指示数据文件位置。</td></tr>
   </tbody>
@@ -173,10 +173,10 @@ Aspose.Cells云API支持从多种数据源导入数据，并可将Excel、图表
   <tbody>
     <tr> <td>第一排</td><td>整数</td> <td></td> </tr>
     <tr> <td>第一列</td><td>整数</td><td></td></tr>
-    <tr><td>垂直</td><td>细绳</td><td>真/假。</td></tr>
+    <tr><td>垂直</td><td>细绳</td><td>对/错。</td></tr>
     <tr><td>数据</td><td>双倍的[]</td> <td></td></tr>
     <tr> <td>目的地工作表</td><td>细绳</td><td>目标工作表名称。</td></tr>
-    <tr><td>是否插入</td><td>细绳</td><td>真/假。</td></tr>
+    <tr><td>是否插入</td><td>细绳</td><td>对/错。</td></tr>
     <tr><td>导入数据类型</td><td>细绳</td><td>双数组</td></tr>
     <tr> <td>来源</td><td>文件源</td><td>当 BatchData 参数为空时，指示数据文件位置。</td></tr>
   </tbody>
@@ -195,7 +195,7 @@ Aspose.Cells云API支持从多种数据源导入数据，并可将Excel、图表
     <tr><td>文件名</td><td>细绳</td><td></td></tr>
     <tr><td>数据</td><td>细绳</td> <td></td></tr>
     <tr> <td>目的地工作表</td><td>细绳</td><td>目标工作表名称。</td></tr>
-    <tr><td>是否插入</td><td>细绳</td><td>真/假。</td></tr>
+    <tr><td>是否插入</td><td>细绳</td><td>对/错。</td></tr>
     <tr><td>导入数据类型</td><td>细绳</td><td>字符串数组</td></tr>
     <tr> <td>来源</td><td>文件源</td><td>当 BatchData 参数为空时，指示数据文件位置。</td></tr>
   </tbody>
@@ -233,7 +233,7 @@ Aspose.Cells云API支持从多种数据源导入数据，并可将Excel、图表
 
 如果您最初以某种格式创建了 Excel 文件，例如[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/)， 和[CSV](https://docs.fileformat.com/spreadsheet/csv/)有时，您可能会发现将 Excel 文件转换为其他格式很有用，这样您就可以利用其提供的特殊功能。例如，您可能希望将 Excel 文件导出到[PDF](https://docs.fileformat.com/pdf/)保护您的内容免受任何未经授权的修改，并使其易于同时阅读和共享。
 
-Excel 对象的导出过程非常复杂。许多因素都会增加其复杂性，因此在导出过程中应考虑这些因素。能够将 Excel 对象导出为具有精确专业质量的单一格式文件是 Aspose.Cells Cloud 的一大亮点。
+Excel 对象的导出过程非常复杂。许多因素都会增加其复杂性，因此在导出过程中应考虑这些因素。能够将 Excel 对象导出为具有精确专业质量的单一格式文件是 Aspose.Cells Cloud 的一大特色。
 
 它完美适用于从 Excel 文件导出的工作簿、图表、形状和图片。您可以导出以下格式：[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [消耗臭氧层物质](https://docs.fileformat.com/spreadsheet/ods/), [TXT](https://docs.fileformat.com/word-processing/txt/) . 仅导出格式：[PDF](https://docs.fileformat.com/pdf/), [奥特斯](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [DIF](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [数字](https://docs.fileformat.com/spreadsheet/numbers/), [食物中毒](https://docs.fileformat.com/spreadsheet/fods/).
 
@@ -257,7 +257,7 @@ POST https://api.aspose.cloud/v3.0/cells/export
 |对象类型|细绳|询问|对象类型（工作簿/工作表/图表/形状/图片/列表对象/ole对象）|
 |格式|细绳|询问|[文件格式](/cells/zh/supported-file-formats/)  |
 
-这[OpenAPI规范](https://apireference.aspose.cloud/cells/#/LightCells/PostExport)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/LightCells/PostExport)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
 
 您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
 

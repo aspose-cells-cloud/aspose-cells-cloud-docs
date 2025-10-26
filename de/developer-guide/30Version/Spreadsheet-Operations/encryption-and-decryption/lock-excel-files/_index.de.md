@@ -1,6 +1,6 @@
 ﻿---
 title: Datei Excel sperren
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Datei Excel sperren
 type: docs
 url: /de/lock-excel-files/

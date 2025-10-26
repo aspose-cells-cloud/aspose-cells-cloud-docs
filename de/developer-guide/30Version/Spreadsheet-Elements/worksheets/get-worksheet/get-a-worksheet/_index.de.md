@@ -1,6 +1,6 @@
 ﻿---
-title: Holen Sie sich ein Arbeitsblatt aus einem Excel-Arbeitsblatt
-second_title: Aspose.Cells Cloud Documen
+title: Arbeitsblatt aus einem Excel-Arbeitsblatt abrufen
+second_title: Documen
 linktitle: Arbeitsblatt
 type: docs
 url: /de/worksheets/get-worksheet/

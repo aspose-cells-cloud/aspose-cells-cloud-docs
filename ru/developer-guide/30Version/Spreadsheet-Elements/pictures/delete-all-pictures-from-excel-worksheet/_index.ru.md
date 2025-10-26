@@ -1,6 +1,6 @@
 ﻿---
 title: Удалить все изображения в рабочем листе Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Клеа
 type: docs
 url: /ru/pictures/clear/

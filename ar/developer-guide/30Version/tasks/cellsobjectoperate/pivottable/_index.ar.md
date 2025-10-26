@@ -1,6 +1,6 @@
 ﻿---
 title: العمل مع جدول محوري باستخدام CellsObjectOperate tas
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /ar/tasks/cells-object-operate/pivottable/
 aliases: [/working-with-pivot-table-using-cellsobjectoperate-task/]
@@ -11,7 +11,7 @@ kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF،
 ---
 يقوم هذا REST API بإنشاء `pivot table` باستخدام كائن الخلايا وتشغيل `task`.
 
-**معلمة تشغيل الجدول المحوري**
+**معلمة تشغيل جدول محوري**
 
 
 |اسم المعلمة|يكتب|وصف|

@@ -1,6 +1,6 @@
 ﻿---
 title: Удалить все свойства документа
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Клеа
 type: docs
 url: /ru/document-properties/clear/

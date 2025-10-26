@@ -1,7 +1,7 @@
 ﻿---
 title: Aktualisieren Sie eine Arbeitsblattvalidierung auf einem Excel-Arbeitsblatt
-second_title: Aspose.Cells Cloud Documen
-linktitle: Aktualisierung
+second_title: Documen
+linktitle: Aktualisieren
 type: docs
 url: /de/validations/update/
 keywords: Delete a worksheet validation on an Excel worksheet

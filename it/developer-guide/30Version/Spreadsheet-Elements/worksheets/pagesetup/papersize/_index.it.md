@@ -1,6 +1,6 @@
 ﻿---
 title: Formato della carta
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Formato della carta
 type: docs
 url: /it/paper-size/

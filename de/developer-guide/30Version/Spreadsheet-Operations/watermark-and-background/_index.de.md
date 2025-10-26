@@ -1,6 +1,6 @@
 ﻿---
 title: Wasserzeichen einfügen oder Hintergründe in Excel-Dateien festlegen
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Wasserzeichen und Hintergrund
 type: docs
 url: /de/watermark-and-background/

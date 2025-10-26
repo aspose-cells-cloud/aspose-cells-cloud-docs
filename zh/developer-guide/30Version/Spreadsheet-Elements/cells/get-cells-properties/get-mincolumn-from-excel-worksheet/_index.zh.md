@@ -3,7 +3,7 @@ title: 从 Excel 工作表中获取 MinColumn
 type: docs
 url: /zh/get-mincolumn-from-excel-worksheet/
 weight: 100
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、从 Excel 工作表中获取 MinColumn
+kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、从 Excel 工作表获取最小列
 ---
 此 REST API 表示当 `cellOrMethodName` 参数为 `mincolumn` 时，在 Excel 文件中获取 `mincolumn`。
 

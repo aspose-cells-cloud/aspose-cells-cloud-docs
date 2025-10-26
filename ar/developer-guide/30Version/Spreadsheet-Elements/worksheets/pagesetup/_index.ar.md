@@ -1,6 +1,6 @@
 ﻿---
 title: مجموعة صفحات ورقة العمل
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: مجموعة الصفحات
 type: docs
 url: /ar/page-setup/

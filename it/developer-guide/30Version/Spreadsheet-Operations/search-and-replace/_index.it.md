@@ -1,6 +1,6 @@
 ﻿---
 title: Cerca e sostituisci il contenuto di testo nei file Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Cerca e sostituisci
 type: docs
 url: /it/search-and-replace/

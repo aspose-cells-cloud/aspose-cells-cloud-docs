@@ -1,6 +1,8 @@
 ﻿---
-title: Desteklenen Dosya Biçimi
-second_title: Aspose.Cells Cloud Documen
+title: Aspose.Cells Bulut Destekli Dosya Biçimi
+second_title: Documen
+ArticleTitle: "Aspose.Cells Cloud Supported File Formats: Excel, Pdf, CSV, Json, Markdown, and mor"
+linktitle: Desteklenen Dosya Biçimi
 type: docs
 url: /tr/supported-file-formats/
 description: Aspose.Cells Bulut, Excel'in oluşturma, dönüştürme, birleştirme, bölme, korumalı, iç nesne işlemleri vb. işlemlerini destekler

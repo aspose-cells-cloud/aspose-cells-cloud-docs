@@ -3,7 +3,8 @@ title: Lernen Aspose.Cells Clou
 type: docs
 url: /de/learn
 aliases: [/learn-aspose-cells-cloud]
-description: Willkommen bei Aspose.Cells Cloud lernen
+linktitle: Lear
+description: Willkommen bei Learn Aspose.Cells Cloud
 weight: 15
 kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Willkommen beim Lernen Aspose.Cells Cloud
 ---
@@ -63,7 +64,7 @@ response = instance.convert_spreadsheet(ConvertSpreadsheetRequest( 'EmployeeSale
 
 ### Die Enterprise-Grade Excel Engine für Cloud-Dienste
 
-Aspose.Cells Cloud ist eine leistungsstarke Excel-Engine für Cloud-Dienste. Sie bietet zahlreiche Funktionen zum Erstellen, Bearbeiten, Konvertieren und Analysieren von Tabellenkalkulationen.
+Aspose.Cells Cloud ist eine leistungsstarke Excel-Engine für Cloud-Dienste. Sie bietet eine breite Palette an Funktionen zum Erstellen, Bearbeiten, Konvertieren und Analysieren von Tabellenkalkulationen.
 
 ### Mehrsprachige SDK-Unterstützung
 

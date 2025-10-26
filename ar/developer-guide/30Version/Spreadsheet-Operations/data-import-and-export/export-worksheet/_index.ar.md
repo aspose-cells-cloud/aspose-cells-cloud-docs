@@ -1,6 +1,6 @@
 ﻿---
 title: تصدير ورقة العمل
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: ورقة عمل
 type: docs
 url: /ar/export-excel-worksheet-to-different-formats/

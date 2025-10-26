@@ -1,6 +1,8 @@
 ﻿---
-title: Snabbstjärna
-second_title: Aspose.Cells Cloud Documen
+title: "Aspose.Cells Snabbstart för molnet: Skapa ett kalkylprogram på 5 minuter"
+second_title: Documen
+ArticleTitle: Aspose.Cells Cloud Quickstar
+linktitle: Snabbstjärna
 type: docs
 url: /sv/quickstart/
 description: Aspose.Cells Molnet stöder Excel för att skapa, konvertera, sammanfoga, dela, skydda, hantera interna objekt och så vidare.
@@ -43,7 +45,7 @@ Därefter behöver du göra individuella justeringar av ditt konto:
 
 Aspose lägger stor vikt vid säkerhetsfrågor. Vi använder JWT-token för autentisering och end-to-end HTTPS-kryptering för att säkra alla klient-server-interaktioner.
 
- En applikation är en uppsättning unika API-inloggningsuppgifter —**Klient-ID** och**Klienthemlighet**Du kan använda dem för att autentisera när du ringer vårt moln API. I de flesta fall behöver du bara en enda applikation. I vissa avancerade scenarier kanske du vill registrera och använda flera applikationer med separata**Klient-ID och hemlighet** referenser.
+ En applikation är en uppsättning unika API-inloggningsuppgifter —**Klient-ID** och**Klienthemlighet** Du kan använda dem för att autentisera när du ringer vårt moln API. I de flesta fall behöver du bara en enda applikation. I vissa avancerade scenarier kanske du vill registrera och använda flera applikationer med separata**Klient-ID och hemlighet** referenser.
 
 För att få tillgång till information om dina applikationer, vänligen utför följande steg:
 
@@ -74,13 +76,13 @@ Grattis! Du har nu fått dina säkerhetsuppgifter för att autentisera Aspose.Ce
 
  Ta en stund för att bekanta dig med ett brett utbud av Aspose.Cells Cloud-produkter för att få en bättre förståelse för dina möjligheter. Dessa programvaruprodukter är byggda kring högpresterande[Moln API](https://apireference.aspose.com/), tillgänglig dygnet runt.
 
- För effektiv användning av Cloud API tillhandahåller vi en familj av kraftfulla[Cloud SDK:er](https://products.aspose.cloud/cells/family) för nästan alla större operativsystem (Windows, macOS, Linux, Android) och populära programmeringsspråk, inklusive[Android](https://products.aspose.cloud/cells/android), [C#](https://products.aspose.cloud/cells/net), [Python](https://products.aspose.cloud/cells/python), [Golang](https://products.aspose.cloud/cells/go), [Java](https://products.aspose.cloud/cells/java), [Node.js](https://products.aspose.cloud/cells/nodejs), [Perl](https://products.aspose.cloud/cells/perl), [PHP](https://products.aspose.cloud/cells/php), [Rubin](https://products.aspose.cloud/cells/ruby) och[Snabb](https://products.aspose.cloud/cells/swift).
+ För effektiv användning av Cloud API tillhandahåller vi en familj av kraftfulla[Cloud SDK:er](https://products.aspose.cloud/cells/family)för nästan alla större operativsystem (Windows, macOS, Linux, Android) och populära programmeringsspråk, inklusive[Android](https://products.aspose.cloud/cells/android), [C#](https://products.aspose.cloud/cells/net), [Python](https://products.aspose.cloud/cells/python), [Golang](https://products.aspose.cloud/cells/go), [Java](https://products.aspose.cloud/cells/java), [Node.js](https://products.aspose.cloud/cells/nodejs), [Perl](https://products.aspose.cloud/cells/perl), [PHP](https://products.aspose.cloud/cells/php), [Rubin](https://products.aspose.cloud/cells/ruby) och[Snabb](https://products.aspose.cloud/cells/swift).
 
  Alla ovanstående SDK:er finns på[GitHub](https://github.com/aspose-cells-cloud/)Varje arkiv innehåller ett brett utbud av kodexempel för att illustrera dess användning.
 
 ## Kontrollera utvecklardokumentationen och kodexemplen
 
-Nu är ditt konto helt konfigurerat och utvecklarmiljön är installerad. Du kan börja skriva kod med det valda SDK:t. Se[Utvecklarguide](https://docs.aspose.cloud/cells/developer-guide/) för information om hur du enkelt använder molnet, ring API.
+ Nu är ditt konto helt konfigurerat och utvecklarmiljön är installerad. Du kan börja skriva kod med det valda SDK:t. Se[Utvecklarguide](https://docs.aspose.cloud/cells/developer-guide/) för information om hur du enkelt använder molnet, ring API.
 
 t.ex. konvertera en arbetsbok till andra format.
 

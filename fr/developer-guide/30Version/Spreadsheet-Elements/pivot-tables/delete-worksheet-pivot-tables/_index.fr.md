@@ -1,6 +1,6 @@
 ﻿---
 title: Supprimer tous les tableaux croisés dynamiques dans une feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Clair
 type: docs
 url: /fr/pivot-tables/clear/
@@ -19,7 +19,7 @@ Ce REST API indique Supprimer les tableaux croisés dynamiques de la feuille de 
 DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables
  
 ```
- Les paramètres de la requête sont :
+ Les paramètres de la requête sont :
  
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

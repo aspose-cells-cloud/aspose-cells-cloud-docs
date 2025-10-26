@@ -1,6 +1,6 @@
 ﻿---
 title: Combine une plage de Cells en une seule cellule
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Fusionner
 type: docs
 url: /fr/ranges/merge/
@@ -8,7 +8,7 @@ aliases: [/combines-a-range-of-cells-into-a-single-cell/]
 keywords: Merge a range of cells into a single cell
 description: Aspose.Cells Cloud REST API prend en charge la fusion d'une plage de cellules en une seule dans une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 20
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Combine une plage de Cells en une seule cellule
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Combine une plage de Cells en une seule cellule
 ---
 Ce REST API indique de fusionner une plage de cellules en une seule cellule sur une feuille de calcul Excel.
 
@@ -20,7 +20,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/mer
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

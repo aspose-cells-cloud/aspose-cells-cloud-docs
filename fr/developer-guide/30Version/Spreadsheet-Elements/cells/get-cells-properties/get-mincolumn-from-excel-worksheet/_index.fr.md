@@ -3,7 +3,7 @@ title: Obtenez MinColumn à partir de la feuille de calcul Excel
 type: docs
 url: /fr/get-mincolumn-from-excel-worksheet/
 weight: 100
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Obtenir la colonne minimale à partir de la feuille de calcul Excel
+kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Obtenir la colonne minimale de la feuille de calcul Excel
 ---
 Ce REST API indique que les émissions obtiennent un `mincolumn` dans un fichier Excel lorsque le paramètre `cellOrMethodName` est `mincolumn`.
 

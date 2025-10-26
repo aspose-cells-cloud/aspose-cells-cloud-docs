@@ -1,6 +1,8 @@
 ﻿---
-title: Quickstar
-second_title: Aspose.Cells Cloud Documen
+title: "Aspose.Cells Cloud-Schnellstart: Erstellen Sie eine Tabellenkalkulationsanwendung in 5 Minuten"
+second_title: Documen
+ArticleTitle: Aspose.Cells Cloud Quickstar
+linktitle: Quickstar
 type: docs
 url: /de/quickstart/
 description: Aspose.Cells Cloud unterstützt Excel zum Erstellen, Konvertieren, Zusammenführen, Teilen, Schützen, für innere Objektoperationen usw.
@@ -41,9 +43,9 @@ Als nächstes müssen Sie individuelle Anpassungen an Ihrem Konto vornehmen:
 
 ## Holen Sie sich Ihre Sicherheitsanmeldeinformationen (Client-ID und -Geheimnis)
 
-Aspose legt großen Wert auf Sicherheit. Wir verwenden das JWT-Token für die Authentifizierung und eine Ende-zu-Ende-HTTPS-Verschlüsselung, um alle Client-Server-Interaktionen zu sichern.
+Aspose legt großen Wert auf Sicherheitsaspekte. Wir verwenden das JWT-Token für die Authentifizierung und eine Ende-zu-Ende-HTTPS-Verschlüsselung, um alle Client-Server-Interaktionen zu sichern.
 
- Eine Anwendung ist ein Satz eindeutiger API-Anmeldeinformationen –**Client-ID** Und**Client-Geheimnis** Sie können sie zur Authentifizierung verwenden, wenn Sie unsere Cloud API anrufen. In den meisten Fällen benötigen Sie nur eine einzige Anwendung. In einigen fortgeschrittenen Szenarien möchten Sie möglicherweise mehrere Anwendungen mit separaten**Client-ID und -Geheimnis** Anmeldeinformationen.
+ Eine Anwendung ist ein Satz eindeutiger API-Anmeldeinformationen –**Client-ID** Und**Client-Geheimnis** . Sie können sie zur Authentifizierung verwenden, wenn Sie unsere Cloud API anrufen. In den meisten Fällen benötigen Sie nur eine einzige Anwendung. In einigen fortgeschrittenen Szenarien möchten Sie möglicherweise mehrere Anwendungen mit separaten**Client-ID und -Geheimnis** Anmeldeinformationen.
 
 Um auf Informationen zu Ihren Anwendungen zuzugreifen, führen Sie bitte die folgenden Schritte aus:
 
@@ -74,13 +76,13 @@ Herzlichen Glückwunsch! Sie haben Ihre Sicherheitsanmeldeinformationen zur Auth
 
  Bitte nehmen Sie sich einen Moment Zeit, um sich mit einer breiten Palette von Aspose.Cells Cloud-Produkten vertraut zu machen, um Ihre Möglichkeiten besser zu verstehen. Diese Softwareprodukte basieren auf einem leistungsstarken[Cloud API](https://apireference.aspose.com/), rund um die Uhr verfügbar.
 
- Für die effektive Nutzung von Cloud API bieten wir eine Familie leistungsstarker[Cloud-SDKs](https://products.aspose.cloud/cells/family) für fast alle gängigen Betriebssysteme (Windows, macOS, Linux, Android) und gängige Programmiersprachen, darunter[Android](https://products.aspose.cloud/cells/android), [C#](https://products.aspose.cloud/cells/net), [Python](https://products.aspose.cloud/cells/python), [Golang](https://products.aspose.cloud/cells/go), [Java](https://products.aspose.cloud/cells/java), [Node.js](https://products.aspose.cloud/cells/nodejs), [Perl](https://products.aspose.cloud/cells/perl), [PHP](https://products.aspose.cloud/cells/php), [Rubin](https://products.aspose.cloud/cells/ruby) , Und[Schnell](https://products.aspose.cloud/cells/swift).
+ Für die effektive Nutzung von Cloud API bieten wir eine Familie leistungsstarker[Cloud-SDKs](https://products.aspose.cloud/cells/family)für fast alle gängigen Betriebssysteme (Windows, macOS, Linux, Android) und gängige Programmiersprachen, darunter[Android](https://products.aspose.cloud/cells/android), [C#](https://products.aspose.cloud/cells/net), [Python](https://products.aspose.cloud/cells/python), [Golang](https://products.aspose.cloud/cells/go), [Java](https://products.aspose.cloud/cells/java), [Node.js](https://products.aspose.cloud/cells/nodejs), [Perl](https://products.aspose.cloud/cells/perl), [PHP](https://products.aspose.cloud/cells/php), [Rubin](https://products.aspose.cloud/cells/ruby) , Und[Schnell](https://products.aspose.cloud/cells/swift).
 
  Alle oben genannten SDKs werden gehostet auf[GitHub](https://github.com/aspose-cells-cloud/). Jedes Repository enthält eine große Auswahl an Codebeispielen zur Veranschaulichung seiner Verwendung.
 
 ## Sehen Sie sich die Entwicklerdokumentation und Codebeispiele an
 
-Ihr Konto ist nun vollständig konfiguriert und die Entwicklerumgebung installiert. Sie können mit dem ausgewählten SDK Code schreiben. Weitere Informationen finden Sie im[Entwicklerhandbuch](https://docs.aspose.cloud/cells/developer-guide/) Informationen zur einfachen Nutzung der Cloud erhalten Sie unter API.
+ Ihr Konto ist nun vollständig konfiguriert und die Entwicklerumgebung installiert. Sie können mit dem ausgewählten SDK Code schreiben. Weitere Informationen finden Sie im[Entwicklerhandbuch](https://docs.aspose.cloud/cells/developer-guide/) Informationen zur einfachen Nutzung der Cloud erhalten Sie unter API.
 
 zB Konvertieren Sie eine Arbeitsmappe in andere Formate.
 

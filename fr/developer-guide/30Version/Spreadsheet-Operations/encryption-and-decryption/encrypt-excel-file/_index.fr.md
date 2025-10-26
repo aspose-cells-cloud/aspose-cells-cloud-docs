@@ -1,6 +1,6 @@
 ﻿---
 title: Crypter un classeur Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Crypter un fichier Excel
 type: docs
 url: /fr/excel-file-encrypt/
@@ -8,7 +8,7 @@ aliases: [/encrypt-excel-workbooks/,/workbook/encrypt/]
 keywords: Encrypt Excel workbook
 description: Aspose.Cells Cloud REST API prend en charge le chiffrement du classeur Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 20
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Crypter un classeur Excel
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Crypter un classeur Excel
 ---
 Ce REST API crypte un Excel `workbook`.
 
@@ -29,7 +29,7 @@ Ce REST API crypte un Excel `workbook`.
 
 |Nom du paramètre|Taper|Description|
 |:- |:- |:- |
-|Type de cryptage|chaîne|XOR/Compatible/EnhancedCryptographicProviderV1/StrongCryptographicProvider|
+|Type de cryptage|chaîne|XOR/Compatible/Fournisseur cryptographique amélioré V1/Fournisseur cryptographique fort|
 |Longueur de clé|entier||
 |Mot de passe|chaîne||
 

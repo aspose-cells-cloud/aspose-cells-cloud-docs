@@ -1,6 +1,6 @@
 ﻿---
 title: Ajouter un champ pivot dans le tableau croisé dynamique
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ajouter un champ pivot
 type: docs
 url: /fr/pivot-tables/add-pivot-field/
@@ -19,7 +19,7 @@ Ce REST API indique le champ pivot `add` dans le tableau croisé dynamique
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotField
  
 ```
- Les paramètres de la requête sont :
+ Les paramètres de la requête sont :
  
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

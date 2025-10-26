@@ -1,6 +1,6 @@
 ﻿---
 title: Opción Convertir libro de trabajo
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Opción Convertir libro de trabajo
 type: docs
 url: /es/convert-workbook-options/
@@ -13,12 +13,12 @@ kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, JSON, Markdown
 
 Nombre | Tipo | Descripción | Notas
 ------------ | ------------- | ------------- | -------------
-**Fuente de datos** | **Objeto** | Fuente del archivo de datos: CloudFileSystem, RequestFiles, HttpUri. |
+**Fuente de datos** | **Objeto** Fuente del archivo de datos: CloudFileSystem, RequestFiles, HttpUri. |
 **[Información del archivo](/celdas/información-del-archivo/)** | **Objeto** | Descripción de la información del archivo. Incluye nombre de archivo, tamaño de archivo y contenido del archivo (cadena base64). |
 **[Configuración de página](/celdas/configuración-de-página/)** | **Objeto** | Propiedades de configuración de página. |
-**Opciones de guardado** | **Objeto** Opciones de guardado: DbfSaveOptions, DifSaveOptions, DocxSaveOptions, HtmlSaveOptions, XlsSaveOptions, XlsxSaveOptions, XpsSaveOptions, PngSaveOptions, JpgSaveOptions, GifSaveOptions, EmfSaveOptions, BmpSaveOptions, MdSaveOptions, NumbersSaveOptions, WmfSaveOptions, SvgSaveOptions, TxtSaveOptions, TifSaveOptions, XlsbSaveOptions |
-**Convertir formato** | **cadena** | El formato de archivo: csv, xls, html, mhtml, ods, pdf, xml, txt, tiff, xlsb, xlsm, xlsx, xltm, xltx, xps, png, jpg, gif, emf, bmp, md, Numbers, wmf, SVG, etc. |
-**Comprobar restricción de Excel** | **booleano** | Obtiene y establece el tipo de texto ajustado automáticamente.
+**Opciones de guardado** | **Objeto** | Opciones de guardado: DbfSaveOptions, DifSaveOptions, DocxSaveOptions, HtmlSaveOptions, XlsSaveOptions, XlsxSaveOptions, XpsSaveOptions, PngSaveOptions, JpgSaveOptions, GifSaveOptions, EmfSaveOptions, BmpSaveOptions, MdSaveOptions, NumbersSaveOptions, WmfSaveOptions, SvgSaveOptions, TxtSaveOptions, TifSaveOptions, XlsbSaveOptions |
+**Convertir formato** | **cadena** | El formato de archivo: csv, xls, html, mhtml, ods, pdf, xml, txt, tiff, xlsb, xlsm, xlsx, xltm, xltx, xps, png, jpg, gif, emf, bmp, md, Numbers, wmf, svg, etc. |
+**Comprobar restricción de Excel** | **booleano** | Obtiene y establece el tipo de texto ajustado automáticamente. |
 
 ## **Propiedades de fileSource**
 
@@ -40,8 +40,8 @@ Nombre | Tipo | Descripción | Notas
 |Actualizar caché de gráficos|Booleano|verdadero| FALSO|||
 |Nombres de clasificación|Booleano|verdadero| FALSO|||
 |ValidarÁreasFusionadas|Booleano|verdadero| FALSO|||
-|Fusionar áreas|Booleano|verdadero| FALSO|||
-|OrdenarNombresExternos|Booleano|verdadero| FALSO|||
+|Áreas de fusión|Booleano|verdadero| FALSO|||
+|Ordenar nombres externos|Booleano|verdadero| FALSO|||
 |Comprobar restricción de Excel|Booleano|verdadero| FALSO|||
 |ActualizarSmartArt|Booleano|verdadero| FALSO|||
 |Propiedades del documento cifrado|Booleano|verdadero| FALSO|||
@@ -58,8 +58,8 @@ Nombre | Tipo | Descripción | Notas
 |Actualizar caché de gráficos|Booleano|verdadero| FALSO|||
 |Nombres de clasificación|Booleano|verdadero| FALSO|||
 |ValidarÁreasFusionadas|Booleano|verdadero| FALSO|||
-|Fusionar áreas|Booleano|verdadero| FALSO|||
-|OrdenarNombresExternos|Booleano|verdadero| FALSO|||
+|Áreas de fusión|Booleano|verdadero| FALSO|||
+|Ordenar nombres externos|Booleano|verdadero| FALSO|||
 |Comprobar restricción de Excel|Booleano|verdadero| FALSO|||
 |ActualizarSmartArt|Booleano|verdadero| FALSO|||
 |Propiedades del documento cifrado|Booleano|verdadero| FALSO|||
@@ -83,8 +83,8 @@ Nombre | Tipo | Descripción | Notas
 |TextoCrossType|Cadena|verdadero| FALSO|||
 |Idioma de edición predeterminado|Cadena|verdadero| FALSO|||
 |Configuración de renderizado de Emf|Cadena|verdadero| FALSO|||
-|Fusionar áreas|Booleano|verdadero| FALSO|||
-|OrdenarNombresExternos|Booleano|verdadero| FALSO|||
+|Áreas de fusión|Booleano|verdadero| FALSO|||
+|Ordenar nombres externos|Booleano|verdadero| FALSO|||
 |ActualizarSmartArt|Booleano|verdadero| FALSO|||
 |Guardar formato|Cadena|verdadero| FALSO|||
 |Carpeta de archivos en caché|Cadena|verdadero| FALSO|||
@@ -103,18 +103,18 @@ Nombre | Tipo | Descripción | Notas
 |:- |:- |:- |:- |:- |:- |
 |Exportar encabezados de página|Booleano|verdadero| FALSO|||
 |Exportar pies de página|Booleano|verdadero| FALSO|||
-|ExportarEncabezadosDeColumnaDeFila|Booleano|verdadero| FALSO|||
+|Exportar encabezados de fila y columna|Booleano|verdadero| FALSO|||
 |Mostrar todas las hojas|Booleano|verdadero| FALSO|||
 |Opciones de imagen|Clase|verdadero| FALSO|||
 |Guardar como archivo único|Booleano|verdadero| FALSO|||
-|ExportHiddenWorksheet|Booleano|verdadero| FALSO|||
+|Exportar hoja de trabajo oculta|Booleano|verdadero| FALSO|||
 |Exportar líneas de cuadrícula|Booleano|verdadero| FALSO|||
 |Preferencia de presentación|Booleano|verdadero| FALSO|||
 |PrefijoCellCss|Cadena|verdadero| FALSO|||
 |ID de CSS de tabla|Cadena|verdadero| FALSO|||
 |IsFullPathLink|Booleano|verdadero| FALSO|||
 |Exportar hoja de trabajo CSS por separado|Booleano|verdadero| FALSO|||
-|ExportSimilarBorderStyle|Booleano|verdadero| FALSO|||
+|Exportar estilo de borde similar|Booleano|verdadero| FALSO|||
 |FusionarVacíoTdForzadamente|Booleano|verdadero| FALSO|||
 |Exportar coordenadas de celda|Booleano|verdadero| FALSO|||
 |Exportar encabezados adicionales|Booleano|verdadero| FALSO|||
@@ -123,9 +123,9 @@ Nombre | Tipo | Descripción | Notas
 |Agregar texto de información sobre herramientas|Booleano|verdadero| FALSO|||
 |Exportar datos de filas falsas|Booleano|verdadero| FALSO|||
 |Excluir estilos no utilizados|Booleano|verdadero| FALSO|||
-|Propiedades del documento de exportación|Booleano|verdadero| FALSO|||
-|ExportWorksheetProperties|Booleano|verdadero| FALSO|||
-|ExportarPropiedadesdelLibroDeTrabajo|Booleano|verdadero| FALSO|||
+|ExportarPropiedadesDeDocumento|Booleano|verdadero| FALSO|||
+|ExportarPropiedadesDeLaHojaDeTrabajo|Booleano|verdadero| FALSO|||
+|ExportarPropiedades del Libro de Trabajo|Booleano|verdadero| FALSO|||
 |Exportar scripts y propiedades de marcos|Booleano|verdadero| FALSO|||
 |Directorio de archivos adjuntos|Cadena|verdadero| FALSO|||
 |Prefijo de URL de archivos adjuntos|Cadena|verdadero| FALSO|||
@@ -148,8 +148,8 @@ Nombre | Tipo | Descripción | Notas
 |Actualizar caché de gráficos|Booleano|verdadero| FALSO|||
 |Nombres de clasificación|Booleano|verdadero| FALSO|||
 |ValidarÁreasFusionadas|Booleano|verdadero| FALSO|||
-|Fusionar áreas|Booleano|verdadero| FALSO|||
-|OrdenarNombresExternos|Booleano|verdadero| FALSO|||
+|Áreas de fusión|Booleano|verdadero| FALSO|||
+|Ordenar nombres externos|Booleano|verdadero| FALSO|||
 |Comprobar restricción de Excel|Booleano|verdadero| FALSO|||
 |ActualizarSmartArt|Booleano|verdadero| FALSO|||
 |Propiedades del documento cifrado|Booleano|verdadero| FALSO|||
@@ -158,7 +158,7 @@ Nombre | Tipo | Descripción | Notas
 
 | Nombre de la propiedad| Tipo de propiedad| Nullable| Sólo lectura| Valor predeterminado| Descripción|
 |:- |:- |:- |:- |:- |:- |
-|Tipo de imagen de gráfico|Cadena|verdadero| FALSO|||
+|Tipo de imagen del gráfico|Cadena|verdadero| FALSO|||
 |Nombre de imagen incrustada en SVG|Cadena|verdadero| FALSO|||
 |Resolución horizontal|Entero|verdadero| FALSO|||
 |Formato de imagen|Cadena|verdadero| FALSO|||
@@ -168,7 +168,7 @@ Nombre | Tipo | Descripción | Notas
 |Página de impresión|Cadena|verdadero| FALSO|||
 |Cuadro de diálogo Imprimir con estado|Booleano|verdadero| FALSO|||
 |Calidad|Entero|verdadero| FALSO|||
-|TiffCompression|Cadena|verdadero| FALSO|||
+|TiffCompresión|Cadena|verdadero| FALSO|||
 |Resolución vertical|Entero|verdadero| FALSO|||
 |Guardar formato|Cadena|verdadero| FALSO|||
 |Carpeta de archivos en caché|Cadena|verdadero| FALSO|||
@@ -178,8 +178,8 @@ Nombre | Tipo | Descripción | Notas
 |Actualizar caché de gráficos|Booleano|verdadero| FALSO|||
 |Nombres de clasificación|Booleano|verdadero| FALSO|||
 |ValidarÁreasFusionadas|Booleano|verdadero| FALSO|||
-|Fusionar áreas|Booleano|verdadero| FALSO|||
-|OrdenarNombresExternos|Booleano|verdadero| FALSO|||
+|Áreas de fusión|Booleano|verdadero| FALSO|||
+|Ordenar nombres externos|Booleano|verdadero| FALSO|||
 |Comprobar restricción de Excel|Booleano|verdadero| FALSO|||
 |ActualizarSmartArt|Booleano|verdadero| FALSO|||
 |Propiedades del documento cifrado|Booleano|verdadero| FALSO|||
@@ -200,8 +200,8 @@ Nombre | Tipo | Descripción | Notas
 |Actualizar caché de gráficos|Booleano|verdadero| FALSO|||
 |Nombres de clasificación|Booleano|verdadero| FALSO|||
 |ValidarÁreasFusionadas|Booleano|verdadero| FALSO|||
-|Fusionar áreas|Booleano|verdadero| FALSO|||
-|OrdenarNombresExternos|Booleano|verdadero| FALSO|||
+|Áreas de fusión|Booleano|verdadero| FALSO|||
+|Ordenar nombres externos|Booleano|verdadero| FALSO|||
 |Comprobar restricción de Excel|Booleano|verdadero| FALSO|||
 |ActualizarSmartArt|Booleano|verdadero| FALSO|||
 |Propiedades del documento cifrado|Booleano|verdadero| FALSO|||
@@ -221,8 +221,8 @@ Nombre | Tipo | Descripción | Notas
 |Actualizar caché de gráficos|Booleano|verdadero| FALSO|||
 |Nombres de clasificación|Booleano|verdadero| FALSO|||
 |ValidarÁreasFusionadas|Booleano|verdadero| FALSO|||
-|Fusionar áreas|Booleano|verdadero| FALSO|||
-|OrdenarNombresExternos|Booleano|verdadero| FALSO|||
+|Áreas de fusión|Booleano|verdadero| FALSO|||
+|Ordenar nombres externos|Booleano|verdadero| FALSO|||
 |Comprobar restricción de Excel|Booleano|verdadero| FALSO|||
 |ActualizarSmartArt|Booleano|verdadero| FALSO|||
 |Propiedades del documento cifrado|Booleano|verdadero| FALSO|||
@@ -234,7 +234,7 @@ Nombre | Tipo | Descripción | Notas
 |ExportCellName|Booleano|verdadero| FALSO|||
 |ActualizarZoom|Booleano|verdadero| FALSO|||
 |HabilitarZip64|Booleano|verdadero| FALSO|||
-|IncrustarOoxmlAsOleObject|Booleano|verdadero| FALSO|||
+|Incrustar OoxmlAsOleObject|Booleano|verdadero| FALSO|||
 |Tipo de compresión|Cadena|verdadero| FALSO|||
 |Guardar formato|Cadena|verdadero| FALSO|||
 |Carpeta de archivos en caché|Cadena|verdadero| FALSO|||
@@ -244,8 +244,8 @@ Nombre | Tipo | Descripción | Notas
 |Actualizar caché de gráficos|Booleano|verdadero| FALSO|||
 |Nombres de clasificación|Booleano|verdadero| FALSO|||
 |ValidarÁreasFusionadas|Booleano|verdadero| FALSO|||
-|Fusionar áreas|Booleano|verdadero| FALSO|||
-|OrdenarNombresExternos|Booleano|verdadero| FALSO|||
+|Áreas de fusión|Booleano|verdadero| FALSO|||
+|Ordenar nombres externos|Booleano|verdadero| FALSO|||
 |Comprobar restricción de Excel|Booleano|verdadero| FALSO|||
 |ActualizarSmartArt|Booleano|verdadero| FALSO|||
 |Propiedades del documento cifrado|Booleano|verdadero| FALSO|||
@@ -264,8 +264,8 @@ Nombre | Tipo | Descripción | Notas
 |Actualizar caché de gráficos|Booleano|verdadero| FALSO|||
 |Nombres de clasificación|Booleano|verdadero| FALSO|||
 |ValidarÁreasFusionadas|Booleano|verdadero| FALSO|||
-|Fusionar áreas|Booleano|verdadero| FALSO|||
-|OrdenarNombresExternos|Booleano|verdadero| FALSO|||
+|Áreas de fusión|Booleano|verdadero| FALSO|||
+|Ordenar nombres externos|Booleano|verdadero| FALSO|||
 |Comprobar restricción de Excel|Booleano|verdadero| FALSO|||
 |ActualizarSmartArt|Booleano|verdadero| FALSO|||
 |Propiedades del documento cifrado|Booleano|verdadero| FALSO|||
@@ -301,8 +301,8 @@ Nombre | Tipo | Descripción | Notas
 |Actualizar caché de gráficos|Booleano|verdadero| FALSO|||
 |Nombres de clasificación|Booleano|verdadero| FALSO|||
 |ValidarÁreasFusionadas|Booleano|verdadero| FALSO|||
-|Fusionar áreas|Booleano|verdadero| FALSO|||
-|OrdenarNombresExternos|Booleano|verdadero| FALSO|||
+|Áreas de fusión|Booleano|verdadero| FALSO|||
+|Ordenar nombres externos|Booleano|verdadero| FALSO|||
 |Comprobar restricción de Excel|Booleano|verdadero| FALSO|||
 |ActualizarSmartArt|Booleano|verdadero| FALSO|||
 |Propiedades del documento cifrado|Booleano|verdadero| FALSO|||
@@ -329,8 +329,8 @@ Nombre | Tipo | Descripción | Notas
 |TextoCrossType|Cadena|verdadero| FALSO|||
 |Idioma de edición predeterminado|Cadena|verdadero| FALSO|||
 |Configuración de renderizado de Emf|Cadena|verdadero| FALSO|||
-|Fusionar áreas|Booleano|verdadero| FALSO|||
-|OrdenarNombresExternos|Booleano|verdadero| FALSO|||
+|Áreas de fusión|Booleano|verdadero| FALSO|||
+|Ordenar nombres externos|Booleano|verdadero| FALSO|||
 |ActualizarSmartArt|Booleano|verdadero| FALSO|||
 |Guardar formato|Cadena|verdadero| FALSO|||
 |Carpeta de archivos en caché|Cadena|verdadero| FALSO|||
@@ -369,8 +369,8 @@ Nombre | Tipo | Descripción | Notas
 |Actualizar caché de gráficos|Booleano|verdadero| FALSO|||
 |Nombres de clasificación|Booleano|verdadero| FALSO|||
 |ValidarÁreasFusionadas|Booleano|verdadero| FALSO|||
-|Fusionar áreas|Booleano|verdadero| FALSO|||
-|OrdenarNombresExternos|Booleano|verdadero| FALSO|||
+|Áreas de fusión|Booleano|verdadero| FALSO|||
+|Ordenar nombres externos|Booleano|verdadero| FALSO|||
 |Comprobar restricción de Excel|Booleano|verdadero| FALSO|||
 |ActualizarSmartArt|Booleano|verdadero| FALSO|||
 |Propiedades del documento cifrado|Booleano|verdadero| FALSO|||
@@ -380,7 +380,7 @@ Nombre | Tipo | Descripción | Notas
 | Nombre de la propiedad| Tipo de propiedad| Nullable| Sólo lectura| Valor predeterminado| Descripción|
 |:- |:- |:- |:- |:- |:- |
 |Índice de hoja|Entero|verdadero| FALSO|||
-|Tipo de imagen de gráfico|Cadena|verdadero| FALSO|||
+|Tipo de imagen del gráfico|Cadena|verdadero| FALSO|||
 |Nombre de imagen incrustada en SVG|Cadena|verdadero| FALSO|||
 |Resolución horizontal|Entero|verdadero| FALSO|||
 |Formato de imagen|Cadena|verdadero| FALSO|||
@@ -390,7 +390,7 @@ Nombre | Tipo | Descripción | Notas
 |Página de impresión|Cadena|verdadero| FALSO|||
 |Cuadro de diálogo Imprimir con estado|Booleano|verdadero| FALSO|||
 |Calidad|Entero|verdadero| FALSO|||
-|TiffCompression|Cadena|verdadero| FALSO|||
+|TiffCompresión|Cadena|verdadero| FALSO|||
 |Resolución vertical|Entero|verdadero| FALSO|||
 |Guardar formato|Cadena|verdadero| FALSO|||
 |Carpeta de archivos en caché|Cadena|verdadero| FALSO|||
@@ -400,8 +400,8 @@ Nombre | Tipo | Descripción | Notas
 |Actualizar caché de gráficos|Booleano|verdadero| FALSO|||
 |Nombres de clasificación|Booleano|verdadero| FALSO|||
 |ValidarÁreasFusionadas|Booleano|verdadero| FALSO|||
-|Fusionar áreas|Booleano|verdadero| FALSO|||
-|OrdenarNombresExternos|Booleano|verdadero| FALSO|||
+|Áreas de fusión|Booleano|verdadero| FALSO|||
+|Ordenar nombres externos|Booleano|verdadero| FALSO|||
 |Comprobar restricción de Excel|Booleano|verdadero| FALSO|||
 |ActualizarSmartArt|Booleano|verdadero| FALSO|||
 |Propiedades del documento cifrado|Booleano|verdadero| FALSO|||
@@ -412,7 +412,7 @@ Nombre | Tipo | Descripción | Notas
 |:- |:- |:- |:- |:- |:- |
 |Tipo de cotización|Cadena|verdadero| FALSO|||
 |Separador|Cadena|verdadero| FALSO|||
-|SeparadorString|Cadena|verdadero| FALSO|||
+|Cadena separadora|Cadena|verdadero| FALSO|||
 |Siempre citado|Booleano|verdadero| FALSO|||
 |Guardar formato|Cadena|verdadero| FALSO|||
 |Carpeta de archivos en caché|Cadena|verdadero| FALSO|||
@@ -422,8 +422,8 @@ Nombre | Tipo | Descripción | Notas
 |Actualizar caché de gráficos|Booleano|verdadero| FALSO|||
 |Nombres de clasificación|Booleano|verdadero| FALSO|||
 |ValidarÁreasFusionadas|Booleano|verdadero| FALSO|||
-|Fusionar áreas|Booleano|verdadero| FALSO|||
-|OrdenarNombresExternos|Booleano|verdadero| FALSO|||
+|Áreas de fusión|Booleano|verdadero| FALSO|||
+|Ordenar nombres externos|Booleano|verdadero| FALSO|||
 |Comprobar restricción de Excel|Booleano|verdadero| FALSO|||
 |ActualizarSmartArt|Booleano|verdadero| FALSO|||
 |Propiedades del documento cifrado|Booleano|verdadero| FALSO|||
@@ -442,8 +442,8 @@ Nombre | Tipo | Descripción | Notas
 |Actualizar caché de gráficos|Booleano|verdadero| FALSO|||
 |Nombres de clasificación|Booleano|verdadero| FALSO|||
 |ValidarÁreasFusionadas|Booleano|verdadero| FALSO|||
-|Fusionar áreas|Booleano|verdadero| FALSO|||
-|OrdenarNombresExternos|Booleano|verdadero| FALSO|||
+|Áreas de fusión|Booleano|verdadero| FALSO|||
+|Ordenar nombres externos|Booleano|verdadero| FALSO|||
 |Comprobar restricción de Excel|Booleano|verdadero| FALSO|||
 |ActualizarSmartArt|Booleano|verdadero| FALSO|||
 |Propiedades del documento cifrado|Booleano|verdadero| FALSO|||
@@ -452,7 +452,7 @@ Nombre | Tipo | Descripción | Notas
 
 | Nombre de la propiedad| Tipo de propiedad| Nullable| Sólo lectura| Valor predeterminado| Descripción|
 |:- |:- |:- |:- |:- |:- |
-|Índices de hoja|Formación|verdadero| FALSO|||
+|Índices de hojas|Formación|verdadero| FALSO|||
 |Área de exportación|Clase|verdadero| FALSO|||
 |TieneFilaDeEncabezado|Booleano|verdadero| FALSO|||
 |Nombre del mapa XML|Cadena|verdadero| FALSO|||
@@ -466,8 +466,8 @@ Nombre | Tipo | Descripción | Notas
 |Actualizar caché de gráficos|Booleano|verdadero| FALSO|||
 |Nombres de clasificación|Booleano|verdadero| FALSO|||
 |ValidarÁreasFusionadas|Booleano|verdadero| FALSO|||
-|Fusionar áreas|Booleano|verdadero| FALSO|||
-|OrdenarNombresExternos|Booleano|verdadero| FALSO|||
+|Áreas de fusión|Booleano|verdadero| FALSO|||
+|Ordenar nombres externos|Booleano|verdadero| FALSO|||
 |Comprobar restricción de Excel|Booleano|verdadero| FALSO|||
 |ActualizarSmartArt|Booleano|verdadero| FALSO|||
 |Propiedades del documento cifrado|Booleano|verdadero| FALSO|||
@@ -491,8 +491,8 @@ Nombre | Tipo | Descripción | Notas
 |TextoCrossType|Cadena|verdadero| FALSO|||
 |Idioma de edición predeterminado|Cadena|verdadero| FALSO|||
 |Configuración de renderizado de Emf|Cadena|verdadero| FALSO|||
-|Fusionar áreas|Booleano|verdadero| FALSO|||
-|OrdenarNombresExternos|Booleano|verdadero| FALSO|||
+|Áreas de fusión|Booleano|verdadero| FALSO|||
+|Ordenar nombres externos|Booleano|verdadero| FALSO|||
 |ActualizarSmartArt|Booleano|verdadero| FALSO|||
 |Guardar formato|Cadena|verdadero| FALSO|||
 |Carpeta de archivos en caché|Cadena|verdadero| FALSO|||

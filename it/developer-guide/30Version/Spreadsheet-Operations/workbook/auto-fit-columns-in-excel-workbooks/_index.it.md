@@ -1,6 +1,6 @@
 ﻿---
 title: Adatta automaticamente le colonne su un file Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Colonna
 type: docs
 url: /it/autofit-columns-on-an-excel-file/

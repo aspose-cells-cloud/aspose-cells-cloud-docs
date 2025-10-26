@@ -1,6 +1,6 @@
 ﻿---
 title: Importer des données Json dans Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Importer Jso
 type: docs
 url: /fr/import-json-data-into-excel/
@@ -22,7 +22,7 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/importjson
 
 Les paramètres importants sont décrits dans le tableau suivant :
 
-**ImportStringArrayOption**
+**Importer une option de tableau de chaînes**
 
 |Nom du paramètre| Chemin/Chaîne de requête/Corps HTTP|Taper|Description|
 |:- |:- |:- |:- |
@@ -32,8 +32,8 @@ Les paramètres importants sont décrits dans le tableau suivant :
 | dossier| Chaîne de requête| chaîne| Classeur original.|
 | nom de stockage| Chaîne de requête| chaîne| Nom de stockage.|
 | chemin de sortie| Chaîne de requête| chaîne| Chemin du fichier de sortie.|
-| outStorageName| Chaîne de requête| chaîne| Nom de stockage pour le fichier de sortie.|
-| checkExcelRestriction| Chaîne de requête| chaîne| Vérifiez la restriction Excel.|
+|outStorageName| Chaîne de requête| chaîne| Nom de stockage pour le fichier de sortie.|
+| vérifierExcelRestriction| Chaîne de requête| chaîne| Vérifiez la restriction Excel.|
 
 **Exemple**
 

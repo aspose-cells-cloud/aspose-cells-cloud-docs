@@ -1,6 +1,6 @@
 ﻿---
 title: Arbeiten mit dem Löschen von Zeilen in einem Arbeitsblatt Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Löschen
 type: docs
 url: /de/rows/delete/

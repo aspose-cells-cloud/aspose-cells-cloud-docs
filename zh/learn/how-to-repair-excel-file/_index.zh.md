@@ -13,11 +13,11 @@ Aspose.Cells Cloud API 是一款强大的云端解决方案，专为创建、编
 
 ## 概述
 
-Aspose.Cells 云 API 提供强大的 API 功能，可用于修复 Excel 或其他电子表格文件。利用 Aspose.Cells 云 API，您可以轻松修复 Excel 或其他电子表格文件，满足各种需求。
+Aspose.Cells 云 API 提供了强大的 API 功能，可用于修复 Excel 或其他电子表格文件。利用 Aspose.Cells 云 API，您可以轻松修复 Excel 或其他电子表格文件，满足各种需求。
 
 API 可用于文件修复，通常兼容各种在线环境。以下是 API 的详细说明：
 
-- **[修复 Excel 或其他电子表格文件。]（https://reference.aspose.cloud/cells/#/LightCells/PostRepair）** 。有关如何拨打此 API 的指导，请参阅[开发指南](https://docs.aspose.cloud/cells/repair/).
+- **[修复 Excel 或其他电子表格文件。](https://reference.aspose.cloud/cells/#/LightCells/PostRepair)** 。有关如何拨打此电话 API 的指导，请参阅[开发指南](https://docs.aspose.cloud/cells/repair/).
 
 # 如何通过 Aspose.Cells 云修复 Excel 或其他电子表格
 
@@ -25,14 +25,14 @@ Aspose.Cells 云 API 提供[多个 SDK](https://github.com/aspose-cells-cloud)�
 
 ## 注册并获取API密钥
 
-在开始之前，您需要[注册Aspose云账户](https://id.containerize.com/signup)和[获取 API 密钥进行身份验证](https://dashboard.aspose.cloud/applications)通过登录Aspose云官方网站，您可以创建一个免费帐户并获得一个API密钥用于身份验证。
+在开始之前，您需要[注册 Aspose 云账户](https://id.containerize.com/signup)和[获取 API 密钥进行身份验证](https://dashboard.aspose.cloud/applications)通过登录Aspose云官方网站，您可以创建一个免费帐户并获得一个API密钥用于身份验证。
 
-更深入的操作请参考以下文档：[Cells Cloud 快速入门](https://docs.aspose.cloud/cells/quickstart/)
+更深入的操作请参考以下文档：[Cells 云快速入门](https://docs.aspose.cloud/cells/quickstart/)
 
 ## 安装并初始化 Aspose.Cells Cloud SDK
 
 在您的 .NET 项目中安装 Aspose.Cells-Cloud NuGet 包，您可以使用 NuGet 包管理器控制台或 Visual Studio 中的 NuGet 包管理器。
-以下是使用程序包管理器控制台安装程序包的方法：
+以下是使用软件包管理器控制台安装软件包的方法：
 
 ```Powershell
 
@@ -52,7 +52,7 @@ CellsApi cellsInstance = new CellsApi(clientID, clientSecret);
 
 ## 构建 API 请求并调用 API
 
-这将创建一个 PostRepairRequest 的新实例，并使用所需的文件格式和文件进行初始化。然后，它会使用此修复请求调用修复函数 API。修复函数也支持扩展查询参数。以下是上述代码片段的详细信息：
+这将创建一个 PostRepairRequest 的新实例，并使用所需的文件格式和文件进行初始化。然后，它会使用此修复请求调用 repair API 函数。repaired 函数也支持扩展查询参数。以下是上述代码片段的详细信息：
 
 ```CSharp
 
@@ -69,6 +69,6 @@ CellsApi cellsInstance = new CellsApi(clientID, clientSecret);
 
 使用 Aspose.Cells Cloud API，您可以轻松修复 Excel 或其他电子表格文件。只需调用简单的 API 并设置合适的修复选项，即可高效地满足各种文件修复需求。将 Aspose.Cells Cloud API 集成到您的应用程序中，可以提高生产力并节省开发时间。
 
-请注意，以上示例代码仅供演示之用，实际使用时需要将其替换为有效的身份验证凭据和文件路径。此外，Aspose.Cells Cloud API 还提供许多其他功能，例如电子表格的创建、编辑、操作和数据处理。详细的 API 文档和示例代码可在[Aspose 官方网站的开发者指南](/developer-guide/).
+请注意，以上示例代码仅供演示之用，实际使用时需要将其替换为有效的身份验证凭据和文件路径。此外，Aspose.Cells Cloud API 还提供许多其他功能，例如电子表格的创建、编辑、操作和数据处理。详细的 API 文档和示例代码可在[Aspose 官方网站开发者指南](/developer-guide/).
 
 希望本文能帮助您了解如何使用 Aspose.Cells Cloud API 进行文件修复。祝您一切顺利！

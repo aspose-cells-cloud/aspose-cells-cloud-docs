@@ -9,7 +9,7 @@ kwords: Excel, Office Cloud, REST API, Hoja de cálculo, PDF, CSV, Json, Markdow
 ---
 ## Introducción
 
-Aspose.Cells Cloud Spreadsheet API ofrece un conjunto de interfaces de doble canal para convertir archivos de hojas de cálculo locales y en la nube. Admite formatos como Excel (XLS, XLSX), CSV, HTML y PDF, lo que facilita la conversión para satisfacer diversas necesidades.
+Aspose.Cells Hoja de Cálculo en la Nube API ofrece un conjunto de interfaces de doble canal para convertir archivos de hojas de cálculo locales y en la nube. Admite formatos como Excel (XLS, XLSX), CSV, HTML y PDF, lo que facilita la conversión para satisfacer diversas necesidades.
 
 ### Tres modos de conversión · Modelo de objetos unificado · Cobertura de formato completa
 
@@ -32,13 +32,13 @@ Aspose.Cells Cloud Spreadsheet API ofrece un conjunto de interfaces de doble can
 |||`ConvertRangeToCsv`             | Cvc|
 |||`ConvertRangeToHtml`            | HTML|
 |||`ConvertRangeToJson`            | JSON|
-||Cuadro|`ConvertChartToImage`           |PNG/JPEG/SVG/....              |
+|| Cuadro|`ConvertChartToImage`           |PNG/JPEG/SVG/....              |
 |||`ConvertChartToPdf`             |PDF                            |
 |**Conversión a la nube**  | Libro de trabajo|`ExportSpreadsheetAsFormat`     | PDF/XLSX/JSON/.... más de 30 formatos|
 || Hoja de trabajo|`ExportWorksheetAsFormat`       | PDF/XLSX/JSON/.... más de 30 formatos|
 || Mesa|`ExportTableAsFormat`           | PDF/XLSX/JSON/.... más de 30 formatos|
 || Rango|`ExportRangeAsFormat`           | PDF/XLSX/JSON/.... más de 30 formatos|
-||Cuadro|`ExportChartAsFormat`           | PDF/XLSX/JSON/.... más de 30 formatos|
+|| Cuadro|`ExportChartAsFormat`           | PDF/XLSX/JSON/.... más de 30 formatos|
 |**Guardar como en la nube**     | Libro de trabajo|`SaveSpreadsheetAs`             | PDF/XLSX/JSON/.... más de 30 formatos|
 
 ### **Conversión de archivos locales**
@@ -133,13 +133,13 @@ cellsApi.ExportWorksheetAsFormat (new SDK.Request.ExportWorksheetAsFormatRequest
 Instale el paquete Aspose.Cells-Cloud NuGet en su proyecto .NET, puede utilizar la consola del administrador de paquetes NuGet o el administrador de paquetes NuGet en Visual Studio.
 A continuación se explica cómo puede instalar el paquete utilizando la Consola del Administrador de paquetes:
 
-```Powershell
+```powershell
 
 Install-Package Aspose.Cells-Cloud
 
 ```
 
-Crea una nueva instancia de la clase CellsApi, inicializándola con su ID y clave secreta de cliente. A continuación, se detalla el fragmento de código mencionado:
+Crea una nueva instancia de la clase CellsApi y la inicializa con su ID y secreto de cliente. A continuación, se detalla el fragmento de código mencionado:
 
 ```CSharp
 
@@ -151,7 +151,7 @@ Asegúrese de reemplazar SU_API_CLAVE, TUYA_APLICACIÓN_SID y TU_APLICACIÓN_CLA
 
 ## **Casos de uso de conversión de formatos de archivo**
 
- Aspose Cells La nube API ofrece un nivel empresarial**conversión de hojas de cálculo** Capacidades para escenarios empresariales críticos:
+ Aspose Cells La nube API ofrece nivel empresarial**conversión de hojas de cálculo** Capacidades para escenarios empresariales críticos:
 
 1. **Excel → PDF**  
  Genere informes listos para imprimir con formato conservado

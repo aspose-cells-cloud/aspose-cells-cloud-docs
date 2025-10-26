@@ -1,6 +1,6 @@
 ﻿---
 title: Erweiterte Konvertierung Excel Datei
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Erweiterte Konvertierung
 type: docs
 url: /de/advanced-convert-excel/

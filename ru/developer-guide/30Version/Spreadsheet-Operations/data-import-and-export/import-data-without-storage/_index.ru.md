@@ -1,6 +1,6 @@
 ﻿---
 title: Импорт данных без использования хранилища
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Импорт данных без хранения
 type: docs
 url: /ru/import/without-using-storage/ 

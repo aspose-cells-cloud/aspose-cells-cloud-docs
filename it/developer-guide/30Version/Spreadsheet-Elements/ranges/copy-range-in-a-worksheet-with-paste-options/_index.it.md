@@ -1,6 +1,6 @@
 ﻿---
 title: Copia intervallo in un foglio di lavoro con opzione Incolla
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Poliziotto
 type: docs
 url: /it/ranges/copy/

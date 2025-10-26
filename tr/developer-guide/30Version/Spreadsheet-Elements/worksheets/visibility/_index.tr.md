@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma sayfasında görünürlükle nasıl çalışılır
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Görünürlük
 type: docs
 url: /tr/worksheets/panes/

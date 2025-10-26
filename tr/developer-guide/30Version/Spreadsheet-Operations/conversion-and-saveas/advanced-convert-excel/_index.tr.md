@@ -1,6 +1,6 @@
 ﻿---
 title: Advanced Convert Excel fil
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Gelişmiş Dönüştürücü
 type: docs
 url: /tr/advanced-convert-excel/

@@ -1,6 +1,6 @@
 ﻿---
 title: إضافة معايير مخصصة في ورقة عمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: إضافة مرشح مخصص
 type: docs
 url: /ar/autofilter/add-custom-filter/ 

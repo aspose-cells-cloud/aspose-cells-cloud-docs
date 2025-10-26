@@ -1,13 +1,15 @@
 ﻿---
-title: Aspose.Cells Cloud SDK für Ne
-second_title: Aspose.Cells Cloud Documen
+title: "Aspose.Cells Cloud SDK für C#: Konvertieren, Zusammenführen, Teilen, Schützen, Suchen, Ersetzen und mehr"
+second_title: Documen
+ArticleTitle: "Aspose.Cells Cloud SDK for C#: Convert, merge, split, protect, search, replace, and more"
+linktitle: Aspose.Cells Cloud SDK für .Ne
 type: docs
 url: /de/available-sdks/aspose-cells-cloud-net/
-description: Aspose.Cells Cloud unterstützt Excel zum Erstellen, Konvertieren, Zusammenführen, Teilen, Schützen, für innere Objektoperationen usw.
+description: "Aspose.Cells Cloud SDK für .Net bietet echte plattformübergreifende Leistung: Ein Import bietet Windows, Linux- und macOS-Entwicklern die gleiche fließende API zum Erstellen, Konvertieren, Zusammenführen, Aufteilen, Schützen und Bearbeiten jedes Excel Objekts – keine Office Installation erforderlich und keine plattformspezifischen Anpassungen erforderlich"
 weight: 30
-kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Net
+kwords: REST SDK für .Net, Excel SDK für .Net, Cloud SDK für .Net, Unterstützung für Konvertieren, Zusammenführen, Aufteilen, Schützen, Suchen, Ersetzen und mehr
 ---
- Das SDK ist Open Source und steht unter der MIT-Lizenz. Sie können auf den Quellcode der Net-Bibliothek für Aspose.Cells Cloud zugreifen.[Hier](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet).
+Das SDK ist Open Source und steht unter der MIT-Lizenz. Sie können darauf zugreifen[der Net-Bibliotheks-Quellcode für Aspose.Cells Cloud](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet).
 
 # **So verwenden Sie die Net-Bibliothek der Aspose.Cells Cloud**
 

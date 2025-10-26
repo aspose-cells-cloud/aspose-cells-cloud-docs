@@ -1,6 +1,6 @@
 ﻿---
 title: Получите все фигуры на рабочем листе Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Get-al
 type: docs
 url: /ru/shapes/get-all/

@@ -1,6 +1,6 @@
 ﻿---
 title: Otomatik Montaj Seçeneği
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Otomatik Montaj Seçeneği
 type: docs
 url: /tr/auto-fitter-options/
@@ -17,7 +17,7 @@ Adı | Türü | Açıklama | Notlar
 **Gizliyi Yoksay** | **Boolean** | Gizli satırları/sütunları yok sayar. |
 **SadeceOto** | **Boolean** | Sadece yüksekliği özelleştirilmemiş satırlara uyup uymadığını belirtir. |
 **VarsayılanDilDüzenle** | **sicim** | Varsayılan düzenleme dilini alır veya ayarlar. |
-**MaksimumSatırYüksekliği** | **çift** | Satırları otomatik olarak sığdırırken maksimum satır yüksekliğini (Nokta biriminde) alır ve ayarlar. |
+**MaksimumSatırYüksekliği** | **çift** Satırları otomatik olarak sığdırırken maksimum satır yüksekliğini (Nokta biriminde) alır ve ayarlar. |
 **OtomatikSığdırılmışMetinTürü** | **sicim** | Otomatik olarak sarılan metnin türünü alır ve ayarlar. |
 **FormatStratejisi** | **sicim** | Biçimlendirilmiş stratejiyi alır ve ayarlar. |
 **ForRendering** | **sicim** | Sunum amacına uygun olup olmadığını gösterir. |

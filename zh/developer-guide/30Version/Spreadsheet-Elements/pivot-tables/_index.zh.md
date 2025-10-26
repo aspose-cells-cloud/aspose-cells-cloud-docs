@@ -1,6 +1,6 @@
 ﻿---
 title: 使用 Excel 数据透视表
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: 数据透视表
 type: docs
 url: /zh/pivottables/

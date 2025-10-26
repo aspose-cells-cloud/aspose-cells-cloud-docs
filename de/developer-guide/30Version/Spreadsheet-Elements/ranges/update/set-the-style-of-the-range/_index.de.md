@@ -1,6 +1,6 @@
 ﻿---
 title: Legen Sie den Stil des Rangs fest
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Stil festlegen
 type: docs
 url: /de/ranges/update/style/

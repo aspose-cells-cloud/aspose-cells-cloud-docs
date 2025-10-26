@@ -1,6 +1,6 @@
 ﻿---
 title: Hur man arbetar med bakgrund på ett Excel-arbetsblad
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Bakgrund
 type: docs
 url: /sv/worksheets/background/

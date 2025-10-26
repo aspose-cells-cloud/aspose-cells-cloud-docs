@@ -1,6 +1,6 @@
 ﻿---
 title: 使用 Excel 列
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: 柱子
 type: docs
 url: /zh/columns/

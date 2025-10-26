@@ -1,6 +1,6 @@
 ﻿---
 title: Convertire il foglio di lavoro in tipi di formato
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Converti foglio di lavoro
 type: docs
 url: /it/worksheets/conversion/

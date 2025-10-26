@@ -1,6 +1,6 @@
 ﻿---
 title: Konvertieren Sie ein OLE-Objekt in ein Bild in einem Excel-Arbeitsblatt
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Konvertierung
 type: docs
 url: /de/oleobjects/convert/

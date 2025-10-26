@@ -1,11 +1,13 @@
 ﻿---
-title: 储存
-second_title: Aspose.Cells Cloud Documen
+title: 如何设置Aspose.Cells Cloud Docker 容器存储的存储位置
+second_title: Documen
+ArticleTitle: Aspose.Cells Cloud Docker Container Storage Configuratio
+linktitle: 集装箱存储
 type: docs
 url: /zh/docker/storage/
-description: 如何设置 Aspose.Cells Cloud for Docker 的存储位置
+description: 如何设置 Aspose.Cells Cloud Docker 容器存储的存储位置
 weight: 30
-kwords: Excel, Office 云, REST API, 电子表格, PDF, CSV, Json, Markdown, 存储
+kwords: Excel 云 Docker 容器、自云 Docker 容器、REST Docker 容器、电子表格、PDF、CSV、Json、Markdown、Docker 镜像、运行 Docker 容器
 ---
 ## 默认存储配置 ##
 
@@ -48,7 +50,6 @@ kwords: Excel, Office 云, REST API, 电子表格, PDF, CSV, Json, Markdown, 存
 
 ## 默认位置 ##
 
-
 - **视窗**
 
 ```powershell
@@ -72,9 +73,10 @@ c:\app\storageResource.json
 
 ``` powershell
 
-docker run  -d  -v c:/data:c:/data  -p 47900:5000  -e LicensePublicKey=yourLicensePublicKey	 -e LicensePrivateKey=yourLicensePrivateKey	 -e storagesCredentialsFilePath=c:/data/storageResource.json --name asposecellscloud aspose/cells-cloud:ltsc2019.22.2.0
+docker run  -d  -v c:/data:c:/data  -p 47900:5000  -e LicensePublicKey=yourLicensePublicKey  -e LicensePrivateKey=yourLicensePrivateKey  -e storagesCredentialsFilePath=c:/data/storageResource.json --name asposecellscloud aspose/cells-cloud:ltsc2019.22.9.0
 
 ```
 
-**参考文档** : 
-  - [Docker 运行]( https://docs.docker.com/engine/reference/commandline/run/)
+**参考文献** :
+
+- [如何运行 Aspose.Cells Cloud Docker 容器。]( https://docs.aspose.cloud/cells/run-aspose-cells-cloud-docker-container/)

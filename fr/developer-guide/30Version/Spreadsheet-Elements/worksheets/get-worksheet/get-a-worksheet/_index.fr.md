@@ -1,7 +1,7 @@
 ﻿---
 title: Obtenir une feuille de travail à partir d'une feuille de travail Excel
-second_title: Aspose.Cells Cloud Documen
-linktitle: Fiche d'exercices
+second_title: Documen
+linktitle: Fiche de travail
 type: docs
 url: /fr/worksheets/get-worksheet/
 keywords: Get worksheet to different format from an Excel worksheet
@@ -21,7 +21,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

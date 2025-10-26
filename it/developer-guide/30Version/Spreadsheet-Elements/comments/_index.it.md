@@ -1,6 +1,6 @@
 ﻿---
 title: Lavorando con il commento Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Commento
 type: docs
 url: /it/comments/

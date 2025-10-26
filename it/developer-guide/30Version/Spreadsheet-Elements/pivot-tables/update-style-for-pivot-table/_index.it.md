@@ -1,6 +1,6 @@
 ﻿---
 title: Aggiorna lo stile per la tabella pivot
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Formatta tutto
 type: docs
 url: /it/pivot-tables/format-all/

@@ -1,6 +1,8 @@
 ﻿---
-title: Plan de precios
-second_title: Aspose.Cells Cloud Documen
+title: "Plan de precios en la nube Aspose.Cells: 150 llamadas gratuitas al API por mes, con un modelo de precios escalonado para exceder el uso"
+second_title: Documen
+ArticleTitle: Aspose.Cells Cloud Pricing Pla
+linktitle: Plan de precios
 type: docs
 url: /es/pricing-plan/
 description: Aspose.Cells Cloud admite Excel para crear, convertir, fusionar, dividir, proteger, realizar operaciones con objetos internos, etc.
@@ -29,27 +31,26 @@ Aspose crea software como servicio (SaaS) increíblemente fácil de usar que los
             <td style="border: none; padding: 10px;">$30</td>
         </tr>
         <tr>
-            <td style="border: none; padding: 10px;">Próximas llamadas 14000 API</td>
-            <td style="border: none; padding: 10px;">$0.090 / API Llamada</td>
+            <td style="border: none; padding: 10px;">Próximas 14000 API llamadas</td>
+            <td style="border: none; padding: 10px;">$0.090 / API Llamar</td>
             <td style="border: none; padding: 10px;"></td>
         </tr>
         <tr>
             <td style="border: none; padding: 10px;">Próximas 15000 llamadas al API</td>
-            <td style="border: none; padding: 10px;">$0.070 / API Llamada</td>
+            <td style="border: none; padding: 10px;">$0.070 / API Llamar</td>
             <td style="border: none; padding: 10px;"></td>
         </tr>
         <tr>
             <td style="border: none; padding: 10px;">Próximas llamadas 60000 API</td>
-            <td style="border: none; padding: 10px;">$0.050 / API Llamada</td>
+            <td style="border: none; padding: 10px;">$0.050 / API Llamar</td>
             <td style="border: none; padding: 10px;"></td>
         </tr>
         <tr>
             <td style="border: none; padding: 10px;">Cualquier llamada adicional API</td>
-            <td style="border: none; padding: 10px;">$0.007 / API Llamada</td>
+            <td style="border: none; padding: 10px;">$0.007 / API Llamar</td>
             <td style="border: none; padding: 10px;"></td>
         </tr>
     </tbody>
 </table>
-
 
  por favor, compruebe[El plan de precios y cómo comprar](https://purchase.aspose.cloud/buy) Página web que ofrece una descripción general de nuestro plan de precios único y por qué no hay "actualizaciones" ni "degradaciones".

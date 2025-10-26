@@ -1,6 +1,6 @@
 ﻿---
 title: Automontörsalternativ
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Automontörsalternativ
 type: docs
 url: /sv/auto-fitter-options/
@@ -16,8 +16,8 @@ Namn | Typ | Beskrivning | Anteckningar
 **AutoanpassaSammanfogadeCellsTyp** | **sträng** | Hämtar och ställer in typen av automatisk anpassning av radhöjd för sammanslagna celler. |
 **Ignorera Dold** | **boolesk** | Ignorerar de dolda raderna/kolumnerna. |
 **EndastAuto** | **boolesk** | Anger om endast rader vars höjd inte är anpassad ska passa. |
-**StandardRedigeraSpråk** | **sträng** | Hämtar eller ställer in standardspråk för redigering. |
-**Maxradhöjd** | **dubbel** | Hämtar och ställer in maximal radhöjd (i enheten Punkt) vid autoanpassning av rader.
+**StandardRedigeraSpråk** | **sträng** | Hämtar eller ställer in standardredigeringsspråk. |
+**Maxradhöjd** | **dubbel** Hämtar och ställer in maximal radhöjd (i enheten Punkt) vid autoanpassning av rader.
 **AutoanpassaTextTyp** | **sträng** | Hämtar och anger typen av automatiskt anpassad radbruten text. |
 **FormatStrategi** | **sträng** | Hämtar och ställer in den formaterade strategin. |
 **FörRendering** | **sträng** | Anger om den är lämplig för renderingsändamål.

@@ -1,11 +1,11 @@
 ﻿---
 title: 任务
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /zh/tasks/
 aliases: [/working-with-tasks/]
 keywords: REST API, task, spreadsheets, exce
-description: Cells.Cloud API 用于 Excel 操作：使用任务操作 Excel
+description: Cells.Cloud API 为 Excel 操作：使用任务操作 excel
 weight: 100
 kwords: Excel, Office 云, REST API, 电子表格, PDF, CSV, Json, Markdown, 任务
 ---

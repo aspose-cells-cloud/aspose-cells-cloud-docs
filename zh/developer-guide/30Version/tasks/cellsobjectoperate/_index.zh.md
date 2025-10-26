@@ -1,6 +1,6 @@
 ﻿---
 title: 使用 CellsObjectOperate 任务
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /zh/tasks/cells-object-operate/
 aliases: [/working-with-cellsobjectoperate-task/]
@@ -115,5 +115,5 @@ kwords: Excel, Office 云, REST API, 电子表格, PDF, CSV, Json, Markdown, 使
 |:- |:- |:- |:- |
 |/单元格/任务/运行任务|邮政|运行任务|[运行后任务](https://apireference.aspose.cloud/cells/#/Task/PostRunTask)|
 
-这[OpenAPI规范](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
 

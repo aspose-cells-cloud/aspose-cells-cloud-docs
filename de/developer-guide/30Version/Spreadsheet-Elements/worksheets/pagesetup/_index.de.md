@@ -1,6 +1,6 @@
 ﻿---
 title: Arbeitsblattseiten-Setup
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Seiteneinrichtung
 type: docs
 url: /de/page-setup/
@@ -40,7 +40,7 @@ Excel-Einstellungen für die Druckseite
 |Kommentare drucken|Zeichenfolge|WAHR| FALSCH||Stellt die Art und Weise dar, wie Kommentare mit dem Blatt gedruckt werden.|
 |Druckkopien|Ganze Zahl|WAHR| FALSCH||Ruft die Anzahl der zu druckenden Kopien ab und legt sie fest.|
 |Druckentwurf|Boolescher Wert|WAHR| FALSCH||Gibt an, ob das Blatt ohne Grafiken gedruckt wird.|
-|Druckfehler|Zeichenfolge|WAHR| FALSCH||Gibt den Typ des angezeigten Druckfehlers an.|
+|Druckfehler|Zeichenfolge|WAHR| FALSCH||Gibt die Art des angezeigten Druckfehlers an.|
 |Rasterlinien drucken|Boolescher Wert|WAHR| FALSCH||Gibt an, ob Zellgitternetzlinien auf der Seite gedruckt werden.|
 |Drucküberschriften|Boolescher Wert|WAHR| FALSCH||Gibt an, ob Zeilen- und Spaltenüberschriften mit dieser Seite gedruckt werden.|
 |Druckqualität|Ganze Zahl|WAHR| FALSCH||Stellt die Druckqualität dar.|

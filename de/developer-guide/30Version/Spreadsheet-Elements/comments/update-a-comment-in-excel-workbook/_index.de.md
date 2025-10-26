@@ -1,5 +1,5 @@
 ﻿---
-title: Aktualisierung
+title: Aktualisieren
 type: docs
 url: /de/comments/update/
 aliases: [/update-a-comment-in-excel-workbook/]

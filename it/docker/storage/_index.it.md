@@ -1,13 +1,15 @@
 ﻿---
-title: Storag
-second_title: Aspose.Cells Cloud Documen
+title: Come impostare la posizione di archiviazione per Aspose.Cells Cloud Docker Container storage
+second_title: Documen
+ArticleTitle: Aspose.Cells Cloud Docker Container Storage Configuratio
+linktitle: Container Storag
 type: docs
 url: /it/docker/storage/
-description: Come impostare la posizione di archiviazione su Aspose.Cells Cloud per Docker
+description: Come impostare la posizione di archiviazione per l'archiviazione del contenitore Cloud Docker Aspose.Cells
 weight: 30
-kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdown, Archiviazione
+kwords: Excel Contenitore Docker cloud, Contenitore Docker self-cloud, Contenitore Docker REST, Foglio di calcolo, PDF, CSV, Json, Markdown, Immagine Docker, Esegui contenitore Docker
 ---
-##  Configurazione di archiviazione predefinita ##
+## Configurazione di archiviazione predefinita ##
 
 {{< tabs tabTotal="2" tabID="1" tabName1="windows" tabName2="linux" >}}
 
@@ -48,7 +50,6 @@ kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdo
 
 ##  Posizione predefinita ##
 
-
 - **finestre**
 
 ```powershell
@@ -72,9 +73,10 @@ c:\app\storageResource.json
 
 ``` powershell
 
-docker run  -d  -v c:/data:c:/data  -p 47900:5000  -e LicensePublicKey=yourLicensePublicKey	 -e LicensePrivateKey=yourLicensePrivateKey	 -e storagesCredentialsFilePath=c:/data/storageResource.json --name asposecellscloud aspose/cells-cloud:ltsc2019.22.2.0
+docker run  -d  -v c:/data:c:/data  -p 47900:5000  -e LicensePublicKey=yourLicensePublicKey  -e LicensePrivateKey=yourLicensePrivateKey  -e storagesCredentialsFilePath=c:/data/storageResource.json --name asposecellscloud aspose/cells-cloud:ltsc2019.22.9.0
 
 ```
 
-**Documento di riferimento** : 
-  - [Esecuzione Docker]( https://docs.docker.com/engine/reference/commandline/run/)
+**Documento di riferimento** :
+
+- [Come eseguire il contenitore Cloud Docker Aspose.Cells.]( https://docs.aspose.cloud/cells/run-aspose-cells-cloud-docker-container/)

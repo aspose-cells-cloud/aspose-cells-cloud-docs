@@ -1,6 +1,6 @@
 ﻿---
 title: Zeilen in einem Excel-Arbeitsbuch automatisch anpassen
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Reihe
 type: docs 
 url: /de/autofit-rows-on-an-excel-file/

@@ -1,6 +1,6 @@
 ﻿---
 title: Pivot tabloya bir pivot alanı ekleyin
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Pivot alanı ekle
 type: docs
 url: /tr/pivot-tables/add-pivot-field/

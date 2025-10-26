@@ -1,12 +1,12 @@
 ﻿---
 title: Comment créer un rapport Excel avec un modèle de marqueur intelligent
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: SmartMarke
 type: docs
 url: /fr/build-report-with-smart-marker/
 aliases: [/create-excel-workbook-from-a-smartmarker-template/,/workbook/smartmarker/,/workbook/create/smartmarker/]
 keywords: How to create an Excel workbook with a smart marker template
-description: "Aspose.Cells Cloud REST API : comment créer un classeur Excel avec un modèle de marqueur intelligent. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift."
+description: Aspose.Cells Cloud REST API Comment créer un classeur Excel avec un modèle de marqueur intelligent. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 40
 kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Comment créer un classeur Excel avec un modèle de marqueur intelligent
 ---

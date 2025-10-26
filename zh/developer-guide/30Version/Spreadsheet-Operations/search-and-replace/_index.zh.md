@@ -1,6 +1,6 @@
 ﻿---
 title: 在 Excel 文件中搜索并替换文本内容
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: 搜索和替换
 type: docs
 url: /zh/search-and-replace/
@@ -10,7 +10,7 @@ description: Aspose.Cells Cloud REST API 支持从 Excel 文件中获取、查�
 weight: 20
 kwords: Excel, Office 云, REST API, 电子表格, PDF, CSV, Json, Markdown, 文本
 ---
-对于 Excel 文件来说，文本操作是一个复杂的过程。许多因素都会增加其复杂性，因此在导出过程中应将其考虑在内。能够以精准的专业质量将各种格式和类型的数据导入到文本操作文件中，是 Aspose.Cells Cloud 的一大特色。
+对于 Excel 文件来说，文本操作是一个复杂的过程。许多因素都会增加其复杂性，因此在导出过程中应予以考虑。能够以精准的专业质量将各种格式和类型的数据导入到文本操作文件中是 Aspose.Cells Cloud 的一大优势。
 
 ## 在 Excel 文件中搜索并替换
 

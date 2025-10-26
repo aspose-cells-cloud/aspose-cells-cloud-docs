@@ -1,6 +1,6 @@
 ﻿---
 title: Aggiorna lo stile della cella per la tabella pivot
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Formato
 type: docs
 url: /it/pivot-tables/format/

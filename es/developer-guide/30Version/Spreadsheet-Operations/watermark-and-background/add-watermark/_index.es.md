@@ -1,12 +1,12 @@
 ﻿---
 title: Agregar marca de agua al archivo Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Agregar marca de agua al archivo Excel
 type: docs
 url: /es/add-watermark-into-excel-files/
 aliases: [ /watermark/]
 keywords: Add water marker for Excel files
-description: Aspose.Cells Cloud REST API admite la adición de un marcador de agua para los archivos Excel. El SDK es compatible con varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
+description: Aspose.Cells Cloud REST API admite la adición de un marcador de agua para los archivos Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 39
 kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Marca de agua
 ---
@@ -77,7 +77,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/watermark?text=aspose.cells.cloud&co
 
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
 
 Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
 

@@ -1,6 +1,6 @@
 ﻿---
 title: "Работа с файлами Excel: расчет формул, автоматическая подгонка, очистка объектов и т. д."
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Excel Обычная операция
 type: docs
 url: /ru/workbook/

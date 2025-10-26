@@ -1,6 +1,6 @@
 ﻿---
 title: احصل على جميع عمليات التحقق من صحة أوراق العمل من ورقة العمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: احصل على ال
 type: docs
 url: /ar/validations/get-all/

@@ -1,6 +1,6 @@
 ﻿---
 title: Importa array di interi a 2 dimensioni nel foglio di lavoro Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Importa array di interi a 2 dimensioni
 type: docs
 url: /it/import-a-2D-integer-array-into-excel-worksheet/
@@ -32,7 +32,7 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
 | Prima fila| interno||
 | Prima colonna| interno||
 | Dati|Intero[,]||
-| Foglio di lavoro sulla destinazione| corda| nome del foglio di lavoro di destinazione.|
+|Foglio di lavoro sulla destinazione| corda| nome del foglio di lavoro di destinazione.|
 | ÈInserisci| corda| vero/falso.|
 | ImportDataType| corda|IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData.|
 | Fonte| FileSource| Indica la posizione del file di dati quando il parametro BatchData è null.|

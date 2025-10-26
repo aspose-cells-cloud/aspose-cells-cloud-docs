@@ -1,6 +1,6 @@
 ﻿---
 title:  Сортировка по диапазону
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Сор
 type: docs
 keywords: Range Sort

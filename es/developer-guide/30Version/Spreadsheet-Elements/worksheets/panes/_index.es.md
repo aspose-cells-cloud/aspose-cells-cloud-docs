@@ -1,6 +1,6 @@
 ﻿---
 title: Cómo trabajar con paneles en una hoja de cálculo Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Cristal
 type: docs
 url: /es/worksheets/panes/

@@ -1,6 +1,6 @@
 ﻿---
 title: Supprimer toutes les formes sur une feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Cléa
 type: docs
 url: /fr/shapes/clear/
@@ -8,7 +8,7 @@ aliases: [/delete-all-shapes-inside-the-worksheet/]
 keywords: Delete all shapes on an Excel workshee
 description: Aspose.Cells Cloud REST API prend en charge la suppression de toutes les formes d'une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 40
-kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Supprimer toutes les formes sur une feuille de calcul Excel
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Supprimer toutes les formes d'une feuille de calcul Excel
 ---
 Ce REST API indique de supprimer toutes les formes sur une feuille de calcul Excel.
 
@@ -20,7 +20,7 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

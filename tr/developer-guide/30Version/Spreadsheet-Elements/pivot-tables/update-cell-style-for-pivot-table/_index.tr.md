@@ -1,6 +1,6 @@
 ﻿---
 title: Pivot tablo için hücre stilini güncelle
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Biçim
 type: docs
 url: /tr/pivot-tables/format/

@@ -1,6 +1,8 @@
 ﻿---
-title: مجموعة أدوات التطوير البرمجية المتاحة
-second_title: Aspose.Cells Cloud Documen
+title: متوفر Aspose.Cells Cloud SDK
+second_title: Documen
+ArticleTitle: "Available Aspose.Cells Cloud SDKs: C#, Java, PHP, Python, Ruby, Node.js, Go, Per"
+LinkTitle: Available SDK
 type: docs
 url: /ar/available-sdks/
 description: Aspose.Cells تدعم السحابة Excel لإنشاء الكائنات الداخلية وتحويلها ودمجها وتقسيمها وحمايتها وما إلى ذلك
@@ -73,7 +75,6 @@ kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF،
 
 - باستخدام Aspose.Cells Cloud SDK for Java، يمكنك إنشاء تطبيقات جداول بيانات مخصصة لتلبية احتياجات العمل المحددة.
 - على سبيل المثال، تطوير تطبيقات معالجة النماذج المخصصة، وأدوات إدارة البيانات المالية، وما إلى ذلك.
-
 
 # **فوائد SDK**
 

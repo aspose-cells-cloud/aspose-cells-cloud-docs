@@ -1,6 +1,6 @@
 ﻿---
 title: Importera data med hjälp av lagring
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Importera data med lagring
 type: docs
 url: /sv/import-data-with-using-storage/

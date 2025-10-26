@@ -1,6 +1,6 @@
 ﻿---
 title: Lavorare con l'ottenimento di una riga su un foglio di lavoro Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ge
 type: docs
 url: /it/rows/get/

@@ -1,7 +1,7 @@
 ﻿---
 title: Ajouter un filigrane dans le fichier Excel
-second_title: Aspose.Cells Cloud Documen
-linktitle: Ajouter un filigrane au fichier Excel
+second_title: Documen
+linktitle: Ajouter un filigrane dans le fichier Excel
 type: docs
 url: /fr/add-watermark-into-excel-files/
 aliases: [ /watermark/]
@@ -20,7 +20,7 @@ POST http://api.aspose.cloud/v3.0/cells/watermark
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

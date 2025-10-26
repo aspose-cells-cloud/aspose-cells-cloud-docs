@@ -1,6 +1,6 @@
 ﻿---
 title: الحصول على فاصل الصفحة الأفقي
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: الحصول على فاصل الصفحة الأفقي
 type: docs
 url: /ar/page-breaks/get-horizontal-page-breaks/

@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma sayfasındaki tüm OLE nesnelerini silin
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Temiz
 type: docs
 url: /tr/oleobjects/clear/

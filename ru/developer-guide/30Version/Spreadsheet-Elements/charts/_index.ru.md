@@ -1,6 +1,6 @@
 ﻿---
 title: Работа с диаграммой Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Диаграмма
 type: docs
 url: /ru/charts/

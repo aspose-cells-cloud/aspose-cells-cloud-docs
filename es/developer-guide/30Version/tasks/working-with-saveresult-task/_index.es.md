@@ -1,11 +1,11 @@
 ﻿---
 title: Trabajar con SaveResult Tas
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /es/tasks/save-result/
 aliases: [/working-with-saveresult-task/]
 keywords: REST API, task, save result, spreadsheets, exce
-description: "Cells.Cloud API para Excel opera: las tareas admiten guardar el resultado en el contenido de respuesta o en el almacenamiento en la nube"
+description: "Cells.Cloud API para Excel operar: tareas de soporte para guardar el resultado en el contenido de respuesta o almacenamiento en la nube"
 weight: 50
 kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Trabajando con la tarea SaveResult
 ---
@@ -45,7 +45,7 @@ HttpResponseMessage with the operation result.
 
 {{< /tabs >}}
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
 
 Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
 

@@ -1,12 +1,12 @@
 ﻿---
 title: 将 Excel 工作表中的列表对象转换为范围
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: 转换
 type: docs
 url: /zh/list-objects/to-range/
 aliases: [/convert-list-object-or-table-to-range/,/tables/to-range/]
 keywords: Convert a list object(table) to range in an Excel worksheet
-description: Aspose.Cells Cloud REST API 支持将列表对象（表格）转换为工作表中的 Excel 范围。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
+description: Aspose.Cells Cloud REST API 支持将工作表中的列表对象（表格）转换为范围。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
 weight: 30
 kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、将 Excel 工作表中的列表对象转换为范围
 ---
@@ -30,7 +30,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobject
 |文件夹|细绳|询问||
 |存储名称|细绳|询问|存储名称。|
 
-这[OpenAPI规范](https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObjectConvertToRange)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObjectConvertToRange)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
 
 您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
 

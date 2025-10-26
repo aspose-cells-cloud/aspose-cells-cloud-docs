@@ -1,6 +1,6 @@
 ﻿---
 title: Excel إلى CS
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Excel إلى CS
 type: docs
 url: /arconvert-excel-file-to-csv-file/
@@ -130,7 +130,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/csv"
 
 ## تنفذ واجهات برمجة التطبيقات الأخرى هذه الوظيفة
 
-[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) يتيح لك البرنامج API حفظ ملف MS Excel كملف CSV مع إعدادات إضافية وحفظ النتيجة في وحدة التخزين.
+[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)يتيح لك البرنامج API حفظ ملف MS Excel كملف CSV مع إعدادات إضافية وحفظ النتيجة في وحدة التخزين.
 
 هذا الملف REST API `convert` excel إلى CSV.
 

@@ -1,6 +1,6 @@
 ﻿---
 title: Visualizza le colonne nascoste in un foglio di lavoro Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Non nascosto
 type: docs
 url: /it/columns/unhide/
@@ -26,7 +26,7 @@ I parametri della richiesta sono:
 |:- |:- |:- |:- |
 | nome| corda| sentiero| Il nome della cartella di lavoro.|
 | Nome foglio| corda| sentiero| Il nome del foglio di lavoro.|
-| colonna di inizio| intero| domanda| Indice della colonna iniziale su cui operare.|
+| colonna di inizio| intero| domanda| Indice della colonna iniziale da utilizzare.|
 | colonne totali| intero| domanda| Numero di colonne da gestire.|
 | larghezza| numero| domanda|50.0 |
 | cartella| corda| domanda| La cartella dei documenti.|

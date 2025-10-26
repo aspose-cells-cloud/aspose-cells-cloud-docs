@@ -1,19 +1,21 @@
 ﻿---
-title: Aspose.Cells Cloud SDK för Jav
-second_title: Aspose.Cells Cloud Documen
+title: "Aspose.Cells Cloud SDK for Java: Konvertera, sammanfoga, dela, skydda, sök, ersätt med mera"
+second_title: Documen
+ArticleTitle: "Aspose.Cells Cloud SDK for Java: Convert, merge, split, protect, search, replace, and more"
+linktitle: Aspose.Cells Cloud SDK för Jav
 type: docs
 url: /sv/available-sdks/aspose-cells-cloud-java/
-description: Aspose.Cells Molnet stöder Excel för att skapa, konvertera, sammanfoga, dela, skydda, hantera interna objekt och så vidare.
+description: "Aspose.Cells Cloud SDK for Java erbjuder verklig plattformsoberoende kraft: en import ger Windows-, Linux- och macOS-utvecklare samma flytande API för att skapa, konvertera, slå samman, dela, skydda och manipulera alla Excel objekt – ingen Office installation krävs och inga plattformsspecifika justeringar behövs."
 weight: 30
-kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Java
+kwords: Java SDK, Excel SDK for Java, Cloud SDK for Java, REST, Diagram, Pivottabell, Tabell-/listobjekt, Konvertera kalkylblad, PDF, CSV, Json, Markdown, Sammanfoga, Dela, Skydda, Sök, Ersätt
 ---
-SDK:et är öppen källkod och licensierat under MIT-licensen. Du kan komma åt källkoden för Java-biblioteket för Aspose.Cells Cloud.[här](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java).
+SDK:et är öppen källkod och licensierat under MIT-licensen. Du kan komma åt[Java-bibliotekets källkod för Aspose.Cells Cloud](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java).
 
 # **Hur man använder Java-biblioteket i Aspose.Cells Cloud**
 
 Aspose.Cells Cloud SDK for Java är ett kraftfullt bibliotek som låter utvecklare manipulera och bearbeta Microsoft Excel-filer med programmeringsspråket Java. Med detta SDK kan du skapa, redigera och konvertera Excel-dokument i molnet, utan att installera ytterligare programvara eller beroenden på din lokala dator.
 
-I den här artikeln ska vi utforska hur man använder Aspose.Cells Cloud SDK for Java för att utföra några vanliga uppgifter, till exempel att skapa en ny Excel-arbetsbok, infoga data i celler och spara den ändrade arbetsboken i molnet.
+den här artikeln ska vi utforska hur man använder Aspose.Cells Cloud SDK for Java för att utföra några vanliga uppgifter, till exempel att skapa en ny Excel-arbetsbok, infoga data i celler och spara den ändrade arbetsboken i molnet.
 
 ## Komma igång
 

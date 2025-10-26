@@ -1,6 +1,6 @@
 ﻿---
 title: Добавить цифровую подпись для рабочей книги Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Цифровая подпись
 type: docs
 url: /ru/excel-digital-signature/

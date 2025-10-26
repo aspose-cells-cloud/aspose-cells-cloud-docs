@@ -19,17 +19,17 @@ Sono disponibili numerose API per l'unione di file, generalmente compatibili con
 
 | Funzione| Descrizione| API Riferimento|
 |:------------------------- |:------------------------- |:------------------------- |
-|**[Unisci fogli di calcolo](https://docs.aspose.cloud/cells/merge-spreadsheets/)** |Unisci i file di fogli di calcolo locali in un file di formato specificato.|[Unisci fogli di calcolo](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/DataProcessing/MergeSpreadsheets) |
+|**[Unisci fogli di calcolo](https://docs.aspose.cloud/cells/merge-spreadsheets/)** | Unisci i file di fogli di calcolo locali in un file di formato specificato.|[Unisci fogli di calcolo](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/DataProcessing/MergeSpreadsheets) |
 |**[UnisciFoglioDiSpreadRemoto](https://docs.aspose.cloud/cells/merge-remote-spreadsheet/)** | Unisci i file dei fogli di calcolo nella cartella dell'archiviazione cloud in un file di formato specificato.|[Unisci foglio di calcolo remoto](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/DataProcessing/MergeRemoteSpreadsheet) |
 |**[Unisci fogli di calcolo in cartella remota](https://docs.aspose.cloud/cells/merge-spreadsheets-in-remote-folder/)** | Unisci i file dei fogli di calcolo nella cartella dell'archiviazione cloud in un file di formato specificato.|[Unisci fogli di calcolo nella cartella remota](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/DataProcessing/MergeSpreadsheetsInRemoteFolder) |
 
 # Come unire più file tramite Aspose.Cells Cloud
 
- Il Cloud Aspose.Cells fornisce[più SDK](https://github.com/aspose-cells-cloud) per diversi linguaggi di programmazione. Scegli l'SDK più adatto al tuo linguaggio di programmazione preferito e segui la documentazione allegata per l'installazione e l'inizializzazione. In alternativa, puoi creare il tuo SDK in base alle[API riferimento](https://reference.aspose.cloud/cells/)In questa sezione useremo C# come esempio per descrivere in dettaglio il processo di unione dei file.
+ Il Cloud Aspose.Cells fornisce[più SDK](https://github.com/aspose-cells-cloud)per diversi linguaggi di programmazione. Scegli l'SDK più adatto al tuo linguaggio di programmazione preferito e segui la documentazione allegata per l'installazione e l'inizializzazione. In alternativa, puoi creare il tuo SDK in base alle[API riferimento](https://reference.aspose.cloud/cells/)In questa sezione useremo C# come esempio per descrivere in dettaglio il processo di unione dei file.
 
 ## Registrazione e ottenimento della chiave API
 
-Prima di iniziare, è necessario[registra un account Cloud Aspose](https://id.containerize.com/signup) E[ottenere una chiave API per l'autenticazione](https://dashboard.aspose.cloud/applications)Accedendo al sito web ufficiale Aspose Cloud, puoi creare un account gratuito e ottenere una chiave API per l'autenticazione.
+ Prima di iniziare, è necessario[registra un account Cloud Aspose](https://id.containerize.com/signup) E[ottenere una chiave API per l'autenticazione](https://dashboard.aspose.cloud/applications)Accedendo al sito web ufficiale Aspose Cloud, puoi creare un account gratuito e ottenere una chiave API per l'autenticazione.
 
  Per operazioni più approfondite, fare riferimento ai seguenti documenti:[Avvio rapido con Cells Cloud](https://docs.aspose.cloud/cells/quickstart/)
 
@@ -110,7 +110,7 @@ cellsApi.MergeSpreadsheetsInRemoteFolder(request, "MergedResultOutPutToLocalFile
 
 ## Casi d'uso
 
- I file multipli**unito**La funzionalità Aspose.Cells Cloud API è utile in vari casi d'uso pratici. Ecco alcuni scenari comuni:
+ I file multipli**unito** La funzionalità Aspose.Cells Cloud API è utile in vari casi d'uso pratici. Ecco alcuni scenari comuni:
 
 - **Unisci più file Excel in un file Excel** per l'analisi e l'archiviazione dei dati.
 - **Unisci i file di dati in un file Excel** per l'analisi dei dati.
@@ -121,6 +121,6 @@ cellsApi.MergeSpreadsheetsInRemoteFolder(request, "MergedResultOutPutToLocalFile
 
 Con Aspose.Cells Cloud API, puoi facilmente eseguire l'unione di più file di fogli di calcolo in un unico file. Eseguendo semplici chiamate API e impostando le opzioni di unione appropriate, puoi soddisfare in modo efficiente diversi requisiti di unione di file. Integra Aspose.Cells Cloud API nelle tue applicazioni per migliorare la produttività e risparmiare tempo di sviluppo.
 
-Si prega di notare che il codice di esempio sopra riportato è solo a scopo dimostrativo e sarà necessario sostituirlo con credenziali di autenticazione e percorsi di file validi quando lo si utilizza nella pratica. Inoltre, Aspose.Cells Cloud API offre molte altre funzionalità, come la creazione, la modifica, la manipolazione e l'elaborazione dei dati di fogli di calcolo. La documentazione dettagliata e il codice di esempio di API sono disponibili su[guida per gli sviluppatori del sito web ufficiale Aspose](/developer-guide/).
+ Si prega di notare che il codice di esempio sopra riportato è solo a scopo dimostrativo e sarà necessario sostituirlo con credenziali di autenticazione e percorsi di file validi quando lo si utilizza nella pratica. Inoltre, Aspose.Cells Cloud API offre molte altre funzionalità, come la creazione, la modifica, la manipolazione e l'elaborazione dei dati di fogli di calcolo. La documentazione dettagliata e il codice di esempio di API sono disponibili su[guida per gli sviluppatori del sito web ufficiale Aspose](/developer-guide/).
 
 Ci auguriamo che questo articolo ti aiuti a capire come utilizzare Aspose.Cells Cloud API per l'unione di file. In bocca al lupo per l'implementazione!

@@ -1,6 +1,6 @@
 ﻿---
 title: 导出图片
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: 图片
 type: docs
 url: /zh/export-excel-picture-to-different-formats/
@@ -10,7 +10,7 @@ description: Aspose.Cells Cloud REST API 支持将 Excel 图片导出为多种�
 weight: 20
 kwords: Excel, Office 云, REST API, 电子表格, PDF, CSV, Json, Markdown, 导出图片
 ---
-您可以导出以下格式：[PNG](https://docs.fileformat.com/Image/png/), [动图](https://docs.fileformat.com/image/gif/), [JPEG](https://docs.fileformat.com/image/jpeg/),  [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [WMF](https://docs.fileformat.com/image/Wmf/).
+您可以导出以下格式：[PNG](https://docs.fileformat.com/Image/png/), [GIF](https://docs.fileformat.com/image/gif/), [JPEG](https://docs.fileformat.com/image/jpeg/),  [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [WMF](https://docs.fileformat.com/image/Wmf/).
 
 - **休息 API**
 
@@ -18,9 +18,9 @@ kwords: Excel, Office 云, REST API, 电子表格, PDF, CSV, Json, Markdown, 导
 |:- |:- |:- |:- |
 |/单元格/导出|邮政|将请求内容中的 Excel 对象导出为某种格式|[出口后](https://apireference.aspose.cloud/cells/#/LightCells/PostExport)|
 
-这[OpenAPI规范](https://apireference.aspose.cloud/cells/#/LightCells/PostExport)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/LightCells/PostExport)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
 
-您可以使用**cURL**命令行工具可轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用 Cloud API。
+您可以使用**cURL**命令行工具可轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
 
 - **要求**
 

@@ -1,6 +1,6 @@
 ﻿---
 title: Cifrar un libro de trabajo Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Cifrar un archivo Excel
 type: docs
 url: /es/excel-file-encrypt/
@@ -75,7 +75,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/encryption" -H "acce
 
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
 
 Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
 

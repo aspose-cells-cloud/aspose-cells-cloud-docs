@@ -1,6 +1,6 @@
 ﻿---
 title: Travailler avec l'hyperlien Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 linktitle: Hyperlien
 url: /fr/hyperlinks/
@@ -10,13 +10,13 @@ description: "Cells.Cloud API pour Excel opération : travailler avec des hyper
 weight: 100
 kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Hyperliens
 ---
-Les hyperliens dans Excel permettent aux utilisateurs de créer un raccourci pour accéder à une feuille de calcul, un fichier, un dossier ou une page web spécifique. Ils permettent d'accéder rapidement à un dossier ou à un lien spécifique.
+Les hyperliens de la section Excel permettent de créer un raccourci pour accéder à une feuille de calcul, un fichier, un dossier ou une page web. Ils permettent d'accéder rapidement à un dossier ou à un lien spécifique.
 
 ## Travailler avec des hyperliens sur un fichier Excel
 
 - [Comment obtenir une description d'hyperlien à partir de la feuille de travail Excel.](/cells/fr/hyperlinks/get/)
 - [Comment obtenir la description de tous les hyperliens de la feuille de calcul Excel.](/cells/fr/hyperlinks/get-all/)
-- [Comment ajouter des hyperliens à la feuille de travail Excel](/cells/fr/hyperlinks/add/)
+- [Comment ajouter des hyperliens à la feuille de calcul Excel](/cells/fr/hyperlinks/add/)
 - [Comment mettre à jour les hyperliens dans la feuille de travail Excel](/cells/fr/hyperlinks/update/)
 - [Comment supprimer tous les hyperliens de la feuille de travail Excel](/cells/fr//hyperlinks/clear/)
 - [Comment supprimer un lien hypertexte de la feuille de travail Excel](/cells/fr//hyperlinks/delete/)

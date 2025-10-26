@@ -1,12 +1,12 @@
 ﻿---
 title: Coincidir con todas las celdas en blanco en una hoja de cálculo Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Coincidir con celda en blanco
 type: docs
 url: /es/autofilter/match-all-blank/
 aliases: [/match-all-blank-cells-in-the-list/]
 keywords: Match all blank cells in the filter list on an Excel worksheet
-description: El SDK Aspose.Cells Cloud API permite la coincidencia de todas las celdas en blanco en la lista de filtros de una hoja de cálculo Excel. El SDK es compatible con varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
+description: El SDK Aspose.Cells Cloud API permite la coincidencia de todas las celdas en blanco en la lista de filtros de una hoja de cálculo Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 100
 kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Coincidir con todas las celdas en blanco en una hoja de cálculo Excel
 ---
@@ -70,7 +70,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFil
 
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
 
 Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
 

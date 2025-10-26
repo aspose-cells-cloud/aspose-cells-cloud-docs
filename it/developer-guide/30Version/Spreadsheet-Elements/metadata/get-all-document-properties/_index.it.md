@@ -1,6 +1,6 @@
 ﻿---
 title: Ottieni tutte le proprietà del documento
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ottieni tutto
 type: docs
 url: /it/document-properties/get-all/

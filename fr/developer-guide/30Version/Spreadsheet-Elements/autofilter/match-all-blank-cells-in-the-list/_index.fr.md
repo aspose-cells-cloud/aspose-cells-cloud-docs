@@ -1,6 +1,6 @@
 ﻿---
-title: Associer toutes les cellules vides d'une feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
+title: Associer toutes les cellules vides dans une feuille de calcul Excel
+second_title: Documen
 linktitle: Correspondance de cellules vierges
 type: docs
 url: /fr/autofilter/match-all-blank/
@@ -20,7 +20,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

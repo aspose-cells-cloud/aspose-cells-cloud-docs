@@ -1,13 +1,15 @@
 ﻿---
-title: Almacenamiento
-second_title: Aspose.Cells Cloud Documen
+title: Cómo configurar la posición de almacenamiento para el contenedor de almacenamiento en la nube Aspose.Cells
+second_title: Documen
+ArticleTitle: Aspose.Cells Cloud Docker Container Storage Configuratio
+linktitle: Almacenamiento en contenedores
 type: docs
 url: /es/docker/storage/
-description: Cómo configurar la posición de almacenamiento en Aspose.Cells Cloud for Docker
+description: Cómo configurar la posición de almacenamiento para el contenedor Docker en la nube Aspose.Cells
 weight: 30
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Almacenamiento
+kwords: Excel Contenedor Docker en la nube, contenedor Docker en la nube propia, contenedor Docker REST, hoja de cálculo, PDF, CSV, JSON, Markdown, imagen Docker, ejecutar contenedor Docker
 ---
-##  Configuración de almacenamiento predeterminada ##
+## Configuración de almacenamiento predeterminada ##
 
 {{< tabs tabTotal="2" tabID="1" tabName1="windows" tabName2="linux" >}}
 
@@ -48,7 +50,6 @@ kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown
 
 ##  Posición predeterminada ##
 
-
 - **ventanas**
 
 ```powershell
@@ -72,9 +73,10 @@ Es necesario volver a especificar el perfil de almacenamiento para el archivo de
 
 ``` powershell
 
-docker run  -d  -v c:/data:c:/data  -p 47900:5000  -e LicensePublicKey=yourLicensePublicKey	 -e LicensePrivateKey=yourLicensePrivateKey	 -e storagesCredentialsFilePath=c:/data/storageResource.json --name asposecellscloud aspose/cells-cloud:ltsc2019.22.2.0
+docker run  -d  -v c:/data:c:/data  -p 47900:5000  -e LicensePublicKey=yourLicensePublicKey  -e LicensePrivateKey=yourLicensePrivateKey  -e storagesCredentialsFilePath=c:/data/storageResource.json --name asposecellscloud aspose/cells-cloud:ltsc2019.22.9.0
 
 ```
 
-**Documento de referencia** : 
-  - [Ejecución de Docker]( https://docs.docker.com/engine/reference/commandline/run/)
+**Documento de referencia** :
+
+- [Cómo ejecutar el contenedor Docker en la nube Aspose.Cells.]( https://docs.aspose.cloud/cells/run-aspose-cells-cloud-docker-container/)

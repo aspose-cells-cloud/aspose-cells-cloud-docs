@@ -1,6 +1,6 @@
 ﻿---
 title: دمج وتقسيم ملفات Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: دمج وتقسيم
 type: docs
 url: /ar/merge-and-split/

@@ -1,6 +1,6 @@
 ﻿---
 title: البحث عن محتوى النص واستبداله داخل ملفات Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: البحث والاستبدال
 type: docs
 url: /ar/search-and-replace/

@@ -1,6 +1,6 @@
 ﻿---
 title: 设置范围的样式
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: 设置样式
 type: docs
 url: /zh/ranges/update/style/
@@ -11,7 +11,7 @@ weight: 70
 kwords: Excel, Office 云, REST API, 电子表格, PDF, CSV, Json, Markdown, 设置范围样式
 ---
 ## **介绍**
-此示例允许您在应用程序中使用 Aspose.Cells Cloud API 设置范围样式。您可以将我们的 REST API 与任何语言结合使用：.NET、Java、PHP、Ruby、Rails、Python、jQuery 等等。
+此示例允许您在应用程序中使用 Aspose.Cells Cloud API 设置范围的样式。您可以将我们的 REST API 与任何语言一起使用：.NET、Java、PHP、Ruby、Rails、Python、jQuery 等等。
 ## **API 信息**
 
 |**API**|**类型**|**描述**|**资源链接**|

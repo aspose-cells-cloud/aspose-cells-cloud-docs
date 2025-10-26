@@ -1,6 +1,6 @@
 ﻿---
 title: Как работать с фоном на рабочем листе Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Фон
 type: docs
 url: /ru/worksheets/background/

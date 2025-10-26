@@ -1,6 +1,6 @@
 ﻿---
-title: Establecer un valor de rango en una hoja de cálculo Excel
-second_title: Aspose.Cells Cloud Documen
+title: Establecer valor de rango en una hoja de cálculo Excel
+second_title: Documen
 linktitle: Establecer valor
 type: docs
 url: /es/ranges/update/values/
@@ -28,7 +28,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/val
 | nombreHoja| cadena| camino| nombre de la hoja de trabajo|
 | valor| cadena| consulta| Valor de entrada|
 | rango|| cuerpo| rango en la hoja de cálculo|
-| se ha convertido| booleano| consulta|FALSO|
+| se convierte| booleano| consulta|FALSO|
 | establecer estilo| booleano| consulta|FALSO|
 | carpeta| cadena| consulta| Carpeta de libro de trabajo.|
 | nombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
@@ -69,7 +69,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/
  
 ## Familia de SDK en la nube
  
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
  
 Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
  

@@ -1,6 +1,6 @@
 ﻿---
 title: Fichier de verrouillage par lots Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /fr/batch/lock
 keywords: Batch lock of multiple Excel files
@@ -18,7 +18,7 @@ POST http://api.aspose.cloud/v3.0/cells/batch/lock
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

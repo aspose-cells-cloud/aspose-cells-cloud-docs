@@ -1,6 +1,6 @@
 ﻿---
 title: Json verilerini Excel'e aktarın
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Jso'yu içe aktar
 type: docs
 url: /tr/import-json-data-into-excel/
@@ -32,7 +32,7 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/importjson
 | dosya| Sorgu Dizesi| sicim| Orijinal çalışma kitabı klasörü.|
 | depolamaAdı| Sorgu Dizesi| sicim| Depolama adı.|
 | çıkış yolu| Sorgu Dizesi| sicim| Çıktı dosya yolu.|
-| outStorageName| Sorgu Dizesi| sicim| Çıkış dosyası için depolama adı.|
+|outStorageName| Sorgu Dizesi| sicim| Çıkış dosyası için depolama adı.|
 | checkExcelRestriction| Sorgu Dizesi| sicim| Excel kısıtlamasını kontrol edin.|
 
 **Örnek**

@@ -18,7 +18,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{c
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

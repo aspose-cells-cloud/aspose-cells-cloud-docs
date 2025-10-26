@@ -1,6 +1,6 @@
 ﻿---
 title: استيراد مصفوفة سلسلة إلى ورقة عمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: استيراد سلسلة arra
 type: docs
 url: /ar/import-string-array-into-excel-worksheet/
@@ -33,7 +33,7 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
 | العمود الأول| عدد صحيح||
 | عمودي| خيط| صواب/خطأ.|
 | بيانات|خيط[]||
-| ورقة عمل الوجهة| خيط| اسم ورقة عمل الوجهة.|
+|ورقة عمل الوجهة| خيط| اسم ورقة عمل الوجهة.|
 | هل تم إدراجه| خيط| صواب/خطأ.|
 | نوع بيانات الاستيراد| خيط|IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData.|
 | مصدر| مصدر الملف| يشير إلى موضع ملف البيانات عندما تكون معلمة BatchData فارغة.|

@@ -1,6 +1,6 @@
 ﻿---
 title: Holen Sie sich Textelemente aus einem Excel-Arbeitsblatt
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Arbeitsblatt eintragen
 type: docs
 url: /de/worksheets/get-text-items/

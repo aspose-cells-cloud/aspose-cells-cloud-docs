@@ -1,6 +1,6 @@
 ﻿---
 title: Obtenir un objet OLE dans une feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Gé
 type: docs
 url: /fr/oleobjects/get/
@@ -8,7 +8,7 @@ aliases: [/get-oleobject-from-a-worksheet/]
 keywords: Get an OLE object in an Excel worksheet
 description: Aspose.Cells Cloud REST API prend en charge l'obtention d'un objet OLE dans une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 10
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Obtenir un objet OLE dans une feuille de calcul Excel
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Obtenir un objet OLE dans une feuille de calcul Excel
 ---
 Ce REST API indique à `get` un `OLE object` avec format dans une feuille de calcul Excel.
 
@@ -20,12 +20,12 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects/
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Nom du document.|
-| nom de la feuille| chaîne| chemin| Nom de la feuille de travail.|
+| nom de la feuille| chaîne| chemin| Nom de la feuille de calcul.|
 | numéro d'objet| entier| chemin| Le numéro de l'objet.|
 | format| chaîne| requête| Le format de l'objet exporté.|
 | dossier| chaîne| requête| Le dossier de documents.|

@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma sayfasında liste nesnesini aralığa dönüştürün
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Dönüşüm
 type: docs
 url: /tr/list-objects/to-range/

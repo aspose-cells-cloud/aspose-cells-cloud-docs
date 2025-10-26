@@ -1,6 +1,8 @@
 ﻿---
-title: Prezzi Pla
-second_title: Aspose.Cells Cloud Documen
+title: "Piano tariffario cloud Aspose.Cells: 150 chiamate gratuite al mese al numero API, con un modello di prezzo a livelli per l'utilizzo eccedente"
+second_title: Documen
+ArticleTitle: Aspose.Cells Cloud Pricing Pla
+linktitle: Prezzi Pla
 type: docs
 url: /it/pricing-plan/
 description: Aspose.Cells Cloud supporta Excel per creare, convertire, unire, dividere, proteggere, operazioni di oggetti interni e così via
@@ -50,6 +52,5 @@ Aspose crea soluzioni SaaS (Software as a Service) incredibilmente facili da usa
         </tr>
     </tbody>
 </table>
-
 
  si prega di controllare[il piano tariffario e come acquistare](https://purchase.aspose.cloud/buy) pagina web che fornisce una panoramica del nostro piano tariffario unico e spiega perché non sono previsti "upgrade" o "downgrade".

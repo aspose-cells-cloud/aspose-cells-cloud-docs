@@ -1,6 +1,6 @@
 ﻿---
 title: Was ist neu in Aspose.Cells Cloud im Jahr 2024
-second_title: Latest Updates & Feature
+second_title: Documen
 linktitle: Was ist neu in 202
 type: docs
 weight: 20
@@ -74,5 +74,5 @@ Willkommen bei den Neuerungen in Aspose.Cells Cloud-Dokumenten. Auf dieser Seite
 
 - Rechtschreibfehler für mehrere Funktionen behoben.
 - Fügen Sie die Methode „PostFitTallToPages“ für den Seiteneinrichtungs-Controller hinzu.
-- Fügen Sie die Methode PostFitWideToPages für den Seiteneinrichtungs-Controller hinzu.
+- Fügen Sie die Methode „PostFitWideToPages“ für den Seiteneinrichtungs-Controller hinzu.
 - Optimieren Sie die Speicheroptionen für die Paginierung.

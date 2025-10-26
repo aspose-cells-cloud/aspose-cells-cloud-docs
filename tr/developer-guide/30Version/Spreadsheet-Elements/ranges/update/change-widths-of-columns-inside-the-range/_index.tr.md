@@ -1,6 +1,6 @@
 ﻿---
 title: Rang İçindeki Sütunların Genişliklerini Değiştir
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Sütun genişliği
 type: docs
 url: /tr/ranges/update/column-width/

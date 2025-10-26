@@ -1,6 +1,6 @@
 ﻿---
 title: 删除 Excel 工作簿上的背景
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: 删除
 type: docs
 url: /zh/delete-background-in-excel-file/
@@ -23,11 +23,11 @@ kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdo
 
 |**API**|**类型**|**描述**|**资源链接**|
 |:- |:- |:- |:- |
-|/细胞/{名称}/背景|删除|删除 Excel 文件中的背景|[删除工作簿背景](https://apireference.aspose.cloud/cells/#/Workbook/DeleteWorkbookBackground)|
+|/细胞/{名称}/背景|删除|删除 Excel 文件的背景|[删除工作簿背景](https://apireference.aspose.cloud/cells/#/Workbook/DeleteWorkbookBackground)|
 
-这[OpenAPI规范](https://apireference.aspose.cloud/cells/#/Workbook/DeleteWorkbookBackground)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Workbook/DeleteWorkbookBackground)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
 
-您可以使用**cURL**命令行工具可轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用 Cloud API。
+您可以使用**cURL**命令行工具可轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 

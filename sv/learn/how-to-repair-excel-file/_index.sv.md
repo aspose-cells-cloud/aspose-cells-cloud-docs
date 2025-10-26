@@ -21,11 +21,11 @@ API är tillgänglig för filreparation och är generellt kompatibel med olika o
 
 # Hur man reparerar Excel eller ett annat kalkylblad via Aspose.Cells Cloud
 
- Aspose.Cells Cloud API tillhandahåller[flera SDK:er](https://github.com/aspose-cells-cloud) för olika programmeringsspråk. Välj det SDK som överensstämmer med ditt föredragna programmeringsspråk och följ den medföljande dokumentationen för installation och initialisering. Alternativt kan du skapa ditt eget SDK enligt[API referens](https://reference.aspose.cloud/cells/)I det här avsnittet använder vi C# som ett exempel för att beskriva processen för filreparation i detalj.
+ Aspose.Cells Cloud API tillhandahåller[flera SDK:er](https://github.com/aspose-cells-cloud)för olika programmeringsspråk. Välj det SDK som överensstämmer med ditt föredragna programmeringsspråk och följ den medföljande dokumentationen för installation och initialisering. Alternativt kan du skapa ditt eget SDK enligt[API referens](https://reference.aspose.cloud/cells/)det här avsnittet använder vi C# som ett exempel för att beskriva processen för filreparation i detalj.
 
 ## Registrering och erhållande av API-nyckel
 
-Innan du börjar behöver du[registrera ett Aspose Cloud-konto](https://id.containerize.com/signup) och[skaffa en API-nyckel för autentisering](https://dashboard.aspose.cloud/applications)Genom att logga in på den officiella Aspose Cloud-webbplatsen kan du skapa ett gratis konto och få en API-nyckel för autentisering.
+ Innan du börjar behöver du[registrera ett Aspose Cloud-konto](https://id.containerize.com/signup) och[skaffa en API-nyckel för autentisering](https://dashboard.aspose.cloud/applications)Genom att logga in på den officiella Aspose Cloud-webbplatsen kan du skapa ett gratis konto och få en API-nyckel för autentisering.
 
  För mer detaljerad information om operationer, vänligen se följande dokument:[Snabbstart med Cells Cloud](https://docs.aspose.cloud/cells/quickstart/)
 
@@ -69,6 +69,6 @@ Detta skapar en ny instans av PostRepairRequest och initierar den med önskat fi
 
 Med Aspose.Cells Cloud API kan du enkelt reparera Excel eller en annan kalkylbladsfil. Genom att göra enkla API-anrop och ställa in lämpliga reparationsalternativ kan du effektivt uppfylla olika filreparationskrav. Integrera Aspose.Cells Cloud API i dina applikationer för att öka produktiviteten och spara utvecklingstid.
 
-Observera att exempelkoden ovan endast är i demonstrationssyfte och att du skulle behöva ersätta den med giltiga autentiseringsuppgifter och filsökvägar när du använder den i praktiken. Dessutom erbjuder Aspose.Cells Cloud API många andra funktioner, såsom skapande av kalkylblad, redigering, manipulation och databehandling. Detaljerad API-dokumentation och exempelkod finns på[utvecklarguide för den officiella webbplatsen Aspose](/developer-guide/).
+ Observera att exempelkoden ovan endast är i demonstrationssyfte och att du skulle behöva ersätta den med giltiga autentiseringsuppgifter och filsökvägar när du använder den i praktiken. Dessutom erbjuder Aspose.Cells Cloud API många andra funktioner, såsom skapande av kalkylblad, redigering, manipulation och databehandling. Detaljerad API-dokumentation och exempelkod finns på[utvecklarguide för den officiella webbplatsen Aspose](/developer-guide/).
 
 Vi hoppas att den här artikeln hjälper dig att förstå hur man använder Aspose.Cells Cloud API för filreparation. Lycka till med implementeringen!

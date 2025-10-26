@@ -1,6 +1,6 @@
 ﻿---
 title: Aspose.Cells 云中的新功能
-second_title: Latest Updates & Feature
+second_title: Documen
 linktitle: 有什么
 type: docs
 weight: 9
@@ -19,11 +19,13 @@ kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdo
 
 |**ID**|**概括**|**类别**|
 |:- |:- |:- |
-|55754 |修剪整个工作簿失败。|
-|55755 |更新整个工作簿的单词大小写失败。|
-|55930 |添加保护/取消保护电子表格功能。|
-|55931 |添加将工作表/表格/范围转换为其他格式。|
-|56088 |优化TextProcessingController的操作范围选项。|
+|56632 |更新 Cells Cloud 3.0 服务上 Cells Cloud 代码规范的表单数据参数名称。|改进|
+|56793 |修复Aspose.Cells云服务上的StringEnumConverter问题。|漏洞|
+|56866 |支持在 Cells Cloud 4.0 中修剪电子表格内容。|改进|
+|56867 |支持 Cells Cloud 4.0 中的修剪工作表范围内容。|改进|
+|56919 |在单元格云上将电子表格保存为不同格式的文件时出现异常。|漏洞|
+|56922 |将范围/表导出为 HTML 文件时，数据丢失。|漏洞|
+|56936 |修复一些拼写错误的问题。|漏洞|
 
 # 历史版本
 

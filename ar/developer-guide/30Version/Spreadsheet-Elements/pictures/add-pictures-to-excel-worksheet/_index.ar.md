@@ -1,6 +1,6 @@
 ﻿---
 title: أضف صورة في ملف Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: إعلان
 type: docs
 url: /ar/pictures/add/

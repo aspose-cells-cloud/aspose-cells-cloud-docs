@@ -1,6 +1,6 @@
 ﻿---
 title: Mettre à jour un objet OLE dans une feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Mise à jour
 type: docs
 url: /fr/oleobjects/update/
@@ -8,7 +8,7 @@ aliases: [/update-a-specific-oleobject-from-excel-worksheet/]
 keywords: Update an OLE object in an Excel worksheet
 description: Aspose.Cells Cloud REST API prend en charge la mise à jour d'un objet OLE dans une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 30
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Mettre à jour un objet OLE dans une feuille de calcul Excel
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Mettre à jour un objet OLE dans une feuille de calcul Excel
 ---
 Ce REST API indique à `update` un `OLE object` dans une feuille de calcul Excel.
 
@@ -20,7 +20,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

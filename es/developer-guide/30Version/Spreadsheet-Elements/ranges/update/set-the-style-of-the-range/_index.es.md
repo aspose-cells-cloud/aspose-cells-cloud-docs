@@ -1,12 +1,12 @@
 ﻿---
 title: Establecer el estilo del rango
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Establecer estilo
 type: docs
 url: /es/ranges/update/style/
 aliases: [/set-the-style-of-the-range/]
 keywords: Set range style on an Excel workshee
-description: Aspose.Cells Cloud REST API admite la configuración de estilos de rango en una hoja de cálculo Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
+description: Aspose.Cells Cloud REST API admite la configuración de estilo de rango en una hoja de cálculo Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 70
 kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Establecer el estilo del rango
 ---
@@ -16,7 +16,7 @@ Este ejemplo le permite configurar el estilo del rango usando Aspose.Cells Cloud
 
 |**API**|**Tipo**|**Descripción**|**Enlace de recursos**|
 |:- |:- |:- |:- |
-|/celdas/{nombre}/hojasdetrabajo/{nombredehoja}/rangos/estilo|CORREO|Establecer el estilo de celda de un rango con nombre|[Estilo de rango de celdas de la hoja de trabajo posterior](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeStyle)|
+|/celdas/{nombre}/hojasdetrabajo/{nombreDeHoja}/rangos/estilo|CORREO|Establecer el estilo de celda de un rango con nombre|[Estilo de rango de celdas de la hoja de trabajo posterior](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeStyle)|
 ### **cURL Ejemplo**
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 

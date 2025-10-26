@@ -1,6 +1,6 @@
 ﻿---
 title: حذف عدة أوراق عمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: أوراق عمل متعددة
 type: docs
 url: /ar/worksheets/delete-multiple/

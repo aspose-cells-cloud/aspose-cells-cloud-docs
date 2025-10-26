@@ -1,6 +1,6 @@
 ﻿---
 title: OLE-Objekt exportieren
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: OLE-Objekt
 type: docs
 url: /de/export-excel-ole-object/

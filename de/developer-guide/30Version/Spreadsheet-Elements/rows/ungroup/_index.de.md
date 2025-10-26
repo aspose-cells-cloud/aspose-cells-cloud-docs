@@ -1,6 +1,6 @@
 ﻿---
 title: Gruppierung von Zeilen auf einem Excel-Arbeitsblatt aufheben
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ungrou
 type: docs
 url: /de/rows/ungroup/

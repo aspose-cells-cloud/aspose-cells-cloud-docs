@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma kitabını şifrele
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Excel dosyasını şifrele
 type: docs
 url: /tr/excel-file-encrypt/

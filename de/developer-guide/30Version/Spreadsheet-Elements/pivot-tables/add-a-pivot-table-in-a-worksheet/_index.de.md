@@ -1,6 +1,6 @@
 ﻿---
 title: Fügen Sie eine Pivot-Tabelle in ein Excel-Arbeitsblatt ein
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Hinzufügen
 type: docs
 url: /de/pivot-tables/add/

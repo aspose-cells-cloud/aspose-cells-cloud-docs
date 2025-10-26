@@ -1,6 +1,8 @@
 ﻿---
-title: خطة التسعير
-second_title: Aspose.Cells Cloud Documen
+title: "خطة تسعير السحابة Aspose.Cells: 150 مكالمة مجانية API شهريًا، مع نموذج تسعير متدرج لتجاوز الاستخدام"
+second_title: Documen
+ArticleTitle: Aspose.Cells Cloud Pricing Pla
+linktitle: خطة التسعير
 type: docs
 url: /ar/pricing-plan/
 description: Aspose.Cells تدعم السحابة Excel لإنشاء الكائنات الداخلية وتحويلها ودمجها وتقسيمها وحمايتها وما إلى ذلك
@@ -50,6 +52,5 @@ kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF،
         </tr>
     </tbody>
 </table>
-
 
  يرجى المراجعة[خطة التسعير وكيفية الشراء](https://purchase.aspose.cloud/buy) صفحة الويب التي تقدم نظرة عامة على خطة التسعير الفردية لدينا ولماذا لا توجد "ترقيات" أو "تخفيضات".

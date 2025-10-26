@@ -1,6 +1,6 @@
 ﻿---
 title: Kağıt Boyutu
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Kağıt Boyutu
 type: docs
 url: /tr/paper-size/

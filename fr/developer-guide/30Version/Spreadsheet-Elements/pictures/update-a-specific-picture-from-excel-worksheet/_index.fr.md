@@ -1,6 +1,6 @@
 ﻿---
 title: Mettre à jour l'image dans un fichier Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Mise à jour
 type: docs
 url: /fr/pictures/update/
@@ -8,9 +8,9 @@ aliases: [/update-a-specific-picture-from-excel-workshee/]
 keywords: Update a picture in an Excel file
 description: Aspose.Cells Cloud REST API prend en charge la mise à jour d'une image dans un fichier Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 70
-kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Mettre à jour une image dans un fichier Excel
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Mettre à jour l'image dans un fichier Excel
 ---
-Ce REST API indique l'image `update` par index de prix pour une feuille de calcul Excel.
+Ce REST API indique l'image `update` par index d'image pour une feuille de calcul Excel.
 
 ## RSET API
 
@@ -20,13 +20,13 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Nom du document.|
-| nom de la feuille| chaîne| chemin| Nom de la feuille de travail.|
-| Index des images| entier| chemin| L'index de l'image.|
+| nom de la feuille| chaîne| chemin| Nom de la feuille de calcul.|
+| index des images| entier| chemin| L'index des images.|
 | image|| corps| Objet image|
 | dossier| chaîne| requête| Le dossier de documents.|
 | nom de stockage| chaîne| requête| nom de stockage.|

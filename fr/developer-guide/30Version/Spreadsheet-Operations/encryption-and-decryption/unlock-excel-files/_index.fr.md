@@ -1,6 +1,6 @@
 ﻿---
 title: Déverrouiller le fichier Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Déverrouiller le fichier Excel
 type: docs
 url: /fr/unlock-excel-files/
@@ -20,7 +20,7 @@ POST http://api.aspose.cloud/v3.0/cells/unlock
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

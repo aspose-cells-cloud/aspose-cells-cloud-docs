@@ -3,7 +3,7 @@ title:  احصل على مخطط الفئة الثانية Axi
 type: docs
 url: /ar/charts/second-category-axis/get/
 weight: 60
-kwords: Excel، Office Cloud، REST API، جدول بيانات، PDF، CSV، Json، Markdown، الحصول على مخطط المحور الثاني للفئة
+kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، JSON، Markdown، الحصول على مخطط المحور الفئة الثانية
 ---
  يشير هذا REST API إلى محور الفئة الثانية للمخطط.
  

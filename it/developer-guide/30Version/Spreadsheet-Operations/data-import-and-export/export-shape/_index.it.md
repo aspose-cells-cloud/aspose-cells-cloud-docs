@@ -1,6 +1,6 @@
 ﻿---
 title: Esportazione Shap
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Forma
 type: docs
 url: /it/export-excel-shape-to-different-formats/
@@ -16,7 +16,7 @@ kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdo
 
 |**API**|**Tipo**|**Descrizione**|**Collegamento Swagger**|
 |:- |:- |:- |:- |
-|/celle/esporta|METTERE|Esportare oggetti Excel dal contenuto della richiesta in un formato specifico|[PostExport](https://apireference.aspose.cloud/cells/#/LightCells/PostExport)|
+|/cellule/esporta|METTERE|Esportare oggetti Excel dal contenuto della richiesta in un formato specifico|[PostExport](https://apireference.aspose.cloud/cells/#/LightCells/PostExport)|
 
  IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
 

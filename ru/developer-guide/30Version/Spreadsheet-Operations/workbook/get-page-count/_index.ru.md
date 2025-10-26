@@ -1,6 +1,6 @@
 ﻿---
 title: Получить количество страниц из файла Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Страница
 type: docs
 url: /ru/get-page-count-from-an-excel-file/

@@ -1,6 +1,6 @@
 ﻿---
 title: Cancella gli oggetti nel file Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Pulito
 type: docs
 url: /it/clear/

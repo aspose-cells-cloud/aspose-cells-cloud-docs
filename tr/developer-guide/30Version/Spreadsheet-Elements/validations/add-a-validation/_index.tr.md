@@ -1,6 +1,6 @@
 ﻿---
 title: Excel numaralı çalışma sayfasına bir çalışma sayfası doğrulaması ekleyin
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Reklam
 type: docs
 url: /tr/validations/add/

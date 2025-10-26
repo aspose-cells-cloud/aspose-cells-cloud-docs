@@ -1,6 +1,6 @@
 ﻿---
 title: Экспорт рабочей книги
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Рабочая книга
 type: docs
 url: /ru/export-excel-to-different-formats/

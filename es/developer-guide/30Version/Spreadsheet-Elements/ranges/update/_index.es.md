@@ -1,6 +1,6 @@
 ﻿---
 title: Cómo actualizar el contenido del rango desde una hoja de cálculo Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Actualización
 type: docs
 url: /es/ranges/update/
@@ -15,4 +15,4 @@ kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown
 - [Cómo establecer el estilo de rango en una hoja de cálculo Excel.](/cells/es/ranges/update/style/) 
 - [Cómo establecer valores de rango en una hoja de cálculo Excel.](/cells/es/ranges/update/values/) 
 - [Cómo establecer las alturas de fila de un rango en una hoja de cálculo Excel.](/cells/es/ranges/update/row-height/) 
-- [Cómo establecer anchos de columna de rango en una hoja de cálculo Excel.](/cells/es/ranges/update/column-width/) 
+- [Cómo establecer el ancho de las columnas de un rango en una hoja de cálculo Excel.](/cells/es/ranges/update/column-width/) 

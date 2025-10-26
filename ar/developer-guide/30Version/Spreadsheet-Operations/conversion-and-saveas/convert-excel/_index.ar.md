@@ -1,6 +1,6 @@
 ﻿---
 title: تحويل ملف Excel إلى تنسيق مختلف
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: تحويل Excel
 type: docs
 url: /ar/convert-an-excel-file-to-different-formats/
@@ -18,7 +18,7 @@ kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF،
 
 |اسم المعلمة|يكتب|وصف|
 |:- |:- |:- |
-|شكل|خيط|تنسيق الملف: csv، xls، html، mhtml، ods، pdf، xml، txt، tiff، xlsb، xlsm، xlsx، xltm، xltx، xps، png، jpg، gif، emf، bmp، md، Numbers، wmf، svg، وما إلى ذلك.|
+|شكل|خيط| تنسيق الملف: csv، xls، html، mhtml، ods، pdf، xml، txt، tiff، xlsb، xlsm، xlsx، xltm، xltx، xps، png، jpg، gif، emf، bmp، md، Numbers، wmf، svg، وما إلى ذلك.|
 |كلمة المرور|خيط| كلمة المرور المطلوبة لفتح الملف Excel.|
 |المسار الخارجي|خيط| مسار حفظ النتيجة. إذا كان ملفًا واحدًا، فيجب أن يتضمن الرمز `outPath` اسم الملف وامتداده. أما في حالة وجود ملفات متعددة، فيجب أن يتضمن الرمز `outPath` المجلد فقط.|
 |اسم التخزين|خيط| اسم التخزين الذي يقع فيه الملف.|

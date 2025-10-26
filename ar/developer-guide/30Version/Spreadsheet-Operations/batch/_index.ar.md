@@ -1,6 +1,6 @@
 ﻿---
 title: معالجة دفعات لملفات Excel. التحويل، القفل، الحماية، التقسيم، وفتح القفل
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: ملف الدفعة Excel
 type: docs
 url: /ar/batch/
@@ -9,3 +9,8 @@ description: يدعم Aspose.Cells Cloud API معالجة دفعات لملفا�
 weight: 35
 kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، الدفعة، التحويل، القفل، الحماية، التقسيم، وفتح القفل.
 ---
+- **["تحويل دفعة واحدة لملفات Excel"](https://docs.aspose.cloud/cells/batch/convert)**
+- **["قفل الدفعة Excel ملفات"](https://docs.aspose.cloud/cells/batch/lock)**
+- **["حماية الدفعة للملفات Excel"](https://docs.aspose.cloud/cells/batch/protect)**
+- **["تقسيم الدفعة"](https://docs.aspose.cloud/cells/batch/split)**
+- **["فتح الدفعة"](https://docs.aspose.cloud/cells/batch/unlock)**

@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma dosyasının şifresini çözün
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Excel dosyasının şifresini çöz
 type: docs
 url: /tr/excel-file-decrypt/

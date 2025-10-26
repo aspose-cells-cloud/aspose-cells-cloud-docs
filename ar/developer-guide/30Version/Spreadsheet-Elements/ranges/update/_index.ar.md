@@ -1,6 +1,6 @@
 ﻿---
 title: كيفية تحديث محتوى النطاق من ورقة عمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: تحديث
 type: docs
 url: /ar/ranges/update/

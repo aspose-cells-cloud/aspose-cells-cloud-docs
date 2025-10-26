@@ -1,6 +1,6 @@
 ﻿---
 title: Crea una cartella di lavoro vuota Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Libro di lavoro vuoto
 type: docs
 url: /it/create-an-empty-excel-file/

@@ -1,6 +1,6 @@
 ﻿---
 title: Ajouter un saut de page horizontal
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ajouter un saut de page horizontal
 type: docs
 url: /fr/page-breaks/add-horizontal-page-break/
@@ -10,7 +10,7 @@ description: Aspose.Cells Cloud REST API prend en charge l'ajout d'un saut de pa
 weight: 30
 kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Ajouter un saut de page horizontal
 ---
-Ce REST API indique d'insérer le saut de page `vertical`.
+Ce REST API indique d'insérer un saut de page `vertical`.
 
 ## RSET API
 
@@ -20,7 +20,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/horizontalp
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

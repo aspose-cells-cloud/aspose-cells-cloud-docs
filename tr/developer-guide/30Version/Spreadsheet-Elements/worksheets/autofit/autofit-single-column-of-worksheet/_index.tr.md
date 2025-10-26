@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma sayfasına bir sütunu otomatik olarak sığdır
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Sütun
 type: docs
 url: /tr/worksheets/autofit/column/

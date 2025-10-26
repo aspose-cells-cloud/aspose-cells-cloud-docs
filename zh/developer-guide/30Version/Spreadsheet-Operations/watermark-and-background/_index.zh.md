@@ -1,6 +1,6 @@
 ﻿---
 title: 在 Excel 文件中插入水印或设置背景
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: 水印和背景
 type: docs
 url: /zh/watermark-and-background/

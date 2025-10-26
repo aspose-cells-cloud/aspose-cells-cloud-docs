@@ -1,6 +1,6 @@
 ﻿---
 title: حذف خاصية مستند معينة
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: حذف
 type: docs
 url: /ar/document-properties/delete/

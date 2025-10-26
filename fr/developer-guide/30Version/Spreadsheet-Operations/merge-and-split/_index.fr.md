@@ -1,6 +1,6 @@
 ﻿---
 title: Fusionner et diviser les fichiers Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Fusionner et diviser
 type: docs
 url: /fr/merge-and-split/

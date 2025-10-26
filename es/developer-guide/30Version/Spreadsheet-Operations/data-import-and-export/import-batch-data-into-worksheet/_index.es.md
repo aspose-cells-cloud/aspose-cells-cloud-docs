@@ -1,6 +1,6 @@
 ﻿---
 title: Importar datos por lotes a la hoja de trabajo Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Importar datos por lotes
 type: docs
 url: /es/import-batch-data-into-excel/
@@ -30,7 +30,7 @@ Los parámetros importantes se describen en la siguiente tabla:
 |Nombre del parámetro|Tipo|Descripción|
 |:- |:- |:- |
 | Datos por lotes|Lista<CellValue> | datos del lote|
-| Hoja de trabajo de destino| cadena| Nombre de la hoja de trabajo de destino.|
+|Hoja de trabajo de destino| cadena| Nombre de la hoja de trabajo de destino.|
 | EsInsertar| cadena| verdadero/falso.|
 | Importar tipo de datos| cadena|IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData.|
 | Fuente| Fuente del archivo| Indica la posición del archivo de datos cuando el parámetro BatchData es nulo.|
@@ -72,7 +72,7 @@ Los parámetros importantes se describen en la siguiente tabla:
 
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
 
 Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
 

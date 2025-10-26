@@ -1,6 +1,6 @@
 ﻿---
 title: Sostituisci il testo dal file Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Sostituire senza utilizzare lo stoccaggio
 type: docs
 url: /it/replace/

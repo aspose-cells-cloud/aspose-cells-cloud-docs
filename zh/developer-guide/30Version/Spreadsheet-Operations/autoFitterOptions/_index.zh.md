@@ -1,13 +1,13 @@
 ﻿---
 title: 自动安装选项
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: 自动安装选项
 type: docs
 url: /zh/auto-fitter-options/
 keywords: Auto Fitter Options
 description: Aspose.Cells Cloud REST API 支持将 Excel 文件转换为多种格式的文件。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
 weight: 79
-kwords: Excel, Office 云, REST API, 电子表格, PDF, CSV, Json, Markdown, 保存选项
+kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、保存选项
 ---
 # AutoFitterOptions 属性
 

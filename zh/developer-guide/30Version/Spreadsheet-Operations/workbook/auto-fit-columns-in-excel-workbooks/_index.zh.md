@@ -1,6 +1,6 @@
 ﻿---
 title: 自动调整 Excel fil 上的列
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: 柱子
 type: docs
 url: /zh/autofit-columns-on-an-excel-file/
@@ -10,7 +10,7 @@ description: Aspose.Cells Cloud REST API 支持在 Excel 工作簿上自动调�
 weight: 90
 kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、Excel 工作簿上的自动调整列
 ---
-此 REST API 表示自动调整 Excel 工作簿上的列。
+此 REST API 表示在 Excel 工作簿上自动调整列。
 
 ## 重新设置 API
 
@@ -31,7 +31,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/autofitcolumns
 |文件夹|细绳|询问|文档的文件夹。|
 |存储名称|细绳|询问|存储名称。|
 
-这[OpenAPI规范](https://apireference.aspose.cloud/cells/#/Workbook/PostAutofitWorkbookColumns)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Workbook/PostAutofitWorkbookColumns)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
 
 您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
 

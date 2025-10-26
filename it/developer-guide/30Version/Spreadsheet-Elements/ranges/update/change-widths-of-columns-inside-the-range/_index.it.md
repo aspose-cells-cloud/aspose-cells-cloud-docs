@@ -1,6 +1,6 @@
 ﻿---
 title: Modificare la larghezza delle colonne all'interno dell'intervallo
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Larghezza della colonna
 type: docs
 url: /it/ranges/update/column-width/

@@ -1,6 +1,6 @@
 ﻿---
 title: Yatay sayfa sonu ekle
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Yatay sayfa sonu ekle
 type: docs
 url: /tr/page-breaks/add-horizontal-page-break/

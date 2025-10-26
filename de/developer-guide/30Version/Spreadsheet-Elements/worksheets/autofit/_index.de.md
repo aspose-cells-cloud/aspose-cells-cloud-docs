@@ -1,6 +1,6 @@
 ﻿---
 title:  Arbeiten mit Autofit auf einem Excel-Arbeitsblatt
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Autofi
 type: docs
 url: /de/worksheets/autofit/

@@ -1,6 +1,6 @@
 ﻿---
 title: Ordnen Sie alle leeren Zellen in einem Excel-Arbeitsblatt zu
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Leere Zelle abgleichen
 type: docs
 url: /de/autofilter/match-all-blank/

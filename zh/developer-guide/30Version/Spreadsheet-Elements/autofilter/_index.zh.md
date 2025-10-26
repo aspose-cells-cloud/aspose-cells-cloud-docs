@@ -1,6 +1,6 @@
 ﻿---
 title: 使用 Excel AutoFilte
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: 自动过滤
 type: docs
 url: /zh/autofilter/
@@ -37,7 +37,7 @@ Aspose.Cells Cloud 提供多种 API 来应用不同类型的过滤器，如颜�
     <td class="col-md-2"> <li>动态日期</li> </td>
   <td class="col-md-10">
   <p>
-有时需要根据日期进行动态过滤，例如所有单元格的日期都在一月份，而不管年份如何。<a href="/cells/zh/autofilter/add-dynamic-filter/">动态过滤器 API</a>  
+有时需要根据日期进行动态过滤，例如所有单元格的日期都在一月份，而不管年份如何。<a href="/cells/zh/autofilter/add-dynamic-filter/">动态过滤器的API</a>  
 </p>
   </td>
   </tr>
@@ -62,7 +62,7 @@ Aspose.Cells Cloud 提供多种 API 来应用不同类型的过滤器，如颜�
   <td class="col-md-10">
   <p>
 
-如果某列包含文本，且其中很少有单元格是空白的，并且需要过滤器来选择仅存在空白单元格的行，<a href="/cells/zh/autofilter/match-all-blank/">匹配所有空白单元格 API</a>可以使用
+如果某列包含文本，且其中很少有空白单元格，并且需要过滤器来选择仅存在空白单元格的行，<a href="/cells/zh/autofilter/match-all-blank/">匹配所有空白单元格 API</a>可以使用
 </p>
   </td>
   </tr>
@@ -71,7 +71,7 @@ Aspose.Cells Cloud 提供多种 API 来应用不同类型的过滤器，如颜�
   <td class="col-md-10">
   <p>
 
-当需要过滤包含任何文本的单元格时，<a href="/cells/zh/autofilter/match-all-blank/">匹配所有空白单元格 API</a>可以使用
+当要过滤包含任何文本的单元格时，<a href="/cells/zh/autofilter/match-all-blank/">匹配所有空白单元格 API</a>可以使用
 </p>
   </td>
   </tr>
@@ -79,7 +79,7 @@ Aspose.Cells Cloud 提供多种 API 来应用不同类型的过滤器，如颜�
     <td class="col-md-2"> <li>自定义过滤器</li> </td>
   <td class="col-md-10">
   <p>
-Aspose.Cells 云提供<a href="/cells/zh/autofilter/add-dynamic-filter/">自定义过滤器 API</a>例如包含某些特定字符串的过滤行和以某些特定字符串开头或结尾的过滤行。
+Aspose.Cells 云提供<a href="/cells/zh/autofilter/add-dynamic-filter/">自定义过滤器 API</a>比如包含某些特定字符串的过滤行和以某些特定字符串开头或结尾的过滤行。
 </p>
   </td>
   </tr>

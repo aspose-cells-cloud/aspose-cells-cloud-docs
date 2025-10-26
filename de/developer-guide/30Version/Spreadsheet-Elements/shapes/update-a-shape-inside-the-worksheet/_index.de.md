@@ -1,7 +1,7 @@
 ﻿---
 title: Aktualisieren Sie eine Form auf einem Excel-Arbeitsblatt
-second_title: Aspose.Cells Cloud Documen
-linktitle: Aktualisierung
+second_title: Documen
+linktitle: Aktualisieren
 type: docs
 url: /de/shapes/update/
 aliases: [/update-a-shape-inside-the-worksheet/]

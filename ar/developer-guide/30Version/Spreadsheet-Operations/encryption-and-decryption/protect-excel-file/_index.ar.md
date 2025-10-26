@@ -1,6 +1,6 @@
 ﻿---
 title: حماية كتاب العمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: حماية Excel Fil
 type: docs
 url: /ar/protect-excel-file/

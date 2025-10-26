@@ -1,6 +1,6 @@
 ﻿---
 title: Ajouter une signature numérique pour le classeur Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Signature numérique
 type: docs
 url: /fr/excel-digital-signature/
@@ -8,7 +8,7 @@ aliases: [/protect/digital-signature/,/workbook/digital-signature/]
 keywords: Add digital signature for an Excel workbook
 description: Aspose.Cells Cloud REST API prend en charge l'ajout d'une signature numérique pour un classeur Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 35
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Ajouter une signature numérique pour le classeur Excel
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Ajouter une signature numérique pour le classeur Excel
 ---
 Ce REST API indique d'ajouter un `digital signature` pour un classeur Excel.
 
@@ -20,7 +20,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/digitalsignature
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

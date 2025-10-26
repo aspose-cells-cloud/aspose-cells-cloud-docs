@@ -1,6 +1,6 @@
 ﻿---
 title: Разделить объединенные ячейки диапазона
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Unmerg
 type: docs
 url: /ru/ranges/unmerge/

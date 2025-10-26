@@ -1,6 +1,6 @@
 ﻿---
 title: Dikey sayfa sonunu sil
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Dikey sayfa sonunu sil
 type: docs
 url: /tr/page-breaks/delete-vertical-page-break/

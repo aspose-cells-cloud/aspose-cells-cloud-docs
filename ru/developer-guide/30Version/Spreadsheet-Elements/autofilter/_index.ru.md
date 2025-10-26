@@ -1,6 +1,6 @@
 ﻿---
 title: Работа с Excel AutoFilte
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Автофильтр
 type: docs
 url: /ru/autofilter/

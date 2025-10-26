@@ -1,6 +1,6 @@
 ﻿---
 title: احصل على جميع جداول البيانات المحورية في ورقة عمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: احصل على كل شيء
 type: docs
 url: /ar/pivot-tables/get-all/

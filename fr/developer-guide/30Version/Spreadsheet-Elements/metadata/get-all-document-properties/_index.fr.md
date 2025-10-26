@@ -1,6 +1,6 @@
 ﻿---
 title: Obtenir toutes les propriétés du document
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Obtenez tout
 type: docs
 url: /fr/document-properties/get-all/
@@ -20,7 +20,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/documentproperties
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

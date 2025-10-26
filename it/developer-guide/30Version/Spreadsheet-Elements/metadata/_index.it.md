@@ -1,6 +1,6 @@
 ﻿---
 title: Lavorare con metadati e proprietà Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Metadati e proprietà
 type: docs
 url: /it/metadata/

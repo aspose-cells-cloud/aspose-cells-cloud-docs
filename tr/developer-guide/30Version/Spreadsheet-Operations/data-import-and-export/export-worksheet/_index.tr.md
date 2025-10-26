@@ -1,6 +1,6 @@
 ﻿---
 title: Çalışma Sayfasını Dışa Aktar
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Çalışma sayfası
 type: docs
 url: /tr/export-excel-worksheet-to-different-formats/

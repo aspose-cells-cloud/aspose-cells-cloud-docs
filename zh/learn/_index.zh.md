@@ -3,6 +3,7 @@ title: 了解 Aspose.Cells Clou
 type: docs
 url: /zh/learn
 aliases: [/learn-aspose-cells-cloud]
+linktitle: 李尔王
 description: 欢迎了解Aspose.Cells云
 weight: 15
 kwords: Excel, Office 云, REST API, 电子表格, PDF, CSV, Json, Markdown, 欢迎学习 Aspose.Cells 云
@@ -17,7 +18,7 @@ kwords: Excel, Office 云, REST API, 电子表格, PDF, CSV, Json, Markdown, 欢
 
 ## 谁应该使用 Aspose.Cells 云 API？
 
-开发人员构建电子表格自动化解决方案 - 从初学者到企业团队。无需安装 Excel 即可创建、编辑、转换和分析 XLSX/CSV 文件 via REST API。
+开发人员构建电子表格自动化解决方案——从初学者到企业团队。无需安装 Excel，即可创建、编辑、转换和分析 XLSX/CSV 文件 via REST API。
 
 ## **如何分两步使用 Aspose.Cells Cloud API**
 

@@ -1,6 +1,6 @@
 ﻿---
 title: معلومات الملف
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: معلومات الملف
 type: docs
 url: /ar/file-info/

@@ -1,6 +1,8 @@
 ﻿---
-title: تنسيق الملف المدعوم
-second_title: Aspose.Cells Cloud Documen
+title: Aspose.Cells تنسيق الملف المدعوم من السحابة
+second_title: Documen
+ArticleTitle: "Aspose.Cells Cloud Supported File Formats: Excel, Pdf, CSV, Json, Markdown, and mor"
+linktitle: تنسيق الملف المدعوم
 type: docs
 url: /ar/supported-file-formats/
 description: Aspose.Cells تدعم السحابة Excel لإنشاء الكائنات الداخلية وتحويلها ودمجها وتقسيمها وحمايتها وما إلى ذلك

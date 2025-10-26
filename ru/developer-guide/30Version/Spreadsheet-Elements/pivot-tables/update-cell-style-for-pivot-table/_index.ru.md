@@ -1,6 +1,6 @@
 ﻿---
 title: Обновить стиль ячейки для сводной таблицы
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Формат
 type: docs
 url: /ru/pivot-tables/format/

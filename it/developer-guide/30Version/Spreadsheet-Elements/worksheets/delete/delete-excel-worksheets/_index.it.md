@@ -1,6 +1,6 @@
 ﻿---
 title: Elimina più fogli di lavoro Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Foglio di lavoro multiplo
 type: docs
 url: /it/worksheets/delete-multiple/

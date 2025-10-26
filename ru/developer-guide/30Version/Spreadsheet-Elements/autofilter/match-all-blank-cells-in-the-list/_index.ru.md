@@ -1,6 +1,6 @@
 ﻿---
 title: Найдите все пустые ячейки на рабочем листе Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Сопоставить пустую ячейку
 type: docs
 url: /ru/autofilter/match-all-blank/

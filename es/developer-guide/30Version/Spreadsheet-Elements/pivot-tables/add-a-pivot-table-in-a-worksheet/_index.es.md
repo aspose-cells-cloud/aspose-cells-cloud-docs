@@ -1,12 +1,12 @@
 ﻿---
 title: Agregar una tabla dinámica en una hoja de cálculo Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Agregar
 type: docs
 url: /es/pivot-tables/add/
 aliases: [/add-a-pivot-table-in-a-worksheet/]
 keywords: Add a pivot table in an Excel worksheet
-description: Aspose.Cells Cloud REST API admite la adición de una tabla dinámica en una hoja de cálculo Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
+description: Aspose.Cells Cloud REST API permite añadir una tabla dinámica a una hoja de cálculo Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 30
 kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Agregar una tabla dinámica en una hoja de cálculo Excel
 ---
@@ -28,10 +28,10 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables
 | pedido|| cuerpo| CreatePivotTableRequest dto en el cuerpo de la solicitud.|
 | carpeta| cadena| consulta| Carpeta del documento.|
 | nombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
-| Datos de origen| cadena| consulta| Los datos para la nueva caché de tabla dinámica.|
+| datos de origen| cadena| consulta| Los datos para la nueva caché de tabla dinámica.|
 |nombreCeldaDestino| cadena| consulta| La celda en la esquina superior izquierda del rango de destino del informe de tabla dinámica.|
 | nombre de la tabla| cadena| consulta| El nombre del nuevo informe de tabla dinámica.|
-| useSameSource| booleano| consulta| Indica si se usa la misma fuente de datos cuando otra tabla dinámica ya la ha usado. Si la propiedad es verdadera, se ahorrará memoria.|
+| usar la misma fuente| booleano| consulta| Indica si se usa la misma fuente de datos cuando otra tabla dinámica ya la ha usado. Si la propiedad es verdadera, se ahorrará memoria.|
  
  El[Especificación OpenAPI](https://apireference.aspose.cloud/cells/#/PivotTables/PutWorksheetPivotTable) define una interfaz de programación de acceso público y le permite realizar interacciones REST directamente desde un navegador web.
  
@@ -70,7 +70,7 @@ curl -v  "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet
  
 ## Familia de SDK en la nube
  
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
  
 Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
 

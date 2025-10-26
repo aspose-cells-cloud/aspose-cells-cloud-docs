@@ -1,6 +1,8 @@
 ﻿---
-title: Primeros pasos
-second_title: How to Process Excel Files in 3 Steps Using Aspose.Cells Cloud WEB API
+title: "Aspose.Cells Introducción a la nube: Cómo procesar archivos Excel en 3 pasos usando Aspose.Cells Nube WEB API"
+second_title: Documen
+ArticleTitle: Aspose.Cells Cloud Getting Starte
+linktitle: Primeros pasos
 type: docs
 url: /es/getting-started/
 description: Aspose.Cells Cloud admite Excel para crear, convertir, fusionar, dividir, proteger, realizar operaciones con objetos internos, etc.

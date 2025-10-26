@@ -1,6 +1,6 @@
 ﻿---
 title: Pivot filtreyle çalışma
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Filtreler
 type: docs
 url: /tr/pivot-tables/add-filters/

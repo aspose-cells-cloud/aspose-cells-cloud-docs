@@ -1,6 +1,6 @@
 ﻿---
 title: Legen Sie die Höhe der Zeilen innerhalb des Bereichs fest
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Zeilenhöhe
 type: docs
 url: /de/ranges/update/row-height/

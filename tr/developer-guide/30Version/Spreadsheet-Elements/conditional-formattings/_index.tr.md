@@ -1,6 +1,6 @@
 ﻿---
 title: Excel koşullu biçimlendirme ile çalışma
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Koşullu Biçimlendirme
 type: docs
 url: /tr/conditional-formattings/

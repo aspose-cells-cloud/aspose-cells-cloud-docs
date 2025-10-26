@@ -1,6 +1,6 @@
 ﻿---
 title: Depolama kullanmadan Verileri İçe Aktar
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Depolama olmadan veri içe aktar
 type: docs
 url: /tr/import/without-using-storage/ 

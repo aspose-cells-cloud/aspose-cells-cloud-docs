@@ -1,6 +1,6 @@
 ﻿---
 title: 在 Excel 工作表中添加图标过滤器
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: 添加图标过滤器
 type: docs
 url: /zh/autofilter/add-icon-filter/
@@ -28,14 +28,14 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/
 |工作表名称|细绳|小路|工作表名称。|
 |范围|细绳|询问||
 |字段索引|整数|询问||
-|图标集类型|细绳|询问|箭头 3/箭头灰色 3/旗帜 3/标志 3/符号 3/符号 32/交通灯 31/交通灯 32/箭头 4/箭头灰色 4/评级 4/红转黑 4/交通灯 4/箭头 5/箭头灰色 5/季度 5/评级 5/星星 3/方框 5/三角形 3/无/自定义设置/表情符号 3/颜色表情符号 3|
+|图标集类型|细绳|询问|箭头 3/箭头灰色 3/旗帜 3/标志 3/符号 3/符号 32/交通灯 31/交通灯 32/箭头 4/箭头灰色 4/评级 4/红转黑 4/交通灯 4/箭头 5/箭头灰色 5/四分之一 5/评级 5/星星 3/方框 5/三角形 3/无/自定义设置/表情符号 3/颜色表情符号 3|
 |图标编号|整数|询问||
 |匹配空白|细绳|询问|正确/错误|
 |刷新|细绳|询问|正确/错误|
 |文件夹|细绳|询问|原始工作簿文件夹。|
 |存储名称|询问|细绳|存储名称。|
 
-这[OpenAPI规范](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetIconFilter)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetIconFilter)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
 
 您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
 

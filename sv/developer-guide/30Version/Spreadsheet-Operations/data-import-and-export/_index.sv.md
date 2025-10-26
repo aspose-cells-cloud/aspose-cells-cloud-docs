@@ -1,6 +1,6 @@
 ﻿---
 title: Importera data till Excel-filer och exportera data från Excel-filer
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Importera och exportera data
 type: docs
 url: /sv/data-import-and-export/
@@ -107,7 +107,7 @@ Följande API:er för att importera data till en Excel-fil eller flera Excel-fil
     <tr><td>Data</td><td> Heltal[,]</td> <td></td></tr>
     <tr> <td>Destinationsarbetsblad</td><td> Sträng</td><td> Namn på målarbetsblad.</td></tr>
     <tr><td>ÄrInfoga</td><td>Sträng</td><td>sant/falskt.</td></tr>
-    <tr><td>Importera datatyp</td><td> Sträng</td><td>Tvådimensionell int-matris</td></tr>
+    <tr><td>Importera datatyp</td><td> Sträng</td><td>Tvådimensionell int-array</td></tr>
     <tr> <td>Källa</td><td> Filkälla</td><td>Anger datafilens position när BatchData-parametern är null.</td></tr>
   </tbody>
 </table>
@@ -231,7 +231,7 @@ Följande API:er för att importera data till en Excel-fil eller flera Excel-fil
 
 ## Hur man exporterar Excel-objekt till olika filformat
 
- Om du ursprungligen skapade en Excel-fil i ett visst format, som[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/) och[CSV-fil](https://docs.fileformat.com/spreadsheet/csv/) kan det ibland vara bra att konvertera Excel-filen till ett annat format så att du kan dra nytta av specialfunktioner som den erbjuder. Du kanske till exempel vill exportera en Excel-fil till[PDF](https://docs.fileformat.com/pdf/)för att skydda ditt innehåll från obehöriga ändringar och göra det enkelt att läsa och dela samtidigt.
+Om du ursprungligen skapade en Excel-fil i ett visst format, som[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/) och[CSV-fil](https://docs.fileformat.com/spreadsheet/csv/) kan det ibland vara bra att konvertera Excel-filen till ett annat format så att du kan dra nytta av specialfunktioner som den erbjuder. Du kanske till exempel vill exportera en Excel-fil till[PDF](https://docs.fileformat.com/pdf/) för att skydda ditt innehåll från obehöriga ändringar och göra det enkelt att läsa och dela samtidigt.
 
 Export av Excel-objekt är en komplex process. Många faktorer bidrar till komplexiteten och bör därför beaktas under exportprocessen. Möjligheten att exportera Excel-objekt till en enda filformat med exakt professionell kvalitet är en av de viktigaste funktionerna i Aspose.Cells Cloud.
 

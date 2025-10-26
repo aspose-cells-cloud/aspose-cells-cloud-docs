@@ -15,12 +15,12 @@ Ce REST API indique comment obtenir des informations sur le format de remplissag
 GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/chartArea/fillFormat
  
 ```
- Les paramètres de la requête sont :
+ Les paramètres de la requête sont :
  
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Nom du classeur.|
-| nom de la feuille| chaîne| chemin| Nom de la feuille de travail.|
+| nom de la feuille| chaîne| chemin| Nom de la feuille de calcul.|
 | index des graphiques| entier| chemin| L'index des graphiques.|
 | dossier| chaîne| requête| Dossier de classeur.|
 | nom de stockage| chaîne| requête| nom de stockage.|

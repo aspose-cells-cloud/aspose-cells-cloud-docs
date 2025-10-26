@@ -1,6 +1,6 @@
 ﻿---
 title: Aralığın birleştirilmiş hücrelerini ayır
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Birleştirmeyi kaldır
 type: docs
 url: /tr/ranges/unmerge/

@@ -1,6 +1,6 @@
 ﻿---
 title: Размер бумаги
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Размер бумаги
 type: docs
 url: /ru/paper-size/

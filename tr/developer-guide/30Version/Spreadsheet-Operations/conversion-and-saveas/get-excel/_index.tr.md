@@ -1,6 +1,6 @@
 ﻿---
 title: Excel dosyasını başka bir biçime alır
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Excel'i edinin
 type: docs
 url: /tr/get different formats files/

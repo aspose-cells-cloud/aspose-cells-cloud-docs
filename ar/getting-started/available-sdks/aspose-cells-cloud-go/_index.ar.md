@@ -1,13 +1,15 @@
 ﻿---
-title: Aspose.Cells مجموعة تطوير البرامج السحابية لنظام G
-second_title: Aspose.Cells Cloud Documen
+title: "Aspose.Cells مجموعة SDK السحابية لنظام Go: التحويل، والدمج، والتقسيم، والحماية، والبحث، والاستبدال، والمزيد"
+second_title: Documen
+ArticleTitle: "Aspose.Cells Cloud SDK for Go: Convert, merge, split, protect, search, replace, and more"
+linktitle: Aspose.Cells مجموعة تطوير البرامج السحابية لنظام G
 type: docs
 url: /ar/available-sdks/aspose-cells-cloud-go/
-description: توفر مجموعة تطوير البرامج السحابية Aspose.Cells للغة Go دعمًا قويًا متعدد المنصات لمطوري Go، مما يسهل دمجها واستخدامها مع أنظمة Windows وLinux وmacOS. كما تدعم Excel إنشاء الكائنات وتحويلها ودمجها وتقسيمها وحمايتها وتشغيل الكائنات الداخلية، وما إلى ذلك.
+description: "توفر مجموعة SDK السحابية Aspose.Cells لنظام Go قوة حقيقية عبر الأنظمة الأساسية: يوفر استيراد واحد للمطورين Windows وLinux وmacOS نفس القدرة على إنشاء وتحويل ودمج وتقسيم وحماية وحذف الصفوف/الأعمدة الفارغة والتلاعب بكل كائن Excel - لا يتطلب تثبيت Office ولا تعديلات خاصة بالمنصة"
 weight: 30
-kwords: Go، Excel، Office Cloud، REST API، مخطط، جدول محوري، جدول، جدول بيانات، PDF، CSV، Json، Markdown
+kwords: مجموعة أدوات تطوير البرامج Go، مجموعة أدوات تطوير البرامج Excel لـ GoLang، مجموعة أدوات تطوير البرامج السحابية لـ Go، REST، مخطط، جدول محوري، كائن جدول/قائمة، تحويل جدول بيانات، PDF، CSV، JSON، Markdown، دمج، تقسيم، حماية، بحث، استبدال
 ---
- مجموعة تطوير البرامج (SDK) مفتوحة المصدر ومرخصة بموجب ترخيص معهد ماساتشوستس للتكنولوجيا (MIT). يمكنك الوصول إلى الكود المصدري لمكتبة Go لـ Aspose.Cells Cloud.[هنا](https://github.com/aspose-cells-cloud/aspose-cells-cloud-go).
+مجموعة تطوير البرامج مفتوحة المصدر ومرخصة بموجب ترخيص معهد ماساتشوستس للتكنولوجيا. يمكنك الوصول إليها[كود مصدر مكتبة Go لـ Aspose.Cells Cloud](https://github.com/aspose-cells-cloud/aspose-cells-cloud-go).
 
 # **كيفية استخدام مكتبة Go من Aspose.Cells Cloud**
 

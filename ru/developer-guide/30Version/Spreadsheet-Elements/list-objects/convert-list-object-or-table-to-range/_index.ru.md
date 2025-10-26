@@ -1,6 +1,6 @@
 ﻿---
 title: Преобразовать объект списка в диапазон на рабочем листе Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Конверсио
 type: docs
 url: /ru/list-objects/to-range/

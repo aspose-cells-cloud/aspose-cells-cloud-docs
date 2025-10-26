@@ -1,6 +1,6 @@
 ﻿---
 title: Установите стиль ранга
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Установить стиль
 type: docs
 url: /ru/ranges/update/style/

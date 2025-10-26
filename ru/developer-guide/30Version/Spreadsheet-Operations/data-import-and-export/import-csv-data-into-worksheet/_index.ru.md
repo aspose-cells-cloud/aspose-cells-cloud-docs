@@ -1,6 +1,6 @@
 ﻿---
 title: Импорт данных CSV в рабочий лист Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Импорт csv-данных
 type: docs
 url: /ru/import-csv-data-into-excel/
@@ -42,7 +42,7 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
 |:- |:- |:- |
 | ColumnIndex| инт||
 | ParseMethod| нить||
-| Пользовательский стиль| нить||
+| CustomStyle| нить||
 
 **Пример**
 

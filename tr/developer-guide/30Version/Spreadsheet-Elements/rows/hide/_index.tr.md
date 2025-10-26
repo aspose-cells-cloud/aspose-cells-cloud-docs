@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma sayfasındaki satırları gizle
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Saklandı
 type: docs
 url: /tr/rows/hide/

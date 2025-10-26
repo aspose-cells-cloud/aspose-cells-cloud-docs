@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma sayfasına bir renk filtresi ekleyin
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Renk filtresi ekle
 type: docs
 url: /tr/autofilter/add-color-filter/

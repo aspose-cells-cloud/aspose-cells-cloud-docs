@@ -1,6 +1,6 @@
 ﻿---
 title: Как получить содержимое диапазона из рабочего листа Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ге
 type: docs
 url: /ru/ranges/get/

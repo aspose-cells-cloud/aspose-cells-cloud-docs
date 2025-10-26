@@ -1,6 +1,6 @@
 ﻿---
 title: Trier les données d'objets de liste dans une feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Sor
 type: docs
 url: /fr/list-objects/sort-data/
@@ -20,13 +20,13 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobject
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin||
 | nom de la feuille| chaîne| chemin||
-| listObjectIndex| entier| chemin||
+| index d'objets de liste| entier| chemin||
 | trieur de données|| corps||
 | dossier| chaîne| requête||
 | nom de stockage| chaîne| requête| nom de stockage.|

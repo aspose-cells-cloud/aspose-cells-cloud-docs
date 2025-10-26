@@ -1,6 +1,6 @@
 ﻿---
 title: Bereich in einem Arbeitsblatt mit der Einfügeoption kopieren
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Polizist
 type: docs
 url: /de/ranges/copy/

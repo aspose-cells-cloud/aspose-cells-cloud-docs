@@ -1,6 +1,6 @@
 ﻿---
 title: Excel numaralı çalışma sayfasından çalışma sayfasını alın
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Çalışma sayfası
 type: docs
 url: /tr/worksheets/get-worksheet/

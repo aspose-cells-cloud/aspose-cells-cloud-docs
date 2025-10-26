@@ -1,6 +1,6 @@
 ﻿---
 title: Excel foglio di lavoro rinomina
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Renam
 type: docs
 url: /it/worksheets/rename/

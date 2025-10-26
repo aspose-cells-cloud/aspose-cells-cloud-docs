@@ -1,6 +1,6 @@
 ﻿---
-title: 批量保护Excel文件
-second_title: Aspose.Cells Cloud Documen
+title: 批量保护 Excel 文件
+second_title: Documen
 type: docs
 url: /zh/batch/protect
 keywords: Batch protection of multiple Excel files
@@ -28,11 +28,11 @@ POST http://api.aspose.cloud/v3.0/cells/batch/protect
 
 名称 | 类型 | 描述 | 备注
 ------------ | ------------- | ------------- | -------------
-源文件夹 | 字符串 | | [可选]匹配条件 | MatchConditionRequest | | [可选]保护类型 | 字符串 | | [可选]密码 | 字符串 | | [可选]输出文件夹 | 字符串 | | [可选]**MatchConditionRequest 属性**
+源文件夹 | 字符串 | | [可选]匹配条件 | 匹配条件请求 | | [可选]保护类型 | 字符串 | | [可选]密码 | 字符串 | | [可选]输出文件夹 | 字符串 | | [可选]**MatchConditionRequest 属性**
 
 名称 | 类型 | 描述 | 备注
 ------------ | ------------- | ------------- | -------------
-RegexPattern | 字符串 | | [可选]FullMatchConditions | 字符串[]| | [可选][OpenAPI规范](https://apireference.aspose.cloud/cells/#/PostProtectConvert)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+RegexPattern | 字符串 | | [可选]FullMatchConditions | 字符串[]| | [可选][OpenAPI 规范](https://apireference.aspose.cloud/cells/#/PostProtectConvert)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
 
 您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
 

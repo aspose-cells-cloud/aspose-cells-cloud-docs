@@ -1,11 +1,11 @@
 ﻿---
 title: Reparar el archivo Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 linktitle: Reparar el archivo Excel
 url: /es/repair-excel-files/
 keywords: Repair Excel, ODS, WPS, and so on files
-description: Repara los archivos Excel usando Aspose.Cells Cloud REST API. API admite múltiples lenguajes de desarrollo, incluidos Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift para una rápida integración en tus proyectos.
+description: Repara los archivos Excel usando Aspose.Cells Cloud REST API. El API admite múltiples lenguajes de desarrollo, incluidos Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift para una rápida integración en tus proyectos.
 weight: 39
 kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Reparación
 ---
@@ -79,7 +79,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/repair" \
 
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
 
 Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
 

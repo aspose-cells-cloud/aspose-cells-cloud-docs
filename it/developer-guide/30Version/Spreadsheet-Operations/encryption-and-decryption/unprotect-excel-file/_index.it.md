@@ -1,6 +1,6 @@
 ﻿---
 title: Sproteggi un workboo Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Sproteggi Excel fil
 type: docs
 url: /it/excel-file-unprotect/

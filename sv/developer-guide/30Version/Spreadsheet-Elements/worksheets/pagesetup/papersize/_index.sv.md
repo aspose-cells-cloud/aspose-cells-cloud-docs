@@ -1,6 +1,6 @@
 ﻿---
 title: Pappersstorlek
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Pappersstorlek
 type: docs
 url: /sv/paper-size/
@@ -90,7 +90,7 @@ kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Papp
 | PapperA4Roterat| 297 mm × 210 mm|
 | PapperA5Roterat| 210 mm × 148 mm|
 | PapperJISB4Roterad| B4 (JIS) Roterad 364 x 257 mm|
-| PapperJISB5Roterad| B5 (JIS) Roterad 257 x 182 mm|
+| PapperJISB5 Roterad| B5 (JIS) Roterad 257 x 182 mm|
 | PapperJapanskaVykortRoterade| Japanskt vykort roterat 148 x 100 mm|
 | PapperJapanskDubbelVykortRoterad| Dubbelt japanskt vykort roterat 148 x 200 mm|
 | PapperA6Roterat| A6 Roterad 148 x 105 mm|

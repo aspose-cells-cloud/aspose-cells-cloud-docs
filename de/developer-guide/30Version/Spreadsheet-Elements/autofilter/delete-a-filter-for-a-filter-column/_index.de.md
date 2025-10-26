@@ -1,6 +1,6 @@
 ﻿---
 title: Löschen eines Filters in einem Excel-Arbeitsblatt
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Filter löschen
 type: docs
 url: /de/delete-filter/

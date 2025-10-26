@@ -1,6 +1,6 @@
 ﻿---
 title: Schützen Sie ein Excel Workbook
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Schützen Sie eine Excel Fil
 type: docs
 url: /de/protect-excel-file/

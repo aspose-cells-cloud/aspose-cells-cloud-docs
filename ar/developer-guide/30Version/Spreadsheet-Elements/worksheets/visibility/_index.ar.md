@@ -1,6 +1,6 @@
 ﻿---
 title: كيفية العمل مع الرؤية على ورقة عمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: الرؤية
 type: docs
 url: /ar/worksheets/panes/

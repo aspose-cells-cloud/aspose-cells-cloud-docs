@@ -1,6 +1,6 @@
 ﻿---
 title: Excel в ПД
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Excel в ПД
 type: docs
 url: /ru/convert-excel-file-to-pdf-file/

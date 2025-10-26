@@ -1,6 +1,6 @@
 ﻿---
 title: Datumsfilter in einem Excel-Arbeitsblatt hinzufügen
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Datumsfilter hinzufügen
 type: docs
 url: /de/autofilter/add-date-filter/

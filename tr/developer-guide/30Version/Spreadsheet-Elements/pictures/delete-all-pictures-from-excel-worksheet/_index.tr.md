@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma sayfasındaki tüm resimleri silin
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Temiz
 type: docs
 url: /tr/pictures/clear/

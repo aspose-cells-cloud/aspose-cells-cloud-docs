@@ -1,7 +1,7 @@
 ﻿---
 title:  Listobjektinsatsutsnitt
-second_title: Aspose.Cells Cloud Documen
-linktitle: Infoga segment
+second_title: Documen
+linktitle: Infoga skiva
 type: docs
 keywords: Insert slicer for list object
 url: /sv/list-objects/insert-slicer/
@@ -27,7 +27,7 @@ Begäranparametrarna är:
 |arknamn|Sträng|Väg||
 |listaObjektindex|Heltal|Väg||
 |kolumnindex|Heltal|Fråga||
-|destinationCellName|Sträng|Fråga||
+|destCellName|Sträng|Fråga||
 |mapp|Sträng|Fråga||
 |lagringsnamn|Sträng|Fråga||
 

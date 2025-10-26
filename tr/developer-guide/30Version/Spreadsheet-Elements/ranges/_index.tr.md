@@ -1,6 +1,6 @@
 ﻿---
 title: Excel arandı
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Çaldı
 type: docs
 url: /tr/ranges/
@@ -21,6 +21,6 @@ Bir hücreyi, bir satırı, bir sütunu, bir veya daha fazla bitişik hücre blo
 - [Cells Aralığını Tek Bir Hücrede Birleştirir](/cells/tr/combines-a-range-of-cells-into-a-single-cell/)
 - [Çalışma Sayfasında Yapıştır Seçenekleriyle Aralığı Kopyala](/cells/tr/copy-range-in-a-worksheet-with-paste-options/)
 - [Aralığın Stilini Ayarlayın](/cells/tr/set-the-style-of-the-range/)
-- [Cells Aralığının Birleştirilmiş Halini Ayır](/cells/tr/unmerge-merged-cells-of-the-range/)
+- [Cells Aralığının Birleştirilmişini Kaldır](/cells/tr/unmerge-merged-cells-of-the-range/)
 - [Excel Çalışma Sayfası ile adlandırılmış bir aralığı taşıyın](/cells/tr/move-a-named-ranged-with-a-excel-worksheet/)
 - [Excel Çalışma Sayfasında Aralık Değerini Ayarla](/cells/tr/ranges/set-value/)

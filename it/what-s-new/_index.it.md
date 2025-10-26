@@ -1,6 +1,6 @@
 ﻿---
 title: Novità in Aspose.Cells Cloud
-second_title: Latest Updates & Feature
+second_title: Documen
 linktitle: Cosa c'è di nuovo?
 type: docs
 weight: 9
@@ -19,11 +19,13 @@ kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdo
 
 |**ID**|**Riepilogo**|**Categoria**|
 |:- |:- |:- |
-|55754 | Il taglio dell'intera cartella di lavoro non è riuscito.|
-|55755 | Aggiornamento maiuscole/minuscole dell'intera cartella di lavoro non riuscito.|
-|55930 | Aggiungere funzionalità di protezione/rimozione della protezione del foglio di calcolo.|
-|55931 | Aggiungi la conversione di fogli di lavoro/tabelle/intervalli in altri formati.|
-|56088 | Ottimizza le opzioni dell'ambito operativo per TextProcessingController.|
+|56632 | Aggiorna il nome del parametro dei dati del modulo per le specifiche del codice cloud delle celle sui servizi cloud 3.0 delle celle.| Miglioramento|
+|56793 | Risolvi il problema di StringEnumConverter su Aspose.Cells Cloud Services.| Insetto|
+|56866 | Supporta il contenuto del foglio di calcolo ridotto in Cells Cloud 4.0.| Miglioramento|
+|56867 | Supporta il contenuto dell'intervallo del foglio di lavoro di trim in Cells Cloud 4.0.| Miglioramento|
+|56919 | Si è verificata un'eccezione durante il salvataggio del foglio di calcolo in un file di formato diverso sul cloud cellulare.| Insetto|
+|56922 | Quando si esporta l'intervallo/tabella come file HTML, i dati vanno persi.| Insetto|
+|56936 | Risolti alcuni problemi relativi agli errori di ortografia.| Insetto|
 
 # Versioni storiche
 

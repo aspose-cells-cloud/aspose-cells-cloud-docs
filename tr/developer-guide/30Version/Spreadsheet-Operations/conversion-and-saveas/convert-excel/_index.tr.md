@@ -1,6 +1,6 @@
 ﻿---
 title: Excel Dosyasını Farklı Biçime Dönüştürme
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Excel'i dönüştürün
 type: docs
 url: /tr/convert-an-excel-file-to-different-formats/
@@ -18,7 +18,7 @@ Bu REST API, `convert` excel dosyasının farklı formatta olduğunu gösterir.
 
 |Parametre Adı|Tip|Tanım|
 |:- |:- |:- |
-|biçim|sicim|Dosya biçimi: csv, xls, html, mhtml, ods, pdf, xml, txt, tiff, xlsb, xlsm, xlsx, xltm, xltx, xps, png, jpg, gif, emf, bmp, md, Numbers, wmf, svg, vb.|
+|biçim|sicim| Dosya biçimi: csv, xls, html, mhtml, ods, pdf, xml, txt, tiff, xlsb, xlsm, xlsx, xltm, xltx, xps, png, jpg, gif, emf, bmp, md, Numbers, wmf, svg, vb.|
 |şifre|sicim| Excel dosyasını açmak için gereken şifre.|
 |çıkış yolu|sicim| Sonucun kaydedileceği yol. Tek bir dosyaysa, `outPath` hem dosya adını hem de uzantısını içermelidir. Birden fazla dosya olması durumunda, `outPath` yalnızca klasörü içermelidir.|
 |depolamaAdı|sicim| Dosyanın bulunduğu depolama adı.|

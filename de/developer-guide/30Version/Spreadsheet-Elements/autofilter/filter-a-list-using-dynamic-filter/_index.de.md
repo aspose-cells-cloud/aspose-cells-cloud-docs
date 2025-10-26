@@ -1,6 +1,6 @@
 ﻿---
 title: Fügen Sie einen dynamischen Datumsfilter in ein Excel-Arbeitsblatt ein
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Dynamischen Filter hinzufügen
 type: docs
 url: /de/autofilter/add-dynamic-filter/

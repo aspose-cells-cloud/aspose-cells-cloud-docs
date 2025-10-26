@@ -1,6 +1,6 @@
 ﻿---
 title: Ein Excel-Arbeitsblatt einblenden
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Einblenden
 type: docs
 url: /de/worksheets/unhide/

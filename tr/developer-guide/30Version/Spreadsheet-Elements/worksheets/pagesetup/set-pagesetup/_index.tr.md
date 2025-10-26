@@ -1,6 +1,6 @@
 ﻿---
 title: Bir çalışma sayfası için sayfa düzenini ayarlayın
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Sayfa ayarlarını ayarla
 type: docs
 url: /tr/set-page-setup/

@@ -1,6 +1,6 @@
 ﻿---
 title: Configuración de la página de la hoja de trabajo
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Configuración de página
 type: docs
 url: /es/page-setup/
@@ -11,7 +11,7 @@ kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown
 ---
 # **Configuración de página**
 
-configuración de la página de impresión de Excel
+configuración de página de impresión de Excel
 
 ## **Propiedades**
 
@@ -20,16 +20,16 @@ configuración de la página de impresión de Excel
 |Blanco y negro|Booleano|verdadero| FALSO||Representa si los elementos del documento se imprimirán en blanco y negro.|
 |Margen inferior|Flotante|verdadero| FALSO||Representa el tamaño del margen inferior, en unidades de centímetros.|
 |CentrarHorizontalmente|Booleano|verdadero| FALSO||Representa si la hoja se imprime centrada horizontalmente.|
-|Centrado verticalmente|Booleano|verdadero| FALSO||Representa si la hoja se imprime centrada verticalmente.|
+|CentrarVerticalmente|Booleano|verdadero| FALSO||Representa si la hoja se imprime centrada verticalmente.|
 |Número de primera página|Entero|verdadero| FALSO||Representa el primer número de página que se utilizará cuando se imprima esta hoja.|
 |Ajustar a la altura de las páginas|Entero|verdadero| FALSO||Representa el número de páginas de alto a las que se ajustará la escala de la hoja de cálculo al imprimirse. El valor predeterminado es 1.|
-|Ajustar a página ancha|Entero|verdadero| FALSO||Representa el número de páginas de ancho a las que se ajustará la escala de la hoja de cálculo al imprimirse. El valor predeterminado es 1.|
+|Ajustar a las páginas de ancho|Entero|verdadero| FALSO||Representa el número de páginas de ancho a las que se ajustará la escala de la hoja de cálculo al imprimirse. El valor predeterminado es 1.|
 |Margen de pie de página|Flotante|verdadero| FALSO||Representa la distancia desde la parte inferior de la página hasta el pie de página, en unidades de centímetros.|
 |Margen del encabezado|Flotante|verdadero| FALSO||Representa la distancia desde la parte superior de la página hasta el encabezado, en unidades de centímetros.|
-|IsAutoFirstPageNumber|Booleano|verdadero| FALSO||Indica si el primer número de página se asigna automáticamente.|
-|IsHFAlignMargins|Booleano|verdadero| FALSO||Indica si los márgenes del encabezado y pie de página están alineados con los márgenes de la página. Si esta propiedad es verdadera, el encabezado y pie de página izquierdos se alinearán con el margen izquierdo, y el encabezado y pie de página derechos, con el margen derecho. Esta opción está habilitada por defecto.|
+|EsAutoFirstPageNumber|Booleano|verdadero| FALSO||Indica si el primer número de página se asigna automáticamente.|
+|IsHFAlignMargins|Booleano|verdadero| FALSO||Indica si los márgenes del encabezado y pie de página están alineados con los márgenes de la página. Si esta propiedad es verdadera, el encabezado y pie de página izquierdos se alinearán con el margen izquierdo, y el encabezado y pie de página derechos, con el margen derecho. Esta opción está habilitada de forma predeterminada.|
 |IsHFDiffFirst|Booleano|verdadero| FALSO||Verdadero significa que el encabezado/pie de página de la primera página es diferente al de las otras páginas.|
-|IsHFDiffOddEven|Booleano|verdadero| FALSO||Verdadero significa que el encabezado/pie de página de las páginas impares es diferente al de las páginas impares.|
+|IsHFDiffImparPar|Booleano|verdadero| FALSO||Verdadero significa que el encabezado/pie de página de las páginas impares es diferente al de las páginas impares.|
 |IsHFScaleWithDoc|Booleano|verdadero| FALSO||Indica si el encabezado y el pie de página se ajustan a la escala del documento. Solo aplica para Excel 2007.|
 |IsPercentScale|Booleano|verdadero| FALSO||Si esta propiedad es Falso, las propiedades FitToPagesWide y FitToPagesTall controlan cómo se escala la hoja de cálculo.|
 |Margen izquierdo|Flotante|verdadero| FALSO||Representa el tamaño del margen izquierdo, en unidad de centímetros.|
@@ -44,8 +44,8 @@ configuración de la página de impresión de Excel
 |Imprimir líneas de cuadrícula|Booleano|verdadero| FALSO||Representa si las líneas de cuadrícula de celdas se imprimen en la página.|
 |Encabezados de impresión|Booleano|verdadero| FALSO||Representa si los encabezados de fila y columna se imprimen con esta página.|
 |Calidad de impresión|Entero|verdadero| FALSO||Representa la calidad de impresión.|
-|ColumnasDeTítuloDeImpresión|Cadena|verdadero| FALSO||Representa las columnas que contienen las celdas que se repetirán en el lado izquierdo de cada página.|
-|ImprimirFilasDeTítulo|Cadena|verdadero| FALSO||Representa las filas que contienen las celdas que se repetirán en la parte superior de cada página.|
+|Columnas de título de impresión|Cadena|verdadero| FALSO||Representa las columnas que contienen las celdas que se repetirán en el lado izquierdo de cada página.|
+|ImprimirTítuloFilas|Cadena|verdadero| FALSO||Representa las filas que contienen las celdas que se repetirán en la parte superior de cada página.|
 |Margen derecho|Flotante|verdadero| FALSO||Representa el tamaño del margen derecho, en unidad de centímetros.|
 |Margen superior|Flotante|verdadero| FALSO||Representa el tamaño del margen superior, en unidades de centímetros.|
 |Zoom|Entero|verdadero| FALSO||Representa el factor de escala en porcentaje. Debe estar entre 10 y 400.|

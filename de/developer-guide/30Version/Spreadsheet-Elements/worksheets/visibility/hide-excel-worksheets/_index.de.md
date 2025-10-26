@@ -1,6 +1,6 @@
 ﻿---
 title: Ein Excel-Arbeitsblatt ausblenden
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Versteckt
 type: docs
 url: /de/worksheets/hide/

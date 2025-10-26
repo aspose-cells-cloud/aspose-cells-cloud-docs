@@ -1,16 +1,16 @@
 ﻿---
 title: Diviser un classeur Excel en plusieurs fichiers
-second_title: Aspose.Cells Cloud Documen
-linktitle: Diviser un fichier Excel
+second_title: Documen
+linktitle: Diviser un fil Excel
 type: docs
 url: /fr/split-multi-excel-files/
 aliases: [ /split/multi-files/]
 keywords: Split an Excel workbook to multi-files
 description: Aspose.Cells Cloud REST API prend en charge le fractionnement d'un classeur Excel en plusieurs fichiers. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 130
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Diviser un classeur Excel en plusieurs fichiers
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Diviser un classeur Excel en plusieurs fichiers
 ---
-Ce REST API indique de diviser un Excel `workbook` en plusieurs fichiers avec un format différent.
+Ce REST API indique de diviser un Excel `workbook` en plusieurs fichiers avec des formats différents.
 
 **Paramètre de requête**
 
@@ -21,8 +21,8 @@ Ce REST API indique de diviser un Excel `workbook` en plusieurs fichiers avec un
 |à|entier|Index de fin de feuille de travail.|
 |résolution horizontale|entier|Résolution horizontale de l'image.|
 |résolution verticale|entier|Résolution verticale de l'image.|
-|dossier de sortie|chaîne|position du fichier divisé en sortie.|
-|splitNameRule|chaîne||
+|dossier de sortie|chaîne|position du fichier divisé de sortie.|
+|Règle splitName|chaîne||
 |dossier|chaîne|Classeur original.|
 |nom de stockage|chaîne|Nom de stockage.|
 

@@ -1,12 +1,12 @@
 ﻿---
 title: 批量解锁
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /zh/batch/unlock
 keywords: Batch unlock of multiple Excel files
 description: Aspose.Cells Cloud API 支持批量解锁多个 Excel 文件。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
 weight: 100
-kwords: Excel, Office 云, REST API, 电子表格, PDF, CSV, Json, Markdown, 批量解锁
+kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、批量解锁
 ---
 此 REST API 表示符合条件的文件为 `batch unlock`。
 
@@ -32,7 +32,7 @@ POST http://api.aspose.cloud/v3.0/cells/batch/unlock
 
 名称 | 类型 | 描述 | 备注
 ------------ | ------------- | ------------- | -------------
-RegexPattern | 字符串 | | [可选]FullMatchConditions | 字符串[]| | [可选][OpenAPI规范](https://reference.aspose.cloud/cells/#/Batch/PostBatchUnlock)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+RegexPattern | 字符串 | | [可选]FullMatchConditions | 字符串[]| | [可选][OpenAPI 规范](https://reference.aspose.cloud/cells/#/Batch/PostBatchUnlock)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
 
 您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
 

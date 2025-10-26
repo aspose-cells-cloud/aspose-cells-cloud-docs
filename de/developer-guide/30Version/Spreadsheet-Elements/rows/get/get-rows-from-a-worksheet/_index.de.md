@@ -1,6 +1,6 @@
 ﻿---
 title: Holen Sie sich Zeileninformationen aus einem Excel-Arbeitsblatt
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Reihe
 type: docs
 url: /de/rows/get/rows/

@@ -1,6 +1,6 @@
 ﻿---
 title: Löschen Sie das Änderungskennwort der Arbeitsmappe Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Excel Dateien Passwort löschen
 type: docs
 url: /de/clear-excel-files-password/

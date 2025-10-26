@@ -1,6 +1,6 @@
 ﻿---
 title: Excel a SQ
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Excel a SQ
 type: docs
 url: /es/convert-excel-file-to-sql-file/
@@ -16,8 +16,8 @@ Este REST API indica a `convert` un archivo de hoja de cálculo a un archivo de 
 |Nombre del parámetro|Tipo|Descripción|
 |:- |:- |:- |
 |contraseña|cadena| La contraseña necesaria para abrir un archivo Excel.|
-|nombreDeAlmacenamiento|cadena| El nombre de almacenamiento donde se encuentra el archivo.|
-|comprobarRestricciónExcel|bool| Si verificar la restricción del archivo Excel cuando el usuario modifica objetos relacionados con celdas.|
+|nombreDeAlmacenamiento|cadena| El nombre del almacenamiento donde se encuentra el archivo.|
+|comprobarRestricción de Excel|bool| Si verificar la restricción del archivo Excel cuando el usuario modifica objetos relacionados con celdas.|
 
 **Parámetro del cuerpo de la solicitud**
 
@@ -72,7 +72,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/sql"
 
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
 
 Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
@@ -133,7 +133,7 @@ Los siguientes ejemplos de código demuestran cómo realizar llamadas a los serv
 
 Este archivo de Excel REST API `convert` a HTML.
 
-[PUT /células/convertir](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) API le permite convertir el archivo MS Excel al archivo HTML con configuraciones adicionales y guardar el resultado en la respuesta.
+[PUT /celdas/convertir](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) API le permite convertir el archivo MS Excel al archivo HTML con configuraciones adicionales y guardar el resultado en la respuesta.
 
 Este archivo de Excel REST API `export` a HTML.
 

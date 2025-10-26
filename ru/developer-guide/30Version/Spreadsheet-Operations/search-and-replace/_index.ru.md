@@ -1,6 +1,6 @@
 ﻿---
 title: Поиск и замена текстового содержимого в файлах Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Поиск и замена
 type: docs
 url: /ru/search-and-replace/

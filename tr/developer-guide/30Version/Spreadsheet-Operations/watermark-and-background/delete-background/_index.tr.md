@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma kitabının arka planını silin
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Sil
 type: docs
 url: /tr/delete-background-in-excel-file/

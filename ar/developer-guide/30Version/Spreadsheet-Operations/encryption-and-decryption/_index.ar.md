@@ -1,6 +1,6 @@
 ﻿---
 title: تشفير وفك تشفير والتوقيع الرقمي للملفات Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: حماية إكسس
 type: docs
 url: /ar/protect/

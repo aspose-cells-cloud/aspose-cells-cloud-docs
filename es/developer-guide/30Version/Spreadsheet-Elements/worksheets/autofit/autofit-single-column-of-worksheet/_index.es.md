@@ -1,6 +1,6 @@
 ﻿---
 title: Ajustar automáticamente una columna en una hoja de cálculo Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Columna
 type: docs
 url: /es/worksheets/autofit/column/
@@ -30,7 +30,7 @@ Los parámetros de la solicitud son:
 | últimaColumna| entero| consulta| Índice de la última columna.|
 |[Opciones de autoajuste](/cells/es/auto-filter-options) || cuerpo| Opciones de ajuste automático.|
 | primeraFila| entero| consulta| Índice de la primera fila.|
-| últimaFila| entero| consulta| Índice de la última fila.|
+| última fila| entero| consulta| Índice de la última fila.|
 | carpeta| cadena| consulta| La carpeta.|
 | nombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
 
@@ -71,7 +71,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/sampleAutoFit.xlsx/worksheets/Sheet1
 
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
 
 Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
 

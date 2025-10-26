@@ -1,6 +1,6 @@
 ﻿---
 title: Stil für Pivot-Tabelle aktualisieren
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Alles formatieren
 type: docs
 url: /de/pivot-tables/format-all/

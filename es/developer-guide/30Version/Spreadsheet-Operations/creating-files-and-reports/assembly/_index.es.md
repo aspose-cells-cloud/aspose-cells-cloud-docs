@@ -1,14 +1,14 @@
 ﻿---
 title: Recopilación de datos para la creación de un informe Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Fecha de montaje
 type: docs
 url: /es/assembly-data-for-the-creation-of-an-excel-report/
 aliases: [/assembly/]
 keywords: Assemble data in Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) files
-description: Aspoe.Cells Cloud genera informes en archivos XLS, XLSX, XLSM, XLSB y ODS utilizando la plantilla y la hoja de datos. Procesa los marcadores inteligentes en la plantilla para rellenar los datos de otra hoja de datos. El SDK es compatible con varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
+description: Aspoe.Cells Cloud genera informes en archivos XLS, XLSX, XLSM, XLSB y ODS utilizando la plantilla y la hoja de datos. Procesa marcadores inteligentes en la plantilla para rellenar datos de otra hoja de datos. El SDK es compatible con varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 40
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Ensamblaje
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Ensamblado
 ---
 Este REST API indica `assembly` datos en un archivo Excel.
 
@@ -75,7 +75,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/assembly?datasource=ds&format=pdf" \
 
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
 
 Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
 

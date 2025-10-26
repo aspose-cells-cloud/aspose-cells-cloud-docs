@@ -1,6 +1,6 @@
 ﻿---
 title: إضافة فواصل الصفحات الأفقية
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: إضافة فواصل الصفحات الأفقية
 type: docs
 url: /ar/page-breaks/add-horizontal-page-break/

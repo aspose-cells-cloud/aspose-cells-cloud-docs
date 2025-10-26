@@ -1,6 +1,6 @@
 ﻿---
 title: Liste Nesnesini Dışa Aktar
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Liste Nesnesi
 type: docs
 url: /tr/export-excel-listobject-to-different-formats/

@@ -1,6 +1,6 @@
 ﻿---
 title: 从 Excel 文件中查找文本
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: 不使用存储查找
 type: docs
 url: /zh/search/

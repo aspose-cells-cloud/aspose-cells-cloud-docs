@@ -1,6 +1,6 @@
 ﻿---
 title: Работа с рабочим листом Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Рабочий лист
 type: docs
 url: /ru/worksheets/

@@ -1,6 +1,6 @@
 ﻿---
 title: Akıllı işaretleyici şablonuyla Excel raporu nasıl oluşturulur?
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: AkıllıMarke
 type: docs
 url: /tr/build-report-with-smart-marker/

@@ -1,12 +1,12 @@
 ﻿---
 title: Dividir un libro de trabajo Excel en varios archivos
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Dividir un archivo Excel
 type: docs
 url: /es/split-multi-excel-files/
 aliases: [ /split/multi-files/]
 keywords: Split an Excel workbook to multi-files
-description: Aspose.Cells Cloud REST API permite dividir un libro de trabajo Excel en varios archivos. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
+description: Aspose.Cells Cloud REST API admite la división de un libro de trabajo Excel en varios archivos. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 130
 kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Dividir un libro de trabajo Excel en varios archivos
 ---
@@ -21,7 +21,7 @@ Este REST API indica dividir un Excel `workbook` en varios archivos con diferent
 |a|entero|Fin del índice de la hoja de trabajo.|
 |Resolución horizontal|entero|Resolución horizontal de la imagen.|
 |Resolución vertical|entero|Resolución vertical de la imagen.|
-|carpeta de salida|cadena|Posición del archivo de división de salida.|
+|carpeta de salida|cadena|Posición del archivo dividido de salida.|
 |regla de nombre dividido|cadena||
 |carpeta|cadena|Carpeta del libro de trabajo original.|
 |nombreDeAlmacenamiento|cadena|Nombre de almacenamiento.|
@@ -94,7 +94,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/split?format=jpeg&fr
 
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
 
 Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
 

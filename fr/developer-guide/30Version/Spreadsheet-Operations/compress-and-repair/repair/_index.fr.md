@@ -1,20 +1,20 @@
 ﻿---
 title: Réparer le fichier Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 linktitle: Réparer le fichier Excel
 url: /fr/repair-excel-files/
 keywords: Repair Excel, ODS, WPS, and so on files
-description: Réparez les fichiers Excel avec Aspose.Cells Cloud REST API. Le API prend en charge plusieurs langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift pour une intégration rapide dans vos projets.
+description: Réparez les fichiers Excel en utilisant Aspose.Cells Cloud REST API. Le API prend en charge plusieurs langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift pour une intégration rapide dans vos projets.
 weight: 39
 kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Réparation
 ---
 Ce REST API indique les fichiers `repair` Excel.
 
-- Réparez XLS, XLSX, XLSM, XLSB, ODS, etc.
+- Réparer XLS, XLSX, XLSM, XLSB, ODS, etc.
 - Prise en charge de plusieurs fichiers.
 
-Aspose.Cells Cloud Excel Repair récupère les données des fichiers corrompus Excel en ligne, sans installation. Les fichiers corrompus Excel peuvent poser problème, car vous ne pourrez pas les ouvrir. Vous pouvez essayer l'application Aspose.Cells Cloud Excel Repair pour récupérer les données des fichiers corrompus Excel.
+L'application Aspose.Cells Cloud Repair Excel récupère les données des fichiers corrompus Excel en ligne, sans installation. Les fichiers corrompus Excel peuvent poser problème, car vous ne pourrez pas les ouvrir. Vous pouvez essayer l'application Aspose.Cells Cloud Repair Excel pour récupérer les données des fichiers corrompus Excel.
 
 ## RSET API
 
@@ -24,7 +24,7 @@ POST https://api.aspose.cloud/v3.0/cells/repair
 
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

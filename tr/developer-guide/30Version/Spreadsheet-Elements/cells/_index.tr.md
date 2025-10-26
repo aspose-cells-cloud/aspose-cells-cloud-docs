@@ -1,6 +1,6 @@
 ﻿---
 title: Excel Cep Telefonuyla Çalışma
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Hücre
 type: docs
 url: /tr/working-with-cells/

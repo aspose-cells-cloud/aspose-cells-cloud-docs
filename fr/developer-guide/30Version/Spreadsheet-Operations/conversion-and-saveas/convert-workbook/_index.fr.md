@@ -1,6 +1,6 @@
 ﻿---
 title: Convertir un fichier Excel dans un format différent
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Convertir une feuille de calcul
 type: docs
 url: /fr/convert-a-spread-file-to-different-formats/
@@ -15,7 +15,7 @@ Ce REST API indique à `convert` un fichier Excel dans un format différent. Il 
 
 |Nom du paramètre|Taper|Description|
 |:- |:- |:- |
-|[ConvertWorkbookOptions](/cells/fr/convert-workbook-options/)| objet| Convertir les options du classeur.|
+|[Options de conversion du classeur](/cells/fr/convert-workbook-options/)| objet| Convertir les options du classeur.|
 
 **Réponse**
 
@@ -25,7 +25,7 @@ Ce REST API indique à `convert` un fichier Excel dans un format différent. Il 
 
 |**API**|**Taper**|**Description**|**Lien Swagger**|
 |:- |:- |:- |:- |
-|/cellules/convertir|POSTE|Convertit le classeur du contenu de la requête vers un format donné|[Cahier de travail PostConvert](https://apireference.aspose.cloud/cells/#/Workbook/PostConvertWorkBook)|
+|/cellules/convertir|POSTE|Convertit le classeur à partir du contenu de la requête vers un format donné|[Cahier de travail PostConvert](https://apireference.aspose.cloud/cells/#/Workbook/PostConvertWorkBook)|
 
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/Workbook/PostConvertWorkBook) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
 

@@ -1,6 +1,6 @@
 ﻿---
 title: 处理 Excel 文件：公式计算、自动调整、清除对象等
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Excel 常见操作
 type: docs
 url: /zh/workbook/
@@ -16,6 +16,6 @@ kwords: Excel, Office 云, REST API, 电子表格, PDF, CSV, Json, Markdown, 工
 - [如何创建 Excel 文件。](/cells/zh/workbook/create/)
 - [如何获取 Excel 文件。](/cells/zh/workbook/get/)
 - [如何自动调整 Excel 文件的列。](/cells/zh/autofit-columns-on-an-excel-file/)
-- [如何自动调整 Excel 文件的行数。](/cells/zh/autofit-rows-on-an-excel-file/)
+- [如何自动调整 Excel 文件的行。](/cells/zh/autofit-rows-on-an-excel-file/)
 - [如何获取 Excel 文件的页数。](/cells/zh/wget-page-count-from-an-excel-file/)
 - [如何从 Excel 文件中获取名称。](/cells/zh/get-names-from-an-excel-file/)

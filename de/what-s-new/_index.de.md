@@ -1,6 +1,6 @@
 ﻿---
 title: Was ist neu in Aspose.Cells Cloud
-second_title: Latest Updates & Feature
+second_title: Documen
 linktitle: Was ist neu
 type: docs
 weight: 9
@@ -19,11 +19,13 @@ kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Mark
 
 |**AUSWEIS**|**Zusammenfassung**|**Kategorie**|
 |:- |:- |:- |
-|55754 | Das Kürzen der gesamten Arbeitsmappe ist fehlgeschlagen.|
-|55755 | Das Aktualisieren der Groß-/Kleinschreibung der gesamten Arbeitsmappe ist fehlgeschlagen.|
-|55930 | Fügen Sie Funktionen zum Schützen/Aufheben des Schutzes von Tabellenkalkulationen hinzu.|
-|55931 | Fügen Sie die Konvertierung von Arbeitsblättern/Tabellen/Bereichen in andere Formate hinzu.|
-|56088 | Optimieren Sie die Operationsbereichsoptionen für TextProcessingController.|
+|56632 | Aktualisieren Sie den Namen des Formulardatenparameters für die Cells Cloud-Codespezifikation für Cells Cloud 3.0-Dienste.| Verbesserung|
+|56793 | Beheben Sie das Problem mit StringEnumConverter bei Aspose.Cells Cloud Services.| Insekt|
+|56866 | Unterstützt das Zuschneiden von Tabellenkalkulationsinhalten in Cells Cloud 4.0.| Verbesserung|
+|56867 | Unterstützt das Trimmen von Arbeitsblattbereichsinhalten in Cells Cloud 4.0.| Verbesserung|
+|56919 | Beim Speichern der Tabelle als Datei in einem anderen Format in der Zell-Cloud ist eine Ausnahme aufgetreten.| Insekt|
+|56922 | Beim Exportieren des Bereichs/der Tabelle als HTML-Datei gehen Daten verloren.| Insekt|
+|56936 | Beheben Sie einige Probleme mit Rechtschreibfehlern.| Insekt|
 
 # Historische Veröffentlichungen
 

@@ -1,6 +1,6 @@
 ﻿---
 title: Convertir un objet de liste en plage dans une feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Conversion
 type: docs
 url: /fr/list-objects/to-range/
@@ -20,13 +20,13 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobject
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin||
 | nom de la feuille| chaîne| chemin||
-| listObjectIndex| entier| chemin||
+| index d'objets de liste| entier| chemin||
 | dossier| chaîne| requête||
 | nom de stockage| chaîne| requête| nom de stockage.|
 

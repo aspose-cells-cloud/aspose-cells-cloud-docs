@@ -1,6 +1,6 @@
 ﻿---
 title: Пакетная защита файла Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /ru/batch/protect
 keywords: Batch protection of multiple Excel files

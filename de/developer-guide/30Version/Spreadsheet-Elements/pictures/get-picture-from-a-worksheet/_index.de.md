@@ -1,6 +1,6 @@
 ﻿---
 title: Alle Bilder in einem Excel Arbeitsblatt erhalten
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Holen Sie sich al
 type: docs
 url: /de/pictures/get-all/

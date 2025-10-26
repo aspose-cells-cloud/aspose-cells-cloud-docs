@@ -1,6 +1,6 @@
 ﻿---
 title: Metadaten zu Excel-Dateien löschen
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Löschen ohne Speichernutzung
 type: docs
 url: /de/metadata/delete/

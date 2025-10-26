@@ -1,6 +1,6 @@
 ﻿---
 title: Importer un tableau de chaînes à 2 dimensions dans la feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Importer un tableau de chaînes à 2 dimensions
 type: docs
 url: /fr/import-a-2D-string-array-into-excel-worksheet/
@@ -8,7 +8,7 @@ aliases: [/import-2dimension-string-array-into-excel-worksheet/,/import-2dimensi
 keywords: Import 2 dimension string array data into Excel files
 description: Aspose.Cells Cloud REST API prend en charge l'importation de données de tableaux de chaînes à deux dimensions dans des fichiers Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 20
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Importer un tableau de chaînes à 2 dimensions dans une feuille de calcul Excel
+kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Importer un tableau de chaînes à 2 dimensions dans la feuille de calcul Excel
 ---
 Cette feuille de travail REST API `import 2 dimension string array data` dans Excel.
 
@@ -32,9 +32,9 @@ Les paramètres importants sont décrits dans le tableau suivant :
 | Première rangée| int||
 | Première colonne| int||
 | Données|Chaîne[,]||
-| Feuille de travail de destination| chaîne| nom de la feuille de travail de destination.|
+|Feuille de travail de destination| chaîne| nom de la feuille de travail de destination.|
 | EstInsérer| chaîne| vrai/faux.|
-| ImportDataType| chaîne|IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData.|
+| ImporterDataType| chaîne|IntArray/DoubleArray/StringArray/DeuxDimensionIntArray/DeuxDimensionDoubleArray/DeuxDimensionStringArray/BatchData/CSVData.|
 | Source| Source du fichier| Indique la position du fichier de données lorsque le paramètre BatchData est nul.|
 
 **Exemple**

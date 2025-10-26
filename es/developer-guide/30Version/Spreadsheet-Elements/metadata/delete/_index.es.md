@@ -1,11 +1,11 @@
 ﻿---
 title: Eliminar metadatos de los archivos Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Eliminar sin usar almacenamiento
 type: docs
 url: /es/metadata/delete/
 keywords: Deleting metadata from Excel files
-description: Aspose.Cells Cloud REST API admite la eliminación de metadatos de archivos de Excel. El SDK es compatible con varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
+description: Aspose.Cells Cloud REST API admite la eliminación de metadatos de archivos de Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 55
 kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Eliminar metadatos en archivos Excel.
 ---
@@ -74,7 +74,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/metadata/delete" \
 
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
 
 Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
 

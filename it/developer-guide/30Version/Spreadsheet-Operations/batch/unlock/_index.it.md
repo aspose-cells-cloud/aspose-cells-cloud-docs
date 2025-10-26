@@ -1,6 +1,6 @@
 ﻿---
 title: Sblocco batch
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /it/batch/unlock
 keywords: Batch unlock of multiple Excel files

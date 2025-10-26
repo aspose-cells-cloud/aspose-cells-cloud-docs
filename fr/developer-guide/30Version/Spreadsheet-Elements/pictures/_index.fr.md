@@ -1,6 +1,6 @@
 ﻿---
 title: Travailler avec l'image Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Image
 type: docs
 url: /fr/pictures/
@@ -12,7 +12,7 @@ kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Images
 ---
 ## Travailler avec des images sur un fichier Excel
 
-- [Comment obtenir une image de format spécifique à partir d'une feuille de calcul Excel.](/cells/fr/pictures/get/)
+- [Comment obtenir une image au format spécifique à partir d'une feuille de calcul Excel.](/cells/fr/pictures/get/)
 - [Comment obtenir toutes les informations sur les images d'une feuille de calcul Excel.](/cells/fr/pictures/get-all/)
 - [Comment ajouter une image pour une feuille de calcul Excel.](/cells/fr/pictures/add/)
 - [Comment mettre à jour une image spécifique à partir d'une feuille de calcul Excel.](/cells/fr/pictures/update/)

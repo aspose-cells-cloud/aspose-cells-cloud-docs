@@ -1,6 +1,6 @@
 ﻿---
 title: Char'ı Dışa Aktar
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Char
 type: docs
 url: /tr/export-excel-chart-to-different-formats/

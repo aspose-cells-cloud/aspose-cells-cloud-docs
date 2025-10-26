@@ -1,6 +1,6 @@
 ﻿---
 title: تحديث كائن القائمة في ورقة العمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: تحديث
 type: docs
 url: /ar/list-objects/update/

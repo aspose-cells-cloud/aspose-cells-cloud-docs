@@ -1,6 +1,6 @@
 ﻿---
 title: Lavorare con la riga Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Riga
 type: docs
 url: /it/rows/

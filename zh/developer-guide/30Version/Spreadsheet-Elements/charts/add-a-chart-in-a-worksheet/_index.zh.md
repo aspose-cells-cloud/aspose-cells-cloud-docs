@@ -21,13 +21,13 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts
 |:- |:- |:- |:- |
 |姓名|细绳|小路|工作簿名称。|
 |工作表名称|细绳|小路|工作表名称。|
-|图表类型|细绳|询问|图表类型，请参考图表资源中的属性Type。|
+|图表类型|细绳|询问|图表类型请参考图表资源中的属性Type。|
 |左上行|整数|询问|0 |
 |左上列|整数|询问|0 |
 |右下行|整数|询问|0 |
 |右下列|整数|询问|0 |
 |区域|细绳|询问|指定绘制数据系列所依据的值。|
-|垂直|布尔值|询问|真的|
+|是垂直的|布尔值|询问|真的|
 |类别数据|细绳|询问|获取或设置分类轴值的范围。可以是单元格区域（例如“d1:e10”）。|
 | isAutoGetSerialName|布尔值|询问|真的|
 |标题|细绳|询问|指定图表标题名称。|
@@ -36,9 +36,9 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts
 |数据标签|布尔值|询问|真的|
 |数据标签位置|细绳|询问|多于|
 |数据透视表|细绳|询问||
-|枢轴表名称|细绳|询问||
+|数据透视表名称|细绳|询问||
  
-这[OpenAPI规范](https://apireference.aspose.cloud/cells/#/Charts/PutWorksheetAddChart)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Charts/PutWorksheetAddChart)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
  
 您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
 

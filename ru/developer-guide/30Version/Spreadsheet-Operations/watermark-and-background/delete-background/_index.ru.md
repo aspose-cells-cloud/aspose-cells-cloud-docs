@@ -1,6 +1,6 @@
 ﻿---
 title: Удалить фон в рабочей книге Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Удалить
 type: docs
 url: /ru/delete-background-in-excel-file/

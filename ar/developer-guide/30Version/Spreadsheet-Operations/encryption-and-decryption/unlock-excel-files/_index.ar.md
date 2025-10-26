@@ -1,6 +1,6 @@
 ﻿---
 title: فتح الملف Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: فتح الملف Excel
 type: docs
 url: /ar/unlock-excel-files/

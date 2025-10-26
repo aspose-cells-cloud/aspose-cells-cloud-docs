@@ -1,6 +1,6 @@
 ﻿---
 title: تصدير كائن القائمة
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: قائمة الكائنات
 type: docs
 url: /ar/export-excel-listobject-to-different-formats/

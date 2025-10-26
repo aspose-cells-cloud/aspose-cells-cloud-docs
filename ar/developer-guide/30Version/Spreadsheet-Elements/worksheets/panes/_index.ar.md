@@ -1,6 +1,6 @@
 ﻿---
 title: كيفية العمل مع الأجزاء في ورقة العمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: لوحة
 type: docs
 url: /ar/worksheets/panes/

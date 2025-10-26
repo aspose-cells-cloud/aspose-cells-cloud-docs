@@ -1,6 +1,6 @@
 ﻿---
-title: 使用 Excel 评论
-second_title: Aspose.Cells Cloud Documen
+title: 与 Excel 评论合作
+second_title: Documen
 linktitle: 评论
 type: docs
 url: /zh/comments/
@@ -12,7 +12,7 @@ kwords: Excel, Office 云, REST API, 电子表格, PDF, CSV, Json, Markdown, 评
 ---
 创建 Excel 工作簿时，用户可以出于各种原因使用 Excel 注释。该功能用途之一是解释单元格中的公式，尤其是在其他人使用 Excel 文件时。此外，Excel 注释还可用于为其他用户添加提醒或注释，以及与其他 Excel 工作簿进行交叉引用。
 
-添加评论后，Excel 允许用户灵活地调整评论大小、形状以及将其格式化为自己喜欢的样式。Excel 用户应该掌握如何管理评论，以便最大限度地利用它们。
+添加评论后，Excel 允许用户灵活地调整大小、更改形状以及将评论格式化为自己喜欢的样式。Excel 用户应该掌握如何管理评论，以便最大限度地利用它们。
 
 **概括**
 

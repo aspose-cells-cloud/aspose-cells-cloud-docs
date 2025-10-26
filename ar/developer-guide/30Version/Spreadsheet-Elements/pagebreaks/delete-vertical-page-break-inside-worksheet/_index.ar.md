@@ -1,6 +1,6 @@
 ﻿---
 title: حذف كسر الصفحة العمودية
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: حذف كسر الصفحة العمودية
 type: docs
 url: /ar/page-breaks/delete-vertical-page-break/

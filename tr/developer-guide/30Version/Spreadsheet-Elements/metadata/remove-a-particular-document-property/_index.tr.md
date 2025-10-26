@@ -1,6 +1,6 @@
 ﻿---
 title: Belirli Bir Belge Özelliğini Sil
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Sil
 type: docs
 url: /tr/document-properties/delete/

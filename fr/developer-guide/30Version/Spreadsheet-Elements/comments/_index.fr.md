@@ -1,6 +1,6 @@
 ﻿---
 title: Travailler avec le commentaire Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Commentaire
 type: docs
 url: /fr/comments/
@@ -10,9 +10,9 @@ description: "Cells.Cloud API pour Excel fonctionnent : les commentaires fonctio
 weight: 100
 kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Commentaires
 ---
-Lors de la création d'un classeur Excel, les utilisateurs peuvent utiliser les commentaires Excel pour diverses raisons. L'une des utilisations de cette fonctionnalité est d'expliquer une formule dans une cellule, en particulier lorsque d'autres personnes utilisent le fichier Excel. De plus, les commentaires Excel peuvent également être utilisés pour ajouter des rappels ou des notes pour d'autres utilisateurs, ainsi que pour des références croisées avec d'autres classeurs Excel.
+Lors de la création d'un classeur Excel, les utilisateurs peuvent utiliser des commentaires Excel pour diverses raisons. L'une de ces fonctionnalités est d'expliquer une formule dans une cellule, notamment lorsque d'autres personnes utilisent le fichier Excel. De plus, les commentaires Excel peuvent également servir à ajouter des rappels ou des notes pour d'autres utilisateurs, ainsi qu'à établir des références croisées avec d'autres classeurs Excel.
 
-Une fois le commentaire ajouté, Excel offre aux utilisateurs la possibilité de le redimensionner, de le modifier en forme et de le formater selon leur style préféré. Un utilisateur de Excel doit maîtriser la gestion des commentaires afin d'en tirer le meilleur parti.
+Une fois un commentaire ajouté, Excel offre aux utilisateurs la possibilité de le redimensionner, d'en modifier la forme et de le formater selon leur style préféré. Un utilisateur de Excel doit maîtriser la gestion des commentaires afin d'en tirer le meilleur parti.
 
 **Résumé**
 

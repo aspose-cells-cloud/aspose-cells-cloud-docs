@@ -1,6 +1,6 @@
 ﻿---
 title: Löschen Sie ein Bild in einer Excel-Datei
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Löschen
 type: docs
 url: /de/pictures/delete/

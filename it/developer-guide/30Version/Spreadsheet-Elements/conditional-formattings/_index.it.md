@@ -1,6 +1,6 @@
 ﻿---
 title: Lavorare con la formattazione condizionale Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Formattazione condizionale
 type: docs
 url: /it/conditional-formattings/

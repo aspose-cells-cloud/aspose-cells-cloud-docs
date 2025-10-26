@@ -1,6 +1,6 @@
 ﻿---
 title: Fusionar varios archivos Excel en un archivo Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Fusionar archivo Multi Excel
 type: docs
 url: /es/merge-multi-files-into-excel/
@@ -10,7 +10,7 @@ description: Aspose.Cells Cloud REST API permite la fusión de varios archivos E
 weight: 32
 kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Combinar varios archivos Excel en un archivo Excel.
 ---
-Este REST API indica `merge` múltiples archivos Excel en un archivo Excel.
+Este REST API indica convertir varios archivos Excel en un archivo Excel.
 
 ## RSET API
 
@@ -76,7 +76,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/merge?format=xlsx" \
 
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
 
 Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
 

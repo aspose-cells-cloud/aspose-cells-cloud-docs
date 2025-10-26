@@ -1,6 +1,6 @@
 ﻿---
 title: Ersetzen Sie Text in einem Excel-Arbeitsbuch
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Im Arbeitsbuch ersetzen
 type: docs
 url: /de/workbook/replace-text/

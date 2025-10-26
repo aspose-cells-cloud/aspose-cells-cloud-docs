@@ -1,6 +1,6 @@
 ﻿---
 title: 如何在 Excel 工作簿上删除工作表
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: 删除
 type: docs
 url: /zh/worksheets/delete/

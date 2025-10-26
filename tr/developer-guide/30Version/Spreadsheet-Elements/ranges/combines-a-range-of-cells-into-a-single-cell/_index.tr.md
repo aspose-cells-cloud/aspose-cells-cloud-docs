@@ -1,6 +1,6 @@
 ﻿---
 title: Cells Aralığını Tek Bir Hücrede Birleştirir
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Birleşmek
 type: docs
 url: /tr/ranges/merge/

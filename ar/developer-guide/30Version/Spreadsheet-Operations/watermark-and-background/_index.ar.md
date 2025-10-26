@@ -1,6 +1,6 @@
 ﻿---
 title: إدراج علامات مائية أو تعيين خلفيات في ملفات Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: العلامة المائية والخلفية
 type: docs
 url: /ar/watermark-and-background/

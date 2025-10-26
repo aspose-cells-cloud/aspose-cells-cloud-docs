@@ -1,6 +1,6 @@
 ﻿---
 title: Ersetzen Sie Text aus der Datei Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ersetzen ohne Verwendung von Speicher
 type: docs
 url: /de/replace/

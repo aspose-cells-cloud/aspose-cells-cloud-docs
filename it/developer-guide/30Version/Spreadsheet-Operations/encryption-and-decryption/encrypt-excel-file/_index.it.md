@@ -1,6 +1,6 @@
 ﻿---
 title: Crittografa un workboo Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Crittografa un file Excel
 type: docs
 url: /it/excel-file-encrypt/

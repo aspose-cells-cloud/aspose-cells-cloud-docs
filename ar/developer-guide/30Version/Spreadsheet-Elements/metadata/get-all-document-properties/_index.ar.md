@@ -1,6 +1,6 @@
 ﻿---
 title: الحصول على جميع خصائص المستند
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: احصل على ال
 type: docs
 url: /ar/document-properties/get-all/

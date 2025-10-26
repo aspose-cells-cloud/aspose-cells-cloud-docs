@@ -32,13 +32,13 @@ Aspose.Cells Bulut E-Tablosu API, yerel ve bulut tabanlı e-tablo dosyalarını 
 |||`ConvertRangeToCsv`             | CSV|
 |||`ConvertRangeToHtml`            | HTML|
 |||`ConvertRangeToJson`            | JSON|
-||Çizelge|`ConvertChartToImage`           |PNG/JPEG/SVG/....              |
+|| Çizelge|`ConvertChartToImage`           |PNG/JPEG/SVG/....              |
 |||`ConvertChartToPdf`             |PDF                            |
 |**Bulut Dönüşümü**  | Çalışma kitabı|`ExportSpreadsheetAsFormat`     | PDF/XLSX/JSON/.... 30+ format|
 || Çalışma sayfası|`ExportWorksheetAsFormat`       | PDF/XLSX/JSON/.... 30+ format|
 || Masa|`ExportTableAsFormat`           | PDF/XLSX/JSON/.... 30+ format|
 || Menzil|`ExportRangeAsFormat`           | PDF/XLSX/JSON/.... 30+ format|
-||Çizelge|`ExportChartAsFormat`           | PDF/XLSX/JSON/.... 30+ format|
+|| Çizelge|`ExportChartAsFormat`           | PDF/XLSX/JSON/.... 30+ format|
 |**Bulut Farklı Kaydet**     | Çalışma kitabı|`SaveSpreadsheetAs`             | PDF/XLSX/JSON/.... 30+ format|
 
 ### **Yerel Dosya Dönüştürme**
@@ -133,7 +133,7 @@ cellsApi.ExportWorksheetAsFormat (new SDK.Request.ExportWorksheetAsFormatRequest
 .NET projenize Aspose.Cells-Cloud NuGet paketini kurun, NuGet Paket Yöneticisi Konsolunu veya Visual Studio'deki NuGet Paket Yöneticisini kullanabilirsiniz.
 Paketi Paket Yöneticisi Konsolu'nu kullanarak nasıl kurabileceğiniz aşağıda açıklanmıştır:
 
-```Powershell
+```powershell
 
 Install-Package Aspose.Cells-Cloud
 

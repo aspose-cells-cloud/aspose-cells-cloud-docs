@@ -15,7 +15,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/unme
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
@@ -24,7 +24,7 @@ Les paramètres de la requête sont :
 | startRow| entier| requête| La ligne de départ.|
 | colonne de démarrage| entier| requête| La colonne de départ.|
 | totalRows| entier| requête| Le nombre total de lignes|
-| totalColumns| entier| requête| Le nombre total de colonnes.|
+| colonnes totales| entier| requête| Le nombre total de colonnes.|
 | dossier| chaîne| requête| Le dossier du classeur.|
 | nom de stockage| chaîne| requête| nom de stockage.|
 

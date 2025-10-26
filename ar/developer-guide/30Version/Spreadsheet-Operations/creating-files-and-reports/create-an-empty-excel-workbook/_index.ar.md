@@ -1,6 +1,6 @@
 ﻿---
 title: إنشاء دفتر عمل فارغ Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: دفتر عمل فارغ
 type: docs
 url: /ar/create-an-empty-excel-file/

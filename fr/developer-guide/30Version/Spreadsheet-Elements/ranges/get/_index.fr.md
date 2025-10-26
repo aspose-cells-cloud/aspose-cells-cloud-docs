@@ -1,6 +1,6 @@
 ﻿---
 title: Comment obtenir le contenu d'une plage à partir d'une feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Gé
 type: docs
 url: /fr/ranges/get/

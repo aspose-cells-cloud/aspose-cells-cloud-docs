@@ -1,6 +1,6 @@
 ﻿---
 title: Excel dosyasındaki nesneleri temizle
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Temiz
 type: docs
 url: /tr/clear/

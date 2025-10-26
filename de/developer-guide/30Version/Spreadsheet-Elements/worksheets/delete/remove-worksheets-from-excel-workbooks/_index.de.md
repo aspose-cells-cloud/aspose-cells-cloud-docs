@@ -1,6 +1,6 @@
 ﻿---
 title: Arbeitsblatt löschen
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ein Arbeitsblatt
 type: docs
 url: /de/worksheets/delete-worksheet/

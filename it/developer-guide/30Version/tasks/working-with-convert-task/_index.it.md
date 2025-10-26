@@ -1,6 +1,6 @@
 ﻿---
 title: Lavorare con Convert Tas
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /it/tasks/convert/
 aliases: [/working-with-convert-task/]

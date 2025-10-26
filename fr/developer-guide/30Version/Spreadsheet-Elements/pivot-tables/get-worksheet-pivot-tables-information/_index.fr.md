@@ -1,6 +1,6 @@
 ﻿---
-title: Obtenez tous les tableaux croisés dynamiques dans une feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
+title: Obtenir tous les tableaux croisés dynamiques dans une feuille de calcul Excel
+second_title: Documen
 linktitle: Obtenez tout
 type: docs
 url: /fr/pivot-tables/get-all/
@@ -8,9 +8,9 @@ aliases: [/get-worksheet-pivot-tables-information/]
 keywords: Get all pivot tables in an Excel worksheet
 description: Aspose.Cells Cloud REST API prend en charge tous les tableaux croisés dynamiques d'une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 20
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Obtenir tous les tableaux croisés dynamiques dans une feuille de calcul Excel
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Obtenir tous les tableaux croisés dynamiques dans une feuille de calcul Excel
 ---
-Ce REST API indique d'obtenir les informations de la feuille de calcul `pivottables`.
+Ce REST API indique comment obtenir les informations de la feuille de calcul `pivottables`.
  
 ## RSET API
  
@@ -19,7 +19,7 @@ Ce REST API indique d'obtenir les informations de la feuille de calcul `pivottab
 GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables
  
 ```
- Les paramètres de la requête sont :
+ Les paramètres de la requête sont :
  
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

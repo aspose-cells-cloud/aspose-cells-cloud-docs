@@ -1,6 +1,6 @@
 ﻿---
 title: Excel PD'ye
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Excel PD'ye
 type: docs
 url: /tr/convert-excel-file-to-pdf-file/

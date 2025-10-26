@@ -1,6 +1,6 @@
 ﻿---
 title: Обновить автоматический фильтр на листе Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Обновить автофильтр
 type: docs
 url: /ru/autofilter/refresh/

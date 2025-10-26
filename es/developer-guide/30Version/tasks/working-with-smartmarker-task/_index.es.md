@@ -4,9 +4,9 @@ type: docs
 url: /es/tasks/smartmarker/
 aliases: [/working-with-smartmarker-task/]
 keywords: REST API, task, save result, spreadsheets, exce
-description: "Cells.Cloud API para Excel opera: soporte de tareas para marcadores inteligentes"
+description: "Cells.Cloud API para Excel opera: soporte de tareas para marcador inteligente"
 weight: 60
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Trabajando con la tarea SmartMarker
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Trabajando con SmartMarker Task
 ---
 ## RESTO API
 
@@ -44,7 +44,7 @@ HttpResponseMessage with the operation result.
 
 {{< /tabs >}}
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
 
 Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
 

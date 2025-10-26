@@ -3,9 +3,9 @@ title: 从工作表获取单元格数据
 type: docs
 url: /zh/get-cell-data-from-a-worksheet/
 weight: 10
-kwords: Excel, Office 云, REST API, 电子表格, PDF, CSV, Json, Markdown, 从工作表获取单元格数据
+kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、从工作表获取单元格数据
 ---
-此 REST API 表示当 `cellOrMethodName` 参数为单元名称时，在 Excel 文件中获取 `cell`。
+此 REST API 表示当 `cellOrMethodName` 参数为单元格名称时，在 Excel 文件中获取 `cell`。
 
 - **cURL 示例**
 

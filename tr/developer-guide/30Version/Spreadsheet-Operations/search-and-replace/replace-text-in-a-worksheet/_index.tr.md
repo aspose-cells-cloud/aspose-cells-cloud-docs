@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma sayfasındaki metni değiştirin
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Çalışma sayfasında değiştir
 type: docs
 url: /tr/replace-text-in-a-worksheet/

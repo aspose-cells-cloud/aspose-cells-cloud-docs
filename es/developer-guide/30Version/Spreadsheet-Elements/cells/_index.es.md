@@ -1,12 +1,12 @@
 ﻿---
 title: Trabajando con el celular Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Celúla
 type: docs
 url: /es/working-with-cells/
 aliases: [/working-with-worksheets/]
 keywords: REST API, spreadsheets, excel, cell
-description: "Cells.Nube API para Excel operar: células operan"
+description: "Cells.Nube API para Excel operar: las células operan"
 weight: 100
 kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Cells
 ---
@@ -47,7 +47,7 @@ Cells es el objeto de operación básico de Aspose.Cells para el archivo Excel.
     <div class="col-md-6">
         <ul>
             <li><a href="/cells/es/merge-cells-in-excel-worksheet/">Fusionar Cells en la hoja de trabajo Excel.</a></li>
-            <li><a href="/cells/es/Unmerge Cells in Excel Worksheet/">separar-celdas-en-la-hoja-de-calculo-de-excel.</a></li>
+            <li><a href="/cells/es/Unmerge Cells in Excel Worksheet/">separar-celdas-en-la-hoja-de-cálculo-de-Excel.</a></li>
             <li><a href="/cells/es/get-cells-properties/">Obtenga Cells Propiedades.</a></li>
         </ul>
 </div>

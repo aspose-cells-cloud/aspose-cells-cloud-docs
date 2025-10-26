@@ -1,6 +1,6 @@
 ﻿---
 title: Imposta lo stile del Rang
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Imposta stile
 type: docs
 url: /it/ranges/update/style/

@@ -1,6 +1,6 @@
 ﻿---
 title: استبدال النص في كتاب العمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: استبدال في كتاب العمل
 type: docs
 url: /ar/workbook/replace-text/

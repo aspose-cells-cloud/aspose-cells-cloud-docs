@@ -1,6 +1,6 @@
 ﻿---
 title: Обновление объекта списка на рабочем листе Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Обновление
 type: docs
 url: /ru/list-objects/update/

@@ -1,6 +1,6 @@
 ﻿---
 title: "Trabajando en archivos Excel: Cálculo de fórmulas, ajuste automático, borrado de objetos, etc."
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Excel Operación común
 type: docs
 url: /es/workbook/
@@ -8,7 +8,7 @@ aliases: [/working-with-workbook/]
 keywords: Working with workbook on an Excel file
 description: Aspose.Cells Cloud REST API admite el trabajo con libros de trabajo en archivos Excel. El SDK admite varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 20
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, JSON, Markdown, Libro de trabajo
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Libro de trabajo
 ---
 ## Trabajar con un libro de trabajo Excel
 

@@ -1,6 +1,6 @@
 ﻿---
 title: Excel workboo'da Adlandırılmış Aralıkları Alın
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Nam
 type: docs
 url: /tr/ranges/get/name/

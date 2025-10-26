@@ -1,6 +1,6 @@
 ﻿---
 title: Hitta text från Excel-filen
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Hitta utan att använda lagring
 type: docs
 url: /sv/search/

@@ -1,6 +1,6 @@
 ﻿---
 title: Зашифровать рабочую книгу Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Зашифровать файл Excel
 type: docs
 url: /ru/excel-file-encrypt/

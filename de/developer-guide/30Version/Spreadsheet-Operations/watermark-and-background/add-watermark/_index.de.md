@@ -1,6 +1,6 @@
 ﻿---
 title: Fügen Sie der Datei Excel ein Wasserzeichen hinzu
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Wasserzeichen in die Datei Excel einfügen
 type: docs
 url: /de/add-watermark-into-excel-files/

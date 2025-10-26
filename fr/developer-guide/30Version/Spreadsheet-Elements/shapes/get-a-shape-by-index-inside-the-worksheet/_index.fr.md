@@ -1,6 +1,6 @@
 ﻿---
 title: Obtenir une forme par index sur une feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Gé
 type: docs
 url: /fr/shapes/get/
@@ -20,13 +20,13 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes/{sha
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| nom du document.|
 | nom de la feuille| chaîne| chemin| nom de la feuille de calcul.|
-| index de forme| entier| chemin| index des formes dans les formes de la feuille de calcul.|
+| indice de forme| entier| chemin| index des formes dans les formes de la feuille de calcul.|
 | dossier| chaîne| requête| Dossier du document.|
 | nom de stockage| chaîne| requête| nom de stockage.|
 

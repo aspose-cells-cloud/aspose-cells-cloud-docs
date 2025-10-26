@@ -1,6 +1,6 @@
 ﻿---
 title: Удалить фильтр по дате
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Удалить фильтр по дате
 type: docs
 url: /ru/autofilter/delete-date-filter/

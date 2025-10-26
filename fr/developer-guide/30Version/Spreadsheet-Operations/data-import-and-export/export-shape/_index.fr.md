@@ -1,6 +1,6 @@
 ﻿---
 title: Exporter la forme
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Forme
 type: docs
 url: /fr/export-excel-shape-to-different-formats/

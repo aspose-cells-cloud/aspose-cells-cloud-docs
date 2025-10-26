@@ -1,6 +1,6 @@
 ﻿---
 title: إلغاء تأمين الدفعة
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /ar/batch/unlock
 keywords: Batch unlock of multiple Excel files

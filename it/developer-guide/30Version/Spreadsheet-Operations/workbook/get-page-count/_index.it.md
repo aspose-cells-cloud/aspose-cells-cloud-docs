@@ -1,6 +1,6 @@
 ﻿---
 title: Ottieni il conteggio delle pagine da un Fil Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Pagina
 type: docs
 url: /it/get-page-count-from-an-excel-file/

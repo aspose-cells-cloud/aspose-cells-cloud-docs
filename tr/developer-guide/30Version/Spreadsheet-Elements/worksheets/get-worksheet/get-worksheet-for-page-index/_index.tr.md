@@ -1,6 +1,6 @@
 ﻿---
-title: Excel çalışma sayfasının bir sayfasını dışa aktar
-second_title: Aspose.Cells Cloud Documen
+title: Excel çalışma sayfasının bir sayfasını dışa aktarın
+second_title: Documen
 linktitle: Sayfa
 type: docs
 url: /tr/worksheets/page-to-different-formats/

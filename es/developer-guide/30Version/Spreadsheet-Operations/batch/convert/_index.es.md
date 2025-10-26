@@ -1,12 +1,12 @@
 ﻿---
 title: Conversión por lotes del archivo Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /es/batch/convert
 keywords: Batch conversion of multiple excel files
 description: Aspose.Cells Cloud API admite la conversión por lotes de varios archivos de Excel. El SDK es compatible con varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 100
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, JSON, Markdown, Conversión por lotes
+kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Conversión por lotes
 ---
 Este REST API indica `batch conversion` de archivos elegibles
 
@@ -68,7 +68,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/batch/convert" \
 
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
 
 Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
 

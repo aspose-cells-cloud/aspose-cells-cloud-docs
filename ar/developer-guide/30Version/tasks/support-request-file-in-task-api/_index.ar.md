@@ -1,6 +1,6 @@
 ﻿---
 title: ملف طلب الدعم في مهمة AP
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /ar/tasks/support-request-file/
 aliases: [/support-request-file-in-task-api/]

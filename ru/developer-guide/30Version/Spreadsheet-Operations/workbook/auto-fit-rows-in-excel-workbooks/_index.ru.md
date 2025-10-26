@@ -1,6 +1,6 @@
 ﻿---
 title: Автоматический подбор строк в рабочей книге Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ряд
 type: docs 
 url: /ru/autofit-rows-on-an-excel-file/

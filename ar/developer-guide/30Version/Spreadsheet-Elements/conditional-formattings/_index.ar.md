@@ -1,6 +1,6 @@
 ﻿---
 title: العمل مع التنسيق الشرطي Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: التنسيق الشرطي
 type: docs
 url: /ar/conditional-formattings/

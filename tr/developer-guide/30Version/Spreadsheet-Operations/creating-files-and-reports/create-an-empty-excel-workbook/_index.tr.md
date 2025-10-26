@@ -1,6 +1,6 @@
 ﻿---
 title: Boş bir Excel çalışma kitabı oluşturun
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Boş Çalışma Kitabı
 type: docs
 url: /tr/create-an-empty-excel-file/

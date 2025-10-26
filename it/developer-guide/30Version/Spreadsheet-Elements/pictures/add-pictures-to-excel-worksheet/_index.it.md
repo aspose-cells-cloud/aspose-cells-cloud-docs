@@ -1,6 +1,6 @@
 ﻿---
 title: Aggiungi immagine in un file Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: A.D
 type: docs
 url: /it/pictures/add/

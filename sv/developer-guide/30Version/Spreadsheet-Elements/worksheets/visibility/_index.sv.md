@@ -1,6 +1,6 @@
 ﻿---
 title: Hur man arbetar med synlighet på ett Excel-arbetsblad
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Synlighet
 type: docs
 url: /sv/worksheets/panes/

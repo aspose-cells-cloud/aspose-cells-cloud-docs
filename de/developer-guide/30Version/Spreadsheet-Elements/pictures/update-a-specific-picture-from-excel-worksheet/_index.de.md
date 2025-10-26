@@ -1,7 +1,7 @@
 ﻿---
 title: Bild in einer Excel-Datei aktualisieren
-second_title: Aspose.Cells Cloud Documen
-linktitle: Aktualisierung
+second_title: Documen
+linktitle: Aktualisieren
 type: docs
 url: /de/pictures/update/
 aliases: [/update-a-specific-picture-from-excel-workshee/]

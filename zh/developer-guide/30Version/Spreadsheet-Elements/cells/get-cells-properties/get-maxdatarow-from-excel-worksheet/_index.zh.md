@@ -3,7 +3,7 @@ title: 从 Excel 工作表中获取 MaxDataRow
 type: docs
 url: /zh/get-maxdatarow-from-excel-worksheet/
 weight: 50
-kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、从 Excel 工作表中获取 MaxDataRow
+kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、从 Excel 工作表获取 MaxDataRow
 ---
 此 REST API 表示当 `cellOrMethodName` 参数为 `maxdatarow` 时，在 Excel 文件中获取 `maxdatarow`。
 

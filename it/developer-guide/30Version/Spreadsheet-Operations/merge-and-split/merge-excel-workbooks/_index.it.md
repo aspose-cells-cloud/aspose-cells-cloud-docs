@@ -1,6 +1,6 @@
 ﻿---
 title: Unisci una cartella di lavoro Excel in un altro file Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Unisci un file Excel nel file Excel
 type: docs
 url: /it/merge-an-excel-file-into-the-excel-file/

@@ -1,6 +1,6 @@
 ﻿---
 title: الحصول على البيانات الوصفية من الملف Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: احصل عليه بدون استخدام التخزين
 type: docs
 url: /ar/metadata/get/

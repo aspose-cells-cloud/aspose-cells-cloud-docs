@@ -1,6 +1,8 @@
 ﻿---
-title: كويكستار
-second_title: Aspose.Cells Cloud Documen
+title: "Aspose.Cells البدء السريع في السحابة: إنشاء تطبيق جدول بيانات في 5 دقائق"
+second_title: Documen
+ArticleTitle: Aspose.Cells Cloud Quickstar
+linktitle: كويكستار
 type: docs
 url: /ar/quickstart/
 description: Aspose.Cells تدعم السحابة Excel لإنشاء الكائنات الداخلية وتحويلها ودمجها وتقسيمها وحمايتها وما إلى ذلك
@@ -41,9 +43,9 @@ kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF،
 
 ## احصل على بيانات اعتماد الأمان الخاصة بك (معرف العميل والسر)
 
-تولي شركة Aspose أهمية بالغة لقضايا الأمن. نستخدم رمز JWT للمصادقة وتشفير HTTPS الشامل لتأمين جميع تفاعلات العميل والخادم.
+تولي شركة Aspose أهمية بالغة لقضايا الأمن. نستخدم رمز JWT للمصادقة وتشفير HTTPS الشامل لتأمين جميع التفاعلات بين العميل والخادم.
 
- التطبيق عبارة عن مجموعة من بيانات الاعتماد الفريدة API —**معرف العميل** و**سر العميل**يمكنك استخدامها للمصادقة عند الاتصال برقمنا السحابي API. في معظم الحالات، ستحتاج إلى تطبيق واحد فقط. في بعض الحالات المتقدمة، قد ترغب في تسجيل واستخدام عدة تطبيقات منفصلة.**معرف العميل والسر** أوراق اعتماد.
+ التطبيق عبارة عن مجموعة من بيانات الاعتماد الفريدة API —**معرف العميل** و**سر العميل** يمكنك استخدامها للمصادقة عند الاتصال برقمنا السحابي API. في معظم الحالات، ستحتاج إلى تطبيق واحد فقط. في بعض الحالات المتقدمة، قد ترغب في تسجيل واستخدام عدة تطبيقات منفصلة.**معرف العميل والسر** أوراق اعتماد.
 
 للوصول إلى المعلومات المتعلقة بتطبيقاتك، يرجى تنفيذ الخطوات التالية:
 
@@ -74,13 +76,13 @@ kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF،
 
  تفضل بتخصيص بعض الوقت للتعرف على مجموعة واسعة من منتجات Aspose.Cells السحابية لفهم إمكانياتك بشكل أفضل. صُممت هذه المنتجات البرمجية بناءً على أداء عالٍ.[سحابة API](https://apireference.aspose.com/)، متاح 24/7.
 
- من أجل الاستخدام الفعال لـ Cloud API، نقدم مجموعة من الأدوات القوية[مجموعات تطوير البرامج السحابية](https://products.aspose.cloud/cells/family) لجميع أنظمة التشغيل الرئيسية تقريبًا (Windows، macOS، Linux، Android) ولغات البرمجة الشائعة، بما في ذلك[أندرويد](https://products.aspose.cloud/cells/android), [C#](https://products.aspose.cloud/cells/net), [Python](https://products.aspose.cloud/cells/python), [جولانج](https://products.aspose.cloud/cells/go), [Java](https://products.aspose.cloud/cells/java), [نود.جي اس](https://products.aspose.cloud/cells/nodejs), [Perl](https://products.aspose.cloud/cells/perl), [PHP](https://products.aspose.cloud/cells/php), [روبي](https://products.aspose.cloud/cells/ruby) ، و[سويفت](https://products.aspose.cloud/cells/swift).
+ من أجل الاستخدام الفعال لـ Cloud API، نقدم مجموعة من الأدوات القوية[مجموعات تطوير البرامج السحابية](https://products.aspose.cloud/cells/family)لجميع أنظمة التشغيل الرئيسية تقريبًا (Windows، macOS، Linux، Android) ولغات البرمجة الشائعة، بما في ذلك[أندرويد](https://products.aspose.cloud/cells/android), [C#](https://products.aspose.cloud/cells/net), [Python](https://products.aspose.cloud/cells/python), [جولانج](https://products.aspose.cloud/cells/go), [Java](https://products.aspose.cloud/cells/java), [نود.جي اس](https://products.aspose.cloud/cells/nodejs), [Perl](https://products.aspose.cloud/cells/perl), [PHP](https://products.aspose.cloud/cells/php), [روبي](https://products.aspose.cloud/cells/ruby) ، و[سويفت](https://products.aspose.cloud/cells/swift).
 
  يتم استضافة جميع حزم SDK المذكورة أعلاه على[جيثب](https://github.com/aspose-cells-cloud/)يحتوي كل مستودع على مجموعة واسعة من أمثلة التعليمات البرمجية لتوضيح استخدامه.
 
 ## تحقق من وثائق المطور وأمثلة التعليمات البرمجية
 
-الآن تم إعداد حسابك بالكامل وتثبيت بيئة التطوير. يمكنك البدء بكتابة التعليمات البرمجية باستخدام مجموعة تطوير البرامج (SDK) المختارة. يُرجى مراجعة[دليل المطور](https://docs.aspose.cloud/cells/developer-guide/) للحصول على معلومات حول كيفية استخدام السحابة API بسهولة.
+ الآن تم إعداد حسابك بالكامل وتثبيت بيئة التطوير. يمكنك البدء بكتابة التعليمات البرمجية باستخدام مجموعة تطوير البرامج (SDK) المختارة. يُرجى مراجعة[دليل المطور](https://docs.aspose.cloud/cells/developer-guide/) للحصول على معلومات حول كيفية استخدام السحابة API بسهولة.
 
 على سبيل المثال تحويل مصنف إلى تنسيقات أخرى.
 

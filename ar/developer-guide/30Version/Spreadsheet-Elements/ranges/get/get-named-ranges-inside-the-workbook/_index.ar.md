@@ -1,6 +1,6 @@
 ﻿---
 title: الحصول على النطاقات المسماة على كتاب العمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: نام
 type: docs
 url: /ar/ranges/get/name/

@@ -1,6 +1,6 @@
 ﻿---
 title: Mettre à jour les métadonnées
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Mettre à jour sans utiliser de stockage
 type: docs
 url: /fr/metadata/update/
@@ -19,7 +19,7 @@ POST http://api.aspose.cloud/v3.0/cells/metadata/update
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

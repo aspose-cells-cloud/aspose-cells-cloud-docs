@@ -1,6 +1,6 @@
 ﻿---
 title: Fenster auf einem Arbeitsblatt Excel freigeben
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Auftauen
 type: docs
 url: /de/worksheets/panes/unfreeze/

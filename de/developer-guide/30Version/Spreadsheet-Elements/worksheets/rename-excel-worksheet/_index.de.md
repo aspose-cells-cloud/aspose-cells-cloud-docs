@@ -1,6 +1,6 @@
 ﻿---
 title: Excel Arbeitsblatt umbenannt
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Umbenennen
 type: docs
 url: /de/worksheets/rename/

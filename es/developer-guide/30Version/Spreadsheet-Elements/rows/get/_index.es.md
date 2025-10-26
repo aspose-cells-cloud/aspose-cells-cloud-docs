@@ -1,6 +1,6 @@
 ﻿---
 title: Trabajando con la obtención de filas en una hoja de cálculo Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ge
 type: docs
 url: /es/rows/get/

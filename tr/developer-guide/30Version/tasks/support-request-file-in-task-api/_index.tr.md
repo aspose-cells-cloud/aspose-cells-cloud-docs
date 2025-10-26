@@ -1,6 +1,6 @@
 ﻿---
 title: Görev AP'deki destek talebi dosyası
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /tr/tasks/support-request-file/
 aliases: [/support-request-file-in-task-api/]

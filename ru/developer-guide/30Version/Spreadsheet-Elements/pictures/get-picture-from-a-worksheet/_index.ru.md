@@ -1,6 +1,6 @@
 ﻿---
 title: Получите все изображения в рабочем листе Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Получить все
 type: docs
 url: /ru/pictures/get-all/

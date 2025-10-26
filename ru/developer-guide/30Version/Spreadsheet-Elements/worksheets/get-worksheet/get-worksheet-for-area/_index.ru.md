@@ -1,6 +1,6 @@
 ﻿---
 title: Экспорт области из рабочего листа Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Являются
 type: docs
 url: /ru/worksheets/area-to-different-formats/

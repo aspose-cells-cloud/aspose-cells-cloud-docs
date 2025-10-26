@@ -1,6 +1,6 @@
 ﻿---
 title: Получить все сводные таблицы на листе Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Получить все
 type: docs
 url: /ru/pivot-tables/get-all/

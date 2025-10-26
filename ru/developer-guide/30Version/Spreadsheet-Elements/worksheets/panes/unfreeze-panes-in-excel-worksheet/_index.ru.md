@@ -1,6 +1,6 @@
 ﻿---
 title: Разморозить области на листе Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Разморозить
 type: docs
 url: /ru/worksheets/panes/unfreeze/

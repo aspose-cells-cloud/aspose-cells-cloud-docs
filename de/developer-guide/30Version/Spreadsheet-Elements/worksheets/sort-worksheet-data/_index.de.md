@@ -1,6 +1,6 @@
 ﻿---
 title: Sortieren Sie Bereichsdaten auf einem Excel-Arbeitsblatt
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Sor
 type: docs
 url: /de/worksheets/sort-data/

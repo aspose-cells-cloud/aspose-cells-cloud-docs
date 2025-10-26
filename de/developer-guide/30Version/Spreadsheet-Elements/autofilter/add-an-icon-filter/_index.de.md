@@ -1,6 +1,6 @@
 ﻿---
 title: Fügen Sie einen Symbolfilter in einem Excel-Arbeitsblatt hinzu
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Symbolfilter hinzufügen
 type: docs
 url: /de/autofilter/add-icon-filter/

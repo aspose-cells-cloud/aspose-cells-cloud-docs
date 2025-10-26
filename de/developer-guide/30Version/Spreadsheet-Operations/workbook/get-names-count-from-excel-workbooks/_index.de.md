@@ -1,6 +1,6 @@
 ﻿---
 title: Holen Sie sich Namen aus einem Excel Arbeitsbuch
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Name
 type: docs
 url: /de/get-names-from-an-excel-file/

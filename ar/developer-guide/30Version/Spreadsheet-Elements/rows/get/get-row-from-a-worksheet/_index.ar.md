@@ -1,6 +1,6 @@
 ﻿---
 title: الحصول على وصف الصف من ورقة عمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: رو
 type: docs
 url: /ar/rows/get/row/

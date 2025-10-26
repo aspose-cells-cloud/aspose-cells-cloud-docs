@@ -1,12 +1,12 @@
 ﻿---
 title: Excel a CS
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Excel a CS
 type: docs
 url: /esconvert-excel-file-to-csv-file/
 aliases: [/convert-excel-file-to-csv-in-cloud/,/convert/excel-to-csv/,/convert-excel-file-to-csv-file/]
 keywords: Convert excel files to csv files
-description: Aspose.Cells Cloud REST API admite la conversión de archivos de Excel a archivos CSV. El SDK es compatible con varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
+description: Aspose.Cells Cloud REST API admite la conversión de archivos Excel a archivos CSV. El SDK es compatible con varios lenguajes de desarrollo, como Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift.
 weight: 90
 kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Excel a CSV
 ---
@@ -17,8 +17,8 @@ Este REST API indica a `convert` un archivo de hoja de cálculo a un archivo de 
 |Nombre del parámetro|Tipo|Descripción|
 |:- |:- |:- |
 |contraseña|cadena| La contraseña necesaria para abrir un archivo Excel.|
-|nombreDeAlmacenamiento|cadena| El nombre de almacenamiento donde se encuentra el archivo.|
-|comprobarRestricciónExcel|bool| Si verificar la restricción del archivo Excel cuando el usuario modifica objetos relacionados con celdas.|
+|nombreDeAlmacenamiento|cadena| El nombre del almacenamiento donde se encuentra el archivo.|
+|comprobarRestricción de Excel|bool| Si verificar la restricción del archivo Excel cuando el usuario modifica objetos relacionados con celdas.|
 
 **Parámetro del cuerpo de la solicitud**
 
@@ -73,7 +73,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/csv"
 
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
 
 Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
@@ -130,11 +130,11 @@ Los siguientes ejemplos de código demuestran cómo realizar llamadas a los serv
 
 ## Otras API implementan esta función
 
-[POST /cells/{nombre}/guardar como](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) API le permite guardar el archivo MS Excel como archivo CSV con configuraciones adicionales y guardar el resultado en el almacenamiento.
+[POST /cells/{nombre}/guardar como](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)API le permite guardar el archivo MS Excel como archivo CSV con configuraciones adicionales y guardar el resultado en el almacenamiento.
 
 Este archivo de Excel REST API `convert` a CSV.
 
-[PUT /células/convertir](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) API le permite convertir el archivo MS Excel a un archivo CSV con configuraciones adicionales y guardar el resultado en la respuesta.
+[PUT /celdas/convertir](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) API le permite convertir el archivo MS Excel a un archivo CSV con configuraciones adicionales y guardar el resultado en la respuesta.
 
 Este archivo de Excel REST API `export` a CSV.
 

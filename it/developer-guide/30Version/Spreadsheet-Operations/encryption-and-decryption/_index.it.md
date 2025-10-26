@@ -1,6 +1,6 @@
 ﻿---
 title: Crittografa, decrittografa e firma digitale dei file Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Proteggi Exce
 type: docs
 url: /it/protect/

@@ -1,7 +1,7 @@
 ﻿---
 title: So aktualisieren Sie den Bereichsinhalt aus einem Excel-Arbeitsblatt
-second_title: Aspose.Cells Cloud Documen
-linktitle: Aktualisierung
+second_title: Documen
+linktitle: Aktualisieren
 type: docs
 url: /de/ranges/update/
 keywords: How to update range content from an Excel worksheet

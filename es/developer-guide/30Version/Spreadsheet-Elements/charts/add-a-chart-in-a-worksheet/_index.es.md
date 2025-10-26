@@ -28,7 +28,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts
 | columna inferior derecha| entero| consulta|0 |
 | área| cadena| consulta| Especifica valores a partir de los cuales se trazará la serie de datos.|
 | esVertical| booleano| consulta| Verdadero|
-| categoryData| cadena| consulta|Obtiene o establece el rango de valores del eje de categorías. Puede ser un rango de celdas (por ejemplo, "d1:e10").|
+| categoríaDatos| cadena| consulta|Obtiene o establece el rango de valores del eje de categorías. Puede ser un rango de celdas (por ejemplo, "d1:e10").|
 | esAutoGetSerialName| booleano| consulta| Verdadero|
 | título| cadena| consulta| Especifica el nombre del título del gráfico.|
 | carpeta| cadena| consulta| La carpeta del libro de trabajo.|
@@ -79,7 +79,7 @@ curl  -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cha
 
 ## Familia de SDK en la nube
  
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
  
 Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
 

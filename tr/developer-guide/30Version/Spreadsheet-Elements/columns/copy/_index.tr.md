@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma sayfasındaki sütunları kopyalayın
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Polis
 type: docs
 url: /tr/columns/copy/

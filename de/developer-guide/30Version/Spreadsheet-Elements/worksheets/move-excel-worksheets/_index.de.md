@@ -1,6 +1,6 @@
 ﻿---
 title: Verschieben Sie ein Excel Arbeitsblatt
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Bewegung
 type: docs
 url: /de/worksheets/move/

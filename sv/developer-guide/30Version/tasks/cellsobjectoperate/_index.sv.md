@@ -1,6 +1,6 @@
 ﻿---
 title: Arbeta med CellsObjectOperate Tas
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /sv/tasks/cells-object-operate/
 aliases: [/working-with-cellsobjectoperate-task/]
@@ -14,7 +14,7 @@ Detta REST API opererar celler-objekt `task`.
 
 |Parameternamn|Typ|Beskrivning|
 |:- |:- |:- |
-| OperateObjectType| sträng| Arbetsbok/Arbetsblad/Sidinställningar/Cells/Diagram/Form/Listobjekt/Pivottabell/Arbetsboksinställningar/Sidbrytning|
+| OperateObjectType| sträng|Arbetsbok/Arbetsblad/Sidinställningar/Cells/Diagram/Form/Listobjekt/Pivottabell/Arbetsboksinställningar/Sidbrytning|
 | OperateObjectPosition| Objekt||
 
 **OperateObjectPosition**

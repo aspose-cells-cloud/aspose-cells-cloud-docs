@@ -1,6 +1,6 @@
 ﻿---
 title: Festlegen des Änderungskennworts eines Excel-Arbeitsbuchs
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ändern eines Excel-Dateikennworts
 type: docs
 url: /de/workbook/password/modify/

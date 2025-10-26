@@ -1,6 +1,6 @@
 ﻿---
 title: Effacer et modifier le mot de passe du classeur Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Effacer le mot de passe des fichiers Excel
 type: docs
 url: /fr/clear-excel-files-password/
@@ -20,7 +20,7 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/writeProtection
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

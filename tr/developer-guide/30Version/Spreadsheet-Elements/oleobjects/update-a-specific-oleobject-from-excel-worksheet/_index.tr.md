@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma sayfasındaki bir OLE nesnesini güncelleyin
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Güncelleme
 type: docs
 url: /tr/oleobjects/update/

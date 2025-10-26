@@ -1,6 +1,6 @@
 ﻿---
 title: Decifrare un workboo Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Decifrare un file Excel
 type: docs
 url: /it/excel-file-decrypt/

@@ -1,6 +1,6 @@
 ﻿---
 title: Copia contenuti e formati da un altro foglio di lavoro
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Poliziotto
 type: docs
 url: /it/worksheets/copy/

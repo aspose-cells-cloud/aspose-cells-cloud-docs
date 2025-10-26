@@ -1,6 +1,6 @@
 ﻿---
 title: Eliminar fila en una hoja de cálculo Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ro
 type: docs
 url: /es/rows/delete/row/
@@ -66,19 +66,19 @@ curl -v "http://api.aspose.cloud/v3.0/cells/" \
 
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
 
 Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
 
 ## **Introducción**
 
-Este ejemplo muestra cómo eliminar una fila de una hoja de cálculo Excel usando Aspose.Cells Cloud API en sus aplicaciones. Puede usar nuestra base de datos REST API con cualquier lenguaje: .NET, Java, PHP, Ruby, Rails, Python, jQuery y muchos más.
+Este ejemplo muestra cómo eliminar una fila de una hoja de cálculo Excel usando Aspose.Cells Cloud API en sus aplicaciones. Puede usar nuestro REST API con cualquier lenguaje: .NET, Java, PHP, Ruby, Rails, Python, jQuery y muchos más.
 
 ## **API Información**
 
 |**API**|**Tipo**|**Descripción**|**Enlace de recursos**|
 |:- |:- |:- |:- |
-|/celdas/{nombre}/hojasdetrabajo/{nombredehoja}/celdas/filas|CORREO|Eliminar filas de una hoja de cálculo Excel|[Eliminar filas de la hoja de cálculo](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetRows)|
+|/celdas/{nombre}/hojasdetrabajo/{nombreDeHoja}/celdas/filas|CORREO|Eliminar filas de una hoja de cálculo Excel|[Eliminar filas de la hoja de cálculo](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetRows)|
 
 ### **cURL Ejemplo**
 
@@ -114,7 +114,7 @@ curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/
 
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
 
 Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
 

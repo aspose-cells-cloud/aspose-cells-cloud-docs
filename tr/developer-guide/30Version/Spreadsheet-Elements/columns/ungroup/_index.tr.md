@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma sayfasındaki sütunları gruplandırmayı kaldırın
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ungruo
 type: docs
 url: /tr/columns/ungroup/

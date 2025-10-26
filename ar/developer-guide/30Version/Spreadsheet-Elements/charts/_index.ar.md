@@ -1,6 +1,6 @@
 ﻿---
 title: العمل مع مخطط Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: جدول
 type: docs
 url: /ar/charts/

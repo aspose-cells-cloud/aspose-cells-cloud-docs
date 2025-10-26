@@ -1,6 +1,6 @@
 ﻿---
 title: Заменить текст на листе Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Заменить в рабочем листе
 type: docs
 url: /ru/replace-text-in-a-worksheet/

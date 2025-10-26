@@ -1,6 +1,6 @@
 ﻿---
 title: Удалить фильтр на листе Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Удалить фильтр
 type: docs
 url: /ru/delete-filter/

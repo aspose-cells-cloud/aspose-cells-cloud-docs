@@ -1,13 +1,13 @@
 ﻿---
 title: Excel à Jso
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Excel à Jso
 type: docs
 url: /fr/convert-excel-file-to-json-file/
 keywords: Convert excel files to json files
 description: Aspose.Cells Cloud REST API prend en charge la conversion de fichiers Excel en fichiers JSON. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 100
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Excel vers Json
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Excel vers Json
 ---
 Ce REST API indique à `convert` un fichier de feuille de calcul vers un fichier au format json.
 
@@ -17,7 +17,7 @@ Ce REST API indique à `convert` un fichier de feuille de calcul vers un fichier
 |:- |:- |:- |
 |mot de passe|chaîne| Le mot de passe nécessaire pour ouvrir un fichier Excel.|
 |nom de stockage|chaîne| Le nom du stockage où se trouve le fichier.|
-|checkExcelRestriction|booléen| Vérifiez si la restriction du fichier Excel est vérifiée lorsque l'utilisateur modifie les objets liés aux cellules.|
+|vérifierExcelRestriction|booléen| Vérifiez si la restriction du fichier Excel est vérifiée lorsque l'utilisateur modifie les objets liés aux cellules.|
 
 **Paramètre du corps de la requête**
 

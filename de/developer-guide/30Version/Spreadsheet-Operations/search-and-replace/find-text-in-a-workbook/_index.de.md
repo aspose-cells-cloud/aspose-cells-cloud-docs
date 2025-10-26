@@ -1,6 +1,6 @@
 ﻿---
 title: Suchen Sie nach Text in einem Excel-Arbeitsbuch
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Im Arbeitsbuch suchen
 type: docs
 url: /de/workbook/find-text/

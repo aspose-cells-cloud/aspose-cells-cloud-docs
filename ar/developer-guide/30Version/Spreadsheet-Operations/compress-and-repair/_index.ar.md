@@ -1,6 +1,6 @@
 ﻿---
 title: ضغط وإصلاح ملفات Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /ar/compress-and-repair-excel-files/
 linktitle: الضغط والإصلاح
@@ -9,3 +9,5 @@ description: من خلال تقليل أحجام الملفات لتحسين م�
 weight: 100
 kwords: ضغط الملفات العميق مقابل الضغط السريع؛ إصلاح الملفات الشامل مقابل محاولات الإصلاح الجزئي؛ الكشف التلقائي عن الأخطاء مقابل عمليات التحقق من دليل المستخدم
 ---
+- **["ضغط البيانات في ملف Excel"](https://docs.aspose.cloud/cells/compress-excel-files/)**
+- **["إصلاح ملفات Excel"](https://docs.aspose.cloud/cells/repair-excel-files/)**

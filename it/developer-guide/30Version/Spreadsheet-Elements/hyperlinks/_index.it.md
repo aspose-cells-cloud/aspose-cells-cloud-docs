@@ -1,6 +1,6 @@
 ﻿---
 title: Lavorare con il collegamento ipertestuale Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 linktitle: Collegamento ipertestuale
 url: /it/hyperlinks/

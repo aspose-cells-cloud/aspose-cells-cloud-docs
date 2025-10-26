@@ -1,6 +1,6 @@
 ﻿---
 title: Çalışma Kitabını Dönüştür Seçeneği
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Çalışma Kitabını Dönüştür Seçeneği
 type: docs
 url: /tr/convert-workbook-options/
@@ -13,10 +13,10 @@ kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdow
 
 Adı | Türü | Açıklama | Notlar
 ------------ | ------------- | ------------- | -------------
-**Veri Kaynağı** | **Nesne** | Veri dosyası kaynağı : CloudFileSystem ,RequestFiles , HttpUri. |
+**Veri Kaynağı** | **Nesne** Veri dosyası kaynağı : CloudFileSystem ,RequestFiles , HttpUri. |
 **[DosyaBilgisi](/hücreler/dosya-bilgisi/)** | **Nesne** | Dosya bilgisi açıklaması. Dosya adı, dosya boyutu ve dosya içeriği (base64 dizesi) dahildir. |
 **[SayfaAyarları](/hücreler/sayfa-ayarları/)** | **Nesne** | Sayfa düzeni özellikleri. |
-**Kaydetme Seçenekleri** | **Nesne** Kaydetme Seçenekleri: DbfSaveOptions, DifSaveOptions, DocxSaveOptions, HtmlSaveOptions, XlsSaveOptions, XlsxSaveOptions, XpsSaveOptions, PngSaveOptions, JpgSaveOptions, GifSaveOptions, EmfSaveOptions, BmpSaveOptions, MdSaveOptions, NumbersSaveOptions, WmfSaveOptions, SvgSaveOptions, TxtSaveOptions, TifSaveOptions, XlsbSaveOptions |
+**Kaydetme Seçenekleri** | **Nesne** | Kaydetme Seçenekleri: DbfSaveOptions, DifSaveOptions, DocxSaveOptions, HtmlSaveOptions, XlsSaveOptions, XlsxSaveOptions, XpsSaveOptions, PngSaveOptions, JpgSaveOptions, GifSaveOptions, EmfSaveOptions, BmpSaveOptions, MdSaveOptions, NumbersSaveOptions, WmfSaveOptions, SvgSaveOptions, TxtSaveOptions, TifSaveOptions, XlsbSaveOptions |
 **DönüştürBiçimlendir** | **sicim** | Dosya biçimi: csv, xls, html, mhtml, ods, pdf, xml, txt, tiff, xlsb, xlsm, xlsx, xltm, xltx, xps, png, jpg, gif, emf, bmp, md, Numbers, wmf, svg, vb. |
 **CheckExcelRestriction** | **Boolean** | Otomatik olarak sarılan metnin türünü alır ve ayarlar. |
 

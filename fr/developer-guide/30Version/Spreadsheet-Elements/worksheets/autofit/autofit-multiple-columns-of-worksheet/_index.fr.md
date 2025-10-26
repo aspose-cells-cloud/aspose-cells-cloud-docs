@@ -1,6 +1,6 @@
 ﻿---
 title: Ajuster automatiquement plusieurs colonnes sur une feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Colonne
 type: docs
 url: /fr/worksheets/autofit/columns/
@@ -20,7 +20,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitcol
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
@@ -28,7 +28,7 @@ Les paramètres de la requête sont :
 | nom de la feuille| chaîne| chemin| Le nom de la feuille de calcul.|
 | première colonne| entier| requête| L'index de la colonne de départ.|
 | dernière colonne| entier| requête| L'index de la colonne de fin.|
-|[Options d'auto-ajustement](/cells/fr/auto-fitter-options/) || corps| Options d'installation automatique.|
+|[Options d'installation automatique](/cells/fr/auto-fitter-options/) || corps| Options d'installation automatique.|
 | première rangée| entier| requête||
 | dernière ligne| entier| requête||
 | dossier| chaîne| requête||

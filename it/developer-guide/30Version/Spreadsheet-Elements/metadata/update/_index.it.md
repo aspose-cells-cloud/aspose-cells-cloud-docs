@@ -1,6 +1,6 @@
 ﻿---
 title: Aggiorna metadati
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Aggiorna senza usare l'archiviazione
 type: docs
 url: /it/metadata/update/

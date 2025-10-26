@@ -1,6 +1,6 @@
 ﻿---
 title: Excel dosyalarına Filigran Ekle veya Arka Plan Ayarla
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Filigran ve Arka Plan
 type: docs
 url: /tr/watermark-and-background/

@@ -1,11 +1,11 @@
 ﻿---
 title: 高级转换 Excel fil
-second_title: Aspose.Cells Cloud Documen
-linktitle: 高级对话
+second_title: Documen
+linktitle: 高级转换
 type: docs
 url: /zh/advanced-convert-excel/
 keywords: Advanced Convert Excel file. Page setup , Save options, Page breaks, Page margins, Page orientation, Page size, Print area, Print titles, Print settings, Print worksheet, Print worksheet with page breaks, Print worksheet with page breaks and print titles, Print worksheet with page breaks and print titles and print area, Print worksheet with page breaks and print titles and print area and print settings, Print worksheet withpage breaks and print titles and print area and print settings and print orientation, Prin
-description: Aspose.Cells Cloud REST API 支持将 Excel 文件转换为各种格式的文件。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
+description: Aspose.Cells Cloud REST API 支持将 Excel 文件转换为多种格式的文件。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
 weight: 50
 kwords: Excel, Office 云, REST API, 电子表格, PDF, CSV, Json, Markdown, 转换 Excel
 ---

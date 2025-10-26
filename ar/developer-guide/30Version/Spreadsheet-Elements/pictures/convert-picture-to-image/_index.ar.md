@@ -1,6 +1,6 @@
 ﻿---
 title: احصل على صورة في ملف Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: جي
 type: docs
 url: /ar/pictures/get/
@@ -8,7 +8,7 @@ aliases: [/convert-picture-to-image/]
 keywords: Get a picture in an Excel file
 description: يدعم Cloud REST Aspose.Cells الحصول على صورة في ملف Excel. تدعم SDK أنواعًا مختلفة من لغات التطوير، بما في ذلك Android وGo وNodeJS وRuby وSwift.
 weight: 10
-kwords: Excel، Office Cloud، REST API، جدول بيانات، PDF، CSV، Json، Markdown، الحصول على صورة في ملف Excel
+kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، الحصول على صورة في ملف Excel
 ---
 يشير هذا REST API إلى الفهرس `get` صورة تلو الأخرى من ورقة عمل Excel.
 

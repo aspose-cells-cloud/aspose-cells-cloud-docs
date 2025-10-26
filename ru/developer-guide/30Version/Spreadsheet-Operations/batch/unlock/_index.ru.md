@@ -1,6 +1,6 @@
 ﻿---
 title: Пакетная разблокировка
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /ru/batch/unlock
 keywords: Batch unlock of multiple Excel files

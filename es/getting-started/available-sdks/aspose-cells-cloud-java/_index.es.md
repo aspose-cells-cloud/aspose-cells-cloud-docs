@@ -1,13 +1,15 @@
 ﻿---
-title: Aspose.Cells SDK de nube para Java
-second_title: Aspose.Cells Cloud Documen
+title: "Aspose.Cells Cloud SDK for Java: Convertir, fusionar, dividir, proteger, buscar, reemplazar y más"
+second_title: Documen
+ArticleTitle: "Aspose.Cells Cloud SDK for Java: Convert, merge, split, protect, search, replace, and more"
+linktitle: Aspose.Cells SDK de nube para Java
 type: docs
 url: /es/available-sdks/aspose-cells-cloud-java/
-description: Aspose.Cells Cloud admite Excel para crear, convertir, fusionar, dividir, proteger, realizar operaciones con objetos internos, etc.
+description: "Aspose.Cells Cloud SDK for Java ofrece verdadera potencia multiplataforma: una importación proporciona a los desarrolladores de Windows, Linux y macOS la misma fluidez API para crear, convertir, fusionar, dividir, proteger y manipular cada Excel objeto; no se requiere instalación Office y no se necesitan ajustes específicos de la plataforma"
 weight: 30
-kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Java
+kwords: Java SDK, Excel SDK for Java, SDK de la nube for Java, REST, Gráfico, Tabla dinámica, Objeto de tabla/lista, Convertir hoja de cálculo, PDF, CSV, JSON, Markdown, Combinar, Dividir, Proteger, Buscar, Reemplazar
 ---
-El SDK es de código abierto y está licenciado bajo la licencia MIT. Puede acceder al código fuente de la biblioteca Java para Aspose.Cells Cloud.[aquí](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java).
+El SDK es de código abierto y está licenciado bajo la licencia MIT. Puedes acceder a él.[el código fuente de la biblioteca Java para Aspose.Cells Cloud](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java).
 
 # **Cómo utilizar la biblioteca Java de Aspose.Cells Cloud**
 

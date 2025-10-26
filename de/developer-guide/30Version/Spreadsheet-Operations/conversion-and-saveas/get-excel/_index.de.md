@@ -1,6 +1,6 @@
 ﻿---
 title: Konvertiert die Datei Excel in ein anderes Format
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Holen Sie sich Exce
 type: docs
 url: /de/get different formats files/

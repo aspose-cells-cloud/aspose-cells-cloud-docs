@@ -1,6 +1,6 @@
 ﻿---
 title: Снять защиту с рабочей книги Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Снять защиту Excel fil
 type: docs
 url: /ru/excel-file-unprotect/

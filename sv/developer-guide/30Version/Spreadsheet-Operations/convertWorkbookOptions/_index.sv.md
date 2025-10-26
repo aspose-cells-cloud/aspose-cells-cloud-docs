@@ -1,6 +1,6 @@
 ﻿---
 title: Alternativet Konvertera arbetsbok
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Alternativet Konvertera arbetsbok
 type: docs
 url: /sv/convert-workbook-options/
@@ -13,10 +13,10 @@ kwords: Excel, Office Moln, REST API, Kalkylblad, PDF, CSV, Json, Markdown, Konv
 
 Namn | Typ | Beskrivning | Anteckningar
 ------------ | ------------- | ------------- | -------------
-**Datakälla** | **Objekt** | Datafilkälla: CloudFileSystem, RequestFiles, HttpUri. |
+**Datakälla** | **Objekt** Datafilkälla: CloudFileSystem, RequestFiles, HttpUri. |
 **[Filinfo](/celler/filinfo/)** | **Objekt** | Filinformationsbeskrivning. Inkluderar filnamn, filstorlek och filinnehåll (base64-sträng).
 **[Sidinställningar](/celler/sidinställningar/)** | **Objekt** | Egenskaper för sidinställningar. |
-**SparaAlternativ** | **Objekt** Sparalternativ: DbfSparaalternativ, DifSparaalternativ, DocxSparaalternativ, HtmlSparaalternativ, XlsSparaalternativ, XlsxSparaalternativ, XpsSparaalternativ, PngSparaalternativ, JpgSparaalternativ, GifSparaalternativ, EmfSparaalternativ, BmpSparaalternativ, MdSparaalternativ, NumbersSparaalternativ, WmfSparaalternativ, SvgSparaalternativ, TxtSparaalternativ, TifSparaalternativ, XlsbSparaalternativ |
+**SparaAlternativ** | **Objekt** | Sparalternativ: DbfSparaalternativ, DifSparaalternativ, DocxSparaalternativ, HtmlSparaalternativ, XlsSparaalternativ, XlsxSparaalternativ, XpsSparaalternativ, PngSparaalternativ, JpgSparaalternativ, GifSparaalternativ, EmfSparaalternativ, BmpSparaalternativ, MdSparaalternativ, NumbersSparaalternativ, WmfSparaalternativ, SvgSparaalternativ, TxtSparaalternativ, TifSparaalternativ, XlsbSparaalternativ |
 **KonverteraFormat** | **sträng** | Filformaten: csv, xls, html, mhtml, ods, pdf, xml, txt, tiff, xlsb, xlsm, xlsx, xltm, xltx, xps, png, jpg, gif, emf, bmp, md, Numbers, wmf, svg, och så vidare. |
 **KontrolleraExcelBegränsning** | **boolesk** | Hämtar och anger typen av automatiskt anpassad radbruten text. |
 
@@ -69,7 +69,7 @@ Namn | Typ | Beskrivning | Anteckningar
 | Fastighetsnamn| Fastighetstyp| Nullvärde| Skrivskyddad| Standardvärde| Beskrivning|
 |:- |:- |:- |:- |:- |:- |
 |Standardteckensnitt|Sträng|sann| falsk|||
-|CheckWorkbookStandardteckensnitt|Booleansk|sann| falsk|||
+|KontrolleraArbetsbokStandardteckensnitt|Booleansk|sann| falsk|||
 |KontrolleraFontkompatibilitet|Booleansk|sann| falsk|||
 |ÄrFontErsättningTeckningsgradGranularitet|Booleansk|sann| falsk|||
 |En sida per ark|Booleansk|sann| falsk|||
@@ -115,7 +115,7 @@ Namn | Typ | Beskrivning | Anteckningar
 |ÄrFullPathLänk|Booleansk|sann| falsk|||
 |Exportera arbetsblad CSS separat|Booleansk|sann| falsk|||
 |ExporteraLiknandeBordstil|Booleansk|sann| falsk|||
-|MergeEmptyTdForcely|Booleansk|sann| falsk|||
+|SammanfogaTömTdForcely|Booleansk|sann| falsk|||
 |Exportera cellkoordinat|Booleansk|sann| falsk|||
 |Exportera extrarubriker|Booleansk|sann| falsk|||
 |Exportera rubriker|Booleansk|sann| falsk|||
@@ -315,7 +315,7 @@ Namn | Typ | Beskrivning | Anteckningar
 |Justera teckenstorlek för radtyp|Sträng|sann| falsk|||
 |Exportvytyp|Sträng|sann| falsk|||
 |Standardteckensnitt|Sträng|sann| falsk|||
-|CheckWorkbookStandardteckensnitt|Booleansk|sann| falsk|||
+|KontrolleraArbetsbokStandardteckensnitt|Booleansk|sann| falsk|||
 |KontrolleraFontkompatibilitet|Booleansk|sann| falsk|||
 |ÄrFontErsättningTeckningsgradGranularitet|Booleansk|sann| falsk|||
 |En sida per ark|Booleansk|sann| falsk|||
@@ -477,7 +477,7 @@ Namn | Typ | Beskrivning | Anteckningar
 | Fastighetsnamn| Fastighetstyp| Nullvärde| Skrivskyddad| Standardvärde| Beskrivning|
 |:- |:- |:- |:- |:- |:- |
 |Standardteckensnitt|Sträng|sann| falsk|||
-|CheckWorkbookStandardteckensnitt|Booleansk|sann| falsk|||
+|KontrolleraArbetsbokStandardteckensnitt|Booleansk|sann| falsk|||
 |KontrolleraFontkompatibilitet|Booleansk|sann| falsk|||
 |ÄrFontErsättningTeckningsgradGranularitet|Booleansk|sann| falsk|||
 |En sida per ark|Booleansk|sann| falsk|||

@@ -1,6 +1,6 @@
 ﻿---
 title: Cómo obtener contenido diferente de una hoja de trabajo Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ge
 type: docs
 url: /es/worksheets/get/
@@ -13,9 +13,9 @@ kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown
 
 - [Cómo obtener una hoja de trabajo Excel con diferentes formatos.](/cells/es/worksheets/get-worksheet/) 
     - [Cómo convertir la hoja de cálculo Excel a imagen.](/cells/es/worksheets/to-image/)
-- [Cómo obtener un área de hoja de trabajo Excel con diferentes formatos.](/cells/es/worksheets/area-to-different-formats/)
+- [Cómo obtener un área de la hoja de trabajo Excel con diferentes formatos.](/cells/es/worksheets/area-to-different-formats/)
 - [Cómo obtener una página de la hoja de trabajo Excel con diferentes formatos.](/cells/es/get-worksheet-for-page-index/) 
-- [Cómo obtener el número de páginas de una hoja de trabajo Excel.](/cells/es/worksheets/page-count/) 
+- [Cómo obtener el número de páginas de una hoja de cálculo Excel.](/cells/es/worksheets/page-count/) 
 - [Cómo obtener la descripción de las hojas de trabajo Excel.](/cells/es/worksheets/get-all/) 
 
 

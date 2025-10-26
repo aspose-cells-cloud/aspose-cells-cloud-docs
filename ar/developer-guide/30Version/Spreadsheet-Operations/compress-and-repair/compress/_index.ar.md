@@ -1,6 +1,6 @@
 ﻿---
 title: ضغط البيانات في ملف Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: ضغط الملف Excel
 type: docs
 url: /ar/compress-excel-files/

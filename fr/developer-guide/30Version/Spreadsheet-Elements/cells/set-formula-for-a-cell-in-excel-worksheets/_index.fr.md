@@ -1,5 +1,5 @@
 ﻿---
-title: Formule de définition d'une cellule dans la feuille de calcul Excel
+title: Définir la formule d'une cellule dans la feuille de calcul Excel
 type: docs
 url: /fr/set-formula-for-a-cell-in-excel-worksheets/
 weight: 80
@@ -14,7 +14,7 @@ Ce REST API indique l'ensemble `cell formula` dans un fichier Excel.
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}
  
 ```
- Les paramètres de la requête sont :
+ Les paramètres de la requête sont :
  
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

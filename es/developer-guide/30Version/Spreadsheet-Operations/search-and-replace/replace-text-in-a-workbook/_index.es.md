@@ -1,6 +1,6 @@
 ﻿---
 title: Reemplazar texto en un libro de trabajo Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Reemplazar en el libro de trabajo
 type: docs
 url: /es/workbook/replace-text/
@@ -26,7 +26,7 @@ Los parámetros de la solicitud son:
 |:- |:- |:- |:- |
 | nombre| cadena| camino| Nombre del documento.|
 | nombreHoja| cadena| camino| Nombre de la hoja de trabajo.|
-| valorAnterior| cadena| consulta|El texto antiguo a reemplazar.|
+| valor antiguo| cadena| consulta|El texto antiguo a reemplazar.|
 | nuevoValor| cadena| consulta| El nuevo texto a sustituir.|
 | carpeta| cadena| consulta| Carpeta del documento.|
 | nombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
@@ -84,7 +84,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/replaceText?oldValue
 
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
 
 Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
 

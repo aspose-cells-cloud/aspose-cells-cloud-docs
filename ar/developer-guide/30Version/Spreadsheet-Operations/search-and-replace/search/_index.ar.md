@@ -1,6 +1,6 @@
 ﻿---
 title: البحث عن النص من الملف Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: البحث دون استخدام التخزين
 type: docs
 url: /ar/search/

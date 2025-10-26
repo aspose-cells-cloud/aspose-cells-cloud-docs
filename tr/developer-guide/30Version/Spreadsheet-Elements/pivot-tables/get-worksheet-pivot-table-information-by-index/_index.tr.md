@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma sayfasında bir pivot tablo edinin
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Elde etmek
 type: docs
 url: /tr/pivot-tables/get/

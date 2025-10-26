@@ -1,6 +1,6 @@
 ﻿---
 title: Was ist neu in Aspose.Cells Cloud im Jahr 2025
-second_title: Latest Updates & Feature
+second_title: Documen
 linktitle: Was ist neu in 202
 type: docs
 weight: 9
@@ -10,6 +10,42 @@ description: Diese Seite beschreibt die interessantesten neuen Aspose.Cells Clou
 kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Was ist neu in Aspose.Cells Cloud
 ---
 Willkommen bei den Neuerungen in Aspose.Cells Cloud-Dokumenten. Auf dieser Seite finden Sie schnell die neuesten Änderungen.
+
+## Funktionen und Verbesserungen in Version 25.9
+
+|**AUSWEIS**|**Zusammenfassung**|**Kategorie**|
+|:- |:- |:- |
+|56632 | Aktualisieren Sie den Namen des Formulardatenparameters für die Cells Cloud-Codespezifikation für Cells Cloud 3.0-Dienste.| Verbesserung|
+|56793 | Beheben Sie das Problem mit StringEnumConverter bei Aspose.Cells Cloud Services.| Insekt|
+|56866 | Unterstützt das Zuschneiden von Tabellenkalkulationsinhalten in Cells Cloud 4.0.| Verbesserung|
+|56867 | Unterstützt das Trimmen von Arbeitsblattbereichsinhalten in Cells Cloud 4.0.| Verbesserung|
+|56919 | Beim Speichern der Tabelle als Datei in einem anderen Format in der Zell-Cloud ist eine Ausnahme aufgetreten.| Insekt|
+|56922 | Beim Exportieren des Bereichs/der Tabelle als HTML-Datei gehen Daten verloren.| Insekt|
+|56936 | Beheben Sie einige Probleme mit Rechtschreibfehlern.| Insekt|
+
+## Funktionen und Verbesserungen in Version 25.8
+
+|**AUSWEIS**|**Zusammenfassung**|**Kategorie**|
+|:- |:- |:- |
+|37693|Unterstützung der Autorisierung im Aspose.Cells Cloud Docker Container|Neue Funktion|
+|56300|Neue Funktion: Aggregieren Sie Zellen nach Farbe in CalculateController.|Neue Funktion|
+|56301|Neue Funktion: Mathematische Berechnungen in CalculateController.|Neue Funktion|
+|56302|Neue Funktion: Hinzufügen/Löschen/Umbenennen von Arbeitsblättern im ManagementController.|Neue Funktion|
+|56303|Neue Funktion: Hinzufügen/Löschen von Arbeitsblättern im ManagementController.|Neue Funktion|
+|56304|Neue Funktion: Erstellen Sie eine Tabelle im ManagementController.|Neue Funktion|
+|56309|Neue Funktion: Neugestaltung des Datenimports in die Tabellenkalkulation.|Neue Funktion|
+|56310|Neue Funktion: Datenbereiche in der Tabelle vertauschen.|Neue Funktion|
+|56407|Korrigieren Sie den Codegenerator der Cells Cloud SDK-Spezifikation für den Enum-Abfrageparameter.|Insekt|
+
+## Funktionen und Verbesserungen in Version 25.7
+
+|**AUSWEIS**|**Zusammenfassung**|**Kategorie**|
+|:- |:- |:- |
+|55754|Das Kürzen der gesamten Arbeitsmappe ist fehlgeschlagen.|Insekt|
+|55755|Das Aktualisieren der Groß-/Kleinschreibung der gesamten Arbeitsmappe ist fehlgeschlagen.|Insekt|
+|55930|Fügen Sie Funktionen zum Schützen/Aufheben des Schutzes von Tabellenkalkulationen hinzu.|Neue Funktion|
+|55931|Fügen Sie die Konvertierung von Arbeitsblättern/Tabellen/Bereichen in andere Formate hinzu.|Neue Funktion|
+|56088|Optimieren Sie die Operationsbereichsoptionen für TextProcessingController.|Verbesserung|
 
 ## Funktionen und Verbesserungen in Version 25.6
 
@@ -22,7 +58,7 @@ Willkommen bei den Neuerungen in Aspose.Cells Cloud-Dokumenten. Auf dieser Seite
 |55440 | Diagramm kann nicht in Bild im SVG-Format konvertiert werden| Insekt|
 |55539 | Unterstützt das Löschen leerer Zeilen, Spalten und Arbeitsblätter.| Neue Funktion|
 |55540 | Optimieren Sie den Suchkontext für Remote-Tabellenkalkulationsfunktionen, indem Sie sie in unabhängige APIs aufteilen, die jeweils einem bestimmten Betriebsbereich gewidmet sind.| Neue Funktion|
-|55541 |Optimieren Sie die Suche nach defekten Links für Remote-Tabellenkalkulationsfunktionen, indem Sie sie in unabhängige APIs aufteilen, die jeweils einem bestimmten Betriebsbereich gewidmet sind.| Neue Funktion|
+|55541 | Optimieren Sie die Suche nach defekten Links für Remote-Tabellenkalkulationsfunktionen, indem Sie sie in unabhängige APIs aufteilen, die jeweils einem bestimmten Betriebsbereich gewidmet sind.| Neue Funktion|
 |55542 | Optimieren Sie den Ersetzungskontext für Remote-Tabellenkalkulationsfunktionen, indem Sie sie in unabhängige APIs aufteilen, die jeweils einem bestimmten Betriebsbereich gewidmet sind.| Neue Funktion|
 
 ## Funktionen und Verbesserungen in Version 25.5
@@ -30,7 +66,7 @@ Willkommen bei den Neuerungen in Aspose.Cells Cloud-Dokumenten. Auf dieser Seite
 |**AUSWEIS**|**Zusammenfassung**|**Kategorie**|
 |:- |:- |:- |
 |54791 | Fügen Sie die neue API hinzu, um den öffentlichen Schlüssel zum Verschlüsseln des Passworts zu erhalten.| Neue Funktion|
-|54792 | Optimieren Sie die Funktion zum Konvertieren von Arbeitsmappen: Fügen Sie den Parameter „Zeilen automatisch anpassen“ hinzu.| Verbesserung|
+|54792 |Optimieren Sie die Funktion zum Konvertieren von Arbeitsmappen: Fügen Sie den Parameter „Zeilen automatisch anpassen“ hinzu.| Verbesserung|
 |54854 | Optimieren Sie die automatische Zeilenanpassung für das Arbeitsblatt: Fügen Sie die Zeilenanzahl hinzu.| Verbesserung|
 |54915 | Optimieren Sie die automatische Zeilenanpassung für das Arbeitsblatt: Fügen Sie firstColumn und lastColumn hinzu.| Verbesserung|
 
@@ -46,7 +82,7 @@ Willkommen bei den Neuerungen in Aspose.Cells Cloud-Dokumenten. Auf dieser Seite
 
 |**AUSWEIS**|**Zusammenfassung**|**Kategorie**|
 |:- |:- |:- |
-|53496 |Die Eigenschaften von `SaveOptions` wurden optimiert, um Leistung und Flexibilität zu verbessern.| Verbesserung|
+|53496 | Die Eigenschaften von `SaveOptions` wurden optimiert, um Leistung und Flexibilität zu verbessern.| Verbesserung|
 |53497 | Die Konvertierungsmethode von `Workbook` wurde für verbesserte Effizienz und Zuverlässigkeit optimiert.| Verbesserung|
 |53557 | Entwickelte einen neuen API, um eine umfassende Liste aller Stile in einer Arbeitsmappe abzurufen.| Neue Funktion|
 |53623 | Alle Speicheroptionen wurden verbessert, um die Funktionalität und das Benutzererlebnis zu verbessern.| Verbesserung|
@@ -56,13 +92,13 @@ Willkommen bei den Neuerungen in Aspose.Cells Cloud-Dokumenten. Auf dieser Seite
 
 |**AUSWEIS**|**Zusammenfassung**|**Kategorie**|
 |:- |:- |:- |
-|53048 | Unterstützt das Kopieren eines Bereichs von einer Arbeitsmappe in eine andere.| Verbesserung|
+|53048 |Unterstützt das Kopieren eines Bereichs von einer Arbeitsmappe in eine andere.| Verbesserung|
 |53361 | Fügen Sie Abfrageparameter für Bild- und Druckoptionen hinzu, um das Arbeitsblatt API zu verbessern.| Verbesserung|
 |53363 | API hinzugefügt, um die Anzahl der Excel-Zeichen für die Zellenwolke zu zählen.| Neue Funktion|
 |53364 | API hinzugefügt, um die Anzahl der Excel Wörter für die Zellenwolke zu zählen.| Neue Funktion|
 |53365 | Ein API wurde hinzugefügt, um die Anzahl der Vorkommen eines bestimmten Wortes in Excel für die Zellenwolke zu zählen.| Neue Funktion|
 |53367 | Fügen Sie eine neue Funktion hinzu, um die Konvertierung von Bereichen in Bilder zu unterstützen.| Neue Funktion|
-|53368 |Fügen Sie eine neue Funktion hinzu, um die Konvertierung von Arbeitsblättern in Bilder zu unterstützen.| Neue Funktion|
+|53368 | Fügen Sie eine neue Funktion hinzu, um die Konvertierung von Arbeitsblättern in Bilder zu unterstützen.| Neue Funktion|
 
 ## Funktionen und Verbesserungen in Version 25.1
 

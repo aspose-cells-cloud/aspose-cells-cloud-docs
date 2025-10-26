@@ -1,6 +1,6 @@
 ﻿---
 title: Получить текстовые элементы из рабочей книги Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Попасть в рабочую книгу
 type: docs
 url: /ru/workbook/get-text-items/

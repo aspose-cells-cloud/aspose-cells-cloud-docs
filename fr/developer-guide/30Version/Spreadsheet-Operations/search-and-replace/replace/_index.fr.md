@@ -1,6 +1,6 @@
 ﻿---
 title: Remplacer le texte du fichier Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Remplacer sans utiliser de stockage
 type: docs
 url: /fr/replace/
@@ -19,7 +19,7 @@ POST https://api.aspose.cloud/v3.0/cells/replace
 
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

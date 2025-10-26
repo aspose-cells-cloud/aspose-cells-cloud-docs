@@ -1,6 +1,6 @@
 ﻿---
 title: Bereichswert auf einem Excel-Arbeitsblatt festlegen
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Wert festlegen
 type: docs
 url: /de/ranges/update/values/

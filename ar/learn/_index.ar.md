@@ -3,6 +3,7 @@ title: تعلم Aspose.Cells كلاود
 type: docs
 url: /ar/learn
 aliases: [/learn-aspose-cells-cloud]
+linktitle: لير
 description: مرحبا بكم في تعلم Aspose.Cells السحابة
 weight: 15
 kwords: Excel، Office السحابة، REST API، جدول بيانات، PDF، CSV، Json، Markdown، مرحبًا بك في تعلم Aspose.Cells السحابة

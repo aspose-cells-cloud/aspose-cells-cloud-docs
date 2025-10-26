@@ -1,6 +1,6 @@
 ﻿---
 title: Fügen Sie eine Arbeitsblattvalidierung zu einem Excel-Arbeitsblatt hinzu
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Anzeige
 type: docs
 url: /de/validations/add/

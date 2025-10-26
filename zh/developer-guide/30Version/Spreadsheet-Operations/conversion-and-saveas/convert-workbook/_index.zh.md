@@ -1,17 +1,17 @@
 ﻿---
 title: 将 Excel 文件转换为其他格式
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: 转换电子表格
 type: docs
 url: /zh/convert-a-spread-file-to-different-formats/
 keywords: Convert excel files to kinds of format files
-description: Aspose.Cells Cloud REST API 支持将 Excel 文件转换为各种格式的文件。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
+description: Aspose.Cells Cloud REST API 支持将 Excel 文件转换为多种格式的文件。SDK 支持多种开发语言，包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。
 weight: 10
 kwords: Excel, Office 云, REST API, 电子表格, PDF, CSV, Json, Markdown, 转换 Excel
 ---
 此 REST API 指示 `convert` 将 Excel 文件转换为其他格式。它支持多种格式。它还可以在转换前设置页面设置和保存选项。
 
-**请求体参数**
+**请求主体参数**
 
 |参数名称|类型|描述|
 |:- |:- |:- |
@@ -27,9 +27,9 @@ kwords: Excel, Office 云, REST API, 电子表格, PDF, CSV, Json, Markdown, 转
 |:- |:- |:- |:- |
 |/单元格/转换|邮政|将工作簿从请求内容转换为某种格式|[PostConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PostConvertWorkBook)|
 
-这[OpenAPI规范](https://apireference.aspose.cloud/cells/#/Workbook/PostConvertWorkBook)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Workbook/PostConvertWorkBook)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
 
-您可以使用**cURL**命令行工具可轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用 Cloud API。
+您可以使用**cURL**命令行工具可轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 

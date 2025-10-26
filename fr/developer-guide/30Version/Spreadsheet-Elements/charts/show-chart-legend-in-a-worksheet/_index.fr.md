@@ -4,7 +4,7 @@ type: docs
 url: /fr/charts/legend/show/
 aliases: [/show-chart-legend-in-a-worksheet/]
 weight: 100
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Afficher la légende du graphique dans une feuille de calcul
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Afficher la légende du graphique dans une feuille de calcul
 ---
 Ce REST API indique d'afficher la légende dans le graphique
  
@@ -15,12 +15,12 @@ Ce REST API indique d'afficher la légende dans le graphique
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend
  
 ```
- Les paramètres de la requête sont :
+ Les paramètres de la requête sont :
  
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Nom du classeur.|
-| nom de la feuille| chaîne| chemin| Nom de la feuille de travail.|
+| nom de la feuille| chaîne| chemin| Nom de la feuille de calcul.|
 | index des graphiques| entier| chemin| L'index des graphiques.|
 | dossier| chaîne| requête| Le dossier du classeur.|
 | nom de stockage| chaîne| requête| nom de stockage.|

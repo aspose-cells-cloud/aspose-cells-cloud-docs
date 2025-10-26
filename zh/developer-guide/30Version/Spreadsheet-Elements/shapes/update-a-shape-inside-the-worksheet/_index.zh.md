@@ -1,6 +1,6 @@
 ﻿---
 title: 更新 Excel 工作表上的形状
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: 更新
 type: docs
 url: /zh/shapes/update/
@@ -27,11 +27,11 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes/{sh
 |姓名|细绳|小路|文档名称。|
 |工作表名称|细绳|小路|工作表名称。|
 |形状指数|整数|小路|工作表形状中的形状索引。|
-|数据到账||身体||
+|数据到||身体||
 |文件夹|细绳|询问|文档的文件夹。|
 |存储名称|细绳|询问|存储名称。|
 
-这[OpenAPI规范](https://apireference.aspose.cloud/cells/#/Shapes/PostWorksheetShape)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Shapes/PostWorksheetShape)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
 
 您可以使用 cURL 命令行工具轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
 

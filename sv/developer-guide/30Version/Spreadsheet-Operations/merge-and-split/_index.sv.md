@@ -1,6 +1,6 @@
 ﻿---
 title: Sammanfoga och dela Excel-filer
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Sammanfoga och dela
 type: docs
 url: /sv/merge-and-split/

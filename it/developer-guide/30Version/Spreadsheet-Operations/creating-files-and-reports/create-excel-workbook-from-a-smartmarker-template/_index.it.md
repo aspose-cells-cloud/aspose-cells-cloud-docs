@@ -1,6 +1,6 @@
 ﻿---
 title: Come creare un report Excel con un modello di marcatore intelligente
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: SmartMarke
 type: docs
 url: /it/build-report-with-smart-marker/

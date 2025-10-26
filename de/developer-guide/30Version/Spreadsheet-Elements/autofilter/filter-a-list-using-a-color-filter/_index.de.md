@@ -1,12 +1,12 @@
 ﻿---
 title: Fügen Sie einen Farbfilter in ein Excel-Arbeitsblatt ein
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Farbfilter hinzufügen
 type: docs
 url: /de/autofilter/add-color-filter/
 aliases: [/filter-a-list-using-a-color-filter/,/autofilter/add-a-color-filter/]
 keywords: Adds a color filter on an Excel worksheet
-description: Die Aspose.Cells Cloud API unterstützt das Hinzufügen eines Farbfilters zu einem Excel Arbeitsblatt. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
+description: Die Aspose.Cells Cloud API unterstützt das Hinzufügen eines Farbfilters auf einem Excel Arbeitsblatt. SDK unterstützt verschiedene Entwicklungssprachen. Dazu gehören Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift
 weight: 65
 kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Markdown, Hinzufügen eines Farbfilters in einem Excel-Arbeitsblatt
 ---

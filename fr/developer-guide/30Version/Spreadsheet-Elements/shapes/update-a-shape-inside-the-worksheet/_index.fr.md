@@ -1,6 +1,6 @@
 ﻿---
 title: Mettre à jour une forme sur une feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Mise à jour
 type: docs
 url: /fr/shapes/update/
@@ -20,13 +20,13 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes/{sh
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| nom du document.|
 | nom de la feuille| chaîne| chemin| nom de la feuille de calcul.|
-| index de forme| entier| chemin| index des formes dans les formes de la feuille de calcul.|
+| indice de forme| entier| chemin| index des formes dans les formes de la feuille de calcul.|
 | dto|| corps||
 | dossier| chaîne| requête| Dossier du document.|
 | nom de stockage| chaîne| requête| nom de stockage.|

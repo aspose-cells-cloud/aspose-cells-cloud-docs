@@ -1,6 +1,6 @@
 ﻿---
 title: Arbeiten mit Excel Cell
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Zelle
 type: docs
 url: /de/working-with-cells/
@@ -20,7 +20,7 @@ Cells ist das grundlegende Funktionsobjekt von Aspose.Cells für Excel-Dateien.
     <div class="col-md-6">
         <ul>
             <li><a href="/cells/de/get-mergedcell-from-a-worksheet//">Holen Sie sich MergedCell aus einem Arbeitsblatt.</a></li>
-            <li><a href="/cells/de/set-value-of-a-cell-in-a-worksheet/">Legt den Wert einer Zelle in einem Excel-Arbeitsblatt fest.</a></li>
+            <li><a href="/cells/de/set-value-of-a-cell-in-a-worksheet/">Legt den Wert einer Zelle in einem Arbeitsblatt Excel fest.</a></li>
             <li><a href="/cells/de/set-formula-for-a-cell-in-excel-worksheets/">Legen Sie eine Formel für eine Zelle in den Arbeitsblättern Excel fest.</a></li>
             <li><a href="/cells/de/calculate-cells-formula/">Berechnen Sie die Formel Cells.</a></li>
         </ul>

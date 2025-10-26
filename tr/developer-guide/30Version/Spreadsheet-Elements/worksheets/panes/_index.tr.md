@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma sayfasında bölmelerle nasıl çalışılır
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Bölme
 type: docs
 url: /tr/worksheets/panes/

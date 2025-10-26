@@ -1,6 +1,6 @@
 ﻿---
 title: Supprimer la feuille de travail
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Une feuille de travail
 type: docs
 url: /fr/worksheets/delete-worksheet/
@@ -8,7 +8,7 @@ aliases: [/remove-worksheets-from-excel-workbooks/]
 keywords: Delete an Excel worksheet on an Excel workbook
 description: Aspose.Cells Cloud REST API prend en charge la suppression d'une feuille de calcul Excel dans un classeur Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 20
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Supprimer une feuille de calcul
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Supprimer la feuille de calcul
 ---
 Ce REST API indique `delete worksheet`.
 
@@ -20,7 +20,7 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

@@ -1,6 +1,6 @@
 ﻿---
 title: Importer un double tableau dans la feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Importer un tableau double
 type: docs
 url: /fr/import-double-array-into-excel-worksheet/
@@ -33,9 +33,9 @@ Les paramètres importants sont décrits dans le tableau suivant :
 | Première colonne| int||
 | EstVertical| chaîne| vrai/faux.|
 | Données|Double[]||
-| Feuille de travail de destination| chaîne| nom de la feuille de travail de destination.|
+|Feuille de travail de destination| chaîne| nom de la feuille de travail de destination.|
 | EstInsérer| chaîne| vrai/faux.|
-| ImportDataType| chaîne|IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData.|
+| ImporterDataType| chaîne|IntArray/DoubleArray/StringArray/DeuxDimensionIntArray/DeuxDimensionDoubleArray/DeuxDimensionStringArray/BatchData/CSVData.|
 | Source| Source du fichier| Indique la position du fichier de données lorsque le paramètre BatchData est nul.|
 
 **Exemple**

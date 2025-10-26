@@ -1,6 +1,6 @@
 ﻿---
 title: Horizontalen Seitenumbruch hinzufügen
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Horizontalen Seitenumbruch hinzufügen
 type: docs
 url: /de/page-breaks/add-horizontal-page-break/

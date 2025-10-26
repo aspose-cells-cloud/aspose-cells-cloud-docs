@@ -1,6 +1,6 @@
 ﻿---
 title: Arbetar med Excel ringde
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ringde
 type: docs
 url: /sv/ranges/

@@ -1,6 +1,6 @@
 ﻿---
 title: Importa dati batch nel foglio di lavoro Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Importa dati batch
 type: docs
 url: /it/import-batch-data-into-excel/
@@ -30,7 +30,7 @@ I parametri importanti sono descritti nella seguente tabella:
 |Nome del parametro|Tipo|Descrizione|
 |:- |:- |:- |
 | Dati in batch|Lista<CellValue> | dati batch|
-| Foglio di lavoro sulla destinazione| corda| nome del foglio di lavoro di destinazione.|
+|Foglio di lavoro sulla destinazione| corda| nome del foglio di lavoro di destinazione.|
 | ÈInserisci| corda| vero/falso.|
 | ImportDataType| corda|IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData.|
 | Fonte| FileSource| Indica la posizione del file di dati quando il parametro BatchData è null.|

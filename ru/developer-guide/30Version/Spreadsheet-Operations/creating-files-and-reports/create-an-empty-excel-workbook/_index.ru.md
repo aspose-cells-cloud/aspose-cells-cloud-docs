@@ -1,6 +1,6 @@
 ﻿---
 title: Создайте пустую рабочую книгу Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Пустая рабочая книга
 type: docs
 url: /ru/create-an-empty-excel-file/

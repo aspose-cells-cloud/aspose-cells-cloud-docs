@@ -1,6 +1,6 @@
 ﻿---
 title: CSV-Daten in das Arbeitsblatt Excel importieren
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: CSV-Daten importieren
 type: docs
 url: /de/import-csv-data-into-excel/

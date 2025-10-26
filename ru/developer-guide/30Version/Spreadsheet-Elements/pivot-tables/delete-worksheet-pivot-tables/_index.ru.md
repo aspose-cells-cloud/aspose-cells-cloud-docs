@@ -1,6 +1,6 @@
 ﻿---
 title: Удалить все сводные таблицы на листе Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Прозрачный
 type: docs
 url: /ru/pivot-tables/clear/

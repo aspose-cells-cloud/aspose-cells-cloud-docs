@@ -1,6 +1,6 @@
 ﻿---
 title: 在 Excel 工作表上获取行
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: 葛
 type: docs
 url: /zh/rows/get/

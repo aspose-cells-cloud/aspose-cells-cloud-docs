@@ -1,6 +1,6 @@
 ﻿---
 title: Arbeiten mit der bedingten Formatierung Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Bedingte Formatierung
 type: docs
 url: /de/conditional-formattings/

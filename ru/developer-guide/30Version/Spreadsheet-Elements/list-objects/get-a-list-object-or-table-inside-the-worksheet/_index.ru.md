@@ -1,6 +1,6 @@
 ﻿---
 title: Получить объект списка на рабочем листе Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ге
 type: docs
 url: /ru/list-objects/get/

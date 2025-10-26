@@ -1,6 +1,6 @@
 ﻿---
 title: Excel a PD
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Excel a PD
 type: docs
 url: /it/convert-excel-file-to-pdf-file/

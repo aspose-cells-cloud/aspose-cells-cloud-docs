@@ -1,6 +1,6 @@
 ﻿---
 title: 保护 Excel Workboo
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: 保护 Excel Fil
 type: docs
 url: /zh/protect-excel-file/
@@ -19,7 +19,7 @@ kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdo
 |文件夹|细绳|原始工作簿文件夹。|
 |存储名称|细绳|存储名称。|
 
-**请求体参数**
+**请求主体参数**
 
 |参数名称|类型|描述|
 |:- |:- |:- |
@@ -29,7 +29,7 @@ kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdo
 
 |参数名称|类型|描述|
 |:- |:- |:- |
-|保护类型|细绳|全部/内容/无/物体/场景/结构/窗口|
+|保护类型|细绳|全部/内容/无/对象/场景/结构/窗口|
 |密码|细绳||
 
 ## 休息 API
@@ -38,9 +38,9 @@ kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdo
 |:- |:- |:- |:- |
 |/细胞/{名称}/保护|邮政|保护文档|[后保护文档](https://apireference.aspose.cloud/cells/#/Workbook/PostProtectDocument)|
 
-这[OpenAPI规范](https://apireference.aspose.cloud/cells/#/Workbook/PostProtectDocument)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
+这[OpenAPI 规范](https://apireference.aspose.cloud/cells/#/Workbook/PostProtectDocument)定义一个可公开访问的编程接口，并允许您直接从 Web 浏览器执行 REST 交互。
 
-您可以使用**cURL**命令行工具可轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用 Cloud API。
+您可以使用**cURL**命令行工具可轻松访问 Aspose.Cells 的 Web 服务。以下示例展示了如何使用 cURL 调用云端 API。
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 

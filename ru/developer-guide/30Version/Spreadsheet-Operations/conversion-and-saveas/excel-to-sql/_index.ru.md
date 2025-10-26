@@ -1,6 +1,6 @@
 ﻿---
 title: Excel в СК
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Excel в СК
 type: docs
 url: /ru/convert-excel-file-to-sql-file/

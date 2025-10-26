@@ -1,6 +1,6 @@
 ﻿---
 title: Toplu Verileri Excel Çalışma Sayfasına Aktar
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Toplu veriyi içe aktar
 type: docs
 url: /tr/import-batch-data-into-excel/
@@ -30,7 +30,7 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
 |Parametre Adı|Tip|Tanım|
 |:- |:- |:- |
 | Toplu Veri|Liste<CellValue> | toplu veri|
-| Hedef Çalışma Sayfası| sicim| hedef çalışma sayfası adı.|
+|Hedef Çalışma Sayfası| sicim| hedef çalışma sayfası adı.|
 | IsInsert| sicim| doğru/yanlış.|
 | Veri Türünü İçe Aktar| sicim|IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData.|
 | Kaynak| Dosya Kaynağı| BatchData parametresi boş olduğunda veri dosyasının konumunu gösterir.|

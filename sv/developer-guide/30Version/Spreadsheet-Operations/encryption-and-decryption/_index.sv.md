@@ -1,6 +1,6 @@
 ﻿---
 title: Kryptera, dekryptera och digitala signaturer Excel-filer
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Skydda Exce
 type: docs
 url: /sv/protect/

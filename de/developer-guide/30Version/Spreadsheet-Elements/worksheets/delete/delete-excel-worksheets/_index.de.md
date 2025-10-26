@@ -1,6 +1,6 @@
 ﻿---
 title: Mehrere Excel-Arbeitsblätter löschen
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Mehrere Arbeitsblätter
 type: docs
 url: /de/worksheets/delete-multiple/

@@ -1,6 +1,6 @@
 ﻿---
 title: Экспорт ШАП
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Шэп
 type: docs
 url: /ru/export-excel-shape-to-different-formats/

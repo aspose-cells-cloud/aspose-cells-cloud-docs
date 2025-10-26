@@ -1,6 +1,6 @@
 ﻿---
 title: Excel إلى Jso
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Excel إلى Jso
 type: docs
 url: /ar/convert-excel-file-to-json-file/

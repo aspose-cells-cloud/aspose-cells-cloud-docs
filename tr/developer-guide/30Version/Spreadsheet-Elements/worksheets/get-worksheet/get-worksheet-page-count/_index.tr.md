@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma sayfasının sayfa sayısını alın
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: SayfaCoun
 type: docs
 url: /tr/worksheets/page-count/

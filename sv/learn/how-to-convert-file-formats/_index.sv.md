@@ -32,13 +32,13 @@ Aspose.Cells Cloud Spreadsheet API tillhandahåller en uppsättning tvåkanaliga
 |||`ConvertRangeToCsv`             | Csv-fil|
 |||`ConvertRangeToHtml`            | Html|
 |||`ConvertRangeToJson`            | JSON|
-||Diagram|`ConvertChartToImage`           |PNG/JPEG/SVG/....              |
+|| Diagram|`ConvertChartToImage`           |PNG/JPEG/SVG/....              |
 |||`ConvertChartToPdf`             |PDF                            |
 |**Molnkonvertering**  | Arbetsbok|`ExportSpreadsheetAsFormat`     | PDF/XLSX/JSON/.... 30+ format|
 || Arbetsblad|`ExportWorksheetAsFormat`       | PDF/XLSX/JSON/.... 30+ format|
 || Tabell|`ExportTableAsFormat`           | PDF/XLSX/JSON/.... 30+ format|
 || Räckvidd|`ExportRangeAsFormat`           | PDF/XLSX/JSON/.... 30+ format|
-||Diagram|`ExportChartAsFormat`           | PDF/XLSX/JSON/.... 30+ format|
+|| Diagram|`ExportChartAsFormat`           | PDF/XLSX/JSON/.... 30+ format|
 |**Spara som i molnet**     | Arbetsbok|`SaveSpreadsheetAs`             | PDF/XLSX/JSON/.... 30+ format|
 
 ### **Lokal filkonvertering**
@@ -133,7 +133,7 @@ cellsApi.ExportWorksheetAsFormat (new SDK.Request.ExportWorksheetAsFormatRequest
 Installera Aspose.Cells-Cloud NuGet-paketet i ditt .NET-projekt. Du kan använda NuGet-pakethanterarkonsolen eller NuGet-pakethanteraren i Visual Studio.
 Så här installerar du paketet med hjälp av pakethanterarkonsolen:
 
-```Powershell
+```powershell
 
 Install-Package Aspose.Cells-Cloud
 

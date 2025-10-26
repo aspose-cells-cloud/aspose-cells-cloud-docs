@@ -1,6 +1,6 @@
 ﻿---
 title: Guía del desarrollador 3.
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /es/developer-guide-3.0/
 aliases: [/developer-guide/v3.0/,/developer-guide-v3.0/]
@@ -26,11 +26,11 @@ kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown
         <p>Buscar, reemplazar</p>
         <ul>
             <li><a href="/cells/es/search/">Buscar texto en el formulario de archivos Excel.</a></li>
-            <li><a href="/cells/es/replace/">Reemplace el valor antiguo por el nuevo valor en los archivos Excel.</a></li>
+            <li><a href="/cells/es/replace/">Reemplazar el valor antiguo por el nuevo valor en los archivos Excel.</a></li>
         </ul>
         <p>Comprimir</p>
         <ul>
-            <li><a href="/cells/es/compress/">Comprimir archivos Excel.</a></li>
+            <li><a href="/cells/es/compress/">Comprimir Excel archivos.</a></li>
         </ul>
     </div>
     <div class="col-md-6">
@@ -43,7 +43,7 @@ kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown
         <ul>
             <li><a href="/cells/es/add-background-in-workbook/">Agrega fondo al libro de trabajo.</a></li>
             <li><a href="/cells/es/delete-background-in-workbook/">Elimina el fondo del libro de trabajo.</a></li>
-            <li><a href="/cells/es/set-background-or-watermark-for-excel-worksheet/">Establece fondo o marca de agua en la hoja de trabajo Excel.</a></li>
+            <li><a href="/cells/es/set-background-or-watermark-for-excel-worksheet/">Establece fondo o marca de agua en la hoja de cálculo Excel.</a></li>
             <li><a href="/cells/es/delete-background-or-watermark-of-excel-worksheet/">Elimina el fondo o la marca de agua en la hoja de cálculo Excel.</a></li>
         </ul>
     </div>
@@ -170,7 +170,7 @@ kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown
     <div class="col-md-6">
         <p>Describir</p>
         <ul>
-            <li><a href="/cells/es/group-rows-in-excel-worksheet/">Agrupa filas en una hoja de trabajo Excel.</a></li>
+            <li><a href="/cells/es/group-rows-in-excel-worksheet/">Agrupa filas en una hoja de cálculo Excel.</a></li>
             <li><a href="/cells/es/ungroup-rows-in-excel-worksheet/">Desagrupa filas en una hoja de cálculo Excel</a></li>
         </ul>
         <p>Filtrar</p>
@@ -197,7 +197,7 @@ kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown
             <li><a href="/cells/es/import/picture/">Importa imagen a una hoja de cálculo Excel.</a></li>
             <li><a href="/cells/es/import/double-array/">Importa una matriz doble en una hoja de cálculo Excel.</a></li>
             <li><a href="/cells/es/import/integer-array/">Importa una matriz de enteros a una hoja de cálculo Excel.</a></li>
-            <li><a href="/cells/es/import/string-array/">Importa una matriz de cadenas en una hoja de cálculo Excel.</a></li>
+            <li><a href="/cells/es/import/string-array/">Importa una matriz de cadenas a una hoja de cálculo Excel.</a></li>
             <li><a href="/cells/es/import/with-using-storage/">Importa datos a una hoja de cálculo Excel mediante el uso de almacenamiento.</a></li>
             <li><a href="/cells/es/import/without-using-storage/">Importa datos a una hoja de cálculo Excel sin utilizar almacenamiento.</a></li>
         </ul>

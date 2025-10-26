@@ -17,15 +17,15 @@ Aspose.Cells Cloud API, Excel veya başka bir elektronik tablo dosyasını onarm
 
 API, dosya onarımı için kullanılabilir ve genellikle çeşitli çevrimiçi ortamlarla uyumludur. Aşağıda API'in ayrıntılı bir açıklaması bulunmaktadır:
 
-- **[Excel veya başka bir elektronik tablo dosyasını onarın.](https://reference.aspose.cloud/cells/#/LightCells/PostRepair)** API'i nasıl arayacağınız konusunda rehberlik için lütfen şuraya bakın:[geliştirme kılavuzu](https://docs.aspose.cloud/cells/repair/).
+- **[Excel veya başka bir elektronik tablo dosyasını onarın.](https://reference.aspose.cloud/cells/#/LightCells/PostRepair)** API'i nasıl arayacağınıza dair rehberlik için lütfen şuraya bakın:[geliştirme kılavuzu](https://docs.aspose.cloud/cells/repair/).
 
 # Excel veya başka bir elektronik tabloyu Aspose.Cells Bulutu aracılığıyla nasıl onarabilirim?
 
- Aspose.Cells Bulut API şunları sağlar:[birden fazla SDK](https://github.com/aspose-cells-cloud) Farklı programlama dilleri için. Tercih ettiğiniz programlama diline uygun SDK'yı seçin ve kurulum ve başlatma için beraberindeki belgeleri izleyin. Alternatif olarak, kendi SDK'nızı aşağıdakilere göre oluşturabilirsiniz:[API referans](https://reference.aspose.cloud/cells/)Bu bölümde, dosya onarım sürecini ayrıntılı olarak anlatmak için C# örneğini kullanacağız.
+ Aspose.Cells Bulut API şunları sağlar:[birden fazla SDK](https://github.com/aspose-cells-cloud)Farklı programlama dilleri için. Tercih ettiğiniz programlama diline uygun SDK'yı seçin ve kurulum ve başlatma için beraberindeki belgeleri takip edin. Alternatif olarak, kendi SDK'nızı aşağıdakilere göre oluşturabilirsiniz:[API referans](https://reference.aspose.cloud/cells/)Bu bölümde, dosya onarım sürecini ayrıntılı olarak anlatmak için C# örneğini kullanacağız.
 
 ## API Anahtarının Kaydı ve Alınması
 
-Başlamadan önce şunları yapmanız gerekir:[Aspose Bulut hesabını kaydedin](https://id.containerize.com/signup) Ve[kimlik doğrulaması için API anahtarını edinin](https://dashboard.aspose.cloud/applications)Resmi Aspose Cloud web sitesine giriş yaparak ücretsiz hesap oluşturabilir ve kimlik doğrulama amacıyla API anahtarını alabilirsiniz.
+ Başlamadan önce şunları yapmanız gerekir:[Aspose Bulut hesabını kaydedin](https://id.containerize.com/signup) Ve[kimlik doğrulaması için API anahtarını edinin](https://dashboard.aspose.cloud/applications)Resmi Aspose Cloud web sitesine giriş yaparak ücretsiz hesap oluşturabilir ve kimlik doğrulama amacıyla API anahtarını alabilirsiniz.
 
  Daha detaylı işlemler için lütfen aşağıdaki belgelere bakınız:[Cells Bulut ile Hızlı Başlangıç](https://docs.aspose.cloud/cells/quickstart/)
 
@@ -69,6 +69,6 @@ Bu, PostRepairRequest'in yeni bir örneğini oluşturur ve istediğiniz dosya bi
 
 Aspose.Cells Cloud API ile Excel veya başka bir elektronik tablo dosyasını kolayca onarabilirsiniz. Basit API aramaları yaparak ve uygun onarım seçeneklerini ayarlayarak çeşitli dosya onarım gereksinimlerini verimli bir şekilde karşılayabilirsiniz. Verimliliği artırmak ve geliştirme süresinden tasarruf etmek için Aspose.Cells Cloud API'i uygulamalarınıza entegre edin.
 
-Yukarıdaki örnek kodun yalnızca tanıtım amaçlı olduğunu ve pratikte kullanırken geçerli kimlik doğrulama bilgileri ve dosya yollarıyla değiştirmeniz gerekeceğini lütfen unutmayın. Ayrıca, Aspose.Cells Cloud API, elektronik tablo oluşturma, düzenleme, düzenleme ve veri işleme gibi birçok başka özellik sunar. Ayrıntılı API dokümantasyonu ve örnek kod şu adreste bulunabilir:[resmi Aspose web sitesinin geliştirici kılavuzu](/developer-guide/).
+ Yukarıdaki örnek kodun yalnızca tanıtım amaçlı olduğunu ve pratikte kullanırken geçerli kimlik doğrulama bilgileri ve dosya yollarıyla değiştirmeniz gerekeceğini lütfen unutmayın. Ayrıca, Aspose.Cells Cloud API, elektronik tablo oluşturma, düzenleme, düzenleme ve veri işleme gibi birçok başka özellik sunar. Ayrıntılı API dokümantasyonu ve örnek kod şu adreste bulunabilir:[resmi Aspose web sitesinin geliştirici kılavuzu](/developer-guide/).
 
 Bu makalenin, Aspose.Cells Cloud API'i dosya onarımı için nasıl kullanacağınızı anlamanıza yardımcı olmasını umuyoruz. Uygulamanızda bol şans!

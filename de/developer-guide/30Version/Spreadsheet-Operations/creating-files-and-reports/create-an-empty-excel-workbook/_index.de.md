@@ -1,6 +1,6 @@
 ﻿---
 title: Erstellen Sie ein leeres Excel Arbeitsbuch
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Leeres Arbeitsbuch
 type: docs
 url: /de/create-an-empty-excel-file/

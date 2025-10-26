@@ -1,6 +1,6 @@
 ﻿---
 title: Copier des colonnes sur une feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Flic
 type: docs
 url: /fr/columns/copy/
@@ -8,7 +8,7 @@ aliases: [/copy-columns-in-excel-worksheet/,/copy-columns-in-an-excel-worksheet/
 keywords: Copy column on an Excel workshee
 description: Aspose.Cells Cloud REST API prend en charge la copie de colonnes dans une feuille de calcul Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 30
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Copier des colonnes sur une feuille de calcul Excel
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Copier des colonnes sur une feuille de calcul Excel
 ---
 Cette copie REST API `columns` dans une feuille de calcul Excel.
 
@@ -20,14 +20,14 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/colu
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin| Le nom du classeur.|
 | nom de la feuille| chaîne| chemin| Le nom de la feuille de calcul.|
-| sourceColumnIndex| entier| requête| Index de la colonne source|
-| destinationColumnIndex| entier| requête| Index de la colonne de destination|
+| Index des colonnes sources| entier| requête| Index de la colonne source|
+| Index des colonnes de destination| entier| requête| Index de la colonne de destination|
 | numéro de colonne| entier| requête| Le numéro de colonne copié|
 | feuille de travail| chaîne| requête||
 | dossier| chaîne| requête| Le dossier de documents.|

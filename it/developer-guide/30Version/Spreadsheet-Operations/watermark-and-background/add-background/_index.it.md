@@ -1,6 +1,6 @@
 ﻿---
 title: Aggiungi sfondo in Workboo
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: A.D
 type: docs
 url: /it/add-background-in-excel-file/

@@ -1,6 +1,6 @@
 ﻿---
 title: Supprimer un filtre de date
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Supprimer le filtre de date
 type: docs
 url: /fr/autofilter/delete-date-filter/
@@ -20,14 +20,14 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilt
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin||
 | nom de la feuille| chaîne| chemin||
 | index de champ| entier| requête||
-| dateTimeGroupingType| chaîne| requête||
+| Type de regroupement date/heure| chaîne| requête||
 | année| entier| requête|0 |
 | mois| entier| requête|0 |
 | jour| entier| requête|0 |

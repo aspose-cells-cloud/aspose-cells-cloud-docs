@@ -1,6 +1,6 @@
 ﻿---
 title: Excel dosyalarını birleştir ve böl
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Birleştir ve Böl
 type: docs
 url: /tr/merge-and-split/

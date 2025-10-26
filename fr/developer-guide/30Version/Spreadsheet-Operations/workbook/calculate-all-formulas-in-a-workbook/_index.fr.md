@@ -1,6 +1,6 @@
 ﻿---
 title: Calculer toutes les formules sur un classeur Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Calculer
 type: docs
 url: /fr/calculate-all-formulas-on-an-excel-file/
@@ -20,7 +20,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/calculateformula
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

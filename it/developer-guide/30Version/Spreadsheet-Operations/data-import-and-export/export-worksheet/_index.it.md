@@ -1,6 +1,6 @@
 ﻿---
 title: Esporta foglio di lavoro
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Foglio di lavoro
 type: docs
 url: /it/export-excel-worksheet-to-different-formats/
@@ -16,7 +16,7 @@ kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdo
 
 |**API**|**Tipo**|**Descrizione**|**Collegamento Swagger**|
 |:- |:- |:- |:- |
-|/celle/esporta|INVIARE|Esporta Excel dal contenuto della richiesta in un formato|[PostExport](https://apireference.aspose.cloud/cells/#/LightCells/PostExport)|
+|/cellule/esporta|INVIARE|Esporta Excel dal contenuto della richiesta in un formato|[PostExport](https://apireference.aspose.cloud/cells/#/LightCells/PostExport)|
 
  IL[Specifiche OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) definisce un'interfaccia di programmazione accessibile al pubblico e consente di eseguire interazioni REST direttamente da un browser web.
 

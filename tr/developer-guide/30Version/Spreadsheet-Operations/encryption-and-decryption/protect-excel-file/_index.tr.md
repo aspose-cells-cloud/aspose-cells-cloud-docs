@@ -1,6 +1,6 @@
 ﻿---
 title: Excel Workboo'yu koruyun
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Excel Dosyasını Koruyun
 type: docs
 url: /tr/protect-excel-file/

@@ -1,6 +1,6 @@
 ﻿---
 title: Importieren Sie ein 2-dimensionales Integer-Array in das Arbeitsblatt Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Importieren Sie ein 2-dimensionales Integer-Array
 type: docs
 url: /de/import-a-2D-integer-array-into-excel-worksheet/
@@ -32,7 +32,7 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
 | Erste Reihe| int||
 | Erste Spalte| int||
 | Daten|Ganze Zahl[,]||
-| ZielArbeitsblatt| Schnur| Name des Zielarbeitsblatts.|
+|ZielArbeitsblatt| Schnur| Name des Zielarbeitsblatts.|
 | IsInsert| Schnur| wahr/falsch.|
 | ImportDataType| Schnur|IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData.|
 | Quelle| Dateiquelle| Gibt die Datendateiposition an, wenn der BatchData-Parameter null ist.|

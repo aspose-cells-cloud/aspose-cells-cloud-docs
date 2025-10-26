@@ -1,6 +1,6 @@
 ﻿---
 title: Arbeta med villkorlig formatering Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Villkorlig formatering
 type: docs
 url: /sv/conditional-formattings/

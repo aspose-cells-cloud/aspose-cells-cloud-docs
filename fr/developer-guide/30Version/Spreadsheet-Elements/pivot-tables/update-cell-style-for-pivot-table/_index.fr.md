@@ -1,6 +1,6 @@
 ﻿---
 title: Mettre à jour le style de cellule pour le tableau croisé dynamique
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Format
 type: docs
 url: /fr/pivot-tables/format/
@@ -19,7 +19,7 @@ Ce REST API indique la mise à jour de la cellule `style` pour le tableau crois�
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/Format
  
 ```
- Les paramètres de la requête sont :
+ Les paramètres de la requête sont :
  
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

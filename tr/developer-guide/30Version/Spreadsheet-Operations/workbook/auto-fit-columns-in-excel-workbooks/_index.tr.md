@@ -1,6 +1,6 @@
 ﻿---
-title: Excel dosyasında otomatik olarak sütunları sığdır
-second_title: Aspose.Cells Cloud Documen
+title: Excel dosyasında otomatik olarak takılan sütunlar
+second_title: Documen
 linktitle: Kolon
 type: docs
 url: /tr/autofit-columns-on-an-excel-file/

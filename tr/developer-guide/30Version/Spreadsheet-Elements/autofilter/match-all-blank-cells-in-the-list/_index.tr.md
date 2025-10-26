@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma sayfasındaki tüm boş hücreleri eşleştirin
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Boş hücreyi eşleştir
 type: docs
 url: /tr/autofilter/match-all-blank/

@@ -1,6 +1,6 @@
 ﻿---
 title: Arbeiten mit dem Hyperlink Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 linktitle: Hyperlink
 url: /de/hyperlinks/

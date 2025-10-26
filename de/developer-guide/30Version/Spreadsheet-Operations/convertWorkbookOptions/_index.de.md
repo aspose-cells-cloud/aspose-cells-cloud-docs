@@ -1,6 +1,6 @@
 ﻿---
 title: Option „Arbeitsmappe konvertieren“
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Option „Arbeitsmappe konvertieren“
 type: docs
 url: /de/convert-workbook-options/
@@ -13,10 +13,10 @@ kwords: Excel, Office Cloud, REST API, Tabellenkalkulation, PDF, CSV, Json, Mark
 
 Name | Typ | Beschreibung | Hinweise
 ------------ | ------------- | ------------- | -------------
-**Datenquelle** | **Objekt** | Datendateiquelle: CloudFileSystem, RequestFiles, HttpUri. |
-**[FileInfo](/Zellen/Dateiinfo/)** | **Objekt** | Beschreibung der Dateiinformationen. Enthält Dateiname, Dateigröße und Dateiinhalt (Base64-Zeichenfolge). |
+**Datenquelle** | **Objekt** Datendateiquelle: CloudFileSystem, RequestFiles, HttpUri. |
+**[Dateiinfo](/Zellen/Dateiinfo/)** | **Objekt** | Beschreibung der Dateiinformationen. Enthält Dateiname, Dateigröße und Dateiinhalt (Base64-Zeichenfolge). |
 **[Seiteneinrichtung](/Zellen/Seiteneinrichtung/)** | **Objekt** | Eigenschaften der Seiteneinrichtung. |
-**Speicheroptionen** | **Objekt** Speicheroptionen: DbfSaveOptions, DifSaveOptions, DocxSaveOptions, HtmlSaveOptions, XlsSaveOptions, XlsxSaveOptions, XpsSaveOptions, PngSaveOptions, JpgSaveOptions, GifSaveOptions, EmfSaveOptions, BmpSaveOptions, MdSaveOptions, NumbersSaveOptions, WmfSaveOptions, SvgSaveOptions, TxtSaveOptions, TifSaveOptions, XlsbSaveOptions |
+**Speicheroptionen** | **Objekt** | Speicheroptionen: DbfSaveOptions, DifSaveOptions, DocxSaveOptions, HtmlSaveOptions, XlsSaveOptions, XlsxSaveOptions, XpsSaveOptions, PngSaveOptions, JpgSaveOptions, GifSaveOptions, EmfSaveOptions, BmpSaveOptions, MdSaveOptions, NumbersSaveOptions, WmfSaveOptions, SvgSaveOptions, TxtSaveOptions, TifSaveOptions, XlsbSaveOptions |
 **ConvertFormat** | **Schnur** | Das Dateiformat: csv, xls, html, mhtml, ods, pdf, xml, txt, tiff, xlsb, xlsm, xlsx, xltm, xltx, xps, png, jpg, gif, emf, bmp, md, Numbers, wmf, svg usw. |
 **CheckExcelRestriction** | **Boolescher Wert** | Ruft den Typ des automatisch angepassten umbrochenen Textes ab und legt ihn fest. |
 
@@ -348,7 +348,7 @@ Name | Typ | Beschreibung | Hinweise
 | Eigenschaftsname| Art der Unterkunft| Nullable| Schreibgeschützt| Standardwert| Beschreibung|
 |:- |:- |:- |:- |:- |:- |
 |CheckIfTableExists|Boolescher Wert|WAHR| FALSCH|||
-|Spaltentypzuordnung|Zeichenfolge|WAHR| FALSCH|||
+|ColumnTypeMap|Zeichenfolge|WAHR| FALSCH|||
 |CheckAllDataForColumnType|Boolescher Wert|WAHR| FALSCH|||
 |Leere Zeile Zwischen Zeilen Hinzufügen|Boolescher Wert|WAHR| FALSCH|||
 |Separator|Zeichenfolge|WAHR| FALSCH|||

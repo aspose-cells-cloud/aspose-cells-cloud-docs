@@ -1,6 +1,6 @@
 ﻿---
 title: Arbeiten mit Excel Seite brea
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Seitenumbruch
 type: docs
 url: /de/working-with-pagebreaks/

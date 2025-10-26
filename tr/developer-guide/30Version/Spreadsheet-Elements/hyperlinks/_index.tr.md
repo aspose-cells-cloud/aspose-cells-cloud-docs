@@ -1,6 +1,6 @@
 ﻿---
 title: Excel hiper bağlantısıyla çalışıyor
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 linktitle: Köprü metni
 url: /tr/hyperlinks/

@@ -1,6 +1,6 @@
 ﻿---
 title: Импорт данных с использованием хранилища
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Импорт данных с помощью хранилища
 type: docs
 url: /ru/import-data-with-using-storage/

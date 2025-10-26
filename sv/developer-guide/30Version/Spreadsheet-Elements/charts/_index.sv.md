@@ -1,6 +1,6 @@
 ﻿---
 title: Arbeta med Excel-diagrammet
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Diagram
 type: docs
 url: /sv/charts/

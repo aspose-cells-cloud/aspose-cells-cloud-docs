@@ -1,6 +1,6 @@
 ﻿---
 title: Работа с объектом списка Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: ListObject
 type: docs
 url: /ru/list-objects/

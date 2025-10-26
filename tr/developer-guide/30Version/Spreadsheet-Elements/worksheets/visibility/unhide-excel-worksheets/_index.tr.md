@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma sayfasını göster
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Gizlenmemiş
 type: docs
 url: /tr/worksheets/unhide/

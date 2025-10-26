@@ -1,6 +1,6 @@
 ﻿---
 title: 与 Excel 图片合作
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: 图片
 type: docs
 url: /zh/pictures/

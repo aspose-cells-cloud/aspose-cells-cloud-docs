@@ -1,6 +1,6 @@
 ﻿---
 title: Holen Sie sich alle Pivot-Tabellen in einem Excel-Arbeitsblatt
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Holen Sie sich alle
 type: docs
 url: /de/pivot-tables/get-all/

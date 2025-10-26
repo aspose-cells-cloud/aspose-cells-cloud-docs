@@ -1,6 +1,6 @@
 ﻿---
 title: Сжать данные в файл Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Сжать файл Excel
 type: docs
 url: /ru/compress-excel-files/

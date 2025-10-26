@@ -1,6 +1,6 @@
 ﻿---
 title: Nota di rilascio
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /it/release-notes/
 description: Aspose.Cells Cloud supporta Excel per creare, convertire, unire, dividere, proteggere, operazioni di oggetti interni e così via

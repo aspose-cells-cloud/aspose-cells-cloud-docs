@@ -1,6 +1,6 @@
 ﻿---
 title: Excel Jso'ya
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Excel Jso'ya
 type: docs
 url: /tr/convert-excel-file-to-json-file/

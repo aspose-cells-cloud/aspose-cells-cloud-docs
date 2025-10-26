@@ -1,10 +1,12 @@
 ﻿---
-title: Desteklenen Platform
-second_title: Aspose.Cells Cloud Documen
+title: Aspose.Cells Bulut Destekli Platform
+second_title: Documen
+ArticleTitle: "Aspose.Cells Cloud Supported Platforms: Windows, Linux, and MacO"
+LinkTitle: Supported Platform
 type: docs
 url: /tr/supported-platforms/
 description: Aspose.Cells Bulut, Excel'in oluşturma, dönüştürme, birleştirme, bölme, korumalı, iç nesne işlemleri vb. işlemlerini destekler
 weight: 50
-kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Desteklenen Platformlar
+kwords: Excel Bulut, REST, Elektronik Tablo, PDF, CSV, Json, Markdown, Desteklenen Platformlar Windows, MacOS, Linux
 ---
-Aspose.Cells Bulut'un platformdan bağımsız belge düzenleme özelliği API, herhangi bir dille kullanılabilen gerçek bir REST API'dir: Go, Java, NET, NodeJs, Perl, PHP, Python, Ruby ve daha fazlası. REST'i destekleyen herhangi bir dil veya platformla kullanabilirsiniz. (Neredeyse tüm platformlar ve diller REST'i destekler ve REST API'leriyle çalışmak için yerel REST istemcileri sağlar). Dil veya platform sınırlamaları konusunda endişelenmenize gerek yok. Web, masaüstü, mobil ve bulut gibi herhangi bir platformla kullanabilirsiniz. API, belgeleri işlerken ihtiyacınız olan esnekliği sağlamak için diğer bulut hizmetleriyle entegre olur. Her türlü iş, belge veya içerik için uygundur.
+Aspose.Cells Bulut'un platformdan bağımsız belge düzenleme özelliği API, herhangi bir dille kullanılabilen gerçek bir REST API'dir: Go, Java, .NET, NodeJS, Perl, PHP, Python, Ruby ve daha fazlası. REST'i destekleyen herhangi bir dil veya platformla kullanabilirsiniz. (Neredeyse tüm platformlar ve diller REST'i destekler ve REST API'leriyle çalışmak için yerel REST istemcileri sağlar). Dil veya platform sınırlamaları konusunda endişelenmenize gerek yok. Web, masaüstü, mobil ve bulut gibi herhangi bir platformla kullanabilirsiniz. API, belgeleri işlerken ihtiyacınız olan esnekliği sağlamak için diğer bulut hizmetleriyle entegre olur. Her türlü iş, belge veya içerik için uygundur.

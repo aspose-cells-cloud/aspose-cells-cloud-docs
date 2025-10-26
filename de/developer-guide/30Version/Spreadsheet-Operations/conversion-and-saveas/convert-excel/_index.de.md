@@ -1,6 +1,6 @@
 ﻿---
 title: Konvertieren Sie eine Excel-Datei in ein anderes Format
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Konvertieren Sie Excel
 type: docs
 url: /de/convert-an-excel-file-to-different-formats/
@@ -18,7 +18,7 @@ Bei der Anfrage handelt es sich um eine HTTP-Anfrage mit mehrteiligem Inhalt (si
 
 |Parametername|Typ|Beschreibung|
 |:- |:- |:- |
-|Format|Schnur|Das Dateiformat: csv, xls, html, mhtml, ods, pdf, xml, txt, tiff, xlsb, xlsm, xlsx, xltm, xltx, xps, png, jpg, gif, emf, bmp, md, Numbers, wmf, svg usw.|
+|Format|Schnur| Das Dateiformat: csv, xls, html, mhtml, ods, pdf, xml, txt, tiff, xlsb, xlsm, xlsx, xltm, xltx, xps, png, jpg, gif, emf, bmp, md, Numbers, wmf, svg usw.|
 |Passwort|Schnur| Das zum Öffnen einer Excel-Datei erforderliche Kennwort.|
 |Ausgangspfad|Schnur| Pfad zum Speichern des Ergebnisses. Handelt es sich um eine einzelne Datei, sollte `outPath` sowohl den Dateinamen als auch die Erweiterung umfassen. Bei mehreren Dateien sollte `outPath` nur den Ordner enthalten.|
 |Speichername|Schnur| Der Speichername, in dem sich die Datei befindet.|

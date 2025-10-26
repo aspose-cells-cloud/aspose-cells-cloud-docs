@@ -1,6 +1,6 @@
 ﻿---
 title: Belirli Bir Belge Özelliğini Edinin
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ge
 type: docs
 url: /tr/document-properties/get/

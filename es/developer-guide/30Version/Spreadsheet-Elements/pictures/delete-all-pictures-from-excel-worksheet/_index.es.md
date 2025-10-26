@@ -1,6 +1,6 @@
 ﻿---
 title: Eliminar todas las imágenes en una hoja de trabajo Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Limpiar
 type: docs
 url: /es/pictures/clear/
@@ -10,7 +10,7 @@ description: Aspose.Cells Cloud REST API permite eliminar todas las imágenes en
 weight: 60
 kwords: Excel, Office Nube, REST API, Hoja de cálculo, PDF, CSV, Json, Markdown, Eliminar todas las imágenes en una hoja de cálculo Excel
 ---
-Este REST API indica `delete` `all` imágenes en la hoja de trabajo.
+Este REST API indica `delete` `all` imágenes en hoja de trabajo.
 
 ## RSET API
 
@@ -65,7 +65,7 @@ curl -v "http://api.aspose.com/v1.1/cells/Sample_Test_Book.xls/worksheets/Sheet6
 
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
 
 Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
 

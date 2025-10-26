@@ -1,6 +1,6 @@
 ﻿---
 title: ملف قفل الدفعة Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /ar/batch/lock
 keywords: Batch lock of multiple Excel files

@@ -1,6 +1,6 @@
 ﻿---
 title: Importar datos con almacenamiento
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Importar datos con almacenamiento
 type: docs
 url: /es/import-data-with-using-storage/

@@ -1,6 +1,6 @@
 ﻿---
 title: So arbeiten Sie mit dem Löschen von Arbeitsblättern auf einem Excel-Arbeitsbuch
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Löschen
 type: docs
 url: /de/worksheets/delete/

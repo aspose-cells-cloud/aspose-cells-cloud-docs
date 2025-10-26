@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma sayfasına özel bir ölçüt ekleyin
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Özel filtre ekle
 type: docs
 url: /tr/autofilter/add-custom-filter/ 

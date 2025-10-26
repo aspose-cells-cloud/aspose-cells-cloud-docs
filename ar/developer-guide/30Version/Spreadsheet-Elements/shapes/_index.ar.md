@@ -1,6 +1,6 @@
 ﻿---
 title: العمل مع Excel شاب
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: شكل
 type: docs
 url: /ar/shapes/

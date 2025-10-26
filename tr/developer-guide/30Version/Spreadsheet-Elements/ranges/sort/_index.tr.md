@@ -1,6 +1,6 @@
 ﻿---
 title:  Aralık Sıralaması
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Sor
 type: docs
 keywords: Range Sort

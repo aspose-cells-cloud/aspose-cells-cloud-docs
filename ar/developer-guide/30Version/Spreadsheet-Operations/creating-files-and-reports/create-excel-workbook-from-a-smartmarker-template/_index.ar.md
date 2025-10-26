@@ -1,6 +1,6 @@
 ﻿---
 title: كيفية إنشاء تقرير Excel باستخدام قالب علامة ذكية
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: سمارت مارك
 type: docs
 url: /ar/build-report-with-smart-marker/

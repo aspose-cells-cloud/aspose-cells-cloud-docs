@@ -1,6 +1,6 @@
 ﻿---
-title: Exporter un objet OLE
-second_title: Aspose.Cells Cloud Documen
+title: Exporter l'objet OLE
+second_title: Documen
 linktitle: Objet OLE
 type: docs
 url: /fr/export-excel-ole-object/
@@ -8,13 +8,13 @@ aliases: [ /export/excel-ole-object/]
 keywords: Export Excel OLE object to kinds of format files
 description: Aspose.Cells Cloud REST API prend en charge l'exportation d'objets OLE Excel vers différents formats de fichiers. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 20
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Exporter un objet OLE
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Exporter un objet OLE
 ---
 - **RESTE API**
 
 |**API**|**Taper**|**Description**|**Lien Swagger**|
 |:- |:- |:- |:- |
-|/cellules/export|POSTE|Exporter Excel à partir du contenu de la demande vers un format|[PostExport](https://apireference.aspose.cloud/cells/#/LightCells/PostExport)|
+|/cellules/export|POSTE|Exporter Excel du contenu de la demande vers un format|[PostExport](https://apireference.aspose.cloud/cells/#/LightCells/PostExport)|
 
  Le[Spécification OpenAPI](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) définit une interface de programmation accessible au public et vous permet d'effectuer des interactions REST directement à partir d'un navigateur Web.
 

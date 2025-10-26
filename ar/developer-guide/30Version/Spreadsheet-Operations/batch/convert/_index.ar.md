@@ -1,6 +1,6 @@
 ﻿---
 title: تحويل دفعة ملف Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /ar/batch/convert
 keywords: Batch conversion of multiple excel files

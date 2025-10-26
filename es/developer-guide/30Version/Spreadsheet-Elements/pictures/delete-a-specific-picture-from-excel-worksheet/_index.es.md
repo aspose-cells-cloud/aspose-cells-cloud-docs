@@ -1,6 +1,6 @@
 ﻿---
 title: Eliminar una imagen en un archivo Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Borrar
 type: docs
 url: /es/pictures/delete/
@@ -26,7 +26,7 @@ Los parámetros de la solicitud son:
 |:- |:- |:- |:- |
 | nombre| cadena| camino| El nombre del libro de trabajo.|
 | nombreHoja| cadena| camino| El nombre de la hoja de trabajo.|
-| Índice de imágenes| entero| camino| Índice de imágenes|
+| índice de imágenes| entero| camino| Índice de imágenes|
 | carpeta| cadena| consulta| La carpeta del libro de trabajo.|
 | nombreDeAlmacenamiento| cadena| consulta| nombre de almacenamiento.|
 
@@ -66,7 +66,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/picture
 
 ## Familia de SDK en la nube
 
- Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
+ Usar un SDK es la mejor manera de acelerar el desarrollo. Un SDK se encarga de los detalles básicos y te permite concentrarte en las tareas de tu proyecto. Consulta el[Repositorio de GitHub](https://github.com/aspose-cells-cloud) para obtener una lista completa de Aspose.Cells SDK en la nube.
 
 Los siguientes ejemplos de código demuestran cómo realizar llamadas a los servicios web Aspose.Cells utilizando varios SDK:
 

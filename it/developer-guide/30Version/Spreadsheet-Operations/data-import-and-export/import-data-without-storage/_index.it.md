@@ -1,6 +1,6 @@
 ﻿---
 title: Importa dati senza utilizzare l'archiviazione
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Importa dati senza archiviazione
 type: docs
 url: /it/import/without-using-storage/ 

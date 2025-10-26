@@ -1,6 +1,6 @@
 ﻿---
 title: storag kullanarak Verileri İçe Aktar
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Depolama ile veri içe aktar
 type: docs
 url: /tr/import-data-with-using-storage/

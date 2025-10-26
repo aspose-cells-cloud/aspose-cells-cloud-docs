@@ -1,6 +1,6 @@
 ﻿---
 title: العمل مع الصف Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: صف
 type: docs
 url: /ar/rows/

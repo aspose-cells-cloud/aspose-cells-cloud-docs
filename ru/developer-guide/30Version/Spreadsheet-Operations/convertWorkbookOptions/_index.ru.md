@@ -1,6 +1,6 @@
 ﻿---
 title: Параметр «Преобразовать рабочую книгу»
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Параметр «Преобразовать рабочую книгу»
 type: docs
 url: /ru/convert-workbook-options/
@@ -13,10 +13,10 @@ kwords: Excel, Office Облако, REST API, Электронная табли�
 
 Имя | Тип | Описание | Примечания
 ------------ | ------------- | ------------- | -------------
-**Источник данных** | **Объект** | Источник файла данных: CloudFileSystem ,RequestFiles , HttpUri. |
+**Источник данных** | **Объект** Источник файла данных: CloudFileSystem ,RequestFiles , HttpUri. |
 **[FileInfo](/cells/file-info/)** | **Объект** | Описание информации о файле. Включает имя файла, размер файла и его содержимое (строка base64). |
 **[PageSetup](/cells/page-setup/)** | **Объект** | Свойства настройки страницы. |
-**SaveOptions** | **Объект** Параметры сохранения: DbfSaveOptions, DifSaveOptions, DocxSaveOptions, HtmlSaveOptions, XlsSaveOptions, XlsxSaveOptions, XpsSaveOptions, PngSaveOptions, JpgSaveOptions, GifSaveOptions, EmfSaveOptions, BmpSaveOptions, MdSaveOptions, NumbersSaveOptions, WmfSaveOptions, SvgSaveOptions, TxtSaveOptions, TifSaveOptions, XlsbSaveOptions |
+**SaveOptions** | **Объект** | Параметры сохранения: DbfSaveOptions, DifSaveOptions, DocxSaveOptions, HtmlSaveOptions, XlsSaveOptions, XlsxSaveOptions, XpsSaveOptions, PngSaveOptions, JpgSaveOptions, GifSaveOptions, EmfSaveOptions, BmpSaveOptions, MdSaveOptions, NumbersSaveOptions, WmfSaveOptions, SvgSaveOptions, TxtSaveOptions, TifSaveOptions, XlsbSaveOptions |
 **ConvertFormat** | **нить** | Формат файла: csv, xls, html, mhtml, ods, pdf, xml, txt, tiff, xlsb, xlsm, xlsx, xltm, xltx, xps, png, jpg, gif, emf, bmp, md, Numbers, wmf, svg и т. д. |
 **CheckExcelRestriction** | **булев** | Получает и задает тип автоматического подгонки переносимого текста. |
 
@@ -354,7 +354,7 @@ kwords: Excel, Office Облако, REST API, Электронная табли�
 |Разделитель|Нить|истинный| ЛОЖЬ|||
 |Тип оператора|Нить|истинный| ЛОЖЬ|||
 |PrimaryKey|Целое число|истинный| ЛОЖЬ|||
-|CreateTable|Булевое значение|истинный| ЛОЖЬ|||
+|СоздатьТаблицу|Булевое значение|истинный| ЛОЖЬ|||
 |Имя_идентификатора|Нить|истинный| ЛОЖЬ|||
 |StartId|Целое число|истинный| ЛОЖЬ|||
 |ИмяТаблицы|Нить|истинный| ЛОЖЬ|||

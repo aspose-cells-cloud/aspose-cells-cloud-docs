@@ -1,6 +1,6 @@
 ﻿---
 title: 将Json数据导入Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: 导入 Jso
 type: docs
 url: /zh/import-json-data-into-excel/
@@ -10,7 +10,7 @@ description: Aspose.Cells Cloud REST API 支持将字符串数组数据导入 Ex
 weight: 40
 kwords: Excel、Office 云、REST API、电子表格、PDF、CSV、Json、Markdown、将 Json 数据导入 Excel
 ---
-此 REST API `import json data` 放入 Excel 工作表。
+此 REST API `import json data` 进入 Excel 工作表。
 
 ## 重新设置 API
 

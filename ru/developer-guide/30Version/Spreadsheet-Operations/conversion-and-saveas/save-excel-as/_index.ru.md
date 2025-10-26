@@ -1,6 +1,6 @@
 ﻿---
 title: Сохранить как Exce
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Сохранить
 type: docs
 url: /ru/save-an-excel-file-as-other-formats-files/

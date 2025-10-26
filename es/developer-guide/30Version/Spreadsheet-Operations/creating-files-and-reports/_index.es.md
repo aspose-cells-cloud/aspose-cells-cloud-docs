@@ -1,16 +1,16 @@
 ﻿---
 title: Crear archivos Excel o generar informes Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /es/creating-files-and-reports/
 aliases: [/workbook/create/]
 linktitle: Crear Excel y Reportar
 keywords: Create document, Generate report, Excel report, Dynamic repor
-description: Generar nuevos documentos o informes que puedan incluir gráficos, tablas y otros elementos de visualización de datos.
+description: Generar nuevos documentos o informes que puedan incluir gráficos, tablas y otros elementos de visualización de datos
 weight: 10
 kwords: Crear documento, Generar informe, Informe Excel, Informe dinámico
 ---
-Con Aspose.Cells Cloud API, puede crear fácilmente nuevos libros de trabajo Excel y generar libros de trabajo específicos Excel a partir de archivos de plantilla. Además, permite la creación de informes complejos Excel junto con la función SmartMarker, que puede satisfacer diversas necesidades de procesamiento de datos complejos y generación de informes.
+Con Aspose.Cells Cloud API, puede crear fácilmente nuevos libros de trabajo Excel y generar libros de trabajo específicos Excel a partir de archivos de plantilla. Además, permite la creación de informes complejos Excel junto con la función SmartMarker, que satisface diversas necesidades de procesamiento de datos y generación de informes complejos.
 
 ## Cree un archivo Excel y genere un informe
 

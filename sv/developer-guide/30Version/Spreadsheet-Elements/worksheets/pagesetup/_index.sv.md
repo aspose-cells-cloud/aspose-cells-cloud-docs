@@ -1,6 +1,6 @@
 ﻿---
 title: Sidinställningar för arbetsblad
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Sidinställningar
 type: docs
 url: /sv/page-setup/

@@ -1,13 +1,15 @@
 ﻿---
-title: Aspose.Cells Cloud SDK per G
-second_title: Aspose.Cells Cloud Documen
+title: "Aspose.Cells Cloud SDK per Go: converti, unisci, dividi, proteggi, cerca, sostituisci e altro ancora"
+second_title: Documen
+ArticleTitle: "Aspose.Cells Cloud SDK for Go: Convert, merge, split, protect, search, replace, and more"
+linktitle: Aspose.Cells Cloud SDK per G
 type: docs
 url: /it/available-sdks/aspose-cells-cloud-go/
-description: Aspose.Cells Cloud SDK per Go offre un solido supporto multipiattaforma per gli sviluppatori Go, semplificandone l'integrazione e l'utilizzo per Windows, Linux o macOS. Supporta Excel per creare, convertire, unire, dividere, proteggere, operazioni su oggetti interni e così via.
+description: "Aspose.Cells Cloud SDK per Go offre una vera potenza multipiattaforma: un'importazione fornisce agli sviluppatori Windows, Linux e macOS la stessa fluidità API per creare, convertire, unire, dividere, proteggere, eliminare righe/colonne vuote e manipolare ogni Excel oggetto, senza Office installazione richiesta, nessuna modifica specifica della piattaforma"
 weight: 30
-kwords: Vai, Excel, Office Cloud, REST API, Grafico, Tabella pivot, Tabella, Foglio di calcolo, PDF, CSV, Json, Markdown
+kwords: Go SDK, Excel SDK per GoLang, Cloud SDK per Go, REST, Grafico, Tabella pivot, Oggetto tabella/elenco, Converti foglio di calcolo, PDF, CSV, Json, Markdown, Unisci, Dividi, Proteggi, Cerca, Sostituisci
 ---
- L'SDK è open source e concesso in licenza MIT. È possibile accedere al codice sorgente della libreria Go per Aspose.Cells Cloud.[Qui](https://github.com/aspose-cells-cloud/aspose-cells-cloud-go).
+L'SDK è open source e concesso in licenza con licenza MIT. È possibile accedervi[il codice sorgente della libreria Go per Aspose.Cells Cloud](https://github.com/aspose-cells-cloud/aspose-cells-cloud-go).
 
 # **Come utilizzare la libreria Go di Aspose.Cells Cloud**
 

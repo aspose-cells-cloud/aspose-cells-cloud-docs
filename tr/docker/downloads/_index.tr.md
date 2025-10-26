@@ -1,9 +1,11 @@
 ﻿---
-title: İndir
-second_title: Aspose.Cells Cloud Documen
+title: Aspose.Cells Bulut Docker Görüntüsü İndirme
+second_title: Documen
+ArticleTitle: Aspose.Cells Cloud Docker Image Downloa
+linktitle: Resim İndirme
 type: docs
 url: /tr/docker/downloads/
-description: Aspose.Cells Bulut Docker Görüntülerini İndirin
+description: Aspose.Cells Cloud Docker Görüntülerini İndirin. Aspose.Cells Cloud Docker Konteyneri, Aspose tarafından sağlanan ve Docker tabanlı bir konteyner hizmetidir ve Aspose.Cells Cloud API'in genel bulut hizmetlerine güvenmeden yerel veya özel bulut ortamlarında Aspose.Cells Cloud API'in işlevlerini dağıtmanıza olanak tanır.
 weight: 30
 kwords: Excel, Office Bulut, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, İndir
 ---
@@ -22,7 +24,6 @@ docker pull aspose/cells-cloud:ltsc2016.21.9
 docker pull aspose/cells-cloud:ltsc2019.21.9
 
 ```
-
 
 ##  Linux ##
 

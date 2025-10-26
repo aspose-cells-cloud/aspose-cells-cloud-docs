@@ -1,6 +1,6 @@
 ﻿---
 title: Dégrouper les lignes sur une feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ungrou
 type: docs
 url: /fr/rows/ungroup/
@@ -10,7 +10,7 @@ description: Aspose.Cells Cloud REST API prend en charge le dégroupage des lign
 weight: 70
 kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Dissocier les lignes d'une feuille de calcul Excel
 ---
-Ce REST API indique de dissocier les lignes d'une feuille de calcul Excel.
+Ce REST API indique de dégrouper les lignes d'une feuille de calcul Excel.
 
 ## RSET API
 
@@ -20,7 +20,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

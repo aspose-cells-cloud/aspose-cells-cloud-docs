@@ -1,6 +1,6 @@
 ﻿---
 title: Heben Sie den Schutz eines Excel-Arbeitsbuchs auf
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Unprotect Excel fil
 type: docs
 url: /de/excel-file-unprotect/

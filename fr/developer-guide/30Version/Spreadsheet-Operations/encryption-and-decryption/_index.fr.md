@@ -1,6 +1,6 @@
 ﻿---
 title: Chiffrer, déchiffrer et signer numériquement les fichiers Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Protégez Exce
 type: docs
 url: /fr/protect/

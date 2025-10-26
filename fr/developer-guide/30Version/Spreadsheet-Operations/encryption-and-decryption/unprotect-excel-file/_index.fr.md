@@ -1,7 +1,7 @@
 ﻿---
 title: Déprotéger un classeur Excel
-second_title: Aspose.Cells Cloud Documen
-linktitle: Déprotéger le fichier Excel
+second_title: Documen
+linktitle: Déprotéger le fil Excel
 type: docs
 url: /fr/excel-file-unprotect/
 aliases: [/unprotect-excel-workbooks/, /workbook/unprotect/]

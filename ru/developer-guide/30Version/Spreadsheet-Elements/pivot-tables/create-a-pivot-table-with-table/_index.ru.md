@@ -1,6 +1,6 @@
 ﻿---
 title: Преобразовать таблицу в сводную таблицу
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Конвертировать
 type: docs
 url: /ru/pivot-tables/convert-table-to-pivottable/

@@ -1,6 +1,6 @@
 ﻿---
 title: Supprimer les doublons de l'objet de la liste
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Supprimer les doublons
 type: docs
 keywords: list object(table) remove duplicates 
@@ -19,13 +19,13 @@ POST http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/listobjec
 
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP| Description|
 |:- |:- |:- |:- |
 |nom|Chaîne|Chemin||
 |nom de la feuille|Chaîne|Chemin||
-|listObjectIndex|Entier|Chemin||
+|index d'objets de liste|Entier|Chemin||
 |dossier|Chaîne|Requête||
 |nom de stockage|Chaîne|Requête||
 

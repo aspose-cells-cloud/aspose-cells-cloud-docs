@@ -1,6 +1,6 @@
 ﻿---
 title: Copie le contenu et les formats d'une autre feuille de calcul
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Flic
 type: docs
 url: /fr/worksheets/copy/
@@ -20,13 +20,13 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/copy
  
 ```
 
-Les paramètres de la requête sont :
+Les paramètres de la requête sont :
 
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |
 | nom| chaîne| chemin||
 | nom de la feuille| chaîne| chemin||
-| sourceSheet| chaîne| requête||
+| feuille source| chaîne| requête||
 | options|| corps||
 | sourceCahier d'exercices| chaîne| requête||
 | dossier source| chaîne| requête||

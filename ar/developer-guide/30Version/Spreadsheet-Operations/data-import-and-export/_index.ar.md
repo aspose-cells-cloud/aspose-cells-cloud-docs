@@ -1,6 +1,6 @@
 ﻿---
 title: استيراد البيانات إلى ملفات Excel وتصدير البيانات من ملفات Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: استيراد وتصدير البيانات
 type: docs
 url: /ar/data-import-and-export/
@@ -231,7 +231,7 @@ kwords: Excel استيراد البيانات مقابل الوصول المبا
 
 ## كيفية تصدير كائنات Excel إلى تنسيقات ملفات مختلفة
 
- إذا قمت في الأصل بإنشاء ملف Excel بتنسيق معين، مثل[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [إكس إل إس بي](https://docs.fileformat.com/spreadsheet/xlsb/) ، و[ملف CSV](https://docs.fileformat.com/spreadsheet/csv/)قد تجد أحيانًا أنه من المفيد تحويل ملف إكسل إلى صيغة أخرى للاستفادة من الميزات الخاصة التي يوفرها. على سبيل المثال، قد ترغب في تصدير ملف إكسل إلى[PDF](https://docs.fileformat.com/pdf/)لحماية محتوياتك من أي تعديلات غير مصرح بها وتسهيل قراءتها ومشاركتها في وقت واحد.
+إذا قمت في الأصل بإنشاء ملف Excel بتنسيق معين، مثل[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [إكس إل إس بي](https://docs.fileformat.com/spreadsheet/xlsb/) ، و[ملف CSV](https://docs.fileformat.com/spreadsheet/csv/)قد تجد أحيانًا أنه من المفيد تحويل ملف إكسل إلى صيغة أخرى للاستفادة من الميزات الخاصة التي يوفرها. على سبيل المثال، قد ترغب في تصدير ملف إكسل إلى[PDF](https://docs.fileformat.com/pdf/) لحماية محتوياتك من أي تعديلات غير مصرح بها وتسهيل قراءتها ومشاركتها في وقت واحد.
 
 تصدير كائن Excel عملية معقدة. تساهم عوامل عديدة في تعقيدها، لذا يجب أخذها في الاعتبار أثناء عملية التصدير. تُعد إمكانية تصدير كائن Excel إلى ملف بتنسيق واحد بجودة احترافية ودقيقة من أهم ميزات Aspose.Cells Cloud.
 

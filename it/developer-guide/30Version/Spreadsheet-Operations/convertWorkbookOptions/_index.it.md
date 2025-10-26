@@ -1,6 +1,6 @@
 ﻿---
 title: Opzione Converti cartella di lavoro
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Opzione Converti cartella di lavoro
 type: docs
 url: /it/convert-workbook-options/
@@ -13,10 +13,10 @@ kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdo
 
 Nome | Tipo | Descrizione | Note
 ------------ | ------------- | ------------- | -------------
-**Fonte dati** | **Oggetto** | Fonte del file di dati: CloudFileSystem, RequestFiles, HttpUri. |
+**Fonte dati** | **Oggetto** Fonte del file di dati: CloudFileSystem, RequestFiles, HttpUri. |
 **[FileInfo](/cells/file-info/)** | **Oggetto** | Descrizione delle informazioni sul file. Include nome del file, dimensione del file e contenuto del file (stringa base64). |
 **[Impostazione pagina](/cells/page-setup/)** | **Oggetto** | Proprietà di impostazione della pagina. |
-**Opzioni di salvataggio** | **Oggetto** Opzioni di salvataggio: DbfSaveOptions, DifSaveOptions, DocxSaveOptions, HtmlSaveOptions, XlsSaveOptions, XlsxSaveOptions, XpsSaveOptions, PngSaveOptions, JpgSaveOptions, GifSaveOptions, EmfSaveOptions, BmpSaveOptions, MdSaveOptions, NumbersSaveOptions, WmfSaveOptions, SvgSaveOptions, TxtSaveOptions, TifSaveOptions, XlsbSaveOptions |
+**Opzioni di salvataggio** | **Oggetto** | Opzioni di salvataggio: DbfSaveOptions, DifSaveOptions, DocxSaveOptions, HtmlSaveOptions, XlsSaveOptions, XlsxSaveOptions, XpsSaveOptions, PngSaveOptions, JpgSaveOptions, GifSaveOptions, EmfSaveOptions, BmpSaveOptions, MdSaveOptions, NumbersSaveOptions, WmfSaveOptions, SvgSaveOptions, TxtSaveOptions, TifSaveOptions, XlsbSaveOptions |
 **ConvertiFormato** | **corda** | Formato del file: csv, xls, html, mhtml, ods, pdf, xml, txt, tiff, xlsb, xlsm, xlsx, xltm, xltx, xps, png, jpg, gif, emf, bmp, md, Numbers, wmf, svg e così via. |
 **CheckExcelRestriction** | **booleano** | Ottiene e imposta il tipo di testo con adattamento automatico. |
 
@@ -33,7 +33,7 @@ Nome | Tipo | Descrizione | Note
 |:- |:- |:- |:- |:- |:- |
 |Esporta come stringa|Booleano|VERO| falso|||
 |SalvaFormato|Corda|VERO| falso|||
-|CartellaFileCached|Corda|VERO| falso|||
+|CartellaFileCassata|Corda|VERO| falso|||
 |Cancella dati|Booleano|VERO| falso|||
 |Crea directory|Booleano|VERO| falso|||
 |Abilita compressione HTTP|Booleano|VERO| falso|||
@@ -51,7 +51,7 @@ Nome | Tipo | Descrizione | Note
 | Nome della proprietà| Tipo di proprietà| Nullabile| Sola lettura| Valore predefinito| Descrizione|
 |:- |:- |:- |:- |:- |:- |
 |SalvaFormato|Corda|VERO| falso|||
-|CartellaFileCached|Corda|VERO| falso|||
+|CartellaFileCassata|Corda|VERO| falso|||
 |Cancella dati|Booleano|VERO| falso|||
 |Crea directory|Booleano|VERO| falso|||
 |Abilita compressione HTTP|Booleano|VERO| falso|||
@@ -87,7 +87,7 @@ Nome | Tipo | Descrizione | Note
 |OrdinaNomiEsterni|Booleano|VERO| falso|||
 |AggiornaSmartArt|Booleano|VERO| falso|||
 |SalvaFormato|Corda|VERO| falso|||
-|CartellaFileCached|Corda|VERO| falso|||
+|CartellaFileCassata|Corda|VERO| falso|||
 |Cancella dati|Booleano|VERO| falso|||
 |Crea directory|Booleano|VERO| falso|||
 |Abilita compressione HTTP|Booleano|VERO| falso|||
@@ -141,7 +141,7 @@ Nome | Tipo | Descrizione | Note
 |ParseHtmlTagInCell|Booleano|VERO| falso|||
 |AttributoNomeCella|Corda|VERO| falso|||
 |SalvaFormato|Corda|VERO| falso|||
-|CartellaFileCached|Corda|VERO| falso|||
+|CartellaFileCassata|Corda|VERO| falso|||
 |Cancella dati|Booleano|VERO| falso|||
 |Crea directory|Booleano|VERO| falso|||
 |Abilita compressione HTTP|Booleano|VERO| falso|||
@@ -171,7 +171,7 @@ Nome | Tipo | Descrizione | Note
 |Compressione Tiff|Corda|VERO| falso|||
 |Risoluzione verticale|Intero|VERO| falso|||
 |SalvaFormato|Corda|VERO| falso|||
-|CartellaFileCached|Corda|VERO| falso|||
+|CartellaFileCassata|Corda|VERO| falso|||
 |Cancella dati|Booleano|VERO| falso|||
 |Crea directory|Booleano|VERO| falso|||
 |Abilita compressione HTTP|Booleano|VERO| falso|||
@@ -193,7 +193,7 @@ Nome | Tipo | Descrizione | Note
 |Esporta come stringa|Booleano|VERO| falso|||
 |Rientro|Corda|VERO| falso|||
 |SalvaFormato|Corda|VERO| falso|||
-|CartellaFileCached|Corda|VERO| falso|||
+|CartellaFileCassata|Corda|VERO| falso|||
 |Cancella dati|Booleano|VERO| falso|||
 |Crea directory|Booleano|VERO| falso|||
 |Abilita compressione HTTP|Booleano|VERO| falso|||
@@ -214,7 +214,7 @@ Nome | Tipo | Descrizione | Note
 |FormatStrategy|Corda|VERO| falso|||
 |Separatore di linea|Corda|VERO| falso|||
 |SalvaFormato|Corda|VERO| falso|||
-|CartellaFileCached|Corda|VERO| falso|||
+|CartellaFileCassata|Corda|VERO| falso|||
 |Cancella dati|Booleano|VERO| falso|||
 |Crea directory|Booleano|VERO| falso|||
 |Abilita compressione HTTP|Booleano|VERO| falso|||
@@ -237,7 +237,7 @@ Nome | Tipo | Descrizione | Note
 |EmbedOoxmlAsOleObject|Booleano|VERO| falso|||
 |Tipo di compressione|Corda|VERO| falso|||
 |SalvaFormato|Corda|VERO| falso|||
-|CartellaFileCached|Corda|VERO| falso|||
+|CartellaFileCassata|Corda|VERO| falso|||
 |Cancella dati|Booleano|VERO| falso|||
 |Crea directory|Booleano|VERO| falso|||
 |Abilita compressione HTTP|Booleano|VERO| falso|||
@@ -257,7 +257,7 @@ Nome | Tipo | Descrizione | Note
 |fontFullName|Corda|VERO| falso|||
 |fontPclName|Corda|VERO| falso|||
 |SalvaFormato|Corda|VERO| falso|||
-|CartellaFileCached|Corda|VERO| falso|||
+|CartellaFileCassata|Corda|VERO| falso|||
 |Cancella dati|Booleano|VERO| falso|||
 |Crea directory|Booleano|VERO| falso|||
 |Abilita compressione HTTP|Booleano|VERO| falso|||
@@ -294,7 +294,7 @@ Nome | Tipo | Descrizione | Note
 |jpegQuality|Intero|VERO| falso|||
 |Tipo di immagine|Corda|VERO| falso|||
 |SalvaFormato|Corda|VERO| falso|||
-|CartellaFileCached|Corda|VERO| falso|||
+|CartellaFileCassata|Corda|VERO| falso|||
 |Cancella dati|Booleano|VERO| falso|||
 |Crea directory|Booleano|VERO| falso|||
 |Abilita compressione HTTP|Booleano|VERO| falso|||
@@ -333,7 +333,7 @@ Nome | Tipo | Descrizione | Note
 |OrdinaNomiEsterni|Booleano|VERO| falso|||
 |AggiornaSmartArt|Booleano|VERO| falso|||
 |SalvaFormato|Corda|VERO| falso|||
-|CartellaFileCached|Corda|VERO| falso|||
+|CartellaFileCassata|Corda|VERO| falso|||
 |Cancella dati|Booleano|VERO| falso|||
 |Crea directory|Booleano|VERO| falso|||
 |Abilita compressione HTTP|Booleano|VERO| falso|||
@@ -362,7 +362,7 @@ Nome | Tipo | Descrizione | Note
 |Area di esportazione|Classe|VERO| falso|||
 |HaIntestazioneRiga|Booleano|VERO| falso|||
 |SalvaFormato|Corda|VERO| falso|||
-|CartellaFileCached|Corda|VERO| falso|||
+|CartellaFileCassata|Corda|VERO| falso|||
 |Cancella dati|Booleano|VERO| falso|||
 |Crea directory|Booleano|VERO| falso|||
 |Abilita compressione HTTP|Booleano|VERO| falso|||
@@ -393,7 +393,7 @@ Nome | Tipo | Descrizione | Note
 |Compressione Tiff|Corda|VERO| falso|||
 |Risoluzione verticale|Intero|VERO| falso|||
 |SalvaFormato|Corda|VERO| falso|||
-|CartellaFileCached|Corda|VERO| falso|||
+|CartellaFileCassata|Corda|VERO| falso|||
 |Cancella dati|Booleano|VERO| falso|||
 |Crea directory|Booleano|VERO| falso|||
 |Abilita compressione HTTP|Booleano|VERO| falso|||
@@ -415,7 +415,7 @@ Nome | Tipo | Descrizione | Note
 |SeparatoreStringa|Corda|VERO| falso|||
 |Sempre citato|Booleano|VERO| falso|||
 |SalvaFormato|Corda|VERO| falso|||
-|CartellaFileCached|Corda|VERO| falso|||
+|CartellaFileCassata|Corda|VERO| falso|||
 |Cancella dati|Booleano|VERO| falso|||
 |Crea directory|Booleano|VERO| falso|||
 |Abilita compressione HTTP|Booleano|VERO| falso|||
@@ -435,7 +435,7 @@ Nome | Tipo | Descrizione | Note
 |MatchColor|Booleano|VERO| falso|||
 |Compatibilità Wps|Booleano|VERO| falso|||
 |SalvaFormato|Corda|VERO| falso|||
-|CartellaFileCached|Corda|VERO| falso|||
+|CartellaFileCassata|Corda|VERO| falso|||
 |Cancella dati|Booleano|VERO| falso|||
 |Crea directory|Booleano|VERO| falso|||
 |Abilita compressione HTTP|Booleano|VERO| falso|||
@@ -459,7 +459,7 @@ Nome | Tipo | Descrizione | Note
 |NomeFoglioComeNomeElemento|Booleano|VERO| falso|||
 |Dati come attributo|Booleano|VERO| falso|||
 |SalvaFormato|Corda|VERO| falso|||
-|CartellaFileCached|Corda|VERO| falso|||
+|CartellaFileCassata|Corda|VERO| falso|||
 |Cancella dati|Booleano|VERO| falso|||
 |Crea directory|Booleano|VERO| falso|||
 |Abilita compressione HTTP|Booleano|VERO| falso|||
@@ -495,7 +495,7 @@ Nome | Tipo | Descrizione | Note
 |OrdinaNomiEsterni|Booleano|VERO| falso|||
 |AggiornaSmartArt|Booleano|VERO| falso|||
 |SalvaFormato|Corda|VERO| falso|||
-|CartellaFileCached|Corda|VERO| falso|||
+|CartellaFileCassata|Corda|VERO| falso|||
 |Cancella dati|Booleano|VERO| falso|||
 |Crea directory|Booleano|VERO| falso|||
 |Abilita compressione HTTP|Booleano|VERO| falso|||

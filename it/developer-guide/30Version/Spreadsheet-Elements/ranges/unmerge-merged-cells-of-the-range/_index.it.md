@@ -1,6 +1,6 @@
 ﻿---
 title: Separa le celle unite dell'intervallo
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Unmerg
 type: docs
 url: /it/ranges/unmerge/

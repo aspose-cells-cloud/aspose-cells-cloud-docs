@@ -1,6 +1,6 @@
 ﻿---
-title: "Travailler dans les fichiers Excel : calcul de formule, ajustement automatique, effacement d'objets, etc."
-second_title: Aspose.Cells Cloud Documen
+title: "Travailler dans les fichiers Excel : Calcul de formule, Ajustement automatique, Effacement d'objets, etc."
+second_title: Documen
 linktitle: Excel Opération commune
 type: docs
 url: /fr/workbook/
@@ -8,7 +8,7 @@ aliases: [/working-with-workbook/]
 keywords: Working with workbook on an Excel file
 description: Aspose.Cells Cloud REST API prend en charge l'utilisation d'un classeur sur un fichier Excel. Le SDK prend en charge différents langages de développement, notamment Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift.
 weight: 20
-kwords: Excel, Office Cloud, REST API, Tableur, PDF, CSV, Json, Markdown, Classeur
+kwords: Excel, Office Cloud, REST API, Feuille de calcul, PDF, CSV, Json, Markdown, Classeur
 ---
 ## Travailler avec un classeur Excel
 

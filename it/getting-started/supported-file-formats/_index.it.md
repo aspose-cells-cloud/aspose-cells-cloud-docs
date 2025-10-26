@@ -1,6 +1,8 @@
 ﻿---
-title: Formato file supportato
-second_title: Aspose.Cells Cloud Documen
+title: Aspose.Cells Formato file supportato dal cloud
+second_title: Documen
+ArticleTitle: "Aspose.Cells Cloud Supported File Formats: Excel, Pdf, CSV, Json, Markdown, and mor"
+linktitle: Formato file supportato
 type: docs
 url: /it/supported-file-formats/
 description: Aspose.Cells Cloud supporta Excel per creare, convertire, unire, dividere, proteggere, operazioni di oggetti interni e così via
@@ -45,7 +47,7 @@ kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, Json, Markdo
 |[PPTX](https://docs.fileformat.com/presentation/pptx/)|Il formato PPTX si basa sul formato di file di presentazione XML aperto Microsoft PowerPoint.||{{< emoticons/tick >}}|
 |[SqlScript](https://docs.fileformat.com/database/sql/)|Linguaggio di query strutturato.||{{< emoticons/tick >}}|
 |[XHTML](https://docs.fileformat.com/web/xhtml/)|XHTML è un formato di file basato su testo con markup in XML, utilizzando una riformulazione di HTML 4.0.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Epub](https://docs.fileformat.com/ebook/epub/)|file con estensione .epub sono un formato di file e-book che fornisce un formato di pubblicazione digitale standard per editori e consumatori.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[XML](https://docs.fileformat.com/web/xml/)|XML è l'acronimo di Extensible Markup Language, un linguaggio simile a HTML, ma diverso per l'utilizzo di tag per la definizione degli oggetti.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Epub](https://docs.fileformat.com/ebook/epub/)|I file con estensione .epub sono un formato di file e-book che fornisce un formato di pubblicazione digitale standard per editori e consumatori.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[XML](https://docs.fileformat.com/web/xml/)|XML è l'acronimo di Extensible Markup Language, simile a HTML ma diverso nell'uso dei tag per definire gli oggetti.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[Ots](https://docs.fileformat.com/spreadsheet/ots/)|Aprire il file Document Template Sheet (OTS).|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[AZW3](https://docs.fileformat.com/ebook/azw3/)|AZW è un formato di file per ebook digitali sviluppato da Amazon per i suoi dispositivi Kindle. AZW3, noto anche come Kindle Format 8 (KF8).|{{< emoticons/tick >}}|{{< emoticons/tick >}}|

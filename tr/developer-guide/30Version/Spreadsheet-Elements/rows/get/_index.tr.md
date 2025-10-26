@@ -1,6 +1,6 @@
 ﻿---
 title: Excel çalışma sayfasında satır alma ile çalışma
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ge
 type: docs
 url: /tr/rows/get/

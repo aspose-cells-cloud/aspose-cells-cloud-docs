@@ -1,6 +1,6 @@
 ﻿---
 title: احصل على مرشح تلقائي في ورقة عمل Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: احصل على الفلتر التلقائي
 type: docs
 url: /ar/autofilter/get/

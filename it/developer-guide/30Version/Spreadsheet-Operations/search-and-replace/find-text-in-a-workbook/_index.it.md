@@ -1,6 +1,6 @@
 ﻿---
 title: Trova il testo in un libro di lavoro Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Trova nel libro di lavoro
 type: docs
 url: /it/workbook/find-text/

@@ -1,6 +1,6 @@
 ﻿---
 title: Horizontalen Seitenumbruch erhalten
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Horizontalen Seitenumbruch erhalten
 type: docs
 url: /de/page-breaks/get-horizontal-page-breaks/

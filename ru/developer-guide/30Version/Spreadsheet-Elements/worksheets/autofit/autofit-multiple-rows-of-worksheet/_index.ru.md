@@ -1,6 +1,6 @@
 ﻿---
 title: Автоматическая подгонка нескольких строк на листе Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Ряд
 type: docs
 url: /ru/worksheets/autofit/rows/

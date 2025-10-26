@@ -1,6 +1,6 @@
 ﻿---
 title: Définir le zoom pour une feuille de calcul Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: Zoo
 type: docs
 url: /fr/worksheets/zoom/
@@ -19,7 +19,7 @@ Ce REST API indique `set the zoom value of Excel worksheet`.
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/zoom
  
 ```
- Les paramètres de la requête sont :
+ Les paramètres de la requête sont :
  
 | Nom du paramètre| Taper| Chemin/Chaîne de requête/Corps HTTP|Description|
 |:- |:- |:- |:- |

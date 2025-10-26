@@ -1,6 +1,6 @@
 ﻿---
 title: Arbeiten mit CellsObjectOperate Tas
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 type: docs
 url: /de/tasks/cells-object-operate/
 aliases: [/working-with-cellsobjectoperate-task/]
@@ -14,7 +14,7 @@ Dieses REST API betreibt Zellenobjekt `task`.
 
 |Parametername|Typ|Beschreibung|
 |:- |:- |:- |
-| OperateObjectType| Schnur| Arbeitsmappe/Arbeitsblatt/Seiteneinrichtung/Cells/Diagramm/Form/Listenobjekt/PivotTable/Arbeitsmappeneinstellungen/Seitenumbruch|
+| OperateObjectType| Schnur|Arbeitsmappe/Arbeitsblatt/Seiteneinrichtung/Cells/Diagramm/Form/Listenobjekt/PivotTable/Arbeitsmappeneinstellungen/Seitenumbruch|
 | OperateObjectPosition| Objekt||
 
 **OperateObjectPosition**
@@ -24,7 +24,7 @@ Dieses REST API betreibt Zellenobjekt `task`.
 | Arbeitsmappe| Objekt||
 | Blattname| Schnur||
 | ChartIndex| ganze Zahl||
-| Formindex| ganze Zahl||
+| FormIndex| ganze Zahl||
 | Zellenname| Schnur||
 | ListObjectIndex| ganze Zahl||
 

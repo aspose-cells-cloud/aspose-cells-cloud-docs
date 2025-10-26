@@ -1,6 +1,6 @@
 ﻿---
 title: استبدال النص من الملف Excel
-second_title: Aspose.Cells Cloud Documen
+second_title: Documen
 linktitle: استبدل دون استخدام التخزين
 type: docs
 url: /ar/replace/
