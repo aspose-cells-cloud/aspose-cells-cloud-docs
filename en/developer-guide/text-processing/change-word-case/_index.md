@@ -1,7 +1,7 @@
 ---
 title: "Aspose.Cells Cloud Web API - Change word case"
 second_title: " Aspose.Cells Cloud – Online, Short-Code,"
-linktitle: "change word case"
+linktitle: "Change WordCase"
 type: docs
 url: /change-word-case/
 keywords: ""
@@ -16,10 +16,10 @@ Specify changing the text case in a spreadsheet to switch between uppercase, low
 
 Converts text values in the chosen range to upper, lower, proper or sentence case; formulas, formatting and data-validation remain untouched. String cells only – numbers, booleans, errors and blanks are ignored.
 
-- UpperCase  – every character capitalized.
-- LowerCase  – every character lowercased.
-- ProperCase  – first letter of each word uppercase, remainder lowercase.
-- SentenceCase  –  first letter of each sentence uppercase, remainder lowercase.
+- **UpperCase**  – every character capitalized.
+- **LowerCase**  – every character lowercased.
+- **ProperCase**  – first letter of each word uppercase, remainder lowercase.
+- **SentenceCase**  –  first letter of each sentence uppercase, remainder lowercase.
 
 [](images/result.png)
 

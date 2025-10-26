@@ -2,7 +2,7 @@
 title: "Aspose.Cells Cloud Web API - Trim character"
 second_title: "Document"
 ArticleTitle: "Trim character in a spreadsheet file – Online, Short-Code"
-linktitle: "Trim"
+linktitle: "Trim Character"
 type: docs
 url: /trim-character/
 keywords: "API, Excel API, Trim Content, Remote Spreadsheet, Cloud Storage, Text Trim, REST API"
@@ -13,7 +13,7 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Ma
 
 The trim character API is designed to process and trim content within a spreadsheet. This API allows users to remove extra spaces, line breaks, or other unnecessary characters from the content of selected cells. It is particularly useful for cleaning up data entries and ensuring consistency in spreadsheet formatting
 
-## **Primary Cleaning Capacity**
+## **Overview**
 
 - **Trim the first and last spaces**
   - Remove extra spaces at the beginning and end of text

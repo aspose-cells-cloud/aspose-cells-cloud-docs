@@ -13,3 +13,5 @@ kwords: "Excel, Aspose.Cells Cloud Web API, spreadsheet management, PDF, CSV, JS
 
 - [Trim character](/cells/text-processing/trim-character/)
 - [Change word case](/cells/text-processing/change-word-case/)
+- [Add text](/cells/text-processing/add-text/)
+- [Convert text](/cells/text-processing/convert-text/)
