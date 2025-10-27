@@ -12,7 +12,7 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Ma
 
 Specify appending text to multiple cells at once, allowing you to add prefixes, suffixes, labels, or any specific characters. You can choose the exact position of the text—in the beginning, at the end, or before or after certain characters in the cell.
 
-## 1. Overview
+## Overview
 
 One-call bulk insert of prefixes, suffixes, or anchored strings into every cell of a target range—no formulas, no helper columns.
 
