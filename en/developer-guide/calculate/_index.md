@@ -11,5 +11,5 @@ weight: 20
 kwords: Excel, Office Cloud, REST API, Spreadsheet Manipulation, PDF Conversion, CSV Processing, JSON Handling, Markdown Support, Developer Guide, Calculate Functionality
 ---
 
-- **[Sum, Count, Average Value, etc by color in Spreadsheet/Excel](https://docs.aspose.cloud/cells/aggregate-cells-by-color/)**
-- **[Add, Minus, Multiply, Divide and Percentage in Spreadsheet/Excel](https://docs.aspose.cloud/cells/math-calculate/)**
+- **[Sum, count, average—and more—by cell color in Excel by one run API.](https://docs.aspose.cloud/cells/aggregate-cells-by-color/)**
+- **[Spreadsheet Quick Calculate in Spreadsheet/Excel](https://docs.aspose.cloud/cells/math-calculate/)**

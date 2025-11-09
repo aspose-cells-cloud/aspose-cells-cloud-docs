@@ -11,12 +11,18 @@ weight: 100
 kwords: Math calculation,Cloud REST API, Add, Minus, Multiply, Divide, Percentage, Office Cloud, Aspose.Cells
 ---
 
-Developers can use this API to perform addition, subtraction, multiplication, division, and percentage calculations on specified ranges of spreadsheets/Excel.
+## **Introduction**: Spreadsheet Quick Calculate -  Add, Multiply, Subtract, Divide & Percent Formulas in One running API  
+
+*Boost productivity with bulk calculations across entire columns, rows or tables without writing a single formula.*
+
+- **Basic math**: add, subtract, multiply or divide every cell in a range by any number  
+- **Percentages**: increase/decrease by %, or find % of a number (e.g. +15%, −8%, 20% of...)  
+- **Bulk**: apply to thousands of cells instantly—no drag-fill, no array formula, no VBA  
 
 | **Calculate Operation** | Description |
 | :- | :- |
 | **Add** |  + |
-| **Minus** | -  |
+| **Subtract** | -  |
 | **Multiply** | *  |
 | **Divide** |  / |
 | **Percentage** |  % |
@@ -63,11 +69,19 @@ PUT http://api.aspose.cloud/v4.0/cells/calculate/math
 
 ## Where should we use the Math Calculate API?
 
-The math calculation API is suitable for batch calculations on spreadsheets.
+- Finance: add 13% VAT to an entire column of purchase prices.
+- Inventory: multiply kg column by 2.2046 to bulk-convert to pounds.
+- Payroll: add a flat bonus of 1,000 to the bonus column for all staff.
+- FX conversion: divide sales column by live exchange rate to get USD amounts.
+- Grading: subtract 5 points from every student score for attendance penalty.
+- E-commerce: apply a 15% promotional discount by reducing product prices in one click.
 
 ## Why should you use the Math Calculate API?
 
-- Perform batch math calculations.
+- **Fast Excel calculations** – finish month-end reports in seconds  
+- **Bulk percentage increase Excel** – update prices, forecasts, commissions in one click  
+- **Add same number to entire column** – inventory, currency conversion, unit conversion  
+- **Excel without formulas** – non-technical users love the simplicity  
 - Development can be quickly completed through the existing SDK.
 
 ## How to Use the Math Calculate API with SDKs
