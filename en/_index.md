@@ -18,7 +18,7 @@ Aspose.Cells Cloud APIs are a set of Spreadsheet/Excel cloud services - no need 
 
 - Creating, editing, converting, and analyzing spreadsheets in cloud storage based on Aspose.Cells Cloud Web API services.
 - Create, edit, convert, and analyze local spreadsheet files based on Aspose.Cells Cloud Web API services.
-- Supported file formats are 30, such as xlsx, csv, ods, xlsb, etc.
+- Supported file formats include 30 formats, such as xlsx, csv, ods, xlsb, etc.
 - Operate spreadsheets directly through the Aspose.Cells Cloud Web API without the need for Microsoft Excel dependencies.
 - Free 150 API calls per month.
 - Stepwise charging, how much users use, how much they charge, the more they use, the more discounts they offer.
@@ -79,7 +79,7 @@ Aspose.Cells Cloud offers the following key features to meet enterprise-level sp
 
 ## Support SDKs(**Available SDKs**)
 
-- Aspose.Cells Cloud offers [SDKs](https://github.com/aspose-cells-cloud)** in multiple languages, ready to use:
+- Aspose.Cells Cloud provides instant-ready [SDKs](https://github.com/aspose-cells-cloud) in every major language—pull, code, and ship:
 
 | Language | Installation Method | GitHub Repository |
 |------|----------|-------------|
