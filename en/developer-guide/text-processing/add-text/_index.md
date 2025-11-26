@@ -1,7 +1,7 @@
 ---
 title: "Aspose.Cells Cloud Web API - Add text"
 second_title: " Aspose.Cells Cloud – Online, Short-Code,"
-linktitle: "Add Text"
+linktitle: "AddText"
 type: docs
 url: /add-text/
 keywords: ""

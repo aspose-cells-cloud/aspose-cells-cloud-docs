@@ -1,7 +1,7 @@
 ---
 title: "Aspose.Cells Cloud Web API - Change word case"
 second_title: "Aspose.Cells Cloud – Online, Short-Code"
-linktitle: "Change WordCase"
+linktitle: "Word Case"
 type: docs
 url: /change-word-case/
 keywords: ""

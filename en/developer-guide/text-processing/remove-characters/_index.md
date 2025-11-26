@@ -1,7 +1,7 @@
 ---
 title: "Aspose.Cells Cloud Web API - Remove characters"
 second_title: " Aspose.Cells Cloud – Online, Short-Code,"
-linktitle: "Remove characters"
+linktitle: "Remove Characters"
 type: docs
 url: /remove-characters/
 keywords: ""
