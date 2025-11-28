@@ -11,7 +11,11 @@ weight: 30
 kwords: "Excel, Aspose.Cells Cloud Web API, spreadsheet management, PDF, CSV, JSON, Markdown, developer documentation, data manipulation, cloud services"
 ---
 
-- [How to call the API to trim characters for an Excel file.](/cells/trim-character/)
-- [How to call the API to change word case in an Excel file.](/cells/change-word-case/)
 - [How to call the API to add text for an Excel file.](/cells/add-text/)
+- [How to call the API to change word case in an Excel file.](/cells/change-word-case/)
 - [How to call the API to convert text in an Excel file.](/cells/convert-text/)
+- [How to call the API to remove characters for an Excel file.](/cells/remove-characters/)
+- [How to call the API to remove characters by position for an Excel file.](/cells/remove-characters-by-position/)
+- [How to call the API to remove duplicate substring for an Excel file.](/cells/remove-duplicate-substrings/)
+- [How to call the API to split text in an Excel file.](/cells/remove-duplicate-substrings/)
+- [How to call the API to trim characters for an Excel file.](/cells/trim-character/)

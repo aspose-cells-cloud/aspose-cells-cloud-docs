@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud Web API - Remove characters"
 second_title: " Aspose.Cells Cloud – Online, Short-Code,"
 linktitle: "Remove Duplicate Substrings"
 type: docs
-url: /remove-characters/
+url: /remove-duplicate-substrings/
 keywords: ""
 description: "Perform operations or delete any custom characters, character sets, and substrings within a selected range for a specific position. "
 weight: 100

@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud Web API - Remove Duplicate Substrings"
 second_title: " Aspose.Cells Cloud – Online, Short-Code,"
 linktitle: "Remove Characters by Position"
 type: docs
-url: /remove-duplicate-substrings/
+url: /remove-characters-by-position/
 keywords: "Remove, Duplicate, Substrings"
 description: "Finds and removes repeated substrings inside every cell of the chosen range, using user-defined or preset delimiters, while preserving formulas, formatting and data-validation."
 weight: 100
