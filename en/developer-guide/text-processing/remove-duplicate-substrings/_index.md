@@ -1,5 +1,5 @@
 ---
-title: "Aspose.Cells Cloud Web API - Remove characters"
+title: "Aspose.Cells Cloud Web API - Remove Duplicate Substrings"
 second_title: " Aspose.Cells Cloud – Online, Short-Code,"
 linktitle: "Remove Duplicate Substrings"
 type: docs
@@ -27,10 +27,9 @@ The Repeat Substring Cleaner API removes duplicate substrings within individual 
 
 | Field                   | Type    | Default              | Description                                                   |
 | ----------------------- | ------- | -------------------- | ------------------------------------------------------------- |
-| `delimiterType`         | string  | `"preset"`           | Options: `preset`, `custom`                                   |
-| `presetDelimiters`      | array   | `["comma", "space"]` | Available: `comma`, `semicolon`, `space`, `tab`, `line-break` |
-| `customDelimiter`       | string  | `null`               | Custom delimiter string (treats multiple chars as composite)  |
+| `delimiters`            | string  | `"preset"`           | Options: `preset`, `custom` , `comma`, `semicolon`, `space`, `tab`, `line-break` or Custom delimiter string (treats multiple chars as composite)                                  |
 | `treatConsecutiveAsOne` | boolean | `false`              | Collapse adjacent delimiters into single separator            |
+| `ignoreCase`            | boolean | `false`              | Ignore case when comparing strings                            |
 
 ## **RemoveDuplicateSubstrings API**
 
