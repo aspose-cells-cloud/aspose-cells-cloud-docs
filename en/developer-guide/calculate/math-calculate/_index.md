@@ -1,31 +1,30 @@
 ---
-title: "Aspose.Cells Cloud Web API - Add, Minus, Multiply, Divide, and Percentage on a range of Spreadsheet/Excel"
+title: "Aspose.Cells Cloud Web API - Add, Subtract, Multiply, Divide, and Percentage on a range of Spreadsheet/Excel"
 second_title: "Document"
-ArticleTitle: "Add, Minus, Multiply, Divide and Percentage in Spreadsheet/Excel"
+ArticleTitle: "Add, Subtract, Multiply, Divide and Percentage in Spreadsheet/Excel"
 linktitle: "Math Calculate"
 type: docs
 url: /math-calculate/
 keywords: "Math calculation,Cloud REST API, Add, Minus, Multiply, Divide, Percentage, Office Cloud, Aspose.Cells"
 description: "Comprehensive guide for using the Math Calculate API to perform calculations in Excel spreadsheets."
 weight: 100
-kwords: Math calculation,Cloud REST API, Add, Minus, Multiply, Divide, Percentage, Office Cloud, Aspose.Cells
 ---
 
 ## **Introduction**: Spreadsheet Quick Calculate -  Add, Multiply, Subtract, Divide & Percent Formulas in One running API  
 
-*Boost productivity with bulk calculations across entire columns, rows or tables without writing a single formula.*
+*Boost productivity with bulk calculations across entire columns, rows, or tables without writing a single formula.*
 
 - **Basic math**: add, subtract, multiply or divide every cell in a range by any number  
-- **Percentages**: increase/decrease by %, or find % of a number (e.g. +15%, −8%, 20% of...)  
+- **Percentages**: increase/decrease by %, or find % of a number (e.g. +15%, -8%, 20% of...)  
 - **Bulk**: apply to thousands of cells instantly—no drag-fill, no array formula, no VBA  
 
 | **Calculate Operation** | Description |
 | :- | :- |
-| **Add** |  + |
-| **Subtract** | -  |
-| **Multiply** | *  |
-| **Divide** |  / |
-| **Percentage** |  % |
+| **Add** | + |
+| **Subtract** | - |
+| **Multiply** | * |
+| **Divide** | / |
+| **Percentage** | % |
 
 ## **Math Calculate API**
 
@@ -65,7 +64,7 @@ PUT http://api.aspose.cloud/v4.0/cells/calculate/math
 - **400 Bad Request**: Invalid Apose.Cells Cloud API URI.
 - **401 Unauthorized**: Invalid access token. Or invalid client id and secret.
 - **404 Not Found**: The spreadsheet file not accessible.
-- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
+- **500 Server Error**: The spreadsheet encountered an issue retrieving calculation data.
 
 ## Where should we use the Math Calculate API?
 
@@ -78,10 +77,10 @@ PUT http://api.aspose.cloud/v4.0/cells/calculate/math
 
 ## Why should you use the Math Calculate API?
 
-- **Fast Excel calculations** – finish month-end reports in seconds  
-- **Bulk percentage increase Excel** – update prices, forecasts, commissions in one click  
-- **Add same number to entire column** – inventory, currency conversion, unit conversion  
-- **Excel without formulas** – non-technical users love the simplicity  
+- **Fast Excel calculations** - finish month-end reports in seconds.-
+- **Bulk percentage increase Excel** - update prices, forecasts, commissions in one click.
+- **Add same number to entire column** - inventory, currency conversion, unit conversion.
+- **Excel without formulas** - non-technical users love the simplicity.
 - Development can be quickly completed through the existing SDK.
 
 ## How to Use the Math Calculate API with SDKs

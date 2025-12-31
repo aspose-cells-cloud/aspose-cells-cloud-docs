@@ -1,15 +1,16 @@
 ---
-title: "Aspose.Cells Cloud Web API - Excel Calculate: Sum, Count, Average, Min, Max, Add, Subtract, Multiply, Divide, etc "
+title: "Aspose.Cells Cloud Web API - Master Essential Excel Formulas: SUM, COUNT, AVERAGE, MIN, MAX & Basic Math Operations"
 second_title: "Document"
-ArticleTitle: "Excel Calculation: Sum, Count, Average, Min, Max, Add, Subtract, Multiply, Divide, etc"
+ArticleTitle: "Boost Your Data Skills: Learn Key Excel Calculations – Add, Subtract, Multiply, Divide & More"
 linktitle: "Calculate"
 type: docs
 url: /calculate/
-keywords: "Aspose.Cells Cloud REST API, Excel conversion, merge spreadsheets, split documents, protect Excel files, search and replace in Excel, transform spreadsheets, Office Excel 2016, Office Excel 2019, Office Excel 365."
+keywords: "Aspose.Cells Cloud, Excel REST API, spreadsheet manipulation, Excel formulas, SUM COUNT AVERAGE, Excel calculation, PDF Excel conversion, CSV JSON processing, merge split Excel, protect Excel, search replace, Office 365, Excel automation."
 description: "This Developer Guide provides practical scenarios and tips for effectively utilizing Aspose.Cells for .NET features, enabling you to achieve specific Excel document appearances and implement various use cases efficiently."
 weight: 20
-kwords: Excel, Office Cloud, REST API, Spreadsheet Manipulation, PDF Conversion, CSV Processing, JSON Handling, Markdown Support, Developer Guide, Calculate Functionality
 ---
 
-- **[Sum, count, average—and more—by cell color in Excel by one run API.](https://docs.aspose.cloud/cells/aggregate-cells-by-color/)**
-- **[Spreadsheet Quick Calculate in Spreadsheet/Excel](https://docs.aspose.cloud/cells/math-calculate/)**
+Automatically perform calculations like sum, count, and average based on cell color in Excel—no manual filtering needed.
+
+- **[Calculate by Cell Color](https://docs.aspose.cloud/cells/aggregate-cells-by-color/)** – Get totals grouped by background or font color in one API call.
+- **[Spreadsheet Quick Calculate](https://docs.aspose.cloud/cells/math-calculate/)** – Instantly compute sum, count, average, min, max across any range.
