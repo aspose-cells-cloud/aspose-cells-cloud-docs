@@ -1,5 +1,5 @@
 ---
-title: "Aspose.Cells Cloud Web API - Sum, Count, Average Value, etc by color in Spreadsheet/Excel"
+title: "Aspose.Cells Cloud Web API - Sum and count by color in Excel"
 second_title: "Document"
 ArticleTitle: "Sum, Count, Average Value, etc by color in Spreadsheet/Excel"
 LinkTitle: "Aggregate Cells by Color"
@@ -8,10 +8,13 @@ url: /aggregate-cells-by-color/
 keywords: "Sum, Count, Average Value, Max Value, Min Value, Excel REST API, Spreadsheet Operations, Aspose.Cells, Excel Cloud API"
 description: "The Aspose.Cells Cloud Web API(Excel Cloud API) can perform data calculations, summation, and averaging, and can also find the maximum and minimum values in an Excel spreadsheet based on the fill or font color of the cells."
 weight: 100
-kwords: Sum, Count, Average Value, Max Value, Min Value, Excel REST API, Spreadsheet Operations, Aspose.Cells, Excel Cloud API
 ---
 
-The API can perform data calculations, summation, and averaging, and can also find the maximum and minimum values in an Excel spreadsheet based on the fill or font color of the cells.
+
+## **Overview**
+
+The API can perform data calculations, summation, averaging, and can also find the maximum and minimum values in an Excel spreadsheet based on the fill or font color of the cells.
+
 
 | Calculate Operation | Description |
 | :- | :- |
@@ -21,11 +24,12 @@ The API can perform data calculations, summation, and averaging, and can also fi
 | Min Value | Find the lowest value among cells with the same color. |
 | Average Value | Compute the mean value of cells with the same color. |
 
-## **Aggregating Cells by Color API**
+### **WEB API**
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/calculate/aggregate/color
 ```
+
 
 ### **Request Parameters:**
 
