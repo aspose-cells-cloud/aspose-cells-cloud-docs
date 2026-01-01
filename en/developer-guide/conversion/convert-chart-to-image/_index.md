@@ -1,14 +1,13 @@
 ---
-title: "Aspose.Cells Cloud Web API - Convert a Spreadsheet Chart to an Image"
+title: "Aspose.Cells Cloud Web API - Convert Excel Chart to Image - Free Online Tool"
 second_title: "Document"
-ArticleTitle: "Convert a Spreadsheet Chart to an Image"
+ArticleTitle: "How to Convert Spreadsheet Chart to Image: Step-by-Step Guide"
 linktitle: "Convert Chart to Image"
 type: docs
 url: /convert-chart-to-image/
 keywords: "convert chart to image, png, svg, tiff, jpg, bmp, convert a Spreadsheet chart to png,convert an Excel chart to svg, convert an Excel chart to jpg, convert a Spreadsheet chart to bmp, convert an Excel chart to tiff"
 description: "Convert a chart from a local spreadsheet/Excel file to an image file with the Aspose.Cells Cloud Web API."
 weight: 100
-kwords: "convert an Excel chart to image, png, svg, tiff, jpg, bmp, Spreadsheet"
 ---
 
 Convert a chart from a local spreadsheet/Excel file to an image format file. Supported **IMAGE FORMATS:** [PNG](https://docs.fileformat.com/image/png/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/)
@@ -49,7 +48,7 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/chart/image
 
 ### Error Codes
 
-- **400 Bad Request**: Invalid Apose.Cells Cloud API URI.
+- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.
 - **401 Unauthorized**: Invalid access token. Or invalid client id and secret.
 - **404 Not Found**: The spreadsheet file not accessible.
 - **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
@@ -60,8 +59,8 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/chart/image
 
 ## Why should you use the Convert Chart to Image API?
 
-- No need for cloud storage, reducing the burden on cloud resources.
-- Development can be quickly completed through the existing SDK.
+- You can convert charts without first uploading the workbook, which saves storage space and reduces costs.
+- Development can be quickly completed through the existing Aspose.Cells Cloud SDKs.
 
 ## How to Use the Convert Chart to Image API with SDKs?
 

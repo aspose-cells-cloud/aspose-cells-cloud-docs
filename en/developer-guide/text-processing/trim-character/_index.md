@@ -66,7 +66,7 @@ File
 
 ### Error Codes
 
-- **400 Bad Request**: Invalid Apose.Cells Cloud API URI.
+- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.
 - **401 Unauthorized**: Invalid access token. Or invalid client id and secret.
 - **404 Not Found**: The spreadsheet file not accessible.
 - **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
