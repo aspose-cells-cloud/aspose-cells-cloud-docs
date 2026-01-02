@@ -7,7 +7,7 @@ url: /excel-add-text/
 keywords: ""
 description: "Adds text content to a specified location within a spreadsheet. It requires an object that defines the text to be added and the insertion location. "
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Match all blank cells in an Excel worksheet
 ---
 
 # **Excel API : PostAddTextContent**

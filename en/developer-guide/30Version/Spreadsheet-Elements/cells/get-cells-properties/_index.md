@@ -3,7 +3,7 @@ title: "Get Cells Properties"
 type: docs
 url: /get-cells-properties/
 weight: 130
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Get Cells Properties
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Get Cells Properties
 ---
 
 This REST API indicates shows how to `get a specific cell` in an Excel file.

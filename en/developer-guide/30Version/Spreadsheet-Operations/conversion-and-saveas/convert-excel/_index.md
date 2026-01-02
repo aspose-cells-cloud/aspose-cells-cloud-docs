@@ -8,7 +8,7 @@ aliases: [/convert-excel-workbook-to-different-file-formats/,/convert/excel-to-d
 keywords: "Convert excel files to kinds of format files."
 description: "Aspose.Cells Cloud REST API support conversion excel files to kinds of format files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 10
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Convert Excel
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Convert Excel
 ---
 
 This REST API indicates to `convert` excel file to different format file.
@@ -19,7 +19,7 @@ The request is an HTTP request with multipart content (see [RFC 2046](http://to
 
 |Parameter Name|Type|Description|
 | :- | :- | :- |
-|format|string|The file format: csv, xls, html, mhtml, ods, pdf, xml, txt, tiff, xlsb, xlsm, xlsx, xltm, xltx, xps, png, jpg, gif, emf, bmp, md, Numbers, wmf, svg, and so on. |
+|format|string|The file format: CSV, xls, HTML, mhtml, ods, pdf, xml, txt, tiff, xlsb, xlsm, xlsx, xltm, xltx, xps, png, jpg, gif, emf, bmp, md, Numbers, wmf, svg, and so on. |
 |password|string| The password needed to open an Excel file. |
 |outPath|string| Path to save the result. If it's a single file, the `outPath` should encompass both the filename and extension. In the case of multiple files, the `outPath` should only include the folder. |
 |storageName|string| The storage name where the file is situated. |

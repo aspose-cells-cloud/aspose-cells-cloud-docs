@@ -8,7 +8,7 @@ aliases: [/add-an-empty-row-in-a-worksheet/]
 keywords: "Add an empty row on an Excel worksheet"
 description: "Aspose.Cells Cloud REST API support adding an empty row on an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 20
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Add an empty row on an Excel worksheet
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Add an empty row on an Excel worksheet
 ---
 
 This REST API indicates to add new worksheet row on an Excel worksheet.

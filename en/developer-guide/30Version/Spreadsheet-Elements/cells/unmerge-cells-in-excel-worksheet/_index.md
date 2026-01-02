@@ -3,7 +3,7 @@ title: "Unmerge Cells in Excel Worksheet"
 type: docs
 url: /unmerge-cells-in-excel-worksheet/
 weight: 120
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Unmerge Cells in Excel Worksheet
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Unmerge Cells in Excel Worksheet
 ---
 
 This REST API indicates `unmerge` cells in an Excel file.

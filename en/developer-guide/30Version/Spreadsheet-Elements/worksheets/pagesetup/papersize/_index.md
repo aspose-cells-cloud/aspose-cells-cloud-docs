@@ -7,7 +7,7 @@ url: /paper-size/
 keywords: "Paper Size."
 description: "Aspose.Cells Cloud REST API support setting paper size. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 20
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Paper Size
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Paper Size
 ---
 
 

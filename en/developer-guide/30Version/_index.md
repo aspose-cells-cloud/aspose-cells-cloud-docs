@@ -7,7 +7,7 @@ aliases: [/developer-guide/v3.0/,/developer-guide-v3.0/]
 keywords: "How to use Aspose.Cells Cloud REST APIs. Office Excel 2013,  Office Excel 2016,  Office Excel 2019,office Excel 365."
 description: "This Developer Guide describes practical scenarios and tips to help you use specific Aspose.Cells for .NET features, achieve a certain Excel document appearance, or make a use case possible."
 weight: 150
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Developer Guide
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Developer Guide
 ---
 
 ## Working with Aspose.Cells Cloud REST APIs
@@ -194,7 +194,7 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, De
         <p>Import Data</p>
         <ul>
             <li><a href="/cells/import/">Imports data into Excel files.</a></li>
-            <li><a href="/cells/import-csv-data-into-worksheet/">Imports CSV data into an Excel worksheet.</a></li>
+            <li><a href="/cells/import-CSV-data-into-worksheet/">Imports CSV data into an Excel worksheet.</a></li>
             <li><a href="/cells/import/picture/">Imports picture into an Excel worksheet.</a></li>
             <li><a href="/cells/import/double-array/">Imports double array into an Excel worksheet.</a></li>
             <li><a href="/cells/import/integer-array/">Imports integer array into an Excel worksheet.</a></li>

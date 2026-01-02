@@ -8,7 +8,7 @@ aliases: [/add-an-icon-filter/,/autofilter/add-an-icon-filter/]
 keywords: "Adds an icon filter on an Excel worksheet."
 description: "The Aspose.Cells Cloud API supports adding an icon filter on an Excel worksheet.SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 65
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Add an icon filter in an Excel worksheet
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Add an icon filter in an Excel worksheet
 ---
 
 This REST API indicates to adds an `icon filter` on an Excel Worksheet.

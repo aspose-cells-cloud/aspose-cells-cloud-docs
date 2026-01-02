@@ -8,7 +8,7 @@ aliases: [/import-double-array-into-worksheet/,/import-data/double-array/,/impor
 keywords: "Import double array data into Excel files."
 description: "Aspose.Cells Cloud REST API support importing double array data into Excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 20
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Import Double Array into Excel Worksheet
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Import Double Array into Excel Worksheet
 ---
 
 This REST API `import double array data` into Excel work sheet.
@@ -36,7 +36,7 @@ The important parameters are described in the following table:
 | Data | Double[] |  |
 | DestinationWorksheet | string | destination work sheet name. |
 | IsInsert | string | true/false. |
-| ImportDataType | string | IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData.|
+| ImportDataType | string | IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/csvData.|
 | Source | FileSource | Indicates data file position when the BatchData parameter is null. |
 
 **Example**

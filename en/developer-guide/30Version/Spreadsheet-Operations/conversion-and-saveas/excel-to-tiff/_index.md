@@ -8,7 +8,7 @@ aliases: [/convert-excel-file-to-tiff-in-cloud/,/convert/excel-to-tiff/]
 keywords: "Convert excel files to tiff files."
 description: "Aspose.Cells Cloud REST API support conversion excel files to tiff files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 90
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Excel to TIFF
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Excel to TIFF
 ---
 
 This REST API `saveas` excel file to TIFF.

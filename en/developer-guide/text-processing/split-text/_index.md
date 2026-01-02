@@ -7,7 +7,7 @@ url: /split-text/
 keywords: "Split Text"
 description: "Indicates performing text segmentation on the specified area according to the segmentation method, and outputting to the designated interval. "
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Match all blank cells in an Excel worksheet
 ---
 
 Indicates performing text segmentation on the specified area according to the segmentation method, and outputting to the designated interval.

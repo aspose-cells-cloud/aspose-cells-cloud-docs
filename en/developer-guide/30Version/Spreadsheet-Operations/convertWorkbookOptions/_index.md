@@ -7,7 +7,7 @@ url: /convert-workbook-options/
 keywords: "ConvertWorkbookOptions."
 description: "Aspose.Cells Cloud REST API support get excel files to kinds of format files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 79
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Convert Workbook Options
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Convert Workbook Options
 ---
 
 
@@ -20,7 +20,7 @@ Name | Type | Description | Notes
 **[FileInfo](/cells/file-info/)** | **Object** |  File inforamtion description. include of filename, file size, and file content(base64 string). |
 **[PageSetup](/cells/page-setup/)** | **Object** | Page setup properties. |
 **SaveOptions** | **Object** | Save Options:  DbfSaveOptions, DifSaveOptions, DocxSaveOptions, HtmlSaveOptions, XlsSaveOptions, XlsxSaveOptions, XpsSaveOptions, PngSaveOptions, JpgSaveOptions, GifSaveOptions, EmfSaveOptions, BmpSaveOptions, MdSaveOptions, NumbersSaveOptions, WmfSaveOptions, SvgSaveOptions, TxtSaveOptions, TifSaveOptions, XlsbSaveOptions |
-**ConvertFormat** | **string** | The file format: csv, xls, html, mhtml, ods, pdf, xml, txt, tiff, xlsb, xlsm, xlsx, xltm, xltx, xps, png, jpg, gif, emf, bmp, md, Numbers, wmf, svg, and so on.  |
+**ConvertFormat** | **string** | The file format: CSV, xls, HTML, mhtml, ods, pdf, xml, txt, tiff, xlsb, xlsm, xlsx, xltm, xltx, xps, png, jpg, gif, emf, bmp, md, Numbers, wmf, svg, and so on.  |
 **CheckExcelRestriction** | **boolean** | Gets and sets the type of auto fitting wrapped text. |
 
 ## **fileSource Properties**
@@ -273,7 +273,7 @@ Name | Type | Description | Notes
 |UpdateSmartArt|Boolean|true|false |  ||
 |EncryptDocumentProperties|Boolean|true|false |  ||
 
-## **PdfSaveOptions Properties**
+## **PDFSaveOptions Properties**
 
 | Property Name | Property Type | Nullable |  ReadOnly | DefaultValue | Description |
 | :- | :- | :- |:- |  :- | :- |
@@ -283,7 +283,7 @@ Name | Type | Description | Notes
 |CustomPropertiesExport|String|true|false |  ||
 |OptimizationType|String|true|false |  ||
 |Producer|String|true|false |  ||
-|PdfCompression|String|true|false |  ||
+|PDFCompression|String|true|false |  ||
 |FontEncoding|String|true|false |  ||
 |Watermark|Class|true|false |  ||
 |CalculateFormula|Boolean|true|false |  ||

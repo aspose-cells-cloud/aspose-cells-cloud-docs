@@ -6,7 +6,7 @@ aliases: [/add-a-condition-for-format-condition/]
 keywords: "REST API, spreadsheets, excel, add conditional"
 description: "Cells.Cloud API for Excel operate: add conditional."
 weight: 40
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Add Condition
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Add Condition
 ---
 
 This REST API indicates Add a condition for format condition.

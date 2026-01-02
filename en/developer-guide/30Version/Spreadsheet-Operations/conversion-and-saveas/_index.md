@@ -8,7 +8,7 @@ aliases: [/convert-excel/,/convert/]
 keywords: "File conversion, Format conversion, PDF export, Save file, Save Excel files"
 description: "Aspose.Cells Cloud REST API support conversion excel files to kinds of format files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 30
-kwords: File conversion, Format conversion, PDF export, Save file, Save Excel files, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Convert Excel to kinds of format
+kwords: File conversion, Format conversion, PDF export, Save file, Save Excel files, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Convert Excel to kinds of format
 ---
 
 If you have originally created an Excel file in a certain format, like [XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), and [CSV](https://docs.fileformat.com/spreadsheet/csv/), you may sometimes find it useful to convert the excel file to another format so you can take advantage of special features provided by it. For example, you may want to convert an excel file to [PDF](https://docs.fileformat.com/pdf/) to protect your contents from any unauthorized modifications and make it easy to read and share simultaneously.
@@ -29,10 +29,10 @@ The following articles explain each API in detail and contain cURL and SDK Examp
 
 - [Convert an Excel file to different format file.](/cells/convert-an-excel-file-to-different-formats)
 - [Save an Excel file as a different format file.](/cells/save-an-excel-file-as-other-formats-files)
-- [Convert an Excel file to a Csv file.](/cells/convert-excel-file-to-csv-file)
+- [Convert an Excel file to a CSV file.](/cells/convert-excel-file-to-CSV-file)
 - [Convert an Excel file to a Docx file.](/cells/convert-excel-file-to-docx-file)
-- [Convert an Excel file to a Html file.](/cells/convert-excel-file-to-html-file)
-- [Convert an Excel file to a Json file.](/cells/convert-excel-file-to-json-file)
+- [Convert an Excel file to a HTML file.](/cells/convert-excel-file-to-html-file)
+- [Convert an Excel file to a JSON file.](/cells/convert-excel-file-to-json-file)
 - [Convert an Excel file to a Markdown file.](/cells/convert-excel-file-to-markdown-file)
 - [Convert an Excel file to a PDF file.](/cells/convert-excel-file-to-pdf-file)
 - [Convert an Excel file to a Png file.](/cells/convert-excel-file-to-png-file)

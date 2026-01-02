@@ -7,7 +7,7 @@ url: /convert-excel-file-to-sql-file/
 keywords: "Convert excel files to sql files."
 description: "Aspose.Cells Cloud REST API support conversion excel files to sql files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Excel to SQL
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Excel to SQL
 ---
 
 This REST API indicates to `convert` a spreadsheet file to a sql format file.

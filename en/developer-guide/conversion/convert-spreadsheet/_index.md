@@ -66,7 +66,7 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/spreadsheet
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 | :- | :- | :- |:- |
 |Spreadsheet|File|FormData|Upload the spreadsheet file to be converted.|
-|format|String|Query|(Required) The desired output format (e.g., "Xlsx", "Pdf", "Csv").|
+|format|String|Query|(Required) The desired output format (e.g., "Xlsx", "PDF", "CSV").|
 |outPath|String|Query|(Optional) The folder path where the converted workbook will be stored. The default is null.|
 |outStorageName|String|Query|Specify an output file storage name.|
 |fontsLocation|String|Query|Use custom fonts for the spreadsheet.|

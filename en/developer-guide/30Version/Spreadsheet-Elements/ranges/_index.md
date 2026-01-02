@@ -8,7 +8,7 @@ aliases: [/working-with-ranges/]
 keywords: "Working with ranges on an Excel file"
 description: "How to work with ranges on an Excel file using Aspose.Cells Cloud REST API. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Working with ranges on an Excel file
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Working with ranges on an Excel file
 ---
 
 Represents a cell, a row, a column, a selection of cells containing one or more contiguous blocks of cells, or a 3D range.

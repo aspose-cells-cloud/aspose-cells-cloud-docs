@@ -6,7 +6,7 @@ url: /batch/protect
 keywords: "Batch protection of multiple Excel files."
 description: "Aspose.Cells Cloud API supports batch protection of multiple excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Batch Protect
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Batch Protect
 ---
 
 This REST API indicates to `batch protection` of eligible files.

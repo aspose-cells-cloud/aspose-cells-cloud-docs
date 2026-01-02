@@ -1,7 +1,7 @@
 ---
-title: "Aspose.Cells Cloud Web API - Convert a Spreadsheet Table data to a Html file"
+title: "Aspose.Cells Cloud Web API - Convert a Spreadsheet Table data to a HTML file"
 second_title: "Document"
-ArticleTitle: "Convert a Spreadsheet Table data to a Html file"
+ArticleTitle: "Convert a Spreadsheet Table data to a HTML file"
 linktitle: "Convert Table to HTML"
 type: docs
 url: /convert-table-to-html/
@@ -11,9 +11,9 @@ weight: 100
 kwords: "Excel, Office Cloud, REST API, Spreadsheet, HTML, PDF, CSV, JSON, Markdown, Match blank cells in Excel"
 ---
 
-Convert a local spreadsheet/Excel table data to a html file.
+Convert a local spreadsheet/Excel table data to a HTML file.
 
-## **Convert Table to Html API**
+## **Convert Table to HTML API**
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/convert/table/html
@@ -53,20 +53,20 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/table/html
 - **404 Not Found**: The spreadsheet file not accessible.
 - **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
 
-## Why should you use the Convert Table to Html API?
+## Why should you use the Convert Table to HTML API?
 
 - No need for cloud storage, reducing the burden on cloud resources.
 - Development can be quickly completed through the existing SDK.
 
-## How to Use the Convert Table to Html API with SDKs?
+## How to Use the Convert Table to HTML API with SDKs?
 
-### Convert Table to Html API Specification
+### Convert Table to HTML API Specification
 
-The [Convert Table to Html API Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertTableToHtml) outlines a publicly accessible programming interface, allowing you to perform REST interactions directly from your web browser.
+The [Convert Table to HTML API Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertTableToHtml) outlines a publicly accessible programming interface, allowing you to perform REST interactions directly from your web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the fastest way to develop, as it abstracts away the low-level details, allowing you to convert a spreadsheet table data to a html file with short code.
+Using the SDK is the fastest way to develop, as it abstracts away the low-level details, allowing you to convert a spreadsheet table data to a HTML file with short code.
 Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples illustrate how to interact with Aspose.Cells web services using various SDKs:

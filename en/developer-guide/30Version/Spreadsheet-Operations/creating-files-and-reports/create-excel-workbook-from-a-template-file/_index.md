@@ -8,7 +8,7 @@ aliases: [/create-excel-workbook-from-a-template-file/,/workbook/new-from-a-temp
 keywords: "How to create an Excel workbook with a smart marker template."
 description: "Aspose.Cells Cloud REST API how to create an Excel workbook from a smart marker template. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 30
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, How to create an Excel workbook with a template file
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, How to create an Excel workbook with a template file
 ---
 
 This REST API indicates to create `workbook` from a `template file`.

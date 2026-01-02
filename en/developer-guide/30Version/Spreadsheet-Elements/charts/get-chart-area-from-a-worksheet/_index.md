@@ -4,7 +4,7 @@ type: docs
 url: /charts/area/get/
 aliases: [/get-chart-area-from-a-worksheet/]
 weight: 60
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Get Chart Area from a Worksheet
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Get Chart Area from a Worksheet
 ---
 
 This REST API indicates get chart area info.

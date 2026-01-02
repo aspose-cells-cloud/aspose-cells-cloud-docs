@@ -8,7 +8,7 @@ aliases: [/working-with-shapes/,/working-with-images/]
 keywords: "Working with shape on an Excel worksheet"
 description: "How to work with shape on an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Working with shape on an Excel worksheet
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Working with shape on an Excel worksheet
 ---
 
 ## Working with shapes on an Excel file

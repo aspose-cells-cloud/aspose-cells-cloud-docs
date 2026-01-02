@@ -1,19 +1,28 @@
 ---
-title: "Aspose.Cells Cloud Web API - Convert a Spreadsheet Range data to an Image"
+title: "Aspose.Cells Cloud Web API - Convert Local Excel Range data to an Image file - Free Online Tool"
 second_title: "Document"
-ArticleTitle: "Convert a Spreadsheet Range data to an Image"
+ArticleTitle: "How to Convert the Local Spreadsheet data of Range to an Image file: Step-by-Step Guide"
 linktitle: "Convert Range to Image"
 type: docs
 url: /convert-range-to-image/
-keywords: "Aspose.Cells Cloud Web API, Convert Range to Image, Spreadsheet to Image, Cloud Conversion, Image Formats"
-description: "Convert a range data from a local spreadsheet/Excel file to an image file."
+keywords: "Aspose.Cells Cloud Web API, Convert Range to Image, Spreadsheet to Image, Cloud Conversion, Image Formats, Office Cloud, REST API, Spreadsheet, Image Conversion, PNG, SVG, TIFF,"
+description: "Aspose.Cells Cloud Web API: Export range from Excel files on local drive to Image format using cloud-based REST API. Support to load XLSX, XLS formats. Support to export PNG, JPG, SVG, TIFF, and so on."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, Image Conversion, PNG, SVG, TIFF, JSON, Markdown
 ---
 
-Convert a range data from a local spreadsheet/Excel file to an image file. Supported **IMAGE FORMATS:** [PNG](https://docs.fileformat.com/image/png/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/)
+Export data of range  from a locak Excel Files to an [Image](https://docs.fileformat.com/image/) file using Cloud API. 
+
+**Supported IMAGE FORMATS:** 
+
+- [PNG](https://docs.fileformat.com/image/png/)
+- [SVG](https://docs.fileformat.com/page-description-language/svg/)
+- [TIFF](https://docs.fileformat.com/image/tiff/)
+- [JPEG](https://docs.fileformat.com/image/jpeg/)
+- [BMP](https://docs.fileformat.com/image/bmp/)
 
 ## **Convert Range to Image API**
+
+### API Endpoint
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/convert/range/image
@@ -22,7 +31,7 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/range/image
 ### **Request Parameters:**
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
-| :- | :- | :- |:- |
+| :- | :- | :- | :- |
 |Spreadsheet|File|FormData|Upload the spreadsheet file for conversion.|
 |worksheet|String|Query|The worksheet name of Spreadsheet/Excel|
 |range|String|Query|Define the cell area to convert (e.g., A1:C10).|
@@ -31,7 +40,7 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/range/image
 |outPath|String|Query|(Optional) The folder path where the workbook is stored; default is null.|
 |outStorageName|String|Query|Name of the output file storage.|
 |fontsLocation|String|Query|Custom fonts to use for the conversion.|
-|regoin|String|Query|Define the spreadsheet region setting.|
+|region|String|Query|Define the spreadsheet region setting.|
 |password|String|Query|Password for opening the spreadsheet file if protected.|
 
 ### **Response**
@@ -68,7 +77,7 @@ The [Convert Range to Image API Specification](https://reference.aspose.cloud/ce
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the fastest way to develop, as it abstracts away the low-level details, allowing you to convert a range data to an image with short code.
+Using the SDK is the fastest way to develop, as it abstracts away the low-level details, allowing you to convert a data of range  to an image with short code.
 Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples illustrate how to call Aspose.Cells web services using various SDKs:

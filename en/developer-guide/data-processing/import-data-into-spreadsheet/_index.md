@@ -1,7 +1,7 @@
 ---
-title: "Aspose.Cells Cloud Web API - Import Csv, JSON, or XML Data into a Spreadsheet file."
+title: "Aspose.Cells Cloud Web API - Import CSV, JSON, or XML Data into a Spreadsheet file."
 second_title: "Document"
-ArticleTitle: "Import Csv, JSON, or XML Data into a Spreadsheet file."
+ArticleTitle: "Import CSV, JSON, or XML Data into a Spreadsheet file."
 linktitle: "Import Data into Spreadsheet"
 type: docs
 url: /import-data-into-spreadsheet/
@@ -33,7 +33,7 @@ PUT http://api.aspose.cloud/v4.0/cells/import/data
 | outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
 | outStorageName | String | Query | Specify the output file storage name. |
 | fontsLocation | String | Query | Define custom fonts to be used. |
-| regoin | String | Query | Set the spreadsheet region configuration. |
+| region | String | Query | Set the spreadsheet region configuration. |
 | password | String | Query | The password for opening the spreadsheet file. |
 
 ### **Response**

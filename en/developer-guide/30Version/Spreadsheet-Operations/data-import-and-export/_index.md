@@ -32,7 +32,7 @@ The following APIs to import data into an Excel file or multiple Excel files is 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description|
 | :- | :- | :- |:- |
 | file | file | formData | File to upload |
-| ImportOption | ImportOptions | HTTPBody |  IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData/Picture |
+| ImportOption | ImportOptions | HTTPBody |  IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/csvData/Picture |
 
 #### With using storage
 
@@ -311,7 +311,7 @@ The following articles explain each API how to call in detail and contain cURL a
 - [How to import data into Excel files without using storage.](/cells/import/without-using-storage)
 - [How to import data into Excel files with using storage.](/cells/import/with-using-storage)
 - [How to import Batch Data into Excel Worksheet](/cells/import-batch-data-into-excel-worksheet/)
-- [How to import CSV Data into Excel Worksheet](/cells/import-csv-data-into-excel-worksheet/)
+- [How to import CSV Data into Excel Worksheet](/cells/import-CSV-data-into-excel-worksheet/)
 - [How to import picture into Excel Worksheet](/cells/import-picture-into-excel-worksheet/)
 - [How to import Integer Array into Excel Worksheet](/cells/import-integer-array-into-excel-worksheet/)
 - [How to import Double Array into Excel Worksheet](/cells/import-double-array-into-excel-worksheet/)

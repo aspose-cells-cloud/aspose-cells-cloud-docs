@@ -8,7 +8,7 @@ aliases: [/split-excel-workbooks/,/workbook/split/]
 keywords: "Split multi Excel files."
 description: "Aspose.Cells Cloud REST API support spliting multi Excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 32
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Split
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Split
 ---
 
 This REST Api indicates to `split` multi Excel files.

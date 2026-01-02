@@ -4,7 +4,7 @@ type: docs
 url: /charts/legend/update/
 aliases: [/update-chart-legend-in-a-worksheet/]
 weight: 160
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Update Chart Legend in a Worksheet
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Update Chart Legend in a Worksheet
 ---
 
 This REST API indicates update chart legend

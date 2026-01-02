@@ -8,7 +8,7 @@ url: /swap-range/
 keywords: "Aspose.Cells Cloud Web API, Swap Ranges, Office Cloud, REST"
 description: "The Swap Ranges for Excel API provides a powerful tool to interchange any two columns, rows, ranges, or individual cells within an Excel file. This API allows users to efficiently rearrange their tables, ensuring that the original data formatting is preserved and all existing formulas continue to function correctly. By leveraging this API, users can streamline their data manipulation tasks and maintain the integrity of their spreadsheets."
 weight: 100
-kwords: Excel, Office Cloud, REST, PDF, CSV, Json, Markdown
+kwords: Excel, Office Cloud, REST, PDF, CSV, JSON, Markdown
 ---
 
 Exchange data between any two columns, rows, ranges, or individual cells in an Excel file.
@@ -56,11 +56,11 @@ PUT http://api.aspose.cloud/v4.0/cells/swap/range
 
 ## Where should we use the Swap Range API?
 
-When you need to swap range data in a spreadsheet, you can use this API.
+When you need to swap data of range  in a spreadsheet, you can use this API.
 
 ## Why should you use the Swap Range API?
 
-- Quickly swap range data in an Excel spreadsheet.
+- Quickly swap data of range  in an Excel spreadsheet.
 - Development can be quickly completed through the existing SDK.
 
 ## How to Use the Swap Range API with SDKs

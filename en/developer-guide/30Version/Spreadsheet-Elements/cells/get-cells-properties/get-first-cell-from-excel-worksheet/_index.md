@@ -3,7 +3,7 @@ title: "Get First Cell from Excel Worksheet"
 type: docs
 url: /get-first-cell-from-excel-worksheet/
 weight: 20
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Get First Cell from Excel Worksheet
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Get First Cell from Excel Worksheet
 ---
 
 

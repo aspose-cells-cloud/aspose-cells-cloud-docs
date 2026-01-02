@@ -8,7 +8,7 @@ aliases: [/clearobjects/]
 keywords: "Clear internal objects of Excel files."
 description: "Aspose.Cells Cloud REST API support clearing internal objects of Excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 39
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Clear
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Clear
 ---
 
 This REST API indicates to `clear` excel object in an Excel files.

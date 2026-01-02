@@ -4,13 +4,13 @@ second_title: "Document"
 linktitle: "Excel to PNG"
 type: docs
 url:  convert-excel-file-to-png-file/
-keywords: "Convert excel files to png files."
-description: "Aspose.Cells Cloud REST API support conversion excel files to csv files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "Convert excel files to PNG files."
+description: "Aspose.Cells Cloud REST API support conversion excel files to CSV files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 90
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Excel to CSV
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Excel to CSV
 ---
 
-This REST API indicates to `convert` a spreadsheet file to a png format file.
+This REST API indicates to `convert` a spreadsheet file to a PNG format file.
 
 **Query Parameter**
 
@@ -34,7 +34,7 @@ This REST API indicates to `convert` a spreadsheet file to a png format file.
 
 |**API**|**Type**|**Description**|**Swagger Link**|
 | :- | :- | :- | :- |
-|/cells/convert/png|POST|Convert a spreadsheet to a png file.|[PostConvertWorkbookToPNG](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToPNG)|
+|/cells/convert/png|POST|Convert a spreadsheet to a PNG file.|[PostConvertWorkbookToPNG](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToPNG)|
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToPNG) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

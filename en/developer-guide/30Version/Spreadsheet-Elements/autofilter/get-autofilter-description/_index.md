@@ -8,7 +8,7 @@ aliases: [/get-autofilter-description/]
 keywords: "Gets auto filter description from an Excel worksheet."
 description: "The Aspose.Cells Cloud API supports gets auto filter description from an Excel worksheet.SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 50
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Get an auto filter in an Excel worksheet
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Get an auto filter in an Excel worksheet
 ---
 
 

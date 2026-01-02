@@ -7,7 +7,7 @@ url: /remove-duplicate-substrings/
 keywords: ""
 description: "Perform operations or delete any custom characters, character sets, and substrings within a selected range for a specific position. "
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Match all blank cells in an Excel worksheet
 ---
 
 Perform operations or delete any custom characters, character sets, and substrings within a selected range for a specific position.

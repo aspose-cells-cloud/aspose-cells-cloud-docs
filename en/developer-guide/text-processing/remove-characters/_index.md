@@ -7,7 +7,7 @@ url: /remove-characters/
 keywords: ""
 description: "Perform operations or delete any custom characters, character sets, and substrings within a selected range for a specific position. "
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Match all blank cells in an Excel worksheet
 ---
 
 Perform operations or delete any custom characters, character sets, and substrings within a selected range for a specific position.
@@ -72,7 +72,7 @@ File
 
 ## Where should we use the Remove Characters API?
 
-- **Data Import/Export**: Clean imported CSV/data by removing invisible characters and formatting errors
+- **Data Import/Export**: Clean imported csv/data by removing invisible characters and formatting errors
 - **Database Management**: Standardize product codes, IDs, and names by removing unwanted symbols/punctuation
 - **Financial Analysis**: Extract pure numbers by stripping currency symbols and text characters
 - **Text Processing**: Remove line breaks, tabs for clean text analysis and reporting

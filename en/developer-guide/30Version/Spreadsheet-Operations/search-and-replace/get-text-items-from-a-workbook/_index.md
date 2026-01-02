@@ -8,7 +8,7 @@ aliases: [/get-text-items-from-a-workbook/]
 weight: 10
 keywords: "Get text from Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) worksheet."
 description: "Aspose.Cells Cloud REST API support getting text from Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Get text items from an Excel workbook
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Get text items from an Excel workbook
 ---
 
 This REST API indicates to `read` workbook's `text items` in Excel workbook.

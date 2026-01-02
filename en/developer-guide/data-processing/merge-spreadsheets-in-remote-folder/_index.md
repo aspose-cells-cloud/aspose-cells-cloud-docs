@@ -6,12 +6,12 @@ linktitle: "Merge Spreadsheets in Remote Folder"
 type: docs
 url: /merge-spreadsheets-in-remote-folder/
 keywords: "Merge spreadsheets, cloud storage, Excel API, remote processing, spreadsheet formats, REST API"
-description: "Combine the spreadsheet files stored in the cloud storage into one file, and the file format supports 30 formats for output, such as PDF,Csv, Json and other common formats."
+description: "Combine the spreadsheet files stored in the cloud storage into one file, and the file format supports 30 formats for output, such as PDF,CSV, JSON and other common formats."
 weight: 100
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Merge spreadsheets, Cloud processing, Remote file handling
 ---
 
-Merge matching spreadsheet files into files in remote folder, the output file format supports 30+ formats such as PDF,Csv,Json and other common formats.
+Merge matching spreadsheet files into files in remote folder, the output file format supports 30+ formats such as PDF,CSV,Json and other common formats.
 
 
 ## **Merge Spreadsheets in Remote Folder API**

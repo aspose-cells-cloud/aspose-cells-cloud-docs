@@ -7,7 +7,7 @@ url: /convert-excel-file-to-markdown-file/
 keywords: "Convert excel files to markdown files."
 description: "Aspose.Cells Cloud REST API support conversion excel files to markdown files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Excel to Markdown
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Excel to Markdown
 ---
 
 This REST API indicates to `convert` a spreadsheet file to a markdown format file.

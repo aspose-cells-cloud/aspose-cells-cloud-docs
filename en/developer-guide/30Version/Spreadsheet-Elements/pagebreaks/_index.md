@@ -8,7 +8,7 @@ aliases: [/working-with-pagebreaks/]
 keywords: "Get, add, delete, and update page break in an Excel worksheet."
 description: "Aspose.Cells Cloud REST API support getting, adding, deleting, and updating page break in an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, PageBreaks
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, PageBreaks
 ---
 
 ## How to working with page breaks in an Excel worksheet

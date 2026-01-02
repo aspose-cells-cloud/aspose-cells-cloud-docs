@@ -8,7 +8,7 @@ aliases: [/unprotect-excel-workbooks/, /workbook/unprotect/]
 keywords: "REST API, spreadsheets, excel, merge"
 description: "Cells.Cloud API for Excel operate: protect an Excel workbook."
 weight: 60
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Unprotect an Excel workbook
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Unprotect an Excel workbook
 ---
 
 This REST API un-protect an Excel `workbook`.

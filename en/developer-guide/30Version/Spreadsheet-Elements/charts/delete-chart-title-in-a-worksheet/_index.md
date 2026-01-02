@@ -4,7 +4,7 @@ type: docs
 url: /charts/delete-chart-title/
 aliases: [/delete-chart-title-in-a-worksheet/]
 weight: 150
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Delete Chart Title in a Worksheet
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Delete Chart Title in a Worksheet
 ---
 
 This REST API indicates hide title in chart

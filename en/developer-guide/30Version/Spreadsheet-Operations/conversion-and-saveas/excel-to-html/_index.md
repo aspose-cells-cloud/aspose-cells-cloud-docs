@@ -5,13 +5,13 @@ linktitle: "Excel to HTML"
 type: docs
 url: /convert-excel-file-to-html-file/
 aliases: [/convert-excel-file-to-html-in-cloud/,/convert/excel-to-html/]
-keywords: "Convert excel files to html files."
-description: "Aspose.Cells Cloud REST API support conversion excel files to html files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "Convert excel files to HTML files."
+description: "Aspose.Cells Cloud REST API support conversion excel files to HTML files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Excel to HTML
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Excel to HTML
 ---
 
-This REST API indicates to `convert` a spreadsheet file to a html format file.
+This REST API indicates to `convert` a spreadsheet file to a HTML format file.
 
 **Query Parameter**
 

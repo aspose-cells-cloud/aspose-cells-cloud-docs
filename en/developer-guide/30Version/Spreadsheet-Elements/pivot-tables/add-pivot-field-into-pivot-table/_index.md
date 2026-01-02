@@ -8,7 +8,7 @@ aliases: [/add-a-pivot-table-in-a-worksheet/]
 keywords: "Add a pivot field in a pivot table."
 description: "Aspose.Cells Cloud REST API support adding a pivot field in a pivot table. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 40
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Add a pivot field into pivot table
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Add a pivot field into pivot table
 ---
 
 This REST API indicates to `add` pivot field into into pivot table

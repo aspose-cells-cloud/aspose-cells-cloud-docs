@@ -8,7 +8,7 @@ url: /check-cloud-service-health/
 keywords: "cloud service health, Aspose.Cells, API status check, service monitoring, Excel API, REST API, health metrics, system availability"
 description: "Monitor the health status of Aspose.Cells Cloud Service with real-time metrics and operational insights."
 weight: 100
-kwords: "Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, health status, service availability, performance metrics"
+kwords: "Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, health status, service availability, performance metrics"
 ---
 
 Check Aspose.Cells Cloud Services Health Status.

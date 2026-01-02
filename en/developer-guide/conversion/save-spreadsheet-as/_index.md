@@ -24,7 +24,7 @@ PUT http://api.aspose.cloud/v4.0/cells/{name}/saveas
 | Parameter Name | Type | Path/Query String/HTTP Body | Description |
 | :- | :- | :- |:- |
 | name | String | Path | (Required) The name of the workbook file to be converted. |
-| format | String | Query | (Required) The desired output format (e.g., "Xlsx", "Pdf", "Csv"). |
+| format | String | Query | (Required) The desired output format (e.g., "Xlsx", "PDF", "CSV"). |
 | saveOptionsData | Class | Body | (Optional) Save options data. The default is null. |
 | folder | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
 | storageName | String | Query | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted. |
@@ -69,7 +69,7 @@ PUT http://api.aspose.cloud/v4.0/cells/{name}/saveas
 - You can convert cloud files to different formats anytime and anywhere.
 - Development can be quickly completed through the existing SDK.
 
-## How to Use the Convert Table to Json API with SDKs?
+## How to Use the Convert Table to JSON API with SDKs?
 
 ### Save Spreadsheet as API Specification
 

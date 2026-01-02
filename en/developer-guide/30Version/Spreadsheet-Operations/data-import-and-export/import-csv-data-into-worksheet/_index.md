@@ -1,18 +1,18 @@
 ---
 title: "Import CSV Data into Excel Worksheet"
 second_title: "Document"
-linktitle: "Import csv data"
+linktitle: "Import CSV data"
 type: docs
-url: /import-csv-data-into-excel/
-aliases: [/import-csv-data-into-worksheet/,/import-data/csv-data/,/import/csv-data/]
-keywords: "Import csv data into Excel files."
-description: "Aspose.Cells Cloud REST API support importing csv data into Excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+url: /import-CSV-data-into-excel/
+aliases: [/import-CSV-data-into-worksheet/,/import-data/csv-data/,/import/csv-data/]
+keywords: "Import CSV data into Excel files."
+description: "Aspose.Cells Cloud REST API support importing CSV data into Excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 19
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Import CSV Data into Excel Worksheet
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Import CSV Data into Excel Worksheet
 ---
 
 
-This REST API `import csv data` into Excel work sheet.
+This REST API `import CSV data` into Excel work sheet.
 
 The request is an HTTP request with multipart content (see [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). The first part of the multipart content contains the ImportCSVDataOption data and the second contains a data file.
 
@@ -58,7 +58,7 @@ The important parameters are described in the following table:
      <ConvertNumericData>true</ConvertNumericData>
      <FirstRow>1</FirstRow>
      <FirstColumn>2</FirstColumn>
-     <SourceFile>TestImportDataCSV.csv</SourceFile>
+     <SourceFile>TestImportDataCSV.CSV</SourceFile>
      <CustomParsers>
          <CustomParserConfig>
              <ColumnIndex>0</ColumnIndex>

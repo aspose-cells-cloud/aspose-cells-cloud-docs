@@ -1,7 +1,7 @@
 ---
-title: "Aspose.Cells Cloud Web API - Convert a Spreadsheet Table data to a Json file."
+title: "Aspose.Cells Cloud Web API - Convert a Spreadsheet Table data to a JSON file."
 second_title: "Document"
-ArticleTitle: "Convert a Spreadsheet Table data to a Json file."
+ArticleTitle: "Convert a Spreadsheet Table data to a JSON file."
 linktitle: "Convert Table to JSON"
 type: docs
 url: /convert-table-to-json/
@@ -13,7 +13,7 @@ kwords: "Excel API, JSON conversion, cloud file conversion, spreadsheet, REST AP
 
 Convert a local spreadsheet/Excel table to a json file with the Aspose.Cells Cloud Web API.
 
-## **Convert Table to Json API**
+## **Convert Table to JSON API**
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/convert/table/json
@@ -53,16 +53,16 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/table/json
 - **404 Not Found**: The spreadsheet file not accessible.
 - **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
 
-## Why should you use the Convert Table to Json API?
+## Why should you use the Convert Table to JSON API?
 
 - No need for cloud storage, reducing the burden on cloud resources.
 - Development can be quickly completed through the existing SDK.
 
-## How to Use the Convert Table to Json API with SDKs?
+## How to Use the Convert Table to JSON API with SDKs?
 
-### Convert Table to Json API Specification
+### Convert Table to JSON API Specification
 
-The [Convert Table to Json API Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertTableToJson) provides a publicly accessible programming interface, enabling REST interactions directly from a web browser.
+The [Convert Table to JSON API Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertTableToJson) provides a publicly accessible programming interface, enabling REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

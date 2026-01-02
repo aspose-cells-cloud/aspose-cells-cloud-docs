@@ -1,8 +1,8 @@
 ---
-title: "Aspose.Cells Cloud Web API - Convert Spreadsheet Worksheet to Pdf"
+title: "Aspose.Cells Cloud Web API - Convert Spreadsheet Worksheet to PDF"
 second_title: "Document"
-ArticleTitle: "Convert Spreadsheet Worksheet to Pdf"
-linktitle: "Convert Worksheet to Pdf"
+ArticleTitle: "Convert Spreadsheet Worksheet to PDF"
+linktitle: "Convert Worksheet to PDF"
 type: docs
 url: /convert-worksheet-to-pdf/
 keywords: "worksheet to pdf, Excel PDF conversion, REST API, cloud-based conversion, spreadsheet to PDF"
@@ -13,7 +13,7 @@ kwords: "Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, c
 
 Convert a local spreadsheet/Excel worksheet to a pdf file with the Aspose.Cells Cloud Web API.
 
-## **Convert Worksheet to Pdf API**
+## **Convert Worksheet to PDF API**
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/convert/worksheet/pdf
@@ -53,16 +53,16 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/worksheet/pdf
 - **404 Not Found**: The spreadsheet file not accessible.
 - **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
 
-## Why should you use the Convert Table to Pdf API?
+## Why should you use the Convert Table to PDF API?
 
 - No need for cloud storage, reducing the burden on cloud resources.
 - Development can be quickly completed through the existing SDK.
 
-## How to Use the Convert Table to Pdf API with SDKs?
+## How to Use the Convert Table to PDF API with SDKs?
 
-### Convert Table to Pdf API Specification
+### Convert Table to PDF API Specification
 
-The [Convert Table to Pdf API Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertWorksheetToPdf) provides a publicly accessible programming interface and enables REST interactions directly from a web browser.
+The [Convert Table to PDF API Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertWorksheetToPDF) provides a publicly accessible programming interface and enables REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 
@@ -73,27 +73,27 @@ The following code examples illustrate how to call Aspose.Cells web services usi
 
 {{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 {{<tab tabNum="1" >}}
-{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ConvertWorksheetToPdf.cs" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ConvertWorksheetToPDF.cs" >}}
 {{</tab>}}
 {{<tab tabNum="2" >}}
-{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ConvertWorksheetToPdf.java" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ConvertWorksheetToPDF.java" >}}
 {{</tab>}}
 {{<tab tabNum="3" >}}
-{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ConvertWorksheetToPdf.php" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ConvertWorksheetToPDF.php" >}}
 {{</tab>}}
 {{<tab tabNum="4" >}}
-{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ConvertWorksheetToPdf.rb" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ConvertWorksheetToPDF.rb" >}}
 {{</tab>}}
 {{<tab tabNum="5" >}}
-{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ConvertWorksheetToPdf.ts" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ConvertWorksheetToPDF.ts" >}}
 {{</tab>}}
 {{<tab tabNum="6" >}}
-{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ConvertWorksheetToPdf.py" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ConvertWorksheetToPDF.py" >}}
 {{</tab>}}
 {{<tab tabNum="7" >}}
-{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ConvertWorksheetToPdf.pl" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ConvertWorksheetToPDF.pl" >}}
 {{</tab>}}
 {{<tab tabNum="8" >}}
-{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ConvertWorksheetToPdf.go" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ConvertWorksheetToPDF.go" >}}
 {{</tab>}}
 {{< /tabs >}}

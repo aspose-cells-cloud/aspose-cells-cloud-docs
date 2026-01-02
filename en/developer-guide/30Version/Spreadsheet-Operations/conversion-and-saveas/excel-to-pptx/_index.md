@@ -7,7 +7,7 @@ url: /convert-excel-file-to-pptx-file/
 keywords: "Convert excel files to pptx files."
 description: "Aspose.Cells Cloud REST API support conversion excel files to pptx files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 90
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Excel to Pptx
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Excel to Pptx
 ---
 
 This REST API indicates to `convert` a spreadsheet file to a pptx format file.

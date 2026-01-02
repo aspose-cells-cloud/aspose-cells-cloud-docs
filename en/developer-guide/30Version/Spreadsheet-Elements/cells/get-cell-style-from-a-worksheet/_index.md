@@ -3,7 +3,7 @@ title: "Get Cell Style from a Worksheet"
 type: docs
 url: /get-cell-style-from-a-worksheet/
 weight: 10
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Get Cell Style from a Worksheet
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Get Cell Style from a Worksheet
 ---
 
 

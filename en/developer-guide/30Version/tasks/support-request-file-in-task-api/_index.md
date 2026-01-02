@@ -7,7 +7,7 @@ aliases: [/support-request-file-in-task-api/]
 keywords: "REST API, task, request, spreadsheets, excel"
 description: "Cells.Cloud API for Excel operate: tasks support request file."
 weight: 10
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Support request file in task API
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Support request file in task API
 ---
 
 

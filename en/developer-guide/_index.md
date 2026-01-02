@@ -9,7 +9,7 @@ aliases: [/developer-guide-v4.0/]
 keywords: "How to use Aspose.Cells Cloud REST APIs.  Conversion, Merge, Split, Protect, Search, Replace, Transform. Office Excel 2016,  Office Excel 2019,office Excel 365."
 description: "This Developer Guide describes practical scenarios and tips to help you use specific Aspose.Cells for .NET features, achieve a certain Excel document appearance, or make a use case possible."
 weight: 20
-kwords: Excel, Office Cloud, REST API,Convert/Merge/Split/Protect, Spreadsheet, PDF, CSV, Json, Markdown, Developer Guide
+kwords: Excel, Office Cloud, REST API,Convert/Merge/Split/Protect, Spreadsheet, PDF, CSV, JSON, Markdown, Developer Guide
 ---
 
 
@@ -20,7 +20,7 @@ kwords: Excel, Office Cloud, REST API,Convert/Merge/Split/Protect, Spreadsheet, 
 - **[Save Spreadsheet As](https://docs.aspose.cloud/cells/save-an-excel-file-as-other-formats-files/)**
 - **[Convert Spreadsheet](https://docs.aspose.cloud/cells/convert-spreadsheet/)**
 - **[Convert Spreadsheet Chart to Image](https://docs.aspose.cloud/cells/convert-chart-to-image/)**
-- **[Convert Spreadsheet Table to Csv](https://docs.aspose.cloud/cells/convert-table-to-csv/)**
+- **[Convert Spreadsheet Table to CSV](https://docs.aspose.cloud/cells/convert-table-to-csv/)**
 - **[Convert Spreadsheet Rage to Json](https://docs.aspose.cloud/cells/convert-range-to-json/)**
 
 ### **Data Processing**

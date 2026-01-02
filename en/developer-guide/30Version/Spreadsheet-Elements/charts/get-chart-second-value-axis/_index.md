@@ -3,7 +3,7 @@ title: " Get Chart Second Value Axis"
 type: docs
 url: /charts/second-value-axis/get/
 weight: 60
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown,  Get Chart Second Value Axis
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown,  Get Chart Second Value Axis
 ---
 
 This REST API indicates Get Chart Second Value Axis. 

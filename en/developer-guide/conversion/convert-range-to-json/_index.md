@@ -1,7 +1,7 @@
 ---
-title: "Aspose.Cells Cloud Web API - Convert a Spreadsheet Range data to a Json file."
+title: "Aspose.Cells Cloud Web API - Convert Local Excel Range data to a JSON file - Free Online Tool"
 second_title: "Document"
-ArticleTitle: "Convert a Spreadsheet Range data to a Json file."
+ArticleTitle: "How to Convert the Local Spreadsheet data of Range to a JSON file: Step-by-Step Guide"
 linktitle: "Convert Range to JSON"
 type: docs
 url: /convert-range-to-json/
@@ -13,7 +13,7 @@ kwords: Convert range to pdf, JSON conversion, spreadsheet to JSON, Excel API, A
 
 Convert a range from a local spreadsheet/Excel file to a json file with the Aspose.Cells Cloud Web API.
 
-## **Convert Range to Json API**
+## **Convert Range to JSON API**
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/convert/range/json
@@ -53,20 +53,20 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/range/json
 - **404 Not Found**: The spreadsheet file not accessible.
 - **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
 
-## Why should you use the Convert Range to Json API?
+## Why should you use the Convert Range to JSON API?
 
 - No need for cloud storage, reducing the burden on cloud resources.
 - Development can be quickly completed through the existing SDK.
 
-## How to Use the Convert Range to Json API with SDKs?
+## How to Use the Convert Range to JSON API with SDKs?
 
-### Convert Range to Json API Specification
+### Convert Range to JSON API Specification
 
-The [Convert Range to Json API Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertRangeToJson) defines a publicly accessible programming interface and allows you to carry out REST interactions directly from a web browser.
+The [Convert Range to JSON API Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertRangeToJson) defines a publicly accessible programming interface and allows you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the fastest way to develop, as it abstracts away the low-level details, allowing you to convert a range data to a json file with short code.
+Using the SDK is the fastest way to develop, as it abstracts away the low-level details, allowing you to convert a data of range  to a json file with short code.
 Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:

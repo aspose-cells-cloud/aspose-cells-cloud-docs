@@ -3,7 +3,7 @@ title: "Update Multiple Cells Style"
 type: docs
 url: /update-multiple-cells-style/
 weight: 20
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Update Multiple Cells Style
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Update Multiple Cells Style
 ---
 
 This REST API indicates set `cells style` to a cell in an Excel file.

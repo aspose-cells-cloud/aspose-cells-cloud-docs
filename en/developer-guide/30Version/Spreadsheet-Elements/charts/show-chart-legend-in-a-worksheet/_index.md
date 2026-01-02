@@ -4,7 +4,7 @@ type: docs
 url: /charts/legend/show/
 aliases: [/show-chart-legend-in-a-worksheet/]
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Show Chart Legend in a Worksheet
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Show Chart Legend in a Worksheet
 ---
 
 This REST API indicates show legend in chart

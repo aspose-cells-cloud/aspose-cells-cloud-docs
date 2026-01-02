@@ -24,7 +24,7 @@ GET http://api.aspose.cloud/v4.0/cells/{name}
 | Parameter Name | Type | Path/Query String/HTTP Body | Description |
 | :- | :- | :- |:- |
 | name | String | Path | (Required) The name of the workbook file to be retrieved. |
-| format | String | Query | (Required) The desired output format (e.g., "Xlsx", "Pdf", "Csv"). |
+| format | String | Query | (Required) The desired output format (e.g., "Xlsx", "PDF", "CSV"). |
 | folder | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
 | storageName | String | Query | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted. |
 | outPath | String | Query | (Optional) The folder path where the workbook will be stored. The default is null. |

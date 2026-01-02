@@ -11,7 +11,7 @@ weight: 30
 kwords: "Excel, Aspose.Cells Cloud Web API, spreadsheet management, PDF, CSV, JSON, Markdown, developer documentation, data manipulation, cloud services"
 ---
 
-- **[Import Csv, JSON, or XML Data into a Spreadsheet file.](https://docs.aspose.cloud/cells/import-data-into-spreadsheet/)**
+- **[Import CSV, JSON, or XML Data into a Spreadsheet file.](https://docs.aspose.cloud/cells/import-data-into-spreadsheet/)**
 - **[Merge one remoted spreadsheet into another.](https://docs.aspose.cloud/cells/merge-remote-spreadsheet/)**
 - **[Merge multiple Spreadsheets into a single spreadsheet.](https://docs.aspose.cloud/cells/merge-spreadsheets/)**
 - **[Merge matching spreadsheet files into a file in a remote Folder](https://docs.aspose.cloud/cells/merge-spreadsheets-in-remote-folder/)**

@@ -8,7 +8,7 @@ url: /compress-spreadsheet/
 keywords: "Spreadsheet Compression, Reduce File Size, Aspose.Cells Cloud Web API"
 description: "The Compress Spreadsheet API allows users to efficiently reduce the file size of spreadsheets by applying specified compression levels, optimizing storage, and enhancing performance."
 weight: 100
-kwords: "Excel, Office Cloud, REST, Spreadsheet Compression, File Size Optimization, PDF, CSV, Json, Markdown"
+kwords: "Excel, Office Cloud, REST, Spreadsheet Compression, File Size Optimization, PDF, CSV, JSON, Markdown"
 ---
 
 Compress the size of the spreadsheet.

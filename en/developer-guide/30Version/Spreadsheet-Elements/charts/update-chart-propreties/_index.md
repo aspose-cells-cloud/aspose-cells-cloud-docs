@@ -4,7 +4,7 @@ type: docs
 url: /charts/propreties/update/
 aliases: [/update-chart-propreties/]
 weight: 160
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Update Chart Propreties
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Update Chart Propreties
 ---
 
 This REST API indicates update chart propreties

@@ -8,7 +8,7 @@ aliases: [/export-excel-workbook-to-different-file-formats/, /export-different-f
 keywords: "Get excel files to kinds of format files."
 description: "Aspose.Cells Cloud REST API support get excel files to kinds of format files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 10
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Gets Excel file to other formats
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Gets Excel file to other formats
 ---
 
 This REST API indicates to `get` excel file to different format file.
@@ -17,7 +17,7 @@ This REST API indicates to `get` excel file to different format file.
 
 |Parameter Name|Type|Description|
 | :- | :- | :- |
-|format|string|The file format: csv, xls, html, mhtml, ods, pdf, xml, txt, tiff, xlsb, xlsm, xlsx, xltm, xltx, xps, png, jpg, gif, emf, bmp, md, Numbers, wmf, svg, and so on.|
+|format|string|The file format: CSV, xls, HTML, mhtml, ods, pdf, xml, txt, tiff, xlsb, xlsm, xlsx, xltm, xltx, xps, png, jpg, gif, emf, bmp, md, Numbers, wmf, svg, and so on.|
 |password|string|The password needed to open an Excel file.|
 |isAutoFit|string|Auto-fits the rows and columns width in this workbook. The default value is false.|
 |onlySaveTable|string| true/false|

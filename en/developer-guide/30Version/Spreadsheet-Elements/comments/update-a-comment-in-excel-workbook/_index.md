@@ -6,7 +6,7 @@ aliases: [/update-a-comment-in-excel-workbook/]
 keywords: "REST API, spreadsheets, excel, update comment"
 description: "Cells.Cloud API for Excel operate: update comment."
 weight: 30
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Update
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Update
 ---
 
 This REST API indicates Update worksheet's cell comment.

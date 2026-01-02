@@ -8,7 +8,7 @@ url: /search-broken-links-in-remote-range/
 keywords: "broken links, remote spreadsheet, Excel API, REST API, link checker, hyperlink validation, cloud storage"
 description: "Efficiently search for broken links within a specified range of a remote spreadsheet stored in cloud storage."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, broken links, hyperlink validation, cloud storage
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, broken links, hyperlink validation, cloud storage
 ---
 
 Efficiently search for broken links within a specified range of a remote spreadsheet stored in cloud storage.

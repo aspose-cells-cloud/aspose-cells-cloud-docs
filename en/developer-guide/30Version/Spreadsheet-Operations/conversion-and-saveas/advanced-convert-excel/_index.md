@@ -7,7 +7,7 @@ url: /advanced-convert-excel/
 keywords: "Advanced Convert Excel file. Page setup , Save options, Page breaks, Page margins, Page orientation, Page size, Print area, Print titles, Print settings, Print worksheet, Print worksheet with page breaks, Print worksheet with page breaks and print titles, Print worksheet with page breaks and print titles and print area, Print worksheet with page breaks and print titles and print area and print settings, Print worksheet withpage breaks and print titles and print area and print settings and print orientation, Print"
 description: "Aspose.Cells Cloud REST API support conversion excel files to kinds of format files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 50
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Convert Excel
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Convert Excel
 ---
 
 ## Advanced Cloud API for Excel Conversion

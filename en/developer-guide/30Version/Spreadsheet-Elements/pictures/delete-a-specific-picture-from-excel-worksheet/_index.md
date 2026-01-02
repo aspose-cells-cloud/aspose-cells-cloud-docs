@@ -8,7 +8,7 @@ aliases: [/delete-a-specific-picture-from-excel-worksheet/]
 keywords: "Delete a picture in an Excel file."
 description: "Aspose.Cells Cloud REST API support deleting a picture in an Excel file. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 50
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Delete a picture in an Excel file
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Delete a picture in an Excel file
 ---
 
 This REST API indicates to `delete` a picture from an Excel worksheet.

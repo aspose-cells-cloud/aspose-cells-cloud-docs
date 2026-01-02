@@ -8,7 +8,7 @@ aliases: [/working-with-hyperlinks/,/working-with-hyperlink/]
 keywords: "REST API, hyperlinks, spreadsheets, excel"
 description: "Cells.Cloud API for Excel operate: working with hyperlinks on an Excel file."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Hyperlinks
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Hyperlinks
 ---
 
 

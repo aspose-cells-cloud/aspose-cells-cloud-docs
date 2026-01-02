@@ -27,7 +27,7 @@ PUT http://api.aspose.cloud/v4.0/cells/{name}/split/spreadsheet
 | folder | String | Query | The folder path where the workbook is stored. |
 | from | Integer | Query | Begin worksheet index. |
 | to | Integer | Query | End worksheet index. |
-| outFormat | String | Query | The desired output format (e.g., "Xlsx", "Pdf", "Csv"). |
+| outFormat | String | Query | The desired output format (e.g., "Xlsx", "PDF", "CSV"). |
 | storageName | String | Query | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted. |
 | outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
 | outStorageName | String | Query | Output file storage name. |

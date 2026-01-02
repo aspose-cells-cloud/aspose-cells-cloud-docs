@@ -7,7 +7,7 @@ aliases: [/import-integer-array-into-excel-worksheet/,/import-integer-array-into
 keywords: "Import integer array data into Excel files."
 description: "Aspose.Cells Cloud REST API support importing integer array data into Excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
 weight: 30
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Import Integer Array into Excel Worksheet
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Import Integer Array into Excel Worksheet
 ---
 
 This REST API `import int array data` into Excel work sheet.
@@ -35,7 +35,7 @@ The important parameters are described in the following table:
 | Data | Integer[] |  |
 | DestinationWorksheet | string | destination work sheet name. |
 | IsInsert | string | true/false. |
-| ImportDataType | string | IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/CSVData.|
+| ImportDataType | string | IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/csvData.|
 | Source | FileSource | Indicates data file position when the BatchData parameter is null. |
 
 **Example**

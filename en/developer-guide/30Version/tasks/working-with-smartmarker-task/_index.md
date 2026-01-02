@@ -6,7 +6,7 @@ aliases: [/working-with-smartmarker-task/]
 keywords: "REST API, task, save result, spreadsheets, excel"
 description: "Cells.Cloud API for Excel operate: tasks support to smart marker."
 weight: 60
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Working with SmartMarker Task
+kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Working with SmartMarker Task
 ---
 
 ## REST API

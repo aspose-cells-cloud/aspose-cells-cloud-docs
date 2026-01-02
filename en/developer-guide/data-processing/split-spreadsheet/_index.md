@@ -30,7 +30,7 @@ PUT http://api.aspose.cloud/v4.0/cells/split/spreadsheet
 | outPath | String | Query | (Optional) The folder path for storing the output workbook. Defaults to null. |
 | outStorageName | String | Query | Define the output file storage name. |
 | fontsLocation | String | Query | Specify custom fonts if required. |
-| regoin | String | Query | Set the spreadsheet region. |
+| region | String | Query | Set the spreadsheet region. |
 | password | String | Query | Provide the password for accessing the spreadsheet file. |
 
 ## **Response**
