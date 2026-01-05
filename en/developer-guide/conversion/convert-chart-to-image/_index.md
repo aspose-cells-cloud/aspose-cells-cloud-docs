@@ -70,7 +70,7 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/chart/image
 - **Automation & Scalability**: Batch-convert multiple charts or files programmatically, saving time compared to manual export. Handles large volumes efficiently in the cloud.
 - **Flexible Output Formats**: Supports popular image formats (PNG, JPG, BMP, SVG, etc.), allowing integration with diverse systems and media.
 - **Secure & Reliable**: Process files in Aspose’s cloud environment without exposing sensitive data to client-side tools. High availability and consistent performance.
-- **Developer-Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared to building custom chart rendering solutions, this significantly reduces the development workload. 
+- **Developer-Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared to building custom chart rendering solutions, this significantly reduces the development workload.
 - **Cost-Effective**: You can convert charts without first uploading the workbook, which saves storage space and reduces costs.
 
 ## How to Use the Convert Chart to Image API with SDKs?

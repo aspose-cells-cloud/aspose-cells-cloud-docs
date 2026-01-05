@@ -10,9 +10,9 @@ description: "Export charts from Excel files on local drive to PDF format using 
 weight: 100
 ---
 
-Export Charts from a locak Excel Files to [PDF](https://docs.fileformat.com/pdf/)  Format using Cloud API
+Export Charts from a local Excel Files to [PDF](https://docs.fileformat.com/pdf/)  Format using Cloud API
 
-## **Convert Chart to PDF Web API** 
+## **Convert Chart to PDF Web API**
 
 ### API Endpoint
 
@@ -92,7 +92,6 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/chart/pdf
 - **Knowledge Bases**: Technical documentation with embedded chart PDFs
 - **Client Portals**: Secure PDF report delivery to stakeholders
 - **Regulatory Compliance**: Audit-ready PDF documentation generation
-
 
 ## Why should you use the Convert Chart to PDF API?
 
