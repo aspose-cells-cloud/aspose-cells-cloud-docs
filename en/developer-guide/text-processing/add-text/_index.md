@@ -1,6 +1,7 @@
 ---
-title: "Aspose.Cells Cloud Web API - Add text"
-second_title: " Aspose.Cells Cloud – Online, Short-Code,"
+title: "Aspose.Cells Cloud Add Text API - A Cloud-based Solution for Dynamically Adding Text to Excel Cells - Free Online Tool"
+second_title: "Document"
+ArticleTitle: "How does Aspose.Cells Cloud achieve the intelligent text addition function? - Step-by-Step Guide"
 linktitle: "AddText"
 type: docs
 url: /add-text/
