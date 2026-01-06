@@ -1,16 +1,18 @@
 ---
-title: "Delete Folder"
+title: "Aspose.Cells Cloud Delete Folder API - An interface for fast deletion of folders in the cloud"
 second_title: "Document"
+ArticleTitle: "Cloud-based Excel File Efficient Management Solution - An interface for fast deletion of folders in the cloud."
 linktitle: "Delete Folder"
 type: docs
 url: /delete-folder/
 keywords: "Delete folder, Aspose.Cells API, RESTful API, Excel file management, cloud storage"
 description: "Learn how to delete a folder in Aspose.Cells using the deleteFolder API, including parameters and code examples."
 weight: 100
-kwords: "Excel API, Office Cloud, REST API, Spreadsheet management, PDF, CSV, JSON, Markdown, delete folder in Excel worksheets"
 ---
 
 ## **Excel API : Delete Folder**
+
+### API Endpoint
 
 ```
 DELETE http://api.aspose.cloud/v4.0/cells/storage/folder/{path}

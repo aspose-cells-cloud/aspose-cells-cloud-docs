@@ -1,16 +1,18 @@
 ---
-title: "Copy Folder"
+title: "Aspose.Cells Cloud Folder Copy API - An interface for fast copying and batch operations of folders in the cloud"
 second_title: "Document"
+ArticleTitle: "Cloud-based Excel File Efficient Management Solution - Detailed Explanation of Aspose.Cells Copy File API's Batch Copy Functionality"
 linktitle: "Copy Folder"
 type: docs
 url: /copy-folder/
 keywords: "Excel API, Copy Folder, Office Cloud, REST API, Spreadsheet Management, File Operations"
 description: "Learn how to use the CopyFolder API to efficiently copy folders in the Aspose.Cells cloud environment."
 weight: 100
-kwords: "Excel, Office Cloud, REST API, Copy Folder, File Management, PDF, CSV, JSON, Markdown, Match all blank cells in an Excel worksheet"
 ---
 
 ## **Excel API: Copy Folder**
+
+### API Endpoint
 
 ```
 PUT http://api.aspose.cloud/v4.0/cells/storage/folder/copy/{srcPath}

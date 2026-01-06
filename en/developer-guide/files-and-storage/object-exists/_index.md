@@ -1,16 +1,18 @@
 ---
-title: "Object Exists"
+title: "Aspose.Cells Cloud Object Exists API - An interface for fast object existence in the cloud"
 second_title: "Document"
+ArticleTitle: "Cloud-based Excel File Efficient Management Solution - An interface for fast object existence in the cloud."
 linktitle: "Object Exists"
 type: docs
 url: /object-exists/
 keywords: "Excel API, Object Exists, REST API, Aspose, File Management, Excel, Office Cloud, Spreadsheet, PDF, CSV, JSON, Markdown"
 description: "The Object Exists API checks if a specified file or folder exists in the Aspose.Cells cloud storage."
 weight: 100
-kwords: "Excel API, Object Exists, REST API, Aspose, Office Cloud, File Management, Spreadsheet, PDF, CSV, JSON, Markdown, Check file existence in Excel"
 ---
 
 ## **Excel API: Object Exists**
+
+### API Endpoint
 
 ```
 GET http://api.aspose.cloud/v4.0/cells/storage/exist/{path}

@@ -1,6 +1,7 @@
 ---
-title: "Storage Exists"
+title: "Aspose.Cells Cloud Storage Exists API - An interface for fast storage existence in the cloud"
 second_title: "Document"
+ArticleTitle: "Cloud-based Excel File Efficient Management Solution - An interface for fast storage existence in the cloud."
 linktitle: "Storage Exists"
 type: docs
 url: /storage-exists/
@@ -11,6 +12,8 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Ma
 ---
 
 ## **Excel API : Storage Exists**
+
+### API Endpoint
 
 ```
 GET http://api.aspose.cloud/v4.0/cells/storage/{storageName}/exist

@@ -1,13 +1,14 @@
 ---
-title: "Files and Storage"
+title: "Aspose.Cells Cloud Web API: Cloud-based file management system - Spreadsheet storage solution"
 second_title: "Document"
+ArticleTitle: "Cloud File Management for Excel - An Efficient and Secure Solution for Excel File Storage and Intelligent Organization"
+linktitle: "Files and Storage"
 type: docs
 url: /files-and-storage/
 aliases: [/working-with-files-and-storage-using-aspose-cells-cloud/]
 keywords: "Aspose Cells Cloud file storage, upload, download, delete, move, copy files"
 description: "Comprehensive guide on using Aspose Cells Cloud for file storage operations including uploading, downloading, and managing files. SDK support for various programming languages such as Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and Swift."
 weight: 100
-kwords: "Aspose Cells, Cloud Storage, REST API, File Management, Excel, PDF, CSV, JSON, Markdown"
 ---
 
 Aspose.Cells Cloud provides comprehensive helper functions to work with files uploaded to Aspose.Cells Cloud Storage or any other cloud storage of your choice. For assistance with setting up third-party storage, please refer to [Aspose Cloud UI Help Topics](https://docs.aspose.cloud/display/totalcloud/Aspose+Cloud+UI+Help+Topics).

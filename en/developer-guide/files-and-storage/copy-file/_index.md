@@ -1,16 +1,18 @@
 ---
-title: "Copy File - Excel API"
+title: "Aspose.Cells Cloud File Copy API - An interface for fast copying and batch operations of Excel files in the cloud"
 second_title: "Document"
+ArticleTitle: "Cloud-based Excel File Efficient Management Solution - Detailed Explanation of Aspose.Cells Copy File API's Batch Copy Functionality"
 linktitle: "Copy File"
 type: docs
 url: /copy-file/
 keywords: "Excel API, Office Cloud, REST API, Spreadsheet Copy, PDF Conversion, CSV Export, JSON Handling, Markdown Support, Copy Excel File, Match Blank Cells"
 description: "Learn how to use the CopyFile API for Excel to efficiently duplicate spreadsheets and handle various file formats."
 weight: 100
-kwords: "Excel API, Office Cloud, REST API, Spreadsheet Copy, PDF Conversion, CSV Export, JSON Handling, Markdown Support, Copy Excel File, Match Blank Cells"
 ---
 
 ## **Excel API: Copy File**
+
+### API Endpoint
 
 ```
 PUT http://api.aspose.cloud/v4.0/cells/storage/file/copy/{srcPath}

@@ -1,6 +1,7 @@
 ---
-title: "Download File from Aspose.Cells API"
-second_title: "Developer Guide for Aspose.Cells API"
+title: "Aspose.Cells Cloud Download File API - An interface for fast download of files in the cloud"
+second_title: "Document"
+ArticleTitle: "Cloud-based Excel File Efficient Management Solution - An interface for fast download of files in the cloud."
 linktitle: "Download File API"
 type: docs
 url: /download-file/
@@ -11,6 +12,8 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Do
 ---
 
 ## **Excel API: Download File**
+
+### API Endpoint
 
 ```
 GET http://api.aspose.cloud/v4.0/cells/storage/file/{path}

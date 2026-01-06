@@ -1,16 +1,18 @@
 ---
-title: "Create Folder in Excel API"
-second_title: "Developer Guide for Aspose.Cells"
+title: "Aspose.Cells Cloud Create Folder API - An interface for fast creation of folders in the cloud."
+second_title: "Document"
+ArticleTitle: "Cloud-based Excel File Efficient Management Solution - An interface for fast creation of folders in the cloud."
 linktitle: "Create Folder"
 type: docs
 url: /create-folder/
 keywords: "Excel API, Create Folder, Office Cloud, REST API, Cloud Storage, Folder Management, Excel, Spreadsheet, PDF, CSV, JSON, Markdown"
 description: "Learn how to create a folder in Excel API using REST."
 weight: 100
-kwords: "Create Folder, Excel API, Office Cloud, REST API, Cloud Storage, Folder Management, Match all blank cells in an Excel worksheet"
 ---
 
 ## **Excel API: Create Folder**
+
+### API Endpoint
 
 ```
 PUT http://api.aspose.cloud/v4.0/cells/storage/folder/{path}

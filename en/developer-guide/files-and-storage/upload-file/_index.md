@@ -1,13 +1,13 @@
 ---
-title: "Upload File to Aspose Cells"
-second_title: "Developer Guide for File Upload"
+title: "Aspose.Cells Cloud Upload File API - An interface for fast uploading of file in the cloud"
+second_title: "Document"
+ArticleTitle: "Cloud-based Excel File Efficient Management Solution - An interface for fast uploading of file in the cloud."
 linktitle: "Upload File"
 type: docs
 url: /upload-file/
-keywords: "Aspose, file upload, Excel API, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, upload Excel files, match blank cells"
+keywords: "Aspose, file upload, Excel API, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, upload Excel files"
 description: "Comprehensive guide on how to upload files using the Aspose Cells API, including parameters and response structure."
 weight: 100
-kwords: "Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, match all blank cells in an Excel worksheet, upload file"
 ---
 
 ## **Aspose Cells API: Upload File**
