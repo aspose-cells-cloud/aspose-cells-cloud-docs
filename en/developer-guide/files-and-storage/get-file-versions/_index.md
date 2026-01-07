@@ -1,16 +1,18 @@
 ---
-title: "Get File Versions"
+title: "Aspose.Cells Cloud Get File Version API - An interface for fast getting of file versions in the cloud"
 second_title: "Document"
+ArticleTitle: "Cloud-based Excel File Efficient Management Solution - An interface for fast getting of file version in the cloud."
 linktitle: "Get File Versions"
 type: docs
 url: /get-file-versions/
 keywords: "file versions, Excel API, Office Cloud, REST API, spreadsheet management, document history"
 description: "Retrieve and manage the versions of files stored in the Aspose.Cells Cloud, enhancing document management and collaboration."
 weight: 100
-kwords: "Get File Versions, Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, document management"
 ---
 
 ## **Excel API: Get File Versions**
+
+### API Endpoint
 
 ```
 GET http://api.aspose.cloud/v4.0/cells/storage/version/{path}

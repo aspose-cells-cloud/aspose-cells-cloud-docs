@@ -1,13 +1,13 @@
 ---
-title: "Aspose.Cells Cloud Web API - Add text"
-second_title: " Aspose.Cells Cloud – Online, Short-Code,"
+title: "Aspose.Cells Cloud Add Text API - A Cloud-based Solution for Dynamically Adding Text to Excel Cells"
+second_title: "Document"
+ArticleTitle: "How does Aspose.Cells Cloud achieve the intelligent text addition function? - Step-by-Step Guide"
 linktitle: "AddText"
 type: docs
 url: /add-text/
-keywords: ""
+keywords: "Excel, Office Cloud, REST API, Spreadsheet, Add test into Excel,Appending text"
 description: "Specify appending text to multiple cells at once, allowing you to add prefixes, suffixes, labels, or any specific characters. You can choose the exact position of the text—in the beginning, at the end, or before or after certain characters in the cell. "
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Match all blank cells in an Excel worksheet
 ---
 
 Specify appending text to multiple cells at once, allowing you to add prefixes, suffixes, labels, or any specific characters. You can choose the exact position of the text—in the beginning, at the end, or before or after certain characters in the cell.
@@ -36,6 +36,8 @@ One-call bulk insert of prefixes, suffixes, or anchored strings into every cell 
 - **Anchor not found**：When `position = BeforeText|AfterText` and `selectText` does **not** exist, the cell value remains unchanged
 
 ## **AddText API**
+
+### API Endpoint
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/content/add/text

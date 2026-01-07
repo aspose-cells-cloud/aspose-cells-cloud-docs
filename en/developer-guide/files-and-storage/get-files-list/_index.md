@@ -1,16 +1,18 @@
 ---
-title: "Get Files List - Aspose.Cells API"
-second_title: "Developer Guide for Aspose.Cells"
+title: "Aspose.Cells Cloud Get File List API - An interface for fast getting of file list in the cloud"
+second_title: "Document"
+ArticleTitle: "Cloud-based Excel File Efficient Management Solution - An interface for fast getting of file list in the cloud."
 linktitle: "Get Files List"
 type: docs
 url: /get-files-list/
 keywords: "Aspose.Cells API, Get Files List, REST API, Excel File Management, Cloud Storage, File Retrieval, Programming Interface"
 description: "Learn how to retrieve a list of files from a specified folder using the Aspose.Cells API. This guide provides details on request parameters, response structure, and code examples in various programming languages."
 weight: 100
-kwords: "Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Cloud File Management, Get Files List"
 ---
 
 ## **Excel API: Get Files List**
+
+### API Endpoint
 
 ```
 GET http://api.aspose.cloud/v4.0/cells/storage/folder/{path}

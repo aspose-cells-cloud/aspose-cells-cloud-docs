@@ -1,16 +1,18 @@
 ---
-title: "Move File"
+title: "Aspose.Cells Cloud Move File API - An interface for fast moving of file in the cloud"
 second_title: "Document"
+ArticleTitle: "Cloud-based Excel File Efficient Management Solution - An interface for fast moving of file in the cloud."
 linktitle: "Move File"
 type: docs
 url: /move-file/
 keywords: "Move file, Aspose.Cells API, File Management, Excel API, REST API, Cloud Storage, Spreadsheet Manipulation"
 description: "Learn how to use the MoveFile API to manage files in Aspose.Cells cloud storage."
 weight: 100
-kwords: "Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Move file, File Management, Cloud Storage"
 ---
 
 ## **Excel API: Move File**
+
+### API Endpoint
 
 ```
 PUT http://api.aspose.cloud/v4.0/cells/storage/file/move/{srcPath}

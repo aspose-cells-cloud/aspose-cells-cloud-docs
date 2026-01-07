@@ -1,16 +1,18 @@
 ---
-title: "Move Folder"
+title: "Aspose.Cells Cloud Move Folder API - An interface for fast moving of folder in the cloud"
 second_title: "Document"
+ArticleTitle: "Cloud-based Excel File Efficient Management Solution - An interface for fast moving of folder in the cloud."
 linktitle: "Move Folder"
 type: docs
 url: /move-folder/
 keywords: "Move folder API, Excel API, Folder management, REST API, Aspose.Cells, Cloud storage"
 description: "This documentation provides a comprehensive guide to using the Move Folder API for managing folders within the Aspose.Cells cloud storage."
 weight: 100
-kwords: "Excel API, Move folder API, Office Cloud, REST API, Spreadsheet management, PDF, CSV, JSON, Markdown, Match all blank cells in an Excel worksheet"
 ---
 
 ## **Excel API: Move Folder**
+
+### API Endpoint
 
 ```
 PUT http://api.aspose.cloud/v4.0/cells/storage/folder/move/{srcPath}
