@@ -1,19 +1,20 @@
 ---
-title: "Aspose.Cells Cloud Web API - Merge multiple Spreadsheets into a single spreadsheet."
+title: "Aspose.Cells Cloud Merge Excel Files Web API - Combine Multiple Spreadsheets into One File."
 second_title: "Document"
-ArticleTitle: "Merge multiple Spreadsheets into a single spreadsheet."
+ArticleTitle: Combine Multiple Excel Files into One - Batch Merge Spreadsheets to 30+ Formats"
 linktitle: "Merge Spreadsheets"
 type: docs
 url: /merge-spreadsheets/
-keywords: "Merge spreadsheets, data merging, file format conversion, REST, XLSX, CSV, PDF"
-description: "Easily merge local spreadsheet files into various formats (XLSX, CSV, PDF) using the Excel API."
+keywords: "merge Excel files online, combine multiple spreadsheets into one, merge local Excel files, Aspose.Cells merge tool, Excel file merger, combine multiple Excel files into one workbook, merge spreadsheets online free, Excel consolidation tool, batch merge Excel files, merge XLS XLSX files"
+description: "Merge multiple local Excel files (XLS, XLSX) into a single file online using Aspose.Cells. Supports 30+ output formats including PDF, CSV, HTML, and more."
 weight: 100
-kwords: "Excel API, Merge spreadsheets, Office Cloud, REST API, Spreadsheet merging, CSV format, JSON, Markdown"
 ---
 
-Merge multiple local spreadsheet files into a single file, while supporting output in 30+ of file formats.
+Batch merge multiple local spreadsheet files into one unified file. Convert the merged result to 30+ formats, including PDF, CSV, HTML, ODS, and XPS with Aspose.Cells Cloud Web API.
 
 ## **Merge Spreadsheet API**
+
+### API Endpoint
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/merge/spreadsheet
@@ -22,15 +23,15 @@ PUT http://api.aspose.cloud/v4.0/cells/merge/spreadsheet
 ### **Request Parameters:**
 
 | Parameter Name | Type | Path/Query String/HTTP Body | Description |
-| :- | :- | :- |:- |
-| Spreadsheet | File | FormData | Upload the spreadsheet file. |
-| outFormat | String | Query | Specify the output file format. |
-| mergeInOneSheet | Boolean | Query | Indicate whether to combine all data into a single worksheet. |
-| outPath | String | Query | (Optional) The folder path for the output workbook. Defaults to null. |
-| outStorageName | String | Query | Specify the output file storage name. |
-| fontsLocation | String | Query | Define custom fonts to be used. |
-| region | String | Query | Set the spreadsheet region. |
-| password | String | Query | Provide the password for opening the spreadsheet file. |
+| :- | :- | :- | :- |
+| Spreadsheet | File | FormData | The local spreadsheet file to upload and process. Supports formats including XLSX, XLS, CSV, ODS, etc. |
+| outFormat | String | Query | The format of the output file after merging (e.g., `XLSX`, `PDF`, `CSV`, `HTML`). Supports 30+ common formats. |
+| mergeInOneSheet | Boolean | Query | When set to `true`, all data from the input file(s) is merged into a single worksheet. When `false`, each original sheet is preserved. |
+| outPath | String | Query | *(Optional)* Specifies the cloud folder path where the merged output file will be saved. If not provided, the file is stored in the default location. |
+| outStorageName | String | Query | The cloud storage name where the output file should be saved (e.g., default cloud storage or custom storage name). |
+| fontsLocation | String | Query | *(Optional)* Specifies a custom cloud folder path containing font files to ensure correct text rendering in PDF/image outputs. |
+| region | String | Query | *(Optional)* Sets the locale for formatting numbers, dates, and currency (e.g., `en-US`, `zh-CN`, `de-DE`) in the output file. |
+| password | String | Query | *(Optional)* If the uploaded spreadsheet is password-protected, provide the password for opening the file. |
 
 ### **Response**
 
@@ -55,12 +56,30 @@ PUT http://api.aspose.cloud/v4.0/cells/merge/spreadsheet
 
 ## Where should we use the Merge Local Spreadsheet API?
 
-When you need to merge multiple data files together, you can use this API.
+### **Education and Academic Applications**
+
+- **Student Assignment Grading**: Merge multiple student assignment files for unified comments and grading
+- **Research Data Collection**: Merge data collection spreadsheets from different experimental groups
+- **Teaching Material Creation**: Merge exercises from multiple chapters into a unified question bank file
+
+### **Data Processing and Analysis**
+
+- **Small Data Set Integration**: Merge CSV or Excel data files exported from different sources
+- **Data Analysis Preprocessing**: Merge relevant data source files before conducting data analysis
+- **Template Data Filling**: Combine data files into pre-set report templates
+
+### **Development and Technical Support**
+
+- **Test Data Preparation**: Merge multiple test case files for automated testing
+- **Log File Analysis**: Merge Excel reports of system logs from different time periods
+- **Configuration Management**: Merge multiple configuration spreadsheets into a unified configuration file
 
 ## Why should you use the Merge Local Spreadsheet API?
 
-- No need for cloud storage space, just merge directly.
-- Development can be quickly completed through the existing SDK.
+- **Developer-Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared to building custom chart rendering solutions, this significantly reduces the development workload.
+- **Reduced Labor Costs**: Reduced the need for positions dedicated to document consolidation.
+- **Pay-per-use**: No upfront investment, only pay for API calls actually used.
+- **Zero Maintenance Costs**: No need to maintain servers, update software, or deal with compatibility issues.
 
 ## How to Use the Merge Local Spreadsheet API with SDKs
 

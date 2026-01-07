@@ -1,20 +1,20 @@
 ---
-title: "Aspose.Cells Cloud Web API - Merge matching spreadsheet files into a file in a remote Folder."
+title: "Aspose.Cells Cloud Web API - Merge Matching Spreadsheets in Remote Folder to 30+ Formats."
 second_title: "Document"
 ArticleTitle: "Merge matching spreadsheet files into a file in a remote Folder."
 linktitle: "Merge Spreadsheets in Remote Folder"
 type: docs
 url: /merge-spreadsheets-in-remote-folder/
-keywords: "Merge spreadsheets, cloud storage, Excel API, remote processing, spreadsheet formats, REST API"
+keywords: "merge matching spreadsheet files in remote folder, Aspose.Cells Cloud merge API, batch merge Excel files cloud, merge spreadsheets to PDF CSV JSON, cloud folder spreadsheet merger, remote Excel file merging, merge matching files to multiple formats, Aspose merge API, automate Excel file merging"
 description: "Combine the spreadsheet files stored in the cloud storage into one file, and the file format supports 30 formats for output, such as PDF,CSV, JSON and other common formats."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Merge spreadsheets, Cloud processing, Remote file handling
 ---
 
-Merge matching spreadsheet files into files in remote folder, the output file format supports 30+ formats such as PDF,CSV,Json and other common formats.
-
+Merge matching spreadsheet files from a remote cloud folder and export to 30+ supported formats like PDF, CSV, JSON, ODS, and XPS using Aspose.Cells Cloud API.
 
 ## **Merge Spreadsheets in Remote Folder API**
+
+### API Endpoint
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/merge/remote-spreadsheets
@@ -23,17 +23,17 @@ PUT http://api.aspose.cloud/v4.0/cells/merge/remote-spreadsheets
 ### **Request Parameters:**
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
-| :- | :- | :- |:- |
-| folder | String | Query | The folder where the merged files will be stored.|
-| fileMatchExpression | String | Query | Expression to match files for merging. |
-| outFormat | String | Query | The desired output file format. |
-| mergeInOneSheet | Boolean | Query | Indicates whether to combine all data into a single worksheet. |
-| storageName | String | Query | (Optional) The name of the custom cloud storage; defaults to default storage if omitted. |
-| outPath | String | Query | (Optional) The folder path for storing the workbook; defaults to null. |
-| outStorageName | String | Query | The name of the storage for the output file. |
-| fontsLocation | String | Query | Specifies custom fonts. |
-| region | String | Query | Sets the spreadsheet region. |
-| password | String | Query | The password for opening the spreadsheet file. |
+| :- | :- | :- | :- |
+| folder | String | Query | The source folder path in cloud storage where the spreadsheet files to be merged are located. |
+| fileMatchExpression | String | Query | A string expression or pattern to filter and select matching files in the source folder for merging (e.g., `"*report*.xlsx"`). |
+| outFormat | String | Query | Specifies the output file format after merging (e.g., `PDF`, `CSV`, `JSON`, `XLSX`). Supports 30+ common formats. |
+| mergeInOneSheet | Boolean | Query | When `true`, merges content from all matched files into a single worksheet. When `false`, each file's content is kept in separate worksheets. |
+| storageName | String | Query | *(Optional)* The name of the cloud storage where source files reside. If omitted, the default cloud storage is used. |
+| outPath | String | Query | *(Optional)* Specifies the target folder path in cloud storage where the merged file will be saved. If omitted, the merged file is saved in the source folder. |
+| outStorageName | String | Query | The name of the cloud storage where the output merged file will be saved. |
+| fontsLocation | String | Query | *(Optional)* Specifies a custom folder path containing font files to ensure proper text rendering when exporting to PDF or image formats. |
+| region | String | Query | *(Optional)* Sets the locale/region for number, date, and currency formatting in the output file (e.g., `"en-US"`, `"de-DE"`). |
+| password | String | Query | *(Optional)* If any matched spreadsheet file is password-protected, provide the password to open the file. |
 
 ## **Response**
 
@@ -63,9 +63,10 @@ When you need to merge multiple data files together, you can use this API.
 
 ## Why should you use the Merge Spreadsheet in remote folder API?
 
-- Cloud storage files do not need to be downloaded, and can be merged directly in the cloud.
-- Batch merge multiple spreadsheet files together, Support matching expression.
-- Development can be quickly completed through the existing SDK.
+- **Developer-Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared to building custom chart rendering solutions, this significantly reduces the development workload.
+- **Reduced Labor Costs**: Reduced the need for positions dedicated to document consolidation.
+- **Pay-per-use**: No upfront investment, only pay for API calls actually used.
+- **Zero Maintenance Costs**: No need to maintain servers, update software, or deal with compatibility issues.
 
 ## How to Use the Merge Spreadsheet in remote folder API with SDKs
 

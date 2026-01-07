@@ -67,7 +67,7 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/range/html
 - **Selective Data Export**: Convert only the necessary range (e.g., A1:D20), avoiding full-file processing.  Ideal for large spreadsheets where only a subset of data is needed.
 - **No Excel Dependencies**: Cloud-based conversion eliminates the need for Excel installation or client-side libraries.  Works seamlessly in any environment with HTTP access.
 - **Developer-Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared to building custom chart rendering solutions, this significantly reduces the development workload.
-- **Cost-Effective**: You can convert charts without first uploading the workbook, which saves storage space and reduces costs.
+- **Cost-Effective**: You can convert range data without first uploading the workbook, which saves storage space and reduces costs.
 
 ## How to Use the Convert Range to HTML API with SDKs?
 

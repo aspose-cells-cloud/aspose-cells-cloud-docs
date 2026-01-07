@@ -70,7 +70,7 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/range/json
 ## Why should you use the Convert Range to JSON API?
 
 - **Developer-Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared to building custom chart rendering solutions, this significantly reduces the development workload.
-- **Cost-Effective**: You can convert charts without first uploading the workbook, which saves storage space and reduces costs.
+- **Cost-Effective**: You can convert range data without first uploading the workbook, which saves storage space and reduces costs.
 - **To Fuel Modern Web & Mobile Applications**: JSON is the native data language of the web.  By converting Excel ranges to JSON, you can **seamlessly feed live spreadsheet data into JavaScript frameworks** (React, Vue, Angular), mobile apps, or single-page applications (SPAs) without complex parsing logic.
 - **JSON is the lingua franca of modern systems**: compatible with virtually every programming language, database, and web service.  Unlike proprietary formats, JSON ensures your Excel data can be consumed anywhere.
 - **Structured Data Preservation**

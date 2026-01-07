@@ -73,7 +73,7 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/table/image
 ## Why should you use the Convert Table to Image API?
 
 - **Developer-Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared to building custom chart rendering solutions, this significantly reduces the development workload.
-- **Cost-Effective**: You can convert charts without first uploading the workbook, which saves storage space and reduces costs.
+- **Cost-Effective**: You can convert table data without first uploading the workbook, which saves storage space and reduces costs.
 - **Pixel-Perfect Preservation**: Faithfully replicates Excel’s appearance—including cell formatting, formulas (as displayed values), borders, colors, and conditional formatting—in the output image.
 - **Universal Compatibility**:Image formats (PNG, JPEG, TIFF, BMP, SVG, and so on.) are viewable on any device or platform without specialized software, ensuring maximum accessibility.
 

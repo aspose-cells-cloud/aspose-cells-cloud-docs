@@ -70,7 +70,7 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/range/pdf
 ## Why should you use the Convert Range to PDF API?
 
 - **Developer-Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared to building custom chart rendering solutions, this significantly reduces the development workload.
-- **Cost-Effective**: You can convert charts without first uploading the workbook, which saves storage space and reduces costs.
+- **Cost-Effective**: You can convert range data without first uploading the workbook, which saves storage space and reduces costs.
 - **Preserves complex Excel formatting** in universally accessible PDF format.
 
 ## How to Use the Convert Range to PDF API with SDKs?

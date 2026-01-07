@@ -11,9 +11,44 @@ weight: 30
 kwords: "Excel, Aspose.Cells Cloud Web API, spreadsheet management, PDF, CSV, JSON, Markdown, developer documentation, data manipulation, cloud services"
 ---
 
-- **[Import CSV, JSON, or XML Data into a Spreadsheet file.](https://docs.aspose.cloud/cells/import-data-into-spreadsheet/)**
-- **[Merge one remoted spreadsheet into another.](https://docs.aspose.cloud/cells/merge-remote-spreadsheet/)**
-- **[Merge multiple Spreadsheets into a single spreadsheet.](https://docs.aspose.cloud/cells/merge-spreadsheets/)**
-- **[Merge matching spreadsheet files into a file in a remote Folder](https://docs.aspose.cloud/cells/merge-spreadsheets-in-remote-folder/)**
-- **[Split a spreadsheet into multiple files, one for each worksheet.](https://docs.aspose.cloud/cells/split-remote-spreadsheet/)**
-- **[Split the Spreadsheet into separate files.](https://docs.aspose.cloud/cells/split-spreadsheet/)**
+
+## Data Import and Management
+
+- **[Import CSV, JSON, XML data into Excel files](https://docs.aspose.cloud/cells/import-data-into-spreadsheet/)**
+  - Supports multiple data format conversions
+  - Batch data import processing
+  - Field mapping and format preservation
+
+## File Merging Operation
+
+### Basic Merging Functionality
+
+- **[Merge Remote Excel Files into Specified Workbook](https://docs.aspose.cloud/cells/merge-remote-spreadsheet/)**
+  - Merging across cloud storage files
+  - Sheet-level merging control
+
+### Batch Merging Function
+
+- **[Merge Multiple Excel Files into a Single Workbook](https://docs.aspose.cloud/cells/merge-spreadsheets/)**
+  - Intelligent Merging of Multiple Files
+  - Automatic Handling of Conflicting Data
+
+### Folder-level Merging
+
+- **[Merge Excel files that match in a remote folder](https://docs.aspose.cloud/cells/merge-spreadsheets-in-remote-folder/)**
+  - Filter files by rules
+  - Batch folder operations
+
+## File Splitting Operation
+
+### Worksheet Level Splitting
+
+- **[Split an Excel file into multiple files based on worksheets](https://docs.aspose.cloud/cells/split-remote-spreadsheet/)**
+  - Each worksheet generates an independent file
+  - Preserves formatting and formulas
+
+### Custom Rule Splitting
+
+- **[Split Excel File According to Custom Rules](https://docs.aspose.cloud/cells/split-spreadsheet/)**
+  - Split by row count, column count
+  - Split by content conditions

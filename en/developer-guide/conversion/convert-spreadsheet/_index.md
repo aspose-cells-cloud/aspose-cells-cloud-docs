@@ -107,7 +107,7 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/spreadsheet
 ## Why should you use the Convert Spreadsheet API?
 
 - **Developer-Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared to building custom chart rendering solutions, this significantly reduces the development workload.
-- **Cost-Effective**: You can convert charts without first uploading the workbook, which saves storage space and reduces costs.
+- **Cost-Effective**: You can convert table data without first uploading the workbook, which saves storage space and reduces costs.
 - **Comprehensive Format Support**: Convert between 20+ spreadsheet formats.
 - **Preserve Data Fidelity & Formatting**
 
