@@ -1,17 +1,16 @@
 ---
-title: "Aspose.Cells Cloud Change Word Case API - Cloud-based interface for intelligent conversion of Excel text case"
+title: "Aspose.Cells Cloud Change Word Case API - Convert to Uppercase, Lowercase, Proper Case"
 second_title: "Document"
-ArticleTitle: "Excel Text Formatting Automation Solution - Aspose.Cells Cloud Case Conversion API Comprehensive Guide"
+ArticleTitle: "Excel Case Converter - Uppercase, Lowercase, Proper Case & Sentence Case Tool"
 linktitle: "Word Case"
 type: docs
 url: /change-word-case/
-keywords: ""
-description: "Specify changing the text case in a spreadsheet to switch between uppercase, lowercase, capitalizing the first letter of each word, or capitalizing the first letter of a sentence, and adjust the text according to specific needs. "
+keywords: "change Excel text case, convert uppercase lowercase Excel, proper case Excel, capitalize first letter each word, sentence case Excel, Excel case conversion tool, Aspose.Cells case API, text formatting Excel, bulk case change, Excel text transformation"
+description: "Change text case in Excel spreadsheets to uppercase, lowercase, proper case (first letter of each word), or sentence case (first letter of sentence) with Aspose.Cells API. Adjust text formatting in bulk according to your needs."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Match all blank cells in an Excel worksheet
 ---
 
-Specify changing the text case in a spreadsheet to switch between uppercase, lowercase, capitalizing the first letter of each word, or capitalizing the first letter of a sentence, and adjust the text according to specific needs.
+Convert Excel text case instantly—switch between uppercase, lowercase, proper case (capitalize each word), or sentence case (capitalize first letter). Use Aspose.Cells Cloud Web API to adjust text formatting in bulk across your spreadsheet.
 
 ## Overview
 
@@ -35,15 +34,15 @@ PUT http://api.aspose.cloud/v4.0/cells/content/wordcase
 ### The request parameters of **updateWordCase** API are
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
-| :- | :- | :- |:- |
-|Spreadsheet|File|FormData|Upload spreadsheet file.|
-|wordCaseType|String|Query|Specify text case: Upper Case, Lower Case, Proper Case, Sentence Case.|
-|worksheet|String|Query|Specify the worksheet of spreadsheet.|
-|range|String|Query|Specify the worksheet range of spreadsheet.|
-|outPath|String|Query|(Optional) The folder path where the workbook is stored. The default is null.|
-|outStorageName|String|Query|Output file Storage Name.|
-|region|String|Query|The spreadsheet region setting.|
-|password|String|Query|The password for opening spreadsheet file.|
+| :- | :- | :- | :- |
+| Spreadsheet | File | FormData | The spreadsheet file to be processed. Supported formats include XLSX, XLS, ODS, CSV, etc. |
+| wordCaseType | String | Query | Specifies the text case conversion type: `Upper Case` (全部大写), `Lower Case` (全部小写), `Proper Case` (每个单词首字母大写), `Sentence Case` (句子首字母大写). |
+| worksheet | String | Query | *(Optional)* The name of the worksheet where case conversion will be applied. If omitted, the operation applies to the first worksheet. |
+| range | String | Query | *(Optional)* The cell range where case conversion will be applied (e.g., `"A1:C10"`). If omitted, the operation applies to all used cells in the specified worksheet. |
+| outPath | String | Query | *(Optional)* The cloud storage folder path where the processed workbook will be saved. If omitted, the file is saved in the source folder. |
+| outStorageName | String | Query | The name of the cloud storage where the output file will be stored. |
+| region | String | Query | *(Optional)* Sets the locale for text case conversion rules, particularly relevant for language-specific capitalization (e.g., `"en-US"`, `"de-DE"`). |
+| password | String | Query | *(Optional)* If the uploaded spreadsheet is password-protected, provide the password to open and process the file. |
 
 ### **Response**
 
@@ -66,37 +65,37 @@ File
 
 - **Customer Data Management**: Standardize the capitalization of customer names and address information (e.g., `john doe` → `John Doe`)
 - **Product Catalog Processing**: Standardize product titles and description texts (e.g., `IPHONE 15 PRO` → `iPhone 15 Pro`)
-- **Financial Report Generation**: Normalize the item names and description fields in financial statements 
+- **Financial Report Generation**: Normalize the item names and description fields in financial statements
 
 ### Multi-source Data Integration
 
 - **Data Warehouse ETL**: Standardize the text format when loading data from various systems
 - **API Data Reception**: Handle data with inconsistent capitalization returned by external APIs
-- **Cross-department Data Merging**: Standardize the text format in Excel reports from various departments 
+- **Cross-department Data Merging**: Standardize the text format in Excel reports from various departments
 
 ### Content Management System
 
 - **Automated News Releases**: Automatically format news headlines and content (capitalization rules for titles)
 - **Product Documentation Generation**: Ensure consistency in the formatting of technical documentation terms
-- **Knowledge Base Maintenance**: Standardize the text format of FAQs and help documents 
+- **Knowledge Base Maintenance**: Standardize the text format of FAQs and help documents
 
 ### Enterprise Application Integration
 
 - **CRM System Integration**: Automatically format names and company information during the import/export of customer data
 - **ERP Data Processing**: Standardize the formats of key fields such as material descriptions and supplier names
-- **HR Management System**: Standardize employee information and job titles, etc. 
+- **HR Management System**: Standardize employee information and job titles, etc.
 
 ### Batch Document Processing
 
 - **Legal Document Preparation**: Batch processing of clause formats in contracts and agreements
 - **Marketing Materials Generation**: Standardizing the text formats of advertising copy and email templates
-- **Academic Paper Formatting**: Standardizing the format requirements for references and titles 
+- **Academic Paper Formatting**: Standardizing the format requirements for references and titles
 
 ### Real-time Data Processing
 
 - **User Input Validation**: Real-time formatting of the form data submitted by users
 - **Chatbot Responses**: Standardization of the text format for automatically generated responses
-- **Instant Report Generation**: Dynamic creation of uniformly formatted business reports 
+- **Instant Report Generation**: Dynamic creation of uniformly formatted business reports
 
 ### Internationalization and Localization
 
@@ -108,7 +107,6 @@ File
 
 - **Developer-Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared to building custom chart rendering solutions, this significantly reduces the development workload.
 - **Cost-Effective**: You can convert charts without first uploading the workbook, which saves storage space and reduces costs.
-
 
 ## OpenAPI Specification
 

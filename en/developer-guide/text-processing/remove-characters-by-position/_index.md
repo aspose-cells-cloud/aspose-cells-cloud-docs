@@ -1,16 +1,16 @@
 ---
-title: "Aspose.Cells Cloud Web API - Remove Duplicate Substrings"
-second_title: " Aspose.Cells Cloud – Online, Short-Code,"
+title: "Aspose.Cells Cloud Remove Characters by Position Web API - Delete Text from Specific Location in Excel"
+second_title: "Document"
+ArticleTitle: "Excel Position-Based Character Remover - Delete Text at Specific Locations – Online, Short-Code"
 linktitle: "Remove Characters by Position"
 type: docs
 url: /remove-characters-by-position/
-keywords: "Remove, Duplicate, Substrings"
-description: "Finds and removes repeated substrings inside every cell of the chosen range, using user-defined or preset delimiters, while preserving formulas, formatting and data-validation."
+keywords: "remove characters by position Excel, delete text from specific location, Excel character removal tool, remove first n characters Excel, remove last n characters, Aspose.Cells position-based removal, clean Excel text by position, targeted character deletion"
+description: "Remove characters from Excel cells based on specific positions—delete first N characters, last N characters, or text before/after certain markers with Aspose.Cells Cloud Web API."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Match all blank cells in an Excel worksheet
 ---
 
-Finds and removes repeated substrings inside every cell of the chosen range, using user-defined or preset delimiters, while preserving formulas, formatting and data-validation.
+Delete characters from Excel cells by position: remove first/last N characters, or delete text before/after specified markers. Precise text cleaning with Aspose.Cells Cloud Web API.
 
 ## **Introduction**: Remove Unwanted Characters by Position
 
@@ -28,6 +28,8 @@ Finds and removes repeated substrings inside every cell of the chosen range, usi
 
 ## **RemoveCharactersByPosition API**
 
+### API Endpoint
+
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/content/remove/characters
 ```
@@ -35,18 +37,18 @@ PUT http://api.aspose.cloud/v4.0/cells/content/remove/characters
 ### The request parameters of **RemoveCharactersByPosition** API are
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
-| :- | :- | :- |:- |
-|Spreadsheet|File|FormData|Upload spreadsheet file.|
-|theFirstNCharacters|Integer|Query|Specify removing the first n characters from selected cells.|
-|theLastNCharacters|Integer|Query|Specify removing the last n characters from selected cells.|
-|allCharactersBeforeText|String|Query|Specify using targeted removal options to delete text that is located before certain characters.|
-|allCharactersAfterText|String|Query|Specify using targeted removal options to delete text that is located after certain characters.|
-|worksheet|String|Query|Specify the worksheet of spreadsheet.|
-|range|String|Query|Specify the worksheet range of spreadsheet.|
-|outPath|String|Query|(Optional) The folder path where the workbook is stored. The default is null.|
-|outStorageName|String|Query|Output file Storage Name.|
-|region|String|Query|The spreadsheet region setting.|
-|password|String|Query|The password for opening spreadsheet file.|
+| :- | :- | :- | :- |
+| Spreadsheet | File | FormData | The spreadsheet file to be processed. Supported formats include XLSX, XLS, ODS, CSV, etc. |
+| theFirstNCharacters | Integer | Query | Specifies the number of characters to remove from the beginning of the text in each selected cell. For example, `3` would remove the first 3 characters. |
+| theLastNCharacters | Integer | Query | Specifies the number of characters to remove from the end of the text in each selected cell. For example, `2` would remove the last 2 characters. |
+| allCharactersBeforeText | String | Query | Removes all characters that appear before the specified text string in each cell. If the text appears multiple times, removal is based on the first occurrence. |
+| allCharactersAfterText | String | Query | Removes all characters that appear after the specified text string in each cell. If the text appears multiple times, removal is based on the first occurrence. |
+| worksheet | String | Query | *(Optional)* The name of the worksheet where character removal will be applied. If omitted, the operation applies to the first worksheet. |
+| range | String | Query | *(Optional)* The cell range where character removal will be applied (e.g., `"A1:C10"`). If omitted, the operation applies to all used cells in the specified worksheet. |
+| outPath | String | Query | *(Optional)* The cloud storage folder path where the processed workbook will be saved. If omitted, the file is saved in the source folder. |
+| outStorageName | String | Query | The name of the cloud storage where the output file will be stored. |
+| region | String | Query | *(Optional)* Sets the locale for text handling, particularly relevant for language-specific character positions and encoding (e.g., `"en-US"`, `"zh-CN"`). |
+| password | String | Query | *(Optional)* If the uploaded spreadsheet is password-protected, provide the password to open and process the file. |
 
 ### **Response**
 
@@ -79,6 +81,8 @@ File
 - **Flexible Configuration**: 5 positioning modes + case sensitivity option for diverse scenarios
 - **Batch Processing**: Clean entire data columns with one click, boosting efficiency 10x
 - **Smart Parsing**: Easily handle complex content extraction between two delimiters
+- **Developer-Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared to building custom chart rendering solutions, this significantly reduces the development workload.
+- **Cost-Effective**: You can remove characters by position without first uploading the workbook, which saves storage space and reduces costs.
 
 ## OpenAPI Specification
 

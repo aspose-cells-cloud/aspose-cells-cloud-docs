@@ -1,16 +1,16 @@
 ---
-title: "Aspose.Cells Cloud Web API - Remove Duplicate Substrings"
-second_title: " Aspose.Cells Cloud – Online, Short-Code,"
+title: "Aspose.Cells Cloud Remove Duplicate Substrings Web API - Deduplicate Repeated Text in Excel"
+second_title: "Document"
+ArticleTitle: "Excel Duplicate Substring Remover - Clean Repeated Text in Cells"
 linktitle: "Remove Duplicate Substrings"
 type: docs
 url: /remove-duplicate-substrings/
-keywords: ""
-description: "Perform operations or delete any custom characters, character sets, and substrings within a selected range for a specific position. "
+keywords: "remove duplicate substrings Excel, delete repeated text in cells, deduplicate Excel text, find duplicate substrings, clean repeated content Excel, Aspose.Cells duplicate removal, Excel text cleaning tool, remove repetitive text, substring deduplication"
+description: "Automatically find and remove duplicate substrings within Excel cells while preserving original formulas and formatting. Clean repeated text efficiently with Aspose.Cells API."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Match all blank cells in an Excel worksheet
 ---
 
-Perform operations or delete any custom characters, character sets, and substrings within a selected range for a specific position.
+Remove duplicate substrings from Excel cells with intelligent detection. Keep original formatting intact while eliminating redundant text using Aspose.Cells deduplication API.
 
 ## **Introduction**: Remove Unwanted Characters with Precision
 
@@ -33,6 +33,8 @@ The Repeat Substring Cleaner API removes duplicate substrings within individual 
 
 ## **RemoveDuplicateSubstrings API**
 
+### API Endpoint
+
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/content/remove/duplicate-substrings
 ```
@@ -40,17 +42,17 @@ PUT http://api.aspose.cloud/v4.0/cells/content/remove/duplicate-substrings
 ### The request parameters of **removeCharacters** API are
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
-| :- | :- | :- |:- |
-|Spreadsheet|File|FormData|Upload spreadsheet file.|
-|delimiters|String|Query|delimiters|
-|treatConsecutiveDelimitersAsOne|Boolean|Query|collapse adjacent delimiters into a single separator.|
-|caseSensitive|String|Boolean||
-|worksheet|String|Query|Specify the worksheet of spreadsheet.|
-|range|String|Query|Specify the worksheet range of spreadsheet.|
-|outPath|String|Query|(Optional) The folder path where the workbook is stored. The default is null.|
-|outStorageName|String|Query|Output file Storage Name.|
-|region|String|Query|The spreadsheet region setting.|
-|password|String|Query|The password for opening spreadsheet file.|
+| :- | :- | :- | :- |
+| Spreadsheet | File | FormData | The spreadsheet file to be processed. Supported formats include XLSX, XLS, ODS, CSV, etc. |
+| delimiters | String | Query | Specifies one or more delimiter characters used to split cell content into substrings for duplicate detection and removal. Multiple delimiters can be specified (e.g., `",;|"`). |
+| treatConsecutiveDelimitersAsOne | Boolean | Query | When set to `true`, consecutive delimiter characters are treated as a single separator. When `false`, each delimiter is processed individually. |
+| caseSensitive | Boolean | Query | When `true`, duplicate detection considers letter case (e.g., "Text" ≠ "text"). When `false`, case is ignored during duplicate comparison. |
+| worksheet | String | Query | *(Optional)* The name of the worksheet where duplicate substring removal will be applied. If omitted, the operation applies to the first worksheet. |
+| range | String | Query | *(Optional)* The cell range where duplicate substring removal will be applied (e.g., `"A1:C10"`). If omitted, the operation applies to all used cells in the specified worksheet. |
+| outPath | String | Query | *(Optional)* The cloud storage folder path where the processed workbook will be saved. If omitted, the file is saved in the source folder. |
+| outStorageName | String | Query | The name of the cloud storage where the output file will be stored. |
+| region | String | Query | *(Optional)* Sets the locale for text processing, which may affect delimiter interpretation and case sensitivity rules for certain languages (e.g., `"en-US"`, `"tr-TR"`). |
+| password | String | Query | *(Optional)* If the uploaded spreadsheet is password-protected, provide the password to open and process the file. |
 
 ### **Response**
 
@@ -79,6 +81,8 @@ File
 - **Preserve Data Integrity**: Cell colors, fonts, borders, and conditional formatting remain unchanged, Drop-down lists and validation rules are preserved.
 - **Flexible & Intelligent Processing**: Delimiter-agnostic, Case-sensitive control, Header protection.
 - **Seamless Integration**: API-first design, Language agnostic, Returns clean file.
+- **Developer-Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared to building custom chart rendering solutions, this significantly reduces the development workload.
+- **Cost-Effective**: You can remove deduplicate characters without first uploading the workbook, which saves storage space and reduces costs.
 
 ## OpenAPI Specification
 

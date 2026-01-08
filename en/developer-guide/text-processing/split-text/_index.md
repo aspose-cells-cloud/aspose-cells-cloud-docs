@@ -1,16 +1,16 @@
 ---
-title: "Aspose.Cells Cloud Web API - Split text"
-second_title: " Aspose.Cells Cloud – Online, Short-Code,"
+title: "Aspose.Cells Cloud Split Text Web API - Segment Cell Content into Columns in Excel"
+second_title: "Document"
+ArticleTitle: "Excel Text Splitter - Segment Cell Content into Multiple Columns – Online, Short-Code"
 linktitle: "Split Text"
 type: docs
 url: /split-text/
-keywords: "Split Text"
-description: "Indicates performing text segmentation on the specified area according to the segmentation method, and outputting to the designated interval. "
+keywords: "split text in Excel, segment cell content, text to columns Excel, Excel text segmentation, split text by delimiter, Aspose.Cells text splitting, divide cell text, Excel data parsing, text segmentation API"
+description: "Split text in Excel cells into separate columns based on specified segmentation methods and delimiters. Output segmented content to designated intervals with Aspose.Cells Cloud Web API."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Match all blank cells in an Excel worksheet
 ---
 
-Indicates performing text segmentation on the specified area according to the segmentation method, and outputting to the designated interval.
+Segment Excel cell text into multiple columns using custom segmentation rules. Split content by delimiter and output to specified ranges with Aspose.Cells Cloud text splitting Web API.
 
 ## **Introduction**: Split Text
 
@@ -25,6 +25,8 @@ The Text Segmentation API divides cell contents into multiple cells based on spe
 
 ## **SplitText API**
 
+### API Endpoint
+
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/content/split/text
 ```
@@ -32,19 +34,19 @@ PUT http://api.aspose.cloud/v4.0/cells/content/split/text
 ### The request parameters of **splitText** API are
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
-| :- | :- | :- |:- |
-|Spreadsheet|File|FormData|Upload spreadsheet file.|
-|delimiters|String|Query|Indicates split delimiters.|
-|keepDelimitersInResultingCells|Boolean|Query|Indicates keep delimiters in resulting cells.|
-|keepDelimitersPosition|String|Query|Indicates keep delimiters position.|
-|HowToSplit|String|Query|Indicates|
-|outPositionRange|String|Query|Indicates output position range.|
-|worksheet|String|Query|Specify the worksheet of spreadsheet.|
-|range|String|Query|Specify the worksheet range of spreadsheet.|
-|outPath|String|Query|(Optional) The folder path where the workbook is stored. The default is null.|
-|outStorageName|String|Query|Output file Storage Name.|
-|region|String|Query|The spreadsheet region setting.|
-|password|String|Query|The password for opening spreadsheet file.|
+| :- | :- | :- | :- |
+| Spreadsheet | File | FormData | The spreadsheet file to be processed. Supported formats include XLSX, XLS, ODS, CSV, etc. |
+| delimiters | String | Query | Specifies one or more delimiter characters used to split text within cells (e.g., `","`, `";"`, or `Comma`, `Space`,`Semicolon`,`LineBreak`,`Tab`,`Pipe`,`Colon`,`Custom`) |
+| keepDelimitersInResultingCells | Boolean | Query | When `true`, the delimiter characters are retained in the resulting split cells. When `false`, delimiters are removed during the splitting process. |
+| keepDelimitersPosition | String | Query | Specifies where to retain delimiters if `keepDelimitersInResultingCells` is `true`. Options: `None`, `AtTheBeginning`, `AtTheEnd`, `BeforeText`, `AfterText`. |
+| HowToSplit | String | Query | Specifies the method of text segmentation. Options may include: `None`, `SplitToColumns`, `SplitToRows`. |
+| outPositionRange | String | Query | Specifies the target range where the split results will be output (e.g., `"D1:F10"`). |
+| worksheet | String | Query | *(Optional)* The name of the worksheet where text splitting will be applied. If omitted, the operation applies to the first worksheet. |
+| range | String | Query | *(Optional)* The source cell range where text splitting will be applied (e.g., `"A1:A10"`). If omitted, the operation applies to all used cells in the specified worksheet. |
+| outPath | String | Query | *(Optional)* The cloud storage folder path where the processed workbook will be saved. If omitted, the file is saved in the source folder. |
+| outStorageName | String | Query | The name of the cloud storage where the output file will be stored. |
+| region | String | Query | *(Optional)* Sets the locale for text segmentation, which may affect delimiter interpretation and character encoding (e.g., `"en-US"`, `"ja-JP"`). |
+| password | String | Query | *(Optional)* If the uploaded spreadsheet is password-protected, provide the password to open and process the file. |
 
 ### **Response**
 
@@ -85,12 +87,12 @@ When importing data from external systems, fields are often concatenated into si
 
 ## Why should you use the Split Text API?
 
-### **Powerful Splitting Options**
-
 - **Specific Characters**: Split by any single character (comma, semicolon, tab, space)
 - **String Combinations**: Use multi-character delimiters like `||`, `->`, or custom separators
 - **Line Breaks**: Instantly parse multiline cells into separate rows (addresses, comments, descriptions)
 - **Custom Delimiters**: Define any character combination as a delimiter for proprietary data formats
+- **Developer-Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared to building custom chart rendering solutions, this significantly reduces the development workload.
+- **Cost-Effective**: You can remove deduplicate characters without first uploading the workbook, which saves storage space and reduces costs.
 
 ## OpenAPI Specification
 

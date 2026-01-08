@@ -1,16 +1,16 @@
 ---
-title: "Aspose.Cells Cloud Add Text API - A Cloud-based Solution for Dynamically Adding Text to Excel Cells"
+title: "Aspose.Cells Cloud Add Text API - Add Text to Multiple Excel Cells at Once - Insert Prefixes, Suffixes & Labels "
 second_title: "Document"
-ArticleTitle: "How does Aspose.Cells Cloud achieve the intelligent text addition function? - Step-by-Step Guide"
+ArticleTitle: "Bulk Text Insertion for Excel - Add Prefixes, Suffixes & Custom Text to Cells - Step-by-Step Guide"
 linktitle: "AddText"
 type: docs
 url: /add-text/
-keywords: "Excel, Office Cloud, REST API, Spreadsheet, Add test into Excel,Appending text"
-description: "Specify appending text to multiple cells at once, allowing you to add prefixes, suffixes, labels, or any specific characters. You can choose the exact position of the text—in the beginning, at the end, or before or after certain characters in the cell. "
+keywords: "add text to multiple Excel cells, append prefixes suffixes Excel, bulk text insertion Excel, add labels to cells, insert text before after characters, Excel text manipulation API, Aspose.Cells add text, batch edit Excel cells, modify multiple cells at once"
+description: "Add prefixes, suffixes, labels, or any characters to multiple Excel cells simultaneously with Aspose.Cells API. Choose exact text position—beginning, end, before, or after specific characters."
 weight: 100
 ---
 
-Specify appending text to multiple cells at once, allowing you to add prefixes, suffixes, labels, or any specific characters. You can choose the exact position of the text—in the beginning, at the end, or before or after certain characters in the cell.
+Insert text into multiple Excel cells in one operation. Add prefixes, suffixes, labels, or custom characters at the beginning, end, or before/after specific text within cells using Aspose.Cells API.
 
 ## Overview
 
@@ -46,18 +46,18 @@ PUT http://api.aspose.cloud/v4.0/cells/content/add/text
 ### The request parameters of **addText** API are
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
-| :- | :- | :- |:- |
-|Spreadsheet|File|FormData|Upload spreadsheet file.|
-|text|String|Query|Specify the added text content.|
-|position|String|Query|Indicates the specific location for adding text content.None, AtTheBeginning, AtTheEnd, BeforeText, AfterText.  |
-|selectText|String|Query|Indicates selecting the specific position to add text based on the content of the text.|
-|skipEmptyCells|Boolean|Query|Indicates skip empty cells.|
-|worksheet|String|Query|Specify the worksheet of spreadsheet.|
-|range|String|Query|Specify the worksheet range of spreadsheet.|
-|outPath|String|Query|(Optional) The folder path where the workbook is stored. The default is null.|
-|outStorageName|String|Query|Output file Storage Name.|
-|region|String|Query|The spreadsheet region setting.|
-|password|String|Query|The password for opening spreadsheet file.|
+| :- | :- | :- | :- |
+| Spreadsheet | File | FormData | The spreadsheet file to be processed. Supported formats include XLSX, XLS, ODS, CSV, etc. |
+| text | String | Query | The text content to be added to the specified cells in the spreadsheet. |
+| position | String | Query | Specifies where to insert the text relative to the existing cell content. Options:  `AtTheBeginning`, `AtTheEnd`, `BeforeText`, `AfterText`. |
+| selectText | String | Query | *(Optional)* If provided, the text will be added only in cells that contain this exact substring. Used in conjunction with the `position` parameter. |
+| skipEmptyCells | Boolean | Query | When set to `true`, empty cells are skipped and no text is added. When `false`, text is added to all cells in the specified range, including empty ones. |
+| worksheet | String | Query | *(Optional)* The name of the worksheet where text will be added. If omitted, the operation applies to the first worksheet by default. |
+| range | String | Query | *(Optional)* The cell range where text will be added (e.g., `"A1:C10"`). If omitted, the operation applies to all used cells in the specified worksheet. |
+| outPath | String | Query | *(Optional)* The cloud storage folder path where the processed workbook will be saved. If omitted, the file is saved in the source folder. |
+| outStorageName | String | Query | The name of the cloud storage where the output file will be stored. |
+| region | String | Query | *(Optional)* Sets the locale for formatting numbers, dates, and currency in the output file (e.g., `"en-US"`, `"zh-CN"`, `"de-DE"`). |
+| password | String | Query | *(Optional)* If the uploaded spreadsheet is password-protected, provide the password to open and process the file. |
 
 ### **Response**
 
@@ -74,9 +74,29 @@ File
 - **404 Not Found**: The spreadsheet file not accessible.
 - **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
 
-## Where should we use the Merge Local Spreadsheet API?
+## Where should we use the Add Text for Spreadsheet API?
 
-## Why should you use the Merge Local Spreadsheet API?
+- **Dynamic Report Labeling**: Add dynamic titles, date tags, or notes to automatically generated financial statements and sales reports.
+- **Batch File Watermarking**: Add company logos, confidentiality watermarks, or version information to a batch of Excel files.
+- **Template Data Filling**: Automatically fill in client names, amounts, and other text in designated positions of contract or invoice templates.
+- **Data Classification Tagging**: Automatically add classification tags or status labels (e.g., "Pending Review", "Approved") to data rows based on analysis results.
+- **Data Quality Annotation**: Add notes for problematic data during data cleaning.
+- **Batch Text Formatting**: Uniformly add prefixes or suffixes to product names or client names.
+
+## Why should you use the Add Text for Spreadsheet API?
+
+- **Batch Text Addition**: Add text to hundreds of cells or files at once, saving up to 95% of the time compared to manual work
+- **Precise Position Control**: Supports inserting text accurately at six positions, including the start, end, or before/after specific text within a cell
+- **Smart Conditional Handling**: Can decide whether to add text based on whether a cell is empty or contains specific text
+- **Multi-Position Strategy Support**:
+- `AtTheBeginning`: Add the same text before the content of all selected cells
+- `AtTheEnd`: Add text after the content of all selected cells
+- `BeforeText`/`AfterText`: Add text only before or after cells containing specific text
+- `None`: Replace the original content
+- **Precise Range Control**: Allows specifying particular worksheets or cell ranges for operations
+- **Conditional Skip Option**: Supports skipping empty cells to avoid unnecessary text addition
+- **Developer-Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared to building custom chart rendering solutions, this significantly reduces the development workload.
+- **Cost-Effective**: You can convert table data without first uploading the workbook, which saves storage space and reduces costs.
 
 ## OpenAPI Specification
 

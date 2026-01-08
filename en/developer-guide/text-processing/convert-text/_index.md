@@ -1,16 +1,16 @@
 ---
-title: "Aspose.Cells Cloud Web API - Convert text"
-second_title: " Aspose.Cells Cloud – Online, Short-Code,"
+title: "Aspose.Cells Cloud Web API - Convert Text to Numbers in Excel & Clean Special Characters"
+second_title: "Document"
+ArticleTitle: "Excel Data Cleaner - Convert Text to Numbers & Remove Unwanted Characters"
 linktitle: "Convert Text"
 type: docs
 url: /convert-text/
-keywords: ""
-description: "Indicates converting the numbers stored as text into the correct number format, replacing unwanted characters and line breaks with the desired characters, and converting accented characters to their equivalent characters without accents. "
+keywords: "convert text to numbers Excel, remove unwanted characters Excel, replace line breaks Excel, convert accented characters, Excel data cleaning tool, fix numbers stored as text, Aspose.Cells text conversion, clean special characters Excel, Excel data formatting API"
+description: "Convert numbers stored as text to proper numeric format, replace unwanted characters and line breaks, and convert accented characters to their plain equivalents using Aspose.Cells API."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Match all blank cells in an Excel worksheet
 ---
 
-Indicates converting the numbers stored as text into the correct number format, replacing unwanted characters and line breaks with the desired characters, and converting accented characters to their equivalent characters without accents.
+Clean Excel data by converting text-formatted numbers to numeric values, replacing unwanted characters and line breaks, and normalizing accented characters to standard letters with Aspose.Cells API.
 
 ## Overview
 
@@ -23,6 +23,8 @@ Indicates converting the numbers stored as text into the correct number format, 
 
 ## **ConvertText API**
 
+### API Endpoint
+
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/content/convert/text
 ```
@@ -30,17 +32,17 @@ PUT http://api.aspose.cloud/v4.0/cells/content/convert/text
 ### The request parameters of **convertText** API are
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
-| :- | :- | :- |:- |
-|Spreadsheet|File|FormData|Upload spreadsheet file.|
-|convertTextType|String|Query|Indicates the conversion of text type.|
-|sourceCharacters|String|Query|Indicates the source characters.|
-|targetCharacters|String|Query|Indicates the target characters.|
-|worksheet|String|Query|Specify the worksheet of spreadsheet.|
-|range|String|Query|Specify the worksheet range of spreadsheet.|
-|outPath|String|Query|(Optional) The folder path where the workbook is stored. The default is null.|
-|outStorageName|String|Query|Output file Storage Name.|
-|region|String|Query|The spreadsheet region setting.|
-|password|String|Query|The password for opening spreadsheet file.|
+| :- | :- | :- | :- |
+| Spreadsheet | File | FormData | The spreadsheet file to be processed. Supported formats include XLSX, XLS, ODS, CSV, etc. |
+| convertTextType | String | Query | Specifies the type of text conversion to apply, such as converting text-formatted numbers to numeric values, or converting accented characters to plain equivalents. |
+| sourceCharacters | String | Query | Specifies the characters, strings, or patterns to be replaced or removed from the text (e.g., `"é,è,ê"`, `"#N/A"`, `"\\n"` for line breaks). |
+| targetCharacters | String | Query | Specifies the replacement characters or strings that will replace the source characters (e.g., `"e"` for accented letters, `""` for removal, `" "` for line breaks). |
+| worksheet | String | Query | *(Optional)* The name of the worksheet where text conversion will be applied. If omitted, the operation applies to the first worksheet. |
+| range | String | Query | *(Optional)* The cell range where text conversion will be applied (e.g., `"A1:C10"`). If omitted, the operation applies to all used cells in the specified worksheet. |
+| outPath | String | Query | *(Optional)* The cloud storage folder path where the processed workbook will be saved. If omitted, the file is saved in the source folder. |
+| outStorageName | String | Query | The name of the cloud storage where the output file will be stored. |
+| region | String | Query | *(Optional)* Sets the locale for text conversion rules, particularly relevant for language-specific character handling (e.g., `"en-US"`, `"fr-FR"`). |
+| password | String | Query | *(Optional)* If the uploaded spreadsheet is password-protected, provide the password to open and process the file. |
 
 ### **Response**
 
@@ -57,9 +59,21 @@ File
 - **404 Not Found**: The spreadsheet file not accessible.
 - **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
 
-## Where should we use the Merge Local Spreadsheet API?
+## Where should we use the Convert Text API?
 
-## Why should you use the Merge Local Spreadsheet API?
+- **Number Format Correction**: Convert numbers stored as text (e.g., "123.45") into a calculable numeric format
+- **Special Character Cleanup**: Remove unnecessary special symbols, extra spaces, or invisible characters from the data
+- **Line Break Handling**: Replace line breaks in cells with spaces or other delimiters
+- **Accent Character Normalization**: Convert accented letters (e.g., "é", "ñ") to standard letters ("e", "n")
+- **CSV File Preprocessing**: Standardize text format before importing CSV into Excel
+
+## Why should you use the Convert Text API?
+
+- **Automatic Format Conversion**: Convert text-formatted numbers into calculable values in bulk with one click
+- **Character Standardization**: Uniformly handle special characters, diacritics, and encoding issues
+- **Data Consistency**: Ensure that the text format is completely uniform across the entire dataset
+- **Developer-Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared to building custom chart rendering solutions, this significantly reduces the development workload.
+- **Cost-Effective**: You can convert text without first uploading the workbook, which saves storage space and reduces costs.
 
 ## OpenAPI Specification
 

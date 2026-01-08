@@ -1,17 +1,16 @@
 ---
-title: "Aspose.Cells Cloud Web API - Trim character"
+title: "Aspose.Cells Cloud Text Trimming Web API - Remove Extra Spaces & Line Breaks"
 second_title: "Document"
-ArticleTitle: "Trim character in a spreadsheet file – Online, Short-Code"
+ArticleTitle: "Excel Data Cleaner - Trim Characters, Spaces & Line Breaks Automatically – Online, Short-Code"
 linktitle: "Trim Character"
 type: docs
 url: /trim-character/
-keywords: "API, Excel API, Trim Content, Remote Spreadsheet, Cloud Storage, Text Trim, REST API"
-description: "The TrimSpreadsheetContent API is designed to process and trim content within a spreadsheet. This API allows users to remove extra spaces, line breaks, or other unnecessary characters from the content of selected cells. It is particularly useful for cleaning up data entries and ensuring consistency in spreadsheet formatting "
+keywords: "Excel text trimming API, remove extra spaces Excel, delete line breaks Excel, clean spreadsheet content, Aspose.Cells trim characters, Excel data cleaning tool, trim unnecessary characters, normalize cell formatting, Excel content cleanup API"
+description: "Clean Excel data by trimming extra spaces, removing line breaks, and eliminating unnecessary characters from selected cells with Aspose.Cells Trim Character API. Ensure consistent spreadsheet formatting and data quality."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Match all blank cells in an Excel worksheet
 ---
 
-The trim character API is designed to process and trim content within a spreadsheet. This API allows users to remove extra spaces, line breaks, or other unnecessary characters from the content of selected cells. It is particularly useful for cleaning up data entries and ensuring consistency in spreadsheet formatting
+Automatically trim unnecessary characters, extra spaces, and line breaks from Excel cells using Aspose.Cells Trim Character API. Clean data entries and maintain consistent formatting across your spreadsheets.
 
 ## **Overview**
 
@@ -33,6 +32,8 @@ The trim character API is designed to process and trim content within a spreadsh
 
 ## **TrimCharacter API**
 
+### API Endpoint
+
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/content/trim
 ```
@@ -40,21 +41,21 @@ PUT http://api.aspose.cloud/v4.0/cells/content/trim
 ### The request parameters of **trimCharacter** API are
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
-| :- | :- | :- |:- |
-|Spreadsheet|File|FormData|Upload spreadsheet file.|
-|trimContent|String|Query|Specify the trim content.|
-|trimLeading|Boolean|Query|Specify to trim content from the beginning.|
-|trimTrailing|Boolean|Query|Specify to trim content from the end.|
-|trimSpaceBetweenWordTo1|Boolean|Query|Remove excess spaces between words within a cell.|
-|trimNonBreakingSpaces|Boolean|Query|Remove non-breaking spaces.|
-|removeExtraLineBreaks|Boolean|Query|Remove extra line breaks.|
-|removeAllLineBreaks|Boolean|Query|Remove all line breaks.|
-|worksheet|String|Query|Specify the worksheet of spreadsheet.|
-|range|String|Query|Specify the worksheet range of spreadsheet.|
-|outPath|String|Query|(Optional) The folder path where the workbook is stored. The default is null.|
-|outStorageName|String|Query|Output file Storage Name.|
-|region|String|Query|The spreadsheet region setting.|
-|password|String|Query|The password for opening spreadsheet file.|
+| :- | :- | :- | :- |
+| Spreadsheet | File | FormData | The spreadsheet file to be processed. Supported formats include XLSX, XLS, ODS, CSV, etc. |
+| trimContent | String | Query | Specifies the specific characters or strings to be trimmed from cell content. Can be a single character, multiple characters, or a custom pattern. |
+| trimLeading | Boolean | Query | When `true`, removes the specified characters from the beginning of each cell's content. |
+| trimTrailing | Boolean | Query | When `true`, removes the specified characters from the end of each cell's content. |
+| trimSpaceBetweenWordTo1 | Boolean | Query | When `true`, reduces multiple consecutive spaces between words to a single space within each cell. |
+| trimNonBreakingSpaces | Boolean | Query | When `true`, removes non-breaking space characters (Unicode U+00A0) from the cell content. |
+| removeExtraLineBreaks | Boolean | Query | When `true`, reduces multiple consecutive line breaks to a single line break within each cell. |
+| removeAllLineBreaks | Boolean | Query | When `true`, removes all line break characters from the cell content. |
+| worksheet | String | Query | *(Optional)* The name of the worksheet where text trimming will be applied. If omitted, the operation applies to the first worksheet. |
+| range | String | Query | *(Optional)* The cell range where text trimming will be applied (e.g., `"A1:C10"`). If omitted, the operation applies to all used cells in the specified worksheet. |
+| outPath | String | Query | *(Optional)* The cloud storage folder path where the processed workbook will be saved. If omitted, the file is saved in the source folder. |
+| outStorageName | String | Query | The name of the cloud storage where the output file will be stored. |
+| region | String | Query | *(Optional)* Sets the locale for text processing, which may affect space and line break handling for specific languages (e.g., `"en-US"`, `"ar-SA"`). |
+| password | String | Query | *(Optional)* If the uploaded spreadsheet is password-protected, provide the password to open and process the file. |
 
 ### **Response**
 
@@ -71,9 +72,22 @@ File
 - **404 Not Found**: The spreadsheet file not accessible.
 - **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
 
-## Where should we use the Merge Local Spreadsheet API?
+## Where should we use the Trim Character API?
 
-## Why should you use the Merge Local Spreadsheet API?
+- **User Input Normalization**: Clean up manual user input table data, removing excess spaces and line breaks.
+- **Customer Database Maintenance**: Clean up redundant spaces and formatting issues in customer names, addresses, and contact details.
+- **Automated Report Cleanup**: Cleans up the data source format before generating automated reports.
+- **Data Migration Preparation**: Clean up formatting issues before data is migrated to the new system
+
+## Why should you use the Trim Character API?
+
+- **Reduced Labor Costs**: Eliminate time-consuming manual efforts for data cleaning
+- **Reduced Error Cost**: Avoid analysis errors caused by formatting issues
+- Pay Per Use: No fixed fees, only the actual throughput is billed
+- **Zero Infrastructure Investment**: No need to maintain servers or software
+- **Multi-format Support**: Supports multiple format processing such as XLSX, XLS, CSV, ODS, etc
+- **Developer-Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared to building custom chart rendering solutions, this significantly reduces the development workload.
+- **Cost-Effective**: You can remove deduplicate characters without first uploading the workbook, which saves storage space and reduces costs.
 
 ## OpenAPI Specification
 
