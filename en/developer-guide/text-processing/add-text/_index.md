@@ -96,7 +96,7 @@ File
 - **Precise Range Control**: Allows specifying particular worksheets or cell ranges for operations
 - **Conditional Skip Option**: Supports skipping empty cells to avoid unnecessary text addition
 - **Developer-Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared to building custom chart rendering solutions, this significantly reduces the development workload.
-- **Cost-Effective**: You can convert table data without first uploading the workbook, which saves storage space and reduces costs.
+- **Cost-Effective**: You can append text in cell without first uploading the workbook, which saves storage space and reduces costs.
 
 ## OpenAPI Specification
 

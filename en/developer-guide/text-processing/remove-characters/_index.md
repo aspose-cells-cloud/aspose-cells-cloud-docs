@@ -88,7 +88,7 @@ File
 - **Improve Analysis**: Get clean, analysis-ready data by isolating numbers or text as needed
 - **Fix Import Errors**: Remove problematic characters that break databases and formulas
 - **Developer-Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared to building custom chart rendering solutions, this significantly reduces the development workload.
-- **Cost-Effective**: You can remove charts without first uploading the workbook, which saves storage space and reduces costs.
+- **Cost-Effective**: You can remove characters without first uploading the workbook, which saves storage space and reduces costs.
 
 ## OpenAPI Specification
 
