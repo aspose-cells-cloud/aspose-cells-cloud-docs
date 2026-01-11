@@ -1,19 +1,22 @@
 ---
-title: "Aspose.Cells Cloud Web API - Search Content in Remote Spreadsheet"
+title: "Aspose.Cells Cloud Excel Text Search Web API - Find Text in Remote Spreadsheet"
 second_title: "Document"
-ArticleTitle: "Search Content in a Remote Spreadsheet"
+ArticleTitle: "Search Text in Remote Excel Spreadsheets - Find Data in Specific"
 linktitle: "Search Remote Spreadsheet Content"
 type: docs
 url: /search-content-in-remote-spreadsheet/
-keywords: "remote spreadsheet search, Excel API, search text in spreadsheet, cloud storage search, Aspose.Cells API"
-description: "Efficiently search for text in a remote spreadsheet using the Aspose.Cells API."
+keywords: "Excel search API, text search API, find in spreadsheet API, range search API, Aspose Cells search API, remote Excel search, cloud spreadsheet search API, text lookup API, Excel data discovery API, workbook search API, API text finder"
+description: "Easily search for specific text within any remote Excel spreadsheets stored in cloud storage. Find data, formulas, or text across entire workbooks or specific cell ranges. Cloud-based search tool for quick data discovery without downloading files."
 weight: 100
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Match all blank cells in an Excel worksheet, remote spreadsheet search, cloud storage search
 ---
 
-Search for specified text in a remote spreadsheet.
+Programmatically search for specific text within any Excel spreadsheets using Aspose.Cells Cloud API. Find text, numbers, or formulas in files stored in cloud storage. RESTful API for automated data discovery, content analysis, and spreadsheet auditing workflows.
+
 
 ### **Search Content in Remote Spreadsheet API**
+
+### API Endpoint
 
 ```
 PUT http://api.aspose.cloud/v4.0/cells/{name}/search/content
@@ -23,13 +26,13 @@ PUT http://api.aspose.cloud/v4.0/cells/{name}/search/content
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 | :- | :- | :- |:- |
-|name|String|Path|The name of the workbook file to search.|
-|searchText|String|Query|The text to search for in the spreadsheet.|
-|ignoringCase|Boolean|Query|Indicates whether to ignore case in the search.|
-|folder|String|Query|The folder path where the workbook is stored.|
-|storageName|String|Query|(Optional) The name of the custom cloud storage. Default storage is used if omitted.|
-|region|String|Query|The spreadsheet region setting.|
-|password|String|Query|The password for opening the spreadsheet file.|
+| name | String | Path | **Required**. The filename of the Excel workbook (including extension) where the text search will be performed, e.g., `sales_data.xlsx`. |
+| searchText | String | Query | **Required**. The exact string, number, or partial content to locate across the entire workbook or worksheet(s). |
+| ignoringCase | Boolean | Query | **Optional**. Determines search case-sensitivity. Set to `true` for case-insensitive matching (e.g., "Report" matches "REPORT"); default is typically `false`. |
+| folder | String | Query | **Optional**. The directory path within your cloud storage that contains the target workbook. If omitted, the root folder is assumed. |
+| storageName | String | Query | **Optional**. The name identifier for a custom-configured cloud storage service. If not specified, the API uses the default storage associated with the account. |
+| region | String | Query | **Optional**. The locale setting (e.g., `es-ES`) to apply during the search, which may affect text normalization or collation rules. |
+| password | String | Query | **Optional**. The decryption password required to access a password-protected Excel file. Omit this parameter if the file is not encrypted. |
 
 ### **Response**
 
@@ -75,12 +78,18 @@ PUT http://api.aspose.cloud/v4.0/cells/{name}/search/content
 
 ## Where should we use the Search content within the Spreadsheet API?
 
-When you need to Search content within the Spreadsheet, you can use this API.
+- **Comprehensive Workbook Compliance Audit**: Quickly scan the entire Excel file to identify all sensitive terms (such as "Confidential Clause", "Internal Data"), which is used for enterprise data security and compliance checks.
+- **Cross-Sheet Data Association Query**: When project information is scattered across multiple worksheets, simply search for a specific project number or customer name, and immediately locate all related data to achieve cross-sheet information integration.
+- **Batch Template Content Verification**: After automated report generation, scan multiple Excel files in batches to confirm that all preset placeholders (such as `{{Date}}`) have been correctly replaced, ensuring the completeness and accuracy of the report.
+- **Historical Data Archiving and Mining**: Analyze historical data files exported from the old system, search for specific event codes or business terms, quickly understand the historical business logic, and conduct data archaeology and analysis.
 
 ## Why should you use the Search content within the Spreadsheet API?
 
-- Effortlessly search content within a remote spreadsheet with this API.
-- Development can be quickly completed through the existing SDK.
+- **Developer-Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared to building custom chart rendering solutions, this significantly reduces the development workload.
+- **Reduced Labor Costs**: Reduced the need for positions dedicated to document consolidation.
+- **Pay-per-use**: No upfront investment, only pay for API calls actually used.
+- **Zero Maintenance Costs**: No need to maintain servers, update software, or deal with compatibility issues.
+- **Preserves complex Excel formatting** in universally accessible PDF format.
 
 ## How to Use the Search for broken links within the range of the Spreadsheet API with SDKs
 

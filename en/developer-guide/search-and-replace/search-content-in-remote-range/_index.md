@@ -1,20 +1,20 @@
 ---
-title: "Aspose.Cells Cloud Web API - Search Range Content in Remote Spreadsheet"
+title: "Aspose.Cells Cloud Excel Text Search Web API - Find Text in Remote Spreadsheet Ranges"
 second_title: "Document"
-ArticleTitle: "Search Range Content in Remote Spreadsheet"
+ArticleTitle: "Search Text in Remote Excel Spreadsheets - Find Data in Specific Ranges"
 linktitle: "Search Remote Range Content"
 type: docs
 url: /search-content-in-remote-range/
-keywords: "Excel API, Remote Spreadsheet Search, Cloud Storage, Data Retrieval, Spreadsheet Search, Text Search API"
-description: "Efficiently search for text within a specified range of a remote spreadsheet stored in cloud storage using the Excel API."
+keywords: "Excel search API, text search API, find in spreadsheet API, range search API, Aspose Cells search API, remote Excel search, cloud spreadsheet search API, text lookup API, Excel data discovery API, workbook search API, API text finder"
+description: "Easily search for specific text within any range of remote Excel spreadsheets stored in cloud storage. Find data, formulas, or text across entire workbooks or specific cell ranges. Cloud-based search tool for quick data discovery without downloading files."
 weight: 100
-kwords: "Excel, Office Cloud, REST API, Spreadsheet, Text Search, JSON, CSV, PDF, Markdown, Match Blank Cells in Excel"
 ---
 
-
-Search for specified text within a range of a remote spreadsheet.
+Programmatically search for specific text within any range of Excel spreadsheets using Aspose.Cells Cloud API. Find text, numbers, or formulas in remote files stored in cloud storage. RESTful API for automated data discovery, content analysis, and spreadsheet auditing workflows.
 
 ## **Search Content In Remote Range API**
+
+### API Endpoint
 
 ```
 PUT http://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{cellArea}/search/content
@@ -24,15 +24,15 @@ PUT http://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{cel
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 | :- | :- | :- |:- |
-|name|String|Path|The name of the spreadsheet file.|
-|worksheet|String|Path|The name of the worksheet.|
-|cellArea|String|Path|The range of cells to search within.|
-|searchText|String|Query|The text to search for.|
-|ignoringCase|Boolean|Query|Specify if the search should ignore case sensitivity.|
-|folder|String|Query|The folder in which the file is stored.|
-|storageName|String|Query|(Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.|
-|region|String|Query|The spreadsheet region setting.|
-|password|String|Query|The password for opening the spreadsheet file.|
+| name | String | Path | **Required**. The filename (including extension) of the Excel workbook to search, e.g., `customer_data.xlsx`. |
+| worksheet | String | Path | **Required**. The exact name of the worksheet within the workbook to search in, e.g., `Orders_2024`. |
+| cellArea | String | Path | **Required**. The target cell range for the search, specified in A1 notation (e.g., `B2:H100`). The search is confined to this area. |
+| searchText | String | Query | **Required**. The specific text string, number, or partial content to find within the defined cell area. |
+| ignoringCase | Boolean | Query | **Optional**. When set to `true`, the search ignores case differences (e.g., "Report" matches "report"). Default is usually `false` (case-sensitive). |
+| folder | String | Query | **Optional**. The directory path in your cloud storage where the workbook is located. If omitted, the root directory is used. |
+| storageName | String | Query | **Optional**. The name identifier for a custom cloud storage configuration. If not specified, the default storage for the account is used. |
+| region | String | Query | **Optional**. The locale setting (e.g., `en-AU`) to apply, which may affect the interpretation of region-specific characters or formats during the search. |
+| password | String | Query | **Optional**. The password to decrypt and access a password-protected spreadsheet file. Omit if the file is not encrypted. |
 
 ### **Response**
 
@@ -76,14 +76,19 @@ PUT http://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{cel
 - **404 Not Found**: The spreadsheet file not accessible.
 - **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
 
-## Where should we use the Search content within the range of Spreadsheet API?
+## Where should we use the Search content within the range of the Spreadsheet API?
 
-When you need to Search content within the range of Spreadsheet, you can use this API.
+- **Large-scale Data Quality Check**: During the acceptance stage of the data warehouse ETL process, search for missing field descriptions, undefined abbreviations or placeholder text (such as `"TBD"` or `"NULL"`) in the data mapping table (such as `DataDictionary!B2:F1000`) to identify incomplete data definitions.
+- **Dynamic Report Generation and Content Extraction**: In the automated reporting system, intelligently search and extract the current period data blocks marked with specific identifiers (such as `"[KPI]"`) from the template worksheet containing mixed data (such as `Monthly_Metrics!C10:G50`), for assembling the final report.
+- **Contract and Legal Document Analysis**: When the legal team reviews the electronic spreadsheet appendix containing a large number of clauses, efficiently search for specific legal terms (such as `"liability limit"`) or contract party names or dates within the specified range (such as `Contract_Terms!A column`), to accelerate the review process.
 
-## Why should you use the Search content within the range of Spreadsheet API?
+## Why should you use the Search content within the range of the Spreadsheet API?
 
-- Effortlessly search content within a remote spreadsheet range with this API.
-- Development can be quickly completed through the existing SDK.
+- **Developer-Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared to building custom chart rendering solutions, this significantly reduces the development workload.
+- **Reduced Labor Costs**: Reduced the need for positions dedicated to document consolidation.
+- **Pay-per-use**: No upfront investment, only pay for API calls actually used.
+- **Zero Maintenance Costs**: No need to maintain servers, update software, or deal with compatibility issues.
+- **Preserves complex Excel formatting** in universally accessible PDF format.
 
 ## How to Use the Search for broken links within the range of the Spreadsheet API with SDKs
 
