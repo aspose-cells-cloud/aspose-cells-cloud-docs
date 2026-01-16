@@ -6,7 +6,7 @@ linktitle: "Unprotect Spreadsheet"
 type: docs
 url: /unprotect-spreadsheet/
 keywords: "Excel unprotect API, remove Excel password programmatically, Excel decryption API, automate Excel unlock, Excel file unprotect SDK, bulk remove Excel passwords, enterprise Excel password removal"
-description: "Forgot your Excel password? Our secure tool removes both "open" and "modify" password protection from Excel files instantly. Recover access to your spreadsheets—no technical skills needed. Fast, safe, and compatible with .xlsx and .xls formats."
+description: "Forgot your Excel password? Our secure tool removes both open and modify password protection from Excel files instantly. Recover access to your spreadsheets—no technical skills needed. Fast, safe, and compatible with .xlsx and .xls formats."
 weight: 100
 ---
 
