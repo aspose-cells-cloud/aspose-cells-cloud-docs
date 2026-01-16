@@ -1,64 +1,60 @@
 ---
-title: "Add digital signature for Excel workbook" 
+title: "Add digital signature for Excel workbook"
 second_title: "Document"
 linktitle: "Digital signature"
 type: docs
 url: /excel-digital-signature/
-aliases: [/protect/digital-signature/,/workbook/digital-signature/]
-keywords: "Add digital signature for an Excel workbook."
-description: "Aspose.Cells Cloud REST API support adding digital signature for an Excel workbook. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+aliases:
+  - /protect/digital-signature/
+  - /workbook/digital-signature/
+keywords: "digital signature, Excel workbook, Aspose.Cells Cloud, REST API, spreadsheet, add digital signature"
+description: "Learn how to add a digital signature to an Excel workbook using the Aspose.Cells Cloud REST API. The guide includes request details, cURL example, and SDK samples for C#, Java, PHP, Ruby, Node.js, Python, Perl, and Go."
 weight: 35
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Add digital signature for Excel workbook
 ---
 
-This REST API indicates to add a `digital signature` for an Excel workbook.
+This REST API adds a **digital signature** to an Excel workbook.
 
-## RSET API
+## REST API
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/{name}/digitalsignature
- 
 ```
 
 The request parameters are:
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| name | string | path | Workbook name. |
-| digitalsignaturefile | string | query | Digital signature file parameters. |
-| password | string | query |   |
-| folder | string | query | Workbook's folder. |
-| storageName | string | query | storage name. |
+| Parameter Name          | Type   | Location                     | Description                                 |
+|-------------------------|--------|------------------------------|---------------------------------------------|
+| **name**                | string | path                         | The name of the workbook.                  |
+| **digitalsignaturefile**| string | query                        | The digital‑signature file to be applied.  |
+| **password**            | string | query                        | Password for the workbook, if protected.   |
+| **folder**              | string | query                        | Folder where the workbook is stored.       |
+| **storageName**         | string | query                        | Name of the storage service to use.        |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PostDigitalSignature) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PostDigitalSignature) defines a publicly accessible programming interface that lets you perform REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the cURL command‑line tool to call Aspose.Cells web services. The example below demonstrates a request to the API:
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "http://api.aspose.cloud/v3.0/cells/{name}/digitalsignature?digitalsignaturefile=signature.pfx&password=YourPassword" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
@@ -67,9 +63,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/" \
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the fastest way to integrate digital‑signature functionality. SDKs handle low‑level details so you can focus on your business logic. Check the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call Aspose.Cells web services with various SDKs:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -3,72 +3,67 @@ title: "Batch Unlock"
 second_title: "Document"
 type: docs
 url: /batch/unlock
-keywords: "Batch unlock of multiple Excel files."
-description: "Aspose.Cells Cloud API supports batch unlock of multiple excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "batch unlock, Aspose.Cells Cloud, Excel, REST API, spreadsheet, cloud SDK"
+description: "Unlock multiple Excel files in batch using Aspose.Cells Cloud REST API. Supports SDKs for C#, Java, Python, and other languages."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Batch Unlock
 ---
 
-This REST API indicates to `batch unlock` of eligible files.
+This REST API unlocks eligible Excel files in batch.
 
-## RSET API
+## REST API
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/batch/unlock
- 
 ```
 
 The request parameters are:
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| BatchLockRequest  |  | body |   |
+| Parameter Name | Type | Location | Description |
+|----------------|------|----------|-------------|
+| **BatchLockRequest** |  | body | Request body that contains the unlock settings. |
 
-**BatchLockRequest  Properties**
+### **BatchLockRequest** Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
- SourceFolder | string |  | [optional]
- MatchCondition | MatchConditionRequest |  | [optional]
- Password | string |  | [optional]
- OutFolder | string |  | [optional]
+| Name          | Type                     | Description                                 | Notes |
+|---------------|--------------------------|---------------------------------------------|-------|
+| SourceFolder  | string                   | Folder that contains the source Excel files.| [optional] |
+| MatchCondition| MatchConditionRequest    | Criteria used to select files for unlocking.| [optional] |
+| Password      | string                   | Password applied to protected workbooks.   | [optional] |
+| OutFolder     | string                   | Destination folder for the unlocked files. | [optional] |
 
-**MatchConditionRequest Properties**
+### **MatchConditionRequest** Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
- RegexPattern | string |  | [optional]
- FullMatchConditions | string[] |  | [optional]
+| Name               | Type      | Description                                 | Notes |
+|--------------------|-----------|---------------------------------------------|-------|
+| RegexPattern       | string    | Regular expression to match file names.    | [optional] |
+| FullMatchConditions| string[]  | Exact file name conditions to match.       | [optional] |
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/Batch/PostBatchUnlock) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
 curl -v "http://api.aspose.cloud/v3.0/cells/batch/unlock" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--D "{\"SourceFolder\":\"CellsTests\",\"OutFolder\":\"Output\",\"MatchCondition\":{\"RegexPattern\":\"(^Book)(.+)(xlsx$)\"},\"Password\":\"123456\"}" 
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{"SourceFolder":"CellsTests","OutFolder":"Output","MatchCondition":{"RegexPattern":"(^Book)(.+)(xlsx$)"},"Password":"123456"}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
@@ -77,9 +72,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/batch/unlock" \
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your unlock tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the fastest way to develop unlock functionality. An SDK abstracts low‑level details so you can focus on your business logic. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

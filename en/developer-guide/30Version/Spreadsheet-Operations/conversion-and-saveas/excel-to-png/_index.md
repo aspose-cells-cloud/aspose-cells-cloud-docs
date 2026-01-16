@@ -3,28 +3,27 @@ title: "Excel to PNG"
 second_title: "Document"
 linktitle: "Excel to PNG"
 type: docs
-url:  convert-excel-file-to-png-file/
-keywords: "Convert excel files to PNG files."
-description: "Aspose.Cells Cloud REST API support conversion excel files to CSV files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+url: convert-excel-file-to-png-file/
+keywords: "Excel to PNG, Aspose.Cells Cloud, REST API, spreadsheet conversion, PNG format"
+description: "Convert Excel spreadsheets to PNG images using Aspose.Cells Cloud REST API. Supports multiple SDKs and provides detailed examples for various programming languages."
 weight: 90
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Excel to CSV
 ---
 
-This REST API indicates to `convert` a spreadsheet file to a PNG format file.
+This REST API converts a spreadsheet file to PNG format.
 
 **Query Parameter**
 
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-|password|string| The password needed to open an Excel file. |
-|storageName|string| The storage name where the file is situated. |
-|checkExcelRestriction|bool| Whether check restriction of excel file when user modify cells related objects. |
+| Parameter Name          | Type   | Description                                                                                         |
+|--------------------------|--------|-----------------------------------------------------------------------------------------------------|
+| password                 | string | The password required to open the Excel file.                                                       |
+| storageName              | string | The name of the storage where the file is located.                                                  |
+| checkExcelRestriction    | bool   | Determines whether to check Excel file restrictions when modifying cells or related objects.      |
 
 **Request Body Parameter**
 
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-|datafile|data file | The data file save into the first part of the multipart content.|
+| Parameter Name | Type      | Description                                                                 |
+|----------------|-----------|-----------------------------------------------------------------------------|
+| datafile       | data file | The spreadsheet file included in the first part of the multipart request. |
 
 **Response**
 
@@ -32,24 +31,23 @@ This REST API indicates to `convert` a spreadsheet file to a PNG format file.
 
 ## REST API Specification
 
-|**API**|**Type**|**Description**|**Swagger Link**|
-| :- | :- | :- | :- |
-|/cells/convert/png|POST|Convert a spreadsheet to a PNG file.|[PostConvertWorkbookToPNG](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToPNG)|
+| **API**                | **Type** | **Description**                     | **Swagger Link** |
+|------------------------|----------|-------------------------------------|------------------|
+| /cells/convert/png     | POST     | Convert a spreadsheet to a PNG file.| [PostConvertWorkbookToPNG](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToPNG) |
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToPNG) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use **cURL** command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/png" 
-     -H "accept: multipart/form-data" 
-     -H "Content-Type: multipart/form-data" 
-     -H "x-aspose-client: curl" 
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/png" \
+     -H "accept: multipart/form-data" \
+     -H "Content-Type: multipart/form-data" \
+     -H "x-aspose-client: curl" \
      -d {"File":{}}
 ```
 
@@ -57,14 +55,12 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/png"
 
 {{< tab tabNum="12" >}}
 
-```
-
+```json
 {
   "Filename": "xxxxxx.png",
   "FileSize": xxxx,
   "FileContent": "File Content: base64_encoded_string"
 }
-
 ```
 
 {{< /tab >}}
@@ -73,9 +69,10 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/png"
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
+
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
 {{< tab tabNum="1" >}}
@@ -128,14 +125,8 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 {{< /tabs >}}
 
-## Other APIs implement this function
+## Other APIs Implementing Similar Functions
 
-[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) API lets you save MS Excel file as CSV file with additional settings and save the result to the storage.
-
-This REST API `convert` excel file to CSV.
-
-[PUT /cells/convert](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) API lets you convert MS Excel file to CSV file with additional settings and save the result to the response.
-
-This REST API `export` excel file to CSV.
-
-[GET /cells/{name}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook  ) API lets you convert MS Excel file to CSV file with additional settings and save the result to the response.
+- **[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)** – Saves an Excel file as CSV (or other formats) with additional settings and stores the result.
+- **[PUT /cells/convert](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)** – Converts an Excel file to CSV (or other formats) with optional parameters and returns the result in the response.
+- **[GET /cells/{name}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)** – Retrieves an Excel file and can convert it to CSV (or other formats) on the fly.

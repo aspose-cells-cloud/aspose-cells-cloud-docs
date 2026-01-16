@@ -4,60 +4,54 @@ second_title: "Document"
 linktitle: "Set page setup"
 type: docs
 url: /set-page-setup/
-keywords: "Set page setup for an Excel worksheet."
-description: "Aspose.Cells Cloud REST API support adding an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "Excel, page setup, Aspose.Cells Cloud, REST API, worksheet"
+description: "Set page setup for an Excel worksheet using Aspose.Cells Cloud REST API. Includes request details, cURL example, and SDK code snippets for multiple programming languages."
 weight: 20
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Set page setup for an Excel worksheet
 ---
-This REST API indicates `Set page setup for an Excel worksheet`.
+This REST API sets the page setup for an Excel worksheet.
 
-## RSET API
+## REST API
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pagesetup
-
 ```
 
 The request parameters are:
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| name | string | path | Document name. |
-| sheetName | string | path | The new sheet name. |
-| [pageSetup](/cells/page-setup) | object | body | TPage Setup description. |
-| folder | string | query | Document folder. |
-| storageName | string | query | storage name. |
+| Parameter Name | Type   | Location                     | Description                              |
+|----------------|--------|------------------------------|------------------------------------------|
+| name           | string | path                         | Document name.                           |
+| sheetName      | string | path                         | The worksheet name.                      |
+| pageSetup      | object | body                         | Page setup description.                 |
+| folder         | string | query                        | Document folder.                         |
+| storageName    | string | query                        | Storage name.                            |
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/PageSetup/PostPageSetup) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Tasks/pagesetup" \
 -X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+-H "Authorization: Bearer <jwt token>" \
 -d {pageSetup}
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
@@ -66,7 +60,7 @@ curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Tasks/pages
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 

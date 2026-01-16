@@ -5,74 +5,68 @@ linktitle: "Compress Excel Files"
 type: docs
 url: /compress-excel-files/
 aliases: [/compress/]
-keywords: "Compress excel files."
-description: "Aspose.Cells Cloud REST API support compressing excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "compress excel files, aspose cells cloud, excel compression, spreadsheet compression, rest api, file compression"
+description: "Use Aspose.Cells Cloud REST API to compress Excel files (XLS, XLSX, XLSM, XLSB, ODS). Choose the compression level, process multiple files at once, and integrate via SDKs for various programming languages."
 weight: 39
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Compress
 ---
 
-This REST API indicates to `compress` data in an Excel file.
+This REST API compresses data in an Excel file.
 
 - Compress XLS, XLSX, XLSM, XLSB, ODS
-- Quick way to compress multiple Excel spreadsheet files
+- Quickly compress multiple Excel spreadsheet files
 - Choose the level of compression
-- Support multi-files
+- Supports multiple files
 
-## RSET API
+## REST API
 
 ```bash
-
 POST https://api.aspose.cloud/v3.0/cells/compress
-
 ```
 
 The request parameters are:
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| file | file | formData | File to upload |
-| CompressLevel | integer | query |   |
+| Parameter Name | Type    | Path/Query String/HTTP Body | Description                                                |
+|----------------|---------|-----------------------------|------------------------------------------------------------|
+| file           | file    | formData                    | File to upload                                             |
+| CompressLevel  | integer | query                       | Compression level (0‑100); higher values indicate stronger compression |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostCompress) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
 curl -v "http://api.aspose.cloud/v3.0/cells/compress?CompressLevel=88" \
 -X POST \
 -H "Content-Type: multipart/form-data" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>" \
 -F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx' 
+-F 'xxxxx2=@xxxx2.xlsx'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
-
+```json
 {
-    "Files":
-    [
-        { 
-            "Filename":"xxxx1",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
+    "Files": [
+        {
+            "Filename": "xxxx1",
+            "FileSize": 274022,
+            "FileContent": "-----Base64String--------"
         },
-        { 
-            "Filename":"xxxx2",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
+        {
+            "Filename": "xxxx2",
+            "FileSize": 274022,
+            "FileContent": "-----Base64String--------"
         }
     ]
 }
-
 ```
 
 {{< /tab >}}
@@ -81,9 +75,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/compress?CompressLevel=88" \
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the fastest way to accelerate development. An SDK abstracts low‑level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

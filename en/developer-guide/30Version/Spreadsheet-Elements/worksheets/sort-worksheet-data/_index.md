@@ -1,77 +1,72 @@
 ---
-title: "Sort data of range  on an Excel worksheet"
+title: "Sort data of range on an Excel worksheet"
 second_title: "Document"
 linktitle: "Sort"
 type: docs
 url: /worksheets/sort-data/
 aliases: [/sort-worksheet-data/]
-keywords: "Sort data of range  on an Excel worksheet."
-description: "Aspose.Cells Cloud REST API support sortting data of range  on an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "Excel, Aspose.Cells Cloud, REST API, Sort range, Worksheet"
+description: "The Aspose.Cells Cloud REST API enables sorting data within a specified range on an Excel worksheet. SDKs are available for C#, Java, Python, PHP, Ruby, Go, Node.js, Swift, Android, and Perl."
 weight: 20
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Sort data of range  on an Excel worksheet
 ---
 
-This REST API indicates `sort worksheet range data`.
- 
-## RSET API
- 
+This REST API **sorts worksheet range data**.
+
+## REST API
+
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/sort
- 
 ```
-The request parameters are: 
- 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description| 
-| :- | :- | :- |:- | 
-| name | string | path | The workbook name. |
-| sheetName | string | path | The worksheet name. |
-| cellArea | string | query | The range to sort. |
-| dataSorter |  | body | with sorting settings. |
-| folder | string | query | The workbook folder. |
-| storageName | string | query | storage name. |
- 
+
+The request parameters are:
+
+| Parameter Name | Type   | Location                     | Description                                                            |
+|----------------|--------|------------------------------|------------------------------------------------------------------------|
+| name           | string | path                         | The workbook name.                                                     |
+| sheetName      | string | path                         | The worksheet name.                                                    |
+| cellArea       | string | query                        | The cell range to be sorted (e.g., `A5:A10`).                          |
+| dataSorter     | object | body                         | JSON object containing the sorting settings.                           |
+| folder         | string | query                        | The folder that contains the workbook.                                 |
+| storageName    | string | query                        | The name of the storage where the workbook is located.                 |
+
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetRangeSort) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
- 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
- 
+
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
+
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
 {{< tab tabNum="1" >}}
- 
+
 ```bash
- 
 curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/sort?cellArea=A5:A10" \
 -X POST \
 -d '{"CaseSensitive":false, "HasHeaders":false, "KeyList":[{"Key":0, "SortOrder":"descending"}], "SortLeftToRight":false}' \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
+
 ## Cloud SDK Family
- 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
- 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
- 
+
+Using an SDK is the fastest way to develop. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
+
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}

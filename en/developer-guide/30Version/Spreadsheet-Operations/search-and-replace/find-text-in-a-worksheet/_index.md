@@ -6,50 +6,45 @@ type: docs
 url: /worksheets/find-text/
 aliases: [/find-text-in-a-worksheet/]
 weight: 40
-keywords: "Find text from Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) worksheet."
-description: "Aspose.Cells Cloud REST API support finding text from Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Find text in an Excel worksheet
+keywords: "Excel, Aspose.Cells Cloud, REST API, find text, worksheet, spreadsheet"
+description: "Use Aspose.Cells Cloud REST API to find text in an Excel worksheet. The API is available across multiple SDKs and programming languages."
 ---
 
-This REST API indicates to `search` text in Excel worksheet.
+This REST API searches for text in an Excel worksheet.
 
-## RSET API
+## REST API
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/findText
- 
 ```
 
 The request parameters are:
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| name | string | path | Document name. |
-| sheetName | string | path | The worksheet name. |
-| text | string | query | Text to search. |
-| folder | string | query | Document's folder. |
-| storageName | string | query | storage name. |
+| Parameter Name | Type   | Location                     | Description                         |
+|----------------|--------|------------------------------|-------------------------------------|
+| name           | string | path                         | Document name.                      |
+| sheetName      | string | path                         | Worksheet name.                     |
+| text           | string | query                        | Text to search.                     |
+| folder         | string | query                        | Document's folder.                  |
+| storageName    | string | query                        | Storage name.                       |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetTextSearch) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetTextSearch) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The example below shows how to call the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
+```bash
 curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/findText?text=a" -H "accept: application/json"
-
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
+```json
 {
   "Status": "string",
   "TextItems": {
@@ -72,7 +67,6 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/fi
     ]
   }
 }
-
 ```
 
 {{< /tab >}}
@@ -81,9 +75,10 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/fi
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the fastest way to develop. An SDK abstracts low‑level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
+
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
 {{< tab tabNum="1" >}}

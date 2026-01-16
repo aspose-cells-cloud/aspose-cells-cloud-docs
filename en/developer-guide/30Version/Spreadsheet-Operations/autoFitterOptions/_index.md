@@ -4,21 +4,20 @@ second_title: "Document"
 linktitle: "Auto Fitter Options"
 type: docs
 url: /auto-fitter-options/
-keywords: "Auto Fitter Options."
-description: "Aspose.Cells Cloud REST API support get excel files to kinds of format files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "auto fitter, autofit, spreadsheet, Excel, Aspose.Cells Cloud, REST API, save options, formatting, rendering"
+description: "This document describes the AutoFitterOptions properties available in the Aspose.Cells Cloud API. It explains how to control row‑height auto‑fitting, merged‑cell handling, hidden rows/columns, language settings, and rendering options for Excel files."
 weight: 79
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Save Options
 ---
 
 # AutoFitterOptions Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**AutoFitMergedCellsType** | **string** | Gets and set the type of auto fitting row height of merged cells. |
-**IgnoreHidden** | **boolean** | Ignores the hidden rows/columns. |
-**OnlyAuto** | **boolean** | Indicates whether only fit the rows which height are not customed. |
-**DefaultEditLanguage** | **string** | Gets or sets default edit language. |
-**MaxRowHeight** | **double** | Gets and sets the max row height(in unit of Point) when autofitting rows. |
-**AutoFitWrappedTextType** | **string** | Gets and sets the type of auto fitting wrapped text. |
-**FormatStrategy** | **string** | Gets and sets the formatted strategy. |
-**ForRendering** | **string** | Indicates whether fit for rendering purpose. |
+| Name                     | Type    | Description                                                                                              | Notes |
+|--------------------------|---------|----------------------------------------------------------------------------------------------------------|-------|
+| **AutoFitMergedCellsType** | **string** | Gets and sets the type used to auto‑fit the row height of merged cells.                                 | |
+| **IgnoreHidden**           | **boolean** | When enabled, hidden rows and columns are ignored during the auto‑fit process.                         | |
+| **OnlyAuto**               | **boolean** | Indicates whether only rows whose heights are not manually customized should be auto‑fitted.          | |
+| **DefaultEditLanguage**    | **string** | Gets and sets the default editing language for the workbook.                                            | |
+| **MaxRowHeight**           | **double** | Gets and sets the maximum row height (in points) applied when auto‑fitting rows.                       | |
+| **AutoFitWrappedTextType** | **string** | Gets and sets the method used to auto‑fit wrapped text within cells.                                    | |
+| **FormatStrategy**         | **string** | Gets and sets the formatting strategy applied during the auto‑fit operation.                           | |
+| **ForRendering**           | **string** | Indicates whether the auto‑fit should be performed for rendering purposes.                             | |

@@ -3,73 +3,68 @@ title: "Batch Convert Excel Files"
 second_title: "Document"
 type: docs
 url: /batch/convert
-keywords: "Batch conversion of multiple excel files."
-description: "Aspose.Cells Cloud API supports batch conversion of multiple excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "batch conversion, Excel, Aspose.Cells Cloud, REST API, PDF, CSV, JSON, Markdown, spreadsheet"
+description: "Learn how to use Aspose.Cells Cloud API to batch‑convert multiple Excel files into formats such as PDF, CSV, JSON, or Markdown. This guide includes REST endpoint details, request parameters, cURL example, and SDK code snippets for various languages."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Batch Convert
 ---
 
-This REST API indicates to `batch conversion` of eligible files
+This REST API enables **batch conversion** of eligible files.
 
-## RSET API
+## REST API
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/batch/convert
- 
 ```
 
-The request parameters are:
+### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| batchConvertRequest |  | body |   |
+| Parameter Name       | Type   | Location | Description                                           |
+|----------------------|--------|----------|-------------------------------------------------------|
+| **batchConvertRequest** | object | body     | Request body containing conversion settings.         |
 
-**BatchConvertRequest Properties**
+#### BatchConvertRequest Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
- SourceFolder | string |  | [optional]
- MatchCondition | MatchConditionRequest |  | [optional]
- Format | string |  | [optional]
- OutFolder | string |  | [optional]
- SaveOptions | SaveOptions |  | [optional]
+| Name          | Type                | Description                                           | Notes |
+|---------------|---------------------|-------------------------------------------------------|-------|
+| **SourceFolder** | string              | Path to the folder that contains the source Excel files. | [optional] |
+| **MatchCondition** | MatchConditionRequest | Conditions used to select files for conversion.      | [optional] |
+| **Format**        | string              | Target format for conversion (e.g., `pdf`, `csv`).   | [optional] |
+| **OutFolder**     | string              | Destination folder where converted files will be saved. | [optional] |
+| **SaveOptions**   | SaveOptions         | Additional options that control how files are saved. | [optional] |
 
-**MatchConditionRequest Properties**
+#### MatchConditionRequest Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
- RegexPattern | string |  | [optional]
- FullMatchConditions | string[] |  | [optional]
+| Name               | Type      | Description                                          | Notes |
+|--------------------|-----------|------------------------------------------------------|-------|
+| **RegexPattern**   | string    | Regular expression used to filter file names.       | [optional] |
+| **FullMatchConditions** | string[] | List of exact file name conditions for matching.    | [optional] |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PostBatchConvert) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
 curl -v "http://api.aspose.cloud/v3.0/cells/batch/convert" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--D "{\"SourceFolder\":\"CellsTests\",\"OutFolder\":\"Output\",\"MatchCondition\":{\"RegexPattern\":\"(^Book)(.+)(xlsx$)\"},\"Format\":\"pdf\",\"SaveOptions\":{\"SaveFormat\":\"pdf\",\"CalculateFormula\":true,\"EnableHTTPCompression\":true,\"OnePagePerSheet\":true,\"CreateDirectory\":false,\"Compliance\":\"None\"}}" 
+-H "Authorization: Bearer <jwt token>" \
+-D "{\"SourceFolder\":\"CellsTests\",\"OutFolder\":\"Output\",\"MatchCondition\":{\"RegexPattern\":\"(^Book)(.+)(xlsx$)\"},\"Format\":\"pdf\",\"SaveOptions\":{\"SaveFormat\":\"pdf\",\"CalculateFormula\":true,\"EnableHTTPCompression\":true,\"OnePagePerSheet\":true,\"CreateDirectory\":false,\"Compliance\":\"None\"}}"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
@@ -78,7 +73,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/batch/convert" \
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 
@@ -116,7 +111,7 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 {{< tab tabNum="6" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Examples-Batch-Convet.js" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2b4189bc27ae92abf73c36b4df0" "Examples-Batch-Convet.js" >}}
 
 {{< /tab >}}
 

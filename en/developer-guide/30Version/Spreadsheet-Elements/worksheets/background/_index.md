@@ -4,15 +4,12 @@ second_title: "Document"
 linktitle: "Background"
 type: docs
 url: /worksheets/background/
-keywords: "How to work with background on an Excel worksheet."
-description: "Aspose.Cells Cloud REST API support working with background on an Excel Worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "Excel background, worksheet background, Aspose.Cells Cloud, REST API, add background, delete background, Excel, SDK, Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, Swift"
+description: "Use Aspose.Cells Cloud REST API to add or delete a background image on an Excel worksheet. The SDK is available for Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift."
 weight: 20
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, How to work with background on an Excel worksheet
 ---
 
-## Working with background on an Excel worksheet.
+## Working with background on an Excel worksheet
 
 - [How to set background on an Excel worksheet.](/cells/worksheets/background/add/) 
-- [How to delete background on an Excel worksheet.](/cells/worksheets/background/delete/) 
-
-
+- [How to delete background on an Excel worksheet.](/cells/worksheets/background/delete/)

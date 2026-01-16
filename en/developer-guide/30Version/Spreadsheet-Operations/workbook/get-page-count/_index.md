@@ -5,15 +5,14 @@ linktitle: "Pages"
 type: docs
 url: /get-page-count-from-an-excel-file/
 aliases: [/workbook/page-count/,/workbook/get/page-count/]
-keywords: "Getting pages count on an Excel workbook."
-description: "Aspose.Cells Cloud REST API support getting pages count on an Excel workbook. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "Excel, page count, Aspose.Cells Cloud, REST API, workbook, spreadsheet"
+description: "Learn how to retrieve the page count of an Excel workbook using Aspose.Cells Cloud REST API. Includes request details, cURL example, and SDK code samples for multiple programming languages."
 weight: 10
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Get page count
 ---
 
-This REST API indicates to `get page count` for workbook.
+This REST API returns the **page count** for a workbook.
 
-## RSET API
+## REST API
 
 ```bash
  
@@ -23,15 +22,15 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/pagecount
 
 The request parameters are:
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| name | string | path | Document name. |
-| folder | string | query | Document's folder. |
-| storageName | string | query | storage name. |
+| Parameter Name | Type   | Location | Description                         |
+|----------------|--------|----------|-------------------------------------|
+| name           | string | path     | The name of the Excel document.     |
+| folder         | string | query    | The folder that contains the document. |
+| storageName    | string | query    | The name of the storage to use.     |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/GetPageCount) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 

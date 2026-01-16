@@ -1,53 +1,56 @@
 ---
-title: "Gets Excel file to other formats"
+title: "Get Excel file to other formats"
 second_title: "Document"
 linktitle: "Get Excel"
 type: docs
-url: /get different formats files/
-aliases: [/export-excel-workbook-to-different-file-formats/, /export-different-formats/]
-keywords: "Get excel files to kinds of format files."
-description: "Aspose.Cells Cloud REST API support get excel files to kinds of format files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+url: /get-different-formats-files/
+aliases:
+  - /export-excel-workbook-to-different-file-formats/
+  - /export-different-formats/
+keywords: "Aspose.Cells, Excel conversion, CSV, PDF, HTML, ODS, JSON, image formats, spreadsheet export"
+description: "Aspose.Cells Cloud REST API enables converting Excel workbooks to a wide range of formats such as CSV, PDF, HTML, ODS, JSON, and various image types. SDKs are available for many programming languages, including Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift."
 weight: 10
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Gets Excel file to other formats
 ---
 
-This REST API indicates to `get` excel file to different format file.
+This REST API retrieves an Excel workbook in a different format.
 
-**Query Parameter**
+**Query Parameters**
 
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-|format|string|The file format: CSV, xls, HTML, mhtml, ods, pdf, xml, txt, tiff, xlsb, xlsm, xlsx, xltm, xltx, xps, png, jpg, gif, emf, bmp, md, Numbers, wmf, svg, and so on.|
-|password|string|The password needed to open an Excel file.|
-|isAutoFit|string|Auto-fits the rows and columns width in this workbook. The default value is false.|
-|onlySaveTable|string| true/false|
-|outPath|string| Path to save the result. If it's a single file, the `outPath` should encompass both the filename and extension. In the case of multiple files, the `outPath` should only include the folder. |
-|outStorageName|string| The storage name where the saved file is situated. |
-|checkExcelRestriction|bool| Whether check restriction of excel file when user modify cells related objects. |
-|region|string| The regional settings for workbook. |
-|pageWideFitOnPerSheet|bool| The page wide fit on worksheet. |
-|pageTallFitOnPerSheet|bool| The page tall fit on worksheet. |
-|onePagePerSheet|bool| When converting to PDF format, one page per sheet.  |
-|folder|string|Original workbook folder.|
-|storageName|string|The storage name where the file is situated.|
+| Parameter Name            | Type   | Description                                                                                                                                                     |
+|---------------------------|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| format                    | string | Target file format (e.g., CSV, XLS, HTML, MHTML, ODS, PDF, XML, TXT, TIFF, XLSB, XLSM, XLSX, XLTM, XLTX, XPS, PNG, JPG, GIF, EMF, BMP, MD, Numbers, WMF, SVG, etc.). |
+| password                  | string | Password required to open the Excel file.                                                                                                                       |
+| isAutoFit                 | bool   | Automatically fits rows and columns width. Default is **false**.                                                                                               |
+| onlySaveTable             | bool   | When **true**, only table data is saved. Accepts `true` or `false`.                                                                                             |
+| outPath                   | string | Path to save the result. For a single file, include the filename and extension; for multiple files, specify only the folder.                                   |
+| outStorageName            | string | Name of the storage where the output file will be saved.                                                                                                        |
+| checkExcelRestriction     | bool   | Checks Excel restrictions when modifying cells or related objects.                                                                                              |
+| region                    | string | Regional settings applied to the workbook.                                                                                                                      |
+| pageWideFitOnPerSheet     | bool   | Fits the page width to each worksheet when converting to PDF.                                                                                                   |
+| pageTallFitOnPerSheet     | bool   | Fits the page height to each worksheet when converting to PDF.                                                                                                  |
+| onePagePerSheet           | bool   | Generates one PDF page per worksheet.                                                                                                                            |
+| folder                    | string | Folder path of the original workbook.                                                                                                                            |
+| storageName               | string | Name of the storage where the source file is located.                                                                                                            |
 
 ## REST API
 
-|**API**|**Type**|**Description**|**Swagger Link**|
-| :- | :- | :- | :- |
-|/cells/{name}|GET|Exports workbook to other format.|[GetWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)|
+| API               | Type | Description                     | Swagger Link |
+|-------------------|------|---------------------------------|--------------|
+| /cells/{name}     | GET  | Exports a workbook to another format. | [GetWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook) |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
-You can use **cURL** command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL.
 
 {{< tabs tabTotal="1" tabID="11" tabName11="Request" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
-
-curl -X PUT "https://api.aspose.cloud/v3.0/cells/book1.xlsx?format=pdf" -H "accept: multipart/form-data" -H "Content-Type: multipart/form-data" -H "x-aspose-client: Containerize.Swagger"}
+curl -X PUT "https://api.aspose.cloud/v3.0/cells/book1.xlsx?format=pdf" \
+     -H "accept: multipart/form-data" \
+     -H "Content-Type: multipart/form-data" \
+     -H "x-aspose-client: Containerize.Swagger"
 ```
 
 {{< /tab >}}
@@ -56,9 +59,9 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/book1.xlsx?format=pdf" -H "acce
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the fastest way to develop. An SDK abstracts low‑level details so you can focus on your project tasks. Please check the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

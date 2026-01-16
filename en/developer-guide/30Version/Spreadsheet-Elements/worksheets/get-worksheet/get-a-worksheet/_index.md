@@ -4,66 +4,59 @@ second_title: "Document"
 linktitle: "Worksheet"
 type: docs
 url: /worksheets/get-worksheet/
-keywords: "Get worksheet to different format from an Excel worksheet."
-description: "Aspose.Cells Cloud REST API support getting worksheet to different format from an Excel Worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "Aspose.Cells Cloud, Excel, worksheet export, REST API, CSV, PDF, PNG, JPEG, GIF, BMP, TIFF, EMF, XPS, OTS, XLS, XLSX, XLSB, XLSM, ODS, FODS, Numbers, spreadsheet, cloud API"
+description: "The Aspose.Cells Cloud REST API enables exporting a specific worksheet from an Excel file to various formats such as XLSX, CSV, PDF, PNG, and more. This document provides request details, parameter explanations, a cURL example, and SDK code snippets for multiple programming languages."
 weight: 10
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Get worksheet from an Excel worksheet
 ---
 
-This REST API indicates `get worksheet description` or `export worksheet to kinds of format file`.
+This REST API allows you to **export a worksheet** from an Excel file to many different file formats.
 
-You can export formats: [XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [ODS](https://docs.fileformat.com/spreadsheet/ods/), [TXT](https://docs.fileformat.com/word-processing/txt/), [PDF](https://docs.fileformat.com/pdf/), [OTS](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [DIF](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/),[GIF](https://docs.fileformat.com/image/gif/), [BMP](https://docs.fileformat.com/image/bmp/), [WMF](https://docs.fileformat.com/image/wmf/),[TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [NUMBERS](https://docs.fileformat.com/spreadsheet/numbers/), [FODS](https://docs.fileformat.com/spreadsheet/fods/).
+You can export to the following formats: [XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [ODS](https://docs.fileformat.com/spreadsheet/ods/), [TXT](https://docs.fileformat.com/word-processing/txt/), [PDF](https://docs.fileformat.com/pdf/), [OTS](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [DIF](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/), [GIF](https://docs.fileformat.com/image/gif/), [BMP](https://docs.fileformat.com/image/bmp/), [WMF](https://docs.fileformat.com/image/wmf/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [NUMBERS](https://docs.fileformat.com/spreadsheet/numbers/), [FODS](https://docs.fileformat.com/spreadsheet/fods/).
 
-## RSET API
+## REST API
 
 ```bash
- 
 GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
- 
 ```
 
 The request parameters are:
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| name | string | path | The document name. |
-| sheetName | string | path | The worksheet name. |
-| format | string | query | The exported file format.|
-| verticalResolution | integer | query | Sets the vertical resolution for generated images, in dots per inch. |
-| horizontalResolution | integer | query | Sets the horizontal resolution for generated images, in dots per inch. |
-| area | string | query | Exported area. |
-| pageIndex | integer | query | Exported page index. |
-| folder | string | query | The document folder. |
-| storageName | string | query | storage name. |
+| Parameter Name        | Type    | Path/Query String/HTTPBody | Description                                                                 |
+|-----------------------|---------|----------------------------|-----------------------------------------------------------------------------|
+| name                  | string  | path                       | Name of the Excel file.                                                     |
+| sheetName             | string  | path                       | Name of the worksheet to export.                                            |
+| format                | string  | query                      | Target file format for the exported worksheet.                              |
+| verticalResolution    | integer | query                      | Vertical resolution (dots per inch) for generated image formats.           |
+| horizontalResolution  | integer | query                      | Horizontal resolution (dots per inch) for generated image formats.         |
+| area                  | string  | query                      | Cell range to export (e.g., `A1:D10`).                                      |
+| pageIndex             | integer | query                      | Index of the page to export when the worksheet is paginated.               |
+| folder                | string  | query                      | Folder path in storage where the source file is located.                    |
+| storageName           | string  | query                      | Name of the Aspose Cloud storage.                                           |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheet) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheet) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1?format=gif" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
-
+```json
 {
-stream
-} 
-
+  "stream"
+}
 ```
 
 {{< /tab >}}
@@ -72,7 +65,7 @@ stream
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK takes care of low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 

@@ -5,15 +5,14 @@ linktitle: "Add Watermark into Excel Files"
 type: docs
 url: /add-watermark-into-excel-files/
 aliases: [ /watermark/]
-keywords: "Add water marker for Excel files."
-description: "Aspose.Cells Cloud REST API support adding water marker for Excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "watermark, Excel, Aspose.Cells Cloud, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
+description: "Use Aspose.Cells Cloud REST API to add a watermark to Excel files. The API is available through multiple SDKs for languages such as C#, Java, PHP, Ruby, Node.js, Python, Perl, and Go."
 weight: 39
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Watermark
 ---
 
-This REST API indicates to add  `watermark` on Excel files.
+This REST API adds a **watermark** to Excel files.
 
-## RSET API
+## REST API
 
 ```bash
  
@@ -23,15 +22,15 @@ POST http://api.aspose.cloud/v3.0/cells/watermark
 
 The request parameters are:
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| file | file | formData | File to upload |
-| text | string | query |   |
-| color | string | query |   |
+| Parameter Name | Type   | Location                     | Description                                             |
+|----------------|--------|------------------------------|---------------------------------------------------------|
+| file           | file   | formData (multipart body)   | The Excel file to which the watermark will be applied. |
+| text           | string | query                        | The watermark text to display.                          |
+| color          | string | query                        | The color of the watermark in ARGB hex format (e.g., `004433ff`). |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostWatermark) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
@@ -53,19 +52,18 @@ curl -v "http://api.aspose.cloud/v3.0/cells/watermark?text=aspose.cells.cloud&co
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-    "Files":
-    [
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
+    "Files": [
+        {
+            "Filename": "xxxxx",
+            "FileSize": 274022,
+            "FileContent": "-----Base64String--------"
         },
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
+        {
+            "Filename": "xxxxx",
+            "FileSize": 274022,
+            "FileContent": "-----Base64String--------"
         }
     ]
 }
@@ -78,9 +76,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/watermark?text=aspose.cells.cloud&co
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the fastest way to develop. An SDK abstracts low‑level details, allowing you to focus on your business logic. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -4,60 +4,57 @@ second_title: "Document"
 linktitle: "Modify an Excel file password"
 type: docs
 url: /workbook/password/modify/
-aliases: [/set-modify-password-of-excel-workbooks/,/workbook/modify-password/]
-keywords: "Modify password for an Excel workbook."
-description: "Aspose.Cells Cloud REST API support modifying password for an Excel workbook. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+aliases:
+  - /set-modify-password-of-excel-workbooks/
+  - /workbook/modify-password/
+keywords: "Excel, Aspose Cells, REST API, modify password, workbook protection"
+description: "Use Aspose.Cells Cloud REST API to modify the password protection of an Excel workbook. SDKs are available for C#, Java, PHP, Ruby, Node.js, Python, Perl, Go and more."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Set modify password of an Excel workbook
 ---
 
-This REST API indicates to protect document from changes.
+This REST API protects a document from changes.
 
-## RSET API
+## REST API
 
 ```bash
- 
 PUT http://api.aspose.cloud/v3.0/cells/{name}/writeProtection
- 
 ```
 
-The request parameters are:
+### Request parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| name | string | path | Document name. |
-| password |  | body | Modification password. |
-| folder | string | query | Document's folder. |
-| storageName | string | query | storage name. |
+| Parameter Name | Type   | Location | Description |
+|----------------|--------|----------|-------------|
+| **name**       | string | path     | Name of the Excel workbook. |
+| **password**   | string | body     | Password used to modify the protection. |
+| **folder**     | string | query    | Folder where the workbook is stored. |
+| **storageName**| string | query    | Name of the storage service. |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PutDocumentProtectFromChanges) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PutDocumentProtectFromChanges) defines a publicly accessible programming interface that lets you perform REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The example below shows how to call the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/writeProtection" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--d "{ \"Password\": \"aspose\"}" 
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{ "Password": "aspose"}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
@@ -66,9 +63,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/writeProtectio
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the fastest way to develop. An SDK handles low‑level details, allowing you to focus on your business logic. Please check the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

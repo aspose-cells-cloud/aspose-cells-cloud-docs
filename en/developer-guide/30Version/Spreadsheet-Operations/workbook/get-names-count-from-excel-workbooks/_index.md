@@ -5,15 +5,14 @@ linktitle: "Names"
 type: docs
 url: /get-names-from-an-excel-file/
 aliases: [/get-names-count-from-excel-workbooks/,/workbook/names/,/workbook/get/names/]
-keywords: "Getting names on an Excel workbook."
-description: "Aspose.Cells Cloud REST API support getting names on an Excel workbook. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "Aspose.Cells, Excel, workbook names, REST API, Cloud SDK"
+description: "Retrieve defined names from an Excel workbook using the Aspose.Cells Cloud REST API. Supports multiple SDKs (C#, Java, Python, Node.js, etc.) for rapid development."
 weight: 120
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Get names from an Excel workbook
 ---
 
-This REST API indicates to get names from an Excel workbook.
+This REST API retrieves the defined names from an Excel workbook.
 
-## RSET API
+## REST API
 
 ```bash
  
@@ -23,15 +22,15 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/names
 
 The request parameters are:
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| name | string | path | The workbook name. |
-| folder | string | query | The workbook folder. |
-| storageName | string | query | storage name. |
+| Parameter Name | Type   | Location | Description                              |
+|----------------|--------|----------|------------------------------------------|
+| name           | string | path     | The workbook file name.                  |
+| folder         | string | query    | The folder that contains the workbook.   |
+| storageName    | string | query    | The name of the storage to use.          |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkbookNames) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services. The example below demonstrates how to call the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
@@ -83,9 +82,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/names" \
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the fastest way to develop. An SDK handles low‑level details, allowing you to focus on your project. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

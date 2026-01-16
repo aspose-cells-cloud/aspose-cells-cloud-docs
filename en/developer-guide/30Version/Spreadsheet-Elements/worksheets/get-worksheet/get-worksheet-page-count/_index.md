@@ -4,57 +4,50 @@ second_title: "Document"
 linktitle: "PageCount"
 type: docs
 url: /worksheets/page-count/
-keywords: "Get page count on an Excel worksheet."
-description: "Aspose.Cells Cloud REST API support getting page count on an Excel Worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "Excel, worksheet, page count, Aspose.Cells Cloud, REST API"
+description: "Retrieve the page count of an Excel worksheet using Aspose.Cells Cloud REST API. Includes request details, a cURL example, and SDK code samples for multiple programming languages."
 weight: 10
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Get page count for an Excel worksheet
 ---
 
-This REST API indicates `get page count` for worksheet.
+This REST API returns the **page count** for a worksheet.
 
-## RSET API
+## REST API
 
 ```bash
- 
 GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pagecount
- 
 ```
 
-The request parameters are:
+**Request parameters**
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| name | string | path | Document name. |
-| sheetName | string | path | The worksheet name. |
-| folder | string | query | Document's folder. |
-| storageName | string | query | storage name. |
+| Parameter   | Type   | Location | Description                     |
+|-------------|--------|----------|---------------------------------|
+| name        | string | path     | Document name.                  |
+| sheetName   | string | path     | Worksheet name.                 |
+| folder      | string | query    | Folder that contains the document. |
+| storageName | string | query    | Name of the storage.            |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/GetPageCount) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/GetPageCount) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The example below shows how to call the API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "http://api.aspose.cloud/v3.0/cells/worksheets/Sheet1/pagecount" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
-
+```text
 3
- 
 ```
 
 {{< /tab >}}
@@ -63,9 +56,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/worksheets/Sheet1/pagecount" \
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the fastest way to develop. An SDK abstracts low‑level details so you can focus on your business logic. See the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

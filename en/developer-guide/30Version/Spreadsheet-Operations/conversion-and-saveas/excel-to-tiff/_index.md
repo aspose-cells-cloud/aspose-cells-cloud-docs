@@ -5,35 +5,34 @@ linketitle: "Excel to Tiff"
 type: docs
 url: /convert-excel-file-to-tiff-file/
 aliases: [/convert-excel-file-to-tiff-in-cloud/,/convert/excel-to-tiff/]
-keywords: "Convert excel files to tiff files."
-description: "Aspose.Cells Cloud REST API support conversion excel files to tiff files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "Excel to TIFF, Aspose.Cells Cloud, REST API, spreadsheet conversion, file format conversion"
+description: "Learn how to convert Excel workbooks to TIFF images using Aspose.Cells Cloud REST API. Includes cURL commands and SDK examples for multiple programming languages."
 weight: 90
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Excel to TIFF
 ---
 
-This REST API `saveas` excel file to TIFF.
+This REST API **saveAs** saves an Excel file as a TIFF image.
 
-[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) API lets you save MS Excel file as TIFF file with additional settings and save the result to the storage.
+[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) API lets you save an MS Excel file as a TIFF file with additional settings and store the result in the cloud storage.
 
-This REST API `convert` excel file to TIFF.
+This REST API **convert** converts an Excel file to TIFF.
 
-[PUT /cells/convert](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) API lets you convert MS Excel file to TIFF file with additional settings and save the result to the response.
+[PUT /cells/convert](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) API lets you convert an MS Excel file to a TIFF image with additional settings and return the result in the response.
 
-This REST API `export` excel file to TIFF.
+This REST API **export** exports an Excel file to TIFF.
 
-[GET /cells/{name}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook  ) API lets you convert MS Excel file to TIFF file with additional settings and save the result to the response.
+[GET /cells/{name}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook) API lets you export an MS Excel file to TIFF with additional settings and return the result in the response.
 
 ## REST API
 
-|**API**|**Type**|**Description**|**Swagger Link**|
-| :- | :- | :- | :- |
-|/cells/convert|PUT|Converts workbook from request content to some format|[PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)|
-|/cells/{name}|GET|Exports workbook to other format.|[GetWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)|
-|/cells/{name}/saveAs|POST|Export workbook to Format|[PostDocumentSaveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)|
+| **API**               | **Type** | **Description**                                                            | **Swagger Link** |
+|-----------------------|----------|-----------------------------------------------------------------------------|------------------|
+| /cells/convert        | PUT      | Converts a workbook provided in the request body to the specified format. | [PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) |
+| /cells/{name}         | GET      | Exports the specified workbook to another format.                          | [GetWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook) |
+| /cells/{name}/saveAs  | POST     | Exports the workbook to a chosen format and saves it to cloud storage.    | [PostDocumentSaveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) |
 
-These APIs define a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+These APIs define a publicly accessible programming interface and let you perform REST interactions directly from a web browser.
 
-You can use **cURL** command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following examples demonstrate how to call the Cloud API with cURL.
 
 {{< tabs tabTotal="3" tabID="11" tabName11="convert" tabName12="saveas" tabName13="export">}}
 
@@ -41,41 +40,35 @@ You can use **cURL** command-line tool to access Aspose.Cells web services easil
 
 ```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/convert?format=tiff" \
--X PUT \
--d {"File":{}} \
--H "Content-Type:  multipart/form-data" \
--H "Accept:  multipart/form-data" \
--H "Authorization: Bearer <jwt token>"
-
+  -X PUT \
+  -d '{"File":{}}' \
+  -H "Content-Type: multipart/form-data" \
+  -H "Accept: multipart/form-data" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="12" >}}
 
 ```bash
-
 curl -v "https://api.aspose.cloud/v3.0/cells/book1.xlsx/saveas?newfilename=book1.tiff" \
--X POST \
--d "{'SaveFormat':'tiff', 'ImageFormat': 'tiff'}" \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X POST \
+  -d '{"SaveFormat":"tiff","ImageFormat":"tiff"}' \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="13" >}}
 
 ```bash
-
 curl -v "https://api.aspose.cloud/v3.0/cells/book1.xlsx?format=html" \
--X GET \
--d "{'SaveFormat':'tiff', 'ExportImagesAsBase64': 'true'}" \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
-
+  -X GET \
+  -d '{"SaveFormat":"tiff","ExportImagesAsBase64":"true"}' \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
@@ -83,9 +76,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/book1.xlsx?format=html" \
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the fastest way to develop. An SDK handles low‑level details so you can focus on your project. Please check the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

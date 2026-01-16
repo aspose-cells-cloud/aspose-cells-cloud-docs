@@ -5,69 +5,57 @@ linktitle: "Calculate"
 type: docs
 url: /worksheets/calculate-formula/
 aliases: [/calculate-formula-in-a-worksheet/]
-keywords: "Calculate formula on an Excel worksheet."
-description: "Aspose.Cells Cloud REST API support calculating formula on an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "Aspose.Cells Cloud, Excel formula calculation, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, Swift"
+description: "Use Aspose.Cells Cloud REST API to calculate formulas in an Excel worksheet. The API supports multiple SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, Swift) and provides ready‑to‑use examples."
 weight: 20
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Calculate formula on an Excel worksheet
 ---
 
-This REST API indicates get `calculate formula value` in a worksheet.
+This REST API returns the **calculated value of a formula** in a worksheet.
 
-## RSET API
+## REST API
 
 ```bash
- 
 GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/formulaResult
- 
 ```
 
 The request parameters are:
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| name | string | path | Document name. |
-| sheetName | string | path | Worksheet name. |
-| formula | string | query | The formula. |
-| folder | string | query | Document's folder. |
-| storageName | string | query | storage name. |
+| Parameter Name | Type   | Location                     | Description                                 |
+|----------------|--------|------------------------------|---------------------------------------------|
+| name           | string | path                         | Name of the Excel file.                     |
+| sheetName      | string | path                         | Name of the worksheet that contains the formula. |
+| formula        | string | query                        | The formula to be evaluated (e.g., `SUM(A5:A10)`). |
+| folder         | string | query                        | Folder where the document is stored.        |
+| storageName    | string | query                        | Name of the storage service (if applicable).|
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetCalculateFormula) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetCalculateFormula) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the **cURL** command‑line tool to call Aspose.Cells web services easily. The example below shows how to request a formula result with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet2/formulaResult?formula=SUM(A5:A10)" \
 -X GET \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-
   "Value": {
-
     "Value": "0"
-
   },
-
   "Code": "200",
-
   "Status": "OK"
-
-} 
- 
+}
 ```
 
 {{< /tab >}}
@@ -76,9 +64,9 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet2
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the fastest way to integrate the API. An SDK handles low‑level details so you can focus on your business logic. See the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

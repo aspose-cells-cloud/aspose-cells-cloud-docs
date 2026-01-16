@@ -4,58 +4,58 @@ second_title: "Document"
 linktitle: "Template File"
 type: docs
 url: /create-an-excel-file-with-template-file/
-aliases: [/create-excel-workbook-from-a-template-file/,/workbook/new-from-a-template-file/,/workbook/create/template-file/]
-keywords: "How to create an Excel workbook with a smart marker template."
-description: "Aspose.Cells Cloud REST API how to create an Excel workbook from a smart marker template. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+aliases:
+  - /create-excel-workbook-from-a-template-file/
+  - /workbook/new-from-a-template-file/
+  - /workbook/create/template-file/
+keywords: "Excel workbook, template file, Aspose.Cells Cloud, REST API, create workbook from template"
+description: "Create an Excel workbook from a template file using Aspose.Cells Cloud REST API. This guide covers request parameters, a cURL example, and SDK code snippets for various programming languages."
 weight: 30
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, How to create an Excel workbook with a template file
 ---
 
-This REST API indicates to create `workbook` from a `template file`.
+This REST API creates a **workbook** from a **template file**.
 
-**Query Parameter**
+### Query Parameters
 
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-|templateFile|string| |
-|dataFile|string| |
-|isWriteOver|string| true/false |
-|folder|string|Original workbook folder.|
-|storageName|string|Storage name.|
+| Parameter Name | Type   | Description |
+|----------------|--------|-------------|
+| `templateFile` | string | Name of the template file stored in the cloud. |
+| `dataFile`     | string | Name of the data file (e.g., XML, JSON) used to populate the template. |
+| `isWriteOver`  | string | Flag indicating whether to overwrite an existing file. Accepts `true` or `false`. |
+| `folder`       | string | Folder path where the original workbook resides. |
+| `storageName`  | string | Name of the storage service. |
 
-**Request Body Parameter**
+### Request Body Parameter
 
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-|data|file| |
+| Parameter Name | Type | Description |
+|----------------|------|-------------|
+| `data`         | file | File containing the data for the smart‑marker template. |
 
 ## REST API
 
-|**API**|**Type**|**Description**|**Swagger Link**|
-| :- | :- | :- | :- |
-|/cells/{name}|PUT|Create a new Excel Workbook from a template file|[PutWorkbookCreate](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookCreate)|
+| **API**            | **Type** | **Description**                                 | **Swagger Link** |
+|--------------------|----------|-------------------------------------------------|------------------|
+| `/cells/{name}`    | PUT      | Create a new Excel workbook from a template file | [PutWorkbookCreate](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookCreate) |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookCreate) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use **cURL** command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
-curl -X PUT "https://api.aspose.cloud/v3.0/cells/newworkbook.xlsx?templateFile=Calendar.xlsx&dataFile=Sample_Data.xml&isWriteOver=true" -H "accept: application/json" -H "x-aspose-client: Containerize.Swagger"
-
-
+```bash
+curl -X PUT "https://api.aspose.cloud/v3.0/cells/newworkbook.xlsx?templateFile=Calendar.xlsx&dataFile=Sample_Data.xml&isWriteOver=true" \
+     -H "accept: application/json" \
+     -H "x-aspose-client: Containerize.Swagger"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
-
+```json
 {
   "Status": "string",
   "Workbook": {
@@ -114,7 +114,6 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/newworkbook.xlsx?templateFile=C
     "Password": "string"
   }
 }
-
 ```
 
 {{< /tab >}}
@@ -123,9 +122,9 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/newworkbook.xlsx?templateFile=C
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK abstracts low‑level details, letting you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

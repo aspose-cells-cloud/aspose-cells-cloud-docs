@@ -5,64 +5,61 @@ linktitle: "Columns"
 type: docs
 url: /worksheets/autofit/columns/
 aliases: [/autofit-multiple-columns-of-worksheet/]
-keywords: "Autofit columns on an Excel workbook"
-description: "Aspose.Cells Cloud REST API support autofitting columns on an Excel workbook. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "Autofit columns, Excel workbook, Aspose.Cells Cloud, REST API, SDK"
+description: "Use Aspose.Cells Cloud REST API to autofit multiple columns in an Excel worksheet. SDKs are available for C#, Java, PHP, Ruby, Node.js, Python, Perl, Go and more."
 weight: 20
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Autofit multiple columns on an Excel worksheet
 ---
 
-This REST API indicates to autofit `multiple columns` on an Excel worksheet.
+This REST API autofits **multiple columns** on an Excel worksheet.
 
-## RSET API
+## REST API
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitcolumns
- 
 ```
 
 The request parameters are:
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| name | string | path | The file name. |
-| sheetName | string | path | The worksheet name.  |
-| firstColumn | integer | query | The start column index.  |
-| lastColumn | integer | query |  The end column index. |
-| [autoFitterOptions](/cells/auto-fitter-options/) |  | body |   Auto Fitter Options.  |
-| firstRow | integer | query |   |
-| lastRow | integer | query |   |
-| folder | string | query |   |
-| storageName | string | query | storage name. |
+| Parameter Name | Type    | Location                     | Description                                           |
+|----------------|---------|------------------------------|-------------------------------------------------------|
+| name           | string  | path                         | The file name.                                        |
+| sheetName      | string  | path                         | The worksheet name.                                   |
+| firstColumn    | integer | query                        | The start column index.                               |
+| lastColumn     | integer | query                        | The end column index.                                 |
+| autoFitterOptions* | object | body                         | AutoFitter options (see [Auto Fitter Options](/cells/auto-fitter-options/)). |
+| firstRow       | integer | query                        | The start row index for autofit (optional).          |
+| lastRow        | integer | query                        | The end row index for autofit (optional).            |
+| folder         | string  | query                        | Folder path in storage (optional).                    |
+| storageName    | string  | query                        | Storage name (optional).                              |
+
+\*The parameter name is displayed as a link to the related documentation.
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostAutofitWorksheetColumns) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "http://api.aspose.cloud/v3.0/cells/sampleAutoFit.xlsx/worksheets/Sheet1/autofitcolumns?lastColumn=5&firstColumn=0" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>" \
--d '{"AutoFitMergedCells" : true, "IgnoreHidden" : true, "OnlyAuto" : true}' 
+-d '{"AutoFitMergedCells" : true, "IgnoreHidden" : true, "OnlyAuto" : true}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
@@ -71,7 +68,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/sampleAutoFit.xlsx/worksheets/Sheet1
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 

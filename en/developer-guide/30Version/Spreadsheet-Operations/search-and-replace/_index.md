@@ -4,14 +4,13 @@ second_title: "Document"
 linktitle: "Search and Replace"
 type: docs
 url: /search-and-replace/
-aliases: [/working-with-text/，/text/]
-keywords: "Get, find, and replace text from Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) files."
-description: "Aspose.Cells Cloud REST API support getting, finding, and replacing text from Excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+aliases: [/working-with-text/, /text/]
+keywords: "Aspose.Cells Cloud, Excel, search and replace, text extraction, REST API, SDK"
+description: "Use Aspose.Cells Cloud REST API to get, find, and replace text in Excel files (XLS, XLSX, XLSM, XLSB) and ODS. Supports multiple SDKs including .NET, Java, Python, PHP, and more."
 weight: 20
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Text
 ---
 
-Text operate  is a complex process for Excel fie. Many factors contribute to the complexity and therefore, should be taken into account during the export process. The ability to text operates kinds of formats and types of data into the file with a precise professional quality is a top feature of Aspose.Cells Cloud.
+Text operations are a complex process for Excel files. Many factors contribute to this complexity and should be considered during the export process. The ability to handle various formats and data types with precise, professional quality is a key feature of Aspose.Cells Cloud.
 
 ## Search and replace in Excel files
 
@@ -19,7 +18,7 @@ Text operate  is a complex process for Excel fie. Many factors contribute to the
 - [How to get text items from an Excel worksheet.](/cells/worksheets/get-text-items/)
 - [How to find text from an Excel workbook.](/cells/workbook/find-text/)
 - [How to find text from an Excel worksheet.](/cells/worksheets/find-text/)
-- [How to find text from Excel files without using file.](/cells/search/)
+- [How to find text from Excel files without uploading a file.](/cells/search/)
 - [How to replace text from an Excel workbook.](/cells/workbook/replace-text/)
 - [How to replace text from an Excel worksheet.](/cells/worksheets/replace-text/)
-- [How to replace text from Excel files without using file.](/cells/replace/)
+- [How to replace text from Excel files without uploading a file.](/cells/replace/)

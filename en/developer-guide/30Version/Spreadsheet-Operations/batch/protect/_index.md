@@ -3,73 +3,68 @@ title: "Batch Protect Excel Files"
 second_title: "Document"
 type: docs
 url: /batch/protect
-keywords: "Batch protection of multiple Excel files."
-description: "Aspose.Cells Cloud API supports batch protection of multiple excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "Batch Protect Excel Files, Aspose Cells Cloud, REST API, Excel protection, batch protection"
+description: "Learn how to use Aspose.Cells Cloud REST API to batch protect multiple Excel files. Includes request details, cURL example, and SDK code samples for various languages."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Batch Protect
 ---
 
-This REST API indicates to `batch protection` of eligible files.
+This REST API enables **batch protection** of eligible Excel files.
 
-## RSET API
+## REST API
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/batch/protect
- 
 ```
 
 The request parameters are:
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| batchProtectRequest  |  | body |   |
+| Parameter Name        | Type                | Location | Description                                                                                              |
+|-----------------------|---------------------|----------|----------------------------------------------------------------------------------------------------------|
+| batchProtectRequest   | BatchProtectRequest | body     | JSON payload that specifies the source folder, match conditions, protection type, password, and output folder. |
 
-**BatchProtectRequest  Properties**
+### BatchProtectRequest Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
- SourceFolder | string |  | [optional]
- MatchCondition | MatchConditionRequest |  | [optional]
- ProtectionType | string |  | [optional]
- Password | string |  | [optional]
- OutFolder | string |  | [optional]
+| Name            | Type                     | Description                                                                                 | Notes |
+|-----------------|--------------------------|---------------------------------------------------------------------------------------------|-------|
+| SourceFolder    | string                   | Folder containing the source Excel files.                                                   | optional |
+| MatchCondition  | MatchConditionRequest   | Criteria used to select files for protection.                                               | optional |
+| ProtectionType  | string                   | Type of protection to apply (e.g., `All`, `ReadOnly`).                                      | optional |
+| Password        | string                   | Password to set for the protected files.                                                    | optional |
+| OutFolder       | string                   | Destination folder for the protected files.                                                 | optional |
 
-**MatchConditionRequest Properties**
+### MatchConditionRequest Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
- RegexPattern | string |  | [optional]
- FullMatchConditions | string[] |  | [optional]
+| Name                | Type       | Description                                   | Notes |
+|---------------------|------------|-----------------------------------------------|-------|
+| RegexPattern        | string     | Regular expression used to match file names. | optional |
+| FullMatchConditions | string[]   | List of exact file name conditions.          | optional |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PostProtectConvert) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
 curl -v "http://api.aspose.cloud/v3.0/cells/batch/protect" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--D "{\"SourceFolder\":\"CellsTests\",\"OutFolder\":\"Output\",\"MatchCondition\":{\"RegexPattern\":\"(^Book)(.+)(xlsx$)\"},\"Password\":\"123456\",\"ProtectionType\":\"All\"}" 
+-H "Authorization: Bearer <jwt token>" \
+-D "{\"SourceFolder\":\"CellsTests\",\"OutFolder\":\"Output\",\"MatchCondition\":{\"RegexPattern\":\"(^Book)(.+)(xlsx$)\"},\"Password\":\"123456\",\"ProtectionType\":\"All\"}"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
@@ -78,7 +73,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/batch/protect" \
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 

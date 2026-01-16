@@ -5,41 +5,37 @@ linktitle: "Import Json"
 type: docs
 url: /import-json-data-into-excel/
 aliases: [ /import/json/]
-keywords: "Import JSON data into Excel."
-description: "Aspose.Cells Cloud REST API support importing string array data into Excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "Import JSON, Excel, Aspose.Cells Cloud, REST API, SDK, Spreadsheet"
+description: "Use Aspose.Cells Cloud REST API to import JSON data into Excel worksheets. Supports multiple SDKs (Android, .NET, Go, Java, Node.js, Perl, PHP, Python, Ruby, Swift) for easy integration."
 weight: 40
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Import JSON data into Excel
 ---
 
-This REST API `import json data` into Excel work sheet.
+This REST API **imports JSON data** into an Excel worksheet.
 
-## RSET API
+## REST API
 
 ```bash
-
 POST https://api.aspose.cloud/v3.0/cells/{name}/importjson
-
 ```
 
-The important parameters are described in the following table:
+The important parameters are described in the table below.
 
 **ImportStringArrayOption**
 
-| Parameter Name| Path/Query String/HTTPBody |Type|Description|
-| :- | :- | :- | :- |
-| name | Path | string | The workbook name |
-| importJsonRequest  | HTTPBody | class |  Import json request. |
-| password | Query String | string |  The password of workbook. |
-| folder | Query String |  string | Original workbook folder. |
-| storageName | Query String | string | Storage name. |
-| outPath | Query String | string | Output file path. |
-| outStorageName | Query String | string | Storage name for output file. |
-| checkExcelRestriction | Query String | string | Check Excel restriction. |
+| Parameter Name          | Location                     | Type   | Description                                            |
+|-------------------------|------------------------------|--------|--------------------------------------------------------|
+| name                    | Path                         | string | The name of the workbook file.                         |
+| importJsonRequest       | HTTP body                    | class  | The request payload that contains JSON import details. |
+| password                | Query string                 | string | Password for opening the workbook (if protected).     |
+| folder                  | Query string                 | string | The folder that contains the original workbook.        |
+| storageName             | Query string                 | string | The name of the storage where the workbook resides.    |
+| outPath                 | Query string                 | string | Path for the output file after import.                 |
+| outStorageName          | Query string                 | string | Storage name for the output file.                      |
+| checkExcelRestriction  | Query string                 | string | Flag to check Excel‑specific restrictions (true/false).|
 
-**Example**
+**Example Request Body**
 
 ```json
-
 {
   "JsonFileSource": {
     "FilePath": "string"
@@ -51,11 +47,14 @@ The important parameters are described in the following table:
   },
   "JsonContent": "string"
 }
-
 ```
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the most efficient way to accelerate development. SDKs handle low‑level details, allowing you to focus on your business logic. For a complete list of Aspose.Cells Cloud SDKs, please visit the [GitHub repository](https://github.com/aspose-cells-cloud).
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
+
+```
+// (Insert SDK-specific example code here)
+```

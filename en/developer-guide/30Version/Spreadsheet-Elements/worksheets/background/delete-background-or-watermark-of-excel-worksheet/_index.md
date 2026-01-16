@@ -5,59 +5,53 @@ linktitle: "Delete"
 type: docs
 url: /worksheets/background/delete/
 aliases: [/delete-background-or-watermark-of-excel-worksheet/]
-keywords: "Delete background on an Excel worksheet."
-description: "Aspose.Cells Cloud REST API support deleting background on an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "Aspose.Cells Cloud, Delete worksheet background, Excel, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
+description: "Use Aspose.Cells Cloud REST API to delete the background image of an Excel worksheet. SDKs are available for multiple languages, including C#, Java, PHP, Ruby, Node.js, Python, Perl, and Go."
 weight: 210
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Delete background on an Excel worksheet
 ---
 
-This REST API indicates `delete worksheet background image`.
+This REST API deletes the background image of a worksheet.
 
-## RSET API
+## REST API
 
 ```bash
- 
 DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/background
- 
 ```
 
 The request parameters are:
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| name | string | path |   |
-| sheetName | string | path |   |
-| folder | string | query |   |
-| storageName | string | query | storage name. |
+| Parameter Name | Type   | Location                | Description                                          |
+|----------------|--------|-------------------------|------------------------------------------------------|
+| name           | string | path                    | The name of the Excel file.                          |
+| sheetName      | string | path                    | The name of the worksheet whose background is removed. |
+| folder         | string | query                   | The folder in storage where the file is located.     |
+| storageName    | string | query                   | The name of the storage (if not the default storage).|
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheetBackground) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "http://api.aspose.com/v3.0/cells/WorkSheetBackground_Sample_Test_Book.xls/worksheets/Sheet1/background" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
@@ -66,7 +60,7 @@ curl -v "http://api.aspose.com/v3.0/cells/WorkSheetBackground_Sample_Test_Book.x
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 

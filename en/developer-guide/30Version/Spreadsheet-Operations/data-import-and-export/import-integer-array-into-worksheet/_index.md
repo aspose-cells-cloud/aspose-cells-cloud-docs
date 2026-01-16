@@ -3,45 +3,45 @@ title: "Import Integer Array into Excel Worksheet"
 linktitle: "Import integer array"
 type: docs
 url: /import-integer-array-into-excel-worksheet/
-aliases: [/import-integer-array-into-excel-worksheet/,/import-integer-array-into-worksheet/,/import-data/integer-array/, /import/integer-array/]
-keywords: "Import integer array data into Excel files."
-description: "Aspose.Cells Cloud REST API support importing integer array data into Excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+aliases:
+  - /import-integer-array-into-excel-worksheet/
+  - /import-integer-array-into-worksheet/
+  - /import-data/integer-array/
+  - /import/integer-array/
+keywords: "Import integer array, Aspose Cells Cloud, Excel import, REST API, SDK"
+description: "Use Aspose.Cells Cloud REST API to import integer array data into an Excel worksheet. The API works with multipart requests and is supported by multiple SDKs (C#, PHP, Ruby, etc.)."
 weight: 30
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Import Integer Array into Excel Worksheet
 ---
 
-This REST API `import int array data` into Excel work sheet.
+This REST API imports an integer array into an Excel worksheet.
 
-The request is an HTTP request with multipart content (see [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). The first part of the multipart content contains the ImportIntegerArrayOption data and the second contains a data file.
+The request is an HTTP **POST** with multipart content (see [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). The first part of the multipart body contains the **ImportIntegerArrayOption** data, and the second part contains the source data file.
 
-## RSET API
+## REST API
 
 ```bash
-
 POST https://api.aspose.cloud/v3.0/cells/import
 POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
-
 ```
 
-The important parameters are described in the following table:
+The important parameters are described in the following table.
 
-**ImportIntegerArrayOption**
+### ImportIntegerArrayOption
 
-| Parameter Name|Type|Description|
-| :- | :- | :- |
-| FirstRow | int |  |
-| FirstColumn | int |  |
-| IsVertical | string | true/false. |
-| Data | Integer[] |  |
-| DestinationWorksheet | string | destination work sheet name. |
-| IsInsert | string | true/false. |
-| ImportDataType | string | IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/csvData.|
-| Source | FileSource | Indicates data file position when the BatchData parameter is null. |
+| Parameter Name          | Type          | Description                                                                                                   |
+|-------------------------|---------------|---------------------------------------------------------------------------------------------------------------|
+| **FirstRow**            | int           | Zero‑based index of the first row where the data will be placed.                                             |
+| **FirstColumn**         | int           | Zero‑based index of the first column where the data will be placed.                                          |
+| **IsVertical**          | boolean       | `true` to insert the array vertically (down a column); `false` to insert it horizontally (across a row).    |
+| **Data**                | Integer[]     | The integer array to be imported.                                                                             |
+| **DestinationWorksheet**| string        | Name of the worksheet that will receive the data.                                                             |
+| **IsInsert**            | boolean       | `true` to insert rows/columns before writing the data; `false` to overwrite existing cells.                  |
+| **ImportDataType**      | string        | Type of the data being imported. Valid values: `IntArray`, `DoubleArray`, `StringArray`, `TwoDimensionIntArray`, `TwoDimensionDoubleArray`, `TwoDimensionStringArray`, `BatchData`, `csvData`. |
+| **Source**              | FileSource    | Indicates the position of the data file when the **BatchData** parameter is `null`.                         |
 
-**Example**
+#### Example Request Body
 
-```JSON
-
+```json
 {
     "Data": [1, 2, 4],
     "DestinationWorksheet": "Sheet1",
@@ -49,16 +49,15 @@ The important parameters are described in the following table:
     "FirstColumn": 2,
     "IsVertical": true,
     "IsInsert": true,
-    "importDataType": "IntArray"
+    "ImportDataType": "IntArray"
 }
-
 ```
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the fastest way to integrate this functionality. SDKs abstract low‑level details, letting you focus on your business logic. See the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="3" tabID="4" tabName1="C#" tabName2="PHP" tabName3="Ruby" >}}
 

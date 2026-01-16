@@ -4,10 +4,9 @@ second_title: "Document"
 type: docs
 url: /developer-guide-3.0/
 aliases: [/developer-guide/v3.0/,/developer-guide-v3.0/]
-keywords: "How to use Aspose.Cells Cloud REST APIs. Office Excel 2013,  Office Excel 2016,  Office Excel 2019,office Excel 365."
-description: "This Developer Guide describes practical scenarios and tips to help you use specific Aspose.Cells for .NET features, achieve a certain Excel document appearance, or make a use case possible."
+keywords: "Aspose.Cells Cloud, REST API, Excel, Workbook, Worksheet, Chart, Table, Pivot Table, OLE Object, Shape, Filter, Sort, Import, Export, PDF, CSV, JSON"
+description: "Comprehensive guide for using Aspose.Cells Cloud REST APIs to create, modify, and manage Excel workbooks and worksheets, covering operations such as workbook creation, conversion, cell styling, charts, tables, pivot tables, filters, imports, and exports."
 weight: 150
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Developer Guide
 ---
 
 ## Working with Aspose.Cells Cloud REST APIs
@@ -18,16 +17,16 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, De
     <div class="col-md-6">
         <p>Workbook new, convert, saveas</p>
         <ul>
-            <li><a href="/cells/create-an-empty-excel-workbook/">Creates an empty Excel workbook.</a></li>
-            <li><a href="/cells/create-excel-workbook-from-a-template-file/">Creates Excel workbook from a template file.</a></li>
-            <li><a href="/cells/create-excel-workbook-from-a-smartmarker-template/">Creates Excel workbook from a smart marker template.</a></li>
-            <li><a href="/cells/convert/">Converts Excel workbook to different file formats.</a></li>
-            <li><a href="/cells/saveas-other-formats/">Save Excel workbook as different file formats.</a></li>
+            <li><a href="/cells/create-an-empty-excel-workbook/">Create an empty Excel workbook.</a></li>
+            <li><a href="/cells/create-excel-workbook-from-a-template-file/">Create an Excel workbook from a template file.</a></li>
+            <li><a href="/cells/create-excel-workbook-from-a-smartmarker-template/">Create an Excel workbook from a SmartMarker template.</a></li>
+            <li><a href="/cells/convert/">Convert an Excel workbook to different file formats.</a></li>
+            <li><a href="/cells/saveas-other-formats/">Save an Excel workbook as different file formats.</a></li>
         </ul>
         <p>Search, Replace</p>
         <ul>
-            <li><a href="/cells/search/">Search text form Excel files.</a></li>
-            <li><a href="/cells/replace/">Replace old value by new value on Excel files.</a></li>
+            <li><a href="/cells/search/">Search text from Excel files.</a></li>
+            <li><a href="/cells/replace/">Replace old values with new values in Excel files.</a></li>
         </ul>
         <p>Compress</p>
         <ul>
@@ -37,15 +36,15 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, De
     <div class="col-md-6">
         <p>Workbook merge, split</p>
         <ul>
-            <li><a href="/cells/merge/">Merges Excel workbooks.</a></li>
-            <li><a href="/cells/split/">Splits Excel workbooks.</a></li>
+            <li><a href="/cells/merge/">Merge Excel workbooks.</a></li>
+            <li><a href="/cells/split/">Split Excel workbooks.</a></li>
         </ul>
         <p>Watermarks</p>
         <ul>
-            <li><a href="/cells/add-background-in-workbook/">Adds background in workbook.</a></li>
-            <li><a href="/cells/delete-background-in-workbook/">Deletes background in workbook.</a></li>
-            <li><a href="/cells/set-background-or-watermark-for-excel-worksheet/">Sets background or watermark on Excel worksheet.</a></li>
-            <li><a href="/cells/delete-background-or-watermark-of-excel-worksheet/">Deletes background or watermark on Excel worksheet.</a></li>
+            <li><a href="/cells/add-background-in-workbook/">Add background to a workbook.</a></li>
+            <li><a href="/cells/delete-background-in-workbook/">Delete background from a workbook.</a></li>
+            <li><a href="/cells/set-background-or-watermark-for-excel-worksheet/">Set background or watermark on an Excel worksheet.</a></li>
+            <li><a href="/cells/delete-background-or-watermark-of-excel-worksheet/">Delete background or watermark from an Excel worksheet.</a></li>
         </ul>
     </div>
 </div>
@@ -55,28 +54,28 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, De
     <div class="col-md-6">
         <p>Cells font, styles, conditional formatting and value</p>
         <ul>
-            <li><a href="/cells/get-cell-style-from-a-worksheet/">Gets cell style from an Excel worksheet.</a></li>
-            <li><a href="/cells/update-multiple-cells-style/">Updates multiple cells style on an Excel worksheet.</a></li>
-            <li><a href="/cells/change-cell-style-in-excel-worksheet/">Updates cell style on an Excel worksheet.</a></li>
-            <li><a href="/cells/apply-rich-text-formatting-to-a-cell/">Sets rich text formatting to a cell of Excel worksheet.</a></li>
-            <li><a href="/cells/clear-contents-and-styles-of-cells-in-excel-worksheet/">Clears contents and styles of cells on Excel worksheet.</a></li>
-            <li><a href="/cells/working-with-conditional-formatting/">Adds, deletes and updates conditional formatting on Excel worksheet.</a></li>
-            <li><a href="/cells/set-value-of-a-cell-in-a-worksheet/">Sets value of a cell on an Excel worksheet.</a></li>
+            <li><a href="/cells/get-cell-style-from-a-worksheet/">Get cell style from an Excel worksheet.</a></li>
+            <li><a href="/cells/update-multiple-cells-style/">Update multiple cells' style on an Excel worksheet.</a></li>
+            <li><a href="/cells/change-cell-style-in-excel-worksheet/">Update cell style on an Excel worksheet.</a></li>
+            <li><a href="/cells/apply-rich-text-formatting-to-a-cell/">Set rich text formatting for a cell in an Excel worksheet.</a></li>
+            <li><a href="/cells/clear-contents-and-styles-of-cells-in-excel-worksheet/">Clear contents and styles of cells on an Excel worksheet.</a></li>
+            <li><a href="/cells/working-with-conditional-formatting/">Add, delete, and update conditional formatting on an Excel worksheet.</a></li>
+            <li><a href="/cells/set-value-of-a-cell-in-a-worksheet/">Set value of a cell on an Excel worksheet.</a></li>
         </ul>
     </div>
     <div class="col-md-6">
         <p>Row/Column insert, delete, copy, hide and auto fit</p>
         <ul>
-            <li><a href="/cells/add-an-empty-row-in-a-worksheet/">Adds an empty row on an Excel worksheet.</a></li>
-            <li><a href="/cells/delete-row-from-a-worksheet/">Deletes row from an Excel worksheet.</a></li>
-            <li><a href="/cells/copy-rows-in-excel-worksheet/">Copys rows on an Excel worksheet.</a></li>
+            <li><a href="/cells/add-an-empty-row-in-a-worksheet/">Add an empty row on an Excel worksheet.</a></li>
+            <li><a href="/cells/delete-row-from-a-worksheet/">Delete a row from an Excel worksheet.</a></li>
+            <li><a href="/cells/copy-rows-in-excel-worksheet/">Copy rows on an Excel worksheet.</a></li>
             <li><a href="/cells/hide-rows-in-excel-worksheet/">Hide rows on an Excel worksheet.</a></li>
-            <li><a href="/cells/auto-fit-rows-in-excel-workbooks/">Auto fit rows on an Excel workbook.</a></li>
-            <li><a href="/cells/columns/add/">Adds an empty column on an Excel worksheet.</a></li>
-            <li><a href="/cells/columns/delete/">Deletes column from an Excel worksheet.</a></li>
-            <li><a href="/cells/columns/copy/">Copys columns on an Excel worksheet.</a></li>
+            <li><a href="/cells/auto-fit-rows-in-excel-workbooks/">Auto‑fit rows on an Excel workbook.</a></li>
+            <li><a href="/cells/columns/add/">Add an empty column on an Excel worksheet.</a></li>
+            <li><a href="/cells/columns/delete/">Delete a column from an Excel worksheet.</a></li>
+            <li><a href="/cells/columns/copy/">Copy columns on an Excel worksheet.</a></li>
             <li><a href="/cells/columns/hide/">Hide columns on an Excel worksheet.</a></li>
-            <li><a href="/cells/columns/autofit/">Auto fit columns on an Excel workbook.</a></li>
+            <li><a href="/cells/columns/autofit/">Auto‑fit columns on an Excel workbook.</a></li>
         </ul>
     </div>
 </div>
@@ -86,47 +85,47 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, De
     <div class="col-md-6">
         <p>Chart</p>
         <ul>
-            <li><a href="/cells/add-a-chart-in-a-worksheet/">Adds a chart on an Excel worksheet.</a></li>
-            <li><a href="/cells/delete-a-chart-from-a-worksheet/">Deletes a chart on an Excel worksheet.</a></li>
-            <li><a href="/cells/delete-all-charts-from-a-worksheet/">Deletes all charts on an Excel worksheet.</a></li>
-            <li><a href="/cells/convert-chart-to-image/">Converts chart to image.</a></li>
-            <li><a href="/cells/hide-chart-legend-in-a-worksheet/">Hides chart legend on an Excel worksheet.</a></li>
-            <li><a href="/cells/update-chart-title-in-excel-worksheet/">Updates chart title on an Excel worksheet.</a></li>
-            <li><a href="/cells/delete-chart-title-in-a-worksheet/">Deletes chart title on an Excel worksheet.</a></li>
+            <li><a href="/cells/add-a-chart-in-a-worksheet/">Add a chart on an Excel worksheet.</a></li>
+            <li><a href="/cells/delete-a-chart-from-a-worksheet/">Delete a chart on an Excel worksheet.</a></li>
+            <li><a href="/cells/delete-all-charts-from-a-worksheet/">Delete all charts on an Excel worksheet.</a></li>
+            <li><a href="/cells/convert-chart-to-image/">Convert a chart to an image.</a></li>
+            <li><a href="/cells/hide-chart-legend-in-a-worksheet/">Hide chart legend on an Excel worksheet.</a></li>
+            <li><a href="/cells/update-chart-title-in-excel-worksheet/">Update chart title on an Excel worksheet.</a></li>
+            <li><a href="/cells/delete-chart-title-in-a-worksheet/">Delete chart title on an Excel worksheet.</a></li>
         </ul>
         <p>Table</p>
         <ul>
-            <li><a href="/cells/add-a-list-object-or-table-inside-the-worksheet/">Adds a list object on an Excel worksheet.</a></li>
-            <li><a href="/cells/update-a-list-object-or-table-inside-the-worksheet/">Updates a list object on an Excel worksheet.</a></li>
-            <li><a href="/cells/convert-list-object-or-table-to-range/">Converts list object to range.</a></li>
-            <li><a href="/cells/sort-table-data/">Sorts table data.</a></li>
+            <li><a href="/cells/add-a-list-object-or-table-inside-the-worksheet/">Add a list object on an Excel worksheet.</a></li>
+            <li><a href="/cells/update-a-list-object-or-table-inside-the-worksheet/">Update a list object on an Excel worksheet.</a></li>
+            <li><a href="/cells/convert-list-object-or-table-to-range/">Convert a list object to a range.</a></li>
+            <li><a href="/cells/sort-table-data/">Sort table data.</a></li>
         </ul>
         <p>OleObject</p>
         <ul>
-            <li><a href="/cells/add-oleobject-to-excel-worksheet/">Adds Ole-object on an Excel worksheet.</a></li>
-            <li><a href="/cells/update-a-specific-oleobject-from-excel-worksheet/">Updates a specific Ole-object on an Excel worksheet.</a></li>
-            <li><a href="/cells/convert-oleobject-to-image/">Converts Ole-object to image.</a></li>
-            <li><a href="/cells/delete-all-oleobjects-from-excel-worksheet/">Deletes all Ole-objects on an Excel worksheet.</a></li>
-            <li><a href="/cells/delete-a-specific-oleobject-from-excel-worksheet/">Deletes a specific Ole-object on an Excel worksheet.</a></li>
+            <li><a href="/cells/add-oleobject-to-excel-worksheet/">Add OLE object on an Excel worksheet.</a></li>
+            <li><a href="/cells/update-a-specific-oleobject-from-excel-worksheet/">Update a specific OLE object on an Excel worksheet.</a></li>
+            <li><a href="/cells/convert-oleobject-to-image/">Convert OLE object to image.</a></li>
+            <li><a href="/cells/delete-all-oleobjects-from-excel-worksheet/">Delete all OLE objects on an Excel worksheet.</a></li>
+            <li><a href="/cells/delete-a-specific-oleobject-from-excel-worksheet/">Delete a specific OLE object on an Excel worksheet.</a></li>
         </ul>
     </div>
     <div class="col-md-6">
         <p>Shape</p>
         <ul>
-            <li><a href="/cells/add-a-shape-inside-the-worksheet/">Adds a shape on an Excel worksheet.</a></li>
-            <li><a href="/cells/delete-all-shapes-inside-the-worksheet/">Deletes all shapes on an Excel worksheet.</a></li>
-            <li><a href="/cells/delete-a-shape-by-index-inside-the-worksheet/">Deletes a shape by Index on an Excel Worksheet.</a></li>
+            <li><a href="/cells/add-a-shape-inside-the-worksheet/">Add a shape on an Excel worksheet.</a></li>
+            <li><a href="/cells/delete-all-shapes-inside-the-worksheet/">Delete all shapes on an Excel worksheet.</a></li>
+            <li><a href="/cells/delete-a-shape-by-index-inside-the-worksheet/">Delete a shape by index on an Excel worksheet.</a></li>
         </ul>
         <p>Pivot Table</p>
         <ul>
-            <li><a href="/cells/add-a-pivot-table-in-a-worksheet/">Adds a pivot table on an Excel worksheet.</a></li>
-            <li><a href="/cells/delete-worksheet-pivot-tables/">Deletes on all pivot tables an Excel worksheet.</a></li>
-            <li><a href="/cells/delete-worksheet-pivot-table-by-index/">Deletes a pivot table by index on an Excel worksheet.</a></li>
-            <li><a href="/cells/update-cell-style-for-pivot-table/">Updates cell style of pivot table on an Excel worksheet.</a></li>
-            <li><a href="/cells/update-style-for-pivot-table/">Updates style of pivot table on an Excel worksheet.</a></li>
-            <li><a href="/cells/working-with-pivot-filters/">Working with pivot filters on an Excel worksheet</a></li>
-            <li><a href="/cells/hide-pivot-field-item/">Hides pivot field item on an Excel worksheet</a></li>
-            <li><a href="/cells/move-pivot-table/">Moves pivot table on an Excel worksheet.</a></li>
+            <li><a href="/cells/add-a-pivot-table-in-a-worksheet/">Add a pivot table on an Excel worksheet.</a></li>
+            <li><a href="/cells/delete-worksheet-pivot-tables/">Delete all pivot tables on an Excel worksheet.</a></li>
+            <li><a href="/cells/delete-worksheet-pivot-table-by-index/">Delete a pivot table by index on an Excel worksheet.</a></li>
+            <li><a href="/cells/update-cell-style-for-pivot-table/">Update cell style of a pivot table on an Excel worksheet.</a></li>
+            <li><a href="/cells/update-style-for-pivot-table/">Update style of a pivot table on an Excel worksheet.</a></li>
+            <li><a href="/cells/working-with-pivot-filters/">Work with pivot filters on an Excel worksheet.</a></li>
+            <li><a href="/cells/hide-pivot-field-item/">Hide pivot field items on an Excel worksheet.</a></li>
+            <li><a href="/cells/move-pivot-table/">Move a pivot table on an Excel worksheet.</a></li>
         </ul>
     </div>
 </div>
@@ -136,10 +135,10 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, De
     <div class="col-md-6">
         <p>Page Break</p>
         <ul>
-            <li><a href="/cells/insert-horizontal-page-break-inside-worksheet/">Inserts a horizontal page break on an Excel worksheet.</a></li>
-            <li><a href="/cells/insert-vertical-page-break-inside-worksheet/">Inserts a vertical page break on an Excel worksheet.</a></li>
-            <li><a href="/cells/delete-horizontal-page-break-inside-worksheet/">Deletes a horizontal page break on an Excel worksheet.</a></li>
-            <li><a href="/cells/delete-vertical-page-break-inside-worksheet/">Deletes a vertical page break on an Excel worksheet.</a></li>
+            <li><a href="/cells/insert-horizontal-page-break-inside-worksheet/">Insert a horizontal page break on an Excel worksheet.</a></li>
+            <li><a href="/cells/insert-vertical-page-break-inside-worksheet/">Insert a vertical page break on an Excel worksheet.</a></li>
+            <li><a href="/cells/delete-horizontal-page-break-inside-worksheet/">Delete a horizontal page break on an Excel worksheet.</a></li>
+            <li><a href="/cells/delete-vertical-page-break-inside-worksheet/">Delete a vertical page break on an Excel worksheet.</a></li>
         </ul>
     </div>
     <div class="col-md-6">
@@ -154,9 +153,9 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, De
     <div class="col-md-6">
         <p>Calculate</p>
         <ul>
-            <li><a href="/cells/calculate-all-formulas-in-a-workbook/">Calculates all formulas on an Excel workbook.</a></li>
-            <li><a href="/cells/calculate-cells-formula/">Calculates cells formula on an Excel workbook.</a></li>
-            <li><a href="/cells/calculate-formula-in-a-worksheet/">Calculates formula on an Excel Worksheet.</a></li>
+            <li><a href="/cells/calculate-all-formulas-in-a-workbook/">Calculate all formulas on an Excel workbook.</a></li>
+            <li><a href="/cells/calculate-cells-formula/">Calculate cell formulas on an Excel workbook.</a></li>
+            <li><a href="/cells/calculate-formula-in-a-worksheet/">Calculate a formula on an Excel worksheet.</a></li>
         </ul>
     </div>
     <div class="col-md-6">
@@ -171,36 +170,36 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, De
     <div class="col-md-6">
         <p>Outline</p>
         <ul>
-            <li><a href="/cells/group-rows-in-excel-worksheet/">Groups rows on an Excel Worksheet.</a></li>
-            <li><a href="/cells/ungroup-rows-in-excel-worksheet/">Ungroups rows on an Excel Worksheet</a></li>
+            <li><a href="/cells/group-rows-in-excel-worksheet/">Group rows on an Excel worksheet.</a></li>
+            <li><a href="/cells/ungroup-rows-in-excel-worksheet/">Ungroup rows on an Excel worksheet.</a></li>
         </ul>
         <p>Filter</p>
         <ul>
-            <li><a href="/cells/add-a-filter-for-a-filter-column/">Adds a filter for a filter column on an Excel worksheet.</a></li>
-            <li><a href="/cells/delete-a-filter-for-a-filter-column/">Deletes a filter for a filter column on an Excel worksheet.</a></li>
-            <li><a href="/cells/remove-a-date-filter/">Removes a date filter on an Excel worksheet.</a></li>
-            <li><a href="/cells/add-an-icon-filter/">Adds an icon filter on an Excel worksheet.</a></li>
-            <li><a href="/cells/add-date-filter-in-a-worksheet/">Add a date filter on an Excel worksheet.</a></li>
-            <li><a href="/cells/filter-data-by-using-an-autofilter/">Filters a list with a custom criteria on an Excel worksheet.</a></li>
-            <li><a href="/cells/filter-the-top-10-items-in-the-list/">Filters a top 10 items in the List on an Excel worksheet.</a></li>
-            <li><a href="/cells/match-all-blank-cells-in-the-list/">Matchs all blank cells in the list on an Excel worksheet.</a></li>
+            <li><a href="/cells/add-a-filter-for-a-filter-column/">Add a filter for a column on an Excel worksheet.</a></li>
+            <li><a href="/cells/delete-a-filter-for-a-filter-column/">Delete a filter for a column on an Excel worksheet.</a></li>
+            <li><a href="/cells/remove-a-date-filter/">Remove a date filter on an Excel worksheet.</a></li>
+            <li><a href="/cells/add-an-icon-filter/">Add an icon filter on an Excel worksheet.</a></li>
+            <li><a href="/cells/add-date-filter-in-a-worksheet/">Add a date filter in an Excel worksheet.</a></li>
+            <li><a href="/cells/filter-data-by-using-an-autofilter/">Filter data using an AutoFilter on an Excel worksheet.</a></li>
+            <li><a href="/cells/filter-the-top-10-items-in-the-list/">Filter the top 10 items in the list on an Excel worksheet.</a></li>
+            <li><a href="/cells/match-all-blank-cells-in-the-list/">Match all blank cells in the list on an Excel worksheet.</a></li>
         </ul>
-            <p>Sort</p>
+        <p>Sort</p>
         <ul>
-            <li><a href="/cells/sort-worksheet-data/">Sorts cells data on an Excel worksheet.</a></li>
+            <li><a href="/cells/sort-worksheet-data/">Sort data on an Excel worksheet.</a></li>
         </ul>
     </div>
     <div class="col-md-6">
         <p>Import Data</p>
         <ul>
-            <li><a href="/cells/import/">Imports data into Excel files.</a></li>
-            <li><a href="/cells/import-CSV-data-into-worksheet/">Imports CSV data into an Excel worksheet.</a></li>
-            <li><a href="/cells/import/picture/">Imports picture into an Excel worksheet.</a></li>
-            <li><a href="/cells/import/double-array/">Imports double array into an Excel worksheet.</a></li>
-            <li><a href="/cells/import/integer-array/">Imports integer array into an Excel worksheet.</a></li>
-            <li><a href="/cells/import/string-array/">Imports string array into an Excel worksheet.</a></li>
-            <li><a href="/cells/import/with-using-storage/">Imports data into an Excel worksheet with using Storage.</a></li>
-            <li><a href="/cells/import/without-using-storage/">Imports data into an Excel worksheet without using Storage.</a></li>
+            <li><a href="/cells/import/">Import data into Excel files.</a></li>
+            <li><a href="/cells/import-CSV-data-into-worksheet/">Import CSV data into an Excel worksheet.</a></li>
+            <li><a href="/cells/import/picture/">Import a picture into an Excel worksheet.</a></li>
+            <li><a href="/cells/import/double-array/">Import a double array into an Excel worksheet.</a></li>
+            <li><a href="/cells/import/integer-array/">Import an integer array into an Excel worksheet.</a></li>
+            <li><a href="/cells/import/string-array/">Import a string array into an Excel worksheet.</a></li>
+            <li><a href="/cells/import/with-using-storage/">Import data into an Excel worksheet using storage.</a></li>
+            <li><a href="/cells/import/without-using-storage/">Import data into an Excel worksheet without using storage.</a></li>
         </ul>
         <p>Assembly</p>
         <ul>
@@ -214,16 +213,16 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, De
     <div class="col-md-6">
         <p>Comments</p>
         <ul>
-            <li><a href="/cells/add-a-comment-to-a-cell-in-a-worksheet/">Adds a comment to a Cell on an Excel worksheet.</a></li>
-            <li><a href="/cells/update-a-comment-in-excel-workbook/">Updates a comment on an Excel worksheet.</a></li>
-            <li><a href="/cells/delete-all-comments-in-a-worksheet/">Deletes all comments on an Excel worksheet.</a></li>
+            <li><a href="/cells/add-a-comment-to-a-cell-in-a-worksheet/">Add a comment to a cell on an Excel worksheet.</a></li>
+            <li><a href="/cells/update-a-comment-in-excel-workbook/">Update a comment on an Excel worksheet.</a></li>
+            <li><a href="/cells/delete-all-comments-in-a-worksheet/">Delete all comments on an Excel worksheet.</a></li>
         </ul>
     </div>
     <div class="col-md-6">
         <p>Changes</p>
         <ul>
-            <li><a href="/cells/protect-excel-workbooks/">Protects an Excel workbook.</a></li>
-            <li><a href="/cells/unprotect-excel-workbooks/">Un-protects an Excel workbook.</a></li>
+            <li><a href="/cells/protect-excel-workbooks/">Protect an Excel workbook.</a></li>
+            <li><a href="/cells/unprotect-excel-workbooks/">Unprotect an Excel workbook.</a></li>
         </ul>
     </div>
 </div>
@@ -233,16 +232,16 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, De
     <div class="col-md-6">
         <p>Windows</p>
         <ul>
-            <li><a href="/cells/freeze-panes-in-excel-worksheet/">Freezes panes on an Excel worksheet.</a></li>
-            <li><a href="/cells/unfreeze-panes-in-excel-worksheet/">Unfreezes Panes on an Excel worksheet.</a></li>
-            <li><a href="/cells/hide-excel-worksheets/">Hides an Excel worksheet.</a></li>
-            <li><a href="/cells/unhide-excel-worksheets/">Deletes all comments on an Excel worksheet.</a></li>
+            <li><a href="/cells/freeze-panes-in-excel-worksheet/">Freeze panes on an Excel worksheet.</a></li>
+            <li><a href="/cells/unfreeze-panes-in-excel-worksheet/">Unfreeze panes on an Excel worksheet.</a></li>
+            <li><a href="/cells/hide-excel-worksheets/">Hide an Excel worksheet.</a></li>
+            <li><a href="/cells/unhide-excel-worksheets/">Unhide an Excel worksheet.</a></li>
         </ul>
     </div>
     <div class="col-md-6">
         <p>Zoom</p>
         <ul>
-            <li><a href="/cells/set-zoom-in-excel-worksheet/">Sets zoom on an Excel worksheet.</a></li>
+            <li><a href="/cells/set-zoom-in-excel-worksheet/">Set zoom on an Excel worksheet.</a></li>
         </ul>
     </div>
 </div>

@@ -5,73 +5,63 @@ linktitle: "Encrypt Excel files"
 type: docs
 url: /protect-excel-files/
 aliases: [/protect/without-storage/,/protect/without-using-storage/,/protect/without-using-storage/]
-keywords: "Protect Excel files."
-description: "Aspose.Cells Cloud REST API support protecting Excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "Aspose.Cells Cloud, Excel protection, protect Excel files, REST API, spreadsheet security"
+description: "Use Aspose.Cells Cloud REST API to protect Excel files. This guide shows how to encrypt workbooks via HTTP POST, cURL, and SDKs for multiple programming languages."
 weight: 40
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Protect Excel files without using storage
 ---
 
+This REST API **protects** Excel files.
 
-This REST API indicates to `protect` Excel files.
-
-## RSET API
+## REST API
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/protect
- 
 ```
 
 The request parameters are:
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| file | file | formData | File to upload |
-| password | string | query |   |
+| Parameter Name | Type   | Location                     | Description                              |
+|----------------|--------|------------------------------|------------------------------------------|
+| file           | file   | formData (body)              | File to upload                           |
+| password       | string | query string (`password`)    | Password used to protect the workbook    |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostProtect) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostProtect) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "http://api.aspose.cloud/v3.0/cells/protect?password=123456" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx' 
- 
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -F 'xxxxx1=@xxxx1.xlsx' \
+  -F 'xxxxx2=@xxxx2.xlsx'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-{
-    "Files":
-    [
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
+  "Files": [
+    {
+      "Filename": "xxxxx",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "xxxxx",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    }
+  ]
 }
-}
- 
 ```
 
 {{< /tab >}}
@@ -80,9 +70,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/protect?password=123456" \
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the fastest way to develop. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -4,62 +4,62 @@ second_title: "Document"
 linktitle: "Import data with storage"
 type: docs
 url: /import-data-with-using-storage/
-aliases: [/import-data-into-excel-worksheet/, /import-data-into-worksheet/ , /import-data-in-excel-worksheet/, /import-data/,/import/with-using-storage/]
-description: "Cells.Cloud API for Excel operate: Import Data into Excel Worksheet."
+aliases:
+  - /import-data-into-excel-worksheet/
+  - /import-data-into-worksheet/
+  - /import-data-in-excel-worksheet/
+  - /import-data/
+  - /import/with-using-storage/
+description: "Use Aspose.Cells Cloud API to import data into an Excel worksheet from various storage sources."
+keywords: "Excel, Aspose.Cells, REST API, Import Data, Cloud Storage, JSON, CSV, PDF, Markdown"
 weight: 10
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Import Data with using storage
 ---
 
-This REST API indicates `import data` into Excel file.
+This REST API imports data into an Excel file.
 
-## RSET API
+## REST API
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/{name}/importdata
- 
 ```
 
 The request parameters are:
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| name | string | path |   |
-| folder | string | query |   |
-| storageName | string | query | storage name. |
-| importData |  | body |   |
+| Parameter Name | Type   | Location                     | Description                                                |
+|----------------|--------|------------------------------|------------------------------------------------------------|
+| name           | string | path                         | The name of the Excel file.                                |
+| folder         | string | query                        | The folder path in the storage where the file resides.    |
+| storageName    | string | query                        | The name of the storage service.                           |
+| importData     | object | body                         | JSON object that contains the data to be imported.        |
 
-**The import data options parameters** are described in [the reference link](/cells/import/#import-data-option-parameter).
+**The import‑data options parameters** are described in [the reference link](/cells/import/#import-data-option-parameter).
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/importdata" \
 -X POST \
 -D "{\"Data\":[1,2,4],\"DestinationWorksheet\":\"Sheet1\",\"FirstRow\":1,\"FirstColumn\":2,\"IsVertical\":true,\"IsInsert\":true,\"importDataType\":\"IntArray\"}" \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
-
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}

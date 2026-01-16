@@ -5,68 +5,63 @@ linktitle: "Assembly Data"
 type: docs
 url: /assembly-data-for-the-creation-of-an-excel-report/
 aliases: [/assembly/]
-keywords: "Assemble data in Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) files."
-description: "Aspoe.Cells Cloud generates reports in XLS, XLSX, XLSM, XLSB, and ODS files using the template and datasheet. Process Smart Markers in the template to fill data from another datasheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "Excel assembly, Aspose.Cells Cloud, REST API, spreadsheet report, data integration"
+description: "Aspose.Cells Cloud API assembles data into Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) files using templates and datasheets. It supports Smart Markers, multiple programming languages, and a full range of SDKs."
 weight: 40
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Assembly
 ---
 
-This REST API indicates to  `assembly` data in an Excel file.
+This REST API assembles data in an Excel file.
 
-## RSET API
+## REST API
 
 ```bash
-
 POST https://api.aspose.cloud/v3.0/cells/assembly
-
 ```
 
 The request parameters are:
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| file | file | formData | File to upload |
-| datasource | string | query |   |
-| format | string | query | Xlsx |
+| Parameter Name | Type   | Location                     | Description                                                                 |
+|----------------|--------|------------------------------|-----------------------------------------------------------------------------|
+| file           | file   | formData (multipart body)   | The spreadsheet file to upload.                                            |
+| datasource     | string | query string                 | Identifier of the data source that provides the data for the assembly.    |
+| format         | string | query string                 | Desired output format (e.g., `xlsx`, `pdf`).                               |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostAssemble) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/assembly?datasource=ds&format=pdf" \
--X POST \
--H "Content-Type: multipart/form-data" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx' 
+curl -v "https://api.aspose.cloud/v3.0/cells/assembly?datasource=ds&format=pdf" \
+  -X POST \
+  -H "Content-Type: multipart/form-data" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -F 'xxxxx1=@xxxx1.xlsx' \
+  -F 'xxxxx2=@xxxx2.xlsx'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-    "Files":
-    [
-        { 
-            "Filename":"xxxx1",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        { 
-            "Filename":"xxxx2",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
+  "Files": [
+    {
+      "Filename": "xxxx1",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "xxxx2",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    }
+  ]
 }
 ```
 
@@ -76,9 +71,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/assembly?datasource=ds&format=pdf" \
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the fastest way to develop against the API. An SDK abstracts low‑level details, allowing you to focus on your business logic. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

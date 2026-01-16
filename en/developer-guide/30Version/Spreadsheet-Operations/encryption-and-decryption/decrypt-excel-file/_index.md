@@ -5,69 +5,65 @@ linktitle: "Decrypt an Excel file"
 type: docs
 url: /excel-file-decrypt/
 aliases: [/decrypt-excel-workbooks/,/workbook/decrypt/]
-keywords: "REST API, spreadsheets, excel, decrypt"
-description: "Cells.Cloud API for Excel operate: decrypt an Excel workbook."
+keywords: "Excel, Decrypt, Aspose.Cells, REST API, Cloud SDK, Encryption"
+description: "Learn how to use the Aspose.Cells Cloud REST API to decrypt an Excel workbook, including request parameters, cURL example, and SDK code samples."
 weight: 50
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Decrypt an Excel workbook
 ---
 
-This REST API decrypt an Excel `workbook`.
+This REST API decrypts an Excel workbook.
 
-**Query Parameter**
+**Query Parameters**
 
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-|folder|string|Original workbook folder.|
-|storageName|string|Storage name.|
+| Parameter Name | Type   | Description                              |
+|----------------|--------|------------------------------------------|
+| folder         | string | Folder path of the original workbook.   |
+| storageName    | string | Name of the storage where the workbook resides. |
 
 **Request Body Parameter**
 
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-|encryption|WorkbookEncryptionRequest| |
+| Parameter Name | Type                     | Description                                 |
+|----------------|--------------------------|---------------------------------------------|
+| encryption     | WorkbookEncryptionRequest| Encryption settings required for decryption.|
 
 **WorkbookEncryptionRequest**
 
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-|EncryptionType|string|XOR/Compatible/EnhancedCryptographicProviderV1/StrongCryptographicProvider|
-|KeyLength|integer| |
-|Password|string| |
+| Parameter Name | Type    | Description                                                   |
+|----------------|---------|---------------------------------------------------------------|
+| EncryptionType | string  | Encryption algorithm (XOR, Compatible, EnhancedCryptographicProviderV1, StrongCryptographicProvider). |
+| KeyLength      | integer | Length of the encryption key in bits.                         |
+| Password       | string  | Password used for decryption.                                 |
 
 ## REST API
 
-|**API**|**Type**|**Description**|**Swagger Link**|
-| :- | :- | :- | :- |
-|/cells/{name}/encryption|DELTE|Decrypt a document|[DeleteDecryptWorkbook](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDecryptWorkbook)|
+| API                              | Type   | Description          | Swagger Link |
+|----------------------------------|--------|----------------------|--------------|
+| /cells/{name}/encryption          | DELETE | Decrypt a document   | [DeleteDecryptWorkbook](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDecryptWorkbook) |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDecryptWorkbook) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use **cURL** command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use **cURL** to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
-curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/encryption" -H "accept: application/json" -H "Content-Type: application/json" -H "x-aspose-client: Containerize.Swagger" -d "{ \"EncryptionType\": \"XOR\", \"KeyLength\": 1280, \"Password\": \"aspose\"}"
-
+```bash
+curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/encryption" \
+     -H "accept: application/json" \
+     -H "Content-Type: application/json" \
+     -H "x-aspose-client: Containerize.Swagger" \
+     -d '{ "EncryptionType": "XOR", "KeyLength": 1280, "Password": "aspose"}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
-
+```json
 {
-
-  "Code":"200",
-
-  "Status":"OK"
-
+  "Code": "200",
+  "Status": "OK"
 }
-
 ```
 
 {{< /tab >}}
@@ -76,9 +72,9 @@ curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/encryption" -H "ac
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -5,278 +5,159 @@ linktitle: "Merge an Excel file into the Excel file"
 type: docs
 url: /merge-an-excel-file-into-the-excel-file/
 aliases: [/merge-excel-workbooks/, /workbook/merge/]
-keywords: "Merge an Excel Workbooks into other Excel file."
-description: "Aspose.Cells Cloud REST API support merging an Excel files into other Excel file. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "Excel workbook merge, Aspose.Cells Cloud, REST API, spreadsheet merging, cloud SDK"
+description: "The Aspose.Cells Cloud REST API enables merging one Excel workbook into another. SDKs are available for multiple languages such as Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift."
 weight: 50
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Merge an Excel Workbooks into other Excel file
 ---
 
-This REST API indicates to merge an Excel `workbook` into other Excel workbook.
+This REST API merges an Excel **workbook** into another workbook.
 
 **Query Parameter**
 
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-|folder|string|Original workbook folder.|
-|storageName|string|Storage name.|
+| Parameter Name | Type   | Description                              |
+|----------------|--------|------------------------------------------|
+| folder         | string | Folder containing the original workbook. |
+| storageName    | string | Name of the storage.                     |
 
 ## REST API
 
-|**API**|**Type**|**Description**|**Swagger Link**|
-| :- | :- | :- | :- |
-|/cells/{name}/merge|POST|Merge Excel Workbooks|[PostWorkbooksMerge](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbooksMerge)|
+| **API**                     | **Type** | **Description**      | **Swagger Link**                                                                 |
+|-----------------------------|----------|----------------------|----------------------------------------------------------------------------------|
+| /cells/{name}/merge         | POST     | Merge Excel workbooks | [PostWorkbooksMerge](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbooksMerge) |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbooksMerge) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use **cURL** command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
+```bash
 curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/merge?mergeWith=test2.xlsx" -H "accept: application/json"
-
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```java
-
+```json
 {
-
   "Workbook": {
-
     "FileName": "test.xlsx",
-
     "Links": [
-
       {
-
         "Href": "/test.xlsx",
-
         "Rel": "self",
-
         "Title": null,
-
         "Type": null
-
       },
-
       {
-
         "Href": "/test.xlsx",
-
         "Rel": "alternate",
-
         "Title": "Download As CSV",
-
         "Type": "text/csv"
-
       },
-
       {
-
         "Href": "/test.xlsx",
-
         "Rel": "alternate",
-
         "Title": "Download As HTML",
-
         "Type": "text/html"
-
       },
-
       {
-
         "Href": "/test.xlsx",
-
         "Rel": "alternate",
-
         "Title": "Download As ODS",
-
         "Type": "application/vnd.oasis.opendocument.spreadsheet"
-
       },
-
       {
-
         "Href": "/test.xlsx",
-
         "Rel": "alternate",
-
         "Title": "Download As PDF",
-
         "Type": "application/pdf"
-
       },
-
       {
-
         "Href": "/test.xlsx",
-
         "Rel": "alternate",
-
         "Title": "Download As Table Delimited Text Format",
-
         "Type": "text/plain"
-
       },
-
       {
-
         "Href": "/test.xlsx",
-
         "Rel": "alternate",
-
         "Title": "Download As TIFF",
-
         "Type": "image/tiff"
-
       },
-
       {
-
         "Href": "/test.xlsx",
-
         "Rel": "alternate",
-
         "Title": "Download As Microsoft Excel 2003",
-
         "Type": "application/vnd.ms-excel"
-
       },
-
       {
-
         "Href": "/test.xlsx",
-
         "Rel": "alternate",
-
         "Title": "Download As Microsoft Excel 2007",
-
         "Type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
-
       },
-
       {
-
         "Href": "/test.xlsx",
-
         "Rel": "alternate",
-
         "Title": "Download As XPS",
-
         "Type": "application/vnd.ms-xpsdocument"
-
       }
-
     ],
-
     "Worksheets": {
-
       "link": {
-
         "Href": "/worksheets",
-
         "Rel": "self",
-
         "Title": null,
-
         "Type": null
-
       }
-
     },
-
     "DefaultStyle": {
-
       "link": {
-
         "Href": "/defaultstyle",
-
         "Rel": "self",
-
         "Title": null,
-
         "Type": null
-
       }
-
     },
-
     "DocumentProperties": {
-
       "link": {
-
         "Href": "/documentproperties",
-
         "Rel": "self",
-
         "Title": null,
-
         "Type": null
-
       }
-
     },
-
     "Names": {
-
       "link": {
-
         "Href": "/names",
-
         "Rel": "self",
-
         "Title": null,
-
         "Type": null
-
       }
-
     },
-
     "Settings": {
-
       "link": {
-
         "Href": "/settings",
-
         "Rel": "self",
-
         "Title": null,
-
         "Type": null
-
       }
-
     },
-
     "IsWriteProtected": "False",
-
     "IsProtected": "False",
-
     "IsEncryption": "false",
-
     "Password": null
-
   },
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
+```
 
 Response headers
-
-
-```
 
 {{< /tab >}}
 
@@ -284,7 +165,7 @@ Response headers
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK abstracts low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 

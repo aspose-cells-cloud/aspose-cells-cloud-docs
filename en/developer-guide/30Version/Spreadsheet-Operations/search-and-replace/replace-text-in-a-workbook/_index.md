@@ -6,42 +6,38 @@ type: docs
 url: /workbook/replace-text/
 aliases: [/replace-text-in-a-workbook/]
 weight: 60
-keywords: "Replace text from Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) workbook."
-description: "Aspose.Cells Cloud REST API support repleacing text from Excel workbook. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Replace text in an Excel workbook
+keywords: "Aspose Cells Cloud, Replace Text, Excel Workbook, XLSX, ODS, REST API, Spreadsheet, SDK"
+description: "Use Aspose.Cells Cloud REST API to replace text in Excel (XLS, XLSX, XLSM, XLSB) and OpenDocument Spreadsheet (ODS) workbooks. The API is available via cURL and multiple SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, etc.)."
 ---
 
-This REST API indicates to `replace` text in an Excel workbook.
+This REST API replaces text in an Excel workbook.
 
-## RSET API
+## REST API
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/replaceText
- 
 ```
 
-The request parameters are:
+### Request parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| name | string | path | Document name. |
-| sheetName | string | path | Worksheet name. |
-| oldValue | string | query | The old text to replace. |
-| newValue | string | query | The new text to replace by. |
-| folder | string | query | Document's folder. |
-| storageName | string | query | storage name. |
+| Parameter Name | Type   | Location                     | Description                                           |
+|----------------|--------|------------------------------|-------------------------------------------------------|
+| name           | string | path                         | Name of the workbook file.                            |
+| sheetName      | string | path                         | Name of the worksheet where the replacement occurs.  |
+| oldValue       | string | query                        | Text that should be replaced.                         |
+| newValue       | string | query                        | Text that will replace the old value.                 |
+| folder         | string | query                        | Folder path containing the workbook.                 |
+| storageName    | string | query                        | Name of the storage service where the workbook resides.|
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorsheetTextReplace) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorsheetTextReplace) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the cURL command‑line tool to call Aspose.Cells web services easily. The example below shows how to make a request with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
-```java
-
+```bash
 curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/replaceText?oldValue=a&newValue=a12" -H "accept: application/json"
 ```
 
@@ -49,34 +45,20 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/replaceText?oldValue
 
 {{< tab tabNum="2" >}}
 
-```java
-
+```json
 {
-
   "Matches": 26,
-
   "Workbook": {
-
     "link": {
-
       "Href": "/test.xlsx",
-
       "Rel": "self",
-
       "Title": null,
-
       "Type": null
-
     }
-
   },
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
@@ -85,9 +67,9 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/replaceText?oldValue
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the fastest way to integrate this functionality. An SDK handles low‑level details, allowing you to focus on your business logic. See the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

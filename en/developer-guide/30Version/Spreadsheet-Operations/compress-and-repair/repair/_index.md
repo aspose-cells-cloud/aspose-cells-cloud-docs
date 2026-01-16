@@ -4,74 +4,68 @@ second_title: "Document"
 type: docs
 linktitle: "Repair Excel Files"
 url: /repair-excel-files/
-keywords: "Repair Excel, ODS, WPS, and so on files."
-description: "Repair Excel files using Aspose.Cells Cloud REST API. The API supports multiple development languages ​​including Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby and Swift for quick integration in your projects."
+keywords: "Excel repair, Aspose.Cells Cloud, REST API, spreadsheet, XLSX, XLS, XLSM, XLSB, ODS, file recovery"
+description: "Repair corrupted Excel files using Aspose.Cells Cloud REST API. Supports XLS, XLSX, XLSM, XLSB, ODS and other formats, with multi‑file upload via REST calls or SDKs."
 weight: 39
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Repair
 ---
 
-This REST API indicates to `repair` Excel files.
+This REST API allows you to **repair** Excel files.
 
-- Repair XLS, XLSX, XLSM, XLSB, ODS, and so on.
-- Support multi-files.
+- Repair XLS, XLSX, XLSM, XLSB, ODS and other spreadsheet formats.  
+- Supports uploading multiple files in a single request.
 
-Aspose.Cells Cloud Excel Repair recovers data from corrupt Excel files online without installation. Corrupted Excel files can be a problem because you won't be able to open them. You can try the Aspose.Cells Cloud Excel Repair App to recover data from corrupted Excel files.
+Aspose.Cells Cloud Excel Repair recovers data from corrupt Excel files online without any installation. Corrupted Excel files can be a problem because you cannot open them. You can try the Aspose.Cells Cloud Excel Repair app to recover data from such files.
 
-## RSET API
+## REST API
 
 ```bash
-
 POST https://api.aspose.cloud/v3.0/cells/repair
-
 ```
 
 The request parameters are:
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| file | file | formData | File to upload |
-| format | string | query |  Output format, Default value is null, output format is equal to input file format. |
+| Parameter Name | Type   | Location                     | Description |
+|----------------|--------|------------------------------|-------------|
+| file           | file   | formData (multipart)         | File to upload |
+| format         | string | query                        | Desired output format. If omitted (null), the output format defaults to the input file’s format. |
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/LightCells/PostRepair) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
-
-curl -v "http://api.aspose.cloud/v3.0/cells/repair" \
--X POST \
--H "Content-Type: multipart/form-data" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx'
+curl -v "https://api.aspose.cloud/v3.0/cells/repair" \
+  -X POST \
+  -H "Content-Type: multipart/form-data" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -F 'file1=@file1.xlsx' \
+  -F 'file2=@file2.xlsx'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
-
+```json
 {
-    "Files":
-    [
-        {
-            "Filename":"xxxx1.xlsx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        },
-        {
-            "Filename":"xxxx2.xlsx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
-        }
-    ]
+  "Files": [
+    {
+      "Filename": "file1.xlsx",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "file2.xlsx",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    }
+  ]
 }
-
 ```
 
 {{< /tab >}}
@@ -80,9 +74,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/repair" \
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

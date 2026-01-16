@@ -5,70 +5,63 @@ linktitle: "Unlock Excel Files"
 type: docs
 url: /unlock-excel-files/
 aliases: [/unlock/without-storage/,/unlock/,/unlock/without-using-storage/]
-keywords: "Unlock Excel files."
-description: "Aspose.Cells Cloud REST API support unlocking Excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "Unlock Excel, Aspose.Cells Cloud, REST API, Excel unlocking, password-protected workbook, SDK, C#, Java, Python, Node.js, Go, PHP, Ruby, Swift"
+description: "The Aspose.Cells Cloud REST API provides an endpoint to unlock password‑protected Excel files. SDKs are available for multiple programming languages, including Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift."
 weight: 70
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Unlock
 ---
 
-This REST API indicates to `unlock` Excel files.
+This REST API unlocks Excel files.
 
-## RSET API
+## REST API
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/unlock
- 
 ```
 
 The request parameters are:
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| file | file | formData | File to upload |
-| password | string | query |   |
+| Parameter Name | Type   | Location                     | Description                                 |
+|----------------|--------|------------------------------|---------------------------------------------|
+| file           | file   | formData (HTTP body)         | File to upload                              |
+| password       | string | query string                 | Password to unlock the file (if protected) |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostUnlock) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "http://api.aspose.cloud/v3.0/cells/unlock?password=123456" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>" \
 -F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx' 
- 
+-F 'xxxxx2=@xxxx2.xlsx'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-    "Files":
-    [
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
+    "Files": [
+        {
+            "Filename": "xxxxx",
+            "FileSize": 274022,
+            "FileContent": "-----Base64String--------"
         },
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
+        {
+            "Filename": "xxxxx",
+            "FileSize": 274022,
+            "FileContent": "-----Base64String--------"
         }
     ]
 }
- 
 ```
 
 {{< /tab >}}
@@ -77,7 +70,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/unlock?password=123456" \
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 

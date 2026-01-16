@@ -1,74 +1,69 @@
 ---
 title: "Convert an Excel File to Different Formats"
 second_title: "Document"
-linktitle: "Convert Excel "
+linktitle: "Convert Excel"
 type: docs
 url: /convert-an-excel-file-to-different-formats/
 aliases: [/convert-excel-workbook-to-different-file-formats/,/convert/excel-to-different-formats/]
-keywords: "Convert excel files to kinds of format files."
-description: "Aspose.Cells Cloud REST API support conversion excel files to kinds of format files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "Aspose.Cells Cloud, Excel conversion, REST API, workbook format conversion, CSV, PDF, HTML, JSON, Markdown"
+description: "Use Aspose.Cells Cloud REST API to convert Excel workbooks to a variety of formats such as CSV, PDF, HTML, JSON, and more. Supports multiple SDKs for popular programming languages."
 weight: 10
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Convert Excel
 ---
 
-This REST API indicates to `convert` excel file to different format file.
+This REST API converts an Excel file to different output formats.
 
-The request is an HTTP request with multipart content (see [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). The first part of the multipart content contains the data file and the second contains save options.
+The request is an HTTP **PUT** with multipart content (see [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)).  
+The first part of the multipart body contains the **data file**, and the second part contains the **save options**.
 
-**Query Parameter**
+### Query Parameters
 
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-|format|string|The file format: CSV, xls, HTML, mhtml, ods, pdf, xml, txt, tiff, xlsb, xlsm, xlsx, xltm, xltx, xps, png, jpg, gif, emf, bmp, md, Numbers, wmf, svg, and so on. |
-|password|string| The password needed to open an Excel file. |
-|outPath|string| Path to save the result. If it's a single file, the `outPath` should encompass both the filename and extension. In the case of multiple files, the `outPath` should only include the folder. |
-|storageName|string| The storage name where the file is situated. |
-|checkExcelRestriction|bool| Whether check restriction of excel file when user modify cells related objects. |
-|streamFormat|string| The format of the input file stream.  |
-|region|string| The regional settings for workbook. |
-|pageWideFitOnPerSheet|bool| The page wide fit on worksheet.  |
-|pageTallFitOnPerSheet|bool| The page tall fit on worksheet. |
-|sheetName|string| Convert the specified worksheet.  |
-|pageIndex|string| Convert the specified page  of worksheet, sheetName is required. |
-|onePagePerSheet|bool| When converting to PDF format, one page per sheet.  |
-|AutoRowsFit|bool| Auto-fits all rows in this workbook.  |
-|AutoColumnsFit|bool| Auto-fits the columns width in this workbook.  |
+| Parameter Name            | Type   | Description |
+|---------------------------|--------|-------------|
+| `format`                  | string | Target file format (e.g., CSV, XLS, HTML, PDF, XML, TXT, TIFF, PNG, JPG, GIF, EMF, BMP, MD, Numbers, WMF, SVG, etc.). |
+| `password`                | string | Password required to open the source Excel file. |
+| `outPath`                 | string | Full path (including filename and extension) for a single output file, or folder path when multiple files are generated. |
+| `storageName`             | string | Name of the storage where the source file resides. |
+| `checkExcelRestriction`  | bool   | When **true**, validates Excel restrictions before modifying cells or related objects. |
+| `streamFormat`            | string | Format of the input file stream. |
+| `region`                  | string | Regional settings applied to the workbook. |
+| `pageWideFitOnPerSheet`   | bool   | Adjusts page width to fit each worksheet when converting to PDF. |
+| `pageTallFitOnPerSheet`   | bool   | Adjusts page height to fit each worksheet when converting to PDF. |
+| `sheetName`               | string | Name of the worksheet to convert. |
+| `pageIndex`               | string | Index of the page to convert (requires `sheetName`). |
+| `onePagePerSheet`         | bool   | When **true**, generates one PDF page per worksheet. |
+| `AutoRowsFit`             | bool   | Auto‑fits all rows in the workbook. |
+| `AutoColumnsFit`          | bool   | Auto‑fits column widths in the workbook. |
 
-**Request Body Parameter**
+### Request Body Parameters
 
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-|datafile|data file | The data file save into the first part of the multipart content.|
-|SaveOptions|Object | Save option save into the second part of the multipart content.|
+| Parameter Name | Type      | Description |
+|----------------|-----------|-------------|
+| `datafile`     | data file | The Excel file placed in the first part of the multipart body. |
+| `SaveOptions`  | object    | Save options placed in the second part of the multipart body. |
 
 ## REST API
 
-|**API**|**Type**|**Description**|**Swagger Link**|
-| :- | :- | :- | :- |
-|/cells/convert|PUT|Converts workbook from request content to some format|[PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)|
+| API                | Type | Description                                            | Swagger Link |
+|--------------------|------|--------------------------------------------------------|--------------|
+| `/cells/convert`   | PUT  | Converts a workbook from request content to the chosen format. | [PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) defines a publicly accessible interface that enables direct REST interactions from a web browser.
 
-You can use **cURL** command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
-
-{{< tabs tabTotal="1" tabID="11" tabName11="Request" >}}
-
-{{< tab tabNum="11" >}}
+### cURL Example
 
 ```bash
-
-curl -X PUT "https://api.aspose.cloud/v3.0/cells/convert?format=html" -H "accept: multipart/form-data" -H "Content-Type: multipart/form-data" -H "x-aspose-client: Containerize.Swagger" -d {"File":{}}
+curl -X PUT "https://api.aspose.cloud/v3.0/cells/convert?format=html" \
+     -H "accept: multipart/form-data" \
+     -H "Content-Type: multipart/form-data" \
+     -H "x-aspose-client: Containerize.Swagger" \
+     -d '{"File":{}}'
 ```
-
-{{< /tab >}}
-
-{{< /tabs >}}
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK accelerates development by handling low‑level details, allowing you to focus on business logic. See the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call Aspose.Cells web services with various SDKs:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

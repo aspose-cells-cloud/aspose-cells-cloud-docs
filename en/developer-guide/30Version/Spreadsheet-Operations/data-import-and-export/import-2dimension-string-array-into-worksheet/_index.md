@@ -4,44 +4,40 @@ second_title: "Document"
 linktitle: "Import 2 dimension string array"
 type: docs
 url: /import-a-2D-string-array-into-excel-worksheet/
-aliases: [/import-2dimension-string-array-into-excel-worksheet/,/import-2dimension-string-array-into-worksheet/,/import-data/-2dimension-string-array/,/import-data/2dimension-string-array/,/import/2dimension-string-array/ ]
-keywords: "Import 2 dimension string array data into Excel files."
-description: "Aspose.Cells Cloud REST API support importing 2 dimension string array data into Excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+aliases: [/import-2dimension-string-array-into-excel-worksheet/,/import-2dimension-string-array-into-worksheet/,/import-data/-2dimension-string-array/,/import-data/2dimension-string-array/,/import/2dimension-string-array/]
+keywords: "Aspose.Cells Cloud, import 2D string array, Excel, REST API, SDK"
+description: "Learn how to use Aspose.Cells Cloud REST API to import a two‑dimensional string array into an Excel worksheet. Includes request format, parameter details, and SDK code examples for C#, PHP, and Ruby."
 weight: 20
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Import 2 Dimension String Array into Excel Worksheet
 ---
 
-This REST API `import 2 dimension string array data` into Excel work sheet.
+This REST API **imports a two‑dimensional string array** into an Excel worksheet.
 
-The request is an HTTP request with multipart content (see [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). The first part of the multipart content contains the Import2DimensionStringArrayOption data and the second contains a data file.
+The request is an HTTP request with multipart content (see [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). The first part of the multipart content contains the `Import2DimensionStringArrayOption` data and the second part contains the data file.
 
-## RSET API
+## REST API
 
 ```bash
-
 POST https://api.aspose.cloud/v3.0/cells/import
 POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
-
 ```
 
 The important parameters are described in the following table:
 
 **Import2DimensionStringArrayOption**
 
-| Parameter Name|Type|Description|
-| :- | :- | :- |
-| FirstRow | int |  |
-| FirstColumn | int |  |
-| Data | String[,] |  |
-| DestinationWorksheet | string | destination work sheet name. |
-| IsInsert | string | true/false. |
-| ImportDataType | string | IntArray/DoubleArray/StringArray/TwoDimensionIntArray/TwoDimensionDoubleArray/TwoDimensionStringArray/BatchData/csvData.|
-| Source | FileSource | Indicates data file position when the BatchData parameter is null. |
+| Parameter Name          | Type                | Description                                                                 |
+|-------------------------|---------------------|-----------------------------------------------------------------------------|
+| FirstRow                | int                 | Zero‑based index of the row where the import starts.                        |
+| FirstColumn             | int                 | Zero‑based index of the column where the import starts.                     |
+| Data                    | String[,]           | Two‑dimensional array containing the string values to be imported.         |
+| DestinationWorksheet    | string              | Name of the worksheet that will receive the imported data.                 |
+| IsInsert                | string (true/false) | If **true**, the data is inserted and existing cells are shifted accordingly. |
+| ImportDataType          | string              | Specifies the data type; for this operation use `TwoDimensionStringArray`. |
+| Source                  | FileSource          | Indicates the data file location when the `BatchData` parameter is null.   |
 
-**Example**
+### Example Request Body
 
 ```json
-
 {
     "Data": [
         ["1.0", "2.9"],
@@ -50,16 +46,15 @@ The important parameters are described in the following table:
     "DestinationWorksheet": "Sheet2",
     "FirstRow": 1,
     "FirstColumn": 1,
-    "importDataType": "TwoDimensionStringArray"
+    "ImportDataType": "TwoDimensionStringArray"
 }
-
 ```
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the fastest way to integrate this functionality. An SDK abstracts low‑level details so you can focus on your business logic. See the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="3" tabID="4" tabName1="C#" tabName2="PHP" tabName3="Ruby" >}}
 

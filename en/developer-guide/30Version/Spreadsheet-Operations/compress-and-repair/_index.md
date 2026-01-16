@@ -4,12 +4,10 @@ second_title: "Document"
 type: docs
 url: /compress-and-repair-excel-files/
 linktitle: "Compress and Repair"
-keywords: "Deep file compression vs. Quick compression; Comprehensive file repair vs. Partial repair attempts; Automatic error detection vs. User manual checks"
-description: "By reducing file sizes to optimize storage space and providing functionality to repair corrupted files, it ensures data integrity and availability."
+keywords: "Excel file compression, Excel file repair, reduce Excel file size, data integrity, corrupted Excel file recovery"
+description: "Compress Excel files to reduce their size and improve storage efficiency, and repair corrupted Excel files to restore data integrity and availability."
 weight: 100
-kwords: Deep file compression vs. Quick compression; Comprehensive file repair vs. Partial repair attempts; Automatic error detection vs. User manual checks
 ---
-
 
 - **["Compress the data in an Excel file"](https://docs.aspose.cloud/cells/compress-excel-files/)**
 - **["Repair Excel Files"](https://docs.aspose.cloud/cells/repair-excel-files/)**

@@ -5,37 +5,39 @@ linktitle: "Conversion and Save As"
 type: docs
 url: /conversion-and-save-as/
 aliases: [/convert-excel/,/convert/]
-keywords: "File conversion, Format conversion, PDF export, Save file, Save Excel files"
-description: "Aspose.Cells Cloud REST API support conversion excel files to kinds of format files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "Excel conversion, file format conversion, Aspose.Cells Cloud, PDF export, CSV, JSON, Markdown, Save As, ODS, XLSX, XLS"
+description: "Aspose.Cells Cloud REST API enables conversion of Excel workbooks to a wide range of formats (PDF, CSV, JSON, HTML, etc.) and provides SDKs for many languages, including Java, .NET, Python, PHP, Ruby, Node.js, Go, Swift, and more."
 weight: 30
-kwords: File conversion, Format conversion, PDF export, Save file, Save Excel files, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Convert Excel to kinds of format
 ---
 
-If you have originally created an Excel file in a certain format, like [XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), and [CSV](https://docs.fileformat.com/spreadsheet/csv/), you may sometimes find it useful to convert the excel file to another format so you can take advantage of special features provided by it. For example, you may want to convert an excel file to [PDF](https://docs.fileformat.com/pdf/) to protect your contents from any unauthorized modifications and make it easy to read and share simultaneously.
+If you originally created an Excel file in a certain format—such as [XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), or [CSV](https://docs.fileformat.com/spreadsheet/csv/)—you may find it useful to convert the Excel file to another format to take advantage of special features. For example, converting an Excel file to [PDF](https://docs.fileformat.com/pdf/) protects its contents from unauthorized modifications and makes it easy to read and share.
 
-Document conversion is a complex process. Many factors contribute to the complexity and therefore, should be taken into account during the transformation process. The ability to convert Excel files from one format to another with a precise professional quality is a top feature of Aspose.Cells Cloud.
+Document conversion is a complex process. Many factors contribute to its complexity and should be considered during transformation. Providing precise, professional‑quality conversion between Excel formats is a key feature of Aspose.Cells Cloud.
 
-It works perfectly for any document format conversions. You can both import and export documents: [XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [ODS](https://docs.fileformat.com/spreadsheet/ods/), [TXT](https://docs.fileformat.com/word-processing/txt/). The export-only formats: [PDF](https://docs.fileformat.com/pdf/), [OTS](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [DIF](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [NUMBERS](https://docs.fileformat.com/spreadsheet/numbers/), [FODS](https://docs.fileformat.com/spreadsheet/fods/).
+The service works seamlessly for any document format conversion. You can both import and export documents in these formats:
 
-The following APIs to convert an Excel file to other file formats is provided:
+- Import/Export: [XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [ODS](https://docs.fileformat.com/spreadsheet/ods/), [TXT](https://docs.fileformat.com/word-processing/txt/)
+- Export‑only: [PDF](https://docs.fileformat.com/pdf/), [OTS](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [DIF](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [NUMBERS](https://docs.fileformat.com/spreadsheet/numbers/), [FODS](https://docs.fileformat.com/spreadsheet/fods/)
 
-|API|Description|
+### Conversion APIs
+
+| API | Description |
 | :- | :- |
-|[GET /cells/{name}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)|Gets Excel file to other formats from cloud storage.|
-|[PUT /cells/convert](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)|Converts Excel file to other formats from request content.|
-|[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)|Saves Excel file as other formats file to storage.|
+| `GET /cells/{name}` | Retrieves an Excel workbook from cloud storage and converts it to the requested format. |
+| `PUT /cells/convert` | Converts an Excel workbook supplied in the request body to the specified output format. |
+| `POST /cells/{name}/saveAs` | Saves an existing Excel workbook as another format directly to cloud storage. |
 
-The following articles explain each API in detail and contain cURL and SDK Examples of each API:
+The following articles explain each API in detail and include cURL and SDK examples:
 
-- [Convert an Excel file to different format file.](/cells/convert-an-excel-file-to-different-formats)
-- [Save an Excel file as a different format file.](/cells/save-an-excel-file-as-other-formats-files)
-- [Convert an Excel file to a CSV file.](/cells/convert-excel-file-to-CSV-file)
-- [Convert an Excel file to a Docx file.](/cells/convert-excel-file-to-docx-file)
-- [Convert an Excel file to a HTML file.](/cells/convert-excel-file-to-html-file)
-- [Convert an Excel file to a JSON file.](/cells/convert-excel-file-to-json-file)
-- [Convert an Excel file to a Markdown file.](/cells/convert-excel-file-to-markdown-file)
-- [Convert an Excel file to a PDF file.](/cells/convert-excel-file-to-pdf-file)
-- [Convert an Excel file to a Png file.](/cells/convert-excel-file-to-png-file)
-- [Convert an Excel file to a Pptx file.](/cells/convert-excel-file-to-pptx-file)
-- [Convert an Excel file to a SQL file.](/cells/convert-excel-file-to-sql-file)
-- [Convert an Excel file to a TIFF file.](/cells/convert-excel-file-to-tiff-file)
+- [Convert an Excel file to a different format](/cells/convert-an-excel-file-to-different-formats)
+- [Save an Excel file as a different format](/cells/save-an-excel-file-as-other-formats-files)
+- [Convert an Excel file to a CSV file](/cells/convert-excel-file-to-CSV-file)
+- [Convert an Excel file to a DOCX file](/cells/convert-excel-file-to-docx-file)
+- [Convert an Excel file to an HTML file](/cells/convert-excel-file-to-html-file)
+- [Convert an Excel file to a JSON file](/cells/convert-excel-file-to-json-file)
+- [Convert an Excel file to a Markdown file](/cells/convert-excel-file-to-markdown-file)
+- [Convert an Excel file to a PDF file](/cells/convert-excel-file-to-pdf-file)
+- [Convert an Excel file to a PNG file](/cells/convert-excel-file-to-png-file)
+- [Convert an Excel file to a PPTX file](/cells/convert-excel-file-to-pptx-file)
+- [Convert an Excel file to a SQL file](/cells/convert-excel-file-to-sql-file)
+- [Convert an Excel file to a TIFF file](/cells/convert-excel-file-to-tiff-file)

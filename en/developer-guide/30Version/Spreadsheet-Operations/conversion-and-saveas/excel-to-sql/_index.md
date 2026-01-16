@@ -4,27 +4,26 @@ second_title: "Document"
 linktitle: "Excel to SQL"
 type: docs
 url: /convert-excel-file-to-sql-file/
-keywords: "Convert excel files to sql files."
-description: "Aspose.Cells Cloud REST API support conversion excel files to sql files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "Excel to SQL, Aspose.Cells Cloud, REST API, spreadsheet conversion, SQL file"
+description: "Convert Excel spreadsheets to SQL files using Aspose.Cells Cloud REST API. Supports multiple SDKs and programming languages for seamless integration."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Excel to SQL
 ---
 
-This REST API indicates to `convert` a spreadsheet file to a sql format file.
+This REST API converts a spreadsheet file to an SQL format file.
 
 **Query Parameter**
 
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-|password|string| The password needed to open an Excel file. |
-|storageName|string| The storage name where the file is situated. |
-|checkExcelRestriction|bool| Whether check restriction of excel file when user modify cells related objects. |
+| Parameter Name          | Type   | Description                                                                                 |
+|-------------------------|--------|---------------------------------------------------------------------------------------------|
+| password                | string | Password required to open the Excel file.                                                   |
+| storageName             | string | Name of the storage where the file is stored.                                                |
+| checkExcelRestriction   | bool   | Indicates whether to check Excel file restrictions when modifying cell‑related objects.   |
 
 **Request Body Parameter**
 
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-|datafile|data file | The data file save into the first part of the multipart content.|
+| Parameter Name | Type      | Description                                                                      |
+|----------------|-----------|----------------------------------------------------------------------------------|
+| datafile       | data file | The spreadsheet file to be converted, included as the first part of the request. |
 
 **Response**
 
@@ -32,39 +31,36 @@ This REST API indicates to `convert` a spreadsheet file to a sql format file.
 
 ## REST API Specification
 
-|**API**|**Type**|**Description**|**Swagger Link**|
-| :- | :- | :- | :- |
-|/cells/convert/sql|POST|Convert a spreadsheet to a sql file.|[PostConvertWorkbookToSQL](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToSQL)|
+| **API**                | **Type** | **Description**                         | **Swagger Link**                                                                 |
+|------------------------|----------|-----------------------------------------|-----------------------------------------------------------------------------------|
+| /cells/convert/sql     | POST     | Convert a spreadsheet to an SQL file.   | [PostConvertWorkbookToSQL](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToSQL) |
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToSQL) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use **cURL** command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/sql" 
-     -H "accept: multipart/form-data" 
-     -H "Content-Type: multipart/form-data" 
-     -H "x-aspose-client: curl" 
-     -d {"File":{}}
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/sql" \
+     -H "accept: multipart/form-data" \
+     -H "Content-Type: multipart/form-data" \
+     -H "x-aspose-client: curl" \
+     -d '{"File":{}}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```
-
+```json
 {
   "Filename": "xxxxxx.json",
   "FileSize": xxxx,
   "FileContent": "File Content: base64_encoded_string"
 }
-
 ```
 
 {{< /tab >}}
@@ -73,9 +69,9 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/sql"
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK handles low‑level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
 {{< tab tabNum="1" >}}
@@ -128,14 +124,10 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 {{< /tabs >}}
 
-## Other APIs implement this function
+## Other APIs Implementing This Function
 
-[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) API lets you save MS Excel file as HTML file with additional settings and save the result to the storage.
+- **[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)** – Saves an Excel file as HTML with additional settings and stores the result in the specified storage.
 
-This REST API `convert` excel file to HTML.
+- **[PUT /cells/convert](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)** – Converts an Excel file to HTML with optional settings and returns the result in the response.
 
-[PUT /cells/convert](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) API lets you convert MS Excel file to HTML file with additional settings and save the result to the response.
-
-This REST API `export` excel file to HTML.
-
-[GET /cells/{name}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook  ) API lets you convert MS Excel file to HTML file with additional settings and save the result to the response.
+- **[GET /cells/{name}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)** – Retrieves an Excel file as HTML with optional conversion settings.

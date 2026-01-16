@@ -5,51 +5,55 @@ linktitle: "OLE Object"
 type: docs
 url: /export-excel-ole-object/
 aliases: [ /export/excel-ole-object/]
-keywords: "Export Excel OLE object to kinds of format files."
-description: "Aspose.Cells Cloud REST API support exporting Excel OLE object to kinds of format files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "Export OLE object, Aspose.Cells Cloud, REST API, Excel, PDF, CSV, JSON, multi‑language SDK"
+description: "The Aspose.Cells Cloud REST API enables exporting Excel OLE objects to various file formats. SDKs are available for multiple programming languages, including Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift."
 weight: 20
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Export OLE Object
 ---
-
 
 - **REST API**
 
-|**API**|**Type**|**Description**|**Swagger Link**|
-| :- | :- | :- | :- |
-|/cells/export|POST|Export excel from request content to some format|[PostExport](https://apireference.aspose.cloud/cells/#/LightCells/PostExport)|
+| **API**   | **Type** | **Description**                                                      | **Swagger Link** |
+| --------- | -------- | -------------------------------------------------------------------- | ---------------- |
+| /cells/export | POST     | Exports an Excel workbook containing OLE objects to the specified output format. | [PostExport](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use **cURL** command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
 - **Request**
 
 ```bash
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=oleobject" -H "accept: multipart/form-data" -H "Content-Type: multipart/form-data" -H "x-aspose-client: Containerize.Swagger" -d {"File":{}}
+curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=oleobject" \
+     -H "accept: multipart/form-data" \
+     -H "Content-Type: multipart/form-data" \
+     -H "x-aspose-client: Containerize.Swagger" \
+     -d {"File":{}}
 ```
 
 - **Response**
 
 ```bash
 {
-    "Files": [{
-        "Filename": "OLESlide.ppt",
-        "FileSize": 390,
-        "FileContent": "-----Base64String--------"
-    }, {
-        "Filename": "OLEDoc.docx",
-        "FileSize": 382,
-        "FileContent": "-----Base64String--------"
-    }]
+    "Files": [
+        {
+            "Filename": "OLESlide.ppt",
+            "FileSize": 390,
+            "FileContent": "-----Base64String--------"
+        },
+        {
+            "Filename": "OLEDoc.docx",
+            "FileSize": 382,
+            "FileContent": "-----Base64String--------"
+        }
+    ]
 }
 ```
 
 - **Cloud SDK Family**
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to accelerate development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

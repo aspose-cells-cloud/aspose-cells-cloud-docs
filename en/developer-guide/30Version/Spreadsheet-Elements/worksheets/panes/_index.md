@@ -4,15 +4,12 @@ second_title: "Document"
 linktitle: "Panes"
 type: docs
 url: /worksheets/panes/
-keywords: "How to work with panes on an Excel worksheet."
-description: "Aspose.Cells Cloud REST API support working with panes on an Excel Worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "Excel, panes, freeze panes, unfreeze panes, Aspose.Cells Cloud, REST API"
+description: "Learn how to work with panes in an Excel worksheet using Aspose.Cells Cloud REST API, including steps to freeze and unfreeze panes across supported SDK languages."
 weight: 20
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, How to work with panes on an Excel worksheet
 ---
 
-## Working with panes on an Excel worksheet.
+## Working with panes on an Excel worksheet
 
-- [How to freeze panes on an Excel worksheet.](/cells/worksheets/panes/freeze/) 
-- [How to unfreeze panes on an Excel worksheet.](/cells/worksheets/panes/unfreeze/) 
-
-
+- [How to freeze panes on an Excel worksheet](/cells/worksheets/panes/freeze/) 
+- [How to unfreeze panes on an Excel worksheet](/cells/worksheets/panes/unfreeze/)
