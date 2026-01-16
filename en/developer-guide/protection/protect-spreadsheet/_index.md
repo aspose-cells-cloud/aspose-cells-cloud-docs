@@ -6,7 +6,7 @@ linktitle: "Protect Spreadsheet"
 type: docs
 url: /protect-spreadsheet/
 keywords: "Excel password API, Excel encryption API, automate Excel security, open and modify password API, enterprise Excel protection, Excel SDK, batch encrypt Excel files"
-description: "Easily add dual-layer password protection to your Excel files! Set an "open password" to restrict access and a "modify password" to prevent unauthorized edits. Works with all Excel versions—secure your data in seconds. Free trial available."
+description: "Easily add dual-layer password protection to your Excel files! Set an open password to restrict access and a modify password to prevent unauthorized edits. Works with all Excel versions—secure your data in seconds. Free trial available."
 weight: 100
 ---
 
