@@ -5,61 +5,66 @@ linktitle: "Row height"
 type: docs
 url: /ranges/update/row-height/
 aliases: [/change-heights-of-rows-inside-the-range/]
-keywords: "Set row height for range on an Excel worksheet"
-description: "Aspose.Cells Cloud REST API support setting row height for range on an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "row height, range, Excel, Aspose.Cells Cloud, REST API, SDK, cURL"
+description: "Learn how to set the height of rows within a specific range on an Excel worksheet using Aspose.Cells Cloud REST API. Includes request details, cURL example, and SDK code snippets for multiple programming languages."
 weight: 76
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Set heights of rows inside the range
 ---
 
-This REST API indicates to set row height of range on an Excel worksheet.
+This REST API sets the row height of a range on an Excel worksheet.
 
-## RSET API
+## REST API
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/rowHeight
- 
 ```
 
-The request parameters are:
+### Request parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| name | string | path |   |
-| sheetName | string | path |   |
-| value | number | query |   |
-| range |  | body |   |
-| folder | string | query |   |
-| storageName | string | query | storage name. |
+| Parameter Name | Type   | Location                     | Description |
+|----------------|--------|------------------------------|-------------|
+| **name**       | string | Path                         | The name of the Excel file stored in the cloud. |
+| **sheetName**  | string | Path                         | The name of the worksheet that contains the target range. |
+| **value**      | number | Query                        | The desired row height (in points) to apply to the range. |
+| **range**      | object | Body (JSON)                  | JSON object that defines the range (e.g., start row, row count, etc.). |
+| **folder**     | string | Query                        | Folder path in storage where the file is located. |
+| **storageName**| string | Query                        | The name of the storage service (if multiple storages are configured). |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeRowHeight) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/rowHeight?value=15" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--d "{ \"ColumnCount\": 7, \"ColumnWidth\": 19, \"FirstColumn\": 0, \"FirstRow\": 9, \"Name\": \"string\", \"RefersTo\": \"string\", \"RowCount\": 1, \"RowHeight\": 15, \"Worksheet\": \"Sheet1\"}"
+-H "Authorization: Bearer <jwt token>" \
+-d '{ 
+  "ColumnCount": 7,
+  "ColumnWidth": 19,
+  "FirstColumn": 0,
+  "FirstRow": 9,
+  "Name": "string",
+  "RefersTo": "string",
+  "RowCount": 1,
+  "RowHeight": 15,
+  "Worksheet": "Sheet1"
+}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
@@ -68,9 +73,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the fastest way to develop against Aspose.Cells Cloud. SDKs handle low‑level details, allowing you to focus on your business logic. Check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call the **Set Row Height for Range** operation using various SDKs:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

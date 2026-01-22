@@ -5,60 +5,54 @@ linktitle: "Delete vertical page break"
 type: docs
 url: /page-breaks/delete-vertical-page-break/
 aliases: [/delete-vertical-page-break-inside-worksheet/]
-keywords: "Delete a page break in an Excel worksheet."
-description: "Aspose.Cells Cloud REST API support deleting a page break in an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "Delete vertical page break, Aspose.Cells Cloud, REST API, Excel worksheet, page break deletion"
+description: "The Aspose.Cells Cloud REST API allows you to delete a vertical page break in an Excel worksheet. SDKs are available for many programming languages, making integration easy."
 weight: 60
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Delete vertical page break
 ---
 
-This REST API indicates to delete a `vertical` page break.
+This REST API deletes a **vertical** page break.
 
-## RSET API
+## REST API
 
-```bash
- 
+```
 DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/verticalpagebreaks/{index}
- 
 ```
 
 The request parameters are:
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| name | string | path |   |
-| sheetName | string | path |   |
-| index | integer | path |   |
-| folder | string | query |   |
-| storageName | string | query | storage name. |
+| Parameter Name | Type   | Location                     | Description                                      |
+|----------------|--------|------------------------------|--------------------------------------------------|
+| name           | string | path                         | The name of the Excel file.                      |
+| sheetName      | string | path                         | The name of the worksheet containing the break. |
+| index          | integer| path                         | Zero‑based index of the vertical page break to delete. |
+| folder         | string | query                        | Folder path where the file is stored.            |
+| storageName    | string | query                        | Name of the storage service.                    |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PageBreaks/DeleteVerticalPageBreak) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
-```bash
- 
+```
 curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/verticalpagebreaks/0" \
 -X DELETE \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
@@ -67,7 +61,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/vertica
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 

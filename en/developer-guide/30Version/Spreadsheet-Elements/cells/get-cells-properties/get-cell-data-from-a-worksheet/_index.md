@@ -3,10 +3,11 @@ title: "Get Cell Data from a Worksheet"
 type: docs
 url: /get-cell-data-from-a-worksheet/
 weight: 10
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Get Cell Data from a Worksheet
+keywords: "Aspose.Cells Cloud, REST API, Excel, worksheet, cell data, Get Cell Data, Excel file, API"
+description: "Retrieve the data of a specific cell from a worksheet using the Aspose.Cells Cloud REST API."
 ---
 
-This REST API indicates shows get a `cell` in an Excel file when the `cellOrMethodName` parameter is cell name.
+This REST API retrieves a `cell` from an Excel file when the `cellOrMethodName` parameter is a cell name.
 
 - **cURL Example**
 
@@ -15,9 +16,7 @@ This REST API indicates shows get a `cell` in an Excel file when the `cellOrMeth
 {{< tab tabNum="11" >}}
 
 ```java
-
 curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/A3?client_id=xxxx&client_secret=xxxx" -H "Content-Type: application/json" -H "Accept: application/json"
-
 ```
 
 {{< /tab >}}
@@ -25,76 +24,46 @@ curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/
 {{< tab tabNum="12" >}}
 
 ```java
-
 {
-
   "Cell": {
-
     "Name": "A3",
-
     "Row": 2,
-
     "Column": 0,
-
     "Value": "Statistical",
-
     "Type": "IsString",
-
     "IsFormula": false,
-
     "IsMerged": false,
-
     "IsArrayHeader": false,
-
     "IsInArray": false,
-
     "IsErrorValue": false,
-
     "IsInTable": false,
-
     "IsStyleSet": false,
-
     "HtmlString": "<Font Style=\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;\">Statistical</Font>",
-
     "Style": {
-
       "link": {
-
         "Href": "/style",
-
         "Rel": "self"
-
       }
-
     },
-
     "link": {
-
       "Href": "http://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/A3",
-
       "Rel": "self"
-
     }
-
   },
-
   "Code": "200",
-
   "Status": "OK"
-
-} 
-
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-- **Cloud SDK Family**
+- **Cloud SDKs**
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the fastest way to develop against the API. An SDK handles low‑level details, allowing you to focus on your project logic. Please check the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

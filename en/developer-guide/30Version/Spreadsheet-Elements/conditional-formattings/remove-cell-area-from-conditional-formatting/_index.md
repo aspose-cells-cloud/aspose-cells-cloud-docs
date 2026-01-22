@@ -1,67 +1,59 @@
 ---
-title: "Delete Cell Area "
+title: "Delete Cell Area"
 type: docs
 url: /conditional-formattings/delete-cell-area/
 aliases: [/remove-cell-area-from-conditional-formatting/]
-keywords: "REST API, spreadsheets, excel, delete cell area from condition formatting"
-description: "Cells.Cloud API for Excel operate:  delete cell area from  condition formatting."
+keywords: "Aspose Cells Cloud, REST API, delete conditional formatting area, Excel, spreadsheet"
+description: "Use the Aspose.Cells Cloud REST API to delete a specific cell area from conditional formatting in an Excel worksheet."
 weight: 70
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Delete Cell Area 
 ---
 
-This REST API indicates Remove cell area from conditional formatting.
- 
-## RSET API
- 
+This REST API removes a cell area from conditional formatting.
+
+## REST API
+
 ```bash
- 
 DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/area
- 
 ```
-The request parameters are: 
- 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description| 
-| :- | :- | :- |:- | 
-| name | string | path |   |
-| sheetName | string | path |   |
-| startRow | integer | query |   |
-| startColumn | integer | query |   |
-| totalRows | integer | query |   |
-| totalColumns | integer | query |   |
-| folder | string | query |   |
-| storageName | string | query | storage name. |
- 
+
+The request parameters are:
+
+| Parameter Name | Type    | Location                     | Description                                                            |
+|----------------|---------|------------------------------|------------------------------------------------------------------------|
+| name           | string  | path                         | The name of the Excel file.                                            |
+| sheetName      | string  | path                         | The name of the worksheet that contains the conditional formatting.   |
+| startRow       | integer | query                        | Zero‑based index of the first row of the area to be removed.          |
+| startColumn    | integer | query                        | Zero‑based index of the first column of the area to be removed.       |
+| totalRows      | integer | query                        | Number of rows in the area to be removed.                              |
+| totalColumns   | integer | query                        | Number of columns in the area to be removed.                           |
+| folder         | string  | query                        | Folder in cloud storage where the file is located (optional).          |
+| storageName    | string  | query                        | Name of the storage service (optional).                                |
+
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/DeleteWorksheetConditionalFormattingArea) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
- 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
- 
+
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
+```bash
 curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditionalFormattings/area?startRow=3&startColumn=3&totalRows=1&totalColumns=1" \
 -X DELETE \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
-
-
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
   "Code": "200",
   "Status": "OK"
 }
-
 ```
 
 {{< /tab >}}
@@ -69,16 +61,14 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditi
 {{< /tabs >}}
 
 ## Cloud SDK Family
- 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
- 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+
+Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}
-
-
 
 {{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Examples-DotNet-CSharp-ConditionalFormatting-RemoveCellAreaFromConditionalFormatting-1.cs" >}}
 
@@ -86,15 +76,11 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 {{< tab tabNum="2" >}}
 
-
-
 {{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Examples-Java-cells-remove-cell-area-from-conditional-formatting.java" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
-
-
 
 {{< /tab >}}
 
@@ -106,33 +92,23 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 {{< tab tabNum="5" >}}
 
-
-
 {{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Examples-Node.js-SDK-ConditionalFormatting-RemoveCellAreaFromConditionalFormatting-1.js" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
 
-
-
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
-
-
 
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
 
-
-
 {{< /tab >}}
 
 {{< tab tabNum="9" >}}
-
-
 
 {{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Examples-Perl-ConditionalFormatting-RemoveCellAreaFromConditionalFormatting-1.pl" >}}
 

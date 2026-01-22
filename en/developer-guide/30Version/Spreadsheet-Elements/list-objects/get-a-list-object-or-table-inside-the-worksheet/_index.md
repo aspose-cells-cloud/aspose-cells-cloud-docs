@@ -5,56 +5,51 @@ linktitle: "Get"
 type: docs
 url: /list-objects/get/
 aliases: [/get-a-list-object-or-table-inside-the-worksheet/,/tables/get/]
-keywords: "Get a list object(table) into an Excel worksheet."
-description: "Aspose.Cells Cloud REST API support getting a list object(table) into an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "Aspose.Cells Cloud, Excel list object, Get list object, REST API, worksheet table, export format"
+description: "Use Aspose.Cells Cloud REST API to retrieve a list object (table) from an Excel worksheet and export it to various formats. SDKs are available for Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift."
 weight: 9
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Get a list object in an Excel worksheet
 ---
 
-This REST API indicates to `get` a list object info by index or convert a `list object` to different format file in an Excel worksheet.
+This REST API retrieves a list object (table) from an Excel worksheet and can export it to different file formats.
 
-## RSET API
+## REST API
 
 ```bash
- 
 GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listobjectindex}
- 
 ```
 
 The request parameters are:
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| name | string | path | Document name. |
-| sheetName | string | path | The worksheet name. |
-| listobjectindex | integer | path | list object index. |
-| format | string | query | export format. |
-| folder | string | query | Document's folder. |
-| storageName | string | query | storage name. |
+| Parameter Name   | Type    | Location                     | Description                                                     |
+|------------------|---------|------------------------------|-----------------------------------------------------------------|
+| name             | string  | path                         | The name of the Excel file.                                      |
+| sheetName        | string  | path                         | The name of the worksheet containing the list object.           |
+| listobjectindex  | integer | path                         | Zero‑based index of the list object to retrieve.                |
+| format           | string  | query                        | Desired export format (e.g., `pdf`, `csv`, `json`).             |
+| folder           | string  | query                        | Folder path where the workbook is stored.                       |
+| storageName      | string  | query                        | Name of the Aspose Cloud storage to use.                        |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ListObjects/GetWorksheetListObject) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
 curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listobjects/1" \
 -X GET \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
  "ListObject": {
   "AutoFilter": {
@@ -154,7 +149,6 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listobj
  "Code": 200,
  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
@@ -163,11 +157,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listobj
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
-
-This REST API get an excel `listobject`  object to different format file.
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

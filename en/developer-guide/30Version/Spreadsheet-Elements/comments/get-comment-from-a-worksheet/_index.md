@@ -3,90 +3,67 @@ title: "Get"
 type: docs
 url: /comments/get/
 aliases: [/get-comment-from-a-worksheet/]
-keywords: "REST API, spreadsheets, excel, get comment"
-description: "Cells.Cloud API for Excel operate: get comment."
+keywords: "Aspose Cells Cloud, REST API, Excel, worksheet comment, get comment"
+description: "Retrieve a worksheet comment by cell name using Aspose.Cells Cloud REST API."
 weight: 10
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Get
 ---
 
-This REST API indicates Get worksheet comment by cell name.
+This REST API retrieves a worksheet comment by cell name.
 
-## RSET API
+## REST API
 
 ```bash
- 
 GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{cellName}
- 
 ```
 
 The request parameters are:
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| name | string | path | The document name. |
-| sheetName | string | path | The worksheet name. |
-| cellName | string | path | The cell name |
-| folder | string | query | The document folder. |
-| storageName | string | query | storage name. |
+| Parameter Name | Type   | Location | Description |
+|----------------|--------|----------|-------------|
+| name           | string | path     | The name of the Excel file. |
+| sheetName      | string | path     | The name of the worksheet that contains the comment. |
+| cellName       | string | path     | The cell address (e.g., **A1**) whose comment is being retrieved. |
+| folder         | string | query    | The folder path where the document is stored. |
+| storageName    | string | query    | The name of the storage service. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetComment) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
+```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/comments/A1" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
-
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-    "Comment":{
-
-    "CellName":"A1",
-
-    "Author":"roy.wang",
-
+  "Comment": {
+    "CellName": "A1",
+    "Author": "roy.wang",
     "HtmlNote": "",
-
     "Note": "Aspose.Cells Cloud.",
-
     "AutoSize": "True",
-
     "IsVisible": "True",
-
     "Width": 30,
-
     "Height": 10,
-
     "TextHorizontalAlignment": "Bottom",
-
     "TextOrientationType": "TopToBottom",
-
     "TextVerticalAlignment": "Bottom"
-
-    },
- 
-   "Code": 200,
-
-   "Status": "OK"
-
+  },
+  "Code": 200,
+  "Status": "OK"
 }
-
 ```
 
 {{< /tab >}}
@@ -95,7 +72,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/comment
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 

@@ -3,60 +3,56 @@ title: "Unmerge Cells in Excel Worksheet"
 type: docs
 url: /unmerge-cells-in-excel-worksheet/
 weight: 120
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Unmerge Cells in Excel Worksheet
+keywords: "Aspose.Cells, Excel, Unmerge Cells, REST API, Cloud SDK, Spreadsheet"
+description: "Learn how to use the Aspose.Cells Cloud REST API to unmerge cells in an Excel worksheet, with request examples, response format, and SDK code samples for multiple programming languages."
 ---
 
-This REST API indicates `unmerge` cells in an Excel file.
+This REST API unmerges cells in an Excel file.
 
-## RSET API
+## REST API
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/unmerge
- 
 ```
 
 The request parameters are:
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| name | string | path | The workbook name. |
-| sheetName | string | path | The worksheet name. |
-| startRow | integer | query | The start row. |
-| startColumn | integer | query | The start column. |
-| totalRows | integer | query | The total rows |
-| totalColumns | integer | query | The total columns. |
-| folder | string | query | The workbook folder. |
-| storageName | string | query | storage name. |
+| Parameter Name | Type    | Location | Description                                             |
+|----------------|---------|----------|---------------------------------------------------------|
+| name           | string  | path     | Name of the workbook file.                              |
+| sheetName      | string  | path     | Name of the worksheet.                                  |
+| startRow       | integer | query    | Zero‑based index of the first row to unmerge.           |
+| startColumn    | integer | query    | Zero‑based index of the first column to unmerge.        |
+| totalRows      | integer | query    | Number of rows to include in the unmerge operation.    |
+| totalColumns   | integer | query    | Number of columns to include in the unmerge operation. |
+| folder         | string  | query    | Folder path where the workbook is stored.               |
+| storageName    | string  | query    | Name of the storage service.                            |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostWorksheetUnmerge) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/unmerge?startRow=10&startColumn=10&totalRows=10&totalColumns=10" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
@@ -65,7 +61,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/u
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 

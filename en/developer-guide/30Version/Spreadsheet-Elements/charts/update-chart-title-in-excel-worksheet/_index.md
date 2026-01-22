@@ -1,76 +1,65 @@
----
 title: "Update Chart Title in Excel Worksheet"
 type: docs
 url: /charts/title/update/
 aliases: [/update-chart-title-in-excel-worksheet/]
 weight: 160
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Update Chart Title in Excel Worksheet
----
+keywords: Excel, Aspose.Cells, REST API, Chart Title, Update Chart, Cloud SDK
+description: Learn how to update a chart title in an Excel worksheet using Aspose.Cells Cloud REST API, cURL, and various SDKs.
 
-This REST API indicates update chart title
- 
-## RSET API
- 
+This REST API updates the chart title.
+
+## REST API
+
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title
- 
 ```
-The request parameters are: 
- 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description| 
-| :- | :- | :- |:- | 
-| name | string | path | Workbook name. |
-| sheetName | string | path | Worksheet name. |
-| chartIndex | integer | path | The chart index. |
-| title |  | body | Chart title |
-| folder | string | query | The workbook folder. |
-| storageName | string | query | storage name. |
- 
-<br/>
+
+The request parameters are:
+
+| Parameter Name | Type   | Location                     | Description                                 |
+|----------------|--------|------------------------------|---------------------------------------------|
+| name           | string | path                         | Workbook name.                              |
+| sheetName      | string | path                         | Worksheet name.                             |
+| chartIndex     | integer| path                         | Zero‑based index of the chart.              |
+| title          | string | body                         | New chart title.                            |
+| folder         | string | query                        | The workbook folder.                        |
+| storageName    | string | query                        | Storage name.                               |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/PostWorksheetChartTitle) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
- 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v POST "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/title" 
--d '{"Text":"Stock exchange"}' 
--X POST \
+```bash
+curl -v POST "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/title" \
+-d '{"Text":"Stock exchange"}' \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
-
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": "200",
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+
 ## Cloud SDK Family
- 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
- 
+
+Using an SDK is the best way to speed up development. An SDK takes care of low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}

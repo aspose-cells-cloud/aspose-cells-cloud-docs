@@ -5,63 +5,55 @@ linktitle: "Update"
 type: docs
 url: /document-properties/update/
 aliases: [/set-a-particular-document-property/]
-keywords: "Update properties from excel files."
-description: "Aspose.Cells Cloud REST API support updating properties from excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "Aspose Cells, document property, set document property, REST API, Excel, spreadsheet, cloud SDK, cURL"
+description: "Use Aspose.Cells Cloud REST API to set or create a document property in an Excel file. Includes request details, cURL example, and SDK code samples for multiple programming languages."
 weight: 30
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Set a Particular Document Property
 ---
 
-This REST API indicates to `set/create` document property.
+This REST API allows you to **set** or **create** a document property.
 
-## RSET API
+## REST API
 
 ```bash
- 
 PUT http://api.aspose.cloud/v3.0/cells/{name}/documentproperties/{propertyName}
- 
 ```
 
 The request parameters are:
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| name | string | path | The document name. |
-| propertyName | string | path | The property name. |
-| property |  | body | with new property value. |
-| folder | string | query | The document folder. |
-| storageName | string | query | storage name. |
+| Parameter Name | Type   | Location                     | Description                                   |
+|----------------|--------|------------------------------|-----------------------------------------------|
+| name           | string | path                         | The name of the Excel file.                   |
+| propertyName   | string | path                         | The name of the property to set.              |
+| property       | object | body                         | JSON object that contains the new property value. |
+| folder         | string | query                        | The folder where the file is stored.          |
+| storageName    | string | query                        | The name of the storage.                      |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Properties/PutDocumentProperty) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties/author"  \
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties/author" \
 -X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>" \
--d "{ \"link\": { \"Href\": \"string\", \"Rel\": \"string\", \"Title\": \"string\", \"Type\": \"string\" }, \"Name\": \"author\", \"Value\": \"aspose\", \"BuiltIn\": \"string\"}"
-
+-d '{ "link": { "Href": "string", "Rel": "string", "Title": "string", "Type": "string" }, "Name": "author", "Value": "aspose", "BuiltIn": "string" }'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
+{
   "Code": 200,
-
   "Status": "Created"
-
 }
-
 ```
 
 {{< /tab >}}
@@ -70,9 +62,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties/author
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the fastest way to develop against the API. An SDK handles low‑level details so you can focus on your project logic. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

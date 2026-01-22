@@ -4,69 +4,61 @@ second_title: "Document"
 linktitle: "Add dynamic filter"
 type: docs
 url: /autofilter/add-dynamic-filter/
-aliases: [/filter-a-list-using-dynamic-filter/,/autofilter/add-a-dynamic-filter/]
-keywords: "Adds a dynamic filter on an Excel worksheet."
-description: "The Aspose.Cells Cloud API supports adding a dynamic filter on an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+aliases:
+  - /filter-a-list-using-dynamic-filter/
+  - /autofilter/add-a-dynamic-filter/
+keywords: "dynamic filter, Excel, Aspose.Cells Cloud, REST API, auto filter, spreadsheet"
+description: "Use the Aspose.Cells Cloud API to add a dynamic date filter to an Excel worksheet. The guide includes cURL examples and SDK snippets for multiple programming languages."
 weight: 65
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Add a dynamic date filter in an Excel worksheet
 ---
 
-This REST API indicates to add a `dynamic filter` on an Excel worksheet.
+This REST API adds a **dynamic filter** to an Excel worksheet.
 
-## RSET API
+## REST API
 
 ```bash
- 
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/dynamicFilter
- 
 ```
 
-The request parameters are:
+### Request parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| name | string | path |   |
-| sheetName | string | path |   |
-| range | string | query |   |
-| fieldIndex | integer | query |   |
-| dynamicFilterType | string | query |   |
-| matchBlanks | boolean | query |   |
-| refresh | boolean | query |   |
-| folder | string | query |   |
-| storageName | string | query | storage name. |
+| Parameter Name      | Type    | Location                     | Description                                                                                           |
+|---------------------|---------|------------------------------|-------------------------------------------------------------------------------------------------------|
+| **name**            | string  | path                         | The name of the Excel file (e.g., `Book1.xlsx`).                                                      |
+| **sheetName**       | string  | path                         | The name of the worksheet that contains the range to be filtered.                                    |
+| **range**           | string  | query                        | The cell range on which the filter is applied (e.g., `A1:B1`).                                        |
+| **fieldIndex**      | integer | query                        | Zero‑based index of the column within the range to which the dynamic filter is applied.              |
+| **dynamicFilterType**| string | query                        | The type of dynamic filter (e.g., `BelowAverage`, `AboveAverage`, `Tomorrow`, `LastMonth`, etc.).    |
+| **matchBlanks**     | boolean | query                        | Indicates whether blank cells should be included in the filter results.                             |
+| **refresh**         | boolean | query                        | If `true`, the filter is refreshed after being applied.                                               |
+| **folder**          | string  | query                        | The folder path in storage where the workbook is located.                                            |
+| **storageName**     | string  | query                        | The name of the Aspose Cloud storage to use.                                                          |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetDynamicFilter) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/dynamicFilter?range=A1:B1&fieldIndex=0&dynamicFilterType=BelowAverage&matchBlanks=true"  \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+```bash
+curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/dynamicFilter?range=A1:B1&fieldIndex=0&dynamicFilterType=BelowAverage&matchBlanks=true" \
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
@@ -75,9 +67,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFil
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the most efficient way to develop. An SDK abstracts low‑level details so you can focus on your project logic. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

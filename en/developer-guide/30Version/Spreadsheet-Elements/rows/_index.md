@@ -1,15 +1,12 @@
----
 title: "Working with Excel rows"
 second_title: "Document"
 linktitle: "Rows"
 type: docs
 url: /rows/
 aliases: [/working-with-rows/]
-keywords: "Working with rows on an Excel file."
-description: "Aspose.Cells Cloud REST API support working with rows on an Excel file. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "Excel rows, Aspose.Cells Cloud, REST API, spreadsheet, row manipulation"
+description: "Aspose.Cells Cloud REST API enables manipulation of rows in Excel files. The SDK provides support for multiple programming languages, including Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Rows
----
 
 ## Working with rows on an Excel file
 
@@ -20,4 +17,4 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Ro
 - [How to unhide rows in Excel Worksheet](/cells/rows/unhide/)
 - [How to group rows in Excel Worksheet](/cells/rows/group/)
 - [How to ungroup rows in Excel Worksheet](/cells/rows/ungroup/)
-- [How to delete row from a Worksheet](/cells/rows/delete/)
+- [How to delete a row from a Worksheet](/cells/rows/delete/)

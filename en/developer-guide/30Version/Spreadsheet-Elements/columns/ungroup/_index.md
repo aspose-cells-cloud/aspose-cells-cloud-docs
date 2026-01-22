@@ -4,62 +4,54 @@ second_title: "Document"
 linktitle: "Ungroup"
 type: docs
 url: /columns/ungroup/
-aliases: [/ungroup-columns-in-an-excel-worksheet/, /ungroup-columns-in-excel-worksheet/]
-keywords: "Ungroup column on an Excel worksheet"
-description: "Aspose.Cells Cloud REST API support ungrouping column on an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+aliases:
+  - /ungroup-columns-in-an-excel-worksheet/
+  - /ungroup-columns-in-excel-worksheet/
+keywords: "Ungroup columns, Excel worksheet, Aspose.Cells Cloud, REST API, SDK"
+description: "Use Aspose.Cells Cloud REST API to ungroup columns in an Excel worksheet. Supports multiple SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go)."
 weight: 70
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Ungroup columns on an Excel worksheet
 ---
 
-This REST API indicates ungroup worksheet columns.
+This REST API ungroups worksheet columns.
 
-## RSET API
+## REST API
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/ungroup
- 
 ```
 
 The request parameters are:
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| name | string | path | The workbook name. |
-| sheetName | string | path | The worksheet name. |
-| firstIndex | integer | query | The first column index to be operated. |
-| lastIndex | integer | query | The last column index to be operated. |
-| folder | string | query | The document folder. |
-| storageName | string | query | storage name. |
+| Parameter Name | Type    | Location                     | Description                                                     |
+|----------------|---------|------------------------------|-----------------------------------------------------------------|
+| name           | string  | path                         | The workbook name.                                              |
+| sheetName      | string  | path                         | The worksheet name.                                             |
+| firstIndex     | integer | query                        | Zero‑based index of the first column to be ungrouped.           |
+| lastIndex      | integer | query                        | Zero‑based index of the last column to be ungrouped.            |
+| folder         | string  | query                        | Path to the folder containing the workbook.                     |
+| storageName    | string  | query                        | Name of the storage service.                                    |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostUngroupWorksheetColumns) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use **cURL** command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/Columns/ungroup?firstIndex=1&lastIndex=5" -H "accept: application/json"
-
+curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/ungroup?firstIndex=1&lastIndex=5" -H "accept: application/json"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
-
- {
-
+```json
+{
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
@@ -68,9 +60,9 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ce
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the fastest way to develop against Aspose.Cells Cloud. An SDK abstracts low‑level details, letting you focus on your project logic. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

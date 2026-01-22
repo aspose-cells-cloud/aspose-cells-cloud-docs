@@ -1,64 +1,57 @@
----
 title: "Add an empty row on an Excel worksheet"
 second_title: "Document"
 linktitle: "Row"
 type: docs
 url: /rows/add/row/
 aliases: [/add-an-empty-row-in-a-worksheet/]
-keywords: "Add an empty row on an Excel worksheet"
-description: "Aspose.Cells Cloud REST API support adding an empty row on an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "Aspose.Cells Cloud, Excel, add empty row, worksheet, REST API"
+description: "Use Aspose.Cells Cloud REST API to insert an empty row into an Excel worksheet. Supports multiple SDKs (C#, Java, Python, Go, PHP, Ruby, Node.js, Perl, Android, Swift) for rapid development."
 weight: 20
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Add an empty row on an Excel worksheet
 ---
 
-This REST API indicates to add new worksheet row on an Excel worksheet.
+This REST API adds a new row to an Excel worksheet.
 
-## RSET API
+## REST API
 
 ```bash
- 
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/{rowIndex}
- 
 ```
 
 The request parameters are:
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| name | string | path | The workbook name. |
-| sheetName | string | path | The worksheet name. |
-| rowIndex | integer | path | The new row index. |
-| folder | string | query | The document folder. |
-| storageName | string | query | storage name. |
+| Parameter Name | Type   | Location                     | Description                                                            |
+|----------------|--------|------------------------------|------------------------------------------------------------------------|
+| name           | string | path                         | The workbook file name.                                                |
+| sheetName      | string | path                         | The worksheet name.                                                    |
+| rowIndex       | integer| path                         | The zero‑based index where the new row will be inserted.              |
+| folder         | string | query                        | The folder path in storage that contains the workbook.                |
+| storageName    | string | query                        | The name of the Aspose Cloud storage to use.                           |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PutInsertWorksheetRow) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows/10" \
 -X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
@@ -67,9 +60,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK abstracts low‑level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

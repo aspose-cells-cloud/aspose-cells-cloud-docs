@@ -4,62 +4,56 @@ second_title: "Document"
 linktitle: "Rows"
 type: docs
 url: /rows/delete/rows/
-keywords: "Delete rows on an Excel worksheet"
-description: "Aspose.Cells Cloud REST API support deleting rows on an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "Aspose.Cells Cloud, delete rows, Excel worksheet, REST API, SDK"
+description: "Use Aspose.Cells Cloud REST API to delete multiple rows from an Excel worksheet. SDKs are available for Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift."
 weight: 80
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Delete multi rows on an Excel worksheet
 ---
 
-This REST API indicates to delete multi rows on an Excel worksheet.
+This REST API deletes multiple rows on an Excel worksheet.
 
-## RSET API
+## REST API
 
 ```bash
- 
 DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
- 
 ```
 
 The request parameters are:
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| name | string | path | The workbook name. |
-| sheetName | string | path | The worksheet bame. |
-| startrow | integer | query | The begin row index to be operated. |
-| totalRows | integer | query | 1 |
-| updateReference | boolean | query | True |
-| folder | string | query | The document folder. |
-| storageName | string | query | storage name. |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                             |
+|----------------|---------|----------------------------|---------------------------------------------------------|
+| name           | string  | path                       | The workbook name.                                      |
+| sheetName      | string  | path                       | The worksheet name.                                     |
+| startrow       | integer | query                      | The starting row index to be operated.                 |
+| totalRows      | integer | query                      | The number of rows to delete.                           |
+| updateReference| boolean | query                      | Whether to update references after deletion (true/false). |
+| folder         | string  | query                      | The document folder.                                    |
+| storageName    | string  | query                      | The storage name.                                       |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetRows) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows?startrow=1&totalRows=1&updateReference=true" \
 -X DELETE \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
@@ -68,7 +62,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 

@@ -3,67 +3,60 @@ title: "Add Format Condition"
 type: docs
 url: /conditional-formattings/add-format-condition/
 aliases: [/add-a-format-condition/]
-keywords: "REST API, spreadsheets, excel, add a format condition"
-description: "Cells.Cloud API for Excel operate: add a format condition."
+keywords: "Aspose Cells Cloud, REST API, Conditional Formatting, Add Format Condition, Excel, Spreadsheet"
+description: "Use the Aspose.Cells Cloud REST API to add a format condition to a worksheet in an Excel workbook."
 weight: 50
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Add Format Condition
 ---
 
-This REST API indicates Add a format condition.
- 
-## RSET API
- 
+This REST API adds a format condition to a worksheet.
+
+## REST API
+
 ```bash
- 
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}
- 
 ```
-The request parameters are: 
- 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description| 
-| :- | :- | :- |:- | 
-| name | string | path |   |
-| sheetName | string | path |   |
-| index | integer | path |   |
-| cellArea | string | query |   |
-| type | string | query |   |
-| operatorType | string | query |   |
-| formula1 | string | query |   |
-| formula2 | string | query |   |
-| folder | string | query |   |
-| storageName | string | query | storage name. |
- 
+
+### Request parameters
+
+| Parameter Name | Type   | Location                     | Description                                                                 |
+|----------------|--------|------------------------------|-----------------------------------------------------------------------------|
+| name           | string | path                         | The name of the Excel workbook.                                             |
+| sheetName      | string | path                         | The name of the worksheet that contains the range to be formatted.        |
+| index          | integer| path                         | The zero‑based index of the format condition to add or replace.            |
+| cellArea       | string | query                        | The cell range (e.g., `A1:C3`) to which the condition applies.              |
+| type           | string | query                        | The type of condition (e.g., `Expression`, `CellValue`).                   |
+| operatorType   | string | query                        | The operator for the condition (e.g., `Between`, `Equal`).                 |
+| formula1       | string | query                        | The first formula or value used by the condition.                          |
+| formula2       | string | query                        | The second formula or value (required for some operators like `Between`). |
+| folder         | string | query                        | The folder in storage where the workbook is located.                        |
+| storageName    | string | query                        | The name of the storage service (e.g., `Default`).                         |
+
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/PutWorksheetFormatCondition) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
- 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
- 
-### **cURL Example**
+
+You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
+
+### cURL Example
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
+```bash
 curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditionalFormattings/0?cellArea=A1:C3&type=Expression&operatorType=Between&formula1=v1&formula2=v2" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
-
+```json
 {
   "Code": "200",
   "Status": "OK"
 }
-
 ```
 
 {{< /tab >}}
@@ -71,16 +64,14 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditi
 {{< /tabs >}}
 
 ## Cloud SDK Family
- 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
- 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+
+Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}
-
-
 
 {{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Examples-DotNet-CSharp-ConditionalFormatting-AddFormatCondition-1.cs" >}}
 
@@ -90,13 +81,9 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 {{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Examples-Java-cells-add-cells-area-for-format-condition.java" >}}
 
-
-
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
-
-
 
 {{< /tab >}}
 
@@ -108,41 +95,29 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 {{< tab tabNum="5" >}}
 
-
-
 {{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Examples-Node.js-SDK-ConditionalFormatting-AddFormatCondition-1.js" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
 
-
-
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
-
-
 
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
 
-
-
 {{< /tab >}}
 
 {{< tab tabNum="9" >}}
-
-
 
 {{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Examples-Perl-ConditionalFormatting-AddFormatCondition-1.pl" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="10" >}}
-
-
 
 {{< gist "aspose-cells-cloud-gists" "caa13d019b3c7c3b5c14110ccd217e99" >}}
 

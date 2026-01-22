@@ -3,49 +3,45 @@ title: "Add"
 type: docs
 url: /comments/add/
 aliases: [/add-a-comment-to-a-cell-in-a-worksheet/]
-keywords: "REST API, spreadsheets, excel, add comment"
-description: "Cells.Cloud API for Excel operate: add comment."
+keywords: "Aspose.Cells Cloud API, Add Worksheet Comment, REST API, Excel, Spreadsheet"
+description: "Adds a comment to a specific worksheet cell using the Aspose.Cells Cloud REST API."
 weight: 20
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Add
 ---
-This REST API indicates Add worksheet's cell comment.
 
-## RSET API
+This REST API adds a comment to a worksheet cell.
+
+## REST API
 
 ```bash
- 
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{cellName}
- 
 ```
 
 The request parameters are:
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| name | string | path | The document name. |
-| sheetName | string | path | The worksheet name. |
-| cellName | string | path | The cell name |
-| comment |  | body | Comment object |
-| folder | string | query | The document folder. |
-| storageName | string | query | storage name. |
+| Parameter Name | Type   | Location                     | Description                                            |
+|----------------|--------|------------------------------|--------------------------------------------------------|
+| name           | string | path                         | The name of the workbook file.                         |
+| sheetName      | string | path                         | The name of the worksheet.                             |
+| cellName       | string | path                         | The address of the cell (e.g., **A1**).                |
+| comment        | object | body                         | The **Comment** object that contains the comment data. |
+| folder         | string | query                        | The folder where the workbook is stored.               |
+| storageName    | string | query                        | The name of the storage service.                       |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PutWorksheetComment) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
 ```java
-
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/comments/a1" \
 -X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+-H "Authorization: Bearer <jwt token>" \
 -d "{ \"CellName\": \"a1\", \"Author\": \"test\", \"HtmlNote\": \"string\", \"Note\": \"this is a comment\", \"AutoSize\": true, \"IsVisible\": true, \"Width\": 10, \"Height\": 10}"
-
 ```
 
 {{< /tab >}}
@@ -53,53 +49,29 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/comment
 {{< tab tabNum="12" >}}
 
 ```java
-
 {
-
   "Comment": {
-
     "CellName": "A1",
-
     "Author": "test",
-
     "HtmlNote": "<Font Style=\"FONT-WEIGHT: bold;FONT-FAMILY: Tahoma;FONT-SIZE: 9pt;COLOR: #000000;TEXT-ALIGN: left;\">this is a comment</Font>",
-
     "Note": "this is a comment",
-
     "AutoSize": true,
-
     "IsVisible": true,
-
     "Width": 10,
-
     "Height": 10,
-
     "TextHorizontalAlignment": "Left",
-
     "TextOrientationType": "NoRotation",
-
     "TextVerticalAlignment": "Top",
-
     "link": {
-
       "Href": "/test.xlsx/worksheets/Sheet1/comments/a1",
-
       "Rel": "self",
-
       "Title": null,
-
       "Type": null
-
     }
-
   },
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
@@ -108,9 +80,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/comment
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

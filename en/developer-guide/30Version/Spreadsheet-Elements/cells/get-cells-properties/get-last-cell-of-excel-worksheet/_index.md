@@ -3,24 +3,20 @@ title: "Get Last Cell of Excel Worksheet"
 type: docs
 url: /get-last-cell-of-excel-worksheet/
 weight: 30
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Get Last Cell of Excel Worksheet
+keywords: "Aspose.Cells Cloud, Excel, Get Last Cell, REST API, Worksheet, endcell"
+description: "Learn how to retrieve the address of the last used cell in an Excel worksheet using Aspose.Cells Cloud REST API."
 ---
 
-
-
-This REST API indicates shows get a `endcell` in an Excel file when the `cellOrMethodName` parameter is `endcell`.
+This REST API returns the `endcell` of an Excel worksheet when the `cellOrMethodName` parameter is set to `endcell`.
 
 - **cURL Example**
-
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
 ```java
-
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/endcell" -H "Content-Type: application/json" -H "Accept: application/json" 
-
+curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/endcell" -H "Content-Type: application/json" -H "Accept: application/json"
 ```
 
 {{< /tab >}}
@@ -28,72 +24,43 @@ curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/
 {{< tab tabNum="12" >}}
 
 ```java
-
 {
-
   "Cell": {
-
     "Name": "F341",
-
     "Row": 340,
-
     "Column": 5,
-
     "Value": "<More Info>",
-
     "Type": "IsString",
-
     "Formula": "=HYPERLINK(SUBSTITUTE(HelpURLTemplate,\"xxxxxxxxxx\",[Help Topic]),\"<More Info>\")",
-
     "IsFormula": false,
-
     "IsMerged": false,
-
     "IsArrayHeader": false,
-
     "IsInArray": false,
-
     "IsErrorValue": false,
-
     "IsInTable": false,
-
     "IsStyleSet": false,
-
     "HtmlString": "<Font Style=\"TEXT-DECORATION: underline;FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;\">&lt;More Info&gt;</Font>",
-
     "Style": {
-
       "link": {
-
         "Href": "/style",
-
         "Rel": "self"
-
       }
-
     }
-
   },
-
   "Code": "200",
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-
 - **Cloud SDK Family**
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to accelerate development. An SDK handles low‑level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
-
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 

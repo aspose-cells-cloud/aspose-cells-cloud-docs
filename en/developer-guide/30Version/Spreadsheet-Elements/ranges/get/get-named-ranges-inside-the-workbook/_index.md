@@ -5,90 +5,68 @@ linktitle: "Name"
 type: docs
 url: /ranges/get/name/
 aliases: [/get-named-ranges-inside-the-workbook/]
-keywords: "Get cells data based on named range on an Excel worksheet."
-description: "Aspose.Cells Cloud REST API support getting cells data based on named range on an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "named ranges, Excel, Aspose.Cells Cloud, REST API, get named ranges, worksheets"
+description: "Use Aspose.Cells Cloud REST API to retrieve named ranges from an Excel workbook. Includes request details, sample cURL commands, and SDK examples for multiple programming languages."
 weight: 10
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Get Named Ranges on an Excel workbook
----
-This REST API indicates Read worksheets ranges info.
 
-## RSET API
+---
+
+This REST API returns information about named ranges defined in worksheets.
+
+## REST API
 
 ```bash
- 
 GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/ranges
- 
 ```
 
-The request parameters are:
+### Request parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| name | string | path | Document name. |
-| folder | string | query | Document folder. |
-| storageName | string | query | storage name. |
+| Parameter Name | Type   | Location                | Description                              |
+|----------------|--------|-------------------------|------------------------------------------|
+| name           | string | Path                    | The name of the Excel document.          |
+| folder         | string | Query string            | The folder that contains the document.   |
+| storageName    | string | Query string            | The storage name where the document resides.|
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/GetNamedRanges) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/GetNamedRanges) defines a publicly accessible programming interface that lets you perform REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the cURL command‑line tool to call Aspose.Cells web services. The example below demonstrates how to retrieve named ranges with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/ranges" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-
   "Ranges": {
-
     "RangeList": [
-
       {
-
         "ColumnCount": 7,
-
         "ColumnWidth": 8.428571428571429,
-
         "FirstColumn": 1,
-
         "FirstRow": 9,
-
         "Name": "data",
-
         "RefersTo": "=Sheet1!$B$10:$H$10",
-
         "RowCount": 1,
-
         "RowHeight": 15,
-
         "Worksheet": "Sheet1"
-
       }
-
     ]
-
   },
-
   "Code": 200,
-
   "Status": "OK"
-
 }
- 
 ```
 
 {{< /tab >}}
@@ -97,9 +75,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/ranges" \
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the fastest way to integrate this functionality. SDKs handle low‑level details so you can focus on your business logic. See the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

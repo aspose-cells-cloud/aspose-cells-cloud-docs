@@ -3,74 +3,64 @@ title: "Add a custom criteria in an Excel worksheet"
 second_title: "Document"
 linktitle: "Add custom filter"
 type: docs
-url: /autofilter/add-custom-filter/ 
-aliases: [/filter-a-list-with-a-custom-criteria/,/autofilter/add-a-custom-filter/ ]
-keywords: "Adds a custom filter on an Excel worksheet."
-description: "The Aspose.Cells Cloud API supports adding a custom filter on an Excel worksheet.SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+url: /autofilter/add-custom-filter/
+aliases: [/filter-a-list-with-a-custom-criteria/,/autofilter/add-a-custom-filter/]
+keywords: "Excel, custom filter, Aspose.Cells Cloud, REST API, auto filter, worksheet"
+description: "Learn how to use the Aspose.Cells Cloud REST API to add a custom filter to an Excel worksheet. Includes request details, cURL example, and SDK code snippets for multiple programming languages."
 weight: 65
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Add a custom criteria in an Excel worksheet
 ---
 
-This REST API indicates to filter a list with a `custom criteria`.
+This REST API filters a list using a **custom criteria**.
 
-## RSET API
+## REST API
 
 ```bash
- 
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/custom
- 
 ```
 
 The request parameters are:
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| name | string | path |   |
-| sheetName | string | path |   |
-| range | string | query |   |
-| fieldIndex | integer | query |   |
-| operatorType1 | string | query |   |
-| criteria1 | string | query |   |
-| isAnd | boolean | query |   |
-| operatorType2 | string | query |   |
-| criteria2 | string | query |   |
-| matchBlanks | boolean | query |   |
-| refresh | boolean | query |   |
-| folder | string | query |   |
-| storageName | string | query | storage name. |
+| Parameter Name | Type    | Location                     | Description                                                                 |
+|----------------|---------|------------------------------|-----------------------------------------------------------------------------|
+| name           | string  | path                         | Name of the Excel file.                                                     |
+| sheetName      | string  | path                         | Name of the worksheet that contains the data to be filtered.               |
+| range          | string  | query                        | Cell range that the filter will be applied to (e.g., `A1:B1`).             |
+| fieldIndex     | integer | query                        | Zero‑based index of the column on which the filter is applied.             |
+| operatorType1  | string  | query                        | First comparison operator (e.g., `LessOrEqual`, `Equal`).                  |
+| criteria1      | string  | query                        | First filter value or expression.                                          |
+| isAnd          | boolean | query                        | If `true`, combines the two criteria with **AND**; otherwise **OR**.       |
+| operatorType2  | string  | query                        | Second comparison operator (optional).                                     |
+| criteria2      | string  | query                        | Second filter value or expression (optional).                              |
+| matchBlanks    | boolean | query                        | When `true`, blanks are included in the filter results.                    |
+| refresh        | boolean | query                        | If `true`, forces the worksheet to refresh after applying the filter.      |
+| folder         | string  | query                        | Folder path in storage where the file is located.                          |
+| storageName    | string  | query                        | Name of the storage service.                                                |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetCustomFilter) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
+```bash
 curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/custom?range=A1:B1&fieldIndex=0&operatorType1=LessOrEqual&criteria1=1" \
--X PUT 
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
@@ -79,9 +69,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFil
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the fastest way to develop. An SDK handles low‑level details so you can focus on your project logic. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

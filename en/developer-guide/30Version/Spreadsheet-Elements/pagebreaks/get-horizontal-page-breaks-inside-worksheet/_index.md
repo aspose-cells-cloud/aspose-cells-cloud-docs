@@ -5,92 +5,68 @@ linktitle: "Get horizontal page breaks"
 type: docs
 url: /page-breaks/get-horizontal-page-breaks/
 aliases: [/get-horizontal-page-breaks-inside-worksheet/]
-keywords: "Add a page break in an Excel worksheet."
-description: "Aspose.Cells Cloud REST API support adding a page break in an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "horizontal page breaks, Aspose.Cells Cloud, REST API, Excel worksheet, API example"
+description: "Learn how to retrieve horizontal page breaks from an Excel worksheet using the Aspose.Cells Cloud REST API. Includes request details, a cURL example, response format, and SDK code samples for multiple programming languages."
 weight: 10
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Get horizontal page breaks
 ---
 
-This REST API indicates to get `horizontal` page breaks.
+This REST API retrieves **horizontal** page breaks.
 
-## RSET API
+## REST API
 
 ```bash
- 
 GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/horizontalpagebreaks
- 
 ```
 
 The request parameters are:
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| name | string | path |   |
-| sheetName | string | path |   |
-| folder | string | query |   |
-| storageName | string | query | storage name. |
+| Parameter Name | Type   | Location | Description                                 |
+|----------------|--------|----------|---------------------------------------------|
+| name           | string | path     | The name of the Excel file.                 |
+| sheetName      | string | path     | The name of the worksheet.                  |
+| folder         | string | query    | The folder path in storage where the file is located. |
+| storageName    | string | query    | The name of the storage.                    |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PageBreaks/GetHorizontalPageBreaks) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "http://api.aspose.cloud/v3.0/cells/sampleExcelPageBreaks.xlsx/worksheets/Sheet1/horizontalpagebreaks" \
 -X GET \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-
   "HorizontalPageBreaks": {
-
     "HorizontalPageBreakList": [
-
       {
-
         "Row": 6,
-
         "EndColumn": 16383,
-
         "StartColumn": 0
-
       }
-
     ],
-
     "link": {
-
       "Href": "http://api.aspose.cloud/v3.0/cells/sampleExcelPageBreaks.xlsx/worksheets/Sheet1/HorizontalPageBreaks",
-
       "Rel": "self",
-
       "Title": null,
-
       "Type": null
-
     }
-
   },
-
   "Code": 200,
-
   "Status": "OK"
-
 }
- 
 ```
 
 {{< /tab >}}
@@ -99,15 +75,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/sampleExcelPageBreaks.xlsx/worksheet
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
-
-## Cloud SDK Family
-
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
-
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -3,61 +3,57 @@ title: "Clear Cells Formatting in Excel Worksheet"
 type: docs
 url: /clear-cells-formatting-in-excel-worksheet/
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Clear Cells Formatting in Excel Worksheet
+keywords: Excel, Aspose.Cells, Clear Formats, REST API, Cloud SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go
+description: "Use Aspose.Cells Cloud REST API to clear cell formatting in an Excel worksheet. Includes request details, cURL example, and SDK code snippets."
 ---
 
-This REST API indicates `clear` cells `style` in an Excel file.
+This REST API clears cell formatting in an Excel file.
 
-## RSET API
+## REST API
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clearformats
- 
 ```
 
 The request parameters are:
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| name | string | path | Workbook name. |
-| sheetName | string | path | Worksheet name. |
-| range | string | query | The range. |
-| startRow | integer | query | The start row. |
-| startColumn | integer | query | The start column. |
-| endRow | integer | query | The end row. |
-| endColumn | integer | query | The end column. |
-| folder | string | query | The workbook folder. |
-| storageName | string | query | storage name. |
+| Parameter Name | Type    | Location                     | Description                              |
+|----------------|---------|------------------------------|------------------------------------------|
+| name           | string  | path                         | Name of the workbook.                    |
+| sheetName      | string  | path                         | Name of the worksheet.                   |
+| range          | string  | query                        | Cell range (e.g., `A1:A10`).             |
+| startRow       | integer | query                        | Zero‑based index of the start row.       |
+| startColumn    | integer | query                        | Zero‑based index of the start column.    |
+| endRow         | integer | query                        | Zero‑based index of the end row.         |
+| endColumn      | integer | query                        | Zero‑based index of the end column.      |
+| folder         | string  | query                        | Folder that contains the workbook.       |
+| storageName    | string  | query                        | Name of the storage location.            |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostClearFormats) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostClearFormats) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/clearformats?range=a1%3Aa10&startRow=1&startColumn=1&endRow=10&endColumn=10" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
@@ -66,9 +62,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/c
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the fastest way to develop. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

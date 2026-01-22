@@ -5,59 +5,53 @@ linktitle: "Clear"
 type: docs
 url: /oleobjects/clear/
 aliases: [/delete-all-oleobjects-from-excel-worksheet/]
-keywords: "Delete all OLE objects in an Excel worksheet."
-description: "Aspose.Cells Cloud REST API support deleting all OLE objects in an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "Delete OLE objects, Excel worksheet, Aspose.Cells Cloud, REST API, SDK"
+description: "Learn how to delete all OLE objects from an Excel worksheet using Aspose.Cells Cloud REST API and SDKs for multiple programming languages."
 weight: 60
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Delete all OLE objects in an Excel worksheet
 ---
 
-This REST API indicates `delete all` OLE objects in an Excel worksheet.
+This REST API deletes **all** OLE objects in a specified Excel worksheet.
 
-## RSET API
+## REST API
 
 ```bash
- 
 DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects
- 
 ```
 
-The request parameters are:
+**Request parameters**
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| name | string | path | The workbook name. |
-| sheetName | string | path | The worsheet name. |
-| folder | string | query | The workbook folder. |
-| storageName | string | query | storage name. |
+| Parameter Name | Type   | Location | Description |
+|----------------|--------|----------|-------------|
+| name           | string | path     | The name of the workbook. |
+| sheetName      | string | path     | The name of the worksheet. |
+| folder         | string | query    | The folder that contains the workbook. |
+| storageName    | string | query    | The storage name where the workbook is located. |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/OleObjects/DeleteWorksheetOleObjects) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/OleObjects/DeleteWorksheetOleObjects) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the **cURL** command‑line tool to call Aspose.Cells web services. The example below demonstrates how to delete all OLE objects with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/Embeded_OleObject_Sample_Book1.xlsx/worksheets/Sheet1/oleobjects" \
+curl -v "http://api.aspose.cloud/v3.0/cells/Embedded_OleObject_Sample_Book1.xlsx/worksheets/Sheet1/oleobjects" \
 -X DELETE \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
@@ -66,11 +60,11 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Embeded_OleObject_Sample_Book1.xlsx/
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the fastest way to integrate this operation into your application. An SDK abstracts low‑level details, allowing you to focus on business logic. See the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call the **DeleteWorksheetOleObjects** operation with various SDKs:
 
- {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
 {{< tab tabNum="1" >}}
 

@@ -4,40 +4,38 @@ type: docs
 url: /charts/chart-area/fill-format/get/
 aliases: [/get-fill-format-of-a-chart-area-from-a-worksheet/]
 weight: 70
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Get Fill Format of a Chart Area from a Worksheet
+keywords: ["Aspose.Cells Cloud","REST API","chart area","fill format","worksheet","GET"]
+description: "Retrieves the fill format information of a chart area in a worksheet using the Aspose.Cells Cloud REST API."
 ---
 
-This REST API indicates get chart area fill format info.
- 
-## RSET API
- 
+This REST API retrieves the fill format information of a chart area.
+
+## REST API
+
 ```bash
- 
 GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/chartArea/fillFormat
- 
 ```
-The request parameters are: 
- 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description| 
-| :- | :- | :- |:- | 
-| name | string | path | Workbook name. |
-| sheetName | string | path | Worksheet name. |
-| chartIndex | integer | path | The chart index. |
-| folder | string | query | Workbook folder. |
-| storageName | string | query | storage name. |
- 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ChartArea/GetChartAreaFillFormat) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
- 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
- 
+
+The request parameters are:
+
+| Parameter Name | Type    | Location | Description                     |
+|----------------|---------|----------|---------------------------------|
+| name           | string  | path     | Workbook name.                  |
+| sheetName      | string  | path     | Worksheet name.                 |
+| chartIndex     | integer | path     | Index of the chart.             |
+| folder         | string  | query    | Folder that contains the workbook. |
+| storageName    | string  | query    | Name of the storage.            |
+
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ChartArea/GetChartAreaFillFormat) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
+
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The example below shows how to call the API with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/chartArea/fillFormat" 
+```bash
+curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/chartArea/fillFormat" \
 -X GET \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
@@ -48,32 +46,25 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "FillFormat": {
-
     "Type": "Automatic"
-
   },
-
   "Code": "200",
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+
 ## Cloud SDK Family
- 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
- 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+
+Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Objective C" tabName8="Android" tabName9="Perl" tabName10="Go" >}}
 

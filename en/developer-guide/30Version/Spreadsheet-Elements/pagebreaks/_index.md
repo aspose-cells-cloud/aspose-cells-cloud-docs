@@ -1,17 +1,14 @@
----
 title: "Working with Excel page break"
 second_title: "Document"
 linktitle: "PageBreaks"
 type: docs
 url: /working-with-pagebreaks/
 aliases: [/working-with-pagebreaks/]
-keywords: "Get, add, delete, and update page break in an Excel worksheet."
-description: "Aspose.Cells Cloud REST API support getting, adding, deleting, and updating page break in an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "Excel, page break, Aspose.Cells Cloud, REST API, worksheet, add, delete, get, update"
+description: "Learn how to get, add, delete, and update page breaks in an Excel worksheet using Aspose.Cells Cloud REST API. Supports multiple SDKs for languages such as C#, Java, Python, and more."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, PageBreaks
----
 
-## How to working with page breaks in an Excel worksheet
+## How to work with page breaks in an Excel worksheet
 
 - [How to add a vertical page break in an Excel worksheet.](/cells/page-breaks/add-vertical-page-break/)
 - [How to add a horizontal page break in an Excel worksheet.](/cells/page-breaks/add-horizontal-page-break/)

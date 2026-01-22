@@ -5,70 +5,65 @@ linktitle: Clear
 type: docs
 url: /pivot-tables/clear/
 aliases: [/delete-worksheet-pivot-tables/]
-keywords: "Delete all pivot tables in an Excel worksheet."
-description: "Aspose.Cells Cloud REST API support deleting all pivot tables in an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "Aspose.Cells Cloud, REST API, delete pivot tables, Excel worksheet, PivotTables"
+description: "Learn how to use the Aspose.Cells Cloud REST API to delete all pivot tables from a worksheet in an Excel file. Includes the HTTP request, cURL example, and SDK snippets for multiple programming languages."
 weight: 80
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Delete all pivot tables in an Excel worksheet
 ---
-This REST API indicates Delete worksheet pivot tables
- 
-## RSET API
- 
+
+This REST API deletes all pivot tables in a worksheet.
+
+## REST API
+
 ```bash
- 
 DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables
- 
 ```
-The request parameters are: 
- 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description| 
-| :- | :- | :- |:- | 
-| name | string | path | Document name. |
-| sheetName | string | path | The worksheet name. |
-| folder | string | query | Document's folder. |
-| storageName | string | query | storage name. |
- 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PivotTables/DeleteWorksheetPivotTables) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
- 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
- 
+
+### Request parameters
+
+| Parameter Name | Type   | Location | Description                     |
+|----------------|--------|----------|---------------------------------|
+| name           | string | path     | The name of the Excel file.     |
+| sheetName      | string | path     | The name of the worksheet.      |
+| folder         | string | query    | The folder that contains the file. |
+| storageName    | string | query    | The storage name to use.        |
+
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PivotTables/DeleteWorksheetPivotTables) defines a publicly accessible programming interface that lets you perform REST interactions directly from a web browser.
+
+You can use the **cURL** command‑line tool to call Aspose.Cells web services. The example below shows how to delete all pivot tables in a worksheet.
+
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
 {{< tab tabNum="1" >}}
- 
+
 ```bash
- 
 curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
+
 ## Cloud SDK Family
- 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
- 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
- 
- 
+
+Using an SDK speeds up development. An SDK abstracts low‑level details so you can focus on your business logic. See the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+
+The following code examples demonstrate how to call the Aspose.Cells web service using various SDKs:
+
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}

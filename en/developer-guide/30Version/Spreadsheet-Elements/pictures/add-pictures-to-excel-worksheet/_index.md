@@ -5,65 +5,59 @@ linktitle: "Add"
 type: docs
 url: /pictures/add/
 aliases: [/add-pictures-to-excel-worksheet/]
-keywords: "Add a picture in an Excel file."
-description: "Aspose.Cells Cloud REST API support adding a picture in an Excel file. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "Aspose Cells, Excel, Add Picture, REST API, Cloud SDK, Spreadsheet"
+description: "Use Aspose.Cells Cloud REST API to add a picture to an Excel worksheet. SDKs for Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift simplify integration across platforms."
 weight: 20
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Add Picture in an Excel file
 ---
 
-This REST API indicates to `add` a new picture for an Excel worksheet.
+This REST API adds a new picture to an Excel worksheet.
 
-## RSET API
+## REST API
 
 ```bash
- 
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
- 
 ```
 
 The request parameters are:
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| name | string | path | The workbook name. |
-| sheetName | string | path | The worsheet name. |
-| picture |  | body | Pictute object |
-| upperLeftRow | integer | query | 0 |
-| upperLeftColumn | integer | query | 0 |
-| lowerRightRow | integer | query | 0 |
-| lowerRightColumn | integer | query | 0 |
-| picturePath | string | query | The picture path, if not provided the picture data is inspected in the request body. |
-| folder | string | query | The workbook folder. |
-| storageName | string | query | storage name. |
+| Parameter Name      | Type   | Location                     | Description                                                                                 |
+|---------------------|--------|------------------------------|---------------------------------------------------------------------------------------------|
+| name                | string | path                         | The workbook name.                                                                          |
+| sheetName           | string | path                         | The worksheet name.                                                                         |
+| picture             | object | body                         | Picture object (binary data).                                                               |
+| upperLeftRow        | integer| query                        | Zero‑based index of the upper‑left row where the picture will be placed.                    |
+| upperLeftColumn     | integer| query                        | Zero‑based index of the upper‑left column where the picture will be placed.                 |
+| lowerRightRow       | integer| query                        | Zero‑based index of the lower‑right row of the picture area.                               |
+| lowerRightColumn    | integer| query                        | Zero‑based index of the lower‑right column of the picture area.                            |
+| picturePath         | string | query                        | Path to the picture file; if omitted, the picture data must be supplied in the request body.|
+| folder              | string | query                        | The folder that contains the workbook.                                                      |
+| storageName         | string | query                        | The name of the storage service.                                                            |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Pictures/PutWorksheetAddPicture) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "http://api.aspose.com/v1.1/cells/Sample_Test_Book.xls/worksheets/Sheet6/pictures?picturePath=aspose-cloud.png" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
@@ -72,7 +66,7 @@ curl -v "http://api.aspose.com/v1.1/cells/Sample_Test_Book.xls/worksheets/Sheet6
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 

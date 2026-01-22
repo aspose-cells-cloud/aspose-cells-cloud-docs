@@ -5,62 +5,56 @@ linktitle: "Unhide"
 type: docs
 url: /rows/unhide/
 aliases: [/unhide-rows-in-excel-worksheet/]
-keywords: "Unhide rows on an Excel worksheet."
-description: "Aspose.Cells Cloud REST API support unhiding rows on an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "Aspose.Cells Cloud, Excel, unhide rows, REST API, spreadsheet, .NET, Java, Python, Node.js, Ruby, Go, PHP, Perl, Swift"
+description: "Use Aspose.Cells Cloud REST API to unhide rows in an Excel worksheet. The API is available through multiple SDKs (C#, Java, Python, Node.js, Ruby, Go, PHP, Perl, Swift)."
 weight: 50
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Unhide rows on an Excel worksheet
 ---
 
-This REST API indicates to unhide rows on an Excel worksheet.
+This REST API unhides rows on an Excel worksheet.
 
-## RSET API
+## REST API
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/unhide
- 
 ```
 
 The request parameters are:
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| name | string | path | The workbook name. |
-| sheetName | string | path | The worksheet name. |
-| startrow | integer | query | The begin row index to be operated. |
-| totalRows | integer | query | Number of rows to be operated. |
-| height | number | query | 15.0 |
-| folder | string | query | The document folder. |
-| storageName | string | query | storage name. |
+| Parameter Name | Type    | Location                | Description                                             |
+|----------------|---------|-------------------------|---------------------------------------------------------|
+| name           | string  | path                    | The workbook name.                                      |
+| sheetName      | string  | path                    | The worksheet name.                                     |
+| startrow       | integer | query                   | Zero‑based index of the first row to unhide.            |
+| totalRows      | integer | query                   | Number of rows to unhide.                               |
+| height         | number  | query                   | Row height (default 15.0).                              |
+| folder         | string  | query                   | The document folder.                                    |
+| storageName    | string  | query                   | Name of the storage.                                    |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostUnhideWorksheetRows) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows/unhide?startrow=1&totalRows=1&height=15" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+ -X POST \
+ -H "Content-Type: application/json" \
+ -H "Accept: application/json" \
+ -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
@@ -69,7 +63,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 
@@ -124,6 +118,7 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{< /tab >}}
 
 {{< /tabs >}}
+
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
 {{< tab tabNum="1" >}}

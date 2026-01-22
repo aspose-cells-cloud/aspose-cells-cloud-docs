@@ -3,47 +3,41 @@ title: "Get MaxRow from Excel Worksheet"
 type: docs
 url: /get-maxrow-from-excel-worksheet/
 weight: 40
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Get MaxRow from Excel Worksheet
+keywords: "Aspose.Cells, Excel, MaxRow, REST API, Cloud SDK, Spreadsheet"
+description: "Retrieve the maximum row number of a worksheet in an Excel file using the Aspose.Cells Cloud REST API."
 ---
 
-
-
-This REST API indicates shows get a `maxrow` in an Excel file when the `cellOrMethodName` parameter is `maxrow`.
+This REST API returns the **maximum row number** in an Excel worksheet when the `cellOrMethodName` parameter is set to `maxrow`.
 
 - **cURL Example**
-
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/maxrow" -H "Content-Type: application/json" -H "Accept: application/json"
-
+```bash
+curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/maxrow" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {}
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-- **Cloud SDK Family**
+- **Cloud SDKs**
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the most efficient way to accelerate development. An SDK handles low‑level details, allowing you to focus on your project logic. Please check the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
-
-
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 

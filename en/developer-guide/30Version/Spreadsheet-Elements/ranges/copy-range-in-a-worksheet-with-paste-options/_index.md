@@ -1,65 +1,88 @@
----
 title: "Copy Range in a Worksheet with Paste Options"
 second_title: "Document"
 linktitle: "Copy"
 type: docs
 url: /ranges/copy/
 aliases: [/copy-range-in-a-worksheet-with-paste-options/]
-keywords: "Copy a range in an Excel worksheet with paste options."
-description: "Aspose.Cells Cloud REST API support copying a range in an Excel worksheet with paste options. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "Aspose.Cells Cloud, REST API, Excel, copy range, worksheet, paste options"
+description: "Use Aspose.Cells Cloud REST API to copy a range within an Excel worksheet with full paste‑option support. Includes SDK examples for multiple programming languages."
 weight: 20
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Copy Range in a Worksheet with Paste Options
 ---
 
-This REST API indicates to copy range in the worksheet on an Excel worksheet.
+This REST API copies a range in a worksheet of an Excel workbook.
 
-## RSET API
+## REST API
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges
- 
 ```
 
 The request parameters are:
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| name | string | path | workbook name |
-| sheetName | string | path | worksheet name |
-| rangeOperate |  | body | copydata,copystyle,copyto,copyvalue |
-| folder | string | query | Workbook folder. |
-| storageName | string | query | storage name. |
+| Parameter Name | Type   | Location                     | Description                                                                 |
+|----------------|--------|------------------------------|-----------------------------------------------------------------------------|
+| name           | string | path                         | The name of the workbook.                                                   |
+| sheetName      | string | path                         | The name of the worksheet.                                                  |
+| rangeOperate   | string | body                         | The operation to perform: `copydata`, `copystyle`, `copyto`, or `copyvalue`. |
+| folder         | string | query                        | The folder that contains the workbook.                                      |
+| storageName    | string | query                        | The name of the storage service.                                            |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangesCopy) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/ranges" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--d "{ \"Operate\": \"string\", \"Source\": { \"ColumnCount\": 0, \"ColumnWidth\": 0, \"FirstColumn\": 0, \"FirstRow\": 0, \"Name\": \"string\", \"RefersTo\": \"string\", \"RowCount\": 0, \"RowHeight\": 0, \"Worksheet\": \"string\" }, \"Target\": { \"ColumnCount\": 0, \"ColumnWidth\": 0, \"FirstColumn\": 0, \"FirstRow\": 0, \"Name\": \"string\", \"RefersTo\": \"string\", \"RowCount\": 0, \"RowHeight\": 0, \"Worksheet\": \"string\" }, \"PasteOptions\": { \"OnlyVisibleCells\": true, \"PasteType\": \"string\", \"SkipBlanks\": true, \"Transpose\": true }}"
-
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{
+        "Operate": "string",
+        "Source": {
+          "ColumnCount": 0,
+          "ColumnWidth": 0,
+          "FirstColumn": 0,
+          "FirstRow": 0,
+          "Name": "string",
+          "RefersTo": "string",
+          "RowCount": 0,
+          "RowHeight": 0,
+          "Worksheet": "string"
+        },
+        "Target": {
+          "ColumnCount": 0,
+          "ColumnWidth": 0,
+          "FirstColumn": 0,
+          "FirstRow": 0,
+          "Name": "string",
+          "RefersTo": "string",
+          "RowCount": 0,
+          "RowHeight": 0,
+          "Worksheet": "string"
+        },
+        "PasteOptions": {
+          "OnlyVisibleCells": true,
+          "PasteType": "string",
+          "SkipBlanks": true,
+          "Transpose": true
+        }
+      }'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
@@ -68,9 +91,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/ranges
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

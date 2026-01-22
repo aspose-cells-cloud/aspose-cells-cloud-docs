@@ -5,60 +5,55 @@ linktitle: "Merge"
 type: docs
 url: /ranges/merge/
 aliases: [/combines-a-range-of-cells-into-a-single-cell/]
-keywords: "Merge a range of cells into a single cell."
-description: "Aspose.Cells Cloud REST API support merging a range of cells into a single cell on an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "merge cells, Excel, Aspose.Cells Cloud, REST API, range merge"
+description: "The Aspose.Cells Cloud REST API enables merging a range of cells into a single cell within an Excel worksheet. SDKs are available for Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift."
 weight: 20
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Combines a Range of Cells into a Single Cell
 ---
 
-This REST API indicates to merge a range of cells into a single cell on an Excel worksheet.
+This REST API merges a range of cells into a single cell on an Excel worksheet.
 
-## RSET API
+## REST API
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/merge
- 
 ```
 
 The request parameters are:
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| name | string | path | workbook name |
-| sheetName | string | path | worksheet name |
-| range |  | body | range in worksheet  |
-| folder | string | query | Workbook folder. |
-| storageName | string | query | storage name. |
+| Parameter Name | Type   | Location                     | Description                               |
+|----------------|--------|------------------------------|-------------------------------------------|
+| name           | string | path                         | Workbook name                             |
+| sheetName      | string | path                         | Worksheet name                            |
+| range          | object | body                         | Range object that specifies the cells to be merged |
+| folder         | string | query                        | Folder where the workbook is stored       |
+| storageName    | string | query                        | Name of the storage                        |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeMerge) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/merge" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
--d "{ \"ColumnCount\": 7, \"ColumnWidth\": 19, \"FirstColumn\": 0, \"FirstRow\": 9, \"Name\": \"string\", \"RefersTo\": \"string\", \"RowCount\": 1, \"RowHeight\": 15, \"Worksheet\": \"Sheet1\"}"
+-H "Authorization: Bearer <jwt token>" \
+-d '{ "ColumnCount": 7, "ColumnWidth": 19, "FirstColumn": 0, "FirstRow": 9, "Name": "string", "RefersTo": "string", "RowCount": 1, "RowHeight": 15, "Worksheet": "Sheet1"}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
@@ -67,9 +62,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

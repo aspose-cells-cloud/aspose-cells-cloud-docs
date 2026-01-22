@@ -5,62 +5,53 @@ linktitle: "Group"
 type: docs
 url: /columns/group/
 aliases: [/group-columns-in-an-excel-worksheet/, /group-columns-in-excel-worksheet/]
-keywords: "Group column on an Excel worksheet"
-description: "Aspose.Cells Cloud REST API support grouping column on an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "group columns, Excel worksheet, Aspose.Cells Cloud, REST API"
+description: "Use Aspose.Cells Cloud REST API to group columns in an Excel worksheet. Supports multiple SDKs for languages such as C#, Java, Python, and more."
 weight: 60
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Group columns on an Excel worksheet
 ---
 
-This REST API indicates group worksheet columns.
+This REST API groups worksheet columns.
 
-## RSET API
+## REST API
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/group
- 
 ```
 
 The request parameters are:
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| name | string | path | The workbook name. |
-| sheetName | string | path | The worksheet name. |
-| firstIndex | integer | query | The first column index to be operated. |
-| lastIndex | integer | query | The last column index to be operated. |
-| hide | boolean | query | columns visible state |
-| folder | string | query | The document folder. |
-| storageName | string | query | storage name. |
+| Parameter Name | Type    | Location | Description                                                                 |
+|----------------|---------|----------|-----------------------------------------------------------------------------|
+| name           | string  | path     | Name of the workbook file.                                                  |
+| sheetName      | string  | path     | Name of the worksheet containing the columns.                               |
+| firstIndex     | integer | query    | Zero‑based index of the first column to group.                              |
+| lastIndex      | integer | query    | Zero‑based index of the last column to group.                               |
+| hide           | boolean | query    | If **true**, the grouped columns are hidden; otherwise they remain visible. |
+| folder         | string  | query    | Path to the folder that contains the workbook.                              |
+| storageName    | string  | query    | Name of the storage service where the file is located.                      |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostGroupWorksheetColumns) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostGroupWorksheetColumns) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
-You can use **cURL** command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the **cURL** command‑line tool to call Aspose.Cells web services. The following example demonstrates how to group columns with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/group?firstIndex=1&lastIndex=2&hide=true" -H "accept: application/json"
-
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/group?firstIndex=1&lastIndex=2&hide=true" \
+     -H "accept: application/json"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
- {
-
+```json
+{
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
@@ -69,9 +60,9 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ce
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the fastest way to develop with Aspose.Cells Cloud. An SDK handles low‑level details so you can focus on your business logic. For a complete list of supported SDKs, see the [GitHub repository](https://github.com/aspose-cells-cloud).
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -5,62 +5,56 @@ linktitle: "Update"
 type: docs
 url: /pictures/update/
 aliases: [/update-a-specific-picture-from-excel-workshee/]
-keywords: "Update a picture in an Excel file."
-description: "Aspose.Cells Cloud REST API support updating a picture in an Excel file. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "Aspose.Cells Cloud, Excel, Update picture, REST API, Spreadsheet"
+description: "Learn how to update a picture in an Excel file using Aspose.Cells Cloud REST API. The guide includes request details, a cURL example, and SDK code snippets for various programming languages."
 weight: 70
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Update picture in an Excel file
 ---
 
-This REST API indicates to `update` picture by pricture index for an Excel worksheet.
+This REST API updates a picture by its index on an Excel worksheet.
 
-## RSET API
+## REST API
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}
- 
 ```
 
 The request parameters are:
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| name | string | path | Document name. |
-| sheetName | string | path | Worksheet name. |
-| pictureIndex | integer | path | The picture's index. |
-| picture |  | body | Picture object |
-| folder | string | query | The document folder. |
-| storageName | string | query | storage name. |
+| Parameter Name | Type   | Location                     | Description                                                     |
+|----------------|--------|------------------------------|-----------------------------------------------------------------|
+| name           | string | path                         | The name of the Excel document.                                 |
+| sheetName      | string | path                         | The name of the worksheet that contains the picture.           |
+| pictureIndex   | integer| path                         | Zero‑based index of the picture to be updated.                  |
+| picture        | object | body                         | JSON object that describes the picture properties to update.   |
+| folder         | string | query                        | The folder where the document is stored.                        |
+| storageName    | string | query                        | The name of the storage service.                                |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Pictures/PostWorksheetPicture) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/pictures/1" \
 -X POST \
 -d "{ \"UpperLeftRow\": 10, \"Top\": 0, \"UpperLeftColumn\": 1, \"Left\": 0, \"LowerRightRow\": 0, \"Bottom\": 0, \"LowerRightColumn\": 3, \"ImageFormat\": \"jpg\", \"SourceFullName\": \"download.jpg\"}" \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
@@ -69,9 +63,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/picture
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the fastest way to develop. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -4,74 +4,66 @@ type: docs
 url: /charts/add/
 aliases: [/add-a-chart-in-a-worksheet/]
 weight: 20
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Add a Chart in a Worksheet
+description: "Learn how to add a chart to a worksheet using the Aspose.Cells Cloud REST API, including request parameters, cURL example, and SDK code samples for multiple languages."
+keywords: ["Aspose Cells", "add chart", "worksheet", "REST API", "cURL", "SDK", ".NET", "Java", "PHP", "Ruby", "Python", "Node.js", "Go"]
 ---
 
-This REST API indicates add a new chart to worksheet.
- 
-## RSET API
- 
-```bash
- 
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts
- 
-```
-The request parameters are: 
- 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description| 
-| :- | :- | :- |:- | 
-| name | string | path | Workbook name. |
-| sheetName | string | path | The worksheet name. |
-| chartType | string | query | Chart type, please refer property Type in chart resource. |
-| upperLeftRow | integer | query | 0 |
-| upperLeftColumn | integer | query | 0 |
-| lowerRightRow | integer | query | 0 |
-| lowerRightColumn | integer | query | 0 |
-| area | string | query | Specifies values from which to plot the data series.  |
-| isVertical | boolean | query | True |
-| categoryData | string | query | Gets or sets the range of category Axis values. It can be a range of cells (such as, "d1:e10").  |
-| isAutoGetSerialName | boolean | query | True |
-| title | string | query | Specifies chart title name. |
-| folder | string | query | The workbook folder. |
-| storageName | string | query | storage name. |
-| dataLabels | boolean | query | True |
-| dataLabelsPosition | string | query | Above |
-| pivotTableSheet | string | query |   |
-| pivotTableName | string | query |   |
- 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/PutWorksheetAddChart) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
- 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+This REST API adds a new chart to a worksheet.
 
+## REST API
+
+```bash
+PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts
+```
+
+The request parameters are:
+
+| Parameter Name          | Type    | Location                     | Description                                                                 |
+|-------------------------|---------|------------------------------|-----------------------------------------------------------------------------|
+| **name**                | string  | path                         | Workbook name.                                                              |
+| **sheetName**           | string  | path                         | Worksheet name.                                                             |
+| **chartType**           | string  | query                        | Chart type (see the **Type** property in the chart resource).              |
+| **upperLeftRow**        | integer | query                        | Upper‑left row index of the chart area (0‑based).                           |
+| **upperLeftColumn**     | integer | query                        | Upper‑left column index of the chart area (0‑based).                        |
+| **lowerRightRow**       | integer | query                        | Lower‑right row index of the chart area (0‑based).                          |
+| **lowerRightColumn**    | integer | query                        | Lower‑right column index of the chart area (0‑based).                       |
+| **area**                | string  | query                        | Range that provides the values to plot (e.g., `A1:B5`).                     |
+| **isVertical**          | boolean | query                        | Indicates whether the chart orientation is vertical.                       |
+| **categoryData**        | string  | query                        | Range of category‑axis values (e.g., `D1:E10`).                             |
+| **isAutoGetSerialName**| boolean | query                        | Automatically generate series names if `true`.                            |
+| **title**               | string  | query                        | Title of the chart.                                                         |
+| **folder**              | string  | query                        | Folder that contains the workbook.                                          |
+| **storageName**         | string  | query                        | Name of the storage.                                                        |
+| **dataLabels**          | boolean | query                        | Show data labels when `true`.                                               |
+| **dataLabelsPosition**  | string  | query                        | Position of data labels (e.g., `Above`).                                    |
+| **pivotTableSheet**     | string  | query                        | Name of the sheet that contains the pivot table.                            |
+| **pivotTableName**      | string  | query                        | Name of the pivot table.                                                    |
+
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/PutWorksheetAddChart) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl  -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/charts?chartType=Bar&area=B1:F2&title=SalesState" 
--X PUT
+```bash
+curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/charts?chartType=Bar&area=B1:F2&title=SalesState" \
+-X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
-
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": "200",
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
@@ -79,9 +71,9 @@ curl  -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cha
 {{< /tabs >}}
 
 ## Cloud SDK Family
- 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
- 
+
+Using an SDK is the best way to speed up development. An SDK abstracts low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Objective C" tabName8="Perl" tabName9="Android" tabName10="Go" >}}

@@ -5,61 +5,55 @@ linktitle: "Hide"
 type: docs
 url: /rows/hide/
 aliases: [/hide-rows-in-excel-worksheet/]
-keywords: "Hide rows on an Excel worksheet."
-description: "Aspose.Cells Cloud REST API support hiding rows on an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "Hide rows, Excel, Aspose.Cells Cloud, REST API, SDK"
+description: "Use Aspose.Cells Cloud REST API to hide rows in an Excel worksheet. The API is available through multiple SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) and supports various development platforms."
 weight: 40
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Hide rows on an Excel worksheet
 ---
 
-This REST API indicates to hide rows on an Excel worksheet.
+This REST API hides rows on an Excel worksheet.
 
-## RSET API
+## REST API
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/hide
- 
 ```
 
-The request parameters are:
+### Request parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| name | string | path | The workbook name. |
-| sheetName | string | path | The worksheet name. |
-| startrow | integer | query | The begin row index to be operated. |
-| totalRows | integer | query | Number of rows to be operated. |
-| folder | string | query | The document folder. |
-| storageName | string | query | storage name. |
+| Parameter   | Type    | Location | Description |
+|------------|---------|----------|-------------|
+| **name**      | string  | path     | The name of the workbook file. |
+| **sheetName** | string  | path     | The name of the worksheet containing the rows to hide. |
+| **startrow**  | integer | query    | Zero‑based index of the first row to be hidden. |
+| **totalRows** | integer | query    | The number of consecutive rows to hide, starting from **startrow**. |
+| **folder**    | string  | query    | The folder in storage where the workbook is located. |
+| **storageName**| string | query    | The name of the storage service. |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostHideWorksheetRows) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostHideWorksheetRows) defines a publicly accessible programming interface that lets you perform REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the **cURL** command‑line tool to call Aspose.Cells web services easily. The example below demonstrates how to hide a row using cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows/hide?startrow=1&totalRows=1" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
@@ -68,9 +62,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the fastest way to integrate this functionality into your application. SDKs handle low‑level details so you can focus on business logic. See the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to hide rows using various SDKs:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

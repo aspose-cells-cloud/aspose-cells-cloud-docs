@@ -3,11 +3,11 @@ title: "Get First Cell from Excel Worksheet"
 type: docs
 url: /get-first-cell-from-excel-worksheet/
 weight: 20
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Get First Cell from Excel Worksheet
+keywords: "Aspose.Cells Cloud, Excel, REST API, Get First Cell, Worksheet, API"
+description: "Retrieves the first cell (A1) from a worksheet in an Excel file using the Aspose.Cells Cloud REST API."
 ---
 
-
-This REST API indicates shows get a `firstcell` in an Excel file when the `cellOrMethodName` parameter is `firstcell`.
+This REST API shows how to retrieve the **first cell** in an Excel file when the `cellOrMethodName` parameter is set to `firstcell`.
 
 - **cURL Example**
 
@@ -16,9 +16,7 @@ This REST API indicates shows get a `firstcell` in an Excel file when the `cellO
 {{< tab tabNum="11" >}}
 
 ```java
-
 curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/firstcell" -H "Content-Type: application/json" -H "Accept: application/json"
-
 ```
 
 {{< /tab >}}
@@ -26,57 +24,31 @@ curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/
 {{< tab tabNum="12" >}}
 
 ```java
-
 {
-
   "Cell": {
-
     "Name": "A1",
-
     "Row": 0,
-
     "Column": 0,
-
     "Value": "Category",
-
     "Type": "IsString",
-
     "IsFormula": false,
-
     "IsMerged": false,
-
     "IsArrayHeader": false,
-
     "IsInArray": false,
-
     "IsErrorValue": false,
-
     "IsInTable": false,
-
     "IsStyleSet": false,
-
     "HtmlString": "<Font Style=\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #ffffff;\">Category</Font>",
-
     "Style": {
-
       "link": {
-
         "Href": "/style",
-
         "Rel": "self"
-
       }
-
     }
-
   },
-
   "Code": "200",
-
   "Status": "OK"
-
-} 
-
+}
 ```
 
 {{< /tab >}}
@@ -85,15 +57,9 @@ curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/
 
 - **Cloud SDK Family**
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to accelerate development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
-
-- **Cloud SDK Family**
-
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
-
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

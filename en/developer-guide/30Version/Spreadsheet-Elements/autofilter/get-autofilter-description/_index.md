@@ -5,57 +5,50 @@ linktitle: "Get auto filter"
 type: docs
 url: /autofilter/get/
 aliases: [/get-autofilter-description/]
-keywords: "Gets auto filter description from an Excel worksheet."
-description: "The Aspose.Cells Cloud API supports gets auto filter description from an Excel worksheet.SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "AutoFilter, Excel worksheet, Aspose.Cells Cloud, REST API"
+description: "Retrieve the AutoFilter description from an Excel worksheet using the Aspose.Cells Cloud REST API. Supports SDKs for C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, and more."
 weight: 50
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Get an auto filter in an Excel worksheet
 ---
 
+This REST API retrieves the **AutoFilter** description from an Excel worksheet.
 
-This REST API indicates get `auto filter` description in an Excel worksheet.
-
-## RSET API
+## REST API
 
 ```bash
- 
 GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter
- 
 ```
 
 The request parameters are:
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| name | string | path |   |
-| sheetName | string | path |   |
-| folder | string | query |   |
-| storageName | string | query | storage name. |
+| Parameter Name | Type   | Path/Query | Description |
+|----------------|--------|------------|-------------|
+| name           | string | path       | Excel file name (including extension). |
+| sheetName      | string | path       | Worksheet name. |
+| folder         | string | query      | Folder path in storage where the file is located. |
+| storageName    | string | query      | Name of the storage to use. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/AutoFilter/GetWorksheetAutoFilter) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl  "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+```bash
+curl "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
- {
+```json
+{
   "Status": "string",
   "AutoFilter": {
     "link": {
@@ -167,9 +160,9 @@ curl  "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilte
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

@@ -1,17 +1,13 @@
----
-title: "Working with deleting row on an Excel worksheet"
+title: "Working with Deleting Rows on an Excel Worksheet"
 second_title: "Document"
 linktitle: "Delete"
 type: docs
 url: /rows/delete/
-keywords: "Working with deleting row on an Excel worksheet. How to add rows on an Excel worksheet."
-description: "Aspose.Cells Cloud REST API support deleting rows on an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "Excel, delete row, delete rows, Aspose.Cells Cloud, REST API, SDK"
+description: "Learn how to delete single or multiple rows in an Excel worksheet using the Aspose.Cells Cloud REST API. The guide includes supported SDKs for languages such as Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift."
 weight: 20
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Working with deleting row on an Excel worksheet
----
 
+## Working with Deleting Rows on an Excel Worksheet
 
-## Working with deleting row on an Excel worksheet.
-
-- [How to delete an empty row on an Excel worksheet.](/cells/rows/delete/row/) 
-- [How to delete multi rows on an Excel worksheet.](/cells/rows/delete/rows/) ) 
+- [How to delete an empty row on an Excel worksheet](/cells/rows/delete/row/)
+- [How to delete multiple rows on an Excel worksheet](/cells/rows/delete/rows/)

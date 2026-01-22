@@ -5,10 +5,9 @@ linktitle: "Charts"
 type: docs
 url: /charts/
 aliases: [/working-with-charts/]
-keywords: "REST API, spreadsheets, excel, charts"
-description: "Cells.Cloud API for Excel operate: charts operate."
+keywords: "Excel, Charts, Cells Cloud API, REST API, Spreadsheet"
+description: "The Cells Cloud API for Excel enables you to retrieve, add, update, delete, and convert charts within worksheets."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Charts
 ---
 
 ## Working with Charts on an Excel file
@@ -28,7 +27,7 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Ch
 - [Set Chart Title in Excel Worksheet](/cells/set-chart-title-in-excel-worksheet/)
 - [Update Chart Title in Excel Worksheet](/cells/update-chart-title-in-excel-worksheet/)
 - [Delete Chart Title in a Worksheet](/cells/delete-chart-title-in-a-worksheet/)
-- [Update Chart Propreties](/cells/charts/propreties/update/)
+- [Update Chart Properties](/cells/charts/propreties/update/)
 - [Get Chart Category Axis](/cells/charts/category-axis/get/)
 - [Get Chart Value Axis](/cells/charts/value-axis/get/)
 - [Get Chart Second Category Axis](/cells/charts/second-category-axis/get/)

@@ -5,64 +5,54 @@ linktitle: "Match no blank cell"
 type: docs
 url: /autofilter/match-all-non-blank/
 aliases: [/match-all-non-blank-cells-in-the-list/]
-keywords: "Match all not blank cells in the filter list on an Excel worksheet."
-description: "The Aspose.Cells Cloud API supports matching all not blank cells in the filter list on an Excel worksheet.SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "Excel, non-blank cells, auto filter, Aspose.Cells Cloud API"
+description: "Use the Aspose.Cells Cloud REST API to match all non‑blank cells in an AutoFilter list on an Excel worksheet. Supports multiple SDKs such as C#, Java, Python, and more."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Match all non blank cells in an Excel worksheet
 ---
 
-This REST API indicates `match` all `not blank cell` in the list on an Excel worksheet.
+This REST API matches all non‑blank cells in the AutoFilter list on an Excel worksheet.
 
-## RSET API
+## REST API
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/matchNonBlanks
- 
 ```
 
 The request parameters are:
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| name | string | path |   |
-| sheetName | string | path |   |
-| fieldIndex | integer | query |   |
-| folder | string | query |   |
-| storageName | string | query | storage name. |
+| Parameter Name | Type   | Location                     | Description                                            |
+|----------------|--------|------------------------------|--------------------------------------------------------|
+| name           | string | path                         | The name of the Excel file.                            |
+| sheetName      | string | path                         | The name of the worksheet containing the AutoFilter.  |
+| fieldIndex     | integer| query                        | Zero‑based index of the column to apply the filter.   |
+| folder         | string | query                        | (Optional) Folder path where the file is stored.      |
+| storageName    | string | query                        | (Optional) Name of the storage service to use.        |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/AutoFilter/PostWorksheetMatchNonBlanks) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v  "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/matchNonBlanks?fieldIndex=0" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+```bash
+curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/matchNonBlanks?fieldIndex=0" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
@@ -71,7 +61,7 @@ curl -v  "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFi
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 

@@ -5,455 +5,249 @@ linktitle: "Get all"
 type: docs
 url: /document-properties/get-all/
 aliases: [/get-all-document-properties/]
-keywords: "Get properties from excel files."
-description: "Aspose.Cells Cloud REST API support getting properties from excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "Get All Document Properties, Aspose.Cells Cloud, Excel document properties, REST API, SDK"
+description: "Retrieve all document properties from Excel files using Aspose.Cells Cloud REST API. Supports multiple SDKs across various programming languages."
 weight: 25
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Get All Document Properties
 ---
-This REST API indicates to read document properties.
 
-## RSET API
+This REST API reads document properties.
+
+## REST API
 
 ```bash
- 
 GET http://api.aspose.cloud/v3.0/cells/{name}/documentproperties
- 
 ```
 
 The request parameters are:
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| name | string | path | The document name. |
-| folder | string | query | The document folder. |
-| storageName | string | query | storage name. |
+| Parameter Name | Type   | Location | Description                               |
+|----------------|--------|----------|-------------------------------------------|
+| name           | string | path     | Name of the Excel file.                   |
+| folder         | string | query    | Folder containing the file.               |
+| storageName    | string | query    | Name of the storage service.              |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Properties/GetDocumentProperties) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
+```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties" \
 -X GET \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
-
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "DocumentProperties": {
-
     "DocumentPropertyList": [
-
       {
-
         "Name": "Title",
-
         "Value": "",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/Title",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "Subject",
-
         "Value": "",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/Subject",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "Author",
-
         "Value": "",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/Author",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "Keywords",
-
         "Value": "",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/Keywords",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "Comments",
-
         "Value": "",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/Comments",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "LastSavedBy",
-
         "Value": "",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/LastSavedBy",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "CreateTime",
-
         "Value": "6/5/2015 6:17:20 PM",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/CreateTime",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "LastSavedTime",
-
         "Value": "9/27/2019 9:09:43 PM",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/LastSavedTime",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "Category",
-
         "Value": "",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/Category",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "NameOfApplication",
-
         "Value": "Microsoft Excel",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/NameOfApplication",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "Version",
-
         "Value": "16.0300",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/Version",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "Security",
-
         "Value": "0",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/Security",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "ScaleCrop",
-
         "Value": "False",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/ScaleCrop",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "Template",
-
         "Value": "",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/Template",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "Manager",
-
         "Value": "",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/Manager",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "Company",
-
         "Value": "",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/Company",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "Name": "LinksUpToDate",
-
         "Value": "False",
-
         "BuiltIn": "True",
-
         "link": {
-
           "Href": "/LinksUpToDate",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       }
-
     ],
-
     "link": {
-
       "Href": "/test.xlsx/documentproperties",
-
       "Rel": "self",
-
       "Title": null,
-
       "Type": null
-
     }
-
   },
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
@@ -462,9 +256,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties" \
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

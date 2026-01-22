@@ -5,130 +5,87 @@ linktitle: "Get all"
 type: docs
 url: /pictures/get-all/
 aliases: [/get-picture-from-a-worksheet/]
-keywords: "Get all pictures in an Excel worksheet."
-description: "Aspose.Cells Cloud REST API support getting all pictures in an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "Aspose.Cells Cloud, Excel worksheet, retrieve all pictures, REST API, SDK"
+description: "Learn how to retrieve all pictures from an Excel worksheet using the Aspose.Cells Cloud REST API. SDKs are available for Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift."
 weight: 10
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Get all pictures in an Excel worksheet
 ---
 
-This REST API indicates to `get` all pictures information from an Excel worksheet.
+This REST API retrieves all picture information from an Excel worksheet.
 
-## RSET API
+## REST API
 
 ```bash
- 
 GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
- 
 ```
 
 The request parameters are:
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| name | string | path | Document name. |
-| sheetName | string | path | The worksheet name. |
-| folder | string | query | Document's folder. |
-| storageName | string | query | storage name. |
+| Parameter Name | Type   | Location | Description                                    |
+|----------------|--------|----------|------------------------------------------------|
+| name           | string | path     | The name of the Excel file.                    |
+| sheetName      | string | path     | The name of the worksheet containing pictures. |
+| folder         | string | query    | The folder path where the file is stored.      |
+| storageName    | string | query    | The name of the storage service.               |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Pictures/GetWorksheetPictures) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/pictures" \
 -X GET \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-
   "Pictures": {
-
     "PictureList": [
-
       {
-
         "link": {
-
           "Href": "/0",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "link": {
-
           "Href": "/1",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       },
-
       {
-
         "link": {
-
           "Href": "/2",
-
           "Rel": "self",
-
           "Title": null,
-
           "Type": null
-
         }
-
       }
-
     ],
-
     "link": {
-
       "Href": "/test.xlsx/worksheets/Sheet2/pictures",
-
       "Rel": "self",
-
       "Title": null,
-
       "Type": null
-
     }
-
   },
-
   "Code": 200,
-
   "Status": "OK"
-
 }
- 
 ```
 
 {{< /tab >}}
@@ -137,7 +94,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/picture
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 

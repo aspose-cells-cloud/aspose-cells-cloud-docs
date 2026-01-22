@@ -1,38 +1,37 @@
----
+```yaml
 title: "Get Cells Properties"
 type: docs
 url: /get-cells-properties/
 weight: 130
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Get Cells Properties
----
+keywords: "Aspose Cells Cloud, REST API, Excel, Worksheet, Cell Properties, Get Cells Properties"
+description: "Learn how to use the Aspose.Cells Cloud REST API to retrieve properties of a specific cell or predefined cell methods in an Excel worksheet."
+```
 
-This REST API indicates shows how to `get a specific cell` in an Excel file.
+This REST API demonstrates how to retrieve a specific cell in an Excel file.
 
-## RSET API
+## REST API
 
 ```bash
- 
 GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellOrMethodName}
- 
 ```
 
 The request parameters are:
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| name | string | path | Document name. |
-| sheetName | string | path | Worksheet name. |
-| cellOrMethodName | string | path | The cell's or method name. (Method name value : firstcell, endcell, maxrow, maxdatarow, maxcolumn, maxdatacolumn, minrow, mindatarow, mincolumn, mindatacolumn and cellName.) |
-| folder | string | query | Document's folder. |
-| storageName | string | query | storage name. |
+| Parameter Name   | Type   | Location | Description |
+|------------------|--------|----------|-------------|
+| **name**         | string | path     | The name of the Excel document. |
+| **sheetName**    | string | path     | The name of the worksheet containing the cell. |
+| **cellOrMethodName** | string | path | The cell name or a predefined method name (e.g., `firstcell`, `endcell`, `maxrow`, `maxdatarow`, `maxcolumn`, `maxdatacolumn`, `minrow`, `mindatarow`, `mincolumn`, `mindatacolumn`). |
+| **folder**       | string | query    | The folder where the document is stored. |
+| **storageName**  | string | query    | The name of the storage service. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetCell) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-### **Cloud SDK Family**
+### Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the most efficient way to accelerate development. An SDK abstracts low‑level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -86,7 +85,7 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 {{< /tabs >}}
 
-### **How to get specific cell**
+### How to retrieve a specific cell
 
 - [Get Cell Data from a Worksheet](/cells/get-cell-data-from-a-worksheet/)
 - [Get First Cell from Excel Worksheet](/cells/get-first-cell-from-excel-worksheet/)

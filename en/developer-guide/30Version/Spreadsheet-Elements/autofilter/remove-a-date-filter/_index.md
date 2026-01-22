@@ -6,71 +6,60 @@ type: docs
 url: /autofilter/delete-date-filter/
 aliases: [/remove-a-date-filter/,/autofilter/delete-a-date-filter/]
 weight: 100
-keywords: "Delete a date filter on an Excel worksheet."
-description: "The Aspose.Cells Cloud API supports deleting a date filter on an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Delete a Date Filter
+keywords: "Aspose.Cells Cloud, delete date filter, Excel worksheet, AutoFilter, REST API"
+description: "Learn how to use the Aspose.Cells Cloud REST API to delete a date filter from an Excel worksheet. Includes request details, cURL example, and SDK code samples for multiple languages."
 ---
 
-This REST API indicates to delete a date filter on an Excel worksheet.
+This REST API deletes a date filter on an Excel worksheet.
 
-## RSET API
+## REST API
 
 ```bash
- 
 DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/dateFilter
- 
 ```
 
 The request parameters are:
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| name | string | path |   |
-| sheetName | string | path |   |
-| fieldIndex | integer | query |   |
-| dateTimeGroupingType | string | query |   |
-| year | integer | query | 0 |
-| month | integer | query | 0 |
-| day | integer | query | 0 |
-| hour | integer | query | 0 |
-| minute | integer | query | 0 |
-| second | integer | query | 0 |
-| folder | string | query |   |
-| storageName | string | query | storage name. |
+| Parameter Name         | Type    | Location | Description                                           |
+|------------------------|---------|----------|-------------------------------------------------------|
+| name                   | string  | path     | Name of the Excel file.                               |
+| sheetName              | string  | path     | Worksheet name.                                       |
+| fieldIndex             | integer | query    | Zero‑based index of the column to which the filter is applied. |
+| dateTimeGroupingType   | string  | query    | Grouping type for the date filter (e.g., Year, Month, Day). |
+| year                   | integer | query    | Year component of the filter (default 0).             |
+| month                  | integer | query    | Month component of the filter (default 0).            |
+| day                    | integer | query    | Day component of the filter (default 0).              |
+| hour                   | integer | query    | Hour component of the filter (default 0).             |
+| minute                 | integer | query    | Minute component of the filter (default 0).           |
+| second                 | integer | query    | Second component of the filter (default 0).           |
+| folder                 | string  | query    | Folder path in storage where the file is located.     |
+| storageName            | string  | query    | Name of the Aspose Cloud storage.                     |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/AutoFilter/DeleteWorksheetDateFilter) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
+```bash
 curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/dateFilter?fieldIndex=0&dateTimeGroupingType=Year&year=1920" \
 -X DELETE \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
-
-
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
@@ -79,7 +68,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFil
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 

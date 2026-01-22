@@ -3,63 +3,55 @@ title: "Add CellArea"
 type: docs
 url: /conditional-formattings/add-cell-area/
 aliases: [/add-a-cell-area-for-format-condition/]
-keywords: "REST API, spreadsheets, excel, add cellarea for formatcondition"
-description: "Cells.Cloud API for Excel operate: add comment."
+keywords: "Aspose Cells Cloud, REST API, conditional formatting, add cell area, Excel"
+description: "Adds a cell area to a conditional formatting rule in an Excel worksheet using the Aspose.Cells Cloud REST API."
 weight: 30
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Add CellArea
 ---
 
-This REST API indicates add a cell area for format condition
-            
- 
-## RSET API
- 
+This REST API adds a cell area to a format condition.
+
+## REST API
+
 ```bash
- 
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}/area
- 
 ```
-The request parameters are: 
- 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description| 
-| :- | :- | :- |:- | 
-| name | string | path |   |
-| sheetName | string | path |   |
-| index | integer | path |   |
-| cellArea | string | query |   |
-| folder | string | query |   |
-| storageName | string | query | storage name. |
- 
+
+The request parameters are:
+
+| Parameter Name | Type    | Location                     | Description                                             |
+|----------------|---------|------------------------------|---------------------------------------------------------|
+| name           | string  | path                         | The name of the Excel file.                             |
+| sheetName      | string  | path                         | The name of the worksheet that contains the condition. |
+| index          | integer | path                         | The zero‑based index of the conditional formatting rule.|
+| cellArea       | string  | query                        | The cell range to add (e.g., `A1:C3`).                  |
+| folder         | string  | query                        | The folder where the file is stored.                    |
+| storageName    | string  | query                        | The name of the storage service.                        |
+
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/PutWorksheetFormatConditionArea) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
- 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
+```bash
 curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditionalFormattings/0/area?cellArea=A1:C3" \
 -X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
-
-
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
   "Code": "200",
   "Status": "OK"
 }
-
 ```
 
 {{< /tab >}}
@@ -67,16 +59,14 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditi
 {{< /tabs >}}
 
 ## Cloud SDK Family
- 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
- 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+
+Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}
-
-
 
 {{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Examples-DotNet-CSharp-ConditionalFormatting-FormatConditionArea-1.cs" >}}
 
@@ -90,8 +80,6 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 {{< tab tabNum="3" >}}
 
-
-
 {{< /tab >}}
 
 {{< tab tabNum="4" >}}
@@ -102,41 +90,29 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 {{< tab tabNum="5" >}}
 
-
-
 {{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Examples-Node.js-SDK-ConditionalFormatting-FormatConditionArea-1.js" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
 
-
-
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
-
-
 
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
 
-
-
 {{< /tab >}}
 
 {{< tab tabNum="9" >}}
-
-
 
 {{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Examples-Perl-ConditionalFormatting-FormatConditionArea-1.pl" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="10" >}}
-
-
 
 {{< gist "aspose-cells-cloud-gists" "597f99e44a3ac676ca8273b28f088ad2" >}}
 

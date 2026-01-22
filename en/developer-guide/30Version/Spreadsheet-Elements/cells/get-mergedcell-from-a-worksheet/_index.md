@@ -3,78 +3,62 @@ title: "Get MergedCell from a Worksheet"
 type: docs
 url: /get-mergedcell-from-a-worksheet/
 weight: 60
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Get MergedCell from a Worksheet
+keywords: "Aspose.Cells, REST API, merged cell, Excel worksheet, cloud SDK, spreadsheet"
+description: "Learn how to retrieve merged‑cell information from an Excel worksheet using the Aspose.Cells Cloud REST API. Includes request details, a cURL example, and SDK code samples."
 ---
 
+This REST API returns information about **merged cells** in an Excel worksheet.
 
-This REST API indicates get `merged cell` in an Excel file.
-
-## RSET API
+## REST API
 
 ```bash
- 
 GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/mergedCells
- 
 ```
 
-The request parameters are:
+### Request parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| name | string | path | Document name. |
-| sheetName | string | path | The workseet name. |
-| folder | string | query | Document folder. |
-| storageName | string | query | storage name. |
+| Parameter Name | Type   | Location | Description                         |
+|----------------|--------|----------|-------------------------------------|
+| **name**       | string | path     | The Excel file name.                |
+| **sheetName**  | string | path     | The worksheet name.                 |
+| **folder**     | string | query    | Folder that contains the document.  |
+| **storageName**| string | query    | Name of the storage to use.         |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetMergedCells) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The example below shows how to make a call to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/mergedCells/0"  \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/mergedCells/0" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
   "MergedCell": {
-
     "EndColumn": 7,
-
     "EndRow": 1,
-
     "StartColumn": 0,
-
     "StartRow": 1,
-
     "link": {
-
       "Href": "http://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/cells/mergedcells/0",
-
       "Rel": "self"
-
     }
-
   },
-
   "Code": "200",
-
   "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
@@ -83,9 +67,9 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the fastest way to develop against the API. An SDK handles low‑level details so you can focus on your business logic. See the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call Aspose.Cells web services with various SDKs:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

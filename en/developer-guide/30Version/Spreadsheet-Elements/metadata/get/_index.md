@@ -4,56 +4,51 @@ second_title: "Document"
 linktitle: "Get without using storage"
 type: docs
 url: /metadata/get/
-keywords: "Get properties from Excel files."
-description: "Aspose.Cells Cloud REST API support getting properties from excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "metadata, Excel, Aspose.Cells Cloud, REST API, spreadsheet properties, get metadata"
+description: "Retrieve Excel file metadata using Aspose.Cells Cloud REST API. Supports multiple SDKs for languages such as C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, and Swift."
 weight: 23
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Get metadata from Excel files
 ---
 
-This REST API indicates to get  `metadata`  from multiple Excel files.
+This REST API retrieves **metadata** from one or more Excel files.
 
 ```bash
-
 POST https://api.aspose.cloud/v3.0/cells/metadata/get
-
 ```
 
-- **Query Parameter**
+### Query Parameter
 
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-| type | string |  ALL/BuiltIn/Custom |
+| Parameter Name | Type   | Description                         |
+|----------------|--------|-------------------------------------|
+| type           | string | `ALL` / `BuiltIn` / `Custom` – specifies which metadata groups to return. |
 
-- **Request Body Parameter**
+### Request Body Parameter
 
-|Parameter Name|Type|Description|
-| :- | :- | :- |
-|excel file|data file | The data file save into the first part of the multipart content.|
+| Parameter Name | Type      | Description |
+|----------------|-----------|-------------|
+| excel file     | data file | The Excel file supplied as the first part of the multipart request. |
 
-- **Response**
+### Response
 
-```bash
-{
-    [
-        { 
-            "Name":"test1",
-            "Value":"test1",
-            ...
-        },
-        { 
-            "Name":"test2",
-            "Value":"test3",
-            ...
-        }
-    ]
-}
+```json
+[
+    {
+        "Name": "test1",
+        "Value": "test1",
+        ...
+    },
+    {
+        "Name": "test2",
+        "Value": "test3",
+        ...
+    }
+]
 ```
 
-- **Cloud SDK Family**
+### Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using a SDK accelerates development by handling low‑level details. See the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call Aspose.Cells web services with various SDKs:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

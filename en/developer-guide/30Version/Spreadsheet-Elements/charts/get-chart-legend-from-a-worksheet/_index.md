@@ -4,251 +4,128 @@ type: docs
 url: /charts/legend/get/
 aliases: [/get-chart-legend-from-a-worksheet/]
 weight: 80
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Get Chart Legend from a Worksheet
+keywords: "Aspose.Cells, REST API, chart legend, worksheet, Excel, cloud, get chart legend, spreadsheet"
+description: "Retrieves the legend of a chart from a specified worksheet in an Excel workbook using the Aspose.Cells Cloud REST API."
 ---
 
-This REST API indicates get chart legend
- 
-## RSET API
- 
+This REST API retrieves a chart legend.
+
+## REST API
+
 ```bash
- 
 GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend
- 
 ```
-The request parameters are: 
- 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description| 
-| :- | :- | :- |:- | 
-| name | string | path | Workbook name. |
-| sheetName | string | path | Worksheet name. |
-| chartIndex | integer | path | The chart index. |
-| folder | string | query | The workbook folder. |
-| storageName | string | query | storage name. |
- 
+
+The request parameters are:
+
+| Parameter Name | Type    | Location               | Description                                 |
+|----------------|---------|------------------------|---------------------------------------------|
+| name           | string  | path                   | Name of the workbook file.                  |
+| sheetName      | string  | path                   | Name of the worksheet.                      |
+| chartIndex     | integer | path                   | Zero‑based index of the chart.              |
+| folder         | string  | query                  | Folder path where the workbook is stored.   |
+| storageName    | string  | query                  | Name of the storage.                        |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/GetWorksheetChartLegend) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
- 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
- 
+
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL.
+
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/legend" 
+```bash
+curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/legend" \
 -X GET \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
-
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {
-
   "Legend": {
-
     "Position": "Right",
-
     "LegendEntries": {
-
       "link": {
-
         "Href": "/legendEntries",
-
         "Rel": "self",
-
         "Title": null,
-
         "Type": null
-
       }
-
     },
-
     "Area": {
-
-      "BackgroundColor": {
-
-        "A": 0,
-
-        "R": 0,
-
-        "G": 0,
-
-        "B": 0
-
-      },
-
+      "BackgroundColor": { "A": 0, "R": 0, "G": 0, "B": 0 },
       "FillFormat": {
-
         "Type": "Automatic",
-
         "SolidFill": null,
-
         "PatternFill": null,
-
         "TextureFill": null,
-
         "GradientFill": null,
-
         "ImageData": null
-
       },
-
-      "ForegroundColor": {
-
-        "A": 0,
-
-        "R": 0,
-
-        "G": 0,
-
-        "B": 0
-
-      },
-
+      "ForegroundColor": { "A": 0, "R": 0, "G": 0, "B": 0 },
       "Formatting": "Automatic",
-
       "InvertIfNegative": false,
-
       "Transparency": 0.0
-
     },
-
     "AutoScaleFont": true,
-
     "BackgroundMode": "Automatic",
-
     "Border": {
-
       "BeginArrowLength": "Medium",
-
       "BeginArrowWidth": "Medium",
-
       "BeginType": "None",
-
       "CapType": "Flat",
-
-      "Color": {
-
-        "A": 0,
-
-        "R": 0,
-
-        "G": 0,
-
-        "B": 0
-
-      },
-
+      "Color": { "A": 0, "R": 0, "G": 0, "B": 0 },
       "CompoundType": "Single",
-
       "DashType": "Solid",
-
       "EndArrowLength": "Medium",
-
       "EndArrowWidth": "Medium",
-
       "EndType": "None",
-
       "GradientFill": null,
-
       "IsAuto": true,
-
       "IsAutomaticColor": true,
-
       "IsVisible": true,
-
       "JoinType": "Round",
-
       "Style": "Solid",
-
       "Transparency": 0.0,
-
       "Weight": "HairLine",
-
       "WeightPt": 0.0
-
     },
-
     "Font": {
-
-      "Color": {
-
-        "A": 255,
-
-        "R": 0,
-
-        "G": 0,
-
-        "B": 0
-
-      },
-
+      "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
       "DoubleSize": 10.0,
-
       "IsBold": false,
-
       "IsItalic": false,
-
       "IsStrikeout": false,
-
       "IsSubscript": false,
-
       "IsSuperscript": false,
-
       "Name": "Arial",
-
       "Size": 10,
-
       "Underline": "None"
-
     },
-
     "IsAutomaticSize": true,
-
     "IsInnerMode": null,
-
     "Shadow": false,
-
     "ShapeProperties": null,
-
     "Width": 823,
-
     "Height": 1043,
-
     "X": 3125,
-
     "Y": 1466,
-
     "link": {
-
       "Href": "http://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/legend",
-
       "Rel": "self",
-
       "Title": null,
-
       "Type": null
-
     }
-
   },
-
   "Code": 0,
-
   "Status": "0"
-
 }
-
 ```
 
 {{< /tab >}}
@@ -256,11 +133,11 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5
 {{< /tabs >}}
 
 ## Cloud SDK Family
- 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
- 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
- 
+
+Using an SDK is the best way to speed up development. An SDK takes care of low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
+
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}

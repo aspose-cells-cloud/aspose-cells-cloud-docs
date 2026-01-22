@@ -3,60 +3,56 @@ title: "Merge Cells in Excel Worksheet"
 type: docs
 url: /merge-cells-in-excel-worksheet/
 weight: 110
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Merge Cells in Excel Worksheet
+keywords: "Excel, Merge Cells, Aspose.Cells, REST API, Cloud SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
+description: "Learn how to merge cells in an Excel worksheet using the Aspose.Cells Cloud REST API and SDKs across multiple programming languages."
 ---
 
-This REST API indicates `merge` cells in an Excel file.
+This REST API merges cells in an Excel file.
 
-## RSET API
+## REST API
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/merge
- 
 ```
 
 The request parameters are:
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| name | string | path | The workbook name. |
-| sheetName | string | path | The worksheet name. |
-| startRow | integer | query | The start row. |
-| startColumn | integer | query | The start column. |
-| totalRows | integer | query | The total rows |
-| totalColumns | integer | query | The total columns. |
-| folder | string | query | The workbook folder. |
-| storageName | string | query | storage name. |
+| Parameter Name | Type   | Location                     | Description                                 |
+|----------------|--------|------------------------------|---------------------------------------------|
+| name           | string | path                         | The workbook name.                          |
+| sheetName      | string | path                         | The worksheet name.                         |
+| startRow       | integer| query                        | The zero‑based index of the first row.      |
+| startColumn    | integer| query                        | The zero‑based index of the first column.   |
+| totalRows      | integer| query                        | The number of rows to merge.                |
+| totalColumns   | integer| query                        | The number of columns to merge.             |
+| folder         | string | query                        | The folder that contains the workbook.      |
+| storageName    | string | query                        | The storage name.                           |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostWorksheetMerge) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
-curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/merge?startRow=10&startColumn=10&totalRows=10&totalColumns=10"  \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/merge?startRow=10&startColumn=10&totalRows=10&totalColumns=10" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
@@ -65,7 +61,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/m
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 

@@ -4,69 +4,63 @@ second_title: "Document"
 linktitle: "Delete without using storage"
 type: docs
 url: /metadata/delete/
-keywords: "Deleting metadata from Excel files."
-description: "Aspose.Cells Cloud REST API support deleting metadata from excel files. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "Delete metadata, Excel, Aspose.Cells Cloud, REST API, SDK"
+description: "Use Aspose.Cells Cloud REST API to delete metadata from Excel files. The API supports multiple SDKs and programming languages for easy integration."
 weight: 55
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Delete metadata on Excel files.
 ---
 
-This REST API indicates to delete `metadata`  from multiple Excel files.
+This REST API deletes **metadata** from one or more Excel files.
 
-## RSET API
+## REST API
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/metadata/delete
- 
 ```
 
 The request parameters are:
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| file | file | formData | File to upload |
-| type | string | query | all |
+| Parameter Name | Type   | Location                | Description                                          |
+|----------------|--------|-------------------------|------------------------------------------------------|
+| file           | file   | formData                | Excel file to upload for metadata deletion           |
+| type           | string | query                   | Operation type; set to **all** to delete all metadata |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/DeleteMetadata) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
 curl -v "http://api.aspose.cloud/v3.0/cells/metadata/delete" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>" \
--F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx'  
+-F 'file1=@file1.xlsx' \
+-F 'file2=@file2.xlsx'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-    "Files":
-    [
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
+    "Files": [
+        {
+            "Filename": "file1.xlsx",
+            "FileSize": 274022,
+            "FileContent": "-----Base64String--------"
         },
-        { 
-            "Filename":"xxxxx",
-            "FileSize":274022,
-            "FileContent":"-----Base64String--------"
+        {
+            "Filename": "file2.xlsx",
+            "FileSize": 274022,
+            "FileContent": "-----Base64String--------"
         }
     ]
 }
- 
 ```
 
 {{< /tab >}}
@@ -75,9 +69,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/metadata/delete" \
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

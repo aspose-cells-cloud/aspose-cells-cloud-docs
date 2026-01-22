@@ -5,63 +5,57 @@ linktitle: "Copy"
 type: docs
 url: /rows/copy/
 aliases: [/copy-rows-in-excel-worksheet/]
-keywords: "Copy rows on an Excel worksheet"
-description: "Aspose.Cells Cloud REST API support copying rows on an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "Copy rows, Excel, Aspose.Cells Cloud, REST API, worksheet rows"
+description: "Use Aspose.Cells Cloud REST API to copy rows in an Excel worksheet. The API is available through multiple SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) and via direct HTTP requests."
 weight: 30
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Copy rows on an Excel worksheet
 ---
 
-This REST API indicates to copy worksheet rows.
+This REST API copies rows within a worksheet.
 
-## RSET API
+## REST API
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/copy
- 
 ```
 
 The request parameters are:
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| name | string | path | The workbook name. |
-| sheetName | string | path | The worksheet name. |
-| sourceRowIndex | integer | query | Source row index |
-| destinationRowIndex | integer | query | Destination row index |
-| rowNumber | integer | query | The copied row number |
-| worksheet | string | query | worksheet |
-| folder | string | query | The document folder. |
-| storageName | string | query | storage name. |
+| Parameter Name        | Type    | Location                     | Description                                    |
+|-----------------------|---------|------------------------------|------------------------------------------------|
+| name                  | string  | path                         | The workbook file name.                        |
+| sheetName             | string  | path                         | The worksheet name.                            |
+| sourceRowIndex        | integer | query                        | Zero‑based index of the source row.            |
+| destinationRowIndex   | integer | query                        | Zero‑based index where the rows will be placed.|
+| rowNumber             | integer | query                        | Number of rows to copy.                        |
+| worksheet             | string  | query                        | (Optional) Worksheet identifier; usually same as **sheetName**. |
+| folder                | string  | query                        | Path to the folder containing the document.    |
+| storageName           | string  | query                        | Name of the storage service.                   |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostCopyWorksheetRows) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services. The following example shows how to call the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows/copy?sourceRowIndex=1&destinationRowIndex=12&rowNumber=10" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
@@ -70,9 +64,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the fastest way to develop. An SDK abstracts low‑level details, allowing you to focus on your project logic. See the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

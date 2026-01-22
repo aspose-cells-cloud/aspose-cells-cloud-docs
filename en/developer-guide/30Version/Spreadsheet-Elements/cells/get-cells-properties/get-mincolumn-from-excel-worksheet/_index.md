@@ -3,34 +3,30 @@ title: "Get MinColumn from Excel Worksheet"
 type: docs
 url: /get-mincolumn-from-excel-worksheet/
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Get MinColumn from Excel Worksheet
+keywords: Excel, Aspose.Cells Cloud, REST API, Get MinColumn, Worksheet, SDK, Cloud API
+description: Retrieve the minimum column index containing data in a worksheet of an Excel file using the Aspose.Cells Cloud REST API.
 ---
 
-
-
-This REST API indicates shows get a `mincolumn` in an Excel file when the `cellOrMethodName` parameter is `mincolumn`.
+This REST API returns the minimum column index that contains data in an Excel worksheet when the `cellOrMethodName` parameter is set to `mincolumn`.
 
 - **cURL Example**
-
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/mincolumn" -H "Content-Type: application/json" -H "Accept: application/json" 
-
+```bash
+curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/mincolumn" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-
+```json
 {}
-
 ```
 
 {{< /tab >}}
@@ -39,11 +35,9 @@ curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/
 
 - **Cloud SDK Family**
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the most efficient way to develop. An SDK abstracts low‑level details, allowing you to focus on your project logic. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
-
-
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 

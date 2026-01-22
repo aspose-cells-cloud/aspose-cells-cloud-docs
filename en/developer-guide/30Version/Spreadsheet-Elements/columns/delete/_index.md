@@ -5,62 +5,52 @@ linktitle: "Delete"
 type: docs
 url: /columns/delete/
 aliases: [/delete-column-from-an-excel-worksheet/,/delete-column-from-a-worksheet/]
-keywords: "Delete column on an Excel worksheet"
-description: "Aspose.Cells Cloud REST API support deleting column on an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "Aspose.Cells Cloud, Delete column, Excel worksheet, REST API, Spreadsheet"
+description: "Use the Aspose.Cells Cloud REST API to delete a column from an Excel worksheet. The API is available through multiple SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) and supports various storage options."
 weight: 80
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Delete a column on an Excel worksheet
 ---
 
-This REST API copy `column`  in an Excel Worksheet.
+This REST API deletes a **column** in an Excel worksheet.
 
-## RSET API
+## REST API
 
 ```bash
- 
 DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/{columnIndex}
- 
 ```
 
 The request parameters are:
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| name | string | path | The workbook name. |
-| sheetName | string | path | The worksheet name. |
-| columnIndex | integer | path | The column index. |
-| columns | integer | query | The columns. |
-| updateReference | boolean | query | The update reference. |
-| folder | string | query | The workbook folder. |
-| storageName | string | query | storage name. |
+| Parameter Name   | Type    | Location                     | Description                                                  |
+|------------------|---------|------------------------------|--------------------------------------------------------------|
+| name             | string  | path                         | The workbook name.                                           |
+| sheetName        | string  | path                         | The worksheet name.                                          |
+| columnIndex      | integer | path                         | The zero‑based index of the column to delete.                |
+| columns          | integer | query                        | The number of columns to delete.                             |
+| updateReference  | boolean | query                        | Whether to update cell references after deletion.           |
+| folder           | string  | query                        | The folder path where the workbook is stored.                |
+| storageName      | string  | query                        | The name of the storage service.                             |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetColumns) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetColumns) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
-You can use **cURL** command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
-
 curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/Columns/1?startColumn=1&totalColumns=1&updateReference=true" -H "accept: application/json"
-
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
-
+```json
 {
-
   "Code": 200,
-
   "Status": "OK"
-
 }
-
 ```
 
 {{< /tab >}}
@@ -69,9 +59,9 @@ curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

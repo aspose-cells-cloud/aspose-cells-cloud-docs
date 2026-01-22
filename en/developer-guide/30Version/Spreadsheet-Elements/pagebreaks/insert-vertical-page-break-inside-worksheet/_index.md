@@ -5,64 +5,58 @@ linktitle: "Add vertical page break"
 type: docs
 url: /page-breaks/add-vertical-page-break/
 aliases: [/insert-vertical-page-break-inside-worksheet/]
-keywords: "Add a page break in an Excel worksheet."
-description: "Aspose.Cells Cloud REST API support adding a page break in an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "Add vertical page break, Excel, Aspose.Cells Cloud, REST API, SDK"
+description: "Learn how to use the Aspose.Cells Cloud REST API to insert a vertical page break into an Excel worksheet. The guide includes request details, cURL examples, and SDK code snippets for multiple programming languages."
 weight: 40
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Add vertical page break
 ---
 
-This REST API indicates to insert vertical page break.
+This REST API inserts a vertical page break.
 
-## RSET API
+## REST API
 
 ```bash
- 
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/verticalpagebreaks
- 
 ```
 
 The request parameters are:
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| name | string | path |   |
-| sheetName | string | path |   |
-| cellname | string | query |   |
-| column | integer | query |   |
-| row | integer | query |   |
-| startRow | integer | query |   |
-| endRow | integer | query |   |
-| folder | string | query |   |
-| storageName | string | query | storage name. |
+| Parameter Name | Type   | Location                     | Description                                                                 |
+|----------------|--------|------------------------------|-----------------------------------------------------------------------------|
+| name           | string | path                         | The name of the Excel workbook.                                            |
+| sheetName      | string | path                         | The name of the worksheet where the page break will be added.             |
+| cellname       | string | query                        | The cell reference (e.g., **A1**) that defines the page‑break location.   |
+| column         | integer| query                        | The zero‑based index of the column where the page break starts.            |
+| row            | integer| query                        | The zero‑based index of the row where the page break starts.               |
+| startRow       | integer| query                        | The first row of the page‑break range.                                      |
+| endRow         | integer| query                        | The last row of the page‑break range.                                       |
+| folder         | string | query                        | The folder path in the storage where the workbook is located.              |
+| storageName    | string | query                        | The name of the storage service.                                           |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PageBreaks/PutVerticalPageBreak) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "http://api.aspose.cloud/v3.0/cells/sampleExcelPageBreaks.xlsx/worksheets/Sheet1/verticalpagebreaks?column=9" \
 -X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
@@ -71,7 +65,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/sampleExcelPageBreaks.xlsx/worksheet
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 

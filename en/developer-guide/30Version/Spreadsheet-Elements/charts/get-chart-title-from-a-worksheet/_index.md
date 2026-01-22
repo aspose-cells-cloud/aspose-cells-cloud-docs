@@ -4,51 +4,48 @@ type: docs
 url: /charts/title/get/
 aliases: [/get-chart-title-from-a-worksheet/]
 weight: 120
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Get Chart Title From a Worksheet
+keywords: ["Aspose.Cells", "Chart Title", "Worksheet", "REST API", "Excel", "Cloud API", "Get Chart Title"]
+description: "Retrieves the title of a chart from a specific worksheet in an Excel workbook using the Aspose.Cells Cloud REST API."
 ---
 
-This REST API indicates get chart title
- 
-## RSET API
- 
+This REST API retrieves the chart title.
+
+## REST API
+
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title
 ```
-The request parameters are: 
- 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description| 
-| :- | :- | :- |:- | 
-| name | string | path | Workbook name. |
-| sheetName | string | path | Worksheet name. |
-| chartIndex | integer | path | The chart index. |
-| folder | string | query | The workbook folder. |
-| storageName | string | query | storage name. |
- 
-<br/>
+
+The request parameters are:
+
+| Parameter Name | Type   | Location | Description                                    |
+|----------------|--------|----------|------------------------------------------------|
+| name           | string | path     | Name of the workbook file.                     |
+| sheetName      | string | path     | Name of the worksheet that contains the chart. |
+| chartIndex     | integer| path     | Zero‑based index of the chart.                 |
+| folder         | string | query    | Folder path where the workbook is stored.      |
+| storageName    | string | query    | Name of the storage service.                   |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/GetWorksheetChartTitle) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
- 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+
+You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/charts/0/title" 
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/charts/0/title" \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
+```json
 {
   "Status": "string",
   "Title": {
@@ -283,78 +280,57 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/charts
     "TextVerticalAlignment": "string"
   }
 }
-
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+
 ## Cloud SDK Family
- 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
- 
+
+Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
- 
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}
 
-
-
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
-
-
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-
-
 {{< /tab >}}
 
 {{< tab tabNum="4" >}}
-
-
 
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
 
-
-
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
-
-
 
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
 
-
-
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
-
-
 
 {{< /tab >}}
 
 {{< tab tabNum="9" >}}
 
-
-
 {{< /tab >}}
 
 {{< tab tabNum="10" >}}
-
-
 
 {{< gist "aspose-cells-cloud-gists" "e1b22ed45ca780faa3231c3a8c60ddd4" >}}
 

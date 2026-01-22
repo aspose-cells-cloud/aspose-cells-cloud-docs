@@ -3,36 +3,33 @@ title: List object remove duplicates
 second_title: "Document"
 linktitle: "Remove duplicates"
 type: docs
-keywords: "list object(table) remove duplicates ."
+keywords: "list object, remove duplicates, Aspose.Cells Cloud, REST API, Excel, listobject, worksheet"
 url: /list-objects/remove-duplicates/
-description: Remove duplicates on list object. 
+description: API that removes duplicate rows from a list object in an Excel worksheet using Aspose.Cells Cloud.
 weight: 20
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, List object remove duplicates
 ---
 
-This REST API indicates remove duplicates on list object.
+This REST API removes duplicate rows from a list object.
 
-## RSET API
+## REST API
 
 ```bash
-
 POST http://api.aspose.cloud/v3.0//cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/RemoveDuplicates
-
 ```
 
 The request parameters are:
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-| :- | :- | :- |:- |
-|name|String|Path||
-|sheetName|String|Path||
-|listObjectIndex|Integer|Path||
-|folder|String|Query||
-|storageName|String|Query||
+| Parameter Name   | Type    | Location                     | Description                                                   |
+|------------------|---------|------------------------------|---------------------------------------------------------------|
+| name             | String  | Path                         | The name of the Excel file.                                    |
+| sheetName        | String  | Path                         | The name of the worksheet that contains the list object.      |
+| listObjectIndex  | Integer | Path                         | The zero‑based index of the list object to process.           |
+| folder           | String  | Query                        | The folder path where the file is stored (optional).          |
+| storageName      | String  | Query                        | The name of the storage service (optional).                   |
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ListObjectsController/PostWorksheetListObjectRemoveDuplicates) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 {{< tab tabNum="1" >}}
@@ -42,25 +39,24 @@ curl -v "http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listob
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
+-H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="2" >}}
 
 ```powershell
-
+# (Response example will be displayed here)
 ```
 
 {{< /tab >}}
-
 {{< /tabs >}}
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the GitHub repository for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check the GitHub repository for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

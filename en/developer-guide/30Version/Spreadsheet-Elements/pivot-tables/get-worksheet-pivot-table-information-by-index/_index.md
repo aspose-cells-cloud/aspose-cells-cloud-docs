@@ -5,54 +5,50 @@ linktitle: Get
 type: docs
 url: /pivot-tables/get/
 aliases: [/get-worksheet-pivot-table-information-by-index/]
-keywords: "Get a pivot table in an Excel file."
-description: "Aspose.Cells Cloud REST API support getting a pivot table in an Excel file. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "pivot table, Excel, Aspose.Cells Cloud, REST API, get worksheet pivot table"
+description: "Learn how to retrieve a pivot table from an Excel worksheet using the Aspose.Cells Cloud REST API. Includes request syntax, parameters, cURL example, response schema, and SDK code samples for multiple languages."
 weight: 10
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Get a pivot table in an Excel worksheet
 ---
 
-This REST API indicates get worksheet `pivottable` info by index.
- 
-## RSET API
- 
+This REST API retrieves worksheet **pivot table** information by its index.
+
+## REST API
+
 ```bash
- 
 GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivottableIndex}
- 
 ```
-The request parameters are: 
- 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description| 
-| :- | :- | :- |:- | 
-| name | string | path | Document name. |
-| sheetName | string | path | The worksheet name. |
-| pivottableIndex | integer | path |   |
-| folder | string | query | Document's folder. |
-| storageName | string | query | storage name. |
- 
+
+### Request parameters
+
+| Parameter Name   | Type    | Location | Description                                             |
+|------------------|---------|----------|---------------------------------------------------------|
+| **name**         | string  | path     | The name of the Excel file.                             |
+| **sheetName**    | string  | path     | The name of the worksheet that contains the pivot table.|
+| **pivottableIndex** | integer | path     | Zero‑based index of the pivot table in the worksheet. |
+| **folder**       | string  | query    | The folder where the document is stored.                |
+| **storageName**  | string  | query    | The name of the Aspose Cloud storage.                   |
+
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PivotTables/GetWorksheetPivotTable) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
- 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
- 
+
+You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the API with cURL.
+
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
- 
+
 {{< tab tabNum="1" >}}
- 
+
 ```bash
- 
 curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables/0" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< tab tabNum="2" >}}
- 
-```bash
+
+```json
 {
   "Status": "string",
   "PivotFilters": [
@@ -169,20 +165,17 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/workshe
     }
   ]
 }
- 
 ```
- 
+
 {{< /tab >}}
- 
+
 {{< /tabs >}}
- 
+
 ## Cloud SDK Family
- 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
- 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
- 
- 
+
+Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Objective C" tabName8="Android" tabName9="Perl" tabName10="Go" >}}
 

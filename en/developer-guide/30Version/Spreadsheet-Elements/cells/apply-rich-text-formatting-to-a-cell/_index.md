@@ -3,59 +3,55 @@ title: "Apply Rich Text Formatting to a Cell"
 type: docs
 url: /apply-rich-text-formatting-to-a-cell/
 weight: 40
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Apply Rich Text Formatting to a Cell
+keywords: "Aspose.Cells Cloud, Excel, rich text formatting, REST API, cell formatting, API reference"
+description: "Learn how to apply rich text formatting to a specific Excel cell using the Aspose.Cells Cloud REST API. Includes request syntax, parameter details, cURL example, and SDK snippets."
 ---
 
-This REST API indicates apply `rich text formatting` to a cell in an Excel file.
+This REST API applies **rich text formatting** to a cell in an Excel file.
 
-## RSET API
+## REST API
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}/characters
- 
 ```
 
 The request parameters are:
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| name | string | path |   |
-| sheetName | string | path |   |
-| cellName | string | path |   |
-| options |  | body |   |
-| folder | string | query |   |
-| storageName | string | query | storage name. |
+| Parameter Name | Type   | Location                     | Description                                                                 |
+|----------------|--------|------------------------------|-----------------------------------------------------------------------------|
+| name           | string | path                         | The name of the Excel file (e.g., `Book1.xlsx`).                           |
+| sheetName      | string | path                         | The worksheet that contains the target cell.                               |
+| cellName       | string | path                         | The address of the cell to format (e.g., `A1`).                            |
+| options        | object | body                         | JSON object that defines the rich‑text formatting settings for the cell. |
+| folder         | string | query                        | The folder in storage where the Excel file is located.                     |
+| storageName    | string | query                        | The name of the storage service (if a custom storage is used).            |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostCellCharacters) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
 curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/cells/A1/characters" \
 -X POST \
 -d "{ \"FontSetting\": [ { \"Font\": { \"IsBold\": \"true\", \"Size\": \"24\" }, \"Length\": \"5\", \"StartIndex\": \"0\" }, { \"Font\": { \"IsItalic\": \"true\", \"Size\": \"15\" }, \"Length\": \"4\", \"StartIndex\": \"5\" } ] }" \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
- 
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
@@ -64,9 +60,9 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/cells/A
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

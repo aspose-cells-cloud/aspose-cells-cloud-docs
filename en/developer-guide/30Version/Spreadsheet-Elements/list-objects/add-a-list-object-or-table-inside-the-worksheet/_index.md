@@ -5,65 +5,59 @@ linktitle: "Add"
 type: docs
 url: /list-objects/add/
 aliases: [/add-a-list-object-or-table-inside-the-worksheet/,/tables/add/]
-keywords: "Add a list object(table) into an Excel worksheet."
-description: "Aspose.Cells Cloud REST API support adding a list object(table) into an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "Aspose.Cells Cloud, Excel, list object, table, REST API, worksheet"
+description: "Learn how to add a list object (table) to an Excel worksheet using Aspose.Cells Cloud REST API. Includes request details, cURL example, and SDK code samples for multiple languages."
 weight: 10
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Add a list object in an Excel worksheet
 ---
 
-This REST API indicates to `add a list object(table)` in an Excel worksheet.
+This REST API adds a **list object (table)** to an Excel worksheet.
 
-## RSET API
+## REST API
 
 ```bash
- 
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects
- 
 ```
 
 The request parameters are:
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description|
-| :- | :- | :- |:- |
-| name | string | path | Document name. |
-| sheetName | string | path | The worksheet name. |
-| startRow | integer | query | The start row of the list range. |
-| startColumn | integer | query | The start row of the list range. |
-| endRow | integer | query | The start row of the list range. |
-| endColumn | integer | query | The start row of the list range. |
-| hasHeaders | boolean | query | True |
-| listObject |  | body | List Object |
-| folder | string | query | Document's folder. |
-| storageName | string | query | storage name. |
+| Parameter Name | Type    | Location                     | Description                                 |
+|----------------|---------|------------------------------|---------------------------------------------|
+| name           | string  | path                         | Document name.                              |
+| sheetName      | string  | path                         | Worksheet name.                             |
+| startRow       | integer | query                        | The start row of the list range.            |
+| startColumn    | integer | query                        | The start column of the list range.         |
+| endRow         | integer | query                        | The end row of the list range.              |
+| endColumn      | integer | query                        | The end column of the list range.           |
+| hasHeaders     | boolean | query                        | Indicates whether the list includes headers. |
+| listObject     | object  | body                         | Definition of the list object.              |
+| folder         | string  | query                        | Document’s folder.                          |
+| storageName    | string  | query                        | Storage name.                               |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ListObjects/PutWorksheetListObject) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listobjects?startRow=1&startColumn=1&endRow=10&endColumn=12&hasHeaders=true" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```json
 {
-"Code": 200,
-"Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
@@ -72,7 +66,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listob
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 

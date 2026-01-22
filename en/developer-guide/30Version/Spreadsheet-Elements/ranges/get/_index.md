@@ -4,16 +4,12 @@ second_title: "Document"
 linktitle: "Get"
 type: docs
 url: /ranges/get/
-keywords: "How to get range content from an Excel worksheet."
-description: "Aspose.Cells Cloud REST API support getting range content from an Excel Worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "Excel, Aspose.Cells Cloud, REST API, range content, spreadsheet, get range"
+description: "Aspose.Cells Cloud REST API enables retrieving the content of a range in an Excel worksheet. The SDK supports multiple programming languages, including Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift."
 weight: 20
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, How to get range content from an Excel worksheet
 ---
 
-## Working with getting range content on an Excel worksheet.
+## Working with retrieving range content in an Excel worksheet
 
-
-- [How to get cells data based on named range.](/cells/ranges/get/values/) 
-- [How to get named range from an Excel workbook.](/cells/ranges/get/name/) 
-
-
+- [How to get cell data based on a named range](/cells/ranges/get/values/)
+- [How to get a named range from an Excel workbook](/cells/ranges/get/name/)

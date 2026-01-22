@@ -5,98 +5,79 @@ linktitle: "AutoFilter"
 type: docs
 url: /autofilter/
 aliases: [/working-with-autofilter/]
-keywords: "Get, add, delete, and so on for auto filter on an Excel worksheet."
-description: "The Aspose.Cells Cloud APIs support to get, add, delete, and so on for auto filter on an Excel worksheet. SDK support kinds of development languages. They include Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and swift."
+keywords: "Excel AutoFilter, Aspose.Cells Cloud, filter types, color filter, date filter, dynamic filter, number filter, text filter, blank filter, custom filter, API"
+description: "Learn how to use Aspose.Cells Cloud APIs to add, delete, and manage AutoFilter features in Excel worksheets. Covers color, date, dynamic, number, text, blank, non‑blank, and custom filters across multiple programming languages."
 weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, AutoFilter
 ---
 
-Auto filter is the quickest way to select only those items from the worksheet that you want to display in a list. The auto filter feature allows users to filter items in a list according to a set criteria. Filter based on text, numbers or dates.
+AutoFilter is the quickest way to display only the items you need from a worksheet. The AutoFilter feature lets users filter a list based on specified criteria—by text, numbers, or dates.
 
-**Different types of Filter**
+**Different Types of Filters**
 
-Aspose.Cells Cloud provides multiple APIs to apply different type of filters like Color Filter, Date Filter, Number Filter, Text Filter, Blank Filters and None Blank Filters.
+Aspose.Cells Cloud provides multiple APIs to apply various filter types, such as Color Filter, Date Filter, Number Filter, Text Filter, Blank Filter, and Non‑Blank Filter.
 
 <table class="table table-striped">
   <tr>
-  <td class="col-md-2"> <li>Fill Color</li> </td>
-  <td class="col-md-10">
-  <p>Aspose.Cells Cloud provides
- <a href="/cells/autofilter/add-color-filter/">the API of add fill color filter</a>
-to filter data based upon the fill color property of the cells.</p>
-  </td>
+    <td class="col-md-2"><li>Fill Color</li></td>
+    <td class="col-md-10">
+      <p>Aspose.Cells Cloud offers <a href="/cells/autofilter/add-color-filter/">the Add Fill Color Filter API</a> to filter data based on the fill‑color property of cells.</p>
+    </td>
   </tr>
   <tr>
-    <td class="col-md-2"> <li>Date</li> </td>
-  <td class="col-md-10">
-  <p>
-Different types of date filters can be implemented like filtering all the rows having dates in January 2018. <a href="/cells/autofilter/add-date-filter/">the API of add date color filter</a> can implement this functionality.
-</p>
-  </td>
+    <td class="col-md-2"><li>Date</li></td>
+    <td class="col-md-10">
+      <p>Various date filters can be applied, such as filtering rows with dates in January 2018. Use <a href="/cells/autofilter/add-date-filter/">the Add Date Filter API</a> to implement this functionality.</p>
+    </td>
   </tr>
-    <tr>
-    <td class="col-md-2"> <li>Dynamic Date</li> </td>
-  <td class="col-md-10">
-  <p>
-Sometimes dynamic filters are required based on a date like all the cells having dates in January irrespective of the year. <a href="/cells/autofilter/add-dynamic-filter/">the API of dynamic filter</a>  
-</p>
-  </td>
+  <tr>
+    <td class="col-md-2"><li>Dynamic Date</li></td>
+    <td class="col-md-10">
+      <p>Dynamic date filters allow you to filter cells that fall in a specific month regardless of the year (e.g., all January dates). See <a href="/cells/autofilter/add-dynamic-filter/">the Dynamic Filter API</a>.</p>
+    </td>
   </tr>
-      <tr>
-    <td class="col-md-2"> <li>Number</li> </td>
-  <td class="col-md-10">
-  <p>
-<a href="/cells/autofilter/add-filter/">The Custom filters API</a> can be applied using Aspose.Cells like selecting cells having number between a given range.
-</p>
-  </td>
+  <tr>
+    <td class="col-md-2"><li>Number</li></td>
+    <td class="col-md-10">
+      <p>The <a href="/cells/autofilter/add-filter/">Custom Filters API</a> enables filtering cells whose numeric values fall within a given range.</p>
+    </td>
   </tr>
-        <tr>
-    <td class="col-md-2"> <li>Text</li> </td>
-  <td class="col-md-10">
-  <p>
-If a column contains text and cells are to be selected containing particular text, <a href="/cells/autofilter/add-filter/">The add filter API </a> can be used.
-</p>
-  </td>
+  <tr>
+    <td class="col-md-2"><li>Text</li></td>
+    <td class="col-md-10">
+      <p>If a column contains text, you can select cells containing a specific string using <a href="/cells/autofilter/add-filter/">the Add Filter API</a>.</p>
+    </td>
   </tr>
-          <tr>
-    <td class="col-md-2"> <li>Blanks</li> </td>
-  <td class="col-md-10">
-  <p>
-
-If a column contains text such that few cells are blank, and filter is required to select those rows only where blank cells are present, <a href="/cells/autofilter/match-all-blank/">The match all blank cells API </a> can be used
-</p>
-  </td>
+  <tr>
+    <td class="col-md-2"><li>Blanks</li></td>
+    <td class="col-md-10">
+      <p>To retrieve rows where a column is blank, use <a href="/cells/autofilter/match-all-blank/">the Match All Blank Cells API</a>.</p>
+    </td>
   </tr>
-            <tr>
-    <td class="col-md-2"> <li>Non Blanks</li> </td>
-  <td class="col-md-10">
-  <p>
-
-When cells having any text are to be filtered, <a href="/cells/autofilter/match-all-blank/">The match all blank cells API </a> can be used
-</p>
-  </td>
+  <tr>
+    <td class="col-md-2"><li>Non‑Blanks</li></td>
+    <td class="col-md-10">
+      <p>To filter rows where a column contains any non‑blank value, use <a href="/cells/autofilter/match-all-non-blank/">the Match All Non‑Blank Cells API</a>.</p>
+    </td>
   </tr>
-              <tr>
-    <td class="col-md-2"> <li>Custom filter</li> </td>
-  <td class="col-md-10">
-  <p>
-Aspose.Cells Cloud provides <a href="/cells/autofilter/add-dynamic-filter/">custom filters API </a> like filter rows which contain some specific string and filter rows which begins or end with some specific string.
-</p>
-  </td>
+  <tr>
+    <td class="col-md-2"><li>Custom Filter</li></td>
+    <td class="col-md-10">
+      <p>Aspose.Cells Cloud provides <a href="/cells/autofilter/add-dynamic-filter/">Custom Filters API</a> for advanced scenarios, such as filtering rows that contain a specific substring or that start/end with a particular string.</p>
+    </td>
   </tr>
 </table>
 
-**Auto Filter Data Operate**
+**AutoFilter Operations**
 
-- [How to add a color filter in an Excel worksheet.](/cells/autofilter/add-color-filter/)
-- [How to add a custom filter in an Excel worksheet.](/cells/autofilter/add-custom-filter/)
-- [How to add a date filter in an Excel worksheet.](/cells/autofilter/add-date-filter/)
-- [How to add a dynamic filter in an Excel worksheet.](/cells/autofilter/add-dynamic-filter/)
-- [How to add a filter in an Excel worksheet.](/cells/autofilter/add-filter/)
-- [How to add a icon filter in an Excel worksheet.](/cells/autofilter/add-icon-filter/)
-- [How to delete a date filter in an Excel worksheet.](/cells/autofilter/delete-a-date-filter/)
-- [How to delete a filter in an Excel worksheet.](/cells/delete-filter/)
-- [How to get an autofilter description from an Excel worksheet.](/cells/autofilter/get/)
-- [How to match all blank in an Excel worksheet.](/cells/autofilter/match-all-blank/)
-- [How to match all non blank in an Excel worksheet.](/cells/autofilter/match-all-non-blank/)
-- [How to refresh an autofilter in an Excel worksheet.](/cells/autofilter/refresh/)
+- [How to add a color filter in an Excel worksheet](/cells/autofilter/add-color-filter/)
+- [How to add a custom filter in an Excel worksheet](/cells/autofilter/add-custom-filter/)
+- [How to add a date filter in an Excel worksheet](/cells/autofilter/add-date-filter/)
+- [How to add a dynamic filter in an Excel worksheet](/cells/autofilter/add-dynamic-filter/)
+- [How to add a filter in an Excel worksheet](/cells/autofilter/add-filter/)
+- [How to add an icon filter in an Excel worksheet](/cells/autofilter/add-icon-filter/)
+- [How to delete a date filter in an Excel worksheet](/cells/autofilter/delete-a-date-filter/)
+- [How to delete a filter in an Excel worksheet](/cells/delete-filter/)
+- [How to get an AutoFilter description from an Excel worksheet](/cells/autofilter/get/)
+- [How to match all blank cells in an Excel worksheet](/cells/autofilter/match-all-blank/)
+- [How to match all non‑blank cells in an Excel worksheet](/cells/autofilter/match-all-non-blank/)
+- [How to refresh an AutoFilter in an Excel worksheet](/cells/autofilter/refresh/)
