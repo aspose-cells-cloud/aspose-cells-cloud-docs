@@ -85,7 +85,7 @@ The following code examples demonstrate how to interact with Aspose.Cells web se
 {{</tab>}}
 {{<tab tabNum="3" >}}
 {{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_v4.0_TranslateSpreadsheet.php" >}}
-{{</tab>}
+{{</tab>}}
 {{<tab tabNum="4" >}}
 {{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_v4.0_TranslateSpreadsheet.rb" >}}
 {{</tab>}}
