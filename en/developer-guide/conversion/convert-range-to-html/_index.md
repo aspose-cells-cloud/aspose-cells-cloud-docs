@@ -22,28 +22,28 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/range/html
 
 ### **Request Parameters:**
 
-| Parameter Name   | Type   | Path/Query String/HTTP Body | Description                                           |
-|------------------|--------|------------------------------|-------------------------------------------------------|
-| Spreadsheet      | File   | FormData                     | Upload the spreadsheet file.                          |
-| worksheet        | String | Query                        | Name of the worksheet within the spreadsheet.        |
-| range            | String | Query                        | The cell area to convert, e.g., A1:C10.              |
-| outPath          | String | Query                        | (Optional) The folder path where the workbook is stored. Default is null. |
-| outStorageName   | String | Query                        | Name of the output file storage.                      |
-| fontsLocation     | String | Query                        | Specify custom fonts to use.                          |
-| region           | String | Query                        | The spreadsheet region setting.                        |
-| password         | String | Query                        | Password for opening the spreadsheet file.            |
+| Parameter Name | Type   | Path/Query String/HTTP Body | Description                                                               |
+| -------------- | ------ | --------------------------- | ------------------------------------------------------------------------- |
+| Spreadsheet    | File   | FormData                    | Upload the spreadsheet file.                                              |
+| worksheet      | String | Query                       | Name of the worksheet within the spreadsheet.                             |
+| range          | String | Query                       | The cell area to convert, e.g., A1:C10.                                   |
+| outPath        | String | Query                       | (Optional) The folder path where the workbook is stored. Default is null. |
+| outStorageName | String | Query                       | Name of the output file storage.                                          |
+| fontsLocation  | String | Query                       | Specify custom fonts to use.                                              |
+| region         | String | Query                       | The spreadsheet region setting.                                           |
+| password       | String | Query                       | Password for opening the spreadsheet file.                                |
 
 ### **Response**
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
@@ -64,8 +64,8 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/range/html
 ## Why should you use the Convert Range to HTML API?
 
 - **Preserves Rich Formatting**: Maintains Excel’s cell styles—including fonts, colors, borders, alignment, and number formatting—in the resulting HTML, unlike plain CSV or text extraction.
-- **Selective Data Export**: Convert only the necessary range (e.g., A1:D20), avoiding full-file processing.  Ideal for large spreadsheets where only a subset of data is needed.
-- **No Excel Dependencies**: Cloud-based conversion eliminates the need for Excel installation or client-side libraries.  Works seamlessly in any environment with HTTP access.
+- **Selective Data Export**: Convert only the necessary range (e.g., A1:D20), avoiding full-file processing. Ideal for large spreadsheets where only a subset of data is needed.
+- **No Excel Dependencies**: Cloud-based conversion eliminates the need for Excel installation or client-side libraries. Works seamlessly in any environment with HTTP access.
 - **Developer-Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared to building custom chart rendering solutions, this significantly reduces the development workload.
 - **Cost-Effective**: You can convert range data without first uploading the workbook, which saves storage space and reduces costs.
 
@@ -73,11 +73,11 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/range/html
 
 ### Convert Range to HTML API Specification
 
-The [Convert Range to HTML API Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertRangeToHtml) provides a publicly accessible programming interface, enabling you to carry out REST interactions directly from a web browser.
+The [Convert Range to HTML API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertRangeToHtml) provides a publicly accessible programming interface, enabling you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the fastest way to develop, as it abstracts away the low-level details, allowing you to convert a data of range  to a HTML file with short code.
+Using the SDK is the fastest way to develop, as it abstracts away the low-level details, allowing you to convert a data of range to a HTML file with short code.
 Please visit the [GitHub repository](https://github.com/aspose-cells-cloud) for a comprehensive list of Aspose.Cells Cloud SDKs.
 
 The following code examples illustrate how to interact with Aspose.Cells web services using various SDKs:

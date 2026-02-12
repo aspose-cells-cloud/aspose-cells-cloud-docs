@@ -11,7 +11,6 @@ weight: 100
 kwords: "Excel API, Convert Range to PDF, Cloud Conversion, PDF Generation, REST API, Spreadsheet, Local File Conversion"
 ---
 
-
 Export data of range from a local Excel Files to a [PDF](https://docs.fileformat.com/pdf/) file using Cloud API
 
 ## **Convert Range to PDF API**
@@ -24,28 +23,28 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/range/pdf
 
 ### **Request Parameters:**
 
-| Parameter Name      | Type  | Path/Query String/HTTP Body | Description                                       |
-| ------------------- | ----- | ---------------------------- | ------------------------------------------------ |
-| Spreadsheet         | File  | FormData                     | Upload the spreadsheet file.                     |
-| worksheet           | String| Query                        | The worksheet name within the spreadsheet.       |
-| range               | String| Query                        | The cell area to be converted, e.g., A1:C10.     |
-| outPath             | String| Query                        | (Optional) The folder path where the workbook is stored. The default is null. |
-| outStorageName      | String| Query                        | Output file Storage Name.                        |
-| fontsLocation       | String| Query                        | Location for storing custom fonts for home use.  |
-| region              | String| Query                        | The spreadsheet region setting.                  |
-| password            | String| Query                        | The password for opening the spreadsheet file.   |
+| Parameter Name | Type   | Path/Query String/HTTP Body | Description                                                                   |
+| -------------- | ------ | --------------------------- | ----------------------------------------------------------------------------- |
+| Spreadsheet    | File   | FormData                    | Upload the spreadsheet file.                                                  |
+| worksheet      | String | Query                       | The worksheet name within the spreadsheet.                                    |
+| range          | String | Query                       | The cell area to be converted, e.g., A1:C10.                                  |
+| outPath        | String | Query                       | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query                       | Output file Storage Name.                                                     |
+| fontsLocation  | String | Query                       | Location for storing custom fonts for home use.                               |
+| region         | String | Query                       | The spreadsheet region setting.                                               |
+| password       | String | Query                       | The password for opening the spreadsheet file.                                |
 
 ### **Response**
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
@@ -77,11 +76,11 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/range/pdf
 
 ### Convert Range to PDF API Specification
 
-The [Convert Range to PDF API Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertRangeToPDF) defines a publicly accessible programming interface and allows you to carry out REST interactions directly from a web browser.
+The [Convert Range to PDF API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertRangeToPDF) defines a publicly accessible programming interface and allows you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the fastest way to develop, as it abstracts away the low-level details, allowing you to convert a data of range  to a json file with short code.
+Using the SDK is the fastest way to develop, as it abstracts away the low-level details, allowing you to convert a data of range to a json file with short code.
 Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:

@@ -30,30 +30,30 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/range/image
 
 ### **Request Parameters:**
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-| :- | :- | :- | :- |
-|Spreadsheet|File|FormData|Upload the spreadsheet file for conversion.|
-|worksheet|String|Query|The worksheet name of Spreadsheet/Excel|
-|range|String|Query|Define the cell area to convert (e.g., A1:C10).|
-|format|String|Query|Specify the output file format (e.g., png, svg, tiff).|
-|printHeadings|Boolean|Query|Indicate if row and column headings should be printed.|
-|outPath|String|Query|(Optional) The folder path where the workbook is stored; default is null.|
-|outStorageName|String|Query|Name of the output file storage.|
-|fontsLocation|String|Query|Custom fonts to use for the conversion.|
-|region|String|Query|Define the spreadsheet region setting.|
-|password|String|Query|Password for opening the spreadsheet file if protected.|
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                                               |
+| :------------- | :------ | :------------------------- | :------------------------------------------------------------------------ |
+| Spreadsheet    | File    | FormData                   | Upload the spreadsheet file for conversion.                               |
+| worksheet      | String  | Query                      | The worksheet name of Spreadsheet/Excel                                   |
+| range          | String  | Query                      | Define the cell area to convert (e.g., A1:C10).                           |
+| format         | String  | Query                      | Specify the output file format (e.g., png, svg, tiff).                    |
+| printHeadings  | Boolean | Query                      | Indicate if row and column headings should be printed.                    |
+| outPath        | String  | Query                      | (Optional) The folder path where the workbook is stored; default is null. |
+| outStorageName | String  | Query                      | Name of the output file storage.                                          |
+| fontsLocation  | String  | Query                      | Custom fonts to use for the conversion.                                   |
+| region         | String  | Query                      | Define the spreadsheet region setting.                                    |
+| password       | String  | Query                      | Password for opening the spreadsheet file if protected.                   |
 
 ### **Response**
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
@@ -82,11 +82,11 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/range/image
 
 ### Convert Range to Image API Specification
 
-The [Convert Range to Image API Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertRangeToImage) provides a publicly accessible programming interface, enabling REST interactions directly from your web browser.
+The [Convert Range to Image API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertRangeToImage) provides a publicly accessible programming interface, enabling REST interactions directly from your web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the fastest way to develop, as it abstracts away the low-level details, allowing you to convert a data of range  to an image with short code.
+Using the SDK is the fastest way to develop, as it abstracts away the low-level details, allowing you to convert a data of range to an image with short code.
 Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples illustrate how to call Aspose.Cells web services using various SDKs:

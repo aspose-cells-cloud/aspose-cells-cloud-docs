@@ -23,31 +23,31 @@ GET http://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/tables/{tab
 
 ### **Request Parameters:**
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-| :- | :- | :- |:- |
-|name|String|Path|(Required) The name of the workbook file to be retrieved.|
-|worksheet|String|Path|Name of the worksheet.|
-|tableName|String|Path|Name of the table.|
-|format|String|Query|(Required) The desired format (e.g., "png", "pdf", "svg").|
-|folder|String|Query|(Optional) The folder path where the workbook is stored. The default is null.|
-|storageName|String|Query|(Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.|
-|outPath|String|Query|(Optional) The folder path for output storage. The default is null.|
-|outStorageName|String|Query|Name of the output file storage.|
-|fontsLocation|String|Query|Location for custom fonts.|
-|region|String|Query|Setting for spreadsheet region.|
-|password|String|Query|Password for opening the spreadsheet file.|
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                                                                       |
+| :------------- | :----- | :------------------------- | :------------------------------------------------------------------------------------------------ |
+| name           | String | Path                       | (Required) The name of the workbook file to be retrieved.                                         |
+| worksheet      | String | Path                       | Name of the worksheet.                                                                            |
+| tableName      | String | Path                       | Name of the table.                                                                                |
+| format         | String | Query                      | (Required) The desired format (e.g., "png", "pdf", "svg").                                        |
+| folder         | String | Query                      | (Optional) The folder path where the workbook is stored. The default is null.                     |
+| storageName    | String | Query                      | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted. |
+| outPath        | String | Query                      | (Optional) The folder path for output storage. The default is null.                               |
+| outStorageName | String | Query                      | Name of the output file storage.                                                                  |
+| fontsLocation  | String | Query                      | Location for custom fonts.                                                                        |
+| region         | String | Query                      | Setting for spreadsheet region.                                                                   |
+| password       | String | Query                      | Password for opening the spreadsheet file.                                                        |
 
 ### **Response**
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
@@ -78,7 +78,7 @@ GET http://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/tables/{tab
 
 ### Export Table as Format API Specification
 
-The [Export Table as Format API Specification](https://reference.aspose.cloud/cells/#/ConversionController/ExportTableAsFormat) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [Export Table as Format API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ExportTableAsFormat) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

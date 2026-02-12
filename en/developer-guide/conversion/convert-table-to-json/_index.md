@@ -23,28 +23,28 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/table/json
 
 ### **Request Parameters:**
 
-| Parameter Name    | Type  | Path/Query String/HTTP Body | Description                                        |
-|-------------------|-------|-----------------------------|----------------------------------------------------|
-| Spreadsheet       | File  | FormData                    | Upload the spreadsheet file.                       |
-| worksheet         | String| Query                       | Specify the worksheet name of the spreadsheet.     |
-| tableName         | String| Query                       | Provide the name of the table to convert.          |
-| outPath           | String| Query                       | (Optional) The folder path where the workbook is stored; defaults to null. |
-| outStorageName    | String| Query                       | Specify the output file storage name.              |
-| fontsLocation     | String| Query                       | Use custom fonts for conversion.                   |
-| region            | String| Query                       | Define the region settings for the spreadsheet.    |
-| password          | String| Query                       | The password required to open the spreadsheet file. |
+| Parameter Name | Type   | Path/Query String/HTTP Body | Description                                                                |
+| -------------- | ------ | --------------------------- | -------------------------------------------------------------------------- |
+| Spreadsheet    | File   | FormData                    | Upload the spreadsheet file.                                               |
+| worksheet      | String | Query                       | Specify the worksheet name of the spreadsheet.                             |
+| tableName      | String | Query                       | Provide the name of the table to convert.                                  |
+| outPath        | String | Query                       | (Optional) The folder path where the workbook is stored; defaults to null. |
+| outStorageName | String | Query                       | Specify the output file storage name.                                      |
+| fontsLocation  | String | Query                       | Use custom fonts for conversion.                                           |
+| region         | String | Query                       | Define the region settings for the spreadsheet.                            |
+| password       | String | Query                       | The password required to open the spreadsheet file.                        |
 
 ## **Response**
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
@@ -72,8 +72,8 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/table/json
 
 - **Developer-Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared to building custom chart rendering solutions, this significantly reduces the development workload.
 - **Cost-Effective**: You can convert table data without first uploading the workbook, which saves storage space and reduces costs.
-- **To Fuel Modern Web & Mobile Applications**: JSON is the native data language of the web.  By converting Excel table to JSON, you can **seamlessly feed live spreadsheet data into JavaScript frameworks** (React, Vue, Angular), mobile apps, or single-page applications (SPAs) without complex parsing logic.
-- **JSON is the lingua franca of modern systems**: compatible with virtually every programming language, database, and web service.  Unlike proprietary formats, JSON ensures your Excel data can be consumed anywhere.
+- **To Fuel Modern Web & Mobile Applications**: JSON is the native data language of the web. By converting Excel table to JSON, you can **seamlessly feed live spreadsheet data into JavaScript frameworks** (React, Vue, Angular), mobile apps, or single-page applications (SPAs) without complex parsing logic.
+- **JSON is the lingua franca of modern systems**: compatible with virtually every programming language, database, and web service. Unlike proprietary formats, JSON ensures your Excel data can be consumed anywhere.
 - **Structured Data Preservation**
   - **Intelligent Structure Detection**: Automatically converts tabular data to proper JSON arrays/objects
   - **Header Mapping**: Uses first row as JSON keys for clean object structures
@@ -83,7 +83,7 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/table/json
 
 ### Convert Table to JSON API Specification
 
-The [Convert Table to JSON API Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertTableToJson) provides a publicly accessible programming interface, enabling REST interactions directly from a web browser.
+The [Convert Table to JSON API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertTableToJson) provides a publicly accessible programming interface, enabling REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

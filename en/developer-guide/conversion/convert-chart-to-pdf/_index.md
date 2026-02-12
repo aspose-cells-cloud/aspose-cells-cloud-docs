@@ -10,7 +10,7 @@ description: "Export charts from Excel files on local drive to PDF format using 
 weight: 100
 ---
 
-Export Charts from a local Excel Files to [PDF](https://docs.fileformat.com/pdf/)  Format using Cloud API
+Export Charts from a local Excel Files to [PDF](https://docs.fileformat.com/pdf/) Format using Cloud API
 
 ## **Convert Chart to PDF Web API**
 
@@ -22,28 +22,28 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/chart/pdf
 
 ### **Request Parameters:**
 
-| Parameter Name       | Type   | Path/Query String/HTTPBody | Description                                               |
-| -------------------- | ------ | --------------------------- | --------------------------------------------------------- |
-| Spreadsheet          | File   | FormData                   | Upload the spreadsheet file.                              |
-| worksheet            | String | Query                      | The name of the worksheet containing the chart.          |
-| chartIndex           | Integer| Query                      | The index of the chart to convert.                       |
-| outPath             | String | Query                      | (Optional) The folder path where the converted file is stored. The default is null. |
-| outStorageName       | String | Query                      | Output file storage name.                                 |
-| fontsLocation        | String | Query                      | Use custom fonts if required.                             |
-| region               | String | Query                      | The spreadsheet region setting.                           |
-| password             | String | Query                      | The password for opening the spreadsheet file.           |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                                                         |
+| -------------- | ------- | -------------------------- | ----------------------------------------------------------------------------------- |
+| Spreadsheet    | File    | FormData                   | Upload the spreadsheet file.                                                        |
+| worksheet      | String  | Query                      | The name of the worksheet containing the chart.                                     |
+| chartIndex     | Integer | Query                      | The index of the chart to convert.                                                  |
+| outPath        | String  | Query                      | (Optional) The folder path where the converted file is stored. The default is null. |
+| outStorageName | String  | Query                      | Output file storage name.                                                           |
+| fontsLocation  | String  | Query                      | Use custom fonts if required.                                                       |
+| region         | String  | Query                      | The spreadsheet region setting.                                                     |
+| password       | String  | Query                      | The password for opening the spreadsheet file.                                      |
 
 ### **Response**
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
@@ -59,7 +59,7 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/chart/pdf
 ### **1. Business Reporting & Automation**
 
 - **Financial Departments**: Monthly financial report charts → PDF archiving
-- **Sales Teams**: Performance trend charts → PDF client reports  
+- **Sales Teams**: Performance trend charts → PDF client reports
 - **Marketing Analytics**: Campaign performance charts → PDF executive briefings
 - **Operations Management**: Production monitoring charts → PDF compliance documents
 
@@ -104,7 +104,7 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/chart/pdf
 
 ### Convert Chart to PDF API Specification
 
-The [Convert Chart to PDF API Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertChartToPDF) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [Convert Chart to PDF API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertChartToPDF) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 ## Use Aspose.Cells Cloud SDKs
 

@@ -22,28 +22,28 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/range/csv
 
 ### **Request Parameters:**
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-| :- | :- | :- |:- |
-|Spreadsheet|File|FormData|Upload the spreadsheet file.|
-|worksheet|String|Query|The worksheet name of Spreadsheet/Excel|
-|range|String|Query|Specify the cell area (e.g., A1:C10).|
-|outPath|String|Query|(Optional) The folder path where the workbook will be stored. Default is null.|
-|outStorageName|String|Query|Name of the output file storage.|
-|fontsLocation|String|Query|Specify custom fonts if required.|
-|region|String|Query|Defines the spreadsheet region setting.|
-|password|String|Query|Password required to open the spreadsheet file.|
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                                                    |
+| :------------- | :----- | :------------------------- | :----------------------------------------------------------------------------- |
+| Spreadsheet    | File   | FormData                   | Upload the spreadsheet file.                                                   |
+| worksheet      | String | Query                      | The worksheet name of Spreadsheet/Excel                                        |
+| range          | String | Query                      | Specify the cell area (e.g., A1:C10).                                          |
+| outPath        | String | Query                      | (Optional) The folder path where the workbook will be stored. Default is null. |
+| outStorageName | String | Query                      | Name of the output file storage.                                               |
+| fontsLocation  | String | Query                      | Specify custom fonts if required.                                              |
+| region         | String | Query                      | Defines the spreadsheet region setting.                                        |
+| password       | String | Query                      | Password required to open the spreadsheet file.                                |
 
 ### **Response**
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream",
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
@@ -93,7 +93,7 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/range/csv
 
 ## Why should you use the Convert Range to CSV API?
 
-- You can convert spreadsheet data of range  without first uploading the workbook, which saves storage space and reduces costs.
+- You can convert spreadsheet data of range without first uploading the workbook, which saves storage space and reduces costs.
 - Development can be quickly completed through the existing Aspose.Cells Cloud SDKs.
 - **Simple Integration**: REST API with clear documentation.
 - **Scalable Architecture**: Handles from small to enterprise-scale operations.
@@ -102,11 +102,11 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/range/csv
 
 ### OpenAPI Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertRangeToCSV) outlines a publicly accessible API, enabling REST interactions directly from a web browser.
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertRangeToCSV) outlines a publicly accessible API, enabling REST interactions directly from a web browser.
 
 ## Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the fastest way to develop, as it abstracts away the low-level details, allowing you to convert a data of range  to a CSV file with short code.
+Using the SDK is the fastest way to develop, as it abstracts away the low-level details, allowing you to convert a data of range to a CSV file with short code.
 Explore the complete list of Aspose.Cells Cloud SDKs in our [GitHub repository](https://github.com/aspose-cells-cloud).
 
 The following code examples illustrate how to call Aspose.Cells web services using various SDKs:

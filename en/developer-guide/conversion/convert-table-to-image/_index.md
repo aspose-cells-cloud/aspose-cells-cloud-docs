@@ -30,29 +30,29 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/table/image
 
 ### **Request Parameters:**
 
-| Parameter Name | Type | Path/Query String/HTTP Body | Description |
-| :- | :- | :- |:- |
-|Spreadsheet|File|FormData|Upload the spreadsheet file.|
-|worksheet|String|Query|The worksheet name of Spreadsheet/Excel|
-|tableName|String|Query|Name of the table to convert.|
-|format|String|Query|Desired image file format (e.g., png, svg).|
-|outPath|String|Query|(Optional) The folder path where the converted image will be stored. Defaults to null.|
-|outStorageName|String|Query|Specify the output file storage name.|
-|fontsLocation|String|Query|Use custom fonts if required.|
-|region|String|Query|Defines the spreadsheet region settings.|
-|password|String|Query|Password required to access the spreadsheet file.|
+| Parameter Name | Type   | Path/Query String/HTTP Body | Description                                                                            |
+| :------------- | :----- | :-------------------------- | :------------------------------------------------------------------------------------- |
+| Spreadsheet    | File   | FormData                    | Upload the spreadsheet file.                                                           |
+| worksheet      | String | Query                       | The worksheet name of Spreadsheet/Excel                                                |
+| tableName      | String | Query                       | Name of the table to convert.                                                          |
+| format         | String | Query                       | Desired image file format (e.g., png, svg).                                            |
+| outPath        | String | Query                       | (Optional) The folder path where the converted image will be stored. Defaults to null. |
+| outStorageName | String | Query                       | Specify the output file storage name.                                                  |
+| fontsLocation  | String | Query                       | Use custom fonts if required.                                                          |
+| region         | String | Query                       | Defines the spreadsheet region settings.                                               |
+| password       | String | Query                       | Password required to access the spreadsheet file.                                      |
 
 ### **Response**
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
@@ -81,7 +81,7 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/table/image
 
 ### Convert Table to Image API Specification
 
-The [Convert Table to Image API Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertTableToImage) provides a publicly accessible programming interface for conducting REST interactions directly from a web browser.
+The [Convert Table to Image API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertTableToImage) provides a publicly accessible programming interface for conducting REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

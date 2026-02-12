@@ -23,30 +23,30 @@ GET http://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}
 
 ### **Request Parameters:**
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-| :- | :- | :- |:- |
-|name|String|Path|(Required) The name of the workbook file to be retrieved.|
-|worksheet|String|Path|(Required) The specific worksheet to convert.|
-|format|String|Query|(Required) The desired output format (e.g., "png", "pdf", "svg").|
-|folder|String|Query|(Optional) The folder path where the workbook is stored. The default is null.|
-|storageName|String|Query|(Optional) The name of the custom cloud storage. Use default storage if omitted.|
-|outPath|String|Query|(Optional) The output folder path. The default is null.|
-|outStorageName|String|Query|(Optional) Output file Storage Name.|
-|fontsLocation|String|Query|(Optional) Specify custom fonts if needed.|
-|region|String|Query|The spreadsheet region setting.|
-|password|String|Query|The password for accessing the spreadsheet file.|
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                                                      |
+| :------------- | :----- | :------------------------- | :------------------------------------------------------------------------------- |
+| name           | String | Path                       | (Required) The name of the workbook file to be retrieved.                        |
+| worksheet      | String | Path                       | (Required) The specific worksheet to convert.                                    |
+| format         | String | Query                      | (Required) The desired output format (e.g., "png", "pdf", "svg").                |
+| folder         | String | Query                      | (Optional) The folder path where the workbook is stored. The default is null.    |
+| storageName    | String | Query                      | (Optional) The name of the custom cloud storage. Use default storage if omitted. |
+| outPath        | String | Query                      | (Optional) The output folder path. The default is null.                          |
+| outStorageName | String | Query                      | (Optional) Output file Storage Name.                                             |
+| fontsLocation  | String | Query                      | (Optional) Specify custom fonts if needed.                                       |
+| region         | String | Query                      | The spreadsheet region setting.                                                  |
+| password       | String | Query                      | The password for accessing the spreadsheet file.                                 |
 
 ### **Response**
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
@@ -75,7 +75,7 @@ GET http://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}
 
 ### Export Worksheet as Format API Specification
 
-The [Export Worksheet as Format API Specifiation](https://reference.aspose.cloud/cells/#/ConversionController/ExportWorksheetAsFormat) provides a publicly accessible programming interface for performing REST interactions directly from a web browser.
+The [Export Worksheet as Format API Specifiation](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ExportWorksheetAsFormat) provides a publicly accessible programming interface for performing REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

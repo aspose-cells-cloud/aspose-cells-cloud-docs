@@ -31,28 +31,28 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/worksheet/image
 
 ### **Request Parameters:**
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-| :- | :- | :- |:- |
-| Spreadsheet | File | FormData | Upload the spreadsheet file. |
-| worksheet | String | Query | Name of the worksheet in the spreadsheet. |
-| format | String | Query | Desired image format: svg, png, tiff, etc. |
-| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
-| outStorageName | String | Query | Name of the output file storage. |
-| fontsLocation | String | Query | Use custom fonts. |
-| region | String | Query | The spreadsheet region setting. |
-| password | String | Query | The password for opening the spreadsheet file. |
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                                                   |
+| :------------- | :----- | :------------------------- | :---------------------------------------------------------------------------- |
+| Spreadsheet    | File   | FormData                   | Upload the spreadsheet file.                                                  |
+| worksheet      | String | Query                      | Name of the worksheet in the spreadsheet.                                     |
+| format         | String | Query                      | Desired image format: svg, png, tiff, etc.                                    |
+| outPath        | String | Query                      | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query                      | Name of the output file storage.                                              |
+| fontsLocation  | String | Query                      | Use custom fonts.                                                             |
+| region         | String | Query                      | The spreadsheet region setting.                                               |
+| password       | String | Query                      | The password for opening the spreadsheet file.                                |
 
 ### **Response**
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
@@ -81,7 +81,7 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/worksheet/image
 
 ### Convert Table to Image API Specification
 
-The [Convert Table to Image API Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertWorksheetToImage) defines a publicly accessible programming interface and allows for REST interactions directly from a web browser.
+The [Convert Table to Image API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertWorksheetToImage) defines a publicly accessible programming interface and allows for REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

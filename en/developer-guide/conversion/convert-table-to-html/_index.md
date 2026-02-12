@@ -23,28 +23,28 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/table/html
 
 ### **Request Parameters:**
 
-| Parameter Name | Type | Path/Query String/HTTP Body | Description |
-| :- | :- | :- | :- |
-| Spreadsheet | File | FormData | Upload the spreadsheet file to be converted. |
-| worksheet | String | Query | The worksheet name of Spreadsheet/Excel |
-| tableName | String | Query | The name of the table to convert. |
-| outPath | String | Query | (Optional) The folder path where the converted file will be stored. The default value is null. |
-| outStorageName | String | Query | The designated storage name for the output file. |
-| fontsLocation | String | Query | Specify custom fonts for the conversion. |
-| region | String | Query | Define the spreadsheet region settings. |
-| password | String | Query | The password required to access the spreadsheet file. |
+| Parameter Name | Type   | Path/Query String/HTTP Body | Description                                                                                    |
+| :------------- | :----- | :-------------------------- | :--------------------------------------------------------------------------------------------- |
+| Spreadsheet    | File   | FormData                    | Upload the spreadsheet file to be converted.                                                   |
+| worksheet      | String | Query                       | The worksheet name of Spreadsheet/Excel                                                        |
+| tableName      | String | Query                       | The name of the table to convert.                                                              |
+| outPath        | String | Query                       | (Optional) The folder path where the converted file will be stored. The default value is null. |
+| outStorageName | String | Query                       | The designated storage name for the output file.                                               |
+| fontsLocation  | String | Query                       | Specify custom fonts for the conversion.                                                       |
+| region         | String | Query                       | Define the spreadsheet region settings.                                                        |
+| password       | String | Query                       | The password required to access the spreadsheet file.                                          |
 
 ### **Response**
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
@@ -74,7 +74,7 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/table/html
 
 ### Convert Table to HTML API Specification
 
-The [Convert Table to HTML API Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertTableToHtml) outlines a publicly accessible programming interface, allowing you to perform REST interactions directly from your web browser.
+The [Convert Table to HTML API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertTableToHtml) outlines a publicly accessible programming interface, allowing you to perform REST interactions directly from your web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

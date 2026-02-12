@@ -23,28 +23,28 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/table/pdf
 
 ### **Request Parameters:**
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-| :- | :- | :- |:- |
-|Spreadsheet|File|FormData|Upload the spreadsheet file to be converted.|
-|worksheet|String|Query|The worksheet name of Spreadsheet/Excel|
-|tableName|String|Query|Name of the table to convert.|
-|outPath|String|Query|(Optional) The folder path where the converted PDF will be stored. The default is null.|
-|outStorageName|String|Query|Specify the name of the output file storage.|
-|fontsLocation|String|Query|Use custom fonts for the PDF.|
-|region|String|Query|Define the spreadsheet region setting.|
-|password|String|Query|Password for accessing the spreadsheet file.|
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                                                             |
+| :------------- | :----- | :------------------------- | :-------------------------------------------------------------------------------------- |
+| Spreadsheet    | File   | FormData                   | Upload the spreadsheet file to be converted.                                            |
+| worksheet      | String | Query                      | The worksheet name of Spreadsheet/Excel                                                 |
+| tableName      | String | Query                      | Name of the table to convert.                                                           |
+| outPath        | String | Query                      | (Optional) The folder path where the converted PDF will be stored. The default is null. |
+| outStorageName | String | Query                      | Specify the name of the output file storage.                                            |
+| fontsLocation  | String | Query                      | Use custom fonts for the PDF.                                                           |
+| region         | String | Query                      | Define the spreadsheet region setting.                                                  |
+| password       | String | Query                      | Password for accessing the spreadsheet file.                                            |
 
 ### **Response**
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
@@ -76,7 +76,7 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/table/pdf
 
 ### Convert Table to PDF API Specification
 
-The [Convert Table to PDF API Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertTableToPDF) provides a publicly accessible programming interface for executing REST interactions directly from a web browser.
+The [Convert Table to PDF API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertTableToPDF) provides a publicly accessible programming interface for executing REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

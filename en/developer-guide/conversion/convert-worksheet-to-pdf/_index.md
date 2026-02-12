@@ -22,28 +22,28 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/worksheet/pdf
 
 ### **Request Parameters:**
 
-| Parameter Name        | Type  | Path/Query String/HTTPBody | Description                              |
-|-----------------------|-------|-----------------------------|-----------------------------------------|
-| Spreadsheet           | File  | FormData                   | Upload the spreadsheet file.             |
-| worksheet             | String| Query                      | Name of the worksheet in the spreadsheet.|
-| outPath               | String| Query                      | (Optional) The folder path for storing the workbook; default is null.|
-| outStorageName        | String| Query                      | The output file storage name.            |
-| fontsLocation         | String| Query                      | Use custom fonts for the PDF.                  |
-| region                | String| Query                      | Define the spreadsheet region setting.   |
-| password              | String| Query                      | The password required to open the spreadsheet file.|
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                                           |
+| -------------- | ------ | -------------------------- | --------------------------------------------------------------------- |
+| Spreadsheet    | File   | FormData                   | Upload the spreadsheet file.                                          |
+| worksheet      | String | Query                      | Name of the worksheet in the spreadsheet.                             |
+| outPath        | String | Query                      | (Optional) The folder path for storing the workbook; default is null. |
+| outStorageName | String | Query                      | The output file storage name.                                         |
+| fontsLocation  | String | Query                      | Use custom fonts for the PDF.                                         |
+| region         | String | Query                      | Define the spreadsheet region setting.                                |
+| password       | String | Query                      | The password required to open the spreadsheet file.                   |
 
 ### **Response**
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-        "Identifier": "File",
-        "Reference": "Stream",
-        "Name": "file"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream",
+      "Name": "file"
     }
+  }
 ]
 ```
 
@@ -75,7 +75,7 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/worksheet/pdf
 
 ### Convert Worksheet to PDF API Specification
 
-The [Convert Worksheet to PDF API Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertWorksheetToPDF) provides a publicly accessible programming interface and enables REST interactions directly from a web browser.
+The [Convert Worksheet to PDF API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertWorksheetToPDF) provides a publicly accessible programming interface and enables REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

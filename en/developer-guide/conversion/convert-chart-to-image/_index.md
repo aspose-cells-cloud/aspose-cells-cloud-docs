@@ -22,29 +22,29 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/chart/image
 
 ### **Request Parameters:**
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-| :- | :- | :- |:- |
-|Spreadsheet|File|FormData|Upload the spreadsheet file containing the chart.|
-|worksheet|String|Query|Specify the worksheet name if applicable.|
-|chartIndex|Integer|Query|Index of the chart to convert.|
-|format|String|Query|(Required) The desired image type (e.g., svg, png, jpg).|
-|outPath|String|Query|(Optional) The folder path where the workbook is stored; defaults to null.|
-|outStorageName|String|Query|Name of the storage for the output file.|
-|fontsLocation|String|Query|Specify custom fonts if needed.|
-|region|String|Query|Set the spreadsheet region.|
-|password|String|Query|The password for opening the spreadsheet file.|
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                                                |
+| :------------- | :------ | :------------------------- | :------------------------------------------------------------------------- |
+| Spreadsheet    | File    | FormData                   | Upload the spreadsheet file containing the chart.                          |
+| worksheet      | String  | Query                      | Specify the worksheet name if applicable.                                  |
+| chartIndex     | Integer | Query                      | Index of the chart to convert.                                             |
+| format         | String  | Query                      | (Required) The desired image type (e.g., svg, png, jpg).                   |
+| outPath        | String  | Query                      | (Optional) The folder path where the workbook is stored; defaults to null. |
+| outStorageName | String  | Query                      | Name of the storage for the output file.                                   |
+| fontsLocation  | String  | Query                      | Specify custom fonts if needed.                                            |
+| region         | String  | Query                      | Set the spreadsheet region.                                                |
+| password       | String  | Query                      | The password for opening the spreadsheet file.                             |
 
 ## **Response**
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
@@ -77,7 +77,7 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/chart/image
 
 ### Convert Chart to Image API Specification
 
-The [Convert Chart to Image API Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertChartToImage) defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
+The [Convert Chart to Image API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertChartToImage) defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

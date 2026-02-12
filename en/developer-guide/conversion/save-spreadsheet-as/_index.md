@@ -22,18 +22,18 @@ PUT http://api.aspose.cloud/v4.0/cells/{name}/saveas
 
 ### **Request Parameters:**
 
-| Parameter Name | Type | Path/Query String/HTTP Body | Description |
-| :- | :- | :- |:- |
-| name | String | Path | (Required) The name of the workbook file to be converted. |
-| format | String | Query | (Required) The desired output format (e.g., "Xlsx", "PDF", "CSV"). |
-| saveOptionsData | Class | Body | (Optional) Save options data. The default is null. |
-| folder | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
-| storageName | String | Query | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted. |
-| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
-| outStorageName | String | Query | Output file Storage Name. |
-| fontsLocation | String | Query | Use Custom fonts. |
-| region | String | Query | The spreadsheet region setting. |
-| password | String | Query | The password for opening the spreadsheet file. |
+| Parameter Name  | Type   | Path/Query String/HTTP Body | Description                                                                                       |
+| :-------------- | :----- | :-------------------------- | :------------------------------------------------------------------------------------------------ |
+| name            | String | Path                        | (Required) The name of the workbook file to be converted.                                         |
+| format          | String | Query                       | (Required) The desired output format (e.g., "Xlsx", "PDF", "CSV").                                |
+| saveOptionsData | Class  | Body                        | (Optional) Save options data. The default is null.                                                |
+| folder          | String | Query                       | (Optional) The folder path where the workbook is stored. The default is null.                     |
+| storageName     | String | Query                       | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted. |
+| outPath         | String | Query                       | (Optional) The folder path where the workbook is stored. The default is null.                     |
+| outStorageName  | String | Query                       | Output file Storage Name.                                                                         |
+| fontsLocation   | String | Query                       | Use Custom fonts.                                                                                 |
+| region          | String | Query                       | The spreadsheet region setting.                                                                   |
+| password        | String | Query                       | The password for opening the spreadsheet file.                                                    |
 
 ### **Response**
 
@@ -45,13 +45,13 @@ PUT http://api.aspose.cloud/v4.0/cells/{name}/saveas
     {
       "Name": "Code",
       "DataType": {
-        "Identifier": "Integer",
+        "Identifier": "Integer"
       }
     },
     {
       "Name": "Status",
       "DataType": {
-        "Identifier": "String",
+        "Identifier": "String"
       }
     }
   ]
@@ -100,7 +100,7 @@ PUT http://api.aspose.cloud/v4.0/cells/{name}/saveas
 
 ### Save Spreadsheet as API Specification
 
-The [Save Spreadsheet as API Specification](https://reference.aspose.cloud/cells/#/ConversionController/SaveSpreadsheetAs) defines a publicly accessible programming interface, allowing you to carry out REST interactions directly from a web browser.
+The [Save Spreadsheet as API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/SaveSpreadsheetAs) defines a publicly accessible programming interface, allowing you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

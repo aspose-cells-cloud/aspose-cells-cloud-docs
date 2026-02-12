@@ -23,28 +23,28 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/table/csv
 
 ### **Request Parameters:**
 
-| Parameter Name   | Type  | Path/Query String/HTTP Body | Description                                     |
-|------------------|-------|-----------------------------|-------------------------------------------------|
-| Spreadsheet      | File  | FormData                    | Upload the spreadsheet file.                    |
-| worksheet        | String| Query                       | Name of the worksheet in the spreadsheet.       |
-| tableName        | String| Query                       | Name of the table to be converted.              |
-| outPath          | String| Query                       | (Optional) Folder path where the workbook is stored; defaults to null. |
-| outStorageName   | String| Query                       | Name of the output file storage.                |
-| fontsLocation    | String| Query                       | Path for using custom fonts.                    |
-| region           | String| Query                       | Defines the spreadsheet region setting.         |
-| password         | String| Query                       | Password for opening the spreadsheet file.      |
+| Parameter Name | Type   | Path/Query String/HTTP Body | Description                                                            |
+| -------------- | ------ | --------------------------- | ---------------------------------------------------------------------- |
+| Spreadsheet    | File   | FormData                    | Upload the spreadsheet file.                                           |
+| worksheet      | String | Query                       | Name of the worksheet in the spreadsheet.                              |
+| tableName      | String | Query                       | Name of the table to be converted.                                     |
+| outPath        | String | Query                       | (Optional) Folder path where the workbook is stored; defaults to null. |
+| outStorageName | String | Query                       | Name of the output file storage.                                       |
+| fontsLocation  | String | Query                       | Path for using custom fonts.                                           |
+| region         | String | Query                       | Defines the spreadsheet region setting.                                |
+| password       | String | Query                       | Password for opening the spreadsheet file.                             |
 
 ### **Response**
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
@@ -81,7 +81,7 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/table/csv
 
 ### Convert Table to CSV API Specification
 
-The [Convert Table to CSV API Specification](https://reference.aspose.cloud/cells/#/ConversionController/ConvertTableToCSV) provides a publicly accessible programming interface, allowing REST interactions directly from a web browser.
+The [Convert Table to CSV API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertTableToCSV) provides a publicly accessible programming interface, allowing REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 
