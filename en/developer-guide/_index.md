@@ -1,3 +1,4 @@
+---
 title: "Developer Guide: Convert, Merge, Split, Protect, Search, Replace & Transform — All in Cells Cloud."
 second_title: "Document"
 linktitle: "Developer Guide"
