@@ -1,3 +1,4 @@
+---
 title: "Get a shape by index on an Excel worksheet"
 second_title: "Document"
 linktitle: "Get"
@@ -7,7 +8,6 @@ aliases: [/get-a-shape-by-index-inside-the-worksheet/]
 keywords: "Get shape by index, Excel worksheet, Aspose.Cells Cloud, REST API, shape retrieval"
 description: "Retrieve a shape by its index from an Excel worksheet using Aspose.Cells Cloud REST API. Supports multiple SDKs and programming languages."
 weight: 20
-
 ---
 
 This REST API retrieves a shape (including its image data or metadata) from an Excel worksheet.

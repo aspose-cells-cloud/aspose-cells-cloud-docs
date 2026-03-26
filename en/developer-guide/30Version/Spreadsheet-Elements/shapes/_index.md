@@ -1,14 +1,14 @@
+---
 title: "Working with Excel shape"
 second_title: "Document"
 linktitle: "Shapes"
 type: docs
 url: /shapes/
-aliases:
-  - /working-with-shapes/
-  - /working-with-images/
+aliases: ["/working-with-shapes/","/working-with-images/"]
 keywords: "Excel shapes, Excel worksheet shapes, Office Cloud API, spreadsheet shape manipulation, shape conversion, shape add/delete"
 description: "Learn how to manage shapes in an Excel worksheet using the Office Cloud API. This guide covers retrieving, adding, deleting, and converting shapes, with SDK support for multiple programming languages."
 weight: 100
+---
 
 ## Working with shapes on an Excel file
 

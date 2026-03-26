@@ -1,3 +1,4 @@
+---
 title: "Working with Excel hyperlinks"
 second_title: "Document"
 type: docs
@@ -7,8 +8,9 @@ aliases: [/working-with-hyperlinks/,/working-with-hyperlink/]
 keywords: "Excel, hyperlinks, spreadsheet, Cells.Cloud API"
 description: "Learn how to manage hyperlinks in Excel files using the Cells.Cloud API, covering retrieval, addition, updating, and deletion."
 weight: 100
+---
 
-&nbsp;&nbsp;&nbsp;&nbsp;Hyperlinks in Excel allow users to create shortcuts to any worksheet, file, folder, or webpage, enabling quick access to specific locations.
+Hyperlinks in Excel allow users to create shortcuts to any worksheet, file, folder, or webpage, enabling quick access to specific locations.
 
 ## Working with Hyperlinks on an Excel file
 

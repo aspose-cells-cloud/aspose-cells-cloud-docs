@@ -1,3 +1,4 @@
+---
 title: "Working with Excel columns"
 second_title: "Document"
 linktitle: "Columns"
@@ -7,6 +8,7 @@ aliases: [/working-with-columns/]
 keywords: "Excel columns, Cells Cloud API, REST API, spreadsheet operations, Office Cloud"
 description: "The Cells Cloud API provides comprehensive operations for Excel worksheet columns, including adding, copying, hiding, unhiding, grouping, ungrouping, and deleting."
 weight: 100
+---
 
 ## Working with Columns on an Excel file
 

@@ -1,10 +1,10 @@
+---
 title: "Get Chart Category Axis"
 type: docs
 url: /charts/category-axis/get/
 weight: 60
 keywords: "Aspose.Cells, Chart Category Axis, REST API, Get Chart Category Axis, Excel, Cloud API"
 description: "Retrieves the category axis of a chart in an Excel worksheet using the Aspose.Cells Cloud REST API."
-
 ---
 
 This REST API retrieves the **Category Axis** of a chart.

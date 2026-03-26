@@ -1,11 +1,11 @@
-```yaml
+---
 title: "Get Cells Properties"
 type: docs
 url: /get-cells-properties/
 weight: 130
 keywords: "Aspose Cells Cloud, REST API, Excel, Worksheet, Cell Properties, Get Cells Properties"
 description: "Learn how to use the Aspose.Cells Cloud REST API to retrieve properties of a specific cell or predefined cell methods in an Excel worksheet."
-```
+---
 
 This REST API demonstrates how to retrieve a specific cell in an Excel file.
 
@@ -17,13 +17,13 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cell
 
 The request parameters are:
 
-| Parameter Name   | Type   | Location | Description |
-|------------------|--------|----------|-------------|
-| **name**         | string | path     | The name of the Excel document. |
-| **sheetName**    | string | path     | The name of the worksheet containing the cell. |
-| **cellOrMethodName** | string | path | The cell name or a predefined method name (e.g., `firstcell`, `endcell`, `maxrow`, `maxdatarow`, `maxcolumn`, `maxdatacolumn`, `minrow`, `mindatarow`, `mincolumn`, `mindatacolumn`). |
-| **folder**       | string | query    | The folder where the document is stored. |
-| **storageName**  | string | query    | The name of the storage service. |
+| Parameter Name       | Type   | Location | Description                                                                                                                                                                           |
+| -------------------- | ------ | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **name**             | string | path     | The name of the Excel document.                                                                                                                                                       |
+| **sheetName**        | string | path     | The name of the worksheet containing the cell.                                                                                                                                        |
+| **cellOrMethodName** | string | path     | The cell name or a predefined method name (e.g., `firstcell`, `endcell`, `maxrow`, `maxdatarow`, `maxcolumn`, `maxdatacolumn`, `minrow`, `mindatarow`, `mincolumn`, `mindatacolumn`). |
+| **folder**           | string | query    | The folder where the document is stored.                                                                                                                                              |
+| **storageName**      | string | query    | The name of the storage service.                                                                                                                                                      |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetCell) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

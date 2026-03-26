@@ -1,3 +1,4 @@
+---
 title: "Working with Excel page break"
 second_title: "Document"
 linktitle: "PageBreaks"
@@ -7,6 +8,7 @@ aliases: [/working-with-pagebreaks/]
 keywords: "Excel, page break, Aspose.Cells Cloud, REST API, worksheet, add, delete, get, update"
 description: "Learn how to get, add, delete, and update page breaks in an Excel worksheet using Aspose.Cells Cloud REST API. Supports multiple SDKs for languages such as C#, Java, Python, and more."
 weight: 100
+---
 
 ## How to work with page breaks in an Excel worksheet
 

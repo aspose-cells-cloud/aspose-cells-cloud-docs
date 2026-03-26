@@ -1,3 +1,4 @@
+---
 title: "Add a pivot table in an Excel worksheet"
 second_title: "Document"
 linktitle: Add
@@ -7,7 +8,6 @@ aliases: [/add-a-pivot-table-in-a-worksheet/]
 keywords: "Add pivot table, Excel worksheet, Aspose.Cells Cloud, REST API, SDK"
 description: "Use Aspose.Cells Cloud REST API to add a pivot table to an Excel worksheet. The service is available through multiple SDKs (C#, Java, PHP, Python, Node.js, Android, Swift, Perl, Go)."
 weight: 30
-
 ---
 
 This REST API adds a pivot table into a worksheet.

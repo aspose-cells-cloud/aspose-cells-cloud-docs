@@ -1,11 +1,11 @@
+---
 title: "Get Chart Area from a Worksheet"
 type: docs
 url: /charts/area/get/
 aliases: [/get-chart-area-from-a-worksheet/]
 weight: 60
-keywords: ["Aspose.Cells", "REST API", "ChartArea", "Worksheet", "cURL", "SDK", "GetChartArea"]
+keywords:["Aspose.Cells","REST API","ChartArea","Worksheet","cURL","SDK", "GetChartArea", ]
 description: "Learn how to retrieve chart‑area information from a worksheet using the Aspose.Cells Cloud REST API, with examples for cURL and multiple SDKs."
-
 ---
 
 This REST API returns chart‑area information.
@@ -18,13 +18,13 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{cha
 
 The request parameters are:
 
-| Parameter Name | Type    | Location | Description                                 |
-|----------------|---------|----------|---------------------------------------------|
-| name           | string  | path     | Name of the workbook file.                  |
+| Parameter Name | Type    | Location | Description                                    |
+| -------------- | ------- | -------- | ---------------------------------------------- |
+| name           | string  | path     | Name of the workbook file.                     |
 | sheetName      | string  | path     | Name of the worksheet that contains the chart. |
-| chartIndex     | integer | path     | Zero‑based index of the chart.              |
-| folder         | string  | query    | Folder where the workbook is stored.        |
-| storageName    | string  | query    | Name of the storage service.                |
+| chartIndex     | integer | path     | Zero‑based index of the chart.                 |
+| folder         | string  | query    | Folder where the workbook is stored.           |
+| storageName    | string  | query    | Name of the storage service.                   |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ChartArea/GetChartArea) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

@@ -1,3 +1,4 @@
+---
 title: "Working with Excel rows"
 second_title: "Document"
 linktitle: "Rows"
@@ -7,6 +8,7 @@ aliases: [/working-with-rows/]
 keywords: "Excel rows, Aspose.Cells Cloud, REST API, spreadsheet, row manipulation"
 description: "Aspose.Cells Cloud REST API enables manipulation of rows in Excel files. The SDK provides support for multiple programming languages, including Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift."
 weight: 100
+---
 
 ## Working with rows on an Excel file
 

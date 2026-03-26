@@ -1,10 +1,10 @@
+---
 title: "Get Chart Second Value Axis"
 type: docs
 url: /charts/second-value-axis/get/
 weight: 60
 keywords: Aspose.Cells, REST API, Get Chart Second Value Axis, Excel, Cloud, chart axis, second value axis, API
 description: Retrieves the second value axis of a specified chart in an Excel worksheet using the Aspose.Cells Cloud REST API.
-
 ---
 
 This REST API retrieves the second value axis of a chart.

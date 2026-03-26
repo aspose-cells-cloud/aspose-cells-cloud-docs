@@ -1,4 +1,4 @@
-```yaml
+---
 title: "Delete horizontal page break"
 second_title: "Document"
 linktitle: "Delete horizontal page break"
@@ -8,7 +8,7 @@ aliases: [/delete-horizontal-page-break-inside-worksheet/]
 keywords: "Aspose.Cells Cloud, Delete horizontal page break, Excel worksheet, REST API, SDK"
 description: "Use Aspose.Cells Cloud REST API to delete a horizontal page break from an Excel worksheet. The API is available through multiple SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) for seamless integration."
 weight: 50
-```
+---
 
 This REST API deletes a **horizontal** page break.
 
