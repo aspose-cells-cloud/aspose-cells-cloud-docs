@@ -4,7 +4,7 @@ type: docs
 url: /charts/area/get/
 aliases: [/get-chart-area-from-a-worksheet/]
 weight: 60
-keywords:["Aspose.Cells","REST API","ChartArea","Worksheet","cURL","SDK", "GetChartArea", ]
+keywords: ["Aspose.Cells","REST API","ChartArea","Worksheet","cURL","SDK", "GetChartArea", ]
 description: "Learn how to retrieve chart‑area information from a worksheet using the Aspose.Cells Cloud REST API, with examples for cURL and multiple SDKs."
 ---
 
