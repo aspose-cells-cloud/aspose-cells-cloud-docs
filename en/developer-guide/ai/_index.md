@@ -2,7 +2,7 @@
 title: "Aspose.Cells Cloud Web API - Mastering the application of A combined with pose.Cells and AI: Translation and Task Breakdown"
 second_title: "Document"
 ArticleTitle: "Improve Your AI Skills: Learn Excel Translation, Task Breakdown, and More"
-linktitle: "Calculate"
+linktitle: "AI"
 type: docs
 url: /ai/
 keywords: "Aspose.Cells Cloud, Excel REST API, Learn Excel Translation, Task Breakdown. AI Skills"
