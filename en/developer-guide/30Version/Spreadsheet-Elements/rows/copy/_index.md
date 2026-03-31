@@ -1,35 +1,42 @@
----
-title: "Copy rows on an Excel worksheet"
-second_title: "Document"
-linktitle: "Copy"
-type: docs
-url: /rows/copy/
-aliases: [/copy-rows-in-excel-worksheet/]
-keywords: "Copy rows, Excel, Aspose.Cells Cloud, REST API, worksheet rows"
-description: "Use Aspose.Cells Cloud REST API to copy rows in an Excel worksheet. The API is available through multiple SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) and via direct HTTP requests."
-weight: 30
----
+---  
+title: "Copy Rows on an Excel Worksheet"  
+second_title: "Document"  
+linktitle: "Copy"  
+type: docs  
+url: /rows/copy/  
+aliases: [/copy-rows-in-excel-worksheet/]  
+keywords: "Aspose.Cells Cloud Copy Rows, Excel, Aspose.Cells Cloud, REST API, worksheet rows"  
+description: "Learn how to copy rows in an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes authentication steps, request/response details, error handling, and SDK examples."  
+weight: 30  
+---  
 
 This REST API copies rows within a worksheet.
 
-## REST API
+## Prerequisites  
+
+- **API version**: **v3.0** – all calls must use the HTTPS endpoints.  
+- **Authentication**: Obtain a JWT token by sending a `POST` request to `https://api.aspose.cloud/connect/token` with your client ID and client secret. Include the token in the `Authorization: Bearer <token>` header for every subsequent API call.  
+- **Storage**: The workbook must be stored in Aspose Cloud storage or be reachable via the `folder` and `storageName` query parameters.  
+- **Supported file formats**: Any Excel format supported by Aspose.Cells (e.g., `.xlsx`, `.xls`, `.xlsb`).  
+
+## REST API  
 
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/copy
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/copy
 ```
 
 The request parameters are:
 
-| Parameter Name        | Type    | Location                     | Description                                    |
-|-----------------------|---------|------------------------------|------------------------------------------------|
-| name                  | string  | path                         | The workbook file name.                        |
-| sheetName             | string  | path                         | The worksheet name.                            |
-| sourceRowIndex        | integer | query                        | Zero‑based index of the source row.            |
-| destinationRowIndex   | integer | query                        | Zero‑based index where the rows will be placed.|
-| rowNumber             | integer | query                        | Number of rows to copy.                        |
-| worksheet             | string  | query                        | (Optional) Worksheet identifier; usually same as **sheetName**. |
-| folder                | string  | query                        | Path to the folder containing the document.    |
-| storageName           | string  | query                        | Name of the storage service.                   |
+| Parameter Name      | Type    | Location | Description                                                                    |
+|---------------------|---------|----------|--------------------------------------------------------------------------------|
+| name                | string  | path     | The workbook file name.                                                        |
+| sheetName           | string  | path     | The worksheet name.                                                            |
+| sourceRowIndex      | integer | query    | Zero‑based index of the source row.                                            |
+| destinationRowIndex | integer | query    | Zero‑based index where the rows will be placed.                               |
+| rowNumber           | integer | query    | Number of rows to copy.                                                        |
+| worksheet           | string  | query    | *(Optional)* Worksheet identifier; usually the same as **sheetName**.        |
+| folder              | string  | query    | Path to the folder containing the document.                                    |
+| storageName         | string  | query    | Name of the storage service.                                                   |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostCopyWorksheetRows) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -41,10 +48,10 @@ You can use the cURL command‑line tool to access Aspose.Cells web services. Th
 
 ```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows/copy?sourceRowIndex=1&destinationRowIndex=12&rowNumber=10" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
@@ -62,7 +69,18 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 
 {{< /tabs >}}
 
-## Cloud SDK Family
+## Error Handling  
+
+| HTTP Code | Meaning                     | Example Error Body |
+|-----------|-----------------------------|--------------------|
+| 400       | Bad Request – missing or invalid parameters | `{ "Code": 400, "Message": "Invalid sourceRowIndex." }` |
+| 401       | Unauthorized – invalid or missing JWT token | `{ "Code": 401, "Message": "Authentication failed." }` |
+| 404       | Not Found – workbook or worksheet does not exist | `{ "Code": 404, "Message": "File not found." }` |
+| 500       | Internal Server Error – unexpected server condition | `{ "Code": 500, "Message": "An unexpected error occurred." }` |
+
+Handle these responses by checking the HTTP status code and parsing the JSON error object for `Code` and `Message`.
+
+## Cloud SDK Family  
 
 Using an SDK is the fastest way to develop. An SDK abstracts low‑level details, allowing you to focus on your project logic. See the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
@@ -119,3 +137,19 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
+
+## FAQ  
+
+### How do I authenticate before calling the “Copy rows” API?  
+
+Obtain a JWT token by sending a `POST` request to `https://api.aspose.cloud/connect/token` with your client ID and client secret. Include the token in the request header `Authorization: Bearer <token>` for all subsequent API calls.  
+
+### What are the required parameters to copy rows?  
+
+You must provide the **name** (workbook file name) and **sheetName** (worksheet name) in the URL path, and the query parameters **sourceRowIndex**, **destinationRowIndex**, and **rowNumber**.  
+Optional parameters are **worksheet**, **folder**, and **storageName**. All row indexes are zero‑based.  
+
+### What response should I expect on success and on failure?  
+
+- **Success**: `{ "Code": 200, "Status": "OK" }` with HTTP status 200.  
+- **Failure**: An error JSON containing `Code` and `Message` (e.g., `{ "Code": 400, "Message": "Invalid sourceRowIndex." }`) together with the appropriate HTTP status code (400, 401, 404, 500, etc.).  
