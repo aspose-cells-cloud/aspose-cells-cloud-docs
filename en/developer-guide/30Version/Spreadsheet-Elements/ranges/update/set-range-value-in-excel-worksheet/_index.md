@@ -1,50 +1,50 @@
 ---
-title: "Set range value on an Excel worksheet"
+title: "Set Range Value in an Excel Worksheet"
 second_title: "Document"
 linktitle: "Set values"
 type: docs
 url: /ranges/update/values/
 aliases: [/set-range-value-in-excel-worksheet/]
-keywords: "Excel, Aspose.Cells Cloud, REST API, Set range value, Worksheet"
-description: "The Aspose.Cells Cloud REST API enables setting a value for a range in an Excel worksheet. SDKs are available for multiple programming languages, including Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift."
+keywords: "Aspose.Cells, Excel API, set range value, REST API, cloud SDK, worksheet update"
+description: "Learn how to set a cell or range value in an Excel workbook using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, cURL example, SDK code samples, and error handling."
 weight: 72
 ---
 
-This REST API puts a value into the specified range. If appropriate, the value will be converted to another data type and the cell’s number format will be reset.
+Use this REST API to set a value in the specified range. When appropriate, the value is converted to another data type and the cell’s number format is reset.
 
 ## REST API
 
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/value
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/value
 ```
 
 The request parameters are:
 
-| Parameter Name | Type   | Location                     | Description                                               |
-|----------------|--------|------------------------------|-----------------------------------------------------------|
-| name           | string | path                         | Workbook name                                             |
-| sheetName      | string | path                         | Worksheet name                                            |
-| value          | string | query                        | Input value                                               |
-| range          | object | body                         | Range object in the worksheet                             |
-| isConverted    | boolean| query                        | Indicates whether the input value should be converted    |
-| setStyle       | boolean| query                        | Indicates whether to apply style to the target cells      |
-| folder         | string | query                        | Workbook folder                                           |
-| storageName    | string | query                        | Storage name                                              |
+| Parameter Name | Type    | Location | Description                                                |
+|----------------|---------|----------|------------------------------------------------------------|
+| name           | string  | path     | Workbook name                                              |
+| sheetName      | string  | path     | Worksheet name                                             |
+| value          | string  | query    | Input value                                                |
+| range          | object  | body     | Range object in the worksheet                              |
+| isConverted    | boolean | query    | Indicates whether the input value should be converted      |
+| setStyle       | boolean | query    | Indicates whether to apply style to the target cells       |
+| folder         | string  | query    | Workbook folder                                            |
+| storageName    | string  | query    | Storage name                                               |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeValue) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL. **Include a valid JWT token in the `Authorization` header.**
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/value?Value=25&isConverted=false&setStyle=false" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/value?value=25&isConverted=false&setStyle=false" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
