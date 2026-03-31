@@ -1,12 +1,12 @@
 ---
-title: "Get rows info from an Excel worksheet"
+title: "Get rows information from an Excel worksheet"
 second_title: "Document"
 linktitle: "Rows"
 type: docs
 url: /rows/get/rows/
 aliases: [/get-row-from-a-worksheet/]
-keywords: "Aspose.Cells Cloud, Excel rows, worksheet rows, REST API, Get rows info, Excel worksheet, Cells API"
-description: "Retrieve rows information from an Excel worksheet using the Aspose.Cells Cloud REST API. Includes request details, cURL examples, and SDK code snippets for multiple programming languages."
+keywords: "Aspose.Cells Cloud, Get Rows API, Excel worksheet rows, REST API, cURL example, SDK examples, .NET, Java, Python"
+description: "Learn how to retrieve rows information from an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, authentication, cURL, and SDK code samples for C#, Java, Python, and more."
 weight: 10
 ---
 
@@ -15,17 +15,19 @@ This REST API retrieves rows information from an Excel worksheet.
 ## REST API
 
 ```bash
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
 ```
+
+*Note: HTTPS is mandatory for production use.*
 
 The request parameters are:
 
-| Parameter Name | Type   | Location                     | Description                         |
-|----------------|--------|------------------------------|-------------------------------------|
-| name           | string | path                         | The workbook name.                  |
-| sheetName      | string | path                         | The worksheet name.                 |
-| folder         | string | query                        | The workbook folder.                |
-| storageName    | string | query                        | The storage name.                   |
+| Parameter Name | Type   | Location | Description          |
+|----------------|--------|----------|----------------------|
+| name           | string | path     | The workbook name.   |
+| sheetName      | string | path     | The worksheet name.  |
+| folder         | string | query    | The workbook folder. |
+| storageName    | string | query    | The storage name.    |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetRows) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
