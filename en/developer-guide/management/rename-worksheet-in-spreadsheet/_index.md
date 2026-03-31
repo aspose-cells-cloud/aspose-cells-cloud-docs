@@ -1,72 +1,116 @@
 ---
-title: "Aspose.Cells Cloud Excel Rename Worksheet Web API - Change Sheet Names Programmatically"
+title: "Aspose.Cells Cloud Excel Rename Worksheet Web API – Change Sheet Names Programmatically"
 second_title: "Document"
-ArticleTitle: "How to Rename Worksheets in Excel - Change Sheet Names"
+ArticleTitle: "How to Rename Worksheets in Excel – Change Sheet Names"
 linktitle: "Rename Worksheet in Spreadsheet"
 type: docs
 url: /rename-worksheet-in-spreadsheet/
-keywords: "rename worksheet API, change sheet name API, Excel tab rename API, worksheet label API, Aspose Cells REST API, automate sheet renaming, bulk rename sheets API, spreadsheet organization API, cloud Excel management, dynamic sheet naming"
-description: "Learn how to rename worksheets in Excel workbooks effectively. Change sheet names, update tab labels, and organize workbook structure. Complete guide to Excel sheet renaming with best practices, automation techniques, and avoiding common errors."
+keywords: "rename worksheet, Aspose.Cells Cloud, Excel API, worksheet rename API, spreadsheet automation, cloud Excel management"
+description: "Easily rename Excel worksheets via Aspose.Cells Cloud API. Learn required parameters, see cURL examples, and get SDK code for C#, Java, Python, and more."
 weight: 100
-kwords: Excel API, Rename Worksheet, Workbook Management, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Match all blank cells in an Excel worksheet
 ---
 
 Programmatically rename worksheets in Excel workbooks using Aspose.Cells Cloud API. Change sheet names, update tab labels dynamically, and automate spreadsheet organization through RESTful API calls. Perfect for document standardization and workflow automation.
 
-## **Rename worksheet name in Spreadsheet API**
+## Prerequisites and Authentication
+
+Before calling the **Rename Worksheet** endpoint you must:
+
+1. **Obtain credentials** – Register in the Aspose Cloud console and note your *Client Id* and *Client Secret*.
+2. **Request an access token** –  
+   ```bash
+   curl -X POST "https://api.aspose.cloud/connect/token" \
+        -H "Content-Type: application/x-www-form-urlencoded" \
+        -d "grant_type=client_credentials&client_id=<Your_Client_Id>&client_secret=<Your_Client_Secret>"
+   ```
+   The response contains an `access_token`.  
+3. **Include the token in every request** – Add the header  
+   `Authorization: Bearer <access_token>`.
+
+> **Note:** The API version used in this document is **v4.0**.
+
+## Rename worksheet name in Spreadsheet API
 
 ### API Endpoint
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/spreadsheet/rename/worksheet
+PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/rename/worksheet
 ```
 
-### **Request Parameters:**
+### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-| :- | :- | :- |:- |
-| Spreadsheet | File | FormData | **Required**. The Excel workbook file (.xlsx, .xls, etc.) containing the worksheet to be renamed. |
-| sourceName | String | Query | **Required**. The current/existing name of the worksheet you wish to rename. |
-| targetName | String | Query | **Required**. The new name to assign to the worksheet. Must follow Excel naming rules (e.g., no `:`, `\`, `?`, `*`, `[`, `]`) and be unique within the workbook. |
-| outPath | String | Query | **Optional**. The target folder path in cloud storage where the renamed workbook will be saved. If `null` or omitted, it may save to the same location as the source or a default path. |
-| outStorageName | String | Query | **Required**. The name identifier of your configured cloud storage service (e.g., `ArchiveStorage`) where the output file will be stored. |
-| region | String | Query | **Optional**. The locale setting (e.g., `ko-KR`) to apply, which may influence character encoding or regional naming conventions. |
-| password | String | Query | **Optional**. The decryption password required to open and modify a password-protected workbook. Omit if the file is not encrypted. |
+| Parameter Name   | Type   | Location               | Description |
+|------------------|--------|------------------------|-------------|
+| **Spreadsheet**  | File   | FormData               | **Required**. The Excel workbook file (.xlsx, .xls, etc.) containing the worksheet to be renamed. |
+| **sourceName**   | String | Query                  | **Required**. The current name of the worksheet you wish to rename. |
+| **targetName**   | String | Query                  | **Required**. The new name to assign to the worksheet. Must follow Excel naming rules (no `:`, `\`, `?`, `*`, `[`, `]`) and be unique within the workbook. |
+| **outPath**      | String | Query                  | **Optional**. The target folder path in cloud storage where the renamed workbook will be saved. If `null` or omitted, the service saves the file to the same folder as the source workbook (or a default path). |
+| **outStorageName**| String | Query                | **Optional**. The name identifier of your configured cloud storage service (e.g., `ArchiveStorage`). If omitted, the default storage is used. |
+| **region**       | String | Query                  | **Optional**. The locale setting (e.g., `ko-KR`) that may influence character encoding or regional naming conventions. |
+| **password**     | String | Query                  | **Optional**. The decryption password required to open and modify a password‑protected workbook. Omit if the file is not encrypted. |
 
-### **Response**
+### Sample Request (cURL)
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/spreadsheet/rename/worksheet?sourceName=Sheet1&targetName=Report_Q1&outPath=output/renamed.xlsx" \
+     -H "Authorization: Bearer <access_token>" \
+     -F "Spreadsheet=@./SampleWorkbook.xlsx" \
+     -F "outStorageName=DefaultStorage"
+```
+
+### Response
+
+A successful request returns a JSON object with status information and a link to the renamed file.
 
 ```json
-[
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
-    }
-]
+{
+  "Code": 200,
+  "Status": "OK",
+  "File": {
+    "Href": "https://api.aspose.cloud/v4.0/storage/file/output/renamed.xlsx",
+    "Name": "renamed.xlsx",
+    "Size": 123456
+  }
+}
+```
+
+### Error Response Schema
+
+| Field   | Type   | Description |
+|---------|--------|-------------|
+| **Code** | Integer | HTTP status code (e.g., 400, 401, 404). |
+| **Message** | String | Short description of the error. |
+| **Description** | String | Detailed information to help troubleshoot the issue. |
+
+**Example – Worksheet not found (404)**
+
+```json
+{
+  "Code": 404,
+  "Message": "Worksheet not found",
+  "Description": "The worksheet 'OldName' does not exist in the supplied workbook."
+}
 ```
 
 ### Error Codes
 
-- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized**: Invalid access token. Or invalid client id and secret.
-- **404 Not Found**: The spreadsheet file not accessible.
-- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
+- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI or malformed parameters.  
+- **401 Unauthorized** – Missing or invalid access token.  
+- **404 Not Found** – The spreadsheet file is not accessible or the specified worksheet does not exist.  
+- **500 Server Error** – The spreadsheet encountered an internal processing error.
 
 ## Where should we use the Rename Worksheet in Spreadsheet API?
 
-- **Report Generation and Brand Standardization**: When generating customer reports automatically, the generic worksheet names (such as `Sheet1`) are dynamically renamed to customer-specific or project-specific names (such as `AcmeCorp_Q1_Summary`) to ensure professional delivery.
-- **Data Processing Pipeline Standardization**: In the ETL process, the worksheets exported from the original data source with irregular names are renamed to standardized names (such as `Raw_Data`, `Cleaned_Data`), to meet the input requirements of subsequent analysis systems.
-- **Multilingual Content Delivery**: According to the user's language preference, before delivering the files, the localized names (such as `数据`) or English names (such as `Data`) in the worksheets are converted to their corresponding counterparts to provide a localized experience.
+- **Report Generation and Brand Standardization** – When generating customer reports automatically, generic worksheet names (e.g., `Sheet1`) are renamed to customer‑specific names (e.g., `AcmeCorp_Q1_Summary`) to ensure a professional delivery.  
+- **Data‑Processing Pipeline Standardization** – In ETL workflows, worksheets exported with irregular names are renamed to standardized names such as `Raw_Data` or `Cleaned_Data` to satisfy downstream analysis requirements.  
+- **Multilingual Content Delivery** – Based on the user's language preference, worksheet names are localized (e.g., `数据` or `Data`) before the file is delivered, providing a tailored experience.
 
 ## Why should you use the Rename Worksheet in Spreadsheet API?
 
-- **Developer-Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared to building custom chart rendering solutions, this significantly reduces the development workload.
-- **Reduced Labor Costs**: Reduced the need for positions dedicated to document consolidation.
-- **Pay-per-use**: No upfront investment, only pay for API calls actually used.
-- **Zero Maintenance Costs**: No need to maintain servers, update software, or deal with compatibility issues.
-
+- **Developer‑Friendly** – Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling rapid development with comprehensive documentation. Compared with building a custom solution, this significantly reduces development effort.  
+- **Reduced Labor Costs** – Reduces the need for positions dedicated to manual document consolidation.  
+- **Pay‑per‑Use** – No upfront investment; you only pay for the API calls you actually use.  
+- **Zero Maintenance Costs** – No servers to maintain, no software updates, and no compatibility concerns.
 
 ## How to Use the Rename Worksheet in Spreadsheet API with SDKs
 
@@ -76,8 +120,7 @@ The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ManagementCon
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement rename worksheet name in spreadsheets for cells with minimal code.
-Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the quickest way to accelerate development. The SDK abstracts the underlying HTTP details, letting you rename worksheets with minimal code. See the GitHub repository for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples illustrate how to call Aspose.Cells web services using various SDKs:
 
@@ -107,3 +150,20 @@ The following code examples illustrate how to call Aspose.Cells web services usi
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_RenameWorksheet.go" >}}
 {{</tab>}}
 {{< /tabs >}}
+
+## Frequently Asked Questions
+
+**How do I authenticate before calling the Rename Worksheet API?**  
+Obtain a *client‑id* and *client‑secret* from the Aspose Cloud console, request an access token via `POST https://api.aspose.cloud/connect/token`, and include the header `Authorization: Bearer <access_token>` in every API call.
+
+**What is the maximum length and allowed characters for a new worksheet name?**  
+Worksheet names can be up to **31 characters** long and cannot contain the characters `: \ / ? * [ ]`.
+
+**Can I rename a worksheet stored in my own cloud storage (e.g., AWS S3)?**  
+Yes. Set the `outStorageName` query parameter to the name you configured for the external storage in the Aspose Cloud dashboard. If omitted, the default storage is used.
+
+**What response do I receive on a successful rename?**  
+A JSON object containing `Code: 200`, `Status: "OK"` and a `File` object with the URL of the renamed workbook (see the *Response* section for an example).
+
+**How do I handle errors such as “Worksheet not found”?**  
+The API returns a **404** status with a JSON body like `{ "Code": 404, "Message": "Worksheet not found", "Description": "The worksheet 'OldName' does not exist." }`. Use the `Code` field to implement appropriate error‑handling logic.
