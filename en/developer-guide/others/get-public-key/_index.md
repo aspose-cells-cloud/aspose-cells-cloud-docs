@@ -1,59 +1,41 @@
 ---
-title: "Aspose.Cells Cloud WEb API - Get Public Key"
+title: "Aspose.Cells Cloud API – Get Public Key (v4.0) | REST Documentation"
 second_title: "Document"
 ArticleTitle: "Get Public Key"
 linktitle: "Get Public Key"
 type: docs
 url: /get-public-key/
-keywords: "asymmetric encryption, public key retrieval, REST API, Excel API, security, data encryption, API integration"
-description: "Retrieve an asymmetric public key for secure data encryption."
+keywords: "aspose cells cloud, public key API, asymmetric encryption, REST API, Excel API"
+description: "Retrieve the asymmetric public key used for encrypting data with Aspose.Cells Cloud. Learn request format, parameters, sample responses, and SDK usage examples."
 weight: 100
-kwords: "asymmetric encryption, public key, REST API, Excel API, security, data encryption, API integration, JSON, API documentation"
 ---
 
-Retrieves the public key from an asymmetric encryption algorithm.
+This API retrieves the public key from an asymmetric encryption algorithm.
 
 ## **Get Public Key API**
 
 ```
-GET http://api.aspose.cloud/v4.0/cells/publickey
+GET https://api.aspose.cloud/v4.0/cells/publickey
 ```
 
 ### **Request Parameters:**
 
-| Parameter Name | Type | Path/Query String/HTTP Body | Description |
-| :- | :- | :- | :- |
-|  |  |  |  |
+| Parameter Name | Type   | Location | Description                                                                 |
+|----------------|--------|----------|-----------------------------------------------------------------------------|
+| Authorization  | string | Header   | Bearer token for OAuth2 authentication (required).                         |
+| Accept         | string | Header   | Desired response format, e.g., `application/json` (optional, defaults to JSON). |
 
 ### **Response**
 
 ```json
 {
-  "Name": "CellsCloudPublicKeyResponse",
-  "Type": "Class",
-  "ParentName": "CellsCloudResponse",
-  "IsAbstract": false,
-  "Properties": [
-    {
-      "Name": "CellsCloudPublicKey",
-      "DataType": {
-        "Identifier": "Class",
-        "Reference": "CellsCloudPublicKey",
-      }
-    },
-    {
-      "Name": "Code",
-      "DataType": {
-        "Identifier": "Integer",
-      }
-    },
-    {
-      "Name": "Status",
-      "DataType": {
-        "Identifier": "String",
-      }
-    }
-  ]
+  "Code": 200,
+  "Status": "OK",
+  "CellsCloudPublicKey": {
+    "PublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAr...",
+    "Algorithm": "RSA",
+    "KeySize": 2048
+  }
 }
 ```
 
