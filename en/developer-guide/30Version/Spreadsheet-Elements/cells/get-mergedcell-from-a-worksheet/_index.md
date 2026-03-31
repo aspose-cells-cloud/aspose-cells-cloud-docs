@@ -1,19 +1,28 @@
 ---
-title: "Get MergedCell from a Worksheet"
+title: "Get Merged Cells from an Excel Worksheet – Aspose.Cells Cloud API"
 type: docs
 url: /get-mergedcell-from-a-worksheet/
 weight: 60
-keywords: "Aspose.Cells, REST API, merged cell, Excel worksheet, cloud SDK, spreadsheet"
-description: "Learn how to retrieve merged‑cell information from an Excel worksheet using the Aspose.Cells Cloud REST API. Includes request details, a cURL example, and SDK code samples."
+keywords: "Aspose.Cells Cloud, merged cells, Excel worksheet, REST API, Aspose.Cells SDK, Excel merged cells"
+description: "Learn how to retrieve merged‑cell ranges from an Excel worksheet using Aspose.Cells Cloud API (v3.0). Includes authentication steps, full cURL request, response schema, error handling, and SDK examples in C#, Java, Python, and more."
 ---
 
 This REST API returns information about **merged cells** in an Excel worksheet.
 
+> **Note** – The API object is called **MergedCell** (singular). In the prose we refer to the *concept* of merged cells (plural).
+
 ## REST API
 
 ```bash
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/mergedCells
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/mergedCells
 ```
+
+### Authentication  
+
+All calls must be authorized with a JWT access token.  
+1. Register an application in the Aspose Cloud console to obtain a **Client ID** and **Client Secret**.  
+2. Request a token via `POST https://api.aspose.cloud/connect/token` with `grant_type=client_credentials`.  
+3. Include the token in the request header: `Authorization: Bearer <jwt token>`.
 
 ### Request parameters
 
@@ -33,7 +42,7 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/mergedCells/0" \
+curl -v "https://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/mergedCells/0" \
   -X GET \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
@@ -52,7 +61,7 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1
     "StartColumn": 0,
     "StartRow": 1,
     "link": {
-      "Href": "http://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/cells/mergedcells/0",
+      "Href": "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/cells/mergedcells/0",
       "Rel": "self"
     }
   },
@@ -64,6 +73,31 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### Response model  
+
+The JSON payload contains a single **MergedCell** object with the following properties:
+
+| Property      | Type | Description |
+|---------------|------|-------------|
+| **StartRow**  | int  | Zero‑based index of the first row in the merged range. |
+| **StartColumn**| int | Zero‑based index of the first column in the merged range. |
+| **EndRow**    | int  | Zero‑based index of the last row in the merged range. |
+| **EndColumn** | int  | Zero‑based index of the last column in the merged range. |
+| **link**      | object | A self‑reference URL (`Href`) pointing to the merged‑cell resource. |
+
+### Error handling  
+
+Common HTTP status codes returned by this endpoint:
+
+| Status Code | Meaning | Sample payload |
+|-------------|---------|----------------|
+| **400** | Bad request – missing or invalid parameters. | `{ "Code": "400", "Message": "Invalid parameter." }` |
+| **401** | Unauthorized – JWT token is missing or expired. | `{ "Code": "401", "Message": "Authentication failed." }` |
+| **404** | Not found – the specified file, worksheet, or index does not exist. | `{ "Code": "404", "Message": "Resource not found." }` |
+| **500** | Internal server error – unexpected condition on the server. | `{ "Code": "500", "Message": "An unexpected error occurred." }` |
+
+Handle these responses in your code (e.g., try/catch blocks in SDKs) and retry or correct the request as appropriate.
 
 ## Cloud SDK Family
 
