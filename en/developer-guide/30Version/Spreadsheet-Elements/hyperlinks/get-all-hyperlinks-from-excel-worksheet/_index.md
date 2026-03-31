@@ -1,10 +1,10 @@
 ---
-title: "Get all"
+title: "Get All Hyperlinks – Aspose.Cells Cloud REST API"
 type: docs
 url: /hyperlinks/get-all/
 aliases: [/get-hyperlink-from-excel-worksheet/,/get-hyperlinks-from-excel-worksheet/]
-keywords: "Get hyperlinks, Excel worksheet, Aspose.Cells Cloud, REST API"
-description: "Retrieve all hyperlinks from a specific worksheet in an Excel file using the Aspose.Cells Cloud REST API. Includes request details, sample cURL command, response format, and SDK examples for multiple programming languages."
+keywords: "Aspose.Cells, Get All Hyperlinks, Excel API, REST API, Cloud SDK, cURL example, spreadsheet hyperlinks"
+description: "Retrieve every hyperlink from a worksheet in an Excel file using the Aspose.Cells Cloud REST API (v3.0). Includes HTTPS endpoint, required parameters, cURL example, response schema, and SDK code samples."
 weight: 10
 ---
 
@@ -13,19 +13,21 @@ This REST API retrieves **all hyperlinks** from a specific worksheet in an Excel
 ## REST API
 
 ```bash
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks
 ```
+
+> **Note:** All Aspose.Cells Cloud API calls must use **HTTPS** to protect credentials and data in transit.
 
 ### Request parameters
 
-| Parameter Name | Type   | Location | Description                              |
-|----------------|--------|----------|------------------------------------------|
-| name           | string | path     | Name of the Excel document.              |
-| sheetName      | string | path     | Name of the worksheet.                   |
-| folder         | string | query    | Folder that contains the document.       |
-| storageName    | string | query    | Name of the storage service to use.      |
+| Parameter Name | Type   | Location | Required | Default | Description                              |
+|----------------|--------|----------|----------|---------|------------------------------------------|
+| name           | string | path     | Yes      | –       | Name of the Excel document.              |
+| sheetName      | string | path     | Yes      | –       | Name of the worksheet.                   |
+| folder         | string | query    | No       | –       | Folder that contains the document.       |
+| storageName    | string | query    | No       | –       | Name of the storage service to use.      |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Hypelinks/GetWorksheetHyperlinks) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Hyperlinks/GetWorksheetHyperlinks) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The example below shows how to call the API with cURL.
 
@@ -35,10 +37,10 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 
 ```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/hyperlinks" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
@@ -93,6 +95,13 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/hyperli
 {{< /tab >}}
 
 {{< /tabs >}}
+
+The JSON response contains a `Hyperlinks` object.  
+
+* **Count** – total number of hyperlinks in the worksheet.  
+* **HyperlinkList** – an array where each item holds a `link` object. The `Href` property stores the hyperlink address, while `Rel`, `Title`, and `Type` provide additional metadata (often `null` for simple links).  
+
+If the request fails, the API returns an error object with an appropriate HTTP status code (e.g., 400 Bad Request, 401 Unauthorized, 404 Not Found, 500 Internal Server Error) and a JSON body that includes `Code` and `Message` fields describing the problem.
 
 ## Cloud SDK Family
 
