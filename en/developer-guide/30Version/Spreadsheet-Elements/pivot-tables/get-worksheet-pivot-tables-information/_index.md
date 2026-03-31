@@ -1,42 +1,64 @@
----
-title: "Get all pivot tables in an Excel worksheet"
-second_title: "Document"
-linktitle: Get all
-type: docs
-url: /pivot-tables/get-all/
-aliases: [/get-worksheet-pivot-tables-information/]
-keywords: "Excel, Pivot tables, Aspose.Cells Cloud, REST API, Get all pivot tables"
-description: "Learn how to retrieve all pivot tables from an Excel worksheet using Aspose.Cells Cloud REST API. Includes request details, sample cURL commands, and SDK examples for multiple programming languages."
-weight: 20
----
+---  
+title: "Get All Pivot Tables in an Excel Worksheet"  
+second_title: "Document"  
+linktitle: Get all  
+type: docs  
+url: /pivot-tables/get-all/  
+aliases: [/get-worksheet-pivot-tables-information/]  
+keywords: "get all pivot tables, Aspose.Cells Cloud API, Excel PivotTable, REST API"  
+description: "Retrieve every PivotTable from an Excel worksheet via Aspose.Cells Cloud API. Includes endpoint, parameters, auth steps, cURL, and SDK samples."  
+weight: 20  
+---  
 
-This REST API retrieves information about all pivot tables in a worksheet.
+A **PivotTable** is a data‑summarization tool in Excel that lets you reorganize and analyze large data sets. This REST API retrieves information about **all** PivotTables in a specified worksheet.
 
-## REST API
+### Prerequisites  
+
+- The Excel workbook must already be uploaded to Aspose Cloud storage.  
+- You need a valid **client ID** and **client secret** to obtain a JWT bearer token.  
+- Know the **storage name** (if you are not using the default storage) and the **folder** path where the file resides.  
+
+### Authentication  
+
+Aspose.Cells Cloud uses OAuth 2.0 bearer tokens. Obtain a token by posting your client credentials to the token endpoint:
 
 ```bash
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables
+curl -X POST "https://api.aspose.cloud/connect/token" \
+  -H "Content-Type: application/x-www-form-urlencoded" \
+  -d "grant_type=client_credentials&client_id=<your_client_id>&client_secret=<your_client_secret>"
+```
+
+The response contains an `access_token`. Include this token in the `Authorization` header of every API call:
+
+```
+Authorization: Bearer <access_token>
+```
+
+## REST API  
+
+```bash
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables
 ```
 
 The request parameters are:
 
-| Parameter Name | Type   | Location                     | Description                              |
-|----------------|--------|------------------------------|------------------------------------------|
-| name           | string | path                         | Name of the Excel document.              |
-| sheetName      | string | path                         | Name of the worksheet.                   |
-| folder         | string | query                        | Folder where the document is stored.     |
-| storageName    | string | query                        | Name of the storage service.             |
+| Parameter Name | Type   | Location | Description                         |
+|----------------|--------|----------|-------------------------------------|
+| name           | string | path     | Name of the Excel document.         |
+| sheetName      | string | path     | Name of the worksheet.              |
+| folder         | string | query    | Folder where the document is stored.|
+| storageName    | string | query    | Name of the storage service.        |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PivotTables/GetWorksheetPivotTables) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
+### Request  
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables" \
   -X GET \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
@@ -44,6 +66,8 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/workshe
 ```
 
 {{< /tab >}}
+
+### Response  
 
 {{< tab tabNum="2" >}}
 
@@ -59,7 +83,7 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/workshe
       }
     ],
     "link": {
-      "Href": "http://api.aspose.cloud/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2",
+      "Href": "https://api.aspose.cloud/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2",
       "Rel": "self"
     }
   },
@@ -72,7 +96,16 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/workshe
 
 {{< /tabs >}}
 
-## Cloud SDK Family
+### Error Responses  
+
+| HTTP Code | Description                                 | Sample JSON Payload |
+|-----------|---------------------------------------------|---------------------|
+| 400       | Bad request – required parameter missing.   | `{ "Code": "400", "Message": "Missing required parameter." }` |
+| 401       | Unauthorized – invalid or missing token.    | `{ "Code": "401", "Message": "Authentication failed." }` |
+| 404       | Not found – workbook, worksheet, or pivot table does not exist. | `{ "Code": "404", "Message": "Resource not found." }` |
+| 500       | Internal server error – unexpected condition on the server. | `{ "Code": "500", "Message": "Server error." }` |
+
+## Cloud SDK Family  
 
 Using an SDK is the fastest way to develop. An SDK handles low‑level details so you can focus on your project. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
