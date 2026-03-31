@@ -5,31 +5,66 @@ linktitle: "Row"
 type: docs
 url: /worksheets/autofit/row/
 aliases: [/autofit-single-row-of-worksheet/]
-keywords: "Autofit row, Excel, Aspose.Cells Cloud, REST API, worksheet, SDK"
-description: "Use the Aspose.Cells Cloud REST API to autofit a row in an Excel worksheet. The documentation includes request details, cURL example, and SDK code samples for C#, Java, PHP, Ruby, Node.js, Python, Perl, and Go."
+description: "Learn how to use Aspose.Cells Cloud REST API to autofit a row in an Excel worksheet. Includes endpoint, parameters, authentication, error handling, cURL request, and SDK examples."
+keywords: "autofit row, Aspose.Cells Cloud, Excel API, REST, worksheet, SDK"
 weight: 30
 ---
 
-This REST API autofits a row on an Excel worksheet.
+This REST API **autofits a row** on an Excel worksheet.
+
+### Quick‑Start Summary
+1. **Authenticate** – obtain a JWT token.  
+2. **Set the required parameters** – file name, worksheet, row index, column range, and optional `autoFitterOptions`.  
+3. **Send a POST request** to the HTTPS endpoint.
+
+## Prerequisites
+- A valid Aspose Cloud subscription.  
+- The Excel file must be stored in the default storage or a specified bucket.  
+- A generated JWT token (see the **Authentication** section below).  
+
+## Authentication
+To call any Aspose.Cells Cloud endpoint you need a JWT token.
+
+```bash
+curl -X POST "https://api.aspose.cloud/connect/token" \
+  -H "Content-Type: application/x-www-form-urlencoded" \
+  -d "grant_type=client_credentials&client_id=<your_client_id>&client_secret=<your_client_secret>"
+```
+
+The response contains an `access_token`. Use it in the `Authorization` header as:
+
+```
+Authorization: Bearer <access_token>
+```
+
+> **Note:** All requests must be made over **HTTPS**; using HTTP exposes the token and data to interception.
 
 ## REST API
 
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitrow
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitrow
 ```
 
 **Request parameters**
 
-| Parameter Name | Type   | Location                     | Description                                   |
-|----------------|--------|------------------------------|-----------------------------------------------|
-| name           | string | path                         | The name of the Excel file.                   |
-| sheetName      | string | path                         | The name of the worksheet.                    |
-| rowIndex       | integer| query                        | Zero‑based index of the row to autofit.       |
-| firstColumn    | integer| query                        | Index of the first column included in the operation. |
-| lastColumn     | integer| query                        | Index of the last column included in the operation. |
-| autoFitterOptions | object| body                         | Options that control the autofit behavior (see [AutoFitterOptions](/cells/auto-fitter-options)). |
-| folder         | string | query                        | Folder where the file is stored.              |
-| storageName    | string | query                        | Name of the storage.                          |
+| Parameter Name      | Type   | Location | Description                                                                                                 |
+|---------------------|--------|----------|-------------------------------------------------------------------------------------------------------------|
+| name                | string | path     | The name of the Excel file.                                                                                 |
+| sheetName           | string | path     | The name of the worksheet.                                                                                  |
+| rowIndex            | integer| query    | Zero‑based index of the row to autofit.                                                                     |
+| firstColumn         | integer| query    | Index of the first column included in the operation.                                                       |
+| lastColumn          | integer| query    | Index of the last column included in the operation.                                                        |
+| autoFitterOptions  | object | body     | Object that controls the autofit behavior (e.g., whether to consider merged cells, wrap text, etc.). See [AutoFitterOptions](/cells/auto-fitter-options){:rel="noopener" title="Controls autofit behavior"}. |
+| folder              | string | query    | Folder where the file is stored.                                                                            |
+| storageName         | string | query    | Name of the storage.                                                                                        |
+
+### Entity Definitions
+| Entity            | Description                                                                 |
+|-------------------|-----------------------------------------------------------------------------|
+| `rowIndex`        | Zero‑based index of the target row.                                         |
+| `firstColumn`     | Starting column for the autofit operation.                                  |
+| `lastColumn`      | Ending column for the autofit operation.                                    |
+| `autoFitterOptions` | Optional settings that influence how the row is autofit (merged cells, wrap text, etc.). |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostAutofitWorksheetRow) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
@@ -40,7 +75,7 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/sampleAutoFit.xlsx/worksheets/Sheet1/autofitrow?rowIndex=2&firstColumn=1&lastColumn=10" \
+curl -v "https://api.aspose.cloud/v3.0/cells/sampleAutoFit.xlsx/worksheets/Sheet1/autofitrow?rowIndex=2&firstColumn=1&lastColumn=10" \
   -X POST \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
@@ -51,16 +86,24 @@ curl -v "http://api.aspose.cloud/v3.0/cells/sampleAutoFit.xlsx/worksheets/Sheet1
 
 {{< tab tabNum="2" >}}
 
-```json
-{
-  "Code": 200,
-  "Status": "OK"
-}
-```
+| Field  | Description |
+|--------|-------------|
+| Code   | `200` – request succeeded. |
+| Status | `"OK"` – the row was autofit successfully. |
 
 {{< /tab >}}
 
 {{< /tabs >}}
+
+## Error Handling
+The API returns standard HTTP status codes. Common error responses for this endpoint are:
+
+| HTTP Code | Example Payload | Meaning |
+|-----------|----------------|---------|
+| 400 | `{ "Code": 400, "Message": "Row index out of range." }` | The supplied `rowIndex` does not exist in the worksheet. |
+| 401 | `{ "Code": 401, "Message": "Invalid or expired token." }` | Authentication failed – check the JWT token and ensure the request is over HTTPS. |
+| 404 | `{ "Code": 404, "Message": "File not found." }` | The specified Excel file or worksheet cannot be located. |
+| 500 | `{ "Code": 500, "Message": "Internal server error." }` | An unexpected server‑side problem occurred. |
 
 ## Cloud SDK Family
 
@@ -87,7 +130,7 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PostAutofitWorksheetRow.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2c4189bc27ae92abf73c36b4df0" "Example_PostAutofitWorksheetRow.ts" >}}
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
