@@ -4,13 +4,15 @@ second_title: "Document"
 linktitle: "Group"
 type: docs
 url: /columns/group/
-aliases: [/group-columns-in-an-excel-worksheet/, /group-columns-in-excel-worksheet/]
-keywords: "group columns, Excel worksheet, Aspose.Cells Cloud, REST API"
-description: "Use Aspose.Cells Cloud REST API to group columns in an Excel worksheet. Supports multiple SDKs for languages such as C#, Java, Python, and more."
+aliases:
+  - /group-columns-in-an-excel-worksheet/
+  - /group-columns-in-excel-worksheet/
+keywords: "Aspose.Cells Cloud, group columns, Excel API, REST, SDK, spreadsheet"
+description: "Learn how to group columns in an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes cURL, SDK examples, parameters, and response details."
 weight: 60
 ---
 
-This REST API groups worksheet columns.
+This REST API **lets you** group worksheet columns.
 
 ## REST API
 
@@ -18,7 +20,15 @@ This REST API groups worksheet columns.
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/group
 ```
 
-The request parameters are:
+### Authentication
+
+All requests must include a valid OAuth 2.0 access token.
+
+```bash
+-H "Authorization: Bearer <access_token>"
+```
+
+### Request Parameters
 
 | Parameter Name | Type    | Location | Description                                                                 |
 |----------------|---------|----------|-----------------------------------------------------------------------------|
@@ -32,7 +42,12 @@ The request parameters are:
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostGroupWorksheetColumns) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
-You can use the **cURL** command‑line tool to call Aspose.Cells web services. The following example demonstrates how to group columns with cURL.
+### Prerequisites
+
+1. Generate a client ID/secret and obtain an OAuth 2.0 access token.  
+2. Upload the workbook to the desired storage location (if it is not already present).  
+
+### cURL Example
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
@@ -40,7 +55,8 @@ You can use the **cURL** command‑line tool to call Aspose.Cells web services. 
 
 ```bash
 curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/group?firstIndex=1&lastIndex=2&hide=true" \
-     -H "accept: application/json"
+     -H "accept: application/json" \
+     -H "Authorization: Bearer <access_token>"
 ```
 
 {{< /tab >}}
@@ -57,6 +73,24 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ce
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### Success Response
+
+| Field | Type   | Description                     |
+|-------|--------|---------------------------------|
+| Code  | integer| HTTP status code (200 for success). |
+| Status| string | Textual status of the operation (e.g., **OK**). |
+
+### Error Response
+
+When the request fails, the API returns additional fields describing the error.
+
+| Field        | Type   | Description                                            |
+|--------------|--------|--------------------------------------------------------|
+| Code         | integer| HTTP status code (e.g., 400, 401, 404, 500).          |
+| Status       | string | Textual status (e.g., **Error**).                     |
+| ErrorMessage | string | Human‑readable description of the problem.            |
+| ErrorCode    | string | Specific error identifier for programmatic handling.  |
 
 ## Cloud SDK Family
 
