@@ -5,31 +5,57 @@ ArticleTitle: "Aspose.Cells Cloud Docker Image Tags"
 linktitle: "Image Tags"
 type: docs
 url: /docker/tag-list/
-description: "Aspose.Cells Cloud Docker Container is a containerized service provided by Aspose that is based on Docker, allowing you to deploy the functionalities of the Aspose.Cells Cloud API in local or private cloud environments without relying on Aspose's public cloud services. The image tags are listed below."
+description: "Find the latest Aspose.Cells Cloud Docker image tags for Windows Server (2016‑2022) and Linux. Get pull commands, architecture details, and upgrade notes in one place."
 weight: 30
-kwords: Excel Cloud Docker Container, Self-Cloud Docker Container, REST Docker Container, Spreadsheet, PDF, CSV, Json, Markdown, Docker Image, Run Docker Container, TagList
+keywords:
+  - "Aspose.Cells Cloud Docker Image Tags"
+  - "Docker pull commands"
+  - "Windows Server Docker tags"
+  - "Linux Docker tags"
+  - "Aspose.Cells Cloud"
 ---
+
+Aspose.Cells Cloud provides ready‑to‑run Docker images for Windows Server (2016, 2019, 2022) and Linux.  
+Each image is versioned with a **tag** that identifies the product release and the target operating system.  
+Use the tags below to pull the exact image you need, and refer to the accompanying pull‑and‑run examples for quick start‑up.
 
 ## Windows Server 2016 Images ##
 
-Tags | Architecture | Dockerfile  | Remark
----|:--:|:--:|---:
-ltsc2016.23.5.0 | x64   | No Dockerfile | Stop the upgrade. The final version is 23.5.0
+Tags | Architecture | Dockerfile | Remark
+---|---|---|---
+✅ `ltsc2016.23.5.0` | x64 | Dockerfile not published – image is built from an internal base; see the release notes for build details. | No newer tag is planned for Windows Server 2016; this is the final released version.
+
+```bash
+docker pull aspose/cells:ltsc2016.23.5.0
+docker run -d --name cells-ws2016 -p 8080:80 aspose/cells:ltsc2016.23.5.0
+```
 
 ## Windows Server 2019 Images ##
 
-Tags | Architecture | Dockerfile  | Remark
----|:--:|:--:|---:
-ltsc2019.25.10.0 | x64   | No Dockerfile |
+Tags | Architecture | Dockerfile | Remark
+---|---|---|---
+✅ `ltsc2019.25.10.0` | x64 | Dockerfile not published – image is built from an internal base; see the release notes for build details. | —
+```bash
+docker pull aspose/cells:ltsc2019.25.10.0
+docker run -d --name cells-ws2019 -p 8080:80 aspose/cells:ltsc2019.25.10.0
+```
 
 ## Windows Server 2022 Images ##
 
-Tags | Architecture | Dockerfile  | Remark
----|:--:|:--:|---:
-ltsc2022.25.10.0 | x64   | No Dockerfile |
+Tags | Architecture | Dockerfile | Remark
+---|---|---|---
+✅ `ltsc2022.25.10.0` | x64 | Dockerfile not published – image is built from an internal base; see the release notes for build details. | —
+```bash
+docker pull aspose/cells:ltsc2022.25.10.0
+docker run -d --name cells-ws2022 -p 8080:80 aspose/cells:ltsc2022.25.10.0
+```
 
 ## Linux Images ##
 
-Tags | Architecture | Dockerfile  | Remark
----|:--:|:--:|---:
-linux.25.10.0 | x64   | No Dockerfile |
+Tags | Architecture | Dockerfile | Remark
+---|---|---|---
+✅ `linux.25.10.0` | x64 | Dockerfile not published – image is built from an internal base; see the release notes for build details. | —
+```bash
+docker pull aspose/cells:linux.25.10.0
+docker run -d --name cells-linux -p 8080:80 aspose/cells:linux.25.10.0
+```
