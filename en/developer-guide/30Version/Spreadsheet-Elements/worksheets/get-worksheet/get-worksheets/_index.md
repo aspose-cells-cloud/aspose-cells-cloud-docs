@@ -1,24 +1,32 @@
 ---
-title: "Get worksheets"
+title: "Get All Worksheets"
 second_title: "Document"
 linktitle: "All"
 type: docs
 url: /worksheets/get-all/
 aliases: [/get-worksheet-count/]
-keywords: "Aspose.Cells Cloud, REST API, Excel worksheets, worksheet list, SDK examples"
-description: "Learn how to retrieve worksheet information from an Excel workbook using the Aspose.Cells Cloud REST API. Includes request details, cURL example, and SDK code samples for multiple programming languages."
+keywords: "Aspose.Cells, Cloud API, Get Worksheets, Excel, REST, SDK"
+description: "Retrieve the list of worksheets in an Excel workbook via Aspose.Cells Cloud REST API (v3.0). Includes cURL example, SDK snippets, and response format."
 weight: 10
 ---
 
 This REST API returns information about the worksheets contained in a workbook.
 
+## Prerequisites
+
+Before calling the API, ensure you have:
+
+* A valid **JWT token** generated from your Aspose Cloud client‑id and client‑secret.  
+* The target workbook stored in your default Aspose Cloud storage (or specify `storageName`).  
+* API version **v3.0** (the current stable release).  
+
 ## REST API
 
 ```bash
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets
 ```
 
-The request parameters are:
+The request parameters are listed below:
 
 | Parameter Name | Type   | Location | Description                              |
 |----------------|--------|----------|------------------------------------------|
@@ -28,18 +36,18 @@ The request parameters are:
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheets) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells Cloud services. The example below demonstrates a GET request to retrieve the worksheets.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
@@ -64,7 +72,7 @@ curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets" \
       }
     ],
     "link": {
-      "Href": "http://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets",
+      "Href": "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets",
       "Rel": "self"
     }
   },
@@ -76,6 +84,26 @@ curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets" \
 {{< /tab >}}
 
 {{< /tabs >}}
+
+## Error Handling
+
+Typical HTTP status codes returned by this endpoint:
+
+| Code | Meaning                     | Description                                          |
+|------|-----------------------------|------------------------------------------------------|
+| 400  | Bad Request                 | Missing required parameter (e.g., `name`).          |
+| 401  | Unauthorized                | Invalid or missing JWT token.                        |
+| 404  | Not Found                   | Specified workbook does not exist.                   |
+| 500  | Internal Server Error       | Unexpected server condition.                         |
+
+Error responses are returned in JSON format, for example:
+
+```json
+{
+  "Code": "401",
+  "Message": "Invalid access token."
+}
+```
 
 ## Cloud SDK Family
 
