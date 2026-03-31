@@ -1,11 +1,11 @@
 ---
-title: "Trim content: Fix Excel Spaces & Line Breaks"
+title: "Aspose.Cells Trim Content API – Remove Spaces & Line Breaks from Excel"
 second_title: "Document"
 linktitle: "Trim Content"
 type: docs
 url: /spreadsheet-trim-content/
-keywords: "Excel, PostTrimContent, Trim Content, Aspose.Cells Cloud, REST API, Spreadsheet Data Cleaning"
-description: "The PostTrimContent API trims extra spaces, line breaks, and other unnecessary characters from cells within a specified range in an Excel worksheet, helping to clean and standardize spreadsheet data."
+keywords: "Aspose.Cells, Trim Content API, Excel clean data, remove spaces Excel, line break removal, spreadsheet data cleaning"
+description: "Use Aspose.Cells Cloud PostTrimContent API to automatically clean extra spaces, line breaks, and unwanted characters from Excel cells. Learn the endpoint, request format, sample code, and error handling."
 weight: 100
 ---
 
@@ -18,7 +18,26 @@ The **PostTrimContent** API processes and trims content within a specified range
 ### **Endpoint**
 
 ```
-POST http://api.aspose.cloud/v3.0/cells/trimcontent
+POST https://api.aspose.cloud/v3.0/cells/trimcontent
+```
+
+**Authentication** – Include a valid Aspose Cloud access token in the request header:
+
+```
+Authorization: Bearer <your_access_token>
+```
+
+### **Sample Request Body**
+
+```json
+{
+  "trimContentOptions": {
+    "range": "A1:C10",
+    "trimMode": "All",          // Options: All, Leading, Trailing
+    "ignoreCase": false,
+    "preserveFormula": true
+  }
+}
 ```
 
 ### **Function Description**
@@ -38,11 +57,20 @@ POST http://api.aspose.cloud/v3.0/cells/trimcontent
 
 ```json
 {
-  "Filename": "xxxxxx.pdf",
-  "FileSize": xxxx,
-  "FileContent": "File Content: base64_encoded_string"
+  "Filename": "sample.xlsx",
+  "FileSize": 123456,
+  "FileContent": "base64_encoded_string"
 }
 ```
+
+### **Error Handling**
+
+| HTTP Status | Code | Description |
+|-------------|------|-------------|
+| 400 | BadRequest | Invalid request parameters or malformed JSON. |
+| 401 | Unauthorized | Missing or invalid authentication token. |
+| 404 | NotFound | Specified workbook or range not found. |
+| 500 | InternalServerError | Unexpected server error. |
 
 ## OpenAPI Specification
 
@@ -80,3 +108,5 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_PostTrimContent.go" >}}
 {{</ tab>}}
 {{< /tabs >}}
+
+_Last updated: 2026-03-30_
