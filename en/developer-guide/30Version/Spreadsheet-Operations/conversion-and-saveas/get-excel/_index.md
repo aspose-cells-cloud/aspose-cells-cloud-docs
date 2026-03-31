@@ -1,38 +1,49 @@
 ---
-title: "Get Excel file to other formats"
+title: "Aspose.Cells Cloud – Convert Excel Workbook to PDF, CSV, HTML, and More (GET /cells/{name})"
 second_title: "Document"
-linktitle: "Get Excel"
+linktitle: "Convert Excel"
 type: docs
 url: /get-different-formats-files/
 aliases:
   - /export-excel-workbook-to-different-file-formats/
   - /export-different-formats/
-keywords: "Aspose.Cells, Excel conversion, CSV, PDF, HTML, ODS, JSON, image formats, spreadsheet export"
-description: "Aspose.Cells Cloud REST API enables converting Excel workbooks to a wide range of formats such as CSV, PDF, HTML, ODS, JSON, and various image types. SDKs are available for many programming languages, including Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift."
+keywords: "Aspose.Cells, Excel conversion, convert Excel, PDF, CSV, HTML, ODS, JSON, image formats, spreadsheet export"
+description: "Learn how to retrieve an Excel workbook in any format (PDF, CSV, HTML, PNG, etc.) using Aspose.Cells Cloud REST API. Includes cURL, SDK samples, authentication, and response details."
 weight: 10
 ---
 
-This REST API retrieves an Excel workbook in a different format.
+This REST API retrieves an Excel workbook in a different format.  
+
+**Version:** v3.0 | **Last Updated:** 2024‑11‑01  
 
 **Query Parameters**
 
-| Parameter Name            | Type   | Description                                                                                                                                                     |
-|---------------------------|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| format                    | string | Target file format (e.g., CSV, XLS, HTML, MHTML, ODS, PDF, XML, TXT, TIFF, XLSB, XLSM, XLSX, XLTM, XLTX, XPS, PNG, JPG, GIF, EMF, BMP, MD, Numbers, WMF, SVG, etc.). |
-| password                  | string | Password required to open the Excel file.                                                                                                                       |
-| isAutoFit                 | bool   | Automatically fits rows and columns width. Default is **false**.                                                                                               |
-| onlySaveTable             | bool   | When **true**, only table data is saved. Accepts `true` or `false`.                                                                                             |
-| outPath                   | string | Path to save the result. For a single file, include the filename and extension; for multiple files, specify only the folder.                                   |
-| outStorageName            | string | Name of the storage where the output file will be saved.                                                                                                        |
-| checkExcelRestriction     | bool   | Checks Excel restrictions when modifying cells or related objects.                                                                                              |
-| region                    | string | Regional settings applied to the workbook.                                                                                                                      |
-| pageWideFitOnPerSheet     | bool   | Fits the page width to each worksheet when converting to PDF.                                                                                                   |
-| pageTallFitOnPerSheet     | bool   | Fits the page height to each worksheet when converting to PDF.                                                                                                  |
-| onePagePerSheet           | bool   | Generates one PDF page per worksheet.                                                                                                                            |
-| folder                    | string | Folder path of the original workbook.                                                                                                                            |
-| storageName               | string | Name of the storage where the source file is located.                                                                                                            |
+| Parameter Name            | Type   | Description                                                                                                                                                     | Default |
+|---------------------------|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|
+| format                    | string | Target file format (e.g., CSV, XLS, HTML, MHTML, ODS, PDF, XML, TXT, TIFF, XLSB, XLSM, XLSX, XLTM, XLTX, XPS, PNG, JPG, GIF, EMF, BMP, MD, Numbers, WMF, SVG, etc.). | – |
+| password                  | string | Password required to open the Excel file.                                                                                                                       | – |
+| isAutoFit                 | bool   | Automatically fits rows and columns width.                                                                                                                      | false |
+| onlySaveTable             | bool   | When **true**, only table data is saved. Accepts `true` or `false`.                                                                                             | false |
+| outPath                   | string | Path to save the result. For a single file, include the filename and extension; for multiple files, specify only the folder.                                   | – |
+| outStorageName            | string | Name of the storage where the output file will be saved.                                                                                                        | – |
+| checkExcelRestriction     | bool   | Checks Excel restrictions when modifying cells or related objects.                                                                                              | false |
+| region                    | string | Regional settings applied to the workbook.                                                                                                                      | – |
+| pageWideFitOnPerSheet     | bool   | Fits the page width to each worksheet when converting to PDF.                                                                                                   | false |
+| pageTallFitOnPerSheet     | bool   | Fits the page height to each worksheet when converting to PDF.                                                                                                  | false |
+| onePagePerSheet           | bool   | Generates one PDF page per worksheet.                                                                                                                            | false |
+| folder                    | string | Folder path of the original workbook.                                                                                                                            | – |
+| storageName               | string | Name of the storage where the source file is located.                                                                                                            | – |
 
 ## REST API
+
+**Authentication**  
+All requests must include a valid OAuth 2.0 access token. Obtain a token by calling the `/connect/token` endpoint with your client ID and secret, then add the header:
+
+```http
+Authorization: Bearer <access_token>
+```
+
+**Endpoint**
 
 | API               | Type | Description                     | Swagger Link |
 |-------------------|------|---------------------------------|--------------|
@@ -40,14 +51,23 @@ This REST API retrieves an Excel workbook in a different format.
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
-You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL.
+### Quick‑Start (Step‑by‑Step)
+
+1. **Obtain an access token** – Follow the authentication steps above.  
+2. **Make the request** – Use the example request below, replacing `<access_token>` and file name as needed.  
+3. **Save or stream the result** – The API returns the converted file as a binary stream (e.g., PDF).  
+
+### Example Request
+
+You can use the **cURL** command‑line tool to access Aspose.Cells web services. The following example shows a correct GET request with the required authorization header.
 
 {{< tabs tabTotal="1" tabID="11" tabName11="Request" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -X PUT "https://api.aspose.cloud/v3.0/cells/book1.xlsx?format=pdf" \
+curl -X GET "https://api.aspose.cloud/v3.0/cells/book1.xlsx?format=pdf" \
+     -H "Authorization: Bearer <access_token>" \
      -H "accept: multipart/form-data" \
      -H "Content-Type: multipart/form-data" \
      -H "x-aspose-client: Containerize.Swagger"
@@ -56,6 +76,30 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/book1.xlsx?format=pdf" \
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### Sample Response
+
+**Success (200)** – The API returns the converted file in the requested format.
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/pdf
+Content-Disposition: attachment; filename="book1.pdf"
+Content-Length: 123456
+
+(binary PDF data)
+```
+
+**Error (4xx/5xx)** – Example of a JSON error object when the source file is not found.
+
+```json
+{
+  "error": {
+    "code": "FileNotFound",
+    "message": "The file 'book1.xlsx' does not exist."
+  }
+}
+```
 
 ## Cloud SDK Family
 
@@ -114,3 +158,8 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**See Also**
+
+- [Convert Workbook (POST)](https://apireference.aspose.cloud/cells/#/Workbook/ConvertWorkbook)  
+- [Save As (GET)](https://apireference.aspose.cloud/cells/#/Workbook/SaveAs)  
