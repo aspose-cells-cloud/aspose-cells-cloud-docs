@@ -1,22 +1,22 @@
 ---
-title: "Aspose.Cells Cloud Web API - Add, Subtract, Multiply, Divide, and Percentage on a range of Spreadsheet/Excel"
+title: "Aspose.Cells Cloud – Math Calculate API (Add, Subtract, Multiply, Divide, %)"
 second_title: "Document"
-ArticleTitle: "Add, Subtract, Multiply, Divide and Percentage in Spreadsheet/Excel"
+ArticleTitle: "Add, Subtract, Multiply, Divide, and Percentage in Spreadsheets/Excel"
 linktitle: "Math Calculate"
 type: docs
 url: /math-calculate/
-keywords: "Math calculation,Cloud REST API, Add, Minus, Multiply, Divide, Percentage, Office Cloud, Aspose.Cells"
-description: "Comprehensive guide for using the Math Calculate API to perform calculations in Excel spreadsheets."
+keywords: "Math Calculate API, Aspose.Cells Cloud, Excel calculations, Add, Subtract, Multiply, Divide, Percentage, Bulk Excel processing, REST API"
+description: "Learn how to use Aspose.Cells Cloud Math Calculate API to bulk‑apply add, subtract, multiply, divide or percentage operations on Excel ranges. Includes request format, sample code and error handling."
 weight: 100
 ---
 
-## **Introduction**: Spreadsheet Quick Calculate -  Add, Multiply, Subtract, Divide & Percent Formulas in One running API  
+## **Introduction**: Spreadsheet Quick Calculate – Add, Multiply, Subtract, Divide & Percent Formulas in One Running API  
 
 *Boost productivity with bulk calculations across entire columns, rows, or tables without writing a single formula.*
 
 - **Basic math**: add, subtract, multiply or divide every cell in a range by any number  
-- **Percentages**: increase/decrease by %, or find % of a number (e.g. +15%, -8%, 20% of...)  
-- **Bulk**: apply to thousands of cells instantly—no drag-fill, no array formula, no VBA  
+- **Percentages**: increase/decrease by %, or find % of a number (e.g. +15%, -8%, 20% of…)  
+- **Bulk**: apply to thousands of cells instantly—no drag‑fill, no array formula, no VBA  
 
 | **Calculate Operation** | Description |
 | :- | :- |
@@ -29,7 +29,7 @@ weight: 100
 ## **Math Calculate API**
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/calculate/math
+PUT https://api.aspose.cloud/v4.0/cells/calculate/math
 ```
 
 ### **Request Parameters:**
@@ -37,7 +37,7 @@ PUT http://api.aspose.cloud/v4.0/cells/calculate/math
 | Parameter Name | Type | Path/Query String/HTTP Body | Description |
 | :- | :- | :- |:- |
 | Spreadsheet | File | FormData | Upload the spreadsheet file for processing. |
-| operation | String | Query | The mathematical operation to perform (Add, Minus, Multiply, Divide, and Percentage). |
+| operation | String | Query | The mathematical operation to perform (Add, Subtract, Multiply, Divide, and Percentage). |
 | value | String | Query | A value to use in the calculation, if applicable. |
 | worksheet | String | Query | The name of the worksheet to operate on. |
 | range | String | Query | The range of cells to include in the calculation. |
@@ -51,9 +51,9 @@ PUT http://api.aspose.cloud/v4.0/cells/calculate/math
     {
         "Name": "ResponseFile",
         "DataType": {
-        "Identifier": "File",
-        "Reference": "Stream",
-        "Name": "file"
+            "Identifier": "File",
+            "Reference": "Stream",
+            "Name": "file"
         }
     }
 ]
@@ -61,27 +61,27 @@ PUT http://api.aspose.cloud/v4.0/cells/calculate/math
 
 ### Error Codes
 
-- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized**: Invalid access token. Or invalid client id and secret.
-- **404 Not Found**: The spreadsheet file not accessible.
-- **500 Server Error**: The spreadsheet encountered an issue retrieving calculation data.
+- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.  
+- **401 Unauthorized**: Invalid access token, or invalid client ID and secret.  
+- **404 Not Found**: The spreadsheet file is not accessible.  
+- **500 Server Error**: The spreadsheet encountered an issue retrieving calculation data.  
 
 ## Where should we use the Math Calculate API?
 
-- Finance: add 13% VAT to an entire column of purchase prices.
-- Inventory: multiply kg column by 2.2046 to bulk-convert to pounds.
-- Payroll: add a flat bonus of 1,000 to the bonus column for all staff.
-- FX conversion: divide sales column by live exchange rate to get USD amounts.
-- Grading: subtract 5 points from every student score for attendance penalty.
-- E-commerce: apply a 15% promotional discount by reducing product prices in one click.
+- Finance: add 13% VAT to an entire column of purchase prices.  
+- Inventory: multiply kg column by 2.2046 to bulk‑convert to pounds.  
+- Payroll: add a flat bonus of 1,000 to the bonus column for all staff.  
+- FX conversion: divide sales column by live exchange rate to get USD amounts.  
+- Grading: subtract 5 points from every student score for attendance penalty.  
+- E‑commerce: apply a 15% promotional discount by reducing product prices in one click.  
 
 ## Why should you use the Math Calculate API?
 
-- **Fast Excel calculations** - finish month-end reports in seconds.-
-- **Bulk percentage increase Excel** - update prices, forecasts, commissions in one click.
-- **Add same number to entire column** - inventory, currency conversion, unit conversion.
-- **Excel without formulas** - non-technical users love the simplicity.
-- Development can be quickly completed through the existing SDK.
+- **Fast Excel calculations** – finish month‑end reports in seconds.  
+- **Bulk percentage increase Excel** – update prices, forecasts, commissions in one click.  
+- **Add same number to entire column** – inventory, currency conversion, unit conversion.  
+- **Excel without formulas** – non‑technical users love the simplicity.  
+- Development can be quickly completed through the existing SDK.  
 
 ## How to Use the Math Calculate API with SDKs
 
@@ -91,7 +91,7 @@ The [Math Calculate Specification](https://reference.aspose.cloud/cells/#/Calcul
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the fastest way to develop, as it abstracts away the low-level details, allowing you to math calculations by cell with just a short code.
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to perform math calculations by cell with just a short code.  
 Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
