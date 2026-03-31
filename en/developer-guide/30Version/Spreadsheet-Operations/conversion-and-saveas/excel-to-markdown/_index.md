@@ -1,35 +1,63 @@
----
-title: "Excel to Markdown"
-second_title: "Document"
-linktitle: "Excel to Markdown"
-type: docs
-url: /convert-excel-file-to-markdown-file/
-keywords: "Excel, Markdown, conversion, Aspose.Cells Cloud, REST API"
-description: "Convert Excel spreadsheets to Markdown format using Aspose.Cells Cloud REST API. Supports multiple programming languages and SDKs."
-weight: 100
----
+---  
+title: "Convert Excel to Markdown"  
+second_title: "Document"  
+linktitle: "Excel to Markdown"  
+type: docs  
+url: /convert-excel-file-to-markdown-file/  
+keywords: "Excel, Markdown, conversion, Aspose.Cells Cloud, REST API, excel to markdown conversion, aspose cells markdown api, excel markdown export"  
+description: "Learn how to convert Excel worksheets to Markdown using Aspose.Cells Cloud REST API. Includes curl example, SDK snippets, required parameters and authentication."  
+weight: 100  
+---  
 
-This REST API converts a spreadsheet file to a Markdown‑format file.
+This REST API converts a spreadsheet file to a Markdown-format file.
 
-**Query Parameters**
+### Prerequisites  
 
-| Parameter Name          | Type   | Description                                              |
-|-------------------------|--------|----------------------------------------------------------|
-| password                | string | Password required to open the Excel file.               |
-| storageName             | string | Name of the storage where the file is located.           |
-| checkExcelRestriction   | bool   | Indicates whether to enforce Excel‑specific restrictions when modifying cells or related objects. |
+- A valid Aspose Cloud account with an API key.  
+- OAuth 2.0 access token (see **Authentication** below).
 
-**Request Body Parameter**
+### Authentication  
 
-| Parameter Name | Type | Description |
-|----------------|------|-------------|
-| datafile       | file | The Excel file to be uploaded as the first part of the multipart content. |
+All requests must include an `Authorization` header with a bearer token:
 
-**Response**
+```http
+Authorization: Bearer <access_token>
+```
 
-[FileInfo](/cells/file-info/)
+Obtain the token from the Aspose Cloud OAuth endpoint using your client ID and secret.
 
-## REST API Specification
+### Parameters  
+
+| Parameter Name | Type   | Location | Description                                                                 |
+|----------------|--------|----------|-----------------------------------------------------------------------------|
+| password       | string | query    | Password required to open the Excel file.                                   |
+| storageName    | string | query    | Name of the storage where the file is located.                               |
+| checkExcelRestriction | bool   | query    | Indicates whether to enforce Excel‑specific restrictions when modifying cells or related objects. |
+| datafile       | file   | body     | The Excel file to be uploaded as the first part of the multipart content.   |
+
+### Response  
+
+The API returns a JSON object of type **FileInfo**:
+
+- **FileInfo** – object containing the name, size, and base‑64‑encoded content of the generated Markdown file.  
+
+```json
+{
+  "Filename": "example.md",
+  "FileSize": 12345,
+  "FileContent": "base64_encoded_string"
+}
+```
+
+### Error Responses  
+
+| HTTP Code | Description                               | Example JSON Body |
+|----------|-------------------------------------------|-------------------|
+| 401      | Unauthorized – missing or invalid token. | `{"error":"Invalid access token."}` |
+| 400      | Bad Request – missing required parameters or invalid file format. | `{"error":"The 'datafile' field is required."}` |
+| 500      | Internal Server Error – unexpected server problem. | `{"error":"An unexpected error occurred."}` |
+
+## REST API Specification  
 
 | API                         | Type | Description                              | Swagger Link |
 |-----------------------------|------|------------------------------------------|--------------|
@@ -43,11 +71,11 @@ You can use the **cURL** command‑line tool to access Aspose.Cells web services
 
 {{< tab tabNum="11" >}}
 
-```bash
+```shell
 curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/markdown" \
      -H "accept: multipart/form-data" \
      -H "Content-Type: multipart/form-data" \
-     -H "x-aspose-client: curl" \
+     -H "Authorization: Bearer <access_token>" \
      -F "File=@your_excel_file.xlsx"
 ```
 
@@ -59,7 +87,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/markdown" \
 {
   "Filename": "example.md",
   "FileSize": 12345,
-  "FileContent": "File Content: base64_encoded_string"
+  "FileContent": "base64_encoded_string"
 }
 ```
 
@@ -67,7 +95,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/markdown" \
 
 {{< /tabs >}}
 
-## Cloud SDK Family
+## Cloud SDK Family  
 
 Using an SDK is the fastest way to develop. An SDK handles low‑level details so you can focus on your business logic. See the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
@@ -125,8 +153,8 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 
 {{< /tabs >}}
 
-## Other APIs that Implement This Function
+## Other APIs that Implement This Function  
 
-- **[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)** – Saves an Excel file as HTML with additional settings and stores the result.
-- **[PUT /cells/convert](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)** – Converts an Excel file to HTML with extra options and returns the result in the response.
-- **[GET /cells/{name}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)** – Retrieves an Excel file and can convert it to HTML with optional settings.
+- **[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)** – Saves an Excel file as HTML with additional settings and stores the result.  
+- **[PUT /cells/convert](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)** – Converts an Excel file to HTML with extra options and returns the result in the response.  
+- **[GET /cells/{name}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)** – Retrieves an Excel file and can convert it to HTML with optional settings.  
