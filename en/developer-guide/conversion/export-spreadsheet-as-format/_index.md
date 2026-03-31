@@ -1,39 +1,40 @@
 ---
 title: "Aspose.Cells Cloud Web API - Export Remote Excel Worksheet to other formats - Free Online Tool"
 second_title: "Document"
-ArticleTitle: "How to Export the Remote Spreadsheet Worksheet to other formats: Step-by-Step Guide"
+ArticleTitle: "How to Export the Remote Spreadsheet Worksheet to other formats: Step‑Step Guide"
 linktitle: "Export Spreadsheet as Format"
 type: docs
 url: /export-spreadsheet-as-format/
-keywords: "Export spreadsheet, Aspose.Cells Cloud Web API, Convert spreadsheet, Spreadsheet formats, XLSX, PDF, CSV, JSON, Markdown"
-description: "Efficiently converts spreadsheets stored in cloud storage to various formats like XLSX, PDF, and CSV."
+keywords: "Aspose.Cells, spreadsheet conversion, API, export, PDF, CSV, JSON, XLSX"
+description: "Convert Excel workbooks stored in Aspose Cloud to PDF, XLSX, CSV, JSON, or HTML via a single REST endpoint. Learn request syntax, parameters, and see SDK examples in C#, Java, Python, and more."
 weight: 100
-kwords: "Excel, Office Cloud, REST, Spreadsheet conversion, PDF, CSV, JSON, Markdown"
 ---
 
-Export a cloud spreadsheet/Excel to another format file.
+Export a cloud spreadsheet (Excel) to another file format.
 
 ## **Export Spreadsheet as Format API**
+
+All requests must be made over **HTTPS** to protect credentials.
 
 ### API Endpoint
 
 ```http
-GET http://api.aspose.cloud/v4.0/cells/{name}
+GET https://api.aspose.cloud/v4.0/cells/{name}?format={format}&folder={folder}&storageName={storageName}&outPath={outPath}&outStorageName={outStorageName}&fontsLocation={fontsLocation}&region={region}&password={password}
 ```
 
 ### **Request Parameters:**
 
-| Parameter Name | Type   | Path/Query String/HTTP Body | Description                                                                                       |
-| :------------- | :----- | :-------------------------- | :------------------------------------------------------------------------------------------------ |
-| name           | String | Path                        | (Required) The name of the workbook file to be retrieved.                                         |
-| format         | String | Query                       | (Required) The desired output format (e.g., "Xlsx", "PDF", "CSV").                                |
-| folder         | String | Query                       | (Optional) The folder path where the workbook is stored. The default is null.                     |
-| storageName    | String | Query                       | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted. |
-| outPath        | String | Query                       | (Optional) The folder path where the workbook will be stored. The default is null.                |
-| outStorageName | String | Query                       | Output file Storage Name.                                                                         |
-| fontsLocation  | String | Query                       | Use custom fonts.                                                                                 |
-| region         | String | Query                       | The spreadsheet region setting.                                                                   |
-| password       | String | Query                       | The password for opening the spreadsheet file.                                                    |
+| Parameter Name | Type   | Path/Query String/HTTP Body | Description |
+| :------------- | :----- | :-------------------------- | :---------- |
+| name | String | Path | (Required) The name of the workbook file to be retrieved. |
+| format | String | Query | (Required) The desired output format (e.g., “Xlsx”, “PDF”, “CSV”). |
+| folder | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| storageName | String | Query | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted. |
+| outPath | String | Query | (Optional) The folder path where the workbook will be stored. The default is null. |
+| outStorageName | String | Query | (Optional) Output file storage name. |
+| fontsLocation | String | Query | (Optional) Custom fonts location. |
+| region | String | Query | (Optional) The spreadsheet region setting. |
+| password | String | Query | (Optional) The password for opening the spreadsheet file. |
 
 ### **Response**
 
@@ -49,29 +50,31 @@ GET http://api.aspose.cloud/v4.0/cells/{name}
 ]
 ```
 
+The response contains a single object that represents the converted file stream.
+
 ### Error Codes
 
-- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized**: Invalid access token. Or invalid client id and secret.
-- **404 Not Found**: The spreadsheet file not accessible.
-- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
+- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.  
+- **401 Unauthorized** – Invalid access token, or invalid client ID and secret.  
+- **404 Not Found** – The spreadsheet file is not accessible.  
+- **500 Server Error** – The spreadsheet encountered an anomaly while obtaining calculation data.
 
 ## Where should you use the Export Spreadsheet as another format API?
 
-- **Legacy System Migration**: Convert thousands of legacy XLS files to XLSX for modern systems.
-- **Archive Standardization**: Normalize various spreadsheet formats (XLS, XLSM, ODS, CSV) to a single format for archival.
-- **Office Suite Interoperability**: Convert Excel files to formats compatible with LibreOffice, Google Sheets, or Apple Numbers.
-- **Data Source Normalization**: Convert various spreadsheet formats to CSV or JSON for database ingestion.
+- **Legacy System Migration**: Convert thousands of legacy XLS files to XLSX for modern systems.  
+- **Archive Standardization**: Normalize various spreadsheet formats (XLS, XLSM, ODS, CSV) to a single format for archival.  
+- **Office Suite Interoperability**: Convert Excel files to formats compatible with LibreOffice, Google Sheets, or Apple Numbers.  
+- **Data Source Normalization**: Convert various spreadsheet formats to CSV or JSON for database ingestion.  
 - **Web Publishing**: Convert financial models to HTML for web display.
 
 ## Why should you use the Export Spreadsheet as another format API?
 
-- **Developer-Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared to building custom chart rendering solutions, this significantly reduces the development workload.
-- **Reduced Labor Costs**: Reduced the need for positions dedicated to document consolidation.
-- **Pay-per-use**: No upfront investment, only pay for API calls actually used.
-- **Zero Maintenance Costs**: No need to maintain servers, update software, or deal with compatibility issues.
-- **Comprehensive Format Support**: Convert between 20+ spreadsheet formats.
-- **Preserve Data Fidelity & Formatting**
+- **Developer‑Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared with building custom chart‑rendering solutions, this significantly reduces the development workload.  
+- **Reduced Labor Costs**: Reduces the need for positions dedicated to document consolidation.  
+- **Pay‑per‑use**: No upfront investment; you only pay for API calls actually used.  
+- **Zero Maintenance Costs**: No need to maintain servers, update software, or deal with compatibility issues.  
+- **Comprehensive Format Support**: Convert between 20+ spreadsheet formats.  
+- **Preserve Data Fidelity & Formatting**: Maintains the original layout, formulas, and styling during conversion.
 
 ## How to Use the Export Spreadsheet as Format API with SDKs?
 
@@ -81,7 +84,9 @@ The [Export Spreadsheet as Format API Specification](https://reference.aspose.cl
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the fastest way to develop, as it abstracts away the low-level details, allowing you to export a spreadsheet to a format file with short code.
+Using an SDK is the fastest way to develop, as it abstracts away low‑level details, allowing you to export a spreadsheet to a format file with short code.  
+Before calling the API, obtain an OAuth 2.0 access token and include it in the `Authorization: Bearer <token>` header.
+
 Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples illustrate how to interact with Aspose.Cells web services via various SDKs:
