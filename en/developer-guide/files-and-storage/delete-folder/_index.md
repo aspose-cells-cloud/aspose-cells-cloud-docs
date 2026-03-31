@@ -1,50 +1,68 @@
 ---
-title: "Aspose.Cells Cloud Delete Folder API - An interface for fast deletion of folders in the cloud"
-second_title: "Document"
-ArticleTitle: "Cloud-based Excel File Efficient Management Solution - An interface for fast deletion of folders in the cloud."
+title: "Delete Folder – Aspose.Cells Cloud API | Remove Folders via REST"
+ArticleTitle: "Delete Folder – Aspose.Cells Cloud API"
 linktitle: "Delete Folder"
 type: docs
 url: /delete-folder/
-keywords: "Delete folder, Aspose.Cells API, RESTful API, Excel file management, cloud storage"
-description: "Learn how to delete a folder in Aspose.Cells using the deleteFolder API, including parameters and code examples."
+keywords: "Aspose.Cells delete folder, cloud storage, REST API, Excel file management, recursive delete"
+description: "Learn how to delete a folder (optionally recursively) from Aspose.Cells Cloud storage using the DELETE /v4.0/cells/storage/folder/{path} endpoint. Includes request syntax, parameters, sample code, and error handling."
 weight: 100
 ---
 
 ## **Excel API : Delete Folder**
 
+### Prerequisites
+- **Authentication** – Obtain an OAuth 2.0 access token (JWT) and include it in the `Authorization: Bearer <token>` header.  
+- **SDK version** – Use Aspose.Cells Cloud SDK v4.0 or later.  
+- **Supported storages** – Any storage configured in your Aspose Cloud account (e.g., Aspose Cloud Storage, Amazon S3, Azure Blob).
+
 ### API Endpoint
-
+```http
+DELETE https://api.aspose.cloud/v4.0/cells/storage/folder/{path}
 ```
-DELETE http://api.aspose.cloud/v4.0/cells/storage/folder/{path}
+
+### Function Description
+The `deleteFolder` API removes a specified folder from Aspose.Cells Cloud storage. It can delete the folder alone or, when the `recursive` flag is set to `true`, remove the folder together with all of its contents.
+
+### Request Parameters
+The request parameters of the **deleteFolder** API are:
+
+| Parameter Name | Type   | Location                     | Description                                                   |
+|----------------|--------|------------------------------|---------------------------------------------------------------|
+| path           | String | Path                         | The path of the folder to be deleted.                         |
+| storageName    | String | Query                        | The name of the storage that contains the folder.            |
+| recursive      | Boolean| Query                        | Set to `true` to delete the folder and all of its contents. |
+
+### Request Example
+```http
+DELETE https://api.aspose.cloud/v4.0/cells/storage/folder/MyFolder
+Authorization: Bearer {access_token}
+Accept: application/json
 ```
+*To delete recursively, add `?recursive=true` to the URL.*
 
-### **Function Description**
-
-The `deleteFolder` API allows users to remove a specified folder from the cloud storage associated with Aspose.Cells. This can be useful for maintaining organization and managing storage effectively.
-
-### The request parameters of **deleteFolder** API are
-
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-| :- | :- | :- |:- |
-| path | String | Path | The path of the folder to be deleted. |
-| storageName | String | Query | The name of the storage where the folder is located. |
-| recursive | Boolean | Query | Indicates if the deletion should be recursive, removing all contents within the folder as well. |
-
-### **Response Description**
+### Response Example
+A successful call returns **HTTP 200 OK** with an empty body:
 
 ```json
-{
-Void
-}
+{}
 ```
 
-## OpenAPI Specification
-
+### OpenAPI Specification
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/FolderController/DeleteFolder) defines a publicly accessible programming interface and allows you to perform REST interactions directly from a web browser.
+
+### Error Handling
+| HTTP Status | Description                                   |
+|-------------|-----------------------------------------------|
+| 400         | Bad request – missing or invalid parameters. |
+| 401         | Unauthorized – authentication token required or invalid. |
+| 404         | Not found – the specified folder does not exist. |
+| 409         | Conflict – folder cannot be deleted because it contains items and `recursive` is not set. |
+| 500         | Internal server error – unexpected condition on the server. |
 
 ## Excel API SDK
 
-Using an SDK is the best way to speed up development. An SDK handles low-level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK handles low‑level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 
