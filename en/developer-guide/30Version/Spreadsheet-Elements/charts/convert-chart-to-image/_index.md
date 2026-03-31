@@ -1,31 +1,39 @@
 ---
-title: "Convert Chart to Image"
+title: "Convert Excel Chart to Image – Aspose.Cells Cloud REST API"
 type: docs
 url: /charts/to-image/
 aliases: [/convert-charts-to-image/]
 weight: 50
-keywords: chart, image, conversion, Aspose.Cells, REST API, Excel, Cloud SDK
-description: "Learn how to use Aspose.Cells Cloud REST API to convert Excel chart objects to image files, with request details, cURL example, and SDK code samples."
+keywords: "Aspose.Cells Cloud, chart to image, Excel chart conversion, REST API, image format, PNG, JPEG, BMP"
+description: "Learn how to convert Excel chart objects to PNG, JPEG, or BMP images using Aspose.Cells Cloud REST API. Includes endpoint, parameters, cURL example, SDK snippets, response handling, and error handling."
 ---
 
-This REST API demonstrates how to convert a chart to an image.
+This REST API demonstrates how to convert an **Excel chart** to an image using **Aspose.Cells Cloud**.
+
+## Prerequisites
+
+- **Authentication** – Obtain an OAuth 2.0 JWT token by posting your client ID and client secret to `https://api.aspose.cloud/connect/token`. The response contains an `access_token` that must be supplied in the `Authorization: Bearer <token>` header of every request.  
+- **SDKs (optional)** – Install the Aspose.Cells Cloud SDK for your preferred language (C#, Java, Python, etc.) if you prefer using SDKs instead of raw HTTP calls.  
+- **API version** – The examples below use version **v3.0**. Replace `v3.0` with the current version (e.g., `v4.0`) if a newer API is available.
 
 ## REST API
 
 ```bash
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartNumber}?format={format}
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartNumber}?format={format}
 ```
 
-The request parameters are:
+Supported image formats include `png`, `jpeg`, `bmp`, `tiff`, and `gif`.
 
-| Parameter Name | Type    | Location                     | Description                              |
-|----------------|---------|------------------------------|------------------------------------------|
-| name           | string  | path                         | Document name.                           |
-| sheetName      | string  | path                         | Worksheet name.                          |
-| chartNumber    | integer | path                         | The chart number.                        |
-| format         | string  | query                        | The exported file format.                |
-| folder         | string  | query                        | The document folder.                     |
-| storageName    | string  | query                        | Storage name.                            |
+### Parameters
+
+| Parameter Name | Type    | Location | Description               |
+|----------------|---------|----------|---------------------------|
+| name           | string  | path     | Document name.            |
+| sheetName      | string  | path     | Worksheet name.           |
+| chartNumber    | integer | path     | The chart number.         |
+| format         | string  | query    | The exported file format. |
+| folder         | string  | query    | The document folder.      |
+| storageName    | string  | query    | Storage name.             |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/GetWorksheetChart) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -36,24 +44,43 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0?format=jpg" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0?format=jpg" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <your_jwt_token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```bash
+```text
 byte[]
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### Response
+
+The API returns the image as a binary stream. The `Content-Type` header reflects the requested format (e.g., `image/jpeg` for `format=jpg`). In most languages you can write the returned byte array directly to a file:
+
+```csharp
+// C# example
+byte[] imageBytes = response;
+System.IO.File.WriteAllBytes("chart.jpg", imageBytes);
+```
+
+### Error Handling
+
+| HTTP Status | Meaning                     | Example JSON Body |
+|-------------|----------------------------|-------------------|
+| 400         | Bad Request – invalid parameters | `{ "error": { "code": "InvalidParameter", "message": "The 'format' value is not supported." } }` |
+| 401         | Unauthorized – missing/invalid JWT token | `{ "error": { "code": "InvalidToken", "message": "Authorization token is missing or invalid." } }` |
+| 404         | Not Found – workbook, worksheet, or chart not found | `{ "error": { "code": "ResourceNotFound", "message": "Specified chart does not exist." } }` |
+| 500         | Internal Server Error – unexpected server condition | `{ "error": { "code": "ServerError", "message": "An unexpected error occurred." } }` |
 
 ## Cloud SDK Family
 
@@ -100,6 +127,8 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
+
+Example coming soon.
 
 {{< /tab >}}
 
