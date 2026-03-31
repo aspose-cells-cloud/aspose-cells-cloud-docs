@@ -1,12 +1,12 @@
 ---
-title: "Move an Excel worksheet"
+title: "Move an Excel Worksheet – Aspose.Cells Cloud API (v3.0)"
 second_title: "Document"
 linktitle: "Move"
 type: docs
 url: /worksheets/move/
 aliases: [/move-excel-worksheets/]
-keywords: "Aspose.Cells Cloud, Move Worksheet, Excel, REST API, SDK, C#, Java, Python, Node.js, PHP, Ruby, Go, Android, Swift, Perl"
-description: "Use Aspose.Cells Cloud REST API to move a worksheet within an Excel workbook. Includes request format, cURL example, and SDK code samples for multiple programming languages."
+keywords: "Aspose.Cells Cloud, Move Worksheet, Excel, REST API, SDK, C#, Java, Python, Node.js, PHP, Ruby, Go, Android, Swift, Perl, v3.0"
+description: "Learn how to move an Excel worksheet to a new position using Aspose.Cells Cloud API (v3.0). Includes endpoint, required parameters, cURL example, and SDK code in C#, Java, Python, and more."
 weight: 20
 ---
 
@@ -15,7 +15,7 @@ This REST API moves a worksheet within an Excel workbook.
 ## REST API
 
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/position
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/position
 ```
 
 ### Request parameters
@@ -24,20 +24,20 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/position
 |----------------|--------|----------|-------------|
 | name           | string | path     | Name of the Excel file. |
 | sheetName      | string | path     | Name of the worksheet to be moved. |
-| moving         | object | body     | JSON object that specifies the destination worksheet and the relative position. |
+| moving         | object | body     | JSON object that specifies the destination worksheet (`DestinationWorksheet`) and the relative position (`Position`). |
 | folder         | string | query    | Folder path where the workbook is stored. |
 | storageName    | string | query    | Name of the storage service. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostMoveWorksheet) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
+You can use the cURL command‑line tool to call Aspose.Cells web services. The example below shows how to move a worksheet with a single request.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/position" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/position" \
   -X POST \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
