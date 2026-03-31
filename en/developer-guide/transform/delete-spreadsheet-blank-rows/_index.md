@@ -1,109 +1,162 @@
----
-title: "Aspose.Cells Cloud Web API - Automatically Delete Blank/Empty Rows"
-second_title: "Document"
-ArticleTitle: "How to Delete All Blank/Empty Rows in Excel - Complete Data Cleanup Guide"
-linktitle: "Delete Blank Rows"
-type: docs
-url: /delete-spreadsheet-blank-rows/
-keywords: "Excel delete blank rows API, remove empty rows API, data cleanup API, spreadsheet optimization API, Aspose Cells REST API, Excel automation API, bulk row deletion API, clean Excel data, delete unused rows API, data preprocessing API, Excel maintenance API, cloud spreadsheet processing"
-description: "Learn how to quickly delete all blank rows from Excel spreadsheets. Step-by-step guide to remove rows containing no data, formulas, comments, or objects. Clean messy data, optimize spreadsheet structure, and prepare your Excel files for analysis with automated solutions and best practices."
-weight: 100
----
+---  
+title: "Aspose.Cells Cloud Web API – Automatically Delete Blank/Empty Rows"  
+second_title: "Document"  
+ArticleTitle: "How to Delete All Blank/Empty Rows in Excel – Complete Data Cleanup Guide"  
+linktitle: "Delete Blank Rows"  
+type: docs  
+url: /delete-spreadsheet-blank-rows/  
+keywords: "Excel, blank rows, Aspose.Cells Cloud, API"  
+description: "Remove all empty rows from Excel files via Aspose.Cells Cloud API. Fast, batch‑ready, and fully programmable – see code examples in C#, Java, Python, and more."  
+weight: 100  
+---  
 
-Automatically delete all blank rows from Excel spreadsheets using Aspose.Cells Cloud API. Our intelligent API detects and removes rows containing no data, formulas, comments, or objects while preserving all other content. Supports batch processing, cloud automation, and seamless integration for enterprise data cleaning workflows.
+Automatically delete all blank rows from Excel spreadsheets using Aspose.Cells Cloud API. Our intelligent API detects and removes rows that contain no data, formulas, comments, or objects while preserving all other content. It supports batch processing, cloud automation, and seamless integration for enterprise data‑cleaning workflows.  
 
-## **DeleteSpreadsheetBlankRows AP**
+## DeleteSpreadsheetBlankRows API  
 
-### API Endpoint
+### API Endpoint  
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/delete/blank-rows
+PUT https://api.aspose.cloud/v4.0/cells/delete/blank-rows
+```  
+
+### Authentication  
+
+Calls to this endpoint require an OAuth 2.0 access token.  
+1. Request a token with your client‑id and client‑secret:  
+
+```bash
+POST https://api.aspose.cloud/connect/token \
+  -d "grant_type=client_credentials&client_id=YOUR_CLIENT_ID&client_secret=YOUR_CLIENT_SECRET"
+```  
+
+2. Include the token in the `Authorization` header of every request:  
+
 ```
+Authorization: Bearer <access_token>
+```  
 
-### **Request Parameters:**
+### Request Parameters  
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-| :- | :- | :- |:- |
-| Spreadsheet | File | FormData | The Excel spreadsheet file (.xlsx, .xls, .ods, etc.) to be processed. The file must be provided for the API to scan and remove any blank rows. |
-| outPath | String | Query | (Optional) The target directory path within your cloud storage where the cleaned workbook will be saved. If left empty or `null`, the output will be stored in the default location or the same directory as the source file. |
-| outStorageName | String | Query | The specific name of your configured cloud storage (e.g., `MyDropbox`, `CorporateOneDrive`) where the processed file should be saved. This parameter is required to write the output to your desired storage location. |
-| region | String | Query | The locale or regional settings (e.g., `en-US`, `fr-FR`) to be applied during processing. This ensures correct interpretation of region-specific data formats like dates and numbers. |
-| password | String | Query | The decryption password required to open a password-protected spreadsheet. Omit this parameter if the uploaded file is not encrypted. |
+| Parameter Name | Type   | Location          | Description |
+|----------------|--------|-------------------|-------------|
+| Spreadsheet    | File   | FormData          | The Excel file (`.xlsx`, `.xls`, `.ods`, etc.) to be processed. |
+| outPath        | String | Query             | (Optional) Target directory in your cloud storage for the cleaned workbook. If omitted, the file is saved beside the source file. |
+| outStorageName | String | Query             | Name of the configured cloud storage (e.g., `MyDropbox`, `CorporateOneDrive`). Required when you want the output stored in a specific storage. |
+| region         | String | Query             | Locale settings (e.g., `en-US`, `fr-FR`) applied during processing. |
+| password       | String | Query             | Password for opening an encrypted spreadsheet. Omit if the file is not protected. |
 
-### **Response**
+### Sample Request (cURL)  
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/delete/blank-rows?outPath=cleaned%2Fbook.xlsx&outStorageName=MyDropbox&region=en-US" \
+  -H "Authorization: Bearer YOUR_ACCESS_TOKEN" \
+  -F "Spreadsheet=@/path/to/source.xlsx"
+```  
+
+### Response  
+
+The API returns a JSON array containing a reference to the processed file.
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
-```
+```  
 
-### Error Codes
+### Sample Response  
 
-- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized**: Invalid access token. Or invalid client id and secret.
-- **404 Not Found**: The spreadsheet file not accessible.
-- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
+```json
+{
+  "FileUrl": "https://mydropbox.storage.aspose.cloud/cleaned/book.xlsx",
+  "Size": 124578,
+  "Message": "Blank rows removed successfully."
+}
+```  
 
-## Where should we use the Delete Spreadsheet Blank Rows API?
+### Error Codes  
 
-- **Data Import & Cleanup Workflows**: Immediately after importing data from external sources (CSV, databases, web APIs) into Excel to clean up trailing or structural blank rows automatically.
-- **Report & Dashboard Generation**: Before finalizing financial, sales, or operational reports to ensure a clean, professional layout without unnecessary empty rows.
-- **Data Preparation for Analysis (ETL)**: In ETL pipelines to preprocess and standardize Excel data by removing empty rows before loading it into data warehouses (Snowflake, BigQuery) or BI tools (Tableau, Power BI).
-- **System Integration & API Feeds**: When receiving Excel files from integrated partner systems, CRMs, or ERPs to normalize the data structure by stripping out unused rows.
-- **Document Automation & Batch Processing**: In automated document generation systems where template output may include empty placeholder rows that need removal before distribution.
-- **User-Generated Content Processing**: To clean and standardize Excel files uploaded by users through web portals or applications before further processing or storage.
-- **Legacy Data Migration**: When consolidating or modernizing old spreadsheet archives by removing historically empty or placeholder rows to streamline data.
+- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.  
+- **401 Unauthorized** – Invalid access token or client credentials.  
+- **404 Not Found** – The spreadsheet file cannot be accessed.  
+- **500 Server Error** – An unexpected error occurred while processing the file.  
 
-## Why should you use the Delete Spreadsheet Blank Rows API?
+## Where should we use the Delete Spreadsheet Blank Rows API?  
 
-- **Developer-Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared to building custom chart rendering solutions, this significantly reduces the development workload.
-- **Reduced Labor Costs**: Reduced the need for positions dedicated to document consolidation.
-- **Pay-per-use**: No upfront investment, only pay for API calls actually used.
-- **Zero Maintenance Costs**: No need to maintain servers, update software, or deal with compatibility issues.
+- **Data Import & Cleanup Workflows** – Clean trailing or structural blank rows immediately after importing data from CSV, databases, or web APIs.  
+- **Report & Dashboard Generation** – Ensure a professional layout by removing unnecessary empty rows before finalizing financial, sales, or operational reports.  
+- **Data Preparation for Analysis (ETL)** – Pre‑process Excel data in ETL pipelines before loading it into data warehouses (Snowflake, BigQuery) or BI tools (Tableau, Power BI).  
+- **System Integration & API Feeds** – Normalize Excel files received from partner systems, CRMs, or ERPs by stripping unused rows.  
+- **Document Automation & Batch Processing** – Remove placeholder rows generated by template engines before distribution.  
+- **User‑Generated Content Processing** – Standardize Excel uploads from web portals or applications prior to further processing or storage.  
+- **Legacy Data Migration** – Streamline old spreadsheet archives by deleting historically empty or placeholder rows.  
 
-## How to Use the Delete Spreadsheet Blank Rows API with SDKs
+## Why should you use the Delete Spreadsheet Blank Rows API?  
 
-### Delete Spreadsheet Blank Rows API Specification
+- **Developer‑Friendly** – SDKs are available for multiple languages, reducing development effort compared with building custom solutions.  
+- **Reduced Labor Costs** – Eliminates the need for manual spreadsheet cleanup or dedicated staff.  
+- **Pay‑per‑Use** – You only pay for the API calls you actually make.  
+- **Zero Maintenance Costs** – No servers to manage, no software updates, and no compatibility concerns.  
 
-The [Delete Spreadsheet Blank Rows API Specification](https://reference.aspose.cloud/cells/#/TransformController/DeleteSpreadsheetBlankRows) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+## How to Use the Delete Spreadsheet Blank Rows API with SDKs  
 
-### Use Aspose.Cells Cloud SDKs
+### Delete Spreadsheet Blank Rows API Specification  
 
-Using the SDK is the fastest way to develop, as it abstracts away the low-level details, allowing you to delete spreadsheet blank rows with short code.
-Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+The [Delete Spreadsheet Blank Rows API Specification](https://reference.aspose.cloud/cells/#/TransformController/DeleteSpreadsheetBlankRows) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.  
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+### Use Aspose.Cells Cloud SDKs  
 
-{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{<tab tabNum="1" >}}
-{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_DeleteSpreadsheetBlankRows.cs" >}}
-{{</tab>}}
-{{<tab tabNum="2" >}}
-{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_DeleteSpreadsheetBlankRows.java" >}}
-{{</tab>}}
-{{<tab tabNum="3" >}}
-{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_DeleteSpreadsheetBlankRows.php" >}}
-{{</tab>}}
-{{<tab tabNum="4" >}}
-{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_DeleteSpreadsheetBlankRows.rb" >}}
-{{</tab>}}
-{{<tab tabNum="5" >}}
-{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_DeleteSpreadsheetBlankRows.ts" >}}
-{{</tab>}}
-{{<tab tabNum="6" >}}
-{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_DeleteSpreadsheetBlankRows.py" >}}
-{{</tab>}}
-{{<tab tabNum="7" >}}
-{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_DeleteSpreadsheetBlankRows.pl" >}}
-{{</tab>}}
-{{<tab tabNum="8" >}}
-{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_DeleteSpreadsheetBlankRows.go" >}}
-{{</tab>}}
-{{< /tabs >}}
+Using an SDK is the fastest way to develop, as it abstracts away low‑level details, allowing you to delete spreadsheet blank rows with short code.  
+Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.  
+
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:  
+
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}  
+{{<tab tabNum="1" >}}  
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_DeleteSpreadsheetBlankRows.cs" >}}  
+{{</tab>}}  
+{{<tab tabNum="2" >}}  
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_DeleteSpreadsheetBlankRows.java" >}}  
+{{</tab>}}  
+{{<tab tabNum="3" >}}  
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_DeleteSpreadsheetBlankRows.php" >}}  
+{{</tab>}}  
+{{<tab tabNum="4" >}}  
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_DeleteSpreadsheetBlankRows.rb" >}}  
+{{</tab>}}  
+{{<tab tabNum="5" >}}  
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_DeleteSpreadsheetBlankRows.ts" >}}  
+{{</tab>}}  
+{{<tab tabNum="6" >}}  
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_DeleteSpreadsheetBlankRows.py" >}}  
+{{</tab>}}  
+{{<tab tabNum="7" >}}  
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_DeleteSpreadsheetBlankRows.pl" >}}  
+{{</tab>}}  
+{{<tab tabNum="8" >}}  
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_DeleteSpreadsheetBlankRows.go" >}}  
+{{</tab>}}  
+{{< /tabs >}}  
+
+## FAQ  
+
+**When does the DeleteSpreadsheetBlankRows API delete a row?**  
+It removes any row that contains no cell values, formulas, comments, or embedded objects. Rows that appear empty because of hidden formatting are also considered blank and are removed.  
+
+**How do I authenticate calls to the DeleteSpreadsheetBlankRows endpoint?**  
+Obtain an OAuth 2.0 access token using your Aspose Cloud client‑id and client‑secret (`POST https://api.aspose.cloud/connect/token`). Include the token in the `Authorization: Bearer <token>` header for every request.  
+
+**What is the maximum file size supported for this operation?**  
+The free tier accepts files up to 200 MB; higher limits are available on paid plans. Larger files must be split or processed via streaming.  
+
+**What happens if the request fails part‑way through processing?**  
+The operation is atomic; if an error occurs, the original file remains unchanged.  
+
+**Where can I find the version history for this API?**  
+The API version (`v4.0`) is part of the endpoint URL. See the [version‑change log](https://reference.aspose.cloud/cells/#/Versioning) for details.  
