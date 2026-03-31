@@ -1,53 +1,109 @@
 ---
-title: "Export OLE Object"
+title: "Export OLE Object – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "OLE Object"
 type: docs
 url: /export-excel-ole-object/
 aliases: [ /export/excel-ole-object/]
-keywords: "Export OLE object, Aspose.Cells Cloud, REST API, Excel, PDF, CSV, JSON, multi‑language SDK"
-description: "The Aspose.Cells Cloud REST API enables exporting Excel OLE objects to various file formats. SDKs are available for multiple programming languages, including Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift."
+keywords: "export OLE object, Aspose.Cells API, Excel OLE export, cloud spreadsheet API"
+description: "Learn how to export OLE objects from an Excel workbook using the Aspose.Cells Cloud REST API. Includes authentication details, request parameters, response schema, error handling, and SDK examples."
 weight: 20
 ---
 
 - **REST API**
 
-| **API**   | **Type** | **Description**                                                      | **Swagger Link** |
-| --------- | -------- | -------------------------------------------------------------------- | ---------------- |
-| /cells/export | POST     | Exports an Excel workbook containing OLE objects to the specified output format. | [PostExport](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) |
+| **API** | **Type** | **Description** | **Swagger Link** |
+| ------- | -------- | --------------- | ---------------- |
+| /cells/export | POST | Exports an Excel workbook containing OLE objects to the specified output format. | [PostExport](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+### What is an OLE object?
 
-- **Request**
+An **OLE (Object Linking and Embedding) object** embeds external content—such as Word documents, PowerPoint slides, images, or other files—inside an Excel workbook. When exported, the embedded content is extracted and saved in the requested output format.
 
-```bash
-curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=oleobject" \
-     -H "accept: multipart/form-data" \
-     -H "Content-Type: multipart/form-data" \
-     -H "x-aspose-client: Containerize.Swagger" \
-     -d {"File":{}}
+### Authentication
+
+Aspose.Cells Cloud uses **OAuth 2.0**. Obtain an access token from the `/connect/token` endpoint and include it in the `Authorization` header of every request:
+
+```http
+Authorization: Bearer <access_token>
 ```
 
-- **Response**
+### Endpoint Overview
+
+`POST https://api.aspose.cloud/v3.0/cells/export?objectType=oleobject&format={outputFormat}`  
+
+* `objectType` – Must be set to `oleobject`.  
+* `format` – Desired output format (e.g., `pdf`, `png`, `jpeg`, `docx`, `pptx`).  
+
+### Request Parameters
+
+| Parameter | Location | Type | Required | Description |
+|-----------|----------|------|----------|-------------|
+| `file` | Form‑data | file | Yes | The Excel workbook (`.xlsx`, `.xls`, etc.) that contains the OLE objects. |
+| `outputFormat` | Query | string | Yes | Target format for the exported objects (`pdf`, `png`, `jpeg`, `docx`, `pptx`). |
+| `objectType` | Query | string | Yes | Fixed value `oleobject`. |
+| `Authorization` | Header | string | Yes | Bearer token obtained via OAuth 2.0. |
+
+#### Sample cURL request
 
 ```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=oleobject&format=pdf" \
+  -H "Authorization: Bearer $ACCESS_TOKEN" \
+  -F "file=@MyWorkbook.xlsx" \
+  -F "outputFormat=pdf"
+```
+
+### Response
+
+A successful request returns a JSON object that lists the exported files:
+
+```json
 {
-    "Files": [
-        {
-            "Filename": "OLESlide.ppt",
-            "FileSize": 390,
-            "FileContent": "-----Base64String--------"
-        },
-        {
-            "Filename": "OLEDoc.docx",
-            "FileSize": 382,
-            "FileContent": "-----Base64String--------"
-        }
-    ]
+  "Files": [
+    {
+      "Filename": "OLESlide.ppt",
+      "FileSize": 390,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "OLEDoc.docx",
+      "FileSize": 382,
+      "FileContent": "-----Base64String--------"
+    }
+  ]
 }
 ```
+
+### Error Codes
+
+| HTTP Status | Description | Example JSON |
+|-------------|-------------|--------------|
+| **400** | Bad request – missing or invalid parameters. | `{ "error": { "code": "BadRequest", "message": "The 'file' field is required." } }` |
+| **401** | Unauthorized – invalid or missing access token. | `{ "error": { "code": "Unauthorized", "message": "Access token is missing or invalid." } }` |
+| **500** | Internal server error – unexpected failure on the server side. | `{ "error": { "code": "InternalError", "message": "An unexpected error occurred." } }` |
+
+### Common Errors & Remedies
+
+| Situation | Cause | Remedy |
+|-----------|-------|--------|
+| **File size exceeds limit** | Uploaded file > 100 MB. | Upload the file to Aspose Cloud storage first and reference it via the `Path` parameter, or reduce the file size. |
+| **Unsupported output format** | `format` query value not in the allowed list. | Use one of the supported formats: `pdf`, `png`, `jpeg`, `docx`, `pptx`. |
+| **Missing Authorization header** | No bearer token supplied. | Obtain a token from `/connect/token` and include `Authorization: Bearer <token>` in the request. |
+
+### FAQ
+
+**Q:** *What formats can OLE objects be exported to?*  
+**A:** Use the `format` query parameter. Supported values are `pdf`, `png`, `jpeg`, `docx`, and `pptx`.
+
+**Q:** *How do I specify the output format?*  
+**A:** Append `&format={outputFormat}` to the request URL, e.g., `?objectType=oleobject&format=pdf`.
+
+**Q:** *What is the maximum size of the Excel file I can upload?*  
+**A:** The API accepts files up to **100 MB** for the `POST /cells/export` operation.
+
+---
 
 - **Cloud SDK Family**
 
