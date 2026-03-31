@@ -1,34 +1,46 @@
 ---
-title: "Aspose.Cells Cloud Get Resource Usage API - Retrieve Cloud Storage and Usage Metrics in Real-Time"
+title: "Aspose.Cells Cloud API – Get Disk Usage | Real‑Time Storage Metrics"
 second_title: "Document"
-ArticleTitle: "Cloud-based Excel File Efficient Management Solution - An interface for fast getting disk usage in the cloud."
+ArticleTitle: "Cloud‑based Excel File Management Solution – Interface to quickly retrieve disk usage in the cloud."
 linktitle: "Get Disk Usage"
 type: docs
 url: /get-disk-usage/
-keywords: "API, Disk Usage, Aspose, Cloud, Excel, REST, Storage, Disc Space, SDK, Programming Interface"
-description: "Retrieve the current disk usage for the Excel API in Aspose Cloud."
+keywords: "Aspose.Cells Cloud, Get Disk Usage, API, storage, cloud, Excel, REST"
+description: "Retrieve real‑time disk usage for Aspose.Cells Cloud. Learn the GET /v4.0/cells/storage/disk endpoint, required authentication, sample response, and error handling."
 weight: 100
 ---
 
-## **Excel API : GetDiskUsage**
+## Excel API: GetDiskUsage
+
+### Prerequisites / Authentication
+
+The **GetDiskUsage** endpoint requires a valid OAuth 2.0 bearer token. Include the token in the `Authorization` header of every request:
+
+```http
+Authorization: Bearer {access_token}
+```
+
+> **Note:** Obtain the token from the Aspose Cloud OAuth endpoint before calling any API.
 
 ### API Endpoint
 
+```http
+GET https://api.aspose.cloud/v4.0/cells/storage/disk
 ```
-GET http://api.aspose.cloud/v4.0/cells/storage/disk
-```
 
-### **Function Description**
+### Function Description
 
-This API endpoint retrieves the current disk usage for the Excel API in the Aspose Cloud environment, allowing developers to monitor the storage space used by their applications.
+- Retrieves the current disk usage for the Excel API in the Aspose Cloud environment.  
+- Allows developers to monitor how much storage their applications have consumed.  
+- Enables proactive management of storage limits and cost control.
 
-### The request parameters of **getDiskUsage** API are
+### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-| :- | :- | :- |:- |
-|storageName|String|Query|The name of the storage to retrieve disk usage for.|
+| Parameter Name | Type   | Location | Description                                            | Required |
+|----------------|--------|----------|--------------------------------------------------------|----------|
+| storageName    | String | Query    | The name of the storage for which to retrieve usage.   | Optional |
 
-### **Response Description**
+### Response Description
 
 ```json
 {
@@ -69,13 +81,30 @@ This API endpoint retrieves the current disk usage for the Excel API in the Aspo
 }
 ```
 
+#### Sample Success Response
+
+```json
+{
+  "UsedSize": 12345678,
+  "TotalSize": 10737418240
+}
+```
+
+### Error Codes
+
+| HTTP Code | Description                              |
+|-----------|------------------------------------------|
+| 401       | Unauthorized – missing or invalid token. |
+| 404       | Not Found – the specified storage does not exist. |
+| 500       | Internal Server Error – an unexpected condition occurred. |
+
 ## OpenAPI Specification
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/StorageController/GetDiskUsage) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 ## Excel API SDK
 
-Using an SDK is the best way to speed up development. An SDK handles low-level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK handles low‑level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 
@@ -105,3 +134,26 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_GetDiskUsage.go" >}}
 {{</tab>}}
 {{< /tabs >}}
+
+### Last Updated
+
+*2026‑03‑30*
+
+### Author
+
+Written by the **Aspose Cloud Documentation Team**, 2024‑2026.
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Aspose.Cells Cloud",
+  "applicationCategory": "DeveloperTools",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "url": "https://docs.aspose.cloud/cells/get-disk-usage/"
+}
+```
