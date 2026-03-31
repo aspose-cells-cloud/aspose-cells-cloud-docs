@@ -1,34 +1,40 @@
----
-title: "Get a picture in an Excel file"
-second_title: "Document"
-linktitle: "Get"
-type: docs
-url: /pictures/get/
-aliases: [/convert-picture-to-image/]
-keywords: "Excel, picture, Aspose.Cells Cloud, REST API, worksheet picture, get picture"
-description: "Retrieve a picture from an Excel worksheet using the Aspose.Cells Cloud REST API. The API returns the image by its index and supports multiple SDKs for various programming languages."
-weight: 10
+---  
+title: "Aspose.Cells Cloud API – Get Picture from Worksheet"  
+second_title: "Document"  
+linktitle: "Get"  
+type: docs  
+url: /pictures/get/  
+aliases: [/convert-picture-to-image/]  
+keywords: "Aspose.Cells Get Picture API, Excel picture API, Cells Cloud picture, Aspose.Cells Cloud, REST API"  
+description: "Retrieve a specific picture from an Excel worksheet using Aspose.Cells Cloud REST API. Includes endpoint, parameters, authentication steps, response codes, and code examples."  
+weight: 10  
+---  
 
----
+**Version:** `v3.0`  
+**Last updated:** 2024‑06‑30  
 
-This REST API retrieves a picture by its index from an Excel worksheet.
+This REST API retrieves a picture by its zero‑based index from an Excel worksheet.
+
+**Prerequisites:** Create an Aspose Cloud account, obtain a *client‑id* and *client‑secret*, generate a JWT token, and upload the workbook to your storage location.  
+
+**Authentication:** Request a JWT token via the OAuth 2.0 `/connect/token` endpoint and supply it in the request header as `Authorization: Bearer <jwt token>`.
 
 ## REST API
 
 ```bash
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}
 ```
 
 The request parameters are:
 
-| Parameter Name | Type    | Location                     | Description                              |
-|----------------|---------|------------------------------|------------------------------------------|
-| name           | string  | path                         | Name of the Excel document.              |
-| sheetName      | string  | path                         | Name of the worksheet.                   |
-| pictureIndex   | integer | path                         | Zero‑based index of the picture.         |
-| format         | string  | query                        | Desired export format (e.g., png, jpg). |
-| folder         | string  | query                        | Folder that contains the document.       |
-| storageName    | string  | query                        | Name of the storage location.            |
+| Parameter Name | Type    | Location | Description                              |
+|----------------|---------|----------|------------------------------------------|
+| name           | string  | path     | Name of the Excel document.              |
+| sheetName      | string  | path     | Name of the worksheet.                   |
+| pictureIndex   | integer | path     | Zero‑based index of the picture.         |
+| format         | string  | query    | Desired export format (e.g., png, jpg, bmp, gif, tiff). If omitted, the picture is returned in its original format. |
+| folder         | string  | query    | Folder that contains the document.       |
+| storageName    | string  | query    | Name of the storage location.            |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Pictures/GetWorksheetPicture) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
@@ -40,10 +46,10 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 
 ```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/pictures/1?format=png" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
@@ -53,6 +59,14 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/picture
 ```bash
 <IMAGE DATA>
 ```
+
+*Successful response:* HTTP **200 OK** with `Content‑Type: image/png` (or the appropriate image MIME type).  
+
+*Possible error codes:*  
+
+- **401 Unauthorized** – missing or invalid JWT token.  
+- **404 Not Found** – workbook, worksheet, or picture index does not exist.  
+- **500 Internal Server Error** – server‑side problem.
 
 {{< /tab >}}
 
@@ -86,31 +100,31 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 
 {{< tab tabNum="4" >}}
 
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_GetWorksheetPictureWithFormat.rb" >}}
+{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "ExampleGetWorksheetPictureWithFormat.rb" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_GetWorksheetPictureWithFormat.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "ExampleGetWorksheetPictureWithFormat.ts" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_GetWorksheetPictureWithFormat.py" >}}
+{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "ExampleGetWorksheetPictureWithFormat.py" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
 
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_GetWorksheetPictureWithFormat.pl" >}}
+{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "ExampleGetWorksheetPictureWithFormat.pl" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
 
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_GetWorksheetPictureWithFormat.go" >}}
+{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "ExampleGetWorksheetPictureWithFormat.go" >}}
 
 {{< /tab >}}
 
