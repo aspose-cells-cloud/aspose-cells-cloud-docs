@@ -8,15 +8,15 @@ aliases:
   - /import-batch-data-into-worksheet/
   - /import-data/batch-data/
   - /import/batch-data/
-keywords: "Import batch data, Excel, Aspose.Cells Cloud, REST API, Spreadsheet, Data import"
-description: "Use Aspose.Cells Cloud REST API to import batch data into Excel worksheets. The API supports multiple SDKs (C#, Java, Python, etc.) and a variety of data formats such as CSV, JSON, and XML."
+keywords: "Aspose.Cells, Cloud API, import batch data, Excel, CSV, JSON, XML, SDK"
+description: "Learn how to import batch data (CSV, JSON, XML, arrays) into an Excel worksheet using Aspose.Cells Cloud REST API. Includes authentication, request/response examples, SDK snippets, and error handling."
 weight: 19
 ---
 
 This REST API **imports batch data** into an Excel worksheet.
 
-The request is an HTTP request with multipart content (see [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)).  
-The first part of the multipart content contains the **ImportBatchDataOption** data, and the second part contains the data file.
+The operation uses an HTTP request with multipart content (see [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)).  
+The first part of the multipart payload contains the **ImportBatchDataOption** object, and the second part carries the data file.
 
 ## REST API
 
@@ -24,6 +24,8 @@ The first part of the multipart content contains the **ImportBatchDataOption** d
 POST https://api.aspose.cloud/v3.0/cells/import
 POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
 ```
+
+**Authentication** – The API requires OAuth 2.0. Include an `Authorization: Bearer <access_token>` header in the request. Details on obtaining an access token are available in the Aspose Cloud authentication guide.
 
 The important parameters are described in the tables below.
 
@@ -33,9 +35,9 @@ The important parameters are described in the tables below.
 |-------------------------|--------------------|-------------|
 | **BatchData**           | `List<CellValue>`  | Collection of cell values to be written directly. |
 | **DestinationWorksheet**| `string`           | Name of the worksheet where the data will be imported. |
-| **IsInsert**            | `bool`             | If `true`, the data is inserted and existing cells are shifted; if `false`, the data overwrites existing cells. |
+| **IsInsert**            | `bool`             | When `true`, the data is inserted and existing cells are shifted; when `false`, the data overwrites existing cells. |
 | **ImportDataType**      | `string`           | Format of the data to import. Allowed values: `IntArray`, `DoubleArray`, `StringArray`, `TwoDimensionIntArray`, `TwoDimensionDoubleArray`, `TwoDimensionStringArray`, `BatchData`, `csvData`. |
-| **Source**              | `FileSource`       | Specifies the location of the data file when **BatchData** is null. |
+| **Source**              | `FileSource`       | Specifies the location of the data file when **BatchData** is `null`. |
 
 ### CellValue
 
@@ -57,7 +59,7 @@ The important parameters are described in the tables below.
 ### Example (XML)
 
 ```xml
-<ImportIntArrayOption>
+<ImportBatchDataOption>
     <DestinationWorksheet>Sheet1</DestinationWorksheet>
     <IsInsert>false</IsInsert>
     <ImportDataType>IntArray</ImportDataType>
@@ -68,7 +70,7 @@ The important parameters are described in the tables below.
         <FileSourceType>CloudFileSystem</FileSourceType>
         <FilePath>Array_int_xml.txt</FilePath>
     </Source>
-</ImportIntArrayOption>
+</ImportBatchDataOption>
 ```
 
 ## Cloud SDK Family
