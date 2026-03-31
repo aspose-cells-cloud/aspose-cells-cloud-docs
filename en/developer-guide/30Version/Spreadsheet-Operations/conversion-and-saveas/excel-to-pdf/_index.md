@@ -1,12 +1,12 @@
 ---
-title: "Excel to PDF"
+title: "Convert Excel to PDF"
 second_title: "Document"
-linktitle: "Excel to PDF"
+linktitle: "Convert Excel to PDF"
 type: docs
 url: /convert-excel-file-to-pdf-file/
 aliases: [/convert-excel-file-to-pdf-in-cloud/,/convert/excel-to-pdf/]
-keywords: "Excel to PDF conversion, Aspose.Cells Cloud, spreadsheet to PDF, REST API, SDK support"
-description: "Use Aspose.Cells Cloud REST API to convert Excel spreadsheets into PDF files. The service supports multiple SDKs (Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, Swift) for seamless integration."
+keywords: "Aspose Cells, Excel to PDF, Cloud API, file conversion"
+description: "Learn how to convert Excel workbooks to PDF with Aspose.Cells Cloud REST API. Includes cURL, SDK samples (C#, Java, Python) and authentication guide."
 weight: 80
 ---
 
@@ -14,11 +14,11 @@ This REST API converts a spreadsheet file to a PDF‑format file.
 
 **Query Parameter**
 
-| Parameter Name          | Type   | Description                                                                                     |
-| :-                      | :-     | :-                                                                                               |
-| password                | string | The password required to open the Excel file.                                                   |
-| storageName             | string | The name of the storage where the file is located.                                               |
-| checkExcelRestriction   | bool   | Whether to check restrictions of the Excel file when the user modifies cell‑related objects.   |
+| Parameter Name          | Type   | Description                                                                                 |
+| :-                      | :-     | :-                                                                                           |
+| password                | string | Password to open the Excel file.                                                             |
+| storageName             | string | The name of the storage where the file is located.                                           |
+| checkExcelRestriction   | bool   | Whether to enforce Excel file restrictions when modifying cell‑related objects.             |
 
 **Request Body Parameter**
 
@@ -38,18 +38,18 @@ This REST API converts a spreadsheet file to a PDF‑format file.
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToPDF) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. Include an access token in the `Authorization` header, then run the request below.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/pdf" 
-     -H "accept: multipart/form-data" 
-     -H "Content-Type: multipart/form-data" 
-     -H "x-aspose-client: curl" 
-     -d {"File":{}}
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/pdf" \
+     -H "accept: multipart/form-data" \
+     -H "Content-Type: multipart/form-data" \
+     -H "Authorization: Bearer <access_token>" \
+     -F "datafile=@sample.xlsx"
 ```
 
 {{< /tab >}}
