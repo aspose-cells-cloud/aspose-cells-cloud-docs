@@ -6,26 +6,34 @@ type: docs
 url: /workbook/find-text/
 aliases: [/find-text-in-a-workbook/]
 weight: 30
-keywords: "Find text, Excel workbook, Aspose.Cells Cloud, REST API, SDK"
-description: "Use Aspose.Cells Cloud REST API to search for text within Excel workbooks (XLS, XLSX, XLSM, XLSB, ODS). SDKs are available for multiple programming languages."
+keywords: "Find text, Excel workbook, Aspose.Cells Cloud, REST API, SDK, search text in workbook, Aspose.Cells findText, Excel API"
+description: "Learn how to use Aspose.Cells Cloud API to **find text** in Excel workbooks (XLS‑X, ODS). Includes cURL example, SDK snippets, and response schema. Get started now."
 ---
 
-This REST API searches for text in an Excel file.
+This REST API searches for text in an Excel workbook.
 
 ## REST API
 
-```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/findText
+**Prerequisites** – You need a valid Aspose.Cells Cloud account, the API version **v3.0**, and an OAuth 2.0 bearer token for authentication. The API works with Excel formats such as XLS, XLSX, XLSM, XLSB, and ODS.
+
+**Authentication** – Include the following header in every request:  
+
+```
+Authorization: Bearer <your_access_token>
 ```
 
-The request parameters are:
+```bash
+POST https://api.aspose.cloud/v3.0/cells/{name}/findText
+```
 
-| Parameter Name | Type   | Location                     | Description                              |
-|----------------|--------|------------------------------|------------------------------------------|
-| name           | string | path                         | Name of the Excel workbook file.         |
-| text           | string | query                        | Text string to search for.               |
-| folder         | string | query                        | Folder that contains the workbook.       |
-| storageName    | string | query                        | Name of the storage where the file resides.|
+The request accepts the following parameters:
+
+| Parameter Name | Type   | Location | Description |
+|----------------|--------|----------|-------------|
+| name           | string | path     | Name of the Excel workbook. |
+| text           | string | query    | Text string to search for. |
+| folder         | string | query    | Folder that contains the workbook (optional). |
+| storageName    | string | query    | Name of the storage where the workbook resides (optional). |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbooksTextSearch) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -36,7 +44,9 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/findText?text=a" -H "accept: application/json"
+curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/findText?text=a" \
+     -H "accept: application/json" \
+     -H "Authorization: Bearer <your_access_token>"
 ```
 
 {{< /tab >}}
@@ -71,6 +81,22 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/findText?text=a" -H 
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**Error handling** – The API may return standard HTTP status codes such as **401 Unauthorized** (invalid or missing token), **404 Not Found** (workbook does not exist), and **500 Internal Server Error** (unexpected server condition). The response body for errors follows the common Aspose.Cells error format.
+
+**Quick FAQ**
+
+- **How do I search for a specific string in an Excel workbook using Aspose.Cells Cloud?**  
+  Send a **POST** request to `https://api.aspose.cloud/v3.0/cells/{workbookName}/findText` with the query parameter `text=<searchString>` and include the `Authorization: Bearer <token>` header. The response contains a `TextItems` collection with each match.
+
+- **What parameters are required for the Find Text API?**  
+  - `name` (path) – workbook name (required)  
+  - `text` (query) – string to locate (required)  
+  - `folder` (query) – workbook folder (optional)  
+  - `storageName` (query) – storage name (optional)
+
+- **What does the API response look like when a match is found?**  
+  The JSON response includes a `Status` field and a `TextItems` object. `TextItems.TextItemList` is an array; each entry provides a `link` object (Href, Rel, Title, Type) and a `Text` field with the matched string.
 
 ## Cloud SDK Family
 
