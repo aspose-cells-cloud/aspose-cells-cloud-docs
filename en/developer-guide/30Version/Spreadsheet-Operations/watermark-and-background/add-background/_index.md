@@ -1,5 +1,5 @@
 ---
-title: "Add Background in Workbook"
+title: "Add Background Image to Workbook"
 second_title: "Document"
 linktitle: "Add"
 type: docs
@@ -8,12 +8,18 @@ aliases:
   - /add-background-in-workbook/
   - /workbook/add-background/
   - /workbook/background/add/
-keywords: "Add background, Excel workbook, Aspose.Cells Cloud, REST API, spreadsheet background image"
-description: "Use the Aspose.Cells Cloud REST API to add a background image to an Excel workbook. The API is available through cURL or any of the supported SDKs (C#, Java, Python, Ruby, Go, etc.)."
+keywords: "Aspose.Cells, add background image, Excel API, REST, cloud SDK, cURL, workbook background"
+description: "Learn how to add a background image to an Excel workbook using the Aspose.Cells Cloud REST API. Includes required parameters, authentication details, a complete cURL example, and error‑handling information."
 weight: 160
 ---
 
 This REST API adds a **background image** to an Excel workbook.
+
+**Prerequisites** – Before calling the endpoint you must:
+
+1. Have a valid Aspose Cloud client ID and client secret.  
+2. Obtain an OAuth 2.0 access token and include it in the `Authorization` header as `Bearer <access_token>`.  
+3. Ensure the picture file referenced by `picPath` exists in the chosen storage location.
 
 ### Query Parameters
 
@@ -25,9 +31,11 @@ This REST API adds a **background image** to an Excel workbook.
 
 ### Request Body Parameter
 
-| Parameter Name | Type   | Description                                 |
-|----------------|--------|---------------------------------------------|
-| `datafile`     | file   | The workbook file to which the background will be applied. |
+| Parameter Name | Type | Description |
+|----------------|------|-------------|
+| `datafile`     | file | The workbook file to which the background will be applied. |
+
+**Path Parameter** – `{name}` in the URL represents the **workbook file name** (e.g., `Book1.xlsx`).
 
 ## REST API
 
@@ -37,7 +45,13 @@ This REST API adds a **background image** to an Excel workbook.
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookBackground) defines a publicly accessible programming interface that lets you perform REST interactions directly from a web browser.
 
-You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL.
+**Authentication** – Include the OAuth 2.0 token in the request header:
+
+```
+Authorization: Bearer <access_token>
+```
+
+You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows a complete request, including the multipart file upload flag and the required authentication header.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
@@ -45,9 +59,10 @@ You can use the **cURL** command‑line tool to access Aspose.Cells web services
 
 ```bash
 curl -X PUT "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/background?picPath=DotnetFiles%2FWaterMark.png&folder=DotnetFiles" \
+     -H "Authorization: Bearer <access_token>" \
      -H "accept: multipart/form-data" \
      -H "Content-Type: multipart/form-data" \
-     -H "x-aspose-client: Containerize.Swagger"
+     -F "datafile=@/path/to/Book1.xlsx"
 ```
 
 {{< /tab >}}
@@ -64,6 +79,15 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/background?picPath=D
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### Error Responses
+
+| HTTP Status | Code | Message | When it occurs |
+|-------------|------|---------|----------------|
+| 400 | Bad Request | The request is malformed or missing required parameters. |
+| 401 | Unauthorized | Invalid or missing OAuth 2.0 token. |
+| 404 | Not Found | The specified workbook (`{name}`) or picture file does not exist. |
+| 500 | Internal Server Error | An unexpected error occurred on the server side. |
 
 ## Cloud SDK Family
 
