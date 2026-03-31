@@ -1,40 +1,70 @@
 ---
-title: "Excel to HTML"
+title: "Convert Excel to HTML – Aspose.Cells Cloud API v3.0"
 second_title: "Document"
 linktitle: "Excel to HTML"
 type: docs
 url: /convert-excel-file-to-html-file/
 aliases: [/convert-excel-file-to-html-in-cloud/,/convert/excel-to-html/]
-keywords: "Excel to HTML, Aspose.Cells Cloud, spreadsheet conversion, REST API, HTML export"
-description: "Convert Excel spreadsheets to HTML using Aspose.Cells Cloud REST API. SDKs are available for many languages (C#, Java, PHP, Python, etc.) and the API supports easy conversion via HTTP."
+keywords: "Excel, HTML, Aspose.Cells, Cloud API, spreadsheet conversion, REST, SDK"
+description: "Use Aspose.Cells Cloud REST API to convert Excel workbooks to HTML. Includes cURL example, SDK code samples, and a detailed response schema."
 weight: 100
-
 ---
 
-This REST API converts a spreadsheet file to an HTML format file.
+This REST API converts a spreadsheet file to an HTML‑format file.
 
-**Query Parameters**
+### Prerequisites
+- An active Aspose.Cloud account with a valid **access token** (OAuth 2.0).  
+- API version **v3.0** (released Oct 2023).  
+- Sufficient storage space in the selected storage (default is **First Storage**).  
+- File size must not exceed the service limit (typically 200 MB).
 
-| Parameter Name          | Type   | Description                                                                                       |
-| ----------------------- | ------ | ------------------------------------------------------------------------------------------------- |
-| password                | string | The password required to open the Excel file.                                                    |
-| storageName             | string | The name of the storage where the file is located.                                                |
-| checkExcelRestriction   | bool   | Indicates whether to check Excel file restrictions when modifying cell‑related objects.          |
+### Authentication
+All requests must contain the **Authorization** header:
 
-**Request Body Parameter**
+```http
+Authorization: Bearer <access-token>
+```
 
-| Parameter Name | Type | Description                                                                                     |
-| -------------- | ---- | ----------------------------------------------------------------------------------------------- |
-| datafile       | file | The spreadsheet file to be converted, supplied as the first part of the multipart request.    |
+Obtain the token from the OAuth 2.0 endpoint `/connect/token`. Include the header in every cURL call (or SDK request) as shown in the example below.
 
-**Response**
+## Query Parameters
+
+| Parameter Name        | Type   | Description                                                                      |
+|-----------------------|--------|----------------------------------------------------------------------------------|
+| password              | string | The password required to open the Excel file.                                   |
+| storageName           | string | The name of the storage where the file is located.                               |
+| checkExcelRestriction| bool   | Indicates whether to check Excel file restrictions when modifying cells.       |
+
+## Request Body Parameter
+
+| Parameter Name | Type | Description                                                                          |
+|----------------|------|--------------------------------------------------------------------------------------|
+| **File**       | file | The spreadsheet file to be converted, supplied as the first part of the multipart request. |
+
+## Response
+
+The API returns a **FileInfo** object that contains the generated HTML file.
+
+| Field        | Type   | Description                                            |
+|--------------|--------|--------------------------------------------------------|
+| **Filename** | string | Name of the HTML file (e.g., `example.html`).         |
+| **FileSize** | int    | Size of the file in bytes.                             |
+| **FileContent** | string | Base64‑encoded content of the HTML file.               |
 
 [FileInfo](/cells/file-info/)
+
+### Error Responses
+| HTTP Status | Description                                 | Error Model |
+|-------------|---------------------------------------------|-------------|
+| 400         | Bad request – missing file or invalid parameters. | `Error` (`Code`, `Message`) |
+| 401         | Unauthorized – invalid or missing access token. | `Error` |
+| 404         | File not found – the specified file does not exist in storage. | `Error` |
+| 500         | Internal server error – unexpected failure on the server side. | `Error` |
 
 ## REST API Specification
 
 | **API**                | **Type** | **Description**                     | **Swagger Link**                                                                 |
-| ---------------------- | -------- | ----------------------------------- | ------------------------------------------------------------------------------- |
+|------------------------|----------|-------------------------------------|---------------------------------------------------------------------------------|
 | /cells/convert/html    | POST     | Convert a spreadsheet to an HTML file. | [PostConvertWorkbookToHtml](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToHtml) |
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToHtml) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
@@ -49,6 +79,7 @@ You can use the **cURL** command‑line tool to access Aspose.Cells web services
 curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/html" \
      -H "accept: multipart/form-data" \
      -H "Content-Type: multipart/form-data" \
+     -H "Authorization: Bearer <access-token>" \
      -H "x-aspose-client: curl" \
      -F "File=@your_excel_file.xlsx"
 ```
@@ -61,7 +92,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/html" \
 {
   "Filename": "example.html",
   "FileSize": 12345,
-  "FileContent": "File Content: base64_encoded_string"
+  "FileContent": "base64_encoded_string"
 }
 ```
 
@@ -137,3 +168,14 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 
 - **GET /cells/{name}** – Retrieves an Excel file converted to HTML with optional settings.  
   <https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook>
+
+## FAQ
+
+**Q: How do I authenticate when calling the Excel‑to‑HTML conversion API?**  
+A: Include an `Authorization: Bearer <access-token>` header obtained from the OAuth 2.0 `/connect/token` endpoint.
+
+**Q: What does the `FileInfo` response contain?**  
+A: It returns three fields – `Filename` (string), `FileSize` (integer, bytes), and `FileContent` (Base64‑encoded HTML content).
+
+**Q: Which error codes might I encounter?**  
+A: `400` (bad request), `401` (unauthorized), `404` (file not found), and `500` (internal server error). Each response includes an `Error` object with `Code` and `Message`.
