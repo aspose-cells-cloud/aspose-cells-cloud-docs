@@ -1,5 +1,5 @@
 ---
-title: "How to build an Excel report with a smart marker template"
+title: "Build Excel Reports with Smart Marker Templates"
 second_title: "Document"
 linktitle: "SmartMarker"
 type: docs
@@ -8,33 +8,42 @@ aliases:
   - /create-excel-workbook-from-a-smartmarker-template/
   - /workbook/smartmarker/
   - /workbook/create/smartmarker/
-keywords: "Excel, Smart Marker, Aspose.Cells Cloud, REST API, Workbook, SDK"
-description: "Learn how to create an Excel workbook using a Smart Marker template with Aspose.Cells Cloud REST API. Includes request parameters, a cURL example, and SDK code samples for multiple languages."
+keywords: "Excel, Smart Marker, Aspose.Cells Cloud, REST API, Workbook, SDK, API"
+description: "Learn how to generate Excel workbooks from Smart Marker templates using the Aspose.Cells Cloud REST API. Includes request/response details, cURL example, and SDK code samples."
 weight: 40
 ---
 
 This REST API creates a workbook using a Smart Marker template.
 
+**What is a Smart Marker?**  
+A Smart Marker is a placeholder syntax that maps data fields in an XML (or JSON) file to cells in an Excel template. At runtime Aspose.Cells replaces the markers with the corresponding data, allowing you to generate fully populated reports programmatically.
+
+**Prerequisites**  
+Before calling the API, ensure you have:
+
+* A valid Aspose Cloud API key and access token.  
+* The template workbook stored in your chosen storage (or included in the request).  
+* A Smart Marker XML data file that follows the Aspose Smart Marker schema.  
+
 **Query Parameters**
 
-| Parameter Name | Type   | Description                                               |
-|----------------|--------|-----------------------------------------------------------|
-| xmlFile        | string | Path or URL of the SmartMarker XML data file.            |
-| outPath        | string | Destination path where the generated workbook will be saved. |
-| folder         | string | Folder containing the original workbook.                 |
-| storageName    | string | Name of the storage service to use.                       |
+| Parameter Name | Type   | Description                                                               |
+|----------------|--------|---------------------------------------------------------------------------|
+| outPath        | string | Destination path where the generated workbook will be saved.             |
+| folder         | string | Folder containing the original workbook.                                 |
+| storageName    | string | Name of the storage service to use.                                       |
 
 **Request Body Parameter**
 
-| Parameter Name | Type | Description                              |
-|----------------|------|------------------------------------------|
-| xmlFile        | file | SmartMarker template file uploaded with the request. |
+| Parameter Name | Type | Description                                            |
+|----------------|------|--------------------------------------------------------|
+| xmlFile        | file | Smart Marker XML data file uploaded with the request. |
 
 ## REST API
 
 | **API**                         | **Type** | **Description**                                            | **Swagger Link** |
 |---------------------------------|----------|------------------------------------------------------------|------------------|
-| /cells/{name}/smartmarker       | POST     | Create a new Excel workbook from a SmartMarker template file | [PostWorkbookGetSmartMarkerResult](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookGetSmartMarkerResult) |
+| /cells/{name}/smartmarker       | POST     | Create a new Excel workbook from a Smart Marker template file | [PostWorkbookGetSmartMarkerResult](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookGetSmartMarkerResult) |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookGetSmartMarkerResult) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -45,9 +54,10 @@ You can use **cURL** command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -X POST "https://api.aspose.cloud/v3.0/cells/newworkbook_14.xlsx/smartmarker?xmlFile=Sample_SmartMarker_Data.xml" \
+curl -X POST "https://api.aspose.cloud/v3.0/cells/newworkbook_14.xlsx/smartmarker?outPath=GeneratedReport.xlsx" \
     -H "accept: multipart/form-data" \
-    -H "x-aspose-client: Containerize.Swagger"
+    -H "x-aspose-client: Containerize.Swagger" \
+    -F "xmlFile=@Sample_SmartMarker_Data.xml"
 ```
 
 {{< /tab >}}
@@ -55,12 +65,28 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/newworkbook_14.xlsx/smartmarke
 {{< tab tabNum="2" >}}
 
 ```text
-HttpResponseMessage with the processing result in content.
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "status": "OK",
+  "message": "Workbook generated successfully.",
+  "downloadUrl": "https://api.aspose.cloud/v3.0/storage/file/GeneratedReport.xlsx"
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**Error Handling**  
+
+| HTTP Status | Description                              | Typical Cause                                 |
+|-------------|------------------------------------------|-----------------------------------------------|
+| 400         | Bad Request                              | Missing template, malformed XML, or invalid parameters. |
+| 401         | Unauthorized                             | Invalid or missing authentication token.      |
+| 404         | Not Found                                | Specified workbook or storage location does not exist. |
+| 500         | Internal Server Error                    | Unexpected server‑side failure.               |
 
 ## Cloud SDK Family
 
