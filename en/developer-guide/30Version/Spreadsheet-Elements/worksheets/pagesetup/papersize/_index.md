@@ -1,15 +1,19 @@
 ---
-title: "Paper Size"
+title: "Aspose.Cells Cloud – Complete List of Paper Size Constants"
 second_title: "Document"
 linktitle: "Paper Size"
 type: docs
 url: /paper-size/
-keywords: "Paper Size, Aspose.Cells Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown"
-description: "The Aspose.Cells Cloud REST API provides support for setting paper sizes in spreadsheets. This document lists all available paper‑size values and their dimensions."
+keywords: "paper size, Aspose.Cells Cloud, REST API, spreadsheet, A4, Letter, custom paper size, ISO, JIS, PRC"
+description: "Explore the full set of paper‑size constants supported by the Aspose.Cells Cloud REST API. Learn dimensions, usage examples, and how to set custom sizes in your spreadsheets."
 weight: 20
 ---
 
 ## **Paper Size Values**
+
+Developers use these constants with the `SetPageSetup` API (or the equivalent SDK method) to define the page dimensions of a worksheet. The table below lists every supported paper‑size value together with its physical dimensions.
+
+<caption>Supported paper‑size constants for Aspose.Cells Cloud</caption>
 
 | Name | Description |
 | ---- | ----------- |
@@ -132,3 +136,25 @@ weight: 20
 | PaperBusinessCard | Business Card (90 mm × 55 mm) |
 | PaperThermal | Thermal (3 in × 11 in) |
 | Custom | Represents a custom paper size. |
+
+### How to set a paper size with the Aspose.Cells Cloud REST API
+```bash
+curl -X PUT "https://api.aspose.cloud/v3.0/cells/Workbook/worksheets/Sheet1/pageSetup" \
+  -H "Authorization: Bearer {access_token}" \
+  -H "Content-Type: application/json" \
+  -d '{"PaperSize":"PaperA4"}'
+```
+
+### Notes
+- **Synonyms** – `PaperLetter` and `PaperLetterSmall` represent the same US Letter dimensions (8½ in × 11 in) and can be used interchangeably.  
+- **Rotated / Transverse** – Values that contain “Rotated” or “Transverse” denote landscape orientation (width > height).  
+- **Custom size** – When `PaperSize` is set to `Custom`, you must also provide `CustomWidth` and `CustomHeight` (in points) in the request body.  
+- **Error handling** – Supplying an unsupported constant returns **400 Bad Request** with error code `InvalidPaperSize`.  
+
+#### Abbreviation definitions
+- **JIS** – Japanese Industrial Standards (used for B‑series sizes such as `PaperJISB4`).  
+- **ISO** – International Organization for Standardization (e.g., `PaperISOB4`).  
+- **PRC** – People’s Republic of China standard sizes (e.g., `PaperPRC16K`).  
+- **US** – United States standard sizes.  
+
+*Last updated: 2026‑03‑30*
