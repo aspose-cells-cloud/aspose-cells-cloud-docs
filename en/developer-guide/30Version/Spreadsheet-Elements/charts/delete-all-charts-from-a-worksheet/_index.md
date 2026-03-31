@@ -1,16 +1,16 @@
 ---
-title: "Delete all Charts from a Worksheet"
+title: "Delete All Charts from a Worksheet"
 type: docs
 url: /charts/clear/
 aliases: [/delete-all-charts-from-a-worksheet/]
 weight: 30
-keywords: "Aspose.Cells, Delete Charts, Worksheet, REST API, DELETE, Cloud SDK"
-description: "Deletes all charts from a specified worksheet in an Excel workbook using the Aspose.Cells Cloud REST API."
+keywords: "Aspose.Cells Cloud, delete all charts, worksheet, REST API, DELETE, Cloud SDK"
+description: "Learn how to delete every chart in a worksheet using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, cURL sample, SDK code snippets, authentication steps, and error handling."
 ---
 
-This REST API clears the charts.
+This REST API deletes all charts from the specified worksheet.
 
-## REST API
+## REST API – Delete All Charts
 
 ```bash
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts
@@ -41,6 +41,8 @@ curl -v "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cha
 -H "Authorization: Bearer <jwt token>"
 ```
 
+*Replace `<jwt token>` with a valid JWT Bearer token obtained via the Aspose Cloud OAuth flow.*
+
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
@@ -52,13 +54,15 @@ curl -v "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cha
 }
 ```
 
+*If the request fails, the API returns an error JSON with an appropriate HTTP status code (e.g., 401 Unauthorized, 404 Not Found, 500 Internal Server Error).*
+
 {{< /tab >}}
 
 {{< /tabs >}}
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up development. An SDK takes care of low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development when you need to **delete all charts** from a worksheet. An SDK takes care of low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 
@@ -123,3 +127,5 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{< /tab >}}
 
 {{< /tabs >}}
+
+*See also:* [Delete a Chart](../delete/) • [Get Charts](../list/)
