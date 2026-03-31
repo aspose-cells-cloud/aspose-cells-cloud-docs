@@ -1,10 +1,10 @@
 ---
-title: "Add"
+title: "Add Hyperlink to Worksheet"
 type: docs
 url: /hyperlinks/add/
 aliases: [/add-hyperlinks-to-excel-worksheet/]
-keywords: "Add hyperlink, Excel worksheet, Aspose.Cells Cloud, REST API"
-description: "Use Aspose.Cells Cloud REST API to add a hyperlink to an Excel worksheet. The API is supported by SDKs for C#, Java, PHP, Ruby, Node.js, Python, Perl, Go and other languages."
+keywords: "Aspose.Cells, add hyperlink, Excel REST API, cloud SDK"
+description: "Learn how to add a hyperlink to an Excel worksheet using the Aspose.Cells Cloud v3.0 REST API. Includes endpoint, full parameter guide, cURL example, and SDK snippets for C#, Java, Python, and more."
 weight: 20
 ---
 
@@ -13,22 +13,24 @@ This REST API adds a hyperlink to an Excel worksheet.
 ## REST API
 
 ```bash
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks
 ```
 
 The request parameters are:
 
-| Parameter Name | Type    | Location                         | Description                              |
-|----------------|---------|----------------------------------|------------------------------------------|
-| name           | string  | path                             | Document name.                           |
-| sheetName      | string  | path                             | Worksheet name.                          |
-| firstRow       | integer | query                            |                                          |
-| firstColumn    | integer | query                            |                                          |
-| totalRows      | integer | query                            |                                          |
-| totalColumns   | integer | query                            |                                          |
-| address        | string  | query                            |                                          |
-| folder         | string  | query                            | The document folder.                     |
-| storageName    | string  | query                            | Storage name.                            |
+| Parameter Name | Type    | Location | Description |
+|----------------|---------|----------|-------------|
+| name           | string  | path     | Document name. |
+| sheetName      | string  | path     | Worksheet name. |
+| firstRow       | integer | query    | Zero‑based index of the first row of the range to which the hyperlink will be applied. |
+| firstColumn    | integer | query    | Zero‑based index of the first column of the range to which the hyperlink will be applied. |
+| totalRows      | integer | query    | Number of rows that the hyperlink range spans. |
+| totalColumns   | integer | query    | Number of columns that the hyperlink range spans. |
+| address        | string  | query    | The target URL that the hyperlink points to (URL‑encoded). |
+| folder         | string  | query    | The document folder. |
+| storageName    | string  | query    | Storage name. |
+
+The request can also include a JSON body containing the same fields (`Address`, `FirstRow`, `FirstColumn`, `TotalRows`, `TotalColumns`). Supplying the body is useful when you prefer a payload over query‑string parameters.
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Hypelinks/PutWorksheetHyperlink) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -60,6 +62,8 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/hyperli
 {{< /tab >}}
 
 {{< /tabs >}}
+
+If the request fails, the API returns standard HTTP error codes (e.g., 400 Bad Request, 401 Unauthorized, 404 Not Found, 500 Internal Server Error) together with a JSON payload that contains an error message and code.
 
 ## Cloud SDK Family
 
