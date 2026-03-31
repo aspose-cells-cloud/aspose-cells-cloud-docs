@@ -1,13 +1,15 @@
 ---
-title: "Delete a Date Filter"
+title: "Delete a Date Filter – Aspose.Cells Cloud"
 second_title: "Document"
 linktitle: "Delete date filter"
 type: docs
 url: /autofilter/delete-date-filter/
-aliases: [/remove-a-date-filter/,/autofilter/delete-a-date-filter/]
+aliases:
+  - /remove-a-date-filter/
+  - /autofilter/delete-a-date-filter/
 weight: 100
-keywords: "Aspose.Cells Cloud, delete date filter, Excel worksheet, AutoFilter, REST API"
-description: "Learn how to use the Aspose.Cells Cloud REST API to delete a date filter from an Excel worksheet. Includes request details, cURL example, and SDK code samples for multiple languages."
+keywords: "Aspose.Cells, delete date filter, Excel AutoFilter, REST API, SDK"
+description: "Learn how to delete a date filter from an Excel worksheet using the Aspose.Cells Cloud REST API. Includes endpoint, parameters, HTTPS cURL example, response payload, and SDK code samples."
 ---
 
 This REST API deletes a date filter on an Excel worksheet.
@@ -15,25 +17,25 @@ This REST API deletes a date filter on an Excel worksheet.
 ## REST API
 
 ```bash
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/dateFilter
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/dateFilter
 ```
 
 The request parameters are:
 
-| Parameter Name         | Type    | Location | Description                                           |
-|------------------------|---------|----------|-------------------------------------------------------|
-| name                   | string  | path     | Name of the Excel file.                               |
-| sheetName              | string  | path     | Worksheet name.                                       |
-| fieldIndex             | integer | query    | Zero‑based index of the column to which the filter is applied. |
-| dateTimeGroupingType   | string  | query    | Grouping type for the date filter (e.g., Year, Month, Day). |
-| year                   | integer | query    | Year component of the filter (default 0).             |
-| month                  | integer | query    | Month component of the filter (default 0).            |
-| day                    | integer | query    | Day component of the filter (default 0).              |
-| hour                   | integer | query    | Hour component of the filter (default 0).             |
-| minute                 | integer | query    | Minute component of the filter (default 0).           |
-| second                 | integer | query    | Second component of the filter (default 0).           |
-| folder                 | string  | query    | Folder path in storage where the file is located.     |
-| storageName            | string  | query    | Name of the Aspose Cloud storage.                     |
+| Parameter Name       | Type    | Location | Description                                                                                     |
+|----------------------|---------|----------|-------------------------------------------------------------------------------------------------|
+| name                 | string  | path     | Name of the Excel file.                                                                         |
+| sheetName            | string  | path     | Worksheet name.                                                                                 |
+| fieldIndex           | integer | query    | Zero‑based index of the column to which the filter is applied.                                 |
+| dateTimeGroupingType | string  | query    | Grouping type for the date filter (e.g., Year, Month, Day).                                    |
+| year                 | integer | query    | Year component of the filter (default 0).                                                       |
+| month                | integer | query    | Month component of the filter (default 0).                                                      |
+| day                  | integer | query    | Day component of the filter (default 0).                                                        |
+| hour                 | integer | query    | Hour component of the filter (default 0).                                                       |
+| minute               | integer | query    | Minute component of the filter (default 0).                                                     |
+| second               | integer | query    | Second component of the filter (default 0).                                                     |
+| folder               | string  | query    | Folder path in storage where the file is located.                                               |
+| storageName          | string  | query    | Name of the Aspose Cloud storage.                                                               |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/AutoFilter/DeleteWorksheetDateFilter) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -44,11 +46,11 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/dateFilter?fieldIndex=0&dateTimeGroupingType=Year&year=1920" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/dateFilter?fieldIndex=0&dateTimeGroupingType=Year&year=1920" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
