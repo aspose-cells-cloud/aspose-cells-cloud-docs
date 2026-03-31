@@ -1,13 +1,39 @@
 ---
-title: "Get"
+title: "Get Worksheet Hyperlink"
 type: docs
 url: /hyperlinks/get/
-keywords: "Aspose.Cells Cloud, Excel hyperlink, REST API, get worksheet hyperlink"
-description: "Retrieve a hyperlink from an Excel worksheet using Aspose.Cells Cloud REST API. Supports multiple SDKs and programming languages."
+keywords: "Aspose.Cells Cloud, Get Worksheet Hyperlink, Excel hyperlink API, REST, JWT authentication"
+description: "Retrieve a specific hyperlink from an Excel worksheet using Aspose.Cells Cloud API (v3.0). Includes endpoint, parameters, cURL example, authentication steps, error handling, and SDK snippets."
 weight: 10
 ---
 
-This REST API retrieves a worksheet hyperlink by its index on an Excel worksheet.
+This REST API retrieves a worksheet **hyperlink** using the **Aspose.Cells Get Hyperlink API**.
+
+## Prerequisites
+
+Before calling the endpoint, ensure that:
+
+* The Excel file is already uploaded to the chosen storage.
+* You know the **storage name** (if a custom storage is used) and the **folder** path where the file resides.
+* The worksheet name and the zero‑based **hyperlink index** you want to read are known.
+
+## Authentication
+
+The API requires a JWT token in the `Authorization` header.
+
+1. Request a token from the Aspose Cloud OAuth endpoint:
+
+   ```bash
+   curl -X POST "https://api.aspose.cloud/connect/token" \
+        -H "Content-Type: application/x-www-form-urlencoded" \
+        -d "grant_type=client_credentials&client_id=<your_client_id>&client_secret=<your_client_secret>"
+   ```
+
+2. The response contains an `access_token`. Use it as follows:
+
+   ```bash
+   -H "Authorization: Bearer <access_token>"
+   ```
 
 ## REST API
 
@@ -15,15 +41,15 @@ This REST API retrieves a worksheet hyperlink by its index on an Excel worksheet
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks/{hyperlinkIndex}
 ```
 
-The request parameters are:
+The request parameters include:
 
-| Parameter Name | Type   | Location | Description                                    |
-|----------------|--------|----------|------------------------------------------------|
-| name           | string | path     | The name of the Excel file.                    |
-| sheetName      | string | path     | The name of the worksheet containing the link. |
-| hyperlinkIndex | integer| path     | Zero‑based index of the hyperlink to retrieve. |
-| folder         | string | query    | The folder where the document is stored.       |
-| storageName    | string | query    | The name of the storage service.               |
+| Parameter Name | Type    | Location | Description                                   |
+|----------------|---------|----------|-----------------------------------------------|
+| name           | string  | path     | The name of the Excel file.                   |
+| sheetName      | string  | path     | The name of the worksheet containing the link.|
+| hyperlinkIndex | integer | path     | Zero‑based index of the hyperlink to retrieve.|
+| folder         | string  | query    | The folder where the document is stored.      |
+| storageName    | string  | query    | The name of the storage service.              |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Hyperlinks/GetWorksheetHyperlink) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -72,6 +98,15 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/hyperli
 {{< /tab >}}
 
 {{< /tabs >}}
+
+## Error Responses
+
+| HTTP Status | Description                              | Recommended Action                              |
+|-------------|------------------------------------------|-------------------------------------------------|
+| 400         | Bad request – missing or invalid parameters. | Verify that all required path and query parameters are correct. |
+| 401         | Unauthorized – token missing or expired. | Obtain a fresh JWT token using the authentication steps above. |
+| 404         | Not found – file, worksheet, or hyperlink index does not exist. | Check the file name, worksheet name, folder, storage name, and hyperlink index. |
+| 500         | Internal server error – unexpected condition on the server. | Retry later or contact Aspose support if the problem persists. |
 
 ## Cloud SDK Family
 
@@ -130,3 +165,64 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
+
+---
+
+*Written by the Aspose Cloud Documentation Team*
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebAPI",
+  "name": "Aspose.Cells Get Worksheet Hyperlink",
+  "description": "Retrieves a specific hyperlink from an Excel worksheet.",
+  "url": "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks/{hyperlinkIndex}",
+  "documentation": "https://docs.aspose.cloud/cells/hyperlinks/get/",
+  "version": "3.0",
+  "endpoint": {
+    "@type": "EntryPoint",
+    "urlTemplate": "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks/{hyperlinkIndex}",
+    "httpMethod": "GET",
+    "parameter": [
+      {
+        "name": "name",
+        "description": "Excel file name",
+        "required": true,
+        "valueRequired": true,
+        "in": "path"
+      },
+      {
+        "name": "sheetName",
+        "description": "Worksheet name",
+        "required": true,
+        "valueRequired": true,
+        "in": "path"
+      },
+      {
+        "name": "hyperlinkIndex",
+        "description": "Zero‑based hyperlink index",
+        "required": true,
+        "valueRequired": true,
+        "in": "path"
+      },
+      {
+        "name": "folder",
+        "description": "Folder where the file is stored",
+        "required": false,
+        "in": "query"
+      },
+      {
+        "name": "storageName",
+        "description": "Name of the storage service",
+        "required": false,
+        "in": "query"
+      }
+    ]
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks/{hyperlinkIndex}",
+    "query-input": "required name=param1, required sheetName=param2, required hyperlinkIndex=param3"
+  }
+}
+</script>
