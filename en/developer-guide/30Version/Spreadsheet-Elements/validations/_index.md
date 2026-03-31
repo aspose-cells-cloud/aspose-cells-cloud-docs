@@ -1,11 +1,11 @@
 ---
-title: "Working with Excel validation"
+title: "Working with Excel Data Validation"
 second_title: "Document"
 linktitle: "Validations"
 type: docs
 url: /validations/
-keywords: "Excel validation, data validation, Aspose.Cells Cloud, REST API, spreadsheet, Office Cloud"
-description: "Learn how to manage Excel data validations using Aspose.Cells Cloud REST API. Add, retrieve, update, delete, and clear validation rules programmatically across multiple languages."
+keywords: "Excel data validation, Aspose.Cells Cloud, REST API, spreadsheet, Office Cloud"
+description: "Learn how to add, retrieve, update, delete, and clear Excel data validation rules programmatically with Aspose.Cells Cloud REST API. Includes examples for .NET, Java, Python, and PHP."
 weight: 100
 ---
 
@@ -13,13 +13,13 @@ Data validation is a feature in Microsoft Excel used to control what a user ca
 
 For example, a user can specify a meeting scheduled between 9:00 AM and 6:00 PM.
 
-Data validation can be used to ensure a value is a positive number, a date between the 15th and 30th of a month, a date occurring within the next 30 days, or a text entry containing fewer than 25 characters, etc.
+Data validation can be used to ensure a value is a positive number, a date between the 15th and 30th of a month, a date occurring within the next 30 days, or a text entry containing fewer than 25 characters, and so on.
 
 ## Working with validations on an Excel file
 
-- [How to add validation information from an Excel worksheet](/cells/validations/delete/)
-- [How to get validation information from an Excel worksheet](/cells/validations/get/)
-- [How to get all validations information from an Excel worksheet](/cells/validations/get-all/)
-- [How to delete a validation information from an Excel worksheet](/cells/validations/delete/)
-- [How to clear all validations information from an Excel worksheet](/cells/validations/clear/)
-- [How to update a validation information on an Excel worksheet](/cells/validations/update/)
+- [How to add a validation rule to an Excel worksheet](/cells/validations/add/)
+- [How to get a validation rule from an Excel worksheet](/cells/validations/get/)
+- [How to get all validation rules from an Excel worksheet](/cells/validations/get-all/)
+- [How to delete a validation rule from an Excel worksheet](/cells/validations/delete/)
+- [How to clear all validation rules from an Excel worksheet](/cells/validations/clear/)
+- [How to update a validation rule on an Excel worksheet](/cells/validations/update/)
