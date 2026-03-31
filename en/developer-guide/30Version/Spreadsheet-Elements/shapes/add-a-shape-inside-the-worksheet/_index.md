@@ -1,16 +1,17 @@
 ---
-title: "Add a shape on an Excel worksheet"
+title: "Add a Shape to an Excel Worksheet"
 second_title: "Document"
 linktitle: "Add"
 type: docs
 url: /shapes/add/
 aliases: [/add-a-shape-inside-the-worksheet/]
-keywords: "Add shape, Excel worksheet, Aspose.Cells Cloud, REST API"
-description: "Aspose.Cells Cloud REST API enables adding shapes to an Excel worksheet. It is supported by SDKs for Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift."
+keywords: "Aspose.Cells, add shape, Excel API, REST API, cloud SDK, shapeDTO, drawing type"
+description: "Learn how to add shapes (arc, line, rectangle, etc.) to an Excel worksheet using Aspose.Cells Cloud REST API v3.0. Includes request syntax, required parameters, authentication steps, and sample SDK code."
 weight: 30
 ---
 
-This REST API adds a shape to an Excel worksheet.
+This REST API adds a shape to an Excel worksheet.  
+The endpoint belongs to **API version v3.0**; ensure that you use a JWT access token obtained through the Aspose Cloud OAuth2 flow (client‑id/client‑secret) and include it in the `Authorization: Bearer <token>` header.
 
 ## REST API
 
@@ -20,20 +21,20 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes
 
 The request parameters are:
 
-| Parameter Name | Type   | Location                     | Description |
-|----------------|--------|------------------------------|-------------|
-| name           | string | path                         | Document name. |
-| sheetName      | string | path                         | Worksheet name. |
-| shapeDTO       | object | body                         | JSON object that describes the shape to be added. |
-| drawingType    | string | query                        | Shape object type (e.g., `arc`, `line`, `rectangle`). |
-| upperLeftRow   | integer| query                        | Upper‑left row index of the shape. |
-| upperLeftColumn| integer| query                        | Upper‑left column index of the shape. |
-| top            | integer| query                        | Vertical offset of the shape from its top edge, in pixels. |
-| left           | integer| query                        | Horizontal offset of the shape from its left edge, in pixels. |
-| width          | integer| query                        | Width of the shape, in pixels. |
-| height         | integer| query                        | Height of the shape, in pixels. |
-| folder         | string | query                        | Folder that contains the document. |
-| storageName    | string | query                        | Name of the storage. |
+| Parameter Name | Type   | Location | Description |
+|----------------|--------|----------|-------------|
+| name | string | path | Document name. |
+| sheetName | string | path | Worksheet name. |
+| shapeDTO | object | body | JSON object that describes the shape to be added (see the OpenAPI specification for the full schema). |
+| drawingType | string | query | Shape object type (e.g., `arc`, `line`, `rectangle`). |
+| upperLeftRow | integer | query | Upper‑left row index of the shape. |
+| upperLeftColumn | integer | query | Upper‑left column index of the shape. |
+| top | integer | query | Vertical offset of the shape from its top edge, in pixels. |
+| left | integer | query | Horizontal offset of the shape from its left edge, in pixels. |
+| width | integer | query | Width of the shape, in pixels. |
+| height | integer | query | Height of the shape, in pixels. |
+| folder | string | query | Folder that contains the document. |
+| storageName | string | query | Name of the storage. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Shapes/PutWorksheetShape) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -58,9 +59,20 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/shapes
 ```json
 {
   "Code": 200,
-  "Status": "OK"
+  "Status": "OK",
+  "ShapeId": 5
 }
 ```
+
+*The successful response returns the HTTP status code, a textual status, and the identifier of the newly created shape (`ShapeId`).*  
+
+Typical error responses include:
+
+- **400 Bad Request** – missing or invalid parameters.  
+- **401 Unauthorized** – invalid or missing JWT token.  
+- **404 Not Found** – the specified worksheet or document does not exist.  
+
+Each error is returned as a JSON object containing `Code` and `Message` fields.
 
 {{< /tab >}}
 
