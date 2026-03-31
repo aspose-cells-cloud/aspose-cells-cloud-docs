@@ -1,40 +1,70 @@
----
-title: "Unprotect an Excel workbook"
-second_title: "Document"
-linktitle: "Unprotect Excel file"
-type: docs
-url: /excel-file-unprotect/
-aliases:
-  - /unprotect-excel-workbooks/
-  - /workbook/unprotect/
-keywords: "Excel, workbook, unprotect, REST API, Aspose.Cells, cloud"
-description: "REST API to unprotect an Excel workbook using Aspose.Cells Cloud."
-weight: 60
----
+---  
+title: "Unprotect Excel Workbook – Aspose.Cells Cloud API"  
+second_title: "Document"  
+linktitle: "Unprotect Excel File"  
+type: docs  
+url: /excel-file-unprotect/  
+aliases:  
+  - /unprotect-excel-workbooks/  
+  - /workbook/unprotect/  
+keywords: "Aspose Cells, Excel unprotect API, remove workbook protection, REST API, cloud spreadsheet"  
+description: "Learn how to remove protection from an Excel workbook using Aspose.Cells Cloud REST API. Includes request syntax, parameters, cURL example, and SDK code in multiple languages."  
+weight: 60  
+---  
 
-This REST API unprotects an Excel workbook.
+Use this REST API to unprotect an Excel workbook.
 
-**Query Parameters**
+### Prerequisites  
+
+1. An Aspose.Cells Cloud account.  
+2. API **client id** and **client secret** (used to obtain an OAuth 2.0 access token).  
+3. A storage location (default “DefaultStorage”) where the workbook is stored.  
+4. The API version `v3.0` (used in the request URL).
+
+### Authentication  
+
+The API requires an OAuth 2.0 **Bearer** token.  
+
+```http
+Authorization: Bearer <access_token>
+```  
+
+Obtain the token by sending a `POST` request to `https://api.aspose.cloud/connect/token` with your client id and secret. Include the token in every request header as shown above.
+
+### Path Parameters  
+
+| Parameter | Type   | Description                                    | Required |
+|-----------|--------|------------------------------------------------|----------|
+| **name**  | string | Name of the workbook file (including extension). | Yes      |
+
+### Query Parameters  
 
 | Parameter Name | Type   | Description                                             |
 |----------------|--------|---------------------------------------------------------|
 | folder         | string | Path to the folder that contains the original workbook. |
 | storageName    | string | Name of the storage service where the workbook resides. |
 
-**Request Body Parameters**
+### Request Body Parameters  
 
 | Parameter Name | Type                     | Description                                          |
 |----------------|--------------------------|------------------------------------------------------|
 | protection     | WorkbookProtectionRequest | Object that specifies the protection settings to remove. |
 
-**WorkbookProtectionRequest**
+#### WorkbookProtectionRequest  
 
 | Parameter Name | Type   | Description                                                                 |
 |----------------|--------|-----------------------------------------------------------------------------|
-| ProtectionType | string | Type of protection to remove (ALL, CONTENTS, NONE, OBJECTS, SCENARIOS, STRUCTURE, WINDOWS). |
+| ProtectionType | string | Type of protection to remove (`ALL`, `CONTENTS`, `NONE`, `OBJECTS`, `SCENARIOS`, `STRUCTURE`, `WINDOWS`). |
 | Password       | string | Password required to remove the protection (optional).                     |
 
-## REST API
+### Step‑by‑Step Request  
+
+1. **Generate an access token** and add the `Authorization: Bearer <token>` header.  
+2. **Construct the URL**: `https://api.aspose.cloud/v3.0/cells/{name}/protection` (replace `{name}` with the workbook filename).  
+3. **Add optional query parameters** `folder` and `storageName` if needed.  
+4. **Send a `DELETE` request** with the JSON body shown below.
+
+### REST API  
 
 | **API**                     | **Type** | **Description**      | **Swagger Link** |
 |-----------------------------|----------|----------------------|------------------|
@@ -42,22 +72,17 @@ This REST API unprotects an Excel workbook.
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/DeleteUnProtectWorkbook) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL.
-
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
-
-{{< tab tabNum="1" >}}
+#### cURL Example  
 
 ```bash
-curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/protection" \
+curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/protection?folder=MyFolder&storageName=MyStorage" \
+     -H "Authorization: Bearer <access_token>" \
      -H "accept: application/json" \
      -H "Content-Type: application/json" \
-     -d '{ "ProtectionType": "all", "Password": "aspose"}'
+     -d '{ "ProtectionType": "ALL", "Password": "aspose"}'
 ```
 
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
+#### Response (Success)  
 
 ```json
 {
@@ -66,11 +91,18 @@ curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/protection" \
 }
 ```
 
-{{< /tab >}}
+### Error Responses  
 
-{{< /tabs >}}
+| HTTP Status | Code | Description |
+|-------------|------|-------------|
+| 400 | BadRequest | Missing or invalid parameters. |
+| 401 | Unauthorized | Invalid or missing access token. |
+| 404 | NotFound | Specified workbook not found in the given folder/storage. |
+| 500 | InternalServerError | Unexpected server error. |
 
-## Cloud SDK Family
+Each error returns a JSON object containing `Code` and `Message`.
+
+## Cloud SDK Family  
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
