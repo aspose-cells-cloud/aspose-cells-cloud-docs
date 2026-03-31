@@ -5,39 +5,47 @@ linktitle: "Delete"
 type: docs
 url: /oleobjects/delete/
 aliases: [/delete-a-specific-oleobject-from-excel-worksheet/]
-keywords: "Delete OLE object, Excel worksheet, Aspose.Cells Cloud, REST API, SDK"
-description: "Learn how to delete an OLE object from an Excel worksheet using the Aspose.Cells Cloud REST API. Includes request details, cURL example, and SDK code samples for multiple programming languages."
+keywords: "Aspose.Cells Cloud Delete OLE Object, Excel worksheet, REST API, SDK"
+description: "Learn how to delete an OLE object from an Excel worksheet using the Aspose.Cells Cloud REST API (v4.0). Includes HTTPS endpoint, authentication steps, cURL example, SDK snippets, error‑handling guidance, and next‑step links."
 weight: 50
 ---
 
-This REST API deletes an OLE object in an Excel worksheet.
+### Introduction  
 
-## REST API
+This page explains how to delete a specific OLE object from a worksheet in an Excel workbook using **Aspose.Cells Cloud**. An OLE object can be a linked image, chart, or any embedded object that Excel stores as a separate entity.
+
+### Prerequisites  
+
+- An active Aspose.Cloud account.  
+- A valid JWT access token (see the **Authentication** section).  
+- The workbook must be stored in Aspose Cloud storage or a location accessible to the service.  
+
+## REST API  
 
 ```bash
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects/{oleObjectIndex}
+DELETE https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{sheetName}/oleobjects/{oleObjectIndex}
 ```
 
-The request parameters are:
+The request parameters include:
 
-| Parameter Name | Type    | Location                     | Description                                    |
-|----------------|---------|------------------------------|------------------------------------------------|
-| name           | string  | path                         | The workbook name.                             |
-| sheetName      | string  | path                         | The worksheet name.                            |
-| oleObjectIndex | integer | path                         | Index of the OLE object to be deleted.         |
-| folder         | string  | query                        | The folder that contains the workbook.         |
-| storageName    | string  | query                        | The name of the storage service.               |
+| Parameter name | Type    | Location | Description                                    |
+|----------------|---------|----------|------------------------------------------------|
+| name           | string  | path     | The workbook name.                             |
+| sheetName      | string  | path     | The worksheet name.                            |
+| oleObjectIndex | integer | path     | Index of the OLE object to be deleted.         |
+| folder         | string  | query    | The folder that contains the workbook. (optional) |
+| storageName    | string  | query    | The name of the storage service. (optional)   |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/OleObjects/DeleteWorksheetOleObject) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make the call with cURL.
+You can use the **cURL command-line tool** to access Aspose.Cells web services easily. The following example shows how to make the call with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/Embedded_OleObject_Sample_Book1.xlsx/worksheets/Sheet1/oleobjects/0" \
+curl -v "https://api.aspose.cloud/v4.0/cells/Embedded_OleObject_Sample_Book1.xlsx/worksheets/Sheet1/oleobjects/0" \
   -X DELETE \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
@@ -58,6 +66,44 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Embedded_OleObject_Sample_Book1.xlsx
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### Authentication  
+
+Before sending the DELETE request, obtain a JWT token:
+
+```bash
+POST https://api.aspose.cloud/connect/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=client_credentials&client_id=<your_client_id>&client_secret=<your_client_secret>
+```
+
+**Response**
+
+```json
+{
+  "access_token": "<jwt token>",
+  "expires_in": 3600,
+  "token_type": "Bearer"
+}
+```
+
+Include the token in the `Authorization` header as shown in the cURL example above. Tokens are valid for one hour.
+
+### Response details  
+
+| HTTP status | Description | Sample JSON |
+|-------------|-------------|-------------|
+| **200 OK** | The OLE object was deleted successfully. | `{ "Code": 200, "Status": "OK" }` |
+| **401 Unauthorized** | Missing or invalid JWT token. | `{ "Code": 401, "Message": "Access token is missing or invalid." }` |
+| **404 Not Found** | The specified workbook, worksheet, or OLE object index does not exist. | `{ "Code": 404, "Message": "OLE object index out of range." }` |
+| **400 Bad Request** | Required parameters are missing or malformed. | `{ "Code": 400, "Message": "Invalid request parameters." }` |
+
+Handle these responses in your application by checking the status code and displaying the accompanying message.
+
+### Version & Compatibility  
+
+The endpoint follows the latest stable API version **v4.0**. If you are using an older version, upgrade to benefit from security fixes and new features. See the [Aspose.Cells Cloud changelog](https://github.com/aspose-cells-cloud/aspose-cells-cloud/blob/master/CHANGELOG.md) for details.
 
 ## Cloud SDK Family
 
@@ -116,3 +162,11 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### Next steps  
+
+- **Get OLE objects** – retrieve a list of OLE objects in a worksheet.  
+- **Update an OLE object** – modify properties such as position or size.  
+- **Convert OLE object to an image** – export the embedded object for use elsewhere.  
+
+These related operations are linked from the left‑hand navigation pane.  
