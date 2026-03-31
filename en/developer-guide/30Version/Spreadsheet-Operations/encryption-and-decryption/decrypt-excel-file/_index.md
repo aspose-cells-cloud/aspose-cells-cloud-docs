@@ -1,37 +1,51 @@
 ---
-title: "Decrypt an Excel workbook"
+title: "Decrypt an Excel Workbook"
 second_title: "Document"
 linktitle: "Decrypt an Excel file"
 type: docs
 url: /excel-file-decrypt/
 aliases: [/decrypt-excel-workbooks/,/workbook/decrypt/]
-keywords: "Excel, Decrypt, Aspose.Cells, REST API, Cloud SDK, Encryption"
-description: "Learn how to use the Aspose.Cells Cloud REST API to decrypt an Excel workbook, including request parameters, cURL example, and SDK code samples."
+keywords: "Aspose.Cells, Excel decryption, REST API, cloud SDK"
+description: "Learn how to decrypt an Excel workbook using Aspose.Cells Cloud REST API. Includes required parameters, cURL example, SDK code samples, and error handling details."
 weight: 50
 ---
 
-This REST API decrypts an Excel workbook.
+## Prerequisites
 
-**Query Parameters**
+- An active Aspose Cloud account.  
+- A valid **access token** obtained from the Aspose Cloud OAuth endpoint (client ID and secret are required).  
+- The workbook you want to decrypt must be stored in a supported Aspose storage.  
+
+## Authentication
+
+All requests to the Cells API must include the `Authorization` header:
+
+```
+Authorization: Bearer <access_token>
+```
+
+Replace `<access_token>` with the token you obtained in the previous step.
+
+## Query Parameters
 
 | Parameter Name | Type   | Description                              |
 |----------------|--------|------------------------------------------|
 | folder         | string | Folder path of the original workbook.   |
 | storageName    | string | Name of the storage where the workbook resides. |
 
-**Request Body Parameter**
+## Request Body Parameter
 
 | Parameter Name | Type                     | Description                                 |
 |----------------|--------------------------|---------------------------------------------|
 | encryption     | WorkbookEncryptionRequest| Encryption settings required for decryption.|
 
-**WorkbookEncryptionRequest**
+### WorkbookEncryptionRequest
 
-| Parameter Name | Type    | Description                                                   |
-|----------------|---------|---------------------------------------------------------------|
-| EncryptionType | string  | Encryption algorithm (XOR, Compatible, EnhancedCryptographicProviderV1, StrongCryptographicProvider). |
-| KeyLength      | integer | Length of the encryption key in bits.                         |
-| Password       | string  | Password used for decryption.                                 |
+| Parameter Name | Type   | Description                                                                                                                               |
+|----------------|--------|-------------------------------------------------------------------------------------------------------------------------------------------|
+| EncryptionType | string | Encryption algorithm (`XOR`, `Compatible`, `EnhancedCryptographicProviderV1`, `StrongCryptographicProvider`).                           |
+| KeyLength      | integer| Length of the encryption key in bits.                                                                                                     |
+| Password       | string | Password used for decryption.                                                                                                            |
 
 ## REST API
 
@@ -41,7 +55,7 @@ This REST API decrypts an Excel workbook.
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDecryptWorkbook) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use **cURL** to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+You can use **cURL** to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
@@ -51,7 +65,7 @@ You can use **cURL** to access Aspose.Cells web services easily. The following e
 curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/encryption" \
      -H "accept: application/json" \
      -H "Content-Type: application/json" \
-     -H "x-aspose-client: Containerize.Swagger" \
+     -H "Authorization: Bearer <access_token>" \
      -d '{ "EncryptionType": "XOR", "KeyLength": 1280, "Password": "aspose"}'
 ```
 
@@ -66,9 +80,21 @@ curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/encryption" \
 }
 ```
 
+**Possible error responses**
+
+| HTTP Status | Code | Description                              | Example |
+|-------------|------|------------------------------------------|---------|
+| 400 | `BadRequest` | The request is malformed or missing required fields. | `{ "Code":"400", "Message":"Invalid request body." }` |
+| 401 | `Unauthorized` | Missing or invalid authentication token. | `{ "Code":"401", "Message":"Access token is invalid or expired." }` |
+| 500 | `InternalError` | An unexpected server error occurred. | `{ "Code":"500", "Message":"Unexpected error." }` |
+
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### Edge‑Case Note
+
+The API supports only the encryption algorithms listed in the **EncryptionType** field. Attempting to decrypt a workbook encrypted with an unsupported algorithm or using a key length that exceeds the algorithm’s maximum will result in a `400 BadRequest` error.
 
 ## Cloud SDK Family
 
@@ -127,3 +153,10 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
+
+## Next Steps
+
+- **Encrypt an Excel workbook** – learn how to protect a file before uploading it.  
+- **Protect an Excel workbook** – explore additional security options such as password protection for worksheets.  
+
+---
