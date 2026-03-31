@@ -1,34 +1,55 @@
 ---
-title: "Delete a picture in an Excel file"
+title: "Delete a Picture from an Excel Worksheet – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Delete"
 type: docs
 url: /pictures/delete/
 aliases: [/delete-a-specific-picture-from-excel-worksheet/]
-keywords: "Aspose.Cells Cloud, REST API, delete picture, Excel, worksheet, SDK"
-description: "Learn how to use the Aspose.Cells Cloud REST API to delete a picture from an Excel worksheet. This guide includes the required HTTP DELETE request, parameter details, and code examples for multiple SDKs."
+keywords: "Aspose.Cells, Cloud API, delete picture, Excel worksheet, REST"
+description: "Delete a picture from an Excel worksheet using Aspose.Cells Cloud REST API. Learn the DELETE endpoint, required parameters, authentication, error codes, and example code."
 weight: 50
 ---
 
 This REST API deletes a picture from an Excel worksheet.
 
+## Prerequisites
+
+* Aspose.Cells Cloud API version **v3.0** (or later).  
+* A workbook must already be uploaded to your Aspose Cloud storage.  
+* The picture you want to delete can be identified with the **Get all pictures** operation to obtain its zero‑based `pictureIndex`.  
+
+## Authentication
+
+To call any Aspose.Cells Cloud endpoint you need a valid **JWT access token**.  
+Obtain the token by sending an OAuth 2.0 request with your client‑id and client‑secret:
+
+```bash
+curl -X POST "https://api.aspose.cloud/connect/token" \
+  -H "Content-Type: application/x-www-form-urlencoded" \
+  -d "grant_type=client_credentials&client_id=<your_client_id>&client_secret=<your_client_secret>"
+```
+
+The response contains an `access_token` field. Use this token in the `Authorization` header of subsequent API calls:
+
+```
+Authorization: Bearer <access_token>
+```
+
 ## REST API
 
 ```bash
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}
 ```
 
-The request parameters are:
+### Request Parameters
 
-| Parameter Name | Type    | Location | Description                                            |
-|----------------|---------|----------|--------------------------------------------------------|
-| name           | string  | path     | The name of the workbook file.                         |
-| sheetName      | string  | path     | The name of the worksheet that contains the picture.  |
-| pictureIndex   | integer | path     | The zero‑based index of the picture to be deleted.    |
-| folder         | string  | query    | The folder where the workbook is stored.               |
-| storageName    | string  | query    | The name of the storage service.                       |
-
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Pictures/DeleteWorksheetPicture) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
+| Parameter Name | Type    | Location | Required | Description                                            |
+|----------------|---------|----------|----------|--------------------------------------------------------|
+| name           | string  | path     | Yes      | The name of the workbook file.                         |
+| sheetName      | string  | path     | Yes      | The name of the worksheet that contains the picture.  |
+| pictureIndex   | integer | path     | Yes      | The zero‑based index of the picture to be deleted.    |
+| folder         | string  | query    | No       | The folder where the workbook is stored.               |
+| storageName    | string  | query    | No       | The name of the storage service (optional).           |
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make the call with cURL.
 
@@ -37,7 +58,7 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/pictures/1" \
+curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/pictures/0" \
   -X DELETE \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
@@ -58,6 +79,16 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/picture
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### Error Handling
+
+| HTTP Code | Meaning                              | Sample Error Payload |
+|-----------|--------------------------------------|----------------------|
+| 200       | Picture deleted successfully.        | `{ "Code": 200, "Status": "OK" }` |
+| 400       | Bad request – invalid parameters.   | `{ "Code": 400, "Message": "Invalid pictureIndex." }` |
+| 401       | Unauthorized – missing/invalid token.| `{ "Code": 401, "Message": "Access token is missing or invalid." }` |
+| 404       | Not found – workbook, worksheet, or picture does not exist. | `{ "Code": 404, "Message": "Resource not found." }` |
+| 500       | Internal server error.               | `{ "Code": 500, "Message": "Unexpected server error." }` |
 
 ## Cloud SDK Family
 
@@ -116,3 +147,48 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
+
+## Conclusion & See Also
+
+You have learned how to delete a specific picture from an Excel worksheet using the Aspose.Cells Cloud REST API, including authentication, required parameters, possible error responses, and sample code.  
+
+**Next steps**
+
+* **Add a picture** – see the *Add a picture* documentation.  
+* **Update a picture** – see the *Update a picture* documentation.  
+* **Clear all pictures** – see the *Clear all pictures* documentation.  
+
+---  
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I delete a specific picture from an Excel worksheet using Aspose.Cells Cloud?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Send a DELETE request to `https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}` with a valid JWT token. Replace `{name}`, `{sheetName}` and the zero‑based `{pictureIndex}` with your workbook name, worksheet name, and picture index respectively."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What HTTP status codes can I expect when deleting a picture, and what do they mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "200 OK – picture deleted successfully.<br>400 Bad Request – invalid parameters.<br>401 Unauthorized – missing or invalid JWT token.<br>404 Not Found – workbook, worksheet, or picture does not exist.<br>500 Internal Server Error – server‑side problem."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to specify the storage name when deleting a picture?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "`storageName` is optional; if omitted, the default storage configured for your Aspose Cloud account is used."
+      }
+    }
+  ]
+}
+</script>
