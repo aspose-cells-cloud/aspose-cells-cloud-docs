@@ -1,12 +1,12 @@
 ---
-title: "Export an area from an Excel worksheet"
+title: "Export a Worksheet Area to PNG, PDF, CSV – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Area"
 type: docs
 url: /worksheets/area-to-different-formats/
 aliases: [/get-worksheet-for-area/]
-keywords: "Export area, Excel worksheet, Aspose.Cells Cloud, format conversion, PDF, CSV, JSON, image, API"
-description: "Aspose.Cells Cloud REST API supports retrieving a worksheet’s cell area in various formats. SDKs are available for Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift."
+keywords: "Aspose.Cells, export worksheet area, Excel to PDF, Excel to PNG, REST API, SDK"
+description: "Learn how to export a specific cell range from an Excel worksheet to PNG, PDF, CSV and more using Aspose.Cells Cloud REST API or SDKs (C#, Java, Python, …)."
 weight: 230
 ---
 
@@ -34,7 +34,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1?format
 
 {{< tab tabNum="2" >}}
 
-Converted Image
+Converted image (binary PNG)
 
 {{< /tab >}}
 
