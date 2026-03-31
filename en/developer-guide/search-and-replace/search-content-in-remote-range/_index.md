@@ -1,96 +1,98 @@
 ---
-title: "Aspose.Cells Cloud Excel Text Search Web API - Find Text in Remote Spreadsheet Ranges"
+title: "Aspose.Cells Cloud Excel Text Search Web API – Find Text in Remote Spreadsheet Ranges"
 second_title: "Document"
-ArticleTitle: "Search Text in Remote Excel Spreadsheets - Find Data in Specific Ranges"
+ArticleTitle: "Search Text in Remote Excel Spreadsheets – Find Data in Specific Ranges"
 linktitle: "Search Remote Range Content"
 type: docs
 url: /search-content-in-remote-range/
-keywords: "Excel search API, text search API, find in spreadsheet API, range search API, Aspose Cells search API, remote Excel search, cloud spreadsheet search API, text lookup API, Excel data discovery API, workbook search API, API text finder"
-description: "Easily search for specific text within any range of remote Excel spreadsheets stored in cloud storage. Find data, formulas, or text across entire workbooks or specific cell ranges. Cloud-based search tool for quick data discovery without downloading files."
+keywords: "Aspose.Cells, Excel search API, remote range, cloud spreadsheet, text lookup"
+description: "Search for text, numbers, or formulas in a specific range of an Excel workbook stored in Aspose Cloud."
 weight: 100
 ---
 
-Programmatically search for specific text within any range of Excel spreadsheets using Aspose.Cells Cloud API. Find text, numbers, or formulas in remote files stored in cloud storage. RESTful API for automated data discovery, content analysis, and spreadsheet auditing workflows.
+Programmatically search for specific text within any range of Excel spreadsheets using Aspose.Cells Cloud API. Find text, numbers, or formulas in remote files stored in cloud storage. RESTful API for automated data discovery, content analysis, and spreadsheet‑auditing workflows.
 
-## **Search Content In Remote Range API**
+## Search Content In Remote Range API
+
+### Authentication
+
+The API uses OAuth 2.0 client‑credentials flow. Obtain an access token by sending a POST request to `https://api.aspose.cloud/connect/token` with your **client_id** and **client_secret**. Include the token in all subsequent calls:
+
+```
+Authorization: Bearer <access_token>
+```
 
 ### API Endpoint
 
 ```
-PUT http://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{cellArea}/search/content
+PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{cellArea}/search/content
 ```
 
-### **Request Parameters:**
+### Sample Request (cURL)
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-| :- | :- | :- |:- |
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/sample.xlsx/worksheets/Sheet1/ranges/B2:H100/search/content?searchText=Total&ignoreCase=true" \
+  -H "Authorization: Bearer {access_token}" \
+  -H "Accept: application/json"
+```
+
+### Request Parameters
+
+| Parameter Name | Type   | Path/Query/String/HTTPBody | Description |
+| :- | :- | :- | :- |
 | name | String | Path | **Required**. The filename (including extension) of the Excel workbook to search, e.g., `customer_data.xlsx`. |
 | worksheet | String | Path | **Required**. The exact name of the worksheet within the workbook to search in, e.g., `Orders_2024`. |
 | cellArea | String | Path | **Required**. The target cell range for the search, specified in A1 notation (e.g., `B2:H100`). The search is confined to this area. |
 | searchText | String | Query | **Required**. The specific text string, number, or partial content to find within the defined cell area. |
-| ignoringCase | Boolean | Query | **Optional**. When set to `true`, the search ignores case differences (e.g., "Report" matches "report"). Default is usually `false` (case-sensitive). |
+| ignoreCase | Boolean | Query | **Optional**. When set to `true`, the search ignores case differences (e.g., “Report” matches “report”). Default is `false` (case‑sensitive). |
 | folder | String | Query | **Optional**. The directory path in your cloud storage where the workbook is located. If omitted, the root directory is used. |
-| storageName | String | Query | **Optional**. The name identifier for a custom cloud storage configuration. If not specified, the default storage for the account is used. |
-| region | String | Query | **Optional**. The locale setting (e.g., `en-AU`) to apply, which may affect the interpretation of region-specific characters or formats during the search. |
-| password | String | Query | **Optional**. The password to decrypt and access a password-protected spreadsheet file. Omit if the file is not encrypted. |
+| storageName | String | Query | **Optional**. The identifier for a custom cloud storage configuration. If not specified, the default storage for the account is used. |
+| region | String | Query | **Optional**. The culture/region setting (e.g., `en‑AU`) that may affect interpretation of region‑specific characters or formats during the search. |
+| password | String | Query | **Optional**. The password to decrypt and access a password‑protected spreadsheet file. Omit if the file is not encrypted. |
 
-### **Response**
+### Sample Successful Response
 
 ```json
 {
-  "Name": "BrokenLinksResponse",
-  "Type": "Class",
-  "ParentName": "CellsCloudResponse",
-  "Properties": [
-    {
-      "Name": "BrokenLinks",
-      "DataType": {
-        "Identifier": "Container",
-        "Reference": "BrokenLink",
-        "ElementDataType": {
-          "Identifier": "Class",
-          "Reference": "BrokenLink",
-        },
-      }
-    },
-    {
-      "Name": "Code",
-      "DataType": {
-        "Identifier": "Integer",
-      }
-    },
-    {
-      "Name": "Status",
-      "DataType": {
-        "Identifier": "String",
-      }
-    }
-  ]
+  "Found": true,
+  "CellAddresses": ["B5", "C12", "F30"],
+  "Occurrences": 3
+}
+```
+
+### Response (Schema)
+
+```json
+{
+  "Found": "Boolean – Indicates whether the search text was found.",
+  "CellAddresses": [
+    "String[] – List of cell addresses (A1 notation) where matches were located."
+  ],
+  "Occurrences": "Integer – Total number of matches found."
 }
 ```
 
 ### Error Codes
 
-- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized**: Invalid access token. Or invalid client id and secret.
-- **404 Not Found**: The spreadsheet file not accessible.
-- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
+- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.  
+- **401 Unauthorized** – Invalid access token, client ID, or client secret.  
+- **404 Not Found** – The spreadsheet file is not accessible.  
+- **500 Server Error** – An unexpected condition prevented the server from fulfilling the request.
 
 ## Where should we use the Search content within the range of the Spreadsheet API?
 
-- **Large-scale Data Quality Check**: During the acceptance stage of the data warehouse ETL process, search for missing field descriptions, undefined abbreviations or placeholder text (such as `"TBD"` or `"NULL"`) in the data mapping table (such as `DataDictionary!B2:F1000`) to identify incomplete data definitions.
-- **Dynamic Report Generation and Content Extraction**: In the automated reporting system, intelligently search and extract the current period data blocks marked with specific identifiers (such as `"[KPI]"`) from the template worksheet containing mixed data (such as `Monthly_Metrics!C10:G50`), for assembling the final report.
-- **Contract and Legal Document Analysis**: When the legal team reviews the electronic spreadsheet appendix containing a large number of clauses, efficiently search for specific legal terms (such as `"liability limit"`) or contract party names or dates within the specified range (such as `Contract_Terms!A column`), to accelerate the review process.
+- **Large‑scale Data Quality Check** – During the acceptance stage of the data‑warehouse ETL process, search for missing field descriptions, undefined abbreviations, or placeholder text (e.g., `"TBD"` or `"NULL"`) in the data‑mapping table (`DataDictionary!B2:F1000`) to identify incomplete data definitions.  
+- **Dynamic Report Generation and Content Extraction** – In automated reporting systems, intelligently search and extract current‑period data blocks marked with specific identifiers (e.g., `"[KPI]"`) from template worksheets containing mixed data (`Monthly_Metrics!C10:G50`) for assembling the final report.  
+- **Contract and Legal Document Analysis** – When reviewing spreadsheet appendices that contain many clauses, efficiently locate specific legal terms (e.g., `"liability limit"`), party names, or dates within a defined range (`Contract_Terms!A:A`) to accelerate the review process.
 
 ## Why should you use the Search content within the range of the Spreadsheet API?
 
-- **Developer-Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared to building custom chart rendering solutions, this significantly reduces the development workload.
-- **Reduced Labor Costs**: Reduced the need for positions dedicated to document consolidation.
-- **Pay-per-use**: No upfront investment, only pay for API calls actually used.
-- **Zero Maintenance Costs**: No need to maintain servers, update software, or deal with compatibility issues.
-- **Preserves complex Excel formatting** in universally accessible PDF format.
+- **Developer‑friendly** – Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comprehensive documentation, which significantly reduces the development workload compared with building custom solutions.  
+- **Reduced labor costs** – Eliminates the need for dedicated positions handling document consolidation.  
+- **Pay‑per‑use** – No upfront investment; you only pay for the API calls actually used.  
+- **Zero maintenance costs** – No servers to maintain, no software updates, and no compatibility concerns.
 
-## How to Use the Search for broken links within the range of the Spreadsheet API with SDKs
+## How to Use the Search Content within the range of the Spreadsheet API with SDKs
 
 ### OpenAPI Specification
 
@@ -98,8 +100,7 @@ The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/SearchControl
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement search content within range of spreadsheets for cells with minimal code.
-Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement search content within a range of spreadsheets for cells with minimal code. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 
