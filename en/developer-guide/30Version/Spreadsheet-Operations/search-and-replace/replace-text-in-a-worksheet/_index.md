@@ -1,45 +1,63 @@
 ---
-title: "Replace text in an Excel worksheet"
+title: "Replace Text in an Excel Worksheet – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Replace in worksheet"
 type: docs
 url: /replace-text-in-a-worksheet/
 url: /worksheets/replace-text/
 aliases: [/replace-text-in-a-workbook/]
-keywords: "Excel, replace text, Aspose.Cells Cloud, REST API, spreadsheet, worksheet, API"
-description: "Learn how to use the Aspose.Cells Cloud REST API to replace text within an Excel worksheet. Includes request details, cURL example, and SDK code samples for multiple programming languages."
+keywords: "Aspose.Cells replace text API, Excel replace text, Aspose.Cells Cloud, REST API, spreadsheet, worksheet"
+description: "Learn how to replace text in an Excel worksheet using the Aspose.Cells Cloud API (v3.0). Includes prerequisites, authentication, request syntax, cURL example, SDK code samples, response details, and error handling."
 weight: 70
 ---
 
-This REST API replaces text in an Excel worksheet.
+This REST API replaces text in an Excel worksheet using the **Aspose.Cells replace text API**.
+
+## Prerequisites
+
+1. A valid Aspose Cloud client ID and client secret.  
+2. An access token obtained via OAuth/JWT (`https://api.aspose.cloud/connect/token`).  
+3. The workbook must be uploaded to Aspose Cloud storage (or already exist in the specified folder).  
+
+## Authentication
+
+All requests must include the following HTTP header:
+
+```
+Authorization: Bearer {access_token}
+```
+
+Replace `{access_token}` with the token acquired in the prerequisites step. The token should be refreshed before it expires.
 
 ## REST API
 
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/replaceText
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/replaceText
 ```
 
-The request parameters are:
+### Request Parameters
 
-| Parameter Name | Type   | Location                     | Description                                 |
-|----------------|--------|------------------------------|---------------------------------------------|
-| name           | string | path                         | The name of the Excel document.             |
-| sheetName      | string | path                         | The name of the worksheet.                  |
-| oldValue       | string | query                        | The text to be replaced.                    |
-| newValue       | string | query                        | The replacement text.                       |
-| folder         | string | query                        | The folder that contains the document.      |
-| storageName    | string | query                        | The name of the storage service.            |
+| Parameter Name | Type   | Location | Description                         |
+|----------------|--------|----------|-------------------------------------|
+| **name**       | string | path     | The name of the Excel workbook.     |
+| **sheetName**  | string | path     | The name of the worksheet.          |
+| **oldValue**   | string | query    | The text to be replaced.            |
+| **newValue**   | string | query    | The replacement text.               |
+| **folder**     | string | query    | The folder that contains the file.  |
+| **storageName**| string | query    | The storage service name.           |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorsheetTextReplace) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorsheetTextReplace) defines this publicly accessible interface.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
+You can use the cURL command‑line tool to call the service:
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/replaceText?oldValue=b&newValue=b11" -H "accept: application/json"
+curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/replaceText?oldValue=b&newValue=b11" \
+     -H "accept: application/json" \
+     -H "Authorization: Bearer {access_token}"
 ```
 
 {{< /tab >}}
@@ -65,6 +83,23 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/re
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### Response Details
+
+| Property | Type   | Description |
+|----------|--------|-------------|
+| **Matches** | integer | Number of cells where `oldValue` was replaced. |
+| **Worksheet.link.Href** | string | Relative URL of the affected worksheet. |
+| **Code** | integer | HTTP status code returned by the API (e.g., 200). |
+| **Status** | string | Textual representation of the status (e.g., “OK”). |
+
+### Error Handling
+
+| HTTP Status | Example JSON Payload | Meaning |
+|-------------|----------------------|---------|
+| **400** | `{ "Code": 400, "Message": "Invalid request.", "Description": "The parameter 'oldValue' is missing." }` | Bad request – required parameter missing or malformed. |
+| **401** | `{ "Code": 401, "Message": "Unauthorized.", "Description": "Access token is invalid or expired." }` | Authentication failure – obtain a new token. |
+| **404** | `{ "Code": 404, "Message": "Worksheet not found.", "Description": "The sheetName 'SheetX' does not exist." }` | The specified worksheet could not be located. |
 
 ## Cloud SDK Family
 
@@ -123,3 +158,11 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
+
+## See Also
+
+- [Find text in a worksheet](/cells/worksheets/find-text/)
+- [Replace text in a workbook](/cells/workbook/replace-text/)
+- [Search and replace overview](/cells/overview/search-replace/)
+
+---
