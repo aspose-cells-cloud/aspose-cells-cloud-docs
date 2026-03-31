@@ -1,17 +1,37 @@
 ---
-title: "Export Worksheet"
+title: "Export Worksheet – Aspose.Cells Cloud"
 second_title: "Document"
 linktitle: "Worksheet"
 type: docs
 url: /export-excel-worksheet-to-different-formats/
 aliases: [ /export/excel-worksheet-to-different-formats/]
-keywords: "Excel, worksheet, export, Aspose.Cells Cloud, REST API, PDF, CSV, JSON, image formats, ODS, XLSX"
-description: "Learn how to export an Excel worksheet to various file formats using Aspose.Cells Cloud REST API and SDKs. Supported formats include PDF, CSV, JSON, image types, and common spreadsheet formats."
+keywords: "Aspose.Cells Cloud, export worksheet, REST API, PDF, CSV, TIFF, XLSX, ODS, image formats"
+description: "Learn how to export an Excel worksheet to PDF, CSV, TIFF, and other formats using the Aspose.Cells Cloud REST API. Includes cURL example, required authentication, parameter details, and response handling."
 weight: 20
 ---
 
-You can export a worksheet to the following formats:  
-[XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [ODS](https://docs.fileformat.com/spreadsheet/ods/), [TXT](https://docs.fileformat.com/word-processing/txt/), [PDF](https://docs.fileformat.com/pdf/), [OTS](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [DIF](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [NUMBERS](https://docs.fileformat.com/spreadsheet/numbers/), [FODS](https://docs.fileformat.com/spreadsheet/fods/).
+You can export a worksheet to the following formats:
+
+- **XLS** – [Link](https://docs.fileformat.com/spreadsheet/xls/)
+- **XLSX** – [Link](https://docs.fileformat.com/spreadsheet/xlsx/)
+- **XLSB** – [Link](https://docs.fileformat.com/spreadsheet/xlsb/)
+- **CSV** – [Link](https://docs.fileformat.com/spreadsheet/csv/)
+- **TSV** – [Link](https://docs.fileformat.com/spreadsheet/tsv/)
+- **XLSM** – [Link](https://docs.fileformat.com/spreadsheet/xlsm/)
+- **ODS** – [Link](https://docs.fileformat.com/spreadsheet/ods/)
+- **TXT** – [Link](https://docs.fileformat.com/word-processing/txt/)
+- **PDF** – [Link](https://docs.fileformat.com/pdf/)
+- **OTS** – [Link](https://docs.fileformat.com/spreadsheet/ots/)
+- **XPS** – [Link](https://docs.fileformat.com/page-description-language/xps/)
+- **DIF** – [Link](https://docs.fileformat.com/spreadsheet/dif/)
+- **PNG** – [Link](https://docs.fileformat.com/Image/png/)
+- **JPEG** – [Link](https://docs.fileformat.com/image/jpeg/)
+- **BMP** – [Link](https://docs.fileformat.com/image/bmp/)
+- **SVG** – [Link](https://docs.fileformat.com/page-description-language/svg/)
+- **TIFF** – [Link](https://docs.fileformat.com/image/tiff/)
+- **EMF** – [Link](https://docs.fileformat.com/image/emf/)
+- **NUMBERS** – [Link](https://docs.fileformat.com/spreadsheet/numbers/)
+- **FODS** – [Link](https://docs.fileformat.com/spreadsheet/fods/)
 
 ### REST API
 
@@ -21,16 +41,25 @@ You can export a worksheet to the following formats:
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
+**Authentication**  
+The Aspose.Cells Cloud API uses OAuth 2.0. Obtain an access token from the `/connect/token` endpoint and include it in the request header as `Authorization: Bearer <access_token>`.
+
+**Parameters**  
+- `objectType` – The type of Excel object to export (e.g., `worksheet`).  
+- `format` – The desired output format (e.g., `tiff`). Both parameters are required and are passed as query strings.
+
 You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL.
 
 #### Request
 
 ```bash
+# Export a worksheet to TIFF format
 curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=worksheet&format=tiff" \
+     -H "Authorization: Bearer <access_token>" \
      -H "accept: multipart/form-data" \
      -H "Content-Type: multipart/form-data" \
      -H "x-aspose-client: Containerize.Swagger" \
-     -d '{"File":{}}'
+     -F "File=@MyWorkbook.xlsx"
 ```
 
 #### Response
@@ -96,6 +125,9 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=worksheet&fo
     ]
 }
 ```
+
+**Error handling**  
+If the request fails, the API returns a JSON error object containing fields such as `Code` and `Message`. Typical HTTP status codes include **401 Unauthorized** (missing or invalid token) and **400 Bad Request** (invalid parameters).
 
 ### Cloud SDK Family
 
