@@ -1,5 +1,5 @@
 ---
-title: "Add digital signature for Excel workbook"
+title: "Add a Digital Signature to an Excel Workbook"
 second_title: "Document"
 linktitle: "Digital signature"
 type: docs
@@ -7,30 +7,51 @@ url: /excel-digital-signature/
 aliases:
   - /protect/digital-signature/
   - /workbook/digital-signature/
-keywords: "digital signature, Excel workbook, Aspose.Cells Cloud, REST API, spreadsheet, add digital signature"
-description: "Learn how to add a digital signature to an Excel workbook using the Aspose.Cells Cloud REST API. The guide includes request details, cURL example, and SDK samples for C#, Java, PHP, Ruby, Node.js, Python, Perl, and Go."
+keywords: "Aspose.Cells Cloud, digital signature, Excel workbook, REST API, .pfx, OAuth2"
+description: "Learn how to add a digital signature to an Excel workbook using the Aspose.Cells Cloud API (v4.0). Includes endpoint, required parameters, authentication flow, error handling, and SDK samples for C#, Java, PHP, Ruby, Node.js, Python, Perl, and Go."
 weight: 35
 ---
 
 This REST API adds a **digital signature** to an Excel workbook.
 
+## Prerequisites
+
+* **HTTPS** – All requests must be made over **HTTPS** to protect credentials and files.  
+* **OAuth 2.0** – Obtain a Bearer token from `https://api.aspose.cloud/connect/token` using your client‑id and client‑secret, then include `Authorization: Bearer <token>` in every request.  
+* **Digital‑signature file format** – The API accepts a PKCS#12 certificate (`.pfx` or `.p12`) that contains your private key. You can create one with OpenSSL, for example:  
+
+  ```bash
+  openssl req -new -x509 -days 365 -keyout private.key -out cert.crt
+  openssl pkcs12 -export -out signature.pfx -inkey private.key -in cert.crt
+  ```
+
+* **API version** – The current version is **v4.0**. All URLs in this document use this version.
+
 ## REST API
 
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/digitalsignature
+POST https://api.aspose.cloud/v4.0/cells/{name}/digitalsignature
 ```
 
-The request parameters are:
+The request parameters include:
 
-| Parameter Name          | Type   | Location                     | Description                                 |
-|-------------------------|--------|------------------------------|---------------------------------------------|
-| **name**                | string | path                         | The name of the workbook.                  |
-| **digitalsignaturefile**| string | query                        | The digital‑signature file to be applied.  |
-| **password**            | string | query                        | Password for the workbook, if protected.   |
-| **folder**              | string | query                        | Folder where the workbook is stored.       |
-| **storageName**         | string | query                        | Name of the storage service to use.        |
+| Parameter Name          | Type   | Location                | Description                                                            |
+|-------------------------|--------|-------------------------|------------------------------------------------------------------------|
+| **name**                | string | `<code>path</code>`     | The name of the workbook.                                             |
+| **digitalsignaturefile**| string | `<code>query</code>`    | Path to the digital‑signature file (`.pfx` or `.p12`).                |
+| **password**            | string | `<code>query</code>`    | Password for the workbook, if it is protected.                        |
+| **folder**              | string | `<code>query</code>`    | Folder where the workbook is stored.                                   |
+| **storageName**         | string | `<code>query</code>`    | Name of the storage service to use.                                    |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PostDigitalSignature) defines a publicly accessible programming interface that lets you perform REST interactions directly from a web browser.
+### Error Handling
+
+| HTTP Status | Meaning                              |
+|-------------|--------------------------------------|
+| 200         | Signature applied successfully.      |
+| 400         | Bad request – missing or invalid parameters. |
+| 401         | Unauthorized – invalid or expired OAuth token. |
+| 403         | Forbidden – insufficient permissions or access denied. |
+| 500         | Internal server error – unexpected failure. |
 
 You can use the cURL command‑line tool to call Aspose.Cells web services. The example below demonstrates a request to the API:
 
@@ -39,7 +60,7 @@ You can use the cURL command‑line tool to call Aspose.Cells web services. The 
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/{name}/digitalsignature?digitalsignaturefile=signature.pfx&password=YourPassword" \
+curl -v "https://api.aspose.cloud/v4.0/cells/{name}/digitalsignature?digitalsignaturefile=signature.pfx&password=YourPassword" \
   -X POST \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
@@ -95,7 +116,7 @@ The following code examples demonstrate how to call Aspose.Cells web services wi
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PostDigitalSignature.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "e82a2de2e4189bc27ae92abf73c36b4df0" "Example_PostDigitalSignature.ts" >}}
 
 {{< /tab >}}
 
