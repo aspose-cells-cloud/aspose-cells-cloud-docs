@@ -1,33 +1,37 @@
 ---
-title: "Get a list object in an Excel worksheet"
+title: "Aspose.Cells Cloud API – Get List Object (Table) from Worksheet"
 second_title: "Document"
 linktitle: "Get"
 type: docs
 url: /list-objects/get/
 aliases: [/get-a-list-object-or-table-inside-the-worksheet/,/tables/get/]
-keywords: "Aspose.Cells Cloud, Excel list object, Get list object, REST API, worksheet table, export format"
-description: "Use Aspose.Cells Cloud REST API to retrieve a list object (table) from an Excel worksheet and export it to various formats. SDKs are available for Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift."
+keywords: "Aspose.Cells, Cloud API, Excel ListObject, Get Table, REST, SDK"
+description: "Retrieve a ListObject (table) from an Excel worksheet using Aspose.Cells Cloud REST API. Includes endpoint, parameters, HTTPS cURL example, response schema, and SDK snippets for multiple languages."
 weight: 9
 ---
 
-This REST API retrieves a list object (table) from an Excel worksheet and can export it to different file formats.
+This REST API retrieves a **list object** (table) from an Excel worksheet and can export the **list object** to different file formats. **All calls must be made over HTTPS**.
 
 ## REST API
 
+**Endpoint (HTTPS)**  
+
 ```bash
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listobjectindex}
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listobjectindex}
 ```
 
-The request parameters are:
+**Authentication** – Before calling the endpoint, obtain a JWT token using the Aspose Cloud OAuth 2.0 client‑credentials flow (`/connect/token`). Include the token in the `Authorization` header as `Bearer <jwt token>`.
 
-| Parameter Name   | Type    | Location                     | Description                                                     |
-|------------------|---------|------------------------------|-----------------------------------------------------------------|
-| name             | string  | path                         | The name of the Excel file.                                      |
-| sheetName        | string  | path                         | The name of the worksheet containing the list object.           |
-| listobjectindex  | integer | path                         | Zero‑based index of the list object to retrieve.                |
-| format           | string  | query                        | Desired export format (e.g., `pdf`, `csv`, `json`).             |
-| folder           | string  | query                        | Folder path where the workbook is stored.                       |
-| storageName      | string  | query                        | Name of the Aspose Cloud storage to use.                        |
+**Request parameters**
+
+| Parameter Name   | Type    | Location | Description                                                    | Required/Optional |
+|------------------|---------|----------|----------------------------------------------------------------|-------------------|
+| name             | string  | path     | The name of the Excel file.                                     | Required          |
+| sheetName        | string  | path     | The name of the worksheet containing the list object.          | Required          |
+| listobjectindex  | integer | path     | Zero‑based index of the list object to retrieve.               | Required          |
+| format           | string  | query    | Desired export format (e.g., `pdf`, `csv`, `json`).            | Optional          |
+| folder           | string  | query    | Folder path where the workbook is stored.                      | Optional          |
+| storageName      | string  | query    | Name of the Aspose Cloud storage to use.                       | Optional          |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ListObjects/GetWorksheetListObject) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -38,11 +42,11 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listobjects/1" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listobjects/1" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
@@ -51,109 +55,126 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listobj
 
 ```json
 {
- "ListObject": {
-  "AutoFilter": {
-   "FilterColumns": [],
-   "Range": "B2:F11",
-   "Sorter": {
-    "CaseSensitive": false,
-    "HasHeaders": false,
-    "KeyList": [],
-    "SortLeftToRight": false
-   }
+  "ListObject": {
+    "AutoFilter": {
+      "FilterColumns": [],
+      "Range": "B2:F11",
+      "Sorter": {
+        "CaseSensitive": false,
+        "HasHeaders": false,
+        "KeyList": [],
+        "SortLeftToRight": false
+      }
+    },
+    "DisplayName": "Table3",
+    "StartColumn": 1,
+    "StartRow": 1,
+    "EndColumn": 5,
+    "EndRow": 10,
+    "ListColumns": [
+      {
+        "Name": "Column1",
+        "Range": {
+          "ColumnCount": 1,
+          "ColumnWidth": 8.5,
+          "FirstColumn": 1,
+          "FirstRow": 1,
+          "RefersTo": "=Sheet1!$B$2:$B$11",
+          "RowCount": 10,
+          "RowHeight": 13.5,
+          "Worksheet": "Sheet1"
+        },
+        "TotalsCalculation": "None"
+      },
+      {
+        "Name": "Column2",
+        "Range": {
+          "ColumnCount": 1,
+          "ColumnWidth": 8.5,
+          "FirstColumn": 2,
+          "FirstRow": 1,
+          "RefersTo": "=Sheet1!$C$2:$C$11",
+          "RowCount": 10,
+          "RowHeight": 13.5,
+          "Worksheet": "Sheet1"
+        },
+        "TotalsCalculation": "None"
+      },
+      {
+        "Name": "Column3",
+        "Range": {
+          "ColumnCount": 1,
+          "ColumnWidth": 8.5,
+          "FirstColumn": 3,
+          "FirstRow": 1,
+          "RefersTo": "=Sheet1!$D$2:$D$11",
+          "RowCount": 10,
+          "RowHeight": 13.5,
+          "Worksheet": "Sheet1"
+        },
+        "TotalsCalculation": "None"
+      },
+      {
+        "Name": "Column4",
+        "Range": {
+          "ColumnCount": 1,
+          "ColumnWidth": 8.5,
+          "FirstColumn": 4,
+          "FirstRow": 1,
+          "RefersTo": "=Sheet1!$E$2:$E$11",
+          "RowCount": 10,
+          "RowHeight": 13.5,
+          "Worksheet": "Sheet1"
+        },
+        "TotalsCalculation": "None"
+      },
+      {
+        "Name": "Column5",
+        "Range": {
+          "ColumnCount": 1,
+          "ColumnWidth": 8.5,
+          "FirstColumn": 5,
+          "FirstRow": 1,
+          "RefersTo": "=Sheet1!$F$2:$F$11",
+          "RowCount": 10,
+          "RowHeight": 13.5,
+          "Worksheet": "Sheet1"
+        },
+        "TotalsCalculation": "None"
+      }
+    ],
+    "ShowHeaderRow": true,
+    "ShowTableStyleColumnStripes": false,
+    "ShowTableStyleFirstColumn": false,
+    "ShowTableStyleLastColumn": false,
+    "ShowTableStyleRowStripes": true,
+    "ShowTotals": false,
+    "TableStyleName": "None",
+    "TableStyleType": "None",
+    "link": {
+      "Href": "api-qa.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listobjects/0",
+      "Rel": "self"
+    }
   },
-  "DisplayName": "Table3",
-  "StartColumn": 1,
-  "StartRow": 1,
-  "EndColumn": 5,
-  "EndRow": 10,
-  "ListColumns": [{
-   "Name": "Column1",
-   "Range": {
-    "ColumnCount": 1,
-    "ColumnWidth": 8.5,
-    "FirstColumn": 1,
-    "FirstRow": 1,
-    "RefersTo": "=Sheet1!$B$2:$B$11",
-    "RowCount": 10,
-    "RowHeight": 13.5,
-    "Worksheet": "Sheet1"
-   },
-   "TotalsCalculation": "None"
-  }, {
-   "Name": "Column2",
-   "Range": {
-    "ColumnCount": 1,
-    "ColumnWidth": 8.5,
-    "FirstColumn": 2,
-    "FirstRow": 1,
-    "RefersTo": "=Sheet1!$C$2:$C$11",
-    "RowCount": 10,
-    "RowHeight": 13.5,
-    "Worksheet": "Sheet1"
-   },
-   "TotalsCalculation": "None"
-  }, {
-   "Name": "Column3",
-   "Range": {
-    "ColumnCount": 1,
-    "ColumnWidth": 8.5,
-    "FirstColumn": 3,
-    "FirstRow": 1,
-    "RefersTo": "=Sheet1!$D$2:$D$11",
-    "RowCount": 10,
-    "RowHeight": 13.5,
-    "Worksheet": "Sheet1"
-   },
-   "TotalsCalculation": "None"
-  }, {
-   "Name": "Column4",
-   "Range": {
-    "ColumnCount": 1,
-    "ColumnWidth": 8.5,
-    "FirstColumn": 4,
-    "FirstRow": 1,
-    "RefersTo": "=Sheet1!$E$2:$E$11",
-    "RowCount": 10,
-    "RowHeight": 13.5,
-    "Worksheet": "Sheet1"
-   },
-   "TotalsCalculation": "None"
-  }, {
-   "Name": "Column5",
-   "Range": {
-    "ColumnCount": 1,
-    "ColumnWidth": 8.5,
-    "FirstColumn": 5,
-    "FirstRow": 1,
-    "RefersTo": "=Sheet1!$F$2:$F$11",
-    "RowCount": 10,
-    "RowHeight": 13.5,
-    "Worksheet": "Sheet1"
-   },
-   "TotalsCalculation": "None"
-  }],
-  "ShowHeaderRow": true,
-  "ShowTableStyleColumnStripes": false,
-  "ShowTableStyleFirstColumn": false,
-  "ShowTableStyleLastColumn": false,
-  "ShowTableStyleRowStripes": true,
-  "ShowTotals": false,
-  "TableStyleName": "None",
-  "TableStyleType": "None",
-  "link": {
-   "Href": "api-qa.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listobjects/0",
-   "Rel": "self"
-  }
- },
- "Code": 200,
- "Status": "OK"
+  "Code": 200,
+  "Status": "OK"
 }
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**Error handling** – The API can return the following status codes:
+
+| HTTP Code | Meaning                     | Example JSON error body |
+|-----------|----------------------------|--------------------------|
+| 400       | Bad request – missing/invalid parameters | `{"Code":400,"Message":"Invalid format parameter."}` |
+| 401       | Unauthorized – invalid or missing JWT token | `{"Code":401,"Message":"Authentication failed."}` |
+| 404       | Not found – workbook, worksheet, or list object does not exist | `{"Code":404,"Message":"ListObject not found."}` |
+| 500       | Internal server error | `{"Code":500,"Message":"Unexpected server error."}` |
+
+**Next steps** – After retrieving the `ListObject`, you can manipulate its rows/columns via the corresponding SDK methods or export the table directly by adding the `format` query parameter (e.g., `?format=csv`).  
 
 ## Cloud SDK Family
 
