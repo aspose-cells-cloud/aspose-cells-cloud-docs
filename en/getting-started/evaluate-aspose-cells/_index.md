@@ -5,13 +5,26 @@ ArticleTitle: "Evaluate Aspose.Cells Cloud"
 LinkTitle: "Evaluate"
 type: docs
 url: /evaluate-aspose-cells/
-description: "Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on."
+description: "Explore Aspose.Cells Cloud, the REST API for creating, converting, merging, splitting, protecting, and manipulating Excel files and other spreadsheet formats."
 weight: 60
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Evaluate Aspose.Cells Cloud
+keywords:
+  - Aspose.Cells Cloud
+  - Excel API
+  - REST API
+  - spreadsheet manipulation
+  - free trial
+  - evaluate
 ---
 
+You can evaluate the **Aspose.Cells Cloud** REST APIs by creating a free‑trial account on the Aspose Cloud Dashboard. After registration, you will receive a **Client Id** and **Client Secret** that allow up to 150 API calls per month.
 
+**Quick start steps**
 
-You can evaluate [Aspose.Cells REST APIs](http://apireference.aspose.cloud/cells/) by creating a [free trial account](https://dashboard.aspose.cloud). The free trial will give you a good idea of the service's capabilities and let you do some early development.
+1. **Create a free‑trial account** – visit the [Aspose Cloud Dashboard](https://dashboard.aspose.cloud), sign up, and confirm your email address.  
+2. **Obtain credentials** – locate the *Client Id* and *Client Secret* in the dashboard’s **Authentication** section.  
+3. **Generate an access token** – send a `POST` request to `https://api.aspose.cloud/connect/token` with your credentials (see the API reference for the exact payload).  
+4. **Make your first API call** – include the token in the `Authorization: Bearer <token>` header and call a simple endpoint, e.g., `GET https://api.aspose.cloud/v3.0/cells/{file}/worksheets`.  
 
-Please check [Trial Plan](https://purchase.aspose.cloud/trial) webpage for more details.
+The free trial gives you a practical sense of the service’s capabilities, allowing early development and testing without any cost.
+
+For detailed pricing, usage limits, and additional plan options, see the [Trial Plan](https://purchase.aspose.cloud/trial) page.
