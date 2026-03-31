@@ -1,39 +1,39 @@
----
-title: "Aspose.Cells Cloud Web API - Save the spreadsheet as another format file on remote storage - Free Online Tool"
-second_title: "Document"
-ArticleTitle: "How to save the spreadsheet as another format file on remote storage: Step-by-Step Guide"
-linktitle: "Save Spreadsheet as"
-type: docs
-url: /save-spreadsheet-as/
-keywords: "spreadsheet conversion, Save as, Excel to PDF, Excel to CSV, REST"
-description: "Effortlessly convert spreadsheets stored in the cloud to various formats, including XLSX, PDF, and CSV, using our robust API."
-weight: 100
----
+---  
+title: "Save Spreadsheet as Another Format – Aspose.Cells Cloud API (v4.0)"  
+second_title: "Document"  
+ArticleTitle: "How to Save a Spreadsheet as Another Format File on Remote Storage: Step‑by‑Step Guide"  
+linktitle: "Save Spreadsheet as"  
+type: docs  
+url: /save-spreadsheet-as/  
+keywords: "Aspose Cells, spreadsheet conversion, API, save as, XLSX to PDF, cloud storage"  
+description: "Convert an Excel workbook stored in Aspose Cloud to XLSX, PDF, CSV, or any of 20+ formats with a single API call. Learn request syntax, parameters, and sample SDK code."  
+weight: 100  
+---  
 
-Save a cloud spreadsheet/Excel file as a format file to cloud storage.
+Save a cloud spreadsheet or Excel file as a different format in cloud storage.
 
 ## **Save Spreadsheet as API**
 
 ### API Endpoint
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/{name}/saveas
+PUT https://api.aspose.cloud/v4.0/cells/{name}/saveas
 ```
 
-### **Request Parameters:**
+### **Request Parameters**
 
-| Parameter Name  | Type   | Path/Query String/HTTP Body | Description                                                                                       |
-| :-------------- | :----- | :-------------------------- | :------------------------------------------------------------------------------------------------ |
-| name            | String | Path                        | (Required) The name of the workbook file to be converted.                                         |
-| format          | String | Query                       | (Required) The desired output format (e.g., "Xlsx", "PDF", "CSV").                                |
-| saveOptionsData | Class  | Body                        | (Optional) Save options data. The default is null.                                                |
-| folder          | String | Query                       | (Optional) The folder path where the workbook is stored. The default is null.                     |
-| storageName     | String | Query                       | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted. |
-| outPath         | String | Query                       | (Optional) The folder path where the workbook is stored. The default is null.                     |
-| outStorageName  | String | Query                       | Output file Storage Name.                                                                         |
-| fontsLocation   | String | Query                       | Use Custom fonts.                                                                                 |
-| region          | String | Query                       | The spreadsheet region setting.                                                                   |
-| password        | String | Query                       | The password for opening the spreadsheet file.                                                    |
+| Parameter Name  | Type   | Location | Description                                                                                          |
+| :-------------- | :----- | :------- | :--------------------------------------------------------------------------------------------------- |
+| name            | String | Path     | **Required.** The name of the workbook file to be converted.                                         |
+| format          | String | Query    | **Required.** The desired output format (e.g., `Xlsx`, `PDF`, `CSV`).                               |
+| saveOptionsData | Class  | Body     | Optional save‑options data. If omitted, defaults to `null`.                                          |
+| folder          | String | Query    | Optional folder path where the source workbook is stored. If omitted, defaults to `null`.           |
+| storageName     | String | Query    | Optional name of a custom storage. If omitted, the default storage is used.                         |
+| outPath         | String | Query    | Optional output path for the converted file. If omitted, defaults to `null`.                        |
+| outStorageName  | String | Query    | Optional storage name for the output file.                                                          |
+| fontsLocation   | String | Query    | Optional custom fonts location.                                                                     |
+| region          | String | Query    | Optional spreadsheet region setting.                                                                |
+| password        | String | Query    | Optional password for opening the spreadsheet file.                                                 |
 
 ### **Response**
 
@@ -60,54 +60,53 @@ PUT http://api.aspose.cloud/v4.0/cells/{name}/saveas
 
 ### Error Codes
 
-- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized**: Invalid access token. Or invalid client id and secret.
-- **404 Not Found**: The spreadsheet file not accessible.
-- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
+- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.  
+- **401 Unauthorized** – Invalid access token, client ID, or client secret.  
+- **404 Not Found** – The spreadsheet file is not accessible.  
+- **500 Server Error** – The spreadsheet encountered an anomaly while obtaining calculation data.  
 
-## Where should you use the Save Spread API?
+## Where should you use the Save Spreadsheet API?
 
 ### Enterprise Document Management System
 
-- Automatically save financial reports as PDF archives
-- Regularly backup sales data in CSV format
-- Save project plans as read-only to prevent accidental changes
+- Automatically save financial reports as PDF archives.  
+- Regularly back up sales data in CSV format.  
+- Save project plans as read‑only files to prevent accidental changes.
 
 ### Data Integration and ETL Processes
 
-- Export CRM system data and save as a standard Excel template
-- Convert ERP data to CSV for import into other systems
-- Save raw data as JSON for API transmission
+- Export CRM system data and save it as a standard Excel template.  
+- Convert ERP data to CSV for import into other systems.  
+- Save raw data as JSON for API transmission.
 
 ### Development and Automation Scenarios
 
-- Backend processing for web applications
-- Automated report generation system
-- Cloud collaboration platform
-- Approval process integration
-- Data backup and migration
+- Backend processing for web applications.  
+- Automated report‑generation systems.  
+- Cloud collaboration platforms.  
+- Approval‑process integration.  
+- Data backup and migration.
 
-## Why should you use the Save Spread API?
+## Why should you use the Save Spreadsheet API?
 
-- **Developer-Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared to building custom chart rendering solutions, this significantly reduces the development workload.
-- **Reduced Labor Costs**: Reduced the need for positions dedicated to document consolidation.
-- **Pay-per-use**: No upfront investment, only pay for API calls actually used.
-- **Zero Maintenance Costs**: No need to maintain servers, update software, or deal with compatibility issues.
-- **Comprehensive Format Support**: Convert between 20+ spreadsheet formats.
-- **Preserve Data Fidelity & Formatting**
+- **Developer‑Friendly** – Aspose.Cells Cloud provides SDKs in multiple languages, enabling rapid development with comprehensive documentation. This reduces the workload compared with building custom conversion solutions.  
+- **Reduced Labor Costs** – Eliminates the need for dedicated personnel to handle document consolidation.  
+- **Pay‑per‑Use** – No upfront investment; you only pay for the API calls you actually make.  
+- **Zero Maintenance Costs** – No servers to maintain, no software updates, and no compatibility concerns.  
+- **Comprehensive Format Support** – Convert between more than 20 spreadsheet formats.  
+- **Preserve Data Fidelity & Formatting** – Maintains original layout, formulas, and styling.
 
-## How to Use the Convert Table to JSON API with SDKs?
+## How to Use the Save Spreadsheet as API with SDKs?
 
 ### Save Spreadsheet as API Specification
 
-The [Save Spreadsheet as API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/SaveSpreadsheetAs) defines a publicly accessible programming interface, allowing you to carry out REST interactions directly from a web browser.
+The [Save Spreadsheet as API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/SaveSpreadsheetAs) defines a publicly accessible programming interface, allowing you to perform REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the fastest way to develop, as it abstracts away the low-level details, allowing you to save a spreadsheet as a format file with short code.
-Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the fastest way to develop, as it abstracts low‑level details and lets you save a spreadsheet as another format with minimal code. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 {{<tab tabNum="1" >}}
