@@ -1,18 +1,18 @@
 ---
-title: "Convert OLE object to image in an Excel worksheet"
+title: "Convert OLE Object to Image – Aspose.Cells Cloud REST API"
 second_title: "Document"
 linktitle: "Conversion"
 type: docs
 url: /oleobjects/convert/
 aliases: [/convert-oleobject-to-image/]
-keywords: "OLE object, image conversion, Excel worksheet, Aspose.Cells Cloud, REST API, SDK, C#, Java, Python, Node.js, Go, PHP, Ruby, Swift, Android"
-description: "Use Aspose.Cells Cloud REST API to convert an OLE object embedded in an Excel worksheet to an image format (e.g., PNG, JPEG). The API is available through multiple SDKs for languages such as C#, Java, Python, Node.js, Go, PHP, Ruby, Swift, and Android."
+keywords: "convert OLE object to image, Aspose.Cells Cloud, REST API, SDK, Excel, OLE object, image conversion, PNG, JPEG"
+description: "Learn how to use Aspose.Cells Cloud REST API to convert an embedded OLE object in an Excel worksheet to PNG, JPEG, or other image formats. Includes cURL, SDK examples, authentication steps, and error‑handling guidance."
 weight: 40
 ---
 
 This REST API retrieves an OLE object in a specified format from an Excel worksheet.
 
-## REST API
+## REST API – Convert OLE Object to Image
 
 ```bash
 GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects/{objectNumber}?format={format}
@@ -20,25 +20,31 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects/
 
 The request parameters are:
 
-| Parameter Name | Type    | Location                     | Description                                             |
-|----------------|---------|------------------------------|---------------------------------------------------------|
-| name           | string  | path                         | The name of the workbook file.                          |
-| sheetName      | string  | path                         | The name of the worksheet containing the OLE object.   |
-| objectNumber   | integer | path                         | The zero‑based index of the OLE object.                 |
-| format         | string  | query                        | Desired export format (e.g., `png`, `jpeg`).           |
-| folder         | string  | query                        | Path to the folder where the workbook is stored.        |
-| storageName    | string  | query                        | Name of the storage service.                            |
+| Parameter Name | Type    | Location | Description |
+|----------------|---------|----------|-------------|
+| name           | string  | path     | The name of the workbook file. |
+| sheetName      | string  | path     | The name of the worksheet containing the OLE object. |
+| objectNumber   | integer | path     | The zero‑based index of the OLE object. |
+| format         | string  | query    | Desired export format (e.g., `png`, `jpeg`). |
+| folder         | string  | query    | Path to the folder where the workbook is stored. |
+| storageName    | string  | query    | Name of the storage service. |
+
+**Authentication** – The API requires a Bearer JWT token. Obtain the token from the Aspose Cloud authentication guide and include it in the `Authorization` header:
+
+```
+-H "Authorization: Bearer <jwt token>"
+```
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/OleObjects/GetWorksheetOleObject) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL.
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+{{< tabs tabTotal="2" tabID="1" tabName1="cURL – Get Worksheet OLE Object as Image" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/Embeded_OleObject_Sample_Book1.xlsx/worksheets/Sheet1/oleobjects/0?format=png" \
+curl -v "http://api.aspose.cloud/v3.0/cells/Embedded_OleObject_Sample_Book1.xlsx/worksheets/Sheet1/oleobjects/0?format=png" \
   -X GET \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
@@ -49,9 +55,18 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Embeded_OleObject_Sample_Book1.xlsx/
 
 {{< tab tabNum="2" >}}
 
-```bash
-Image file
+```text
+Binary image data (Content‑Type: image/png)
 ```
+
+The successful response returns a **200** status code with `Content‑Type: image/png` (or the requested image type). The payload is binary; you can save it directly to a file or, for debugging, encode it as Base‑64.
+
+**Common response codes**
+
+- **200** – OK. Binary image returned.
+- **401** – Unauthorized. Invalid or missing JWT token.
+- **404** – Not Found. Workbook, worksheet, or OLE object does not exist.
+- **500** – Internal Server Error. Unexpected server condition.
 
 {{< /tab >}}
 
@@ -59,7 +74,7 @@ Image file
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Use an SDK to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
