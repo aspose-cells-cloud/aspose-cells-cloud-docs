@@ -1,51 +1,53 @@
 ---
-title: "Delete all pivot tables in an Excel worksheet"
-second_title: "Document"
+title: "Delete All Pivot Tables in an Excel Worksheet"
+second_title: "Documentation"
 linktitle: Clear
 type: docs
 url: /pivot-tables/clear/
 aliases: [/delete-worksheet-pivot-tables/]
-keywords: "Aspose.Cells Cloud, REST API, delete pivot tables, Excel worksheet, PivotTables"
-description: "Learn how to use the Aspose.Cells Cloud REST API to delete all pivot tables from a worksheet in an Excel file. Includes the HTTP request, cURL example, and SDK snippets for multiple programming languages."
+keywords: "Aspose.Cells, delete pivot tables, Excel API, REST, cloud, pivot table clear, worksheet"
+description: "Learn how to delete every pivot table from a worksheet using Aspose.Cells Cloud REST API. Includes endpoint, required parameters, cURL request, response, and SDK examples for C#, Java, Python, Node.js, and more."
 weight: 80
 ---
 
-This REST API deletes all pivot tables in a worksheet.
+When you need to reset a worksheet’s analysis, you can remove all pivot tables in a single call. This REST API deletes all pivot tables from a worksheet.
 
 ## REST API
 
 ```bash
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables
 ```
 
 ### Request parameters
 
-| Parameter Name | Type   | Location | Description                     |
-|----------------|--------|----------|---------------------------------|
-| name           | string | path     | The name of the Excel file.     |
-| sheetName      | string | path     | The name of the worksheet.      |
-| folder         | string | query    | The folder that contains the file. |
-| storageName    | string | query    | The storage name to use.        |
+| Parameter Name | Type   | Location | Description                                                         |
+|----------------|--------|----------|---------------------------------------------------------------------|
+| **name**       | string | path     | **Required.** The name of the Excel file.                           |
+| **sheetName**  | string | path     | **Required.** The name of the worksheet.                            |
+| **folder**     | string | query    | The folder that contains the file (optional).                       |
+| **storageName**| string | query    | The storage name to use (optional).                                 |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PivotTables/DeleteWorksheetPivotTables) defines a publicly accessible programming interface that lets you perform REST interactions directly from a web browser.
 
-You can use the **cURL** command‑line tool to call Aspose.Cells web services. The example below shows how to delete all pivot tables in a worksheet.
+### Authentication
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+All calls must be made over TLS 1.2 or higher. Obtain a JWT access token with the appropriate scope and include it in the `Authorization` header:
 
-{{< tab tabNum="1" >}}
+```
+Authorization: Bearer <jwt token>
+```
+
+### cURL example
 
 ```bash
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables?folder=SampleFolder&storageName=MyStorage" \
   -X DELETE \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
   -H "Authorization: Bearer <jwt token>"
 ```
 
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
+### Response
 
 ```json
 {
@@ -54,9 +56,14 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/workshe
 }
 ```
 
-{{< /tab >}}
+### Error handling
 
-{{< /tabs >}}
+| HTTP Status | Meaning                              | Example error payload |
+|-------------|--------------------------------------|-----------------------|
+| 400         | Bad Request – missing or invalid parameters | `{ "Code": 400, "Message": "Missing required parameter 'name'." }` |
+| 401         | Unauthorized – invalid or expired JWT | `{ "Code": 401, "Message": "Invalid authentication token." }` |
+| 404         | Not Found – file or worksheet does not exist | `{ "Code": 404, "Message": "Worksheet not found." }` |
+| 500         | Internal Server Error – unexpected failure | `{ "Code": 500, "Message": "An unexpected error occurred." }` |
 
 ## Cloud SDK Family
 
