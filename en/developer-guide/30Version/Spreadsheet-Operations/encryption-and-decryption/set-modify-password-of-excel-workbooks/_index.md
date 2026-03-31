@@ -1,5 +1,5 @@
 ---
-title: "Set modify password of an Excel workbook"
+title: "Modify Password Protection of an Excel Workbook"
 second_title: "Document"
 linktitle: "Modify an Excel file password"
 type: docs
@@ -7,43 +7,55 @@ url: /workbook/password/modify/
 aliases:
   - /set-modify-password-of-excel-workbooks/
   - /workbook/modify-password/
-keywords: "Excel, Aspose Cells, REST API, modify password, workbook protection"
-description: "Use Aspose.Cells Cloud REST API to modify the password protection of an Excel workbook. SDKs are available for C#, Java, PHP, Ruby, Node.js, Python, Perl, Go and more."
+keywords: "modify Excel password, Aspose.Cells Cloud, write protection, REST API, Excel workbook"
+description: "Change the write‑protection password of an Excel workbook via Aspose.Cells Cloud REST API (v3.0). Includes cURL and SDK examples."
 weight: 100
 ---
 
-This REST API protects a document from changes.
+This REST API **changes the write‑protection password** of an existing Excel workbook.
+
+**Quick start**
+
+1. Obtain a JWT token (OAuth 2.0) and include it in the `Authorization: Bearer <token>` header.  
+2. Build a `PUT` request to `https://api.aspose.cloud/v3.0/cells/{name}/writeProtection` with a JSON body that contains the new password.  
+3. Send the request and verify that the response returns `Code: 200` and `Status: OK`.
 
 ## REST API
 
 ```bash
-PUT http://api.aspose.cloud/v3.0/cells/{name}/writeProtection
+PUT https://api.aspose.cloud/v3.0/cells/{name}/writeProtection
 ```
 
 ### Request parameters
 
 | Parameter Name | Type   | Location | Description |
 |----------------|--------|----------|-------------|
-| **name**       | string | path     | Name of the Excel workbook. |
-| **password**   | string | body     | Password used to modify the protection. |
-| **folder**     | string | query    | Folder where the workbook is stored. |
-| **storageName**| string | query    | Name of the storage service. |
+| **name**       | string | path     | Name of the Excel workbook (required). |
+| **password**   | string | body (JSON) | New write‑protection password to set (required). |
+| **folder**     | string | query    | Optional folder where the workbook is stored. |
+| **storageName**| string | query    | Optional name of the storage service. |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PutDocumentProtectFromChanges) defines a publicly accessible programming interface that lets you perform REST interactions directly from a web browser.
+**Authentication** – The API requires an OAuth 2.0 / JWT token. Include the token in the request header:
 
-You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The example below shows how to call the Cloud API with cURL.
+```http
+Authorization: Bearer <jwt token>
+```
+
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PutDocumentProtectFromChanges) defines the publicly accessible programming interface that lets you perform REST interactions directly from a web browser.
+
+You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The cURL command below shows how to call the Cloud API.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/writeProtection" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/writeProtection?folder=Samples&storageName=Default" \
   -X PUT \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
   -H "Authorization: Bearer <jwt token>" \
-  -d '{ "Password": "aspose"}'
+  -d '{ "Password": "aspose" }'
 ```
 
 {{< /tab >}}
@@ -60,6 +72,16 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/writeProtectio
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**Response codes**
+
+| HTTP Code | Meaning                     | Description |
+|-----------|-----------------------------|-------------|
+| 200       | OK                          | Password changed successfully. |
+| 400       | Bad Request                 | Missing or invalid parameters. |
+| 401       | Unauthorized                | Invalid or missing JWT token. |
+| 404       | Not Found                   | Specified workbook does not exist. |
+| 500       | Internal Server Error       | Unexpected server‑side failure. |
 
 ## Cloud SDK Family
 
