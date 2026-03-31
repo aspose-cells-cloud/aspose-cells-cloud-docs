@@ -1,86 +1,124 @@
----
-title: "Aspose.Cells Cloud Web API - Automatically Delete Blank/Empty Columns"
-second_title: "Document"
-ArticleTitle: "How to Delete All Blank/Empty Columns in Excel | Automate Column Cleanup"
-linktitle: "Delete Blank Columns"
-type: docs
-url: /delete-spreadsheet-blank-columns/
-keywords: "delete blank columns Excel, remove empty columns Excel, clean up blank columns, delete columns with no data, Excel column cleanup, automate Excel cleanup, bulk delete columns, remove unused columns, Excel data cleaning, delete empty cells columns, spreadsheet optimization, clean Excel data"
-description: "Learn how to quickly delete all blank columns from Excel spreadsheets automatically. Remove columns with no data, formulas, comments, or objects in one click. Clean up messy Excel files, optimize spreadsheet structure, and improve data processing efficiency with step-by-step guides and automated solutions."
-weight: 100
+---  
+title: "Delete Blank Columns from Excel with Aspose.Cells Cloud API – Quick REST Example"  
+second_title: "Document"  
+ArticleTitle: "How to Delete Blank Columns in Excel – Automate Column Cleanup"  
+linktitle: "Delete Blank Columns"  
+type: docs  
+url: /delete-spreadsheet-blank-columns/  
+keywords: "delete blank columns Excel API, Aspose.Cells Cloud, REST API, Excel cleanup, spreadsheet automation"  
+description: "Learn how to remove empty columns from Excel files using Aspose.Cells Cloud REST API. Includes endpoint, authentication, request/response samples, and SDK code in C#, Java, Python, and more."  
+weight: 100  
 ---
 
-Use Aspose.Cells Cloud API to automatically delete all blank columns from Excel spreadsheets. Our intelligent API detects and removes columns containing no data, formulas, comments, charts, or other objects. Supports batch processing, cloud automation, and seamless REST API integration for enterprise-grade spreadsheet cleanup workflows.
+Use Aspose.Cells Cloud API to automatically delete all blank columns from Excel spreadsheets. Our intelligent API detects and removes columns whose cells contain no data, formulas, comments, charts, or objects. The API supports batch processing, cloud automation, and seamless REST integration for enterprise‑grade spreadsheet‑cleanup workflows.
 
-## **DeleteSpreadsheetBlankColumns AP**
+## **DeleteSpreadsheetBlankColumns API**
 
 ### API Endpoint
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/delete/blank-columns
+PUT https://api.aspose.cloud/v4.0/cells/delete/blank-columns
 ```
 
-### **Request Parameters:**
+### Authentication
 
-| Parameter Name | Type | Path/Query String/HTTP Body | Description |
-| :- | :- | :- |:- |
-| Spreadsheet | File | FormData | The Excel spreadsheet file to be processed. It must contain the data from which blank columns will be identified and removed. |
-| outPath | String | Query | (Optional) The target folder path within your cloud storage where the cleaned workbook will be saved. If not specified (`null`), the output will be stored in the API's default location or the same directory as the source file. |
-| outStorageName | String | Query | The name of your configured cloud storage service (e.g., `MyFirstStorage`) where the output file should be saved. This parameter is required to save the result to a specific storage location. |
-| region | String | Query | The regional settings (locale) to apply when processing the spreadsheet. This can affect date, number, and text formatting (e.g., `en-US`, `de-DE`). |
-| password | String | Query | The password required to open a password-protected spreadsheet file. If the uploaded file is not encrypted, this parameter can be omitted. |
+The API requires OAuth 2.0 authentication.  
+1. Request an access token from the token endpoint:
 
-### **Response**
+```bash
+curl -X POST "https://api.aspose.cloud/connect/token" \
+     -H "Content-Type: application/x-www-form-urlencoded" \
+     -d "grant_type=client_credentials&client_id=YOUR_CLIENT_ID&client_secret=YOUR_CLIENT_SECRET"
+```
+
+2. Include the token in the `Authorization` header of every request:
+
+```
+Authorization: Bearer <access_token>
+```
+
+Tokens expire after a configurable period; request a new token when needed.
+
+### Request Parameters
+
+| Parameter Name | Type   | Location                | Description |
+|----------------|--------|-------------------------|-------------|
+| **Spreadsheet** | File   | Form‑Data (multipart)   | The Excel workbook to be processed. |
+| **outPath**     | String | Query                   | Optional. Destination folder in cloud storage for the cleaned file. If omitted, the result is returned in the response body. |
+| **outStorageName** | String | Query               | Optional. Name of the cloud storage where the output should be saved. |
+| **region**      | String | Query                   | Optional. Locale identifier (e.g., `en-US`, `de-DE`). |
+| **password**    | String | Query                   | Optional. Password for opening a protected workbook. |
+
+### Sample Request (cURL)
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/delete/blank-columns?outPath=Cleaned%2FBook1.xlsx&region=en-US" \
+     -H "Authorization: Bearer <access_token>" \
+     -F "Spreadsheet=@/path/to/Book1.xlsx" \
+     -F "password=MySecret"
+```
+
+### Response
+
+The API returns one of two possible responses:
+
+*If `outPath` is supplied* – a JSON status object:
 
 ```json
-[
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
-    }
-]
+{
+  "FileName": "Cleaned/Book1.xlsx",
+  "Size": 124578
+}
+```
+
+*If `outPath` is omitted* – the cleaned workbook is streamed back as a binary file with the header:
+
+```
+Content‑Disposition: attachment; filename="Book1_cleaned.xlsx"
+Content‑Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
 ```
 
 ### Error Codes
 
-- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized**: Invalid access token. Or invalid client id and secret.
-- **404 Not Found**: The spreadsheet file not accessible.
-- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
+- **400 Bad Request** – Invalid request parameters or malformed URI.  
+- **401 Unauthorized** – Missing or invalid access token.  
+- **404 Not Found** – The specified spreadsheet could not be located.  
+- **500 Server Error** – An unexpected condition prevented the API from processing the file.
 
-## Where should we use the Delete Spreadsheet Blank Columns API?
+## Prerequisites & Limits
 
-- **Data Import & Cleanup Workflows**: Immediately after importing data from external sources (CSV, databases, web APIs) into Excel to clean up trailing or structural blank columns automatically.
-- **Report & Dashboard Generation**: Before finalizing financial, sales, or operational reports to ensure a clean, professional layout without unnecessary empty columns.
-- **Data Preparation for Analysis (ETL)**: In ETL pipelines to preprocess and standardize Excel data by removing empty columns before loading it into data warehouses (Snowflake, BigQuery) or BI tools (Tableau, Power BI).
-- **System Integration & API Feeds**: When receiving Excel files from integrated partner systems, CRMs, or ERPs to normalize the data structure by stripping out unused columns.
-- **Document Automation & Batch Processing**: In automated document generation systems where template output may include empty placeholder columns that need removal before distribution.
-- **User-Generated Content Processing**: To clean and standardize Excel files uploaded by users through web portals or applications before further processing or storage.
-- **Legacy Data Migration**: When consolidating or modernizing old spreadsheet archives by removing historically empty or placeholder columns to streamline data.
+- **Supported formats**: XLS, XLSX, XLSM, CSV, ODS, and other formats listed in the Aspose.Cells documentation.  
+- **File‑size limit**: Up to 200 MB per request (larger files require multipart upload).  
+- **Rate limit**: 60 requests per minute per account (subject to change).  
+- **SDK version**: Requires Aspose.Cells Cloud SDK v4.0 or later.
 
+## When to Use the Delete Spreadsheet Blank Columns API
 
-## Why should you use the Delete Spreadsheet Blank Columns API?
+- **Data Import & Cleanup Workflows** – Remove trailing or structural blank columns immediately after loading data from CSV, databases, or web APIs.  
+- **Report & Dashboard Generation** – Ensure final reports have a clean layout without unnecessary empty columns.  
+- **ETL Pipelines** – Pre‑process Excel files before loading them into data warehouses such as Snowflake or BigQuery.  
+- **System Integration** – Normalize partner‑supplied Excel files before further processing.  
+- **Batch Document Automation** – Strip placeholder columns from generated templates in bulk.  
+- **User‑Generated Content** – Clean Excel uploads from web portals before storage or analysis.  
+- **Legacy Data Migration** – Streamline old spreadsheet archives by removing historically empty columns.
 
-- **Developer-Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared to building custom chart rendering solutions, this significantly reduces the development workload.
-- **Reduced Labor Costs**: Reduced the need for positions dedicated to document consolidation.
-- **Pay-per-use**: No upfront investment, only pay for API calls actually used.
-- **Zero Maintenance Costs**: No need to maintain servers, update software, or deal with compatibility issues.
+## Why Use This API?
+
+- **Developer‑Friendly** – SDKs are available for C#, Java, Python, PHP, Ruby, Node.js, Go, and more, reducing development effort.  
+- **Cost‑Effective** – Pay‑per‑use pricing eliminates upfront infrastructure costs.  
+- **Zero Maintenance** – No servers to manage; the service is continuously updated by Aspose.  
 
 ## How to Use the Delete Spreadsheet Blank Columns API with SDKs
 
-### Delete Spreadsheet Blank Columns API Specification
+### API Specification
 
-The [Delete Spreadsheet Blank Columns API Specification](https://reference.aspose.cloud/cells/#/TransformController/DeleteSpreadsheetBlankColumns) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [Delete Spreadsheet Blank Columns API Specification](https://reference.aspose.cloud/cells/#/TransformController/DeleteSpreadsheetBlankColumns) provides the full OpenAPI definition and examples.
 
-### Use Aspose.Cells Cloud SDKs
+### Using Aspose.Cells Cloud SDKs
 
-Using the SDK is the fastest way to develop, as it abstracts away the low-level details, allowing you to delete spreadsheet blank columns with short code.
-Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+The SDK abstracts low‑level HTTP details, allowing you to delete blank columns with just a few lines of code. See the official GitHub repository for a complete list of supported languages: <https://github.com/aspose-cells-cloud>.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following code examples demonstrate how to call the API with various SDKs:
 
 {{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 {{<tab tabNum="1" >}}
@@ -108,3 +146,42 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_DeleteSpreadsheetBlankColumns.go" >}}
 {{</tab>}}
 {{< /tabs >}}
+
+## FAQs (JSON‑LD)
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What HTTP method and endpoint are used to delete blank columns from an Excel file with Aspose.Cells Cloud?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Send a PUT request to https://api.aspose.cloud/v4.0/cells/delete/blank-columns. Include the workbook in the multipart/form‑data body and optional query parameters such as outPath, outStorageName, region, and password."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I authenticate when calling the Delete Spreadsheet Blank Columns API?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Obtain an OAuth 2.0 access token from the /connect/token endpoint using your client‑id and client‑secret, then add the header Authorization: Bearer <access_token> to the request."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What response does the API return after successfully deleting blank columns?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If an outPath is supplied, the API returns a JSON object containing FileName and Size. If outPath is omitted, the cleaned workbook is streamed back as a binary file with a Content‑Disposition header."
+      }
+    }
+  ]
+}
+```
+
+*Last updated: 2026‑03‑30*  
+
+---
