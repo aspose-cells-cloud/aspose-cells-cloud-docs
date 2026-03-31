@@ -4,8 +4,8 @@ second_title: "Document"
 type: docs
 linktitle: "Repair Excel Files"
 url: /repair-excel-files/
-keywords: "Excel repair, Aspose.Cells Cloud, REST API, spreadsheet, XLSX, XLS, XLSM, XLSB, ODS, file recovery"
-description: "Repair corrupted Excel files using Aspose.Cells Cloud REST API. Supports XLS, XLSX, XLSM, XLSB, ODS and other formats, with multi‑file upload via REST calls or SDKs."
+keywords: "Aspose Cells, Excel repair API, corrupt XLSX, spreadsheet recovery, cloud API"
+description: "Use Aspose.Cells Cloud REST API to repair corrupted Excel files (XLS, XLSX, XLSM, XLSB, ODS). Upload one or many files, choose output format, and receive repaired files as Base64. No installation required."
 weight: 39
 ---
 
@@ -14,9 +14,19 @@ This REST API allows you to **repair** Excel files.
 - Repair XLS, XLSX, XLSM, XLSB, ODS and other spreadsheet formats.  
 - Supports uploading multiple files in a single request.
 
-Aspose.Cells Cloud Excel Repair recovers data from corrupt Excel files online without any installation. Corrupted Excel files can be a problem because you cannot open them. You can try the Aspose.Cells Cloud Excel Repair app to recover data from such files.
+Aspose.Cells Cloud Excel Repair recovers data from corrupt Excel files online without any installation. Corrupted Excel files are problematic because they cannot be opened. You can try the Aspose.Cells Cloud Excel Repair app to recover data from such files.
 
 ## REST API
+
+The **Repair Excel Files** endpoint repairs corrupted spreadsheet files and returns the repaired content.
+
+**Prerequisites** – You must obtain a JWT access token from Aspose Cloud (OAuth 2.0 client‑credentials flow) before invoking the API.
+
+**Authentication** – Include the token in the request header:
+
+```
+Authorization: Bearer <access_token>
+```
 
 ```bash
 POST https://api.aspose.cloud/v3.0/cells/repair
@@ -27,7 +37,7 @@ The request parameters are:
 | Parameter Name | Type   | Location                     | Description |
 |----------------|--------|------------------------------|-------------|
 | file           | file   | formData (multipart)         | File to upload |
-| format         | string | query                        | Desired output format. If omitted (null), the output format defaults to the input file’s format. |
+| format         | string | query                        | Desired output format. If omitted (null), the output format defaults to the same format as the input file. |
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/LightCells/PostRepair) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -71,6 +81,13 @@ curl -v "https://api.aspose.cloud/v3.0/cells/repair" \
 {{< /tab >}}
 
 {{< /tabs >}}
+
+On success the service returns HTTP 200 with a JSON payload containing a `Files` array. In error situations the API uses standard HTTP status codes:
+
+- **400 Bad Request** – Invalid parameters or unrecoverable file.  
+- **401 Unauthorized** – Missing or invalid JWT token.  
+- **413 Payload Too Large** – Uploaded file exceeds the allowed size.  
+- **500 Internal Server Error** – Unexpected server‑side failure.
 
 ## Cloud SDK Family
 
