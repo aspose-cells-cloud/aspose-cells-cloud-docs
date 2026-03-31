@@ -1,36 +1,58 @@
 ---
-title: "Aspose.Cells Cloud Replace Web API - Update Text in Local Spreadsheets"
+title: "Aspose.Cells Cloud – Replace Text in Local Excel Files (Find & Replace API)"
 second_title: "Document"
-ArticleTitle: "Bulk Text Replacement in Local Excel Files - Find & Replace API"
+ArticleTitle: "Bulk Text Replacement in Local Excel Files – Find & Replace API"
 linktitle: "Replace Spreadsheet Content"
 type: docs
 url: /replace-spreadsheet-content/
-keywords: "find and replace Excel, update text local spreadsheet, modify Excel files offline, Aspose.Cells replace API, edit local Excel, search and replace offline, automate text replacement, desktop Excel editing, bulk text update"
-description: "Efficiently find and replace specified text within local Excel files on your computer. Update content across workbooks or specific ranges offline using Aspose.Cells Find and Replace API."
+keywords: "replace text in Excel, Aspose.Cells Find and Replace, local spreadsheet API, Excel file replace, API replace content"
+description: "Replace text in local Excel workbooks without uploading to the cloud. Use Aspose.Cells Cloud Find & Replace API to update specific ranges, worksheets, or whole files in a single call."
 weight: 100
 ---
 
-Replace specified text within local Excel spreadsheet files without cloud upload. Update content in workbooks efficiently using Aspose.Cells Find and Replace API for offline editing.
+Replace specified text within local Excel spreadsheet files without cloud upload. Update content in workbooks efficiently using Aspose.Cells Find & Replace API for offline editing.
 
 ## **Replace Spreadsheet Content API**
 
 ### API Endpoint
 
+```http
+PUT https://api.aspose.cloud/v4.0/cells/replace/content
 ```
-PUT http://api.aspose.cloud/v4.0/cells/replace/content
-```
+
+> **Note:** The API requires an OAuth 2.0 **Bearer** token. Obtain the token via the client‑credentials flow and include it in the request header: `Authorization: Bearer <access_token>`.
 
 ### **Request Parameters:**
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description |
 | :- | :- | :- | :- |
 | Spreadsheet | File | FormData | The local spreadsheet file to be processed. Supported formats include XLSX, XLS, ODS, CSV, etc. |
 | searchText | String | Query | The text string to search for within the specified worksheet and cell area. |
 | replaceText | String | Query | The text string that will replace all occurrences of `searchText` within the specified range. |
-| worksheet | String | Query | *(Optional)* The name of the worksheet where the find-and-replace operation will be performed. If omitted, the operation applies to the first worksheet. |
+| worksheet | String | Query | *(Optional)* The name of the worksheet where the find‑and‑replace operation will be performed. If omitted, the operation applies to the first worksheet. |
 | cellArea | String | Query | *(Optional)* The specific cell range (e.g., `"A1:D20"`, `"B5:F15"`) where the text search and replacement will occur. If omitted, the operation applies to all used cells in the specified worksheet. |
 | region | String | Query | *(Optional)* Sets the locale for text handling, which may affect case sensitivity and character encoding in search operations (e.g., `"en-US"`, `"fr-FR"`). |
-| password | String | Query | *(Optional)* If the uploaded spreadsheet is password-protected, provide the password to open and process the file. |
+| password | String | Query | *(Optional)* If the uploaded spreadsheet is password‑protected, provide the password to open and process the file. |
+
+### **Authentication**
+
+The API uses **OAuth 2.0 client‑credentials** authentication.
+
+1. Send a POST request to `https://api.aspose.cloud/connect/token` with your client ID and secret.  
+2. Receive an access token (`expires_in` ≈ 3600 seconds).  
+3. Include the token in every subsequent API call:
+
+```http
+Authorization: Bearer {access_token}
+```
+
+### **Sample Request (cURL)**
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/replace/content?searchText=OldValue&replaceText=NewValue&worksheet=Sheet1&cellArea=A1:D20" \
+  -H "Authorization: Bearer {access_token}" \
+  -F "Spreadsheet=@/path/to/Workbook.xlsx"
+```
 
 ### **Response**
 
@@ -39,34 +61,36 @@ PUT http://api.aspose.cloud/v4.0/cells/replace/content
     {
         "Name": "ResponseFile",
         "DataType": {
-        "Identifier": "File",
-        "Reference": "Stream",
-        "Name": "file"
+            "Identifier": "File",
+            "Reference": "Stream",
+            "Name": "file"
         }
     }
 ]
 ```
 
-### Error Codes
+The response is a binary stream containing the updated workbook. Save it with the appropriate file extension (e.g., `.xlsx`).
 
-- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized**: Invalid access token. Or invalid client id and secret.
-- **404 Not Found**: The spreadsheet file not accessible.
-- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
+### **Error Codes**
+
+- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI or malformed parameters.  
+- **401 Unauthorized** – Invalid or missing access token; obtain a new token.  
+- **404 Not Found** – The spreadsheet file is not accessible or the specified worksheet does not exist.  
+- **500 Server Error** – The spreadsheet encountered an internal processing error; contact support if the problem persists.
 
 ## Where should we use the Replace content in Spreadsheet API?
 
-- **Batch Cloud File Update**: Modify the contents of multiple Excel files stored in cloud storage such as AWS S3 and Azure Blob
-- **Dynamic population of cloud templates**: Batch populate dynamic data for report templates stored in the cloud
-- **Cross-region file synchronization**: Synchronize the content consistency of Excel files in cloud storage in different geographical regions
+- **Batch processing of local Excel files** – Automate find‑and‑replace across many workbooks stored on-premises.  
+- **On‑premise data pipelines** – Integrate the API into scheduled jobs that modify reports before they are archived or distributed.  
+- **Local report generation** – Dynamically insert values into template workbooks without uploading them to the cloud.
 
 ## Why should you use the Replace content in Spreadsheet API?
 
-- **Developer-Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared to building custom chart rendering solutions, this significantly reduces the development workload.
-- **Reduced Labor Costs**: Reduced the need for positions dedicated to document consolidation.
-- **Pay-per-use**: No upfront investment, only pay for API calls actually used.
-- **Zero Maintenance Costs**: No need to maintain servers, update software, or deal with compatibility issues.
-- **Preserves complex Excel formatting** in universally accessible PDF format.
+- **Developer‑Friendly** – Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comprehensive documentation. Compared with building custom solutions, this significantly reduces development effort.  
+- **Reduced Labor Costs** – Reduces the need for dedicated staff to perform manual document consolidation.  
+- **Pay‑per‑Use** – No upfront investment; you only pay for the API calls you actually use.  
+- **Zero Maintenance Costs** – No servers to maintain, no software updates, and no compatibility worries.  
+- **Preserves complex Excel formatting** – The original workbook’s formatting, formulas, and charts remain intact after replacement.
 
 ## How to Use the Replace content in Spreadsheet API with SDKs
 
@@ -76,8 +100,7 @@ The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/SearchControl
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement replace content in spreadsheets for cells with minimal code.
-Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the quickest way to accelerate development. The SDK handles the underlying details, allowing you to implement replace‑content operations with minimal code. See the official **Aspose.Cells Cloud SDK GitHub** repository for a complete list of supported languages.
 
 The following code examples demonstrate how to interact with Aspose.Cells web services using various SDKs:
 
@@ -107,3 +130,21 @@ The following code examples demonstrate how to interact with Aspose.Cells web se
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ReplaceTextInLocalFile.go" >}}
 {{</tab>}}
 {{< /tabs >}}
+
+## Frequently Asked Questions
+
+**Q1: How do I replace text in a specific range of a local Excel file?**  
+**A:** Use the `cellArea` query parameter (e.g., `cellArea=A1:D20`) together with `searchText` and `replaceText`. Send the workbook as `multipart/form-data` in the request body.
+
+**Q2: What authentication method does the API require?**  
+**A:** The API uses OAuth 2.0 client‑credentials. Obtain a token from `https://api.aspose.cloud/connect/token` and include it in the `Authorization: Bearer <token>` header.
+
+**Q3: Can I replace text in a password‑protected workbook?**  
+**A:** Yes. Provide the workbook password via the optional `password` query parameter (URL‑encoded). The API will open the file, perform the replacement, and return the updated workbook.
+
+**Q4: What is the format of the response?**  
+**A:** The API returns the updated workbook as a binary file stream. Save the response to a file with the appropriate extension (e.g., `.xlsx`).  
+
+---  
+
+*The **Cloud SDK Family** section remains unchanged.*
