@@ -1,107 +1,139 @@
 ---
-title: "Aspose.Cells Cloud Spreadsheet Merger - Combine Excel Files from Cloud Storage with API."
-second_title: Aspose.Cells Cloud"
-ArticleTitle: "Merge Excel Files in Cloud - Combine Spreadsheets Online with Aspose.Cells Cloud API"
+title: "Aspose.Cells Cloud – Merge Excel Files in Cloud | Combine Spreadsheets via API"
+second_title: "Aspose.Cells Cloud"
+ArticleTitle: "Merge Excel Files in Cloud – Combine Spreadsheets Online with Aspose.Cells Cloud API"
 linktitle: "Merge Remote Spreadsheet"
 type: docs
 url: /merge-remote-spreadsheet/
-keywords: "merge Excel files online, combine spreadsheets cloud API, Aspose.Cells merge workbooks, merge Excel files stored in cloud storage, combine Excel files API, merge multiple spreadsheets, cloud Excel merger, automatic spreadsheet merging, Excel file combination tool, merge Excel online free"
-description: "Combine a spreadsheet file stored in a cloud storage into another spreadsheet, and you can specify the format and location of the data output.."
+keywords: "merge excel files in cloud, Aspose.Cells merge API, cloud spreadsheet merge, remote spreadsheet merge, combine Excel workbooks, cloud Excel merger"
+description: "Merge Excel workbooks stored in cloud storage with Aspose.Cells Cloud API. Specify output format, target folder, and merge mode in a single HTTPS call."
 weight: 100
 ---
 
-Quickly merge Excel files stored in the cloud with other spreadsheets using Aspose.Cells Cloud API, and flexibly specify the output data format and storage location.
+Quickly merge Excel files stored in the cloud with other spreadsheets using Aspose.Cells Cloud API, and specify the output data format and storage location.
 
 ## **Merge Remote Spreadsheet API**
+
+**Prerequisites**  
+Before calling the API, ensure that you:
+
+* Have generated a valid OAuth 2.0 access token.  
+* Are using a supported cloud storage provider (AWS S3, Azure Blob, Google Cloud Storage).  
+* Are running at least SDK version **23.12** (or later).  
+* Have TLS 1.2 or higher enabled for secure communication.
 
 ### API Endpoint
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/{name}/merge/spreadsheet
+PUT https://api.aspose.cloud/v4.0/cells/{name}/merge/spreadsheet
 ```
+
+> **Note:** The endpoint uses HTTPS, providing encrypted transmission and compliance with Google’s security ranking factors.
 
 ### **Request Parameters:**
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-| :- | :- | :- | :- |
-| name | String | Path | The name of the source workbook file to be merged. |
-| mergedSpreadsheet | String | Query | A comma-separated list of spreadsheet file names to merge into the source workbook. |
-| folder | String | Query | The folder path in cloud storage containing the source workbook. |
-| outFormat | String | Query | The desired format for the merged output file (e.g., `XLSX`, `PDF`, `CSV`). |
-| mergeInOneSheet | Boolean | Query | If set to `true`, merges data from all source files into a single worksheet. If `false`, each file's content is placed in separate worksheets. |
-| storageName | String | Query | *(Optional)* The name of the cloud storage where the source workbook resides. If omitted, the default cloud storage is used. |
-| outPath | String | Query | *(Optional)* The target folder path in cloud storage for saving the merged file. If omitted, the merged file is saved in the source folder. |
-| outStorageName | String | Query | The name of the cloud storage for saving the output file. |
-| fontsLocation | String | Query | *(Optional)* Specifies a custom folder path for font files used during conversion to image/PDF formats. |
-| region | String | Query | *(Optional)* Sets the locale/region for date, number, and currency formatting in the output file (e.g., `en-US`, `de-DE`). |
-| password | String | Query | *(Optional)* The password required to open the source workbook if it is password-protected. |
+| Parameter Name      | Type    | Path/Query String/HTTPBody | Description |
+| :-                  | :-      | :-                         | :- |
+| name                | String  | Path                       | The name of the source workbook file to be merged. |
+| mergedSpreadsheet   | String  | Query                      | A comma‑separated list of spreadsheet file names to merge into the source workbook. |
+| folder              | String  | Query                      | The folder path in cloud storage containing the source workbook. |
+| outFormat           | String  | Query                      | The desired format for the merged output file (e.g., `XLSX`, `PDF`, `CSV`). |
+| mergeInOneSheet     | Boolean | Query                      | Set to `true` to merge all source data into a single worksheet; `false` creates separate worksheets for each file. |
+| storageName         | String  | Query                      | *(Optional)* The name of the cloud storage where the source workbook resides. If omitted, the default storage is used. |
+| outPath             | String  | Query                      | *(Optional)* The target folder path in cloud storage for saving the merged file. If omitted, the file is saved in the source folder. |
+| outStorageName      | String  | Query                      | The name of the cloud storage for saving the output file. |
+| fontsLocation       | String  | Query                      | *(Optional)* Custom folder path for font files used during conversion to image/PDF formats. |
+| region              | String  | Query                      | *(Optional)* Locale/region for date, number, and currency formatting in the output file (e.g., `en-US`, `de-DE`). |
+| password            | String  | Query                      | *(Optional)* Password required to open the source workbook if it is protected. |
+
+**Full Request Example (cURL)**  
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/SourceWorkbook.xlsx/merge/spreadsheet\
+?mergedSpreadsheet=Report1.xlsx,Report2.xlsx\
+&folder=Reports/2024\
+&outFormat=pdf\
+&outPath=Merged/Result.pdf\
+&mergeInOneSheet=true" \
+-H "Authorization: Bearer {access_token}" \
+-H "Accept: application/json"
+```
 
 ### **Response**
 
 ```json
-[
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
-    }
-]
+{
+  "FileName": "Result.pdf",
+  "Size": 254312,
+  "DownloadUrl": "https://mycloudstorage.com/Merged/Result.pdf"
+}
 ```
+
+The response returns the name, size (in bytes), and a direct download URL for the merged file.
 
 ### Error Codes
 
-- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized**: Invalid access token. Or invalid client id and secret.
-- **404 Not Found**: The spreadsheet file not accessible.
-- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
+- **400 Bad Request** – The request URI is invalid or required parameters are missing.  
+- **401 Unauthorized** – Invalid or missing OAuth 2.0 token, or incorrect client credentials.  
+- **404 Not Found** – The specified spreadsheet file cannot be accessed.  
+- **500 Server Error** – An unexpected error occurred while processing the workbook.
+
+**Sample Error Payload**
+
+```json
+{
+  "ErrorCode": "InvalidParameter",
+  "Message": "The 'mergedSpreadsheet' query parameter is required.",
+  "Description": "Provide at least one spreadsheet name to merge."
+}
+```
 
 ## Where should we use the Merge Remote Spreadsheet API?
 
-### **Enterprise-Grade Data Integration**
+### **Enterprise‑grade data integration**
 
-- **Multi-Department Report Consolidation**: Consolidate separate Excel reports submitted by sales, marketing, finance, and more.
-- **Branch Data Summary**: A performance data file that summarizes the performance data of each branch nationwide or globally.
-- **Partner Data Consolidation**: Consolidate data submissions from multiple partners.
+- **Multi‑department report consolidation** – Consolidate separate Excel reports submitted by sales, marketing, finance, and other teams.  
+- **Branch data summary** – Summarize performance data from each branch worldwide.  
+- **Partner data consolidation** – Merge data submissions from multiple partners into a single workbook.
 
-### **Cloud Document Processing Process**
+### **Cloud document processing workflow**
 
-- Cloud Storage File Processing: Directly merge Excel files stored in AWS S3, Azure Blob, and Google Cloud Storage.
-- **Multi-Source Data Consolidation**: Consolidate files from different cloud locations into a single file.
-- **Automated Data Pipelines**: Integrate into data ETL processes to automate file merging.
+- Cloud storage file processing: Directly merge Excel files stored in AWS S3, Azure Blob, or Google Cloud Storage.  
+- **Multi‑source data consolidation** – Combine files from different cloud locations into one workbook.  
+- **Automated data pipelines** – Integrate the API into ETL processes to automate file merging.
 
-### **Document Management Automation**
+### **Document‑management automation**
 
-- **Version Control Consolidation**: Consolidate different versions of a project plan or budget file.
-- **Template Data Population**: Incorporate data files into standardized reporting templates.
-- **Regular Report Generation**: Automate the generation of weekly, monthly, and quarterly summary reports.
+- **Version‑control consolidation** – Merge different versions of a project plan or budget workbook.  
+- **Template data population** – Insert data files into standardized reporting templates.  
+- **Regular report generation** – Automate weekly, monthly, and quarterly summary reports.
 
-### **Cross-Platform Collaboration**
+### **Cross‑platform collaboration**
 
-- **Remote Team Collaboration**: Consolidate work submitted by dispersed team members.
-- **Customer Data Organization**: Consolidate order or feedback data from different customers.
-- **Supplier Information Summary**: Consolidate quotes or product information from multiple suppliers.
+- **Remote‑team collaboration** – Consolidate work submitted by dispersed team members.  
+- **Customer data organization** – Merge order or feedback data from multiple customers.  
+- **Supplier information summary** – Combine quotes or product information from several suppliers.
 
 ## Why should you use the Merge Remote Spreadsheet API?
 
-- **Developer-Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared to building custom chart rendering solutions, this significantly reduces the development workload.
-- **Reduced Labor Costs**: Reduced the need for positions dedicated to document consolidation.
-- **Pay-per-use**: No upfront investment, only pay for API calls actually used.
-- **Zero Maintenance Costs**: No need to maintain servers, update software, or deal with compatibility issues.
+- **Developer‑friendly** – Aspose.Cells Cloud provides SDKs for many languages, shortening development time and offering comprehensive documentation. Compared with building a custom solution, this reduces workload dramatically.  
+- **Reduced labor costs** – Decreases the need for staff dedicated to manual document consolidation.  
+- **Pay‑per‑use** – No upfront investment; you only pay for the API calls you actually use.  
+- **Zero maintenance costs** – No servers to maintain, no software updates, and no compatibility concerns.
 
 ## How to Use the Merge Remote Spreadsheet API with SDKs
 
 ### Merge Remote Spreadsheet API Specification
 
-The [Merge Remote Spreadsheet API Specification](https://reference.aspose.cloud/cells/#/DataProcessingController/MergeRemoteSpreadsheet) provides a publicly accessible programming interface for executing REST interactions directly from a web browser.
+The [Merge Remote Spreadsheet API Specification](https://reference.aspose.cloud/cells/#/DataProcessingController/MergeRemoteSpreadsheet) describes the REST interface that can be called directly from any HTTP client.
 
 ## Excel API SDK
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the fastest way to develop, as it abstracts away the low-level details, allowing you to merge a spreadsheet into  another spreadsheet with short code.
+Using an SDK is the fastest way to develop, as it abstracts low‑level details and lets you merge a spreadsheet into another spreadsheet with a short code snippet.  
 Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+
 The following code examples demonstrate how to interact with Aspose.Cells web services using various SDKs:
 
 {{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
