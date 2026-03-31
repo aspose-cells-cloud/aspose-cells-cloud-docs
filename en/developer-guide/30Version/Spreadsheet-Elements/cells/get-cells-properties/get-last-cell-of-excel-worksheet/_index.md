@@ -1,29 +1,33 @@
 ---
-title: "Get Last Cell of Excel Worksheet"
+title: "Get Last Cell of Excel Worksheet – Aspose.Cells Cloud API (v4.0)"
 type: docs
 url: /get-last-cell-of-excel-worksheet/
 weight: 30
-keywords: "Aspose.Cells Cloud, Excel, Get Last Cell, REST API, Worksheet, endcell"
-description: "Learn how to retrieve the address of the last used cell in an Excel worksheet using Aspose.Cells Cloud REST API."
+keywords: "Aspose.Cells, Cloud API, Excel last cell, endcell, REST"
+description: "Retrieve the address of the last used cell in an Excel worksheet with Aspose.Cells Cloud REST API (v4.0). Includes cURL request, JSON response, and SDK samples."
 ---
 
-This REST API returns the `endcell` of an Excel worksheet when the `cellOrMethodName` parameter is set to `endcell`.
+This REST API returns the **endcell** of an Excel worksheet when the `cellOrMethodName` parameter is set to `endcell`.  
+Before calling the endpoint, obtain a valid OAuth 2.0 access token and include it in the `Authorization: Bearer <token>` header.
 
-- **cURL Example**
+- **cURL Example.**
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/endcell" -H "Content-Type: application/json" -H "Accept: application/json"
+```bash
+curl -X GET "https://api.aspose.cloud/v4.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/endcell" \
+     -H "Authorization: Bearer <your_access_token>" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
+```json
 {
   "Cell": {
     "Name": "F341",
@@ -55,6 +59,26 @@ curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/
 {{< /tab >}}
 
 {{< /tabs >}}
+
+- **Response Fields Overview**
+
+| Field          | Type   | Description                                                                      |
+|----------------|--------|----------------------------------------------------------------------------------|
+| `Name`         | string | Address of the cell (e.g., `F341`).                                             |
+| `Row`          | integer| Zero‑based row index.                                                            |
+| `Column`       | integer| Zero‑based column index.                                                         |
+| `Value`        | string | The cell’s displayed value.                                                      |
+| `Type`         | string | Data type of the cell (e.g., `IsString`).                                        |
+| `Formula`      | string | Formula text if the cell contains a formula.                                     |
+| `IsFormula`    | bool   | Indicates whether the cell contains a formula.                                   |
+| `IsMerged`     | bool   | Indicates whether the cell is part of a merged range.                           |
+| `IsArrayHeader`| bool  | Indicates whether the cell is an array header.                                   |
+| `IsInArray`    | bool   | Indicates whether the cell belongs to an array.                                  |
+| `IsErrorValue`| bool   | Indicates whether the cell contains an error value.                              |
+| `IsInTable`    | bool   | Indicates whether the cell is inside a table.                                    |
+| `IsStyleSet`   | bool   | Indicates whether a style is applied to the cell.                                |
+| `HtmlString`   | string | HTML‑encoded representation of the cell’s value.                                 |
+| `Style.link`   | object | Hyperlink to the style resource.                                                 |
 
 - **Cloud SDK Family**
 
@@ -107,6 +131,8 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
+
+*Coming soon.*
 
 {{< /tab >}}
 
