@@ -1,46 +1,78 @@
 ---  
-title: "Convert worksheet to various formats"  
+title: "Convert Worksheet to PDF, PNG, CSV & More – Aspose.Cells Cloud API"  
 second_title: "Document"  
 linktitle: "Convert worksheet"  
 type: docs  
 url: /worksheets/conversion/  
-aliases: [/convert-worksheet-to-image/,/worksheets/to-image/]  
-keywords: "Aspose.Cells Cloud, worksheet conversion, Excel, PDF, PNG, CSV, API, SDK, REST"  
-description: "Learn how to use Aspose.Cells Cloud REST API to convert a worksheet from an Excel workbook into multiple formats such as PDF, PNG, CSV, and more. Includes a cURL request example and SDK code snippets for several programming languages."  
+aliases:  
+  - /convert-worksheet-to-image/  
+  - /worksheets/to-image/  
+keywords: "Aspose.Cells, worksheet conversion, REST API, cURL, SDK, PDF, PNG, CSV"  
+description: "Learn how to convert a single worksheet from an Excel workbook to PDF, PNG, CSV, and 15+ other formats using Aspose.Cells Cloud REST API. Includes cURL example, SDK snippets, and full parameter reference."  
 weight: 130  
 ---  
 
-[GET /cells/{name}/worksheets/{sheetName}](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheet) API lets you convert a worksheet to various formats, such as [XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [ODS](https://docs.fileformat.com/spreadsheet/ods/), and [TXT](https://docs.fileformat.com/word-processing/txt/). Export‑only formats include [PDF](https://docs.fileformat.com/pdf/), [OTS](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [DIF](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [NUMBERS](https://docs.fileformat.com/spreadsheet/numbers/), and [FODS](https://docs.fileformat.com/spreadsheet/fods/).
+**Worksheet conversion API** – The `GET /cells/{name}/worksheets/{sheetName}` endpoint converts a single worksheet (a sheet inside an Excel workbook) to another file type.
+
+Supported **importable** formats (the worksheet can be read from):  
+
+- XLS, XLSX, XLSB, CSV, TSV, XLSM, ODS, TXT  
+
+Supported **export‑only** formats (the worksheet can be saved as):  
+
+- PDF, OTS, XPS, DIF, PNG, JPEG, BMP, SVG, TIFF, EMF, NUMBERS, FODS  
 
 ## REST API  
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetWithFormat) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetWithFormat) describes the publicly accessible interface.  
 
-You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL.
+### Prerequisites & Authentication  
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+* Obtain a JWT token from the Aspose Cloud authentication service.  
+* Include the token in the request header:  
 
-{{< tab tabNum="1" >}}
+```bash
+-H "Authorization: Bearer <jwt token>"
+```  
 
-```java
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1?format=png&verticalResolution=96&horizontalResolution=96" \
+* The API version used in the examples is **v3.0**.
+
+### Parameters  
+
+| Parameter | Type | Required | Default | Allowed Values | Description |
+|-----------|------|----------|---------|----------------|-------------|
+| **format** | string | Yes | – | pdf, png, jpeg, bmp, svg, tiff, emf, csv, txt, … (see supported list) | Target output format. |
+| **verticalResolution** | integer | No | 96 | 72‑600 | Vertical DPI for image output. |
+| **horizontalResolution** | integer | No | 96 | 72‑600 | Horizontal DPI for image output. |
+| **password** | string | No | – | – | Password for opening a protected workbook. |
+| **folder** | string | No | – | – | Cloud folder where the source workbook is stored. |
+| **storage** | string | No | – | – | Name of the storage (e.g., “Default”). |
+
+### Response  
+
+| Status Code | Description | Return Type |
+|------------|-------------|------------|
+| **200** | Conversion succeeded; binary stream of the converted file is returned. | `application/octet-stream` |
+| **400** | Bad request – missing or invalid parameters. | JSON error object |
+| **401** | Unauthorized – invalid or missing JWT token. | JSON error object |
+| **404** | Not found – workbook or worksheet does not exist. | JSON error object |
+| **500** | Internal server error – unexpected failure. | JSON error object |
+
+#### Example Request (cURL)
+
+```bash
+curl -v "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1?format=png&verticalResolution=96&horizontalResolution=96" \
   -X GET \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
   -H "Authorization: Bearer <jwt token>"
 ```
 
-{{< /tab >}}
+#### Example Response  
 
-{{< tab tabNum="2" >}}
-
-```java
-Converted Image
 ```
-
-{{< /tab >}}
-
-{{< /tabs >}}
+Converted Image (binary stream)
+```
 
 ## Cloud SDK Family  
 
@@ -99,3 +131,40 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### Frequently Asked Questions  
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What HTTP method is used to convert a worksheet with Aspose.Cells Cloud?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The endpoint uses the **GET** method on `/cells/{name}/worksheets/{sheetName}` with the `format` query parameter specifying the desired output type."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which image formats can a worksheet be exported to?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The API supports PNG, JPEG, BMP, SVG, TIFF, and EMF for image export."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I authenticate the request to the worksheet conversion endpoint?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Include an `Authorization: Bearer <jwt token>` header obtained from the Aspose Cloud authentication service."
+      }
+    }
+  ]
+}
+```
+
+---  
