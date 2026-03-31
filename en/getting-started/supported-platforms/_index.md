@@ -1,13 +1,13 @@
 ---
 title: "Aspose.Cells Cloud Supported Platforms"
 second_title: "Document"
-ArticleTitle: "Aspose.Cells Cloud Supported Platforms: Windows, Linux, and MacOS"
+ArticleTitle: "Aspose.Cells Cloud Supported Platforms: Windows, Linux, and macOS"
 LinkTitle: "Supported Platforms"
 type: docs
 url: /supported-platforms/
-description: "Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on."
+description: "Discover the exact operating systems, versions, and SDKs supported by Aspose.Cells Cloud. Learn how to integrate the REST API on Windows, Linux, and macOS with code samples and Docker images."
 weight: 50
-kwords: Excel Cloud, REST, Spreadsheet, PDF, CSV, Json, Markdown, Supported Platforms Windows, MacOS, Linux
+keywords: "Aspose.Cells Cloud Windows support, Linux Aspose.Cells API, macOS spreadsheet REST API, Excel Cloud, REST, Spreadsheet, PDF, CSV, Json, Markdown, Supported Platforms"
 ---
 
-Aspose.Cells Cloud’s platform-independent document manipulation API is a true REST API that can be used with any language: Go, Java, .NET, NodeJS, Perl, PHP, Python, Ruby, and many more. You can use it with any language or platform that supports REST. (Almost all platforms and languages support REST and provide native REST clients to work with REST APIs). You do not need to worry about language or platform limitations. You can use it with any platform – web, desktop, mobile, and cloud. The API integrates with other cloud services to give you the flexibility you need when processing documents. It is suitable for any type of business, document, or content.
+Aspose.Cells Cloud provides a platform‑independent, true REST API for document manipulation. It works with any language that can send HTTP requests, such as Go, Java, .NET, Node.js, Perl, PHP, Python, Ruby, and many others. Because the service is accessed via standard REST calls, there are no language‑ or platform‑specific limitations. You can invoke the API from web, desktop, mobile, or cloud environments. The API also integrates with other cloud services, offering the flexibility required for processing Excel, PDF, CSV, JSON, and other document formats across all business scenarios.
