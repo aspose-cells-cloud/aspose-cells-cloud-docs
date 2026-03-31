@@ -1,12 +1,12 @@
 ---
-title: "Add a list object in an Excel worksheet"
+title: "Add a List Object (Table) to an Excel Worksheet"
 second_title: "Document"
 linktitle: "Add"
 type: docs
 url: /list-objects/add/
 aliases: [/add-a-list-object-or-table-inside-the-worksheet/,/tables/add/]
-keywords: "Aspose.Cells Cloud, Excel, list object, table, REST API, worksheet"
-description: "Learn how to add a list object (table) to an Excel worksheet using Aspose.Cells Cloud REST API. Includes request details, cURL example, and SDK code samples for multiple languages."
+keywords: "Aspose.Cells Cloud, Excel API, add list object, table, REST, worksheet"
+description: "Learn how to add a list object (Excel table) to a worksheet using Aspose.Cells Cloud REST API. Includes endpoint, parameters, authentication steps, cURL example, and SDK code samples."
 weight: 10
 ---
 
@@ -15,43 +15,72 @@ This REST API adds a **list object (table)** to an Excel worksheet.
 ## REST API
 
 ```bash
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects
 ```
 
-The request parameters are:
+### Prerequisites
+- API version **v3.0**.  
+- A valid JWT token (see **Authentication** below).  
+- The source workbook must be uploaded to storage.  
+- The target worksheet must already exist.  
 
-| Parameter Name | Type    | Location                     | Description                                 |
-|----------------|---------|------------------------------|---------------------------------------------|
-| name           | string  | path                         | Document name.                              |
-| sheetName      | string  | path                         | Worksheet name.                             |
-| startRow       | integer | query                        | The start row of the list range.            |
-| startColumn    | integer | query                        | The start column of the list range.         |
-| endRow         | integer | query                        | The end row of the list range.              |
-| endColumn      | integer | query                        | The end column of the list range.           |
-| hasHeaders     | boolean | query                        | Indicates whether the list includes headers. |
-| listObject     | object  | body                         | Definition of the list object.              |
-| folder         | string  | query                        | Document’s folder.                          |
-| storageName    | string  | query                        | Storage name.                               |
+### Authentication
+To call this endpoint you need a JWT access token obtained via the OAuth 2.0 client‑credentials flow:
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ListObjects/PutWorksheetListObject) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+```bash
+POST https://api.aspose.cloud/connect/token \
+  -d "grant_type=client_credentials&client_id=<your_client_id>&client_secret=<your_client_secret>"
+```
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+Include the token in the request header:
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+```
+Authorization: Bearer <jwt token>
+```
 
-{{< tab tabNum="11" >}}
+### Request parameters
+The request parameters for this operation are:
+
+| Parameter Name | Type    | Location | Description |
+|----------------|---------|----------|-------------|
+| **name**       | string  | path     | Workbook file name. |
+| **sheetName**  | string  | path     | Worksheet name. |
+| **startRow**   | integer | query    | Zero‑based index of the first row of the table range. |
+| **startColumn**| integer | query    | Zero‑based index of the first column of the table range. |
+| **endRow**     | integer | query    | Zero‑based index of the last row of the table range. |
+| **endColumn**  | integer | query    | Zero‑based index of the last column of the table range. |
+| **hasHeaders** | boolean | query    | `true` if the first row contains column headers; otherwise `false`. |
+| **listObject** | object  | body     | Definition of the list object (see **Request body schema**). |
+| **folder**     | string  | query    | Folder that contains the workbook. |
+| **storageName**| string  | query    | Storage name. |
+
+### Request body schema
+The **listObject** object describes the table that will be created. Only the most common properties are shown; see the OpenAPI specification for the complete list.
+
+```json
+{
+  "displayName": "MyTable",
+  "showTotals": false,
+  "style": "TableStyleMedium2"
+}
+```
+
+### Example request (cURL)
 
 ```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listobjects?startRow=1&startColumn=1&endRow=10&endColumn=12&hasHeaders=true" \
   -X PUT \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
-  -H "Authorization: Bearer <jwt token>"
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{
+        "displayName": "MyTable",
+        "showTotals": false,
+        "style": "TableStyleMedium2"
+      }'
 ```
 
-{{< /tab >}}
-
-{{< tab tabNum="12" >}}
+### Example response
 
 ```json
 {
@@ -60,9 +89,15 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listob
 }
 ```
 
-{{< /tab >}}
+### Error codes
+| HTTP Status | Reason | Description |
+|-------------|--------|-------------|
+| **400** | Bad Request | Invalid range parameters or malformed JSON body. |
+| **401** | Unauthorized | Missing or expired JWT token. |
+| **404** | Not Found | Specified workbook or worksheet does not exist. |
+| **500** | Internal Server Error | Unexpected server‑side failure. |
 
-{{< /tabs >}}
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ListObjects/PutWorksheetListObject) provides the full contract for this operation.
 
 ## Cloud SDK Family
 
