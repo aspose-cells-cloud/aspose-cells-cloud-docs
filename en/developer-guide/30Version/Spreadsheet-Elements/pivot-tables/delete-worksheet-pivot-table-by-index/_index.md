@@ -1,47 +1,49 @@
----
-title: "Delete a pivot table in an Excel worksheet"
-second_title: "Document"
-linktitle: Delete
-type: docs
-url: /pivot-tables/delete/
-aliases: [/delete-worksheet-pivot-table-by-index/]
-keywords: "Aspose.Cells Cloud, REST API, delete pivot table, Excel, worksheet, SDK"
-description: "Learn how to delete a pivot table from an Excel worksheet using Aspose.Cells Cloud REST API. The guide includes request details, cURL example, and SDK snippets for multiple programming languages."
-weight: 70
----
+---  
+title: "Delete a pivot table in an Excel worksheet"  
+second_title: "Document"  
+linktitle: Delete  
+type: docs  
+url: /pivot-tables/delete/  
+aliases: [/delete-worksheet-pivot-table-by-index/]  
+keywords: "Aspose.Cells Cloud, delete pivot table, Excel worksheet, REST API, SDK, cURL"  
+description: "Delete a pivot table from an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes request format, cURL example, error codes, and SDK snippets for C#, Java, Python, Node.js."  
+weight: 70  
+---  
 
-This REST API deletes a pivot table from a worksheet by its index.
+This REST API deletes a pivot table from a worksheet by its index.  
 
-## REST API
+**Prerequisites** – To call this endpoint you must have a valid JWT access token. Optionally you can specify the `folder` and `storageName` query parameters if the file is stored in a non‑default location. The API is available **only over HTTPS** (v3.0).  
+
+## REST API  
 
 ```bash
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}
-```
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}
+```  
 
 The request parameters are:
 
-| Parameter Name   | Type   | Location                     | Description                                             |
-|------------------|--------|------------------------------|---------------------------------------------------------|
-| name             | string | path                         | Name of the Excel document.                             |
-| sheetName        | string | path                         | Name of the worksheet containing the pivot table.      |
-| pivotTableIndex  | integer| path                         | Index of the pivot table to delete.                     |
-| folder           | string | query                        | Path to the folder where the document is stored.       |
-| storageName      | string | query                        | Name of the storage service.                           |
+| Parameter Name | Type    | Location | Description                                         |
+|----------------|---------|----------|-----------------------------------------------------|
+| name           | string  | path     | Name of the Excel document.                         |
+| sheetName      | string  | path     | Name of the worksheet that contains the pivot table.|
+| pivotTableIndex| integer | path     | Zero‑based index of the pivot table to delete.      |
+| folder         | string  | query    | Path to the folder where the document is stored.    |
+| storageName    | string  | query    | Name of the storage service.                        |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PivotTables/DeleteWorksheetPivotTable) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PivotTables/DeleteWorksheetPivotTable) defines a publicly accessible programming interface and allows you to carry out REST interactions directly from a web browser.  
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+You can use the **cURL command‑line tool** to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables/0" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables/0" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
@@ -59,9 +61,18 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/workshe
 
 {{< /tabs >}}
 
-## Cloud SDK Family
+### Error handling  
 
-Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+| HTTP Status | Description                                    |
+|-------------|------------------------------------------------|
+| 400         | Bad request – missing or invalid parameters.   |
+| 401         | Unauthorized – invalid or absent JWT token.    |
+| 404         | Not found – the file, worksheet, or pivot table does not exist. |
+| 500         | Internal server error – an unexpected condition occurred on the server. |
+
+## Cloud SDK Family  
+
+Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.  
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 
