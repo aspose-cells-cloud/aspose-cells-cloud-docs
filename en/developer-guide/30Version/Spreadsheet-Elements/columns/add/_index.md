@@ -1,5 +1,5 @@
 ---
-title: "Add an Empty Column on an Excel worksheet"
+title: "Add an Empty Column to an Excel Worksheet – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Add"
 type: docs
@@ -7,41 +7,44 @@ url: /columns/add/
 aliases:
   - /add-an-empty-column-in-an-excel-worksheet/
   - /add-an-empty-column-in-a-worksheet/
-keywords: "Add column, Excel worksheet, Aspose.Cells Cloud, REST API, SDK"
-description: "Use Aspose.Cells Cloud REST API to add an empty column to an Excel worksheet. This document provides the request syntax, parameter details, cURL example, and SDK code samples for multiple programming languages."
+keywords: "add column Excel API, Aspose.Cells Cloud, REST API, insert column"
+description: "Learn how to insert a new column into an Excel sheet using Aspose.Cells Cloud REST API. Includes request syntax, cURL example, and SDK code samples."
 weight: 20
 ---
 
-This REST API inserts columns into a worksheet.
+This REST API inserts one or more columns into a worksheet.  
+Before invoking the endpoint, obtain an OAuth 2.0 access token and include it in the `Authorization` header. Ensure the workbook is stored in the selected storage (default = “Default”).
 
 ## REST API
 
 ```bash
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/{columnIndex}?totalColumns=1
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/{columnIndex}?totalColumns=1
 ```
 
 The request parameters are:
 
-| Parameter Name   | Type    | Location                     | Description |
-|------------------|---------|------------------------------|-------------|
-| **name**         | string  | path                         | The workbook file name. |
-| **sheetName**    | string  | path                         | The worksheet name. |
-| **columnIndex**  | integer | path                         | Zero‑based index of the column where insertion begins. |
-| **totalColumns** | integer | query                        | Number of columns to insert. |
-| **updateReference** | boolean | query                     | When **true**, cell references are updated to reflect the insertion. |
-| **folder**       | string  | query                        | Path to the folder containing the workbook. |
-| **storageName**  | string  | query                        | Name of the storage service. |
+| Parameter Name      | Type    | Location | Description                                                                    |
+|---------------------|---------|----------|--------------------------------------------------------------------------------|
+| **name**            | string  | path     | The workbook file name.                                                        |
+| **sheetName**       | string  | path     | The worksheet name.                                                            |
+| **columnIndex**     | integer | path     | Zero‑based index of the column where insertion begins.                        |
+| **totalColumns**    | integer | query    | Number of columns to insert.                                                   |
+| **updateReference**| boolean | query    | When **true**, cell references are updated to reflect the insertion.          |
+| **folder**          | string  | query    | Path to the folder containing the workbook.                                    |
+| **storageName**     | string  | query    | Name of the storage service.                                                   |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PutInsertWorksheetColumns) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to call Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
+You can use the cURL command‑line tool to call Aspose.Cells web services. The following example shows a complete request, including authentication and the correct path parameter.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -X PUT "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns?startcolumn=1&totalColumns=1&updateReference=true" -H "accept: application/json"
+curl -X PUT "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/1?totalColumns=1&updateReference=true" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "accept: application/json"
 ```
 
 {{< /tab >}}
