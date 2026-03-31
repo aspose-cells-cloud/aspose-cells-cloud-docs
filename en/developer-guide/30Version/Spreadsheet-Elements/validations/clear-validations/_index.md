@@ -1,13 +1,18 @@
 ---
-title: "Delete all worksheet validations on an Excel worksheet"
-second_title: "Document"
-linktitle: "Clear"
+title: "Delete All Worksheet Validations – Aspose.Cells Cloud API"
+second_title: "Documentation"
+linktitle: "Delete"
 type: docs
 url: /validations/clear/
 keywords: "Aspose.Cells Cloud, Delete worksheet validations, Excel, REST API, Spreadsheet validation, API"
-description: "Learn how to use the Aspose.Cells Cloud REST API to delete all worksheet validations from an Excel file. The guide includes request details, cURL example, and SDK snippets for multiple programming languages."
+description: "Remove all data validation rules from a worksheet in an Excel file using Aspose.Cells Cloud REST API. Includes authentication steps, request details, cURL example, response schema, error handling, and SDK snippets."
 weight: 10
 ---
+
+**Prerequisites**  
+- A valid Aspose Cloud account.  
+- A JWT access token obtained via the Aspose Cloud authentication API (`/connect/token`).  
+- The workbook must be stored in your Aspose Cloud storage (or the appropriate `folder`/`storageName` query parameters must be provided).
 
 This REST API deletes all worksheet validations on an Excel worksheet.
 
@@ -19,24 +24,23 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validati
 
 The request parameters are:
 
-| Parameter Name | Type   | Location                     | Description                                          |
-|----------------|--------|------------------------------|------------------------------------------------------|
-| name           | string | path                         | The name of the Excel document.                      |
-| sheetName      | string | path                         | The name of the worksheet containing the validations.|
-| validationIndex| integer| path                         | Index of a specific validation (not required for bulk delete). |
-| folder         | string | query                        | The folder where the document is stored.             |
-| storageName    | string | query                        | The name of the storage service.                     |
+| Parameter Name | Type   | Location | Description |
+|----------------|--------|----------|-------------|
+| name           | string | path     | The name of the Excel document. |
+| sheetName      | string | path     | The name of the worksheet containing the validations. |
+| folder         | string | query    | The folder where the document is stored. |
+| storageName    | string | query    | The name of the storage service. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/WorksheetValidations/DeleteWorksheetValidation) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the API with cURL after obtaining a JWT token.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.com/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations" \
+curl -v "http://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations" \
   -X DELETE \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
@@ -57,6 +61,24 @@ curl -v "http://api.aspose.com/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/vali
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### Error Handling
+
+| HTTP Status | Meaning                              | Description |
+|-------------|--------------------------------------|-------------|
+| 400         | Bad Request                          | The request is malformed or missing required parameters. |
+| 401         | Unauthorized                         | The JWT token is missing, invalid, or expired. |
+| 404         | Not Found                            | The specified workbook or worksheet does not exist. |
+| 500         | Internal Server Error                | An unexpected error occurred on the server side. |
+
+The error payload follows the same JSON structure with `Code` and `Message` fields, for example:
+
+```json
+{
+  "Code": 401,
+  "Message": "Invalid or expired token."
+}
+```
 
 ## Cloud SDK Family
 
