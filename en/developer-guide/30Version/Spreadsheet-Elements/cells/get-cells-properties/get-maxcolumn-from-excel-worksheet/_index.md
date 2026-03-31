@@ -3,11 +3,31 @@ title: "Get MaxColumn from Excel Worksheet"
 type: docs
 url: /get-maxcolumn-from-excel-worksheet/
 weight: 60
-keywords: Excel, Aspose.Cells Cloud, REST API, Get MaxColumn, Worksheet, SDK, C#, Java, PHP, Ruby, Node.js, Python, Android, Swift, Perl, Go
-description: "Documentation for the Aspose.Cells Cloud REST API that retrieves the maximum column index of a worksheet in an Excel file. Includes a cURL example, response format, and SDK code samples for multiple programming languages."
+keywords: "Aspose Cells API, maxcolumn, Excel worksheet, REST, SDK"
+description: "Retrieve the maximum column index of a worksheet using Aspose.Cells Cloud API. Includes cURL request with authentication, response schema, parameters, error codes, and SDK examples (C#, Java, Python, etc.)."
 ---
 
 This REST API returns the maximum column index in an Excel worksheet when the `cellOrMethodName` parameter is set to `maxcolumn`.
+
+**API version:** v3.0 (released 2024‑02) – stable  
+
+### Parameters
+| Parameter            | Type   | Required | Default | Description |
+|----------------------|--------|----------|---------|-------------|
+| `cellOrMethodName`   | string | **Yes**  | —       | Must be set to `maxcolumn` to invoke this method. |
+| `folder`             | string | No       | `""`    | Folder path in cloud storage where the workbook resides. |
+| `storage`            | string | No       | `""`    | Name of the storage service (if multiple are configured). |
+| `fileName`           | string | **Yes**  | —       | Name of the Excel file (e.g., `myWorkbook.xlsx`). |
+| `sheetName`          | string | **Yes**  | —       | Name of the worksheet (e.g., `Sheet1`). |
+
+### Authentication
+All requests must include a valid OAuth 2.0 access token:
+
+```http
+Authorization: Bearer <access_token>
+```
+
+The token is obtained via the Aspose Cloud client‑credentials flow.
 
 - **cURL Example**
 
@@ -15,8 +35,9 @@ This REST API returns the maximum column index in an Excel worksheet when the `c
 
 {{< tab tabNum="11" >}}
 
-```java
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/maxcolumn" \
+```bash
+curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/maxcolumn" \
+     -H "Authorization: Bearer <access_token>" \
      -H "Content-Type: application/json" \
      -H "Accept: application/json"
 ```
@@ -25,13 +46,27 @@ curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/
 
 {{< tab tabNum="12" >}}
 
-```java
-{}
+```json
+{
+  "MaxColumn": 15
+}
 ```
+
+*`MaxColumn`* – Zero‑based index of the rightmost column that contains data in the specified worksheet.
 
 {{< /tab >}}
 
 {{< /tabs >}}
+
+- **Error Handling**
+
+| HTTP Status | Meaning                              | Sample Error Body |
+|-------------|--------------------------------------|-------------------|
+| 200         | Success – returns the `MaxColumn` value. | `{ "MaxColumn": 15 }` |
+| 400         | Bad request – missing or invalid parameters. | `{ "Code": "BadRequest", "Message": "Parameter `cellOrMethodName` is required." }` |
+| 401         | Unauthorized – invalid or missing token. | `{ "Code": "Unauthorized", "Message": "Access token is invalid or expired." }` |
+| 404         | Not found – workbook or worksheet does not exist. | `{ "Code": "NotFound", "Message": "Worksheet `Sheet1` not found." }` |
+| 500         | Server error – unexpected condition. | `{ "Code": "InternalError", "Message": "An unexpected error occurred." }` |
 
 - **Cloud SDK Family**
 
@@ -100,3 +135,17 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### Frequently Asked Questions
+
+<details><summary>What does the **Get MaxColumn** endpoint return?</summary>
+It returns a JSON object that contains a single property **MaxColumn**. The value is the zero‑based index of the rightmost column that contains data in the specified worksheet.
+</details>
+
+<details><summary>How do I authenticate the request?</summary>
+Include an `Authorization: Bearer <access_token>` header. The token is obtained via the Aspose Cloud OAuth 2.0 client‑credentials flow.
+</details>
+
+<details><summary>What is the difference between **maxcolumn** and **maxdatacolumn**?</summary>
+`maxcolumn` returns the last column that contains any cell (including empty cells), whereas `maxdatacolumn` returns the last column that actually contains data.
+</details>
