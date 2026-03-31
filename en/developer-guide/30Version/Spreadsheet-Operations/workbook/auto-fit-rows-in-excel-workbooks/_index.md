@@ -1,50 +1,49 @@
 ---
-title: "Autofit rows on an Excel workbook"
+title: "Autofit Rows on an Excel Workbook"
 second_title: "Document"
 linktitle: "Rows"
 type: docs 
 url: /autofit-rows-on-an-excel-file/
 aliases: [/auto-fit-rows-in-excel-workbooks/,/workbook/autofit/rows/]
-keywords: "autofit rows, Excel, Aspose.Cells Cloud, REST API"
-description: "The Aspose.Cells Cloud REST API enables autofitting rows in an Excel workbook. SDKs are provided for Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift."
+keywords: "autofit rows, Excel workbook, Aspose.Cells Cloud, REST API, auto fitter options"
+description: "Learn to automatically adjust row heights in an Excel workbook using Aspose.Cells Cloud REST API. Includes endpoint, parameters, cURL example, and SDK snippets for C#, Java, Python, and more."
 weight: 90
 ---
 
-This REST API allows you to autofit rows in an Excel workbook.
+This REST API enables you to **autofit rows** in an Excel workbook, automatically adjusting row height after data is inserted or modified.
 
 ## REST API
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/{name}/autofitrows
- 
+POST https://api.aspose.cloud/v3.0/cells/{name}/autofitrows
 ```
 
-The request parameters are:
+The request parameters include:
 
-| Parameter Name      | Type                | Location                     | Description                                                   |
-|---------------------|---------------------|------------------------------|---------------------------------------------------------------|
-| name                | string              | path                         | Name of the workbook file.                                    |
-| autoFitterOptions   | AutoFitterOptions   | body                         | Options that control the autofit behavior.                    |
-| startRow            | integer             | query                        | Index of the first row to autofit.                            |
-| endRow              | integer             | query                        | Index of the last row to autofit.                             |
-| firstColumn         | integer             | query                        | Index of the first column considered for autofit.             |
-| lastColumn          | integer             | query                        | Index of the last column considered for autofit.              |
-| onlyAuto            | boolean             | query                        | If **true**, only rows with the AutoFit flag are processed (default **false**). |
-| folder              | string              | query                        | Folder path where the workbook is stored.                     |
-| storageName         | string              | query                        | Name of the storage service.                                  |
+| Parameter Name      | Type                | Location | Description                                                   |
+|---------------------|---------------------|----------|---------------------------------------------------------------|
+| name                | string              | path     | Name of the workbook file.                                    |
+| autoFitterOptions   | AutoFitterOptions   | body     | Options that control the autofit behavior.                    |
+| startRow            | integer             | query    | Index of the first row to autofit.                            |
+| endRow              | integer             | query    | Index of the last row to autofit.                             |
+| firstColumn         | integer             | query    | Index of the first column considered for autofit.             |
+| lastColumn          | integer             | query    | Index of the last column considered for autofit.              |
+| onlyAuto            | boolean             | query    | If **true**, only rows with the AutoFit flag are processed (default **false**). |
+| folder              | string              | query    | Folder path where the workbook is stored.                     |
+| storageName         | string              | query    | Name of the storage service.                                  |
+
+**AutoFitterOptions** is an object that specifies how the autofit operation behaves (e.g., `AutoFitMergedCells`, `IgnoreHidden`).  
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PostAutofitWorkbookRows) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to call Aspose.Cells web services. The example below shows how to make a request with cURL.
+You can use the cURL command‑line tool to call Aspose.Cells web services. Replace `<jwt token>` with a valid Bearer JWT token obtained from the Aspose authentication service.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/autofitrows" \
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/autofitrows" \
   -X POST \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
@@ -61,7 +60,6 @@ curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/autofitrows" \
   "Code": 200,
   "Status": "OK"
 }
- 
 ```
 
 {{< /tab >}}
