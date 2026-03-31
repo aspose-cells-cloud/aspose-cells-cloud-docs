@@ -1,50 +1,71 @@
 ---
-title: "Copy columns on an Excel worksheet"
+title: "Copy columns in an Excel worksheet"
 second_title: "Document"
 linktitle: "Copy"
 type: docs
 url: /columns/copy/
 aliases: [/copy-columns-in-excel-worksheet/,/copy-columns-in-an-excel-worksheet/]
-keywords: "Copy columns, Excel worksheet, Aspose.Cells Cloud, REST API, SDK"
-description: "Learn how to copy columns in an Excel worksheet using Aspose.Cells Cloud REST API and SDKs for various programming languages."
+keywords: "Aspose.Cells, copy columns, Excel API, REST, Cloud SDK, cURL, Java, Python"
+description: "Learn how to copy one or more columns in an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes request syntax, required parameters, authentication, error handling, and SDK examples in C#, Java, Python, and more."
 weight: 30
 ---
 
 This REST API copies **columns** in an Excel worksheet.
 
+## Overview
+The **Copy Columns** operation lets you duplicate a single column or a range of columns and insert the copy at a specified location within the same worksheet.
+
+## Prerequisites
+- An Aspose Cloud account.  
+- A valid **client ID** and **client secret** to obtain an OAuth 2.0 access token.  
+- The workbook you want to modify must be stored in Aspose Cloud storage (or provided via the `folder` parameter).  
+- cURL installed locally, or any HTTP client capable of sending `POST` requests.
+
+## Authentication
+All Aspose.Cells Cloud requests require an **Authorization** header containing a Bearer token.
+
+1. **Obtain an access token**  
+   Send a `POST` request to `https://api.aspose.cloud/connect/token` with your client credentials. The response includes `access_token`.
+
+2. **Include the token in every API call**  
+
+   ```bash
+   curl -X POST "https://api.aspose.cloud/v3.0/cells/<workbook>.xlsx/worksheets/<sheet>/cells/columns/copy?sourceColumnIndex=1&destinationColumnIndex=12&columnNumber=10" \
+        -H "Authorization: Bearer <access_token>" \
+        -H "accept: application/json"
+   ```
+
+> **Tip:** Store the token in an environment variable (e.g., `ASPOSE_TOKEN`) and reference it with `$ASPOSE_TOKEN` to avoid exposing credentials in scripts.
+
 ## REST API
 
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/copy
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/copy
 ```
 
-The request parameters are:
+### Request Parameters
 
-| Parameter Name          | Type    | Location                     | Description                                    |
-|-------------------------|---------|------------------------------|------------------------------------------------|
-| name                    | string  | path                         | The workbook name.                             |
-| sheetName               | string  | path                         | The worksheet name.                            |
-| sourceColumnIndex       | integer | query                        | Index of the source column (0‑based).          |
-| destinationColumnIndex  | integer | query                        | Index where the column will be copied to.      |
-| columnNumber            | integer | query                        | Number of columns to copy.                     |
-| worksheet               | string  | query                        | (Optional) Worksheet identifier.               |
-| folder                  | string  | query                        | Path to the folder containing the workbook.    |
+| Parameter Name          | Type    | Location | Description                                                                 |
+|-------------------------|---------|----------|-----------------------------------------------------------------------------|
+| **name**                | string  | path     | The workbook name.                                                          |
+| **sheetName**           | string  | path     | The worksheet name.                                                         |
+| **sourceColumnIndex**   | integer | query    | 0‑based index of the column to copy.                                        |
+| **destinationColumnIndex** | integer | query | 0‑based index where the copied column(s) will be inserted.                  |
+| **columnNumber**        | integer | query    | Number of consecutive columns to copy.                                      |
+| **worksheet**           | string  | query    | *(Optional)* Worksheet identifier used when the worksheet name differs from the path. |
+| **folder**              | string  | query    | Path to the folder containing the workbook in Aspose Cloud storage.        |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostCopyWorksheetColumns) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostCopyWorksheetColumns) defines the full contract for this operation.
 
-You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
-
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
-
-{{< tab tabNum="11" >}}
+### cURL Example
 
 ```bash
-curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/copy?sourceColumnIndex=1&destinationColumnIndex=12&columnNumber=10" -H "accept: application/json"
+curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/copy?sourceColumnIndex=1&destinationColumnIndex=12&columnNumber=10" \
+     -H "Authorization: Bearer $ASPOSE_TOKEN" \
+     -H "accept: application/json"
 ```
 
-{{< /tab >}}
-
-{{< tab tabNum="12" >}}
+### Successful Response
 
 ```json
 {
@@ -53,9 +74,17 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ce
 }
 ```
 
-{{< /tab >}}
+## Error Handling
+The API returns standard HTTP status codes with a JSON payload describing the error.
 
-{{< /tabs >}}
+| Status Code | Meaning                     | Example JSON Body                              |
+|-------------|----------------------------|-----------------------------------------------|
+| **400**     | Bad request – invalid parameters | `{ "Code": 400, "Message": "Invalid column index." }` |
+| **401**     | Unauthorized – missing or invalid token | `{ "Code": 401, "Message": "Access token is invalid or expired." }` |
+| **404**     | Not found – workbook or worksheet does not exist | `{ "Code": 404, "Message": "Workbook not found." }` |
+| **500**     | Internal server error – unexpected condition | `{ "Code": 500, "Message": "An unexpected error occurred." }` |
+
+> **How to troubleshoot:** Verify that the access token is current, the workbook and worksheet names are correct, and that `sourceColumnIndex`, `destinationColumnIndex`, and `columnNumber` are within the worksheet’s column range.
 
 ## Cloud SDK Family
 
@@ -114,3 +143,36 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{< /tab >}}
 
 {{< /tabs >}}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I authenticate when calling the Copy Columns API?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Obtain an OAuth2 access token from Aspose Cloud using your client ID and secret, then include it in the request header as `Authorization: Bearer <access_token>`."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between `sourceColumnIndex` and `destinationColumnIndex`?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "`sourceColumnIndex` is the 0‑based index of the column you want to copy. `destinationColumnIndex` is the 0‑based index where the copied column(s) will be inserted."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What response do I receive if the copy operation fails?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The API returns a non‑200 status code (e.g., 400 for a bad request, 401 for unauthorized). The response body contains a JSON object with fields `Code` and `Message` describing the error."
+      }
+    }
+  ]
+}
+</script>
