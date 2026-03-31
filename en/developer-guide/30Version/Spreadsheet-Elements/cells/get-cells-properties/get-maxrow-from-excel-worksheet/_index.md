@@ -1,10 +1,10 @@
 ---
-title: "Get MaxRow from Excel Worksheet"
+title: "Get MaxRow from an Excel Worksheet"
 type: docs
 url: /get-maxrow-from-excel-worksheet/
 weight: 40
-keywords: "Aspose.Cells, Excel, MaxRow, REST API, Cloud SDK, Spreadsheet"
-description: "Retrieve the maximum row number of a worksheet in an Excel file using the Aspose.Cells Cloud REST API."
+keywords: "Aspose.Cells, Excel, MaxRow, REST API, Cloud SDK, Spreadsheet, Worksheet"
+description: "Learn how to retrieve the maximum row number of a worksheet in an Excel file using the Aspose.Cells Cloud REST API."
 ---
 
 This REST API returns the **maximum row number** in an Excel worksheet when the `cellOrMethodName` parameter is set to `maxrow`.
