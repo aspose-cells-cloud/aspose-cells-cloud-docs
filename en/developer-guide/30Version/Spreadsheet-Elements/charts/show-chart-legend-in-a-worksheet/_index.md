@@ -4,11 +4,11 @@ type: docs
 url: /charts/legend/show/
 aliases: [/show-chart-legend-in-a-worksheet/]
 weight: 100
-keywords: "Aspose.Cells Cloud, REST API, Show Chart Legend, Worksheet, Chart, Excel"
-description: "API endpoint to display the legend of a chart in a specified worksheet of an Excel workbook using Aspose.Cells Cloud."
+keywords: "Aspose.Cells Cloud, chart legend API, Excel chart legend, REST PUT chart legend, Aspose API v3.0"
+description: "Learn how to display a chart legend in an Excel worksheet using the Aspose.Cells Cloud REST API (v3.0). Includes endpoint details, parameters, a cURL example, and SDK snippets."
 ---
 
-This REST API enables showing the legend in a chart.
+This REST API enables you to display the **legend**—the explanatory box that identifies data series—in a chart that resides in a worksheet of an Excel workbook.
 
 ## REST API
 
@@ -16,26 +16,28 @@ This REST API enables showing the legend in a chart.
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend
 ```
 
-The request parameters are:
+The request does **not** require a body; it only needs the parameters listed below.
 
 | Parameter Name | Type    | Location | Description                              |
 |----------------|---------|----------|------------------------------------------|
-| name           | string  | path     | The workbook name.                       |
-| sheetName      | string  | path     | The worksheet name.                      |
-| chartIndex     | integer | path     | The index of the chart.                  |
+| name           | string  | path     | The workbook filename.                   |
+| sheetName      | string  | path     | The worksheet name that contains the chart. |
+| chartIndex     | integer | path     | The zero‑based index of the chart.       |
 | folder         | string  | query    | The folder that contains the workbook.   |
 | storageName    | string  | query    | The name of the storage service.         |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/PutWorksheetChartLegend) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/PutWorksheetChartLegend) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+Authentication is performed with a Bearer JWT token supplied in the **Authorization** header.
+
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make the call with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/legend" \
+curl -v "http://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/legend" \
 -X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
@@ -52,6 +54,14 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5
   "Status": "OK"
 }
 ```
+
+The API can return the following HTTP status codes:
+
+- **200 OK** – The legend was displayed successfully.  
+- **400 Bad Request** – Invalid parameters.  
+- **401 Unauthorized** – Authentication failed.  
+- **404 Not Found** – The specified workbook, worksheet, or chart does not exist.  
+- **500 Internal Server Error** – An unexpected server error occurred.
 
 {{< /tab >}}
 
