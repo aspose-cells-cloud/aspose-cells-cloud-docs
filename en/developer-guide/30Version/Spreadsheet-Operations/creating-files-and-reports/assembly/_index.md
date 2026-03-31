@@ -1,16 +1,16 @@
 ---
-title: "Assembling data for the creation of an Excel report."
+title: "Assembling Data for the Creation of an Excel Report"
 second_title: "Document"
 linktitle: "Assembly Data"
 type: docs
 url: /assembly-data-for-the-creation-of-an-excel-report/
 aliases: [/assembly/]
-keywords: "Excel assembly, Aspose.Cells Cloud, REST API, spreadsheet report, data integration"
-description: "Aspose.Cells Cloud API assembles data into Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) files using templates and datasheets. It supports Smart Markers, multiple programming languages, and a full range of SDKs."
+keywords: "Aspose.Cells, Excel report, data assembly, Cloud API, REST, SDK, cURL, PDF, ODS"
+description: "Learn how to use Aspose.Cells Cloud’s Assembly API to merge data into Excel (XLSX, PDF, ODS) reports. Includes endpoint, parameters, cURL sample, SDK code, auth guide, and error handling."
 weight: 40
 ---
 
-This REST API assembles data in an Excel file.
+This REST API assembles data **into** an Excel file.
 
 ## REST API
 
@@ -23,7 +23,7 @@ The request parameters are:
 | Parameter Name | Type   | Location                     | Description                                                                 |
 |----------------|--------|------------------------------|-----------------------------------------------------------------------------|
 | file           | file   | formData (multipart body)   | The spreadsheet file to upload.                                            |
-| datasource     | string | query string                 | Identifier of the data source that provides the data for the assembly.    |
+| DataSource     | string | query string                 | Identifier of the data source that provides the data for the assembly.    |
 | format         | string | query string                 | Desired output format (e.g., `xlsx`, `pdf`).                               |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostAssemble) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
@@ -35,14 +35,16 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -v "https://api.aspose.cloud/v3.0/cells/assembly?datasource=ds&format=pdf" \
+curl -v "https://api.aspose.cloud/v3.0/cells/assembly?DataSource=ds&format=pdf" \
   -X POST \
   -H "Content-Type: multipart/form-data" \
   -H "Accept: application/json" \
   -H "Authorization: Bearer <jwt token>" \
-  -F 'xxxxx1=@xxxx1.xlsx' \
-  -F 'xxxxx2=@xxxx2.xlsx'
+  -F 'template=@template.xlsx' \
+  -F 'data=@data.json'
 ```
+
+> **Authentication** – Obtain a JWT token from `https://api.aspose.cloud/connect/token` using your client ID and secret, then include it in the `Authorization: Bearer <jwt token>` header. Tokens are valid for 1 hour and must be refreshed as needed.
 
 {{< /tab >}}
 
@@ -52,18 +54,20 @@ curl -v "https://api.aspose.cloud/v3.0/cells/assembly?datasource=ds&format=pdf" 
 {
   "Files": [
     {
-      "Filename": "xxxx1",
+      "Filename": "report1",
       "FileSize": 274022,
       "FileContent": "-----Base64String--------"
     },
     {
-      "Filename": "xxxx2",
+      "Filename": "report2",
       "FileSize": 274022,
       "FileContent": "-----Base64String--------"
     }
   ]
 }
 ```
+
+> **Error handling** – If the request fails, the API returns a standard HTTP error code (e.g., 400 Bad Request, 401 Unauthorized, 500 Internal Server Error) together with a JSON payload that contains `Code`, `Message`, and optional `Details` fields.
 
 {{< /tab >}}
 
