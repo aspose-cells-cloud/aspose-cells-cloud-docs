@@ -4,8 +4,8 @@ type: docs
 url: /charts/delete-chart-title/
 aliases: [/delete-chart-title-in-a-worksheet/]
 weight: 150
-keywords: Aspose.Cells Cloud, Delete Chart Title, Excel, Worksheet, REST API, Chart
-description: "Learn how to delete a chart title in an Excel worksheet using the Aspose.Cells Cloud REST API."
+keywords: "Aspose.Cells, Cloud API, delete chart title, Excel, REST, SDK"
+description: "Learn how to remove a chart title from an Excel worksheet using Aspose.Cells Cloud REST API (v4.0). Includes cURL, SDK examples, and error handling."
 ---
 
 This REST API deletes the title of a chart.
@@ -13,10 +13,10 @@ This REST API deletes the title of a chart.
 ## REST API
 
 ```bash
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title
+DELETE https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title
 ```
 
-The request parameters are:
+The request parameters are listed below:
 
 | Parameter Name | Type    | Location | Description                         |
 |----------------|---------|----------|-------------------------------------|
@@ -28,14 +28,14 @@ The request parameters are:
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/DeleteWorksheetChartTitle) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The example below shows how to make the call, including the required **Bearer JWT** token for authentication.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/title" \
+curl -v "https://api.aspose.cloud/v4.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/title" \
   -X DELETE \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
