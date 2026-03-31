@@ -5,31 +5,37 @@ ArticleTitle: "Remove Excel Password Protection – Unlock Open & Modify Passwor
 linktitle: "Unprotect Spreadsheet"
 type: docs
 url: /unprotect-spreadsheet/
-keywords: "Excel unprotect API, remove Excel password programmatically, Excel decryption API, automate Excel unlock, Excel file unprotect SDK, bulk remove Excel passwords, enterprise Excel password removal"
-description: "Forgot your Excel password? Our secure tool removes both open and modify password protection from Excel files instantly. Recover access to your spreadsheets—no technical skills needed. Fast, safe, and compatible with .xlsx and .xls formats."
+keywords: "unprotect spreadsheet API, Aspose Cells, Excel password removal, OAuth2 authentication, cloud Excel API"
+description: "Remove open and modify passwords from Excel files programmatically with the Aspose.Cells Cloud Unprotect Spreadsheet API. Supports .xlsx/.xls, OAuth2 authentication, and batch processing."
 weight: 100
 ---
 
-Automate the removal of open and modify passwords from Excel files using our robust REST API. Ideal for enterprise data pipelines, document management systems, or migration workflows. Supports batch processing, secure authentication, and all Excel formats. Try it free today.
+The Unprotect Spreadsheet API removes open‑ and modify‑password protection from Excel files in a single call. It is ideal for data pipelines, document‑management systems, and migration workflows.
 
 ## **Unprotect Spreadsheet API**
+
+**Authentication** – Use OAuth 2.0 client‑credentials flow to obtain an access token from `https://api.aspose.cloud/connect/token`. Include the token in the request header:
+
+```http
+Authorization: Bearer <access_token>
+```
 
 ### API Endpoint
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/unprotection/spreadsheet
+PUT https://api.aspose.cloud/v4.0/cells/unprotection/spreadsheet
 ```
 
-### **Request Parameters:**
+### **Request Parameters**
 
-| Parameter Name | Type | Path/Query String/HTTP Body | Description |
-| :- | :- | :- |:- |
-|Spreadsheet|File|FormData|Upload the spreadsheet file to be unprotected.|
-|password|String|Query|The encryption password for the spreadsheet file.|
-|modifyPassword|String|Query|The password required to modify the protected file.|
-|outPath|String|Query|(Optional) The folder path where the unprotected workbook will be stored. Defaults to null.|
-|outStorageName|String|Query|Specifies the output file storage name.|
-|region|String|Query|Defines the spreadsheet region settings.|
+| Parameter Name | Type   | Location | Description |
+|----------------|--------|----------|-------------|
+| Spreadsheet    | File   | FormData | The Excel file to be unprotected. |
+| password       | String | Query    | The password that protects the file for opening. |
+| modifyPassword | String | Query    | The password required to modify the file (optional if only an open password is set). |
+| outPath        | String | Query    | (Optional) Folder path where the unprotected workbook will be saved. |
+| outStorageName | String | Query    | (Optional) Name of the storage where the output file will be written. |
+| region         | String | Query    | (Optional) Spreadsheet region settings. |
 
 ### **Response**
 
@@ -38,49 +44,39 @@ PUT http://api.aspose.cloud/v4.0/cells/unprotection/spreadsheet
     {
         "Name": "ResponseFile",
         "DataType": {
-        "Identifier": "File",
-        "Reference": "Stream",
-        "Name": "file"
+            "Identifier": "File",
+            "Reference": "Stream",
+            "Name": "file"
         }
     }
 ]
 ```
 
-### Error Codes
+### **Error Codes**
 
-- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized**: Invalid access token. Or invalid client id and secret.
-- **404 Not Found**: The spreadsheet file not accessible.
-- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
+- **400 Bad Request** – The request URI or parameters are invalid.  
+- **401 Unauthorized** – Access token is missing, expired, or invalid.  
+- **404 Not Found** – The specified spreadsheet file cannot be accessed.  
+- **500 Internal Server Error** – An unexpected error occurred while processing the file.
 
-## Where should we use the Delete Spreadsheet Blank Columns API?
+## When should you use the Unprotect Spreadsheet API?
 
-- **Clean Data for Accurate Reporting** – Automatically remove blank columns from Excel sheets to ensure clean, structured data for dashboards, analytics, and business intelligence tools.  
-- **Optimize File Size & Performance** – Reduce spreadsheet bloat by deleting unused columns, improving load times and compatibility—especially critical for large datasets or cloud-based workflows.  
-- **Prepare Data for Import/Export** – Streamline ETL processes by eliminating empty columns before importing into databases, CRMs, or ERP systems to prevent schema errors.  
-- **Enhance Template Consistency** – Standardize financial, inventory, or project templates by auto-cleaning extraneous blank columns across user-generated spreadsheets.  
-- **Improve Automation Reliability** – Ensure downstream scripts, macros, or APIs process only relevant data by pre-cleaning spreadsheets of invisible or trailing empty columns.
+- **Restore Access to Locked Workbooks** – Quickly remove forgotten open or modify passwords without manual intervention.  
+- **Automate Bulk Unlocking** – Process large numbers of files in data‑migration or archival projects.  
+- **Integrate with Existing Workflows** – Combine with storage or conversion APIs to create end‑to‑end pipelines (e.g., upload → unprotect → convert to PDF).  
+- **Maintain Data Security** – The operation occurs on the server side, keeping the original files secure while the unprotected version is stored in your cloud storage.  
 
-## Why should you use the Delete Spreadsheet Blank Columns API?
-
-- **Developer-Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared to building custom chart rendering solutions, this significantly reduces the development workload.
-- **Reduced Labor Costs**: Reduced the need for positions dedicated to document consolidation.
-- **Pay-per-use**: No upfront investment, only pay for API calls actually used.
-- **Zero Maintenance Costs**: No need to maintain servers, update software, or deal with compatibility issues.
-- **Preserves complex Excel formatting** in universally accessible PDF format.
-
-## How to Use the Delete Spreadsheet Blank Columns API with SDKs
+## How to use the Unprotect Spreadsheet API with SDKs
 
 ### OpenAPI Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ProtectionController/UnprotectSpreadsheet) defines a publicly accessible programming interface, enabling you to perform REST interactions directly from a web browser.
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ProtectionController/UnprotectSpreadsheet) defines the endpoint, parameters, and response format for direct REST calls.
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement delete spreadsheets blank columns for cells with minimal code.
-Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK simplifies the call by handling authentication, request construction, and response parsing. The SDKs are available for many languages and include ready‑made methods for unprotecting spreadsheets.
 
-The following code examples illustrate how to call Aspose.Cells web services using various SDKs:
+The following code examples illustrate how to call the Unprotect Spreadsheet API using various SDKs:
 
 {{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 {{<tab tabNum="1" >}}
