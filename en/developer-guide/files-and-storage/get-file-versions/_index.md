@@ -1,12 +1,12 @@
 ---
-title: "Aspose.Cells Cloud Get File Version API - An interface for fast getting of file versions in the cloud"
+title: "Aspose.Cells Cloud Get File Versions API – Fast Retrieval of File Version History"
 second_title: "Document"
-ArticleTitle: "Cloud-based Excel File Efficient Management Solution - An interface for fast getting of file version in the cloud."
+ArticleTitle: "Cloud‑Based Excel Management – Quickly Retrieve File Version History in Aspose.Cells Cloud"
 linktitle: "Get File Versions"
 type: docs
 url: /get-file-versions/
-keywords: "file versions, Excel API, Office Cloud, REST API, spreadsheet management, document history"
-description: "Retrieve and manage the versions of files stored in the Aspose.Cells Cloud, enhancing document management and collaboration."
+keywords: "Aspose Cells API, file versions, spreadsheet versioning, cloud storage API, REST, Excel file history"
+description: "Get a complete list of version history for any Excel file stored in Aspose.Cells Cloud. Supports storage selection, authentication, and detailed error codes."
 weight: 100
 ---
 
@@ -15,19 +15,26 @@ weight: 100
 ### API Endpoint
 
 ```
-GET http://api.aspose.cloud/v4.0/cells/storage/version/{path}
+GET https://api.aspose.cloud/v4.0/cells/storage/version/{path}
 ```
 
 ### **Function Description**
 
-The **GetFileVersions** API allows users to retrieve the different versions of a specified file stored in the Aspose.Cells Cloud. This functionality is crucial for maintaining document integrity and tracking changes over time.
+The **GetFileVersions** API returns all version records for a specified spreadsheet stored in Aspose.Cells Cloud. It helps you keep a complete change history for each file.
+
+#### Authentication
+Call this endpoint with a valid API key or OAuth 2.0 token. Include the token in the request header:
+
+```
+Authorization: Bearer <your_access_token>
+```
 
 ### The request parameters of **GetFileVersions** API are
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-| :- | :- | :- |:- |
-| path | String | Path | The path to the file for which versions are to be retrieved. |
-| storageName | String | Query | The name of the storage where the file is located. |
+| Parameter Name | Type   | Location | Description |
+|----------------|--------|----------|-------------|
+| `path`         | String | Path     | **Required.** Full path to the file whose versions are being retrieved. |
+| `storageName`  | String | Query    | Optional. Name of the storage containing the file. If omitted, the default storage is used. |
 
 ### **Response Description**
 
@@ -63,13 +70,43 @@ The **GetFileVersions** API allows users to retrieve the different versions of a
 }
 ```
 
+**Example response**
+
+```json
+{
+  "Value": [
+    {
+      "VersionId": "1",
+      "IsLatest": false,
+      "ModifiedDate": "2024-01-15T12:34:56Z",
+      "Size": 10240
+    },
+    {
+      "VersionId": "2",
+      "IsLatest": true,
+      "ModifiedDate": "2024-03-01T08:22:10Z",
+      "Size": 10300
+    }
+  ]
+}
+```
+
+#### Error Handling
+| HTTP Status | Description                               | Typical Cause                     |
+|-------------|-------------------------------------------|-----------------------------------|
+| 401         | Unauthorized – missing or invalid token   | No `Authorization` header or bad key |
+| 403         | Forbidden – insufficient permissions      | Token lacks required scopes |
+| 404         | Not Found – file or storage does not exist | Incorrect `path` or `storageName` |
+| 409         | Conflict – version information unavailable | Concurrent modifications |
+| 500         | Internal Server Error – unexpected failure | Server‑side issue |
+
 ## OpenAPI Specification
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/StorageController/GetFileVersions) provides a comprehensive programming interface for executing REST interactions directly from a web browser.
 
 ## Excel API SDK
 
-Utilizing an SDK streamlines development by abstracting low-level complexities, allowing developers to focus on core functionalities. Explore the [GitHub repository](https://github.com/aspose-cells-cloud) for a full list of Aspose.Cells Cloud SDKs.
+Utilizing an SDK streamlines development by abstracting low‑level complexities, allowing developers to focus on core functionalities. Explore the [GitHub repository](https://github.com/aspose-cells-cloud) for a full list of Aspose.Cells Cloud SDKs.
 
 The following code examples illustrate how to interact with Aspose.Cells web services across various programming languages:
 
