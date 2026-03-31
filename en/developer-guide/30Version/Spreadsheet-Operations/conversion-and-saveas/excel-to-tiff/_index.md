@@ -1,38 +1,50 @@
 ---
 title: "Excel to TIFF"
 second_title: "Document"
-linketitle: "Excel to Tiff"
+linketitle: "Excel to TIFF"
 type: docs
 url: /convert-excel-file-to-tiff-file/
 aliases: [/convert-excel-file-to-tiff-in-cloud/,/convert/excel-to-tiff/]
-keywords: "Excel to TIFF, Aspose.Cells Cloud, REST API, spreadsheet conversion, file format conversion"
-description: "Learn how to convert Excel workbooks to TIFF images using Aspose.Cells Cloud REST API. Includes cURL commands and SDK examples for multiple programming languages."
+keywords: "Aspose.Cells Cloud, Excel to TIFF conversion, REST API, cURL, SDK, .NET, Java, Python, image export"
+description: "Learn how to convert Excel workbooks to high‑quality TIFF images with Aspose.Cells Cloud API. Detailed cURL commands, SDK examples (C#, Java, Python, …), authentication steps, and error handling."
 weight: 90
 ---
 
-This REST API **saveAs** saves an Excel file as a TIFF image.
+The **Convert**, **SaveAs**, and **Export** endpoints of Aspose.Cells Cloud enable you to transform an Excel workbook into a TIFF image.  
+You can invoke these endpoints directly with **cURL** or through one of the supported SDKs.
 
-[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) API lets you save an MS Excel file as a TIFF file with additional settings and store the result in the cloud storage.
+## Prerequisites
 
-This REST API **convert** converts an Excel file to TIFF.
+1. **Aspose Cloud account** – register at [Aspose Cloud](https://dashboard.aspose.cloud/) to obtain a **Client ID** and **Client Secret**.  
+2. **JWT token** – request a token with  
 
-[PUT /cells/convert](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) API lets you convert an MS Excel file to a TIFF image with additional settings and return the result in the response.
+   ```bash
+   curl -X POST "https://api.aspose.cloud/connect/token" \
+        -d "grant_type=client_credentials&client_id=<Your_Client_ID>&client_secret=<Your_Client_Secret>"
+   ```  
 
-This REST API **export** exports an Excel file to TIFF.
+   The response contains `access_token`; include it in the `Authorization: Bearer <access_token>` header of every API call.  
+3. **Source workbook** – either upload the Excel file to Aspose Cloud storage first or provide it in the request body as a Base‑64‑encoded string.
 
-[GET /cells/{name}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook) API lets you export an MS Excel file to TIFF with additional settings and return the result in the response.
+## Step‑by‑Step Workflow
 
-## REST API
+1. **Upload** the workbook (if it is not already stored).  
+2. **Choose** the desired endpoint (`Convert`, `SaveAs`, or `Export`).  
+3. **Build** the JSON request body, specifying the file, target format, and any optional image options.  
+4. **Execute** the request with cURL or an SDK.  
+5. **Retrieve** the TIFF image from the response body (binary stream) or from the storage location returned by **SaveAs**.
 
-| **API**               | **Type** | **Description**                                                            | **Swagger Link** |
-|-----------------------|----------|-----------------------------------------------------------------------------|------------------|
-| /cells/convert        | PUT      | Converts a workbook provided in the request body to the specified format. | [PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) |
-| /cells/{name}         | GET      | Exports the specified workbook to another format.                          | [GetWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook) |
-| /cells/{name}/saveAs  | POST     | Exports the workbook to a chosen format and saves it to cloud storage.    | [PostDocumentSaveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) |
+## REST API Overview
 
-These APIs define a publicly accessible programming interface and let you perform REST interactions directly from a web browser.
+| **API**               | **Method** | **Purpose**                                                                                 | **Swagger Link** |
+|-----------------------|------------|---------------------------------------------------------------------------------------------|------------------|
+| `/cells/convert`      | PUT        | Converts a workbook supplied in the request body to the specified format (TIFF).          | [PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) |
+| `/cells/{name}`       | GET        | Exports the named workbook to another format (TIFF) and returns the result in the response.| [GetWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook) |
+| `/cells/{name}/saveAs`| POST       | Saves the workbook to a chosen format (TIFF) and stores the result in cloud storage.      | [PostDocumentSaveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) |
 
-You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following examples demonstrate how to call the Cloud API with cURL.
+These endpoints are publicly accessible and can be called directly from a web browser or any HTTP client.
+
+### cURL Examples
 
 {{< tabs tabTotal="3" tabID="11" tabName11="convert" tabName12="saveas" tabName13="export">}}
 
@@ -40,11 +52,11 @@ You can use the **cURL** command‑line tool to access Aspose.Cells web services
 
 ```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/convert?format=tiff" \
-  -X PUT \
-  -d '{"File":{}}' \
-  -H "Content-Type: multipart/form-data" \
-  -H "Accept: multipart/form-data" \
-  -H "Authorization: Bearer <jwt token>"
+     -X PUT \
+     -d '{"File":{"Name":"book1.xlsx","Data":"<base64‑content>"},"SaveFormat":"tiff"}' \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json" \
+     -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
@@ -52,27 +64,64 @@ curl -v "https://api.aspose.cloud/v3.0/cells/convert?format=tiff" \
 
 ```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/book1.xlsx/saveas?newfilename=book1.tiff" \
-  -X POST \
-  -d '{"SaveFormat":"tiff","ImageFormat":"tiff"}' \
-  -H "Content-Type: application/json" \
-  -H "Accept: application/json" \
-  -H "Authorization: Bearer <jwt token>"
+     -X POST \
+     -d '{"SaveFormat":"tiff","ImageFormat":"tiff"}' \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json" \
+     -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 {{< tab tabNum="13" >}}
 
 ```bash
-curl -v "https://api.aspose.cloud/v3.0/cells/book1.xlsx?format=html" \
-  -X GET \
-  -d '{"SaveFormat":"tiff","ExportImagesAsBase64":"true"}' \
-  -H "Content-Type: application/json" \
-  -H "Accept: application/json" \
-  -H "Authorization: Bearer <jwt token>"
+curl -v "https://api.aspose.cloud/v3.0/cells/book1.xlsx?format=tiff" \
+     -X GET \
+     -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 {{< /tabs >}}
+
+> **Note:**  
+> * The **Convert** request body must contain the file (or a reference to a stored file) and the desired `SaveFormat`.  
+> * The **Export** request does not require a request body; the format is supplied via the query string (`format=tiff`).  
+
+## Error Handling
+
+| **Status Code** | **Meaning**                           | **Typical Cause**                              |
+|-----------------|---------------------------------------|-----------------------------------------------|
+| 200             | Success                               | The TIFF image is returned (binary stream).   |
+| 400             | Bad Request                           | Missing or malformed parameters.              |
+| 401             | Unauthorized                          | Invalid or missing JWT token.                 |
+| 404             | Not Found                             | The specified workbook does not exist.        |
+| 500             | Internal Server Error                 | Unexpected server‑side condition.             |
+
+When an error occurs, the API returns a JSON payload with `Code`, `Message`, and optionally `Description`.
+
+## Frequently Asked Questions
+
+**How do I authenticate before calling the Excel‑to‑TIFF API?**  
+Register for an Aspose Cloud account, obtain your **Client ID** and **Client Secret**, request a JWT token using the `/connect/token` endpoint, and include the token in the `Authorization: Bearer <jwt>` header of every request.
+
+**What JSON body is required for the `PUT /cells/convert` endpoint?**  
+
+```json
+{
+  "File": {
+    "Name": "book1.xlsx",
+    "Data": "<base64‑encoded‑content>"
+  },
+  "SaveFormat": "tiff",
+  "ImageOptions": {
+    "Compression": "LZW",
+    "Resolution": 300
+  }
+}
+```
+
+**How can I retrieve the converted TIFF file after a successful request?**  
+The API returns the TIFF binary directly in the response body. Save it with a command such as `curl … -o book1.tiff`. If you use the **SaveAs** endpoint, the file is stored in your cloud storage at the path specified by `newfilename`.
 
 ## Cloud SDK Family
 
