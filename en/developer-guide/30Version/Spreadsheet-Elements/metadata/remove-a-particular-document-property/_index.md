@@ -1,31 +1,55 @@
----
-title: "Delete a Particular Document Property"
-second_title: "Document"
-linktitle: "Delete"
-type: docs
-url: /document-properties/delete/
-aliases: [/remove-a-particular-document-property/]
-keywords: "Delete document property, Aspose.Cells Cloud, Excel, REST API, spreadsheet metadata"
-description: "Use Aspose.Cells Cloud REST API to delete a specific document property from Excel workbooks. Supports multiple SDKs (C#, Java, Python, etc.) for seamless integration."
-weight: 50
----
+---  
+title: "Delete a Specific Document Property"  
+second_title: "Document"  
+linktitle: "Delete"  
+type: docs  
+url: /document-properties/delete/  
+aliases: [/remove-a-particular-document-property/]  
+keywords: "Aspose.Cells, delete document property, Excel metadata API, REST, cloud SDK, cURL example"  
+description: "Delete a specific document property from an Excel workbook using Aspose.Cells Cloud REST API v3.0. Includes cURL and SDK examples for C#, Java, Python, and more."  
+weight: 50  
+---  
 
-This REST API deletes a document property.
+This REST API deletes a document property from a workbook.
 
-## REST API
+### Prerequisites  
+
+- The workbook must already exist in the target storage location.  
+- A valid **JWT Bearer token** is required for the `Authorization` header (see the **Authentication** section below).  
+
+### Authentication  
+
+Aspose.Cells Cloud uses JWT‑based authentication.  
+1. Send a `POST` request to the token endpoint:  
 
 ```bash
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/documentproperties/{propertyName}
-```
+curl -X POST "https://api.aspose.cloud/v3.0/connect/token" \
+     -H "Content-Type: application/x-www-form-urlencoded" \
+     -d "grant_type=client_credentials&client_id=<your_client_id>&client_secret=<your_client_secret>"
+```  
+
+2. The response contains an `access_token`. Use this token in every API call:  
+
+```bash
+-H "Authorization: Bearer <access_token>"
+```  
+
+> **Tip:** Tokens are valid for one hour. Refresh them before expiration to avoid `401 Unauthorized` errors.  
+
+## REST API  
+
+```bash
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/documentproperties/{propertyName}
+```  
 
 The request parameters are:
 
-| Parameter Name | Type   | Location | Description                                   |
-|----------------|--------|----------|-----------------------------------------------|
-| name           | string | path     | The name of the Excel workbook.               |
-| propertyName   | string | path     | The name of the document property to delete.  |
-| folder         | string | query    | The folder path where the workbook is stored. |
-| storageName    | string | query    | The name of the storage service.              |
+| Parameter Name | Type   | Location | Required | Description                                   |
+|----------------|--------|----------|----------|-----------------------------------------------|
+| name           | string | path     | Yes      | The name of the Excel workbook.               |
+| propertyName   | string | path     | Yes      | The name of the document property to delete.  |
+| folder         | string | query    | No       | The folder path where the workbook is stored. |
+| storageName    | string | query    | No       | The name of the storage service.              |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Properties/DeleteDocumentProperty) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -37,10 +61,10 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 
 ```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties/author" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+     -X DELETE \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json" \
+     -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
@@ -58,7 +82,22 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties/author
 
 {{< /tabs >}}
 
-## Cloud SDK Family
+### Error Responses  
+
+| HTTP Status | Description                         | Example JSON                                    |
+|-------------|-------------------------------------|-------------------------------------------------|
+| 400         | Bad request – missing required parameters or invalid values. | `{"Code":400,"Message":"Missing required parameter 'name'."}` |
+| 401         | Unauthorized – invalid or absent JWT token.                | `{"Code":401,"Message":"Invalid access token."}` |
+| 404         | Not found – the workbook or the specified property does not exist. | `{"Code":404,"Message":"Document property not found."}` |
+| 500         | Internal server error – an unexpected condition occurred on the server. | `{"Code":500,"Message":"An unexpected error has occurred."}` |
+
+### Notes  
+
+- The operation is **irreversible**; once a property is deleted it cannot be restored.  
+- If `folder` or `storageName` are omitted, the API uses the default storage and root folder.  
+- Rate limiting may apply; consult the **Aspose Cloud** usage limits documentation if you encounter throttling.  
+
+## Cloud SDK Family  
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
@@ -115,3 +154,32 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{< /tab >}}
 
 {{< /tabs >}}
+
+<!-- Structured Data for SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Delete a Specific Document Property – Aspose.Cells Cloud REST API",
+  "description": "Delete a specific document property from an Excel workbook using Aspose.Cells Cloud REST API v3.0. Includes cURL and SDK examples.",
+  "url": "https://docs.aspose.cloud/cells/document-properties/delete/",
+  "inLanguage": "en",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Aspose.Cells Cloud Documentation",
+    "url": "https://docs.aspose.cloud/cells/"
+  },
+  "primaryImageOfPage": {
+    "@type": "ImageObject",
+    "url": "https://static.aspose.app/cells/logo.png",
+    "caption": "Aspose.Cells Cloud"
+  },
+  "relatedLink": [
+    {
+      "@type": "APIReference",
+      "url": "https://apireference.aspose.cloud/cells/#/Properties/DeleteDocumentProperty",
+      "name": "Delete Document Property endpoint"
+    }
+  ]
+}
+</script>  
