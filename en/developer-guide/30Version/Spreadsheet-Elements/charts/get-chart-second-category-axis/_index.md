@@ -3,27 +3,27 @@ title: "Get Chart Second Category Axis"
 type: docs  
 url: /charts/second-category-axis/get/  
 weight: 60  
-keywords: "Aspose.Cells, REST API, Get Chart Second Category Axis, Excel, Cloud, Chart Axis, API"  
-description: "Retrieves the second category axis of a specified chart in an Excel worksheet using the Aspose.Cells Cloud REST API."  
+keywords: "Get Chart Second Category Axis, Aspose.Cells Cloud API, Excel chart axis, REST API"  
+description: "Retrieve the second‑category axis of a chart in an Excel worksheet using the Aspose.Cells Cloud REST API. Includes request format, parameters, sample cURL, and response schema."  
 ---  
 
-This REST API retrieves the **second category axis** of a chart.  
+This REST API retrieves the **second‑category axis** of a chart.  
 
 ## REST API  
 
 ```bash
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/secondcategoryaxis
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/secondcategoryaxis
 ```  
 
 **Request parameters**
 
-| Parameter Name | Type   | Location               | Description                                            |
-|----------------|--------|------------------------|--------------------------------------------------------|
-| name           | string | path                   | Name of the Excel file stored in the cloud.            |
-| sheetName      | string | path                   | Name of the worksheet that contains the chart.         |
-| chartIndex     | integer| path                   | Zero‑based index of the chart whose axis is requested. |
-| folder         | string | query                  | Folder path in the storage where the file is located.  |
-| storageName    | string | query                  | Name of the Aspose Cloud storage to use (optional).   |
+| Parameter Name | Type    | Parameter Location (path/query) | Description                                            |
+|----------------|---------|----------------------------------|--------------------------------------------------------|
+| name           | string  | path                             | Name of the Excel file stored in the cloud.            |
+| sheetName      | string  | path                             | Name of the worksheet that contains the chart.         |
+| chartIndex     | integer | path                             | Zero‑based index of the chart whose axis is requested. |
+| folder         | string  | query                            | Folder path in the storage where the file is located.  |
+| storageName    | string  | query                            | Name of the Aspose Cloud storage to use (optional).   |
 
 The **Get‑Chart‑Second‑Category‑Axis** operation is defined in the [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/GetChartSecondCategoryAxis) and enables direct REST interactions from a web browser or any HTTP client.
 
@@ -34,11 +34,11 @@ You can use the `cURL` command‑line tool to access Aspose.Cells web services e
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/secondcategoryaxis?folder={folder}&storageName={storageName}" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+curl -v "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/secondcategoryaxis?folder={folder}&storageName={storageName}" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
@@ -48,9 +48,21 @@ curl -v "http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts
 ```json
 {
   "Code": 200,
-  "Status": "OK"
+  "Status": "OK",
+  "Axis": {
+    "Name": "Second Category Axis",
+    "IsVisible": true,
+    "AxisLine": { "Style": "Solid", "Weight": 1 },
+    "TickMarks": "Inside",
+    "Label": {
+      "Font": { "Size": 10, "Color": "#000000" },
+      "Format": "General"
+    }
+  }
 }
 ```
+
+*The `Axis` object contains the properties that describe the second‑category axis (e.g., `Name`, `IsVisible`, `AxisLine`, `TickMarks`, `Label`).*  
 
 {{< /tab >}}
 
