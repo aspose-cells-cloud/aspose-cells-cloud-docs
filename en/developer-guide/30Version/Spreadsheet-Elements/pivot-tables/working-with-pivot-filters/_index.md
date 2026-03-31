@@ -1,38 +1,62 @@
 ---
-title: "Working with pivot filters"
+title: "Working with Pivot Filters"
 second_title: "Document"
 linktitle: Filters
 type: docs
 url: /pivot-tables/add-filters/
 aliases: [/working-with-pivot-filters/]
-keywords: "Pivot filters, Aspose.Cells Cloud, REST API, Excel, Pivot table, Add filter"
-description: "Learn how to add and manage pivot table filters using the Aspose.Cells Cloud REST API. Includes request syntax, parameter details, cURL example, and SDK code snippets for multiple programming languages."
+keywords: "Aspose.Cells Cloud, pivot filter, REST API, Excel, add filter, pivot table"
+description: "Learn how to add, retrieve, and delete pivot table filters using the Aspose.Cells Cloud REST API. Includes request syntax, required parameters, cURL example, and SDK snippets for C# and Go."
 weight: 50
 ---
 
-This REST API adds a **pivot filter** for a specified pivot table index.
+This REST API adds a **pivot filter** to the pivot table at the specified index.
+
+## Overview
+A pivot filter limits the data displayed in a pivot table based on defined criteria.  
+Use this operation when you need to programmatically restrict rows or columns in a pivot table without modifying the source data.  
+The API works with Excel workbooks stored in Aspose Cloud storage and supports both synchronous and asynchronous scenarios.
+
+## Prerequisites
+- **Authentication** – Obtain an OAuth 2.0 JWT access token and include it in the `Authorization: Bearer <token>` header of every request.  
+- **Supported SDK version** – Use the latest Aspose.Cells Cloud SDK (v3.0 or newer).  
+- **Excel format** – The workbook must be in a format supported by Aspose.Cells (e.g., `.xlsx`, `.xls`).  
+- **API version** – All URLs reference the **v3.0** version of the API.
 
 ## REST API
 
 ```bash
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotFilters
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotFilters
 ```
 
 ### Request parameters
 
-| Parameter Name   | Type    | Location                     | Description                                                                                     |
-|------------------|---------|------------------------------|-------------------------------------------------------------------------------------------------|
-| **name**         | string  | path                         | The name of the Excel file.                                                                      |
-| **sheetName**    | string  | path                         | The worksheet that contains the pivot table.                                                    |
-| **pivotTableIndex** | integer | path                     | Zero‑based index of the pivot table to which the filter will be applied.                       |
-| **filter**       | object  | body                         | JSON object that defines the filter settings (e.g., `AutoFilter`, `EvaluationOrder`, etc.).    |
-| **needReCalculate** | boolean | query                     | When **true**, forces the workbook to recalculate after the filter is added. Default **false**. |
-| **folder**       | string  | query                        | Folder in cloud storage where the file is located.                                               |
-| **storageName**  | string  | query                        | Name of the cloud storage.                                                                      |
+| Parameter Name      | Type    | Location | Description                                                                                     |
+|---------------------|---------|----------|-------------------------------------------------------------------------------------------------|
+| **name**            | string  | path     | The name of the Excel file.                                                                     |
+| **sheetName**       | string  | path     | The worksheet that contains the pivot table.                                                    |
+| **pivotTableIndex** | integer | path     | Zero‑based index of the pivot table to which the filter will be applied.                       |
+| **filter**          | object  | body     | JSON object that defines the filter settings (e.g., `AutoFilter`, `EvaluationOrder`, etc.).    |
+| **needReCalculate** | boolean | query    | When **true**, forces the workbook to recalculate after the filter is added. Default **false**. |
+| **folder**          | string  | query    | Folder in cloud storage where the file is located.                                              |
+| **storageName**     | string  | query    | Name of the cloud storage.                                                                      |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PivotTables/PutWorksheetPivotTableFilter) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
+> **Note:** All parameters listed above are required unless explicitly marked as optional in the API reference.
 
-You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
+### Response codes
+
+| Code | Meaning                                   |
+|------|-------------------------------------------|
+| 200  | Filter added successfully.                |
+| 400  | Bad request – invalid parameters.         |
+| 401  | Unauthorized – missing or invalid token. |
+| 404  | Not found – workbook or pivot table missing. |
+| 500  | Internal server error.                    |
+
+You can explore the full OpenAPI definition here:  
+[OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PivotTables/PutWorksheetPivotTableFilter)
+
+### Example cURL request
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
@@ -132,79 +156,45 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{< tab tabNum="1" >}}
 
 ```csharp
-public void Run_PivotTable_PivotFilter()
+using System;
+using System.Threading.Tasks;
+using Aspose.Cells.Cloud.Sdk.Api;
+using Aspose.Cells.Cloud.Sdk.Model;
+
+public class PivotFilterExample
 {
-    url = @"http://api.aspose.com/v3.0/storage/file/Temp/V17.02.00_01.xlsx";
-    using (HttpWebResponse response = _helper.CallDelete(url, string.Empty, contentType))
+    public static async Task AddPivotFilterAsync()
     {
-        Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);
-    }
+        // Initialise the API client (replace with your credentials)
+        var config = new Configuration
+        {
+            ClientId = "YOUR_CLIENT_ID",
+            ClientSecret = "YOUR_CLIENT_SECRET"
+        };
+        var apiInstance = new CellsApi(config);
 
-    url = @"http://api.aspose.com/v3.0/cells/V17.02.00_01.xlsx?folder=Temp";
-    using (HttpWebResponse response = _helper.CallPut(url, string.Empty, contentType))
-    {
-        Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);
-    }
+        // Build the filter object
+        var filter = new PivotFilter
+        {
+            AutoFilter = null,
+            EvaluationOrder = 0,
+            FieldIndex = 1,
+            FilterType = "Count"
+        };
 
-    url = @"http://api.aspose.com/v3.0/cells/V17.02.00_01.xlsx/worksheets/PivotSheet?folder=Temp";
-    using (HttpWebResponse response = _helper.CallPut(url, string.Empty, contentType))
-    {
-        Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);
-    }
+        // Prepare the request
+        var request = new PutWorksheetPivotTableFilterRequest(
+            name: "Book1.xlsx",
+            sheetName: "PivotSheet",
+            pivotTableIndex: 0,
+            filter: filter,
+            needReCalculate: true,
+            folder: "Temp",
+            storageName: null);
 
-    url = @"http://api.aspose.com/v3.0/cells/V17.02.00_01.xlsx/worksheets/Sheet2?folder=Temp";
-    using (HttpWebResponse response = _helper.CallPut(url, string.Empty, contentType))
-    {
-        Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);
-    }
-
-    url = @"http://api.aspose.com/v3.0/cells/V17.02.00_01.xlsx/importdata?folder=Temp";
-    data = "{ \"BatchData\":[{...}] }";   // Truncated for brevity
-    using (HttpWebResponse response = _helper.CallPost(url, data, contentType))
-    {
-        Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);
-    }
-
-    url = @"http://api.aspose.com/v3.0/cells/V17.02.00_01.xlsx/worksheets/PivotSheet/pivottables?folder=Temp";
-    data = "{\"Name\":\"TestPivot\",\"SourceData\":\"=Sheet2!A1:E8\",\"DestCellName\":\"C1\",\"UseSameSource\":true,\"PivotFieldRows\":[0,1],\"PivotFieldColumns\":[2],\"PivotFieldData\":[3,4]}";
-    using (HttpWebResponse response = _helper.CallPut(url, data, contentType))
-    {
-        Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);
-    }
-
-    url = @"http://api.aspose.com/v3.0/cells/V17.02.00_01.xlsx/worksheets/PivotSheet/pivottables/0/PivotFilters?folder=Temp";
-    data = "{\"AutoFilter\":null,\"EvaluationOrder\":null,\"FieldIndex\":1,\"FilterType\":\"Count\",\"MeasureFldIndex\":null,\"MemberPropertyFieldIndex\":null,\"Name\":null,\"Value1\":null,\"Value2\":null}";
-    using (HttpWebResponse response = _helper.CallPut(url, data, contentType))
-    {
-        Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);
-    }
-
-    // Retrieve a specific filter
-    url = @"http://api.aspose.com/v3.0/cells/V17.02.00_01.xlsx/worksheets/PivotSheet/pivottables/0/PivotFilters/0?folder=Temp";
-    using (HttpWebResponse response = _helper.CallGet(url, string.Empty, contentType))
-    {
-        Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);
-    }
-
-    // Retrieve all filters
-    url = @"http://api.aspose.com/v3.0/cells/V17.02.00_01.xlsx/worksheets/PivotSheet/pivottables/0/PivotFilters?folder=Temp";
-    using (HttpWebResponse response = _helper.CallGet(url, string.Empty, contentType))
-    {
-        Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);
-    }
-
-    // Delete a specific filter
-    url = @"http://api.aspose.com/v3.0/cells/V17.02.00_01.xlsx/worksheets/PivotSheet/pivottables/0/PivotFilters/0?folder=Temp";
-    using (HttpWebResponse response = _helper.CallDelete(url, string.Empty, contentType))
-    {
-        Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);
-    }
-
-    // Delete all filters
-    url = @"http://api.aspose.com/v3.0/cells/V17.02.00_01.xlsx/worksheets/PivotSheet/pivottables/0/PivotFilters?folder=Temp";
-    using (HttpWebResponse response = _helper.CallDelete(url, string.Empty, contentType))
-    {
-        Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);
+        // Execute the request
+        var response = await apiInstance.PutWorksheetPivotTableFilterAsync(request);
+        Console.WriteLine($"Status: {response.Status}");
     }
 }
 ```
