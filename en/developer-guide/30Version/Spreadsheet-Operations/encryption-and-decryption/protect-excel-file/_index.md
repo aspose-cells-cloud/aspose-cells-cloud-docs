@@ -1,74 +1,88 @@
----
-title: "Protect an Excel Workbook"
-second_title: "Document"
-linktitle: "Protect an Excel File"
-type: docs
-url: /protect-excel-file/
-aliases: [/protect-excel-workbooks/,/workbook/protect/]
-keywords: "Protect Excel workbook, Aspose.Cells Cloud, Excel protection API, REST API, SDK examples"
-description: "Learn how to protect an Excel workbook using the Aspose.Cells Cloud REST API. This guide includes request parameters, cURL examples, and SDK code samples for multiple programming languages."
-weight: 30
----
+---  
+title: "Protect an Excel Workbook with Aspose.Cells Cloud API"  
+second_title: "Document"  
+linktitle: "Protect an Excel File"  
+type: docs  
+url: /protect-excel-file/  
+aliases: [/protect-excel-workbooks/,/workbook/protect/]  
+keywords: "Aspose Cells protect workbook, Excel protection API, REST protect workbook, Aspose Cells SDK"  
+description: "Learn how to protect an Excel workbook via Aspose.Cells Cloud REST API. Includes authentication steps, query & body parameters, cURL request, and SDK code samples for C#, Java, PHP, Ruby, Node.js, Python, Perl, and Go."  
+weight: 30  
+---  
 
 This REST API **protects** an Excel workbook.
 
-### Query Parameters
+### Prerequisites / Authentication  
 
-| Parameter Name | Type   | Description                     |
-|----------------|--------|---------------------------------|
-| folder         | string | Folder that contains the source workbook. |
-| storageName    | string | Name of the storage location.   |
+1. **Create an Aspose Cloud account** and obtain a **Client ID** and **Client Secret**.  
+2. Request an OAuth 2.0 access token:  
 
-### Request Body Parameters
+   ```bash
+   curl -X POST "https://api.aspose.cloud/connect/token" \
+        -H "Content-Type: application/x-www-form-urlencoded" \
+        -d "grant_type=client_credentials&client_id=<YOUR_CLIENT_ID>&client_secret=<YOUR_CLIENT_SECRET>"
+   ```  
 
-| Parameter Name | Type                     | Description                                 |
-|----------------|--------------------------|---------------------------------------------|
-| protection     | WorkbookProtectionRequest | Object that defines the protection settings. |
+   The response contains an `access_token`.  
+3. Include the token in every API call:  
 
-#### WorkbookProtectionRequest
+   ```
+   Authorization: Bearer <access_token>
+   ```
 
-| Parameter Name | Type   | Description                                                            |
-|----------------|--------|------------------------------------------------------------------------|
-| ProtectionType | string | Type of protection to apply. Allowed values: **ALL**, **CONTENTS**, **NONE**, **OBJECTS**, **SCENARIOS**, **STRUCTURE**, **WINDOWS**. |
-| Password       | string | Optional password to set for the protection.                          |
+> **Note:** The workbook must already be uploaded to the chosen storage before you protect it.
 
-## REST API
+### Query Parameters  
 
-| **API**                     | **Type** | **Description**      | **Swagger Link** |
-|-----------------------------|----------|----------------------|------------------|
-| /cells/{name}/protection    | POST     | Protect a workbook   | [PostProtectDocument](https://apireference.aspose.cloud/cells/#/Workbook/PostProtectDocument) |
+| Parameter Name | Type   | Description                                   |
+|----------------|--------|-----------------------------------------------|
+| folder         | string | Folder that contains the source workbook. *(optional)* |
+| storageName    | string | Name of the storage location. *(optional; default = “Default”)* |
+
+### Request Body Parameters  
+
+| Parameter Name | Type                     | Description                                           |
+|----------------|--------------------------|-------------------------------------------------------|
+| protection     | WorkbookProtectionRequest | Object that defines the protection settings for the workbook. |
+
+#### WorkbookProtectionRequest  
+
+| Parameter Name | Type   | Description                                                                                                                                 |
+|----------------|--------|---------------------------------------------------------------------------------------------------------------------------------------------|
+| ProtectionType | string | Type of protection to apply. Allowed values (case‑insensitive): **ALL**, **CONTENTS**, **NONE**, **OBJECTS**, **SCENARIOS**, **STRUCTURE**, **WINDOWS**. |
+| Password       | string | Optional password to set for the protection.                                                                                                 |
+
+## REST API  
+
+| **API**                     | **HTTP Method** | **Description**    | **Swagger Link** |
+|-----------------------------|-----------------|--------------------|------------------|
+| /cells/{name}/protection    | POST            | Protect a workbook | [PostProtectDocument](https://apireference.aspose.cloud/cells/#/Workbook/PostProtectDocument) |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PostProtectDocument) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL.
+### Example: Protect a Workbook with cURL  
 
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+1. Obtain an access token as described in **Prerequisites / Authentication**.  
+2. Execute the request:
 
-{{< tab tabNum="1" >}}
+   ```bash
+   curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/protection?folder=MyFolder&storageName=MyStorage" \
+        -H "accept: application/json" \
+        -H "Content-Type: application/json" \
+        -H "Authorization: Bearer <access_token>" \
+        -d '{ "ProtectionType": "ALL", "Password": "aspose" }'
+   ```
 
-```bash
-curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/protection" \
-     -H "accept: application/json" \
-     -H "Content-Type: application/json" \
-     -d '{ "ProtectionType": "ALL", "Password": "aspose" }'
-```
+#### Expected Responses  
 
-{{< /tab >}}
+| HTTP Status | Description                               | Example Payload |
+|-------------|-------------------------------------------|-----------------|
+| **200**     | Workbook protected successfully.          | `{ "Code": "200", "Status": "OK" }` |
+| **401**     | Unauthorized – missing or invalid token.  | `{ "Code": "401", "Message": "Invalid access token." }` |
+| **400**     | Bad request – malformed JSON or unsupported `ProtectionType`. | `{ "Code": "400", "Message": "Invalid request data." }` |
+| **500**     | Internal server error.                    | `{ "Code": "500", "Message": "An unexpected error occurred." }` |
 
-{{< tab tabNum="2" >}}
-
-```json
-{
-  "Code": "200",
-  "Status": "OK"
-}
-```
-
-{{< /tab >}}
-
-{{< /tabs >}}
-
-## Cloud SDK Family
+## Cloud SDK Family  
 
 Using an SDK is the fastest way to develop against Aspose.Cells Cloud. An SDK abstracts low‑level details, allowing you to focus on your business logic. See the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
