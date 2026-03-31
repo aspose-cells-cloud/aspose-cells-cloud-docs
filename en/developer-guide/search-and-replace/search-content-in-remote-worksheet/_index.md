@@ -1,94 +1,152 @@
----
-title: "Aspose.Cells Cloud Excel Text Search Web API - Find Text in Remote Spreadsheet Worksheet"
-second_title: "Document"
-ArticleTitle: "Search Text in Remote Excel Spreadsheet Worksheet - Find Data in Specific"
-linktitle: "Search Remote Worksheet Content"
-type: docs
-url: /search-content-in-remote-worksheet/
-keywords: "Excel search API, text search API, find in spreadsheet API, range search API, Aspose Cells search API, remote Excel search, cloud spreadsheet search API, text lookup API, Excel data discovery API, workbook search API, API text finder"
-description: "Easily search for specific text within any remote Excel spreadsheet worksheet stored in cloud storage. Find data, formulas, or text across entire workbooks or specific cell ranges. Cloud-based search tool for quick data discovery without downloading files."
-weight: 100
----
+---  
+title: "Aspose.Cells Cloud Excel Text Search Web API – Find Text in Remote Worksheet"  
+second_title: "Document"  
+ArticleTitle: "Search Text in Remote Excel Spreadsheet Worksheet – Find Specific Data"  
+linktitle: "Search Remote Worksheet Content"  
+type: docs  
+url: /search-content-in-remote-worksheet/  
+keywords: "Aspose Cells, Excel API, text search, remote worksheet"  
+description: "Search for text, numbers, or formulas in a remote Excel worksheet using Aspose.Cells Cloud API. Supports case‑insensitive and password‑protected files."  
+weight: 100  
+---  
 
-Programmatically search for specific text within any Excel spreadsheet worksheet using Aspose.Cells Cloud API. Find text, numbers, or formulas in remote files stored in cloud storage. RESTful API for automated data discovery, content analysis, and spreadsheet auditing workflows.
+Programmatically search for specific text within any Excel worksheet using the Aspose.Cells Cloud API. The service can locate text, numbers, or formulas in remote files stored in cloud storage, enabling automated data‑discovery, content‑analysis, and spreadsheet‑auditing workflows.
+
+**API version:** This page documents **v4.0** of the API. A newer v5.x version is available; see the changelog for additional parameters.
 
 ## **Search Content in Remote Worksheet**
 
-### API Endpoint
+### API Endpoint  
 
 ```
-PUT http://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/search/content
+PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/search/content
 ```
 
-### **Request Parameters:**
+### **Authentication**  
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-| :- | :- | :- |:- |
-| name | String | Path | **Required**. The filename of the target Excel workbook (e.g., `annual_report.xlsx`) stored in cloud storage. |
-| worksheet | String | Path | **Required**. The specific worksheet name within the workbook where the search will be performed. |
-| searchText | String | Query | **Required**. The exact text string or number to find within the specified worksheet. |
-| ignoringCase | Boolean | Query | **Optional**. When set to `true`, performs a case-insensitive search (e.g., "Data" matches "data"). Defaults to `false`. |
-| folder | String | Query | **Optional**. The directory path in cloud storage containing the workbook file. If omitted, searches in the root directory. |
-| storageName | String | Query | **Optional**. The name of a custom-configured cloud storage service. If not provided, the account's default storage is used. |
-| region | String | Query | **Optional**. The locale setting (e.g., `ja-JP`) to apply, which may influence text comparison and collation rules. |
-| password | String | Query | **Optional**. The password required to decrypt a password-protected spreadsheet. Omit if the file is not encrypted. |
+The endpoint requires an OAuth 2.0 access token. Obtain a token using your client ID and secret, then include it in the request header:
+
+```
+Authorization: Bearer <access_token>
+```
+
+### **Request Parameters**
+
+| Parameter Name | Type    | Path/Query String/HTTP Body | Description |
+|----------------|---------|-----------------------------|-------------|
+| name           | String  | Path                        | **Required.** The filename of the target workbook (e.g., `annual_report.xlsx`). |
+| worksheet      | String  | Path                        | **Required.** The worksheet within the workbook where the search is performed. |
+| searchText     | String  | Query                       | **Required.** The exact text string or number to locate. |
+| ignoreCase     | Boolean | Query                       | **Optional.** When `true`, the search is case‑insensitive. Default is `false`. |
+| folder         | String  | Query                       | **Optional.** Path to the folder containing the workbook. If omitted, the root folder is used. |
+| storageName    | String  | Query                       | **Optional.** Name of a custom‑configured cloud storage. If omitted, the default storage is used. |
+| region         | String  | Query                       | **Optional.** Locale setting (e.g., `ja-JP`) that may affect text comparison. |
+| password       | String  | Query                       | **Optional.** Password for a protected workbook. Omit if the file is not encrypted. |
 
 ### **Response**
 
 ```json
 {
-  "Name": "BrokenLinksResponse",
-  "Type": "Class",
-  "ParentName": "CellsCloudResponse",
-  "Properties": [
+  "textItems": [
     {
-      "Name": "BrokenLinks",
-      "DataType": {
-        "Identifier": "Container",
-        "Reference": "BrokenLink",
-        "ElementDataType": {
-          "Identifier": "Class",
-          "Reference": "BrokenLink",
-        },
-      }
+      "cellName": "A1",
+      "text": "Total",
+      "occurrences": 1
     },
     {
-      "Name": "Code",
-      "DataType": {
-        "Identifier": "Integer",
-      }
-    },
-    {
-      "Name": "Status",
-      "DataType": {
-        "Identifier": "String",
-      }
+      "cellName": "B5",
+      "text": "Total",
+      "occurrences": 2
     }
-  ]
+  ],
+  "code": 200,
+  "status": "OK"
 }
 ```
 
-### Error Codes
+* **textItems** – Array of matches. Each item contains the cell address (`cellName`), the matched string (`text`), and how many times it appears in that cell (`occurrences`).  
+* **code** – HTTP status code returned by the service.  
+* **status** – Textual description of the result.
 
-- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized**: Invalid access token. Or invalid client id and secret.
-- **404 Not Found**: The spreadsheet file not accessible.
-- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
+### **Error Codes**
+
+- **400 Bad Request** – Invalid API URI or malformed parameters.  
+- **401 Unauthorized** – Missing or invalid OAuth 2.0 token.  
+- **404 Not Found** – The workbook or worksheet cannot be located.  
+- **500 Server Error** – An unexpected condition occurred while processing the request.  
+
+### **Code Samples**
+
+**C# (.NET SDK)**  
+
+```csharp
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Model.Requests;
+
+// 1. Obtain an OAuth2 token (outside the scope of this snippet)
+// 2. Create the API client
+var apiInstance = new SearchApi("client_id", "client_secret");
+
+// 3. Build the request
+var request = new SearchContentRequest(
+    name: "Report.xlsx",
+    worksheet: "Summary",
+    searchText: "Total",
+    ignoreCase: true,
+    folder: null,
+    storageName: null,
+    region: null,
+    password: null);
+
+// 4. Call the endpoint
+var response = apiInstance.SearchContentInRemoteWorksheet(request);
+Console.WriteLine($"Found {response.TextItems.Count} matches.");
+```
+
+**Python (SDK)**  
+
+```python
+import asposecellscloudsdk
+from asposecellscloudsdk.api.search_api import SearchApi
+from asposecellscloudsdk.models import SearchContentRequest
+
+# 1. Configure client with your credentials
+api_client = asposecellscloudsdk.ApiClient(
+    client_id="YOUR_CLIENT_ID",
+    client_secret="YOUR_CLIENT_SECRET"
+)
+
+search_api = SearchApi(api_client)
+
+# 2. Prepare the request
+request = SearchContentRequest(
+    name="Report.xlsx",
+    worksheet="Summary",
+    searchText="Total",
+    ignoreCase=True
+)
+
+# 3. Execute the call
+result = search_api.search_content_in_remote_worksheet(request)
+print(f"Matches found: {len(result.text_items)}")
+for item in result.text_items:
+    print(f"{item.cell_name}: {item.text} ({item.occurrences} times)")
+```
 
 ## Where should we use the Search content within the worksheet of the Spreadsheet API?
 
-- **Comprehensive Workbook Compliance Audit**: Quickly scan the entire Excel file to identify all sensitive terms (such as "Confidential Clause", "Internal Data"), which is used for enterprise data security and compliance checks.
-- **Cross-Sheet Data Association Query**: When project information is scattered across multiple worksheets, simply search for a specific project number or customer name, and immediately locate all related data to achieve cross-sheet information integration.
-- **Batch Template Content Verification**: After automated report generation, scan multiple Excel files in batches to confirm that all preset placeholders (such as `{{Date}}`) have been correctly replaced, ensuring the completeness and accuracy of the report.
-- **Historical Data Archiving and Mining**: Analyze historical data files exported from the old system, search for specific event codes or business terms, quickly understand the historical business logic, and conduct data archaeology and analysis.
+- **Workbook compliance audit:** Quickly locate sensitive terms (e.g., “Confidential”) across the entire file.  
+- **Cross‑sheet data association:** Find a project number or customer name that appears on multiple sheets.  
+- **Template verification:** After generating reports, confirm that placeholders such as `{{Date}}` have been replaced.  
+- **Historical data mining:** Search for specific event codes in legacy spreadsheets to understand past business logic.
 
 ## Why should you use the Search content within the worksheet of the Spreadsheet API?
 
-- **Developer-Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared to building custom chart rendering solutions, this significantly reduces the development workload.
-- **Reduced Labor Costs**: Reduced the need for positions dedicated to document consolidation.
-- **Pay-per-use**: No upfront investment, only pay for API calls actually used.
-- **Zero Maintenance Costs**: No need to maintain servers, update software, or deal with compatibility issues.
-- **Preserves complex Excel formatting** in universally accessible PDF format.
+- **Developer‑friendly:** SDKs for many languages accelerate development and are fully documented.  
+- **Reduced labor costs:** Decreases the need for staff dedicated to manual data consolidation.  
+- **Pay‑per‑use:** You only pay for the API calls you actually make.  
+- **Zero maintenance:** No servers to manage, no software updates, and no compatibility concerns.  
+- **Preserves complex Excel formatting** when exporting results to PDF or other formats.
 
 ## How to Use the Search for broken links within the worksheet of the Spreadsheet API with SDKs
 
