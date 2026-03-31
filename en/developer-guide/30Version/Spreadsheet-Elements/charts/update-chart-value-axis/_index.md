@@ -1,17 +1,19 @@
 ---
-title: "Update Chart Value Axis"
+title: "Aspose.Cells Cloud API – Update Chart Value Axis (POST /valueaxis)"
 type: docs
 url: /charts/value-axis/update/
 weight: 160
 keywords:
-  - Aspose.Cells
-  - Chart
-  - Value Axis
+  - Aspose.Cells Cloud
+  - Update Chart Value Axis
   - REST API
-  - Update
-  - Excel
-  - Cloud
-description: "Learn how to use the Aspose.Cells Cloud REST API to update the value axis of a chart in an Excel worksheet."
+  - Excel chart axis
+  - POST valueaxis
+  - cURL example
+  - SDK
+  - JSON payload
+  - chart axis settings
+description: "Learn how to update the value axis of a chart in an Excel worksheet using the Aspose.Cells Cloud REST API. Includes endpoint, parameters, request‑body schema, sample cURL/JSON payload, and error‑response details."
 ---
 
 This REST API updates the chart value axis.
@@ -19,34 +21,108 @@ This REST API updates the chart value axis.
 ## REST API
 
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/valueaxis
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/valueaxis
 ```
 
-The request parameters are:
+### Request Parameters
 
-| Parameter Name | Type   | Location | Description |
-|----------------|--------|----------|-------------|
-| name           | string | path     | Name of the Excel file stored in the cloud. |
-| sheetName      | string | path     | Name of the worksheet that contains the chart. |
-| chartIndex     | integer| path     | Zero‑based index of the chart whose value axis will be updated. |
-| axis           | object | body     | JSON object that defines the new value‑axis settings (e.g., minimum, maximum, major unit). |
-| folder         | string | query    | Cloud folder path where the file is located (optional). |
-| storageName    | string | query    | Name of the storage service to use (optional). |
+| Parameter Name | Type    | Location | Description |
+|----------------|---------|----------|-------------|
+| name           | string  | path     | Name of the Excel file stored in the cloud. |
+| sheetName      | string  | path     | Name of the worksheet that contains the chart. |
+| chartIndex     | integer | path     | Zero‑based index of the chart whose value axis will be updated. |
+| axis           | object  | body     | JSON object that defines the new value‑axis settings (e.g., `minimum`, `maximum`, `majorUnit`). |
+| folder         | string  | query    | Cloud folder path where the file is located (optional). |
+| storageName    | string  | query    | Name of the storage service to use (optional). |
+
+### Request Body Schema (`axis` object)
+
+The **axis** object may contain any of the following properties:
+
+- `minimum` (number) – Lower bound of the axis.
+- `maximum` (number) – Upper bound of the axis.
+- `majorUnit` (number) – Interval between major tick marks.
+- `minorUnit` (number) – Interval between minor tick marks.
+- `logBase` (number) – Base of the logarithm when `isLogarithmic` is `true`.
+- `isLogarithmic` (boolean) – Indicates whether the axis uses a logarithmic scale.
+- `displayUnit` (string) – Unit label displayed on the axis (e.g., `"Thousands"`).
+- `tickMark` (string) – Style of tick marks (e.g., `"inside"`).
+- `crossAt` (number) – Position where the axis crosses the perpendicular axis.
+
+Only the properties you need to change have to be included in the JSON payload.
+
+### Sample Request Body
+
+```json
+{
+  "minimum": 0,
+  "maximum": 200,
+  "majorUnit": 20,
+  "minorUnit": 5,
+  "logBase": 10,
+  "isLogarithmic": false,
+  "displayUnit": "Units",
+  "tickMark": "inside",
+  "crossAt": 0
+}
+```
+
+### cURL Example
+
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/valueaxis" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{
+        "minimum": 0,
+        "maximum": 200,
+        "majorUnit": 20,
+        "minorUnit": 5,
+        "logBase": 10,
+        "isLogarithmic": false
+      }'
+```
+
+### Successful Response
+
+```json
+{
+  "Code": 200,
+  "Status": "OK"
+}
+```
+
+### Error Responses
+
+| HTTP Status | Code | Message                              |
+|-------------|------|--------------------------------------|
+| 400         | 400  | Invalid request parameters or body. |
+| 401         | 401  | Authentication failed.              |
+| 404         | 404  | Specified file, worksheet, or chart not found. |
+| 500         | 500  | Internal server error.               |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/PostChartValueAxis) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
-
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/" \
+curl -v "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/valueaxis" \
   -X POST \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
-  -H "Authorization: Bearer <jwt token>"
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{
+        "minimum": 0,
+        "maximum": 200,
+        "majorUnit": 20,
+        "minorUnit": 5,
+        "logBase": 10,
+        "isLogarithmic": false
+      }'
 ```
 
 {{< /tab >}}
