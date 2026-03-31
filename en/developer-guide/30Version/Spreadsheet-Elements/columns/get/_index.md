@@ -1,5 +1,5 @@
 ---
-title: "Get columns from an Excel worksheet"
+title: "Get Column Details – Aspose.Cells Cloud API Reference (v4.0)"
 second_title: "Document"
 linktitle: "Get"
 type: docs
@@ -8,44 +8,58 @@ aliases:
   - /get-columns-from-an-excel-worksheet/
   - /get-columns-from-a-worksheet/
   - /get-column-from-a-worksheet/
-keywords: "Aspose Cells, Excel worksheet columns, REST API, Cloud SDK, Spreadsheet"
-description: "Retrieve column information from an Excel worksheet using the Aspose.Cells Cloud REST API. The API is available through multiple SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) and supports various storage options."
+keywords: "Aspose.Cells Cloud, Get Column API, Excel column API, retrieve column data, Aspose.Cells SDK"
+description: "Retrieve detailed information about a worksheet column (index, width, style, hidden state) using Aspose.Cells Cloud REST API. Includes cURL example, SDK snippets, authentication steps, and error handling."
 weight: 10
 ---
 
 This REST API reads worksheet column data by the column’s index.
 
+### Prerequisites
+
+- A valid Aspose Cloud account.  
+- An OAuth 2.0 access token (Bearer token).  
+- The workbook must be stored in Aspose Cloud storage or a location you specify with `folder`/`storageName`.
+
 ## REST API
 
 ```bash
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/{columnIndex}
+GET https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{sheetName}/cells/columns/{columnIndex}
 ```
 
-The request parameters are:
+> **Note:** All Aspose.Cloud endpoints require **HTTPS**.
 
-| Parameter Name | Type    | Location | Description |
-|----------------|---------|----------|-------------|
-| **name**       | string  | path     | The name of the workbook file. |
-| **sheetName**  | string  | path     | The name of the worksheet that contains the column. |
-| **columnIndex**| integer | path     | Zero‑based index of the column to retrieve. |
-| **folder**     | string  | query    | The folder path in storage where the workbook is located. |
-| **storageName**| string  | query    | The name of the storage service (e.g., Aspose Cloud Storage). |
+### Authentication
+
+To call the API you must include an `Authorization` header containing a valid Bearer token:
+
+```bash
+-H "Authorization: Bearer <access_token>"
+```
+
+You can obtain an access token by following the [OAuth 2.0 token‑generation guide](https://docs.aspose.cloud/authentication/).
+
+### Parameters
+
+| Parameter Name | Type    | Location | Description                                                                 | Required |
+|----------------|---------|----------|-----------------------------------------------------------------------------|----------|
+| **name**       | string  | path     | The name of the workbook file.                                              | Yes      |
+| **sheetName**  | string  | path     | The name of the worksheet that contains the column.                         | Yes      |
+| **columnIndex**| integer | path     | Zero‑based index of the column to retrieve.                                 | Yes      |
+| **folder**     | string  | query    | The folder path in storage where the workbook is located. *(optional)*    | No       |
+| **storageName**| string  | query    | The name of the storage service (e.g., Aspose Cloud Storage). *(optional)*| No       |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetColumns) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
-You can use the **cURL** command‑line tool to call Aspose.Cells web services. The example below shows how to request column information with cURL.
-
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
-
-{{< tab tabNum="11" >}}
+### cURL Request
 
 ```bash
-curl -X GET "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/0" -H "accept: application/json"
+curl -X GET "https://api.aspose.cloud/v4.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/0" \
+     -H "accept: application/json" \
+     -H "Authorization: Bearer <access_token>"
 ```
 
-{{< /tab >}}
-
-{{< tab tabNum="12" >}}
+### cURL Response
 
 ```json
 {
@@ -61,7 +75,7 @@ curl -X GET "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cel
       }
     },
     "link": {
-      "Href": "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/0",
+      "Href": "https://api.aspose.cloud/v4.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/0",
       "Rel": "self"
     }
   },
@@ -70,9 +84,23 @@ curl -X GET "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cel
 }
 ```
 
-{{< /tab >}}
+### Possible Errors
 
-{{< /tabs >}}
+| HTTP Status | Code | Message                              | When it occurs                                    |
+|-------------|------|--------------------------------------|---------------------------------------------------|
+| 400         | 400  | Bad Request                          | Required parameter is missing or malformed.      |
+| 401         | 401  | Unauthorized                         | Missing or invalid `Authorization` header.       |
+| 404         | 404  | Not Found                            | The specified workbook, worksheet, or column does not exist. |
+| 500         | 500  | Internal Server Error                | Unexpected server‑side problem.                   |
+
+**Example – 404 Not Found**
+
+```json
+{
+  "Code": 404,
+  "Message": "Column index out of range."
+}
+```
 
 ## Cloud SDK Family
 
