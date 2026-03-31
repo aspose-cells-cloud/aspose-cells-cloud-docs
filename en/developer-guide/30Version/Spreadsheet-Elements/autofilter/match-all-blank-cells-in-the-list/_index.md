@@ -1,12 +1,12 @@
 ---
 title: "Match all blank cells in an Excel worksheet"
 second_title: "Document"
-linktitle: "Match blank cell"
+linktitle: "Match all blank cells"
 type: docs
 url: /autofilter/match-all-blank/
 aliases: [/match-all-blank-cells-in-the-list/]
-keywords: "Aspose.Cells Cloud, Excel blank cells, autoFilter match blanks, REST API, worksheet filter"
-description: "Learn how to use Aspose.Cells Cloud REST API to match all blank cells in an Excel worksheet's auto‑filter list. Includes request details, cURL example, and SDK code snippets for multiple languages."
+keywords: "Aspose.Cells, match blank cells, auto filter, REST API, Excel, cloud"
+description: "Learn how to use Aspose.Cells Cloud REST API to filter and match all blank cells in an Excel worksheet. Includes endpoint, parameters, authentication steps, cURL example, and SDK snippets for C#, Java, Python, and more."
 weight: 100
 ---
 
@@ -15,28 +15,28 @@ This REST API matches all **blank cells** in the filter list on an Excel workshe
 ## REST API
 
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/matchBlanks
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/matchBlanks
 ```
 
 ### Request parameters
 
-| Parameter Name | Type    | Location                | Description                                                                 |
-|----------------|---------|--------------------------|-----------------------------------------------------------------------------|
-| name           | string  | path                     | The name of the workbook file.                                              |
-| sheetName      | string  | path                     | The name of the worksheet that contains the filter.                         |
-| fieldIndex     | integer | query                    | Zero‑based index of the column to which the filter is applied.             |
-| folder         | string  | query                    | The folder path in storage where the workbook is located.                  |
-| storageName    | string  | query                    | The name of the Aspose Cloud storage.                                       |
+| Parameter Name | Type    | Location | Description                                                            |
+|----------------|---------|----------|------------------------------------------------------------------------|
+| name           | string  | path     | The name of the workbook file.                                         |
+| sheetName      | string  | path     | The name of the worksheet that contains the filter.                    |
+| fieldIndex     | integer | query    | Zero‑based index of the column to which the filter is applied.         |
+| folder         | string  | query    | The folder path in storage where the workbook is located.              |
+| storageName    | string  | query    | The name of the Aspose Cloud storage.                                   |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/AutoFilter/PostWorksheetMatchBlanks) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services. The following example shows how to call the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/matchBlanks?fieldIndex=0" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/matchBlanks?fieldIndex=0" \
   -X POST \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
