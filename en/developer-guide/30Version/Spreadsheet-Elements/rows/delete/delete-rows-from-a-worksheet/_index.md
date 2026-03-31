@@ -1,15 +1,15 @@
 ---
-title: "Delete multi rows on an Excel worksheet"
+title: "Delete multiple rows from an Excel worksheet"
 second_title: "Document"
 linktitle: "Rows"
 type: docs
 url: /rows/delete/rows/
-keywords: "Aspose.Cells Cloud, delete rows, Excel worksheet, REST API, SDK"
-description: "Use Aspose.Cells Cloud REST API to delete multiple rows from an Excel worksheet. SDKs are available for Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift."
+keywords: "Aspose.Cells Cloud, delete rows, delete multiple rows, Excel worksheet, REST API, SDK"
+description: "Learn how to delete one or more rows from an Excel worksheet using Aspose.Cells Cloud REST API. Includes endpoint details, parameters, a cURL example, and SDK code samples for various languages."
 weight: 80
 ---
 
-This REST API deletes multiple rows on an Excel worksheet.
+This REST API deletes multiple rows **from** an Excel worksheet.
 
 ## REST API
 
@@ -19,15 +19,15 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/ro
 
 The request parameters are:
 
-| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                             |
-|----------------|---------|----------------------------|---------------------------------------------------------|
-| name           | string  | path                       | The workbook name.                                      |
-| sheetName      | string  | path                       | The worksheet name.                                     |
-| startrow       | integer | query                      | The starting row index to be operated.                 |
-| totalRows      | integer | query                      | The number of rows to delete.                           |
-| updateReference| boolean | query                      | Whether to update references after deletion (true/false). |
-| folder         | string  | query                      | The document folder.                                    |
-| storageName    | string  | query                      | The storage name.                                       |
+| Parameter Name   | Type    | Path / Query String / HTTP Body | Description                                                                 |
+|------------------|---------|---------------------------------|-----------------------------------------------------------------------------|
+| name             | string  | path                            | The workbook name.                                                          |
+| sheetName        | string  | path                            | The worksheet name.                                                         |
+| startrow         | integer | query                           | Zero‑based index of the first row to delete (e.g., `0` = first row).       |
+| totalRows        | integer | query                           | The number of rows to delete.                                               |
+| updateReference  | boolean | query                           | Whether to update references after deletion (`true`/`false`).              |
+| folder           | string  | query                           | The document folder.                                                        |
+| storageName      | string  | query                           | The storage name.                                                           |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetRows) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
