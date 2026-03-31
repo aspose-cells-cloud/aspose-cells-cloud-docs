@@ -1,35 +1,38 @@
----
-title: "Set Value of a Cell in a Worksheet"
-type: docs
-url: /set-value-of-a-cell-in-a-worksheet/
-weight: 70
-keywords: "Aspose.Cells, REST API, Excel, set cell value, worksheet, cloud SDK, cURL"
-description: "Documentation for the Aspose.Cells Cloud REST API that sets the value of a specific cell in an Excel worksheet, including request details, sample cURL commands, and SDK examples."
+---  
+title: "Set Cell Value – Aspose.Cells Cloud API Reference (v3.0)"  
+type: docs  
+url: /set-value-of-a-cell-in-a-worksheet/  
+weight: 70  
+keywords: "Aspose Cells API set cell value, Excel cell update REST, Aspose.Cells Cloud cURL example"  
+description: "Learn how to set the value of a specific cell in an Excel worksheet using Aspose.Cells Cloud REST API. Includes request syntax, parameters, HTTPS cURL example, and SDK code samples."  
+---  
 
----
+> **Version Notice:** This documentation applies to API version **v3.0**. Newer versions (e.g., v3.1, v4) may be available; refer to the changelog for the latest information.  
 
 This REST API sets the **cell value** in an Excel file.
 
-## REST API
+## REST API  
 
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}
-```
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}
+```  
+
+All requests must be sent over **HTTPS**. The API requires a **JWT bearer token** obtained from the Aspose Cloud OAuth endpoint. Include the token in the `Authorization` header as `Bearer <jwt token>`.
 
 **Request parameters**
 
-| Parameter Name | Type   | Location                | Description                              |
-|----------------|--------|-------------------------|------------------------------------------|
-| name           | string | path                    | Name of the Excel document.              |
-| sheetName      | string | path                    | Name of the worksheet.                   |
-| cellName       | string | path                    | Address of the target cell (e.g., A1).   |
-| value          | string | query                   | Value to assign to the cell.             |
-| type           | string | query                   | Data type of the value (e.g., int, string). |
-| formula        | string | query                   | Formula to apply to the cell (optional). |
-| folder         | string | query                   | Folder that contains the document.       |
-| storageName    | string | query                   | Name of the storage where the file resides. |
+| Name          | Type   | Location | Description                                   |
+|---------------|--------|----------|-----------------------------------------------|
+| name          | string | path     | Name of the Excel document (including extension). |
+| sheetName     | string | path     | Name of the worksheet (case‑sensitive). |
+| cellName      | string | path     | A1‑style address of the target cell (e.g., `A1`). |
+| value         | string | query    | Value to assign to the cell. |
+| type          | string | query    | Data type of the value (`int`, `string`, `float`, etc.). |
+| formula       | string | query    | Formula to apply to the cell (optional). |
+| folder        | string | query    | Folder that contains the document (optional). |
+| storageName   | string | query    | Name of the storage where the file resides (optional). |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostWorksheetCellSetValue) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostWorksheetCellSetValue) defines a publicly accessible programming interface, which enables developers to invoke REST endpoints directly from a browser or any HTTP client.
 
 You can use the **cURL** command‑line tool to call Aspose.Cells web services. The example below demonstrates how to set a cell value with cURL.
 
@@ -38,7 +41,7 @@ You can use the **cURL** command‑line tool to call Aspose.Cells web services. 
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/A3?value=1234&type=int" \
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/A3?value=1234&type=int" \
   -X POST \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
@@ -60,7 +63,16 @@ curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cell
 
 {{< /tabs >}}
 
-## Cloud SDK Family
+**Error handling**
+
+| HTTP Status | Description                              | Example payload |
+|-------------|------------------------------------------|-----------------|
+| 400         | Bad request – missing or invalid parameters. | `{"Code":400,"Message":"Invalid parameter 'value'."}` |
+| 401         | Unauthorized – JWT token is missing or invalid. | `{"Code":401,"Message":"Authentication failed."}` |
+| 404         | Not found – the specified file, worksheet, or cell does not exist. | `{"Code":404,"Message":"Worksheet not found."}` |
+| 500         | Internal server error – unexpected condition on the server. | `{"Code":500,"Message":"An unexpected error occurred."}` |
+
+## Cloud SDK Family  
 
 Using an SDK speeds up development by handling low‑level details so you can focus on your project. See the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
