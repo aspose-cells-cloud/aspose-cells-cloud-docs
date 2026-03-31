@@ -1,34 +1,38 @@
 ---  
-title: "Add Condition"  
+title: "Add Condition to Conditional Formatting"  
 type: docs  
 url: /conditional-formattings/add-a-condition/  
 aliases: [/add-a-condition-for-format-condition/]  
 keywords: "Aspose.Cells Cloud, Conditional Formatting, Add Condition, REST API, Excel, Worksheet"  
-description: "Use the Aspose.Cells Cloud REST API to add a condition to a worksheet's conditional formatting."  
+description: "Learn how to add a condition to a worksheet's conditional formatting using the Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, authentication details, cURL example, and SDK snippets."  
 weight: 40  
 ---  
 
-This REST API adds a condition to a format condition.
+This endpoint requires authentication via a **Bearer JWT token** obtained through the Aspose Cloud OAuth2 flow, and all calls must be made over **HTTPS**.
 
-## REST API  
+This API adds a new condition to an existing conditional formatting rule.
+
+## Rest Api  
 
 ```bash
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}/condition
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}/condition
 ```
 
 **Request parameters**
 
-| Parameter Name | Type    | Location                | Description |
-|----------------|---------|-------------------------|-------------|
-| name           | string  | path                    | Name of the workbook file. |
-| sheetName      | string  | path                    | Name of the worksheet. |
-| index          | integer | path                    | Index of the conditional formatting collection. |
-| type           | string  | query                   | Type of the condition (e.g., *CellValue*, *Expression*). |
-| operatorType   | string  | query                   | Operator used for the condition (e.g., *Equal*, *GreaterThan*). |
-| formula1       | string  | query                   | First formula or value for the condition. |
-| formula2       | string  | query                   | Second formula or value (used with some operators). |
-| folder         | string  | query                   | Folder in storage where the workbook is located. |
-| storageName    | string  | query                   | Name of the storage service. |
+| Parameter Name | Type    | Location | Description |
+|----------------|---------|----------|-------------|
+| name           | string  | path     | Name of the workbook file. |
+| sheetName      | string  | path     | Name of the worksheet. |
+| index          | integer | path     | Index of the conditional formatting collection. |
+| type           | string  | query    | Type of the condition (e.g., *CellValue*, *Expression*). |
+| operatorType   | string  | query    | Operator used for the condition (e.g., *Equal*, *GreaterThan*). |
+| formula1       | string  | query    | First formula or value for the condition. |
+| formula2       | string  | query    | Second formula or value (used with some operators). |
+| folder         | string  | query    | Folder in storage where the workbook is located. |
+| storageName    | string  | query    | Name of the storage service. |
+
+**Note:** `name`, `sheetName`, `index`, `type`, `operatorType`, and `formula1` are required. All other parameters are optional.
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/PutWorksheetFormatConditionCondition) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -39,7 +43,7 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditionalFormattings/0/condition?type=CellValue&operatorType=Equal&formula1=v1&formula2=v2" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditionalFormattings/0/condition?type=CellValue&operatorType=Equal&formula1=v1&formula2=v2" \
 -X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
@@ -57,9 +61,22 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditi
 }
 ```
 
+*Possible error responses include `400` (Bad Request), `401` (Unauthorized), and `404` (Not Found). The response body follows the same structure with appropriate `Code` and `Status` values.*  
+
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**Frequently Asked Questions**
+
+- **What HTTP method and endpoint are used to add a condition to a conditional formatting rule?**  
+  Send a `PUT` request to `https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}/condition`.
+
+- **Which query parameters are required to define a “CellValue” condition?**  
+  `type=CellValue`, `operatorType` (e.g., `Equal`), and at least `formula1` (the comparison value). `formula2` is optional and used for range‑based operators.
+
+- **How do I authenticate the request?**  
+  Include an `Authorization: Bearer <JWT token>` header obtained via the Aspose Cloud OAuth2 flow. Tokens expire after one hour.
 
 ## Cloud SDK Family  
 
