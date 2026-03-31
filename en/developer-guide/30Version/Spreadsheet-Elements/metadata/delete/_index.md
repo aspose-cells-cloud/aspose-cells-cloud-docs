@@ -1,28 +1,32 @@
----
-title: "Delete metadata on Excel files."
-second_title: "Document"
-linktitle: "Delete without using storage"
-type: docs
-url: /metadata/delete/
-keywords: "Delete metadata, Excel, Aspose.Cells Cloud, REST API, SDK"
-description: "Use Aspose.Cells Cloud REST API to delete metadata from Excel files. The API supports multiple SDKs and programming languages for easy integration."
-weight: 55
----
+---  
+title: "Delete metadata from Excel files"  
+second_title: "Document"  
+linktitle: "Delete without using storage"  
+type: docs  
+url: /metadata/delete/  
+keywords: "delete metadata, Excel, Aspose.Cells Cloud, REST API"  
+description: "Learn how to delete workbook metadata using the Aspose.Cells Cloud REST API. Includes HTTPS endpoint, authentication steps, request parameters, a cURL example, and SDK code samples."  
+weight: 55  
+---  
 
-This REST API deletes **metadata** from one or more Excel files.
+This REST API deletes **metadata** from one or more Excel files. It removes workbook properties such as author, title, and custom data, and returns the cleaned files.
 
-## REST API
+**Prerequisites:** An active Aspose Cloud account, a valid JWT bearer token, and (optionally) the latest Aspose.Cells Cloud SDK.
+
+**Authentication:** Include the header `Authorization: Bearer <jwt token>` in every request.
+
+## REST API  
 
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/metadata/delete
-```
+POST https://api.aspose.cloud/v3.0/cells/metadata/delete
+```  
 
 The request parameters are:
 
-| Parameter Name | Type   | Location                | Description                                          |
-|----------------|--------|-------------------------|------------------------------------------------------|
-| file           | file   | formData                | Excel file to upload for metadata deletion           |
-| type           | string | query                   | Operation type; set to **all** to delete all metadata |
+| Parameter Name | Type   | Location  | Description                                          |
+|----------------|--------|-----------|------------------------------------------------------|
+| file           | file   | formData  | Excel file to upload for **metadata** deletion       |
+| type           | string | query     | Operation type; set to **all** to delete all **metadata** |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/DeleteMetadata) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -33,14 +37,11 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/metadata/delete" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--F 'file1=@file1.xlsx' \
--F 'file2=@file2.xlsx'
-```
+curl -v "https://api.aspose.cloud/v3.0/cells/metadata/delete?type=all" \
+  -X POST \
+  -H "Authorization: Bearer <jwt token>" \
+  -F "file=@file1.xlsx"
+```  
 
 {{< /tab >}}
 
@@ -48,26 +49,29 @@ curl -v "http://api.aspose.cloud/v3.0/cells/metadata/delete" \
 
 ```json
 {
-    "Files": [
-        {
-            "Filename": "file1.xlsx",
-            "FileSize": 274022,
-            "FileContent": "-----Base64String--------"
-        },
-        {
-            "Filename": "file2.xlsx",
-            "FileSize": 274022,
-            "FileContent": "-----Base64String--------"
-        }
-    ]
+  "Files": [
+    {
+      "Filename": "file1.xlsx",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    }
+  ]
 }
-```
+```  
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK Family
+**Error responses** may include:
+
+* **400 Bad Request** – missing file or invalid `type` value.  
+* **401 Unauthorized** – invalid or missing JWT token.  
+* **500 Internal Server Error** – server‑side processing error.  
+
+The API returns a JSON object containing an `Error` field with details for each case.
+
+## Cloud SDK Family  
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
