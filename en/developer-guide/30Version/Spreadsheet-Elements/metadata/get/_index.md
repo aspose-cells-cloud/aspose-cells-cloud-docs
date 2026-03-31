@@ -4,12 +4,13 @@ second_title: "Document"
 linktitle: "Get without using storage"
 type: docs
 url: /metadata/get/
-keywords: "metadata, Excel, Aspose.Cells Cloud, REST API, spreadsheet properties, get metadata"
-description: "Retrieve Excel file metadata using Aspose.Cells Cloud REST API. Supports multiple SDKs for languages such as C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, and Swift."
+keywords: "Aspose.Cells, Excel metadata, REST API, cloud SDK, get metadata"
+description: "Retrieve built‑in or custom metadata from Excel workbooks using Aspose.Cells Cloud REST API. Includes request format, parameters, sample SDK code, and error handling."
 weight: 23
 ---
 
-This REST API retrieves **metadata** from one or more Excel files.
+This REST API retrieves **metadata** from one or more Excel files.  
+The request must include an `Authorization: Bearer <access_token>` header obtained via the OAuth 2.0 client‑credentials flow.
 
 ```bash
 POST https://api.aspose.cloud/v3.0/cells/metadata/get
@@ -17,32 +18,36 @@ POST https://api.aspose.cloud/v3.0/cells/metadata/get
 
 ### Query Parameter
 
-| Parameter Name | Type   | Description                         |
-|----------------|--------|-------------------------------------|
-| type           | string | `ALL` / `BuiltIn` / `Custom` – specifies which metadata groups to return. |
+| Parameter Name | Type   | Description                                                                 |
+|----------------|--------|-----------------------------------------------------------------------------|
+| type           | string | `ALL` / `BuiltIn` / `Custom` – specifies which metadata groups to return.   |
 
 ### Request Body Parameter
 
-| Parameter Name | Type      | Description |
-|----------------|-----------|-------------|
-| excel file     | data file | The Excel file supplied as the first part of the multipart request. |
+| Parameter Name | Type      | Description                                                            |
+|----------------|-----------|------------------------------------------------------------------------|
+| excel file     | data file | The Excel file supplied as the first part of the multipart request.   |
 
 ### Response
 
 ```json
 [
-    {
-        "Name": "test1",
-        "Value": "test1",
-        ...
-    },
-    {
-        "Name": "test2",
-        "Value": "test3",
-        ...
-    }
+  {
+    "Name": "Author",
+    "Value": "John Doe",
+    "BuiltIn": true,
+    "IsReadOnly": false
+  },
+  {
+    "Name": "CustomProp1",
+    "Value": "Custom Value",
+    "BuiltIn": false,
+    "IsReadOnly": false
+  }
 ]
 ```
+
+The API returns standard HTTP status codes (e.g., **200** for success, **400** for a bad request, **401** for unauthorized access, **404** if the file is not found, and **500** for server errors) together with an error‑response JSON object when applicable.
 
 ### Cloud SDK Family
 
