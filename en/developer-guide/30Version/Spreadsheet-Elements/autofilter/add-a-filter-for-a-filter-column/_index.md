@@ -1,12 +1,12 @@
 ---
-title: "Add a filter in an Excel worksheet"
+title: "Add a Filter in an Excel Worksheet"
 second_title: "Document"
 linktitle: "Add filter"
 type: docs
 url: /autofilter/add-filter/
 aliases: [/add-a-filter-for-a-filter-column/]
-keywords: "Aspose.Cells Cloud, Excel, auto filter, add filter, worksheet filter, REST API, SDK"
-description: "Use the Aspose.Cells Cloud REST API to add an auto‑filter to a column in an Excel worksheet. The API is available through multiple SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) for seamless integration."
+keywords: "Aspose.Cells, Cloud, Excel, AutoFilter, Add Filter, REST API, SDK"
+description: "Learn how to add an auto‑filter to a column in an Excel worksheet using Aspose.Cells Cloud REST API. Includes cURL, SDK samples, and parameter guide."
 weight: 60
 ---
 
@@ -20,17 +20,17 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/
 
 ### Request parameters
 
-| Parameter Name | Type    | Location                     | Description |
-|----------------|---------|------------------------------|-------------|
-| name           | string  | Path                         | The workbook name. |
-| sheetName      | string  | Path                         | The worksheet name. |
-| range          | string  | Query                        | The cell range that contains the filter (e.g., `A1:B1`). |
-| fieldIndex     | integer | Query                        | Zero‑based index of the column to which the filter is applied. |
-| criteria       | string  | Query                        | The filter criteria (e.g., a value or expression). |
-| matchBlanks    | string  | Query                        | Set to `true` to include blank cells in the filter; otherwise `false`. |
-| refresh        | string  | Query                        | Set to `true` to refresh the filter after applying; otherwise `false`. |
-| folder         | string  | Query                        | The folder where the original workbook is stored. |
-| storageName    | string  | Query                        | The name of the storage service. |
+| Parameter Name | Type    | Location | Description |
+|----------------|---------|----------|-------------|
+| name           | string  | Path     | The workbook name. |
+| sheetName      | string  | Path     | The worksheet name. |
+| range          | string  | Query    | The cell range that contains the filter (e.g., `A1:B1`). |
+| fieldIndex     | integer | Query    | Zero‑based index of the column to which the filter is applied. |
+| criteria       | string  | Query    | The filter criteria (e.g., a value or expression). |
+| matchBlanks    | boolean | Query    | Set to `true` to include blank cells in the filter; otherwise `false`. |
+| refresh        | boolean | Query    | Set to `true` to refresh the filter after applying; otherwise `false`. |
+| folder         | string  | Query    | The folder where the original workbook is stored. |
+| storageName    | string  | Query    | The name of the storage service. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetFilter) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
