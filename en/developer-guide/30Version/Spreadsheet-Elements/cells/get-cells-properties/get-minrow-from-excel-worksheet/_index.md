@@ -1,22 +1,23 @@
 ---
-title: "Get MinRow from Excel Worksheet"
+title: "Get MinRow from Excel Worksheet – Aspose.Cells Cloud API Reference"
 type: docs
 url: /get-minrow-from-excel-worksheet/
 weight: 80
-keywords: "Aspose.Cells Cloud, Excel min row, GetMinRow, worksheet, REST API, spreadsheet, cell, minrow"
-description: "Learn how to retrieve the minimum row index of a worksheet in an Excel file using Aspose.Cells Cloud REST API. Includes cURL example and SDK code snippets for multiple programming languages."
+keywords: "Aspose.Cells, GetMinRow, Excel worksheet, REST API, min row index, cloud SDK"
+description: "Learn how to retrieve the minimum row index of a worksheet using Aspose.Cells Cloud REST API (v3.0). Includes full cURL request with authentication, response schema, and SDK examples for multiple languages."
 ---
 
-This REST API returns the minimum row index in an Excel worksheet when the `cellOrMethodName` parameter is set to `minrow`.
+This REST API returns the minimum row index in an Excel worksheet when the `cellOrMethodName` parameter is set to `minrow`. The endpoint can be used to determine the first non‑empty row (zero‑based) in a given worksheet.
 
-- **cURL Example**
+- **cURL Example:**  
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/minrow" \
+curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/minrow" \
+     -H "Authorization: Bearer <access_token>" \
      -H "Content-Type: application/json" \
      -H "Accept: application/json"
 ```
@@ -26,7 +27,9 @@ curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/
 {{< tab tabNum="2" >}}
 
 ```json
-{}
+{
+  "MinRow": 0
+}
 ```
 
 {{< /tab >}}
