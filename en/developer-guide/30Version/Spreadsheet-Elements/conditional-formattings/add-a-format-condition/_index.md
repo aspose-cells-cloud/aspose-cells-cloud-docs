@@ -3,12 +3,14 @@ title: "Add Format Condition"
 type: docs
 url: /conditional-formattings/add-format-condition/
 aliases: [/add-a-format-condition/]
-keywords: "Aspose Cells Cloud, REST API, Conditional Formatting, Add Format Condition, Excel, Spreadsheet"
-description: "Use the Aspose.Cells Cloud REST API to add a format condition to a worksheet in an Excel workbook."
+keywords: "Aspose.Cells Cloud, Add Format Condition API, Conditional Formatting, Excel, Spreadsheet, REST API"
+description: "Learn how to add a format condition to an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes request syntax, parameters, cURL example, and SDK snippets."
 weight: 50
 ---
 
 This REST API adds a format condition to a worksheet.
+
+**Authentication** – Include a valid OAuth 2.0 JWT token in the `Authorization` header (`Bearer <jwt token>`).
 
 ## REST API
 
@@ -18,22 +20,22 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditional
 
 ### Request parameters
 
-| Parameter Name | Type   | Location                     | Description                                                                 |
-|----------------|--------|------------------------------|-----------------------------------------------------------------------------|
-| name           | string | path                         | The name of the Excel workbook.                                             |
-| sheetName      | string | path                         | The name of the worksheet that contains the range to be formatted.        |
-| index          | integer| path                         | The zero‑based index of the format condition to add or replace.            |
-| cellArea       | string | query                        | The cell range (e.g., `A1:C3`) to which the condition applies.              |
-| type           | string | query                        | The type of condition (e.g., `Expression`, `CellValue`).                   |
-| operatorType   | string | query                        | The operator for the condition (e.g., `Between`, `Equal`).                 |
-| formula1       | string | query                        | The first formula or value used by the condition.                          |
-| formula2       | string | query                        | The second formula or value (required for some operators like `Between`). |
-| folder         | string | query                        | The folder in storage where the workbook is located.                        |
-| storageName    | string | query                        | The name of the storage service (e.g., `Default`).                         |
+| Parameter Name | Type   | Location | Description |
+|----------------|--------|----------|-------------|
+| name           | string | path     | The name of the Excel workbook. |
+| sheetName      | string | path     | The name of the worksheet that contains the range to be formatted. |
+| index          | integer| path     | The zero-based index of the format condition to add or replace. |
+| cellArea       | string | query    | The cell range (e.g., `A1:C3`) to which the condition applies. |
+| type           | string | query    | The type of condition (e.g., `Expression`, `CellValue`). |
+| operatorType   | string | query    | The operator for the condition (e.g., `Between`, `Equal`). |
+| formula1       | string | query    | The first formula or value used by the condition. |
+| formula2       | string | query    | The second formula or value (required for some operators such as `Between`). |
+| folder         | string | query    | The folder in storage where the workbook is located. |
+| storageName    | string | query    | The name of the storage service (e.g., `Default`). |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/PutWorksheetFormatCondition) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
+You can use **cURL** to call the Aspose.Cells API. The example below shows a complete request, including an empty JSON body.
 
 ### cURL Example
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
@@ -45,7 +47,8 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditi
   -X PUT \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
-  -H "Authorization: Bearer <jwt token>"
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{}'
 ```
 
 {{< /tab >}}
