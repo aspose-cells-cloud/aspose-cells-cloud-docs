@@ -1,13 +1,13 @@
 ---
-title: "Get MaxDataColumn from Excel Worksheet"
+title: "Aspose.Cells Cloud API – Get MaxDataColumn of an Excel Worksheet (v3.0)"
 type: docs
 url: /get-maxdatacolumn-from-excel-worksheet/
 weight: 70
-keywords: "Aspose.Cells Cloud, Excel, Get MaxDataColumn, REST API, Worksheet, Cells API"
-description: "Retrieves the maximum data column index of a specified worksheet in an Excel file using the Aspose.Cells Cloud REST API."
+keywords: "Aspose.Cells Cloud, Get MaxDataColumn, Excel worksheet, REST API, v3.0, SDK"
+description: "Retrieve the highest column index that contains data in a specified worksheet using the Aspose.Cells Cloud REST API (v3.0). Includes authentication details, sample request/response, and SDK examples."
 ---
 
-This REST API returns the maximum data column index in an Excel worksheet when the `cellOrMethodName` parameter is set to `maxdatacolumn`.
+This REST API returns the maximum data‑column index in an Excel worksheet when the `cellOrMethodName` parameter is set to `maxdatacolumn`.
 
 - **cURL Example**
 
@@ -15,16 +15,21 @@ This REST API returns the maximum data column index in an Excel worksheet when t
 
 {{< tab tabNum="11" >}}
 
-```java
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/maxdatacolumn" -H "Content-Type: application/json" -H "Accept: application/json"
+```bash
+curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/maxdatacolumn" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-{}
+```json
+{
+  "MaxDataColumn": 12
+}
 ```
 
 {{< /tab >}}
