@@ -5,8 +5,8 @@ linktitle: "Hide"
 type: docs
 url: /rows/hide/
 aliases: [/hide-rows-in-excel-worksheet/]
-keywords: "Hide rows, Excel, Aspose.Cells Cloud, REST API, SDK"
-description: "Use Aspose.Cells Cloud REST API to hide rows in an Excel worksheet. The API is available through multiple SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) and supports various development platforms."
+keywords: "hide rows, Excel, Aspose.Cells Cloud, REST API, SDK"
+description: "Learn how to hide one or multiple rows in an Excel worksheet using Aspose.Cells Cloud REST API. Includes cURL example, SDK snippets, parameters, authentication, response details, and error handling."
 weight: 40
 ---
 
@@ -20,18 +20,18 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
 
 ### Request parameters
 
-| Parameter   | Type    | Location | Description |
-|------------|---------|----------|-------------|
-| **name**      | string  | path     | The name of the workbook file. |
-| **sheetName** | string  | path     | The name of the worksheet containing the rows to hide. |
-| **startrow**  | integer | query    | Zero‑based index of the first row to be hidden. |
-| **totalRows** | integer | query    | The number of consecutive rows to hide, starting from **startrow**. |
-| **folder**    | string  | query    | The folder in storage where the workbook is located. |
-| **storageName**| string | query    | The name of the storage service. |
+| Parameter      | Type    | Location | Description |
+|----------------|---------|----------|-------------|
+| **name**       | string  | path     | The name of the workbook file. |
+| **sheetName**  | string  | path     | The name of the worksheet containing the rows to hide. |
+| **startrow**   | integer | query    | Zero‑based index of the first row to be hidden. |
+| **totalRows**  | integer | query    | The number of consecutive rows to hide, starting from **startrow**. |
+| **folder**     | string  | query    | The folder in storage where the workbook is located. |
+| **storageName**| string  | query    | The name of the storage service. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostHideWorksheetRows) defines a publicly accessible programming interface that lets you perform REST interactions directly from a web browser.
 
-You can use the **cURL** command‑line tool to call Aspose.Cells web services easily. The example below demonstrates how to hide a row using cURL.
+You can use the **cURL** command‑line tool to call Aspose.Cells web services. The API requires a JWT Bearer token obtained from the Aspose Cloud OAuth endpoint; include it in the `Authorization` header. The example below demonstrates how to hide a row using cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
@@ -59,6 +59,8 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 {{< /tab >}}
 
 {{< /tabs >}}
+
+A successful call returns a JSON object that contains the fields `Code` and `Status`. In case of an error, the response includes additional fields such as `Message` and appropriate HTTP status codes (e.g., 400, 401, 404, 500).
 
 ## Cloud SDK Family
 
