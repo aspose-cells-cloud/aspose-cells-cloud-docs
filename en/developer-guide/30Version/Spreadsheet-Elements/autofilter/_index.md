@@ -5,8 +5,8 @@ linktitle: "AutoFilter"
 type: docs
 url: /autofilter/
 aliases: [/working-with-autofilter/]
-keywords: "Excel AutoFilter, Aspose.Cells Cloud, filter types, color filter, date filter, dynamic filter, number filter, text filter, blank filter, custom filter, API"
-description: "Learn how to use Aspose.Cells Cloud APIs to add, delete, and manage AutoFilter features in Excel worksheets. Covers color, date, dynamic, number, text, blank, non‑blank, and custom filters across multiple programming languages."
+keywords: "AutoFilter, Aspose.Cells Cloud, Excel filter, color filter, date filter, dynamic filter, number filter, text filter, blank filter, custom filter"
+description: "Learn to add, edit, and delete Excel AutoFilters (color, date, dynamic, number, text, blank) using Aspose.Cells Cloud APIs. Code samples in multiple languages."
 weight: 100
 ---
 
@@ -18,51 +18,51 @@ Aspose.Cells Cloud provides multiple APIs to apply various filter types, such as
 
 <table class="table table-striped">
   <tr>
-    <td class="col-md-2"><li>Fill Color</li></td>
+    <td class="col-md-2"><strong>Fill Color</strong></td>
     <td class="col-md-10">
       <p>Aspose.Cells Cloud offers <a href="/cells/autofilter/add-color-filter/">the Add Fill Color Filter API</a> to filter data based on the fill‑color property of cells.</p>
     </td>
   </tr>
   <tr>
-    <td class="col-md-2"><li>Date</li></td>
+    <td class="col-md-2"><strong>Date</strong></td>
     <td class="col-md-10">
-      <p>Various date filters can be applied, such as filtering rows with dates in January 2018. Use <a href="/cells/autofilter/add-date-filter/">the Add Date Filter API</a> to implement this functionality.</p>
+      <p>Various date filters can be applied, such as filtering rows with dates in January 2018. Use <a href="/cells/autofilter/add-date-filter/">the Add Date Filter API</a> to add a date filter.</p>
     </td>
   </tr>
   <tr>
-    <td class="col-md-2"><li>Dynamic Date</li></td>
+    <td class="col-md-2"><strong>Dynamic Date</strong></td>
     <td class="col-md-10">
       <p>Dynamic date filters allow you to filter cells that fall in a specific month regardless of the year (e.g., all January dates). See <a href="/cells/autofilter/add-dynamic-filter/">the Dynamic Filter API</a>.</p>
     </td>
   </tr>
   <tr>
-    <td class="col-md-2"><li>Number</li></td>
+    <td class="col-md-2"><strong>Number</strong></td>
     <td class="col-md-10">
       <p>The <a href="/cells/autofilter/add-filter/">Custom Filters API</a> enables filtering cells whose numeric values fall within a given range.</p>
     </td>
   </tr>
   <tr>
-    <td class="col-md-2"><li>Text</li></td>
+    <td class="col-md-2"><strong>Text</strong></td>
     <td class="col-md-10">
       <p>If a column contains text, you can select cells containing a specific string using <a href="/cells/autofilter/add-filter/">the Add Filter API</a>.</p>
     </td>
   </tr>
   <tr>
-    <td class="col-md-2"><li>Blanks</li></td>
+    <td class="col-md-2"><strong>Blanks</strong></td>
     <td class="col-md-10">
       <p>To retrieve rows where a column is blank, use <a href="/cells/autofilter/match-all-blank/">the Match All Blank Cells API</a>.</p>
     </td>
   </tr>
   <tr>
-    <td class="col-md-2"><li>Non‑Blanks</li></td>
+    <td class="col-md-2"><strong>Non‑Blank</strong></td>
     <td class="col-md-10">
       <p>To filter rows where a column contains any non‑blank value, use <a href="/cells/autofilter/match-all-non-blank/">the Match All Non‑Blank Cells API</a>.</p>
     </td>
   </tr>
   <tr>
-    <td class="col-md-2"><li>Custom Filter</li></td>
+    <td class="col-md-2"><strong>Custom Filter</strong></td>
     <td class="col-md-10">
-      <p>Aspose.Cells Cloud provides <a href="/cells/autofilter/add-dynamic-filter/">Custom Filters API</a> for advanced scenarios, such as filtering rows that contain a specific substring or that start/end with a particular string.</p>
+      <p>Aspose.Cells Cloud provides <a href="/cells/autofilter/add-custom-filter/">the Custom Filters API</a> for advanced scenarios, such as filtering rows that contain a specific substring or that start/end with a particular string.</p>
     </td>
   </tr>
 </table>
