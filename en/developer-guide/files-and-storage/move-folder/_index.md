@@ -1,77 +1,194 @@
----
-title: "Aspose.Cells Cloud Move Folder API - An interface for fast moving of folder in the cloud"
-second_title: "Document"
-ArticleTitle: "Cloud-based Excel File Efficient Management Solution - An interface for fast moving of folder in the cloud."
-linktitle: "Move Folder"
-type: docs
-url: /move-folder/
-keywords: "Move folder API, Excel API, Folder management, REST API, Aspose.Cells, Cloud storage"
-description: "This documentation provides a comprehensive guide to using the Move Folder API for managing folders within the Aspose.Cells cloud storage."
-weight: 100
----
+---  
+title: "Aspose.Cells Cloud Move Folder API – Quickly Move Folders in the Cloud"  
+second_title: "Document"  
+ArticleTitle: "Cloud-based Excel File Management – Quickly Move Folders in the Cloud"  
+linktitle: "Move Folder"  
+type: docs  
+url: /move-folder/  
+keywords: "Aspose.Cells, Move Folder API, Cloud Storage, Excel REST API, Files Management"  
+description: "Learn how to move folders in Aspose.Cells Cloud storage via the RESTful Move Folder API. Includes endpoint, parameters, sample cURL, error codes, and SDK examples for C#, Java, Python, and more."  
+weight: 100  
+---  
 
 ## **Excel API: Move Folder**
 
-### API Endpoint
+### API Endpoint  
+
+```http
+PUT https://api.aspose.cloud/v4.0/cells/storage/folder/move/{srcPath}
+```
+
+### **Prerequisites**  
+
+- Aspose.Cells Cloud SDK version 20.10 or later.  
+- API version **v4.0**.  
+- A valid OAuth 2.0 access token that includes the **Cells** scope.  
+- Source and destination storages must belong to the same Aspose Cloud account.  
+
+### **Authentication**  
+
+All requests must contain an `Authorization` header:
 
 ```
-PUT http://api.aspose.cloud/v4.0/cells/storage/folder/move/{srcPath}
+Authorization: Bearer {access_token}
 ```
 
-### **Function Description**
+The token is obtained through the Aspose Cloud OAuth flow.
 
-This API allows users to move a folder from one location to another within the Aspose.Cells cloud storage. It is essential for organizing files and managing cloud storage effectively.
+### **Function Description**  
 
-### The request parameters of **moveFolder** API are
+This API moves a folder from one location to another within Aspose.Cells Cloud storage. It helps organise files and manage cloud storage efficiently.
 
-| Parameter Name       | Type   | Path/Query String/HTTP Body | Description                                                  |
-|----------------------|--------|------------------------------|--------------------------------------------------------------|
-| srcPath              | String | Path                         | The source path of the folder to be moved.                  |
-| destPath             | String | Query                        | The destination path where the folder should be moved.      |
-| srcStorageName       | String | Query                        | The name of the source storage.                              |
-| destStorageName      | String | Query                        | The name of the destination storage.                         |
+### Sample Request  
 
-### **Response Description**
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/storage/folder/move/FolderA?destPath=FolderB" \
+  -H "Authorization: Bearer YOUR_ACCESS_TOKEN" \
+  -H "Accept: application/json"
+```
+
+### Sample Response  
+
+**Status:** `200 OK`  
+
+**Body:** *(empty)*  
 
 ```json
-{
-Void
-}
+{}
 ```
 
-## OpenAPI Specification
+### The request parameters of **moveFolder** API are  
+
+| Parameter Name   | Type   | Location | Description |
+|------------------|--------|----------|-------------|
+| srcPath          | string | Path     | The full path of the folder to be moved, e.g., `FolderA/`. |
+| destPath         | string | Query    | The target path where the folder will be moved, e.g., `FolderB/`. |
+| srcStorageName   | string | Query    | (Optional) Name of the source storage. |
+| destStorageName  | string | Query    | (Optional) Name of the destination storage. |
+
+**Parameter details**
+
+- **srcPath** – required. The source folder path.  
+- **destPath** – required. The destination folder path.  
+- **srcStorageName** – optional. Identifier of the source storage.  
+- **destStorageName** – optional. Identifier of the destination storage.  
+
+### **Response Description**  
+
+On success the API returns an empty response body (`200 OK`). Errors are returned as JSON objects containing an `error` field.
+
+### **Error Handling**  
+
+| HTTP Status | Error Code               | Description                                 |
+|-------------|--------------------------|---------------------------------------------|
+| 400         | `FolderAlreadyExists`    | Destination folder already exists.          |
+| 400         | `InvalidPath`            | Source or destination path is invalid.      |
+| 401         | `Unauthorized`           | Missing or invalid access token.            |
+| 404         | `FolderNotFound`         | Source folder does not exist.               |
+| 500         | `InternalError`          | Unexpected server error.                    |
+
+### **Next Steps**  
+
+1. Call **Get Files List** to verify that the folder has been moved.  
+2. To rename a folder, invoke **Move Folder** with a different `destPath`.  
+3. Explore related operations such as **Copy Folder** and **Delete Folder**.  
+
+## OpenAPI Specification  
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/FolderController/MoveFolder) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-## Excel API SDK
+## Excel API SDK  
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK abstracts low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+### C# Example  
 
-{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{<tab tabNum="1" >}}
-{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_MoveFolder.cs" >}}
-{{</tab>}}
-{{<tab tabNum="2" >}}
-{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_MoveFolder.java" >}}
-{{</tab>}}
-{{<tab tabNum="3" >}}
-{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_MoveFolder.php" >}}
-{{</tab>}}
-{{<tab tabNum="4" >}}
-{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_MoveFolder.rb" >}}
-{{</tab>}}
-{{<tab tabNum="5" >}}
-{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_MoveFolder.ts" >}}
-{{</tab>}}
-{{<tab tabNum="6" >}}
-{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_MoveFolder.py" >}}
-{{</tab>}}
-{{<tab tabNum="7" >}}
-{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_MoveFolder.pl" >}}
-{{</tab>}}
-{{<tab tabNum="8" >}}
-{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_MoveFolder.go" >}}
-{{</tab>}}
-{{< /tabs >}}
+```csharp
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Model;
+
+var apiInstance = new CellsApi();
+apiInstance.MoveFolder("FolderA", "FolderB", null, null, "YOUR_ACCESS_TOKEN");
+```
+
+### Java Example  
+
+```java
+import com.aspose.cells.cloud.api.CellsApi;
+
+CellsApi api = new CellsApi();
+api.moveFolder("FolderA", "FolderB", null, null, "YOUR_ACCESS_TOKEN");
+```
+
+### PHP Example  
+
+```php
+<?php
+require_once 'vendor/autoload.php';
+
+$apiInstance = new Aspose\Cells\Cloud\Api\CellsApi();
+$apiInstance->moveFolder("FolderA", "FolderB", null, null, "YOUR_ACCESS_TOKEN");
+?>
+```
+
+### Ruby Example  
+
+```ruby
+require 'aspose_cells_cloud'
+
+api = AsposeCellsCloud::CellsApi.new
+api.move_folder('FolderA', 'FolderB', nil, nil, 'YOUR_ACCESS_TOKEN')
+```
+
+### Node.js (TypeScript) Example  
+
+```typescript
+import { CellsApi } from "asposecellscloud";
+
+const api = new CellsApi();
+api.moveFolder("FolderA", "FolderB", undefined, undefined, "YOUR_ACCESS_TOKEN");
+```
+
+### Python Example  
+
+```python
+from asposecellscloud import CellsApi
+
+api = CellsApi()
+api.move_folder("FolderA", "FolderB", None, None, "YOUR_ACCESS_TOKEN")
+```
+
+### Perl Example  
+
+```perl
+use AsposeCellsCloud::CellsApi;
+
+my $api = AsposeCellsCloud::CellsApi->new();
+$api->move_folder('FolderA', 'FolderB', undef, undef, 'YOUR_ACCESS_TOKEN');
+```
+
+### Go Example  
+
+```go
+package main
+
+import (
+    "github.com/aspose-cells-cloud/asposecellscloud-go/v4"
+)
+
+func main() {
+    api := cells.NewCellsApi()
+    api.MoveFolder("FolderA", "FolderB", "", "", "YOUR_ACCESS_TOKEN")
+}
+```
+
+### FAQ  
+
+**Q:** *How do I move a folder to a different storage account?*  
+**A:** Provide the `srcStorageName` and `destStorageName` query parameters in the request. Both storages must belong to the same Aspose Cloud account.  
+
+**Q:** *What response do I receive when the move succeeds?*  
+**A:** A `200 OK` status with an empty JSON body (`{}`).  
+
+**Q:** *What happens if the destination folder already exists?*  
+**A:** The API returns `400 Bad Request` with the error code `FolderAlreadyExists`.  
