@@ -1,12 +1,12 @@
 ---
-title: "Autofit multiple columns on an Excel worksheet"
+title: "Autofit Multiple Columns on an Excel Worksheet"
 second_title: "Document"
 linktitle: "Columns"
 type: docs
 url: /worksheets/autofit/columns/
 aliases: [/autofit-multiple-columns-of-worksheet/]
-keywords: "Autofit columns, Excel workbook, Aspose.Cells Cloud, REST API, SDK"
-description: "Use Aspose.Cells Cloud REST API to autofit multiple columns in an Excel worksheet. SDKs are available for C#, Java, PHP, Ruby, Node.js, Python, Perl, Go and more."
+keywords: "Aspose.Cells, autofit columns, Excel API, cloud spreadsheet, REST"
+description: "Learn how to autofit multiple columns in an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, cURL example, error handling, and SDK code snippets for C#, Java, Python, and more."
 weight: 20
 ---
 
@@ -15,22 +15,22 @@ This REST API autofits **multiple columns** on an Excel worksheet.
 ## REST API
 
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitcolumns
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitcolumns
 ```
 
 The request parameters are:
 
-| Parameter Name | Type    | Location                     | Description                                           |
-|----------------|---------|------------------------------|-------------------------------------------------------|
-| name           | string  | path                         | The file name.                                        |
-| sheetName      | string  | path                         | The worksheet name.                                   |
-| firstColumn    | integer | query                        | The start column index.                               |
-| lastColumn     | integer | query                        | The end column index.                                 |
-| autoFitterOptions* | object | body                         | AutoFitter options (see [Auto Fitter Options](/cells/auto-fitter-options/)). |
-| firstRow       | integer | query                        | The start row index for autofit (optional).          |
-| lastRow        | integer | query                        | The end row index for autofit (optional).            |
-| folder         | string  | query                        | Folder path in storage (optional).                    |
-| storageName    | string  | query                        | Storage name (optional).                              |
+| Parameter Name      | Type   | Location | Description                                                                                         |
+|---------------------|--------|----------|-----------------------------------------------------------------------------------------------------|
+| name                | string | path     | The file name.                                                                                      |
+| sheetName           | string | path     | The worksheet name.                                                                                 |
+| firstColumn         | integer| query    | The start column index.                                                                             |
+| lastColumn          | integer| query    | The end column index.                                                                               |
+| autoFitterOptions* | object | body     | AutoFitter options (see [Auto Fitter Options](/cells/auto-fitter-options/)). Includes `AutoFitMergedCells`, `IgnoreHidden`, and `OnlyAuto`. |
+| firstRow            | integer| query    | The start row index for autofit (**optional**).                                                     |
+| lastRow             | integer| query    | The end row index for autofit (**optional**).                                                       |
+| folder              | string | query    | Folder path in storage (**optional**).                                                               |
+| storageName         | string | query    | Storage name (**optional**).                                                                        |
 
 \*The parameter name is displayed as a link to the related documentation.
 
@@ -43,12 +43,12 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/sampleAutoFit.xlsx/worksheets/Sheet1/autofitcolumns?lastColumn=5&firstColumn=0" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--d '{"AutoFitMergedCells" : true, "IgnoreHidden" : true, "OnlyAuto" : true}'
+curl -v "https://api.aspose.cloud/v3.0/cells/sampleAutoFit.xlsx/worksheets/Sheet1/autofitcolumns?lastColumn=5&firstColumn=0" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{"AutoFitMergedCells": true, "IgnoreHidden": true, "OnlyAuto": true}'
 ```
 
 {{< /tab >}}
