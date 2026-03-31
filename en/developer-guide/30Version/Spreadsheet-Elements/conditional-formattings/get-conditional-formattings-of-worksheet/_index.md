@@ -1,20 +1,36 @@
----
-title: "Get Conditional Formattings"
-type: docs
-url: /conditional-formattings/get-all/
-aliases: [/get-conditional-formattings-of-worksheet/]
-keywords: "Aspose.Cells Cloud, REST API, Excel, Conditional Formatting, Worksheet"
-description: "Retrieve all conditional formatting rules applied to a worksheet using the Aspose.Cells Cloud REST API."
-weight: 20
----
+---  
+title: "Get Conditional Formatting Rules"  
+type: docs  
+url: /conditional-formattings/get-all/  
+aliases: [/get-conditional-formattings-of-worksheet/]  
+keywords: "Aspose.Cells Cloud, REST API, Excel, Conditional Formatting, Worksheet, Conditional Formatting API"  
+description: "Retrieve all conditional formatting rules applied to a worksheet using the Aspose.Cells Cloud REST API. Includes request syntax, authentication steps, parameters, concise response examples, and error handling."  
+weight: 20  
+---  
 
-This REST API retrieves conditional formatting rules applied to a worksheet.  
+This REST API retrieves the conditional‑formatting rules that are applied to a worksheet.  
 
-## REST API
+## Prerequisites / Authentication  
+
+The Aspose.Cells Cloud API uses OAuth 2.0. Obtain an access token by sending a **client‑credentials** request to  
+
+```
+https://api.aspose.cloud/connect/token
+```  
+
+with your **client ID** and **client secret**. The response contains an `access_token` that must be supplied in every request via the `Authorization` header:
+
+```
+Authorization: Bearer <access_token>
+```  
+
+> **Note** – All examples below use **HTTPS** endpoints.
+
+## REST API  
 
 ```bash
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings
-```
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings
+```  
 
 The request parameters are:
 
@@ -34,11 +50,11 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditionalFormattings" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditionalFormattings" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <access_token>"
 ```
 
 {{< /tab >}}
@@ -47,227 +63,23 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditi
 
 ```json
 {
-  "Status": "string",
+  "Status": "OK",
   "ConditionalFormattings": {
-    "link": {
-      "Href": "string",
-      "Rel": "string",
-      "Title": "string",
-      "Type": "string"
-    },
-    "Count": 0,
+    "Count": 1,
     "ConditionalFormattingList": [
       {
-        "link": {
-          "Href": "string",
-          "Rel": "string",
-          "Title": "string",
-          "Type": "string"
-        },
-        "sqref": "string",
+        "sqref": "A1:B10",
         "FormatConditions": [
           {
-            "link": {
-              "Href": "string",
-              "Rel": "string",
-              "Title": "string",
-              "Type": "string"
-            },
-            "Priority": 0,
-            "Type": "string",
-            "StopIfTrue": true,
-            "AboveAverage": {
-              "IsAboveAverage": true,
-              "IsEqualAverage": true,
-              "StdDev": 0
-            },
-            "ColorScale": {
-              "MaxCfvo": {
-                "IsGTE": true,
-                "Type": "string"
-              },
-              "MaxColor": {
-                "A": 0,
-                "R": 0,
-                "G": 0,
-                "B": 0
-              },
-              "MidCfvo": {
-                "IsGTE": true,
-                "Type": "string"
-              },
-              "MidColor": {
-                "A": 0,
-                "R": 0,
-                "G": 0,
-                "B": 0
-              },
-              "MinCfvo": {
-                "IsGTE": true,
-                "Type": "string"
-              },
-              "MinColor": {
-                "A": 0,
-                "R": 0,
-                "G": 0,
-                "B": 0
-              }
-            },
-            "DataBar": {
-              "AxisColor": {
-                "A": 0,
-                "R": 0,
-                "G": 0,
-                "B": 0
-              },
-              "AxisPosition": "string",
-              "BarBorder": {
-                "Color": {
-                  "A": 0,
-                  "R": 0,
-                  "G": 0,
-                  "B": 0
-                },
-                "Type": "string"
-              },
-              "BarFillType": "string",
-              "Color": {
-                "A": 0,
-                "R": 0,
-                "G": 0,
-                "B": 0
-              },
-              "Direction": "string",
-              "MaxCfvo": {
-                "IsGTE": true,
-                "Type": "string"
-              },
-              "MaxLength": 0,
-              "MinCfvo": {
-                "IsGTE": true,
-                "Type": "string"
-              },
-              "MinLength": 0,
-              "NegativeBarFormat": {
-                "BorderColor": {
-                  "A": 0,
-                  "R": 0,
-                  "G": 0,
-                  "B": 0
-                },
-                "BorderColorType": "string",
-                "Color": {
-                  "A": 0,
-                  "R": 0,
-                  "G": 0,
-                  "B": 0
-                },
-                "ColorType": "string"
-              },
-              "ShowValue": true
-            },
-            "Formula1": "string",
-            "Formula2": "string",
-            "IconSet": {
-              "CfIcons": [
-                {
-                  "ImageData": "string",
-                  "Index": 0,
-                  "Type": "string"
-                }
-              ],
-              "Cfvos": [
-                {
-                  "IsGTE": true,
-                  "Type": "string"
-                }
-              ],
-              "IsCustom": true,
-              "Reverse": true,
-              "ShowValue": true,
-              "IconSetType": "string"
-            },
-            "Operator": "string",
+            "Priority": 1,
+            "Type": "CellValue",
+            "Operator": "GreaterThan",
+            "Formula1": "100",
             "Style": {
-              "link": {
-                "Href": "string",
-                "Rel": "string",
-                "Title": "string",
-                "Type": "string"
-              },
               "Font": {
-                "Color": {
-                  "A": 0,
-                  "R": 0,
-                  "G": 0,
-                  "B": 0
-                },
-                "DoubleSize": 0,
-                "IsBold": true,
-                "IsItalic": true,
-                "IsStrikeout": true,
-                "IsSubscript": true,
-                "IsSuperscript": true,
-                "Name": "string",
-                "Size": 0,
-                "Underline": "string"
-              },
-              "Name": "string",
-              "CultureCustom": "string",
-              "Custom": "string",
-              "BackgroundColor": {
-                "A": 0,
-                "R": 0,
-                "G": 0,
-                "B": 0
-              },
-              "ForegroundColor": {
-                "A": 0,
-                "R": 0,
-                "G": 0,
-                "B": 0
-              },
-              "IsFormulaHidden": true,
-              "IsDateTime": true,
-              "IsTextWrapped": true,
-              "IsGradient": true,
-              "IsLocked": true,
-              "IsPercent": true,
-              "ShrinkToFit": true,
-              "IndentLevel": 0,
-              "Number": 0,
-              "RotationAngle": 0,
-              "Pattern": "string",
-              "TextDirection": "string",
-              "VerticalAlignment": "string",
-              "HorizontalAlignment": "string",
-              "BorderCollection": [
-                {
-                  "LineStyle": "string",
-                  "Color": {
-                    "A": 0,
-                    "R": 0,
-                    "G": 0,
-                    "B": 0
-                  },
-                  "BorderType": "string"
-                }
-              ],
-              "BackgroundThemeColor": {
-                "ColorType": "string",
-                "Tint": 0
-              },
-              "ForegroundThemeColor": {
-                "ColorType": "string",
-                "Tint": 0
+                "Color": { "A": 255, "R": 255, "G": 0, "B": 0 },
+                "IsBold": true
               }
-            },
-            "Text": "string",
-            "TimePeriod": "string",
-            "Top10": {
-              "IsBottom": true,
-              "IsPercent": true,
-              "Rank": 0
             }
           }
         ]
@@ -277,14 +89,27 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditi
 }
 ```
 
+*The example above shows only the most relevant fields to keep the payload concise.*  
+
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## **SDK Source**
+## Error Responses  
+
+| HTTP Status | Description                              | Example JSON |
+|-------------|------------------------------------------|--------------|
+| 400         | Bad request – missing or invalid parameters. | `{ "Error": "Invalid parameter", "Code": 400 }` |
+| 401         | Unauthorized – missing or expired token. | `{ "Error": "Invalid token", "Code": 401 }` |
+| 404         | Not found – the file or worksheet does not exist. | `{ "Error": "Resource not found", "Code": 404 }` |
+| 500         | Internal server error – unexpected condition on the server. | `{ "Error": "Server error", "Code": 500 }` |
+
+## SDK Source  
+
 The Aspose.Cells Cloud SDKs can be downloaded from the following page: [Available SDKs](/cells/available-sdks/)
 
-### **SDK Examples**
+### SDK Examples  
+
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}
