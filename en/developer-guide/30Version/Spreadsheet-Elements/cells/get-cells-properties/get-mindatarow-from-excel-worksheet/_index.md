@@ -3,35 +3,64 @@ title: "Get MinDataRow from Excel Worksheet"
 type: docs
 url: /get-mindatarow-from-excel-worksheet/
 weight: 90
-keywords: Excel, Aspose.Cells Cloud, REST API, Worksheet, MinDataRow, SDK, C#, Java, PHP, Ruby, Python, Node.js, Android, Swift, Perl, Go
-description: "Retrieves the minimum data row index of a worksheet in an Excel file using Aspose.Cells Cloud REST API. Includes a cURL example, response format, and SDK code samples for multiple programming languages."
+keywords: "Aspose.Cells Cloud API, MinDataRow, Excel, REST, v3.0, worksheet, cellOrMethodName"
+description: "Retrieve the minimum data row index of a worksheet using Aspose.Cells Cloud API v3.0. Includes authentication steps, request pattern, parameters table, sample cURL, response schema, error codes, and SDK examples."
 ---
 
-This REST API returns the minimum data row (`mindatarow`) of a worksheet in an Excel file when the `cellOrMethodName` parameter is set to `mindatarow`.
+**Overview**  
+The **Get MinDataRow** endpoint of **Aspose.Cells Cloud API v3.0** returns the index of the first row that contains data in a specified worksheet. The operation requires a valid access token (Bearer authentication) and the query parameter `cellOrMethodName` set to `mindatarow`.
 
-- **cURL Example**
+**Authentication**  
+1. Obtain a **client ID** and **client secret** from the Aspose Cloud console.  
+2. Request an access token via the OAuth 2.0 token endpoint.  
+3. Include the token in every request header:  
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+   ```
+   Authorization: Bearer <access_token>
+   ```
 
-{{< tab tabNum="11" >}}
+**Request**  
+The request uses the HTTP GET method. Replace the placeholders `{fileName}` and `{sheetName}` with the actual workbook and worksheet names.
 
 ```bash
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/mindatarow" \
+curl -X GET "https://api.aspose.cloud/v3.0/cells/{fileName}/worksheets/{sheetName}/cells/mindatarow?cellOrMethodName=mindatarow" \
+     -H "Authorization: Bearer <access_token>" \
      -H "Content-Type: application/json" \
      -H "Accept: application/json"
 ```
 
-{{< /tab >}}
+**Parameters**  
 
-{{< tab tabNum="12" >}}
+| Name               | Type   | Required | Description                                                                 |
+|--------------------|--------|----------|-----------------------------------------------------------------------------|
+| `cellOrMethodName`| string | Yes      | Must be set to **mindatarow** to invoke this operation.                    |
+| `folder`           | string | No       | Path to the folder containing the workbook.                                 |
+| `storage`          | string | No       | Name of the Aspose Cloud storage to use.                                    |
+
+**Response**  
+
+A successful call returns HTTP 200 with a JSON payload that contains the minimum data‑row index (0‑based).
 
 ```json
-{}
+{
+  "MinDataRow": 5
+}
 ```
 
-{{< /tab >}}
+**Error Handling**  
 
-{{< /tabs >}}
+| HTTP Status | Code            | Message                              | When it occurs                                          |
+|-------------|-----------------|--------------------------------------|----------------------------------------------------------|
+| 400         | BadRequest      | Invalid query parameter.             | `cellOrMethodName` missing or set to an unsupported value. |
+| 401         | Unauthorized    | Authentication failed.              | Missing or invalid Bearer token.                         |
+| 404         | FileNotFound    | Worksheet not found.                 | The specified `{fileName}` or `{sheetName}` does not exist. |
+| 500         | InternalError   | Unexpected server error.             | Server‑side problem while processing the request.        |
+
+**See Also**
+
+- [Get MaxDataRow](https://docs.aspose.cloud/cells/get-maxdatarow-from-excel-worksheet/)  
+- [Get MinRow](https://docs.aspose.cloud/cells/get-minrow-from-excel-worksheet/)  
+- [Authentication Guide](https://docs.aspose.cloud/cells/authentication/)
 
 - **Cloud SDK Family**
 
