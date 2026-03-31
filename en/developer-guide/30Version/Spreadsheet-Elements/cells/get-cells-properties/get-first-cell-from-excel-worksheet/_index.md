@@ -1,13 +1,15 @@
 ---
-title: "Get First Cell from Excel Worksheet"
+title: "Get First Cell (A1) from an Excel Worksheet"
 type: docs
 url: /get-first-cell-from-excel-worksheet/
 weight: 20
-keywords: "Aspose.Cells Cloud, Excel, REST API, Get First Cell, Worksheet, API"
-description: "Retrieves the first cell (A1) from a worksheet in an Excel file using the Aspose.Cells Cloud REST API."
+keywords: "Aspose.Cells Cloud, Excel, REST API, Get First Cell, Worksheet"
+description: "Learn how to retrieve the first cell (A1) of a worksheet using Aspose.Cells Cloud REST API v3.0. Includes cURL request, JSON response, and SDK code samples for C#, Java, PHP, and more."
 ---
 
 This REST API shows how to retrieve the **first cell** in an Excel file when the `cellOrMethodName` parameter is set to `firstcell`.
+
+The request requires a valid Aspose Cloud authentication token. Include the token in the `Authorization` header as `Bearer <access_token>`.
 
 - **cURL Example**
 
@@ -15,15 +17,18 @@ This REST API shows how to retrieve the **first cell** in an Excel file when the
 
 {{< tab tabNum="11" >}}
 
-```java
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/firstcell" -H "Content-Type: application/json" -H "Accept: application/json"
+```shell
+curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/firstcell" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
+```json
 {
   "Cell": {
     "Name": "A1",
