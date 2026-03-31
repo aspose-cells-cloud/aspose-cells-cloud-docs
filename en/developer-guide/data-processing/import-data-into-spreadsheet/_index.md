@@ -1,12 +1,12 @@
 ---
-title: "Aspose.Cells Cloud Data Import API - A cloud solution for automatically importing CSV, JSON, and XML data into Excel spreadsheets."
+title: "Aspose.Cells Cloud Data Import API – A cloud solution for automatically importing CSV, JSON, and XML data into Excel spreadsheets."
 second_title: "Document"
-ArticleTitle: "Multi-Source Data Integration Excel Platform - Aspose.Cells Cloud Automated Data Import and Transformation API."
+ArticleTitle: "Multi‑Source Data Integration Excel Platform – Aspose.Cells Cloud Automated Data Import and Transformation API."
 linktitle: "Import Data into Spreadsheet"
 type: docs
 url: /import-data-into-spreadsheet/
-keywords: "E-commerce data imported into Excel for analysis,Financial system data exported to Excel,CRM customer data Excel reports,ERP data Excel visualization,Logistics tracking data summarized in Excel,Daily data automatically imported into Excel,Real-time monitoring data updated in Excel,Cross-department data sharing in Excel,Data cleaned and then imported into Excel,Multi-source data merged in Excel, Aspose.Cells"
-description: "Aspose.Cells Cloud provides professional data import APIs, supporting the automatic importing of various data formats such as CSV, JSON, and XML into Excel spreadsheets. It offers a complete REST API interface for batch data processing, real-time data synchronization, and automated report generation. It includes detailed API documentation and code examples."
+keywords: "Aspose Cells, data import API, CSV to Excel, JSON to Excel, XML to Excel, cloud spreadsheet, REST API"
+description: "Import CSV, JSON, or XML data into Excel spreadsheets with Aspose.Cells Cloud REST API. Learn request format, parameters, sample SDK code, and error handling."
 weight: 100
 ---
 
@@ -14,82 +14,111 @@ weight: 100
 
 ### Multi-Format Data Support
 
-- **[CSV](https://docs.fileformat.com/spreadsheet/csv/) Data Import**: Supports various delimiters and automatically detects encoding
-- **[JSON](https://docs.fileformat.com/web/json/) Data Handling**: Flattens complex JSON structures into Excel tables
-- **[XML](https://docs.fileformat.com/web/xml/) File Conversion**: Maps node data to Excel row and column structure
+- **[CSV](https://docs.fileformat.com/spreadsheet/csv/) Data Import**: Supports various delimiters and automatically detects encoding.  
+- **[JSON](https://docs.fileformat.com/web/json/) Data Handling**: Flattens complex JSON structures into Excel tables.  
+- **[XML](https://docs.fileformat.com/web/xml/) File Conversion**: Maps node data to Excel row and column structure.
 
 ### Advanced Data Processing Capabilities
 
-- **Intelligent Field Mapping**: Automatically matches source fields to target columns
-- **Data Transformation Rules**: Supports data type conversion and formatting
-- **Batch Processing Support**: Allows importing multiple data files simultaneously
+- **Intelligent Field Mapping**: Automatically matches source fields to target columns.  
+- **Data Transformation Rules**: Supports data‑type conversion and formatting.  
+- **Batch Processing Support**: Allows importing multiple data files simultaneously.
 
 ## **Import Data into Spreadsheet API Description**
+
+### Authentication
+
+All calls to Aspose.Cells Cloud must be made over TLS and include a valid OAuth 2.0 access token.
+
+1. **Obtain a token** – POST your `client_id` and `client_secret` to  
+
+   ```
+   https://api.aspose.cloud/connect/token
+   ```
+
+   The response contains an `access_token`.  
+2. **Use the token** – Add the header  
+
+   ```
+   Authorization: Bearer <access_token>
+   ```
+
+   to every request, including the import endpoint.
 
 ### API Endpoint
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/import/data
+PUT https://api.aspose.cloud/v4.0/cells/import/data
 ```
 
-### **Request Parameters:**
+### Prerequisites
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-| :- | :- | :- |:- |
-| datafile | File | FormData | Upload the data file to be imported. |
-| Spreadsheet | File | FormData | Upload the target spreadsheet file. |
-| worksheet | String | Query | Specify the worksheet for importing data. |
-| startcell | String | Query | Specify the starting position for importing data. |
-| insert | Boolean | Query | Indicates whether to insert or overwrite the specified import data. |
-| convertNumericData | Boolean | Query | Specify whether to convert numerical data during import. |
-| splitter | String | Query | Specify the delimiter for CSV format. |
-| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
-| outStorageName | String | Query | Specify the output file storage name. |
-| fontsLocation | String | Query | Define custom fonts to be used. |
-| region | String | Query | Set the spreadsheet region configuration. |
-| password | String | Query | The password for opening the spreadsheet file. |
+- An active Aspose.Cloud account with a valid **API Key** / **Client ID** and **Client Secret**.  
+- A storage location (Aspose Cloud Storage or your own) where the source files and the target workbook reside.  
+- Supported file formats: **CSV**, **JSON**, **XML**, and **XLSX** for the workbook.  
+- Maximum file size: 500 MB per request (subject to your subscription limits).
 
-### **Response**
+### Request Parameters
+
+| Parameter Name      | Type   | Location                | Description                                                                     |
+|---------------------|--------|-------------------------|---------------------------------------------------------------------------------|
+| datafile            | File   | FormData                | The data file (CSV, JSON, or XML) to be imported.                               |
+| spreadsheet         | File   | FormData                | The target workbook that will receive the imported data.                        |
+| worksheet           | string | Query                   | Name of the worksheet where data will be placed.                                |
+| startCell           | string | Query                   | Top‑left cell (e.g., `A1`) that marks the start position for the import.        |
+| insert              | bool   | Query                   | `true` to insert rows; `false` to overwrite existing data.                     |
+| convertNumericData | bool   | Query                   | `true` to convert numeric strings to numbers during import.                    |
+| splitter            | string | Query                   | Single‑character CSV delimiter (default is `,`).                               |
+| outPath             | string | Query (optional)        | Folder path where the updated workbook will be stored.                          |
+| outStorageName      | string | Query (optional)        | Name of the storage location for the output file.                               |
+| fontsLocation       | string | Query (optional)        | Path to a custom fonts folder, if required.                                     |
+| region              | string | Query (optional)        | Spreadsheet region configuration (e.g., `en-US`).                              |
+| password            | string | Query (optional)        | Password for opening a protected workbook.                                      |
+
+### Response
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
 ### Error Codes
 
-- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized**: Invalid access token. Or invalid client id and secret.
-- **404 Not Found**: The spreadsheet file not accessible.
-- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
+| Code | Message                                   | When It Occurs                                          |
+|------|-------------------------------------------|---------------------------------------------------------|
+| 400  | Bad Request                               | Invalid API URI or malformed request parameters.       |
+| 401  | Unauthorized                              | Missing/invalid access token or client credentials.    |
+| 404  | Not Found                                 | The specified spreadsheet cannot be accessed.          |
+| 500  | Internal Server Error                     | An unexpected server‑side problem while processing.    |
 
-## Where should we use the Import Data into Spreadsheet API?
+### Quick‑Start Guide
 
-- **Patient Data Management**: Import XML data from electronic health records (EHR) into Excel analysis sheets.
-- **Clinical Trial Data**: Consolidate research data from various formats into Excel for statistical analysis
-- **Medical Device Monitoring**: Import device log data in real time into Excel maintenance schedules
-- **Transaction Data Analysis**: Import CSV data from trading systems into Excel risk models
-- **Customer Profiling**: Integrate multi-source customer data into Excel customer analysis sheets
-- **Regulatory Report Generation**: Automatically populate Excel templates required by regulators
-- **Inventory Management**: Import supply chain XML data into Excel inventory optimization models
-- **Customer Behavior Analysis**: Consolidate website analytics JSON data into Excel customer insight reports
-- **Price Monitoring**: Import competitor pricing data into Excel pricing strategy sheets
-- **Academic Research Data**: Import experimental device JSON data into Excel for statistical analysis
-- **Student Performance Management**: Import data from multiple systems into Excel grade analysis sheets
-- **Research Fund Management**: Import financial system data into Excel funding usage reports
+1. **Get an OAuth 2.0 token** (see *Authentication* above).  
+2. **Upload** the source data file and the target workbook to your chosen storage.  
+3. **Call** the `PUT https://api.aspose.cloud/v4.0/cells/import/data` endpoint with the required parameters.  
+4. **Download** the updated workbook from the location returned in the response.
 
-## Why should you use the Import Data into Spreadsheet API?
+## Use Cases & Benefits
 
-- Importing large amounts of data into spreadsheets.
-- **Developer-Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared to building custom chart rendering solutions, this significantly reduces the development workload.
-- **Cost-Effective**: You can import data without first uploading the data file and template file, which saves storage space and reduces costs.
+- **ETL Pipelines** – Automate the loading of CSV, JSON, or XML extracts directly into Excel for downstream analysis.  
+- **Reporting Dashboards** – Refresh Excel‑based dashboards by importing fresh data on a scheduled basis.  
+- **Data Consolidation** – Merge multiple source files into a single workbook without manual copy‑paste.  
+- **Regulatory Reporting** – Populate pre‑formatted Excel templates with required data fields automatically.  
+
+These scenarios focus on practical data‑integration tasks that developers commonly face.
+
+## Why You Should Use This API
+
+- **Efficient Data Loading** – Import large volumes of data without first creating intermediate files.  
+- **Developer‑Friendly** – SDKs are available for many languages, reducing development effort and ensuring consistent implementations.  
+- **Cost‑Effective** – The API processes data in‑memory, minimizing storage usage and associated costs.
 
 ## How to Use the Import Data into Spreadsheet API with SDKs
 
@@ -99,34 +128,246 @@ The [Import Data into Spreadsheet API Specification](https://reference.aspose.cl
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the fastest way to develop, as it abstracts away the low-level details, allowing you to import data into  a spreadsheet worksheet with short code.
-Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using the SDK is the fastest way to develop, as it abstracts away low‑level details, allowing you to import data into a spreadsheet worksheet with short code. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples illustrate how to invoke Aspose.Cells web services using various SDKs:
 
 {{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 {{<tab tabNum="1" >}}
-{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ImportDataIntoSpreadsheet.cs" >}}
+```csharp
+// C# example – Import CSV into a workbook
+var config = new Configuration
+{
+    ClientId = "<your_client_id>",
+    ClientSecret = "<your_client_secret>"
+};
+var apiInstance = new CellsApi(config);
+var token = apiInstance.OAuth2GetToken(); // obtain OAuth2 token
+apiInstance.Authorization = $"Bearer {token.AccessToken}";
+
+using var dataStream = File.OpenRead("data.csv");
+using var workbookStream = File.OpenRead("template.xlsx");
+var result = apiInstance.ImportDataIntoSpreadsheet(
+    datafile: dataStream,
+    spreadsheet: workbookStream,
+    worksheet: "Sheet1",
+    startCell: "A1",
+    insert: true,
+    convertNumericData: true,
+    splitter: ","
+);
+Console.WriteLine($"File saved to: {result[0].Name}");
+```
 {{</tab>}}
 {{<tab tabNum="2" >}}
-{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ImportDataIntoSpreadsheet.java" >}}
+```java
+// Java example – Import JSON into a workbook
+CellsApi api = new CellsApi("<client_id>", "<client_secret>");
+String token = api.getAccessToken(); // OAuth2
+api.setAccessToken(token);
+
+File dataFile = new File("data.json");
+File workbook = new File("template.xlsx");
+
+ImportResponse response = api.importDataIntoSpreadsheet(
+    dataFile,
+    workbook,
+    "Sheet1",
+    "A1",
+    true,
+    true,
+    null
+);
+System.out.println("Output file: " + response.getName());
+```
 {{</tab>}}
 {{<tab tabNum="3" >}}
-{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ImportDataIntoSpreadsheet.php" >}}
+```php
+<?php
+// PHP example – Import XML into a workbook
+use Aspose\Cells\Configuration;
+use Aspose\Cells\Api\CellsApi;
+
+$config = new Configuration();
+$config->setClientId('<client_id>');
+$config->setClientSecret('<client_secret>');
+
+$api = new CellsApi($config);
+$token = $api->oAuth2GetToken();
+$api->setAccessToken($token->getAccessToken());
+
+$dataFile = fopen('data.xml', 'r');
+$workbook = fopen('template.xlsx', 'r');
+
+$response = $api->importDataIntoSpreadsheet(
+    $dataFile,
+    $workbook,
+    'Sheet1',
+    'A1',
+    true,
+    true,
+    null
+);
+echo "Result file: " . $response[0]->getName();
+?>
+```
 {{</tab>}}
 {{<tab tabNum="4" >}}
-{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ImportDataIntoSpreadsheet.rb" >}}
+```ruby
+# Ruby example – Import CSV into a workbook
+require 'aspose_cells_cloud'
+
+config = AsposeCellsCloud::Configuration.new
+config.client_id = '<client_id>'
+config.client_secret = '<client_secret>'
+
+api_instance = AsposeCellsCloud::CellsApi.new
+token = api_instance.oauth2_get_token
+api_instance.access_token = token.access_token
+
+data = File.open('data.csv')
+workbook = File.open('template.xlsx')
+
+result = api_instance.import_data_into_spreadsheet(
+  datafile: data,
+  spreadsheet: workbook,
+  worksheet: 'Sheet1',
+  startcell: 'A1',
+  insert: true,
+  convert_numeric_data: true,
+  splitter: ','
+)
+puts "Saved as #{result[0].name}"
+```
 {{</tab>}}
 {{<tab tabNum="5" >}}
-{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ImportDataIntoSpreadsheet.ts" >}}
+```javascript
+// Node.js example – Import CSV into a workbook
+const { CellsApi, Configuration } = require('asposecellscloud');
+const fs = require('fs');
+
+let config = new Configuration({
+    clientId: '<client_id>',
+    clientSecret: '<client_secret>'
+});
+let api = new CellsApi(config);
+
+api.oAuth2GetToken().then(token => {
+    api.accessToken = token.access_token;
+
+    const dataFile = fs.createReadStream('data.csv');
+    const workbookFile = fs.createReadStream('template.xlsx');
+
+    return api.importDataIntoSpreadsheet(
+        dataFile,
+        workbookFile,
+        'Sheet1',
+        'A1',
+        true,
+        true,
+        null
+    );
+}).then(result => {
+    console.log('Result file:', result[0].name);
+}).catch(err => console.error(err));
+```
 {{</tab>}}
 {{<tab tabNum="6" >}}
-{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ImportDataIntoSpreadsheet.py" >}}
+```python
+# Python example – Import JSON into a workbook
+from asposecellscloud import CellsApi, Configuration
+
+config = Configuration(client_id='<client_id>', client_secret='<client_secret>')
+api = CellsApi(config)
+
+token = api.oauth2_get_token()
+api.access_token = token.access_token
+
+with open('data.json', 'rb') as data_file, open('template.xlsx', 'rb') as workbook_file:
+    result = api.import_data_into_spreadsheet(
+        datafile=data_file,
+        spreadsheet=workbook_file,
+        worksheet='Sheet1',
+        startcell='A1',
+        insert=True,
+        convert_numeric_data=True,
+        splitter=None
+    )
+print('Output file:', result[0].name)
+```
 {{</tab>}}
 {{<tab tabNum="7" >}}
-{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ImportDataIntoSpreadsheet.pl" >}}
+```perl
+# Perl example – Import CSV into a workbook
+use Aspose::Cells::Api::CellsApi;
+use Aspose::Cells::Configuration;
+
+my $config = Aspose::Cells::Configuration->new(
+    client_id     => '<client_id>',
+    client_secret => '<client_secret>'
+);
+my $api = Aspose::Cells::Api::CellsApi->new($config);
+my $token = $api->o_auth2_get_token;
+$api->access_token($token->{access_token});
+
+open my $data_fh, '<', 'data.csv' or die $!;
+open my $work_fh, '<', 'template.xlsx' or die $!;
+
+my $result = $api->import_data_into_spreadsheet(
+    datafile          => $data_fh,
+    spreadsheet       => $work_fh,
+    worksheet         => 'Sheet1',
+    startcell         => 'A1',
+    insert            => JSON::true,
+    convert_numeric_data => JSON::true,
+    splitter          => ','
+);
+print "Result file: $result->[0]{name}\n";
+```
 {{</tab>}}
 {{<tab tabNum="8" >}}
-{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ImportDataIntoSpreadsheet.go" >}}
+```go
+// Go example – Import XML into a workbook
+package main
+
+import (
+    "fmt"
+    "os"
+
+    cells "github.com/asposecellscloud/aspose-cells-cloud-go/v4"
+)
+
+func main() {
+    config := cells.NewConfiguration()
+    config.ClientId = "<client_id>"
+    config.ClientSecret = "<client_secret>"
+
+    api := cells.NewAPIClient(config)
+
+    // Obtain token
+    token, _, err := api.OAuth2Api.ConnectToken(config.ClientId, config.ClientSecret, nil)
+    if err != nil {
+        panic(err)
+    }
+    config.AccessToken = token.AccessToken
+
+    dataFile, _ := os.Open("data.xml")
+    workbookFile, _ := os.Open("template.xlsx")
+
+    result, _, err := api.DataProcessingApi.ImportDataIntoSpreadsheet(
+        dataFile,
+        workbookFile,
+        "Sheet1",
+        "A1",
+        true,
+        true,
+        nil,
+    )
+    if err != nil {
+        panic(err)
+    }
+    fmt.Println("Result file:", result[0].Name)
+}
+```
 {{</tab>}}
 {{< /tabs >}}
