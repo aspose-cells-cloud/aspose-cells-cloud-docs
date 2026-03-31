@@ -7,29 +7,33 @@ url: /columns/hide/
 aliases:
   - /hide-columns-in-excel-worksheet/
   - /hide-columns-in-an-excel-worksheet/
-keywords: "Hide columns, Excel worksheet, Aspose.Cells Cloud, REST API, SDK"
-description: "Learn how to use Aspose.Cells Cloud REST API to hide columns in an Excel worksheet. The guide includes request syntax, parameter details, cURL example, and SDK code samples for multiple programming languages."
+keywords: "Aspose.Cells Cloud, hide columns API, Excel column hide, REST API hide columns, Aspose.Cells SDK, spreadsheet automation"
+description: "Learn how to hide one or more columns in an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, cURL example, SDK code samples, and error handling."
 weight: 40
 ---
 
 This REST API hides columns in a worksheet.
 
+**Version note:** This documentation applies to Aspose.Cells Cloud API **v3.0** (latest as of 2026‑03‑30).
+
 ## REST API
 
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/hide
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/hide
 ```
 
-The request parameters are:
+The API accepts the following parameters:
 
-| Parameter Name | Type    | Location                | Description |
-|----------------|---------|--------------------------|-------------|
-| name           | string  | path                     | The name of the workbook file. |
-| sheetName      | string  | path                     | The name of the worksheet where columns will be hidden. |
-| startColumn    | integer | query                    | Zero‑based index of the first column to hide. |
-| totalColumns   | integer | query                    | Number of consecutive columns to hide, starting from **startColumn**. |
-| folder         | string  | query                    | Path to the folder that contains the workbook. |
-| storageName    | string  | query                    | Name of the storage service where the file is located. |
+| Parameter Name | Type    | Location | Description |
+|----------------|---------|----------|-------------|
+| name           | string  | path     | The name of the workbook file. |
+| sheetName      | string  | path     | The name of the worksheet where columns will be hidden. |
+| startColumn    | integer | query    | Zero‑based index of the first column to hide. |
+| totalColumns   | integer | query    | Number of consecutive columns to hide, starting from **startColumn**. |
+| folder         | string  | query    | Path to the folder that contains the workbook. |
+| storageName    | string  | query    | Name of the storage service where the file is located. |
+
+**Authentication:** Include the `Authorization: Bearer {access_token}` header with a valid OAuth 2.0 access token. The request must be sent over HTTPS.
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostHideWorksheetColumns) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
@@ -40,7 +44,9 @@ You can use the **cURL** command‑line tool to call Aspose.Cells web services e
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/hide?startColumn=1&totalColumns=1" -H "accept: application/json"
+curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/hide?startColumn=1&totalColumns=1" \
+     -H "accept: application/json" \
+     -H "Authorization: Bearer {access_token}"
 ```
 
 {{< /tab >}}
@@ -53,6 +59,16 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ce
   "Status": "OK"
 }
 ```
+
+**Possible response codes**
+
+| HTTP Code | Meaning                                 | Example JSON (error)                              |
+|-----------|-----------------------------------------|---------------------------------------------------|
+| 200       | Success                                 | `{ "Code": 200, "Status": "OK" }`                 |
+| 400       | Bad request (e.g., invalid parameters) | `{ "Code": 400, "Message": "Invalid column range." }` |
+| 401       | Unauthorized (missing/invalid token)   | `{ "Code": 401, "Message": "Invalid access token." }` |
+| 404       | Not found (workbook or worksheet)       | `{ "Code": 404, "Message": "File not found." }`   |
+| 500       | Internal server error                   | `{ "Code": 500, "Message": "Unexpected error." }` |
 
 {{< /tab >}}
 
