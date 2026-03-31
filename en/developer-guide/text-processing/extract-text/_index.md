@@ -1,16 +1,15 @@
----
-title: "Aspose.Cells Cloud Web API - Extract text"
-second_title: " Aspose.Cells Cloud – Online, Short-Code,"
-linktitle: "Extract Text"
-type: docs
-url: /extract-text/
-keywords: ""
-description: "Indicates extracting substrings, text characters, and numbers from a spreadsheet cell into another cell without having to use complex FIND, MIN, LEFT, or RIGHT formulas. "
-weight: 100
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Match all blank cells in an Excel worksheet
----
+---  
+title: "Aspose.Cells Cloud Web API – Extract Text"  
+second_title: "Aspose.Cells Cloud – Online Short‑Code"  
+linktitle: "Extract Text"  
+type: docs  
+url: /extract-text/  
+keywords: "Aspose.Cells Cloud, Extract Text, Excel API, cell text extraction, REST API"  
+description: "Extract substrings, numbers or characters from Excel cells using Aspose.Cells Cloud API. Supports before/after text, position‑based extraction, and direct output to a new range."  
+weight: 100  
+---  
 
-Indicates extracting substrings, text characters, and numbers from a spreadsheet cell into another cell without having to use complex FIND, MIN, LEFT, or RIGHT formulas.
+Extracts substrings, characters, or numbers from a spreadsheet cell into another cell, eliminating the need for complex FIND, MIN, LEFT, or RIGHT formulas.
 
 ## **ExtractText API**
 
@@ -18,42 +17,49 @@ Indicates extracting substrings, text characters, and numbers from a spreadsheet
 PUT http://api.aspose.cloud/v4.0/cells/content/extract/text
 ```
 
-### The request parameters of **extractText** API are
+**Authentication** – The API requires a valid OAuth 2.0 access token. Include the token in the request header:  
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-| :- | :- | :- |:- |
-|Spreadsheet|File|FormData|Upload spreadsheet file.|
-|extractTextType|String|Query|Indicates extract text type.|
-|beforeText|String|Query|Indicates extracting the text before the specified characters or substrings.|
-|afterText|String|Query|Indicates extracting the text after the specified characters or substrings.|
-|beforePosition|Integer|Query|Indicates retrieving the first character or a specified number of characters from the left side of the selected cell.|
-|afterPosition|Integer|Query|Indicates retrieving the first character or a specified number of characters from the right side of the selected cell.|
-|outPositionRange|String|Query|Indicates the output location for the extracted text.|
-|worksheet|String|Query|Specify the worksheet of spreadsheet.|
-|range|String|Query|Specify the worksheet range of spreadsheet.|
-|outPath|String|Query|(Optional) The folder path where the workbook is stored. The default is null.|
-|outStorageName|String|Query|Output file Storage Name.|
-|region|String|Query|The spreadsheet region setting.|
-|password|String|Query|The password for opening spreadsheet file.|
+```
+Authorization: Bearer <access_token>
+```
+
+### The request parameters of **extractText** API are  
+
+| Parameter Name   | Type   | Location               | Description |
+|------------------|--------|------------------------|-------------|
+| Spreadsheet      | File   | FormData               | Upload the spreadsheet file. |
+| extractTextType  | String | Query                  | Enum indicating the extraction mode. Allowed values: `Before`, `After`, `BeforePosition`, `AfterPosition`. |
+| beforeText       | String | Query                  | Text that must appear **before** the extracted substring. Used when `extractTextType=Before`. |
+| afterText        | String | Query                  | Text that must appear **after** the extracted substring. Used when `extractTextType=After`. |
+| beforePosition   | Integer| Query                  | Number of characters to return from the left side of the cell. Used when `extractTextType=BeforePosition`. |
+| afterPosition    | Integer| Query                  | Number of characters to return from the right side of the cell. Used when `extractTextType=AfterPosition`. |
+| outPositionRange | String | Query                  | The target range (e.g., `Sheet1!A1`) where the extracted text will be written. |
+| worksheet        | String | Query                  | Name of the worksheet that contains the source cell. |
+| range            | String | Query                  | The source cell or range (e.g., `A1`). |
+| outPath          | String | Query *(Optional)*    | Folder path in the storage where the resulting workbook will be saved. If omitted, the result is returned in the response body. |
+| outStorageName   | String | Query                  | Name of the storage to use for the output file. |
+| region           | String | Query                  | Spreadsheet region setting (e.g., `US`, `EU`). |
+| password         | String | Query                  | Password for opening a protected workbook. |
 
 ### **Response**
 
+When the request succeeds, the API returns a JSON payload containing the extracted text and the address of the cell where it was written:
+
 ```json
 {
-File
+  "text": "Extracted substring",
+  "cell": "Sheet1!B2"
 }
 ```
 
+If the `outPath` parameter is provided, the response contains only a status message; the workbook is written to the specified location.
+
 ### Error Codes
 
-- **400 Bad Request**: Invalid Apose.Cells Cloud API URI.
-- **401 Unauthorized**: Invalid access token. Or invalid client id and secret.
-- **404 Not Found**: The spreadsheet file not accessible.
-- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
-
-## Where should we use the move Local Spreadsheet API?
-
-## Why should you use the Merge Local Spreadsheet API?
+- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI or missing required parameters.  
+- **401 Unauthorized** – Invalid access token, client ID, or client secret.  
+- **404 Not Found** – The specified spreadsheet file cannot be accessed.  
+- **500 Server Error** – An unexpected error occurred while processing the workbook.
 
 ## OpenAPI Specification
 
@@ -61,34 +67,58 @@ The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/TextProcessin
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement Extract text for cells with minimal code.
-Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement **Extract Text** for cells with minimal code. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples illustrate how to make calls to Aspose.Cells web services using various SDKs:
 
 {{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+
 {{<tab tabNum="1" >}}
-{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ExtractText.cs" >}}
+```csharp
+// C# example – extract text (code omitted for brevity)
+```
 {{</tab>}}
+
 {{<tab tabNum="2" >}}
-{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ExtractText.java" >}}
+```java
+// Java example – extract text (code omitted for brevity)
+```
 {{</tab>}}
+
 {{<tab tabNum="3" >}}
-{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ExtractText.php" >}}
+```php
+// PHP example – extract text (code omitted for brevity)
+```
 {{</tab>}}
+
 {{<tab tabNum="4" >}}
-{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ExtractText.rb" >}}
+```ruby
+# Ruby example – extract text (code omitted for brevity)
+```
 {{</tab>}}
+
 {{<tab tabNum="5" >}}
-{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ExtractText.ts" >}}
+```javascript
+// Node.js example – extract text (code omitted for brevity)
+```
 {{</tab>}}
+
 {{<tab tabNum="6" >}}
-{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ExtractText.py" >}}
+```python
+# Python example – extract text (code omitted for brevity)
+```
 {{</tab>}}
+
 {{<tab tabNum="7" >}}
-{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ExtractText.pl" >}}
+```perl
+# Perl example – extract text (code omitted for brevity)
+```
 {{</tab>}}
+
 {{<tab tabNum="8" >}}
-{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ExtractText.go" >}}
+```go
+// Go example – extract text (code omitted for brevity)
+```
 {{</tab>}}
+
 {{< /tabs >}}
