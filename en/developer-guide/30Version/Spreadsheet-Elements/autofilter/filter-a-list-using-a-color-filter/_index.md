@@ -5,8 +5,8 @@ linktitle: "Add color filter"
 type: docs
 url: /autofilter/add-color-filter/
 aliases: [/filter-a-list-using-a-color-filter/,/autofilter/add-a-color-filter/]
-keywords: "Excel, color filter, Aspose.Cells Cloud, REST API, worksheet auto filter"
-description: "Learn how to add a color filter to an Excel worksheet using the Aspose.Cells Cloud REST API. Includes request details, a cURL example, and SDK code samples for multiple programming languages."
+keywords: "Excel, color filter, Aspose.Cells Cloud, REST API, auto filter, JWT authentication"
+description: "Learn how to apply a color filter to an Excel worksheet with Aspose.Cells Cloud API. Includes endpoint, parameters, cURL example, error handling, and SDK samples."
 weight: 65
 ---
 
@@ -18,19 +18,29 @@ This REST API adds a **color filter** to an Excel worksheet.
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/colorFilter
 ```
 
+**Prerequisites** – The endpoint requires OAuth 2.0 authentication. Obtain a JWT token as described in the Aspose.Cells Cloud authentication guide and pass it in the request header as `Authorization: Bearer <jwt token>`. The API version is **v3.0**, and the workbook must be stored in Aspose Cloud Storage (or another supported storage) before the call.
+
 The request parameters are:
 
-| Parameter Name | Type    | Location                     | Description                                                                 |
-|----------------|---------|------------------------------|-----------------------------------------------------------------------------|
-| name           | string  | path                         | The name of the Excel file.                                                 |
-| sheetName      | string  | path                         | The name of the worksheet that contains the data to be filtered.           |
-| range          | string  | query                        | The cell range to which the filter is applied (e.g., `A1:B10`).            |
-| fieldIndex     | integer | query                        | Zero‑based index of the column on which the color filter is applied.       |
-| colorFilter    | object  | body                         | JSON object that defines the foreground and background colors to filter.   |
-| matchBlanks    | boolean | query                        | Whether rows with blank cells should be included in the filter results.   |
-| refresh        | boolean | query                        | If `true`, the worksheet is refreshed after applying the filter.           |
-| folder         | string  | query                        | The folder in storage where the Excel file is located.                      |
-| storageName    | string  | query                        | The name of the storage service (e.g., Aspose Cloud Storage).              |
+| Parameter Name | Type    | Location | Description                                                                 |
+|----------------|---------|----------|-----------------------------------------------------------------------------|
+| name           | string  | path     | The name of the Excel file.                                                 |
+| sheetName      | string  | path     | The name of the worksheet that contains the data to be filtered.           |
+| range          | string  | query    | The cell range to which the filter is applied (e.g., `A1:B10`).            |
+| fieldIndex     | integer | query    | Zero‑based index of the column on which the color filter is applied.       |
+| colorFilter    | object  | body     | JSON object that defines the foreground and background colors to filter.   |
+| matchBlanks    | boolean | query    | Whether rows with blank cells should be included in the filter results.   |
+| refresh        | boolean | query    | If `true`, the worksheet is refreshed after applying the filter.           |
+| folder         | string  | query    | The folder in storage where the Excel file is located.                      |
+| storageName    | string  | query    | The name of the storage service (e.g., Aspose Cloud Storage).              |
+
+**`colorFilter` JSON schema**
+
+| Property          | Type   | Description                                                                    | Required |
+|-------------------|--------|--------------------------------------------------------------------------------|----------|
+| Pattern           | string | Filter pattern (e.g., `"Solid"`).                                             | Yes      |
+| ForegroundColor   | object | Defines the foreground color. Contains sub‑properties such as `Color`, `ColorIndex`, `IsShapeColor`, `ThemeColor`, and `Type`. | No |
+| BackgroundColor   | object | Defines the background color. Same sub‑properties as `ForegroundColor`.      | No |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetColorFilter) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -63,6 +73,24 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFi
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**Error handling** – The API may return standard error objects. Example responses:
+
+```json
+// 400 Bad Request – missing or invalid parameters
+{
+  "Code": 400,
+  "Message": "Invalid request parameters."
+}
+```
+
+```json
+// 401 Unauthorized – authentication failed or token missing
+{
+  "Code": 401,
+  "Message": "Authentication failed. Please provide a valid JWT token."
+}
+```
 
 ## Cloud SDK Family
 
