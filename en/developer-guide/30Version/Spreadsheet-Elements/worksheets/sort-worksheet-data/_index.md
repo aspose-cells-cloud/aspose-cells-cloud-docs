@@ -1,33 +1,51 @@
----
-title: "Sort data of range on an Excel worksheet"
-second_title: "Document"
-linktitle: "Sort"
-type: docs
-url: /worksheets/sort-data/
-aliases: [/sort-worksheet-data/]
-keywords: "Excel, Aspose.Cells Cloud, REST API, Sort range, Worksheet"
-description: "The Aspose.Cells Cloud REST API enables sorting data within a specified range on an Excel worksheet. SDKs are available for C#, Java, Python, PHP, Ruby, Go, Node.js, Swift, Android, and Perl."
-weight: 20
----
+---  
+title: "Sort Data of Range on an Excel Worksheet"  
+second_title: "Document"  
+linktitle: "Sort"  
+type: docs  
+url: /worksheets/sort-data/  
+aliases: [/sort-worksheet-data/]  
+keywords: "Aspose.Cells Cloud, Excel sort API, worksheet range sorting, REST API, dataSorter"  
+description: "Sort a specific range in an Excel worksheet using Aspose.Cells Cloud REST API. Includes endpoint, required parameters, authentication steps, error handling, and SDK examples."  
+weight: 20  
+---  
 
-This REST API **sorts worksheet range data**.
+The REST API sorts data within a specified range on an Excel worksheet.
 
-## REST API
+## REST API  
 
-```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/sort
+```shell
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/sort
 ```
 
-The request parameters are:
+**Authentication** – The request must include a valid Bearer token obtained through the Aspose Cloud OAuth 2.0 flow. Add the token to the `Authorization` header:
 
-| Parameter Name | Type   | Location                     | Description                                                            |
-|----------------|--------|------------------------------|------------------------------------------------------------------------|
-| name           | string | path                         | The workbook name.                                                     |
-| sheetName      | string | path                         | The worksheet name.                                                    |
-| cellArea       | string | query                        | The cell range to be sorted (e.g., `A5:A10`).                          |
-| dataSorter     | object | body                         | JSON object containing the sorting settings.                           |
-| folder         | string | query                        | The folder that contains the workbook.                                 |
-| storageName    | string | query                        | The name of the storage where the workbook is located.                 |
+```
+Authorization: Bearer <jwt token>
+```
+
+**Security** – Always use HTTPS; the example URLs have been updated accordingly.
+
+### Request parameters  
+
+| Parameter Name | Type   | Location | Required | Description |
+|----------------|--------|----------|----------|-------------|
+| name           | string | path     | Yes      | The workbook name. |
+| sheetName      | string | path     | Yes      | The worksheet name. |
+| cellArea       | string | query    | Yes      | The cell range to be sorted (e.g., `A5:A10`). |
+| dataSorter     | object | body     | Yes      | JSON object that defines the sorting settings (see schema below). |
+| folder         | string | query    | No       | The folder that contains the workbook. |
+| storageName    | string | query    | No       | The name of the storage where the workbook is located. |
+
+**`dataSorter` object schema** – The body must contain a JSON object with the following properties:
+
+- `CaseSensitive` *(boolean, required)* – Determines whether the sort is case‑sensitive.  
+- `HasHeaders` *(boolean, required)* – Indicates whether the range includes a header row.  
+- `KeyList` *(array, required)* – A collection of sorting keys. Each key object includes:  
+  - `Key` *(integer)* – Zero‑based column index.  
+  - `SortOrder` *(string)* – `"ascending"` or `"descending"`.  
+- `SortLeftToRight` *(boolean, required)* – If `true`, sorting proceeds left‑to‑right; otherwise top‑to‑bottom.  
+- *(Optional)* `CaseOrder`, `SortLeftToRight`, etc., may also be supplied according to the OpenAPI specification.
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetRangeSort) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -37,13 +55,13 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 
 {{< tab tabNum="1" >}}
 
-```bash
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/sort?cellArea=A5:A10" \
--X POST \
--d '{"CaseSensitive":false, "HasHeaders":false, "KeyList":[{"Key":0, "SortOrder":"descending"}], "SortLeftToRight":false}' \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+```shell
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/sort?cellArea=A5:A10" \
+  -X POST \
+  -d '{"CaseSensitive":false,"HasHeaders":false,"KeyList":[{"Key":0,"SortOrder":"descending"}],"SortLeftToRight":false}' \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
@@ -61,7 +79,18 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1
 
 {{< /tabs >}}
 
-## Cloud SDK Family
+**Error handling** – The API can return standard HTTP error codes. Typical responses include:
+
+| HTTP Status | Code | Message                              |
+|-------------|------|--------------------------------------|
+| 400         | 400  | Bad request – missing or invalid parameters. |
+| 401         | 401  | Unauthorized – invalid or absent JWT token. |
+| 404         | 404  | Not found – workbook or worksheet does not exist. |
+| 500         | 500  | Internal server error. |
+
+The response body follows the pattern `{ "Code": <status>, "Message": "<description>", "Status": "Error" }` for error cases.
+
+## Cloud SDK Family  
 
 Using an SDK is the fastest way to develop. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
