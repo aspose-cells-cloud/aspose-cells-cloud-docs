@@ -5,17 +5,38 @@ linktitle: "Clear"
 type: docs
 url: /oleobjects/clear/
 aliases: [/delete-all-oleobjects-from-excel-worksheet/]
-keywords: "Delete OLE objects, Excel worksheet, Aspose.Cells Cloud, REST API, SDK"
-description: "Learn how to delete all OLE objects from an Excel worksheet using Aspose.Cells Cloud REST API and SDKs for multiple programming languages."
+keywords: "Aspose.Cells Cloud, delete OLE objects, Excel API, REST API, worksheet OLE clear, cloud SDK"
+description: "Learn how to remove every OLE object from an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, HTTPS cURL example, SDK snippets, authentication steps, error handling, and FAQ."
 weight: 60
 ---
 
-This REST API deletes **all** OLE objects in a specified Excel worksheet.
+### Overview
+An **OLE (Object Linking and Embedding) object** is an embedded file such as a Word document, PowerPoint slide, image, or another workbook that resides inside an Excel worksheet.  
+The *Clear* operation removes **all** such OLE objects from a specified worksheet, leaving only the cell data. This is useful for cleaning up legacy spreadsheets or preparing a workbook for redistribution.
+
+## Prerequisites
+- Aspose.Cells Cloud SDK version v3.0 or later.  
+- A valid Aspose Cloud **OAuth 2.0 JWT** access token with the `Cells.ReadWrite` scope.  
+- HTTPS access to the Aspose Cloud service (`https://api.aspose.cloud`).
+
+## Authentication
+1. **Obtain a JWT token** by sending a `POST` request to the OAuth endpoint:  
+
+   ```bash
+   curl -X POST "https://api.aspose.cloud/connect/token" \
+        -H "Content-Type: application/x-www-form-urlencoded" \
+        -d "grant_type=client_credentials&client_id=<your_client_id>&client_secret=<your_client_secret>"
+   ```
+
+2. The response contains an access token (`access_token`).  
+3. Include the token in every API call using the `Authorization: Bearer <token>` header.  
+
+> **Note:** All requests must use **HTTPS**; the service does not accept plain HTTP.
 
 ## REST API
 
 ```bash
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects
 ```
 
 **Request parameters**
@@ -29,18 +50,18 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjec
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/OleObjects/DeleteWorksheetOleObjects) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
-You can use the **cURL** command‑line tool to call Aspose.Cells web services. The example below demonstrates how to delete all OLE objects with cURL.
+You can use the **cURL** command‑line tool to call Aspose.Cells web services. The example below shows how to delete all OLE objects **using** cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/Embedded_OleObject_Sample_Book1.xlsx/worksheets/Sheet1/oleobjects" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+curl -v "https://api.aspose.cloud/v3.0/cells/Embedded_OleObject_Sample_Book1.xlsx/worksheets/Sheet1/oleobjects" \
+     -X DELETE \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json" \
+     -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
@@ -57,6 +78,19 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Embedded_OleObject_Sample_Book1.xlsx
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### Response Codes
+| HTTP Status | Description | Example |
+|-------------|-------------|---------|
+| **200 OK** | The request succeeded. All OLE objects were removed (or none existed, because the operation is idempotent). | `{ "Code": 200, "Status": "OK" }` |
+| **400 Bad Request** | Missing or invalid parameters. | `{ "Code": 400, "Message": "Invalid worksheet name." }` |
+| **401 Unauthorized** | Authentication failed or token missing/expired. | `{ "Code": 401, "Message": "Access token is invalid." }` |
+| **404 Not Found** | The specified workbook or worksheet does not exist. | `{ "Code": 404, "Message": "Workbook not found." }` |
+| **500 Internal Server Error** | An unexpected server error occurred. | `{ "Code": 500, "Message": "Unexpected error." }` |
+
+### Version / Last Updated
+- **API version:** v3.0  
+- **Document last updated:** 2024‑11‑01  
 
 ## Cloud SDK Family
 
@@ -115,3 +149,16 @@ The following code examples demonstrate how to call the **DeleteWorksheetOleObje
 {{< /tab >}}
 
 {{< /tabs >}}
+
+## FAQ
+
+**Q:** *What does “clear all OLE objects” mean in an Excel worksheet?*  
+**A:** An OLE (Object Linking and Embedding) object is an embedded file such as a Word document, PowerPoint slide, image, or another workbook. Clearing all OLE objects removes every such embedded element from the specified worksheet, leaving only the cell data.
+
+**Q:** *How do I authenticate the DELETE request?*  
+**A:** First obtain a JWT access token via the Aspose Cloud OAuth 2.0 endpoint (`POST /connect/token`). Include the token in the `Authorization: Bearer <token>` header. The token must have the `Cells.ReadWrite` scope. All calls must be made over **HTTPS**.
+
+**Q:** *What response will I receive if the worksheet does not contain any OLE objects?*  
+**A:** The API returns HTTP 200 with a JSON body `{ "Code": 200, "Status": "OK" }`. The operation is idempotent, so deleting zero objects is considered successful.  
+
+---
