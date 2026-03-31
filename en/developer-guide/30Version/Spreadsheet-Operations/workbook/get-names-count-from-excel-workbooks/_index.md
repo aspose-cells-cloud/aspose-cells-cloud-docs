@@ -1,12 +1,12 @@
 ---
-title: "Get names from an Excel workbook"
+title: "Get Names from an Excel Workbook"
 second_title: "Document"
 linktitle: "Names"
 type: docs
 url: /get-names-from-an-excel-file/
 aliases: [/get-names-count-from-excel-workbooks/,/workbook/names/,/workbook/get/names/]
-keywords: "Aspose.Cells, Excel, workbook names, REST API, Cloud SDK"
-description: "Retrieve defined names from an Excel workbook using the Aspose.Cells Cloud REST API. Supports multiple SDKs (C#, Java, Python, Node.js, etc.) for rapid development."
+keywords: "Aspose.Cells Cloud, Get Workbook Names, Excel workbook names, REST API, Cloud SDK"
+description: "Retrieve all defined names from an Excel workbook using the Aspose.Cells Cloud REST API. Includes authentication guidance, cURL example, response schema, error handling, and SDK samples."
 weight: 120
 ---
 
@@ -15,9 +15,7 @@ This REST API retrieves the defined names from an Excel workbook.
 ## REST API
 
 ```bash
- 
-GET http://api.aspose.cloud/v3.0/cells/{name}/names
- 
+GET https://api.aspose.cloud/v3.0/cells/{name}/names
 ```
 
 The request parameters are:
@@ -28,29 +26,29 @@ The request parameters are:
 | folder         | string | query    | The folder that contains the workbook.   |
 | storageName    | string | query    | The name of the storage to use.          |
 
+**Authentication** – The API requires an OAuth2/JWT bearer token. Obtain a token from `https://api.aspose.cloud/connect/token` using your client‑id and client‑secret, then include the header `Authorization: Bearer <jwt token>` in every request.
+
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkbookNames) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services. The example below demonstrates how to call the Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services. The example below demonstrates how to call the Aspose.Cells Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
 curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/names" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
- 
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-```bash
+```json
 {
   "Status": "string",
   "Names": {
@@ -73,8 +71,22 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/names" \
     ]
   }
 }
- 
 ```
+
+*Response fields*  
+
+- **Status** *(string)* – Operation status message.  
+- **Names.link** *(object)* – Hyperlink information for the collection.  
+- **Names.Count** *(integer)* – Total number of defined names returned.  
+- **Names.NameList** *(array)* – List of name objects; each object contains a **link** object with navigation details.
+
+**Error handling** – The service may return the following HTTP status codes:  
+
+| Code | Meaning                     | Recommended action                              |
+|------|-----------------------------|-------------------------------------------------|
+| 401  | Unauthorized                | Verify that a valid JWT token is supplied.      |
+| 404  | Not Found                   | Check that the workbook name, folder, and storage are correct. |
+| 500  | Internal Server Error       | Retry later or contact Aspose support if the problem persists. |
 
 {{< /tab >}}
 
