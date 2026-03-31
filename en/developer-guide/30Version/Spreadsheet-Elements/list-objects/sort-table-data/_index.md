@@ -1,16 +1,17 @@
 ---
-title: "Sort list object data in an Excel worksheet"
+title: "Sort ListObject Data in an Excel Worksheet"
 second_title: "Document"
 linktitle: "Sort"
 type: docs
 url: /list-objects/sort-data/
 aliases: [/get-a-list-object-or-table-inside-the-worksheet/,/tables/sort-data/]
-keywords: "Aspose.Cells Cloud, Excel, list object sorting, REST API, sort data, worksheet"
-description: "Use Aspose.Cells Cloud REST API to sort data in a list object (table) within an Excel worksheet. The API is supported by SDKs for many languages, including C#, Java, Python, and more."
+keywords: "Aspose.Cells Cloud, Excel, list object, sort data, REST API, worksheet"
+description: "Learn how to sort ListObject (table) data in an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, sample cURL request, and SDK examples."
 weight: 40
 ---
 
-This REST API sorts a table's data in an Excel worksheet.
+This REST API sorts a table’s data in an Excel worksheet.  
+To use this operation, provide the workbook name, worksheet name, and the index of the target ListObject, together with a `dataSorter` JSON body that defines the sorting criteria.
 
 ## REST API
 
@@ -20,14 +21,14 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobject
 
 The request parameters are:
 
-| Parameter Name   | Type    | Path/Query String/HTTPBody | Description                     |
-|------------------|---------|----------------------------|---------------------------------|
-| name             | string  | path                       |                                 |
-| sheetName        | string  | path                       |                                 |
-| listObjectIndex  | integer | path                       |                                 |
-| dataSorter       |         | body                       |                                 |
-| folder           | string  | query                      |                                 |
-| storageName      | string  | query                      | storage name.                   |
+| Parameter Name   | Type    | Path/Query String/HTTPBody | Description |
+|------------------|---------|----------------------------|-------------|
+| name             | string  | path                       | The name of the Excel file stored in Aspose Cloud storage. |
+| sheetName        | string  | path                       | The name of the worksheet that contains the ListObject. |
+| listObjectIndex  | integer | path                       | Zero‑based index of the ListObject (table) within the worksheet. |
+| dataSorter       | object  | body                       | JSON object that specifies sorting options (e.g., `CaseSensitive`, `HasHeaders`, `KeyList`, `SortLeftToRight`). |
+| folder           | string  | query                      | Folder path in storage where the Excel file is located. |
+| storageName      | string  | query                      | Name of the Aspose Cloud storage. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObjectSortTable) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
