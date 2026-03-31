@@ -1,36 +1,57 @@
 ---
-title: "Autofit a column on an Excel worksheet"
+title: "Autofit Column in Excel with Aspose.Cells Cloud API – Quick Guide"
 second_title: "Document"
 linktitle: "Column"
 type: docs
 url: /worksheets/autofit/column/
 aliases: [/autofit-single-column-of-worksheet/]
-keywords: "Aspose.Cells Cloud, Excel autofit column, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
-description: "The Aspose.Cells Cloud REST API enables you to autofit columns in an Excel worksheet. This guide shows how to invoke the API via HTTP, cURL, and the available SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go)."
+keywords: "Aspose.Cells Cloud, autofit column, Excel API, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
+description: "Learn how to automatically resize a column (or column range) in an Excel worksheet using Aspose.Cells Cloud REST API. Includes cURL, SDK examples (C#, Java, Python, etc.) and full request/response details."
 weight: 10
 ---
 
-This REST API autofits a column (or a range of columns) on an Excel worksheet.
+This REST API automatically adjusts the width of a single column or a contiguous range of columns on an Excel worksheet.
+
+### Prerequisites
+- A valid Aspose Cloud subscription.  
+- The Excel file must be uploaded to Aspose Cloud storage.  
+- Correct `folder` and `storageName` values if the file is not in the root storage.
+
+### Authentication
+All requests to the Aspose.Cells Cloud service require a JWT access token.  
+
+1. **Obtain a token** – send a POST request to `https://api.aspose.cloud/connect/token` with your client ID and client secret.  
+2. **Include the token** – add the header `Authorization: Bearer <jwt token>` to every API call.  
+3. **Required scopes** – the token must contain the `Cells` scope to access worksheet operations.
 
 ## REST API
 
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitcolumns
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitcolumns
 ```
 
 ### Request parameters
 
-| Parameter Name | Type    | Location                     | Description |
-|----------------|---------|------------------------------|-------------|
-| name           | string  | path                         | The name of the Excel file. |
-| sheetName      | string  | path                         | The name of the worksheet. |
-| firstColumn    | integer | query                        | Zero‑based index of the first column to autofit. |
-| lastColumn     | integer | query                        | Zero‑based index of the last column to autofit. |
-| autoFitterOptions | object | body                         | Options that control the autofit behavior (see [AutoFitterOptions](/cells/auto-filter-options)). |
-| firstRow       | integer | query                        | Zero‑based index of the first row considered when calculating column width. |
-| lastRow        | integer | query                        | Zero‑based index of the last row considered when calculating column width. |
-| folder         | string  | query                        | The folder in storage where the file is located. |
-| storageName    | string  | query                        | The name of the storage service. |
+| Parameter Name      | Type    | Location | Description |
+|---------------------|---------|----------|-------------|
+| name                | string  | path     | The name of the Excel file. |
+| sheetName           | string  | path     | The name of the worksheet. |
+| firstColumn         | integer | query    | Zero‑based index of the first column to autofit. |
+| lastColumn          | integer | query    | Zero‑based index of the last column to autofit. |
+| autoFitterOptions  | object  | body     | Options that control the autofit behavior (see [AutoFitterOptions](/cells/auto-filter-options)). |
+| firstRow            | integer | query    | Zero‑based index of the first row considered when calculating column width. |
+| lastRow             | integer | query    | Zero‑based index of the last row considered when calculating column width. |
+| folder              | string  | query    | The folder in storage where the file is located. |
+| storageName         | string  | query    | The name of the storage service. |
+
+### Error responses
+
+| HTTP Status | Meaning                     | Example JSON body |
+|-------------|----------------------------|-------------------|
+| 400         | Invalid parameter(s)      | `{"Code":400,"Message":"Invalid parameter 'firstColumn'."}` |
+| 401         | Unauthorized – missing or invalid JWT token | `{"Code":401,"Message":"Authorization failed."}` |
+| 404         | File or worksheet not found | `{"Code":404,"Message":"Worksheet 'Sheet1' not found."}` |
+| 500         | Internal server error      | `{"Code":500,"Message":"An unexpected error occurred."}` |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostAutofitWorksheetColumns) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
@@ -41,7 +62,7 @@ You can use the **cURL** command‑line tool to call Aspose.Cells Cloud services
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/sampleAutoFit.xlsx/worksheets/Sheet1/autofitcolumns?firstColumn=2&lastColumn=2" \
+curl -v "https://api.aspose.cloud/v3.0/cells/sampleAutoFit.xlsx/worksheets/Sheet1/autofitcolumns?firstColumn=2&lastColumn=2" \
   -X POST \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
