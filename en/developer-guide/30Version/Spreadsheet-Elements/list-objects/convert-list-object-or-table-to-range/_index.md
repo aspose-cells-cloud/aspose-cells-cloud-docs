@@ -1,5 +1,5 @@
 ---
-title: "Convert list object to range in an Excel worksheet"
+title: "Convert List Object to Range – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Conversion"
 type: docs
@@ -7,32 +7,44 @@ url: /list-objects/to-range/
 aliases:
   - /convert-list-object-or-table-to-range/
   - /tables/to-range/
-keywords: "Excel, Aspose Cells Cloud, REST API, list object, table, convert to range, worksheet"
-description: "The Aspose.Cells Cloud REST API enables conversion of a list object (table) to a range within an Excel worksheet and provides SDKs for multiple programming languages."
+keywords: "Aspose Cells API, convert list object to range, Excel REST API"
+description: "Learn how to convert an Excel ListObject (table) to a Range using Aspose.Cells Cloud REST API. Includes request syntax, parameters, sample cURL, response schema, authentication details, error codes, and SDK examples."
 weight: 30
 ---
 
-This REST API converts a table or list object to a range in an Excel worksheet.
+This REST API converts a **ListObject (table)** to a **Range** within an Excel worksheet.
 
 ## REST API
 
-```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/ConvertToRange
+### Prerequisites
+- The workbook must already exist in the selected storage.  
+- The `listObjectIndex` must refer to a valid, zero‑based ListObject in the worksheet.  
+- Use API version **v3.0** (released 2024‑03).
+
+### Authentication
+A valid **JWT access token** with the `Cells` scope is required.  
+Obtain the token via the Aspose Cloud OAuth flow (see the [Authentication guide](https://docs.aspose.cloud/authorization/)). Include the token in the `Authorization` header:
+
+```http
+Authorization: Bearer <your‑jwt‑token>
 ```
 
-The request parameters are:
+### Request
 
-| Parameter Name   | Type   | Path / Query / Body | Description                                                            |
-|------------------|--------|---------------------|------------------------------------------------------------------------|
-| **name**         | string | path                | The name of the Excel file.                                            |
-| **sheetName**    | string | path                | The name of the worksheet that contains the list object.              |
-| **listObjectIndex** | integer | path            | Zero‑based index of the list object (table) to be converted.          |
-| **folder**       | string | query               | Optional folder path where the file is stored.                         |
-| **storageName**  | string | query               | Optional name of the storage service.                                  |
+```bash
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/ConvertToRange
+```
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObjectConvertToRange) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+#### Parameters
+| Name | Type | Location | Required | Default | Description |
+|------|------|----------|----------|---------|-------------|
+| **name** | string | path | Yes | – | The name of the Excel file. |
+| **sheetName** | string | path | Yes | – | The name of the worksheet that contains the ListObject. |
+| **listObjectIndex** | integer | path | Yes | – | Zero‑based index of the ListObject (table) to be converted. |
+| **folder** | string | query | No | – | Folder path where the file is stored. |
+| **storageName** | string | query | No | – | Name of the storage service. |
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+### cURL Example (Request)
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
@@ -40,20 +52,63 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 
 ```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listobjects/0/ConvertToRange" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <your‑jwt‑token>"
 ```
 
 {{< /tab >}}
+
+#### Response Schema
+
+The API returns a **200 OK** response with details of the newly created range.
+
+```json
+{
+  "Code": 200,
+  "Status": "OK",
+  "RangeName": "A1:C10",
+  "Address": "Sheet1!A1:C10",
+  "FirstRow": 0,
+  "FirstColumn": 0,
+  "RowCount": 10,
+  "ColumnCount": 3
+}
+```
+
+| Field | Type | Description |
+|-------|------|-------------|
+| **Code** | integer | HTTP‑like status code (200 indicates success). |
+| **Status** | string | Textual status message. |
+| **RangeName** | string | The name assigned to the created range. |
+| **Address** | string | Full address of the range, including sheet name. |
+| **FirstRow** | integer | Zero‑based index of the first row in the range. |
+| **FirstColumn** | integer | Zero‑based index of the first column in the range. |
+| **RowCount** | integer | Number of rows in the range. |
+| **ColumnCount** | integer | Number of columns in the range. |
+
+### Error Codes
+
+| Code | Meaning | When it occurs |
+|------|---------|----------------|
+| 400 | Bad Request | The `listObjectIndex` is out of range or required parameters are missing. |
+| 401 | Unauthorized | Missing or invalid JWT token. |
+| 404 | Not Found | The specified workbook, worksheet, or ListObject does not exist. |
+| 500 | Internal Server Error | An unexpected server‑side error occurred. |
 
 {{< tab tabNum="12" >}}
 
 ```json
 {
   "Code": 200,
-  "Status": "OK"
+  "Status": "OK",
+  "RangeName": "A1:C10",
+  "Address": "Sheet1!A1:C10",
+  "FirstRow": 0,
+  "FirstColumn": 0,
+  "RowCount": 10,
+  "ColumnCount": 3
 }
 ```
 
@@ -118,3 +173,21 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{< /tab >}}
 
 {{< /tabs >}}
+
+## FAQ
+
+**Q: How can I convert a ListObject to a Range using Aspose.Cells Cloud?**  
+A: Call the `POST /cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/ConvertToRange` endpoint with the workbook name, worksheet name, and zero‑based ListObject index in the URL. Include a valid JWT token in the `Authorization` header. The response contains the details of the created range.
+
+**Q: What authentication is required for the ConvertToRange call?**  
+A: A JWT access token that includes the `Cells` scope. Obtain the token via the Aspose Cloud OAuth flow and pass it in the `Authorization: Bearer <token>` header.
+
+**Q: What error codes can I expect if the ListObject index is invalid?**  
+A: The API returns **400 Bad Request** for an out‑of‑range index, **401 Unauthorized** for missing or invalid tokens, and **404 Not Found** if the workbook or worksheet does not exist.
+
+## Glossary
+
+- **ListObject** – An Excel table that can be addressed by a zero‑based index.  
+- **Range** – A contiguous block of cells identified by its address (e.g., `A1:C10`).  
+
+---
