@@ -1,51 +1,46 @@
----
-title: "Add  watermark into the Excel files"
-second_title: "Document"
-linktitle: "Add Watermark into Excel Files"
-type: docs
-url: /add-watermark-into-excel-files/
-aliases: [ /watermark/]
-keywords: "watermark, Excel, Aspose.Cells Cloud, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
-description: "Use Aspose.Cells Cloud REST API to add a watermark to Excel files. The API is available through multiple SDKs for languages such as C#, Java, PHP, Ruby, Node.js, Python, Perl, and Go."
-weight: 39
----
+---  
+title: "Add watermark to Excel files"  
+second_title: "Document"  
+linktitle: "Add Watermark to Excel Files"  
+type: docs  
+url: /add-watermark-into-excel-files/  
+aliases: [ /watermark/ ]  
+keywords: "add watermark to Excel, Aspose.Cells Cloud, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"  
+description: "Learn how to add a text watermark to Excel workbooks using Aspose.Cells Cloud REST API (v3.0). Includes cURL example, required parameters, and response details."  
+weight: 39  
+---  
 
 This REST API adds a **watermark** to Excel files.
 
-## REST API
+## REST API  
 
 ```bash
- 
-POST http://api.aspose.cloud/v3.0/cells/watermark
- 
-```
+POST https://api.aspose.cloud/v3.0/cells/watermark
+```  
 
 The request parameters are:
 
-| Parameter Name | Type   | Location                     | Description                                             |
-|----------------|--------|------------------------------|---------------------------------------------------------|
-| file           | file   | formData (multipart body)   | The Excel file to which the watermark will be applied. |
-| text           | string | query                        | The watermark text to display.                          |
-| color          | string | query                        | The color of the watermark in ARGB hex format (e.g., `004433ff`). |
+| Parameter Name | Type   | Location                     | Description                                                                 |
+|----------------|--------|------------------------------|-----------------------------------------------------------------------------|
+| `file`         | file   | formData (multipart body)   | The Excel file to which the watermark will be applied.                     |
+| `text`         | string | query                        | The watermark text to display.                                              |
+| `color`        | string | query                        | The watermark colour in ARGB hex format (e.g., `004433ff`).                |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostWatermark) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
+You can use the **cURL** command‑line tool to call Aspose.Cells web services. The example below shows a complete request, including the required authentication header. Replace `<your‑jwt‑token>` with a valid JWT access token obtained from the Aspose authentication endpoint.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
- 
-curl -v "http://api.aspose.cloud/v3.0/cells/watermark?text=aspose.cells.cloud&color=004433ff" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx' 
-
+curl -v "https://api.aspose.cloud/v3.0/cells/watermark?text=aspose.cells.cloud&color=004433ff" \
+  -X POST \
+  -H "Content-Type: multipart/form-data" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <your-jwt-token>" \
+  -F "file=@Sample.xlsx"
 ```
 
 {{< /tab >}}
@@ -54,21 +49,21 @@ curl -v "http://api.aspose.cloud/v3.0/cells/watermark?text=aspose.cells.cloud&co
 
 ```json
 {
-    "Files": [
-        {
-            "Filename": "xxxxx",
-            "FileSize": 274022,
-            "FileContent": "-----Base64String--------"
-        },
-        {
-            "Filename": "xxxxx",
-            "FileSize": 274022,
-            "FileContent": "-----Base64String--------"
-        }
-    ]
+  "Files": [
+    {
+      "Filename": "Sample_watermarked.xlsx",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    }
+  ]
 }
- 
 ```
+
+The JSON response contains a **Files** array. For each file object:
+
+* **Filename** – name of the processed workbook.  
+* **FileSize** – size of the file in bytes.  
+* **FileContent** – Base64‑encoded content of the watermarked Excel file; decode it to obtain the actual file.
 
 {{< /tab >}}
 
@@ -131,4 +126,3 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
-
