@@ -1,54 +1,54 @@
----
-title: "Delete multiple Excel worksheets"
-second_title: "Document"
-linktitle: "Multiple worksheets"
-type: docs
-url: /worksheets/delete-multiple/
-aliases: [/delete-excel-worksheets/]
-keywords: "Aspose.Cells Cloud, delete multiple worksheets, Excel workbook, REST API, spreadsheet"
-description: "Learn how to delete multiple worksheets from an Excel workbook using the Aspose.Cells Cloud REST API. Includes cURL examples and SDK code snippets for various programming languages."
-weight: 20
----
+---  
+title: "Delete Multiple Excel Worksheets"  
+second_title: "Document"  
+linktitle: "Multiple worksheets"  
+type: docs  
+url: /worksheets/delete-multiple/  
+aliases: [/delete-excel-worksheets/]  
+keywords: "Aspose.Cells Cloud, delete multiple worksheets, Excel workbook, REST API, v3.0"  
+description: "Learn how to delete several worksheets from an Excel workbook using the Aspose.Cells Cloud REST API (v3.0). Includes a secure HTTPS endpoint, required parameters, a corrected cURL example, and SDK snippets for multiple programming languages."  
+weight: 20  
+---  
 
 This REST API deletes multiple worksheets from a workbook.
 
-## REST API
+## REST API  
 
 ```bash
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets
 ```
 
-The request parameters are:
+**The API accepts the following parameters:**  
 
-| Parameter Name | Type   | Location                     | Description                                                |
-|----------------|--------|------------------------------|------------------------------------------------------------|
-| name           | string | path                         | The name of the Excel file.                                |
-| matchCondition | object | body                         | Conditions that specify which worksheets to delete.       |
-| folder         | string | query                        | Folder path in storage where the file is located.         |
-| storageName    | string | query                        | Name of the storage service.                               |
+| Parameter Name | Type     | Location | Description                                          |
+|----------------|----------|----------|------------------------------------------------------|
+| name           | string   | path     | The name of the Excel file.                          |
+| matchCondition | object   | body     | A `MatchConditionRequest` object that specifies which worksheets to delete. |
+| folder         | string   | query    | Folder path in storage where the file is located.    |
+| storageName    | string   | query    | Name of the storage service.                         |
 
 **MatchConditionRequest Properties**
 
-| Name                | Type     | Description                                                   | Notes      |
-|---------------------|----------|---------------------------------------------------------------|------------|
-| RegexPattern        | string   | Regular expression to match worksheet names.                  | [optional] |
-| FullMatchConditions| string[] | Exact worksheet names to be deleted.                          | [optional] |
+| Name                | Type     | Description                                 | Notes      |
+|---------------------|----------|---------------------------------------------|------------|
+| RegexPattern        | string   | Regular expression to match worksheet names.| optional   |
+| FullMatchConditions| string[] | Exact worksheet names to be deleted.        | optional   |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheets) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL. **A valid JWT token is required in the `Authorization` header.**
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets?folder=Temp" \
--X DELETE \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--D "{\"FullMatchConditions\":[\"Sheet1\",\"Sheet2\",\"Sheet3\"]}"
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets?folder=Temp" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt_token>" \
+  -d '{"FullMatchConditions":["Sheet1","Sheet2","Sheet3"]}'
 ```
 
 {{< /tab >}}
@@ -62,11 +62,21 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets?folder=Temp" \
 }
 ```
 
+The request can also return common error responses, for example:
+
+| HTTP Status | Meaning                     | Sample Payload |
+|-------------|----------------------------|----------------|
+| 400         | Bad request – invalid JSON or parameters | `{"Code":400,"Message":"Invalid request payload."}` |
+| 401         | Unauthorized – missing or invalid JWT token | `{"Code":401,"Message":"Authentication failed."}` |
+| 403         | Forbidden – insufficient permissions | `{"Code":403,"Message":"Access denied."}` |
+| 404         | Not found – file or worksheet does not exist | `{"Code":404,"Message":"Resource not found."}` |
+| 500         | Internal server error | `{"Code":500,"Message":"An unexpected error occurred."}` |
+
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK Family
+## Cloud SDK Family  
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
