@@ -1,16 +1,19 @@
 ---
-title: "Working with Excel charts"
+title: "Working with Excel Charts"
 second_title: "Document"
 linktitle: "Charts"
 type: docs
 url: /charts/
 aliases: [/working-with-charts/]
-keywords: "Excel, Charts, Cells Cloud API, REST API, Spreadsheet"
-description: "The Cells Cloud API for Excel enables you to retrieve, add, update, delete, and convert charts within worksheets."
+keywords: "Aspose Cells, Excel chart API, REST chart operations, Cloud spreadsheet"
+description: "Learn how to manage Excel charts with Aspose.Cells Cloud API. Step‑by‑step guides, code samples, and error handling for retrieving, adding, updating, deleting, and converting charts to images."
 weight: 100
 ---
 
 ## Working with Charts on an Excel file
+
+Excel charts are visual representations of data that help users quickly understand trends and patterns.  
+The Aspose.Cells Cloud API enables developers to programmatically work with these charts inside Excel workbooks stored in the cloud. With the API you can retrieve existing charts, add new ones, modify their properties (such as titles, axes, and legends), delete unwanted charts, and convert charts to image formats for reporting or downstream processing. The following links provide direct access to the detailed operation pages for each supported chart‑related action.
 
 - [Get Chart from a Worksheet](/cells/get-chart-from-a-worksheet/)
 - [Add a Chart in a Worksheet](/cells/add-a-chart-in-a-worksheet/)
@@ -27,7 +30,7 @@ weight: 100
 - [Set Chart Title in Excel Worksheet](/cells/set-chart-title-in-excel-worksheet/)
 - [Update Chart Title in Excel Worksheet](/cells/update-chart-title-in-excel-worksheet/)
 - [Delete Chart Title in a Worksheet](/cells/delete-chart-title-in-a-worksheet/)
-- [Update Chart Properties](/cells/charts/propreties/update/)
+- [Update Chart Properties](/cells/charts/properties/update/)
 - [Get Chart Category Axis](/cells/charts/category-axis/get/)
 - [Get Chart Value Axis](/cells/charts/value-axis/get/)
 - [Get Chart Second Category Axis](/cells/charts/second-category-axis/get/)
