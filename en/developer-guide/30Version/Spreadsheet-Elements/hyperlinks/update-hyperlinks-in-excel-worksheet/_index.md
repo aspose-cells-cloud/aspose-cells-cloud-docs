@@ -1,14 +1,14 @@
 ---
-title: "Update"
+title: "Update a Hyperlink in an Excel Worksheet"
 type: docs
 url: /hyperlinks/update/
 aliases: [/update-hyperlinks-in-excel-worksheet/]
-keywords: "update hyperlink, Excel worksheet, Aspose.Cells Cloud, REST API, SDK"
-description: "Use Aspose.Cells Cloud REST API to update a hyperlink in an Excel worksheet. SDKs are available for multiple languages including C#, Java, Python, and more."
+keywords: "Aspose.Cells Cloud, update hyperlink API, Excel hyperlink REST, v3.0, SDK example"
+description: "Learn how to update a hyperlink in an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, request‑body schema, cURL sample, and SDK code snippets for C#, Java, Python, and more."
 weight: 30
 ---
 
-This REST API updates a hyperlink in an Excel worksheet by its index.
+This REST API updates a hyperlink in an Excel worksheet identified by its zero‑based index.
 
 ## REST API
 
@@ -18,16 +18,28 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks
 
 The request parameters are:
 
-| Parameter Name   | Type   | Location | Description |
-| ---------------- | ------ | -------- | ----------- |
-| name             | string | path     | Name of the Excel file. |
-| sheetName        | string | path     | Name of the worksheet. |
-| hyperlinkIndex   | integer| path     | Zero‑based index of the hyperlink to be updated. |
-| hyperlink        | object | body     | Hyperlink object containing the new values. |
-| folder           | string | query    | Folder path where the workbook is stored. |
-| storageName      | string | query    | Name of the storage service. |
+| Parameter Name | Type    | Location | Description                                                                 |
+|----------------|---------|----------|-----------------------------------------------------------------------------|
+| name           | string  | path     | Name of the Excel file.                                                     |
+| sheetName      | string  | path     | Name of the worksheet.                                                      |
+| hyperlinkIndex | integer | path     | Zero‑based index of the hyperlink to be updated.                            |
+| hyperlink      | object  | body     | **Hyperlink** object that contains the new values for the hyperlink.       |
+| folder         | string  | query    | Folder path where the workbook is stored.                                   |
+| storageName    | string  | query    | Name of the storage service.                                                |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Hypelinks/PostWorksheetHyperlink) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
+**Authentication** – Include an `Authorization: Bearer <jwt token>` header obtained via the OAuth2 flow. The API version used throughout this page is **v3.0**.
+
+**Request body schema** – The `hyperlink` object may contain the following fields:
+
+| Field        | Type    | Required | Description                                                    |
+|--------------|---------|----------|----------------------------------------------------------------|
+| Address      | string  | yes      | Target URL of the hyperlink.                                   |
+| Area         | object  | yes      | Defines the cell range where the hyperlink is placed (`StartRow`, `StartColumn`, `EndRow`, `EndColumn`). |
+| ScreenTip    | string  | no       | Text displayed when the mouse hovers over the hyperlink.      |
+| TextToDisplay| string  | no       | Text shown in the cell for the hyperlink.                      |
+| link         | object  | no       | Hypermedia links (`Href`, `Rel`, `Title`, `Type`).             |
+
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Hyperlinks/PostWorksheetHyperlink) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
@@ -41,7 +53,27 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/hyperli
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
   -H "Authorization: Bearer <jwt token>" \
-  -d '{ "Hyperlink": { "Address": "https://www.msnbc.com/", "Area": { "EndColumn": 6, "EndRow": 1, "StartColumn": 6, "StartRow": 1 }, "ScreenTip": null, "TextToDisplay": "https://www.msnbc.com/", "link": { "Href": "/test.xlsx/worksheets/Sheet1/hyperlinks/4", "Rel": "self", "Title": null, "Type": null } }, "Code": 200, "Status": "OK" }'
+  -d '{
+        "Hyperlink": {
+          "Address": "https://www.msnbc.com/",
+          "Area": {
+            "StartRow": 1,
+            "StartColumn": 6,
+            "EndRow": 1,
+            "EndColumn": 6
+          },
+          "ScreenTip": null,
+          "TextToDisplay": "https://www.msnbc.com/",
+          "link": {
+            "Href": "/test.xlsx/worksheets/Sheet1/hyperlinks/4",
+            "Rel": "self",
+            "Title": null,
+            "Type": null
+          }
+        },
+        "Code": 200,
+        "Status": "OK"
+      }'
 ```
 
 {{< /tab >}}
