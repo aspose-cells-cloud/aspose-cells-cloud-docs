@@ -1,32 +1,32 @@
----
-title: "Unmerge merged cells of the range"
-second_title: "Document"
-linktitle: "Unmerge"
-type: docs
-url: /ranges/unmerge/
-aliases: [/unmerge-merged-cells-of-the-range/]
-keywords: "Aspose.Cells Cloud, Excel unmerge cells, REST API, spreadsheet range, unmerge merged cells"
-description: "The Aspose.Cells Cloud REST API allows you to unmerge merged cells within a specified range of an Excel worksheet. SDKs are available for many languages, including C#, Java, Python, Node.js, and more."
-weight: 20
----
+---  
+title: "Unmerge Cells in a Range"  
+second_title: "Document"  
+linktitle: "Unmerge"  
+type: docs  
+url: /ranges/unmerge/  
+aliases: [/unmerge-merged-cells-of-the-range/]  
+keywords: "Aspose.Cells Cloud, unmerge cells, Excel API, worksheet range, REST API"  
+description: "Learn how to use the Aspose.Cells Cloud API to unmerge merged cells in a specific worksheet range. Includes endpoint, parameters, sample cURL, and SDK code snippets for C#, Java, Python, and more."  
+weight: 20  
+---  
 
 This REST API unmerges merged cells within a specified range on an Excel worksheet.
 
-## REST API
+## REST API  
 
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/unmerge
-```
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/unmerge
+```  
 
 The request parameters are:
 
-| Parameter Name | Type   | Location                     | Description                                 |
-|----------------|--------|------------------------------|---------------------------------------------|
-| name           | string | path                         | Workbook name                               |
-| sheetName      | string | path                         | Worksheet name                              |
-| range          | object | body                         | Range object that defines the cells to unmerge |
-| folder         | string | query                        | Folder that contains the workbook           |
-| storageName    | string | query                        | Storage name                                |
+| Parameter Name | Type   | Location | Required | Description                                   |
+|----------------|--------|----------|----------|-----------------------------------------------|
+| name           | string | path     | Yes      | Workbook name.                                |
+| sheetName      | string | path     | Yes      | Worksheet name.                               |
+| range          | object | body     | Yes      | Range object that defines the cells to unmerge. |
+| folder         | string | query    | No       | Folder that contains the workbook.            |
+| storageName    | string | query    | No       | Storage name.                                 |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeUnmerge) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -38,11 +38,21 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 
 ```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/unmerge" \
--X POST \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--d "{ \"ColumnCount\": 7, \"ColumnWidth\": 19, \"FirstColumn\": 0, \"FirstRow\": 9, \"Name\": \"string\", \"RefersTo\": \"string\", \"RowCount\": 1, \"RowHeight\": 15, \"Worksheet\": \"Sheet1\"}"
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{
+    "ColumnCount": 7,
+    "ColumnWidth": 19,
+    "FirstColumn": 0,
+    "FirstRow": 9,
+    "Name": "string",
+    "RefersTo": "string",
+    "RowCount": 1,
+    "RowHeight": 15,
+    "Worksheet": "Sheet1"
+}'
 ```
 
 {{< /tab >}}
@@ -60,7 +70,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/
 
 {{< /tabs >}}
 
-## Cloud SDK Family
+## Cloud SDK Family  
 
 Using an SDK is the best way to accelerate development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
