@@ -5,12 +5,14 @@ linktitle: "Add"
 type: docs
 url: /worksheets/background/add/
 aliases: [/set-background-or-watermark-for-excel-worksheet/]
-keywords: "Aspose.Cells Cloud, Excel worksheet background, add worksheet background image, REST API, SDK"
-description: "Learn how to add a background image to an Excel worksheet using Aspose.Cells Cloud REST API and SDKs. Includes request details, cURL example, and code samples for multiple programming languages."
+keywords: "Aspose.Cells, Excel, worksheet background, REST API, SDK, add image"
+description: "Learn how to add a background image (PNG, JPEG, BMP) to an Excel worksheet using Aspose.Cells Cloud REST API. Includes endpoint, required parameters, authentication steps, cURL example, and SDK code samples."
 weight: 180
 ---
 
 This REST API adds a background image to a worksheet.
+
+> **Prerequisite:** The workbook must already exist in Aspose Cloud storage, and you need a valid JWT access token. Obtain a token through the OAuth2 `/connect/token` endpoint (see the authentication guide).
 
 ## REST API
 
@@ -20,13 +22,18 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/background
 
 The request parameters are:
 
-| Parameter Name | Type   | Location                     | Description                                    |
-|----------------|--------|------------------------------|------------------------------------------------|
-| name           | string | path                         | Name of the Excel workbook.                    |
-| sheetName      | string | path                         | Name of the worksheet to which the image is applied. |
-| PNG            | file   | body                         | Binary image file (PNG, JPEG, etc.) to set as background. |
-| folder         | string | query                        | Folder in storage where the workbook is located. |
-| storageName    | string | query                        | Name of the Aspose Cloud storage.              |
+| Parameter name | Type   | Location | Description |
+|----------------|--------|----------|-------------|
+| name           | string | path     | Name of the Excel workbook. |
+| sheetName      | string | path     | Name of the worksheet to which the image is applied. |
+| imageFile      | file   | body     | Binary image file (PNG, JPEG, BMP, etc.) to set as background. |
+| folder         | string | query    | Folder in storage where the workbook is located. |
+| storageName    | string | query    | Name of the Aspose Cloud storage. |
+
+**Supported formats & limits**  
+- Accepted image extensions: **PNG, JPEG, BMP, GIF**.  
+- Maximum file size: **5 MB**.  
+- The image is tiled to fill the entire worksheet background.
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PutWorksheetBackground) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -37,12 +44,12 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/background" \
--X PUT \
--T Creative.jpg \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/background" \
+  -X PUT \
+  -F "imageFile=@Creative.jpg" \
+  -H "Content-Type: multipart/form-data" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
@@ -55,6 +62,15 @@ curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/back
   "Status": "OK"
 }
 ```
+
+*Possible error responses*  
+
+| HTTP Code | Description |
+|-----------|-------------|
+| 400 | Bad request – missing or invalid parameters. |
+| 401 | Unauthorized – invalid or expired JWT token. |
+| 404 | Not found – workbook or worksheet does not exist. |
+| 500 | Internal server error – unexpected condition on the server. |
 
 {{< /tab >}}
 
