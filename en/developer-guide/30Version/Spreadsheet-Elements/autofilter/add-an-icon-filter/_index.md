@@ -1,37 +1,37 @@
 ---
-title: "Add an icon filter in an Excel worksheet"
+title: "Add an Icon Filter to an Excel Worksheet"
 second_title: "Document"
 linktitle: "Add icon filter"
 type: docs
 url: /autofilter/add-icon-filter/
 aliases: [/add-an-icon-filter/,/autofilter/add-an-icon-filter/]
-keywords: "icon filter, Excel, Aspose.Cells Cloud, REST API, worksheet auto filter"
-description: "Learn how to add an icon filter to an Excel worksheet using the Aspose.Cells Cloud REST API. Includes request syntax, parameters, cURL example, and SDK code samples."
+keywords: "Aspose.Cells Cloud, Excel icon filter, REST API, auto filter, spreadsheet automation, icon set, HTTP PUT"
+description: "Learn how to add an icon filter to an Excel worksheet using Aspose.Cells Cloud REST API. Includes HTTPS endpoint, required parameters, cURL example, SDK code samples, and error handling."
 weight: 65
 ---
 
-This REST API adds an **icon filter** to an Excel worksheet.
+This REST API adds an **icon filter** to an Excel worksheet using the **Aspose.Cells Cloud REST API**.
 
 ## REST API
 
 ```bash
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/iconFilter
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/iconFilter
 ```
 
-The request parameters are:
+The request parameters are listed below:
 
-| Parameter Name | Type    | Location                     | Description                                                                                                                      |
-|----------------|---------|------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| name           | string  | Path                         | The workbook name.                                                                                                               |
-| sheetName      | string  | Path                         | The worksheet name.                                                                                                              |
-| range          | string  | Query                        | The cell range (e.g., `A1:B1`) to which the filter will be applied.                                                             |
-| fieldIndex     | integer | Query                        | Zero‑based index of the column that the filter targets.                                                                         |
-| iconSetType    | string  | Query                        | The icon set to use. Allowed values: `Arrows3`, `ArrowsGray3`, `Flags3`, `Signs3`, `Symbols3`, `Symbols32`, `TrafficLights31`, `TrafficLights32`, `Arrows4`, `ArrowsGray4`, `Rating4`, `RedToBlack4`, `TrafficLights4`, `Arrows5`, `ArrowsGray5`, `Quarters5`, `Rating5`, `Stars3`, `Boxes5`, `Triangles3`, `None`, `CustomSet`, `Smilies3`, `ColorSmilies3`. |
-| iconId         | integer | Query                        | The identifier of the specific icon within the selected icon set.                                                               |
-| matchBlanks    | string  | Query                        | Determines whether blank cells are included (`true` or `false`).                                                               |
-| refresh        | string  | Query                        | Indicates whether the filter should be refreshed after applying (`true` or `false`).                                          |
-| folder         | string  | Query                        | The folder that contains the original workbook.                                                                                 |
-| storageName    | string  | Query                        | The name of the storage where the workbook resides.                                                                              |
+| Parameter Name | Type    | Location | Description |
+|----------------|---------|----------|-------------|
+| name           | string  | Path     | The workbook name. |
+| sheetName      | string  | Path     | The worksheet name. |
+| range          | string  | Query    | The cell range (e.g., `A1:B1`) to which the filter will be applied. |
+| fieldIndex     | integer | Query    | Zero‑based index of the column that the filter targets. |
+| iconSetType    | string  | Query    | The icon set to use. Allowed values: `Arrows3`, `ArrowsGray3`, `Flags3`, `Signs3`, `Symbols3`, `Symbols32`, `TrafficLights31`, `TrafficLights32`, `Arrows4`, `ArrowsGray4`, `Rating4`, `RedToBlack4`, `TrafficLights4`, `Arrows5`, `ArrowsGray5`, `Quarters5`, `Rating5`, `Stars3`, `Boxes5`, `Triangles3`, `None`, `CustomSet`, `Smilies3`, `ColorSmilies3`. |
+| iconId         | integer | Query    | The identifier of the specific icon within the selected icon set. |
+| matchBlanks    | boolean | Query    | Determines whether blank cells are included (`true` or `false`). |
+| refresh        | boolean | Query    | Indicates whether the filter should be refreshed after applying (`true` or `false`). |
+| folder         | string  | Query    | The folder that contains the original workbook. |
+| storageName    | string  | Query    | The name of the storage where the workbook resides. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetIconFilter) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -42,7 +42,7 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/iconFilter?range=A1:B1&fieldIndex=0&iconSetType=ArrowsGray3&iconId=1" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/iconFilter?range=A1:B1&fieldIndex=0&iconSetType=ArrowsGray3&iconId=1" \
   -X PUT \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
