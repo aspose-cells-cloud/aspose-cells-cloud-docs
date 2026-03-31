@@ -1,16 +1,25 @@
----
-title: "Merge an Excel Workbooks into other Excel file"
-second_title: "Document"
-linktitle: "Merge an Excel file into the Excel file"
-type: docs
-url: /merge-an-excel-file-into-the-excel-file/
-aliases: [/merge-excel-workbooks/, /workbook/merge/]
-keywords: "Excel workbook merge, Aspose.Cells Cloud, REST API, spreadsheet merging, cloud SDK"
-description: "The Aspose.Cells Cloud REST API enables merging one Excel workbook into another. SDKs are available for multiple languages such as Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift."
-weight: 50
----
+---  
+title: "Merge an Excel Workbook into Another Workbook"  
+second_title: "Document"  
+linktitle: "Merge an Excel workbook into another workbook"  
+type: docs  
+url: /merge-an-excel-file-into-the-excel-file/  
+aliases: [/merge-excel-workbooks/, /workbook/merge/]  
+keywords: "Excel workbook merge, Aspose.Cells Cloud, REST API, spreadsheet merging, cloud SDK, authentication, mergeWith, cURL example"  
+description: "Learn how to merge one Excel workbook into another using the Aspose.Cells Cloud REST API (v3.0). Includes authentication details, the required `mergeWith` parameter, a cURL example, and SDK code samples for multiple languages."  
+weight: 50  
+---  
 
 This REST API merges an Excel **workbook** into another workbook.
+
+### Prerequisites  
+
+Before calling the merge endpoint, ensure that both the target workbook (`{name}`) and the workbook to be merged (`mergeWith`) already exist in the specified storage folder. A valid access token is also required for authentication.
+
+### Authentication  
+
+All requests must include the `Authorization: Bearer <access‑token>` header.  
+You can obtain an access token by following the OAuth guide in the Aspose.Cells Cloud documentation.
 
 **Query Parameter**
 
@@ -18,23 +27,29 @@ This REST API merges an Excel **workbook** into another workbook.
 |----------------|--------|------------------------------------------|
 | folder         | string | Folder containing the original workbook. |
 | storageName    | string | Name of the storage.                     |
+| **mergeWith**  | string | Name of the workbook to be merged into the target workbook. |
 
-## REST API
+## REST API  
 
 | **API**                     | **Type** | **Description**      | **Swagger Link**                                                                 |
 |-----------------------------|----------|----------------------|----------------------------------------------------------------------------------|
 | /cells/{name}/merge         | POST     | Merge Excel workbooks | [PostWorkbooksMerge](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbooksMerge) |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbooksMerge) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbooksMerge) defines a publicly accessible programming interface and lets the API carry out REST interactions directly from a web browser.
 
-You can use **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+### How to merge two workbooks (cURL)
+
+You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL, including the required authentication header.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/merge?mergeWith=test2.xlsx" -H "accept: application/json"
+# Merge test2.xlsx into test.xlsx
+curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/merge?mergeWith=test2.xlsx" \
+     -H "accept: application/json" \
+     -H "Authorization: Bearer <access-token>"
 ```
 
 {{< /tab >}}
@@ -163,7 +178,16 @@ Response headers
 
 {{< /tabs >}}
 
-## Cloud SDK Family
+### Error Handling  
+
+| HTTP Status | Description                              |
+|-------------|------------------------------------------|
+| 400         | Bad request – missing or invalid parameters. |
+| 401         | Unauthorized – invalid or missing access token. |
+| 404         | Not found – the specified workbook does not exist. |
+| 500         | Internal server error – unexpected condition on the server. |
+
+## Cloud SDK Family  
 
 Using an SDK is the best way to speed up development. An SDK abstracts low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
