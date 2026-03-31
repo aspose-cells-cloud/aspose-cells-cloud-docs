@@ -1,5 +1,5 @@
 ---
-title: "Add a dynamic date filter in an Excel worksheet"
+title: "Add a dynamic filter in an Excel worksheet"
 second_title: "Document"
 linktitle: "Add dynamic filter"
 type: docs
@@ -7,8 +7,8 @@ url: /autofilter/add-dynamic-filter/
 aliases:
   - /filter-a-list-using-dynamic-filter/
   - /autofilter/add-a-dynamic-filter/
-keywords: "dynamic filter, Excel, Aspose.Cells Cloud, REST API, auto filter, spreadsheet"
-description: "Use the Aspose.Cells Cloud API to add a dynamic date filter to an Excel worksheet. The guide includes cURL examples and SDK snippets for multiple programming languages."
+keywords: "Aspose.Cells, dynamic filter, Excel API, REST, auto filter, cloud SDK"
+description: "Learn how to apply a dynamic filter (e.g., BelowAverage, Tomorrow, LastMonth) to an Excel worksheet using the Aspose.Cells Cloud REST API. Includes cURL, SDK snippets, authentication guidance, and error handling."
 weight: 65
 ---
 
@@ -22,21 +22,32 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/
 
 ### Request parameters
 
-| Parameter Name      | Type    | Location                     | Description                                                                                           |
-|---------------------|---------|------------------------------|-------------------------------------------------------------------------------------------------------|
-| **name**            | string  | path                         | The name of the Excel file (e.g., `Book1.xlsx`).                                                      |
-| **sheetName**       | string  | path                         | The name of the worksheet that contains the range to be filtered.                                    |
-| **range**           | string  | query                        | The cell range on which the filter is applied (e.g., `A1:B1`).                                        |
-| **fieldIndex**      | integer | query                        | Zero‑based index of the column within the range to which the dynamic filter is applied.              |
-| **dynamicFilterType**| string | query                        | The type of dynamic filter (e.g., `BelowAverage`, `AboveAverage`, `Tomorrow`, `LastMonth`, etc.).    |
-| **matchBlanks**     | boolean | query                        | Indicates whether blank cells should be included in the filter results.                             |
-| **refresh**         | boolean | query                        | If `true`, the filter is refreshed after being applied.                                               |
-| **folder**          | string  | query                        | The folder path in storage where the workbook is located.                                            |
-| **storageName**     | string  | query                        | The name of the Aspose Cloud storage to use.                                                          |
+| Parameter Name       | Type    | Location | Description                                                                                           |
+|----------------------|---------|----------|-------------------------------------------------------------------------------------------------------|
+| **name**             | string  | path     | The name of the Excel file (e.g., `Book1.xlsx`).                                                      |
+| **sheetName**        | string  | path     | The name of the worksheet that contains the range to be filtered.                                    |
+| **range**            | string  | query    | The cell range on which the filter is applied (e.g., `A1:B1`).                                        |
+| **fieldIndex**       | integer | query    | Zero‑based index of the column within the range to which the dynamic filter is applied.              |
+| **dynamicFilterType**| string  | query    | The type of dynamic filter. Supported values are listed below.                                        |
+| **matchBlanks**      | boolean | query    | Indicates whether blank cells should be included in the filter results.                             |
+| **refresh**          | boolean | query    | If `true`, the filter is refreshed after being applied.                                               |
+| **folder**           | string  | query    | The folder path in storage where the workbook is located.                                            |
+| **storageName**      | string  | query    | The name of the Aspose Cloud storage to use.                                                          |
+
+**Supported `dynamicFilterType` values**
+
+- `BelowAverage` – rows whose value is below the column’s average.  
+- `AboveAverage` – rows whose value is above the column’s average.  
+- `Tomorrow` – rows with dates equal to tomorrow’s date.  
+- `Yesterday` – rows with dates equal to yesterday’s date.  
+- `NextWeek` – rows with dates falling in the next calendar week.  
+- `LastMonth` – rows with dates from the previous month.  
+- `ThisYear` – rows with dates occurring in the current year.  
+- *(and other built‑in date/statistical conditions offered by the API).*
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetDynamicFilter) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL. **First obtain a JWT token** by authenticating against the `/connect/token` endpoint and replace `<jwt token>` with the token value.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
@@ -60,6 +71,16 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFil
   "Status": "OK"
 }
 ```
+
+*Error responses*  
+The API can also return the following error codes:
+
+| HTTP Status | Description                               | Sample Body |
+|-------------|-------------------------------------------|-------------|
+| 400         | Invalid request parameters                | `{ "Code":400, "Message":"Invalid parameter value." }` |
+| 401         | Unauthorized – missing or invalid token   | `{ "Code":401, "Message":"Authentication failed." }` |
+| 404         | Resource not found (e.g., workbook)      | `{ "Code":404, "Message":"File not found." }` |
+| 500         | Internal server error                     | `{ "Code":500, "Message":"Unexpected error." }` |
 
 {{< /tab >}}
 
