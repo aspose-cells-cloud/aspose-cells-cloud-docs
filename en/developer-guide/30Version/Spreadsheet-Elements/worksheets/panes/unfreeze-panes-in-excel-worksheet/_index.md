@@ -1,5 +1,5 @@
 ---
-title: "Unfreeze panes on an Excel worksheet"
+title: "Unfreeze Panes on an Excel Worksheet"
 second_title: "Document"
 linktitle: "Unfreeze"
 type: docs
@@ -8,30 +8,28 @@ aliases:
   - /unfreeze-panes-in-excel-worksheet/
   - /worksheets/unfreeze-panes/
 keywords: "unfreeze panes, Excel, Aspose.Cells Cloud, REST API, SDK, C#, Java, PHP, Python, Node.js, Go, Swift, Android, Ruby, Perl"
-description: "Learn how to use Aspose.Cells Cloud REST API and SDKs to unfreeze panes in an Excel worksheet. Supports multiple programming languages such as C#, Java, Python, PHP, Node.js, Go, Swift, Android, Ruby, and Perl."
+description: "Learn how to remove frozen panes from an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes cURL example, SDK code snippets for C#, Java, Python, and more."
 weight: 200
 ---
 
-This REST API call removes frozen panes from an Excel worksheet.
+This REST API call **unfreezes** (removes frozen panes) from an Excel worksheet.
 
 ## REST API
 
 ```bash
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/freezepanes
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/freezepanes
 ```
 
 The request parameters are:
 
-| Parameter Name   | Type    | Location | Description                                          |
-|------------------|---------|----------|------------------------------------------------------|
-| name             | string  | path     | Name of the Excel file.                              |
-| sheetName        | string  | path     | Name of the worksheet.                               |
-| row              | integer | query    | Row index where the freeze starts (0‑based).        |
-| column           | integer | query    | Column index where the freeze starts (0‑based).     |
-| freezedRows      | integer | query    | Number of rows to keep frozen.                       |
-| freezedColumns   | integer | query    | Number of columns to keep frozen.                    |
-| folder           | string  | query    | Folder path in storage where the file is located.   |
-| storageName      | string  | query    | Name of the Aspose Cloud storage.                    |
+| Parameter Name | Type   | Location | Description                                          |
+|----------------|--------|----------|------------------------------------------------------|
+| `name`         | string | path     | Name of the Excel file.                              |
+| `sheetName`    | string | path     | Name of the worksheet.                               |
+| `folder`       | string | query    | Folder path in storage where the file is located.   |
+| `storageName`  | string | query    | Name of the Aspose Cloud storage.                    |
+
+*No additional query parameters (such as row, column, frozenRows, or frozenColumns) are required for the unfreeze operation.*
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheetFreezePanes) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -42,7 +40,7 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/freezepanes?row=1&column=1&freezedRows=1&freezedColumns=1" \
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/freezepanes" \
 -X DELETE \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
