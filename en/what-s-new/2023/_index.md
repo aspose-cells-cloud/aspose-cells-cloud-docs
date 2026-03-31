@@ -1,84 +1,83 @@
 ---
-title: What's new in Aspose.Cells Cloud in 2023
+title: "What’s New in Aspose.Cells Cloud 2023 – Feature Updates & Release Notes"
 second_title: "Document"
-linktitle: "What's new in 2023"
+linktitle: "What’s New in 2023"
 type: docs
 weight: 30
 url: /new-features/2023/
-keywords: "What's new in aspose cells cloud. Microsoft Office Excel, Open Office Spreadsheet, CSV, PDF."
-description: "This page describes the most interesting new Aspose.Cells Cloud features introduced in recent releases."
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, What's new in Aspose.Cells Cloud
+keywords: "Aspose.Cells Cloud 2023, Excel API, file conversion API, chart axis API, digital signature API, release notes"
+description: "Explore the latest Aspose.Cells Cloud 2023 updates: new conversion APIs, region parameters, chart‑axis support, digital signatures, and more. Click for detailed release notes and code examples."
 ---
 
 Welcome to what's new in Aspose.Cells Cloud docs. Use this page to quickly find the latest changes.
 
 ## Enhancements in Version 23.12.0
 
-- Conversion APIs add region parameter.
-- Protection APIs add region parameter.
-- Assemble data API adds region parameter.
-- Merge files API adds region parameter.
-- Split files API adds region parameter.
-- Import data API adds region parameter.
-- Watermark API adds region parameter.
-- Clear object API adds region parameter.
-- Reverse data API adds region parameter.
-- Rotate data API adds region parameter.
+- Added region parameter to Conversion API.  
+- Added region parameter to Protection API.  
+- Added region parameter to Assemble Data API.  
+- Added region parameter to Merge Files API.  
+- Added region parameter to Split Files API.  
+- Added region parameter to Import Data API.  
+- Added region parameter to Watermark API.  
+- Added region parameter to Clear Object API.  
+- Added region parameter to Reverse Data API.  
+- Added region parameter to Rotate Data API.  
 
 ## Enhancements in Version 23.11
 
-- Optimize import xml data into Excel file.
-- Optimize import json data into Excel file.
-- Remove deprecated functions, class and test case.
+- Optimized XML data import into Excel files.  
+- Optimized JSON data import into Excel files.  
+- Removed deprecated functions, classes, and test cases.  
 
 ## Enhancements in Version 23.10
 
-- Fix protect workbook request.
-- Fix range copy API.
-- Optimize workbook protect API.
+- Fixed protect workbook request.  
+- Fixed range copy API.  
+- Optimized workbook protect API.  
 
 ## Enhancements in Version 23.9
 
-- Support to data sorting on range controller.
-- Support to remove duplicate data on list object.
-- Support to insert slicer for list object.
-- Optimize list object and related objects.
+- Added data‑sorting support on range controller.  
+- Added duplicate‑data removal for list objects.  
+- Added slicer insertion for list objects.  
+- Optimized list object and related components.  
 
 ## Enhancements in Version 23.8
 
-- Support to lock API.
-- Optimize protect API.
+- Added lock API support.  
+- Optimized protect API.  
 
 ## Aspose.Cells Cloud 23.7
 
-- Support to repair file.
-- Optimize conversion functions.
+- Added file‑repair support.  
+- Optimized conversion functions.  
 
 ## Aspose.Cells Cloud 23.6
 
-- Support to batch lock multi-files.
-- Support to batch unlock multi-files.
-- Support to batch protect multi-files.
-- Support to batch split multi-files.
-- Fix put document property api.
+- Added batch lock for multiple files.  
+- Added batch unlock for multiple files.  
+- Added batch protect for multiple files.  
+- Added batch split for multiple files.  
+- Fixed PUT document property API.  
 
 ## Aspose.Cells Cloud 23.5
 
-- Fix few methods are misspelled.
+- Corrected misspelled method names.  
 
 ## Aspose.Cells Cloud 23.4
 
-- Support import and export XML data.
+- Added XML data import and export support.  
 
 ## Aspose.Cells Cloud 23.3
 
-- Optimize Hyperlink properties.
+- Optimized hyperlink properties.  
 
 ## Aspose.Cells Cloud 23.2
 
-- Optimize replace API.
-- Optimize Swagger UI.
+- Optimized replace API.  
+- Optimized Swagger UI.  
 
 ## Aspose.Cells Cloud 23.1
 
-- Fix the bug for PostCellCharacters method.
+- Fixed bug in PostCellCharacters method.  
