@@ -1,18 +1,40 @@
 ---
-title: "Get Cell Style from a Worksheet"
+title: "Get Cell Style from a Worksheet – Aspose.Cells Cloud API"
 type: docs
 url: /get-cell-style-from-a-worksheet/
 weight: 10
-keywords: "Aspose.Cells, REST API, get cell style, worksheet, Excel, cloud SDK, spreadsheet"
-description: "Retrieve the style information of a specific cell in an Excel worksheet using the Aspose.Cells Cloud REST API."
+keywords: "Aspose.Cells, get cell style, Excel API, REST, cloud SDK, spreadsheet styling"
+description: "Learn how to retrieve the style of a specific cell in an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes cURL example, response schema, and SDK snippets."
 ---
 
-This REST API retrieves the **style** of a cell in an Excel file.
+Use this REST API to retrieve the **style** of a cell in an Excel worksheet.
+
+## Prerequisites
+
+- The workbook must be uploaded to Aspose Cloud storage (default or a custom folder).  
+- Obtain a JWT bearer token via the Aspose Cloud OAuth2 flow.  
+- Include the token in the `Authorization` header of every request.
+
+## Authentication
+
+1. Register an Aspose Cloud application to receive a **client_id** and **client_secret**.  
+2. Request an access token:
+
+```bash
+curl -X POST "https://api.aspose.cloud/connect/token" \
+  -d "grant_type=client_credentials&client_id=<your_client_id>&client_secret=<your_client_secret>"
+```
+
+3. Use the returned token:
+
+```bash
+-H "Authorization: Bearer <jwt token>"
+```
 
 ## REST API
 
 ```bash
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}/style
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}/style
 ```
 
 The request parameters are:
@@ -106,6 +128,35 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/a
 {{< /tab >}}
 
 {{< /tabs >}}
+
+## Response Schema
+
+| Field                     | Type    | Description                                                                    |
+|---------------------------|---------|--------------------------------------------------------------------------------|
+| **Style**                 | object  | Container for all style‑related properties of the cell.                       |
+| Style.Font                | object  | Font settings (name, size, color, style flags).                               |
+| Style.Font.Color          | object  | RGBA color values for the font.                                                |
+| Style.Font.IsBold         | boolean | `true` if the font is bold.                                                    |
+| Style.Font.IsItalic       | boolean | `true` if the font is italic.                                                  |
+| Style.Font.IsStrikeout    | boolean | `true` if the font has a strike‑through.                                       |
+| Style.Font.IsSubscript    | boolean | `true` if the font is subscript.                                               |
+| Style.Font.IsSuperscript  | boolean | `true` if the font is superscript.                                             |
+| Style.Font.Name           | string  | Font family name (e.g., **Calibri**).                                          |
+| Style.Font.Size           | number  | Font size in points.                                                          |
+| Style.Font.Underline      | string  | Underline style (e.g., **Single**).                                            |
+| Style.IsLocked            | boolean | Indicates whether the cell is protected from editing.                         |
+| Style.IsTextWrapped       | boolean | `true` if text wrapping is enabled.                                            |
+| Style.IsGradient          | boolean | `true` if a gradient fill is applied.                                          |
+| Style.Pattern             | string  | Fill pattern name (e.g., **None**).                                            |
+| Style.BorderCollection    | array   | List of border objects defining line style, color, and border type.           |
+| Style.BackgroundColor     | object  | RGBA values for the cell background.                                           |
+| Style.ForegroundColor     | object  | RGBA values for the cell foreground.                                           |
+| …                         | …       | *(Other fields follow the same pattern as defined in the API reference.)*    |
+
+## Related Operations
+
+- **Update Multiple Cells Style** – Modify the style of several cells in a single request.  
+- **Set Value of a Cell** – Write data to a specific cell.  
 
 ## Cloud SDK Family
 
