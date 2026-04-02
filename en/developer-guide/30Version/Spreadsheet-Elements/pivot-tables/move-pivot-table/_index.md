@@ -1,16 +1,16 @@
 ---
-title: "Move a pivot table in an Excel file"
+title: "Move a Pivot Table in an Excel File"
 second_title: "Document"
 linktitle: Move
 type: docs
 url: /pivot-tables/move/
 aliases: [/move-pivot-table/]
 keywords: "Aspose.Cells Cloud, move pivot table, Excel, REST API, SDK, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, Swift"
-description: "Use Aspose.Cells Cloud REST API to move a pivot table within an Excel workbook. SDKs are available for Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift."
+description: "Learn how to use the Aspose.Cells Cloud REST API to move a pivot table within an Excel workbook. SDKs are available for Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift."
 weight: 120
 ---
 
-This REST API moves a pivot table.
+This REST API moves a pivot table within an Excel workbook.
 
 ## REST API
 
@@ -20,16 +20,16 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottable
 
 The request parameters are:
 
-| Parameter Name | Type    | Location                     | Description                                                            |
-|----------------|---------|------------------------------|------------------------------------------------------------------------|
-| name           | string  | path                         | Name of the Excel file.                                                |
-| sheetName      | string  | path                         | Name of the worksheet that contains the pivot table.                  |
-| pivotTableIndex| integer | path                         | Zero‑based index of the pivot table to be moved.                       |
-| fieldIndex     | integer | query                        | Index of the pivot field to move.                                      |
-| from           | string  | query                        | Source area of the field (e.g., `Row` or `Column`).                    |
-| to             | string  | query                        | Destination area of the field (e.g., `Row` or `Column`).              |
-| folder         | string  | query                        | Folder in storage where the file is located.                           |
-| storageName    | string  | query                        | Name of the storage service.                                           |
+| Parameter Name   | Type    | Location | Description                                                            |
+|------------------|---------|----------|------------------------------------------------------------------------|
+| name             | string  | path     | Name of the Excel file.                                                |
+| sheetName        | string  | path     | Name of the worksheet that contains the pivot table.                  |
+| pivotTableIndex  | integer | path     | Zero‑based index of the pivot table to be moved.                       |
+| fieldIndex       | integer | query    | Index of the pivot field to move.                                      |
+| from             | string  | query    | Source area of the field (e.g., `Row` or `Column`).                    |
+| to               | string  | query    | Destination area of the field (e.g., `Row` or `Column`).              |
+| folder           | string  | query    | Folder in storage where the file is located.                           |
+| storageName      | string  | query    | Name of the storage service.                                           |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PivotTables/PostPivotTableFieldMoveTo) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
