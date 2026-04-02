@@ -5,7 +5,7 @@ linktitle: "Delete"
 type: docs
 url: /shapes/delete/
 aliases: [/delete-a-shape-by-index-inside-the-worksheet/]
-keywords: "Aspose.Cells Cloud, Delete shape, Excel worksheet, REST API, SDK"
+keywords: "Aspose.Cells Cloud, Delete shape, Shape index, Excel worksheet, REST API, SDK"
 description: "Use the Aspose.Cells Cloud REST API to delete a shape by its index on an Excel worksheet. The API is available through multiple SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) and supports various storage options."
 weight: 50
 ---
@@ -20,13 +20,13 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes/{
 
 The request parameters are:
 
-| Parameter Name | Type    | Location                | Description                                   |
-|----------------|---------|-------------------------|-----------------------------------------------|
-| name           | string  | path                    | Name of the workbook file.                    |
-| sheetName      | string  | path                    | Name of the worksheet.                        |
-| shapeindex     | integer | path                    | Index of the shape in the worksheet’s shapes. |
-| folder         | string  | query                   | Folder where the workbook is stored.          |
-| storageName    | string  | query                   | Name of the storage.                          |
+| Parameter Name | Type    | Location | Description                                   |
+|----------------|---------|----------|-----------------------------------------------|
+| name           | string  | path     | Name of the workbook file.                    |
+| sheetName      | string  | path     | Name of the worksheet.                        |
+| shapeindex     | integer | path     | Index of the shape in the worksheet’s shapes. |
+| folder         | string  | query    | Folder where the workbook is stored.          |
+| storageName    | string  | query    | Name of the storage.                          |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Shapes/DeleteWorksheetShape) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
