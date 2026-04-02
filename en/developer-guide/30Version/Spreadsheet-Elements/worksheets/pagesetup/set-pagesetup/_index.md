@@ -4,10 +4,11 @@ second_title: "Document"
 linktitle: "Set page setup"
 type: docs
 url: /set-page-setup/
-keywords: "Excel, page setup, Aspose.Cells Cloud, REST API, worksheet"
-description: "Set page setup for an Excel worksheet using Aspose.Cells Cloud REST API. Includes request details, cURL example, and SDK code snippets for multiple programming languages."
+keywords: "Aspose.Cells Cloud, Excel, page setup, REST API, worksheet, SDK"
+description: "Learn how to set the page setup for an Excel worksheet using Aspose.Cells Cloud REST API. Includes request details, a cURL example, response format, and SDK code snippets for multiple programming languages."
 weight: 20
 ---
+
 This REST API sets the page setup for an Excel worksheet.
 
 ## REST API
@@ -22,7 +23,7 @@ The request parameters are:
 |----------------|--------|------------------------------|------------------------------------------|
 | name           | string | path                         | Document name.                           |
 | sheetName      | string | path                         | The worksheet name.                      |
-| pageSetup      | object | body                         | Page setup description.                 |
+| pageSetup      | object | body                         | Page‑setup description.                  |
 | folder         | string | query                        | Document folder.                         |
 | storageName    | string | query                        | Storage name.                            |
 
