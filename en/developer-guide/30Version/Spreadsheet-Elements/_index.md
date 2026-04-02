@@ -3,8 +3,8 @@ title: "Spreadsheet Elements"
 second_title: "Document"
 type: docs
 url: /spreadsheet-elements/
-keywords: "Excel, Aspose Cells Cloud, REST API, Spreadsheet, AutoFilter, Cells, Charts, Columns, Comments, Conditional Formatting, Hyperlinks, List Objects, Metadata, OLE Objects, Page Breaks, Pictures, Pivot Tables, Ranges, Rows, Shapes, Validation, Worksheets"
-description: "Explore how to work with various spreadsheet elements using Aspose.Cells Cloud API. Includes guidance for Excel features such as AutoFilter, cells, charts, columns, comments, conditional formatting, hyperlinks, list objects, metadata, OLE objects, page breaks, pictures, pivot tables, ranges, rows, shapes, validation, and worksheets across multiple SDKs."
+keywords: "Aspose Cells Cloud, Excel, REST API, AutoFilter, Cells, Charts, Columns, Comments, Conditional Formatting, Hyperlinks, List Objects, Metadata, OLE Objects, Page Breaks, Pictures, Pivot Tables, Ranges, Rows, Shapes, Validation, Worksheets"
+description: "Learn how to work with Excel features using Aspose.Cells Cloud REST API, including AutoFilter, cells, charts, columns, comments, conditional formatting, hyperlinks, list objects, metadata, OLE objects, page breaks, pictures, pivot tables, ranges, rows, shapes, validation, and worksheets across supported SDKs."
 weight: 100
 ---
 
