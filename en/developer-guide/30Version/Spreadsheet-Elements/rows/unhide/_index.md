@@ -5,8 +5,8 @@ linktitle: "Unhide"
 type: docs
 url: /rows/unhide/
 aliases: [/unhide-rows-in-excel-worksheet/]
-keywords: "Aspose.Cells Cloud, Excel, unhide rows, REST API, spreadsheet, .NET, Java, Python, Node.js, Ruby, Go, PHP, Perl, Swift"
-description: "Use Aspose.Cells Cloud REST API to unhide rows in an Excel worksheet. The API is available through multiple SDKs (C#, Java, Python, Node.js, Ruby, Go, PHP, Perl, Swift)."
+keywords: "Aspose.Cells Cloud, Excel, unhide rows, REST API, spreadsheet, .NET, Java, Python, Node.js, Ruby, Go, PHP, Perl, Swift, Aspose.Cells Cloud REST API"
+description: "Use the Aspose.Cells Cloud REST API to unhide rows in an Excel worksheet. The API is available through multiple SDKs such as .NET, Java, Python, Node.js, Ruby, Go, PHP, Perl, and Swift."
 weight: 50
 ---
 
@@ -20,15 +20,15 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
 
 The request parameters are:
 
-| Parameter Name | Type    | Location                | Description                                             |
-|----------------|---------|-------------------------|---------------------------------------------------------|
-| name           | string  | path                    | The workbook name.                                      |
-| sheetName      | string  | path                    | The worksheet name.                                     |
-| startrow       | integer | query                   | Zero‑based index of the first row to unhide.            |
-| totalRows      | integer | query                   | Number of rows to unhide.                               |
-| height         | number  | query                   | Row height (default 15.0).                              |
-| folder         | string  | query                   | The document folder.                                    |
-| storageName    | string  | query                   | Name of the storage.                                    |
+| Parameter Name | Type    | Location | Description                                             |
+|----------------|---------|----------|---------------------------------------------------------|
+| name           | string  | path     | The workbook name.                                      |
+| sheetName      | string  | path     | The worksheet name.                                     |
+| startrow       | integer | query    | Zero‑based index of the first row to unhide.            |
+| totalRows      | integer | query    | Number of rows to unhide.                               |
+| height         | number  | query    | Row height (default 15.0).                              |
+| folder         | string  | query    | The document folder.                                    |
+| storageName    | string  | query    | Name of the storage.                                    |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostUnhideWorksheetRows) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
