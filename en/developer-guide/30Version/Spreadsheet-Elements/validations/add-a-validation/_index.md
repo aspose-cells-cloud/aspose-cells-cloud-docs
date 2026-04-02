@@ -1,11 +1,11 @@
 ---
-title: "Add a worksheet validation on an Excel worksheet"
+title: "Add a worksheet validation to an Excel worksheet"
 second_title: "Document"
 linktitle: "Add"
 type: docs
 url: /validations/add/
-keywords: "Add worksheet validation, Excel, Aspose.Cells Cloud, REST API, Spreadsheet"
-description: "The Aspose.Cells Cloud REST API enables adding a worksheet validation to an Excel worksheet. SDKs are available for C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, and Swift."
+keywords: "Add worksheet validation, Excel, Aspose.Cells Cloud, REST API, Spreadsheet, Validation rule"
+description: "Use the Aspose.Cells Cloud REST API to add a worksheet validation to an Excel file. SDKs are available for C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, and Swift."
 weight: 10
 ---
 
@@ -19,14 +19,14 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations
 
 The request parameters are:
 
-| Parameter Name | Type   | Location                     | Description                                            |
-|----------------|--------|------------------------------|--------------------------------------------------------|
-| name           | string | path                         | Name of the Excel document.                            |
-| sheetName      | string | path                         | Name of the worksheet.                                 |
-| range          | string | query                        | Cell range to which the validation applies (e.g., A1:B10). |
-| validation     | object | body                         | Validation rule definition.                            |
-| folder         | string | query                        | Folder that contains the document.                     |
-| storageName    | string | query                        | Name of the storage service.                           |
+| Parameter Name | Type   | Location | Description |
+|----------------|--------|----------|-------------|
+| name           | string | path     | Name of the Excel document. |
+| sheetName      | string | path     | Name of the worksheet. |
+| range          | string | query    | Cell range to which the validation applies (e.g., A1:B10). |
+| validation     | object | body     | Validation rule definition. |
+| folder         | string | query    | Folder that contains the document. |
+| storageName    | string | query    | Name of the storage service. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/WorksheetValidations/PutWorksheetValidation) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
