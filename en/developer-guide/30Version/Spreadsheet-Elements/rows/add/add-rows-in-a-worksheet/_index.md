@@ -4,8 +4,8 @@ second_title: "Document"
 linktitle: "Rows"
 type: docs
 url: /rows/add/rows/
-keywords: "Aspose.Cells Cloud, add multiple rows, Excel worksheet, REST API"
-description: "The Aspose.Cells Cloud REST API enables adding multiple rows to an Excel worksheet. This document explains the endpoint, request parameters, example cURL calls, and SDK usage across several programming languages."
+keywords: "Aspose.Cells Cloud, insert rows, Excel worksheet, REST API, SDK"
+description: "Learn how to use the Aspose.Cells Cloud REST API to insert multiple rows into an Excel worksheet. This guide covers the endpoint, request parameters, sample cURL commands, and SDK usage examples."
 weight: 20
 ---
 
