@@ -5,12 +5,13 @@ url: /change-cell-style-in-excel-worksheet/
 weight: 30
 keywords:
   - Aspose.Cells
+  - Aspose.Cells Cloud
   - Excel
   - Cell Style
   - REST API
   - Cloud SDK
   - cURL
-description: "Learn how to update the style of a specific cell in an Excel worksheet using Aspose.Cells Cloud REST API, with example requests, responses, and SDK code snippets."
+description: "Learn how to update the style of a specific cell in an Excel worksheet using the Aspose.Cells Cloud REST API, including example requests, responses, and SDK code snippets."
 ---
 
 This REST API updates the **cell style** of an Excel file.
@@ -23,14 +24,14 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cel
 
 The request parameters are:
 
-| Parameter Name | Type   | Location                     | Description                                    |
-|----------------|--------|------------------------------|------------------------------------------------|
-| name           | string | path                         | The workbook file name.                        |
-| sheetName      | string | path                         | The worksheet name.                            |
-| cellName       | string | path                         | The target cell (e.g., **A1**).                |
-| style          | object | body                         | JSON object that defines the style settings to apply to the cell. |
-| folder         | string | query                        | The folder that contains the workbook.         |
-| storageName    | string | query                        | The storage name where the workbook is stored. |
+| Parameter Name | Type   | Location | Description                                    |
+|----------------|--------|----------|------------------------------------------------|
+| name           | string | path     | The workbook file name.                        |
+| sheetName      | string | path     | The worksheet name.                            |
+| cellName       | string | path     | The target cell (e.g., **A1**).                |
+| style          | object | body     | JSON object that defines the style settings to apply to the cell. |
+| folder         | string | query    | The folder that contains the workbook.         |
+| storageName    | string | query    | The storage name where the workbook is stored. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostUpdateWorksheetCellStyle) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
