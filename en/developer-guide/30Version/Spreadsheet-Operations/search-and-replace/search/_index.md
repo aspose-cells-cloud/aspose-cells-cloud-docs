@@ -1,12 +1,12 @@
 ---
-title: "Find text from Excel files"
+title: "Find Text in Excel Files"
 second_title: "Document"
-linktitle: "Find without using storage"
+linktitle: "Find Without Using Storage"
 type: docs
 url: /search/
 aliases: [/search-without-using-storage/,/search-without-storage/]
-keywords: "Excel, spreadsheet, search text, Aspose.Cells Cloud, REST API, SDK"
-description: "Use Aspose.Cells Cloud REST API to locate specific text within Excel (XLS, XLSX, XLSM, XLSB) and OpenDocument Spreadsheet (ODS) files. Examples include cURL requests and SDK code snippets for multiple programming languages."
+keywords: "Aspose.Cells Cloud, Excel search, find text, REST API, cURL, SDK examples, XLSX, ODS"
+description: "Use the Aspose.Cells Cloud REST API to locate specific text within Excel (XLS, XLSX, XLSM, XLSB) and OpenDocument Spreadsheet (ODS) files. Includes cURL requests and SDK code snippets for multiple programming languages."
 weight: 50
 ---
 
@@ -23,7 +23,7 @@ POST http://api.aspose.cloud/v3.0/cells/search
 | Parameter Name | Type   | Location                     | Description                                                      |
 |----------------|--------|------------------------------|------------------------------------------------------------------|
 | file           | file   | formData (multipart)         | The spreadsheet file to upload.                                  |
-| text           | string | query string                 | The text string to search for.                                    |
+| text           | string | query string                 | The text string to search for.                                   |
 | password       | string | query string (optional)      | Password for opening a protected workbook, if required.          |
 | sheetname      | string | query string (optional)      | Name of the worksheet to limit the search to a specific sheet.   |
 
