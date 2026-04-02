@@ -5,8 +5,8 @@ linktitle: "Hide"
 type: docs
 url: /worksheets/hide/
 aliases: [/hide-excel-worksheets/]
-keywords: "Excel, Aspose.Cells Cloud, hide worksheet, REST API, spreadsheet"
-description: "Learn how to hide a worksheet in an Excel workbook using Aspose.Cells Cloud REST API. Includes request details, cURL example, and SDK code samples for multiple languages."
+keywords: "Aspose.Cells Cloud, Excel, hide worksheet, REST API, spreadsheet"
+description: "Step‑by‑step guide to hide a worksheet in an Excel workbook using Aspose.Cells Cloud REST API, including request details, a cURL example, and SDK code snippets for multiple languages."
 weight: 50
 ---
 
@@ -20,13 +20,13 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/visible
 
 The request parameters are:
 
-| Parameter Name | Type    | Location                     | Description |
-|----------------|---------|------------------------------|-------------|
-| name           | string  | path                         | The name of the Excel workbook file. |
-| sheetName      | string  | path                         | The name of the worksheet to modify. |
-| isVisible      | boolean | query                        | Visibility flag (`true` for visible, `false` for hidden). |
-| folder         | string  | query                        | The folder path where the workbook is stored. |
-| storageName    | string  | query                        | The name of the storage service. |
+| Parameter Name | Type    | Location | Description |
+|----------------|---------|----------|-------------|
+| name           | string  | path     | The name of the Excel workbook file. |
+| sheetName      | string  | path     | The name of the worksheet to modify. |
+| isVisible      | boolean | query    | Visibility flag (`true` for visible, `false` for hidden). |
+| folder         | string  | query    | The folder path where the workbook is stored. |
+| storageName    | string  | query    | The name of the storage service. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PutChangeVisibilityWorksheet) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
