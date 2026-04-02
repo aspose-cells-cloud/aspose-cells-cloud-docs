@@ -6,8 +6,8 @@ type: docs
 url: /worksheets/find-text/
 aliases: [/find-text-in-a-worksheet/]
 weight: 40
-keywords: "Excel, Aspose.Cells Cloud, REST API, find text, worksheet, spreadsheet"
-description: "Use Aspose.Cells Cloud REST API to find text in an Excel worksheet. The API is available across multiple SDKs and programming languages."
+keywords: "Excel, Aspose.Cells Cloud, REST API, find text, worksheet, spreadsheet, search"
+description: "Use the Aspose.Cells Cloud REST API to find text in an Excel worksheet. The API is available across multiple SDKs and programming languages."
 ---
 
 This REST API searches for text in an Excel worksheet.
@@ -20,13 +20,13 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/findText
 
 The request parameters are:
 
-| Parameter Name | Type   | Location                     | Description                         |
-|----------------|--------|------------------------------|-------------------------------------|
-| name           | string | path                         | Document name.                      |
-| sheetName      | string | path                         | Worksheet name.                     |
-| text           | string | query                        | Text to search.                     |
-| folder         | string | query                        | Document's folder.                  |
-| storageName    | string | query                        | Storage name.                       |
+| Parameter Name | Type   | Location  | Description          |
+|----------------|--------|-----------|----------------------|
+| name           | string | path      | Document name.       |
+| sheetName      | string | path      | Worksheet name.      |
+| text           | string | query     | Text to search.      |
+| folder         | string | query     | Document's folder.   |
+| storageName    | string | query     | Storage name.        |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetTextSearch) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
