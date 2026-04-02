@@ -4,8 +4,8 @@ second_title: "Document"
 linktitle: "Save options"
 type: docs
 url: /save-options/
-keywords: "Aspose.Cells Cloud, SaveOptions, Excel, Workbook, REST API, File Formats, PDF, CSV, JSON"
-description: "Details the SaveOptions properties of Aspose.Cells Cloud REST API, enabling developers to configure workbook‑saving behavior across various file formats."
+keywords: "Aspose.Cells Cloud, SaveOptions, Excel, Workbook, REST API, File Formats, PDF, CSV, JSON, HTTP Compression, Chart Cache, Named Ranges, Directory Creation"
+description: "Describes the SaveOptions properties of the Aspose.Cells Cloud REST API, enabling developers to configure workbook‑saving behavior across multiple file formats and options such as HTTP compression, chart cache refresh, and automatic directory creation."
 weight: 79
 ---
 
