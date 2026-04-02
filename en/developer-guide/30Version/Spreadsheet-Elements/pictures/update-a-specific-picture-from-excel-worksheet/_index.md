@@ -5,12 +5,12 @@ linktitle: "Update"
 type: docs
 url: /pictures/update/
 aliases: [/update-a-specific-picture-from-excel-workshee/]
-keywords: "Aspose.Cells Cloud, Excel, Update picture, REST API, Spreadsheet"
-description: "Learn how to update a picture in an Excel file using Aspose.Cells Cloud REST API. The guide includes request details, a cURL example, and SDK code snippets for various programming languages."
+keywords: "Aspose.Cells Cloud, Excel, Update picture, REST API, Spreadsheet, cURL, SDK"
+description: "Learn how to update a picture in an Excel worksheet using Aspose.Cells Cloud REST API. This guide provides request details, a cURL example, and SDK code snippets for multiple programming languages."
 weight: 70
 ---
 
-This REST API updates a picture by its index on an Excel worksheet.
+This REST API updates a picture, identified by its index, on an Excel worksheet.
 
 ## REST API
 
