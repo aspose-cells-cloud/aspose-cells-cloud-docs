@@ -5,8 +5,8 @@ linktitle: "Group"
 type: docs
 url: /rows/group/
 aliases: [/group-rows-in-excel-worksheet/]
-keywords: "group rows, Excel, Aspose.Cells Cloud, REST API, SDK"
-description: "Use Aspose.Cells Cloud REST API to group rows in an Excel worksheet. Supports multiple SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) for easy integration."
+keywords: "group rows, Excel, Aspose.Cells Cloud, REST API, SDK, worksheet, Excel API"
+description: "Group rows in an Excel worksheet using the Aspose.Cells Cloud REST API. Supports multiple SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) for easy integration."
 weight: 60
 ---
 
@@ -30,7 +30,7 @@ The request parameters are:
 | folder         | string  | query                        | Path to the folder that contains the workbook.                         |
 | storageName    | string  | query                        | Name of the storage where the workbook is located.                     |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostGroupWorksheetRows) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostGroupWorksheetRows) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
