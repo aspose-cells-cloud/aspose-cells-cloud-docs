@@ -1,35 +1,33 @@
 ---
-title: "Autofit columns on an Excel file"
+title: "Auto‑fit columns in an Excel file"
 second_title: "Document"
 linktitle: "Columns"
 type: docs
 url: /autofit-columns-on-an-excel-file/
 aliases: [/auto-fit-columns-in-excel-workbooks,/autofit-columns-in-excel-workbooks/,/columns/autofit/,/workbook/autofit/columns/]
-keywords: "Autofit columns, Excel, Aspose.Cells Cloud, REST API, SDK"
-description: "Learn how to use Aspose.Cells Cloud REST API to autofit columns in an Excel workbook. Includes request details, cURL example, and SDK code samples for multiple languages."
+keywords: "Auto‑fit columns, Excel, Aspose.Cells Cloud, REST API, SDK, cURL, API"
+description: "Learn how to use the Aspose.Cells Cloud REST API to auto‑fit columns in an Excel workbook. Includes request details, a cURL example, and SDK code samples for multiple languages."
 weight: 90
 ---
 
-This REST API supports autofitting columns in an Excel workbook.
+This REST API supports auto‑fitting columns in an Excel workbook.
 
 ## REST API
 
 ```bash
- 
 POST http://api.aspose.cloud/v3.0/cells/{name}/autofitcolumns
- 
 ```
 
 The request parameters are:
 
-| Parameter Name          | Type   | Location                     | Description                              |
-|-------------------------|--------|------------------------------|------------------------------------------|
-| **name**                | string | path                         | The name of the workbook file.           |
-| **autoFitterOptions**   | object | body                         | Options that control the autofit behavior. |
-| **startColumn**         | integer| query                        | Zero‑based index of the first column to autofit. |
-| **endColumn**           | integer| query                        | Zero‑based index of the last column to autofit. |
-| **folder**              | string | query                        | The folder that contains the workbook.   |
-| **storageName**         | string | query                        | The name of the storage service.         |
+| Parameter Name        | Type   | Location | Description                                          |
+|-----------------------|--------|----------|------------------------------------------------------|
+| **name**              | string | path     | The name of the workbook file.                       |
+| **autoFitterOptions**| object | body     | Options that control the auto‑fit behavior.          |
+| **startColumn**       | integer| query    | Zero‑based index of the first column to auto‑fit.    |
+| **endColumn**         | integer| query    | Zero‑based index of the last column to auto‑fit.     |
+| **folder**            | string | query    | The folder that contains the workbook.               |
+| **storageName**       | string | query    | The name of the storage service.                     |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PostAutofitWorkbookColumns) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -40,7 +38,7 @@ You can use the cURL command‑line tool to easily access Aspose.Cells web servi
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/autofitcolumns" \
+curl -v "http://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/autofitcolumns" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
