@@ -1,5 +1,5 @@
 ---
-title: "Clear Contents and Styles of Cells in Excel Worksheet"
+title: "Clear Contents and Styles of Cells in an Excel Worksheet"
 type: docs
 url: /clear-contents-and-styles-of-cells-in-excel-worksheet/
 weight: 50
@@ -8,9 +8,10 @@ keywords:
   - Aspose.Cells
   - REST API
   - clear contents
+  - clear styles
   - worksheet
   - cloud API
-description: "Learn how to use Aspose.Cells Cloud REST API to clear cell contents and styles in an Excel worksheet, with examples in cURL and multiple SDKs."
+description: "Learn how to use Aspose.Cells Cloud REST API to clear cell contents and styles in an Excel worksheet, with cURL examples and SDK code snippets."
 ---
 
 This REST API clears the contents of cells in an Excel file.
@@ -23,19 +24,19 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clea
 
 The request parameters are:
 
-| Parameter Name | Type    | Location                     | Description                                   |
-|----------------|---------|------------------------------|-----------------------------------------------|
-| name           | string  | path                         | Name of the workbook.                         |
-| sheetName      | string  | path                         | Name of the worksheet.                        |
-| range          | string  | query                        | Cell range to clear (e.g., `A2:C11`).         |
-| startRow       | integer | query                        | Index of the first row to clear.              |
-| startColumn    | integer | query                        | Index of the first column to clear.           |
-| endRow         | integer | query                        | Index of the last row to clear.               |
-| endColumn      | integer | query                        | Index of the last column to clear.            |
-| folder         | string  | query                        | Folder containing the workbook.               |
-| storageName    | string  | query                        | Name of the storage location.                 |
+| Parameter Name | Type    | Location | Description                                   |
+|----------------|---------|----------|-----------------------------------------------|
+| name           | string  | path     | Name of the workbook.                         |
+| sheetName      | string  | path     | Name of the worksheet.                        |
+| range          | string  | query    | Cell range to clear (e.g., `A2:C11`).         |
+| startRow       | integer | query    | Index of the first row to clear.              |
+| startColumn    | integer | query    | Index of the first column to clear.           |
+| endRow         | integer | query    | Index of the last row to clear.               |
+| endColumn      | integer | query    | Index of the last column to clear.            |
+| folder         | string  | query    | Folder containing the workbook.               |
+| storageName    | string  | query    | Name of the storage location.                 |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostClearContents) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostClearContents) defines a publicly accessible programming interface and allows you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
@@ -44,7 +45,7 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/clearcontents?range=A2:C11" \
+curl -v "http://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/clearcontents?range=A2:C11" \
   -X POST \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
