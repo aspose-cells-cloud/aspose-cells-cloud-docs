@@ -1,14 +1,14 @@
 ---
-title: "Add"
+title: "Add Worksheet Comment"
 type: docs
 url: /comments/add/
 aliases: [/add-a-comment-to-a-cell-in-a-worksheet/]
-keywords: "Aspose.Cells Cloud API, Add Worksheet Comment, REST API, Excel, Spreadsheet"
-description: "Adds a comment to a specific worksheet cell using the Aspose.Cells Cloud REST API."
+keywords: "Aspose.Cells Cloud API, Add Worksheet Comment, REST API, Excel, Spreadsheet, Cell Comment"
+description: "Adds a comment to a specific cell in a worksheet using the Aspose.Cells Cloud REST API."
 weight: 20
 ---
 
-This REST API adds a comment to a worksheet cell.
+This REST API adds a comment to a specific worksheet cell.
 
 ## REST API
 
@@ -18,37 +18,37 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{c
 
 The request parameters are:
 
-| Parameter Name | Type   | Location                     | Description                                            |
-|----------------|--------|------------------------------|--------------------------------------------------------|
-| name           | string | path                         | The name of the workbook file.                         |
-| sheetName      | string | path                         | The name of the worksheet.                             |
-| cellName       | string | path                         | The address of the cell (e.g., **A1**).                |
-| comment        | object | body                         | The **Comment** object that contains the comment data. |
-| folder         | string | query                        | The folder where the workbook is stored.               |
-| storageName    | string | query                        | The name of the storage service.                       |
+| Parameter Name | Type   | Location | Description                                            |
+|----------------|--------|----------|--------------------------------------------------------|
+| name           | string | path     | The name of the workbook file.                         |
+| sheetName      | string | path     | The name of the worksheet.                             |
+| cellName       | string | path     | The address of the cell (e.g., **A1**).                |
+| comment        | object | body     | The **Comment** object that contains the comment data. |
+| folder         | string | query    | The folder where the workbook is stored.               |
+| storageName    | string | query    | The name of the storage service.                       |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PutWorksheetComment) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PutWorksheetComment) defines a publicly accessible programming interface, allowing you to perform REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
-```java
+```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/comments/a1" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--d "{ \"CellName\": \"a1\", \"Author\": \"test\", \"HtmlNote\": \"string\", \"Note\": \"this is a comment\", \"AutoSize\": true, \"IsVisible\": true, \"Width\": 10, \"Height\": 10}"
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{ "CellName": "a1", "Author": "test", "HtmlNote": "string", "Note": "this is a comment", "AutoSize": true, "IsVisible": true, "Width": 10, "Height": 10}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
+```json
 {
   "Comment": {
     "CellName": "A1",
