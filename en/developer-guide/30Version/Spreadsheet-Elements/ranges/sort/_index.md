@@ -5,7 +5,7 @@ linktitle: "Sort"
 type: docs
 keywords: "Range Sort, Aspose.Cells Cloud, REST API, Spreadsheet, Excel, API"
 url: /ranges/sort/
-description: Provides an API to sort a range of cells within a workbook.
+description: Provides an API to sort a range of cells within a workbook using Aspose.Cells Cloud.
 weight: 20
 ---
 
@@ -19,13 +19,13 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/sor
 
 The request parameters are:
 
-| Parameter Name | Type   | Location                     | Description                              |
-|----------------|--------|------------------------------|------------------------------------------|
-| name           | String | Path                         | The workbook name.                       |
-| sheetName      | String | Path                         | The worksheet name.                      |
-| rangeOperate   | Class  | Body                         | The Range Sort request object.           |
-| folder         | String | Query                        | The folder containing the original workbook. |
-| storageName    | String | Query                        | The name of the storage.                 |
+| Parameter Name | Type   | Location | Description                                      |
+|----------------|--------|----------|--------------------------------------------------|
+| name           | String | Path     | The workbook name.                               |
+| sheetName      | String | Path     | The worksheet name.                              |
+| rangeOperate   | Class  | Body     | The Range Sort request object.                   |
+| folder         | String | Query    | The folder containing the original workbook.     |
+| storageName    | String | Query    | The name of the storage.                         |
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/RangesController/PostWorksheetCellsRangeSort) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
