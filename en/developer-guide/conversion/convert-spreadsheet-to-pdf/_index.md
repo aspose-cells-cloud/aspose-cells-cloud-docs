@@ -5,8 +5,8 @@ ArticleTitle: "How to Convert a Local Spreadsheet to PDF Using Aspose.Cells Clou
 linktitle: "Convert Spreadsheet To Pdf"
 type: docs
 url: /convert-spreadsheet-to-pdf/
-keywords: "Aspose.Cells Cloud, spreadsheet to PDF, Excel conversion API, cloud native conversion, PDF generation, file conversion REST API, v4.0"
-description: "Learn how to use the Aspose.Cells Cloud API to convert a local spreadsheet file directly to PDF in the cloud. Get step‑by‑step request details, response format, real‑world use cases, and key benefits."
+keywords: "Aspose.Cells Cloud, spreadsheet to PDF, Excel conversion, cloud API, PDF generation, REST API, v4.0"
+description: "Step‑by‑step guide to converting a local spreadsheet to PDF using Aspose.Cells Cloud API. Includes request syntax, parameters, response details, error handling, and practical use cases."
 weight: 100
 ---
 
@@ -24,41 +24,41 @@ PUT https://api.aspose.cloud/v4.0/cells/convert/spreadsheet/pdf
 
 | Parameter Name | Type   | Location | Required/Optional | Description                                                                                                                                                                                    |
 | :------------- | :----- | :------- | :---------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Spreadsheet    | File   | Required | FormData          | The source spreadsheet file (XLS, XLSX, CSV, etc.) to be converted. Must be a valid, readable file; maximum size is 100 MB. Example: `myWorkbook.xlsx`.                                        |
-| outPath        | String | Optional | Query             | Destination folder path where the converted PDF will be stored on the server (if you want to save it). If omitted, the file is returned directly in the response. Example: `/output/reports/`. |
-| outStorageName | String | Optional | Query             | Name of the target storage service (e.g., `MyCloudStorage`). Required only when `outPath` is used and the storage is not the default.                                                          |
-| fontsLocation  | String | Optional | Query             | Path to a custom fonts folder on the server to ensure proper text rendering in the PDF. Example: `/fonts/custom/`.                                                                             |
-| region         | String | Optional | Query             | Spreadsheet regional setting (e.g., `en-US`, `fr-FR`). Influences number, date, and currency formatting during conversion.                                                                     |
-| password       | String | Optional | Query             | Password required to open a protected spreadsheet. Omit if the file is not encrypted.                                                                                                          |
+| Spreadsheet    | File   | FormData | Required          | The source spreadsheet file (XLS, XLSX, CSV, etc.) to be converted. Must be a valid, readable file; maximum size is 100 MB. Example: `myWorkbook.xlsx`.                                        |
+| outPath        | String | Query    | Optional          | Destination folder path where the converted PDF will be stored on the server (if you want to save it). If omitted, the file is returned directly in the response. Example: `/output/reports/`. |
+| outStorageName | String | Query    | Optional          | Name of the target storage service (e.g., `MyCloudStorage`). Required only when `outPath` is used and the storage is not the default.                                                          |
+| fontsLocation  | String | Query    | Optional          | Path to a custom fonts folder on the server to ensure proper text rendering in the PDF. Example: `/fonts/custom/`.                                                                             |
+| region         | String | Query    | Optional          | Spreadsheet regional setting (e.g., `en-US`, `fr-FR`). Influences number, date, and currency formatting during conversion.                                                                     |
+| password       | String | Query    | Optional          | Password required to open a protected spreadsheet. Omit if the file is not encrypted.                                                                                                          |
 
 ### **Response**
 
-Successful response (200 OK)
-Content-Type: application/pdf
-Content-Disposition: attachment; filename="converted.pdf"
-Content-Length: <size in bytes>
+Successful response (200 OK)  
+Content-Type: application/pdf  
+Content‑Disposition: attachment; filename="converted.pdf"  
+Content‑Length: `<size in bytes>`
 
 Body: binary stream of the generated PDF file
 
 ### Error Codes
 
-- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized**: Invalid access token. Or invalid client id and secret.
-- **404 Not Found**: The spreadsheet file not accessible.
-- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
+- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.  
+- **401 Unauthorized**: Invalid access token or invalid client ID and secret.  
+- **404 Not Found**: The spreadsheet file is not accessible.  
+- **500 Server Error**: The spreadsheet encountered an error while obtaining calculation data.
 
 ## Where should we use the Convert Spreadsheet To Pdf API?
 
-- **Automated reporting pipelines** – Convert daily‑generated Excel reports to PDF for archiving or email distribution without manual steps.
-- **Document management systems** – Store PDFs directly in a DMS after conversion, keeping the original spreadsheet only on the client side.
-- **Web applications with on‑the‑fly export** – Allow end‑users to download a PDF version of a spreadsheet they edit in the browser, leveraging cloud conversion to preserve layout.
+- **Automated reporting pipelines** – Convert daily‑generated Excel reports to PDF for archiving or email distribution without manual steps.  
+- **Document management systems** – Store PDFs directly in a DMS after conversion, keeping the original spreadsheet only on the client side.  
+- **Web applications with on‑the‑fly export** – Allow end‑users to download a PDF version of a spreadsheet they edit in the browser, leveraging cloud conversion to preserve layout.  
 - **Regulatory compliance** – Generate immutable PDF snapshots of financial spreadsheets for audit trails, ensuring the source file never leaves the client environment.
 
 ## Why should you use the Convert Spreadsheet To Pdf API?
 
-- **Zero‑upload workflow** – No need to upload the source file to cloud storage; conversion happens directly from the uploaded stream, saving bandwidth and storage costs.
-- **High‑fidelity rendering** – Aspose.Cells preserves complex formulas, charts, and formatting when converting to PDF, matching desktop Excel output.
-- **Scalable cloud execution** – Leverages Aspose’s cloud infrastructure for fast, reliable conversion regardless of client hardware.
+- **Zero‑upload workflow** – No need to upload the source file to cloud storage; conversion happens directly from the uploaded stream, saving bandwidth and storage costs.  
+- **High‑fidelity rendering** – Aspose.Cells preserves complex formulas, charts, and formatting when converting to PDF, matching desktop Excel output.  
+- **Scalable cloud execution** – Leverages Aspose’s cloud infrastructure for fast, reliable conversion regardless of client hardware.  
 - **Simple REST interface** – A single `PUT` request with optional query parameters; returns a ready‑to‑download PDF stream, making integration straightforward in any language.
 
 ## How to Use the Convert Spreadsheet To Pdf API with SDKs
@@ -71,9 +71,7 @@ The [Convert Spreadsheet To Pdf API Specification](https://reference.aspose.clou
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the fastest way to develop, as it abstracts away the low-level details, allowing you to merge a spreadsheet into another spreadsheet with short code.
-Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
-The following code examples demonstrate how to interact with Aspose.Cells web services using various SDKs:
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to merge a spreadsheet into another spreadsheet with short code. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs. The following code examples demonstrate how to interact with Aspose.Cells web services using various SDKs:
 
 {{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 {{<tab tabNum="1" >}}
