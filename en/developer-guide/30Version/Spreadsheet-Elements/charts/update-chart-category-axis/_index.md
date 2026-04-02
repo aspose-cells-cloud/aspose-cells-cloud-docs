@@ -3,8 +3,8 @@ title: "Update Chart Category Axis"
 type: docs
 url: /charts/category-axis/update/
 weight: 160
-keywords: "Aspose.Cells, REST API, Update Chart Category Axis, Excel, Cloud SDK"
-description: "Documentation for the Aspose.Cells Cloud REST API that updates the category axis of a chart in an Excel worksheet."
+keywords: "Aspose.Cells, REST API, Update Chart Category Axis, Excel, Cloud SDK, chart, category axis"
+description: "Updates the category axis of a chart in an Excel worksheet using the Aspose.Cells Cloud REST API."
 ---
 
 This REST API updates a chart’s category axis.
@@ -17,14 +17,14 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{ch
 
 The request parameters are:
 
-| Parameter Name | Type   | Location                     | Description |
-|----------------|--------|------------------------------|-------------|
-| name           | string | path                         |             |
-| sheetName      | string | path                         |             |
-| chartIndex     | integer| path                         |             |
-| axis           | object | body                         |             |
-| folder         | string | query                        |             |
-| storageName    | string | query                        |             |
+| Parameter Name | Type   | Location | Description |
+|----------------|--------|----------|-------------|
+| name           | string | path     | |
+| sheetName      | string | path     | |
+| chartIndex     | integer| path     | |
+| axis           | object | body     | |
+| folder         | string | query    | |
+| storageName    | string | query    | |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/PostChartCategoryAxis) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
