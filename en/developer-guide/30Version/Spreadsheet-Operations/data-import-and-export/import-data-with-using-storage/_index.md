@@ -1,5 +1,5 @@
 ---
-title: "Import Data with using storage"
+title: "Import Data Using Storage"
 second_title: "Document"
 linktitle: "Import data with storage"
 type: docs
@@ -10,8 +10,8 @@ aliases:
   - /import-data-in-excel-worksheet/
   - /import-data/
   - /import/with-using-storage/
-description: "Use Aspose.Cells Cloud API to import data into an Excel worksheet from various storage sources."
-keywords: "Excel, Aspose.Cells, REST API, Import Data, Cloud Storage, JSON, CSV, PDF, Markdown"
+description: "Import data into an Excel worksheet using Aspose.Cells Cloud API from various storage sources."
+keywords: "Aspose.Cells Cloud, Excel, Import Data, REST API, Cloud Storage, JSON, CSV, PDF, Markdown"
 weight: 10
 ---
 
