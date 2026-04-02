@@ -1,10 +1,10 @@
 ---
-title: "Clear"
+title: "Clear Hyperlinks"
 type: docs
 url: /hyperlinks/clear/
 aliases: [/add-hyperlinks-to-excel-worksheet/]
-keywords: "Aspose.Cells Cloud, Excel, clear hyperlinks, REST API, worksheet, cloud SDK"
-description: "Learn how to remove all hyperlinks from an Excel worksheet using the Aspose.Cells Cloud REST API or any of the supported SDKs (C#, Java, Python, Node.js, Go, PHP, Ruby, Perl, etc.)."
+keywords: "Aspose.Cells Cloud, Excel, clear hyperlinks, delete hyperlinks, REST API, worksheet, SDK"
+description: "Learn how to remove all hyperlinks from an Excel worksheet using the Aspose.Cells Cloud REST API or any supported SDK (C#, Java, Python, Node.js, Go, PHP, Ruby, Perl, etc.)."
 weight: 40
 ---
 
@@ -18,14 +18,14 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlin
 
 The request parameters are:
 
-| Parameter Name | Type   | Location                     | Description                              |
-|----------------|--------|------------------------------|------------------------------------------|
-| name           | string | path                         | The name of the Excel file.              |
-| sheetName      | string | path                         | The name of the worksheet.               |
-| folder         | string | query                        | The folder that contains the document.   |
-| storageName    | string | query                        | The storage service name.                |
+| Parameter Name | Type   | Location | Description |
+|----------------|--------|----------|-------------|
+| name           | string | path     | The name of the Excel file. |
+| sheetName      | string | path     | The name of the worksheet. |
+| folder         | string | query    | The folder that contains the document. |
+| storageName    | string | query    | The storage service name. |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Hypelinks/DeleteWorksheetHyperlinks) defines a publicly accessible programming interface, allowing you to perform REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Hyperlinks/DeleteWorksheetHyperlinks) defines a publicly accessible programming interface, allowing you to perform REST interactions directly from a web browser.
 
 You can use the **cURL** command‑line tool to call Aspose.Cells web services. The example below shows how to delete all hyperlinks from a worksheet.
 
