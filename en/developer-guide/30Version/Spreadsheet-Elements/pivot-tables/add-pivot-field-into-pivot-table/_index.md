@@ -1,12 +1,12 @@
 ---
-title: "Add a pivot field into pivot table"
+title: "Add a Pivot Field to a Pivot Table"
 second_title: "Document"
-linktitle: Add pivot field
+linktitle: "Add Pivot Field"
 type: docs
 url: /pivot-tables/add-pivot-field/
 aliases: [/add-a-pivot-table-in-a-worksheet/]
-keywords: "Aspose.Cells Cloud, pivot table, add pivot field, REST API, SDK, Excel"
-description: "Learn how to add a pivot field to an existing pivot table using the Aspose.Cells Cloud REST API. The guide includes request details, cURL examples, and SDK code snippets for multiple programming languages."
+keywords: "Aspose.Cells Cloud, Excel, pivot table, add pivot field, REST API, SDK"
+description: "Learn how to add a pivot field to an existing pivot table using the Aspose.Cells Cloud REST API. Includes request details, a cURL example, and SDK code snippets for multiple programming languages."
 weight: 40
 ---
 
@@ -20,16 +20,16 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables
 
 ### Request parameters
 
-| Parameter Name   | Type    | Location                     | Description                                    |
-|------------------|---------|------------------------------|------------------------------------------------|
-| name             | string  | path                         | Document name.                                 |
-| sheetName        | string  | path                         | Worksheet name.                                |
-| pivotTableIndex  | integer | path                         | Index of the pivot table.                      |
-| pivotFieldType   | string  | query                        | Type of the fields area (e.g., Row, Column).   |
-| request          | object  | body                         | DTO that contains the field indexes to add.   |
-| needReCalculate  | boolean | query                        | Set to **true** to recalculate the pivot table after the operation. |
-| folder           | string  | query                        | Folder where the document is stored.           |
-| storageName      | string  | query                        | Name of the storage.                           |
+| Parameter Name   | Type    | Location | Description                                    |
+|------------------|---------|----------|------------------------------------------------|
+| name             | string  | path     | Document name.                                 |
+| sheetName        | string  | path     | Worksheet name.                                |
+| pivotTableIndex  | integer | path     | Index of the pivot table.                      |
+| pivotFieldType   | string  | query    | Type of the fields area (e.g., Row, Column).   |
+| request          | object  | body     | DTO that contains the field indexes to add.   |
+| needReCalculate  | boolean | query    | Set to **true** to recalculate the pivot table after the operation. |
+| folder           | string  | query    | Folder where the document is stored.           |
+| storageName      | string  | query    | Name of the storage.                           |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PivotTables/PutPivotTableField) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
