@@ -1,5 +1,5 @@
 ---
-title: "Update"
+title: "Update a Worksheet Cell Comment"
 type: docs
 url: /comments/update/
 aliases: [/update-a-comment-in-excel-workbook/]
@@ -8,7 +8,7 @@ description: "Use Aspose.Cells Cloud REST API to update a comment on a worksheet
 weight: 30
 ---
 
-This REST API updates a worksheet cell comment.
+This REST API updates a comment on a worksheet cell.
 
 ## REST API
 
@@ -18,14 +18,14 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{
 
 The request parameters are:
 
-| Parameter Name | Type   | Location                     | Description                                                            |
-|----------------|--------|------------------------------|------------------------------------------------------------------------|
-| name           | string | path                         | The name of the Excel document.                                        |
-| sheetName      | string | path                         | The name of the worksheet that contains the cell.                      |
-| cellName       | string | path                         | The address of the cell (e.g., **A1**).                                 |
-| comment        | object | body                         | A **Comment** object that defines the comment to be added or updated. |
-| folder         | string | query                        | The folder where the document is stored.                               |
-| storageName    | string | query                        | The name of the storage service.                                       |
+| Parameter Name | Type   | Location | Description                                                            |
+|----------------|--------|----------|------------------------------------------------------------------------|
+| name           | string | path     | The name of the Excel document.                                        |
+| sheetName      | string | path     | The name of the worksheet that contains the cell.                      |
+| cellName       | string | path     | The address of the cell (e.g., **A1**).                                 |
+| comment        | object | body     | A **Comment** object that defines the comment to be added or updated. |
+| folder         | string | query    | The folder where the document is stored.                               |
+| storageName    | string | query    | The name of the storage service.                                       |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetComment) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
