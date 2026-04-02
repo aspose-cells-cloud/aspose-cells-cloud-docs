@@ -4,8 +4,8 @@ type: docs
 url: /charts/get/
 aliases: [/get-chart-from-a-worksheet/]
 weight: 10
-keywords: "Aspose.Cells Cloud, Get Chart, Worksheet, REST API, Excel, Chart API"
-description: "Retrieve chart information from a worksheet using Aspose.Cells Cloud REST API."
+keywords: "Aspose.Cells Cloud, Get Chart, Worksheet, REST API, Excel, Chart API, chart retrieval, Excel chart"
+description: "Retrieve chart information, including metadata and export format, from a worksheet using the Aspose.Cells Cloud REST API."
 ---
 
 This REST API retrieves chart information.
