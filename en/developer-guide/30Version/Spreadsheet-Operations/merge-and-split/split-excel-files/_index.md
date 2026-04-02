@@ -1,40 +1,40 @@
 ---
-title: "Split an Excel workbook to multi-files"
+title: "Split an Excel workbook into multiple files"
 second_title: "Document"
 linktitle: "Split an Excel file"
 type: docs
 url: /split-multi-excel-files/
 aliases: [ /split/multi-files/]
-keywords: "Excel, Aspose.Cells Cloud, REST API, split workbook, multi-file, JPEG, PNG, PDF, CSV, JSON"
+keywords: "Excel, Aspose.Cells Cloud, REST API, split workbook, multiple files, JPEG, PNG, PDF, CSV, JSON"
 description: "The Aspose.Cells Cloud REST API enables splitting an Excel workbook into multiple files in various formats. This documentation provides request parameters, a cURL example, and SDK code samples for languages such as C#, Java, PHP, Ruby, Node.js, Python, Perl, and Go."
 weight: 130
 ---
 
-This REST API splits an Excel `workbook` into multiple files in different formats.
+This REST API splits an Excel **workbook** into multiple files in different formats.
 
 **Query Parameter**
 
-| Parameter Name      | Type    | Description                                          |
-|---------------------|---------|------------------------------------------------------|
-| format              | string  | Desired output format for the split files.           |
-| from                | integer | Starting worksheet index.                            |
-| to                  | integer | Ending worksheet index.                              |
-| horizontalResolution| integer | Image horizontal resolution.                         |
-| verticalResolution  | integer | Image vertical resolution.                           |
-| outFolder           | string  | Output folder for the split files.                   |
-| splitNameRule       | string  | Naming rule applied to split files.                  |
-| folder              | string  | Folder containing the original workbook.             |
-| storageName         | string  | Name of the storage to use.                          |
+| Parameter Name        | Type    | Description                              |
+|-----------------------|---------|------------------------------------------|
+| format                | string  | Desired output format for the split files. |
+| from                  | integer | Starting worksheet index.                |
+| to                    | integer | Ending worksheet index.                  |
+| horizontalResolution  | integer | Image horizontal resolution.             |
+| verticalResolution    | integer | Image vertical resolution.               |
+| outFolder             | string  | Output folder for the split files.       |
+| splitNameRule         | string  | Naming rule applied to split files.      |
+| folder                | string  | Folder containing the original workbook. |
+| storageName           | string  | Name of the storage to use.              |
 
 ## REST API
 
-| **API**                | **Type** | **Description**          | **Swagger Link** |
-|------------------------|----------|--------------------------|------------------|
-| /cells/{name}/split    | POST     | Split an Excel workbook  | [PostWorkbookSplit](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookSplit) |
+| **API**            | **Type** | **Description**          | **Swagger Link** |
+|--------------------|----------|--------------------------|------------------|
+| /cells/{name}/split | POST     | Split an Excel workbook  | [PostWorkbookSplit](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookSplit) |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookSplit) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
