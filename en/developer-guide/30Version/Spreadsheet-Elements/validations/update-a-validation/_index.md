@@ -4,8 +4,8 @@ second_title: "Document"
 linktitle: "Update"
 type: docs
 url: /validations/update/
-keywords: "Update worksheet validation, Excel, Aspose.Cells Cloud, REST API, Spreadsheet, SDK"
-description: "Learn how to update a worksheet validation on an Excel worksheet using the Aspose.Cells Cloud REST API. Includes cURL examples and SDK code snippets for multiple programming languages."
+keywords: "Aspose.Cells Cloud, Excel validation update, REST API, worksheet validation, SDK"
+description: "How to update a worksheet validation in an Excel file using the Aspose.Cells Cloud REST API, with cURL examples and SDK code snippets for multiple programming languages."
 weight: 10
 ---
 
@@ -19,14 +19,14 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validation
 
 The request parameters are:
 
-| Parameter Name | Type   | Location                     | Description                                                               |
-|----------------|--------|------------------------------|---------------------------------------------------------------------------|
-| name           | string | path                         | The name of the workbook file.                                            |
-| sheetName      | string | path                         | The name of the worksheet that contains the validation.                  |
-| validationIndex| integer| path                         | The zero‑based index of the validation to be updated.                     |
-| validation     | object | body                         | A JSON object that defines the updated validation settings.              |
-| folder         | string | query                        | The folder in cloud storage where the workbook is located.                |
-| storageName    | string | query                        | The name of the storage service (if a custom storage is used).           |
+| Parameter Name   | Type    | Location | Description                                                               |
+|------------------|---------|----------|---------------------------------------------------------------------------|
+| name             | string  | path     | The name of the workbook file.                                            |
+| sheetName        | string  | path     | The name of the worksheet that contains the validation.                  |
+| validationIndex  | integer | path     | The zero‑based index of the validation to be updated.                     |
+| validation       | object  | body     | A JSON object that defines the updated validation settings.              |
+| folder           | string  | query    | The folder in cloud storage where the workbook is located.                |
+| storageName      | string  | query    | The name of the storage service (if a custom storage is used).           |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/WorksheetValidations/PostWorksheetValidation) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
