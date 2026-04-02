@@ -5,7 +5,7 @@ linktitle: "Get all"
 type: docs
 url: /pictures/get-all/
 aliases: [/get-picture-from-a-worksheet/]
-keywords: "Aspose.Cells Cloud, Excel worksheet, retrieve all pictures, REST API, SDK"
+keywords: "Aspose.Cells Cloud, Excel worksheet, retrieve all pictures, REST API, SDKs"
 description: "Learn how to retrieve all pictures from an Excel worksheet using the Aspose.Cells Cloud REST API. SDKs are available for Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift."
 weight: 10
 ---
