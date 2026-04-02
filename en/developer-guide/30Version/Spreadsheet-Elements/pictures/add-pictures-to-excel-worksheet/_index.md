@@ -1,12 +1,12 @@
 ---
-title: "Add Picture in an Excel file"
+title: "Add a Picture in an Excel File"
 second_title: "Document"
 linktitle: "Add"
 type: docs
 url: /pictures/add/
 aliases: [/add-pictures-to-excel-worksheet/]
-keywords: "Aspose Cells, Excel, Add Picture, REST API, Cloud SDK, Spreadsheet"
-description: "Use Aspose.Cells Cloud REST API to add a picture to an Excel worksheet. SDKs for Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift simplify integration across platforms."
+keywords: "Aspose.Cells, Excel, Add Picture, REST API, Cloud SDK, Spreadsheet, Worksheet, Image"
+description: "Use Aspose.Cells Cloud REST API to add an image to an Excel worksheet. SDKs for Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift simplify integration across platforms."
 weight: 20
 ---
 
@@ -20,18 +20,18 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
 
 The request parameters are:
 
-| Parameter Name      | Type   | Location                     | Description                                                                                 |
-|---------------------|--------|------------------------------|---------------------------------------------------------------------------------------------|
-| name                | string | path                         | The workbook name.                                                                          |
-| sheetName           | string | path                         | The worksheet name.                                                                         |
-| picture             | object | body                         | Picture object (binary data).                                                               |
-| upperLeftRow        | integer| query                        | Zero‑based index of the upper‑left row where the picture will be placed.                    |
-| upperLeftColumn     | integer| query                        | Zero‑based index of the upper‑left column where the picture will be placed.                 |
-| lowerRightRow       | integer| query                        | Zero‑based index of the lower‑right row of the picture area.                               |
-| lowerRightColumn    | integer| query                        | Zero‑based index of the lower‑right column of the picture area.                            |
-| picturePath         | string | query                        | Path to the picture file; if omitted, the picture data must be supplied in the request body.|
-| folder              | string | query                        | The folder that contains the workbook.                                                      |
-| storageName         | string | query                        | The name of the storage service.                                                            |
+| Parameter Name      | Type   | Location | Description                                                                                 |
+|---------------------|--------|----------|---------------------------------------------------------------------------------------------|
+| name                | string | path     | The workbook name.                                                                          |
+| sheetName           | string | path     | The worksheet name.                                                                         |
+| picture             | object | body     | Picture object (binary data).                                                               |
+| upperLeftRow        | integer| query    | Zero‑based index of the upper‑left row where the picture will be placed.                    |
+| upperLeftColumn     | integer| query    | Zero‑based index of the upper‑left column where the picture will be placed.                 |
+| lowerRightRow       | integer| query    | Zero‑based index of the lower‑right row of the picture area.                               |
+| lowerRightColumn    | integer| query    | Zero‑based index of the lower‑right column of the picture area.                            |
+| picturePath         | string | query    | Path to the picture file; if omitted, the picture data must be supplied in the request body.|
+| folder              | string | query    | The folder that contains the workbook.                                                      |
+| storageName         | string | query    | The name of the storage service.                                                            |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Pictures/PutWorksheetAddPicture) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
