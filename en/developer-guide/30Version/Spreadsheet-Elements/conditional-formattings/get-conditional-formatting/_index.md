@@ -18,13 +18,13 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditional
 
 **Request parameters**
 
-| Parameter Name | Type   | Location | Description                                          |
-|----------------|--------|----------|------------------------------------------------------|
-| name           | string | path     | Name of the workbook file.                           |
-| sheetName      | string | path     | Name of the worksheet that contains the formatting. |
-| index          | integer| path     | Zero‑based index of the conditional formatting rule.|
-| folder         | string | query    | Folder path where the workbook is stored.            |
-| storageName    | string | query    | Name of the storage service.                         |
+| Parameter Name | Type    | Location | Description                                          |
+|----------------|---------|----------|------------------------------------------------------|
+| name           | string  | path     | Name of the workbook file.                           |
+| sheetName      | string  | path     | Name of the worksheet that contains the formatting. |
+| index          | integer | path     | Zero‑based index of the conditional formatting rule. |
+| folder         | string  | query    | Folder path where the workbook is stored.            |
+| storageName    | string  | query    | Name of the storage service.                         |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/GetWorksheetConditionalFormatting) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
