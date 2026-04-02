@@ -1,7 +1,7 @@
 ---
-title: "Aspose.Cells Cloud Excel Move Worksheet Web API - Change Sheet Position Programmatically"
+title: "Aspose.Cells Cloud Excel: Move Worksheet Web API – Change Sheet Position Programmatically"
 second_title: "Document"
-ArticleTitle: "How to Move Worksheets in Excel - Rearrange Sheet Order & Position"
+ArticleTitle: "How to Move Worksheets in Excel – Rearrange Sheet Order & Position"
 linktitle: "Move Worksheet in Spreadsheet"
 type: docs
 url: /move-worksheet-in-spreadsheet/
@@ -10,7 +10,7 @@ description: "Learn how to move worksheets within Excel workbooks to reorganize 
 weight: 100
 ---
 
-Programmatically move worksheets within Excel workbooks using Aspose.Cells Cloud API. Change sheet positions, reorder tabs, and optimize workbook structure through RESTful API calls. Perfect for automating spreadsheet organization and creating standardized workbook layouts.
+Programmatically move worksheets within Excel workbooks using the Aspose.Cells Cloud API. Change sheet positions, reorder tabs, and optimize workbook structure through RESTful API calls. Perfect for automating spreadsheet organization and creating standardized workbook layouts.
 
 ## **Move worksheet from Spreadsheet API**
 
@@ -26,11 +26,11 @@ PUT http://api.aspose.cloud/v4.0/cells/spreadsheet/move/worksheet
 | :- | :- | :- |:- |
 | Spreadsheet | File | FormData | **Required**. The source Excel workbook file (.xlsx, .xls, etc.) containing the worksheet to be repositioned. |
 | worksheet | String | Query | **Required**. The exact name of the worksheet to move (e.g., `Summary`, `RawData_2024`). |
-| position | Integer | Query | **Required**. The new zero-based index position for the worksheet. For example, `0` moves it to the first position, `2` moves it to become the third sheet. |
-| outPath | String | Query | **Optional**. The target folder path in cloud storage where the reorganized workbook will be saved. If `null` or omitted, it may default to the source file's directory. |
+| position | Integer | Query | **Required**. The new zero‑based index position for the worksheet. For example, `0` moves it to the first position, `2` moves it to become the third sheet. |
+| outPath | String | Query | **Optional**. The target folder path in cloud storage where the reorganized workbook will be saved. If `null` or omitted, it defaults to the source file's directory. |
 | outStorageName | String | Query | **Required**. The name identifier of your configured cloud storage service (e.g., `TeamDrive`) where the output file will be stored. |
 | region | String | Query | **Optional**. The locale setting (e.g., `es-MX`) to apply, which may influence certain formatting rules during the save operation. |
-| password | String | Query | **Optional**. The decryption password required to open and modify a password-protected workbook. Omit if the file is not encrypted. |
+| password | String | Query | **Optional**. The decryption password required to open and modify a password‑protected workbook. Omit if the file is not encrypted. |
 
 ### **Response**
 
@@ -48,24 +48,23 @@ PUT http://api.aspose.cloud/v4.0/cells/spreadsheet/move/worksheet
 
 ### Error Codes
 
-- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized**: Invalid access token. Or invalid client id and secret.
-- **404 Not Found**: The spreadsheet file not accessible.
-- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
+- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.  
+- **401 Unauthorized**: Invalid access token, or invalid client ID and secret.  
+- **404 Not Found**: The spreadsheet file is not accessible.  
+- **500 Server Error**: The spreadsheet encountered an anomaly while obtaining calculation data.
 
 ## Where should we use the Move Worksheet in Spreadsheet API?
 
-- **Standardized Report Generation**: After the monthly or quarterly reports are automatically generated, according to the company's standard template requirements, the `Summary` or `Executive Overview` worksheet is automatically moved to the top of the workbook to ensure that the core conclusions are presented when the file is opened.
-- **Data Processing Pipeline**: After processing the raw worksheets from different data sources in the ETL process, the `Processed_Data` worksheet that has been cleaned and transformed is moved to a logical position in the workbook (such as in the middle), forming a clear process structure with the original data and analysis results.
-- **User Customized File Delivery**: After the user selects the preferred layout through the configuration interface (such as placing the chart page at the top), the system automatically rearranges the worksheet order in the workbook according to the selection and delivers the personalized file.
+- **Standardized Report Generation**: After monthly or quarterly reports are automatically generated, the `Summary` or `Executive Overview` worksheet is moved to the top of the workbook to ensure that core conclusions are presented when the file is opened.  
+- **Data Processing Pipeline**: After processing raw worksheets from different data sources in the ETL process, the `Processed_Data` worksheet that has been cleaned and transformed is moved to a logical position in the workbook (e.g., in the middle), creating a clear process structure with the original data and analysis results.  
+- **User‑Customized File Delivery**: After a user selects a preferred layout through a configuration interface (such as placing the chart page at the top), the system automatically rearranges the worksheet order in the workbook according to the selection and delivers the personalized file.
 
 ## Why should you use the Move Worksheet in Spreadsheet API?
 
-- **Developer-Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared to building custom chart rendering solutions, this significantly reduces the development workload.
-- **Reduced Labor Costs**: Reduced the need for positions dedicated to document consolidation.
-- **Pay-per-use**: No upfront investment, only pay for API calls actually used.
+- **Developer‑Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling rapid development and comes with comprehensive documentation. Compared with building custom solutions, this significantly reduces development workload.  
+- **Reduced Labor Costs**: Reduces the need for personnel dedicated to document consolidation.  
+- **Pay‑per‑Use**: No upfront investment; you only pay for the API calls you actually use.  
 - **Zero Maintenance Costs**: No need to maintain servers, update software, or deal with compatibility issues.
-
 
 ## How to Use the Move Worksheet in Spreadsheet API with SDKs
 
@@ -75,8 +74,7 @@ The [Move Worksheet in Spreadsheet API Specification](https://reference.aspose.c
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the fastest way to develop, as it abstracts away the low-level details, allowing you to move worksheet in the spreadsheet with short code.
-Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the fastest way to develop, as it abstracts away low‑level details, allowing you to move worksheets in the spreadsheet with concise code. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.  
 The following code examples demonstrate how to call the Aspose.Cells web services using various SDKs:
 
 {{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
