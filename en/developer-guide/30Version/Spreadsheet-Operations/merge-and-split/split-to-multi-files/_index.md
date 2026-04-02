@@ -1,16 +1,16 @@
 ---
-title: "Split an Excel file to multi files"
+title: "Split an Excel file into multiple files"
 second_title: "Document"
 linktitle: "Split Multi Excel files"
 type: docs
 url: /split-an-excel-file-to-multi-files/
 aliases: [/split-excel-workbooks/,/workbook/split/]
-keywords: "Excel, Aspose.Cells, Cloud, REST API, Split, Spreadsheet, PDF, CSV, JSON, Swift"
-description: "Aspose.Cells Cloud REST API enables splitting multi‑sheet Excel workbooks into separate files. SDKs are available for Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift."
+keywords: "Aspose.Cells Cloud, Excel, Split, REST API, PDF, CSV, JSON, Swift, Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby"
+description: "Use the Aspose.Cells Cloud REST API to split multi‑sheet Excel workbooks into separate files. Supports output formats such as PDF, CSV, and JSON, and is available through SDKs for Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift."
 weight: 32
 ---
 
-This REST API splits multi‑sheet Excel workbooks.
+This REST API splits multi‑sheet Excel workbooks into separate files.
 
 ## REST API
 
@@ -20,13 +20,13 @@ POST http://api.aspose.cloud/v3.0/cells/split
 
 The request parameters are:
 
-| Parameter Name | Type   | Location                | Description                                                       |
-|----------------|--------|-------------------------|-------------------------------------------------------------------|
-| file           | file   | formData                | The Excel workbook to upload.                                     |
-| format         | string | query                   | Desired output format (e.g., `pdf`, `csv`, `json`).               |
-| password       | string | query                   | Password for an encrypted workbook (optional).                   |
-| from           | integer| query                   | Index of the first sheet to include (1‑based).                    |
-| to             | integer| query                   | Index of the last sheet to include (inclusive).                  |
+| Parameter Name | Type   | Location  | Description                                                       |
+|----------------|--------|-----------|-------------------------------------------------------------------|
+| file           | file   | formData  | The Excel workbook to upload.                                     |
+| format         | string | query     | Desired output format (e.g., `pdf`, `csv`, `json`).               |
+| password       | string | query     | Password for an encrypted workbook (optional).                   |
+| from           | integer| query     | Index of the first sheet to include (1‑based).                    |
+| to             | integer| query     | Index of the last sheet to include (inclusive).                  |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostSplit) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
