@@ -6,7 +6,7 @@ type: docs
 url: /worksheets/background/delete/
 aliases: [/delete-background-or-watermark-of-excel-worksheet/]
 keywords: "Aspose.Cells Cloud, Delete worksheet background, Excel, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
-description: "Use Aspose.Cells Cloud REST API to delete the background image of an Excel worksheet. SDKs are available for multiple languages, including C#, Java, PHP, Ruby, Node.js, Python, Perl, and Go."
+description: "Use Aspose.Cells Cloud REST API to delete the background image of an Excel worksheet. SDKs are available for C#, Java, PHP, Ruby, Node.js, Python, Perl, and Go."
 weight: 210
 ---
 
@@ -20,12 +20,12 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/backgrou
 
 The request parameters are:
 
-| Parameter Name | Type   | Location                | Description                                          |
-|----------------|--------|-------------------------|------------------------------------------------------|
-| name           | string | path                    | The name of the Excel file.                          |
-| sheetName      | string | path                    | The name of the worksheet whose background is removed. |
-| folder         | string | query                   | The folder in storage where the file is located.     |
-| storageName    | string | query                   | The name of the storage (if not the default storage).|
+| Parameter Name | Type   | Location | Description                                          |
+|----------------|--------|----------|------------------------------------------------------|
+| name           | string | path     | The name of the Excel file.                          |
+| sheetName      | string | path     | The name of the worksheet whose background is removed. |
+| folder         | string | query    | The folder in storage where the file is located.     |
+| storageName    | string | query    | The name of the storage (if not the default storage).|
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheetBackground) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
