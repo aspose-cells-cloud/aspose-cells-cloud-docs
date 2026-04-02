@@ -5,12 +5,12 @@ linktitle: "Convert Excel"
 type: docs
 url: /convert-an-excel-file-to-different-formats/
 aliases: [/convert-excel-workbook-to-different-file-formats/,/convert/excel-to-different-formats/]
-keywords: "Aspose.Cells Cloud, Excel conversion, REST API, workbook format conversion, CSV, PDF, HTML, JSON, Markdown"
-description: "Use Aspose.Cells Cloud REST API to convert Excel workbooks to a variety of formats such as CSV, PDF, HTML, JSON, and more. Supports multiple SDKs for popular programming languages."
+keywords: "Aspose.Cells Cloud, Excel conversion, file format conversion, REST API, SDK, CSV, PDF, HTML, JSON, Markdown"
+description: "Convert Excel workbooks to formats such as CSV, PDF, HTML, JSON, Markdown, and more using the Aspose.Cells Cloud REST API."
 weight: 10
 ---
 
-This REST API converts an Excel file to different output formats.
+This REST API converts an Excel file to various output formats.
 
 The request is an HTTP **PUT** with multipart content (see [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)).  
 The first part of the multipart body contains the **data file**, and the second part contains the **save options**.
@@ -21,7 +21,7 @@ The first part of the multipart body contains the **data file**, and the second 
 |---------------------------|--------|-------------|
 | `format`                  | string | Target file format (e.g., CSV, XLS, HTML, PDF, XML, TXT, TIFF, PNG, JPG, GIF, EMF, BMP, MD, Numbers, WMF, SVG, etc.). |
 | `password`                | string | Password required to open the source Excel file. |
-| `outPath`                 | string | Full path (including filename and extension) for a single output file, or folder path when multiple files are generated. |
+| `outPath`                 | string | Full path (including filename and extension) for a single output file, or a folder path when multiple files are generated. |
 | `storageName`             | string | Name of the storage where the source file resides. |
 | `checkExcelRestriction`  | bool   | When **true**, validates Excel restrictions before modifying cells or related objects. |
 | `streamFormat`            | string | Format of the input file stream. |
