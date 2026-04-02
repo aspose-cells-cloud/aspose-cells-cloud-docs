@@ -1,12 +1,12 @@
 ---
 title: "Aspose.Cells Cloud File Copy API - An interface for fast copying and batch operations of Excel files in the cloud"
 second_title: "Document"
-ArticleTitle: "Cloud-based Excel File Efficient Management Solution - Detailed Explanation of Aspose.Cells Copy File API's Batch Copy Functionality"
+ArticleTitle: "Cloud-based Excel File Management Solution – Detailed Explanation of Aspose.Cells Copy File API’s Batch Copy Functionality"
 linktitle: "Copy File"
 type: docs
 url: /copy-file/
-keywords: "Excel API, Office Cloud, REST API, Spreadsheet Copy, PDF Conversion, CSV Export, JSON Handling, Markdown Support, Copy Excel File, Match Blank Cells"
-description: "Learn how to use the CopyFile API for Excel to efficiently duplicate spreadsheets and handle various file formats."
+keywords: "Aspose.Cells, Excel API, Cloud File Copy, CopyFile API, REST API, Spreadsheet Management"
+description: "Learn how to use the Aspose.Cells Cloud CopyFile API to efficiently duplicate Excel files and manage them across storage locations."
 weight: 100
 ---
 
@@ -14,7 +14,7 @@ weight: 100
 
 ### API Endpoint
 
-```
+```http
 PUT http://api.aspose.cloud/v4.0/cells/storage/file/copy/{srcPath}
 ```
 
@@ -22,21 +22,21 @@ PUT http://api.aspose.cloud/v4.0/cells/storage/file/copy/{srcPath}
 
 The **copyFile** API allows users to duplicate an Excel file from a specified source path to a destination path, supporting various storage options.
 
-### The request parameters of **copyFile** API are
+### The request parameters of the **copyFile** API are
 
-| Parameter Name       | Type   | Path/Query String/HTTPBody | Description                                  |
-| -------------------- | ------ | --------------------------- | -------------------------------------------- |
-| srcPath              | String | Path                        | The source path of the file to be copied.   |
-| destPath             | String | Query                       | The destination path where the file will be saved. |
-| srcStorageName       | String | Query                       | The name of the source storage.              |
-| destStorageName      | String | Query                       | The name of the destination storage.         |
-| versionId            | String | Query                       | Optional version ID of the file to copy.    |
+| Parameter Name  | Type   | Path/Query String/HTTPBody | Description                                 |
+|-----------------|--------|----------------------------|---------------------------------------------|
+| srcPath         | String | Path                       | The source path of the file to be copied.   |
+| destPath        | String | Query                      | The destination path where the file will be saved. |
+| srcStorageName  | String | Query                      | The name of the source storage.             |
+| destStorageName | String | Query                      | The name of the destination storage.        |
+| versionId       | String | Query                      | Optional version ID of the file to copy.   |
 
 ### **Response Description**
 
 ```json
 {
-Void
+  "Void"
 }
 ```
 
@@ -46,7 +46,7 @@ The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/FileControlle
 
 ## Excel API SDK
 
-Using an SDK is the best way to speed up development. An SDK manages low-level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to accelerate development. An SDK manages low‑level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 
