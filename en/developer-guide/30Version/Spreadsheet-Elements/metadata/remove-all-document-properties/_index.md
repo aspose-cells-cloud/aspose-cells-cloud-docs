@@ -5,8 +5,8 @@ linktitle: "Clear"
 type: docs
 url: /document-properties/clear/
 aliases: [/remove-all-document-properties/]
-keywords: "Aspose Cells, delete document properties, Excel, REST API, cloud SDK, spreadsheet, API reference"
-description: "Learn how to delete all custom and built‑in document properties from Excel files using the Aspose.Cells Cloud REST API and SDKs for multiple programming languages."
+keywords: "Aspose.Cells, delete document properties, clear Excel properties, REST API, cloud SDK, spreadsheet, API reference"
+description: "Step‑by‑step guide to removing all custom and built‑in properties from an Excel workbook using the Aspose.Cells Cloud REST API."
 weight: 58
 ---
 
@@ -20,11 +20,11 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/documentproperties
 
 The request parameters are:
 
-| Parameter Name | Type   | Location                     | Description                     |
-|----------------|--------|------------------------------|---------------------------------|
-| name           | string | path                         | The document name.              |
-| folder         | string | query                        | The document folder.            |
-| storageName    | string | query                        | The storage name.               |
+| Parameter Name | Type   | Location | Description            |
+|----------------|--------|----------|------------------------|
+| name           | string | path     | The document name.     |
+| folder         | string | query    | The document folder.   |
+| storageName    | string | query    | The storage name.      |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Properties/DeleteDocumentProperties) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
