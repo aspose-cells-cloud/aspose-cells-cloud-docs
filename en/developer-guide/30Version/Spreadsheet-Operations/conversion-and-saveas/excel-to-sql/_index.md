@@ -4,8 +4,8 @@ second_title: "Document"
 linktitle: "Excel to SQL"
 type: docs
 url: /convert-excel-file-to-sql-file/
-keywords: "Excel to SQL, Aspose.Cells Cloud, REST API, spreadsheet conversion, SQL file"
-description: "Convert Excel spreadsheets to SQL files using Aspose.Cells Cloud REST API. Supports multiple SDKs and programming languages for seamless integration."
+keywords: "Excel to SQL, Aspose.Cells Cloud, REST API, spreadsheet conversion, SQL file, data migration, API integration"
+description: "Use Aspose.Cells Cloud REST API to convert Excel spreadsheets into SQL files. Supports multiple SDKs and programming languages for seamless integration into your applications."
 weight: 100
 ---
 
@@ -126,8 +126,8 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 
 ## Other APIs Implementing This Function
 
-- **[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)** – Saves an Excel file as HTML with additional settings and stores the result in the specified storage.
+- **[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)** – Saves a workbook in a different format and stores the result in the specified storage.
 
-- **[PUT /cells/convert](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)** – Converts an Excel file to HTML with optional settings and returns the result in the response.
+- **[PUT /cells/convert](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)** – Converts a workbook to another format with optional settings and returns the result in the response.
 
-- **[GET /cells/{name}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)** – Retrieves an Excel file as HTML with optional conversion settings.
+- **[GET /cells/{name}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)** – Retrieves a workbook with optional conversion settings.
