@@ -8,8 +8,8 @@ aliases:
   - /import-integer-array-into-worksheet/
   - /import-data/integer-array/
   - /import/integer-array/
-keywords: "Import integer array, Aspose Cells Cloud, Excel import, REST API, SDK"
-description: "Use Aspose.Cells Cloud REST API to import integer array data into an Excel worksheet. The API works with multipart requests and is supported by multiple SDKs (C#, PHP, Ruby, etc.)."
+keywords: "Aspose.Cells Cloud, Excel, Import integer array, REST API, SDK"
+description: "Import an integer array into an Excel worksheet using Aspose.Cells Cloud REST API. Supports multipart requests and multiple SDKs (C#, PHP, Ruby, etc.)."
 weight: 30
 ---
 
@@ -28,16 +28,16 @@ The important parameters are described in the following table.
 
 ### ImportIntegerArrayOption
 
-| Parameter Name          | Type          | Description                                                                                                   |
-|-------------------------|---------------|---------------------------------------------------------------------------------------------------------------|
-| **FirstRow**            | int           | Zero‑based index of the first row where the data will be placed.                                             |
-| **FirstColumn**         | int           | Zero‑based index of the first column where the data will be placed.                                          |
-| **IsVertical**          | boolean       | `true` to insert the array vertically (down a column); `false` to insert it horizontally (across a row).    |
-| **Data**                | Integer[]     | The integer array to be imported.                                                                             |
-| **DestinationWorksheet**| string        | Name of the worksheet that will receive the data.                                                             |
-| **IsInsert**            | boolean       | `true` to insert rows/columns before writing the data; `false` to overwrite existing cells.                  |
-| **ImportDataType**      | string        | Type of the data being imported. Valid values: `IntArray`, `DoubleArray`, `StringArray`, `TwoDimensionIntArray`, `TwoDimensionDoubleArray`, `TwoDimensionStringArray`, `BatchData`, `csvData`. |
-| **Source**              | FileSource    | Indicates the position of the data file when the **BatchData** parameter is `null`.                         |
+| Parameter Name           | Type      | Description                                                                                                                                                                            |
+|--------------------------|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **FirstRow**             | int       | Zero‑based index of the first row where the data will be placed.                                                                                                                       |
+| **FirstColumn**          | int       | Zero‑based index of the first column where the data will be placed.                                                                                                                    |
+| **IsVertical**           | boolean   | `true` to insert the array vertically (down a column); `false` to insert it horizontally (across a row).                                                                              |
+| **Data**                 | Integer[] | The integer array to be imported.                                                                                                                                                     |
+| **DestinationWorksheet**| string    | Name of the worksheet that will receive the data.                                                                                                                                      |
+| **IsInsert**             | boolean   | `true` to insert rows/columns before writing the data; `false` to overwrite existing cells.                                                                                           |
+| **ImportDataType**       | string    | Type of the data being imported. Valid values: `IntArray`, `DoubleArray`, `StringArray`, `TwoDimensionIntArray`, `TwoDimensionDoubleArray`, `TwoDimensionStringArray`, `BatchData`, `csvData`. |
+| **Source**               | FileSource| Indicates the position of the data file when the **BatchData** parameter is `null`.                                                                                                   |
 
 #### Example Request Body
 
