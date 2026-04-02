@@ -1,12 +1,12 @@
 ---
 title: "Add an OLE object in an Excel worksheet"
 second_title: "Document"
-linktitle: "Add "
+linktitle: "Add OLE object"
 type: docs
 url: /oleobjects/add/
 aliases: [/add-oleobject-to-excel-worksheet/]
-keywords: "OLE object, Excel worksheet, Aspose.Cells Cloud, REST API, SDK"
-description: "Aspose.Cells Cloud REST API lets you add OLE objects to Excel worksheets. Use the API directly or via SDKs for C#, Java, PHP, Ruby, Node.js, Python, Perl, and Go."
+keywords: "Add OLE object, Excel worksheet, Aspose.Cells Cloud, REST API, SDK"
+description: "Use Aspose.Cells Cloud REST API to add OLE objects to Excel worksheets. The API can be called directly or through SDKs for C#, Java, PHP, Ruby, Node.js, Python, Perl, and Go."
 weight: 20
 ---
 
@@ -20,19 +20,19 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects
 
 ### Request parameters
 
-| Parameter Name | Type    | Location                     | Description                                          |
-|----------------|---------|------------------------------|------------------------------------------------------|
-| name           | string  | path                         | The workbook file name.                              |
-| sheetName      | string  | path                         | The worksheet name.                                  |
-| oleObject      | object  | body                         | The OLE object definition.                          |
-| upperLeftRow   | integer | query                        | Row index of the upper‑left corner (default 0).      |
-| upperLeftColumn| integer | query                        | Column index of the upper‑left corner (default 0).   |
-| height         | integer | query                        | Height of the OLE object (default 0).                |
-| width          | integer | query                        | Width of the OLE object (default 0).                 |
-| oleFile        | string  | query                        | Name of the OLE source file.                         |
-| imageFile      | string  | query                        | Name of the preview image file.                      |
-| folder         | string  | query                        | Folder that contains the workbook.                   |
-| storageName    | string  | query                        | Name of the storage to use.                          |
+| Parameter Name | Type    | Location | Description                                          |
+|----------------|---------|----------|------------------------------------------------------|
+| name           | string  | path     | The workbook file name.                              |
+| sheetName      | string  | path     | The worksheet name.                                  |
+| oleObject      | object  | body     | The OLE object definition.                          |
+| upperLeftRow   | integer | query    | Row index of the upper‑left corner (default 0).      |
+| upperLeftColumn| integer | query    | Column index of the upper‑left corner (default 0).   |
+| height         | integer | query    | Height of the OLE object (default 0).                |
+| width          | integer | query    | Width of the OLE object (default 0).                 |
+| oleFile        | string  | query    | Name of the OLE source file.                         |
+| imageFile      | string  | query    | Name of the preview image file.                      |
+| folder         | string  | query    | Folder that contains the workbook.                   |
+| storageName    | string  | query    | Name of the storage to use.                          |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/OleObjects/PutWorksheetOleObject) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
@@ -48,7 +48,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/oleobje
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
   -H "Authorization: Bearer <jwt token>" \
-  -d '{"ImageSourceFullName":"aspose-logo.png", "IsAutoSize":true, "SourceFullName":"Sample_Book2.xls", "UpperLeftRow":15, "Top":10, "UpperLeftColumn":5, "Left":10,"Width":400, "Height":400}'
+  -d '{"ImageSourceFullName":"aspose-logo.png", "IsAutoSize":true, "SourceFullName":"Sample_Book2.xls", "UpperLeftRow":15, "Top":10, "UpperLeftColumn":5, "Left":10, "Width":400, "Height":400}'
 ```
 
 {{< /tab >}}
