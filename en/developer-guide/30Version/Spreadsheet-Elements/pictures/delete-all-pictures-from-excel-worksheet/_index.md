@@ -5,8 +5,8 @@ linktitle: "Clear"
 type: docs
 url: /pictures/clear/
 aliases: [/delete-all-pictures-from-excel-worksheet/]
-keywords: "Aspose.Cells Cloud, Excel, delete pictures, worksheet, REST API"
-description: "Learn how to use Aspose.Cells Cloud REST API to delete all pictures from a specific worksheet in an Excel file. Includes cURL examples and SDK code snippets for multiple programming languages."
+keywords: "Aspose.Cells Cloud, Excel, delete all pictures, worksheet, REST API"
+description: "How to delete all pictures from a worksheet in an Excel file using the Aspose.Cells Cloud REST API, with cURL and SDK code examples."
 weight: 60
 ---
 
@@ -20,12 +20,12 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
 
 **Request parameters**
 
-| Parameter Name | Type   | Location                     | Description                                 |
-|----------------|--------|------------------------------|---------------------------------------------|
-| name           | string | Path                         | Name of the Excel file.                     |
-| sheetName      | string | Path                         | Name of the worksheet containing pictures. |
-| folder         | string | Query                        | Folder where the file is stored.            |
-| storageName    | string | Query                        | Name of the storage service.                |
+| Parameter Name | Type   | Location | Description                     |
+|----------------|--------|----------|---------------------------------|
+| name           | string | Path     | Name of the Excel file.         |
+| sheetName      | string | Path     | Name of the worksheet containing pictures. |
+| folder         | string | Query    | Folder where the file is stored. |
+| storageName    | string | Query    | Name of the storage service.    |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Pictures/DeleteWorksheetPictures) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
