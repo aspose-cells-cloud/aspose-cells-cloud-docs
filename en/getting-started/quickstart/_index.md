@@ -1,23 +1,22 @@
 ---
-title: "Aspose.Cells Cloud Quickstart: Create a spreadsheet application in 5 minutes."
+title: "Aspose.Cells Cloud Quickstart: Create a spreadsheet application in 5 minutes"
 second_title: "Document"
 ArticleTitle: "Aspose.Cells Cloud Quickstart"
 linktitle: "Quickstart"
 type: docs
 url: /quickstart/
-description: "Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on."
+description: "Aspose.Cells Cloud enables creating, converting, merging, splitting, protecting Excel files and performing inner‑object operations, among many other features."
 weight: 20
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Quickstart
+keywords: "Aspose.Cells Cloud, Excel, Spreadsheet, API, Cloud SDK, REST API, PDF, CSV, JSON, Quickstart"
 ---
 
+These instructions guide you through initializing the Aspose.Cells Cloud API and installing the required spreadsheet‑processing libraries.
 
-These instructions guide you through initializing Aspose.Cells Cloud API and installing the required spreadsheet-processing libraries.
-
-You can easily integrate spreadsheet conversion, generation and editing features into applications running on any modern OS. They assist to read, edit, merge, split spreadsheets as well as convert spreadsheets to various file formats. These programming libraries allow you to work with a complete set of Spreadsheet components, such as data, styles, formulas, tables, chart, pivot table, headers, footers, comments, drawing objects, hyperlinks, watermarks, and much more.
+You can easily integrate spreadsheet conversion, generation, and editing features into applications running on any modern OS. They enable you to read, edit, merge, and split spreadsheets as well as convert them to various file formats. These programming libraries allow you to work with a complete set of spreadsheet components, such as data, styles, formulas, tables, charts, pivot tables, headers, footers, comments, drawing objects, hyperlinks, watermarks, and much more.
 
 ## Create a Free Account
 
-Aspose Cloud relies on a clear and comfortable sales model, that you can fully evaluate and test a product before committing to buying it.
+Aspose Cloud relies on a clear and comfortable pricing model that lets you fully evaluate and test the product before committing to a purchase.
 
 First, you need to create a free account to have access to Cloud infrastructure:
 
@@ -35,7 +34,7 @@ Congratulations! You have successfully signed up with Aspose Cloud.
 
 Next, you need to make individual adjustments to your account:
 
-- Access your [Aspose Account Settings](https://id.containerize.com/admin/) by clicking  the icon in the upper-right corner of the page.
+- Access your [Aspose Account Settings](https://id.containerize.com/admin/) by clicking the icon in the upper‑right corner of the page.
 
 ![dashboard.png](dashboard.png)
 
@@ -45,7 +44,7 @@ Next, you need to make individual adjustments to your account:
 
 ## Get Your Security Credentials (Client Id & Secret)
 
-Aspose attaches great importance to security issues. We use the JWT token for the  authentication and end-to-end HTTPS encryption to secure all client-server interactions.
+Aspose attaches great importance to security issues. We use the JWT token for authentication and end‑to‑end HTTPS encryption to secure all client‑server interactions.
 
 An Application is a set of unique API credentials — **Client Id** and **Client Secret**. You can use them to authenticate when calling our Cloud API. In most cases, you require just a single Application. In some advanced scenarios, you may want to register and use several Applications with separate **Client Id & Secret** credentials.
 
@@ -56,15 +55,15 @@ To access information about your Applications, please perform the following step
 
 ![applications.png](applications.png)
 
-3. Scroll down to the bottom of the page, you can find a Create New Application button, click it to create it.
+3. Scroll down to the bottom of the page; you will find a **Create New Application** button. Click it to create a new application.
 
 ![createnewapplication.png](createnewapplication.png)
 
-4. Enter the creation page, select and enter the name, description, and storage address you want to build, and click the save button to return to the previous page after successful creation.
+4. On the creation page, enter the name, description, and storage address you want, then click the **Save** button to return to the previous page after successful creation.
 
 ![applicationinfo.png](applicationinfo.png)
 
-5. Scroll down to the bottom of the page, you will see the Application information box you just created, click it to view and update your security credentials.
+5. Scroll down to the bottom of the page; you will see the Application information box you just created. Click it to view and update your security credentials.
 
 ![firstapp.png](firstapp.png)
 
@@ -76,7 +75,7 @@ Congratulations! You have successfully obtained your security credentials to aut
 
 ## Choose and Install SDK
 
-Please take a moment to familiarize yourself with a wide range of Aspose.Cells Cloud products for a better understanding of your possibilities. These software products are built around a high-performance [Cloud API](https://apireference.aspose.com/), available 24/7.
+Please take a moment to familiarize yourself with a wide range of Aspose.Cells Cloud products for a better understanding of your possibilities. These software products are built around a high‑performance [Cloud API](https://apireference.aspose.com/), available 24/7.
 
 For the effective use of Cloud API, we provide a family of powerful [Cloud SDKs](https://products.aspose.cloud/cells/family) for almost all major operating systems (Windows, macOS, Linux, Android) and popular programming languages, including [Android](https://products.aspose.cloud/cells/android), [C#](https://products.aspose.cloud/cells/net), [Python](https://products.aspose.cloud/cells/python), [Golang](https://products.aspose.cloud/cells/go), [Java](https://products.aspose.cloud/cells/java), [Node.js](https://products.aspose.cloud/cells/nodejs), [Perl](https://products.aspose.cloud/cells/perl), [PHP](https://products.aspose.cloud/cells/php), [Ruby](https://products.aspose.cloud/cells/ruby), and [Swift](https://products.aspose.cloud/cells/swift).
 
@@ -142,4 +141,4 @@ e.g. Convert a Workbook to other formats.
 
 ## Ask for Assistance, If Necessary
 
-Feel free to describe your problems and ask questions on our [Cloud Forums](https://forum.aspose.cloud/c/cells/7). Aspose technical support team is ready to help you. Have a note that Aspose does not provide technical support over the phone. Phone support is available only for sales and purchase questions.
+Feel free to describe your problems and ask questions on our [Cloud Forums](https://forum.aspose.cloud/c/cells/7). The Aspose technical support team is ready to help you. Note that Aspose does not provide technical support over the phone; phone support is available only for sales and purchase questions.
