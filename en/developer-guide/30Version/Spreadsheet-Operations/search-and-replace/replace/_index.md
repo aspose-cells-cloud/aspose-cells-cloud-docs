@@ -4,8 +4,8 @@ second_title: "Document"
 linktitle: "Replace without using storage"
 type: docs
 url: /replace/
-keywords: "Excel replace text, Aspose.Cells Cloud, REST API, spreadsheet replace, API"
-description: "Use Aspose.Cells Cloud REST API to replace existing text with new values in Excel files. Supports multiple SDKs for languages such as C#, Java, Python, Node.js, PHP, Ruby, Go, and Perl."
+keywords: "Excel replace text, Aspose.Cells Cloud, REST API, spreadsheet replace, API, Excel file text replacement"
+description: "Use Aspose.Cells Cloud REST API to replace existing text with new values in Excel files. Supports SDKs for C#, Java, Python, Node.js, PHP, Ruby, Go, and Perl."
 weight: 80
 ---
 
@@ -36,7 +36,7 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/replace?text=1&newtext=aspose.cells.cloud" \
+curl -v "https://api.aspose.cloud/v3.0/cells/replace?text=1&newtext=aspose.cells.cloud" \
 -X POST \
 -H "Content-Type: multipart/form-data" \
 -H "Accept: application/json" \
