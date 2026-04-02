@@ -1,5 +1,5 @@
 ---
-title: "SaveAs Excel"
+title: "Save As Excel"
 second_title: "Document"
 linktitle: "Save as"
 type: docs
@@ -7,36 +7,36 @@ url: /save-an-excel-file-as-other-formats-files/
 aliases:
   - /convert-excel-workbook-to-different-file-formats/
   - /saveas-other-formats/
-keywords: "SaveAs, Excel, Aspose Cells Cloud, REST API, file format conversion, PDF, CSV, JSON, Markdown"
+keywords: "Save As, Excel, Aspose Cells Cloud, REST API, file format conversion, PDF, CSV, JSON, Markdown"
 description: "Use Aspose.Cells Cloud REST API to save Excel workbooks in multiple formats such as PDF, CSV, JSON, and Markdown. SDKs are available for many programming languages."
 weight: 30
 ---
 
-This REST API allows you to **save** an Excel file in different formats.
+This REST API allows you **to save** an Excel file in different formats.
 
 **Path Parameter**
 
-| Parameter Name | Type   | Description                     |
-|----------------|--------|---------------------------------|
-| name           | string | The name of the Excel file.     |
+| Parameter Name | Type   | Description                 |
+|----------------|--------|-----------------------------|
+| name           | string | The name of the Excel file. |
 
 **Query Parameter**
 
-| Parameter Name               | Type   | Description                                                                                 |
-|------------------------------|--------|---------------------------------------------------------------------------------------------|
-| newfilename                  | string | New file name for the saved document.                                                       |
-| isAutoFitRows                | string | If true, automatically fits all rows in the workbook. Default is `false`.                 |
-| isAutoFitColumns             | string | If true, automatically fits column widths in the workbook. Default is `false`.            |
-| folder                       | string | Folder containing the original workbook.                                                    |
-| storageName                  | string | Name of the storage where the source file is located.                                       |
-| outStorageName               | string | Name of the storage where the output file will be saved.                                    |
-| checkExcelRestriction        | bool   | Specifies whether to enforce Excel restrictions when modifying cells or related objects.   |
-| region                       | string | Regional settings applied to the workbook.                                                  |
-| pageWideFitOnPerSheet        | bool   | Fit the page width to each worksheet when converting.                                       |
-| pageTallFitOnPerSheet        | bool   | Fit the page height to each worksheet when converting.                                      |
-| sheetName                    | string | Name of the worksheet to convert.                                                           |
-| pageIndex                    | string | Index of the page to convert within the specified worksheet (requires `sheetName`).       |
-| onePagePerSheet              | bool   | When converting to PDF, generate one page per worksheet.                                    |
+| Parameter Name        | Type   | Description                                                                                 |
+|-----------------------|--------|---------------------------------------------------------------------------------------------|
+| newfilename           | string | New file name for the saved document.                                                       |
+| isAutoFitRows         | string | If true, automatically fits all rows in the workbook. Default is `false`.                 |
+| isAutoFitColumns      | string | If true, automatically fits column widths in the workbook. Default is `false`.            |
+| folder                | string | Folder containing the original workbook.                                                    |
+| storageName           | string | Name of the storage where the source file is located.                                       |
+| outStorageName        | string | Name of the storage where the output file will be saved.                                    |
+| checkExcelRestriction | bool   | Specifies whether to enforce Excel restrictions when modifying cells or related objects.   |
+| region                | string | Regional settings applied to the workbook.                                                  |
+| pageWideFitOnPerSheet | bool   | Fit the page width to each worksheet when converting.                                       |
+| pageTallFitOnPerSheet | bool   | Fit the page height to each worksheet when converting.                                      |
+| sheetName             | string | Name of the worksheet to convert.                                                           |
+| pageIndex             | string | Index of the page to convert within the specified worksheet (requires `sheetName`).       |
+| onePagePerSheet       | bool   | When converting to PDF, generate one page per worksheet.                                    |
 
 **Request Body Parameter**
 
@@ -46,9 +46,9 @@ This REST API allows you to **save** an Excel file in different formats.
 
 ## REST API
 
-| API                     | Type | Description                | Resource Link |
-|-------------------------|------|----------------------------|---------------|
-| /cells/{name}/saveAs    | POST | Export workbook to a format | [PostDocumentSaveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) |
+| API                  | Type | Description                | Resource Link |
+|----------------------|------|----------------------------|---------------|
+| /cells/{name}/saveAs | POST | Export workbook to a format | [PostDocumentSaveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
