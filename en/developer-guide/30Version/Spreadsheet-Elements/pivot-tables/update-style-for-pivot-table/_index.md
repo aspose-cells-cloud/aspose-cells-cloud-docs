@@ -5,12 +5,12 @@ linktitle: "Format all"
 type: docs
 url: /pivot-tables/format-all/
 aliases: [/update-style-for-pivot-table/]
-keywords: "pivot table, update style, Aspose.Cells Cloud, REST API, Excel, spreadsheet, API"
-description: "Learn how to update the style of an entire pivot table using the Aspose.Cells Cloud REST API. Includes request details, cURL example, and SDK snippets for multiple programming languages."
+keywords: "pivot table, update style, Aspose.Cells Cloud, REST API, Excel, spreadsheet, API, pivot table style, format all"
+description: "Learn how to update the style of an entire pivot table using the Aspose.Cells Cloud REST API. Includes request details, a cURL example, and SDK snippets for multiple programming languages."
 weight: 100
 ---
 
-This REST API updates the style for a pivot table.
+This REST API updates the style of a pivot table.
 
 ## REST API
 
@@ -20,15 +20,15 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottable
 
 The request parameters are:
 
-| Parameter Name   | Type   | Location                     | Description                                          |
-|------------------|--------|------------------------------|------------------------------------------------------|
-| name             | string | path                         | The name of the workbook file.                       |
-| sheetName        | string | path                         | The worksheet that contains the pivot table.         |
-| pivotTableIndex  | integer| path                         | Zero‑based index of the pivot table to be formatted. |
-| style            | object | body                         | A style DTO that defines the formatting to apply.   |
-| needReCalculate  | boolean| query                        | Set to **true** to recalculate the pivot table after formatting; default is **false**. |
-| folder           | string | query                        | The folder where the workbook is stored.             |
-| storageName      | string | query                        | The name of the storage service.                     |
+| Parameter Name   | Type    | Location | Description                                          |
+|------------------|---------|----------|------------------------------------------------------|
+| name             | string  | path     | The name of the workbook file.                       |
+| sheetName        | string  | path     | The worksheet that contains the pivot table.         |
+| pivotTableIndex  | integer | path     | Zero‑based index of the pivot table to be formatted. |
+| style            | object  | body     | A style DTO that defines the formatting to apply.   |
+| needReCalculate  | boolean | query    | Set to **true** to recalculate the pivot table after formatting; default is **false**. |
+| folder           | string  | query    | The folder where the workbook is stored.             |
+| storageName      | string  | query    | The name of the storage service.                     |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PivotTables/PostPivotTableStyle) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -39,7 +39,7 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables/0/FormatAll" \
+curl -v "http://api.aspose.cloud/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables/0/FormatAll" \
   -X POST \
   -d '{"Font":{"Name":"Arial","Size":10}}' \
   -H "Content-Type: application/json" \
