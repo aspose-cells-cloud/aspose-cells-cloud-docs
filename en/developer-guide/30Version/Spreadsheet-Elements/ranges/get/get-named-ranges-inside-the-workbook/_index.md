@@ -1,17 +1,16 @@
 ---
-title: "Get Named Ranges on an Excel workbook"
+title: "Get Named Ranges on an Excel Workbook"
 second_title: "Document"
 linktitle: "Name"
 type: docs
 url: /ranges/get/name/
 aliases: [/get-named-ranges-inside-the-workbook/]
-keywords: "named ranges, Excel, Aspose.Cells Cloud, REST API, get named ranges, worksheets"
-description: "Use Aspose.Cells Cloud REST API to retrieve named ranges from an Excel workbook. Includes request details, sample cURL commands, and SDK examples for multiple programming languages."
+keywords: "named ranges, Excel, Aspose.Cells Cloud, REST API, get named ranges, worksheets, API, cloud SDK"
+description: "Retrieve named ranges from an Excel workbook using the Aspose.Cells Cloud REST API. Includes request details, sample cURL commands, and SDK examples for multiple programming languages."
 weight: 10
-
 ---
 
-This REST API returns information about named ranges defined in worksheets.
+This REST API returns information about named ranges defined within worksheets.
 
 ## REST API
 
@@ -21,15 +20,15 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/ranges
 
 ### Request parameters
 
-| Parameter Name | Type   | Location                | Description                              |
-|----------------|--------|-------------------------|------------------------------------------|
-| name           | string | Path                    | The name of the Excel document.          |
-| folder         | string | Query string            | The folder that contains the document.   |
-| storageName    | string | Query string            | The storage name where the document resides.|
+| Parameter Name | Type   | Location      | Description                              |
+|----------------|--------|---------------|------------------------------------------|
+| name           | string | Path          | The name of the Excel document.          |
+| folder         | string | Query string  | The folder that contains the document.   |
+| storageName    | string | Query string  | The storage name where the document resides.|
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/GetNamedRanges) defines a publicly accessible programming interface that lets you perform REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to call Aspose.Cells web services. The example below demonstrates how to retrieve named ranges with cURL.
+You can use the cURL command‑line tool to call Aspose.Cells web services. The example below demonstrates how to retrieve named ranges using cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
