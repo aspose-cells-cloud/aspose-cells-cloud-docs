@@ -1,12 +1,12 @@
 ---
-title: "Add an Excel worksheet"
+title: "Add an Excel Worksheet"
 second_title: "Document"
 linktitle: "Add"
 type: docs
 url: /worksheets/add/
 aliases: [/add-a-new-excel-worksheet/]
-keywords: "Add Excel worksheet, Aspose.Cells Cloud, REST API, worksheet, PUT request, SDK"
-description: "Learn how to add a new worksheet to an Excel file using Aspose.Cells Cloud REST API. Includes request details, cURL example, and SDK code snippets for multiple programming languages."
+keywords: "Add Excel worksheet, Aspose.Cells Cloud, REST API, PUT worksheet, Excel workbook, API request"
+description: "Step‑by‑step guide to add a new worksheet to an Excel workbook using Aspose.Cells Cloud REST API, including request details, a cURL example, and SDK code snippets for multiple languages."
 weight: 20
 ---
 
@@ -20,14 +20,14 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
 
 The request parameters are:
 
-| Parameter Name | Type    | Location                     | Description                                 |
-|----------------|---------|------------------------------|---------------------------------------------|
-| name           | string  | path                         | Name of the workbook file.                  |
-| sheetName      | string  | path                         | Name of the new worksheet to be created.   |
-| position       | integer | query                        | Zero‑based position where the sheet is inserted. |
-| sheettype      | string  | query                        | Type of the new sheet (e.g., **Chart**, **Dialog**). |
-| folder         | string  | query                        | Folder that contains the workbook.          |
-| storageName    | string  | query                        | Name of the Aspose Cloud storage.           |
+| Parameter Name | Type    | Location | Description                                 |
+|----------------|---------|----------|---------------------------------------------|
+| name           | string  | path     | Name of the workbook file.                  |
+| sheetName      | string  | path     | Name of the new worksheet to be created.   |
+| position       | integer | query    | Zero‑based position where the sheet is inserted. |
+| sheettype      | string  | query    | Type of the new sheet (e.g., **Chart**, **Dialog**). |
+| folder         | string  | query    | Folder that contains the workbook.          |
+| storageName    | string  | query    | Name of the Aspose Cloud storage.           |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PutAddNewWorksheet) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
