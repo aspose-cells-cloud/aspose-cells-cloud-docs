@@ -1,12 +1,12 @@
 ---
-title: "Get an auto filter in an Excel worksheet"
+title: "Get an AutoFilter in an Excel worksheet"
 second_title: "Document"
-linktitle: "Get auto filter"
+linktitle: "Get AutoFilter"
 type: docs
 url: /autofilter/get/
 aliases: [/get-autofilter-description/]
-keywords: "AutoFilter, Excel worksheet, Aspose.Cells Cloud, REST API"
-description: "Retrieve the AutoFilter description from an Excel worksheet using the Aspose.Cells Cloud REST API. Supports SDKs for C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, and more."
+keywords: "AutoFilter, Excel, Aspose.Cells Cloud, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
+description: "Retrieve the AutoFilter description from an Excel worksheet using the Aspose.Cells Cloud REST API. The endpoint is compatible with SDKs for C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, and more."
 weight: 50
 ---
 
