@@ -1,12 +1,12 @@
 ---
-title: "Calculate formula on an Excel worksheet"
+title: "Calculate a formula on an Excel worksheet"
 second_title: "Document"
 linktitle: "Calculate"
 type: docs
 url: /worksheets/calculate-formula/
 aliases: [/calculate-formula-in-a-worksheet/]
-keywords: "Aspose.Cells Cloud, Excel formula calculation, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, Swift"
-description: "Use Aspose.Cells Cloud REST API to calculate formulas in an Excel worksheet. The API supports multiple SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, Swift) and provides ready‑to‑use examples."
+keywords: "Aspose.Cells Cloud, Excel, formula calculation, REST API, SDKs, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, Swift"
+description: "Calculate formulas in an Excel worksheet using Aspose.Cells Cloud REST API. Supports multiple SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, Swift) with ready‑to‑use examples."
 weight: 20
 ---
 
@@ -20,17 +20,17 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/formulaResu
 
 The request parameters are:
 
-| Parameter Name | Type   | Location                     | Description                                 |
-|----------------|--------|------------------------------|---------------------------------------------|
-| name           | string | path                         | Name of the Excel file.                     |
-| sheetName      | string | path                         | Name of the worksheet that contains the formula. |
-| formula        | string | query                        | The formula to be evaluated (e.g., `SUM(A5:A10)`). |
-| folder         | string | query                        | Folder where the document is stored.        |
-| storageName    | string | query                        | Name of the storage service (if applicable).|
+| Parameter Name | Type   | Location | Description |
+|----------------|--------|----------|-------------|
+| name           | string | path     | Name of the Excel file. |
+| sheetName      | string | path     | Name of the worksheet that contains the formula. |
+| formula        | string | query    | The formula to be evaluated (e.g., `SUM(A5:A10)`). |
+| folder         | string | query    | Folder where the document is stored. |
+| storageName    | string | query    | Name of the storage service (if applicable). |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetCalculateFormula) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
-You can use the **cURL** command‑line tool to call Aspose.Cells web services easily. The example below shows how to request a formula result with cURL.
+You can use the **cURL** command‑line tool to call Aspose.Cells Cloud web services easily. The example below shows how to request a formula result with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
