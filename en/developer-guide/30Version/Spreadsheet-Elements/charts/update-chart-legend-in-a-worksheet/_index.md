@@ -4,8 +4,8 @@ type: docs
 url: /charts/legend/update/
 aliases: [/update-chart-legend-in-a-worksheet/]
 weight: 160
-keywords: Excel, Aspose.Cells, REST API, Chart Legend, Worksheet, Cloud SDK
-description: "Learn how to update a chart legend in an Excel worksheet using the Aspose.Cells Cloud REST API, with cURL examples and SDK code snippets for multiple programming languages."
+keywords: "Aspose.Cells Cloud, Excel, Chart Legend, REST API, Update Chart Legend, Worksheet, cURL, SDK"
+description: "How to update a chart legend in an Excel worksheet using the Aspose.Cells Cloud REST API, with cURL request examples and SDK code snippets for multiple programming languages."
 ---
 
 This REST API updates a chart legend.
@@ -18,14 +18,14 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{ch
 
 The request parameters are:
 
-| Parameter Name | Type   | Location                     | Description                                   |
-|----------------|--------|------------------------------|-----------------------------------------------|
-| name           | string | path                         | Workbook name.                                |
-| sheetName      | string | path                         | Worksheet name.                               |
-| chartIndex     | integer| path                         | Index of the chart to modify.                 |
-| legend         | object | body                         | JSON object that defines the legend settings.|
-| folder         | string | query                        | Folder that contains the workbook.            |
-| storageName    | string | query                        | Name of the storage.                          |
+| Parameter Name | Type    | Location | Description                                 |
+|----------------|---------|----------|---------------------------------------------|
+| name           | string  | path     | Workbook name.                              |
+| sheetName      | string  | path     | Worksheet name.                             |
+| chartIndex     | integer | path     | Index of the chart to modify.               |
+| legend         | object  | body     | JSON object that defines the legend settings. |
+| folder         | string  | query    | Folder that contains the workbook.          |
+| storageName    | string  | query    | Name of the storage.                        |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/PostWorksheetChartLegend) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
