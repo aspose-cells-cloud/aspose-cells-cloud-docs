@@ -5,8 +5,8 @@ linktitle: "Values"
 type: docs
 url: /ranges/get/values/
 aliases: [/get-cells-data-based-on-named-range/]
-keywords: "Get cells data based on named range, Aspose.Cells Cloud, REST API, Excel worksheet, named range values"
-description: "Use Aspose.Cells Cloud REST API to retrieve cell values from a named range in an Excel worksheet. The API is available through multiple SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) and supports a wide range of development platforms."
+keywords: "Aspose.Cells Cloud, REST API, Excel, named range, get cell values, worksheet range, API reference"
+description: "Retrieve cell values from a named range in an Excel worksheet using the Aspose.Cells Cloud REST API. The service is accessible through multiple SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) and works across a wide variety of development platforms."
 weight: 20
 ---
 
