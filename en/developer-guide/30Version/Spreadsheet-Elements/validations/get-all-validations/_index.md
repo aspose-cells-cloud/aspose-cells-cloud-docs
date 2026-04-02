@@ -1,11 +1,11 @@
 ---
-title: "Get all worksheet validations from an Excel worksheet"
+title: "Get All Worksheet Validations from an Excel Worksheet"
 second_title: "Document"
-linktitle: "Get all"
+linktitle: "Get All"
 type: docs
 url: /validations/get-all/
-keywords: "Excel, worksheet validations, Aspose.Cells Cloud, REST API, Get all validations"
-description: "Retrieve all worksheet validations from an Excel worksheet using the Aspose.Cells Cloud REST API. The service supports multiple SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) for rapid integration."
+keywords: "Aspose.Cells Cloud, Excel, worksheet validations, REST API, Get all validations, SDKs"
+description: "Retrieve all worksheet validations from an Excel worksheet using the Aspose.Cells Cloud REST API. Supports multiple SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) for rapid integration."
 weight: 10
 ---
 
@@ -28,7 +28,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/WorksheetValidations/GetWorksheetValidations) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The example below shows how to call the Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells Cloud web services easily. The example below shows how to call the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
