@@ -1,16 +1,16 @@
 ---
-title: "Add horizontal page break"
+title: "Add Horizontal Page Break"
 second_title: "Document"
-linktitle: "Add horizontal page break"
+linktitle: "Add Horizontal Page Break"
 type: docs
 url: /page-breaks/add-horizontal-page-break/
 aliases: [/insert-horizontal-page-break-inside-worksheet/]
-keywords: "horizontal page break, Excel, Aspose.Cells Cloud, REST API, SDK"
-description: "Learn how to add a horizontal page break to an Excel worksheet using the Aspose.Cells Cloud REST API. Includes request details, cURL example, and SDK code snippets for multiple programming languages."
+keywords: "horizontal page break, Excel, Aspose.Cells Cloud, REST API, SDK, worksheet, cURL"
+description: "Learn how to add a horizontal page break to an Excel worksheet using the Aspose.Cells Cloud REST API. Includes request details, a cURL example, and SDK code snippets for multiple programming languages."
 weight: 30
 ---
 
-This REST API inserts a **horizontal** page break.
+This REST API inserts a horizontal page break.
 
 ## REST API
 
@@ -20,17 +20,17 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/horizontalp
 
 The request parameters are:
 
-| Parameter Name | Type    | Location                     | Description                                            |
-|----------------|---------|------------------------------|--------------------------------------------------------|
-| name           | string  | path                         | Name of the Excel file.                                 |
-| sheetName      | string  | path                         | Name of the worksheet where the break will be added.   |
-| cellname       | string  | query                        | Cell reference (e.g., **A1**) that marks the start of the page break. |
-| row            | integer | query                        | Zero‑based row index for the page break.               |
-| column         | integer | query                        | Zero‑based column index for the page break.            |
-| startColumn    | integer | query                        | Starting column of a range when inserting a break.    |
-| endColumn      | integer | query                        | Ending column of a range when inserting a break.      |
-| folder         | string  | query                        | Folder path containing the Excel file.                 |
-| storageName    | string  | query                        | Name of the Aspose Cloud storage.                      |
+| Parameter Name | Type    | Location | Description |
+|----------------|---------|----------|-------------|
+| name           | string  | path     | Name of the Excel file. |
+| sheetName      | string  | path     | Name of the worksheet where the break will be added. |
+| cellname       | string  | query    | Cell reference (e.g., **A1**) that marks the start of the page break. |
+| row            | integer | query    | Zero‑based row index for the page break. |
+| column         | integer | query    | Zero‑based column index for the page break. |
+| startColumn    | integer | query    | Starting column of a range when inserting a break. |
+| endColumn      | integer | query    | Ending column of a range when inserting a break. |
+| folder         | string  | query    | Folder path containing the Excel file. |
+| storageName    | string  | query    | Name of the Aspose Cloud storage. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PageBreaks/PutHorizontalPageBreak) defines a publicly accessible interface that lets you perform REST interactions directly from a web browser.
 
@@ -42,10 +42,10 @@ You can use the **cURL** command‑line tool to access Aspose.Cells web services
 
 ```bash
 curl -v "http://api.aspose.cloud/v3.0/cells/sampleExcelPageBreaks.xlsx/worksheets/Sheet1/horizontalpagebreaks?row=18" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
