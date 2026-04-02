@@ -1,11 +1,11 @@
 ---
-title: "Compress the data in an Excel file"
+title: "Compress Data in an Excel File"
 second_title: "Document"
 linktitle: "Compress Excel Files"
 type: docs
 url: /compress-excel-files/
 aliases: [/compress/]
-keywords: "compress excel files, aspose cells cloud, excel compression, spreadsheet compression, rest api, file compression"
+keywords: "compress excel files, aspose cells cloud, excel compression, spreadsheet compression, rest api, file compression, excel file compression, xls xlsx compression"
 description: "Use Aspose.Cells Cloud REST API to compress Excel files (XLS, XLSX, XLSM, XLSB, ODS). Choose the compression level, process multiple files at once, and integrate via SDKs for various programming languages."
 weight: 39
 ---
