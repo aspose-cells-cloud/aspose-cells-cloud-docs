@@ -5,8 +5,8 @@ linktitle: "One worksheet"
 type: docs
 url: /worksheets/delete-worksheet/
 aliases: [/remove-worksheets-from-excel-workbooks/]
-keywords: "Aspose.Cells Cloud, Delete Worksheet, REST API, Excel, Spreadsheet, API"
-description: "Use Aspose.Cells Cloud REST API to delete a worksheet from an Excel workbook. Supports multiple SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) and cURL."
+keywords: "Aspose.Cells Cloud, Delete Worksheet, Excel, Spreadsheet, REST API"
+description: "Delete a worksheet from an Excel workbook using Aspose.Cells Cloud REST API. Supports SDKs for C#, Java, PHP, Ruby, Node.js, Python, Perl, Go and cURL."
 weight: 20
 ---
 
@@ -20,12 +20,12 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
 
 The request parameters are:
 
-| Parameter Name | Type   | Location                     | Description                     |
-|----------------|--------|------------------------------|---------------------------------|
-| name           | string | path                         | Document name.                  |
-| sheetName      | string | path                         | The worksheet name.             |
-| folder         | string | query                        | Document’s folder.              |
-| storageName    | string | query                        | Storage name.                   |
+| Parameter Name | Type   | Location | Description          |
+|----------------|--------|----------|----------------------|
+| name           | string | path     | Document name.       |
+| sheetName      | string | path     | The worksheet name.  |
+| folder         | string | query    | Document’s folder.   |
+| storageName    | string | query    | Storage name.        |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheet) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
